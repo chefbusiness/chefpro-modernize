@@ -19,7 +19,11 @@ import argparse, concurrent.futures as cf, os, re, sys, urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ZONA = os.path.join(ROOT, 'astro-site/src/lib/zona-app.ts')
 AJENAS = ['/', '/productos-digitales', '/blog', '/precios', '/kit-escandallos-access', '/en/', '/terminos',
-          '/integraciones', '/pago-cripto']
+          '/integraciones', '/pago-cripto', '/manual-chef-ejecutivo-access', '/libreria-de-prompts',
+          '/en/prompt-libraries',
+          # post con el bloque congelado «CHEFBUSINESS GROUP», que enlaza a miselup.pro: la palabra
+          # «miselup» NO es rastro de la tarjeta; por eso el gate mide la firma del componente.
+          '/blog/libreria-de-prompts-para-fermentus-ai']
 CTA = 'https://app.miselup.pro/signup?utm_source=aichef&utm_medium=sidecard&utm_campaign=miselup-recetario&utm_content='
 
 
@@ -53,7 +57,8 @@ def medir(html, placement=''):
         # bloques <script> que contienen el JS del snippet (la cadena aparece 2 veces dentro: leer y escribir)
         'script': len(re.findall(r'<script[^>]*>(?:(?!</script>).)*?miselupCardDismissed', html, re.S)),
         'cta': html.count(CTA + placement) if placement else html.count(CTA),
-        'rastro': html.count('miselup'),
+        # firma del COMPONENTE, no de la marca (25 posts del blog llevan «miselup» en un enlace)
+        'rastro': html.count('id="miselup-card"') + html.count('miselupCardDismissed') + html.count(CTA),
     }
 
 
@@ -84,7 +89,7 @@ def main():
         if st != 200:
             print(f'  ⚠ ajena {path} → HTTP {st} (sin comprobar)'); continue
         if medir(html)['rastro']:
-            fallos.append(f'ajena {path}: {medir(html)["rastro"]} rastros de «miselup» y no debería haber ninguno')
+            fallos.append(f'ajena {path}: {medir(html)["rastro"]} rastros de la tarjeta Miselup y no debería haber ninguno')
     print(f'Miselup side-card en {base}: {ok}/{len(objetivos)} páginas de producto correctas '
           f'({len(reg)} productos × landing + library) · {len(AJENAS)} páginas ajenas comprobadas')
     for f in fallos:
