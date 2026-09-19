@@ -25,3 +25,8 @@ recomendación de la síntesis, salvo donde se indica. La SPEC las recoge como d
 | D18 | Retraso | No se menciona «Junio 2026»; tarjeta real con badge «Nuevo» |
 
 **Precio: 65 €**, sin tachado, sin ratings, `testimonials.items: []`. **Presupuesto**: ≈14,7-14,9 M (refutación A4), repartido en las dos sesiones.
+
+
+## Enmienda 19-sep-2026 (John)
+
+| D17-bis | Nombre | **Renombrada a «Cómo Montar una Chocolatería Boutique & Atelier»** (John, 19-sep-2026: «para separarlo de la chocolatería-churrería», que entra en «Próximos Productos» ese mismo día como «Cómo Montar una Churrería-Chocolatería»). Aplica a H1, tarjeta del hub, catálogo, banner y email; el slug `guia-chocolateria-obrador` no cambia. SPEC, guion y `verificar_guion.py` actualizados con la cadena nueva. |

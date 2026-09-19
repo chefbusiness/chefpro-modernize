@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-guion_guia_chocolateria_obrador.py — GUION de «Cómo Montar una Chocolatería»
+guion_guia_chocolateria_obrador.py — GUION de «Cómo Montar una Chocolatería Boutique & Atelier»
 v1.0 (SPEC `guia-chocolateria-SPEC.md`, §4, §4.2 y §4.3).
 
 Mismo esquema que los hermanos (`guion_guia_pasteleria_obrador.py`, del 10-sep,
@@ -149,11 +149,11 @@ LEGAL = (
 
 GUIA = {
     'pid': PID,
-    'titulo': 'Cómo Montar una Chocolatería',
+    'titulo': 'Cómo Montar una Chocolatería Boutique & Atelier',
     'subtitulo': 'Obrador, denominaciones legales y números: el dossier '
                  'completo de apertura de una bombonería · Guía España 2026',
     'autor_linea': 'John Guerrero · AI Chef Pro · aichef.pro',
-    'cabecera': 'AI Chef Pro · Cómo Montar una Chocolatería',
+    'cabecera': 'AI Chef Pro · Cómo Montar una Chocolatería Boutique & Atelier',
     'fecha': 'septiembre de 2026',
     'version': '1.0',
     'tipo_doc': 'guía',
@@ -4070,7 +4070,7 @@ BONUS = [
         'nombre': 'business-plan-modelo-chocolateria',
         'guia': {
             'titulo': 'Business Plan Modelo de una Chocolatería',
-            'subtitulo': 'Bonus del pack «Cómo Montar una Chocolatería» · el '
+            'subtitulo': 'Bonus del pack «Cómo Montar una Chocolatería Boutique & Atelier» · el '
                          'caso completo relleno, con las cifras de las nueve '
                          'herramientas Excel',
             'cabecera': 'AI Chef Pro · Business Plan Modelo de una Chocolatería',
@@ -4098,7 +4098,7 @@ BONUS = [
             'mortalidad_permitida': ['cierra', 'cierran'],
             'erratas_permitidas': (),
             'meta': {'title': 'Business Plan Modelo de una Chocolatería',
-                     'subject': 'Bonus del pack Cómo Montar una Chocolatería · '
+                     'subject': 'Bonus del pack Cómo Montar una Chocolatería Boutique & Atelier · '
                                 'Versión 1.0 · septiembre 2026'},
         },
         'capitulos': [
@@ -4503,7 +4503,7 @@ BONUS += [
         'nombre': 'BONUS-12-decisiones-de-apertura',
         'guia': {
             'titulo': '12 Decisiones de Apertura Resueltas',
-            'subtitulo': 'Bonus del pack «Cómo Montar una Chocolatería» · con '
+            'subtitulo': 'Bonus del pack «Cómo Montar una Chocolatería Boutique & Atelier» · con '
                          'los datos de las nueve herramientas Excel',
             'cabecera': 'AI Chef Pro · 12 Decisiones de Apertura Resueltas',
             'tipo_doc': 'bonus',
@@ -4532,7 +4532,7 @@ BONUS += [
             'mortalidad_permitida': ['cierra', 'cierran'],
             'erratas_permitidas': (),
             'meta': {'title': '12 Decisiones de Apertura Resueltas',
-                     'subject': 'Bonus del pack Cómo Montar una Chocolatería · '
+                     'subject': 'Bonus del pack Cómo Montar una Chocolatería Boutique & Atelier · '
                                 'Versión 1.0 · septiembre 2026'},
         },
         'capitulos': [

@@ -955,7 +955,7 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Octubre 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Chocolatería Boutique & Atelier', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Octubre 2026' },
   { icon: Coffee, name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
   { icon: UtensilsCrossed, name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Rutinas de plancha, salsas y tortilla, turnos y cierre para una taquería que funciona sola.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },

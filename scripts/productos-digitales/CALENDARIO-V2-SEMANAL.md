@@ -146,7 +146,7 @@ Coste ≈ 14 M tokens de subagentes. **Correos:** lanzamiento de la guía **14-o
 (punto 0) y documentos de la guía gastronómica (handoff B §20); `nombre-gate.py` en 43 fichas antiguas y «9 checklists» en 5
 verticales quedan como deuda menor.
 
-### ✅ 2026-09-12 (sesión PAR, Claude Code en el Mac) — Pastelería **1.0.1 LIVE y verificada** + «Cómo Montar una Chocolatería» (producto nuevo nº 5): research CERRADO, John DELEGÓ («decide tú, adelante!»), D1-D53 firmadas, **fase A2+B1 HECHA** (verificación legal 109 CHN · JSON común 635 · SPEC LISTA tras 5 rondas · datos_ejemplo · 9 xlsx con gate 9/9 · guion en curso al cerrar). Sesión partida por un corte de cuota (15:08) y un kernel panic (16:02); restaurada a las 16:05. Queda la sesión B2+C (redactores → documentos → refutación → capa de producto → Payment Link → LIVE → Resend 24-oct), **a hacer en el VPS por decisión de John** (los productos futuros también)
+### ✅ 2026-09-12 (sesión PAR, Claude Code en el Mac) — Pastelería **1.0.1 LIVE y verificada** + «Cómo Montar una Chocolatería Boutique & Atelier» (producto nuevo nº 5): research CERRADO, John DELEGÓ («decide tú, adelante!»), D1-D53 firmadas, **fase A2+B1 HECHA** (verificación legal 109 CHN · JSON común 635 · SPEC LISTA tras 5 rondas · datos_ejemplo · 9 xlsx con gate 9/9 · guion en curso al cerrar). Sesión partida por un corte de cuota (15:08) y un kernel panic (16:02); restaurada a las 16:05. Queda la sesión B2+C (redactores → documentos → refutación → capa de producto → Payment Link → LIVE → Resend 24-oct), **a hacer en el VPS por decisión de John** (los productos futuros también)
 
 El fixer del 10-sep estaba al 95 % (no «a mitad»): verificación adversarial (3 lentes + regresiones + 2º voto, opus, 1,55 M) → 7 residuos
 arreglados a mano → v1.0.1 en `0ba5158`, gate post-pago LIVE 13/13. Research de Chocolatería con el mismo workflow de 6 lentes + síntesis +
@@ -251,7 +251,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 
 | Producto (nombre de la tarjeta) | Familia | Precio | Ola |
 |---|---|---|---|
-| Cómo Montar una Chocolatería | Guías Cómo Montar | 65 € | Octubre 2026 |
+| Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
 | Cómo Montar una Churrería-Chocolatería | Guías Cómo Montar | 65 € | Q4 2026 |
 | Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
 | Tareas Recurrentes: Taquería Mexicana | Kits de tareas | 12 € | Q4 2026 |

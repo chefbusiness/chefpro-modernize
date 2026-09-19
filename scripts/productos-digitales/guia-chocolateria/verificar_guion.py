@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-verificar_guion.py — gate del GUION de «Cómo Montar una Chocolatería»
+verificar_guion.py — gate del GUION de «Cómo Montar una Chocolatería Boutique & Atelier»
 ANTES de escribir una sola palabra de prosa.
 
 Clon parametrizado del gate de la hermana (`guia-pasteleria/verificar_guion.py`,
