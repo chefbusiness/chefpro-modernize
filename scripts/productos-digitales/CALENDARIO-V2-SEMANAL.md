@@ -165,6 +165,20 @@ NOWPayments; volumen 0 no descalifica un producto. Handoff: `SESSION_HANDOFF_202
 **Siguiente sesión PAR:** Chocolatería B2+C (local) y después «Tareas Recurrentes: Taquería Mexicana» (VPS); antes,
 programar el broadcast de Pastelería (14-oct) y decidir la política del Mega Pack.
 
+### 🔄 2026-09-19 (sesión PAR, Claude Code en el Mac) — correos de Pastelería PROGRAMADOS · Chocolatería B2+C EN CURSO
+
+- **Resend, dos huecos cerrados por `GET /broadcasts` (el último programado era Food Truck 2.2 el 9-oct):**
+  lanzamiento **«Cómo Montar una Pastelería» → 14-oct 08:00 UTC** (`476bf7fa-8cf1-441d-a49a-ce70c4fb080b`) y
+  **Kit de Tareas Pastelería 2.1 → 19-oct 08:00 UTC** (`ec87d4a8-5ea6-4fec-a9d1-eb48d64c6c13`); prueba de cada uno
+  enviada a John antes de programar. **El siguiente hueco es el 24-oct** (Chocolatería; 29-oct si John aprueba el
+  kit de chocolatería 2.1 —D53—, que iría delante). Programable desde el 24-sep.
+- **DataForSEO con saldo otra vez** (John, 19-sep): «taquería mexicana» 210/mes ES; sirve para el research de la Taquería.
+- **Chocolatería Boutique & Atelier, fase B2+C arrancada en LOCAL**: 45 redactores Sonnet por bloque (workflow
+  `escribir-bloques-guia-chocolateria`) + capa de producto (workflow `capa-producto-guia-chocolateria`: 3 lotes opus
+  con ficheros disjuntos, `fase8x-sustituir-banner.py` genérico, 7 imágenes, revisor + fixer) en la rama
+  `feat/guia-chocolateria-obrador`. Desviación de la SPEC ya decidida: `comingSoon` pasa de 23 a 22 (se quita sólo
+  su tarjeta), no a cero.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 0. 🔴 **Seguridad alimentaria en producto VENDIDO (cazado por el research del Manual del Chef Ejecutivo, 6-sep; John: «déjalo
