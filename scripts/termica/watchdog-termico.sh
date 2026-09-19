@@ -4,7 +4,7 @@ LOG=$1; END=$((SECONDS+3600)); typeset -A FROZEN
 while [ $SECONDS -lt $END ]; do
   T=$(istats cpu temp | grep -o '[0-9]*\.[0-9]*' | head -1)
   if [ "$(echo "$T >= 66" | bc)" = "1" ]; then
-    ps -Ao %cpu,pid,comm | awk '$1>60' | grep -i -E "python|node|esbuild|grep|rg$|mediaanalysisd|photoanalysisd|bird$" | while read cpu pid comm; do
+    ps -Ao %cpu,pid,comm | awk '$1>60' | grep -i -E "python|node|esbuild|grep|rg$|mediaanalysisd|photoanalysisd|photolibraryd|bird$" | while read cpu pid comm; do
       kill -STOP $pid 2>/dev/null && echo "$(date +%H:%M:%S) $T STOP $pid $comm ($cpu%)" >> $LOG && echo $pid >> $LOG.frozen
     done
   elif [ "$(echo "$T <= 63" | bc)" = "1" ] && [ -s $LOG.frozen ]; then
