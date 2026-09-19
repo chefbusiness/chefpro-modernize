@@ -164,6 +164,8 @@ import ManualChefAccessGate from "./pages/ManualChefAccessGate";
 import ManualChefDashboard from "./pages/ManualChefDashboard";
 import GuiaPasteleriaAccessGate from "./pages/GuiaPasteleriaAccessGate";
 import GuiaPasteleriaDashboard from "./pages/GuiaPasteleriaDashboard";
+import GuiaChocolateriaAccessGate from "./pages/GuiaChocolateriaAccessGate";
+import GuiaChocolateriaDashboard from "./pages/GuiaChocolateriaDashboard";
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
@@ -899,6 +901,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-pasteleria-obrador-jwt" redirectTo="/guia-pasteleria-obrador">
                   <GuiaPasteleriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Cómo Montar una Chocolatería Boutique & Atelier — landing NATIVA en Astro
+                (astro-site/src/pages/guia-chocolateria-obrador.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/guia-chocolateria-obrador-access" element={<GuiaChocolateriaAccessGate />} />
+            <Route
+              path="/guia-chocolateria-obrador-library"
+              element={
+                <ProtectedRoute storageKey="guia-chocolateria-obrador-jwt" redirectTo="/guia-chocolateria-obrador">
+                  <GuiaChocolateriaDashboard />
                 </ProtectedRoute>
               }
             />

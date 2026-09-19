@@ -22,8 +22,21 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Kit Gestión de Personal y Turnos': '/kit-gestion-personal',
   'Guía Cómo Montar una Dark Kitchen': '/guia-dark-kitchen',
   'Guía Restaurante Gastronómico': '/guia-restaurante-gastronomico',
+  'Guía Food Cost + Ingeniería de Menú': '/guia-food-cost-ingenieria-menu',
+  'Manual del Manager de Restaurante': '/manual-manager-restaurante',
+  'Manual del Chef Ejecutivo': '/manual-chef-ejecutivo',
+  'Cómo Montar una Pastelería': '/guia-pasteleria-obrador',
+  'Cómo Montar una Chocolatería Boutique & Atelier': '/guia-chocolateria-obrador',
   'Guía Restaurante Casual': '/guia-restaurante-casual',
   'Mega Pack Tareas': '/mega-pack-tareas',
+  // Nombres EN del catálogo (products-catalog.ts name.en): las páginas /usos/ inglesas
+  // los escriben en inglés y PRODUCT_LINKS sólo indexa los ES, así que sin estos alias
+  // la mención inglesa queda sin enlace.
+  'Guide: How to Open a Chocolate Boutique & Atelier': '/guia-chocolateria-obrador',
+  'Guide: Bakery with Production Room': '/guia-panaderia-obrador',
+  'Business Plan: Coffee Shop': '/plan-negocio-cafeteria',
+  'Tasks: Ice Cream Shop': '/kit-tareas-heladeria',
+  'Tasks: Pizzeria': '/kit-tareas-pizzeria',
 };
 
 const ALL_PRODUCT_LINKS: Record<string, string> = { ...PRODUCT_LINKS, ...PRODUCT_ALIASES };

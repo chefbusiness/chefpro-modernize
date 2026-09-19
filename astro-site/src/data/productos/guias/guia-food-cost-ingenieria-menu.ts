@@ -180,6 +180,7 @@ const data: GuiaData = {
     { label: 'Manual del Manager de Restaurante', href: '/manual-manager-restaurante' },
     { label: 'Manual del Chef Ejecutivo', href: '/manual-chef-ejecutivo' },
     { label: 'Cómo Montar una Pastelería', href: '/guia-pasteleria-obrador' },
+    { label: 'Cómo Montar una Chocolatería Boutique & Atelier', href: '/guia-chocolateria-obrador' },
     { label: 'Todos los Productos', href: '/productos-digitales' },
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],

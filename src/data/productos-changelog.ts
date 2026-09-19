@@ -143,6 +143,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'guia-chocolateria-obrador': {
+    version: '1.0',
+    updated: '2026-09-19',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-09-19',
+        title: 'Lanzamiento',
+        changes: [
+          'Guía completa en PDF y en DOCX editable: 20 capítulos de criterio para quien va a abrir una chocolatería artesanal con obrador, del primer local que visitas hasta los primeros noventa días, más un anexo normativo con fecha de corte.',
+          '9 libros de Excel con fórmulas vivas: capacidad de obrador y clima con la ficha de visita al local, calculadora del coste de apertura con la comparación de traspaso frente a obra nueva, sensibilidad al precio del cacao, carta de apertura y escandallo por molde y tanda, vida útil de rellenos y rotación, campañas y valle del año, plan financiero a tres años, checklist legal y de licencias con el bloque del cacao, y checklist de equipamiento y proveedores de cobertura.',
+          'Bloque legal de apertura comprobado el 12 de septiembre de 2026: registro sanitario y comunicación autonómica, suministro a otros minoristas, denominaciones legales del chocolate, cadmio y analíticas, la norma europea de deforestación aplicada al cacao, formación del equipo, envases y desperdicio. Cada dato lleva su norma, su artículo, su enlace y el día en que se comprobó.',
+          'Los parámetros legales (temperaturas, plazos, umbrales y tipos) nunca viven dentro de una fórmula: van en casilla editable con su nota y su fecha, y la guía cierra con un anexo que dice qué está vigente, qué está derogado y qué fechas ya sabemos que se mueven.',
+          'Ningún libro depende de otro: cero referencias entre ficheros y ninguna casilla de entrada se queda vacía esperando un dato de otro producto — todas traen su valor por defecto declarado como supuesto.',
+          'Bonus 1: el business plan modelo relleno con el caso completo, en el formato que pide un banco o una línea de financiación pública, con las cifras cuadradas contra el plan financiero del pack.',
+          'Bonus 2: 12 decisiones de apertura resueltas, cada una con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay.',
+        ],
+      },
+    ],
+  },
   'manual-chef-ejecutivo': {
     version: '1.0',
     updated: '2026-09-06',
