@@ -1,6 +1,6 @@
 # SESSION HANDOFF — 19-sep-2026 (sesión PAR, Claude Code en el Mac): correos de Pastelería programados · «Cómo Montar una Chocolatería Boutique & Atelier» B2+C
 
-> Sesión Claude Code · firma `Via: Claude Code`. Rama de trabajo **`feat/guia-chocolateria-obrador`** (PR **#84**, borrador, deploy preview `https://deploy-preview-84--aichefpro.netlify.app`). Producción sigue en `main` = `083263b` + nada de esta sesión: **no se ha mergeado nada**.
+> Sesión Claude Code · firma `Via: Claude Code`. **LIVE desde las 16:20 del 19-sep**: PR **#84** mergeada (`7a1a101`), producción = `main`. La rama `feat/guia-chocolateria-obrador` ya está borrada.
 > Térmica: `istats` leído antes de cada paso pesado; CPU entre 42 y 58 °C toda la sesión; `photolibraryd` (95 %) congelado al arrancar y añadido al filtro del vigilante; `mediaanalysisd` congelado por el agente de imágenes. **Reanudar ambos al cerrar** (`pkill -CONT photolibraryd mediaanalysisd`).
 
 ## 1. Resend — dos correos programados (cola de 5 días)
@@ -56,9 +56,15 @@ Documentos (tras `bd1e3de`): **guía 111 páginas** (59.334 palabras, 51 tablas)
 
 `gate-flujo-postpago.py --base <preview> --only guia-chocolateria-obrador`: **14/14 descargas servidas con el tamaño de disco**, landing 200 con «111 páginas» y «34 páginas», `-access` y `-library` 200, sección cripto con botón; **los 3 fallos restantes son el Payment Link** (landing `#comprar`, `payment-links.ts`, env). `photolibraryd` y `mediaanalysisd` reanudados al cerrar (16:05).
 
-## 4. Lo que queda para John (bloqueante para el LIVE) — datos de Stripe entregados en el chat a las 15:15
+## 3.2 LIVE (16:05-16:25) — John creó el Payment Link a las 16:00
 
-1. **Payment Link de Stripe** (65 €, `tax_code txcd_10000000`, `tax_behavior exclusive`, automatic tax on, invoice creation on, redirect a `https://aichef.pro/guia-chocolateria-obrador-access?session_id={CHECKOUT_SESSION_ID}`) y la env **`VITE_STRIPE_PAYMENT_LINK_GUIA_CHOCOLATERIA_OBRADOR`** en Netlify, scope **builds**, todos los contextos. Después: `sync-payment-links.py` → commit → merge de la PR #84 → gates LIVE. Descripción del producto en Stripe (prosa, **254 caracteres**, medida; la de la SPEC pasaba de 400): *«Para abrir una chocolatería o bombonería con obrador en España: 20 capítulos en PDF y DOCX, 9 Excel con fórmulas vivas (obrador, CAPEX, cacao, escandallo, campañas, plan financiero, licencias), business plan relleno y 12 decisiones resueltas. Pago único.»* Imagen: `https://aichef.pro/og-guia-chocolateria-obrador.jpg`. Recoger email: sí.
+- Payment Link `https://buy.stripe.com/4gMfZa1C42S23UX1wV6oo1w` → env `VITE_STRIPE_PAYMENT_LINK_GUIA_CHOCOLATERIA_OBRADOR` creada por API (`netlify api createEnvVars`, scope builds, contexto all) y verificada → `sync-payment-links.py` (49) → `gate-flujo-postpago --offline` 0 fallos → commit `7d86361` → PR #84 lista y **mergeada con merge commit** `7a1a101` → deploy de producción.
+- **Gates LIVE, todos en verde**: `gate-flujo-postpago.py` sin flags → **49 productos · 711 entregables · 0 fallos · 0 avisos** (el 49 con 14/14 descargas, landing con `buy.stripe.com`, cripto 48 con botón + 1 sin él) · `miselup-gate.py` 98/98 · `robots-gate.py --live` 1.209 públicas / 100 privadas OK · `fase6-gate.py https://aichef.pro` 3 fallos de 2.283 (2 de baseline del sitemap + el hreflang de la home, que mide 8 = correcto: falso positivo conocido) · sitemap con `/guia-chocolateria-obrador` · hub «49 productos · 22 próximamente».
+- **GSC**: `sitemap-index.xml` reenviado (16:23, pendiente de procesar); la landing es «URL unknown to Google» (recién nacida): pedir indexación a mano en `https://search.google.com/search-console/inspect?resource_id=sc-domain:aichef.pro&id=N3GC0F5PkLRL_Jvi0SqIVg` (la API no lo permite).
+
+## 4. Lo que queda para John (ya NO bloquea: el producto está LIVE)
+
+1. ~~Payment Link~~ **HECHO** (16:00-16:20, ver §3.2). Descripción del producto en Stripe (prosa, **254 caracteres**, medida; la de la SPEC pasaba de 400): *«Para abrir una chocolatería o bombonería con obrador en España: 20 capítulos en PDF y DOCX, 9 Excel con fórmulas vivas (obrador, CAPEX, cacao, escandallo, campañas, plan financiero, licencias), business plan relleno y 12 decisiones resueltas. Pago único.»* Imagen: `https://aichef.pro/og-guia-chocolateria-obrador.jpg`. Recoger email: sí.
 2. **D53**: ¿regenerar el Kit de Tareas Chocolatería a 2.1 (≈0,15 M; ocho alérgenos en las tres celdas de declaración y humedad 50-60 %)? Si sí: kit 24-oct y guía 29-oct; si no, guía 24-oct.
 3. Compra de prueba tras el LIVE (o `aichef.pro/admin/generar-acceso`). El pago cripto real de prueba sigue pendiente desde el 6-sep.
 4. Colaterales detectados, para una sesión impar: la FAQ de «cuánto cuesta abrir un cocktail bar» (`it`/`pt` `.consultor.ts:958`) publica el mismo rango inventado de 80.000-250.000 € (séptima vertical, fuera del censo de D27); el alias inglés «Financial Plan Kit» no enlaza en 48 menciones EN; `guia-panaderia-obrador` se llama distinto en catálogo y hub (homologación pendiente); `guia-restaurante-peruano` sigue de banner en `chocolateria-artesanal-e-ia…` (un hueco).
