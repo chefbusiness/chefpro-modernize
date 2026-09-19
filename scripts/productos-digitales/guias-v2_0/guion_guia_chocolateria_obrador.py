@@ -251,7 +251,7 @@ V_EUDR = ('Verificado el 12-09-2026 · Reglamento (UE) 2023/1115, arts. 1, 2, '
           '4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma se ha '
           'modificado tres veces en doce meses: comprueba su estado antes de '
           'comprar cacao · https://eur-lex.europa.eu/legal-content/ES/TXT/'
-          '?uri=CELEX:02023R1115-20250101')
+          '?uri=CELEX:02023R1115-20251226')
 V_MINORISTA = ('Verificado el 12-09-2026 · RD 1021/2022 (BOE-A-2022-21681), '
                'arts. 3, 4, 5, 9, 11, 13 y 20, y RD 191/2011 art. 2.2 en la '
                'redacción de la disposición final primera del RD 1021/2022 · '
@@ -1180,8 +1180,8 @@ CAPITULOS = [
                     ['Consumo por persona en los hogares', 'Kilos por persona y año', 'CHS-21'],
                     ['Gasto por persona y evolución del mercado', 'Euros por persona y hacia dónde va', 'CHS-22'],
                     ['Precio medio del chocolate', 'La subida de precio del año', 'CHS-23'],
-                    ['Empresas del grupo de fabricación de cacao, chocolate y confitería', 'Un agregado de fabricación, NO un censo de chocolaterías', 'CHS-16'],
-                    ['Empresas del comercio minorista de pan, confitería y pastelería', 'Otro agregado, y tampoco es un censo de chocolaterías', 'CHS-17'],
+                    ['Empresas del grupo de fabricación de cacao, chocolate y confitería', 'Un agregado de fabricación, NO un censo de chocolaterías', 'CHS-13'],
+                    ['Empresas del comercio minorista especializado en alimentación (CNAE 472)', 'Otro agregado, y tampoco es un censo de chocolaterías', 'CHS-14'],
                 ],
                 'nota': 'Ninguna de estas cifras es el número de chocolaterías de España, '
                         'porque ese dato no existe. Los dos últimos son grupos de actividad '
@@ -2138,7 +2138,7 @@ CAPITULOS += [
                 'titulo': 'La ficha de preguntas al instalador, pregunta a pregunta (capacidad-obrador-y-clima.xlsx, hoja «Clima del Obrador»)',
                 'src': (X_CAP, 'Clima del Obrador'),
                 'cols': [('Qué le preguntas', 'A', 'txt'), ('Unidad', 'B', 'txt'),
-                         ('Respuesta del caso', 'C', 'txt'),
+                         ('Respuesta del caso', 'C', 'num1'),
                          ('¿Por escrito?', 'D', 'txt')],
                 'filas': (37, 46),
                 'nota': 'La columna de «por escrito» es la que vale: una respuesta de palabra '
@@ -2202,13 +2202,21 @@ CAPITULOS += [
                 'src': (X_EQUIP, 'Equipamiento'),
                 'cols': [('Partida', 'C', 'txt'), ('Prioridad', 'H', 'txt'),
                          ('Precio de referencia sin IVA (€)', 'L', 'eur'),
-                         ('Base declarada por la fuente', 'J', 'txt'),
+                         ('Cómo se publica el precio', 'Y', 'txt'),
+                         ('¿Lleva IVA? (lo declara la fuente o, si es supuesto, lo decides tú)', 'J', 'txt'),
                          ('Plazo de entrega (semanas)', 'R', 'num')],
                 'filas': (15, 31),
                 'nota': 'Las líneas marcadas como opcionales vienen desmarcadas a propósito: '
-                        'son decisiones, no dotación mínima. Y las que dicen «no declarada» '
-                        'son exactamente eso: la ficha del distribuidor no dice si el precio '
-                        'lleva impuesto, y no se supone.',
+                        'son decisiones, no dotación mínima. Lee la columna «cómo se publica» '
+                        'ANTES que el precio: las que dicen «SUPUESTO declarado» no tienen '
+                        'ficha detrás y su base de impuesto la pones tú; el mantenedor es un '
+                        '«desde», es decir un suelo comercial que hay que presupuestar, y '
+                        'nunca un precio cerrado; y los moldes se publican como RANGO, así '
+                        'que las veinticuatro unidades valen entre 580,80 € y 1.027,92 € con '
+                        'los dos extremos medidos, y los 804,36 € de la columna de precio son '
+                        'el punto medio de esa horquilla, que es un supuesto y no un dato. '
+                        'Y las que dicen «no declarada» son exactamente eso: la ficha del '
+                        'distribuidor no dice si el precio lleva impuesto, y no se supone.',
             },
             {
                 'titulo': 'Qué bombones al día permite cada equipo, y cuál limita de verdad (capacidad-obrador-y-clima.xlsx, hoja «Capacidad por Equipo»)',
@@ -2630,15 +2638,18 @@ CAPITULOS += [
                    'CHN-62c'],
         'tablas': [
             {
-                'titulo': 'Los proveedores verificados y qué papeles le toca a cada uno (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Proveedores y EUDR»)',
+                'titulo': 'Los proveedores publicados y qué papeles le toca a cada uno (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Proveedores y EUDR»)',
                 'src': (X_EQUIP, 'Proveedores y EUDR'),
                 'cols': [('Proveedor', 'B', 'txt'), ('Qué te vende', 'C', 'txt'),
                          ('Dirección', 'D', 'txt'), ('Id del research', 'E', 'txt'),
                          ('Qué papeles le tocan a él', 'N', 'txt')],
                 'filas': (7, 12),
-                'nota': 'Seis proveedores con dirección comprobada en la fecha de corte. La '
-                        'columna de papeles no está resuelta a propósito: la resuelve su '
-                        'respuesta por escrito, no nuestra suposición.',
+                'nota': 'Cinco direcciones comprobadas en la fecha de corte y una pendiente: '
+                        'la de SelfPackaging devolvió un error de acceso el 12-09-2026, así '
+                        'que va publicada SIN comprobar y hay que abrirla antes de fiarse. '
+                        'Por eso el precio del packaging del caso modelado es un supuesto y '
+                        'no un dato. La columna de papeles no está resuelta a propósito: la '
+                        'resuelve su respuesta por escrito, no nuestra suposición.',
             },
             {
                 'titulo': 'El impuesto al plástico: qué paga, qué no y quién lo paga',
@@ -2862,18 +2873,16 @@ PPE_16 = {
         'suma obligaciones de etiquetado, así que envasar no es sólo una '
         'decisión de packaging.',
     ],
-    'La vitrina de chocolate no es la de pastelería': [
-        'Dar la ventana de la vitrina de bombonería y su humedad, con su '
-        'fuente en el kit, y explicar por qué es tan estrecha: por encima de '
-        'cierto punto la manteca funde y el bombón pierde brillo; por debajo, '
-        'condensa al sacarlo.',
-        'Distinguir otra vez, porque aquí se paga: el objetivo operativo del '
-        'negocio no es el rango de trabajo del equipo que te venden. El '
-        'semáforo se alimenta del rango que tecleas tú y sólo avisa cuando se '
-        'va de verdad por arriba.',
+    'Qué referencias van a vitrina y cuáles a nevera': [
+        'Remitir en UNA frase al capítulo 8 para la compra del mueble y para '
+        'la diferencia entre la vitrina de chocolate y la de pastelería: aquí '
+        'no se vuelve a explicar, aquí se coloca el producto.',
         'Dar las referencias del caso que NO van a vitrina sino a nevera, y '
         'por qué: el relleno fresco manda sobre el chocolate. Es una decisión '
         'de colocación que se toma con la actividad de agua delante.',
+        'Y el límite del mueble compartido: si en la misma vitrina conviven '
+        'chocolate y pastelería rellena, son dos regímenes de temperatura que '
+        'no se funden en uno, y eso decide cómo se divide por dentro.',
     ],
     'Las tres vías del huevo, donde aún aplican': [
         'Acotar de entrada para no asustar: en una bombonería el huevo crudo '
@@ -3288,7 +3297,7 @@ CAPITULOS += [
     {
         'n': 16,
         'titulo': 'Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote',
-        'resumen_indice': 'el factor de tres a cinco entre la ganache fresca y la estabilizada, la vida útil que declaras tú y consta en tu autocontrol, envasado con etiqueta o a granel, la vitrina de chocolate frente a la de pastelería y las tres vías del huevo.',
+        'resumen_indice': 'el factor de tres a cinco entre la ganache fresca y la estabilizada, la vida útil que declaras tú y consta en tu autocontrol, envasado con etiqueta o a granel, qué referencias van a vitrina y cuáles a nevera, y las tres vías del huevo.',
         'palabras': 1750, 'bloques': 2,
         'objetivo': 'Que el lector decida su MODELO DE NEGOCIO y no su '
                     'técnica: cuánto quiere que dure cada referencia, qué '
@@ -3394,10 +3403,10 @@ CAPITULOS += [
         ],
         'cifras': [
             C('Coste de personal del año de crucero', f'{X_PLAN}!Personal!I9', 'eur'),
-            C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B41', 'num1'),
-            C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B45', 'eur2'),
+            C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B40', 'num1'),
+            C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B44', 'eur2'),
             C('Peso del coste de personal sobre las ventas', f'{X_PLAN}!PyG 3 Años!C46', 'pct1'),
-            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B22', 'eur'),
+            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B21', 'eur'),
             C('Bruto mensual del grupo de convenio más bajo', f'{X_CAMP}!Parámetros!B19', 'eur2'),
             C('Pagas al año del convenio de referencia', f'{X_CARTA}!Parámetros!B11', 'num'),
             C('Cotización a cargo de la empresa sobre el bruto', f'{X_CARTA}!Parámetros!B12', 'pct0'),
@@ -3427,7 +3436,7 @@ CAPITULOS += [
                          ('Bruto mes (€)', 'E', 'eur2'),
                          ('Bruto año (€)', 'F', 'eur'),
                          ('Áreas funcionales', 'G', 'txt')],
-                'filas': (13, 18),
+                'filas': (13, 17),
                 'nota': 'Es la tabla de UNA comunidad autónoma y está marcada como ejemplo: '
                         'sustitúyela por la del convenio que te aplique. No existe convenio '
                         'estatal del chocolate. ' + V_CONVENIO,
@@ -3439,12 +3448,16 @@ CAPITULOS += [
                          ('Mínimo (€/h)', 'B', 'num2'),
                          ('Máximo (€/h)', 'C', 'num2'),
                          ('Equivale a', 'D', 'txt'),
-                         ('Coste año a jornada completa (€)', 'E', 'eur')],
-                'filas': (27, 30),
+                         ('Coste año a jornada completa, al MÍNIMO del rango (€)', 'E', 'eur')],
+                'filas': (26, 29),
                 'nota': 'Las etiquetas de la primera columna son de la FUENTE salarial, no '
                         'perfiles de esta plantilla: por eso van entrecomilladas y con su '
                         'equivalencia al lado. Son orientativos y NO son una tabla de '
-                        'convenio.',
+                        'convenio. Y la última columna no es el punto medio: toma el SUELO '
+                        'del rango y lo multiplica por las horas anuales de contrato y por la '
+                        'cotización de la empresa, así que con el techo del rango el coste '
+                        'sube en la misma proporción que el precio por hora. Presupuesta con '
+                        'los dos extremos, no con esta columna sola.',
             },
         ],
         'prohibido': NO_COMUN + [
@@ -3765,7 +3778,7 @@ CAPITULOS += [
             C('Tope absoluto de kilos a la semana del obrador en vivienda', f'{X_LEGAL}!Ruta Doméstica!B23', 'num'),
             C('Umbral estatal de superficie de la licencia previa de actividad', f'{X_CAP}!Parámetros!B24', 'num'),
             C('Umbral mensual de la exención del impuesto al plástico', f'{X_CAPEX}!Parámetros!B20', 'num'),
-            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B22', 'eur'),
+            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B21', 'eur'),
         ],
         'sector': ['CHN-01', 'CHN-14', 'CHN-36', 'CHN-39', 'CHN-44',
                    'CHN-49', 'CHN-62', 'CHN-64', 'CHN-65c', 'CHN-67',
@@ -3800,6 +3813,7 @@ CAPITULOS += [
                     ['RD 193/2023', 'Accesibilidad', 'Vigente; calendario privado en 2029 y 2030'],
                     ['RD 919/2006, ITC-ICG 07', 'Inspección periódica de la instalación de gas, sólo si montas freidora de gas', 'Vigente, última modificación de septiembre de 2025'],
                     ['RD 10/2025', 'Los dos códigos de actividad que se comunican en el alta', 'Vigente, sin modificaciones'],
+                    ['RD 126/2026 (BOE-A-2026-3815)', 'La referencia anual del salario mínimo con la que se contrasta la tabla del convenio en la hoja de personal del plan financiero', 'Vigente; es el real decreto anual del salario mínimo, así que caduca el 31-12-2026. No confundirlo con el RD 126/2015, que es el de alérgenos y tiene su propia fila en este mismo cuadro'],
                     ['Decreto 85/2024 de la Generalitat de Catalunya', 'Artesanía alimentaria, con el chocolate expresamente dentro', 'En vigor; la acreditación es VOLUNTARIA'],
                     ['RD 1334/1999', 'Etiquetado general, que la norma del chocolate todavía cita', 'Superado por el reglamento europeo de información al consumidor y por el RD 126/2015: no se remite a él'],
                     ['RD 1254/1991', 'Huevo y ovoproductos', 'DEROGADO; sigue citándose en contenidos que circulan'],
@@ -4295,9 +4309,9 @@ BONUS = [
                     C('Bombones al día que permite el conjunto de equipos', f'{X_CAP}!Cuello de Botella!B7', 'num'),
                     C('El equipo que limita', f'{X_CAP}!Cuello de Botella!B8', 'txt'),
                     C('Holgura sobre el día normal', f'{X_CAP}!Cuello de Botella!B10', 'pct1'),
-                    C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B41', 'num1'),
+                    C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B40', 'num1'),
                     C('Coste de personal al año', f'{X_PLAN}!Personal!I9', 'eur'),
-                    C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B45', 'eur2'),
+                    C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B44', 'eur2'),
                 ],
                 'sector': ['CHS-03', 'CHS-70', 'CHS-44'],
                 'tablas': [

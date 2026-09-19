@@ -27,7 +27,7 @@ Veinte capítulos, un anexo normativo fechado, nueve herramientas en Excel con f
 13. **Proveedores: Cobertura, Cacao, Packaging y Plazos** — los proveedores verificados por categoría, la vía fiable para el grano, las dos preguntas que hay que hacer por escrito antes de comprar, y el impuesto al plástico cuando compras estuches fuera de España.
 14. **Escandallo del Chocolate: la Merma de Templado, el Recorte que Vuelve y la Caja** — por qué la unidad de costeo es el molde y la tanda, las dos tasas de merma que produce el chocolate, el coste hora de obrador imputado por pieza, y por qué margen bruto y food cost son la misma regla.
 15. **El Precio del Cacao: Qué Haces Cuando Sube y Quién Paga la Subida** — por qué la cobertura no baja cuando baja la bolsa, el ciclo real de revisión de tarifas, los cuatro caminos con su número cuando sube el cacao, y cómo se comunica una subida sin incumplir la regla del precio anterior.
-16. **Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote** — el factor de tres a cinco entre la ganache fresca y la estabilizada, la vida útil que declaras tú y consta en tu autocontrol, envasado con etiqueta o a granel, la vitrina de chocolate frente a la de pastelería y las tres vías del huevo.
+16. **Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote** — el factor de tres a cinco entre la ganache fresca y la estabilizada, la vida útil que declaras tú y consta en tu autocontrol, envasado con etiqueta o a granel, qué referencias van a vitrina y cuáles a nevera, y las tres vías del huevo.
 17. **El Equipo: Cuántos, Qué Perfiles y Qué Cuestan** — los tres perfiles del obrador con los nombres del kit, el salto del bruto al coste de empresa, la prueba de que no existe convenio estatal del chocolate y el método para identificar el tuyo.
 18. **Las Campañas y el Valle: de Navidad a Agosto** — el peso de un solo evento, la producción de Navidad que se paga en octubre, las comuniones como campaña propia, por qué en agosto para el obrador y no la caja, y las dos respuestas contraestacionales.
 19. **Canales: Mostrador, Envío, Hostelería, Corporativo y Talleres** — los tres canales que se salen de la nota del epígrafe minorista y la pregunta exacta para el asesor, cuándo el suministro a hostelería te obliga a inscribirte, por qué vender online sigue siendo minorista, la obligación de registrar a quién vendes y los talleres como línea de agosto.
@@ -57,7 +57,7 @@ La palabra «chocolatería» tapa doce negocios distintos, y ninguno se monta ig
 
 El caso que recorre todo el documento es el tercero de la lista: la bombonería artesanal con obrador propio y tienda a la calle, en una ciudad media española sin nombre. Las otras once son desviaciones sobre ella, y cada una tiene su propia columna en la calculadora de inversión para que la compares con la tuya. En el caso modelado, el local tiene 75 metros cuadrados en total, de los que 45 son de producción, y el obrador está dimensionado para sacar 472 bombones equivalentes al día en velocidad de crucero, según la hoja «Parámetros» de capacidad-obrador-y-clima.xlsx. La inversión completa de esa variante —obra, maquinaria, mobiliario y primer aprovisionamiento— es de 150.492 €, según la hoja «Variante del Formato» de calculadora-capex-chocolateria.xlsx, y las ventas anuales sin IVA que alcanza ese mismo caso en velocidad de crucero son 199.088 €, según la hoja «Parámetros» de campanas-y-valle-del-ano.xlsx.
 
-De las doce variantes, sólo tres llevan cifra completa en la calculadora de inversión: el cuadro que sigue a este texto dice cuáles son y qué cambia en cada una. El bean-to-bar es, a propósito, uno de los que no la lleva: no hay un precio público verificable del tren de máquinas que necesita —tostador, descascarilladora, melanger, refinadora, concha y prensa—, así que lo que entrega este pack para esa variante no es un número inventado, sino la lista de la compra y las preguntas que hay que hacerle al fabricante antes de firmar nada. Preguntar bien vale más que una cifra que nadie puede verificar. La propia calculadora lo dice con estas palabras exactas, en la hoja «Variante del Formato»: «No es tu variante: no hay nada que presupuestar». Y hay un motivo de peso detrás de esa ausencia de precio: es el único de los doce que importa grano en crudo, así que entra de lleno en la normativa europea de deforestación y en el control de cadmio de la cobertura. Su asociación sectorial reúne ya a más de cuarenta miembros, y a ellos sí se les puede preguntar.
+De las doce variantes, sólo tres tienen columna propia en la calculadora de inversión, y sólo una de ellas va cifrada entera: el cuadro que sigue a este texto dice cuáles son y qué cambia en cada una. El bean-to-bar es, a propósito, uno de los que no la lleva: no hay un precio público verificable del tren de máquinas que necesita —tostador, descascarilladora, melanger, refinadora, concha y prensa—, así que lo que entrega este pack para esa variante no es un número inventado, sino la lista de la compra y las preguntas que hay que hacerle al fabricante antes de firmar nada. Preguntar bien vale más que una cifra que nadie puede verificar. La propia calculadora lo dice con estas palabras exactas, en la hoja «Variante del Formato»: «No es tu variante: no hay nada que presupuestar». Y hay un motivo de peso detrás de esa ausencia de precio: es el único de los doce que importa grano en crudo, así que entra de lleno en la normativa europea de deforestación y en el control de cadmio de la cobertura. Su asociación sectorial reúne ya a más de cuarenta miembros, y a ellos sí se les puede preguntar.
 
 ### La chocolatería de taza y churros: por qué es otro negocio
 
@@ -65,7 +65,7 @@ Esto conviene dejarlo claro desde la primera página, porque quien busca esta gu
 
 Y la norma los separa sola, que es el argumento que zanja cualquier discusión con el ayuntamiento o con la gestoría: el Anexo de la Ley 12/2012, de 26 de diciembre, de medidas urgentes de liberalización del comercio, lista el epígrafe 644.5 del comercio al por menor de bombones y caramelos —comprobado el 12 de septiembre de 2026—, y no lista ningún grupo de la agrupación de servicios de hostelería, donde vive el grupo 676 de chocolaterías, heladerías y horchaterías. Ese mismo epígrafe 644.5, de las tarifas del Impuesto sobre Actividades Económicas aprobadas por el RDLeg 1175/1990, de 28 de septiembre, faculta para fabricar bombones y caramelos en el propio establecimiento siempre que la venta se haga en esas mismas dependencias: es la puerta legal por la que entra la bombonería con obrador a la vista del cliente, y por la que no entra un modelo pensado para vender por otros canales sin más.
 
-Si a la bombonería le añades la taza y los churros, cambia casi todo lo que ya tenías resuelto. Necesitas freidora, campana y conducto de extracción, y con ellos toca revisar en qué categoría del catálogo de actividades potencialmente contaminadoras de la atmósfera queda tu local, porque deja de ser la de un obrador sin fritura. Entras también en la categoría de comidas preparadas, con su propia exigencia de autocontrol. Y si además pones mesas, te alcanza una obligación que la simple venta de bombones al mostrador no tiene: el artículo 8 de la Ley 1/2025, de residuos alimentarios, que no queda excluido ni para la microempresa. Todo esto tiene su propio capítulo más adelante; aquí sólo se anuncia, para que sepas que existe antes de decidirte por esta variante.
+Si a la bombonería le añades la taza y los churros, cambia casi todo lo que ya tenías resuelto. Necesitas freidora, campana y conducto de extracción, y con ellos toca revisar en qué categoría del catálogo de actividades potencialmente contaminadoras de la atmósfera queda tu local, porque deja de ser la de un obrador sin fritura. Entras también en la categoría de comidas preparadas, con su propia exigencia de autocontrol. Y si además pones mesas, te alcanza una obligación que la simple venta de bombones al mostrador no tiene: el artículo 8 de la Ley 1/2025, de prevención de las pérdidas y el desperdicio alimentario, que no queda excluido ni para la microempresa. Todo esto tiene su propio capítulo más adelante; aquí sólo se anuncia, para que sepas que existe antes de decidirte por esta variante.
 
 Dentro del pack, la taza y los churros viven en dos sitios a la vez. Como columna de escenario en la calculadora de inversión —donde, por ejemplo, el precio verificado de la chocolatera profesional que necesita esa variante es de 527 €, según la misma hoja «Variante del Formato» de calculadora-capex-chocolateria.xlsx— y como columna contigua en la cuenta de resultados del plan financiero, con su propio ticket medio, su propio margen y su propia plantilla. Puedes ponerla al lado de la bombonería pura y decidir con las dos delante, en vez de fiarte de una intuición o de lo que hace el negocio de la esquina.
 
@@ -95,12 +95,9 @@ Antes de seguir conviene cerrar el vocabulario que ya has visto usar en su forma
 
 | Variante | Id del research | ¿Es la tuya? | Qué cambia, y qué NO se puede cifrar |
 |---|---|---|---|
-| Bombonería con obrador propio y tienda a calle (el caso de esta guía) | CHS-03 | Sí | Es el eje del producto y el caso que calcula la hoja «CAPEX por Bloque» entera: 60-100 m2 y 1-2 empleados. Las otras dos son columnas de escenario, no productos aparte. |
-| Bean-to-bar: del grano a la tableta | CHS-48 + CHS-51 | No | SIN CIFRAS DE MAQUINARIA A PROPOSITO (D2): no existe precio publico verificado del tren bean-to-bar, y lo que se entrega es la lista de la compra y las preguntas que hay que hacer. Inventar el precio seria justo el patron que la casa prohibe.
-Y la variante SUBE DE VALOR por dos motivos legales: (1) si importas grano ERES OPERADOR a efectos del EUDR, con diligencia debida completa, declaracion presentada previamente y registro cinco anos (`CHN-25`), no operador posterior; (2) el TOSTADO te puede meter en el CAPCA, y la nota (2) de su Anexo sube de grupo C a B cuando la actividad se desarrolla a menos de 500 m de un NUCLEO DE POBLACION (`CHN-47b`), es decir, en ciudad SIEMPRE. Ojo: «cacao» y «chocolate» tienen 0 ocurrencias en el CAPCA, asi que encajar el tostado de cacao en «cafe o similares» es INTERPRETACION, no mencion expresa (`CHN-47`). |
-| Chocolateria de taza y churros | CHS-46a + CHN-48 + CHN-49c | No | ES OTRO NEGOCIO, y la norma lo separa sola (D1): el Anexo de la Ley 12/2012 incluye el epigrafe 644.5 «Comercio al por menor de bombones y caramelos» y NO contiene ningun grupo de la agrupacion 67, donde esta la chocolateria de taza (grupo 676). O sea que la bomboneria se libra de la licencia previa hasta 750 m2 y la chocolateria de taza no (`CHN-49`, `CHN-49b`, `CHN-49c`).
-Lo que SI aporta: el chocolate convierte una racion de churros de 2,50 euros en 3,50-4 euros, un 40-60 % mas de ticket (`CHS-32`), y el margen bruto del churro es del 85-90 % (`CHS-31`) - aunque un maestro churrero citado lo rebaja a «un poco mas del 50 %», y los dos numeros se publican con su por que, no se elige el mas bonito.
-Lo que cuesta: freidora, extraccion de humos y la licencia que la bomboneria se ahorra. Los precios de churrera, freidora y extraccion NO estan verificados (`CHS-49`). |
+| Bombonería con obrador propio y tienda a calle (el caso de esta guía) | CHS-03 | Sí | Es el eje del producto y el caso que calcula la hoja «CAPEX por Bloque» entera: 60-100 m² y 1-2 empleados. Las otras dos son columnas de escenario, no productos aparte. |
+| Bean-to-bar: del grano a la tableta | CHS-48 + CHS-51 | No | SIN CIFRAS DE MAQUINARIA A PROPÓSITO: no existe precio público verificado del tren bean-to-bar, y lo que se entrega es la lista de la compra y las preguntas que hay que hacer. Inventar el precio sería justo el patrón que la casa prohíbe. · Y la variante SUBE DE VALOR por dos motivos legales: (1) si importas grano ERES OPERADOR a efectos del EUDR, con diligencia debida completa, declaración presentada previamente y registro cinco años (CHN-25), no operador posterior; (2) el TOSTADO te puede meter en el CAPCA, y la nota (2) de su Anexo sube de grupo C a B cuando la actividad se desarrolla a menos de 500 m de un NÚCLEO DE POBLACIÓN (CHN-47b), es decir, en ciudad SIEMPRE. Ojo: «cacao» y «chocolate» tienen 0 ocurrencias en el CAPCA, así que encajar el tostado de cacao en «café o similares» es INTERPRETACIÓN, no mención expresa (CHN-47). |
+| Chocolatería de taza y churros | CHS-46a + CHN-48 + CHN-49c | No | ES OTRO NEGOCIO, y la norma lo separa sola: el Anexo de la Ley 12/2012 incluye el epígrafe 644.5 «Comercio al por menor de bombones y caramelos» y NO contiene ningún grupo de la agrupación 67, donde está la chocolatería de taza (grupo 676). O sea que la bombonería se libra de la licencia previa hasta 750 m² y la chocolatería de taza no (CHN-49, CHN-49b, CHN-49c). · Lo que SÍ aporta: el chocolate convierte una ración de churros de 2,50 euros en 3,50-4 euros, un 40-60 % más de ticket (CHS-32), y el margen bruto del churro es del 85-90 % (CHS-31) - aunque un maestro churrero citado lo rebaja a «un poco más del 50 %», y los dos números se publican con su por qué, no se elige el más bonito. · Lo que cuesta: freidora, extracción de humos y la licencia que la bombonería se ahorra. Los precios de churrera, freidora y extracción NO están verificados (CHS-49). |
 
 *El tren de bean-to-bar va SIN cifras de maquinaria a propósito: no hay precio público verificable, y lo que se entrega es la lista de la compra y las cinco preguntas al fabricante. La chocolatería de taza y churros sólo tiene cifrada la chocolatera.*
 
@@ -200,8 +197,8 @@ El método que sí funciona no está en ningún informe: cuenta puertas, mira es
 | Consumo por persona en los hogares | Kilos por persona y año | CHS-21 |
 | Gasto por persona y evolución del mercado | Euros por persona y hacia dónde va | CHS-22 |
 | Precio medio del chocolate | La subida de precio del año | CHS-23 |
-| Empresas del grupo de fabricación de cacao, chocolate y confitería | Un agregado de fabricación, NO un censo de chocolaterías | CHS-16 |
-| Empresas del comercio minorista de pan, confitería y pastelería | Otro agregado, y tampoco es un censo de chocolaterías | CHS-17 |
+| Empresas del grupo de fabricación de cacao, chocolate y confitería | Un agregado de fabricación, NO un censo de chocolaterías | CHS-13 |
+| Empresas del comercio minorista especializado en alimentación (CNAE 472) | Otro agregado, y tampoco es un censo de chocolaterías | CHS-14 |
 
 *Ninguna de estas cifras es el número de chocolaterías de España, porque ese dato no existe. Los dos últimos son grupos de actividad que mezclan fabricación industrial y comercio, y sirven para el orden de magnitud del sector, no para calcular tu competencia.*
 
@@ -232,7 +229,7 @@ Aquí conviene fijar un matiz de vocabulario que se aplica por primera vez en es
 
 La decisión que más dinero mueve de todo este capítulo no está en ninguna de las cinco familias por separado: está en cómo se vende cada una de ellas. La caja es, en la práctica, la unidad de venta real de una bombonería, y casi nadie la escandalla (costea) como lo que de verdad es. Tratarla como una referencia propia —con su propio montaje, su propio packaging y su propio precio— es lo que permite decidir con criterio en vez de por intuición.
 
-En el caso modelado, el precio por bombón dentro de la caja de doce, con IVA, es de 1,67 €, y dentro de la caja de treinta y cinco baja a 1,29 €, lo que supone un descuento implícito del 36,4 %. La caja grande no es una caja pequeña multiplicada por tres: es un descuento por volumen que el cliente percibe como un buen precio y no como lo que en realidad es, un recorte de margen por unidad a cambio de vender más piezas de una sola vez.
+En el caso modelado, el precio por bombón dentro de la caja de doce, con IVA, es de 1,67 €, y dentro de la caja de treinta y cinco baja a 1,29 €, un 23 % menos por pieza. Frente al precio del bombón suelto, el descuento implícito de la caja es del 16,8 % en la de doce y del 36,4 % en la de treinta y cinco (hoja «Unidad vs Caja», fila «Descuento que le haces al cliente por comprar la caja»). La caja grande no es una caja pequeña multiplicada por tres: es un descuento por volumen que el cliente percibe como un buen precio y no como lo que en realidad es, un recorte de margen por unidad a cambio de vender más piezas de una sola vez.
 
 Ese mismo patrón se observa fuera del caso modelado. Según Confitería Gascón (2026-09-12), una caja de doce unidades se vende a 20,00 € (1,67 € por unidad), una de veinte a 28,00 € (1,40 € por unidad) y una de treinta y cinco a 45,00 € (1,29 € por unidad), de modo que el precio por bombón baja un 23 % entre la caja de doce y la de treinta y cinco. Esa página no publica el peso de cada caja, así que no hay forma de convertir esas cifras a precio por kilo, ni declara si sus precios llevan el impuesto incluido; aun con esa reserva, el patrón de fondo coincide con el del caso modelado: cuanto más grande es la caja, menor es el margen por bombón, y esa bajada se acepta a cambio de vender la unidad de compra que de verdad importa.
 
@@ -366,9 +363,9 @@ El desarrollo completo de quién paga este impuesto, con qué envases concretos 
 | Escenario | Mínimo publicado (€) | Máximo publicado (€) | Fuente | Etiqueta |
 |---|---|---|---|---|
 | Escenario A: profesional de entrada | 24.000 € | 24.300 € | CHS-47a | BASE MIXTA de IVA, no es presupuesto de apertura |
-| Escenario B: arranque minimo viable | 5.700 € | 5.900 € | CHS-47b | BASE MIXTA de IVA, no es presupuesto de apertura |
+| Escenario B: arranque mínimo viable | 5.700 € | 5.900 € | CHS-47b | BASE MIXTA de IVA, no es presupuesto de apertura |
 | Tu equipo de templado y moldeado, en base imponible | 21.060 € |  |  |  |
-| ¿Dónde cae respecto al escenario profesional de entrada? | Por debajo del rango publicado |  |  |  |
+| ¿Se puede comparar con el escenario profesional de entrada? | No comparable: tu cifra va en base imponible y el rango publicado es base MIXTA |  |  |  |
 
 *Son bases de impuesto MIXTAS y no son un presupuesto de apertura. Lo único que se puede concluir de los dos es que el arranque mínimo y el profesional de entrada se diferencian por un factor cuatro: restarlos o compararlos como cifras fiscales está prohibido.*
 
@@ -422,12 +419,12 @@ Y aquí va el aviso que evita un disgusto en la visita: la potencia que de verda
 
 | Zona | Bloque | m2 | % del local | Paso del recorrido | Qué tiene que cumplir |
 |---|---|---|---|---|---|
-| Obrador de templado y moldeado | Produccion | 26,0 | 34,7 % | 2 | La zona que manda sobre el local: aqui van la atemperadora, la mesa de marmol o granito, la enrobadora y los moldes. Clima propio (18-20 grados C y 50-60 % de humedad, F_KIT_08_APERTURA) y marcha adelante: la cobertura entra por un extremo y el bombon acabado sale por el otro sin cruzarse con ella. |
-| Camara de chocolate | Produccion | 6,0 | 8,0 % | 3 | Zona propia y climatizada a 15-18 grados C con 50-60 % de humedad (F_KIT_01_APERTURA). No es una nevera: el chocolate acabado NO va a 4 grados C. Dentro de ella, o al lado, la nevera de rellenos y ganaches a 0-4 grados C. |
-| Almacen de cobertura y materias primas | Produccion | 8,0 | 10,7 % | 1 | La cobertura llega en cajas de 5 a 25 kg y es el inmovilizado mas grande del obrador: el libro 3 calcula cuantas semanas de stock caben aqui. En oscuridad y lejos de olores fuertes: el cacao los absorbe (F_KIT_MOLDEADO). |
-| Envasado y packaging | Produccion | 5,0 | 6,7 % | 4 | Mesa de montaje de cajas, etiquetadora y almacen de packaging de campana. Es la zona que se desborda en Navidad y la que nadie dibuja en el plano. |
-| Tienda y mostrador | Tienda | 22,0 | 29,3 % | 5 | Sala a 20-22 grados C (F_KIT_01_APERTURA) con la vitrina de bomboneria a 16-18 grados C. Los dos climas son distintos y conviven en la misma sala: es el motivo de que la vitrina lleve su propio control. |
-| Aseos y vestuario | Servicios | 8,0 | 10,7 % | 6 | Vestuario de personal separado del aseo de publico. Si no caben los dos, el local no sirve: es una de las eliminatorias de la ficha de visita. |
+| Obrador de templado y moldeado | Producción | 26,0 | 34,7 % | 2 | La zona que manda sobre el local: aquí van la atemperadora, la mesa de mármol o granito, la enrobadora y los moldes. Clima propio (18-20 °C y 50-60 % de humedad, kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio») y marcha adelante: la cobertura entra por un extremo y el bombón acabado sale por el otro sin cruzarse con ella. |
+| Cámara de chocolate | Producción | 6,0 | 8,0 % | 3 | Zona propia y climatizada a 15-18 °C con 50-60 % de humedad (kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura»). No es una nevera: el chocolate acabado NO va a 4 °C. Dentro de ella, o al lado, la nevera de rellenos y ganaches a 0-4 °C. |
+| Almacén de cobertura y materias primas | Producción | 8,0 | 10,7 % | 1 | La cobertura llega en cajas de 5 a 25 kg y es el inmovilizado más grande del obrador: el libro 3 calcula cuántas semanas de stock caben aquí. En oscuridad y lejos de olores fuertes: el cacao los absorbe (kit-tareas-chocolateria/02-partidas-produccion.xlsx, hoja «Moldeado»). |
+| Envasado y packaging | Producción | 5,0 | 6,7 % | 4 | Mesa de montaje de cajas, etiquetadora y almacén de packaging de campaña. Es la zona que se desborda en Navidad y la que nadie dibuja en el plano. |
+| Tienda y mostrador | Tienda | 22,0 | 29,3 % | 5 | Sala a 20-22 °C (kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura») con la vitrina de bombonería a 16-18 °C. Los dos climas son distintos y conviven en la misma sala: es el motivo de que la vitrina lleve su propio control. |
+| Aseos y vestuario | Servicios | 8,0 | 10,7 % | 6 | Vestuario de personal separado del aseo de público. Si no caben los dos, el local no sirve: es una de las eliminatorias de la ficha de visita. |
 
 *Los metros son supuesto declarado. Lo que no es supuesto es que las zonas no se pisen y que el recorrido vaya en un solo sentido: eso se comprueba con los pasos numerados, y la hoja avisa si se repiten o hay saltos.*
 
@@ -483,7 +480,7 @@ Para que esa visita al local candidato no dependa de la memoria ni del entusiasm
 
 Con el local ya filtrado por humos y por licencia, queda la decisión de cómo llegas a él, y aquí es donde más dinero se pierde por comparar mal: local nuevo, traspaso de un negocio que ya funcionaba, o entrada por franquicia son tres puertas distintas, y compararlas por el precio de entrada es la forma más rápida de equivocarse. Lo que hay que comparar es el coste (costo) total en el horizonte de comparación completo, no la primera cifra que aparece en el anuncio: el precio pedido por el traspaso o por la obra, la adecuación que todavía hace falta hacer aunque el local venga «llave en mano», la renta mensual durante todo ese horizonte, y los meses en los que pagas alquiler y nóminas sin facturar todavía un solo bombón.
 
-Para darte una idea real del mercado de traspasos, y no un ejemplo inventado, este pack trae sembrados ocho traspasos reales publicados, con su superficie y su precio pedido, en el cuadro que sigue a este texto. La lectura honesta de esa muestra, antes de mirar un solo número, es esta: cinco de los ocho son de pastelería-bombonería, con horno de por medio, y tres son de churrería-chocolatería, que es un negocio distinto al que vas a montar tú y arrastra su propia licencia de humos. Y de los ocho, solo tres publican la renta mensual, que es justamente el dato que más pesa en la comparación de coste total: sin la renta, un precio de traspaso que parece barato puede no serlo en absoluto a varios años vista.
+Para darte una idea real del mercado de traspasos, y no un ejemplo inventado, este pack trae sembrados ocho traspasos reales publicados, con su superficie y —siete de los ocho— su precio pedido, en el cuadro que sigue a este texto. La lectura honesta de esa muestra, antes de mirar un solo número, es esta: cinco de los ocho son de pastelería-bombonería, con horno de por medio, y tres son de churrería-chocolatería, que es un negocio distinto al que vas a montar tú y arrastra su propia licencia de humos. Y de los ocho, solo tres publican la renta mensual, que es justamente el dato que más pesa en la comparación de coste total: sin la renta, un precio de traspaso que parece barato puede no serlo en absoluto a varios años vista.
 
 El caso que hemos modelado con la calculadora de este pack sí tiene los dos lados completos, y el veredicto es de dinero, no de intuición: el coste total del traspaso en el horizonte de comparación es de 111.100 €, el coste total de montar el local desde cero es de 160.995 €, y el veredicto que arroja la calculadora es «sale mejor el traspaso». Ese veredicto compara solo dinero, y hay razones que no son dinero y que pueden darle la vuelta al resultado: la clientela heredada de un negocio que ya llevaba años de recorrido en el barrio, el estado real de la instalación eléctrica que vas a heredar sin nadie que te lo certifique, o una distribución del local que no admite meter la marcha de producción que necesitas. El número te dice cuál sale más barato; la visita al local te dice si ese barato compensa.
 
@@ -495,7 +492,7 @@ La tercera puerta es la franquicia, y aquí solo se puede hablar con cifras que 
 |---|---|---|---|---|
 | 1 | La potencia eléctrica contratable llega a la que vas a instalar | Sí | Sí | OK |
 | 2 | El local admite climatizar el obrador con deshumidificación | Sí | Sí | OK |
-| 3 | La superficie útil llega a los m2 que has repartido por zonas | No | Sí | OK |
+| 3 | La superficie útil llega a los m² que has repartido por zonas | No | Sí | OK |
 | 4 | La altura libre del local llega a la que has fijado | No | Sí | OK |
 | 5 | La superficie de exposición y venta está por debajo del umbral de la Ley 12/2012 | No | Sí | OK |
 | 6 | El obrador puede quedar inaccesible al público | Sí | Sí | OK |
@@ -518,14 +515,14 @@ La tercera puerta es la franquicia, y aquí solo se puede hablar con cifras que 
 
 | Ciudad o zona | Tipo de negocio | m2 | Precio pedido (€) | Renta mensual (€) | Fuente | ¿Mismo formato? |
 |---|---|---|---|---|---|---|
-| El Prat de Llobregat (Barcelona) | Pasteleria-bomboneria con obrador (40+ anos) | 90 | 26.000 € | 1.100 € | CHS-38a | Sí |
-| Reus (Tarragona) | Pasteleria-bomboneria historica (34 anos) | 300 | 73.000 € |  | CHS-38b | Sí |
-| Barcelona (Sagrada Familia) | Pasteleria-bomboneria con obrador a la vista | 180 | 140.000 € | 2.200 € | CHS-38c | Sí |
-| Valencia (Abastos) | Pasteleria con obrador profesional | 100 | 180.000 € |  | CHS-38d | Sí |
-| Llica d'Amunt (Barcelona) | Obrador de pasteleria y panaderia | 400 | 210.000 € |  | CHS-38e | Sí |
+| El Prat de Llobregat (Barcelona) | Pastelería-bombonería con obrador (40+ años) | 90 | 26.000 € | 1.100 € | CHS-38a | Sí |
+| Reus (Tarragona) | Pastelería-bombonería historica (34 años) | 300 | 73.000 € |  | CHS-38b | Sí |
+| Barcelona (Sagrada Familia) | Pastelería-bombonería con obrador a la vista | 180 | 140.000 € | 2.200 € | CHS-38c | Sí |
+| Valencia (Abastos) | Pastelería con obrador profesional | 100 | 180.000 € |  | CHS-38d | Sí |
+| Lliçà d'Amunt (Barcelona) | Obrador de pastelería y panadería | 400 | 210.000 € |  | CHS-38e | Sí |
 | Elche (Alicante) | Churrería-chocolatería | 75 |  |  | CHS-37a | No |
 | Madrid (Vallecas) | Churrería-chocolatería | 74 | 88.500 € | 910 € | CHS-37b | No |
-| Mataro (Barcelona) | Churrería-chocolatería | 118 | 58.000 € |  | CHS-37c | No |
+| Mataró (Barcelona) | Churrería-chocolatería | 118 | 58.000 € |  | CHS-37c | No |
 
 *Cinco son de pastelería-bombonería y tres de churrería-chocolatería, que es otro negocio y por eso van marcadas. Sólo tres publican la renta, que es justamente el dato que decide la comparación: lo que no se publica, se pregunta.*
 
@@ -546,7 +543,7 @@ Lo que hace la hoja de clima, y que casi nadie hace a mano sobre un plano ni sob
 
 Aquí circula una idea que conviene desmontar con la norma delante, porque creérsela cuesta dinero: no existe una temperatura legal de obrador de chocolate. El RD 1021/2022 trae una tabla de temperaturas de conservación en su art. 4.1, y esa tabla tiene 11 filas: ninguna es de chocolate, de bombones ni de productos de cacao. Hemos hecho la búsqueda exhaustiva sobre el texto íntegro de la norma, comprobado el 12 de septiembre de 2026, y el resultado es tajante: las palabras «chocolate», «cacao», «bombón» y «confitería» no aparecen ni una sola vez en ninguno de sus 22 artículos. Quien te diga que hay un grado exacto que la ley te impone para tu obrador te está citando una norma que, literalmente, no habla de tu producto.
 
-Lo que sí existe, y es lo que de verdad te obliga, está en el art. 4.2 de ese mismo real decreto: para el chocolate y los productos de cacao, la temperatura de conservación la fija «el operador que los ha producido y envasado, de acuerdo con lo establecido en su sistema de autocontrol». Es decir, la declaras tú, quien templa y envasa, dentro de tu propio plan de autocontrol, y no un número impuesto desde fuera. Para lo que despachas a granel —el bombón suelto que el cliente elige pieza a pieza en el mostrador— la referencia es la misma: tu sistema de autocontrol, donde queda por escrito qué temperatura sostienes y por qué. El capítulo 16 lo desarrolla referencia a referencia, con cada familia de producto y su ventana declarada.
+Lo que sí existe, y es lo que de verdad te obliga, está en el art. 4.2 de ese mismo real decreto, que es una cláusula residual: a los productos que no salen en la tabla del 4.1 se les aplica la temperatura indicada EN LA ETIQUETA, fijada por «el operador que los ha producido y envasado, de acuerdo con lo establecido en su sistema de autocontrol». Es decir, la declaras tú, quien templa y envasa, dentro de tu propio plan de autocontrol, y no un número impuesto desde fuera. Para lo que despachas a granel —el bombón suelto que el cliente elige pieza a pieza en el mostrador— NO hay etiqueta, así que el art. 4.2 no es tu referencia: tu sistema de autocontrol, donde queda por escrito qué temperatura sostienes y por qué. El capítulo 16 lo desarrolla referencia a referencia, con cada familia de producto y su ventana declarada.
 
 La consecuencia es ventaja y trampa a la vez, y conviene decirlo así de claro: elegir tú la ventana te da margen para ajustarla a tu obrador real, pero también te obliga a sostenerla todos los días del año, no sólo cuando el tiempo acompaña. Si declaras 18-20 grados en tu plan de autocontrol, tienes que poder demostrar que los sostienes también el día que el termómetro de la calle marca lo que marca en pleno agosto, con la puerta de carga abriéndose cada vez que entra un pedido. Declarar una temperatura y no poder sostenerla es peor que no haberla declarado nunca: es un compromiso por escrito que la inspección puede pedirte que justifiques con tus propios registros.
 
@@ -571,10 +568,10 @@ Y ahí entra la ficha de preguntas, que es la pieza que de verdad cambia la conv
 | Dónde | T mínima | T máxima | HR mínima | HR máxima | De dónde sale |
 |---|---|---|---|---|---|
 | Obrador de templado y moldeado | 18 | 20 | 50 | 60 | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
-| Camara de conservacion de chocolate | 15 | 18 | 50 | 60 | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Cámara de conservación de chocolate | 15 | 18 | 50 | 60 | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
 | Nevera de rellenos y ganaches | 0 | 4 |  |  | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
 | Sala de tienda | 20 | 22 |  |  | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Vitrina de bomboneria | 16 | 18 |  | 55 | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
+| Vitrina de bombonería | 16 | 18 |  | 55 | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
 
 *Ninguna de estas cinco ventanas es una exigencia legal: son criterio TÉCNICO y salen del Kit de Tareas Chocolatería. Verificado el 12-09-2026 · RD 1021/2022 (BOE-A-2022-21681), arts. 3, 4, 5, 9, 11, 13 y 20, y RD 191/2011 art. 2.2 en la redacción de la disposición final primera del RD 1021/2022 · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681*
 
@@ -582,16 +579,16 @@ Y ahí entra la ficha de preguntas, que es la pieza que de verdad cambia la conv
 
 | Qué le preguntas | Unidad | Respuesta del caso | ¿Por escrito? |
 |---|---|---|---|
-| ¿Qué volumen en m3 has tomado para el obrador? | m3 | 78 | Por pedir |
-| ¿Para qué salto de temperatura de diseño lo has calculado? | grados C | 16 | Por pedir |
-| ¿Qué aportes internos has contado? | kW | 3.5 | Por pedir |
-| ¿Cuántas renovaciones de aire por hora has previsto? | ren/h | 2 | Por pedir |
-| ¿Qué capacidad de deshumidificación lleva, y a qué humedad la mantiene? | litros/24 h | 30 | Por pedir |
+| ¿Qué volumen en m³ has tomado para el obrador? | m3 | 78,0 | Por pedir |
+| ¿Para qué salto de temperatura de diseño lo has calculado? | grados C | 16,0 | Por pedir |
+| ¿Qué aportes internos has contado? | kW | 3,5 | Por pedir |
+| ¿Cuántas renovaciones de aire por hora has previsto? | ren/h | 2,0 | Por pedir |
+| ¿Qué capacidad de deshumidificación lleva, y a qué humedad la mantiene? | litros/24 h | 30,0 | Por pedir |
 | ¿El equipo deshumidifica SIN bajar la temperatura por debajo del objetivo? | Sí o No | Sí | Por pedir |
 | ¿Lleva climatizador evaporativo? | Sí o No | No | Por pedir |
 | ¿Está incluida la puesta en marcha y el equilibrado de la instalación? | Sí o No | Sí | Por pedir |
-| ¿Qué garantía y qué contrato de mantenimiento ofreces? | meses | 24 | Por pedir |
-| ¿Qué consumo eléctrico tiene en agosto a plena carga? | kW | 4.2 | Por pedir |
+| ¿Qué garantía y qué contrato de mantenimiento ofreces? | meses | 24,0 | Por pedir |
+| ¿Qué consumo eléctrico tiene en agosto a plena carga? | kW | 4,2 | Por pedir |
 
 *La columna de «por escrito» es la que vale: una respuesta de palabra no sirve para reclamar. Y hay una que sólo admite una contestación: el equipo NO puede llevar climatizador evaporativo, porque añade humedad al aire, que es justo lo contrario de lo que necesita un obrador de chocolate.*
 
@@ -602,11 +599,11 @@ Y ahí entra la ficha de preguntas, que es la pieza que de verdad cambia la conv
 
 ### La escalera de atemperadoras y el cruce de kilos por semana con máquina
 
-Elegir la atemperadora de tu obrador (taller o laboratorio) por la marca que más suena o por el hueco que te deja el presupuesto es la manera más rápida de comprar mal. La pregunta que de verdad decide la compra es otra: cuántos kilos de cobertura vas a mover por semana en tu peor mes bueno, y si el negocio va a necesitar una sola línea de templado o dos trabajando a la vez, porque separas el bombón de molde del bombón de baño. Todo lo demás —el diseño de la carcasa, el tacto de la pantalla, el prestigio del fabricante— pesa poco comparado con esa cuenta.
+Elegir la atemperadora de tu obrador (taller o laboratorio) por la marca que más suena o por el hueco que te deja el presupuesto es la manera más rápida de comprar mal. La pregunta que decide la compra es otra: cuántos kilos de cobertura vas a mover por semana en tu peor mes bueno, y si el negocio va a necesitar una sola línea de templado o dos trabajando a la vez, porque separas el bombón de molde del bombón de baño. Todo lo demás —el diseño de la carcasa, el tacto de la pantalla, el prestigio del fabricante— pesa poco comparado con esa cuenta.
 
-La escalera que hemos verificado en el mercado español se cita máquina a máquina, nunca como un rango cómodo de resumir. Arriba de la mesa, en modo lote y para quien arranca con muy poco volumen, está la Pavoni MINITEMPER, de 4,5 litros (unos 3 kg de capacidad), a 1.960,00 €, con la cubeta adicional a 165,30 € aparte. En la misma franja de entrada, pero con otra tecnología —baño maría, no tornillo continuo—, está el temperador de baño maría digital de 22 litros, a 2.650,00 €. El primer salto a máquina continua es la Selmi One, de 12 kg de capacidad y 55 kg/h de rendimiento, a 8.500 €, a los que hay que sumar 1.045 € de embalaje, transporte asegurado y puesta en marcha: esta es la atemperadora continua de sobremesa que usamos como referencia en todo este capítulo. Por encima, del mismo fabricante y del mismo distribuidor, sigue la Selmi Color EX (12 kg, 12.300 €), la Selmi Ghana-Legend (24 kg, 12.300 €), la Selmi Plus EX (24 kg, 18.500 €), la Selmi Futura EX (35 kg, 21.500 €), la Selmi Top EX (60 kg, 27.500 €) y, ya en el terreno de la producción de proximidad a gran escala, la Selmi Cento EX, de 100 kg de capacidad, a 45.000 €. Todas estas máquinas están consultadas ante Utilcentre, S.L., distribuidor de Selmi y Pavoni en España.
+La escalera que hemos verificado en el mercado español se cita máquina a máquina, nunca como un rango cómodo de resumir. Arriba de la mesa, en modo lote y para quien arranca con muy poco volumen, está la Pavoni MINITEMPER, de 4,5 litros (unos 3 kg de capacidad), a 1.960,00 €, con la cubeta adicional a 165,30 € aparte. En la misma franja de entrada, pero con otra tecnología —baño maría, no tornillo continuo—, está el temperador de baño maría digital de 22 litros, a 2.650,00 €. El primer salto a máquina continua es la Selmi One, de 12 kg de capacidad y 55 kg/h de rendimiento, a 8.500 €, a los que hay que sumar 1.045 € de embalaje, transporte asegurado y puesta en marcha: esta es la atemperadora continua de sobremesa que usamos como referencia en todo este capítulo. Por encima, del mismo fabricante y del mismo distribuidor, sigue la Selmi Color EX (12 kg, 12.300 €), la Selmi Ghana-Legend (24 kg, 12.300 €) —mismo precio que la Color EX, con el doble de capacidad—, la Selmi Plus EX (24 kg, 18.500 €), la Selmi Futura EX (35 kg, 21.500 €), la Selmi Top EX (60 kg, 27.500 €) y, ya en el terreno de la producción de proximidad a gran escala, la Selmi Cento EX, de 100 kg de capacidad, a 45.000 €. Todas estas máquinas están consultadas ante Utilcentre, S.L., distribuidor de Selmi y Pavoni en España.
 
-Esa escalera sólo cobra sentido cuando la cruzas con la hoja «Capacidad por Equipo» de capacidad-obrador-y-clima.xlsx, que traduce cada máquina en bombones al día de obrador y dice sin rodeos cuál es la que limita tu producción. La Selmi One de doce kilos, la de la referencia de 8.500 €, rinde 4.368 bombones al día de obrador según esa hoja, y ahí aparece la sorpresa que se repite casi siempre en este cruce: la atemperadora casi nunca es el cuello de botella real. Lo que limita de verdad son las manos disponibles para moldear y rellenar, y el puesto de envasado, que se satura mucho antes de que la máquina se quede corta de kilos por hora.
+Esa escalera sólo cobra sentido cuando la cruzas con la hoja «Capacidad por Equipo» de capacidad-obrador-y-clima.xlsx, que traduce cada máquina en bombones al día de obrador y dice sin rodeos cuál es la que limita tu producción. La Selmi One de doce kilos, la de la referencia de 8.500 €, rinde 4.368 bombones al día de obrador según esa hoja, y ahí aparece la sorpresa que se repite casi siempre en este cruce: la atemperadora casi nunca es el cuello de botella real. Lo que limita en la práctica son las manos disponibles para moldear y rellenar, y el puesto de envasado, que se satura mucho antes de que la máquina se quede corta de kilos por hora.
 
 De esa cuenta sale el criterio de compra que evita el error más caro de esta decisión. Comprar la máquina pensada para absorber el pico de Navidad significa pagar una capacidad que el resto del año está parada la mayor parte del tiempo. Comprar pensando en el día medio del año significa quedarte corto justo en diciembre, que es cuando más factura una bombonería. La salida que funciona no es comprar más máquina: es adelantar en el calendario la producción de todo lo que aguanta bien la conservación, que es justo lo que calcula el libro de campañas de la guía, semana a semana, para decidir qué se templa y se moldea con antelación y qué tiene que hacerse a última hora sí o sí.
 
@@ -630,7 +627,7 @@ Antes de comprar cualquier vitrina hay que separar dos números que se confunden
 
 ### Plazos de entrega y segunda mano
 
-El plazo que de verdad decide tu fecha de apertura no es el de la firma del alquiler ni el de ningún trámite: es el plazo de entrega de la máquina que más tarda en llegar. En el caso modelado de este capítulo esa cifra son 10 semanas, y la línea que marca ese plazo crítico es la atemperadora continua de sobremesa de 12 kg y 55 kg/h, la misma Selmi One que hemos usado de referencia para toda la escalera. Diez semanas es más tiempo del que casi nadie reserva mentalmente cuando calcula cuánto va a tardar en abrir, y es justo el tipo de plazo que se olvida hasta que ya es tarde para adelantarlo.
+El plazo que realmente decide tu fecha de apertura no es el de la firma del alquiler ni el de ningún trámite: es el plazo de entrega de la máquina que más tarda en llegar. En el caso modelado de este capítulo esa cifra son 10 semanas, y la línea que marca ese plazo crítico es la atemperadora continua de sobremesa de 12 kg y 55 kg/h, la misma Selmi One que hemos usado de referencia para toda la escalera. Diez semanas es más tiempo del que casi nadie reserva mentalmente cuando calcula cuánto va a tardar en abrir, y es justo el tipo de plazo que se olvida hasta que ya es tarde para adelantarlo.
 
 Ese dato no se queda como una curiosidad: el cronograma del expediente legal incorpora ese plazo en una celda editable y compara automáticamente la ruta crítica de todo el papeleo de apertura con la fecha en que de verdad va a llegar la máquina. Cuando el papeleo termina antes que la entrega, el cronograma avisa, porque el escenario real es que la tienda ya esté montada, el contrato del local ya esté firmado y el alquiler ya esté corriendo, y la atemperadora siga en tránsito. Cuadrar ese cruce antes de firmar nada es lo que separa una apertura ordenada de semanas de local pagado sin poder producir un solo bombón.
 
@@ -638,27 +635,27 @@ Sobre la segunda mano, el criterio que aplicamos es honesto y no depende de lo b
 
 **La dotación completa, línea a línea, con su base de impuesto y su plazo (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Equipamiento»)**
 
-| Partida | Prioridad | Precio de referencia sin IVA (€) | Base declarada por la fuente | Plazo de entrega (semanas) |
-|---|---|---|---|---|
-| Atemperadora continua de sobremesa, 12 kg (55 kg/h) | Crítico | 8.500 € | no declarada | 10 |
-| Embalaje, transporte y puesta en marcha de la atemperadora | Crítico | 1.045 € | no declarada | 10 |
-| Enrobadora de banda, 200 mm | Crítico | 6.800 € | no declarada | 10 |
-| Placa dosificadora de rellenos | Crítico | 1.495 € | no declarada | 8 |
-| Temperador de bano maria digital, 22 L | Crítico | 2.650 € | no declarada | 6 |
-| Mantenedor de 1 cubeta, digital | Crítico | 570 € | no declarada | 5 |
-| Atemperadora de arranque, 4,5 L (unos 3 kg) | Opcional | 1.960 € | no declarada | 4 |
-| Cubeta adicional para la atemperadora de arranque | Opcional | 165 € | no declarada | 4 |
-| Vitrina refrigerada especifica para chocolate | Crítico | 2.685 € | sin IVA | 7 |
-| Camara climatizada de chocolate, unos 6 m2 | Crítico | 6.400 € | sin IVA | 8 |
-| Nevera de rellenos y ganaches | Crítico | 1.450 € | sin IVA | 5 |
-| Moldes de policarbonato para bomboneria (24 unidades) | Crítico | 804 € | no declarada | 4 |
-| Primer pedido de packaging: cajas, estuches, cintas y etiquetas | Crítico | 2.200 € | sin IVA | 5 |
-| Mobiliario de tienda, mostrador y estanteria | Crítico | 6.900 € | sin IVA | 6 |
-| TPV, ordenador, impresora de etiquetas y rotulo | Crítico | 3.200 € | sin IVA | 4 |
-| Climatizacion del obrador con deshumidificacion | Crítico | 7.600 € | sin IVA | 9 |
-| Chocolatera de 3 L para la variante de taza | Opcional | 527 € | sin IVA | 4 |
+| Partida | Prioridad | Precio de referencia sin IVA (€) | Cómo se publica el precio | ¿Lleva IVA? (lo declara la fuente o, si es supuesto, lo decides tú) | Plazo de entrega (semanas) |
+|---|---|---|---|---|---|
+| Atemperadora continua de sobremesa, 12 kg (55 kg/h) | Crítico | 8.500 € | Precio cerrado | no declarada | 10 |
+| Embalaje, transporte y puesta en marcha de la atemperadora | Crítico | 1.045 € | Precio cerrado | no declarada | 10 |
+| Enrobadora de banda, 200 mm | Crítico | 6.800 € | Precio cerrado | no declarada | 10 |
+| Placa dosificadora de rellenos | Crítico | 1.495 € | Precio cerrado | no declarada | 8 |
+| Temperador de baño maria digital, 22 L | Crítico | 2.650 € | Precio cerrado | no declarada | 6 |
+| Mantenedor de 1 cubeta, digital | Crítico | 570 € | DESDE: suelo comercial, presupuestar | no declarada | 5 |
+| Atemperadora de arranque, 4,5 L (unos 3 kg) | Opcional | 1.960 € | Precio cerrado | no declarada | 4 |
+| Cubeta adicional para la atemperadora de arranque | Opcional | 165 € | Precio cerrado | no declarada | 4 |
+| Vitrina refrigerada específica para chocolate | Crítico | 2.685 € | Precio cerrado | sin IVA | 7 |
+| Cámara climatizada de chocolate, unos 6 m² | Crítico | 6.400 € | SUPUESTO declarado | sin IVA | 8 |
+| Nevera de rellenos y ganaches | Crítico | 1.450 € | SUPUESTO declarado | sin IVA | 5 |
+| Moldes de policarbonato para bombonería (24 unidades) | Crítico | 804 € | RANGO publicado (no es un precio) | no declarada | 4 |
+| Primer pedido de packaging: cajas, estuches, cintas y etiquetas | Crítico | 2.200 € | SUPUESTO declarado | sin IVA | 5 |
+| Mobiliario de tienda, mostrador y estantería | Crítico | 6.900 € | SUPUESTO declarado | sin IVA | 6 |
+| TPV, ordenador, impresora de etiquetas y rotulo | Crítico | 3.200 € | SUPUESTO declarado | sin IVA | 4 |
+| Climatización del obrador con deshumidificación | Crítico | 7.600 € | SUPUESTO declarado | sin IVA | 9 |
+| Chocolatera de 3 L para la variante de taza | Opcional | 527 € | Precio cerrado | sin IVA | 4 |
 
-*Las líneas marcadas como opcionales vienen desmarcadas a propósito: son decisiones, no dotación mínima. Y las que dicen «no declarada» son exactamente eso: la ficha del distribuidor no dice si el precio lleva impuesto, y no se supone.*
+*Las líneas marcadas como opcionales vienen desmarcadas a propósito: son decisiones, no dotación mínima. Lee la columna «cómo se publica» ANTES que el precio: las que dicen «SUPUESTO declarado» no tienen ficha detrás y su base de impuesto la pones tú; el mantenedor es un «desde», es decir un suelo comercial que hay que presupuestar, y nunca un precio cerrado; y los moldes se publican como RANGO, así que las veinticuatro unidades valen entre 580,80 € y 1.027,92 € con los dos extremos medidos, y los 804,36 € de la columna de precio son el punto medio de esa horquilla, que es un supuesto y no un dato. Y las que dicen «no declarada» son exactamente eso: la ficha del distribuidor no dice si el precio lleva impuesto, y no se supone.*
 
 **Qué bombones al día permite cada equipo, y cuál limita de verdad (capacidad-obrador-y-clima.xlsx, hoja «Capacidad por Equipo»)**
 
@@ -671,7 +668,7 @@ Sobre la segunda mano, el criterio que aplicamos es honesto y no depende de lo b
 | Puesto de moldeado y desmoldeo (mesa de mármol o granito) | Moldeado | Sí | 576 | 606 |
 | Placa dosificadora de rellenos — Selmi | Moldeado | Sí | 4.896 | 7.200 |
 | Enrobadora de banda, 200 mm — Selmi R200 Legend | Bañado | Sí | 3.840 | 21.333 |
-| Cámara climatizada de chocolate, unos 6 m2 | Frío y cristalización | Sí | 2.880 | 3.388 |
+| Cámara climatizada de chocolate, unos 6 m² | Frío y cristalización | Sí | 2.880 | 3.388 |
 | Puesto de envasado y montaje de cajas | Envasado | Sí | 512 | 512 |
 | Vitrina refrigerada específica para chocolate — Docriluc WB-6-6-R | Tienda y vitrina | Sí | 624 | 1.135 |
 | Atemperadora de arranque, 4,5 L (unos 3 kg) — Pavoni MINITEMPER | Templado | No | 4.914 | 4.914 |
@@ -729,7 +726,7 @@ La frase que hay que poder repetir sin equivocarse, delante de un ayuntamiento, 
 
 ### La clave del registro general cuando sí toca
 
-Si el árbol de registro sanitario te manda al régimen general, la buena noticia es que no hay que empezar de cero: el registro tiene un cajón concreto reservado para este producto, con su propia clave y sus propias actividades, y conocerlo te ahorra una consultoría. La clave es la 25, «Alimentos estimulantes, especies vegetales para infusiones y sus derivados», con tres actividades que te afectan directamente: la 07, cacao y derivados; la 08, chocolate y derivados; y la 09, sucedáneo de chocolate. Las categorías van de la 1 a la 5: la 1 es fabricación, elaboración o transformación; la 2, envasado; la 3, distribución.
+Si el árbol de registro sanitario te manda al régimen general, la buena noticia es que no hay que empezar de cero: el registro tiene un cajón concreto reservado para este producto, con su propia clave y sus propias actividades, y conocerlo te ahorra una consultoría. La clave es la 25, «Alimentos estimulantes, especies vegetales para infusiones y sus derivados», con tres actividades que te afectan directamente: la 07, cacao y derivados; la 08, chocolate y derivados; y la 09, sucedáneo de chocolate. Las categorías van de la 1 a la 5, y las tres que le tocan a un obrador de chocolate son las primeras: la 1 es fabricación, elaboración o transformación; la 2, envasado; y la 3, distribución.
 
 Aquí conviene marcar con honestidad el nivel de la fuente, porque no es lo mismo un catálogo publicado en un boletín oficial que una guía interpretativa de la administración. Este catálogo de claves y actividades no está en ningún boletín oficial: vive en la Guía informativa sobre el Registro General Sanitario de Empresas Alimentarias y Alimentos, revisión 16. Se cita como lo que es, una guía, nunca como si fuera la norma misma.
 
@@ -786,7 +783,7 @@ Y aquí va la prohibición que conviene tener clara antes de escribir nada en la
 
 Para saber qué puedes poner en el cartelito de cada pieza, olvida la palabra que usa la calle. El RD 1055/2003 —comprobado el 12 de septiembre de 2026— no trabaja con «porcentaje de cacao» a secas: trabaja con tres magnitudes distintas y las tres cuentan por separado, materia seca total de cacao, manteca de cacao y materia seca desgrasada, y la ficha comercial de la bolsa de cobertura que compras casi siempre te da sólo una de las tres. Comprar a ciegas por esa única cifra es el error de partida de este capítulo: el mínimo que te falta puede ser precisamente el que no viene impreso.
 
-En el cuadro que sigue tienes las veinte filas de la norma cotejadas una a una contra el texto consolidado, con la denominación, sus umbrales y el producto al que corresponde cada fila. Se lee por denominación, no por producto: primero decides qué nombre quieres poner en la vitrina (exhibidor) —chocolate, chocolate con leche, cobertura de chocolate, chocolate a la taza, bombón— y después compruebas si tu ficha de fabricación llega a esos números. Cumplirlos es lo que te da derecho legal a usar ese nombre; no cumplirlos no te prohíbe vender la pieza, te prohíbe llamarla así en el envase o en el cartel.
+En el cuadro que sigue tienes las veintiocho referencias de la carta, cada una con la denominación legal que le corresponde y el mínimo que arrastra. Se lee por producto; la tabla completa de las veinte denominaciones de la norma, cotejada fila a fila contra el texto consolidado, vive en la hoja «Denominaciones y Mínimos» del libro de la carta: primero decides qué nombre quieres poner en la vitrina (exhibidor) —chocolate, chocolate con leche, cobertura de chocolate, chocolate a la taza, bombón— y después compruebas si tu ficha de fabricación llega a esos números. Cumplirlos es lo que te da derecho legal a usar ese nombre; no cumplirlos no te prohíbe vender la pieza, te prohíbe llamarla así en el envase o en el cartel.
 
 La complicación de verdad está en la base sobre la que se calculan esos umbrales, porque en la misma norma conviven dos bases distintas para productos distintos. En las tabletas (barras) con frutos secos y en el chocolate a la taza, el mínimo se calcula descontando del peso total los ingredientes añadidos: las avellanas, las pasas, los cereales inflados no cuentan como chocolate y se restan antes de comprobar el umbral. En el chocolate relleno y en el bombón ocurre justo lo contrario: el contenido de chocolate se mide sobre el peso total del producto acabado, con el relleno o la ganache ya dentro, sin descontar nada.
 
@@ -812,9 +809,9 @@ La consecuencia baja directa a la vitrina. Si decides poner la mención del porc
 
 ### Los calificativos de calidad, sin lista de palabras
 
-Circula la idea de que existe una lista cerrada de palabras —«fino», «superior», «extra»— que la norma reserva para el chocolate de gama alta, y que basta con evitarlas si tu producto no llega a esos mínimos. No es así, y merece la pena desmontarlo antes de rotular nada. Lo que dice el RD 1055/2003, en el apartado 6.d), es que autoriza completar tres denominaciones con menciones o calificativos referidos a criterios de calidad, sin dar ni una sola palabra concreta. La norma abre la puerta y deja el vocabulario en tus manos; lo que fija con precisión son las condiciones para cruzar esa puerta, no el rótulo que pones al otro lado.
+Circula la idea de que existe una lista cerrada de palabras —«fino», «superior», «extra»— que la norma reserva para el chocolate de gama alta, y que basta con evitarlas si tu producto no llega a esos mínimos. No es así, y merece la pena desmontarlo antes de rotular nada. Lo que dice el RD 1055/2003, en el apartado 6, letra g, es que autoriza completar tres denominaciones con menciones o calificativos referidos a criterios de calidad, sin dar ni una sola palabra concreta. La norma abre la puerta y deja el vocabulario en tus manos; lo que fija con precisión son las condiciones para cruzar esa puerta, no el rótulo que pones al otro lado.
 
-La comprobación se ha hecho carácter a carácter sobre el texto íntegro del real decreto, y el resultado es el dato que hay que memorizar antes de escribir un solo cartel de vitrina: la palabra «calidad» aparece una única vez en todo el reglamento, justo en ese apartado 6.d) que autoriza la mención; «fino» y «superior» no aparecen ni una sola vez en ningún otro punto del texto; y «extra» sólo se cuela dentro de otras palabras —«extracción», «extracto seco»— nunca como calificativo suelto de un producto. Así que ni «fino» ni «superior» ni «extra» son términos que la norma reconozca ni prohíba de forma expresa: sencillamente no están en su vocabulario. Puedes usarlos, y también puedes no usarlos; lo único que la norma controla de verdad es qué composición hay detrás de la etiqueta, no la palabra que la corona.
+La comprobación se ha hecho carácter a carácter sobre el texto íntegro del real decreto, y el resultado es el dato que hay que memorizar antes de escribir un solo cartel de vitrina: la palabra «calidad» aparece una única vez en todo el reglamento, justo en ese apartado 6, letra g, que autoriza la mención; «fino» y «superior» no aparecen ni una sola vez en ningún otro punto del texto; y «extra» sólo se cuela dentro de otras palabras —«extracción», «extracto seco»— nunca como calificativo suelto de un producto. Así que ni «fino» ni «superior» ni «extra» son términos que la norma reconozca ni prohíba de forma expresa: sencillamente no están en su vocabulario. Puedes usarlos, y también puedes no usarlos; lo único que la norma controla de verdad es qué composición hay detrás de la etiqueta, no la palabra que la corona.
 
 Y detrás de esa palabra hay una condición doble, no una etiqueta libre. La mención de calidad sólo cabe sobre tres denominaciones —«chocolate», «chocolate con leche» y «cobertura de chocolate»— y sólo cuando la materia seca supera unos umbrales reforzados, por encima de los mínimos ordinarios de cada una. Para el chocolate negro, hace falta al menos un 43 % de materia seca total de cacao y al menos un 26 % de manteca de cacao; para el chocolate con leche, al menos un 30 % de materia seca total de cacao, un 18 % de leche y un 4,5 % de materia grasa láctea; y para la cobertura, al menos un 16 % de materia seca desgrasada. Si tu referencia no llega a esas cifras, la mención de calidad no te corresponde, la escribas o no la escribas en el cartelito. Y hay un matiz de nombre que se pisa con frecuencia al rotular: la denominación que la norma reconoce para el tercer caso es «cobertura de chocolate» completa, no «cobertura» a secas, que no es por sí sola una denominación de venta reconocida.
 
@@ -826,7 +823,7 @@ La frontera entre chocolate y sucedáneo no se mide por si el producto lleva alg
 
 Lo que sí sigue siendo chocolate, con todas las de la ley, es añadir un pequeño porcentaje de unas grasas vegetales concretas sin tocar la manteca de cacao ya presente en la receta. El límite es del 5 % sobre el peso del producto acabado, sin que esa adición reduzca los mínimos de materia seca de cacao exigidos a la denominación, y sólo entra en juego con una lista cerrada de seis grasas: illipe, aceite de palma, sal —la variedad Shorea robusta, no la sal de mesa—, shea, kokum gurgi y hueso de mango. Hay una séptima grasa admitida, el aceite de coco, pero reservada al chocolate destinado a helados, así que en una bombonería de mostrador no entra en juego. No hay más opciones ni excepciones de proveedor: si la grasa que te ofrecen no está en esa lista cerrada, no cabe dentro del 5 %, sea cual sea el argumento comercial que la acompañe.
 
-Y esa puerta del 5 % no está abierta para toda la carta. Sólo se aplica a un grupo concreto de apartados de la norma, y ni el chocolate relleno ni el bombón están dentro de ese grupo. Si trabajas con bombón o con pieza rellena, la referencia se queda fuera de esta posibilidad por completo, y su composición de grasa se juega enteramente en el terreno del sucedáneo: cualquier grasa vegetal en la cobertura de un bombón o de una pieza rellena, por poca que sea, saca a esa referencia de la definición de chocolate. Conviene tenerlo presente precisamente porque el bombón y el relleno son la familia que más margen deja en una bombonería, y es donde menos se puede improvisar con la ficha técnica del proveedor.
+Y esa puerta del 5 % no está abierta para toda la carta. Sólo se aplica a un grupo concreto de apartados de la norma, y ni el chocolate relleno ni el bombón están dentro de ese grupo. Si trabajas con bombón o con pieza rellena, la referencia se queda fuera de esta posibilidad por completo, y el 5 % no se puede computar sobre el producto acabado. Lo que sí tiene que cumplir la norma es el chocolate que empleas: pídele al proveedor la ficha y, si lleva alguna de las seis grasas, comprueba con tu asesoría cómo se traslada al conjunto. Esta es una lectura nuestra de los apartados 2.1 y 4, no una cita literal. Conviene tenerlo presente precisamente porque el bombón y el relleno son la familia que más margen deja en una bombonería, y es donde menos se puede improvisar con la ficha técnica del proveedor.
 
 Cuando la referencia sí admite el 5 % y una cobertura lo usa, la norma no deja la mención al criterio del envasador: tiene que aparecer en el mismo campo visual que la lista de ingredientes, diferenciada de ella, en caracteres de un tamaño al menos igual y en negrita, y situada cerca de la denominación de venta. No es una nota a pie de etiqueta ni una línea perdida en el reverso del paquete: es un requisito de formato tan concreto como el propio porcentaje, y es exactamente el tipo de detalle que un inspector revisa con la etiqueta en la mano y que a un obrador pequeño, sin departamento de calidad propio, se le puede colar sin darse cuenta hasta que llega la visita. La comprobación es sencilla y merece hacerse con cada cobertura nueva que entra en el almacén: leer la lista de ingredientes del envase o de la ficha técnica y confirmar que, si aparece alguna de esas seis grasas, la mención va donde tiene que ir y con el formato que le corresponde, no escondida entre paréntesis al final del texto.
 
@@ -834,31 +831,31 @@ Cuando la referencia sí admite el 5 % y una cobertura lo usa, la norma no deja 
 
 | Id | Referencia | Denominación legal | Mínimo aplicable | ¿Obliga la mención del porcentaje? | ¿Le aplica el veinticinco por ciento? |
 |---|---|---|---|---|---|
-| BC1 | Bombon de ganache de chocolate negro 70 % | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC2 | Bombon de ganache de leche y vainilla | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC3 | Bombon de praline de avellana | Bombon de chocolate (praline) | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC4 | Bombon de gianduja de avellana | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC5 | Trufa de chocolate negro al cacao | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC6 | Bombon de licor de ron | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC7 | Bombon de caramelo salado | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC8 | Bombon de praline de cacahuete | Bombon de chocolate (praline) | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC9 | Bombon crujiente de sesamo y barquillo | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| BC10 | Bombon de naranja confitada y chocolate negro | Bombon de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
-| TB1 | Tableta de chocolate negro de origen 70 %, 100 g | Chocolate | ap. 1.6: minimos calculados DESCONTANDO los ingredientes anadidos del ap. 3 | Sí | No |
-| TB2 | Tableta de chocolate con leche 38 %, 100 g | Chocolate con leche | ap. 1.7: minimos calculados DESCONTANDO los ingredientes anadidos del ap. 3 | Sí | No |
+| BC1 | Bombón de ganache de chocolate negro 70 % | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC2 | Bombón de ganache de leche y vainilla | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC3 | Bombón de praline de avellana | Bombón de chocolate (praline) | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC4 | Bombón de gianduja de avellana | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC5 | Trufa de chocolate negro al cacao | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC6 | Bombón de licor de ron | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC7 | Bombón de caramelo salado | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC8 | Bombón de praline de cacahuete | Bombón de chocolate (praline) | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC9 | Bombón crujiente de sesamo y barquillo | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| BC10 | Bombón de naranja confitada y chocolate negro | Bombón de chocolate | 25 % de chocolate sobre el peso TOTAL | No | Sí |
+| TB1 | Tableta de chocolate negro de origen 70 %, 100 g | Chocolate | ap. 1.6: mínimos calculados DESCONTANDO los ingredientes añadidos del ap. 3 | Sí | No |
+| TB2 | Tableta de chocolate con leche 38 %, 100 g | Chocolate con leche | ap. 1.7: mínimos calculados DESCONTANDO los ingredientes añadidos del ap. 3 | Sí | No |
 | TB3 | Tableta de chocolate blanco 30 %, 100 g | Chocolate blanco | ap. 1.9: 20 % de manteca, 14 % de materia seca lactea, 3,5 % de grasa lactea | No | No |
-| TB4 | Tableta de chocolate negro con almendra marcona, 100 g | Chocolate con almendras | ap. 1.6 con materias comestibles anadidas del ap. 3: no pueden exceder el 40 % del peso total del producto acabado | Sí | No |
-| TB5 | Tableta de chocolate con leche y avellana, 100 g | Chocolate con leche y avellanas | ap. 1.7 con materias comestibles anadidas del ap. 3 (tope 40 %) | Sí | No |
+| TB4 | Tableta de chocolate negro con almendra marcona, 100 g | Chocolate con almendras | ap. 1.6 con materias comestibles añadidas del ap. 3: no pueden exceder el 40 % del peso total del producto acabado | Sí | No |
+| TB5 | Tableta de chocolate con leche y avellana, 100 g | Chocolate con leche y avellanas | ap. 1.7 con materias comestibles añadidas del ap. 3 (tope 40 %) | Sí | No |
 | TB6 | Tableta rellena de praline, 100 g | Chocolate relleno | ap. 1.10: el exterior de chocolate tiene que ser al menos el 25 % del peso TOTAL del producto acabado, relleno incluido | No | Sí |
-| CT1 | Tableta de chocolate a la taza, 200 g | Chocolate a la taza | ap. 1.11: 35 % de materia seca total de cacao, 18 % de manteca, 14 % de desgrasada y hasta 8 % de harina o almidon de trigo, arroz o maiz | Sí | No |
-| CT2 | Caja de 6 sobres monodosis de chocolate a la taza | Chocolate a la taza | ap. 1.11: 35 % cacao total, 18 % manteca, 14 % desgrasada, almidon hasta 8 % | Sí | No |
+| CT1 | Tableta de chocolate a la taza, 200 g | Chocolate a la taza | ap. 1.11: 35 % de materia seca total de cacao, 18 % de manteca, 14 % de desgrasada y hasta 8 % de harina o almidón de trigo, arroz o maíz | Sí | No |
+| CT2 | Caja de 6 sobres monodosis de chocolate a la taza | Chocolate a la taza | ap. 1.11: 35 % cacao total, 18 % manteca, 14 % desgrasada, almidón hasta 8 % | Sí | No |
 | CT3 | Chocolate a la taza servido en sala, 200 ml | Chocolate a la taza | ap. 1.11 sobre el producto que sirves, no sobre la taza preparada | No | No |
-| TF1 | Huevo de Pascua de chocolate con leche, 250 g | Chocolate con leche | ap. 1.7: minimos descontando los ingredientes anadidos del ap. 3 | Sí | No |
-| TF2 | Mona de Pascua de chocolate, 400 g | Chocolate con leche | ap. 1.7 con materias comestibles anadidas del ap. 3 (tope 40 %) | Sí | No |
-| TF3 | Hueso de santo banado en chocolate | Producto de confiteria recubierto de chocolate | RD 348/2011: si el producto esta relleno, recubierto o grageado, la denominacion de venta tiene que decirlo | No | No |
-| TF4 | Turron de chocolate con almendra, 250 g | Chocolate con almendras | ap. 1.6 con materias comestibles anadidas del ap. 3 (tope 40 %) | Sí | No |
-| TF5 | Almendras marcona banadas en chocolate, bolsa de 150 g | Grageas o confites de chocolate | RD 348/2011, ap. 1.3: la denominacion de venta se complementa con «relleno», «recubierto» o «grageado» segun el caso | No | No |
-| CJ1 | Caja surtida de 12 bombones | Chocolates rellenos surtidos | ap. 6.a) y 6.c): la denominacion va por pieza o, si el surtido es de los aps. 1.6 a 1.10 y 1.13, se sustituye por la de surtido, con una unica lista de ingredientes. Es una DECISION de etiquetado, no una obligacion | No | No |
+| TF1 | Huevo de Pascua de chocolate con leche, 250 g | Chocolate con leche | ap. 1.7: mínimos descontando los ingredientes añadidos del ap. 3 | Sí | No |
+| TF2 | Mona de Pascua de chocolate, 400 g | Chocolate con leche | ap. 1.7 con materias comestibles añadidas del ap. 3 (tope 40 %) | Sí | No |
+| TF3 | Hueso de santo banado en chocolate | Producto de confitería recubierto de chocolate | RD 348/2011: si el producto esta relleno, recubierto o grageado, la denominación de venta tiene que decirlo | No | No |
+| TF4 | Turrón de chocolate con almendra, 250 g | Chocolate con almendras | ap. 1.6 con materias comestibles añadidas del ap. 3 (tope 40 %) | Sí | No |
+| TF5 | Almendras marcona banadas en chocolate, bolsa de 150 g | Grageas o confites de chocolate | RD 348/2011, ap. 1.3: la denominación de venta se complementa con «relleno», «recubierto» o «grageado» según el caso | No | No |
+| CJ1 | Caja surtida de 12 bombones | Chocolates rellenos surtidos | ap. 6.a) y 6.c): la denominación va por pieza o, si el surtido es de los aps. 1.6 a 1.10 y 1.13, se sustituye por la de surtido, con una única lista de ingredientes. Es una DECISION de etiquetado, no una obligación | No | No |
 | CJ2 | Caja surtida de 20 bombones | Chocolates rellenos surtidos | ap. 6.a) y 6.c), igual que CJ1 | No | No |
 | CJ3 | Caja surtida de 35 bombones | Chocolates rellenos surtidos | ap. 6.a) y 6.c), igual que CJ1 | No | No |
 | CJ4 | Estuche corporativo personalizado de 24 bombones | Chocolates rellenos surtidos | ap. 6.a) y 6.c), igual que CJ1 | No | No |
@@ -883,7 +880,7 @@ Cuando la referencia sí admite el 5 % y una cobertura lo usa, la norma no deja 
 
 ### El cadmio sube con el porcentaje de cacao y castiga al negro premium
 
-El límite de cadmio no es un número fijo: sube cuanto más cacao lleva el producto, y esa curva castiga justo a la referencia que quieres convertir en tu firma, la tableta (barra) de origen con un porcentaje alto de cacao. El Reglamento (UE) 2023/915 de la Comisión, de 25 de abril de 2023, relativo a los límites máximos de contaminantes en los alimentos (comprobado el 12 de septiembre de 2026), fija la escala completa en su Anexo I, puntos 3.2.15.1 a 3.2.15.4: 0,10 mg/kg en el chocolate con leche con menos del 30 % de cacao; 0,30 mg/kg en el chocolate con menos del 50 % de cacao y con un 30 % o más de leche; 0,80 mg/kg en el chocolate con un 50 % o más de cacao; y 0,60 mg/kg en el cacao en polvo destinado al consumidor final. Cuanto más oscuro y más puro el chocolate que pones en el escaparate, más alto el límite que tiene que respetar, y no al revés: el negro de alto porcentaje, el que sueles vender como el más exclusivo, es justo el que menos margen de error tiene.
+El límite de cadmio no es un número fijo: sube cuanto más cacao lleva el producto, y esa curva castiga justo a la referencia que quieres convertir en tu firma, la tableta (barra) de origen con un porcentaje alto de cacao. El Reglamento (UE) 2023/915 de la Comisión, de 25 de abril de 2023, relativo a los límites máximos de contaminantes en los alimentos (comprobado el 12 de septiembre de 2026), fija la escala completa en su Anexo I, puntos 3.2.15.1 a 3.2.15.4: 0,10 mg/kg en el chocolate con leche con menos del 30 % de cacao; 0,30 mg/kg en dos casos, el chocolate con menos del 50 % de materia seca total de cacao y el chocolate con leche con un 30 % o más de esa misma materia seca; 0,80 mg/kg en el chocolate con un 50 % o más de cacao; y 0,60 mg/kg en el cacao en polvo destinado al consumidor final. Cuanto más oscuro y más puro el chocolate que pones en el escaparate, más alto el límite que tiene que respetar, y no al revés: el negro de alto porcentaje, el que sueles vender como el más exclusivo, es justo el que menos margen de error tiene.
 
 Lo que tiene que cumplir ese límite es la cobertura que compras, no el bombón terminado con ella, y quien tiene que enseñarte las analíticas es tu proveedor, no tú a él. Tu primera línea de defensa es el boletín de análisis que te entrega con cada partida; la analítica que pagas de tu bolsillo es el plan B, el que se activa cuando el boletín no llega o no convence.
 
@@ -909,13 +906,13 @@ Aquí entra una inferencia nuestra, no una cita literal de la norma, así que se
 
 En el caso modelado, la hoja «EUDR — Tu Papel en la Cadena» de checklist-legal-licencias-y-cacao.xlsx, comprobada el 12-09-2026, parte de que compras cobertura ya comercializada en la Unión Europea; a la pregunta de si esa cobertura llega amparada por una declaración, la respuesta de partida es «no lo sé», y el estado de la hoja lo dice sin adornos: sin resolver, toca preguntarle al proveedor si esa cobertura está amparada por una declaración. Hasta que esa casilla no se responde, tampoco se sabe qué documentación te toca guardar: primero se aclara el papel, y sin eso no hay checklist que valga.
 
-El aviso de rigor que casi ningún texto sobre esto da es que la definición exige que TODOS los insumos estén amparados, no la mayoría. Con cobertura comprada antes de que empezara a aplicarse la norma, o con un proveedor que no acredita nada por escrito, no se puede dar nada por hecho: se pregunta, se guarda la respuesta por escrito, y se revisa cada vez que cambia el proveedor o cambia la norma, que ya lleva tres modificaciones en doce meses (Reglamento (UE) 2023/1115, texto consolidado, 2025).
+El aviso de rigor que casi ningún texto sobre esto da es que la definición exige que TODOS los insumos estén amparados, no la mayoría. Con cobertura comprada antes de que empezara a aplicarse la norma, o con un proveedor que no acredita nada por escrito, no se puede dar nada por hecho: se pregunta, se guarda la respuesta por escrito, y se revisa cada vez que cambia el proveedor o cambia la norma, que ya lleva dos modificaciones y una corrección de errores en doce meses (Reglamento (UE) 2023/1115, texto consolidado, 2025).
 
 ### El aplazamiento a junio de 2027 no te sirve si abres ahora
 
 Por los grupos de chocolateros artesanales circula una lectura tranquilizadora: como el negocio es pequeño, y el reglamento europeo de deforestación aplaza su exigencia a los operadores modestos, hay margen hasta junio de 2027 y de momento se puede esperar. Esa lectura se apoya en el art. 38.3 del Reglamento (UE) 2023/1115 del Parlamento Europeo y del Consejo —el EUDR, comprobado el 12 de septiembre de 2026, con tres cambios ya encima desde que se aprobó: dos reglamentos de reforma (2024/3234 y 2025/2650) y una rectificación de diciembre de 2025 que retocó su art. 4.4—, pero se rompe en dos sitios a la vez, y el primero te afecta directamente si todavía no has abierto. El art. 38.3 aplaza sólo a quien ya es OPERADOR y, dentro de los operadores, sólo a la persona física, la microempresa o la pequeña empresa que estuviese establecida COMO TAL a 31 de diciembre de 2024. Si vas a montar tu obrador este año o el que viene, no puedes cumplir esa condición por la razón más simple: a 31 de diciembre de 2024 tu chocolatería no existía como operador de nada, así que el aplazamiento no te excluye por ser pequeño, te excluye por no estar de alta en esa fecha.
 
-El segundo sitio donde se rompe la lectura es el que de verdad decide tu fecha. Como hemos visto unas páginas antes en este mismo capítulo, comprar cobertura ya elaborada y puesta en el mercado de la Unión Europea te convierte, en la práctica, en operador posterior —es una lectura nuestra, no una cita literal del reglamento, y su condición completa ya ha quedado dicha—. Lo que toca aquí es la consecuencia: el art. 38.3 está redactado para operadores, y el art. 2.15 excluye expresamente al operador posterior de esa palabra, así que el aplazamiento, seas del tamaño que seas, no está escrito para ti. Si tu cobertura llega ya comercializada en la Unión Europea y amparada por una declaración de diligencia debida, eres operador posterior y tu fecha no es la de las pymes: es la fecha general, el 30 de diciembre de 2026, la misma que rige para los artículos 3 a 13, 16 a 24, 26, 31 y 32 del reglamento. Si tu cobertura no está amparada por esa declaración, la calificación deja de ser automática y hay que revisarla proveedor por proveedor.
+El segundo sitio donde se rompe la lectura es el que de verdad decide tu fecha. Como hemos visto unas páginas antes en este mismo capítulo, comprar cobertura ya elaborada y puesta en el mercado de la Unión Europea te convierte, en la práctica, en operador posterior —es una lectura nuestra, no una cita literal del reglamento, y su condición completa ya ha quedado dicha—. Lo que toca aquí es la consecuencia: el art. 38.3 está redactado para operadores, y el art. 2.15 excluye expresamente al operador posterior de esa palabra, así que el aplazamiento, seas del tamaño que seas, no está escrito para ti. Tu papel en la cadena —operador o operador posterior— y la fecha que te toca están resueltos en el capítulo 11, con la condición que los cambia; esa fecha general, el 30 de diciembre de 2026, es la misma que rige para los artículos 3 a 13, 16 a 24, 26, 31 y 32 del reglamento.
 
 Dicho lo cual, ser pyme no te deja sin ninguna obligación: te deja con menos de las que se temen. Lo que no te alcanza —si compras cobertura y no eres tú quien introduce el grano en el mercado— es la obligación de registrarte en el sistema de información del art. 33 y el deber de verificar la diligencia debida de tu cadena ante preocupaciones justificadas, que el reglamento reserva a los operadores posteriores y comerciantes que NO sean pyme. Lo que sí te alcanza, entero, son los deberes de recogida y conservación: guardar los datos de cada proveedor y, cuando ese proveedor sea operador, el número de referencia de su declaración de diligencia debida; guardar también los datos de a quién le suministras tú, sea operador posterior o comerciante; y conservarlo todo durante cinco años, con la obligación de informar y asistir a la autoridad competente si te lo pide. Es papeleo de archivo, no de auditoría continua, pero es papeleo real y con plazo de guarda.
 
@@ -939,7 +936,7 @@ Guarda las tres figuras que ha dejado este capítulo —la pyme que sólo compra
 | Tabletas de chocolate y chocolate con leche | Sí | Los otros dos puntos. Si vendes tableta, esto te toca directamente. |
 | Bombones y chocolate relleno | No | NO TIENEN LÍMITE PROPIO. Se les aplica la regla de los alimentos compuestos: el límite se calcula sobre los ingredientes que sí lo tienen y su proporción en el producto. |
 | Turrones, figuras y confitería con cacao | No | Mismo caso que el bombón: alimento compuesto. |
-| Chocolate a la taza en polvo | No lo sé | Depende de si encaja en «cacao en polvo» o es una preparación con otros ingredientes. Míralo referencia a referencia con la denominación legal que le hayas dado en el libro 4. |
+| Chocolate a la taza en polvo | No | Los puntos 8 y 9 de la Directiva -el chocolate a la taza- quedan FUERA de la nota (14): alimento compuesto, art. 3 del Rgto. 2023/915. Distinto es el cacao en polvo vendido como tal, que sí tiene límite propio: míralo referencia a referencia con la denominación legal que le hayas dado en el libro 4. |
 
 *La nota del reglamento de contaminantes remite sólo a tres puntos de la directiva del chocolate, y el bombón no es uno de ellos: se le aplica la regla de los alimentos compuestos. Verificado el 12-09-2026 · Reglamento (UE) 2023/915, Anexo I, apartados 1.2.16, 3.2.15 y 5.1, y arts. 2, 3 y 4 · https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02023R0915-20250101*
 
@@ -947,11 +944,11 @@ Guarda las tres figuras que ha dejado este capítulo —la pyme que sólo compra
 
 | Papel | ¿Le pides el número de su declaración? | Qué significa |
 |---|---|---|
-| operador | Sí | Hace la PRIMERA comercializacion en el mercado de la Union, o exporta. Si es tu caso -por ejemplo, importas grano para bean-to-bar-, te toca diligencia debida COMPLETA antes de introducir en el mercado, declaracion presentada previamente, asuncion de responsabilidad y registro de las declaraciones durante cinco anos (`CHN-25`). A ESTE proveedor SI hay que pedirle el numero de referencia de su DDS. |
-| operador posterior | No | Introduce en el mercado productos elaborados con otros productos YA amparados por una declaracion de diligencia debida (`CHN-23`, art. 2.15 ter). Es lo que normalmente sera una chocolateria que compra cobertura ya comercializada en la UE. A este NO se le pide el numero de DDS por el art. 5.3.a). |
-| comerciante | No | Ni introduce ni exporta: comercia dentro. Tampoco se le pide el numero de DDS. |
+| operador | Sí | Hace la PRIMERA comercialización en el mercado de la Unión, o exporta. Si es tu caso -por ejemplo, importas grano para bean-to-bar-, te toca diligencia debida COMPLETA antes de introducir en el mercado, declaración presentada previamente, asunción de responsabilidad y registro de las declaraciones durante cinco años (`CHN-25`). A ESTE proveedor SI hay que pedirle el número de referencia de su DDS. |
+| operador posterior | No | Introduce en el mercado productos elaborados con otros productos YA amparados por una declaración de diligencia debida (`CHN-23`, art. 2.15 ter). Es lo que normalmente será una chocolatería que compra cobertura ya comercializada en la UE. A este NO se le pide el número de DDS por el art. 5.3.a). |
+| comerciante | No | Ni introduce ni exporta: comercia dentro. Tampoco se le pide el número de DDS. |
 
-*Pedirle el número a todo el mundo pondría en rojo a proveedores que cumplen: un comerciante no tiene número que darte y no está obligado a dártelo. Verificado el 12-09-2026 · Reglamento (UE) 2023/1115, arts. 1, 2, 4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma se ha modificado tres veces en doce meses: comprueba su estado antes de comprar cacao · https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02023R1115-20250101*
+*Pedirle el número a todo el mundo pondría en rojo a proveedores que cumplen: un comerciante no tiene número que darte y no está obligado a dártelo. Verificado el 12-09-2026 · Reglamento (UE) 2023/1115, arts. 1, 2, 4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma se ha modificado tres veces en doce meses: comprueba su estado antes de comprar cacao · https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02023R1115-20251226*
 
 **Las fechas de la norma del cacao, y qué habría que rehacer con cada una**
 
@@ -962,7 +959,7 @@ Guarda las tres figuras que ha dejado este capítulo —la pyme que sólo compra
 | Derogación de la norma europea anterior de diligencia debida | 30 de diciembre de 2026 | Las referencias normativas de tus contratos de compra |
 | Revisión de la propia hoja, que el libro calcula sola | A los meses que tú fijes desde la verificación | Abrir el texto consolidado y comprobar si ha habido una cuarta modificación |
 
-*Esta norma se ha tocado tres veces en doce meses: dos reglamentos y una corrección de errores. Comprueba su estado ANTES de comprar cacao, no después. Verificado el 12-09-2026 · Reglamento (UE) 2023/1115, arts. 1, 2, 4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma se ha modificado tres veces en doce meses: comprueba su estado antes de comprar cacao · https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02023R1115-20250101*
+*Esta norma se ha tocado tres veces en doce meses: dos reglamentos y una corrección de errores. Comprueba su estado ANTES de comprar cacao, no después. Verificado el 12-09-2026 · Reglamento (UE) 2023/1115, arts. 1, 2, 4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma se ha modificado tres veces en doce meses: comprueba su estado antes de comprar cacao · https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02023R1115-20251226*
 
 
 ---
@@ -1034,8 +1031,8 @@ Una chocolatería parte con una ventaja real frente a otros obradores: sin harin
 
 | Vía | Qué significa | La referencia normativa que te toca |
 |---|---|---|
-| envasado con etiqueta | Sale envasado con SU etiqueta. El art. 4.2 del RD 1021/2022 fija la temperatura de conservacion POR LA ETIQUETA que pone quien ha producido y envasado: la que tu has escrito te obliga a ti. Y con etiqueta entran ademas las doce menciones del art. 9.1 del Rgto. 1169/2011 (`CHN-35`) mas el lote, que NO viene de ese reglamento sino del RD 1808/1991 (`CHN-36`). | Art. 4.2 del RD 1021/2022: la temperatura de conservación que TÚ has puesto en la etiqueta te obliga a ti. |
-| a granel | Se despacha a granel en la vitrina, sin etiqueta. Entonces la referencia NO es el art. 4.2: es TU sistema de autocontrol, y la temperatura y la vida util las declaras tu y constan en el (`CHN-30`, y `CHN-87`: «chocolate», «cacao», «bombon» y «confiteria» aparecen 0 veces en todo el RD 1021/2022). Los alergenos pueden ir en cartel (`CHN-89`) y el lote tiene tres vias de exencion (`CHN-36`). | Tu plan de APPCC: la temperatura y la vida útil las declaras tú y tienen que constar en él. |
+| envasado con etiqueta | Sale envasado con SU etiqueta. El art. 4.2 del RD 1021/2022 fija la temperatura de conservación POR LA ETIQUETA que pone quien ha producido y envasado: la que tu has escrito te obliga a ti. Y con etiqueta entran además las doce menciones del art. 9.1 del Rgto. 1169/2011 (`CHN-35`) mas el lote, que NO viene de ese reglamento sino del RD 1808/1991 (`CHN-36`). | Art. 4.2 del RD 1021/2022: la temperatura de conservación que TÚ has puesto en la etiqueta te obliga a ti. |
+| a granel | Se despacha a granel en la vitrina, sin etiqueta. Entonces la referencia NO es el art. 4.2: es TU sistema de autocontrol, y la temperatura y la vida útil las declaras tu y constan en el (`CHN-30`, y `CHN-87`: «chocolate», «cacao», «bombón» y «confitería» aparecen 0 veces en todo el RD 1021/2022). Los alérgenos pueden ir en cartel (`CHN-89`) y el lote tiene tres vías de exención (`CHN-36`). | Tu plan de APPCC: la temperatura y la vida útil las declaras tú y tienen que constar en él. |
 
 *La temperatura de conservación que pone en una etiqueta te obliga a ti. Para lo que se despacha a granel no hay etiqueta, así que la referencia es tu propio sistema de autocontrol. Verificado el 12-09-2026 · RD 1021/2022 (BOE-A-2022-21681), arts. 3, 4, 5, 9, 11, 13 y 20, y RD 191/2011 art. 2.2 en la redacción de la disposición final primera del RD 1021/2022 · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681*
 
@@ -1043,8 +1040,8 @@ Una chocolatería parte con una ventaja real frente a otros obradores: sin harin
 
 | Persona | Perfil | Contenido de la formación | Estado |
 |---|---|---|---|
-| Persona 1 (Encargado) | Encargado | Higiene, alérgenos y trazabilidad aplicados a el obrador | Vigente |
-| Persona 2 (Chocolatero) | Chocolatero | Higiene, alérgenos y trazabilidad aplicados a el obrador | Vigente |
+| Persona 1 (Encargado) | Encargado | Higiene, alérgenos y trazabilidad aplicados al obrador | Vigente |
+| Persona 2 (Chocolatero) | Chocolatero | Higiene, alérgenos y trazabilidad aplicados al obrador | Vigente |
 | Persona 3 (Dependiente) | Dependiente | Higiene, alérgenos y trazabilidad aplicados a la tienda | Vigente |
 
 *La norma NO fija una caducidad de la formación: los meses de validez los fijas tú y los escribes en tu plan. Lo que sí obliga es que el empresario garantice la formación y pueda acreditarla.*
@@ -1056,13 +1053,13 @@ Una chocolatería parte con una ventaja real frente a otros obradores: sin harin
 
 ### Los proveedores verificados, por categoría
 
-Antes de escribir el primer correo conviene decir con claridad qué es esta lista. El cuadro que sigue reúne seis proveedores con la dirección web comprobada en la fecha de corte de esta edición, comprobado el 12 de septiembre de 2026, y no es una recomendación comercial: es lo que el research pudo verificar, entrando en cada web y confirmando que sigue viva. Lo que se recogió sin poder abrir la página, sin poder leer las condiciones de venta o con la web devolviendo un error el día de la comprobación no entra en esa tabla ni entra aquí con nombre propio. Preferimos que te falte un nombre a que te sobre uno que no aguanta la primera llamada.
+Antes de escribir el primer correo conviene decir con claridad qué es esta lista. El cuadro que sigue reúne seis proveedores con la dirección web comprobada en la fecha de corte de esta edición, comprobado el 12 de septiembre de 2026, y no es una recomendación comercial: es lo que el research pudo verificar, entrando en cada web y confirmando que sigue viva. Lo que se recogió sin poder abrir la página, sin poder leer las condiciones de venta o con la web devolviendo un error el día de la comprobación no entra en esa tabla. Los nombres que sí verás citados en el texto y no aparecen en ella se mencionan como referencia de mercado, sin que hayamos comprobado su web ni sus condiciones de venta: la tabla es la lista corta de lo verificado, el texto es el mapa del sector. Preferimos que te falte un nombre a que te sobre uno que no aguanta la primera llamada.
 
 La compra de una chocolatería se reparte en cinco bloques, y cada uno se negocia distinto. En cobertura y chocolate profesional te mueves entre dos mundos: el de los grandes grupos con distribución nacional, como Barry Callebaut Ibérica —que agrupa Callebaut, Cacao Barry y Chocovic, con presencia industrial en España y citado por Alimarket como inversor activo— o Valrhona, cuya gama alta llega a España vía el Club del Chocolate; y el de los fabricantes con línea profesional propia, como Chocolates Torras, en Girona, o el histórico bean-to-bar español de Simón Coll, que trabaja el grano desde 1840, y de Amatller, fundada en 1797 e incorporada al mismo grupo desde hace más de medio siglo. Con ellos negocias escalones de precio por volumen, muestras antes de comprometer un pedido grande y el plazo de entrega real, que casi nunca coincide con el que promete la web.
 
 El grano para bean-to-bar es distinto, y es el bloque de más riesgo de toda la compra, así que lo tratamos aparte. En maquinaria, la referencia con precio público y distribución confirmada es Utilcentre, S.L., que distribuye Selmi y Pavoni; también aparece Selmi Group, el fabricante. Aquí se negocia la instalación, el servicio técnico posventa y el plazo real de una templadora o una moldeadora, casi siempre más largo que el del catálogo. En moldes y utensilios, RestorHome reúne moldes de Chocolate World, Pavoni y Martellato con catálogo verificado; ahí conviene negociar el pedido mínimo por referencia, porque un buen molde de policarbonato no se compra suelto.
 
-Packaging y regalo corporativo son dos negocios distintos. En packaging genérico —cajas, estuches, bolsas— la verificación fue corta: García de Pou tiene envases de cartón personalizados para alimentación con web comprobada, aunque sin precio público; otra dirección que llegamos a mirar devolvió un error de acceso el día de la comprobación, así que no entra aquí con nombre. En regalo corporativo el mercado está mejor documentado: Gift Campaign publica precio desde 0,30 € la unidad y Regalo Publicidad desde 0,35 €, y hay marcas con canal propio de venta a empresas, como Lindt España, o con línea corporativa dedicada, como Cornet 1945, además de fabricantes de cajas personalizadas de empresa como QuieroChocolate, NoSoloDulce o Regalo Chocolate. Dos reglas de este canal, antes de pedir presupuesto: el plazo de entrega va de 14 a 16 días desde que apruebas la muestra virtual, y el mínimo de fabricación se mueve entre 10 y 25 cajas, con 20 a 30 días de producción. Y una tercera regla, de calendario: la Navidad es la época por excelencia de este canal, y el pedido corporativo de Navidad se cierra en octubre, no en diciembre.
+Packaging y regalo corporativo son dos negocios distintos. En packaging genérico —cajas, estuches, bolsas— la verificación fue corta: García de Pou tiene envases de cartón personalizados para alimentación con web comprobada, aunque sin precio público; y la de SelfPackaging, que sí está en el cuadro de proveedores, devolvió un error de acceso el día de la comprobación, así que va publicada sin comprobar y conviene abrirla antes de fiarse. En regalo corporativo el mercado está mejor documentado: Gift Campaign publica precio desde 0,30 € la unidad y Regalo Publicidad desde 0,35 €, y hay marcas con canal propio de venta a empresas, como Lindt España, o con línea corporativa dedicada, como Cornet 1945, además de fabricantes de cajas personalizadas de empresa como QuieroChocolate, NoSoloDulce o Regalo Chocolate. Dos reglas de este canal, antes de pedir presupuesto: el plazo de entrega va de 14 a 16 días desde que apruebas la muestra virtual, y el mínimo de fabricación se mueve entre 10 y 25 cajas, con 20 a 30 días de producción. Y una tercera regla, de calendario: la Navidad es la época por excelencia de este canal, y el pedido corporativo de Navidad se cierra en octubre, no en diciembre.
 
 Con las cinco categorías sobre la mesa, el error más caro de la primera compra es empezar por las seis a la vez. Abrir ficha con un proveedor cuesta tiempo de negociación, un pedido mínimo que financiar y dinero parado en el almacén; si abres ficha con seis el mismo mes, multiplicas ese coste —costo, para buena parte de Hispanoamérica— por seis sin haber vendido un solo bombón. El caso modelado de este pack, pidiendo a los seis proveedores verificados a la vez, suma un pedido mínimo acumulado de 1.500 € con un plazo medio de entrega comprometido de 7 días; ese es el techo, no el suelo. Empieza por dos o tres: el de cobertura, porque sin él no produces nada, y el de packaging o el de moldes, según qué formato vayas a vender primero. Los demás entran cuando el volumen los justifica.
 
@@ -1102,18 +1099,18 @@ La exención existe, pero tiene dos límites que hasta las guías del sector se 
 
 Y hay una buena noticia, con dos razones detrás y no una sola. Los moldes de policarbonato, las guitarras de corte y las hojas de transferencia que usas dentro del obrador no pagan este impuesto. La primera razón es de ámbito: el artículo 68, apartado 1, letra a, de la Ley 7/2022 limita el impuesto a los envases no reutilizables, y un molde no es un envase, es una herramienta de producción que se reutiliza cientos de veces. La segunda es que el artículo 73, letra d, de la misma ley los declara expresamente no sujetos, porque no están diseñados para entregarse junto con la mercancía que vendes: el molde se queda en tu obrador, el bombón sale sin él. Con estas dos razones delante, cualquier proveedor de packaging que te diga que el plástico paga siempre está simplificando de más, y ahora ya sabes en qué parte de la frase se equivoca.
 
-**Los proveedores verificados y qué papeles le toca a cada uno (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Proveedores y EUDR»)**
+**Los proveedores publicados y qué papeles le toca a cada uno (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Proveedores y EUDR»)**
 
 | Proveedor | Qué te vende | Dirección | Id del research | Qué papeles le tocan a él |
 |---|---|---|---|---|
 | Callebaut / Barry Callebaut Iberica | Coberturas y chocolate profesional | https://www.callebaut.com/es-ES/ | CHS-50 | Pregúntaselo por escrito antes de comprar: de su respuesta depende qué papeles pedirle |
-| Asociacion Chocolate Bean to Bar Espana | Grano de cacao para bean-to-bar | https://www.chocolatebeantobar.com/asociados/ | CHS-51 | Pregúntaselo por escrito antes de comprar: de su respuesta depende qué papeles pedirle |
+| Asociación Chocolate Bean to Bar Espana | Grano de cacao para bean-to-bar | https://www.chocolatebeantobar.com/asociados/ | CHS-51 | Pregúntaselo por escrito antes de comprar: de su respuesta depende qué papeles pedirle |
 | Utilcentre | Maquinaria de chocolate (distribuidor Selmi y Pavoni) | https://www.utilcentre.com/maquinaria-chocolate.html | CHS-52 | No le pidas papeles EUDR: no vende producto del Anexo I |
-| RestorHome | Moldes de bomboneria y utensilios | https://www.restorhome.es/471-moldes-bomboneria-Chocolate-World | CHS-53 | Pregúntaselo por escrito antes de comprar: de su respuesta depende qué papeles pedirle |
+| RestorHome | Moldes de bombonería y utensilios | https://www.restorhome.es/471-moldes-bomboneria-Chocolate-World | CHS-53 | Pregúntaselo por escrito antes de comprar: de su respuesta depende qué papeles pedirle |
 | SelfPackaging | Packaging: cajas y estuches para bombones | https://selfpackaging.es/90-cajas-para-bombones | CHS-54 | No le pidas papeles EUDR: no vende producto del Anexo I |
 | Gift Campaign | Regalo corporativo B2B | https://www.giftcampaign.es/dulces-personalizados/chocolates.html | CHS-55 | No le pidas papeles EUDR: no vende producto del Anexo I |
 
-*Seis proveedores con dirección comprobada en la fecha de corte. La columna de papeles no está resuelta a propósito: la resuelve su respuesta por escrito, no nuestra suposición.*
+*Cinco direcciones comprobadas en la fecha de corte y una pendiente: la de SelfPackaging devolvió un error de acceso el 12-09-2026, así que va publicada SIN comprobar y hay que abrirla antes de fiarse. Por eso el precio del packaging del caso modelado es un supuesto y no un dato. La columna de papeles no está resuelta a propósito: la resuelve su respuesta por escrito, no nuestra suposición.*
 
 **El impuesto al plástico: qué paga, qué no y quién lo paga**
 
@@ -1139,7 +1136,7 @@ La cadena de cálculo es siempre la misma, y conviene tenerla clara antes de mir
 
 El coste de una hora de obrador en el caso modelado de este pack es de 18,49 €, y de ahí sale directamente el coste de mano de obra de cada pieza en la tabla de escandallo por tanda que tienes justo debajo: ella hace, molde a molde, la cuenta que aquí sólo se explica.
 
-La otra mitad del coste de una pieza es la materia, y aquí hay una trampa que se paga cara si no se controla: todos los precios de materia de este pack se manejan en base imponible, en los dos lados de la cuenta, y no todas las fichas de los distribuidores declaran el precio así. La ficha del Callebaut 811, el chocolate negro al 54,5 % que se usa aquí como cobertura de núcleo, declara su bloque de cinco kilos con el impuesto ya incluido: 25,02 €/kg (Planeta Torta, 2026). Usar ese número tal cual, sin sacarle el impuesto, sube el coste de materia casi un diez por ciento sobre lo que realmente cuesta. Como cobertura de gama superior, la pepita de Valrhona se mueve en 37,48 €/kg (Club del Chocolate, 2026), un factor de cerca de una vez y media sobre la de núcleo; su ficha no declara si ese precio lleva impuesto, así que aquí se trata como un dato abierto. Qué cobertura entra en cada referencia de la carta es una decisión tuya, y va en la celda que puedes cambiar, nunca como una constante fija del modelo.
+La otra mitad del coste de una pieza es la materia, y aquí hay una trampa que se paga cara si no se controla: todos los precios de materia de este pack se manejan en base imponible, en los dos lados de la cuenta, y no todas las fichas de los distribuidores declaran el precio así. La ficha del Callebaut 811, el chocolate negro al 54,5 % que se usa aquí como cobertura de núcleo, declara su bloque de cinco kilos con el impuesto ya incluido: 25,02 €/kg (Planeta Torta, 2026). Usar ese número tal cual, sin sacarle el impuesto, sube el coste de materia casi un diez por ciento sobre lo que realmente cuesta. Como cobertura de gama superior, la pepita de Valrhona se mueve en 37,48 €/kg (Club del Chocolate, 2026), su ficha no declara si ese precio lleva impuesto, así que aquí se trata como un dato abierto y NO se compara con el anterior: uno viene con IVA y el otro sin declarar, y dividir dos bases distintas da un factor que no significa nada. Qué cobertura entra en cada referencia de la carta es una decisión tuya, y va en la celda que puedes cambiar, nunca como una constante fija del modelo.
 
 Esto es exactamente lo que no vas a encontrar montado en ningún otro producto de la casa. El Kit de Escandallos trae, dentro de su libro de pastelería, una hoja de tarta de chocolate que costea esa elaboración por unidad, como cualquier otra receta de pastelería. Lo que no existe en ese catálogo, y es lo que construye este capítulo, es el escandallo del obrador de bombonería por molde y por tanda, con la merma de templado separada y la caja como unidad de venta. Si ya tienes el kit, esta hoja no lo sustituye: lo completa por el lado que le falta.
 
@@ -1169,7 +1166,7 @@ Aquí se acaba una confusión que se arrastra en casi todas las cartas: el food 
 
 El matiz que sí hay que sostener, porque son dos cifras reales y no se pueden mezclar en la misma frase, es la diferencia entre el food cost de escandallo puro y el food cost con merma. El de escandallo puro sale de comparar el coste de materia y de mano de obra de cada pieza, en frío, sin contar nada de lo que se rompe o se queda sin vender: el food cost de escandallo de la carta, en el caso modelado, es del 25,2 %. El food cost con merma añade encima lo que de verdad se pierde en el obrador y en la vitrina, y es el que paga el negocio en la práctica: el food cost servido, el que viaja al plan financiero, es del 28,2 %. La diferencia entre uno y otro no es un error de cálculo: es la merma no recuperable del epígrafe anterior, hecha porcentaje.
 
-El margen bruto medio con el mix de todo el año, calculado sobre ese mismo food cost servido, es del 74,8 %. Es una media anual, no la de un mes cualquiera, y por eso conviene mirar el margen por familia y no sólo el global: la caja, que es la unidad de venta real de una bombonería, tiene el suyo propio. La caja de doce bombones de este pack deja un margen de 10,61 €, una cifra que hay que leer con el mismo criterio que el precio: no es el margen de doce piezas sueltas multiplicado, es el margen de la caja como producto, con su descuento de formato ya dentro.
+El margen bruto medio con el mix de todo el año, es del 74,8 %, y es el complemento del food cost de ESCANDALLO (100 − 25,2), no del servido: sobre el servido el margen bruto que llega a la cuenta de resultados del capítulo 20 es del 71,8 %. Es una media anual, no la de un mes cualquiera, y por eso conviene mirar el margen por familia y no sólo el global: la caja, que es la unidad de venta real de una bombonería, tiene el suyo propio. La caja de doce bombones de este pack deja un margen de 10,61 €, una cifra que hay que leer con el mismo criterio que el precio: no es el margen de doce piezas sueltas multiplicado, es el margen de la caja como producto, con su descuento de formato ya dentro.
 
 Ese descuento de formato no es una rareza del sector: se ve en cualquier bombonería que publique precio por caja. En una escalera real, la caja de doce bombones sale a 20,00 € (1,67 € por bombón), la de veinte a 28,00 € (1,40 € por bombón), y la de treinta y cinco a 45,00 € (1,29 € por bombón) (Confitería Gascón, 2026); el precio por bombón cae un 23 % entre la caja pequeña y la grande. Es la misma lógica de cualquier escalera de precio por formato: cuanto más grande el formato, menos deja cada pieza por separado, y lo que hay que mirar no es el porcentaje que baja, es el margen en euros que queda en cada caja que sale por la puerta.
 
@@ -1177,16 +1174,16 @@ Ese descuento de formato no es una rareza del sector: se ve en cualquier bombone
 
 | Id | Referencia | Piezas por tanda | Minutos por pieza buena | Coste de mano de obra por pieza (€) | Coste de materia con merma (€) | Coste total por pieza (€) |
 |---|---|---|---|---|---|---|
-| BC1 | Bombon de ganache de chocolate negro 70 % | 144 | 1,11 | 0,34 € | 0,22 € | 0,57 € |
-| BC2 | Bombon de ganache de leche y vainilla | 144 | 1,11 | 0,34 € | 0,20 € | 0,54 € |
-| BC3 | Bombon de praline de avellana | 144 | 0,99 | 0,31 € | 0,22 € | 0,52 € |
-| BC4 | Bombon de gianduja de avellana | 120 | 1,11 | 0,34 € | 0,23 € | 0,57 € |
+| BC1 | Bombón de ganache de chocolate negro 70 % | 144 | 1,11 | 0,34 € | 0,22 € | 0,57 € |
+| BC2 | Bombón de ganache de leche y vainilla | 144 | 1,11 | 0,34 € | 0,20 € | 0,54 € |
+| BC3 | Bombón de praline de avellana | 144 | 0,99 | 0,31 € | 0,22 € | 0,52 € |
+| BC4 | Bombón de gianduja de avellana | 120 | 1,11 | 0,34 € | 0,23 € | 0,57 € |
 | BC5 | Trufa de chocolate negro al cacao | 160 | 0,78 | 0,24 € | 0,23 € | 0,47 € |
-| BC6 | Bombon de licor de ron | 96 | 1,57 | 0,48 € | 0,18 € | 0,66 € |
-| BC7 | Bombon de caramelo salado | 144 | 1,07 | 0,33 € | 0,14 € | 0,47 € |
-| BC8 | Bombon de praline de cacahuete | 120 | 1,15 | 0,35 € | 0,19 € | 0,54 € |
-| BC9 | Bombon crujiente de sesamo y barquillo | 120 | 1,19 | 0,37 € | 0,19 € | 0,56 € |
-| BC10 | Bombon de naranja confitada y chocolate negro | 120 | 1,27 | 0,39 € | 0,23 € | 0,62 € |
+| BC6 | Bombón de licor de ron | 96 | 1,57 | 0,48 € | 0,18 € | 0,66 € |
+| BC7 | Bombón de caramelo salado | 144 | 1,07 | 0,33 € | 0,14 € | 0,47 € |
+| BC8 | Bombón de praline de cacahuete | 120 | 1,15 | 0,35 € | 0,19 € | 0,54 € |
+| BC9 | Bombón crujiente de sesamo y barquillo | 120 | 1,19 | 0,37 € | 0,19 € | 0,56 € |
+| BC10 | Bombón de naranja confitada y chocolate negro | 120 | 1,27 | 0,39 € | 0,23 € | 0,62 € |
 
 *Los minutos por pieza buena son los de la tanda repartidos entre las piezas que salen bien. Por eso una tanda más grande baja el coste de mano de obra por pieza, y por eso hay referencias que sólo son rentables a partir de cierto tamaño de tanda.*
 
@@ -1194,16 +1191,16 @@ Ese descuento de formato no es una rareza del sector: se ve en cualquier bombone
 
 | Id | Referencia | ¿Lleva ganache, relleno o fruta? | Merma recuperable | Merma NO recuperable | Sobrecoste de la merma (€) | Sobrecoste sobre el coste |
 |---|---|---|---|---|---|---|
-| BC1 | Bombon de ganache de chocolate negro 70 % | Sí | 4,0 % | 3,0 % | 0,01 € | 3,1 % |
-| BC2 | Bombon de ganache de leche y vainilla | Sí | 4,0 % | 3,0 % | 0,01 € | 3,1 % |
-| BC3 | Bombon de praline de avellana | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
-| BC4 | Bombon de gianduja de avellana | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
+| BC1 | Bombón de ganache de chocolate negro 70 % | Sí | 4,0 % | 3,0 % | 0,01 € | 3,1 % |
+| BC2 | Bombón de ganache de leche y vainilla | Sí | 4,0 % | 3,0 % | 0,01 € | 3,1 % |
+| BC3 | Bombón de praline de avellana | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
+| BC4 | Bombón de gianduja de avellana | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
 | BC5 | Trufa de chocolate negro al cacao | Sí | 3,0 % | 4,0 % | 0,01 € | 4,2 % |
-| BC6 | Bombon de licor de ron | Sí | 5,0 % | 4,0 % | 0,01 € | 4,2 % |
-| BC7 | Bombon de caramelo salado | Sí | 4,0 % | 3,0 % | 0,00 € | 3,1 % |
-| BC8 | Bombon de praline de cacahuete | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
-| BC9 | Bombon crujiente de sesamo y barquillo | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
-| BC10 | Bombon de naranja confitada y chocolate negro | Sí | 3,0 % | 5,0 % | 0,01 € | 5,3 % |
+| BC6 | Bombón de licor de ron | Sí | 5,0 % | 4,0 % | 0,01 € | 4,2 % |
+| BC7 | Bombón de caramelo salado | Sí | 4,0 % | 3,0 % | 0,00 € | 3,1 % |
+| BC8 | Bombón de praline de cacahuete | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
+| BC9 | Bombón crujiente de sesamo y barquillo | Sí | 4,0 % | 2,0 % | 0,00 € | 2,0 % |
+| BC10 | Bombón de naranja confitada y chocolate negro | Sí | 3,0 % | 5,0 % | 0,01 € | 5,3 % |
 
 *La merma recuperable no encarece la materia: el chocolate limpio vuelve a la cuba. La que encarece es la otra, y por eso las referencias con relleno tienen su tasa propia. Meter las dos en una sola infla el coste de las referencias limpias y abarata las rellenas.*
 
@@ -1242,7 +1239,7 @@ No todas las referencias aguantan igual esa subida. En el escenario de subida fu
 
 El segundo camino, bajar el gramaje, tiene un límite que casi nadie relaciona con el precio del cacao hasta que lo pisa: el mínimo legal del veinticinco por ciento de chocolate sobre el peso total del producto acabado, con el relleno dentro, que fija la denominación de bombón (capítulo 10). Recortar gramos de chocolate en un bombón para aligerar el coste es una decisión comercial sólo hasta que cruzas ese umbral; en cuanto lo cruzas, deja de ser tu bombón con menos chocolate y pasa a ser otra cosa, con otra denominación y otra etiqueta que poner. El camino del gramaje existe, pero tiene un suelo que no se negocia.
 
-El tercer camino es cambiar de cobertura, y aquí el escandallo enseña algo que a simple vista no se ve: no toda la cobertura cuesta lo mismo, ni de lejos. Una cobertura de marca de gama profesional se mueve, en base imponible, en 22,75 €, mientras que una cobertura de origen puede estar en 37,48 € en esa misma base, según la hoja «Coste de Cobertura» de sensibilidad-al-precio-del-cacao.xlsx. En el caso de este pack, la cobertura pesa un 86,5 % del coste de materia total, y el gasto en cobertura de todo el año asciende a 42.792 €. Con ese peso, mover una parte del volumen de la cobertura de origen a la profesional —o al revés, si lo que buscas es subir de gama— no es un matiz de sabor: es la palanca más grande de las cuatro, porque toca directamente el ingrediente que más pesa en el coste.
+El tercer camino es cambiar de cobertura, y aquí el escandallo enseña algo que a simple vista no se ve: no toda la cobertura cuesta lo mismo, ni de lejos. Una cobertura de marca de gama profesional se mueve, en base imponible, en 22,75 €, mientras que una cobertura de origen puede estar en 37,48 €, un precio cuya ficha no declara la base de impuesto y que por eso se maneja como dato abierto, según la hoja «Coste de Cobertura» de sensibilidad-al-precio-del-cacao.xlsx. En el caso de este pack, la cobertura pesa un 86,5 % del coste de materia total, y el gasto en cobertura de todo el año asciende a 42.792 €. Con ese peso, mover una parte del volumen de la cobertura de origen a la profesional —o al revés, si lo que buscas es subir de gama— no es un matiz de sabor: es la palanca más grande de las cuatro, porque toca directamente el ingrediente que más pesa en el coste.
 
 El cuarto camino, aceptar menos margen, es el que casi nadie declara en voz alta y el que en la práctica se usa más, aunque sea parcialmente y combinado con alguno de los otros tres. No hay nada malo en absorber parte de la subida mientras dura un pico de precio, siempre que sea una decisión tomada con el número delante y no una resignación por no haber revisado la tarifa a tiempo.
 
@@ -1285,7 +1282,7 @@ Hay además un aviso legal que pega de lleno en un negocio tan estacional como u
 
 El primer dato no es tuyo: es del Kit de Tareas Chocolatería, que en la hoja «Vida Útil Declarada» de vida-util-rellenos-y-rotacion.xlsx recoge los plazos orientativos por familia, desde los meses de una tableta (barra) hasta los días de una ganache con nata fresca. No los repito aquí —los tienes en la tabla de abajo—; lo que hace este libro es decirte qué significan para tu negocio.
 
-Y lo que significan es esto: entre la ganache fresca y la estabilizada hay un factor de tres a cinco. No es un dato de laboratorio, es una bifurcación de modelo de negocio. Quien elige el relleno fresco elige rotar rápido y aceptar que su bombonería vive del cliente que pasa por la vitrina (exhibidor) esta semana. Quien elige el estabilizado elige lo contrario: fabricar con antelación, vender por envío y aguantar una campaña de Navidad o de San Valentín sin que la nevera se convierta en el cuello de botella. Ninguna opción es mejor; son dos negocios distintos que, vistos desde el mostrador, se parecen.
+Y lo que significan es esto: entre la ganache fresca y la estabilizada hay un factor de tres a cinco según los plazos del kit; en el caso modelado, que declara por el extremo bajo de las dos familias, se queda en 2,8. No es un dato de laboratorio, es una bifurcación de modelo de negocio. Quien elige el relleno fresco elige rotar rápido y aceptar que su bombonería vive del cliente que pasa por la vitrina (exhibidor) esta semana. Quien elige el estabilizado elige lo contrario: fabricar con antelación, vender por envío y aguantar una campaña de Navidad o de San Valentín sin que la nevera se convierta en el cuello de botella. Ninguna opción es mejor; son dos negocios distintos que, vistos desde el mostrador, se parecen.
 
 Lo que separa a una de otra no es el azúcar ni el chocolate, es el agua disponible del relleno, lo que en el obrador se conoce como actividad de agua. Por eso este libro no empieza por un calendario, sino por cuánta agua le queda libre a cada relleno para que un microorganismo pueda usarla. El Kit de Tareas Chocolatería fija el umbral de vigilancia en 0,85; por debajo, el relleno se comporta como esperas, y por encima el reloj corre distinto. La ganache de nata fresca de este libro está en 0,88, por encima del umbral; la estabilizada, en 0,82, por debajo. Esa diferencia de tres centésimas es la que luego se traduce en semanas sobre el mostrador.
 
@@ -1309,15 +1306,13 @@ Cuando la referencia se despacha a granel, no hay etiqueta que consultar, así q
 
 El caso que modela este libro no vende toda su colección por una sola vía: reparte referencias entre lo envasado y lo despachado a granel, sin concentrar la producción en una de las dos. Y de ahí sale la consecuencia que conviene mirar antes de ampliar catálogo: cada referencia que pasa de venderse a granel a venderse envasada suma una obligación de etiquetado que antes no tenías, con su propia temperatura declarada y su propia vida útil impresa. Envasar no es solo una decisión de packaging para vender bonito por Navidad o por envío; es asumir, referencia a referencia, el papel que hasta entonces sólo llevaba tu sistema de autocontrol.
 
-### La vitrina de chocolate no es la de pastelería
+### Qué referencias van a vitrina y cuáles a nevera
 
-La vitrina de bombonería se mueve en una ventana muy estrecha, y conviene tenerla clara antes de comprar el mueble. En la calculadora del pack, la alarma se activa a partir de 20 °C y la humedad máxima de trabajo está fijada en 55 % (la hoja «Parámetros» de vida-util-rellenos-y-rotacion.xlsx). Por encima de esos límites la manteca de cacao empieza a sufrir: el bombón pierde el brillo que le dio un buen templado y, si la humedad se dispara, el azúcar de la superficie capta agua y aparece el manchado blanco del llamado sugar bloom. Por debajo de la ventana de trabajo el problema es el contrario: al sacar la pieza de un ambiente más frío hacia la sala, condensa en superficie, y esa humedad de condensación es la puerta de entrada de mohos.
+Qué vitrina comprar y por qué la de chocolate no es la de pastelería se decide en el capítulo 8, con los precios y los plazos delante; aquí se decide otra cosa, que es qué pieza va dentro de ese mueble y qué pieza no. En la calculadora del pack, la alarma de vitrina se activa a partir de 20 °C y la humedad máxima de trabajo está fijada en 55 % (la hoja «Parámetros» de vida-util-rellenos-y-rotacion.xlsx), y esos dos números son el filtro: la referencia que no aguante ahí dentro no es que necesite otra vitrina, es que no va a la vitrina.
 
-Por eso la vitrina de chocolate no admite el mismo criterio que la de pastelería. Un modelo de vitrina refrigerada pensado para chocolate y bombón trabaja, según su propia ficha técnica, entre 14 °C y 17 °C, muy lejos de los 2 °C a 4 °C de una vitrina de pastelería, que arruinaría el bombón por condensación y por pérdida de brillo (Equipo H, 2026-09-12). Y si tu mueble mezcla las dos cosas —chocolate y pastelería rellena en la misma vitrina—, la ley no te deja media tinta: ese producto de pastelería va a 4 °C o menos salvo que sea estable a temperatura ambiente, por la fila novena de la tabla del artículo 4.1 del RD 1021/2022 (BOE-A-2022-21681, comprobado el 12 de septiembre de 2026). En el mismo mueble conviven entonces dos regímenes térmicos que no se pueden fundir en uno solo, y eso condiciona qué vitrina compras y cómo la divides por dentro.
+Hay piezas que directamente no deberían estar en la vitrina, sino en la nevera de rellenos. En el caso modelado, la ganache de nata fresca tiene una actividad de agua de 0,88, por encima del umbral de vigilancia de 0,85 que marca la hoja «Parámetros»; en total son 6 las referencias de toda la carta que alcanzan o superan ese umbral —este bombón, las cuatro cajas surtidas que lo llevan dentro y el hueso de santo, que se queda justo en 0,85— (la hoja «Tipo de Relleno y aw» de vida-util-rellenos-y-rotacion.xlsx). Cuando el relleno tiene tanta agua disponible, es el relleno el que manda sobre el chocolate, no al revés: por mucho que la cobertura aguante bien la temperatura de vitrina, la humedad que suelta por dentro acaba condensando contra la envoltura desde el propio interior del bombón. La colocación de cada referencia —vitrina o nevera— no se decide por costumbre de la casa, se decide mirando la actividad de agua del relleno que lleva dentro.
 
-Conviene distinguir otra vez algo que se paga caro si se confunde: el rango de trabajo que publica el fabricante del equipo que te van a vender no es tu objetivo operativo de negocio. El semáforo de la calculadora no se alimenta del folleto del proveedor, se alimenta del rango que tecleas tú, el que decides sostener en tu vitrina concreta, y sólo avisa cuando de verdad te vas por arriba del punto en el que la manteca empieza a sufrir; nunca te va a poner en rojo el objetivo que tú mismo has fijado como bueno.
-
-Y hay piezas que directamente no deberían estar en la vitrina, sino en la nevera de rellenos. En el caso modelado, la ganache de nata fresca tiene una actividad de agua de 0,88, por encima del umbral de vigilancia de 0,85 que marca la hoja «Parámetros»; en total son 6 las referencias de la colección que superan ese umbral (la hoja «Tipo de Relleno y aw» de vida-util-rellenos-y-rotacion.xlsx). Cuando el relleno tiene tanta agua disponible, es el relleno el que manda sobre el chocolate, no al revés: por mucho que la cobertura aguante bien la temperatura de vitrina, la humedad que suelta por dentro acaba condensando contra la envoltura desde el propio interior del bombón. La colocación de cada referencia —vitrina o nevera— no se decide por costumbre de la casa, se decide mirando la actividad de agua del relleno que lleva dentro.
+Y queda el caso del mueble compartido, que es donde más gente se equivoca al montar el mostrador. Si en la misma vitrina conviven el chocolate y la pastelería rellena, la ley no te deja media tinta: ese producto de pastelería va a 4 °C o menos salvo que sea estable a temperatura ambiente, por la fila novena de la tabla del artículo 4.1 del RD 1021/2022 (BOE-A-2022-21681, comprobado el 12 de septiembre de 2026). En el mismo mueble conviven entonces dos regímenes térmicos que no se pueden fundir en uno solo, y eso no se arregla eligiendo un punto intermedio: se arregla dividiendo el mueble por dentro, o sacando de él la familia que no encaja.
 
 ### Las tres vías del huevo, donde aún aplican
 
@@ -1337,14 +1332,14 @@ En un obrador pequeño, la vía que de verdad se sostiene en el día a día suel
 |---|---|---|
 | Tabletas y chocolate sin relleno | 12-18 meses | El enemigo no es el tiempo: es la humedad, la luz y los olores. Sellado y en oscuridad |
 | Figuras huecas y piezas macizas | 6-12 meses | Igual que la tableta, pero la pieza hueca se raja con los cambios bruscos de temperatura |
-| Bombones de ganache con nata fresca | 10-15 dias | Actividad de agua alta: en refrigeracion a 0-4 grados C y atemperar CERRADOS antes de abrir, o condensan |
+| Bombones de ganache con nata fresca | 10-15 días | Actividad de agua alta: en refrigeración a 0-4 °C y atemperar CERRADOS antes de abrir, o condensan |
 | Bombones de ganache con nata UHT, sorbato o alcohol | 4-8 semanas | El conservante y el alcohol bajan la actividad de agua; sin ellos no se llega ni a la mitad |
-| Bombones de praline, gianduja y frutos secos | 2-4 meses | La grasa del fruto seco se enrancia y el frio no lo evita: manda la fecha, no el aspecto |
+| Bombones de praline, gianduja y frutos secos | 2-4 meses | La grasa del fruto seco se enrancia y el frío no lo evita: manda la fecha, no el aspecto |
 | Trufas y rocas recubiertas | 3-4 semanas | Si llevan nata o mantequilla, se cuentan como ganache fresca |
-| Bombones de licor y cristalizados | 3-6 meses | Vigilar la cristalizacion del azucar en la cascara: revienta y gotea |
+| Bombones de licor y cristalizados | 3-6 meses | Vigilar la cristalización del azúcar en la cascara: revienta y gotea |
 | Frutos secos garrapinados y frutas confitadas banadas | 1-3 meses | Se apelmazan con la humedad; envasado hermetico con desecante si tu obrador es humedo |
 | Barquillos y crujientes banados | 3-4 semanas | Pierden el crujiente mucho antes que la seguridad: se retiran por calidad |
-| Chocolate acabado: NO congelar | Nunca | Al descongelar condensa, el agua disuelve el azucar de la superficie y deja sugar bloom. Solo el granel de ganache admite -18 grados C 1-2 meses, descongelado 24 h en camara y sin abrir |
+| Chocolate acabado: NO congelar | Nunca | Al descongelar condensa, el agua disuelve el azúcar de la superficie y deja sugar bloom. Solo el granel de ganache admite -18 °C 1-2 meses, descongelado 24 h en cámara y sin abrir |
 
 *Esta tabla NO es de la guía: es del Kit de Tareas Chocolatería, se cita fila a fila y no se reescribe. Lo que construye la guía es la actividad de agua, la vida útil que declaras tú, el tamaño de lote y la merma por caducidad en euros.*
 
@@ -1352,16 +1347,16 @@ En un obrador pequeño, la vía que de verdad se sostiene en el día a día suel
 
 | Id | Referencia | Tipo de relleno | Actividad de agua | Familia de vida útil del kit | De qué va a morir esta referencia |
 |---|---|---|---|---|---|
-| BC1 | Bombon de ganache de chocolate negro 70 % | Ganache de chocolate negro con nata fresca | 0,88 | Bombones de ganache con nata fresca | Agua disponible ALTA: trátala como producto de vida corta y en frío, y justifícalo en tu APPCC |
-| BC2 | Bombon de ganache de leche y vainilla | Ganache de chocolate con leche, nata UHT y sorbitol | 0,82 | Bombones de ganache con nata UHT, sorbato o alcohol | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC3 | Bombon de praline de avellana | Praline de avellana | 0,42 | Bombones de praline, gianduja y frutos secos | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC4 | Bombon de gianduja de avellana | Gianduja de avellana | 0,38 | Bombones de praline, gianduja y frutos secos | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC1 | Bombón de ganache de chocolate negro 70 % | Ganache de chocolate negro con nata fresca | 0,88 | Bombones de ganache con nata fresca | Agua disponible ALTA: trátala como producto de vida corta y en frío, y justifícalo en tu APPCC |
+| BC2 | Bombón de ganache de leche y vainilla | Ganache de chocolate con leche, nata UHT y sorbitol | 0,82 | Bombones de ganache con nata UHT, sorbato o alcohol | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC3 | Bombón de praline de avellana | Praline de avellana | 0,42 | Bombones de praline, gianduja y frutos secos | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC4 | Bombón de gianduja de avellana | Gianduja de avellana | 0,38 | Bombones de praline, gianduja y frutos secos | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
 | BC5 | Trufa de chocolate negro al cacao | Trufa de chocolate negro | 0,80 | Trufas y rocas recubiertas | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC6 | Bombon de licor de ron | Licor cristalizado de ron | 0,72 | Bombones de licor y cristalizados | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC7 | Bombon de caramelo salado | Caramelo salado | 0,68 | Bombones de ganache con nata UHT, sorbato o alcohol | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC8 | Bombon de praline de cacahuete | Praline de cacahuete | 0,40 | Bombones de praline, gianduja y frutos secos | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC9 | Bombon crujiente de sesamo y barquillo | Crujiente de sesamo y barquillo | 0,28 | Barquillos y crujientes banados | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
-| BC10 | Bombon de naranja confitada y chocolate negro | Naranja confitada | 0,65 | Frutos secos garrapinados y frutas confitadas banadas | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC6 | Bombón de licor de ron | Licor cristalizado de ron | 0,72 | Bombones de licor y cristalizados | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC7 | Bombón de caramelo salado | Caramelo salado | 0,68 | Bombones de ganache con nata UHT, sorbato o alcohol | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC8 | Bombón de praline de cacahuete | Praline de cacahuete | 0,40 | Bombones de praline, gianduja y frutos secos | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC9 | Bombón crujiente de sesamo y barquillo | Crujiente de sesamo y barquillo | 0,28 | Barquillos y crujientes banados | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
+| BC10 | Bombón de naranja confitada y chocolate negro | Naranja confitada | 0,65 | Frutos secos garrapinados y frutas confitadas banadas | Agua disponible baja: la vida la manda el rancio de la grasa y la humedad del ambiente, no el microbio |
 
 *Mientras la columna de actividades de agua medidas de verdad siga a cero, todas estas cifras son estimaciones tuyas: valen para decidir, no para declarar en un expediente.*
 
@@ -1369,11 +1364,11 @@ En un obrador pequeño, la vía que de verdad se sostiene en el día a día suel
 
 | Zona | Temperatura objetivo | Humedad | De dónde sale |
 |---|---|---|---|
-| Obrador de templado y moldeado | 18 a 20 grados C | 50 a 60 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
-| Camara de conservacion de chocolate | 15 a 18 grados C | 50 a 60 % | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Nevera de rellenos y ganaches | 0 a 4 grados C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Sala de tienda | 20 a 22 grados C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Vitrina de bomboneria | 16 a 18 grados C | menos del 55 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
+| Obrador de templado y moldeado | 18 a 20 °C | 50 a 60 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
+| Cámara de conservación de chocolate | 15 a 18 °C | 50 a 60 % | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Nevera de rellenos y ganaches | 0 a 4 °C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Sala de tienda | 20 a 22 °C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Vitrina de bombonería | 16 a 18 °C | menos del 55 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
 
 *Confundir la temperatura de la sala de tienda con la de la cámara, la de la vitrina o la de la nevera de rellenos es el error de método más caro de este capítulo: son cuatro equipos y cuatro ventanas. Verificado el 12-09-2026 · RD 1021/2022 (BOE-A-2022-21681), arts. 3, 4, 5, 9, 11, 13 y 20, y RD 191/2011 art. 2.2 en la redacción de la disposición final primera del RD 1021/2022 · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681*
 
@@ -1408,7 +1403,7 @@ El detalle que se le escapa a casi todo el mundo la primera vez es que esa hora 
 
 Antes de decirte qué convenio buscar, hace falta cerrar una pregunta que se hace casi todo el que llega a este capítulo: ¿existe un convenio colectivo estatal del chocolate? La respuesta, comprobada y no supuesta, es que no. La consulta al Registro y Depósito de Convenios Colectivos, Acuerdos Colectivos de Trabajo y Planes de Igualdad, conocido por sus siglas como REGCON, con ámbito laboral «Estatal», devuelve cero resultados para «chocolate», «bombones», «confitería» y «pastelería» (REGCON, 2026). Y para que quede claro que ese cero no es un fallo de búsqueda sino un hecho, la misma consulta hecha con «turrones» como control sí devuelve resultados: 29 trámites. La herramienta funciona; lo que no existe es el convenio.
 
-Lo que sí existe, y esto es lo que de verdad te interesa, son convenios de ámbito provincial o autonómico que sí nombran el chocolate o el bombón dentro de su actividad. En este pack se han localizado cuatro (REGCON, 2026): uno en Toledo, uno en la Comunitat Valenciana, uno en Álava y uno en Huesca. El de Toledo, por poner un ejemplo real y no un genérico, lleva el código 45000145011981 y está registrado como «Mazapán, Masas Fritas, Confiterías y Chocolates». Estos cuatro entran en esta guía como método —para que sepas que buscar por debajo del ámbito estatal sí da resultados, y para que veas cómo se ve un hallazgo real— y no como tablas: la única tabla salarial que publica este pack es la del convenio que sirve de caso modelado, marcada como ejemplo y sustituible por el convenio que de verdad te toque a ti según tu provincia y tu actividad.
+Lo que sí existe, y esto es lo que de verdad te interesa, son convenios de ámbito provincial o autonómico que sí nombran el chocolate o el bombón dentro de su actividad. En este pack se han localizado cuatro (REGCON, 2026): uno en Toledo, uno en la Comunitat Valenciana (vigente hasta el 31-12-2026), uno en Huesca y uno en Álava que está caducado —y que sirve para lo mismo: enseña que la búsqueda por debajo del ámbito estatal sí devuelve resultados, y que la vigencia se comprueba siempre. El de Toledo, por poner un ejemplo real y no un genérico, lleva el código 45000145011981 y está registrado como «Mazapán, Masas Fritas, Confiterías y Chocolates». Estos cuatro entran en esta guía como método —para que sepas que buscar por debajo del ámbito estatal sí da resultados, y para que veas cómo se ve un hallazgo real— y no como tablas: la única tabla salarial que publica este pack es la del convenio que sirve de caso modelado, marcada como ejemplo y sustituible por el convenio que de verdad te toque a ti según tu provincia y tu actividad.
 
 Ese caso modelado es el convenio colectivo de confiterías, pastelerías y repostería, de comercio e industria, de la Comunidad de Madrid. La tabla de grupos y brutos que tienes justo debajo de este texto sale de ahí, con el grupo más bajo en los 1.192,42 € ya citados y el resto de grupos por encima. Al lado de esa tabla vas a encontrar también una comparativa de salarios de mercado por hora para perfiles parecidos, con su fuente y su fiabilidad a la vista: son orientativos, no son convenio, y sirven para contrastar si lo que dice tu convenio real se aleja mucho de lo que se paga hoy en la calle. Ese convenio de referencia está en vigor a la fecha de cierre de esta edición y tiene ya publicada su última revisión salarial (REGCON, 2026), pero eso es precisamente lo que tienes que volver a comprobar tú cuando lo uses: los convenios caducan, se renuevan con retraso y a veces siguen aplicándose mientras se negocia el siguiente texto, así que la vigencia que veas en la ficha de tu convenio es un dato que se revisa en el momento de usarlo, no una vez y para siempre.
 
@@ -1444,25 +1439,24 @@ Una vez tengas ese código, el resto de este capítulo y las hojas del pack que 
 
 | Grupo | Denominación del grupo | Bruto mes (€) | Bruto año (€) | Áreas funcionales |
 |---|---|---|---|---|
-| Grupo 1 | Tecnicos y titulados superiores | 1.733,88 € | 26.008 € | ADMINISTRACION |
-| Grupo 2 | Direccion, jefes y encargados | 1.427,89 € | 21.418 € | OBRADOR / TIENDA / ADMINISTRACION |
+| Grupo 1 | Técnicos y titulados superiores | 1.733,88 € | 26.008 € | ADMINISTRACION |
+| Grupo 2 | Dirección, jefes y encargados | 1.427,89 € | 21.418 € | OBRADOR / TIENDA / ADMINISTRACION |
 | Grupo 3 | Personal especialista | 1.376,91 € | 20.654 € | OBRADOR / TIENDA |
 | Grupo 4 | Personal cualificado | 1.249,42 € | 18.741 € | OBRADOR / TIENDA |
-| Grupo 5 | Personal de apoyo | 1.192,42 € | 17.886 € | OBRADOR / TIENDA |
-| Grupo 6 | Personal de ayuda en servicios auxiliares | 1.192,42 € | 17.886 € | OBRADOR / TIENDA |
+| Grupo 5 | Personal de apoyo y ayuda en servicios auxiliares | 1.192,42 € | 17.886 € | OBRADOR / TIENDA |
 
 *Es la tabla de UNA comunidad autónoma y está marcada como ejemplo: sustitúyela por la del convenio que te aplique. No existe convenio estatal del chocolate. Verificado el 12-09-2026 en el registro de convenios del Ministerio de Trabajo y en el BOCM · Convenio de Confiterías, Pastelerías y Repostería de la Comunidad de Madrid, código 28001025011981, vigencia de 2024 a 2026, con revisión salarial publicada el 28-02-2026 · https://expinterweb.mites.gob.es/regcon/pub/consultaPublica*
 
 **Salarios de mercado, orientativos y con su etiqueta de fuente (plan-financiero-3-anos-chocolateria.xlsx, hoja «Personal»)**
 
-| Etiqueta de la fuente salarial | Mínimo (€/h) | Máximo (€/h) | Equivale a | Coste año a jornada completa (€) |
+| Etiqueta de la fuente salarial | Mínimo (€/h) | Máximo (€/h) | Equivale a | Coste año a jornada completa, al MÍNIMO del rango (€) |
 |---|---|---|---|---|
 | «Chocolatero / bombonero especializado» | 13,00 | 16,00 | Chocolatero | 30.776 € |
 | «Oficial de primera» | 11,00 | 13,00 | Chocolatero | 26.041 € |
 | «Auxiliar / ayudante» | 8,00 | 9,50 | Dependiente | 18.939 € |
 | «Encargado / maestro» | 15,00 | 20,00 | Encargado | 35.511 € |
 
-*Las etiquetas de la primera columna son de la FUENTE salarial, no perfiles de esta plantilla: por eso van entrecomilladas y con su equivalencia al lado. Son orientativos y NO son una tabla de convenio.*
+*Las etiquetas de la primera columna son de la FUENTE salarial, no perfiles de esta plantilla: por eso van entrecomilladas y con su equivalencia al lado. Son orientativos y NO son una tabla de convenio. Y la última columna no es el punto medio: toma el SUELO del rango y lo multiplica por las horas anuales de contrato y por la cotización de la empresa, así que con el techo del rango el coste sube en la misma proporción que el precio por hora. Presupuesta con los dos extremos, no con esta columna sola.*
 
 
 ---
@@ -1483,7 +1477,7 @@ De ahí sale la consecuencia de capacidad, que es la que decide si el obrador ag
 
 La campaña de Navidad tiene un desfase que hunde a quien no lo ve venir: los moldes de temporada, el packaging —las cajas, los lazos, las bolsas de la marca— y buena parte de la materia prima se compran y se pagan con semanas o meses de antelación, y la caja de esa producción no entra hasta que el cliente se lleva la bolsa en diciembre. Entre lo uno y lo otro hay un tramo de meses en el que el obrador ya ha gastado y todavía no ha cobrado, y ese tramo hay que financiarlo con algo que no sea la confianza en que «en diciembre se arregla».
 
-En el caso modelado, la tesorería inmovilizada en moldes y packaging de temporada asciende a 5.850 €. Esa cifra no es dinero perdido, es dinero aparcado, y tiene un coste financiero real aunque nunca se apunte en una factura aparte: es el capital que deja de trabajar en cualquier otra parte del negocio mientras espera a que llegue diciembre. Lo que hay que retener es esto: esos 5.850 € son lo que tiene que estar provisionado antes de octubre, no antes de Navidad. Llegar a octubre sin esa tesorería resuelta es llegar tarde a la propia campaña.
+En el caso modelado, la tesorería inmovilizada en moldes y packaging de temporada asciende a 5.850 € en el conjunto del año, de los que 1.430 € son los de la campaña de Navidad. Esa cifra no es dinero perdido, es dinero aparcado, y tiene un coste financiero real aunque nunca se apunte en una factura aparte: es el capital que deja de trabajar en cualquier otra parte del negocio mientras espera a que llegue diciembre. Lo que hay que retener es esto: esos 1.430 € son lo que tiene que estar provisionado antes de octubre, no antes de Navidad. Llegar a octubre sin esa tesorería resuelta es llegar tarde a la propia campaña.
 
 El plan financiero calcula, hacia atrás desde la capacidad real del obrador, una fecha límite de pedidos: a partir de ese día, aceptar un encargo más de Navidad significa no poder servirlo con la calidad ni con los plazos con los que ya se ha comprometido el resto de la cartera. Esa fecha no sale de la prudencia ni de la costumbre del gremio: sale de restar, desde el día de entrega prometido, las horas de templado y moldeado que exige el volumen ya cerrado. Saberla con antelación —y no descubrirla el día en que ya se ha dicho que sí a un pedido de más— es lo que permite decir que no a tiempo, que sale mucho más barato que decir que sí tarde y quedar mal con un cliente.
 
@@ -1501,7 +1495,7 @@ Y el papel que juegan en el conjunto del año es el que las hace imprescindibles
 
 Conviene decirlo desde la primera línea porque es la corrección más importante de todo el capítulo: el valle del año es un único mes de doce, agosto, y lo que se para en agosto es el obrador, no la caja. La tienda sigue abierta, sigue teniendo su horario y sigue despachando bombón al público que entra por la puerta; lo que cambia es que produce menos, vende menos y trabaja con un mix distinto al del resto del año.
 
-Los números del mes, en el caso modelado, son estos: agosto factura 9.954 € sin IVA, muy por debajo de lo que da un mes medio del año —la diferencia frente a ese mes medio es de -5.018 €—, y con los gastos fijos corriendo exactamente igual que en cualquier otro mes del calendario, el resultado de agosto cae hasta -2.824 €. El propio modelo lo resume con una frase que conviene guardar tal cual: agosto da pérdida, provisiónala, no cierres la tienda. Ver esa cifra en septiembre, sin haberla anticipado, es un disgusto que llega tarde; verla calculada en enero, cuando todavía se está a tiempo de provisionarla, es una decisión de gestión y no un susto de caja.
+Los números del mes, en el caso modelado, son estos: agosto factura 9.954 € sin IVA, muy por debajo de lo que da un mes medio del año —16.591 € de media—, y con los gastos fijos corriendo exactamente igual que en cualquier otro mes del calendario, el resultado de agosto cae hasta -2.824 €: 5.018 € por debajo de lo que deja un mes medio. El propio modelo lo resume con una frase que conviene guardar tal cual: agosto da pérdida, provisiónala, no cierres la tienda. Ver esa cifra en septiembre, sin haberla anticipado, es un disgusto que llega tarde; verla calculada en enero, cuando todavía se está a tiempo de provisionarla, es una decisión de gestión y no un susto de caja.
 
 Hay una palanca que sí funciona dentro de ese mes, y es un cambio de mix: menos ganache fresca —que exige una cadena de frío y una rotación mucho más exigentes en pleno calor— y más tableta (barra) y producto estable, que aguanta mejor la temperatura del mostrador y la del transporte corto. Ese cambio de mix baja algo el margen, porque la tableta trabaja con un coste de materia distinto al de la ganache, pero a cambio baja mucho el riesgo: menos merma, menos rotura de cadena de frío, menos sustos delante del cliente. El propio resultado de agosto ya recoge esa caída de margen dentro de la cifra de -2.824 €: no es una estimación aparte, forma parte del mismo número.
 
@@ -1520,11 +1514,11 @@ La segunda respuesta es de producto, no de servicio: el cliente que entra en jul
 | Mes | Temporada que declara el kit | Campaña | ¿Campaña propia? | Días de campaña | Facturación sin IVA (€) | Facturación INCREMENTAL sin IVA (€) |
 |---|---|---|---|---|---|---|
 | Enero | Media | Reyes | No | 5 | 3.364 € | 3.364 € |
-| Febrero | Alta | San Valentin | Sí | 6 | 6.000 € | 5.127 € |
-| Marzo | Alta | Dia del Padre | No | 4 | 1.891 € | 1.309 € |
+| Febrero | Alta | San Valentín | Sí | 6 | 6.000 € | 5.127 € |
+| Marzo | Alta | Día del Padre | No | 4 | 1.891 € | 1.309 € |
 | Abril | Alta | Pascua | Sí | 10 | 5.045 € | 4.709 € |
-| Mayo | Alta | COMUNIONES (pico) y Dia de la Madre | Sí | 14 | 6.058 € | 5.625 € |
-| Junio | Media | COMUNIONES (ultimas) | Sí | 8 | 1.833 € | 1.629 € |
+| Mayo | Alta | COMUNIONES (pico) y Día de la Madre | Sí | 14 | 6.058 € | 5.625 € |
+| Junio | Media | COMUNIONES (últimas) | Sí | 8 | 1.833 € | 1.629 € |
 | Julio | Media | Temporada turistica | No | 26 | 3.148 € | 2.099 € |
 | Agosto | Baja | Valle del obrador | No | 26 | 1.468 € | 652 € |
 | Septiembre | Media | Apertura de agenda corporativa | No | 20 | 2.473 € | 1.855 € |
@@ -1592,7 +1586,7 @@ Restringido significa no suministrar a nadie inscrito en el registro general de 
 
 De los tres canales que salen de la nota minorista, el regalo corporativo es el que más peligro esconde precisamente porque no se anuncia como tal. Crece pedido a pedido, sin que nadie tome la decisión consciente de abrir una línea B2B, y es el canal que manda las cajas más lejos y con más probabilidad de acabar en la centralita de compras de un cliente ya inscrito. El propio calendario del sector lo confirma: el pedido corporativo de Navidad se cierra en octubre, no en diciembre, con plazos de entrega de catorce días desde que se aprueba la muestra virtual, lo que ya obliga a planificar con semanas de margen (Gift Campaign, Regalo Publicidad, Lindt España, Cornet 1945, QuieroChocolate, NoSoloDulce y Regalo Chocolate, 2026). Para cuando alguien repara en que ese cliente factura más que varios meses de mostrador seguidos, ya lleva un año comprando.
 
-Y la decisión no es sólo legal: hay canales que traen obligaciones y dejan menos margen que el propio mostrador. Los cinco canales de este libro dejan, ponderados, un margen de contribución medio del 64,1 %, y el punto muerto mensual de la chocolatería con todos ellos activos es de 15.924 €; sin el canal de hostelería, baja a 15.358 €, lo que confirma que ese canal concreto aporta poco colchón frente a lo que exige en papeleo. El canal que de verdad sostiene el negocio, con diferencia, es el mostrador, y conviene tenerlo presente antes de perseguir un canal nuevo sólo porque suena a crecer.
+Y la decisión no es sólo legal: hay canales que traen obligaciones y dejan menos margen que el propio mostrador. Los cinco canales de este libro dejan, ponderados, un margen de contribución medio del 64,1 %, y el punto muerto mensual de la chocolatería con todos ellos activos es de 15.924 €, calculado sobre el margen de contribución de los cinco canales y no sobre el margen bruto, que es el que usa el punto de equilibrio contable del capítulo 20; sin el canal de hostelería, baja a 15.358 €, lo que confirma que ese canal concreto aporta poco colchón frente a lo que exige en papeleo. El canal que de verdad sostiene el negocio, con diferencia, es el mostrador, y conviene tenerlo presente antes de perseguir un canal nuevo sólo porque suena a crecer.
 
 ### Vender online sigue siendo minorista, pero te responsabiliza de la temperatura en el camión
 
@@ -1604,7 +1598,7 @@ El número que decide si el canal online existe de verdad, más allá de la ilus
 
 ### A quién le vendes también hay que registrarlo
 
-Cuando se habla del reglamento de la deforestación en un obrador de chocolate, casi todo el mundo se queda en la mitad del trabajo: guardar los datos de quien te vende la cobertura. La otra mitad, la que casi nunca se cuenta, es que el mismo reglamento te obliga a mirar también hacia el otro lado del mostrador. El Reglamento (UE) 2023/1115 del Parlamento Europeo y del Consejo (EUDR), en la letra a del artículo 5, apartado 3, no distingue entre lo que compras y lo que vendes: exige conservar también los datos de los operadores posteriores y de los comerciantes a los que TÚ has suministrado producto, con el mismo rigor que los de tu proveedor de cacao (comprobado el 12 de septiembre de 2026). Si envías cajas a un hotel, a una tienda gourmet o a un distribuidor de tu comunidad, ese destinatario entra en la misma obligación de registro que la cobertura que compraste para hacerlas.
+Cuando se habla del reglamento de la deforestación en un obrador de chocolate, casi todo el mundo se queda en la mitad del trabajo: guardar los datos de quien te vende la cobertura. La otra mitad, la que casi nunca se cuenta, es que el mismo reglamento te obliga a mirar también hacia el otro lado del mostrador. El Reglamento (UE) 2023/1115 del Parlamento Europeo y del Consejo (EUDR), en la letra b del artículo 5, apartado 3, mira también hacia el otro lado: exige conservar también los datos de los operadores posteriores y de los comerciantes a los que TÚ has suministrado producto, con el mismo rigor que los de tu proveedor de cacao (comprobado el 12 de septiembre de 2026). Si envías cajas a un hotel, a una tienda gourmet o a un distribuidor de tu comunidad, ese destinatario entra en la misma obligación de registro que la cobertura que compraste para hacerlas.
 
 Lo que tiene que constar es sencillo de escribir y fácil de olvidar si no vive en un sitio fijo: nombre del cliente, dirección y qué producto le has suministrado, y se conserva durante cinco años. Es la segunda tabla del libro de equipamiento, y no existe en ningún otro libro del catálogo: la primera registra a quién le compras la cobertura y el grano, y esta segunda registra a quién le vendes tú. Las dos se llevan con la misma disciplina, porque las dos responden ante la misma autoridad de control el día que pregunte, y las dos caducan a los cinco años, ni uno menos.
 
@@ -1612,7 +1606,7 @@ Y aquí se cierra el círculo con lo que ya sabes del epígrafe minorista: los c
 
 ### Los talleres, la única línea que funciona en agosto
 
-De todas las líneas de negocio de una bombonería, el taller es la que menos depende de lo que haga el precio del cacao ese mes, y la única que sigue funcionando en agosto, cuando el obrador reduce su ritmo de producción: no vive de kilos fabricados, vive de plazas vendidas. Pero convertirlo en una decisión, y no en una ilusión de fin de semana, exige mirar dos cifras antes de anunciar la primera fecha. La hoja «Talleres y Regalo Corporativo» de plan-financiero-3-anos-chocolateria.xlsx da la primera: hacen falta 2,3 asistentes para cubrir el coste del taller. Esa cifra ya lleva dentro el consumo de materia prima de la demostración, que en un taller de bombonería es bajo y controlado, así que no hay una segunda cuenta aparte que hacer: con menos de tres personas apuntadas, el taller ya cubre lo que cuesta montarlo.
+De todas las líneas de negocio de una bombonería, el taller es la que menos depende de lo que haga el precio del cacao ese mes, y la única que sigue funcionando en agosto, cuando el obrador reduce su ritmo de producción: no vive de kilos fabricados, vive de plazas vendidas. Pero convertirlo en una decisión, y no en una ilusión de fin de semana, exige mirar dos cifras antes de anunciar la primera fecha. La hoja «Talleres y Regalo Corporativo» de plan-financiero-3-anos-chocolateria.xlsx da la primera: hacen falta 2,3 asistentes para cubrir el coste del taller. Esa cifra cubre sólo al docente; contando además la materia y el material que se lleva cada asistente, el umbral sube a 2,7. Con tres personas apuntadas el taller ya se paga solo; con dos, todavía no.
 
 La pregunta de verdad, la que casi nadie se hace antes de meter el taller en el calendario, es otra: qué renuncias para darlo. La misma hoja lo deja en dos cifras que sólo tienen sentido leídas juntas: una hora de sala dando taller deja 67,51 € de margen, frente a los 28,42 € que deja esa misma hora de sala vendiendo al mostrador. A primera vista el taller gana con holgura, más del doble. Pero esa comparación sólo vale si la hora que le dedicas al taller es una hora que, de otro modo, se habría quedado vacía. Si programas el taller un sábado de once a una —la franja en la que más gente entra a comprar en toda la semana— no estás comparando contra una hora muerta, estás comparando contra la hora que más te factura de las que abres ese día. El taller que sale gratis un martes de media mañana puede salir caro un sábado con cola en la puerta, aunque las dos veces llenes las mismas plazas.
 
@@ -1623,8 +1617,8 @@ Y antes de poner precio al primer taller, hay una pregunta que se le hace a la a
 | Canal | Ventas del año de crucero (€) | % de las ventas | Margen bruto | Margen de contribución | Margen de contribución (€) | Días de cobro |
 |---|---|---|---|---|---|---|
 | Mostrador | 123.435 € | 62 % | 70 % | 70,0 % | 86.404 € | 0 |
-| Online con envio refrigerado | 23.891 € | 12 % | 58 % | 54,0 % | 12.901 € | 0 |
-| B2B a hosteleria | 21.900 € | 11 % | 48 % | 45,0 % | 9.855 € | 45 |
+| Online con envío refrigerado | 23.891 € | 12 % | 58 % | 54,0 % | 12.901 € | 0 |
+| B2B a hostelería | 21.900 € | 11 % | 48 % | 45,0 % | 9.855 € | 45 |
 | Regalo corporativo | 17.918 € | 9 % | 55 % | 52,0 % | 9.317 € | 30 |
 | Talleres y catas | 11.945 € | 6 % | 82 % | 77,0 % | 9.198 € | 0 |
 | TOTAL | 199.088 € | 100 % |  | 64,1 % | 127.675 € |  |
@@ -1636,8 +1630,8 @@ Y antes de poner precio al primer taller, hay una pregunta que se le hace a la a
 | Canal | ¿Vas a vender por él? | ¿Te saca de la nota? | Fuente verificada |
 |---|---|---|---|
 | Mostrador | Sí | No | CHN-72 |
-| Online con envio refrigerado | No | No lo sé | CHN-95 + CHN-59 + CHN-88 + CHN-90 + CHN-57 |
-| B2B a hosteleria | No | No lo sé | CHN-41 + CHN-72 + CHN-94 |
+| Online con envío refrigerado | No | No lo sé | CHN-95 + CHN-59 + CHN-88 + CHN-90 + CHN-57 |
+| B2B a hostelería | No | No lo sé | CHN-41 + CHN-72 + CHN-94 |
 | Regalo corporativo | No | No lo sé | CHN-24 + CHN-72 + CHN-94 |
 | Talleres y catas | No | No | CHN-71b |
 
@@ -1719,9 +1713,9 @@ El hábito que convierte el plan en herramienta de verdad, y no en un documento 
 | Alquiler del local | 15.600 € | 15.600 € | 15.600 € | 7,8 % |
 | Suministros (luz, agua y climatización) | 9.360 € | 9.360 € | 9.360 € | 4,7 % |
 | Seguros | 1.320 € | 1.320 € | 1.320 € | 0,7 % |
-| Gestoria y asesoria | 2.400 € | 2.400 € | 2.400 € | 1,2 % |
+| Gestoría y asesoría | 2.400 € | 2.400 € | 2.400 € | 1,2 % |
 | Software, TPV y pasarela de cobro | 720 € | 720 € | 720 € | 0,4 % |
-| Telefonia e internet | 660 € | 660 € | 660 € | 0,3 % |
+| Telefonía e internet | 660 € | 660 € | 660 € | 0,3 % |
 | Limpieza y consumibles | 1.680 € | 1.680 € | 1.680 € | 0,8 % |
 | Mantenimiento de equipos | 1.560 € | 1.560 € | 1.560 € | 0,8 % |
 | Publicidad y redes | 2.160 € | 2.160 € | 2.160 € | 1,1 % |
@@ -1790,7 +1784,7 @@ La más cercana, y la más importante para este oficio, es la del Reglamento (UE
 
 Le siguen las de fin de año, que caducan casi a la vez y por eso viven en celda editable dentro del plan financiero: la referencia anual del salario mínimo se revisa en cada cambio de año, y la tabla del convenio de confiterías, pastelerías y repostería de la Comunidad de Madrid sólo tiene vigencia hasta el 31 de diciembre de 2026. Cuando llegue esa fecha hay que comprobar si el convenio se ha prorrogado, si ha entrado uno nuevo o si se ha quedado sin cobertura, porque cualquiera de los tres escenarios cambia la celda de coste de personal del plan financiero.
 
-Y están las de más adelante, que no aprietan hoy pero conviene tenerlas marcadas. La facturación verificable llega en dos tramos: antes del 1 de enero de 2027 para los contribuyentes del Impuesto sobre Sociedades, y antes del 1 de julio de 2027 para el resto de obligados; lo que toca rehacer, en su momento, es el apartado que hoy da por bueno tu sistema de facturación actual. La obligación de servir la bebida en envase reutilizable si tienes mesas y sirves chocolate a la taza, dentro de la Ley 1/2025, ya está en vigor: no es una fecha que llegue, y por eso entra en esta revisión aunque no tenga un vencimiento futuro que marcar. Y el calendario de accesibilidad para establecimientos privados se abre en dos escalones: el 1 de enero de 2029 para el servicio que nazca nuevo a partir de ahora, y el 1 de enero de 2030 para el que ya exista y sólo tenga que admitir ajustes razonables; lo que toca revisar, con cualquiera de las dos fechas, es el criterio de accesibilidad aplicado al elegir y adaptar tu local.
+Y están las de más adelante, que no aprietan hoy pero conviene tenerlas marcadas. La facturación verificable llega en dos tramos: antes del 1 de enero de 2027 para los contribuyentes del Impuesto sobre Sociedades, y antes del 1 de julio de 2027 para el resto de obligados; lo que toca rehacer, en su momento, es el apartado que hoy da por bueno tu sistema de facturación actual. La obligación de ofrecer al menos una referencia de bebida en envase reutilizable, si tienes mesas y sirves chocolate a la taza, viene del RD 1055/2022 (arts. 9.3 y 9.4) y se exige desde el 1 de enero de 2027 en locales de menos de 120 m². Y el calendario de accesibilidad para establecimientos privados se abre en dos escalones: el 1 de enero de 2029 para el servicio que nazca nuevo a partir de ahora, y el 1 de enero de 2030 para el que ya exista y sólo tenga que admitir ajustes razonables; lo que toca revisar, con cualquiera de las dos fechas, es el criterio de accesibilidad aplicado al elegir y adaptar tu local.
 
 ### Las diez normas cuyo cambio invalidaría algo
 
@@ -1804,7 +1798,7 @@ No hace falta revisar el pack entero cada año: hace falta revisar estas diez no
 - La Ley 7/2022 sostiene la hoja «Parámetros» de calculadora-capex-chocolateria.xlsx: el umbral mensual de kilos que te exime del impuesto al plástico sale de su articulado.
 - El Real Decreto 126/2026 sostiene la hoja «Personal» de plan-financiero-3-anos-chocolateria.xlsx: la referencia anual de 17.094 € viene de ese real decreto, y se revisa cada vez que se publica uno nuevo.
 - El convenio de confiterías, pastelerías y repostería de la Comunidad de Madrid sostiene, junto al anterior, la misma hoja de personal, como tabla de referencia marcada como ejemplo y sustituible: si se prorroga, se sustituye o se renueva, deja de representar lo que hay.
-- La Ley 1/2025 sostiene el bloque de licencias que trata la exención de microempresas y la obligación de envase reutilizable: si el alcance del artículo que hoy te excluye cambia, ese bloque deja de estar actualizado.
+- La Ley 1/2025 sostiene el bloque de licencias que trata la exención de microempresas; el envase reutilizable lo sostiene el RD 1055/2022: si el alcance del artículo que hoy te excluye cambia, ese bloque deja de estar actualizado.
 - El Real Decreto 1007/2023 sostiene el bloque de facturación verificable del plan financiero: si cambia su calendario, cambian los dos plazos que hoy manejas según seas o no contribuyente del Impuesto sobre Sociedades.
 
 Ninguna de las diez pide revisar el resto del pack: pide revisar su propia celda o su propio bloque, y nada más.
@@ -1848,6 +1842,7 @@ Con estos dos procedimientos y la lista de las diez normas críticas, revisar es
 | RD 193/2023 | Accesibilidad | Vigente; calendario privado en 2029 y 2030 |
 | RD 919/2006, ITC-ICG 07 | Inspección periódica de la instalación de gas, sólo si montas freidora de gas | Vigente, última modificación de septiembre de 2025 |
 | RD 10/2025 | Los dos códigos de actividad que se comunican en el alta | Vigente, sin modificaciones |
+| RD 126/2026 (BOE-A-2026-3815) | La referencia anual del salario mínimo con la que se contrasta la tabla del convenio en la hoja de personal del plan financiero | Vigente; es el real decreto anual del salario mínimo, así que caduca el 31-12-2026. No confundirlo con el RD 126/2015, que es el de alérgenos y tiene su propia fila en este mismo cuadro |
 | Decreto 85/2024 de la Generalitat de Catalunya | Artesanía alimentaria, con el chocolate expresamente dentro | En vigor; la acreditación es VOLUNTARIA |
 | RD 1334/1999 | Etiquetado general, que la norma del chocolate todavía cita | Superado por el reglamento europeo de información al consumidor y por el RD 126/2015: no se remite a él |
 | RD 1254/1991 | Huevo y ovoproductos | DEROGADO; sigue citándose en contenidos que circulan |

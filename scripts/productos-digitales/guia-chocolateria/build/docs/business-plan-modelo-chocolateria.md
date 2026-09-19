@@ -126,7 +126,7 @@ Lo que no protege es la marca. En bombonería se construye con años de campaña
 
 ### El concepto y la carta
 
-La chocolatería boutique & atelier vende bombonería de producción propia, templada en el obrador (taller o laboratorio) de la casa, sin nada envasado de fábrica en la vitrina (exhibidor). La carta se organiza en cinco familias: bombones de colección, que sostienen el margen y la imagen; tabletas (barras) bean-to-bar, para la lectura de origen; cajas de regalo, para el ticket de temporada y de empresa; chocolate a la taza, de invierno; y bombonería de diario, de impulso. El número de referencias vivas se ajusta con la rotación real del punto de venta, no con una cifra fija de apertura; lo que sí conviene fijar desde el primer día es el peso de cada familia en la facturación, porque de ahí sale el mix que alimenta todo lo demás.
+La chocolatería boutique & atelier vende bombonería de producción propia, templada en el obrador (taller o laboratorio) de la casa, sin nada envasado de fábrica en la vitrina (exhibidor). La carta se organiza en cinco familias: bombones de colección, que sostienen el margen y la imagen; tabletas (barras), de impulso y de regalo pequeño; chocolate a la taza, de invierno; turrones, figuras y temporada, que concentran Pascua y Navidad; y cajas y regalo, que son la unidad de venta real y el canal corporativo. El número de referencias vivas se ajusta con la rotación real del punto de venta, no con una cifra fija de apertura; lo que sí conviene fijar desde el primer día es el peso de cada familia en la facturación, porque de ahí sale el mix que alimenta todo lo demás.
 
 El chocolate a la taza revaloriza el ticket: en churrería, una ración de cuatro unidades ronda los 2,50 €, y añadirle chocolate a la taza la sube a entre 3,50 € y 4 €, un salto de entre el 40 % y el 60 % (fuente: Loomis Pay, «Rentabilidad de una churrería: ingresos y costes 2025», 2026). El mismo argumento vale para servirlo en una bombonería con mostrador de churros cerca.
 
@@ -156,16 +156,16 @@ Gestionar ese riesgo no es dramatizar con la cotización del cacao en prensa: la
 
 | Id | Referencia | Margen por pieza (€) | Margen sobre PVP | Margen al año (€) | Veredicto |
 |---|---|---|---|---|---|
-| BC1 | Bombon de ganache de chocolate negro 70 % | 1,25 € | 68,9 % | 2.142 € | Mantener |
-| BC2 | Bombon de ganache de leche y vainilla | 1,23 € | 69,6 % | 1.760 € | Mantener |
-| BC3 | Bombon de praline de avellana | 1,39 € | 72,6 % | 2.371 € | Mantener |
-| BC4 | Bombon de gianduja de avellana | 1,34 € | 70,2 % | 1.528 € | Mantener |
+| BC1 | Bombón de ganache de chocolate negro 70 % | 1,25 € | 68,9 % | 2.142 € | Mantener |
+| BC2 | Bombón de ganache de leche y vainilla | 1,23 € | 69,6 % | 1.760 € | Mantener |
+| BC3 | Bombón de praline de avellana | 1,39 € | 72,6 % | 2.371 € | Mantener |
+| BC4 | Bombón de gianduja de avellana | 1,34 € | 70,2 % | 1.528 € | Mantener |
 | BC5 | Trufa de chocolate negro al cacao | 1,26 € | 72,9 % | 1.795 € | Mantener |
-| BC6 | Bombon de licor de ron | 1,43 € | 68,2 % | 1.220 € | Mantener |
-| BC7 | Bombon de caramelo salado | 1,35 € | 74,2 % | 1.540 € | Mantener |
-| BC8 | Bombon de praline de cacahuete | 1,23 € | 69,3 % | 1.051 € | Mantener |
-| BC9 | Bombon crujiente de sesamo y barquillo | 1,30 € | 69,9 % | 1.114 € | Mantener |
-| BC10 | Bombon de naranja confitada y chocolate negro | 1,24 € | 66,6 % | 1.062 € | Mantener |
+| BC6 | Bombón de licor de ron | 1,43 € | 68,2 % | 1.220 € | Mantener |
+| BC7 | Bombón de caramelo salado | 1,35 € | 74,2 % | 1.540 € | Mantener |
+| BC8 | Bombón de praline de cacahuete | 1,23 € | 69,3 % | 1.051 € | Mantener |
+| BC9 | Bombón crujiente de sesamo y barquillo | 1,30 € | 69,9 % | 1.114 € | Mantener |
+| BC10 | Bombón de naranja confitada y chocolate negro | 1,24 € | 66,6 % | 1.062 € | Mantener |
 
 *El veredicto sale de dos umbrales que fija el proyecto: margen mínimo por pieza y rotación mínima sobre el mix.*
 
@@ -199,16 +199,16 @@ La capacidad de este proyecto se mide en bombones equivalentes de obrador, que n
 
 ### La plantilla
 
-El equipo previsto equivale a 2,5 jornadas completas: un maestro chocolatero al frente del obrador, un ayudante de obrador para el templado y el moldeado de apoyo, y una persona de mostrador para la tienda y el pedido de empresa. El coste (costo) de esa plantilla es de 68.419 € al año, con las tres figuras dentro. De ahí sale la cifra que de verdad importa para lo que viene después: el coste de una hora de obrador es de 18,49 €, y es la que entra en todos los escandallos (costeos) del proyecto, desde el bombón suelto hasta la caja de treinta y cinco. El mismo artículo de plandenegocio.es (2025-12-17) sitúa a una chocolatería de tamaño equivalente con un equipo reducido y un coste salarial mensual acotado, en la misma línea de dimensionamiento que se maneja aquí.
+El equipo previsto equivale a 2,5 jornadas completas: un Encargado a jornada completa, que es el titular y lleva apertura, caja y compras; un Chocolatero a jornada completa en el obrador; y un Dependiente a media jornada en el mostrador. El coste (costo) de esa plantilla es de 68.419 € al año, con las tres figuras dentro. De ahí sale la cifra que de verdad importa para lo que viene después: el coste de una hora de obrador es de 18,49 €, y es la que entra en todos los escandallos (costeos) del proyecto, desde el bombón suelto hasta la caja de treinta y cinco. El mismo artículo de plandenegocio.es (2025-12-17) sitúa a una chocolatería de tamaño equivalente con un equipo reducido y un coste salarial mensual acotado, en la misma línea de dimensionamiento que se maneja aquí.
 
 **Las seis zonas del local (capacidad-obrador-y-clima.xlsx, hoja «Zonas y m2»)**
 
 | Zona | Bloque | m2 | % del local | Paso del recorrido |
 |---|---|---|---|---|
-| Obrador de templado y moldeado | Produccion | 26,0 | 34,7 % | 2 |
-| Camara de chocolate | Produccion | 6,0 | 8,0 % | 3 |
-| Almacen de cobertura y materias primas | Produccion | 8,0 | 10,7 % | 1 |
-| Envasado y packaging | Produccion | 5,0 | 6,7 % | 4 |
+| Obrador de templado y moldeado | Producción | 26,0 | 34,7 % | 2 |
+| Cámara de chocolate | Producción | 6,0 | 8,0 % | 3 |
+| Almacén de cobertura y materias primas | Producción | 8,0 | 10,7 % | 1 |
+| Envasado y packaging | Producción | 5,0 | 6,7 % | 4 |
 | Tienda y mostrador | Tienda | 22,0 | 29,3 % | 5 |
 | Aseos y vestuario | Servicios | 8,0 | 10,7 % | 6 |
 
@@ -225,7 +225,7 @@ El equipo previsto equivale a 2,5 jornadas completas: un maestro chocolatero al 
 | Puesto de moldeado y desmoldeo (mesa de mármol o granito) | Moldeado | Sí | 606 |
 | Placa dosificadora de rellenos — Selmi | Moldeado | Sí | 7.200 |
 | Enrobadora de banda, 200 mm — Selmi R200 Legend | Bañado | Sí | 21.333 |
-| Cámara climatizada de chocolate, unos 6 m2 | Frío y cristalización | Sí | 3.388 |
+| Cámara climatizada de chocolate, unos 6 m² | Frío y cristalización | Sí | 3.388 |
 | Puesto de envasado y montaje de cajas | Envasado | Sí | 512 |
 | Vitrina refrigerada específica para chocolate — Docriluc WB-6-6-R | Tienda y vitrina | Sí | 1.135 |
 | Atemperadora de arranque, 4,5 L (unos 3 kg) — Pavoni MINITEMPER | Templado | No | 4.914 |
@@ -270,9 +270,9 @@ La holgura sobre lo previsto es la última pieza, y se lee sin adornos: es cuán
 | Alquiler del local | 15.600 € | 15.600 € | 15.600 € | 7,8 % |
 | Suministros (luz, agua y climatización) | 9.360 € | 9.360 € | 9.360 € | 4,7 % |
 | Seguros | 1.320 € | 1.320 € | 1.320 € | 0,7 % |
-| Gestoria y asesoria | 2.400 € | 2.400 € | 2.400 € | 1,2 % |
+| Gestoría y asesoría | 2.400 € | 2.400 € | 2.400 € | 1,2 % |
 | Software, TPV y pasarela de cobro | 720 € | 720 € | 720 € | 0,4 % |
-| Telefonia e internet | 660 € | 660 € | 660 € | 0,3 % |
+| Telefonía e internet | 660 € | 660 € | 660 € | 0,3 % |
 | Limpieza y consumibles | 1.680 € | 1.680 € | 1.680 € | 0,8 % |
 | Mantenimiento de equipos | 1.560 € | 1.560 € | 1.560 € | 0,8 % |
 | Publicidad y redes | 2.160 € | 2.160 € | 2.160 € | 1,1 % |
@@ -312,7 +312,7 @@ El plan financiero modela tres escenarios sobre la misma estructura de costes (c
 
 ### El riesgo de materia prima
 
-Es el riesgo más específico del oficio y también el más fácil de cuantificar. Según la hoja «PyG 3 Años» de plan-financiero-3-anos-chocolateria.xlsx, una subida fuerte del precio del cacao le costaría al proyecto 4.204 € al año, y el margen neto que queda en el año de crucero después de absorberla es del 6,6 %. No es un margen cómodo, pero es un margen, y que lo siga siendo depende de cuatro palancas: precio, gramaje, cobertura y margen. La primera que se activa no es el precio: es el gramaje del bombón, que se ajusta sin que el cliente lo note en la vitrina antes de tocar la etiqueta. Le sigue una revisión del formato de compra de la cobertura, después el margen que el proyecto está dispuesto a ceder en la partida de materia prima, y sólo si las tres anteriores no bastan, se sube el precio de venta. La cotización internacional del cacao situaba la tonelada en 5.938 US$ a mediados de septiembre de 2026, «aproximadamente un 20 % por debajo de hace un año, aunque aún muy por encima de los niveles previos a 2024» (Agencia EFE vía Infobae, 2026-09-12), pero la cobertura que compra una bombonería no baja al mismo ritmo, o baja con retraso: esa es la variación que hay que llevar al escandallo, no la cifra de portada.
+Es el riesgo más específico del oficio y también el más fácil de cuantificar. Según la hoja «PyG 3 Años» de plan-financiero-3-anos-chocolateria.xlsx, una subida fuerte del precio del cacao le costaría al proyecto 4.204 € al año, y el margen neto que queda en el año de crucero después de absorberla es del 6,6 %. No es un margen cómodo, pero es un margen, y que lo siga siendo depende de cuatro palancas: precio, gramaje, cobertura y margen. La primera que se activa no es el precio: es el gramaje del bombón, que se ajusta antes de tocar la etiqueta —pero con un suelo que no se negocia, el 25 % de chocolate sobre el peso total del producto acabado, relleno incluido, que exige la denominación de bombón (ap. 1.13 del RD 1055/2003). Le sigue una revisión del formato de compra de la cobertura, después el margen que el proyecto está dispuesto a ceder en la partida de materia prima, y sólo si las tres anteriores no bastan, se sube el precio de venta. La cotización internacional del cacao situaba la tonelada en 5.938 US$ a mediados de septiembre de 2026, «aproximadamente un 20 % por debajo de hace un año, aunque aún muy por encima de los niveles previos a 2024» (Agencia EFE vía Infobae, 2026-09-12), pero la cobertura que compra una bombonería no baja al mismo ritmo, o baja con retraso: esa es la variación que hay que llevar al escandallo, no la cifra de portada.
 
 ### El riesgo de estacionalidad
 

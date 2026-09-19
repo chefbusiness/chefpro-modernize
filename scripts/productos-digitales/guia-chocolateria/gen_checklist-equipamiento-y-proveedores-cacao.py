@@ -1255,7 +1255,7 @@ N_CLI = len(D.CLIENTES_B2B) + CLIENTES_LIBRES
 #: equivalencia para que el sembrado siga casando con el desplegable.
 CANALES_CLI = ('B2B a hostelería', 'Regalo corporativo',
                'Minorista de distinta titularidad', 'Otro')
-CANAL_DESDE_DATOS = {'B2B hosteleria': CANALES_CLI[0],
+CANAL_DESDE_DATOS = {'B2B hostelería': CANALES_CLI[0],
                      'Regalo corporativo': CANALES_CLI[1],
                      'Minorista de distinta titularidad': CANALES_CLI[2]}
 TIPOS_CLI = ('Hostelería', 'Empresa', 'Minorista de distinta titularidad',

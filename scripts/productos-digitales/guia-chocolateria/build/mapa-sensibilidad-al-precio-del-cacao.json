@@ -174,62 +174,62 @@
   "valor": 26.658805643076924,
   "tipo": "salida"
  },
- "Coste de cobertura por pieza de Bombon de ganache de chocolate negro 70 %": {
+ "Coste de cobertura por pieza de Bombón de ganache de chocolate negro 70 %": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K16",
   "valor": 0.2019796363636363,
   "tipo": "salida"
  },
- "Food cost de materia de Bombon de ganache de chocolate negro 70 %": {
+ "Food cost de materia de Bombón de ganache de chocolate negro 70 %": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U16",
   "valor": 0.11966879999999998,
   "tipo": "salida"
  },
- "Coste de materia de Bombon de ganache de chocolate negro 70 % con una subida del 40 %": {
+ "Coste de materia de Bombón de ganache de chocolate negro 70 % con una subida del 40 %": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!J16",
   "valor": 0.30759947516401115,
   "tipo": "salida"
  },
- "Subida máxima que aguanta Bombon de ganache de chocolate negro 70 %": {
+ "Subida máxima que aguanta Bombón de ganache de chocolate negro 70 %": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!P16",
   "valor": 1.9788781587342745,
   "tipo": "salida"
  },
- "PVP con IVA que necesitaría Bombon de ganache de chocolate negro 70 % en el escenario elegido": {
+ "PVP con IVA que necesitaría Bombón de ganache de chocolate negro 70 % en el escenario elegido": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!J16",
   "valor": 1.0940287999999998,
   "tipo": "salida"
  },
- "Recorte de gramaje que evitaría subir el PVP de Bombon de ganache de chocolate negro 70 %": {
+ "Recorte de gramaje que evitaría subir el PVP de Bombón de ganache de chocolate negro 70 %": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N16",
   "valor": -0.8737905428552917,
   "tipo": "salida"
  },
- "Coste de cobertura por pieza de Bombon de praline de avellana": {
+ "Coste de cobertura por pieza de Bombón de praline de avellana": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K18",
   "valor": 0.13572,
   "tipo": "salida"
  },
- "Food cost de materia de Bombon de praline de avellana": {
+ "Food cost de materia de Bombón de praline de avellana": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U18",
   "valor": 0.11179142857142858,
   "tipo": "salida"
  },
- "Coste de materia de Bombon de praline de avellana con una subida del 40 %": {
+ "Coste de materia de Bombón de praline de avellana con una subida del 40 %": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!J18",
   "valor": 0.27317142857142857,
   "tipo": "salida"
  },
- "Subida máxima que aguanta Bombon de praline de avellana": {
+ "Subida máxima que aguanta Bombón de praline de avellana": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!P18",
   "valor": 3.252270717787958,
   "tipo": "salida"
  },
- "PVP con IVA que necesitaría Bombon de praline de avellana en el escenario elegido": {
+ "PVP con IVA que necesitaría Bombón de praline de avellana en el escenario elegido": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!J18",
   "valor": 0.9815960000000001,
   "tipo": "salida"
  },
- "Recorte de gramaje que evitaría subir el PVP de Bombon de praline de avellana": {
+ "Recorte de gramaje que evitaría subir el PVP de Bombón de praline de avellana": {
   "ref": "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!N18",
   "valor": -1.6052970018487254,
   "tipo": "salida"

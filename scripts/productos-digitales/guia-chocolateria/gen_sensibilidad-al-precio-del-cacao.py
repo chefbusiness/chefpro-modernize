@@ -300,7 +300,7 @@ def hoja_instrucciones(wb):
     fila += 1
     C.parrafo(ws, fila,
               'Todo lo que ves relleno es la bombonería «La Almendra», el caso '
-              'de ejemplo de la guía: 75 m2, obrador y tienda, 28 referencias. '
+              'de ejemplo de la guía: 75 m², obrador y tienda, 28 referencias. '
               'Los precios de las coberturas negra y de origen están '
               'verificados con su tienda y su fecha; los de leche y blanca son '
               'supuestos declarados, porque no hay precio público verificado. '

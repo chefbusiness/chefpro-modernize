@@ -85,7 +85,7 @@ La recomendación, con la condición que la cambiaría: si hoy compras cobertura
 | 6 | Concha | No | No |
 | 7 | Prensa de manteca (solo si separas manteca) | No | No |
 | 8 | Tamizadora | No | No |
-| 9 | Balanza de precision para la formulacion | No | No |
+| 9 | Balanza de precisión para la formulación | No | No |
 
 *Va sin precios a propósito: no hay precio público verificable para este equipamiento, y publicar una cifra inventada aquí sería peor que no publicar ninguna.*
 
@@ -114,7 +114,7 @@ Lo que cambia entre las tres no es solo el desembolso: cambian los kilos por car
 
 Aquí es donde casi nadie hace los deberes: cuántos bombones al día permite realmente cada opción, y si la atemperadora es de verdad lo que limita la producción o si el límite está en otra parte del obrador. La regla es cruzar la capacidad de cada equipo con la producción que pide tu plan de negocio, en bombones equivalentes de obrador, y mirar quién limita DESPUÉS de ese cruce, nunca antes.
 
-Hecho ese cruce, la atemperadora continua permite 4.368 bombones al día de obrador, y la de arranque permite 4.914: la máquina pequeña, ella sola, procesa más al día que la continua. Y aquí aparece el hallazgo que casi siempre da la vuelta a esta decisión: en una bombonería pequeña, el cuello de botella casi nunca es el templado. El conjunto de equipos del obrador, cruzado entero, sólo permite sacar 512 bombones al día, muy por debajo de lo que da cualquiera de las dos atemperadoras por separado. El equipo que de verdad limita es el puesto de envasado y montaje de cajas, y ninguna máquina de templar, por grande y por cara que sea, arregla ese cuello de botella: lo arreglan las manos y el puesto de trabajo, no el chocolate.
+Hecho ese cruce, la atemperadora continua permite 4.368 bombones al día de obrador, y la de arranque permite 4.914: las dos quedan muy por encima de lo que el obrador entero puede sacar, así que el templado no es lo que decide esta compra. Y aquí aparece el hallazgo que casi siempre da la vuelta a esta decisión: en una bombonería pequeña, el cuello de botella casi nunca es el templado. El conjunto de equipos del obrador, cruzado entero, sólo permite sacar 512 bombones al día, muy por debajo de lo que da cualquiera de las dos atemperadoras por separado. El equipo que de verdad limita es el puesto de envasado y montaje de cajas, y ninguna máquina de templar, por grande y por cara que sea, arregla ese cuello de botella: lo arreglan las manos y el puesto de trabajo, no el chocolate.
 
 ### La celda que lo resuelve
 
@@ -223,7 +223,7 @@ La recomendación, para quien abre con esta decisión todavía sin resolver, es 
 
 ### La norma que aplica cuando la hay
 
-Aquí sí hay una norma que casi nadie asocia a esta decisión de mostrador, y conviene tenerla presente antes de montar la caja surtida: el apartado 1.13 del RD 1055/2003 permite que, en los surtidos que mezclan las denominaciones de los apartados 1.6 a 1.10 y 1.13, éstas se sustituyan por «chocolates surtidos» o «chocolates rellenos surtidos», con una única lista de ingredientes para todo el conjunto, en vez de tener que declarar cada denominación por separado dentro de la misma caja (comprobado el 12 de septiembre de 2026).
+Aquí sí hay una norma que casi nadie asocia a esta decisión de mostrador, y conviene tenerla presente antes de montar la caja surtida: los apartados 6.a) y 6.c) del RD 1055/2003 permiten que, en los surtidos que mezclan las denominaciones de los apartados 1.6 a 1.10 y 1.13, éstas se sustituyan por las de surtido —chocolates surtidos o chocolates rellenos surtidos—, y que «podrá haber una única lista de ingredientes para el conjunto de productos que compongan el surtido», en vez de tener que declarar cada denominación por separado dentro de la misma caja (comprobado el 12 de septiembre de 2026).
 
 Y hay una segunda condición, esta vez de vida útil y no de etiquetado, que limita directamente qué se puede meter en una caja de regalo: la caja entera caduca cuando caduca la pieza más corta que lleva dentro. Meter un bombón de vida corta junto a piezas de vida larga no alarga la vida de la pieza corta; acorta la vida útil de toda la caja a la de su eslabón más débil, y eso hay que tenerlo en cuenta antes de decidir el surtido de apertura, no después de haberlo vendido.
 
@@ -276,7 +276,7 @@ La hoja «Repercusión al PVP» del mismo libro completa la decisión: dice qué
 
 ### La norma que aplica cuando la hay
 
-La norma no te obliga a trabajar con una cobertura ni con otra: eso es una decisión comercial tuya. Lo que sí condiciona es lo que puedes escribir en la etiqueta y en el cartel de mostrador una vez elegida. El RD 1055/2003, de 1 de agosto, fija que el chocolate, el chocolate con leche y la cobertura de chocolate necesitan un mínimo de materia seca total de cacao del 43 % (comprobado el 12 de septiembre de 2026), pero eso es el mínimo para llamarse chocolate, no el umbral para presumir de calidad. La norma no da una lista de palabras autorizadas —«fino», «superior» y «extra» no aparecen en su texto—: lo que autoriza son menciones o calificativos referentes a criterios de calidad, y sólo sobre esas tres denominaciones y por encima de unos umbrales reforzados.
+La norma no te obliga a trabajar con una cobertura ni con otra: eso es una decisión comercial tuya. Lo que sí condiciona es lo que puedes escribir en la etiqueta y en el cartel de mostrador una vez elegida. El RD 1055/2003, de 1 de agosto, fija que el chocolate, el chocolate con leche y la cobertura de chocolate sólo pueden completarse con una mención de calidad por encima de unos umbrales reforzados —43 % de materia seca total de cacao y 26 % de manteca en el negro, 30/18/4,5 en el de leche y 16 % de desgrasada en la cobertura— (comprobado el 12 de septiembre de 2026). El mínimo para llamarse chocolate es otro y más bajo: el del apartado 1.6. La norma no da una lista de palabras autorizadas —«fino», «superior» y «extra» no aparecen en su texto—: lo que autoriza son menciones o calificativos referentes a criterios de calidad, y sólo sobre esas tres denominaciones y por encima de esos umbrales reforzados.
 
 Y hay tres magnitudes que ninguna ficha de proveedor publica por defecto: la materia seca total, la manteca y la parte desgrasada de esa materia seca. Si tu discurso de mostrador se apoya en la calidad de la cobertura para justificar el precio, esas tres cifras se piden al proveedor antes de escribir nada, porque son las que sostienen la mención, no la marca de la bolsa.
 
@@ -320,11 +320,11 @@ Aquí no hay una temperatura legal que citar, y es mejor decirlo así de claro q
 
 | Zona | Temperatura objetivo | Humedad | De dónde sale |
 |---|---|---|---|
-| Obrador de templado y moldeado | 18 a 20 grados C | 50 a 60 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
-| Camara de conservacion de chocolate | 15 a 18 grados C | 50 a 60 % | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Nevera de rellenos y ganaches | 0 a 4 grados C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Sala de tienda | 20 a 22 grados C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
-| Vitrina de bomboneria | 16 a 18 grados C | menos del 55 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
+| Obrador de templado y moldeado | 18 a 20 °C | 50 a 60 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
+| Cámara de conservación de chocolate | 15 a 18 °C | 50 a 60 % | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Nevera de rellenos y ganaches | 0 a 4 °C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Sala de tienda | 20 a 22 °C | no la fija | kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura» |
+| Vitrina de bombonería | 16 a 18 °C | menos del 55 % | kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, hoja «Apertura del Negocio» |
 
 *Cinco equipos y cinco ventanas: confundir la de la sala con la de la vitrina o con la de la nevera de rellenos es el error que más producto estropea.*
 
@@ -347,7 +347,7 @@ La regla con la que se cierra esto es sencilla de enunciar y exigente de aplicar
 
 ### La celda que lo resuelve
 
-La hoja «Talleres y Regalo Corporativo» de plan-financiero-3-anos-chocolateria.xlsx convierte esa regla en fecha y en euros: da la fecha límite a partir de la cual ya no se puede aceptar un pedido corporativo sin comprometer el servicio, y calcula la caja inmovilizada por el aplazamiento de cobro, 822 € en el escenario que trae la propia hoja. La segunda pieza vive en otro libro: la tabla «Clientes a los que Suministras» de checklist-equipamiento-y-proveedores-cacao.xlsx, donde se anota, cliente a cliente, el nombre, la dirección, el producto y si está inscrito en el registro general. En el caso que trae la hoja hay 4 clientes registrados, de ellos 2 de hostelería, 1 de regalo corporativo y 1 minorista de distinta titularidad, y de esos 4, 0 están inscritos en el registro general. La propia tabla dice, sin rodeos, que ese registro —con nombre, dirección y producto— se conserva durante los años que marca la norma aplicable. Con ese reparto de clientes, checklist-legal-licencias-y-cacao.xlsx resuelve en su hoja «Suministro a Otros Minoristas» la pregunta que de verdad importa: ¿sigues cumpliendo el requisito de restringido? La respuesta, hoy, es sí.
+La hoja «Talleres y Regalo Corporativo» de plan-financiero-3-anos-chocolateria.xlsx convierte esa regla en fecha y en euros: da la fecha límite a partir de la cual ya no se puede aceptar un pedido corporativo sin comprometer el servicio, y calcula la caja inmovilizada por el aplazamiento de cobro, 822 € en el escenario que trae la propia hoja. La segunda pieza vive en otro libro: la tabla «Clientes a los que Suministras» de checklist-equipamiento-y-proveedores-cacao.xlsx, donde se anota, cliente a cliente, el nombre, la dirección, el producto y si está inscrito en el registro general. En el caso que trae la hoja hay 4 clientes registrados, de ellos 2 de hostelería, 1 de regalo corporativo y 1 minorista de distinta titularidad, y de esos 4, ninguno tiene todavía respuesta sobre si está inscrito en el registro general: las cuatro casillas están en «no lo sé», que es el estado de partida. La propia tabla dice, sin rodeos, que ese registro —con nombre, dirección y producto— se conserva durante los años que marca la norma aplicable. Con ese reparto de clientes, checklist-legal-licencias-y-cacao.xlsx resuelve en su hoja «Suministro a Otros Minoristas» la pregunta que de verdad importa: ¿sigues cumpliendo el requisito de restringido? La respuesta, hoy, no se puede cerrar: hasta que los cuatro clientes contesten, «restringido» está sin verificar.
 
 ### La norma que aplica cuando la hay
 
@@ -357,8 +357,8 @@ Aquí sí hay una norma que decide, y decide en un solo sentido: basta con que U
 
 | Nombre del cliente | Tipo | Canal | Producto suministrado | ¿Inscrito en el registro general? |
 |---|---|---|---|---|
-| Cafeteria El Mirador | Hostelería | B2B a hostelería | Bombones de coleccion a granel y tabletas | No lo sé |
-| Hotel Plaza Mayor (A&B) | Hostelería | B2B a hostelería | Bombon de cortesia de habitacion y cajas de 12 | No lo sé |
+| Cafetería El Mirador | Hostelería | B2B a hostelería | Bombones de colección a granel y tabletas | No lo sé |
+| Hotel Plaza Mayor (A&B) | Hostelería | B2B a hostelería | Bombón de cortesia de habitación y cajas de 12 | No lo sé |
 | Industrias Nogal, S.L. | Empresa | Regalo corporativo | Estuche corporativo personalizado de 24 bombones | No lo sé |
 | Tienda gourmet La Despensa | Minorista de distinta titularidad | Minorista de distinta titularidad | Tabletas de origen y almendras banadas | No lo sé |
 
@@ -399,13 +399,13 @@ Lo que decide qué producto entra en cada opción no está en esa hoja, sino en 
 
 ### La norma que aplica cuando la hay
 
-Sí que hay norma, y es la que casi nadie asocia a este canal: fijar tú la temperatura de conservación de cada bombón es la ventaja de vender con tu propia ficha técnica, y también la trampa, porque «Real Decreto 1021/2022, de 13 de diciembre, por el que se regulan determinados requisitos en materia de…» (2022-12-21) hace responsable de mantenerla también a quien transporta el pedido, no sólo a quien lo despacha, comprobado el 12 de septiembre de 2026. La temperatura que decides para tu vitrina te sigue obligando dentro de la caja isotérmica, y si el transportista la rompe en ruta, la responsabilidad no desaparece con él.
+Sí que hay norma, y es la que casi nadie asocia a este canal: fijar tú la temperatura de conservación de cada bombón es la ventaja de vender con tu propia ficha técnica, y también la trampa, porque el art. 4.3 del RD 1021/2022 (BOE-A-2022-21681), comprobado el 12 de septiembre de 2026, hace responsable de mantenerla también a quien transporta el pedido, no sólo a quien lo despacha. La temperatura que decides para tu vitrina te sigue obligando dentro de la caja isotérmica, y si el transportista la rompe en ruta, la responsabilidad no desaparece con él.
 
-El envase de ese pedido también tiene dueño legal: «Real Decreto 1055/2022, de 27 de diciembre, de envases y residuos de envases (BOE-A-2022-22690), texto…» (2022-12-28) deja claro que en la venta a distancia el titular del comercio es el envasador responsable, aunque el embalaje isotérmico se lo compre a un proveedor externo.
+El envase de ese pedido también tiene dueño legal: el art. 2.e) del RD 1055/2022 (BOE-A-2022-22690) deja claro que en la venta a distancia el titular del comercio es el envasador responsable, aunque el embalaje isotérmico se lo compre a un proveedor externo.
 
-Y está la norma de información, la que de verdad condiciona la ficha del producto online: según «Reglamento (UE) n.º 1169/2011, art. 14» (2011-11-22), todo lo obligatorio salvo la fecha —alérgenos incluidos— tiene que estar disponible ANTES de que el cliente pague, sin coste añadido, y completo otra vez en el momento de la entrega. Una ficha online que esconde los alérgenos detrás de un desplegable no cumple esto por mucho que el bombón llegue entero.
+Y está la norma de información, la que de verdad condiciona la ficha del producto online: según el art. 14 del Reglamento (UE) 1169/2011, todo lo obligatorio salvo la fecha —alérgenos incluidos— tiene que estar disponible ANTES de que el cliente pague, sin coste añadido, y completo otra vez en el momento de la entrega. Una ficha online que esconde los alérgenos detrás de un desplegable no cumple esto por mucho que el bombón llegue entero.
 
-Queda un punto que se pasa por alto porque parece que no toca a este canal: la «Guía informativa sobre el Registro General Sanitario de Empresas Alimentarias y Alimentos, revisión 16,…» (2025-06-11) aclara que vender por internet no cambia por sí solo los criterios de inscripción; lo que obliga a ir al registro nacional, en categorías 3 o 5, es tener una tienda online sin instalaciones alimentarias registradas detrás, algo que no es el caso de quien despacha desde el mismo obrador que ya tiene dado de alta.
+Queda un punto que se pasa por alto porque parece que no toca a este canal: la Guía informativa del RGSEAA, revisión 16 (11-06-2025), aclara que vender por internet no cambia por sí solo los criterios de inscripción; lo que obliga a ir al registro nacional, en categorías 3 o 5, es tener una tienda online sin instalaciones alimentarias registradas detrás, algo que no es el caso de quien despacha desde el mismo obrador que ya tiene dado de alta.
 
 El caso que resume por qué esta decisión no es teórica es el de Bombonería Pons, que «crece por venta online, más tiendas físicas, venta al por mayor e incluso exportación» («Bombonería Pons — Historia», 2026-09-12): el canal puede llegar muy lejos, pero nunca deja de exigir la misma condición de fondo, que el chocolate no viaja en verano sin embalaje isotérmico. El cuadro que sigue recoge, referencia por referencia, qué sale en un paquete y qué no, y la obligación que arrastra cada caso.
 
@@ -446,7 +446,7 @@ La regla que ordena la decisión es sencilla de enunciar y fácil de olvidar en 
 
 Y hay una palanca que sí existe y que muchos obradores no usan: cambiar el mix de la vitrina (exhibidor). Sustituir ganache fresca por tableta y por producto estable se traduce en el caso modelado en -0,56 % de margen porcentual, pero a cambio elimina casi toda la merma que en un mes de menos venta y de más calor se dispara. Es un intercambio que conviene decidir con la calculadora delante, no a ojo.
 
-Algunos obradores añaden a esa palanca una tercera fuente de ingreso que no consume cobertura de vitrina: abrir el obrador al público en formato de taller de iniciación al bombón, con un grupo reducido y un ingreso por persona. No hay un precio de mercado verificado que se pueda publicar aquí, así que la cifra la pone tu propia demanda cuando la midas en tu zona, pero la lógica sí vale para cualquier chocolatería: es un ingreso de margen alto que no toca la vitrina y que rellena precisamente el mes en el que la venta de mostrador cae.
+Algunos obradores añaden a esa palanca una tercera fuente de ingreso que no consume cobertura de vitrina: abrir el obrador al público en formato de taller de iniciación al bombón, con un grupo reducido y un ingreso por persona. El mercado español se mueve entre 25 € y 45 € por persona, con mínimo habitual de seis plazas (lo tienes desglosado en la decisión 10), y la lógica vale para cualquier chocolatería: es un ingreso de margen alto que no toca la vitrina y que rellena precisamente el mes en el que la venta de mostrador cae.
 
 ### La celda que lo resuelve
 
@@ -477,9 +477,9 @@ Lo que sí conviene planificar con la asesoría es un matiz laboral, no fiscal: 
 
 ### El contexto de la decisión
 
-El caso se repite en cualquier bombonería con vitrina —exhibidor, en Hispanoamérica— a pie de calle: se monta un calendario de talleres porque llena Instagram y da buena foto del obrador —taller o laboratorio, en ese mismo léxico; no lo confundas con el taller que le vendes al cliente, el protagonista de este capítulo—, y nadie calcula si esa hora de sala ocupada por 12 personas deja más o menos que esa misma hora vendiendo bombones sueltos.
+El caso se repite en cualquier bombonería con vitrina (exhibidor) a pie de calle: se monta un calendario de talleres porque llena Instagram y da buena foto del obrador (taller o laboratorio), que no es el taller que le vendes al cliente, el protagonista de este capítulo, y nadie calcula si esa hora de sala ocupada por 12 personas deja más o menos que esa misma hora vendiendo bombones sueltos.
 
-Lo que casi nadie calcula es cuántos asistentes hacen falta sólo para cubrir el coste —costo, en Hispanoamérica— del docente, y cuántos hacen falta contando también el material que cada uno se lleva. Son dos umbrales distintos, y el segundo siempre pesa más.
+Lo que casi nadie calcula es cuántos asistentes hacen falta sólo para cubrir el coste (costo) del docente, y cuántos hacen falta contando también el material que cada uno se lleva. Son dos umbrales distintos, y el segundo siempre pesa más.
 
 El mercado de talleres de chocolate en España se mueve, según un agregado de operadores con web propia consultado el 12 de septiembre de 2026 (Tallerdechocolate.es, Gastronomía Activa, Club del Chocolate y Helen Chocolate), entre 25 € y 45 € por persona, con mínimo habitual de 6 asistentes y duración de 90 a 150 minutos: Madrid cobra 26 € en una clase y 45 € en otra, Valencia pide 30 € con mínimo de 6 plazas, y Murcia factura 25 € con el impuesto incluido, también con mínimo de 6. El caso modelado de este pack fija el suyo en el extremo bajo del rango, 25,00 €, con un aforo de 12 plazas por sesión.
 
@@ -497,13 +497,13 @@ Lo que cambia entre las tres: el aprovechamiento de la sala en hora punta, la ca
 
 La regla vale para las tres opciones: se compara el margen por hora de sala dando el taller contra el margen por hora de sala vendiendo, sin el taller montado encima. Si el horario elegido ya vendía bien —la hora punta de la tarde, un sábado de campaña—, el taller puede salir caro aunque se llene, porque cada plaza ocupada es una venta de mostrador que no se ha hecho.
 
-Y hay un criterio estacional que en este oficio pesa más que en ningún otro: el taller es la única línea que funciona en agosto, cuando el obrador reduce producción y la cobertura sufre con el calor, y la única que no depende del precio del cacao, porque el ingreso viene de la plaza y de la hora del docente, no del escandallo —costeo, en Hispanoamérica—. Es la herramienta que rellena el valle de verano sin tocar la parte del negocio más expuesta a la volatilidad del grano.
+Y hay un criterio estacional que en este oficio pesa más que en ningún otro: el taller es la única línea que funciona en agosto, cuando el obrador reduce producción y la cobertura sufre con el calor, y la única que no depende del precio del cacao, porque el ingreso viene de la plaza y de la hora del docente, no del escandallo (costeo). Es la herramienta que rellena el valle de verano sin tocar la parte del negocio más expuesta a la volatilidad del grano.
 
 ### La celda que lo resuelve
 
 Todo esto está calculado, con el precio y el aforo de más arriba, en la hoja «Talleres y Regalo Corporativo» de plan-financiero-3-anos-chocolateria.xlsx, que da un veredicto y no un número suelto. Para cubrir sólo el coste del docente hacen falta 2,3 asistentes por sesión; contando también el material, la cifra sube a 2,7. Con un aforo de 12, ese umbral es fácil de cubrir: el riesgo real no es no cubrir costes, es no llenar el resto de las plazas con margen.
 
-Ahí está el dato que decide entre las tres opciones: el margen por hora de sala dando taller es de 67,51 €, frente a los 28,42 € por hora de sala vendiendo. El propio libro lo resume con un veredicto que conviene repetir tal cual: la hora de taller deja más que la hora vendiendo, el calendario de talleres se defiende solo. El caso modelado sitúa el ingreso anual de la línea en 9.600 €, cifra que conviene leer al lado de la tabla de abajo, con el recorrido completo desde el precio por persona hasta el margen por hora.
+Ahí está el dato que decide entre las tres opciones: el margen por hora de sala dando taller es de 67,51 €, frente a los 28,42 € por hora de sala vendiendo. El propio libro lo resume con un veredicto que conviene repetir tal cual: la hora de taller deja más que la hora vendiendo, el calendario de talleres se defiende solo. El caso modelado sitúa el ingreso anual de los talleres en 9.600 €, con cuatro sesiones al mes y ocho asistentes de media, frente a los 11.945 € que la hoja de canales asigna al canal «talleres y catas»: la diferencia son las catas y el margen de llenado que la hoja deja disponible. La tabla de abajo recoge el recorrido completo desde el precio por persona hasta el margen por hora.
 
 La misma hoja lleva una comprobación interna que conviene rellenar con tus propios datos: cuántos talleres al mes hacen falta para que la línea pese en tu cuenta de resultados lo que el plan dice que debería pesar. Si el número de sesiones no encaja con el calendario real de tu obrador y de tu personal, la decisión correcta es bajar la ambición de la línea a la opción de marketing puntual.
 
@@ -563,7 +563,7 @@ Y el criterio de crecimiento aleja del error de tomar esto como una meta: la ví
 
 La hoja «Ruta Doméstica» de checklist-legal-licencias-y-cacao.xlsx sigue exactamente este orden: primero pregunta por la comunidad autónoma, y sólo si la respuesta abre la puerta activa uno detrás de otro los tres requisitos de producción. En el caso modelado que trae el pack, la respuesta a si la comunidad ha ampliado la lista por la letra abierta es que no, y la lectura que da la hoja es directa: con la lista estatal en la mano, el bombón no entra, así que la ruta doméstica no está abierta para ese caso.
 
-Aun así, la hoja calcula igual qué densidad de producción supondría el tope legal, para quien sí tenga la puerta abierta en su comunidad: el tope absoluto de 100 kilos a la semana, repartido sobre la superficie del caso modelado, sale en 2,92 kilos por metro cuadrado. Y como la ruta no está abierta en ese caso concreto, el requisito de proporcionalidad se marca directamente como no procede. El veredicto que escribe la hoja es el mismo que hay que poder repetir delante de un inspector sin dudar: con la lista estatal en la mano, la ruta doméstica no está abierta para el bombón en esa comunidad.
+Aun así, la hoja calcula igual qué densidad de producción supondría el caso modelado, para quien sí tenga la puerta abierta en su comunidad: los 35 kilos a la semana que prevé elaborar el caso modelado, repartidos sobre sus 12 metros cuadrados de zona de elaboración, salen a 2,92 kilos por metro cuadrado, muy por debajo del tope absoluto de 100 kilos semanales. Y como la ruta no está abierta en ese caso concreto, el requisito de proporcionalidad se marca directamente como no procede. El veredicto que escribe la hoja es el mismo que hay que poder repetir delante de un inspector sin dudar: con la lista estatal en la mano, la ruta doméstica no está abierta para el bombón en esa comunidad.
 
 La recomendación, con la condición que la cambiaría, es esta: mientras tu comunidad autónoma no haya ejercido la letra abierta a favor del bombón, la vía doméstica no es una opción real, y toca ir directo a la opción B o a la opción C. Eso cambia el día que tu comunidad publique su propia lista con una letra que cubra de verdad tu producto.
 

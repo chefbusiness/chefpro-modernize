@@ -1,7 +1,7 @@
 {
   "_meta": {
     "pid": "guia-chocolateria-obrador",
-    "generado": "2026-09-19 12:31",
+    "generado": "2026-09-19 14:23",
     "salida": "scripts/productos-digitales/guia-chocolateria/build/docs",
     "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-chocolateria-obrador",
     "modelo": "anthropic/claude-sonnet-4.6",
@@ -13,11 +13,11 @@
   "documentos": {
     "guia-chocolateria-obrador": {
       "gates": {
-        "paginas_pdf": 105,
+        "paginas_pdf": 110,
         "paginas_prometidas": 90,
-        "palabras_md": 58860,
-        "palabras_pdf": 58408,
-        "palabras_docx": 55843,
+        "palabras_md": 59409,
+        "palabras_pdf": 59049,
+        "palabras_docx": 56370,
         "palabras_objetivo": 37000,
         "capitulos": 21,
         "tablas_md": 51,
@@ -41,12 +41,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 54755,
+        "palabras_reales_pdf": 55324,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 56203,
+        "palabras_pdf_cuerpo": 56739,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "Cómo Montar una Chocolatería Boutique & Atelier"
@@ -55,9 +55,9 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Cómo Montar una Chocolatería Boutique & Atelier",
-          "created": "2026-09-19 12:31:10"
+          "created": "2026-09-19 14:23:25"
         },
-        "paridad_palabras_pct": 0.64,
+        "paridad_palabras_pct": 0.65,
         "ok": {
           "paginas": true,
           "palabras_pdf": true,
@@ -84,7 +84,7 @@
           "sin_asteriscos_impresos": true
         },
         "verde": true,
-        "saneados_winansi": 521,
+        "saneados_winansi": 520,
         "ficheros": {
           "md": "scripts/productos-digitales/guia-chocolateria/build/docs/guia-chocolateria-obrador.md",
           "docx": "scripts/productos-digitales/guia-chocolateria/build/docs/guia-chocolateria-obrador.docx",
@@ -1214,12 +1214,12 @@
             [
               "Jornadas completas equivalentes de la plantilla",
               "2,5",
-              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B41"
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B40"
             ],
             [
               "Coste de una hora de obrador",
               "18,49 €",
-              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B45"
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B44"
             ],
             [
               "Peso del coste de personal sobre las ventas",
@@ -1229,7 +1229,7 @@
             [
               "Referencia anual del salario mínimo",
               "17.094 €",
-              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B22"
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B21"
             ],
             [
               "Bruto mensual del grupo de convenio más bajo",
@@ -1536,7 +1536,7 @@
             [
               "Referencia anual del salario mínimo",
               "17.094 €",
-              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B22"
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B21"
             ]
           ]
         }
@@ -1546,9 +1546,9 @@
       "gates": {
         "paginas_pdf": 19,
         "paginas_prometidas": 9,
-        "palabras_md": 7685,
-        "palabras_pdf": 7475,
-        "palabras_docx": 7076,
+        "palabras_md": 7716,
+        "palabras_pdf": 7506,
+        "palabras_docx": 7107,
         "palabras_objetivo": 3500,
         "capitulos": 6,
         "tablas_md": 11,
@@ -1572,12 +1572,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 6675,
+        "palabras_reales_pdf": 6702,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 7095,
+        "palabras_pdf_cuerpo": 7126,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "Business Plan Modelo de una Chocolatería"
@@ -1586,7 +1586,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Business Plan Modelo de una Chocolatería",
-          "created": "2026-09-19 12:31:17"
+          "created": "2026-09-19 14:23:32"
         },
         "paridad_palabras_pct": 0.27,
         "ok": {
@@ -1849,7 +1849,7 @@
             [
               "Jornadas completas equivalentes de la plantilla",
               "2,5",
-              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B41"
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B40"
             ],
             [
               "Coste de personal al año",
@@ -1859,7 +1859,7 @@
             [
               "Coste de una hora de obrador",
               "18,49 €",
-              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B45"
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B44"
             ]
           ]
         },
@@ -1989,11 +1989,11 @@
     },
     "BONUS-12-decisiones-de-apertura": {
       "gates": {
-        "paginas_pdf": 33,
+        "paginas_pdf": 34,
         "paginas_prometidas": 30,
-        "palabras_md": 16701,
-        "palabras_pdf": 16900,
-        "palabras_docx": 16198,
+        "palabras_md": 16792,
+        "palabras_pdf": 17010,
+        "palabras_docx": 16289,
         "palabras_objetivo": 10500,
         "capitulos": 12,
         "tablas_md": 12,
@@ -2017,12 +2017,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 16169,
+        "palabras_reales_pdf": 16263,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 16273,
+        "palabras_pdf_cuerpo": 16364,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "12 Decisiones de Apertura Resueltas"
@@ -2031,7 +2031,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "12 Decisiones de Apertura Resueltas",
-          "created": "2026-09-19 12:31:21"
+          "created": "2026-09-19 14:23:36"
         },
         "paridad_palabras_pct": 0.46,
         "ok": {

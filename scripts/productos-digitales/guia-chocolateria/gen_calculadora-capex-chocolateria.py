@@ -104,7 +104,7 @@ IDS_LEGALES = {
     'CHN-75': ('Verifactu no es 2026, es 2027', 2),
     'CHN-39': ('La comunicación al registro autonómico no habilita para abrir',
                2),
-    'CHN-49': ('Ninguna licencia previa de actividad hasta 750 m2', 2),
+    'CHN-49': ('Ninguna licencia previa de actividad hasta 750 m²', 2),
     'CHN-49c': ('La chocolatería de taza NO entra en la Ley 12/2012', 2),
     'CHN-48': ('Gas: inspección cada cinco años', 2),
     'CHN-47b': ('La nota (2) del CAPCA incluye los NÚCLEOS DE POBLACIÓN', 2),
@@ -121,18 +121,18 @@ POR_ESCRITO = ('Sí', 'No', 'Por pedir')
 #: Coste de obra por m2 de La Almendra: los 28.500 € de `datos_ejemplo.CAPEX`
 #: repartidos entre los 75 m2. Es SUPUESTO declarado, igual que el importe.
 OBRA_EUR_M2 = round([importe for b, _p, importe, _bi, _t, _f, _n in D.CAPEX
-                     if b == 'Obra y adecuacion'][0] / D.NEGOCIO['m2_total'], 2)
+                     if b == 'Obra y adecuación'][0] / D.NEGOCIO['m2_total'], 2)
 
 #: Nombres de bloque tal y como salen de `datos_ejemplo` (sin tildes, porque
 #: así están escritos allí) y su rótulo de pantalla.
 ROTULO_BLOQUE = {
-    'Obra y adecuacion': 'Obra y adecuación',
-    'Climatizacion y deshumidificacion': 'Climatización y deshumidificación',
+    'Obra y adecuación': 'Obra y adecuación',
+    'Climatización y deshumidificación': 'Climatización y deshumidificación',
     'Equipo de templado y moldeado': 'Equipo de templado y moldeado',
-    'Frio': 'Frío (cámara, nevera de rellenos y vitrina)',
+    'Frío': 'Frío (cámara, nevera de rellenos y vitrina)',
     'Mobiliario y tienda': 'Mobiliario y tienda',
     'Packaging y moldes': 'Packaging y moldes',
-    'TPV, informatica y rotulo': 'TPV, informática y rótulo',
+    'TPV, informática y rótulo': 'TPV, informática y rótulo',
     'Fianza y licencias': 'Fianza y licencias',
     'Fondo de maniobra': 'Fondo de maniobra',
 }
@@ -145,17 +145,17 @@ P_INI = 6
 PARAMS_LIBRO = [
     ('Superficie total del local', D.NEGOCIO['m2_total'], 'm2',
      D.NEGOCIO['fuente_m2'],
-     'Los mismos 75 m2 del libro 1. Si los cambias, cambia la obra: es la '
+     'Los mismos 75 m² del libro 1. Si los cambias, cambia la obra: es la '
      'única partida del CAPEX que no se teclea.'),
-    ('Coste de obra y adecuación por m2', OBRA_EUR_M2, '€/m2', 'supuesto',
+    ('Coste de obra y adecuación por m²', OBRA_EUR_M2, '€/m²', 'supuesto',
      'SUPUESTO DECLARADO: ninguna fuente del research publica un coste de obra '
-     'por m2 de obrador de chocolate. Es más barata que la de una pastelería '
+     'por m² de obrador de chocolate. Es más barata que la de una pastelería '
      'por un motivo estructural, no por suerte: un obrador de chocolate NO '
      'genera humos, así que no hay conducto a cubierta ni la conversación con '
      'la comunidad de propietarios que lo acompaña. Pide tres presupuestos y '
      'sustitúyelo.'),
     ('Obra y adecuación calculada', None, '€', 'Se calcula',
-     'Superficie x precio por m2.'),
+     'Superficie x precio por m².'),
     ('IVA general', D.P('iva_general'), '%',
      D.PARAMS['iva_general'][1],
      'Tipo general: obra, equipamiento, mobiliario, proyecto y clima. Es el '
@@ -239,10 +239,10 @@ def lineas_capex():
     """
     filas = []
     obra = [(b, p, imp, f, n) for b, p, imp, _bi, _t, f, n in D.CAPEX
-            if b == 'Obra y adecuacion'][0]
+            if b == 'Obra y adecuación'][0]
     filas.append((obra[0], obra[1], 'Sí', obra[3], 'sin IVA', 'No', 'IVA_GEN',
                   'FORMULA_OBRA', 'FORMULA_OBRA', 'FORMULA_OBRA',
-                  'La calcula «Parámetros» con tus metros y tu precio por m2',
+                  'La calcula «Parámetros» con tus metros y tu precio por m²',
                   obra[4], None))
 
     for eq in D.EQUIPAMIENTO:
@@ -289,7 +289,7 @@ def lineas_capex():
                       horq, notatxt.strip(), idl))
 
     for bloque, partida, importe, base, tipo, fuente, notatxt in D.CAPEX:
-        if bloque == 'Obra y adecuacion':
+        if bloque == 'Obra y adecuación':
             continue
         if importe is None and bloque != 'Fondo de maniobra':
             continue                       # se calcula desde EQUIPAMIENTO
@@ -302,7 +302,7 @@ def lineas_capex():
             continue
         clave = 'IVA_CERO' if tipo == 0.0 else 'IVA_GEN'
         idl = None
-        if 'registro autonomico' in partida or 'registro autonómico' in partida:
+        if 'registro autonómico' in partida or 'registro autonómico' in partida:
             idl = 'CHN-39'
         elif 'Tasas municipales' in partida:
             idl = 'CHN-49'
@@ -370,7 +370,7 @@ def nota_legal_celda(ws, coord, idd):
 
 # --------------------------------------------------------------------------
 PASOS = [
-    '1. Hoja «Parámetros»: los metros del local, el precio por m2 de la obra, '
+    '1. Hoja «Parámetros»: los metros del local, el precio por m² de la obra, '
     'los tipos de IVA, la renta, el horizonte de comparación y los kilos de '
     'plástico que importas. Todo lo que calcula el libro sale de aquí.',
     '2. Hoja «CAPEX por Bloque»: una fila por partida. Escribe el mínimo y el '
@@ -497,7 +497,7 @@ def hoja_instrucciones(wb):
          'aguanta el equipo',
          'Libro 1: capacidad-obrador-y-clima.xlsx',
          'Comprar bien empieza por saber qué necesitas, no cuánto cuesta. Los '
-         'dos libros comparten los mismos 75 m2 y la misma columna de IVA.'),
+         'dos libros comparten los mismos 75 m² y la misma columna de IVA.'),
         ('Qué papeles te tocan, en qué orden y cuándo abres',
          'Libro 8: checklist-legal-licencias-y-cacao.xlsx',
          'Las tasas, el proyecto técnico y la comunicación al registro '
@@ -568,7 +568,7 @@ def hoja_parametros(wb):
             motor.val(ws, 'B%d' % fila, valor, fmt=C.FMT_PCT, verde_=True)
         elif isinstance(valor, str):
             motor.val(ws, 'B%d' % fila, valor, verde_=True)
-        elif unidad in ('€', '€/mes', '€/m2', '€/kg'):
+        elif unidad in ('€', '€/mes', '€/m²', '€/kg'):
             motor.val(ws, 'B%d' % fila, float(valor), fmt=C.FMT_EUR,
                       verde_=True)
         elif unidad in ('m2', 'kg al mes'):
@@ -601,7 +601,7 @@ def hoja_parametros(wb):
     fila += 2
     C.parrafo(ws, fila,
               'Los valores marcados «supuesto» son los de la bombonería de '
-              'ejemplo «La Almendra» (75 m2 en una ciudad media española, '
+              'ejemplo «La Almendra» (75 m² en una ciudad media española, '
               'obrador propio y tienda a calle). NO son datos de sector: son un '
               'punto de partida coherente para que puedas ver el libro '
               'funcionando antes de meter los tuyos.',
@@ -815,14 +815,19 @@ def hoja_capex(wb):
               'Tu equipo de templado y moldeado, en base imponible')
     motor.f(ws, 'I%d' % f_dot, '=L%d' % (B_INI + i_tm), fmt=C.FMT_EUR)
     f_pos = f_dot + 1
+    # B24 (19-09-2026): esta fila emitía un veredicto de posición comparando
+    # los euros del caso -que van en BASE IMPONIBLE- contra un rango que la
+    # fila de arriba etiqueta «BASE MIXTA de IVA, no es presupuesto de
+    # apertura». Es el defecto A8 que la SPEC ya pagó una vez, y §5.2 lo
+    # prohíbe literalmente: D23c sólo autoriza la lectura CUALITATIVA del
+    # factor 4, nunca el contraste aritmético. Ahora la celda dice por qué no
+    # se puede comparar, en vez de comparar.
     motor.val(ws, 'C%d' % f_pos,
-              '¿Dónde cae respecto al escenario profesional de entrada?',
+              '¿Se puede comparar con el escenario profesional de entrada?',
               bold=True)
-    motor.f(ws, 'I%d' % f_pos,
-            '=IF(I%d="","",IF(I%d<I%d,"Por debajo del rango publicado",'
-            'IF(I%d>J%d,"Por encima del rango publicado",'
-            '"Dentro del rango publicado")))'
-            % (f_dot, f_dot, R_ESC + 1, f_dot, R_ESC + 1), bold=True)
+    motor.val(ws, 'I%d' % f_pos,
+              'No comparable: tu cifra va en base imponible y el rango '
+              'publicado es base MIXTA', bold=True, wrap=True)
     C.destacado(ws, 'I%d' % f_pos)
     motor.val(ws, 'P%d' % f_pos,
               'ES UNA POSICIÓN, NO UNA DESVIACIÓN, y por eso no hay ningún '
@@ -893,7 +898,7 @@ def hoja_variante(wb):
     motor.f(ws, 'E%d' % fila, "='%s'!L%d" % (H_CAP, R_INV), fmt=C.FMT_EUR)
     motor.val(ws, 'H%d' % fila,
               'Es el eje del producto y el caso que calcula la hoja «CAPEX por '
-              'Bloque» entera: 60-100 m2 y 1-2 empleados. Las otras dos son '
+              'Bloque» entera: 60-100 m² y 1-2 empleados. Las otras dos son '
               'columnas de escenario, no productos aparte.', wrap=True)
     ws.row_dimensions[fila].height = 56
     fila += 1
@@ -1068,7 +1073,7 @@ def hoja_variante(wb):
               'nunca dato auditado')
     C.cabecera(ws, fq + 1, [('B', 'Marca'), ('C', 'Formato'),
                             ('D', 'Inversión desde'), ('E', 'Canon'),
-                            ('F', 'm2 mínimos'), ('G', 'Fuente y fecha'),
+                            ('F', 'm² mínimos'), ('G', 'Fuente y fecha'),
                             ('H', 'Etiqueta y nota')], altura=40)
     fila = fq + 2
     FQ_INI = fila
@@ -1139,7 +1144,7 @@ def hoja_variante(wb):
               '644.5 «Comercio al por menor de bombones y caramelos» y NO '
               'contiene ningún grupo de la agrupación 67, donde está la '
               'chocolatería de taza: la bombonería se libra de la licencia '
-              'previa hasta 750 m2 y la de taza no. Lo que sí aporta la taza es '
+              'previa hasta 750 m² y la de taza no. Lo que sí aporta la taza es '
               'ticket: el chocolate convierte una ración de churros de 2,50 € '
               'en 3,50-4 €. Lo que cuesta es freidora, extracción de humos y la '
               'licencia que la bombonería se ahorra.',
@@ -1173,7 +1178,7 @@ def hoja_traspaso(wb):
     entradas = [
         (T_PT, 'Precio de traspaso que te piden', 26000.0, C.FMT_EUR,
          'CHS-38a',
-         'Sembrado con el caso más informativo del censo: 26.000 € por 90 m2 '
+         'Sembrado con el caso más informativo del censo: 26.000 € por 90 m² '
          'de pastelería-bombonería CON OBRADOR EQUIPADO y 40 años de clientela, '
          'en El Prat de Llobregat. Es un precio PEDIDO en un anuncio, no un '
          'precio pagado.'),
@@ -1182,7 +1187,7 @@ def hoja_traspaso(wb):
          'Un traspaso casi nunca se abre tal cual. En chocolate hay una '
          'partida que casi seguro falta: la CLIMATIZACIÓN con '
          'deshumidificación del obrador. Una pastelería traspasada tiene '
-         'hornos, no clima de 18-20 grados C. Míralo con la ficha de visita '
+         'hornos, no clima de 18-20 °C. Míralo con la ficha de visita '
          'del libro 1 en la mano.'),
         (T_TREN, 'Renta mensual del local traspasado', 1100.0, C.FMT_EUR,
          'CHS-38a',
@@ -1272,7 +1277,7 @@ def hoja_traspaso(wb):
               'PEDIDOS, no pagados')
     C.cabecera(ws, T_TAB_CAB, [
         ('A', 'Ciudad o zona'), ('B', 'Tipo de negocio'), ('C', 'm2'),
-        ('D', 'Precio pedido'), ('E', 'Renta mensual'), ('F', '€ por m2'),
+        ('D', 'Precio pedido'), ('E', 'Renta mensual'), ('F', '€ por m²'),
         ('G', 'Coste en el horizonte'), ('H', 'Fuente'),
         ('I', '¿Mismo formato?')], altura=30)
     fila = T_TAB_INI
@@ -1331,7 +1336,7 @@ def hoja_traspaso(wb):
               'años y el resumen de la Seguridad Social de la plantilla; si no '
               'te los enseñan, ya sabes lo que estás comprando. Y en chocolate, '
               'una pregunta más: qué clima tiene el obrador hoy. Un obrador de '
-              'pastelería traspasado no viene climatizado a 18-20 grados C, y '
+              'pastelería traspasado no viene climatizado a 18-20 °C, y '
               'esa partida no está en el precio del anuncio.',
               col_ini='A', col_fin='J', alto=68)
     C.pagina(ws, apaisado=True, titulos='%d:%d' % (T_TAB_CAB, T_TAB_CAB))
@@ -1547,12 +1552,12 @@ def hoja_resumen(wb):
                                ('C', 'De dónde sale'), ('D', 'Qué dice')])
     i_fondo = D.BLOQUES_CAPEX.index('Fondo de maniobra')
     i_tm = D.BLOQUES_CAPEX.index('Equipo de templado y moldeado')
-    i_frio = D.BLOQUES_CAPEX.index('Frio')
-    i_clima = D.BLOQUES_CAPEX.index('Climatizacion y deshumidificacion')
+    i_frio = D.BLOQUES_CAPEX.index('Frío')
+    i_clima = D.BLOQUES_CAPEX.index('Climatización y deshumidificación')
     i_pack = D.BLOQUES_CAPEX.index('Packaging y moldes')
     filas = [
         ('Obra y adecuación', "='%s'!B%d" % (H_PAR, fp(P_OBRA)), C.FMT_EUR,
-         H_PAR, 'Metros por el precio por m2. Es la única partida del CAPEX '
+         H_PAR, 'Metros por el precio por m². Es la única partida del CAPEX '
          'que no se teclea, y la que más se desvía en la ejecución: lo que no '
          'está en el proyecto se paga aparte.'),
         ('CAPEX SIN el fondo de maniobra',
@@ -1678,7 +1683,7 @@ def mapa_celdas(var, tra):
                   'tipo': tipo}
 
     add('Superficie del local', H_PAR, 'B%d' % fp(P_M2), 'entrada')
-    add('Coste de obra y adecuación por m2', H_PAR, 'B%d' % fp(P_EURM2),
+    add('Coste de obra y adecuación por m²', H_PAR, 'B%d' % fp(P_EURM2),
         'entrada')
     add('Obra y adecuación calculada', H_PAR, 'B%d' % fp(P_OBRA), 'salida')
     add('IVA general', H_PAR, 'B%d' % fp(P_IVA_GEN), 'parametro')
@@ -1897,7 +1902,7 @@ def demo(ruta, var):
     """Comportamientos del libro, probados con pycel.
 
     Igual que en el libro 1: hay que EVALUAR LA SALIDA ANTES de tocar la
-    entrada, porque `set_value()` sólo invalida los nodos que ya están en el
+    entrada, porque `set_value()` sólo inválida los nodos que ya están en el
     grafo y los que no lo están se construyen leyendo el valor cacheado.
     """
     import logging
@@ -1954,7 +1959,7 @@ def demo(ruta, var):
     obra0, tot0 = c.evaluate(A_OBRA), c.evaluate(A_TOT)
     c.set_value("'%s'!B%d" % (H_PAR, fp(P_EURM2)), OBRA_EUR_M2 * 2)
     obra1, tot1 = c.evaluate(A_OBRA), c.evaluate(A_TOT)
-    prueba('Cambiar el precio por m2 recalcula la obra y el CAPEX total',
+    prueba('Cambiar el precio por m² recalcula la obra y el CAPEX total',
            abs(obra1 - obra0 * 2) < 0.01 and abs((tot1 - tot0) - obra0) < 0.01,
            'obra %.0f -> %.0f · CAPEX %.0f -> %.0f'
            % (obra0, obra1, tot0, tot1))

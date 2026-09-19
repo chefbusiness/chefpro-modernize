@@ -133,7 +133,7 @@ RESP_644 = {'si': SI, 'no': NO, 'no lo se': NOSE}
 #: al asesor, sustituyendo exactamente el mismo fragmento: si la cita cambia en
 #: una celda y no en la de al lado, el lector ve dos versiones de la misma norma.
 CITA_644 = X.cita_legal('CHN-72') or D.NOTA_644_5
-_FRAGMENTO_SIN_TILDES = ('siempre que su comercializacion se realice en las '
+_FRAGMENTO_SIN_TILDES = ('siempre que su comercialización se realice en las '
                          'propias dependencias de venta')
 _FRAGMENTO_LITERAL = ('siempre que su comercialización se realice en las '
                       'propias dependencias de venta')
@@ -1364,10 +1364,17 @@ FAMILIAS_CADMIO = (
      'y su proporción en el producto.'),
     ('Turrones, figuras y confitería con cacao', NO,
      'Mismo caso que el bombón: alimento compuesto.'),
-    ('Chocolate a la taza en polvo', NOSE,
-     'Depende de si encaja en «cacao en polvo» o es una preparación con otros '
-     'ingredientes. Míralo referencia a referencia con la denominación legal '
-     'que le hayas dado en el libro 4.'),
+    # B13: no es un «no lo sé». La nota (14) del Anexo I remite SOLO a los
+    # puntos 2, 3 y 4 de la parte A del Anexo I de la Directiva 2000/36/CE
+    # (`CHN-16b`), y los puntos 8 y 9 -el chocolate a la taza- quedan fuera
+    # (`CHN-84`). La prosa del cap. 11 ya lo decía; la tabla contestaba otra
+    # cosa.
+    ('Chocolate a la taza en polvo', NO,
+     'Los puntos 8 y 9 de la Directiva -el chocolate a la taza- quedan FUERA '
+     'de la nota (14): alimento compuesto, art. 3 del Rgto. 2023/915. Distinto '
+     'es el cacao en polvo vendido como tal, que sí tiene límite propio: '
+     'míralo referencia a referencia con la denominación legal que le hayas '
+     'dado en el libro 4.'),
 )
 
 CA = {'sec_que': 5, 'cab_que': 6, 'que_ini': 7, 'que_fin': 11,
@@ -1789,8 +1796,9 @@ def hoja_formacion(wb):
         if i < len(D.PLANTILLA):
             pid, perfil, fte, _orden, zona, horas, turno = D.PLANTILLA[i]
             persona = 'Persona %d (%s)' % (i + 1, perfil)
-            contenido = ('Higiene, alérgenos y trazabilidad aplicados a '
-                         + ('el obrador' if zona == 'OBRADOR' else 'la tienda'))
+            contenido = ('Higiene, alérgenos y trazabilidad aplicados '
+                         + ('al obrador' if zona == 'OBRADOR'
+                            else 'a la tienda'))
         else:
             perfil, turno = D.PERFILES_KIT[0], ''
             persona, contenido = LIBRE_P, 'Pendiente'

@@ -156,8 +156,8 @@ FECHA_ELABORACION = datetime.date(2026, 9, 14)
 TIPOS_FECHA = ('consumo preferente', 'caducidad')
 ORIGEN_AW = ('medida con higrómetro', 'estimada por ti')
 
-_UNIDAD_DIAS = {'dias': 1, 'semanas': 7, 'meses': 30}
-_RX_PLAZO = re.compile(r'^(\d+)-(\d+)\s+(dias|semanas|meses)$')
+_UNIDAD_DIAS = {'dias': 1, 'días': 1, 'semanas': 7, 'meses': 30}
+_RX_PLAZO = re.compile(r'^(\d+)-(\d+)\s+(días|dias|semanas|meses)$')
 
 
 # --------------------------------------------------------------------------
@@ -474,7 +474,7 @@ def hoja_parametros(wb):
             'Es el punto en el que la manteca de cacao empieza a fundir, y el '
             'que publica el kit en su hoja de apertura. El semáforo de la '
             'vitrina SÓLO se enciende por encima de este número: los 16-18 '
-            'grados C de objetivo del propio kit no se ponen nunca en rojo.')
+            '°C de objetivo del propio kit no se ponen nunca en rojo.')
     par(ws, 13, 'Humedad máxima de trabajo de la vitrina', D.CLIMA['vitrina']['hr_max'],
         C.FMT_DEC1, '% de HR', 'kit 08-apertura-cierre-negocio.xlsx',
         'Objetivo del kit para la vitrina temperada: menos del 55 % antes de '
@@ -548,15 +548,20 @@ def hoja_aw(wb):
                   etiqueta='Actividad de agua de ' + r['id'])
         X.entrada(ws, 'F%d' % fila, ORIGEN_AW[1],
                   etiqueta='Origen de la aw de ' + r['id'])
-        motor.val(ws, 'G%d' % fila, r['familia_vida_util'], wrap=True)
-        motor.val(ws, 'H%d' % fila, PLAZOS[r['familia_vida_util']][0])
+        # B21: la familia que se publica es la de la pieza que MENOS aguanta
+        # dentro (misma regla que la hoja «Vida Útil Declarada», A2 del
+        # 12-09). Con `r['familia_vida_util']` a secas, las cuatro cajas
+        # surtidas salían aquí con una familia y allí con otra.
+        fam_aw = familia_mas_restrictiva(r)
+        motor.val(ws, 'G%d' % fila, fam_aw, wrap=True)
+        motor.val(ws, 'H%d' % fila, PLAZOS[fam_aw][0])
         motor.f(ws, 'I%d' % fila,
                 '=IF(ISNUMBER($E%d),IF($E%d>=%s,"Agua disponible ALTA: trátala '
                 'como producto de vida corta y en frío, y justifícalo en tu '
                 'APPCC","Agua disponible baja: la vida la manda el rancio de '
                 'la grasa y la humedad del ambiente, no el microbio"),"")'
                 % (fila, fila, A(P_AW)))
-        motor.val(ws, 'J%d' % fila, PLAZOS[r['familia_vida_util']][1],
+        motor.val(ws, 'J%d' % fila, PLAZOS[fam_aw][1],
                   wrap=True)
         ws.row_dimensions[fila].height = 30
 
@@ -612,7 +617,7 @@ def hoja_vida_util(wb):
               'Los diez plazos de abajo son los del Kit de Tareas '
               'Chocolatería, fichero 02-partidas-produccion.xlsx, hoja '
               'Moldeado, tabla «vida útil y conservación orientativas a 15-18 '
-              'grados C y 50-60 % de humedad». Son ORIENTATIVOS y de la casa, '
+              '°C y 50-60 % de humedad». Son ORIENTATIVOS y de la casa, '
               'no de una norma: ninguna norma publica la vida útil del '
               'chocolate. La equivalencia en días de la columna E y F es '
               'aritmética nuestra -el kit escribe «4-8 semanas»- y está para '
@@ -855,7 +860,7 @@ def hoja_temperatura(wb):
     C.encabezar(ws, H_TMP,
                 'Las cinco temperaturas del kit, el rango de trabajo de TU '
                 'vitrina y la que declaras para cada referencia. El semáforo '
-                'sólo se enciende por encima de 20' + N + 'grados C.',
+                'sólo se enciende por encima de 20' + N + '°C.',
                 col_fin='J')
     C.pagina(ws, apaisado=True)
 
@@ -868,7 +873,7 @@ def hoja_temperatura(wb):
         z = D.CLIMA[clave]
         motor.val(ws, 'A%d' % fila, z['concepto'], wrap=True)
         ws.merge_cells('A%d:B%d' % (fila, fila))
-        motor.val(ws, 'C%d' % fila, '%g a %g%sgrados C'
+        motor.val(ws, 'C%d' % fila, '%g a %g%s°C'
                   % (z['t_min'], z['t_max'], N))
         if z['hr_max'] is None:
             motor.val(ws, 'D%d' % fila, 'no la fija')
@@ -886,7 +891,7 @@ def hoja_temperatura(wb):
     motor.val(ws, 'A%d' % (CLIMA_FIN + 1),
               'Confundir la temperatura de la SALA con la de la CÁMARA es uno '
               'de los errores que más caro salen: son dos cosas distintas y '
-              'conviven en el mismo local. Y la nevera de 0-4 grados C es la '
+              'conviven en el mismo local. Y la nevera de 0-4 °C es la '
               'del RELLENO, no la del bombón acabado: el chocolate terminado '
               'no va a esa temperatura, condensa.', wrap=True)
     ws.merge_cells('A%d:J%d' % (CLIMA_FIN + 1, CLIMA_FIN + 1))
@@ -935,7 +940,7 @@ def hoja_temperatura(wb):
               'El objetivo operativo del kit para la vitrina es 16-18 grados '
               'C con menos del 55 % de humedad, y es lo que viene puesto. El '
               'RANGO DE TRABAJO del equipo es otra cosa: una vitrina de '
-              'bombonería real trabaja, por ejemplo, entre +14 y +17 grados C. '
+              'bombonería real trabaja, por ejemplo, entre +14 y +17 °C. '
               'Pon el de la tuya, que viene en su ficha técnica. El semáforo '
               'no se enciende por estar en 16-18: sólo por pasar de 20.',
               wrap=True)
@@ -990,7 +995,7 @@ def hoja_temperatura(wb):
 
     motor.val(ws, 'A%d' % TMP_TOT, 'RECUENTO', bold=True)
     motor.val(ws, 'B%d' % TMP_TOT,
-              'Referencias por encima de la alarma de 20 grados C', bold=True,
+              'Referencias por encima de la alarma de 20 °C', bold=True,
               wrap=True)
     motor.f(ws, 'D%d' % TMP_TOT,
             '=COUNTIF(D%d:D%d,">"&%s)' % (TMP_INI, TMP_FIN, A(P_TALARMA)),
@@ -1245,8 +1250,8 @@ NOTAS_MAPA = (
     '(' + D.FUENTE_VIDA_UTIL + '), CITADOS y no reescritos (D30); la '
     'equivalencia en días es aritmética nuestra y así se dice en la hoja. El '
     'semáforo de la vitrina sólo avisa por encima de '
-    + ('%g' % D.VITRINA_UMBRAL_ALARMA_C) + N + 'grados C y NUNCA pone en rojo '
-    'los 16-18 grados C que el propio kit publica como objetivo (D31). '
+    + ('%g' % D.VITRINA_UMBRAL_ALARMA_C) + N + '°C y NUNCA pone en rojo '
+    'los 16-18 °C que el propio kit publica como objetivo (D31). '
     'Etiquetado y granel no son el mismo régimen (D47): el art. 4.2 del RD '
     '1021/2022 se aplica a la referencia que sale ENVASADA con su etiqueta; a '
     'granel la referencia es tu sistema de autocontrol, y `CHN-87` lo sostiene '
@@ -1324,12 +1329,12 @@ def demo(ruta):
     tmax = v(H_TMP, 'D%d' % VIT_TMAX)
     ver = v(H_TMP, 'F%d' % VIT_TMAX)
     prueba('con la vitrina en el objetivo del kit el veredicto NO es de alarma',
-           tmax <= 18 and 'Dentro' in ver, '%g grados C -> %r' % (tmax, ver))
+           tmax <= 18 and 'Dentro' in ver, '%g °C -> %r' % (tmax, ver))
     exc3 = ExcelCompiler(ruta)
     exc3.evaluate("'%s'!F%d" % (H_TMP, VIT_TMAX))
     exc3.set_value("'%s'!D%d" % (H_TMP, VIT_TMAX), 21)
     ver2 = exc3.evaluate("'%s'!F%d" % (H_TMP, VIT_TMAX))
-    prueba('a 21 grados C sí salta el aviso de la manteca de cacao',
+    prueba('a 21 °C sí salta el aviso de la manteca de cacao',
            'encima' in ver2, '%r' % (ver2,))
 
     # 5. La tanda recomendada nunca supera lo que vendes dentro de la vida

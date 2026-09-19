@@ -270,7 +270,7 @@ def cerrar(wb, nombre, titulo, mapa_celdas, notas_mapa=None):
     """Guarda, inyecta caché, verifica `data_only` y escribe el mapa.
 
     `mapa_celdas` = [(etiqueta, hoja, coord, tipo), ...] con
-    tipo en {'entrada', 'salida', 'parametro'}.
+    tipo en {'entrada', 'salida', 'parámetro'}.
     """
     wb.properties.creator = 'AI Chef Pro'
     wb.properties.lastModifiedBy = 'AI Chef Pro'
