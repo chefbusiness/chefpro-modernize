@@ -107,4 +107,7 @@ Sesión Claude Code · firma de commits `Via: Claude Code`.
   `sinonimos-buscador.json` (hamburguesa/burger/smash · pollería/asadero · finca/bodas/eventos).
 - Excel maestro: Hojas 4/6/7 actualizadas; backup `…BACKUP-2026-09-19.xlsx`. **Gotcha:** openpyxl 3.1.3 dejó los
   `xfId` de `cellStyles` colgando al compactar `cellStyleXfs`; reparado renumerándolos en `xl/styles.xml`.
-- Verificación: preview 83 (23 `data-coming`, contador, nombres) → merge → producción (se anota al cerrar).
+- Verificación: preview 83 (23 `data-coming`, 23/23 nombres, contador «48 · 23») → merge `077b72f` → **producción
+  verificada**: 23 tarjetas LIVE, contador correcto, `miselup-gate.py` 96/96 y `gate-flujo-postpago.py` 48 productos /
+  697 entregables / 0 fallos. Visual en Chrome de Windows sólo parcial (la ventana perdió altura y no aceptó el
+  redimensionado): se vieron las 4 columnas y las etiquetas de ola, no la sección entera.
