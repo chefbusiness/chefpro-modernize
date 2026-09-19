@@ -1,0 +1,33 @@
+### El contexto de la decisión
+
+Llega agosto, la caja de la tienda empieza a sonar menos y la respuesta automática de casi cualquier negocio de alimentación es la misma: bajar la persiana tres semanas y volver en septiembre. En una chocolatería artesanal esa respuesta sale más cara de lo que parece, porque el obrador (taller o laboratorio) no es un fogón que se enciende en cinco minutos: se para, y volver a arrancarlo a pleno rendimiento justo cuando empieza la temporada alta de otoño cuesta días que ya no sobran.
+
+Lo que casi nadie calcula antes de decidir es cuánto vale exactamente ese mes. Los gastos fijos —alquiler, nóminas, suministros, cuota de autónomos o de sociedad— siguen corriendo enteros estés abierto o cerrado, mientras la facturación cae a una fracción de la de un mes normal. Y agosto no es una sensación: en el caso modelado de este pack, agosto factura 0,60 veces lo que factura un mes medio del año, un dato que sale de la hoja «Peso sobre el Año» de campanas-y-valle-del-ano.xlsx.
+
+Esa caída de facturación no es sólo cuestión de vacaciones del cliente: el chocolate no viaja bien en verano sin un embalaje isotérmico, una regla que pesa especialmente en un negocio que venda online, por mayor o que además exporte, como Bombonería Pons, que según su propia historia «crece por venta online, más tiendas físicas, venta al por mayor e incluso exportación» (Bombonería Pons — Historia, 2026-09-12). Si tu chocolatería tiene alguno de esos canales, agosto le pega todavía más fuerte, y conviene tenerlo presente antes de fijar qué se sigue vendiendo ese mes y qué se pausa.
+
+### Las opciones sobre la mesa
+
+Sobre la mesa hay tres caminos, no dos. El primero es parar el obrador pero mantener la tienda abierta, vendiendo producto estable —tableta (barra), bombón de larga vida, cajas ya montadas— sin nadie detrás de la atemperadora. El segundo es cerrarlo todo, obrador y tienda, y aprovechar el mes para las vacaciones de la plantilla en bloque. El tercero es mantener producción a media máquina, no al ritmo de octubre pero tampoco a cero, para ir adelantando parte de la campaña de otoño que en condiciones normales se hace con las prisas de septiembre.
+
+Cada camino cambia tres cosas a la vez, y conviene mirarlas juntas antes de elegir. Cambia el resultado del mes, porque no es lo mismo facturar una fracción con la tienda abierta que facturar cero con todo cerrado. Cambia el aprovechamiento de las vacaciones del equipo, porque agosto es la única ventana del año en la que parar no compite con ninguna campaña fuerte: los picos grandes llegan en Navidad, en San Valentín y en Halloween, y hay compañías del sector que en la semana de San Valentín llegan a concentrar hasta un 10 % de su venta anual, un caso extremo según Produlce, vía Financial Food (2025-02-10). Quien cierra esa semana sacrifica facturación de pico; quien cierra en agosto no sacrifica nada parecido. Y cambia el estado del stock el día que arranca la temporada alta: quien ha adelantado producción en agosto llega a septiembre con margen de maniobra, y quien ha cerrado del todo llega con la nevera vacía y el calendario ya encima.
+
+### El criterio con el que se decide
+
+La regla que ordena la decisión es sencilla de enunciar y fácil de olvidar en el día a día: lo que para es el obrador, no la caja. Cerrar el obrador no significa cerrar la tienda, y la tienda —con producto estable, sin producción diaria detrás— sigue facturando menos, no cero. Ese menos, por pequeño que parezca frente a un mes de crucero, paga una parte de los gastos fijos que si echas el cierre completo pagas exactamente igual y sin nada a cambio.
+
+Y hay una palanca que sí existe y que muchos obradores no usan: cambiar el mix de la vitrina (exhibidor). Sustituir ganache fresca por tableta y por producto estable se traduce en el caso modelado en -0,56 % de margen porcentual, pero a cambio elimina casi toda la merma que en un mes de menos venta y de más calor se dispara. Es un intercambio que conviene decidir con la calculadora delante, no a ojo.
+
+Algunos obradores añaden a esa palanca una tercera fuente de ingreso que no consume cobertura de vitrina: abrir el obrador al público en formato de taller de iniciación al bombón, con un grupo reducido y un ingreso por persona. No hay un precio de mercado verificado que se pueda publicar aquí, así que la cifra la pone tu propia demanda cuando la midas en tu zona, pero la lógica sí vale para cualquier chocolatería: es un ingreso de margen alto que no toca la vitrina y que rellena precisamente el mes en el que la venta de mostrador cae.
+
+### La celda que lo resuelve
+
+La hoja «El Valle de Agosto» de campanas-y-valle-del-ano.xlsx es la que convierte toda esta discusión en una cifra. En el caso modelado, agosto factura 9.954 € sin IVA, y el resultado del mes —con los fijos corriendo enteros y la venta reducida— es de -2.824 €. Comparado con lo que dejaría un mes medio del año, ese resultado supone un coste (costo) de -5.018 € frente a seguir en velocidad de crucero.
+
+Con esos tres números delante, la propia hoja da un veredicto que no deja lugar a la ambigüedad: «Agosto da pérdida: provisiónala, no cierres la tienda». Es la frase que resume el capítulo entero, y la que conviene tener presente en enero, cuando se hace el presupuesto del año, y no en septiembre, cuando ya es tarde para haber decidido nada. La hoja «Peso sobre el Año» de la misma calculadora es la que da el dato de partida —cuánto factura agosto frente a un mes medio—, y es lo primero que hay que mirar antes de decidir si al obrador le compensa mantener la puerta abierta ese mes.
+
+### La norma que aplica cuando la hay
+
+Aquí no hay una norma que decida por ti, y conviene decirlo así de claro en vez de rellenar el epígrafe con normativa de adorno: cerrar o no cerrar en agosto es una decisión de negocio, no una obligación legal. Ninguna ley te dice cuántas semanas puede estar parado un obrador ni te obliga a mantener la vitrina abierta un mínimo de días al mes.
+
+Lo que sí conviene planificar con la asesoría es un matiz laboral, no fiscal: las vacaciones del equipo se concentran de forma natural en este mes, precisamente porque es la única ventana del año en la que parar la producción no compite con ninguna campaña. Cuadrar el calendario de vacaciones con el calendario de producción es, en la práctica, la parte de esta decisión que sí conviene dejar cerrada por escrito antes de que llegue julio.

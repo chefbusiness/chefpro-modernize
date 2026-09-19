@@ -1,0 +1,1179 @@
+[
+ {
+  "id": "guia_cap01_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap01_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap01_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Qué Negocio Estás Montando: las Doce Variantes y Cuál te Toca",
+  "epigrafes": [
+   "Las doce variantes del negocio, comparadas",
+   "La chocolatería de taza y churros: por qué es otro negocio",
+   "Qué incluye este pack y qué es cross-sell",
+   "Tu problema, su capítulo y su herramienta",
+   "Lo que NO vas a encontrar aquí, y cómo llamamos a cada cosa"
+  ],
+  "puntos": [
+   "Abrir con el mapa completo: la palabra «chocolatería» tapa doce negocios distintos, y no todos se montan igual ni cuestan lo mismo. Presentar la tabla de variantes como lo primero que hay que decidir, antes que el local y antes que la máquina.",
+   "Explicar que el caso que recorre todo el documento es la variante central —bombonería artesanal con obrador propio y tienda a calle, en una ciudad media española sin nombre— y que las demás son desviaciones sobre ella, con su columna en la calculadora de inversión.",
+   "Advertir de que sólo tres variantes tienen cifra en la calculadora, y de que el tren de bean-to-bar va SIN cifras de maquinaria a propósito: no hay precio público verificable, así que lo que se entrega es la lista de la compra y las cinco preguntas que hay que hacerle al fabricante. Decirlo en positivo: preguntar bien vale más que un número inventado.",
+   "Dejarlo claro de entrada, porque el lector que busca esto tiene que saber en la primera página si compró lo que quería: servir chocolate a la taza con churros es hostelería, y hacer bombones en un obrador es comercio con fabricación propia. Comparten el nombre y no comparten casi nada más.",
+   "Y la norma los separa sola, que es el argumento que zanja la discusión: la Ley 12/2012 lista en su Anexo el epígrafe 644.5 del comercio al por menor de bombones y caramelos, y NO lista ningún grupo de la agrupación de servicios de hostelería, donde está el grupo 676 de chocolaterías, heladerías y horchaterías.",
+   "Qué cambia en la práctica si añades la taza: freidora, campana y conducto si hay churros, otra categoría de aire, comidas preparadas, y una obligación extra de la ley de desperdicio alimentario si pones mesas. Todo eso tiene su capítulo, y aquí sólo se anuncia.",
+   "Dónde vive esa variante dentro del pack: como columna de escenario en la calculadora de inversión y como columna contigua en la cuenta de resultados del plan financiero, con su ticket, su margen y su coste de personal propios. El lector puede verla al lado de la bombonería pura y decidir con las dos delante.",
+   "Listar los nueve libros de Excel por su nombre de fichero y decir en qué momento de la apertura se usa cada uno: primero capacidad y clima, luego inversión, luego el precio del cacao, la carta y el escandallo, la vida útil, las campañas, el plan financiero, el expediente legal y la compra de equipamiento.",
+   "Decir con todas las letras qué NO construye este pack y dónde vive: las curvas de templado y las fichas de moldeado son del Kit de Tareas Chocolatería, los registros de autocontrol completos son del Pack APPCC, el escandallo unitario de una elaboración es del Kit de Escandallos —que tiene una hoja de tarta de chocolate— y la ingeniería de carta es de la Guía Food Cost y de Ingeniería de Menú.",
+   "Explicar la frontera con una frase que el lector pueda repetir: el Kit de Tareas te dice qué hacer cada día cuando ya has abierto; esta guía es todo lo que hay que decidir antes de abrir. Y la frase que la completa: donde el kit ya publica un dato, la guía usa EL DEL KIT y lo cita, en vez de inventarse otro.",
+   "Presentar el mapa de entrada: el lector no lee el documento de principio a fin, entra por su problema. Explicar cómo se usa la tabla de problema a capítulo y a herramienta que viene a continuación, y señalar las tres puertas de entrada más frecuentes: quien ya hace bombones en casa y quiere legalizarse, quien tiene un local a la vista y no sabe si sirve, y quien tiene el dinero contado y necesita saber si le llega.",
+   "Insistir en que los nueve libros comparten el mismo juego de datos, así que se puede saltar al capítulo que interese sin perder el hilo de las cifras. Y avisar de la regla que hace que eso funcione: donde un libro necesita el número de otro, lo trae por celda editable y con una fila de cuadre que avisa si alguien lo cambia sólo en un sitio.",
+   "Decirlo sin adornos: no hay recetas, no hay curvas de templado, no hay proyecto técnico visado, no hay la ordenanza de tu ayuntamiento y no hay una promesa de rentabilidad. Y explicar por qué cada una de esas ausencias es deliberada, empezando por la más importante: una curva de templado mal publicada arruina producción, así que vive donde se ejecuta, en el kit de tareas.",
+   "Fijar el glosario mínimo con la equivalencia de Hispanoamérica en la primera mención: obrador y taller o laboratorio, escandallo y costeo, vitrina y exhibidor, tableta y barra, coste y costo. Y los tres avisos que un chocolatero detecta enseguida: trufa y praliné son tipos de bombón y no sinónimos, el chocolate a la taza español no es el chocolate caliente hispanoamericano, y «dulcería» no se usa aquí como sinónimo de nada."
+  ]
+ },
+ {
+  "id": "guia_cap02_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap02_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap02_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "El Cliente y la Plaza: Quién Compra Chocolate, Cuándo y a Qué Precio",
+  "epigrafes": [
+   "El mercado crece en euros y se encoge en kilos",
+   "El reparto por categorías y el peso del bombón",
+   "El consumidor ya paga más por menos",
+   "No existe un número oficial de chocolaterías"
+  ],
+  "puntos": [
+   "Abrir con el tamaño del mercado español de cacao y chocolate, con su fuente y su año, y explicar la lectura que de verdad importa a quien va a abrir: el valor sube y el volumen no acompaña, así que lo que crece es el precio medio, no el consumo.",
+   "Sacar la consecuencia comercial, que es la tesis del capítulo: si el mercado premia el valor y no el volumen, un obrador pequeño compite en producto y en momento de compra, no en kilos.",
+   "Aterrizarlo en el caso modelado: las ventas anuales sin impuesto en velocidad de crucero, el ticket medio y las piezas por ticket. Recordar que ese ticket lo produce el mix de la carta, no una media del sector, porque no existe dato público de ticket medio de chocolatería.",
+   "Dar el reparto por categorías del valor del mercado, con su fuente y su año, y decir qué parte le toca al bombón. Es el dato que dice si el escaparate que estás imaginando es el del mercado o el tuyo.",
+   "Avisar de la trampa de este dato concreto: circula una cifra antigua del peso de los bombones que ya no es la vigente. Si se cita el reparto, se cita el del año que traen los datos del sector, y se dice el año.",
+   "Traducirlo a decisión de surtido: el peso de cada categoría en el mercado no es el peso que debe tener en tu vitrina, porque tu vitrina compite por la ocasión de regalo y no por la compra semanal del supermercado. El capítulo de la carta lo resuelve con margen, no con cuota.",
+   "Dar el consumo y el gasto por persona del mercado español con su fuente, y la subida de precio del año, y leerlos juntos: se compra menos cantidad y se gasta más dinero.",
+   "Explicar por qué eso es una buena noticia para un obrador y una mala para el lineal: quien reduce cantidad y mantiene gasto está subiendo de gama, y la gama alta se vende explicada, en mostrador, no en un expositor de caja de supermercado.",
+   "Cerrar con la decisión de plaza: antes de firmar nada, contar cuántos obradores con elaboración propia hay en el radio de caminata, y no cuántas chocolaterías aparecen en un buscador, porque ahí entran las de taza y churros, que son otro negocio y otro cliente.",
+   "Decir la verdad incómoda con todas las letras: no hay censo de chocolaterías en España. Lo que hay son empresas de dos grupos de actividad que mezclan fabricación industrial y comercio minorista de alimentación, y ninguno de los dos es «las chocolaterías».",
+   "Dar las dos cifras de empresas que sí tienen fuente, con el nombre exacto de lo que miden, y avisar de que sirven para el orden de magnitud del sector, no para calcular tu competencia ni tu cuota.",
+   "Enseñar el método que sí funciona a nivel de calle, que es lo que se lleva el lector: contar puertas, mirar escaparates, entrar a comprar y anotar precios por pieza y por caja. Un censo nacional no te dice si tu barrio aguanta una bombonería; una mañana de trabajo, sí."
+  ]
+ },
+ {
+  "id": "guia_cap03_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap03_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap03_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "La Carta de Apertura: las Referencias, las Familias y la Caja",
+  "epigrafes": [
+   "Cómo se decide un surtido de apertura",
+   "Las cinco familias y su papel",
+   "La caja frente a la unidad",
+   "El chocolate a la taza como familia de invierno que sube el ticket"
+  ],
+  "puntos": [
+   "La tesis del capítulo: un surtido de apertura no se decide por gusto ni por lo que sabes hacer, se decide por lo que cabe en el obrador, lo que aguanta en vitrina y lo que deja margen. Los tres filtros, en ese orden.",
+   "Explicar el número de referencias del caso modelado y su reparto en cinco familias, y por qué abrir con menos referencias de las que crees que necesitas es casi siempre la decisión correcta el primer año: cada referencia nueva es un molde, un relleno, una caducidad y una línea más en la matriz de alérgenos.",
+   "Presentar el semáforo de surtido del libro de la carta: cuántas referencias salen con veredicto de mantener, cuántas con revisar precio y cuántas con retirar, y qué hace el lector con cada grupo. Ese semáforo se alimenta de dos umbrales que él fija: margen mínimo por pieza y rotación mínima.",
+   "Explicar el papel de cada familia: los bombones de colección son la firma y el margen por pieza, las tabletas son la compra de impulso y la que más sufre cuando sube el cacao, el chocolate a la taza sostiene el invierno, los turrones y figuras concentran campaña, y las cajas son la unidad de venta real.",
+   "Avisar de lo que la familia de tabletas tiene de trampa: es la que más cobertura lleva por pieza, así que es la primera que se rompe cuando sube el precio del cacao. El capítulo del precio del cacao lo demuestra con la referencia que primero se rompe.",
+   "Recordar la regla de vocabulario que aquí se aplica por primera vez: trufa y praliné son TIPOS de bombón, no sinónimos, y praliné además es una denominación de venta europea con su propio mínimo. El capítulo de denominaciones lo desarrolla.",
+   "La decisión que más dinero mueve de todo el capítulo: la caja es la unidad de venta real de una bombonería, y casi nadie la escandalla como lo que es. Presentarla como una referencia propia, con su montaje, su packaging y su precio.",
+   "Dar el precio por bombón dentro de la caja de doce y dentro de la de treinta y cinco, y el descuento implícito que eso supone. La caja grande no es una caja pequeña multiplicada: es un descuento por volumen que el cliente no ve como descuento.",
+   "Y la lectura que el libro de la carta hace explícita: comparado con vender esos mismos bombones sueltos, la caja deja MENOS margen en euros. No es un error del modelo, es una decisión comercial, y hay razones buenas para tomarla: ticket más alto, regalo, y una venta que no existiría suelta.",
+   "Cerrar con el criterio: se decide el descuento de la caja mirando el margen en euros por operación, no el porcentaje, y se revisa cuando cambia el coste de la cobertura. La hoja de unidad contra caja da las dos cifras al lado.",
+   "Explicar qué aporta esta familia a una bombonería que NO monta hostelería: tableta para taza, sobres monodosis y, si hay barra, la taza servida. Es estacionalidad complementaria a la del bombón y entra por la puerta de la ocasión, no del regalo.",
+   "Avisar del matiz legal que tiene esta familia y que casi nadie conoce: el chocolate a la taza tiene mínimos propios y una mención obligatoria en la etiqueta que las demás familias no llevan. Y si se sirve en sala, cambia el régimen de comidas preparadas. Los capítulos de denominaciones y de canales lo desarrollan."
+  ]
+ },
+ {
+  "id": "guia_cap04_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap04_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap04_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Cuánto Cuesta Abrir: la Inversión Real, Partida a Partida",
+  "epigrafes": [
+   "Por qué las cifras publicadas varían por un factor diez",
+   "La columna del impuesto, o la inversión sale un veintiuno por ciento desviada",
+   "Las partidas que ninguna fuente publica y cómo presupuestarlas",
+   "El colchón de tesorería como partida, no como propina",
+   "El impuesto al plástico aparece aquí como alerta y se explica entero más adelante"
+  ],
+  "puntos": [
+   "Empezar por el problema y no por la respuesta: las cifras de inversión que circulan para una chocolatería van desde la de un obrador de sobremesa hasta la de una tienda con tren profesional, y se publican sin decir cuál de las dos describen. Por eso no sirven.",
+   "Dar los dos escenarios de dotación que sí tienen fuente, como RANGO y con su etiqueta pegada: son bases de impuesto mixtas y no son un presupuesto de apertura. Y decir lo único que se puede concluir de ellos: el arranque mínimo y el profesional de entrada se diferencian por un factor cuatro, así que una cifra publicada que no diga cuál describe no vale para nada.",
+   "Explicar qué hace en cambio la calculadora de inversión: nueve bloques, importe por partida en celda editable, columna de impuesto línea a línea, y dos líneas de resumen que no se pueden confundir. El lector no busca una cifra, construye la suya.",
+   "La regla dura del pack, y aquí se enuncia por primera vez: toda línea de precio lleva columna de si el precio que tienes delante incluye el impuesto y a qué tipo. Sin esa columna, una dotación mezcla bases y la desviación es del orden del tipo general.",
+   "Por qué esto es peor en chocolate que en otros oficios: los distribuidores de maquinaria de chocolate publican unos con impuesto y otros sin, y hay fichas que no lo declaran. El pack marca esas líneas como base no declarada en vez de suponerla.",
+   "La otra mitad de la regla, que se paga en caja: el impuesto soportado de la inversión se adelanta y vuelve después, no desaparece. Dar el importe que hay que adelantar en el caso modelado y explicar por qué eso no es inversión, es tesorería.",
+   "Nombrar una por una las partidas que van con valor supuesto porque no existe precio público verificable: obra y adecuación por metro cuadrado, cámara climatizada, nevera de rellenos, mobiliario, packaging del primer pedido, punto de venta y rótulo. Van en celda editable y declaradas como supuesto.",
+   "Y la partida que casi nadie presupuesta y en chocolate es eliminatoria: la climatización con deshumidificación del obrador. Tiene bloque propio en la calculadora precisamente para que no se esconda dentro de la obra.",
+   "Dar el método para convertir un supuesto en un número tuyo: tres presupuestos por partida, con la base del impuesto declarada por escrito y el plazo de entrega dentro. El libro de equipamiento tiene la columna para anotarlos.",
+   "Explicar la diferencia que más confusión crea en los planes de apertura: el fondo de maniobra NO es inversión, es caja. Se necesita el día uno y no compra nada. Por eso la calculadora publica dos líneas separadas y una suma, en vez de un total único.",
+   "Dar las tres cifras del caso modelado y decir para qué sirve cada una: la inversión sin el fondo, el fondo, y la inversión total. La primera es la que viaja al plan financiero; la segunda se calcula allí con los gastos fijos y los meses de colchón, y vuelve.",
+   "Cerrar con el número que decide si el proyecto arranca: el desembolso total con impuesto incluido, frente a la financiación disponible. Lo que falte es aportación propia, y es mejor saberlo antes de firmar el alquiler que después.",
+   "Decir qué hace la alerta y qué no: la hoja de impuesto y tesorería lleva un contador de kilos de plástico no reciclado importado o adquirido en otro país de la Unión Europea, con el umbral de la exención al lado, y avisa cuando se supera. No calcula tu impuesto: te dice si tienes que ir a mirarlo.",
+   "Y remitir al capítulo de proveedores para la explicación completa, con las dos cosas que hay que saber de entrada: la exención no cubre la fabricación, sólo la importación y la adquisición intracomunitaria; y los moldes de policarbonato no están sujetos."
+  ]
+ },
+ {
+  "id": "guia_cap05_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap05_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap05_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "El Local: Metros, Zonas y la Ficha de Visita",
+  "epigrafes": [
+   "Las zonas de un obrador de chocolate, que no son las de una pastelería",
+   "Superficies y marcha adelante",
+   "La cámara climatizada como zona propia",
+   "La potencia que de verdad hace falta"
+  ],
+  "puntos": [
+   "Empezar por lo que cambia respecto a un obrador de dulce clásico, que es lo que hace que este capítulo exista: aquí no hay horno, no hay cámara de fermentación y no hay campana. Y sí hay una cámara climatizada de chocolate, que en pastelería no existe.",
+   "Listar las seis zonas del caso modelado con sus metros y decir qué hace cada una: obrador de templado y moldeado, cámara de chocolate, almacén de cobertura y materias primas, envasado y packaging, tienda y mostrador, y aseos y vestuario.",
+   "Avisar de que ese reparto es un supuesto declarado, no un estándar: lo que no es supuesto es la lógica de que las zonas no se pisen y de que la producción tenga más metros que la venta en un negocio que vive de fabricar.",
+   "Explicar la marcha adelante en el lenguaje de este oficio: la cobertura entra por el almacén, pasa al obrador, de ahí a la cámara, de la cámara al envasado y del envasado a la tienda, y nunca vuelve hacia atrás. El vestuario no se cruza en medio.",
+   "Dar la comprobación que hace la hoja de zonas y que casi nadie hace sobre un plano: los pasos numerados sin repetir y sin saltos, y el descuadre de metros contra la superficie declarada. Si el descuadre no es cero, o sobran metros o falta una zona.",
+   "Sacar el criterio de reparto: qué parte del local tiene que ser producción para que el obrador no ahogue a la tienda ni al revés, con el porcentaje del caso modelado y el umbral mínimo que el propio libro se exige.",
+   "Explicar por qué el chocolate necesita una zona de frío que no es una nevera: la cámara de conservación trabaja en una ventana templada, no fría, y la nevera de rellenos y ganaches trabaja en otra mucho más baja. Son dos equipos, dos zonas y dos objetivos distintos.",
+   "Dar los metros de la cámara del caso modelado y decir qué manda en su dimensionado: los ciclos de cristalización y la rotación de producto acabado, no los litros. El libro de capacidad lo calcula por rotaciones.",
+   "Dar la potencia eléctrica prevista del caso modelado y explicar de dónde sale: atemperadora, temperador, mantenedor, cámara, nevera, vitrina y climatización, que es la que más pesa. Un obrador de chocolate consume menos que uno con horno, y eso abre locales.",
+   "Y el aviso práctico que ahorra un disgusto en la visita: la potencia contratable del local la dice el boletín eléctrico, no el anuncio. La ficha de visita del libro de capacidad la pide como dato medido y la compara con la que necesitas."
+  ]
+ },
+ {
+  "id": "guia_cap06_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap06_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap06_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Antes de Firmar: el Obrador sin Humos Cambia la Conversación de la Licencia",
+  "epigrafes": [
+   "Las reglas de chimenea que circulan son las de las viviendas",
+   "Sin horno no hay campana, pero sí reglamento térmico por la climatización",
+   "Ningún ayuntamiento puede exigirte licencia previa de actividad hasta setecientos cincuenta metros cuadrados",
+   "Las tres puertas: local nuevo, traspaso o franquicia"
+  ],
+  "puntos": [
+   "Desmontar el error más caro de la fase de búsqueda de local: el documento básico de salubridad del Código Técnico que todo el mundo cita para hablar de salidas de humos tiene por ámbito las viviendas y los garajes, no un local comercial. Para el local, la referencia es el reglamento de instalaciones térmicas.",
+   "Y la consecuencia, que es la mejor noticia de todo el capítulo: un obrador de chocolate no tiene horno, no tiene campana y no tiene combustión, así que el problema del conducto a cubierta directamente no se plantea. Puedes alquilar locales que una pastelería tendría que descartar.",
+   "Avisar de dónde vuelve a aplicar: si montas la variante de taza y churros con freidora, vuelve todo el paquete de humos, y además la inspección periódica de la instalación de gas si es de gas. Es otra búsqueda de local, no la misma.",
+   "Explicar lo que sí aplica: la atemperadora, la refinadora y la conchadora son equipo de proceso y quedan fuera del reglamento térmico, pero el equipo de climatización y deshumidificación del obrador está dentro. Es la instalación que hay que legalizar y mantener.",
+   "Traducirlo a la conversación con el instalador: lo que se le pide no es sólo frío, es control de temperatura y de humedad a la vez, con puesta en marcha y equilibrado incluidos. El capítulo del clima trae la ficha de preguntas.",
+   "Y el aviso de calendario: la climatización es de las partidas con plazo de entrega más largo y de las que más condicionan la fecha de apertura. El cronograma del expediente legal lo cuadra con el plazo real que teclees en el libro de equipamiento.",
+   "Dar el dato con su norma y su umbral, porque es el argumento más limpio de todo el bloque legal: la Ley 12/2012 prohíbe exigir licencia previa de instalación, de funcionamiento o de actividad a las actividades de su Anexo en establecimientos hasta ese umbral de superficie útil de exposición y venta. Es ley estatal, no ordenanza.",
+   "Y el detalle que lo hace aplicable a una bombonería: su Anexo incluye expresamente el epígrafe 644.5, el del comercio al por menor de bombones y caramelos. Lo que se presenta es una declaración responsable o una comunicación previa.",
+   "Los dos límites del propio texto, que se dicen a la vez que la buena noticia: queda fuera lo que tenga impacto en el patrimonio histórico-artístico o en el dominio público, y SIGUE haciendo falta licencia para las obras de edificación que la requieran. La licencia de obra y la de actividad no son la misma cosa.",
+   "Marcar la frontera de lo que no se puede afirmar, y decir por qué: qué trámite concreto pide tu ayuntamiento, qué tasa cobra y qué plazo tiene no está verificado en esta edición y cambia en cada municipio. Va como pregunta a tu ayuntamiento, con la lista de qué preguntar.",
+   "Presentar la comparación de traspaso contra obra nueva como lo que es: una comparación de coste TOTAL en un horizonte de años, no de precio de entrada. Entran el precio pedido, la adecuación que aún hace falta, la renta y los meses que pagas sin facturar.",
+   "Dar los ocho traspasos reales que el libro trae sembrados y la lectura honesta de esa muestra: cinco son de pastelería-bombonería y tres de churrería-chocolatería, que es otro negocio; y sólo tres publican la renta, que es justamente el dato que decide.",
+   "Dar el veredicto del caso modelado y el criterio para leerlo: el veredicto compara dinero, y hay razones que no son dinero —la clientela heredada, el estado de la instalación eléctrica, la distribución que no admite marcha adelante— que pueden darle la vuelta."
+  ]
+ },
+ {
+  "id": "guia_cap07_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap07_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap07_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "El Clima del Obrador: por Qué el Chocolate Manda Sobre el Local",
+  "epigrafes": [
+   "Sala y cámara son dos cosas distintas",
+   "Ninguna norma obliga a una temperatura de obrador: la declaras tú y la justificas",
+   "Fat bloom y sugar bloom",
+   "Lo que hay que preguntarle al instalador"
+  ],
+  "puntos": [
+   "Poner orden en lo que casi siempre se cuenta mezclado: en un obrador de chocolate hay CINCO ventanas de temperatura distintas, y cada una tiene su equipo. Obrador al templar, cámara de conservación, nevera de rellenos, sala de tienda y vitrina.",
+   "Dar las cinco con su rango y su humedad, diciendo de dónde salen: son las que publica el Kit de Tareas Chocolatería, que es producto vendido de la casa, y la guía usa ÉSAS en vez de inventarse otras. Citarlas por fichero y hoja.",
+   "Y la comprobación que hace la hoja de clima y que nadie hace a mano: que las cinco ventanas sean coherentes ENTRE SÍ. La cámara por debajo del obrador, la sala por encima, la vitrina por debajo de la sala y la nevera de rellenos por debajo de todas. Si una no cuadra, el problema no es el equipo: es el objetivo.",
+   "Decirlo con todas las letras, porque circula lo contrario: la tabla de temperaturas de conservación del RD 1021/2022 NO tiene fila para el chocolate, y las palabras «chocolate», «cacao», «bombón» y «confitería» no aparecen ni una vez en toda esa norma.",
+   "Lo que sí hay, y es lo que de verdad obliga: la temperatura de conservación la fija quien produce y envasa, en su etiqueta; y para lo que se despacha a granel, la referencia es tu propio sistema de autocontrol, donde la declaras tú. El capítulo 16 lo desarrolla referencia a referencia.",
+   "La consecuencia práctica, que es ventaja y trampa a la vez: eliges tú la ventana, y luego tienes que poder mantenerla. Si declaras una temperatura, tienes que sostenerla también el día que el termómetro de la calle marca lo que marca en agosto.",
+   "Explicar los dos defectos con el vocabulario del oficio y sin convertir el capítulo en técnica: el fat bloom viene del calor y de los ciclos de temperatura, y el sugar bloom viene del agua, de la condensación al pasar de frío a caliente sin atemperar.",
+   "Traducirlo a decisiones de local y de equipo, que es lo que aquí toca: control de humedad tan importante como el de temperatura, nada de meter el producto acabado en una nevera doméstica, y una cámara que no condense al abrir.",
+   "Y el enlace con el dinero: un bombón blanqueado no es un bombón peligroso, es un bombón invendible. Es merma por calidad, y se paga igual que la de caducidad. El libro de vida útil la cuantifica.",
+   "Explicar por qué esta hoja NO calcula carga térmica y por qué eso es una decisión de honestidad, no una carencia: no hay ningún coeficiente con fuente pública para un obrador de chocolate, y la alternativa sería inventarse constantes o dejar celdas que el lector no sabe rellenar.",
+   "Lo que sí hace, que es más útil: un semáforo de coherencia entre la temperatura objetivo, la temperatura exterior de tu ciudad en agosto y la potencia frigorífica que te OFRECE el instalador, más el salto de diseño que él declare. Tres cifras que casi nadie pone juntas.",
+   "Y la ficha de preguntas, que es la que cambia la conversación: volumen tomado para el cálculo, salto de diseño, aportes internos, renovaciones de aire, capacidad de deshumidificación, si deshumidifica sin bajar de más la temperatura, si lleva evaporativo —tiene que ser que no—, si incluye puesta en marcha y equilibrado, garantía y consumo en agosto."
+  ]
+ },
+ {
+  "id": "guia_cap08_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap08_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap08_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Maquinaria: Atemperadora, Enrobadora y Moldes",
+  "epigrafes": [
+   "La escalera de atemperadoras y el cruce de kilos por semana con máquina",
+   "La trampa del impuesto: unos distribuidores publican con y otros sin, y nunca se suman",
+   "La vitrina de chocolate no es la de pastelería",
+   "Plazos de entrega y segunda mano"
+  ],
+  "puntos": [
+   "Presentar la decisión de máquina como lo que es: no se elige por marca ni por presupuesto, se elige por kilos de cobertura a la semana y por si el negocio va a tener una o dos líneas de templado.",
+   "Dar la escalera completa de atemperadoras, una a una y con su capacidad, desde la de sobremesa de arranque hasta las continuas grandes. Cada una con su identificador propio: la escalera se cita máquina a máquina, nunca como un rango agregado.",
+   "Cruzarla con la capacidad: la hoja de capacidad por equipo convierte cada máquina en bombones al día y dice cuál limita. Y la sorpresa que casi siempre da ese cruce: la atemperadora no suele ser el cuello de botella; lo son las manos y el puesto de envasado.",
+   "Sacar el criterio de compra: comprar la máquina para el pico de Navidad es caro y comprarla para el día medio es quedarse corto en diciembre. La salida es adelantar producción de lo que aguanta, que es lo que calcula el libro de campañas.",
+   "Contar el problema real del mercado de maquinaria de chocolate: hay fichas que publican el precio sin impuesto, otras con impuesto y otras que no lo declaran. Sumarlas todas da un total que no es de nadie.",
+   "Qué hace el pack con eso: cada línea del checklist de equipamiento lleva la base declarada por la fuente y su tipo, y las que no lo declaran van marcadas como no declarada, no supuestas. El total se publica en base imponible.",
+   "Y dos líneas que merecen mención aparte porque se publican distinto: los moldes van como RANGO por unidad, no como precio cerrado, y el mantenedor va como un «desde», que es un suelo comercial y no un precio. Se presupuestan, no se copian.",
+   "La diferencia que hay que entender antes de comprar: una vitrina de pastelería trabaja en frío positivo bajo, y el chocolate a esa temperatura condensa al salir. La vitrina de bombonería es templada y controla humedad.",
+   "Distinguir dos cosas que se confunden todo el rato: el OBJETIVO operativo del negocio —el que publica el kit y el que usa el pack— y el RANGO DE TRABAJO del equipo que te ofrece un fabricante concreto. Son dos números distintos, y el semáforo del libro de vida útil sólo avisa cuando la temperatura se va de verdad por arriba.",
+   "Dar el plazo crítico de entrega del caso modelado y decir qué línea lo marca, porque es la cifra que de verdad mueve la fecha de apertura: no la firma del alquiler, la máquina.",
+   "Explicar cómo se usa: el cronograma del expediente legal trae ese plazo por celda editable y avisa si la ruta crítica del papeleo es más corta que la entrega. Quien no lo cuadra abre con la tienda montada y sin atemperadora.",
+   "Y la segunda mano, con el criterio honesto: en templado y frío se compra con garantía y con puesta en marcha, porque lo que falla no es la chapa, es la electrónica y el control de temperatura. Los datos del sector no traen precios de segunda mano, así que no se publican."
+  ]
+ },
+ {
+  "id": "guia_cap09_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap09_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap09_b1.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Licencias, Sanidad y Registro: el Camino Completo",
+  "epigrafes": [
+   "Una chocolatería minorista no va al registro general, y tener obrador no te saca de minorista",
+   "Cuándo sí vuelve: tres condiciones acumulativas y dos vías dentro de «marginal»",
+   "Central y sucursales"
+  ],
+  "puntos": [
+   "Corregir el error número dos del nicho, y hacerlo con la norma delante: quien vende al consumidor final en su propio establecimiento está EXCLUIDO del registro general sanitario por el art. 2.2 del RD 191/2011, en la redacción que le dio el RD 1021/2022.",
+   "Decir qué hay en su lugar: una comunicación o declaración responsable al registro de tu comunidad autónoma. Y decir lo que casi nadie dice, que es lo que evita el disgusto: ese trámite NO te habilita para abrir. No esperas respuesta, y no te protege si el resto no está en regla.",
+   "Cerrar el otro bulo, el que venden algunas consultoras: tener obrador y transformar producto NO te saca de la condición de minorista. Lo que te saca es A QUIÉN vendes, no lo que haces.",
+   "Explicar cómo se resuelve en el pack: el árbol de registro sanitario son cuatro preguntas y un veredicto, y el veredicto dice el trámite, si habilita y cuándo se presenta.",
+   "Empezar por la puerta de entrada, que es lo que el noventa por ciento de los textos se salta: el art. 3 del RD 1021/2022 sólo se activa si suministras a otros establecimientos minoristas de DISTINTA titularidad. Si no lo haces, todo lo que viene detrás no te aplica.",
+   "Dar las tres condiciones y decir que son ACUMULATIVAS: marginal, localizado y restringido. Basta fallar una para caer en el registro general.",
+   "Desarrollar «marginal», que tiene DOS vías alternativas y no un solo umbral: hasta un porcentaje del volumen anual O hasta un máximo de kilos a la semana. Basta cumplir una de las dos, y las dos se miden SÓLO sobre lo que sirves a otros minoristas.",
+   "Desarrollar «restringido», que es el que de verdad mata a una chocolatería que crece: basta con que UNO solo de tus clientes esté inscrito en el registro general para perderlo. Y el regalo corporativo es justo la línea que lo rompe.",
+   "Explicar el esquema y su ventaja: un obrador central que abastece a tus propios despachos no es suministro a otros minoristas, porque no hay distinta titularidad. Es la vía natural para crecer sin cambiar de régimen.",
+   "Y el deber pegado, que se dice en la misma frase: cada despacho se inscribe por separado en el registro autonómico, aunque el suministro entre ellos no cuente como venta a otras tiendas."
+  ]
+ },
+ {
+  "id": "guia_cap09_b2",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap09_b2.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap09_b2.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Licencias, Sanidad y Registro: el Camino Completo",
+  "epigrafes": [
+   "La ruta doméstica y la lista de cinco letras",
+   "La clave del registro general cuando sí toca",
+   "Artesanía alimentaria: qué es, qué no es y dónde se pide"
+  ],
+  "puntos": [
+   "Plantear la pregunta como llega: mucha gente empieza haciendo bombones en casa y quiere legalizarse sin montar local. La respuesta honesta empieza por una lista cerrada, la del art. 13.8 del RD 1021/2022, que tiene CINCO letras.",
+   "Dar las cinco letras y qué permite cada una, y decir con cuidado la conclusión: por defecto el bombón no encaja en la letra de panadería y repostería. Eso es INTERPRETACIÓN nuestra, y así se presenta.",
+   "Y la letra que lo cambia todo, que es la quinta: otros alimentos que las autoridades competentes de las comunidades autónomas permitan en sus territorios. Es una lista abierta, y hay comunidades que ya la han ejercido. Por eso la hoja empieza preguntando por tu comunidad.",
+   "Los TRES requisitos del art. 13.9, que sólo entran en juego si tu comunidad ha abierto la puerta: volumen proporcional al tamaño de las instalaciones —que es el que de verdad limita—, un tope de kilos a la semana, y que se pueda demostrar documentalmente.",
+   "Cerrar con la frase que hay que poder repetir sin equivocarse: no entra en la lista estatal salvo que tu comunidad lo haya añadido. Nunca «es ilegal en España».",
+   "Decir qué pasa el día que sí te toca: el registro general tiene un cajón concreto para el chocolate, con su clave y sus actividades, y saberlo ahorra una consultoría.",
+   "Y marcar el nivel de la fuente, porque es honestidad y es útil: el catálogo de claves no está en ningún boletín oficial, está en una guía informativa de la administración. Se cita como guía, no como norma.",
+   "Explicar el orden correcto de la conversación con la asesoría: primero se resuelve el árbol, y sólo si el veredicto es registro general se habla de claves. Al revés se paga por tramitar algo que no hacía falta.",
+   "Separar dos cosas que se mezclan siempre: la artesanía alimentaria es una acreditación autonómica VOLUNTARIA, y no tiene nada que ver con el registro sanitario ni con la norma de calidad del chocolate. Son tres cosas distintas.",
+   "Dar el dato verificado y su límite: en Cataluña el chocolate está expresamente dentro del repertorio de artesanía alimentaria; en el resto, el enlace es el registro de tu comunidad. Y la prohibición expresa: NO se puede escribir que sin esa acreditación no puedas llamarte artesano, porque es voluntaria."
+  ]
+ },
+ {
+  "id": "guia_cap10_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap10_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap10_b1.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Cómo Puedes Llamar a lo que Vendes: las Denominaciones Legales del Cacao",
+  "epigrafes": [
+   "La tabla de mínimos y las dos bases de cálculo",
+   "«Bombón de chocolate o praliné» es el mismo punto de la norma",
+   "La mención del porcentaje de cacao no es universal"
+  ],
+  "puntos": [
+   "Abrir con la idea que ordena el capítulo entero: la norma del chocolate no trabaja con «porcentaje de cacao», sino con TRES magnitudes —materia seca total de cacao, manteca de cacao y materia seca desgrasada— y la bolsa de cobertura que compras sólo publica una.",
+   "Dar la tabla de mínimos por denominación, que está cotejada fila a fila contra el texto consolidado, y explicar cómo se lee: cada denominación tiene sus umbrales, y cumplirlos es lo que te da derecho a usar ese nombre.",
+   "Y el punto que más errores produce: hay DOS bases de cálculo en la misma norma. En las tabletas con frutos secos los mínimos se calculan DESCONTANDO los ingredientes añadidos; en el chocolate relleno y en el bombón, el contenido de chocolate se calcula sobre el PESO TOTAL del producto acabado, con el relleno dentro.",
+   "Decir qué pasa si se invierten, porque es la trampa cara: calcular el mínimo del bombón descontando el relleno da un resultado más favorable que el legal, y deja pasar por el semáforo una referencia que no cumple.",
+   "Dar la definición legal del bombón y su mínimo sobre el peso total, y el dato de rigor que la acompaña: la palabra «bombón» aparece una sola vez en toda la norma española.",
+   "Y la corrección que casi nadie hace: «praliné» no tiene definición en la norma española, pero SÍ es denominación de venta europea, en el mismo punto que el bombón de chocolate y con el mismo mínimo. Si lo llamas praliné, te obliga igual.",
+   "Cerrar con «trufa», que es el contraejemplo: no tiene definición legal en ninguna de las dos normas. Se puede usar como nombre comercial, y no da derecho a nada.",
+   "Desmontar la creencia: la mención «cacao: tanto por ciento mínimo» NO se exige para todos los productos. La norma la pide para unos apartados concretos y deja fuera al chocolate blanco, al relleno y al bombón.",
+   "Dar la frase segura para el producto: ponerla no es ilegal; decir que es obligatoria sí sería falso. Y añadir que el reglamento europeo dice lo mismo.",
+   "Explicar la consecuencia práctica en la vitrina: si la pones en unas referencias y en otras no, que sea por decisión y no por descuido, porque el cliente compara cartelitos."
+  ]
+ },
+ {
+  "id": "guia_cap10_b2",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap10_b2.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap10_b2.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Cómo Puedes Llamar a lo que Vendes: las Denominaciones Legales del Cacao",
+  "epigrafes": [
+   "Los calificativos de calidad, sin lista de palabras",
+   "Sucedáneo no es chocolate, y las grasas vegetales con su mención"
+  ],
+  "puntos": [
+   "Contar lo que de verdad dice la norma, que no es lo que circula: autoriza completar tres denominaciones con menciones o calificativos referentes a criterios de calidad, y NO enumera ninguna palabra.",
+   "Dar el dato de la búsqueda exhaustiva, que es lo que convierte esto en afirmable: «calidad» aparece una sola vez en todo el real decreto, justo ahí; «fino» y «superior», cero veces; y «extra», sólo dentro de otras palabras.",
+   "Y la condición que hace que la mención valga algo: sólo cabe sobre esas tres denominaciones y sólo por encima de unos umbrales reforzados de materia seca. La denominación literal, además, es «cobertura de chocolate», no «cobertura» a secas.",
+   "Explicar la frontera con precisión: si la manteca de cacao está SUSTITUIDA, es sucedáneo y así se etiqueta; si sólo se AÑADE un pequeño porcentaje de unas grasas vegetales tasadas, sigue siendo chocolate.",
+   "Dar el detalle que la mayoría de los textos no trae: esa adición sólo cabe en unos apartados concretos, y ni el chocolate relleno ni el bombón están en esa lista.",
+   "Y la mención obligatoria que la acompaña, con su formato: cuando se usan esas grasas, la etiqueta tiene que decirlo, y el sitio y la forma también están reglados. Es una de esas cosas que sólo se descubren cuando llega la inspección."
+  ]
+ },
+ {
+  "id": "guia_cap11_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap11_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap11_b1.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Cacao, Cadmio y Deforestación: Qué te Pide la Norma y Qué le Pides a tu Proveedor",
+  "epigrafes": [
+   "El cadmio sube con el porcentaje de cacao y castiga al negro premium",
+   "Lo que es chocolate para la denominación no lo es para los contaminantes",
+   "Eres operador posterior si tu cobertura llega amparada, y ese paso es una inferencia declarada"
+  ],
+  "puntos": [
+   "Plantear el problema en el lenguaje del negocio: el límite de cadmio sube cuanto más cacao lleva el producto, así que la referencia más expuesta es justamente la que quieres que sea tu firma, la tableta de origen con alto porcentaje.",
+   "Decir de quién es el papel: lo que tiene que cumplir el límite es la cobertura que compras, y quien tiene que enseñarte analíticas es tu proveedor. Tu primera línea de defensa es el boletín de análisis, no la analítica que pagues tú.",
+   "Dar las tres obligaciones que sí son tuyas y no de tu proveedor: no usar como ingrediente lo que pase de límite, no diluir mezclando, y poder justificar los factores de concentración o dilución ante el control oficial. Eso último es un papel que se guarda.",
+   "Dar la corrección grande de este capítulo, porque cambia el veredicto: la nota del reglamento de contaminantes remite SÓLO a tres puntos de la directiva del chocolate. Quedan fuera la manteca de cacao, el chocolate familiar con leche, el blanco, el relleno, el chocolate a la taza y el bombón.",
+   "Sacar la consecuencia con todas las letras: tu bombón NO tiene límite propio de cadmio. Se le aplica la regla general de los alimentos compuestos, que es otra cosa y se justifica de otra manera.",
+   "Y la regla de escritura que se lleva el lector: dos normas pueden hablar del mismo producto con definiciones distintas, y suponer que coinciden es la manera más rápida de publicar una falsedad. Aquí no coinciden.",
+   "Explicar el reglamento de deforestación en dos frases y con su alcance real: el chocolate terminado está dentro, no sólo el grano; y exportar cajas fuera de la Unión Europea también está sujeto.",
+   "Dar la figura que importa, con su definición: quien introduce en el mercado productos que YA han sido comercializados y están amparados por una declaración de diligencia debida es OPERADOR POSTERIOR, no operador.",
+   "Y aquí va la frase exacta, presentada como lo que es —una inferencia nuestra, no una cita—: si tu cobertura llega ya comercializada en la Unión Europea y amparada por una declaración de diligencia debida, eres operador posterior y el aplazamiento, que es para operadores, no te alcanza; tu fecha es el 30 de diciembre de 2026. Si tu cobertura NO está amparada, la calificación deja de ser automática y hay que revisarla.",
+   "Cerrar con el aviso de rigor que casi ningún texto da: la definición exige que TODOS los insumos estén amparados. Con cobertura anterior a la norma, o con un proveedor que no lo acredita, no se puede dar por hecho nada."
+  ]
+ },
+ {
+  "id": "guia_cap11_b2",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap11_b2.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap11_b2.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Cacao, Cadmio y Deforestación: Qué te Pide la Norma y Qué le Pides a tu Proveedor",
+  "epigrafes": [
+   "El aplazamiento a junio de 2027 no te sirve si abres ahora",
+   "Bean-to-bar: eres operador, y el tostado te mete en otro catálogo"
+  ],
+  "puntos": [
+   "Desmontar la lectura tranquilizadora que circula: el aplazamiento del art. 38.3 es para OPERADORES, personas físicas, microempresas o pequeñas empresas que estuviesen establecidas como tales a una fecha concreta de 2024. Quien abre ahora no cumple ni siquiera esa condición.",
+   "Dar la otra mitad, que es la que hace que esto importe: una chocolatería que compra cobertura es operador posterior, y el aplazamiento no está escrito para ella. Su fecha es la general.",
+   "Y lo que sí le toca a una pyme, que es menos de lo que se teme: no se registra en el sistema de información y no le alcanza el deber de verificación de la cadena. Lo que sí le alcanza entero son los deberes de recogida y conservación de información durante cinco años.",
+   "Cambiar de figura y decirlo claro: quien importa grano de cacao es OPERADOR, con diligencia debida completa, declaración presentada ANTES de comercializar, responsabilidad asumida y registro de cinco años. Es otro papel y otro trabajo.",
+   "Avisar del régimen simplificado que muchos confunden con una exención para pequeños: no lo es, exige estar establecido en un país de riesgo bajo, y confundirlo es un error grave.",
+   "Y la segunda consecuencia, que es ambiental y no de cacao: si tuestas tú el grano, entras en el catálogo de actividades potencialmente contaminadoras de la atmósfera por un epígrafe que habla de café «o similares», lo cual es interpretación; y la nota que sube de grupo incluye los núcleos de población, así que en ciudad esa condición se cumple siempre. Va como pregunta a tu comunidad autónoma."
+  ]
+ },
+ {
+  "id": "guia_cap12_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap12_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap12_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Autocontrol, Alérgenos y Formación: Qué Tener el Día de la Inspección",
+  "epigrafes": [
+   "El autocontrol simplificado es legal y exige responsable designado con nombre",
+   "Los peligros de un obrador de chocolate no son los de una pastelería",
+   "Los alérgenos de una bombonería son ocho"
+  ],
+  "puntos": [
+   "Quitar el miedo y poner el requisito: un obrador pequeño puede trabajar con un sistema de autocontrol simplificado, basado en guías, y eso es perfectamente legal. Lo que no es opcional es que haya un responsable designado con nombre y apellidos.",
+   "Explicar qué tiene que haber encima de la mesa el día de la inspección, sin convertir el capítulo en un manual de autocontrol: el plan, los registros que ese plan diga, el registro de formación y la documentación de proveedores.",
+   "Marcar la frontera con el Pack APPCC, que es producto de la casa: los registros completos y la matriz de alérgenos por referencia están allí. Aquí se decide QUÉ tiene que existir, no se rellena.",
+   "Dar la diferencia de perfil de riesgo, que es lo que hace que un plan copiado de una pastelería no sirva: en chocolate baja el peligro microbiológico y suben el alérgeno cruzado y el cuerpo extraño metálico.",
+   "Traducirlo a prerrequisitos concretos: la temperatura y la humedad del obrador entran como prerrequisito, no como punto de control crítico; y la limpieza entre coberturas y entre rellenos es el punto que de verdad protege.",
+   "Y el aviso de alérgenos que un obrador de chocolate tiene todos los días: la atemperadora, la manga, el molde y la espátula que han tocado avellana no se vuelven a usar sin limpiar. Y el capítulo del reglamento de higiene donde eso vive no es «el capítulo de alérgenos», que no existe: es un punto concreto del capítulo de productos alimenticios.",
+   "Corregir la lista corta que circula, con el anexo delante: son OCHO, porque cacahuetes, frutos de cáscara y granos de sésamo son entradas INDEPENDIENTES del anexo de alérgenos, no una sola categoría de «frutos secos».",
+   "Darlos uno a uno —gluten, huevo, cacahuete, soja, leche, frutos de cáscara, sésamo y sulfitos— y explicar por qué la lecitina de soja cuenta: las exenciones de ese punto son otras cosas, no la lecitina.",
+   "Añadir la nota-puente para quien ya tenga el Kit de Tareas Chocolatería, escrita tal cual: si usas el kit, desglosa la celda de «frutos secos» en cacahuetes, frutos de cáscara y sésamo, que son entradas independientes del anexo de alérgenos.",
+   "Y el dato práctico que resuelve el problema de la caja surtida: en un mostrador atendido, la información de alérgenos del producto sin envasar puede darse por escrito en el establecimiento y con cartel visible. Todo menos la fecha puede ir en cartel."
+  ]
+ },
+ {
+  "id": "guia_cap12_b2",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap12_b2.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap12_b2.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Autocontrol, Alérgenos y Formación: Qué Tener el Día de la Inspección",
+  "epigrafes": [
+   "El lote: qué norma lo manda de verdad y sus tres exenciones",
+   "«Sin gluten» es un umbral analítico, no una declaración libre"
+  ],
+  "puntos": [
+   "Corregir el error de citación más repetido del sector: el lote NO está entre las doce menciones obligatorias del reglamento europeo de información al consumidor. Viene de una norma española propia, el RD 1808/1991, que sigue sin modificaciones.",
+   "Dar las tres exenciones, porque le ahorran trabajo al lector: el producto no envasado, el envasado a petición del cliente y el envasado para venta inmediata no necesitan lote; tampoco los envoltorios muy pequeños; y una etiqueta que lleve fecha con día y mes puede prescindir de él.",
+   "Aterrizarlo en la vitrina: el bombón despachado a granel y la caja que se llena delante del cliente caen de lleno en la primera exención. La tableta envasada con su etiqueta, no.",
+   "Y el criterio de gestión, que es lo que importa cuando crece el negocio: aunque estés exento, un identificador de lote propio es lo que te permite retirar UNA tanda en lugar de todo el escaparate.",
+   "Explicarlo con el número delante: es un umbral analítico medido en el producto tal como se vende, no una declaración de intenciones sobre los ingredientes.",
+   "Dar la ventaja de partida de una chocolatería y su límite: sin harina en el obrador, casi todo el riesgo de gluten viene del ingrediente comprado —barquillo, galleta, cereal—, así que el control está en la ficha técnica del proveedor y en la limpieza."
+  ]
+ },
+ {
+  "id": "guia_cap13_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap13_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap13_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Proveedores: Cobertura, Cacao, Packaging y Plazos",
+  "epigrafes": [
+   "Los proveedores verificados, por categoría",
+   "La asociación de bean-to-bar como vía fiable para el grano",
+   "Las dos preguntas que separan a quien compra de quien sabe lo que compra",
+   "El impuesto al plástico si compras estuches fuera de España"
+  ],
+  "puntos": [
+   "Presentar la lista por lo que es: seis proveedores con la dirección web comprobada en la fecha de corte de esta edición, y no una recomendación comercial. Lo que el research recogió sin poder verificar NO se publica.",
+   "Recorrer las categorías y decir qué hay que negociar en cada una: cobertura y chocolate profesional, grano para bean-to-bar, maquinaria, moldes y utensilios, packaging y regalo corporativo.",
+   "Dar el método de la primera compra: empieza por dos o tres proveedores, no por seis. Abrir ficha con un proveedor cuesta tiempo, pedido mínimo y dinero parado en el almacén.",
+   "Explicar por qué el grano es el bloque de riesgo más alto de la compra: es donde menos precios públicos hay, donde más cambian los orígenes y donde más papeles te van a pedir.",
+   "Dar la vía que sí es fiable y por qué: el listado público de una asociación sectorial permite identificar a los fabricantes y a los importadores, y se publica como «más de cuarenta miembros», sin cifra cerrada.",
+   "Y la advertencia de método: las páginas individuales de los proveedores de grano no se han abierto, así que no se publica ninguno con nombre. Preferimos una lista corta verificada a una larga de oídas.",
+   "Presentarlas juntas porque se hacen en el mismo correo: el boletín de análisis de metales pesados, y el papel del proveedor en la cadena del reglamento de deforestación.",
+   "Explicar la segunda con precisión, porque un semáforo mal montado suspende a proveedores que cumplen: la pregunta correcta NO es «dame tu número de declaración», es «¿eres operador, operador posterior o comerciante?». Sólo al primero se le pide el número, y sólo él está obligado a dártelo.",
+   "Dar la otra mitad del mismo artículo, que no estaba en ninguna lente y que cierra el círculo: hay que registrar también a los operadores posteriores y comerciantes a los que TÚ suministras. Es la segunda tabla del libro de equipamiento, y se conserva cinco años.",
+   "Aterrizarlo en el correo que hay que escribir: nombre del proveedor, qué te vende, su papel en la cadena, su número si es operador, boletín de cadmio, boletín de hidrocarburos si compras grano, pedido mínimo y plazo. Ocho columnas y una respuesta por escrito.",
+   "Decir quién lo paga, que es lo que casi todo el mundo se salta: NO lo paga quien compra envases en España. Lo paga quien los fabrica, los importa o los adquiere en otro país de la Unión Europea. Y una chocolatería compra fuera más que casi cualquier otro obrador: blísteres, cápsulas, estuches y bolsas.",
+   "Dar los dos límites de la exención, que es donde se equivocan hasta las guías: cubre la importación y la adquisición intracomunitaria pero NO la fabricación, y cubre unos envases concretos pero no los semielaborados ni los cierres. Si el pequeño adquirente exento tiene que inscribirse en el registro territorial depende de una orden ministerial: eso es pregunta para la asesoría, no afirmación.",
+   "Y la buena noticia, con sus dos razones: los moldes de policarbonato, las guitarras y las hojas de transferencia NO pagan. Primero porque el ámbito son los envases no reutilizables, y además porque están expresamente no sujetos."
+  ]
+ },
+ {
+  "id": "guia_cap14_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap14_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap14_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Escandallo del Chocolate: la Merma de Templado, el Recorte que Vuelve y la Caja",
+  "epigrafes": [
+   "La unidad de costeo es el molde y la tanda, no la pieza",
+   "El chocolate limpio se refunde; el que lleva ganache o fruta, a residuo",
+   "El coste hora de obrador imputado por pieza",
+   "Margen bruto y food cost son la misma regla dicha dos veces"
+  ],
+  "puntos": [
+   "Explicar por qué un escandallo de bombonería no se parece a uno de restaurante: no se costea una pieza, se costea una TANDA de moldes, porque el templado, el llenado, la cristalización y el desmoldeo se hacen por tandas y el tiempo se reparte entre las piezas buenas.",
+   "Dar la cadena de cálculo con las cifras del caso: piezas por molde, moldes por tanda, minutos de la tanda, piezas buenas y minutos por pieza buena. De ahí sale el coste de mano de obra por pieza, que en bombonería pesa más de lo que casi nadie cree.",
+   "Marcar la frontera con el Kit de Escandallos, y hacerlo bien: ese kit trae una hoja de tarta de chocolate dentro de su libro de pastelería, y costea una elaboración por unidad. Lo que no existe en el catálogo es el escandallo del obrador de bombonería por molde y por tanda, con merma de templado y la caja como unidad de venta. Eso es esto.",
+   "Dar la regla del oficio que el Kit de Tareas Chocolatería ya enuncia y que aquí se cuantifica: el chocolate sin relleno y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo.",
+   "Sacar la consecuencia de modelo, que es la diferencia con cualquier otro escandallo: hay DOS tasas de merma, no una. La recuperable vuelve a la cuba y NO encarece la materia; la no recuperable se reparte entre las piezas buenas y sí la encarece.",
+   "Dar las dos cifras del año en el caso modelado —kilos que vuelven a la cuba y kilos que van a residuo— y el coste anual de la segunda. Es dinero que casi nadie mide y que se puede bajar cambiando el orden de trabajo.",
+   "Y el aviso de método para quien venga de otro oficio: meter las dos mermas en una sola tasa infla el coste de las referencias limpias y abarata las rellenas. Sale una carta mal priorizada.",
+   "Explicar de dónde sale el coste de la hora de obrador: del coste de empresa de las personas que producen, no del bruto; y repartido sobre las horas PRODUCTIVAS, no sobre las horas de contrato.",
+   "Dar la cifra del caso modelado y decir qué la mueve: las pagas del convenio, la cotización a cargo de la empresa y la parte de la jornada que de verdad se pasa a pie de mesa. Cambiar cualquiera de las tres cambia todos los escandallos a la vez.",
+   "Aterrizarlo en la decisión: hay referencias que sólo son rentables si se hacen en tandas grandes, porque su coste de mano de obra por pieza se desploma con el tamaño de tanda. Ésa es la conversación que hay que tener antes de meterlas en la carta.",
+   "Zanjar la confusión más común de las cartas: el food cost y el margen bruto son el mismo número visto del derecho y del revés. Este pack usa UNA sola regla, y de ahí se deriva la otra.",
+   "Y dar el matiz que este producto sí distingue, porque son dos cifras distintas y no se mezclan nunca: el food cost de escandallo puro y el food cost CON merma, que es el que de verdad paga el negocio y el que viaja al plan financiero."
+  ]
+ },
+ {
+  "id": "guia_cap15_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap15_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap15_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "El Precio del Cacao: Qué Haces Cuando Sube y Quién Paga la Subida",
+  "epigrafes": [
+   "El cacao cayó a la mitad y el chocolate subió: la cobertura no baja cuando baja la bolsa",
+   "El ciclo real de revisión es semestral",
+   "Los cuatro caminos con su número: precio, gramaje, cobertura, margen",
+   "Cómo se comunica una subida"
+  ],
+  "puntos": [
+   "Empezar por la observación que descoloca a todo el mundo: la cotización del cacao puede caer con fuerza y el precio de tu cobertura no se mueve, o incluso sigue subiendo. No es una anomalía: es cómo funciona la cadena.",
+   "Explicar por qué, sin inventar números: entre la bolsa y tu saco de cinco kilos hay coberturas de compra a plazo, stock del fabricante, coste de transformación y tarifa de distribuidor. La bolsa es una señal de tendencia, no tu precio de compra.",
+   "Y la consecuencia operativa, que es la tesis del capítulo: no se planifica con la cotización, se planifica con ESCENARIOS sobre el precio que hoy tienes en tu tarifa. Por eso el libro parte de tu precio y no del mercado.",
+   "Dar el ritmo al que de verdad se mueven las tarifas de cobertura, y lo que eso significa para una carta: quien revisa precios una vez al año come dos subidas antes de reaccionar.",
+   "Traducirlo a rutina: una revisión de escandallo por temporada, coincidiendo con el cambio de carta, y una alarma cuando la tarifa nueva llega. El libro del precio del cacao está hecho para hacer eso en diez minutos.",
+   "Y el aviso de stock, que es la otra cara: comprar de más para protegerse del precio inmoviliza dinero y ocupa almacén. El libro calcula los euros parados y el coste financiero de esa decisión, para que se tome con las dos cifras delante.",
+   "Presentar los cuatro caminos que existen cuando sube el cacao, y decir que son cuatro y no uno: subir el precio de venta, bajar el gramaje, cambiar de cobertura o aceptar menos margen.",
+   "Dar la subida media de precio que haría falta en el escenario de trabajo del caso, y la lectura que la acompaña: repartida por el mix, suele ser mucho menor de lo que la gente teme.",
+   "Dar el número de referencias que se rompen en cada escenario y nombrar la que se rompe primero. Ésa es la que hay que reformular o retirar antes que ninguna, y casi siempre es la que más cobertura lleva por pieza.",
+   "Explicar el camino del gramaje con su límite legal, que casi nadie vincula: bajar gramos de chocolate en un bombón puede sacarte del mínimo del veinticinco por ciento sobre el peso total, y entonces ya no es una decisión comercial, es un cambio de denominación. El capítulo 10 tiene la regla.",
+   "Dar el criterio que funciona en mostrador: se sube por referencia y con redondeo comercial, no un porcentaje plano a toda la carta; y se sube antes de campaña, nunca en mitad de ella.",
+   "Y el aviso legal que pega de lleno en una chocolatería estacional: la regla del precio anterior obliga a que el precio tachado sea el más bajo aplicado en los treinta días anteriores, así que subir en noviembre para «rebajar» en diciembre no cumple. Y esa regla no está donde casi todos la citan."
+  ]
+ },
+ {
+  "id": "guia_cap16_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap16_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap16_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote",
+  "epigrafes": [
+   "Entre la ganache fresca y la estabilizada hay un factor de tres a cinco",
+   "La vida útil la declaras tú y consta en tu plan de autocontrol",
+   "Envasado con etiqueta o a granel: no es el mismo régimen"
+  ],
+  "puntos": [
+   "Dar el dato que ordena todo el capítulo, con la tabla del Kit de Tareas Chocolatería como fuente y citada por fichero y hoja: los plazos orientativos por familia, desde los meses de una tableta hasta los días de una ganache con nata fresca.",
+   "Y la lectura que convierte eso en decisión: entre la ganache fresca y la estabilizada hay un factor de tres a cinco, y esa es una decisión de MODELO DE NEGOCIO, no técnica. Quien elige fresco elige rotar rápido; quien elige estabilizado elige poder vender por envío y en campaña.",
+   "Explicar el porqué, que es lo que el kit no desarrolla: lo que manda es el agua disponible del relleno. Por eso el libro de vida útil empieza por la actividad de agua y no por el calendario.",
+   "Decir la regla dura con todas las letras: la vida útil la DECLARA el operador en su sistema de autocontrol. Este libro no la calcula y no la presenta como norma: es una celda que rellenas tú.",
+   "Dar las dos vidas útiles declaradas del caso modelado —la de la ganache fresca y la de la estabilizada— y decir de dónde salen: del extremo bajo del plazo orientativo del kit, como supuesto de partida declarado.",
+   "Explicar qué hace el libro con eso, que es lo que el kit no tiene: convierte la vida útil en fecha de etiqueta, en tamaño de lote y en merma por caducidad en euros al año. Del plazo a la decisión.",
+   "Y el aviso de la caja surtida, que es una trampa clásica: la caja caduca cuando caduca la pieza más corta que lleva dentro. El libro lo calcula y avisa.",
+   "Plantear la distinción que casi nadie hace y que cambia el papel que te toca: una misma referencia puede salir envasada con su etiqueta o despacharse a granel desde la vitrina, y no están bajo la misma regla.",
+   "Lo envasado con etiqueta: la temperatura de conservación que TÚ has puesto en esa etiqueta te obliga a ti, porque la fija quien produce y envasa. Lo que escribes es lo que tienes que poder mantener.",
+   "Lo despachado a granel: no hay etiqueta, así que la referencia no es ese artículo sino tu sistema de autocontrol, donde la temperatura y la vida útil constan porque las has declarado tú.",
+   "Dar el reparto del caso modelado entre las dos vías y sacar la consecuencia práctica: cada referencia que pasa de granel a envasada suma obligaciones de etiquetado, así que envasar no es sólo una decisión de packaging."
+  ]
+ },
+ {
+  "id": "guia_cap16_b2",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap16_b2.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap16_b2.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote",
+  "epigrafes": [
+   "La vitrina de chocolate no es la de pastelería",
+   "Las tres vías del huevo, donde aún aplican"
+  ],
+  "puntos": [
+   "Dar la ventana de la vitrina de bombonería y su humedad, con su fuente en el kit, y explicar por qué es tan estrecha: por encima de cierto punto la manteca funde y el bombón pierde brillo; por debajo, condensa al sacarlo.",
+   "Distinguir otra vez, porque aquí se paga: el objetivo operativo del negocio no es el rango de trabajo del equipo que te venden. El semáforo se alimenta del rango que tecleas tú y sólo avisa cuando se va de verdad por arriba.",
+   "Dar las referencias del caso que NO van a vitrina sino a nevera, y por qué: el relleno fresco manda sobre el chocolate. Es una decisión de colocación que se toma con la actividad de agua delante.",
+   "Acotar de entrada para no asustar: en una bombonería el huevo crudo aparece en pocas cosas, pero aparece. Merengues, algunas trufas con yema, mazapanes y glaseados.",
+   "Dar las tres vías con su consecuencia: tratamiento térmico suficiente, ovoproducto, o producto con vida útil muy corta y registro de fecha y hora de elaboración. La vía practicable en un obrador pequeño suele ser el ovoproducto, y se dice por qué."
+  ]
+ },
+ {
+  "id": "guia_cap17_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap17_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap17_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "El Equipo: Cuántos, Qué Perfiles y Qué Cuestan",
+  "epigrafes": [
+   "Los tres perfiles del obrador",
+   "Del bruto al coste empresa, con la cotización dentro",
+   "No existe convenio estatal del chocolate, y esto es lo que sí existe",
+   "Cómo identificar tu convenio"
+  ],
+  "puntos": [
+   "Presentar la plantilla del caso modelado y decir qué hace cada uno: Encargado, Chocolatero y Dependiente. Son los nombres literales de las hojas del Kit de Tareas Chocolatería, y se usan ésos para que el kit y la guía hablen el mismo idioma.",
+   "Dar la dimensión en jornadas equivalentes y explicar por qué no coincide con el número de personas: media jornada de mostrador es media jornada, y el titular cuenta como una.",
+   "Y el aviso de vocabulario, que aquí vale dinero: «maestro chocolatero», «bombonero» y «oficial» son etiquetas de otras fuentes —de convenios y de portales salariales—, no nombres de puesto de esta plantilla. Si se citan, se citan entrecomilladas y con su equivalencia al lado.",
+   "Dar el salto que descoloca en el primer plan financiero: del bruto mensual del convenio al coste de empresa hay un tercio largo más, y ese tercio es la cotización a cargo de la empresa.",
+   "Dar las tres piezas del cálculo del caso: bruto del grupo de convenio, número de pagas al año y porcentaje de cotización. Cambiar cualquiera de las tres mueve el coste de la hora de obrador y, con él, todos los escandallos.",
+   "Y el coste de la hora de obrador como cifra puente entre este capítulo y el del escandallo: se calcula sobre las horas PRODUCTIVAS, no sobre las de contrato, porque el resto del tiempo es recepción, limpieza y mostrador.",
+   "Dar el hallazgo con su método, porque es la diferencia entre «no lo he encontrado» y «no existe»: la consulta al registro de convenios con ámbito estatal devuelve cero resultados para chocolate, bombones, confitería y pastelería, y la consulta de control con otro producto sí devuelve resultados. La herramienta funciona; el convenio no está.",
+   "Decir qué sí existe: cuatro convenios de ámbito provincial o autonómico que nombran chocolates o bombones, con su código. Entran como MÉTODO de búsqueda, no como tablas: no se publica ninguna tabla salarial distinta de la del ejemplo.",
+   "Dar la tabla de referencia del caso —la de la Comunidad de Madrid— marcada como EJEMPLO y sustituible, con sus grupos y sus brutos, y decir la vigencia y cuándo caduca.",
+   "Y el matiz que un laboralista agradecerá y que nadie publica: en ese convenio el despacho de bombones está dentro sin condiciones y la FABRICACIÓN va condicionada. Determinar si tu obrador encaja es una cuestión de ámbito funcional, y eso se pregunta, no se decide leyendo un blog.",
+   "Dar el procedimiento paso a paso: registro de convenios, ámbito funcional, provincia, y comprobación de la vigencia y de la última revisión salarial publicada. Cinco minutos bien empleados.",
+   "Y el aviso que ahorra la búsqueda fallida: el nombre con el que el convenio está registrado NO es el que aparece en su articulado, así que buscar por la denominación que te suena puede devolver cero resultados aunque el convenio exista. Se busca por código y por ámbito."
+  ]
+ },
+ {
+  "id": "guia_cap18_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap18_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap18_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Las Campañas y el Valle: de Navidad a Agosto",
+  "epigrafes": [
+   "San Valentín y el peso de un solo evento",
+   "La producción de Navidad se paga en octubre y se cobra en diciembre",
+   "Las comuniones son una campaña propia y sostienen tres meses",
+   "Lo que para en agosto es el obrador, no la caja",
+   "Las dos respuestas contraestacionales"
+  ],
+  "puntos": [
+   "Abrir con la cifra que cambia la planificación de un obrador: hay campañas que concentran en pocos días una parte del año desproporcionada, y en bombonería eso es la norma, no la excepción.",
+   "Dar el peso de las doce campañas sobre el año en el caso modelado y el de la mayor de todas, y explicar la diferencia entre facturación de campaña y facturación INCREMENTAL: parte de lo que vendes esos días lo habrías vendido igual.",
+   "Sacar la consecuencia de capacidad: la demanda de un día de campaña se mide en bombones de obrador, no en tickets, y ahí es donde el obrador dice si aguanta. La hoja lo compara campaña a campaña.",
+   "Explicar el desfase de tesorería que hunde a los que no lo ven venir: los moldes, el packaging y la materia prima de la campaña grande se compran con semanas o meses de antelación, y la caja llega después.",
+   "Dar la tesorería inmovilizada en moldes y packaging de temporada del caso modelado y su coste financiero, y decir que esa cifra es la que hay que tener provisionada antes de octubre.",
+   "Y la fecha límite que el plan financiero calcula hacia atrás desde la capacidad del obrador: hay un día a partir del cual aceptar un pedido más de Navidad significa no poder servirlo. Saber ese día con antelación es lo que permite decir que no a tiempo.",
+   "Sacarlas del cajón de Pascua, que es donde casi todo el mundo las mete: las comuniones son una campaña PROPIA, con antelación de pedido distinta y con detalle de mesa personalizado.",
+   "Explicar qué cambia en el obrador: no es un pico de un día, es un goteo de pedidos cerrados con semanas de antelación, y eso permite adelantar producción de lo que aguanta.",
+   "Y el papel que juegan en el año: sostienen abril, mayo y junio, que es justo el tramo en el que el bombón de regalo baja y todavía no ha llegado el verano.",
+   "Decirlo de entrada y con precisión, porque es la corrección más importante del capítulo: el valle es AGOSTO, un mes de doce, y lo que para es el obrador. La tienda sigue abierta.",
+   "Dar los números del mes: cuánto factura agosto frente a un mes medio, y el resultado del mes con los gastos fijos corriendo enteros. Ver esa cifra en septiembre es un disgusto; verla en enero es una provisión.",
+   "Explicar el cambio de mix, que es la palanca que sí existe: menos ganache fresca y más tableta y producto estable. Eso baja un poco el margen y sube mucho la tranquilidad, y el libro calcula la caída exacta.",
+   "Y separar lo que de verdad se para: los envíos, que es una decisión de CANAL ONLINE y no de mostrador, se apagan en verano porque el producto no aguanta el transporte. Eso es distinto de cerrar la tienda.",
+   "Dar la primera: los talleres y las catas, que funcionan justo cuando el obrador está parado y no dependen del precio del cacao. El capítulo 19 pone los números.",
+   "Y la segunda, que es de producto: el turista de julio y agosto compra formato souvenir y producto estable, no ganache fresca. Es el mismo obrador con otra carta, y el libro lo modela con un segundo mix."
+  ]
+ },
+ {
+  "id": "guia_cap19_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap19_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap19_b1.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Canales: Mostrador, Envío, Hostelería, Corporativo y Talleres",
+  "epigrafes": [
+   "Los tres canales que se salen de la nota del epígrafe minorista, y la pregunta exacta para el asesor",
+   "Cuándo el B2B te obliga a inscribirte, y por qué el regalo corporativo es la línea que lo rompe",
+   "Vender online sigue siendo minorista, pero te responsabiliza de la temperatura en el camión"
+  ],
+  "puntos": [
+   "Poner el marco fiscal en una frase que el lector pueda repetir: el epígrafe minorista de bombones y caramelos SÍ faculta para fabricar, pero su nota lo condiciona a que la comercialización se realice en las propias dependencias de venta.",
+   "Dar la consecuencia con los cinco canales delante: mostrador y talleres caben en esa nota sin discusión; el envío con transporte, el suministro a hostelería y el regalo corporativo son los tres que salen fuera de esa condición y hay que consultar.",
+   "Decir lo que NO se puede hacer, y por qué: ninguna fuente da un epígrafe por canal. Lo que el libro publica no es un veredicto, es la PREGUNTA redactada para el asesor, con la nota literal delante y la regla de la instrucción que obliga a leerla con su condición.",
+   "Y el aviso de la salida fácil, para que nadie la tome sin saber lo que cuesta: la única alta que cubriría los cinco canales de una vez es la industrial, y con ella se pierde el amparo de la ley que prohíbe exigirte licencia previa de actividad, porque su anexo lista el epígrafe minorista y no el industrial.",
+   "Enlazar con el capítulo de licencias sin repetirlo: el suministro a otros minoristas activa el artículo que ya conoce, con sus tres condiciones acumulativas.",
+   "Dar el dato que decide: basta con que UNO de tus clientes esté inscrito en el registro general para perder la condición de restringido, y ahí se acabó la excepción. Un hotel, una cadena o un obrador industrial lo están casi siempre.",
+   "Explicar por qué el regalo corporativo es la línea más peligrosa: es el canal que más crece sin que te des cuenta, el que más lejos envía y el que más probablemente te pone delante un cliente inscrito.",
+   "Dar el margen de contribución de cada canal y el punto muerto con y sin el canal de hostelería, para que la decisión no sea sólo legal: hay canales que traen obligaciones y dejan menos margen que el mostrador.",
+   "Dar la buena noticia primero, con su fundamento: vender al consumidor final por internet SIGUE siendo comercio al por menor a efectos fiscales, porque lo define el destino y comprende el realizado sin establecimiento. Y no cambia dónde te inscribes sanitariamente.",
+   "Dar lo que sí cambia, que es lo que casi nadie ve venir: te conviertes en envasador de la caja de envío, respondes de la temperatura durante el transporte y tienes que dar toda la información obligatoria ANTES de que el cliente pague.",
+   "Y el número que decide si el canal existe: el coste del envío refrigerado sobre el pedido medio y el margen de contribución que queda después. El libro lo calcula y da su veredicto."
+  ]
+ },
+ {
+  "id": "guia_cap19_b2",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap19_b2.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap19_b2.txt",
+  "palabras_objetivo": 1050,
+  "palabras_min": 756,
+  "capitulo": "Canales: Mostrador, Envío, Hostelería, Corporativo y Talleres",
+  "epigrafes": [
+   "A quién le vendes también hay que registrarlo",
+   "Los talleres, la única línea que funciona en agosto"
+  ],
+  "puntos": [
+   "Dar la mitad del artículo que casi nunca se cita: además de guardar los datos de tus proveedores, hay que registrar a los operadores posteriores y comerciantes a los que TÚ has suministrado producto.",
+   "Explicar qué tiene que constar y cuánto se conserva: nombre, dirección y producto suministrado, durante cinco años. Es la segunda tabla del libro de equipamiento, y no existe en ningún otro libro del catálogo.",
+   "Cerrar el círculo con el epígrafe minorista: los canales que se salen de su nota son justo los que hay que registrar. Una misma tabla resuelve dos obligaciones de dos normas distintas.",
+   "Dar las dos cifras que convierten el taller en decisión y no en ilusión: cuántos asistentes hacen falta para cubrir su coste, y cuántos contando también la materia.",
+   "Y la pregunta de verdad, que es la que casi nadie se hace: cuánto deja una hora de sala dando taller frente a esa misma hora de sala vendiendo. Si el taller ocupa el espacio de venta en hora punta, puede salir caro aunque llene.",
+   "Cerrar con el aviso fiscal, sin cifra: un taller de bombonería NO está exento del impuesto sobre el valor añadido por ser formación. El tipo aplicable es lo que queda abierto y se consulta con la asesoría antes de poner precio, no después de haberlo cobrado."
+  ]
+ },
+ {
+  "id": "guia_cap20_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap20_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap20_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "El Plan Financiero, el Dinero Hasta el Punto de Equilibrio y los Primeros Noventa Días",
+  "epigrafes": [
+   "Cuenta de resultados a tres años con estacionalidad y rampa",
+   "Punto muerto con la regla única de margen",
+   "El sueldo del propietario como renglón propio",
+   "Impuesto, facturación verificable y libertad horaria como decisión del día uno",
+   "Qué se mide en el mes cero y en el mes tres"
+  ],
+  "puntos": [
+   "Explicar el modelo en tres frases: el año dos es el de crucero, el año uno va con rampa de arranque y el año tres crece poco. Todo lo demás sale de ahí.",
+   "Dar las cifras del año de crucero —ingresos, margen bruto, costes fijos y resultado neto— y el margen neto, y decir cómo se lee: el margen neto de una bombonería con tienda es estrecho, y lo que lo mueve es el peso del personal sobre las ventas.",
+   "Y el aviso sobre el escenario pesimista, que es el que hay que mirar antes de firmar: con los mismos costes fijos y menos tráfico, el resultado se va a negativo. Saber cuánto aguantas es más útil que saber cuánto ganarías.",
+   "Dar los dos puntos de equilibrio y decir por qué son dos y no uno: el contable incluye la amortización y el de caja incluye la devolución del principal del préstamo, que no es gasto pero sale del banco.",
+   "Dar los clientes al día y los ingresos al mes que hacen falta para cada uno, y la holgura sobre lo previsto. Esa holgura es el colchón real del proyecto.",
+   "Explicar la regla única de margen que usa todo el pack y por qué es una sola: el food cost objetivo y el margen bruto objetivo son el mismo número, y todos los libros se alimentan de él.",
+   "Decir lo que casi ningún plan dice: el trabajo del titular tiene que estar dentro de los costes, con nombre y con importe. Un plan que se sostiene sólo porque el dueño no cobra no se sostiene.",
+   "Dar cómo aparece en el modelo y por qué va en renglón propio: se ve, se cambia y se puede comparar con lo que costaría contratar a alguien que hiciera ese trabajo.",
+   "Y el cruce con el capítulo del equipo: el coste de la hora de obrador que usan todos los escandallos sale de esa misma plantilla. Si el titular no está dentro, los escandallos mienten.",
+   "Dar el tipo que le toca al chocolate y explicarlo bien, porque el razonamiento importa: va al tipo reducido no porque haya un precepto que lo nombre, sino porque no está en la lista cerrada del superreducido y no está excluido del reducido.",
+   "Dar la trampa del punto de venta que hay que montar bien desde el primer día: la misma botella cambia de tipo según se consuma en la mesa o se la lleve el cliente. Y la facturación verificable no es de este año, pero el sistema que compres hoy ya tiene que estar adaptado.",
+   "Cerrar con la libertad horaria y su fundamento correcto: una chocolatería NO está en la lista del artículo que casi todos citan; le viene por el siguiente, por superficie. El resultado práctico es el mismo y el fundamento es distinto, y eso importa el día que alguien te lo discuta.",
+   "Dar la lista corta de lo que hay que medir desde el primer día con el punto de venta: ticket medio, piezas por ticket, mix por familia y peso de cada canal. Son los cuatro supuestos que el plan tiene en celda editable.",
+   "Y el hábito que convierte el plan en herramienta: al mes tres se sustituyen los supuestos por lo medido y se vuelve a leer el punto muerto. A partir de ahí el plan deja de ser una previsión y pasa a ser un cuadro de mando."
+  ]
+ },
+ {
+  "id": "guia_cap21_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/cap21_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/guia_cap21_b1.txt",
+  "palabras_objetivo": 1500,
+  "palabras_min": 1080,
+  "capitulo": "Anexo normativo, actualizado a 12 de septiembre de 2026",
+  "epigrafes": [
+   "Qué está vigente y qué está derogado",
+   "Las fechas que ya sabemos que se mueven",
+   "Las diez normas cuyo cambio invalidaría algo",
+   "Cómo comprobar una vigencia en un minuto"
+  ],
+  "puntos": [
+   "Abrir con la utilidad de este anexo: no introduce nada nuevo, da ESTADO. Sirve para comprobar dentro de un año qué sigue en pie de todo lo que has leído, y para no citar normas muertas.",
+   "Recorrer el cuadro norma a norma con su fecha de comprobación, empezando por las dos que sostienen el producto: la norma de calidad del chocolate, que sigue sin una sola modificación desde su publicación, y la directiva europea, cuyos porcentajes no se han tocado.",
+   "Señalar la que más se mueve, y por qué hay que vigilarla: la norma europea de deforestación se ha modificado dos veces y ha tenido una corrección de errores en doce meses.",
+   "Y el bloque de las derogadas que siguen circulando por internet, que es donde más daño hace un contenido viejo: si una web te cita una norma de esta lista para decirte lo que tienes que hacer, esa web no se ha actualizado.",
+   "Dar la lista de fechas conocidas y qué habría que rehacer con cada una, para que el lector sepa qué parte del pack toca revisar y no todo el pack.",
+   "La más cercana y la más importante para este oficio: la fecha general de la norma del cacao, que es la que le corre a quien compra cobertura amparada.",
+   "Las de fin de año: el salario mínimo y la tabla del convenio de referencia, que caducan a la vez y viven en celda editable precisamente por eso.",
+   "Y las de más adelante: la facturación verificable en sus dos tramos, la obligación de bebida en envase reutilizable y el calendario de accesibilidad para establecimientos privados.",
+   "Dar la lista corta de normas críticas y decir qué sostiene cada una dentro del pack: qué capítulo y qué hoja de qué libro dejarían de ser correctos si esa norma cambia.",
+   "Y el criterio de mantenimiento, que es lo que convierte esto en herramienta: no hay que revisar el pack entero cada año, hay que revisar estas normas y, con ellas, sólo las celdas que dependen de ellas.",
+   "Dar el procedimiento para la norma española: ficha del boletín oficial, línea de última modificación, y texto consolidado. Si la línea dice que no hay modificaciones, no hay más que mirar.",
+   "Y el de la norma europea: consolidado del diario oficial, versión y marcas de modificación, que dicen de qué acto viene cada párrafo. Es lo que permite ver que dos artículos han cambiado a la vez y por la misma reforma, que es justo lo que pasa con la norma del cacao."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-chocolateria_cap01_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/business-plan-modelo-chocolateria/cap01_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/business-plan-modelo-chocolateria_cap01_b1.txt",
+  "palabras_objetivo": 700,
+  "palabras_min": 504,
+  "capitulo": "Resumen Ejecutivo",
+  "epigrafes": [
+   "El proyecto en una página",
+   "La inversión y su financiación",
+   "El resultado, el margen y el punto de equilibrio",
+   "Qué se pide y para qué"
+  ],
+  "puntos": [
+   "Abrir con la ficha del proyecto: qué se monta, dónde, con qué superficie y con qué plantilla, en cinco líneas y sin adjetivos. Un banco lee esto y decide si sigue leyendo.",
+   "Dar el formato exacto: bombonería artesanal con obrador propio y tienda a calle, en ciudad media, con los metros repartidos entre obrador, cámara de chocolate, almacén, envasado, tienda y servicios.",
+   "Dar la inversión sin el fondo de maniobra, el fondo, la inversión total y la necesidad total de caja al arranque, y explicar en una frase la diferencia entre las cuatro: lo que se compra, lo que se reserva, la suma y lo que sale de la cuenta el día de la firma.",
+   "Dar el reparto entre recursos propios y préstamo, y decir expresamente qué parte del desembolso es impuesto que se recupera después.",
+   "DARLOS AQUÍ, no remitir a la sección financiera: ingresos del año de crucero, resultado neto y margen neto. Es lo que decide si la primera página convence.",
+   "Y el punto de equilibrio en la misma página: cuántos ingresos al mes hacen falta para no perder dinero, y qué holgura hay sobre lo previsto. Un plan que no dice su punto muerto en la primera página obliga al lector a buscarlo, y el lector no busca.",
+   "Decir con todas las letras qué se solicita, a qué plazo y para qué partidas. Un plan que no pide nada concreto no es un plan, es una presentación.",
+   "Cerrar con la frase de trazabilidad que da credibilidad a todo lo demás: cada cifra de este documento sale de una celda de las herramientas del pack, y se puede abrir y comprobar una a una."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-chocolateria_cap02_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/business-plan-modelo-chocolateria/cap02_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/business-plan-modelo-chocolateria_cap02_b1.txt",
+  "palabras_objetivo": 550,
+  "palabras_min": 396,
+  "capitulo": "Mercado y Plaza",
+  "epigrafes": [
+   "El mercado y su dirección",
+   "La plaza y el cliente",
+   "La estacionalidad de la demanda",
+   "Las barreras de entrada"
+  ],
+  "puntos": [
+   "Dar el tamaño del mercado español de cacao y chocolate con su fuente y su año, y la lectura que importa: crece en valor y no en volumen.",
+   "Sacar la consecuencia para este proyecto: se entra por producto y por ocasión de compra, no por precio ni por volumen.",
+   "Describir la plaza sin inventar datos: ciudad media, tienda a calle, y el método con el que se ha validado —contar obradores con elaboración propia en el radio de caminata—, porque no existe censo de chocolaterías.",
+   "Dar el perfil de compra del caso: clientes al día, piezas por ticket y ticket medio, y decir que ese ticket lo produce el mix de la carta.",
+   "Dar la curva del año con el mes más alto y el más bajo, y su peso sobre las ventas. Un negocio con esa curva se planifica por tesorería, no por media mensual.",
+   "Dar el peso de las campañas sobre el año y decir qué parte de eso es incremental: no todo lo que se vende en campaña es venta nueva.",
+   "Nombrar las que de verdad protegen a este negocio: el oficio del templado, la inversión en clima y frío, y la cartera de pedidos corporativos, que tarda en construirse.",
+   "Y la que no protege: la marca. En bombonería la marca se construye con años de campañas, así que el plan no la usa como supuesto de ingresos."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-chocolateria_cap03_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/business-plan-modelo-chocolateria/cap03_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/business-plan-modelo-chocolateria_cap03_b1.txt",
+  "palabras_objetivo": 550,
+  "palabras_min": 396,
+  "capitulo": "Concepto y Carta",
+  "epigrafes": [
+   "El concepto y la carta",
+   "El margen de la carta",
+   "La decisión de surtido",
+   "La materia prima y su riesgo"
+  ],
+  "puntos": [
+   "Describir el concepto en dos frases y la carta en cifras: número de referencias, cinco familias y a qué juega cada una.",
+   "Dar el precio medio ponderado de la carta y el ticket medio, y decir que ambos salen del mix, no de una media del sector.",
+   "Dar el food cost de escandallo y el food cost servido, y explicar en una línea por qué son dos cifras distintas: la segunda incluye packaging y merma, y es la que va al plan financiero.",
+   "Dar el margen bruto medio del año y decir contra qué regla se compara: la regla única de margen del proyecto.",
+   "Dar el reparto de referencias por veredicto —mantener, revisar precio y retirar— y explicar los dos umbrales que lo producen: margen mínimo por pieza y rotación mínima.",
+   "Dar el margen anual de toda la carta y decir qué familia lo aporta: es la cifra que un banco usa para entender de dónde sale el margen bruto de la cuenta de resultados.",
+   "Dar el precio de las coberturas en base imponible y la parte del coste de materia que representa la cobertura. Es la exposición real del proyecto al precio del cacao.",
+   "Y decir cómo se gestiona, sin dramatizar: escenarios de precio calculados, cuatro caminos de respuesta y una referencia identificada como la primera que se rompe."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-chocolateria_cap04_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/business-plan-modelo-chocolateria/cap04_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/business-plan-modelo-chocolateria_cap04_b1.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Plan de Operaciones",
+  "epigrafes": [
+   "El local y sus zonas",
+   "El clima, que en este oficio es una partida",
+   "La capacidad del obrador",
+   "La plantilla"
+  ],
+  "puntos": [
+   "Dar la superficie total y el reparto por zonas, con el porcentaje dedicado a producción, y decir por qué en este negocio la producción pesa más que la venta.",
+   "Dar la comprobación de marcha adelante como garantía de que el plano funciona: la cobertura entra por el almacén y el producto acabado sale a la tienda sin volver atrás.",
+   "Explicar en dos frases por qué la climatización con deshumidificación tiene bloque propio en la inversión: sin ventana de temperatura y humedad estable no hay templado fiable, y sin templado fiable no hay producto.",
+   "Y decir qué NO se ha calculado y por qué: no hay coeficientes con fuente pública para un obrador de chocolate, así que el proyecto trabaja con la potencia ofertada por el instalador y un semáforo de coherencia, no con una carga térmica inventada.",
+   "Dar los bombones equivalentes al día que pide el plan y los que permite el conjunto de equipos, y nombrar el equipo que limita. Es la cifra que dice si el plan de ventas es ejecutable.",
+   "Dar la holgura sobre el día normal y explicar qué pasa en campaña: el pico no se cubre con máquina, se cubre adelantando producción de lo que aguanta.",
+   "Dar las personas, las jornadas equivalentes y el coste anual de personal, con los tres perfiles nombrados.",
+   "Dar el coste de una hora de obrador y decir para qué sirve: es la cifra que entra en todos los escandallos del proyecto."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-chocolateria_cap05_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/business-plan-modelo-chocolateria/cap05_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/business-plan-modelo-chocolateria_cap05_b1.txt",
+  "palabras_objetivo": 600,
+  "palabras_min": 432,
+  "capitulo": "Plan Financiero a Tres Años",
+  "epigrafes": [
+   "La cuenta de resultados a tres años",
+   "La tesorería del primer año",
+   "La financiación y su servicio",
+   "El punto de equilibrio"
+  ],
+  "puntos": [
+   "Dar ingresos, margen bruto, costes fijos y resultado neto de los tres años, y explicar la rampa del primero.",
+   "Dar el peso del personal sobre las ventas y el del alquiler, que son los dos ratios que un analista mira primero en un negocio con tienda.",
+   "Dar el saldo mínimo de caja del primer año y el mes en el que la caja toca fondo. Es el dato que justifica el fondo de maniobra.",
+   "Dar el saldo al cierre del mes doce y decir qué lo produce: el fondo inicial más el resultado del año, menos el servicio de la deuda.",
+   "Dar el principal, la cuota mensual y el ratio de cobertura del servicio de la deuda en su punto más bajo. Un banco mira ese ratio antes que el beneficio.",
+   "Decir qué parte de la cuota es gasto y qué parte no: sólo los intereses van a la cuenta de resultados, y la devolución del principal sale de la caja.",
+   "Dar los dos puntos de equilibrio, el contable y el de caja, con sus clientes al día y sus ingresos al mes, y explicar por qué el segundo es más alto.",
+   "Dar la holgura sobre lo previsto y leerla sin adornos: es cuánto puede caer el proyecto antes de empezar a consumir caja."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-chocolateria_cap06_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/business-plan-modelo-chocolateria/cap06_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/business-plan-modelo-chocolateria_cap06_b1.txt",
+  "palabras_objetivo": 500,
+  "palabras_min": 360,
+  "capitulo": "Riesgos y Escenarios",
+  "epigrafes": [
+   "Los tres escenarios",
+   "El riesgo de materia prima",
+   "El riesgo de estacionalidad",
+   "El riesgo regulatorio y el de ejecución"
+  ],
+  "puntos": [
+   "Dar el resultado neto en el escenario pesimista, en el realista y en el optimista, y decir que los tres comparten los MISMOS costes fijos: es lo que hace que el pesimista duela tanto.",
+   "Leer el pesimista como lo que es: la pregunta que hay que saber responder antes de firmar, no un ejercicio de prudencia decorativo.",
+   "Dar lo que costaría al año una subida fuerte del precio del cacao y el margen neto que quedaría después. Es el riesgo específico de este oficio y el que más fácil se cuantifica.",
+   "Dar la respuesta prevista en cuatro palancas —precio, gramaje, cobertura y margen— y decir cuál se activa primero.",
+   "Dar el resultado del mes de agosto y lo que cuesta frente a un mes medio, y decir que es una cifra que se provisiona, no una sorpresa.",
+   "Dar las campañas que el obrador no aguanta sin adelantar producción y explicar la palanca: adelantar lo que aguanta, reforzar con personal temporal y cerrar pedidos con fecha límite.",
+   "Nombrar el regulatorio con precisión y sin alarmismo: la norma europea del cacao se ha modificado tres veces en doce meses, y el proyecto lleva dentro una fecha de revisión y un papel definido en la cadena.",
+   "Y el de ejecución, que es el más probable: el plazo de entrega de la maquinaria crítica frente a la ruta crítica del expediente. El proyecto lo cuadra y publica el margen entre los dos."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap01_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap01_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap01_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Bombonería o Bean-to-bar",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: alguien que templa bien y que empieza a pensar que el siguiente paso natural es tostar su propio grano. Casi nunca lo es, y casi nunca por el motivo que se cree.",
+   "Lo que casi nadie calcula antes de decidir: el tren de bean-to-bar no tiene precio público verificable, así que la primera consecuencia de elegirlo es que hay que presupuestarlo pieza a pieza antes de saber si cabe.",
+   "Opción A: bombonería que compra cobertura profesional y la trabaja. Opción B: bean-to-bar que importa grano y hace su propio chocolate. Opción C: bombonería con una línea pequeña de bean-to-bar como producto de firma.",
+   "Lo que cambia en cada una: la inversión, el espacio, el papel que ocupas en la cadena del cacao, los papeles que te piden y el catálogo ambiental en el que entras si tuestas.",
+   "La regla: se decide por el papel en la cadena, no por el romanticismo del producto. Comprar cobertura te deja en una figura con obligaciones de conservar información; importar grano te convierte en operador, con diligencia debida completa y declaración presentada antes de comercializar.",
+   "El segundo filtro es de capacidad: el tren de bean-to-bar ocupa metros y horas que el obrador de bombonería necesita para producir, y compite con ellos en campaña.",
+   "La hoja de variante del formato del libro de equipamiento trae la lista de la compra del tren y las cinco preguntas que hay que hacerle al fabricante, con una columna para anotar quién las ha contestado por escrito.",
+   "Y la calculadora de inversión trae la columna de esa variante SIN cifras de maquinaria a propósito: mientras no tengas presupuestos por escrito, ese bloque se queda en blanco y el veredicto lo dice.",
+   "Si compras cobertura ya comercializada en la Unión Europea y amparada por una declaración de diligencia debida, eres operador posterior. Ese paso es una inferencia declarada, con la definición del reglamento como condición, y así se escribe.",
+   "Si importas grano, eres OPERADOR: diligencia debida completa, declaración antes de comercializar, responsabilidad asumida y registro de cinco años. Y si además tuestas, hay que preguntar a tu comunidad autónoma por el catálogo de actividades potencialmente contaminadoras."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap02_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap02_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap02_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Comprar la Continua o Empezar con la de Sobremesa",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: el presupuesto no da para todo y la atemperadora es la partida más visible. La tentación es recortar ahí porque se puede templar a mano.",
+   "Lo que casi nadie calcula: cuántos bombones al día permite cada opción, y si la que limita la producción es de verdad la máquina o es otra cosa.",
+   "Opción A: atemperadora continua de sobremesa desde el principio, con su embalaje, transporte y puesta en marcha. Opción B: atemperadora de arranque pequeña y crecer después. Opción C: empezar con la pequeña y sumar un temperador de baño maría como segunda línea.",
+   "Lo que cambia en cada una: el desembolso, los kilos por carga, el número de coberturas que puedes tener a punto a la vez y el plazo de entrega, que en la continua es el más largo de toda la dotación.",
+   "La regla: se cruza la capacidad de cada máquina con la producción que pide tu plan, en bombones equivalentes de obrador, y se mira quién limita DESPUÉS de ese cruce.",
+   "Y el hallazgo que casi siempre da la vuelta a la decisión: en una bombonería pequeña el cuello de botella casi nunca es el templado. Son las manos y el puesto de envasado, y ninguna máquina de templar los arregla.",
+   "La hoja de capacidad por equipo del libro de capacidad y clima convierte cada máquina en bombones al día y dice cuál limita el conjunto.",
+   "Y la hoja de equipamiento del libro de compra trae el plazo de entrega de cada línea: la continua es la que marca el plazo crítico, así que si se elige, se pide primero.",
+   "Aquí no hay norma que decida: es una decisión económica y de capacidad, y se dice que no la hay.",
+   "Lo único normativo que roza esta decisión es el papeleo de la instalación eléctrica y la potencia contratada, que se comprueba en la ficha de visita a local antes de firmar."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap03_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap03_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap03_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Abrir con Quince Referencias o con Veintiocho",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: se abre con todo lo que se sabe hacer, porque parece que una vitrina llena vende más. Y la vitrina llena de referencias que no rotan es una vitrina de merma.",
+   "Lo que casi nadie calcula: cada referencia nueva es un molde, un relleno, una caducidad propia, una línea más en la declaración de alérgenos y una tanda que hay que poner en marcha.",
+   "Opción A: abrir con una carta corta y ampliarla con lo que pida el mostrador. Opción B: abrir con la carta completa y podarla a los tres meses. Opción C: carta corta fija más una referencia rotatoria de temporada.",
+   "Lo que cambia en cada una: el inmovilizado en moldes y packaging, la merma por caducidad del primer trimestre y la capacidad de decir a cada cliente qué es cada cosa.",
+   "La regla: la carta se decide por margen y por rotación, no por variedad. Dos umbrales, margen mínimo por pieza y peso mínimo en el mix, y todo lo que no los pasa entra en revisión.",
+   "El segundo filtro es de vida útil: una referencia de rotación baja y caducidad corta pierde dinero dos veces, y esas son las primeras que sobran.",
+   "La hoja de decisión de surtido del libro de la carta da el veredicto referencia a referencia: mantener, revisar precio o retirar, con el margen anual de cada una al lado.",
+   "Y la hoja de lote y merma por caducidad del libro de vida útil dice cuáles tienen la tanda demasiado grande para lo que duran, que es el otro lado del mismo problema.",
+   "No hay norma que limite el número de referencias, y se dice.",
+   "Lo que sí crece con cada referencia es la obligación de información: alérgenos, denominación legal correcta y, en lo envasado, etiqueta completa. Veintiocho referencias son veintiocho decisiones de denominación."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap04_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap04_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap04_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Vender la Caja o la Unidad",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: se pone un precio redondo a la caja de doce, otro a la de veinte y otro a la de treinta y cinco, sin comprobar qué descuento por bombón supone cada uno.",
+   "Lo que casi nadie calcula: la caja tiene coste propio de montaje y de packaging, y el precio por bombón dentro de la caja grande puede quedar muy por debajo del suelto.",
+   "Opción A: precio por caja con descuento creciente por tamaño. Opción B: precio por bombón igual en todos los formatos y la caja como envase que se cobra aparte. Opción C: caja pequeña sin descuento y descuento sólo en la grande.",
+   "Lo que cambia en cada una: el ticket medio, el margen en euros por operación y la percepción de regalo, que es lo que de verdad compra el cliente de caja.",
+   "La regla: se decide con el margen en EUROS por operación, no con el porcentaje. Una caja puede tener peor porcentaje y dejar más euros que tres bombones sueltos.",
+   "Y el dato incómodo que hay que mirar de frente: comparada con vender esos mismos bombones sueltos, la caja deja menos margen. No es un error, es un descuento por volumen que el cliente no ve como descuento, y hay razones buenas para darlo.",
+   "La hoja de unidad contra caja del libro de la carta pone las dos cifras al lado: el margen de la caja y el margen de esos mismos bombones vendidos sueltos.",
+   "Y da el precio por bombón dentro de cada formato, que es la cifra con la que se compara contra el mercado y con la que se decide el descuento.",
+   "Aquí hay una norma que casi nadie asocia a esta decisión: la caja surtida tiene regla propia de etiquetado, y permite una sola lista de ingredientes para todo el surtido.",
+   "Y otra de vida útil: la caja caduca cuando caduca la pieza más corta que lleva dentro. Eso limita qué se puede meter en una caja de regalo."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap05_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap05_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap05_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Cobertura de Marca o Cobertura de Origen",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: se prueba una cobertura de origen, se nota la diferencia en boca y se decide trabajar con ella sin llevar el precio al escandallo.",
+   "Lo que casi nadie calcula: entre una cobertura profesional de marca y una de origen hay un factor que multiplica el coste de materia de cada pieza que la lleve.",
+   "Opción A: una sola cobertura de marca para toda la carta. Opción B: cobertura de origen en toda la carta. Opción C: la de marca como base y la de origen sólo en la línea de tabletas y en la referencia de firma.",
+   "Lo que cambia en cada una: el coste de materia por pieza, el precio de venta que hay que sostener, la exposición a una subida del cacao y el discurso de mostrador.",
+   "La regla: se decide por referencia, no por casa. La cobertura cara tiene sentido donde el cliente puede notarla y el precio puede subir; en un bombón relleno, el relleno tapa buena parte de lo que has pagado.",
+   "Y el filtro de riesgo: la referencia que más cobertura lleva por pieza es la que primero se rompe cuando sube el cacao, así que poner la de origen ahí concentra todo el riesgo en la misma pieza.",
+   "La hoja de coste de cobertura del libro de sensibilidad al precio del cacao da el coste de cobertura por pieza de cada referencia y el food cost de materia que produce.",
+   "Y la hoja de repercusión al precio dice qué referencia se rompe primero y qué subida aguanta cada una antes de pasarse del food cost máximo que te has puesto.",
+   "La norma no te obliga a usar una cobertura ni otra, pero sí condiciona lo que puedes escribir: los calificativos de calidad sólo caben sobre tres denominaciones y por encima de unos umbrales reforzados.",
+   "Y las tres magnitudes que la bolsa no publica —materia seca total, manteca y desgrasada— hay que pedírselas al proveedor si vas a apoyarte en la calidad del producto para justificar el precio."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap06_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap06_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap06_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Vitrina Refrigerada o Vitrina Climatizada",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: se hereda o se compra una vitrina de pastelería porque es lo que hay, y el bombón condensa al salir o se blanquea dentro.",
+   "Lo que casi nadie calcula: el chocolate tiene una ventana estrecha por arriba y por abajo, y el relleno fresco tiene otra completamente distinta.",
+   "Opción A: vitrina específica para chocolate, templada y con control de humedad. Opción B: vitrina de pastelería en frío positivo bajo. Opción C: vitrina templada para el bombón y nevera aparte para las referencias con relleno fresco.",
+   "Lo que cambia en cada una: el brillo del producto en mostrador, la condensación al despachar, la vida útil real de los rellenos y qué referencias puedes exponer.",
+   "La regla: manda el relleno, no el chocolate. Una referencia con actividad de agua alta va a nevera aunque esté cubierta de chocolate; una tableta aguanta en vitrina templada sin problema.",
+   "Y el criterio de compra: se compara el rango de trabajo que declara el fabricante con el objetivo operativo que tú te fijas, y se compra el que cubre el objetivo, no el que lo roza.",
+   "La hoja de temperatura y vitrina del libro de vida útil trae las cinco ventanas del oficio y las contrasta con el rango de TU vitrina, y dice qué referencias van a nevera en lugar de a vitrina.",
+   "El semáforo sólo avisa por encima del punto en el que la manteca empieza a sufrir: no pone en rojo el objetivo operativo que publica el kit de tareas de la casa.",
+   "No hay temperatura legal del chocolate, y se dice: la tabla de temperaturas de conservación de la norma higiénica no tiene fila para él.",
+   "Lo que sí obliga es lo que TÚ declares: en lo envasado, la temperatura que pongas en la etiqueta; en lo que se despacha a granel, lo que conste en tu sistema de autocontrol."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap07_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap07_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap07_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Aceptar el Primer Pedido Corporativo sin Histórico",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: llega una empresa en noviembre pidiendo estuches personalizados para el dieciocho de diciembre, y la tentación de decir que sí es enorme.",
+   "Lo que casi nadie calcula: el plazo mínimo desde que aprueban la muestra, el mínimo de fabricación y los días que vas a tardar en cobrar.",
+   "Opción A: aceptarlo con un mínimo de pedido y un plazo de aceptación cerrado. Opción B: rechazarlo y ofrecer producto de catálogo sin personalizar. Opción C: aceptarlo con anticipo y con fecha límite de aprobación de la muestra.",
+   "Lo que cambia en cada una: el margen, la caja inmovilizada por el aplazamiento de cobro y el riesgo de comerte la campaña de mostrador con un pedido que ocupa el obrador.",
+   "La regla: el pedido corporativo se cierra por FECHA, no por precio. Hay un día a partir del cual aceptar significa no poder servir, y ese día se calcula hacia atrás desde la capacidad del obrador.",
+   "Y el filtro que casi nadie aplica: preguntar quién es el cliente. Si es una empresa que va a revender, o un hotel inscrito en el registro general, la operación deja de ser sólo comercial.",
+   "La hoja de talleres y regalo corporativo del plan financiero da la fecha límite para aceptar un pedido corporativo y la caja que te inmoviliza el aplazamiento.",
+   "Y la tabla de clientes del libro de equipamiento es donde se anota: nombre, dirección, producto y si está inscrito en el registro general. Esa tabla se conserva cinco años.",
+   "La norma que decide: basta con que UNO de tus clientes esté inscrito en el registro general para perder el requisito de restringido, y con él la excepción que te mantiene fuera de ese registro.",
+   "Y la que casi nadie cita: hay que registrar a quién suministras, no sólo a quién compras. El regalo corporativo es justo el canal que activa las dos cosas a la vez."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap08_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap08_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap08_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Envío a Domicilio en Verano: Cuándo Dices que No",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: la tienda online funciona en Navidad y se deja abierta todo el año. Llega julio, sale un pedido de bombones de ganache y llega derretido.",
+   "Lo que casi nadie calcula: el coste del envío refrigerado sobre el pedido medio, y lo que queda de margen después de pagarlo.",
+   "Opción A: apagar el canal de junio a septiembre. Opción B: mantenerlo sólo con producto estable, sin ganache fresca. Opción C: mantenerlo entero con envío refrigerado y recargo.",
+   "Lo que cambia en cada una: el margen de contribución del canal, la reputación cuando un pedido llega mal y la carga de trabajo del obrador en el mes de menos producción.",
+   "La regla: el envío se decide por el producto, no por el calendario. Lo que aguanta el transporte se envía todo el año; lo que no aguanta no se envía nunca, ni en enero.",
+   "Y el número que decide si el canal existe: el margen de contribución del online DESPUÉS de pagar el envío. Si no aguanta ese descuento, el canal no es rentable, es publicidad cara.",
+   "La hoja de canales del plan financiero da el margen de contribución del canal online después del envío, y su veredicto.",
+   "Y la hoja de temperatura y vitrina del libro de vida útil dice qué referencias van a nevera: ésas son exactamente las que no salen en un paquete.",
+   "La norma que aplica y casi nadie asocia a este canal: fijar tú la temperatura de conservación es la ventaja y la trampa, porque respondes de mantenerla también durante el transporte.",
+   "Y la de información: en venta a distancia todo lo obligatorio menos la fecha tiene que estar disponible ANTES de que el cliente pague, alérgenos incluidos."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap09_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap09_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap09_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Parar el Obrador en Agosto o No Pararlo",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: llega agosto, baja la venta y se decide cerrar tres semanas. Y al volver hay que arrancar el obrador desde cero justo antes de la temporada alta.",
+   "Lo que casi nadie calcula: cuánto cuesta ese mes exactamente, con los gastos fijos corriendo enteros y la facturación a una fracción de la de un mes medio.",
+   "Opción A: parar el obrador y mantener la tienda abierta con producto estable. Opción B: cerrar todo y hacer vacaciones de plantilla. Opción C: mantener producción a media máquina para adelantar campaña de otoño.",
+   "Lo que cambia en cada una: el resultado del mes, el aprovechamiento de las vacaciones del equipo y el estado del stock cuando arranca la temporada.",
+   "La regla: lo que para es el OBRADOR, no la caja. La tienda sigue facturando menos, no cero, y ese menos paga una parte de los fijos que si cierras pagas igual.",
+   "Y la palanca que sí existe: cambiar el mix. Menos ganache fresca y más tableta y producto estable baja un poco el margen porcentual y quita casi toda la merma.",
+   "La hoja del valle de agosto del libro de campañas da el resultado del mes y lo que cuesta frente a un mes medio. Es una cifra que se provisiona en enero, no una sorpresa de septiembre.",
+   "Y la hoja de peso sobre el año dice cuánto factura agosto respecto a un mes medio, que es lo que hay que mirar antes de decidir si merece la pena abrir.",
+   "Aquí no hay norma que decida, y se dice: cerrar o no cerrar en agosto es una decisión de negocio.",
+   "Lo que sí hay es un matiz laboral que conviene planificar con la asesoría: las vacaciones del equipo se concentran de forma natural en este mes, y es la única ventana del año en la que eso no compite con una campaña."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap10_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap10_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap10_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "El Taller: Línea de Negocio o Marketing",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: se montan talleres porque llenan Instagram, y nadie calcula si la hora de sala ocupada por doce personas deja más o menos que esa misma hora vendiendo.",
+   "Lo que casi nadie calcula: cuántos asistentes hacen falta sólo para cubrir el coste del docente, y cuántos contando también el material.",
+   "Opción A: taller como línea de negocio, con calendario fijo y precio de mercado. Opción B: taller como marketing, puntual y a precio de coste. Opción C: taller privado para empresas, que es otro cliente y otro precio.",
+   "Lo que cambia en cada una: el aprovechamiento de la sala en hora punta, la carga de trabajo del obrador y el perfil de cliente que entra por la puerta.",
+   "La regla: se compara el margen por HORA DE SALA dando taller contra el margen por hora de sala vendiendo. Si el taller ocupa el espacio de venta en hora punta, puede salir caro aunque llene.",
+   "Y el criterio estacional, que es lo que lo hace interesante en este oficio: es la única línea que funciona en agosto y la única que no depende del precio del cacao.",
+   "La hoja de talleres y regalo corporativo del plan financiero da los asistentes necesarios para cubrir el coste y el margen por hora de sala en las dos situaciones, con su veredicto.",
+   "Y da la comprobación interna: cuántos talleres al mes hacen falta para que la línea pese lo que el plan dice que pesa.",
+   "La norma que aplica, y con su límite dicho: un taller de bombonería NO está exento del impuesto sobre el valor añadido por ser formación. Eso está cerrado.",
+   "Lo que NO está cerrado es el tipo aplicable, y por eso este documento no publica ninguno: se consulta con la asesoría antes de poner precio, no después de haberlo cobrado."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap11_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap11_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap11_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Empezar en Casa Dentro de la Legalidad",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: alguien lleva dos años haciendo bombones por encargo en su cocina y quiere facturar sin montar local. Busca en internet y encuentra dos respuestas opuestas, las dos tajantes.",
+   "Lo que casi nadie explica bien: la respuesta no es sí ni no, es «depende de tu comunidad autónoma», y el motivo está en una lista cerrada con una letra abierta al final.",
+   "Opción A: esperar y montar obrador. Opción B: comprobar si tu comunidad ha ampliado la lista y, si lo ha hecho, seguir esa vía. Opción C: alquilar horas de un obrador ajeno legalizado, que es la salida que casi nadie menciona.",
+   "Lo que cambia en cada una: el tiempo hasta la primera factura, la inversión y el techo de producción, que en la vía doméstica es bajo por definición.",
+   "La regla: se empieza por la pregunta de la comunidad autónoma, no por los kilos. Si tu comunidad no ha ampliado la lista, los umbrales de producción no se llegan a activar.",
+   "Y el criterio de crecimiento: la vía doméstica tiene un techo de volumen proporcional al tamaño de las instalaciones, así que es una rampa de salida, no un destino.",
+   "La hoja de ruta doméstica del libro legal empieza preguntando por tu comunidad y sólo activa los tres requisitos de producción si la respuesta abre la puerta.",
+   "Y da el veredicto escrito, que es la frase que hay que poder repetir delante de un inspector sin equivocarse.",
+   "La lista estatal tiene CINCO letras, y por defecto el bombón no encaja en la de panadería y repostería. Ese paso es una interpretación nuestra y así se presenta.",
+   "La quinta letra es la que decide: otros alimentos que las autoridades competentes de las comunidades autónomas permitan en sus territorios. Hay comunidades que ya la han ejercido, y la palabra exacta de su lista importa."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap12_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap12_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap12_b1.txt",
+  "palabras_objetivo": 875,
+  "palabras_min": 630,
+  "capitulo": "Qué Haces con el Chocolate que no se Vende",
+  "epigrafes": [
+   "El contexto de la decisión",
+   "Las opciones sobre la mesa",
+   "El criterio con el que se decide",
+   "La celda que lo resuelve",
+   "La norma que aplica cuando la hay"
+  ],
+  "puntos": [
+   "El caso típico: termina la campaña y quedan figuras, cajas montadas y bombones a punto de caducar. Y la decisión se toma con prisa, que es cuando peor se toma.",
+   "Lo que casi nadie calcula: cuánto cuesta al año esa merma por caducidad, referencia a referencia. Medida, casi siempre es menor de lo que se teme y está concentrada en dos o tres referencias.",
+   "Opción A: refundir lo que se puede refundir. Opción B: vender con descuento antes de la fecha. Opción C: donar lo que siga siendo apto. Opción D: tirar, que es la única que no recupera nada.",
+   "Lo que cambia en cada una: el valor recuperado, el efecto sobre el precio percibido de tu producto y las obligaciones documentales.",
+   "La regla del oficio, que es física y no opinable: el chocolate sin relleno y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo. Eso separa el problema en dos mucho antes que cualquier norma.",
+   "Y la regla de negocio: la merma por caducidad no se arregla al final, se arregla ajustando el tamaño de tanda al principio. Lo que caduca es lo que se hizo de más.",
+   "La hoja de lote y merma por caducidad del libro de vida útil da la merma anual en euros y las referencias con la tanda demasiado grande para lo que duran.",
+   "Y la hoja de merma de templado del libro de la carta da los kilos que vuelven a la cuba y los que van a residuo, con el coste de estos últimos.",
+   "La norma del desperdicio alimentario, bien leída: si eres microempresa, el apartado que cierra ese artículo te deja fuera de TODO él, plan de prevención y convenios de donación incluidos. Lo que sigue en pie no es una obligación tuya: es que cualquier cláusula contractual que prohíba donar es nula de pleno derecho.",
+   "Y la otra cara, que casi nadie cuenta: esa exclusión NO alcanza al artículo que obliga a facilitar que el cliente se lleve lo que no ha consumido. Si sirves chocolate a la taza y tienes mesas, ése te obliga aunque seas microempresa."
+  ]
+ }
+]

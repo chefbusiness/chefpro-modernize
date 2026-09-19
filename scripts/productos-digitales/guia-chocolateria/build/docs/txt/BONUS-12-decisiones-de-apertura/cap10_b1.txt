@@ -1,0 +1,39 @@
+### El contexto de la decisión
+
+El caso se repite en cualquier bombonería con vitrina —exhibidor, en Hispanoamérica— a pie de calle: se monta un calendario de talleres porque llena Instagram y da buena foto del obrador —taller o laboratorio, en ese mismo léxico; no lo confundas con el taller que le vendes al cliente, el protagonista de este capítulo—, y nadie calcula si esa hora de sala ocupada por 12 personas deja más o menos que esa misma hora vendiendo bombones sueltos.
+
+Lo que casi nadie calcula es cuántos asistentes hacen falta sólo para cubrir el coste —costo, en Hispanoamérica— del docente, y cuántos hacen falta contando también el material que cada uno se lleva. Son dos umbrales distintos, y el segundo siempre pesa más.
+
+El mercado de talleres de chocolate en España se mueve, según un agregado de operadores con web propia consultado el 12 de septiembre de 2026 (Tallerdechocolate.es, Gastronomía Activa, Club del Chocolate y Helen Chocolate), entre 25 € y 45 € por persona, con mínimo habitual de 6 asistentes y duración de 90 a 150 minutos: Madrid cobra 26 € en una clase y 45 € en otra, Valencia pide 30 € con mínimo de 6 plazas, y Murcia factura 25 € con el impuesto incluido, también con mínimo de 6. El caso modelado de este pack fija el suyo en el extremo bajo del rango, 25,00 €, con un aforo de 12 plazas por sesión.
+
+### Las opciones sobre la mesa
+
+No hay una sola forma de montar esto, hay tres:
+
+- Opción A, taller como línea de negocio: calendario fijo, plazas que se venden con antelación y precio de mercado, dentro del mismo rango de 25 € a 45 € del sector.
+- Opción B, taller como marketing: puntual, ligado a un lanzamiento o a una campaña, a precio de coste o casi. No busca margen, busca contenido y vitrina llena el día de la foto.
+- Opción C, taller privado para empresas: vive en este pack dentro de la misma hoja que el regalo corporativo, porque el cliente es otro —una empresa que paga por una actividad de equipo, no una familia por una tarde— y el precio se negocia aparte.
+
+Lo que cambia entre las tres: el aprovechamiento de la sala en hora punta, la carga de trabajo del obrador y el perfil de quien entra por la puerta. Un taller de empresa entra un martes entre semana; uno de marketing entra un sábado a mediodía, justo cuando la vitrina debería estar vendiendo sola.
+
+### El criterio con el que se decide
+
+La regla vale para las tres opciones: se compara el margen por hora de sala dando el taller contra el margen por hora de sala vendiendo, sin el taller montado encima. Si el horario elegido ya vendía bien —la hora punta de la tarde, un sábado de campaña—, el taller puede salir caro aunque se llene, porque cada plaza ocupada es una venta de mostrador que no se ha hecho.
+
+Y hay un criterio estacional que en este oficio pesa más que en ningún otro: el taller es la única línea que funciona en agosto, cuando el obrador reduce producción y la cobertura sufre con el calor, y la única que no depende del precio del cacao, porque el ingreso viene de la plaza y de la hora del docente, no del escandallo —costeo, en Hispanoamérica—. Es la herramienta que rellena el valle de verano sin tocar la parte del negocio más expuesta a la volatilidad del grano.
+
+### La celda que lo resuelve
+
+Todo esto está calculado, con el precio y el aforo de más arriba, en la hoja «Talleres y Regalo Corporativo» de plan-financiero-3-anos-chocolateria.xlsx, que da un veredicto y no un número suelto. Para cubrir sólo el coste del docente hacen falta 2,3 asistentes por sesión; contando también el material, la cifra sube a 2,7. Con un aforo de 12, ese umbral es fácil de cubrir: el riesgo real no es no cubrir costes, es no llenar el resto de las plazas con margen.
+
+Ahí está el dato que decide entre las tres opciones: el margen por hora de sala dando taller es de 67,51 €, frente a los 28,42 € por hora de sala vendiendo. El propio libro lo resume con un veredicto que conviene repetir tal cual: la hora de taller deja más que la hora vendiendo, el calendario de talleres se defiende solo. El caso modelado sitúa el ingreso anual de la línea en 9.600 €, cifra que conviene leer al lado de la tabla de abajo, con el recorrido completo desde el precio por persona hasta el margen por hora.
+
+La misma hoja lleva una comprobación interna que conviene rellenar con tus propios datos: cuántos talleres al mes hacen falta para que la línea pese en tu cuenta de resultados lo que el plan dice que debería pesar. Si el número de sesiones no encaja con el calendario real de tu obrador y de tu personal, la decisión correcta es bajar la ambición de la línea a la opción de marketing puntual.
+
+### La norma que aplica cuando la hay
+
+Aquí sí hay norma, y conviene cerrarla antes de fijar precio, no después de cobrar la primera sesión. Un taller de bombonería NO está exento del impuesto sobre el valor añadido por ser formación: la exención de enseñanza del art. 20.Uno.9.º de la Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido (BOE-A-1992-28740), texto consolidado, exige que quien imparte la clase sea una entidad de derecho público o una entidad privada autorizada, y el art. 20.Uno.10.º de la misma ley excluye expresamente las clases para cuya realización haya que darse de alta en las tarifas empresariales del impuesto de actividades económicas, que es justo tu caso si das el taller tú mismo. Eso está cerrado, comprobado el 12 de septiembre de 2026.
+
+Lo que NO está cerrado es el tipo aplicable, y por eso este documento no publica ninguno: en la hoja «0. Supuestos» del mismo plan financiero, la celda del tipo de impuesto del taller lleva escrito, literalmente, «Pregúntaselo a tu asesor». Es la frase correcta antes de imprimir un cartel con precio final, porque el tipo que apliques cambia el margen por hora de sala de más arriba.
+
+La recomendación se desprende del propio veredicto: si tu horario de valle —una mañana entre semana, un tramo de agosto— deja hoy un margen por hora peor que el del taller, móntalo como línea de negocio con calendario fijo; resérvalo como marketing puntual sólo si vas a ocupar con él una franja en la que la sala ya vendía bien, porque entonces la plaza del taller compite con la venta de mostrador en lugar de sumarse a ella.

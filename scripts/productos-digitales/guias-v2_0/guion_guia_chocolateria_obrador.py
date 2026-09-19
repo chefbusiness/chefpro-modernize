@@ -3795,7 +3795,7 @@ CAPITULOS += [
                     ['RD 1055/2022', 'Envases de servicio, recipiente del cliente y bebida reutilizable', 'Vigente, sin modificaciones'],
                     ['Ley 1/2025', 'Desperdicio alimentario', 'Vigente; el art. 6.6 deja a la microempresa fuera de todo el art. 6, y el art. 8 NO queda excluido'],
                     ['RD 1007/2023', 'Facturación verificable', 'Vigente; sus plazos son de 2027, no de este año'],
-                    ['Ley 1/2004, art. 5.2', 'Libertad horaria por superficie', 'Vigente, última modificación de octubre de 2014'],
+                    ['Ley 1/2004, art. 5.2', 'Libertad horaria por superficie', 'Vigente (texto consolidado del BOE; última modificación, octubre de 2014)'],
                     ['Ley 7/1996, art. 20', 'La regla de los treinta días del precio anterior', 'Vigente, en la redacción del RD-ley 24/2021'],
                     ['RD 193/2023', 'Accesibilidad', 'Vigente; calendario privado en 2029 y 2030'],
                     ['RD 919/2006, ITC-ICG 07', 'Inspección periódica de la instalación de gas, sólo si montas freidora de gas', 'Vigente, última modificación de septiembre de 2025'],
@@ -5479,6 +5479,17 @@ BONUS += [
 # una variable local de este guion).
 # --------------------------------------------------------------------------
 _ERRATAS_OK = (
+    # 2026-09-19, falsos positivos del detector en la primera pasada (todos correctos en contexto):
+    # ⚠️ y las CUATRO «reparaciones» automáticas de la primera pasada, todas ERRÓNEAS (revisar siempre
+    # `erratas_reparadas` del informe.json): «no sé si podré» → «poder», «reposo de levado» → «llevado»,
+    # «Selmi Cento EX» (modelo de máquina) → «Ciento», «Elche (Alicante)» (ciudad) → «Leche».
+    'podré', 'podre', 'levado', 'cento', 'elche', 'bañada', 'banada', 'bañadas', 'banadas',
+    'amunt', 'auditado', 'bájalo', 'bajalo', 'cámbiala', 'cambiala', 'coincidan', 'comprarte', 'costeos',
+    'deberán', 'deberan', 'dejara', 'digan', 'empezara', 'existan', 'helen', 'justifícalo', 'justificalo',
+    'léelo', 'leelo', 'librarte', 'llévala', 'llevala', 'llévate', 'llevate', 'móntalo', 'montalo', 'movió',
+    'movio', 'planeado', 'posventa', 'provisionado', 'ratos', 'recogió', 'recogio', 'resignación',
+    'resignacion', 'reventa', 'rodando', 'tales', 'telefonía', 'telefonia', 'trasladado', 'trátala',
+    'tratala', 'tratara', 'vendía', 'vendia', 'viajado',
     # Vocabulario del oficio del chocolate
     'obrador', 'obradores', 'bombonería', 'bomboneria', 'bombonerías',
     'bombonerias', 'bombón', 'bombon', 'bombones', 'chocolatería',

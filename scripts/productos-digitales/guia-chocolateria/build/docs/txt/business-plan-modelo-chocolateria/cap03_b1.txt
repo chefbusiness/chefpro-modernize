@@ -1,0 +1,27 @@
+### El concepto y la carta
+
+La chocolatería boutique & atelier vende bombonería de producción propia, templada en el obrador (taller o laboratorio) de la casa, sin nada envasado de fábrica en la vitrina (exhibidor). La carta se organiza en cinco familias: bombones de colección, que sostienen el margen y la imagen; tabletas (barras) bean-to-bar, para la lectura de origen; cajas de regalo, para el ticket de temporada y de empresa; chocolate a la taza, de invierno; y bombonería de diario, de impulso. El número de referencias vivas se ajusta con la rotación real del punto de venta, no con una cifra fija de apertura; lo que sí conviene fijar desde el primer día es el peso de cada familia en la facturación, porque de ahí sale el mix que alimenta todo lo demás.
+
+El chocolate a la taza revaloriza el ticket: en churrería, una ración de cuatro unidades ronda los 2,50 €, y añadirle chocolate a la taza la sube a entre 3,50 € y 4 €, un salto de entre el 40 % y el 60 % (fuente: Loomis Pay, «Rentabilidad de una churrería: ingresos y costes 2025», 2026). El mismo argumento vale para servirlo en una bombonería con mostrador de churros cerca.
+
+### El margen de la carta
+
+El precio medio ponderado de la carta, con impuesto incluido, es de 7,68 € (hoja «Mix y Ticket Medio» de carta-de-apertura-y-escandallo-chocolate.xlsx): sale del mix real de ventas, no de una media del sector. El ticket medio de mostrador sale de la misma hoja y del mismo principio, así que tampoco aquí hay media de sector que valga como referencia.
+
+El food cost de escandallo (costeo) de la carta es del 25,2 %: lo que cuesta la materia prima de la receta. El servido —el que va al plan financiero— es del 28,2 %; la diferencia son los puntos que se van en packaging y en la merma de obrador y de vitrina, un coste (costo) real que la receta no refleja. El margen bruto medio del año es del 74,8 %, y se coteja contra la única regla de margen del proyecto —la misma que ya aplica el food cost, dicha de otra manera—, nunca contra una media del sector.
+
+### La decisión de surtido
+
+De las referencias evaluadas en la hoja «Decisión de Surtido» de carta-de-apertura-y-escandallo-chocolate.xlsx, 25 quedan con veredicto de mantener y solo 1 con veredicto de retirar; el resto cae en un tercer veredicto, revisar precio, el que de verdad trabaja la carta. El veredicto sale de cruzar dos umbrales —margen mínimo por pieza y rotación mínima de venta— y solo se mantiene lo que pasa los dos a la vez. El cuadro siguiente recoge esa decisión sobre los diez bombones de colección.
+
+El margen de toda la carta en un año es de 100.615 € (hoja «Decisión de Surtido» de carta-de-apertura-y-escandallo-chocolate.xlsx): la cifra que un banco lee para entender de dónde sale el margen bruto de la cuenta de resultados, no del volumen vendido sino del mix de familias que sostiene el precio medio ponderado. La familia de bombones de colección, la que sostiene el margen, es la que más aporta a esa cifra; tabletas y cajas de regalo la completan, y la bombonería de diario mueve el mostrador sin sostener el año.
+
+El mercado ya resuelve la escalera de precio por formato de las cajas de regalo: una caja de 12 bombones cuesta 20,00 € (1,67 €/ud), la de 20 cuesta 28,00 € (1,40 €/ud) y la de 35 cuesta 45,00 € (1,29 €/ud); el precio por bombón baja un 23 % de la caja pequeña a la grande (fuente: Confitería Gascón, 2026).
+
+### La materia prima y su riesgo
+
+El 86,5 % del coste de materia prima de la carta es cobertura (hoja «Coste de Cobertura» de sensibilidad-al-precio-del-cacao.xlsx): esa es la exposición real del proyecto al precio del cacao, no una cotización de bolsa. El cuadro siguiente muestra las cuatro coberturas ya convertidas a base imponible, para que el escandallo se calcule siempre en el mismo terreno. Callebaut 811, al 54,5 % de cacao, se publica con el impuesto incluido, a 25,02 €/kg en un bloque de 5 kg (fuente: Planeta Torta, 2026); usarla tal cual sube el coste de materia casi un diez por ciento.
+
+La cobertura Valrhona en pepitas, sin base de impuesto declarada por su fuente, sale a 37,48 €/kg (fuente: Club del Chocolate, 2026): un factor de aproximadamente 1,5 frente a Callebaut 811, decisión de gama y no una constante del mercado.
+
+Gestionar ese riesgo no es dramatizar con la cotización del cacao en prensa: la calculadora de sensibilidad trabaja con escenarios de precio ya calculados sobre la cobertura que realmente compras, y ofrece cuatro caminos de respuesta según cuánto suba el coste de materia. La misma hoja identifica una referencia como la primera que se rompe si el precio sigue subiendo, la que menos margen deja por pieza, y por tanto la primera candidata a subir de precio o a salir del surtido.

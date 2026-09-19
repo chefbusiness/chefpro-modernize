@@ -185,8 +185,9 @@ F_KIT_TEMPLADO = 'kit-tareas-chocolateria/02-partidas-produccion.xlsx!Templado'
 F_KIT_MOLDEADO = 'kit-tareas-chocolateria/02-partidas-produccion.xlsx!Moldeado'
 F_KIT_PERFILES = 'kit-tareas-chocolateria/04-tareas-perfiles.xlsx'
 F_KIT_CALENDARIO = 'kit-tareas-chocolateria/BONUS-02-calendario-anual-tareas.xlsx!Calendario'
-F_KIT_08_APERTURA = 'kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx!Apertura del Negocio'
-F_KIT_01_APERTURA = 'kit-tareas-chocolateria/01-apertura-cierre.xlsx!Apertura'
+F_KIT_08_APERTURA = ('kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, '
+                     'hoja «Apertura del Negocio»')
+F_KIT_01_APERTURA = 'kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura»'
 
 #: Nombres LITERALES de los tres perfiles del kit: son los nombres de las HOJAS de
 #: `04-tareas-perfiles.xlsx`, verificados abriendo el fichero el 12-09-2026.
