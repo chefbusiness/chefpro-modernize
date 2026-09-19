@@ -6,8 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, BriefcaseBusiness, Calculator, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid,
-} from 'lucide-react';
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid,, ConciergeBell, Leaf, PartyPopper, Sandwich, ShoppingCart, Sprout, Store, Thermometer} from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
 const ALL_TAGS = [
@@ -957,6 +956,28 @@ const products = [
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Octubre 2026' },
+  { icon: Coffee, name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
+  { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
+  { icon: UtensilsCrossed, name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Rutinas de plancha, salsas y tortilla, turnos y cierre para una taquería que funciona sola.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },
+  { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
+  { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
+  { icon: PartyPopper, name: 'Plan de Negocio: Finca de Eventos y Bodas', desc: 'Aforo, packs de menú cerrado, estacionalidad de bodas y personal por servicio: el plan completo.', tags: ['plan-negocio', 'catering', 'excel'], phase: 'Q1 2027' },
+  { icon: Flame, name: 'Tareas Recurrentes: Pollería y Pollo a la Brasa', desc: 'Espetones, tiempos de asado, mermas y despacho en hora punta, con las rutinas de cada turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
+  { icon: Utensils, name: 'Tareas Recurrentes: Arepería', desc: 'Masa, rellenos, plancha y cierre: el día a día de una arepería puesto por escrito, turno a turno.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q1 2027' },
+  { icon: Pizza, name: 'Plan de Negocio: Pizzería Napolitana', desc: 'Masa madre, horno y rotación de mesas: el plan completo para abrir una napolitana.', tags: ['plan-negocio', 'pizzeria', 'excel'], phase: 'Q1 2027' },
+  { icon: Beef, name: 'Plan de Negocio: Steakhouse / Restaurante de Carnes', desc: 'Local fijo con cámara de maduración y brasa: inversión, carta, escandallo y previsión.', tags: ['plan-negocio', 'restaurante', 'excel'], phase: 'Q1 2027' },
+  { icon: ShoppingCart, name: 'Calculadora de Comisiones de Delivery', desc: 'Mete tu comisión y tu carta y descubre a qué precio deja de salirte a cuenta cada plataforma.', tags: ['excel', 'costes', 'dark-kitchen'], phase: 'Q1 2027' },
+  { icon: Leaf, name: 'Tareas Recurrentes: Poke Bowl / Healthy Bowl', desc: 'Mise en place de bases y toppings, cadena de frío, turnos y cierre para un local de bowls.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Próximamente' },
+  { icon: Sprout, name: 'Tareas Recurrentes: Restaurante Vegetariano / Plant-Based', desc: 'Producción de bases vegetales, alérgenos, turnos y cierre para un restaurante plant-based.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Próximamente' },
+  { icon: ConciergeBell, name: 'Plan de Negocio: Cortador de Jamón para Eventos', desc: 'Monta tu servicio de corte en bodas y ferias: tarifas, equipo y cálculo de raciones por evento.', tags: ['plan-negocio', 'catering', 'gastro-movil'], phase: 'Próximamente' },
+  { icon: Coffee, name: 'Plan de Negocio: Cafetería Móvil para Eventos', desc: 'Café de especialidad en eventos de empresa, bodas y ferias: inversión mínima, tarifas y logística.', tags: ['plan-negocio', 'cafeteria', 'gastro-movil'], phase: 'Próximamente' },
+  { icon: Truck, name: 'Plan de Negocio: Pizzero Móvil con Horno de Leña', desc: 'Horno de leña sobre remolque para bodas y ferias: equipo, masas, tarifas y logística.', tags: ['plan-negocio', 'pizzeria', 'gastro-movil'], phase: 'Próximamente' },
+  { icon: Star, name: 'Kit de Análisis de Reseñas con IA', desc: 'Plantilla y prompts para tus agentes: exporta o pega tus reseñas, clasifícalas por tema y ve qué repiten.', tags: ['excel', 'ia', 'gestion'], phase: 'Próximamente' },
+  { icon: Users, name: 'Manual del Empleado de Hostelería', desc: 'Manual de acogida, normas de casa, higiene, formación por puesto y modelos orientativos adaptables a tu convenio.', tags: ['manuales', 'gestion', 'pdf'], phase: 'Próximamente' },
+  { icon: CakeSlice, name: 'Plan de Negocio: Pastelería y Obrador', desc: 'El plan financiero del obrador: inversión, producción, mostrador y precios de venta.', tags: ['plan-negocio', 'pasteleria', 'excel'], phase: 'Próximamente' },
+  { icon: Thermometer, name: 'Cocina al Vacío Profesional eBook', desc: 'Tablas de tiempo y temperatura por producto, pasteurización, APPCC del envasado y regeneración.', tags: ['pdf', 'restaurante', 'seguridad'], phase: 'Próximamente' },
+  { icon: Fish, name: 'Cómo Montar una Marisquería', desc: 'Vivero, lonja, depuración y sala: la guía completa para abrir una marisquería, con sus plantillas.', tags: ['pdf', 'guias', 'restaurante'], phase: 'Próximamente' },
+  { icon: Store, name: 'Cómo Montar una Carnicería Boutique', desc: 'Maduración, corte y mostrador de autor: la guía para abrir una carnicería premium con cocina.', tags: ['pdf', 'guias', 'gestion'], phase: 'Próximamente' },
 ];
 
 const PRODUCTS_PER_PAGE = 12;

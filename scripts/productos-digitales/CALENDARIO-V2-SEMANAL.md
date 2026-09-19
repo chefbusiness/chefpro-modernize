@@ -234,16 +234,59 @@ el 49: seis FAQ de `use-cases-content.*.consultor.ts` (7 idiomas) publican inver
 
 Las semanas con **producto nuevo** (§3) van INTERCALADAS: cuando toque una, la v2.0 de esa semana se salta (no se hacen las dos).
 
-## 3. Micro-proyecto «productos nuevos» (Hoja 4 del catálogo `/Users/johnguerrero/productos-digitales/`)
+## 3. Micro-proyecto «productos nuevos» — COLA ANUNCIADA en el hub el 19-sep-2026 (John)
 
-Cola real (la guía de panadería/obrador ya salió el 14-may): **5 productos**. Orden propuesto por demanda y reutilización
-de motores ya construidos (John decide):
-1. **Guía Food Cost + Ingeniería de Menú** (guía técnica premium) — reutiliza `escandallo-maestro` y `menu-engineering-matrix` v2.0 y el bono de food cost de escandallos; es lo más buscado (keywords ya medidas en 8D).
-2. **Manual del Manager de Restaurante** (manual operativo) — reutiliza kit-gestion-personal y kit-tareas.
-3. **Manual del Chef Ejecutivo** — reutiliza brigada/turnos y APPCC.
-4. **Cómo Montar una Pastelería** (guía premium) — sobre el motor de guías + kit-tareas-pasteleria v2.0.
-5. **Cómo Montar una Chocolatería** — idem + kit-tareas-chocolateria.
-6. *(candidato ANOTADO el 12-sep por la decisión D3 de Chocolatería; no se hace ni se anuncia hasta que John lo decida)* **Cómo Montar una Churrería-Chocolatería** — la chocolatería de taza y churros, que en la Guía de Chocolatería entra sólo como epígrafe del cap. 01 + columna de escenario en CAPEX y P&L.
+De la cola original de la Hoja 4 (5 productos) **4 ya están LIVE** (Food Cost 4-sep, Manual Manager 5-sep, Manual Chef
+Ejecutivo 6-sep, Pastelería 12-sep) y queda la **Chocolatería** (A2+B1 hecha; falta B2+C en local). El 19-sep John
+ordenó publicar en «Próximos Productos» del hub la Churrería-Chocolatería, el Plan de Negocio Heladería y **las 20
+mejores ideas del banco de 161** (Hoja 6 del catálogo maestro), elegidas por un panel de 3 jueces opus (demanda ·
+reutilización de motores · negocio y catálogo) + 2 refutadores contra los 48 LIVE. Criterio de John: **volumen de
+búsqueda 0 no descalifica** (se descubre en el catálogo y posiciona sin competencia); el veto es canibalizar lo LIVE.
+El Excel maestro (`/Users/johnguerrero/productos-digitales/…RoadmapExpansion.xlsx`, Hojas 4, 6 y 7) quedó actualizado
+ese día; copia previa en `…BACKUP-2026-09-19.xlsx`.
+
+**Orden de construcción = orden de esta tabla** (sesiones pares; ~1 producto/semana). Las fechas de las tarjetas solo
+van en las dos primeras olas; el resto sale como «Próximamente» a propósito (la Chocolatería llegó a decir «Junio 2026»
+tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
+
+| Producto (nombre de la tarjeta) | Familia | Precio | Ola |
+|---|---|---|---|
+| Cómo Montar una Chocolatería | Guías Cómo Montar | 65 € | Octubre 2026 |
+| Cómo Montar una Churrería-Chocolatería | Guías Cómo Montar | 65 € | Q4 2026 |
+| Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
+| Tareas Recurrentes: Taquería Mexicana | Kits de tareas | 12 € | Q4 2026 |
+| Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
+| Plan de Negocio: Hamburguesería Smash | Planes de negocio | 35 € | Q4 2026 |
+| Plan de Negocio: Finca de Eventos y Bodas | Planes de negocio | 45 € | Q1 2027 |
+| Tareas Recurrentes: Pollería y Pollo a la Brasa | Kits de tareas | 12 € | Q1 2027 |
+| Tareas Recurrentes: Arepería | Kits de tareas | 12 € | Q1 2027 |
+| Plan de Negocio: Pizzería Napolitana | Planes de negocio | 35 € | Q1 2027 |
+| Plan de Negocio: Steakhouse / Restaurante de Carnes | Planes de negocio | 35 € | Q1 2027 |
+| Calculadora de Comisiones de Delivery | Kits de gestión | 9 € | Q1 2027 |
+| Tareas Recurrentes: Poke Bowl / Healthy Bowl | Kits de tareas | 12 € | Próximamente |
+| Tareas Recurrentes: Restaurante Vegetariano / Plant-Based | Kits de tareas | 12 € | Próximamente |
+| Plan de Negocio: Cortador de Jamón para Eventos | Planes de negocio | 45 € | Próximamente |
+| Plan de Negocio: Cafetería Móvil para Eventos | Planes de negocio | 45 € | Próximamente |
+| Plan de Negocio: Pizzero Móvil con Horno de Leña | Planes de negocio | 45 € | Próximamente |
+| Kit de Análisis de Reseñas con IA | Kits de gestión | 19 € | Próximamente |
+| Manual del Empleado de Hostelería | Manuales | 55 € | Próximamente |
+| Plan de Negocio: Pastelería y Obrador | Planes de negocio | 35 € | Próximamente |
+| Cocina al Vacío Profesional eBook | eBooks | 24 € | Próximamente |
+| Cómo Montar una Marisquería | Guías Cómo Montar | 65 € | Próximamente |
+| Cómo Montar una Carnicería Boutique | Guías Cómo Montar | 65 € | Próximamente |
+
+Notas de la refutación que condicionan el guion de cada uno: el **Cuadro de Mando** es OPERATIVO (ventas por franja,
+ticket, rotación, productividad), no financiero — los ratios financieros ya los vende el Kit Plan Financiero ·
+**Reseñas con IA** = plantilla + prompts de usuario final, exportación/copia manual (nada de raspar Google) ·
+**Manual del Empleado**: modelos ORIENTATIVOS adaptables al convenio provincial, con descargo legal; nunca «listos
+para firmar» · **Comisiones de Delivery**: tarifas en hoja de parámetros editable y fechada · **Carnicería boutique**
+(retail, no hostelería): research normativo ANTES de comprometer el guion; si no reutiliza el APPCC hostelero,
+sustituir por la Quesería boutique · **Marisquería**: esfuerzo L (vivero, lonja, depuración, moluscos vivos) ·
+**Cafetería móvil / Pizzero móvil / Cortador de jamón**: línea B a 45 €, siempre «para eventos» (no calle) para no
+pisar el Plan Food Truck · **Taquería / Pollería / Arepería / Poke / Plant-based**: réplicas de 1 sesión con el
+motor de Kit de Tareas; antes de la primera, decidir si el **Mega Pack (89 €, «13 kits») pasa a incluir los nuevos**
+(hoy ya hay 19 kits LIVE fuera de esa cifra) · Suplentes por si cae alguno: Sushi pop-up para eventos (#147), Mesa
+dulce para bodas (#151), Quesería boutique (#99).
 
 **Método por producto nuevo, en 3 semanas de 1 sesión cada una** (memoria `feedback_research-previo-producto-nuevo`, `feedback_productos-completos-investigados`,
 `feedback_digital-products-non-negotiables`, skill `digital-product-launch`):
