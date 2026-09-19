@@ -155,7 +155,7 @@ def cita_legal(id_chn):
     fuente de verdad de lo legal (SPEC §2.3, regla 1) y MANDA sobre la síntesis.
 
     Existe porque `datos_ejemplo.py` publica algunos entrecomillados con los
-    acentos quitados —p. ej. `NOTA_644_5` dice «la fabricacion de bombones…»
+    acentos quitados —p. ej. `NOTA_644_5` dice «la fabricación de bombones…»
     donde el BOE dice «La fabricación de bombones…»—, y un texto entre comillas
     que no coincide con la norma deja de ser una cita. Devuelve `None` si el id
     no trae cita literal, para que el llamante decida.

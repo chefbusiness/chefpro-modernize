@@ -1,0 +1,2648 @@
+{
+  "_meta": {
+    "pid": "guia-chocolateria-obrador",
+    "generado": "2026-09-19 15:36",
+    "salida": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs",
+    "xlsx_dir": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/guia-chocolateria-obrador",
+    "modelo": "anthropic/claude-sonnet-4.6",
+    "research": "2026-08-29",
+    "research_ausente": false,
+    "erratas_reparadas": [],
+    "erratas_reparadas_n": 0
+  },
+  "documentos": {
+    "guia-chocolateria-obrador": {
+      "gates": {
+        "paginas_pdf": 111,
+        "paginas_prometidas": 90,
+        "palabras_md": 59666,
+        "palabras_pdf": 59334,
+        "palabras_docx": 56627,
+        "palabras_objetivo": 37000,
+        "capitulos": 21,
+        "tablas_md": 51,
+        "tablas_docx": 51,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 55574,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 57003,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar una Chocolatería Boutique & Atelier"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar una Chocolatería Boutique & Atelier",
+          "created": "2026-09-19 15:36:23"
+        },
+        "paridad_palabras_pct": 0.66,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 521,
+        "ficheros": {
+          "md": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/guia-chocolateria-obrador.md",
+          "docx": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/guia-chocolateria-obrador.docx",
+          "pdf": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/guia-chocolateria-obrador.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Qué Negocio Estás Montando: las Doce Variantes y Cuál te Toca",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-03",
+            "CHS-07",
+            "CHS-08",
+            "CHS-10",
+            "CHS-12",
+            "CHN-72",
+            "CHN-49c"
+          ],
+          "sector_huecos": [
+            "CHS-01",
+            "CHS-02",
+            "CHS-04",
+            "CHS-05",
+            "CHS-06",
+            "CHS-09",
+            "CHS-11"
+          ],
+          "cifras": [
+            [
+              "Superficie total del local del caso modelado",
+              "75",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B16"
+            ],
+            [
+              "Metros dedicados a producción en el caso modelado",
+              "45",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D17"
+            ],
+            [
+              "Bombones equivalentes al día que salen del obrador en velocidad de crucero",
+              "472",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B14"
+            ],
+            [
+              "Inversión total de la variante de bombonería con obrador y tienda",
+              "150.492 €",
+              "calculadora-capex-chocolateria.xlsx!Variante del Formato!E7"
+            ],
+            [
+              "Precio verificado de la chocolatera de la variante de taza",
+              "527 €",
+              "calculadora-capex-chocolateria.xlsx!Variante del Formato!E37"
+            ],
+            [
+              "Veredicto del bean-to-bar en el caso modelado",
+              "No es tu variante: no hay nada que presupuestar",
+              "calculadora-capex-chocolateria.xlsx!Variante del Formato!E33"
+            ],
+            [
+              "Ventas anuales sin IVA del caso modelado en velocidad de crucero",
+              "199.088 €",
+              "campanas-y-valle-del-ano.xlsx!Parámetros!B7"
+            ],
+            [
+              "Referencias de la carta con veredicto de mantener",
+              "25",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B37"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "El Cliente y la Plaza: Quién Compra Chocolate, Cuándo y a Qué Precio",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-13",
+            "CHS-14",
+            "CHS-16",
+            "CHS-17",
+            "CHS-18",
+            "CHS-19",
+            "CHS-20",
+            "CHS-21",
+            "CHS-22",
+            "CHS-23"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Clientes al día del caso modelado en velocidad de crucero",
+              "67",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B6"
+            ],
+            [
+              "Piezas por ticket",
+              "1,4",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B7"
+            ],
+            [
+              "Ticket medio sin IVA del caso modelado",
+              "9,77 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B10"
+            ],
+            [
+              "Ventas del mes más alto del año, diciembre",
+              "23.891 €",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E18"
+            ],
+            [
+              "Ventas del mes más bajo del año, agosto",
+              "9.954 €",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E14"
+            ],
+            [
+              "Peso de diciembre sobre las ventas del año",
+              "12,0 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F18"
+            ],
+            [
+              "Peso de agosto sobre las ventas del año",
+              "5,0 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F14"
+            ],
+            [
+              "Peso de las doce campañas sobre las ventas del año",
+              "26,6 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!D35"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "La Carta de Apertura: las Referencias, las Familias y la Caja",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-29",
+            "CHS-32",
+            "CHS-25c"
+          ],
+          "sector_huecos": [
+            "CHS-11"
+          ],
+          "cifras": [
+            [
+              "PVP medio ponderado de la carta con IVA",
+              "7,68 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B37"
+            ],
+            [
+              "Ticket medio con IVA de todo el año",
+              "10,75 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B40"
+            ],
+            [
+              "Precio por bombón dentro de la caja de doce, con IVA",
+              "1,67 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C33"
+            ],
+            [
+              "Precio por bombón dentro de la caja de treinta y cinco, con IVA",
+              "1,29 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E33"
+            ],
+            [
+              "Descuento implícito de la caja de treinta y cinco",
+              "36,4 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E35"
+            ],
+            [
+              "Referencias con veredicto de mantener",
+              "25",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B37"
+            ],
+            [
+              "Referencias con veredicto de revisar precio",
+              "2",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B38"
+            ],
+            [
+              "Referencias con veredicto de retirar",
+              "1",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B39"
+            ],
+            [
+              "Margen de toda la carta al año",
+              "100.615 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!G35"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Cuánto Cuesta Abrir: la Inversión Real, Partida a Partida",
+          "tablas": 3,
+          "sector_usado": [
+            "CHS-03",
+            "CHS-58",
+            "CHN-62",
+            "CHN-62b",
+            "CHN-62c"
+          ],
+          "sector_huecos": [
+            "CHS-47a",
+            "CHS-47b"
+          ],
+          "cifras": [
+            [
+              "Inversión total del caso modelado, sin IVA",
+              "150.492 €",
+              "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L40"
+            ],
+            [
+              "Inversión sin el fondo de maniobra, que es la que viaja al plan financiero",
+              "89.219 €",
+              "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L44"
+            ],
+            [
+              "Fondo de maniobra, que es caja y no inversión",
+              "61.273 €",
+              "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L45"
+            ],
+            [
+              "Subtotal comparable con un presupuesto de obra y equipamiento",
+              "77.795 €",
+              "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!L48"
+            ],
+            [
+              "IVA soportado de toda la inversión",
+              "17.913 €",
+              "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!M40"
+            ],
+            [
+              "Desembolso total con IVA incluido",
+              "168.405 €",
+              "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!N40"
+            ],
+            [
+              "Aportación propia necesaria además de la financiación",
+              "78.105 €",
+              "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B27"
+            ],
+            [
+              "Kilos al mes de plástico no reciclado del caso modelado",
+              "3,2",
+              "calculadora-capex-chocolateria.xlsx!Parámetros!B19"
+            ],
+            [
+              "Umbral mensual de la exención del impuesto al plástico",
+              "5",
+              "calculadora-capex-chocolateria.xlsx!Parámetros!B20"
+            ],
+            [
+              "Alerta del impuesto al plástico en el caso modelado",
+              "Sin alerta",
+              "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B37"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "El Local: Metros, Zonas y la Ficha de Visita",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-03",
+            "CHS-58",
+            "CHS-37a",
+            "CHS-38a"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Superficie total del local del caso modelado",
+              "75",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B16"
+            ],
+            [
+              "Metros del obrador de templado y moldeado",
+              "26",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D6"
+            ],
+            [
+              "Metros de la cámara de chocolate",
+              "6",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D7"
+            ],
+            [
+              "Metros de tienda y mostrador",
+              "22",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D19"
+            ],
+            [
+              "Parte del local dedicada a producción",
+              "60 %",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D18"
+            ],
+            [
+              "Veredicto del reparto de metros",
+              "Reparto suficiente",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D22"
+            ],
+            [
+              "Veredicto de la marcha adelante",
+              "Marcha adelante correcta",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D34"
+            ],
+            [
+              "Potencia eléctrica instalada prevista",
+              "28",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B18"
+            ],
+            [
+              "Ítems eliminatorios de la ficha de visita",
+              "6",
+              "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E26"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Antes de Firmar: el Obrador sin Humos Cambia la Conversación de la Licencia",
+          "tablas": 2,
+          "sector_usado": [
+            "CHN-45",
+            "CHN-46",
+            "CHN-49",
+            "CHN-49b",
+            "CHN-91",
+            "CHS-37a",
+            "CHS-37b",
+            "CHS-37c",
+            "CHS-38a",
+            "CHS-38b",
+            "CHS-38c",
+            "CHS-38d",
+            "CHS-38e",
+            "CHS-58"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Umbral estatal de superficie por debajo del cual no cabe exigir licencia previa de actividad",
+              "750",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B24"
+            ],
+            [
+              "Superficie de exposición y venta medida en el local del caso",
+              "22",
+              "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!F10"
+            ],
+            [
+              "Ítems de la ficha de visita a local",
+              "18",
+              "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E25"
+            ],
+            [
+              "Motivos de descarte del local en el caso modelado",
+              "0",
+              "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E27"
+            ],
+            [
+              "Ítems pendientes de comprobar",
+              "2",
+              "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E29"
+            ],
+            [
+              "Veredicto del local del caso modelado",
+              "NO DECIDAS TODAVÍA",
+              "capacidad-obrador-y-clima.xlsx!Ficha de Visita a Local!E32"
+            ],
+            [
+              "Coste total del traspaso en el horizonte de comparación",
+              "111.100 €",
+              "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C19"
+            ],
+            [
+              "Coste total de la obra nueva en el mismo horizonte",
+              "160.995 €",
+              "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C20"
+            ],
+            [
+              "Veredicto de traspaso contra obra nueva",
+              "Sale mejor el TRASPASO",
+              "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!C22"
+            ],
+            [
+              "Traspasos de la muestra que publican la renta",
+              "3",
+              "calculadora-capex-chocolateria.xlsx!Traspaso vs Obra Nueva!D34"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "El Clima del Obrador: por Qué el Chocolate Manda Sobre el Local",
+          "tablas": 2,
+          "sector_usado": [
+            "CHN-30",
+            "CHN-87",
+            "CHN-30b",
+            "CHS-44",
+            "CHS-43"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Temperatura mínima objetivo del obrador al templar",
+              "18",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!B7"
+            ],
+            [
+              "Temperatura máxima objetivo del obrador al templar",
+              "20",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!C7"
+            ],
+            [
+              "Humedad máxima objetivo del obrador",
+              "60",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!E7"
+            ],
+            [
+              "Temperatura máxima objetivo de la cámara de conservación",
+              "18",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!C8"
+            ],
+            [
+              "Temperatura máxima objetivo de la vitrina",
+              "18",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!C11"
+            ],
+            [
+              "Ventanas climáticas incoherentes entre sí en el caso modelado",
+              "0",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F20"
+            ],
+            [
+              "Salto de temperatura que tiene que vencer el equipo en agosto",
+              "16",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F25"
+            ],
+            [
+              "Semáforo de coherencia del clima en el caso modelado",
+              "PIDE LA OFERTA POR ESCRITO",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F33"
+            ],
+            [
+              "Preguntas de la ficha del instalador",
+              "10",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F48"
+            ],
+            [
+              "Veredicto de la ficha del instalador",
+              "No has preguntado nada todavía",
+              "capacidad-obrador-y-clima.xlsx!Clima del Obrador!F51"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Maquinaria: Atemperadora, Enrobadora y Moldes",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-41a",
+            "CHS-41b",
+            "CHS-41c",
+            "CHS-41d",
+            "CHS-41e",
+            "CHS-41f",
+            "CHS-41g",
+            "CHS-41h",
+            "CHS-41i",
+            "CHS-41j",
+            "CHS-42a",
+            "CHS-42b",
+            "CHS-42i",
+            "CHS-43",
+            "CHS-45a",
+            "CHS-46a"
+          ],
+          "sector_huecos": [
+            "CHS-48"
+          ],
+          "cifras": [
+            [
+              "Precio de referencia de la atemperadora continua de sobremesa",
+              "8.500 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I15"
+            ],
+            [
+              "Bombones al día de obrador que permite esa atemperadora",
+              "4.368",
+              "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M6"
+            ],
+            [
+              "Total de referencia sin IVA de las líneas críticas",
+              "52.299 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I35"
+            ],
+            [
+              "Total de referencia sin IVA de todas las líneas",
+              "54.952 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I36"
+            ],
+            [
+              "IVA soportado sobre el precio real de la compra",
+              "11.540 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I40"
+            ],
+            [
+              "Desembolso real con IVA de la dotación",
+              "66.491 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I41"
+            ],
+            [
+              "Líneas que sólo pueden publicarse como rango",
+              "1",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I42"
+            ],
+            [
+              "Líneas que son un «desde» y hay que presupuestar",
+              "1",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I43"
+            ],
+            [
+              "Plazo crítico de entrega, en semanas",
+              "10",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I53"
+            ],
+            [
+              "Línea que marca el plazo crítico",
+              "Atemperadora continua de sobremesa, 12 kg (55 kg/h)",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I54"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Licencias, Sanidad y Registro: el Camino Completo",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-39",
+            "CHN-40",
+            "CHN-40b",
+            "CHN-41",
+            "CHN-42",
+            "CHN-43",
+            "CHN-44",
+            "CHN-44-int",
+            "CHN-44b",
+            "CHN-90",
+            "CHN-52",
+            "CHN-53",
+            "CHN-87",
+            "PA-29c"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Régimen sanitario del caso modelado",
+              "Comercio al por menor: EXCLUIDO del RGSEAA",
+              "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B12"
+            ],
+            [
+              "Trámite sanitario que le toca",
+              "Comunicación o declaración responsable al registro de tu comunidad autónoma",
+              "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B13"
+            ],
+            [
+              "¿Ese trámite habilita para abrir?",
+              "NO. La comunicación autonómica no habilita: ni tienes que esperar respuesta, ni te protege si el resto no está en regla",
+              "checklist-legal-licencias-y-cacao.xlsx!Árbol de Registro Sanitario!B14"
+            ],
+            [
+              "Umbral de la primera vía de marginalidad, sobre el volumen anual",
+              "25 %",
+              "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B20"
+            ],
+            [
+              "Umbral de la segunda vía de marginalidad, en kilos a la semana",
+              "500",
+              "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B23"
+            ],
+            [
+              "Veredicto del artículo 3 en el caso modelado",
+              "Cumples las tres: sigues FUERA del RGSEAA, con la declaración responsable y el registro del art. 3.5",
+              "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B41"
+            ],
+            [
+              "Tope absoluto de kilos a la semana de la ruta doméstica",
+              "100",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B23"
+            ],
+            [
+              "Veredicto de la ruta doméstica en el caso modelado",
+              "Con la lista estatal en la mano, la ruta doméstica no está abierta para el bombón en tu comunidad",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B32"
+            ],
+            [
+              "Trámites del expediente legal completo",
+              "33",
+              "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D58"
+            ],
+            [
+              "Trámites que cambian según la comunidad autónoma",
+              "7",
+              "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!D66"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Cómo Puedes Llamar a lo que Vendes: las Denominaciones Legales del Cacao",
+          "tablas": 2,
+          "sector_usado": [
+            "CHN-01",
+            "CHN-02",
+            "CHN-03",
+            "CHN-03b",
+            "CHN-04",
+            "CHN-05",
+            "CHN-06",
+            "CHN-06b",
+            "CHN-07",
+            "CHN-08",
+            "CHN-09",
+            "CHN-10",
+            "CHN-11",
+            "CHN-12",
+            "CHN-13",
+            "CHN-14",
+            "CHN-15",
+            "CHN-15b",
+            "CHN-53",
+            "CHN-55",
+            "CHN-81",
+            "CHN-82",
+            "CHN-83"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Chocolate mínimo sobre el peso total del bombón",
+              "25 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B38"
+            ],
+            [
+              "Materia seca total de cacao mínima del chocolate a la taza",
+              "35 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B39"
+            ],
+            [
+              "Manteca de cacao mínima del chocolate a la taza",
+              "18 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B40"
+            ],
+            [
+              "Materia seca desgrasada mínima del chocolate a la taza",
+              "14 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B41"
+            ],
+            [
+              "Chocolate sobre el peso total del bombón de ganache negra",
+              "45,8 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L7"
+            ],
+            [
+              "Chocolate sobre el peso total de la trufa",
+              "30,8 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L11"
+            ],
+            [
+              "Chocolate sobre el peso total de la tableta rellena",
+              "55,0 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L22"
+            ],
+            [
+              "Materia seca total de cacao de la cobertura negra del caso",
+              "54,5 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B45"
+            ],
+            [
+              "Manteca de cacao de esa misma cobertura",
+              "31,0 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!C45"
+            ],
+            [
+              "Materia seca desgrasada de esa misma cobertura",
+              "23,5 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!D45"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Cacao, Cadmio y Deforestación: Qué te Pide la Norma y Qué le Pides a tu Proveedor",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-16",
+            "CHN-16b",
+            "CHN-17",
+            "CHN-18",
+            "CHN-19",
+            "CHN-20",
+            "CHN-21",
+            "CHN-22",
+            "CHN-23",
+            "CHN-24",
+            "CHN-25",
+            "CHN-26",
+            "CHN-27",
+            "CHN-28",
+            "CHN-29",
+            "CHN-47",
+            "CHN-47b",
+            "CHN-60",
+            "CHN-84",
+            "CHN-85",
+            "CHN-86"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "¿Tiene el bombón límite propio de cadmio?",
+              "No",
+              "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B9"
+            ],
+            [
+              "Analíticas propias al año en el caso modelado",
+              "1",
+              "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B22"
+            ],
+            [
+              "Coste anual de esas analíticas",
+              "90 €",
+              "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B23"
+            ],
+            [
+              "Parte de tus lotes que cubren esas analíticas",
+              "16,7 %",
+              "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B24"
+            ],
+            [
+              "Veredicto del cadmio en el caso modelado",
+              "Sin boletín del proveedor, la analítica propia es tu única prueba: pídesela a él antes de pagarla tú",
+              "checklist-legal-licencias-y-cacao.xlsx!Cadmio y Analíticas!B25"
+            ],
+            [
+              "Fecha de verificación de la hoja del reglamento de deforestación",
+              "12-09-2026",
+              "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B6"
+            ],
+            [
+              "De dónde viene el cacao en el caso modelado",
+              "Compro cobertura ya comercializada en la UE",
+              "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B12"
+            ],
+            [
+              "¿Llega tu cobertura amparada por una declaración?",
+              "No lo sé",
+              "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B13"
+            ],
+            [
+              "Estado de la hoja antes de que rellenes tu papel",
+              "Sin resolver: pregunta a tu proveedor si tu cobertura está amparada por una declaración",
+              "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B18"
+            ],
+            [
+              "Qué documentación te toca una vez resuelto tu papel",
+              "Primero aclara tu papel: sin eso no se sabe qué te toca",
+              "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B20"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Autocontrol, Alérgenos y Formación: Qué Tener el Día de la Inspección",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-32",
+            "CHN-33",
+            "CHN-34",
+            "CHN-34b",
+            "CHN-35",
+            "CHN-36",
+            "CHN-37",
+            "CHN-38",
+            "CHN-69",
+            "CHN-89",
+            "CHN-31"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Personas con formación registrada en el caso modelado",
+              "3",
+              "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C20"
+            ],
+            [
+              "Formaciones caducadas",
+              "0",
+              "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C21"
+            ],
+            [
+              "Validez en meses que fija el propio negocio a su formación",
+              "24",
+              "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C15"
+            ],
+            [
+              "Veredicto del registro de formación",
+              "Registro al día",
+              "checklist-legal-licencias-y-cacao.xlsx!Registro de Formación!C23"
+            ],
+            [
+              "Trámites de la fase de autocontrol, alérgenos y formación",
+              "6",
+              "checklist-legal-licencias-y-cacao.xlsx!Checklist Legal (F1-F6)!E45"
+            ],
+            [
+              "Referencias que salen envasadas con etiqueta",
+              "16",
+              "vida-util-rellenos-y-rotacion.xlsx!Etiquetado o Granel!C44"
+            ],
+            [
+              "Referencias que se despachan a granel",
+              "12",
+              "vida-util-rellenos-y-rotacion.xlsx!Etiquetado o Granel!E44"
+            ],
+            [
+              "Vida útil más corta de toda la carta, en días",
+              "10",
+              "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G44"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "Proveedores: Cobertura, Cacao, Packaging y Plazos",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-50",
+            "CHS-51",
+            "CHS-52",
+            "CHS-53",
+            "CHS-55",
+            "CHN-24",
+            "CHN-59",
+            "CHN-61",
+            "CHN-62",
+            "CHN-62b",
+            "CHN-62c"
+          ],
+          "sector_huecos": [
+            "CHS-54"
+          ],
+          "cifras": [
+            [
+              "Proveedores publicados en el cuadro",
+              "6",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F15"
+            ],
+            [
+              "Proveedores todavía sin clasificar en la cadena",
+              "6",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F20"
+            ],
+            [
+              "Operadores que te deben el número de su declaración, que salen cero mientras no hayas clasificado a ninguno",
+              "0",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F21"
+            ],
+            [
+              "Pedido mínimo acumulado si pides a todos a la vez",
+              "1.500 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F24"
+            ],
+            [
+              "Plazo medio de entrega comprometido, en días",
+              "7",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F25"
+            ],
+            [
+              "Veredicto de la documentación de proveedores",
+              "Te faltan proveedores por clasificar: pregúntales su papel en la cadena",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Proveedores y EUDR!F26"
+            ],
+            [
+              "Kilos al mes de plástico no reciclado del caso modelado",
+              "3,2",
+              "calculadora-capex-chocolateria.xlsx!Parámetros!B19"
+            ],
+            [
+              "Umbral mensual de la exención",
+              "5",
+              "calculadora-capex-chocolateria.xlsx!Parámetros!B20"
+            ],
+            [
+              "Tipo del impuesto por kilo de plástico no reciclado",
+              "0,45 €",
+              "calculadora-capex-chocolateria.xlsx!Parámetros!B21"
+            ],
+            [
+              "¿Supera el caso modelado el umbral de la exención?",
+              "No: por debajo de la exención del art. 75.f)",
+              "calculadora-capex-chocolateria.xlsx!IVA y Tesorería!B34"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "Escandallo del Chocolate: la Merma de Templado, el Recorte que Vuelve y la Caja",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-28a",
+            "CHS-28c",
+            "CHS-29"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste de una hora de obrador",
+              "18,49 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Parámetros!B15"
+            ],
+            [
+              "Coste por kilo de la ganache negra fresca",
+              "14,23 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Escandallo por Molde y Tanda!B52"
+            ],
+            [
+              "Kilos al año de chocolate limpio que vuelven a la cuba",
+              "86,4",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!M35"
+            ],
+            [
+              "Kilos al año que van a residuo por llevar relleno o fruta",
+              "38,3",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!N35"
+            ],
+            [
+              "Coste anual de la merma no recuperable",
+              "719 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!O35"
+            ],
+            [
+              "Food cost de escandallo de la carta",
+              "25,2 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B43"
+            ],
+            [
+              "Food cost servido, el que va al plan financiero",
+              "28,2 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B46"
+            ],
+            [
+              "Margen bruto medio con el mix de todo el año",
+              "74,8 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B48"
+            ],
+            [
+              "Margen de la caja de doce bombones",
+              "10,61 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C37"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "El Precio del Cacao: Qué Haces Cuando Sube y Quién Paga la Subida",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-23",
+            "CHS-24a",
+            "CHS-24b",
+            "CHS-28a",
+            "CHS-28c",
+            "CHN-76"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Precio de la cobertura negra como lo trae la fuente, con IVA",
+              "25,02 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D7"
+            ],
+            [
+              "Precio de esa misma cobertura en base imponible, que es el que usa todo el pack",
+              "22,75 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G7"
+            ],
+            [
+              "Precio de la cobertura de origen en base imponible",
+              "37,48 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G8"
+            ],
+            [
+              "Coste de toda la cobertura del año",
+              "42.792 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!Q44"
+            ],
+            [
+              "Parte del coste de materia que es cobertura",
+              "86,5 %",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D47"
+            ],
+            [
+              "Precio de la cobertura negra en el escenario de subida fuerte",
+              "31,84 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!E9"
+            ],
+            [
+              "Referencias que se rompen en el escenario de subida fuerte",
+              "11",
+              "sensibilidad-al-precio-del-cacao.xlsx!Escenarios de Precio!K44"
+            ],
+            [
+              "La referencia que primero se rompe",
+              "Tableta de chocolate negro de origen 70 %, 100 g",
+              "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C46"
+            ],
+            [
+              "Subida media de PVP que haría falta en el escenario elegido",
+              "2,6 %",
+              "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C49"
+            ],
+            [
+              "Euros parados en el almacén de cobertura",
+              "2.469 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Stock y Cobertura de Compra!H11"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-30",
+            "CHN-30b",
+            "CHN-31",
+            "CHN-38",
+            "CHN-88",
+            "CHN-87",
+            "CHS-56",
+            "CHS-43"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Umbral de vigilancia de la actividad de agua",
+              "0,85",
+              "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B11"
+            ],
+            [
+              "Actividad de agua de la ganache de nata fresca",
+              "0,88",
+              "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!E16"
+            ],
+            [
+              "Actividad de agua de la ganache estabilizada",
+              "0,82",
+              "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!E17"
+            ],
+            [
+              "Referencias con el agua disponible por encima del umbral",
+              "6",
+              "vida-util-rellenos-y-rotacion.xlsx!Tipo de Relleno y aw!E44"
+            ],
+            [
+              "Vida útil declarada de la ganache de nata fresca, en días",
+              "10",
+              "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G16"
+            ],
+            [
+              "Vida útil declarada de la ganache estabilizada, en días",
+              "28",
+              "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G17"
+            ],
+            [
+              "Temperatura a la que salta la alarma de la vitrina",
+              "20",
+              "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B12"
+            ],
+            [
+              "Humedad máxima de trabajo de la vitrina",
+              "55",
+              "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B13"
+            ],
+            [
+              "Merma por caducidad de toda la carta al año",
+              "768 €",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!Q44"
+            ],
+            [
+              "Lo que cuesta al año la ganache fresca frente a la estabilizada",
+              "186 €",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D48"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "El Equipo: Cuántos, Qué Perfiles y Qué Cuestan",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-65",
+            "CHN-65b",
+            "CHN-65c",
+            "CHN-66",
+            "CHN-93",
+            "CHN-67",
+            "CHN-68",
+            "CHN-69",
+            "CHS-69a",
+            "CHS-69b",
+            "CHS-69c",
+            "CHS-69d",
+            "CHS-70"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste de personal del año de crucero",
+              "68.419 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!I9"
+            ],
+            [
+              "Jornadas completas equivalentes de la plantilla",
+              "2,5",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B40"
+            ],
+            [
+              "Coste de una hora de obrador",
+              "18,49 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B44"
+            ],
+            [
+              "Peso del coste de personal sobre las ventas",
+              "34,4 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C46"
+            ],
+            [
+              "Referencia anual del salario mínimo",
+              "17.094 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B21"
+            ],
+            [
+              "Bruto mensual del grupo de convenio más bajo",
+              "1.192,42 €",
+              "campanas-y-valle-del-ano.xlsx!Parámetros!B19"
+            ],
+            [
+              "Pagas al año del convenio de referencia",
+              "15",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Parámetros!B11"
+            ],
+            [
+              "Cotización a cargo de la empresa sobre el bruto",
+              "33 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Parámetros!B12"
+            ],
+            [
+              "Coste por hora pagada del personal de refuerzo de campaña",
+              "13,36 €",
+              "campanas-y-valle-del-ano.xlsx!Parámetros!B23"
+            ]
+          ]
+        },
+        {
+          "n": 18,
+          "titulo": "Las Campañas y el Valle: de Navidad a Agosto",
+          "tablas": 3,
+          "sector_usado": [
+            "CHS-34",
+            "CHS-30",
+            "CHS-55",
+            "CHS-10"
+          ],
+          "sector_huecos": [
+            "CHS-35",
+            "CHS-36"
+          ],
+          "cifras": [
+            [
+              "Facturación sin IVA de la campaña de Navidad",
+              "19.800 €",
+              "campanas-y-valle-del-ano.xlsx!Calendario de Campañas!N18"
+            ],
+            [
+              "Resultado incremental de la campaña de Navidad",
+              "11.566 €",
+              "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N18"
+            ],
+            [
+              "Resultado incremental de las doce campañas del año",
+              "30.621 €",
+              "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!N19"
+            ],
+            [
+              "Tesorería inmovilizada en moldes y packaging de temporada",
+              "5.850 €",
+              "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!J19"
+            ],
+            [
+              "Coste del refuerzo de personal de todo el año",
+              "3.809 €",
+              "campanas-y-valle-del-ano.xlsx!Refuerzo y Tesorería!E19"
+            ],
+            [
+              "Campañas que el obrador no aguanta sin adelantar producción",
+              "7",
+              "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B26"
+            ],
+            [
+              "Ventas de agosto sin IVA",
+              "9.954 €",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E14"
+            ],
+            [
+              "Resultado de agosto",
+              "-2.824 €",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B20"
+            ],
+            [
+              "Lo que cuesta agosto frente a un mes medio",
+              "-5.018 €",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B22"
+            ],
+            [
+              "Veredicto de agosto",
+              "Agosto da pérdida: provisiónala, no cierres la tienda",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B23"
+            ]
+          ]
+        },
+        {
+          "n": 19,
+          "titulo": "Canales: Mostrador, Envío, Hostelería, Corporativo y Talleres",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-41",
+            "CHN-56",
+            "CHN-57",
+            "CHN-59",
+            "CHN-60",
+            "CHN-24",
+            "CHN-72",
+            "CHN-94",
+            "CHN-95",
+            "CHN-96",
+            "CHN-71b",
+            "CHN-88",
+            "CHS-30",
+            "CHS-55",
+            "CHS-10"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Margen de contribución medio ponderado de los cinco canales",
+              "64,1 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B16"
+            ],
+            [
+              "Punto muerto mensual con todos los canales",
+              "15.924 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B19"
+            ],
+            [
+              "Punto muerto mensual sin el canal de hostelería",
+              "15.358 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B20"
+            ],
+            [
+              "Canal que sostiene el negocio",
+              "Mostrador",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B22"
+            ],
+            [
+              "Canales que hay que consultar con el asesor",
+              "3",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B26"
+            ],
+            [
+              "Margen de contribución del canal online después del envío",
+              "29,7 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B39"
+            ],
+            [
+              "Veredicto del canal online",
+              "Aguanta, pero deja menos que el mostrador: úsalo para llegar donde no llegas, no para sustituirlo",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B40"
+            ],
+            [
+              "Asistentes necesarios para cubrir el coste del taller",
+              "2,3",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B19"
+            ],
+            [
+              "Margen por hora de sala dando taller",
+              "67,51 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B26"
+            ],
+            [
+              "Margen por hora de sala vendiendo",
+              "28,42 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B29"
+            ]
+          ]
+        },
+        {
+          "n": 20,
+          "titulo": "El Plan Financiero, el Dinero Hasta el Punto de Equilibrio y los Primeros Noventa Días",
+          "tablas": 3,
+          "sector_usado": [
+            "CHS-40",
+            "CHN-71",
+            "CHN-71c",
+            "CHN-73",
+            "CHN-74",
+            "CHN-74b",
+            "CHN-75",
+            "CHN-76",
+            "CHN-77",
+            "CHN-78"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ingresos del año de crucero",
+              "199.088 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C11"
+            ],
+            [
+              "Margen bruto del año de crucero",
+              "142.862 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C15"
+            ],
+            [
+              "Total de costes fijos del año de crucero",
+              "122.546 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C31"
+            ],
+            [
+              "Resultado neto del año de crucero",
+              "17.269 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C41"
+            ],
+            [
+              "Margen neto del año de crucero",
+              "8,7 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!E41"
+            ],
+            [
+              "Clientes al día necesarios para el equilibrio contable",
+              "57,5",
+              "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C16"
+            ],
+            [
+              "Ingresos mensuales necesarios para el equilibrio contable",
+              "14.231 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C18"
+            ],
+            [
+              "Holgura sobre el equilibrio de caja en el año de crucero",
+              "13,2 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C26"
+            ],
+            [
+              "Cuota mensual del préstamo",
+              "1.409,54 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B22"
+            ],
+            [
+              "Saldo mínimo de caja del primer año",
+              "55.676 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B24"
+            ]
+          ]
+        },
+        {
+          "n": 21,
+          "titulo": "Anexo normativo, actualizado a 12 de septiembre de 2026",
+          "tablas": 2,
+          "sector_usado": [
+            "CHN-01",
+            "CHN-14",
+            "CHN-36",
+            "CHN-39",
+            "CHN-44",
+            "CHN-49",
+            "CHN-62",
+            "CHN-64",
+            "CHN-65c",
+            "CHN-67",
+            "CHN-75",
+            "CHN-76",
+            "CHN-77",
+            "CHN-78",
+            "CHN-86"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Chocolate mínimo sobre el peso total del bombón",
+              "25 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B38"
+            ],
+            [
+              "Materia seca total de cacao mínima del chocolate a la taza",
+              "35 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B39"
+            ],
+            [
+              "Manteca de cacao mínima del chocolate a la taza",
+              "18 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B40"
+            ],
+            [
+              "Materia seca desgrasada mínima del chocolate a la taza",
+              "14 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B41"
+            ],
+            [
+              "Umbral de la primera vía de marginalidad, sobre el volumen anual",
+              "25 %",
+              "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B20"
+            ],
+            [
+              "Umbral de la segunda vía de marginalidad, en kilos a la semana",
+              "500",
+              "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B23"
+            ],
+            [
+              "Tope absoluto de kilos a la semana del obrador en vivienda",
+              "100",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B23"
+            ],
+            [
+              "Umbral estatal de superficie de la licencia previa de actividad",
+              "750",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B24"
+            ],
+            [
+              "Umbral mensual de la exención del impuesto al plástico",
+              "5",
+              "calculadora-capex-chocolateria.xlsx!Parámetros!B20"
+            ],
+            [
+              "Referencia anual del salario mínimo",
+              "17.094 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B21"
+            ]
+          ]
+        }
+      ]
+    },
+    "business-plan-modelo-chocolateria": {
+      "gates": {
+        "paginas_pdf": 19,
+        "paginas_prometidas": 9,
+        "palabras_md": 7808,
+        "palabras_pdf": 7598,
+        "palabras_docx": 7199,
+        "palabras_objetivo": 3500,
+        "capitulos": 6,
+        "tablas_md": 11,
+        "tablas_docx": 11,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 6787,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 7218,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Business Plan Modelo de una Chocolatería"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Business Plan Modelo de una Chocolatería",
+          "created": "2026-09-19 15:36:30"
+        },
+        "paridad_palabras_pct": 0.26,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 211,
+        "ficheros": {
+          "md": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/business-plan-modelo-chocolateria.md",
+          "docx": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/business-plan-modelo-chocolateria.docx",
+          "pdf": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/business-plan-modelo-chocolateria.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Resumen Ejecutivo",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-03",
+            "CHS-18"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Inversión sin el fondo de maniobra",
+              "89.219 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B19"
+            ],
+            [
+              "Fondo de maniobra",
+              "61.273 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B16"
+            ],
+            [
+              "Inversión total",
+              "150.492 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B21"
+            ],
+            [
+              "IVA soportado sobre la inversión",
+              "17.913 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B22"
+            ],
+            [
+              "Necesidad total de caja al arranque",
+              "168.405 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Inversión Inicial!B23"
+            ],
+            [
+              "Recursos propios aportados",
+              "78.105 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B40"
+            ],
+            [
+              "Principal del préstamo solicitado",
+              "90.300 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B41"
+            ],
+            [
+              "Ingresos del año de crucero",
+              "199.088 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C11"
+            ],
+            [
+              "Resultado neto del año de crucero",
+              "17.269 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C41"
+            ],
+            [
+              "Margen neto del año de crucero",
+              "8,7 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!E41"
+            ],
+            [
+              "Ingresos mensuales necesarios para el equilibrio contable",
+              "14.231 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C18"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Mercado y Plaza",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-18",
+            "CHS-19",
+            "CHS-21",
+            "CHS-22",
+            "CHS-23",
+            "CHS-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ventas anuales sin IVA en velocidad de crucero",
+              "199.088 €",
+              "campanas-y-valle-del-ano.xlsx!Parámetros!B7"
+            ],
+            [
+              "Clientes al día en velocidad de crucero",
+              "67",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B6"
+            ],
+            [
+              "Piezas por ticket",
+              "1,4",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B7"
+            ],
+            [
+              "Ticket medio sin IVA",
+              "9,77 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B10"
+            ],
+            [
+              "Días de apertura al año",
+              "304",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B11"
+            ],
+            [
+              "Peso del mes más alto sobre el año",
+              "12,0 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F18"
+            ],
+            [
+              "Peso del mes más bajo sobre el año",
+              "5,0 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F14"
+            ],
+            [
+              "Peso de las doce campañas sobre el año",
+              "26,6 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!D35"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Concepto y Carta",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-29",
+            "CHS-28a",
+            "CHS-28c",
+            "CHS-32"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "PVP medio ponderado de la carta con IVA",
+              "7,68 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B37"
+            ],
+            [
+              "Food cost de escandallo de la carta",
+              "25,2 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B43"
+            ],
+            [
+              "Food cost servido, el que va al plan financiero",
+              "28,2 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B46"
+            ],
+            [
+              "Margen bruto medio con el mix del año",
+              "74,8 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B48"
+            ],
+            [
+              "Referencias con veredicto de mantener",
+              "25",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B37"
+            ],
+            [
+              "Referencias con veredicto de retirar",
+              "1",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B39"
+            ],
+            [
+              "Margen de toda la carta al año",
+              "100.615 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!G35"
+            ],
+            [
+              "Parte del coste de materia que es cobertura",
+              "86,5 %",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D47"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Plan de Operaciones",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-03",
+            "CHS-70",
+            "CHS-44"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Superficie total del local",
+              "75",
+              "capacidad-obrador-y-clima.xlsx!Parámetros!B16"
+            ],
+            [
+              "Metros de zona de producción",
+              "45",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D17"
+            ],
+            [
+              "Parte del local dedicada a producción",
+              "60 %",
+              "capacidad-obrador-y-clima.xlsx!Zonas y m2!D18"
+            ],
+            [
+              "Bombones al día que pide el plan",
+              "472",
+              "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B6"
+            ],
+            [
+              "Bombones al día que permite el conjunto de equipos",
+              "512",
+              "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "El equipo que limita",
+              "Puesto de envasado y montaje de cajas",
+              "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B8"
+            ],
+            [
+              "Holgura sobre el día normal",
+              "8,5 %",
+              "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B10"
+            ],
+            [
+              "Jornadas completas equivalentes de la plantilla",
+              "2,5",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B40"
+            ],
+            [
+              "Coste de personal al año",
+              "68.419 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!I9"
+            ],
+            [
+              "Coste de una hora de obrador",
+              "18,49 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Personal!B44"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Plan Financiero a Tres Años",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-40",
+            "CHN-71"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Ingresos del año 1",
+              "176.093 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B11"
+            ],
+            [
+              "Ingresos del año de crucero",
+              "199.088 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C11"
+            ],
+            [
+              "Ingresos del año 3",
+              "207.051 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!D11"
+            ],
+            [
+              "Total de costes fijos del año de crucero",
+              "122.546 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C31"
+            ],
+            [
+              "Resultado neto del año de crucero",
+              "17.269 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C41"
+            ],
+            [
+              "Peso del coste de personal sobre las ventas",
+              "34,4 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!C46"
+            ],
+            [
+              "Cuota mensual del préstamo",
+              "1.409,54 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B22"
+            ],
+            [
+              "Ratio de cobertura del servicio de la deuda, en su punto más bajo",
+              "1,48",
+              "plan-financiero-3-anos-chocolateria.xlsx!Financiación!B123"
+            ],
+            [
+              "Saldo mínimo de caja del primer año",
+              "55.676 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!B24"
+            ],
+            [
+              "Saldo de caja al cierre del mes doce",
+              "72.959 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Tesorería 12 meses!M23"
+            ],
+            [
+              "Clientes al día necesarios para el equilibrio de caja",
+              "59,2",
+              "plan-financiero-3-anos-chocolateria.xlsx!Punto de Equilibrio!C22"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Riesgos y Escenarios",
+          "tablas": 2,
+          "sector_usado": [
+            "CHS-24a",
+            "CHS-24b",
+            "CHN-22",
+            "CHN-23",
+            "CHN-86"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Resultado neto del escenario pesimista",
+              "-40.638 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Escenarios!B16"
+            ],
+            [
+              "Resultado neto del escenario optimista",
+              "80.665 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Escenarios!D16"
+            ],
+            [
+              "Lo que costaría al año una subida fuerte del cacao",
+              "4.204 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B79"
+            ],
+            [
+              "Margen neto del año de crucero tras esa subida",
+              "6,6 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B80"
+            ],
+            [
+              "Resultado del mes de agosto",
+              "-2.824 €",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B20"
+            ],
+            [
+              "Lo que cuesta agosto frente a un mes medio",
+              "-5.018 €",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B22"
+            ],
+            [
+              "Campañas que el obrador no aguanta sin adelantar producción",
+              "7",
+              "campanas-y-valle-del-ano.xlsx!Capacidad vs Demanda del Pico!B26"
+            ],
+            [
+              "Margen entre la ruta crítica y el plazo de la maquinaria, en meses",
+              "6,2",
+              "checklist-legal-licencias-y-cacao.xlsx!Cronograma y Ruta Crítica!C52"
+            ]
+          ]
+        }
+      ]
+    },
+    "BONUS-12-decisiones-de-apertura": {
+      "gates": {
+        "paginas_pdf": 34,
+        "paginas_prometidas": 30,
+        "palabras_md": 16784,
+        "palabras_pdf": 17002,
+        "palabras_docx": 16281,
+        "palabras_objetivo": 10500,
+        "capitulos": 12,
+        "tablas_md": 12,
+        "tablas_docx": 12,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 16254,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 16356,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "12 Decisiones de Apertura Resueltas"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "12 Decisiones de Apertura Resueltas",
+          "created": "2026-09-19 15:36:33"
+        },
+        "paridad_palabras_pct": 0.46,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 43,
+        "ficheros": {
+          "md": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/BONUS-12-decisiones-de-apertura.md",
+          "docx": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/BONUS-12-decisiones-de-apertura.docx",
+          "pdf": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-chocolateria/build/docs/BONUS-12-decisiones-de-apertura.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Bombonería o Bean-to-bar",
+          "tablas": 1,
+          "sector_usado": [
+            "CHN-23",
+            "CHN-25",
+            "CHN-27",
+            "CHN-47",
+            "CHN-47b",
+            "CHS-51"
+          ],
+          "sector_huecos": [
+            "CHS-48"
+          ],
+          "cifras": [
+            [
+              "Equipos del tren de bean-to-bar que el caso dice necesitar",
+              "0",
+              "calculadora-capex-chocolateria.xlsx!Variante del Formato!E31"
+            ],
+            [
+              "Veredicto del bean-to-bar en la calculadora de inversión",
+              "No es tu variante: no hay nada que presupuestar",
+              "calculadora-capex-chocolateria.xlsx!Variante del Formato!E33"
+            ],
+            [
+              "Equipos del tren marcados como necesarios en el libro de equipamiento",
+              "0",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C20"
+            ],
+            [
+              "Preguntas al fabricante contestadas por escrito",
+              "0",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C29"
+            ],
+            [
+              "Veredicto del bean-to-bar en el libro de equipamiento",
+              "No es tu variante: no hay nada que presupuestar",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Variante del Formato!C30"
+            ],
+            [
+              "De dónde viene el cacao en el caso modelado",
+              "Compro cobertura ya comercializada en la UE",
+              "checklist-legal-licencias-y-cacao.xlsx!EUDR — Tu Papel en la Cadena!B12"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Comprar la Continua o Empezar con la de Sobremesa",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-41a",
+            "CHS-41h",
+            "CHS-41i",
+            "CHS-41j"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Precio de referencia de la atemperadora continua",
+              "8.500 €",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!I15"
+            ],
+            [
+              "Plazo de entrega de la atemperadora continua, en semanas",
+              "10",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Equipamiento!R15"
+            ],
+            [
+              "Bombones al día de obrador que permite la atemperadora continua",
+              "4.368",
+              "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M6"
+            ],
+            [
+              "Bombones al día de obrador que permite la atemperadora de arranque",
+              "4.914",
+              "capacidad-obrador-y-clima.xlsx!Capacidad por Equipo!M16"
+            ],
+            [
+              "Bombones al día que permite el conjunto de equipos",
+              "512",
+              "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "El equipo que limita de verdad",
+              "Puesto de envasado y montaje de cajas",
+              "capacidad-obrador-y-clima.xlsx!Cuello de Botella!B8"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Abrir con Quince Referencias o con Veintiocho",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-29",
+            "CHS-32",
+            "CHS-25c"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Referencias con veredicto de mantener",
+              "25",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B37"
+            ],
+            [
+              "Referencias con veredicto de revisar precio",
+              "2",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B38"
+            ],
+            [
+              "Referencias con veredicto de retirar",
+              "1",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!B39"
+            ],
+            [
+              "Margen de toda la carta al año",
+              "100.615 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!G35"
+            ],
+            [
+              "PVP medio ponderado de la carta con IVA",
+              "7,68 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B37"
+            ],
+            [
+              "Referencias que llevan fecha de caducidad",
+              "12",
+              "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!H44"
+            ],
+            [
+              "Referencias con la tanda demasiado grande para lo que duran",
+              "2",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D46"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Vender la Caja o la Unidad",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-29",
+            "CHN-13"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Precio por bombón dentro de la caja de doce, con IVA",
+              "1,67 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C33"
+            ],
+            [
+              "Precio por bombón dentro de la caja de treinta y cinco, con IVA",
+              "1,29 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E33"
+            ],
+            [
+              "Descuento implícito de la caja de doce",
+              "16,8 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C35"
+            ],
+            [
+              "Descuento implícito de la caja de treinta y cinco",
+              "36,4 %",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E35"
+            ],
+            [
+              "Coste total de la caja de doce",
+              "7,57 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C28"
+            ],
+            [
+              "Coste total de la caja de treinta y cinco",
+              "21,54 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E28"
+            ],
+            [
+              "Margen de la caja de doce",
+              "10,61 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C37"
+            ],
+            [
+              "Margen de la caja de treinta y cinco",
+              "19,37 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E37"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Cobertura de Marca o Cobertura de Origen",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-28a",
+            "CHS-28c",
+            "CHN-08",
+            "CHN-02"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Precio de la cobertura de marca como lo trae la fuente, con IVA",
+              "25,02 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!D7"
+            ],
+            [
+              "Precio de esa cobertura en base imponible",
+              "22,75 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G7"
+            ],
+            [
+              "Precio de la cobertura de origen en base imponible",
+              "37,48 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!G8"
+            ],
+            [
+              "Coste de cobertura por pieza de la tableta de origen",
+              "3,75 €",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!K26"
+            ],
+            [
+              "Food cost de materia de esa misma tableta",
+              "48,5 %",
+              "sensibilidad-al-precio-del-cacao.xlsx!Coste de Cobertura!U26"
+            ],
+            [
+              "La referencia que primero se rompe si sube el cacao",
+              "Tableta de chocolate negro de origen 70 %, 100 g",
+              "sensibilidad-al-precio-del-cacao.xlsx!Repercusión al PVP!C46"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "Vitrina Refrigerada o Vitrina Climatizada",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-43",
+            "CHN-30",
+            "CHN-87"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Temperatura mínima de trabajo de la vitrina del caso",
+              "16",
+              "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D15"
+            ],
+            [
+              "Temperatura máxima de trabajo de la vitrina del caso",
+              "18",
+              "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D16"
+            ],
+            [
+              "Veredicto de la vitrina del caso",
+              "Dentro de lo que aguanta el chocolate",
+              "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!F16"
+            ],
+            [
+              "Temperatura a la que salta la alarma",
+              "20",
+              "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B12"
+            ],
+            [
+              "Humedad máxima de trabajo de la vitrina",
+              "55",
+              "vida-util-rellenos-y-rotacion.xlsx!Parámetros!B13"
+            ],
+            [
+              "Referencias por encima de la alarma de la vitrina",
+              "0",
+              "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!D50"
+            ],
+            [
+              "Referencias que van a nevera y no a vitrina",
+              "6",
+              "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!F50"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Aceptar el Primer Pedido Corporativo sin Histórico",
+          "tablas": 1,
+          "sector_usado": [
+            "CHN-41",
+            "CHN-24",
+            "CHS-55"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Clientes registrados en la tabla del caso",
+              "4",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E20"
+            ],
+            [
+              "De ellos, clientes de hostelería",
+              "2",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E21"
+            ],
+            [
+              "De ellos, de regalo corporativo",
+              "1",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E22"
+            ],
+            [
+              "De ellos, minoristas de distinta titularidad",
+              "1",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E23"
+            ],
+            [
+              "Clientes inscritos en el registro general",
+              "0",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E24"
+            ],
+            [
+              "Veredicto del registro de clientes",
+              "Tienes que conservar este registro, con nombre, dirección y producto, durante los años del parámetro",
+              "checklist-equipamiento-y-proveedores-cacao.xlsx!Clientes a los que Suministras!E26"
+            ],
+            [
+              "¿Sigues cumpliendo el requisito de restringido?",
+              "Sí",
+              "checklist-legal-licencias-y-cacao.xlsx!Suministro a Otros Minoristas!B37"
+            ],
+            [
+              "Caja inmovilizada por el aplazamiento de cobro corporativo",
+              "822 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B54"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Envío a Domicilio en Verano: Cuándo Dices que No",
+          "tablas": 1,
+          "sector_usado": [
+            "CHN-88",
+            "CHN-57",
+            "CHN-59",
+            "CHN-90",
+            "CHS-10"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Margen de contribución del canal online después del envío",
+              "29,7 %",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B39"
+            ],
+            [
+              "Veredicto del canal online",
+              "Aguanta, pero deja menos que el mostrador: úsalo para llegar donde no llegas, no para sustituirlo",
+              "plan-financiero-3-anos-chocolateria.xlsx!Canales y Punto Muerto!B40"
+            ],
+            [
+              "Vida útil más corta de toda la carta, en días",
+              "10",
+              "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G44"
+            ],
+            [
+              "Referencias que van a nevera y no a vitrina",
+              "6",
+              "vida-util-rellenos-y-rotacion.xlsx!Temperatura y Vitrina!F50"
+            ],
+            [
+              "Peso de agosto sobre las ventas del año",
+              "5,0 %",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!F14"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Parar el Obrador en Agosto o No Pararlo",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-10",
+            "CHS-34"
+          ],
+          "sector_huecos": [
+            "CHS-11"
+          ],
+          "cifras": [
+            [
+              "Ventas de agosto frente a un mes medio",
+              "0,60",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B13"
+            ],
+            [
+              "Ventas de agosto sin IVA",
+              "9.954 €",
+              "campanas-y-valle-del-ano.xlsx!Peso sobre el Año!E14"
+            ],
+            [
+              "Caída del margen al cambiar el mix en verano",
+              "-0,56 %",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B16"
+            ],
+            [
+              "Resultado del mes de agosto",
+              "-2.824 €",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B20"
+            ],
+            [
+              "Lo que cuesta agosto frente a un mes medio",
+              "-5.018 €",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B22"
+            ],
+            [
+              "Veredicto de agosto",
+              "Agosto da pérdida: provisiónala, no cierres la tienda",
+              "campanas-y-valle-del-ano.xlsx!El Valle de Agosto!B23"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "El Taller: Línea de Negocio o Marketing",
+          "tablas": 1,
+          "sector_usado": [
+            "CHS-30",
+            "CHN-71b"
+          ],
+          "sector_huecos": [
+            "CHS-11"
+          ],
+          "cifras": [
+            [
+              "Precio por persona que cobra el caso modelado",
+              "25,00 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B8"
+            ],
+            [
+              "Aforo del taller",
+              "12",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B9"
+            ],
+            [
+              "Asistentes necesarios para cubrir el coste del docente",
+              "2,3",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B19"
+            ],
+            [
+              "Asistentes necesarios contando también el material",
+              "2,7",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B20"
+            ],
+            [
+              "Margen por hora de sala dando taller",
+              "67,51 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B26"
+            ],
+            [
+              "Margen por hora de sala vendiendo",
+              "28,42 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B29"
+            ],
+            [
+              "Veredicto de la hora de sala",
+              "La hora de taller deja más que la hora vendiendo: el calendario de talleres se defiende solo",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B31"
+            ],
+            [
+              "Ingresos de talleres al año",
+              "9.600 €",
+              "plan-financiero-3-anos-chocolateria.xlsx!Talleres y Regalo Corporativo!B36"
+            ],
+            [
+              "Tipo de impuesto del taller que usa el plan",
+              "Pregúntaselo a tu asesor",
+              "plan-financiero-3-anos-chocolateria.xlsx!0. Supuestos!B17"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Empezar en Casa Dentro de la Legalidad",
+          "tablas": 1,
+          "sector_usado": [
+            "CHN-44",
+            "CHN-44-int",
+            "CHN-44b",
+            "CHN-87",
+            "PA-29c"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "¿Ha ampliado tu comunidad la lista por la letra abierta?",
+              "No",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B7"
+            ],
+            [
+              "Lectura de esa respuesta",
+              "Con la lista estatal en la mano, el bombón no entra: la ruta doméstica NO está abierta para ti",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B9"
+            ],
+            [
+              "Tope absoluto de kilos a la semana",
+              "100",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B23"
+            ],
+            [
+              "Kilos por metro cuadrado que saldrían en el caso",
+              "2,92",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B25"
+            ],
+            [
+              "Lectura del requisito de proporcionalidad",
+              "No procede: la ruta no está abierta",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B26"
+            ],
+            [
+              "Veredicto de la ruta doméstica",
+              "Con la lista estatal en la mano, la ruta doméstica no está abierta para el bombón en tu comunidad",
+              "checklist-legal-licencias-y-cacao.xlsx!Ruta Doméstica!B32"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Qué Haces con el Chocolate que no se Vende",
+          "tablas": 1,
+          "sector_usado": [
+            "CHN-64",
+            "CHN-92",
+            "CHN-38",
+            "CHN-63"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Merma por caducidad de toda la carta al año",
+              "768 €",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!Q44"
+            ],
+            [
+              "Piezas que se caducan al año en toda la carta",
+              "3.755",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!P44"
+            ],
+            [
+              "Peso de esa merma sobre el coste de materia del año",
+              "1,6 %",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D47"
+            ],
+            [
+              "Referencias con la tanda demasiado grande para lo que duran",
+              "2",
+              "vida-util-rellenos-y-rotacion.xlsx!Lote y Merma por Caducidad!D46"
+            ],
+            [
+              "Kilos al año de chocolate limpio que vuelven a la cuba",
+              "86,4",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!M35"
+            ],
+            [
+              "Coste anual de la merma que no se puede recuperar",
+              "719 €",
+              "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!O35"
+            ],
+            [
+              "Vida útil más corta de toda la carta, en días",
+              "10",
+              "vida-util-rellenos-y-rotacion.xlsx!Vida Útil Declarada!G44"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

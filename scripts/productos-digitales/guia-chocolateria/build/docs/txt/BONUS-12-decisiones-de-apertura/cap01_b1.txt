@@ -1,0 +1,43 @@
+### El contexto de la decisión
+
+Es el caso típico de quien ya templa bien: en algún momento aparece la idea de que el paso natural es dejar de comprar cobertura y tostar tu propio grano. Casi nunca lo es, y casi nunca por el motivo que se cree. No es cuestión de talento: bean-to-bar no es un nivel superior del mismo oficio, es otro negocio, con otra inversión, otro papel frente a la administración y otro reparto de tus horas de obrador (taller o laboratorio).
+
+Lo primero que hay que saber es que el tren de bean-to-bar no tiene precio público verificable. Hay que pedir presupuesto pieza a pieza antes de saber si el proyecto cabe en tu caja. En el caso que recorre este pack, los equipos del tren que hacen falta se quedan en cero y el veredicto de la calculadora de inversión es directo: «no es tu variante, no hay nada que presupuestar». El mismo cero y el mismo veredicto aparecen en el libro de equipamiento, y las preguntas al fabricante siguen en cero, porque nadie las ha contestado todavía por escrito.
+
+Y hay un segundo filtro, más terrenal que el legal: el tren ocupa los mismos metros y las mismas horas que tu obrador de bombonería necesita para producir, y compite con ellos justo en campaña.
+
+### Las opciones sobre la mesa
+
+Sobre la mesa hay tres, no dos. La opción A es la bombonería que compra cobertura profesional ya elaborada y la trabaja: templa, moldea, rellena y vende. La opción B es el bean-to-bar que importa grano verde y hace su propio chocolate desde cero, con tueste, descascarillado, molienda y conchado propios. La opción C, la que casi nadie se plantea al principio, es una bombonería que compra cobertura para el grueso de la producción y monta una línea pequeña de bean-to-bar como producto de firma.
+
+Lo que cambia entre las tres no es sólo el gusto del producto final: cambia la inversión, el espacio que reservas en el obrador, el papel que ocupas en la cadena del cacao frente a la ley, los papeles que te van a pedir y el catálogo ambiental en el que entras si tuestas tú mismo.
+
+Del tren de bean-to-bar existe catálogo verificado —tostador, bandeja de enfriado, descascarilladora manual de gama alta, winnower básico, melanger y, si el negocio crece, molinos y conchadoras de mayor escala— pero no existe precio público de ninguna de esas piezas: se vende a presupuesto o en tiendas fuera de la Unión Europea, y hay que pedirlo sí o sí.
+
+Para el grano hay una vía fiable, y no es un buscador genérico: el listado de la Asociación Chocolate Bean to Bar España, que agrupa a más de cuarenta miembros (Listado de asociados — Asociación Chocolate Bean to Bar España, 2026), frente a los nombres sueltos que sólo aparecen en directorios genéricos de proveedores, de fiabilidad baja. Preferimos una lista corta y verificada a una larga de oídas.
+
+### El criterio con el que se decide
+
+La regla que zanja esto no es el romanticismo del producto, es el papel que vas a ocupar en la cadena del cacao. Lo fija el Reglamento (UE) 2023/1115 del Parlamento Europeo y del Consejo, conocido como EUDR (comprobado el 12 de septiembre de 2026). Comprar cobertura ya comercializada en la Unión Europea y amparada por una declaración de diligencia debida te deja en la figura de operador posterior: quien introduce en el mercado un producto ya elaborado con otros productos que ya venían amparados por esa declaración. El operador, en cambio, es quien hace la primera comercialización, y ahí te sitúas si eres tú quien importa el grano: diligencia debida completa antes de introducirlo en el mercado, declaración presentada previamente, asunción de responsabilidad y registro de esas declaraciones durante cinco años, conforme a los artículos 3, 4.1, 4.2, 4.3 y 8 del propio reglamento.
+
+Tu papel en la cadena —operador o operador posterior— y la fecha que te toca están resueltos en el capítulo 11 de la guía, con la condición que los cambia.
+
+Tampoco confundas el régimen simplificado con una exención para pequeños negocios: el art. 4 bis sólo libra de ciertas obligaciones a los micro o pequeños operadores primarios, y esa figura exige estar establecido en un país clasificado como de riesgo bajo conforme al art. 29 del propio reglamento. No es una puerta que se abre por tamaño, es una puerta que se abre por origen.
+
+Sobre esa base se apoya el filtro de capacidad: si importar grano ya te convierte en operador con obligaciones completas, montarlo compitiendo además por los metros y las horas de tu obrador de bombonería es cargarte con dos negocios a la vez.
+
+### La celda que lo resuelve
+
+Esto no se decide de memoria, se decide con una hoja delante. La hoja «Variante del Formato» del libro checklist-equipamiento-y-proveedores-cacao.xlsx trae la lista completa de la compra del tren y las cinco preguntas que hay que hacerle al fabricante, con una columna para anotar cuáles te ha contestado por escrito. En el caso modelado esa columna está en cero, ningún equipo va marcado como necesario y el veredicto repite: «no es tu variante, no hay nada que presupuestar».
+
+La calculadora de inversión, en la hoja «Variante del Formato» de calculadora-capex-chocolateria.xlsx, hace lo mismo desde el otro lado: la columna de esta variante se queda deliberadamente sin cifras de maquinaria. No es un olvido, es honestidad: mientras no tengas presupuestos por escrito, el bloque no se rellena con nada inventado.
+
+Y hay una tercera celda que conviene mirar antes de decidir sobre el grano: la hoja «EUDR — Tu Papel en la Cadena» del libro checklist-legal-licencias-y-cacao.xlsx, donde el caso modelado declara de dónde viene su cacao: «compro cobertura ya comercializada en la UE». Esa única casilla arrastra todo el razonamiento anterior sobre operador y operador posterior.
+
+### La norma que aplica cuando la hay
+
+Si la decisión final es tostar grano tú mismo, entra en juego una norma más, y no es la del cacao: es la ambiental. El Real Decreto 100/2011, de 28 de enero, por el que se actualiza el catálogo de actividades potencialmente contaminadoras de la atmósfera (comprobado el 12 de septiembre de 2026), recoge el código 04 06 05 14, «Tostación o torrefacción del café o similares», dentro del grupo C, el que exige notificación y no autorización previa. Las palabras «cacao» y «chocolate» no aparecen ni una sola vez en todo el real decreto, así que encajar el tueste de grano de cacao en ese epígrafe es interpretación nuestra, no una cita literal de la norma, y así se presenta.
+
+Y hay un matiz que no conviene pasar por alto: la comunidad autónoma puede subir esa actividad del grupo C al grupo B, el que sí exige autorización, si se usan sustancias peligrosas o si la instalación está a menos de 500 metros de determinados espacios, entre ellos los núcleos de población. Como el primero de esa lista son precisamente los núcleos de población, un obrador de bean-to-bar dentro de cualquier ciudad cumple esa condición siempre, y por eso esto va como pregunta obligada a tu comunidad autónoma antes de firmar nada.
+
+La recomendación, con la condición que la cambiaría: si hoy compras cobertura y templas bien, quédate en la opción A o, como mucho, prueba la opción C con una línea pequeña y sin prisa. Sólo tiene sentido moverse hacia la opción B el día en que tengas presupuestos reales del tren completo, capacidad de sobra en tu obrador para no robarle horas a la bombonería en campaña, y la respuesta de tu comunidad autónoma sobre el catálogo ambiental ya en la mano. Hasta entonces, la celda sigue en cero, y el cero es la respuesta correcta.

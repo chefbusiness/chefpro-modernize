@@ -4,7 +4,7 @@
   "tipo": "entrada",
   "valor": 75
  },
- "Coste de obra y adecuación por m2": {
+ "Coste de obra y adecuación por m²": {
   "ref": "calculadora-capex-chocolateria.xlsx!Parámetros!B7",
   "tipo": "entrada",
   "valor": 380
@@ -222,7 +222,7 @@
  "Dónde cae tu dotación respecto al escenario profesional": {
   "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!I61",
   "tipo": "salida",
-  "valor": "Por debajo del rango publicado"
+  "valor": "No comparable: tu cifra va en base imponible y el rango publicado es base MIXTA"
  },
  "Importe de la línea de obra y adecuación": {
   "ref": "calculadora-capex-chocolateria.xlsx!CAPEX por Bloque!K6",

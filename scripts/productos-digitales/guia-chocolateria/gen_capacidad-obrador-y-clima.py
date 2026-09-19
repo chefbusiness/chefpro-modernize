@@ -4,7 +4,7 @@
 gen_capacidad-obrador-y-clima.py — libro 1 de «Cómo Montar una Chocolatería»
 (SPEC §2.2 fila 1; decisiones D31, D32, D33 y §3.1).
 
-Hojas: Instrucciones · Parámetros · Zonas y m2 · Clima del Obrador ·
+Hojas: Instrucciones · Parámetros · Zonas y m² · Clima del Obrador ·
 Capacidad por Equipo · Cuello de Botella · Ficha de Visita a Local.
 
 QUÉ DECIDE ESTE LIBRO
@@ -16,20 +16,20 @@ la cobertura cristalice.
 
 MOLDE Y DIFERENCIAS CON LA HERMANA (SPEC §2.4)
 ----------------------------------------------
-Se calca `guia-pasteleria/gen_capacidad-obrador-y-local.py` (Zonas y m2,
+Se calca `guia-pasteleria/gen_capacidad-obrador-y-local.py` (Zonas y m²,
 Capacidad por Equipo, Cuello de Botella, Ficha de Visita). **Fuera: horno,
 salida de humos y fermentación.** **Nuevo: la hoja «Clima del Obrador»**, con
 el semáforo de coherencia y la ficha de preguntas al instalador (D33).
 
 * **PROHIBIDO CALCULAR CARGA TÉRMICA (D33).** No hay un solo coeficiente con
-  fuente —ni transmitancia, ni coeficiente por m3, ni aportes, ni
+  fuente —ni transmitancia, ni coeficiente por m³, ni aportes, ni
   renovaciones—, y las dos salidas posibles están prohibidas: inventar
   constantes, o dejar celdas verdes que el lector no sabe rellenar. Lo que sí
   es construible, y sigue siendo diferencial, es (a) un semáforo de coherencia
   entre la temperatura objetivo, la exterior de agosto de SU ciudad y la
   potencia frigorífica que le OFREZCA EL INSTALADOR, y (b) una ficha de
   preguntas al instalador. La única cifra derivada que publica la hoja
-  —kW por m2 climatizado— sale de lo que el lector teclea, va SIN semáforo y
+  —kW por m² climatizado— sale de lo que el lector teclea, va SIN semáforo y
   dice en su propia nota que no es un criterio de dimensionado: es la cifra
   que le enseña al segundo instalador para comparar dos ofertas.
 * **Las cinco temperaturas son las del kit (D31)**, y la del obrador cita SÓLO
@@ -74,7 +74,7 @@ DECISIONES TÉCNICAS
   `""` y `MIN` los ignora.
 * **La ficha de visita distingue el dato medido del juicio**, y cuatro ítems
   tienen umbral numérico calculado desde «Parámetros». Uno de ellos se compara
-  al REVÉS (la superficie de venta contra los 750 m2 de la Ley 12/2012), y por
+  al REVÉS (la superficie de venta contra los 750 m² de la Ley 12/2012), y por
   eso cada ítem declara su sentido.
 * Cero constantes dentro de las fórmulas de cálculo; `IFERROR(...,"")` en toda
   división; «sin dato» = `""`; semáforos con `ISNUMBER`; desplegables contra
@@ -125,7 +125,7 @@ IDS_LEGALES = {
     'CHN-45': ('El DB-HS 3 del CTE no regula un local comercial', 1),
     'CHN-46': ('El obrador de chocolate no genera aire AE4', 1),
     'CHN-48': ('Gas: inspección cada cinco años (variante de taza y churros)', 1),
-    'CHN-49': ('Ninguna licencia previa de actividad hasta 750 m2', 1),
+    'CHN-49': ('Ninguna licencia previa de actividad hasta 750 m²', 1),
     'CHN-49b': ('El epígrafe 644.5 está en el Anexo de la Ley 12/2012', 1),
     'CHN-49c': ('La chocolatería de taza NO entra en la Ley 12/2012', 1),
     'CHN-78': ('Accesibilidad: RD 193/2023', 1),
@@ -234,7 +234,7 @@ PARAMS_LIBRO = [
      'Holgura mínima que quieres tener sobre el día normal. Por debajo de '
      'ella el libro avisa: una avería del frío, una baja o un pedido '
      'corporativo te dejan sin género aunque en teoría llegues.'),
-    ('Superficie total del local', D.NEGOCIO['m2_total'], 'm2',
+    ('Superficie total del local', D.NEGOCIO['m2_total'], 'm²',
      D.NEGOCIO['fuente_m2'], D.NEGOCIO['nota_m2']),
     ('Parte mínima del local dedicada a producción', 0.55, '%', 'supuesto',
      'Criterio de la casa, no norma: por debajo de esto la tienda se come al '
@@ -245,7 +245,7 @@ PARAMS_LIBRO = [
      D.NEGOCIO['potencia_instalada_kw'], 'kW',
      D.NEGOCIO['fuente_potencia_instalada'], D.NEGOCIO['nota_potencia']),
     ('Temperatura exterior de tu ciudad en agosto',
-     D.NEGOCIO['t_exterior_agosto_c'], 'grados C',
+     D.NEGOCIO['t_exterior_agosto_c'], '°C',
      D.NEGOCIO['fuente_t_exterior'], D.NEGOCIO['nota_t_exterior']),
     ('Potencia frigorífica que te OFRECE el instalador',
      D.NEGOCIO['potencia_frigorifica_ofertada_kw'], 'kW',
@@ -254,7 +254,7 @@ PARAMS_LIBRO = [
      'carga térmica, y lo dice en la hoja «Clima del Obrador». Pídela por '
      'escrito con el salto de temperatura de diseño al lado.'),
     ('Salto de temperatura de diseño que declara el instalador', 16.0,
-     'grados C', 'supuesto',
+     '°C', 'supuesto',
      'El salto de temperatura para el que ha dimensionado su equipo. Es la '
      'pregunta que casi '
      'nadie hace, y la que decide si esa oferta sirve en agosto: si ha '
@@ -269,9 +269,9 @@ PARAMS_LIBRO = [
      'Las seis zonas de La Almendra. NO es el reparto de una pastelería: aquí '
      'no hay zona de horno ni de fermentación, y sí cámara climatizada.'),
     ('Superficie máxima de venta sin licencia previa (Ley 12/2012)',
-     UMBRAL_750, 'm2', 'CHN-49 + CHN-49b',
+     UMBRAL_750, 'm²', 'CHN-49 + CHN-49b',
      'Ningún ayuntamiento puede exigirte licencia previa de instalación, de '
-     'funcionamiento o de actividad hasta 750 m2 de superficie útil de '
+     'funcionamiento o de actividad hasta 750 m² de superficie útil de '
      'exposición y venta al público, porque el epígrafe 644.5 «Comercio al '
      'por menor de bombones y caramelos» está en el Anexo de la Ley 12/2012. '
      'OJO: la chocolatería de TAZA (grupo 676) NO está en ese Anexo '
@@ -307,7 +307,13 @@ EQUIPOS_CAPACIDAD = [
      'se mira al presupuestar. Fíjate en dónde queda en el cuello de botella: '
      'templar NO es lo que limita una bombonería artesana. Los bombones por '
      'kilo salen de los 5,5 g de chocolate de la tanda de referencia; cámbialos '
-     'si tu pieza pesa otra cosa.'),
+     'si tu pieza pesa otra cosa. Los 180 minutos NO son el rendimiento de su '
+     'ficha (55 kg/h): son el ritmo al que el obrador vacía la cuba sobre el '
+     'moldeado, con carga, templado, vaciado y cristalización. Por eso esta '
+     'columna NO es comparable entre una máquina continua y una de lote: que '
+     'la fila 16 (3 kg) dé más bombones al día que ésta (12 kg) es un efecto '
+     'de cuántos ciclos enteros caben en los 408 minutos de la jornada, no '
+     'una ventaja de la máquina pequeña.'),
     ('Temperador de baño maría digital, 22 L — segunda cobertura',
      'Templado', 'Sí', 8, 'kg de cobertura por carga',
      BOMBONES_POR_KG, 180, 0.35, 'CHS-41j',
@@ -343,10 +349,10 @@ EQUIPOS_CAPACIDAD = [
      'con una banda de 200 mm produce muy por encima de lo que una bombonería '
      'artesana necesita, y ése es el dato que hay que tener delante antes de '
      'comprarla.'),
-    ('Cámara climatizada de chocolate, unos 6 m2', 'Frío y cristalización',
-     'Sí', 6, 'm3 útiles por rotación', 480, 240, 0.85, 'supuesto',
+    ('Cámara climatizada de chocolate, unos 6 m²', 'Frío y cristalización',
+     'Sí', 6, 'm³ útiles por rotación', 480, 240, 0.85, 'supuesto',
      'Aquí el «ciclo» es una rotación de la cámara. NO es una nevera: trabaja a '
-     '15-18 grados C con 50-60 % de humedad, y es lo que sostiene la '
+     '15-18 °C con 50-60 % de humedad, y es lo que sostiene la '
      'cristalización y la vida útil que declares en tu APPCC.'),
     ('Puesto de envasado y montaje de cajas', 'Envasado', 'Sí', 1,
      'puestos de envasado', 128, 100, 1.00, 'supuesto',
@@ -355,12 +361,12 @@ EQUIPOS_CAPACIDAD = [
      'etiquetarla y cerrarla cuesta tiempo de obrador, y ese tiempo no está en '
      'la ficha de ninguna máquina.'),
     ('Vitrina refrigerada específica para chocolate — Docriluc WB-6-6-R',
-     'Tienda y vitrina', 'Sí', 0.6, 'm2 de exposición por reposición', 520,
+     'Tienda y vitrina', 'Sí', 0.6, 'm² de exposición por reposición', 520,
      150, 0.55, 'CHS-43',
-     'Rango de trabajo del equipo +14/+17 grados C. NO son los +2/+4 de una '
+     'Rango de trabajo del equipo +14/+17 °C. NO son los +2/+4 de una '
      'vitrina de pastelería, que arruina el bombón por condensación y pérdida '
      'de brillo. El objetivo operativo de cada mañana lo pone el kit: 16-18 '
-     'grados C y menos del 55 % de humedad.'),
+     '°C y menos del 55 % de humedad.'),
     ('Atemperadora de arranque, 4,5 L (unos 3 kg) — Pavoni MINITEMPER',
      'Templado', 'No', 3, 'kg de cobertura por carga', BOMBONES_POR_KG, 45,
      1.00, 'CHS-41h',
@@ -395,8 +401,8 @@ COHERENCIAS = [
      'escaparate da al sol de mediodía, esto deja de cumplirse solo.'),
     ('La nevera de rellenos está por debajo de la cámara', 'nevera_rellenos',
      'max', '<=', 'camara', 'min',
-     'La nevera es la del RELLENO, a 0-4 grados C. El bombón acabado NO va a 4 '
-     'grados C: condensa, y el agua de la condensación disuelve el azúcar de '
+     'La nevera es la del RELLENO, a 0-4 °C. El bombón acabado NO va a 4 '
+     '°C: condensa, y el agua de la condensación disuelve el azúcar de '
      'la superficie.'),
 ]
 
@@ -404,13 +410,13 @@ COHERENCIAS = [
 #: por defecto, por qué importa). `tipo` = 'num' o 'sino'.
 F_INST_INI = 6
 PREGUNTAS_INSTALADOR = [
-    ('¿Qué volumen en m3 has tomado para el obrador?', 'm3', 'num', 78.0,
-     'Los metros cuadrados de la hoja «Zonas y m2» por la altura libre. Si el '
+    ('¿Qué volumen en m³ has tomado para el obrador?', 'm³', 'num', 78.0,
+     'Los metros cuadrados de la hoja «Zonas y m²» por la altura libre. Si el '
      'número que ha usado no se parece al tuyo, ha dimensionado otro local.'),
     ('¿Para qué salto de temperatura de diseño lo has calculado?',
-     'grados C', 'num', 16.0,
+     '°C', 'num', 16.0,
      'Es LA pregunta. Un equipo dimensionado para un salto de 10 grados no '
-     'sostiene 18-20 grados C dentro con 36 fuera, y en agosto es cuando se '
+     'sostiene 18-20 °C dentro con 36 fuera, y en agosto es cuando se '
      'nota.'),
     ('¿Qué aportes internos has contado?', 'kW', 'num', 3.5,
      'La atemperadora, el temperador, las luces y las personas calientan el '
@@ -467,15 +473,15 @@ VISITA = [
      'Lleva la ficha de preguntas de la hoja «Clima del Obrador» a la visita y '
      'mira dónde iría la unidad exterior y por dónde saldría el condensado.',
      'Sí', None, None, None,
-     'ES LA ELIMINATORIA PROPIA DE UNA CHOCOLATERÍA. Sin 18-20 grados C y '
+     'ES LA ELIMINATORIA PROPIA DE UNA CHOCOLATERÍA. Sin 18-20 °C y '
      '50-60 % de humedad en el obrador, la cobertura no cristaliza y el bombón '
      'sale mate o con fat bloom. Un local que no se puede climatizar no es un '
      'local barato: es otro negocio.', None),
-    ('La superficie útil llega a los m2 que has repartido por zonas', 'No',
+    ('La superficie útil llega a los m² que has repartido por zonas', 'No',
      'Superficie útil real, sin contar muros ni patinillos. Compárala con el '
-     'total de la hoja «Zonas y m2».', 'Sí', 77.0, 'SUPERFICIE', '>=',
+     'total de la hoja «Zonas y m²».', 'Sí', 77.0, 'SUPERFICIE', '>=',
      'La superficie de un anuncio suele ser construida. La que te sirve es la '
-     'útil, y entre una y otra se van con facilidad 10 m2.', None),
+     'útil, y entre una y otra se van con facilidad 10 m².', None),
     ('La altura libre del local llega a la que has fijado', 'No',
      'Metro láser desde el suelo terminado a la cara inferior del forjado, en '
      'el punto más bajo. Mide donde iría la unidad interior del clima.', 'Sí',
@@ -485,9 +491,9 @@ VISITA = [
      'climatización y para el conducto de la deshumidificación.', None),
     ('La superficie de exposición y venta está por debajo del umbral de la '
      'Ley 12/2012', 'No',
-     'Mide sólo la zona a la que entra el público. La de la hoja «Zonas y m2» '
+     'Mide sólo la zona a la que entra el público. La de la hoja «Zonas y m²» '
      'es la de partida.', 'Sí', 22.0, 'UMBRAL750', '<=',
-     'Por debajo de 750 m2 de superficie útil de exposición y venta al público, '
+     'Por debajo de 750 m² de superficie útil de exposición y venta al público, '
      'ninguna administración puede exigirte licencia previa de instalación, de '
      'funcionamiento o de actividad: el epígrafe 644.5 está en el Anexo de la '
      'Ley 12/2012. Decir qué trámite pide Madrid o Barcelona está PROHIBIDO en '
@@ -514,7 +520,7 @@ VISITA = [
      'Por comprobar', None, None, None,
      'La chocolatería de TAZA es otro negocio y la norma lo separa sola: el '
      'Anexo de la Ley 12/2012 NO incluye ningún grupo de la agrupación 67, así '
-     'que la bombonería se libra de la licencia previa hasta 750 m2 y la de '
+     'que la bombonería se libra de la licencia previa hasta 750 m² y la de '
      'taza no. Y si hay freidora de gas, la instalación receptora se '
      'inspecciona cada cinco años.', 'CHN-49c'),
     ('Los estatutos de la comunidad de propietarios no prohíben la actividad',
@@ -536,7 +542,7 @@ VISITA = [
      'Cuenta los metros y mira dónde están los bajantes. Un aseo nuevo sin '
      'bajante cerca es obra grande.', 'Sí', None, None, None,
      'El personal necesita su aseo y su taquilla; el cliente, el suyo. Los 8 '
-     'm2 de la hoja de zonas ya lo contemplan.', None),
+     'm² de la hoja de zonas ya lo contemplan.', None),
     ('Se puede descargar la cobertura sin cruzar la zona de clientes', 'No',
      'Ve a la hora a la que descargarías. Mira si hay carga y descarga y si el '
      'portal lo permite.', 'Sí', None, None, None,
@@ -564,7 +570,7 @@ VISITA = [
     ('El escaparate y la vitrina quedan fuera del sol de mediodía', 'No',
      'Ve al local a las 14:00, no a las 10:00, y mira dónde da el sol.', 'Sí',
      None, None, None,
-     'La vitrina de bombonería trabaja a 16-18 grados C. Un escaparate a '
+     'La vitrina de bombonería trabaja a 16-18 °C. Un escaparate a '
      'poniente en julio la obliga a ciclar sin parar, sube la humedad interior '
      'y te deja el bombón mate. Se arregla con lámina solar y toldo, que son '
      'partida del libro 2, pero hay que saberlo antes.', None),
@@ -615,7 +621,7 @@ PASOS = [
     'ciudad en agosto y la potencia frigorífica que te ofrezcan. Todo lo demás '
     'del libro se recalcula desde aquí; no hay ni un número escondido dentro '
     'de una fórmula.',
-    '2. Hoja «Zonas y m2»: reparte los metros entre las seis zonas y numera el '
+    '2. Hoja «Zonas y m²»: reparte los metros entre las seis zonas y numera el '
     'recorrido de la marcha adelante, del 1 al 6. La hoja te dice si el '
     'reparto cuadra con la superficie declarada, qué parte del local es '
     'producción y si el recorrido tiene un cruce.',
@@ -658,8 +664,8 @@ NOTAS_LIBRO = [
     'jornada y el puesto de envasado. Mira la columna «Cuenta para el cuello» '
     'antes de decidir en qué gastas.',
     'EL CLIMA NO ES CONFORT: ES LA PARTIDA QUE DECIDE SI LA COBERTURA '
-    'CRISTALIZA. 18-20 grados C y 50-60 % de humedad en el obrador, y una '
-    'cámara a 15-18 grados C que no es una nevera. Este libro no calcula tu '
+    'CRISTALIZA. 18-20 °C y 50-60 % de humedad en el obrador, y una '
+    'cámara a 15-18 °C que no es una nevera. Este libro no calcula tu '
     'carga térmica -no hay un solo coeficiente publicado y verificable para '
     'hacerlo- pero sí comprueba que lo que quieres, el agosto de tu ciudad y '
     'lo que te ofrecen son coherentes entre sí, y te da la lista de preguntas '
@@ -833,7 +839,7 @@ def hoja_parametros(wb):
     fila = fila_par(len(PARAMS_LIBRO)) + 1
     C.parrafo(ws, fila,
               'Los valores marcados «supuesto» son los de la bombonería de '
-              'ejemplo «La Almendra» (75 m2, 45 de producción y 22 de tienda, '
+              'ejemplo «La Almendra» (75 m², 45 de producción y 22 de tienda, '
               'un turno, tres personas y 2,5 jornadas). NO son datos de '
               'sector: son un punto de partida coherente para que puedas ver '
               'el libro funcionando antes de meter los tuyos.',
@@ -859,9 +865,9 @@ def hoja_parametros(wb):
 # --------------------------------------------------------------------------
 #: Paso del recorrido de marcha adelante, por nombre de zona (supuesto, verde).
 ORDEN_MARCHA = {
-    'Almacen de cobertura y materias primas': 1,
+    'Almacén de cobertura y materias primas': 1,
     'Obrador de templado y moldeado': 2,
-    'Camara de chocolate': 3,
+    'Cámara de chocolate': 3,
     'Envasado y packaging': 4,
     'Tienda y mostrador': 5,
     'Aseos y vestuario': 6,
@@ -881,7 +887,7 @@ def hoja_zonas(wb):
                 'no hay zona de horno ni de fermentación, y sí cámara '
                 'climatizada.', col_fin='G')
     C.cabecera(ws, 5, [('A', 'Nº'), ('B', 'Zona'), ('C', 'Bloque'),
-                       ('D', 'm2'), ('E', '% del local'),
+                       ('D', 'm²'), ('E', '% del local'),
                        ('F', 'Paso del recorrido'),
                        ('G', 'Qué tiene que cumplir')])
     fila = Z_INI
@@ -905,7 +911,7 @@ def hoja_zonas(wb):
                 fmt=C.FMT_PCT)
     nota_legal_celda(ws, 'G%d' % Z_FILA['Obrador de templado y moldeado'],
                      'CHN-32')
-    nota_legal_celda(ws, 'G%d' % Z_FILA['Camara de chocolate'], 'CHN-30')
+    nota_legal_celda(ws, 'G%d' % Z_FILA['Cámara de chocolate'], 'CHN-30')
 
     motor.val(ws, 'B%d' % f_tot, 'TOTAL repartido', bold=True)
     motor.f(ws, 'D%d' % f_tot, '=SUM(D%d:D%d)' % (Z_INI, z_fin),
@@ -919,7 +925,7 @@ def hoja_zonas(wb):
     motor.f(ws, 'D%d' % f_dec, "='%s'!B%d" % (H_PAR, fila_par(P_M2)),
             fmt=C.FMT_DEC1)
     f_desc = f_tot + 2
-    motor.val(ws, 'B%d' % f_desc, 'Descuadre (m2)')
+    motor.val(ws, 'B%d' % f_desc, 'Descuadre (m²)')
     motor.f(ws, 'D%d' % f_desc, motor.iferror('D%d-D%d' % (f_tot, f_dec)),
             fmt=C.FMT_DEC1)
     motor.val(ws, 'G%d' % f_desc,
@@ -935,7 +941,7 @@ def hoja_zonas(wb):
     Z_REF['produccion_pct'] = f_pprod
     motor.val(ws, 'B%d' % f_prod, 'Metros de zona de producción')
     motor.f(ws, 'D%d' % f_prod,
-            '=SUMIF(C%d:C%d,"Produccion",D%d:D%d)'
+            '=SUMIF(C%d:C%d,"Producción",D%d:D%d)'
             % (Z_INI, z_fin, Z_INI, z_fin), fmt=C.FMT_DEC1)
     motor.val(ws, 'B%d' % f_pprod, 'Parte del local dedicada a producción')
     motor.f(ws, 'D%d' % f_pprod, motor.iferror('D%d/D%d' % (f_prod, f_tot)),
@@ -951,7 +957,7 @@ def hoja_zonas(wb):
     motor.f(ws, 'D%d' % f_pven, motor.iferror('D%d/D%d' % (f_ven, f_tot)),
             fmt=C.FMT_PCT)
     motor.val(ws, 'G%d' % f_ven,
-              'Es la superficie que se compara con los 750 m2 de la Ley '
+              'Es la superficie que se compara con los 750 m² de la Ley '
               '12/2012 en la ficha de visita: la de EXPOSICIÓN Y VENTA al '
               'público, no la del local entero.', wrap=True)
     ws.row_dimensions[f_ven].height = 44
@@ -1001,14 +1007,14 @@ def hoja_zonas(wb):
     c_ini = f_num + 1
     comprobaciones = [
         ('La cobertura entra antes que el obrador',
-         'F%d<F%d' % (Z_FILA['Almacen de cobertura y materias primas'],
+         'F%d<F%d' % (Z_FILA['Almacén de cobertura y materias primas'],
                       Z_FILA['Obrador de templado y moldeado'])),
         ('El bombón acabado pasa del obrador a la cámara',
-         'F%d>F%d' % (Z_FILA['Camara de chocolate'],
+         'F%d>F%d' % (Z_FILA['Cámara de chocolate'],
                       Z_FILA['Obrador de templado y moldeado'])),
         ('El envasado va después de la cámara',
          'F%d>F%d' % (Z_FILA['Envasado y packaging'],
-                      Z_FILA['Camara de chocolate'])),
+                      Z_FILA['Cámara de chocolate'])),
         ('Lo envasado llega a la tienda sin volver atrás',
          'F%d<=F%d' % (Z_FILA['Envasado y packaging'],
                        Z_FILA['Tienda y mostrador'])),
@@ -1200,7 +1206,7 @@ def hoja_clima(wb):
               'es tu propia oferta dividida entre tus propios metros. Sirve '
               'para una sola cosa, y es útil: enseñársela al segundo '
               'instalador y preguntarle por qué la suya se parece o no se '
-              'parece. Cualquier tabla que te diga «tantos kW por m2 de '
+              'parece. Cualquier tabla que te diga «tantos kW por m² de '
               'obrador de chocolate» está inventada.', wrap=True)
     ws.row_dimensions[CLI['ratio']].height = 62
 
@@ -1326,7 +1332,7 @@ def hoja_clima(wb):
     C.parrafo(ws, fila,
               'POR QUÉ ESTA HOJA NO CALCULA TU CARGA TÉRMICA. Para calcularla '
               'harían falta la transmitancia de cada cerramiento de TU local, '
-              'un coeficiente por m3, los aportes internos reales y las '
+              'un coeficiente por m³, los aportes internos reales y las '
               'renovaciones de aire, y no existe ninguna fuente publicada y '
               'verificable que dé esos números para un obrador de chocolate. '
               'Las dos salidas fáciles estaban prohibidas: inventarse los '
@@ -1681,7 +1687,7 @@ def hoja_local(wb):
               'necesita campana ni conducto a cubierta: se cae la partida que '
               'tumba la mitad de los locales. A cambio aparece otra que en '
               'pastelería no existe, y es eliminatoria: el local tiene que '
-              'poder climatizarse con deshumidificación a 18-20 grados C. Un '
+              'poder climatizarse con deshumidificación a 18-20 °C. Un '
               'sótano fresco y húmedo es un mal local para el chocolate aunque '
               'esté regalado.',
               col_ini='B', col_fin='J', alto=62)
@@ -1761,7 +1767,7 @@ def mapa_celdas():
     add('Metros del obrador de templado y moldeado (celda de entrada)', H_ZON,
         'D%d' % Z_FILA['Obrador de templado y moldeado'], 'entrada')
     add('Metros de la cámara de chocolate (celda de entrada)', H_ZON,
-        'D%d' % Z_FILA['Camara de chocolate'], 'entrada')
+        'D%d' % Z_FILA['Cámara de chocolate'], 'entrada')
 
     # --- Clima ------------------------------------------------------------
     add('Temperatura mínima objetivo del obrador', H_CLI,
@@ -1961,7 +1967,7 @@ def demo(ruta):
     el fichero que se acaba de escribir.
 
     Regla de pycel: hay que **evaluar la salida ANTES de tocar la entrada**.
-    `set_value()` invalida los nodos que ya están en el grafo, y los que no
+    `set_value()` inválida los nodos que ya están en el grafo, y los que no
     están todavía se construyen leyendo el valor CACHEADO del fichero: si se
     toca la entrada primero, la salida sale con el número viejo y la prueba
     pasa por casualidad.
@@ -2046,10 +2052,10 @@ def demo(ruta):
     ok750 = c.evaluate(A_H750)
     c.set_value("'%s'!F%d" % (H_LOC, L_INI + 4), 900.0)
     mal750 = c.evaluate(A_H750)
-    prueba('El umbral de los 750 m2 se compara al revés (no pasarlo, no '
+    prueba('El umbral de los 750 m² se compara al revés (no pasarlo, no '
            'llegar a él)',
            ok750 == 'Sí' and mal750 == 'No',
-           'con 22 m2 = %r · con 900 m2 = %r' % (ok750, mal750))
+           'con 22 m² = %r · con 900 m² = %r' % (ok750, mal750))
 
     # 8. Los metros de las zonas cuadran con la superficie declarada.
     c = ExcelCompiler(ruta)

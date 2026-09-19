@@ -1,0 +1,37 @@
+### El contexto de la decisión
+
+El caso se repite en cada tanda de consultas que llegan a este pack: alguien lleva dos años haciendo bombones por encargo en su propia cocina y quiere empezar a facturar sin montar todavía un local. Busca la respuesta en internet y encuentra dos posturas opuestas, las dos dichas con la misma seguridad: una jura que es completamente legal, la otra jura que es imposible sin obrador (taller o laboratorio) dado de alta. Ninguna de las dos está completa.
+
+Lo que casi nadie explica bien es que la respuesta correcta no es sí ni no: es «depende de tu comunidad autónoma», y el motivo está en una lista cerrada que termina con una letra abierta. Esa lista es el art. 13.8 del RD 1021/2022, comprobado el 12 de septiembre de 2026, y tiene cinco letras en total: la letra a cubre comidas preparadas con tratamiento térmico suficiente, y la letra b, en su texto literal, «productos de panadería y repostería estables a temperatura ambiente». Ahí se agota lo que la mayoría llega a leer, y por eso da la puerta por cerrada o por abierta sin comprobar nada más.
+
+Una búsqueda exhaustiva sobre el texto completo de esa norma zanja la duda de raíz: las palabras «chocolate», «cacao», «bombón», «confitería» y «golosina» aparecen cero veces en todo el texto; «repostería» aparece una sola vez, en esa misma letra b, y «pastelería» aparece otra sola vez, en la fila novena del art. 4.1. El bombón, sencillamente, no está nombrado en ningún sitio de esta norma.
+
+### Las opciones sobre la mesa
+
+Con ese punto de partida hay tres caminos, y sólo dos suelen planteárselos de entrada:
+
+- Opción A: esperar, ahorrar y montar el obrador con todo lo que exige, que es el resto de esta guía.
+- Opción B: comprobar si la comunidad autónoma propia ha ampliado esa lista estatal por su cuenta y, si lo ha hecho, seguir esa vía autonómica en vez de la estatal.
+- Opción C: alquilar horas de un obrador ajeno ya legalizado para producir bajo su alta, la salida que casi nadie menciona porque no sale en ningún buscador y sí en la práctica de quien ya lo ha resuelto.
+
+Lo que cambia entre las tres no es sólo el papeleo: cambia el tiempo hasta la primera factura, la inversión que hay que adelantar y el techo de producción con el que se puede trabajar. Ese techo, en la vía doméstica, es bajo por definición y no por capricho de quien redactó la norma: se fija así a propósito para que la excepción no se convierta en una fábrica sin inspección.
+
+### El criterio con el que se decide
+
+La regla de decisión no empieza por los kilos que se quieren producir: empieza por la pregunta de la comunidad autónoma. Si la comunidad propia no ha ampliado la lista estatal, los umbrales de kilos y de proporcionalidad no llegan siquiera a activarse; da igual cuánto se produzca en la cocina, porque la puerta ya está cerrada antes de medir nada.
+
+Y el criterio de crecimiento aleja del error de tomar esto como una meta: la vía doméstica tiene, cuando está abierta, un techo de volumen proporcional al tamaño de las instalaciones, y que en ningún caso puede superar los 100 kilos semanales, con la obligación añadida de demostrarlo documentalmente si lo pide una inspección. Ese doble límite —proporcionalidad y tope absoluto— convierte la vía doméstica en una rampa de salida hacia el obrador, nunca en un destino donde quedarse a crecer.
+
+### La celda que lo resuelve
+
+La hoja «Ruta Doméstica» de checklist-legal-licencias-y-cacao.xlsx sigue exactamente este orden: primero pregunta por la comunidad autónoma, y sólo si la respuesta abre la puerta activa uno detrás de otro los tres requisitos de producción. En el caso modelado que trae el pack, la respuesta a si la comunidad ha ampliado la lista por la letra abierta es que no, y la lectura que da la hoja es directa: con la lista estatal en la mano, el bombón no entra, así que la ruta doméstica no está abierta para ese caso.
+
+Aun así, la hoja calcula igual qué densidad de producción supondría el caso modelado, para quien sí tenga la puerta abierta en su comunidad: los 35 kilos a la semana que prevé elaborar el caso modelado, repartidos sobre sus 12 metros cuadrados de zona de elaboración, salen a 2,92 kilos por metro cuadrado, muy por debajo del tope absoluto de 100 kilos semanales. Y como la ruta no está abierta en ese caso concreto, el requisito de proporcionalidad se marca directamente como no procede. El veredicto que escribe la hoja es el mismo que hay que poder repetir delante de un inspector sin dudar: con la lista estatal en la mano, la ruta doméstica no está abierta para el bombón en esa comunidad.
+
+La recomendación, con la condición que la cambiaría, es esta: mientras tu comunidad autónoma no haya ejercido la letra abierta a favor del bombón, la vía doméstica no es una opción real, y toca ir directo a la opción B o a la opción C. Eso cambia el día que tu comunidad publique su propia lista con una letra que cubra expresamente tu producto.
+
+### La norma que aplica cuando la hay
+
+Que el bombón no encaje por defecto en la letra b es una lectura nuestra, no una cita literal de la norma: esa letra habla de panadería y repostería, y encajar ahí un bombón de chocolate es forzar una categoría pensada para otra cosa. Así se presenta, como interpretación, y no como si el texto lo dijera con esas palabras.
+
+La letra e, la que de verdad decide, sí es literal: «otros alimentos que las autoridades competentes de las comunidades autónomas permitan en sus territorios». Es una lista abierta a propósito, y ya hay comunidades que la han ejercido. La Comunitat Valenciana, por el punto 9.8.1.b de su Decreto 13/2025 del Consell, amplió su propia lista hasta ocho letras y añadió «confitería» sin nombrar el chocolate, manteniendo además el mismo requisito de estabilidad a temperatura ambiente que trae la norma estatal. Sigue siendo discutible si «confitería» cubre de verdad un bombón relleno o un praliné, y esa es justo la pregunta que hay que llevarle a la administración autonómica antes de dar la ruta por abierta o por cerrada: no basta con que exista una lista ampliada, hay que leer con qué palabra exacta se ha ampliado.

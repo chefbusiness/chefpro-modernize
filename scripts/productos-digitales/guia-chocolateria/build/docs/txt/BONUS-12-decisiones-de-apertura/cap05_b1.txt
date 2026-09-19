@@ -1,0 +1,33 @@
+### El contexto de la decisión
+
+El caso se repite en casi todas las aperturas: pruebas una cobertura de origen, notas la diferencia en boca frente a la cobertura de marca que llevabas hasta entonces y decides trabajar con ella para la referencia que más te ha convencido, sin llevar antes el precio al escandallo (costeo). Entre una cobertura profesional de marca y una de origen hay un factor que multiplica el coste (costo) de materia de cada pieza que la lleve, y ese factor no se nota en boca: se nota en el margen del mes siguiente, cuando ya has vendido cien piezas con el precio antiguo y el coste nuevo.
+
+Lo que casi nadie hace antes de decidir es poner las dos coberturas una al lado de la otra en la misma unidad. Una cobertura profesional de marca tipo Callebaut 811, negro 54,5 %, se compra en bloque de 5 kg a 125,08 € con el impuesto ya incluido en la ficha (Planeta Torta, 2026-09-12) —rebajada desde 136,48 €—, lo que equivale a 25,02 € el kilo. Una cobertura de origen tipo Valrhona en pepitas se compra en formato de 400 g a 14,99 € (Club del Chocolate, 2026-09-12), lo que equivale a 37,48 € el kilo, un precio cuya ficha no declara la base de impuesto y que por eso se maneja como dato abierto. El matiz importa: el precio de la marca lo declara su fuente con el impuesto ya dentro, así que antes de meterlo en el mismo escandallo hay que pasarlo a base imponible —22,75 €—, porque mezclar una base con impuesto y otra sin él en el mismo cociente infla el coste de materia sin que hayas comprado nada más caro.
+
+### Las opciones sobre la mesa
+
+Sobre la mesa hay tres formas de resolver esta decisión, no dos:
+
+- Opción A: una sola cobertura de marca para toda la carta, del bombón a la tableta (barra).
+- Opción B: cobertura de origen en toda la carta, sin excepción.
+- Opción C: la cobertura de marca como base de toda la producción y la de origen reservada a la línea de tabletas y a la referencia de firma de la casa.
+
+Lo que cambia entre las tres no es sólo el coste de materia por pieza: cambia el precio de venta que tienes que sostener en mostrador, cambia cuánto expone cada carta a una subida del cacao —si toda la producción lleva la cobertura cara, toda la producción se mueve a la vez cuando sube—, y cambia el discurso frente al cliente: no es lo mismo explicar una tableta de origen puntual que justificar que todo el surtido se ha encarecido a la vez.
+
+### El criterio con el que se decide
+
+La regla que aplicamos es que la decisión se toma por referencia, no por casa entera. La cobertura cara tiene sentido donde el cliente puede notarla de verdad y donde el precio de venta puede subir para pagarla: una tableta de origen, una pieza de firma. En un bombón relleno, en cambio, la cobertura es una capa fina alrededor de un relleno que ocupa la mayor parte del peso y del sabor, así que buena parte de lo que has pagado de más se queda tapada dentro.
+
+Y hay un filtro de riesgo que va antes que el de gusto: la referencia que más cobertura lleva por pieza es también la primera que se rompe cuando sube el cacao. Poner ahí la cobertura de origen concentra todo el riesgo de la subida en la misma pieza en vez de repartirlo por la carta. Por eso la recomendación por defecto es la opción C: marca como base de toda la producción, origen sólo donde el cliente lo nota y donde hay margen para subir el precio sin perder venta. Esa recomendación cambia si tu propuesta de negocio es, desde el primer día, una casa cien por cien de origen: entonces la opción B deja de ser un riesgo mal repartido y pasa a ser el posicionamiento de la marca.
+
+### La celda que lo resuelve
+
+Esto no se decide a ojo. La hoja «Coste de Cobertura» del libro de sensibilidad al precio del cacao da el coste de cobertura por pieza de cada referencia de tu carta y el food cost de materia que produce con la cobertura que le hayas asignado. Para la tableta de chocolate negro de origen al 70 %, de 100 g, esa hoja da un coste de cobertura por pieza de 3,75 € y un food cost de materia del 48,5 %: son los números que hay que mirar antes de decidir si esa pieza lleva marca u origen, no la sensación de la cata.
+
+La hoja «Repercusión al PVP» del mismo libro completa la decisión: dice qué referencia se rompe primero si sube el cacao y qué subida aguanta cada una antes de pasarse del food cost máximo que te hayas fijado. La que primero se rompe es precisamente esa misma tableta de chocolate negro de origen al 70 %, de 100 g: es la candidata a vigilar de cerca, no la que puedes olvidar una vez fijado el precio de venta. La tabla siguiente reúne las cuatro coberturas del caso en las dos bases de precio, para comparar de un vistazo antes de asignar una cobertura a cada línea de tu carta.
+
+### La norma que aplica cuando la hay
+
+La norma no te obliga a trabajar con una cobertura ni con otra: eso es una decisión comercial tuya. Lo que sí condiciona es lo que puedes escribir en la etiqueta y en el cartel de mostrador una vez elegida. El RD 1055/2003, de 1 de agosto, fija que el chocolate, el chocolate con leche y la cobertura de chocolate sólo pueden completarse con una mención de calidad por encima de unos umbrales reforzados —43 % de materia seca total de cacao y 26 % de manteca en el negro, 30/18/4,5 en el de leche y 16 % de desgrasada en la cobertura— (comprobado el 12 de septiembre de 2026). El mínimo para llamarse chocolate es otro y más bajo: el del apartado 1.6. La norma no da una lista de palabras autorizadas —«fino», «superior» y «extra» no aparecen en su texto—: lo que autoriza son menciones o calificativos referentes a criterios de calidad, y sólo sobre esas tres denominaciones y por encima de esos umbrales reforzados.
+
+Y hay tres magnitudes que ninguna ficha de proveedor publica por defecto: la materia seca total, la manteca y la parte desgrasada de esa materia seca. Si tu discurso de mostrador se apoya en la calidad de la cobertura para justificar el precio, esas tres cifras se piden al proveedor antes de escribir nada, porque son las que sostienen la mención, no la marca de la bolsa.

@@ -78,8 +78,8 @@ FMT_ENT = motor.FMT_ENT
 FMT_FECHA = motor.FMT_FECHA
 FMT_DEC = '#,##0.00'
 FMT_DEC1 = '#,##0.0'
-FMT_M2 = '#,##0.0 "m2"'
-FMT_EURM2 = '#,##0 "EUR/m2"'
+FMT_M2 = '#,##0.0 "m²"'
+FMT_EURM2 = '#,##0 "EUR/m²"'
 
 GRIS = 'F2F2F2'
 CREMA = 'FFF6DC'

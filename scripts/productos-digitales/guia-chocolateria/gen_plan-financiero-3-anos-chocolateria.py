@@ -710,7 +710,7 @@ def hoja_supuestos(wb):
         'cierre por festivos. En AGOSTO NO SE CIERRA: lo que para es el '
         'obrador, no la tienda, y el literal del kit lo dice («la tienda abre '
         'para el turista aunque el obrador pare»). Una bombonería de menos de '
-        '300 m2 tiene libertad horaria por el art. 5.2 de la Ley de Horarios '
+        '300 m² tiene libertad horaria por el art. 5.2 de la Ley de Horarios '
         'Comerciales, no por el 5.1.', id_chn='CHN-77')
     fx('factor_a1', 'Actividad del año 1 sobre la de crucero (%)',
        ie('SUMPRODUCT(%sB%d:M%d,%sB%d:M%d)'
@@ -835,8 +835,8 @@ def hoja_supuestos(wb):
     ent('renta', 'Alquiler mensual del local (€)', D.NEGOCIO['renta_mensual'],
         C.EUR,
         'SUPUESTO para una ciudad media. La renta observada en los ocho '
-        'traspasos verificados va de 910 €/mes (74 m2 en Madrid-Vallecas) a '
-        '2.200 €/mes (180 m2 en Barcelona); aquí se toma la parte baja porque '
+        'traspasos verificados va de 910 €/mes (74 m² en Madrid-Vallecas) a '
+        '2.200 €/mes (180 m² en Barcelona); aquí se toma la parte baja porque '
         'ninguna de esas dos ciudades es una ciudad media.')
     ent('fianza_meses', 'Fianza del alquiler (meses de renta)',
         D.NEGOCIO['meses_fianza'], C.ENT,
@@ -1598,7 +1598,7 @@ def hoja_pyg(wb):
          'SUPUESTO: mantenimiento de freidora y extracción, y la inspección '
          'periódica de la instalación de gas cada cinco años, repercutida. Y '
          'una que no es un euro pero cuesta tiempo: la bombonería se libra de '
-         'la licencia previa de actividad hasta 750 m2 y la chocolatería de '
+         'la licencia previa de actividad hasta 750 m² y la chocolatería de '
          'taza NO, porque su grupo de IAE no está en el Anexo de esa ley.')
     C.nota_celda(ws, 'C%d' % P['f_otros'], 'CHN-48')
 
@@ -1657,7 +1657,7 @@ def hoja_pyg(wb):
            'contiene ningún grupo de la agrupación 67, donde está la '
            'chocolatería de taza. Antes de mirar el margen, mira eso: la '
            'bombonería se libra de la licencia previa de actividad hasta '
-           '750 m2 y la taza no.')
+           '750 m² y la taza no.')
     C.nota_celda(ws, 'B%d' % P['f_veredicto'], 'CHN-49')
 
     # --- cruce 7 <- 3: el precio de la cobertura --------------------------

@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, BriefcaseBusiness, Calculator, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid,, ConciergeBell, Leaf, PartyPopper, Sandwich, ShoppingCart, Sprout, Store, Thermometer} from 'lucide-react';
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid, Cookie, ConciergeBell, Leaf, PartyPopper, Sandwich, ShoppingCart, Sprout, Store, Thermometer} from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
 const ALL_TAGS = [
@@ -168,6 +168,23 @@ const products = [
     badge: '✨ Nuevo',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
     tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'pasteleria', 'panaderia'],
+  },
+  {
+    name: 'Cómo Montar una Chocolatería Boutique & Atelier',
+    slug: '/guia-chocolateria-obrador',
+    price: '€65',
+    description: 'Obrador, denominaciones legales, vitrina, campañas, licencias y proveedores de cobertura y cacao.',
+    features: [
+      '20 capítulos + anexo normativo + 9 Excel',
+      'Capacidad de obrador, temperatura y humedad del taller',
+      'Denominaciones legales del chocolate y etiquetado',
+      'Bonus: business plan relleno y 12 decisiones resueltas',
+    ],
+    icon: Cookie,
+    image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'chocolateria'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -786,7 +803,7 @@ const products = [
     price: '€12',
     originalPrice: '€39',
     discount: '-69%',
-    description: '9 checklists operativos pre-rellenados para chocolatería artesanal: producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada.',
+    description: '11 plantillas para chocolatería artesanal: 9 checklists + 2 bonus. Producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada.',
     features: [
       'Producción: templado, moldeado y bombones',
       'Vitrina, packaging y servicio mostrador',
@@ -955,7 +972,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Utensils, name: 'Cómo Montar una Chocolatería Boutique & Atelier', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Octubre 2026' },
   { icon: Coffee, name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
   { icon: UtensilsCrossed, name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Rutinas de plancha, salsas y tortilla, turnos y cierre para una taquería que funciona sola.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },
@@ -1055,7 +1071,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 11, "url": "https://aichef.pro/guia-food-cost-ingenieria-menu", "name": "Guía Food Cost + Ingeniería de Menú" },
               { "@type": "ListItem", "position": 12, "url": "https://aichef.pro/manual-manager-restaurante", "name": "Manual del Manager de Restaurante" },
               { "@type": "ListItem", "position": 13, "url": "https://aichef.pro/manual-chef-ejecutivo", "name": "Manual del Chef Ejecutivo" },
-              { "@type": "ListItem", "position": 14, "url": "https://aichef.pro/guia-pasteleria-obrador", "name": "Cómo Montar una Pastelería" }
+              { "@type": "ListItem", "position": 14, "url": "https://aichef.pro/guia-pasteleria-obrador", "name": "Cómo Montar una Pastelería" },
+              { "@type": "ListItem", "position": 15, "url": "https://aichef.pro/guia-chocolateria-obrador", "name": "Cómo Montar una Chocolatería Boutique & Atelier" }
             ]
           }
         })}</script>

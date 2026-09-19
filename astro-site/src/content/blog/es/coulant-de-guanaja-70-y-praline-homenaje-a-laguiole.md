@@ -2,7 +2,7 @@
 title: "Coulant de Guanaja 70% y Praliné «Homenaje a Laguiole»"
 description: "Es un placer abordar una de las piezas más icónicas de la historia de la gastronomía contemporánea. El Biscuit de Chocolat Coulant, creado por el maestro…"
 pubDate: 2026-03-03
-modDate: 2026-08-31
+modDate: 2026-09-19
 category: recetas
 image: /blog-assets/2026/03/coulant-choco-aichefpro-recipe.jpg
 imageAlt: "COULANT DE GUANAJA 70% Y PRALINÉ \"HOMENAJE A LAGUIOLE\""
@@ -24,7 +24,7 @@ wpId: 3152
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chocolatería</h3><p class="mt-2 text-muted-foreground">Temperado, moldeado, ensamble, packaging.</p><a href="/kit-tareas-chocolateria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chocolatería por €12</a></aside>
 
-<h3 class="wp-block-heading">CONTEXTO HISTÓRICO Y FILOSOFÍA</h3>
+<p>Trabajar la Guanaja 70 % y el praliné en una carta de postres es una cosa; montar el obrador que los produce cada día es otra, con su clima, su vitrina, su registro sanitario y sus números. Ese camino completo, del local al punto de equilibrio, es la guía <a href="https://aichef.pro/guia-chocolateria-obrador">Cómo Montar una Chocolatería Boutique &amp; Atelier</a>.</p><h3 class="wp-block-heading">CONTEXTO HISTÓRICO Y FILOSOFÍA</h3>
 
 
 
@@ -141,7 +141,7 @@ wpId: 3152
 
 
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Asador / Parrilla</h3><p class="mt-2 text-muted-foreground">Encendido de brasas, protocolo Josper, maduración y despiece.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Asador / Parrilla por €14</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Cómo Montar una Chocolatería Boutique &amp; Atelier</h3><p class="mt-2 text-muted-foreground">Obrador, denominaciones legales, vitrina, campañas, licencias y proveedores de cobertura y cacao.</p><a href="/guia-chocolateria-obrador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=coulant-de-guanaja-70-y-praline-homenaje-a-laguiole" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Cómo Montar una Chocolatería Boutique &amp; Atelier por €65</a></aside>
 
 <h3 class="wp-block-heading">INSTRUCCIONES PASO A PASO</h3>
 

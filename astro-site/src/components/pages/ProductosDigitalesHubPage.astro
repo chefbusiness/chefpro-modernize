@@ -5,12 +5,12 @@
 // (locales={['es']}, canonical /productos-digitales, build format 'file').
 //
 // Paridad exacta con la SPA:
-//  · Las 48 tarjetas + 1 "próximamente" + los tags salen VERBATIM del array hardcodeado
+//  · Las 49 tarjetas + 22 "próximamente" + los tags salen VERBATIM del array hardcodeado
 //    (orden EXACTO = decisión de negocio). Extraídas byte a byte de la SPA (icon: X → iconName: 'X').
 //  · Filtro por tag + paginación "Cargar más" (12/pág) = <script> vanilla. TODAS las cards
 //    están en el DOM server-side (crawlables); el JS solo muestra/oculta (mismo criterio que
 //    las tabs de UseCasesHub — DESVIACIÓN DELIBERADA y coherente: la SPA solo renderiza 12 al
-//    DOM vía slice; aquí las 48 quedan en el DOM para SEO, el JS reproduce el slice inicial).
+//    DOM vía slice; aquí las 49 quedan en el DOM para SEO, el JS reproduce el slice inicial).
 //  · Iconos lucide vía <Icon> inline (añadidos Filter + Shell a Icon.astro).
 //  · 3 JSON-LD ÍNTEGROS (CollectionPage + FAQPage + BreadcrumbList) — mismos que el Helmet SPA.
 //  · SaasDiscoveryBanner / LogoBadge(isHub=true, sin pill) / WhatsAppProductSupport = markup
@@ -185,6 +185,23 @@ const products = [
     badge: '✨ Nuevo',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
     tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'pasteleria', 'panaderia'],
+  },
+  {
+    name: 'Cómo Montar una Chocolatería Boutique & Atelier',
+    slug: '/guia-chocolateria-obrador',
+    price: '€65',
+    description: 'Obrador, denominaciones legales, vitrina, campañas, licencias y proveedores de cobertura y cacao.',
+    features: [
+      '20 capítulos + anexo normativo + 9 Excel',
+      'Capacidad de obrador, temperatura y humedad del taller',
+      'Denominaciones legales del chocolate y etiquetado',
+      'Bonus: business plan relleno y 12 decisiones resueltas',
+    ],
+    iconName: 'Cookie',
+    image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'chocolateria'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -803,7 +820,7 @@ const products = [
     price: '€12',
     originalPrice: '€39',
     discount: '-69%',
-    description: '9 checklists operativos pre-rellenados para chocolatería artesanal: producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada.',
+    description: '11 plantillas para chocolatería artesanal: 9 checklists + 2 bonus. Producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada.',
     features: [
       'Producción: templado, moldeado y bombones',
       'Vitrina, packaging y servicio mostrador',
@@ -971,7 +988,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'Utensils', name: 'Cómo Montar una Chocolatería Boutique & Atelier', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Octubre 2026' },
   { iconName: 'Coffee', name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { iconName: 'IceCream', name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
   { iconName: 'UtensilsCrossed', name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Rutinas de plancha, salsas y tortilla, turnos y cierre para una taquería que funciona sola.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },
@@ -1096,6 +1112,7 @@ const collectionSchema = {
       { '@type': 'ListItem', position: 12, url: 'https://aichef.pro/manual-manager-restaurante', name: 'Manual del Manager de Restaurante' },
       { '@type': 'ListItem', position: 13, url: 'https://aichef.pro/manual-chef-ejecutivo', name: 'Manual del Chef Ejecutivo' },
       { '@type': 'ListItem', position: 14, url: 'https://aichef.pro/guia-pasteleria-obrador', name: 'Cómo Montar una Pastelería' },
+      { '@type': 'ListItem', position: 15, url: 'https://aichef.pro/guia-chocolateria-obrador', name: 'Cómo Montar una Chocolatería Boutique & Atelier' },
     ],
   },
 };
@@ -1467,58 +1484,61 @@ const breadcrumbSchema = {
   </section>
 
   {/* ===== Coming Soon ===== */}
-  <section id="pd-coming-section" class="px-4 pb-16 md:pb-24">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-8">
-        <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm font-medium">
-          <Icon name="Clock" class="w-4 h-4 inline mr-2" />
-          En Desarrollo
-        </span>
-        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
-          Próximos <span class="text-[#FFD700]">Productos</span>
-        </h2>
-        <p class="text-gray-500 text-sm max-w-2xl mx-auto">
-          Mismo estándar de calidad: acceso inmediato, actualizaciones de por vida y garantía de 30 días.
-        </p>
-      </div>
+  {/* D6: sin productos en cola, la sección no se sirve (paridad con la SPA, ProductosDigitales.tsx:1265). */}
+  {comingSoon.length > 0 && (
+    <section id="pd-coming-section" class="px-4 pb-16 md:pb-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm font-medium">
+            <Icon name="Clock" class="w-4 h-4 inline mr-2" />
+            En Desarrollo
+          </span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
+            Próximos <span class="text-[#FFD700]">Productos</span>
+          </h2>
+          <p class="text-gray-500 text-sm max-w-2xl mx-auto">
+            Mismo estándar de calidad: acceso inmediato, actualizaciones de por vida y garantía de 30 días.
+          </p>
+        </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {comingSoon.map((item) => (
-          <div
-            data-coming
-            data-tags={item.tags.join(' ')}
-            data-search={indiceBusqueda([item.name, item.desc, ...item.tags, ...item.tags.map(tagLabel)])}
-            class="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 opacity-70 hover:opacity-90 transition-opacity"
-          >
-            <div class="flex items-start gap-3 mb-3">
-              <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
-                <Icon name={item.iconName} class="w-4 h-4 text-gray-400" />
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {comingSoon.map((item) => (
+            <div
+              data-coming
+              data-tags={item.tags.join(' ')}
+              data-search={indiceBusqueda([item.name, item.desc, ...item.tags, ...item.tags.map(tagLabel)])}
+              class="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 opacity-70 hover:opacity-90 transition-opacity"
+            >
+              <div class="flex items-start gap-3 mb-3">
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                  <Icon name={item.iconName} class="w-4 h-4 text-gray-400" />
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-sm font-semibold text-white leading-tight mb-1">{item.name}</h3>
+                  <p class="text-[11px] text-gray-500 leading-relaxed">{item.desc}</p>
+                </div>
               </div>
-              <div class="flex-1 min-w-0">
-                <h3 class="text-sm font-semibold text-white leading-tight mb-1">{item.name}</h3>
-                <p class="text-[11px] text-gray-500 leading-relaxed">{item.desc}</p>
+              <div class="flex items-center justify-between">
+                <div class="flex flex-wrap gap-1">
+                  {item.tags.slice(0, 2).map((tagId) => {
+                    const label = tagLabel(tagId);
+                    return label ? (
+                      <span class="px-1.5 py-0.5 rounded-full bg-white/5 text-gray-600 text-[9px] font-medium">
+                        {label}
+                      </span>
+                    ) : null;
+                  })}
+                </div>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-gray-500 font-medium">
+                  {item.phase}
+                </span>
               </div>
             </div>
-            <div class="flex items-center justify-between">
-              <div class="flex flex-wrap gap-1">
-                {item.tags.slice(0, 2).map((tagId) => {
-                  const label = tagLabel(tagId);
-                  return label ? (
-                    <span class="px-1.5 py-0.5 rounded-full bg-white/5 text-gray-600 text-[9px] font-medium">
-                      {label}
-                    </span>
-                  ) : null;
-                })}
-              </div>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-gray-500 font-medium">
-                {item.phase}
-              </span>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  )}
 
   {/* ===== No results (oculto por defecto; JS lo muestra cuando 0 productos + 0 coming soon) ===== */}
   <section id="pd-noresults" class="px-4 pb-16 md:pb-24 hidden">

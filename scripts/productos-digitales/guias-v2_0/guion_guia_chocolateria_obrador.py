@@ -132,7 +132,8 @@ LEGAL = (
     'registro sanitario— el 12 de septiembre de 2026: cada afirmación legal '
     'lleva su norma y su artículo para que puedas comprobarla y para que sepas '
     'dónde mirar cuando cambie. La norma del cacao que llega de la Unión '
-    'Europea se ha modificado tres veces en doce meses, así que el anexo trae '
+    'Europea acumula dos modificaciones y una corrección de errores en doce '
+    'meses, así que el anexo trae '
     'la fecha en la que toca volver a mirarla. Lo que depende de tu '
     'ayuntamiento —la licencia de obra, el planeamiento urbanístico, las '
     'tasas— cambia en cada uno de los municipios de España y aquí se trata '
@@ -248,10 +249,11 @@ V_CONTAM = ('Verificado el 12-09-2026 · Reglamento (UE) 2023/915, Anexo I, '
             'https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:'
             '02023R0915-20250101')
 V_EUDR = ('Verificado el 12-09-2026 · Reglamento (UE) 2023/1115, arts. 1, 2, '
-          '4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma se ha '
-          'modificado tres veces en doce meses: comprueba su estado antes de '
-          'comprar cacao · https://eur-lex.europa.eu/legal-content/ES/TXT/'
-          '?uri=CELEX:02023R1115-20250101')
+          '4, 5, 37 y 38, en el consolidado de EUR-Lex. La norma acumula dos '
+          'modificaciones y una corrección de errores en doce meses: '
+          'comprueba su estado antes de comprar cacao · '
+          'https://eur-lex.europa.eu/legal-content/ES/TXT/'
+          '?uri=CELEX:02023R1115-20251226')
 V_MINORISTA = ('Verificado el 12-09-2026 · RD 1021/2022 (BOE-A-2022-21681), '
                'arts. 3, 4, 5, 9, 11, 13 y 20, y RD 191/2011 art. 2.2 en la '
                'redacción de la disposición final primera del RD 1021/2022 · '
@@ -349,7 +351,11 @@ NO_COMUN = [
     'aplazamiento no te alcanza: tu fecha es el 30 de diciembre de 2026. Si tu '
     'cobertura NO está amparada, la calificación deja de ser automática y hay '
     'que revisarla». PROHIBIDO también «siempre eres operador posterior» y «tu '
-    'fecha es el 30 de diciembre de 2026 pase lo que pase».',
+    'fecha es el 30 de diciembre de 2026 pase lo que pase». Esa redacción va '
+    'DESARROLLADA UNA SOLA VEZ, en el capítulo 11; en cualquier otro capítulo, '
+    'bonus o documento se sustituye por la remisión de una frase: «tu papel en '
+    'la cadena —operador o operador posterior— y la fecha que te toca están '
+    'resueltos en el capítulo 11, con la condición que los cambia».',
     'PROHIBIDO escribir «pide a todos tus proveedores el número de su '
     'declaración de diligencia debida»: sólo se le pide a quien sea OPERADOR. '
     'Un distribuidor que sea comerciante no tiene número que darte y no está '
@@ -947,7 +953,7 @@ PPE_05 = {
         'acabado, no los litros. El libro de capacidad lo calcula por '
         'rotaciones.',
     ],
-    'La potencia que de verdad hace falta': [
+    'La potencia eléctrica que hace falta': [
         'Dar la potencia eléctrica prevista del caso modelado y explicar de '
         'dónde sale: atemperadora, temperador, mantenedor, cámara, nevera, '
         'vitrina y climatización, que es la que más pesa. Un obrador de '
@@ -1180,8 +1186,8 @@ CAPITULOS = [
                     ['Consumo por persona en los hogares', 'Kilos por persona y año', 'CHS-21'],
                     ['Gasto por persona y evolución del mercado', 'Euros por persona y hacia dónde va', 'CHS-22'],
                     ['Precio medio del chocolate', 'La subida de precio del año', 'CHS-23'],
-                    ['Empresas del grupo de fabricación de cacao, chocolate y confitería', 'Un agregado de fabricación, NO un censo de chocolaterías', 'CHS-16'],
-                    ['Empresas del comercio minorista de pan, confitería y pastelería', 'Otro agregado, y tampoco es un censo de chocolaterías', 'CHS-17'],
+                    ['Empresas del grupo de fabricación de cacao, chocolate y confitería', 'Un agregado de fabricación, NO un censo de chocolaterías', 'CHS-13'],
+                    ['Empresas del comercio minorista especializado en alimentación (CNAE 472)', 'Otro agregado, y tampoco es un censo de chocolaterías', 'CHS-14'],
                 ],
                 'nota': 'Ninguna de estas cifras es el número de chocolaterías de España, '
                         'porque ese dato no existe. Los dos últimos son grupos de actividad '
@@ -1411,7 +1417,7 @@ CAPITULOS = [
                 'titulo': 'Las seis zonas del caso modelado, con sus metros y su paso en el recorrido (capacidad-obrador-y-clima.xlsx, hoja «Zonas y m2»)',
                 'src': (X_CAP, 'Zonas y m2'),
                 'cols': [('Zona', 'B', 'txt'), ('Bloque', 'C', 'txt'),
-                         ('m2', 'D', 'num1'), ('% del local', 'E', 'pct1'),
+                         ('m²', 'D', 'num1'), ('% del local', 'E', 'pct1'),
                          ('Paso del recorrido', 'F', 'num'),
                          ('Qué tiene que cumplir', 'G', 'txt')],
                 'filas': (6, 11),
@@ -1498,7 +1504,7 @@ CAPITULOS = [
                 'titulo': 'Ocho traspasos reales publicados, para ver la dispersión del mercado (calculadora-capex-chocolateria.xlsx, hoja «Traspaso vs Obra Nueva»)',
                 'src': (X_CAPEX, 'Traspaso vs Obra Nueva'),
                 'cols': [('Ciudad o zona', 'A', 'txt'), ('Tipo de negocio', 'B', 'txt'),
-                         ('m2', 'C', 'num'), ('Precio pedido (€)', 'D', 'eur'),
+                         ('m²', 'C', 'num'), ('Precio pedido (€)', 'D', 'eur'),
                          ('Renta mensual (€)', 'E', 'eur'),
                          ('Fuente', 'H', 'txt'), ('¿Mismo formato?', 'I', 'txt')],
                 'filas': (26, 33),
@@ -1936,7 +1942,7 @@ PPE_12 = {
         'envasar puede darse por escrito en el establecimiento y con cartel '
         'visible. Todo menos la fecha puede ir en cartel.',
     ],
-    'El lote: qué norma lo manda de verdad y sus tres exenciones': [
+    'El lote: qué norma lo manda y sus tres exenciones': [
         'Corregir el error de citación más repetido del sector: el lote NO '
         'está entre las doce menciones obligatorias del reglamento europeo de '
         'información al consumidor. Viene de una norma española propia, el '
@@ -1965,11 +1971,13 @@ PPE_12 = {
 }
 
 PPE_13 = {
-    'Los proveedores verificados, por categoría': [
-        'Presentar la lista por lo que es: seis proveedores con la dirección '
-        'web comprobada en la fecha de corte de esta edición, y no una '
-        'recomendación comercial. Lo que el research recogió sin poder '
-        'verificar NO se publica.',
+    'Los proveedores publicados, por categoría': [
+        'Presentar la lista por lo que es: seis proveedores, cinco con la '
+        'dirección web comprobada en la fecha de corte de esta edición y uno '
+        '(SelfPackaging) pendiente porque su web no respondió ese día, y no '
+        'una recomendación comercial. Lo que no se pudo comprobar entra '
+        'marcado como pendiente, nunca como verificado; y de los nombres '
+        'citados sólo en el texto, García de Pou sí tiene la web comprobada.',
         'Recorrer las categorías y decir qué hay que negociar en cada una: '
         'cobertura y chocolate profesional, grano para bean-to-bar, '
         'maquinaria, moldes y utensilios, packaging y regalo corporativo.',
@@ -2138,7 +2146,7 @@ CAPITULOS += [
                 'titulo': 'La ficha de preguntas al instalador, pregunta a pregunta (capacidad-obrador-y-clima.xlsx, hoja «Clima del Obrador»)',
                 'src': (X_CAP, 'Clima del Obrador'),
                 'cols': [('Qué le preguntas', 'A', 'txt'), ('Unidad', 'B', 'txt'),
-                         ('Respuesta del caso', 'C', 'txt'),
+                         ('Respuesta del caso', 'C', 'num1'),
                          ('¿Por escrito?', 'D', 'txt')],
                 'filas': (37, 46),
                 'nota': 'La columna de «por escrito» es la que vale: una respuesta de palabra '
@@ -2201,17 +2209,37 @@ CAPITULOS += [
                 'titulo': 'La dotación completa, línea a línea, con su base de impuesto y su plazo (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Equipamiento»)',
                 'src': (X_EQUIP, 'Equipamiento'),
                 'cols': [('Partida', 'C', 'txt'), ('Prioridad', 'H', 'txt'),
-                         ('Precio de referencia sin IVA (€)', 'L', 'eur'),
-                         ('Base declarada por la fuente', 'J', 'txt'),
+                         ('Precio de referencia sin IVA', 'AB', 'txt'),
+                         ('Cómo se publica el precio', 'Y', 'txt'),
+                         ('¿Lleva IVA? (lo declara la fuente o, si es supuesto, lo decides tú)', 'J', 'txt'),
                          ('Plazo de entrega (semanas)', 'R', 'num')],
                 'filas': (15, 31),
                 'nota': 'Las líneas marcadas como opcionales vienen desmarcadas a propósito: '
-                        'son decisiones, no dotación mínima. Y las que dicen «no declarada» '
-                        'son exactamente eso: la ficha del distribuidor no dice si el precio '
-                        'lleva impuesto, y no se supone.',
+                        'son decisiones, no dotación mínima. Lee la columna «cómo se publica» '
+                        'ANTES que el precio: las que dicen «SUPUESTO declarado» no tienen '
+                        'ficha detrás y su base de impuesto la pones tú; el mantenedor es un '
+                        '«desde», es decir un suelo comercial que hay que presupuestar, y '
+                        'nunca un precio cerrado; y los moldes se publican como RANGO, así '
+                        'que las veinticuatro unidades valen entre 580,80 € y 1.027,92 € con '
+                        'los dos extremos medidos, y ninguna de las dos cifras se puede '
+                        'sustituir por un punto intermedio. Los totales de la hoja sí tienen '
+                        'que sumar un número, y suman el punto medio (804,36 €): por eso los '
+                        '52.299 € de líneas críticas llevan dentro un supuesto, no un dato. '
+                        'Y las que dicen «no declarada» son exactamente eso: la ficha del '
+                        'distribuidor no dice si el precio lleva impuesto, y no se supone. '
+                        'La escalera de atemperadoras del texto se cita máquina a máquina y '
+                        'cada una tiene su ficha: Selmi One 12 kg (CHS-41a), Color EX 12 kg '
+                        '(CHS-41b), Ghana-Legend 24 kg (CHS-41c), Plus EX 24 kg (CHS-41d), '
+                        'Futura EX 35 kg (CHS-41e), Top EX 60 kg (CHS-41f), Cento EX 100 kg '
+                        '(CHS-41g), Pavoni MINITEMPER (CHS-41h), mantenedor de 1 cubeta '
+                        '(CHS-41i) y temperador de baño maría de 22 L (CHS-41j), todas de '
+                        'Utilcentre, S.L., leídas el 12-09-2026 en '
+                        'https://www.utilcentre.com/maquinaria-chocolate.html, salvo la Selmi '
+                        'One, que tiene ficha propia en '
+                        'https://www.utilcentre.com/temperadora-selmi-one-12kg.html.',
             },
             {
-                'titulo': 'Qué bombones al día permite cada equipo, y cuál limita de verdad (capacidad-obrador-y-clima.xlsx, hoja «Capacidad por Equipo»)',
+                'titulo': 'Qué bombones al día permite cada equipo, y cuál limita la producción (capacidad-obrador-y-clima.xlsx, hoja «Capacidad por Equipo»)',
                 'src': (X_CAP, 'Capacidad por Equipo'),
                 'cols': [('Equipo o puesto', 'B', 'txt'), ('Categoría', 'C', 'txt'),
                          ('¿Lo tienes?', 'D', 'txt'),
@@ -2222,7 +2250,10 @@ CAPITULOS += [
                         'no es la anterior: corrige por la parte del surtido que pasa por ese '
                         'equipo, y por eso una máquina que sólo toca el dieciocho por ciento '
                         'de la carta permite muchos más bombones al día de los que ella misma '
-                        'produce.',
+                        'produce. Las dos filas de atemperadora no se comparan entre sí: sus '
+                        'minutos por ciclo son el ritmo al que el obrador vacía la cuba, no el '
+                        'rendimiento de la ficha, así que la de 3 kg salga por encima de la de '
+                        '12 kg sólo dice cuántos ciclos enteros caben en la jornada.',
             },
         ],
         'prohibido': NO_COMUN + [
@@ -2486,11 +2517,9 @@ CAPITULOS += [
                      'Las referencias normativas de tus contratos de compra'],
                     ['Revisión de la propia hoja, que el libro calcula sola',
                      'A los meses que tú fijes desde la verificación',
-                     'Abrir el texto consolidado y comprobar si ha habido una cuarta modificación'],
+                     'Abrir el texto consolidado y comprobar si ha habido una tercera modificación'],
                 ],
-                'nota': 'Esta norma se ha tocado tres veces en doce meses: dos reglamentos y '
-                        'una corrección de errores. Comprueba su estado ANTES de comprar '
-                        'cacao, no después. ' + V_EUDR,
+                'nota': 'Comprueba su estado ANTES de comprar cacao, no después. ' + V_EUDR,
             },
         ],
         'prohibido': NO_COMUN + [
@@ -2595,7 +2624,7 @@ CAPITULOS += [
     {
         'n': 13,
         'titulo': 'Proveedores: Cobertura, Cacao, Packaging y Plazos',
-        'resumen_indice': 'los proveedores verificados por categoría, la vía fiable para el grano, las dos preguntas que hay que hacer por escrito antes de comprar, y el impuesto al plástico cuando compras estuches fuera de España.',
+        'resumen_indice': 'los proveedores publicados por categoría —cinco con la web comprobada y uno pendiente—, la vía fiable para el grano, las dos preguntas que hay que hacer por escrito antes de comprar, y el impuesto al plástico cuando compras estuches fuera de España.',
         'palabras': 1750, 'bloques': 1,
         'objetivo': 'Que el lector compare tres presupuestos de verdad y '
                     'monte su cartera de proveedores con los papeles pedidos '
@@ -2604,9 +2633,9 @@ CAPITULOS += [
         'epigrafes': list(PPE_13),
         'puntos_por_epigrafe': PPE_13,
         'puntos_globales': [
-            'Sólo se publican proveedores con dirección web comprobada en la '
-            'fecha de corte. Lo que el research no pudo verificar no aparece, '
-            'y se dice que no aparece.',
+            'Se publican seis proveedores: cinco con dirección web comprobada '
+            'en la fecha de corte y uno pendiente, marcado como tal. Nada se '
+            'presenta como verificado si no lo está.',
             'Los pedidos mínimos y los plazos que trae el libro son SUPUESTOS '
             'sembrados para que la hoja tenga forma: se sustituyen por los '
             'reales en la primera llamada.',
@@ -2614,7 +2643,7 @@ CAPITULOS += [
             'sólo dice que la alerta existe y remite aquí.',
         ],
         'cifras': [
-            C('Proveedores publicados con dirección comprobada', f'{X_EQUIP}!Proveedores y EUDR!F15', 'num'),
+            C('Proveedores publicados en el cuadro', f'{X_EQUIP}!Proveedores y EUDR!F15', 'num'),
             C('Proveedores todavía sin clasificar en la cadena', f'{X_EQUIP}!Proveedores y EUDR!F20', 'num'),
             C('Operadores que te deben el número de su declaración, que salen cero mientras no hayas clasificado a ninguno', f'{X_EQUIP}!Proveedores y EUDR!F21', 'num'),
             C('Pedido mínimo acumulado si pides a todos a la vez', f'{X_EQUIP}!Proveedores y EUDR!F24', 'eur'),
@@ -2630,15 +2659,18 @@ CAPITULOS += [
                    'CHN-62c'],
         'tablas': [
             {
-                'titulo': 'Los proveedores verificados y qué papeles le toca a cada uno (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Proveedores y EUDR»)',
+                'titulo': 'Los proveedores publicados y qué papeles le toca a cada uno (checklist-equipamiento-y-proveedores-cacao.xlsx, hoja «Proveedores y EUDR»)',
                 'src': (X_EQUIP, 'Proveedores y EUDR'),
                 'cols': [('Proveedor', 'B', 'txt'), ('Qué te vende', 'C', 'txt'),
                          ('Dirección', 'D', 'txt'), ('Id del research', 'E', 'txt'),
                          ('Qué papeles le tocan a él', 'N', 'txt')],
                 'filas': (7, 12),
-                'nota': 'Seis proveedores con dirección comprobada en la fecha de corte. La '
-                        'columna de papeles no está resuelta a propósito: la resuelve su '
-                        'respuesta por escrito, no nuestra suposición.',
+                'nota': 'Cinco direcciones comprobadas en la fecha de corte y una pendiente: '
+                        'la de SelfPackaging devolvió un error de acceso el 12-09-2026, así '
+                        'que va publicada SIN comprobar y hay que abrirla antes de fiarse. '
+                        'Por eso el precio del packaging del caso modelado es un supuesto y '
+                        'no un dato. La columna de papeles no está resuelta a propósito: la '
+                        'resuelve su respuesta por escrito, no nuestra suposición.',
             },
             {
                 'titulo': 'El impuesto al plástico: qué paga, qué no y quién lo paga',
@@ -2818,7 +2850,7 @@ PPE_15 = {
 }
 
 PPE_16 = {
-    'Entre la ganache fresca y la estabilizada hay un factor de tres a cinco': [
+    'Entre la ganache fresca y la estabilizada hay un factor de tres a cinco según el kit, y de 2,8 en el caso modelado': [
         'Dar el dato que ordena todo el capítulo, con la tabla del Kit de '
         'Tareas Chocolatería como fuente y citada por fichero y hoja: los '
         'plazos orientativos por familia, desde los meses de una tableta hasta '
@@ -2862,18 +2894,16 @@ PPE_16 = {
         'suma obligaciones de etiquetado, así que envasar no es sólo una '
         'decisión de packaging.',
     ],
-    'La vitrina de chocolate no es la de pastelería': [
-        'Dar la ventana de la vitrina de bombonería y su humedad, con su '
-        'fuente en el kit, y explicar por qué es tan estrecha: por encima de '
-        'cierto punto la manteca funde y el bombón pierde brillo; por debajo, '
-        'condensa al sacarlo.',
-        'Distinguir otra vez, porque aquí se paga: el objetivo operativo del '
-        'negocio no es el rango de trabajo del equipo que te venden. El '
-        'semáforo se alimenta del rango que tecleas tú y sólo avisa cuando se '
-        'va de verdad por arriba.',
+    'Qué referencias van a vitrina y cuáles a nevera': [
+        'Remitir en UNA frase al capítulo 8 para la compra del mueble y para '
+        'la diferencia entre la vitrina de chocolate y la de pastelería: aquí '
+        'no se vuelve a explicar, aquí se coloca el producto.',
         'Dar las referencias del caso que NO van a vitrina sino a nevera, y '
         'por qué: el relleno fresco manda sobre el chocolate. Es una decisión '
         'de colocación que se toma con la actividad de agua delante.',
+        'Y el límite del mueble compartido: si en la misma vitrina conviven '
+        'chocolate y pastelería rellena, son dos regímenes de temperatura que '
+        'no se funden en uno, y eso decide cómo se divide por dentro.',
     ],
     'Las tres vías del huevo, donde aún aplican': [
         'Acotar de entrada para no asustar: en una bombonería el huevo crudo '
@@ -3256,8 +3286,9 @@ CAPITULOS += [
                          ('Cobertura blanca (€/kg)', 'H', 'eur2')],
                 'filas': (7, 11),
                 'nota': 'La última fila es tuya: escribe ahí la subida que te ha comunicado tu '
-                        'proveedor y toda la hoja se recalcula. Los cuatro precios de partida '
-                        'están en base imponible.',
+                        'proveedor y toda la hoja se recalcula. Tres de los cuatro precios de '
+                        'partida están en base imponible; el de origen va con la base sin '
+                        'declarar por su fuente, y así se marca en la hoja.',
             },
             {
                 'titulo': 'Cuánto dinero tienes parado en cobertura, y cuándo hay que volver a pedir (sensibilidad-al-precio-del-cacao.xlsx, hoja «Stock y Cobertura de Compra»)',
@@ -3288,7 +3319,7 @@ CAPITULOS += [
     {
         'n': 16,
         'titulo': 'Vida Útil del Relleno: Actividad de Agua, Vitrina y Tamaño de Lote',
-        'resumen_indice': 'el factor de tres a cinco entre la ganache fresca y la estabilizada, la vida útil que declaras tú y consta en tu autocontrol, envasado con etiqueta o a granel, la vitrina de chocolate frente a la de pastelería y las tres vías del huevo.',
+        'resumen_indice': 'el factor de tres a cinco del kit entre la ganache fresca y la estabilizada —2,8 en el caso modelado—, la vida útil que declaras tú y consta en tu autocontrol, envasado con etiqueta o a granel, qué referencias van a vitrina y cuáles a nevera, y las tres vías del huevo.',
         'palabras': 1750, 'bloques': 2,
         'objetivo': 'Que el lector decida su MODELO DE NEGOCIO y no su '
                     'técnica: cuánto quiere que dure cada referencia, qué '
@@ -3342,7 +3373,7 @@ CAPITULOS += [
                          ('Familia de vida útil del kit', 'G', 'txt'),
                          ('De qué va a morir esta referencia', 'I', 'txt')],
                 'filas': (16, 25),
-                'nota': 'Mientras la columna de actividades de agua medidas de verdad siga a '
+                'nota': 'Mientras la columna de actividades de agua medidas en laboratorio siga a '
                         'cero, todas estas cifras son estimaciones tuyas: valen para decidir, '
                         'no para declarar en un expediente.',
             },
@@ -3394,10 +3425,10 @@ CAPITULOS += [
         ],
         'cifras': [
             C('Coste de personal del año de crucero', f'{X_PLAN}!Personal!I9', 'eur'),
-            C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B41', 'num1'),
-            C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B45', 'eur2'),
+            C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B40', 'num1'),
+            C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B44', 'eur2'),
             C('Peso del coste de personal sobre las ventas', f'{X_PLAN}!PyG 3 Años!C46', 'pct1'),
-            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B22', 'eur'),
+            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B21', 'eur'),
             C('Bruto mensual del grupo de convenio más bajo', f'{X_CAMP}!Parámetros!B19', 'eur2'),
             C('Pagas al año del convenio de referencia', f'{X_CARTA}!Parámetros!B11', 'num'),
             C('Cotización a cargo de la empresa sobre el bruto', f'{X_CARTA}!Parámetros!B12', 'pct0'),
@@ -3427,7 +3458,7 @@ CAPITULOS += [
                          ('Bruto mes (€)', 'E', 'eur2'),
                          ('Bruto año (€)', 'F', 'eur'),
                          ('Áreas funcionales', 'G', 'txt')],
-                'filas': (13, 18),
+                'filas': (13, 17),
                 'nota': 'Es la tabla de UNA comunidad autónoma y está marcada como ejemplo: '
                         'sustitúyela por la del convenio que te aplique. No existe convenio '
                         'estatal del chocolate. ' + V_CONVENIO,
@@ -3439,12 +3470,16 @@ CAPITULOS += [
                          ('Mínimo (€/h)', 'B', 'num2'),
                          ('Máximo (€/h)', 'C', 'num2'),
                          ('Equivale a', 'D', 'txt'),
-                         ('Coste año a jornada completa (€)', 'E', 'eur')],
-                'filas': (27, 30),
+                         ('Coste año a jornada completa, al MÍNIMO del rango (€)', 'E', 'eur')],
+                'filas': (26, 29),
                 'nota': 'Las etiquetas de la primera columna son de la FUENTE salarial, no '
                         'perfiles de esta plantilla: por eso van entrecomilladas y con su '
                         'equivalencia al lado. Son orientativos y NO son una tabla de '
-                        'convenio.',
+                        'convenio. Y la última columna no es el punto medio: toma el SUELO '
+                        'del rango y lo multiplica por las horas anuales de contrato y por la '
+                        'cotización de la empresa, así que con el techo del rango el coste '
+                        'sube en la misma proporción que el precio por hora. Presupuesta con '
+                        'los dos extremos, no con esta columna sola.',
             },
         ],
         'prohibido': NO_COMUN + [
@@ -3507,7 +3542,7 @@ CAPITULOS += [
                 'filas': (7, 19),
                 'nota': 'Las fechas, las acciones clave y los productos destacados son del Kit '
                         'de Tareas Chocolatería y no se repiten aquí. La diferencia entre las '
-                        'dos últimas columnas es lo que de verdad añade la campaña: parte de '
+                        'dos últimas columnas es lo que añade la campaña: parte de '
                         'lo que vendes esos días lo habrías vendido igual.',
             },
             {
@@ -3673,6 +3708,11 @@ CAPITULOS += [
             C('Margen neto del año de crucero', f'{X_PLAN}!PyG 3 Años!E41', 'pct1'),
             C('Clientes al día necesarios para el equilibrio contable', f'{X_PLAN}!Punto de Equilibrio!C16', 'num1'),
             C('Ingresos mensuales necesarios para el equilibrio contable', f'{X_PLAN}!Punto de Equilibrio!C18', 'eur'),
+            # C15 (19-09-2026): los dos umbrales de CAJA (C22 = 59,2 clientes/día y
+            # C23 = 175.858 € al año) los publica ya la prosa del cap. 20 y salen de
+            # celdas de esta misma hoja, así que el gate de cifras los admite. NO se
+            # añaden aquí como C(): el cap. 20 ya tiene las diez del tope de D45c
+            # (4-10) y las diez están citadas en el texto.
             C('Holgura sobre el equilibrio de caja en el año de crucero', f'{X_PLAN}!Punto de Equilibrio!C26', 'pct1'),
             C('Cuota mensual del préstamo', f'{X_PLAN}!Financiación!B22', 'eur2'),
             C('Saldo mínimo de caja del primer año', f'{X_PLAN}!Tesorería 12 meses!B24', 'eur'),
@@ -3765,7 +3805,7 @@ CAPITULOS += [
             C('Tope absoluto de kilos a la semana del obrador en vivienda', f'{X_LEGAL}!Ruta Doméstica!B23', 'num'),
             C('Umbral estatal de superficie de la licencia previa de actividad', f'{X_CAP}!Parámetros!B24', 'num'),
             C('Umbral mensual de la exención del impuesto al plástico', f'{X_CAPEX}!Parámetros!B20', 'num'),
-            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B22', 'eur'),
+            C('Referencia anual del salario mínimo', f'{X_PLAN}!Personal!B21', 'eur'),
         ],
         'sector': ['CHN-01', 'CHN-14', 'CHN-36', 'CHN-39', 'CHN-44',
                    'CHN-49', 'CHN-62', 'CHN-64', 'CHN-65c', 'CHN-67',
@@ -3795,11 +3835,12 @@ CAPITULOS += [
                     ['RD 1055/2022', 'Envases de servicio, recipiente del cliente y bebida reutilizable', 'Vigente, sin modificaciones'],
                     ['Ley 1/2025', 'Desperdicio alimentario', 'Vigente; el art. 6.6 deja a la microempresa fuera de todo el art. 6, y el art. 8 NO queda excluido'],
                     ['RD 1007/2023', 'Facturación verificable', 'Vigente; sus plazos son de 2027, no de este año'],
-                    ['Ley 1/2004, art. 5.2', 'Libertad horaria por superficie', 'Vigente, última modificación de octubre de 2014'],
+                    ['Ley 1/2004, art. 5.2', 'Libertad horaria por superficie', 'Vigente (texto consolidado del BOE; última modificación, octubre de 2014)'],
                     ['Ley 7/1996, art. 20', 'La regla de los treinta días del precio anterior', 'Vigente, en la redacción del RD-ley 24/2021'],
                     ['RD 193/2023', 'Accesibilidad', 'Vigente; calendario privado en 2029 y 2030'],
                     ['RD 919/2006, ITC-ICG 07', 'Inspección periódica de la instalación de gas, sólo si montas freidora de gas', 'Vigente, última modificación de septiembre de 2025'],
                     ['RD 10/2025', 'Los dos códigos de actividad que se comunican en el alta', 'Vigente, sin modificaciones'],
+                    ['RD 126/2026 (BOE-A-2026-3815)', 'La referencia anual del salario mínimo con la que se contrasta la tabla del convenio en la hoja de personal del plan financiero', 'Vigente; es el real decreto anual del salario mínimo, así que caduca el 31-12-2026. No confundirlo con el RD 126/2015, que es el de alérgenos y tiene su propia fila en este mismo cuadro'],
                     ['Decreto 85/2024 de la Generalitat de Catalunya', 'Artesanía alimentaria, con el chocolate expresamente dentro', 'En vigor; la acreditación es VOLUNTARIA'],
                     ['RD 1334/1999', 'Etiquetado general, que la norma del chocolate todavía cita', 'Superado por el reglamento europeo de información al consumidor y por el RD 126/2015: no se remite a él'],
                     ['RD 1254/1991', 'Huevo y ovoproductos', 'DEROGADO; sigue citándose en contenidos que circulan'],
@@ -3946,7 +3987,10 @@ PPE_BP3 = {
         'Dar el food cost de escandallo y el food cost servido, y explicar en '
         'una línea por qué son dos cifras distintas: la segunda incluye '
         'packaging y merma, y es la que va al plan financiero.',
-        'Dar el margen bruto medio del año y decir contra qué regla se '
+        'Dar el margen bruto medio del año DICIENDO SOBRE QUÉ BASE: el 74,8 % '
+        'es el complemento del food cost de ESCANDALLO (100 − 25,2), NO del '
+        'servido; sobre el servido, y por tanto en la PyG de este mismo plan, '
+        'el margen bruto es del 71,8 %. Decir además contra qué regla se '
         'compara: la regla única de margen del proyecto.',
     ],
     'La decisión de surtido': [
@@ -4056,7 +4100,8 @@ PPE_BP6 = {
     ],
     'El riesgo regulatorio y el de ejecución': [
         'Nombrar el regulatorio con precisión y sin alarmismo: la norma '
-        'europea del cacao se ha modificado tres veces en doce meses, y el '
+        'europea del cacao acumula dos modificaciones y una corrección de '
+        'errores en doce meses, y el '
         'proyecto lleva dentro una fecha de revisión y un papel definido en la '
         'cadena.',
         'Y el de ejecución, que es el más probable: el plazo de entrega de la '
@@ -4295,9 +4340,9 @@ BONUS = [
                     C('Bombones al día que permite el conjunto de equipos', f'{X_CAP}!Cuello de Botella!B7', 'num'),
                     C('El equipo que limita', f'{X_CAP}!Cuello de Botella!B8', 'txt'),
                     C('Holgura sobre el día normal', f'{X_CAP}!Cuello de Botella!B10', 'pct1'),
-                    C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B41', 'num1'),
+                    C('Jornadas completas equivalentes de la plantilla', f'{X_PLAN}!Personal!B40', 'num1'),
                     C('Coste de personal al año', f'{X_PLAN}!Personal!I9', 'eur'),
-                    C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B45', 'eur2'),
+                    C('Coste de una hora de obrador', f'{X_PLAN}!Personal!B44', 'eur2'),
                 ],
                 'sector': ['CHS-03', 'CHS-70', 'CHS-44'],
                 'tablas': [
@@ -4305,7 +4350,7 @@ BONUS = [
                         'titulo': 'Las seis zonas del local (capacidad-obrador-y-clima.xlsx, hoja «Zonas y m2»)',
                         'src': (X_CAP, 'Zonas y m2'),
                         'cols': [('Zona', 'B', 'txt'), ('Bloque', 'C', 'txt'),
-                                 ('m2', 'D', 'num1'), ('% del local', 'E', 'pct1'),
+                                 ('m²', 'D', 'num1'), ('% del local', 'E', 'pct1'),
                                  ('Paso del recorrido', 'F', 'num')],
                         'filas': (6, 11),
                         'nota': 'El recorrido va en un solo sentido: la cobertura entra por el '
@@ -4319,7 +4364,9 @@ BONUS = [
                                  ('Bombones al día de obrador que permite', 'M', 'num')],
                         'filas': (6, 16),
                         'nota': 'El cuello de botella de una bombonería casi nunca es la máquina '
-                                'de templar: son las manos y el puesto de envasado.',
+                                'de templar: son las manos y el puesto de envasado. Las dos '
+                                'atemperadoras no se comparan entre sí: sus ciclos son el ritmo '
+                                'del obrador, no el rendimiento de la ficha.',
                     },
                 ],
                 'prohibido': NO_COMUN_BONUS + [
@@ -5479,50 +5526,63 @@ BONUS += [
 # una variable local de este guion).
 # --------------------------------------------------------------------------
 _ERRATAS_OK = (
+    # 2026-09-19, falsos positivos del detector en la primera pasada (todos correctos en contexto):
+    # ⚠️ y las CUATRO «reparaciones» automáticas de la primera pasada, todas ERRÓNEAS (revisar siempre
+    # `erratas_reparadas` del informe.json): «no sé si podré» → «poder», «reposo de levado» → «llevado»,
+    # «Selmi Cento EX» (modelo de máquina) → «Ciento», «Elche (Alicante)» (ciudad) → «Leche».
+    # 2026-09-19 (ronda 2): «respondió» es correcta y el léxico sólo trae
+    # «respondido», así que el detector la reconstruye y la marca.
+    'podré', 'levado', 'cento', 'elche', 'bañada', 'bañadas', 'respondió',
+    'amunt', 'auditado', 'bájalo', 'cámbiala', 'coincidan', 'comprarte', 'costeos',
+    'deberán', 'dejara', 'digan', 'empezara', 'existan', 'helen', 'justifícalo',
+    'léelo', 'librarte', 'llévala', 'llévate', 'móntalo', 'movió',
+    'planeado', 'posventa', 'provisionado', 'ratos', 'recogió', 'resignación',
+    'reventa', 'rodando', 'tales', 'telefonía', 'trasladado', 'trátala',
+    'tratara', 'vendía', 'viajado',
     # Vocabulario del oficio del chocolate
-    'obrador', 'obradores', 'bombonería', 'bomboneria', 'bombonerías',
-    'bombonerias', 'bombón', 'bombon', 'bombones', 'chocolatería',
-    'chocolateria', 'chocolaterías', 'chocolaterias', 'chocolatero',
+    'obrador', 'obradores', 'bombonería', 'bombonerías',
+    'bombón', 'bombones', 'chocolatería',
+    'chocolaterías', 'chocolatero',
     'chocolatera', 'chocolateros', 'cobertura', 'coberturas',
     'atemperadora', 'atemperadoras', 'atemperar', 'atemperado', 'templado',
     'templar', 'temperador', 'mantenedor', 'enrobadora', 'enrobadoras',
-    'enrobar', 'enrobado', 'bañado', 'banado', 'bañadora', 'moldeado',
+    'enrobar', 'enrobado', 'bañado', 'bañadora', 'moldeado',
     'moldear', 'desmoldeo', 'desmoldar', 'molde', 'moldes', 'policarbonato',
-    'ganache', 'ganaches', 'praliné', 'praline', 'pralinés', 'pralines',
-    'gianduja', 'trufa', 'trufas', 'garrapiñado', 'garrapinado',
+    'ganache', 'ganaches', 'praliné', 'pralinés',
+    'gianduja', 'trufa', 'trufas', 'garrapiñado',
     'garrapiñadas', 'confitada', 'confitadas', 'confite', 'confites',
     'gragea', 'grageas', 'tableta', 'tabletas', 'tableteado', 'cascarilla',
     'conchadora', 'concha', 'conchado', 'refinadora', 'melanger', 'winnower',
-    'descascarilladora', 'tostador', 'tostado', 'sucedáneo', 'sucedaneo',
-    'sucedáneos', 'manteca', 'desgrasada', 'cristalización', 'cristalizacion',
+    'descascarilladora', 'tostador', 'tostado', 'sucedáneo',
+    'sucedáneos', 'manteca', 'desgrasada', 'cristalización',
     'cristalizar', 'cristalizados', 'blanquea', 'blanqueado', 'brillo',
     'sorbitol', 'sorbato', 'glucosa', 'lecitina', 'barquillo', 'barquillos',
     'crujiente', 'crujientes', 'monodosis', 'mona', 'monas', 'roscón',
-    'roscon', 'turrón', 'turron', 'turrones', 'panellets', 'mazapán',
-    'mazapan', 'mazapanes', 'merengue', 'merengues', 'avellana', 'avellanas',
-    'cacahuete', 'cacahuetes', 'sésamo', 'sesamo', 'marcona',
+    'turrón', 'turrones', 'panellets', 'mazapán',
+    'mazapanes', 'merengue', 'merengues', 'avellana', 'avellanas',
+    'cacahuete', 'cacahuetes', 'sésamo', 'marcona',
     # Vocabulario de local, obra e instalaciones
-    'climatización', 'climatizacion', 'climatizada', 'climatizado',
-    'deshumidificación', 'deshumidificacion', 'deshumidificar',
-    'evaporativo', 'frigorífica', 'frigorifica', 'vitrina', 'vitrinas',
-    'mostrador', 'mostradores', 'cámara', 'camara', 'nevera', 'abatidor',
-    'acometida', 'desagüe', 'desague', 'lavamanos', 'fregadero', 'vestuario',
+    'climatización', 'climatizada', 'climatizado',
+    'deshumidificación', 'deshumidificar',
+    'evaporativo', 'frigorífica', 'vitrina', 'vitrinas',
+    'mostrador', 'mostradores', 'cámara', 'nevera', 'abatidor',
+    'acometida', 'desagüe', 'lavamanos', 'fregadero', 'vestuario',
     'vestuarios', 'aseo', 'aseos', 'traspaso', 'traspasos', 'arrendamiento',
-    'fianza', 'planeamiento', 'urbanístico', 'urbanistico', 'ordenanza',
-    'ordenanzas', 'visado', 'boletín', 'boletin', 'legalización',
-    'legalizacion', 'accesibilidad', 'estanquidad', 'combustión', 'combustion',
-    'recirculación', 'recirculacion', 'transmitancia', 'renovaciones',
-    'equilibrado', 'escaparate', 'rótulo', 'rotulo',
+    'fianza', 'planeamiento', 'urbanístico', 'ordenanza',
+    'ordenanzas', 'visado', 'boletín', 'legalización',
+    'accesibilidad', 'estanquidad', 'combustión',
+    'recirculación', 'transmitancia', 'renovaciones',
+    'equilibrado', 'escaparate', 'rótulo',
     # Vocabulario sanitario y normativo
-    'autocontrol', 'alérgeno', 'alergeno', 'alérgenos', 'alergenos',
+    'autocontrol', 'alérgeno', 'alérgenos',
     'manipulador', 'manipuladores', 'ovoproducto', 'ovoproductos',
-    'pasteurizado', 'congelación', 'congelacion', 'congelar', 'congelado',
+    'pasteurizado', 'congelación', 'congelar', 'congelado',
     'descongelado', 'refrigerada', 'refrigerado', 'refrigeración',
-    'refrigeracion', 'trazabilidad', 'trazable', 'perecedero', 'perecederos',
+    'trazabilidad', 'trazable', 'perecedero', 'perecederos',
     'minorista', 'minoristas', 'sucursal', 'sucursales', 'titularidad',
     'habilitante', 'derogado', 'derogada', 'derogados', 'vigencia', 'vigente',
     'vigentes', 'consolidado', 'articulado', 'preceptivas', 'declaración',
-    'declaracion', 'responsable', 'excedente', 'excedentes', 'donación',
+    'responsable', 'excedente', 'excedentes', 'donación',
     'donacion', 'donable', 'donar', 'redistribución', 'redistribucion',
     'desperdicio', 'microempresa', 'microempresas', 'reutilizable',
     'reutilizables', 'envasador', 'envasadora', 'envasar', 'envasado',

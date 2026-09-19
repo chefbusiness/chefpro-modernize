@@ -1,0 +1,35 @@
+### El contexto de la decisión
+
+El error de mostrador más repetido con la caja de bombones es ponerle un precio redondo a cada formato —una cifra cerrada a la de doce, otra a la de veinte, otra a la de treinta y cinco— sin sentarse antes a mirar qué descuento por bombón esconde cada salto de tamaño. La caja no es «el mismo bombón, repetido varias veces»: tiene su propio coste (costo) de montaje y de packaging, y ese coste no crece al mismo ritmo que el número de piezas que contiene. Por eso el precio por bombón dentro de la caja grande puede quedar muy por debajo del que se cobra cuando el bombón se vende suelto, y casi nadie hace esa cuenta antes de fijar el precio de venta al público.
+
+Se ve con un ejemplo real de mercado, sin necesidad de inventar nada: una bombonería que publica su escalera de precios —caja de 12 unidades a 20,00 € (1,67 €/ud), caja de 20 unidades a 28,00 € (1,40 €/ud) y caja de 35 unidades a 45,00 € (1,29 €/ud)— deja caer el precio por bombón un 23 % entre el formato pequeño y el grande, según los precios que publica «Confitería Gascón» (2026-09-12). Esa página no publica el peso de cada caja, así que no se puede sacar un precio por kilo, y tampoco declara si esos importes llevan el impuesto incluido; se cita tal cual, con esa limitación por delante.
+
+### Las opciones sobre la mesa
+
+Hay tres maneras razonables de construir la escalera de precios, y ninguna es automáticamente la correcta:
+
+- Opción A: precio por caja con descuento creciente por tamaño —cuanto más grande la caja, más barato el bombón dentro—. Es el modelo más extendido y el que sigue el ejemplo de mercado citado arriba.
+- Opción B: precio por bombón igual en todos los formatos, y la caja como envase que se cobra aparte, con su propio coste de packaging sumado al final.
+- Opción C: caja pequeña sin descuento —se vende al mismo precio por bombón que la pieza suelta— y descuento reservado sólo para la caja grande, como gesto comercial hacia quien compra más.
+
+Lo que cambia entre las tres no es sólo el número final del ticket: cambia el ticket medio, cambia el margen en euros que deja cada operación de mostrador, y cambia la percepción de regalo, que es —seamos honestos— lo que de verdad compra el cliente cuando pide una caja y no tres bombones sueltos metidos en una bolsa. Una caja que no lleva ningún gesto de descuento se nota, y se nota mal, en el momento de pagar.
+
+### El criterio con el que se decide
+
+La regla que zanja la elección es siempre la misma, y conviene repetírsela cada vez que se toca un precio de caja: se decide con el margen en EUROS por operación, no con el porcentaje de margen. Una caja puede tener un porcentaje peor que la venta de bombones sueltos y, aun así, dejar más euros en caja en una sola venta, porque mueve más piezas de golpe.
+
+Y aquí hay que mirar de frente un dato incómodo: comparada con vender esos mismos bombones sueltos, la caja deja menos margen. No es un fallo del modelo ni un error de precio: es un descuento por volumen que el cliente no percibe como descuento —lo vive como un detalle de presentación—, y hay razones comerciales sólidas para concedérselo: sube el ticket, entra en el terreno del regalo, que tiene menos resistencia al precio que la compra de impulso, y produce una venta que en formato suelto probablemente no se habría dado.
+
+Con las cifras del propio negocio delante: el precio por bombón dentro de la caja de doce, con IVA, es de 1,67 €, y dentro de la caja de treinta y cinco baja a 1,29 €. Eso supone un descuento implícito del 16,8 % en la caja de doce y del 36,4 % en la de treinta y cinco. El coste total de montar la caja de doce es de 7,57 € y su margen es de 10,61 €; la caja de treinta y cinco cuesta 21,54 € de montar y deja un margen de 19,37 €. La caja grande, con peor porcentaje de margen, sigue dejando más euros por operación que la pequeña, que es justo el argumento que sostiene esta decisión.
+
+### La celda que lo resuelve
+
+La hoja «Unidad vs Caja» de carta-de-apertura-y-escandallo-chocolate.xlsx pone las dos cifras una al lado de la otra: el margen que deja la caja tal como está montada, y el margen que dejarían esos mismos bombones si se vendieran sueltos, uno a uno. Es la comparación que responde a la pregunta real, que no es «¿gano dinero con la caja?» sino «¿gano más o menos que vendiéndolos sueltos, y me compensa la diferencia?». La misma hoja da el precio por bombón dentro de cada formato, que es la cifra que hay que sacar a la calle y comparar contra lo que cobra la competencia antes de decidir cuánto descuento conceder.
+
+La recomendación, para quien abre con esta decisión todavía sin resolver, es partir de la opción A —descuento creciente por tamaño—, porque es la que el cliente reconoce sin necesidad de explicación y la que ya funciona en el ejemplo de mercado citado más arriba. La condición que la haría cambiar es sencilla de vigilar en la propia hoja: si el margen en euros de la caja grande cae por debajo del de la pequeña —el margen en euros, no el porcentaje—, ha llegado el momento de recortar el descuento de esa caja o de replantear qué surtido va dentro, no de subir el precio de toda la carta.
+
+### La norma que aplica cuando la hay
+
+Aquí sí hay una norma que casi nadie asocia a esta decisión de mostrador, y conviene tenerla presente antes de montar la caja surtida: el apartado 6, letras a y c, del RD 1055/2003 permite que, en los surtidos que mezclan las denominaciones de los apartados 1.6 a 1.10 y 1.13, éstas se sustituyan por las de surtido —chocolates surtidos o chocolates rellenos surtidos—, y que «podrá haber una única lista de ingredientes para el conjunto de productos que compongan el surtido», en vez de tener que declarar cada denominación por separado dentro de la misma caja (comprobado el 12 de septiembre de 2026).
+
+Y hay una segunda condición, esta vez de vida útil y no de etiquetado, que limita directamente qué se puede meter en una caja de regalo: la caja entera caduca cuando caduca la pieza más corta que lleva dentro. Meter un bombón de vida corta junto a piezas de vida larga no alarga la vida de la pieza corta; acorta la vida útil de toda la caja a la de su eslabón más débil, y eso hay que tenerlo en cuenta antes de decidir el surtido de apertura, no después de haberlo vendido.

@@ -1,0 +1,74 @@
+{
+  "producto": "guia-chocolateria-obrador",
+  "fecha": "2026-09-19",
+  "lang": "es",
+  "_doc": [
+    "Producto 49 · «Cómo Montar una Chocolatería Boutique & Atelier» · 65 €.",
+    "Tabla de SPEC §7.2 (scripts/productos-digitales/guia-chocolateria-SPEC.md).",
+    "El ancla NO se declara aquí a propósito: el script la toma del nombre de",
+    "src/data/products-catalog.ts, que es lo que impone el nombre único de",
+    "D17-bis en todas las superficies. El «&» literal lo escapa el script.",
+    "Ganancia neta: 4 banners. Los dos posts de heladería reciben SÓLO el",
+    "párrafo de enlace: el solape es la chocolatería-heladería, no el producto,",
+    "y sacrificarles un banner sería cobrarle a otro negocio."
+  ],
+  "nunca": [
+    "kit-tareas-chocolateria",
+    "kit-escandallos",
+    "pack-appcc",
+    "guia-food-cost"
+  ],
+  "_nunca_doc": "Cross-sell directo de la guía (SPEC §7.1): sustituirlos sería quitarse ventas propias. «guia-food-cost» es PREFIJO y cubre «guia-food-cost-ingenieria-menu». El propio pid lo añade el script.",
+  "prohibidos": [
+    "libreria-de-prompts-para-pasteleria-creativa-ai",
+    "ia-churrerias-guia-completa"
+  ],
+  "_prohibidos_doc": "SPEC §7.2, filas «No tocar»: el primero ya vende la guía hermana correcta (Pastelería) y el segundo es de churrería, que por D1 es OTRO negocio.",
+  "esperado": {
+    "sustituir": 4,
+    "solo_enlace": 2,
+    "miswiring": 0
+  },
+  "posts": {
+    "libreria-de-prompts-para-chocolatero-consultor-pro-ai": {
+      "accion": "SUSTITUIR",
+      "victima": "kit-plan-financiero",
+      "_por_que": "El plan financiero a 3 años va DENTRO de la guía, así que el kit suelto es el banner redundante.",
+      "ancla_n": 3,
+      "_ancla_doc": "El ancla 1 es justo donde fase8i dejó el párrafo de la guía de PASTELERÍA, y los dos abren con la misma premisa: pegados se leen como un muro de cross-sell. Se baja al 3, delante del primer bloque de prompts. El párrafo NO abre nombrando al agente porque la frase que queda justo delante en el ancla 3 ya termina con su nombre («…será la respuesta de Chocolatero Consultor Pro»).",
+      "parrafo": "Estos prompts trabajan sobre el obrador que ya existe: el surtido, la producción y el margen de cada referencia. Lo que hay que decidir para que exista —qué registro sanitario te toca, cómo puedes llamar legalmente a lo que pones en la vitrina y el plan financiero a tres años hasta el punto de equilibrio— está desarrollado capítulo a capítulo en la guía {ENLACE}."
+    },
+    "libreria-de-prompts-para-chocolateria-creativa-ai": {
+      "accion": "SUSTITUIR",
+      "victima": "pro-prompts-ebook",
+      "_por_que": "De los tres banners del post es el menos ligado al negocio del chocolate.",
+      "ancla_n": 3,
+      "_ancla_doc": "Mismo motivo que en el post del consultor: el ancla 1 la ocupa ya el párrafo de la guía de PASTELERÍA que insertó fase8i. Y mismo eco: la frase anterior termina en «…la respuesta de Chocolatería Creativa».",
+      "parrafo": "Con estos prompts se diseña el bombón y la colección; que esa carta se pueda producir cada día depende del clima del obrador, de la vitrina que admite cada relleno y del margen real de cada molde. La carta de apertura con criterio de margen, y las denominaciones legales que puedes rotular, son dos de los veinte capítulos de la guía {ENLACE}."
+    },
+    "chocolateria-artesanal-e-ia-una-combinacion-innovadora": {
+      "accion": "SUSTITUIR",
+      "victima": "kit-tareas-sushi-bar",
+      "_por_que": "El peor encaje del corpus: un post de chocolatería artesanal vendiendo un sushi bar. `guia-restaurante-peruano` queda anotado como segundo arreglo: el tercer banner es `kit-tareas-chocolateria`, que está en NUNCA, así que en este post sólo hay un hueco.",
+      "ancla_n": 2,
+      "_ancla_doc": "El ancla 1 cae entre el `</ul>` de «Conclusión Rápida» y el `<h2>Introducción a la Innovación…`: la primera prosa del post sería una venta, antes de su propia introducción. Se baja al 2, delante de `<h2>La Fusión de Tradición y Tecnología</h2>`, con la introducción ya leída.",
+      "parrafo": "La inteligencia artificial ayuda a decidir mejor en una chocolatería que ya funciona. Todo lo que hay que decidir antes de que exista —el local y el clima del obrador, la maquinaria, el registro sanitario que te toca y el plan financiero hasta el punto de equilibrio— es el contenido de la guía {ENLACE}."
+    },
+    "coulant-de-guanaja-70-y-praline-homenaje-a-laguiole": {
+      "accion": "SUSTITUIR",
+      "victima": "kit-tareas-asador",
+      "_por_que": "El segundo peor encaje: un plato de Guanaja 70 % y praliné vendiendo un asador.",
+      "parrafo": "Trabajar la Guanaja 70 % y el praliné en una carta de postres es una cosa; montar el obrador que los produce cada día es otra, con su clima, su vitrina, su registro sanitario y sus números. Ese camino completo, del local al punto de equilibrio, es la guía {ENLACE}."
+    },
+    "libreria-de-prompts-para-heladeria-creativa-ai": {
+      "accion": "SOLO_ENLACE",
+      "_por_que": "El solape es la chocolatería-heladería, no el producto: enlace contextual honesto, sin tocarle ningún banner.",
+      "parrafo": "El helado no está en esta guía: es de chocolate, no de heladería. Lo que sí se cruza es la chocolatería-heladería que suma las dos estacionalidades —en agosto, lo que se para en una chocolatería es el obrador, justo cuando una heladería trabaja a pleno—, y ahí el local, el clima y las licencias se deciden una sola vez. Ese camino está en la guía {ENLACE}."
+    },
+    "libreria-de-prompts-para-heladero-consultor-pro-ai": {
+      "accion": "SOLO_ENLACE",
+      "_por_que": "Mismo solape que el anterior, desde la consultoría: enlace contextual honesto, sin tocarle ningún banner.",
+      "parrafo": "Heladero Consultor Pro resuelve el negocio del helado, y esta guía no entra en la fórmula ni en el balance de la mezcla: es de chocolate. Se tocan en la decisión de juntar las dos temporadas bajo un mismo techo —en agosto, lo que se para en una chocolatería es el obrador—, y esa decisión se toma con el local, el clima del obrador, las licencias y los números delante, que es lo que ordena la guía {ENLACE}."
+    }
+  }
+}

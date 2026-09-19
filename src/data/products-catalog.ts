@@ -334,6 +334,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: 'Production room, licences and numbers: 20 chapters, 8 Excel tools and 2 bonuses to open with a plan.',
     },
   },
+  'guia-chocolateria-obrador': {
+    id: 'guia-chocolateria-obrador',
+    url: '/guia-chocolateria-obrador',
+    price: '€65',
+    name: { es: 'Cómo Montar una Chocolatería Boutique & Atelier', en: 'Guide: How to Open a Chocolate Boutique & Atelier' },
+    description: {
+      es: 'Obrador, denominaciones legales, vitrina, campañas, licencias y proveedores de cobertura y cacao.',
+      en: 'Workshop, legal designations, display case, seasonal campaigns, licences and couverture and cocoa suppliers.',
+    },
+  },
   // ── Planes de negocio (Excel financiero + checklist de apertura) ─────────
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',

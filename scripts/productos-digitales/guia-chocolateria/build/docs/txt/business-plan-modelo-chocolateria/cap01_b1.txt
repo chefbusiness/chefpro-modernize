@@ -1,0 +1,23 @@
+### El proyecto en una página
+
+Bombonería artesanal con obrador propio —taller o laboratorio, en el resto de Hispanoamérica— y tienda a calle. Ciudad media española sin nombre. Los metros se reparten entre seis zonas con función propia y sin invadirse entre ellas: obrador de templado y moldeado, cámara de chocolate, almacén de cobertura y materias primas, envasado y packaging, tienda con mostrador y vitrina, y aseos y vestuario. Plantilla mínima para sostener producción y venta a la vez, sin turnos duplicados. Cada cifra de este documento sale de una celda de las herramientas del pack y se puede abrir, seguir y comprobar una a una.
+
+Es el formato central de todo el pack: bombonería con obrador propio, no la variante de taza y churros, que es otro negocio con otra licencia, y no el tren de bean-to-bar, que no tiene precio público verificable de maquinaria y por eso queda fuera de esta calculadora de inversión. Las cifras de este resumen son las del caso central; las demás variantes se leen en su propia columna, dentro de las mismas herramientas, sin duplicar el modelo.
+
+### La inversión y su financiación
+
+La inversión sin el fondo de maniobra es de 89.219 €: lo que se compra, partida a partida, para dejar el obrador y la tienda listos para producir y vender. El fondo de maniobra es de 61.273 €: lo que se reserva para sostener el negocio los primeros meses de actividad, antes de que la caja cobre a su ritmo de crucero. Sumadas las dos partidas, la inversión total es de 150.492 €. La necesidad total de caja al arranque sube hasta 168.405 €, porque a la inversión total se le añade el impuesto que se adelanta al comprarlo todo: es lo que de verdad sale de la cuenta el día de la firma, no lo que queda en activos.
+
+De esos 168.405 €, 78.105 € son recursos propios y 90.300 € son el principal del préstamo solicitado. Del desembolso total, el IVA soportado sobre la inversión es de 17.913 €: no es dinero perdido, es un anticipo que se recupera después con la actividad del negocio. Quien no separa esa partida del resto cree que necesita más capital propio del que en realidad hace falta.
+
+### El resultado, el margen y el punto de equilibrio
+
+En el año de crucero, con el negocio ya operando a su ritmo estable, los ingresos son de 199.088 €, el resultado neto es de 17.269 € y el margen neto es del 8,7 %. Son las tres preguntas que se hace cualquiera que lea un plan de negocio antes que ninguna otra: cuánto factura, cuánto queda y qué parte de lo facturado es beneficio de verdad. Van aquí, en la primera página, y no se remiten a la sección financiera: quien tiene que buscar en otro capítulo si el negocio gana dinero ya ha perdido el interés por seguir leyendo.
+
+El punto de equilibrio contable está en 14.231 € de ingresos al mes: por debajo de esa cifra el negocio pierde dinero, y por encima empieza a ganarlo. Comparada con lo que factura el negocio en un mes normal ya en velocidad de crucero, esa cifra deja una holgura clara, no un ajuste al límite. Un plan que no da su punto muerto en la primera página obliga a buscarlo más adelante, y quien decide si presta dinero no suele buscar.
+
+### Qué se pide y para qué
+
+Lo que se solicita es un préstamo de 90.300 €, que junto a los 78.105 € de recursos propios cubre la necesidad total de caja del proyecto: la inversión total —obra y adecuación del local, equipamiento de templado y frío, mobiliario de tienda y el fondo de maniobra que sostiene los primeros meses de actividad— más el impuesto que se adelanta al comprarlo todo. El plazo y las condiciones concretas se cierran con la entidad financiera a partir de este mismo cuadro de cifras, que es lo primero que pide ver quien analiza el riesgo: cuánto se pide, para qué se pide y con qué otra parte de dinero se acompaña.
+
+Cada cifra de este documento sale de una celda de las herramientas del pack, y se puede abrir, seguir la fórmula y comprobarla una a una.

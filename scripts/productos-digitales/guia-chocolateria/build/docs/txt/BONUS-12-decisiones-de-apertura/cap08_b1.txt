@@ -1,0 +1,39 @@
+### El contexto de la decisión
+
+La tienda online de una chocolatería artesanal casi siempre nace para la campaña de Navidad, funciona bien esas semanas y se queda encendida el resto del año sin que nadie vuelva a mirarla. Llega julio, entra un pedido de bombones de ganache, sale del obrador (taller o laboratorio) con la caja de doce cerrada y el cliente lo recibe derretido. La reputación se paga una vez por cada pedido así: el bombón fundido no vuelve a su forma aunque se vuelva a templar.
+
+Lo que casi nadie calcula antes de que pase esto es el coste (costo) del envío refrigerado sobre el pedido medio, ni lo que queda de margen después de pagarlo. Se mira el precio de venta y lo que cuesta el chocolate, y ahí se detiene la cuenta; el transportista con cadena de frío entra como un gasto fijo de diciembre y nadie lo vuelve a sumar cuando julio cambia el mapa por completo.
+
+### Las opciones sobre la mesa
+
+Frente al pedido derretido hay tres caminos, y los tres son legítimos si se eligen a conciencia y no por inercia:
+
+- Opción A: apagar el canal de junio a septiembre y avisarlo en la propia tienda, sin pedir disculpas por ello.
+- Opción B: mantenerlo abierto sólo con producto estable —tabletas (barras), grageas, piezas sin relleno fresco— y dejar fuera del catálogo online la ganache mientras dure el calor.
+- Opción C: mantenerlo entero, con envío refrigerado y un recargo que lo pague.
+
+Lo que cambia entre las tres no es sólo el ingreso de esos meses. Cambia el margen de contribución del canal, según cuánto envío refrigerado haya que pagar; cambia la reputación cuando un pedido llega mal, que en una chocolatería nueva pesa más que cualquier campaña de publicidad; y cambia la carga de trabajo del obrador justo en agosto, el mes en el que las ventas del año pesan sólo un 5,0 % según la hoja «Peso sobre el Año» de campanas-y-valle-del-ano.xlsx: el peor momento para sumarle encima una incidencia de reparto.
+
+### El criterio con el que se decide
+
+La regla no es de calendario, es de producto: lo que aguanta el transporte se envía todo el año, y lo que no aguanta no se envía nunca, tampoco en enero con la calle helada. Confundir esto con una decisión estacional es lo que lleva a mandar ganache fresca en pleno agosto porque «en Navidad funcionó» y a dejar en el almacén, en cambio, una tableta que habría viajado sin problema en cualquier mes del año.
+
+Y hay un número que decide, por encima de la anécdota del pedido derretido, si el canal existe de verdad: el margen de contribución del canal online DESPUÉS de pagar el envío. Si ese margen no aguanta el descuento del transportista con cadena de frío, el canal no es rentable, es publicidad cara disfrazada de venta: factura, pero deja menos de lo que parece y a veces deja menos de lo que cuesta atenderlo cuando algo sale mal.
+
+### La celda que lo resuelve
+
+La hoja «Canales y Punto Muerto» de plan-financiero-3-anos-chocolateria.xlsx ya trae esa cuenta hecha: el margen de contribución del canal online después del envío es del 29,7 %, y su veredicto es literal —aguanta, pero deja menos que el mostrador: úsalo para llegar donde no llegas, no para sustituirlo—. Con ese número, la recomendación es la opción B, retirando del catálogo online sólo el producto que necesita nevera en los meses de más calor. Cambiaría a la opción A si ese margen dejara de cubrir el coste de una incidencia de reparto, y sólo tendría sentido la opción C si el recargo se pudiera trasladar entero al cliente sin perder el pedido por el camino.
+
+Lo que decide qué producto entra en cada opción no está en esa hoja, sino en el libro de vida útil. La hoja «Vida Útil Declarada» de vida-util-rellenos-y-rotacion.xlsx marca la referencia de menor vida útil de toda la carta en 10 días, y la hoja «Temperatura y Vitrina» del mismo libro señala 6 referencias que van a nevera y no a vitrina (exhibidor). Esas seis quedan fuera de cualquier paquete, sin excepción: si algo necesita nevera en la propia tienda, ninguna caja isotérmica lo sostiene varios días de reparto en pleno calor.
+
+### La norma que aplica cuando la hay
+
+Sí que hay norma, y es la que casi nadie asocia a este canal: fijar tú la temperatura de conservación de cada bombón es la ventaja de vender con tu propia ficha técnica, y también la trampa, porque el art. 4.3 del RD 1021/2022 (BOE-A-2022-21681), comprobado el 12 de septiembre de 2026, hace responsable de mantenerla también a quien transporta el pedido, no sólo a quien lo despacha. La temperatura que decides para tu vitrina te sigue obligando dentro de la caja isotérmica, y si el transportista la rompe en ruta, la responsabilidad no desaparece con él.
+
+El envase de ese pedido también tiene dueño legal: el artículo 2, letra e, del RD 1055/2022 (BOE-A-2022-22690) deja claro que en la venta a distancia el titular del comercio es el envasador responsable, aunque el embalaje isotérmico se lo compre a un proveedor externo.
+
+Y está la norma de información, la que de verdad condiciona la ficha del producto online: según el art. 14 del Reglamento (UE) 1169/2011, todo lo obligatorio salvo la fecha —alérgenos incluidos— tiene que estar disponible ANTES de que el cliente pague, sin coste añadido, y completo otra vez en el momento de la entrega. Una ficha online que esconde los alérgenos detrás de un desplegable no cumple esto por mucho que el bombón llegue entero.
+
+Queda un punto que se pasa por alto porque parece que no toca a este canal: la Guía informativa del RGSEAA, revisión 16 (11-06-2025), aclara que vender por internet no cambia por sí solo los criterios de inscripción; lo que obliga a ir al registro nacional, en categorías 3 o 5, es tener una tienda online sin instalaciones alimentarias registradas detrás, algo que no es el caso de quien despacha desde el mismo obrador que ya tiene dado de alta.
+
+El caso que resume por qué esta decisión no es teórica es el de Bombonería Pons, que «crece por venta online, más tiendas físicas, venta al por mayor e incluso exportación» («Bombonería Pons — Historia», 2026-09-12): el canal puede llegar muy lejos, pero nunca deja de exigir la misma condición de fondo, que el chocolate no viaja en verano sin embalaje isotérmico. El cuadro que sigue recoge, referencia por referencia, qué sale en un paquete y qué no, y la obligación que arrastra cada caso.

@@ -104,7 +104,7 @@ QMIX = "'" + H_MIX + "'!"
 
 CARTA = D.CARTA
 NR = len(CARTA)                                   # 28
-BOMBONES = [r for r in CARTA if r['familia'] == 'Bombones de coleccion']
+BOMBONES = [r for r in CARTA if r['familia'] == 'Bombones de colección']
 CAJAS = [r for r in CARTA if D.es_caja(r)]
 NB, NC = len(BOMBONES), len(CAJAS)                # 10 y 4
 
@@ -1090,7 +1090,7 @@ def hoja_merma(wb):
     ws = wb.create_sheet(H_MER)
     C.cabecera_hoja(ws, 'Merma de Templado y Recortes')
     motor.val(ws, 'A3', 'DOS tasas por referencia, y la regla es del kit: «%s» '
-                        '(02-partidas-produccion.xlsx!Moldeado). Lo que vuelve '
+                        '(02-partidas-produccion.xlsx, hoja «Moldeado»). Lo que vuelve '
                         'a la cuba no encarece la materia; lo que se tira, sí.'
               % LITERAL_KIT_MERMA)
     ws['A3'].font = Font(italic=True, size=9)
@@ -1644,29 +1644,29 @@ def mapa_celdas():
          'B%d' % COB_INI, 'entrada'),
         ('Precio de la cobertura de origen en base imponible', H_PAR,
          'B%d' % (COB_INI + 1), 'entrada'),
-        ('Desviacion maxima del cuadre del precio de cobertura', H_PAR,
+        ('Desviación máxima del cuadre del precio de cobertura', H_PAR,
          'B%d' % COB_CUA, 'salida'),
         ('Veredicto del cuadre del precio de cobertura', H_PAR,
          'D%d' % COB_CUA, 'salida'),
-        ('Piezas vendidas al dia', H_PAR, P_PZDIA, 'salida'),
-        ('Piezas vendidas al ano', H_PAR, P_PZANO, 'salida'),
+        ('Piezas vendidas al día', H_PAR, P_PZDIA, 'salida'),
+        ('Piezas vendidas al año', H_PAR, P_PZANO, 'salida'),
         ('Packaging sobre el coste de la pieza', H_PAR, P_PACK, 'parametro'),
-        ('Chocolate minimo sobre el peso total del bombon', H_DEN, U_25,
+        ('Chocolate mínimo sobre el peso total del bombón', H_DEN, U_25,
          'parametro'),
         ('Materia seca total de cacao del chocolate a la taza', H_DEN,
          U_TAZA_T, 'parametro'),
         ('Coste por kilo de la ganache negra fresca', H_ESC,
          'B%d' % REL_INI, 'salida'),
-        ('Kilos al ano que vuelven a la cuba', H_MER, 'M%d' % FIL_TOT,
+        ('Kilos al año que vuelven a la cuba', H_MER, 'M%d' % FIL_TOT,
          'salida'),
-        ('Kilos al ano que van a residuo', H_MER, 'N%d' % FIL_TOT, 'salida'),
+        ('Kilos al año que van a residuo', H_MER, 'N%d' % FIL_TOT, 'salida'),
         ('Coste anual de la merma no recuperable', H_MER, 'O%d' % FIL_TOT,
          'salida'),
         ('Food cost medio simple de la carta', H_MO, 'Q%d' % FIL_TOT, 'salida'),
         ('Margen medio simple por pieza', H_MO, 'R%d' % FIL_TOT, 'salida'),
-        ('PVP medio ponderado con IVA del ano', H_MIX, M_PVPA, 'salida'),
-        ('Ticket medio con IVA del ano', H_MIX, M_TKCI, 'salida'),
-        ('Ticket medio sin IVA del ano', H_MIX, M_TKSI, 'salida'),
+        ('PVP medio ponderado con IVA del año', H_MIX, M_PVPA, 'salida'),
+        ('Ticket medio con IVA del año', H_MIX, M_TKCI, 'salida'),
+        ('Ticket medio sin IVA del año', H_MIX, M_TKSI, 'salida'),
         ('Ticket medio con IVA de julio y agosto', H_MIX, M_TKVE, 'salida'),
         ('Food cost de escandallo de la carta', H_MIX, M_FCA, 'salida'),
         ('Food cost de escandallo con el mix de julio y agosto', H_MIX, M_FCV,
@@ -1678,9 +1678,9 @@ def mapa_celdas():
          'salida'),
         ('Caida del margen al cambiar el mix en verano', H_MIX, M_CAIDA,
          'salida'),
-        ('Comprobacion de que los dos mixes suman 100', H_MIX, M_CUADRE,
+        ('Comprobación de que los dos mixes suman 100', H_MIX, M_CUADRE,
          'salida'),
-        ('Margen de la carta al ano', H_SUR, 'G%d' % FIL_TOT, 'salida'),
+        ('Margen de la carta al año', H_SUR, 'G%d' % FIL_TOT, 'salida'),
         ('Referencias con veredicto Mantener', H_SUR, 'B%d' % SUR_CNT,
          'salida'),
         ('Referencias con veredicto Revisar precio', H_SUR,
@@ -1706,7 +1706,7 @@ def mapa_celdas():
              'salida'),
             ('Descuento por comprar %s' % caja['nombre'], H_CAJ,
              '%s%d' % (col, F_DTO), 'salida'),
-            ('Precio por bombon en %s' % caja['nombre'], H_CAJ,
+            ('Precio por bombón en %s' % caja['nombre'], H_CAJ,
              '%s%d' % (col, F_PBCAJA), 'salida'),
             ('Veredicto de %s' % caja['nombre'], H_CAJ, '%s%d' % (col, F_VER),
              'salida'),

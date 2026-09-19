@@ -1,0 +1,31 @@
+### El contexto de la decisión
+
+Termina la campaña —Navidad, San Valentín, el día de la madre, o el verano si tienes cámara para sostenerlo— y en el obrador (taller o laboratorio) quedan figuras que ya no van a salir, cajas montadas y bombones a punto de caducar. La decisión se toma con la tienda a medio recoger, que es la peor circunstancia para decidir bien: se acaba tirando lo que se podía vender y malvendiendo lo que se podía refundir sin perder nada.
+
+Lo que casi nadie calcula antes de llegar ahí es cuánto cuesta al año esa merma por caducidad, referencia a referencia. Medida tanda por tanda, la cifra suele ser menor de lo que se teme y está concentrada: en la carta completa de este pack la merma anual sube a 768 € y afecta a 3.755 piezas, pero sólo 2 referencias de toda la carta llevan una tanda demasiado grande. Son esas 2 las que hay que mirar primero, no la carta entera. Y conviene tener presente la vida útil más corta de tu carta: 10 días en este ejemplo, un margen que no admite el mismo error de producción que una referencia que aguanta semanas en vitrina (exhibidor).
+
+### Las opciones sobre la mesa
+
+Con el producto ya hecho y la fecha encima, las salidas reales son cuatro. Opción A: refundir lo que se pueda, devolviendo a producción el chocolate que sigue siendo limpio. Opción B: vender con descuento antes de la fecha límite, a costa del margen. Opción C: donar lo que siga siendo apto para el consumo, que no mete un euro en caja pero evita el desperdicio puro. Opción D: tirar, la única que no recupera nada y que además añade un coste (costo) de gestión de residuo.
+
+Lo que cambia de una a otra no es sólo el dinero recuperado: cambia el efecto sobre el precio percibido —sacar bombón con descuento junto al que vendes a precio de siempre no siempre transmite lo que quieres transmitir— y cambian las obligaciones documentales de cada camino, sobre todo si entra en juego la donación.
+
+Si vendes con descuento a granel, hay una letra pequeña que conviene conocer: hay que aceptar los envases reutilizables que traiga el cliente, y desde el 1 de enero de 2027 los locales de menos de 120 metros cuadrados deberán ofrecer al menos una bebida en envase reutilizable —si en tu chocolatería se sirve chocolate a la taza, esa fecha te toca directamente (Real Decreto 1055/2022, BOE-A-2022-22690, arts. 9.3 y 9.4). Y con estacionalidad marcada hay una palanca más antes de decidir: congelar bombones o coberturas para ganar tiempo, con regla estricta —temperatura central de −18 °C con descenso ininterrumpido, etiqueta con las tres fechas (elaboración, congelación, caducidad), la palabra «descongelado» en la venta, y recongelación prohibida salvo transformación posterior (Real Decreto 1021/2022, BOE-A-2022-21681, art. 5).
+
+### El criterio con el que se decide
+
+Antes de mirar precios ni normas hay una regla física que separa el problema en dos, y no es opinable: el chocolate sin relleno y sin contaminar se puede refundir sin restricción; el que lleva ganache, fruta o cualquier relleno húmedo va directo a residuo, porque ya ha dejado de ser chocolate limpio. Esta frontera decide, antes que nada, qué parte de lo sobrante puede aspirar a la opción A y qué parte sólo tiene delante la C o la D.
+
+Hay una segunda regla, de negocio y no de oficio: la merma por caducidad no se arregla al final, se arregla ajustando el tamaño de la tanda al principio. Lo que caduca en la vitrina es, casi siempre, lo que se produjo de más. La recomendación por defecto es donar mientras el producto siga siendo apto —conserva mejor el valor de marca que cualquier otra salida— y reservar el refundido para cuando la donación no llegue a tiempo o la referencia, por llevar relleno, no lo permita. Tirar queda para lo que no cumple ninguna de las dos condiciones.
+
+### La celda que lo resuelve
+
+Esto no se decide a ojo. La hoja «Lote y Merma por Caducidad» de vida-util-rellenos-y-rotacion.xlsx da la merma anual en euros y señala, referencia por referencia, cuáles llevan una tanda demasiado grande: son los 768 € y las 2 referencias de las que hablábamos antes, y también el peso de esa merma sobre el coste (costo) de materia del año, que se queda en el 1,6 %. Es la hoja que hay que abrir antes de tocar el tamaño de ninguna tanda.
+
+La segunda pieza está en el libro de la carta: la hoja «Merma de Templado y Recortes» de carta-de-apertura-y-escandallo-chocolate.xlsx separa lo que vuelve a la cuba de lo que va a residuo, y pone precio a cada lado. En esta carta de ejemplo son 86,4 kilos al año que vuelven a producción casi sin coste, frente a 719 € de merma irrecuperable. Cruzar estas dos hojas con la fecha de caducidad de cada referencia —la más corta son 10 días— dice si el tamaño de tanda que planeas es el que tu vitrina puede vender a tiempo.
+
+### La norma que aplica cuando la hay
+
+La norma que gobierna esta decisión es la «Ley 1/2025, de 1 de abril, de prevención de las pérdidas y el desperdicio alimentario» (BOE-A-2025-6597), comprobada el 12 de septiembre de 2026, y conviene leerla despacio porque no dice del todo lo que parece a primera vista. Si tu chocolatería es microempresa, el apartado 6 del artículo 6 te deja fuera de todo el resto del artículo: fuera del plan de prevención de pérdidas, de los convenios de donación y de las jerarquías de destino que impone a los negocios más grandes. Lo único que sigue en pie, seas microempresa o no, es que cualquier cláusula de un contrato con tu proveedor que prohíba donar es nula de pleno derecho.
+
+Y hay una segunda cara de la misma ley que casi nadie cuenta, porque vive en otro artículo: la obligación de facilitar que el cliente se lleve lo que no ha consumido está en el artículo 8, no en el 6, así que la exclusión de la microempresa no llega hasta ahí. Si en tu chocolatería se sirve chocolate a la taza y hay mesas, ese artículo 8 te obliga igual que a cualquier otro negocio de hostelería, seas del tamaño que seas. Fuera de estos dos puntos no hay más norma que aplicar: refundir, descontar, donar o tirar es, a partir de aquí, una decisión de negocio, con los números de tu propia carta delante.

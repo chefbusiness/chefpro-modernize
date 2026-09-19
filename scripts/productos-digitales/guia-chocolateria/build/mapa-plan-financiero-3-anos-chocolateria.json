@@ -265,12 +265,12 @@
   "tipo": "salida"
  },
  "Jornadas completas equivalentes": {
-  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!B41",
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!B40",
   "valor": 2.5,
   "tipo": "salida"
  },
  "Coste de una hora de obrador": {
-  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!B45",
+  "ref": "plan-financiero-3-anos-chocolateria.xlsx!Personal!B44",
   "valor": 18.49165895571712,
   "tipo": "salida"
  },

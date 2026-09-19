@@ -55,6 +55,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'manual-manager-restaurante', label: 'Manual del Manager de Restaurante (€55)' },
   { id: 'manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo (€65)' },
   { id: 'guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería (€65)' },
+  { id: 'guia-chocolateria-obrador', label: 'Cómo Montar una Chocolatería Boutique & Atelier (€65)' },
 ];
 
 export default function AdminGenerateAccess() {

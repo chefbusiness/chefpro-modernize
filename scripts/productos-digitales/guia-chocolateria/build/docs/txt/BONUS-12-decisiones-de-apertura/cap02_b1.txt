@@ -1,0 +1,33 @@
+### El contexto de la decisión
+
+En cuanto llega la hora de cerrar el presupuesto de equipamiento, la atemperadora es la partida que más salta a la vista: es la máquina más cara de toda la dotación y la que más parece decir si el proyecto va en serio. La tentación de recortar justo ahí es comprensible, porque el chocolate se puede templar a mano sobre mármol o al baño maría. Pero decidir por la partida más visible, sin mirar antes cuántos bombones al día permite cada opción, es exactamente el error que este apartado quiere evitarte. La pregunta que de verdad importa no es «¿puedo pagarla?», sino «¿qué pieza de todo el obrador (taller o laboratorio) limita mi producción, y es la atemperadora la que lo hace?». Casi nadie hace ese cálculo antes de firmar el pedido, y es justo el que puede darle la vuelta a la decisión entera.
+
+### Las opciones sobre la mesa
+
+Hay tres caminos razonables para entrar en el templado, y conviene mirarlos con sus números reales antes de descartar ninguno por precio.
+
+La Opción A es entrar directamente con una atemperadora continua de sobremesa. La referencia de este apartado es la Selmi One, con una capacidad de 12 kg y un caudal de 55 kg/h: 8.500 € según los precios de Utilcentre, S.L. (distribuidor Selmi/Pavoni en España), consultados el 12 de septiembre de 2026, a los que hay que sumar 1.045 € en concepto de embalaje, transporte asegurado y puesta en marcha, importe que el propio distribuidor declara «neto» sin precisar si lleva o no el impuesto incluido. Es además la partida con el plazo de entrega más largo de toda la dotación: diez semanas desde que se cursa el pedido.
+
+La Opción B es arrancar con una atemperadora de arranque pequeña y crecer después. En esa misma escalera de equipos, la Pavoni MINITEMPER, con una capacidad de 4,5 litros (aproximadamente 3 kg), cuesta 1.960,00 €, con una cubeta adicional a 165,30 € (Utilcentre, S.L., 2026-09-12).
+
+La Opción C parte de esa misma máquina pequeña y le suma una segunda línea: un temperador de baño maría digital de 22 litros de capacidad, a 2.650,00 € (Utilcentre, S.L., 2026-09-12). Por debajo de las tres, en el peldaño más económico de esa escalera, está el mantenedor de una cubeta digital, desde 570,00 € (Utilcentre, S.L., 2026-09-12): ese «desde» es un suelo comercial, no el precio cerrado de la unidad concreta que acabarías comprando, así que no sirve como cifra fija de presupuesto ni de escandallo (costeo), sino como mínimo a tener en cuenta cuando llegue esa partida.
+
+Lo que cambia entre las tres no es solo el desembolso: cambian los kilos por carga, cuántas coberturas puedes tener a punto a la vez, y el plazo de entrega, que en la continua vuelve a ser el más largo de todo el pedido.
+
+### El criterio con el que se decide
+
+Aquí es donde casi nadie hace los deberes: cuántos bombones al día permite realmente cada opción, y si la atemperadora es de verdad lo que limita la producción o si el límite está en otra parte del obrador. La regla es cruzar la capacidad de cada equipo con la producción que pide tu plan de negocio, en bombones equivalentes de obrador, y mirar quién limita DESPUÉS de ese cruce, nunca antes.
+
+Hecho ese cruce, la atemperadora continua permite 4.368 bombones al día de obrador, y la de arranque permite 4.914: las dos quedan muy por encima de lo que el obrador entero puede sacar, así que el templado no es lo que decide esta compra. Y aquí aparece el hallazgo que casi siempre da la vuelta a esta decisión: en una bombonería pequeña, el cuello de botella casi nunca es el templado. El conjunto de equipos del obrador, cruzado entero, sólo permite sacar 512 bombones al día, muy por debajo de lo que da cualquiera de las dos atemperadoras por separado. El equipo que limita es el puesto de envasado y montaje de cajas, y ninguna máquina de templar, por grande y por cara que sea, arregla ese cuello de botella: lo arreglan las manos y el puesto de trabajo, no el chocolate.
+
+### La celda que lo resuelve
+
+La hoja «Capacidad por Equipo» de capacidad-obrador-y-clima.xlsx convierte cada máquina de la dotación en bombones al día y señala, sin ambigüedad, cuál de todos los equipos limita el conjunto: con los datos de este plan, ese equipo es el puesto de envasado, no la atemperadora. La hoja «Cuello de Botella» del mismo libro entrega el número final del conjunto, los 512 bombones al día que puede sacar el obrador completo.
+
+La hoja «Equipamiento» de checklist-equipamiento-y-proveedores-cacao.xlsx trae, además, el plazo de entrega de cada línea de la dotación, y ahí la continua vuelve a marcar el ritmo: si al final se decide comprarla, es la primera pieza que hay que pedir, porque sus diez semanas de plazo son las más largas de todo el proyecto y las que de verdad condicionan la fecha de apertura.
+
+Con estos dos datos cruzados, la recomendación para quien monta su primera bombonería es clara: si el cuello de botella real está en el envasado y no en el templado, la Opción B o la Opción C —la pequeña, sola o con una segunda línea de baño maría— cubre de sobra lo que el resto del obrador es capaz de sacar, y deja el desembolso y las diez semanas de espera de la continua para más adelante. La condición que cambia esta recomendación es que tu propio plan de producción, verificado en esa misma hoja de capacidad, supere lo que da la atemperadora de arranque: sólo entonces la continua deja de ser un lujo y pasa a ser la pieza que toca pedir primero.
+
+### La norma que aplica cuando la hay
+
+Aquí no hay norma que decida por ti: es una decisión económica y de capacidad de producción, y se dice sin rodeos que no la hay. Lo único normativo que roza esta compra no es el chocolate, sino la instalación eléctrica del local: la potencia contratada tiene que soportar la máquina que elijas, y eso se comprueba en la ficha de visita al local antes de firmar ningún pedido, nunca después.

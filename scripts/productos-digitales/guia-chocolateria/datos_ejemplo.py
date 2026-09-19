@@ -1,110 +1,110 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-datos_ejemplo.py - JUEGO DE DATOS UNICO del producto «Como Montar una Chocolateria»
+datos_ejemplo.py - JUEGO DE DATOS ÚNICO del producto «Como Montar una Chocolatería»
 (SPEC: scripts/productos-digitales/guia-chocolateria-SPEC.md, §3).
 
 Los 9 libros de Excel, el guion (`guion_guia_chocolateria_obrador.py`), el bonus 1
 (business plan modelo relleno) y el bonus 2 («12 decisiones de apertura resueltas»)
-beben de ESTE fichero. Regla de la familia: una sola fuente de cifras. Si un numero
-cambia, cambia aqui y se regeneran los libros.
+beben de ESTE fichero. Regla de la familia: una sola fuente de cifras. Si un número
+cambia, cambia aquí y se regeneran los libros.
 
 QUE ES «LA ALMENDRA» Y QUE NO ES
 ================================
-«La Almendra» es un CASO MODELADO, no un cliente real y no «la bomboneria media de
-Espana». Es el juego de datos que permite que las formulas de los 9 libros tengan
+«La Almendra» es un CASO MODELADO, no un cliente real y no «la bombonería media de
+España». Es el juego de datos que permite que las fórmulas de los 9 libros tengan
 que calcular y que el lector vea una hoja rellena antes de borrarla y poner la suya.
-Nada de lo que hay aqui es un benchmark.
+Nada de lo que hay aquí es un benchmark.
 
-D51 - COMPROBACION DE MARCA, hecha el 12-09-2026 y declarada aqui:
+D51 - COMPROBACION DE MARCA, hecha el 12-09-2026 y declarada aquí:
   · El API de TMview (`tmdn.org/tmview/api/search/results`, oficinas ES+EM, clase 30)
-    devolvio error de conexion desde este Mac (curl exit 56, y WebFetch ECONNRESET).
-    El buscador de la EUIPO (eSearch) sirve la cascara de la SPA, sin resultados.
+    devolvió error de conexion desde este Mac (curl exit 56, y WebFetch ECONNRESET).
+    El buscador de la EUIPO (eSearch) sirve la cáscara de la SPA, sin resultados.
     REGISTRO NO CONSULTABLE EL 12-09-2026 DESDE EL MAC.
-  · Busqueda web con dos consultas distintas («La Almendra» + chocolateria /
-    bomboneria / marca registrada, y «La Almendra» + bombones + obrador): NINGUN
-    negocio vivo de chocolate con ese nombre. Lo que sale son productos («bombon
+  · Busqueda web con dos consultas distintas («La Almendra» + chocolatería /
+    bombonería / marca registrada, y «La Almendra» + bombones + obrador): NINGÚN
+    negocio vivo de chocolate con ese nombre. Lo que sale son productos («bombón
     almendrado», «bombones de almendra») de otras casas, no una marca homonima.
-  · Decision: se mantiene «La Almendra». Si al abrir el registro apareciese una
-    marca VIVA en clase 30, se cambia el nombre AQUI (candidatos anotados:
-    «La Cacaotera», «Bomboneria del Mercado») y se regeneran los nueve libros.
+  · Decisión: se mantiene «La Almendra». Si al abrir el registro apareciese una
+    marca VIVA en clase 30, se cambia el nombre AQUÍ (candidatos anotados:
+    «La Cacaotera», «Bombonería del Mercado») y se regeneran los nueve libros.
 
 LA REGLA DE PROCEDENCIA (SPEC §3): SOLO HAY CUATRO ORIGENES
 ===========================================================
 Cada campo lleva su origen escrito en el propio `.py`, en un campo `fuente` o en el
 comentario de encima. Solo hay cuatro origenes validos, y `comprobar()` lo verifica:
 
-  1. **`CHN-*` / `CHS-*`** - id del JSON comun
+  1. **`CHN-*` / `CHS-*`** - id del JSON común
      `auditorias/guias-v2-research-sector.json` (635 entradas: 411 heredadas + 109
      CHN de normativa + 115 CHS de sector). **Citados con su sufijo cuando solo
      existen con sufijo** (D44): CHS-24a..d, CHS-25a..d, CHS-27a/b, CHS-28a..d,
      CHS-37a/b/c, CHS-38a..e, CHS-41a..j, CHS-42a..j, CHS-45a/b, CHS-46a..f,
      CHS-47a/b, CHS-69a..d. **`CHS-41` a secas esta PROHIBIDO** (§5.2): existe sin
-     sufijo pero es un AGREGADO sin fuente unica, fiabilidad baja.
-  2. **El kit publicado**, citado por `fichero.xlsx!Hoja`. La guia CITA el kit, no
-     lo reescribe, y donde la guia necesita un numero que el kit ya publica, usa EL
+     sufijo pero es un AGREGADO sin fuente única, fiabilidad baja.
+  2. **El kit publicado**, citado por `fichero.xlsx, hoja «Hoja»`. La guía CITA el kit, no
+     lo reescribe, y donde la guía necesita un número que el kit ya publica, usa EL
      DEL KIT (D30, D31, D35, D36, D40).
   3. **«supuesto declarado»** - dato de ejemplo para que el modelo funcione. No
-     tiene fuente porque no la hay, y asi se dice. Un supuesto NUNCA se escribe en
+     tiene fuente porque no la hay, y así se dice. Un supuesto NUNCA se escribe en
      la prosa como si fuera un dato del sector.
-  4. **`PA-*`** - id de Pasteleria dentro del mismo JSON comun, citado como
-     REUTILIZACION y con su fecha de verificacion (10-09-2026). Es lo que sostiene
+  4. **`PA-*`** - id de Pastelería dentro del mismo JSON común, citado como
+     REUTILIZACION y con su fecha de verificación (10-09-2026). Es lo que sostiene
      el tope de 100 kg/semana del art. 13.9 (`PA-29c`), que ninguna ficha `CHN-*`
      cubre.
 
-No hay un quinto origen. Copiar una redaccion legal de otro kit sin id y sin fecha
+No hay un quinto origen. Copiar una redacción legal de otro kit sin id y sin fecha
 sigue prohibido (§5.3).
 
 LO QUE SE LEYO DEL KIT ANTES DE FIJAR UN SOLO DATO (SPEC §1.B, releido hoy)
 ==========================================================================
 `openpyxl.load_workbook(..., read_only=True, data_only=True)`, un fichero cada vez,
-con `istats cpu temp` entre lecturas (47,7-53,3 grados C en toda la pasada):
+con `istats cpu temp` entre lecturas (47,7-53,3 °C en toda la pasada):
 
   · `02-partidas-produccion.xlsx!Templado` - coberturas negra 55-70 % de cacao,
     con leche 35-40 %, blanca 28-33 %. Las tres curvas de templado se quedan en el
-    kit: la guia NO las repite (K1).
-  · `02-partidas-produccion.xlsx!Moldeado` - la tabla de vida util al pie, diez
+    kit: la guía NO las repite (K1).
+  · `02-partidas-produccion.xlsx!Moldeado` - la tabla de vida útil al pie, diez
     filas, y la regla de merma: «El chocolate sin relleno y sin contaminar se puede
     refundir; el que lleva ganache o fruta, a residuo» -> DOS tasas de merma (D40).
   · `04-tareas-perfiles.xlsx` - tres hojas de perfil y sus nombres LITERALES:
     `Chocolatero` · `Dependiente` · `Encargado`.
-  · `06-eventos-temporada.xlsx` - solo tres hojas de campana (Navidad, San Valentin,
+  · `06-eventos-temporada.xlsx` - solo tres hojas de campana (Navidad, San Valentín,
     Pascua): el calendario completo esta en el BONUS-02.
   · `BONUS-02-calendario-anual-tareas.xlsx!Calendario` - 12 filas, 7 «Alta»
     (feb, mar, abr, may, oct, nov, dic), 4 «Media» (ene, jun, jul, sep) y 1 «Baja»
     (ago), con las COMUNIONES de abril a junio.
   · `08-apertura-cierre-negocio.xlsx!Apertura del Negocio` - tarea 17 (obrador
-    18-20 grados C y 50-60 % de humedad) y tarea 16 (vitrina 16-18 grados C y menos
+    18-20 °C y 50-60 % de humedad) y tarea 16 (vitrina 16-18 °C y menos
     del 55 % de humedad). Es la hoja que manda en D31.
-  · `01-apertura-cierre.xlsx!Apertura` - camara 15-18 grados C / 50-60 %, nevera de
-    rellenos 0-4 grados C, sala de tienda 20-22 grados C.
+  · `01-apertura-cierre.xlsx!Apertura` - cámara 15-18 °C / 50-60 %, nevera de
+    rellenos 0-4 °C, sala de tienda 20-22 °C.
   · `kit-escandallos/05-pasteleria.xlsx` - seis hojas, entre ellas `Tarta Chocolate`.
-    Se cita como FRONTERA (D38), no se copia: costea una elaboracion por unidad; lo
-    que no existe en el catalogo es el escandallo del obrador de bomboneria.
+    Se cita como FRONTERA (D38), no se copia: costea una elaboración por unidad; lo
+    que no existe en el catálogo es el escandallo del obrador de bombonería.
 
 DECISIONES DE LA SPEC QUE ESTE FICHERO MATERIALIZA
 ==================================================
-  · **D1** - bomboneria con obrador como caso central; taza y churros como COLUMNA
+  · **D1** - bombonería con obrador como caso central; taza y churros como COLUMNA
     DE ESCENARIO (`VARIANTES`), nunca como producto aparte.
   · **D2** - bean-to-bar como variante SIN cifras de maquinaria: lista de la compra
     y preguntas al proveedor (`VARIANTES['bean-to-bar']`).
   · **D23a/b/c** - moldes como RANGO (24,20-42,83 euros/ud, `CHS-45a`), mantenedor
     como «desde» (`CHS-41i`), escenarios A y B como RANGO con la etiqueta «BASE
     MIXTA de IVA, no es presupuesto de apertura» pegada.
-  · **D30** - las diez vidas utiles son las del kit y la guia NO las reescribe:
+  · **D30** - las diez vidas útiles son las del kit y la guía NO las reescribe:
     `VIDA_UTIL_KIT` es una COPIA declarada de `02!Moldeado`.
-  · **D31** - CINCO temperaturas unicas, las del kit, en `CLIMA`. El semaforo de la
-    vitrina solo avisa por encima de 20 grados C.
+  · **D31** - CINCO temperaturas únicas, las del kit, en `CLIMA`. El semáforo de la
+    vitrina solo avisa por encima de 20 °C.
   · **D32** - los OCHO cruces entre libros viven en `CRUCES`: celda verde + fila de
-    cuadre, jamas formula entre ficheros.
+    cuadre, jamás fórmula entre ficheros.
   · **D35** - las 12 filas del `BONUS-02` bajan a `CAMPANAS`, fila a fila, con las
     COMUNIONES como campana propia (`CAMPANA_COMUNIONES`).
   · **D36** - el valle es AGOSTO y lo que para es el OBRADOR, no la caja: un mes
-    «Baja» de doce, mix distinto en julio y agosto, envios parados de junio a
+    «Baja» de doce, mix distinto en julio y agosto, envíos parados de junio a
     septiembre (dato de canal ONLINE).
-  · **D37** - dos capas: el 25 % del bombon se calcula SOBRE EL PESO TOTAL con el
+  · **D37** - dos capas: el 25 % del bombón se calcula SOBRE EL PESO TOTAL con el
     relleno dentro (`CHN-10`), y las tres magnitudes de la norma (materia seca
-    total, manteca y desgrasada) se COPIAN de la ficha tecnica del proveedor.
+    total, manteca y desgrasada) se COPIAN de la ficha técnica del proveedor.
   · **D40** - dos tasas de merma por referencia: recuperable y NO recuperable.
   · **D42e** - el tipo de IVA del taller va SIN CIFRA: no esta exento, pero el tipo
     no se cierra.
@@ -112,34 +112,34 @@ DECISIONES DE LA SPEC QUE ESTE FICHERO MATERIALIZA
     de mercado (`CHS-69a..d`) van AL LADO y nunca como convenio.
   · **D44** - los ids se citan con su sufijo; `CHS-41` a secas esta prohibido.
   · **D47** - cada referencia declara si se despacha ENVASADA CON ETIQUETA o A
-    GRANEL: no es el mismo regimen.
+    GRANEL: no es el mismo régimen.
   · **D48** - `PROVEEDORES` lleva la columna «operador / operador posterior /
-    comerciante» VACIA para que la rellene el lector, y el numero de DDS solo se
+    comerciante» VACIA para que la rellene el lector, y el número de DDS solo se
     pide en la primera rama. Y hay una SEGUNDA tabla, `CLIENTES_B2B`.
-  · **D52** - 28 referencias en 5 familias, cada una con su denominacion legal del
-    RD 1055/2003 y su fila de la matriz 28 x 8 de alergenos de `CHN-34b`.
-  · **D53(a)** - la guia publica los OCHO alergenos del Anexo II. La regeneracion
-    del kit a 2.1 es una PROPUESTA para John y NO bloquea nada de aqui.
+  · **D52** - 28 referencias en 5 familias, cada una con su denominación legal del
+    RD 1055/2003 y su fila de la matriz 28 x 8 de alérgenos de `CHN-34b`.
+  · **D53(a)** - la guía publica los OCHO alérgenos del Anexo II. La regeneración
+    del kit a 2.1 es una PROPUESTA para John y NO bloquea nada de aquí.
 
 LO QUE NO ENTRA (lista negra del §5 de la SPEC)
 ===============================================
-Ni el censo de chocolaterias, ni las facturaciones agregadas de eInforma, ni el
-ticket medio de chocolateria, ni el reparto mensual de ventas como dato, ni la
-aritmetica «12 moldes por 30 euros», ni el mantenedor como precio cerrado, ni la
-resta de los dos escenarios de dotacion, ni «valle de junio-agosto», ni «los cinco
-alergenos de una bomboneria», ni el «carnet de manipulador», ni la lista de
+Ni el censo de chocolaterías, ni las facturaciones agregadas de eInforma, ni el
+ticket medio de chocolatería, ni el reparto mensual de ventas como dato, ni la
+aritmética «12 moldes por 30 euros», ni el mantenedor como precio cerrado, ni la
+resta de los dos escenarios de dotación, ni «valle de junio-agosto», ni «los cinco
+alérgenos de una bombonería», ni el «carnet de manipulador», ni la lista de
 calificativos de calidad, ni la fecha del EUDR «pase lo que pase».
-`comprobar()` barre el modulo entero buscando esas cadenas.
+`comprobar()` barre el módulo entero buscando esas cadenas.
 
 VOCABULARIO (SPEC §6)
 =====================
-chocolateria artesanal (nunca «artesana») · bomboneria · obrador · cobertura ·
-templado (nunca «temperado» en el cuerpo) · escandallo · vitrina · bombon (y «trufa»
-y «praline» son TIPOS de bombon, no sinonimos) · tableta · chocolate a la taza ·
+chocolatería artesanal (nunca «artesana») · bombonería · obrador · cobertura ·
+templado (nunca «temperado» en el cuerpo) · escandallo · vitrina · bombón (y «trufa»
+y «praliné» son TIPOS de bombón, no sinonimos) · tableta · chocolate a la taza ·
 bean-to-bar (no se traduce) · taller y cata · fat bloom y sugar bloom · coste.
-«Dulceria» NO se usa como sinonimo en ninguna parte del producto.
+«Dulcería» NO se usa como sinonimo en ninguna parte del producto.
 
-ESTILO: la prosa de los comentarios va SIN TILDES a proposito, y no es descuido. Este
+ESTILO: la prosa de los comentarios va SIN TILDES a propósito, y no es descuido. Este
 fichero se escribe y se parchea desde el shell, y `CLAUDE.md` documenta que los
 caracteres decorativos degeneran al pasar por un heredoc: un parche que «no encuentra»
 un texto que ves en el fichero suele ser eso. Renunciando a las tildes en los
@@ -149,7 +149,7 @@ y citas del BOE- van tal y como los dice su fuente.
 
 WinAnsi: todo el texto de este fichero cabe en cp1252, y lo comprueba `comprobar()`.
 Nada de flechas, signos de «menor o igual», «aproximadamente», espacios finos ni
-guiones no separables: los caracteres decorativos de los `.md` no entran en el codigo.
+guiones no separables: los caracteres decorativos de los `.md` no entran en el código.
 
 Ejecutar `python3 datos_ejemplo.py` corre `comprobar()` e imprime el resumen.
 Python del Mac: `/usr/local/bin/python3` (el del sistema no trae openpyxl).
@@ -181,18 +181,22 @@ KIT_CALENDARIO = os.path.join(KIT_DIR, 'BONUS-02-calendario-anual-tareas.xlsx')
 KIT_ESCANDALLOS = os.path.join(_DL, 'kit-escandallos', '05-pasteleria.xlsx')
 
 #: Etiquetas de procedencia del kit, tal y como se escriben en los campos `fuente`.
-F_KIT_TEMPLADO = 'kit-tareas-chocolateria/02-partidas-produccion.xlsx!Templado'
-F_KIT_MOLDEADO = 'kit-tareas-chocolateria/02-partidas-produccion.xlsx!Moldeado'
+F_KIT_TEMPLADO = ('kit-tareas-chocolateria/02-partidas-produccion.xlsx, '
+                  'hoja «Templado»')
+F_KIT_MOLDEADO = ('kit-tareas-chocolateria/02-partidas-produccion.xlsx, '
+                  'hoja «Moldeado»')
 F_KIT_PERFILES = 'kit-tareas-chocolateria/04-tareas-perfiles.xlsx'
-F_KIT_CALENDARIO = 'kit-tareas-chocolateria/BONUS-02-calendario-anual-tareas.xlsx!Calendario'
-F_KIT_08_APERTURA = 'kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx!Apertura del Negocio'
-F_KIT_01_APERTURA = 'kit-tareas-chocolateria/01-apertura-cierre.xlsx!Apertura'
+F_KIT_CALENDARIO = ('kit-tareas-chocolateria/BONUS-02-calendario-anual-tareas.xlsx, '
+                    'hoja «Calendario»')
+F_KIT_08_APERTURA = ('kit-tareas-chocolateria/08-apertura-cierre-negocio.xlsx, '
+                     'hoja «Apertura del Negocio»')
+F_KIT_01_APERTURA = 'kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Apertura»'
 
 #: Nombres LITERALES de los tres perfiles del kit: son los nombres de las HOJAS de
 #: `04-tareas-perfiles.xlsx`, verificados abriendo el fichero el 12-09-2026.
 #: §1.B.5 prohibe «maestro chocolatero», «bombonero» y «oficial» como perfiles.  # LN-OK
 #: OJO: la hoja `Instrucciones` del kit y el titulo de la fila 1 de cada hoja usan
-#: rotulos largos («Maestro Chocolatero / Obrador», «Dependiente de Tienda»,
+#: rótulos largos («Maestro Chocolatero / Obrador», «Dependiente de Tienda»,
 #: «Encargado de Turno»). Lo que la SPEC declara literal son los NOMBRES DE HOJA,
 #: y son estos tres.
 PERFILES_KIT = ('Chocolatero', 'Dependiente', 'Encargado')
@@ -210,39 +214,44 @@ MESES = ('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
 #: dicho (§3.1); el reparto POR ZONA tambien es supuesto.
 ZONAS = [
     # (zona, m2, fuente del m2, nota)
+    # OJO: las citas al kit se CONCATENAN, nunca se escriben dentro de la
+    # cadena. Hasta el 19-09-2026 los nombres F_KIT_* salian impresos tal cual
+    # en la tabla de zonas del PDF y en las celdas G6-G10 del libro 1, y donde
+    # tenia que ir la fuente de la ventana de temperatura (D31) habia un
+    # identificador de codigo.
     ('Obrador de templado y moldeado', 26.0, 'supuesto',
-     'La zona que manda sobre el local: aqui van la atemperadora, la mesa de marmol '  # LN-OK
-     'o granito, la enrobadora y los moldes. Clima propio (18-20 grados C y 50-60 % '
-     'de humedad, F_KIT_08_APERTURA) y marcha adelante: la cobertura entra por un '
-     'extremo y el bombon acabado sale por el otro sin cruzarse con ella.'),
-    ('Camara de chocolate', 6.0, 'supuesto',
-     'Zona propia y climatizada a 15-18 grados C con 50-60 % de humedad '
-     '(F_KIT_01_APERTURA). No es una nevera: el chocolate acabado NO va a 4 grados C. '
-     'Dentro de ella, o al lado, la nevera de rellenos y ganaches a 0-4 grados C.'),
-    ('Almacen de cobertura y materias primas', 8.0, 'supuesto',
-     'La cobertura llega en cajas de 5 a 25 kg y es el inmovilizado mas grande del '
-     'obrador: el libro 3 calcula cuantas semanas de stock caben aqui. En oscuridad '
-     'y lejos de olores fuertes: el cacao los absorbe (F_KIT_MOLDEADO).'),
+     'La zona que manda sobre el local: aquí van la atemperadora, la mesa de mármol '  # LN-OK
+     'o granito, la enrobadora y los moldes. Clima propio (18-20 °C y 50-60 % '
+     'de humedad, ' + F_KIT_08_APERTURA + ') y marcha adelante: la cobertura entra '
+     'por un extremo y el bombón acabado sale por el otro sin cruzarse con ella.'),
+    ('Cámara de chocolate', 6.0, 'supuesto',
+     'Zona propia y climatizada a 15-18 °C con 50-60 % de humedad ('
+     + F_KIT_01_APERTURA + '). No es una nevera: el chocolate acabado NO va a 4 °C. '
+     'Dentro de ella, o al lado, la nevera de rellenos y ganaches a 0-4 °C.'),
+    ('Almacén de cobertura y materias primas', 8.0, 'supuesto',
+     'La cobertura llega en cajas de 5 a 25 kg y es el inmovilizado más grande del '
+     'obrador: el libro 3 calcula cuántas semanas de stock caben aquí. En oscuridad '
+     'y lejos de olores fuertes: el cacao los absorbe (' + F_KIT_MOLDEADO + ').'),
     ('Envasado y packaging', 5.0, 'supuesto',
-     'Mesa de montaje de cajas, etiquetadora y almacen de packaging de campana. Es '
+     'Mesa de montaje de cajas, etiquetadora y almacén de packaging de campaña. Es '
      'la zona que se desborda en Navidad y la que nadie dibuja en el plano.'),
     ('Tienda y mostrador', 22.0, 'supuesto',
-     'Sala a 20-22 grados C (F_KIT_01_APERTURA) con la vitrina de bomboneria a '
-     '16-18 grados C. Los dos climas son distintos y conviven en la misma sala: es '
+     'Sala a 20-22 °C (' + F_KIT_01_APERTURA + ') con la vitrina de bombonería a '
+     '16-18 °C. Los dos climas son distintos y conviven en la misma sala: es '
      'el motivo de que la vitrina lleve su propio control.'),
     ('Aseos y vestuario', 8.0, 'supuesto',
-     'Vestuario de personal separado del aseo de publico. Si no caben los dos, el '
+     'Vestuario de personal separado del aseo de público. Si no caben los dos, el '
      'local no sirve: es una de las eliminatorias de la ficha de visita.'),
 ]
 
-BLOQUES_M2 = {'Produccion': 45.0, 'Tienda': 22.0, 'Servicios': 8.0}
+BLOQUES_M2 = {'Producción': 45.0, 'Tienda': 22.0, 'Servicios': 8.0}
 
 #: A que bloque pertenece cada zona (para el resumen de «Zonas y m2» del libro 1).
 ZONA_A_BLOQUE = {
-    'Obrador de templado y moldeado': 'Produccion',
-    'Camara de chocolate': 'Produccion',
-    'Almacen de cobertura y materias primas': 'Produccion',
-    'Envasado y packaging': 'Produccion',
+    'Obrador de templado y moldeado': 'Producción',
+    'Cámara de chocolate': 'Producción',
+    'Almacén de cobertura y materias primas': 'Producción',
+    'Envasado y packaging': 'Producción',
     'Tienda y mostrador': 'Tienda',
     'Aseos y vestuario': 'Servicios',
 }
@@ -261,46 +270,46 @@ CLIMA = {
         't_min': 18.0, 't_max': 20.0, 'hr_min': 50.0, 'hr_max': 60.0,
         'fuente': F_KIT_08_APERTURA,
         'literal': ('Verificar la temperatura y la humedad del obrador: objetivo '
-                    '18-20 grados C y 50-60 %'),
-        'nota': ('Es la tarea 17 de la hoja, y es el objetivo mas restrictivo que '
-                 'publica el kit: es el que manda. `CHS-44` publica 18-22 grados C '
+                    '18-20 °C y 50-60 %'),
+        'nota': ('Es la tarea 17 de la hoja, y es el objetivo más restrictivo que '
+                 'publica el kit: es el que manda. `CHS-44` publica 18-22 °C '
                  'como rango de trabajo de un tercero, y entra en la prosa del '
                  'cap. 07 como tal, nunca como objetivo del juego de datos.')},
     'camara': {
-        'concepto': 'Camara de conservacion de chocolate',
+        'concepto': 'Cámara de conservación de chocolate',
         't_min': 15.0, 't_max': 18.0, 'hr_min': 50.0, 'hr_max': 60.0,
         'fuente': F_KIT_01_APERTURA,
-        'literal': ('Comprobar que la camara de conservacion ha funcionado toda la '
+        'literal': ('Comprobar que la cámara de conservación ha funcionado toda la '
                     'noche (sin cortes ni alarmas) y registrar la temperatura: '
-                    'objetivo 15-18 grados C y 50-60 % de humedad'),
-        'nota': 'Tarea 2. Es la misma ventana en la que el kit declara las vidas utiles.'},
+                    'objetivo 15-18 °C y 50-60 % de humedad'),
+        'nota': 'Tarea 2. Es la misma ventana en la que el kit declara las vidas útiles.'},
     'nevera_rellenos': {
         'concepto': 'Nevera de rellenos y ganaches',
         't_min': 0.0, 't_max': 4.0, 'hr_min': None, 'hr_max': None,
         'fuente': F_KIT_01_APERTURA,
         'literal': ('Comprobar que la nevera de rellenos y ganaches ha funcionado '
-                    'toda la noche y registrar la temperatura: objetivo 0-4 grados C'),
-        'nota': ('Tarea 3. Es la nevera del RELLENO, no la del bombon acabado: el '
-                 'chocolate terminado no va a 4 grados C, condensa.')},
+                    'toda la noche y registrar la temperatura: objetivo 0-4 °C'),
+        'nota': ('Tarea 3. Es la nevera del RELLENO, no la del bombón acabado: el '
+                 'chocolate terminado no va a 4 °C, condensa.')},
     'sala_tienda': {
         'concepto': 'Sala de tienda',
         't_min': 20.0, 't_max': 22.0, 'hr_min': None, 'hr_max': None,
         'fuente': F_KIT_01_APERTURA,
-        'literal': 'Encender aire acondicionado - mantener sala 20-22 grados C',
-        'nota': ('Tarea 6. Confundir la temperatura de la SALA con la de la CAMARA '
-                 'es uno de los errores de metodo que la SPEC prohibe: son dos cosas '
+        'literal': 'Encender aire acondicionado - mantener sala 20-22 °C',
+        'nota': ('Tarea 6. Confundir la temperatura de la SALA con la de la CÁMARA '
+                 'es uno de los errores de método que la SPEC prohíbe: son dos cosas '
                  'distintas y conviven en el mismo local.')},
     'vitrina': {
-        'concepto': 'Vitrina de bomboneria',
+        'concepto': 'Vitrina de bombonería',
         't_min': 16.0, 't_max': 18.0, 'hr_min': None, 'hr_max': 55.0,
         'fuente': F_KIT_08_APERTURA,
         'literal': ('Comprobar que las vitrinas temperadas han alcanzado 16-18 '        # LN-OK
-                    'grados C y menos del 55 % de humedad antes de montar el genero'),  # LN-OK
+                    '°C y menos del 55 % de humedad antes de montar el género'),  # LN-OK
         'nota': ('Tarea 16. Es el OBJETIVO OPERATIVO, lo que se comprueba cada '
-                 'manana. `CHS-43` publica ademas el RANGO DE TRABAJO de un equipo '
-                 'real (+14/+17 grados C, Docriluc WB-6-6-R, base SIN IVA declarada), '
-                 'que es otra cosa. El semaforo del libro 5 se alimenta del rango que '
-                 'el lector teclea y solo avisa por encima de 20 grados C.')},
+                 'mañana. `CHS-43` publica además el RANGO DE TRABAJO de un equipo '
+                 'real (+14/+17 °C, Docriluc WB-6-6-R, base SIN IVA declarada), '
+                 'que es otra cosa. El semáforo del libro 5 se alimenta del rango que '
+                 'el lector teclea y solo avisa por encima de 20 °C.')},
 }
 
 #: El unico umbral que dispara el semaforo de vitrina: el punto en el que la manteca
@@ -310,34 +319,34 @@ VITRINA_UMBRAL_ALARMA_C = 20.0
 FUENTE_VITRINA_UMBRAL = F_KIT_01_APERTURA
 
 NEGOCIO = {
-    'nombre': 'Bomboneria «La Almendra»',
+    'nombre': 'Bombonería «La Almendra»',
     'nombre_corto': 'La Almendra',
     'fuente_nombre': 'supuesto',
     'nota_nombre': ('Supuesto declarado, neutro y sin marca real; paralelo a «La '
                     'Encina» (Food Cost y Manual del Manager) y «La Clara» '
-                    '(Pasteleria). D51: el registro de marcas NO fue consultable el '
+                    '(Pastelería). D51: el registro de marcas NO fue consultable el '
                     '12-09-2026 desde el Mac (TMview y EUIPO caidos para consulta '
-                    'automatizada) y la busqueda web no devolvio ningun negocio vivo '
-                    'de chocolate con ese nombre. Ver el docstring del modulo.'),
+                    'automatizada) y la busqueda web no devolvió ningún negocio vivo '
+                    'de chocolate con ese nombre. Ver el docstring del módulo.'),
 
-    'formato': ('Obrador propio mas tienda a calle, en una ciudad media espanola SIN '
+    'formato': ('Obrador propio mas tienda a calle, en una ciudad media española SIN '
                 'nombre propio: el lector la sustituye por la suya'),
     'fuente_formato': 'CHS-03',
-    'nota_formato': ('`CHS-03` describe el sub-concepto «bomboneria/chocolateria '
-                     'artesana con obrador + tienda»: 60-100 m2, 1-2 empleados. Es '  # LN-OK
-                     'el eje del producto (D1). La chocolateria de taza y churros es '
+    'nota_formato': ('`CHS-03` describe el sub-concepto «bombonería/chocolatería '
+                     'artesana con obrador + tienda»: 60-100 m², 1-2 empleados. Es '  # LN-OK
+                     'el eje del producto (D1). La chocolatería de taza y churros es '
                      'OTRO negocio y entra como columna de escenario (`VARIANTES`).'),
 
     'm2_total': 75.0,
     'fuente_m2': 'supuesto',
     'nota_m2': ('Supuesto declarado, elegido por convergencia de cuatro fuentes CON '
-                'SU FORMATO DICHO: `CHS-03` (bomboneria artesana, 60-100 m2), '
-                '`CHS-38a` (pasteleria-bomboneria con obrador, 90 m2 y 26.000 euros '
-                'de traspaso: el comparable mas cercano del censo), `CHS-58` (minimo '
-                'de franquicia, 55 m2) y, como referencia de OTRO formato, los '
-                'traspasos de churreria-chocolateria `CHS-37a` (75 m2) y `CHS-37b` '
-                '(74 m2). Se elige 75 por estar dentro de `CHS-03` y por debajo de '
-                '`CHS-38a`. El reparto por zona tambien es supuesto.'),
+                'SU FORMATO DICHO: `CHS-03` (bombonería artesana, 60-100 m²), '
+                '`CHS-38a` (pasteleria-bomboneria con obrador, 90 m² y 26.000 euros '
+                'de traspaso: el comparable mas cercano del censo), `CHS-58` (mínimo '
+                'de franquicia, 55 m²) y, como referencia de OTRO formato, los '
+                'traspasos de churreria-chocolateria `CHS-37a` (75 m²) y `CHS-37b` '
+                '(74 m²). Se elige 75 por estar dentro de `CHS-03` y por debajo de '
+                '`CHS-38a`. El reparto por zona también es supuesto.'),
     'zonas': ZONAS,
     'bloques_m2': BLOQUES_M2,
 
@@ -346,20 +355,20 @@ NEGOCIO = {
     'potencia_instalada_kw': 28.0,
     'fuente_potencia_instalada': 'supuesto',
     'nota_potencia': ('Supuesto. Un obrador de chocolate NO tiene hornos: lo que '
-                      'consume es el frio (camara, nevera de rellenos y vitrina, 24 '
-                      'horas), la climatizacion con deshumidificacion y la '
+                      'consume es el frío (cámara, nevera de rellenos y vitrina, 24 '
+                      'horas), la climatización con deshumidificación y la '
                       'atemperadora. La potencia a contratar la fija el proyecto '
-                      'electrico, no una tabla: el libro 1 la pide en celda verde.'),
+                      'eléctrico, no una tabla: el libro 1 la pide en celda verde.'),
 
     # Clima: la partida que nadie presupuesta y que aqui tiene bloque de CAPEX propio.
     'clima': CLIMA,
     't_exterior_agosto_c': 36.0,
     'fuente_t_exterior': 'supuesto',
-    'nota_t_exterior': ('Supuesto de ciudad media espanola de interior en agosto. Es '
+    'nota_t_exterior': ('Supuesto de ciudad media española de interior en agosto. Es '
                         'una CELDA VERDE del libro 1: el lector pone la de su ciudad, '
-                        'y con ella el semaforo compara la temperatura objetivo del '
-                        'obrador con la potencia frigorifica que le OFREZCA EL '
-                        'INSTALADOR. El libro NO calcula carga termica (D33): no hay '
+                        'y con ella el semáforo compara la temperatura objetivo del '
+                        'obrador con la potencia frigorífica que le OFREZCA EL '
+                        'INSTALADOR. El libro NO calcula carga térmica (D33): no hay '
                         'un solo coeficiente con fuente.'),
     'potencia_frigorifica_ofertada_kw': 9.0,
     'fuente_potencia_frigorifica': 'supuesto',
@@ -370,11 +379,11 @@ NEGOCIO = {
     'dias_apertura_semana': 6,
     'dias_apertura_anio': 304,
     'fuente_dias_apertura': 'supuesto',
-    'nota_dias_apertura': ('6 dias por semana x 52 semanas = 312, menos 8 dias de '
+    'nota_dias_apertura': ('6 días por semana x 52 semanas = 312, menos 8 días de '
                            'cierre por festivos = 304. En agosto la TIENDA NO CIERRA: '
                            'lo que para es el obrador (D36, y el literal del kit '
                            'dice «la tienda abre para el turista aunque el obrador '
-                           'pare»). Una bomboneria de menos de 300 m2 tiene libertad '
+                           'pare»). Una bombonería de menos de 300 m² tiene libertad '
                            'horaria por el art. 5.2 de la Ley 1/2004, no por el 5.1 '
                            '(`CHN-77`).'),
 
@@ -393,9 +402,9 @@ NEGOCIO = {
     'renta_mensual': 1300.0,
     'fuente_renta': 'supuesto',
     'nota_renta': ('Supuesto para una ciudad media. La renta observada en los ocho '
-                   'traspasos verificados va de 910 euros/mes (`CHS-37b`, 74 m2 en '
-                   'Madrid-Vallecas) a 2.200 euros/mes (`CHS-38c`, 180 m2 en '
-                   'Barcelona); aqui se toma la parte baja porque ninguna de esas '
+                   'traspasos verificados va de 910 euros/mes (`CHS-37b`, 74 m² en '
+                   'Madrid-Vallecas) a 2.200 euros/mes (`CHS-38c`, 180 m² en '
+                   'Barcelona); aquí se toma la parte baja porque ninguna de esas '
                    'dos ciudades es una ciudad media.'),
     'meses_fianza': 2,
     'fuente_fianza': 'supuesto',
@@ -414,22 +423,26 @@ NEGOCIO = {
 #: Queda PROHIBIDA cualquier otra tabla salarial.
 CONVENIO = [
     # (n, grupo profesional, euros/mes, euros/ano, areas funcionales, puestos que cita)
-    (1, 'Tecnicos y titulados superiores', 1733.88, 26008.20,
-     ('ADMINISTRACION',), ''),
-    (2, 'Direccion, jefes y encargados', 1427.89, 21418.35,
-     ('OBRADOR', 'TIENDA', 'ADMINISTRACION'), 'maestro de obrador, encargado'),
+    (1, 'Técnicos y titulados superiores', 1733.88, 26008.20,
+     ('ADMINISTRACIÓN',), ''),
+    (2, 'Dirección, jefes y encargados', 1427.89, 21418.35,
+     ('OBRADOR', 'TIENDA', 'ADMINISTRACIÓN'), 'maestro de obrador, encargado'),
     (3, 'Personal especialista', 1376.91, 20653.65,
-     ('OBRADOR', 'TIENDA'), 'especialista de produccion, encargado de seccion'),
+     ('OBRADOR', 'TIENDA'), 'especialista de producción, encargado de sección'),
     (4, 'Personal cualificado', 1249.42, 18741.30,
-     ('OBRADOR', 'TIENDA'), 'personal cualificado de produccion y de envasado, dependiente'),
-    (5, 'Personal de apoyo', 1192.42, 17886.30,
-     ('OBRADOR', 'TIENDA'), 'ayudante de produccion, ayudante de comercio'),
-    (6, 'Personal de ayuda en servicios auxiliares', 1192.42, 17886.30,
-     ('OBRADOR', 'TIENDA'), 'peon, limpiador, almacenero'),
+     ('OBRADOR', 'TIENDA'), 'personal cualificado de producción y de envasado, dependiente'),
+    # UN SOLO grupo, no dos: el convenio de Madrid publica CINCO grupos y el
+    # quinto es «personal de apoyo y ayuda en servicios auxiliares» a
+    # 1.192,42 euros (`CHN-65b`). Hasta el 19-09-2026 estaba partido en dos
+    # filas con el mismo importe, y eso es inventar un grupo de convenio en la
+    # unica tabla salarial que publica el pack.
+    (5, 'Personal de apoyo y ayuda en servicios auxiliares', 1192.42, 17886.30,
+     ('OBRADOR', 'TIENDA'),
+     'ayudante de producción, ayudante de comercio, peón, limpiador, almacenero'),
 ]
 FUENTE_CONVENIO = 'CHN-65b'
 CONVENIO_CODIGO = '28001025011981'
-CONVENIO_DENOMINACION = 'CONFITERIAS PASTELERIAS Y REPOSTERIA (COMERCIO E INDUSTRIA)'
+CONVENIO_DENOMINACION = 'CONFITERÍAS PASTELERÍAS Y REPOSTERÍA (COMERCIO E INDUSTRIA)'
 FUENTE_CONVENIO_DENOMINACION = 'CHN-65c'
 CONVENIO_AUTORIDAD = 'Madrid'
 CONVENIO_VIGENCIA = '01/01/2024 a 31/12/2026'
@@ -437,13 +450,13 @@ CONVENIO_REVISION_SALARIAL = '28/02/2026'
 CONVENIO_PAGAS = 15
 CONVENIO_ES_EJEMPLO = True
 NOTA_CONVENIO = (
-    'TABLA DE EJEMPLO, en celda verde y sustituible. El codigo y la denominacion '
-    'son los oficiales del REGCON (`CHN-65c`, fila literal), y las cuantias de 2026 '
-    'a 15 pagas son las de `CHN-65b`. «BOLLERIAS» NO aparece en la denominacion del '
-    'registro: «Confiteria, Pasteleria, Bolleria y Reposteria» es texto del art. 2 '
+    'TABLA DE EJEMPLO, en celda verde y sustituible. El código y la denominación '
+    'son los oficiales del REGCON (`CHN-65c`, fila literal), y las cuantías de 2026 '
+    'a 15 pagas son las de `CHN-65b`. «BOLLERIAS» NO aparece en la denominación del '
+    'registro: «Confitería, Pastelería, Bollería y Repostería» es texto del art. 2 '
     'del articulado (`CHN-65`), y quien busque por ese nombre en REGCON no encuentra '
-    'el convenio. Es justo lo que ensena el cap. 17. Aviso de `CHN-65`: el despacho '
-    'de bombones esta dentro del ambito sin condiciones; la FABRICACION va '
+    'el convenio. Es justo lo que enseña el cap. 17. Aviso de `CHN-65`: el despacho '
+    'de bombones esta dentro del ámbito sin condiciones; la FABRICACION va '
     'condicionada. Las tablas CADUCAN el 31-12-2026.')
 
 #: Los cuatro convenios de sector de ambito igual o superior a la provincia que SI
@@ -484,15 +497,15 @@ NOTA_SALARIOS_MERCADO = (
 PLANTILLA = [
     # (id, perfil, jornada, grupo de convenio, area, horas/semana, turno)
     ('P1', 'Encargado',    1.0, 2, 'OBRADOR', 40, 'Partido (08:00-13:00 y 17:00-20:00)'),
-    ('P2', 'Chocolatero',  1.0, 3, 'OBRADOR', 40, 'Manana (07:00-15:00)'),
+    ('P2', 'Chocolatero',  1.0, 3, 'OBRADOR', 40, 'Mañana (07:00-15:00)'),
     ('P3', 'Dependiente',  0.5, 4, 'TIENDA',  20, 'Tarde (16:30-20:30)'),
 ]
 FUENTE_PLANTILLA = 'CHS-70 + supuesto'
 NOTA_PLANTILLA = (
-    'El Encargado ES el titular, y por eso su retribucion va en la nomina y no como '
-    'renglon aparte de «retribucion del propietario»: lo que si va aparte es su '
-    'cuota de autonomos. Las jornadas (1,0 + 1,0 + 0,5 = 2,5) son supuesto '
-    'declarado. «Maestro chocolatero», «bombonero» y «oficial» estan PROHIBIDOS '     # LN-OK
+    'El Encargado ES el titular, y por eso su retribución va en la nomina y no como '
+    'renglón aparte de «retribución del propietario»: lo que si va aparte es su '
+    'cuota de autónomos. Las jornadas (1,0 + 1,0 + 0,5 = 2,5) son supuesto '
+    'declarado. «Maestro chocolatero», «bombonero» y «oficial» están PROHIBIDOS '     # LN-OK
     'como nombre de perfil: no existen en el kit.')
 
 
@@ -508,29 +521,29 @@ PARAMS = {
     'pagas_convenio': (15, 'CHN-65b',
                        'El convenio de Madrid paga 15, no 14: cambia el coste mes a mes.'),
     'ss_empresa': (0.33, 'motor.PARAMETROS[ss_empresa]',
-                   'Cotizacion empresarial aproximada sobre el bruto (contingencias '
-                   'comunes, desempleo, FOGASA y formacion). Es el mismo parametro '
+                   'Cotización empresarial aproximada sobre el bruto (contingencias '
+                   'comunes, desempleo, FOGASA y formación). Es el mismo parámetro '
                    'que usa el resto de la familia. Ajustala a tu convenio y a tus '
                    'contratos.'),
     'smi_mensual': (1221.0, 'CHN-67',
-                    'RD del SMI 2026: 40,70 euros/dia o 1.221 euros/mes. Caduca el '
-                    '31-12-2026, asi que vive en el ANEXO y en celda verde, nunca '
+                    'RD del SMI 2026: 40,70 euros/día o 1.221 euros/mes. Caduca el '
+                    '31-12-2026, así que vive en el ANEXO y en celda verde, nunca '
                     'cosido en la prosa.'),
     'smi_anual': (17094.0, 'CHN-67 + motor.PARAMETROS[smi_anual]',
-                  'Cuantia ANUAL de referencia. El real decreto NO dice «14 pagas»: '
-                  'multiplicar por 14 es aritmetica nuestra. En una bomboneria manda '
+                  'Cuantía ANUAL de referencia. El real decreto NO dice «14 pagas»: '
+                  'multiplicar por 14 es aritmética nuestra. En una bombonería manda '
                   'el convenio, y el grupo mas bajo de la tabla de Madrid '
-                  '(17.886,30 euros/ano) ya lo supera.'),
+                  '(17.886,30 euros/año) ya lo supera.'),
     'horas_semana_jornada_completa': (40, 'supuesto',
                                       'La jornada anual del convenio de Madrid NO se '
                                       'ha verificado: 40 h/semana es el supuesto de '
                                       'trabajo.'),
     'horas_anuales_contrato': (1780, 'supuesto',
-                               '40 h x 52 semanas = 2.080, menos 30 dias naturales '
+                               '40 h x 52 semanas = 2.080, menos 30 días naturales '
                                'de vacaciones y los festivos del calendario laboral.'),
     'ratio_horas_productivas': (0.85, 'supuesto',
                                 'Parte de la jornada que se pasa a pie de mesa. El '
-                                '15 % restante es recepcion, limpieza, formacion y '
+                                '15 % restante es recepción, limpieza, formación y '
                                 'reuniones.'),
 
     # --- IVA (`CHN-71`, `CHN-71b`, `CHN-71c`; verificado el 12-09-2026) ---
@@ -541,17 +554,17 @@ PARAMS = {
                      'esta entre las dos exclusiones del 10 % (bebidas alcoholicas y '
                      'refrescantes).'),
     'iva_taza_servida': (0.10, 'CHN-71c',
-                         'La taza servida en sala es prestacion de servicio de '
-                         'hosteleria, no entrega de un bien. Va al 10 % por el '
+                         'La taza servida en sala es prestación de servicio de '
+                         'hostelería, no entrega de un bien. Va al 10 % por el '
                          'art. 91.Uno.2.2.o.'),
     'iva_taller': (None, 'CHN-71b',
-                   'SIN CIFRA A PROPOSITO (D42e). Lo que SI esta cerrado: un taller '
-                   'de bomboneria NO esta exento de IVA, porque el art. 20.Uno.10.o '
-                   'excluye las clases «para cuya realizacion sea necesario darse de '
+                   'SIN CIFRA A PROPÓSITO (D42e). Lo que SI esta cerrado: un taller '
+                   'de bombonería NO esta exento de IVA, porque el art. 20.Uno.10.o '
+                   'excluye las clases «para cuya realización sea necesario darse de '
                    'alta en las tarifas de actividades empresariales o artisticas '
                    'del IAE». Lo que NO esta cerrado es el TIPO: el art. 91 no '
-                   'nombra los talleres. Va en celda verde y la guia no publica '
-                   'ningun tipo.'),
+                   'nombra los talleres. Va en celda verde y la guía no publica '
+                   'ningún tipo.'),
     'iva_equipamiento': (0.21, 'art. 90.Uno de la Ley 37/1992',
                          'Tipo general. Sin la columna «lleva IVA» el CAPEX sale un '
                          '21 % desviado (regla 3 de §2.3).'),
@@ -560,72 +573,72 @@ PARAMS = {
 
     # --- margen: UNA SOLA REGLA -------------------------------------------
     'food_cost_objetivo': (0.30, 'supuesto',
-                           'REGLA UNICA de la casa, y es SUPUESTO: no existe dato '
-                           'publico de food cost de bomboneria. '
+                           'REGLA ÚNICA de la casa, y es SUPUESTO: no existe dato '
+                           'publico de food cost de bombonería. '
                            '`margen_bruto_objetivo()` deriva el margen sobre PVP, '
                            'que con este food cost es el 70 %. El libro 4 pide UNO de '
-                           'los dos numeros y calcula el otro: margen bruto y food '
+                           'los dos números y calcula el otro: margen bruto y food '
                            'cost son la misma regla dicha dos veces, y publicarlos '
-                           'como dos reglas es un error de metodo prohibido. '
+                           'como dos reglas es un error de método prohibido. '
                            'Se calcula SIEMPRE sobre base imponible en los DOS lados '
                            'del cociente (regla 3 de §2.3).'),
     'packaging_pct_coste': (0.12, 'supuesto',
                             'Peso del packaging sobre el coste total de la pieza. En '
-                            'bomboneria pesa mas que en pasteleria: la caja ES el '
+                            'bombonería pesa mas que en pastelería: la caja ES el '
                             'producto en las campanas de regalo. Supuesto.'),
 
     # --- comercial (todo supuesto; `N-13` prohibe el ticket medio de chocolateria) ---
     'tickets_dia_crucero': (67, 'supuesto',
-                            'Clientes por dia en velocidad de crucero. NO es un dato '
-                            'del sector: `N-13` prohibe publicar un ticket medio de '
-                            'chocolateria o un reparto mensual de ventas como dato, '
-                            'porque no existe dato publico. La guia ensena a medirlo '
+                            'Clientes por día en velocidad de crucero. NO es un dato '
+                            'del sector: `N-13` prohíbe publicar un ticket medio de '
+                            'chocolatería o un reparto mensual de ventas como dato, '
+                            'porque no existe dato publico. La guía enseña a medirlo '
                             'con el TPV en dos semanas. Esta calibrado para que el '
-                            'margen neto del ano de crucero caiga entre el 9 % y el '
+                            'margen neto del año de crucero caiga entre el 9 % y el '
                             '11 %: por encima, el caso se lee como optimista y un '
-                            'refutador lo tumba con razon. Es la UNICA palanca que se '
+                            'refutador lo tumba con razón. Es la ÚNICA palanca que se '
                             'toca para mover el margen; los costes no se maquillan.'),
     'piezas_por_ticket': (1.4, 'supuesto',
-                          'De aqui sale el ticket medio, que NO se teclea: se calcula '
+                          'De aquí sale el ticket medio, que NO se teclea: se calcula '
                           'como PVP medio ponderado de la carta x piezas por ticket. '
-                          'En bomboneria es BAJO -1,4- porque la unidad de venta real '
+                          'En bombonería es BAJO -1,4- porque la unidad de venta real '
                           'es la caja, no la pieza: quien entra a por un regalo se '
                           'lleva UNA caja de 20 euros, no ocho bombones sueltos.'),
 
     # --- fondo de maniobra: vive SOLO en el libro 7 (R4-A1) ---------------
     'meses_colchon_fondo_maniobra': (6, 'supuesto',
                                      'Meses de gastos fijos que hay que tener en caja '
-                                     'el dia que abres. PARAMETRO UNICO, y vive en el '
-                                     'LIBRO 7: alli estan los gastos fijos con los que '
+                                     'el día que abres. PARÁMETRO ÚNICO, y vive en el '
+                                     'LIBRO 7: allí están los gastos fijos con los que '
                                      'se multiplica. El libro 2 NO lo pide -si lo '
                                      'pidiera, el fondo se calcularia dos veces y los '
-                                     'dos libros publicarian dos inversiones totales '
-                                     'distintas, que es el defecto ALTO que Pasteleria '
+                                     'dos libros publicarían dos inversiones totales '
+                                     'distintas, que es el defecto ALTO que Pastelería '
                                      'pago-: recibe el fondo YA CALCULADO por celda '
                                      'verde mas fila de cuadre (cruce 2 <- 7 de '
                                      '`CRUCES`).'),
     'anios_amortizacion': (10, 'supuesto',
-                           'Vida util contable del inmovilizado amortizable. Sin '
-                           'amortizacion, la rentabilidad publicada es mentira: la '
+                           'Vida útil contable del inmovilizado amortizable. Sin '
+                           'amortización, la rentabilidad publicada es mentira: la '
                            'atemperadora se gasta.'),
     'anio_crucero': (2, 'supuesto',
-                     'El ano 1 va en rampa y con carencia de principal, asi que la '
-                     'foto «de un mes normal» es la del ano 2. Lo usan los gastos '
+                     'El año 1 va en rampa y con carencia de principal, así que la '
+                     'foto «de un mes normal» es la del año 2. Lo usan los gastos '
                      'fijos y, a traves suyo, el fondo de maniobra.'),
     'horizonte_comparacion_anios': (5, 'supuesto',
-                                    'Horizonte de la comparacion «traspaso vs obra '
+                                    'Horizonte de la comparación «traspaso vs obra '
                                     'nueva» del libro 2.'),
 }
 
 
 def P(clave):
-    """Valor de un parametro. `PARAMS[clave]` es (valor, fuente, nota)."""
+    """Valor de un parámetro. `PARAMS[clave]` es (valor, fuente, nota)."""
     return PARAMS[clave][0]
 
 
 def margen_bruto_objetivo():
-    """REGLA UNICA. El margen bruto se DERIVA del food cost objetivo; nunca se
-    guardan los dos numeros por separado."""
+    """REGLA ÚNICA. El margen bruto se DERIVA del food cost objetivo; nunca se
+    guardan los dos números por separado."""
     return 1.0 - P('food_cost_objetivo')
 
 
@@ -679,8 +692,8 @@ COBERTURAS = {
         'es_celda_unica': False,
         'materia_seca_total_pct': 70.0, 'manteca_pct': 42.0, 'desgrasada_pct': 28.0,
         'fuente_tres_magnitudes': 'supuesto',
-        'nota': ('Factor 1,5 frente a la de marca, y es la decision de '
-                 'posicionamiento mas cara del negocio (decision 5 del bonus 2). La '
+        'nota': ('Factor 1,5 frente a la de marca, y es la decisión de '
+                 'posicionamiento mas cara del negocio (decisión 5 del bonus 2). La '
                  'pagina no declara si el precio lleva IVA: se trata como base '
                  'imponible y se marca.')},
     'leche': {
@@ -710,7 +723,7 @@ COBERTURAS = {
         'fuente_tres_magnitudes': 'supuesto',
         'nota': ('SUPUESTO declarado. Ojo al chocolate blanco: NO lleva materia seca '
                  'desgrasada de cacao, y por eso el art. 6.d) del RD 1055/2003 NO le '
-                 'obliga a la mencion «cacao: X % minimo» (`CHN-07`).')},
+                 'obliga a la mención «cacao: X % mínimo» (`CHN-07`).')},
 }
 
 #: Tipo de IVA con el que se convierte el precio de la cobertura a base imponible.
@@ -719,7 +732,7 @@ IVA_COBERTURA = 0.10
 
 
 def precio_cobertura_base_imponible(clave):
-    """El precio de una cobertura llevado a BASE IMPONIBLE, que es la unica base
+    """El precio de una cobertura llevado a BASE IMPONIBLE, que es la única base
     valida para un escandallo. Es lo que copian los libros 4 y 7 (cruces 4 <- 3 y
     7 <- 3), nunca el precio «como lo trae la fuente»."""
     c = COBERTURAS[clave]
@@ -759,13 +772,13 @@ PRECIOS_COMPRA = {
     'Pasta pura de avellana': (22.50, 'kg', 'supuesto'),
     'Almendra marcona repelada': (12.40, 'kg', 'supuesto'),
     'Avellana tostada': (13.90, 'kg', 'supuesto'),
-    'Pasta de sesamo': (8.90, 'kg', 'supuesto'),
+    'Pasta de sésamo': (8.90, 'kg', 'supuesto'),
     'Barquillo triturado': (7.60, 'kg', 'supuesto'),
     'Ron anejo': (16.00, 'L', 'supuesto'),
     'Naranja confitada': (9.20, 'kg', 'supuesto'),
     'Yema de huevo pasteurizada': (4.60, 'L', 'supuesto'),
     'Manteca de cacao': (18.60, 'kg', 'supuesto'),
-    'Almidon de maiz': (2.10, 'kg', 'supuesto'),
+    'Almidón de maíz': (2.10, 'kg', 'supuesto'),
     'Leche en polvo desnatada': (6.40, 'kg', 'supuesto'),
     'Cacao en polvo desgrasado': (11.50, 'kg', 'supuesto'),
     'Sal': (0.90, 'kg', 'supuesto'),
@@ -783,7 +796,7 @@ COBERTURA_DE_INGREDIENTE = {
 
 def precio_compra(ingrediente):
     """(precio sin IVA, unidad de compra, fuente). Las coberturas no guardan su
-    precio aqui: lo sirve `COBERTURAS`, que es la celda unica."""
+    precio aquí: lo sirve `COBERTURAS`, que es la celda única."""
     precio, unidad, fuente = PRECIOS_COMPRA[ingrediente]
     if precio is None:
         precio = precio_cobertura_base_imponible(COBERTURA_DE_INGREDIENTE[ingrediente])
@@ -810,35 +823,35 @@ RELLENOS = {
         'aw': 0.88, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de ganache con nata fresca',
         'nota': ('La ganache que obliga a decidir el modelo de negocio: agua '
-                 'disponible alta, y el kit le da 10-15 dias. Es la que manda en la '
-                 'decision 3 del bonus 2.')},
+                 'disponible alta, y el kit le da 10-15 días. Es la que manda en la '
+                 'decisión 3 del bonus 2.')},
     'ganache leche estabilizada': {
         'nombre': 'Ganache de chocolate con leche, nata UHT y sorbitol',
         'lineas': [('Nata 35 % MG UHT', 0.34), ('Cobertura con leche', 0.56),
                    ('Sorbitol', 0.06), ('Mantequilla', 0.05)],
         'aw': 0.82, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de ganache con nata UHT, sorbato o alcohol',
-        'nota': ('La misma pieza con otra formulacion: el kit le da 4-8 semanas. '
+        'nota': ('La misma pieza con otra formulación: el kit le da 4-8 semanas. '
                  'Entre esta y la anterior hay un factor DE TRES A CINCO, y esa es '
-                 'una decision de modelo de negocio, no tecnica.')},
-    'praline avellana': {
+                 'una decisión de modelo de negocio, no técnica.')},
+    'praliné avellana': {
         'nombre': 'Praline de avellana',
         'lineas': [('Praline de avellana 50 %', 0.70), ('Cobertura con leche', 0.28),
                    ('Manteca de cacao', 0.04)],
         'aw': 0.42, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('«Praline» NO es un nombre comercial: el punto 10 de la parte A del '
-                 'Anexo I de la Directiva 2000/36/CE se titula «Bombon de chocolate '
-                 'o praline» (`CHN-82`), con el mismo minimo del 25 %.')},
+                 'Anexo I de la Directiva 2000/36/CE se titula «Bombón de chocolate '
+                 'o praliné» (`CHN-82`), con el mismo mínimo del 25 %.')},
     'gianduja avellana': {
         'nombre': 'Gianduja de avellana',
         'lineas': [('Pasta pura de avellana', 0.45), ('Cobertura con leche', 0.40),
                    ('Azucar', 0.17)],
         'aw': 0.38, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('La gianduja tiene su propio apartado en la norma (1.6.b.3), con '
-                 'avellanas entre 20 y 40 g por 100 g. Aqui es RELLENO de un bombon, '
-                 'asi que la denominacion de venta es la del bombon.')},
+                 'avellanas entre 20 y 40 g por 100 g. Aquí es RELLENO de un bombón, '
+                 'así que la denominación de venta es la del bombón.')},
     'trufa': {
         'nombre': 'Trufa de chocolate negro',
         'lineas': [('Nata 35 % MG UHT', 0.36), ('Cobertura negra', 0.54),
@@ -846,37 +859,37 @@ RELLENOS = {
         'aw': 0.80, 'fuente_aw': 'supuesto',
         'familia_kit': 'Trufas y rocas recubiertas',
         'nota': ('«Trufa» no aparece ni una vez en el RD 1055/2003 (`CHN-03b`): es un '
-                 'TIPO de bombon, no una categoria legal ni un sinonimo de bombon.')},
+                 'TIPO de bombón, no una categoría legal ni un sinonimo de bombón.')},
     'licor': {
         'nombre': 'Licor cristalizado de ron',
         'lineas': [('Ron anejo', 0.22), ('Azucar', 0.72), ('Glucosa', 0.06)],
         'aw': 0.72, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de licor y cristalizados',
-        'nota': ('El alcohol baja la actividad de agua. Vigilar la cristalizacion del '
-                 'azucar en la cascara: revienta y gotea (nota literal del kit).')},
+        'nota': ('El alcohol baja la actividad de agua. Vigilar la cristalización del '
+                 'azúcar en la cáscara: revienta y gotea (nota literal del kit).')},
     'caramelo salado': {
         'nombre': 'Caramelo salado',
         'lineas': [('Azucar', 0.36), ('Nata 35 % MG UHT', 0.28), ('Mantequilla', 0.22),
                    ('Glucosa', 0.16), ('Sal', 0.008)],
         'aw': 0.68, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de ganache con nata UHT, sorbato o alcohol',
-        'nota': 'Azucar alto y agua baja: aguanta mas que una ganache fresca.'},
-    'praline cacahuete': {
+        'nota': 'Azúcar alto y agua baja: aguanta mas que una ganache fresca.'},
+    'praliné cacahuete': {
         'nombre': 'Praline de cacahuete',
         'lineas': [('Praline de cacahuete 50 %', 0.72), ('Cobertura con leche', 0.26),
                    ('Manteca de cacao', 0.04)],
         'aw': 0.40, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('EL CACAHUETE ES EL PUNTO 5 DEL ANEXO II y NO es un fruto de '
-                 'cascara (`CHN-34b`): esta referencia se etiqueta con su propio '
-                 'alergeno, no dentro de «frutos secos».')},
-    'crujiente sesamo': {
-        'nombre': 'Crujiente de sesamo y barquillo',
-        'lineas': [('Pasta de sesamo', 0.34), ('Barquillo triturado', 0.22),
+                 'cáscara (`CHN-34b`): esta referencia se etiqueta con su propio '
+                 'alérgeno, no dentro de «frutos secos».')},
+    'crujiente sésamo': {
+        'nombre': 'Crujiente de sésamo y barquillo',
+        'lineas': [('Pasta de sésamo', 0.34), ('Barquillo triturado', 0.22),
                    ('Cobertura con leche', 0.44)],
         'aw': 0.28, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Barquillos y crujientes banados',
-        'nota': ('DOS alergenos independientes en una sola pieza: granos de sesamo '
+        'familia_kit': 'Barquillos y crujientes bañados',
+        'nota': ('DOS alérgenos independientes en una sola pieza: granos de sésamo '
                  '(punto 11) y cereales con gluten del barquillo (punto 1). El kit '
                  'le da 3-4 semanas, y no por seguridad: pierde el crujiente mucho '
                  'antes.')},
@@ -884,40 +897,40 @@ RELLENOS = {
         'nombre': 'Naranja confitada',
         'lineas': [('Naranja confitada', 0.62), ('Cobertura negra', 0.38)],
         'aw': 0.65, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Frutos secos garrapinados y frutas confitadas banadas',
+        'familia_kit': 'Frutos secos garrapiñados y frutas confitadas bañadas',
         'nota': ('La fruta confitada suele llevar SULFITOS (punto 12 del Anexo II), '
-                 'que es el octavo alergeno y el que mas se olvida. Pidele a tu '
-                 'proveedor la ficha tecnica: el umbral de declaracion es 10 mg/kg.')},
-    'praline de tableta': {
+                 'que es el octavo alérgeno y el que mas se olvida. Pidele a tu '
+                 'proveedor la ficha técnica: el umbral de declaración es 10 mg/kg.')},
+    'praliné de tableta': {
         'nombre': 'Praline de avellana para tableta rellena',
         'lineas': [('Praline de avellana 50 %', 0.80), ('Cobertura con leche', 0.22)],
         'aw': 0.40, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
-        'nota': ('En una TABLETA RELLENA la denominacion es «chocolate relleno» '
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
+        'nota': ('En una TABLETA RELLENA la denominación es «chocolate relleno» '
                  '(ap. 1.10) y el exterior tiene que ser al menos el 25 % del peso '
                  'total (`CHN-04`), calculado SOBRE EL PESO TOTAL con el relleno '
                  'dentro (`CHN-10`).')},
     'masa a la taza': {
-        'nombre': 'Masa de chocolate a la taza (azucar, cacao desgrasado y almidon)',
+        'nombre': 'Masa de chocolate a la taza (azúcar, cacao desgrasado y almidón)',
         'lineas': [('Azucar', 0.62), ('Cacao en polvo desgrasado', 0.30),
-                   ('Almidon de maiz', 0.08)],
+                   ('Almidón de maíz', 0.08)],
         'aw': 0.25, 'fuente_aw': 'supuesto',
         'familia_kit': 'Tabletas y chocolate sin relleno',
-        'nota': ('NO es un relleno: es la otra mitad de la formula del chocolate a la '
-                 'taza, que NO se hace solo con cobertura. Va aqui para que el '
-                 'escandallo pueda costearla. El almidon es DE MAIZ a proposito: la '
-                 'norma admite trigo, arroz o maiz hasta el 8 %, y con el de trigo '
-                 'habria que declarar gluten.')},
+        'nota': ('NO es un relleno: es la otra mitad de la fórmula del chocolate a la '
+                 'taza, que NO se hace solo con cobertura. Va aquí para que el '
+                 'escandallo pueda costearla. El almidón es DE MAÍZ a propósito: la '
+                 'norma admite trigo, arroz o maíz hasta el 8 %, y con el de trigo '
+                 'habría que declarar gluten.')},
     'yema tostada': {
         'nombre': 'Yema tostada',
         'lineas': [('Yema de huevo pasteurizada', 0.40), ('Azucar', 0.56),
-                   ('Almidon de maiz', 0.05)],
+                   ('Almidón de maíz', 0.05)],
         'aw': 0.85, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de ganache con nata fresca',
-        'nota': ('La UNICA referencia del surtido con huevo, y va con ovoproducto '
-                 'pasteurizado de establecimiento autorizado, que es la tercera via '
-                 'del art. 9 del RD 1021/2022 (`CHN-31`). Con huevo crudo habria que '
-                 'llegar a 70 grados C durante 2 s en el centro.')},
+        'nota': ('La ÚNICA referencia del surtido con huevo, y va con ovoproducto '
+                 'pasteurizado de establecimiento autorizado, que es la tercera vía '
+                 'del art. 9 del RD 1021/2022 (`CHN-31`). Con huevo crudo habría que '
+                 'llegar a 70 °C durante 2 s en el centro.')},
 }
 
 
@@ -949,36 +962,36 @@ VIDA_UTIL_KIT = [
      'El enemigo no es el tiempo: es la humedad, la luz y los olores. Sellado y en oscuridad'),
     ('Figuras huecas y piezas macizas', '6-12 meses',
      'Igual que la tableta, pero la pieza hueca se raja con los cambios bruscos de temperatura'),
-    ('Bombones de ganache con nata fresca', '10-15 dias',
-     'Actividad de agua alta: en refrigeracion a 0-4 grados C y atemperar CERRADOS '
+    ('Bombones de ganache con nata fresca', '10-15 días',
+     'Actividad de agua alta: en refrigeración a 0-4 °C y atemperar CERRADOS '
      'antes de abrir, o condensan'),
     ('Bombones de ganache con nata UHT, sorbato o alcohol', '4-8 semanas',
      'El conservante y el alcohol bajan la actividad de agua; sin ellos no se llega '
      'ni a la mitad'),
-    ('Bombones de praline, gianduja y frutos secos', '2-4 meses',
-     'La grasa del fruto seco se enrancia y el frio no lo evita: manda la fecha, no el aspecto'),
+    ('Bombones de praliné, gianduja y frutos secos', '2-4 meses',
+     'La grasa del fruto seco se enrancia y el frío no lo evita: manda la fecha, no el aspecto'),
     ('Trufas y rocas recubiertas', '3-4 semanas',
      'Si llevan nata o mantequilla, se cuentan como ganache fresca'),
     ('Bombones de licor y cristalizados', '3-6 meses',
-     'Vigilar la cristalizacion del azucar en la cascara: revienta y gotea'),
-    ('Frutos secos garrapinados y frutas confitadas banadas', '1-3 meses',
-     'Se apelmazan con la humedad; envasado hermetico con desecante si tu obrador es humedo'),
-    ('Barquillos y crujientes banados', '3-4 semanas',
+     'Vigilar la cristalización del azúcar en la cáscara: revienta y gotea'),
+    ('Frutos secos garrapiñados y frutas confitadas bañadas', '1-3 meses',
+     'Se apelmazan con la humedad; envasado hermético con desecante si tu obrador es húmedo'),
+    ('Barquillos y crujientes bañados', '3-4 semanas',
      'Pierden el crujiente mucho antes que la seguridad: se retiran por calidad'),
     ('Chocolate acabado: NO congelar', 'Nunca',
-     'Al descongelar condensa, el agua disuelve el azucar de la superficie y deja '
-     'sugar bloom. Solo el granel de ganache admite -18 grados C 1-2 meses, '
-     'descongelado 24 h en camara y sin abrir'),
+     'Al descongelar condensa, el agua disuelve el azúcar de la superficie y deja '
+     'sugar bloom. Solo el granel de ganache admite -18 °C 1-2 meses, '
+     'descongelado 24 h en cámara y sin abrir'),
 ]
 FUENTE_VIDA_UTIL = F_KIT_MOLDEADO
 NOTA_VIDA_UTIL = (
-    'Tabla del KIT, citada por fichero y hoja, NO reescrita (D30). `CHS-56` («maximo '
-    '8 dias» sin sorbitol y «5 o 6 semanas» con el) deja de ser la fuente de los '
+    'Tabla del KIT, citada por fichero y hoja, NO reescrita (D30). `CHS-56` («máximo '
+    '8 días» sin sorbitol y «5 o 6 semanas» con el) deja de ser la fuente de los '
     'plazos y pasa a ser la cita de oficio que explica POR QUE: el agua disponible '
     'de la ganache. Y el titular no es «factor 5»: con los plazos del kit, de 10-15 '  # LN-OK
-    'dias a 4-8 semanas es 3,7 veces en el peor caso y 5,6 en el mejor, asi que la '
+    'días a 4-8 semanas es 3,7 veces en el peor caso y 5,6 en el mejor, así que la '
     'frase publicable es «entre la ganache fresca y la estabilizada hay un factor de '
-    'tres a cinco, y esa es una decision de modelo de negocio, no tecnica».')
+    'tres a cinco, y esa es una decisión de modelo de negocio, no técnica».')
 
 #: La vida util que el lector DECLARA. Vale `None` a proposito: es celda verde y la
 #: fija el operador en su APPCC (`CHN-30`). El libro 5 NUNCA la calcula.
@@ -988,14 +1001,14 @@ VIDA_UTIL_DECLARADA = None
 # ==========================================================================
 # 8. LOS OCHO ALERGENOS DE UNA BOMBONERIA (`CHN-34b`)
 # ==========================================================================
-#: SON OCHO, NO CINCO. Cacahuetes (punto 5), frutos de cascara (punto 8) y granos de
-#: sesamo (punto 11) son entradas INDEPENDIENTES del Anexo II del Rgto. 1169/2011, y
+#: SON OCHO, NO CINCO. Cacahuetes (punto 5), frutos de cáscara (punto 8) y granos de
+#: sésamo (punto 11) son entradas INDEPENDIENTES del Anexo II del Rgto. 1169/2011, y
 #: falta ademas el sulfito (punto 12). Escribir «los cinco alergenos de una  # LN-OK
 #: bomboneria» esta PROHIBIDO (§5.1, prohibicion 11).  # LN-OK
 #:
 #: NOTA-PUENTE para quien ya tiene el kit de 12 euros (D53c): «si usas el Kit de
 #: Tareas Chocolateria, desglosa la celda "frutos secos" en cacahuetes, frutos de
-#: cascara y sesamo, que son entradas independientes del Anexo II». El kit publica
+#: cáscara y sésamo, que son entradas independientes del Anexo II». El kit publica
 #: hoy seis, seis y cinco en sus tres celdas de declaracion; su regeneracion a 2.1
 #: es una PROPUESTA para John y NO bloquea nada de aqui.
 ALERGENOS = (
@@ -1004,18 +1017,18 @@ ALERGENOS = (
     ('gluten', 'Cereales que contengan gluten y productos derivados', 1),
     ('soja', 'Soja y productos a base de soja', 6),
     ('cacahuetes', 'Cacahuetes y productos a base de cacahuetes', 5),
-    ('frutos_cascara', 'Frutos de cascara (almendra, avellana, nuez, anacardo...)', 8),
-    ('sesamo', 'Granos de sesamo y productos a base de granos de sesamo', 11),
+    ('frutos_cáscara', 'Frutos de cáscara (almendra, avellana, nuez, anacardo...)', 8),
+    ('sésamo', 'Granos de sésamo y productos a base de granos de sésamo', 11),
     ('sulfitos', 'Dioxido de azufre y sulfitos en concentraciones superiores a 10 mg/kg', 12),
 )
 ALERGENOS_CLAVES = tuple(a[0] for a in ALERGENOS)
 FUENTE_ALERGENOS = 'CHN-34b'
 NOTA_ALERGENOS = (
-    'La lecitina de SOJA esta en casi todas las coberturas industriales, asi que la '
+    'La lecitina de SOJA esta en casi todas las coberturas industriales, así que la '
     'columna «soja» se marca por defecto en todo lo que lleve cobertura de marca: '
-    'comprueba la ficha tecnica de la tuya antes de quitarla. Los alergenos pueden '
+    'comprueba la ficha técnica de la tuya antes de quitarla. Los alérgenos pueden '
     'ir en cartel en producto sin envasar, pero la fecha no (`CHN-89`), y el equipo '
-    'usado con un alergeno no se reutiliza sin limpiar (`CHN-33`).')
+    'usado con un alérgeno no se reutiliza sin limpiar (`CHN-33`).')
 
 
 # ==========================================================================
@@ -1024,11 +1037,11 @@ NOTA_ALERGENOS = (
 #: El NUMERO de referencias (28) es supuesto declarado. Lo que NO es supuesto es la
 #: columna de denominacion legal, que sale del RD 1055/2003 verificado el 12-09-2026,
 #: ni la de alergenos, que sale del Anexo II del Rgto. 1169/2011.
-FAMILIAS = ('Bombones de coleccion', 'Tabletas', 'Chocolate a la taza',
+FAMILIAS = ('Bombones de colección', 'Tabletas', 'Chocolate a la taza',
             'Turrones, figuras y temporada', 'Cajas y regalo')
 
 #: Cuantas referencias tiene cada familia (§3.2).
-FAMILIAS_ESPERADO = {'Bombones de coleccion': 10, 'Tabletas': 6,
+FAMILIAS_ESPERADO = {'Bombones de colección': 10, 'Tabletas': 6,
                      'Chocolate a la taza': 3, 'Turrones, figuras y temporada': 5,
                      'Cajas y regalo': 4}
 
@@ -1038,17 +1051,17 @@ VIAS_DESPACHO = ('envasado con etiqueta', 'a granel')
 VIAS_DESPACHO_TEXTO = {
     'envasado con etiqueta': (
         'Sale envasado con SU etiqueta. El art. 4.2 del RD 1021/2022 fija la '
-        'temperatura de conservacion POR LA ETIQUETA que pone quien ha producido y '
+        'temperatura de conservación POR LA ETIQUETA que pone quien ha producido y '
         'envasado: la que tu has escrito te obliga a ti. Y con etiqueta entran '
-        'ademas las doce menciones del art. 9.1 del Rgto. 1169/2011 (`CHN-35`) mas '
-        'el lote, que NO viene de ese reglamento sino del RD 1808/1991 (`CHN-36`).'),
+        'además las doce menciones del art. 9.1 del Rgto. 1169/2011 (CHN-35) mas '
+        'el lote, que NO viene de ese reglamento sino del RD 1808/1991 (CHN-36).'),
     'a granel': (
         'Se despacha a granel en la vitrina, sin etiqueta. Entonces la referencia NO '
         'es el art. 4.2: es TU sistema de autocontrol, y la temperatura y la vida '
-        'util las declaras tu y constan en el (`CHN-30`, y `CHN-87`: «chocolate», '
-        '«cacao», «bombon» y «confiteria» aparecen 0 veces en todo el RD 1021/2022). '
-        'Los alergenos pueden ir en cartel (`CHN-89`) y el lote tiene tres vias de '
-        'exencion (`CHN-36`).'),
+        'útil las declaras tu y constan en el (CHN-30, y CHN-87: «chocolate», '
+        '«cacao», «bombón» y «confitería» aparecen 0 veces en todo el RD 1021/2022). '
+        'Los alérgenos pueden ir en cartel (CHN-89) y el lote tiene tres vías de '
+        'exención (CHN-36).'),
 }
 FUENTE_VIAS_DESPACHO = 'CHN-30 + CHN-35 + CHN-36 + CHN-87 + CHN-89'
 
@@ -1070,20 +1083,20 @@ FUENTE_VIAS_DESPACHO = 'CHN-30 + CHN-35 + CHN-36 + CHN-87 + CHN-89'
 #: relleno y sin contaminar se refunde y vuelve a la cuba (`merma_recuperable_pct`);
 #: el que lleva ganache o fruta va a residuo (`merma_no_recuperable_pct`).
 def _al(*presentes):
-    """Fila de la matriz de alergenos: los que NO se nombran van a False."""
+    """Fila de la matriz de alérgenos: los que NO se nombran van a False."""
     fila = dict((k, False) for k in ALERGENOS_CLAVES)
     for k in presentes:
         if k not in fila:
-            raise KeyError('Alergeno desconocido: %r' % k)
+            raise KeyError('Alérgeno desconocido: %r' % k)
         fila[k] = True
     return fila
 
 
 CARTA = [
     # --------------------- BOMBONES DE COLECCION (10) ---------------------
-    {'id': 'BC1', 'nombre': 'Bombon de ganache de chocolate negro 70 %',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+    {'id': 'BC1', 'nombre': 'Bombón de ganache de chocolate negro 70 %',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'ganache negra fresca', 'cobertura': 'negra',
@@ -1096,11 +1109,11 @@ CARTA = [
      'nota': ('La referencia que mas margen deja y la que antes caduca. Con 5,5 g de '
               'chocolate sobre 12 g de pieza, el chocolate es el 45,8 % del peso '
               'total: cumple el 25 % del ap. 1.13 con holgura. En julio y agosto baja '
-              'a un tercio de su mix: es la primera que sale del catalogo de verano '
+              'a un tercio de su mix: es la primera que sale del catálogo de verano '
               '(literal del kit para junio: «menos ganache fresca»).')},
-    {'id': 'BC2', 'nombre': 'Bombon de ganache de leche y vainilla',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+    {'id': 'BC2', 'nombre': 'Bombón de ganache de leche y vainilla',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'ganache leche estabilizada', 'cobertura': 'leche',
@@ -1111,30 +1124,30 @@ CARTA = [
      'alergenos': _al('leche', 'soja'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('Misma pieza que BC1 con otra formulacion: nata UHT y sorbitol. El kit '
-              'le da 4-8 semanas frente a los 10-15 dias de BC1. Es LA decision de '
+     'nota': ('Misma pieza que BC1 con otra formulación: nata UHT y sorbitol. El kit '
+              'le da 4-8 semanas frente a los 10-15 días de BC1. Es LA decisión de '
               'modelo de negocio del producto, y el libro 5 la cuantifica en euros de '
-              'merma por caducidad al ano.')},
-    {'id': 'BC3', 'nombre': 'Bombon de praline de avellana',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate (praline)',
+              'merma por caducidad al año.')},
+    {'id': 'BC3', 'nombre': 'Bombón de praliné de avellana',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate (praliné)',
      'fuente_denominacion': 'CHN-03 + CHN-82',
      'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
-     'relleno': 'praline avellana', 'cobertura': 'leche',
+     'relleno': 'praliné avellana', 'cobertura': 'leche',
      'g_chocolate': 5.0, 'g_relleno': 7.0,
      'piezas_molde': 24, 'moldes_tanda': 6, 'minutos_mo_tanda': 140,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 2.10, 'iva': 0.10, 'mix_pct': 6.0, 'mix_verano_pct': 5.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('«Praline» SI significa algo legalmente: es la denominacion de venta '
-              'europea del bombon de chocolate (`CHN-82`), con el mismo minimo del '
-              '25 %. Escribir lo contrario esta prohibido (§5.1, prohibicion 7).')},
-    {'id': 'BC4', 'nombre': 'Bombon de gianduja de avellana',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+     'nota': ('«Praline» SI significa algo legalmente: es la denominación de venta '
+              'europea del bombón de chocolate (`CHN-82`), con el mismo mínimo del '
+              '25 %. Escribir lo contrario esta prohibido (§5.1, prohibición 7).')},
+    {'id': 'BC4', 'nombre': 'Bombón de gianduja de avellana',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'gianduja avellana', 'cobertura': 'leche',
@@ -1142,15 +1155,15 @@ CARTA = [
      'piezas_molde': 24, 'moldes_tanda': 5, 'minutos_mo_tanda': 130,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 2.10, 'iva': 0.10, 'mix_pct': 4.0, 'mix_verano_pct': 3.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('La gianduja tiene apartado propio en la norma (1.6.b.3), pero aqui va '
-              'DENTRO de un bombon: la denominacion de venta que manda es la del '
+     'nota': ('La gianduja tiene apartado propio en la norma (1.6.b.3), pero aquí va '
+              'DENTRO de un bombón: la denominación de venta que manda es la del '
               'producto que vendes, no la del relleno.')},
     {'id': 'BC5', 'nombre': 'Trufa de chocolate negro al cacao',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03 + CHN-03b',
      'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
@@ -1161,13 +1174,13 @@ CARTA = [
      'pvp_con_iva': 1.90, 'iva': 0.10, 'mix_pct': 5.0, 'mix_verano_pct': 2.0,
      'alergenos': _al('leche', 'soja'), 'familia_vida_util': 'Trufas y rocas recubiertas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('Aqui el 25 % se pelea: 4 g de chocolate sobre 13 g de pieza son el '
-              '30,8 %, y bajando el bano un gramo se cae por debajo del minimo legal. '
-              'Es el ejemplo con el que el semaforo del libro 4 ensena para que sirve. '
-              '«Trufa» no es una categoria legal espanola (`CHN-03b`).')},
-    {'id': 'BC6', 'nombre': 'Bombon de licor de ron',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+     'nota': ('Aquí el 25 % se pelea: 4 g de chocolate sobre 13 g de pieza son el '
+              '30,8 %, y bajando el baño un gramo se cae por debajo del mínimo legal. '
+              'Es el ejemplo con el que el semáforo del libro 4 enseña para que sirve. '
+              '«Trufa» no es una categoría legal española (`CHN-03b`).')},
+    {'id': 'BC6', 'nombre': 'Bombón de licor de ron',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'licor', 'cobertura': 'negra',
@@ -1177,12 +1190,12 @@ CARTA = [
      'pvp_con_iva': 2.30, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
      'alergenos': _al('soja'), 'familia_vida_util': 'Bombones de licor y cristalizados',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('Cascara mas gruesa (6 g) porque el licor la ataca. La unica del '
-              'surtido sin leche: si la vendes a granel al lado de las demas, la '
-              'contaminacion cruzada en la pinza se come esa ventaja.')},
-    {'id': 'BC7', 'nombre': 'Bombon de caramelo salado',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+     'nota': ('Cascara mas gruesa (6 g) porque el licor la ataca. La única del '
+              'surtido sin leche: si la vendes a granel al lado de las demás, la '
+              'contaminación cruzada en la pinza se come esa ventaja.')},
+    {'id': 'BC7', 'nombre': 'Bombón de caramelo salado',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'caramelo salado', 'cobertura': 'leche',
@@ -1193,45 +1206,45 @@ CARTA = [
      'alergenos': _al('leche', 'soja'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': 'Azucar alto y agua baja: aguanta mucho mas que una ganache fresca.'},
-    {'id': 'BC8', 'nombre': 'Bombon de praline de cacahuete',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate (praline)',
+     'nota': 'Azúcar alto y agua baja: aguanta mucho mas que una ganache fresca.'},
+    {'id': 'BC8', 'nombre': 'Bombón de praliné de cacahuete',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate (praliné)',
      'fuente_denominacion': 'CHN-03 + CHN-82',
      'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
-     'relleno': 'praline cacahuete', 'cobertura': 'leche',
+     'relleno': 'praliné cacahuete', 'cobertura': 'leche',
      'g_chocolate': 5.0, 'g_relleno': 7.0,
      'piezas_molde': 24, 'moldes_tanda': 5, 'minutos_mo_tanda': 135,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 1.95, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
      'alergenos': _al('leche', 'soja', 'cacahuetes'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('LA REFERENCIA QUE DEMUESTRA POR QUE SON OCHO Y NO CINCO: el cacahuete '
-              'es el punto 5 del Anexo II y NO es un fruto de cascara (punto 8). '
+              'es el punto 5 del Anexo II y NO es un fruto de cáscara (punto 8). '
               'Meterlo dentro de «frutos secos» es un error de etiquetado que puede '
               'mandar a alguien al hospital.')},
-    {'id': 'BC9', 'nombre': 'Bombon crujiente de sesamo y barquillo',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+    {'id': 'BC9', 'nombre': 'Bombón crujiente de sésamo y barquillo',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
-     'relleno': 'crujiente sesamo', 'cobertura': 'leche',
+     'relleno': 'crujiente sésamo', 'cobertura': 'leche',
      'g_chocolate': 5.0, 'g_relleno': 7.0,
      'piezas_molde': 24, 'moldes_tanda': 5, 'minutos_mo_tanda': 140,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 2.05, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'sesamo'),
-     'familia_vida_util': 'Barquillos y crujientes banados',
+     'alergenos': _al('leche', 'soja', 'gluten', 'sésamo'),
+     'familia_vida_util': 'Barquillos y crujientes bañados',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('Dos alergenos mas que sus companeras, y los dos independientes: '
-              'granos de sesamo (punto 11) y cereales con gluten del barquillo '
+     'nota': ('Dos alérgenos mas que sus compañeras, y los dos independientes: '
+              'granos de sésamo (punto 11) y cereales con gluten del barquillo '
               '(punto 1). El kit le da 3-4 semanas, y no por seguridad: pierde el '
               'crujiente mucho antes.')},
-    {'id': 'BC10', 'nombre': 'Bombon de naranja confitada y chocolate negro',
-     'familia': 'Bombones de coleccion',
-     'denominacion_legal': 'Bombon de chocolate',
+    {'id': 'BC10', 'nombre': 'Bombón de naranja confitada y chocolate negro',
+     'familia': 'Bombones de colección',
+     'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'naranja confitada', 'cobertura': 'negra',
@@ -1240,11 +1253,11 @@ CARTA = [
      'merma_recuperable_pct': 0.03, 'merma_no_recuperable_pct': 0.05,
      'pvp_con_iva': 2.05, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
      'alergenos': _al('soja', 'sulfitos'),
-     'familia_vida_util': 'Frutos secos garrapinados y frutas confitadas banadas',
+     'familia_vida_util': 'Frutos secos garrapiñados y frutas confitadas bañadas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('La unica del surtido con SULFITOS, que es el octavo alergeno y el que '
+     'nota': ('La única del surtido con SULFITOS, que es el octavo alérgeno y el que '
               'mas se olvida: la fruta confitada suele llevarlos y el umbral de '
-              'declaracion es de 10 mg/kg. La fruta ademas contamina el recorte: su '
+              'declaración es de 10 mg/kg. La fruta además contamina el recorte: su '
               'merma NO recuperable es la mas alta de la carta (D40).')},
 
     # ------------------------------ TABLETAS (6) --------------------------
@@ -1252,7 +1265,7 @@ CARTA = [
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate',
      'fuente_denominacion': 'CHN-02 + CHN-13',
-     'minimo_legal': 'ap. 1.6: minimos calculados DESCONTANDO los ingredientes anadidos del ap. 3',
+     'minimo_legal': 'ap. 1.6: mínimos calculados DESCONTANDO los ingredientes añadidos del ap. 3',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'origen',
      'g_chocolate': 100.0, 'g_relleno': 0.0,
@@ -1263,17 +1276,17 @@ CARTA = [
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('La referencia que vende el posicionamiento: cobertura de origen a '
               '37,48 euros/kg (`CHS-28c`) frente a los 25,02 de la de marca '
-              '(`CHS-28a`), factor 1,5. Lleva la mencion «cacao: X % minimo» '
+              '(`CHS-28a`), factor 1,5. Lleva la mención «cacao: X % mínimo» '
               'obligatoria (`CHN-07`) y es la que mas sube en verano: no lleva agua, '
               'aguanta 12-18 meses y viaja. Y es la referencia con el food cost '
               'MAS ALTO de la carta, con diferencia: comprar cobertura de origen y '
               'ponerle precio de cobertura de marca es como se regala el trabajo. El '
-              'libro 3 lo ensena con el escenario de subida del cacao.')},
+              'libro 3 lo enseña con el escenario de subida del cacao.')},
     {'id': 'TB2', 'nombre': 'Tableta de chocolate con leche 38 %, 100 g',
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate con leche',
      'fuente_denominacion': 'CHN-02 + CHN-13',
-     'minimo_legal': 'ap. 1.7: minimos calculados DESCONTANDO los ingredientes anadidos del ap. 3',
+     'minimo_legal': 'ap. 1.7: mínimos calculados DESCONTANDO los ingredientes añadidos del ap. 3',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'leche',
      'g_chocolate': 100.0, 'g_relleno': 0.0,
@@ -1282,12 +1295,12 @@ CARTA = [
      'pvp_con_iva': 5.90, 'iva': 0.10, 'mix_pct': 6.0, 'mix_verano_pct': 9.0,
      'alergenos': _al('leche', 'soja'), 'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': 'Tambien lleva la mencion «cacao: X % minimo» (`CHN-07`).'},
+     'nota': 'También lleva la mención «cacao: X % mínimo» (`CHN-07`).'},
     {'id': 'TB3', 'nombre': 'Tableta de chocolate blanco 30 %, 100 g',
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate blanco',
      'fuente_denominacion': 'CHN-02 + CHN-13',
-     'minimo_legal': 'ap. 1.9: 20 % de manteca, 14 % de materia seca lactea, 3,5 % de grasa lactea',
+     'minimo_legal': 'ap. 1.9: 20 % de manteca, 14 % de materia seca láctea, 3,5 % de grasa láctea',
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'blanca',
      'g_chocolate': 100.0, 'g_relleno': 0.0,
@@ -1296,15 +1309,15 @@ CARTA = [
      'pvp_con_iva': 5.90, 'iva': 0.10, 'mix_pct': 4.0, 'mix_verano_pct': 6.0,
      'alergenos': _al('leche', 'soja'), 'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('El chocolate blanco NO lleva la mencion «cacao: X % minimo»: '
-              '`CHN-07` acota esa obligacion a los apartados 1.4, 1.5, 1.6, 1.7, '
-              '1.8, 1.11 y 1.12, y el blanco es el 1.9. Escribir que la mencion es '
+     'nota': ('El chocolate blanco NO lleva la mención «cacao: X % mínimo»: '
+              '`CHN-07` acota esa obligación a los apartados 1.4, 1.5, 1.6, 1.7, '
+              '1.8, 1.11 y 1.12, y el blanco es el 1.9. Escribir que la mención es '
               'obligatoria en todos los chocolates esta prohibido (§5.1, 27).')},
     {'id': 'TB4', 'nombre': 'Tableta de chocolate negro con almendra marcona, 100 g',
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate con almendras',
      'fuente_denominacion': 'CHN-02 + CHN-09 + CHN-13',
-     'minimo_legal': ('ap. 1.6 con materias comestibles anadidas del ap. 3: no pueden '
+     'minimo_legal': ('ap. 1.6 con materias comestibles añadidas del ap. 3: no pueden '
                       'exceder el 40 % del peso total del producto acabado'),
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'negra',
@@ -1312,50 +1325,50 @@ CARTA = [
      'piezas_molde': 3, 'moldes_tanda': 8, 'minutos_mo_tanda': 65,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 6.50, 'iva': 0.10, 'mix_pct': 5.0, 'mix_verano_pct': 8.0,
-     'alergenos': _al('soja', 'frutos_cascara'),
+     'alergenos': _al('soja', 'frutos_cáscara'),
      'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('La almendra va en `g_relleno` porque es materia comestible ANADIDA del '
+     'nota': ('La almendra va en `g_relleno` porque es materia comestible AÑADIDA del '
               'ap. 3, y su tope es el 40 % del peso total (`CHN-09`). Con 22 g sobre '
-              '100 esta en el 22 %: dentro. La almendra enrancia, y el frio no lo '
+              '100 esta en el 22 %: dentro. La almendra enrancia, y el frío no lo '
               'evita: manda la fecha, no el aspecto (nota del kit).')},
     {'id': 'TB5', 'nombre': 'Tableta de chocolate con leche y avellana, 100 g',
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate con leche y avellanas',
      'fuente_denominacion': 'CHN-02 + CHN-09 + CHN-13',
-     'minimo_legal': 'ap. 1.7 con materias comestibles anadidas del ap. 3 (tope 40 %)',
+     'minimo_legal': 'ap. 1.7 con materias comestibles añadidas del ap. 3 (tope 40 %)',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'leche',
      'g_chocolate': 80.0, 'g_relleno': 20.0,
      'piezas_molde': 3, 'moldes_tanda': 8, 'minutos_mo_tanda': 65,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 6.50, 'iva': 0.10, 'mix_pct': 4.0, 'mix_verano_pct': 6.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
      'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': 'La avellana va como materia anadida del ap. 3, igual que la almendra de TB4.'},
-    {'id': 'TB6', 'nombre': 'Tableta rellena de praline, 100 g',
+     'nota': 'La avellana va como materia añadida del ap. 3, igual que la almendra de TB4.'},
+    {'id': 'TB6', 'nombre': 'Tableta rellena de praliné, 100 g',
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate relleno',
      'fuente_denominacion': 'CHN-04 + CHN-10 + CHN-13',
      'minimo_legal': ('ap. 1.10: el exterior de chocolate tiene que ser al menos el '
                       '25 % del peso TOTAL del producto acabado, relleno incluido'),
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
-     'relleno': 'praline de tableta', 'cobertura': 'leche',
+     'relleno': 'praliné de tableta', 'cobertura': 'leche',
      'g_chocolate': 55.0, 'g_relleno': 45.0,
      'piezas_molde': 3, 'moldes_tanda': 6, 'minutos_mo_tanda': 105,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.03,
      'pvp_con_iva': 7.50, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 4.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('La segunda referencia del ap. 1.10, y la que ensena la base de calculo: '
+     'nota': ('La segunda referencia del ap. 1.10, y la que enseña la base de calculo: '
               '55 g de chocolate sobre 100 g de pieza son el 55 %, calculado SOBRE EL '
               'PESO TOTAL con el relleno dentro (`CHN-10`). Si alguien lo calculase '
-              'descontando el relleno le saldria el 100 % y el semaforo dejaria pasar '
+              'descontando el relleno le saldria el 100 % y el semáforo dejaría pasar '
               'cualquier cosa: por eso invertir las dos bases esta prohibido. Y NO es '
-              'chocolate relleno lo que lleva interior de panaderia, pasteleria, '
-              'galleteria, bolleria o helado (`CHN-04`).')},
+              'chocolate relleno lo que lleva interior de panadería, pastelería, '
+              'galleteria, bollería o helado (`CHN-04`).')},
 
     # ------------------------- CHOCOLATE A LA TAZA (3) --------------------
     {'id': 'CT1', 'nombre': 'Tableta de chocolate a la taza, 200 g',
@@ -1363,8 +1376,8 @@ CARTA = [
      'denominacion_legal': 'Chocolate a la taza',
      'fuente_denominacion': 'CHN-05',
      'minimo_legal': ('ap. 1.11: 35 % de materia seca total de cacao, 18 % de manteca, '
-                      '14 % de desgrasada y hasta 8 % de harina o almidon de trigo, '
-                      'arroz o maiz'),
+                      '14 % de desgrasada y hasta 8 % de harina o almidón de trigo, '
+                      'arroz o maíz'),
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': 'masa a la taza', 'cobertura': 'negra',
      'g_chocolate': 80.0, 'g_relleno': 120.0,
@@ -1373,17 +1386,17 @@ CARTA = [
      'pvp_con_iva': 6.50, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 1.0,
      'alergenos': _al('soja'), 'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('El almidon (9,6 g sobre 200, el 4,8 %) esta por debajo del tope del 8 %. '
-              'Se usa ALMIDON DE MAIZ a proposito: con almidon de TRIGO habria que '
-              'declarar gluten, y la norma admite los tres. La etiqueta lleva ademas '
-              'la expresion «para su consumo cocido» (ap. 6.e): es una ADICION '
-              'ESPANOLA que NO existe en la Directiva 2000/36/CE (`CHN-83`), asi que '
+     'nota': ('El almidón (9,6 g sobre 200, el 4,8 %) esta por debajo del tope del 8 %. '
+              'Se usa ALMIDÓN DE MAÍZ a propósito: con almidón de TRIGO habría que '
+              'declarar gluten, y la norma admite los tres. La etiqueta lleva además '
+              'la expresión «para su consumo cocido» (ap. 6.e): es una ADICION '
+              'ESPAÑOLA que NO existe en la Directiva 2000/36/CE (`CHN-83`), así que '
               'no se escribe que sea un requisito europeo.')},
     {'id': 'CT2', 'nombre': 'Caja de 6 sobres monodosis de chocolate a la taza',
      'familia': 'Chocolate a la taza',
      'denominacion_legal': 'Chocolate a la taza',
      'fuente_denominacion': 'CHN-05',
-     'minimo_legal': 'ap. 1.11: 35 % cacao total, 18 % manteca, 14 % desgrasada, almidon hasta 8 %',
+     'minimo_legal': 'ap. 1.11: 35 % cacao total, 18 % manteca, 14 % desgrasada, almidón hasta 8 %',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': 'masa a la taza', 'cobertura': 'negra',
      'g_chocolate': 72.0, 'g_relleno': 108.0,
@@ -1393,7 +1406,7 @@ CARTA = [
      'alergenos': _al('soja'), 'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('Seis sobres de 30 g. Ojo al art. 2.2.c) del RD 1808/1991: los envases '
-              'cuya cara mayor mide menos de 10 cm2 estan exentos de lote, pero la '
+              'cuya cara mayor mide menos de 10 cm2 están exentos de lote, pero la '
               'CAJA que los contiene no (`CHN-36`).')},
     {'id': 'CT3', 'nombre': 'Chocolate a la taza servido en sala, 200 ml',
      'familia': 'Chocolate a la taza',
@@ -1408,12 +1421,12 @@ CARTA = [
      'pvp_con_iva': 3.20, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 0.5,
      'alergenos': _al('soja'), 'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('Aqui NO entregas un bien: prestas un servicio de hosteleria, y el IVA '
+     'nota': ('Aquí NO entregas un bien: prestas un servicio de hostelería, y el IVA '
               'va al 10 % por el art. 91.Uno.2.2.o (`CHN-71c`). No lleva etiqueta, '
-              'asi que su referencia es tu sistema de autocontrol (D47). Y si pones '
+              'así que su referencia es tu sistema de autocontrol (D47). Y si pones '
               'mesas, el art. 8 de la Ley 1/2025 te obliga a facilitar que el cliente '
               'se lleve lo que no ha consumido, aunque seas microempresa: la '
-              'exclusion del art. 6.6 NO alcanza al art. 8 (`CHN-92`). Es la pieza '
+              'exclusión del art. 6.6 NO alcanza al art. 8 (`CHN-92`). Es la pieza '
               'que sube el ticket del churro un 40-60 % en la variante de taza '
               '(`CHS-32`), y es OTRO negocio (D1).')},
 
@@ -1422,7 +1435,7 @@ CARTA = [
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Chocolate con leche',
      'fuente_denominacion': 'CHN-02 + CHN-13',
-     'minimo_legal': 'ap. 1.7: minimos descontando los ingredientes anadidos del ap. 3',
+     'minimo_legal': 'ap. 1.7: mínimos descontando los ingredientes añadidos del ap. 3',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'leche',
      'g_chocolate': 250.0, 'g_relleno': 0.0,
@@ -1432,7 +1445,7 @@ CARTA = [
      'alergenos': _al('leche', 'soja'),
      'familia_vida_util': 'Figuras huecas y piezas macizas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('La merma recuperable mas alta del catalogo: la pieza hueca se raja con '
+     'nota': ('La merma recuperable mas alta del catálogo: la pieza hueca se raja con '
               'los cambios bruscos de temperatura (nota del kit) y lo que se rompe '
               'SIN relleno vuelve entero a la cuba. Cero mix en verano: es de '
               'campana.')},
@@ -1440,7 +1453,7 @@ CARTA = [
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Chocolate con leche',
      'fuente_denominacion': 'CHN-02 + CHN-13',
-     'minimo_legal': 'ap. 1.7 con materias comestibles anadidas del ap. 3 (tope 40 %)',
+     'minimo_legal': 'ap. 1.7 con materias comestibles añadidas del ap. 3 (tope 40 %)',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'leche',
      'g_chocolate': 380.0, 'g_relleno': 20.0,
@@ -1451,14 +1464,14 @@ CARTA = [
      'familia_vida_util': 'Figuras huecas y piezas macizas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('Pieza de autor y la que mas minutos de obrador se lleva: 210 por tanda '
-              'de seis. La decoracion va como materia anadida del ap. 3. Es la '
+              'de seis. La decoración va como materia añadida del ap. 3. Es la '
               'referencia que pone a prueba la capacidad del libro 1 en abril.')},
-    {'id': 'TF3', 'nombre': 'Hueso de santo banado en chocolate',
+    {'id': 'TF3', 'nombre': 'Hueso de santo bañado en chocolate',
      'familia': 'Turrones, figuras y temporada',
-     'denominacion_legal': 'Producto de confiteria recubierto de chocolate',
+     'denominacion_legal': 'Producto de confitería recubierto de chocolate',
      'fuente_denominacion': 'CHN-15',
-     'minimo_legal': ('RD 348/2011: si el producto esta relleno, recubierto o '
-                      'grageado, la denominacion de venta tiene que decirlo'),
+     'minimo_legal': ('RD 348/2011: si el producto está relleno, recubierto o '
+                      'grageado, la denominación de venta tiene que decirlo'),
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'yema tostada', 'cobertura': 'negra',
      'g_chocolate': 9.0, 'g_relleno': 21.0,
@@ -1468,52 +1481,52 @@ CARTA = [
      'alergenos': _al('huevos', 'soja'),
      'familia_vida_util': 'Bombones de ganache con nata fresca',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('LA REFERENCIA QUE ROMPE LA REGLA, y por eso esta aqui: 9 g de '
-              'chocolate sobre 30 g de pieza son el 30 %, pero NO es un bombon de '
-              'chocolate, porque el 1.13 pide una pieza «del tamano de un bocado '
-              'constituida por chocolate», y esto es un producto de confiteria '
-              'RECUBIERTO. Su denominacion sale del RD 348/2011 (`CHN-15`), no del '
-              'RD 1055/2003. La UNICA con huevo, por la yema, y va con ovoproducto '
+     'nota': ('LA REFERENCIA QUE ROMPE LA REGLA, y por eso esta aquí: 9 g de '
+              'chocolate sobre 30 g de pieza son el 30 %, pero NO es un bombón de '
+              'chocolate, porque el 1.13 pide una pieza «del tamaño de un bocado '
+              'constituida por chocolate», y esto es un producto de confitería '
+              'RECUBIERTO. Su denominación sale del RD 348/2011 (`CHN-15`), no del '
+              'RD 1055/2003. La ÚNICA con huevo, por la yema, y va con ovoproducto '
               'pasteurizado (`CHN-31`). Esta literalmente en el calendario del kit: '
-              '«Todos los Santos (1): panellets y huesos de santo banados».')},
-    {'id': 'TF4', 'nombre': 'Turron de chocolate con almendra, 250 g',
+              '«Todos los Santos (1): panellets y huesos de santo bañados».')},
+    {'id': 'TF4', 'nombre': 'Turrón de chocolate con almendra, 250 g',
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Chocolate con almendras',
      'fuente_denominacion': 'CHN-02 + CHN-09 + CHN-13',
-     'minimo_legal': 'ap. 1.6 con materias comestibles anadidas del ap. 3 (tope 40 %)',
+     'minimo_legal': 'ap. 1.6 con materias comestibles añadidas del ap. 3 (tope 40 %)',
      'mencion_cacao': True, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'negra',
      'g_chocolate': 168.0, 'g_relleno': 82.0,
      'piezas_molde': 4, 'moldes_tanda': 6, 'minutos_mo_tanda': 120,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 13.50, 'iva': 0.10, 'mix_pct': 2.0, 'mix_verano_pct': 1.0,
-     'alergenos': _al('soja', 'frutos_cascara'),
+     'alergenos': _al('soja', 'frutos_cáscara'),
      'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('HUECO DECLARADO: la denominacion que publica este juego de datos es la '
+     'nota': ('HUECO DECLARADO: la denominación que publica este juego de datos es la '
               'del RD 1055/2003, porque la norma de calidad de TURRONES no se abrio '
-              'en la verificacion legal del 12-09-2026 y ninguna ficha `CHN-*` la '
-              'cubre. «Turron de chocolate con almendra» es el NOMBRE COMERCIAL; '
+              'en la verificación legal del 12-09-2026 y ninguna ficha `CHN-*` la '
+              'cubre. «Turrón de chocolate con almendra» es el NOMBRE COMERCIAL; '
               'antes de imprimir la etiqueta hay que comprobar si la norma de '
-              'turrones te obliga a otra denominacion de venta. La almendra (82 g '
+              'turrones te obliga a otra denominación de venta. La almendra (82 g '
               'sobre 250, el 32,8 %) esta dentro del tope del 40 % del ap. 3 '
               '(`CHN-09`).')},
-    {'id': 'TF5', 'nombre': 'Almendras marcona banadas en chocolate, bolsa de 150 g',
+    {'id': 'TF5', 'nombre': 'Almendras marcona bañadas en chocolate, bolsa de 150 g',
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Grageas o confites de chocolate',
      'fuente_denominacion': 'CHN-15',
-     'minimo_legal': ('RD 348/2011, ap. 1.3: la denominacion de venta se complementa '
-                      'con «relleno», «recubierto» o «grageado» segun el caso'),
+     'minimo_legal': ('RD 348/2011, ap. 1.3: la denominación de venta se complementa '
+                      'con «relleno», «recubierto» o «grageado» según el caso'),
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'negra',
      'g_chocolate': 88.0, 'g_relleno': 62.0,
      'piezas_molde': 40, 'moldes_tanda': 1, 'minutos_mo_tanda': 95,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 7.40, 'iva': 0.10, 'mix_pct': 3.5, 'mix_verano_pct': 8.0,
-     'alergenos': _al('soja', 'frutos_cascara'),
-     'familia_vida_util': 'Frutos secos garrapinados y frutas confitadas banadas',
+     'alergenos': _al('soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Frutos secos garrapiñados y frutas confitadas bañadas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('La que da nombre a la casa, y su denominacion NO sale del RD 1055/2003 '
+     'nota': ('La que da nombre a la casa, y su denominación NO sale del RD 1055/2003 '
               'sino del RD 348/2011: «grageas o confites de chocolate» (`CHN-15`). Se '
               'hace en bombo, no en molde: `moldes_tanda` vale 1 y los 95 minutos '
               'son de la tanda entera, de la que salen 40 bolsas. Es la segunda que mas sube en '
@@ -1525,27 +1538,27 @@ CARTA = [
      'familia': 'Cajas y regalo',
      'denominacion_legal': 'Chocolates rellenos surtidos',
      'fuente_denominacion': 'CHN-13',
-     'minimo_legal': ('ap. 6.a) y 6.c): la denominacion va por pieza o, si el surtido '
+     'minimo_legal': ('ap. 6.a) y 6.c): la denominación va por pieza o, si el surtido '
                       'es de los aps. 1.6 a 1.10 y 1.13, se sustituye por la de '
-                      'surtido, con una unica lista de ingredientes. Es una DECISION '
-                      'de etiquetado, no una obligacion'),
+                      'surtido, con una única lista de ingredientes. Es una DECISIÓN '
+                      'de etiquetado, no una obligación'),
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'negra',
      'g_chocolate': 0.0, 'g_relleno': 0.0,
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 4,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 20.00, 'iva': 0.10, 'mix_pct': 5.0, 'mix_verano_pct': 7.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'CHS-29', 'fuente_gramaje': 'supuesto',
      'nota': ('PVP de `CHS-29`, precio de MOSTRADOR (con IVA) y base de IVA NO '
               'declarada por la fuente: entra con su columna «lleva IVA» y el libro 4 '
-              'publica el PVP base por formula, porque el libro 7 pide el ticket medio '
-              'SIN IVA. 12 unidades a 20,00 euros son 1,67 euros por bombon. Su coste '
+              'publica el PVP base por fórmula, porque el libro 7 pide el ticket medio '
+              'SIN IVA. 12 unidades a 20,00 euros son 1,67 euros por bombón. Su coste '
               'de materia NO se teclea: se COMPONE de las referencias que lleva '
               'dentro (`composicion_caja`), y por eso `g_chocolate` vale 0. Los siete '
-              'alergenos son la UNION de lo que va dentro: en un surtido a granel no '
+              'alérgenos son la UNIÓN de lo que va dentro: en un surtido a granel no '
               'puedes prometer que una pinza no ha tocado otra cosa.'),
      'composicion_caja': [('BC1', 2), ('BC2', 2), ('BC3', 2), ('BC5', 1),
                           ('BC7', 2), ('BC8', 1), ('BC9', 1), ('BC10', 1)],
@@ -1561,11 +1574,11 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 6,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 28.00, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 5.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'CHS-29', 'fuente_gramaje': 'supuesto',
-     'nota': '1,40 euros por bombon: un 16 % menos que en la caja de 12.',
+     'nota': '1,40 euros por bombón: un 16 % menos que en la caja de 12.',
      'composicion_caja': [('BC1', 3), ('BC2', 3), ('BC3', 3), ('BC4', 2), ('BC5', 3),
                           ('BC6', 1), ('BC7', 2), ('BC8', 1), ('BC9', 1), ('BC10', 1)],
      'uds_caja': 20},
@@ -1580,12 +1593,12 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 9,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 45.00, 'iva': 0.10, 'mix_pct': 2.0, 'mix_verano_pct': 2.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'CHS-29', 'fuente_gramaje': 'supuesto',
-     'nota': ('1,29 euros por bombon: un 23 % menos que en la caja de 12. Esa escalera '
-              'es la decision 4 del bonus 2, y el libro 4 la resuelve comparando el '
+     'nota': ('1,29 euros por bombón: un 23 % menos que en la caja de 12. Esa escalera '
+              'es la decisión 4 del bonus 2, y el libro 4 la resuelve comparando el '
               'precio de la caja con la suma de sus unidades sueltas.'),
      'composicion_caja': [('BC1', 5), ('BC2', 5), ('BC3', 5), ('BC4', 3), ('BC5', 4),
                           ('BC6', 2), ('BC7', 4), ('BC8', 3), ('BC9', 2), ('BC10', 2)],
@@ -1601,15 +1614,15 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 11,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 34.00, 'iva': 0.10, 'mix_pct': 1.0, 'mix_verano_pct': 1.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('SUPUESTO: `CHS-29` no cubre el estuche corporativo. Lo que SI esta '
-              'verificado es su regla operativa: 14 dias de plazo minimo desde la '
-              'aprobacion de la muestra (`CHS-55`), que es lo que decide si aceptas '
+              'verificado es su regla operativa: 14 días de plazo mínimo desde la '
+              'aprobación de la muestra (`CHS-55`), que es lo que decide si aceptas '
               'un pedido de empresa en diciembre. Y es el canal que te saca de la '
-              'nota del epigrafe 644.5 y te mete en la tabla de CLIENTES del art. '
+              'nota del epígrafe 644.5 y te mete en la tabla de CLIENTES del art. '
               '5.3.b) del EUDR (`CHN-24`, D48).'),
      'composicion_caja': [('BC1', 3), ('BC2', 3), ('BC3', 4), ('BC4', 2), ('BC5', 3),
                           ('BC6', 1), ('BC7', 3), ('BC8', 2), ('BC9', 2), ('BC10', 1)],
@@ -1648,10 +1661,10 @@ def pct_chocolate_sobre_peso_total(r):
     """CAPA (a) DE D37, la que SI se calcula con el escandallo: el porcentaje de
     chocolate SOBRE EL PESO TOTAL del producto acabado, RELLENO INCLUIDO
     (`CHN-10`, apartado 4, cita literal). Es la base de los apartados 1.10
-    (chocolate relleno) y 1.13 (bombon).
+    (chocolate relleno) y 1.13 (bombón).
 
     Invertirla -calcularla descontando el relleno- da un resultado MAS FAVORABLE
-    que el legal y deja pasar por el semaforo una referencia que no cumple. Esta
+    que el legal y deja pasar por el semáforo una referencia que no cumple. Esta
     PROHIBIDO, y es una de las cuatro prohibiciones que anadio esta SPEC.
     """
     if es_caja(r):
@@ -1673,16 +1686,16 @@ FUENTE_MINIMO_25 = 'CHN-03 + CHN-04 + CHN-10'
 
 
 def exige_25_pct(r):
-    """True si a esa referencia le aplica el minimo del 25 % de los aps.
-    1.10/1.13. B10 (refutacion 2026-09-12): el minimo es POR PIEZA -aps.
-    1.10 y 1.13 hablan del bombon o del chocolate relleno, no de un
-    surtido-, asi que una caja («Chocolates rellenos surtidos», aps. 6.a)
-    y 6.c)) NO entra aqui: cada pieza que lleva dentro ya se comprueba en
+    """True si a esa referencia le aplica el mínimo del 25 % de los aps.
+    1.10/1.13. B10 (refutación 2026-09-12): el mínimo es POR PIEZA -aps.
+    1.10 y 1.13 hablan del bombón o del chocolate relleno, no de un
+    surtido-, así que una caja («Chocolates rellenos surtidos», aps. 6.a)
+    y 6.c)) NO entra aquí: cada pieza que lleva dentro ya se comprueba en
     su propia fila (`es_caja(r)` filtra las cuatro cajas)."""
     if es_caja(r):
         return False
     d = r['denominacion_legal']
-    return d.startswith('Bombon de chocolate') or d == 'Chocolate relleno'
+    return d.startswith('Bombón de chocolate') or d == 'Chocolate relleno'
 
 
 def coste_materia_unidad(r):
@@ -1718,7 +1731,7 @@ def coste_materia_con_merma(r):
     """D40, DOS TASAS. La regla es del kit (`02!Moldeado`): «El chocolate sin relleno
     y sin contaminar se puede refundir; el que lleva ganache o fruta, a residuo».
 
-    · La merma RECUPERABLE vuelve a la cuba, asi que NO es coste: lo unico que
+    · La merma RECUPERABLE vuelve a la cuba, así que NO es coste: lo único que
       cuesta es volver a templarla, y eso lo cobra la mano de obra.
     · La merma NO RECUPERABLE va a residuo y SI es coste: se reparte entre las
       piezas buenas.
@@ -1728,7 +1741,7 @@ def coste_materia_con_merma(r):
 
 
 def coste_hora_obrador():
-    """Coste de una hora de obrador: coste empresa de las personas del area OBRADOR
+    """Coste de una hora de obrador: coste empresa de las personas del área OBRADOR
     dividido entre sus horas PRODUCTIVAS. No es el bruto ni el bruto con SS: es lo
     que de verdad cuesta un minuto de templado, y es lo que el libro 4 imputa por
     pieza. Del bruto al coste empresa hay un 33 %, y ese es el salto que mas
@@ -1805,7 +1818,7 @@ def food_cost_servido(verano=False):
 
 def iva_medio_carta():
     """Tipo de IVA medio de la carta, ponderado por euros vendidos con IVA. Hoy son
-    todos el 10 % (`CHN-71`): la funcion existe para que el dia que entre una
+    todos el 10 % (`CHN-71`): la función existe para que el día que entre una
     referencia con otro tipo, el libro 7 no tenga que tocarse."""
     con_iva = sum(r['pvp_con_iva'] * r['mix_pct'] for r in CARTA)
     sin_iva = sum(pvp_sin_iva(r) * r['mix_pct'] for r in CARTA)
@@ -1823,11 +1836,11 @@ def referencias_con(alergeno):
 
 
 def vida_util_kit_de(familia_literal):
-    """El plazo LITERAL del kit para esa familia. La guia lo CITA, no lo reescribe."""
+    """El plazo LITERAL del kit para esa familia. La guía lo CITA, no lo reescribe."""
     for fam, plazo, nota in VIDA_UTIL_KIT:
         if fam == familia_literal:
             return plazo, nota, FUENTE_VIDA_UTIL
-    raise KeyError('Familia de vida util que no esta en el kit: %r' % familia_literal)
+    raise KeyError('Familia de vida útil que no esta en el kit: %r' % familia_literal)
 
 
 # ==========================================================================
@@ -1863,10 +1876,10 @@ EQUIPAMIENTO = [
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 10, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Equipo de templado y moldeado', 'dotacion_tipo': True,
-     'nota': ('El corazon del obrador y la decision 2 del bonus 2. Base de IVA NO '
-              'declarada: la ficha trae el indicio «/Neto» en la linea de embalaje, '
+     'nota': ('El corazón del obrador y la decisión 2 del bonus 2. Base de IVA NO '
+              'declarada: la ficha trae el indicio «/Neto» en la línea de embalaje, '
               'que no es confirmable. La escalera completa va de esta a la Cento EX '
-              'de 100 kg (`CHS-41g`), y la eleccion la decide los kg/semana que salga '
+              'de 100 kg (`CHS-41g`), y la elección la decide los kg/semana que salga '
               'en la hoja de capacidad del libro 1.')},
     {'n': 2, 'partida': 'Embalaje, transporte y puesta en marcha de la atemperadora',
      'marca': 'Selmi', 'modelo': 'servicio', 'categoria': 'Templado',
@@ -1875,9 +1888,9 @@ EQUIPAMIENTO = [
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 10, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Equipo de templado y moldeado', 'dotacion_tipo': True,
-     'nota': ('La linea que nadie presupuesta: es el 12 % del precio de la maquina. '
+     'nota': ('La línea que nadie presupuesta: es el 12 % del precio de la máquina. '
               'La ficha la marca «Neto», que es un INDICIO de base sin IVA, no una '
-              'declaracion: por eso va como «no declarada».')},
+              'declaración: por eso va como «no declarada».')},
     {'n': 3, 'partida': 'Enrobadora de banda, 200 mm',
      'marca': 'Selmi', 'modelo': 'R200 Legend', 'categoria': 'Moldeado',
      'valor_verificado': 6800.00, 'supuesto_por_defecto': None,
@@ -1894,14 +1907,14 @@ EQUIPAMIENTO = [
      'opcional': False, 'plazo_semanas': 8, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Equipo de templado y moldeado', 'dotacion_tipo': True,
      'nota': 'Base de IVA NO declarada por la ficha del distribuidor.'},
-    {'n': 5, 'partida': 'Temperador de bano maria digital, 22 L',
-     'marca': 'Utilcentre', 'modelo': 'bano maria digital 22 L', 'categoria': 'Templado',
+    {'n': 5, 'partida': 'Temperador de baño maría digital, 22 L',
+     'marca': 'Utilcentre', 'modelo': 'baño maría digital 22 L', 'categoria': 'Templado',
      'valor_verificado': 2650.00, 'supuesto_por_defecto': None,
      'base_iva': 'no declarada', 'tipo_iva': 0.21, 'fuente': 'CHS-41j',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 6, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Equipo de templado y moldeado', 'dotacion_tipo': True,
-     'nota': 'Segunda linea de templado: sin ella no se trabajan dos coberturas a la vez.'},
+     'nota': 'Segunda línea de templado: sin ella no se trabajan dos coberturas a la vez.'},
     {'n': 6, 'partida': 'Mantenedor de 1 cubeta, digital',
      'marca': 'Utilcentre', 'modelo': 'mantenedor 1 cubeta digital', 'categoria': 'Templado',
      'valor_verificado': 570.00, 'supuesto_por_defecto': None,
@@ -1920,8 +1933,8 @@ EQUIPAMIENTO = [
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': True, 'plazo_semanas': 4, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Equipo de templado y moldeado', 'dotacion_tipo': False,
-     'nota': ('NO esta en la dotacion de La Almendra: es la maquina del ESCENARIO B, '
-              'el arranque minimo, y aparece para que el lector vea la escalera. '
+     'nota': ('NO esta en la dotación de La Almendra: es la máquina del ESCENARIO B, '
+              'el arranque mínimo, y aparece para que el lector vea la escalera. '
               'Cubeta adicional, 165,30 euros (`CHS-41h`).')},
     {'n': 8, 'partida': 'Cubeta adicional para la atemperadora de arranque',
      'marca': 'Pavoni', 'modelo': 'cubeta MINITEMPER', 'categoria': 'Templado',
@@ -1933,45 +1946,45 @@ EQUIPAMIENTO = [
      'nota': 'Accesorio del escenario B.'},
 
     # --- frio -------------------------------------------------------------
-    {'n': 9, 'partida': 'Vitrina refrigerada especifica para chocolate',
-     'marca': 'Docriluc', 'modelo': 'WB-6-6-R', 'categoria': 'Frio',
+    {'n': 9, 'partida': 'Vitrina refrigerada específica para chocolate',
+     'marca': 'Docriluc', 'modelo': 'WB-6-6-R', 'categoria': 'Frío',
      'valor_verificado': 2684.99, 'supuesto_por_defecto': None,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'CHS-43',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 7, 'fuente_plazo': 'supuesto',
-     'bloque_capex': 'Frio', 'dotacion_tipo': True,
-     'nota': ('600x730x1380 mm. RANGO DE TRABAJO DEL EQUIPO: +14 a +17 grados C, con '
+     'bloque_capex': 'Frío', 'dotacion_tipo': True,
+     'nota': ('600x730x1380 mm. RANGO DE TRABAJO DEL EQUIPO: +14 a +17 °C, con '
               'base SIN IVA declarada literalmente por la ficha. NO son los +2/+4 '
-              'grados C de una vitrina de pasteleria, que arruina el bombon por '
-              'condensacion, sugar bloom y perdida de brillo. El OBJETIVO OPERATIVO '
-              'es otra cosa y lo pone el kit: 16-18 grados C y menos del 55 % de '
-              'humedad. El semaforo del libro 5 solo avisa por encima de 20 grados C, '
+              '°C de una vitrina de pastelería, que arruina el bombón por '
+              'condensación, sugar bloom y perdida de brillo. El OBJETIVO OPERATIVO '
+              'es otra cosa y lo pone el kit: 16-18 °C y menos del 55 % de '
+              'humedad. El semáforo del libro 5 solo avisa por encima de 20 °C, '
               'y queda PROHIBIDO uno que ponga en rojo los 16-18 del propio kit. '
               'Precio de oferta (antes 3.487,00 euros): esta FECHADO el 12-09-2026 y '
               'puede caducar.')},
-    {'n': 10, 'partida': 'Camara climatizada de chocolate, unos 6 m2',
-     'marca': None, 'modelo': None, 'categoria': 'Frio',
+    {'n': 10, 'partida': 'Cámara climatizada de chocolate, unos 6 m²',
+     'marca': None, 'modelo': None, 'categoria': 'Frío',
      'valor_verificado': None, 'supuesto_por_defecto': 6400.00,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'supuesto',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 8, 'fuente_plazo': 'supuesto',
-     'bloque_capex': 'Frio', 'dotacion_tipo': True,
+     'bloque_capex': 'Frío', 'dotacion_tipo': True,
      'nota': ('SUPUESTO declarado: ninguna fuente del research publica el precio de '
-              'una camara de chocolate. Celda verde con valor por defecto. No es una '
-              'nevera: trabaja a 15-18 grados C y 50-60 % de humedad, y ese control de '
-              'HUMEDAD es lo que la encarece frente a una camara de pasteleria.')},
+              'una cámara de chocolate. Celda verde con valor por defecto. No es una '
+              'nevera: trabaja a 15-18 °C y 50-60 % de humedad, y ese control de '
+              'HUMEDAD es lo que la encarece frente a una cámara de pastelería.')},
     {'n': 11, 'partida': 'Nevera de rellenos y ganaches',
-     'marca': None, 'modelo': None, 'categoria': 'Frio',
+     'marca': None, 'modelo': None, 'categoria': 'Frío',
      'valor_verificado': None, 'supuesto_por_defecto': 1450.00,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'supuesto',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 5, 'fuente_plazo': 'supuesto',
-     'bloque_capex': 'Frio', 'dotacion_tipo': True,
-     'nota': ('SUPUESTO. Es la del RELLENO, a 0-4 grados C, no la del bombon acabado. '
-              'Confundirlas es el error de metodo que la SPEC persigue.')},
+     'bloque_capex': 'Frío', 'dotacion_tipo': True,
+     'nota': ('SUPUESTO. Es la del RELLENO, a 0-4 °C, no la del bombón acabado. '
+              'Confundirlas es el error de método que la SPEC persigue.')},
 
     # --- packaging y moldes ------------------------------------------------
-    {'n': 12, 'partida': 'Moldes de policarbonato para bomboneria (24 unidades)',
+    {'n': 12, 'partida': 'Moldes de policarbonato para bombonería (24 unidades)',
      'marca': 'Chocolate World', 'modelo': 'varios (CF0246, CW12064, CW1000L07)',
      'categoria': 'Moldes',
      'valor_verificado': None, 'supuesto_por_defecto': 804.36,
@@ -1979,13 +1992,13 @@ EQUIPAMIENTO = [
      'es_desde': False, 'rango_min': 580.80, 'rango_max': 1027.92,
      'opcional': False, 'plazo_semanas': 4, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Packaging y moldes', 'dotacion_tipo': False,
-     'nota': ('SE PUBLICA COMO RANGO (D23a). El unico dato medido es 24,20-42,83 '
+     'nota': ('SE PUBLICA COMO RANGO (D23a). El único dato medido es 24,20-42,83 '
               'euros/ud (`CHS-45a`): 24 moldes valen entre 580,80 y 1.027,92 euros. '
               'El valor por defecto (804,36) es el punto medio del rango, y es '
-              'SUPUESTO. Escribir una multiplicacion con un precio unitario elegido a '
+              'SUPUESTO. Escribir una multiplicación con un precio unitario elegido a '
               'ojo esta prohibido. Y los moldes de policarbonato NO pagan el impuesto '
-              'al plastico: no estan sujetos por el art. 73.d) de la Ley 7/2022 '
-              '(`CHN-62c`), porque no se entregan junto con la mercancia.')},
+              'al plastico: no están sujetos por el art. 73.d) de la Ley 7/2022 '
+              '(`CHN-62c`), porque no se entregan junto con la mercancía.')},
     {'n': 13, 'partida': 'Primer pedido de packaging: cajas, estuches, cintas y etiquetas',
      'marca': None, 'modelo': None, 'categoria': 'Packaging',
      'valor_verificado': None, 'supuesto_por_defecto': 2200.00,
@@ -1993,14 +2006,14 @@ EQUIPAMIENTO = [
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 5, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Packaging y moldes', 'dotacion_tipo': False,
-     'nota': ('SUPUESTO: la web del proveedor de packaging verificado devolvio HTTP '
-              '403 y no publica precio (`CHS-54`). En bomboneria la caja ES el '
+     'nota': ('SUPUESTO: la web del proveedor de packaging verificado devolvió HTTP '
+              '403 y no publica precio (`CHS-54`). En bombonería la caja ES el '
               'producto en campana, y el personalizado obliga a pedidos grandes: es '
-              'dinero parado en el almacen. Si lo compras fuera de Espana, mira el '
+              'dinero parado en el almacén. Si lo compras fuera de España, mira el '
               'contador de plastico del libro 2 (`PLASTICO`).')},
 
     # --- tienda -------------------------------------------------------------
-    {'n': 14, 'partida': 'Mobiliario de tienda, mostrador y estanteria',
+    {'n': 14, 'partida': 'Mobiliario de tienda, mostrador y estantería',
      'marca': None, 'modelo': None, 'categoria': 'Tienda',
      'valor_verificado': None, 'supuesto_por_defecto': 6900.00,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'supuesto',
@@ -2008,31 +2021,31 @@ EQUIPAMIENTO = [
      'opcional': False, 'plazo_semanas': 6, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Mobiliario y tienda', 'dotacion_tipo': True,
      'nota': 'SUPUESTO declarado. Celda verde con valor por defecto.'},
-    {'n': 15, 'partida': 'TPV, ordenador, impresora de etiquetas y rotulo',
+    {'n': 15, 'partida': 'TPV, ordenador, impresora de etiquetas y rótulo',
      'marca': None, 'modelo': None, 'categoria': 'Tienda',
      'valor_verificado': None, 'supuesto_por_defecto': 3200.00,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'supuesto',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 4, 'fuente_plazo': 'supuesto',
-     'bloque_capex': 'TPV, informatica y rotulo', 'dotacion_tipo': True,
+     'bloque_capex': 'TPV, informática y rótulo', 'dotacion_tipo': True,
      'nota': ('SUPUESTO. La impresora de etiquetas deja de ser opcional en cuanto una '
               'sola referencia sale envasada con etiqueta (D47). Y Verifactu no es '
-              '2026, es 2027: 1-ene para sociedades y 1-jul para autonomos '
+              '2026, es 2027: 1-ene para sociedades y 1-jul para autónomos '
               '(`CHN-75`).')},
-    {'n': 16, 'partida': 'Climatizacion del obrador con deshumidificacion',
+    {'n': 16, 'partida': 'Climatización del obrador con deshumidificación',
      'marca': None, 'modelo': None, 'categoria': 'Clima',
      'valor_verificado': None, 'supuesto_por_defecto': 7600.00,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'supuesto',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
      'opcional': False, 'plazo_semanas': 9, 'fuente_plazo': 'supuesto',
-     'bloque_capex': 'Climatizacion y deshumidificacion', 'dotacion_tipo': True,
+     'bloque_capex': 'Climatización y deshumidificación', 'dotacion_tipo': True,
      'nota': ('SUPUESTO declarado, y es la partida que nadie presupuesta. El libro 1 '
-              'NO calcula carga termica (D33): no hay un solo coeficiente con fuente '
-              'ni de transmitancia, ni por m3, ni de aportes, ni de renovaciones. Lo '
-              'que hace es (a) un semaforo de coherencia entre la temperatura '
-              'objetivo, la exterior de agosto de TU ciudad y la potencia frigorifica '
+              'NO calcula carga térmica (D33): no hay un solo coeficiente con fuente '
+              'ni de transmitancia, ni por m³, ni de aportes, ni de renovaciones. Lo '
+              'que hace es (a) un semáforo de coherencia entre la temperatura '
+              'objetivo, la exterior de agosto de TU ciudad y la potencia frigorífica '
               'que te OFREZCA EL INSTALADOR, y (b) una ficha de preguntas para el '
-              'instalador. PROHIBIDO el climatizador evaporativo: anade humedad, que '
+              'instalador. PROHIBIDO el climatizador evaporativo: añade humedad, que '
               'es justo lo contrario de lo que necesita un obrador de chocolate.')},
 
     # --- variante de taza y churros (D1), fuera de la dotacion tipo --------
@@ -2045,15 +2058,15 @@ EQUIPAMIENTO = [
      'bloque_capex': 'Mobiliario y tienda', 'dotacion_tipo': False,
      'nota': ('Base SIN IVA declarada literalmente por la ficha. Solo entra en el '
               'escenario de taza y churros, que es OTRO negocio (D1): la Ley 12/2012 '
-              'los separa sola, porque su Anexo incluye el epigrafe 644.5 de bombones '
-              'y caramelos y NO contiene ningun grupo de la agrupacion 67, donde esta '
-              'la chocolateria de taza (`CHN-49c`).')},
+              'los separa sola, porque su Anexo incluye el epígrafe 644.5 de bombones '
+              'y caramelos y NO contiene ningún grupo de la agrupación 67, donde esta '
+              'la chocolatería de taza (`CHN-49c`).')},
 ]
 
 #: Subtotal comparable con el escenario publicado: la dotacion tipo de La Almendra,
 #: TODA llevada a base imponible. Los opcionales quedan fuera.
 def precio_equipamiento_sin_iva(eq):
-    """Precio de una linea llevado a base imponible. `base_iva` dice de donde parte:
+    """Precio de una línea llevado a base imponible. `base_iva` dice de donde parte:
     sin ese dato el CAPEX sale un 21 % desviado."""
     precio = eq['valor_verificado'] if eq['valor_verificado'] is not None \
         else eq['supuesto_por_defecto']
@@ -2099,27 +2112,27 @@ ESCENARIOS_DOTACION = {
     'A': {'nombre': 'Escenario A: profesional de entrada',
           'min': 24000.0, 'max': 24300.0, 'fuente': 'CHS-47a',
           'etiqueta': 'BASE MIXTA de IVA, no es presupuesto de apertura',
-          'nota': ('Suma de las lineas con precio verificado: atemperadora Selmi One '
+          'nota': ('Suma de las líneas con precio verificado: atemperadora Selmi One '
                    '(`CHS-41a`) + puesta en marcha + enrobadora R200 (`CHS-42a`) + '
                    'placa dosificadora (`CHS-42i`) + moldes en RANGO (`CHS-45a`) + '
-                   'temperador de bano maria (`CHS-41j`) + mantenedor «desde» '
+                   'temperador de baño maría (`CHS-41j`) + mantenedor «desde» '
                    '(`CHS-41i`). Se publica como RANGO porque dos de sus sumandos no '
-                   'son numeros cerrados.')},
-    'B': {'nombre': 'Escenario B: arranque minimo viable',
+                   'son números cerrados.')},
+    'B': {'nombre': 'Escenario B: arranque mínimo viable',
           'min': 5700.0, 'max': 5900.0, 'fuente': 'CHS-47b',
           'etiqueta': 'BASE MIXTA de IVA, no es presupuesto de apertura',
           'nota': ('5.670,69 a 5.894,25 euros aplicando a `CHS-47b` (5.740,29) el '
-                   'rango de moldes de D23a. El mantenedor es un «desde», asi que el '
+                   'rango de moldes de D23a. El mantenedor es un «desde», así que el '
                    'techo solo puede subir. El suelo de 5.500 euros que se publico '
                    'primero estaba 170 euros por debajo de lo que produce el propio '
-                   'metodo.')},
+                   'método.')},
 }
 NOTA_ESCENARIOS = (
     'PROHIBIDO restar o comparar aritmeticamente los dos escenarios, y prohibido '
     'presentar cualquiera de los dos totales como cifra fiscal. Lo que SI se conserva '
-    'es el hallazgo cualitativo: entre el arranque minimo y el profesional de entrada '
+    'es el hallazgo cualitativo: entre el arranque mínimo y el profesional de entrada '
     'hay un factor 4. Y el contraste con los 20.000-30.000 euros de `CHS-03` pierde '
-    'la aritmetica y conserva la leccion: una cifra de inversion que no dice cual de '
+    'la aritmética y conserva la lección: una cifra de inversión que no dice cual de '
     'los dos escenarios describe no sirve para decidir nada.')
 
 
@@ -2139,65 +2152,65 @@ NOTA_ESCENARIOS = (
 #: defecto ALTO que esta familia ya pago en Pasteleria.
 CAPEX = [
     # (bloque, partida, importe, base_iva, tipo_iva, fuente, nota)
-    ('Obra y adecuacion', 'Obra y adecuacion del local (75 m2 x 380 euros/m2)',
+    ('Obra y adecuación', 'Obra y adecuación del local (75 m² x 380 euros/m²)',
      28500.0, 'sin IVA', 0.21, 'supuesto',
-     'SUPUESTO declarado: ninguna fuente del research publica un coste de obra por m2 '
-     'de obrador de chocolate. Es mas barata que la de una pasteleria por un motivo '
-     'estructural: un obrador de chocolate NO genera humos, asi que no hay conducto a '
-     'cubierta ni la conversacion con la comunidad de propietarios que lo acompana. '
+     'SUPUESTO declarado: ninguna fuente del research publica un coste de obra por m² '
+     'de obrador de chocolate. Es mas barata que la de una pastelería por un motivo '
+     'estructural: un obrador de chocolate NO genera humos, así que no hay conducto a '
+     'cubierta ni la conversación con la comunidad de propietarios que lo acompaña. '
      'Publicar esta cifra como dato verificado esta prohibido (§5.1, 28).'),
-    ('Climatizacion y deshumidificacion', 'Climatizacion del obrador con deshumidificacion',
+    ('Climatización y deshumidificación', 'Climatización del obrador con deshumidificación',
      None, 'sin IVA', 0.21, 'supuesto',
      'Se calcula desde EQUIPAMIENTO: `equipamiento_bloque_sin_iva()`. Bloque propio '
      'porque en chocolate el clima NO es una partida de confort: es la que decide si '
      'la cobertura cristaliza.'),
-    ('Equipo de templado y moldeado', 'Tren de templado, moldeado y dosificacion',
+    ('Equipo de templado y moldeado', 'Tren de templado, moldeado y dosificación',
      None, 'sin IVA', 0.21, 'CHS-41a + CHS-41i + CHS-41j + CHS-42a + CHS-42i',
-     'Se calcula desde EQUIPAMIENTO. Cinco lineas con precio verificado y una que es '
+     'Se calcula desde EQUIPAMIENTO. Cinco líneas con precio verificado y una que es '
      'un «desde».'),
-    ('Frio', 'Camara de chocolate, nevera de rellenos y vitrina',
+    ('Frío', 'Cámara de chocolate, nevera de rellenos y vitrina',
      None, 'sin IVA', 0.21, 'CHS-43 + supuesto',
      'Se calcula desde EQUIPAMIENTO. Solo la vitrina tiene precio verificado.'),
-    ('Mobiliario y tienda', 'Mobiliario de tienda, mostrador y estanteria',
+    ('Mobiliario y tienda', 'Mobiliario de tienda, mostrador y estantería',
      None, 'sin IVA', 0.21, 'supuesto',
      'Se calcula desde EQUIPAMIENTO.'),
     ('Packaging y moldes', 'Moldes de policarbonato y primer pedido de packaging',
      None, 'sin IVA', 0.21, 'CHS-45a + supuesto',
      'Se calcula desde EQUIPAMIENTO. Los moldes entran como RANGO (D23a) y NO pagan '
      'el impuesto al plastico (`CHN-62c`).'),
-    ('TPV, informatica y rotulo', 'TPV, ordenador, impresora de etiquetas y rotulo',
+    ('TPV, informática y rótulo', 'TPV, ordenador, impresora de etiquetas y rótulo',
      None, 'sin IVA', 0.21, 'supuesto',
      'Se calcula desde EQUIPAMIENTO.'),
     ('Fianza y licencias', 'Fianza de arrendamiento (2 meses)',
      2600.0, 'sin IVA', 0.00, 'supuesto',
      'La fianza NO es un gasto: es un deposito que se recupera. Va en el CAPEX porque '
-     'hay que tenerla el dia de la firma, y por eso no se amortiza.'),
-    ('Fianza y licencias', 'Proyecto tecnico visado',
+     'hay que tenerla el día de la firma, y por eso no se amortiza.'),
+    ('Fianza y licencias', 'Proyecto técnico visado',
      4500.0, 'sin IVA', 0.21, 'supuesto',
-     'SUPUESTO declarado. `CHN-50` (coste de proyecto tecnico) esta en EXCLUIDOS de la '
-     'verificacion legal: no hay fuente, y publicar una cifra de proyecto tecnico como '
+     'SUPUESTO declarado. `CHN-50` (coste de proyecto técnico) esta en EXCLUIDOS de la '
+     'verificación legal: no hay fuente, y publicar una cifra de proyecto técnico como '
      'dato verificado esta prohibido (§5.1, 28).'),
     ('Fianza y licencias', 'Tasas municipales',
      1200.0, 'sin IVA', 0.00, 'supuesto',
      'Las tasas municipales no llevan IVA y su importe cambia en cada ayuntamiento: es '
-     'el numero que hay que ir a buscar, no copiar. Y ojo: ningun ayuntamiento puede '
-     'exigirte LICENCIA PREVIA de instalacion, funcionamiento o actividad hasta 750 m2 '
-     'de superficie util de exposicion y venta, porque el epigrafe 644.5 esta en el '
-     'Anexo de la Ley 12/2012 (`CHN-49`, `CHN-49b`). Decir que tramite pide Madrid o '
+     'el número que hay que ir a buscar, no copiar. Y ojo: ningún ayuntamiento puede '
+     'exigirte LICENCIA PREVIA de instalación, funcionamiento o actividad hasta 750 m² '
+     'de superficie útil de exposición y venta, porque el epígrafe 644.5 esta en el '
+     'Anexo de la Ley 12/2012 (`CHN-49`, `CHN-49b`). Decir que trámite pide Madrid o '
      'Barcelona esta PROHIBIDO: no se ha abierto ninguna ordenanza.'),
-    ('Fianza y licencias', 'Comunicacion o declaracion responsable al registro autonomico',
+    ('Fianza y licencias', 'Comunicación o declaración responsable al registro autonómico',
      120.0, 'sin IVA', 0.00, 'CHN-39 + supuesto',
-     'NO es una licencia y NO habilita para abrir: es el tramite de informacion del '
+     'NO es una licencia y NO habilita para abrir: es el trámite de información del '
      'minorista, que esta EXCLUIDO del RGSEAA (`CHN-39`). El importe es supuesto y en '
      'varias comunidades es gratuito; en la Comunitat Valenciana lleva tasa y es '
-     'condicion unica y suficiente para iniciar la actividad, y en Madrid se presenta '
+     'condición única y suficiente para iniciar la actividad, y en Madrid se presenta '
      'simultaneamente al inicio y no habilita (`CHN-43`).'),
-    ('Fondo de maniobra', 'Fondo de maniobra traido del libro 7 (EUR)',
+    ('Fondo de maniobra', 'Fondo de maniobra traído del libro 7 (EUR)',
      None, 'sin IVA', 0.00, 'supuesto',
      'LLEGA YA CALCULADO DEL LIBRO 7 por celda verde con fila de cuadre (cruce 2 <- 7). '
-     'El libro 2 NO pide «meses de colchon»: los dos factores del fondo -los meses y '
-     'los gastos fijos del ano de crucero- viven en el libro 7. Es caja, no inversion, '
-     'y por eso el «Resumen» publica DOS lineas: «CAPEX sin el fondo de maniobra» (la '
+     'El libro 2 NO pide «meses de colchón»: los dos factores del fondo -los meses y '
+     'los gastos fijos del año de crucero- viven en el libro 7. Es caja, no inversión, '
+     'y por eso el «Resumen» publica DOS líneas: «CAPEX sin el fondo de maniobra» (la '
      'que viaja al libro 7) y «Del cual, fondo de maniobra».'),
 ]
 
@@ -2206,13 +2219,13 @@ CAPEX = [
 #: existencias y una caja no se comparan contra un presupuesto de obra y equipamiento.
 #: El bloque «fianza y licencias» sale ENTERO, no medio: partirlo para rescatar las
 #: licencias seria inventar un decimo bloque sin dato propio.
-BLOQUES_COMPARABLES = ('Obra y adecuacion', 'Climatizacion y deshumidificacion',
-                       'Equipo de templado y moldeado', 'Frio',
-                       'Mobiliario y tienda', 'TPV, informatica y rotulo')
+BLOQUES_COMPARABLES = ('Obra y adecuación', 'Climatización y deshumidificación',
+                       'Equipo de templado y moldeado', 'Frío',
+                       'Mobiliario y tienda', 'TPV, informática y rótulo')
 
-BLOQUES_CAPEX = ('Obra y adecuacion', 'Climatizacion y deshumidificacion',
-                 'Equipo de templado y moldeado', 'Frio', 'Mobiliario y tienda',
-                 'Packaging y moldes', 'TPV, informatica y rotulo',
+BLOQUES_CAPEX = ('Obra y adecuación', 'Climatización y deshumidificación',
+                 'Equipo de templado y moldeado', 'Frío', 'Mobiliario y tienda',
+                 'Packaging y moldes', 'TPV, informática y rótulo',
                  'Fianza y licencias', 'Fondo de maniobra')
 
 
@@ -2231,60 +2244,66 @@ VARIANTES = {
             'Tostador de grano', 'Bandeja de enfriado', 'Descascarilladora',
             'Winnower (aventadora)', 'Melanger o refinadora de piedra',
             'Concha', 'Prensa de manteca (solo si separas manteca)',
-            'Tamizadora', 'Balanza de precision para la formulacion',
+            'Tamizadora', 'Balanza de precisión para la formulación',
         ),
         'preguntas_al_proveedor': (
-            'Precio de la maquina puesta en Espana, con transporte, aduana y puesta '
-            'en marcha desglosados: los catalogos existen y estan verificados, pero '
+            'Precio de la máquina puesta en España, con transporte, aduana y puesta '
+            'en marcha desglosados: los catálogos existen y están verificados, pero '
             'los precios NO son publicos (venta a presupuesto o tienda fuera de la UE).',
-            'Plazo de entrega real y quien hace el mantenimiento en Espana.',
-            'Potencia electrica y si necesita trifasica.',
+            'Plazo de entrega real y quien hace el mantenimiento en España.',
+            'Potencia eléctrica y si necesita trifasica.',
             'Ruido en dB a un metro: el tostador y el winnower son los dos equipos '
-            'ruidosos de un obrador que por lo demas es silencioso.',
+            'ruidosos de un obrador que por lo demás es silencioso.',
             'Rendimiento en kg de grano por hora y merma de cascarilla.',
         ),
-        'nota': ('SIN CIFRAS DE MAQUINARIA A PROPOSITO (D2): no existe precio publico '
+        # UNA SOLA LINEA, sin saltos: esta celda se publica como fila de una
+        # tabla Markdown, y un salto de linea dentro de una celda parte la
+        # tabla entera. Sin backticks y sin identificadores internos de la
+        # SPEC, que se imprimian literales en la pagina 1 del PDF.
+        'nota': ('SIN CIFRAS DE MAQUINARIA A PROPÓSITO: no existe precio público '
                  'verificado del tren bean-to-bar, y lo que se entrega es la lista de '
                  'la compra y las preguntas que hay que hacer. Inventar el precio '
-                 'seria justo el patron que la casa prohibe.\n'
+                 'sería justo el patrón que la casa prohíbe. · '
                  'Y la variante SUBE DE VALOR por dos motivos legales: (1) si importas '
                  'grano ERES OPERADOR a efectos del EUDR, con diligencia debida '
-                 'completa, declaracion presentada previamente y registro cinco anos '
-                 '(`CHN-25`), no operador posterior; (2) el TOSTADO te puede meter en '
+                 'completa, declaración presentada previamente y registro cinco años '
+                 '(CHN-25), no operador posterior; (2) el TOSTADO te puede meter en '
                  'el CAPCA, y la nota (2) de su Anexo sube de grupo C a B cuando la '
-                 'actividad se desarrolla a menos de 500 m de un NUCLEO DE POBLACION '
-                 '(`CHN-47b`), es decir, en ciudad SIEMPRE. Ojo: «cacao» y «chocolate» '
-                 'tienen 0 ocurrencias en el CAPCA, asi que encajar el tostado de '
-                 'cacao en «cafe o similares» es INTERPRETACION, no mencion expresa '
-                 '(`CHN-47`).')},
+                 'actividad se desarrolla a menos de 500 m de un NÚCLEO DE POBLACIÓN '
+                 '(CHN-47b), es decir, en ciudad SIEMPRE. Ojo: «cacao» y «chocolate» '
+                 'tienen 0 ocurrencias en el CAPCA, así que encajar el tostado de '
+                 'cacao en «café o similares» es INTERPRETACIÓN, no mención expresa '
+                 '(CHN-47).')},
     'taza-y-churros': {
-        'nombre': 'Chocolateria de taza y churros',
+        'nombre': 'Chocolatería de taza y churros',
         'lleva_cifras_maquinaria': True,
         'capex_extra': None,
         'fuente': 'CHS-46a + CHN-48 + CHN-49c',
         'equipos_con_precio': (('Chocolatera Ugolini Delice 3 (3 L)', 527.00, 'CHS-46a',
                                 'sin IVA'),),
-        'equipos_sin_precio': ('Churrera', 'Freidora', 'Extraccion de humos',
+        'equipos_sin_precio': ('Churrera', 'Freidora', 'Extracción de humos',
                                'Campana y conducto a cubierta'),
-        'obligacion_extra': ('Si hay freidora de gas, inspeccion periodica obligatoria '
-                             'de la instalacion receptora CADA CINCO ANOS, que en '
+        'obligacion_extra': ('Si hay freidora de gas, inspección periódica obligatoria '
+                             'de la instalación receptora CADA CINCO AÑOS, que en '
                              'instalaciones de hasta 70 kW incluye los aparatos y '
-                             'comprueba la ventilacion y el volumen minimo del local '
+                             'comprueba la ventilación y el volumen mínimo del local '
                              '(`CHN-48`).'),
-        'nota': ('ES OTRO NEGOCIO, y la norma lo separa sola (D1): el Anexo de la Ley '
-                 '12/2012 incluye el epigrafe 644.5 «Comercio al por menor de bombones '
-                 'y caramelos» y NO contiene ningun grupo de la agrupacion 67, donde '
-                 'esta la chocolateria de taza (grupo 676). O sea que la bomboneria se '
-                 'libra de la licencia previa hasta 750 m2 y la chocolateria de taza '
-                 'no (`CHN-49`, `CHN-49b`, `CHN-49c`).\n'
-                 'Lo que SI aporta: el chocolate convierte una racion de churros de '
-                 '2,50 euros en 3,50-4 euros, un 40-60 % mas de ticket (`CHS-32`), y '
-                 'el margen bruto del churro es del 85-90 % (`CHS-31`) - aunque un '
-                 'maestro churrero citado lo rebaja a «un poco mas del 50 %», y los '
-                 'dos numeros se publican con su por que, no se elige el mas bonito.\n'
-                 'Lo que cuesta: freidora, extraccion de humos y la licencia que la '
-                 'bomboneria se ahorra. Los precios de churrera, freidora y extraccion '
-                 'NO estan verificados (`CHS-49`).')},
+        # Misma regla que la variante de arriba: una sola linea, sin backticks
+        # y sin «(D1)».
+        'nota': ('ES OTRO NEGOCIO, y la norma lo separa sola: el Anexo de la Ley '
+                 '12/2012 incluye el epígrafe 644.5 «Comercio al por menor de bombones '
+                 'y caramelos» y NO contiene ningún grupo de la agrupación 67, donde '
+                 'está la chocolatería de taza (grupo 676). O sea que la bombonería se '
+                 'libra de la licencia previa hasta 750 m² y la chocolatería de taza '
+                 'no (CHN-49, CHN-49b, CHN-49c). · '
+                 'Lo que SÍ aporta: el chocolate convierte una ración de churros de '
+                 '2,50 euros en 3,50-4 euros, un 40-60 % más de ticket (CHS-32), y '
+                 'el margen bruto del churro es del 85-90 % (CHS-31) - aunque un '
+                 'maestro churrero citado lo rebaja a «un poco más del 50 %», y los '
+                 'dos números se publican con su por qué, no se elige el más bonito. · '
+                 'Lo que cuesta: freidora, extracción de humos y la licencia que la '
+                 'bombonería se ahorra. Los precios de churrera, freidora y extracción '
+                 'NO están verificados (CHS-49).')},
 }
 
 #: Traspasos reales de churreria-chocolateria, que son de OTRO formato (D1) y se
@@ -2293,7 +2312,7 @@ TRASPASOS_VARIANTE_TAZA = [
     # (zona, m2, traspaso pedido, renta, fuente)
     ('Elche (Alicante)', 75, None, None, 'CHS-37a'),
     ('Madrid (Vallecas)', 74, 88500.0, 910.0, 'CHS-37b'),
-    ('Mataro (Barcelona)', 118, 58000.0, None, 'CHS-37c'),
+    ('Mataró (Barcelona)', 118, 58000.0, None, 'CHS-37c'),
 ]
 
 
@@ -2311,25 +2330,25 @@ FRANQUICIAS = [
      'm2_minimos': 55, 'contrato_anios': 5, 'establecimientos': 42,
      'fuente': 'CHS-58', 'fecha_consulta': '12-09-2026',
      'etiqueta': 'orden de magnitud publicado por el portal de franquicias, no dato auditado',
-     'nota': ('El local mas pequeno de todo el research: 55 m2. Prueba que el formato '
-              'chocolate-boutique cabe donde una pasteleria no. Barcelona, 2012.')},
+     'nota': ('El local mas pequeño de todo el research: 55 m². Prueba que el formato '
+              'chocolate-boutique cabe donde una pastelería no. Barcelona, 2012.')},
     {'marca': 'Maestro Churrero', 'formato': 'churreria-chocolateria (variante de taza)',
      'inversion_desde': None, 'canon': None, 'royalty_pct': None,
      'm2_minimos': None, 'contrato_anios': None, 'establecimientos': None,
      'fuente': 'sin id verificado',
      'fecha_consulta': None,
-     'etiqueta': 'HUECO DECLARADO: no hay ficha con id en el JSON comun',
+     'etiqueta': 'HUECO DECLARADO: no hay ficha con id en el JSON común',
      'nota': ('HUECO DELIBERADO. La SPEC menciona esta franquicia en D11 como segunda '
-              'ficha admitida, pero al censar el JSON comun el 12-09-2026 NO existe '
-              'ninguna entrada `CHS-*` con sus cifras: la unica ficha que la roza es '
+              'ficha admitida, pero al censar el JSON común el 12-09-2026 NO existe '
+              'ninguna entrada `CHS-*` con sus cifras: la única ficha que la roza es '
               '`CHS-31`, que solo publica el margen bruto del churro. La regla de la '
-              'casa es que ninguna cifra con pretension de dato real entra sin id, '
-              'asi que aqui va la fila con la marca y SIN numeros. Si alguien quiere '
+              'casa es que ninguna cifra con pretensión de dato real entra sin id, '
+              'así que aquí va la fila con la marca y SIN números. Si alguien quiere '
               'publicarlos, primero hay que crear su ficha con URL y fecha.')},
 ]
 NOTA_FRANQUICIAS = (
     'Canon mas royalty mas compra obligada a central: una franquicia es cuatro o '
-    'cinco veces la inversion del formato independiente de `CHS-03`. La columna '
+    'cinco veces la inversión del formato independiente de `CHS-03`. La columna '
     'existe para que el lector compare, no para recomendar. Y toda cifra va con su '
     'etiqueta: es lo que publica un portal de franquicias, no una cuenta auditada.')
 
@@ -2343,26 +2362,26 @@ NOTA_FRANQUICIAS = (
 #: equipado y 40 anos de clientela.
 TRASPASOS = [
     # (zona, tipo, m2, traspaso pedido, renta mensual, fuente)
-    ('El Prat de Llobregat (Barcelona)', 'Pasteleria-bomboneria con obrador (40+ anos)',
+    ('El Prat de Llobregat (Barcelona)', 'Pastelería-bombonería con obrador (40+ años)',
      90, 26000.0, 1100.0, 'CHS-38a'),
-    ('Reus (Tarragona)', 'Pasteleria-bomboneria historica (34 anos)',
+    ('Reus (Tarragona)', 'Pastelería-bombonería histórica (34 años)',
      300, 73000.0, None, 'CHS-38b'),
-    ('Barcelona (Sagrada Familia)', 'Pasteleria-bomboneria con obrador a la vista',
+    ('Barcelona (Sagrada Familia)', 'Pastelería-bombonería con obrador a la vista',
      180, 140000.0, 2200.0, 'CHS-38c'),
-    ('Valencia (Abastos)', 'Pasteleria con obrador profesional',
+    ('Valencia (Abastos)', 'Pastelería con obrador profesional',
      100, 180000.0, None, 'CHS-38d'),
-    ("Llica d'Amunt (Barcelona)", 'Obrador de pasteleria y panaderia',
+    ("Lliçà d'Amunt (Barcelona)", 'Obrador de pastelería y panadería',
      400, 210000.0, None, 'CHS-38e'),
 ]
 TRASPASO_RANGO = (26000.0, 210000.0, 'CHS-39')
 RENTA_OBSERVADA_RANGO = (910.0, 2200.0, 'CHS-37b + CHS-38c')
 NOTA_TRASPASOS = (
-    'Cinco traspasos de pasteleria-bomboneria leidos el 12-09-2026 en portales de '
+    'Cinco traspasos de pasteleria-bomboneria leídos el 12-09-2026 en portales de '
     'anuncios (`CHS-38a` a `CHS-38e`), mas los tres de churreria-chocolateria de '
     '`TRASPASOS_VARIANTE_TAZA`, que son de OTRO formato. El rango publicado va de '
     '26.000 a 210.000 euros (`CHS-39`) y la renta observada de 910 a 2.200 euros/mes. '
-    'Traspasar puede salir mas barato que montar de cero, y esa es la comparacion a '
-    'cinco anos que hace el libro 2. Pero son precios PEDIDOS, no pagados.')
+    'Traspasar puede salir mas barato que montar de cero, y esa es la comparación a '
+    'cinco años que hace el libro 2. Pero son precios PEDIDOS, no pagados.')
 
 
 # ==========================================================================
@@ -2378,25 +2397,25 @@ PLASTICO = {
     'fuente_umbral': 'CHN-62b',
     'kg_mes_ejemplo': 3.2,
     'fuente_kg_mes': 'supuesto',
-    'que_grava': ('la fabricacion, la importacion y la adquisicion intracomunitaria '
+    'que_grava': ('la fabricación, la importación y la adquisición intracomunitaria '
                   'de envases NO reutilizables que contengan plastico; NO la compra '
-                  'en Espana a un proveedor espanol, que ya lo lleva repercutido'),
+                  'en España a un proveedor español, que ya lo lleva repercutido'),
     'que_exime': ('el art. 75.f) exime la IMPORTACION o ADQUISICION INTRACOMUNITARIA '
                   'que no exceda de 5 kilogramos en un mes, y SOLO de los envases del '
-                  'art. 68.1.a): NO exime la fabricacion, NI los semielaborados, NI '
+                  'art. 68.1.a): NO exime la fabricación, NI los semielaborados, NI '
                   'los cierres'),
     'moldes_no_sujetos': True,
     'fuente_moldes': 'CHN-62c',
     'registro_territorial': ('el art. 82.3 obliga a inscribirse en el Registro '
                             'territorial «salvo aquellos que se determine mediante '
                             'Orden»'),
-    'nota': ('Los moldes de policarbonato NO pagan: no estan sujetos por el art. 73.d) '
-             'porque, pudiendo contener, no estan disenados para entregarse junto con '
-             'la mercancia, y ademas el impuesto solo grava envases NO reutilizables '
-             '(`CHN-62c`). Estan PROHIBIDAS las dos frases faciles: «el impuesto no te '
+    'nota': ('Los moldes de policarbonato NO pagan: no están sujetos por el art. 73.d) '
+             'porque, pudiendo contener, no están disenados para entregarse junto con '
+             'la mercancía, y además el impuesto solo grava envases NO reutilizables '
+             '(`CHN-62c`). Están PROHIBIDAS las dos frases faciles: «el impuesto no te '
              'afecta si compras los envases» y su contrario «te afecta siempre». Lo '
              'que decide es DONDE compras y QUE compras, y por eso el libro 2 pide los '
-             'kg/mes importados o adquiridos en otro pais de la UE, no los kg totales.')}
+             'kg/mes importados o adquiridos en otro país de la UE, no los kg totales.')}
 
 
 # ==========================================================================
@@ -2423,42 +2442,42 @@ GASTOS_FIJOS_MENSUALES = [
      'CHN-65b + motor.PARAMETROS[ss_empresa]',
      'Se calcula desde PLANTILLA y CONVENIO: 3 personas, 2,5 jornadas, 15 pagas. La '
      'tabla salarial es la de Madrid y va MARCADA COMO EJEMPLO (D43).'),
-    ('Cuota de autonomos del titular', 320.0, 'supuesto',
-     'El titular es el Encargado y su retribucion YA esta en la nomina: lo que va '
-     'aparte es su cuota. Ponerle ademas un renglon de «retribucion del propietario» '
+    ('Cuota de autónomos del titular', 320.0, 'supuesto',
+     'El titular es el Encargado y su retribución YA esta en la nomina: lo que va '
+     'aparte es su cuota. Ponerle además un renglón de «retribución del propietario» '
      'seria contarlo dos veces.'),
     ('Alquiler del local', 1300.0, 'supuesto', 'Ver `NEGOCIO[renta_mensual]`.'),
-    ('Suministros (electricidad, agua y climatizacion)', 780.0, 'supuesto',
-     'Un obrador de chocolate no tiene hornos, pero tiene TRES equipos de frio y una '
-     'climatizacion con deshumidificacion funcionando 24 horas, y en agosto a pleno. '
-     'No se estima: se pide la simulacion a la comercializadora con la potencia del '
-     'proyecto electrico.'),
+    ('Suministros (electricidad, agua y climatización)', 780.0, 'supuesto',
+     'Un obrador de chocolate no tiene hornos, pero tiene TRES equipos de frío y una '
+     'climatización con deshumidificación funcionando 24 horas, y en agosto a pleno. '
+     'No se estima: se pide la simulación a la comercializadora con la potencia del '
+     'proyecto eléctrico.'),
     ('Seguros', 110.0, 'supuesto',
      'Responsabilidad civil y continente. `CHN-70` (seguro de RC) esta en EXCLUIDOS de '
-     'la verificacion legal: no esta verificado como obligatorio y depende de la '
-     'comunidad autonoma. Publicar una cifra de seguro de RC como dato verificado esta '
+     'la verificación legal: no esta verificado como obligatorio y depende de la '
+     'comunidad autónoma. Publicar una cifra de seguro de RC como dato verificado esta '
      'prohibido (§5.1, 28).'),
-    ('Gestoria y asesoria', 200.0, 'supuesto', ''),
+    ('Gestoría y asesoría', 200.0, 'supuesto', ''),
     ('Software, TPV y pasarela de cobro', 60.0, 'supuesto',
      'Con Verifactu en el horizonte (`CHN-75`: 1-ene-2027 para sociedades y '
-     '1-jul-2027 para autonomos, NO 2026), esta cuota deja de ser opcional.'),
-    ('Telefonia e internet', 55.0, 'supuesto', ''),
+     '1-jul-2027 para autónomos, NO 2026), esta cuota deja de ser opcional.'),
+    ('Telefonía e internet', 55.0, 'supuesto', ''),
     ('Limpieza y consumibles', 140.0, 'supuesto',
-     'Incluye guantes y utillaje dedicado: el equipo usado con un alergeno no se '
+     'Incluye guantes y utillaje dedicado: el equipo usado con un alérgeno no se '
      'reutiliza para otro alimento sin limpiarlo (`CHN-33`).'),
     ('Mantenimiento de equipos', 130.0, 'supuesto',
-     'Si la variante de taza y churros lleva freidora de gas, suma la inspeccion '
-     'periodica obligatoria cada cinco anos, que se repercute (`CHN-48`).'),
+     'Si la variante de taza y churros lleva freidora de gas, suma la inspección '
+     'periódica obligatoria cada cinco años, que se repercute (`CHN-48`).'),
     ('Publicidad y redes', 180.0, 'supuesto', ''),
     ('Otros gastos de estructura', 130.0, 'supuesto', ''),
-    ('Amortizacion del inmovilizado', None, 'supuesto',
-     'CAPEX amortizable / anos de amortizacion. Sin ella, la rentabilidad publicada es '
+    ('Amortización del inmovilizado', None, 'supuesto',
+     'CAPEX amortizable / años de amortización. Sin ella, la rentabilidad publicada es '
      'mentira: la atemperadora se gasta.'),
-    ('Gastos financieros del prestamo', None, 'supuesto',
-     'Intereses del ANO DE CRUCERO (el ano 2), no los del ano 1, que es el de la '
-     'carencia: esta lista es la foto de un mes normal. Con los del ano 1, la '
-     'calculadora de CAPEX y el plan financiero publicarian dos inversiones totales '
-     'distintas para la misma bomboneria.'),
+    ('Gastos financieros del préstamo', None, 'supuesto',
+     'Intereses del AÑO DE CRUCERO (el año 2), no los del año 1, que es el de la '
+     'carencia: esta lista es la foto de un mes normal. Con los del año 1, la '
+     'calculadora de CAPEX y el plan financiero publicarían dos inversiones totales '
+     'distintas para la misma bombonería.'),
 ]
 
 
@@ -2477,15 +2496,15 @@ FINANCIACION = {
     'carencia_meses': 6,
     'fuente': 'supuesto',
     'nota': ('Todo supuesto: las condiciones las pone tu banco y dependen de la '
-             'garantia. La carencia de 6 meses es la que hace que el prestamo no se '
+             'garantía. La carencia de 6 meses es la que hace que el préstamo no se '
              'coma la caja justo en la rampa de arranque, y es lo primero que hay que '
              'negociar. Durante la carencia solo se pagan intereses.\n'
              'EL PRINCIPAL NO SE TECLEA: lo DERIVA `principal_prestamo()` como el 60 % '
-             'de la inversion total, redondeado a centenas. Si manana cambia una sola '
+             'de la inversión total, redondeado a centenas. Si mañana cambia una sola '
              'partida del CAPEX, el principal se mueve SOLO y la estructura 40/60 sigue '
-             'saliendo exacta. Antes era un numero fijo que habia que acordarse de '
-             'ajustar a mano, y esa es la definicion del defecto que esta familia ya '
-             'pago en Pasteleria.')}
+             'saliendo exacta. Antes era un número fijo que había que acordarse de '
+             'ajustar a mano, y esa es la definición del defecto que esta familia ya '
+             'pago en Pastelería.')}
 
 
 #: El principal es un PUNTO FIJO, y por eso hace falta una funcion y no una constante:
@@ -2498,8 +2517,8 @@ _PRINCIPAL = {'valor': None, 'provisional': None}
 
 
 def _principal_en_uso():
-    """El principal con el que trabajar AHORA MISMO. Durante la iteracion del punto
-    fijo devuelve el provisional; despues, el definitivo. `cuadro_frances()` lo llama
+    """El principal con el que trabajar AHORA MISMO. Durante la iteración del punto
+    fijo devuelve el provisional; después, el definitivo. `cuadro_frances()` lo llama
     en vez de leer una constante."""
     if _PRINCIPAL['valor'] is not None:
         return _PRINCIPAL['valor']
@@ -2517,7 +2536,7 @@ def _principal_en_uso():
 
 
 def principal_prestamo():
-    """El 60 % de la inversion total, redondeado a centenas. SE DERIVA, no se teclea."""
+    """El 60 % de la inversión total, redondeado a centenas. SE DERIVA, no se teclea."""
     if _PRINCIPAL['valor'] is not None:
         return _PRINCIPAL['valor']
     pr = round(FINANCIACION['pct_prestamo'] * capex_sin_fondo_de_maniobra(), -2)
@@ -2538,10 +2557,10 @@ def principal_prestamo():
 
 
 def cuadro_frances():
-    """Intereses MES A MES del prestamo: interes sobre el saldo vivo, carencia de
-    principal y cuota francesa algebraica. Vive aqui, y no solo en el generador del
-    libro 7, porque los intereses del ano de crucero entran en los gastos fijos y de
-    ahi en el fondo de maniobra."""
+    """Intereses MES A MES del préstamo: interés sobre el saldo vivo, carencia de
+    principal y cuota francesa algebraica. Vive aquí, y no solo en el generador del
+    libro 7, porque los intereses del año de crucero entran en los gastos fijos y de
+    ahí en el fondo de maniobra."""
     saldo = _principal_en_uso()
     i = FINANCIACION['tipo_nominal'] / 12.0
     n_total = FINANCIACION['plazo_meses']
@@ -2589,72 +2608,72 @@ def intereses_anio_crucero():
 #: cumplen: por eso es un ARBOL, no una columna con semaforo.
 PAPELES_EUDR = ('operador', 'operador posterior', 'comerciante')
 PAPELES_EUDR_TEXTO = {
-    'operador': ('Hace la PRIMERA comercializacion en el mercado de la Union, o '
+    'operador': ('Hace la PRIMERA comercialización en el mercado de la Unión, o '
                  'exporta. Si es tu caso -por ejemplo, importas grano para '
                  'bean-to-bar-, te toca diligencia debida COMPLETA antes de introducir '
-                 'en el mercado, declaracion presentada previamente, asuncion de '
-                 'responsabilidad y registro de las declaraciones durante cinco anos '
-                 '(`CHN-25`). A ESTE proveedor SI hay que pedirle el numero de '
+                 'en el mercado, declaración presentada previamente, asunción de '
+                 'responsabilidad y registro de las declaraciones durante cinco años '
+                 '(CHN-25). A ESTE proveedor SI hay que pedirle el número de '
                  'referencia de su DDS.'),
     'operador posterior': ('Introduce en el mercado productos elaborados con otros '
-                           'productos YA amparados por una declaracion de diligencia '
-                           'debida (`CHN-23`, art. 2.15 ter). Es lo que normalmente '
-                           'sera una chocolateria que compra cobertura ya '
-                           'comercializada en la UE. A este NO se le pide el numero de '
+                           'productos YA amparados por una declaración de diligencia '
+                           'debida (CHN-23, art. 2.15 ter). Es lo que normalmente '
+                           'será una chocolatería que compra cobertura ya '
+                           'comercializada en la UE. A este NO se le pide el número de '
                            'DDS por el art. 5.3.a).'),
     'comerciante': ('Ni introduce ni exporta: comercia dentro. Tampoco se le pide el '
-                    'numero de DDS.'),
+                    'número de DDS.'),
 }
 NOTA_EUDR = (
     'REDACCION OBLIGATORIA, y el paso es INFERENCIA DECLARADA, no nivel A: «si tu '
-    'cobertura llega ya comercializada en la UE y amparada por una declaracion de '
+    'cobertura llega ya comercializada en la UE y amparada por una declaración de '
     'diligencia debida, eres operador posterior (art. 2.15 ter) y el aplazamiento del '
     'art. 38.3 -que es para operadores- no te alcanza: tu fecha es el 30 de diciembre '
     'de 2026. Si tu cobertura NO esta amparada (compra anterior al EUDR, proveedor que '
-    'no lo acredita), la calificacion deja de ser automatica y hay que revisarla». '
-    'Estan PROHIBIDAS «siempre eres operador posterior» y «tu fecha es el 30-12-2026 '
-    'pase lo que pase». Y la exclusion de los operadores posteriores del punto 15 se '
+    'no lo acredita), la calificación deja de ser automática y hay que revisarla». '
+    'Están PROHIBIDAS «siempre eres operador posterior» y «tu fecha es el 30-12-2026 '
+    'pase lo que pase». Y la exclusión de los operadores posteriores del punto 15 se '
     'PARAFRASEA, no se entrecomilla: consta en la nota de `CHN-22`, no entre las 81 '
     'citas del gate de literalidad. Verificado a 12-09-2026: comprueba el estado del '
     'EUDR antes de comprar cacao.')
 
 PROVEEDORES = [
     # (nombre, categoria, url, fuente, papel_eudr (vacio: lo rellena el lector), nota)
-    ('Callebaut / Barry Callebaut Iberica', 'Coberturas y chocolate profesional',
+    ('Callebaut / Barry Callebaut Ibérica', 'Coberturas y chocolate profesional',
      'https://www.callebaut.com/es-ES/', 'CHS-50', '',
-     'Mayor grupo del sector con presencia industrial en Espana. De aqui sale la '
+     'Mayor grupo del sector con presencia industrial en España. De aquí sale la '
      'referencia de precio del juego de datos (`CHS-28a`): Callebaut 811, bloque de '
      '5 kg a 125,08 euros CON IVA, o sea 25,02 euros/kg.'),
-    ('Asociacion Chocolate Bean to Bar Espana', 'Grano de cacao para bean-to-bar',
+    ('Asociación Chocolate Bean to Bar España', 'Grano de cacao para bean-to-bar',
      'https://www.chocolatebeantobar.com/asociados/', 'CHS-51', '',
-     'La via fiable para el grano: su listado publico permite identificar a los '
+     'La vía fiable para el grano: su listado publico permite identificar a los '
      'makers y a los importadores. Se publica como «MAS DE 40 MIEMBROS», nunca con '
-     'una cifra cerrada (`N-18` prohibe «45 miembros»). Ojo: las webs individuales de '  # LN-OK
-     'los proveedores de grano NO se abrieron, asi que no se publica ninguna.'),
+     'una cifra cerrada (`N-18` prohíbe «45 miembros»). Ojo: las webs individuales de '  # LN-OK
+     'los proveedores de grano NO se abrieron, así que no se publica ninguna.'),
     ('Utilcentre', 'Maquinaria de chocolate (distribuidor Selmi y Pavoni)',
      'https://www.utilcentre.com/maquinaria-chocolate.html', 'CHS-52', '',
      'Precios publicos, y es de donde salen `CHS-41a` a `CHS-41j` y `CHS-42a` a '
      '`CHS-42j`. Base de IVA NO declarada en casi todas sus fichas: es exactamente la '
      'trampa que explica el cap. 08.'),
-    ('RestorHome', 'Moldes de bomboneria y utensilios',
+    ('RestorHome', 'Moldes de bombonería y utensilios',
      'https://www.restorhome.es/471-moldes-bomboneria-Chocolate-World', 'CHS-53', '',
-     'Moldes Chocolate World, Pavoni y Martellato. De aqui sale el rango de '
+     'Moldes Chocolate World, Pavoni y Martellato. De aquí sale el rango de '
      '24,20-42,83 euros/ud (`CHS-45a`) que el juego de datos publica COMO RANGO.'),
     ('SelfPackaging', 'Packaging: cajas y estuches para bombones',
-     'https://selfpackaging.es/90-cajas-para-bombones', 'CHS-54', '',
-     'Personalizacion con logo desde pocas unidades. Su web devolvio HTTP 403 al '
-     'intentar leer precios, asi que el packaging del CAPEX es SUPUESTO.'),
+     'https://selfpackaging.es/90-cajas-para-bombones (web no accesible el 12-09-2026, HTTP 403: pendiente de comprobar)', 'CHS-54', '',
+     'Personalización con logo desde pocas unidades. Su web devolvió HTTP 403 al '
+     'intentar leer precios, así que el packaging del CAPEX es SUPUESTO.'),
     ('Gift Campaign', 'Regalo corporativo B2B',
      'https://www.giftcampaign.es/dulces-personalizados/chocolates.html', 'CHS-55', '',
      'Dos reglas operativas verificadas del canal corporativo: plazo de entrega de '
-     '14-16 dias desde la aprobacion de la muestra virtual, y minimos de fabricacion '
+     '14-16 días desde la aprobación de la muestra virtual, y mínimos de fabricación '
      'de 10 a 25 cajas. El plazo es lo que decide si aceptas un pedido de empresa en '
      'diciembre.'),
 ]
 NOTA_PROVEEDORES = (
-    'Seis proveedores con URL comprobada el 12-09-2026. El research recogio muchos mas '
+    'Seis proveedores con URL comprobada el 12-09-2026. El research recogió muchos mas '
     'sin verificar y NO se publican. La columna «papel EUDR» va VACIA: la rellena el '
-    'lector preguntando, y el numero de DDS solo se pide en la rama «operador» (D48). '
+    'lector preguntando, y el número de DDS solo se pide en la rama «operador» (D48). '
     'Directorio del grupo: hosply.pro, y su TLS se comprueba ANTES de enlazarlo desde '
     'el cap. 13 (precedente: ingredientsindex.pro tiene el certificado roto y 62 posts '
     'del blog enlazan a un aviso de seguridad).')
@@ -2669,24 +2688,24 @@ HOSPLY_URL = ('https://hosply.pro/?utm_source=guia-chocolateria-obrador'
 #: registrar.
 CLIENTES_B2B = [
     # (nombre FICTICIO, tipo, canal, poblacion, producto suministrado)
-    ('Cafeteria El Mirador', 'Hosteleria', 'B2B hosteleria', 'Ciudad de ejemplo',
-     'Bombones de coleccion a granel y tabletas'),
-    ('Hotel Plaza Mayor (A&B)', 'Hosteleria', 'B2B hosteleria', 'Ciudad de ejemplo',
-     'Bombon de cortesia de habitacion y cajas de 12'),
+    ('Cafetería El Mirador', 'Hosteleria', 'B2B hostelería', 'Ciudad de ejemplo',
+     'Bombones de colección a granel y tabletas'),
+    ('Hotel Plaza Mayor (A&B)', 'Hosteleria', 'B2B hostelería', 'Ciudad de ejemplo',
+     'Bombón de cortesia de habitación y cajas de 12'),
     ('Industrias Nogal, S.L.', 'Empresa', 'Regalo corporativo', 'Ciudad de ejemplo',
      'Estuche corporativo personalizado de 24 bombones'),
     ('Tienda gourmet La Despensa', 'Minorista de distinta titularidad',
      'Minorista de distinta titularidad', 'Ciudad de ejemplo',
-     'Tabletas de origen y almendras banadas'),
+     'Tabletas de origen y almendras bañadas'),
 ]
 FUENTE_CLIENTES_B2B = 'supuesto'
 NOTA_CLIENTES_B2B = (
     'CUATRO CLIENTES FICTICIOS DECLARADOS, para que la tabla del libro 9 tenga forma. '
-    'Lo que NO es ficticio es la obligacion: registrar a quien suministras (art. '
-    '5.3.b) del EUDR, `CHN-24`) y conservarlo cinco anos. Escribir «basta con '
-    'registrar a tus proveedores» esta PROHIBIDO (§5.1, prohibicion 3).\n'
-    'Y el cuarto cliente es el que cambia tu regimen sanitario: «Tienda gourmet La '
-    'Despensa» es un MINORISTA DE DISTINTA TITULARIDAD, asi que activa el art. 3 del '
+    'Lo que NO es ficticio es la obligación: registrar a quien suministras (art. '
+    '5.3.b) del EUDR, `CHN-24`) y conservarlo cinco años. Escribir «basta con '
+    'registrar a tus proveedores» esta PROHIBIDO (§5.1, prohibición 3).\n'
+    'Y el cuarto cliente es el que cambia tu régimen sanitario: «Tienda gourmet La '
+    'Despensa» es un MINORISTA DE DISTINTA TITULARIDAD, así que activa el art. 3 del '
     'RD 1021/2022 (`CHN-41`). Basta con que UNO de tus clientes este inscrito en el '
     'RGSEAA para romper el requisito de «restringido», y los tres requisitos son '
     'ACUMULATIVOS.')
@@ -2711,9 +2730,9 @@ NOTA_CLIENTES_B2B = (
 #: pone las fechas y el que, y este juego de datos pone los euros.
 CAMPANAS = [
     {'mes': 1, 'nombre_mes': 'Enero', 'temporada': 'Media',
-     'acciones_kit': ('Reyes (6): liquidar turron y figuras de Navidad · rebajas '
-                      'post-Navidad · lanzar la coleccion de invierno · planificar '
-                      'San Valentin'),
+     'acciones_kit': ('Reyes (6): liquidar turrón y figuras de Navidad · rebajas '
+                      'post-Navidad · lanzar la colección de invierno · planificar '
+                      'San Valentín'),
      'productos_kit': 'Trufas, bombones especiados, chocolate caliente',
      'campana': 'Reyes', 'campana_propia': False,
      'producto_estrella': 'TF4', 'uds_dia_normal': 0, 'uds_dia_pico': 40,
@@ -2721,36 +2740,36 @@ CAMPANAS = [
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 0, 'antelacion_packaging_semanas': 0,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
-     'nota': ('Fecha menor: cierra la produccion de Navidad y liquida el stock. Lo '
+     'nota': ('Fecha menor: cierra la producción de Navidad y liquida el stock. Lo '
               'que se produce para Reyes ya esta hecho en diciembre.')},
     {'mes': 2, 'nombre_mes': 'Febrero', 'temporada': 'Alta',
-     'acciones_kit': ('San Valentin (14): corazones y edicion limitada · fecha limite '
-                      'de encargos el dia 10 · entregas expres los dias 13 y 14'),
+     'acciones_kit': ('San Valentín (14): corazones y edición limitada · fecha limite '
+                      'de encargos el día 10 · entregas expres los días 13 y 14'),
      'productos_kit': 'Corazones, bombones premium, tabletas personalizadas',
-     'campana': 'San Valentin', 'campana_propia': True,
+     'campana': 'San Valentín', 'campana_propia': True,
      'producto_estrella': 'CJ1', 'uds_dia_normal': 8, 'uds_dia_pico': 55,
      'pvp_campana': 20.00, 'dias_campana': 6,
      'refuerzo_personas': 1, 'refuerzo_horas_persona': 30,
      'antelacion_moldes_semanas': 8, 'antelacion_packaging_semanas': 6,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
      'nota': ('El pico de regalo. `CHS-34` mide que las ventas de chocolates y dulces '
-              'pueden DUPLICAR el promedio anual en San Valentin, y que hay companias '
+              'pueden DUPLICAR el promedio anual en San Valentín, y que hay companias '
               'que hacen en ese solo evento hasta el 10 % de su venta anual: ese 10 % '
               'es de una compania concreta, no una regla del sector. La fecha limite '
-              'de encargos la publica el propio kit: el dia 10.')},
+              'de encargos la publica el propio kit: el día 10.')},
     {'mes': 3, 'nombre_mes': 'Marzo', 'temporada': 'Alta',
-     'acciones_kit': ('Dia del Padre (19) · preparacion de Pascua (fecha movil) · '
+     'acciones_kit': ('Día del Padre (19) · preparación de Pascua (fecha móvil) · '
                       'talleres infantiles de Semana Santa'),
      'productos_kit': 'Figuras, huevos, monas de chocolate',
-     'campana': 'Dia del Padre', 'campana_propia': False,
+     'campana': 'Día del Padre', 'campana_propia': False,
      'producto_estrella': 'CJ1', 'uds_dia_normal': 8, 'uds_dia_pico': 26,
      'pvp_campana': 20.00, 'dias_campana': 4,
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 6, 'antelacion_packaging_semanas': 4,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
      'nota': ('Fecha menor, y el mes en el que ya hay que estar produciendo Pascua. '
-              'Los talleres infantiles de Semana Santa son la primera vez del ano en '
-              'que la sala factura por hora en vez de por bombon.')},
+              'Los talleres infantiles de Semana Santa son la primera vez del año en '
+              'que la sala factura por hora en vez de por bombón.')},
     {'mes': 4, 'nombre_mes': 'Abril', 'temporada': 'Alta',
      'acciones_kit': ('Semana Santa y Pascua: monas y huevos · arrancan las COMUNIONES '
                       '(abril-junio): detalles de mesa, figuras y cajas personalizadas'),
@@ -2762,35 +2781,35 @@ CAMPANAS = [
      'antelacion_moldes_semanas': 10, 'antelacion_packaging_semanas': 6,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
      'nota': ('Campana de FIGURA Y MOLDE: la compra de moldes va MUY por delante, y es '
-              'tesoreria inmovilizada que el libro 6 cuantifica. Fecha movil: si la '
+              'tesorería inmovilizada que el libro 6 cuantifica. Fecha móvil: si la '
               'Pascua cae pronto, marzo se come parte de abril.')},
     {'mes': 5, 'nombre_mes': 'Mayo', 'temporada': 'Alta',
-     'acciones_kit': ('Dia de la Madre (1.er domingo) · pico de COMUNIONES · edicion '
+     'acciones_kit': ('Día de la Madre (1.er domingo) · pico de COMUNIONES · edición '
                       'regalo premium'),
      'productos_kit': 'Bombones premium, cestas regalo, tabletas grabadas',
-     'campana': 'COMUNIONES (pico) y Dia de la Madre', 'campana_propia': True,
+     'campana': 'COMUNIONES (pico) y Día de la Madre', 'campana_propia': True,
      'producto_estrella': 'CJ4', 'uds_dia_normal': 1, 'uds_dia_pico': 14,
      'pvp_campana': 34.00, 'dias_campana': 14,
      'refuerzo_personas': 1, 'refuerzo_horas_persona': 50,
      'antelacion_moldes_semanas': 8, 'antelacion_packaging_semanas': 10,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
-     'nota': ('El pico de las comuniones, y el mes con mas dias de campana del primer '
-              'semestre. El packaging personalizado va con MAS antelacion que los '
+     'nota': ('El pico de las comuniones, y el mes con mas días de campana del primer '
+              'semestre. El packaging personalizado va con MAS antelación que los '
               'moldes: es lo contrario de Pascua.')},
     {'mes': 6, 'nombre_mes': 'Junio', 'temporada': 'Media',
-     'acciones_kit': ('Ultimas comuniones · inicio del verano: adaptar catalogo (menos '
+     'acciones_kit': ('Últimas comuniones · inicio del verano: adaptar catálogo (menos '
                       'ganache fresca, mas tableta y producto estable)'),
-     'productos_kit': 'Tabletas con fruta, bombones en camara',
-     'campana': 'COMUNIONES (ultimas)', 'campana_propia': True,
+     'productos_kit': 'Tabletas con fruta, bombones en cámara',
+     'campana': 'COMUNIONES (últimas)', 'campana_propia': True,
      'producto_estrella': 'CJ2', 'uds_dia_normal': 1, 'uds_dia_pico': 9,
      'pvp_campana': 28.00, 'dias_campana': 8,
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 6, 'antelacion_packaging_semanas': 8,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
      'nota': ('El mes de apertura de La Almendra (1 de junio): «Media», con seis meses '
-              'de rodaje por delante hasta Navidad. Y el mes en el que el catalogo '
+              'de rodaje por delante hasta Navidad. Y el mes en el que el catálogo '
               'EMPIEZA a cambiar, literal del kit: «menos ganache fresca, mas tableta '
-              'y producto estable». Aqui arranca tambien la parada de ENVIOS, que es '
+              'y producto estable». Aquí arranca también la parada de ENVÍOS, que es '
               'de canal online, no de mostrador.')},
     {'mes': 7, 'nombre_mes': 'Julio', 'temporada': 'Media',
      'acciones_kit': ('Temporada turistica: packs souvenir y colaboraciones locales · '
@@ -2806,37 +2825,37 @@ CAMPANAS = [
               'ya usa el MIX DE VERANO, y por eso el kit manda vigilar A DIARIO la '
               'temperatura de tienda y vitrina.')},
     {'mes': 8, 'nombre_mes': 'Agosto', 'temporada': 'Baja',
-     'acciones_kit': ('Asuncion (15): festivo nacional, la tienda abre para el turista '
+     'acciones_kit': ('Asunción (15): festivo nacional, la tienda abre para el turista '
                       'aunque el obrador pare · mantenimiento profundo · vacaciones '
                       'escalonadas · cerrar el pedido de coberturas de Navidad'),
-     'productos_kit': 'Produccion reducida, planificacion Q4',
+     'productos_kit': 'Producción reducida, planificación Q4',
      'campana': 'Valle del obrador', 'campana_propia': False,
      'producto_estrella': 'TB1', 'uds_dia_normal': 5, 'uds_dia_pico': 9,
      'pvp_campana': 6.90, 'dias_campana': 26,
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 0, 'antelacion_packaging_semanas': 0,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
-     'nota': ('EL UNICO MES «BAJA» DE LOS DOCE. Lo que para es el OBRADOR, no la caja: '
+     'nota': ('EL ÚNICO MES «BAJA» DE LOS DOCE. Lo que para es el OBRADOR, no la caja: '
               'el literal del kit es «la tienda abre para el turista aunque el obrador '
               'pare». Y es el mes en el que se CIERRA EL PEDIDO DE COBERTURAS DE '
-              'NAVIDAD, que es la decision de tesoreria mas grande del ano.')},
+              'NAVIDAD, que es la decisión de tesorería mas grande del año.')},
     {'mes': 9, 'nombre_mes': 'Septiembre', 'temporada': 'Media',
-     'acciones_kit': ('Vuelta a la rutina · coleccion de otono · ferias gastronomicas '
+     'acciones_kit': ('Vuelta a la rutina · colección de otoño · ferias gastronomicas '
                       '· abrir la agenda de pedidos corporativos de Navidad'),
-     'productos_kit': 'Bombones de frutos secos, praline, especiados',
+     'productos_kit': 'Bombones de frutos secos, praliné, especiados',
      'campana': 'Apertura de agenda corporativa', 'campana_propia': False,
      'producto_estrella': 'CJ4', 'uds_dia_normal': 1, 'uds_dia_pico': 4,
      'pvp_campana': 34.00, 'dias_campana': 20,
      'refuerzo_personas': 0, 'refuerzo_horas_persona': 0,
      'antelacion_moldes_semanas': 0, 'antelacion_packaging_semanas': 12,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
-     'nota': ('El mes que decide diciembre: aqui se abre la agenda corporativa, y el '
-              'plazo minimo de un pedido de empresa es de 14 dias desde la aprobacion '
+     'nota': ('El mes que decide diciembre: aquí se abre la agenda corporativa, y el '
+              'plazo mínimo de un pedido de empresa es de 14 días desde la aprobación '
               'de la muestra (`CHS-55`). Vender un estuche corporativo el 15 de '
               'diciembre no es una venta: es una promesa que no se puede cumplir.')},
     {'mes': 10, 'nombre_mes': 'Octubre', 'temporada': 'Alta',
-     'acciones_kit': ('Halloween (31): figuras y bombones de temporada · produccion '
-                      'navidena a pleno · publicar el catalogo de Navidad'),
+     'acciones_kit': ('Halloween (31): figuras y bombones de temporada · producción '
+                      'navidena a pleno · publicar el catálogo de Navidad'),
      'productos_kit': 'Figuras Halloween, bombones calabaza, tabletas oscuras',
      'campana': 'Halloween', 'campana_propia': True,
      'producto_estrella': 'BC5', 'uds_dia_normal': 1, 'uds_dia_pico': 12,
@@ -2845,14 +2864,14 @@ CAMPANAS = [
      'antelacion_moldes_semanas': 8, 'antelacion_packaging_semanas': 6,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
      'nota': ('Arranque de la temporada alta. Lo importante de octubre NO es Halloween: '
-              'es que la produccion de Navidad ya va a pleno y se PAGA aqui, para '
+              'es que la producción de Navidad ya va a pleno y se PAGA aquí, para '
               'cobrarse en diciembre. Ese desfase es lo que el libro 7 pone en la '
-              'tesoreria mes a mes.')},
+              'tesorería mes a mes.')},
     {'mes': 11, 'nombre_mes': 'Noviembre', 'temporada': 'Alta',
-     'acciones_kit': ('Todos los Santos (1): panellets y huesos de santo banados · '
-                      'Black Friday (ultimo viernes) · preventa de Navidad · turrones '
+     'acciones_kit': ('Todos los Santos (1): panellets y huesos de santo bañados · '
+                      'Black Friday (último viernes) · preventa de Navidad · turrones '
                       'y cestas'),
-     'productos_kit': ('Panellets y huesos de santo banados, turrones, cestas '
+     'productos_kit': ('Panellets y huesos de santo bañados, turrones, cestas '
                        'corporativas, figuras navidenas'),
      'campana': 'Todos los Santos y Black Friday', 'campana_propia': True,
      'producto_estrella': 'TF3', 'uds_dia_normal': 0, 'uds_dia_pico': 90,
@@ -2861,15 +2880,15 @@ CAMPANAS = [
      'antelacion_moldes_semanas': 4, 'antelacion_packaging_semanas': 8,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
      'nota': ('Dos campanas en un mes y ninguna se parece: Todos los Santos es '
-              'produccion de obrador a pieza pequena (los huesos de santo, TF3, la '
-              'unica referencia con huevo), y Black Friday es canal ONLINE con '
+              'producción de obrador a pieza pequeña (los huesos de santo, TF3, la '
+              'única referencia con huevo), y Black Friday es canal ONLINE con '
               'descuento. Ojo con el descuento: subir en noviembre para «rebajar» en '
-              'diciembre NO cumple la regla de los 30 dias del art. 20 de la Ley '
-              '7/1996 en la redaccion del RDL 24/2021 (`CHN-76`) - que NO es el art. '
+              'diciembre NO cumple la regla de los 30 días del art. 20 de la Ley '
+              '7/1996 en la redacción del RDL 24/2021 (`CHN-76`) - que NO es el art. '
               '20 del TRLGDCU.')},
     {'mes': 12, 'nombre_mes': 'Diciembre', 'temporada': 'Alta',
-     'acciones_kit': ('NAVIDAD, maxima produccion · puente de la Constitucion y la '
-                      'Inmaculada (6-8): fin de semana largo de maxima venta en tienda '
+     'acciones_kit': ('NAVIDAD, máxima producción · puente de la Constitución y la '
+                      'Inmaculada (6-8): fin de semana largo de máxima venta en tienda '
                       '· fecha limite de encargos y horarios especiales del 24 y el 31'),
      'productos_kit': 'Turrones, figuras, bombones navidenos, cestas',
      'campana': 'Navidad', 'campana_propia': True,
@@ -2878,9 +2897,9 @@ CAMPANAS = [
      'refuerzo_personas': 2, 'refuerzo_horas_persona': 70,
      'antelacion_moldes_semanas': 12, 'antelacion_packaging_semanas': 14,
      'fuente_fila': F_KIT_CALENDARIO, 'fuente_economia': 'supuesto',
-     'nota': ('LA CAMPANA MAYOR, y la que decide el ano. Su pedido corporativo se '
-              'cierra en octubre y su limite de produccion lo calcula el libro 7 HACIA '
-              'ATRAS desde la capacidad del libro 1 (cruce 7 <- 1 de `CRUCES`). La '
+     'nota': ('LA CAMPANA MAYOR, y la que decide el año. Su pedido corporativo se '
+              'cierra en octubre y su limite de producción lo calcula el libro 7 HACIA '
+              'ATRÁS desde la capacidad del libro 1 (cruce 7 <- 1 de `CRUCES`). La '
               'fecha limite de encargos y los horarios del 24 y el 31 los publica el '
               'propio kit.')},
 ]
@@ -2894,15 +2913,15 @@ CAMPANA_COMUNIONES = {
     'fuente': F_KIT_CALENDARIO,
     'literal_kit_abril': 'arrancan las COMUNIONES (abril-junio)',
     'literal_kit_mayo': 'pico de COMUNIONES',
-    'literal_kit_junio': 'Ultimas comuniones',
+    'literal_kit_junio': 'Últimas comuniones',
     'antelacion_pedido_semanas': 6,
     'fuente_antelacion': 'supuesto',
     'producto_estrella': 'CJ4',
     'detalle_mesa_personalizado': True,
-    'nota': ('Campana PROPIA, no una prolongacion de Pascua. Lo que la distingue es '
-             'que el cliente encarga con SEIS SEMANAS de antelacion un detalle de mesa '
-             'personalizado (nombre, fecha, color), asi que el obrador trabaja contra '
-             'pedido firme y con senal: merma cero y tesoreria a favor. Y es la unica '
+    'nota': ('Campana PROPIA, no una prolongación de Pascua. Lo que la distingue es '
+             'que el cliente encarga con SEIS SEMANAS de antelación un detalle de mesa '
+             'personalizado (nombre, fecha, color), así que el obrador trabaja contra '
+             'pedido firme y con señal: merma cero y tesorería a favor. Y es la única '
              'campana que reparte su carga en TRES meses en lugar de concentrarla en '
              'una semana. El research la dejaba fuera y el calendario del kit la '
              'nombra tres veces.')}
@@ -2924,18 +2943,18 @@ VALLE = {
     'literal_kit': ('la tienda abre para el turista aunque el obrador pare'),
     'envios_parados_meses': (6, 7, 8, 9),
     'fuente_envios': 'supuesto declarado sobre un dato de CANAL ONLINE',
-    'nota_envios': ('La parada de ENVIOS de junio a septiembre es de CANAL ONLINE, no '
-                    'de mostrador: viene del operador que apaga los envios el 12 de '
+    'nota_envios': ('La parada de ENVÍOS de junio a septiembre es de CANAL ONLINE, no '
+                    'de mostrador: viene del operador que apaga los envíos el 12 de '
                     'junio. El mostrador sigue vivo los cuatro meses, y en julio y '
                     'agosto con turista. Meter los dos en el mismo saco es el error '
                     'que produce «el valle de junio-agosto».'),  # LN-OK
     'meses_mix_verano': (7, 8),
-    'que_calcula_la_hoja': ('la CAIDA DEL MARGEN al cambiar el mix -menos ganache '
+    'que_calcula_la_hoja': ('la CAÍDA DEL MARGEN al cambiar el mix -menos ganache '
                             'fresca, mas tableta y producto estable- y los gastos '
-                            'fijos contra una facturacion MENOR PERO NO NULA'),
+                            'fijos contra una facturación MENOR PERO NO NULA'),
     'nota': ('El obrador para en agosto por tres motivos que el kit nombra: '
              'mantenimiento profundo, vacaciones escalonadas y el cierre del pedido de '
-             'coberturas de Navidad. La tienda no. Y la unica linea del negocio que '
+             'coberturas de Navidad. La tienda no. Y la única línea del negocio que '
              'funciona en agosto y no depende del precio del cacao son los talleres: '
              'por eso su hoja calcula euros/hora de sala dando taller frente a '
              'euros/hora de la misma sala vendiendo.')}
@@ -2947,11 +2966,11 @@ ESTACIONALIDAD_MENSUAL = (0.92, 1.12, 1.02, 1.08, 1.10, 0.92,
                           0.82, 0.60, 0.86, 1.02, 1.10, 1.44)
 FUENTE_ESTACIONALIDAD = 'supuesto'
 NOTA_ESTACIONALIDAD = (
-    'Media 1,000 exacta y agosto en el minimo (0,60), que es la traduccion a euros de '
-    'la unica fila «Baja» del calendario del kit. Agosto NO vale cero: la tienda abre. '
-    'Diciembre (1,44) es el maximo, y febrero (1,12) el segundo pico del primer '
-    'semestre. SON SUPUESTOS: `N-13` prohibe publicar un reparto mensual de ventas de '
-    'chocolateria como dato, porque no existe dato publico, y la guia ensena a medirlo '
+    'Media 1,000 exacta y agosto en el mínimo (0,60), que es la traducción a euros de '
+    'la única fila «Baja» del calendario del kit. Agosto NO vale cero: la tienda abre. '
+    'Diciembre (1,44) es el máximo, y febrero (1,12) el segundo pico del primer '
+    'semestre. SON SUPUESTOS: `N-13` prohíbe publicar un reparto mensual de ventas de '
+    'chocolatería como dato, porque no existe dato publico, y la guía enseña a medirlo '
     'con el TPV.')
 
 #: Dias de apertura de cada mes. En agosto NO se cierra: lo que para es el obrador.
@@ -3014,15 +3033,15 @@ def meses_por_temporada(temporada):
 #: PROHIBIDO escribir «con el 644.5 puedes vender a hosteleria, a empresas y por
 #: envio sin mas», y prohibido dar un epigrafe de IAE por canal como veredicto.
 NOTA_644_5 = (
-    'la fabricacion de bombones y caramelos en el propio establecimiento, siempre que '
-    'su comercializacion se realice en las propias dependencias de venta')
+    'la fabricación de bombones y caramelos en el propio establecimiento, siempre que '
+    'su comercialización se realice en las propias dependencias de venta')
 FUENTE_NOTA_644_5 = 'CHN-72'
 PREGUNTA_AL_ASESOR = (
-    'Mi epigrafe es el 644.5, cuya nota permite fabricar bombones «siempre que su '
-    'comercializacion se realice en las propias dependencias de venta». Voy a vender '
-    'ademas por este canal: [CANAL]. Con la Regla 4.a.1 del RDLeg 1175/1990 delante '
+    'Mi epígrafe es el 644.5, cuya nota permite fabricar bombones «siempre que su '
+    'comercialización se realice en las propias dependencias de venta». Voy a vender '
+    'además por este canal: [CANAL]. Con la Regla 4.a.1 del RDLeg 1175/1990 delante '
     '-una cuota faculta exclusivamente para su actividad-, ¿ese canal me obliga a dar '
-    'otra alta, y cual? Y si la respuesta es el epigrafe industrial 421.1, ¿que '
+    'otra alta, y cual? Y si la respuesta es el epígrafe industrial 421.1, ¿que '
     'consecuencias tiene que el Anexo de la Ley 12/2012 liste el 644.5 y no el 421.1?')
 
 CANALES = [
@@ -3030,9 +3049,9 @@ CANALES = [
      'coste_servir_pct': 0.0, 'comision_plataforma': 0.0, 'coste_envio_refrigerado': 0.0,
      'cobro_dias': 0, 'pedido_minimo': None, 'sale_de_la_nota_644_5': 'no',
      'fuente': 'supuesto', 'fuente_legal': 'CHN-72',
-     'nota': ('Cobro al contado y dentro de la nota del 644.5 sin discusion: vendes en '
+     'nota': ('Cobro al contado y dentro de la nota del 644.5 sin discusión: vendes en '
               'las propias dependencias. Es el canal que paga el alquiler.')},
-    {'canal': 'Online con envio refrigerado', 'ventas_pct': 12.0, 'margen_bruto': 0.58,
+    {'canal': 'Online con envío refrigerado', 'ventas_pct': 12.0, 'margen_bruto': 0.58,
      'coste_servir_pct': 0.04, 'comision_plataforma': 0.0, 'coste_envio_refrigerado': 8.50,
      'cobro_dias': 0, 'pedido_minimo': 35.0, 'sale_de_la_nota_644_5': 'no lo se',
      'fuente': 'supuesto', 'fuente_legal': 'CHN-95 + CHN-59 + CHN-88 + CHN-90 + CHN-57',
@@ -3040,23 +3059,23 @@ CANALES = [
               'comercio al por menor a efectos del IAE, porque la Regla 4.a.2.D) lo '
               'define por el destino y comprende el realizado sin establecimiento '
               '(`CHN-95`); y vender por internet NO cambia tu registro sanitario '
-              '(`CHN-90`). LO QUE NO ESTA VERIFICADO es si la condicion de la nota del '
+              '(`CHN-90`). LO QUE NO ESTA VERIFICADO es si la condición de la nota del '
               '644.5 sobre la FABRICACION se rompe al comercializar fuera de las '
               'dependencias: eso es lo que hay que preguntar al asesor. Lo que si '
               'cambia: te conviertes en ENVASADOR (`CHN-59`) y respondes de la '
-              'temperatura en el camion (`CHN-88`), mas la informacion obligatoria '
-              'ANTES de pagar (`CHN-57`). Coste de envio refrigerado de 8,50 euros: '
-              'SUPUESTO, y es el numero que decide si el canal existe. PARADO de junio '
+              'temperatura en el camión (`CHN-88`), mas la información obligatoria '
+              'ANTES de pagar (`CHN-57`). Coste de envío refrigerado de 8,50 euros: '
+              'SUPUESTO, y es el número que decide si el canal existe. PARADO de junio '
               'a septiembre (`VALLE`).')},
-    {'canal': 'B2B a hosteleria', 'ventas_pct': 11.0, 'margen_bruto': 0.48,
+    {'canal': 'B2B a hostelería', 'ventas_pct': 11.0, 'margen_bruto': 0.48,
      'coste_servir_pct': 0.03, 'comision_plataforma': 0.0, 'coste_envio_refrigerado': 0.0,
      'cobro_dias': 45, 'pedido_minimo': 120.0, 'sale_de_la_nota_644_5': 'no lo se',
      'fuente': 'supuesto', 'fuente_legal': 'CHN-41 + CHN-72 + CHN-94',
-     'nota': ('Peor margen y cobro a 45 dias: financias tu. Y es el canal que puede '
+     'nota': ('Peor margen y cobro a 45 días: financias tu. Y es el canal que puede '
               'meterte en el art. 3 del RD 1021/2022 si dejas de ser marginal, '
               'localizado o restringido - los TRES requisitos son ACUMULATIVOS, y '
               'basta con servir a UN SOLO cliente inscrito en el RGSEAA para perder '
-              '«restringido» (`CHN-41`). «Marginal» tiene DOS vias independientes: '
+              '«restringido» (`CHN-41`). «Marginal» tiene DOS vías independientes: '
               'hasta el 25 % del volumen anual O hasta 500 kg/semana. Y los 500 kg NO '
               'incluyen el mostrador: el art. 3 solo habla del suministro a otros '
               'minoristas de distinta titularidad.')},
@@ -3064,12 +3083,12 @@ CANALES = [
      'coste_servir_pct': 0.03, 'comision_plataforma': 0.0, 'coste_envio_refrigerado': 0.0,
      'cobro_dias': 30, 'pedido_minimo': 250.0, 'sale_de_la_nota_644_5': 'no lo se',
      'fuente': 'CHS-55 + supuesto', 'fuente_legal': 'CHN-24 + CHN-72 + CHN-94',
-     'nota': ('PLAZO MINIMO VERIFICADO: 14 dias desde la aprobacion de la muestra, con '
-              'minimos de fabricacion de 10 a 25 cajas (`CHS-55`). Es lo que decide si '
+     'nota': ('PLAZO MÍNIMO VERIFICADO: 14 días desde la aprobación de la muestra, con '
+              'mínimos de fabricación de 10 a 25 cajas (`CHS-55`). Es lo que decide si '
               'aceptas un pedido de empresa el 15 de diciembre. Y es el canal que '
               'obliga a la SEGUNDA TABLA del libro 9: el art. 5.3.b) del EUDR exige '
-              'registrar a quien suministras, y conservarlo cinco anos (`CHN-24`, '
-              'D48). El pedido minimo (250 euros) y los 30 dias de cobro son '
+              'registrar a quien suministras, y conservarlo cinco años (`CHN-24`, '
+              'D48). El pedido mínimo (250 euros) y los 30 días de cobro son '
               'supuestos.')},
     {'canal': 'Talleres y catas', 'ventas_pct': 6.0, 'margen_bruto': 0.82,
      'coste_servir_pct': 0.05, 'comision_plataforma': 0.0, 'coste_envio_refrigerado': 0.0,
@@ -3078,17 +3097,17 @@ CANALES = [
      'precio_persona_min': 25.0, 'precio_persona_max': 45.0,
      'minimo_personas': 6, 'duracion_min_minutos': 90, 'duracion_max_minutos': 150,
      'aforo': 12, 'horas_docente': 3.0,
-     'nota': ('25-45 euros/persona, minimo habitual de 6 personas y 90-150 minutos '
-              '(`CHS-30`). El aforo de 12 y las 3 horas de docente (preparacion y '
-              'recogida incluidas) son SUPUESTOS. LA UNICA LINEA QUE FUNCIONA EN '
+     'nota': ('25-45 euros/persona, mínimo habitual de 6 personas y 90-150 minutos '
+              '(`CHS-30`). El aforo de 12 y las 3 horas de docente (preparación y '
+              'recogida incluidas) son SUPUESTOS. LA ÚNICA LÍNEA QUE FUNCIONA EN '
               'AGOSTO y que no depende del precio del cacao: por eso su hoja calcula '
               'euros/hora de sala dando taller frente a euros/hora de la misma sala '
               'vendiendo. IVA: NO esta exento (el art. 20.Uno.10.o excluye las clases '
-              'para cuya realizacion haya que darse de alta en las tarifas '
-              'empresariales del IAE, `CHN-71b`), pero el TIPO NO SE CIERRA y la guia '
+              'para cuya realización haya que darse de alta en las tarifas '
+              'empresariales del IAE, `CHN-71b`), pero el TIPO NO SE CIERRA y la guía '
               'NO publica ninguna cifra de tipo (D42e). Y ojo con la columna del '
               '644.5: el taller NO comercializa bombones fuera de tus dependencias, '
-              'asi que no rompe la nota del epigrafe. Lo que si abre es otra pregunta, '
+              'así que no rompe la nota del epígrafe. Lo que si abre es otra pregunta, '
               'y es la del propio `CHN-71b`: si la Hacienda entiende que hay que darse '
               'de alta por esta actividad, eso es un alta distinta, no un problema de '
               'la nota del 644.5. Los TRES canales que la rompen son el online, el B2B '
@@ -3119,17 +3138,17 @@ CANALES = [
 #: que hay EXACTAMENTE OCHO filas de cuadre, contadas contra esta lista.
 CRUCES = [
     {'n': 1, 'receptor': 6, 'origen': 1,
-     'concepto': 'Deficit de capacidad del pico',
+     'concepto': 'Déficit de capacidad del pico',
      'fichero_origen': 'capacidad-obrador-y-clima.xlsx', 'hoja_origen': 'Cuello de Botella',
      'fichero_receptor': 'campanas-y-valle-del-ano.xlsx', 'hoja_receptor': 'Capacidad vs Demanda del Pico',
      'nota': 'El 6 no puede saber si aguantas Navidad sin la capacidad que calcula el 1.'},
     {'n': 2, 'receptor': 7, 'origen': 1,
-     'concepto': 'Capacidad diaria, para calcular hacia atras la fecha limite de pedidos de Navidad',
+     'concepto': 'Capacidad diaria, para calcular hacia atrás la fecha limite de pedidos de Navidad',
      'fichero_origen': 'capacidad-obrador-y-clima.xlsx', 'hoja_origen': 'Cuello de Botella',
      'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'Tesorería 12 meses',
      'nota': 'La fecha limite de encargos de Navidad NO es comercial: la fija la capacidad del obrador.'},
     {'n': 3, 'receptor': 9, 'origen': 2,
-     'concepto': 'CAPEX por bloque, para medir la desviacion contra el precio real negociado',
+     'concepto': 'CAPEX por bloque, para medir la desviación contra el precio real negociado',
      'fichero_origen': 'calculadora-capex-chocolateria.xlsx', 'hoja_origen': 'CAPEX por Bloque',
      'fichero_receptor': 'checklist-equipamiento-y-proveedores-cacao.xlsx', 'hoja_receptor': 'Equipamiento',
      'nota': 'El 9 es donde se anota lo que de verdad pagaste; el 2, lo que presupuestaste.'},
@@ -3152,10 +3171,10 @@ CRUCES = [
      'fichero_origen': 'calculadora-capex-chocolateria.xlsx', 'hoja_origen': 'Resumen',
      'fichero_receptor': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_receptor': 'Inversión Inicial',
      'nota': ('LO QUE VIAJA NO ES «EL CAPEX TOTAL». El total del libro 2 INCLUYE el '
-              'bloque «fondo de maniobra», asi que importarlo entero y pedir ademas el '
+              'bloque «fondo de maniobra», así que importarlo entero y pedir además el '
               'fondo lo contaria DOS VECES y volveria a publicar dos inversiones '
               'totales distintas. La hoja «Inversión Inicial» del 7 NO vuelve a pedir '
-              'las nueve partidas: pide esta unica cifra.')},
+              'las nueve partidas: pide esta única cifra.')},
     {'n': 7, 'receptor': 8, 'origen': 9,
      'concepto': 'Plazo de entrega critico de maquinaria, en semanas',
      'fichero_origen': 'checklist-equipamiento-y-proveedores-cacao.xlsx', 'hoja_origen': 'Equipamiento',
@@ -3168,12 +3187,12 @@ CRUCES = [
      'concepto': 'Fondo de maniobra YA CALCULADO (la magnitud, no sus factores)',
      'fichero_origen': 'plan-financiero-3-anos-chocolateria.xlsx', 'hoja_origen': 'Inversión Inicial',
      'fichero_receptor': 'calculadora-capex-chocolateria.xlsx', 'hoja_receptor': 'CAPEX por Bloque',
-     'nota': ('EL CRUCE QUE CIERRA EL CIRCULO. El fondo es «meses de colchon x gastos '
+     'nota': ('EL CRUCE QUE CIERRA EL CIRCULO. El fondo es «meses de colchón x gastos '
               'fijos mensuales» y LOS DOS FACTORES VIVEN EN EL LIBRO 7. Por eso «meses '
-              'de colchon» DEJA DE SER entrada del libro 2: si siguiera siendolo, el '
-              'fondo se calcularia dos veces y los dos libros publicarian dos '
+              'de colchón» DEJA DE SER entrada del libro 2: si siguiera siendolo, el '
+              'fondo se calcularia dos veces y los dos libros publicarían dos '
               'inversiones totales distintas con el mismo nombre. La fila de cuadre '
-              'compara este valor con la linea «fondo de maniobra» del bloque de CAPEX '
+              'compara este valor con la línea «fondo de maniobra» del bloque de CAPEX '
               'del propio libro 2.')},
 ]
 
@@ -3192,10 +3211,10 @@ CCAA_EJEMPLO = ('Madrid', 'Cataluna', 'Andalucia', 'Comunitat Valenciana')
 
 FASES_CHECKLIST = {
     'F1': 'Antes de firmar nada: viabilidad del local',
-    'F2': 'Sociedad, altas fiscales y proyecto tecnico',
-    'F3': 'Registro sanitario y comunicacion autonomica',
+    'F2': 'Sociedad, altas fiscales y proyecto técnico',
+    'F3': 'Registro sanitario y comunicación autonómica',
     'F4': 'Obra, clima y equipamiento',
-    'F5': 'APPCC, alergenos y formacion',
+    'F5': 'APPCC, alérgenos y formación',
     'F6': 'Apertura: fiscal, laboral y comercial',
 }
 
@@ -3203,78 +3222,78 @@ CHECKLIST_LEGAL = [
     # (fase, tramite, responsable, plazo dias, coste, fuente, cambia por CCAA, nota)
     ('F1', 'Comprobar en el planeamiento si el uso admite obrador o solo comercio',
      'Promotor', 10, None, 'supuesto', True,
-     'SUPUESTO: la clasificacion urbanistica de un obrador no tiene fuente verificada. '
-     'Va como PREGUNTA al ayuntamiento, nunca como afirmacion.'),
-    ('F1', 'Comprobar que ningun ayuntamiento puede exigirte licencia previa de actividad',
+     'SUPUESTO: la clasificación urbanística de un obrador no tiene fuente verificada. '
+     'Va como PREGUNTA al ayuntamiento, nunca como afirmación.'),
+    ('F1', 'Comprobar que ningún ayuntamiento puede exigirte licencia previa de actividad',
      'Promotor', 5, None, 'CHN-49 + CHN-49b', False,
      'Para las actividades del Anexo de la Ley 12/2012 en establecimientos permanentes '
-     'de hasta 750 m2 de superficie util de exposicion y venta al publico, NINGUNA '
-     'administracion puede exigir licencia previa de instalacion, funcionamiento o '
+     'de hasta 750 m² de superficie útil de exposición y venta al publico, NINGUNA '
+     'administración puede exigir licencia previa de instalación, funcionamiento o '
      'actividad (`CHN-49`), y el Anexo incluye el grupo 644 completo, con el 644.5 de '
-     'bombones y caramelos (`CHN-49b`). OJO: la chocolateria de TAZA queda fuera, '
-     'porque el Anexo no contiene ningun grupo de la agrupacion 67 (`CHN-49c`). Y esta '
-     'PROHIBIDO decir que tramite pide Madrid o Barcelona.'),
+     'bombones y caramelos (`CHN-49b`). OJO: la chocolatería de TAZA queda fuera, '
+     'porque el Anexo no contiene ningún grupo de la agrupación 67 (`CHN-49c`). Y esta '
+     'PROHIBIDO decir que trámite pide Madrid o Barcelona.'),
     ('F1', 'Comprobar que el DB-HS 3 del CTE NO regula tu local y que lo que manda es el RITE',
      'Promotor', 5, None, 'CHN-45 + CHN-46', False,
      'Un obrador de chocolate NO genera aire AE4 (`CHN-46`) y el DB-HS 3 del CTE no '
-     'regula la ventilacion de un local comercial (`CHN-45`): las reglas de chimenea '
+     'regula la ventilación de un local comercial (`CHN-45`): las reglas de chimenea '
      'que circulan son las de las viviendas. Lo que si aplica es el RITE, por la '
-     'climatizacion.'),
+     'climatización.'),
     ('F1', 'Verificar que caben las seis zonas con marcha adelante y los dos aseos',
      'Promotor', 5, None, 'supuesto', False,
      'Es una de las eliminatorias de la ficha de visita del libro 1.'),
-    ('F1', 'Pedir al instalador la potencia frigorifica ofertada y las preguntas de la ficha',
+    ('F1', 'Pedir al instalador la potencia frigorífica ofertada y las preguntas de la ficha',
      'Promotor', 15, None, 'supuesto', False,
-     'El libro 1 NO calcula carga termica (D33): compara tu temperatura objetivo, la '
+     'El libro 1 NO calcula carga térmica (D33): compara tu temperatura objetivo, la '
      'exterior de agosto de tu ciudad y la potencia que te OFREZCAN, y te da la ficha '
      'de preguntas.'),
 
-    ('F2', 'Constituir la sociedad o darse de alta como autonomo', 'Promotor', 20, 600.0,
+    ('F2', 'Constituir la sociedad o darse de alta como autónomo', 'Promotor', 20, 600.0,
      'supuesto', False,
-     'Importa para Verifactu: sociedad, 1-ene-2027; autonomo, 1-jul-2027 (`CHN-75`). '
+     'Importa para Verifactu: sociedad, 1-ene-2027; autónomo, 1-jul-2027 (`CHN-75`). '
      'NO es 2026.'),
-    ('F2', 'Alta censal (modelo 036) con los DOS codigos CNAE', 'Gestoria', 3, None,
+    ('F2', 'Alta censal (modelo 036) con los DOS códigos CNAE', 'Gestoria', 3, None,
      'CHN-74 + CHN-74b', False,
-     'CNAE-2025: 10.82 «Fabricacion de cacao, chocolate y productos de confiteria» y '
-     '47.24 «Comercio al por menor de pan, productos de panaderia y confiteria» '
-     '(`CHN-74`). Y al darte de alta HOY comunicas DOS codigos, no uno: el CNAE-2025 y '
-     'ademas el CNAE-2009 mientras no entre en vigor la tarifa de primas adaptada '
+     'CNAE-2025: 10.82 «Fabricación de cacao, chocolate y productos de confitería» y '
+     '47.24 «Comercio al por menor de pan, productos de panadería y confitería» '
+     '(`CHN-74`). Y al darte de alta HOY comunicas DOS códigos, no uno: el CNAE-2025 y '
+     'además el CNAE-2009 mientras no entre en vigor la tarifa de primas adaptada '
      '(`CHN-74b`).'),
-    ('F2', 'Alta en el epigrafe 644.5 del IAE, con su nota literal delante',
+    ('F2', 'Alta en el epígrafe 644.5 del IAE, con su nota literal delante',
      'Gestoria', 3, None, 'CHN-72 + CHN-73 + CHN-94', False,
      'El 644.5 «Comercio al por menor de bombones y caramelos» FACULTA para fabricar '
-     'bombones en el propio establecimiento «siempre que su comercializacion se realice '
+     'bombones en el propio establecimiento «siempre que su comercialización se realice '
      'en las propias dependencias de venta» (`CHN-72`). Alta si, pago casi nunca: hay '
-     'exencion por cifra de negocio (`CHN-73`). Y la Regla 4.a.1 dice que una cuota '
-     'faculta EXCLUSIVAMENTE para su actividad (`CHN-94`): de ahi salen las cinco filas '
+     'exención por cifra de negocio (`CHN-73`). Y la Regla 4.a.1 dice que una cuota '
+     'faculta EXCLUSIVAMENTE para su actividad (`CHN-94`): de ahí salen las cinco filas '
      'de canal.'),
-    ('F2', 'Alta en el regimen correspondiente de la Seguridad Social', 'Gestoria', 3,
+    ('F2', 'Alta en el régimen correspondiente de la Seguridad Social', 'Gestoria', 3,
      None, 'supuesto', False, ''),
-    ('F2', 'Encargar el proyecto tecnico visado', 'Ingenieria', 30, 4500.0, 'supuesto', False,
+    ('F2', 'Encargar el proyecto técnico visado', 'Ingenieria', 30, 4500.0, 'supuesto', False,
      'Coste SUPUESTO: `CHN-50` esta en EXCLUIDOS. Es el documento del que cuelga todo '
-     'lo demas.'),
+     'lo demás.'),
     ('F2', 'Firmar el arrendamiento y depositar la fianza', 'Promotor', 5, 2600.0,
      'supuesto', True,
      'El deposito de la fianza se hace en el organismo de vivienda de tu comunidad y el '
      'plazo cambia en cada una.'),
 
-    ('F3', 'Presentar la comunicacion o declaracion responsable al registro autonomico',
+    ('F3', 'Presentar la comunicación o declaración responsable al registro autonómico',
      'Promotor', 15, 120.0, 'CHN-39 + CHN-43', True,
      'El minorista esta EXCLUIDO del RGSEAA y se inscribe en el registro de su comunidad '
-     'mediante comunicacion o declaracion responsable QUE NO HABILITA (`CHN-39`). Y el '
-     'mismo tramite funciona distinto: en Madrid se presenta simultaneamente al inicio '
-     'de la actividad y no habilita; en la Comunitat Valenciana es condicion unica y '
+     'mediante comunicación o declaración responsable QUE NO HABILITA (`CHN-39`). Y el '
+     'mismo trámite funciona distinto: en Madrid se presenta simultaneamente al inicio '
+     'de la actividad y no habilita; en la Comunitat Valenciana es condición única y '
      'suficiente para iniciar y lleva tasa (`CHN-43`). PROHIBIDO escribir «necesitas el '
      'RGSEAA para abrir».'),
-    ('F3', 'Resolver el arbol: tener obrador NO te saca de minorista',
+    ('F3', 'Resolver el árbol: tener obrador NO te saca de minorista',
      'Promotor', 5, None, 'CHN-40 + CHN-40b', False,
-     'Tener obrador NO te saca del regimen minorista (`CHN-40b`). La clave y las '
+     'Tener obrador NO te saca del régimen minorista (`CHN-40b`). La clave y las '
      'actividades del RGSEAA solo entran cuando SI toca (`CHN-40`).'),
-    ('F3', 'Resolver los TRES semaforos del art. 3 si suministras a otros minoristas',
+    ('F3', 'Resolver los TRES semáforos del art. 3 si suministras a otros minoristas',
      'Promotor', 5, None, 'CHN-41', False,
      'PUERTA DE ENTRADA: ¿suministras a otros minoristas de DISTINTA TITULARIDAD? Si la '
-     'respuesta es no, el art. 3 no te aplica. Si es si, tres semaforos INDEPENDIENTES '
-     'y ACUMULATIVOS: MARGINAL por la via a) hasta el 25 % del volumen anual O por la b) '
+     'respuesta es no, el art. 3 no te aplica. Si es si, tres semáforos INDEPENDIENTES '
+     'y ACUMULATIVOS: MARGINAL por la vía a) hasta el 25 % del volumen anual O por la b) '
      'hasta 500 kg/semana -son dos entradas distintas-; LOCALIZADO, misma zona de salud '
      'o hasta 50 km en el caso interautonomico; RESTRINGIDO, que ninguno de tus clientes '
      'este inscrito en el RGSEAA. PROHIBIDO «los 500 kg incluyen el mostrador».'),
@@ -3282,20 +3301,20 @@ CHECKLIST_LEGAL = [
      'Promotor', 10, None, 'CHN-44 + CHN-44-int + CHN-44b', True,
      'La lista estatal del obrador en vivienda tiene CINCO letras y la quinta es '
      'ABIERTA: «otros alimentos que las autoridades competentes de las comunidades '
-     'autonomas permitan en sus territorios» (`CHN-44`). Por defecto el chocolate no '
+     'autónomas permitan en sus territorios» (`CHN-44`). Por defecto el chocolate no '
      'encaja en la letra b), pero eso es INTERPRETACION DECLARADA (`CHN-44-int`), no '
-     'nivel A: compruebalo en tu comunidad. La letra b) valenciana anade «confiteria», '
+     'nivel A: compruebalo en tu comunidad. La letra b) valenciana añade «confitería», '
      'NO «chocolate» (`CHN-44b`). PROHIBIDO «hacer bombones en casa para vender es '
-     'ilegal en Espana». Y el tope de 100 kg/semana del art. 13.9 solo se activa si '
+     'ilegal en España». Y el tope de 100 kg/semana del art. 13.9 solo se activa si '
      'esta casilla esta en «si»: son TRES requisitos, no uno -volumen PROPORCIONAL AL '
-     'TAMANO DE LAS INSTALACIONES, tope de 100 kg/semana y demostrable documentalmente- '
-     'y el que de verdad limita es el primero (`PA-29c`, reutilizado de Pasteleria y '
+     'TAMAÑO DE LAS INSTALACIONES, tope de 100 kg/semana y demostrable documentalmente- '
+     'y el que de verdad limita es el primero (`PA-29c`, reutilizado de Pastelería y '
      'verificado el 10-09-2026).'),
 
-    ('F4', 'Contratar la obra y la adecuacion', 'Promotor', 45, 28500.0, 'supuesto', False,
+    ('F4', 'Contratar la obra y la adecuación', 'Promotor', 45, 28500.0, 'supuesto', False,
      'Coste SUPUESTO. Sin humos, la obra de un obrador de chocolate es mas barata que '
-     'la de una pasteleria.'),
-    ('F4', 'Contratar la climatizacion con deshumidificacion', 'Promotor', 40, 7600.0,
+     'la de una pastelería.'),
+    ('F4', 'Contratar la climatización con deshumidificación', 'Promotor', 40, 7600.0,
      'supuesto', False,
      'La partida que nadie presupuesta y la que decide si la cobertura cristaliza.'),
     ('F4', 'Pedir el equipamiento de templado con su plazo por escrito',
@@ -3305,87 +3324,87 @@ CHECKLIST_LEGAL = [
     ('F4', 'Inscribirse en el Registro territorial del impuesto al plastico si te toca',
      'Gestoria', 15, None, 'CHN-62 + CHN-62b', False,
      'Solo si FABRICAS, IMPORTAS o haces ADQUISICION INTRACOMUNITARIA de envases no '
-     'reutilizables con plastico. La exencion del art. 75.f) (5 kg/mes) cubre solo la '
-     'importacion y la adquisicion intracomunitaria, y solo los envases del art. '
-     '68.1.a): NO la fabricacion, NI los semielaborados, NI los cierres (`CHN-62b`).'),
-    ('F4', 'Si hay freidora de gas en la variante de taza, programar la inspeccion',
+     'reutilizables con plastico. La exención del art. 75.f) (5 kg/mes) cubre solo la '
+     'importación y la adquisición intracomunitaria, y solo los envases del art. '
+     '68.1.a): NO la fabricación, NI los semielaborados, NI los cierres (`CHN-62b`).'),
+    ('F4', 'Si hay freidora de gas en la variante de taza, programar la inspección',
      'Promotor', 10, None, 'CHN-48', False,
-     'Inspeccion periodica obligatoria de la instalacion receptora CADA CINCO ANOS, que '
-     'en instalaciones de hasta 70 kW incluye los aparatos y comprueba la ventilacion y '
-     'el volumen minimo del local (`CHN-48`).'),
+     'Inspección periódica obligatoria de la instalación receptora CADA CINCO AÑOS, que '
+     'en instalaciones de hasta 70 kW incluye los aparatos y comprueba la ventilación y '
+     'el volumen mínimo del local (`CHN-48`).'),
 
     ('F5', 'Redactar el plan de APPCC con RESPONSABLE DESIGNADO CON NOMBRE',
      'Promotor', 20, None, 'CHN-32', False,
      'El procedimiento permanente basado en el APPCC puede aplicarse de manera '
-     'SIMPLIFICADA conforme a la Comunicacion 2020/C 199/01, pero debe contar con una '
-     'persona responsable de su aplicacion (`CHN-32`). En el APPCC va la vida util que '
+     'SIMPLIFICADA conforme a la Comunicación 2020/C 199/01, pero debe contar con una '
+     'persona responsable de su aplicación (`CHN-32`). En el APPCC va la vida útil que '
      'TU declaras (`CHN-30`).'),
-    ('F5', 'Montar el registro de formacion del personal', 'Promotor', 10, None,
+    ('F5', 'Montar el registro de formación del personal', 'Promotor', 10, None,
      'CHN-69', False,
-     'EL CARNET DE MANIPULADOR NO EXISTE. La obligacion viva es del empresario: '
-     'garantizar la formacion de cada persona de acuerdo con su actividad laboral y '
+     'EL CARNET DE MANIPULADOR NO EXISTE. La obligación viva es del empresario: '
+     'garantizar la formación de cada persona de acuerdo con su actividad laboral y '
      'PODER ACREDITARLA (`CHN-69`). PROHIBIDO escribir «hay que sacarse el carnet de '
      'manipulador».'),
-    ('F5', 'Montar la declaracion de los OCHO alergenos y el protocolo de limpieza',
+    ('F5', 'Montar la declaración de los OCHO alérgenos y el protocolo de limpieza',
      'Promotor', 10, None, 'CHN-34b + CHN-33 + CHN-89', False,
-     'OCHO, no cinco (`CHN-34b`). El equipo usado con un alergeno no se reutiliza para '
-     'otro alimento sin limpiarlo (`CHN-33`). En producto sin envasar los alergenos '
+     'OCHO, no cinco (`CHN-34b`). El equipo usado con un alérgeno no se reutiliza para '
+     'otro alimento sin limpiarlo (`CHN-33`). En producto sin envasar los alérgenos '
      'pueden ir en cartel, pero la fecha no (`CHN-89`).'),
     ('F5', 'Decidir por referencia si va ENVASADA CON ETIQUETA o A GRANEL',
      'Promotor', 5, None, 'CHN-30 + CHN-35 + CHN-36 + CHN-87', False,
-     'NO ES EL MISMO REGIMEN (D47). Con etiqueta te obliga lo que tu has escrito en '
+     'NO ES EL MISMO RÉGIMEN (D47). Con etiqueta te obliga lo que tu has escrito en '
      'ella (art. 4.2 del RD 1021/2022) mas las doce menciones del art. 9.1 del Rgto. '
      '1169/2011 (`CHN-35`) y el lote, que viene del RD 1808/1991 y NO de ese reglamento '
      '(`CHN-36`). A granel, la referencia es TU sistema de autocontrol.'),
-    ('F5', 'Decidir si necesitas analitica de cadmio y con que frecuencia',
+    ('F5', 'Decidir si necesitas analítica de cadmio y con que frecuencia',
      'Promotor', 15, None, 'CHN-16 + CHN-16b + CHN-84', False,
      'LO QUE ES CHOCOLATE PARA LA DENOMINACION NO LO ES PARA LOS CONTAMINANTES: la nota '
      '(14) del Anexo I del Rgto. 2023/915 remite SOLO a los puntos 2, 3 y 4 de la parte '
      'A del Anexo I de la Directiva 2000/36/CE -cacao en polvo, chocolate y chocolate '
-     'con leche- (`CHN-16b`). El BOMBON NO TIENE LIMITE PROPIO DE CADMIO: se le aplica '
-     'la regla de alimentos compuestos del art. 3 (`CHN-84`). PROHIBIDO «tu bombon '
+     'con leche- (`CHN-16b`). El BOMBÓN NO TIENE LIMITE PROPIO DE CADMIO: se le aplica '
+     'la regla de alimentos compuestos del art. 3 (`CHN-84`). PROHIBIDO «tu bombón '
      'tiene un limite de cadmio de X».'),
     ('F5', 'Resolver tu papel en la cadena EUDR y pedir los papeles que te toquen',
      'Promotor', 20, None, 'CHN-20 + CHN-21 + CHN-22 + CHN-23 + CHN-24 + CHN-25', False,
-     'El Anexo I incluye la partida 1806 «Chocolate y demas preparaciones alimenticias '
-     'que contengan cacao», y el reglamento cubre tambien la EXPORTACION (`CHN-20`, '
+     'El Anexo I incluye la partida 1806 «Chocolate y demás preparaciones alimenticias '
+     'que contengan cacao», y el reglamento cubre también la EXPORTACION (`CHN-20`, '
      '`CHN-60`). Fecha general: 30 de diciembre de 2026 (`CHN-21`). El aplazamiento a '
-     '30-06-2027 del art. 38.3 es SOLO para «operadores» persona fisica, microempresa o '
-     'pequena empresa establecidos a 31-12-2024, y el art. 2.15 excluye de esa palabra '
+     '30-06-2027 del art. 38.3 es SOLO para «operadores» persona física, microempresa o '
+     'pequeña empresa establecidos a 31-12-2024, y el art. 2.15 excluye de esa palabra '
      'a los operadores posteriores (`CHN-22`, `CHN-23`). VERIFICADO A 12-09-2026: '
      'comprueba el estado del EUDR antes de comprar cacao.'),
 
-    ('F6', 'Comprobar que tu comunicacion sanitaria esta presentada antes de vender',
+    ('F6', 'Comprobar que tu comunicación sanitaria esta presentada antes de vender',
      'Promotor', 3, None, 'CHN-39', True, ''),
     ('F6', 'Contratar al equipo con el convenio que TE toca, identificado en el REGCON',
      'Gestoria', 15, None, 'CHN-65 + CHN-65c + CHN-66 + CHN-93', True,
      'NO EXISTE convenio estatal del chocolate (`CHN-66`). La tabla que trae el producto '
-     'es la de Madrid y va MARCADA COMO EJEMPLO. Busca el tuyo por AMBITO FUNCIONAL, no '
-     'por el nombre que te suene: la denominacion oficial del de Madrid es '
-     '«CONFITERIAS PASTELERIAS Y REPOSTERIA (COMERCIO E INDUSTRIA)» y quien busque '
+     'es la de Madrid y va MARCADA COMO EJEMPLO. Busca el tuyo por ÁMBITO FUNCIONAL, no '
+     'por el nombre que te suene: la denominación oficial del de Madrid es '
+     '«CONFITERÍAS PASTELERÍAS Y REPOSTERÍA (COMERCIO E INDUSTRIA)» y quien busque '
      '«bollerias» no lo encuentra (`CHN-65c`). Cuatro convenios de sector nombran '
      'chocolates o bombones (`CHN-93`).'),
     ('F6', 'Montar el registro de jornada', 'Gestoria', 5, None, 'CHN-68', False, ''),
     ('F6', 'Comprobar tu libertad horaria y decidir si abres en domingo',
      'Promotor', 3, None, 'CHN-77', True,
-     'Una bomboneria NO esta en la lista del art. 5.1 de la Ley 1/2004 -que nombra '
-     '«pasteleria y reposteria, pan, platos preparados, prensa, combustibles y '
+     'Una bombonería NO esta en la lista del art. 5.1 de la Ley 1/2004 -que nombra '
+     '«pastelería y repostería, pan, platos preparados, prensa, combustibles y '
      'carburantes, floristerias y plantas»-: le viene por el art. 5.2, establecimientos '
-     'de venta de reducida dimension de menos de 300 m2 (`CHN-77`). PROHIBIDO decir que '
+     'de venta de reducida dimensión de menos de 300 m² (`CHN-77`). PROHIBIDO decir que '
      'le viene por el 5.1, y prohibido «hay que pedir permiso para abrir en domingo».'),
     ('F6', 'Comprobar la accesibilidad del local', 'Promotor', 10, None, 'CHN-78', False, ''),
-    ('F6', 'Decidir si publicas precios anteriores, y con la regla de los 30 dias delante',
+    ('F6', 'Decidir si publicas precios anteriores, y con la regla de los 30 días delante',
      'Promotor', 3, None, 'CHN-76', False,
-     'Subir en noviembre para «rebajar» en diciembre NO cumple la regla de los 30 dias '
-     'del art. 20 de la LEY 7/1996 en la redaccion del RDL 24/2021 (`CHN-76`) - que NO '
+     'Subir en noviembre para «rebajar» en diciembre NO cumple la regla de los 30 días '
+     'del art. 20 de la LEY 7/1996 en la redacción del RDL 24/2021 (`CHN-76`) - que NO '
      'es el art. 20 del TRLGDCU. Por eso este producto sale SIN precio tachado.'),
     ('F6', 'Si sirves taza y tienes mesas, facilitar que el cliente se lleve lo que no consume',
      'Promotor', 3, None, 'CHN-64 + CHN-92', False,
      'El art. 6.6 de la Ley 1/2025 EXCLUYE a las microempresas de las obligaciones de '
-     'TODOS los apartados anteriores del art. 6 -plan, convenios de donacion, jerarquia- '
-     '(`CHN-64`). Lo que sigue en pie no es una obligacion tuya: es que cualquier '
-     'clausula contractual que prohiba donar es nula de pleno derecho. PERO la exclusion '
-     'NO alcanza al ART. 8 (`CHN-92`), que obliga a las empresas de hosteleria y otros '
+     'TODOS los apartados anteriores del art. 6 -plan, convenios de donación, jerarquia- '
+     '(`CHN-64`). Lo que sigue en pie no es una obligación tuya: es que cualquier '
+     'clausula contractual que prohíba donar es nula de pleno derecho. PERO la exclusión '
+     'NO alcanza al ART. 8 (`CHN-92`), que obliga a las empresas de hostelería y otros '
      'proveedores de servicios alimentarios a facilitar que el consumidor se lleve lo '
      'que no ha consumido. PROHIBIDAS las dos frases: «te siguen obligando el 6.2 y el '
      '6.5» y «no te obliga nada de la ley de desperdicio».'),
@@ -3411,18 +3430,18 @@ def filas_canal_644_5():
 #: LA FILA DE D10 (B-6): artesania alimentaria. Es una acreditacion VOLUNTARIA, y
 #: esta PROHIBIDO escribir que sin ella no puedes llamarte artesanal.
 FILA_ARTESANIA = {
-    'pregunta': '¿Vas a inscribirte como artesano alimentario? (comunidad autonoma + enlace)',
+    'pregunta': '¿Vas a inscribirte como artesano alimentario? (comunidad autónoma + enlace)',
     'respuesta': '',
     'es_voluntaria': True,
     'fuente': 'CHN-52 + CHN-53',
-    'nota': ('Cataluna tiene articulado con el chocolate dentro: su repertorio de '
-             'artesania alimentaria incluye «Pasteleria: elaboracion de productos de '
-             'confiteria, pasteleria, bolleria y reposteria, INCLUIDOS TURRONES Y '
+    'nota': ('Cataluña tiene articulado con el chocolate dentro: su repertorio de '
+             'artesanía alimentaria incluye «Pastelería: elaboración de productos de '
+             'confitería, pastelería, bollería y repostería, INCLUIDOS TURRONES Y '
              'CHOCOLATES» (`CHN-52`). Es una ACREDITACION VOLUNTARIA y queda PROHIBIDO '
              'escribir que sin ella no puedes llamarte artesanal. Y queda PROHIBIDO '
-             'usar ese decreto como prueba de que es «reposteria» para el RD 1021/2022: '
+             'usar ese decreto como prueba de que es «repostería» para el RD 1021/2022: '
              'es otro registro, otra competencia y otro fin. «Chocolate artesano» no '
-             'tiene definicion estatal: «artesano», «artesanal» y «casero» tienen CERO '
+             'tiene definición estatal: «artesano», «artesanal» y «casero» tienen CERO '
              'ocurrencias en el RD 1055/2003 y en el RD 496/2010 (`CHN-53`). En el '
              'resto de comunidades, enlace a su registro.')}
 
@@ -3443,15 +3462,15 @@ GANTT = [
     # (id, hito, duracion en meses, dependencias)
     ('H1',  'Busqueda y cribado de local',                              2.0, ()),
     ('H2',  'Firma del arrendamiento y fianza',                         0.5, ('H1',)),
-    ('H3',  'Proyecto tecnico visado',                                  1.0, ('H2',)),
-    ('H4',  'Declaracion responsable de actividad (no licencia previa)', 1.0, ('H3',)),
-    ('H5',  'Obra y adecuacion del local',                              1.5, ('H4',)),
+    ('H3',  'Proyecto técnico visado',                                  1.0, ('H2',)),
+    ('H4',  'Declaración responsable de actividad (no licencia previa)', 1.0, ('H3',)),
+    ('H5',  'Obra y adecuación del local',                              1.5, ('H4',)),
     ('H6',  'Pedido y entrega del equipamiento de templado',            2.5, ('H3',)),
-    ('H7',  'Climatizacion y deshumidificacion',                        1.0, ('H5',)),
+    ('H7',  'Climatización y deshumidificación',                        1.0, ('H5',)),
     ('H8',  'Montaje y puesta en marcha del equipamiento',              0.5, ('H6', 'H7')),
-    ('H9',  'Comunicacion al registro sanitario autonomico',            0.5, ('H8',)),
-    ('H10', 'Plan de APPCC, alergenos y registro de formacion',         0.5, ('H8',)),
-    ('H11', 'Contratacion del equipo y altas en Seguridad Social',      0.5, ('H8',)),
+    ('H9',  'Comunicación al registro sanitario autonómico',            0.5, ('H8',)),
+    ('H10', 'Plan de APPCC, alérgenos y registro de formación',         0.5, ('H8',)),
+    ('H11', 'Contratación del equipo y altas en Seguridad Social',      0.5, ('H8',)),
     ('H12', 'Pruebas de templado y cierre de la carta de apertura',     0.5, ('H9', 'H10', 'H11')),
     ('H13', 'Apertura',                                                 0.0, ('H12',)),
 ]
@@ -3459,8 +3478,8 @@ FUENTE_GANTT = 'supuesto'
 
 
 def ruta_critica():
-    """(fin en meses, camino critico, dict de holguras por hito). Aritmetica de
-    indices de mes, sin funciones de fecha: es lo que despues se traduce a formulas en
+    """(fin en meses, camino critico, dict de holguras por hito). Aritmética de
+    índices de mes, sin funciones de fecha: es lo que después se traduce a fórmulas en
     la hoja «Cronograma y Ruta Crítica» del libro 8."""
     dur = dict((h[0], h[2]) for h in GANTT)
     deps = dict((h[0], h[3]) for h in GANTT)
@@ -3500,7 +3519,7 @@ def mes_apertura_calculado():
 def cuadre_plazo_maquinaria():
     """El septimo cruce, calculado: si la ruta critica es MAS CORTA que el plazo de
     entrega del equipo critico, la fecha de apertura la manda la maquinaria y el
-    semaforo del libro 8 avisa. Devuelve (meses de ruta critica, meses de plazo, avisa)."""
+    semáforo del libro 8 avisa. Devuelve (meses de ruta critica, meses de plazo, avisa)."""
     total, _c, _h = ruta_critica()
     plazo_meses = plazo_critico_semanas() / 4.33
     return total, plazo_meses, plazo_meses > total
@@ -3534,7 +3553,7 @@ _COMUN_CACHE = {'cargado': False, 'ids': set(), 'entradas': {}, 'error': None}
 
 
 def _carga_verificacion_legal():
-    """Carga (una vez) el JSON de la verificacion legal. Tolerante con la forma: lista
+    """Carga (una vez) el JSON de la verificación legal. Tolerante con la forma: lista
     de entradas con `id`, o dict indexado por id, o dict con la lista dentro de una
     clave. Si el fichero no existe, no revienta: deja el error anotado."""
     if _LEGAL_CACHE['cargado']:
@@ -3579,9 +3598,9 @@ def _carga_verificacion_legal():
 
 
 def _carga_json_comun():
-    """Carga (una vez) el JSON comun de 635 entradas. Es el que hace cumplir D44: un
+    """Carga (una vez) el JSON común de 635 entradas. Es el que hace cumplir D44: un
     id de sector escrito SIN su sufijo no existe, y `verificar_guion.py` lo caza
-    despues de gastar la redaccion. Aqui se caza antes."""
+    después de gastar la redacción. Aquí se caza antes."""
     if _COMUN_CACHE['cargado']:
         return _COMUN_CACHE
     _COMUN_CACHE['cargado'] = True
@@ -3639,11 +3658,11 @@ def _tiene_cita_articulo(texto):
 
 def _ventana_articulo(frase):
     """Recorta `frase` a ~140 caracteres CENTRADOS en el token que la hizo
-    calificar (segunda verificacion 2026-09-12, hallazgo B8: la primera
-    version cortaba desde el principio con `frase[:137]`, y en frases largas
-    eso se comia el propio «ap. 6.g»/«Anexo I» que habia justificado elegir
+    calificar (segunda verificación 2026-09-12, hallazgo B8: la primera
+    versión cortaba desde el principio con `frase[:137]`, y en frases largas
+    eso se comia el propio «ap. 6.g»/«Anexo I» que había justificado elegir
     esa frase -el texto compuesto pasaba a `nota_legal()` pero ya NO llevaba
-    ningun token, y `gate_legal()` lo detectaba como sin articulo otra vez)."""
+    ningún token, y `gate_legal()` lo detectaba como sin articulo otra vez)."""
     if len(frase) <= 140:
         return frase
     tl = frase.lower()
@@ -3657,18 +3676,18 @@ def _ventana_articulo(frase):
 
 def _extraer_cita_articulo(fila):
     """Frase de `nota`, `dato`, `cita_literal` o `tema` que YA contiene un
-    token de articulo/apartado/Anexo/Epigrafe, tal cual la escribio la
-    verificacion legal (no se reformula ni se inventa numero). Protege
-    «Art.»/«ap.» antes de partir en frases para no cortar justo ahi (si no,
+    token de articulo/apartado/Anexo/Epígrafe, tal cual la escribio la
+    verificación legal (no se reformula ni se inventa número). Protege
+    «Art.»/«ap.» antes de partir en frases para no cortar justo ahí (si no,
     «Art. 5.3.a)» se trocea en «Art.» + «5.3.a)» y el primer trozo no dice
-    nada). `tema` entra el ULTIMO -es la etiqueta corta del hallazgo, no el
+    nada). `tema` entra el ÚLTIMO -es la etiqueta corta del hallazgo, no el
     texto legal en si-, y solo hace falta cuando ninguno de los otros tres
     campos trae el dato (`CHN-44`: «Lista estatal del obrador en vivienda
     (art. 13.8)» solo esta en `tema`).
 
     Verifica con `_tiene_cita_articulo()` la frase YA recortada -no solo la
-    original- antes de devolverla: `_ventana_articulo()` deberia preservar
-    siempre el token, pero si algun caso limite lo perdiera, es preferible
+    original- antes de devolverla: `_ventana_articulo()` debería preservar
+    siempre el token, pero si algún caso limite lo perdiera, es preferible
     devolver `None` (y que `gate_legal()` lo liste como sin articulo, de
     verdad) a devolver una cita que aparenta tener fuente y no la tiene."""
     for campo in ('nota', 'dato', 'cita_literal', 'tema'):
@@ -3688,7 +3707,7 @@ def nota_legal(id_chn):
 
     Devuelve: «Verificado el 12-09-2026 · <norma y articulo> · <URL>»
 
-    Devuelve `None` -y no revienta- si el JSON de la verificacion legal no existe o
+    Devuelve `None` -y no revienta- si el JSON de la verificación legal no existe o
     si el id no esta en el. Los constructores llaman antes a `gate_legal()`, que es
     quien aborta.
     """
@@ -3733,45 +3752,45 @@ def nota_legal(id_chn):
 #: alternativa es un xlsx publicado con una celda legal sin fuente.
 IDS_LEGALES_REQUERIDOS = {
     # --- libro 4: carta de apertura, denominaciones y escandallo ----------
-    'CHN-01': ('Ambito del RD 1055/2003: tiene ARTICULO UNICO, nunca «el articulo 6»', 4),
-    'CHN-02': ('Tabla completa de minimos por denominacion (aps. 1.1 a 1.13 y 6.g)', 4),
-    'CHN-03': ('Bombon de chocolate: 25 % sobre el peso total', 4),
+    'CHN-01': ('Ámbito del RD 1055/2003: tiene ARTICULO ÚNICO, nunca «el articulo 6»', 4),
+    'CHN-02': ('Tabla completa de mínimos por denominación (aps. 1.1 a 1.13 y 6.g)', 4),
+    'CHN-03': ('Bombón de chocolate: 25 % sobre el peso total', 4),
     'CHN-03b': ('Praline, trufa, artesano, artesanal y casero: 0 ocurrencias en el RD', 4),
     'CHN-04': ('Chocolate relleno: 25 % de exterior y exclusiones', 4),
-    'CHN-05': ('Chocolate a la taza: 35/18/14 y la mencion «para su consumo cocido»', 4),
+    'CHN-05': ('Chocolate a la taza: 35/18/14 y la mención «para su consumo cocido»', 4),
     'CHN-06': ('Grasas vegetales distintas de la manteca de cacao', 4),
-    'CHN-06b': ('Formato exacto de la mencion de grasas vegetales', 4),
-    'CHN-07': ('A que denominaciones obliga la mencion «cacao: X % minimo»', 4),
+    'CHN-06b': ('Formato exacto de la mención de grasas vegetales', 4),
+    'CHN-07': ('A que denominaciones obliga la mención «cacao: X % mínimo»', 4),
     'CHN-08': ('Calificativos de calidad: la norma NO da lista de palabras', 4),
-    'CHN-09': ('Ingredientes anadidos: tope del 40 % y prohibiciones', 4),
-    'CHN-10': ('LAS DOS BASES DE CALCULO, y la del bombon es el peso TOTAL', 4),
+    'CHN-09': ('Ingredientes añadidos: tope del 40 % y prohibiciones', 4),
+    'CHN-10': ('LAS DOS BASES DE CALCULO, y la del bombón es el peso TOTAL', 4),
     'CHN-11': ('Sucedaneos de chocolate', 4),
-    'CHN-12': ('Remision de etiquetado obsoleta: NO remitir al RD 1334/1999', 4),
+    'CHN-12': ('Remisión de etiquetado obsoleta: NO remitir al RD 1334/1999', 4),
     'CHN-13': ('Denominaciones obligatorias y cajas surtidas (ap. 6.a y 6.c)', 4),
-    'CHN-15': ('RD 348/2011: grageas, confites y fruta banada', 4),
+    'CHN-15': ('RD 348/2011: grageas, confites y fruta bañada', 4),
     'CHN-15b': ('Reconocimiento mutuo del RD 348/2011', 4),
-    'CHN-81': ('Armonizacion total de la Directiva 2000/36/CE', 4),
-    'CHN-82': ('«Praline» ES denominacion de venta europea', 4),
-    'CHN-83': ('«Para su consumo cocido» es una adicion espanola', 4),
-    'CHN-71': ('IVA del chocolate: 10 % por exclusion, no por mencion', 4),
+    'CHN-81': ('Armonización total de la Directiva 2000/36/CE', 4),
+    'CHN-82': ('«Praline» ES denominación de venta europea', 4),
+    'CHN-83': ('«Para su consumo cocido» es una adición española', 4),
+    'CHN-71': ('IVA del chocolate: 10 % por exclusión, no por mención', 4),
     'CHN-71c': ('IVA de la taza servida en sala', 4),
     # --- libro 5: vida util, aw, etiqueta o granel, vitrina ---------------
     'CHN-30': ('NO hay temperatura legal del chocolate: la declaras tu en tu APPCC', 5),
     'CHN-30b': ('Frontera: la tarta de chocolate SI entra en la fila 9', 5),
-    'CHN-31': ('Huevo crudo: las tres vias del art. 9', 5),
-    'CHN-33': ('Alergenos y limpieza de equipo', 5),
-    'CHN-34b': ('LOS OCHO ALERGENOS: cacahuete, frutos de cascara y sesamo son tres entradas', 5),
+    'CHN-31': ('Huevo crudo: las tres vías del art. 9', 5),
+    'CHN-33': ('Alérgenos y limpieza de equipo', 5),
+    'CHN-34b': ('LOS OCHO ALÉRGENOS: cacahuete, frutos de cáscara y sésamo son tres entradas', 5),
     'CHN-35': ('Las doce menciones del art. 9.1: el lote NO esta entre ellas', 5),
     'CHN-36': ('Lote: RD 1808/1991, la letra L y sus tres exenciones', 5),
-    'CHN-37': ('«Sin gluten»: umbral analitico de 20 mg/kg', 5),
-    'CHN-38': ('Congelacion: -18 grados C, etiqueta y prohibicion de recongelar', 5),
+    'CHN-37': ('«Sin gluten»: umbral analítico de 20 mg/kg', 5),
+    'CHN-38': ('Congelación: -18 °C, etiqueta y prohibición de recongelar', 5),
     'CHN-87': ('El RD 1021/2022 no nombra el chocolate ni una vez', 5),
     'CHN-88': ('Transporte al consumidor final', 5),
-    'CHN-89': ('Los alergenos pueden ir en cartel, la fecha no', 5),
+    'CHN-89': ('Los alérgenos pueden ir en cartel, la fecha no', 5),
     # --- libro 8: checklist legal, licencias, cadmio, EUDR y cronograma ---
     'CHN-16': ('Cadmio en productos de cacao y chocolate', 8),
     'CHN-16b': ('Que es «producto de cacao y de chocolate» a efectos de cadmio', 8),
-    'CHN-84': ('El bombon NO tiene limite propio de cadmio', 8),
+    'CHN-84': ('El bombón NO tiene limite propio de cadmio', 8),
     'CHN-17': ('Ocratoxina A', 8),
     'CHN-18': ('HAP en grano de cacao y en fibra de cacao', 8),
     'CHN-19': ('Las tres obligaciones del operador en contaminantes', 8),
@@ -3780,69 +3799,69 @@ IDS_LEGALES_REQUERIDOS = {
     'CHN-22': ('EUDR: el aplazamiento del art. 38.3 es para OPERADORES', 8),
     'CHN-23': ('EUDR: la figura de «operador posterior» (art. 2.15 ter)', 8),
     'CHN-25': ('EUDR: que exige al operador que importa grano', 8),
-    'CHN-27': ('EUDR: el regimen simplificado NO es para el importador pequeno', 8),
-    'CHN-28': ('EUDR: autoridad competente en Espana (nivel B, NO se entrecomilla)', 8),
+    'CHN-27': ('EUDR: el régimen simplificado NO es para el importador pequeño', 8),
+    'CHN-28': ('EUDR: autoridad competente en España (nivel B, NO se entrecomilla)', 8),
     'CHN-29': ('EUDR: regla de inventario', 8),
-    'CHN-60': ('EUDR: exportar tambien esta sujeto', 8),
+    'CHN-60': ('EUDR: exportar también esta sujeto', 8),
     'CHN-85': ('EUDR: la pyme no se registra ni verifica', 8),
     'CHN-32': ('APPCC simplificado CON RESPONSABLE DESIGNADO', 8),
     'CHN-39': ('El minorista esta EXCLUIDO del RGSEAA', 8),
     'CHN-40': ('Clave y actividades del RGSEAA para el chocolate', 8),
-    'CHN-40b': ('Tener obrador NO te saca del regimen minorista', 8),
+    'CHN-40b': ('Tener obrador NO te saca del régimen minorista', 8),
     'CHN-41': ('Marginal, localizado y restringido: los tres son ACUMULATIVOS', 8),
     'CHN-42': ('Obrador central y sucursales', 8),
-    'CHN-43': ('El mismo tramite funciona distinto por comunidad autonoma', 8),
+    'CHN-43': ('El mismo trámite funciona distinto por comunidad autónoma', 8),
     'CHN-44': ('Las CINCO letras del art. 13.8, y la e) es abierta', 8),
     'CHN-44-int': ('INTERPRETACION DECLARADA: el chocolate y la letra b)', 8),
-    'CHN-44b': ('La letra b) valenciana anade «confiteria», no «chocolate»', 8),
+    'CHN-44b': ('La letra b) valenciana añade «confitería», no «chocolate»', 8),
     'CHN-45': ('El DB-HS 3 del CTE no regula un local comercial', 8),
     'CHN-46': ('El obrador de chocolate no genera aire AE4', 8),
-    'CHN-47': ('Tostado de cacao y CAPCA: «cafe o similares» es INTERPRETACION', 8),
+    'CHN-47': ('Tostado de cacao y CAPCA: «café o similares» es INTERPRETACION', 8),
     'CHN-47b': ('La nota (2) del CAPCA incluye los NUCLEOS DE POBLACION', 8),
-    'CHN-48': ('Gas: inspeccion cada cinco anos', 8),
-    'CHN-49': ('Ninguna licencia previa de actividad hasta 750 m2', 8),
-    'CHN-49b': ('El epigrafe 644.5 esta en el Anexo de la Ley 12/2012', 8),
-    'CHN-49c': ('La chocolateria de taza NO entra en la Ley 12/2012', 8),
-    'CHN-52': ('Cataluna incluye el chocolate en la artesania alimentaria', 8),
-    'CHN-53': ('«Chocolate artesano» no tiene definicion estatal', 8),
+    'CHN-48': ('Gas: inspección cada cinco años', 8),
+    'CHN-49': ('Ninguna licencia previa de actividad hasta 750 m²', 8),
+    'CHN-49b': ('El epígrafe 644.5 esta en el Anexo de la Ley 12/2012', 8),
+    'CHN-49c': ('La chocolatería de taza NO entra en la Ley 12/2012', 8),
+    'CHN-52': ('Cataluña incluye el chocolate en la artesanía alimentaria', 8),
+    'CHN-53': ('«Chocolate artesano» no tiene definición estatal', 8),
     'CHN-62': ('Impuesto al plastico: quien lo paga y cuanto', 8),
-    'CHN-62b': ('La exencion de 5 kg/mes tiene DOS limites', 8),
+    'CHN-62b': ('La exención de 5 kg/mes tiene DOS limites', 8),
     'CHN-62c': ('Los moldes de policarbonato NO pagan el impuesto', 8),
     'CHN-64': ('Ley 1/2025: la microempresa queda fuera del art. 6 ENTERO', 8),
     'CHN-92': ('El art. 8 de la Ley 1/2025 NO queda excluido por el 6.6', 8),
-    'CHN-65': ('Convenio de Madrid: la fabricacion de bombones va condicionada', 8),
+    'CHN-65': ('Convenio de Madrid: la fabricación de bombones va condicionada', 8),
     'CHN-65b': ('Tablas salariales 2026 del convenio de Madrid', 8),
     'CHN-65c': ('Datos oficiales del convenio de Madrid en REGCON', 8),
     'CHN-66': ('NO existe convenio estatal del chocolate', 8),
     'CHN-93': ('Los cuatro convenios de sector que SI nombran el chocolate', 8),
     'CHN-67': ('SMI 2026: caduca el 31-12-2026, vive en el anexo', 8),
     'CHN-68': ('Registro de jornada', 8),
-    'CHN-69': ('El «carnet de manipulador» no existe: registro de formacion', 8),  # LN-OK
-    'CHN-72': ('Epigrafe 644.5 y SU NOTA LITERAL, que es la que lo limita', 8),
+    'CHN-69': ('El «carnet de manipulador» no existe: registro de formación', 8),  # LN-OK
+    'CHN-72': ('Epígrafe 644.5 y SU NOTA LITERAL, que es la que lo limita', 8),
     'CHN-73': ('IAE: alta si, pago casi nunca', 8),
-    'CHN-74': ('CNAE-2025: los codigos del chocolate', 8),
-    'CHN-74b': ('Al darte de alta hoy comunicas DOS codigos, no uno', 8),
+    'CHN-74': ('CNAE-2025: los códigos del chocolate', 8),
+    'CHN-74b': ('Al darte de alta hoy comunicas DOS códigos, no uno', 8),
     'CHN-75': ('Verifactu no es 2026, es 2027', 8),
-    'CHN-76': ('Precio anterior: los 30 dias, y es la Ley 7/1996, NO el TRLGDCU', 8),
+    'CHN-76': ('Precio anterior: los 30 días, y es la Ley 7/1996, NO el TRLGDCU', 8),
     'CHN-77': ('Libertad horaria: le viene por el art. 5.2, NO por el 5.1', 8),
     'CHN-78': ('Accesibilidad', 8),
     'CHN-94': ('Regla 4.a.1: una cuota faculta SOLO para su actividad', 8),
     'CHN-95': ('Regla 4.a.2.D): la venta online al consumidor ES minorista', 8),
-    'CHN-96': ('El epigrafe industrial faculta para mayor y menor', 8),
+    'CHN-96': ('El epígrafe industrial faculta para mayor y menor', 8),
     'CHN-71b': ('Talleres y catas: NO exentos de IVA, y el TIPO va SIN CIFRA', 8),
-    'CHN-51': ('Degustacion y comidas preparadas', 8),
+    'CHN-51': ('Degustación y comidas preparadas', 8),
     'CHN-55': ('«ELABORACION PROPIA»', 8),
     'CHN-63': ('Taper del cliente y bebida reutilizable', 8),
-    'CHN-91': ('Cataluna: umbral ambiental de un obrador vegetal', 8),
+    'CHN-91': ('Cataluña: umbral ambiental de un obrador vegetal', 8),
     # --- libro 9: equipamiento, proveedores y clientes --------------------
     'CHN-24': ('EUDR art. 5.3: el nº de DDS SOLO si el proveedor es operador, y la '
                'tabla de CLIENTES del 5.3.b)', 9),
-    'CHN-26': ('EUDR: el numero de referencia lo comunica el operador', 9),
-    'CHN-56': ('Vender online a toda Espana no rompe «localizado»', 9),
-    'CHN-57': ('Venta a distancia: informacion ANTES de pagar', 9),
+    'CHN-26': ('EUDR: el número de referencia lo comunica el operador', 9),
+    'CHN-56': ('Vender online a toda España no rompe «localizado»', 9),
+    'CHN-57': ('Venta a distancia: información ANTES de pagar', 9),
     'CHN-59': ('Vender online te convierte en envasador', 9),
     'CHN-61': ('Envases de servicio: quien se inscribe', 9),
-    'CHN-86': ('EUDR: hay una rectificacion en el consolidado', 9),
+    'CHN-86': ('EUDR: hay una rectificación en el consolidado', 9),
 }
 
 #: El unico id que NO es `CHN-*` y que sostiene una salida del libro 8: el tope de
@@ -3850,9 +3869,9 @@ IDS_LEGALES_REQUERIDOS = {
 #: declara una CUARTA procedencia valida: un id `PA-*` del mismo JSON comun, citado
 #: como REUTILIZACION de Pasteleria y con su fecha de verificacion (10-09-2026).
 ID_REUTILIZADO_PASTELERIA = {
-    'PA-29c': ('Art. 13.9: los TRES requisitos -volumen proporcional al tamano de las '
+    'PA-29c': ('Art. 13.9: los TRES requisitos -volumen proporcional al tamaño de las '
                'instalaciones, tope de 100 kg/semana y demostrable documentalmente-, '
-               'reutilizado de Pasteleria y verificado el 10-09-2026', 8),
+               'reutilizado de Pastelería y verificado el 10-09-2026', 8),
 }
 
 #: Ids cuya ficha de verificacion legal NO permite componer un articulo,
@@ -3878,47 +3897,47 @@ ID_REUTILIZADO_PASTELERIA = {
 #: que una excepcion documentada, en un pack que se vende como «verificado
 #: contra el BOE».
 EXCEPCIONES_SIN_ARTICULO = {
-    'CHN-06b': 'RD 1055/2003: describe una obligacion de etiquetado real pero la '
+    'CHN-06b': 'RD 1055/2003: describe una obligación de etiquetado real pero la '
                'ficha no registro el apartado exacto (probablemente el 1.9).',
     'CHN-15b': 'RD 348/2011: la clausula de reconocimiento mutuo esta citada '
-               'literalmente pero sin numero de articulo en la ficha.',
+               'literalmente pero sin número de articulo en la ficha.',
     'CHN-83': 'Directiva 2000/36/CE: hecho de AUSENCIA GLOBAL (0 ocurrencias de '
               '«cocido» en todo el texto consolidado), no un punto concreto.',
     'CHN-28': 'Pagina de MITECO, no una norma: la propia ficha lo dice '
               '(«no entrecomillar como si fuera articulado»).',
-    'CHN-40': 'Guia interpretativa AESAN/Comunidad de Madrid, no una norma: el '
-              'catalogo de claves del RGSEAA no esta en ningun BOE.',
-    'CHN-43': 'Sintesis de DOS decretos autonomicos (Madrid y Comunitat '
-              'Valenciana): no hay un articulo unico que cubra a los dos.',
-    'CHN-47b': 'RD 100/2011: cita la nota (2) del catalogo CAPCA, que vive en un '
+    'CHN-40': 'Guía interpretativa AESAN/Comunidad de Madrid, no una norma: el '
+              'catálogo de claves del RGSEAA no esta en ningún BOE.',
+    'CHN-43': 'Síntesis de DOS decretos autonómicos (Madrid y Comunitat '
+              'Valenciana): no hay un articulo único que cubra a los dos.',
+    'CHN-47b': 'RD 100/2011: cita la nota (2) del catálogo CAPCA, que vive en un '
                'anexo, pero la ficha no llego a anotarlo como «Anexo».',
     'CHN-53': 'RD 1055/2003 + RD 496/2010: hecho de AUSENCIA GLOBAL (0 '
               'ocurrencias de «artesano»/«casero») en DOS normas, no un punto '
               'concreto de ninguna de las dos.',
-    'CHN-65b': 'Revision salarial del convenio de Madrid en el BOCM: es una '
+    'CHN-65b': 'Revisión salarial del convenio de Madrid en el BOCM: es una '
                'tabla salarial publicada como anuncio, no un articulado.',
     'CHN-65c': 'Consulta publica del registro REGCON, no una norma.',
     'CHN-66': 'Consulta publica del registro REGCON (cero resultados), no una '
               'norma.',
     'CHN-93': 'Cuatro consultas del registro REGCON, no una norma.',
-    'CHN-74': 'RD 10/2025 (CNAE-2025): catalogo de codigos de actividad '
-              'economica, sin articulado propio que citar para un codigo.',
-    'CHN-74b': 'RD 10/2025: cita una Disposicion Adicional («D.A. unica, letra '
+    'CHN-74': 'RD 10/2025 (CNAE-2025): catálogo de códigos de actividad '
+              'económica, sin articulado propio que citar para un código.',
+    'CHN-74b': 'RD 10/2025: cita una Disposición Adicional («D.A. única, letra '
                'c)»), que no es uno de los cuatro tokens exigidos '
-               '(art./ap./Anexo/Epigrafe).',
+               '(art./ap./Anexo/Epígrafe).',
 }
 
 
 def gate_legal(ids_requeridos=None, abortar=True, exigir_articulo=True):
-    """Comprueba que la verificacion legal sirve una nota para CADA id que los libros
+    """Comprueba que la verificación legal sirve una nota para CADA id que los libros
     van a citar. Si falta alguno, ABORTA listandolos.
 
     Los constructores lo llaman ANTES de escribir notas. `abortar=False` devuelve la
-    lista en vez de morir, para que `comprobar()` pueda informar sin tumbar el modulo.
+    lista en vez de morir, para que `comprobar()` pueda informar sin tumbar el módulo.
 
-    B8 (refutacion 2026-09-12, segunda verificacion): ademas de exigir que la nota
+    B8 (refutación 2026-09-12, segunda verificación): además de exigir que la nota
     EXISTA, con `exigir_articulo=True` (el default) exige que cite articulo, apartado,
-    Anexo o Epigrafe -no solo la norma-, salvo que el id este en
+    Anexo o Epígrafe -no solo la norma-, salvo que el id este en
     `EXCEPCIONES_SIN_ARTICULO` (documentado uno a uno, nunca «no se ha mirado»).
     """
     ids = list(ids_requeridos or IDS_LEGALES_REQUERIDOS)
@@ -3933,11 +3952,11 @@ def gate_legal(ids_requeridos=None, abortar=True, exigir_articulo=True):
         return []
     detalle = []
     for i in faltan:
-        para_que = IDS_LEGALES_REQUERIDOS.get(i, ('(sin descripcion)', '?'))[0]
+        para_que = IDS_LEGALES_REQUERIDOS.get(i, ('(sin descripción)', '?'))[0]
         detalle.append('  - %s: SIN NOTA — %s' % (i, para_que))
     for i in sin_articulo:
-        para_que = IDS_LEGALES_REQUERIDOS.get(i, ('(sin descripcion)', '?'))[0]
-        detalle.append('  - %s: SIN ARTICULO/APARTADO/ANEXO/EPIGRAFE — %s'
+        para_que = IDS_LEGALES_REQUERIDOS.get(i, ('(sin descripción)', '?'))[0]
+        detalle.append('  - %s: SIN ARTICULO/APARTADO/ANEXO/EPÍGRAFE — %s'
                        % (i, para_que))
     mensaje = ('gate_legal: %d sin nota y %d sin articulo, de %d ids, en %s\n%s'
                % (len(faltan), len(sin_articulo), len(ids),
@@ -3950,13 +3969,13 @@ def gate_legal(ids_requeridos=None, abortar=True, exigir_articulo=True):
 
 
 def id_existe_en_json_comun(pid):
-    """True si ese id existe LITERALMENTE en el JSON comun. Es lo que hace cumplir
+    """True si ese id existe LITERALMENTE en el JSON común. Es lo que hace cumplir
     D44: `CHS-28` no existe; `CHS-28a` si."""
     return str(pid).strip() in _carga_json_comun()['ids']
 
 
 def ficha(pid):
-    """La entrada completa del JSON comun, o None."""
+    """La entrada completa del JSON común, o None."""
     return _carga_json_comun()['entradas'].get(str(pid).strip())
 
 
@@ -3978,14 +3997,14 @@ def capex_bloque_sin_iva(bloque):
 
 
 def capex_sin_fondo_de_maniobra():
-    """La linea que VIAJA al libro 7 (cruce 7 <- 2). NO es «el CAPEX total»: el total
+    """La línea que VIAJA al libro 7 (cruce 7 <- 2). NO es «el CAPEX total»: el total
     incluye el bloque «fondo de maniobra», y llevarlo entero al 7 -que vuelve a dotar
     el fondo- lo contaria dos veces."""
     return sum(capex_bloque_sin_iva(b) for b in BLOQUES_CAPEX if b != 'Fondo de maniobra')
 
 
 def capex_comparable_sin_iva():
-    """Los SEIS bloques comparables con un escenario de dotacion publicado. Fianza y
+    """Los SEIS bloques comparables con un escenario de dotación publicado. Fianza y
     licencias, packaging y moldes, y fondo de maniobra quedan fuera, enteros."""
     return sum(capex_bloque_sin_iva(b) for b in BLOQUES_COMPARABLES)
 
@@ -4022,8 +4041,8 @@ def capex_amortizable_sin_iva():
 
 
 def iva_soportado_capex():
-    """El IVA que hay que ADELANTAR el dia que abres y que vuelve despues. Sin esta
-    linea, el plan de tesoreria del primer trimestre esta mal por definicion."""
+    """El IVA que hay que ADELANTAR el día que abres y que vuelve después. Sin esta
+    línea, el plan de tesorería del primer trimestre esta mal por definición."""
     total = 0.0
     for b, _partida, importe, _base, tipo, _fuente, _nota in CAPEX:
         if b == 'Fondo de maniobra':
@@ -4041,8 +4060,8 @@ _FIJOS_CACHE = {}
 
 
 def gastos_fijos_mensuales():
-    """Total de gastos fijos de UN MES del ano de crucero. Es uno de los DOS factores
-    del fondo de maniobra, y los dos viven aqui (libro 7)."""
+    """Total de gastos fijos de UN MES del año de crucero. Es uno de los DOS factores
+    del fondo de maniobra, y los dos viven aquí (libro 7)."""
     if 'v' in _FIJOS_CACHE:
         return _FIJOS_CACHE['v']
     total = 0.0
@@ -4051,7 +4070,7 @@ def gastos_fijos_mensuales():
             total += importe
         elif partida.startswith('Personal'):
             total += coste_personal_anual() / 12.0
-        elif partida.startswith('Amortizacion'):
+        elif partida.startswith('Amortiz'):   # sin tilde a proposito: casa con y sin acento
             total += capex_amortizable_sin_iva() / P('anios_amortizacion') / 12.0
         elif partida.startswith('Gastos financieros'):
             total += intereses_anio_crucero() / 12.0
@@ -4060,7 +4079,7 @@ def gastos_fijos_mensuales():
 
 
 def fondo_maniobra():
-    """meses de colchon x gastos fijos mensuales. SE CALCULA UNA SOLA VEZ, aqui, con
+    """meses de colchón x gastos fijos mensuales. SE CALCULA UNA SOLA VEZ, aquí, con
     los dos factores del libro 7, y viaja al libro 2 YA CALCULADO (cruce 2 <- 7)."""
     return P('meses_colchon_fondo_maniobra') * gastos_fijos_mensuales()
 
@@ -4096,7 +4115,7 @@ def margen_contribucion_canal(c):
 
 def asistentes_punto_muerto_taller():
     """Cuantas personas tiene que traer un taller para cubrir su propio coste. Usa el
-    PRECIO MINIMO del rango de `CHS-30` y el coste hora de obrador como coste de
+    PRECIO MÍNIMO del rango de `CHS-30` y el coste hora de obrador como coste de
     docente, que es el criterio mas conservador."""
     t = [c for c in CANALES if c['canal'].startswith('Talleres')][0]
     coste = t['horas_docente'] * coste_hora_obrador()
@@ -4117,17 +4136,17 @@ def asistentes_punto_muerto_taller():
 #: deliberadas -«nunca escribas esto»- y no usos. Sin esa exclusion el gate se
 #: denuncia a si mismo y deja de servir.
 CIFRAS_PROHIBIDAS = (
-    ('3.000-4.500', 'N-1: la cotizacion del cacao de la prensa latinoamericana'),  # LN-OK
-    ('80.000-250.000', 'N-2: la inversion inventada de la FAQ de consultoria'),    # LN-OK
+    ('3.000-4.500', 'N-1: la cotización del cacao de la prensa latinoamericana'),  # LN-OK
+    ('80.000-250.000', 'N-2: la inversión inventada de la FAQ de consultoria'),    # LN-OK
     ('6.000-18.000', 'N-2: la vitrina refrigerada de la misma FAQ'),               # LN-OK
     ('18,2 %', 'N-16: el peso de los bombones de 2022; el vigente es otro'),       # LN-OK
     ('89 unidades', 'N-5: el punto de equilibrio de CHS-40 como cifra de portada'), # LN-OK
     ('7.400', 'N-12: Selmi One a precio de tienda mexicana'),                      # LN-OK
     ('35.000 ', 'N-11: «Utopick abrio con 35.000 euros en 2014»'),                 # LN-OK
-    ('45 miembros', 'N-18: la Asociacion Bean to Bar se publica como «mas de 40»'), # LN-OK
-    ('125.000', 'N-10: la franquicia Valor via infofranquicias'),                  # LN-OK
+    ('45 miembros', 'N-18: la Asociación Bean to Bar se publica como «mas de 40»'), # LN-OK
+    ('125.000', 'N-10: la franquicia Valor vía infofranquicias'),                  # LN-OK
     ('24.040', 'N-10: el canon de la franquicia Valor'),                           # LN-OK
-    ('12 x 30', 'D23a: los moldes van como RANGO, no como multiplicacion'),        # LN-OK
+    ('12 x 30', 'D23a: los moldes van como RANGO, no como multiplicación'),        # LN-OK
     ('12 moldes', 'D23a: los moldes van como RANGO'),                              # LN-OK
     ('dulcer', 'SPEC 6: falso amigo mexicano, no se usa como sinonimo'),           # LN-OK
     ('artesana ', 'SPEC 6: la forma es «artesanal»'),                              # LN-OK
@@ -4136,7 +4155,7 @@ CIFRAS_PROHIBIDAS = (
     ('factor 5', 'D30: el factor del kit es DE TRES A CINCO'),                     # LN-OK
     ('13 ficheros', 'D38: kit-escandallos SI tiene hoja de chocolate'),            # LN-OK
     ('carnet de manipulador', 'CHN-69: no existe desde 2010'),                     # LN-OK
-    ('cinco alergenos', 'CHN-34b: son OCHO'),                                      # LN-OK
+    ('cinco alérgenos', 'CHN-34b: son OCHO'),                                      # LN-OK
     ('maestro chocolatero', 'B.5: no es un perfil del kit'),                       # LN-OK
     ('fino', 'CHN-08: la norma NO da lista de calificativos de calidad'),          # LN-OK
     ('caja parada', 'D36: en agosto para el obrador, no la caja'),                 # LN-OK
@@ -4157,7 +4176,7 @@ FAMILIAS_SOLO_CON_SUFIJO = ('CHS-24', 'CHS-25', 'CHS-27', 'CHS-28', 'CHS-37', 'C
 
 
 def _texto_barrible(fuente_py):
-    """El codigo sin el docstring del modulo y sin las lineas marcadas LN-OK."""
+    """El código sin el docstring del módulo y sin las líneas marcadas LN-OK."""
     cuerpo = fuente_py
     i = cuerpo.find('\"\"\"')
     if i >= 0:
@@ -4248,7 +4267,7 @@ def comprobar():
             fh.close()
         fuente_py.encode('cp1252')
     except UnicodeEncodeError as e:
-        fallos.append('Caracter fuera de WinAnsi (cp1252) en la posicion %d: %r'
+        fallos.append('Carácter fuera de WinAnsi (cp1252) en la posición %d: %r'
                       % (e.start, fuente_py[max(0, e.start - 40):e.start + 40]))
     except IOError:
         avisos.append('No se pudo releer el fichero para el gate de WinAnsi')
@@ -4273,12 +4292,12 @@ def comprobar():
     malas = [f for f in fuentes if re.search(r'\bCHS-41\b(?![a-z])', f)]
     exige(not malas,
           'R3-M3: `CHS-41` a secas se usa como fuente en %d sitios. Es un AGREGADO sin '
-          'fuente unica (fiabilidad baja) y esta PROHIBIDO: las atemperadoras se citan '
+          'fuente única (fiabilidad baja) y esta PROHIBIDO: las atemperadoras se citan '
           'CHS-41a a CHS-41j, una a una' % len(malas))
     for fam in FAMILIAS_SOLO_CON_SUFIJO:
         bare = [f for f in fuentes if re.search(r'\b%s\b(?![a-z])' % re.escape(fam), f)]
         exige(not bare,
-              'D44: el id %s se usa SIN SUFIJO en %d fuentes, y en el JSON comun solo '
+              'D44: el id %s se usa SIN SUFIJO en %d fuentes, y en el JSON común solo '
               'existe con sufijo' % (fam, len(bare)))
     for f in fuentes:
         exige(_fuente_ok(f), 'Fuente no reconocida (no es ninguno de los CUATRO '
@@ -4287,24 +4306,24 @@ def comprobar():
     # ---- 2. el negocio y las seis zonas ----------------------------------
     suma_zonas = sum(z[1] for z in ZONAS)
     exige(abs(suma_zonas - 75.0) < 1e-9,
-          'Las zonas no suman los 75 m2 de §3.1: %.2f' % suma_zonas)
+          'Las zonas no suman los 75 m² de §3.1: %.2f' % suma_zonas)
     exige(len(ZONAS) == 6, '§3.1 fija SEIS zonas y hay %d' % len(ZONAS))
-    exige(abs(sum(BLOQUES_M2.values()) - 75.0) < 1e-9, 'Los bloques no suman 75 m2')
+    exige(abs(sum(BLOQUES_M2.values()) - 75.0) < 1e-9, 'Los bloques no suman 75 m²')
     for zona, m2, _f, _n in ZONAS:
-        exige(zona in ZONA_A_BLOQUE, 'La zona %r no esta asignada a ningun bloque' % zona)
+        exige(zona in ZONA_A_BLOQUE, 'La zona %r no esta asignada a ningún bloque' % zona)
     for bloque, m2 in BLOQUES_M2.items():
         suma = sum(z[1] for z in ZONAS if ZONA_A_BLOQUE[z[0]] == bloque)
         exige(abs(suma - m2) < 1e-9,
-              'Las zonas del bloque «%s» suman %.2f m2 y BLOQUES_M2 dice %.2f'
+              'Las zonas del bloque «%s» suman %.2f m² y BLOQUES_M2 dice %.2f'
               % (bloque, suma, m2))
-    exige(NEGOCIO['m2_total'] == 75.0, 'NEGOCIO[m2_total] ya no son 75 m2')
+    exige(NEGOCIO['m2_total'] == 75.0, 'NEGOCIO[m2_total] ya no son 75 m²')
     exige(NEGOCIO['mes_apertura_recomendado'] == 6 and NEGOCIO['dia_apertura_recomendado'] == 1,
           'La apertura deja de ser el 1 de junio')
     exige(campana(NEGOCIO['mes_apertura_recomendado'])['temporada'] != 'Alta',
           'La apertura cae en un mes de temporada Alta del calendario del kit')
 
     # ---- 3. las cinco temperaturas del kit (D31) -------------------------
-    exige(len(CLIMA) == 5, 'D31 fija CINCO temperaturas unicas y hay %d' % len(CLIMA))
+    exige(len(CLIMA) == 5, 'D31 fija CINCO temperaturas únicas y hay %d' % len(CLIMA))
     esperado_clima = {'obrador': (18.0, 20.0, 50.0, 60.0),
                       'camara': (15.0, 18.0, 50.0, 60.0),
                       'nevera_rellenos': (0.0, 4.0, None, None),
@@ -4321,9 +4340,9 @@ def comprobar():
     exige(CLIMA['obrador']['fuente'] == F_KIT_08_APERTURA,
           'R3-M2: el obrador tiene que citar SOLO 08-apertura-cierre-negocio.xlsx')
     exige(VITRINA_UMBRAL_ALARMA_C == 20.0,
-          'El semaforo de vitrina solo puede avisar por encima de 20 grados C')
+          'El semáforo de vitrina solo puede avisar por encima de 20 °C')
     exige(VITRINA_UMBRAL_ALARMA_C > CLIMA['vitrina']['t_max'],
-          'PROHIBIDO un semaforo que ponga en rojo los 16-18 grados C del propio kit')
+          'PROHIBIDO un semáforo que ponga en rojo los 16-18 °C del propio kit')
 
     # ---- 4. plantilla y convenio -----------------------------------------
     jornadas = sum(p[2] for p in PLANTILLA)
@@ -4336,7 +4355,7 @@ def comprobar():
               % (pid, perfil))
         exige(1 <= grupo <= len(CONVENIO), '%s apunta a un grupo de convenio inexistente' % pid)
         exige(area in CONVENIO[grupo - 1][4],
-              '%s esta en el area %s y su grupo de convenio no la contempla' % (pid, area))
+              '%s esta en el área %s y su grupo de convenio no la contempla' % (pid, area))
     exige(set(p[1] for p in PLANTILLA) == set(PERFILES_KIT),
           'Los tres renglones no cubren los tres perfiles del kit')
     exige(len([p for p in PLANTILLA if p[4] == 'OBRADOR']) == 2,
@@ -4344,9 +4363,9 @@ def comprobar():
 
     exige(CONVENIO_PAGAS == 15, 'El convenio de Madrid paga 15, no %d' % CONVENIO_PAGAS)
     exige(CONVENIO_ES_EJEMPLO, 'D43: la tabla salarial va MARCADA COMO EJEMPLO')
-    exige(CONVENIO_CODIGO == '28001025011981', 'El codigo del convenio ha cambiado')
-    exige('BOLLERIA' not in CONVENIO_DENOMINACION.upper(),
-          'R2-B1: «BOLLERIAS» no esta en la denominacion oficial del REGCON')
+    exige(CONVENIO_CODIGO == '28001025011981', 'El código del convenio ha cambiado')
+    exige('BOLLER' not in CONVENIO_DENOMINACION.upper(),
+          'R2-B1: «BOLLERIAS» no esta en la denominación oficial del REGCON')
     for n, nombre, mes, anio, _areas, _puestos in CONVENIO:
         exige(abs(mes * CONVENIO_PAGAS - anio) < 0.005,
               'Grupo %d (%s): %.2f x %d no da %.2f' % (n, nombre, mes, CONVENIO_PAGAS, anio))
@@ -4359,7 +4378,7 @@ def comprobar():
         exige(etiqueta.startswith(chr(171)) and etiqueta.endswith(chr(187)),
               'C-7: las etiquetas de la fuente salarial van ENTRECOMILLADAS: %r' % etiqueta)
         exige(equiv in PERFILES_KIT,
-              'El salario de mercado %r no equivale a ningun perfil del kit' % etiqueta)
+              'El salario de mercado %r no equivale a ningún perfil del kit' % etiqueta)
         exige(mn < mx, 'Rango salarial invertido en %r' % etiqueta)
 
     # ---- 5. parametros ----------------------------------------------------
@@ -4369,27 +4388,27 @@ def comprobar():
         if clave != 'iva_taller':
             exige(valor is not None, 'PARAMS[%s] sin valor' % clave)
     exige(P('iva_taller') is None,
-          'D42e: el tipo de IVA del taller va SIN CIFRA, y aqui tiene un valor')
+          'D42e: el tipo de IVA del taller va SIN CIFRA, y aquí tiene un valor')
     exige(abs(P('food_cost_objetivo') + margen_bruto_objetivo() - 1.0) < 1e-9,
-          'La regla UNICA de margen no cierra')
+          'La regla ÚNICA de margen no cierra')
     exige(abs(P('ss_empresa') - 0.33) < 1e-9,
-          'ss_empresa se ha despegado del parametro de la familia (motor.PARAMETROS)')
+          'ss_empresa se ha despegado del parámetro de la familia (motor.PARAMETROS)')
     exige(abs(P('smi_anual') - 17094.0) < 1e-9,
-          'smi_anual se ha despegado del parametro de la familia (motor.PARAMETROS)')
+          'smi_anual se ha despegado del parámetro de la familia (motor.PARAMETROS)')
     exige(P('meses_colchon_fondo_maniobra') == 6,
-          'El colchon de tesoreria son 6 meses de fijos (§3.4)')
+          'El colchón de tesorería son 6 meses de fijos (§3.4)')
     entradas_libro2 = [c[1] for c in CAPEX]
-    exige(not any('meses de colchon' in x.lower() for x in entradas_libro2),
-          'R4-A1: «meses de colchon» NO puede ser una entrada del libro 2')
+    exige(not any('meses de colchón' in x.lower() for x in entradas_libro2),
+          'R4-A1: «meses de colchón» NO puede ser una entrada del libro 2')
 
     # ---- 6. las coberturas: UN precio, DOS bases --------------------------
     negras = [k for k, c in COBERTURAS.items() if c.get('es_celda_unica')]
     exige(len(negras) == 1,
-          'Tiene que haber UNA sola celda unica de precio de cobertura y hay %d' % len(negras))
+          'Tiene que haber UNA sola celda única de precio de cobertura y hay %d' % len(negras))
     exige(abs(COBERTURAS['negra']['precio_fuente'] - 25.02) < 1e-9,
           'El precio de la cobertura negra se ha despegado de CHS-28a')
     exige(COBERTURAS['negra']['base_iva'] == 'con IVA',
-          'A-2: CHS-28a esta declarada CON IVA, y de ahi sale todo el ajuste de base')
+          'A-2: CHS-28a esta declarada CON IVA, y de ahí sale todo el ajuste de base')
     base = precio_cobertura_base_imponible('negra')
     exige(abs(base - 25.02 / 1.10) < 1e-6,
           'La base imponible de la cobertura negra no sale de 25,02 / 1,10')
@@ -4404,7 +4423,7 @@ def comprobar():
               'Base de IVA desconocida en la cobertura %s' % k)
         exige(c['fuente_tres_magnitudes'] == 'supuesto',
               'D37 capa (b): las tres magnitudes se COPIAN de la ficha del proveedor, '
-              'asi que aqui solo pueden ser supuesto (%s)' % k)
+              'así que aquí solo pueden ser supuesto (%s)' % k)
     exige(COBERTURAS['negra']['cacao_min_pct'] == 55.0
           and COBERTURAS['negra']['cacao_max_pct'] == 70.0,
           'El rango de cacao de la negra se ha despegado del kit (55-70 %)')
@@ -4432,10 +4451,10 @@ def comprobar():
                       if r['familia_vida_util'] == 'Bombones de ganache con nata fresca']
     exige(sum(r['mix_verano_pct'] for r in ganache_fresca)
           < sum(r['mix_pct'] for r in ganache_fresca),
-          'D36: en verano baja la ganache fresca, y aqui no baja')
+          'D36: en verano baja la ganache fresca, y aquí no baja')
     tabletas = por_familia('Tabletas')
     exige(sum(r['mix_verano_pct'] for r in tabletas) > sum(r['mix_pct'] for r in tabletas),
-          'D36: en verano sube la tableta y el producto estable, y aqui no sube')
+          'D36: en verano sube la tableta y el producto estable, y aquí no sube')
 
     ids = [r['id'] for r in CARTA]
     exige(len(set(ids)) == len(ids), 'Hay ids repetidos en la carta')
@@ -4444,22 +4463,22 @@ def comprobar():
 
     for r in CARTA:
         exige(bool(r.get('denominacion_legal')),
-              '%s no declara denominacion legal (D52)' % r['id'])
+              '%s no declara denominación legal (D52)' % r['id'])
         exige(_fuente_ok(r['fuente_denominacion']),
-              '%s: la denominacion legal no cita ningun id' % r['id'])
+              '%s: la denominación legal no cita ningún id' % r['id'])
         exige(r['via'] in VIAS_DESPACHO,
-              '%s no declara via etiqueta/granel valida: %r (D47)' % (r['id'], r['via']))
+              '%s no declara vía etiqueta/granel valida: %r (D47)' % (r['id'], r['via']))
         exige(isinstance(r['alergenos'], dict)
               and set(r['alergenos']) == set(ALERGENOS_CLAVES),
-              '%s: su fila de alergenos no tiene las OCHO columnas' % r['id'])
+              '%s: su fila de alérgenos no tiene las OCHO columnas' % r['id'])
         exige(r['familia_vida_util'] in [f[0] for f in VIDA_UTIL_KIT],
-              '%s apunta a una familia de vida util que no esta en el kit: %r'
+              '%s apunta a una familia de vida útil que no esta en el kit: %r'
               % (r['id'], r['familia_vida_util']))
         exige(0.0 <= r['merma_recuperable_pct'] < 1.0
               and 0.0 <= r['merma_no_recuperable_pct'] < 1.0,
               '%s: merma fuera de rango' % r['id'])
         exige(r['minutos_mo_tanda'] > 0, '%s no declara minutos de mano de obra' % r['id'])
-        exige(piezas_por_tanda(r) >= 1, '%s: piezas por tanda invalidas' % r['id'])
+        exige(piezas_por_tanda(r) >= 1, '%s: piezas por tanda inválidas' % r['id'])
         exige(abs(r['iva'] - 0.10) < 1e-9,
               '%s lleva IVA %.2f y el chocolate va al 10 %% (CHN-71)' % (r['id'], r['iva']))
         exige(r['fuente_pvp'] == 'supuesto' or r['fuente_pvp'].startswith('CHS-'),
@@ -4484,14 +4503,14 @@ def comprobar():
     # la matriz 28 x 8 completa y con los ocho alergenos usados al menos una vez
     m = matriz_alergenos()
     exige(len(m) == 28 and all(len(f[2]) == 8 for f in m),
-          'La matriz de alergenos no es de 28 x 8')
+          'La matriz de alérgenos no es de 28 x 8')
     for clave, nombre_al, _punto in ALERGENOS:
         exige(referencias_con(clave),
-              'El alergeno «%s» no aparece en ninguna referencia: la matriz no ensena '
+              'El alérgeno «%s» no aparece en ninguna referencia: la matriz no enseña '
               'nada sobre el' % nombre_al)
-    exige(len(referencias_con('cacahuetes')) >= 1 and len(referencias_con('sesamo')) >= 1
-          and len(referencias_con('frutos_cascara')) >= 1,
-          'CHN-34b: cacahuete, sesamo y frutos de cascara son entradas INDEPENDIENTES '
+    exige(len(referencias_con('cacahuetes')) >= 1 and len(referencias_con('sésamo')) >= 1
+          and len(referencias_con('frutos_cáscara')) >= 1,
+          'CHN-34b: cacahuete, sésamo y frutos de cáscara son entradas INDEPENDIENTES '
           'y las tres tienen que estar representadas')
 
     # las cajas: su fila de alergenos es la UNION de lo que llevan dentro
@@ -4499,14 +4518,14 @@ def comprobar():
         if not es_caja(r):
             continue
         exige(sum(n for _i, n in r['composicion_caja']) == r['uds_caja'],
-              '%s dice %d unidades y su composicion suma %d'
+              '%s dice %d unidades y su composición suma %d'
               % (r['id'], r['uds_caja'], sum(n for _i, n in r['composicion_caja'])))
         union = dict((k, False) for k in ALERGENOS_CLAVES)
         for i, _n in r['composicion_caja']:
             for k in ALERGENOS_CLAVES:
                 union[k] = union[k] or ref(i)['alergenos'][k]
         exige(union == r['alergenos'],
-              '%s: su fila de alergenos no es la UNION de lo que lleva dentro. '
+              '%s: su fila de alérgenos no es la UNIÓN de lo que lleva dentro. '
               'Declarada %s, calculada %s'
               % (r['id'], sorted(k for k in union if r['alergenos'][k]),
                  sorted(k for k in union if union[k])))
@@ -4520,20 +4539,20 @@ def comprobar():
         exige(coste_relleno_kg(clave) > 0, 'El relleno %r sale a coste cero' % clave)
         exige(0.0 < r['aw'] < 1.0, 'El relleno %r tiene una aw imposible' % clave)
         exige(r['familia_kit'] in [f[0] for f in VIDA_UTIL_KIT],
-              'El relleno %r apunta a una familia de vida util que no esta en el kit' % clave)
+              'El relleno %r apunta a una familia de vida útil que no esta en el kit' % clave)
         for ing, _c in r['lineas']:
             exige(ing in PRECIOS_COMPRA,
                   'El relleno %r usa %r y no tiene precio de compra' % (clave, ing))
 
     # ---- 8. vida util: es la del kit, y no se reescribe -------------------
     exige(len(VIDA_UTIL_KIT) == 10,
-          'La tabla de vida util del kit tiene DIEZ filas y aqui hay %d' % len(VIDA_UTIL_KIT))
+          'La tabla de vida útil del kit tiene DIEZ filas y aquí hay %d' % len(VIDA_UTIL_KIT))
     exige(FUENTE_VIDA_UTIL == F_KIT_MOLDEADO,
-          'D30: la tabla de vida util se cita por fichero y hoja del kit')
+          'D30: la tabla de vida útil se cita por fichero y hoja del kit')
     exige(VIDA_UTIL_DECLARADA is None,
-          'CHN-30: la vida util la declara el operador en su APPCC; aqui es celda verde')
+          'CHN-30: la vida útil la declara el operador en su APPCC; aquí es celda verde')
     plazos = dict((f[0], f[1]) for f in VIDA_UTIL_KIT)
-    exige(plazos.get('Bombones de ganache con nata fresca') == '10-15 dias',
+    exige(plazos.get('Bombones de ganache con nata fresca') == '10-15 días',
           'El plazo de la ganache fresca se ha despegado del literal del kit')
     exige(plazos.get('Bombones de ganache con nata UHT, sorbato o alcohol') == '4-8 semanas',
           'El plazo de la ganache estabilizada se ha despegado del literal del kit')
@@ -4543,29 +4562,29 @@ def comprobar():
     # ---- 9. equipamiento, escenarios y CAPEX ------------------------------
     for e in EQUIPAMIENTO:
         exige(e['base_iva'] in ('con IVA', 'sin IVA', 'no declarada'),
-              'La linea %d no declara base de IVA valida (regla 3 de §2.3)' % e['n'])
+              'La línea %d no declara base de IVA valida (regla 3 de §2.3)' % e['n'])
         exige(e['tipo_iva'] is not None,
-              'La linea %d no declara tipo de IVA' % e['n'])
+              'La línea %d no declara tipo de IVA' % e['n'])
         tiene = (e['valor_verificado'] is not None) != (e['supuesto_por_defecto'] is not None)
         exige(tiene,
-              'La linea %d tiene los dos valores o ninguno: `valor_verificado` y '
+              'La línea %d tiene los dos valores o ninguno: `valor_verificado` y '
               '`supuesto_por_defecto` son excluyentes' % e['n'])
         exige(precio_equipamiento_sin_iva(e) > 0,
-              'La linea %d se queda con precio cero: seria una celda verde vacia' % e['n'])
-        exige(e['plazo_semanas'] > 0, 'La linea %d no declara plazo de entrega' % e['n'])
+              'La línea %d se queda con precio cero: seria una celda verde vacia' % e['n'])
+        exige(e['plazo_semanas'] > 0, 'La línea %d no declara plazo de entrega' % e['n'])
         if e['valor_verificado'] is None and e['rango_min'] is None:
             exige(e['fuente'] == 'supuesto' or 'supuesto' in e['fuente'],
-                  'La linea %d no tiene precio verificado ni rango, y su fuente no dice '
+                  'La línea %d no tiene precio verificado ni rango, y su fuente no dice '
                   '«supuesto»' % e['n'])
         if e['rango_min'] is not None:
             exige(e['valor_verificado'] is None,
-                  'D23a: la linea %d va como RANGO, asi que no puede tener ademas un '
+                  'D23a: la línea %d va como RANGO, así que no puede tener además un '
                   'valor cerrado verificado' % e['n'])
     mantenedor = [e for e in EQUIPAMIENTO if e['es_desde']]
     exige(len(mantenedor) == 1 and abs(mantenedor[0]['valor_verificado'] - 570.0) < 1e-9,
-          'D23b: el mantenedor es el unico «desde» del catalogo y vale 570,00 euros')
+          'D23b: el mantenedor es el único «desde» del catálogo y vale 570,00 euros')
     moldes = [e for e in EQUIPAMIENTO if e['rango_min'] is not None]
-    exige(len(moldes) == 1, 'D23a: los moldes son la unica linea que va como RANGO')
+    exige(len(moldes) == 1, 'D23a: los moldes son la única línea que va como RANGO')
     mo = moldes[0]
     exige(mo['rango_min'] < mo['supuesto_por_defecto'] < mo['rango_max'],
           'D23a: el valor por defecto de los moldes tiene que caer DENTRO de su rango')
@@ -4579,7 +4598,7 @@ def comprobar():
               'D23c: el escenario %s tiene que llevar pegada la etiqueta de base mixta' % k)
     exige(ESCENARIOS_DOTACION['A']['min'] / ESCENARIOS_DOTACION['B']['max'] > 3.5,
           'El factor 4 entre los dos escenarios ha dejado de ser cierto y la frase '
-          'publicable habria que reescribirla')
+          'publicable habría que reescribirla')
 
     bloques_en_capex = set(c[0] for c in CAPEX)
     exige(bloques_en_capex == set(BLOQUES_CAPEX),
@@ -4593,26 +4612,26 @@ def comprobar():
         exige(b in BLOQUES_CAPEX, 'El bloque comparable %r no esta en el CAPEX' % b)
     for b in ('Fianza y licencias', 'Packaging y moldes', 'Fondo de maniobra'):
         exige(b not in BLOQUES_COMPARABLES,
-              'R4-M1: %r queda FUERA de la comparacion, entero' % b)
+              'R4-M1: %r queda FUERA de la comparación, entero' % b)
     for b in BLOQUES_CAPEX:
         exige(capex_bloque_sin_iva(b) > 0, 'El bloque de CAPEX %r suma cero' % b)
     bloques_equipo = set(e['bloque_capex'] for e in EQUIPAMIENTO)
     for b in bloques_equipo:
         exige(b in BLOQUES_CAPEX,
-              'La linea de equipamiento apunta al bloque %r, que no existe en el CAPEX' % b)
+              'La línea de equipamiento apunta al bloque %r, que no existe en el CAPEX' % b)
 
     exige(abs(inversion_total_sin_iva()
               - (capex_sin_fondo_de_maniobra() + fondo_maniobra())) < 0.005,
-          'D32: la inversion total no cuadra con sus dos mitades')
+          'D32: la inversión total no cuadra con sus dos mitades')
     exige(capex_sin_fondo_de_maniobra() < inversion_total_sin_iva(),
-          'El CAPEX sin el fondo tiene que ser MENOR que la inversion total')
+          'El CAPEX sin el fondo tiene que ser MENOR que la inversión total')
     exige(abs(fondo_maniobra()
               - P('meses_colchon_fondo_maniobra') * gastos_fijos_mensuales()) < 0.005,
-          'El fondo de maniobra no sale de meses de colchon x gastos fijos')
+          'El fondo de maniobra no sale de meses de colchón x gastos fijos')
     exige(20000.0 < capex_comparable_sin_iva() < 80000.0,
           'Los seis bloques comparables suman %.0f euros y se salen de la horquilla '
-          'publicada de CHS-03 (20.000-80.000 euros «segun el proyecto»): si es a '
-          'proposito, hay que reescribir la nota que los compara'
+          'publicada de CHS-03 (20.000-80.000 euros «según el proyecto»): si es a '
+          'propósito, hay que reescribir la nota que los compara'
           % capex_comparable_sin_iva())
 
     # ---- 10. los OCHO cruces ----------------------------------------------
@@ -4638,14 +4657,14 @@ def comprobar():
     exige(len(CAMPANAS) == 12,
           'D35: las 12 filas del BONUS-02 del kit, y hay %d' % len(CAMPANAS))
     exige([c['mes'] for c in CAMPANAS] == list(range(1, 13)),
-          'Las 12 filas no estan en orden de mes o falta alguno')
+          'Las 12 filas no están en orden de mes o falta alguno')
     temporadas = dict((t, len(meses_por_temporada(t))) for t in ('Alta', 'Media', 'Baja'))
     exige(temporadas == {'Alta': 7, 'Media': 4, 'Baja': 1},
-          'El kit declara 7 Alta, 4 Media y 1 Baja, y aqui hay %s' % temporadas)
+          'El kit declara 7 Alta, 4 Media y 1 Baja, y aquí hay %s' % temporadas)
     exige(meses_por_temporada('Alta') == [2, 3, 4, 5, 10, 11, 12],
           'Los meses «Alta» no son los del kit (feb, mar, abr, may, oct, nov, dic)')
     exige(meses_por_temporada('Baja') == [8],
-          'D36: el unico mes «Baja» es agosto')
+          'D36: el único mes «Baja» es agosto')
     exige(any('COMUNIONES' in c['campana'] for c in CAMPANAS),
           'D35: las COMUNIONES tienen que estar entre las campanas')
     exige(CAMPANA_COMUNIONES['meses'] == (4, 5, 6),
@@ -4657,31 +4676,31 @@ def comprobar():
               '%s: producto estrella %r que no esta en la carta'
               % (c['nombre_mes'], c['producto_estrella']))
         exige(c['uds_dia_pico'] >= c['uds_dia_normal'],
-              '%s: el pico no puede vender menos que un dia normal' % c['nombre_mes'])
+              '%s: el pico no puede vender menos que un día normal' % c['nombre_mes'])
         exige(c['pvp_campana'] > 0, '%s: sin PVP de campana' % c['nombre_mes'])
-        exige(c['dias_campana'] >= 0, '%s: dias de campana negativos' % c['nombre_mes'])
+        exige(c['dias_campana'] >= 0, '%s: días de campana negativos' % c['nombre_mes'])
 
     exige(VALLE['mes'] == 8 and VALLE['temporada_kit'] == 'Baja',
-          'D36: el valle es AGOSTO y es el unico mes Baja')
+          'D36: el valle es AGOSTO y es el único mes Baja')
     exige(VALLE['para_el_obrador'] and not VALLE['para_la_tienda'],
           'D36: lo que para es el OBRADOR, no la caja')
     exige(VALLE['meses_mix_verano'] == (7, 8),
           'D36: el mix distinto es el de julio y agosto')
     exige(VALLE['envios_parados_meses'] == (6, 7, 8, 9),
-          'D36: los envios (canal ONLINE) paran de junio a septiembre')
+          'D36: los envíos (canal ONLINE) paran de junio a septiembre')
 
     media = sum(ESTACIONALIDAD_MENSUAL) / 12.0
     exige(abs(media - 1.0) < 1e-9,
           'Los coeficientes de estacionalidad tienen media %.6f y tiene que ser 1,000' % media)
     exige(min(ESTACIONALIDAD_MENSUAL) == ESTACIONALIDAD_MENSUAL[7],
-          'Agosto tiene que ser el minimo de los doce coeficientes')
+          'Agosto tiene que ser el mínimo de los doce coeficientes')
     exige(ESTACIONALIDAD_MENSUAL[7] > 0.0,
           'Agosto NO vale cero: la tienda abre, lo que para es el obrador')
     exige(max(ESTACIONALIDAD_MENSUAL) == ESTACIONALIDAD_MENSUAL[11],
-          'Diciembre tiene que ser el maximo')
+          'Diciembre tiene que ser el máximo')
     exige(len(DIAS_APERTURA_MES) == 12
           and sum(DIAS_APERTURA_MES) == NEGOCIO['dias_apertura_anio'],
-          'Los dias de apertura por mes (%d) no suman los del ano (%d)'
+          'Los días de apertura por mes (%d) no suman los del año (%d)'
           % (sum(DIAS_APERTURA_MES), NEGOCIO['dias_apertura_anio']))
     exige(DIAS_APERTURA_MES[7] > 0,
           'D36: en agosto la tienda NO cierra')
@@ -4700,13 +4719,14 @@ def comprobar():
         exige(c['sale_de_la_nota_644_5'] in ('si', 'no', 'no lo se'),
               'Canal %s: la respuesta a la nota del 644.5 tiene que ser si / no / no lo se'
               % c['canal'])
-        exige('epigrafe' not in str(c.get('epigrafe_iae', '')),
-              'D19: la hoja NO emite un epigrafe de IAE por canal')
+        exige('epigraf' not in str(c.get('epigrafe_iae', '')).lower()
+              and 'epígraf' not in str(c.get('epigrafe_iae', '')).lower(),
+              'D19: la hoja NO emite un epígrafe de IAE por canal')
         exige(margen_contribucion_canal(c) > 0,
-              'Canal %s: margen de contribucion negativo' % c['canal'])
+              'Canal %s: margen de contribución negativo' % c['canal'])
     fuera = [c for c in CANALES if c['sale_de_la_nota_644_5'] != 'no']
     exige(len(fuera) == 3,
-          'D19: TRES de los cinco canales caen fuera de la nota del 644.5, y aqui hay %d'
+          'D19: TRES de los cinco canales caen fuera de la nota del 644.5, y aquí hay %d'
           % len(fuera))
     filas = filas_canal_644_5()
     exige(len(filas) == 5 and all('[CANAL]' not in f['pregunta_al_asesor'] for f in filas),
@@ -4715,12 +4735,12 @@ def comprobar():
     exige(taller['precio_persona_min'] == 25.0 and taller['precio_persona_max'] == 45.0,
           'El precio del taller se ha despegado de CHS-30 (25-45 euros/persona)')
     exige(taller['minimo_personas'] == 6,
-          'El minimo del taller se ha despegado de CHS-30 (6 personas)')
+          'El mínimo del taller se ha despegado de CHS-30 (6 personas)')
     exige(taller['duracion_min_minutos'] == 90 and taller['duracion_max_minutos'] == 150,
-          'La duracion del taller se ha despegado de CHS-30 (90-150 min)')
+          'La duración del taller se ha despegado de CHS-30 (90-150 min)')
     corp = [c for c in CANALES if c['canal'].startswith('Regalo')][0]
     exige(corp['cobro_dias'] > 0 and corp['pedido_minimo'] > 0,
-          'El canal corporativo tiene que declarar dias de cobro y pedido minimo')
+          'El canal corporativo tiene que declarar días de cobro y pedido mínimo')
 
     # ---- 13. proveedores y clientes ---------------------------------------
     exige(len(PROVEEDORES) == 6, 'Se publican SOLO los SEIS proveedores verificados')
@@ -4734,10 +4754,10 @@ def comprobar():
           'Los tres papeles del EUDR no cuadran con su texto')
     exige(len(PAPELES_EUDR) == 3, 'D48: son TRES papeles, no dos')
     exige('operador' in PAPELES_EUDR_TEXTO
-          and 'numero de referencia de su DDS' in PAPELES_EUDR_TEXTO['operador'],
-          'D48: el numero de DDS solo se pide en la rama «operador»')
-    exige('NO se le pide el numero de DDS' in PAPELES_EUDR_TEXTO['operador posterior'],
-          'D48: al operador posterior NO se le pide el numero de DDS')
+          and 'número de referencia de su DDS' in PAPELES_EUDR_TEXTO['operador'],
+          'D48: el número de DDS solo se pide en la rama «operador»')
+    exige('NO se le pide el número de DDS' in PAPELES_EUDR_TEXTO['operador posterior'],
+          'D48: al operador posterior NO se le pide el número de DDS')
     exige(3 <= len(CLIENTES_B2B) <= 4,
           'D48: la tabla de clientes lleva 3-4 clientes ficticios declarados')
     exige(FUENTE_CLIENTES_B2B == 'supuesto',
@@ -4752,15 +4772,15 @@ def comprobar():
           'El checklist no cubre las SEIS fases F1-F6: %s' % sorted(fases_usadas))
     for fase, tramite, _resp, plazo, _coste, fuente, cambia, _nota in CHECKLIST_LEGAL:
         exige(fase in FASES_CHECKLIST, 'Fase desconocida en «%s»' % tramite)
-        exige(plazo > 0, 'El tramite «%s» no declara plazo orientativo' % tramite)
-        exige(_fuente_ok(fuente), 'Tramite «%s»: fuente no reconocida %r' % (tramite, fuente))
+        exige(plazo > 0, 'El trámite «%s» no declara plazo orientativo' % tramite)
+        exige(_fuente_ok(fuente), 'Trámite «%s»: fuente no reconocida %r' % (tramite, fuente))
         exige(isinstance(cambia, bool),
-              'Tramite «%s»: «cambia por comunidad» no es booleano' % tramite)
+              'Trámite «%s»: «cambia por comunidad» no es booleano' % tramite)
     exige(len(CCAA_EJEMPLO) == 4, 'Cuatro comunidades de ejemplo')
     exige(any(f[6] for f in CHECKLIST_LEGAL),
-          'Ningun tramite cambia por comunidad: el cuadro de las cuatro no tendria sentido')
+          'Ningún trámite cambia por comunidad: el cuadro de las cuatro no tendría sentido')
     exige(FILA_ARTESANIA['es_voluntaria'] and FILA_ARTESANIA['respuesta'] == '',
-          'D10 (B-6): la fila de artesania es una acreditacion VOLUNTARIA y su celda '
+          'D10 (B-6): la fila de artesanía es una acreditación VOLUNTARIA y su celda '
           'verde va vacia para que la rellene el lector')
 
     total_meses, camino, holgura = ruta_critica()
@@ -4783,51 +4803,51 @@ def comprobar():
     rc, plazo_m, avisa = cuadre_plazo_maquinaria()
     exige(not avisa,
           'El plazo de entrega critico (%.1f meses) es MAYOR que la ruta critica '
-          '(%.1f meses): la fecha de apertura la manda la maquinaria y el semaforo del '
+          '(%.1f meses): la fecha de apertura la manda la maquinaria y el semáforo del '
           'libro 8 avisaria' % (plazo_m, rc))
 
     # ---- 15. economia -------------------------------------------------------
     pyg = cuenta_resultados_crucero()
     exige(pyg['ventas_sin_iva'] > 0 and pyg['gastos_fijos'] > 0, 'El P&L no cuadra')
     exige(0.09 <= pyg['margen_neto'] <= 0.11,
-          'El margen neto del ano de crucero es del %.2f %% y la banda acordada es el '
-          '9-11 %%: fuera de ella el caso se lee como optimista. La UNICA palanca que se '
+          'El margen neto del año de crucero es del %.2f %% y la banda acordada es el '
+          '9-11 %%: fuera de ella el caso se lee como optimista. La ÚNICA palanca que se '
           'toca es `tickets_dia_crucero`' % (100 * pyg['margen_neto']))
     exige(punto_muerto_mensual() * 12.0 < pyg['ventas_sin_iva'],
-          'La facturacion de crucero no llega al punto muerto')
+          'La facturación de crucero no llega al punto muerto')
     fc_carta, fc_serv = food_cost_carta(), food_cost_servido()
     exige(0.0 < fc_carta < P('food_cost_objetivo'),
           'El food cost de escandallo de la carta (%.1f %%) ya no esta por debajo de la '
-          'regla unica del %.0f %%' % (100 * fc_carta, 100 * P('food_cost_objetivo')))
+          'regla única del %.0f %%' % (100 * fc_carta, 100 * P('food_cost_objetivo')))
     exige(fc_serv > fc_carta, 'El packaging tiene que subir el food cost')
     exige(10.0 <= coste_hora_obrador() <= 35.0,
-          'El coste hora de obrador (%.2f euros) se ha ido fuera de todo rango creible'
+          'El coste hora de obrador (%.2f euros) se ha ido fuera de todo rango creíble'
           % coste_hora_obrador())
     exige(abs(iva_medio_carta() - 0.10) < 1e-9,
-          'Todas las referencias van al 10 %%, asi que el IVA medio tiene que ser 0,10: '
+          'Todas las referencias van al 10 %%, así que el IVA medio tiene que ser 0,10: '
           'sale %.4f' % iva_medio_carta())
     for partida, importe, fuente, _nota in GASTOS_FIJOS_MENSUALES:
         exige(_fuente_ok(fuente), 'Gasto fijo «%s»: fuente no reconocida %r' % (partida, fuente))
         exige(importe is None or importe > 0, 'Gasto fijo «%s» sin importe' % partida)
     exige(not any('propietario' in p[0].lower() for p in GASTOS_FIJOS_MENSUALES),
-          'El titular es el Encargado y su retribucion ya esta en la nomina: un renglon '
-          'de «retribucion del propietario» lo contaria dos veces')
+          'El titular es el Encargado y su retribución ya esta en la nomina: un renglón '
+          'de «retribución del propietario» lo contaria dos veces')
     exige(FINANCIACION['carencia_meses'] < FINANCIACION['plazo_meses'],
           'La carencia no puede ser mayor que el plazo')
-    exige(FINANCIACION['plazo_meses'] == 84, 'El prestamo es a 7 anos (§3.4)')
+    exige(FINANCIACION['plazo_meses'] == 84, 'El préstamo es a 7 años (§3.4)')
     exige(abs(FINANCIACION['pct_recursos_propios'] + FINANCIACION['pct_prestamo'] - 1.0) < 1e-9,
           'La estructura 40/60 no suma 100 %')
     exige(FINANCIACION['principal'] is None,
-          'El principal del prestamo NO se teclea: lo deriva `principal_prestamo()`')
+          'El principal del préstamo NO se teclea: lo deriva `principal_prestamo()`')
     ratio = principal_prestamo() / inversion_total_sin_iva()
     exige(abs(ratio - FINANCIACION['pct_prestamo']) <= 0.005,
-          'El principal (%.0f euros) es el %.2f %% de la inversion total (%.0f euros) y '
+          'El principal (%.0f euros) es el %.2f %% de la inversión total (%.0f euros) y '
           'la estructura declarada es el %.0f %%: el punto fijo no ha convergido'
           % (principal_prestamo(), 100 * ratio,
              inversion_total_sin_iva(), 100 * FINANCIACION['pct_prestamo']))
     exige(abs(principal_prestamo() % 100.0) < 1e-6,
           'El principal tiene que estar redondeado a centenas: %.2f' % principal_prestamo())
-    exige(intereses_anio_1() > 0, 'El prestamo no genera intereses')
+    exige(intereses_anio_1() > 0, 'El préstamo no genera intereses')
     exige(asistentes_punto_muerto_taller() < taller['aforo'],
           'El taller necesita %.1f asistentes para cubrir su coste y su aforo es %d: no '
           'sale nunca' % (asistentes_punto_muerto_taller(), taller['aforo']))
@@ -4838,22 +4858,22 @@ def comprobar():
     exige(abs(PLASTICO['umbral_kg_mes'] - 5.0) < 1e-9,
           'El umbral del art. 75.f) son 5 kg/mes (CHN-62b)')
     exige(PLASTICO['moldes_no_sujetos'] is True,
-          'CHN-62c: los moldes de policarbonato NO estan sujetos')
+          'CHN-62c: los moldes de policarbonato NO están sujetos')
     for f in FRANQUICIAS:
         if f['fuente'] == 'sin id verificado':
             exige(f['inversion_desde'] is None and f['canon'] is None,
-                  'La franquicia %r no tiene id en el JSON comun: no puede publicar '
+                  'La franquicia %r no tiene id en el JSON común: no puede publicar '
                   'cifras' % f['marca'])
         else:
             exige(id_existe_en_json_comun(f['fuente']) or _carga_json_comun()['error'],
-                  'La franquicia %r cita un id que no existe en el JSON comun' % f['marca'])
+                  'La franquicia %r cita un id que no existe en el JSON común' % f['marca'])
             exige('orden de magnitud' in f['etiqueta'],
                   'D11: la franquicia %r tiene que llevar pegada su etiqueta' % f['marca'])
 
     # ---- 17. todos los ids citados existen en el JSON comun (D44) ---------
     comun = _carga_json_comun()
     if comun['error']:
-        avisos.append('No se pudo abrir el JSON comun (%s): no se ha podido comprobar '
+        avisos.append('No se pudo abrir el JSON común (%s): no se ha podido comprobar '
                       'que los ids existan' % comun['error'])
     else:
         citados = set()
@@ -4862,14 +4882,14 @@ def comprobar():
                 citados.add(m2)
         for pid in sorted(citados):
             exige(id_existe_en_json_comun(pid),
-                  'D44: el id %s se cita como fuente y NO existe en el JSON comun de '
+                  'D44: el id %s se cita como fuente y NO existe en el JSON común de '
                   '635 entradas' % pid)
         for pid in sorted(IDS_LEGALES_REQUERIDOS):
             exige(id_existe_en_json_comun(pid),
-                  'El id legal requerido %s no existe en el JSON comun' % pid)
+                  'El id legal requerido %s no existe en el JSON común' % pid)
         for pid in sorted(ID_REUTILIZADO_PASTELERIA):
             exige(id_existe_en_json_comun(pid),
-                  'El id reutilizado de Pasteleria %s no existe en el JSON comun' % pid)
+                  'El id reutilizado de Pastelería %s no existe en el JSON común' % pid)
 
     # ---- 18. gate legal ----------------------------------------------------
     faltan_legales = gate_legal(abortar=False)
@@ -4895,17 +4915,17 @@ def comprobar():
                 finally:
                     wb.close()
                 exige(hojas == PERFILES_KIT,
-                      'Los perfiles del kit son %s y aqui se declaran %s'
+                      'Los perfiles del kit son %s y aquí se declaran %s'
                       % (list(hojas), list(PERFILES_KIT)))
             except Exception as e:                            # noqa: BLE001
                 avisos.append('No se pudo leer %s: %s' % (KIT_PERFILES, e))
 
     # ================= resumen =================
-    print('«La Almendra» - juego de datos unico de «Como Montar una Chocolateria»')
-    print('Verificacion legal de referencia: %s' % FECHA_VERIFICACION_LEGAL)
+    print('«La Almendra» - juego de datos único de «Como Montar una Chocolatería»')
+    print('Verificación legal de referencia: %s' % FECHA_VERIFICACION_LEGAL)
     print('')
     print('LOCAL, CLIMA Y PLANTILLA')
-    print('  %.0f m2 en %d zonas: %s'
+    print('  %.0f m² en %d zonas: %s'
           % (suma_zonas, len(ZONAS),
              ' / '.join('%s %.0f' % (z[0].split(' ')[0], z[1]) for z in ZONAS)))
     print('  clima (los CINCO valores son del kit): %s'
@@ -4915,7 +4935,7 @@ def comprobar():
           % (len(PLANTILLA), jornadas, ' / '.join('%s %.1f' % (p[1], p[2]) for p in PLANTILLA)))
     print('  convenio %s (%s), %d pagas, EJEMPLO'
           % (CONVENIO_CODIGO, CONVENIO_AUTORIDAD, CONVENIO_PAGAS))
-    print('  coste empresa del personal %.0f euros/ano / coste hora de obrador %.2f euros/h'
+    print('  coste empresa del personal %.0f euros/año / coste hora de obrador %.2f euros/h'
           % (coste_personal_anual(), coste_hora_obrador()))
     print('')
     print('CARTA')
@@ -4924,59 +4944,59 @@ def comprobar():
     print('  mix anual %.1f %% / mix de verano %.1f %% (julio y agosto)' % (mix, mix_v))
     print('  PVP medio ponderado %.2f euros con IVA / ticket medio %.2f euros (%.1f piezas)'
           % (pvp_medio_ponderado(), ticket_medio_con_iva(), P('piezas_por_ticket')))
-    print('  food cost de escandallo %.1f %% / con packaging %.1f %% / regla unica %.0f %%'
+    print('  food cost de escandallo %.1f %% / con packaging %.1f %% / regla única %.0f %%'
           % (100 * fc_carta, 100 * fc_serv, 100 * P('food_cost_objetivo')))
     n_gr = sum(1 for r in CARTA if r['via'] == 'a granel')
-    print('  via de despacho: %d envasadas con etiqueta / %d a granel (D47)'
+    print('  vía de despacho: %d envasadas con etiqueta / %d a granel (D47)'
           % (len(CARTA) - n_gr, n_gr))
-    print('  matriz de alergenos %d x %d, los OCHO del Anexo II: %s'
+    print('  matriz de alérgenos %d x %d, los OCHO del Anexo II: %s'
           % (len(m), len(ALERGENOS),
              ' / '.join('%s %d' % (a[0], len(referencias_con(a[0]))) for a in ALERGENOS)))
     print('  cobertura negra: %.2f euros/kg CON IVA (CHS-28a) -> %.4f euros/kg base imponible'
           % (COBERTURAS['negra']['precio_fuente'], precio_cobertura_base_imponible('negra')))
     print('')
     print('INVERSION')
-    print('  dotacion tipo %.2f euros sin IVA / plazo de entrega critico %d semanas (%s)'
+    print('  dotación tipo %.2f euros sin IVA / plazo de entrega critico %d semanas (%s)'
           % (dotacion_tipo_sin_iva(), plazo_critico_semanas(),
              equipo_plazo_critico()['partida']))
-    print('  %d lineas de equipamiento: %d con precio verificado, %d con supuesto por defecto'
+    print('  %d líneas de equipamiento: %d con precio verificado, %d con supuesto por defecto'
           % (len(EQUIPAMIENTO),
              sum(1 for e in EQUIPAMIENTO if e['valor_verificado'] is not None),
              sum(1 for e in EQUIPAMIENTO if e['supuesto_por_defecto'] is not None)))
     print('  CAPEX sin el fondo %.0f euros / fondo de maniobra %.0f euros / '
-          'inversion total %.0f euros'
+          'inversión total %.0f euros'
           % (capex_sin_fondo_de_maniobra(), fondo_maniobra(), inversion_total_sin_iva()))
     print('  seis bloques comparables %.0f euros (CHS-03 publica 20.000-30.000, hasta '
-          '80.000 «segun el proyecto»)' % capex_comparable_sin_iva())
+          '80.000 «según el proyecto»)' % capex_comparable_sin_iva())
     print('  IVA soportado que hay que adelantar %.0f euros' % iva_soportado_capex())
-    print('  escenarios de dotacion publicados: A %.0f-%.0f / B %.0f-%.0f euros (%s)'
+    print('  escenarios de dotación publicados: A %.0f-%.0f / B %.0f-%.0f euros (%s)'
           % (ESCENARIOS_DOTACION['A']['min'], ESCENARIOS_DOTACION['A']['max'],
              ESCENARIOS_DOTACION['B']['min'], ESCENARIOS_DOTACION['B']['max'],
              ESCENARIOS_DOTACION['A']['etiqueta']))
     print('  %d traspasos reales (precios PEDIDOS, no pagados): %.0f a %.0f euros'
           % (len(TRASPASOS), TRASPASO_RANGO[0], TRASPASO_RANGO[1]))
     print('')
-    print('ANO DE CRUCERO')
-    print('  ventas %.0f euros sin IVA / %d tickets/dia x %d dias / %.0f piezas/dia'
+    print('AÑO DE CRUCERO')
+    print('  ventas %.0f euros sin IVA / %d tickets/día x %d días / %.0f piezas/día'
           % (pyg['ventas_sin_iva'], P('tickets_dia_crucero'),
              NEGOCIO['dias_apertura_anio'], piezas_dia_crucero()))
     print('  gastos fijos %.0f euros/mes / punto muerto %.0f euros/mes'
           % (gastos_fijos_mensuales(), punto_muerto_mensual()))
     print('  beneficio %.0f euros / margen neto %.1f %%'
           % (pyg['beneficio_neto'], 100 * pyg['margen_neto']))
-    print('  financiacion %.0f %% propios / %.0f %% prestamo de %.0f euros a %d meses '
+    print('  financiación %.0f %% propios / %.0f %% préstamo de %.0f euros a %d meses '
           '(%.1f %% real)'
           % (100 * FINANCIACION['pct_recursos_propios'], 100 * FINANCIACION['pct_prestamo'],
              principal_prestamo(), FINANCIACION['plazo_meses'], 100 * ratio))
-    print('  estacionalidad %s (media %.3f, minimo agosto)'
+    print('  estacionalidad %s (media %.3f, mínimo agosto)'
           % ('/'.join('%.2f' % c for c in ESTACIONALIDAD_MENSUAL), media))
     print('')
-    print('CAMPANAS, CANALES Y TRAMITES')
+    print('CAMPANAS, CANALES Y TRÁMITES')
     print('  %d filas del calendario del kit: %d Alta / %d Media / %d Baja'
           % (len(CAMPANAS), temporadas['Alta'], temporadas['Media'], temporadas['Baja']))
     print('  campanas propias: %s'
           % ' / '.join(c['campana'] for c in CAMPANAS if c['campana_propia']))
-    print('  valle: %s, y lo que para es el obrador. Envios parados %s'
+    print('  valle: %s, y lo que para es el obrador. Envíos parados %s'
           % (VALLE['nombre_mes'],
              '-'.join(MESES[x - 1][:3] for x in (VALLE['envios_parados_meses'][0],
                                                  VALLE['envios_parados_meses'][-1]))))
@@ -4984,10 +5004,10 @@ def comprobar():
           % (len(CANALES), ' / '.join('%s %.0f %%' % (c['canal'].split(' (')[0], c['ventas_pct'])
                                       for c in CANALES)))
     print('  %d de los 5 canales caen FUERA de la nota del 644.5 (salida: pregunta al '
-          'asesor, NUNCA un epigrafe)' % len(fuera))
+          'asesor, NUNCA un epígrafe)' % len(fuera))
     print('  taller: %.1f asistentes para cubrir su coste, aforo %d'
           % (asistentes_punto_muerto_taller(), taller['aforo']))
-    print('  checklist legal: %d tramites en %d fases / %d cambian por comunidad (%s)'
+    print('  checklist legal: %d trámites en %d fases / %d cambian por comunidad (%s)'
           % (len(CHECKLIST_LEGAL), len(FASES_CHECKLIST),
              sum(1 for f in CHECKLIST_LEGAL if f[6]), ', '.join(CCAA_EJEMPLO)))
     print('  ruta critica %.1f meses desde %s: %s'

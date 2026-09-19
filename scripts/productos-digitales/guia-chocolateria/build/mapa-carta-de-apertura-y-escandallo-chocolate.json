@@ -44,7 +44,7 @@
   "valor": 37.48,
   "tipo": "entrada"
  },
- "Desviacion maxima del cuadre del precio de cobertura": {
+ "Desviación máxima del cuadre del precio de cobertura": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Parámetros!B31",
   "valor": 0.0,
   "tipo": "salida"
@@ -54,12 +54,12 @@
   "valor": "CUADRA",
   "tipo": "salida"
  },
- "Piezas vendidas al dia": {
+ "Piezas vendidas al día": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Parámetros!B37",
   "valor": 93.8,
   "tipo": "salida"
  },
- "Piezas vendidas al ano": {
+ "Piezas vendidas al año": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Parámetros!B38",
   "valor": 28515.2,
   "tipo": "salida"
@@ -69,7 +69,7 @@
   "valor": 0.12,
   "tipo": "parametro"
  },
- "Chocolate minimo sobre el peso total del bombon": {
+ "Chocolate mínimo sobre el peso total del bombón": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!B38",
   "valor": 0.25,
   "tipo": "parametro"
@@ -84,12 +84,12 @@
   "valor": 14.231659999999998,
   "tipo": "salida"
  },
- "Kilos al ano que vuelven a la cuba": {
+ "Kilos al año que vuelven a la cuba": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!M35",
   "valor": 86.41388784,
   "tipo": "salida"
  },
- "Kilos al ano que van a residuo": {
+ "Kilos al año que van a residuo": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Merma de Templado y Recortes!N35",
   "valor": 38.31444848000001,
   "tipo": "salida"
@@ -109,17 +109,17 @@
   "valor": 4.240724639163859,
   "tipo": "salida"
  },
- "PVP medio ponderado con IVA del ano": {
+ "PVP medio ponderado con IVA del año": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B37",
   "valor": 7.6800000000000015,
   "tipo": "salida"
  },
- "Ticket medio con IVA del ano": {
+ "Ticket medio con IVA del año": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B40",
   "valor": 10.752,
   "tipo": "salida"
  },
- "Ticket medio sin IVA del ano": {
+ "Ticket medio sin IVA del año": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B41",
   "valor": 9.774545454545454,
   "tipo": "salida"
@@ -159,12 +159,12 @@
   "valor": -0.0056581772209776116,
   "tipo": "salida"
  },
- "Comprobacion de que los dos mixes suman 100": {
+ "Comprobación de que los dos mixes suman 100": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Mix y Ticket Medio!B51",
   "valor": "CUADRAN los dos mixes",
   "tipo": "salida"
  },
- "Margen de la carta al ano": {
+ "Margen de la carta al año": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Decisión de Surtido!G35",
   "valor": 100615.40166285716,
   "tipo": "salida"
@@ -184,62 +184,62 @@
   "valor": 1.0,
   "tipo": "salida"
  },
- "Food cost de Bombon de ganache de chocolate negro 70 %": {
+ "Food cost de Bombón de ganache de chocolate negro 70 %": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q7",
   "valor": 0.1233848680412371,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de ganache de chocolate negro 70 %": {
+ "Margen por pieza de Bombón de ganache de chocolate negro 70 %": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R7",
   "valor": 1.2518488519093676,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de ganache de chocolate negro 70 %": {
+ "Chocolate sobre el peso total de Bombón de ganache de chocolate negro 70 %": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L7",
   "valor": 0.4583333333333333,
   "tipo": "salida"
  },
- "Food cost de Bombon de ganache de leche y vainilla": {
+ "Food cost de Bombón de ganache de leche y vainilla": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q8",
   "valor": 0.1108920962199313,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de ganache de leche y vainilla": {
+ "Margen por pieza de Bombón de ganache de leche y vainilla": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R8",
   "valor": 1.234148986867193,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de ganache de leche y vainilla": {
+ "Chocolate sobre el peso total de Bombón de ganache de leche y vainilla": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L8",
   "valor": 0.4583333333333333,
   "tipo": "salida"
  },
- "Food cost de Bombon de praline de avellana": {
+ "Food cost de Bombón de praliné de avellana": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q9",
   "valor": 0.11408785228377066,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de praline de avellana": {
+ "Margen por pieza de Bombón de praliné de avellana": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R9",
   "valor": 1.3855384981639913,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de praline de avellana": {
+ "Chocolate sobre el peso total de Bombón de praliné de avellana": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L9",
   "valor": 0.4166666666666667,
   "tipo": "salida"
  },
- "Food cost de Bombon de gianduja de avellana": {
+ "Food cost de Bombón de gianduja de avellana": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q10",
   "valor": 0.11991149173955297,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de gianduja de avellana": {
+ "Margen por pieza de Bombón de gianduja de avellana": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R10",
   "valor": 1.3394779748160754,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de gianduja de avellana": {
+ "Chocolate sobre el peso total de Bombón de gianduja de avellana": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L10",
   "valor": 0.4166666666666667,
   "tipo": "salida"
@@ -259,77 +259,77 @@
   "valor": 0.3076923076923077,
   "tipo": "salida"
  },
- "Food cost de Bombon de licor de ron": {
+ "Food cost de Bombón de licor de ron": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q12",
   "valor": 0.08613129528985511,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de licor de ron": {
+ "Margen por pieza de Bombón de licor de ron": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R12",
   "valor": 1.4259186415856344,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de licor de ron": {
+ "Chocolate sobre el peso total de Bombón de licor de ron": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L12",
   "valor": 0.42857142857142855,
   "tipo": "salida"
  },
- "Food cost de Bombon de caramelo salado": {
+ "Food cost de Bombón de caramelo salado": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q13",
   "valor": 0.07551431958762886,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de caramelo salado": {
+ "Margen por pieza de Bombón de caramelo salado": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R13",
   "valor": 1.3499183689457586,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de caramelo salado": {
+ "Chocolate sobre el peso total de Bombón de caramelo salado": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L13",
   "valor": 0.4583333333333333,
   "tipo": "salida"
  },
- "Food cost de Bombon de praline de cacahuete": {
+ "Food cost de Bombón de praliné de cacahuete": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q14",
   "valor": 0.10739937205651494,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de praline de cacahuete": {
+ "Margen por pieza de Bombón de praliné de cacahuete": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R14",
   "valor": 1.2285429814826847,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de praline de cacahuete": {
+ "Chocolate sobre el peso total de Bombón de praliné de cacahuete": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L14",
   "valor": 0.4166666666666667,
   "tipo": "salida"
  },
- "Food cost de Bombon crujiente de sesamo y barquillo": {
+ "Food cost de Bombón crujiente de sésamo y barquillo": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q15",
   "valor": 0.10427605774016925,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon crujiente de sesamo y barquillo": {
+ "Margen por pieza de Bombón crujiente de sésamo y barquillo": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R15",
   "valor": 1.3024057154220214,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon crujiente de sesamo y barquillo": {
+ "Chocolate sobre el peso total de Bombón crujiente de sésamo y barquillo": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L15",
   "valor": 0.4166666666666667,
   "tipo": "salida"
  },
- "Food cost de Bombon de naranja confitada y chocolate negro": {
+ "Food cost de Bombón de naranja confitada y chocolate negro": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q16",
   "valor": 0.12333422259306806,
   "tipo": "salida"
  },
- "Margen por pieza de Bombon de naranja confitada y chocolate negro": {
+ "Margen por pieza de Bombón de naranja confitada y chocolate negro": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R16",
   "valor": 1.2417846793411904,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Bombon de naranja confitada y chocolate negro": {
+ "Chocolate sobre el peso total de Bombón de naranja confitada y chocolate negro": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L16",
   "valor": 0.4583333333333333,
   "tipo": "salida"
@@ -384,17 +384,17 @@
   "valor": 3.181853216260967,
   "tipo": "salida"
  },
- "Food cost de Tableta rellena de praline, 100 g": {
+ "Food cost de Tableta rellena de praliné, 100 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q22",
   "valor": 0.27191546391752586,
   "tipo": "salida"
  },
- "Margen por pieza de Tableta rellena de praline, 100 g": {
+ "Margen por pieza de Tableta rellena de praliné, 100 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R22",
   "valor": 3.1108105024598833,
   "tipo": "salida"
  },
- "Chocolate sobre el peso total de Tableta rellena de praline, 100 g": {
+ "Chocolate sobre el peso total de Tableta rellena de praliné, 100 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Denominaciones y Mínimos!L22",
   "valor": 0.55,
   "tipo": "salida"
@@ -449,32 +449,32 @@
   "valor": 4.815138067484394,
   "tipo": "salida"
  },
- "Food cost de Hueso de santo banado en chocolate": {
+ "Food cost de Hueso de santo bañado en chocolate": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q28",
   "valor": 0.18948560505319148,
   "tipo": "salida"
  },
- "Margen por pieza de Hueso de santo banado en chocolate": {
+ "Margen por pieza de Hueso de santo bañado en chocolate": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R28",
   "valor": 0.7144527798303377,
   "tipo": "salida"
  },
- "Food cost de Turron de chocolate con almendra, 250 g": {
+ "Food cost de Turrón de chocolate con almendra, 250 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q29",
   "valor": 0.40225611489040064,
   "tipo": "salida"
  },
- "Margen por pieza de Turron de chocolate con almendra, 250 g": {
+ "Margen por pieza de Turrón de chocolate con almendra, 250 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R29",
   "valor": 5.76352770166289,
   "tipo": "salida"
  },
- "Food cost de Almendras marcona banadas en chocolate, bolsa de 150 g": {
+ "Food cost de Almendras marcona bañadas en chocolate, bolsa de 150 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!Q30",
   "valor": 0.4202212355212356,
   "tipo": "salida"
  },
- "Margen por pieza de Almendras marcona banadas en chocolate, bolsa de 150 g": {
+ "Margen por pieza de Almendras marcona bañadas en chocolate, bolsa de 150 g": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Coste Hora y Mano de Obra!R30",
   "valor": 3.1534303799967374,
   "tipo": "salida"
@@ -534,7 +534,7 @@
   "valor": 0.16839916839916846,
   "tipo": "salida"
  },
- "Precio por bombon en Caja surtida de 12 bombones": {
+ "Precio por bombón en Caja surtida de 12 bombones": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!C33",
   "valor": 1.6666666666666667,
   "tipo": "salida"
@@ -559,7 +559,7 @@
   "valor": 0.30693069306930687,
   "tipo": "salida"
  },
- "Precio por bombon en Caja surtida de 20 bombones": {
+ "Precio por bombón en Caja surtida de 20 bombones": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!D33",
   "valor": 1.4,
   "tipo": "salida"
@@ -584,7 +584,7 @@
   "valor": 0.36440677966101676,
   "tipo": "salida"
  },
- "Precio por bombon en Caja surtida de 35 bombones": {
+ "Precio por bombón en Caja surtida de 35 bombones": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!E33",
   "valor": 1.2857142857142858,
   "tipo": "salida"
@@ -609,7 +609,7 @@
   "valor": 0.2989690721649485,
   "tipo": "salida"
  },
- "Precio por bombon en Estuche corporativo personalizado de 24 bombones": {
+ "Precio por bombón en Estuche corporativo personalizado de 24 bombones": {
   "ref": "carta-de-apertura-y-escandallo-chocolate.xlsx!Unidad vs Caja!F33",
   "valor": 1.4166666666666667,
   "tipo": "salida"
