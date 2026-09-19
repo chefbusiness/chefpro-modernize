@@ -111,3 +111,42 @@ Sesión Claude Code · firma de commits `Via: Claude Code`.
   verificada**: 23 tarjetas LIVE, contador correcto, `miselup-gate.py` 96/96 y `gate-flujo-postpago.py` 48 productos /
   697 entregables / 0 fallos. Visual en Chrome de Windows sólo parcial (la ventana perdió altura y no aceptó el
   redimensionado): se vieron las 4 columnas y las etiquetas de ola, no la sección entera.
+
+---
+
+## CIERRE DE SESIÓN (19-sep-2026, madrugada) — estado y cómo retomar mañana
+
+**Producción (`aichef.pro`) = `main` = `19413c5`, publicado y verificado.** Árbol limpio, todo pusheado. Cuatro
+entregas de la sesión, todas LIVE y con gate en verde:
+
+| Entrega | Commit clave | Verificación LIVE |
+|---|---|---|
+| Pasarela cripto NOWPayments en los 48 productos (`CRYPTO_PRODUCTS=all` + `EXCLUDE=pro-prompts-ebook`) | `7ebc64e` (PR #81) + `d7911d2` | `gate-flujo-postpago.py` sin flags: 47 con botón / 1 sin él / 0 fallos |
+| Tarjeta lateral de Miselup en landing + dashboard de los 48 | `e22961d` (PR #82) | `miselup-gate.py` 96/96 + 13 ajenas limpias |
+| «Próximos Productos»: 23 tarjetas (Chocolatería, Churrería, Heladería + top-20) | `077b72f` (PR #83) | hub «48 · 23», 23 `data-coming`, 23/23 nombres |
+| Renombre «Cómo Montar una Chocolatería Boutique & Atelier» | `19413c5` | nombre nuevo en el hub LIVE |
+
+Reglas nuevas de John guardadas en memoria y `CLAUDE.md`: todo producto nuevo nace con Stripe + NOWPayments; volumen de
+búsqueda 0 no descalifica un producto; térmica reconfirmada (65 °C, `istats`, nada de Playwright).
+
+**Mañana, por orden (sesión PAR = producto nuevo, según la alternancia):**
+1. **Broadcast de Pastelería (14-oct) — programarlo ya**: era programable desde el 14-sep y no está. Plantilla en
+   `scripts/productos-digitales/emails/`, `resend-broadcast.py --test` a John y luego `--scheduled-at`; slot = último
+   programado + 5 días (leer Resend antes; regla `feedback_resend-reprogramar-sin-borrar-a-ciegas`). El del Kit de
+   Tareas Pastelería 2.1 (19-oct) y el de la Chocolatería (24-oct) van detrás.
+2. **Chocolatería Boutique & Atelier, sesión B2+C en LOCAL** (decisión de John del 12-sep; los siguientes productos en
+   el VPS): redactores por bloque desde `guias-v2_0/dump_prompts.py` → `check_bloque.py` → `documentos.py` →
+   refutación (tope 2 rondas) → capa de producto (49 en catálogo, payment-links, product-prices, functions, zona app,
+   landing `productos/guias/guia-chocolateria-obrador.ts` con las 3 puertas cripto heredadas) → Payment Link de John →
+   gates LIVE → quitar su tarjeta de `comingSoon` en los DOS ficheros del hub. Guion y SPEC ya con el nombre nuevo.
+3. **Primer producto del top-20: «Tareas Recurrentes: Taquería Mexicana»** (réplica del motor Kit de Tareas v2.4, 1
+   sesión, en el VPS). Antes, decisión de John sobre el Mega Pack («13 kits» con 19 vivos): ¿incluye los nuevos?
+4. Pendientes de John: pago real de prueba cripto (12 €, USDT-TRC20); sección legal de compra digital en `/terminos`;
+   moneda de liquidación; el hub de ChefBusiness anuncia 3 productos propios contra la tienda única (terminal
+   `chefbusiness-astro`); research normativo de la Carnicería Boutique antes de comprometer su guion.
+
+**Trampas que dejó la sesión (ya documentadas donde tocan):** `watchdog-termico.sh` sin argumento escribe `.temp`
+en la raíz (ya ignorado); openpyxl deja `xfId` colgando al guardar el Excel maestro (reparación en la memoria del
+roadmap); el Chrome de Windows dejó de aceptar `resize_window` a mitad de sesión (comprobar móvil por CSS servido).
+
+Sesión Claude Code · firma `Via: Claude Code`.

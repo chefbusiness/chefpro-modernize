@@ -155,6 +155,16 @@ bombonería con obrador (taza/churros como epígrafe, bean-to-bar como variante)
 `SESSION_HANDOFF_2026-09-12-chocolateria.md` §2.4. **Correo:** slot **24-oct** (programable desde el 24-sep). Hallazgo colateral a corregir con
 el 49: seis FAQ de `use-cases-content.*.consultor.ts` (7 idiomas) publican inversiones inventadas, dos contra guías en venta.
 
+### ✅ 2026-09-18→19 (sesión IMPAR de infraestructura, Claude Code en el Mac) — cripto en los 48 · Miselup en los 48 · «Próximos Productos» ×23
+Réplica de NOWPayments a todos los productos (PR #81; `CRYPTO_PRODUCTS=all`, eBook excluido; el pago real de prueba de
+John sigue pendiente) · tarjeta lateral de Miselup en landing + dashboard (PR #82, decidida por `BaseLayout` con el
+registro `zona-app`) · hub con 23 tarjetas en «Próximos Productos» (PR #83): Churrería-Chocolatería, Heladería y el
+top-20 del banco de 161 ideas (§3 reescrito con la cola, precios y olas; Excel maestro actualizado con backup) ·
+renombre a «Cómo Montar una Chocolatería Boutique & Atelier». Reglas nuevas de John: todo producto nace con Stripe +
+NOWPayments; volumen 0 no descalifica un producto. Handoff: `SESSION_HANDOFF_2026-09-18-cripto-replica-48.md`.
+**Siguiente sesión PAR:** Chocolatería B2+C (local) y después «Tareas Recurrentes: Taquería Mexicana» (VPS); antes,
+programar el broadcast de Pastelería (14-oct) y decidir la política del Mega Pack.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 0. 🔴 **Seguridad alimentaria en producto VENDIDO (cazado por el research del Manual del Chef Ejecutivo, 6-sep; John: «déjalo
