@@ -173,7 +173,7 @@ programar el broadcast de Pastelería (14-oct) y decidir la política del Mega P
   enviada a John antes de programar. **El siguiente hueco es el 24-oct** (Chocolatería; 29-oct si John aprueba el
   kit de chocolatería 2.1 —D53—, que iría delante). Programable desde el 24-sep.
 - **DataForSEO con saldo otra vez** (John, 19-sep): «taquería mexicana» 210/mes ES; sirve para el research de la Taquería.
-- **Chocolatería Boutique & Atelier, fase B2+C arrancada en LOCAL**: 45 redactores Sonnet por bloque (workflow
+- **Chocolatería Boutique & Atelier, fase B2+C HECHA en LOCAL (15:45): capa de producto 49 + 45 bloques + refutación en 2 rondas + documentos finales (guía 111 págs · BP 19 · bonus 34) en `dl/`, gates offline en verde, PR #84 en borrador con deploy preview. Falta SOLO el Payment Link de John (datos entregados) → `sync-payment-links.py` → merge → gates LIVE → Resend 24-oct (o 29-oct si aprueba D53).** Detalle: `SESSION_HANDOFF_2026-09-19-chocolateria-b2c.md`. Arrancó así: 45 redactores Sonnet por bloque (workflow
   `escribir-bloques-guia-chocolateria`) + capa de producto (workflow `capa-producto-guia-chocolateria`: 3 lotes opus
   con ficheros disjuntos, `fase8x-sustituir-banner.py` genérico, 7 imágenes, revisor + fixer) en la rama
   `feat/guia-chocolateria-obrador`. Desviación de la SPEC ya decidida: `comingSoon` pasa de 23 a 22 (se quita sólo
