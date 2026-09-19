@@ -94,3 +94,17 @@ Sesión Claude Code · firma de commits `Via: Claude Code`.
   `chefbusiness-astro`, no desde aquí.
 - Recordatorio que salió del barrido: el broadcast de lanzamiento de Pastelería (14-oct) era programable desde el 14-sep
   y no consta programado; el del Kit de Tareas Pastelería 2.1 (19-oct) es programable desde hoy.
+
+## Cuarta parte (19-sep) — «Próximos Productos»: de 1 a 23 tarjetas (PR #83)
+
+- John: publicar Churrería-Chocolatería y Plan de Negocio Heladería, elegir las 20 mejores de las 161 ideas y
+  mantener el Excel maestro actualizado. Criterio suyo del día: **volumen de búsqueda 0 no descalifica un producto**
+  (memoria `feedback_volumen-cero-no-descalifica-un-producto`).
+- Selección: panel de 3 jueces opus + síntesis + 2 refutadores (workflow `top20-ideas-productos`); DataForSEO sin saldo
+  (402), Search Console sin señal para «montar/plan de negocio», buscador del hub con 32 búsquedas (2 huecos reales:
+  hamburguesas, finca de eventos). Lista definitiva, precios y olas en `CALENDARIO-V2-SEMANAL.md` §3.
+- Hub: `ProductosDigitalesHubPage.astro` y la SPA en paridad (23 `comingSoon`); sinónimos nuevos en
+  `sinonimos-buscador.json` (hamburguesa/burger/smash · pollería/asadero · finca/bodas/eventos).
+- Excel maestro: Hojas 4/6/7 actualizadas; backup `…BACKUP-2026-09-19.xlsx`. **Gotcha:** openpyxl 3.1.3 dejó los
+  `xfId` de `cellStyles` colgando al compactar `cellStyleXfs`; reparado renumerándolos en `xl/styles.xml`.
+- Verificación: preview 83 (23 `data-coming`, contador, nombres) → merge → producción (se anota al cerrar).
