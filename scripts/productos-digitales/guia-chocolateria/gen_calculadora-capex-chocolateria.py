@@ -143,7 +143,7 @@ ROTULO_BLOQUE = {
 # --------------------------------------------------------------------------
 P_INI = 6
 PARAMS_LIBRO = [
-    ('Superficie total del local', D.NEGOCIO['m2_total'], 'm2',
+    ('Superficie total del local', D.NEGOCIO['m2_total'], 'm²',
      D.NEGOCIO['fuente_m2'],
      'Los mismos 75 m² del libro 1. Si los cambias, cambia la obra: es la '
      'única partida del CAPEX que no se teclea.'),
@@ -571,7 +571,7 @@ def hoja_parametros(wb):
         elif unidad in ('€', '€/mes', '€/m²', '€/kg'):
             motor.val(ws, 'B%d' % fila, float(valor), fmt=C.FMT_EUR,
                       verde_=True)
-        elif unidad in ('m2', 'kg al mes'):
+        elif unidad in ('m2', 'm²', 'kg al mes'):
             motor.val(ws, 'B%d' % fila, float(valor), fmt=C.FMT_DEC1,
                       verde_=True)
         else:
@@ -1276,7 +1276,7 @@ def hoja_traspaso(wb):
               'Ocho traspasos reales, para ver la horquilla. Son precios '
               'PEDIDOS, no pagados')
     C.cabecera(ws, T_TAB_CAB, [
-        ('A', 'Ciudad o zona'), ('B', 'Tipo de negocio'), ('C', 'm2'),
+        ('A', 'Ciudad o zona'), ('B', 'Tipo de negocio'), ('C', 'm²'),
         ('D', 'Precio pedido'), ('E', 'Renta mensual'), ('F', '€ por m²'),
         ('G', 'Coste en el horizonte'), ('H', 'Fuente'),
         ('I', '¿Mismo formato?')], altura=30)

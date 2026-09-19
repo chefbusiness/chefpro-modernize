@@ -234,7 +234,7 @@ PARAMS_LIBRO = [
      'Holgura mínima que quieres tener sobre el día normal. Por debajo de '
      'ella el libro avisa: una avería del frío, una baja o un pedido '
      'corporativo te dejan sin género aunque en teoría llegues.'),
-    ('Superficie total del local', D.NEGOCIO['m2_total'], 'm2',
+    ('Superficie total del local', D.NEGOCIO['m2_total'], 'm²',
      D.NEGOCIO['fuente_m2'], D.NEGOCIO['nota_m2']),
     ('Parte mínima del local dedicada a producción', 0.55, '%', 'supuesto',
      'Criterio de la casa, no norma: por debajo de esto la tienda se come al '
@@ -245,7 +245,7 @@ PARAMS_LIBRO = [
      D.NEGOCIO['potencia_instalada_kw'], 'kW',
      D.NEGOCIO['fuente_potencia_instalada'], D.NEGOCIO['nota_potencia']),
     ('Temperatura exterior de tu ciudad en agosto',
-     D.NEGOCIO['t_exterior_agosto_c'], 'grados C',
+     D.NEGOCIO['t_exterior_agosto_c'], '°C',
      D.NEGOCIO['fuente_t_exterior'], D.NEGOCIO['nota_t_exterior']),
     ('Potencia frigorífica que te OFRECE el instalador',
      D.NEGOCIO['potencia_frigorifica_ofertada_kw'], 'kW',
@@ -254,7 +254,7 @@ PARAMS_LIBRO = [
      'carga térmica, y lo dice en la hoja «Clima del Obrador». Pídela por '
      'escrito con el salto de temperatura de diseño al lado.'),
     ('Salto de temperatura de diseño que declara el instalador', 16.0,
-     'grados C', 'supuesto',
+     '°C', 'supuesto',
      'El salto de temperatura para el que ha dimensionado su equipo. Es la '
      'pregunta que casi '
      'nadie hace, y la que decide si esa oferta sirve en agosto: si ha '
@@ -269,7 +269,7 @@ PARAMS_LIBRO = [
      'Las seis zonas de La Almendra. NO es el reparto de una pastelería: aquí '
      'no hay zona de horno ni de fermentación, y sí cámara climatizada.'),
     ('Superficie máxima de venta sin licencia previa (Ley 12/2012)',
-     UMBRAL_750, 'm2', 'CHN-49 + CHN-49b',
+     UMBRAL_750, 'm²', 'CHN-49 + CHN-49b',
      'Ningún ayuntamiento puede exigirte licencia previa de instalación, de '
      'funcionamiento o de actividad hasta 750 m² de superficie útil de '
      'exposición y venta al público, porque el epígrafe 644.5 «Comercio al '
@@ -307,7 +307,13 @@ EQUIPOS_CAPACIDAD = [
      'se mira al presupuestar. Fíjate en dónde queda en el cuello de botella: '
      'templar NO es lo que limita una bombonería artesana. Los bombones por '
      'kilo salen de los 5,5 g de chocolate de la tanda de referencia; cámbialos '
-     'si tu pieza pesa otra cosa.'),
+     'si tu pieza pesa otra cosa. Los 180 minutos NO son el rendimiento de su '
+     'ficha (55 kg/h): son el ritmo al que el obrador vacía la cuba sobre el '
+     'moldeado, con carga, templado, vaciado y cristalización. Por eso esta '
+     'columna NO es comparable entre una máquina continua y una de lote: que '
+     'la fila 16 (3 kg) dé más bombones al día que ésta (12 kg) es un efecto '
+     'de cuántos ciclos enteros caben en los 408 minutos de la jornada, no '
+     'una ventaja de la máquina pequeña.'),
     ('Temperador de baño maría digital, 22 L — segunda cobertura',
      'Templado', 'Sí', 8, 'kg de cobertura por carga',
      BOMBONES_POR_KG, 180, 0.35, 'CHS-41j',
@@ -404,11 +410,11 @@ COHERENCIAS = [
 #: por defecto, por qué importa). `tipo` = 'num' o 'sino'.
 F_INST_INI = 6
 PREGUNTAS_INSTALADOR = [
-    ('¿Qué volumen en m³ has tomado para el obrador?', 'm3', 'num', 78.0,
+    ('¿Qué volumen en m³ has tomado para el obrador?', 'm³', 'num', 78.0,
      'Los metros cuadrados de la hoja «Zonas y m²» por la altura libre. Si el '
      'número que ha usado no se parece al tuyo, ha dimensionado otro local.'),
     ('¿Para qué salto de temperatura de diseño lo has calculado?',
-     'grados C', 'num', 16.0,
+     '°C', 'num', 16.0,
      'Es LA pregunta. Un equipo dimensionado para un salto de 10 grados no '
      'sostiene 18-20 °C dentro con 36 fuera, y en agosto es cuando se '
      'nota.'),
@@ -881,7 +887,7 @@ def hoja_zonas(wb):
                 'no hay zona de horno ni de fermentación, y sí cámara '
                 'climatizada.', col_fin='G')
     C.cabecera(ws, 5, [('A', 'Nº'), ('B', 'Zona'), ('C', 'Bloque'),
-                       ('D', 'm2'), ('E', '% del local'),
+                       ('D', 'm²'), ('E', '% del local'),
                        ('F', 'Paso del recorrido'),
                        ('G', 'Qué tiene que cumplir')])
     fila = Z_INI

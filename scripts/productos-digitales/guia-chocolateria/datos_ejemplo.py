@@ -12,14 +12,14 @@ cambia, cambia aquí y se regeneran los libros.
 QUE ES «LA ALMENDRA» Y QUE NO ES
 ================================
 «La Almendra» es un CASO MODELADO, no un cliente real y no «la bombonería media de
-Espana». Es el juego de datos que permite que las fórmulas de los 9 libros tengan
+España». Es el juego de datos que permite que las fórmulas de los 9 libros tengan
 que calcular y que el lector vea una hoja rellena antes de borrarla y poner la suya.
 Nada de lo que hay aquí es un benchmark.
 
 D51 - COMPROBACION DE MARCA, hecha el 12-09-2026 y declarada aquí:
   · El API de TMview (`tmdn.org/tmview/api/search/results`, oficinas ES+EM, clase 30)
     devolvió error de conexion desde este Mac (curl exit 56, y WebFetch ECONNRESET).
-    El buscador de la EUIPO (eSearch) sirve la cascara de la SPA, sin resultados.
+    El buscador de la EUIPO (eSearch) sirve la cáscara de la SPA, sin resultados.
     REGISTRO NO CONSULTABLE EL 12-09-2026 DESDE EL MAC.
   · Busqueda web con dos consultas distintas («La Almendra» + chocolatería /
     bombonería / marca registrada, y «La Almendra» + bombones + obrador): NINGÚN
@@ -135,7 +135,7 @@ VOCABULARIO (SPEC §6)
 =====================
 chocolatería artesanal (nunca «artesana») · bombonería · obrador · cobertura ·
 templado (nunca «temperado» en el cuerpo) · escandallo · vitrina · bombón (y «trufa»
-y «praline» son TIPOS de bombón, no sinonimos) · tableta · chocolate a la taza ·
+y «praliné» son TIPOS de bombón, no sinonimos) · tableta · chocolate a la taza ·
 bean-to-bar (no se traduce) · taller y cata · fat bloom y sugar bloom · coste.
 «Dulcería» NO se usa como sinonimo en ninguna parte del producto.
 
@@ -196,7 +196,7 @@ F_KIT_01_APERTURA = 'kit-tareas-chocolateria/01-apertura-cierre.xlsx, hoja «Ape
 #: `04-tareas-perfiles.xlsx`, verificados abriendo el fichero el 12-09-2026.
 #: §1.B.5 prohibe «maestro chocolatero», «bombonero» y «oficial» como perfiles.  # LN-OK
 #: OJO: la hoja `Instrucciones` del kit y el titulo de la fila 1 de cada hoja usan
-#: rotulos largos («Maestro Chocolatero / Obrador», «Dependiente de Tienda»,
+#: rótulos largos («Maestro Chocolatero / Obrador», «Dependiente de Tienda»,
 #: «Encargado de Turno»). Lo que la SPEC declara literal son los NOMBRES DE HOJA,
 #: y son estos tres.
 PERFILES_KIT = ('Chocolatero', 'Dependiente', 'Encargado')
@@ -271,7 +271,7 @@ CLIMA = {
         'fuente': F_KIT_08_APERTURA,
         'literal': ('Verificar la temperatura y la humedad del obrador: objetivo '
                     '18-20 °C y 50-60 %'),
-        'nota': ('Es la tarea 17 de la hoja, y es el objetivo mas restrictivo que '
+        'nota': ('Es la tarea 17 de la hoja, y es el objetivo más restrictivo que '
                  'publica el kit: es el que manda. `CHS-44` publica 18-22 °C '
                  'como rango de trabajo de un tercero, y entra en la prosa del '
                  'cap. 07 como tal, nunca como objetivo del juego de datos.')},
@@ -304,7 +304,7 @@ CLIMA = {
         't_min': 16.0, 't_max': 18.0, 'hr_min': None, 'hr_max': 55.0,
         'fuente': F_KIT_08_APERTURA,
         'literal': ('Comprobar que las vitrinas temperadas han alcanzado 16-18 '        # LN-OK
-                    '°C y menos del 55 % de humedad antes de montar el genero'),  # LN-OK
+                    '°C y menos del 55 % de humedad antes de montar el género'),  # LN-OK
         'nota': ('Tarea 16. Es el OBJETIVO OPERATIVO, lo que se comprueba cada '
                  'mañana. `CHS-43` publica además el RANGO DE TRABAJO de un equipo '
                  'real (+14/+17 °C, Docriluc WB-6-6-R, base SIN IVA declarada), '
@@ -424,9 +424,9 @@ NEGOCIO = {
 CONVENIO = [
     # (n, grupo profesional, euros/mes, euros/ano, areas funcionales, puestos que cita)
     (1, 'Técnicos y titulados superiores', 1733.88, 26008.20,
-     ('ADMINISTRACION',), ''),
+     ('ADMINISTRACIÓN',), ''),
     (2, 'Dirección, jefes y encargados', 1427.89, 21418.35,
-     ('OBRADOR', 'TIENDA', 'ADMINISTRACION'), 'maestro de obrador, encargado'),
+     ('OBRADOR', 'TIENDA', 'ADMINISTRACIÓN'), 'maestro de obrador, encargado'),
     (3, 'Personal especialista', 1376.91, 20653.65,
      ('OBRADOR', 'TIENDA'), 'especialista de producción, encargado de sección'),
     (4, 'Personal cualificado', 1249.42, 18741.30,
@@ -772,7 +772,7 @@ PRECIOS_COMPRA = {
     'Pasta pura de avellana': (22.50, 'kg', 'supuesto'),
     'Almendra marcona repelada': (12.40, 'kg', 'supuesto'),
     'Avellana tostada': (13.90, 'kg', 'supuesto'),
-    'Pasta de sesamo': (8.90, 'kg', 'supuesto'),
+    'Pasta de sésamo': (8.90, 'kg', 'supuesto'),
     'Barquillo triturado': (7.60, 'kg', 'supuesto'),
     'Ron anejo': (16.00, 'L', 'supuesto'),
     'Naranja confitada': (9.20, 'kg', 'supuesto'),
@@ -834,21 +834,21 @@ RELLENOS = {
         'nota': ('La misma pieza con otra formulación: el kit le da 4-8 semanas. '
                  'Entre esta y la anterior hay un factor DE TRES A CINCO, y esa es '
                  'una decisión de modelo de negocio, no técnica.')},
-    'praline avellana': {
+    'praliné avellana': {
         'nombre': 'Praline de avellana',
         'lineas': [('Praline de avellana 50 %', 0.70), ('Cobertura con leche', 0.28),
                    ('Manteca de cacao', 0.04)],
         'aw': 0.42, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('«Praline» NO es un nombre comercial: el punto 10 de la parte A del '
                  'Anexo I de la Directiva 2000/36/CE se titula «Bombón de chocolate '
-                 'o praline» (`CHN-82`), con el mismo mínimo del 25 %.')},
+                 'o praliné» (`CHN-82`), con el mismo mínimo del 25 %.')},
     'gianduja avellana': {
         'nombre': 'Gianduja de avellana',
         'lineas': [('Pasta pura de avellana', 0.45), ('Cobertura con leche', 0.40),
                    ('Azucar', 0.17)],
         'aw': 0.38, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('La gianduja tiene su propio apartado en la norma (1.6.b.3), con '
                  'avellanas entre 20 y 40 g por 100 g. Aquí es RELLENO de un bombón, '
                  'así que la denominación de venta es la del bombón.')},
@@ -866,7 +866,7 @@ RELLENOS = {
         'aw': 0.72, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de licor y cristalizados',
         'nota': ('El alcohol baja la actividad de agua. Vigilar la cristalización del '
-                 'azúcar en la cascara: revienta y gotea (nota literal del kit).')},
+                 'azúcar en la cáscara: revienta y gotea (nota literal del kit).')},
     'caramelo salado': {
         'nombre': 'Caramelo salado',
         'lineas': [('Azucar', 0.36), ('Nata 35 % MG UHT', 0.28), ('Mantequilla', 0.22),
@@ -874,22 +874,22 @@ RELLENOS = {
         'aw': 0.68, 'fuente_aw': 'supuesto',
         'familia_kit': 'Bombones de ganache con nata UHT, sorbato o alcohol',
         'nota': 'Azúcar alto y agua baja: aguanta mas que una ganache fresca.'},
-    'praline cacahuete': {
+    'praliné cacahuete': {
         'nombre': 'Praline de cacahuete',
         'lineas': [('Praline de cacahuete 50 %', 0.72), ('Cobertura con leche', 0.26),
                    ('Manteca de cacao', 0.04)],
         'aw': 0.40, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('EL CACAHUETE ES EL PUNTO 5 DEL ANEXO II y NO es un fruto de '
-                 'cascara (`CHN-34b`): esta referencia se etiqueta con su propio '
+                 'cáscara (`CHN-34b`): esta referencia se etiqueta con su propio '
                  'alérgeno, no dentro de «frutos secos».')},
-    'crujiente sesamo': {
-        'nombre': 'Crujiente de sesamo y barquillo',
-        'lineas': [('Pasta de sesamo', 0.34), ('Barquillo triturado', 0.22),
+    'crujiente sésamo': {
+        'nombre': 'Crujiente de sésamo y barquillo',
+        'lineas': [('Pasta de sésamo', 0.34), ('Barquillo triturado', 0.22),
                    ('Cobertura con leche', 0.44)],
         'aw': 0.28, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Barquillos y crujientes banados',
-        'nota': ('DOS alérgenos independientes en una sola pieza: granos de sesamo '
+        'familia_kit': 'Barquillos y crujientes bañados',
+        'nota': ('DOS alérgenos independientes en una sola pieza: granos de sésamo '
                  '(punto 11) y cereales con gluten del barquillo (punto 1). El kit '
                  'le da 3-4 semanas, y no por seguridad: pierde el crujiente mucho '
                  'antes.')},
@@ -897,15 +897,15 @@ RELLENOS = {
         'nombre': 'Naranja confitada',
         'lineas': [('Naranja confitada', 0.62), ('Cobertura negra', 0.38)],
         'aw': 0.65, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Frutos secos garrapinados y frutas confitadas banadas',
+        'familia_kit': 'Frutos secos garrapiñados y frutas confitadas bañadas',
         'nota': ('La fruta confitada suele llevar SULFITOS (punto 12 del Anexo II), '
                  'que es el octavo alérgeno y el que mas se olvida. Pidele a tu '
                  'proveedor la ficha técnica: el umbral de declaración es 10 mg/kg.')},
-    'praline de tableta': {
+    'praliné de tableta': {
         'nombre': 'Praline de avellana para tableta rellena',
         'lineas': [('Praline de avellana 50 %', 0.80), ('Cobertura con leche', 0.22)],
         'aw': 0.40, 'fuente_aw': 'supuesto',
-        'familia_kit': 'Bombones de praline, gianduja y frutos secos',
+        'familia_kit': 'Bombones de praliné, gianduja y frutos secos',
         'nota': ('En una TABLETA RELLENA la denominación es «chocolate relleno» '
                  '(ap. 1.10) y el exterior tiene que ser al menos el 25 % del peso '
                  'total (`CHN-04`), calculado SOBRE EL PESO TOTAL con el relleno '
@@ -968,15 +968,15 @@ VIDA_UTIL_KIT = [
     ('Bombones de ganache con nata UHT, sorbato o alcohol', '4-8 semanas',
      'El conservante y el alcohol bajan la actividad de agua; sin ellos no se llega '
      'ni a la mitad'),
-    ('Bombones de praline, gianduja y frutos secos', '2-4 meses',
+    ('Bombones de praliné, gianduja y frutos secos', '2-4 meses',
      'La grasa del fruto seco se enrancia y el frío no lo evita: manda la fecha, no el aspecto'),
     ('Trufas y rocas recubiertas', '3-4 semanas',
      'Si llevan nata o mantequilla, se cuentan como ganache fresca'),
     ('Bombones de licor y cristalizados', '3-6 meses',
-     'Vigilar la cristalización del azúcar en la cascara: revienta y gotea'),
-    ('Frutos secos garrapinados y frutas confitadas banadas', '1-3 meses',
-     'Se apelmazan con la humedad; envasado hermetico con desecante si tu obrador es humedo'),
-    ('Barquillos y crujientes banados', '3-4 semanas',
+     'Vigilar la cristalización del azúcar en la cáscara: revienta y gotea'),
+    ('Frutos secos garrapiñados y frutas confitadas bañadas', '1-3 meses',
+     'Se apelmazan con la humedad; envasado hermético con desecante si tu obrador es húmedo'),
+    ('Barquillos y crujientes bañados', '3-4 semanas',
      'Pierden el crujiente mucho antes que la seguridad: se retiran por calidad'),
     ('Chocolate acabado: NO congelar', 'Nunca',
      'Al descongelar condensa, el agua disuelve el azúcar de la superficie y deja '
@@ -1001,14 +1001,14 @@ VIDA_UTIL_DECLARADA = None
 # ==========================================================================
 # 8. LOS OCHO ALERGENOS DE UNA BOMBONERIA (`CHN-34b`)
 # ==========================================================================
-#: SON OCHO, NO CINCO. Cacahuetes (punto 5), frutos de cascara (punto 8) y granos de
-#: sesamo (punto 11) son entradas INDEPENDIENTES del Anexo II del Rgto. 1169/2011, y
+#: SON OCHO, NO CINCO. Cacahuetes (punto 5), frutos de cáscara (punto 8) y granos de
+#: sésamo (punto 11) son entradas INDEPENDIENTES del Anexo II del Rgto. 1169/2011, y
 #: falta ademas el sulfito (punto 12). Escribir «los cinco alergenos de una  # LN-OK
 #: bomboneria» esta PROHIBIDO (§5.1, prohibicion 11).  # LN-OK
 #:
 #: NOTA-PUENTE para quien ya tiene el kit de 12 euros (D53c): «si usas el Kit de
 #: Tareas Chocolateria, desglosa la celda "frutos secos" en cacahuetes, frutos de
-#: cascara y sesamo, que son entradas independientes del Anexo II». El kit publica
+#: cáscara y sésamo, que son entradas independientes del Anexo II». El kit publica
 #: hoy seis, seis y cinco en sus tres celdas de declaracion; su regeneracion a 2.1
 #: es una PROPUESTA para John y NO bloquea nada de aqui.
 ALERGENOS = (
@@ -1017,8 +1017,8 @@ ALERGENOS = (
     ('gluten', 'Cereales que contengan gluten y productos derivados', 1),
     ('soja', 'Soja y productos a base de soja', 6),
     ('cacahuetes', 'Cacahuetes y productos a base de cacahuetes', 5),
-    ('frutos_cascara', 'Frutos de cascara (almendra, avellana, nuez, anacardo...)', 8),
-    ('sesamo', 'Granos de sesamo y productos a base de granos de sesamo', 11),
+    ('frutos_cáscara', 'Frutos de cáscara (almendra, avellana, nuez, anacardo...)', 8),
+    ('sésamo', 'Granos de sésamo y productos a base de granos de sésamo', 11),
     ('sulfitos', 'Dioxido de azufre y sulfitos en concentraciones superiores a 10 mg/kg', 12),
 )
 ALERGENOS_CLAVES = tuple(a[0] for a in ALERGENOS)
@@ -1053,15 +1053,15 @@ VIAS_DESPACHO_TEXTO = {
         'Sale envasado con SU etiqueta. El art. 4.2 del RD 1021/2022 fija la '
         'temperatura de conservación POR LA ETIQUETA que pone quien ha producido y '
         'envasado: la que tu has escrito te obliga a ti. Y con etiqueta entran '
-        'además las doce menciones del art. 9.1 del Rgto. 1169/2011 (`CHN-35`) mas '
-        'el lote, que NO viene de ese reglamento sino del RD 1808/1991 (`CHN-36`).'),
+        'además las doce menciones del art. 9.1 del Rgto. 1169/2011 (CHN-35) mas '
+        'el lote, que NO viene de ese reglamento sino del RD 1808/1991 (CHN-36).'),
     'a granel': (
         'Se despacha a granel en la vitrina, sin etiqueta. Entonces la referencia NO '
         'es el art. 4.2: es TU sistema de autocontrol, y la temperatura y la vida '
-        'útil las declaras tu y constan en el (`CHN-30`, y `CHN-87`: «chocolate», '
+        'útil las declaras tu y constan en el (CHN-30, y CHN-87: «chocolate», '
         '«cacao», «bombón» y «confitería» aparecen 0 veces en todo el RD 1021/2022). '
-        'Los alérgenos pueden ir en cartel (`CHN-89`) y el lote tiene tres vías de '
-        'exención (`CHN-36`).'),
+        'Los alérgenos pueden ir en cartel (CHN-89) y el lote tiene tres vías de '
+        'exención (CHN-36).'),
 }
 FUENTE_VIAS_DESPACHO = 'CHN-30 + CHN-35 + CHN-36 + CHN-87 + CHN-89'
 
@@ -1128,19 +1128,19 @@ CARTA = [
               'le da 4-8 semanas frente a los 10-15 días de BC1. Es LA decisión de '
               'modelo de negocio del producto, y el libro 5 la cuantifica en euros de '
               'merma por caducidad al año.')},
-    {'id': 'BC3', 'nombre': 'Bombón de praline de avellana',
+    {'id': 'BC3', 'nombre': 'Bombón de praliné de avellana',
      'familia': 'Bombones de colección',
-     'denominacion_legal': 'Bombón de chocolate (praline)',
+     'denominacion_legal': 'Bombón de chocolate (praliné)',
      'fuente_denominacion': 'CHN-03 + CHN-82',
      'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
-     'relleno': 'praline avellana', 'cobertura': 'leche',
+     'relleno': 'praliné avellana', 'cobertura': 'leche',
      'g_chocolate': 5.0, 'g_relleno': 7.0,
      'piezas_molde': 24, 'moldes_tanda': 6, 'minutos_mo_tanda': 140,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 2.10, 'iva': 0.10, 'mix_pct': 6.0, 'mix_verano_pct': 5.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('«Praline» SI significa algo legalmente: es la denominación de venta '
               'europea del bombón de chocolate (`CHN-82`), con el mismo mínimo del '
@@ -1155,8 +1155,8 @@ CARTA = [
      'piezas_molde': 24, 'moldes_tanda': 5, 'minutos_mo_tanda': 130,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 2.10, 'iva': 0.10, 'mix_pct': 4.0, 'mix_verano_pct': 3.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('La gianduja tiene apartado propio en la norma (1.6.b.3), pero aquí va '
               'DENTRO de un bombón: la denominación de venta que manda es la del '
@@ -1207,39 +1207,39 @@ CARTA = [
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': 'Azúcar alto y agua baja: aguanta mucho mas que una ganache fresca.'},
-    {'id': 'BC8', 'nombre': 'Bombón de praline de cacahuete',
+    {'id': 'BC8', 'nombre': 'Bombón de praliné de cacahuete',
      'familia': 'Bombones de colección',
-     'denominacion_legal': 'Bombón de chocolate (praline)',
+     'denominacion_legal': 'Bombón de chocolate (praliné)',
      'fuente_denominacion': 'CHN-03 + CHN-82',
      'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
-     'relleno': 'praline cacahuete', 'cobertura': 'leche',
+     'relleno': 'praliné cacahuete', 'cobertura': 'leche',
      'g_chocolate': 5.0, 'g_relleno': 7.0,
      'piezas_molde': 24, 'moldes_tanda': 5, 'minutos_mo_tanda': 135,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 1.95, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
      'alergenos': _al('leche', 'soja', 'cacahuetes'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('LA REFERENCIA QUE DEMUESTRA POR QUE SON OCHO Y NO CINCO: el cacahuete '
-              'es el punto 5 del Anexo II y NO es un fruto de cascara (punto 8). '
+              'es el punto 5 del Anexo II y NO es un fruto de cáscara (punto 8). '
               'Meterlo dentro de «frutos secos» es un error de etiquetado que puede '
               'mandar a alguien al hospital.')},
-    {'id': 'BC9', 'nombre': 'Bombón crujiente de sesamo y barquillo',
+    {'id': 'BC9', 'nombre': 'Bombón crujiente de sésamo y barquillo',
      'familia': 'Bombones de colección',
      'denominacion_legal': 'Bombón de chocolate',
      'fuente_denominacion': 'CHN-03', 'minimo_legal': '25 % de chocolate sobre el peso TOTAL',
      'mencion_cacao': False, 'via': 'a granel',
-     'relleno': 'crujiente sesamo', 'cobertura': 'leche',
+     'relleno': 'crujiente sésamo', 'cobertura': 'leche',
      'g_chocolate': 5.0, 'g_relleno': 7.0,
      'piezas_molde': 24, 'moldes_tanda': 5, 'minutos_mo_tanda': 140,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 2.05, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'sesamo'),
-     'familia_vida_util': 'Barquillos y crujientes banados',
+     'alergenos': _al('leche', 'soja', 'gluten', 'sésamo'),
+     'familia_vida_util': 'Barquillos y crujientes bañados',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
-     'nota': ('Dos alérgenos mas que sus companeras, y los dos independientes: '
-              'granos de sesamo (punto 11) y cereales con gluten del barquillo '
+     'nota': ('Dos alérgenos mas que sus compañeras, y los dos independientes: '
+              'granos de sésamo (punto 11) y cereales con gluten del barquillo '
               '(punto 1). El kit le da 3-4 semanas, y no por seguridad: pierde el '
               'crujiente mucho antes.')},
     {'id': 'BC10', 'nombre': 'Bombón de naranja confitada y chocolate negro',
@@ -1253,7 +1253,7 @@ CARTA = [
      'merma_recuperable_pct': 0.03, 'merma_no_recuperable_pct': 0.05,
      'pvp_con_iva': 2.05, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 3.0,
      'alergenos': _al('soja', 'sulfitos'),
-     'familia_vida_util': 'Frutos secos garrapinados y frutas confitadas banadas',
+     'familia_vida_util': 'Frutos secos garrapiñados y frutas confitadas bañadas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('La única del surtido con SULFITOS, que es el octavo alérgeno y el que '
               'mas se olvida: la fruta confitada suele llevarlos y el umbral de '
@@ -1300,7 +1300,7 @@ CARTA = [
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate blanco',
      'fuente_denominacion': 'CHN-02 + CHN-13',
-     'minimo_legal': 'ap. 1.9: 20 % de manteca, 14 % de materia seca lactea, 3,5 % de grasa lactea',
+     'minimo_legal': 'ap. 1.9: 20 % de manteca, 14 % de materia seca láctea, 3,5 % de grasa láctea',
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'blanca',
      'g_chocolate': 100.0, 'g_relleno': 0.0,
@@ -1325,7 +1325,7 @@ CARTA = [
      'piezas_molde': 3, 'moldes_tanda': 8, 'minutos_mo_tanda': 65,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 6.50, 'iva': 0.10, 'mix_pct': 5.0, 'mix_verano_pct': 8.0,
-     'alergenos': _al('soja', 'frutos_cascara'),
+     'alergenos': _al('soja', 'frutos_cáscara'),
      'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('La almendra va en `g_relleno` porque es materia comestible AÑADIDA del '
@@ -1343,24 +1343,24 @@ CARTA = [
      'piezas_molde': 3, 'moldes_tanda': 8, 'minutos_mo_tanda': 65,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 6.50, 'iva': 0.10, 'mix_pct': 4.0, 'mix_verano_pct': 6.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
      'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': 'La avellana va como materia añadida del ap. 3, igual que la almendra de TB4.'},
-    {'id': 'TB6', 'nombre': 'Tableta rellena de praline, 100 g',
+    {'id': 'TB6', 'nombre': 'Tableta rellena de praliné, 100 g',
      'familia': 'Tabletas',
      'denominacion_legal': 'Chocolate relleno',
      'fuente_denominacion': 'CHN-04 + CHN-10 + CHN-13',
      'minimo_legal': ('ap. 1.10: el exterior de chocolate tiene que ser al menos el '
                       '25 % del peso TOTAL del producto acabado, relleno incluido'),
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
-     'relleno': 'praline de tableta', 'cobertura': 'leche',
+     'relleno': 'praliné de tableta', 'cobertura': 'leche',
      'g_chocolate': 55.0, 'g_relleno': 45.0,
      'piezas_molde': 3, 'moldes_tanda': 6, 'minutos_mo_tanda': 105,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.03,
      'pvp_con_iva': 7.50, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 4.0,
-     'alergenos': _al('leche', 'soja', 'frutos_cascara'),
-     'familia_vida_util': 'Bombones de praline, gianduja y frutos secos',
+     'alergenos': _al('leche', 'soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Bombones de praliné, gianduja y frutos secos',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('La segunda referencia del ap. 1.10, y la que enseña la base de calculo: '
               '55 g de chocolate sobre 100 g de pieza son el 55 %, calculado SOBRE EL '
@@ -1466,11 +1466,11 @@ CARTA = [
      'nota': ('Pieza de autor y la que mas minutos de obrador se lleva: 210 por tanda '
               'de seis. La decoración va como materia añadida del ap. 3. Es la '
               'referencia que pone a prueba la capacidad del libro 1 en abril.')},
-    {'id': 'TF3', 'nombre': 'Hueso de santo banado en chocolate',
+    {'id': 'TF3', 'nombre': 'Hueso de santo bañado en chocolate',
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Producto de confitería recubierto de chocolate',
      'fuente_denominacion': 'CHN-15',
-     'minimo_legal': ('RD 348/2011: si el producto esta relleno, recubierto o '
+     'minimo_legal': ('RD 348/2011: si el producto está relleno, recubierto o '
                       'grageado, la denominación de venta tiene que decirlo'),
      'mencion_cacao': False, 'via': 'a granel',
      'relleno': 'yema tostada', 'cobertura': 'negra',
@@ -1488,7 +1488,7 @@ CARTA = [
               'RECUBIERTO. Su denominación sale del RD 348/2011 (`CHN-15`), no del '
               'RD 1055/2003. La ÚNICA con huevo, por la yema, y va con ovoproducto '
               'pasteurizado (`CHN-31`). Esta literalmente en el calendario del kit: '
-              '«Todos los Santos (1): panellets y huesos de santo banados».')},
+              '«Todos los Santos (1): panellets y huesos de santo bañados».')},
     {'id': 'TF4', 'nombre': 'Turrón de chocolate con almendra, 250 g',
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Chocolate con almendras',
@@ -1500,7 +1500,7 @@ CARTA = [
      'piezas_molde': 4, 'moldes_tanda': 6, 'minutos_mo_tanda': 120,
      'merma_recuperable_pct': 0.05, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 13.50, 'iva': 0.10, 'mix_pct': 2.0, 'mix_verano_pct': 1.0,
-     'alergenos': _al('soja', 'frutos_cascara'),
+     'alergenos': _al('soja', 'frutos_cáscara'),
      'familia_vida_util': 'Tabletas y chocolate sin relleno',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('HUECO DECLARADO: la denominación que publica este juego de datos es la '
@@ -1511,7 +1511,7 @@ CARTA = [
               'turrones te obliga a otra denominación de venta. La almendra (82 g '
               'sobre 250, el 32,8 %) esta dentro del tope del 40 % del ap. 3 '
               '(`CHN-09`).')},
-    {'id': 'TF5', 'nombre': 'Almendras marcona banadas en chocolate, bolsa de 150 g',
+    {'id': 'TF5', 'nombre': 'Almendras marcona bañadas en chocolate, bolsa de 150 g',
      'familia': 'Turrones, figuras y temporada',
      'denominacion_legal': 'Grageas o confites de chocolate',
      'fuente_denominacion': 'CHN-15',
@@ -1523,8 +1523,8 @@ CARTA = [
      'piezas_molde': 40, 'moldes_tanda': 1, 'minutos_mo_tanda': 95,
      'merma_recuperable_pct': 0.04, 'merma_no_recuperable_pct': 0.02,
      'pvp_con_iva': 7.40, 'iva': 0.10, 'mix_pct': 3.5, 'mix_verano_pct': 8.0,
-     'alergenos': _al('soja', 'frutos_cascara'),
-     'familia_vida_util': 'Frutos secos garrapinados y frutas confitadas banadas',
+     'alergenos': _al('soja', 'frutos_cáscara'),
+     'familia_vida_util': 'Frutos secos garrapiñados y frutas confitadas bañadas',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('La que da nombre a la casa, y su denominación NO sale del RD 1055/2003 '
               'sino del RD 348/2011: «grageas o confites de chocolate» (`CHN-15`). Se '
@@ -1540,7 +1540,7 @@ CARTA = [
      'fuente_denominacion': 'CHN-13',
      'minimo_legal': ('ap. 6.a) y 6.c): la denominación va por pieza o, si el surtido '
                       'es de los aps. 1.6 a 1.10 y 1.13, se sustituye por la de '
-                      'surtido, con una única lista de ingredientes. Es una DECISION '
+                      'surtido, con una única lista de ingredientes. Es una DECISIÓN '
                       'de etiquetado, no una obligación'),
      'mencion_cacao': False, 'via': 'envasado con etiqueta',
      'relleno': None, 'cobertura': 'negra',
@@ -1548,8 +1548,8 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 4,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 20.00, 'iva': 0.10, 'mix_pct': 5.0, 'mix_verano_pct': 7.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'CHS-29', 'fuente_gramaje': 'supuesto',
      'nota': ('PVP de `CHS-29`, precio de MOSTRADOR (con IVA) y base de IVA NO '
@@ -1574,8 +1574,8 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 6,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 28.00, 'iva': 0.10, 'mix_pct': 3.0, 'mix_verano_pct': 5.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'CHS-29', 'fuente_gramaje': 'supuesto',
      'nota': '1,40 euros por bombón: un 16 % menos que en la caja de 12.',
@@ -1593,8 +1593,8 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 9,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 45.00, 'iva': 0.10, 'mix_pct': 2.0, 'mix_verano_pct': 2.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'CHS-29', 'fuente_gramaje': 'supuesto',
      'nota': ('1,29 euros por bombón: un 23 % menos que en la caja de 12. Esa escalera '
@@ -1614,8 +1614,8 @@ CARTA = [
      'piezas_molde': 1, 'moldes_tanda': 1, 'minutos_mo_tanda': 11,
      'merma_recuperable_pct': 0.0, 'merma_no_recuperable_pct': 0.005,
      'pvp_con_iva': 34.00, 'iva': 0.10, 'mix_pct': 1.0, 'mix_verano_pct': 1.0,
-     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cascara',
-                      'sesamo', 'sulfitos'),
+     'alergenos': _al('leche', 'soja', 'gluten', 'cacahuetes', 'frutos_cáscara',
+                      'sésamo', 'sulfitos'),
      'familia_vida_util': 'Bombones de ganache con nata UHT, sorbato o alcohol',
      'fuente_pvp': 'supuesto', 'fuente_gramaje': 'supuesto',
      'nota': ('SUPUESTO: `CHS-29` no cubre el estuche corporativo. Lo que SI esta '
@@ -1907,8 +1907,8 @@ EQUIPAMIENTO = [
      'opcional': False, 'plazo_semanas': 8, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Equipo de templado y moldeado', 'dotacion_tipo': True,
      'nota': 'Base de IVA NO declarada por la ficha del distribuidor.'},
-    {'n': 5, 'partida': 'Temperador de baño maria digital, 22 L',
-     'marca': 'Utilcentre', 'modelo': 'baño maria digital 22 L', 'categoria': 'Templado',
+    {'n': 5, 'partida': 'Temperador de baño maría digital, 22 L',
+     'marca': 'Utilcentre', 'modelo': 'baño maría digital 22 L', 'categoria': 'Templado',
      'valor_verificado': 2650.00, 'supuesto_por_defecto': None,
      'base_iva': 'no declarada', 'tipo_iva': 0.21, 'fuente': 'CHS-41j',
      'es_desde': False, 'rango_min': None, 'rango_max': None,
@@ -2009,7 +2009,7 @@ EQUIPAMIENTO = [
      'nota': ('SUPUESTO: la web del proveedor de packaging verificado devolvió HTTP '
               '403 y no publica precio (`CHS-54`). En bombonería la caja ES el '
               'producto en campana, y el personalizado obliga a pedidos grandes: es '
-              'dinero parado en el almacén. Si lo compras fuera de Espana, mira el '
+              'dinero parado en el almacén. Si lo compras fuera de España, mira el '
               'contador de plastico del libro 2 (`PLASTICO`).')},
 
     # --- tienda -------------------------------------------------------------
@@ -2021,7 +2021,7 @@ EQUIPAMIENTO = [
      'opcional': False, 'plazo_semanas': 6, 'fuente_plazo': 'supuesto',
      'bloque_capex': 'Mobiliario y tienda', 'dotacion_tipo': True,
      'nota': 'SUPUESTO declarado. Celda verde con valor por defecto.'},
-    {'n': 15, 'partida': 'TPV, ordenador, impresora de etiquetas y rotulo',
+    {'n': 15, 'partida': 'TPV, ordenador, impresora de etiquetas y rótulo',
      'marca': None, 'modelo': None, 'categoria': 'Tienda',
      'valor_verificado': None, 'supuesto_por_defecto': 3200.00,
      'base_iva': 'sin IVA', 'tipo_iva': 0.21, 'fuente': 'supuesto',
@@ -2115,7 +2115,7 @@ ESCENARIOS_DOTACION = {
           'nota': ('Suma de las líneas con precio verificado: atemperadora Selmi One '
                    '(`CHS-41a`) + puesta en marcha + enrobadora R200 (`CHS-42a`) + '
                    'placa dosificadora (`CHS-42i`) + moldes en RANGO (`CHS-45a`) + '
-                   'temperador de baño maria (`CHS-41j`) + mantenedor «desde» '
+                   'temperador de baño maría (`CHS-41j`) + mantenedor «desde» '
                    '(`CHS-41i`). Se publica como RANGO porque dos de sus sumandos no '
                    'son números cerrados.')},
     'B': {'nombre': 'Escenario B: arranque mínimo viable',
@@ -2178,7 +2178,7 @@ CAPEX = [
      None, 'sin IVA', 0.21, 'CHS-45a + supuesto',
      'Se calcula desde EQUIPAMIENTO. Los moldes entran como RANGO (D23a) y NO pagan '
      'el impuesto al plastico (`CHN-62c`).'),
-    ('TPV, informática y rótulo', 'TPV, ordenador, impresora de etiquetas y rotulo',
+    ('TPV, informática y rótulo', 'TPV, ordenador, impresora de etiquetas y rótulo',
      None, 'sin IVA', 0.21, 'supuesto',
      'Se calcula desde EQUIPAMIENTO.'),
     ('Fianza y licencias', 'Fianza de arrendamiento (2 meses)',
@@ -2247,10 +2247,10 @@ VARIANTES = {
             'Tamizadora', 'Balanza de precisión para la formulación',
         ),
         'preguntas_al_proveedor': (
-            'Precio de la máquina puesta en Espana, con transporte, aduana y puesta '
+            'Precio de la máquina puesta en España, con transporte, aduana y puesta '
             'en marcha desglosados: los catálogos existen y están verificados, pero '
             'los precios NO son publicos (venta a presupuesto o tienda fuera de la UE).',
-            'Plazo de entrega real y quien hace el mantenimiento en Espana.',
+            'Plazo de entrega real y quien hace el mantenimiento en España.',
             'Potencia eléctrica y si necesita trifasica.',
             'Ruido en dB a un metro: el tostador y el winnower son los dos equipos '
             'ruidosos de un obrador que por lo demás es silencioso.',
@@ -2364,7 +2364,7 @@ TRASPASOS = [
     # (zona, tipo, m2, traspaso pedido, renta mensual, fuente)
     ('El Prat de Llobregat (Barcelona)', 'Pastelería-bombonería con obrador (40+ años)',
      90, 26000.0, 1100.0, 'CHS-38a'),
-    ('Reus (Tarragona)', 'Pastelería-bombonería historica (34 años)',
+    ('Reus (Tarragona)', 'Pastelería-bombonería histórica (34 años)',
      300, 73000.0, None, 'CHS-38b'),
     ('Barcelona (Sagrada Familia)', 'Pastelería-bombonería con obrador a la vista',
      180, 140000.0, 2200.0, 'CHS-38c'),
@@ -2399,7 +2399,7 @@ PLASTICO = {
     'fuente_kg_mes': 'supuesto',
     'que_grava': ('la fabricación, la importación y la adquisición intracomunitaria '
                   'de envases NO reutilizables que contengan plastico; NO la compra '
-                  'en Espana a un proveedor español, que ya lo lleva repercutido'),
+                  'en España a un proveedor español, que ya lo lleva repercutido'),
     'que_exime': ('el art. 75.f) exime la IMPORTACION o ADQUISICION INTRACOMUNITARIA '
                   'que no exceda de 5 kilogramos en un mes, y SOLO de los envases del '
                   'art. 68.1.a): NO exime la fabricación, NI los semielaborados, NI '
@@ -2613,11 +2613,11 @@ PAPELES_EUDR_TEXTO = {
                  'bean-to-bar-, te toca diligencia debida COMPLETA antes de introducir '
                  'en el mercado, declaración presentada previamente, asunción de '
                  'responsabilidad y registro de las declaraciones durante cinco años '
-                 '(`CHN-25`). A ESTE proveedor SI hay que pedirle el número de '
+                 '(CHN-25). A ESTE proveedor SI hay que pedirle el número de '
                  'referencia de su DDS.'),
     'operador posterior': ('Introduce en el mercado productos elaborados con otros '
                            'productos YA amparados por una declaración de diligencia '
-                           'debida (`CHN-23`, art. 2.15 ter). Es lo que normalmente '
+                           'debida (CHN-23, art. 2.15 ter). Es lo que normalmente '
                            'será una chocolatería que compra cobertura ya '
                            'comercializada en la UE. A este NO se le pide el número de '
                            'DDS por el art. 5.3.a).'),
@@ -2639,12 +2639,12 @@ NOTA_EUDR = (
 
 PROVEEDORES = [
     # (nombre, categoria, url, fuente, papel_eudr (vacio: lo rellena el lector), nota)
-    ('Callebaut / Barry Callebaut Iberica', 'Coberturas y chocolate profesional',
+    ('Callebaut / Barry Callebaut Ibérica', 'Coberturas y chocolate profesional',
      'https://www.callebaut.com/es-ES/', 'CHS-50', '',
-     'Mayor grupo del sector con presencia industrial en Espana. De aquí sale la '
+     'Mayor grupo del sector con presencia industrial en España. De aquí sale la '
      'referencia de precio del juego de datos (`CHS-28a`): Callebaut 811, bloque de '
      '5 kg a 125,08 euros CON IVA, o sea 25,02 euros/kg.'),
-    ('Asociación Chocolate Bean to Bar Espana', 'Grano de cacao para bean-to-bar',
+    ('Asociación Chocolate Bean to Bar España', 'Grano de cacao para bean-to-bar',
      'https://www.chocolatebeantobar.com/asociados/', 'CHS-51', '',
      'La vía fiable para el grano: su listado publico permite identificar a los '
      'makers y a los importadores. Se publica como «MAS DE 40 MIEMBROS», nunca con '
@@ -2660,7 +2660,7 @@ PROVEEDORES = [
      'Moldes Chocolate World, Pavoni y Martellato. De aquí sale el rango de '
      '24,20-42,83 euros/ud (`CHS-45a`) que el juego de datos publica COMO RANGO.'),
     ('SelfPackaging', 'Packaging: cajas y estuches para bombones',
-     'https://selfpackaging.es/90-cajas-para-bombones', 'CHS-54', '',
+     'https://selfpackaging.es/90-cajas-para-bombones (web no accesible el 12-09-2026, HTTP 403: pendiente de comprobar)', 'CHS-54', '',
      'Personalización con logo desde pocas unidades. Su web devolvió HTTP 403 al '
      'intentar leer precios, así que el packaging del CAPEX es SUPUESTO.'),
     ('Gift Campaign', 'Regalo corporativo B2B',
@@ -2696,7 +2696,7 @@ CLIENTES_B2B = [
      'Estuche corporativo personalizado de 24 bombones'),
     ('Tienda gourmet La Despensa', 'Minorista de distinta titularidad',
      'Minorista de distinta titularidad', 'Ciudad de ejemplo',
-     'Tabletas de origen y almendras banadas'),
+     'Tabletas de origen y almendras bañadas'),
 ]
 FUENTE_CLIENTES_B2B = 'supuesto'
 NOTA_CLIENTES_B2B = (
@@ -2842,7 +2842,7 @@ CAMPANAS = [
     {'mes': 9, 'nombre_mes': 'Septiembre', 'temporada': 'Media',
      'acciones_kit': ('Vuelta a la rutina · colección de otoño · ferias gastronomicas '
                       '· abrir la agenda de pedidos corporativos de Navidad'),
-     'productos_kit': 'Bombones de frutos secos, praline, especiados',
+     'productos_kit': 'Bombones de frutos secos, praliné, especiados',
      'campana': 'Apertura de agenda corporativa', 'campana_propia': False,
      'producto_estrella': 'CJ4', 'uds_dia_normal': 1, 'uds_dia_pico': 4,
      'pvp_campana': 34.00, 'dias_campana': 20,
@@ -2868,10 +2868,10 @@ CAMPANAS = [
               'cobrarse en diciembre. Ese desfase es lo que el libro 7 pone en la '
               'tesorería mes a mes.')},
     {'mes': 11, 'nombre_mes': 'Noviembre', 'temporada': 'Alta',
-     'acciones_kit': ('Todos los Santos (1): panellets y huesos de santo banados · '
+     'acciones_kit': ('Todos los Santos (1): panellets y huesos de santo bañados · '
                       'Black Friday (último viernes) · preventa de Navidad · turrones '
                       'y cestas'),
-     'productos_kit': ('Panellets y huesos de santo banados, turrones, cestas '
+     'productos_kit': ('Panellets y huesos de santo bañados, turrones, cestas '
                        'corporativas, figuras navidenas'),
      'campana': 'Todos los Santos y Black Friday', 'campana_propia': True,
      'producto_estrella': 'TF3', 'uds_dia_normal': 0, 'uds_dia_pico': 90,
@@ -3305,7 +3305,7 @@ CHECKLIST_LEGAL = [
      'encaja en la letra b), pero eso es INTERPRETACION DECLARADA (`CHN-44-int`), no '
      'nivel A: compruebalo en tu comunidad. La letra b) valenciana añade «confitería», '
      'NO «chocolate» (`CHN-44b`). PROHIBIDO «hacer bombones en casa para vender es '
-     'ilegal en Espana». Y el tope de 100 kg/semana del art. 13.9 solo se activa si '
+     'ilegal en España». Y el tope de 100 kg/semana del art. 13.9 solo se activa si '
      'esta casilla esta en «si»: son TRES requisitos, no uno -volumen PROPORCIONAL AL '
      'TAMAÑO DE LAS INSTALACIONES, tope de 100 kg/semana y demostrable documentalmente- '
      'y el que de verdad limita es el primero (`PA-29c`, reutilizado de Pastelería y '
@@ -3767,7 +3767,7 @@ IDS_LEGALES_REQUERIDOS = {
     'CHN-11': ('Sucedaneos de chocolate', 4),
     'CHN-12': ('Remisión de etiquetado obsoleta: NO remitir al RD 1334/1999', 4),
     'CHN-13': ('Denominaciones obligatorias y cajas surtidas (ap. 6.a y 6.c)', 4),
-    'CHN-15': ('RD 348/2011: grageas, confites y fruta banada', 4),
+    'CHN-15': ('RD 348/2011: grageas, confites y fruta bañada', 4),
     'CHN-15b': ('Reconocimiento mutuo del RD 348/2011', 4),
     'CHN-81': ('Armonización total de la Directiva 2000/36/CE', 4),
     'CHN-82': ('«Praline» ES denominación de venta europea', 4),
@@ -3779,7 +3779,7 @@ IDS_LEGALES_REQUERIDOS = {
     'CHN-30b': ('Frontera: la tarta de chocolate SI entra en la fila 9', 5),
     'CHN-31': ('Huevo crudo: las tres vías del art. 9', 5),
     'CHN-33': ('Alérgenos y limpieza de equipo', 5),
-    'CHN-34b': ('LOS OCHO ALÉRGENOS: cacahuete, frutos de cascara y sesamo son tres entradas', 5),
+    'CHN-34b': ('LOS OCHO ALÉRGENOS: cacahuete, frutos de cáscara y sésamo son tres entradas', 5),
     'CHN-35': ('Las doce menciones del art. 9.1: el lote NO esta entre ellas', 5),
     'CHN-36': ('Lote: RD 1808/1991, la letra L y sus tres exenciones', 5),
     'CHN-37': ('«Sin gluten»: umbral analítico de 20 mg/kg', 5),
@@ -3800,7 +3800,7 @@ IDS_LEGALES_REQUERIDOS = {
     'CHN-23': ('EUDR: la figura de «operador posterior» (art. 2.15 ter)', 8),
     'CHN-25': ('EUDR: que exige al operador que importa grano', 8),
     'CHN-27': ('EUDR: el régimen simplificado NO es para el importador pequeño', 8),
-    'CHN-28': ('EUDR: autoridad competente en Espana (nivel B, NO se entrecomilla)', 8),
+    'CHN-28': ('EUDR: autoridad competente en España (nivel B, NO se entrecomilla)', 8),
     'CHN-29': ('EUDR: regla de inventario', 8),
     'CHN-60': ('EUDR: exportar también esta sujeto', 8),
     'CHN-85': ('EUDR: la pyme no se registra ni verifica', 8),
@@ -3857,7 +3857,7 @@ IDS_LEGALES_REQUERIDOS = {
     'CHN-24': ('EUDR art. 5.3: el nº de DDS SOLO si el proveedor es operador, y la '
                'tabla de CLIENTES del 5.3.b)', 9),
     'CHN-26': ('EUDR: el número de referencia lo comunica el operador', 9),
-    'CHN-56': ('Vender online a toda Espana no rompe «localizado»', 9),
+    'CHN-56': ('Vender online a toda España no rompe «localizado»', 9),
     'CHN-57': ('Venta a distancia: información ANTES de pagar', 9),
     'CHN-59': ('Vender online te convierte en envasador', 9),
     'CHN-61': ('Envases de servicio: quien se inscribe', 9),
@@ -4508,9 +4508,9 @@ def comprobar():
         exige(referencias_con(clave),
               'El alérgeno «%s» no aparece en ninguna referencia: la matriz no enseña '
               'nada sobre el' % nombre_al)
-    exige(len(referencias_con('cacahuetes')) >= 1 and len(referencias_con('sesamo')) >= 1
-          and len(referencias_con('frutos_cascara')) >= 1,
-          'CHN-34b: cacahuete, sesamo y frutos de cascara son entradas INDEPENDIENTES '
+    exige(len(referencias_con('cacahuetes')) >= 1 and len(referencias_con('sésamo')) >= 1
+          and len(referencias_con('frutos_cáscara')) >= 1,
+          'CHN-34b: cacahuete, sésamo y frutos de cáscara son entradas INDEPENDIENTES '
           'y las tres tienen que estar representadas')
 
     # las cajas: su fila de alergenos es la UNION de lo que llevan dentro

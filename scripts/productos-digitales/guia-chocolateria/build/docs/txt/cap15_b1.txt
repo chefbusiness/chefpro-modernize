@@ -20,7 +20,7 @@ Conviene decir aquí una cosa sobre el número que vas a manejar en todo este ca
 
 ### Los cuatro caminos con su número: precio, gramaje, cobertura, margen
 
-Cuando la tarifa de cobertura sube, no hay un único camino: hay cuatro, y conviene tenerlos delante a la vez, porque casi nunca se toma uno solo. Subir el precio de venta. Bajar el gramaje de chocolate en la pieza. Cambiar de cobertura. O aceptar menos margen y esperar a que el ciclo se dé la vuelta.
+Cuando la tarifa de cobertura sube, no hay un único camino: hay cuatro, y hay que tenerlos delante a la vez, porque casi nunca se toma uno solo. Subir el precio de venta. Bajar el gramaje de chocolate en la pieza. Cambiar de cobertura. O aceptar menos margen y esperar a que el ciclo se dé la vuelta.
 
 Empecemos por el precio, que es el camino que más miedo da y el que menos hace falta forzar. En el escenario de trabajo de este pack, subir el precio de venta lo suficiente para absorber la subida de cobertura exige una subida media de PVP del 2,6 % repartida por todo el mix de la carta, según la hoja «Repercusión al PVP» de sensibilidad-al-precio-del-cacao.xlsx. Repartida así, entre bombones de colección, tabletas (barras), turrones y cajas, esa subida suele quedar muy por debajo de lo que el propio chocolatero teme antes de sentarse a calcularla.
 

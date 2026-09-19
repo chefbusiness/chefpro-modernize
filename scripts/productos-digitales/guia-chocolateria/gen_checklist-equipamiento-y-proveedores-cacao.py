@@ -218,7 +218,7 @@ COLS_EQ = [
     ('W', 'Aux' + N + '· ¿el plazo se pasa? (1 = sí)'),
     ('X', 'Aux' + N + '· real del bloque de templado'),
     ('Y', 'Cómo se publica el precio'), ('Z', 'Fuente del precio'),
-    ('AA', 'Nota'),
+    ('AA', 'Nota'), ('AB', 'Precio tal como se publica'),
 ]
 
 PUB_CERRADO = 'Precio cerrado'
@@ -241,7 +241,8 @@ PASOS = [
     '-no existe precio público verificado-: lo que hay es la lista de la compra '
     'y las cinco preguntas que hay que hacerle al fabricante, con casilla para '
     'apuntar quién te ha contestado.',
-    '3. Hoja «Proveedores y EUDR»: los seis proveedores con URL comprobada, y '
+    '3. Hoja «Proveedores y EUDR»: los seis proveedores publicados —cinco con '
+    'URL comprobada el 12-09-2026 y uno, SelfPackaging, pendiente—, y '
     'el árbol que decide qué papeles le tocan a cada uno. Pregúntale a cada '
     'proveedor si es operador, operador posterior o comerciante: el número de '
     'referencia de su declaración de diligencia debida SÓLO se le pide al '
@@ -269,7 +270,9 @@ NOTAS_LIBRO = [
     'traigas aquí el plazo crítico y te avisa si tu ruta crítica es más corta '
     'que él.',
     'NO SE PUBLICAN LOS PROVEEDORES SIN VERIFICAR. El research recogió muchos '
-    'más; aquí entran los seis con URL comprobada el 12 de septiembre de 2026. '
+    'más; aquí entran los seis publicados: cinco con URL comprobada el 12 de '
+    'septiembre de 2026 y uno (SelfPackaging) pendiente, con su web devolviendo '
+    'un HTTP 403 ese día. '
     'Un directorio con un enlace roto vale menos que uno corto.',
     'EL NÚMERO DE LA DDS NO SE LE PIDE A TODO EL MUNDO. El art. 5.3.a) del '
     'reglamento de deforestación obliga a guardar los datos de todos tus '
@@ -393,14 +396,35 @@ def _como_se_publica(eq):
     return PUB_CERRADO
 
 
+def _precio_publicable(eq, sin_iva):
+    """Lo que se PUBLICA en la tabla del cap. 08 (B7). El numero de I/L se
+    queda para los totales; aqui nunca sale un punto elegido dentro de un
+    rango. Formato de la casa: miles con punto, decimales con coma y espacio
+    fino antes del euro, igual que el formateador `eur` de documentos.py."""
+    def _n(x, dec):
+        return ('{:,.%df}' % dec).format(x).replace(',', '\x00') \
+            .replace('.', ',').replace('\x00', '.')
+
+    def _e(x, dec=None):
+        if dec is None:
+            dec = 0 if abs(x - round(x)) < 0.005 else 2
+        return _n(x, dec) + N + '€'
+    if eq['rango_min'] is not None:
+        return '%s - %s (RANGO, no es un precio)' % (
+            _n(eq['rango_min'], 2), _e(eq['rango_max'], 2))
+    if eq['es_desde']:
+        return 'desde %s (suelo, presupuestar)' % _e(sin_iva)
+    return _e(sin_iva)
+
+
 def hoja_equipamiento(wb):
     ws = wb.create_sheet(H_EQ)
     C.anchos(ws, {'A': 15, 'B': 5, 'C': 46, 'D': 13, 'E': 24, 'F': 12,
                   'G': 26, 'H': 11, 'I': 15, 'J': 13, 'K': 11, 'L': 16,
                   'M': 13, 'N': 13, 'O': 17, 'P': 13, 'Q': 26, 'R': 12,
                   'S': 14, 'T': 13, 'U': 13, 'V': 13, 'W': 13, 'X': 14,
-                  'Y': 28, 'Z': 22, 'AA': 78})
-    C.encabezar(ws, 'Equipamiento, línea a línea', col_fin='AA',
+                  'Y': 28, 'Z': 22, 'AA': 78, 'AB': 36})
+    C.encabezar(ws, 'Equipamiento, línea a línea', col_fin='AB',
                 nota_txt='Diecisiete líneas. Los precios con id `CHS-*` salen '
                          'de fichas de distribuidor leídas el 12-09-2026; el '
                          'resto son supuestos declarados. Cada uno con SU base '
@@ -510,6 +534,7 @@ def hoja_equipamiento(wb):
         motor.val(ws, 'Y%d' % r, _como_se_publica(eq), wrap=True)
         motor.val(ws, 'Z%d' % r, eq['fuente'])
         motor.val(ws, 'AA%d' % r, eq['nota'] or '', wrap=True)
+        motor.val(ws, 'AB%d' % r, _precio_publicable(eq, sin_iva), wrap=True)
         ws.row_dimensions[r].height = 40
         if eq['fuente'].startswith('CHS-'):
             X.nota_fuente(ws, 'I%d' % r, eq['fuente'].split(' ')[0])
@@ -687,7 +712,7 @@ def hoja_equipamiento(wb):
               'alternativa barata a la continua, no un complemento) y la '
               'chocolatera de la variante de taza. No hay un nivel intermedio '
               'a propósito: en una apertura, «recomendado» siempre acaba '
-              'comprándose.', col_fin='AA', alto=44)
+              'comprándose.', col_fin='AB', alto=44)
     C.parrafo(ws, EQ_NOTA + 1,
               'SEIS LÍNEAS TRAEN LA BASE FISCAL «NO DECLARADA»: el '
               'distribuidor no dice si su precio lleva IVA. Se tratan como '
@@ -695,13 +720,13 @@ def hoja_equipamiento(wb):
               'indicio «Neto» en la línea de embalaje, que es un indicio, no '
               'una declaración. Pregúntalo por escrito antes de firmar: es un '
               '21' + N + '% de la partida más cara del obrador.',
-              col_fin='AA', alto=44)
+              col_fin='AB', alto=44)
     C.parrafo(ws, EQ_NOTA + 2,
               'Los precios verificados llevan su id de fuente en la columna Z '
               'y su ficha completa en el comentario de la celda del precio. '
               'Están fechados el 12-09-2026 y pueden caducar: un catálogo de '
               'maquinaria se revisa un par de veces al año.',
-              col_fin='AA', alto=32)
+              col_fin='AB', alto=32)
 
     # --- validación y semáforos -------------------------------------------
     C.dv_rango(ws, v_estado, '$A${a}:$A${b}'.format(a=LI_INI, b=LI_FIN),
@@ -1018,7 +1043,8 @@ def hoja_proveedores(wb):
                   'G': 20, 'H': 15, 'I': 24, 'J': 14, 'K': 14, 'L': 15,
                   'M': 12, 'N': 54, 'O': 46, 'P': 78})
     C.encabezar(ws, 'Proveedores: operador, operador posterior o comerciante',
-                'Los seis con URL comprobada el 12-09-2026. La columna que '
+                'Cinco con URL comprobada el 12-09-2026 y uno '
+                '(SelfPackaging) pendiente: HTTP 403 ese día. La columna que '
                 'decide es la G: el número de referencia de la declaración de '
                 'diligencia debida SÓLO se le pide a un operador. Pedírselo a '
                 'un comerciante es pedirle algo que no tiene.', col_fin='P')
@@ -1046,7 +1072,7 @@ def hoja_proveedores(wb):
     ref_papel = refs['Papel en la cadena']
     C_OPERADOR = '$A$%d' % PR_LIST_INI
 
-    C.seccion(ws, 'A%d' % PR_SEC, 'Los seis proveedores verificados')
+    C.seccion(ws, 'A%d' % PR_SEC, 'Los seis proveedores publicados')
     C.cabecera(ws, PR_CAB, [
         ('A', 'Nº'), ('B', 'Proveedor'), ('C', 'Qué te vende'), ('D', 'URL'),
         ('E', 'Id'), ('F', '¿Trabajas con él?'),
@@ -1150,7 +1176,8 @@ def hoja_proveedores(wb):
     C.seccion(ws, 'A%d' % PR_RES_SEC, 'Resumen de la cartera de proveedores')
     res(PR_TOT, 'Proveedores publicados en esta hoja',
         '=COUNTIF($B${a}:$B${b},"<>")'.format(a=PR_INI, b=PR_FIN), C.FMT_ENT,
-        'Seis verificados con URL el 12-09-2026. Los que el research recogió '
+        'Cinco con URL comprobada el 12-09-2026 y uno (SelfPackaging) '
+        'pendiente, marcado en su fila. Los que el research recogió '
         'sin verificar no entran.')
     res(PR_TRAB, 'Proveedores con los que ya trabajas',
         '=COUNTIF($F${a}:$F${b},"{s}")'.format(a=PR_INI, b=PR_FIN, s=SI),
@@ -1414,7 +1441,8 @@ def hoja_clientes(wb):
         .format(a=CL_INI, b=CL_FIN, lb=LIBRE, s=SI), C.FMT_ENT,
         'BASTA UNO para romper el requisito de «restringido» del art. 3, y los '
         'tres requisitos son acumulativos. Es la casilla más cara de esta '
-        'hoja.')
+        'hoja. Los «No lo sé» NO se cuentan aquí: mientras queden, este 0 no '
+        'significa que ninguno esté inscrito.')
     res(CL_HASTA, 'Fecha hasta la que hay que conservar el registro',
         ie('MAX($I${a}:$I${b})'.format(a=CL_INI, b=CL_FIN)), C.FMT_FECHA,
         'La del suministro más reciente más los años del parámetro. Hasta esa '

@@ -26,7 +26,7 @@
 //    anuncian. Por eso `footerLinks` sólo cruza a kit-tareas-chocolateria,
 //    kit-escandallos, pack-appcc y la Guía Food Cost, más las tres páginas de rol
 //    /usos/ del nicho (enlace bidireccional).
-//  · PÁGINAS = TOKENS. `__PAGINAS__` (guía), `__PAGINAS_BONUS__` (bonus 2) y
+//  · PÁGINAS = TOKENS. `111` (guía), `34` (bonus 2) y
 //    (el business plan NO publica páginas: es DOCX y no se mide, precedente Pastelería) se sustituyen por las páginas MEDIDAS con PyMuPDF
 //    cuando estén construidos los documentos. NO publicar con el token puesto; lo
 //    verifica paginas-gate.py --only guia-chocolateria-obrador (exit 1 si queda alguno).
@@ -77,12 +77,12 @@ const data: GuiaData = {
     subtitleLine: 'Obrador, denominaciones legales y números: el dossier completo de apertura de una bombonería con obrador',
     description: 'No te enseña a templar. Te dice qué decidir y en qué orden: si ese local sirve, cuánto necesitas de verdad, cómo puedes llamar legalmente a lo que vendes, cuánto tienes que cobrar cuando sube el cacao y de qué vives en agosto. Cubre a fondo la chocolatería artesanal con obrador —bombones, tabletas y cajas—; si lo que quieres es una chocolatería de taza y churros, aquí tienes el capítulo que te dice qué cambia, pero ése es otro negocio. El marco legal explicado es el español. Esto no es un recetario ni un curso de técnica del chocolate, y no sustituye al proyecto técnico visado.',
     checkItems: [
-      'Guía completa PDF + DOCX editable: 20 capítulos y un anexo normativo con fecha de corte (__PAGINAS__ páginas)',
+      'Guía completa PDF + DOCX editable: 20 capítulos y un anexo normativo con fecha de corte (111 páginas)',
       '9 herramientas Excel con fórmulas vivas: capacidad de obrador y clima, coste de apertura, sensibilidad al precio del cacao, carta y escandallo con merma de templado, vida útil de los rellenos, campañas y valle del año, plan financiero a 3 años, licencias, y equipamiento y proveedores de cobertura y cacao',
       'El Kit de Tareas te dice qué hacer cada día cuando ya has abierto. Esta guía es todo lo que hay que decidir antes',
       'El marco legal explicado es el español, con su norma, su artículo y el día en que se comprobó. Todas las casillas de los Excel son editables',
       'Bonus 1: el business plan modelo, relleno con el caso completo, en DOCX editable',
-      'Bonus 2: 12 decisiones de apertura resueltas (__PAGINAS_BONUS__ páginas)',
+      'Bonus 2: 12 decisiones de apertura resueltas (34 páginas)',
     ],
     ctaLabel: 'COMPRAR GUÍA — 65 EUR',
     avatarAltPrefix: 'Professional',
@@ -255,7 +255,7 @@ const data: GuiaData = {
         label: 'BONUS 2',
         title: '12 Decisiones de Apertura Resueltas',
         value: 'Incluido en el pack',
-        desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: bombonería o bean-to-bar, comprar la atemperadora continua o empezar con la de sobremesa, abrir con quince referencias o con veintiocho, vender la caja o la unidad, parar el obrador en agosto o no, o empezar en casa dentro de la legalidad. En PDF y en DOCX editable (__PAGINAS_BONUS__ páginas).',
+        desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: bombonería o bean-to-bar, comprar la atemperadora continua o empezar con la de sobremesa, abrir con quince referencias o con veintiocho, vender la caja o la unidad, parar el obrador en agosto o no, o empezar en casa dentro de la legalidad. En PDF y en DOCX editable (34 páginas).',
         image: '/lovable-uploads/ai-gallery/guia-chocolateria-4.jpg',
       },
     ],
@@ -295,13 +295,13 @@ const data: GuiaData = {
     heading: 'Decide Antes de Firmar, No Después',
     subtitle: 'El orden de las decisiones, las herramientas que hacen tus números y los documentos que te piden. Todo lo que hay que resolver antes de abrir una bombonería con obrador.',
     items: [
-      'Guía completa PDF + DOCX: 20 capítulos y anexo normativo con fecha de corte (__PAGINAS__ páginas)',
+      'Guía completa PDF + DOCX: 20 capítulos y anexo normativo con fecha de corte (111 páginas)',
       '9 herramientas Excel con fórmulas vivas y todas las casillas editables',
       'Capacidad y clima del obrador: si ese local sirve, qué aire necesita y cuántos bombones al día aguanta',
       'Coste de apertura por escenarios, con traspaso frente a obra nueva a cinco años',
       'Denominaciones legales del cacao y escandallo por molde con la merma de templado dentro',
       'Sensibilidad al precio del cacao, campañas y valle del año, y plan financiero a 3 años',
-      'Bonus: business plan modelo relleno y 12 decisiones de apertura resueltas (__PAGINAS_BONUS__ páginas)',
+      'Bonus: business plan modelo relleno y 12 decisiones de apertura resueltas (34 páginas)',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },

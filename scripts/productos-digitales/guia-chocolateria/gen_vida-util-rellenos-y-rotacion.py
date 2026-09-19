@@ -469,7 +469,7 @@ def hoja_parametros(wb):
             'constar en tu plan de APPCC con el argumento que lo sostiene.')
     X.nota_celda(ws, c.coordinate, 'CHN-30')
     c = par(ws, 12, 'Temperatura a la que salta la alarma de la vitrina',
-            D.VITRINA_UMBRAL_ALARMA_C, C.FMT_DEC1, 'grados C',
+            D.VITRINA_UMBRAL_ALARMA_C, C.FMT_DEC1, '°C',
             'kit 01-apertura-cierre.xlsx',
             'Es el punto en el que la manteca de cacao empieza a fundir, y el '
             'que publica el kit en su hoja de apertura. El semáforo de la '
@@ -903,9 +903,9 @@ def hoja_temperatura(wb):
                              ('F', 'Qué dice el libro')), altura=24)
     for fila, etiqueta, valor, fmt, unidad in (
         (VIT_TMIN, 'Temperatura mínima de trabajo de tu vitrina',
-         VITRINA_TMIN, C.FMT_DEC1, 'grados C'),
+         VITRINA_TMIN, C.FMT_DEC1, '°C'),
         (VIT_TMAX, 'Temperatura máxima de trabajo de tu vitrina',
-         VITRINA_TMAX, C.FMT_DEC1, 'grados C'),
+         VITRINA_TMAX, C.FMT_DEC1, '°C'),
         (VIT_HR, 'Humedad de trabajo de tu vitrina', VITRINA_HR, C.FMT_DEC1,
          '% de HR'),
     ):
@@ -917,7 +917,7 @@ def hoja_temperatura(wb):
               wrap=True)
     ws.merge_cells('A%d:C%d' % (VIT_UMB, VIT_UMB))
     motor.f(ws, 'D%d' % VIT_UMB, '=%s' % A(P_TALARMA), fmt=C.FMT_DEC1)
-    motor.val(ws, 'E%d' % VIT_UMB, 'grados C')
+    motor.val(ws, 'E%d' % VIT_UMB, '°C')
 
     motor.f(ws, 'F%d' % VIT_TMIN,
             '=IF(AND(ISNUMBER($D%d),ISNUMBER($D%d)),IF($D%d>$D%d,"Revisa: el '

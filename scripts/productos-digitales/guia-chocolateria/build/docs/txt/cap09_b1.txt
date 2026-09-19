@@ -1,6 +1,6 @@
 ### Una chocolatería minorista no va al registro general, y tener obrador no te saca de minorista
 
-El segundo error que más dinero cuesta en este nicho es creer que un obrador (taller o laboratorio) propio te empuja automáticamente al Registro General Sanitario de Empresas Alimentarias y Alimentos (RGSEAA). No es así, y conviene decirlo con la norma delante: quien vende al consumidor final en su propio establecimiento queda EXCLUIDO de ese registro por el art. 2.2 del RD 191/2011, en la redacción que le dio el RD 1021/2022 (comprobado el 12 de septiembre de 2026). Una bombonería con mostrador a la calle es, a efectos sanitarios, comercio al por menor, y el comercio al por menor no se inscribe ahí.
+El segundo error que más dinero cuesta en este nicho es creer que un obrador (taller o laboratorio) propio te empuja automáticamente al Registro General Sanitario de Empresas Alimentarias y Alimentos (RGSEAA). No es así, y hay que decirlo con la norma delante: quien vende al consumidor final en su propio establecimiento queda EXCLUIDO de ese registro por el art. 2.2 del RD 191/2011, en la redacción que le dio el RD 1021/2022 (comprobado el 12 de septiembre de 2026). Una bombonería con mostrador a la calle es, a efectos sanitarios, comercio al por menor, y el comercio al por menor no se inscribe ahí.
 
 En su lugar hay un trámite distinto y mucho más ligero: una comunicación o declaración responsable al registro sanitario de tu comunidad autónoma. Y aquí va lo que casi ningún texto dice, porque es justo lo que evita el disgusto: ese trámite NO te habilita para abrir. No esperas una respuesta de la administración para levantar la persiana el día que tenías previsto, y tampoco te protege si el resto de tu expediente —obra, aforo, formación, tu propio sistema de autocontrol— no está en regla. Es una comunicación, no un permiso, y confundir las dos cosas es lo que más disgustos da el día de la inspección.
 
@@ -20,7 +20,7 @@ Si sí suministras —a la cafetería de la esquina, a un hotel, a una tienda de
 
 Y «restringido» es la condición que de verdad mata a una chocolatería que crece, porque basta con que UNO SOLO de tus clientes esté inscrito en el RGSEAA para que la pierdas entera. El regalo corporativo es justo la línea que la rompe: una empresa que te encarga cajas para repartir entre las suyas casi siempre está inscrita en ese registro, y ese único cliente te saca de «restringido» por pequeño que sea el pedido en cajas.
 
-En el caso modelado de este pack, con las tres condiciones cumplidas, la hoja «Suministro a Otros Minoristas» de checklist-legal-licencias-y-cacao.xlsx da un veredicto limpio: cumples las tres, sigues fuera del RGSEAA, con la declaración responsable y el registro del art. 3.5.
+En el caso modelado de este pack, con las tres condiciones cumplidas, la hoja «Suministro a Otros Minoristas» de checklist-legal-licencias-y-cacao.xlsx da un veredicto limpio: cumples las tres, sigues fuera del RGSEAA, con la declaración responsable y el registro del art. 3.5. Con un matiz que la propia hoja advierte en su nota: a los destinatarios que están en «No lo sé» los cuenta como no inscritos, así que ese «sí» vale mientras no te contesten lo contrario, y una sola respuesta afirmativa lo tumba.
 
 ### Central y sucursales
 

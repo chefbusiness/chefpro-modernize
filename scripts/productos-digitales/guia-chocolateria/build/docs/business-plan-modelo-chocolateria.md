@@ -134,13 +134,13 @@ El chocolate a la taza revaloriza el ticket: en churrería, una ración de cuatr
 
 El precio medio ponderado de la carta, con impuesto incluido, es de 7,68 € (hoja «Mix y Ticket Medio» de carta-de-apertura-y-escandallo-chocolate.xlsx): sale del mix real de ventas, no de una media del sector. El ticket medio de mostrador sale de la misma hoja y del mismo principio, así que tampoco aquí hay media de sector que valga como referencia.
 
-El food cost de escandallo (costeo) de la carta es del 25,2 %: lo que cuesta la materia prima de la receta. El servido —el que va al plan financiero— es del 28,2 %; la diferencia son los puntos que se van en packaging y en la merma de obrador y de vitrina, un coste (costo) real que la receta no refleja. El margen bruto medio del año es del 74,8 %, y se coteja contra la única regla de margen del proyecto —la misma que ya aplica el food cost, dicha de otra manera—, nunca contra una media del sector.
+El food cost de escandallo (costeo) de la carta es del 25,2 %: lo que cuesta la materia prima de la receta. El servido —el que va al plan financiero— es del 28,2 %; la diferencia son los puntos que se van en packaging y en la merma de obrador y de vitrina, un coste (costo) real que la receta no refleja. El margen bruto medio del año es del 74,8 %, que es el complemento del food cost de ESCANDALLO (100 − 25,2) y no el del servido: sobre el servido, y por tanto en la cuenta de resultados de este mismo plan, el margen bruto es del 71,8 %. Se coteja contra la única regla de margen del proyecto —la misma que ya aplica el food cost, dicha de otra manera—, nunca contra una media del sector.
 
 ### La decisión de surtido
 
 De las referencias evaluadas en la hoja «Decisión de Surtido» de carta-de-apertura-y-escandallo-chocolate.xlsx, 25 quedan con veredicto de mantener y solo 1 con veredicto de retirar; el resto cae en un tercer veredicto, revisar precio, el que de verdad trabaja la carta. El veredicto sale de cruzar dos umbrales —margen mínimo por pieza y rotación mínima de venta— y solo se mantiene lo que pasa los dos a la vez. El cuadro siguiente recoge esa decisión sobre los diez bombones de colección.
 
-El margen de toda la carta en un año es de 100.615 € (hoja «Decisión de Surtido» de carta-de-apertura-y-escandallo-chocolate.xlsx): la cifra que un banco lee para entender de dónde sale el margen bruto de la cuenta de resultados, no del volumen vendido sino del mix de familias que sostiene el precio medio ponderado. La familia de bombones de colección, la que sostiene el margen, es la que más aporta a esa cifra; tabletas y cajas de regalo la completan, y la bombonería de diario mueve el mostrador sin sostener el año.
+El margen de toda la carta en un año es de 100.615 € (hoja «Decisión de Surtido» de carta-de-apertura-y-escandallo-chocolate.xlsx): la cifra que un banco lee para entender de dónde sale el margen bruto de la cuenta de resultados, no del volumen vendido sino del mix de familias que sostiene el precio medio ponderado. Las cajas y regalo son la familia que más aporta a esa cifra, y las tabletas la siguen; los bombones de colección, que son los que sostienen el margen por pieza y la imagen de la casa, quedan por detrás en aportación total, y los turrones, figuras y temporada concentran campaña sin sostener el año.
 
 El mercado ya resuelve la escalera de precio por formato de las cajas de regalo: una caja de 12 bombones cuesta 20,00 € (1,67 €/ud), la de 20 cuesta 28,00 € (1,40 €/ud) y la de 35 cuesta 45,00 € (1,29 €/ud); el precio por bombón baja un 23 % de la caja pequeña a la grande (fuente: Confitería Gascón, 2026).
 
@@ -148,7 +148,7 @@ El mercado ya resuelve la escalera de precio por formato de las cajas de regalo:
 
 El 86,5 % del coste de materia prima de la carta es cobertura (hoja «Coste de Cobertura» de sensibilidad-al-precio-del-cacao.xlsx): esa es la exposición real del proyecto al precio del cacao, no una cotización de bolsa. El cuadro siguiente muestra las cuatro coberturas ya convertidas a base imponible, para que el escandallo se calcule siempre en el mismo terreno. Callebaut 811, al 54,5 % de cacao, se publica con el impuesto incluido, a 25,02 €/kg en un bloque de 5 kg (fuente: Planeta Torta, 2026); usarla tal cual sube el coste de materia casi un diez por ciento.
 
-La cobertura Valrhona en pepitas, sin base de impuesto declarada por su fuente, sale a 37,48 €/kg (fuente: Club del Chocolate, 2026): un factor de aproximadamente 1,5 frente a Callebaut 811, decisión de gama y no una constante del mercado.
+La cobertura Valrhona en pepitas, sin base de impuesto declarada por su fuente, sale a 37,48 €/kg (fuente: Club del Chocolate, 2026): aquí no se publica un factor frente a Callebaut 811, porque las dos bases no son comparables —saldría 1,65 comparando las dos bases imponibles y 1,50 si se mezcla la base con IVA de la marca con la base sin declarar del origen—: la diferencia es una decisión de gama, no una constante del mercado.
 
 Gestionar ese riesgo no es dramatizar con la cotización del cacao en prensa: la calculadora de sensibilidad trabaja con escenarios de precio ya calculados sobre la cobertura que realmente compras, y ofrece cuatro caminos de respuesta según cuánto suba el coste de materia. La misma hoja identifica una referencia como la primera que se rompe si el precio sigue subiendo, la que menos margen deja por pieza, y por tanto la primera candidata a subir de precio o a salir del surtido.
 
@@ -158,13 +158,13 @@ Gestionar ese riesgo no es dramatizar con la cotización del cacao en prensa: la
 |---|---|---|---|---|---|
 | BC1 | Bombón de ganache de chocolate negro 70 % | 1,25 € | 68,9 % | 2.142 € | Mantener |
 | BC2 | Bombón de ganache de leche y vainilla | 1,23 € | 69,6 % | 1.760 € | Mantener |
-| BC3 | Bombón de praline de avellana | 1,39 € | 72,6 % | 2.371 € | Mantener |
+| BC3 | Bombón de praliné de avellana | 1,39 € | 72,6 % | 2.371 € | Mantener |
 | BC4 | Bombón de gianduja de avellana | 1,34 € | 70,2 % | 1.528 € | Mantener |
 | BC5 | Trufa de chocolate negro al cacao | 1,26 € | 72,9 % | 1.795 € | Mantener |
 | BC6 | Bombón de licor de ron | 1,43 € | 68,2 % | 1.220 € | Mantener |
 | BC7 | Bombón de caramelo salado | 1,35 € | 74,2 % | 1.540 € | Mantener |
-| BC8 | Bombón de praline de cacahuete | 1,23 € | 69,3 % | 1.051 € | Mantener |
-| BC9 | Bombón crujiente de sesamo y barquillo | 1,30 € | 69,9 % | 1.114 € | Mantener |
+| BC8 | Bombón de praliné de cacahuete | 1,23 € | 69,3 % | 1.051 € | Mantener |
+| BC9 | Bombón crujiente de sésamo y barquillo | 1,30 € | 69,9 % | 1.114 € | Mantener |
 | BC10 | Bombón de naranja confitada y chocolate negro | 1,24 € | 66,6 % | 1.062 € | Mantener |
 
 *El veredicto sale de dos umbrales que fija el proyecto: margen mínimo por pieza y rotación mínima sobre el mix.*
@@ -203,7 +203,7 @@ El equipo previsto equivale a 2,5 jornadas completas: un Encargado a jornada com
 
 **Las seis zonas del local (capacidad-obrador-y-clima.xlsx, hoja «Zonas y m2»)**
 
-| Zona | Bloque | m2 | % del local | Paso del recorrido |
+| Zona | Bloque | m² | % del local | Paso del recorrido |
 |---|---|---|---|---|
 | Obrador de templado y moldeado | Producción | 26,0 | 34,7 % | 2 |
 | Cámara de chocolate | Producción | 6,0 | 8,0 % | 3 |
@@ -230,7 +230,7 @@ El equipo previsto equivale a 2,5 jornadas completas: un Encargado a jornada com
 | Vitrina refrigerada específica para chocolate — Docriluc WB-6-6-R | Tienda y vitrina | Sí | 1.135 |
 | Atemperadora de arranque, 4,5 L (unos 3 kg) — Pavoni MINITEMPER | Templado | No | 4.914 |
 
-*El cuello de botella de una bombonería casi nunca es la máquina de templar: son las manos y el puesto de envasado.*
+*El cuello de botella de una bombonería casi nunca es la máquina de templar: son las manos y el puesto de envasado. Las dos atemperadoras no se comparan entre sí: sus ciclos son el ritmo del obrador, no el rendimiento de la ficha.*
 
 
 ---
@@ -320,7 +320,7 @@ El valle de agosto es el segundo riesgo cuantificado y el más previsible de los
 
 ### El riesgo regulatorio y el de ejecución
 
-El riesgo regulatorio tiene nombre y no hace falta dramatizarlo: el Reglamento (UE) 2023/1115 del Parlamento Europeo y del Consejo (EUDR) se ha modificado tres veces en doce meses —dos reglamentos de desarrollo y una rectificación publicada en el Diario Oficial el 22 de diciembre de 2025—, así que la pregunta no es si va a volver a moverse, sino cuándo. El art. 38.3 aplaza la exigencia sólo para los operadores que sean persona física, microempresa o pequeña empresa y estuvieran establecidos como tales a 31 de diciembre de 2024, y el art. 2.15 excluye de esa palabra a los operadores posteriores; el capítulo de normativa del pack lo desarrolla con más detalle. La lectura que hace el proyecto es una inferencia declarada, no una cita literal: si tu cobertura llega ya comercializada en la Unión Europea y amparada por una declaración de diligencia debida, eres operador posterior y el aplazamiento no te alcanza: tu fecha es el 30 de diciembre de 2026. Si tu cobertura no está amparada, la calificación deja de ser automática y hay que revisarla. La fecha de revisión que lleva dentro el proyecto es la de esta misma edición: comprobado el 12 de septiembre de 2026, el día en que hay que volver a mirar la norma. El riesgo de ejecución es el más probable de los cuatro, y compara el plazo de entrega de la maquinaria crítica con la ruta crítica del expediente de apertura. El proyecto cuadra ambos plazos en la hoja «Cronograma y Ruta Crítica» de checklist-legal-licencias-y-cacao.xlsx y publica el margen entre ellos: 6,2 meses. Ese margen es el colchón real del proyecto, no una promesa: si se reduce, lo que se mueve es la fecha de apertura, no la inversión.
+El riesgo regulatorio tiene nombre y no hace falta dramatizarlo: el Reglamento (UE) 2023/1115 del Parlamento Europeo y del Consejo (EUDR) acumula dos modificaciones (Reglamentos (UE) 2024/3234 y 2025/2650) y una corrección de errores publicada en el Diario Oficial el 22 de diciembre de 2025, así que la pregunta no es si va a volver a moverse, sino cuándo. El art. 38.3 aplaza la exigencia sólo para los operadores que sean persona física, microempresa o pequeña empresa y estuvieran establecidos como tales a 31 de diciembre de 2024, y el art. 2.15 excluye de esa palabra a los operadores posteriores; el capítulo de normativa del pack lo desarrolla con más detalle. La lectura que hace el proyecto es una inferencia declarada, no una cita literal: su papel en la cadena —operador o operador posterior— y la fecha que le toca están resueltos en el capítulo 11 de la guía, con la condición que los cambia. La fecha de revisión que lleva dentro el proyecto es la de esta misma edición: comprobado el 12 de septiembre de 2026, el día en que hay que volver a mirar la norma. El riesgo de ejecución es el más probable de los cuatro, y compara el plazo de entrega de la maquinaria crítica con la ruta crítica del expediente de apertura. El proyecto cuadra ambos plazos en la hoja «Cronograma y Ruta Crítica» de checklist-legal-licencias-y-cacao.xlsx y publica el margen entre ellos: 6,2 meses. Ese margen es el colchón real del proyecto, no una promesa: si se reduce, lo que se mueve es la fecha de apertura, no la inversión.
 
 **Los cinco escenarios de precio de la cobertura (sensibilidad-al-precio-del-cacao.xlsx, hoja «Escenarios de Precio»)**
 
@@ -354,4 +354,4 @@ John Guerrero es CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina 
 
 **Versión 1.0 · septiembre de 2026 · aichef.pro/guia-chocolateria-obrador · info@aichef.pro**
 
-*Esta guía es un documento de trabajo profesional, no un dictamen jurídico, sanitario, fiscal ni laboral, y no sustituye al proyecto técnico visado que te va a pedir tu ayuntamiento. El marco normativo que se explica es el ESPAÑOL, y su estado se verificó contra las fuentes oficiales —Boletín Oficial del Estado, Diario Oficial de la Unión Europea, Diari Oficial de la Generalitat de Catalunya, el registro de convenios colectivos del Ministerio de Trabajo y la guía informativa del registro sanitario— el 12 de septiembre de 2026: cada afirmación legal lleva su norma y su artículo para que puedas comprobarla y para que sepas dónde mirar cuando cambie. La norma del cacao que llega de la Unión Europea se ha modificado tres veces en doce meses, así que el anexo trae la fecha en la que toca volver a mirarla. Lo que depende de tu ayuntamiento —la licencia de obra, el planeamiento urbanístico, las tasas— cambia en cada uno de los municipios de España y aquí se trata como una pregunta que tienes que hacer, nunca como un dato. Las superficies, importes, precios, gramajes, márgenes y plazos del caso que recorre el documento son valores de ejemplo de una bombonería modelada que acompaña a este pack, y viven en celdas editables de las hojas de cálculo precisamente para que los sustituyas por los tuyos: ninguno es una previsión de tus resultados, ni un estándar del sector, ni una promesa de rentabilidad. Antes de firmar un alquiler, presentar un trámite, fijar el precio de una referencia, aceptar un pedido de empresa o contratar a alguien, contrasta con tu ayuntamiento, con tu asesoría y con la autoridad sanitaria de tu comunidad.*
+*Esta guía es un documento de trabajo profesional, no un dictamen jurídico, sanitario, fiscal ni laboral, y no sustituye al proyecto técnico visado que te va a pedir tu ayuntamiento. El marco normativo que se explica es el ESPAÑOL, y su estado se verificó contra las fuentes oficiales —Boletín Oficial del Estado, Diario Oficial de la Unión Europea, Diari Oficial de la Generalitat de Catalunya, el registro de convenios colectivos del Ministerio de Trabajo y la guía informativa del registro sanitario— el 12 de septiembre de 2026: cada afirmación legal lleva su norma y su artículo para que puedas comprobarla y para que sepas dónde mirar cuando cambie. La norma del cacao que llega de la Unión Europea acumula dos modificaciones y una corrección de errores en doce meses, así que el anexo trae la fecha en la que toca volver a mirarla. Lo que depende de tu ayuntamiento —la licencia de obra, el planeamiento urbanístico, las tasas— cambia en cada uno de los municipios de España y aquí se trata como una pregunta que tienes que hacer, nunca como un dato. Las superficies, importes, precios, gramajes, márgenes y plazos del caso que recorre el documento son valores de ejemplo de una bombonería modelada que acompaña a este pack, y viven en celdas editables de las hojas de cálculo precisamente para que los sustituyas por los tuyos: ninguno es una previsión de tus resultados, ni un estándar del sector, ni una promesa de rentabilidad. Antes de firmar un alquiler, presentar un trámite, fijar el precio de una referencia, aceptar un pedido de empresa o contratar a alguien, contrasta con tu ayuntamiento, con tu asesoría y con la autoridad sanitaria de tu comunidad.*
