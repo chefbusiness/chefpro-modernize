@@ -7,6 +7,7 @@ import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
 import { appUrl } from '../lib/app-url';
 import { integracionesHref } from '../data/integraciones';
+import { PRICING_PATHS } from '../lib/pricing-path';
 import { FLAG_SVG } from '../../../src/lib/lang-flags';
 
 interface Props { lang?: Locale }
@@ -63,11 +64,9 @@ const homeHref = lang === 'es' ? '/' : `/${lang}`;
 const sectionHref = (id: string) => `${homeHref}#${id}`;
 const mentoriaHref = lang === 'es' ? '/mentoria-online' : `/${lang}/mentoria-online`;
 // F8 2026-07-19: página de precios dedicada por idioma (antes ancla /#pricing).
-const PRICING_PATHS: Record<string, string> = {
-  es: '/precios', en: '/en/pricing', fr: '/fr/tarifs', de: '/de/preise',
-  it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen',
-};
-const pricingHref = PRICING_PATHS[lang] ?? '/precios';
+// El mapa vivía aquí; desde el CRO de Keak (20-sep-2026) lo comparten el hero y
+// la sección de Herramientas Business, así que está en ../lib/pricing-path.ts.
+const pricingHref = PRICING_PATHS[lang] ?? PRICING_PATHS.es;
 
 // Landing de integraciones (2026-09-05): los agentes ya se conectan con las
 // cuentas del usuario. Va en el nivel superior del nav, no escondida en un

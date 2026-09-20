@@ -2,16 +2,31 @@
 // Hero.astro — port de ModernHero.tsx + HeroSocialProof.tsx + CounterStat.tsx.
 // La rotación de palabra y el count-up son mejoras progresivas (script vanilla);
 // el estado estático ya muestra el valor final correcto sin JS.
+//
+// 2026-09-20 — CRO Keak, cambio 1 («hero reframed for head chefs»).
+// Ver CRO_HOME_KEAK_2026-09-20.md §1. Resumen de lo que cambia frente al hero
+// anterior: copy nuevo con prefijo v2_ (las claves viejas SIGUEN en los JSON
+// porque las usan SocialProofStrip, el JSON-LD y varias landings), marca «AI
+// Chef Pro» en negro plano (sin gradient-text), caja de cifras con número y
+// etiqueta EN LÍNEA y en orden agentes → herramientas → recetarios → roles,
+// CTA doble (enlace de texto a la página de precios del idioma + botón dorado a
+// la plataforma, dorado PRIMERO en móvil) y microcopy de precio. Desaparece el
+// botón «SEE RESOURCES» al blog.
 import { t, tList } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { blogHubHref } from '../lib/blog';
 import SocialCountLive from './SocialCountLive.astro';
 import { appUrl } from '../lib/app-url';
+import { pricingHref } from '../lib/pricing-path';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const businessTypes = tList(lang, 'hero.business_types');
+// Lista v2 (11 tipos: sin «Gestión/Management», que no encaja en «en tu …» y
+// empezando por «Restaurante», que es lo que lee Google en el SSR). Mientras
+// un idioma no tenga traducida la lista v2, tList() devuelve [] y caemos a la
+// lista de siempre para no dejar el H1 sin palabra rotatoria.
+const v2BusinessTypes = tList(lang, 'hero.v2_business_types');
+const businessTypes = v2BusinessTypes.length > 0 ? v2BusinessTypes : tList(lang, 'hero.business_types');
 const firstWord = businessTypes[0] ?? '';
 
 // getDynamicCount() de HeroSocialProof.tsx — computado server-side (determinista por fecha de build)
@@ -37,15 +52,16 @@ const avatars = [1, 2, 3, 4, 5, 6, 7, 8];
 // sirven 89/80); it/fr/de/pt/nl anuncian 50+ porque sus plataformas sirven
 // 53-54 — subirlo cuando John complete esos catálogos (CATALOGO_ITALIANO_PENDIENTE.md).
 const nAgentes = ['es', 'en'].includes(lang) ? 75 : 50;
+// Orden Keak: agentes · herramientas · recetarios · roles.
 const stats = [
-  { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
-  { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
-  { end: 10, suffix: '+', label: t(lang, 'stats.tools_label') },
-  { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
+  { end: nAgentes, suffix: '+', label: t(lang, 'hero.v2_stat_agents') },
+  { end: 10, suffix: '+', label: t(lang, 'hero.v2_stat_tools') },
+  { end: 25, suffix: '+', label: t(lang, 'hero.v2_stat_cookbooks') },
+  { end: 6, suffix: '', label: t(lang, 'hero.v2_stat_roles') },
 ];
 ---
 
-<section id="inicio" class="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+<section id="inicio" data-keak="hero-v2" class="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
   <!-- HeroSocialProof -->
   <div class="flex flex-col items-center gap-2 mb-4">
     <div class="flex -space-x-3 justify-center">
@@ -58,50 +74,59 @@ const stats = [
     <div class="flex flex-col items-center gap-0.5">
       <div class="flex items-center gap-0.5">
         {[0, 1, 2, 3, 4].map((i) => (
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`}><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`}><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
         ))}
       </div>
-      <span class="text-sm text-muted-foreground">
-        <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
-        {t(lang, 'hero.social_proof_label')}
+      <span class="text-sm text-muted-foreground text-center text-balance">
+        {t(lang, 'hero.v2_social_prefix')}{' '}
+        <strong class="font-bold text-foreground">{t(lang, 'stats.chefs')}</strong>{' '}
+        {t(lang, 'hero.v2_social_chefs')}{' · '}
+        <strong class="font-bold text-foreground" data-social-count>{socialCount}</strong><SocialCountLive />{' '}
+        {t(lang, 'hero.v2_social_count')}
       </span>
     </div>
   </div>
 
   <h1 class="text-center text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] text-balance">
-    {t(lang, 'hero.title_prefix')}{' '}
+    {t(lang, 'hero.v2_title_prefix')}{' '}
     <span id="hero-dynamic-word" class="inline-block transition-all duration-300 dynamic-hero-text opacity-100 scale-100">{firstWord}</span>
-    {' '}{t(lang, 'hero.title_suffix')}{' '}
-    <span class="gradient-text">{t(lang, 'hero.title_brand')}</span>
+    {' '}{t(lang, 'hero.v2_title_suffix')}{' '}
+    <span class="text-foreground">{t(lang, 'hero.title_brand')}</span>
   </h1>
 
   <p class="max-w-[42rem] text-center text-lg text-accent-dark font-semibold sm:text-xl text-balance leading-7 mb-2">
-    {t(lang, 'hero.subtitle')}
+    {t(lang, 'hero.v2_subtitle')}
   </p>
 
   <p class="max-w-[42rem] text-center text-base text-muted-foreground text-balance leading-6">
-    {t(lang, 'hero.description')}
+    {t(lang, 'hero.v2_description')}
   </p>
 
-  <!-- Counter Stats -->
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 my-6 sm:my-8 p-4 sm:p-6 bg-muted/30 rounded-xl border">
+  <!-- Counter Stats — número y etiqueta EN LÍNEA (Keak), número en negro plano -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 my-6 p-4 sm:p-6 bg-muted/30 rounded-xl border w-full max-w-3xl">
     {stats.map((s) => (
-      <div class="text-center p-2">
-        <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={s.end} data-suffix={s.suffix}>{s.end}{s.suffix}</div>
-        <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{s.label}</div>
+      <div class="flex items-baseline justify-center gap-2 text-center">
+        <span class="shrink-0 text-2xl md:text-3xl font-bold text-foreground" data-counter data-target={s.end} data-suffix={s.suffix}>{s.end}{s.suffix}</span>
+        <span class="min-w-0 text-xs sm:text-sm text-muted-foreground font-medium leading-tight text-balance">{s.label}</span>
       </div>
     ))}
   </div>
 
-  <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up w-full sm:w-auto">
+  <!-- CTA doble. flex-col-reverse = en móvil el botón dorado (último del DOM) va ARRIBA. -->
+  <div class="flex flex-col-reverse sm:flex-row items-center gap-4 animate-fade-up w-full sm:w-auto">
+    <a href={pricingHref(lang)} class="uppercase tracking-wider text-sm font-semibold inline-flex items-center gap-2 text-foreground hover:text-accent-dark transition-colors">
+      {t(lang, 'hero.v2_cta_pricing')}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
     <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]">
       {t(lang, 'cta.primary')}
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-    </a>
-    <a href={blogHubHref(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-11 px-8 btn-gold-outline w-full sm:w-auto min-h-[3rem]">
-      {t(lang, 'hero.see_resources')}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
   </div>
+
+  <p class="text-xs text-muted-foreground text-center text-balance">
+    {t(lang, 'hero.v2_microcopy')}
+  </p>
 </section>
 
 <script define:vars={{ businessTypes }}>

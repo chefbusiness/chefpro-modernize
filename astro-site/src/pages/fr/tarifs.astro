@@ -5,6 +5,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import Pricing from '../../components/Pricing.astro';
 import { SITE } from '../../i18n/config';
 import { appCtaUrl } from '../../lib/app-url';
 
@@ -24,100 +25,6 @@ const alternates = {
 // un 'https://app.aichef.pro' clavado, así que TODOS los idiomas mandaban el
 // checkout a la plataforma española. Ver astro-site/src/lib/app-url.ts.
 const ctaUrl = (slug: string) => appCtaUrl(lang, 'pricing', slug);
-
-const plans = [
-  {
-    slug: 'membre',
-    name: 'AI Chef Membre',
-    priceBig: '10 €/mois',
-    priceSub: 'sans engagement',
-    credits: '10 000 crédits / mois',
-    audience: 'Pour les commis, les cuisiniers et tous ceux qui veulent essayer sans engagement.',
-    features: [
-      'Accès aux plus de 50 agents IA',
-      '10 000 crédits chaque mois',
-      'Recettes des cuisines du monde entier',
-      'Disponible en 7 langues',
-      'Sans engagement',
-      'Assistance par e-mail',
-    ],
-    cta: 'Commencer maintenant',
-    variant: 'outline',
-    highlight: false,
-  },
-  {
-    slug: 'premium-pro',
-    name: 'AI Chef Premium Pro',
-    priceBig: '25 €',
-    priceSub: '/ mois',
-    credits: '85 000 crédits / mois',
-    audience: 'Pour les chefs de cuisine, les chefs exécutifs et les responsables de restaurant.',
-    features: [
-      'Tout ce qu’inclut le forfait Membre',
-      '85 000 crédits chaque mois',
-      'Outils de gestion avancés',
-      'Accès à toutes les cuisines du monde',
-      'Assistance prioritaire',
-    ],
-    cta: 'Choisir Premium Pro',
-    variant: 'gold',
-    highlight: true,
-  },
-  {
-    slug: 'premium-plus',
-    name: 'AI Chef Premium Plus',
-    priceBig: '50 €',
-    priceSub: '/ mois',
-    credits: '175 000 crédits / mois',
-    audience: 'Pour les entrepreneurs de la restauration et les chaînes de restaurants.',
-    features: [
-      'Tout ce qu’inclut le forfait Premium Pro',
-      '175 000 crédits chaque mois',
-      'Outils de gestion avancés',
-      'Accès à toutes les cuisines du monde',
-      'Assistance premium 24/7',
-    ],
-    cta: 'Choisir Premium Plus',
-    variant: 'primary',
-    highlight: false,
-  },
-  {
-    slug: 'premium-max',
-    name: 'AI Chef Premium Max',
-    priceBig: '95 €',
-    priceSub: '/ mois',
-    credits: 'Crédits illimités',
-    audience: 'Pour les opérations exigeantes qui utilisent l’IA au quotidien, sans limites.',
-    features: [
-      'Tout ce qu’inclut le forfait Premium Plus',
-      'Crédits illimités chaque mois',
-      'Le seul forfait réellement illimité',
-      'Accès anticipé aux nouvelles fonctionnalités',
-      'Assistance premium 24/7',
-    ],
-    cta: 'Choisir Premium Max',
-    variant: 'primary',
-    highlight: false,
-  },
-  {
-    slug: 'premium-max-anual',
-    name: 'AI Chef Premium Max Annuel',
-    priceBig: '950 €',
-    priceSub: '/ an',
-    credits: 'Crédits illimités',
-    audience: 'L’option illimitée pour toute l’année, avec deux mois offerts.',
-    features: [
-      'Tout ce qu’inclut le forfait Premium Max',
-      'Crédits illimités toute l’année',
-      'Vous économisez 2 mois (soit 79 € / mois)',
-      'Conseil personnalisé chaque mois',
-      'Assistance premium 24/7',
-    ],
-    cta: 'Choisir l’offre annuelle',
-    variant: 'primary',
-    highlight: false,
-  },
-];
 
 const profiles = [
   {
@@ -190,13 +97,6 @@ const schemas = [
   },
 ];
 
-const btnClass = (variant: string) => {
-  const base =
-    'inline-flex w-full items-center justify-center rounded-md h-11 px-5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2';
-  if (variant === 'gold') return `${base} bg-accent text-accent-foreground hover:bg-accent-dark shadow-md`;
-  if (variant === 'outline') return `${base} border border-border bg-background text-foreground hover:bg-accent/10`;
-  return `${base} bg-primary text-primary-foreground hover:bg-primary/90`;
-};
 ---
 
 <BaseLayout
@@ -234,34 +134,12 @@ const btnClass = (variant: string) => {
       </div>
     </header>
 
-    <!-- Grille des forfaits -->
-    <section aria-label="Forfaits et tarifs" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-      {plans.map((p) => (
-        <article class={`relative flex flex-col rounded-xl border bg-card p-6 shadow-sm ${p.highlight ? 'border-accent ring-2 ring-accent shadow-md' : 'border-border'}`}>
-          {p.highlight && (
-            <span class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground shadow">
-              ⭐ Le plus populaire
-            </span>
-          )}
-          <h2 class="text-base font-semibold text-foreground">{p.name}</h2>
-          <div class="mt-3 flex items-baseline gap-1">
-            <span class="text-3xl font-bold text-foreground">{p.priceBig}</span>
-            <span class="text-sm text-muted-foreground">{p.priceSub}</span>
-          </div>
-          <p class="mt-2 text-sm font-semibold text-primary">{p.credits}</p>
-          <p class="mt-3 text-sm text-muted-foreground">{p.audience}</p>
-          <ul class="mt-5 flex-1 space-y-2.5">
-            {p.features.map((f) => (
-              <li class="flex items-start gap-2 text-sm text-foreground">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>{f}</span>
-              </li>
-            ))}
-          </ul>
-          <a href={ctaUrl(p.slug)} class={`mt-6 ${btnClass(p.variant)}`}>{p.cta}</a>
-        </article>
-      ))}
-    </section>
+    <!-- Planes (v2 CRO Keak 20-sep-2026): mismo componente que las 7 portadas.
+         -mx-4 cancela el px-4 de <main> para que el .container de la sección
+         deje el mismo aire lateral que en la home (2rem) y no 1rem + 2rem. -->
+    <div class="-mx-4">
+      <Pricing lang={lang} medium="pricing" schema={false} />
+    </div>
 
     <!-- Qu’est-ce qu’un crédit ? -->
     <section class="mx-auto mt-20 max-w-3xl rounded-xl border border-border bg-card p-8 text-center">
@@ -289,8 +167,8 @@ const btnClass = (variant: string) => {
             <tr class="bg-muted/50 text-left">
               <th class="p-4 font-semibold text-foreground">Fonctionnalité</th>
               <th class="p-4 text-center font-semibold text-foreground">Membre</th>
-              <th class="p-4 text-center font-semibold text-primary">Premium Pro</th>
-              <th class="p-4 text-center font-semibold text-foreground">Premium Plus</th>
+              <th class="p-4 text-center font-semibold text-foreground">Premium Pro</th>
+              <th class="p-4 text-center font-semibold text-primary">Premium Plus</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Max</th>
               <th class="p-4 text-center font-semibold text-foreground">Max Annuel</th>
             </tr>
