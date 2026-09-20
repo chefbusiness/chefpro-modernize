@@ -171,3 +171,10 @@ iconos grandes y el dorado sobre la tarjeta oscura, donde el contraste ya es cor
 - **«≈ 200 recipes or 100 cost calcs»** (10.000 créditos) la inventó Keak. Va tal cual por orden de
   John, en una sola clave (`pricing.plans.member.v2_hint`) para cambiarla en un minuto si la
   plataforma dice otra cosa.
+
+## 7. Estado: EN PRODUCCIÓN desde el 20-sep-2026 (`d693c11`, PR #86)
+Verificado en vivo con `python3 scripts/cro-home/keak-dist-gate.py --base https://aichef.pro`: 127/127
+(7 portadas + 7 páginas de precios + 113 páginas con island), H1 correcto en ES/EN/DE y pricing v2 en
+inglés en las landings inglesas (antes salía en español). Para retocar copy: editar `DECISIONES_JOHN` u
+`OVERRIDES` en `scripts/cro-home/merge-keak-copy.py`, correr `--todos` y `--check`, y volver a pasar el
+gate contra el preview. Nunca editar los `v2_*` a mano en los JSON: el merge los pisa.
