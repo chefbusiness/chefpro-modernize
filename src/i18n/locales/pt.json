@@ -62,9 +62,9 @@
     "v2_social_prefix": "Utilizado por",
     "v2_social_chefs": "chefs",
     "v2_social_count": "receitas e soluções geradas",
-    "v2_title_prefix": "Reduza os custos de ingredientes",
+    "v2_title_prefix": "Crie, gira e faça crescer",
     "v2_title_suffix": "com",
-    "v2_subtitle": "Automatize food cost, desperdício, porções e ementas com 50+ agentes de IA criados para cozinhas profissionais.",
+    "v2_subtitle": "Automatize receitas, food cost, desperdício, ementas e marketing com 50+ agentes de IA criados para cozinhas profissionais.",
     "v2_description": "Treinado nos fluxos de trabalho diários de chefs de cozinha, pasteleiros, padeiros e operadores de hotelaria — não em marketing genérico de restauração.",
     "v2_stat_agents": "agentes de IA",
     "v2_stat_tools": "ferramentas de gestão e custos",
@@ -86,17 +86,17 @@
       "Brunch"
     ],
     "v2_business_prefixes": [
-      "no seu",
-      "no seu",
-      "na sua",
-      "na sua",
-      "na sua",
-      "na sua",
-      "na sua",
-      "na sua",
-      "na sua",
-      "na sua",
-      "no seu"
+      "o seu",
+      "o seu",
+      "a sua",
+      "a sua",
+      "a sua",
+      "a sua",
+      "a sua",
+      "a sua",
+      "a sua",
+      "a sua",
+      "o seu"
     ]
   },
   "notifications": {
@@ -1010,7 +1010,7 @@
         "v2_eyebrow": "Cozinheiros e chefs de partida",
         "v2_description": "Ideal para assistentes de cozinha, cozinheiros e chefs de partida que começam a trabalhar com IA.",
         "v2_credits": "10.000 créditos/mês",
-        "v2_hint": "≈ 200 receitas ou 100 fichas técnicas",
+        "v2_hint": "≈ um mês de receitas, fichas técnicas e ementas para um cozinheiro",
         "v2_cta": "Começar com Membro",
         "v2_features": [
           "Todas as 50+ ferramentas de IA incluídas",

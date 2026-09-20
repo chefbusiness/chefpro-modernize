@@ -82,6 +82,18 @@ las tarjetas de cocinas del mundo (`WorldCookbooks`). Misma posición.
   `accent/15`, `rounded-3xl`) envolviendo chips y tarjetas; la tarjeta popular sube a `bg-accent/10`.
   Aplicado en `Pricing.astro` y en `PricingV2.tsx` (paridad).
 
+- **H1 (decisión de John, opción A)**: «Crea, gestiona y haz crecer tu {Pizzería} con AI Chef Pro» /
+  «Create, run and grow your {Pizzeria} with AI Chef Pro» en lugar del «Cut ingredient costs…» de Keak,
+  que reducía 75+ agentes y un público de chefs, dueños, gerentes, panaderos, pasteleros, chocolateros y
+  emprendedores a un solo beneficio. GSC (90 d): la portada vive de marca (ES 498 clics >95 % marca; EN
+  101), lo genérico («ai for chefs») lo lleva el `<title>`, riesgo bajo si «AI Chef Pro» sigue en el H1.
+  El coste baja al subtítulo, ampliado a «recetas, food cost, mermas, cartas y marketing». Sin rotar el
+  texto que acompaña (solo la palabra de negocio): dos frases de longitud distinta harían saltar el hero
+  (CLS) y diluirían el H1 para Google. Hint del plan Miembro: cualitativo («≈ un mes de recetas,
+  escandallos y cartas para una partida») en vez del «200 recetas o 100 escandallos» inventado. El hero
+  no enlaza al blog (John: «nunca fue útil»); el bloque «Para quién es cada plan» de `/precios` se queda.
+  Copy de las 7 lenguas en `DECISIONES_JOHN` de `merge-keak-copy.py`.
+
 ## 2. Claves i18n (fuente única: `src/i18n/locales/*.json`, que Astro importa)
 Fuente EN = `scripts/cro-home/keak-copy.en.json` (copy de Keak literal). Traducción a los 6 idiomas
 con `scripts/cro-home/traducir-keak-copy.py` (en el VPS, bridge → sonnet primero, gates de

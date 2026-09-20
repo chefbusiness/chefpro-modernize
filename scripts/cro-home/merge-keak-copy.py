@@ -74,18 +74,53 @@ OVERRIDES = {
 # a hero.v2_business_prefixes y el sustantivo a hero.v2_business_types, que es lo
 # único que se pinta en dorado. Géneros comprobados a mano.
 LISTAS_V2 = {
-    'de': [('in Ihrem', 'Restaurant'), ('in Ihrem', 'Catering'), ('in Ihrer', 'Pizzeria'),
-           ('in Ihrer', 'Burger-Bar'), ('in Ihrer', 'Bäckerei'), ('in Ihrer', 'Konditorei'),
-           ('in Ihrer', 'Chocolaterie'), ('in Ihrer', 'Eisdiele'), ('in Ihrer', 'Dark Kitchen'),
-           ('in Ihrem', 'Café'), ('in Ihrem', 'Brunch')],
-    'it': [('nel tuo', 'Ristorante'), ('nel tuo', 'Catering'), ('nella tua', 'Pizzeria'),
-           ('nella tua', 'Hamburgheria'), ('nella tua', 'Panetteria'), ('nella tua', 'Pasticceria'),
-           ('nella tua', 'Cioccolateria'), ('nella tua', 'Gelateria'), ('nella tua', 'Dark Kitchen'),
-           ('nella tua', 'Caffetteria'), ('nel tuo', 'Brunch')],
-    'pt': [('no seu', 'Restaurante'), ('no seu', 'Catering'), ('na sua', 'Pizzaria'),
-           ('na sua', 'Hamburgueria'), ('na sua', 'Padaria'), ('na sua', 'Confeitaria'),
-           ('na sua', 'Chocolataria'), ('na sua', 'Sorveteria'), ('na sua', 'Dark Kitchen'),
-           ('na sua', 'Cafeteria'), ('no seu', 'Brunch')],
+    'de': [('Ihr', 'Restaurant'), ('Ihr', 'Catering'), ('Ihre', 'Pizzeria'),
+           ('Ihre', 'Burger-Bar'), ('Ihre', 'Bäckerei'), ('Ihre', 'Konditorei'),
+           ('Ihre', 'Chocolaterie'), ('Ihre', 'Eisdiele'), ('Ihre', 'Dark Kitchen'),
+           ('Ihr', 'Café'), ('Ihr', 'Brunch')],
+    'it': [('il tuo', 'Ristorante'), ('il tuo', 'Catering'), ('la tua', 'Pizzeria'),
+           ('la tua', 'Hamburgheria'), ('la tua', 'Panetteria'), ('la tua', 'Pasticceria'),
+           ('la tua', 'Cioccolateria'), ('la tua', 'Gelateria'), ('la tua', 'Dark Kitchen'),
+           ('la tua', 'Caffetteria'), ('il tuo', 'Brunch')],
+    'pt': [('o seu', 'Restaurante'), ('o seu', 'Catering'), ('a sua', 'Pizzaria'),
+           ('a sua', 'Hamburgueria'), ('a sua', 'Padaria'), ('a sua', 'Confeitaria'),
+           ('a sua', 'Chocolataria'), ('a sua', 'Sorveteria'), ('a sua', 'Dark Kitchen'),
+           ('a sua', 'Cafeteria'), ('o seu', 'Brunch')],
+}
+
+# ─── Decisiones de John sobre el preview (20-sep-2026, tarde) ─────────────────────
+# H1 = opción A («Crea, gestiona y haz crecer tu {X} con AI Chef Pro»): tres verbos =
+# tres familias de agentes (creatividad · gestión · marketing) y tres perfiles (chefs,
+# pasteleros y panaderos · gerentes y dueños · emprendedores). Sustituye al «Cut
+# ingredient costs…» de Keak, que reducía 75+ agentes a un solo beneficio. En DE/IT/PT el
+# negocio pasa a objeto directo, así que el artículo (LISTAS_V2) es nominativo.
+# El gancho del coste no se pierde: baja al subtítulo, que además se amplía a recetas y
+# marketing (idea de John: que no todo suene a reducir costes).
+# Hint del plan Miembro: «≈ 200 recipes or 100 cost calcs» lo inventó Keak y no se
+# puede verificar contra la plataforma → hint cualitativo con la misma escalera que
+# los otros planes (una partida → carta completa → multisede). Decisión delegada.
+DECISIONES_JOHN = {
+    'en': {'hero.v2_title_prefix': 'Create, run and grow your', 'hero.v2_title_suffix': 'with',
+           'hero.v2_subtitle': 'Automate recipes, food cost, waste, menus and marketing with 75+ AI agents built for professional kitchens.',
+           'pricing.plans.member.v2_hint': '≈ a month of recipes, costings and menus for one station'},
+    'es': {'hero.v2_title_prefix': 'Crea, gestiona y haz crecer tu', 'hero.v2_title_suffix': 'con',
+           'hero.v2_subtitle': 'Automatiza recetas, food cost, mermas, cartas y marketing con más de 75 agentes de IA diseñados para cocinas profesionales.',
+           'pricing.plans.member.v2_hint': '≈ un mes de recetas, escandallos y cartas para una partida'},
+    'fr': {'hero.v2_title_prefix': 'Créez, gérez et développez votre', 'hero.v2_title_suffix': 'avec',
+           'hero.v2_subtitle': 'Automatisez recettes, food cost, pertes, cartes et marketing avec 50+ agents IA conçus pour les cuisines professionnelles.',
+           'pricing.plans.member.v2_hint': '≈ un mois de recettes, fiches techniques et cartes pour un poste'},
+    'de': {'hero.v2_title_prefix': 'Kreieren, steuern und ausbauen:', 'hero.v2_title_suffix': 'mit',
+           'hero.v2_subtitle': 'Automatisieren Sie Rezepte, Food Cost, Warenverluste, Speisekarten und Marketing mit 50+ KI-Agenten für professionelle Küchen.',
+           'pricing.plans.member.v2_hint': '≈ ein Monat Rezepte, Kalkulationen und Speisekarten für einen Posten'},
+    'it': {'hero.v2_title_prefix': 'Crea, gestisci e fai crescere', 'hero.v2_title_suffix': 'con',
+           'hero.v2_subtitle': 'Automatizza ricette, food cost, sprechi, menu e marketing con 50+ agenti AI pensati per le cucine professionali.',
+           'pricing.plans.member.v2_hint': '≈ un mese di ricette, food cost e menu per una partita'},
+    'pt': {'hero.v2_title_prefix': 'Crie, gira e faça crescer', 'hero.v2_title_suffix': 'com',
+           'hero.v2_subtitle': 'Automatize receitas, food cost, desperdício, ementas e marketing com 50+ agentes de IA criados para cozinhas profissionais.',
+           'pricing.plans.member.v2_hint': '≈ um mês de receitas, fichas técnicas e ementas para um cozinheiro'},
+    'nl': {'hero.v2_title_prefix': 'Creëer, beheer en laat uw', 'hero.v2_title_suffix': 'groeien met',
+           'hero.v2_subtitle': "Automatiseer recepten, food cost, verspilling, menu's en marketing met 50+ AI-agents ontwikkeld voor professionele keukens.",
+           'pricing.plans.member.v2_hint': "≈ een maand recepten, kostprijzen en menu's voor één kok"},
 }
 
 
@@ -163,6 +198,8 @@ def fundir(lang):
     if lang in SECUNDARIOS:
         copy = rebaja_agentes(copy)
     for ruta, val in OVERRIDES.get(lang, {}).items():
+        poner(copy, ruta, val)
+    for ruta, val in DECISIONES_JOHN.get(lang, {}).items():
         poner(copy, ruta, val)
     p, d = cargar(lang)
     deep_merge(d, copy)
