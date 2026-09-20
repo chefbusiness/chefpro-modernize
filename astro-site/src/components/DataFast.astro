@@ -1,0 +1,59 @@
+---
+/**
+ * DataFast (analítica web + atribución de ingresos). Panel: https://datafa.st/dashboard
+ *
+ * Instalado el 20-sep-2026 siguiendo https://datafa.st/docs/astro. Lo monta
+ * `BaseLayout.astro` justo DESPUÉS de `<GoogleTag />`, porque lee la decisión de
+ * consentimiento que ese componente publica en `window.aichefLeeConsent()`.
+ *
+ * POR QUÉ NO ES EL SNIPPET PLANO (el que lleva miselup.pro): el script estándar
+ * (`script.js`) siembra dos cookies propias nada más cargar (`datafast_visitor_id`
+ * y `datafast_session_id`) y el banner de este sitio promete al visitante que las
+ * cookies de analítica solo se usan tras «Aceptar». Para no contradecirlo y no
+ * perder a nadie, el modo es HÍBRIDO:
+ *   · sin decisión o rechazado → `script.cookieless.js`: identificador diario
+ *     derivado de IP + user-agent + sal rotatoria, solo sessionStorage, ninguna
+ *     cookie. Cuenta visitas, fuentes, objetivos y compras de la misma sesión.
+ *   · aceptado → `script.js`: cookies propias, visitantes recurrentes y
+ *     atribución multi-toque de ingresos completa.
+ * La API acepta mezclar los dos: cada evento lleva su propio flag `cookieless`.
+ * La decisión se lee al CARGAR la página: quien acepta el banner sigue en modo
+ * cookieless hasta la siguiente navegación (así no se duplica la pageview).
+ *
+ * Solo se activa bajo aichef.pro: ni deploy previews de Netlify ni staging
+ * ensucian el panel (DataFast ya ignora localhost por su cuenta).
+ *
+ * Se inserta dinámicamente y funciona porque el script se localiza con
+ * `document.currentScript`, que el navegador rellena también para los scripts
+ * insertados por JS. Los `data-*` tienen que ir en el elemento inyectado.
+ *
+ * Mejora opcional pendiente: proxy por dominio propio contra bloqueadores
+ * (`/js/script.js` y `/api/events` → datafa.st, guía
+ * https://datafa.st/docs/astro-proxy). NO activarlo sin comprobar que el proxy
+ * de Netlify reenvía la IP real: si no, en modo cookieless todos los visitantes
+ * del día se funden en uno y las ubicaciones salen iguales.
+ */
+const WEBSITE_ID = 'dfid_QU6VBDPW3GqyxYmZoQvw0';
+const DOMAIN = 'aichef.pro';
+/** 'hibrido' (por defecto) · 'cookies' (snippet plano, como miselup) · 'cookieless' (nunca cookies). */
+const MODO = 'hibrido';
+---
+
+<script is:inline define:vars={{ WEBSITE_ID, DOMAIN, MODO }}>
+  (function () {
+    if (!/(^|\.)aichef\.pro$/.test(location.hostname)) return;
+    var consent = typeof window.aichefLeeConsent === 'function' ? window.aichefLeeConsent() : null;
+    var conCookies = MODO === 'cookies' || (MODO === 'hibrido' && consent === 'accepted');
+    function cargar() {
+      var s = document.createElement('script');
+      s.defer = true;
+      s.setAttribute('data-website-id', WEBSITE_ID);
+      s.setAttribute('data-domain', DOMAIN);
+      s.setAttribute('data-datafast-mode', conCookies ? 'cookies' : 'cookieless');
+      s.src = 'https://datafa.st/js/' + (conCookies ? 'script.js' : 'script.cookieless.js');
+      document.head.appendChild(s);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', cargar);
+    else cargar();
+  })();
+</script>
