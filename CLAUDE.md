@@ -108,6 +108,10 @@ Referencia de longitud medida en el blog (2026-08-01): **mediana del glosario 1.
   acepta sigue cookieless hasta la siguiente navegación. `MODO` en el componente cambia a
   `cookies` o `cookieless` puro.
 - Solo se activa bajo `aichef.pro`: previews y staging no ensucian el panel.
+- **Se inyecta de inmediato desde el `<head>`, no en `DOMContentLoaded`**: la atribución de los
+  Payment Links depende de que DataFast lea `?session_id=cs_…` en la página `-access` y lo envíe
+  (XHR sin `keepalive`) ANTES de que `ProductAccessGate` navegue al dashboard tras verificar. El
+  script espera al DOM por su cuenta para lo que lo necesita.
 - **Proxy por dominio propio (contra bloqueadores) NO activado.** Antes de activarlo hay
   que demostrar que el proxy de Netlify reenvía la IP real: en modo cookieless el
   identificador sale de la IP, y sin ella todos los visitantes del día se funden en uno.
