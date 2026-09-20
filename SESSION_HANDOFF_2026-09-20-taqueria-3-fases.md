@@ -42,6 +42,23 @@ Producción = `main`. Política nueva de John (decisiones delegadas a Claude): `
 - Consumo F3: capa 0,34 M · imágenes 0,14 M · correo 0,14 M = **0,62 M**. **Producto entero: 2,39 M de 2,5 M** (F1 1,0 ·
   F2 0,77 · F3 0,62). Reloj: F1+F2+F3 en una sola sesión con tres cortes, sin panics.
 
+### ✅ LIVE el 20-sep-2026 a las 15:38 UTC (merge de la PR #85 → `4f214a0`)
+- John creó el Payment Link (`https://buy.stripe.com/6oU4gs0y050a1MPfnL6oo1x`); Claude puso la env
+  `VITE_STRIPE_PAYMENT_LINK_TAREAS_TAQUERIA` en Netlify (scope builds, `netlify env:set`) y la URL en `payment-links.ts`
+  (`96e5c3c`, `sync-payment-links.py --check` 50/50).
+- **Gates LIVE**: `gate-flujo-postpago.py` **50 productos / 722 entregables / 0 fallos** (la taquería 11/11/11) ·
+  `miselup-gate.py` 100/100 · `hub-gate.py` PASS (1.ª la taquería, Mega Pack último, 21 en «Próximos») · landing con el
+  Payment Link y las 3 puertas cripto, `-access`/`-library` con noindex · checkout cripto de prueba → 200 con factura
+  (orderId `3520b4be8bb4b6fc3727223e6ce16486`, email `qa-taqueria-20sep@aichef.pro`, **sin purgar**: `crypto-report.py`
+  devolvió 401 «ADMIN_PASSWORD no coincide con la del site»; purgar con `--purge-unpaid-before 2026-09-21` cuando se
+  resuelva, tras comprobar que no haya pedidos reales pendientes) · sitemap reenviado a GSC (15:44).
+- **Correo**: prueba enviada a John (`01a0bf7d-5037-738a-be61-333668b6284d`). Programar el **29-sep** para el
+  **29-oct 08:00 UTC** (detrás de la Chocolatería del 24-oct).
+- ⚠️ **Gotcha de sesión concurrente**: otra sesión trabajaba en el mismo directorio (commits `feat(cro)` en `main`) y
+  cambió la rama activa; el Payment Link y estos docs se hicieron desde un **worktree aparte** (`git worktree add`) para no
+  pisarle nada. Los gates LIVE leen el registro de productos del árbol LOCAL: desde un `main` sin pull cuentan 49, no 50.
+  Esa sesión debe hacer `git pull` antes de seguir.
+
 ### Cómo cerrar (orden exacto)
 1. **John**: producto + Payment Link en Stripe (paquete abajo) y env `VITE_STRIPE_PAYMENT_LINK_TAREAS_TAQUERIA` en Netlify (scope builds).
 2. Claude: URL en `netlify/shared/payment-links.ts` (sustituir el `''`), commit en la rama, merge de la PR #85, esperar deploy.

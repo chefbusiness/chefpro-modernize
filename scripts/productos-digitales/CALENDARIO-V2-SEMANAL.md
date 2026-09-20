@@ -182,7 +182,7 @@ programar el broadcast de Pastelería (14-oct) y decidir la política del Mega P
 ### 🔄 2026-09-20 (sesión PAR, Claude Code en el Mac) — POLÍTICA DE 3 FASES + «Tareas Recurrentes: Taquería Mexicana» F1+F2+F3 en un día
 Política escrita en §3 (decisiones delegadas por John). Taquería (producto 50, **14 €**, S): F1 cerrada `d6076de` (research 601 líneas, SPEC
 862 refutada en ronda única + `gate_f1_spec.py`), F2 cerrada `96c6b88` (11 xlsx, 298 tareas, generador == post-motor, `gate_f2_contenido.py`),
-F3 en **PR #85** (`87a6edc`) con preview verificado. **Falta solo el Payment Link de John** → merge → gates LIVE → correo el 29-oct
+F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Miselup 100/100 → correo el 29-oct
 (programar el 29-sep, tras el de la Chocolatería del 24-oct). Consumo total 2,39 M / 2,5 M. Hub reordenado y LIVE en `8b3fe17`
 (novedades primero, Mega Pack último). Handoff: `SESSION_HANDOFF_2026-09-20-taqueria-3-fases.md`.
 
@@ -292,7 +292,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
 | Cómo Montar una Churrería-Chocolatería | Guías Cómo Montar | 65 € | Q4 2026 |
 | Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
-| Tareas Recurrentes: Taquería Mexicana | Kits de tareas | **14 €** (decidido el 20-sep tras el research: tres capas técnicas propias, como sushi-bar/asador/marisquería/tapas-bar) | Q4 2026 |
+| ~~Tareas Recurrentes: Taquería Mexicana~~ **✅ LIVE 20-sep-2026** (producto 50, 14 €, PR #85 → `4f214a0`; correo el 29-oct) | Kits de tareas | 14 € | — |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
 | Plan de Negocio: Hamburguesería Smash | Planes de negocio | 35 € | Q4 2026 |
 | Plan de Negocio: Finca de Eventos y Bodas | Planes de negocio | 45 € | Q1 2027 |
