@@ -178,3 +178,23 @@ Verificado en vivo con `python3 scripts/cro-home/keak-dist-gate.py --base https:
 inglés en las landings inglesas (antes salía en español). Para retocar copy: editar `DECISIONES_JOHN` u
 `OVERRIDES` en `scripts/cro-home/merge-keak-copy.py`, correr `--todos` y `--check`, y volver a pasar el
 gate contra el preview. Nunca editar los `v2_*` a mano en los JSON: el merge los pisa.
+
+### Retoques posteriores de John, directos a `main` (20-sep, tarde y noche)
+| Commit | Qué cambió (7 idiomas) |
+|---|---|
+| `548a1d5` | Subtítulo del hero «…para restaurantes y negocios de hostelería» (antes «cocinas profesionales») |
+| `1f32f2d` | Badge de cifras del hero apilado (número arriba, etiqueta debajo) |
+| `d58f176` | Prueba social DINÁMICA: el 764+ crece a diario (`lib/social-counts.ts` + `SocialCountLive.astro`), «recetas, procesos y soluciones generadas», países, y la franja cambia «1 agente/semana» por «15+ herramientas para conectar» |
+| `f29a0e8` | Microcopy del hero: «16 herramientas conectables (Gmail, Sheets, Outlook…)» en vez de «nuevo agente cada semana» |
+| `39ce6ec` | Primera característica de los 5 planes: «75+ agentes y herramientas incluidos» (50+ en idiomas secundarios) |
+| `e86b2ff` | «Con la confianza de 764+ **profesionales** de más de **32** países» (antes chefs / 90+; 32 es la cifra de John, GSC daba 145 países con clic) |
+
+**Verificado en producción al cerrar la sesión (20-sep, noche), en los 7 idiomas** (`/`, `/en`, `/fr`, `/de`, `/it`,
+`/pt`, `/nl`): cada portada sirve su «profesionales», su «de más de 32 países» y su «recetas, procesos y soluciones
+generadas» tal cual están en el JSON del idioma, más el marcador `data-social-chefs` del contador dinámico.
+`main` = `origin/main` = `e86b2ff`, árbol limpio.
+
+**Pendientes menores (no bloquean):** 3 copias de `getDynamicCount()` sin migrar a `social-counts.ts`
+(`UseCasePageContent`, `UseCasesHubPage`, `ConsultoriaGastroProHubPage`) · clave `stats.chefs` huérfana en los 7 JSON ·
+revisar la base 764 del contador contra la plataforma cada pocos meses · revisión de fondo de los copies
+«hostelería en general, no solo cocina» (John, pendiente de sesión propia).
