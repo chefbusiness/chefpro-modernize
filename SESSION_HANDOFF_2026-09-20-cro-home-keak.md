@@ -38,3 +38,36 @@ la plataforma cada pocos meses para que no se vuelva falsa.
 ## Referencias
 `CRO_HOME_KEAK_2026-09-20.md` (spec + decisiones + retoques) · PR #86 (`d693c11`) · commits posteriores `548a1d5`,
 `1f32f2d`, `d58f176`, `f29a0e8`, `39ce6ec`, `e86b2ff` · `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` §8 (entrada 2026-09-20 tarde/noche).
+
+---
+
+# Handoff 2026-09-20/21 (noche) — DataFast: analítica + atribución de ingresos · sesión Claude Code
+
+Producción = `main` (ver último commit). Doc operativa en `CLAUDE.md` («Analítica: DataFast en todo el sitio»).
+
+## Hecho y verificado
+- **DataFast en aichef.pro** (PR #87 `fe8adfd` + PR #88 `bed88fb`): `components/DataFast.astro` montado en `BaseLayout`
+  tras `<GoogleTag />`, modo híbrido según la cookie `aichef_consent` (cookieless sin «Aceptar», script estándar con él),
+  solo bajo `aichef.pro`, **inyectado de inmediato desde el head** (no en `DOMContentLoaded`) para ganar la carrera con
+  `ProductAccessGate`, que hace `window.location.replace` al dashboard nada más verificar. Gate
+  `scripts/astro-migration/datafast-gate.py` 17/17 en preview y producción.
+- **Pickaxe, los 7 workspaces** (ES `aaee43ff`, EN `d09bd252`, FR `2721aa1c`, DE `639b9cfd`, PT `b7f121de`, IT `51799471`,
+  NL `e16796af`): snippet híbrido autocontenido en `Settings → Deploy → Workspace Level Custom code → Header`, verificado
+  recargando cada editor y por el HTML servido de los 7 subdominios (`app`, `enapp`, `frapp`, `deapp`, `itapp`, `ptapp`, `nlapp`).
+- **Atribución de ingresos (Payment Links)**: Stripe conectado por John; los links ya devuelven a `-access?session_id=`;
+  cableado verificado en el Chrome de Windows (se carga el script, se llama a `verify-purchase` y sale el XHR a
+  `datafa.st/api/events`). El punto «Attribute payments» del widget se marca solo con el primer pago real atribuido.
+
+## Cómo retomar / pendientes
+- **Primera venta real** → comprobar en el panel que aparece atribuida (referrer, país). Si no: `CLAUDE.md` § DataFast.
+- **Suscripciones de Pickaxe** (no atribuibles por visitante: vuelven a `?success=login` sin `session_id`): vía candidata =
+  método por email `window.datafast("payment",{email})` en «Confirmation Page Header/Footer» del workspace
+  (https://datafa.st/docs/stripe-other-methods.md); el snippet B de Google Ads ya captura el email del alta en una cookie
+  de 900 s. Necesita una suscripción real de prueba.
+- **Proxy anti-bloqueadores** (`/js/script.js`, `/api/events`): solo tras demostrar que Netlify reenvía la IP real
+  (en cookieless la IP es el identificador).
+- Limpieza de agosto aún pendiente en Pickaxe ES: `confirmationHeadCodeLegacy` lleva el tag de Google pelado.
+- Trampas de automatización en Pickaxe: editor CodeMirror 6 sin `cmView` visible desde la extensión → `paste` sintético
+  sobre `.cm-content` enfocado; **clic en «Save Settings» unos segundos DESPUÉS del pegado y verificar recargando**;
+  tandas de `browser_batch` de más de ~40 s agotan el tiempo del tool; `ctrl+End` no mueve el cursor en ese editor.
+- Docs de DataFast en Markdown puro: `https://datafa.st/docs/<slug>.md` (WebFetch del HTML solo devuelve la navegación).
