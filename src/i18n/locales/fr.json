@@ -529,7 +529,7 @@
         "uses": "10 000/mois",
         "description": "Idéal pour les assistants de cuisine, cuisiniers et chefs de partie",
         "features": {
-          "0": "Accès à tous les 50+ outils",
+          "0": "50+ agents et outils inclus",
           "1": "10 000 crédits mensuels",
           "2": "Livres de recettes du monde",
           "3": "Support par email"
@@ -541,7 +541,7 @@
         "v2_hint": "≈ un mois de recettes, fiches techniques et cartes pour un poste",
         "v2_cta": "Commencer avec Membre",
         "v2_features": [
-          "50+ outils IA inclus",
+          "50+ agents et outils inclus",
           "10 000 crédits mensuels",
           "25+ livres de cuisine du monde",
           "Support par e-mail"
@@ -555,7 +555,7 @@
         "uses": "85 000/mois",
         "description": "Pour les Chefs de Cuisine, Chefs Exécutifs et Gérants de Restaurants",
         "features": {
-          "0": "Tous les 50+ outils inclus",
+          "0": "50+ agents et outils inclus",
           "1": "85 000 crédits mensuels",
           "2": "Accès à toutes les cuisines du monde",
           "3": "Outils business avancés",
@@ -575,7 +575,7 @@
         "uses": "175 000/mois",
         "description": "Pour les entrepreneurs gastronomiques et chaînes de restaurants",
         "features": {
-          "0": "Tous les 50+ outils inclus",
+          "0": "50+ agents et outils inclus",
           "1": "175 000 crédits mensuels",
           "2": "Accès à toutes les cuisines du monde",
           "3": "Outils business avancés",
@@ -595,7 +595,7 @@
         "uses": "∞",
         "description": "Crédits mensuels illimités pour les professionnels exigeants",
         "features": {
-          "0": "Tous les 50+ outils inclus",
+          "0": "50+ agents et outils inclus",
           "1": "Crédits mensuels illimités",
           "2": "Accès à toutes les cuisines du monde",
           "3": "Outils business avancés",
@@ -619,7 +619,7 @@
         "discount": "Économisez 2 mois",
         "description": "Idéal pour les Entrepreneurs Gastronomiques, Propriétaires de Restaurants et Dirigeants",
         "features": {
-          "0": "Tous les 50+ outils inclus",
+          "0": "50+ agents et outils inclus",
           "1": "Crédits illimités toute l'année",
           "2": "Accès à toutes les cuisines du monde",
           "3": "Outils business avancés",

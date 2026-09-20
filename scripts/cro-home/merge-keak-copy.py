@@ -159,6 +159,21 @@ DECISIONES_JOHN = {
            'pricing.plans.member.v2_hint': "≈ een maand recepten, kostprijzen en menu's voor één kok"},
 }
 
+# ─── «75+ herramientas» → «75+ agentes y herramientas» (John, 20-sep noche) ────────
+# La primera característica de los 5 planes decía «All 75+ tools included»; el producto
+# son AGENTES (rebrand apps→agentes de mayo-2026) y la palabra tiene que aparecer. Se
+# aplica a member.v2_features[0], member.features.0 (fallback) y features.0 de los otros
+# 4 planes. 75+ en es/en, 50+ en los demás (sus plataformas sirven 53-54 agentes).
+AGENTES_INCLUIDOS = {
+    'en': '75+ AI agents & tools included',
+    'es': '75+ agentes y herramientas incluidos',
+    'fr': '50+ agents et outils inclus',
+    'de': '50+ Agenten & Tools enthalten',
+    'it': '50+ agenti e strumenti inclusi',
+    'pt': '50+ agentes e ferramentas incluídos',
+    'nl': '50+ agents & tools inbegrepen',
+}
+
 
 def poner(d, path, val):
     toks = path.split('.')
@@ -256,6 +271,15 @@ def fundir(lang):
     member = d['pricing']['plans']['member']
     if not member.get('period'):
         member['period'] = d['pricing']['plans']['premium_pro'].get('period', '')
+    # Primera característica de los 5 planes con la palabra «agentes».
+    planes = d['pricing']['plans']
+    agentes = AGENTES_INCLUIDOS[lang]
+    if isinstance(planes['member'].get('v2_features'), list) and planes['member']['v2_features']:
+        planes['member']['v2_features'][0] = agentes
+    for pid in ('member', 'premium_pro', 'premium_plus', 'premium_max', 'premium_plus_annual'):
+        feats = planes[pid].get('features')
+        if isinstance(feats, dict) and '0' in feats:
+            feats['0'] = agentes
     guardar(p, d)
     print(f'  ✓ {lang}: {len(pares(copy))} cadenas fundidas · v2_business_types={len(tipos)}'
           f' · v2_business_prefixes={len(prefijos)}'
@@ -268,6 +292,7 @@ def check():
     # El inglés de referencia es el de Keak MÁS las decisiones de John (H1, subtítulo, hint).
     for ruta, val in DECISIONES_JOHN.get('en', {}).items():
         poner(en_copy, ruta, val)
+    en_copy['pricing']['plans']['member']['v2_features'][0] = AGENTES_INCLUIDOS['en']
     claves = pares(en_copy)
     errores = []
     for lang in LANGS:

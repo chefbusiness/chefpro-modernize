@@ -753,7 +753,7 @@
         "uses": "10,000/month",
         "description": "Ideal for kitchen assistants, cooks and station chefs",
         "features": {
-          "0": "Access to all 75+ tools",
+          "0": "75+ AI agents & tools included",
           "1": "10,000 monthly credits",
           "2": "World cookbooks",
           "3": "Email support"
@@ -765,7 +765,7 @@
         "v2_hint": "≈ a month of recipes, costings and menus for one station",
         "v2_cta": "Start with Member",
         "v2_features": [
-          "All 75+ AI tools included",
+          "75+ AI agents & tools included",
           "10,000 monthly credits",
           "25+ world cookbooks",
           "Email support"
@@ -779,7 +779,7 @@
         "uses": "85,000/month",
         "description": "For Kitchen Chefs, Executive Chefs and Restaurant Managers",
         "features": {
-          "0": "All 75+ tools included",
+          "0": "75+ AI agents & tools included",
           "1": "85,000 monthly credits",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
@@ -799,7 +799,7 @@
         "uses": "175,000/month",
         "description": "For gastronomic entrepreneurs and restaurant chains",
         "features": {
-          "0": "All 75+ tools included",
+          "0": "75+ AI agents & tools included",
           "1": "175,000 monthly credits",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
@@ -819,7 +819,7 @@
         "uses": "∞",
         "description": "Unlimited monthly credits for demanding professionals",
         "features": {
-          "0": "All 75+ tools included",
+          "0": "75+ AI agents & tools included",
           "1": "Unlimited monthly credits",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
@@ -843,7 +843,7 @@
         "discount": "Save 2 months",
         "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
         "features": {
-          "0": "All 75+ tools included",
+          "0": "75+ AI agents & tools included",
           "1": "Unlimited credits throughout the year",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",

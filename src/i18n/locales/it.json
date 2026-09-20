@@ -1016,7 +1016,7 @@
         "uses": "10.000/mese",
         "description": "Ideale per aiuto cuochi, cuochi e capostazione",
         "features": {
-          "0": "Accesso a tutti i 50+ strumenti",
+          "0": "50+ agenti e strumenti inclusi",
           "1": "10.000 crediti mensili",
           "2": "Ricettari mondiali",
           "3": "Supporto via email"
@@ -1028,7 +1028,7 @@
         "v2_hint": "≈ un mese di ricette, food cost e menu per una partita",
         "v2_cta": "Inizia con Membro",
         "v2_features": [
-          "Tutti i 50+ strumenti AI inclusi",
+          "50+ agenti e strumenti inclusi",
           "10.000 crediti mensili",
           "25+ ricettari internazionali",
           "Supporto via email"
@@ -1042,7 +1042,7 @@
         "uses": "85.000/mese",
         "description": "Per Chef di Cucina, Chef Esecutivi e Manager di Ristoranti",
         "features": {
-          "0": "Tutti i 50+ strumenti inclusi",
+          "0": "50+ agenti e strumenti inclusi",
           "1": "85.000 crediti mensili",
           "2": "Accesso a tutte le cucine del mondo",
           "3": "Strumenti avanzati di business",
@@ -1062,7 +1062,7 @@
         "uses": "175.000/mese",
         "description": "Per imprenditori gastronomici e catene di ristoranti",
         "features": {
-          "0": "Tutti i 50+ strumenti inclusi",
+          "0": "50+ agenti e strumenti inclusi",
           "1": "175.000 crediti mensili",
           "2": "Accesso a tutte le cucine del mondo",
           "3": "Strumenti avanzati di business",
@@ -1082,7 +1082,7 @@
         "uses": "∞",
         "description": "Crediti illimitati mensili per professionisti esigenti",
         "features": {
-          "0": "Tutti i 50+ strumenti inclusi",
+          "0": "50+ agenti e strumenti inclusi",
           "1": "Crediti illimitati mensili",
           "2": "Accesso a tutte le cucine del mondo",
           "3": "Strumenti avanzati di business",
@@ -1106,7 +1106,7 @@
         "discount": "Risparmia 2 mesi",
         "description": "Ideale per imprenditori gastronomici, proprietari di ristoranti e dirigenti",
         "features": {
-          "0": "Tutti i 50+ strumenti inclusi",
+          "0": "50+ agenti e strumenti inclusi",
           "1": "Crediti illimitati per tutto l'anno",
           "2": "Accesso a tutte le cucine del mondo",
           "3": "Strumenti avanzati di business",
