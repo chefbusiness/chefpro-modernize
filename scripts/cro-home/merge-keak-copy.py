@@ -95,31 +95,33 @@ LISTAS_V2 = {
 # ingredient costs…» de Keak, que reducía 75+ agentes a un solo beneficio. En DE/IT/PT el
 # negocio pasa a objeto directo, así que el artículo (LISTAS_V2) es nominativo.
 # El gancho del coste no se pierde: baja al subtítulo, que además se amplía a recetas y
-# marketing (idea de John: que no todo suene a reducir costes).
+# marketing (idea de John: que no todo suene a reducir costes). Y el subtítulo termina en
+# «restaurantes y negocios de hostelería», no «cocinas profesionales»: John (20-sep, noche)
+# quiere alejarse de «SaaS para cocinas» hacia el negocio de hostelería en general.
 # Hint del plan Miembro: «≈ 200 recipes or 100 cost calcs» lo inventó Keak y no se
 # puede verificar contra la plataforma → hint cualitativo con la misma escalera que
 # los otros planes (una partida → carta completa → multisede). Decisión delegada.
 DECISIONES_JOHN = {
     'en': {'hero.v2_title_prefix': 'Create, run and grow your', 'hero.v2_title_suffix': 'with',
-           'hero.v2_subtitle': 'Automate recipes, food cost, waste, menus and marketing with 75+ AI agents built for professional kitchens.',
+           'hero.v2_subtitle': 'Automate recipes, food cost, waste, menus and marketing with 75+ AI agents built for restaurants and hospitality businesses.',
            'pricing.plans.member.v2_hint': '≈ a month of recipes, costings and menus for one station'},
     'es': {'hero.v2_title_prefix': 'Crea, gestiona y haz crecer tu', 'hero.v2_title_suffix': 'con',
-           'hero.v2_subtitle': 'Automatiza recetas, food cost, mermas, cartas y marketing con más de 75 agentes de IA diseñados para cocinas profesionales.',
+           'hero.v2_subtitle': 'Automatiza recetas, food cost, mermas, cartas y marketing con más de 75 agentes de IA diseñados para restaurantes y negocios de hostelería.',
            'pricing.plans.member.v2_hint': '≈ un mes de recetas, escandallos y cartas para una partida'},
     'fr': {'hero.v2_title_prefix': 'Créez, gérez et développez votre', 'hero.v2_title_suffix': 'avec',
-           'hero.v2_subtitle': 'Automatisez recettes, food cost, pertes, cartes et marketing avec 50+ agents IA conçus pour les cuisines professionnelles.',
+           'hero.v2_subtitle': 'Automatisez recettes, food cost, pertes, cartes et marketing avec 50+ agents IA conçus pour les restaurants et les entreprises de l\'hôtellerie-restauration.',
            'pricing.plans.member.v2_hint': '≈ un mois de recettes, fiches techniques et cartes pour un poste'},
     'de': {'hero.v2_title_prefix': 'Kreieren, steuern und ausbauen:', 'hero.v2_title_suffix': 'mit',
-           'hero.v2_subtitle': 'Automatisieren Sie Rezepte, Food Cost, Warenverluste, Speisekarten und Marketing mit 50+ KI-Agenten für professionelle Küchen.',
+           'hero.v2_subtitle': 'Automatisieren Sie Rezepte, Food Cost, Warenverluste, Speisekarten und Marketing mit 50+ KI-Agenten für Restaurants und Gastronomiebetriebe.',
            'pricing.plans.member.v2_hint': '≈ ein Monat Rezepte, Kalkulationen und Speisekarten für einen Posten'},
     'it': {'hero.v2_title_prefix': 'Crea, gestisci e fai crescere', 'hero.v2_title_suffix': 'con',
-           'hero.v2_subtitle': 'Automatizza ricette, food cost, sprechi, menu e marketing con 50+ agenti AI pensati per le cucine professionali.',
+           'hero.v2_subtitle': 'Automatizza ricette, food cost, sprechi, menu e marketing con 50+ agenti AI pensati per ristoranti e aziende della ristorazione.',
            'pricing.plans.member.v2_hint': '≈ un mese di ricette, food cost e menu per una partita'},
     'pt': {'hero.v2_title_prefix': 'Crie, gira e faça crescer', 'hero.v2_title_suffix': 'com',
-           'hero.v2_subtitle': 'Automatize receitas, food cost, desperdício, ementas e marketing com 50+ agentes de IA criados para cozinhas profissionais.',
+           'hero.v2_subtitle': 'Automatize receitas, food cost, desperdício, ementas e marketing com 50+ agentes de IA criados para restaurantes e negócios de hotelaria e restauração.',
            'pricing.plans.member.v2_hint': '≈ um mês de receitas, fichas técnicas e ementas para um cozinheiro'},
     'nl': {'hero.v2_title_prefix': 'Creëer, beheer en laat uw', 'hero.v2_title_suffix': 'groeien met',
-           'hero.v2_subtitle': "Automatiseer recepten, food cost, verspilling, menu's en marketing met 50+ AI-agents ontwikkeld voor professionele keukens.",
+           'hero.v2_subtitle': "Automatiseer recepten, food cost, verspilling, menu's en marketing met 50+ AI-agents ontwikkeld voor restaurants en horecabedrijven.",
            'pricing.plans.member.v2_hint': "≈ een maand recepten, kostprijzen en menu's voor één kok"},
 }
 
