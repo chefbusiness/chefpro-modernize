@@ -70,11 +70,13 @@ def lang_de(ruta):
 
 
 def seccion(html, marcador):
-    """Recorta desde data-keak="X" hasta la siguiente data-keak o el final."""
+    """Recorta desde data-keak="X" hasta el cierre de SU <section> (ninguna de las
+    tres anida secciones). Recortar «hasta el siguiente data-keak» arrastraba las
+    secciones intermedias (FeaturedApps lleva data-app-url) y daba falsos positivos."""
     i = html.find(f'data-keak="{marcador}"')
     if i < 0:
         return ''
-    j = html.find('data-keak="', i + 10)
+    j = html.find('</section>', i)
     return html[i:j if j > 0 else None]
 
 
@@ -85,8 +87,10 @@ def revisar_pricing(html, lang, errores, ruta):
     for p in PLANES:
         if f'data-plan="{p}"' not in s:
             errores.append(f'{ruta}: falta tarjeta {p}')
-    if s.count('data-role-chip') != 4:
-        errores.append(f'{ruta}: {s.count("data-role-chip")} chips de rol (esperados 4)')
+    # Sólo los <a data-role-chip>: el selector del script inline también contiene la cadena.
+    chips = len(re.findall(r'<a[^>]*\bdata-role-chip', s))
+    if chips != 4:
+        errores.append(f'{ruta}: {chips} chips de rol (esperados 4)')
     pop = re.findall(r'<article[^>]*data-plan="([^"]+)"[^>]*data-popular|<article[^>]*data-popular[^>]*data-plan="([^"]+)"', s)
     pops = [a or b for a, b in pop]
     if pops != ['premium_plus']:
