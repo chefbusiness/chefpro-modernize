@@ -179,6 +179,13 @@ programar el broadcast de Pastelería (14-oct) y decidir la política del Mega P
   `feat/guia-chocolateria-obrador`. Desviación de la SPEC ya decidida: `comingSoon` pasa de 23 a 22 (se quita sólo
   su tarjeta), no a cero.
 
+### 🔄 2026-09-20 (sesión PAR, Claude Code en el Mac) — POLÍTICA DE 3 FASES + «Tareas Recurrentes: Taquería Mexicana» F1+F2+F3 en un día
+Política escrita en §3 (decisiones delegadas por John). Taquería (producto 50, **14 €**, S): F1 cerrada `d6076de` (research 601 líneas, SPEC
+862 refutada en ronda única + `gate_f1_spec.py`), F2 cerrada `96c6b88` (11 xlsx, 298 tareas, generador == post-motor, `gate_f2_contenido.py`),
+F3 en **PR #85** (`87a6edc`) con preview verificado. **Falta solo el Payment Link de John** → merge → gates LIVE → correo el 29-oct
+(programar el 29-sep, tras el de la Chocolatería del 24-oct). Consumo total 2,39 M / 2,5 M. Hub reordenado y LIVE en `8b3fe17`
+(novedades primero, Mega Pack último). Handoff: `SESSION_HANDOFF_2026-09-20-taqueria-3-fases.md`.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**

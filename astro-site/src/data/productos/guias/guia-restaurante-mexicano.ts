@@ -163,6 +163,7 @@ const data: GuiaData = {
 
   footerLinks: [
     { label: 'aichef.pro', href: 'https://aichef.pro' },
+    { label: 'Kit de Tareas: Taquería Mexicana', href: '/kit-tareas-taqueria' },
     { label: 'Guía Restaurante Casual', href: '/guia-restaurante-casual' },
     { label: 'Guía Restaurante Gastronómico', href: '/guia-restaurante-gastronomico' },
     { label: 'Todos los Productos', href: '/productos-digitales' },

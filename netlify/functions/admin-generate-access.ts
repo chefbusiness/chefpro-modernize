@@ -36,6 +36,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
   'guia-restaurante-nikkei': { accessPath: '/guia-restaurante-nikkei-access', label: 'Guía Restaurante Nikkei' },
   'mega-pack-tareas': { accessPath: '/mega-pack-tareas-access', label: 'Mega Pack Tareas' },
   'kit-tareas-sushi-bar': { accessPath: '/kit-tareas-sushi-bar-access', label: 'Kit Tareas Sushi Bar' },
+  'kit-tareas-taqueria': { accessPath: '/kit-tareas-taqueria-access', label: 'Kit Tareas Taquería Mexicana' },
   'kit-tareas-asador': { accessPath: '/kit-tareas-asador-access', label: 'Kit Tareas Asador' },
   'kit-tareas-marisqueria': { accessPath: '/kit-tareas-marisqueria-access', label: 'Kit Tareas Marisquería' },
   'kit-tareas-tapas-bar': { accessPath: '/kit-tareas-tapas-bar-access', label: 'Kit Tareas Tapas Bar / Gastrobar' },

@@ -243,6 +243,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos con protocolo anisakis APPCC:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-tareas-taqueria': {
+    accessPath: '/kit-tareas-taqueria-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Taquería Mexicana',
+    emailTitle: 'Accede a tu Kit de Tareas: Taquería Mexicana',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos con trompo, nixtamal y tortillería, barra de salsas y APPCC:',
+    emailCta: 'Acceder a mis Checklists',
+  },
   'kit-tareas-asador': {
     accessPath: '/kit-tareas-asador-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Asador / Parrilla y Josper',

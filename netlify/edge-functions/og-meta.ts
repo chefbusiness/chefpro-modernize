@@ -134,6 +134,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-sushi-bar.jpg',
     price: '14.00',
   },
+  '/kit-tareas-taqueria': {
+    title: 'Kit Tareas Recurrentes: Taquería Mexicana — 11 Checklists + Calendario Anual | AI Chef Pro',
+    description: '11 checklists Excel: trompo al pastor, nixtamal y tortillería, barra de salsas, APPCC y alérgenos (RD 1021/2022), calendario anual de tareas. 14 EUR.',
+    image: 'https://aichef.pro/og-kit-tareas-taqueria.jpg',
+    price: '14.00',
+  },
   '/plan-negocio-bar-restaurante': {
     title: 'Plan de Negocio: Bar-Restaurante — Plan Financiero Excel + Checklist Apertura | AI Chef Pro',
     description: 'Plan financiero Excel con P&L 3 años, inversión inicial, punto de equilibrio, escenarios y checklist apertura con 50+ trámites España 2026. 35 EUR.',
