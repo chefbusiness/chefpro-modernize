@@ -978,7 +978,7 @@ const products = [
 const comingSoon = [
   { icon: Coffee, name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
-  { icon: UtensilsCrossed, name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Rutinas de plancha, salsas y tortilla, turnos y cierre para una taquería que funciona sola.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },
+  { icon: UtensilsCrossed, name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Trompo, plancha, salsas y tortillería, turnos y cierre para una taquería que funciona sola, con calendario anual.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },
   { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
   { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
   { icon: PartyPopper, name: 'Plan de Negocio: Finca de Eventos y Bodas', desc: 'Aforo, packs de menú cerrado, estacionalidad de bodas y personal por servicio: el plan completo.', tags: ['plan-negocio', 'catering', 'excel'], phase: 'Q1 2027' },

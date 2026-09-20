@@ -181,6 +181,13 @@ programar el broadcast de Pastelería (14-oct) y decidir la política del Mega P
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
+**Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
+- **Copy vivo que afirma «control horario digital obligatorio en 2026»** (`astro-site/src/data/productos/guias/guia-panaderia-obrador.ts:75` y `:105`, y posiblemente más): el RD no estaba publicado en el BOE a mediados de 2026. Barrido del corpus con `grep -rn "horario digital"` y redacción neutra («en el soporte que exija la normativa vigente»).
+- **Los xlsx de la familia Kit de Tareas van SIN TILDES** («Camara», «Hora Limite», «PREPARACION»; verificado en sushi-bar y asador vía `sharedStrings.xml`). Ningún gate lo mide. El kit nuevo se escribe con tildes (D6); homologar la familia es una tanda aparte.
+- **Casi toda la documentación del sector repite los 65 °C derogados**: el RD 1021/2022 fija ≥ 63 °C en caliente y ≥ 74 °C/15 s de recalentado. Barrido de «65 °C» en los xlsx de kits y guías LIVE, con criterio (solo en contexto de mantenimiento en caliente).
+- **Ningún kit está en las cestas de los casos de uso** (`src/data/use-cases-content.es.ts`, p. ej. `restaurante-mexicano` en la línea 3580): ventas cruzadas perdidas.
+
+
 0. 🔴 **Seguridad alimentaria en producto VENDIDO (cazado por el research del Manual del Chef Ejecutivo, 6-sep; John: «déjalo
    anotado para la siguiente sesión»)**: `kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx` y
    `kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx` dicen «congelación anisakis −20 °C durante 7 días» citando el
@@ -278,7 +285,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
 | Cómo Montar una Churrería-Chocolatería | Guías Cómo Montar | 65 € | Q4 2026 |
 | Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
-| Tareas Recurrentes: Taquería Mexicana | Kits de tareas | 12 € | Q4 2026 |
+| Tareas Recurrentes: Taquería Mexicana | Kits de tareas | **14 €** (decidido el 20-sep tras el research: tres capas técnicas propias, como sushi-bar/asador/marisquería/tapas-bar) | Q4 2026 |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
 | Plan de Negocio: Hamburguesería Smash | Planes de negocio | 35 € | Q4 2026 |
 | Plan de Negocio: Finca de Eventos y Bodas | Planes de negocio | 45 € | Q1 2027 |
