@@ -312,17 +312,52 @@ motor de Kit de Tareas; antes de la primera, decidir si el **Mega Pack (89 €, 
 (hoy ya hay 19 kits LIVE fuera de esa cifra) · Suplentes por si cae alguno: Sushi pop-up para eventos (#147), Mesa
 dulce para bodas (#151), Quesería boutique (#99).
 
-**Método por producto nuevo, en 3 semanas de 1 sesión cada una** (memoria `feedback_research-previo-producto-nuevo`, `feedback_productos-completos-investigados`,
-`feedback_digital-products-non-negotiables`, skill `digital-product-launch`):
-- **Semana A — research + SPEC**: keyword research + SERP (`scripts/dataforseo.py`), GSC, competencia, precio; SPEC del producto (opus, 1 agente) con
-  lista de entregables, guion de documentos y decisiones firmadas. Presupuesto 0,8 M.
-- **Semana B — entregables**: xlsx con los motores de familia existentes + documentos con `documentos.py` + bridge.py; 1 refutador (opus) + fixes
-  (sonnet); gates (censo, no-latinos, páginas). Presupuesto 1,5 M.
-- **Semana C — capa de producto y lanzamiento**: landing (plantilla existente), dashboard, functions, Payment Link de Stripe (John), changelog, hub,
-  banners en el blog; gate offline + LIVE. Presupuesto 0,8 M.
+**POLÍTICA DE 3 FASES + PRESUPUESTO PROPORCIONAL AL PRECIO (John, 20-sep-2026; decisión delegada a Claude).**
+Sustituye al «método en 3 semanas» del 29-ago, que nunca se cumplió: los 5 productos nuevos (Food Cost 3-4 sep, Manual
+Manager 4-5 sep, Chef Ejecutivo 6-sep, Pastelería «noche entera» 10-sep, Chocolatería 12+19 sep con corte de cuota y
+kernel panic) se hicieron en maratones de 9-14 h. Lo que faltaba no eran fases sino **un corte duro con entregable
+cerrado, commiteado y pusheado al final de cada una**. Objetivo declarado por John: producto de calidad, validado, 100 %
+funcional y útil, **sin volverse loco con el gasto: el desarrollo se dimensiona al precio que cobramos**.
 
-Propuesta de intercalado: **S3, S6, S9, S12, S15…** se dedican al producto nuevo (A, B, C consecutivas para el primero: S3-S5), desplazando la v2.0 de esa
-semana una semana. Primer lanzamiento realista: **Guía Food Cost + Ingeniería de Menú a mediados de octubre**.
+| Fase | Produce | Gate de salida (DoD) | Decisión de John | Máquina |
+|---|---|---|---|---|
+| **F1 Fundamentos** | research con cifras etiquetadas [medido]/[fuente]/[estimado] (DataForSEO ES **y** el país objetivo, GSC, canibalización contra lo LIVE), SPEC con decisiones firmadas, guion, datos de ejemplo, tarjeta con precio en «Próximos Productos» | SPEC refutada, **tope 2 rondas**; guion verde; tildes del fichero de datos medidas contra un hermano | nombre, precio, alcance (delegadas el 20-sep) | Mac (solo API) |
+| **F2 Entregables** | xlsx con los motores de familia, documentos por redactores Sonnet, carpeta `public/dl/<pid>/` | `censo-entregables --fail` 0 · `gate-no-latinos` · gate de fechas · `postprocess-transversal` · refutación ≤ 2 rondas con lector de regresiones | ninguna | **L/M → VPS** · **S → Mac en serie con vigilante** (11 xlsx openpyxl no calientan; el ping-pong git con el VPS cuesta más de lo que ahorra) |
+| **F3 Producto y lanzamiento** | catálogo, `payment-links`, `product-prices` (`sync-product-prices.py`), functions, `zona-app.ts`, landing con las **3 puertas cripto**, imágenes, FAQ, hub (quitar de `comingSoon` y **entrar en la posición 1** en los DOS ficheros gemelos; «✨ Nuevo» solo los 5 más recientes; Mega Pack siempre el último), PR con preview, Payment Link, merge, gates LIVE, broadcast en la cola de Resend | `gate-flujo-postpago.py` LIVE en verde · `miselup-gate` · `whatsapp-gate` · `robots-gate` · sitemap reenviado | **Payment Link de Stripe** (única no delegable) | Mac o VPS (el build lo hace Netlify) |
+
+**Cada fase cierra con `commit + push`** (firma `Via: Claude Code`) y una línea en el handoff con el comando exacto para
+retomar. Si llega el corte de cuota o un panic se pierde media fase, no un producto; y cambiar de máquina entre fases
+deja de ser un riesgo (el miedo del 12-sep).
+
+**El TAMAÑO decide las sesiones, no la política:**
+
+| Tamaño | Familias | Sesiones | Techo de tokens de subagentes (producto entero) |
+|---|---|---|---|
+| **S** | kits de tareas réplica (12-14 €), calculadoras (9 €) | **1 sesión, 3 cortes** | **≤ 2,5 M** |
+| **M** | planes de negocio (35-45 €), kits de gestión (19 €), eBooks (24 €) | 2 sesiones (F1+F2 · F3) | **≤ 5 M** |
+| **L** | guías «Cómo Montar» y manuales (55-65 €) | 3 sesiones (F1 · F2 · F3), reparto 2 + 6 + 2 M | **≤ 10 M** |
+
+Calibración: la Chocolatería (65 €) costó ≈ 16 M solo en F2+F3 (redactores 7,3 · capa de producto 1,6 · refutación r1
+2,3 · r2 2,9 · fixer final) más la F1 de 5 rondas de SPEC. El techo L es la mitad. **Si un producto supera su techo un
+30 %, se para y se reporta; no se empuja.** Cómo se llega al techo sin bajar calidad:
+- **Tope de 2 rondas** de refutación por artefacto; la ronda 2 = verificadores por lente + lector de regresiones; la 3.ª
+  comprobación es un gate de script. En S y M, las 3 lentes (cifras · legal · editorial) van **en un solo prompt Opus**.
+- **Capa de producto en S/M**: 1 Sonnet calca los ficheros del hermano más reciente (`kit-tareas-sushi-bar` para kits)
+  + gates de script; nada de «3 lotes Opus + revisor + fixer», que es formato L.
+- **Redactores siempre Sonnet** (Haiku para erratas); Opus solo para SPEC, refutación y decisiones con criterio; Fable
+  orquesta y verifica lo crítico (precios, payment links, functions de entrega, seguridad).
+- **Los gates de script van ANTES que los agentes** y no se re-verifica a mano lo que un gate mide.
+- **Reutilizar motores** (Kit de Tareas 2.4, planes 2.2, guías 2.0): un producto nuevo de familia existente no rediseña
+  nada; escribe contenido y calca la capa de producto.
+
+**Mega Pack (decisión del 20-sep):** queda **congelado en los 13 kits fundacionales** que entrega hoy la function (155
+ficheros, verificado en `netlify/functions/get-download-urls.ts`): kit-tareas, bar, cafetería, catering, chef privado,
+chocolatería, dark kitchen, hamburguesería, heladería, hotel, pastelería, pizzería, restaurante creativo. Los 6 de nicho
+ya LIVE (asador, food truck, marisquería, panadería, sushi bar, tapas bar) y **todos los nuevos** (Taquería, Pollería,
+Arepería, Poke, Plant-based…) **se venden aparte**. Motivo: cada kit añadido al pack es tocar function + dashboard +
+landing + re-verificar sin ingreso nuevo (el pack ya está vendido a 89 €), y canibaliza la venta individual del nicho.
+La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13») y no se toca en F3.
+
 
 ## 4. Protocolo de cada sesión semanal (copiar y seguir)
 

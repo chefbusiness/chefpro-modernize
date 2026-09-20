@@ -473,6 +473,23 @@ y `data/integraciones.ts`.
 - Las páginas de agente (8C) incrustarán **vídeos demo de Loom** cuando estén; no bloquean el arranque.
 - Gotcha de `faq.astro`: el campo `a` se pinta como TEXTO PLANO y alimenta el FAQPage; el HTML con enlaces va en `aHtml` (plantilla con backticks). Meter markup en `a` lo escupe literal en la página.
 
+### 🔴 Productos nuevos: POLÍTICA DE 3 FASES + presupuesto proporcional al precio (John, 20-sep-2026)
+
+John delegó la toma de decisiones del proyecto de productos digitales («tú lideras este proyecto conmigo, te delego la
+toma de decisiones en todo»); la única no delegable es el Payment Link de Stripe. Texto completo y tablas en
+`scripts/productos-digitales/CALENDARIO-V2-SEMANAL.md` §3. Resumen operativo:
+
+- **F1 Fundamentos → F2 Entregables → F3 Producto y lanzamiento.** Cada fase cierra con su gate de salida y `commit +
+  push`, y una línea en el handoff con el comando exacto para retomar. Nunca se sigue a la fase siguiente con la anterior
+  sin cerrar: lo que faltaba no eran fases sino el corte duro.
+- **El tamaño decide las sesiones y el techo de tokens de subagentes**: S (kits réplica 12-14 €) = 1 sesión con 3 cortes,
+  ≤ 2,5 M · M (planes 35-45 €, kits de gestión, eBooks) = 2 sesiones, ≤ 5 M · L (guías y manuales 55-65 €) = 3 sesiones,
+  ≤ 10 M. Si un producto pasa su techo un 30 %, se para y se reporta. Calidad = gates de script + tope de 2 rondas, no
+  más agentes.
+- **Máquina**: F1 en el Mac (solo API); F2 en el VPS para L/M y en el Mac en serie con vigilante para S; F3 en cualquiera.
+- **Mega Pack congelado en sus 13 kits** (155 ficheros en la function); los kits nuevos se venden aparte y el pack va
+  **siempre el último** del hub. **Orden del hub**: novedades primero (la más nueva en 1), luego los más vendidos.
+
 ### Correos de producto: uno por cada actualización o lanzamiento, en cola de 5 días (John, 2026-09-05)
 
 Regla de trabajo permanente: **cada vez que un producto digital se actualiza de versión (2.0, 2.1…) o se crea uno
