@@ -54,6 +54,7 @@ Cómo verificar (SIN tocar `astro-site/public/dl/`; `--origen` del orquestador l
 import argparse
 import math
 import os
+import sys
 import re
 import sys
 
@@ -1028,6 +1029,62 @@ FICHEROS = [
 # ==========================================================================
 # Construcción
 # ==========================================================================
+# ==========================================================================
+# CONTENIDO REAL (F2): los redactores escriben `contenido/contenido_a.py` (01-04) y
+# `contenido_b.py` (05-09 y BONUS) sin tocar este fichero. Si existen, sustituyen los
+# EJEMPLOS de arriba por nombre de hoja; si no, el esqueleto sigue siendo ejecutable.
+# La columna de tiempo de 07/08 se fija aquí para que coincida con lo que el motor
+# decidiría por CONTENIDO (motor.cadencia): día de la semana → «Día», cadencia →
+# «Cadencia», antelación → «Antelación». Verificado con main.py --dry-run.
+# ==========================================================================
+COL_TIEMPO_POR_HOJA = {
+    'Tareas Semanales': ('Día', FILA2_DIA),
+    'Tareas Mensuales': ('Cadencia', FILA2_CADENCIA),
+    'Temporadas y Producto': ('Antelación', FILA2_ANTELACION),
+    'Calendario de Eventos': ('Antelación', FILA2_ANTELACION),
+}
+
+
+def aplicar_contenido(ficheros):
+    import importlib
+    base = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        'productos-digitales', 'kit-tareas-taqueria', 'contenido')
+    if base not in sys.path:
+        sys.path.insert(0, base)
+    mods = []
+    for nombre in ('contenido_a', 'contenido_b'):
+        try:
+            mods.append(importlib.import_module(nombre))
+        except ImportError:
+            pass
+    sec = {}
+    for m in mods:
+        sec.update(getattr(m, 'SEC', {}))
+    usados = set()
+    for cfg in ficheros:
+        for h in cfg['hojas']:
+            tipo = h['tipo']
+            if tipo == 'checklist' and h['nombre'] in sec:
+                h['secciones'] = sec[h['nombre']]
+                usados.add(h['nombre'])
+            if tipo == 'checklist' and h['nombre'] in COL_TIEMPO_POR_HOJA:
+                h['col_tiempo'], h['fila2'] = COL_TIEMPO_POR_HOJA[h['nombre']]
+            for m in mods:
+                if tipo == 'plantilla' and hasattr(m, 'PLANTILLA_SECCIONES'):
+                    h['secciones'] = m.PLANTILLA_SECCIONES
+                if tipo == 'briefing' and hasattr(m, 'BRIEFING_BLOQUES'):
+                    h['bloques'] = m.BRIEFING_BLOQUES
+                if tipo == 'calendario' and hasattr(m, 'CALENDARIO_FILAS'):
+                    h['filas'] = m.CALENDARIO_FILAS
+    sobran = set(sec) - usados
+    if sobran:
+        raise SystemExit('Hojas del contenido que no existen en FICHEROS: %s' % sorted(sobran))
+    return len(mods), len(usados)
+
+
+N_MODULOS, N_HOJAS_REALES = aplicar_contenido(FICHEROS)
+
+
 def construir(cfg, destino, prueba=False):
     wb = Workbook()
     wb.active.title = 'Instrucciones'
