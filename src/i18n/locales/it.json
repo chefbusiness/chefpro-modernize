@@ -73,17 +73,30 @@
     "v2_cta_pricing": "Scopri i piani e i prezzi",
     "v2_microcopy": "Piani da 10 €/mese · un nuovo agente AI aggiunto ogni settimana",
     "v2_business_types": [
-      "nel tuo Ristorante",
-      "nel tuo Catering",
-      "nella tua Pizzeria",
-      "nella tua Hamburgheria",
-      "nella tua Panetteria",
-      "nella tua Pasticceria",
-      "nella tua Cioccolateria",
-      "nella tua Gelateria",
-      "nella tua Dark Kitchen",
-      "nella tua Caffetteria",
-      "nel tuo Brunch"
+      "Ristorante",
+      "Catering",
+      "Pizzeria",
+      "Hamburgheria",
+      "Panetteria",
+      "Pasticceria",
+      "Cioccolateria",
+      "Gelateria",
+      "Dark Kitchen",
+      "Caffetteria",
+      "Brunch"
+    ],
+    "v2_business_prefixes": [
+      "nel tuo",
+      "nel tuo",
+      "nella tua",
+      "nella tua",
+      "nella tua",
+      "nella tua",
+      "nella tua",
+      "nella tua",
+      "nella tua",
+      "nella tua",
+      "nel tuo"
     ]
   },
   "notifications": {

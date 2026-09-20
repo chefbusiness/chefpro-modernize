@@ -73,17 +73,30 @@
     "v2_cta_pricing": "Pläne & Preise ansehen",
     "v2_microcopy": "Pläne ab 10 €/Monat · jede Woche ein neuer KI-Agent",
     "v2_business_types": [
-      "in Ihrem Restaurant",
-      "in Ihrem Catering",
-      "in Ihrer Pizzeria",
-      "in Ihrer Burger-Bar",
-      "in Ihrer Bäckerei",
-      "in Ihrer Konditorei",
-      "in Ihrer Chocolaterie",
-      "in Ihrer Eisdiele",
-      "in Ihrer Dark Kitchen",
-      "in Ihrem Café",
-      "in Ihrem Brunch"
+      "Restaurant",
+      "Catering",
+      "Pizzeria",
+      "Burger-Bar",
+      "Bäckerei",
+      "Konditorei",
+      "Chocolaterie",
+      "Eisdiele",
+      "Dark Kitchen",
+      "Café",
+      "Brunch"
+    ],
+    "v2_business_prefixes": [
+      "in Ihrem",
+      "in Ihrem",
+      "in Ihrer",
+      "in Ihrer",
+      "in Ihrer",
+      "in Ihrer",
+      "in Ihrer",
+      "in Ihrer",
+      "in Ihrer",
+      "in Ihrem",
+      "in Ihrem"
     ]
   },
   "notifications": {

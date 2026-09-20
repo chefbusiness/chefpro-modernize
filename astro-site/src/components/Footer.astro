@@ -8,6 +8,10 @@ import { integracionesHref } from '../data/integraciones';
 // Helper compartido: la copia local que había aquí sólo mapeaba en/it/fr/de, así
 // que pt y nl caían a la plataforma española pese a que ptapp/nlapp existen.
 import { appUrl } from '../lib/app-url';
+// Ruta de la página de precios por idioma: helper compartido con Header.astro,
+// Hero.astro y BusinessToolsShowcase.astro. Aquí había una SÉPTIMA copia del
+// mapa literal, incrustada en el href.
+import { pricingHref } from '../lib/pricing-path';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -141,7 +145,7 @@ const blogLinks: FooterLink[] =
       <div>
         <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_formacion')}</h4>
         <ul class="space-y-3 text-sm">
-          <li><a href={{ es: '/precios', en: '/en/pricing', fr: '/fr/tarifs', de: '/de/preise', it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen' }[lang] ?? '/precios'} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
+          <li><a href={pricingHref(lang)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
           <li><a href={s(MENTORIA_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.mentoria_online')}</a></li>
           <!-- Sólo ES: la formación presencial no tiene página traducida y
                /it/formacion-presencial da 404. El Header ya tenía este guard;

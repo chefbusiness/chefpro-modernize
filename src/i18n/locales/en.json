@@ -87,6 +87,19 @@
       "Dark Kitchen",
       "Coffee Shop",
       "Brunch"
+    ],
+    "v2_business_prefixes": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
   },
   "notifications": {

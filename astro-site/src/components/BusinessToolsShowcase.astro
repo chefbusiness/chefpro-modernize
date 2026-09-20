@@ -39,7 +39,7 @@ const sideTools: BusinessTool[] = SIDE_IDS
     </p>
     <h2 class="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-balance">
       {t(lang, 'showcase.v2_business_title_prefix')}{' '}
-      <span class="text-accent-dark">{t(lang, 'showcase.v2_business_title_highlight')}</span>{' '}
+      <span class="text-accent-ink">{t(lang, 'showcase.v2_business_title_highlight')}</span>{' '}
       {t(lang, 'showcase.v2_business_title_suffix')}
     </h2>
     <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
@@ -81,7 +81,7 @@ const sideTools: BusinessTool[] = SIDE_IDS
         <p class="text-[11px] uppercase tracking-wider text-zinc-400">
           {t(lang, 'showcase.v2_use_case_label')}
         </p>
-        <p class="text-sm text-white">«{t(lang, `${heroKey}.preview`)}»</p>
+        <p class="text-sm italic text-white">{t(lang, `${heroKey}.preview`)}</p>
       </div>
     </article>
 
@@ -92,7 +92,7 @@ const sideTools: BusinessTool[] = SIDE_IDS
         const key = appKey(tool.id);
         return (
           <article data-tool={tool.id} class="rounded-xl border bg-card p-5 flex flex-col gap-2">
-            <div class="h-9 w-9 rounded-lg bg-accent/15 text-accent-dark flex items-center justify-center">
+            <div class="h-9 w-9 rounded-lg bg-accent/15 text-accent-ink flex items-center justify-center">
               <IconComponent className="h-5 w-5" aria-hidden="true" />
             </div>
             <h3 class="font-semibold">{t(lang, `${key}.name`)}</h3>

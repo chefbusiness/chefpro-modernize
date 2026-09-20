@@ -26,8 +26,14 @@ const { lang = 'es' } = Astro.props;
 // un idioma no tenga traducida la lista v2, tList() devuelve [] y caemos a la
 // lista de siempre para no dejar el H1 sin palabra rotatoria.
 const v2BusinessTypes = tList(lang, 'hero.v2_business_types');
-const businessTypes = v2BusinessTypes.length > 0 ? v2BusinessTypes : tList(lang, 'hero.business_types');
+const businessTypes = v2BusinessTypes.length > 0 ? v2BusinessTypes : tList(lang, 'hero.business_types').slice(1);
+// Artículo con género DELANTE del negocio (de/it/pt: «in Ihrer Pizzeria» pero
+// «in Ihrem Restaurant»). Va FUERA del <span> dorado: el subrayado y el color de
+// marca son para el nombre del negocio, no para la preposición. es/en/fr/nl
+// devuelven 11 cadenas vacías y el H1 queda exactamente igual que antes.
+const businessPrefixes = tList(lang, 'hero.v2_business_prefixes');
 const firstWord = businessTypes[0] ?? '';
+const firstPrefix = businessPrefixes[0] ?? '';
 
 // getDynamicCount() de HeroSocialProof.tsx — computado server-side (determinista por fecha de build)
 function getDynamicCount(): number {
@@ -89,7 +95,7 @@ const stats = [
 
   <h1 class="text-center text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] text-balance">
     {t(lang, 'hero.v2_title_prefix')}{' '}
-    <span id="hero-dynamic-word" class="inline-block transition-all duration-300 dynamic-hero-text opacity-100 scale-100">{firstWord}</span>
+    <span id="hero-dynamic-prefix">{firstPrefix}</span><span id="hero-dynamic-gap">{firstPrefix ? ' ' : ''}</span><span id="hero-dynamic-word" class="inline-block transition-all duration-300 dynamic-hero-text opacity-100 scale-100">{firstWord}</span>
     {' '}{t(lang, 'hero.v2_title_suffix')}{' '}
     <span class="text-foreground">{t(lang, 'hero.title_brand')}</span>
   </h1>
@@ -107,19 +113,23 @@ const stats = [
     {stats.map((s) => (
       <div class="flex items-baseline justify-center gap-2 text-center">
         <span class="shrink-0 text-2xl md:text-3xl font-bold text-foreground" data-counter data-target={s.end} data-suffix={s.suffix}>{s.end}{s.suffix}</span>
-        <span class="min-w-0 text-xs sm:text-sm text-muted-foreground font-medium leading-tight text-balance">{s.label}</span>
+        <span class="min-w-0 break-words hyphens-auto text-xs sm:text-sm text-muted-foreground font-medium leading-tight text-balance">{s.label}</span>
       </div>
     ))}
   </div>
 
-  <!-- CTA doble. flex-col-reverse = en móvil el botón dorado (último del DOM) va ARRIBA. -->
-  <div class="flex flex-col-reverse sm:flex-row items-center gap-4 animate-fade-up w-full sm:w-auto">
-    <a href={pricingHref(lang)} class="uppercase tracking-wider text-sm font-semibold inline-flex items-center gap-2 text-foreground hover:text-accent-dark transition-colors">
-      {t(lang, 'hero.v2_cta_pricing')}
+  <!-- CTA doble. El botón dorado va PRIMERO en el DOM (Keak lo quiere arriba en
+       móvil) y `sm:order-last` lo manda a la derecha en escritorio. Antes se
+       hacía con flex-col-reverse, que invierte lo pintado pero NO el orden de
+       tabulación: el teclado y los lectores de pantalla recorrían el hero al
+       revés de lo que se veía. -->
+  <div class="flex flex-col sm:flex-row items-center gap-4 animate-fade-up w-full sm:w-auto">
+    <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="sm:order-last inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]">
+      {t(lang, 'cta.primary')}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
-    <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]">
-      {t(lang, 'cta.primary')}
+    <a href={pricingHref(lang)} class="uppercase tracking-wider text-sm font-semibold inline-flex items-center gap-2 text-foreground hover:text-accent-dark transition-colors">
+      {t(lang, 'hero.v2_cta_pricing')}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
   </div>
@@ -129,25 +139,47 @@ const stats = [
   </p>
 </section>
 
-<script define:vars={{ businessTypes }}>
-  // Rotación de palabra dinámica (equivalente al useEffect de ModernHero)
+<script define:vars={{ businessTypes, businessPrefixes }}>
+  // Rotación de palabra dinámica (equivalente al useEffect de ModernHero).
+  // El artículo (de/it/pt) vive en su propio <span> FUERA del dorado y rota con
+  // el MISMO índice: si se desincronizaran saldría «in Ihrer Restaurant».
   const el = document.getElementById('hero-dynamic-word');
+  const elPrefix = document.getElementById('hero-dynamic-prefix');
+  const elGap = document.getElementById('hero-dynamic-gap');
+  const prefixes = Array.isArray(businessPrefixes) ? businessPrefixes : [];
+  // Lista más corta o ausente (idioma sin artículos) ⇒ prefijo vacío y sin hueco.
+  const prefixAt = (i) => (typeof prefixes[i] === 'string' ? prefixes[i] : '');
   if (el && Array.isArray(businessTypes) && businessTypes.length > 1) {
     let idx = 0;
     const show = () => {
       el.classList.remove('opacity-0', 'scale-95');
       el.classList.add('opacity-100', 'scale-100');
+      if (elPrefix) {
+        elPrefix.classList.remove('opacity-0', 'scale-95');
+        elPrefix.classList.add('opacity-100', 'scale-100');
+      }
     };
+    const hide = () => {
+      el.classList.remove('opacity-100', 'scale-100');
+      el.classList.add('opacity-0', 'scale-95');
+      if (elPrefix) {
+        elPrefix.classList.remove('opacity-100', 'scale-100');
+        elPrefix.classList.add('opacity-0', 'scale-95');
+      }
+    };
+    if (elPrefix) elPrefix.classList.add('inline-block', 'transition-all', 'duration-300', 'opacity-100', 'scale-100');
     // En pestañas en background el navegador throttlea los timers: el setTimeout de
     // restauración se retrasa y la palabra se quedaba invisible (opacity-0) al volver
     // a la pestaña. Guard con document.hidden + restauración en visibilitychange.
     setInterval(() => {
       if (document.hidden) return;
-      el.classList.remove('opacity-100', 'scale-100');
-      el.classList.add('opacity-0', 'scale-95');
+      hide();
       setTimeout(() => {
         idx = (idx + 1) % businessTypes.length;
         el.textContent = businessTypes[idx];
+        const pre = prefixAt(idx);
+        if (elPrefix) elPrefix.textContent = pre;
+        if (elGap) elGap.textContent = pre ? ' ' : '';
         show();
       }, 300);
     }, 3000);

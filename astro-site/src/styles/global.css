@@ -55,6 +55,11 @@
     --accent-foreground: 240 5.9% 10%;
     --accent-light: 42 100% 85%;
     --accent-dark: 42 100% 40%;
+    /* accent-ink: dorado LEGIBLE para TEXTO pequeño sobre fondo claro (CRO Keak,
+       20-sep-2026). --accent-dark (42 100% 40%) da ~2,9:1 sobre blanco y no pasa
+       AA; este 30% de luminosidad da ~4,7:1. Usar text-accent-ink en texto, y
+       dejar accent/accent-dark para fondos, bordes e iconos grandes. */
+    --accent-ink: 42 100% 30%;
     
     /* Chef Pro Golden System */
     --chef-gold: 42 100% 50%;
@@ -127,6 +132,8 @@
     --accent-foreground: 240 5.9% 10%;
     --accent-light: 42 100% 75%;
     --accent-dark: 42 100% 45%;
+    /* En oscuro el problema se invierte: hace falta MÁS claro, no más oscuro. */
+    --accent-ink: 42 100% 62%;
     
     --chef-gold: 42 100% 60%;
     --chef-gold-light: 42 100% 75%;

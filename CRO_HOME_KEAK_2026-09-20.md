@@ -100,14 +100,30 @@ otras partes las usan (`SocialProofStrip`, JSON-LD, `sobre-nosotros`, landings):
 | 7 portadas | `pages/{,en,fr,de,it,pt,nl}/index.astro` → `Pricing.astro` | reescritura del componente |
 | 7 páginas de precios | `precios.astro`, `en/pricing`, `fr/tarifs`, `de/preise`, `it/prezzi`, `pt/precos`, `nl/prijzen` | su rejilla `<section aria-label>` con `plans[]` propios → `<Pricing lang medium="pricing" />`; se quedan comparativa, perfiles y FAQ; la columna destacada de la comparativa pasa a Premium Plus |
 | 8 landings de marketing × 7 idiomas (islands `client:load`) | `src/pages/{ReducirCostesRestaurante,ChatGPTRestaurantes,MenuRestaurante,RecetasIARestaurantes,SoftwareGestionCocina,EscandallosRestaurante,HerramientasIARestaurantes,MarketingRestaurante}.tsx` | su `<section>` de precios inline + `const plans` → `<PricingV2 medium="landing-…" />` |
-| 6 herramientas gratuitas × 7 idiomas | `src/components/PricingPlans.tsx` (usado por 6 páginas TSX) | pasa a envolver `PricingV2` |
+| 6 herramientas gratuitas × 7 idiomas | `src/components/PricingPlans.tsx` (usado por `TestDigitalizacion`, `CalendarioContenidos`, `CalculadoraBrigada`, `GeneradorMenuDegustacion`, `DetectorAlergenos`, `GeneradorTextosCarta`) | pasa a envolver `PricingV2`, traduciendo su `toolKey` camelCase a `utm_medium` kebab |
+| 2 herramientas más × 7 idiomas | `src/pages/CalculadoraFoodCost.tsx`, `src/pages/SimuladorRentabilidad.tsx` | **no** usan `PricingPlans`: montan `<PricingV2 medium="tool-food-cost" />` y `medium="tool-rentabilidad"` directamente |
+Total de islands: **8 landings + 8 herramientas = 16 × 7 idiomas = 112 páginas** con la tabla v2
+servida por React, más las 7 portadas y las 7 páginas de precios que la sirven desde Astro.
+
 `src/components/PricingV2.tsx` es el gemelo React de `Pricing.astro`: mismo copy (react-i18next,
 mismas claves), mismas clases, `useLanguage().getAppUrl()` para el CTA.
 
 ## 4. Rutas de CTA
 - Botones de plan: `appCtaUrl(lang, medium, slug)` con `utm_content` = `member | premium-pro |
-  premium-plus | premium-max | premium-max-annual` y `medium` = `home-pricing` (portadas),
-  `pricing` (páginas de precios), `landing-pricing` / `tool-pricing` (islands).
+  premium-plus | premium-max | premium-max-annual`.
+- **`utm_medium` identifica la superficie CONCRETA, no la familia** (si todas las landings
+  mandasen `landing-pricing` no se podría saber cuál vende). El esquema real, todo en kebab-case:
+
+  | Superficie | `utm_medium` | Valores |
+  |---|---|---|
+  | 7 portadas | `home-pricing` | uno solo |
+  | 7 páginas de precios | `pricing` | uno solo |
+  | 8 landings de marketing | `landing-<slug>` | `landing-reducir-costes`, `landing-chatgpt`, `landing-carta-menu`, `landing-recetas-ia`, `landing-software-gestion`, `landing-escandallos`, `landing-herramientas-ia`, `landing-marketing` |
+  | 8 herramientas gratuitas | `tool-<slug>` | `tool-digitalizacion`, `tool-calendario`, `tool-degustacion`, `tool-alergenos`, `tool-brigada`, `tool-textos-carta` (los 6 del mapa de `PricingPlans.tsx`) + `tool-food-cost` y `tool-rentabilidad` (montados a mano) |
+
+  El slug NO se deriva del `toolKey`, que es camelCase (`toolScore`, `toolMenuCopy`): `PricingPlans.tsx`
+  lleva un mapa explícito, porque dos de los seis no se deducen de su nombre. Un `toolKey` nuevo cae a
+  un kebab automático, pero lo correcto es darlo de alta en el mapa.
 - «See plans & pricing» (hero) y «See plans that unlock all 6 tools» (business): página de precios
   del idioma (`lib/pricing-path.ts`, el mapa que tenía `Header.astro`).
 - «Talk to us for an enterprise plan»: `/contacto` en ES; `mailto:info@aichef.pro` en el resto
@@ -117,6 +133,15 @@ mismas claves), mismas clases, `useLanguage().getAppUrl()` para el CTA.
 `data-keak="hero-v2" | "business-v2" | "pricing-v2"` en la raíz de cada sección; en pricing,
 `data-plan="<id>"` por tarjeta, `data-role-chip` por chip y `data-popular` sólo en Premium Plus.
 Gate: `scripts/cro-home/keak-dist-gate.py --base <url del preview o dist local>`.
+
+**Token nuevo `text-accent-ink`** (`--accent-ink`, 42 100% 30% en claro y 42 100% 62% en oscuro;
+declarado en `astro-site/src/styles/global.css` y en los dos `tailwind.config.ts`). El dorado de
+marca es un color de FONDO: `--accent` (42 100% 50%) da ~1,9:1 sobre blanco y `--accent-dark`
+(42 100% 40%) ~2,9:1, los dos por debajo del 4,5:1 que pide WCAG AA para texto normal. La v2 de
+Keak metió dorado en texto PEQUEÑO —la píldora de audiencia de cada plan (11 px), el enlace
+enterprise, el «30 %» del H2 de herramientas y los iconos de las 5 tarjetas claras—, así que esos
+usos pasan a `text-accent-ink` (~4,7:1). `accent` y `accent-dark` se quedan para fondos, bordes,
+iconos grandes y el dorado sobre la tarjeta oscura, donde el contraste ya es correcto.
 
 ## 6. Cifras: cuáles son nuestras y cuál hay que confirmar
 - 764+ chefs, contador dinámico, 75+/50+, 10+, 25+, 6, «new AI agent every week», 30 % (preview de

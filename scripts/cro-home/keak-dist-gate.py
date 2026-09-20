@@ -2,7 +2,13 @@
 # -*- coding: utf-8 -*-
 """CRO home (Keak, 20-sep-2026) — GATE del HTML servido: comprueba que las tres
 secciones v2 están en las 7 portadas, la pricing v2 en las 7 páginas de precios y
-en las 112 páginas con island de precios, y que no quedan restos de la versión vieja.
+en las 113 páginas con island de precios, y que no quedan restos de la versión vieja.
+
+Las 113: 16 componentes de la SPA con bloque de precios × 7 idiomas = 112, MÁS el alias
+inglés /en/ai-food-cost-calculator, que monta un segundo CalculadoraFoodCostIsland. El
+censo se hace leyendo las páginas .astro, así que si alguien quita un island (o nace uno
+sin bloque de precios) el recuento baja y el gate lo canta: sin ese tope, el censo puede
+encogerse en silencio y el gate seguiría diciendo «verde» sobre menos páginas.
 
 Funciona contra un directorio `dist/` (VPS, tras `astro build`) o contra una URL base
 (deploy preview de Netlify / producción) con `--base`. No usa navegador: sólo HTML.
@@ -12,7 +18,9 @@ Qué exige por página (marcadores que emiten los componentes, ver CRO_HOME_KEAK
   · pricing-v2: 5 tarjetas data-plan (member, premium-pro/premium_pro…), 4 data-role-chip,
     EXACTAMENTE 1 data-popular y que sea premium_plus, 5 CTAs con utm_content de plan,
     0 claves i18n crudas («v2_» literal en el texto = traducción que faltó)
-  · restos: 0× class="popular-plan" (pricing viejo), 0× data-app-url (business viejo),
+  · restos: 0× class="…popular-plan…" DENTRO de pricing-v2 (pricing viejo; buscarlo en
+    todo el HTML daba falso positivo: la subcadena vive también en el CSS del sitio),
+    0× data-app-url (business viejo),
     0× «SEE RESOURCES»/«VER RECURSOS» en el hero (cambio 1 lo quitó)
   · hero-v2: el H1 contiene hero-dynamic-word y la sección hero enlaza a la página de precios del idioma
   · 50+ (no 75+) en fr/de/it/pt/nl dentro de pricing-v2 y hero-v2
@@ -31,16 +39,22 @@ PRICING = {'es': '/precios', 'en': '/en/pricing', 'fr': '/fr/tarifs', 'de': '/de
            'it': '/it/prezzi', 'pt': '/pt/precos', 'nl': '/nl/prijzen'}
 SECUNDARIOS = {'fr', 'de', 'it', 'pt', 'nl'}
 PLANES = ['member', 'premium_pro', 'premium_plus', 'premium_max', 'premium_plus_annual']
+# 16 islands con bloque de precios × 7 idiomas + el alias EN /en/ai-food-cost-calculator.
+ISLANDS_ESPERADOS = 113
 SLUGS = ['member', 'premium-pro', 'premium-plus', 'premium-max', 'premium-max-annual']
 
 
 def rutas_islands():
-    """Las páginas Astro que montan un island con bloque de precios (8 landings + 6 tools) × 7."""
+    """Las páginas Astro que montan un island con bloque de precios.
+
+    8 landings de marketing + 8 herramientas gratuitas = 16 componentes × 7 idiomas = 112,
+    + el alias EN /en/ai-food-cost-calculator = ISLANDS_ESPERADOS (113).
+    """
     pages = RAIZ / 'astro-site' / 'src' / 'pages'
     islas = ('ReducirCostesRestaurante|ChatGPTRestaurantes|MenuRestaurante|RecetasIARestaurantes|'
              'SoftwareGestionCocina|EscandallosRestaurante|HerramientasIARestaurantes|MarketingRestaurante|'
              'CalendarioContenidos|TestDigitalizacion|GeneradorMenuDegustacion|CalculadoraBrigada|'
-             'DetectorAlergenos|GeneradorTextosCarta')
+             'DetectorAlergenos|GeneradorTextosCarta|CalculadoraFoodCost|SimuladorRentabilidad')
     out = []
     for p in pages.rglob('*.astro'):
         if re.search('(?:' + islas + ')Island', p.read_text(encoding='utf-8')):
@@ -96,15 +110,21 @@ def revisar_pricing(html, lang, errores, ruta):
     if pops != ['premium_plus']:
         errores.append(f'{ruta}: data-popular en {pops} (esperado solo premium_plus)')
     for slug in SLUGS:
-        if f'utm_content={slug}' not in s:
+        # Anclado por la derecha: 'utm_content=premium-max' casa dentro de
+        # 'utm_content=premium-max-annual', así que sin el (?![\w-]) el gate daba por
+        # presente el CTA de premium-max aunque sólo estuviera el del plan anual.
+        if not re.search(rf'utm_content={re.escape(slug)}(?![\w-])', s):
             errores.append(f'{ruta}: falta CTA utm_content={slug}')
     cruda = re.search(r'>[^<]*\bv2_[a-z_]+', s)
     if cruda:
         errores.append(f'{ruta}: clave i18n cruda en pricing-v2: {cruda.group(0)[:60]!r}')
     if lang in SECUNDARIOS and '75+' in re.sub(r'<[^>]+>', ' ', s):
         errores.append(f'{ruta}: «75+» en pricing-v2 de un idioma que anuncia 50+')
-    if 'class="popular-plan' in html or "popular-plan " in html:
-        errores.append(f'{ruta}: resto del pricing viejo (.popular-plan)')
+    # Sólo dentro de pricing-v2 y sólo como CLASE: 'popular-plan' aparece en el CSS del
+    # sitio (la hoja global sigue definiendo la regla), y buscarlo en todo el HTML
+    # marcaba como resto del pricing viejo cualquier página que cargase esa hoja.
+    if re.search(r'class="[^"]*\bpopular-plan\b[^"]*"', s):
+        errores.append(f'{ruta}: resto del pricing viejo (class="…popular-plan…")')
 
 
 def revisar_home(html, lang, errores, ruta):
@@ -158,6 +178,12 @@ def main():
             except Exception as e:
                 errores.append(f'{ruta}: no se pudo leer ({e})')
         islas = rutas_islands()
+        if len(islas) != ISLANDS_ESPERADOS:
+            errores.append(
+                f'censo de islands: {len(islas)} páginas, esperadas {ISLANDS_ESPERADOS} '
+                f'(16 islands × 7 idiomas + el alias EN /en/ai-food-cost-calculator). '
+                f'Si el cambio es deliberado, actualiza ISLANDS_ESPERADOS; si no, falta '
+                f'un island o alguien quitó el bloque de precios de una página.')
         for ruta in islas:
             try:
                 revisar_pricing(leer(a.base, ruta), lang_de(ruta), errores, ruta); n += 1

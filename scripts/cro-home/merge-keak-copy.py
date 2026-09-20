@@ -10,6 +10,10 @@ Qué hace al fundir (idempotente):
   3. hero.v2_business_types = hero.business_types sin su primer elemento («Gestión»/
      «Management»: encajaba en «Transforma tu Gestión» pero no en «…en tu Gestión»).
      El primero que queda es «Restaurante»: es lo que Google lee en el H1 SSR.
+     Y hero.v2_business_prefixes = el ARTÍCULO con género que va delante en de/it/pt
+     («in Ihrer» / «nella tua» / «na sua»), lista PARALELA a la anterior y con el
+     mismo número de elementos; en es/en/fr/nl son 11 cadenas vacías. El artículo
+     va en su propia clave porque en el H1 se pinta FUERA del <span> dorado.
   4. pricing.plans.member.period = pricing.plans.premium_pro.period si falta (la tarjeta
      Member v2 muestra «/mes» como las demás).
 
@@ -17,7 +21,8 @@ Qué comprueba --check (falla con código 1):
   · toda clave v2 del inglés existe en los 7 idiomas y ninguna vale ""
   · los dígitos de cada cadena coinciden con el inglés (salvo el 75+→50+ documentado)
   · cero caracteres de otro alfabeto; «AI Chef Pro» intacto donde el inglés lo lleva
-  · hero.v2_business_types tiene 11 elementos en los 7 idiomas
+  · hero.v2_business_types y hero.v2_business_prefixes tienen 11 elementos en los 7
+    idiomas (y por tanto rotan en sincronía: mismo índice = artículo + sustantivo)
 Uso:
     python3 merge-keak-copy.py --lang en          # una
     python3 merge-keak-copy.py --todos            # las 7 que tengan keak-copy.<lang>.json
@@ -43,8 +48,10 @@ SOSPECHOSO = re.compile(
 #  · «el pase» de cocina: FR «le passe» y PT «o passe» son correctos; IT dice «il
 #    pass», DE «der Pass» y NL «de pas».
 #  · DE/IT/PT tienen artículo con GÉNERO delante del negocio («in Ihrer Pizzeria»
-#    pero «in Ihrem Restaurant»): el artículo va DENTRO de la palabra rotatoria y
-#    el prefijo del H1 se acorta. ES/EN/FR/NL no lo necesitan (tu/your/votre/uw).
+#    pero «in Ihrem Restaurant»): el prefijo del H1 se acorta y el artículo se
+#    emite en hero.v2_business_prefixes, que el hero pinta FUERA del <span>
+#    dorado (el color de marca y el subrayado son del NOMBRE del negocio, no de
+#    la preposición). ES/EN/FR/NL no lo necesitan (tu/your/votre/uw).
 OVERRIDES = {
     'es': {'pricing.plans.member.v2_cta': 'Empezar como Miembro'},
     'fr': {'pricing.plans.member.v2_cta': 'Commencer avec Membre',
@@ -62,18 +69,23 @@ OVERRIDES = {
     'nl': {'pricing.plans.member.v2_cta': 'Beginnen als Lid',
            'showcase.v2_business_title_suffix': 'met tools gebouwd voor de pas.'},
 }
-# Palabra rotatoria CON artículo para los idiomas con género (11 elementos, mismo
-# orden que hero.business_types sin «Gestión»). Géneros comprobados a mano.
+# Palabra rotatoria de los idiomas con género, como PARES (artículo, sustantivo):
+# 11 elementos, mismo orden que hero.business_types sin «Gestión». El artículo sale
+# a hero.v2_business_prefixes y el sustantivo a hero.v2_business_types, que es lo
+# único que se pinta en dorado. Géneros comprobados a mano.
 LISTAS_V2 = {
-    'de': ['in Ihrem Restaurant', 'in Ihrem Catering', 'in Ihrer Pizzeria', 'in Ihrer Burger-Bar',
-           'in Ihrer Bäckerei', 'in Ihrer Konditorei', 'in Ihrer Chocolaterie', 'in Ihrer Eisdiele',
-           'in Ihrer Dark Kitchen', 'in Ihrem Café', 'in Ihrem Brunch'],
-    'it': ['nel tuo Ristorante', 'nel tuo Catering', 'nella tua Pizzeria', 'nella tua Hamburgheria',
-           'nella tua Panetteria', 'nella tua Pasticceria', 'nella tua Cioccolateria', 'nella tua Gelateria',
-           'nella tua Dark Kitchen', 'nella tua Caffetteria', 'nel tuo Brunch'],
-    'pt': ['no seu Restaurante', 'no seu Catering', 'na sua Pizzaria', 'na sua Hamburgueria',
-           'na sua Padaria', 'na sua Confeitaria', 'na sua Chocolataria', 'na sua Sorveteria',
-           'na sua Dark Kitchen', 'na sua Cafeteria', 'no seu Brunch'],
+    'de': [('in Ihrem', 'Restaurant'), ('in Ihrem', 'Catering'), ('in Ihrer', 'Pizzeria'),
+           ('in Ihrer', 'Burger-Bar'), ('in Ihrer', 'Bäckerei'), ('in Ihrer', 'Konditorei'),
+           ('in Ihrer', 'Chocolaterie'), ('in Ihrer', 'Eisdiele'), ('in Ihrer', 'Dark Kitchen'),
+           ('in Ihrem', 'Café'), ('in Ihrem', 'Brunch')],
+    'it': [('nel tuo', 'Ristorante'), ('nel tuo', 'Catering'), ('nella tua', 'Pizzeria'),
+           ('nella tua', 'Hamburgheria'), ('nella tua', 'Panetteria'), ('nella tua', 'Pasticceria'),
+           ('nella tua', 'Cioccolateria'), ('nella tua', 'Gelateria'), ('nella tua', 'Dark Kitchen'),
+           ('nella tua', 'Caffetteria'), ('nel tuo', 'Brunch')],
+    'pt': [('no seu', 'Restaurante'), ('no seu', 'Catering'), ('na sua', 'Pizzaria'),
+           ('na sua', 'Hamburgueria'), ('na sua', 'Padaria'), ('na sua', 'Confeitaria'),
+           ('na sua', 'Chocolataria'), ('na sua', 'Sorveteria'), ('na sua', 'Dark Kitchen'),
+           ('na sua', 'Cafeteria'), ('no seu', 'Brunch')],
 }
 
 
@@ -158,12 +170,23 @@ def fundir(lang):
     short = d['pricing']['plans']['member']['name'].replace('AI Chef ', '').strip()
     d['pricing']['plans']['member']['v2_short'] = short
     bt = d['hero'].get('business_types') or []
-    d['hero']['v2_business_types'] = LISTAS_V2.get(lang) or (bt[1:] if len(bt) > 1 else bt)
+    pares_v2 = LISTAS_V2.get(lang)
+    if pares_v2:
+        tipos = [sust for _, sust in pares_v2]
+        prefijos = [art for art, _ in pares_v2]
+    else:
+        tipos = bt[1:] if len(bt) > 1 else list(bt)
+        # es/en/fr/nl: «tu/your/votre/uw» ya va en v2_title_prefix, sin género.
+        prefijos = [''] * len(tipos)
+    d['hero']['v2_business_types'] = tipos
+    d['hero']['v2_business_prefixes'] = prefijos
     member = d['pricing']['plans']['member']
     if not member.get('period'):
         member['period'] = d['pricing']['plans']['premium_pro'].get('period', '')
     guardar(p, d)
-    print(f'  ✓ {lang}: {len(pares(copy))} cadenas fundidas · v2_business_types={len(d["hero"]["v2_business_types"])}')
+    print(f'  ✓ {lang}: {len(pares(copy))} cadenas fundidas · v2_business_types={len(tipos)}'
+          f' · v2_business_prefixes={len(prefijos)}'
+          f'{" (con artículo)" if pares_v2 else " (vacíos)"}')
     return True
 
 
@@ -190,6 +213,13 @@ def check():
         bt = d['hero'].get('v2_business_types')
         if not isinstance(bt, list) or len(bt) != 11:
             errores.append(f'{lang}: hero.v2_business_types tiene {len(bt) if isinstance(bt, list) else "nada"} (esperado 11)')
+        # Paralela a la anterior: el hero rota las dos con el MISMO índice, así que
+        # una lista más corta dejaría «in Ihrer Restaurant» a partir de ese punto.
+        bp = d['hero'].get('v2_business_prefixes')
+        if not isinstance(bp, list) or len(bp) != 11:
+            errores.append(f'{lang}: hero.v2_business_prefixes tiene {len(bp) if isinstance(bp, list) else "nada"} (esperado 11)')
+        elif not all(isinstance(x, str) for x in bp):
+            errores.append(f'{lang}: hero.v2_business_prefixes tiene elementos que no son cadenas')
         if not d['pricing']['plans']['member'].get('period'):
             errores.append(f'{lang}: pricing.plans.member.period vacío')
     if errores:

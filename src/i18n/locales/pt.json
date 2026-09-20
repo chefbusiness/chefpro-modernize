@@ -73,17 +73,30 @@
     "v2_cta_pricing": "Ver planos e preços",
     "v2_microcopy": "Planos a partir de 10 €/mês · novo agente de IA adicionado todas as semanas",
     "v2_business_types": [
-      "no seu Restaurante",
-      "no seu Catering",
-      "na sua Pizzaria",
-      "na sua Hamburgueria",
-      "na sua Padaria",
-      "na sua Confeitaria",
-      "na sua Chocolataria",
-      "na sua Sorveteria",
-      "na sua Dark Kitchen",
-      "na sua Cafeteria",
-      "no seu Brunch"
+      "Restaurante",
+      "Catering",
+      "Pizzaria",
+      "Hamburgueria",
+      "Padaria",
+      "Confeitaria",
+      "Chocolataria",
+      "Sorveteria",
+      "Dark Kitchen",
+      "Cafeteria",
+      "Brunch"
+    ],
+    "v2_business_prefixes": [
+      "no seu",
+      "no seu",
+      "na sua",
+      "na sua",
+      "na sua",
+      "na sua",
+      "na sua",
+      "na sua",
+      "na sua",
+      "na sua",
+      "no seu"
     ]
   },
   "notifications": {

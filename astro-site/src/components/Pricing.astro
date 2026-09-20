@@ -193,11 +193,11 @@ const pricingSchema = {
 };
 ---
 
-<section id="pricing" data-keak="pricing-v2" class="container py-8 md:py-12 lg:py-24 scroll-mt-28">
+<section id="pricing" data-keak="pricing-v2" aria-labelledby="pricing-heading" class="container py-8 md:py-12 lg:py-24 scroll-mt-28">
   {schema && <script type="application/ld+json" set:html={JSON.stringify(pricingSchema)} />}
 
   <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-    <h2 class="text-3xl font-bold leading-[1.1] text-balance md:text-5xl">{t(lang, 'pricing.v2_title')}</h2>
+    <h2 id="pricing-heading" class="text-3xl font-bold leading-[1.1] text-balance md:text-5xl">{t(lang, 'pricing.v2_title')}</h2>
     <p class="max-w-[48rem] text-balance leading-normal text-muted-foreground sm:text-lg sm:leading-7">
       {t(lang, 'pricing.v2_description')}
     </p>
@@ -230,7 +230,7 @@ const pricingSchema = {
 
       <div class={`${row.grid} ${i === 0 ? 'mt-10' : 'mt-8'}`}>
         {row.plans.map((plan) => (
-          <article id={`plan-${plan.id}`} data-plan={plan.id} data-popular={plan.popular ? 'true' : undefined} class={cardClass(plan)}>
+          <article id={`plan-${plan.id}`} tabindex="-1" data-plan={plan.id} data-popular={plan.popular ? 'true' : undefined} class={cardClass(plan)}>
             {plan.popular && (
               <span class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-black shadow">
                 🔥 {t(lang, 'pricing.most_popular')}
@@ -244,12 +244,12 @@ const pricingSchema = {
             )}
 
             {plan.discount && (
-              <span class="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-600 px-2.5 py-1 text-xs font-bold text-white shadow">
+              <span class="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow">
                 {plan.discount}
               </span>
             )}
 
-            <span class="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-dark">
+            <span class="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
               {plan.eyebrow}
             </span>
 
@@ -297,7 +297,7 @@ const pricingSchema = {
   <div class="mt-12 text-center">
     <p class="text-balance text-sm text-muted-foreground">
       {t(lang, 'pricing.v2_enterprise_question')}{' '}
-      <a href={enterpriseHref} class="inline-flex items-center gap-1 font-semibold text-accent-dark hover:underline">
+      <a href={enterpriseHref} class="inline-flex items-center gap-1 font-semibold text-accent-ink hover:underline">
         {t(lang, 'pricing.v2_enterprise_link')}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
@@ -306,16 +306,19 @@ const pricingSchema = {
 </section>
 
 <script>
-  // Chips de rol: sin JS siguen siendo anclas (#plan-…). Con JS, scroll suave y
-  // resalte de 2 s sobre la tarjeta destino.
+  // Chips de rol: son anclas (#plan-…) y se dejan trabajar como tales. La
+  // navegación NATIVA del ancla hace las tres cosas de golpe —desplazar (con
+  // scroll-mt-28 en la tarjeta), mover el FOCO al destino (tiene tabindex="-1")
+  // y escribir el hash en la URL, que así se puede compartir y volver atrás—.
+  // La versión anterior hacía preventDefault() + scrollIntoView() y perdía el
+  // foco y el hash: con teclado el chip llevaba la vista a la tarjeta pero el
+  // siguiente Tab seguía en la fila de chips. Aquí sólo queda el resalte.
   document.querySelectorAll('[data-role-chip]').forEach((chip) => {
-    chip.addEventListener('click', (event) => {
+    chip.addEventListener('click', () => {
       const target = chip.getAttribute('href');
       if (!target || target.charAt(0) !== '#') return;
       const card = document.querySelector(target);
       if (!card) return;
-      event.preventDefault();
-      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       card.classList.add('ring-4', 'ring-accent/50');
       window.setTimeout(() => card.classList.remove('ring-4', 'ring-accent/50'), 2000);
     });

@@ -16,13 +16,16 @@
  *   · URL de plataforma por useLanguage().getAppUrl() (el .astro usa appCtaUrl()).
  *   · SIN JSON-LD Product: lo emite ya la página Astro que monta el island.
  *   · El resalte de los chips es un onClick de React en vez de un <script>.
+ *     NO hace preventDefault ni scrollIntoView: el ancla nativa ya mueve el
+ *     scroll, el foco y el hash (y funciona sin JS). El onClick sólo pinta el
+ *     anillo de 2 s; con preventDefault se perdían el foco y el hash.
  *
  * Tailwind: 'ring-4' y 'ring-accent/50' sólo aparecen dentro del handler. El
  * escáner lee este fichero como TEXTO (astro-site/tailwind.config.ts incluye
  * ../src/components/*.tsx), así que las genera igual; si alguien reescribe el
  * handler, que no pierda esas dos cadenas literales.
  */
-import { Fragment, useCallback, useEffect, useRef, type MouseEvent } from 'react';
+import { Fragment, useCallback, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, Check } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -70,13 +73,12 @@ export default function PricingV2({ medium }: PricingV2Props) {
   const { getAppUrl } = useLanguage();
   const timers = useRef<Record<string, number>>({});
 
-  // Chips de rol: sin JS siguen siendo anclas (#plan-…). Con JS, scroll suave y
-  // resalte de 2 s sobre la tarjeta destino (mismo comportamiento que el .astro).
-  const highlight = useCallback((event: MouseEvent<HTMLAnchorElement>, planId: string) => {
+  // Chips de rol: son anclas (#plan-…) y se dejan trabajar. El navegador hace el
+  // scroll, mueve el foco a la tarjeta (de ahí el tabIndex={-1}) y escribe el hash;
+  // esto sólo añade el resalte de 2 s. Mismo comportamiento que el .astro.
+  const highlight = useCallback((planId: string) => {
     const card = document.getElementById(`plan-${planId}`);
     if (!card) return;
-    event.preventDefault();
-    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
     card.classList.add('ring-4', 'ring-accent/50');
     window.clearTimeout(timers.current[planId]);
     timers.current[planId] = window.setTimeout(() => {
@@ -210,9 +212,16 @@ export default function PricingV2({ medium }: PricingV2Props) {
   const enterpriseHref = lang === 'es' ? '/contacto' : 'mailto:info@aichef.pro';
 
   return (
-    <section id="pricing" data-keak="pricing-v2" className="container py-8 md:py-12 lg:py-24 scroll-mt-28">
+    <section
+      id="pricing"
+      aria-labelledby="pricing-heading"
+      data-keak="pricing-v2"
+      className="container py-8 md:py-12 lg:py-24 scroll-mt-28"
+    >
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-        <h2 className="text-3xl font-bold leading-[1.1] text-balance md:text-5xl">{t('pricing.v2_title')}</h2>
+        <h2 id="pricing-heading" className="text-3xl font-bold leading-[1.1] text-balance md:text-5xl">
+          {t('pricing.v2_title')}
+        </h2>
         <p className="max-w-[48rem] text-balance leading-normal text-muted-foreground sm:text-lg sm:leading-7">
           {t('pricing.v2_description')}
         </p>
@@ -224,11 +233,11 @@ export default function PricingV2({ medium }: PricingV2Props) {
             key={chip.plan.id}
             href={`#plan-${chip.plan.id}`}
             data-role-chip=""
-            onClick={(event) => highlight(event, chip.plan.id)}
+            onClick={() => highlight(chip.plan.id)}
             className="inline-flex items-center gap-1 rounded-full border border-border bg-background px-3 py-1.5 text-xs text-muted-foreground transition-colors hover:border-accent hover:text-foreground"
           >
-            <span>{chip.role} →</span>
-            <strong className="font-semibold text-foreground">{chip.short} {chip.plan.price}</strong>
+            <span>{`${chip.role} →`}</span>
+            <strong className="font-semibold text-foreground">{`${chip.short} ${chip.plan.price}`}</strong>
           </a>
         ))}
       </div>
@@ -252,29 +261,30 @@ export default function PricingV2({ medium }: PricingV2Props) {
               <article
                 key={plan.id}
                 id={`plan-${plan.id}`}
+                tabIndex={-1}
                 data-plan={plan.id}
                 data-popular={plan.popular ? 'true' : undefined}
                 className={cardClass(plan)}
               >
                 {plan.popular && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-black shadow">
-                    🔥 {t('pricing.most_popular')}
+                    {`🔥 ${t('pricing.most_popular')}`}
                   </span>
                 )}
 
                 {plan.unlimitedBadge && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground shadow">
-                    ∞ {plan.unlimitedBadge}
+                    {`∞ ${plan.unlimitedBadge}`}
                   </span>
                 )}
 
                 {plan.discount && (
-                  <span className="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-600 px-2.5 py-1 text-xs font-bold text-white shadow">
+                  <span className="absolute -top-3 right-4 whitespace-nowrap rounded-full bg-emerald-700 px-2.5 py-1 text-xs font-bold text-white shadow">
                     {plan.discount}
                   </span>
                 )}
 
-                <span className="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-dark">
+                <span className="inline-flex w-fit rounded-full bg-accent/15 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-accent-ink">
                   {plan.eyebrow}
                 </span>
 
@@ -292,7 +302,7 @@ export default function PricingV2({ medium }: PricingV2Props) {
                 </div>
 
                 <div className="mt-4 rounded-md border-l-4 border-accent bg-muted/60 px-3 py-2">
-                  <strong className="text-sm text-foreground">{plan.creditsPrefix}{plan.credits}</strong>
+                  <strong className="text-sm text-foreground">{`${plan.creditsPrefix ?? ''}${plan.credits}`}</strong>
                   <span className="block text-xs text-muted-foreground">{plan.hint}</span>
                 </div>
 
@@ -302,7 +312,7 @@ export default function PricingV2({ medium }: PricingV2Props) {
                   rel="noopener noreferrer"
                   className={ctaClass(plan)}
                 >
-                  {plan.cta} →
+                  {`${plan.cta} →`}
                 </a>
 
                 <ul className="mt-5 space-y-2.5 text-sm">
@@ -325,8 +335,8 @@ export default function PricingV2({ medium }: PricingV2Props) {
 
       <div className="mt-12 text-center">
         <p className="text-balance text-sm text-muted-foreground">
-          {t('pricing.v2_enterprise_question')}{' '}
-          <a href={enterpriseHref} className="inline-flex items-center gap-1 font-semibold text-accent-dark hover:underline">
+          {`${t('pricing.v2_enterprise_question')} `}
+          <a href={enterpriseHref} className="inline-flex items-center gap-1 font-semibold text-accent-ink hover:underline">
             {t('pricing.v2_enterprise_link')}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>

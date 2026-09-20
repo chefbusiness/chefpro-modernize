@@ -48,7 +48,10 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))',
 					light: 'hsl(var(--accent-light))',
-					dark: 'hsl(var(--accent-dark))'
+					dark: 'hsl(var(--accent-dark))',
+					// text-accent-ink: dorado con contraste AA para TEXTO sobre fondo
+					// claro (--accent-dark se queda en ~2,9:1). Ver global.css.
+					ink: 'hsl(var(--accent-ink))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -83,7 +86,10 @@ export default {
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
-				'card': 'var(--shadow-card)'
+				'card': 'var(--shadow-card)',
+				// hover:shadow-gold-glow se usaba en los CTA sin estar declarado aquí:
+				// Tailwind no generaba ninguna regla y el hover no hacía nada.
+				'gold-glow': 'var(--shadow-gold-glow)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

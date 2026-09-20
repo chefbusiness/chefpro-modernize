@@ -10,6 +10,7 @@ import { Calculator, Plus, Trash2, ArrowRight, CheckCircle, ChefHat, Download } 
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
+import PricingV2 from '@/components/PricingV2';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
@@ -233,7 +234,6 @@ export default function CalculadoraFoodCost() {
   const steps = k('how_it_works.steps') as Array<{ step: string; title: string; description: string }>;
   const benefits = k('benefits.items') as string[];
   const faqs = k('faq') as Array<{ question: string; answer: string }>;
-  const plans = k('pricing.plans') as Array<{ name: string; price: string; uses: string; highlight: boolean }>;
 
   const statusText = result
     ? result.status === 'ok'
@@ -577,34 +577,9 @@ export default function CalculadoraFoodCost() {
           </div>
         </section>
 
-        {/* Pricing */}
-        <section className="py-20 bg-gradient-to-b from-muted/20 to-muted/50">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">{s('pricing.title')}</h2>
-            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">{s('pricing.subtitle')}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-10">
-              {plans.map((plan, i) => (
-                <Card key={i} className={`text-center relative ${plan.highlight ? 'ring-2 ring-amber-400 shadow-2xl scale-105 bg-gradient-to-b from-amber-50 to-white' : 'shadow-md bg-card'}`}>
-                  {plan.highlight && <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-amber-950 border-0">⭐ Popular</Badge>}
-                  <CardHeader className="pt-6">
-                    <CardTitle className={`text-lg ${plan.highlight ? 'text-amber-900' : ''}`}>{plan.name}</CardTitle>
-                    <div className={`text-3xl font-bold ${plan.highlight ? 'text-amber-600' : 'text-primary'}`}>{plan.price}</div>
-                    <div className="text-sm text-muted-foreground">{plan.uses}</div>
-                  </CardHeader>
-                  <CardContent>
-                    <Button
-                      className={`w-full ${plan.highlight ? 'btn-gold' : ''}`}
-                      variant={plan.highlight ? 'default' : 'outline'}
-                      onClick={() => window.open(getAppUrl(lang), '_blank')}
-                    >
-                      {plan.highlight ? s('cta_section.primary') : s('cta_section.secondary')}
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Precios — tabla v2 de la CRO de Keak, compartida con portadas,
+            páginas de precios, landings y herramientas (src/components/PricingV2.tsx). */}
+        <PricingV2 medium="tool-food-cost" />
 
         {/* FAQ */}
         <section className="py-20">
