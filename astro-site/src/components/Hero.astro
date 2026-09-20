@@ -108,12 +108,14 @@ const stats = [
     {t(lang, 'hero.v2_description')}
   </p>
 
-  <!-- Counter Stats — número y etiqueta EN LÍNEA (Keak), número en negro plano -->
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 my-6 p-4 sm:p-6 bg-muted/30 rounded-xl border w-full max-w-3xl">
+  <!-- Counter Stats — APILADAS: número grande centrado y etiqueta debajo. La versión en línea
+       de Keak (número + etiqueta con base común) sólo funcionaba con etiquetas de una línea; en
+       ES/DE/NL se partían en dos y el número quedaba flotando arriba a la izquierda (John, 20-sep). -->
+  <div class="grid w-full max-w-3xl grid-cols-2 sm:grid-cols-4 gap-y-6 my-6 rounded-xl border bg-muted/30 p-5 sm:p-6 sm:divide-x sm:divide-border">
     {stats.map((s) => (
-      <div class="flex items-baseline justify-center gap-2 text-center">
-        <span class="shrink-0 text-2xl md:text-3xl font-bold text-foreground" data-counter data-target={s.end} data-suffix={s.suffix}>{s.end}{s.suffix}</span>
-        <span class="min-w-0 break-words hyphens-auto text-xs sm:text-sm text-muted-foreground font-medium leading-tight text-balance">{s.label}</span>
+      <div class="flex flex-col items-center justify-start gap-1.5 px-2 text-center">
+        <span class="text-3xl md:text-4xl font-bold leading-none tabular-nums text-foreground" data-counter data-target={s.end} data-suffix={s.suffix}>{s.end}{s.suffix}</span>
+        <span class="max-w-[10rem] break-words hyphens-auto text-xs sm:text-sm font-medium leading-snug text-muted-foreground text-balance">{s.label}</span>
       </div>
     ))}
   </div>
