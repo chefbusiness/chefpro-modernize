@@ -487,6 +487,13 @@ toma de decisiones en todo»); la única no delegable es el Payment Link de Stri
   ≤ 10 M. Si un producto pasa su techo un 30 %, se para y se reporta. Calidad = gates de script + tope de 2 rondas, no
   más agentes.
 - **Máquina**: F1 en el Mac (solo API); F2 en el VPS para L/M y en el Mac en serie con vigilante para S; F3 en cualquiera.
+- **Los gates LIVE (`gate-flujo-postpago.py`, `miselup-gate.py`) leen el registro de productos del árbol LOCAL**: desde
+  un `main` sin `git pull` cuentan 49 productos y no 50, y parecen verdes. Comprobar el commit local antes de fiarse.
+- **Si hay OTRA sesión trabajando en este directorio** (commits ajenos en `main`, rama activa cambiada), no tocar la rama
+  activa: `git worktree add <scratchpad>/wt-<tema> <rama>` y `git push origin HEAD:main` desde allí. Pasó el 20-sep.
+- **Kit de Tareas nuevo (top-20)**: copiar `scripts/generate-tareas-taqueria.py` + `scripts/productos-digitales/kit-tareas-taqueria/`
+  (contrato del molde v2.0, gates F1/F2, comparador). Molde canónico = kit base v2.0, NO el sushi-bar (v1.1 CB);
+  `postprocess-transversal.py` NO se corre sobre kits v2.0.
 - **Mega Pack congelado en sus 13 kits** (155 ficheros en la function); los kits nuevos se venden aparte y el pack va
   **siempre el último** del hub. **Orden del hub**: novedades primero (la más nueva en 1), luego los más vendidos.
 

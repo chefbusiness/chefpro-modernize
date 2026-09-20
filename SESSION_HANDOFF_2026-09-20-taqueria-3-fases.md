@@ -77,3 +77,21 @@ Producción = `main`. Política nueva de John (decisiones delegadas a Claude): `
 - **Confirmation URL (tras el pago):** `https://aichef.pro/kit-tareas-taqueria-access?session_id={CHECKOUT_SESSION_ID}`
 - **Env var en Netlify (scope builds):** `VITE_STRIPE_PAYMENT_LINK_TAREAS_TAQUERIA` = URL del Payment Link
 - Cripto: nace con NOWPayments (`CRYPTO_PRODUCTS=all`); el importe sale de `product-prices.ts` (regenerado en F3).
+
+## 🔁 Cómo retomar en la sesión fresca (leer esto primero)
+1. `git pull --ff-only` · `istats cpu temp` · `nohup zsh scripts/termica/watchdog-termico.sh <scratchpad>/watchdog &`.
+2. **Comprobar que no hay otra sesión en este directorio** (`git status`, `git log -3`): si la hay, trabajar en un
+   `git worktree add <scratchpad>/wt-<tema> <rama>` y nunca cambiar la rama activa.
+3. Pendientes de la Taquería: **29-sep** programar el correo (`resend-broadcast.py --html
+   scripts/productos-digitales/emails/broadcast-kit-tareas-taqueria-lanzamiento-es.html --subject "Nuevo: Kit de Tareas
+   Taquería Mexicana — 298 tareas, 14€" --name "Lanzamiento Kit Tareas Taquería (ES)" --scheduled-at 2026-10-29T08:00:00Z`,
+   tras leer la cola) · purgar el pedido cripto qa `3520b4be…` cuando `crypto-report.py` autentique · vigilar la
+   indexación de `/kit-tareas-taqueria` en GSC · **24-sep**: programar el correo de la Chocolatería (24-oct).
+4. Siguiente producto (sesión PAR, política de 3 fases, §3 del calendario): **Kit Cuadro de Mando Operativo** (M, 19 €, 2
+   sesiones, F2 en el VPS) o el siguiente kit S del top-20 (Pollería / Arepería: copiar `generate-tareas-taqueria.py` +
+   carpeta `kit-tareas-taqueria/`, cambiar PID/KIT/contenido, mismos gates; ≤ 2,5 M). Sesión IMPAR: deuda del calendario
+   (24 celdas «65 °C» en 14 productos, «control horario digital» ×4, kits sin tildes, cestas de use-cases sin kits).
+5. Decisiones ya delegadas por John (20-sep): decidir sin preguntar salvo el Payment Link de Stripe.
+
+Sesión Claude Code · firma `Via: Claude Code`.
+
