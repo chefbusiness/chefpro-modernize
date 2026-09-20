@@ -1,68 +1,43 @@
-import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { useLanguage } from '@/hooks/useLanguage';
+/**
+ * PricingPlans — bloque de precios de las 6 herramientas gratuitas.
+ *
+ * Desde la v2 de CRO (Keak, 20-sep-2026) es un simple envoltorio de
+ * <PricingV2>: la tabla de precios es la MISMA en todo el sitio (portadas,
+ * páginas de precios, landings y herramientas). Se conserva la firma
+ * `{ toolKey }` para no tocar a sus 6 consumidores (TestDigitalizacion,
+ * CalendarioContenidos, CalculadoraBrigada, GeneradorMenuDegustacion,
+ * DetectorAlergenos, GeneradorTextosCarta).
+ *
+ * El toolKey se traduce a un utm_medium en kebab-case para poder medir qué
+ * herramienta vende. NO se usa el toolKey crudo: es camelCase («toolScore»,
+ * «toolMenuCopy») y llegaría así a Google Ads/GA, donde el resto de medios son
+ * kebab (`home-pricing`, `landing-reducir-costes`), rompiendo los informes.
+ * El mapa es explícito porque dos claves no se derivan de su nombre
+ * (toolScore → digitalización, toolMenuCopy → textos de carta).
+ *
+ * Las claves i18n viejas de esta sección (`<toolKey>.pricing.*`) quedan sin
+ * uso pero NO se borran de los JSON.
+ */
+import PricingV2 from '@/components/PricingV2';
 
 interface PricingPlansProps {
   toolKey: string;
 }
 
+const MEDIUM_POR_TOOL: Record<string, string> = {
+  toolScore: 'tool-digitalizacion',
+  toolCalendario: 'tool-calendario',
+  toolDegustacion: 'tool-degustacion',
+  toolAlergenos: 'tool-alergenos',
+  toolBrigada: 'tool-brigada',
+  toolMenuCopy: 'tool-textos-carta',
+};
+
+/** Red de seguridad para un toolKey nuevo: camelCase → kebab, sin el prefijo «tool». */
+const mediumDe = (toolKey: string) =>
+  MEDIUM_POR_TOOL[toolKey] ??
+  `tool-${toolKey.replace(/^tool/, '').replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()}`;
+
 export default function PricingPlans({ toolKey }: PricingPlansProps) {
-  const { t } = useTranslation();
-  const { getAppUrl } = useLanguage();
-
-  const pricing = t(`${toolKey}.pricing`, { returnObjects: true }) as any;
-  const plans = pricing?.plans as Array<{ name: string; price: string; uses: string; highlight: boolean }> | undefined;
-  const primaryBtn = t(`${toolKey}.cta_section.primary`);
-  const secondaryBtn = t(`${toolKey}.cta_section.secondary`);
-
-  if (!pricing || !plans || !plans.length) return null;
-
-  const appUrl = getAppUrl();
-
-  return (
-    <section className="py-20 bg-gradient-to-b from-muted/20 to-muted/50">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-foreground mb-4">{pricing.title}</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">{pricing.subtitle}</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-10">
-          {plans.map((plan, i) => (
-            <Card
-              key={i}
-              className={`text-center relative ${
-                plan.highlight
-                  ? 'ring-2 ring-amber-400 shadow-2xl scale-105 bg-gradient-to-b from-amber-50 to-white'
-                  : 'shadow-md bg-card'
-              }`}
-            >
-              {plan.highlight && (
-                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-amber-950 border-0">
-                  ⭐ Popular
-                </Badge>
-              )}
-              <CardHeader className="pt-6">
-                <CardTitle className={`text-lg ${plan.highlight ? 'text-amber-900' : ''}`}>
-                  {plan.name}
-                </CardTitle>
-                <div className={`text-3xl font-bold ${plan.highlight ? 'text-amber-600' : 'text-primary'}`}>
-                  {plan.price}
-                </div>
-                <div className="text-sm text-muted-foreground">{plan.uses}</div>
-              </CardHeader>
-              <CardContent>
-                <Button
-                  className={`w-full ${plan.highlight ? 'btn-gold' : ''}`}
-                  variant={plan.highlight ? 'default' : 'outline'}
-                  onClick={() => window.open(appUrl, '_blank')}
-                >
-                  {plan.highlight ? primaryBtn : secondaryBtn}
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <PricingV2 medium={mediumDe(toolKey)} />;
 }

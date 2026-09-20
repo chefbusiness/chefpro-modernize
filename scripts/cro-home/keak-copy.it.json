@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "v2_social_prefix": "Scelto da",
+    "v2_social_chefs": "chef",
+    "v2_social_count": "ricette e soluzioni generate",
+    "v2_title_prefix": "Abbatti i costi degli ingredienti nella tua",
+    "v2_title_suffix": "con",
+    "v2_subtitle": "Automatizza food cost, sprechi, porzioni e menu con 75+ agenti AI pensati per le cucine professionali.",
+    "v2_description": "Addestrato sui flussi di lavoro quotidiani di chef, pasticceri, panettieri e operatori della ristorazione — non sul marketing generico.",
+    "v2_stat_agents": "agenti AI",
+    "v2_stat_tools": "strumenti di gestione e controllo costi",
+    "v2_stat_cookbooks": "ricettari regionali",
+    "v2_stat_roles": "ruoli di cucina coperti",
+    "v2_cta_pricing": "Scopri i piani e i prezzi",
+    "v2_microcopy": "Piani da 10 €/mese · un nuovo agente AI aggiunto ogni settimana"
+  },
+  "showcase": {
+    "v2_business_eyebrow": "Strumenti di gestione · 6 agenti nativi per la cucina",
+    "v2_business_title_prefix": "Riduci i costi degli ingredienti fino al",
+    "v2_business_title_highlight": "30%",
+    "v2_business_title_suffix": "con strumenti costruiti per il pase.",
+    "v2_business_description": "Sprechi, porzioni, allergeni, conversioni: la matematica quotidiana di una cucina professionale, automatizzata.",
+    "v2_proof_label": "Dato concreto",
+    "v2_proof_value": "30%",
+    "v2_proof_text": "riduzione media dei costi degli ingredienti grazie a calcoli precisi degli sprechi",
+    "v2_use_case_label": "Caso d'uso",
+    "v2_included_prefix": "Tutti gli strumenti inclusi dal piano",
+    "v2_included_suffix": "in su.",
+    "v2_business_cta": "Scopri i piani che sbloccano tutti e 6 gli strumenti"
+  },
+  "apps": {
+    "business": {
+      "mermas_gencal": {
+        "v2_blurb": "Ottimizza le rese e riduci gli sprechi su ogni mise en place, postazione e servizio."
+      },
+      "id_alergenos": {
+        "v2_blurb": "Identifica automaticamente gli allergeni e rispetta le norme di sicurezza alimentare senza errori."
+      },
+      "calcula_pax": {
+        "v2_blurb": "Scala le ricette con precisione matematica per qualsiasi numero di coperti o evento."
+      },
+      "conversor_ing": {
+        "v2_blurb": "Adatta le ricette tra sistemi di misura all'istante, senza errori di conversione."
+      },
+      "mental_coach": {
+        "v2_blurb": "Riduci lo stress in cucina e rafforza la leadership nella tua brigata."
+      },
+      "chatgpt_4o": {
+        "v2_blurb": "Domande tecniche e pianificazione del menu stagionale, sempre a disposizione."
+      }
+    }
+  },
+  "pricing": {
+    "v2_title": "Trova il tuo piano in 10 secondi",
+    "v2_description": "Abbina il tuo ruolo al piano giusto. I crediti crescono in base a quanto automatizzi la tua cucina e il tuo locale — dall'aiuto sulle ricette di una singola postazione alla gestione di più ristoranti.",
+    "v2_role_member": "Cuoco o assistente",
+    "v2_role_premium_pro": "Chef de cuisine",
+    "v2_role_premium_plus": "Titolare o gruppo",
+    "v2_role_premium_max": "Utente avanzato",
+    "v2_divider": "Per utenti avanzati e impegno annuale",
+    "v2_enterprise_question": "Gestisci un gruppo o hai bisogno di un volume personalizzato?",
+    "v2_enterprise_link": "Contattaci per un piano enterprise",
+    "plans": {
+      "member": {
+        "v2_short": "Member",
+        "v2_eyebrow": "Cuochi e chef di partita",
+        "v2_description": "Ideale per aiuto cuochi, cuochi e chef di partita che iniziano a usare l'AI.",
+        "v2_credits": "10.000 crediti/mese",
+        "v2_hint": "≈ 200 ricette o 100 escandallos",
+        "v2_cta": "Inizia con Member",
+        "v2_features": [
+          "Tutti i 75+ strumenti AI inclusi",
+          "10.000 crediti mensili",
+          "25+ ricettari internazionali",
+          "Supporto via email"
+        ]
+      },
+      "premium_pro": {
+        "v2_short": "Premium Pro",
+        "v2_eyebrow": "Chef de cuisine e responsabili",
+        "v2_description": "Per chef de cuisine, executive chef e responsabili di sala che gestiscono il servizio ogni giorno.",
+        "v2_credits": "85.000 crediti/mese",
+        "v2_hint": "≈ food cost completo del menu + R&D ricette settimanale",
+        "v2_cta": "Inizia con Premium Pro"
+      },
+      "premium_plus": {
+        "v2_short": "Premium Plus",
+        "v2_eyebrow": "Titolari e catene multi-sede",
+        "v2_description": "Per imprenditori della ristorazione e catene di ristoranti che scalano le operazioni.",
+        "v2_credits": "175.000 crediti/mese",
+        "v2_hint": "≈ menu multi-sede, controllo costi e marketing",
+        "v2_cta": "Inizia con Premium Plus"
+      },
+      "premium_max": {
+        "v2_short": "Max",
+        "v2_eyebrow": "Operazioni ad alto volume",
+        "v2_description": "Crediti mensili illimitati per i professionisti più esigenti, senza tetti di utilizzo.",
+        "v2_credits": "Crediti illimitati",
+        "v2_hint": "Usa ogni strumento con la frequenza che il servizio richiede",
+        "v2_cta": "Inizia con Premium Max"
+      },
+      "premium_plus_annual": {
+        "v2_eyebrow": "Titolari e dirigenti",
+        "v2_description": "Ideale per imprenditori della ristorazione, titolari e dirigenti che scelgono un impegno annuale.",
+        "v2_credits": "Crediti illimitati, tutto l'anno",
+        "v2_hint": "+ consulenza personalizzata mensile inclusa",
+        "v2_cta": "Scegli il piano annuale e risparmia"
+      }
+    }
+  }
+}

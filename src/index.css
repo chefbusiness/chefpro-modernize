@@ -32,6 +32,7 @@
     --accent-foreground: 240 5.9% 10%;
     --accent-light: 42 100% 85%;
     --accent-dark: 42 100% 40%;
+    --accent-ink: 42 100% 30%; /* dorado legible en texto pequeño sobre claro (AA); CRO Keak 20-sep-2026 */
     
     /* Chef Pro Golden System */
     --chef-gold: 42 100% 50%;
@@ -104,6 +105,7 @@
     --accent-foreground: 240 5.9% 10%;
     --accent-light: 42 100% 75%;
     --accent-dark: 42 100% 45%;
+    --accent-ink: 42 100% 62%;
     
     --chef-gold: 42 100% 60%;
     --chef-gold-light: 42 100% 75%;

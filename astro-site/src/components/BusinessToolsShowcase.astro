@@ -1,70 +1,147 @@
 ---
-// BusinessToolsShowcase.astro — port de src/components/BusinessToolsShowcase.tsx.
-// Card/Button de shadcn → HTML inline con clases concatenadas verbatim; onClick del
-// Button → data-app-url + <script> vanilla (window.open scope a esta sección).
+// BusinessToolsShowcase.astro — v2 (CRO Keak, 20-sep-2026, «Cambio 2»).
+// Ver CRO_HOME_KEAK_2026-09-20.md §1. Misma posición en las 7 portadas (después de
+// WorldCookbooks) y mismo ancla #herramientas-business (la usan Header.astro,
+// ModernHeader.tsx y AppsCategories.astro), pero rediseñada:
+//   - Mermas GenCal pasa a protagonista en una tarjeta oscura con el dato del 30 %.
+//   - Los otros 5 agentes quedan en una rejilla 2×3 de tarjetas claras.
+//   - Desaparecen los botones «Usar herramienta» (y el script de window.open):
+//     Keak concentra el CTA en la página de precios del idioma.
+// Copy: claves v2_ de src/i18n/locales/*.json (fuente única, importada por t()).
 import { businessTools } from '../../../src/data/apps';
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { appUrl } from '../lib/app-url';
+import { pricingHref } from '../lib/pricing-path';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const appBase = appUrl(lang);
+type BusinessTool = (typeof businessTools)[number];
+
+// Clave i18n de un agente: los ids llevan guion y las claves guion bajo.
+const appKey = (id: string) => `apps.business.${id.replace(/-/g, '_')}`;
+
+// Protagonista + orden fijo de los 5 secundarios (el del diseño de Keak, que no
+// coincide con el orden del array de datos).
+const HERO_ID = 'mermas-gencal';
+const SIDE_IDS = ['id-alergenos', 'calcula-pax', 'conversor-ing', 'mental-coach', 'chatgpt-4o'];
+
+const heroKey = appKey(HERO_ID);
+const sideTools: BusinessTool[] = SIDE_IDS
+  .map((id) => businessTools.find((tool) => tool.id === id))
+  .filter((tool): tool is BusinessTool => Boolean(tool));
 ---
 
-<section id="herramientas-business" class="container scroll-mt-28 py-16">
+<section id="herramientas-business" data-keak="business-v2" class="container scroll-mt-28 py-16">
   <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
-      <span class="gradient-text">{t(lang, 'showcase.business_title')}</span>
+    <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+      {t(lang, 'showcase.v2_business_eyebrow')}
+    </p>
+    <h2 class="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-balance">
+      {t(lang, 'showcase.v2_business_title_prefix')}{' '}
+      <span class="text-accent-ink">{t(lang, 'showcase.v2_business_title_highlight')}</span>{' '}
+      {t(lang, 'showcase.v2_business_title_suffix')}
     </h2>
-    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-      {t(lang, 'showcase.business_description')}
+    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
+      {t(lang, 'showcase.v2_business_description')}
     </p>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-    {businessTools.map((tool) => {
-      const IconComponent = tool.icon;
-      const appKey = `apps.${tool.category}.${tool.id.replace(/-/g, '_')}`;
-      return (
-        <div class="rounded-lg border bg-card text-card-foreground shadow-sm category-card-tools group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
-          <div class="flex flex-col space-y-1.5 p-4 sm:p-6">
-            <div class="flex items-center justify-between mb-2">
-              <div class="category-icon h-10 w-10 rounded-full flex items-center justify-center">
-                <IconComponent className="h-5 w-5" />
-              </div>
+  <div class="grid gap-6 lg:grid-cols-2 items-stretch">
+    <!-- IZQUIERDA: Mermas GenCal como prueba (tarjeta oscura) -->
+    <article
+      data-tool={HERO_ID}
+      class="relative overflow-hidden rounded-2xl p-8 text-white bg-zinc-950 flex flex-col gap-4"
+    >
+      <!-- Fondo (John, 20-sep): la tarjeta negra quedaba «robusta y sin mucho que decir». Foto
+           generada con Nano Banana (pase de cocina, manos pesando en báscula, sin rostro) bajo un
+           degradado oscuro que garantiza la legibilidad del 30 % y del texto. Decorativa: alt="". -->
+      <img
+        src="/images/business-waste-gencal-bg.jpg"
+        alt=""
+        width="1200"
+        height="670"
+        loading="lazy"
+        decoding="async"
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover object-center opacity-70"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/85 to-zinc-950/35" aria-hidden="true"></div>
+      <div class="relative z-10 flex h-full flex-col gap-4">
+      <span class="self-start inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent text-[11px] font-semibold uppercase tracking-wider px-3 py-1">
+        <svg
+          class="h-3.5 w-3.5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M20 6 9 17l-5-5" />
+        </svg>
+        {t(lang, 'showcase.v2_proof_label')}
+      </span>
+
+      <p class="text-6xl md:text-7xl font-extrabold leading-none text-accent">
+        {t(lang, 'showcase.v2_proof_value')}
+      </p>
+      <p class="font-semibold text-white">{t(lang, 'showcase.v2_proof_text')}</p>
+
+      <h3 class="text-xl font-semibold mt-2">{t(lang, `${heroKey}.name`)}</h3>
+      <p class="text-zinc-300 text-sm">{t(lang, `${heroKey}.v2_blurb`)}</p>
+
+      <div class="mt-auto rounded-lg bg-white/5 border-l-4 border-accent p-4">
+        <p class="text-[11px] uppercase tracking-wider text-zinc-400">
+          {t(lang, 'showcase.v2_use_case_label')}
+        </p>
+        <p class="text-sm italic text-white">{t(lang, `${heroKey}.preview`)}</p>
+      </div>
+      </div>
+    </article>
+
+    <!-- DERECHA: los otros 5 agentes -->
+    <div class="grid gap-4 sm:grid-cols-2">
+      {sideTools.map((tool) => {
+        const IconComponent = tool.icon;
+        const key = appKey(tool.id);
+        return (
+          <article data-tool={tool.id} class="rounded-xl border bg-card p-5 flex flex-col gap-2">
+            <div class="h-9 w-9 rounded-lg bg-accent/15 text-accent-ink flex items-center justify-center">
+              <IconComponent className="h-5 w-5" aria-hidden="true" />
             </div>
-            <h3 class="text-2xl font-semibold leading-none tracking-tight text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{t(lang, `${appKey}.name`)}</h3>
-            <p class="text-sm text-muted-foreground text-sm leading-relaxed">{t(lang, `${appKey}.description`)}</p>
-          </div>
-          <div class="p-4 sm:p-6 pt-0">
-            <div class="bg-muted/50 p-3 rounded text-sm">
-              <p class="text-muted-foreground mb-1 text-xs">{t(lang, 'showcase.use_case_label')}:</p>
-              <p class="font-medium text-xs sm:text-sm leading-relaxed">"{t(lang, `${appKey}.preview`)}"</p>
-            </div>
-          </div>
-          <div class="flex items-center p-4 sm:p-6 pt-0">
-            <button
-              type="button"
-              data-app-url={`${appBase}/${tool.slug}`}
-              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
-            >
-              {t(lang, 'showcase.use_tool')}
-            </button>
-          </div>
-        </div>
-      );
-    })}
+            <h3 class="font-semibold">{t(lang, `${key}.name`)}</h3>
+            <p class="text-sm text-muted-foreground">{t(lang, `${key}.v2_blurb`)}</p>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+
+  <div class="mt-10 text-center">
+    <p class="text-sm text-muted-foreground text-balance">
+      {t(lang, 'showcase.v2_included_prefix')}{' '}
+      <strong class="text-foreground">{t(lang, 'pricing.plans.member.name')}</strong>{' '}
+      {t(lang, 'showcase.v2_included_suffix')}
+    </p>
+    <a
+      href={pricingHref(lang)}
+      class="mt-3 inline-flex items-center gap-2 font-semibold text-foreground hover:text-accent-dark"
+    >
+      {t(lang, 'showcase.v2_business_cta')}
+      <svg
+        class="h-4 w-4"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </svg>
+    </a>
   </div>
 </section>
-
-<script>
-  // handleAppClick — abre la app en pestaña nueva (scope a esta sección para no duplicar listeners)
-  document.querySelectorAll<HTMLButtonElement>('#herramientas-business [data-app-url]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const url = btn.getAttribute('data-app-url');
-      if (url) window.open(url, '_blank');
-    });
-  });
-</script>
