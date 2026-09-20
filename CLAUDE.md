@@ -118,8 +118,16 @@ Referencia de longitud medida en el blog (2026-08-01): **mediana del glosario 1.
 - Gate: `python3 scripts/astro-migration/datafast-gate.py [--base <preview>]` — cargador
   exactamente una vez en 17 páginas de muestra + los dos scripts descargables. Correrlo al
   tocar `BaseLayout`.
-- Pendiente de valor: atribución de ingresos de los Payment Links de Stripe
-  (https://datafa.st/docs/stripe-checkout-api) y el tag en `app.aichef.pro` (Pickaxe).
+- **Pickaxe (los 7 subdominios `app`, `enapp`, `frapp`, `deapp`, `itapp`, `ptapp`, `nlapp`) también lo
+  llevan desde el 20-sep**: snippet autocontenido (misma lógica híbrida leyendo la cookie `aichef_consent`)
+  pegado en `Settings → Deploy → Workspace Level Custom code → Header` de cada workspace, con
+  `data-domain="aichef.pro"` para que caigan en el mismo panel. Al pegar por automatización: el editor es
+  CodeMirror 6 en un mundo aislado (no hay `cmView`), se inserta con un `paste` sintético sobre `.cm-content`
+  enfocado, y **el clic en «Save Settings» tiene que ir unos segundos DESPUÉS del pegado y verificarse
+  recargando** (4 guardados inmediatos se perdieron sin aviso). `ctrl+End` no mueve el cursor en ese
+  editor: el snippet quedó al principio del Header, que funciona igual. Sus suscripciones NO se atribuyen
+  por visitante (Pickaxe devuelve a `?success=login`, sin `session_id`); aparecen como ingresos de Stripe
+  sin canal. Atribución de Payment Links (productos): ya cumplida por el flujo `-access?session_id=`.
 
 ### Gotchas del blog que cuestan dinero
 
