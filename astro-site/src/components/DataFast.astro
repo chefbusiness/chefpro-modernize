@@ -27,6 +27,18 @@
  * `document.currentScript`, que el navegador rellena también para los scripts
  * insertados por JS. Los `data-*` tienen que ir en el elemento inyectado.
  *
+ * SE INYECTA DE INMEDIATO, SIN ESPERAR A DOMContentLoaded (20-sep, noche). Es
+ * la atribución de ingresos la que lo exige: el Payment Link de cada producto
+ * devuelve al cliente a `/<producto>-access?session_id=cs_…`, DataFast lee ese
+ * `session_id` al arrancar y lo envía por XHR sin `keepalive`; y la isla del
+ * gate (`ProductAccessGate.tsx`) verifica la compra y NAVEGA al dashboard nada
+ * más recibir el JWT. Si DataFast arrancara tarde, la navegación abortaría el
+ * envío y la venta quedaría sin atribuir. Arrancándolo desde el `<head>`, sus
+ * 15 KB llegan y disparan antes de que la isla haya bajado siquiera su bundle.
+ * Es seguro porque el propio script espera al DOM para lo que lo necesita
+ * (`readyState`/`DOMContentLoaded` en su código) y delega los clics en
+ * `document`.
+ *
  * Mejora opcional pendiente: proxy por dominio propio contra bloqueadores
  * (`/js/script.js` y `/api/events` → datafa.st, guía
  * https://datafa.st/docs/astro-proxy). NO activarlo sin comprobar que el proxy
@@ -53,7 +65,6 @@ const MODO = 'hibrido';
       s.src = 'https://datafa.st/js/' + (conCookies ? 'script.js' : 'script.cookieless.js');
       document.head.appendChild(s);
     }
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', cargar);
-    else cargar();
+    cargar();
   })();
 </script>
