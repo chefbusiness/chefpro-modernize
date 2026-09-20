@@ -63,7 +63,7 @@
     "see_resources": "SEE RESOURCES",
     "social_proof_label": "Solutions and recipes generated",
     "v2_social_prefix": "Trusted by",
-    "v2_social_chefs": "chefs",
+    "v2_social_chefs": "professionals",
     "v2_social_count": "recipes, processes & solutions generated",
     "v2_title_prefix": "Create, run and grow your",
     "v2_title_suffix": "with",
@@ -101,7 +101,7 @@
       "",
       ""
     ],
-    "v2_social_countries": "from 90+ countries"
+    "v2_social_countries": "from 32+ countries"
   },
   "notifications": {
     "someone_from": "Someone from",

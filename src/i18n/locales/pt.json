@@ -60,7 +60,7 @@
     "see_resources": "VER RECURSOS",
     "social_proof_label": "Soluções e receitas geradas",
     "v2_social_prefix": "Utilizado por",
-    "v2_social_chefs": "chefs",
+    "v2_social_chefs": "profissionais",
     "v2_social_count": "receitas, processos e soluções geradas",
     "v2_title_prefix": "Crie, gira e faça crescer",
     "v2_title_suffix": "com",
@@ -98,7 +98,7 @@
       "a sua",
       "o seu"
     ],
-    "v2_social_countries": "de mais de 90 países"
+    "v2_social_countries": "de mais de 32 países"
   },
   "notifications": {
     "someone_from": "Alguém de",

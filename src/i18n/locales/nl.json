@@ -60,7 +60,7 @@
     "see_resources": "ZIE BRONNEN",
     "social_proof_label": "Oplossingen en recepten gegenereerd",
     "v2_social_prefix": "Vertrouwd door",
-    "v2_social_chefs": "chefs",
+    "v2_social_chefs": "professionals",
     "v2_social_count": "recepten, processen & oplossingen gegenereerd",
     "v2_title_prefix": "Creëer, beheer en laat uw",
     "v2_title_suffix": "groeien met",
@@ -98,7 +98,7 @@
       "",
       ""
     ],
-    "v2_social_countries": "uit meer dan 90 landen"
+    "v2_social_countries": "uit meer dan 32 landen"
   },
   "stats": {
     "apps": "50+",

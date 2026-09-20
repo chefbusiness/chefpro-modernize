@@ -60,7 +60,7 @@
     "see_resources": "VEDI RISORSE",
     "social_proof_label": "Soluzioni e ricette generate",
     "v2_social_prefix": "Scelto da",
-    "v2_social_chefs": "chef",
+    "v2_social_chefs": "professionisti",
     "v2_social_count": "ricette, processi e soluzioni generate",
     "v2_title_prefix": "Crea, gestisci e fai crescere",
     "v2_title_suffix": "con",
@@ -98,7 +98,7 @@
       "la tua",
       "il tuo"
     ],
-    "v2_social_countries": "in oltre 90 paesi"
+    "v2_social_countries": "in oltre 32 paesi"
   },
   "notifications": {
     "someone_from": "Qualcuno da",
