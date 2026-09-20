@@ -7,6 +7,7 @@ import { t } from '../i18n/translations';
 // que lo concede, así que meter uno sin el otro rompe la medición o el RGPD.
 import GoogleTag from '../components/GoogleTag.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import DataFast from '../components/DataFast.astro';
 // Botón flotante de WhatsApp — GLOBAL desde 2026-09-03 (orden de John: tiene que
 // estar en TODAS las páginas). Antes lo montaba CADA página a mano y sólo llegaba a
 // 655 de las 1.312 del dist: lo tenían las 7 homes, /usos, las pSEO de ciudades,
@@ -240,6 +241,8 @@ const emittedSchemas = omitGlobalApp
     {/* Lo PRIMERO tras el charset: el Consent Mode tiene que fijarse antes de
         que cargue nada que pueda sembrar una cookie publicitaria. */}
     <GoogleTag />
+    {/* DataFast va DESPUÉS del tag de Google: lee el consentimiento que éste publica. */}
+    <DataFast />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {keywords && <meta name="keywords" content={keywords} />}
