@@ -95,6 +95,28 @@ Referencia de longitud medida en el blog (2026-08-01): **mediana del glosario 1.
   Resumen, y mirar el *Estado* de las acciones **principales**. La de aichef.pro
   llevaba tiempo optimizando hacia una **inactiva con 0,00 conversiones**.
 
+### Analítica: DataFast en todo el sitio (desde 2026-09-20)
+
+- `components/DataFast.astro`, montado en `BaseLayout.astro` **después** de `<GoogleTag />`
+  (lee la cookie `aichef_consent` que ese componente publica). Panel: datafa.st, sitio
+  `aichef.pro`, id `dfid_QU6VBDPW3GqyxYmZoQvw0`. miselup.pro lleva el snippet plano.
+- **Modo HÍBRIDO, no el snippet plano de la guía**: el script estándar siembra dos cookies
+  propias al cargar y el banner promete cookies de analítica solo tras «Aceptar». Sin
+  decisión o rechazado carga `script.cookieless.js` (identificador diario, sin cookies);
+  aceptado carga `script.js` (recurrentes y atribución multi-toque). La API mezcla los dos
+  sin problema (flag `cookieless` por evento). La decisión se lee al cargar la página: quien
+  acepta sigue cookieless hasta la siguiente navegación. `MODO` en el componente cambia a
+  `cookies` o `cookieless` puro.
+- Solo se activa bajo `aichef.pro`: previews y staging no ensucian el panel.
+- **Proxy por dominio propio (contra bloqueadores) NO activado.** Antes de activarlo hay
+  que demostrar que el proxy de Netlify reenvía la IP real: en modo cookieless el
+  identificador sale de la IP, y sin ella todos los visitantes del día se funden en uno.
+- Gate: `python3 scripts/astro-migration/datafast-gate.py [--base <preview>]` — cargador
+  exactamente una vez en 17 páginas de muestra + los dos scripts descargables. Correrlo al
+  tocar `BaseLayout`.
+- Pendiente de valor: atribución de ingresos de los Payment Links de Stripe
+  (https://datafa.st/docs/stripe-checkout-api) y el tag en `app.aichef.pro` (Pickaxe).
+
 ### Gotchas del blog que cuestan dinero
 
 - **Al BORRAR posts hay que limpiar `astro-site/.astro/` antes de construir.** La content collection de Astro 5 se cachea ahí y **sigue emitiendo el HTML de posts cuyo `.md` ya no existe**: tras consolidar 24 posts con 301, el build seguía generando 1.198 páginas y metiéndolos en el sitemap. Con `rm -rf astro-site/.astro astro-site/dist` bajó a 1.173, que es lo correcto. Cazado el 2026-07-28.
