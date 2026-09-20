@@ -33,6 +33,57 @@ SECUNDARIOS = {'fr', 'de', 'it', 'pt', 'nl'}
 SOSPECHOSO = re.compile(
     r'[　-鿿Ѐ-ӿ가-힯؀-ۿ֐-׿฀-๿぀-ヿ]')
 
+# ─── Correcciones HUMANAS sobre lo que devolvió el bridge (20-sep-2026) ───────────
+# Pasaron todos los gates automáticos y aun así estaban mal; por eso viven aquí,
+# documentadas, y no en un retoque a mano del JSON que nadie recordaría:
+#  · «Member» sin localizar en chip y CTA (el plan se llama AI Chef Miembro/Membre/
+#    Mitglied/Membro/Lid en cada idioma): se deriva de pricing.plans.member.name.
+#  · «escandallos» es español: en FR/IT/PT no existe (fiche technique / calcoli di
+#    food cost / ficha técnica).
+#  · «el pase» de cocina: FR «le passe» y PT «o passe» son correctos; IT dice «il
+#    pass», DE «der Pass» y NL «de pas».
+#  · DE/IT/PT tienen artículo con GÉNERO delante del negocio («in Ihrer Pizzeria»
+#    pero «in Ihrem Restaurant»): el artículo va DENTRO de la palabra rotatoria y
+#    el prefijo del H1 se acorta. ES/EN/FR/NL no lo necesitan (tu/your/votre/uw).
+OVERRIDES = {
+    'es': {'pricing.plans.member.v2_cta': 'Empezar como Miembro'},
+    'fr': {'pricing.plans.member.v2_cta': 'Commencer avec Membre',
+           'pricing.plans.member.v2_hint': '≈ 200 recettes ou 100 fiches techniques'},
+    'de': {'pricing.plans.member.v2_cta': 'Als Mitglied starten',
+           'hero.v2_title_prefix': 'Senken Sie die Zutatenkosten',
+           'showcase.v2_business_title_suffix': 'senken – mit Tools, die für den Pass gebaut wurden.'},
+    'it': {'pricing.plans.member.v2_cta': 'Inizia con Membro',
+           'pricing.plans.member.v2_hint': '≈ 200 ricette o 100 calcoli di food cost',
+           'hero.v2_title_prefix': 'Abbatti i costi degli ingredienti',
+           'showcase.v2_business_title_suffix': 'con strumenti costruiti per il pass.'},
+    'pt': {'pricing.plans.member.v2_cta': 'Começar com Membro',
+           'pricing.plans.member.v2_hint': '≈ 200 receitas ou 100 fichas técnicas',
+           'hero.v2_title_prefix': 'Reduza os custos de ingredientes'},
+    'nl': {'pricing.plans.member.v2_cta': 'Beginnen als Lid',
+           'showcase.v2_business_title_suffix': 'met tools gebouwd voor de pas.'},
+}
+# Palabra rotatoria CON artículo para los idiomas con género (11 elementos, mismo
+# orden que hero.business_types sin «Gestión»). Géneros comprobados a mano.
+LISTAS_V2 = {
+    'de': ['in Ihrem Restaurant', 'in Ihrem Catering', 'in Ihrer Pizzeria', 'in Ihrer Burger-Bar',
+           'in Ihrer Bäckerei', 'in Ihrer Konditorei', 'in Ihrer Chocolaterie', 'in Ihrer Eisdiele',
+           'in Ihrer Dark Kitchen', 'in Ihrem Café', 'in Ihrem Brunch'],
+    'it': ['nel tuo Ristorante', 'nel tuo Catering', 'nella tua Pizzeria', 'nella tua Hamburgheria',
+           'nella tua Panetteria', 'nella tua Pasticceria', 'nella tua Cioccolateria', 'nella tua Gelateria',
+           'nella tua Dark Kitchen', 'nella tua Caffetteria', 'nel tuo Brunch'],
+    'pt': ['no seu Restaurante', 'no seu Catering', 'na sua Pizzaria', 'na sua Hamburgueria',
+           'na sua Padaria', 'na sua Confeitaria', 'na sua Chocolataria', 'na sua Sorveteria',
+           'na sua Dark Kitchen', 'na sua Cafeteria', 'no seu Brunch'],
+}
+
+
+def poner(d, path, val):
+    toks = path.split('.')
+    cur = d
+    for k in toks[:-1]:
+        cur = cur.setdefault(k, {})
+    cur[toks[-1]] = val
+
 
 def pares(o, path='', acc=None):
     acc = [] if acc is None else acc
@@ -99,10 +150,15 @@ def fundir(lang):
     copy = json.loads(src.read_text(encoding='utf-8'))
     if lang in SECUNDARIOS:
         copy = rebaja_agentes(copy)
+    for ruta, val in OVERRIDES.get(lang, {}).items():
+        poner(copy, ruta, val)
     p, d = cargar(lang)
     deep_merge(d, copy)
+    # Nombre corto del plan de entrada = su nombre localizado sin «AI Chef »
+    short = d['pricing']['plans']['member']['name'].replace('AI Chef ', '').strip()
+    d['pricing']['plans']['member']['v2_short'] = short
     bt = d['hero'].get('business_types') or []
-    d['hero']['v2_business_types'] = bt[1:] if len(bt) > 1 else bt
+    d['hero']['v2_business_types'] = LISTAS_V2.get(lang) or (bt[1:] if len(bt) > 1 else bt)
     member = d['pricing']['plans']['member']
     if not member.get('period'):
         member['period'] = d['pricing']['plans']['premium_pro'].get('period', '')

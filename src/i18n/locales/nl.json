@@ -58,7 +58,33 @@
       "Brunch"
     ],
     "see_resources": "ZIE BRONNEN",
-    "social_proof_label": "Oplossingen en recepten gegenereerd"
+    "social_proof_label": "Oplossingen en recepten gegenereerd",
+    "v2_social_prefix": "Vertrouwd door",
+    "v2_social_chefs": "chefs",
+    "v2_social_count": "recepten & oplossingen gegenereerd",
+    "v2_title_prefix": "Verlaag uw ingrediëntenkosten in uw",
+    "v2_title_suffix": "met",
+    "v2_subtitle": "Automatiseer food cost, verspilling, porties en menu's met 50+ AI-agents ontwikkeld voor professionele keukens.",
+    "v2_description": "Getraind op de dagelijkse werkprocessen van keukenchefs, patissiers, bakkers en horecaondernemers — niet op generieke restaurantmarketing.",
+    "v2_stat_agents": "AI-agents",
+    "v2_stat_tools": "bedrijfs- en kostentools",
+    "v2_stat_cookbooks": "regionale kookboeken",
+    "v2_stat_roles": "keukenrollen gedekt",
+    "v2_cta_pricing": "Bekijk abonnementen & prijzen",
+    "v2_microcopy": "Abonnementen vanaf €10/maand · elke week een nieuwe AI-agent toegevoegd",
+    "v2_business_types": [
+      "Restaurant",
+      "Catering",
+      "Pizzeria",
+      "Hamburger Bar",
+      "Bakkerij",
+      "Banketbakkerij",
+      "Chocolaterie",
+      "IJssalon",
+      "Dark Kitchen",
+      "Café",
+      "Brunch"
+    ]
   },
   "stats": {
     "apps": "50+",
@@ -396,7 +422,19 @@
     "use_tool": "Gebruik Tool",
     "creativity_subtitle": "Showcase",
     "explore_app": "Verken de app",
-    "preview_label": "Voorbeeld"
+    "preview_label": "Voorbeeld",
+    "v2_business_eyebrow": "Bedrijfstools · 6 keukengerichte agents",
+    "v2_business_title_prefix": "Verlaag uw ingrediëntenkosten tot wel",
+    "v2_business_title_highlight": "30%",
+    "v2_business_title_suffix": "met tools gebouwd voor de pas.",
+    "v2_business_description": "Verspilling, portionering, allergenen, omrekeningen: de dagelijkse berekeningen van een professionele keuken, geautomatiseerd.",
+    "v2_proof_label": "Bewijs",
+    "v2_proof_value": "30%",
+    "v2_proof_text": "gemiddelde verlaging van ingrediëntenkosten dankzij nauwkeurige verspillingsberekeningen",
+    "v2_use_case_label": "Toepassing",
+    "v2_included_prefix": "Alle tools inbegrepen vanaf het",
+    "v2_included_suffix": "abonnement en hoger.",
+    "v2_business_cta": "Bekijk abonnementen die alle 6 tools ontgrendelen"
   },
   "gallery": {
     "badge": "50+ Gespecialiseerde AI-agents in Actie",
@@ -785,32 +823,38 @@
       "chatgpt_4o": {
         "name": "ChatGPT 5.5",
         "description": "Meest geavanceerde algemene AI-assistent",
-        "preview": "Helpt met technische vragen en seizoensgebonden menuplannen"
+        "preview": "Helpt met technische vragen en seizoensgebonden menuplannen",
+        "v2_blurb": "Technische vragen en seizoensgebonden menuplanning, altijd beschikbaar."
       },
       "mermas_gencal": {
         "name": "Mermas GenCal",
         "description": "Optimaliseert opbrengsten en vermindert verspilling",
-        "preview": "Bespaart tot 30% op ingrediëntenkosten met precieze berekeningen"
+        "preview": "Bespaart tot 30% op ingrediëntenkosten met precieze berekeningen",
+        "v2_blurb": "Optimaliseer opbrengsten en verminder verspilling in elke mise-en-place, post en service."
       },
       "id_alergenos": {
         "name": "ID Allergenen",
         "description": "Identificeert allergenen automatisch",
-        "preview": "Voldoet aan voedselveiligheidsnormen zonder fouten"
+        "preview": "Voldoet aan voedselveiligheidsnormen zonder fouten",
+        "v2_blurb": "Identificeer allergenen automatisch en voldoe foutloos aan de voedselveiligheidsnormen."
       },
       "mental_coach": {
         "name": "Mental Coach",
         "description": "Welzijn en leiderschap in de keuken",
-        "preview": "Vermindert stress en verbetert werksfeer van het team"
+        "preview": "Vermindert stress en verbetert werksfeer van het team",
+        "v2_blurb": "Verminder keukendruk en versterk het leiderschap binnen uw brigade."
       },
       "conversor_ing": {
         "name": "Convertor Ing",
         "description": "Converteert maten en gewichten direct",
-        "preview": "Past recepten aan tussen metrische systemen zonder fouten"
+        "preview": "Past recepten aan tussen metrische systemen zonder fouten",
+        "v2_blurb": "Pas recepten direct aan tussen metrische systemen, zonder omrekenfouten."
       },
       "calcula_pax": {
         "name": "Calcula Pax",
         "description": "Past hoeveelheden aan volgens gasten",
-        "preview": "Schaalt recepten met wiskundige precisie voor elk evenement"
+        "preview": "Schaalt recepten met wiskundige precisie voor elk evenement",
+        "v2_blurb": "Schaal recepten met wiskundige precisie voor elk aantal couverts of evenement."
       }
     },
     "concepts": {
@@ -943,7 +987,20 @@
           "1": "10.000 maandelijkse credits",
           "2": "Wereldwijde kookboeken",
           "3": "E-mailondersteuning"
-        }
+        },
+        "v2_short": "Lid",
+        "v2_eyebrow": "Koks & postchefs",
+        "v2_description": "Ideaal voor keukenassistenten, koks en postchefs die beginnen met AI.",
+        "v2_credits": "10.000 credits/maand",
+        "v2_hint": "≈ 200 recepten of 100 kostenberekeningen",
+        "v2_cta": "Beginnen als Lid",
+        "v2_features": [
+          "Alle 50+ AI-tools inbegrepen",
+          "10.000 maandelijkse credits",
+          "25+ wereldkookboeken",
+          "E-mailondersteuning"
+        ],
+        "period": "/maand"
       },
       "premium_pro": {
         "name": "AI Chef Premium Pro",
@@ -957,7 +1014,13 @@
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
           "4": "Prioriteitsondersteuning"
-        }
+        },
+        "v2_short": "Premium Pro",
+        "v2_eyebrow": "Keukenchefs & managers",
+        "v2_description": "Voor keukenchefs, executive chefs en restaurantmanagers die dagelijks de service draaien.",
+        "v2_credits": "85.000 credits/maand",
+        "v2_hint": "≈ volledige menucosting + wekelijkse receptontwikkeling",
+        "v2_cta": "Beginnen met Premium Pro"
       },
       "premium_plus": {
         "name": "AI Chef Premium Plus",
@@ -971,7 +1034,13 @@
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
           "4": "Premium 24/7 ondersteuning"
-        }
+        },
+        "v2_short": "Premium Plus",
+        "v2_eyebrow": "Eigenaren & meerdere vestigingen",
+        "v2_description": "Voor gastronomische ondernemers en restaurantketens die hun operaties opschalen.",
+        "v2_credits": "175.000 credits/maand",
+        "v2_hint": "≈ menu's voor meerdere vestigingen, kostenbeheer & marketing",
+        "v2_cta": "Beginnen met Premium Plus"
       },
       "premium_max": {
         "name": "AI Chef Premium Max",
@@ -987,7 +1056,13 @@
           "4": "Premium 24/7 ondersteuning",
           "5": "Vroege toegang tot nieuwe functies",
           "6": "Exclusieve training over nieuwe releases"
-        }
+        },
+        "v2_short": "Max",
+        "v2_eyebrow": "Grootschalige operaties",
+        "v2_description": "Onbeperkte maandelijkse credits voor veeleisende professionals zonder gebruiksplafond.",
+        "v2_credits": "Onbeperkte credits",
+        "v2_hint": "Gebruik elke tool zo vaak als de service vereist",
+        "v2_cta": "Beginnen met Premium Max"
       },
       "premium_plus_annual": {
         "name": "AI Chef Premium Max Jaarlijks",
@@ -1004,9 +1079,23 @@
           "3": "Geavanceerde bedrijfstools",
           "4": "Premium 24/7 ondersteuning",
           "5": "Maandelijkse gepersonaliseerde consultatie"
-        }
+        },
+        "v2_eyebrow": "Eigenaren & directeuren",
+        "v2_description": "Ideaal voor gastronomische ondernemers, restauranteigenaren en directeuren die een volledig jaar willen vastleggen.",
+        "v2_credits": "Onbeperkte credits, het hele jaar",
+        "v2_hint": "+ maandelijkse persoonlijke begeleiding inbegrepen",
+        "v2_cta": "Jaarabonnement starten & besparen"
       }
-    }
+    },
+    "v2_title": "Vind uw abonnement in 10 seconden",
+    "v2_description": "Koppel uw rol aan een niveau. Credits schalen mee met hoeveel van uw keuken en bedrijf u automatiseert — van recepthulp op één post tot een volledige multi-restaurantoperatie.",
+    "v2_role_member": "Kok of assistent",
+    "v2_role_premium_pro": "Keukenchef",
+    "v2_role_premium_plus": "Eigenaar of groep",
+    "v2_role_premium_max": "Intensieve gebruiker",
+    "v2_divider": "Voor intensieve gebruikers & jaarlijkse commitment",
+    "v2_enterprise_question": "Beheert u een groep of heeft u een aangepast volume nodig?",
+    "v2_enterprise_link": "Neem contact op voor een enterprise-abonnement"
   },
   "featured": {
     "title_main": "Uitgelichte AI-agents",
