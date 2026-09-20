@@ -10,12 +10,16 @@ Producción = `main`. Política nueva de John (decisiones delegadas a Claude): `
   canónico = kit base v2.0 (sushi-bar y 5 más siguen en v1.1 CB); Mega Pack fuera; env `VITE_STRIPE_PAYMENT_LINK_TAREAS_TAQUERIA`.
 - Consumo F1: research 0,24 M · SPEC 0,21 M · refutación 0,28 M · fixer 0,28 M = **1,0 M** de los 2,5 M del producto.
 
-## F2 Entregables — EN CURSO
-- Paso 1 (en marcha al cerrar F1): helpers de `scripts/generate-tareas-taqueria.py` contra el contrato + `comparar_molde.py`
-  + idempotencia `kit-tareas-v2_0/main.py --producto kit-tareas-taqueria --dry-run` (0 diferencias).
-- Paso 2: contenido de las 22 hojas por redactores Sonnet (≤ 3 agentes, ~4 ficheros cada uno) siguiendo SPEC §3-§4.
-- Paso 3: gates §5 (`censo-entregables --fail`, `gate-no-latinos`, tildes, 63/74 °C, idempotencia) → commit «F2 cerrada».
-- Cómo retomar si se corta: `git pull`, leer este fichero y `03-contrato-molde-v2.md`; comprobar si existe
-  `scripts/generate-tareas-taqueria.py` y correr `--prueba` + `comparar_molde.py`.
+## F2 Entregables — CERRADA (gates de script en verde)
+- `scripts/generate-tareas-taqueria.py` (helpers del molde v2.0 + loader de `contenido/contenido_a.py` (01-04, 173 tareas) y
+  `contenido_b.py` (05-08 + 09 + bonus, 125 tareas)) → `astro-site/public/dl/kit-tareas-taqueria/` (11 xlsx, caché inyectada).
+- Verificado: generador == post-motor celda a celda (0 diferencias) · `main.py --dry-run --origen` TODO VERDE (11/11 en
+  alcance, idempotencia 0) · `comparar_molde.py` 9/9 · `gate_f2_contenido.py` PASS (298 tareas, rango 270-330) ·
+  `censo-entregables --only --fail` 0 · `gate-no-latinos` 0. **`postprocess-transversal` NO se corre** (v1.1: degradaría el kit).
+- Trampas cazadas: `main.py` tiene el scratchpad de OTRA sesión hardcodeado (`CLAUDE_SCRATCHPAD=$SP` al invocarlo);
+  `motor.cadencia` retitula la columna de tiempo por CONTENIDO (07 mensual solo `1º de mes/Quincenal/Mensual/Fin de mes`,
+  08 con «antes/víspera/día siguiente/al confirmar»); las colas de «Se conecta con» de 07/08/bonus las escribe el motor
+  (`COLA_MOTOR` en el generador, pegadas del dry-run); `texto_appcc` añade la coletilla del Pack a toda celda con APPCC.
+- Consumo F2: helpers 0,31 M · redactores 0,24 + 0,22 M = **0,77 M**. Acumulado producto: **1,77 M** de 2,5 M.
 
 ## F3 Producto y lanzamiento — PENDIENTE (checklist en SPEC §6)

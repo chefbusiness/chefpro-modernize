@@ -194,7 +194,7 @@ Estructura verificada en `astro-site/public/dl/kit-tareas-sushi-bar/` y en `astr
 | 02 | | Corte, Plancha y Comal | 16-19 |
 | 03 | `03-appcc-salsas-alergenos.xlsx` | Temperaturas y Trazabilidad | 16-20 |
 | 03 | | Barra de Salsas | 14-16 |
-| 03 | | Alérgenos y Contaminación Cruzada | 14-16 |
+| 03 | | Alérgenos y Cruzada | 14-16 |
 | 04 | `04-nixtamal-tortilla-guisados.xlsx` | Nixtamal y Molienda | 14-16 |
 | 04 | | Tortilla y Comal | 10-12 |
 | 04 | | Guisados y Rotación | 12-14 |
@@ -685,7 +685,7 @@ Todos mecánicos. F2 no se da por cerrada hasta que los once están en verde.
 | **G8** | **Tareas por hoja** | Para cada una de las 22 hojas de checklist de los ficheros 01-08, el recuento de celdas numéricas en la columna `A` cae **dentro del rango del §3.1**. Total del kit en **[270, 330]** | 22/22 y total en rango |
 | **G9** | **Estructura y DV** | Los 11 ficheros existen con el nombre exacto del §3 · toda hoja de checklist tiene la DV `"✓,—,N/A"` · nombres de pestaña ≤ 31 caracteres y sin `/` · panel congelado en la fila 4 · las 5 filas libres dentro del rango del contador · las 5 secciones de `Instrucciones` de v2.0 y el pie `— Kit de Tareas Recurrentes · Taquería Mexicana · AI Chef Pro · aichef.pro` | 11/11 |
 | **G10** | **Censo de entregables** | `python3 scripts/productos-digitales/censo-entregables.py --only kit-tareas-taqueria --fail` | **exit 0**, 0 defectos |
-| **G11** | **Motor e idempotencia** | `python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-taqueria --dry-run --json informe.json` → **0 diferencias** en la comparación celda a celda de la 2.ª pasada (`main.py:23-25`). Después, `python3 scripts/productos-digitales/postprocess-transversal.py` sobre el producto | 0 diferencias |
+| **G11** | **Motor e idempotencia** | `python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-taqueria --dry-run --json informe.json` → **0 diferencias** en la comparación celda a celda de la 2.ª pasada (`main.py:23-25`). Después, `python3 scripts/productos-digitales/~~postprocess-transversal~~ (**NO correr**: saneamiento v1.1 de la Fase A; medido el 20-sep, degrada el contador honesto a `COUNTIF`, la versión a 1.1 y la metadata v2.0) sobre el producto | 0 diferencias |
 
 **Longitud**: ninguna tarea supera **110 caracteres** (§4.2). Se comprueba en el mismo barrido de G8.
 

@@ -663,6 +663,8 @@ def guardar(wb, nombre_fichero, titulo, destino=None):
     p.title = '%s · %s' % (titulo, SUFIJO)
     p.subject = SUBJECT
     p.keywords = KEYWORDS
+    p.description = 'aichef.pro/' + PID      # como el kit base v2.0
+    p.category = 'AI Chef Pro · Productos digitales'
     carpeta = destino or OUTPUT_DIR
     if not os.path.isdir(carpeta):
         os.makedirs(carpeta)
@@ -685,13 +687,28 @@ F01 = '01-apertura-cierre-taqueria.xlsx'
 DETALLE_AREA = F01 + ' — el mismo día con el DETALLE por área (taquería).'
 
 
+#: Colas que escribe el MOTOR (`contexto()` clasifica 07 como periódico y 08 como eventos
+#: por la columna de tiempo; los bonus cuelgan de ellos). Pegadas de un dry-run del
+#: 20-sep-2026: si se cambia `col_tiempo` de 07/08 hay que volver a medirlas.
+COLA_MOTOR = {
+    '07-semanales-mensuales.xlsx':
+        'Estás en 07-semanales-mensuales.xlsx: lo que NO es diario (semanal, mensual, '
+        'trimestral y anual). El día a día está en %s.' % F01,
+    '08-eventos-estacionales.xlsx':
+        'Estás en 08-eventos-estacionales.xlsx: lo excepcional (eventos, festivos, '
+        'temporada). El día a día está en %s.' % F01,
+    'BONUS-02-calendario-anual.xlsx':
+        'Estás en BONUS-02-calendario-anual.xlsx: cada fecha de este calendario se ejecuta '
+        'con los checklists de 08-eventos-estacionales.xlsx.',
+}
+
+
 def conecta(fname):
     """Bloque «Se conecta con» por defecto de un fichero que no es el 01."""
-    return ('Se conecta con', [
-        DETALLE_AREA,
+    cola = COLA_MOTOR.get(fname) or (
         'Estás en %s: es una capa MÁS, no una repetición — el marco del día '
-        'está en %s.' % (fname, F01),
-    ])
+        'está en %s.' % (fname, F01))
+    return ('Se conecta con', [DETALLE_AREA, cola])
 
 
 CONECTA_01 = ('Dónde encaja este fichero', [
@@ -702,7 +719,7 @@ CONECTA_01 = ('Dónde encaja este fichero', [
 CONECTA_BONUS01 = ('Se conecta con', [
     DETALLE_AREA,
     'Estás en BONUS-01-briefing-servicio.xlsx: el briefing abre el turno que '
-    'luego se trabaja con %s.' % F01,
+    'luego se trabaja con %s y 08-eventos-estacionales.xlsx.' % F01,
 ])
 
 

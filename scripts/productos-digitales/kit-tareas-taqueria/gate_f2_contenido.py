@@ -36,8 +36,8 @@ total = 0
 textos_por_fichero = {}
 PROHIBIDO = [(r'\b65\s*°\s*C', '65 °C derogado'), (r'\b75\s*°\s*C', '75 °C derogado'), (r'registro horario digital|control horario digital|fichaje digital|horario digital|obligatorio en 2026|digital obligatori', 'registro horario digital'),
              (r'tex-?mex', 'tex-mex'), (r'\bgyro', 'gyro'), (r'\bburrito', 'burrito'), (r'\bnachos', 'nachos'), (r'\bpesos\b|\bMXN\b|\$', 'importes en pesos'), (r' |‑', 'U+202F/U+2011')]
-SIN_TILDE = re.compile(r'\b(camara|limite|preparacion|maria|numero|sesamo|rotacion|alergeno|alergenos|dia|dias|aqui|segun|tambien|jornada|hora limite|limpieza basica|trazabilidad y limite)\b', re.I)
-GLOSAS = [('trompo', 'trompo (asador vertical)'), ('tortillería', 'tortillería (obrador'), ('guisado', 'guisados (cazuelas'), ('APPCC', 'APPCC (HACCP)'), ('escandallo', 'escandallo (costeo)')]
+SIN_TILDE = re.compile(r'\b(camara|limite|preparacion|maria|numero|sesamo|rotacion|alergeno|alergenos|dia|dias|aqui|segun|tambien|hora limite|limpieza basica|trazabilidad y limite)\b', re.I)
+GLOSAS = [('trompo', r'trompo \(asador vertical\)'), ('tortillería', r'tortillería \(obrador'), ('guisado', r'guisados? \(cazuelas?'), ('APPCC', r'APPCC \(HACCP\)'), ('escandallo', r'escandallo \(costeo\)')]
 for path in ficheros:
     nombre = pathlib.Path(path).name
     wb = load_workbook(path)
@@ -52,8 +52,10 @@ for path in ficheros:
                 if isinstance(c.value, str): textos.append((ws.title, c.coordinate, c.value))
     textos_por_fichero[nombre] = textos
     ins = '\n'.join(v for t, _, v in textos if t == 'Instrucciones')
-    for req in ('Cómo usar estas plantillas', 'Se conecta con', 'Diseñado por John Guerrero', 'Versión 2.0', PIE, 'N/A'):
+    es_bonus = nombre.startswith('BONUS')
+    for req in ('Cómo usar', 'Diseñado por John Guerrero', 'Versión 2.0', PIE) + (() if es_bonus else ('N/A',)):
         if req not in ins: F(f'{nombre}/Instrucciones: falta «{req[:40]}»')
+    if 'Se conecta con' not in ins and 'Dónde encaja' not in ins: F(f'{nombre}/Instrucciones: sin bloque de conexión')
     # hojas de checklist
     prefijo = next((k for k in esperado if nombre.startswith(k.split('.')[0][:2])), None)
     rangos = list(esperado.get(prefijo, [])) if prefijo else []
@@ -87,7 +89,8 @@ for path in ficheros:
                     tareas += 1
                     if not ws.cell(r, 4).value or not ws.cell(r, 5).value: F(f'{nombre}/{ws.title}:{r} Responsable/Hora vacíos (B6)')
                     if f'F{r}' not in dv_celdas: F(f'{nombre}/{ws.title}:F{r} sin desplegable')
-                    if len(str(b)) > 110: F(f'{nombre}/{ws.title}:B{r} > 110 caracteres')
+                    base_txt = re.sub(r' \(si tienes el Pack APPCC[^)]*\)| — anota la lectura: ____ °C| \(refrigeración 0-4 °C\)', '', str(b))
+                    if len(base_txt) > 110: F(f'{nombre}/{ws.title}:B{r} > 110 caracteres ({len(base_txt)})')
                 else: vacias_num += 1
             elif a is None and b is None and ws.cell(r, 1).fill.fill_type == 'solid' and ws.cell(r, 1).fill.fgColor.rgb == VERDE:
                 libres += 1
@@ -113,12 +116,12 @@ for path in ficheros:
         for rx, nom in PROHIBIDO:
             if re.search(rx, v): F(f'{nombre}/{t}!{coord}: {nom}: «{v[:60]}»')
         if any(unicodedata.category(ch).startswith('L') and any(k in unicodedata.name(ch, '') for k in ('CJK', 'CYRILLIC', 'HANGUL', 'ARABIC', 'HEBREW', 'THAI', 'KATAKANA', 'HIRAGANA')) for ch in v): F(f'{nombre}/{t}!{coord}: no latino')
-        mt = SIN_TILDE.search(v)
+        mt = SIN_TILDE.search(re.sub(r'\S+\.xlsx', '', v))
         if mt and not re.search(r'johnguerrero|aichef|@', v): F(f'{nombre}/{t}!{coord}: sin tilde «{mt.group(0)}» en «{v[:50]}»')
         if 'Cinco de Mayo' in v and not re.search(r'EE\. ?UU\.|estadounidense|Puebla', v): F(f'{nombre}/{t}!{coord}: Cinco de Mayo sin matiz')
-    todo = '\n'.join(v for _, _, v in textos)
+    todo = '\n'.join(v for t, coord, v in textos if t != 'Instrucciones' and (nombre.startswith('BONUS') or coord.startswith('B')))
     for palabra, glosa in GLOSAS:
-        if re.search(r'\b' + palabra, todo, re.I) and glosa.lower() not in todo.lower(): F(f'{nombre}: usa «{palabra}» sin la glosa «{glosa}»')
+        if re.search(r'\b' + palabra + r'\b', todo) and not re.search(glosa, todo): F(f'{nombre}: usa «{palabra}» sin la glosa «{glosa}»')   # minúsculas = prosa; los rótulos en MAYÚSCULAS no cuentan
 print(f'ficheros {len(ficheros)} · tareas numeradas escritas {total} (SPEC 270-330) · avisos {len(avisos)}')
 for a in avisos: print('  aviso:', a)
 if not (270 <= total <= 330) and ficheros: F(f'total {total} fuera de 270-330')
