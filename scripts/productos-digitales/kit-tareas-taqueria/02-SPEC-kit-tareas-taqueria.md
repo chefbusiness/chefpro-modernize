@@ -543,7 +543,7 @@ En `Instrucciones`, además de los cinco bloques de v2.0, el bloque **«Cómo pe
 ### BONUS-01 · `BONUS-01-briefing-servicio.xlsx`
 
 Hojas: `Instrucciones` · `Briefing Pre-Servicio` (21 car.).
-**Formulario**, no checklist (D3.0). Título de la fila 1: `BRIEFING PRE-SERVICIO — TAQUERÍA MEXICANA`. Fila 2: `Fecha:` `___/___/______` `Turno:` `☐ Almuerzo  ☐ Cena` `Responsable briefing:` `_________________________`.
+**Formulario**, no checklist (D3.0). Título de la fila 1: `Briefing Pre-Servicio — Taquería Mexicana` (NO en versalitas: `motor.es_briefing` busca `'Briefing'` sensible a mayúsculas, `motor.py:1250`; con `BRIEFING` la hoja quedaría fuera de alcance). Fila 2: `Fecha:` `___/___/______` `Turno:` `☐ Almuerzo  ☐ Cena` `Responsable briefing:` `_________________________`.
 Bloques y campos (todo son celdas del operador):
 
 | Bloque | Campos |
