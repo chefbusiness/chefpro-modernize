@@ -34,6 +34,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   // no estaban en el select y el admin no podía generar magic links para ellos.
   // Nombres/precios verbatim del hub ProductosDigitales.tsx.
   { id: 'kit-tareas-sushi-bar', label: 'Kit Tareas Sushi Bar (€14)' },
+  { id: 'kit-tareas-taqueria', label: 'Kit Tareas Taquería Mexicana (€14)' },
   { id: 'kit-tareas-asador', label: 'Kit Tareas Asador (€14)' },
   { id: 'kit-tareas-marisqueria', label: 'Kit Tareas Marisquería (€14)' },
   { id: 'kit-tareas-tapas-bar', label: 'Kit Tareas Tapas Bar / Gastrobar (€14)' },

@@ -96,6 +96,8 @@ import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard
 import KitTareasSushiBar from "./pages/KitTareasSushiBar";
 import KitTareasSushiBarAccessGate from "./pages/KitTareasSushiBarAccessGate";
 import KitTareasSushiBarDashboard from "./pages/KitTareasSushiBarDashboard";
+import KitTareasTaqueriaAccessGate from "./pages/KitTareasTaqueriaAccessGate";
+import KitTareasTaqueriaDashboard from "./pages/KitTareasTaqueriaDashboard";
 import PlanNegocioBarRestaurante from "./pages/PlanNegocioBarRestaurante";
 import PlanNegocioBarRestauranteAccessGate from "./pages/PlanNegocioBarRestauranteAccessGate";
 import PlanNegocioBarRestauranteDashboard from "./pages/PlanNegocioBarRestauranteDashboard";
@@ -621,6 +623,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-sushi-bar-jwt" redirectTo="/kit-tareas-sushi-bar">
                   <KitTareasSushiBarDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Taquería Mexicana — landing NATIVA en Astro
+                (astro-site/src/pages/kit-tareas-taqueria.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/kit-tareas-taqueria-access" element={<KitTareasTaqueriaAccessGate />} />
+            <Route
+              path="/kit-tareas-taqueria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-taqueria-jwt" redirectTo="/kit-tareas-taqueria">
+                  <KitTareasTaqueriaDashboard />
                 </ProtectedRoute>
               }
             />

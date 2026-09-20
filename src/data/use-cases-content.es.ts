@@ -3577,7 +3577,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         '00:00 · Cierre — limpieza profunda, APPCC firmado, prep de masa para mañana.',
       ],
       productsTitle: 'Plantillas y Kits Recomendados para Restaurante Mexicano',
-      productIds: ['guia-restaurante-mexicano', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
+      productIds: ['guia-restaurante-mexicano', 'kit-tareas-taqueria', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-gestion-personal', 'pro-prompts-ebook'],
       testimonialQuote: 'Hicimos escandallo taco a taco y descubrimos que tres signature estaban en pérdidas a pesar de ser los más vendidos. Los rediseñamos con Cocina Mexicana ajustando la marinada y el rendimiento de la carne, sin tocar precio, y subimos margen 5 puntos. La planificación de Día de Muertos con Gastro Calendar nos triplicó la facturación de esa semana.',
       testimonialAuthor: 'María José Hernández',
       testimonialRole: 'Chef y propietaria, restaurante mexicano contemporáneo',

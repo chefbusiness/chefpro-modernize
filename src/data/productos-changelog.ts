@@ -677,7 +677,7 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
         date: '2026-08-23',
         title: 'Apertura y cierre de negocio, arqueo de caja y las 338 tareas del kit revisadas',
         changes: [
-          'Nueva plantilla 08 — Apertura y Cierre del Negocio: el vocabulario de restaurante (pizarra de menú, sistema de reservas, sillas y mesas, cartas) pasa al de un obrador con tienda — encendido y comprobación de las vitrinas temperadas (16-18 °C, menos del 55 % de humedad), escaparate al sol, encargos comprometidos del día y mobiliario de mostrador —, con responsable y hora precargados en 32 tareas.',
+          'Nueva plantilla 08 — Apertura y Cierre del Negocio: el vocabulario de restaurante (pizarra de menú, sistema de reservas, sillas y mesas, cartas) pasa al de un obrador con tienda — encendido y comprobación de las vitrinas temperadas (16−18 °C, menos del 55 % de humedad), escaparate al sol, encargos comprometidos del día y mobiliario de mostrador —, con responsable y hora precargados en 32 tareas.',
           'Nueva plantilla 09 — Apertura y Cierre de Caja: fondo de caja inicial editable, recuento por denominaciones (con monedas de 0,02 €) y descuadre automático (Total facturado − Z del TPV) resaltado en ámbar si no cuadra, más la báscula de mostrador (tara y peso patrón) y el cuadre del precio por kilo entre cartel y TPV que la venta al peso necesita y el fichero genérico no cubría.',
           'Registro mensual de caja con columna «Z del TPV» y descuadre calculado por fórmula en las 31 filas del mes.',
           'Contador honesto en los 9 checklists: del total salen las tareas marcadas N/A (no aplican en tu obrador), pero NO las marcadas «—» (no hechas), que siguen contando como pendientes y bajan el porcentaje. Los dos BONUS no llevan contador porque no son listas de tareas.',
@@ -990,6 +990,22 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
           'Número de versión actualizado a 1.1 en la hoja de instrucciones de cada fichero.',
           'Metadatos, instrucciones y autoría actualizados en los 11 ficheros.',
+        ],
+      },
+    ],
+  },
+  'kit-tareas-taqueria': {
+    version: '2.0',
+    updated: '2026-09-20',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-09-20',
+        title: 'Lanzamiento del Kit de Tareas: Taquería Mexicana (nace en la versión 2.0 de la familia: contador honesto, hojas protegidas y calendario anual)',
+        changes: [
+          '11 checklists operativos: apertura y cierre, trompo al pastor, nixtamal y tortillería, barra de salsas, APPCC y alérgenos, tareas del manager, 6 perfiles, semanales y mensuales, eventos y temporadas, plantilla personalizable.',
+          'Marco normativo español (RD 1021/2022): mantenimiento en caliente ≥ 63 °C, recalentado ≥ 74 °C/15 s, refrigeración ≤ 4 °C, congelación ≤ −18 °C.',
+          'BONUS: Briefing de Servicio y Calendario Anual de Tareas con festividades mexicanas y campañas españolas.',
         ],
       },
     ],

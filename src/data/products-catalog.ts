@@ -496,6 +496,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: 'Rice and fish cutting, counter service, and anisakis protocol.',
     },
   },
+  'kit-tareas-taqueria': {
+    id: 'kit-tareas-taqueria',
+    url: '/kit-tareas-taqueria',
+    price: '€14',
+    name: { es: 'Tareas: Taquería Mexicana', en: 'Tasks: Mexican Taquería' },
+    description: {
+      es: 'Trompo al pastor, nixtamal y tortillería, barra de salsas y APPCC.',
+      en: 'Pastor spit, nixtamal and tortilla making, salsa bar and HACCP.',
+    },
+  },
   'kit-tareas-tapas-bar': {
     id: 'kit-tareas-tapas-bar',
     url: '/kit-tareas-tapas-bar',

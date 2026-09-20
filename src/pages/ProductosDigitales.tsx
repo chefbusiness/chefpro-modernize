@@ -48,6 +48,25 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Tareas Recurrentes: Taquería Mexicana',
+    slug: '/kit-tareas-taqueria',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para taquería mexicana: trompo al pastor, nixtamal y tortillería, barra de salsas, APPCC y alérgenos (RD 1021/2022) y calendario anual de tareas.',
+    features: [
+      'Trompo (asador vertical): marinado, montaje y sonda',
+      'Nixtamal y tortillería: molienda y calibrado propios',
+      'Barra de salsas + 14 alérgenos de declaración obligatoria',
+      'Calendario anual: festividades mexicanas y campañas españolas',
+    ],
+    icon: UtensilsCrossed,
+    image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'gestion', 'taqueria', 'mexicano', 'restaurante'],
+  },
+  {
     name: 'Cómo Montar una Chocolatería Boutique & Atelier',
     slug: '/guia-chocolateria-obrador',
     price: '€65',
@@ -128,8 +147,8 @@ const products = [
     ],
     icon: Calculator,
     image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'plantillas', 'guias', 'costes', 'gestion', 'restaurante', 'bar', 'pasteleria', 'dark-kitchen', 'hotel', 'catering'],
   },
   {
@@ -978,7 +997,6 @@ const products = [
 const comingSoon = [
   { icon: Coffee, name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
-  { icon: UtensilsCrossed, name: 'Tareas Recurrentes: Taquería Mexicana', desc: 'Trompo, plancha, salsas y tortillería, turnos y cierre para una taquería que funciona sola, con calendario anual.', tags: ['plantillas', 'excel', 'restaurante'], phase: 'Q4 2026' },
   { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
   { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
   { icon: PartyPopper, name: 'Plan de Negocio: Finca de Eventos y Bodas', desc: 'Aforo, packs de menú cerrado, estacionalidad de bodas y personal por servicio: el plan completo.', tags: ['plan-negocio', 'catering', 'excel'], phase: 'Q1 2027' },
