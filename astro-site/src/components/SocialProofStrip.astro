@@ -4,6 +4,8 @@
 // muestra el valor final. Script scoped a este strip para no re-animar los counters del Hero.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
+import SocialCountLive from './SocialCountLive.astro';
+import { dynamicChefs } from '../lib/social-counts';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -15,8 +17,11 @@ const stats = [
   { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
   { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
   { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
-  { end: 1, suffix: '', label: t(lang, 'stats.new_app_label') },
-  { end: 764, suffix: '+', label: t(lang, 'stats.chefs_label') },
+  // «1 nuevo agente cada semana» ya no es verdad (John, 20-sep): 16 plataformas conectables vía Composio.
+  { end: 15, suffix: '+', label: t(lang, 'stats.v2_integrations_label') },
+  // El nº de chefs crece a diario (John, 20-sep-2026): sale de lib/social-counts.ts
+  // y <SocialCountLive /> lo recalcula en cliente si el build es de otro día.
+  { end: dynamicChefs(), suffix: '+', label: t(lang, 'stats.chefs_label') },
 ];
 ---
 
@@ -45,13 +50,19 @@ const stats = [
       </div>
       <div class="col-span-2 md:col-span-4 lg:col-span-1">
         <div class="text-center p-2">
-          <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={stats[4].end} data-suffix={stats[4].suffix}>{stats[4].end}{stats[4].suffix}</div>
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-social-chefs data-target={stats[4].end} data-suffix={stats[4].suffix}>{stats[4].end}{stats[4].suffix}</div>
           <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{stats[4].label}</div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Corrige en cliente la cifra de chefs si el build es de un día anterior.
+     Astro deduplica el <script> por componente, así que montarlo aquí además
+     de en Hero (la home monta los dos) no duplica ejecución. Lo montamos para
+     que el strip funcione también si algún día se usa en una página sin Hero. -->
+<SocialCountLive />
 
 <script>
   // Count-up de los CounterStat al entrar en viewport (equivalente a CounterStat.tsx),

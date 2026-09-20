@@ -1,42 +1,89 @@
 ---
-// SocialCountLive.astro — mejora progresiva del contador de social proof.
+// SocialCountLive.astro — mejora progresiva de los contadores de social proof.
 //
-// PROBLEMA QUE RESUELVE: getDynamicCount() vive en el frontmatter de los 4
+// PROBLEMA QUE RESUELVE: los contadores se calculan en el frontmatter de los
 // componentes que pintan el social proof (Hero, UseCasePageContent,
-// UseCasesHubPage, ConsultoriaGastroProHubPage). En Astro el frontmatter corre
-// en BUILD TIME, así que el número se CONGELA hasta el siguiente deploy; en la
-// SPA React se recalculaba en cada render del navegador y por eso subía solo.
+// UseCasesHubPage, ConsultoriaGastroProHubPage) y de SocialProofStrip. En Astro
+// el frontmatter corre en BUILD TIME, así que el número se CONGELA hasta el
+// siguiente deploy; en la SPA React se recalculaba en cada render del navegador
+// y por eso subía solo.
 //
-// Este script recalcula el valor en cliente con la MISMA aritmética y corrige
-// el span si el build es de un día anterior. El HTML server-side sigue
+// Este script recalcula los valores en cliente con la MISMA aritmética y corrige
+// los elementos si el build es de un día anterior. El HTML server-side sigue
 // llevando el número (SEO y sin-JS), así que esto solo suma.
 //
-// Los elementos a corregir se marcan con `data-social-count`.
+// Elementos que corrige:
+//   [data-social-count]  → recetas/procesos/soluciones generadas
+//   [data-social-chefs]  → nº de chefs (con el sufijo «+»); si además lleva
+//                          data-target (count-up de SocialProofStrip / Hero) se
+//                          actualiza el atributo para que la animación termine
+//                          en la cifra nueva y no en la congelada del build.
 ---
 
 <script>
   (() => {
-    const nodes = document.querySelectorAll<HTMLElement>('[data-social-count]');
-    if (!nodes.length) return;
+    // ── fuente única: lib/social-counts.ts ──────────────────────────────────
+    // Copiadas VERBATIM: un <script> de cliente no puede importar el TS del
+    // servidor sin arrastrar el módulo al bundle, así que se duplican. Si se
+    // toca la aritmética allí, hay que tocarla aquí.
+    const dynamicSolutions = (now: Date): number => {
+      const BASE_DATE = new Date('2026-02-12');
+      const BASE_COUNT = 48149;
+      const diffTime = now.getTime() - BASE_DATE.getTime();
+      const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+      let total = BASE_COUNT;
+      for (let i = 1; i <= diffDays; i++) {
+        const seed = (i * 7 + 13) % 21;
+        total += 60 + seed;
+      }
+      return total;
+    };
 
-    // VERBATIM de getDynamicCount() en HeroSocialProof.tsx (fuente única de verdad)
-    const BASE_DATE = new Date('2026-02-12');
-    const BASE_COUNT = 48149;
-    const today = new Date();
-    const diffTime = today.getTime() - BASE_DATE.getTime();
-    const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-    let total = BASE_COUNT;
-    for (let i = 1; i <= diffDays; i++) {
-      const seed = (i * 7 + 13) % 21;
-      total += 60 + seed;
-    }
+    const dynamicChefs = (now: Date): number => {
+      const BASE_DATE = new Date('2026-09-20');
+      const BASE_COUNT = 764;
+      const diffTime = now.getTime() - BASE_DATE.getTime();
+      const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+      let total = BASE_COUNT;
+      for (let i = 1; i <= diffDays; i++) {
+        total += 2 + ((i * 5 + 3) % 2);
+      }
+      return total;
+    };
+    // ────────────────────────────────────────────────────────────────────────
 
+    const countNodes = document.querySelectorAll<HTMLElement>('[data-social-count]');
+    const chefNodes = document.querySelectorAll<HTMLElement>('[data-social-chefs]');
+    if (!countNodes.length && !chefNodes.length) return;
+
+    const now = new Date();
     // Mismo formato que el server: lang === 'en' → en-US, resto → es-ES
     const lang = document.documentElement.lang || 'es';
-    const formatted = total.toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
+    const locale = lang === 'en' ? 'en-US' : 'es-ES';
 
-    nodes.forEach((el) => {
-      if (el.textContent !== formatted) el.textContent = formatted;
+    const solutions = dynamicSolutions(now).toLocaleString(locale);
+    countNodes.forEach((el) => {
+      if (el.textContent !== solutions) el.textContent = solutions;
+    });
+
+    const chefsNumber = dynamicChefs(now);
+    const chefsFormatted = chefsNumber.toLocaleString(locale) + '+';
+    chefNodes.forEach((el) => {
+      // El count-up lee data-target y escribe textContent: si el elemento lo
+      // tiene, hay que actualizar el atributo o la animación volvería a la
+      // cifra del build al entrar en viewport. Y en ese caso el texto se
+      // escribe SIN separador de millares, que es lo que deja la animación al
+      // terminar (Math.floor(target) + sufijo): así no parpadea al scrollear.
+      if (el.hasAttribute('data-target')) {
+        const suffix = el.getAttribute('data-suffix') ?? '+';
+        if (el.getAttribute('data-target') !== String(chefsNumber)) {
+          el.setAttribute('data-target', String(chefsNumber));
+        }
+        const plain = String(chefsNumber) + suffix;
+        if (el.textContent !== plain) el.textContent = plain;
+        return;
+      }
+      if (el.textContent !== chefsFormatted) el.textContent = chefsFormatted;
     });
   })();
 </script>

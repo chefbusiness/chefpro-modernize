@@ -61,7 +61,7 @@
     "social_proof_label": "Soluções e receitas geradas",
     "v2_social_prefix": "Utilizado por",
     "v2_social_chefs": "chefs",
-    "v2_social_count": "receitas e soluções geradas",
+    "v2_social_count": "receitas, processos e soluções geradas",
     "v2_title_prefix": "Crie, gira e faça crescer",
     "v2_title_suffix": "com",
     "v2_subtitle": "Automatize receitas, food cost, desperdício, ementas e marketing com 50+ agentes de IA criados para restaurantes e negócios de hotelaria e restauração.",
@@ -97,7 +97,8 @@
       "a sua",
       "a sua",
       "o seu"
-    ]
+    ],
+    "v2_social_countries": "de mais de 90 países"
   },
   "notifications": {
     "someone_from": "Alguém de",
@@ -116,7 +117,8 @@
     "new_app_label": "Novo Agente IA Toda Semana",
     "chefs_label": "Chefs e Profissionais da Hospitalidade confiam em nós",
     "chefs": "764+",
-    "new_app": "1"
+    "new_app": "1",
+    "v2_integrations_label": "Ferramentas para Ligar (Gmail, Sheets, Outlook…)"
   },
   "mentoriaOnline": {
     "hero": {

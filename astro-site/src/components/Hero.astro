@@ -17,6 +17,7 @@ import type { Locale } from '../i18n/config';
 import SocialCountLive from './SocialCountLive.astro';
 import { appUrl } from '../lib/app-url';
 import { pricingHref } from '../lib/pricing-path';
+import { dynamicSolutions, dynamicChefs } from '../lib/social-counts';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -35,21 +36,13 @@ const businessPrefixes = tList(lang, 'hero.v2_business_prefixes');
 const firstWord = businessTypes[0] ?? '';
 const firstPrefix = businessPrefixes[0] ?? '';
 
-// getDynamicCount() de HeroSocialProof.tsx — computado server-side (determinista por fecha de build)
-function getDynamicCount(): number {
-  const BASE_DATE = new Date('2026-02-12');
-  const BASE_COUNT = 48149;
-  const today = new Date();
-  const diffTime = today.getTime() - BASE_DATE.getTime();
-  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-  let total = BASE_COUNT;
-  for (let i = 1; i <= diffDays; i++) {
-    const seed = (i * 7 + 13) % 21;
-    total += 60 + seed;
-  }
-  return total;
-}
-const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
+// Contadores de prueba social — computados server-side (deterministas por fecha
+// de build) desde lib/social-counts.ts, que es la fuente única de la aritmética.
+// <SocialCountLive /> los recalcula en cliente si el build es de otro día.
+// 2026-09-20 (John): el nº de chefs también crece a diario, ya no es una constante.
+const locale = lang === 'en' ? 'en-US' : 'es-ES';
+const socialCount = dynamicSolutions().toLocaleString(locale);
+const chefsCount = dynamicChefs().toLocaleString(locale);
 
 const avatars = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -85,8 +78,9 @@ const stats = [
       </div>
       <span class="text-sm text-muted-foreground text-center text-balance">
         {t(lang, 'hero.v2_social_prefix')}{' '}
-        <strong class="font-bold text-foreground">{t(lang, 'stats.chefs')}</strong>{' '}
-        {t(lang, 'hero.v2_social_chefs')}{' · '}
+        <strong class="font-bold text-foreground" data-social-chefs>{chefsCount}+</strong>{' '}
+        {t(lang, 'hero.v2_social_chefs')}{' '}
+        {t(lang, 'hero.v2_social_countries')}{' · '}
         <strong class="font-bold text-foreground" data-social-count>{socialCount}</strong><SocialCountLive />{' '}
         {t(lang, 'hero.v2_social_count')}
       </span>

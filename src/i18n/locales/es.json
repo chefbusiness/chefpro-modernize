@@ -64,7 +64,7 @@
     "social_proof_label": "Soluciones y recetas generadas",
     "v2_social_prefix": "Con la confianza de",
     "v2_social_chefs": "chefs",
-    "v2_social_count": "recetas y soluciones generadas",
+    "v2_social_count": "recetas, procesos y soluciones generadas",
     "v2_title_prefix": "Crea, gestiona y haz crecer tu",
     "v2_title_suffix": "con",
     "v2_subtitle": "Automatiza recetas, food cost, mermas, cartas y marketing con más de 75 agentes de IA diseñados para restaurantes y negocios de hostelería.",
@@ -100,7 +100,8 @@
       "",
       "",
       ""
-    ]
+    ],
+    "v2_social_countries": "de más de 90 países"
   },
   "notifications": {
     "someone_from": "Alguien de",
@@ -119,7 +120,8 @@
     "new_app": "1",
     "new_app_label": "Nuevo Agente IA Cada Semana",
     "chefs": "764+",
-    "chefs_label": "Chefs y Profesionales de Hostelería confían en nosotros"
+    "chefs_label": "Chefs y Profesionales de Hostelería confían en nosotros",
+    "v2_integrations_label": "Herramientas para Conectar (Gmail, Sheets, Outlook…)"
   },
   "categories": {
     "title": "Explora Nuestras 6 Categorías de Agentes IA",

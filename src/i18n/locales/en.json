@@ -64,7 +64,7 @@
     "social_proof_label": "Solutions and recipes generated",
     "v2_social_prefix": "Trusted by",
     "v2_social_chefs": "chefs",
-    "v2_social_count": "recipes & solutions generated",
+    "v2_social_count": "recipes, processes & solutions generated",
     "v2_title_prefix": "Create, run and grow your",
     "v2_title_suffix": "with",
     "v2_subtitle": "Automate recipes, food cost, waste, menus and marketing with 75+ AI agents built for restaurants and hospitality businesses.",
@@ -100,7 +100,8 @@
       "",
       "",
       ""
-    ]
+    ],
+    "v2_social_countries": "from 90+ countries"
   },
   "notifications": {
     "someone_from": "Someone from",
@@ -119,7 +120,8 @@
     "new_app": "1",
     "new_app_label": "New AI Agent Every Week",
     "chefs": "764+",
-    "chefs_label": "Chefs & Hospitality Professionals trust us"
+    "chefs_label": "Chefs & Hospitality Professionals trust us",
+    "v2_integrations_label": "Tools to Connect (Gmail, Sheets, Outlook…)"
   },
   "categories_labels": {
     "creatividad": "Culinary Creativity",

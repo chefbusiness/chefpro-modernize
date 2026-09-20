@@ -61,7 +61,7 @@
     "social_proof_label": "Lösungen und Rezepte generiert",
     "v2_social_prefix": "Vertrauen von",
     "v2_social_chefs": "Köchen",
-    "v2_social_count": "generierte Rezepte & Lösungen",
+    "v2_social_count": "generierte Rezepte, Prozesse & Lösungen",
     "v2_title_prefix": "Kreieren, steuern und ausbauen:",
     "v2_title_suffix": "mit",
     "v2_subtitle": "Automatisieren Sie Rezepte, Food Cost, Warenverluste, Speisekarten und Marketing mit 50+ KI-Agenten für Restaurants und Gastronomiebetriebe.",
@@ -97,7 +97,8 @@
       "Ihre",
       "Ihr",
       "Ihr"
-    ]
+    ],
+    "v2_social_countries": "aus über 90 Ländern"
   },
   "notifications": {
     "someone_from": "Jemand aus",
@@ -116,7 +117,8 @@
     "new_app_label": "Neuer KI-Agent Jede Woche",
     "chefs_label": "Köche und Gastronomieprofis vertrauen uns",
     "chefs": "764+",
-    "new_app": "1"
+    "new_app": "1",
+    "v2_integrations_label": "Tools zum Verbinden (Gmail, Sheets, Outlook…)"
   },
   "mentoriaOnline": {
     "hero": {

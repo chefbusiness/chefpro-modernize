@@ -61,7 +61,7 @@
     "social_proof_label": "Oplossingen en recepten gegenereerd",
     "v2_social_prefix": "Vertrouwd door",
     "v2_social_chefs": "chefs",
-    "v2_social_count": "recepten & oplossingen gegenereerd",
+    "v2_social_count": "recepten, processen & oplossingen gegenereerd",
     "v2_title_prefix": "Creëer, beheer en laat uw",
     "v2_title_suffix": "groeien met",
     "v2_subtitle": "Automatiseer recepten, food cost, verspilling, menu's en marketing met 50+ AI-agents ontwikkeld voor restaurants en horecabedrijven.",
@@ -97,7 +97,8 @@
       "",
       "",
       ""
-    ]
+    ],
+    "v2_social_countries": "uit meer dan 90 landen"
   },
   "stats": {
     "apps": "50+",
@@ -111,7 +112,8 @@
     "new_app_label": "Nieuwe AI-agent Elke Week",
     "chefs_label": "Chefs en Horeca Professionals vertrouwen ons",
     "chefs": "764+",
-    "new_app": "1"
+    "new_app": "1",
+    "v2_integrations_label": "Tools om te Koppelen (Gmail, Sheets, Outlook…)"
   },
   "mentoriaOnline": {
     "hero": {

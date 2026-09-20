@@ -61,7 +61,7 @@
     "social_proof_label": "Soluzioni e ricette generate",
     "v2_social_prefix": "Scelto da",
     "v2_social_chefs": "chef",
-    "v2_social_count": "ricette e soluzioni generate",
+    "v2_social_count": "ricette, processi e soluzioni generate",
     "v2_title_prefix": "Crea, gestisci e fai crescere",
     "v2_title_suffix": "con",
     "v2_subtitle": "Automatizza ricette, food cost, sprechi, menu e marketing con 50+ agenti AI pensati per ristoranti e aziende della ristorazione.",
@@ -97,7 +97,8 @@
       "la tua",
       "la tua",
       "il tuo"
-    ]
+    ],
+    "v2_social_countries": "in oltre 90 paesi"
   },
   "notifications": {
     "someone_from": "Qualcuno da",
@@ -116,7 +117,8 @@
     "new_app_label": "Nuovo Agente IA Ogni Settimana",
     "chefs_label": "Chef e Professionisti dell'Ospitalità si fidano di noi",
     "chefs": "764+",
-    "new_app": "1"
+    "new_app": "1",
+    "v2_integrations_label": "Strumenti da Collegare (Gmail, Sheets, Outlook…)"
   },
   "mentoriaOnline": {
     "hero": {

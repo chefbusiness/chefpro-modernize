@@ -61,7 +61,7 @@
     "social_proof_label": "Solutions et recettes générées",
     "v2_social_prefix": "Approuvé par",
     "v2_social_chefs": "chefs",
-    "v2_social_count": "recettes & solutions générées",
+    "v2_social_count": "recettes, procédures et solutions générées",
     "v2_title_prefix": "Créez, gérez et développez votre",
     "v2_title_suffix": "avec",
     "v2_subtitle": "Automatisez recettes, food cost, pertes, cartes et marketing avec 50+ agents IA conçus pour les restaurants et les entreprises de l'hôtellerie-restauration.",
@@ -97,7 +97,8 @@
       "",
       "",
       ""
-    ]
+    ],
+    "v2_social_countries": "dans plus de 90 pays"
   },
   "notifications": {
     "someone_from": "Quelqu'un de",
@@ -116,7 +117,8 @@
     "new_app": "1",
     "new_app_label": "Nouvel Agent IA Chaque Semaine",
     "chefs": "764+",
-    "chefs_label": "Chefs et Professionnels de l'Hôtellerie nous font confiance"
+    "chefs_label": "Chefs et Professionnels de l'Hôtellerie nous font confiance",
+    "v2_integrations_label": "Outils à Connecter (Gmail, Sheets, Outlook…)"
   },
   "mentoriaOnline": {
     "hero": {
