@@ -50,8 +50,9 @@ aichef.pro/kit-tareas-taqueria · info@aichef.pro`. Filas en blanco entre bloque
 - Unidades con espacio normal U+0020 (`63 °C`), menos U+2212 (`−18 °C`), nunca U+202F ni U+2011 (idempotencia).
 
 ## 4. `09-plantilla-personalizable.xlsx`
-Molde P4 de §3 con secciones `  SECCIÓN 1 (PERSONALIZAR)`…, 15 filas libres numeradas NO (van sin número, como las
-libres), DV y contador igual. Comparar con `kit-tareas/07-plantilla-personalizable.xlsx` (volcar con `extraer_molde.py`).
+Molde P4 de §3 con secciones `  SECCIÓN 1 (PERSONALIZAR)`…, **15 filas en blanco NUMERADAS 1-15** (medido en el kit base:
+`07-plantilla-personalizable.xlsx` lleva 15 filas numeradas sin tarea por hoja; el contador honesto no las cuenta porque
+mira la columna «Tarea»), DV y contador igual. Comparar con `kit-tareas/07-plantilla-personalizable.xlsx` (volcar con `extraer_molde.py`).
 
 ## 5. `BONUS-01-briefing-servicio.xlsx`
 Hoja `Briefing`: anchos `A5 B30 C50`; r1 `Briefing Pre-Servicio` (bold); r2 `Fecha… Turno… Encargado…`; bloques con
