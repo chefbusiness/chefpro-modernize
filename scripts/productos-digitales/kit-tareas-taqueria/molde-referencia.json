@@ -1,0 +1,4614 @@
+{
+ "kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Apertura Barra Sushi",
+   "Cierre Barra Sushi"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 23,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "B": 80.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Tareas de Apertura y Cierre — Sushi Bar",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Como usar estas plantillas",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Imprime la hoja correspondiente al turno (apertura o cierr",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ El itamae principal o encargado reparte las tareas al equi",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Cada persona marca ✓ cuando completa su tarea y firma",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Las tareas de anisakis y temperaturas son OBLIGATORIAS por",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "▸ Anade tareas especificas de tu local en las filas vacias del final",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": [
+       [
+        "B",
+        "▸ Ajusta las horas limite a tus horarios reales",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 18,
+      "cells": []
+     },
+     {
+      "r": 19,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · c",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 20,
+      "cells": []
+     },
+     {
+      "r": 21,
+      "cells": [
+       [
+        "B",
+        "Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuen",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": []
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "B",
+        "Versión 1.1 · agosto 2026 · aichef.pro/kit-tareas-sushi-bar · info@aic",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Apertura Barra Sushi",
+    "max_row": 39,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "A": 5.0,
+     "B": 48.0,
+     "C": 14.0,
+     "D": 20.0,
+     "E": 13.0,
+     "F": 12.0,
+     "G": 16.0
+    },
+    "merged": [
+     "A12:G12",
+     "A20:G20",
+     "A1:G1",
+     "A31:G31",
+     "A2:G2",
+     "A5:G5"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F25 F26 F27 F28 F29 F32 F33 F34 F35",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G35"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist: Apertura Barra Sushi",
+        "bold": true,
+        "sz": 14.0,
+        "color": "002E2E2E",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Respon",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00777777",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "left",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Limite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  TEMPERATURAS Y EQUIPOS",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Encender vitrina neta case y verificar 2-4°C",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Barra sushi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "10:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Verificar temperatura camara pescado crudo (-2 a 0°C)",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Camara",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "10:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Verificar camara congelacion anisakis (-20°C o menos)",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Camara",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "10:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Registrar temperaturas en hoja de control APPCC",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Barra sushi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "10:05",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 32,
+      "cells": [
+       [
+        "A",
+        "21",
+        null
+       ],
+       [
+        "B",
+        "Verificar reservas del dia y preparar mesas/barra",
+        null
+       ],
+       [
+        "C",
+        "Sala",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Encargado sala",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "11:30",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 33,
+      "cells": [
+       [
+        "A",
+        "22",
+        null
+       ],
+       [
+        "B",
+        "Montar mesas: hashi (palillos), soja, servilletas",
+        null
+       ],
+       [
+        "C",
+        "Sala",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Camarero",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "11:30",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 34,
+      "cells": [
+       [
+        "A",
+        "23",
+        null
+       ],
+       [
+        "B",
+        "Verificar stock bebidas: sake, cerveza japonesa, te",
+        null
+       ],
+       [
+        "C",
+        "Barra bar",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Camarero",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "11:30",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 35,
+      "cells": [
+       [
+        "A",
+        "24",
+        null
+       ],
+       [
+        "B",
+        "Encender musica ambiente y verificar iluminacion",
+        null
+       ],
+       [
+        "C",
+        "Sala",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Encargado sala",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "11:45",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 36,
+      "cells": []
+     },
+     {
+      "r": 37,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIF(F5:F35,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B35,\"?*\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 38,
+      "cells": [
+       [
+        "B",
+        "Verificado por: _________________________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 39,
+      "cells": [
+       [
+        "B",
+        "Firma: _____________  Fecha: ___/___/______",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cierre Barra Sushi",
+    "max_row": 32,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "A": 5.0,
+     "B": 48.0,
+     "C": 14.0,
+     "D": 20.0,
+     "E": 13.0,
+     "F": 12.0,
+     "G": 16.0
+    },
+    "merged": [
+     "A1:G1",
+     "A13:G13",
+     "A2:G2",
+     "A21:G21",
+     "A5:G5"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G28"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist: Cierre Barra Sushi",
+        "bold": true,
+        "sz": 14.0,
+        "color": "002E2E2E",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Respon",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00777777",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "left",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Limite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  PESCADO Y PRODUCTO",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Inventariar pescado restante: anotar piezas y pesos",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Barra sushi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "23:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Registrar mermas de pescado en hoja de control",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Barra sushi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "23:05",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Envolver pescado restante y devolver a camara (0-2°C)",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Camara",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Itamae",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "23:10",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Descartar arroz sobrante — NUNCA reutilizar al dia siguiente",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Ayudante sushi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "23:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 25,
+      "cells": [
+       [
+        "A",
+        "16",
+        null
+       ],
+       [
+        "B",
+        "Cerrar gas, apagar equipos no necesarios",
+        null
+       ],
+       [
+        "C",
+        "Cocina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Encargado",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:35",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 26,
+      "cells": [
+       [
+        "A",
+        "17",
+        null
+       ],
+       [
+        "B",
+        "Preparar pedido pescado para manana (lonja/proveedor)",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Itamae",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:30",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 27,
+      "cells": [
+       [
+        "A",
+        "18",
+        null
+       ],
+       [
+        "B",
+        "Cuadre de caja y cierre TPV",
+        null
+       ],
+       [
+        "C",
+        "Barra bar",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Encargado",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:40",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 28,
+      "cells": [
+       [
+        "A",
+        "19",
+        null
+       ],
+       [
+        "B",
+        "Activar alarma y cerrar local",
+        null
+       ],
+       [
+        "C",
+        "General",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Encargado",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:45",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 29,
+      "cells": []
+     },
+     {
+      "r": 30,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIF(F5:F28,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B28,\"?*\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 31,
+      "cells": [
+       [
+        "B",
+        "Verificado por: _________________________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 32,
+      "cells": [
+       [
+        "B",
+        "Firma: _____________  Fecha: ___/___/______",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Tareas de Apertura y Cierre — Sushi Bar · Kit de Tareas Recurrentes: Sushi Bar",
+   "subject": "Kit de Tareas Recurrentes: Sushi Bar · v1.1",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas/BONUS-02-calendario-anual-tareas.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Calendario Anual"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 23,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "'Instrucciones'!$A$1:$B$23",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 100.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": 26.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "BONUS: Calendario Anual de Tareas Especiales",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Cómo usar esta plantilla",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Consulta las fechas clave de hostelería mes a mes",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Planifica con antelación: menús especiales, decoración, st",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Añade las fechas relevantes de tu zona (fiestas locales, f",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": []
+     }
+    ],
+    "tail": [
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "▸ Estás en BONUS-02-calendario-anual-tareas.xlsx: cada fecha de este c",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": []
+     },
+     {
+      "r": 18,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 19,
+      "cells": []
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "B",
+        "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010,",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": [
+       [
+        "B",
+        "Contacto: info@aichef.pro",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": []
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "B",
+        "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Calendario Anual",
+    "max_row": 34,
+    "max_col": 4,
+    "freeze": "A5",
+    "print_area": "'Calendario Anual'!$A$1:$D$34",
+    "protected": true,
+    "widths": {
+     "A": 15.0,
+     "B": 25.0,
+     "C": 40.0,
+     "D": 20.0,
+     "E": 13.0,
+     "F": 13.0,
+     "G": 13.0
+    },
+    "merged": [
+     "A1:D1",
+     "A34:D34"
+    ],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Calendario Anual — Fechas Clave de Hostelería",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Año: ______    Añade tus fechas locales en las filas vacías",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00888888",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Mes",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Fecha / Evento",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Tareas Clave",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Antelación",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Enero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "1 Ene — Año Nuevo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Decidir si se abre; si se cierra, comunicarlo en Google Busi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "1 semana",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Enero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "6 Ene — Reyes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Roscón de Reyes, menú familiar",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "1 semana",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Febrero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "14 Feb — San Valentín",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Menú parejas, decoración romántica, turnos extra",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "2 semanas",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Febrero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Carnaval (variable)",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Menú temático, decoración, disfraces equipo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "1 semana",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Marzo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "19 Mar — Día del Padre",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Menú familiar de mediodía, reservas ampliadas, detalle para ",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "2 semanas",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 27,
+      "cells": []
+     },
+     {
+      "r": 28,
+      "cells": [
+       [
+        "A",
+        "(Tu fecha)",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "(Añade aquí)",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "(Tareas específicas)",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "(Antelación)",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 29,
+      "cells": [
+       [
+        "A",
+        "(Tu fecha)",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "(Añade aquí)",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "(Tareas específicas)",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "(Antelación)",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 30,
+      "cells": [
+       [
+        "A",
+        "(Tu fecha)",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "(Añade aquí)",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "(Tareas específicas)",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "(Antelación)",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 31,
+      "cells": [
+       [
+        "A",
+        "(Tu fecha)",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "(Añade aquí)",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "(Tareas específicas)",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "(Antelación)",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 32,
+      "cells": [
+       [
+        "A",
+        "(Tu fecha)",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "(Añade aquí)",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "(Tareas específicas)",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "(Antelación)",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 33,
+      "cells": []
+     },
+     {
+      "r": 34,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "BONUS: Calendario Anual de Tareas Especiales · Kit de Tareas Recurrentes Pro",
+   "subject": "Kit de Tareas Recurrentes Pro · v2.0",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Plantilla en Blanco"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 22,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "B": 80.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Plantilla Personalizable en Blanco — Sushi Bar",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Como usar estas plantillas",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Usa esta plantilla para crear checklists a medida de tu su",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Copia la hoja tantas veces como necesites",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Rellena las tareas, zonas y responsables de tu establecimi",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Las celdas verdes son las que debes personalizar",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 15,
+      "cells": [
+       [
+        "B",
+        "▸ Anade tareas especificas de tu local en las filas vacias del final",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "▸ Ajusta las horas limite a tus horarios reales",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": []
+     },
+     {
+      "r": 18,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · c",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 19,
+      "cells": []
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "B",
+        "Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuen",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": []
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "B",
+        "Versión 1.1 · agosto 2026 · aichef.pro/kit-tareas-sushi-bar · info@aic",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Plantilla en Blanco",
+    "max_row": 28,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "A": 5.0,
+     "B": 48.0,
+     "C": 14.0,
+     "D": 20.0,
+     "E": 13.0,
+     "F": 12.0,
+     "G": 16.0
+    },
+    "merged": [
+     "A12:G12",
+     "A1:G1",
+     "A2:G2",
+     "A19:G19",
+     "A5:G5"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G24"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist: Plantilla en Blanco",
+        "bold": true,
+        "sz": 14.0,
+        "color": "002E2E2E",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Respon",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00777777",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "left",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Limite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  SECCION 1 (PERSONALIZAR)",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 21,
+      "cells": [
+       [
+        "A",
+        "12",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "A",
+        "13",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "A",
+        "14",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 24,
+      "cells": [
+       [
+        "A",
+        "15",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 25,
+      "cells": []
+     },
+     {
+      "r": 26,
+      "cells": []
+     },
+     {
+      "r": 27,
+      "cells": [
+       [
+        "B",
+        "Verificado por: _________________________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 28,
+      "cells": [
+       [
+        "B",
+        "Firma: _____________  Fecha: ___/___/______",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Plantilla Personalizable en Blanco — Sushi Bar · Kit de Tareas Recurrentes: Sushi Bar",
+   "subject": "Kit de Tareas Recurrentes: Sushi Bar · v1.1",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Briefing Servicio"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 20,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "B": 80.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "BONUS: Briefing Pre-Servicio — Sushi Bar",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Como usar estas plantillas",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Imprime y rellena antes de cada servicio (almuerzo y cena)",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ El itamae y el encargado lo completan juntos",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Comunica al equipo en 5 minutos: pescado, alergias, VIPs, ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Archiva — util para analizar patrones y mejorar servicio",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 13,
+      "cells": [
+       [
+        "B",
+        "▸ Las celdas verdes son editables — cambia responsables y horarios",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 14,
+      "cells": [
+       [
+        "B",
+        "▸ Borra las tareas que no aplican a tu sushi bar",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 15,
+      "cells": [
+       [
+        "B",
+        "▸ Anade tareas especificas de tu local en las filas vacias del final",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "▸ Ajusta las horas limite a tus horarios reales",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": []
+     },
+     {
+      "r": 18,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · c",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 19,
+      "cells": []
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "B",
+        "Versión 1.1 · agosto 2026 · aichef.pro/kit-tareas-sushi-bar · info@aic",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Briefing Servicio",
+    "max_row": 37,
+    "max_col": 3,
+    "freeze": "None",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 25.0,
+     "C": 50.0
+    },
+    "merged": [
+     "B21:C21",
+     "B13:C13",
+     "B16:C16",
+     "B32:C32",
+     "B31:C31",
+     "B33:C33",
+     "B23:C23",
+     "B18:C18",
+     "B34:C34",
+     "B12:C12",
+     "B22:C22",
+     "B10:C10"
+    ],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "BRIEFING PRE-SERVICIO — SUSHI BAR",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Fecha:",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "___/___/______",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Turno:",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "☐ Almuerzo  ☐ Cena",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Responsable briefing:",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "_________________________",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "PESCADO DEL DIA",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Pieza 1: __________ (origen: __________ kg: ____)",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 30,
+      "cells": [
+       [
+        "B",
+        "OBJETIVOS DEL SERVICIO",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 31,
+      "cells": [
+       [
+        "B",
+        "Venta objetivo: _____ EUR",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 32,
+      "cells": [
+       [
+        "B",
+        "Plato a empujar: __________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 33,
+      "cells": [
+       [
+        "B",
+        "Sake/bebida a recomendar: __________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 34,
+      "cells": [
+       [
+        "B",
+        "Nota equipo: __________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 35,
+      "cells": []
+     },
+     {
+      "r": 36,
+      "cells": []
+     },
+     {
+      "r": 37,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · c",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "BONUS: Briefing Pre-Servicio — Sushi Bar · Kit de Tareas Recurrentes: Sushi Bar",
+   "subject": "Kit de Tareas Recurrentes: Sushi Bar · v1.1",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas-sushi-bar/05-tareas-manager.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Tareas Diarias Manager",
+   "Tareas Semanales Manager"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 22,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "B": 80.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Tareas del Manager — Sushi Bar",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Como usar estas plantillas",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Checklist diario, semanal y mensual para el gerente/encarg",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Incluye gestion de proveedores de pescado, equipo y revenu",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Las tareas de pedido a lonja son criticas — el pescado es ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Revisar al inicio de cada jornada antes que llegue el equi",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 15,
+      "cells": [
+       [
+        "B",
+        "▸ Anade tareas especificas de tu local en las filas vacias del final",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "▸ Ajusta las horas limite a tus horarios reales",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": []
+     },
+     {
+      "r": 18,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas: Sushi Bar · ChefBusiness Consultoria Gastronomica · c",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 19,
+      "cells": []
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "B",
+        "Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuen",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": []
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "B",
+        "Versión 1.1 · agosto 2026 · aichef.pro/kit-tareas-sushi-bar · info@aic",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Tareas Diarias Manager",
+    "max_row": 27,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "A": 5.0,
+     "B": 48.0,
+     "C": 14.0,
+     "D": 20.0,
+     "E": 13.0,
+     "F": 12.0,
+     "G": 16.0
+    },
+    "merged": [
+     "A12:G12",
+     "A1:G1",
+     "A2:G2",
+     "A18:G18",
+     "A5:G5"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F23",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G23"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist: Tareas Diarias Manager",
+        "bold": true,
+        "sz": 14.0,
+        "color": "002E2E2E",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ___/___/______    Turno: ☐ Almuerzo  ☐ Cena    Respon",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00777777",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "left",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Limite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  ANTES DE APERTURA",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Revisar reservas del dia (barra sushi tiene prioridad)",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Oficina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "09:30",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Verificar recepcion pedido pescado de lonja/proveedor",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Camara",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "09:45",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Comprobar stock critico: arroz, nori, vinagre, wasabi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Almacen",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "09:50",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Revisar incidencias del turno anterior",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Oficina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "09:45",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 20,
+      "cells": [
+       [
+        "A",
+        "11",
+        null
+       ],
+       [
+        "B",
+        "Confirmar pedido de pescado para manana (lonja cierra temprano)",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "22:00",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": [
+       [
+        "A",
+        "12",
+        null
+       ],
+       [
+        "B",
+        "Revisar reservas de manana y planificar",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:00",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "A",
+        "13",
+        null
+       ],
+       [
+        "B",
+        "Verificar que registros APPCC estan completos",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:15",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "A",
+        "14",
+        null
+       ],
+       [
+        "B",
+        "Cuadre de caja",
+        null
+       ],
+       [
+        "C",
+        "Barra bar",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "23:30",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 24,
+      "cells": []
+     },
+     {
+      "r": 25,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIF(F5:F23,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B23,\"?*\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 26,
+      "cells": [
+       [
+        "B",
+        "Verificado por: _________________________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 27,
+      "cells": [
+       [
+        "B",
+        "Firma: _____________  Fecha: ___/___/______",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Tareas Semanales Manager",
+    "max_row": 17,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "",
+    "protected": false,
+    "widths": {
+     "A": 5.0,
+     "B": 48.0,
+     "C": 14.0,
+     "D": 20.0,
+     "E": 13.0,
+     "F": 12.0,
+     "G": 16.0
+    },
+    "merged": [
+     "A1:G1",
+     "A5:G5",
+     "A2:G2"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F11 F12 F13",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G13"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist: Tareas Semanales Manager",
+        "bold": true,
+        "sz": 14.0,
+        "color": "002E2E2E",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Semana del ___/___/______ al ___/___/______    Manager: ____",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00777777",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "left",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Limite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002E2E2E",
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  GESTION SEMANAL",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00C4974A",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Revisar food cost de pescado vs ventas sushi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Oficina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Negociar precios con proveedores de lonja",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Oficina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Revisar horarios equipo y cubrir bajas",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Oficina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Reunion briefing equipo: feedback, mejoras",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "General",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Manager",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 10,
+      "cells": [
+       [
+        "A",
+        "5",
+        null
+       ],
+       [
+        "B",
+        "Auditar registros congelacion anisakis",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Miercoles",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 11,
+      "cells": [
+       [
+        "A",
+        "6",
+        null
+       ],
+       [
+        "B",
+        "Revisar resenas online y responder",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Jueves",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 12,
+      "cells": [
+       [
+        "A",
+        "7",
+        null
+       ],
+       [
+        "B",
+        "Planificar especiales del fin de semana",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Jueves",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 13,
+      "cells": [
+       [
+        "A",
+        "8",
+        null
+       ],
+       [
+        "B",
+        "Pedido semanal: algas, arroz, salsas, sake",
+        null
+       ],
+       [
+        "C",
+        "Oficina",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Manager",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Viernes",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 14,
+      "cells": []
+     },
+     {
+      "r": 15,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIF(F5:F13,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B13,\"?*\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "Verificado por: _________________________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": [
+       [
+        "B",
+        "Firma: _____________  Fecha: ___/___/______",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Tareas del Manager — Sushi Bar · Kit de Tareas Recurrentes: Sushi Bar",
+   "subject": "Kit de Tareas Recurrentes: Sushi Bar · v1.1",
+   "creator": "AI Chef Pro"
+  }
+ }
+}

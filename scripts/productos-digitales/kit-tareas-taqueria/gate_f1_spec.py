@@ -36,11 +36,13 @@ if malos: fallos.append(f"NO LATINOS: {malos[:10]}")
 if ' ' in s: fallos.append("U+202F presente (las unidades del xlsx van con U+0020)")
 if '‑' in s: fallos.append("U+2011 presente")
 # 65/75 °C solo en frases de derogación/prohibición/deuda
+corte7 = next((i for i, l in enumerate(lines, 1) if re.match(r'#+\s*§7', l)), len(lines) + 1)  # §7 = deuda ajena, exenta
 for i, l in enumerate(lines, 1):
+    if i >= corte7: break
     if re.search(r'\b6[5]\s*°\s*C|\b75\s*°\s*C', l) and not re.search(r'derog|prohib|NUNCA|nunca|deuda|gate|G2|R1|no debe|no se imprime|no aparece|0 apariciones|cifra vieja|viej', l, re.I):
         fallos.append(f"65/75 °C sin contexto de prohibición en la línea {i}: {l.strip()[:100]}")
 # suma de rangos de §3.1
-m = re.search(r'#+\s*§?\s*3\.1[^\n]*\n(.*?)(?=\n#+\s*§?\s*3\.2)', s, re.S)
+m = re.search(r'#+\s*§?\s*3\.1[^\n]*\n(.*?)(?=\n#{2,3} )', s, re.S)
 if not m:
     fallos.append("no encuentro la sección §3.1 para sumar rangos")
 else:

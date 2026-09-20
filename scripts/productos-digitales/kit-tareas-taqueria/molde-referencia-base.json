@@ -1,0 +1,7384 @@
+{
+ "kit-tareas/01-apertura-cierre.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Apertura Cocina",
+   "Apertura Sala",
+   "Apertura Barra",
+   "Cierre Cocina",
+   "Cierre Sala",
+   "Cierre Barra"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 46,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "'Instrucciones'!$A$1:$B$46",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 100.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": 26.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Tareas de Apertura y Cierre — Restaurante Casual",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Cómo usar estas plantillas",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Imprime la hoja correspondiente al turno (apertura o cierr",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ El responsable del turno reparte las tareas al equipo",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Cada persona marca ✓ cuando completa su tarea y firma",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Al final del turno, el encargado verifica y firma al pie",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 39,
+      "cells": [
+       [
+        "B",
+        "▸ Estás en 01-apertura-cierre.xlsx: es una capa MÁS, no una repetición",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 40,
+      "cells": []
+     },
+     {
+      "r": 41,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 42,
+      "cells": []
+     },
+     {
+      "r": 43,
+      "cells": [
+       [
+        "B",
+        "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010,",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 44,
+      "cells": [
+       [
+        "B",
+        "Contacto: info@aichef.pro",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 45,
+      "cells": []
+     },
+     {
+      "r": 46,
+      "cells": [
+       [
+        "B",
+        "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Apertura Cocina",
+    "max_row": 56,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "'Apertura Cocina'!$A$1:$G$56",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 45.0,
+     "C": 12.0,
+     "D": 18.0,
+     "E": 12.0,
+     "F": 12.0,
+     "G": 15.0
+    },
+    "merged": [
+     "A20:G20",
+     "A12:G12",
+     "A1:G1",
+     "B54:D54",
+     "A32:G32",
+     "A2:G2",
+     "A26:G26",
+     "A41:G41",
+     "A5:G5",
+     "A52:C52",
+     "F54:G54"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F42 F43 F44 F45 F46 F47 F48 F49 F50",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G50"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist de Apertura — Cocina",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche  ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00888888",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Límite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  HIGIENE PERSONAL",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00FFD700",
+        "fill": "00E3F2FD",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Uniforme y calzado de trabajo limpios, delantal cambiado y p",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Todo el equipo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin e",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Todo el equipo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Heridas y cortes cubiertos con apósito impermeable de color ",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Todo el equipo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Lavado de manos al entrar y en cada cambio de tarea; lavaman",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Todo el equipo",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 49,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 50,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 51,
+      "cells": []
+     },
+     {
+      "r": 52,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIFS(B5:B50,\"?*\",F5:F50,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B50,\"?*\")-COUNTIF(F5:F50,\"N/A\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 53,
+      "cells": []
+     },
+     {
+      "r": 54,
+      "cells": [
+       [
+        "A",
+        "Verificado por:",
+        null
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Firma:",
+        null
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 55,
+      "cells": []
+     },
+     {
+      "r": 56,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Apertura Sala",
+    "max_row": 40,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "'Apertura Sala'!$A$1:$G$40",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 45.0,
+     "C": 12.0,
+     "D": 18.0,
+     "E": 12.0,
+     "F": 12.0,
+     "G": 15.0
+    },
+    "merged": [
+     "A1:G1",
+     "B38:D38",
+     "A2:G2",
+     "A14:G14",
+     "A5:G5",
+     "A21:G21",
+     "A29:G29",
+     "A36:C36",
+     "F38:G38"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F30 F31 F32 F33 F34",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G34"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Checklist de Apertura — Sala y Comedor",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche  ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00888888",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Límite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  MONTAJE DE SALA",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00FFD700",
+        "fill": "00E3F2FD",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Encender luces y climatización",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Sala",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Camarero apertura",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "11:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Verificar limpieza general de sala",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Sala",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Camarero apertura",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "11:00",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Montar mesas: manteles/individuales, cubiertos, vasos, servi",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Sala",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Camareros",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "11:30",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Colocar menús/cartas en mesas o atril",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Sala",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Camarero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "11:30",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 33,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 34,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 35,
+      "cells": []
+     },
+     {
+      "r": 36,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIFS(B5:B34,\"?*\",F5:F34,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B34,\"?*\")-COUNTIF(F5:F34,\"N/A\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 37,
+      "cells": []
+     },
+     {
+      "r": 38,
+      "cells": [
+       [
+        "A",
+        "Verificado por:",
+        null
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Firma:",
+        null
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 39,
+      "cells": []
+     },
+     {
+      "r": 40,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Tareas de Apertura y Cierre — Restaurante Casual · Kit de Tareas Recurrentes Pro",
+   "subject": "Kit de Tareas Recurrentes Pro · v2.0",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas/05-tareas-semanales-mensuales.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Limpieza Semanal",
+   "FIFO Semanal",
+   "Mantenimiento Mensual",
+   "Trimestral y Anual"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 45,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "'Instrucciones'!$A$1:$B$45",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 100.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": 26.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Tareas Semanales y Mensuales — Restaurante Casual",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Cómo usar estas plantillas",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Imprime la hoja semanal cada lunes y la mensual cada día 1",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Asigna cada tarea a un responsable con fecha límite",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 32.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Archiva las hojas firmadas junto a tus registros de higien",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": []
+     }
+    ],
+    "tail": [
+     {
+      "r": 38,
+      "cells": [
+       [
+        "B",
+        "▸ Estás en 05-tareas-semanales-mensuales.xlsx: lo que NO es diario (se",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 39,
+      "cells": []
+     },
+     {
+      "r": 40,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 41,
+      "cells": []
+     },
+     {
+      "r": 42,
+      "cells": [
+       [
+        "B",
+        "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010,",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 43,
+      "cells": [
+       [
+        "B",
+        "Contacto: info@aichef.pro",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 44,
+      "cells": []
+     },
+     {
+      "r": 45,
+      "cells": [
+       [
+        "B",
+        "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Limpieza Semanal",
+    "max_row": 38,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "'Limpieza Semanal'!$A$1:$G$38",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 45.0,
+     "C": 12.0,
+     "D": 18.0,
+     "E": 12.0,
+     "F": 12.0,
+     "G": 15.0
+    },
+    "merged": [
+     "A1:G1",
+     "A16:G16",
+     "A2:G2",
+     "A34:C34",
+     "A23:G23",
+     "F36:G36",
+     "A5:G5",
+     "B36:D36"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F10 F11 F12 F13 F14 F17 F18 F19 F20 F21 F24 F25 F26 F27 F28 F29 F30 F31 F32",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G32"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Limpieza Profunda Semanal",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Semana del ___/___/______ al ___/___/______    Responsable: ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00888888",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Día",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  COCINA — Limpieza profunda",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00FFD700",
+        "fill": "00FCE4EC",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Limpiar interior de cámaras frigoríficas",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Limpieza",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Equipo cocina",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Desmontar y limpiar quemadores de fogones",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Limpieza",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cocinero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Martes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Limpiar horno por dentro (pirolisis o manual)",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Limpieza",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cocinero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Martes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Desmontar y limpiar filtros de campana",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Limpieza",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Auxiliar",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Miércoles",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 31,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 32,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 33,
+      "cells": []
+     },
+     {
+      "r": 34,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIFS(B5:B32,\"?*\",F5:F32,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B32,\"?*\")-COUNTIF(F5:F32,\"N/A\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 35,
+      "cells": []
+     },
+     {
+      "r": 36,
+      "cells": [
+       [
+        "A",
+        "Verificado por:",
+        null
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "Firma:",
+        null
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 37,
+      "cells": []
+     },
+     {
+      "r": 38,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "FIFO Semanal",
+    "max_row": 49,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "'FIFO Semanal'!$A$1:$G$49",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 45.0,
+     "C": 12.0,
+     "D": 18.0,
+     "E": 12.0,
+     "F": 12.0,
+     "G": 15.0
+    },
+    "merged": [
+     "D44:G44",
+     "A1:G1",
+     "D38:G38",
+     "B35:D35",
+     "A16:G16",
+     "D41:G41",
+     "A37:G37",
+     "A33:C33",
+     "A2:G2",
+     "D45:G45",
+     "A11:G11",
+     "F35:G35"
+    ],
+    "dv": [
+     {
+      "sqref": "F6 F7 F8 F9 F12 F13 F14 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G31"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Revisión FIFO Semanal — Control de Caducidades",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Semana del ___/___/______ al ___/___/______    Responsable: ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00888888",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Nº",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Día",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "  CÁMARA REFRIGERACIÓN 1",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00FFD700",
+        "fill": "00E3F2FD",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Verificar etiquetado y fechas de todas las bandejas",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Sous Chef",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Reorganizar: producto más antiguo delante",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cocinero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Retirar producto caducado o sin etiquetar",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cocinero",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": null,
+        "align": "center",
+        "wrap": false,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Verificar que crudo y cocinado están separados",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Cocina",
+        "bold": false,
+        "sz": 10.0,
+        "color": "00666666",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Sous Chef",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Lunes",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 42,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E3F2FD"
+       ],
+       [
+        "B",
+        "Carne de cerdo y cordero",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "4-6 meses",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "La grasa de cerdo limita la vida útil",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 43,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E3F2FD"
+       ],
+       [
+        "B",
+        "Aves y conejo",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "6-9 meses",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Enteros; troceados, 6 meses",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 44,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E3F2FD"
+       ],
+       [
+        "B",
+        "Carne picada, hamburguesas y elaborados",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "2-3 meses",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Mucha superficie expuesta: la más delicada",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 45,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E3F2FD"
+       ],
+       [
+        "B",
+        "Pan, masas y bollería",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "1-3 meses",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Pierde textura antes que seguridad",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 46,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E3F2FD"
+       ],
+       [
+        "B",
+        "Verdura escaldada y fruta",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "8-12 meses",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Sin escaldar previamente, la mitad",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 47,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E3F2FD"
+       ],
+       [
+        "B",
+        "Fondos, salsas y caldos propios",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "3 meses",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Etiquetar con fecha de producción Y de congelación: la vida útil de es",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 48,
+      "cells": []
+     },
+     {
+      "r": 49,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Tareas Semanales y Mensuales — Restaurante Casual · Kit de Tareas Recurrentes Pro",
+   "subject": "Kit de Tareas Recurrentes Pro · v2.0",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas/09-apertura-cierre-caja.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Apertura de Caja",
+   "Cierre de Caja",
+   "Registro Mensual"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 57,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "'Instrucciones'!$A$1:$B$57",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 100.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": 26.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": true,
+        "sz": 12.0,
+        "color": "00FFD700",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Apertura y Cierre de Caja — Restaurante Casual",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 4,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Qué resuelve",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": true,
+        "sz": 14.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": 32.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "▸ El arqueo diario: fondo de caja, recuento del cajón por de",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Cómo usar — Apertura de Caja",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 50,
+      "cells": [
+       [
+        "B",
+        "▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO d",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 51,
+      "cells": []
+     },
+     {
+      "r": 52,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 53,
+      "cells": []
+     },
+     {
+      "r": 54,
+      "cells": [
+       [
+        "B",
+        "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010,",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 55,
+      "cells": [
+       [
+        "B",
+        "Contacto: info@aichef.pro",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 56,
+      "cells": []
+     },
+     {
+      "r": 57,
+      "cells": [
+       [
+        "B",
+        "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Apertura de Caja",
+    "max_row": 26,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "'Apertura de Caja'!$A$1:$G$26",
+    "protected": true,
+    "widths": {
+     "A": 10.0,
+     "B": 50.0,
+     "C": 20.0,
+     "D": 13.0,
+     "E": 14.0,
+     "F": 14.0,
+     "G": 25.0
+    },
+    "merged": [
+     "A1:G1",
+     "A2:C2",
+     "D23:G23",
+     "A25:G25",
+     "D2:G2",
+     "A22:B22",
+     "A26:G26"
+    ],
+    "dv": [
+     {
+      "sqref": "E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G20"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": 40.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Apertura de Caja — Restaurante Casual",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ____/____/________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable: _________________________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": 8.0,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "#",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Hora Límite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Notas",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Verificar fondo de caja del día anterior",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "07:15",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Contar fondo de caja inicial",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "07:15",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Anotar el fondo de caja en la celda verde de abajo",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "07:15",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Verificar cambio suficiente (monedas, billetes pequeños)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "07:15",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "5",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Comprobar que el TPV está encendido y abrir turno de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "07:30",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 19,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": []
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "C",
+        "=COUNTIFS(B5:B20,\"?*\",E5:E20,\"✓\")",
+        null
+       ],
+       [
+        "D",
+        "de",
+        null
+       ],
+       [
+        "E",
+        "=COUNTIF(B5:B20,\"?*\")-COUNTIF(E5:E20,\"N/A\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "B",
+        "Fondo de caja inicial (€)",
+        null
+       ],
+       [
+        "C",
+        "0",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "Se descuenta del efectivo en el Cierre de Caja",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 24,
+      "cells": []
+     },
+     {
+      "r": 25,
+      "cells": [
+       [
+        "A",
+        "Firma del responsable: _________________________     Hora: ________",
+        "00FFD700"
+       ]
+      ]
+     },
+     {
+      "r": 26,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cierre de Caja",
+    "max_row": 57,
+    "max_col": 7,
+    "freeze": "A5",
+    "print_area": "'Cierre de Caja'!$A$1:$G$57",
+    "protected": true,
+    "widths": {
+     "A": 10.0,
+     "B": 50.0,
+     "C": 20.0,
+     "D": 13.0,
+     "E": 14.0,
+     "F": 14.0,
+     "G": 25.0
+    },
+    "merged": [
+     "A1:G1",
+     "D2:G2",
+     "A46:B46",
+     "A53:B53",
+     "A57:G57",
+     "A52:B52",
+     "A47:B47",
+     "A49:B49",
+     "A54:B54",
+     "A56:G56",
+     "A24:G24",
+     "A48:B48"
+    ],
+    "dv": [
+     {
+      "sqref": "E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     },
+     {
+      "sqref": "B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42",
+      "type": "whole",
+      "formula1": "0",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:G21",
+     "C54"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": 40.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Cierre de Caja — Restaurante Casual",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ____/____/________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable: _________________________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": 8.0,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "#",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Cuándo",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Notas",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Imprimir Z de cierre (informe final del día)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Recuento de efectivo por denominación (ver tabla inferior)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Calcular total efectivo",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Anotar total tarjetas (Visa/Mastercard)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "5",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Anotar otros medios (Bizum, vales, invitaciones)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Responsable de caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 50,
+      "cells": [
+       [
+        "A",
+        "Total Tarjetas (Visa/MC)",
+        "00FFFFFF"
+       ],
+       [
+        "C",
+        "0",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 51,
+      "cells": [
+       [
+        "A",
+        "Total Otros (Bizum, Vales)",
+        "00F5F5F5"
+       ],
+       [
+        "C",
+        "0",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 52,
+      "cells": [
+       [
+        "A",
+        "TOTAL FACTURADO",
+        "00FFD700"
+       ],
+       [
+        "C",
+        "=C49+C50+C51",
+        "00FFD700"
+       ]
+      ]
+     },
+     {
+      "r": 53,
+      "cells": [
+       [
+        "A",
+        "Z del TPV",
+        "00F5F5F5"
+       ],
+       [
+        "C",
+        "0",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 54,
+      "cells": [
+       [
+        "A",
+        "DESCUADRE",
+        "00FFD700"
+       ],
+       [
+        "C",
+        "=IFERROR(C52-C53,0)",
+        "00FFD700"
+       ]
+      ]
+     },
+     {
+      "r": 55,
+      "cells": []
+     },
+     {
+      "r": 56,
+      "cells": [
+       [
+        "A",
+        "Firma del responsable: _________________________     Hora: ________",
+        "00FFD700"
+       ]
+      ]
+     },
+     {
+      "r": 57,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Apertura y Cierre de Caja — Restaurante Casual · Kit de Tareas Recurrentes Pro",
+   "subject": "Kit de Tareas Recurrentes Pro · v2.0",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas/BONUS-01-briefing-servicio.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Briefing"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 23,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "'Instrucciones'!$A$1:$B$23",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 100.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 2,
+      "h": 26.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "BONUS: Plantilla de Briefing Pre-Servicio",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Cómo usar esta plantilla",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 6,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ El jefe de sala o manager rellena antes del briefing",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Se comunica al equipo en la reunión de 5-10 minutos pre-se",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 16.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "▸ Imprime y pega en la zona de pase para referencia durante ",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": []
+     }
+    ],
+    "tail": [
+     {
+      "r": 16,
+      "cells": [
+       [
+        "B",
+        "▸ Estás en BONUS-01-briefing-servicio.xlsx: el briefing abre el turno ",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 17,
+      "cells": []
+     },
+     {
+      "r": 18,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 19,
+      "cells": []
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "B",
+        "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010,",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": [
+       [
+        "B",
+        "Contacto: info@aichef.pro",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": []
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "B",
+        "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Briefing",
+    "max_row": 37,
+    "max_col": 3,
+    "freeze": "None",
+    "print_area": "'Briefing'!$A$1:$C$37",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 30.0,
+     "C": 50.0,
+     "D": 13.0
+    },
+    "merged": [
+     "B23:C23",
+     "B4:C4",
+     "B11:C11",
+     "B29:C29",
+     "B1:C1",
+     "B18:C18"
+    ],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Briefing Pre-Servicio",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Fecha: ___/___/______    Turno: ☐ Comida  ☐ Cena    Encargad",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00888888",
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "RESERVAS Y OCUPACIÓN",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": null,
+        "wrap": false,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Nº de reservas:",
+        "bold": true,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Nº de comensales previstos:",
+        "bold": true,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Mesas VIP / clientes especiales:",
+        "bold": true,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Grupos o eventos:",
+        "bold": true,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": null,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Ocupación estimada:",
+        "bold": true,
+        "sz": 11.0,
+        "color": null,
+        "fill": null,
+        "align": null,
+        "wrap": false,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "_____ %",
+        "bold": false,
+        "sz": 11.0,
+        "color": null,
+        "fill": "00E8F5E9",
+        "align": null,
+        "wrap": false,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 30,
+      "cells": [
+       [
+        "B",
+        "Incidencias del turno anterior:",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 31,
+      "cells": [
+       [
+        "B",
+        "Objetivos del turno:",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 32,
+      "cells": [
+       [
+        "B",
+        "Mensaje del manager:",
+        null
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 33,
+      "cells": []
+     },
+     {
+      "r": 34,
+      "cells": []
+     },
+     {
+      "r": 35,
+      "cells": [
+       [
+        "B",
+        "Firma encargado: _________________________",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 36,
+      "cells": []
+     },
+     {
+      "r": 37,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "BONUS: Plantilla de Briefing Pre-Servicio · Kit de Tareas Recurrentes Pro",
+   "subject": "Kit de Tareas Recurrentes Pro · v2.0",
+   "creator": "AI Chef Pro"
+  }
+ },
+ "kit-tareas/08-apertura-cierre-negocio.xlsx": {
+  "sheets": [
+   "Instrucciones",
+   "Apertura del Negocio",
+   "Cierre del Negocio"
+  ],
+  "detalle": [
+   {
+    "title": "Instrucciones",
+    "max_row": 47,
+    "max_col": 2,
+    "freeze": "None",
+    "print_area": "'Instrucciones'!$A$1:$B$47",
+    "protected": false,
+    "widths": {
+     "A": 3.0,
+     "B": 100.0
+    },
+    "merged": [],
+    "dv": [],
+    "cf": [],
+    "rows": [
+     {
+      "r": 1,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": 26.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": true,
+        "sz": 12.0,
+        "color": "00FFD700",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Apertura y Cierre del Negocio — Restaurante Casual",
+        "bold": true,
+        "sz": 18.0,
+        "color": "00FFD700",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 4,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "B",
+        "v": "Qué resuelve",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": true,
+        "sz": 14.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": 32.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se ci",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 32.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "▸ El detalle por área (cocina, sala, barra) va en 01-apertur",
+        "bold": false,
+        "sz": 11.0,
+        "color": "00555555",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": 18.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Cómo usar",
+        "bold": true,
+        "sz": 12.0,
+        "color": "00333333",
+        "fill": null,
+        "align": null,
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 40,
+      "cells": [
+       [
+        "B",
+        "▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día —",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 41,
+      "cells": []
+     },
+     {
+      "r": 42,
+      "cells": [
+       [
+        "B",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 43,
+      "cells": []
+     },
+     {
+      "r": 44,
+      "cells": [
+       [
+        "B",
+        "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010,",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 45,
+      "cells": [
+       [
+        "B",
+        "Contacto: info@aichef.pro",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 46,
+      "cells": []
+     },
+     {
+      "r": 47,
+      "cells": [
+       [
+        "B",
+        "Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Apertura del Negocio",
+    "max_row": 28,
+    "max_col": 8,
+    "freeze": "A5",
+    "print_area": "'Apertura del Negocio'!$A$1:$H$28",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 50.0,
+     "C": 16.0,
+     "D": 16.0,
+     "E": 13.0,
+     "F": 14.0,
+     "G": 14.0,
+     "H": 25.0
+    },
+    "merged": [
+     "A26:C26",
+     "E2:H2",
+     "A1:H1",
+     "A28:H28",
+     "A27:H27",
+     "A2:D2"
+    ],
+    "dv": [
+     {
+      "sqref": "F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:H24"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": 40.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Apertura del Negocio — Restaurante Casual",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ____/____/________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Responsable de turno: _________________________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": 8.0,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "#",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Hora Límite",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "H",
+        "v": "Notas",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Desactivar alarma del local",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Acceso",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Encender luces generales (interior y exterior)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "General",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": null,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Encender climatización (HVAC) / calefacción según temporada",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "General",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Abrir persianas / puerta principal",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Acceso",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "5",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Montar señalización exterior / pizarra de menú",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Exterior",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "07:00",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 21,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 23,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 24,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 25,
+      "cells": []
+     },
+     {
+      "r": 26,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIFS(B5:B24,\"?*\",F5:F24,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B24,\"?*\")-COUNTIF(F5:F24,\"N/A\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 27,
+      "cells": [
+       [
+        "A",
+        "Firma del responsable: _________________________     Hora de finalizac",
+        "00FFD700"
+       ]
+      ]
+     },
+     {
+      "r": 28,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cierre del Negocio",
+    "max_row": 26,
+    "max_col": 8,
+    "freeze": "A5",
+    "print_area": "'Cierre del Negocio'!$A$1:$H$26",
+    "protected": true,
+    "widths": {
+     "A": 5.0,
+     "B": 50.0,
+     "C": 16.0,
+     "D": 16.0,
+     "E": 13.0,
+     "F": 14.0,
+     "G": 14.0,
+     "H": 25.0
+    },
+    "merged": [
+     "E2:H2",
+     "A1:H1",
+     "A26:H26",
+     "A24:C24",
+     "A2:D2",
+     "A25:H25"
+    ],
+    "dv": [
+     {
+      "sqref": "F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22",
+      "type": "list",
+      "formula1": "\"✓,—,N/A\"",
+      "allow_blank": true
+     }
+    ],
+    "cf": [
+     "A5:H22"
+    ],
+    "rows": [
+     {
+      "r": 1,
+      "h": 40.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Cierre del Negocio — Restaurante Casual",
+        "bold": true,
+        "sz": 16.0,
+        "color": "00FFFFFF",
+        "fill": "001A1A1A",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 2,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "Fecha: ____/____/________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Responsable de turno: _________________________",
+        "bold": true,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFD700",
+        "align": "left",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 3,
+      "h": 8.0,
+      "cells": []
+     },
+     {
+      "r": 4,
+      "h": 28.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "#",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "B",
+        "v": "Tarea",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "C",
+        "v": "Zona",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "D",
+        "v": "Responsable",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "E",
+        "v": "Cuándo",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "F",
+        "v": "✓ Completada",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "G",
+        "v": "Firma",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       },
+       {
+        "c": "H",
+        "v": "Notas",
+        "bold": true,
+        "sz": 11.0,
+        "color": "00FFFFFF",
+        "fill": "002D2D2D",
+        "align": "center",
+        "wrap": true,
+        "locked": true
+       }
+      ]
+     },
+     {
+      "r": 5,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "1",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Apagar música ambiente",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "General",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 6,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "2",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Verificar que no quedan clientes en el local",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Sala",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 7,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "3",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Limpiar y recoger terraza si aplica",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Terraza",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 8,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "4",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Apagar TPV / POS / datáfono (o dejar en standby)",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00FFFFFF",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Caja",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     },
+     {
+      "r": 9,
+      "h": 24.0,
+      "cells": [
+       {
+        "c": "A",
+        "v": "5",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "B",
+        "v": "Cerrar persianas y puertas",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00F5F5F5",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "C",
+        "v": "Acceso",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "D",
+        "v": "Encargado",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "E",
+        "v": "Cierre",
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "F",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "G",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "center",
+        "wrap": true,
+        "locked": false
+       },
+       {
+        "c": "H",
+        "v": null,
+        "bold": false,
+        "sz": 10.0,
+        "color": "001A1A1A",
+        "fill": "00E8F5E9",
+        "align": "left",
+        "wrap": true,
+        "locked": false
+       }
+      ]
+     }
+    ],
+    "tail": [
+     {
+      "r": 19,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 20,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 21,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 22,
+      "cells": [
+       [
+        "A",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "B",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "C",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "D",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "E",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "F",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "G",
+        "None",
+        "00E8F5E9"
+       ],
+       [
+        "H",
+        "None",
+        "00E8F5E9"
+       ]
+      ]
+     },
+     {
+      "r": 23,
+      "cells": []
+     },
+     {
+      "r": 24,
+      "cells": [
+       [
+        "A",
+        "Tareas completadas:",
+        null
+       ],
+       [
+        "D",
+        "=COUNTIFS(B5:B22,\"?*\",F5:F22,\"✓\")",
+        null
+       ],
+       [
+        "E",
+        "de",
+        null
+       ],
+       [
+        "F",
+        "=COUNTIF(B5:B22,\"?*\")-COUNTIF(F5:F22,\"N/A\")",
+        null
+       ]
+      ]
+     },
+     {
+      "r": 25,
+      "cells": [
+       [
+        "A",
+        "Firma del responsable: _________________________     Hora de finalizac",
+        "00FFD700"
+       ]
+      ]
+     },
+     {
+      "r": 26,
+      "cells": [
+       [
+        "A",
+        "— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aiche",
+        null
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "props": {
+   "title": "Apertura y Cierre del Negocio — Restaurante Casual · Kit de Tareas Recurrentes Pro",
+   "subject": "Kit de Tareas Recurrentes Pro · v2.0",
+   "creator": "AI Chef Pro"
+  }
+ }
+}
