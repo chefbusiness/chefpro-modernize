@@ -229,6 +229,9 @@ def fundir(lang):
 
 def check():
     en_copy = json.loads((DIR / 'keak-copy.en.json').read_text(encoding='utf-8'))
+    # El inglés de referencia es el de Keak MÁS las decisiones de John (H1, subtítulo, hint).
+    for ruta, val in DECISIONES_JOHN.get('en', {}).items():
+        poner(en_copy, ruta, val)
     claves = pares(en_copy)
     errores = []
     for lang in LANGS:
