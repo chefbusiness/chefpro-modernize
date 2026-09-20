@@ -46,7 +46,12 @@ m = re.search(r'#+\s*§?\s*3\.1[^\n]*\n(.*?)(?=\n#{2,3} )', s, re.S)
 if not m:
     fallos.append("no encuentro la sección §3.1 para sumar rangos")
 else:
-    pares = [(int(a), int(b)) for a, b in re.findall(r'(?<![\d.])(\d{1,2})\s*[-–]\s*(\d{1,2})(?![\d.%])', m.group(1)) if int(a) <= int(b) <= 40]
+    pares = []
+    for fila in m.group(1).split('\n'):
+        if not re.match(r'\|\s*0\d\s*\|', fila): continue          # solo filas 01-08 de la tabla
+        celda = fila.rstrip('|').split('|')[-1]
+        rangos = re.findall(r'(\d{1,3})\s*[-–]\s*(\d{1,3})', celda)
+        if rangos: a, b = rangos[-1]; pares.append((int(a), int(b)))   # el último rango: en 06 es el total (42-54)
     smin, smax = sum(a for a, _ in pares), sum(b for _, b in pares)
     print(f"§3.1: {len(pares)} rangos, mínimos {smin}, máximos {smax}")
     if (smin, smax) != (270, 330): fallos.append(f"§3.1 suma {smin}-{smax}, esperado 270-330")
