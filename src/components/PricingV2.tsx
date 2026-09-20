@@ -59,7 +59,7 @@ interface PricingV2Props {
 const cardClass = (plan: PlanV2) =>
   `relative flex h-full flex-col rounded-xl p-6 scroll-mt-28 transition-shadow ${
     plan.popular
-      ? 'border-2 border-accent bg-accent/5 shadow-xl'
+      ? 'border-2 border-accent bg-accent/10 shadow-xl'
       : 'border border-border bg-card shadow-sm hover:shadow-md'
   }`;
 
@@ -218,6 +218,8 @@ export default function PricingV2({ medium }: PricingV2Props) {
       data-keak="pricing-v2"
       className="container py-8 md:py-12 lg:py-24 scroll-mt-28"
     >
+      {/* Panel pastel dorado (John, 20-sep): las tarjetas blancas no contrastaban sobre blanco */}
+      <div className="rounded-3xl border border-accent/15 bg-gradient-to-b from-accent/[0.07] to-accent/[0.03] px-4 py-10 sm:px-8 md:py-14">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 id="pricing-heading" className="text-3xl font-bold leading-[1.1] text-balance md:text-5xl">
           {t('pricing.v2_title')}
@@ -341,6 +343,7 @@ export default function PricingV2({ medium }: PricingV2Props) {
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </p>
+      </div>
       </div>
     </section>
   );

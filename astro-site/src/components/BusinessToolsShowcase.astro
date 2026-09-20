@@ -51,8 +51,22 @@ const sideTools: BusinessTool[] = SIDE_IDS
     <!-- IZQUIERDA: Mermas GenCal como prueba (tarjeta oscura) -->
     <article
       data-tool={HERO_ID}
-      class="rounded-2xl p-8 text-white bg-gradient-to-br from-zinc-950 via-zinc-900 to-amber-950/70 flex flex-col gap-4"
+      class="relative overflow-hidden rounded-2xl p-8 text-white bg-zinc-950 flex flex-col gap-4"
     >
+      <!-- Fondo (John, 20-sep): la tarjeta negra quedaba «robusta y sin mucho que decir». Foto
+           generada con Nano Banana (pase de cocina, manos pesando en báscula, sin rostro) bajo un
+           degradado oscuro que garantiza la legibilidad del 30 % y del texto. Decorativa: alt="". -->
+      <img
+        src="/images/business-waste-gencal-bg.jpg"
+        alt=""
+        width="1200"
+        height="670"
+        loading="lazy"
+        decoding="async"
+        class="pointer-events-none absolute inset-0 h-full w-full object-cover object-center opacity-70"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/85 to-zinc-950/35" aria-hidden="true"></div>
+      <div class="relative z-10 flex h-full flex-col gap-4">
       <span class="self-start inline-flex items-center gap-1.5 rounded-full border border-accent/40 bg-accent/10 text-accent text-[11px] font-semibold uppercase tracking-wider px-3 py-1">
         <svg
           class="h-3.5 w-3.5"
@@ -82,6 +96,7 @@ const sideTools: BusinessTool[] = SIDE_IDS
           {t(lang, 'showcase.v2_use_case_label')}
         </p>
         <p class="text-sm italic text-white">{t(lang, `${heroKey}.preview`)}</p>
+      </div>
       </div>
     </article>
 

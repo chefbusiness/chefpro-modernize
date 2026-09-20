@@ -72,6 +72,16 @@ las tarjetas de cocinas del mundo (`WorldCookbooks`). Misma posición.
 - Pie: «Running a group or need custom volume? **Talk to us for an enterprise plan →**».
 - Ojo: el CTA de la fila 1 no popular es NEGRO (`bg-primary`), no dorado.
 
+
+### Ajustes de John sobre el preview (20-sep, tarde)
+- **Tarjeta oscura del 30 %**: «se veía robusta y sin mucho que decir» → foto de fondo generada con
+  Nano Banana (`public/images/business-waste-gencal-bg.jpg`, pase de cocina, manos pesando en báscula,
+  sin rostro) con degradado oscuro encima (`from-zinc-950 via-zinc-950/85 to-zinc-950/35`) para que el
+  30 % y el texto sigan siendo legibles. `alt=""`, `loading="lazy"`.
+- **Pricing**: «blanco sobre blanco no resalta» → panel pastel de la paleta (dorado al 7 %→3 % con borde
+  `accent/15`, `rounded-3xl`) envolviendo chips y tarjetas; la tarjeta popular sube a `bg-accent/10`.
+  Aplicado en `Pricing.astro` y en `PricingV2.tsx` (paridad).
+
 ## 2. Claves i18n (fuente única: `src/i18n/locales/*.json`, que Astro importa)
 Fuente EN = `scripts/cro-home/keak-copy.en.json` (copy de Keak literal). Traducción a los 6 idiomas
 con `scripts/cro-home/traducir-keak-copy.py` (en el VPS, bridge → sonnet primero, gates de

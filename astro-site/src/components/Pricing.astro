@@ -165,7 +165,7 @@ const enterpriseHref = lang === 'es' ? '/contacto' : 'mailto:info@aichef.pro';
 const cardClass = (plan: PlanV2) =>
   `relative flex h-full flex-col rounded-xl p-6 scroll-mt-28 transition-shadow ${
     plan.popular
-      ? 'border-2 border-accent bg-accent/5 shadow-xl'
+      ? 'border-2 border-accent bg-accent/10 shadow-xl'
       : 'border border-border bg-card shadow-sm hover:shadow-md'
   }`;
 
@@ -196,6 +196,8 @@ const pricingSchema = {
 <section id="pricing" data-keak="pricing-v2" aria-labelledby="pricing-heading" class="container py-8 md:py-12 lg:py-24 scroll-mt-28">
   {schema && <script type="application/ld+json" set:html={JSON.stringify(pricingSchema)} />}
 
+  <!-- Panel pastel dorado (John, 20-sep): las tarjetas blancas no contrastaban sobre blanco -->
+  <div class="rounded-3xl border border-accent/15 bg-gradient-to-b from-accent/[0.07] to-accent/[0.03] px-4 py-10 sm:px-8 md:py-14">
   <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
     <h2 id="pricing-heading" class="text-3xl font-bold leading-[1.1] text-balance md:text-5xl">{t(lang, 'pricing.v2_title')}</h2>
     <p class="max-w-[48rem] text-balance leading-normal text-muted-foreground sm:text-lg sm:leading-7">
@@ -302,6 +304,7 @@ const pricingSchema = {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
     </p>
+  </div>
   </div>
 </section>
 
