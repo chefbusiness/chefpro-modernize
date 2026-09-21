@@ -17,7 +17,10 @@
 
 // ── Soluciones generadas (VERBATIM de getDynamicCount() en HeroSocialProof.tsx) ──
 export const SOLUTIONS_BASE_DATE = '2026-02-12';
-export const SOLUTIONS_BASE_COUNT = 48149;
+// 2026-09-21 (John): «meterle el millón por delante» al alinear la web con el
+// mailing y el post del hito 1M. Misma aritmética y mismo ritmo diario: ese día
+// el hero pintaba 64.282 y pasó a 1.064.282, y sigue sumando desde ahí.
+export const SOLUTIONS_BASE_COUNT = 1048149;
 
 export function dynamicSolutions(now: Date = new Date()): number {
   const BASE_DATE = new Date(SOLUTIONS_BASE_DATE);

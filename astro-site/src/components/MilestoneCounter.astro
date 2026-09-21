@@ -1,0 +1,40 @@
+---
+// MilestoneCounter.astro — el contador de «soluciones generadas» del hero, ampliado.
+//
+// POR QUÉ (John, 21-sep-2026): en la prueba social del hero la etiqueta tiene que
+// ser corta («recetas, procesos y soluciones generadas»). Al alinear la web con el
+// mailing y el post del hito 1M pidió un componente en una ubicación estratégica
+// con el MISMO contador (sigue sumando a diario) y el texto ampliado del correo:
+// recetas, escandallos, cartas, fichas técnicas, planes de negocio…
+//
+// La cifra sale de lib/social-counts.ts (fuente única, determinista por fecha de
+// build) y <SocialCountLive /> la recalcula en cliente si el build es de otro día:
+// el <span data-social-count> es el mismo gancho que usa el hero.
+// Se monta justo antes de <Pricing /> en las 7 portadas: es el último argumento
+// de confianza antes del precio.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import SocialCountLive from './SocialCountLive.astro';
+import { dynamicSolutions } from '../lib/social-counts';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+// Mismo formato que el hero: en → en-US, resto → es-ES (SocialCountLive hace igual).
+const locale = lang === 'en' ? 'en-US' : 'es-ES';
+const count = dynamicSolutions().toLocaleString(locale);
+---
+
+<section class="border-y bg-muted/30 py-14 md:py-20" data-milestone-counter aria-labelledby="milestone-count">
+  <div class="container max-w-4xl text-center">
+    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-dark">{t(lang, 'milestone.eyebrow')}</p>
+    <p id="milestone-count" class="text-5xl font-bold leading-none tracking-tight gradient-text tabular-nums sm:text-6xl md:text-7xl">
+      <span data-social-count>{count}</span>
+    </p>
+    <p class="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-foreground text-balance md:text-xl">{t(lang, 'milestone.text')}</p>
+    <p class="mt-3 text-sm text-muted-foreground">{t(lang, 'milestone.note')}</p>
+  </div>
+</section>
+
+<!-- Recalcula la cifra en cliente si el build es de un día anterior (Astro deduplica el script). -->
+<SocialCountLive />

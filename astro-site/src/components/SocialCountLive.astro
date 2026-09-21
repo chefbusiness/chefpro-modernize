@@ -28,7 +28,7 @@
     // toca la aritmética allí, hay que tocarla aquí.
     const dynamicSolutions = (now: Date): number => {
       const BASE_DATE = new Date('2026-02-12');
-      const BASE_COUNT = 48149;
+      const BASE_COUNT = 1048149; // 2026-09-21: +1.000.000 (ver lib/social-counts.ts)
       const diffTime = now.getTime() - BASE_DATE.getTime();
       const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
       let total = BASE_COUNT;

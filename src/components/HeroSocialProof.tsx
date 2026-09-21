@@ -16,7 +16,7 @@ const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, 
 
 function getDynamicCount(): number {
   const BASE_DATE = new Date('2026-02-12');
-  const BASE_COUNT = 48149;
+  const BASE_COUNT = 1048149; // 2026-09-21: +1.000.000 (fuente única en astro-site/src/lib/social-counts.ts)
   const today = new Date();
   const diffTime = today.getTime() - BASE_DATE.getTime();
   const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));

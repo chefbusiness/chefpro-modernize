@@ -4318,5 +4318,10 @@
     "title": "Vos agents travaillent déjà avec vos outils",
     "sub": "« Envoyez cette recette par Gmail ». « Mettez ce tableau dans Google Sheets ». « Publiez cette photo sur Instagram ». Demandez-le en parlant : vous autorisez le compte une fois et l'agent s'en occupe.",
     "cta": "Voir les 16 connexions"
+  },
+  "milestone": {
+    "eyebrow": "Cap franchi par la communauté",
+    "text": "recettes, fiches de coûts, cartes, fiches techniques, business plans, documentation, recherches, analyses, deep research et questions résolues dans le monde de la restauration et de la gastronomie professionnelle.",
+    "note": "Et le compteur continue de grimper chaque jour."
   }
 }
