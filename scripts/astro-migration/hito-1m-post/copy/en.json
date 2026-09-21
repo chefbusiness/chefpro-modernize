@@ -1,0 +1,38 @@
+{
+  "title": "AI Chef Pro Surpasses One Million Queries: What We Have Learned",
+  "description": "AI Chef Pro hits one million queries: the most-used agents by the community, seven AI models to compare, and 35 fine-tuned agents.",
+  "alt_destacada": "Professional kitchen brigade plating dishes at the pass during service",
+  "alt_modelos": "Three versions of the same dish lined up at the pass next to a tablet",
+  "alt_afinados": "A pastry chef's hands tempering chocolate on a marble slab in a pastry kitchen",
+  "faq": [
+    {
+      "q": "What counts as a query in AI Chef Pro?",
+      "a": "Every time you ask an agent for something and it returns a response: a recipe, a cost breakdown, a rebalanced menu, a technical sheet, a business plan, or a service question. The million is the total of all those requests since we launched the platform, across seven languages."
+    },
+    {
+      "q": "Where is the AI Models + LLM section and how do I compare two models?",
+      "a": "In the agent menu on the platform, inside the «AI Models + LLM» folder. Each model is an independent chat agent: open two or three in separate tabs, paste the same prompt into each one, and compare criteria, depth, and errors. It is the fastest way to see which one fits your working style."
+    },
+    {
+      "q": "Do general models replace specialized agents?",
+      "a": "No. The seven models are general-purpose engines, useful for cross-checking responses and open-ended tasks. AI Chef Pro's specialized agents come loaded with professional context (yields, waste, costs, regulations, technical sheet format) and store recipes and cost breakdowns with their structure for recalculation. For work involving your kitchen's own data, the specialized agent is still the shortest path."
+    },
+    {
+      "q": "Do I need to do anything to use the fine-tuned agents?",
+      "a": "Nothing at all. The fine-tuning is applied within the agent itself: your next conversation will already run on the new version, with no settings to activate or plan changes required."
+    },
+    {
+      "q": "Are the seven models available in all languages?",
+      "a": "The section exists in Spanish, English, French, German, Italian, and Portuguese with the same selection; the OpenAI agent is called ChatGPT 5 or ChatGPT 5.5 depending on the language, and GPT-5.6 Luna en español. In Dutch, only ChatGPT 5 is available for now."
+    },
+    {
+      "q": "How do I request an improvement to an agent?",
+      "a": "Write to us at info@aichef.pro or reply to the newsletter with the agent name and what you feel is missing. We read every reply, and the weekly updates come directly from that feedback."
+    },
+    {
+      "q": "Does AI Chef Pro have a free plan?",
+      "a": "No. Entry starts at 10 € per month with the Member plan, which includes 10,000 credits and no lock-in period. With that plan you already have access to all 80 agentes and the models section."
+    }
+  ],
+  "slug": "ai-chef-pro-one-million-queries"
+}
