@@ -53,3 +53,8 @@ Nombres de agente reales por workspace (`agentes-map.json`, extraído del HTML d
 
 - John: recargar créditos de Gemini (AI Studio) · corregir «Deep Sonar Research» en el workspace DE · publicar las piezas sociales · comprobar el 22-sep en resend.com/emails que los 7 salieron (bounces < 4 %, spam < 0,08 %).
 - Si se quiere alinear el ritmo del contador con el real (~1.450/día según el informe, frente a ~70/día del código), es un cambio de una constante en `social-counts.ts` + 5 copias; no se hizo porque el dictado fue sólo «el millón por delante».
+
+## 7. Retoques posteriores de John (misma sesión, los dos en producción)
+
+- **PR #90** — «32 países» en negrita en la prueba social del hero, como las otras dos cifras: la cadena se partió en `hero.v2_social_countries_pre` (preposición) + `hero.v2_social_countries` (cifra) en los 7 JSON y `Hero.astro` envuelve la cifra en `<strong>`. Verificado ×7 en preview y producción.
+- **PR #91** — `MilestoneCounter`: eyebrow «Hito de la comunidad a día de hoy · 21 de septiembre de 2026» (fecha del build en el HTML, reescrita en cliente con la del visitante vía `toLocaleDateString` en el locale de la página: es-ES, en-US, fr-FR, de-DE, it-IT, pt-PT, nl-NL) y la frase pasa a «… deep research y dudas resueltas **por profesionales** en el mundo de la hostelería y la gastronomía» (equivalentes en los 7 idiomas). Verificado ×7 en preview y producción.
