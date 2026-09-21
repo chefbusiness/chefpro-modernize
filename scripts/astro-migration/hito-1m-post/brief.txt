@@ -1,0 +1,57 @@
+Escribe el CUERPO de un artículo para el blog de AI Chef Pro (aichef.pro), la plataforma de agentes de inteligencia artificial para chefs, pasteleros, panaderos y gestores de hostelería. Es el artículo que anuncia que la plataforma ha superado el MILLÓN de consultas resueltas, y aprovecha para explicar dos novedades: la sección de siete modelos de IA para comparar y el afinado de 35 agentes.
+
+TÍTULO DEL POST (NO lo escribas, lo pinta el layout; no pongas ningún H1): «AI Chef Pro Supera el Millón de Consultas: Qué Hemos Aprendido y Qué Viene Ahora».
+
+FORMATO Y REGLAS
+- Markdown puro. Empieza directamente con el primer párrafo de la entradilla (dos párrafos antes del primer H2). Encabezados H2 (##) y, si hace falta, H3 (###). NADA de H1.
+- Entre 1.400 y 1.800 palabras. Tono humano, cercano y directo, de tú, como si lo escribiera John Guerrero (fundador; chef con 29 años en alta hostelería y 15 en consultoría). Nada corporativo, nada de «en el vertiginoso mundo de».
+- Los encabezados en Title Case español: las palabras significativas en mayúscula inicial; «y», «de», «para», «el», «la» intermedias en minúscula.
+- Incluye DOS tablas en Markdown (la de los siete modelos y la de los agentes más usados) y al menos UNA lista.
+- NO escribas sección de preguntas frecuentes (va aparte), NO incluyas imágenes, NO menciones productos digitales ni banners, NO pongas un cierre tipo «conclusión» con ese título.
+- Enlaces internos en formato Markdown con URL ABSOLUTA, cada uno UNA sola vez y dentro de un párrafo (nunca en una celda de tabla):
+  · https://aichef.pro/blog/modelos-open-source-ai-chef-pro (artículo anterior sobre GLM-5.2, DeepSeek V4 Flash y Kimi K2.5)
+  · https://aichef.pro/blog/agentes-ia-conectados-gmail-sheets-instagram (artículo sobre las integraciones y el razonamiento avanzado)
+  · https://aichef.pro/integraciones (página de integraciones)
+  · https://aichef.pro/libreria-de-prompts (librerías de prompts por agente)
+  · https://aichef.pro/blog/chatgpt-restaurantes-vs-ai-chef-pro-comparativa (cuándo basta ChatGPT y cuándo no)
+  · https://aichef.pro/precios (planes)
+  · https://app.aichef.pro/ (entrar en la plataforma)
+- Escribe SOLO en español. Ni una palabra en otro idioma salvo los nombres propios de modelos y agentes, y ningún carácter de otro alfabeto.
+- No inventes cifras ni datos que no estén en este brief. Si necesitas un ejemplo numérico de cocina (food cost, raciones), márcalo como ejemplo.
+
+HECHOS (los únicos datos que puedes usar)
+- Hito: la semana del 25 de agosto al 1 de septiembre de 2026 los agentes de AI Chef Pro superaron 1.000.000 de consultas resueltas acumuladas desde el lanzamiento de la plataforma. Una «consulta» es cada vez que un usuario pide algo a un agente y recibe respuesta: una receta, un escandallo, una carta, una ficha técnica, un plan de negocio, una duda de servicio.
+- La plataforma tiene 91 agentes especializados en español y está disponible en 7 idiomas (español, inglés, francés, alemán, italiano, portugués y neerlandés).
+- Los usuarios son chefs, pasteleros, panaderos, heladeros, chocolateros, consultores gastronómicos, directores de A&B de hotel, gestores de restaurante y estudiantes, de España y de toda Hispanoamérica.
+- Estas semanas todos los agentes han pasado a un nuevo modelo de razonamiento (piensan antes de responder) y, tras esa migración, el equipo está revisando los agentes uno a uno: esta semana se han afinado 35, entre ellos VegChef Plant-Based, Burger Pro AI+, Bar & Lounge AI+, Food Pairing AI, Fermentus Con AI+, Heladería Creativa, Panadería Creativa y Chocolatería Creativa. El usuario no tiene que activar nada: la siguiente conversación sale ya con la versión afinada.
+- Sección «Modelos IA + LLM» de la plataforma: siete modelos de última generación, cada uno como un agente de chat independiente, para lanzarles la misma pregunta y comparar respuestas. Dos son nuevos (añadidos el 26 de agosto: Gemini 3.7 Flash y Grok 4.6) y uno se ha actualizado (GPT-5.5 pasó a GPT-5.6 Luna el 30 de agosto). Datos de cada uno, tal como los describe la plataforma:
+  · Gemini 3.7 Flash — Google DeepMind — multimodal, razonamiento avanzado, contexto de 1M de tokens. NUEVO.
+  · Grok 4.6 — xAI — razonamiento avanzado y acceso a información en tiempo real. NUEVO.
+  · GPT-5.6 Luna — OpenAI — modelo de uso general, respuestas coherentes y conversacionales, buen razonamiento. ACTUALIZADO desde GPT-5.5.
+  · DeepSeek V4 Flash — DeepSeek AI — código abierto, contexto de 1M de tokens, respuestas ultrarrápidas.
+  · Kimi K2.5 — Moonshot AI — código abierto, contexto de 256K tokens, visión multimodal, tareas complejas.
+  · GLM-5.2 — ZhipuAI — código abierto, contexto de 1M de tokens, multimodal.
+  · Sonar Deep Research — Perplexity — investigación profunda: analiza datos y tendencias con fuentes para sacar insights de marca, audiencia y oportunidades de negocio.
+  Idea clave para explicarlo: estos siete son modelos GENERALES para comparar estilos y contrastar respuestas; el trabajo con los datos de tu cocina (escandallos, fichas, cartas, planes) lo hacen los agentes ESPECIALIZADOS de AI Chef Pro, que ya vienen con el contexto profesional puesto. Un buen uso: pedir a tres modelos lo mismo (por ejemplo, reequilibrar una carta de otoño con un food cost objetivo del 30 %, como ejemplo) y comparar criterio, extensión y errores; usar Sonar Deep Research para investigar tendencias o competencia con fuentes, y Grok cuando importa lo que está pasando ahora mismo.
+- Los agentes más usados por la comunidad esta semana (orden del ranking; NO des cifras de sesiones):
+  1. Cocina Creativa — generador de recetas de cocina creativa de calidad profesional, con historia, ingredientes precisos y pasos.
+  2. Pastelería Creativa — recetas de pastelería creativa y postres de restaurante.
+  3. Chef Consultor Pro — para chefs consultores y asesores que trabajan por proyectos para inversores, grupos, hoteles y franquicias.
+  4. Cocina Española — recetario profesional de cocina española.
+  5. Calcula Pax — calculadora de porciones: pegas la receta y devuelve las cantidades para el número de comensales.
+  6. Panadero Consultor Pro — para panaderos consultores y asesores de panaderías artesanales y bakery cafés.
+  7. Consultor Gastronómico — para consultores gastronómicos y asesores de restaurantes que trabajan por proyectos.
+  8. Comida del Personal — planifica los menús de la «comida de familia» del equipo.
+  9. Catering AI+ — asesoramiento para chefs y emprendedores de catering y eventos.
+  10. Cocina Italiana y Cocina Francesa — recetarios profesionales.
+  11. Burger Pro AI+ — experto en hamburgueserías gourmet, artesanales, veganas y de fast good.
+- Pregunta al lector al final: qué agente querría mejorar, qué le falta; los cambios de cada semana salen de esas respuestas (puede escribir a info@aichef.pro).
+- Planes: AI Chef Pro NO tiene plan gratuito. Se entra desde 10 € al mes con el plan Miembro (10.000 créditos, sin permanencia). Menciónalo UNA vez, al final, sin hacer venta agresiva.
+
+ESTRUCTURA SUGERIDA (puedes ajustar los títulos, no el orden)
+1. Entradilla (2 párrafos): el hito y qué significa de verdad un millón de consultas en cocinas reales.
+2. ## Qué Hay Detrás de un Millón de Consultas — qué es una consulta, quién las hace, 91 agentes, 7 idiomas, y por qué el número que nos importa es el tiempo que devuelve.
+3. ## Los Agentes que Más Usa la Comunidad — tabla (Agente | Para qué se usa) con los 12 y un párrafo con lecturas: creatividad y consultoría empatadas, la calculadora de porciones como sorpresa.
+4. ## ¿Qué Modelo de IA Cocina Mejor? Siete para Comparar — la sección Modelos IA + LLM, tabla (Modelo | Desarrollador | Lo que aporta | Novedad), cómo comparar bien (lista de 3-4 pasos), cuándo usar los modelos generales y cuándo los agentes especializados.
+5. ## 35 Agentes Afinados Tras el Cambio de Modelo — qué es afinar, qué nota el usuario, nada que activar.
+6. ## Lo que Viene — pedir feedback, invitación a probar, la línea de planes.

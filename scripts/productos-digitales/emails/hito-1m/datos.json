@@ -1,0 +1,337 @@
+{
+  "_nota": "Variables por idioma que NO pasan por el traductor: nombres de agentes tal como aparecen en cada workspace de Pickaxe (extraídos del HTML de app/enapp/... el 2026-09-21), enlaces y remitente. El bloque de modelos NO existe en NL (su workspace sólo tiene ChatGPT 5) y el de 35 agentes afinados sólo está verificado en el workspace ES. «seccion» = nombre real de la carpeta de modelos en cada workspace (build.py sustituye el literal «Modelos IA + LLM» de la traducción por él).",
+  "es": {
+    "app": "https://app.aichef.pro/",
+    "from": "AI Chef Pro <hola@news.aichef.pro>",
+    "segment": "b2c581bd-81db-4ded-a174-2b339f7d3cc3",
+    "post": "https://aichef.pro/blog/ai-chef-pro-un-millon-de-consultas",
+    "modelos": [
+      [
+        "Gemini 3.7 Flash",
+        "https://app.aichef.pro/Gemini_37_Flash_AI-2",
+        "nuevo"
+      ],
+      [
+        "Grok 4.6",
+        "https://app.aichef.pro/Grok_46_AI-2",
+        "nuevo"
+      ],
+      [
+        "GPT-5.6 Luna",
+        "https://app.aichef.pro/ChatGPT40_para_tus_estudios_XTHFT",
+        "actualizado"
+      ],
+      [
+        "DeepSeek V4 Flash",
+        "https://app.aichef.pro/DeepSeek_V4_Flash_AI",
+        ""
+      ],
+      [
+        "Kimi K2.5",
+        "https://app.aichef.pro/Kimi_K25_AI",
+        ""
+      ],
+      [
+        "GLM-5.2",
+        "https://app.aichef.pro/GLM_52_AI",
+        ""
+      ],
+      [
+        "Sonar Deep Research",
+        "https://app.aichef.pro/HZ3F1H1G7W",
+        ""
+      ]
+    ],
+    "afinados": true,
+    "top": [
+      "Cocina Creativa",
+      "Pastelería Creativa",
+      "Chef Consultor Pro",
+      "Cocina Española",
+      "Calcula Pax",
+      "Panadero Consultor Pro",
+      "Consultor Gastronómico",
+      "Comida del Personal",
+      "Catering AI+"
+    ],
+    "seccion": "Modelos IA + LLM"
+  },
+  "en": {
+    "app": "https://enapp.aichef.pro/",
+    "from": "AI Chef Pro <hello@news.aichef.pro>",
+    "segment": "d06ed053-4327-4bec-9e3b-25a9ee9f6704",
+    "post": "https://aichef.pro/en/blog/ai-chef-pro-one-million-queries",
+    "modelos": [
+      [
+        "Gemini 3.7 Flash",
+        "https://enapp.aichef.pro/Gemini_37_Flash_AI_EN",
+        ""
+      ],
+      [
+        "Grok 4.6",
+        "https://enapp.aichef.pro/Grok_46_AI_EN",
+        ""
+      ],
+      [
+        "ChatGPT 5.5",
+        "https://enapp.aichef.pro/ChatGPT_4O_6I0PH",
+        ""
+      ],
+      [
+        "DeepSeek V4 Flash",
+        "https://enapp.aichef.pro/DeepSeek_V4_Flash_AI-2",
+        ""
+      ],
+      [
+        "Kimi K2.5",
+        "https://enapp.aichef.pro/Kimi_K25_AI-2",
+        ""
+      ],
+      [
+        "GLM-5.2",
+        "https://enapp.aichef.pro/GLM_52_AI-2",
+        ""
+      ],
+      [
+        "Sonar Deep Research",
+        "https://enapp.aichef.pro/NHXZC0PBZ5",
+        ""
+      ]
+    ],
+    "afinados": false,
+    "top": [
+      "Avant-Garde Cuisine",
+      "Creative Pastry",
+      "Chef Consultant Pro",
+      "Spanish Cuisine",
+      "Bakery Consultant Pro",
+      "Gastronomy Consultant Pro",
+      "Staff Meal",
+      "Catering AI+"
+    ],
+    "seccion": "AI Models & LLMs"
+  },
+  "fr": {
+    "app": "https://frapp.aichef.pro/",
+    "from": "AI Chef Pro <bonjour@news.aichef.pro>",
+    "segment": "14428bf3-e3bf-47b7-a496-b4113a260a98",
+    "post": "https://aichef.pro/fr/blog/ai-chef-pro-un-million-de-requetes",
+    "modelos": [
+      [
+        "Gemini 3.7 Flash",
+        "https://frapp.aichef.pro/Gemini_37_Flash_AI-5",
+        ""
+      ],
+      [
+        "Grok 4.6",
+        "https://frapp.aichef.pro/Grok_46_AI-4",
+        ""
+      ],
+      [
+        "ChatGPT 5",
+        "https://frapp.aichef.pro/U4D13HZD1U",
+        ""
+      ],
+      [
+        "DeepSeek V4 Flash",
+        "https://frapp.aichef.pro/DeepSeek_V4_Flash_AI-6",
+        ""
+      ],
+      [
+        "Kimi K2.5",
+        "https://frapp.aichef.pro/Kimi_K25_AI-6",
+        ""
+      ],
+      [
+        "GLM-5.2",
+        "https://frapp.aichef.pro/GLM_52_AI-6",
+        ""
+      ],
+      [
+        "Sonar Deep Research",
+        "https://frapp.aichef.pro/Sonar_Deep_Research_AI-2",
+        ""
+      ]
+    ],
+    "afinados": false,
+    "top": [
+      "Cuisine Créative",
+      "Pâtisserie Créative",
+      "Cuisine Espagnole",
+      "Repas du Personnel"
+    ],
+    "seccion": "Modèles IA + LLM"
+  },
+  "de": {
+    "app": "https://deapp.aichef.pro/",
+    "from": "AI Chef Pro <hallo@news.aichef.pro>",
+    "segment": "fadefd88-6a03-42ab-949b-3416a32043da",
+    "post": "https://aichef.pro/de/blog/ai-chef-pro-eine-million-anfragen",
+    "modelos": [
+      [
+        "Gemini 3.7 Flash",
+        "https://deapp.aichef.pro/Gemini_37_Flash_AI-4",
+        ""
+      ],
+      [
+        "Grok 4.6",
+        "https://deapp.aichef.pro/LYVIGHA127VQ",
+        ""
+      ],
+      [
+        "ChatGPT 5",
+        "https://deapp.aichef.pro/chatgpt-5-xthft-de-3",
+        ""
+      ],
+      [
+        "DeepSeek V4 Flash",
+        "https://deapp.aichef.pro/DeepSeek_V4_Flash_AI-5",
+        ""
+      ],
+      [
+        "Kimi K2.5",
+        "https://deapp.aichef.pro/Kimi_K25_AI-5",
+        ""
+      ],
+      [
+        "GLM-5.2",
+        "https://deapp.aichef.pro/GLM_52_AI-5",
+        ""
+      ],
+      [
+        "Deep Sonar Research",
+        "https://deapp.aichef.pro/Q2TNKMWBGSSL",
+        ""
+      ]
+    ],
+    "afinados": false,
+    "top": [
+      "Kreativküche",
+      "Kreative Patisserie",
+      "Spanische Küche",
+      "Mitarbeiteressen AI",
+      "Catering AI+"
+    ],
+    "seccion": "KI-Modelle + LLM"
+  },
+  "it": {
+    "app": "https://itapp.aichef.pro/",
+    "from": "AI Chef Pro <ciao@news.aichef.pro>",
+    "segment": "4a4ccf02-9238-4dcd-91e9-17e94e2e3d50",
+    "post": "https://aichef.pro/it/blog/ai-chef-pro-un-milione-di-richieste",
+    "modelos": [
+      [
+        "Gemini 3.7 Flash",
+        "https://itapp.aichef.pro/Gemini_37_Flash_AI",
+        ""
+      ],
+      [
+        "Grok 4.6",
+        "https://itapp.aichef.pro/Grok_46_AI",
+        ""
+      ],
+      [
+        "ChatGPT 5",
+        "https://itapp.aichef.pro/7EKFIEB4CZ",
+        ""
+      ],
+      [
+        "DeepSeek V4 Flash",
+        "https://itapp.aichef.pro/DeepSeek_V4_Flash_AI-3",
+        ""
+      ],
+      [
+        "Kimi K2.5",
+        "https://itapp.aichef.pro/Kimi_K25_AI-3",
+        ""
+      ],
+      [
+        "GLM-5.2",
+        "https://itapp.aichef.pro/GLM_52_AI-3",
+        ""
+      ],
+      [
+        "Sonar Deep Research",
+        "https://itapp.aichef.pro/68X96T81JO",
+        ""
+      ]
+    ],
+    "afinados": false,
+    "top": [
+      "Cucina Creativa",
+      "Pasticceria Creativa",
+      "Cucina Spagnola",
+      "Pasto del Personale",
+      "Catering AI+"
+    ],
+    "seccion": "Modelli IA + LLM"
+  },
+  "pt": {
+    "app": "https://ptapp.aichef.pro/",
+    "from": "AI Chef Pro <ola@news.aichef.pro>",
+    "segment": "a0362ca3-7bb6-4b19-bbd2-d611bb11727a",
+    "post": "https://aichef.pro/pt/blog/ai-chef-pro-um-milhao-de-consultas",
+    "modelos": [
+      [
+        "Gemini 3.7 Flash",
+        "https://ptapp.aichef.pro/Gemini_37_Flash_AI-3",
+        ""
+      ],
+      [
+        "Grok 4.6",
+        "https://ptapp.aichef.pro/Grok_46_AI-3",
+        ""
+      ],
+      [
+        "ChatGPT 5",
+        "https://ptapp.aichef.pro/chatgpt-5-xthft-pt",
+        ""
+      ],
+      [
+        "DeepSeek V4 Flash",
+        "https://ptapp.aichef.pro/DeepSeek_V4_Flash_AI-4",
+        ""
+      ],
+      [
+        "Kimi K2.5",
+        "https://ptapp.aichef.pro/Kimi_K25_AI-4",
+        ""
+      ],
+      [
+        "GLM-5.2",
+        "https://ptapp.aichef.pro/GLM_52_AI-4",
+        ""
+      ],
+      [
+        "Sonar Deep Research",
+        "https://ptapp.aichef.pro/Sonar_Deep_Research_AI",
+        ""
+      ]
+    ],
+    "afinados": false,
+    "top": [
+      "Culinária Criativa",
+      "Pastelaria Criativa",
+      "Cozinha Espanhola",
+      "Refeição do Pessoal",
+      "Catering AI+"
+    ],
+    "seccion": "Modelos IA + LLM"
+  },
+  "nl": {
+    "app": "https://nlapp.aichef.pro/",
+    "from": "AI Chef Pro <hallo@news.aichef.pro>",
+    "segment": "b5f7530d-3bc2-45b8-abe3-e6bd60ae9858",
+    "post": null,
+    "modelos": [],
+    "afinados": false,
+    "top": [
+      "Creatieve Keuken",
+      "Creatieve Patisserie",
+      "Spaanse Keuken",
+      "Personeelsmaaltijden",
+      "Catering AI+"
+    ],
+    "seccion": ""
+  }
+}

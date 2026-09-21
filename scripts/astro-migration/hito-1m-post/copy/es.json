@@ -1,0 +1,38 @@
+{
+  "title": "AI Chef Pro Supera el Millón de Consultas: Qué Hemos Aprendido",
+  "description": "AI Chef Pro supera el millón de consultas resueltas: los agentes más usados por la comunidad, siete modelos de IA para comparar y 35 agentes afinados.",
+  "alt_destacada": "Brigada de cocina profesional emplatando en el pase durante el servicio",
+  "alt_modelos": "Tres versiones del mismo plato alineadas en el pase junto a una tablet",
+  "alt_afinados": "Manos de un pastelero templando chocolate sobre mármol en un obrador",
+  "faq": [
+    {
+      "q": "¿Qué cuenta como una consulta en AI Chef Pro?",
+      "a": "Cada vez que le pides algo a un agente y te devuelve una respuesta: una receta, un escandallo, una carta reequilibrada, una ficha técnica, un plan de negocio o una duda de servicio. El millón es la suma de todas esas peticiones desde que abrimos la plataforma, en los siete idiomas."
+    },
+    {
+      "q": "¿Dónde está la sección Modelos IA + LLM y cómo comparo dos modelos?",
+      "a": "En el menú de agentes de la plataforma, en la carpeta «Modelos IA + LLM». Cada modelo es un agente de chat independiente: abre dos o tres en pestañas distintas, pega la misma petición en cada uno y compara criterio, extensión y errores. Es la forma más rápida de ver cuál encaja con tu manera de trabajar."
+    },
+    {
+      "q": "¿Los modelos generales sustituyen a los agentes especializados?",
+      "a": "No. Los siete modelos son motores generales, útiles para contrastar respuestas y para tareas abiertas. Los agentes especializados de AI Chef Pro llevan puesto el contexto profesional (rendimientos, mermas, costes, normativa, formato de ficha técnica) y guardan recetas y escandallos con su estructura para recalcularlos. Para el trabajo con los datos de tu cocina, el agente especializado sigue siendo el camino corto."
+    },
+    {
+      "q": "¿Tengo que hacer algo para usar los agentes afinados?",
+      "a": "Nada. El afinado se aplica en el propio agente: tu siguiente conversación ya sale con la versión nueva, sin activar ajustes ni cambiar de plan."
+    },
+    {
+      "q": "¿Los siete modelos están disponibles en todos los idiomas?",
+      "a": "La sección existe en español, inglés, francés, alemán, italiano y portugués con la misma selección; el agente de OpenAI se llama ChatGPT 5 o ChatGPT 5.5 según el idioma, y GPT-5.6 Luna en español. En neerlandés, de momento, solo está ChatGPT 5."
+    },
+    {
+      "q": "¿Cómo pido que se mejore un agente?",
+      "a": "Escríbenos a info@aichef.pro o responde al boletín con el nombre del agente y lo que echas en falta. Leemos todas las respuestas y los cambios de cada semana salen de ahí."
+    },
+    {
+      "q": "¿AI Chef Pro tiene plan gratuito?",
+      "a": "No. Se entra desde 10 € al mes con el plan Miembro, que incluye 10.000 créditos y no tiene permanencia. Con ese plan ya tienes acceso a los 91 agentes y a la sección de modelos."
+    }
+  ],
+  "slug": "ai-chef-pro-un-millon-de-consultas"
+}
