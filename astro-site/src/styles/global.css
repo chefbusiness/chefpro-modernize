@@ -436,3 +436,15 @@
 html.aichef-cookies-abierto a[href^="https://wa.me/"][class*="fixed"] {
   margin-bottom: var(--aichef-cookie-h, 0px);
 }
+
+/* ── Sin scroll lateral en móvil (21-sep-2026) ───────────────────────────────
+   En Android/iOS cualquier elemento que sobresalga del ancho de pantalla —una
+   tabla ancha, el anillo animado del botón de WhatsApp, una cabecera que no
+   cabe— ENSANCHA el «layout viewport» y la página entera se desplaza dejando un
+   hueco blanco a la derecha. El escritorio no lo hace, por eso el fallo no se
+   veía en Windows y sí en el móvil de John. Sólo en <html>: en <body> rompería
+   `position: sticky` (la cabecera). Las causas reales se arreglan aparte; esto
+   es la red para las que no conocemos. */
+html {
+  overflow-x: hidden;
+}

@@ -177,10 +177,13 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
   </div>
 
   <header class="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-    <div class="container flex h-14 max-w-screen-2xl items-center">
+    <!-- Móvil: el contenedor lleva 2rem de margen por config y el logo mide 206 px, y con el selector de idioma
+         y la hamburguesa la cabecera sumaba 431 px en un móvil de 360 (medido el 21-sep-2026): Android ensancha
+         el viewport de layout y la página entera se desplaza. Margen 1rem y logo h-6 por debajo de sm. -->
+    <div class="container flex h-14 max-w-screen-2xl items-center px-4 sm:px-8">
       <div class="mr-2 2xl:mr-4 flex">
-        <a class="mr-4 2xl:mr-6 flex shrink-0 items-center space-x-2" href="/">
-          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-8 w-auto max-w-none shrink-0" />
+        <a class="mr-2 sm:mr-4 2xl:mr-6 flex shrink-0 items-center space-x-2" href="/">
+          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-6 sm:h-8 w-auto max-w-none shrink-0" />
         </a>
 
         <!-- Desktop nav (mega-menús vía hover CSS) -->
