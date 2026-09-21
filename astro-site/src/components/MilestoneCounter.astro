@@ -23,11 +23,23 @@ const { lang = 'es' } = Astro.props;
 // Mismo formato que el hero: en → en-US, resto → es-ES (SocialCountLive hace igual).
 const locale = lang === 'en' ? 'en-US' : 'es-ES';
 const count = dynamicSolutions().toLocaleString(locale);
+
+// «A día de hoy» + la fecha (John, 21-sep-2026): que se vea que el número es del día que
+// corre. El frontmatter la congela en la fecha del build; el <script> de abajo la reescribe
+// en cliente con la fecha real del visitante, en el idioma de la página.
+const FECHA_LOCALE: Record<string, string> = { es: 'es-ES', en: 'en-US', fr: 'fr-FR', de: 'de-DE', it: 'it-IT', pt: 'pt-PT', nl: 'nl-NL' };
+const fechaLocale = FECHA_LOCALE[lang] ?? 'es-ES';
+const hoy = new Date();
+const fecha = hoy.toLocaleDateString(fechaLocale, { day: 'numeric', month: 'long', year: 'numeric' });
+const fechaIso = hoy.toISOString().slice(0, 10);
 ---
 
 <section class="border-y bg-muted/30 py-14 md:py-20" data-milestone-counter aria-labelledby="milestone-count">
   <div class="container max-w-4xl text-center">
-    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-dark">{t(lang, 'milestone.eyebrow')}</p>
+    <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-dark">
+      {t(lang, 'milestone.eyebrow')} <span aria-hidden="true">·</span>
+      <time datetime={fechaIso} data-milestone-date data-locale={fechaLocale}>{fecha}</time>
+    </p>
     <p id="milestone-count" class="text-5xl font-bold leading-none tracking-tight gradient-text tabular-nums sm:text-6xl md:text-7xl">
       <span data-social-count>{count}</span>
     </p>
@@ -38,3 +50,15 @@ const count = dynamicSolutions().toLocaleString(locale);
 
 <!-- Recalcula la cifra en cliente si el build es de un día anterior (Astro deduplica el script). -->
 <SocialCountLive />
+
+<script>
+  // La fecha «a día de hoy» es la del visitante, no la del build.
+  document.querySelectorAll<HTMLTimeElement>('[data-milestone-date]').forEach((el) => {
+    const locale = el.getAttribute('data-locale') || 'es-ES';
+    const hoy = new Date();
+    try {
+      el.textContent = hoy.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+      el.setAttribute('datetime', hoy.toISOString().slice(0, 10));
+    } catch { /* si el navegador no trae ese locale, se queda la fecha del build */ }
+  });
+</script>
