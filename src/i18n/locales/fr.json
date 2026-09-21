@@ -98,7 +98,8 @@
       "",
       ""
     ],
-    "v2_social_countries": "dans plus de 32 pays"
+    "v2_social_countries_pre": "dans plus de",
+    "v2_social_countries": "32 pays"
   },
   "notifications": {
     "someone_from": "Quelqu'un de",

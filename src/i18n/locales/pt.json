@@ -98,7 +98,8 @@
       "a sua",
       "o seu"
     ],
-    "v2_social_countries": "de mais de 32 países"
+    "v2_social_countries_pre": "de mais de",
+    "v2_social_countries": "32 países"
   },
   "notifications": {
     "someone_from": "Alguém de",

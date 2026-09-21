@@ -98,7 +98,8 @@
       "",
       ""
     ],
-    "v2_social_countries": "uit meer dan 32 landen"
+    "v2_social_countries_pre": "uit meer dan",
+    "v2_social_countries": "32 landen"
   },
   "stats": {
     "apps": "50+",
