@@ -95,6 +95,14 @@ def prepara_es(lang, md):
             md = md.replace('(%s)' % es_url, '(%s)' % c['links'][es_url])
         else:
             md = re.sub(r'\[([^\]]+)\]\(%s\)' % re.escape(es_url), r'\1', md)
+    # Filas de la tabla de agentes que NO existen en ese workspace: fuera ANTES de traducir.
+    # Pedírselo al modelo no funcionó (DE dejó 11 filas, IT 10 en dos intentos cada uno).
+    for es, t in MAPA[lang].items():
+        if not isinstance(t, str):
+            md = re.sub(r'^\| %s \|[^\n]*\n' % re.escape(es), '', md, flags=re.M)
+    # Geografía: el original dice «tanto en España como en toda Hispanoamérica»; el modelo
+    # inventaba «across the UK» / «en France»: se neutraliza en origen.
+    md = md.replace('tanto en España como en toda Hispanoamérica', 'en todo el mundo')
     return md
 
 
@@ -109,7 +117,7 @@ def reglas_adaptacion(lang, pieza):
                  % (c['nombre'], '; '.join('«%s» → «%s»' % (es, existentes[es]) for es in citados if es in existentes)))
     borrar = [es for es in citados if es in faltan]
     if borrar:
-        r.append('Estos agentes NO existen en la plataforma en %s: %s. Elimina sus filas de la tabla y '
+        r.append('Estos agentes NO existen en la plataforma en %s: %s. Ya no están en la tabla; '
                  'reescribe las frases que los citan para que no aparezcan (sin inventar cifras). Si el texto '
                  'contrapone «creatividad» y «consultoría» y los agentes consultores no existen, di que lideran la '
                  'creatividad y los recetarios profesionales. Si hay un párrafo dedicado a «Calcula Pax», cámbialo por '
@@ -188,8 +196,13 @@ def traduce_cuerpo(lang, es_md):
         return None, 'modelo de OpenAI mal adaptado'
     if re.search(r'\b35\b', completo):
         return None, 'sigue citando los 35 agentes afinados'
-    urls = set(re.findall(r'\]\((https?://[^)\s]+)\)', completo))
     permitidas = set(c['links'].values()) | {c['app']}
+    # Un enlace que el modelo se inventa (PT añadió https://aichef.pro a secas) se convierte en
+    # texto plano en vez de tumbar el idioma: el texto del enlace es válido, la URL no.
+    def _sin_enlace(m):
+        return m.group(1) if m.group(2) not in permitidas else m.group(0)
+    completo = re.sub(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', _sin_enlace, completo)
+    urls = set(re.findall(r'\]\((https?://[^)\s]+)\)', completo))
     if not urls <= permitidas:
         return None, 'enlaces fuera del mapa: %s' % sorted(urls - permitidas)
     for u in sorted(urls):
@@ -212,10 +225,11 @@ def traduce_meta(lang, es_meta):
               '4. NO traduzcas AI Chef Pro ni los nombres de modelos (%s, %s).\n'
               '5. Donde diga «91 agentes» pon «%d agentes» (plataforma en %s). Donde cite «GPT-5.6 Luna en español» conserva ese dato '
               'tal cual (habla del espanol) y donde cite «Modelos IA + LLM» deja el nombre de la seccion en %s como en la plataforma.\n'
-              '6. NUNCA uses la comilla doble recta (") dentro de los valores. Usa comillas tipograficas.\n'
-              '7. Escribe SOLO en %s, sin caracteres de otro alfabeto.\n%s\nJSON:\n%s'
+              '6. NO cites la cifra 35: donde diga «35 agentes afinados» di «los agentes afinados tras la migración».\n'
+              '7. NUNCA uses la comilla doble recta (") dentro de los valores. Usa comillas tipograficas.\n'
+              '8. Escribe SOLO en %s, sin caracteres de otro alfabeto.\n%s\nJSON:\n%s'
               % (c['nombre'], ', '.join(MODELOS), c['openai'], c['n'], c['nombre'], c['nombre'], c['nombre'],
-                 ('8. TRATAMIENTO AL LECTOR: %s\n' % trato) if trato else '', json.dumps(base, ensure_ascii=False, indent=2)))
+                 ('9. TRATAMIENTO AL LECTOR: %s\n' % trato) if trato else '', json.dumps(base, ensure_ascii=False, indent=2)))
     out, motor = bridge(lang, prompt)
     if not out:
         return None, 'meta: bridge no devolvio nada (%s)' % motor
@@ -237,6 +251,8 @@ def traduce_meta(lang, es_meta):
         return None, 'meta: alfabeto ajeno %r' % malos[0][:60]
     if len(data['description']) > 160:
         return None, 'meta: description de %d caracteres' % len(data['description'])
+    if re.search(r'\b35\b', ' '.join(_tr.textos(data))):
+        return None, 'meta: sigue citando la cifra 35'
     err = _tr.revisar_tratamiento(lang, data)
     if err:
         return None, 'meta: ' + err

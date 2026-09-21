@@ -1,6 +1,36 @@
+---
+title: "AI Chef Pro Surpasses One Million Queries: What We Have Learned"
+description: "AI Chef Pro hits one million queries: the most-used agents by the community, seven AI models to compare, and the agents fine-tuned after the model migration."
+pubDate: 2026-09-22
+modDate: 2026-09-22
+category: ai-chef-pro
+translations:
+  es: "ai-chef-pro-un-millon-de-consultas"
+image: /blog-assets/2026/09/un-millon-destacada.jpg
+imageAlt: "Professional kitchen brigade plating dishes at the pass during service"
+lang: en
+faq:
+  - q: "What counts as a query in AI Chef Pro?"
+    a: "Every time you ask an agent for something and it returns a response: a recipe, a cost breakdown, a rebalanced menu, a technical sheet, a business plan, or a service question. The million is the total of all those requests since we launched the platform, across seven languages."
+  - q: "Where is the AI Models + LLM section and how do I compare two models?"
+    a: "In the agent menu on the platform, inside the «AI Models + LLM» folder. Each model is an independent chat agent: open two or three in separate tabs, paste the same prompt into each one, and compare criteria, depth, and errors. It is the fastest way to see which one fits your working style."
+  - q: "Do general models replace specialized agents?"
+    a: "No. The seven models are general-purpose engines, useful for cross-checking responses and open-ended tasks. AI Chef Pro's specialized agents come loaded with professional context (yields, waste, costs, regulations, technical sheet format) and store recipes and cost breakdowns with their structure for recalculation. For work involving your kitchen's own data, the specialized agent is still the shortest path."
+  - q: "Do I need to do anything to use the fine-tuned agents?"
+    a: "Nothing at all. The fine-tuning is applied within the agent itself: your next conversation will already run on the new version, with no settings to activate or plan changes required."
+  - q: "Are the seven models available in all languages?"
+    a: "The section exists in Spanish, English, French, German, Italian, and Portuguese with the same selection; the OpenAI agent is called ChatGPT 5 or ChatGPT 5.5 depending on the language, and GPT-5.6 Luna en español. In Dutch, only ChatGPT 5 is available for now."
+  - q: "How do I request an improvement to an agent?"
+    a: "Write to us at info@aichef.pro or reply to the newsletter with the agent name and what you feel is missing. We read every reply, and the weekly updates come directly from that feedback."
+  - q: "Does AI Chef Pro have a free plan?"
+    a: "No. Entry starts at 10 € per month with the Member plan, which includes 10,000 credits and no lock-in period. With that plan you already have access to all 80 agentes and the models section."
+---
+
 A few days ago, between August 25 and September 1, 2026, the AI Chef Pro agents crossed the one-million-queries milestone since we opened the platform. This isn't a marketing number: it's one million times that someone — from a professional kitchen, a pastry shop, a bakery, or a desk — asked an agent something and got a useful answer back. A recipe, a food cost sheet, a menu, a spec sheet, a business plan, or a service question. One million moments where AI did the groundwork so the professional could focus on what truly matters.
 
 I've spent 29 years in high-end hospitality and 15 in consulting, and I know firsthand how much time gets lost on tasks that are necessary but not creative: recalculating portions for an event, writing a dish description, making sure the menu and food cost actually line up. That's the time we want to give back. The one million queries is proof that the idea works. And now it's time to share what we've learned — and what's new that came along with it.
+
+<figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-comparar-modelos.jpg" alt="Three versions of the same dish lined up at the pass next to a tablet" loading="lazy" /></figure>
 
 ## What's Behind One Million Queries
 
@@ -13,6 +43,8 @@ What we've also learned is which agents the community reaches for most, which on
 ## The Agents Our Community Uses Most
 
 Here is a snapshot of the most-used agents during the milestone week, ranked by usage:
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ proven professional prompts for chefs and owners.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-one-million-queries" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Pro Prompts eBook for €9</a></aside>
 
 | Agent | What it's used for |
 |---|---|
@@ -46,6 +78,8 @@ One of the biggest additions in recent weeks is the **AI Models + LLM** section 
 | GLM-5.2 | ZhipuAI | Open source, 1-million-token context, multimodal | — |
 | Sonar Deep Research | Perplexity | Deep research: analyzes data and trends with sourced insights on brand, audience, and business opportunities | — |
 
+<figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/09/un-millon-agentes-afinados.jpg" alt="A pastry chef's hands tempering chocolate on a marble slab in a pastry kitchen" loading="lazy" /></figure>
+
 If you want to dig deeper into the open-source models — DeepSeek V4 Flash, Kimi K2.5, and GLM-5.2 — we have an [earlier article where we break them down in detail](https://aichef.pro/en/blog/open-source-models-ai-chef-pro).
 
 ### How to Get the Most Out of the Comparison
@@ -63,6 +97,8 @@ The key distinction is this: general models are for exploring and comparing. Wor
 
 A few weeks ago, we migrated all AI Chef Pro agents to a new reasoning model. The practical difference is that agents now think before they respond: they analyze the context, identify what's actually being asked, and build the answer with more judgment. Fewer generic responses, more responses that feel like they come from someone who genuinely knows their way around a kitchen.
 
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Food Truck</h3><p class="mt-2 text-muted-foreground">Excel financial plan, start-up investment and opening checklist.</p><a href="/plan-negocio-food-truck?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-one-million-queries" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Food Truck for €29</a></aside>
+
 After that migration, the team is going through the agents one by one to fine-tune them: adjusting instructions, improving how they interpret each type of query, and fixing what wasn't working well with the previous model.
 
 Fine-tuning an agent isn't just tweaking a technical parameter. It means reviewing how it handles ambiguous questions, how it manages dietary restrictions, whether the quantities it suggests make professional sense, whether the tone is right for the user's profile. It's hands-on work, agent by agent.
@@ -72,5 +108,7 @@ The best part: you don't need to activate anything. The next conversation you op
 ## What's Next
 
 One million queries is a starting point, not a finish line. Every week we keep refining agents, adding models, and fixing what the community tells us isn't working. And this is where I need your help directly: which agent do you use and feel could deliver more? What's missing that doesn't exist yet? The weekly updates come straight from those answers. Drop us a line at info@aichef.pro and we'll factor it into the next round of improvements.
+
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Catering / Events</h3><p class="mt-2 text-muted-foreground">Event checklists: setup, service, breakdown, traceability.</p><a href="/kit-tareas-catering?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-chef-pro-one-million-queries" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Catering / Events for €12</a></aside>
 
 If you haven't jumped into the platform yet, you can do it at [enapp.aichef.pro](https://enapp.aichef.pro/). The Member plan starts at $10/month, no commitment, with 10,000 credits to get started with all 80 specialized agents in English — available across seven languages. Full pricing details at [aichef.pro/en/pricing](https://aichef.pro/en/pricing). No strings attached, no fine print.
