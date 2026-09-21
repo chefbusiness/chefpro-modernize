@@ -504,6 +504,7 @@ y `data/integraciones.ts`.
 
 - **YouTube oficial: `https://youtube.com/@aichefpro`** — nunca el canal personal de John (el pie enlazaba a una playlist suya; corregido en `Footer.astro` y en el gemelo `ModernFooter.tsx` de la SPA).
 - **Toda mención con nombre de John enlaza a `https://johnguerrero.es`** con `target="_blank" rel="noopener noreferrer author"`. En JSON-LD, el `Person` lleva `url` = su marca personal y `sameAs` con marca + canal. Los `alt` de imagen no se enlazan.
+- **Correos (John, 2026-09-21): NUNCA saludar «Hola, chef».** La lista es transversal (dueños, managers, panaderos, pasteleros, chocolateros, bartenders, consultores): saludo abierto «Hola, colegas / amigos / comunidad» y su equivalente en cada idioma (EN «Hi everyone,» · FR «Bonjour à tous,» · DE «Hallo zusammen,» · IT «Ciao a tutti,» · PT «Olá a todos,» · NL «Hallo allemaal,»). Los moldes de `scripts/productos-digitales/emails/` ya van corregidos; detalle en la skill local `resend-aichef`.
 - Las páginas de agente (8C) incrustarán **vídeos demo de Loom** cuando estén; no bloquean el arranque.
 - Gotcha de `faq.astro`: el campo `a` se pinta como TEXTO PLANO y alimenta el FAQPage; el HTML con enlaces va en `aHtml` (plantilla con backticks). Meter markup en `a` lo escupe literal en la página.
 

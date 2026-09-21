@@ -61,6 +61,15 @@ EN con `--segment d06ed053-… --from "AI Chef Pro <hello@news.aichef.pro>"`, en
 cada idioma (`app.aichef.pro` / `enapp.aichef.pro`; el guard del script no los comprueba, hacer `curl -L`).
 No entran en la cola de 5 días de productos, pero tampoco se mandan el mismo día que uno de ellos.
 
+## 🔴 Saludo: NUNCA «Hola, chef» (John, 2026-09-21)
+
+La lista es transversal: dueños de negocio, managers, panaderos, pasteleros, chocolateros, bartenders y consultores,
+no solo chefs. «Hola, chef» hace que la mitad pase de largo. En TODOS los correos y en TODOS los idiomas el saludo es
+abierto: **«Hola, colegas:» · «Hola, amigos:» · «Hola, comunidad:»** (EN «Hi everyone,» · FR «Bonjour à tous,» ·
+DE «Hallo zusammen,» · IT «Ciao a tutti,» · PT «Olá a todos,» · NL «Hallo allemaal,»). Los moldes de
+`scripts/productos-digitales/emails/` ya lo llevan corregido; al copiar uno, comprobar el saludo. El cuerpo sigue el mismo
+criterio: «profesionales», «chefs, pasteleros, panaderos, gestores…», nunca solo «chefs».
+
 ## Antes de cada envío
 
 Revisar deliverability en resend.com/emails (bounces < 4 %, spam < 0,08 %) — memoria
