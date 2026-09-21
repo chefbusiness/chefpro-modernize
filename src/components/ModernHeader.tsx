@@ -147,13 +147,13 @@ export default function ModernHeader() {
     <div className="sticky top-0 z-50">
     <AnnouncementBar />
     <header className="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+      <div className="container flex h-14 max-w-screen-2xl items-center px-4 sm:px-8">
         <div className="mr-2 2xl:mr-4 flex">
           <a className="mr-4 2xl:mr-6 flex shrink-0 items-center space-x-2" href="/">
             <img 
               src={logoAiChefPro} 
               alt="AI Chef Pro Logo" 
-              className="h-8 w-auto max-w-none shrink-0"
+              className="h-6 sm:h-8 w-auto max-w-none shrink-0"
             />
           </a>
           <NavigationMenu className={`hidden ${currentLanguage === 'es' ? 'min-[1360px]:flex' : 'xl:flex'}`}>
