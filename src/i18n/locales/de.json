@@ -98,7 +98,8 @@
       "Ihr",
       "Ihr"
     ],
-    "v2_social_countries": "aus über 32 Ländern"
+    "v2_social_countries_pre": "aus über",
+    "v2_social_countries": "32 Ländern"
   },
   "notifications": {
     "someone_from": "Jemand aus",

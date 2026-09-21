@@ -98,7 +98,8 @@
       "la tua",
       "il tuo"
     ],
-    "v2_social_countries": "in oltre 32 paesi"
+    "v2_social_countries_pre": "in oltre",
+    "v2_social_countries": "32 paesi"
   },
   "notifications": {
     "someone_from": "Qualcuno da",

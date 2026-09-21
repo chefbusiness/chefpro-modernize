@@ -101,7 +101,8 @@
       "",
       ""
     ],
-    "v2_social_countries": "from 32+ countries"
+    "v2_social_countries_pre": "from",
+    "v2_social_countries": "32+ countries"
   },
   "notifications": {
     "someone_from": "Someone from",
