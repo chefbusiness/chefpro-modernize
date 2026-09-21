@@ -1,0 +1,38 @@
+{
+  "title": "AI Chef Pro überschreitet die Million Anfragen: Was Wir Gelernt Haben",
+  "description": "AI Chef Pro überschreitet eine Million gelöster Anfragen: die meistgenutzten Agenten, sieben KI-Modelle im Vergleich und die Agenten nach der Optimierung.",
+  "alt_destacada": "Professionelle Kochbrigade beim Anrichten am Pass während des Services",
+  "alt_modelos": "Drei Versionen desselben Gerichts nebeneinander am Pass neben einem Tablet",
+  "alt_afinados": "Hände eines Konditors beim Temperieren von Schokolade auf Marmor in einer Backstube",
+  "faq": [
+    {
+      "q": "Was zählt als eine Anfrage bei AI Chef Pro?",
+      "a": "Jedes Mal, wenn Sie einem Agenten eine Aufgabe stellen und eine Antwort erhalten: ein Rezept, eine Kalkulation, eine neu ausbalancierte Speisekarte, ein technisches Datenblatt, einen Businessplan oder eine Servicefrage. Die Million ist die Summe all dieser Anfragen seit der Eröffnung der Plattform, in sieben Sprachen."
+    },
+    {
+      "q": "Wo finde ich den Bereich «KI-Modelle + LLM» und wie vergleiche ich zwei Modelle?",
+      "a": "Im Agentenmenü der Plattform, im Ordner «KI-Modelle + LLM». Jedes Modell ist ein eigenständiger Chat-Agent: Öffnen Sie zwei oder drei in verschiedenen Tabs, fügen Sie dieselbe Anfrage in jeden ein und vergleichen Sie Ansatz, Umfang und Fehler. So sehen Sie am schnellsten, welches Modell zu Ihrer Arbeitsweise passt."
+    },
+    {
+      "q": "Ersetzen die allgemeinen Modelle die spezialisierten Agenten?",
+      "a": "Nein. Die sieben Modelle sind allgemeine Engines, nützlich zum Gegenprüfen von Antworten und für offene Aufgaben. Die spezialisierten Agenten von AI Chef Pro sind mit professionellem Kontext ausgestattet (Ausbeuten, Schwund, Kosten, Vorschriften, Format technischer Datenblätter) und speichern Rezepte und Kalkulationen mit ihrer Struktur zur Neuberechnung. Für die Arbeit mit den Daten Ihrer Küche bleibt der spezialisierte Agent der direkteste Weg."
+    },
+    {
+      "q": "Muss ich etwas tun, um die optimierten Agenten zu nutzen?",
+      "a": "Nichts. Die Optimierung wird direkt im Agenten angewendet: Ihr nächstes Gespräch läuft bereits mit der neuen Version, ohne dass Sie Einstellungen aktivieren oder den Plan wechseln müssen."
+    },
+    {
+      "q": "Sind die sieben Modelle in allen Sprachen verfügbar?",
+      "a": "Der Bereich existiert auf Spanisch, Englisch, Französisch, Deutsch, Italienisch und Portugiesisch mit derselben Auswahl; der OpenAI-Agent heißt je nach Sprache ChatGPT 5 oder ChatGPT 5.5, und GPT-5.6 Luna en español. Auf Niederländisch ist derzeit nur ChatGPT 5 verfügbar."
+    },
+    {
+      "q": "Wie kann ich eine Verbesserung eines Agenten vorschlagen?",
+      "a": "Schreiben Sie uns an info@aichef.pro oder antworten Sie auf den Newsletter mit dem Namen des Agenten und dem, was Ihnen fehlt. Wir lesen alle Rückmeldungen, und die wöchentlichen Änderungen entstehen genau daraus."
+    },
+    {
+      "q": "Hat AI Chef Pro einen kostenlosen Plan?",
+      "a": "Nein. Der Einstieg beginnt ab 10 € pro Monat mit dem Mitglieder-Plan, der 10.000 Credits umfasst und keine Mindestlaufzeit hat. Mit diesem Plan haben Sie bereits Zugang zu den 59 Agenten und zum Modellbereich."
+    }
+  ],
+  "slug": "ai-chef-pro-eine-million-anfragen"
+}

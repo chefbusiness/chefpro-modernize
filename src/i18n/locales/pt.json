@@ -4608,5 +4608,10 @@
     "title": "Os seus agentes já trabalham com as suas ferramentas",
     "sub": "«Manda esta receita pelo Gmail». «Passa esta tabela para o Google Sheets». «Publica esta foto no Instagram». Peça falando: autoriza a conta uma vez e o agente trata do resto.",
     "cta": "Ver as 16 ligações"
+  },
+  "milestone": {
+    "eyebrow": "Marco da comunidade",
+    "text": "receitas, fichas de custo, ementas, fichas técnicas, planos de negócio, documentação, investigação, análises, deep research e dúvidas resolvidas no mundo da hotelaria e da gastronomia profissional.",
+    "note": "E o contador continua a somar todos os dias."
   }
 }

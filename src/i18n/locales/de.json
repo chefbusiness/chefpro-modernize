@@ -4623,5 +4623,10 @@
     "title": "Ihre Agenten arbeiten jetzt mit Ihren Tools",
     "sub": "„Schick dieses Rezept per Gmail.\" „Übertrag diese Tabelle nach Google Sheets.\" „Lad dieses Foto auf Instagram hoch.\" Einfach ansagen: Konto einmal autorisieren – der Agent kümmert sich um den Rest.",
     "cta": "Alle 16 Verbindungen ansehen"
+  },
+  "milestone": {
+    "eyebrow": "Meilenstein der Community",
+    "text": "Rezepte, Kalkulationen, Speisekarten, technische Datenblätter, Businesspläne, Dokumentation, Recherchen, Analysen, Deep Research und gelöste Fragen aus der professionellen Gastronomie und Hotellerie.",
+    "note": "Und der Zähler steigt jeden Tag weiter."
   }
 }

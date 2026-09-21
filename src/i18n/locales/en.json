@@ -4291,5 +4291,10 @@
     "title": "Your agents now work with your tools",
     "sub": "“Send this recipe via Gmail.” “Put this table into Google Sheets.” “Post this photo to Instagram.” Just ask by talking: authorize the account once and the agent takes care of it.",
     "cta": "See the 16 connections"
+  },
+  "milestone": {
+    "eyebrow": "Community milestone",
+    "text": "recipes, recipe costings, menus, spec sheets, business plans, documentation, research, analysis, deep research and questions solved across professional hospitality and gastronomy.",
+    "note": "And the counter keeps climbing every day."
   }
 }

@@ -4318,5 +4318,10 @@
     "title": "Tus agentes ya trabajan con tus herramientas",
     "sub": "«Manda esta receta por Gmail». «Pasa esta tabla a Google Sheets». «Sube esta foto a Instagram». Pídeselo hablando: autorizas la cuenta una vez y el agente se encarga.",
     "cta": "Ver las 16 conexiones"
+  },
+  "milestone": {
+    "eyebrow": "Hito de la comunidad",
+    "text": "recetas, escandallos, cartas, fichas técnicas, planes de negocio, documentación, investigación, análisis, deep research y dudas resueltas en el mundo de la hostelería y la gastronomía profesional.",
+    "note": "Y el contador sigue sumando cada día."
   }
 }

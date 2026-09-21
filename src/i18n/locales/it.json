@@ -4620,5 +4620,10 @@
     "title": "I tuoi agenti lavorano già con i tuoi strumenti",
     "sub": "«Manda questa ricetta via Gmail». «Passa questa tabella su Google Sheets». «Carica questa foto su Instagram». Chiedilo parlando: autorizzi l'account una volta sola e l'agente fa il resto.",
     "cta": "Scopri le 16 connessioni"
+  },
+  "milestone": {
+    "eyebrow": "Traguardo della community",
+    "text": "ricette, food cost, menu, schede tecniche, piani di business, documentazione, ricerche, analisi, deep research e dubbi risolti nel mondo della ristorazione e della gastronomia professionale.",
+    "note": "E il contatore continua a salire ogni giorno."
   }
 }
