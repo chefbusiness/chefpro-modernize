@@ -19,6 +19,14 @@ const FREE_TOOLS_SLUGS: Record<string, string> = {
   nl: 'nl/gratis-tools-restaurant',
 };
 
+// Tienda de productos digitales (2026-09-24, fase 0.C). DUPLICADO a propósito de
+// astro-site/src/lib/tienda.ts (TIENDAS + TIENDA_NOMBRE, fuente canónica): la SPA está en otra
+// raíz y no puede importar de astro-site/. Solo idiomas con tienda ACTIVA; al activar otra
+// tienda, tocar los dos. tienda-gate.py lo cruza.
+const TIENDA_PATHS: Record<string, string> = { es: '/productos-digitales', en: '/en/digital-products' };
+const TIENDA_NOMBRE: Record<string, string> = { es: 'Productos Digitales', en: 'Digital Products' };
+const tiendaHref = (l: string): string | null => TIENDA_PATHS[l] ?? null;
+
 // Landing de integraciones (2026-09-05). DUPLICADO a propósito de
 // astro-site/src/data/integraciones.ts (fuente canónica): la SPA está en otra
 // raíz y no puede importar de astro-site/. Si cambia un slug, tocar los dos.
@@ -390,13 +398,13 @@ export default function ModernFooter() {
               {t('footer.section_herramientas')}
             </h4>
             <ul className="space-y-3 text-sm">
-              {lang === 'es' && (
+              {tiendaHref(lang) && (
                 <li>
                   <a
-                    href="/productos-digitales" target="_blank"
+                    href={tiendaHref(lang) as string} target="_blank"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    Productos Digitales
+                    {TIENDA_NOMBRE[lang]}
                   </a>
                 </li>
               )}

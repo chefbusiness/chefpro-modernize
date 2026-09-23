@@ -26,8 +26,8 @@ export interface Tienda {
 
 export const TIENDAS: Record<Locale, Tienda> = {
   es: { hubPath: '/productos-digitales', segmento: 'productos-digitales', moneda: 'EUR', activa: true },
-  // EN se activa en el slice 0.C, cuando exista el hub /en/digital-products.
-  en: { hubPath: '/en/digital-products', segmento: 'digital-products', moneda: 'USD', activa: false },
+  // EN activa desde la fase 0.C (24-sep-2026): el hub /en/digital-products existe.
+  en: { hubPath: '/en/digital-products', segmento: 'digital-products', moneda: 'USD', activa: true },
   // Reservados (sin fecha). Se fijan ya para que ningún slug nuevo los pise.
   fr: { hubPath: '/fr/produits-numeriques', segmento: 'produits-numeriques', moneda: 'EUR', activa: false },
   de: { hubPath: '/de/digitale-produkte', segmento: 'digitale-produkte', moneda: 'EUR', activa: false },
@@ -42,6 +42,13 @@ export function tiendaHref(lang: Locale | string): string | null {
   const t = TIENDAS[lang as Locale];
   return t && t.activa ? t.hubPath : null;
 }
+
+/** Texto del enlace a la tienda en Header/Footer (y sus gemelos React). Solo idiomas con tienda
+ *  activa; el nombre coincide con el H1/breadcrumb del hub (regla: enlace = nombre del destino). */
+export const TIENDA_NOMBRE: Partial<Record<Locale, string>> = {
+  es: 'Productos Digitales',
+  en: 'Digital Products',
+};
 
 export type TiendaKind = 'landing' | 'access' | 'library';
 

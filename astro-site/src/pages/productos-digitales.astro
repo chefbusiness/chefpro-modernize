@@ -2,8 +2,9 @@
 // /productos-digitales — HUB de productos digitales. Thin wrapper: envuelve el componente
 // ProductosDigitalesHubPage en BaseLayout con el SEO EXACTO de la SPA (ProductosDigitales.tsx).
 //
-// SOLO ES: la SPA hardcodea el Helmet en español y esta ruta NO tiene variantes de idioma
-// → locales={['es']} (BaseLayout emite hreflang es + x-default y nada más). Canonical:
+// Desde la fase 0.C de la tienda internacional (24-sep-2026) tiene gemelo EN, /en/digital-products:
+// locales={['es', 'en']} + alternates recíprocos salidos de lib/tienda.ts (TIENDAS). El resto de
+// idiomas sigue sin tienda y no emite hreflang. Canonical:
 // https://aichef.pro/productos-digitales. Meta robots se OMITE (desviación cross-cutting;
 // se añade en el cutover). NO hay CTA de dinero en el hub (las cards enlazan a las landings)
 // → SIN env vars de Stripe. build format 'file' (astro.config.mjs).
@@ -13,6 +14,7 @@
 // la OG real en prod la sirve la edge function og-meta.ts). Se acepta como en el resto del port.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProductosDigitalesHubPage from '../components/pages/ProductosDigitalesHubPage.astro';
+import { TIENDAS } from '../lib/tienda';
 
 const lang = 'es';
 ---
@@ -24,7 +26,8 @@ const lang = 'es';
   keywords="productos digitales hostelería, prompts IA restaurante, plantilla escandallo excel, plantillas APPCC restaurante, ebook hostelería, herramientas digitales restaurante, food cost excel, seguridad alimentaria hostelería, AI Chef Pro"
   lang={lang}
   basePath="/productos-digitales"
-  locales={['es']}
+  locales={['es', 'en']}
+  alternates={{ es: TIENDAS.es.hubPath, en: TIENDAS.en.hubPath }}
   ogImage="https://aichef.pro/og-productos-digitales.jpg"
 >
   <ProductosDigitalesHubPage />

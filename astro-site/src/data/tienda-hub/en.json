@@ -1,0 +1,145 @@
+{
+  "_nota": "Copy del hub EN (/en/digital-products). Borrador con bridge.py (deepseek-v4-flash, 24-sep-2026) y revisado a mano. Markup: components/TiendaHubPage.astro · tarjetas: data/tienda-hub/en.ts. Sin '€' ni español fuera de la clave 'espanol' (tienda-gate.py).",
+  "seo": {
+    "title": "Digital Products for Restaurants and Chefs | AI Chef Pro",
+    "description": "Restaurant and recipe costing templates for chefs and owners. One-time payment, instant download, lifetime dashboard access. Built by an operator.",
+    "keywords": "food cost template, recipe costing template, restaurant Excel templates, food cost spreadsheet, menu costing template, digital products for restaurants, restaurant templates, HACCP templates, menu engineering template"
+  },
+  "breadcrumb": "Digital Products",
+  "hero": {
+    "eyebrow": "Hospitality digital products",
+    "h1": "Practical restaurant templates and kits built by chefs",
+    "sub": "Excel templates, kits and guides for chefs, restaurant owners and food service teams. Each one is a complete system you can adapt to your country, your menu and the way you work.",
+    "cta": "See the Costing Kit",
+    "cta2": "Products in Spanish"
+  },
+  "first": {
+    "kicker": "First release",
+    "title": "Recipe Costing Kit",
+    "sub": "The Recipe Costing Kit is the first English digital product from AI Chef Pro. It gives you recipe and plate costing templates, food cost percentage per dish, menu pricing, and menu engineering in one workbook.",
+    "bullets": [
+      "Costing templates for Excel and Google Sheets",
+      "Food cost percentage and plate cost per dish",
+      "Menu pricing and menu engineering built in",
+      "Currency, units, and tax set inside the workbook",
+      "No macros, no subscription, instant download"
+    ],
+    "status": "In production · launching soon",
+    "note": "While you wait, check what your dishes really cost with our free tool:",
+    "cta": "View product",
+    "imageAlt": "Recipe costing spreadsheet open on a laptop on a restaurant kitchen pass",
+    "noteCta": "Food Cost Calculator"
+  },
+  "why": {
+    "title": "Why these aren't just templates",
+    "sub": "Free spreadsheets and single files save time for one task; these are complete, supportable systems for the way kitchens actually run.",
+    "items": [
+      {
+        "t": "Complete systems, not single sheets",
+        "d": "Each product is a connected set of spreadsheets plus a guide, not one static file. You get a workflow you can follow from recipe cost to menu price."
+      },
+      {
+        "t": "Built by a kitchen operator",
+        "d": "John Guerrero has 29 years in hospitality kitchens and 15 as a restaurant consultant. The logic comes from real service, not a generic template.",
+        "dHtml": "<a href=\"https://johnguerrero.es\" target=\"_blank\" rel=\"noopener noreferrer author\" class=\"font-semibold text-[#FFD700] hover:underline\">John Guerrero</a> has 29 years in hospitality kitchens and 15 as a restaurant consultant. The logic comes from real service, not a generic template."
+      },
+      {
+        "t": "Adapts to your country",
+        "d": "Currency, sales tax or VAT, and units are settings inside the file. One product works across the US, UK, Canada, and Australia, with local annexes where regulation matters."
+      },
+      {
+        "t": "Lifetime updates and support",
+        "d": "You get instant download and a private dashboard that stays active. Updates are included, and support is there when you need it."
+      }
+    ]
+  },
+  "roadmap": {
+    "title": "What’s next on the English roadmap",
+    "sub": "The English store is new, and each product is built natively for English-speaking markets, not translated.",
+    "items": [
+      {
+        "name": "Inventory Kit",
+        "desc": "Templates and guides for tracking stock, usage, and par levels so you can cut waste and stay prepared."
+      },
+      {
+        "name": "Pro Prompts eBook",
+        "desc": "Ready-to-use AI prompts for menu ideas, recipe development and everyday operational questions."
+      },
+      {
+        "name": "Food Safety & HACCP Pack",
+        "desc": "A HACCP/Codex core with a US FDA Food Code annex and a UK FSA annex for the 14 allergens."
+      },
+      {
+        "name": "Restaurant Operations Checklists",
+        "desc": "Recurring task checklists for cafes, pizzerias, burger joints, bars, bakeries, food trucks, catering, hotels, and more."
+      },
+      {
+        "name": "Staff Management Kit",
+        "desc": "Scheduling and labor planning templates, with notes on US FLSA and UK Working Time rules."
+      },
+      {
+        "name": "Restaurant Financial Plan Kit",
+        "desc": "Profit and loss planning, startup budgets, and break-even tools built for food and beverage operators."
+      }
+    ]
+  },
+  "espanol": {
+    "title": "¿Hablas español?",
+    "sub": "The Spanish-language store already has 50 products for Spanish-speaking hospitality professionals, including the Hispanic workforce in the US and teams in Latin America. Those products are in Spanish, priced in euros, and based on Spanish regulation, so they suit readers who adapt them to their own market.",
+    "cta": "Ver los 50 productos"
+  },
+  "tools": {
+    "title": "Free tools to try before you buy",
+    "sub": "No purchase needed: open them in your browser and get an answer in minutes."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What do I get when I buy a digital product?",
+        "a": "You get the spreadsheets, templates and guide of that product, with instant download and lifetime access to a private dashboard where updates appear at no extra cost. It is a one-time payment, with no subscription, and every product includes a satisfaction guarantee whose exact terms are on its product page."
+      },
+      {
+        "q": "Do the spreadsheets work in Excel and Google Sheets?",
+        "a": "Yes. Every spreadsheet is built to work in Microsoft Excel and Google Sheets with no macros. You can open the same file in either platform and keep all settings working."
+      },
+      {
+        "q": "Do the products work in the US, UK, Canada, and Australia?",
+        "a": "Yes. Currency, sales tax or VAT, and units are settings inside the spreadsheet, so one product serves different countries. Where regulation matters, the food safety pack will include a US FDA Food Code annex and a UK FSA annex for the 14 allergens."
+      },
+      {
+        "q": "How do currency and payment work?",
+        "a": "Products are priced in USD, and checkout shows your local currency in the UK, Canada, and other countries. You can pay by card, Apple Pay, or Google Pay through Stripe."
+      },
+      {
+        "q": "Do I need an AI Chef Pro subscription?",
+        "a": "No. Digital products are a one-time purchase and do not require a subscription to the AI Chef Pro platform. You buy them, download them, and use them on your own."
+      },
+      {
+        "q": "When will the first English product be available?",
+        "a": "The Recipe Costing Kit is in production and launching soon, though we don’t have a date to share yet. Meanwhile, you can use the free Food Cost Calculator on the site to start working on your recipe costs."
+      },
+      {
+        "q": "What about the Spanish-language products?",
+        "a": "The Spanish store already has 50 products for Spanish-speaking hospitality professionals, including the Hispanic workforce in the US and Latin America. They are in Spanish, priced in euros, and based on Spanish regulation, so they suit readers who adapt them to their own market."
+      }
+    ]
+  },
+  "cierre": {
+    "title": "Pair the templates with AI assistance",
+    "sub": "The digital products give you the spreadsheets, kits, and guides. The AI Chef Pro platform adds more than 55 AI agents for menu ideas, allergen checks, profit analysis, and everyday kitchen decisions.",
+    "cta": "View plans and pricing"
+  },
+  "footer": {
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "homeStrip": {
+    "kicker": "New · Digital Products",
+    "title": "Restaurant templates and kits, now in English",
+    "sub": "Excel and Google Sheets tools built by a working chef and consultant: a one-time payment, lifetime access, and settings for your currency, units and tax. The first release is the Recipe Costing Kit.",
+    "cta": "Browse digital products"
+  }
+}

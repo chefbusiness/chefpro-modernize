@@ -3,6 +3,14 @@ import { Button } from '@/components/ui/button';
 import AnnouncementBar from '@/components/AnnouncementBar';
 import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School, Wrench, BookOpen, Blocks } from 'lucide-react';
 
+// Tienda de productos digitales (2026-09-24, fase 0.C). DUPLICADO a propósito de
+// astro-site/src/lib/tienda.ts (TIENDAS + TIENDA_NOMBRE, fuente canónica): la SPA está en otra
+// raíz y no puede importar de astro-site/. Solo idiomas con tienda ACTIVA; al activar otra
+// tienda, tocar los dos. tienda-gate.py lo cruza.
+const TIENDA_PATHS: Record<string, string> = { es: '/productos-digitales', en: '/en/digital-products' };
+const TIENDA_NOMBRE: Record<string, string> = { es: 'Productos Digitales', en: 'Digital Products' };
+const tiendaHref = (l: string): string | null => TIENDA_PATHS[l] ?? null;
+
 // Landing de integraciones (2026-09-05). OJO: esta tabla está DUPLICADA a
 // propósito respecto a astro-site/src/data/integraciones.ts, que es la fuente
 // canónica. La SPA vive en otra raíz y no puede importar de astro-site/, igual
@@ -156,7 +164,7 @@ export default function ModernHeader() {
               className="h-6 sm:h-8 w-auto max-w-none shrink-0"
             />
           </a>
-          <NavigationMenu className={`hidden ${currentLanguage === 'es' ? 'min-[1360px]:flex' : 'xl:flex'}`}>
+          <NavigationMenu className={`hidden ${tiendaHref(currentLanguage) ? 'min-[1360px]:flex' : 'xl:flex'}`}>
             <NavigationMenuList>
               <NavigationMenuItem className="hidden 2xl:block">
                 <NavigationMenuLink
@@ -430,13 +438,13 @@ export default function ModernHeader() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              {currentLanguage === 'es' && (
+              {tiendaHref(currentLanguage) && (
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2"
-                    href="/productos-digitales" target="_blank"
+                    href={tiendaHref(currentLanguage) as string} target="_blank"
                   >
-                    Productos Digitales
+                    {TIENDA_NOMBRE[currentLanguage]}
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               )}
@@ -501,7 +509,7 @@ export default function ModernHeader() {
 
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className={currentLanguage === 'es' ? 'min-[1360px]:hidden' : 'xl:hidden'}>
+                <Button variant="ghost" size="sm" className={tiendaHref(currentLanguage) ? 'min-[1360px]:hidden' : 'xl:hidden'}>
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
@@ -687,14 +695,14 @@ export default function ModernHeader() {
                         <Settings className="h-5 w-5 text-muted-foreground" />
                         {t('nav.precios')}
                       </a>
-                      {currentLanguage === 'es' && (
+                      {tiendaHref(currentLanguage) && (
                         <a
-                          href="/productos-digitales" target="_blank"
+                          href={tiendaHref(currentLanguage) as string} target="_blank"
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
                           <BookOpen className="h-5 w-5 text-muted-foreground" />
-                          Productos Digitales
+                          {TIENDA_NOMBRE[currentLanguage]}
                         </a>
                       )}
                       <a

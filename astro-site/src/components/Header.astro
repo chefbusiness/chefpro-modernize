@@ -5,6 +5,7 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
+import { tiendaHref, TIENDA_NOMBRE } from '../lib/tienda';
 import { appUrl } from '../lib/app-url';
 import { integracionesHref } from '../data/integraciones';
 import { PRICING_PATHS } from '../lib/pricing-path';
@@ -33,8 +34,11 @@ const langHref = (l: Locale) => (l === 'es' ? '/' : `/${l}`);
 // ≤1.210 compacto. Antes aparecía desde md (768 px) y, sin sitio, se encogía el LOGO hasta hacerse
 // invisible (iPad en horizontal, portátiles de 1.366). Por debajo: logo + idioma + login + CTA + ☰.
 // Entre xl y 2xl el menú va compacto y sin «Inicio» (el logo ya lleva a la home).
-const deskNavShow = lang === 'es' ? 'min-[1360px]:flex' : 'xl:flex';
-const deskHide = lang === 'es' ? 'min-[1360px]:hidden' : 'xl:hidden';
+// 24-sep-2026: el item de la tienda es lo que mete a ES por encima de xl, así que cualquier idioma
+// con tienda ACTIVA (hoy también EN, «Digital Products») usa el mismo corte de 1.360 px.
+const menuAncho = lang === 'es' || !!tiendaHref(lang);
+const deskNavShow = menuAncho ? 'min-[1360px]:flex' : 'xl:flex';
+const deskHide = menuAncho ? 'min-[1360px]:hidden' : 'xl:hidden';
 const currentLangName = languages.find((x) => x.code === lang)?.name ?? 'Español';
 const LANG_LABEL: Record<string, string> = { es: 'Idioma', en: 'Language', fr: 'Langue', de: 'Sprache', it: 'Lingua', pt: 'Idioma', nl: 'Taal' };
 const langLabel = LANG_LABEL[lang] ?? LANG_LABEL.es;
@@ -160,6 +164,10 @@ const annHref =
       ? '/en/blog/best-ai-tools-for-chefs-2026'
       : (FREE_TOOLS_HUB[lang] ?? FREE_TOOLS_HUB.es);
 const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
+// Tienda de productos digitales: solo en los idiomas con tienda ACTIVA (lib/tienda.ts); fr nunca
+// enlaza a la tienda ES.
+const tiendaUrl = tiendaHref(lang);
+const tiendaLabel = TIENDA_NOMBRE[lang];
 ---
 
 <div class="sticky top-0 z-50">
@@ -316,9 +324,9 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
               <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2" href={pricingHref}>{t(lang, 'nav.precios')}</a>
             </li>
 
-            {lang === 'es' && (
+            {tiendaUrl && (
               <li>
-                <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2" href="/productos-digitales" target="_blank">Productos Digitales</a>
+                <a class="whitespace-nowrap text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-2.5 2xl:px-3 py-2" href={tiendaUrl} target="_blank">{tiendaLabel}</a>
               </li>
             )}
           </ul>
@@ -467,10 +475,10 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
             {t(lang, 'nav.precios')}
           </a>
 
-          {lang === 'es' && (
-            <a href="/productos-digitales" target="_blank" class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+          {tiendaUrl && (
+            <a href={tiendaUrl} target="_blank" class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
-              Productos Digitales
+              {tiendaLabel}
             </a>
           )}
 

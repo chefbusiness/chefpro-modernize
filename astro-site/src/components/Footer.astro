@@ -3,6 +3,7 @@
 // El newsletter es estático (no wired, igual que el onSubmit no-op de la SPA): un <script> evita el submit.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
+import { tiendaHref, TIENDA_NOMBRE } from '../lib/tienda';
 import { blogHubHref, categoryPath, getCategories, getPublishedPosts, hasBlog, promptHubHref } from '../lib/blog';
 import { integracionesHref } from '../data/integraciones';
 // Helper compartido: la copia local que había aquí sólo mapeaba en/it/fr/de, así
@@ -179,7 +180,7 @@ const blogLinks: FooterLink[] =
       <div>
         <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_herramientas')}</h4>
         <ul class="space-y-3 text-sm">
-          {lang === 'es' && (<li><a href="/productos-digitales" target="_blank" class="text-muted-foreground hover:text-foreground transition-colors">Productos Digitales</a></li>)}
+          {tiendaHref(lang) && (<li><a href={tiendaHref(lang)} target="_blank" class="text-muted-foreground hover:text-foreground transition-colors">{TIENDA_NOMBRE[lang]}</a></li>)}
           <li><a href={usosHub} class="text-primary hover:text-primary/80 transition-colors font-medium">{casosLabel}</a></li>
           {lang === 'es' && (<li><a href="/seo-restaurantes-por-ciudad" class="text-primary hover:text-primary/80 transition-colors font-medium">Recursos por ciudad</a></li>)}
           <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_tools')}</a></li>
