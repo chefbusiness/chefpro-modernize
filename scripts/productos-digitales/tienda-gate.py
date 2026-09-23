@@ -177,6 +177,28 @@ def estatico() -> None:
     if not activas:
         print('ℹ️  ninguna tienda no-ES activa todavía (la EN se activa en el slice 0.C)')
 
+    # 2-bis. Navegación: TIENDA_NOMBRE (tienda.ts) y los mapas DUPLICADOS de los gemelos React
+    # (la SPA no puede importar de astro-site/) == tiendas activas. Si divergen, el header de las
+    # landings de marketing enlaza a una tienda que el Header.astro no conoce, o al revés.
+    txt = TIENDA_TS.read_text(encoding='utf-8')
+    act = {lg: t['hub'] for lg, t in tiendas.items() if t['activa']}
+    mn = re.search(r'export const TIENDA_NOMBRE[^{]*\{(.*?)\};', txt, re.S)
+    nombres = dict(re.findall(r"([a-z]{2}): '([^']+)'", mn.group(1))) if mn else {}
+    if set(nombres) != set(act):
+        mal(f'tienda.ts: TIENDA_NOMBRE {sorted(nombres)} != tiendas activas {sorted(act)}')
+    for tsx in ('src/components/ModernHeader.tsx', 'src/components/ModernFooter.tsx'):
+        src = (REPO / tsx).read_text(encoding='utf-8')
+        mp = re.search(r'const TIENDA_PATHS[^{]*\{([^}]*)\}', src)
+        mnm = re.search(r'const TIENDA_NOMBRE[^{]*\{([^}]*)\}', src)
+        paths = dict(re.findall(r"([a-z]{2}): '([^']+)'", mp.group(1))) if mp else None
+        noms = dict(re.findall(r"([a-z]{2}): '([^']+)'", mnm.group(1))) if mnm else None
+        if paths != act:
+            mal(f'{tsx}: TIENDA_PATHS {paths} != tiendas activas de tienda.ts {act}')
+        elif noms != nombres:
+            mal(f'{tsx}: TIENDA_NOMBRE {noms} != tienda.ts {nombres}')
+        else:
+            bien(f'{tsx}: enlace a la tienda = {sorted(act)} (igual que tienda.ts)')
+
     # 3. Familias con producto vivo fuera de ES
     zona = ZONA_APP.read_text(encoding='utf-8')
     vivos = 0

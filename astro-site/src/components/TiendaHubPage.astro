@@ -1,0 +1,297 @@
+---
+// TiendaHubPage.astro — HUB de la tienda de productos digitales de un idioma que NO es el español
+// (hoy: /en/digital-products). Plan: scripts/productos-digitales/TIENDA-INTERNACIONAL.md §3.8.
+//
+// El hub ES (components/pages/ProductosDigitalesHubPage.astro) es un monolito portado 1:1 de la
+// SPA y NO se toca. Este es su hermano para el resto de idiomas: página autónoma oscura (igual que
+// el hub ES y las landings de producto, sin el Header/Footer del sitio), con el copy en
+// data/tienda-hub/<lang>.json y las tarjetas en data/tienda-hub/<lang>.ts.
+//
+// Reglas que el markup hace cumplir:
+//  · Un producto aparece en la rejilla solo si FAMILIAS (lib/tienda.ts) lo marca vivo en ese
+//    idioma. Si no, sale como «First release» SIN enlace ni precio (no se enlaza un 404).
+//  · Precio solo desde netlify/shared/product-prices.ts (lo mismo que cobra el checkout).
+//  · Sin testimonios, ratings ni aggregateRating (capa comercial honesta, §3.5).
+//  · La sección «¿Hablas español?» va en un bloque data-lang-es + lang="es": es el único sitio
+//    donde puede haber español y «€», y tienda-gate.py lo excluye de sus barridos.
+import Icon from './Icon.astro';
+import { FAMILIAS, tiendaProductoPath, TIENDAS } from '../lib/tienda';
+import { PRODUCT_PRICES } from '../../../netlify/shared/product-prices';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  lang: Locale;
+  copy: any;
+  data: {
+    PRODUCTOS_EN: { familia: string; productId: string; name: string; image: string; icon: string }[];
+    ROADMAP_ICONS_EN: string[];
+    SELECCION_ES: { productId: string; name: string; blurb: string; href: string; image: string }[];
+    HERRAMIENTAS_EN: { title: string; desc: string; href: string; icon: string }[];
+  };
+  dict: any;
+}
+const { lang, copy, data, dict } = Astro.props;
+
+const esVivo = (familia: string) =>
+  !!FAMILIAS.find((f) => f.familia === familia)?.productos[lang]?.vivo;
+const slugDe = (familia: string) => FAMILIAS.find((f) => f.familia === familia)?.productos[lang]?.slug;
+
+const vivos = data.PRODUCTOS_EN.filter((p) => esVivo(p.familia));
+const primero = data.PRODUCTOS_EN.find((p) => !esVivo(p.familia));
+
+const precioUsd = (id: string) => {
+  const v = PRODUCT_PRICES[id]?.usd;
+  return typeof v === 'number' ? `$${v}` : null;
+};
+const precioEur = (id: string) => {
+  const v = PRODUCT_PRICES[id]?.eur;
+  return typeof v === 'number' ? `${v} €` : null;
+};
+
+const homeHref = lang === 'en' ? '/en' : `/${lang}`;
+const hubEs = TIENDAS.es.hubPath;
+---
+
+<div class="min-h-screen bg-[#0a0a0a] text-white">
+  <!-- Banner del SaaS (mismo patrón que el hub ES y las landings) -->
+  <div class="bg-gradient-to-r from-[#FFD700]/10 via-[#FFD700]/5 to-[#FFD700]/10 border-b border-[#FFD700]/20">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
+      <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
+      <p class="text-xs sm:text-sm text-gray-300">
+        <span class="hidden sm:inline">{dict.saasBannerPre}</span><a href={homeHref} class="font-semibold text-[#FFD700] hover:underline">AI Chef Pro</a><span class="hidden sm:inline">{dict.saasBannerPost}</span><span class="sm:hidden">{dict.saasBannerPostMobile}</span>
+      </p>
+      <a href={homeHref} class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+        {dict.saasBannerCta}
+        <Icon name="ArrowRight" class="h-3 w-3" />
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden px-4 pt-6 pb-14 md:pt-8 md:pb-20">
+      <img src="/tienda-en/tienda-en-hero.jpg" alt="" aria-hidden="true" width="1600" height="893" fetchpriority="high"
+           class="absolute inset-0 h-full w-full object-cover opacity-30" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto text-center">
+        <div class="flex justify-center py-6 md:py-8">
+          <a href={homeHref} class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+            <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" width="206" height="36" />
+          </a>
+        </div>
+        <span class="inline-block mt-2 mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
+          {copy.hero.eyebrow}
+        </span>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">{copy.hero.h1}</h1>
+        <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">{copy.hero.sub}</p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <a href={vivos.length ? '#products' : '#first-release'}
+             class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FFD700] px-6 py-3 text-base font-bold text-black hover:bg-[#FFD700]/90 transition-colors">
+            {copy.hero.cta}
+            <Icon name="ArrowRight" class="h-4 w-4" />
+          </a>
+          <a href="#espanol"
+             class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-base font-semibold text-white hover:border-[#FFD700]/40 transition-colors">
+            {copy.hero.cta2}
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos vivos (solo si hay alguno) -->
+    {vivos.length > 0 && (
+      <section id="products" class="px-4 pb-16 md:pb-24">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {vivos.map((p) => (
+            <a href={tiendaProductoPath(lang, slugDe(p.familia) as string, 'landing')} target="_blank" rel="noopener"
+               class="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] hover:border-[#FFD700]/30 hover:bg-white/[0.05] transition-all">
+              <img src={p.image} alt={p.name} loading="lazy" width="1200" height="670" class="aspect-video w-full object-cover" />
+              <div class="flex flex-1 flex-col p-6">
+                <h2 class="text-xl font-bold group-hover:text-[#FFD700] transition-colors">{p.name}</h2>
+                <div class="mt-auto pt-4 flex items-center justify-between">
+                  {precioUsd(p.productId) && <span class="text-2xl font-extrabold text-[#FFD700]">{precioUsd(p.productId)}</span>}
+                  <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#FFD700]">
+                    {copy.first.cta} <Icon name="ArrowRight" class="h-4 w-4" />
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Primer lanzamiento (mientras no esté vivo) -->
+    {primero && (
+      <section id="first-release" class="px-4 pb-16 md:pb-24 scroll-mt-6">
+        <div class="max-w-6xl mx-auto overflow-hidden rounded-3xl border border-[#FFD700]/25 bg-white/[0.03] grid grid-cols-1 lg:grid-cols-2">
+          <img src={primero.image} alt={copy.first.imageAlt} loading="lazy" width="1200" height="670"
+               class="h-full w-full object-cover min-h-[240px]" />
+          <div class="p-6 md:p-10">
+            <span class="text-xs font-semibold uppercase tracking-wider text-[#FFD700]">{copy.first.kicker}</span>
+            <h2 class="mt-2 text-2xl md:text-3xl font-extrabold">{copy.first.title}</h2>
+            <p class="mt-4 text-gray-300 leading-relaxed">{copy.first.sub}</p>
+            <ul class="mt-6 space-y-2.5">
+              {copy.first.bullets.map((b: string) => (
+                <li class="flex items-start gap-2.5 text-sm text-gray-200">
+                  <Icon name="CheckCircle" class="mt-0.5 h-4 w-4 flex-shrink-0 text-[#FFD700]" />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+            <p class="mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-500/15 px-3 py-1 text-sm font-medium text-emerald-300">
+              <Icon name="Clock" class="h-4 w-4" />
+              {copy.first.status}
+            </p>
+            <p class="mt-5 text-sm text-gray-400">
+              {copy.first.note}
+              {' '}<a href="/en/food-cost-calculator-restaurant" class="font-semibold text-[#FFD700] hover:underline">{copy.first.noteCta}</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Por qué -->
+    <section class="px-4 pb-16 md:pb-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-extrabold">{copy.why.title}</h2>
+          <p class="mt-4 text-lg text-gray-400">{copy.why.sub}</p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {copy.why.items.map((x: any, i: number) => (
+            <article class="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFD700]/10 text-[#FFD700]">
+                <Icon name={['Layers', 'ChefHat', 'Globe', 'RefreshCw'][i] ?? 'Sparkles'} class="h-5 w-5" />
+              </span>
+              <h3 class="mt-4 text-lg font-bold">{x.t}</h3>
+              <p class="mt-2 text-sm text-gray-400 leading-relaxed">{x.d}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Hoja de ruta -->
+    <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-16">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-extrabold">{copy.roadmap.title}</h2>
+          <p class="mt-4 text-lg text-gray-400">{copy.roadmap.sub}</p>
+        </div>
+        <ol class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {copy.roadmap.items.map((r: any, i: number) => (
+            <li class="flex items-start gap-4 rounded-2xl border border-dashed border-white/15 bg-white/[0.02] p-5">
+              <span class="inline-flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-white/5 text-[#FFD700]">
+                <Icon name={data.ROADMAP_ICONS_EN[i] ?? 'Package'} class="h-5 w-5" />
+              </span>
+              <div>
+                <h3 class="font-bold">{r.name}</h3>
+                <p class="mt-1 text-sm text-gray-400 leading-relaxed">{r.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <!-- ¿Hablas español? — ÚNICO bloque con español y €, excluido por tienda-gate.py -->
+    <section id="espanol" data-lang-es class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-16 scroll-mt-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-extrabold" lang="es">{copy.espanol.title}</h2>
+          <p class="mt-4 text-lg text-gray-400">{copy.espanol.sub}</p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {data.SELECCION_ES.map((p) => (
+            <a href={p.href} target="_blank" rel="noopener" hreflang="es"
+               class="group flex overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] hover:border-[#FFD700]/30 transition-all">
+              <img src={p.image} alt="" aria-hidden="true" loading="lazy" width="112" height="112" class="h-28 w-28 flex-shrink-0 object-cover" />
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-sm font-bold group-hover:text-[#FFD700] transition-colors" lang="es">{p.name}</h3>
+                <p class="mt-1 text-xs text-gray-400">{p.blurb}</p>
+                {precioEur(p.productId) && <span class="mt-auto pt-2 text-sm font-bold text-[#FFD700]">{precioEur(p.productId)}</span>}
+              </div>
+            </a>
+          ))}
+        </div>
+        <div class="mt-10 text-center">
+          <a href={hubEs} target="_blank" rel="noopener" hreflang="es" lang="es"
+             class="inline-flex items-center justify-center gap-2 rounded-xl border border-[#FFD700]/40 bg-[#FFD700]/10 px-6 py-3 font-semibold text-[#FFD700] hover:bg-[#FFD700]/20 transition-colors">
+            {copy.espanol.cta}
+            <Icon name="ArrowRight" class="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Herramientas gratuitas -->
+    <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-16">
+      <div class="max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-extrabold">{copy.tools.title}</h2>
+          <p class="mt-4 text-lg text-gray-400">{copy.tools.sub}</p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {data.HERRAMIENTAS_EN.map((h) => (
+            <a href={h.href} class="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-5 hover:border-[#FFD700]/30 transition-all">
+              <span class="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-[#FFD700]/10 text-[#FFD700]">
+                <Icon name={h.icon} class="h-5 w-5" />
+              </span>
+              <div>
+                <h3 class="font-bold group-hover:text-[#FFD700] transition-colors">{h.title}</h3>
+                <p class="mt-1 text-sm text-gray-400">{h.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-center text-3xl md:text-4xl font-extrabold">{copy.faq.title}</h2>
+        <div class="mt-10 space-y-3">
+          {copy.faq.items.map((f: any) => (
+            <details class="group rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+                {f.q}
+                <Icon name="ChevronDown" class="h-5 w-5 flex-shrink-0 text-[#FFD700] transition-transform group-open:rotate-180" />
+              </summary>
+              <p class="mt-3 text-gray-400 leading-relaxed">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="px-4 pb-20 border-t border-white/5 pt-16">
+      <div class="max-w-3xl mx-auto text-center rounded-3xl border border-[#FFD700]/20 bg-gradient-to-b from-[#FFD700]/10 to-transparent px-6 py-12">
+        <h2 class="text-3xl md:text-4xl font-extrabold">{copy.cierre.title}</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-300">{copy.cierre.sub}</p>
+        <a href="/en/pricing?utm_source=tienda-en&utm_medium=hub&utm_content=cierre"
+           class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-[#FFD700] px-7 py-3.5 text-base font-bold text-black hover:bg-[#FFD700]/90 transition-colors">
+          {copy.cierre.cta}
+          <Icon name="ArrowRight" class="h-4 w-4" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 px-4 py-8">
+    <div class="max-w-6xl mx-auto flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
+      <p>{dict.copyright}</p>
+      <nav class="flex flex-wrap justify-center gap-x-5 gap-y-2">
+        <a href={homeHref} class="hover:text-gray-300">{dict.homeLabel}</a>
+        <a href={`${homeHref}/blog`} class="hover:text-gray-300">{copy.footer.blog}</a>
+        <a href={`${homeHref}/pricing`} class="hover:text-gray-300">{copy.footer.pricing}</a>
+        <a href={`${homeHref}/terminos`} class="hover:text-gray-300">{copy.footer.terms}</a>
+        <a href={`${homeHref}/privacidad`} class="hover:text-gray-300">{copy.footer.privacy}</a>
+      </nav>
+    </div>
+  </footer>
+</div>
