@@ -134,6 +134,11 @@ la F1 de cada producto frente a Etsy/Gumroad.
 - [ ] Sin reseñas ni ratings inventados.
 - [ ] Payment Link USD con Adaptive Pricing + compra de prueba (email EN, dashboard, descargas).
 - [ ] Tarjeta viva en el hub EN; banners del blog EN re-apuntados; broadcast EN programado.
+- [ ] **Antes de que el producto entre en `PRODUCTS`:** existe `/en/crypto-payment` (lee `?o=` y `&estado=parcial` como
+      `/pago-cripto`) o el producto va en `CRYPTO_PRODUCTS_EXCLUDE`; con `CRYPTO_PRODUCTS=all` el botón cripto aparece
+      solo y sus URLs de vuelta darían 404. `CryptoPayButton.astro` necesita `lang` (hoy tiene copy ES).
+- [ ] Coherencia moneda ↔ idioma: precio `usd` en `product-prices.ts` ⇔ `lang: 'en'` en PRODUCTS (si no, factura en
+      USD con correo y página de estado en español). Entrada también en `admin-generate-access.ts`.
 - [ ] Handoff + memoria + commit con `Via: Claude Code` + push.
 
 ## 7. Log

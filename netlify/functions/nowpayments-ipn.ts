@@ -12,12 +12,14 @@ import {
   esOrderId,
   getOrderWithEtag,
   maskEmail,
+  precioPedido,
   saveOrphan,
   saveRawIpn,
   updateOrder,
   type BlobStore,
   type CryptoOrder,
 } from '../shared/crypto-orders';
+import { emailI18n } from '../shared/email-i18n';
 
 // ════════════════════════════════════════════════════════════════════════════
 // nowpayments-ipn — confirmación de pago de NOWPayments → email de acceso.
@@ -88,11 +90,9 @@ const num = (v: unknown): number | undefined => {
 /** Línea extra del email para las compras cripto: recuerda por escrito la
  *  renuncia al desistimiento que el comprador marcó en el diálogo (spec :173).
  *  Va como `extraHtml` de `sendAccessEmail`, que sin ese argumento emite
- *  exactamente el mismo HTML de siempre (la ruta de Stripe no cambia). */
-const AVISO_CRIPTO = `
-          <p style="color: #666; font-size: 14px; line-height: 1.6;">
-            Compra pagada en criptomoneda. Al solicitar el acceso inmediato al contenido digital renunciaste al derecho de desistimiento de 14 días, tal y como marcaste al pagar. Si necesitas ayuda, escríbenos a <a href="mailto:info@aichef.pro" style="color: #FFD700;">info@aichef.pro</a> con tu número de pedido.
-          </p>`;
+ *  exactamente el mismo HTML de siempre (la ruta de Stripe no cambia). El texto
+ *  vive en netlify/shared/email-i18n.ts (`avisoCripto`), por idioma del producto;
+ *  el español es el literal que estaba aquí, sin tocar un byte. */
 
 /** Lee el pedido con su etag. Se usa también para RELEER cuando una escritura
  *  condicional gana pero la plataforma no devuelve etag, y cuando otro IPN
@@ -344,11 +344,15 @@ export const handler: Handler = async (event) => {
     console.warn(`[nowpayments-ipn] IPN finished pero la API dice «${apiStatus || '?'}» para ${marca} — 500 para que reintenten`);
     return json(500, { error: 'reconfirm_mismatch_retry' });
   }
+  // Moneda e importe ESPERADOS salen del pedido (`precioPedido`): EUR para la
+  // tienda española —idéntico a antes: `priceEur` contra 'eur'— y USD para la
+  // internacional. La API tiene que devolver exactamente los dos.
+  const esperado = precioPedido(pedido);
   const monedaApi = String(apiPago.price_currency || '').toLowerCase();
   const importeApi = num(apiPago.price_amount);
-  if (monedaApi !== 'eur' || importeApi === undefined || importeApi !== pedido.priceEur) {
+  if (monedaApi !== esperado.moneda || importeApi === undefined || importeApi !== esperado.importe) {
     return await anotarYSalir('amount_mismatch', {
-      esperado: `${pedido.priceEur} eur`,
+      esperado: `${esperado.importe} ${esperado.moneda}`,
       recibido: `${importeApi ?? 'null'} ${monedaApi || 'null'}`,
     });
   }
@@ -387,7 +391,7 @@ export const handler: Handler = async (event) => {
   });
 
   try {
-    await sendAccessEmail(pedido.emailNorm, token, pedido.productId, AVISO_CRIPTO);
+    await sendAccessEmail(pedido.emailNorm, token, pedido.productId, emailI18n(PRODUCTS[pedido.productId]?.lang).avisoCripto);
   } catch (err) {
     // Se libera el lock para que el reintento de NOWPayments pueda volver a
     // intentarlo; si no, el pedido quedaría bloqueado 10 minutos por nada.

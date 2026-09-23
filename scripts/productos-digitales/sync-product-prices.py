@@ -24,6 +24,15 @@ por su indentación (no por el primer `price:` del fichero, que también aparece
 `pricing: { ... }` con el descuento tipo '24 EUR') y por su llave de cierre, así nunca cruza
 al bloque del siguiente producto ni confunde el precio de partida con el de oferta.
 
+TIENDA INTERNACIONAL (2026-09-23, fase 0.B): el mapa pasa a `{ eur?: number; usd?: number }`
+y lee además las fichas de las otras tiendas, `astro-site/src/data/productos-<lang>/**/*.ts`
+(hoy solo `productos-en`; mismo tipo que las ES; si el directorio no existe, no hace nada). El
+precio sigue siendo `schema.price`; la MONEDA es la de la tienda a la que pertenece la ficha,
+`TIENDAS[lang].moneda` de `astro-site/src/lib/tienda.ts` — la misma fuente de la que la plantilla
+saca el `priceCurrency` del JSON-LD, así que landing y factura no pueden discrepar. Las fichas ES
+son EUR sin depender de ese fichero. Cada producto lleva UNA sola moneda: `crypto-checkout.ts`
+factura en USD si el producto tiene `usd`, y en EUR si no.
+
 `--check` cruza ADEMÁS contra `src/data/products-catalog.ts` (46 entradas, el catálogo que
 usa `fase8c-libreria-assemble.py` para los banners del blog): su campo `price: '€12'` (a
 veces con coma decimal, p.ej. `'€18,50'` → 18.5) es una copia de precio independiente y
@@ -38,21 +47,49 @@ import glob, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(ROOT, 'netlify', 'shared', 'product-prices.ts')
 CATALOG = os.path.join(ROOT, 'src', 'data', 'products-catalog.ts')
+TIENDA_TS = os.path.join(ROOT, 'astro-site', 'src', 'lib', 'tienda.ts')
 
 # Los únicos 2 productos sin ficha tipada en astro-site/src/data/productos/: viven como
 # JSON-LD a mano dentro de la página/componente. Precio leído de su bloque `offers.price`.
 SPECIAL_PRICES = {
-    'mega-pack-tareas': 89.00,   # astro-site/src/pages/mega-pack-tareas.astro (offers.price)
-    'pro-prompts-ebook': 9.00,   # astro-site/src/components/pages/ProPromptsEbookPage.astro (offers.price)
+    'mega-pack-tareas': ('EUR', 89.00),   # astro-site/src/pages/mega-pack-tareas.astro (offers.price)
+    'pro-prompts-ebook': ('EUR', 9.00),   # astro-site/src/components/pages/ProPromptsEbookPage.astro (offers.price)
 }
+
+# Moneda de la ficha → clave del mapa generado (y `price_currency` de NOWPayments).
+MONEDAS = {'EUR': 'eur', 'USD': 'usd'}
+SIMBOLOS = {'€': 'EUR', '$': 'USD'}
+
+
+def monedas_tiendas():
+    """lang → moneda ('EUR'|'USD') del registro `TIENDAS` de astro-site/src/lib/tienda.ts.
+    {} si el fichero no existe (entonces solo hay tienda española)."""
+    if not os.path.exists(TIENDA_TS):
+        return {}
+    t = open(TIENDA_TS, encoding='utf-8').read()
+    return {lang: mon for lang, mon in re.findall(r"^\s*([a-z]{2}):\s*\{[^}\n]*\bmoneda:\s*'([A-Z]{3})'", t, re.M)}
+
+
+def fichas():
+    """(fichero, moneda) de todas las fichas tipadas: las ES (EUR, sin depender de tienda.ts)
+    y las de cada otra tienda en productos-<lang>/** con la moneda de TIENDAS[lang]
+    (None si tienda.ts no la declara: se aborta antes que adivinar la moneda de un cobro)."""
+    out = [(f, 'EUR') for f in sorted(glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts')))]
+    monedas = monedas_tiendas()
+    for d in sorted(glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos-*'))):
+        lang = os.path.basename(d)[len('productos-'):]
+        for f in sorted(glob.glob(os.path.join(d, '**', '*.ts'), recursive=True)):
+            out.append((f, monedas.get(lang)))
+    return out
 
 
 def ficha_prices():
-    """productId → precio (float), leído del schema.price de cada ficha. Aborta con
-    error claro (fichero:motivo) si alguna ficha no tiene un schema.price numérico."""
+    """productId → (moneda, precio float), leído del schema.price de cada ficha (la moneda,
+    de su tienda). Aborta con error claro (fichero:motivo) si alguna ficha no tiene un
+    schema.price numérico, o si su tienda no tiene moneda declarada."""
     prices = {}
     errors = []
-    for f in sorted(glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts'))):
+    for f, moneda_ficha in fichas():
         if f.endswith('types.ts'):
             continue
         rel = os.path.relpath(f, ROOT)
@@ -80,15 +117,22 @@ def ficha_prices():
         if not price_m:
             errors.append(f'{rel} ({slug}): schema.price ausente o no numérico dentro del bloque schema')
             continue
+        moneda = moneda_ficha
+        if moneda is None:
+            errors.append(f'{rel} ({slug}): su tienda no declara `moneda` en {os.path.relpath(TIENDA_TS, ROOT)}')
+            continue
+        if moneda not in MONEDAS:
+            errors.append(f'{rel} ({slug}): moneda {moneda!r} no soportada (solo {sorted(MONEDAS)})')
+            continue
         if slug in prices:
             errors.append(f'{rel}: slug {slug!r} duplicado (ya lo declaraba otra ficha)')
             continue
-        prices[slug] = float(price_m.group(1))
+        prices[slug] = (moneda, float(price_m.group(1)))
     return prices, errors
 
 
 def catalog_prices():
-    """productId → precio (float) anunciado en src/data/products-catalog.ts (46 entradas,
+    """productId → (moneda, precio float) anunciado en src/data/products-catalog.ts (46 entradas,
     campo `price: '€12'`, a veces con coma decimal: '€18,50' → 18.5). Devuelve (prices, errors);
     errors nunca aborta el script (el catálogo no es la fuente de verdad, solo se contrasta)."""
     prices, errors = {}, []
@@ -104,14 +148,14 @@ def catalog_prices():
             errors.append(f'{rel} ({pid}): no se encuentra el cierre del bloque')
             continue
         block = t[start:start + close_m.start()]
-        price_m = re.search(r"price:\s*'€\s*([\d.,]+)'", block)
+        price_m = re.search(r"price:\s*'([€$])\s*([\d.,]+)'", block)
         if not price_m:
-            errors.append(f'{rel} ({pid}): sin `price: \'€…\'` reconocible')
+            errors.append(f'{rel} ({pid}): sin `price: \'€…\'` (o `\'$…\'`) reconocible')
             continue
         if pid in prices:
             errors.append(f'{rel}: id {pid!r} duplicado')
             continue
-        prices[pid] = float(price_m.group(1).replace(',', '.'))
+        prices[pid] = (SIMBOLOS[price_m.group(1)], float(price_m.group(2).replace(',', '.')))
     return prices, errors
 
 
@@ -130,20 +174,25 @@ def fmt_price(value):
 def render(prices):
     lines = [
         '// GENERADO por scripts/productos-digitales/sync-product-prices.py — NO editar a mano.',
-        '// productId → precio anunciado en la landing (schema.price de la ficha), en EUR. Es el importe con el que',
-        '// crypto-checkout crea la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).',
-        'export const PRODUCT_PRICES: Record<string, { eur: number }> = {',
+        '// productId → precio anunciado en la landing (schema.price de la ficha), en SU moneda: `eur` en la tienda',
+        '// española, `usd` en la internacional (una sola por producto). Es el importe con el que crypto-checkout crea',
+        '// la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).',
+        'export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {',
     ]
     for pid in sorted(prices):
-        lines.append(f"  '{pid}': {{ eur: {fmt_price(prices[pid])} }},")
+        moneda, valor = prices[pid]
+        lines.append(f"  '{pid}': {{ {MONEDAS[moneda]}: {fmt_price(valor)} }},")
     lines.append('};')
     lines.append('')
     return '\n'.join(lines)
 
 
 def parse_existing(content):
-    """productId → precio (string tal cual escrito) del .ts ya publicado, para el diff de --check."""
-    return dict(re.findall(r"^\s*'([a-z0-9-]+)':\s*\{\s*eur:\s*([\d.]+)\s*\},?\s*$", content, re.M))
+    """productId → 'moneda precio' (tal cual escrito) del .ts ya publicado, para el diff de --check."""
+    return {
+        pid: f'{cur} {val}'
+        for pid, cur, val in re.findall(r"^\s*'([a-z0-9-]+)':\s*\{\s*(eur|usd):\s*([\d.]+)\s*\},?\s*$", content, re.M)
+    }
 
 
 def diff_lines(old, new_content):
@@ -188,13 +237,17 @@ def main():
         # anunciar el MISMO precio que la ficha (fuente de verdad = schema.price).
         cat_prices, cat_errors = catalog_prices()
         problems = list(cat_errors)
+        txt = lambda mv: f'{fmt_price(mv[1])} {mv[0]}'
         for pid in sorted(set(prices) | set(cat_prices)):
             if pid not in cat_prices:
-                problems.append(f'{pid}: precio real {fmt_price(prices[pid])} € pero AUSENTE en products-catalog.ts')
+                # Los productos de la tienda internacional pueden no tener banner en el
+                # catálogo del blog: solo se exige presencia a los de la tienda española.
+                if prices[pid][0] == 'EUR':
+                    problems.append(f'{pid}: precio real {txt(prices[pid])} pero AUSENTE en products-catalog.ts')
             elif pid not in prices:
-                problems.append(f'{pid}: products-catalog.ts trae {fmt_price(cat_prices[pid])} € pero no existe como producto real (ni ficha ni SPECIAL_PRICES)')
-            elif abs(prices[pid] - cat_prices[pid]) > 0.005:
-                problems.append(f'{pid}: ficha {fmt_price(prices[pid])} € ≠ products-catalog.ts {fmt_price(cat_prices[pid])} €')
+                problems.append(f'{pid}: products-catalog.ts trae {txt(cat_prices[pid])} pero no existe como producto real (ni ficha ni SPECIAL_PRICES)')
+            elif prices[pid][0] != cat_prices[pid][0] or abs(prices[pid][1] - cat_prices[pid][1]) > 0.005:
+                problems.append(f'{pid}: ficha {txt(prices[pid])} ≠ products-catalog.ts {txt(cat_prices[pid])}')
         if problems:
             print(f'✗ {os.path.relpath(CATALOG, ROOT)} difiere del precio real ({len(problems)} discrepancia(s)):')
             for p in problems:

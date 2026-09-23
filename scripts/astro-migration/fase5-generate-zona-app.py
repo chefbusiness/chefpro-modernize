@@ -170,9 +170,22 @@ def emit(path: pathlib.Path, content: str, changed: list, mismatches: list):
 
 def main():
     reg_src = REG.read_text()
-    entries = [dict(zip(FIELDS, m.groups())) for m in ENTRY_RE.finditer(reg_src)]
+    entries, otros_idiomas = [], []
+    for m in ENTRY_RE.finditer(reg_src):
+        e = dict(zip(FIELDS, m.groups()))
+        # Tienda internacional (2026-09-23): las entradas con `lang` distinto de 'es' NO se
+        # generan aquí. No tienen ruta en src/App.tsx (la SPA es solo ES) y sus páginas
+        # /<lang>/<segmento>/<slug>/access|library son wrappers finos escritos a mano (F3).
+        resto = reg_src[m.end():reg_src.find('\n', m.end())]
+        lang = re.search(r"\blang: '([a-z]{2})'", resto)
+        if lang and lang.group(1) != 'es':
+            otros_idiomas.append(f"{e['productId']} ({lang.group(1)})")
+            continue
+        entries.append(e)
+    if otros_idiomas:
+        print(f"ℹ️  {len(otros_idiomas)} entrada(s) de otras tiendas omitidas: {', '.join(otros_idiomas)}")
     if len(entries) != 50:
-        fail(f"registro: {len(entries)} entradas parseadas (esperado 50)")
+        fail(f"registro: {len(entries)} entradas ES parseadas (esperado 50)")
 
     app_src = APP.read_text()
     changed, mismatches, notes = [], [], []

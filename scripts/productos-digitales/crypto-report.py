@@ -157,6 +157,13 @@ def precio_txt(v):
         return str(v)
 
 
+def precio_pedido_txt(p):
+    """EUR como siempre; los pedidos USD de la tienda internacional con prefijo `$`."""
+    if p.get('currency') == 'usd':
+        return '$' + precio_txt(p.get('priceUsd'))
+    return precio_txt(p.get('priceEur'))
+
+
 def recorta(s, n):
     s = str(s if s is not None else '—')
     return s if len(s) <= n else s[: n - 1] + '…'
@@ -177,7 +184,7 @@ def imprimir_tabla(pedidos, base_url, days, solo_pendientes):
         print(f'{fecha_corta(p.get("createdAt")):10} '
               f'{orderid_corto(p.get("orderId")):11} '
               f'{recorta(p.get("productId"), 32):32} '
-              f'{precio_txt(p.get("priceEur")):>7} '
+              f'{precio_pedido_txt(p):>7} '
               f'{recorta(pais, 5):5} '
               f'{recorta(p.get("status"), 14):14} '
               f'{"sí" if p.get("delivered") else "no":7} '

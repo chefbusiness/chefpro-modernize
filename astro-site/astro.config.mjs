@@ -59,6 +59,12 @@ export default defineConfig({
           // solo aviso. Cazado el 2026-08-27, junto al mismo fallo de patrón
           // en robots.txt, que además bloqueaba los 26 posts de la categoría.
           /^\/[^/]+-(access|library)$/.test(path) ||
+          // Tienda internacional (2026-09-23): gates y dashboards de las tiendas
+          // por idioma van ANIDADOS bajo su hub (/en/digital-products/<slug>/access
+          // y /library). La lista de segmentos ESPEJA `TIENDAS` de
+          // src/lib/tienda.ts (este fichero no puede importarlo); el gate
+          // scripts/productos-digitales/tienda-gate.py comprueba que coinciden.
+          /^\/(en|fr|de|it|pt|nl)\/(digital-products|produits-numeriques|digitale-produkte|prodotti-digitali|produtos-digitais|digitale-producten)\/[^/]+\/(access|library)$/.test(path) ||
           // Fase «pagar con cripto» (2026-09-05): página de vuelta del comprador
           // de NOWPayments (/pago-cripto?o=<pedido>). URL privada de dinero, ya
           // noindex en el HTML; fuera también del sitemap.

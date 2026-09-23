@@ -1,7 +1,8 @@
 // GENERADO por scripts/productos-digitales/sync-product-prices.py — NO editar a mano.
-// productId → precio anunciado en la landing (schema.price de la ficha), en EUR. Es el importe con el que
-// crypto-checkout crea la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).
-export const PRODUCT_PRICES: Record<string, { eur: number }> = {
+// productId → precio anunciado en la landing (schema.price de la ficha), en SU moneda: `eur` en la tienda
+// española, `usd` en la internacional (una sola por producto). Es el importe con el que crypto-checkout crea
+// la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).
+export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'guia-chocolateria-obrador': { eur: 65 },
   'guia-dark-kitchen': { eur: 24 },
   'guia-food-cost-ingenieria-menu': { eur: 55 },
