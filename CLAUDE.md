@@ -509,6 +509,16 @@ y `data/integraciones.ts`.
 - Las páginas de agente (8C) incrustarán **vídeos demo de Loom** cuando estén; no bloquean el arranque.
 - Gotcha de `faq.astro`: el campo `a` se pinta como TEXTO PLANO y alimenta el FAQPage; el HTML con enlaces va en `aHtml` (plantilla con backticks). Meter markup en `a` lo escupe literal en la página.
 
+### 🔴 Otros idiomas = DUPLICAR lo español y adaptar, NUNCA reconstruir (John, 24-sep-2026)
+
+El español lleva **siempre** la delantera: cada producto se construye desde cero **solo en español**. Para inglés y
+para cada idioma futuro se **duplican** su landing, su dashboard y sus ficheros (xlsx, pdf, docx, md…) —y los hubs— y
+se **traducen**, adaptando las variables del mercado nativo (terminología, moneda, impuestos, unidades, normativa o
+anexos, benchmarks, ejemplos). **Diseño, estructura, maquetación y componentes son los mismos**: `cp` del componente
+ES y traducir encima; ninguna plantilla ni página nueva. Si una adaptación obliga a cambiar la estructura, preguntar
+antes. Origen: el hub `/en/digital-products` se hizo con una plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo.
+«Nativo» en `TIENDA-INTERNACIONAL.md` significa adaptado al mercado, **no** rehecho.
+
 ### 🔴 Productos nuevos: POLÍTICA DE 3 FASES + presupuesto proporcional al precio (John, 20-sep-2026)
 
 John delegó la toma de decisiones del proyecto de productos digitales («tú lideras este proyecto conmigo, te delego la
