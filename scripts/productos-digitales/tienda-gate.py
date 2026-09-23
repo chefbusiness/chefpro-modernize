@@ -147,10 +147,10 @@ def estatico() -> None:
     bloques = [b for b in re.split(r'\n(?=User-agent:)', raw) if b.startswith('User-agent:')]
     activas = [lg for lg, t in no_es.items() if t['activa']]
     for lg, t in no_es.items():
-        lineas = [f'Disallow: {t["hub"]}/*/access', f'Disallow: {t["hub"]}/*/library']
+        lineas = [f'Disallow: {t["hub"]}/*/{k}{v}' for k in ('access', 'library') for v in ('$', '/', '?')]
         presentes = [all(l in b.splitlines() for l in lineas) for b in bloques]
         if t['activa'] and not all(presentes):
-            mal(f'robots.txt: tienda {lg} ACTIVA sin sus 2 Disallow en {presentes.count(False)} de {len(bloques)} bloques')
+            mal(f'robots.txt: tienda {lg} ACTIVA sin sus 6 Disallow en {presentes.count(False)} de {len(bloques)} bloques')
             continue
         if not any(presentes):
             continue  # reservada y sin reglas todavía: correcto
@@ -160,10 +160,12 @@ def estatico() -> None:
         fallos = []
         for g in grupos:
             for ag in g.agents:
-                for p in (f'{t["hub"]}/x/access', f'{t["hub"]}/x/library'):
+                for p in (f'{t["hub"]}/x/access', f'{t["hub"]}/x/library', f'{t["hub"]}/x/access/',
+                          f'{t["hub"]}/x/library?a=1'):
                     if rg.can_fetch(grupos, ag, p):
                         fallos.append(f'{ag} puede {p}')
-                for p in (t['hub'], f'{t["hub"]}/x', f'/{lg}/blog/prompt-library-x'):
+                for p in (t['hub'], f'{t["hub"]}/x', f'/{lg}/blog/prompt-library-x',
+                          f'{t["hub"]}/x/accessories', f'{t["hub"]}/x/library-guide'):
                     if not rg.can_fetch(grupos, ag, p):
                         fallos.append(f'{ag} NO puede {p}')
         if fallos:

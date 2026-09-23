@@ -24,6 +24,8 @@
 #
 # Tiendas por idioma (2026-09-23, TIENDA-INTERNACIONAL.md §3): su zona app va
 # ANIDADA bajo el hub del idioma (/en/digital-products/<slug>/access y /library),
+# con las tres terminaciones ($, / y ?) para NO rozar por prefijo un futuro
+# /<slug>/accessories o /<slug>/library-guide (la trampa del 27-ago),
 # no en la raíz, así que no la cubren las reglas de arriba. CADA tienda de idioma
 # que se active añade sus DOS líneas en TODOS los bloques de user-agent
 # (/<lang>/<segmento>/*/access y /*/library, segmento según src/lib/tienda.ts).
@@ -53,8 +55,12 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
-Disallow: /en/digital-products/*/access
-Disallow: /en/digital-products/*/library
+Disallow: /en/digital-products/*/access$
+Disallow: /en/digital-products/*/access/
+Disallow: /en/digital-products/*/access?
+Disallow: /en/digital-products/*/library$
+Disallow: /en/digital-products/*/library/
+Disallow: /en/digital-products/*/library?
 Disallow: /admin/
 
 User-agent: Bingbot
@@ -73,8 +79,12 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
-Disallow: /en/digital-products/*/access
-Disallow: /en/digital-products/*/library
+Disallow: /en/digital-products/*/access$
+Disallow: /en/digital-products/*/access/
+Disallow: /en/digital-products/*/access?
+Disallow: /en/digital-products/*/library$
+Disallow: /en/digital-products/*/library/
+Disallow: /en/digital-products/*/library?
 Disallow: /admin/
 
 User-agent: Twitterbot
@@ -93,8 +103,12 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
-Disallow: /en/digital-products/*/access
-Disallow: /en/digital-products/*/library
+Disallow: /en/digital-products/*/access$
+Disallow: /en/digital-products/*/access/
+Disallow: /en/digital-products/*/access?
+Disallow: /en/digital-products/*/library$
+Disallow: /en/digital-products/*/library/
+Disallow: /en/digital-products/*/library?
 Disallow: /admin/
 
 User-agent: facebookexternalhit
@@ -113,8 +127,12 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
-Disallow: /en/digital-products/*/access
-Disallow: /en/digital-products/*/library
+Disallow: /en/digital-products/*/access$
+Disallow: /en/digital-products/*/access/
+Disallow: /en/digital-products/*/access?
+Disallow: /en/digital-products/*/library$
+Disallow: /en/digital-products/*/library/
+Disallow: /en/digital-products/*/library?
 Disallow: /admin/
 
 User-agent: *
@@ -133,8 +151,12 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
-Disallow: /en/digital-products/*/access
-Disallow: /en/digital-products/*/library
+Disallow: /en/digital-products/*/access$
+Disallow: /en/digital-products/*/access/
+Disallow: /en/digital-products/*/access?
+Disallow: /en/digital-products/*/library$
+Disallow: /en/digital-products/*/library/
+Disallow: /en/digital-products/*/library?
 Disallow: /admin/
 
 Sitemap: https://aichef.pro/sitemap-index.xml
