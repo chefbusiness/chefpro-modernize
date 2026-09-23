@@ -190,6 +190,11 @@ const langPills = ['Español', 'English', 'Français', 'Deutsch', 'Italiano', 'P
 const waPhone = '34744717942';
 const waMessage = encodeURIComponent(ui.whatsappMessage);
 const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+// Texto estático multilínea que antes iba literal: Astro lo emitía como «\nTEXTO\n». Se reproduce
+// igual desde el diccionario. Va en el frontmatter porque el compilador de Astro se lía con
+// backslashes y template literals dentro de las expresiones del template (build roto el 23-sep).
+const nl = (s: string) => '\n' + s + '\n';
+const nlSp = (s: string) => '\n' + s + ' ';
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
@@ -209,7 +214,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <span class="sm:hidden">{ui.saasBannerPostMobile}</span>
       </p>
       <a href={ui.homeHref} class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
-        {`\n${ui.saasBannerCta}\n`}
+        {nl(ui.saasBannerCta)}
         <Icon name="ArrowRight" class="h-3 w-3" />
       </a>
     </div>
@@ -252,7 +257,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div class="flex -space-x-3 justify-center">
           {heroAvatars.map((avatar, i) => (
             <span class="relative flex shrink-0 overflow-hidden rounded-full border-2 border-[#0a0a0a] w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-[#0a0a0a]">
-              <img src={avatar} alt={`${ui.heroAvatarAlt} ${i + 1}`} class="aspect-square h-full w-full object-cover" />
+              <img src={avatar} alt={ui.heroAvatarAlt + ' ' + (i + 1)} class="aspect-square h-full w-full object-cover" />
             </span>
           ))}
         </div>
@@ -536,7 +541,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
               <h3 class="text-white font-semibold text-sm mb-1.5 group-hover:text-[#FFD700] transition-colors">{tool.title}</h3>
               <p class="text-gray-500 text-xs leading-relaxed mb-3">{tool.desc}</p>
               <span class="text-[#FFD700] text-xs font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                {`\n${ui.freeToolsCta} `}<Icon name="ArrowRight" class="w-3 h-3" />
+                {nlSp(ui.freeToolsCta)}<Icon name="ArrowRight" class="w-3 h-3" />
               </span>
             </a>
           </div>
@@ -588,7 +593,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       </div>
       {cryptoEnabled && (
         <p class="text-gray-500 text-sm leading-relaxed -mt-6 mb-10 max-w-2xl mx-auto">
-          {`\n${ui.cryptoRefundNote}\n`}
+          {nl(ui.cryptoRefundNote)}
         </p>
       )}
       <div class="kt-fade" style="transition-delay:150ms">
@@ -703,12 +708,12 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             <a> literal y solo el resto de idiomas lo toma del diccionario (ui.tryCtaHref). */}
         {lang === 'es' ? (
         <a href="https://aichef.pro/precios?utm_source=producto&utm_medium=banner&utm_content=try-platform" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg hover:bg-[#FFD700] hover:text-black transition-all hover:scale-[1.02] active:scale-[0.98]">
-          {`\n${ui.tryCtaLabel}\n`}
+          {nl(ui.tryCtaLabel)}
           <Icon name="ArrowRight" class="w-5 h-5" />
         </a>
         ) : (
         <a href={ui.tryCtaHref} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg hover:bg-[#FFD700] hover:text-black transition-all hover:scale-[1.02] active:scale-[0.98]">
-          {`\n${ui.tryCtaLabel}\n`}
+          {nl(ui.tryCtaLabel)}
           <Icon name="ArrowRight" class="w-5 h-5" />
         </a>
         )}
@@ -737,7 +742,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             <input type="email" name="email" placeholder={ui.alreadyBoughtPlaceholder} required class="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-[#FFD700]/40" />
             <button type="submit" data-ab-submit class="px-4 py-2 bg-white/10 border border-white/10 text-gray-300 text-sm font-medium rounded-lg hover:bg-white/15 hover:text-white transition-all disabled:opacity-50 flex items-center gap-2">
               <Icon name="Mail" class="w-4 h-4" />
-              {`\n${ui.alreadyBoughtSubmit}\n`}
+              {nl(ui.alreadyBoughtSubmit)}
             </button>
           </form>
           <div data-ab-success class="hidden items-center justify-center gap-2 text-emerald-400 text-sm">
