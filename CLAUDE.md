@@ -517,7 +517,7 @@ se **traducen**, adaptando las variables del mercado nativo (terminología, mone
 anexos, benchmarks, ejemplos). **Diseño, estructura, maquetación y componentes son los mismos**: `cp` del componente
 ES y traducir encima; ninguna plantilla ni página nueva. Si una adaptación obliga a cambiar la estructura, preguntar
 antes. Origen: el hub `/en/digital-products` se hizo con una plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo.
-«Nativo» en `TIENDA-INTERNACIONAL.md` significa adaptado al mercado, **no** rehecho.
+**Definición de «nativo» (John, 24-sep-2026):** que el producto esté **traducido al idioma en el que queremos que esté disponible**, con naturalidad. NO significa construir componentes, hooks ni páginas nuevas, ni reinventar la rueda.
 
 ### 🔴 Productos nuevos: POLÍTICA DE 3 FASES + presupuesto proporcional al precio (John, 20-sep-2026)
 
