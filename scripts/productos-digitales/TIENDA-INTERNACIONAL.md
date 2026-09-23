@@ -99,7 +99,7 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
 7. **Navegación:** enlace a la tienda en **4 ficheros** (`Header.astro`, `Footer.astro`, `ModernHeader.tsx`,
    `ModernFooter.tsx`) vía `tiendaHref(lang)`, solo donde haya tienda activa, con `target="_blank"` y midiendo el ancho
    del menú EN.
-8. **Hub EN = componente nuevo `TiendaHubPage.astro`**, dirigido por copy JSON y con tarjetas leídas del registro
+8. ~~**Hub EN = componente nuevo `TiendaHubPage.astro`**~~ **REVOCADO por John el 24-sep (ver 0.C bis)**, dirigido por copy JSON y con tarjetas leídas del registro
    (patrón `IntegracionesPage.astro`). El monolito ES (`ProductosDigitalesHubPage.astro`) **no se toca**; solo gana
    `alternates` recíprocos. Secciones: productos EN vivos · «Coming in English» (hoja de ruta) · «¿Hablas español?»
    hacia los 50 productos ES (mercado hispano de EE. UU.) · FAQ + schema · buscador (`normalizar-busqueda.ts` +
@@ -119,6 +119,12 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
   (bridge.py revisado → `data/tienda-hub/en.json`), imágenes (Nano Banana 2), `TIENDAS.en.activa`, enlace «Digital
   Products» en los 4 ficheros de navegación y `TiendaStrip.astro` en la portada EN. **Buscador del hub aplazado** hasta
   que haya ≥ 6 productos EN (con 0-1 no aporta).
+- **0.C bis — hub EN = COPIA del hub ES** (24-sep, orden de John): `components/pages/DigitalProductsHubPage.astro` es
+  el gemelo traducido de `ProductosDigitalesHubPage.astro` (mismas secciones, clases, imágenes y JS de filtros,
+  «Load more» y buscador; **cualquier cambio de diseño se replica en los dos**). Las 50 tarjetas salen «Coming soon
+  in English», sin precio ni enlace, hasta que su familia tenga `en.vivo: true` en `FAMILIAS` (entonces: enlace a la
+  landing EN + precio USD de `product-prices.ts`). Borrados `TiendaHubPage.astro`, `data/tienda-hub/en.ts` y
+  `public/tienda-en/recipe-costing-kit-card.jpg`; de `data/tienda-hub/en.json` solo se usa `homeStrip` (TiendaStrip).
 
 ### Por producto — política de 3 fases (F1 fundamentos · F2 entregables · F3 lanzamiento)
 

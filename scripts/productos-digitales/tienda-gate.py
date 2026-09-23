@@ -307,6 +307,10 @@ def revisar_texto(tag: str, html: str) -> None:
         mal(f'{tag}: carácter no latino {m.group(0)!r} → …{contexto(txt, m.start())}…')
     if '"priceCurrency":"EUR"' in html:
         mal(f'{tag}: JSON-LD con priceCurrency EUR en una tienda no-ES')
+    # Sin compradores en la tienda no-ES todavía: ningún rating en el schema (el SoftwareApplication
+    # global del layout lleva uno; el hub EN pasa omitGlobalApp para no heredarlo).
+    if 'aggregateRating' in html:
+        mal(f'{tag}: JSON-LD con aggregateRating en una tienda no-ES')
 
 
 def hreflang(html: str) -> dict[str, str]:
