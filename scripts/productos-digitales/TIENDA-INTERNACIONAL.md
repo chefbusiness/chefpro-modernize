@@ -4,6 +4,23 @@
 > forma progresiva, fr/de/it/pt/nl: los idiomas en los que ya viven la plataforma y las landings principales.
 > Leer este documento ENTERO antes de tocar cualquier pieza de la tienda en otro idioma.
 
+## 0. Nomenclatura (John, 24-sep-2026)
+
+«**Tienda internacional**» es el conjunto; cada idioma es **su propia tienda internacional**, y se nombra así en docs,
+handoffs, memorias, commits y PR:
+
+| Tienda | Hub | Estado |
+|---|---|---|
+| Tienda internacional en inglés | `/en/digital-products` | en marcha |
+| Tienda internacional en francés | `/fr/produits-numeriques` | pendiente |
+| Tienda internacional en alemán | `/de/digitale-produkte` | pendiente |
+| Tienda internacional en italiano | `/it/prodotti-digitali` | pendiente |
+| Tienda internacional en portugués | `/pt/produtos-digitais` | pendiente |
+| Tienda internacional en neerlandés | `/nl/digitale-producten` | pendiente |
+
+Bélgica no tiene idioma propio: la cubren la tienda en neerlandés (Flandes) y la tienda en francés (Valonia y Bruselas).
+Todas nacen igual: **duplicando lo español y traduciéndolo** (§1).
+
 ## 1. Decisiones de John (23-sep-2026)
 
 | Tema | Decisión |
@@ -160,7 +177,7 @@ la F1 de cada producto frente a Etsy/Gumroad.
   enlace ni precio: la tarjeta pasa sola a la rejilla cuando `FAMILIAS` lo marque `vivo: true` (y su precio `usd` exista
   en `product-prices.ts`, o saldrá sin precio). Lecciones:
   - **`BaseLayout` emite por defecto un `SoftwareApplication` con ofertas en EUR y `aggregateRating` 4,8.** Toda página
-    de la tienda EN necesita `omitGlobalApp`, o viola la capa comercial honesta (§3.5) y `tienda-gate --base` cae por «EUR».
+    de la Tienda internacional en inglés necesita `omitGlobalApp`, o viola la capa comercial honesta (§3.5) y `tienda-gate --base` cae por «EUR».
   - **El item de la tienda en el menú es lo que empuja a un idioma por encima de `xl`.** Header.astro y ModernHeader.tsx
     muestran el menú completo desde 1.360 px en todo idioma con tienda activa (antes solo ES).
   - **La SPA no importa de `astro-site/`:** el mapa de la tienda va duplicado en `ModernHeader/ModernFooter.tsx`
