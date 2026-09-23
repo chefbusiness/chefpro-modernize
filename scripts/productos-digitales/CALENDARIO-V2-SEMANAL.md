@@ -42,8 +42,9 @@ duplicidad **se disuelve sola** con la decisión 2.
 ### 3. Después del español: los mismos productos NATIVOS en inglés
 
 Cerrado el catálogo ES, se rehacen todos en **inglés nativo** (no traducción: normativa, fiscalidad y benchmarks son del
-mercado), en la misma tienda, bajo `/en/`. Después, otros idiomas. Clientes ya los están pidiendo. **No se arranca hasta
-cerrar el ES.**
+mercado), en la misma tienda, bajo `/en/`. Después, otros idiomas. Clientes ya los están pidiendo. ~~No se arranca hasta
+cerrar el ES.~~ **DEROGADO por John el 2026-09-23: el frente EN arranca ya, en ROTACIÓN DE 3 SESIONES (v2.0 ES → producto
+nuevo ES → producto EN).** Doc canónico: `scripts/productos-digitales/TIENDA-INTERNACIONAL.md`.
 
 ---
 
