@@ -1,5 +1,6 @@
 import type { Handler } from '@netlify/functions';
 import { validatePurchase } from '../shared/purchase-validation';
+import { emailI18n, type TiendaLang } from '../shared/email-i18n';
 
 // ── Product config ──────────────────────────────────────────────
 interface ProductConfig {
@@ -8,6 +9,9 @@ interface ProductConfig {
   emailTitle: string;
   emailBody: string;
   emailCta: string;
+  /** Idioma de la tienda (2026-09-23). Ausente = 'es'. Elige los textos fijos del
+   *  email (netlify/shared/email-i18n.ts); los de arriba ya van en ese idioma. */
+  lang?: TiendaLang;
 }
 
 export const PRODUCTS: Record<string, ProductConfig> = {
@@ -485,7 +489,7 @@ export async function sendAccessEmail(email: string, token: string, productId: s
             </a>
           </div>${extraHtml}
           <p style="color: #666; font-size: 14px; line-height: 1.6;">
-            Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
+            ${emailI18n(config.lang).guardaEmail}
           </p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
           <p style="color: #999; font-size: 12px;">

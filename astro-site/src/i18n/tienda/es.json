@@ -1,0 +1,90 @@
+{
+  "_nota": "Diccionario de interfaz de las plantillas de la TIENDA (hoy: KitExcelLandingPage). Textos copiados VERBATIM de la plantilla ES: el HTML de las landings ES tiene que salir byte a byte identico, asi que NO se corrigen aqui tildes ni estilo (algunos textos de la linea van sin tildes a proposito). Los 'Default' solo se usan si el data file del producto no trae su propia variante.",
+  "homeHref": "/",
+  "saasBannerPre": "Estos productos digitales complementan ",
+  "saasBannerPost": " — el SaaS de IA para hostelería con +55 aplicaciones",
+  "saasBannerPostMobile": " — SaaS de IA para hostelería",
+  "saasBannerCta": "Descubrir",
+  "hubBackLabel": "← Productos Digitales",
+  "homeLabel": "Inicio",
+  "heroAvatarAlt": "Profesional",
+  "testimonialsHeadingPre": "Lo Que Dicen los ",
+  "testimonialsHeadingGold": "Profesionales",
+  "authorKicker": "Creado por",
+  "authorBadgesDefault": [
+    "Consultor Gastronómico desde 2010",
+    "En cocina desde los 17 años"
+  ],
+  "bonusValuePrefix": "Valor: ",
+  "freeToolsBadge": "Bonus extra incluido",
+  "freeToolsHeadingPre": "8 Herramientas Profesionales ",
+  "freeToolsHeadingGold": "Gratuitas",
+  "freeToolsSubtitle": "Con tu compra accedes también a nuestras herramientas profesionales para hostelería. Úsalas directamente desde tu dashboard o desde aquí.",
+  "freeToolsCta": "Usar gratis",
+  "freeTools": [
+    {
+      "title": "Calculadora Food Cost",
+      "desc": "Calcula el coste real de cada plato al céntimo",
+      "href": "/calculadora-food-cost-restaurante"
+    },
+    {
+      "title": "Detector Alérgenos",
+      "desc": "Identifica alérgenos automáticamente en tus recetas",
+      "href": "/detector-alergenos-restaurante"
+    },
+    {
+      "title": "Calendario Contenidos",
+      "desc": "Plan de contenido mensual para redes sociales",
+      "href": "/calendario-contenidos-restaurante"
+    },
+    {
+      "title": "Simulador Rentabilidad",
+      "desc": "Proyecta ingresos, costes y beneficio neto",
+      "href": "/simulador-rentabilidad-restaurante"
+    },
+    {
+      "title": "Generador Textos Carta",
+      "desc": "Descripciones irresistibles para tu menú",
+      "href": "/generador-textos-carta-restaurante"
+    },
+    {
+      "title": "Test Digitalización",
+      "desc": "Evalúa el nivel digital de tu restaurante",
+      "href": "/test-digitalizacion-restaurante"
+    },
+    {
+      "title": "Calculadora Brigada",
+      "desc": "Personal óptimo según tu volumen de servicio",
+      "href": "/calculadora-brigada-restaurante"
+    },
+    {
+      "title": "Generador Menú Degustación",
+      "desc": "Crea menús degustación con IA en segundos",
+      "href": "/generador-menu-degustacion"
+    }
+  ],
+  "guaranteeHeadingPreDefault": "Garantía de Satisfacción ",
+  "cryptoRefundNote": "Si pagas con criptomonedas, la devolución se gestiona manualmente y en la misma moneda y red del pago.",
+  "faqHeadingPre": "Preguntas ",
+  "faqHeadingGold": "Frecuentes",
+  "worldwideTitle": "Compra desde cualquier parte del mundo",
+  "worldwideText": "Productos digitales en español con descarga inmediata. Paga con tarjeta, Apple Pay o Google Pay desde España, México, Colombia, Argentina, Chile, EE.UU. o cualquier otro país.",
+  "tryKicker": "¿Aún no conoces la plataforma?",
+  "tryHeadingPre": "Prueba AI Chef Pro ",
+  "tryHeadingGold": "desde 10 €",
+  "tryText1": "La suite de IA más completa para hostelería y restauración. Disponible en 7 idiomas.",
+  "tryText2": "10.000 créditos al mes con el plan Miembro. Sin permanencia.",
+  "tryCtaHref": "https://aichef.pro/precios?utm_source=producto&utm_medium=banner&utm_content=try-platform",
+  "tryCtaLabel": "Empieza desde 10 €/mes",
+  "copyright": "© 2026 AI Chef Pro · Todos los derechos reservados",
+  "alreadyBoughtHelp": "Introduce tu email de compra y te enviaremos el enlace de acceso",
+  "alreadyBoughtPlaceholder": "Tu email de compra",
+  "alreadyBoughtSubmit": "Reenviar acceso",
+  "alreadyBoughtSuccess": "Enlace de acceso enviado a tu email",
+  "alreadyBoughtError": "No encontramos una compra con ese email. ¿Usaste otro?",
+  "whatsappMessage": "Hola, necesito ayuda con mi compra en AI Chef Pro. ",
+  "whatsappAriaLabel": "Soporte por WhatsApp",
+  "whatsappTooltip": "¿Problemas con tu compra? Escríbenos",
+  "stickyCtaV1": "COMPRAR AHORA",
+  "stickyCtaV2": "COMPRAR"
+}

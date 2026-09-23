@@ -22,6 +22,13 @@
 # ella la cobertura es total y —comprobado sobre las 1.220 URLs del dist— sigue
 # sin bloquear ni una URL pública.
 #
+# Tiendas por idioma (2026-09-23, TIENDA-INTERNACIONAL.md §3): su zona app va
+# ANIDADA bajo el hub del idioma (/en/digital-products/<slug>/access y /library),
+# no en la raíz, así que no la cubren las reglas de arriba. CADA tienda de idioma
+# que se active añade sus DOS líneas en TODOS los bloques de user-agent
+# (/<lang>/<segmento>/*/access y /*/library, segmento según src/lib/tienda.ts).
+# Gate: python3 scripts/productos-digitales/tienda-gate.py
+#
 # Segunda capa (la que de verdad protege): las 88 llevan `noindex` en el HTML y
 # están excluidas del sitemap por el filtro de astro.config.mjs.
 #
@@ -46,6 +53,8 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
+Disallow: /en/digital-products/*/access
+Disallow: /en/digital-products/*/library
 Disallow: /admin/
 
 User-agent: Bingbot
@@ -64,6 +73,8 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
+Disallow: /en/digital-products/*/access
+Disallow: /en/digital-products/*/library
 Disallow: /admin/
 
 User-agent: Twitterbot
@@ -82,6 +93,8 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
+Disallow: /en/digital-products/*/access
+Disallow: /en/digital-products/*/library
 Disallow: /admin/
 
 User-agent: facebookexternalhit
@@ -100,6 +113,8 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
+Disallow: /en/digital-products/*/access
+Disallow: /en/digital-products/*/library
 Disallow: /admin/
 
 User-agent: *
@@ -118,6 +133,8 @@ Disallow: /plan-*-access
 Disallow: /plan-*-library
 Disallow: /pro-*-access
 Disallow: /pro-*-library
+Disallow: /en/digital-products/*/access
+Disallow: /en/digital-products/*/library
 Disallow: /admin/
 
 Sitemap: https://aichef.pro/sitemap-index.xml

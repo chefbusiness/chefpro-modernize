@@ -23,6 +23,14 @@ import Icon from '../Icon.astro';
 import CryptoPayButton from '../CryptoPayButton.astro';
 import { cryptoEnabledFor } from '../../lib/crypto-checkout';
 import { PRODUCTOS_ZONA_APP } from '../../lib/zona-app';
+// Tienda internacional (TIENDA-INTERNACIONAL.md §3): la plantilla es la MISMA para todos los
+// idiomas; lo que cambia es `lang` → diccionario de interfaz + rutas + moneda del registro.
+// Condición dura: con lang 'es' el HTML sale byte a byte idéntico al de antes (tienda-gate.py
+// --es-identico). Por eso los textos de es.json son VERBATIM, quirks incluidos.
+import { TIENDAS, tiendaProductoPath } from '../../lib/tienda';
+import uiEs from '../../i18n/tienda/es.json';
+import uiEn from '../../i18n/tienda/en.json';
+import type { Locale } from '../../i18n/config';
 
 interface Props {
   data: KitExcelData;
@@ -30,10 +38,18 @@ interface Props {
    *  acceso ESTÁTICO —import.meta.env.VITE_STRIPE_PAYMENT_LINK_<X> || '#comprar'— para que
    *  Vite lo inline en build (el acceso dinámico import.meta.env[clave] NO es fiable). */
   stripeLink: string;
+  /** Idioma de la tienda. Default 'es' (las 5 landings ES no lo pasan). */
+  lang?: Locale;
 }
-const { data, stripeLink } = Astro.props;
+const { data, stripeLink, lang = 'es' } = Astro.props;
 
-const canonical = `https://aichef.pro/${data.slug}`;
+// Diccionario de interfaz: los idiomas sin diccionario propio caen al ES.
+const UI: Partial<Record<Locale, typeof uiEs>> = { es: uiEs, en: uiEn };
+const ui = UI[lang] ?? uiEs;
+const tienda = TIENDAS[lang] ?? TIENDAS.es;
+const landingPath = tiendaProductoPath(lang, data.slug, 'landing');
+
+const canonical = `https://aichef.pro${landingPath}`;
 
 // ---- Segunda puerta de pago (cripto) ----
 // El nombre que ve el comprador en el diálogo de pago es el NOMBRE CORTO del registro de la
@@ -50,10 +66,10 @@ const cryptoEnabled = cryptoEnabledFor(data.slug);
 
 // Los dos chips grises del AuthorSection. Default = variante acentuada (escandallos/appcc);
 // inventario/gestion/plan pasan su variante VERBATIM vía data.authorBadges.
-const authorBadges = data.authorBadges ?? ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'];
+const authorBadges = data.authorBadges ?? ui.authorBadgesDefault;
 
 // Heading de garantía antes del gold "100%" (acentuado por defecto = escandallos/appcc).
-const guaranteeHeadingPre = data.guarantee.headingPre ?? 'Garantía de Satisfacción ';
+const guaranteeHeadingPre = data.guarantee.headingPre ?? ui.guaranteeHeadingPreDefault;
 
 // Tono del badge del hero (paridad: gold escandallos/appcc, red inventario/gestion/plan).
 const heroBadgeClass = data.hero.badgeTone === 'red'
@@ -79,7 +95,7 @@ const productSchema = {
   offers: {
     '@type': 'Offer',
     url: canonical,
-    priceCurrency: 'EUR',
+    priceCurrency: tienda.moneda,
     price: data.schema.price,
     priceValidUntil: data.schema.priceValidUntil,
     availability: 'https://schema.org/InStock',
@@ -124,15 +140,18 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: 'https://aichef.pro' },
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: lang === 'es' ? 'https://aichef.pro' : `https://aichef.pro${ui.homeHref}` },
     { '@type': 'ListItem', position: 2, name: data.schema.breadcrumbName, item: canonical },
   ],
 };
 
 // ---- Testimonials (paridad TestimonialsMarquee: mid = ceil(len/2)) ----
-const mid = Math.ceil(data.testimonials.items.length / 2);
-const topRow = data.testimonials.items.slice(0, mid);
-const bottomRow = data.testimonials.items.slice(mid);
+// Opcionales (capa comercial honesta): un producto sin compradores reales en su idioma NO trae
+// testimonios, y entonces tampoco se pintan el marquee ni los avatares con estrellas del hero.
+const testimonialItems = data.testimonials?.items ?? [];
+const mid = Math.ceil(testimonialItems.length / 2);
+const topRow = testimonialItems.slice(0, mid);
+const bottomRow = testimonialItems.slice(mid);
 
 // ---- CompatibleAppsMarquee apps (CONSTANTE; apps ×4 para loop). Título/subtítulo → data.compatApps ----
 const apps = [
@@ -148,17 +167,18 @@ const apps = [
 ];
 const appsRepeated = [...apps, ...apps, ...apps, ...apps];
 
-// ---- FreeToolsSection (constante; 8 herramientas) ----
-const freeTools = [
-  { icon: 'Calculator', title: 'Calculadora Food Cost', desc: 'Calcula el coste real de cada plato al céntimo', href: '/calculadora-food-cost-restaurante', color: 'text-green-400' },
-  { icon: 'ShieldAlert', title: 'Detector Alérgenos', desc: 'Identifica alérgenos automáticamente en tus recetas', href: '/detector-alergenos-restaurante', color: 'text-red-400' },
-  { icon: 'Calendar', title: 'Calendario Contenidos', desc: 'Plan de contenido mensual para redes sociales', href: '/calendario-contenidos-restaurante', color: 'text-purple-400' },
-  { icon: 'TrendingUp', title: 'Simulador Rentabilidad', desc: 'Proyecta ingresos, costes y beneficio neto', href: '/simulador-rentabilidad-restaurante', color: 'text-yellow-400' },
-  { icon: 'FileText', title: 'Generador Textos Carta', desc: 'Descripciones irresistibles para tu menú', href: '/generador-textos-carta-restaurante', color: 'text-blue-400' },
-  { icon: 'Smartphone', title: 'Test Digitalización', desc: 'Evalúa el nivel digital de tu restaurante', href: '/test-digitalizacion-restaurante', color: 'text-teal-400' },
-  { icon: 'Users', title: 'Calculadora Brigada', desc: 'Personal óptimo según tu volumen de servicio', href: '/calculadora-brigada-restaurante', color: 'text-orange-400' },
-  { icon: 'Sparkles', title: 'Generador Menú Degustación', desc: 'Crea menús degustación con IA en segundos', href: '/generador-menu-degustacion', color: 'text-indigo-400' },
+// ---- FreeToolsSection (8 herramientas; título/desc/ruta por idioma en el diccionario) ----
+const freeToolsStyle = [
+  { icon: 'Calculator', color: 'text-green-400' },
+  { icon: 'ShieldAlert', color: 'text-red-400' },
+  { icon: 'Calendar', color: 'text-purple-400' },
+  { icon: 'TrendingUp', color: 'text-yellow-400' },
+  { icon: 'FileText', color: 'text-blue-400' },
+  { icon: 'Smartphone', color: 'text-teal-400' },
+  { icon: 'Users', color: 'text-orange-400' },
+  { icon: 'Sparkles', color: 'text-indigo-400' },
 ];
+const freeTools = freeToolsStyle.map((st, i) => ({ ...st, ...ui.freeTools[i] }));
 
 // ---- Hero avatars (constante: /avatars/avatar-1..8.jpg) ----
 const heroAvatars = Array.from({ length: 8 }, (_, i) => `/avatars/avatar-${i + 1}.jpg`);
@@ -168,7 +188,7 @@ const langPills = ['Español', 'English', 'Français', 'Deutsch', 'Italiano', 'P
 
 // WhatsApp (constante)
 const waPhone = '34744717942';
-const waMessage = encodeURIComponent('Hola, necesito ayuda con mi compra en AI Chef Pro. ');
+const waMessage = encodeURIComponent(ui.whatsappMessage);
 const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
 ---
 
@@ -183,13 +203,13 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
     <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
       <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
       <p class="text-xs sm:text-sm text-gray-300">
-        <span class="hidden sm:inline">Estos productos digitales complementan </span>
-        <a href="/" class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
-        <span class="hidden sm:inline"> — el SaaS de IA para hostelería con +55 aplicaciones</span>
-        <span class="sm:hidden"> — SaaS de IA para hostelería</span>
+        <span class="hidden sm:inline">{ui.saasBannerPre}</span>
+        <a href={ui.homeHref} class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
+        <span class="hidden sm:inline">{ui.saasBannerPost}</span>
+        <span class="sm:hidden">{ui.saasBannerPostMobile}</span>
       </p>
-      <a href="/" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
-        Descubrir
+      <a href={ui.homeHref} class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+        {`\n${ui.saasBannerCta}\n`}
         <Icon name="ArrowRight" class="h-3 w-3" />
       </a>
     </div>
@@ -214,23 +234,25 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       <div>
         <nav class="flex justify-center pt-1 mb-2 md:mb-3">
           <div class="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-sm text-xs text-gray-400">
-            <a href="/productos-digitales" class="hover:text-[#FFD700] transition-colors whitespace-nowrap">← Productos Digitales</a>
+            <a href={tienda.hubPath} class="hover:text-[#FFD700] transition-colors whitespace-nowrap">{ui.hubBackLabel}</a>
             <span class="text-white/20" aria-hidden="true">·</span>
-            <a href="/" class="hover:text-[#FFD700] transition-colors">Inicio</a>
+            <a href={ui.homeHref} class="hover:text-[#FFD700] transition-colors">{ui.homeLabel}</a>
           </div>
         </nav>
         <div class="flex justify-center py-6 md:py-8">
-          <a href="/" class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+          <a href={ui.homeHref} class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
             <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" />
           </a>
         </div>
       </div>
 
+      {/* Prueba social (avatares + 5 estrellas): solo si el producto trae testimonios reales. */}
+      {data.testimonials && (
       <div class="flex flex-col items-center gap-2 mb-6">
         <div class="flex -space-x-3 justify-center">
           {heroAvatars.map((avatar, i) => (
             <span class="relative flex shrink-0 overflow-hidden rounded-full border-2 border-[#0a0a0a] w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-[#0a0a0a]">
-              <img src={avatar} alt={`Profesional ${i + 1}`} class="aspect-square h-full w-full object-cover" />
+              <img src={avatar} alt={`${ui.heroAvatarAlt} ${i + 1}`} class="aspect-square h-full w-full object-cover" />
             </span>
           ))}
         </div>
@@ -240,6 +262,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           ))}
         </div>
       </div>
+      )}
 
       <span class={heroBadgeClass}>{data.hero.badge}</span>
 
@@ -290,7 +313,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           productId={data.slug}
           productName={cryptoProductName}
           priceLabel={data.pricing.price}
-          landingPath={`/${data.slug}`}
+          landingPath={landingPath}
           variant="hero"
         />
       </div>
@@ -353,10 +376,11 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
     </div>
   </section>
 
-  {/* ===== 5. TestimonialsMarquee ===== */}
+  {/* ===== 5. TestimonialsMarquee (solo si el data file trae testimonios) ===== */}
+  {data.testimonials && (
   <section class="py-16 md:py-24 overflow-hidden">
     <div class="text-center mb-10 px-4">
-      <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">Lo Que Dicen los <span class="text-[#FFD700]">Profesionales</span></h2>
+      <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">{ui.testimonialsHeadingPre}<span class="text-[#FFD700]">{ui.testimonialsHeadingGold}</span></h2>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto">{data.testimonials.subtitle}</p>
     </div>
     <div class="space-y-4">
@@ -385,6 +409,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       ))}
     </div>
   </section>
+  )}
 
   {/* ===== 6. WhySection ===== */}
   <section class="py-16 md:py-24 px-4 relative overflow-hidden">
@@ -438,7 +463,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
             </div>
           </div>
           <div class="text-center md:text-left">
-            <p class="text-[#FFD700] text-xs font-bold tracking-[0.2em] uppercase mb-2">Creado por</p>
+            <p class="text-[#FFD700] text-xs font-bold tracking-[0.2em] uppercase mb-2">{ui.authorKicker}</p>
             <h3 class="text-white text-xl md:text-2xl font-bold mb-3"><a href="https://johnguerrero.es" target="_blank" rel="noopener noreferrer author" class="hover:underline">Chef John Guerrero</a></h3>
             <p class="text-gray-400 leading-relaxed text-sm md:text-base mb-4">{data.authorBio}</p>
             <div class="flex flex-wrap items-center justify-center md:justify-start gap-3">
@@ -475,7 +500,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
                   <Icon name={b.icon} class="w-5 h-5 text-[#FFD700]" />
                   <h3 class="text-white font-bold text-base">{b.title}</h3>
                 </div>
-                <p class="text-gray-500 text-xs mb-2">Valor: {b.value}</p>
+                <p class="text-gray-500 text-xs mb-2">{ui.bonusValuePrefix}{b.value}</p>
                 <p class="text-gray-400 text-sm leading-relaxed">{b.desc}</p>
               </div>
             </div>
@@ -498,9 +523,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
     <div class="max-w-6xl mx-auto">
       <div class="kt-fade">
         <div class="text-center mb-4">
-          <span class="inline-block mb-4 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold tracking-wider uppercase">Bonus extra incluido</span>
-          <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">8 Herramientas Profesionales <span class="text-[#FFD700]">Gratuitas</span></h2>
-          <p class="text-gray-400 text-lg max-w-3xl mx-auto">Con tu compra accedes también a nuestras herramientas profesionales para hostelería. Úsalas directamente desde tu dashboard o desde aquí.</p>
+          <span class="inline-block mb-4 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold tracking-wider uppercase">{ui.freeToolsBadge}</span>
+          <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">{ui.freeToolsHeadingPre}<span class="text-[#FFD700]">{ui.freeToolsHeadingGold}</span></h2>
+          <p class="text-gray-400 text-lg max-w-3xl mx-auto">{ui.freeToolsSubtitle}</p>
         </div>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
@@ -511,7 +536,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
               <h3 class="text-white font-semibold text-sm mb-1.5 group-hover:text-[#FFD700] transition-colors">{tool.title}</h3>
               <p class="text-gray-500 text-xs leading-relaxed mb-3">{tool.desc}</p>
               <span class="text-[#FFD700] text-xs font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                Usar gratis <Icon name="ArrowRight" class="w-3 h-3" />
+                {`\n${ui.freeToolsCta} `}<Icon name="ArrowRight" class="w-3 h-3" />
               </span>
             </a>
           </div>
@@ -547,7 +572,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         productId={data.slug}
         productName={cryptoProductName}
         priceLabel={data.pricing.price}
-        landingPath={`/${data.slug}`}
+        landingPath={landingPath}
         variant="buybox"
       />
     </div>
@@ -563,7 +588,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       </div>
       {cryptoEnabled && (
         <p class="text-gray-500 text-sm leading-relaxed -mt-6 mb-10 max-w-2xl mx-auto">
-          Si pagas con criptomonedas, la devolución se gestiona manualmente y en la misma moneda y red del pago.
+          {`\n${ui.cryptoRefundNote}\n`}
         </p>
       )}
       <div class="kt-fade" style="transition-delay:150ms">
@@ -583,7 +608,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
   <section class="py-16 md:py-24 px-4">
     <div class="max-w-3xl mx-auto">
       <div class="kt-fade">
-        <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-12">Preguntas <span class="text-[#FFD700]">Frecuentes</span></h2>
+        <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-12">{ui.faqHeadingPre}<span class="text-[#FFD700]">{ui.faqHeadingGold}</span></h2>
       </div>
       <div class="space-y-3">
         {data.faqs.map((faq, i) => (
@@ -638,7 +663,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           productId={data.slug}
           productName={cryptoProductName}
           priceLabel={data.pricing.price}
-          landingPath={`/${data.slug}`}
+          landingPath={landingPath}
           variant="cta"
         />
       </div>
@@ -653,8 +678,8 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           <Icon name="Globe" class="w-7 h-7 text-[#FFD700]" />
         </div>
         <div class="text-center md:text-left">
-          <p class="text-white font-semibold mb-1">Compra desde cualquier parte del mundo</p>
-          <p class="text-gray-400 text-sm leading-relaxed">Productos digitales en español con descarga inmediata. Paga con tarjeta, Apple Pay o Google Pay desde España, México, Colombia, Argentina, Chile, EE.UU. o cualquier otro país.</p>
+          <p class="text-white font-semibold mb-1">{ui.worldwideTitle}</p>
+          <p class="text-gray-400 text-sm leading-relaxed">{ui.worldwideText}</p>
         </div>
       </div>
     </div>
@@ -664,19 +689,29 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
   <section class="py-16 md:py-24 px-4">
     <div class="kt-fade">
       <div class="max-w-4xl mx-auto text-center">
-        <p class="text-gray-400 text-sm tracking-[0.2em] uppercase mb-4">¿Aún no conoces la plataforma?</p>
-        <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 leading-tight">Prueba AI Chef Pro <span class="text-[#FFD700]">desde 10 €</span></h2>
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-2">La suite de IA más completa para hostelería y restauración. Disponible en 7 idiomas.</p>
-        <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-4">10.000 créditos al mes con el plan Miembro. Sin permanencia.</p>
+        <p class="text-gray-400 text-sm tracking-[0.2em] uppercase mb-4">{ui.tryKicker}</p>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 leading-tight">{ui.tryHeadingPre}<span class="text-[#FFD700]">{ui.tryHeadingGold}</span></h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-2">{ui.tryText1}</p>
+        <p class="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-4">{ui.tryText2}</p>
         <div class="flex flex-wrap justify-center gap-2 mb-10">
           {langPills.map((lang) => (
             <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">{lang}</span>
           ))}
         </div>
+        {/* El href lleva `&`: como atributo ESTÁTICO sale literal, pero como expresión Astro lo
+            escapa a `&#38;` y el HTML ES dejaría de ser byte-idéntico. Por eso ES conserva su
+            <a> literal y solo el resto de idiomas lo toma del diccionario (ui.tryCtaHref). */}
+        {lang === 'es' ? (
         <a href="https://aichef.pro/precios?utm_source=producto&utm_medium=banner&utm_content=try-platform" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg hover:bg-[#FFD700] hover:text-black transition-all hover:scale-[1.02] active:scale-[0.98]">
-          Empieza desde 10 €/mes
+          {`\n${ui.tryCtaLabel}\n`}
           <Icon name="ArrowRight" class="w-5 h-5" />
         </a>
+        ) : (
+        <a href={ui.tryCtaHref} target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg hover:bg-[#FFD700] hover:text-black transition-all hover:scale-[1.02] active:scale-[0.98]">
+          {`\n${ui.tryCtaLabel}\n`}
+          <Icon name="ArrowRight" class="w-5 h-5" />
+        </a>
+        )}
       </div>
     </div>
   </section>
@@ -684,7 +719,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
   {/* ===== 16. Footer + AlreadyBought ===== */}
   <footer class="py-8 pb-24 md:pb-8 px-4 border-t border-white/10">
     <div class="max-w-4xl mx-auto text-center">
-      <p class="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Todos los derechos reservados</p>
+      <p class="text-gray-500 text-sm mb-2">{ui.copyright}</p>
       <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
         {data.footerLinks.map((link, i) => (
           <Fragment>
@@ -697,28 +732,28 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       <div class="border-t border-white/10 pt-8 mt-4">
         <div class="text-center">
           <p class="text-white font-semibold text-sm mb-1">{data.alreadyBought.label}</p>
-          <p class="text-gray-500 text-xs mb-3">Introduce tu email de compra y te enviaremos el enlace de acceso</p>
+          <p class="text-gray-500 text-xs mb-3">{ui.alreadyBoughtHelp}</p>
           <form data-ab-form data-ab-product={data.alreadyBought.product} class="flex items-center justify-center gap-2 max-w-sm mx-auto">
-            <input type="email" name="email" placeholder="Tu email de compra" required class="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-[#FFD700]/40" />
+            <input type="email" name="email" placeholder={ui.alreadyBoughtPlaceholder} required class="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-[#FFD700]/40" />
             <button type="submit" data-ab-submit class="px-4 py-2 bg-white/10 border border-white/10 text-gray-300 text-sm font-medium rounded-lg hover:bg-white/15 hover:text-white transition-all disabled:opacity-50 flex items-center gap-2">
               <Icon name="Mail" class="w-4 h-4" />
-              Reenviar acceso
+              {`\n${ui.alreadyBoughtSubmit}\n`}
             </button>
           </form>
           <div data-ab-success class="hidden items-center justify-center gap-2 text-emerald-400 text-sm">
             <Icon name="CheckCircle" class="w-4 h-4" />
-            <span>Enlace de acceso enviado a tu email</span>
+            <span>{ui.alreadyBoughtSuccess}</span>
           </div>
-          <p data-ab-error class="hidden text-red-400 text-xs mt-2">No encontramos una compra con ese email. ¿Usaste otro?</p>
+          <p data-ab-error class="hidden text-red-400 text-xs mt-2">{ui.alreadyBoughtError}</p>
         </div>
       </div>
     </div>
   </footer>
 
   {/* ===== 17. WhatsAppProductSupport (tooltip vía CSS group-hover) ===== */}
-  <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="Soporte por WhatsApp" class="group fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40">
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label={ui.whatsappAriaLabel} class="group fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40">
     <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-3 py-2 whitespace-nowrap transition-all duration-300 opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
-      <span class="text-xs font-medium text-gray-800">¿Problemas con tu compra? Escríbenos</span>
+      <span class="text-xs font-medium text-gray-800">{ui.whatsappTooltip}</span>
       <div class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95"></div>
     </div>
     <div class="relative transition-transform duration-300 hover:scale-110">
@@ -741,14 +776,14 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
         <div>
           <p class="text-white text-sm font-bold">{data.stickyLabel}</p>
         </div>
-        <a href={stripeLink} class="px-6 py-2.5 bg-[#FFD700] text-black font-bold text-sm rounded-lg whitespace-nowrap hover:bg-[#FFD700]/90 transition-all">COMPRAR AHORA</a>
+        <a href={stripeLink} class="px-6 py-2.5 bg-[#FFD700] text-black font-bold text-sm rounded-lg whitespace-nowrap hover:bg-[#FFD700]/90 transition-all">{ui.stickyCtaV1}</a>
       </div>
     </div>
   ) : (
     <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gray-900/95 backdrop-blur-md border-t border-white/10 px-3 py-3">
       <div class="flex items-center justify-between gap-2 max-w-screen-sm mx-auto">
         <p class="text-white text-xs font-bold truncate">{data.stickyLabel}</p>
-        <a href={stripeLink} class="flex-shrink-0 px-5 py-2.5 bg-[#FFD700] text-black font-bold text-sm rounded-lg hover:bg-[#FFD700]/90 transition-all">COMPRAR</a>
+        <a href={stripeLink} class="flex-shrink-0 px-5 py-2.5 bg-[#FFD700] text-black font-bold text-sm rounded-lg hover:bg-[#FFD700]/90 transition-all">{ui.stickyCtaV2}</a>
       </div>
     </div>
   )}

@@ -215,6 +215,9 @@ export const handler: Handler = async (event) => {
     const email = (o: CryptoOrder) => (full ? o.emailNorm : maskEmail(o.emailNorm));
 
     if (qs.format === 'csv') {
+      // Tienda internacional (2026-09-23): la columna `importe_usd` sólo aparece
+      // si en la ventana hay algún pedido en USD; sin ellos el CSV es el de siempre.
+      const hayUsd = pedidos.some((o) => o.currency === 'usd');
       const filas = [
         [
           'fecha',
@@ -230,6 +233,7 @@ export const handler: Handler = async (event) => {
           'pagado',
           'outcome',
           'email',
+          ...(hayUsd ? ['importe_usd'] : []),
         ].join(','),
         ...pedidos.map((o) =>
           [
@@ -246,6 +250,7 @@ export const handler: Handler = async (event) => {
             o.actuallyPaid ?? '',
             o.outcomeAmount ?? '',
             email(o),
+            ...(hayUsd ? [o.priceUsd ?? ''] : []),
           ]
             .map(csv)
             .join(','),
@@ -267,6 +272,7 @@ export const handler: Handler = async (event) => {
     const porPais: Record<string, number> = {};
     let entregados = 0;
     let ingresosEur = 0;
+    let ingresosUsd = 0;
     const conBanderas: unknown[] = [];
     for (const o of pedidos) {
       porEstado[o.status] = (porEstado[o.status] || 0) + 1;
@@ -274,6 +280,7 @@ export const handler: Handler = async (event) => {
         entregados += 1;
         porProducto[o.productId] = (porProducto[o.productId] || 0) + 1;
         ingresosEur += typeof o.priceEur === 'number' ? o.priceEur : 0;
+        ingresosUsd += o.currency === 'usd' && typeof o.priceUsd === 'number' ? o.priceUsd : 0;
       }
       const p = o.country || o.geoCountry || '';
       if (p) porPais[p] = (porPais[p] || 0) + 1;
@@ -294,6 +301,8 @@ export const handler: Handler = async (event) => {
         total: pedidos.length,
         entregados,
         ingresos_eur: Math.round(ingresosEur * 100) / 100,
+        // Sólo si hubo ventas en USD: la respuesta de la tienda española no cambia.
+        ...(ingresosUsd ? { ingresos_usd: Math.round(ingresosUsd * 100) / 100 } : {}),
         por_estado: porEstado,
         por_producto: porProducto,
         por_pais: porPais,
@@ -305,6 +314,7 @@ export const handler: Handler = async (event) => {
           createdAt: o.createdAt,
           productId: o.productId,
           priceEur: o.priceEur,
+          ...(o.currency === 'usd' ? { priceUsd: o.priceUsd, currency: 'usd' } : {}),
           country: o.country || '',
           geoCountry: o.geoCountry || '',
           status: o.status,

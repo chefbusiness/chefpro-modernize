@@ -29,6 +29,12 @@
 //        · 'v2' (resto): px-3 max-w-screen-sm, <p text-xs truncate>, CTA "COMPRAR" (px-5 flex-shrink-0).
 //      → stickyVariant ('v1' | 'v2'). Default template = 'v2'.
 //
+// IDIOMA (2026-09-23): este mismo tipo sirve para los datos de otras tiendas
+// (astro-site/src/data/productos-en/kits/<slug>.ts). Los precios de display (`pricing.*`,
+// `hero.ctaLabel`…) llevan su símbolo tal cual ("$19"); la moneda del JSON-LD la pone la
+// plantilla desde TIENDAS[lang].moneda (src/lib/tienda.ts). Los textos de INTERFAZ fijos de
+// la plantilla viven en astro-site/src/i18n/tienda/<lang>.json, no aquí.
+//
 // NOTA quirk-tildes: inventario / gestion-personal / plan-financiero están redactados
 // mayormente SIN tildes (secciones), pero con MEZCLA (p.ej. sus hero.checkItems SÍ llevan
 // tildes). No hay flag global "tilde-free": cada string se copia VERBATIM tal cual la SPA.
@@ -249,8 +255,11 @@ export interface KitExcelData {
     ctaLabel: string;
   };
 
-  // ---- Testimonials (marquee). El título "Lo Que Dicen los Profesionales" es constante. ----
-  testimonials: {
+  // ---- Testimonials (marquee). El título "Lo Que Dicen los Profesionales" sale del diccionario
+  //      de la tienda (i18n/tienda/<lang>.json). OPCIONAL desde 2026-09-23 (tienda internacional,
+  //      capa comercial honesta): sin testimonios reales en ese idioma se omite y la plantilla
+  //      no pinta ni el marquee ni los avatares con 5 estrellas del hero. Los 5 kits ES lo traen. ----
+  testimonials?: {
     subtitle: string;
     items: KitExcelTestimonial[];
   };

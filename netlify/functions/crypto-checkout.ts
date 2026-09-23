@@ -2,6 +2,7 @@ import type { Handler } from '@netlify/functions';
 import { PRODUCTS } from './verify-purchase';
 import { PRODUCT_PRICES } from '../shared/product-prices';
 import { createInvoice, NowPaymentsError } from '../shared/nowpayments';
+import { tiendaLang, type TiendaLang } from '../shared/email-i18n';
 import {
   abrirLibro,
   createOrder,
@@ -151,7 +152,13 @@ export function cryptoPermitido(
  *  el campo `productLabel` de `astro-site/src/lib/zona-app.ts`. */
 export function productoLabel(productId: string): string {
   const asunto = PRODUCTS[productId]?.emailSubject || '';
-  const limpio = asunto.replace(/^Tu acceso a(?:l| la| los| las)?\s+/i, '').replace(/&amp;/g, '&').trim();
+  // Tienda EN (2026-09-23): «Your access to [the] …». Ningún asunto ES empieza así,
+  // de modo que el segundo replace no toca a los 50 productos españoles.
+  const limpio = asunto
+    .replace(/^Tu acceso a(?:l| la| los| las)?\s+/i, '')
+    .replace(/^Your access to\s+(?:the\s+)?/i, '')
+    .replace(/&amp;/g, '&')
+    .trim();
   return (limpio || productId).slice(0, MAX_DESCRIPCION);
 }
 
@@ -171,9 +178,22 @@ const LANDINGS_IRREGULARES: Record<string, string> = {
 export function landingPath(productId: string): string {
   if (LANDINGS_IRREGULARES[productId]) return LANDINGS_IRREGULARES[productId];
   const acceso = PRODUCTS[productId]?.accessPath || '';
-  const derivada = acceso.replace(/-access$/, '');
+  // ES: `/<slug>-access` → `/<slug>`. Tiendas por idioma (2026-09-23): rutas
+  // anidadas `/en/digital-products/<slug>/access` → `/en/digital-products/<slug>`.
+  // Ningún accessPath ES acaba en `/access`, así que la segunda regla no les afecta.
+  const derivada = acceso.replace(/-access$/, '').replace(/\/access$/, '');
   return derivada || `/${productId}`;
 }
+
+/** Página de estado del pago (success/partially_paid) por idioma de la tienda.
+ *  El español es el de siempre. ⚠️ La página EN (`/en/crypto-payment`) la tiene
+ *  que crear el frontend ANTES de encender cripto en un producto EN. El ancla del
+ *  `cancel_url` sigue siendo `#comprar` en todos: las plantillas se parametrizan,
+ *  no se bifurcan, y el `id="comprar"` del bloque de compra es el mismo. */
+const PAGINA_ESTADO: Record<TiendaLang, string> = {
+  es: '/pago-cripto',
+  en: '/en/crypto-payment',
+};
 
 // ── Origen ──────────────────────────────────────────────────────────────────
 
@@ -317,7 +337,12 @@ export const handler: Handler = async (event) => {
     }
 
     // ── Precio: SÓLO del mapa generado ──────────────────────────────────────
-    const precio = PRODUCT_PRICES[productId]?.eur;
+    // Moneda del producto (2026-09-23): si el mapa trae `usd` (tienda
+    // internacional) la factura se crea en USD; si no, en EUR exactamente como
+    // antes. Un producto nunca lleva las dos: lo garantiza sync-product-prices.py.
+    const precios = PRODUCT_PRICES[productId];
+    const moneda: 'eur' | 'usd' = typeof precios?.usd === 'number' ? 'usd' : 'eur';
+    const precio = moneda === 'usd' ? precios?.usd : precios?.eur;
     if (typeof precio !== 'number' || !Number.isFinite(precio) || precio <= 0) {
       // No debería poder pasar: `sync-product-prices.py --check` exige 48/48
       // contra PRODUCTS. Si pasa, es que se añadió un producto sin regenerar el
@@ -334,8 +359,10 @@ export const handler: Handler = async (event) => {
       productId,
       email: emailBruto,
       emailNorm,
-      priceEur: precio,
-      currency: 'eur',
+      // Misma forma y mismo orden de claves que siempre para EUR (`priceEur`,
+      // `currency: 'eur'`); los USD llevan `priceUsd`. Lectura: `precioPedido()`.
+      ...(moneda === 'usd' ? { priceUsd: precio } : { priceEur: precio }),
+      currency: moneda,
       country,
       geoCountry: paisGeo(event.headers as Record<string, string | undefined>),
       acceptedPolicyAt: ahora,
@@ -357,18 +384,19 @@ export const handler: Handler = async (event) => {
 
     // ── Factura ─────────────────────────────────────────────────────────────
     const base = siteUrl();
+    const paginaEstado = PAGINA_ESTADO[tiendaLang(PRODUCTS[productId].lang)];
     let invoice;
     try {
       invoice = await createInvoice(
         {
           price_amount: precio,
-          price_currency: 'eur',
+          price_currency: moneda,
           order_id: orderId,
           order_description: productoLabel(productId),
           ipn_callback_url: `${base}/.netlify/functions/nowpayments-ipn`,
-          success_url: `${base}/pago-cripto?o=${orderId}`,
+          success_url: `${base}${paginaEstado}?o=${orderId}`,
           cancel_url: `${base}${landingPath(productId)}#comprar`,
-          partially_paid_url: `${base}/pago-cripto?o=${orderId}&estado=parcial`,
+          partially_paid_url: `${base}${paginaEstado}?o=${orderId}&estado=parcial`,
           is_fixed_rate: flag('CRYPTO_FIXED_RATE'),
           is_fee_paid_by_user: flag('CRYPTO_FEE_PAID_BY_USER'),
           // `pay_currency` se omite a propósito: así el comprador elige moneda
@@ -400,7 +428,7 @@ export const handler: Handler = async (event) => {
       console.error(`[crypto-checkout] pedido ${orderId} creado pero no se pudo guardar la invoice:`, err);
     }
 
-    console.log(`[crypto-checkout] pedido ${orderId} · ${productId} · ${precio} EUR · invoice ${pedido.invoiceId ?? '?'}`);
+    console.log(`[crypto-checkout] pedido ${orderId} · ${productId} · ${precio} ${moneda.toUpperCase()} · invoice ${pedido.invoiceId ?? '?'}`);
     return json(200, { url, orderId }, headers);
   } catch (err) {
     console.error('[crypto-checkout] error inesperado:', err);

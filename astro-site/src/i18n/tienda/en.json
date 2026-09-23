@@ -1,0 +1,90 @@
+{
+  "_nota": "Interface dictionary for the STORE templates (today: KitExcelLandingPage). US English. No '€' anywhere: the EN store sells in USD and tienda-gate.py fails on any euro sign. Same keys as es.json.",
+  "homeHref": "/en",
+  "saasBannerPre": "These digital products pair with ",
+  "saasBannerPost": " — the AI platform for hospitality with 55+ tools",
+  "saasBannerPostMobile": " — AI platform for hospitality",
+  "saasBannerCta": "Explore",
+  "hubBackLabel": "← Digital Products",
+  "homeLabel": "Home",
+  "heroAvatarAlt": "Professional",
+  "testimonialsHeadingPre": "Hear From the ",
+  "testimonialsHeadingGold": "Pros",
+  "authorKicker": "Created by",
+  "authorBadgesDefault": [
+    "Restaurant consultant since 2010",
+    "In professional kitchens since 17"
+  ],
+  "bonusValuePrefix": "Value: ",
+  "freeToolsBadge": "Extra bonus included",
+  "freeToolsHeadingPre": "8 Professional Tools, ",
+  "freeToolsHeadingGold": "Free",
+  "freeToolsSubtitle": "Your purchase also unlocks our professional hospitality tools. Use them straight from your dashboard or right here.",
+  "freeToolsCta": "Try it free",
+  "freeTools": [
+    {
+      "title": "Food Cost Calculator",
+      "desc": "Work out the real cost of every dish, down to the cent",
+      "href": "/en/food-cost-calculator-restaurant"
+    },
+    {
+      "title": "Allergen Detector",
+      "desc": "Spot the allergens in your recipes automatically",
+      "href": "/en/restaurant-allergen-detector"
+    },
+    {
+      "title": "Content Calendar",
+      "desc": "A monthly content plan for your social media",
+      "href": "/en/restaurant-content-calendar"
+    },
+    {
+      "title": "Profit Simulator",
+      "desc": "Project revenue, costs and net profit",
+      "href": "/en/restaurant-profit-simulator"
+    },
+    {
+      "title": "Menu Copy Generator",
+      "desc": "Irresistible descriptions for your menu",
+      "href": "/en/restaurant-menu-copy-generator"
+    },
+    {
+      "title": "Digitalization Test",
+      "desc": "See how digital your restaurant really is",
+      "href": "/en/restaurant-digitalization-test"
+    },
+    {
+      "title": "Brigade Calculator",
+      "desc": "The right staffing for your service volume",
+      "href": "/en/restaurant-brigade-calculator"
+    },
+    {
+      "title": "Tasting Menu Generator",
+      "desc": "Build tasting menus with AI in seconds",
+      "href": "/en/tasting-menu-generator"
+    }
+  ],
+  "guaranteeHeadingPreDefault": "Satisfaction Guarantee ",
+  "cryptoRefundNote": "If you pay with crypto, refunds are handled manually and sent in the same coin and network you paid with.",
+  "faqHeadingPre": "Frequently Asked ",
+  "faqHeadingGold": "Questions",
+  "worldwideTitle": "Buy from anywhere in the world",
+  "worldwideText": "Digital products in English with instant download. Pay by card, Apple Pay or Google Pay from the US, the UK, Canada, Australia or anywhere else.",
+  "tryKicker": "New to the platform?",
+  "tryHeadingPre": "Try AI Chef Pro ",
+  "tryHeadingGold": "today",
+  "tryText1": "The most complete AI suite for hospitality and restaurants. Available in 7 languages.",
+  "tryText2": "10,000 credits a month on the Member plan. No commitment.",
+  "tryCtaHref": "https://aichef.pro/en/pricing?utm_source=producto&utm_medium=banner&utm_content=try-platform",
+  "tryCtaLabel": "See plans & pricing",
+  "copyright": "© 2026 AI Chef Pro · All rights reserved",
+  "alreadyBoughtHelp": "Enter the email you used at checkout and we'll send you your access link",
+  "alreadyBoughtPlaceholder": "Your purchase email",
+  "alreadyBoughtSubmit": "Resend access",
+  "alreadyBoughtSuccess": "Access link sent to your email",
+  "alreadyBoughtError": "We couldn't find a purchase with that email. Did you use a different one?",
+  "whatsappMessage": "Hi, I need help with my AI Chef Pro purchase. ",
+  "whatsappAriaLabel": "WhatsApp support",
+  "whatsappTooltip": "Trouble with your purchase? Message us",
+  "stickyCtaV1": "BUY NOW",
+  "stickyCtaV2": "BUY NOW"
+}

@@ -14,6 +14,7 @@ Uso:
   python3 scripts/productos-digitales/sync-payment-links.py          # regenera el .ts
   python3 scripts/productos-digitales/sync-payment-links.py --check  # exit 1 si el .ts difiere de Netlify
 Fuente del mapa productId → envKey: `slug` + `stripeEnvKey` de astro-site/src/data/productos/**/*.ts
+y de astro-site/src/data/productos-en/**/*.ts (tienda internacional; mismo tipo)
 (+ pro-prompts-ebook → VITE_STRIPE_PAYMENT_LINK, mega-pack-tareas → VITE_STRIPE_PAYMENT_LINK_MEGA_PACK_TAREAS,
 que no tienen data file tipado). Se cruza con PRODUCTS de verify-purchase.ts: deben ser los mismos 44.
 """
@@ -31,7 +32,11 @@ SPECIAL = {
 
 def product_env_keys():
     m = dict(SPECIAL)
-    for f in glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts')):
+    # Tienda internacional (2026-09-23): las fichas EN viven en productos-en/** con el
+    # mismo tipo (slug + stripeEnvKey). El mapa no sabe de idiomas: un productId, un link.
+    fichas = glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts'))
+    fichas += glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos-en/**/*.ts'), recursive=True)
+    for f in fichas:
         if f.endswith('types.ts'):
             continue
         t = open(f, encoding='utf-8').read()

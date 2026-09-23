@@ -22,7 +22,9 @@ Checks:
      desplegado (LIVE: POST sin firma → 400; 501 = STRIPE_WEBHOOK_SECRET sin configurar → aviso);
      PURCHASE_VALIDATION informativo.
   D. LIVE: landing 200 con enlace buy.stripe.com (sin '#comprar'), -access y -library 200
-     con <astro-island … client="only">.
+     con <astro-island … client="only">. Las rutas se toman TAL CUAL de zona-app, así que valen
+     también las anidadas de la tienda internacional (2026-09-23):
+     /en/digital-products/<slug>, …/<slug>/access y …/<slug>/library.
   E. (2026-09-05) Pasarela cripto NOWPayments (piloto): netlify/shared/product-prices.ts cubre
      los mismos productIds que PRODUCTS y coincide con sync-product-prices.py --check (fichas +
      products-catalog.ts); existen las 4 functions (crypto-checkout, nowpayments-ipn,
@@ -30,6 +32,7 @@ Checks:
      LIVE: NOWPAYMENTS_API_KEY/IPN_SECRET armadas, CRYPTO_PRODUCTS/CRYPTO_PRODUCTS_EXCLUDE
      (las dos en scope builds Y functions) y API_BASE, contrato HTTP de las 3 functions
      públicas. Ver PAGOS_CRYPTO_NOWPAYMENTS.md.
+     El precio puede ser `eur` (tienda española) o `usd` (internacional, 2026-09-23).
      E-f. (2026-09-06, sólo con --crypto-products) Las PUERTAS DE PAGO en el HTML de cada
      una de las 48 landings, que es lo único que ve el comprador. Si el producto está en la
      allowlist efectiva: 3 botones `data-crypto-open` (2 en mega-pack-tareas, que no tiene
@@ -150,7 +153,10 @@ def check_validacion_y_webhook(vp, offline):
     else:
         # drift: el .ts congelado debe coincidir con las VITE_* del site
         src_map = {}
-        for f in glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts')):
+        # + fichas EN de la tienda internacional (mismo tipo; no-op si no existe el directorio)
+        fichas = glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts'))
+        fichas += glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos-en/**/*.ts'), recursive=True)
+        for f in fichas:
             if f.endswith('types.ts'):
                 continue
             tt = open(f, encoding='utf-8').read()
@@ -260,7 +266,8 @@ def check_pasarela_cripto(vp, offline, zona=None, crypto_products=None, crypto_e
         issues.append('falta netlify/shared/product-prices.ts (python3 scripts/productos-digitales/sync-product-prices.py)')
         pp_src = None
     if pp_src is not None:
-        pp_ids = set(re.findall(r"^\s*'([^']+)':\s*\{\s*eur:", pp_src, re.M))
+        # `eur` (tienda española) o `usd` (tienda internacional, 2026-09-23): una por producto.
+        pp_ids = set(re.findall(r"^\s*'([^']+)':\s*\{\s*(?:eur|usd):", pp_src, re.M))
         missing = sorted(set(vp) - pp_ids)
         extra = sorted(pp_ids - set(vp))
         if missing:

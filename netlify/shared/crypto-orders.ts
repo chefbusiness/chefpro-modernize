@@ -50,8 +50,12 @@ export interface CryptoOrder {
   email: string;
   /** Minúsculas y sin espacios: es la clave del índice y la que recibe el email. */
   emailNorm: string;
-  priceEur: number;
-  currency: 'eur';
+  /** Importe de la factura en EUR. Lo llevan TODOS los pedidos de la tienda
+   *  española (y todos los anteriores al 2026-09-23). Ausente en los USD. */
+  priceEur?: number;
+  /** Importe en USD (tienda internacional). Sólo con `currency: 'usd'`. */
+  priceUsd?: number;
+  currency: 'eur' | 'usd';
   /** País de facturación declarado en el diálogo (ISO-2 mayúsculas). */
   country: string;
   /** País de la cabecera geo de Netlify. Evidencia independiente del anterior. */
@@ -76,6 +80,18 @@ export interface CryptoOrder {
   deliveryLockAt?: string;
   /** Marcas para el informe: 'underpaid', 'amount_mismatch', 'foreign_payment'… */
   flags: string[];
+}
+
+/** Importe y moneda con los que se creó la factura del pedido. Es la ÚNICA
+ *  lectura del precio que deben hacer el IPN y los informes: un pedido sin
+ *  `currency` (o con cualquier valor que no sea 'usd') es EUR, como todos los
+ *  anteriores a la tienda internacional, y se lee de `priceEur` igual que antes. */
+export function precioPedido(o: Pick<CryptoOrder, 'priceEur' | 'priceUsd' | 'currency'>): {
+  importe: number | undefined;
+  moneda: 'eur' | 'usd';
+} {
+  if (o.currency === 'usd') return { importe: o.priceUsd, moneda: 'usd' };
+  return { importe: o.priceEur, moneda: 'eur' };
 }
 
 /** Subconjunto de la API de Blobs que se usa aquí. Tipado a mano —igual que en

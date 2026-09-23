@@ -8,12 +8,29 @@ export interface ProductCatalogEntry {
   description: string;
 }
 
+/**
+ * Tienda internacional (2026-09-23, TIENDA-INTERNACIONAL.md §3.10): cuando un producto
+ * tenga versión en otro idioma, su landing va en `urlByLang` (p. ej.
+ * `{ en: '/en/digital-products/recipe-costing-kit' }`) y los banners de ese idioma
+ * apuntan a ella; sin entrada para el idioma, se cae a `url` (la landing ES).
+ * ⚠️ Colocarlo DESPUÉS de `description`: el parser de fase8c-libreria-assemble.py exige
+ * `id`, `url`, `price` y `name` en líneas seguidas (y hoy sólo lee `url`: los banners que
+ * genera ese script NO usan `urlByLang` hasta que se le enseñe).
+ */
+export type ProductUrlByLang = Partial<Record<ProductLang, string>>;
+
 interface ProductCatalogRaw {
   id: string;
   url: string;
   price: string;
   name: { es: string; en?: string };
   description: { es: string; en?: string };
+  urlByLang?: ProductUrlByLang;
+}
+
+/** URL de la landing del producto en `lang`, o la ES (`url`) si no tiene versión propia. */
+export function productUrl(entry: { url: string; urlByLang?: ProductUrlByLang }, lang: ProductLang = 'es'): string {
+  return entry.urlByLang?.[lang] ?? entry.url;
 }
 
 const RAW: Record<string, ProductCatalogRaw> = {
@@ -532,7 +549,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
 function localize(entry: ProductCatalogRaw, lang: ProductLang): ProductCatalogEntry {
   return {
     id: entry.id,
-    url: entry.url,
+    url: productUrl(entry, lang),
     price: entry.price,
     name: entry.name[lang as 'es' | 'en'] ?? entry.name.es,
     description: entry.description[lang as 'es' | 'en'] ?? entry.description.es,

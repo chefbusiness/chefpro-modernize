@@ -42,6 +42,12 @@ export interface ProductoZonaApp {
   libraryTitle?: string;
   vanilla?: boolean;
   notas?: string;
+  /** Idioma de la tienda (2026-09-23, TIENDA-INTERNACIONAL.md §3). AUSENTE = 'es' (las 50
+   *  entradas heredadas). Las de otro idioma usan rutas anidadas (tiendaProductoPath en
+   *  lib/tienda.ts) y fase5-generate-zona-app.py las SALTA: no tienen ruta en src/App.tsx,
+   *  sus páginas -access/-library son wrappers escritos a mano. Va al FINAL de la entrada
+   *  (el regex del generador espera los 8 primeros campos en este orden). */
+  lang?: string;
 }
 
 /** Título compartido por los 49 gates (verbatim de ProductAccessGate.tsx:68,
