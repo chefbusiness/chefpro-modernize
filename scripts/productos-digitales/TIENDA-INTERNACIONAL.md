@@ -98,8 +98,10 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
 - **0.A Fundamentos** ✅ 23-sep: research del hub y del piloto (§2), este documento, calendario y memorias.
 - **0.B Infraestructura** ✅ 23-sep (PR #93, `42a6878`): `tienda.ts`, sitemap/robots, `lang` en plantillas y backend, `urlByLang`, gate
   `tienda-gate.py`, `gate-flujo-postpago.py` con rutas anidadas y moneda. Verificación en **deploy preview**.
-- **0.C Hub EN:** `TiendaHubPage.astro` + `pages/en/digital-products.astro`, copy (bridge.py, fallback Sonnet),
-  imágenes (`generate-images`, mockups en inglés), navegación EN y CTA en la portada EN. PR → gates → merge → LIVE.
+- **0.C Hub EN** ✅ 24-sep (PR #94, `1161e6e`): `TiendaHubPage.astro` + `pages/en/digital-products.astro`, copy
+  (bridge.py revisado → `data/tienda-hub/en.json`), imágenes (Nano Banana 2), `TIENDAS.en.activa`, enlace «Digital
+  Products» en los 4 ficheros de navegación y `TiendaStrip.astro` en la portada EN. **Buscador del hub aplazado** hasta
+  que haya ≥ 6 productos EN (con 0-1 no aporta).
 
 ### Por producto — política de 3 fases (F1 fundamentos · F2 entregables · F3 lanzamiento)
 
@@ -154,4 +156,17 @@ la F1 de cada producto frente a Etsy/Gumroad.
     deploy anterior y `favicon.ico`, mientras el Chrome de Windows daba 40/40 en 200 y otros sites de Netlify 0 fallos.
     Tras ráfagas de gates, Netlify estrangula esa IP: repetir los gates LIVE más tarde o desde otra red antes de
     dar un fallo por bueno.
-
+- **2026-09-24 (sesión Claude Code):** 0.C LIVE (PR #94). El hub enseña el Recipe Costing Kit como «First release» sin
+  enlace ni precio: la tarjeta pasa sola a la rejilla cuando `FAMILIAS` lo marque `vivo: true` (y su precio `usd` exista
+  en `product-prices.ts`, o saldrá sin precio). Lecciones:
+  - **`BaseLayout` emite por defecto un `SoftwareApplication` con ofertas en EUR y `aggregateRating` 4,8.** Toda página
+    de la tienda EN necesita `omitGlobalApp`, o viola la capa comercial honesta (§3.5) y `tienda-gate --base` cae por «EUR».
+  - **El item de la tienda en el menú es lo que empuja a un idioma por encima de `xl`.** Header.astro y ModernHeader.tsx
+    muestran el menú completo desde 1.360 px en todo idioma con tienda activa (antes solo ES).
+  - **La SPA no importa de `astro-site/`:** el mapa de la tienda va duplicado en `ModernHeader/ModernFooter.tsx`
+    (`TIENDA_PATHS`/`TIENDA_NOMBRE`) y `tienda-gate.py` lo cruza con `tienda.ts`. Al activar otra tienda, tocar los tres.
+  - Los 500 de la IP del Mac volvieron (hasta `favicon.ico`). Los gates de red se reprodujeron desde el Chrome de Windows
+    con `fetch()` + `DOMParser`: hreflang recíproco, canonical, JSON-LD sin EUR, 0 € fuera del bloque ES, 1 WhatsApp,
+    DataFast 1, Miselup 0, sitemap con el hub y sin dashboards.
+  - Medir el menú a un ancho concreto exige que el viewport CSS lo sea: con `documentElement.style.width` las media
+    queries siguen en escritorio (en ese Chrome, 1.653 px CSS con la ventana a 1.375).

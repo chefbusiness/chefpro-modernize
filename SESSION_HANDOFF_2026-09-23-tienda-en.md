@@ -25,14 +25,14 @@ Verificación de la 0.B:
 
 ## Pendiente
 1. **Repetir `gate-flujo-postpago.py` LIVE** desde otra red o espaciado. El 23-sep dio 186 «fallos» que eran 500 de Netlify contra la IP del Mac: el Chrome de Windows dio 40/40 en 200 y el deploy anterior fallaba igual.
-2. **0.C Hub EN** (siguiente sesión EN):
+2. ~~**0.C Hub EN**~~ ✅ **LIVE el 24-sep (PR #94, `1161e6e`, sesión Claude Code)** — detalle en el log del doc. Era:
    - `TiendaHubPage.astro` + `pages/en/digital-products.astro`.
    - Copy con bridge.py; imágenes con `generate-images`.
    - Activar `TIENDAS.en.activa`.
    - Enlaces en los 4 ficheros de navegación y CTA en la portada EN.
    - `alternates` recíprocos en el hub ES.
    - Gates.
-3. **Piloto Recipe Costing Kit** (F1/F2/F3), con el checklist §6 del doc. Riesgos que ya conocemos:
+3. **Piloto Recipe Costing Kit** (SIGUIENTE sesión EN; al publicarlo: `vivo: true` en FAMILIAS + precio `usd` + `omitGlobalApp` en sus páginas) (F1/F2/F3), con el checklist §6 del doc. Riesgos que ya conocemos:
    - falta la página `/en/crypto-payment`;
    - `CryptoPayButton.astro` todavía no tiene `lang`;
    - un precio `usd` exige `lang: 'en'` en PRODUCTS;
