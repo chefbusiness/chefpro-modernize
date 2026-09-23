@@ -13,7 +13,7 @@
 | Mercado | Inglés **US como base internacional**. Impuesto (sales tax/VAT), moneda ($/£/CAD/AUD) y unidades (oz-lb ↔ g-kg) son **parámetros** del Excel. Lo normativo: núcleo HACCP/Codex + **anexo US** (FDA Food Code) + **anexo UK** (FSA, 14 alérgenos). Un SKU sirve a US/UK/CA/AU |
 | Moneda | Payment Links en **USD**, precio psicológico ($19/$29/$49…), con **Adaptive Pricing** de Stripe activado (UK ve £, CA ve CAD). NOWPayments factura en USD |
 | Piloto | **Recipe Costing Kit** (= `kit-escandallos`) |
-| Nativo, no traducido | Terminología, benchmarks, normativa y ejemplos del mercado anglosajón. Se reutilizan los **motores**, no el contenido regulatorio |
+| 🔴 **Duplicar el ES y adaptar, NUNCA reconstruir** (John, 24-sep) | El español lleva SIEMPRE la delantera: cada producto se construye desde cero SOLO en español. Para inglés (y cada idioma futuro) se **duplican** la landing, el dashboard y los ficheros (xlsx, pdf, docx, md…) del producto ES y se **traducen**, adaptando las variables del mercado nativo (terminología, moneda, impuestos, unidades, normativa/anexos, benchmarks, ejemplos). **Diseño, estructura, componentes y maquetación son los mismos**: no se crea ninguna plantilla ni página nueva. Lo mismo para los hubs |
 
 Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John** (en USD, con Adaptive Pricing).
 
@@ -120,8 +120,8 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
 |---|---|---|
 | 1 | **Recipe Costing Kit** (piloto) → Inventory Kit → Pro Prompts eBook (nombres EN de agentes desde `agentes-en.json`) → Food Safety / HACCP Pack (Codex + anexos FDA/FSA) | M · M · S · M |
 | 2 | Motor de Kit de Tareas bilingüe (una vez) → 20 verticales | S cada uno, varios por sesión |
-| 3 | Staff Management (FLSA / UK Working Time) · Financial Plan | M, rehechos nativos |
-| 4-5 | Manuales · guías «How to Open…» · planes de negocio | L, research nativo completo |
+| 3 | Staff Management (FLSA / UK Working Time) · Financial Plan | M, duplicados del ES + anexos FLSA/UK |
+| 4-5 | Manuales · guías «How to Open…» · planes de negocio | L, duplicados del ES + research de las variables del mercado |
 | — | **Mega Pack: no se replica** (congelado; no vende) | — |
 
 Precio de referencia: el ES en € redondeado a un escalón psicológico en USD por encima (12 € → **$19**). Se confirma en
