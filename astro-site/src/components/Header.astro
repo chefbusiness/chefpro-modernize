@@ -34,8 +34,11 @@ const langHref = (l: Locale) => (l === 'es' ? '/' : `/${l}`);
 // ≤1.210 compacto. Antes aparecía desde md (768 px) y, sin sitio, se encogía el LOGO hasta hacerse
 // invisible (iPad en horizontal, portátiles de 1.366). Por debajo: logo + idioma + login + CTA + ☰.
 // Entre xl y 2xl el menú va compacto y sin «Inicio» (el logo ya lleva a la home).
-const deskNavShow = lang === 'es' ? 'min-[1360px]:flex' : 'xl:flex';
-const deskHide = lang === 'es' ? 'min-[1360px]:hidden' : 'xl:hidden';
+// 24-sep-2026: el item de la tienda es lo que mete a ES por encima de xl, así que cualquier idioma
+// con tienda ACTIVA (hoy también EN, «Digital Products») usa el mismo corte de 1.360 px.
+const menuAncho = lang === 'es' || !!tiendaHref(lang);
+const deskNavShow = menuAncho ? 'min-[1360px]:flex' : 'xl:flex';
+const deskHide = menuAncho ? 'min-[1360px]:hidden' : 'xl:hidden';
 const currentLangName = languages.find((x) => x.code === lang)?.name ?? 'Español';
 const LANG_LABEL: Record<string, string> = { es: 'Idioma', en: 'Language', fr: 'Langue', de: 'Sprache', it: 'Lingua', pt: 'Idioma', nl: 'Taal' };
 const langLabel = LANG_LABEL[lang] ?? LANG_LABEL.es;

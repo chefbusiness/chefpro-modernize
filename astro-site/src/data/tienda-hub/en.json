@@ -3,7 +3,7 @@
   "seo": {
     "title": "Digital Products for Restaurants and Chefs | AI Chef Pro",
     "description": "Restaurant and recipe costing templates for chefs and owners. One-time payment, instant download, lifetime dashboard access. Built by an operator.",
-    "keywords": "restaurant templates, food cost template, recipe costing template, restaurant Excel templates, digital products for restaurants, HACCP templates, food cost calculator, menu engineering template, hospitality tools"
+    "keywords": "food cost template, recipe costing template, restaurant Excel templates, food cost spreadsheet, menu costing template, digital products for restaurants, restaurant templates, HACCP templates, menu engineering template"
   },
   "breadcrumb": "Digital Products",
   "hero": {
@@ -40,7 +40,8 @@
       },
       {
         "t": "Built by a kitchen operator",
-        "d": "John Guerrero has 29 years in hospitality kitchens and 15 as a restaurant consultant. The logic comes from real service, not a generic template."
+        "d": "John Guerrero has 29 years in hospitality kitchens and 15 as a restaurant consultant. The logic comes from real service, not a generic template.",
+        "dHtml": "<a href=\"https://johnguerrero.es\" target=\"_blank\" rel=\"noopener noreferrer author\" class=\"font-semibold text-[#FFD700] hover:underline\">John Guerrero</a> has 29 years in hospitality kitchens and 15 as a restaurant consultant. The logic comes from real service, not a generic template."
       },
       {
         "t": "Adapts to your country",
@@ -70,7 +71,7 @@
       },
       {
         "name": "Restaurant Operations Checklists",
-        "desc": "Recurring task checklists for cafés, pizzerias, burger joints, bars, bakeries, food trucks, catering, hotels, and more."
+        "desc": "Recurring task checklists for cafes, pizzerias, burger joints, bars, bakeries, food trucks, catering, hotels, and more."
       },
       {
         "name": "Staff Management Kit",
@@ -104,7 +105,7 @@
       },
       {
         "q": "Do the products work in the US, UK, Canada, and Australia?",
-        "a": "Yes. Currency, sales tax or VAT, and units are settings inside the spreadsheet, so one product serves different countries. Where regulation matters, food safety packs include a US FDA Food Code annex and a UK FSA annex for the 14 allergens."
+        "a": "Yes. Currency, sales tax or VAT, and units are settings inside the spreadsheet, so one product serves different countries. Where regulation matters, the food safety pack will include a US FDA Food Code annex and a UK FSA annex for the 14 allergens."
       },
       {
         "q": "How do currency and payment work?",

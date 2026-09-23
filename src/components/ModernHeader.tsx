@@ -164,7 +164,7 @@ export default function ModernHeader() {
               className="h-6 sm:h-8 w-auto max-w-none shrink-0"
             />
           </a>
-          <NavigationMenu className={`hidden ${currentLanguage === 'es' ? 'min-[1360px]:flex' : 'xl:flex'}`}>
+          <NavigationMenu className={`hidden ${tiendaHref(currentLanguage) ? 'min-[1360px]:flex' : 'xl:flex'}`}>
             <NavigationMenuList>
               <NavigationMenuItem className="hidden 2xl:block">
                 <NavigationMenuLink
@@ -509,7 +509,7 @@ export default function ModernHeader() {
 
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className={currentLanguage === 'es' ? 'min-[1360px]:hidden' : 'xl:hidden'}>
+                <Button variant="ghost" size="sm" className={tiendaHref(currentLanguage) ? 'min-[1360px]:hidden' : 'xl:hidden'}>
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>

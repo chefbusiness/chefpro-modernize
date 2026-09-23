@@ -3,6 +3,8 @@
 // Envoltorio fino: BaseLayout + hreflang recíproco con el hub ES + schemas. El markup vive en
 // components/TiendaHubPage.astro, el copy en data/tienda-hub/en.json y las tarjetas en
 // data/tienda-hub/en.ts. Sin aggregateRating ni reseñas: en EN no hay compradores todavía.
+// omitGlobalApp: el SoftwareApplication global del layout lleva ofertas en EUR y un rating (4,8);
+// en la tienda EN no puede salir ninguno de los dos (tienda-gate.py falla con «EUR»).
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TiendaHubPage from '../../components/TiendaHubPage.astro';
 import { SITE } from '../../i18n/config';
@@ -63,6 +65,7 @@ const schemas = [
   locales={['es', 'en']}
   alternates={alternates}
   ogImage={ogImage}
+  omitGlobalApp
 >
   <Fragment slot="head">
     {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
