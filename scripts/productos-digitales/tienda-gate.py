@@ -45,6 +45,7 @@ from __future__ import annotations
 import argparse
 import importlib.util
 import re
+import time
 import sys
 import urllib.error
 import urllib.request
@@ -210,15 +211,22 @@ def estatico() -> None:
 
 # ------------------------------------------------------------------ red
 
-def get(url: str) -> tuple[int, str]:
+def get(url: str, intentos: int = 4) -> tuple[int, str]:
+    # El CDN de los deploy previews devuelve 500 intermitentes (46 bytes) cuando se le piden
+    # varias páginas seguidas: se reintenta con espera creciente antes de dar el fallo.
     req = urllib.request.Request(url, headers={'User-Agent': 'aichef-tienda-gate/1.0'})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, r.read().decode('utf-8', 'replace')
-    except urllib.error.HTTPError as e:
-        return e.code, ''
-    except Exception as e:  # noqa: BLE001
-        return 0, str(e)
+    for n in range(intentos):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.status, r.read().decode('utf-8', 'replace')
+        except urllib.error.HTTPError as e:
+            if e.code < 500 or n == intentos - 1:
+                return e.code, ''
+        except Exception as e:  # noqa: BLE001
+            if n == intentos - 1:
+                return 0, str(e)
+        time.sleep(2 * (n + 1))
+    return 0, 
 
 
 class TextoVisible(HTMLParser):
@@ -347,6 +355,8 @@ def normalizar(html: str, base: str) -> str:
     html = re.sub(r'https?://' + host, PROD, html)
     html = re.sub(r'(/_astro/[\w.@-]+?)\.[A-Za-z0-9_-]{8}\.(js|css|mjs)', r'\1.X.\2', html)
     html = re.sub(r'astro-cid-[a-z0-9]+', 'astro-cid-X', html)
+    # Inyección de Netlify SOLO en los deploy previews (barra de colaboración): no es del sitio.
+    html = re.sub(r'<div data-netlify-deploy-id="[^"]*".*?</div>\n', '', html, flags=re.S)
     return html
 
 
