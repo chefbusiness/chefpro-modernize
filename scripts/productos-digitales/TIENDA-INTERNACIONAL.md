@@ -96,7 +96,7 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
 ### Fase 0 — Estructura del hub (tamaño M: 2 sesiones, ≤ 5 M tokens)
 
 - **0.A Fundamentos** ✅ 23-sep: research del hub y del piloto (§2), este documento, calendario y memorias.
-- **0.B Infraestructura:** `tienda.ts`, sitemap/robots, `lang` en plantillas y backend, `urlByLang`, gate
+- **0.B Infraestructura** ✅ 23-sep (PR #93, `42a6878`): `tienda.ts`, sitemap/robots, `lang` en plantillas y backend, `urlByLang`, gate
   `tienda-gate.py`, `gate-flujo-postpago.py` con rutas anidadas y moneda. Verificación en **deploy preview**.
 - **0.C Hub EN:** `TiendaHubPage.astro` + `pages/en/digital-products.astro`, copy (bridge.py, fallback Sonnet),
   imágenes (`generate-images`, mockups en inglés), navegación EN y CTA en la portada EN. PR → gates → merge → LIVE.
@@ -144,3 +144,14 @@ la F1 de cada producto frente a Etsy/Gumroad.
 ## 7. Log
 
 - **2026-09-23 (sesión Claude Code):** frente abierto; plan aprobado; 0.A cerrada (research §2 + este doc).
+- **2026-09-23/24 (sesión Claude Code):** 0.B LIVE (PR #93). Preview: 5/5 landings KitExcel ES byte a byte idénticas
+  a producción (`tienda-gate --es-identico`), `robots-gate` verde. Dos lecciones:
+  - **El compilador de Astro se rompe con template literals o backslashes DENTRO de las expresiones del template**
+    (`{`\n${x}\n`}`, un `alt={`${a} ${i}`}` dentro de map + condicional) → build roto con «Expected ";" but found "$"».
+    Se detecta sin build del sitio: `npm i @astrojs/compiler esbuild` en el scratchpad + `transform()` + `esbuild`
+    sobre el `.astro` (script `astroc/c.mjs` de la sesión). Hacerlo SIEMPRE antes de subir una plantilla tocada.
+  - **Los 500 intermitentes («Error - Request ID …», 46 bytes) eran de la IP del Mac, no del sitio:** fallaban igual el
+    deploy anterior y `favicon.ico`, mientras el Chrome de Windows daba 40/40 en 200 y otros sites de Netlify 0 fallos.
+    Tras ráfagas de gates, Netlify estrangula esa IP: repetir los gates LIVE más tarde o desde otra red antes de
+    dar un fallo por bueno.
+
