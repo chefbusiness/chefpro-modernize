@@ -1,75 +1,30 @@
 ---
-// /en/digital-products — HUB de la tienda EN (fase 0.C de TIENDA-INTERNACIONAL.md).
-// Envoltorio fino: BaseLayout + hreflang recíproco con el hub ES + schemas. El markup vive en
-// components/TiendaHubPage.astro, el copy en data/tienda-hub/en.json y las tarjetas en
-// data/tienda-hub/en.ts. Sin aggregateRating ni reseñas: en EN no hay compradores todavía.
-// omitGlobalApp: el SoftwareApplication global del layout lleva ofertas en EUR y un rating (4,8);
-// en la tienda EN no puede salir ninguno de los dos (tienda-gate.py falla con «EUR»).
+// /en/digital-products — HUB de la tienda EN. Envoltorio fino, COPIA del de /productos-digitales
+// (pages/productos-digitales.astro): mismo BaseLayout con las mismas props, SEO en inglés, y el
+// componente DigitalProductsHubPage, que es la copia traducida de ProductosDigitalesHubPage (mismo
+// diseño; cualquier cambio en uno se replica en el otro).
+//
+// hreflang recíproco con el hub ES desde lib/tienda.ts (TIENDAS). omitGlobalApp OBLIGATORIO: el
+// SoftwareApplication global del layout lleva ofertas en EUR y un rating (4,8), y en la tienda EN no
+// puede salir ninguno de los dos (tienda-gate.py). Los 3 JSON-LD propios los emite el componente.
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import TiendaHubPage from '../../components/TiendaHubPage.astro';
-import { SITE } from '../../i18n/config';
+import DigitalProductsHubPage from '../../components/pages/DigitalProductsHubPage.astro';
 import { TIENDAS } from '../../lib/tienda';
-import copy from '../../data/tienda-hub/en.json';
-import dict from '../../i18n/tienda/en.json';
-import * as data from '../../data/tienda-hub/en';
 
 const lang = 'en';
-const hub = TIENDAS.en.hubPath;
-const url = `${SITE}${hub}`;
-const ogImage = `${SITE}/og-digital-products-en.jpg`;
-
-// Solo ES y EN tienen tienda: el resto de idiomas no emite hreflang hacia aquí.
-const alternates = { es: TIENDAS.es.hubPath, en: hub };
-
-const schemas = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    '@id': `${url}#webpage`,
-    url,
-    name: copy.seo.title,
-    description: copy.seo.description,
-    inLanguage: 'en',
-    isPartOf: { '@type': 'WebSite', '@id': `${SITE}#website`, name: 'AI Chef Pro', url: SITE },
-    breadcrumb: { '@id': `${url}#breadcrumb` },
-    primaryImageOfPage: { '@type': 'ImageObject', url: ogImage },
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    '@id': `${url}#breadcrumb`,
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: `${SITE}/en` },
-      { '@type': 'ListItem', position: 2, name: copy.breadcrumb, item: url },
-    ],
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    '@id': `${url}#faq`,
-    mainEntity: copy.faq.items.map((f: { q: string; a: string }) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  },
-];
 ---
 
 <BaseLayout
-  title={copy.seo.title}
-  description={copy.seo.description}
-  keywords={copy.seo.keywords}
+  whatsapp={false}
+  title="Digital Products for Restaurants — Templates, Guides, AI Prompts | AI Chef Pro"
+  description="Restaurant templates, recipe costing spreadsheets, HACCP templates, restaurant ebooks and AI prompts for chefs, managers and owners. English editions coming soon."
+  keywords="digital products for restaurants, restaurant templates, recipe costing spreadsheet, food cost excel template, HACCP templates, restaurant ebooks, restaurant business plan template, AI prompts for restaurants, AI Chef Pro"
   lang={lang}
   basePath="/digital-products"
   locales={['es', 'en']}
-  alternates={alternates}
-  ogImage={ogImage}
+  alternates={{ es: TIENDAS.es.hubPath, en: TIENDAS.en.hubPath }}
+  ogImage="https://aichef.pro/og-digital-products-en.jpg"
   omitGlobalApp
 >
-  <Fragment slot="head">
-    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
-  </Fragment>
-
-  <TiendaHubPage lang={lang} copy={copy} data={data} dict={dict} />
+  <DigitalProductsHubPage />
 </BaseLayout>
