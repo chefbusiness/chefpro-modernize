@@ -15,10 +15,13 @@ no rompe la página y no sale en ningún diff.
 QUÉ COMPRUEBA, para CADA user-agent declarado en el fichero:
 
   1. Toda ruta de la zona app (las páginas `*-access.astro` / `*-library.astro`
-     de `astro-site/src/pages/`, más `/admin/…`) está BLOQUEADA.
+     de `astro-site/src/pages/`, las ANIDADAS de las tiendas por idioma
+     `<lang>/<segmento>/<slug>/access|library.astro` con sus tres terminaciones,
+     más `/admin/…`) está BLOQUEADA.
   2. Toda URL pública es RASTREABLE. La lista sale del `dist/` si hay build
      reciente (fuente más fiable: son las páginas que se publican de verdad) y,
-     si no, del sitemap de producción.
+     si no, del sitemap de producción; en los dos casos se le suman las páginas
+     estáticas del repo, para ver las nuevas que aún no están publicadas.
 
 El matcher implementa la spec de Google (RFC 9309): comodín `*`, ancla `$`,
 gana la regla de path más largo y, en empate, gana Allow. Sin dependencias:
@@ -130,9 +133,40 @@ def app_zone_paths() -> list[str]:
         for p in PAGES.glob("*.astro")
         if p.stem.endswith("-access") or p.stem.endswith("-library")
     )
+    # Tiendas por idioma (TIENDA-INTERNACIONAL.md §3.2, 25-sep-2026): su zona app va
+    # ANIDADA, pages/<lang>/<segmento>/<slug>/access.astro y library.astro, y el glob de
+    # arriba (solo la raíz) no la ve. Se prueban las tres terminaciones que el robots.txt
+    # ancla ($, / y ?): el gate de la ES exacta no bastaría, porque aquí cada una es una
+    # regla distinta.
+    for p in sorted(PAGES.glob("*/*/*/*.astro")):
+        if p.stem in ("access", "library"):
+            ruta = "/" + p.relative_to(PAGES).as_posix()[: -len(".astro")]
+            paths += [ruta, ruta + "/", ruta + "?session_id=cs_test_robots_gate"]
     # Rutas de /admin declaradas en el robots.
     paths += ["/admin/", "/admin/dashboard"]
     return paths
+
+
+def repo_public_paths() -> list[str]:
+    """Páginas estáticas del repo (sin rutas dinámicas ni zona app).
+
+    Se suman al censo del dist o del sitemap: una página NUEVA (la landing de un
+    producto de la tienda EN, /en/crypto-payment) no está todavía en el sitemap de
+    producción, y sin build local el gate no la vería. /en/crypto-payment lleva
+    `noindex` y está fuera del sitemap, pero tiene que ser RASTREABLE: si robots la
+    bloquea, Google no puede leer ese noindex."""
+    out = []
+    for p in PAGES.rglob("*.astro"):
+        rel = p.relative_to(PAGES).as_posix()[: -len(".astro")]
+        if "[" in rel or p.stem in ("access", "library") or p.stem.endswith(("-access", "-library")):
+            continue
+        if rel == "index":
+            out.append("/")
+        elif rel.endswith("/index"):
+            out.append("/" + rel[: -len("/index")])
+        else:
+            out.append("/" + rel)
+    return sorted(set(out))
 
 
 def dist_paths() -> list[str]:
@@ -179,9 +213,13 @@ def main() -> int:
         source, public = "sitemap de producción", live_paths()
     else:
         source, public = "dist/ local", dist_paths()
+    repo = repo_public_paths()
+    nuevas = sorted(set(repo) - set(public))
+    public = sorted(set(public) | set(repo))
     private_set = set(private)
     public = [p for p in public if p not in private_set and not p.startswith("/admin")]
-    print(f"censo: {len(public)} URLs públicas ({source}) · {len(private)} rutas privadas\n")
+    print(f"censo: {len(public)} URLs públicas ({source} + {len(nuevas)} páginas del repo que no "
+          f"están en él) · {len(private)} rutas privadas\n")
 
     fugas: list[str] = []     # privada rastreable
     bloqueos: list[str] = []  # pública bloqueada
