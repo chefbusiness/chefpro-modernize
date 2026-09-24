@@ -1,0 +1,308 @@
+{
+ "tecnica": {
+  "veredicto": "LISTO_CON_CAMBIOS",
+  "hallazgos": [
+   {
+    "id": "T1",
+    "severidad": "alta",
+    "seccion_spec": "D7 · §2.3 (tabla Conversions)",
+    "problema": "D7 no se puede ejecutar tal cual. «Todas las parejas del ES + US + imperial UK (research §4.3)» deja claves contradictorias y otras a las que no se llega. (a) Los envases chocan: las del ES traducidas dan bottle→cl=70, bottle→ml=700, bottle→L=0.7, can→cl=33 y can→ml=330, mientras las US dan bottle→fl oz=25.36 (750 ml) y can→fl oz=12 (355 ml). La misma botella mide 700 ml en una fila y 750 ml en otra. (b) VLOOKUP exacto devuelve la PRIMERA coincidencia: una clave duplicada pisa a la otra sin avisar. (c) Hay claves del research con unidades que no están en el desplegable: «bottle (750 ml)→fl oz», «bottle (1 L)», «bottle (1.75 L)», «bottle (70 cl)», «imperial pint→ml», «UK fl oz→ml», «imperial gallon→L». La DV es de tipo stop y no deja teclear otra unidad, así que esas filas son peso muerto. (d) El `sobre` del ES no tiene equivalente en la lista EN de 20 unidades, y sus 3 filas (sobre→sobre/ud/g) no tienen a qué mapear.",
+    "evidencia": "01-escandallo-estandar.xlsx `Conversiones!A30:C35` (botella→cl 70 «Vino: cambia el 70 por 75», botella→ml 700, lata→ml 330) y `A24:A25,A37` (sobre). Research F1-research-us-uk.md:268-272. DV de unidades en `Escandallo!C5:C24`: showErrorMessage=True, errorStyle por defecto (stop), medido con openpyxl. SPEC.md:45.",
+    "arreglo": "Sustituir la frase de D7 por la tabla EXPLÍCITA de claves (lista cerrada en `mapas.py`). Un tamaño por defecto por envase para el mercado base (bottle = 750 ml, can = 12 fl oz = 355 ml), del que salen TODAS las filas bottle→X y can→X. Los tamaños UK (70 cl, 568 ml) van como nota editable, no como claves. Quitar las claves con unidades fuera del desplegable. Decidir `sobre` → `packet` (añadirlo a la lista) o eliminar sus filas. Añadir al gate de §2.3: (1) ninguna clave duplicada en Conversions; (2) las dos unidades de cada clave están en la lista de la DV; (3) cada pareja de envase es coherente con su tamaño por defecto."
+   },
+   {
+    "id": "T2",
+    "severidad": "alta",
+    "seccion_spec": "§2.5 fila 04 cocktails · D7",
+    "problema": "La SPEC pide en `Bottle Sizes` los tamaños 750 ml, 1 L, 1.75 L y la lata de 12 fl oz, con pour de 1.5 fl oz. No dice en qué unidad va la columna de formato ni qué pareja compra→uso llevan las filas enlazadas. La fórmula del ES está atada a centilitros y devuelve precio por LITRO: si se teclea 750 pensando en ml, el precio por litro sale 10 veces más bajo, y ningún gate lo caza (ver T10). Pasar la columna a ml cambia la fórmula y rompe el gate 1 de paridad. Además la lata de 12 fl oz (35,49 cl) se ve «35» con el formato `0`.",
+    "evidencia": "04-cocktails-bebidas.xlsx: `Formatos de Compra!B4` = «Formato de compra (cl)», `D5` = `=IFERROR(ROUND(C5*100/B5,4),\"\")`, `B5` con formato `0`. `Gin Tonic Premium!C5` = 'L', `D5` = `=IFERROR('Formatos de Compra'!$D$5,\"\")`, `F5` = 'cl'. `Instrucciones!B9`: «cantidades de destilados en CL y el precio en €/L». SPEC.md:100.",
+    "arreglo": "Fijar en §2.5 (04): la columna B sigue en cl («Bottle size (cl)»: 75 / 100 / 175, con la equivalencia en ml/fl oz en la nota A2/A18) y la D sigue siendo precio por litro. Las filas enlazadas usan compra `L` y uso `fl oz` (exige la clave L→fl oz = 33.814 en Conversions) y cantidad 1.5. La lata no va en esta hoja: va por `can` en Conversions. Si se prefiere ml, declarar el cambio de fórmula `C*1000/B` como excepción del gate 1. Añadir al gate 4 un rango de pour cost para las 4 recetas del 04 (18-24 %) calculado con un precio de carta de referencia (ver T10)."
+   },
+   {
+    "id": "T3",
+    "severidad": "media",
+    "seccion_spec": "§2.3 (rangos de Conversions) · §4 gate 1",
+    "problema": "El kit promete «puedes añadir parejas al final», pero el VLOOKUP del Factor mira un rango que termina justo en la última fila de la tabla. Una pareja añadida en la fila siguiente nunca se encuentra: el Factor sale «?» y el coste «revisa unidades». La SPEC manda reescribir el rango «al nuevo final de la tabla EN», con lo que el defecto pasa tal cual a EN. El área de impresión de Conversions también está fijada en la fila 37: con la tabla ampliada, la impresión se corta. El gate 1 exige «mismas áreas de impresión», así que daría por bueno el corte.",
+    "evidencia": "01-escandallo-estandar.xlsx: `Conversiones!A2` («Puedes añadir parejas al final»), `Instrucciones!B20` y `B39` («añade las parejas que te falten»), `Escandallo!G5` = `VLOOKUP(C5&\"→\"&F5,Conversiones!$A$5:$B$37,2,FALSE)` con la tabla acabando en A37, print_area `'Conversiones'!$A$1:$J$37` en los 8 escandallos (scan openpyxl). SPEC.md:84-85 y 155.",
+    "arreglo": "Reescribir los 453 rangos con margen (por ejemplo, `$A$5:$B$300`, que Sheets y pycel resuelven igual) y ampliar el print_area de Conversions a la última fila real. En el gate 1, declarar las dos cosas como excepción. Añadir un test al gate 3: escribir una pareja nueva en la primera fila libre de Conversions y comprobar que una fila del escandallo la resuelve."
+   },
+   {
+    "id": "T4",
+    "severidad": "media",
+    "seccion_spec": "§3 Páginas · «Último paso: FAMILIAS.en.vivo = true»",
+    "problema": "Mientras `en.vivo` sea false, que según la SPEC dura hasta después de la compra de prueba en producción, la landing EN con `alternatesFamilia('kit-escandallos')` recibe `locales=['es']` y `alternates={}`. BaseLayout emite entonces hreflang es y x-default hacia `https://aichef.pro/digital-products/recipe-costing-kit`, que da 404, y ningún hreflang en. La página ya está en el sitemap, con lastmod 2026-07-19 (anterior a su creación). Si la env var no existe todavía, el CTA cae al fallback `#comprar`. `tienda-gate.py --base` solo revisa familias vivas, así que nada lo detecta.",
+    "evidencia": "astro-site/src/lib/tienda.ts:102-116 (salta los no vivos y, con menos de 2 locales, devuelve alternates vacío). BaseLayout.astro:103-122 y 261-262 (urlFor('es') = SITE + basePath). astro.config.mjs:34 y 87 (NEW_URLS_LASTMOD '2026-07-19'). pages/kit-escandallos.astro:17 (fallback '#comprar'). tienda-gate.py, función red(): `if lg == 'es' or not p['vivo'] … continue`. SPEC.md:137 y 150.",
+    "arreglo": "En la SPEC: el wrapper EN pasa `locales` = r.locales solo si incluyen 'en'; si no, `['en']`, y va con `noindex` hasta `vivo`. O bien la landing no se fusiona en `main` hasta tener el link y `vivo` va en el mismo PR tras la compra de prueba en el preview. Añadir la ruta EN a `src/lib/sitemap-lastmod.json` con la fecha de publicación. Añadir a tienda-gate una comprobación, para cada familia con página EN existente aunque no esté viva, de que ningún hreflang de la landing apunta a un 404."
+   },
+   {
+    "id": "T5",
+    "severidad": "media",
+    "seccion_spec": "§3 Backend · §5.1 · §6 (orden F3)",
+    "problema": "La SPEC ordena «capa de producto → Payment Link (John) → LIVE». En cuanto `recipe-costing-kit` entra en PRODUCTS de verify-purchase, o existe la ficha EN con `stripeEnvKey`, sin que la env var exista en Netlify, pasan dos cosas: (1) `gate-flujo-postpago.py` se pone ROJO en todo el sitio (sección D, «SIN Payment Link en payment-links.ts» y «env … no existe en Netlify»); (2) `sync-payment-links.py` sale con código 1 y no regenera `payment-links.ts` para NINGÚN producto. Con la rotación de 3 sesiones, eso bloquea el cierre F3 del siguiente producto ES (su Payment Link no entraría en el mapa del webhook).",
+    "evidencia": "scripts/productos-digitales/gate-flujo-postpago.py:132 y 174. sync-payment-links.py:94-113 (exige el mismo conjunto que PRODUCTS y la env de cada ficha, o `sys.exit(1)` global). TIENDA-INTERNACIONAL.md:29 (rotación de 3 sesiones). SPEC.md:182.",
+    "arreglo": "Pedir el Payment Link a John al CERRAR F2 (o al abrir F3), antes de tocar PRODUCTS. Dar de alta la env var y regenerar `payment-links.ts` y `product-prices.ts` en el MISMO PR que añade el productId a verify-purchase, resend-access, get-download-urls y zona-app. Hasta entonces, la capa de producto vive en una rama o deploy preview (con la env en el contexto deploy-preview). Anotar el orden en §6."
+   },
+   {
+    "id": "T6",
+    "severidad": "media",
+    "seccion_spec": "§3 Blog EN",
+    "problema": "Añadir `urlByLang.en` en products-catalog.ts no cambia nada en el generador de banners: `banner()` lee la `url` ES y el `price` único («€12»), y `fase8e-banners-corpus.py --lang en` reutiliza esa misma función. El parche quirúrgico arregla los 26 posts actuales, pero todo banner nuevo del blog EN (nuevo post, o una pasada de fase8e) volverá a enlazar la landing ES a €12. El catálogo no tiene precio por idioma.",
+    "evidencia": "scripts/astro-migration/fase8c-libreria-assemble.py:323-336 (`url, precio = d['url'], d['precio']`). fase8e-banners-corpus.py:250 (`mod.banner(p, prods, slug, lang)`). src/data/products-catalog.ts:11-18 (el propio comentario: «hoy sólo lee `url`: los banners que genera ese script NO usan `urlByLang`»). SPEC.md:149.",
+    "arreglo": "Añadir a §3: enseñar a `catalogo_productos()`/`banner()` a usar `urlByLang[lang]` y un precio por idioma. Ese precio sale de `product-prices.ts` (usd del productId EN) o de un `priceByLang` colocado después de `description`, para no romper los regex de catalogo_productos ni de sync-product-prices. Añadir un gate: ningún banner del blog EN apunta a `/kit-escandallos` ni contiene «€12»."
+   },
+   {
+    "id": "T7",
+    "severidad": "media",
+    "seccion_spec": "§3 Backend (admin)",
+    "problema": "La SPEC solo registra el producto en `admin-generate-access.ts`. El formulario `/admin/generar-acceso` tiene su propio desplegable hardcodeado: sin la entrada EN, John no puede generar el magic link de un comprador EN, que es la vía de recuperación de acceso. Este mismo desfase ya ha pasado dos veces y está anotado en el propio fichero.",
+    "evidencia": "src/pages/AdminGenerateAccess.tsx:5-40: lista `PRODUCTS` fija, con los comentarios «fix del gap 27→44 … no estaban en el select» y «2026-09-06: el desplegable se había quedado en 44 mientras las functions ya tenían 47». Montado por astro-site/src/pages/admin/generar-acceso.astro. SPEC.md:142.",
+    "arreglo": "Añadir a §3: entrada `{ id: 'recipe-costing-kit', label: 'Recipe Costing Kit (EN, $19)' }` en AdminGenerateAccess.tsx y, por coherencia, el espejo `src/data/productos-digitales-config.ts`. Añadir a gate-flujo-postpago (sección A) el cruce de los ids del desplegable admin contra PRODUCTS."
+   },
+   {
+    "id": "T8",
+    "severidad": "media",
+    "seccion_spec": "§0 tabla («Compra: comprar uno no da acceso al otro»)",
+    "problema": "Lo que afirma la tabla no se cumple con la configuración por defecto. verify-purchase firma el JWT del producto que pide el cliente con CUALQUIER sesión pagada, salvo que `PURCHASE_VALIDATION=strict`, y el valor por defecto es `soft`. Una sesión del kit ES de 12 € enviada con `product: 'recipe-costing-kit'` obtiene el kit EN, y al revés. Además, mientras payment-links.ts no tenga la entrada EN, el veredicto es 'unknown' y la validación deja pasar.",
+    "evidencia": "netlify/shared/purchase-validation.ts:12-18 y 33 (default 'soft'; 'unknown' deja pasar). netlify/functions/verify-purchase.ts:404-419 (solo corta con mismatch y strict; si no, `jwt.sign({email, product: productId})`). Memoria reference_validacion-producto-sesion-y-webhook-stripe.md:51 («default soft»; el paso a strict está aparcado por John). SPEC.md:30.",
+    "arreglo": "Reescribir la fila: «comprar uno no da acceso al otro SOLO con PURCHASE_VALIDATION=strict (hoy soft, decisión de John)». Añadir a la compra de prueba de §4 F3: verificar en los logs `[purchase-validation]` que la sesión EN resuelve a `recipe-costing-kit` (match) y no a 'unknown'."
+   },
+   {
+    "id": "T9",
+    "severidad": "media",
+    "seccion_spec": "§4 F2 gate 2 · §2.5 transversal · D13",
+    "problema": "Los gates de restos no dicen DÓNDE buscan, y lo que queda en español o en € vive fuera de los valores de celda. (1) Las 1.027 celdas con € lo llevan en el `number_format`, no en el valor: un escaneo de valores las da por limpias. (2) En §2.5 falta el campo de metadatos `category` («AI Chef Pro · Productos digitales»). (3) El errorTitle de las 58 DV es «Valor no válido». (4) Hay 93 celdas con formato `dd/mm/yyyy` (06 `Checklist Evento` ×2, 09 `Mermas Semanal` ×1, BONUS `Checklist Mermas` ×90), pero el inventario dice que solo está 09!B2 y §2.5 solo menciona la fecha del 09. (5) El PDF en Letter cambia su nº de páginas, y `paginas-gate.py` solo lee `productos/**` (ES).",
+    "evidencia": "Scan openpyxl: FMTS `#,##0.00 €` / `#,##0 €` en todas las hojas de datos; `dd/mm/yyyy` en 06 (2), 09 (1) y BONUS (90). docProps/core.xml del 01: `<cp:category>AI Chef Pro · Productos digitales</cp:category>`. DV errT «Valor no válido». F1-inventario-es.md:78 («el único formato de fecha es dd/mm/yyyy (09 Mermas Semanal!B2)»). SPEC.md:110-111, 156 y 159. paginas-gate.py:1-20.",
+    "arreglo": "Definir el alcance del gate 2: valores, `number_format`, nombres de hoja, mensajes y títulos de DV, títulos de gráfico, pies y cabeceras, y TODOS los campos de docProps (title, subject, keywords, description, category). Añadir `category` a §2.5 («AI Chef Pro · Digital products»). Añadir al gate 5: cero formatos con `€` y cero con `dd/mm`. Hacer que el gate de páginas lea también `productos-en/**`, o comprobar a mano el nº de páginas del PDF EN contra la landing."
+   },
+   {
+    "id": "T10",
+    "severidad": "media",
+    "seccion_spec": "§4 F2 gate 4 («Ejemplos creíbles»)",
+    "problema": "El gate 4 no se puede calcular tal como está escrito. Las 28 recetas de ejemplo tienen VACÍA la celda del precio actual de carta, así que el FOOD COST REAL sale en blanco en todas. El food cost a precio sugerido es igual al objetivo por construcción (precio = coste ÷ objetivo), y D12 no da rangos de coste por ración. El gate pasaría en vacío y no cazaría un precio 10 veces mal (ver T2) ni una cantidad absurda en lb/oz.",
+    "evidencia": "Script de solo lectura sobre los 12 xlsx: en 01-08, la celda I de «PVP actual en carta (sin IVA)» vale None en las 28 hojas de receta y el FOOD COST REAL cacheado es None (por ejemplo, `Escandallo!I39`/`J40`). Fórmula `J33 = J30/I32`. SPEC.md:158.",
+    "arreglo": "Redefinir el gate 4: por receta, un precio de carta US de referencia con fuente (o `[estimado]`) en `mercado_en.json`; food cost implícito = coste por ración (caché) ÷ ese precio, dentro del rango D12 de su tipo de local; pour cost de las 4 recetas del 04 entre 18 y 24 %. Decidir si ese precio de referencia se precarga además en la celda de precio actual (es contenido, no estructura) para que el ejemplo enseñe el food cost real."
+   },
+   {
+    "id": "T11",
+    "severidad": "media",
+    "seccion_spec": "§3 (CryptoPayButton con lang; componentes compartidos del dashboard) · §4 F3",
+    "problema": "La SPEC exige que el ES quede «byte a byte idéntico», pero ningún gate puede demostrarlo. `tienda-gate --es-identico` solo compara las 5 landings KitExcel, y CryptoPayButton lo montan las 5 plantillas más páginas propias (unas 48 landings ES). Los 4 componentes React del dashboard son islands client:only, sin HTML que comparar. Por el mismo motivo, el dashboard EN, el gate de acceso EN y cualquier resto «€9 / Ver Pro Prompts eBook» de la copia de KitEscandallosDashboard.tsx escapan a la búsqueda de «€» y de restos de español de tienda-gate, que solo lee HTML.",
+    "evidencia": "scripts/productos-digitales/tienda-gate.py:66 (`KITEXCEL_ES` = 5 rutas) y :444 (`es_identico` recorre solo esas 5). `grep -rl CryptoPayButton astro-site/src`: KitExcel, Guia, KitTareas y PlanNegocio LandingPage, ProPromptsEbookPage, mega-pack-tareas.astro, guia-pasteleria/chocolateria-obrador.astro. F1-inventario-es.md:435 (venta cruzada «€9» en KitEscandallosDashboard.tsx:170). SPEC.md:141 y 144.",
+    "arreglo": "Añadir a §4 F3: (1) `--es-identico` sobre una muestra de cada plantilla que monta CryptoPayButton (al menos 1 Guía, 1 KitTareas, 1 Plan, pro-prompts-ebook y mega-pack-tareas), o ampliar KITEXCEL_ES; (2) para los componentes React compartidos, un diff del render ES con `react-dom/server` en el scratchpad, antes y después; (3) un grep estático de «€», de restos de español y de rutas ES (`/productos-digitales`, `/kit-escandallos`) sobre RecipeCostingKitDashboard.tsx, su island y los wrappers EN."
+   },
+   {
+    "id": "T12",
+    "severidad": "baja",
+    "seccion_spec": "D13 (Letter) · §2.1",
+    "problema": "Además de censo-entregables, hay otro script que asume A4 y ES y que llegaría a la carpeta EN. `postprocess-transversal.py all` procesa toda carpeta de `dl/` salvo `kit-tareas-pasteleria`. Sobre `dl/recipe-costing-kit/`, como paperSize ≠ 9 no cuenta como «impresión completa»: forzaría A4, el pie «Página &P de &N» y metadatos en español (subject «… · v1.1», category «Productos digitales»).",
+    "evidencia": "scripts/productos-digitales/postprocess-transversal.py:80 (`EXCLUIDOS = {'kit-tareas-pasteleria'}`), :1347-1349 (modo `all`), :458 (`paperSize = 9`), :466 (pie ES), :351-362 (`set_metadata`), :494-497 (`_impresion_completa` exige paperSize 9).",
+    "arreglo": "Añadir a §2.1 o §4: meter `recipe-costing-kit` (y, en general, los slugs de `productos-en/**`) en `EXCLUIDOS` de postprocess-transversal.py dentro del mismo commit que publica `dl/recipe-costing-kit/`."
+   },
+   {
+    "id": "T13",
+    "severidad": "baja",
+    "seccion_spec": "D2 · §3 Hub EN / Blog EN",
+    "problema": "El producto tendría dos nombres visibles. El H1 decidido es «Recipe Costing Kit», pero la tarjeta del hub EN, el `name.en` del catálogo y los 26 banners del blog EN dicen «Recipe Costing Kit Pro». Incumple la regla «el nombre del enlace = el de la página de destino». `nombre-gate.py` solo lee `productos/**` y `name.es`, así que no lo detectaría.",
+    "evidencia": "astro-site/src/components/pages/DigitalProductsHubPage.astro:158 (`name: 'Recipe Costing Kit Pro'`). src/data/products-catalog.ts:51 (`en: 'Recipe Costing Kit Pro'`). `grep` en astro-site/src/content/blog/en: 26 × «Recipe Costing Kit Pro for €12». nombre-gate.py (docstring: compara `name.es` y fichas de `productos/**`). SPEC.md:40 y 148-149.",
+    "arreglo": "Unificar el nombre en «Recipe Costing Kit» en la tarjeta del hub, en `name.en` del catálogo, en los 26 banners (mismo parche) y en productLabel / `<title>` del dashboard. Ampliar nombre-gate a `productos-en/**` con `name.en`."
+   },
+   {
+    "id": "T14",
+    "severidad": "baja",
+    "seccion_spec": "§2.2 (gate de referencias a hojas)",
+    "problema": "El gate de §2.2 solo cubre fórmulas, DV, CF, gráficos y áreas de impresión. No revisa los TEXTOS que citan pestañas fuera de Instrucciones ni el mensaje de error de la DV. Si una traducción deja una pestaña con un nombre distinto del real, nada lo detecta.",
+    "evidencia": "01 `Escandallo`: error de la DV «Elige una categoría de la lista (hoja «Mermas»).» (29 reglas). 04 `Formatos de Compra!E5:E10` (nombres de pestaña de cóctel) y `A2` / `A18`. 06 `Presupuesto!B3` («Presupuesto Cliente») y `B6` («Cocktail (por persona)»). 09 `Evolución!A2` y `A6` («Mermas Semanal»). SPEC.md:75-78.",
+    "arreglo": "Ampliar el gate de §2.2: extraer de todas las celdas de texto y mensajes de DV los nombres entre «» o '' y los valores de la columna «Where it's used» del 04, y exigir que cada uno esté en `wb.sheetnames` del mismo libro (o en una lista blanca de conceptos que no son pestañas)."
+   },
+   {
+    "id": "T15",
+    "severidad": "baja",
+    "seccion_spec": "§5.1 · §4 F3",
+    "problema": "Ningún gate comprueba que el Payment Link EN cobra lo que anuncia la landing (USD 19.00, y no EUR ni otro importe) ni que redirige a `/en/digital-products/recipe-costing-kit/access`. `audit-payment-links.py`, que sí valida el redirect contra el accessPath de PRODUCTS, no está en la lista de F3. La SPEC tampoco fija `tax_behavior` del Price ni los contextos de la env var: si solo se da de alta en producción, el gate de landing (buy.stripe.com, sin '#comprar') falla contra el deploy preview.",
+    "evidencia": "scripts/productos-digitales/audit-payment-links.py:1-22 (comprueba el redirect a accessPath; no mira moneda ni importe). gate-flujo-postpago.py:21-24 (la landing debe llevar buy.stripe.com). manual-manager-SPEC.md:125 (precedente: «scope builds, todos los contextos», `tax_behavior exclusive`). SPEC.md:28 y 170-172.",
+    "arreglo": "Añadir a §4 F3: `audit-payment-links.py` en verde para el link EN, más una consulta a Stripe (CLI) del Price del link: currency=usd, unit_amount=1900 = `product-prices.ts` usd 19. En §5.1, fijar `tax_behavior` (y que las `currency_options` GBP/CAD/AUD vayan con IVA incluido para el consumidor UK) y dar de alta la env var en todos los contextos."
+   }
+  ]
+ },
+ "mercado": {
+  "veredicto": "LISTO_CON_CAMBIOS",
+  "hallazgos": [
+   {
+    "id": "M1",
+    "severidad": "alta",
+    "seccion_spec": "§2.5 fila 04 · §4 F2 gate 1 · D7",
+    "problema": "La hoja `Bottle Sizes` hereda la fórmula `D5:D16 = ROUND(C*100/B,4)`: pide el tamaño de botella en CENTILITROS y devuelve el precio POR LITRO. Todo el 04 está escrito sobre cl y €/L. La SPEC pide «750 ml (25.4 fl oz), 1 L, 1.75 L», pero el gate 1 prohíbe tocar la fórmula. Así hay dos salidas y las dos fallan: (a) la columna se queda en cl, una unidad que un bartender de EE. UU. no usa; si teclea 750, el coste por litro sale 10 veces más bajo y la hoja no avisa; (b) se cambia la fórmula y el gate 1 cae. La SPEC no decide cuál.",
+    "evidencia": "04-cocktails-bebidas.xlsx: `Formatos de Compra!B4` «Formato de compra (cl)»; `D5` `=IFERROR(ROUND(C5*100/B5,4),\"\")` (igual en D6:D16); `Gin Tonic Premium!C5`='L' y `D5`=`'Formatos de Compra'!$D$5`; `Instrucciones!B9` («cantidades de destilados en CL y precio en €/L»); SPEC.md:100 y :155",
+    "arreglo": "Declarar en §2.5/04 una excepción explícita al gate 1: `Bottle Sizes!B` en ml (en EE. UU. los formatos legales de destilado son métricos: 750 ml, 1 L, 1.75 L) y `D5:D16 =IFERROR(ROUND(C5*1000/B5,4),\"\")` = «Price per liter». Las filas de cóctel compran en `L` y usan `fl oz` (clave `L→fl oz` = 33.814). Reescribir `Instrucciones!B9-B10`, `A2` y `A18` con el ejemplo recalculado. El gate comprueba que los tamaños de ejemplo sean 750, 1000 o 1750."
+   },
+   {
+    "id": "M2",
+    "severidad": "alta",
+    "seccion_spec": "§3 Blog EN (`urlByLang`) y enlazado entrante",
+    "problema": "`products-catalog.ts` tiene un único precio, `'€12'`. `localize()` localiza la URL con `urlByLang`, pero el precio no. Las páginas de casos de uso EN pintan la tarjeta del kit con `p.price`. En cuanto se active `urlByLang.en`, como manda la SPEC, esas páginas enlazarán a la landing de $19 anunciando «€12». Además, `banner()` del ensamblador usa `d['url']` y `d['precio']`: cada post EN nuevo o re-bannerizado volverá a emitir «Get Recipe Costing Kit Pro for €12» hacia `/kit-escandallos`, y deshará el parche de los 26 banners.",
+    "evidencia": "src/data/products-catalog.ts:50 (`price: '€12'`) y :549-556 (`url: productUrl(entry, lang)`, `price: entry.price`); astro-site/src/components/pages/UseCasePageContent.astro:287 (`getProductsByIds(content.productIds, lang)`) y :670-675 (`href={p.url}` … `{p.price}`); src/data/use-cases-content.en.ts: 51 listas `productIds`, 51 apariciones de 'kit-escandallos'; scripts/astro-migration/fase8c-libreria-assemble.py:263-269 (el parser solo lee url/price) y :335",
+    "arreglo": "Añadir a §3: precio por idioma en el catálogo (`priceByLang: { en: '$19' }`, o `usd` leído de `netlify/shared/product-prices.ts`) usado por `localize()`, y que `catalogo_productos()`/`banner()` y `fase8e-banners-corpus.py` usen URL y precio por idioma. El gate de recuento del parser se mantiene; la línea nueva va después de `description`. Gate F3: cero «€» en el HTML de las páginas `/en/use-cases/*` y en los banners EN que apunten al kit."
+   },
+   {
+    "id": "M3",
+    "severidad": "media",
+    "seccion_spec": "D4 (anclas en USD)",
+    "problema": "Subir cada importe en € por separado al escalón $…9 rompe sumas que en ES cuadran (49 + 46 = 95; 27 + 19 = 46; 49 − 12 = 37). Con cualquier tipo entre 1,10 y 1,20 sale: precio tachado $59; bonos $39 + $29 = $68, pero el texto dice «valued at $59»; total $119 ≠ $59 + $68 = $127; «Save $49 today» cuando $59 − $19 = $40. El % recalculado (−68 %) sí cuadra.",
+    "evidencia": "astro-site/src/data/productos/kits/kit-escandallos.ts:183 («valorados en €46»), :189 (€27), :197 (€19), :257-258 (cta «(€27)», «(€19)»), :283 (€49), :285 (−75 %), :288 («€95 — (€49) + (€46)»), :289 («Ahorra €37»); SPEC.md:42; cálculo con tipos de 1,05 a 1,25 en el scratchpad",
+    "arreglo": "En D4, convertir y subir al escalón solo los importes BASE (priceOld y el valor de cada bono) y derivar el resto: valor de los bonos = suma de los bonos; total = priceOld + bonos; ahorro = priceOld − 19; % = 1 − 19/priceOld. Añadir un gate sobre el data file EN que compruebe esas cuatro identidades y que `cta.items` repita los valores de `bonus.items`."
+   },
+   {
+    "id": "M4",
+    "severidad": "media",
+    "seccion_spec": "D7 · §2.3 (hoja Conversions)",
+    "problema": "La tabla del research §4.3 que D7 manda cargar no funciona tal cual. (a) Claves duplicadas: `bottle→fl oz` ×3 (750 ml, 1 L y 1.75 L) y `bottle→ml` ×2; VLOOKUP solo lee la primera. (b) Tamaños distintos para la misma unidad: al copiar «todas las parejas del ES», `bottle→ml` = 700 y `can→ml` = 330 conviven con `bottle→fl oz` = 25.36 (750 ml) y `can→fl oz` = 12 (355 ml). (c) `imperial pint`, `UK fl oz` e `imperial gallon` no están en el desplegable, así que sus filas son inalcanzables. (d) Faltan 69 parejas de la misma magnitud entre unidades del desplegable, entre ellas combinaciones de cocina diarias en EE. UU.: qt→cup, qt→pt, pt→cup, qt→tbsp, cup→tsp, gal→tbsp, ml→tsp, fl oz→cup, L→cup y qt→ml. El usuario verá «check units» en combinaciones corrientes, y el gate §2.3 solo mira las filas de ejemplo.",
+    "evidencia": "F1-research-us-uk.md:258-272; 01-escandallo-estandar.xlsx `Conversiones!A30:C35` (botella 70 cl y lata 33 cl, una clave por pareja, con la nota «cambia el 70 por 75»); SPEC.md:45 y :83-86; recuento por script en el scratchpad (3 claves duplicadas, 69 parejas sin factor)",
+    "arreglo": "En D7, generar `Conversions` por script como cierre completo de cada magnitud a partir de los factores NIST: masa lb/oz/kg/g (16 parejas) y volumen gal/qt/pt/cup/fl oz/tbsp/tsp/L/ml/cl (100). Añadir count (each/dozen/case) y envases con UN solo tamaño en todas sus claves (bottle = 750 ml, can = 12 fl oz = 355 ml), con la nota del ES trasladada («for 1 L / 1.75 L bottles, change…»). Lo imperial va solo como nota en Instrucciones, o también al desplegable. Gate: cero claves duplicadas y toda pareja de la misma magnitud del desplegable resuelve."
+   },
+   {
+    "id": "M5",
+    "severidad": "media",
+    "seccion_spec": "§2.1 (flujo textos_en → mercado_en) · D12",
+    "problema": "Varias Instrucciones llevan escritas cifras que salen de valores que la SPEC cambia: comisión del 30 % → 25 %, botella de 70 cl → 750 ml, lata de 33 cl, IVA del 10 %, precios en €, ratio de camareros. §2.1 traduce `textos_es.json` cadena a cadena y `mercado_en.json` solo sobrescribe celdas de dato. Esas cifras llegarían bien traducidas pero falsas frente a la hoja EN. Por ejemplo, con un 25 % de comisión, un 30 % sobre neto equivale a un 22,5 % sobre bruto, no al «~21 %» del ES.",
+    "evidencia": "10: `Instrucciones!B21` («con un 30 % de comisión, un plato de 18 € deja 12,60 €»), `B22` y `Calculadora PVP!B20` («~21 %», «comisión 25-35 %»); 04: `Instrucciones!B9` (5 cl, 28 €/L, 1,40/1,43 €), `B10`, `Formatos de Compra!A2` («infravalora un 30 %») y `A18` (19,60 €, 70 cl); 01: `Instrucciones!B39` y `Conversiones!C30` (70 cl / 33 cl); 11: `Instrucciones!B19` («unos 3 puntos», derivado del 10 %; con VAT del 20 % son ~5); 06: `Checklist Evento!B15` («1 por cada 22 pax») y `Presupuesto!B37` («por encima de los 100 €»); 05: `Instrucciones!B11` (bote de 50 g)",
+    "arreglo": "Añadir a §2.1 una lista cerrada de «textos con cifra derivada» (las celdas de la evidencia) que no se traducen de forma literal: se reescriben en `mercado_en.json` con la cifra recalculada desde la hoja EN final. Un gate recalcula cada ejemplo con los valores EN (comisión, tamaño de botella, precio y ratio) y compara."
+   },
+   {
+    "id": "M6",
+    "severidad": "media",
+    "seccion_spec": "D12 (alcance de los benchmarks)",
+    "problema": "D12 limita los benchmarks a «10-calculadora, 04, landing», pero cada plantilla repite su rango en Instrucciones y el bono tiene su propia tabla. Sin tocar esas celdas, el kit EN dirá pastelería 20-30 % en el 05 y 25-35 % en el 10, catering 30-40 % en el 06 y 28-35 % en el 10, y bar 20-25 % en la tarjeta de la landing. El ES ya tiene esta incoherencia: alta cocina 28-33 % en el bono frente a 25-28 % en la calculadora.",
+    "evidencia": "05 `Instrucciones!B12` (20-30 %), 06 `Instrucciones!B13` (30-40 %), 07 `Instrucciones!B10` (25-30 %), 08 `Instrucciones!B11` (28-35 %), 04 `Instrucciones!B13` (20-25 %); bono-guia-food-cost-30-dias.md:134-139 («referencia para España en 2026»); kit-escandallos.ts, tarjetas del grid Cocktails («20-25%») y Cafetería («25-30%»); SPEC.md:50 y :119",
+    "arreglo": "D12 pasa a ser la fuente única de la calculadora, de las Instrucciones del 04 al 08, de la landing (grid y FAQ «Is 30% a typical food cost?») y de la sección «Is your food cost good or bad?» del bono. Un gate de texto busca rangos «NN-NN %» en xlsx, .md y data file y exige que coincidan con D12."
+   },
+   {
+    "id": "M7",
+    "severidad": "media",
+    "seccion_spec": "D8 (terminología: GP % y Q-factor)",
+    "problema": "(a) «Gross profit % (GP %)» va en la fila `Margen bruto (%)`, que se calcula sobre el precio SUGERIDO: `(J33−J30)/J33` = 1 − food cost objetivo, un 70 % fijo en el ejemplo. Un británico lee «GP %» como el margen real de su carta y verá un 70 % que no se mueve con su precio. (b) «Q-factor / hidden costs» se asigna a una fila cuya definición ES es «energía, envasado y pérdidas de preparación» (en el 05, «energía del horno»). En la matemática culinaria de EE. UU., el Q-factor cubre condimentos, aceite, guarnición y envases, no la energía, que es overhead y queda fuera del food cost %. Traducida literal, la Instrucción contradice su propio rótulo e infla el food cost frente a los benchmarks de D12.",
+    "evidencia": "01 `Escandallo!A36:J37` (`J37 =IFERROR((J33-J30)/J33,\"\")` → 0,70) y `A40/J40` (= J30/I39); 01 `Instrucciones!B28`; 05 `Instrucciones!B31`; F1-research-us-uk.md:51-53 (Q-factor = seasonings, oil, garnish, packaging; UK «Target GP %» / «actual GP %»); SPEC.md:46",
+    "arreglo": "En D8, las filas 36-37 pasan a «Gross profit per portion (at suggested price)» y «Target GP % (at suggested price)»; la fila 40, a «Actual food cost % (actual GP % = 100 % − this)». Redefinir en `textos_en` la Instrucción del Q-factor sin energía: «seasonings, oil, garnish, packaging and small prep losses you don't cost line by line»; en el 05, lo mismo sin «oven energy»."
+   },
+   {
+    "id": "M8",
+    "severidad": "media",
+    "seccion_spec": "D16 · §3 (landing y dashboard)",
+    "problema": "D16 solo quita la frase de Sheets de la FAQ, pero la copia traducida arrastra la misma promesa en otros campos y en el dashboard, y además vende un producto ES en €. El dashboard EN, «copia traducida», diría «Compatible with Excel, Google Sheets, LibreOffice and Numbers» y «See Pro Prompts eBook — €9». El dashboard se pinta `client:only`, así que `tienda-gate --base` no ve ese texto en el HTML.",
+    "evidencia": "astro-site/src/data/productos/kits/kit-escandallos.ts:59-60 y :226-227 (FAQ «todas las fórmulas se mantienen»), :126-129 (`compatApps` «Compatible con Excel, Google Sheets, PDF»), :166-168 (`compatPills` Sheets, LibreOffice, Numbers y WPS); src/pages/KitEscandallosDashboard.tsx:150 y :164-170 (`/pro-prompts-ebook`, «€9»); astro-site/src/pages/kit-escandallos-library.astro (island `client:only`); SPEC.md:54 y :139",
+    "arreglo": "En §3, hasta que pase el test de Sheets, `compatApps`, `compatPills`, las dos FAQ y la línea del dashboard dicen solo «Microsoft Excel». La venta cruzada del dashboard EN se quita o apunta al hub EN. Gate F3 propio: grep de «€», «Sheets», «Numbers» y «LibreOffice» en `RecipeCostingKitDashboard.tsx` y en el data file EN."
+   },
+   {
+    "id": "M9",
+    "severidad": "media",
+    "seccion_spec": "D10 · D11 · §4 F2 gate 4 (precios de ejemplo)",
+    "problema": "D11 enumera 9 artículos «no medidos», pero los ejemplos llevan 126 ingredientes distintos con precio (más 15 del BONUS y 7 de `Formatos de Compra`), y el research solo trae fuente para 24. Quedan sin fuente, entre otros: jamón ibérico (40 g por invitado, la partida más cara de la recepción), manchego, salmón ahumado, langostino, croquetas, trufa negra, vieira, atún rojo, carrillera ibérica, feta, AOVE, fondo oscuro y contramuslo. Además, el gate 4 permite «corregir el precio» para meter la receta en el rango de D12, lo que equivale a fabricar un precio para cuadrar un porcentaje.",
+    "evidencia": "SPEC.md:48-49 y :158; F1-research-us-uk.md:489-522 (22 precios BLS + 2 USDA); recuento de la columna D de las hojas de escandallo 01-08 por script (126 ingredientes); 06 `Cocktail (por persona)!A5:E5` (jamón ibérico 65 €/kg × 0,04 kg); TIENDA-INTERNACIONAL.md:33 («ejemplos» figura entre las variables de mercado)",
+    "arreglo": "D11: `mercado_en.json` con una fila por ingrediente (126 + 15 + 7), cada una con fuente o `[estimado]`, y un gate que falle si falta alguna. Gate 4: si una receta cae fuera de rango se corrige la CANTIDAD o el precio de carta del ejemplo, nunca un precio de ingrediente con fuente. D10: permitir sustituir un INGREDIENTE sin fuente ni disponibilidad en EE. UU. por otro medible (p. ej. Serrano en vez de Ibérico), manteniendo el plato, la hoja y la estructura."
+   },
+   {
+    "id": "M10",
+    "severidad": "media",
+    "seccion_spec": "§2.5 BONUS inventory & waste control",
+    "problema": "El consumo teórico del BONUS sale de la matriz de `Ventas del periodo`: cantidad bruta por ración, en la unidad de `Inventario!B`. §2.5 solo pide «15 productos en unidades US, precios USD». Si se convierten el stock y el precio a lb/qt pero no la matriz por ración (0,22 kg de solomillo, 0,34 kg de lubina…), el ejemplo mostrará una desviación real frente a teórico inventada, del orden de ×2,2.",
+    "evidencia": "BONUS-mermas-inventario.xlsx: `Ventas del periodo!A2`; `C3:Q3` (=Inventario!B5…); `C5:Q14` (0,22; 0,18; 0,34…); `C15` (SUMPRODUCT) → `Inventario!G5`; `Inventario!C5:E5` e `I5` (kg; 26 €/kg); SPEC.md:108",
+    "arreglo": "En §2.5/BONUS, convertir con el MISMO factor por producto el stock (C:E), el precio (I) y la matriz por ración (C5:Q14), y que las cantidades por ración coincidan con la AP qty de las recetas EN. Gate: la desviación relativa H/F de cada producto es igual a la del ES."
+   },
+   {
+    "id": "M11",
+    "severidad": "media",
+    "seccion_spec": "§2.5 fila 06 (Client Proposal) · D6",
+    "problema": "La única hoja que ve el cliente afirma tres veces que el precio lleva impuesto. Con el 0 % por defecto de D6, la traducción directa («Price per guest (tax incl.)», «Prices include tax») hace que un catering de EE. UU. prometa impuestos incluidos sin haberlos calculado; donde el catering tributa, el impuesto sale de su margen. §2.5 solo dice «impuesto según D6», y D6 no cubre los textos para el cliente. Además, el inventario apuntaba el *service charge* como variable de mercado del catering y la SPEC lo dejó fuera.",
+    "evidencia": "06-catering.xlsx: `Presupuesto Cliente!D7` («Precio por persona (IVA incl.)»), `B13` («TOTAL (IVA incluido)») y `A15` («Precios con IVA incluido»); `D8 = 'Presupuesto'!C32` (con el tipo de `C31`); `Instrucciones!B12`; SPEC.md:44 y :102; F1-inventario-es.md:556 (*service charge*)",
+    "arreglo": "En §2.5/06, textos por defecto coherentes con el 0 %: D7 «Price per guest», B13 «TOTAL», A15 «Quote valid for 30 days. Applicable sales tax is added to the final invoice. …». Instrucciones: «UK/AU: set your VAT/GST rate in the Event Quote and change A15 to “Prices include VAT/GST”». Decidir en F2 si una fila libre (B9:B11) lleva de ejemplo «Service charge», sin tocar fórmulas."
+   },
+   {
+    "id": "M12",
+    "severidad": "media",
+    "seccion_spec": "§5 (pendientes de John) · §3 Cripto",
+    "problema": "El diálogo cripto EN enlazará `/en/terminos` como condiciones de compra y devolución, y esa página solo trata la suscripción del SaaS («renewals are automatic according to the chosen plan»). No dice nada de la compra única de un producto digital, de la garantía de 30 días ni de la renuncia al desistimiento de 14 días (UK/EU) que el propio diálogo pide marcar. §5 no lo recoge. El ES tiene el mismo hueco en es.json:1174.",
+    "evidencia": "src/i18n/locales/en.json:1153-1167 (bloque `terms`; :1164 «renewals are automatic»); astro-site/src/pages/en/terminos.astro (island de esa copia); astro-site/src/components/CryptoPayButton.astro:498 (enlace a condiciones) y :505 (renuncia); SPEC.md:144; TIENDA-INTERNACIONAL.md:208",
+    "arreglo": "Añadir a §5, como decisión legal de John antes de F3, una sección EN de condiciones de compra de productos digitales: pago único, acceso de por vida, garantía de 30 días y renuncia al desistimiento donde aplique (EU/UK). Será el destino del enlace del diálogo cripto EN y la URL de términos del Payment Link USD si se activa la aceptación de condiciones."
+   },
+   {
+    "id": "M13",
+    "severidad": "media",
+    "seccion_spec": "§2.6 (bono PDF)",
+    "problema": "§2.6 manda mantener el «caso práctico (32 % → 27 %)», pero el caso del bono es: 32 % declarado → 35,36 % real → 31,8 % en 30 días. Un redactor que siga la SPEC «corregirá» el caso hacia el 27 % e inventará cifras que no casan con sus propias tablas. El error viene del research.",
+    "evidencia": "scripts/productos-digitales/kit-escandallos-v2_0/bono-guia-food-cost-30-dias.md:491, :503, :516 y :595; SPEC.md:123; F1-research-us-uk.md:532 (origen); el inventario §3 lo describe bien",
+    "arreglo": "SPEC §2.6: «Mismo caso práctico (32 % declarado → 35,36 % real → 31,8 % en 30 días), con los mismos porcentajes e importes en USD»."
+   },
+   {
+    "id": "M14",
+    "severidad": "baja",
+    "seccion_spec": "D15 («menu engineering»)",
+    "problema": "D15 afirma que la ingeniería de menú no está en el kit, pero el bono incluye «Paso 5: Ingeniería de menú básica»: matriz de Kasavana & Smith (estrellas, caballos, puzzles y perros) con tabla del top 10. Ese mismo paso lleva la venta cruzada a la guía ES. La decisión de no prometerlo en el copy puede mantenerse, pero la corrección a TIENDA §2 se haría con un motivo falso, y el bono EN seguirá enseñando menu engineering.",
+    "evidencia": "bono-guia-food-cost-30-dias.md:231-255 (:254, venta cruzada); SPEC.md:53; F1-research-us-uk.md:420-421",
+    "arreglo": "Reescribir D15: «el kit solo incluye una introducción a menu engineering en el bono (paso 5)». La landing puede decir «includes a basic menu-engineering step in the 30-day guide» sin prometer análisis de menú en las plantillas; la venta cruzada de :254 se quita, como ya prevé §2.6."
+   },
+   {
+    "id": "M15",
+    "severidad": "baja",
+    "seccion_spec": "D2 · §3 (nombre del producto)",
+    "problema": "D2 llama al producto «Recipe Costing Kit», pero la tarjeta del hub EN, el catálogo del blog, los 26 banners y los spokes EN dicen «Recipe Costing Kit Pro». §3 no ordena unificarlo, y la regla del proyecto exige que el nombre del enlace coincida con el de la página de destino.",
+    "evidencia": "astro-site/src/components/pages/DigitalProductsHubPage.astro:158; src/data/products-catalog.ts:51; 26 posts en astro-site/src/content/blog/en/ con «Get Recipe Costing Kit Pro for €12»; src/data/use-cases-content.en.ts:136-481; SPEC.md:40; CLAUDE.md del proyecto («El nombre del enlace debe coincidir con el de la página de destino»)",
+    "arreglo": "Fijar en D2 un único nombre y añadir a §3 su propagación: `name` del hub, `name.en` del catálogo, banners, spokes, título del dashboard, email de acceso, changelog y metadatos `title` de los xlsx."
+   },
+   {
+    "id": "M16",
+    "severidad": "media",
+    "seccion_spec": "§3 enlazado entrante (spokes EN de casos de uso)",
+    "problema": "Los spokes EN, que ya están en producción y serán la vía de entrada más numerosa al producto, atribuyen al kit funciones que ni el ES ni el EN tienen: importar el CSV de Avant-garde Cuisine, multiplicar el tiempo de mano de obra por el coste laboral cargado, «cargar tu recetario» y precio sugerido por canal, además de citar «€12» en la prosa. Con un producto de pago en su idioma, son promesas que el comprador EN no verá cumplidas.",
+    "evidencia": "src/data/use-cases-content.en.ts:250 («templates that ingest the CSV»), :260 («downloadable Excel template, €12 — load the CSV…»), :271 («multiplies it by your true loaded labor rate»), :357, :368 («load the 12 CSVs»), :383 («lets you load your recipe book»), :469 y :481; los 12 xlsx no tienen importación ni coste laboral (F1-inventario-es.md:71: 0 macros, 0 hipervínculos; solo IF, IFERROR, VLOOKUP, SUM…)",
+    "arreglo": "Añadir a §3, antes de `FAMILIAS.en.vivo = true`, una pasada de copy sobre `use-cases-content.en.ts`: describir el kit como plantillas donde se teclean ingredientes y precios (se pueden pegar desde el CSV del agente), y quitar la mano de obra, «load your recipe book» y «€12». Nombre según M15."
+   },
+   {
+    "id": "M17",
+    "severidad": "baja",
+    "seccion_spec": "D13 (fechas)",
+    "problema": "Hay 93 celdas con formato de fecha, no una como dice el inventario. Un `mm/dd/yyyy` fijo hace que un británico que teclee 03/10/2026 (3 de octubre en su Excel UK) lo lea después como «10/03/2026».",
+    "evidencia": "06 `Checklist Evento!B45:C45`, 09 `Mermas Semanal!B2` y BONUS `Checklist Mermas!A4:A93`, todas con `dd/mm/yyyy` (censo con openpyxl); F1-inventario-es.md:78 («el único formato de fecha»); SPEC.md:51",
+    "arreglo": "D13: en las 93 celdas, usar el formato de fecha corta del sistema (numFmtId 14, que Excel muestra según la configuración regional) o uno no ambiguo como `mmm d, yyyy`. Gate que cuente las 93."
+   },
+   {
+    "id": "M18",
+    "severidad": "baja",
+    "seccion_spec": "§3 / §4 F3 · §5.1",
+    "problema": "La F3 de la SPEC no incluye el broadcast EN, aunque la regla permanente pide uno por producto nuevo, en la cola de 5 días, y TIENDA §4 F3 y §6 lo exigen. §5.1 tampoco entrega a John el texto del producto Stripe (nombre y descripción en prosa de ~260 caracteres, según su regla) ni las cifras concretas de los `currency_options` GBP/CAD/AUD que recomienda.",
+    "evidencia": "SPEC.md:164-176; TIENDA-INTERNACIONAL.md:138 y :161; CLAUDE.md del proyecto, sección «Correos de producto»; MEMORY.md («Stripe descriptions — prosa ~260 chars, NUNCA bullets» y «Stripe details al terminar producto»)",
+    "arreglo": "Añadir a §3 el broadcast EN (segmento EN de Resend, saludo «Hi everyone,», hueco = último `scheduled_at` + 5 días a las 08:00 UTC). Añadir a §5.1 un bloque listo para John: nombre, descripción en prosa, imagen y precios en GBP/CAD/AUD calculados el día en que cree el link."
+   },
+   {
+    "id": "M19",
+    "severidad": "baja",
+    "seccion_spec": "§2.5 fila 03 (prix fixe)",
+    "problema": "«Pan, bebida y café por comensal» es el paquete del menú del día español; en un prix fixe o set lunch de EE. UU. o del Reino Unido, bebida y café no van incluidos (el research lo marca: «No existe el concepto español»). Si §2.5 los rellena con «USD realistas», el ejemplo carga al precio del menú costes que el comprador EN no incluye.",
+    "evidencia": "03-menu-del-dia.xlsx: `Resumen Menú!B8:C10` (0,15 / 0,40 / 0,20 €) y `Rotación Semanal!H5` (los suma cada día); F1-research-us-uk.md:61; SPEC.md:99; tarjeta «Menú del Día» del grid ES («extras (pan, bebida, café)»)",
+    "arreglo": "03: rótulos «Bread & butter», «Drink (if included)» y «Coffee (if included)», con bebida y café a 0 por defecto y una nota en Instrucciones; el texto de la tarjeta del grid EN, en consonancia."
+   },
+   {
+    "id": "M20",
+    "severidad": "baja",
+    "seccion_spec": "§2.5 filas 06 y 08 (coste de personal)",
+    "problema": "§2.5 pide la tarifa por hora de EE. UU. «con fuente (BLS/OEWS o convenio de eventos)». En EE. UU. no existe un «convenio de eventos», y OEWS da el salario bruto del empleado, no el coste por hora para la empresa, que es lo que pide la celda: faltan las cargas del empleador, por ejemplo el FICA del 7,65 %. Tomar el dato OEWS tal cual subestima el coste del personal del evento y del food truck.",
+    "evidencia": "06 `Presupuesto!B12` («Coste por hora de camarero») y `B14` (jefe de sala); 08 `Punto de Equilibrio!B9` («Personal (2 personas × jornada)»); SPEC.md:102 y :104",
+    "arreglo": "En 06 y 08: coste por hora = salario OEWS de la ocupación + cargas del empleador en un % declarado `[estimado]`, o tarifa de una agencia de personal para eventos con fuente. Quitar «convenio de eventos»."
+   },
+   {
+    "id": "M21",
+    "severidad": "baja",
+    "seccion_spec": "D8 · D9 («waste» para merma y desperdicio)",
+    "problema": "El kit ES separa la merma (despiece y limpieza, dentro del coste del plato) del desperdicio (lo que se tira, hoja 09), y la 09 lo avisa expresamente. Con D8/D9 las dos cosas se llaman «waste»: columna «Waste %», hoja «Waste Factors» y hoja «Weekly Waste Log». El aviso de la 09 quedaría como «trim waste does not go in the waste log». En la cocina de EE. UU. la merma es «trim loss» o «yield», y el propio research recomienda usar «yield».",
+    "evidencia": "09-control-mermas.xlsx `Mermas Semanal!A23`; F1-research-us-uk.md:45, :109, :115 y :340 («yield percentage» 320 búsquedas/mes; «usar plate cost y yield»); SPEC.md:46",
+    "arreglo": "D8/D9: columna «Trim loss %» (cabecera «Yield % = 100 % − trim loss %») y hoja «Yield Factors» (o «Trim Loss Factors»); «waste» queda solo para la 09 y el BONUS."
+   },
+   {
+    "id": "M22",
+    "severidad": "baja",
+    "seccion_spec": "§3 FAQ · D14",
+    "problema": "Faltan dos respuestas que el comprador EN necesita. (1) Moneda: la landing marca $19, Stripe cobra £ o CAD con Adaptive Pricing y los xlsx van sin símbolo; «Can I use it in £, € or CA$?» no está en la FAQ propuesta. (2) Actualizaciones: la FAQ ES promete nuevas plantillas y mejoras sin coste, pero en un producto independiente eso obliga a portar cada versión ES al EN, y D14 no dice cuándo se hace.",
+    "evidencia": "kit-escandallos.ts:71 y :238 («¿Incluye actualizaciones futuras?… las recibirás sin coste»); F1-research-us-uk.md:401-404 (FAQ EN propuesta, sin moneda); SPEC.md:43 y :52",
+    "arreglo": "Añadir la FAQ de moneda («amounts have no currency symbol; checkout shows your local currency»). En D14, fijar la regla: cada cambio de versión del ES se porta al EN en la siguiente sesión EN de la rotación, con su entrada de changelog y su broadcast EN."
+   }
+  ]
+ }
+}
