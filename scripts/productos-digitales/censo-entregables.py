@@ -63,7 +63,9 @@ Qué mide cada campo y por qué (para no reinventar la rueda leyendo el código)
                    objetiva de "☐ con desplegable" (P3a ya saneado) frente a
                    "☐ muerta" (defecto real, sin desplegable). El campo que
                    activa --fail es box_colA_muerta = box_colA − box_colA_dv.
-    noprint        nº de hojas cuyo page_setup.paperSize != 9 (9 = A4). Antes
+    noprint        nº de hojas cuyo page_setup.paperSize != 9 (9 = A4; en los
+                   productos EN de PRODUCTOS_LETTER o con --letter, != 1 = US
+                   Letter, SPEC recipe-costing-kit §2.1). Antes
                    de la Fase A casi todas las hojas nuevas no tienen
                    paperSize fijado (None) y algunos visores imprimen en
                    Letter o con márgenes por defecto.
@@ -118,6 +120,8 @@ Uso:
                        (modo informe).
   --quiet              No imprime la tabla por producto; solo el resumen final
                        (y el --json si se pidió). Útil para correrlo en bucle.
+  --letter             Exige US Letter en vez de A4 (productos de la tienda EN;
+                       los de PRODUCTOS_LETTER ya lo exigen por nombre de carpeta).
 
 Tiempo de referencia: ~2 min para los ~645 ficheros de dl/ (dos aperturas de
 openpyxl por xlsx: normal y data_only). Corre EN SERIE — no paralelizar: es
@@ -140,6 +144,15 @@ except ImportError:
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DL = os.path.join(ROOT, 'astro-site', 'public', 'dl')
+
+#: Productos de la tienda internacional en inglés (TIENDA-INTERNACIONAL.md): sus entregables se
+#: imprimen en US Letter (paperSize 1), no en A4 (SPEC de recipe-costing-kit §2.1 y D13). Para una
+#: RUTA de carpeta (el dry-run del scratchpad, cuyo basename no es el producto) se declara con
+#: `--letter`. En esas carpetas se exige Letter (un A4 cuenta como defecto) y la hoja de texto
+#: que no necesita ajuste ni pie es «Instructions».
+PRODUCTOS_LETTER = frozenset({'food-cost-templates'})
+PAPEL_A4, PAPEL_LETTER = 9, 1
+HOJAS_TEXTO = ('Instrucciones', 'Índice', 'Indice', 'Instructions')
 
 RX_NONLAT = re.compile(
     '[぀-ヿ㐀-䶿一-鿿가-힯Ѐ-ӿ؀-ۿ֐-׿฀-๿]'
@@ -198,7 +211,7 @@ def _dv_lista_en(ws, coord):
     return False
 
 
-def censar_xlsx(path, prod, fname):
+def censar_xlsx(path, prod, fname, papel=PAPEL_A4):
     r = dict(prod=prod, f=fname, tipo='xlsx')
     try:
         wb = openpyxl.load_workbook(path, data_only=False)
@@ -236,8 +249,8 @@ def censar_xlsx(path, prod, fname):
         fit = (ws.sheet_properties.pageSetUpPr.fitToPage
                if ws.sheet_properties.pageSetUpPr else None)
         pie = ws.oddFooter.center.text if ws.oddFooter and ws.oddFooter.center else None
-        es_texto = ws.title in ('Instrucciones', 'Índice', 'Indice')
-        if ws.page_setup.paperSize != 9 or (not es_texto and (not fit or not pie)):
+        es_texto = ws.title in HOJAS_TEXTO
+        if ws.page_setup.paperSize != papel or (not es_texto and (not fit or not pie)):
             noprint += 1
         for row in ws.iter_rows():
             for c in row:
@@ -376,10 +389,11 @@ def recorrer(only=None):
     return items
 
 
-def censar_uno(prod, fname, path):
+def censar_uno(prod, fname, path, letter=False):
     ext = fname.lower().rsplit('.', 1)[-1]
     if ext == 'xlsx':
-        return censar_xlsx(path, prod, fname)
+        papel = PAPEL_LETTER if (letter or prod in PRODUCTOS_LETTER) else PAPEL_A4
+        return censar_xlsx(path, prod, fname, papel)
     if ext == 'docx':
         return censar_docx(path, prod, fname)
     if ext == 'pdf':
@@ -462,6 +476,9 @@ def main():
     ap.add_argument('--json', default=None, help='Vuelca la lista completa aquí')
     ap.add_argument('--fail', action='store_true', help='Exit 1 si hay defectos en algún producto')
     ap.add_argument('--quiet', action='store_true', help='No imprime la tabla, solo el resumen')
+    ap.add_argument('--letter', action='store_true',
+                    help='Exige US Letter (paperSize 1) en vez de A4: para una ruta de carpeta de un '
+                         'producto EN (los de PRODUCTOS_LETTER ya lo exigen por su nombre)')
     args = ap.parse_args()
 
     items = recorrer(args.only)
@@ -471,7 +488,7 @@ def main():
 
     rows = []
     for i, (prod, fname, path) in enumerate(items, 1):
-        rows.append(censar_uno(prod, fname, path))
+        rows.append(censar_uno(prod, fname, path, letter=args.letter))
         if not args.quiet and i % 100 == 0:
             print(f'  ... {i}/{len(items)}', file=sys.stderr)
 
