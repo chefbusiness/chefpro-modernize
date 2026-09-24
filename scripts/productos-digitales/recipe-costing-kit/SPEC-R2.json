@@ -1,0 +1,380 @@
+{
+ "tecnica": {
+  "veredicto": "LISTO_CON_CAMBIOS",
+  "hallazgos": [
+   {
+    "id": "R2T-01",
+    "severidad": "alta",
+    "seccion_spec": "D7 · §2.3 · §4 gate 3/6",
+    "problema": "La regla de D7 no produce «unas 224 claves». Aplicada tal como está escrita da 279 claves. Con la exclusión cup/tbsp/tsp del research, que D7 no recoge, da 261-264. Con 279, la tabla ocupa A5:A283 y el rango fijo `$A$5:$B$260` deja fuera las 23 últimas claves generadas: las del 1/6 bbl keg y el 50 L keg, que darían «check units». No quedan filas libres, así que el gate 6 falla y las «~30 filas vacías» no existen. El 224 del research no se reproduce con ninguna de las dos reglas.",
+    "evidencia": "Simulación en el scratchpad (`sim_d7.py`, factores NIST): masa 4×4 = 16; volumen 11×11 = 121; recuento 4; bunch 1-2; can y bottle 2×13; packs 110; total 279. Con la variante del research, 264. Lista de 33 unidades = 241 caracteres, dato correcto. SPEC.md:86 («Unas 224 claves», «$A$5:$B$260»). F1-8b-B.md:218 (la exclusión de tbsp, tsp y cup como destino de barriles y cajas de bebida) no está en D7.",
+    "arreglo": "Escribir en D7 la regla cerrada: si lleva la exclusión cup/tbsp/tsp, qué packs cuentan como «bebida» y si `bunch→each` existe. `mapas.py` calcula n y de n salen el rango de las 453 fórmulas G (`$A$5:$B${4+n+30}`) y el print_area de Conversions. El gate afirma que el rango llega a la última clave + 30. Quitar «224» y «260» como valores fijos del texto."
+   },
+   {
+    "id": "R2T-02",
+    "severidad": "media",
+    "seccion_spec": "§2.3 (gate 3 y mapa de unidades)",
+    "problema": "El gate 3 («toda pareja de la misma magnitud entre unidades del desplegable resuelve») contradice D7. Los packs son solo unidad de compra: no hay claves X→pack ni pack→pack. can y bottle no se cruzan entre sí. Así, 188 parejas de la misma dimensión quedan sin clave por diseño y el gate fallaría siempre. Además, §2.3 mapea `sobre → packet`, pero `packet` no está entre las 33 unidades de D7.",
+    "evidencia": "`sim_d7.py`: entre las 33 unidades hay 459 parejas de la misma dimensión y 188 quedan sin clave con la regla de D7 (p. ej. lb→50 lb bag, 50 lb bag→40 lb case, can→bottle). SPEC.md:184 (`sobre` → packet) frente a SPEC.md:86 (lista sin packet). Censo de las columnas C/F en las 156 filas de ejemplo ES: solo aparecen kg→kg, L→L, ud→ud, L→cl, docena→ud y manojo→manojo; ninguna usa «sobre».",
+    "arreglo": "Reescribir el gate 3 en cuatro reglas: (1) toda pareja base↔base de la misma dimensión resuelve; (2) cada pack resuelve a su identidad, a las unidades base de su dimensión (menos las excluidas) y a sus subunidades; (3) can y bottle resuelven a volumen, a each y a sí mismas; (4) ninguna clave tiene un pack como destino salvo la identidad. Quitar `sobre → packet` de §2.3, o añadir `packet` a la lista (quedaría en 248 caracteres)."
+   },
+   {
+    "id": "R2T-03",
+    "severidad": "media",
+    "seccion_spec": "§4 gate 1 · §0.1 (excepciones E1-E4)",
+    "problema": "El gate 1 exige «mismas DV», salvo los mapas y E1-E4. Pero la DV de unidades no se mapea, se sustituye: pasa de 11 a 33 elementos. Aplicar el mapa de claves-dato a la lista ES da 11 unidades EN, no las 33 de D7. Una implementación literal del gate 1 falla en las 28 reglas de unidades.",
+    "evidencia": "Las 28 hojas de receta ES (openpyxl) tienen la regla `\"kg,g,L,ml,cl,ud,docena,manojo,sobre,lata,botella\"` sobre `C5:C24 F5:F24` o equivalente. SPEC.md:26-30 (E1-E4), :86, :330.",
+    "arreglo": "Añadir E5 a §0.1: «la lista literal de la DV de unidades se sustituye por la de D7». El gate comprueba que el sqref, el tipo y el errorStyle no cambian y que la lista es exactamente la de D7."
+   },
+   {
+    "id": "R2T-04",
+    "severidad": "media",
+    "seccion_spec": "§2.5 fila 06 · D19",
+    "problema": "Renombrar `Presupuesto!C25` («Margen sobre servicios (%)») como «Service charge (%)» cambia el significado sin cambiar la fórmula. C25 es un recargo interno sobre personal, menaje, transporte y montaje, y queda dentro del precio por invitado. Un service charge de EE. UU. es una línea visible de la factura, normalmente sobre comida y bebida. Resultado: `Client Proposal` diría «the service charge is not a gratuity» sin que exista ninguna línea de service charge. Y C35 calcularía el food cost sobre un total que lo incluye, lo que contradice D19.",
+    "evidencia": "06-catering.xlsx: `Presupuesto!B25/C25` = 0,2; `C27 = (C15+C18+C19+C20)*(1+C25)`; `C29 = MAX(C26+C27,C28)`; `C35 = C7/C29`. `Presupuesto Cliente!D8 = 'Presupuesto'!C32`, `B9:B11` vacías, texto en `A15`. SPEC.md:98 (D19) y :211.",
+    "arreglo": "Mantener C25 como «Markup on services (%)», de uso interno. El service charge de EE. UU. va como texto: A15, «A __ % service charge on food & beverage is added to the final invoice; it is not a gratuity». Las Instrucciones explican cómo usar la fila libre B9 (concepto, comensales e importe a mano) si el catering lo cobra. Ninguna fórmula nueva."
+   },
+   {
+    "id": "R2T-05",
+    "severidad": "media",
+    "seccion_spec": "§2.5 BONUS inventory & waste control",
+    "problema": "La instrucción de pegar «plato + unidades vendidas» del product mix del TPV en `Sales for the Period` A-B estropea el consumo teórico. Cada fila de la matriz por ración C5:Q14 pertenece al plato de esa fila. Un export del TPV, con otro orden y decenas de artículos, deja platos en filas cuyas cantidades por ración son de otro plato, sin ningún aviso. Además solo hay 10 filas.",
+    "evidencia": "BONUS-mermas-inventario.xlsx: `Ventas del periodo!A2` («Una fila por plato…»); `A5:B7` (3 platos de ejemplo); `C5:Q14` (cantidades por ración); `C15 = SUMPRODUCT($B$5:$B$14,C5:C14)`. SPEC.md:217.",
+    "arreglo": "Cambiar la instrucción: «Escribe tus platos una vez, cada uno con su receta por ración. En cada periodo copia del product mix SOLO las unidades vendidas en la columna B, en la fila de su plato». Nunca se pega sobre la columna A."
+   },
+   {
+    "id": "R2T-06",
+    "severidad": "media",
+    "seccion_spec": "§2.0 libro 12 (Test de despiece)",
+    "problema": "El test de despiece da dos salidas incompatibles para la ficha. «Merma % para el escandallo = 1 − rendimiento» ignora el crédito de los subproductos; el «coste por kg útil» sí lo descuenta. Si los subproductos tienen valor, la ficha (precio AP con esa merma en H) da un coste distinto al del propio test. Ejemplo: 10 kg a 20 €/kg, 7 kg útiles y 1,5 kg de subproducto a 4 €/kg → coste por kg útil 27,71 €; la ficha con merma del 30 % calcula 20 ÷ 0,7 = 28,57 €/kg (+3,1 %). Tampoco hay fila para la pérdida de corte (AP − suma de componentes).",
+    "evidencia": "SPEC.md:122 y :125. En la ficha ES, `Escandallo!I5 = E5/(1-H5)` y `J5 = I5*D5/G5`, es decir, coste = cantidad ÷ (1 − merma) × precio AP. `H24` está desbloqueada (celda verde), así que el usuario sí teclea ahí la merma del test.",
+    "arreglo": "Dar una sola salida hacia la ficha: «merma equivalente = 1 − 1/factor de coste», que se usa con el precio AP, o bien «usa el coste por kg útil como precio, con merma 0 %». Las Instrucciones lo dicen así. Añadir la fila «pérdida de corte = AP − Σ componentes». Gate 7bis: el coste por kg útil del test = precio AP ÷ (1 − merma equivalente)."
+   },
+   {
+    "id": "R2T-07",
+    "severidad": "media",
+    "seccion_spec": "§2.0 libro 12 · §0.1 (regla de copia) · D9 · D8",
+    "problema": "Si la fórmula del coste por porción del libro 12 ES lleva la constante 1000 (g por kg), el EN (compra en lb, porción en oz, 16 oz por lb) tiene que cambiar la fórmula. Ese cambio no está entre E1-E4, así que o cae el gate 1 o se obliga a escribir la porción en lb. Además, los nombres de pestaña del 12 y del 13 no están en ningún mapa: D9 remite al research §1.3, que no los tiene. Y traducir el tipo «Desecho» como «Waste» choca con D8.",
+    "evidencia": "SPEC.md:122 («porción estándar y coste por porción»), :125, :218 (EN en lb/oz); :26-30 (E1-E4); :88 (D9 remite al research §1.2-1.3); F1-research-us-uk.md:108-117 (sin pestañas del 12/13); SPEC.md:87 (D8: «waste» solo en el 09 y el BONUS).",
+    "arreglo": "En §2.0, ninguna constante de unidad dentro de una fórmula del 12: la porción va en la misma unidad que los pesos, o hay una celda verde «unidades de porción por unidad de peso» (ES 1000, EN 16). Fijar ya los nombres EN, sin apóstrofos para no tener que escaparlos en las fórmulas: p. ej. `Butcher Yield Test`, `Cooking Loss Test`, `Price List`. En la DV del tipo de componente: `Usable / By-product / Trim (no value)`."
+   },
+   {
+    "id": "R2T-08",
+    "severidad": "media",
+    "seccion_spec": "§2.0 libro 13 (Lista de precios) · D11 · §4 gate 4",
+    "problema": "Cinco huecos. (a) «Precio anterior» no dice si es el del formato o el precio por unidad base; si es el del formato, un cambio de tamaño de envase da una variación falsa. (b) Precargar ~120 filas con precio anterior obliga a inventar un segundo precio por ingrediente: D11 lo prohíbe en EN, y su lista cerrada (126 + 15 + 7) no cubre los datos del 12 ni del 13. (c) En ~120 filas no caben los 148 ingredientes de D11. (d) Con la protección por defecto (sort y autoFilter bloqueados) no se puede ordenar ni filtrar la lista por proveedor o categoría. (e) Ningún gate comprueba que el 13 y la ficha den el mismo precio para el mismo ingrediente.",
+    "evidencia": "SPEC.md:130-133; :90 (D11: 126+15+7); :333 (el gate 4 solo mira recetas). En 01 `Escandallo` (openpyxl): `ws.protection.sort = True`, `autoFilter = True`.",
+    "arreglo": "Rotular «Previous price per base unit» y calcular variación = (precio por unidad base − anterior) ÷ anterior. En el ejemplo, precio anterior vacío o con fuente fechada (p. ej. la serie BLS del mes anterior). D11 incluye filas para el 12 (pesos y valor de subproductos) y para el 13. Tabla de 150 filas o más, o un subconjunto declarado. Protección con `sort=False` y `autoFilter=False`, con autofiltro definido. Gate: para cada ingrediente que esté a la vez en el 13 y en una ficha, precio del formato ÷ contenido = precio de la ficha ÷ factor."
+   },
+   {
+    "id": "R2T-09",
+    "severidad": "media",
+    "seccion_spec": "D2 · §0.2 · §2.1 · §3 Hub EN · §4 F3",
+    "problema": "Tras D17 quedan cifras que se contradicen. D2 fija el title «11 Food Cost Templates» y D17 y §3 dicen 13. §0.2 dice «12 xlsx + PDF» y §2.1, «14 xlsx + PDF». La compra de prueba espera «13 descargas» y son 15 (11 + 2 nuevas + BONUS xlsx + PDF). La tarjeta del hub EN, que §3 solo toca por «10 venue types», dice además «11 Excel templates», «Preloaded standard waste rates» y «9 venue types», y enlaza a `/kit-escandallos`.",
+    "evidencia": "SPEC.md:81, :44, :151, :345, :311; astro-site/src/components/pages/DigitalProductsHubPage.astro:158-165.",
+    "arreglo": "D2: «13 Food Cost Templates». §0.2: «14 xlsx + PDF». §4: «15 descargas». §3, hub EN: «13 Excel templates», «trim loss» en lugar de «waste rates», «10 venue types» y slug a la landing EN."
+   },
+   {
+    "id": "R2T-10",
+    "severidad": "media",
+    "seccion_spec": "§2.0 (publicación del ES v2.1)",
+    "problema": "La lista de ficheros de la publicación ES se deja sitios que dicen «11». Faltan las tarjetas del kit en los hubs EN, FR, DE, IT, PT y NL (enlazan a la landing ES), la cabecera del dashboard ES, el email de acceso, el de reenvío y la FAQ de la Guía Food Cost. Tras la v2.1 dirían 11 mientras el dashboard ofrece 13.",
+    "evidencia": "DigitalProductsHubPage{,Fr,De,It,Pt,Nl}.astro:160-165 («11 Excel templates / modèles / Vorlagen / template / modelos / sjablonen»); src/pages/KitEscandallosDashboard.tsx:85 y :94 («Tus 11 plantillas + 2 bonus», «11 Plantillas + 2 Bonus»); netlify/functions/verify-purchase.ts:29 y resend-access.ts:30 («descargar las 11 plantillas Excel»); astro-site/src/data/productos/guias/guia-food-cost-ingenieria-menu.ts:146; SPEC.md:137-143.",
+    "arreglo": "Añadir esos 11 ficheros a la lista y un gate con grep: cero «11 plantillas/templates/…» asociados a kit-escandallos en astro-site/src, src/pages y netlify/functions. En el PR, `gate-flujo-postpago.py` con `--base <preview>`, porque la sección B comprueba los /dl/ en vivo."
+   },
+   {
+    "id": "R2T-11",
+    "severidad": "media",
+    "seccion_spec": "§2.0 gates · §3 (T11) · tienda-gate --es-identico",
+    "problema": "`--es-identico` no admite excepciones: compara las 5 landings KitExcel con producción y sale con 1 ante cualquier diferencia. Y /kit-escandallos cambia a propósito dos veces: en el PR ES v2.1 (de 11 a 13) y en el PR F3, donde pasa a `alternatesFamilia` con `vivo=true` y gana el hreflang en. Hoy no se puede expresar «solo cambian las landings esperadas», y en F3 la landing ES más expuesta se queda sin prueba de identidad.",
+    "evidencia": "tienda-gate.py:33-37 (docstring: «Sale 1 ante cualquier diferencia»), :66 (KITEXCEL_ES incluye /kit-escandallos), :444-461; tienda.ts:99-116; kit-escandallos.astro (`locales={['es']}`); SPEC.md:145, :258, :286, :290.",
+    "arreglo": "Añadir a «Gates que hay que ajustar antes» una opción `--excepto <ruta>` y, para /kit-escandallos, un diff que normalice solo el bloque hreflang/alternate (en F3) o solo el contenido de la ficha (en v2.1). Alternativa: correr `--es-identico` sobre un preview del PR F3 anterior al commit que pone `vivo=true`."
+   },
+   {
+    "id": "R2T-12",
+    "severidad": "media",
+    "seccion_spec": "§3 Cripto",
+    "problema": "El diálogo cripto guarda sus textos en un `<script is:inline>` con el español escrito a mano: 8 mensajes de error y «Continuar al pago» dos veces. §3 solo pide copy, países, enlace y renuncia. En la versión EN, el comprador vería los errores y el botón en español, y `tienda-gate --base` no lo detecta porque ignora `<script>`. Además, con la regla «ES byte a byte idéntico», traducirlo con `define:vars` cambiaría el script de las 48 landings ES.",
+    "evidencia": "astro-site/src/components/CryptoPayButton.astro:749-767 (objeto MSG), :807 y :903 (`submit.textContent = 'Continuar al pago'`); tienda-gate.py:29 («se ignoran <script>, <style>»); SPEC.md:289-301.",
+    "arreglo": "En §3: una rama EN aparte del `<script is:inline>`, dejando intacto el bloque ES. Y un grep propio sobre los `<script>` del HTML EN: cero «Continuar», «inténtalo», «escríbenos» y «pasarela»."
+   },
+   {
+    "id": "R2T-13",
+    "severidad": "media",
+    "seccion_spec": "D12 · §4 gate 6",
+    "problema": "El gate de texto de D12 («todo rango NN-NN % coincide con D12») falla con rangos legítimos que no son de food cost. El ES ya los tiene (objetivos de desperdicio del 09, comisión de delivery del 10) y la SPEC añade más (pour cost de destilados 18-20 %, prime cost 60-65 %, rendimientos típicos del 12). O sale siempre rojo, o alguien lo relaja a mano.",
+    "evidencia": "ES: 09 `Instrucciones!B23` y `Mermas Semanal!A24` (2-3 %, 3-5 %, 5-8 %, 1-2 %, 5-10 %); 10 `Calculadora PVP!B20` («la comisión de la plataforma (25-35 %)»). SPEC.md:91, :209 («destilados 18-20 %»), :239 («prime cost < 60-65 %»), :126 (rendimientos típicos), :335.",
+    "arreglo": "Limitar el gate a los rangos rotulados como food cost o pour cost objetivo de un tipo de local: el patrón «food cost … NN-NN %» o las celdas que alimenta D12. Para el resto, lista blanca por celda."
+   },
+   {
+    "id": "R2T-14",
+    "severidad": "media",
+    "seccion_spec": "D5 · §4 gate 2 · §2.1 (cifras derivadas) · D20",
+    "problema": "El gate 2 prohíbe «$» en cualquier valor de celda, textos incluidos. Pero la SPEC manda textos con importes de EE. UU.: las cifras derivadas recalculadas (M5: «un plato de 18 € deja 12,60 €» pasa a USD), los ejemplos de factura de D20 (saco de harina de $29,99) y el food truck a $465/día. Sin una regla de estilo, los traductores escribirán «$», el gate saldrá rojo y habrá que reescribir textos en bucle.",
+    "evidencia": "SPEC.md:84 (D5: cero $ en valores), :331 (el gate 2 busca en valores), :156 (textos con cifra derivada), :99 (D20), :213. ES: 10 `Instrucciones!B21` y 04 `Formatos de Compra!A18`, con importes en € dentro del texto.",
+    "arreglo": "Fijar la regla y enseñársela al gate 2. Dos opciones: en los textos, importes sin símbolo («an 18.00 dish»); o «$» permitido solo en las celdas de texto de Instructions y notas, nunca en number_format ni en celdas numéricas."
+   },
+   {
+    "id": "R2T-15",
+    "severidad": "media",
+    "seccion_spec": "§2.0 (el ES v2.1 arrastra un defecto conocido)",
+    "problema": "La v2.1 ES se publica con changelog y broadcast, pero deja vivo el defecto de `Conversiones` que documentó el propio research. El VLOOKUP acaba justo en la última fila de la tabla, mientras las Instrucciones prometen «añade las parejas que te falten». En los 8 libros ES, una pareja escrita en la fila 38 nunca se encuentra.",
+    "evidencia": "01-escandallo-estandar.xlsx: `Conversiones!A2` («Puedes añadir parejas al final»), `Instrucciones!B39`, y `Escandallo!G5` con `Conversiones!$A$5:$B$37` mientras la tabla acaba en A37. Son 453 fórmulas en 01-08 (recuento con openpyxl). F1-8b-B.md:182 («Es un defecto del ES, que no se toca en esta tarea»).",
+    "arreglo": "Incluirlo en §2.0: rango con filas libres (p. ej. `$A$5:$B$67`) en las 453 fórmulas y print_area de `Conversiones` ampliado, más el test del gate 6 en ES. Es cambio de rango, no de estructura, y el EN lo necesita igualmente (E2)."
+   },
+   {
+    "id": "R2T-16",
+    "severidad": "baja",
+    "seccion_spec": "D14 · §2.0",
+    "problema": "El EN se fecha «Version 2.0», con changelog «primera edición del contenido 2.0», pero incluye los libros 12 y 13, que son contenido 2.1. En ES, los 12 ficheros existentes seguirían diciendo «Versión 2.0» con el changelog en 2.1, cuando en la v2.0 se subió la línea en todos.",
+    "evidencia": "SPEC.md:93 (D14); :110 (solo los libros nuevos llevan «Versión 2.1»). Los 12 xlsx ES tienen en `Instrucciones` «Versión 2.0 · agosto 2026 · …» (openpyxl). src/data/productos-changelog.ts:351 («Número de versión actualizado a 2.0 en la hoja de instrucciones de cada fichero»).",
+    "arreglo": "ES v2.1: línea «Versión 2.1» en los 14 ficheros, con inject_cache. EN: «Version 2.1» y changelog «first English edition of content 2.1»."
+   },
+   {
+    "id": "R2T-17",
+    "severidad": "baja",
+    "seccion_spec": "§2.2 · §2.4 · §2.5 transversal · D13 · §2.1 (recuentos)",
+    "problema": "(a) Dos recuentos están mal: las DV `Mermas!` son 28, no 29 (el research §8.1 también dice 28), y las áreas de impresión son 59, no 71 (las hojas Instrucciones no tienen). (b) Los recuentos que hacen de gate (93 fechas, 58 DV, 29 «ALERTA» + 2 CF, 832 cadenas) no incluyen los libros 12 y 13. Esos libros añaden fechas (la del test y ~120 «fecha de la última factura»), DV (tipo de componente, unidad base), «ALERTA» (estado, COUNTIF y CF) y los literales de SUMIF (Útil / Subproducto / Desecho), que §2.4 no mapea.",
+    "evidencia": "Escaneo con openpyxl de los 12 xlsx ES: 849 fórmulas con referencia a hoja y 453 «revisa merma/unidades» (coinciden con la SPEC); 28 DV `Mermas!`, 58 DV en total, 29 fórmulas con «\"ALERTA\"», 2 reglas CF, 93 celdas de fecha y 59 print_area. SPEC.md:167, :170, :197-200, :225, :92, :153.",
+    "arreglo": "Corregir 29 → 28 y 71 → 59. Que los gates cuenten por regla («toda celda de fecha tiene numFmtId 14», «toda DV tiene errorTitle en inglés») y no por un número fijo. Añadir a §2.4 los literales del 12 y del 13."
+   },
+   {
+    "id": "R2T-18",
+    "severidad": "baja",
+    "seccion_spec": "§2.2 (gate de nombres de pestaña citados)",
+    "problema": "El gate busca nombres de pestaña entre «» o '' en los textos EN. El inglés tiene apóstrofos (el propio Q-factor de D8 dice «…you don't cost line by line»), así que emparejar comillas simples dará falsos positivos. Y si un traductor escribe “Recipe Cost Card”, la cita queda fuera del gate: falso verde.",
+    "evidencia": "SPEC.md:177 y :87 («don't»). 01 `Instrucciones!B8`: el ES ya cita con comilla simple («Ve a la pestaña 'Escandallo'»).",
+    "arreglo": "Fijar en el glosario una sola forma de citar pestañas en EN (p. ej. comillas dobles) y que el gate busque esa. Un tramo entre comillas simples solo cuenta si coincide con `wb.sheetnames` o con la lista blanca."
+   },
+   {
+    "id": "R2T-19",
+    "severidad": "baja",
+    "seccion_spec": "§2.5 filas 05 y 04 (ejemplos)",
+    "problema": "(a) En el 05, «compra en caja o lb y uso en g» no tiene clave para la leche `4x1 gal case` ni para los huevos `15 dz case`, porque D7 prohíbe volumen→masa y recuento→masa: esas filas darían «?». (b) En el 04, «precargar un vino de 750 ml en las filas vacías» duplica la fila 11, que ya es un vino de 75 cl.",
+    "evidencia": "SPEC.md:210 y :86 («cero peso↔volumen»). 05 ES: `Croissants!C7/F7` = L/L (leche) y `C11/F11` = docena/ud. 04 ES: `Formatos de Compra!A11:B11` = «Vino blanco de copeo», 75. SPEC.md:209.",
+    "arreglo": "05: leche con `4x1 gal case→fl oz` (o ml), huevos con `15 dz case→each`, y en gramos solo los secos y la grasa. 04: la fila 11 pasa a 750 ml y en las filas vacías solo se precarga el barril."
+   },
+   {
+    "id": "R2T-20",
+    "severidad": "baja",
+    "seccion_spec": "D7 (bottle y can «editables»)",
+    "problema": "Con la tabla generada, `bottle` y `can` tienen 13 claves cada uno, con el factor escrito como valor fijo. Un usuario del Reino Unido que cambie la botella a 70 cl edita una fila y deja las otras 10 de volumen en 750 ml, sin aviso. En el ES eran 3 filas con una nota.",
+    "evidencia": "SPEC.md:86 («editables, con aviso UK»); `sim_d7.py` (13 claves por envase); 01 ES `Conversiones!A30:C35` (3 filas de botella y 3 de lata).",
+    "arreglo": "Como `Conversions` ya es la excepción E1, las filas `bottle→X` y `can→X` distintas de `bottle→ml` y `can→ml` pueden ser fórmulas sobre esa celda (p. ej. `=B<bottle→ml>/29.5735295625`): se edita un solo valor y el aviso UK dice cuál. Alternativa: que en el Reino Unido se compre en `cl` o `ml`."
+   },
+   {
+    "id": "R2T-21",
+    "severidad": "baja",
+    "seccion_spec": "D2 · §3 · nombre-gate",
+    "problema": "`nombre-gate.py` ya está rojo en 44 de 48 productos, kit-escandallos incluido. El H1 de la plantilla KitExcel es un titular («Controla tu Food Cost») y `schema.productName` lleva «— 11 Plantillas…». Copiando el ES, el H1 EN sería «Control Your Food Cost» y no se cumpliría D2 («se propaga igual a H1»). En F3, un `nombre-gate` sin `--only` saldría rojo por los productos ES.",
+    "evidencia": "Ejecución de solo lectura de `nombre-gate.py --only kit-escandallos`: «H1 … 'Controla tu Food Cost'» y «productName … '— 11 Plantillas Excel Profesionales'». Sin `--only`: «48 producto(s) comprobado(s) · 44 con el nombre roto». SPEC.md:81, :309, :342.",
+    "arreglo": "Decidirlo en D2: `titlePre+titleGold` y `schema.productName` = «Recipe Costing Kit Pro» exactos, con la cifra en `titlePost` o en la descripción. En F3, `nombre-gate.py --only recipe-costing-kit` en verde."
+   },
+   {
+    "id": "R2T-22",
+    "severidad": "baja",
+    "seccion_spec": "§4 gate 4 (T10 de la R1 a medias)",
+    "problema": "T10 pedía decidir si el precio de carta de referencia se precarga también en la celda «Current menu price», para que el ejemplo enseñe el food cost real. La SPEC solo lo usa en el gate: en las 28 recetas, la fila 40 («Actual food cost %», D8) seguirá vacía.",
+    "evidencia": "SPEC-R1.json T10 («Decidir si ese precio de referencia se precarga además en la celda de precio actual»). 01 `Escandallo!I39` vacía, con `J40 = J30/I39`. SPEC.md:87 y :333.",
+    "arreglo": "Decidirlo en D10/D11. Recomendado: precargar I39 con el precio de referencia de `mercado_en.json`, que es contenido, para que el ejemplo muestre el food cost real y la CF en rojo."
+   },
+   {
+    "id": "R2T-23",
+    "severidad": "baja",
+    "seccion_spec": "D9 (nombre «Yield Factors»)",
+    "problema": "La hoja renombrada guarda pérdidas (típica, mínima y máxima: carne roja 20 %), no rendimientos. En culinary math, «yield factor» es la parte aprovechable (0,80). Un usuario de EE. UU. puede leer «Beef 20 %» como un 20 % de rendimiento, y además el nombre choca con la cabecera «Trim loss» de la ficha.",
+    "evidencia": "01 `Mermas!A4:D4` («Merma típica / Mínima / Máxima»), `B5` = 0,2. SPEC.md:87-88. SPEC-R1.json M21 («Yield Factors (o Trim Loss Factors)»).",
+    "arreglo": "Llamarla `Trim Loss Factors` (17 caracteres, sin apóstrofo) o `Trim Loss by Category`. «Yield» se reserva para el libro 12 y para la cabecera «Yield % = 100 % − trim loss %»."
+   },
+   {
+    "id": "R2T-24",
+    "severidad": "baja",
+    "seccion_spec": "§2.1 · §3 · §6 (orden, máquina y presupuesto)",
+    "problema": "(a) El gate 7 de F2 (`censo-entregables --fail` admitiendo Letter) necesita el ajuste del censo, pero la SPEC lo pone en «Gates que hay que ajustar antes» de la F3. (b) La F2-EN parte de los xlsx ES v2.1 publicados, así que el PR ES tiene que estar fusionado antes de la F2-EN, no solo «antes de la F3 EN». (c) La política de 3 fases manda la F2 de un producto M al VPS; la SPEC la hace en el Mac porque el venv del VPS no tiene openpyxl, sin registrarlo como excepción. (d) No hay subpresupuesto para la F2-ES: el tope de 6,5 M puede saltar con el EN a medias.",
+    "evidencia": "SPEC.md:307 frente a :336; :137 y :149 frente a :372-373; :160; CLAUDE.md:535 («F2 en el VPS para L/M»); SPEC.md:366-370; censo-entregables.py:240 (exige paperSize 9).",
+    "arreglo": "Pasar el ajuste del censo a la F2. Escribir «PR ES v2.1 fusionado antes de la F2-EN». Instalar openpyxl y pycel en el venv del VPS, o registrar la excepción con su motivo. Subpresupuestos (p. ej. F2-ES ≤ 1 M, F2-EN ≤ 1,8 M, F3 el resto), con aviso al pasar cada uno."
+   }
+  ]
+ },
+ "producto": {
+  "veredicto": "LISTO_CON_CAMBIOS",
+  "hallazgos": [
+   {
+    "id": "R2-01",
+    "severidad": "alta",
+    "seccion_spec": "§2.5 fila 06 (Service charge) · D19 · M11",
+    "problema": "La SPEC renombra el «margen sobre servicios» del ES a «Service charge (%)» al 20 %, pero esa fila no es un service charge. Es un recargo oculto sobre personal, menaje, transporte y montaje, que se funde en el precio por invitado. La propuesta al cliente no tiene ninguna línea de service charge y aun así la SPEC le hace decir «…the service charge is not a gratuity». Además, C35 calcula el food cost sobre una facturación que incluye ese recargo, lo que contradice D19 (ventas netas sin service charge). En el Reino Unido es peor: la Tips Act obliga a repartir el 100 % de cualquier service charge entre el personal, así que la plantilla enseñaría al catering a llamar «service charge» a su propio margen.",
+    "evidencia": "06-catering.xlsx: `Presupuesto!B25` «Margen sobre servicios (%)», C25 = 0.2 · `C27 = (C15+C18+C19+C20)*(1+C25)` · `C29 = MAX(C26+C27,C28)` · `C30 = C29/C5` · `C35 = C7/C29`. En `Presupuesto Cliente` solo B8 está rellena: E8 = C8×D8 y D8 = Presupuesto!C32, sin fila de service charge. SPEC.md:211 y :98 (D19). F1-8b-A.md:143 (Tips Act: 100 %, también de los service charges obligatorios).",
+    "arreglo": "Rotular C25 como «Markup on services (%)» y dejar la fórmula como está. El service charge US va como línea opcional que el usuario rellena en una fila libre de `Client Proposal` (B9:B11), con una nota en Instrucciones: en US, si es obligatorio, es ingreso del negocio y puede tributar (DOL FS#15); en UK, va íntegro al personal. A15 solo lo menciona si esa línea existe. D19 cubre también C35: «food cost on invoiced total, excl. any service charge»."
+   },
+   {
+    "id": "R2-02",
+    "severidad": "alta",
+    "seccion_spec": "§2.0 libro 12 (Test de despiece) · §2.5 fila 12 · gate 7bis",
+    "problema": "La cifra «merma % para el escandallo = 1 − rendimiento» no cuadra con el coste que calcula el propio test. La ficha calcula el coste así: cantidad EP ÷ (1 − merma) × precio AP. Así no descuenta el valor de los subproductos, y el test sí lo descuenta en su «coste por kg útil». El comprador pasa la merma del 12 a su ficha y obtiene un coste por ración distinto del que le dio el 12. Ejemplo: solomillo entero de 3 kg a 28,50 €/kg, 2,1 kg útiles (70 %) y 0,4 kg de subproducto a 8 €/kg. Coste por kg útil = 39,19 €. Una ración de 0,2 kg cuesta 7,84 € en el test y 8,14 € en la ficha con merma 30 % (+3,9 %). El gate 7bis pide un «coste por porción coherente» sin definir con qué, así que no lo caza.",
+    "evidencia": "01-escandallo-estandar.xlsx `Escandallo!I5 = E5/(1-H5)` y `J5 = IF(G5=\"?\",…,I5*D5/G5)`. SPEC.md:122 («coste neto útil = coste AP − subproductos… merma % para el escandallo = 1 − rendimiento»), :218 («remisión a Trim loss % de las fichas») y :337 (gate 7bis).",
+    "arreglo": "Que el 12 dé la cifra que hay que llevar a la ficha: «Trim loss % for your cost card» = 1 − precio AP ÷ coste por kg útil (= 1 − 1/factor de coste), que incluye el crédito de subproductos. O bien: coste por kg útil como precio, con la unidad kg/lb y merma 0. Gate 7bis: el coste por ración del 12 es igual al de una fila de la ficha 01 alimentada con esa cifra (tolerancia 0,5 %). Mostrar también el rendimiento bruto, como dato informativo."
+   },
+   {
+    "id": "R2-03",
+    "severidad": "media",
+    "seccion_spec": "D2 · §0.2 · §4 F3 (recuentos visibles tras D17)",
+    "problema": "La SPEC se contradice con D17 en el número de piezas. D2 fija el title SEO «…11 Food Cost Templates for Excel», y D17 dice «13 Food Cost Templates». La tabla de §0.2 entrega «12 xlsx + PDF» y §2.1, «14 xlsx + PDF». La compra de prueba de F3 comprueba «13 descargas», pero con D17 son 15: 13 plantillas, el BONUS xlsx y el PDF. Un gate de compra que busque 13 daría por buena una entrega a la que le faltan 2 ficheros.",
+    "evidencia": "SPEC.md:81 (D2, title con 11), :96 (D17, 13), :44 (12 xlsx + PDF), :151 (14 xlsx + PDF), :345 («13 descargas»). netlify/functions/get-download-urls.ts:5-19: el ES tiene hoy 13 claves (11 + BONUS xlsx + PDF), que pasan a 15 con v2.1.",
+    "arreglo": "D2: title «Recipe Costing Kit Pro: 13 Food Cost Templates for Excel». §0.2: «14 xlsx + PDF». §4 F3: «15 descargas». Añadir un gate que compare el nº de claves de `get-download-urls` de los dos productos con el grid de su landing."
+   },
+   {
+    "id": "R2-04",
+    "severidad": "media",
+    "seccion_spec": "§2.0 (publicación ES v2.1) · §3 (Hub EN)",
+    "problema": "Cambiar «11» por «13» no llega a todos los sitios. La lista de §2.0 se queda en «landing, hub ES, catálogo y FAQ», y el catálogo no lleva ningún número. Fuera de la lista quedan el email de acceso y el de reenvío, la cabecera del dashboard ES, la FAQ de venta cruzada de la Guía Food Cost y las tarjetas de los 6 hubs internacionales (EN, FR, DE, IT, PT, NL), que son copias del hub ES. La tarjeta EN dice además «Preloaded standard waste rates», contra D8, que reserva «waste» para el desperdicio.",
+    "evidencia": "netlify/functions/verify-purchase.ts:29 y resend-access.ts:30 («descargar las 11 plantillas Excel») · src/data/productos-digitales-config.ts:69 y :72 · src/pages/KitEscandallosDashboard.tsx:85 y :94 («11 Plantillas + 2 Bonus») · astro-site/src/data/productos/guias/guia-food-cost-ingenieria-menu.ts:146 («El Kit son 11 plantillas») · DigitalProductsHubPage.astro:160-163 (EN, «11 Excel templates», «waste rates») · DigitalProductsHubPageFr.astro:163/165, De:162, It:163/165, Pt:162/164, Nl:160 · kit-escandallos.ts:15, 17, 24, 26 (seo y JSON-LD), 183 y 288 (bonusTotalLabel) · src/data/products-catalog.ts:47-56 (sin número).",
+    "arreglo": "Sustituir la lista de §2.0 por la de la evidencia, que sale de un grep, y cerrar el PR ES con un gate: cero apariciones de `11 (plantillas|templates|modèles|Vorlagen|template|modelos|sjablonen)` ligadas a escandallos/recipe costing en src, astro-site/src y netlify. §3, Hub EN: «13 Excel templates» y «Preloaded trim-loss (yield) rates»."
+   },
+   {
+    "id": "R2-05",
+    "severidad": "media",
+    "seccion_spec": "D14 · D17 · §2.0 · §2.1 (EXCLUIDOS)",
+    "problema": "(1) D14 marca el EN como «Version 2.0 · September 2026» y su changelog como «primera edición del contenido 2.0», pero el EN se construye desde el ES v2.1 (D17, §2.1). Y «September 2026» va fijo en 14 ficheros que, con la rotación de 3 sesiones, casi seguro se publican en octubre. (2) El ES v2.1 mezcla versiones: 11 libros con «Versión 2.0», 2 con «2.1» y los 12 actuales con subject «Kit de Escandallos Pro · v1.1». (3) `postprocess-transversal.py all` procesa `dl/kit-escandallos`, que no está en EXCLUIDOS, y reescribe la línea de versión y el subject con VERSION = '1.1'. La SPEC solo excluye `recipe-costing-kit`.",
+    "evidencia": "SPEC.md:93 (D14), :96 (D17), :110 (línea «Versión 2.1») y :149-150. postprocess-transversal.py:80 (`EXCLUIDOS = {'kit-tareas-pasteleria'}`), :82 (`VERSION = '1.1'`), :360 (subject) y :1237-1243 (reescribe `^Versi[óo]n`). Subject de los 12 xlsx ES = «Kit de Escandallos Pro · v1.1» (openpyxl). TIENDA-INTERNACIONAL.md:29 (rotación). Las convenciones ya están en `kit-escandallos-v2_0/motor.py:46,61,762-770` (VERDE, VERSION_LINE, print_setup).",
+    "arreglo": "D14: «Version 2.1 · <mes de publicación> 2026», con el mes resuelto en `aplicar_en.py` al publicar; changelog EN «first English edition of content 2.1». §2.0: decidir si la línea de versión de los 11 libros ES pasa a 2.1 (solo texto) y fijar el subject en los 14. El generador v2_1 importa los helpers de `kit-escandallos-v2_0/motor.py`. Meter `kit-escandallos` en EXCLUIDOS en el mismo PR ES v2.1."
+   },
+   {
+    "id": "R2-06",
+    "severidad": "media",
+    "seccion_spec": "D7 · §2.3 gates 3 y 6 · E2",
+    "problema": "El recuento de claves no sale de la regla que escribe la SPEC. Aplicada literalmente, da 279 claves (filas 5-283). Con la exclusión del research («tbsp/tsp/cup no son destino de barriles ni cajas de bebida»), que D7 no recoge, da 264. En ningún caso da 224. Con el rango fijo `$A$5:$B$260`, entre 19 y 23 claves quedarían fuera del VLOOKUP: el mismo defecto T3, esta vez dentro de la tabla. El gate 3 («toda pareja de la misma magnitud entre unidades del desplegable resuelve») contradice la propia regla, que no genera 203 parejas de la misma dimensión (lb→50 lb bag, L→bottle, each→15 dz case…). La regla tampoco dice si L→bottle o bottle→can se generan. El 224 sale de `scratchpad/keys_en.py`, que no está en el repo.",
+    "evidencia": "SPEC.md:86 («Unas 224 claves», `$A$5:$B$260`) y :188-193. Simulación en el scratchpad (`d7sim.py`) con la lista de 33 unidades: 279 / 264 / 250 según las exclusiones. F1-8b-B.md:218 (la exclusión que falta en la SPEC) y :408 (keys_en.py no va al repo).",
+    "arreglo": "Escribir en D7 la regla completa: destinos permitidos por tipo de unidad de compra, con la exclusión de tbsp/tsp/cup, y can/bottle solo como origen. Rango = 4 + n_claves + 30, calculado por `mapas.py` y no fijo. Área de impresión igual. Gate 3: «toda pareja que la regla genera resuelve, y toda pareja de la misma dimensión con origen y destino no-pack resuelve». Versionar el generador de claves en el repo."
+   },
+   {
+    "id": "R2-07",
+    "severidad": "media",
+    "seccion_spec": "D7 (can/bottle) · D20",
+    "problema": "`can` vale 12 fl oz (lata de bebida) y la regla le da destinos de cocina: can→cup = 1,5, can→qt, can→tbsp… En una cocina de EE. UU., «can» en la factura es casi siempre la lata #10 de 12-13⅔ tazas. Quien compre tomate en `can` y use 2 `cup` obtiene factor 1,5 y un coste unas 8 veces mayor, sin «?» ni aviso. El ES no tiene este riesgo: lata solo va a cl/ml/L. La regla tampoco cumple lo de «bottle/can editables»: cambiar la botella a 70 cl (UK) obliga a editar 11 celdas, frente a las 3 del ES, y una sin editar descuadra el coste sin avisar.",
+    "evidencia": "SPEC.md:86 («can/bottle solo a volumen, each y sí mismas», «bottle = 750 ml y can = 12 fl oz, editables, con aviso UK»). F1-8b-B.md:117 (#10: 96-117 oz, 12-13⅔ tazas) y :160-162. 01 `Conversiones!A26:A35` (ES: lata→cl/ml/L, botella→cl/ml/L). Simulación: 13 claves por envase.",
+    "arreglo": "Destinos de `can` y `bottle`: fl oz, ml, cl, L, each y sí mismos (4 claves de tamaño por envase). Nada de cup, tbsp, tsp, qt, gal ni pt. Nota en C: «beverage can 12 fl oz — for #10 food cans buy in oz (see Instructions)». Añadir al gate 4 de §2.3: todas las claves de un envase usan el mismo tamaño."
+   },
+   {
+    "id": "R2-08",
+    "severidad": "media",
+    "seccion_spec": "D12 (gate de texto) · §4 gate 6",
+    "problema": "El gate de D12 («todo rango NN-NN % en xlsx, .md y data file coincide con D12») salta con rangos que la propia SPEC obliga a escribir y que no son benchmarks de tipo de local: pour cost por categoría 18-20 %, prime cost < 60-65 %, comisión de plataforma 25-35 % en la calculadora, service charge 18-22 %, y «the big chains run 28-36 %» en el PDF. O se abre la mano a mano y el gate deja de proteger, o bloquea contenido correcto.",
+    "evidencia": "SPEC.md:91 (gate D12), :209 («destilados 18-20 %…»), :239 («prime cost < 60-65 %»). 10-calculadora-pvp.xlsx `Calculadora PVP!B20` («comisión de la plataforma (25-35 %)»). F1-8b-A.md:145 (service charge 18-22 %) y :343 («28-36 %»).",
+    "arreglo": "Acotar el gate: solo compara los rangos que van junto a una etiqueta de tipo de local de D12 (fine dining, casual…, bar, delivery), o que están en las filas 9-18 de la calculadora y en el grid y la FAQ de la landing. Una lista blanca en `mercado_en.json` para pour cost por categoría, prime cost, comisión, service charge y cadenas."
+   },
+   {
+    "id": "R2-09",
+    "severidad": "media",
+    "seccion_spec": "§2.0 libro 13 (Lista de precios) · honestidad landing",
+    "problema": "El flujo que se promete («copia el precio por unidad base a la ficha») falla de tres formas. (1) Un copiar-pegar normal de una celda con fórmula a otro libro pega la fórmula con referencias relativas: en la columna D de la ficha, que está desbloqueada, queda algo como `=G5/E5` apuntando a Factor y Cantidad. El coste sale mal y no hay ningún error. (2) Con unidad base g, ml u oz, el precio por unidad sale por debajo del céntimo y el formato `#,##0.00` lo muestra como 0.00. Quien lo teclee a mano mete un 0. (3) El resumen «nº de ingredientes» pide COUNTA, que pycel no implementa. El gate 7bis («pycel sin errores») y la caché quedan en rojo.",
+    "evidencia": "SPEC.md:131-134. 01 `Escandallo!D5`: number_format `#,##0.00 €`, locked=False. censo-entregables.py:179 (`FUNCIONES_SIN_PYCEL = ('IRR','XIRR','PMT','COUNTA')`). Precedente dentro del kit: 06 `Checklist Evento!F42 = COUNTIF(B5:B40,\"?*\")`.",
+    "arreglo": "Columna «Price per base unit» con formato de 4 decimales. Instrucciones y landing: «Paste Special → Values (Excel Ctrl+Alt+V → V; Sheets Ctrl+Shift+V)». Recomendar kg/lb/L/each como unidad base para trasladar a la ficha. Contar ingredientes con `COUNTIF(rango,\"?*\")`. Gate 7bis: ninguna función de FUNCIONES_SIN_PYCEL en 12/13."
+   },
+   {
+    "id": "R2-10",
+    "severidad": "media",
+    "seccion_spec": "§2.0 libro 13 · §2.5 filas 12-13 · D10 · D11",
+    "problema": "(1) «~120 filas… precargada con los ingredientes de ejemplo de las plantillas»: los ejemplos tienen 126 ingredientes distintos, más los 15 del BONUS. (2) El 13 EN no puede salir de traducir el 13 ES: con D10 los ingredientes EN cambian (Serrano por Ibérico) y cambian también unidades y precios. Tiene que generarse desde `mercado_en.json`. (3) D11 solo exige fuente para 126 + 15 + 7 y no cubre los precios de los libros 12 y 13. (4) Precargar «fecha de la última factura» contradice D11 («en el xlsx no se fecha ningún precio»). Un «precio anterior» puesto para que salte la alerta es justo el precio fabricado para cuadrar un porcentaje que D11 prohíbe.",
+    "evidencia": "SPEC.md:130-133 (13), :89 (D10), :90 (D11: «126 + 15 + 7», «no se fecha ningún precio», «nunca se fabrica un precio… para que cuadre un porcentaje»). SPEC-R1.json M9 (126 ingredientes distintos).",
+    "arreglo": "13: tamaño de la tabla = ingredientes distintos de las recetas + 30 filas vacías. En EN se genera desde las recetas EN finales. D11 amplía su alcance a los ejemplos del 12 (pieza y subproductos) y del 13. Fechas vacías en la precarga. «Precio anterior» vacío salvo 1-2 filas de demostración, marcadas en la fila como «illustrative» y `[estimado]` en `mercado_en.json`."
+   },
+   {
+    "id": "R2-11",
+    "severidad": "media",
+    "seccion_spec": "D13 · gate 5 · §2.1 · §2.2 · §2.4",
+    "problema": "Los gates se apoyan en recuentos de la v2.0 que no cuentan los libros 12 y 13. D13 y el gate 5 exigen «las 93 celdas de fecha», pero el 12 lleva fecha en la cabecera y el 13 unas 120 fechas de factura. Si el ES v2.1 las formatea `dd/mm/yyyy`, que es la convención del kit, el gate no las revisa. Lo mismo con §2.4 («ALERTA» en 29 celdas y 2 reglas CF, cuando el 13 añade su columna de estado y su CF), §2.1 (832 cadenas) y §2.2 (849 fórmulas, 29 DV, 71 hojas).",
+    "evidencia": "SPEC.md:92 (93 celdas: 06 ×2, 09 ×1, BONUS ×90), :334 (gate 5), :199 (29 ALERTA + 2 CF), :154 (832 cadenas), :166-170. Diseño del 12/13: SPEC.md:120 (fecha) y :131 (fecha de la última factura, estado OK/ALERTA con CF).",
+    "arreglo": "Cambiar los recuentos fijos por un censo que se genera del ES v2.1 publicado (fechas, literales, DV, CF y hojas por libro) y que se guarda junto a `textos_es.json`. Los gates comparan contra ese censo. D13: los libros 12 y 13 ES nacen ya con `numFmtId 14`."
+   },
+   {
+    "id": "R2-12",
+    "severidad": "media",
+    "seccion_spec": "§6 Presupuesto",
+    "problema": "El techo no alcanza para el alcance y no hay reparto por fases, así que la regla de parar al 30 % saltará a mitad de F2 o F3. F1 lleva 2,1 M; con esta R2 al coste de la R1 (0,70 M) se llega a unos 2,8 M. El gate 8 prevé 2 rondas adversariales más, unos 1,4 M al mismo coste: total ≈ 4,2 M. Quedan unos 0,8 M hasta los 5 M, o 2,3 M hasta los 6,5 M. Con eso hay que hacer el ES v2.1 (generador, textos, gates, PR, broadcast), todo el F2-EN (≥ 832 cadenas, ≥ 148 precios con fuente, más 12/13) y todo el F3 (5 componentes con `lang` y diff de render, 5 funciones, admin, página cripto EN, 6 gates ajustados, catálogo/banners/spokes).",
+    "evidencia": "SPEC.md:366-370 (M ≤ 5 M, F1 ≈ 2,1 M, R1 0,70 M, parada a 6,5 M) y :338 (gate 8, 2 rondas). TIENDA-INTERNACIONAL.md:29 (rotación de 3 sesiones «con el mismo techo de tokens»).",
+    "arreglo": "Repartir el presupuesto ya por fase: F2-ES, F2-EN, rondas y F3, con su tope. Proponer a John que el ES v2.1 ocupe el hueco «v2.x ES» de la rotación con presupuesto propio, o que reclasifique el piloto a L. Registrar en el handoff lo consumido al cerrar cada fase."
+   },
+   {
+    "id": "R2-13",
+    "severidad": "media",
+    "seccion_spec": "§2.0 / §2.5 fila 12 (ejemplo) · §2.5 fila 01 · Yield Factors",
+    "problema": "El ejemplo del 12 (solomillo entero en ES, whole beef tenderloin PSMO en EN) dará una merma muy por encima de la que usa la ficha 01 para el mismo solomillo (20 %) y del rango «Carne roja» de la tabla de mermas (15-25 %). Un PSMO pierde en limpieza bastante más que un 25 % `[estimado, a medir en F2]`. El kit enseñaría dos cifras contradictorias para la misma pieza, y el 12 remite precisamente a esa columna. El gate 7bis solo comprueba que el rendimiento esté entre 0 y 1.",
+    "evidencia": "01-escandallo-estandar.xlsx `Escandallo!H5 = 0.2` (Solomillo de ternera) · `Mermas!B5:D5 = 0.2 / 0.15 / 0.25` (Carne roja). SPEC.md:126 y :218.",
+    "arreglo": "Decidir en la SPEC que la pieza del 12 es la misma que compra la 01 y que el Trim loss % de la 01 sale del 12 (la cifra efectiva de R2-02). Si no, la 01 compra la pieza ya limpia y su Instrucción lo dice. Gate 7bis: el Trim loss % de la fila 5 de la 01 = el resultado del 12, o una nota explica la diferencia."
+   },
+   {
+    "id": "R2-14",
+    "severidad": "baja",
+    "seccion_spec": "§2.3 (claves-dato) vs D7",
+    "problema": "§2.3 traduce `sobre` → `packet`, pero D7 no incluye `packet` en el desplegable. Las 3 claves ES de sobre (sobre→sobre, sobre→ud, sobre→g) quedan sin destino, y el gate 2 de §2.3 («las dos unidades de cada clave están en la lista») se contradice con el propio mapa.",
+    "evidencia": "SPEC.md:184 y :86 (lista de 33 unidades sin packet). 01 `Escandallo` DV C5:C24 F5:F24 = «kg,g,L,ml,cl,ud,docena,manojo,sobre,lata,botella»; `Conversiones!A24:A25, A37`. Ninguna fila de ejemplo usa sobre: las parejas usadas son kg→kg, L→L, ud→ud, L→cl, docena→ud y manojo→manojo.",
+    "arreglo": "O se añade `packet` (la lista pasa a 248 caracteres, sigue ≤ 255) con packet→packet y packet→each, sin peso, o se quita `sobre → packet` de §2.3 y se declara que las 3 claves ES no se portan."
+   },
+   {
+    "id": "R2-15",
+    "severidad": "baja",
+    "seccion_spec": "§4 F2 gate 7 vs §3 «Gates que hay que ajustar antes»",
+    "problema": "El gate 7 de F2 corre `censo-entregables.py --only recipe-costing-kit --fail` «con Letter admitido», pero el ajuste de censo para Letter está en la lista de F3. Hoy `noprint` (paperSize ≠ 9) es un defecto que activa --fail, así que el gate 7 fallará en F2 por construcción.",
+    "evidencia": "censo-entregables.py:390-392 (`DEFECTOS_XLSX` incluye 'noprint') y :240 (`paperSize != 9`). SPEC.md:336 (gate 7, F2) y :307 (ajuste en §3/F3).",
+    "arreglo": "Pasar «censo-entregables.py: Letter en carpetas EN» a F2, antes del gate 7, por ejemplo aceptando paperSize 1 cuando la carpeta es un slug de `productos-en/**`."
+   },
+   {
+    "id": "R2-16",
+    "severidad": "baja",
+    "seccion_spec": "§2.0 Gates del ES v2.1",
+    "problema": "(1) `tienda-gate --es-identico` no admite cambios esperados: compara las 5 landings KitExcel ES con producción y marca fallo en cuanto una difiere. `/kit-escandallos` cambia a propósito, así que el gate queda rojo en el PR ES y el «(solo cambian las landings esperadas)» de la SPEC no se puede ejecutar. (2) Los libros 12 y 13 ES se publican a compradores ES sin revisión adversarial: el gate 8 solo prevé lentes US/UK y técnica.",
+    "evidencia": "tienda-gate.py:444-461 (`es_identico` recorre KITEXCEL_ES y llama a `mal()` si hay diferencias; no hay lista de esperadas) y :66. SPEC.md:145 y :338.",
+    "arreglo": "Añadir `--esperadas /kit-escandallos` a `es_identico`, que para esa ruta imprima un diff de texto en vez de fallar, o ejecutarlo sin esa ruta. En §2.0, una ronda de revisión de los libros 12 y 13 con lente de chef/gerente español (1 ronda, dentro del tope de 2) antes del PR ES."
+   },
+   {
+    "id": "R2-17",
+    "severidad": "baja",
+    "seccion_spec": "D18 Licencia · §5.4",
+    "problema": "D18 no define «un negocio»: no dice si un grupo con varios locales compra una licencia o una por local. Las FAQ de licencia de los kits hermanos, que por la regla de duplicar pasarán tal cual a la tienda EN, conceden más: «todos tus locales», «todos los proyectos que gestiones… ideal para consultores». Además, la licencia solo iría en una FAQ y en una línea de los xlsx, no en las condiciones de compra EN que tiene pendientes John.",
+    "evidencia": "SPEC.md:97 (D18) y :360 (§5.4, sin licencia). astro-site/src/data/productos/kits/kit-inventario.ts:235 («en todos tus locales»), kit-plan-financiero.ts:266 («todos los proyectos que gestiones… consultores»), kit-gestion-personal.ts:251 («todos los establecimientos que gestiones»).",
+    "arreglo": "Precisar D18: «one business (all its locations) per purchase». Incluir la licencia en las condiciones EN de §5.4. Anotar en TIENDA que las FAQ de licencia de los kits hermanos se revisan contra D18 al duplicarlos."
+   },
+   {
+    "id": "R2-18",
+    "severidad": "baja",
+    "seccion_spec": "§2.5 filas 05 y 04",
+    "problema": "05: «compra en formato de caja o lb y uso en g» choca con dos de los ejemplos que da la propia fila. La leche `4x1 gal case` es volumen y los huevos `15 dz case` son recuento, y D7 prohíbe peso↔volumen: con uso en g saldría «?», y el gate 5 de §2.3 fallaría. 04: «se precargan un vino de 750 ml y un barril de 1/6 bbl», pero el vino ya existe (A11, vino de copeo 75 cl, además del Prosecco en A10). Solo el barril es nuevo, así que D11 pasa de 7 a 8 filas, no a 9.",
+    "evidencia": "SPEC.md:210 y :209. 05-pasteleria.xlsx `Croissants!C7` = 'L' (leche) y `C11` = 'docena' (huevo). 04-cocktails-bebidas.xlsx `Formatos de Compra!A10:B11` (Prosecco 75, Vino blanco de copeo 75).",
+    "arreglo": "05: secos y grasas en g; leche en ml o fl oz; huevos en each. 04: precargar solo el barril de 1/6 bbl (o un tinto, si se quiere un segundo vino) y actualizar el recuento de D11."
+   },
+   {
+    "id": "R2-19",
+    "severidad": "baja",
+    "seccion_spec": "§2.5 fila 11 (Period month or week)",
+    "problema": "Cambiar la cabecera a «Period (month or week)» no basta para el uso semanal. La fila de totales sigue diciendo «TOTAL ANUAL», el nombre del fichero y de la plantilla es «monthly», y 12 filas semanales cubren un trimestre, no un año.",
+    "evidencia": "11-dashboard-food-cost-mensual.xlsx `Dashboard!B6` 'Mes', `B19` 'TOTAL ANUAL', `D19 = SUM(D7:D18)`. SPEC.md:216.",
+    "arreglo": "B19 → «TOTAL (12 periods)». Instrucciones: «weekly: use one copy per quarter». Solo texto; la estructura no cambia."
+   },
+   {
+    "id": "R2-20",
+    "severidad": "baja",
+    "seccion_spec": "D9 (Yield Factors) · D8",
+    "problema": "La pestaña se llama «Yield Factors», pero sus columnas son porcentajes de merma (Carne roja 0,20 típico). Un chef de EE. UU. lee «yield 20 %» donde pone trim loss 20 %: son complementarios. D8 cuida esa distinción en la ficha y D9 la rompe en la tabla.",
+    "evidencia": "01 `Mermas!A4:D4` = Categoría | Merma típica | Mínima | Máxima; `B5 = 0.2`. SPEC.md:88 (D9) y :87 (D8, «Yield % = 100 % − trim loss %»). La R1 M21 dejaba elegir «Trim Loss Factors».",
+    "arreglo": "Pestaña «Trim Loss Factors», o bien mantener «Yield Factors» con cabeceras «Typical trim loss %», «Min trim loss %» y «Max trim loss %» y la nota «yield = 100 % − trim loss». Sin columnas nuevas."
+   },
+   {
+    "id": "R2-21",
+    "severidad": "baja",
+    "seccion_spec": "§2.5 fila 06 (tarifa de personal)",
+    "problema": "La SPEC escribe «camarero $25/h y jefe de sala $35/h (OEWS $17 + 7,65 % FICA, o tarifa de agencia)», pero OEWS + FICA da $18,30, no $25. El $25 es un punto intermedio entre el coste W-2 y la agencia a $30, y el $35 sale de aplicar la proporción del ES. Quien redacte Instrucciones o `mercado_en.json` desde la SPEC atribuirá el $25 a una fuente que no lo da.",
+    "evidencia": "SPEC.md:211. F1-8b-A.md:302-303 («$17,00 × 1,0765 = $18,30; agencia $30/h con mínimo de 4 h; $25 = punto intermedio redondeado [estimado]»; jefe de sala «misma proporción que el ES»).",
+    "arreglo": "En §2.5 y `mercado_en.json`: «$25 = midpoint between W-2 cost ($18.30) and agency rate ($30) [estimado]; $35 = ES ratio 22/16», con el aviso «replace with your own rates»."
+   },
+   {
+    "id": "R2-22",
+    "severidad": "baja",
+    "seccion_spec": "D15 · D5 · D7 · §2.1 vs TIENDA-INTERNACIONAL.md",
+    "problema": "El doc canónico de la tienda sigue contradiciendo a la SPEC, y D15 da por hecho que se corrige. TIENDA vende «12 plantillas + guía, unidades y moneda configurables, ingeniería de menú», trata unidades y moneda como «parámetros del Excel», y en F2 manda que «el motor v2.0 gana un parámetro mercado… regenerar los xlsx ES y compararlos». La SPEC decide lo contrario: sin símbolo de moneda, unidades US fijas, sin menu engineering en las plantillas y sin motor. Las sesiones siguientes leen TIENDA.",
+    "evidencia": "TIENDA-INTERNACIONAL.md:66 y :30, y el apartado «Por producto — F2». SPEC.md:84 (D5), :86 (D7), :94 (D15, «Se corrige TIENDA §2»), :149-157 (§2.1, sin generador).",
+    "arreglo": "Corregir TIENDA §1, §2 y el F2 por producto en el mismo commit que cierre esta SPEC: 13 plantillas + 2 bonus, moneda sin símbolo, unidades US con avisos UK, menu engineering solo como introducción en el PDF, y pipeline de duplicado desde los xlsx publicados."
+   }
+  ]
+ }
+}

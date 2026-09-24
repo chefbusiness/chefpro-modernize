@@ -27,7 +27,7 @@ Todas nacen igual: **duplicando lo español y traduciéndolo** (§1).
 |---|---|
 | Cuándo | **Ya**, sin esperar a cerrar el catálogo ES (deroga §0-bis.3 del calendario del 31-ago) |
 | Cadencia | **Rotación de 3 sesiones:** v2.0 ES → producto nuevo ES → producto EN → … (mismo techo de tokens) |
-| Mercado | Inglés **US como base internacional**. Impuesto (sales tax/VAT), moneda ($/£/CAD/AUD) y unidades (oz-lb ↔ g-kg) son **parámetros** del Excel. Lo normativo: núcleo HACCP/Codex + **anexo US** (FDA Food Code) + **anexo UK** (FSA, 14 alérgenos). Un SKU sirve a US/UK/CA/AU |
+| Mercado | Inglés **US como base internacional**. Impuesto (sales tax/VAT) y moneda son **parámetros** del Excel: celda de tipo de impuesto e importes sin símbolo. Las unidades van en **US customary** en los ejemplos, con una tabla de conversiones que cubre métrico e imperial y avisos UK (decidido en el piloto, `recipe-costing-kit/SPEC.md` D5-D7). Lo normativo: núcleo HACCP/Codex + **anexo US** (FDA Food Code) + **anexo UK** (FSA, 14 alérgenos). Un SKU sirve a US/UK/CA/AU |
 | Moneda | Payment Links en **USD**, precio psicológico ($19/$29/$49…), con **Adaptive Pricing** de Stripe activado (UK ve £, CA ve CAD). NOWPayments factura en USD |
 | Piloto | **Recipe Costing Kit** (= `kit-escandallos`) |
 | 🔴 **Duplicar el ES y adaptar, NUNCA reconstruir** (John, 24-sep) | El español lleva SIEMPRE la delantera: cada producto se construye desde cero SOLO en español. Para inglés (y cada idioma futuro) se **duplican** la landing, el dashboard y los ficheros (xlsx, pdf, docx, md…) del producto ES y se **traducen**, adaptando las variables del mercado nativo (terminología, moneda, impuestos, unidades, normativa/anexos, benchmarks, ejemplos). **Diseño, estructura, componentes y maquetación son los mismos**: no se crea ninguna plantilla ni página nueva. Lo mismo para los hubs. «Nativo» = **traducido al idioma de destino**, no rehecho |
@@ -62,8 +62,10 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
 **Lecciones de la SERP:**
 - En «food cost template» compiten plantillas **gratuitas** (Airtable, RestaurantOwner, spreadsheet123, chefs-resources) y
   **Etsy**. El comprador espera **Excel Y Google Sheets**: los entregables EN tienen que funcionar en Google Sheets
-  (fórmulas compatibles, sin macros) y la landing debe decirlo. Diferencial frente a lo gratis: sistema completo (12
-  plantillas + guía), unidades y moneda configurables, ingeniería de menú y soporte.
+  (fórmulas compatibles, sin macros) y la landing debe decirlo **solo cuando un test real lo compruebe**. Diferencial
+  frente a lo gratis: sistema completo (13 plantillas + 2 bonus tras la v2.1), unidades y formatos de compra US/UK,
+  impuesto y moneda configurables, y soporte. **No** «ingeniería de menú»: las plantillas no la hacen; solo el bono PDF
+  trae una introducción (corregido el 24-sep, SPEC D15).
 - PAA de «food cost template»: *Is 30% a typical food cost?* · *How to make food costing in Excel?* · *How to calculate
   food cost for a recipe formula?* → guion de la FAQ del piloto.
 - El hub se posiciona por **marca y enlazado interno** (header, footer, portada EN, blog EN, herramientas gratuitas),
@@ -130,7 +132,11 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
 
 - **F1:** research US/UK (terminología, benchmarks etiquetados [medido]/[fuente]/[estimado]), SPEC de las diferencias
   con el ES, slug y precio USD.
-- **F2:** el motor v2.0 gana un parámetro `mercado` con tablas de textos (`textos_es.py`/`textos_en.py`). **Gate:**
+- **F2** — ⚠️ método CORREGIDO por el piloto (24-sep, `recipe-costing-kit/SPEC.md` §2.1): no hay «motor» que regenerar,
+  porque los xlsx publicados salen de capas encadenadas (generador v1.0 + Fase A + post-proceso v2.0). Se **copian
+  los xlsx ES publicados** y se les aplica una capa EN (`aplicar_en.py`: hojas, claves-dato, textos, mercado,
+  formatos, `inject_cache` al final). El gate es de **paridad estructural EN↔ES**, con excepciones declaradas. Texto
+  original de este punto, superado: el motor v2.0 gana un parámetro `mercado` con tablas de textos (`textos_es.py`/`textos_en.py`). **Gate:**
   regenerar los xlsx ES y compararlos celda a celda con los publicados (tienen que salir idénticos). Textos EN con
   **subagentes Anthropic** (regla 1bis: nada de bridge en productos). Gates: sin español, sin no latinos, fórmulas
   intactas, **compatibles con Google Sheets**.
@@ -206,3 +212,12 @@ la F1 de cada producto frente a Etsy/Gumroad.
   - **Una copia por idioma = un cambio de diseño se replica en 7 ficheros.** Es el precio de la regla de John; está anotado en
     la cabecera de cada componente.
 - **2026-09-24 (tarde, sesión Claude Code):** John decide (1) quitar `TiendaStrip` de la portada EN — las 7 portadas quedan con los mismos componentes que la ES— y (2) que el aviso cripto EN diga que se renuncia al derecho de cancelación de 14 días «where it applies (EU/UK)» (`netlify/shared/email-i18n.ts`): correcto en EU y UK, neutro en EE. UU. El diálogo cripto EN (F3 del piloto) tiene que pedir la misma renuncia con esa redacción.
+- **2026-09-24 (noche, sesión Claude Code) — piloto Recipe Costing Kit Pro, F1 cerrada.**
+  - Inventario, research US/UK y research de 8 bloques con OK de John.
+  - SPEC con 2 rondas adversariales (37 + 46 hallazgos incorporados).
+  - Decisiones de John: producto EN independiente; anclas como en ES; Yield Test e Ingredient Price List en ES v2.1 y EN a la vez; licencia de un negocio (todos sus locales) por compra.
+  - Lecciones:
+    - la fuente de un duplicado son **los ficheros publicados**, nunca el generador original;
+    - una tabla de conversiones «editable» tiene que tener filas libres dentro del rango del VLOOKUP (defecto heredado del ES);
+    - un «service charge» no se puede usar como nombre de un margen interno;
+    - las FAQ de licencia de los kits hermanos («todos tus locales», «ideal para consultores») se revisan contra la licencia D18 al duplicarlos.
