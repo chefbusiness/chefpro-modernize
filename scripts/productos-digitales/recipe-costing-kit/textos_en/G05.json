@@ -1,7 +1,7 @@
 [
   {
     "es": "📋 Calculadora de PVP por Tipo de Establecimiento",
-    "en": "📋 Menu Price Calculator by Venue Type"
+    "en": "📋 Menu Pricing Calculator"
   },
   {
     "es": "▸ Escribe en la celda verde (C4) el coste de UNA ración. Sale de la plantilla de escandallo: es la fila «COSTE POR RACIÓN» en 01-04 y 06-08, y «COSTE POR UNIDAD» en 05-pastelería. NO el «COSTE TOTAL DE LA TANDA»: en pastelería difieren por 12, 20 o 30.",
@@ -79,7 +79,7 @@
   },
   {
     "es": "Calculadora de PVP Sugerido",
-    "en": "Suggested Menu Price Calculator"
+    "en": "Menu Pricing Calculator — Suggested Menu Price"
   },
   {
     "es": "COSTE POR RACIÓN / POR UNIDAD (€):",
@@ -175,11 +175,11 @@
   },
   {
     "es": "Calculadora de PVP por Tipo de Establecimiento · Kit de Escandallos Pro",
-    "en": "Menu Price Calculator by Venue Type · Recipe Costing Kit Pro"
+    "en": "Menu Pricing Calculator"
   },
   {
     "es": "📋 Dashboard Food Cost Mensual",
-    "en": "📋 Monthly Food Cost Dashboard"
+    "en": "📋 Food Cost Percentage Tracker"
   },
   {
     "es": "▸ Registra, mes a mes, el stock inicial, las compras, el stock final y las ventas. Sólo se escriben las celdas VERDES.",
@@ -243,7 +243,7 @@
   },
   {
     "es": "Dashboard Food Cost Mensual",
-    "en": "Monthly Food Cost Dashboard"
+    "en": "Food Cost Percentage Tracker"
   },
   {
     "es": "Año:",
@@ -353,6 +353,6 @@
   },
   {
     "es": "Dashboard Food Cost Mensual · Kit de Escandallos Pro",
-    "en": "Monthly Food Cost Dashboard · Recipe Costing Kit Pro"
+    "en": "Food Cost Percentage Tracker"
   }
 ]

@@ -1,7 +1,7 @@
 [
  {
   "es": "📋 Escandallo — Catering por Persona",
-  "en": "📋 Recipe Cost Card — Catering per Guest"
+  "en": "📋 Catering Pricing Calculator & Quote"
  },
  {
   "es": "▸ La pestaña «Cocktail (por persona)» se escandalla POR COMENSAL. El número de comensales se escribe UNA sola vez, en «Presupuesto»!C5: si lo metes también en el escandallo, facturas el evento por partida doble.",
@@ -545,6 +545,6 @@
  },
  {
   "es": "Escandallo — Catering por Persona · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Catering per Guest · Recipe Costing Kit Pro"
+  "en": "Catering Pricing Calculator & Quote"
  }
 ]

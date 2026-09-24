@@ -17,7 +17,7 @@
  },
  {
   "es": "Versión 2.1 · septiembre 2026 · aichef.pro/kit-escandallos · info@aichef.pro",
-  "en": "Version 2.1 · [MONTH] 2026 · aichef.pro/en/digital-products/recipe-costing-kit · info@aichef.pro",
+  "en": "Version 2.1 · [MONTH] 2026 · aichef.pro/en/digital-products/food-cost-templates · info@aichef.pro",
   "cifra_derivada": true,
   "nota": "D14: aplicar_en.py resuelve [MONTH] al publicar (mes de publicación del EN, no tiene por qué coincidir con el de la v2.1 ES)."
  },
@@ -409,12 +409,12 @@
  },
  {
   "es": "Kit de Escandallos Pro · v2.1",
-  "en": "Recipe Costing Kit Pro · v2.1",
+  "en": "Food Cost Kit Pro · v2.1",
   "nota": "D14/D2: subject de docProps, nombre ya decidido, no lo toca el agente de mercado."
  },
  {
   "es": "aichef.pro/kit-escandallos",
-  "en": "aichef.pro/en/digital-products/recipe-costing-kit",
+  "en": "aichef.pro/en/digital-products/food-cost-templates",
   "nota": "D14/D1: slug ya decidido en la SPEC, no depende del mercado."
  },
  {
@@ -567,7 +567,7 @@
  },
  {
   "es": "Calculadora PVP",
-  "en": "Menu Price Calculator"
+  "en": "Menu Pricing Calculator"
  },
  {
   "es": "Dashboard",
@@ -595,7 +595,7 @@
  },
  {
   "es": "Lista de precios",
-  "en": "Price List"
+  "en": "Price Tracker"
  },
  {
   "es": "Bandeja 5 kg",

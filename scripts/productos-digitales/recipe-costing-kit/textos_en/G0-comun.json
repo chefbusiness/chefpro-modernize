@@ -1,7 +1,7 @@
 [
   {
     "es": "Kit de Escandallos Pro — AI Chef Pro",
-    "en": "Recipe Costing Kit Pro — AI Chef Pro"
+    "en": "Food Cost Kit Pro — AI Chef Pro"
   },
   {
     "es": "www.aichef.pro",
@@ -38,7 +38,7 @@
   },
   {
     "es": "▸ ¿Llevas tus precios en la plantilla 13 (Lista de Precios de Ingredientes)? Lleva su «Precio por unidad base» a «Precio/Ud (€)» con Pegado especial → Valores (en Excel, Ctrl+Alt+V y luego V) y pon esa misma unidad en «Ud. Compra». Un pegado normal arrastraría la fórmula: el precio y el coste de esa línea se quedarían en blanco sin avisar, y el coste del plato saldría más bajo.",
-    "en": "▸ Do you keep your prices in template 13 (Ingredient Price List)? Copy its \"Price per base unit\" into \"Price/Unit\" with Paste Special → Values (in Excel, Ctrl+Alt+V then V) and put that same unit in \"Purchase unit.\" A normal paste would drag the formula along: the price and cost on that line would go blank with no warning, and the dish cost would come out lower than it really is."
+    "en": "▸ Do you keep your prices in template 13 (Ingredient Price Tracker)? Copy its \"Price per base unit\" into \"Price/Unit\" with Paste Special → Values (in Excel, Ctrl+Alt+V then V) and put that same unit in \"Purchase unit.\" A normal paste would drag the formula along: the price and cost on that line would go blank with no warning, and the dish cost would come out lower than it really is."
   },
   {
     "es": "▸ Cantidad: la que usas en el plato, EN LA UNIDAD DE USO.",
@@ -178,7 +178,7 @@
   },
   {
     "es": "— Kit de Escandallos Pro · AI Chef Pro · aichef.pro",
-    "en": "— Recipe Costing Kit Pro · AI Chef Pro · aichef.pro"
+    "en": "— Food Cost Kit Pro · AI Chef Pro · aichef.pro"
   },
   {
     "es": "© 2026 AI Chef Pro · Todos los derechos reservados",
@@ -351,7 +351,7 @@
   },
   {
     "es": "kit escandallos, AI Chef Pro",
-    "en": "recipe costing kit, AI Chef Pro"
+    "en": "food cost kit, food cost templates, AI Chef Pro"
   },
   {
     "es": "AI Chef Pro · Productos digitales",

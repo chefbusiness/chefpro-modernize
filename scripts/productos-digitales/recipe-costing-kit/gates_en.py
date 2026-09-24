@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-gates_en.py — Gates F2 del Recipe Costing Kit Pro (EN), SPEC §4 (1-7bis) sobre la salida de
+gates_en.py — Gates F2 del Food Cost Kit Pro (EN), SPEC §4 (1-7bis) y D9 bis sobre la salida de
 aplicar_en.py. Solo LEE: los 14 xlsx EN, los 14 xlsx ES v2.1 publicados, censo_es.json,
-textos_es.json, mercado_en.json e instrucciones_extra_en.json.
+textos_es.json, mercado_en.json, instrucciones_extra_en.json y los demás datos EN de la carpeta.
 
     python3 gates_en.py --dir <scratchpad>/rck-dryrun [--mes September] [--json informe.json]
     python3 gates_en.py --dir … --solo 1,2,5          # solo algunos gates
     python3 gates_en.py --autotest --dir …             # inyecta defectos en una copia y exige que
                                                        # los gates los detecten todos
+    python3 gates_en.py --solo nombre                  # solo el gate del renombrado (D9 bis)
 
 Gates (SPEC §4 F2):
   1    paridad estructural EN↔ES (hojas por el mapa; fórmula a fórmula salvo mapas de hoja y de
@@ -26,6 +27,10 @@ Gates (SPEC §4 F2):
   7bis libros 12 y 13 (rendimiento, factor, coste = ficha 01; alerta; 13 = fichas; unidades D7);
   pdf  el bono PDF contra los xlsx (Letter, nº de páginas, ficheros y pestañas citados, tabla de trim loss =
        «Trim Loss Factors», tabla D12 = calculadora 10, restos). Revisión R1 EN, T11.
+  nombre  D9 bis (producto renombrado a «Food Cost Kit Pro»): cero «Recipe Costing» y cero `recipe-costing-kit`
+       (ni nombres/ficheros EN retirados) en los xlsx (todo su XML: valores, docProps, pies, fórmulas, DV,
+       gráficos), en el PDF (texto y metadatos) y en los datos EN (JSON y .md del bono), salvo la ruta de la
+       carpeta de trabajo; ficheros de la carpeta = mapas.FICHEROS; título interior = mapas.TITULOS.
 Sale con código 1 si algún gate falla.
 
 Revisión R1 EN (24-sep): gate 1 compara en sentido directo (Transformador ES→EN == EN, T1); gate 2 mira también
@@ -69,6 +74,9 @@ TOL = 0.005
 PAPEL_LETTER = 1
 PIE_EN = 'AI Chef Pro · aichef.pro · Page &P of &N'
 PAGINAS_PDF = 23           # nº de páginas del bono PDF; la landing EN (F3) debe decir lo mismo
+HOJA_10 = mapas.hoja_en('Calculadora PVP')      # «Menu Pricing Calculator» (D9 bis)
+HOJA_13 = mapas.hoja_en('Lista de precios')     # «Price Tracker» (D9 bis)
+REF_13 = mapas.ref_hoja(HOJA_13)                # «'Price Tracker'» en una fórmula de pycel
 # T6: LISTA BLANCA. ASCII, letras Latin-1 (À-ÿ salvo × y ÷, que van en la lista) y exactamente estos símbolos.
 # Todo lo demás (CJK, cirílico, puntuación de ancho completo o CJK, ’ curva…) falla.
 SIMBOLOS_OK = set('→▸×—÷·−…©£≈✓⅓½⅔¾Σ') | {'\U0001F4F7', '\U0001F4CB'}      # + 📷 📋
@@ -938,9 +946,9 @@ def gate5(R, carpeta, datos, mes):
         for k, v in esperado.items():
             if getattr(p, k) != v:
                 R.fallo('%s: docProps %s = %r' % (en, k, getattr(p, k)))
-        if not p.title or not p.title.endswith('· Recipe Costing Kit Pro'):
-            R.fallo('%s: docProps title %r' % (en, p.title))
-        if not p.keywords or 'recipe costing kit' not in p.keywords.lower():
+        if p.title != mapas.TITULOS[en]:
+            R.fallo('%s: docProps title %r ≠ D9 bis %r' % (en, p.title, mapas.TITULOS[en]))
+        if not p.keywords or 'food cost kit' not in p.keywords.lower():
             R.fallo('%s: docProps keywords %r' % (en, p.keywords))
     if n['fechas'] != censo['totales']['fechas']:
         R.fallo('fechas contadas %d ≠ censo %d' % (n['fechas'], censo['totales']['fechas']))
@@ -1136,7 +1144,7 @@ def gate6(R, carpeta, datos):
         n['cabeceras_d9'] += 1
     # (e) calculadora 10 = D12
     pen = os.path.join(carpeta, mapas.FICHEROS['10-calculadora-pvp.xlsx'])
-    ws = cargar(pen)['Menu Price Calculator']
+    ws = cargar(pen)[HOJA_10]
     for f in M['calculadora_10']['filas']:
         r = f['fila']
         if (ws['B%d' % r].value, ws['C%d' % r].value, ws['D%d' % r].value) != (f['rotulo'], f['fc_min'], f['fc_max']):
@@ -1198,7 +1206,7 @@ def gate7bis(R, carpeta, datos):
     R.dato('12 cocción', 'pérdida %.3f · coste %.4f · 08!J5 %.4f' % (perd, cpc, v08['J5'].value))
     # 13
     wf, wv = cargar(p13), cargar(p13, data_only=True)
-    ws, wsv = wf['Price List'], wv['Price List']
+    ws, wsv = wf[HOJA_13], wv[HOJA_13]
     umbral = ws['B5'].value
     n_ing = n_alert = n_ok = 0
     for r in range(10, 155):
@@ -1227,11 +1235,11 @@ def gate7bis(R, carpeta, datos):
     xl = _pycel(p13)
     fila = next(r for r in range(10, 155) if _num(wsv.cell(r, 8).value) and wsv.cell(r, 9).value is None)
     h = wsv.cell(fila, 8).value
-    _ev(xl, "'Price List'!K%d" % fila)                 # mete I y H de la fila en el mapa de pycel
-    xl.set_value("'Price List'!I%d" % fila, h / 1.10)
-    k1 = _ev(xl, "'Price List'!K%d" % fila)
-    xl.set_value("'Price List'!I%d" % fila, h / 1.02)
-    k2 = _ev(xl, "'Price List'!K%d" % fila)
+    _ev(xl, REF_13 + "!K%d" % fila)                    # mete I y H de la fila en el mapa de pycel
+    xl.set_value(REF_13 + "!I%d" % fila, h / 1.10)
+    k1 = _ev(xl, REF_13 + "!K%d" % fila)
+    xl.set_value(REF_13 + "!I%d" % fila, h / 1.02)
+    k2 = _ev(xl, REF_13 + "!K%d" % fila)
     if (k1, k2) != ('ALERT', 'OK'):
         R.fallo('13 fila %d: +10 %% da %r y +2 %% da %r (se esperaba ALERT / OK)' % (fila, k1, k2))
     # 13 = fichas: precio por unidad base = precio de la ficha ÷ factor
@@ -1344,7 +1352,7 @@ def gate_pdf(R, carpeta, datos):
     if filas < 8:
         R.fallo('PDF: solo %d filas de la tabla de trim loss casan con «Trim Loss Factors» (se esperan 8)' % filas)
     # tabla D12 = calculadora 10 (B9:D18)
-    wc = libros_en['10']['Menu Price Calculator']
+    wc = libros_en['10'][HOJA_10]
     j0 = texto.find('Venue type')
     for r in range(9, 19):
         rot, lo, hi = wc['B%d' % r].value, wc['C%d' % r].value, wc['D%d' % r].value
@@ -1358,6 +1366,118 @@ def gate_pdf(R, carpeta, datos):
 
 
 # ==========================================================================
+# Gate nombre — D9 bis: el producto se llama «Food Cost Kit Pro» (slug food-cost-templates)
+# ==========================================================================
+# «Recipe Costing» con mayúsculas es el nombre viejo del producto; «recipe costing» en minúscula es un término
+# genérico del oficio y se admite (p. ej. en el bono: «inventory and recipe costing»). El slug viejo, en
+# cualquier caja. Única excepción: la ruta de la carpeta de trabajo del repo, que conserva el nombre antiguo.
+RX_NOMBRE_VIEJO = [re.compile(r'Recipe Costing'), re.compile(r'recipe[-_ ]costing[-_ ]kit', re.I)]
+RUTA_TRABAJO = 'scripts/productos-digitales/recipe-costing-kit/'
+RETIRADOS = list(mapas.NOMBRES_RETIRADOS) + list(mapas.FICHEROS_RETIRADOS)
+# En los datos del pipeline conviven los nombres ES y EN: «08-food-truck.xlsx» es el fichero ES (y era el EN
+# retirado). Ahí solo cuentan los retirados que no son a la vez un nombre ES.
+RETIRADOS_EN_DATOS = [x for x in RETIRADOS if x not in mapas.FICHEROS]
+# Datos EN (y los ES generados que llevan pistas o nombres EN) que alimentan los entregables.
+DATOS_EN = ['textos_en/*.json', 'textos_en_por_celda.json', 'mercado_en.json', 'mercado_fuentes_web.json',
+            'instrucciones_extra_en.json', 'glosario_en.json', 'textos_es.json', 'censo_es.json',
+            'bonus-guide-food-cost-30-days.md']
+
+
+def nombres_viejos(texto, retirados=None):
+    """[(qué, contexto)] de nombre viejo del producto y de nombres/ficheros EN retirados en un texto."""
+    texto = texto.replace(RUTA_TRABAJO, '')
+    out = []
+    for rx in RX_NOMBRE_VIEJO:
+        for m in rx.finditer(texto):
+            out.append((m.group(0), texto[max(0, m.start() - 50):m.end() + 30]))
+    for viejo in (RETIRADOS if retirados is None else retirados):
+        i = texto.find(viejo)
+        if i >= 0:
+            out.append(('retirado ' + viejo, texto[max(0, i - 50):i + len(viejo) + 30]))
+    return out
+
+
+def ficheros_datos(base):
+    import glob
+    for patron in DATOS_EN:
+        for p in sorted(glob.glob(os.path.join(base, patron))):
+            yield p
+
+
+def gate_nombre(R, carpeta, datos):
+    R.gate('nombre D9 bis')
+    n = Counter()
+    # (a) la carpeta tiene exactamente los 15 ficheros de D9 bis (ni uno con nombre viejo)
+    esperados = set(mapas.FICHEROS.values())
+    hay = {f for f in os.listdir(carpeta) if f.lower().endswith(('.xlsx', '.pdf'))}
+    for f in sorted(hay - esperados):
+        R.fallo('fichero que sobra en la carpeta: %s%s' % (f, ' (nombre retirado)' if f in mapas.FICHEROS_RETIRADOS
+                                                          else ''))
+    for f in sorted(esperados - hay):
+        R.fallo('falta el fichero %s (D9 bis)' % f)
+    n['ficheros'] = len(hay & esperados)
+    # (b) xlsx: TODO su XML (sharedStrings, hojas con pies/DV/fórmulas, docProps, gráficos, workbook.xml)
+    for es, en, pes, pen in libros(carpeta):
+        if not os.path.isfile(pen):
+            continue
+        with zipfile.ZipFile(pen) as z:
+            for parte in z.namelist():
+                if not parte.endswith(('.xml', '.rels')):
+                    continue
+                n['partes_xml'] += 1
+                x = html.unescape(z.read(parte).decode('utf-8', 'replace'))
+                for que, ctx in nombres_viejos(x):
+                    R.fallo('%s %s: «%s» · …%s…' % (en, parte, que, re.sub(r'<[^>]+>', ' ', ctx)))
+        wb = cargar(pen)
+        p = wb.properties
+        if p.title != mapas.TITULOS[en]:
+            R.fallo('%s: docProps title %r ≠ D9 bis %r' % (en, p.title, mapas.TITULOS[en]))
+        if p.subject != mapas.PRODUCTO + ' · v2.1' or p.description != mapas.URL_PRODUCTO:
+            R.fallo('%s: docProps subject/description %r / %r' % (en, p.subject, p.description))
+        ins = wb[mapas.hoja_en('Instrucciones')]
+        tit = [c for c in ins._cells.values() if isinstance(c.value, str) and c.value.startswith(mapas.ICONO_TITULO)]
+        if [c.value for c in tit] != [mapas.titulo_instrucciones(en)]:
+            R.fallo('%s: título de Instructions %r ≠ D9 bis %r' % (en, [c.value for c in tit],
+                                                                  mapas.titulo_instrucciones(en)))
+        marca = [c for c in ins._cells.values() if c.value == mapas.PRODUCTO + ' — AI Chef Pro']
+        if len(marca) != 1:
+            R.fallo('%s: la cabecera «%s — AI Chef Pro» aparece %d veces en Instructions'
+                    % (en, mapas.PRODUCTO, len(marca)))
+        for h_es, h_en in (('Calculadora PVP', HOJA_10), ('Lista de precios', HOJA_13)):
+            if h_es in mapas.HOJAS_ES_POR_LIBRO[es] and h_en not in wb.sheetnames:
+                R.fallo('%s: falta la pestaña «%s» (D9 bis)' % (en, h_en))
+        n['xlsx'] += 1
+    # (c) PDF: texto de todas las páginas y metadatos
+    path = os.path.join(carpeta, aplicar_en.PDF_EN)
+    if os.path.isfile(path):
+        from pypdf import PdfReader
+        with open(os.devnull, 'w') as dn, contextlib.redirect_stderr(dn):
+            rd = PdfReader(path)
+            paginas = [pg.extract_text() or '' for pg in rd.pages]
+            meta = {k: str(v) for k, v in (rd.metadata or {}).items()}
+        texto = re.sub(r'\s+', ' ', '\n'.join(paginas))
+        for que, ctx in nombres_viejos(texto + ' | ' + ' | '.join(meta.values())):
+            R.fallo('PDF: «%s» · …%s…' % (que, ctx))
+        titulo = mapas.TITULOS[aplicar_en.PDF_EN]
+        if meta.get('/Title') != titulo:
+            R.fallo('PDF: título de metadatos %r ≠ D9 bis %r' % (meta.get('/Title'), titulo))
+        primera = re.sub(r'\s+', ' ', paginas[0] if paginas else '')
+        if titulo not in primera or mapas.PRODUCTO not in primera:
+            R.fallo('PDF: la portada no lleva el título «%s» y el nombre «%s»' % (titulo, mapas.PRODUCTO))
+        n['pdf_paginas'] = len(paginas)
+    # (d) datos EN del pipeline (y el .md del bono)
+    base = datos.get('dir_datos') or AQUI
+    for f in ficheros_datos(base):
+        n['datos'] += 1
+        for que, ctx in nombres_viejos(open(f, encoding='utf-8').read(), RETIRADOS_EN_DATOS):
+            R.fallo('%s: «%s» · …%s…' % (os.path.relpath(f, base), que, ctx.replace('\n', ' ')))
+    if n['datos'] < 10:
+        R.fallo('solo %d ficheros de datos EN leídos en %s' % (n['datos'], base))
+    for k, v in sorted(n.items()):
+        R.dato(k, v)
+
+
+# ==========================================================================
 # Autotest (defectos inyectados en una copia)
 # ==========================================================================
 def _mutar(carpeta, fname_en, fn, modo='wb'):
@@ -1367,6 +1487,16 @@ def _mutar(carpeta, fname_en, fn, modo='wb'):
         fn(wb)
         wb.save(p)
         subprocess.run([sys.executable, '-W', 'ignore', INJECT, p], capture_output=True, text=True)
+    elif modo == 'carpeta':               # la función recibe la carpeta (renombrar o añadir ficheros)
+        fn(carpeta)
+    elif modo == 'datos':                 # copia de los datos EN en <carpeta>/_datos; fname = el fichero a mutar
+        dd = os.path.join(carpeta, '_datos')
+        for f in ficheros_datos(AQUI):
+            dst = os.path.join(dd, os.path.relpath(f, AQUI))
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            shutil.copy2(f, dst)
+        fn(os.path.join(dd, fname_en))
+        return dd
     else:                                 # 'zip' / 'pdf': la función recibe la ruta y edita el fichero tal cual
         fn(p)
 
@@ -1408,6 +1538,30 @@ def _pdf_sin_ultima(path):
             wr.write(fh)
 
 
+def _pdf_titulo(path, titulo):
+    from pypdf import PdfReader, PdfWriter
+    with open(os.devnull, 'w') as dn, contextlib.redirect_stderr(dn):
+        rd, wr = PdfReader(path), PdfWriter()
+        for pg in rd.pages:
+            wr.add_page(pg)
+        wr.add_metadata({k: v for k, v in (rd.metadata or {}).items()})
+        wr.add_metadata({'/Title': titulo})
+        with open(path, 'wb') as fh:
+            wr.write(fh)
+
+
+def _texto_en(path, de, a):
+    x = open(path, encoding='utf-8').read()
+    assert de in x, de
+    open(path, 'w', encoding='utf-8').write(x.replace(de, a, 1))
+
+
+def _celda_titulo(wb, nuevo):
+    ins = wb[mapas.hoja_en('Instrucciones')]
+    c = [c for c in ins._cells.values() if isinstance(c.value, str) and c.value.startswith(mapas.ICONO_TITULO)][0]
+    c.value = nuevo
+
+
 def _cf_literal(ws, de, a):
     for cf in ws.conditional_formatting:
         for regla in cf.rules:
@@ -1415,10 +1569,15 @@ def _cf_literal(ws, de, a):
                 regla.formula = [x.replace('"%s"' % de, '"%s"' % a) for x in regla.formula]
 
 
-P01 = '01-standard-recipe-cost-card.xlsx'
+def F(corto):
+    """Nombre EN del libro por su número ES («01»…«13», «BONUS»): los defectos no fijan nombres de fichero."""
+    return mapas.FICHEROS[[f for f in mapas.LIBROS_ES if f.startswith(corto)][0]]
+
+
+P01 = F('01')
 # (gate, descripción, fichero, mutación, subcadena que TIENE que salir en un fallo, modo)
 DEFECTOS = [
-    ('1', 'hoja citada inexistente', '02-tasting-menu.xlsx',
+    ('1', 'hoja citada inexistente', F('02'),
      lambda wb: setattr(wb['Summary']['C5'], 'value', "=IF('1. Aperitivo'!$J$21=0,\"\",'1. Amuse-Bouche'!$J$25)"),
      'hoja inexistente', 'wb'),
     ('1', 'DV de unidades sin sustituir', P01,
@@ -1429,23 +1588,23 @@ DEFECTOS = [
      lambda wb: setattr(wb['Recipe Cost Card']['J5'], 'value',
                         wb['Recipe Cost Card']['J5'].value.replace('check units', 'revisa unidades')),
      'fórmula EN', 'wb'),
-    ('1', 'T1: CF que busca «ALERTA» (13)', '13-ingredient-price-list.xlsx',
-     lambda wb: _cf_literal(wb['Price List'], 'ALERT', 'ALERTA'), 'formato condicional distinto', 'wb'),
-    ('2', 'T1: literal de CF en español (09)', '09-food-waste-tracker.xlsx',
+    ('1', 'T1: CF que busca «ALERTA» (13)', F('13'),
+     lambda wb: _cf_literal(wb[HOJA_13], 'ALERT', 'ALERTA'), 'formato condicional distinto', 'wb'),
+    ('2', 'T1: literal de CF en español (09)', F('09'),
      lambda wb: _cf_literal(wb['Weekly Waste Log'], 'ALERT', 'ALERTA'), 'oficio ES', 'wb'),
-    ('2', 'resto de español en un rótulo', '10-menu-price-calculator.xlsx',
-     lambda wb: setattr(wb['Menu Price Calculator']['B2'], 'value', 'Calculadora de PVP Sugerido'), ' ES «', 'wb'),
-    ('2', '«€» en un formato', '11-monthly-food-cost-dashboard.xlsx',
+    ('2', 'resto de español en un rótulo', F('10'),
+     lambda wb: setattr(wb[HOJA_10]['B2'], 'value', 'Calculadora de PVP Sugerido'), ' ES «', 'wb'),
+    ('2', '«€» en un formato', F('11'),
      lambda wb: setattr(wb['Dashboard']['C7'], 'number_format', '#,##0 €'), '«€»', 'wb'),
-    ('2', 'CJK inyectado', '06-catering-and-events.xlsx',
+    ('2', 'CJK inyectado', F('06'),
      lambda wb: setattr(wb['Event Checklist']['A1'], 'value', 'Event Checklist 鬼笔鹅膏菌 — Catering'),
      'lista blanca', 'wb'),
-    ('2', 'T6: paréntesis de ancho completo', '06-catering-and-events.xlsx',
+    ('2', 'T6: paréntesis de ancho completo', F('06'),
      lambda wb: setattr(wb['Client Proposal']['D7'], 'value', 'Price per guest（incl. tax）'), 'lista blanca', 'wb'),
-    ('2', 'T2: ID interno de la SPEC en un texto', '11-monthly-food-cost-dashboard.xlsx',
+    ('2', 'T2: ID interno de la SPEC en un texto', F('11'),
      lambda wb: setattr(wb['Instructions']['B47'], 'value', wb['Instructions']['B47'].value + ' (D19)'),
      'ID interno', 'wb'),
-    ('3', 'clave duplicada (mayúsculas) en Conversions', '05-pastry-and-bakery.xlsx',
+    ('3', 'clave duplicada (mayúsculas) en Conversions', F('05'),
      lambda wb: (setattr(wb['Conversions']['A%d' % (mapas.FILA0 + mapas.n_claves())], 'value', 'LB→lb'),
                  setattr(wb['Conversions']['B%d' % (mapas.FILA0 + mapas.n_claves())], 'value', 1)),
      'claves duplicadas', 'wb'),
@@ -1454,32 +1613,58 @@ DEFECTOS = [
     ('3', 'T7: fila de envase con el IFERROR viejo (0 con la celda vacía)', P01,
      lambda wb: setattr(wb['Conversions']['B148'], 'value', '=IFERROR(B147/29.5735295625,"?")'),
      'celda de tamaño vacía', 'wb'),
-    ('4', 'cantidad que saca el food cost de D12', '07-cafe-and-brunch.xlsx',
+    ('4', 'cantidad que saca el food cost de D12', F('07'),
      lambda wb: setattr(wb['Avocado Toast']['E5'], 'value', wb['Avocado Toast']['E5'].value * 4), 'fuera de', 'wb'),
-    ('4', 'CHEF-03: pase de menú con precio propio', '02-tasting-menu.xlsx',
+    ('4', 'CHEF-03: pase de menú con precio propio', F('02'),
      lambda wb: setattr(wb['2. Starter']['I34'], 'value', 50.91), 'precio propio', 'wb'),
-    ('5', 'hoja en A4', '09-food-waste-tracker.xlsx',
+    ('5', 'hoja en A4', F('09'),
      lambda wb: setattr(wb['Trend'].page_setup, 'paperSize', 9), 'Letter', 'wb'),
-    ('5', 'fecha en formato propio', 'BONUS-inventory-and-waste-control.xlsx',
+    ('5', 'fecha en formato propio', F('BONUS'),
      lambda wb: setattr(wb['Waste Checklist']['A4'], 'number_format', 'd/m/yyyy'), 'numFmtId', 'wb'),
-    ('5', 'línea de versión ausente', '03-prix-fixe-lunch-menu.xlsx',
+    ('5', 'línea de versión ausente', F('03'),
      lambda wb: [setattr(c, 'value', None) for c in list(wb['Instructions']._cells.values())
                  if isinstance(c.value, str) and c.value.startswith('Version ')], 'línea de versión', 'wb'),
-    ('5', 'CHEF-01: impuesto del 10 % en una pestaña vacía', '02-tasting-menu.xlsx',
+    ('5', 'CHEF-01: impuesto del 10 % en una pestaña vacía', F('02'),
      lambda wb: setattr(wb['6. Course']['I29'], 'value', 0.1), 'Tax rate', 'wb'),
-    ('6', 'pestaña entre comillas simples', '08-food-truck.xlsx',
+    ('6', 'pestaña entre comillas simples', F('08'),
      lambda wb: setattr(wb['Instructions']['B8'], 'value', "▸ Start on the 'Smash Burger' tab."),
      'comillas simples', 'wb'),
-    ('6', 'rango D12 incoherente', '10-menu-price-calculator.xlsx',
+    ('6', 'rango D12 incoherente', F('10'),
      lambda wb: setattr(wb['Instructions']['B8'], 'value', '▸ Fine dining runs at 25-28% food cost.'), '≠ D12', 'wb'),
     ('6', 'T4: pestaña citada que no existe (prefijo de un rótulo)', P01,
      lambda wb: setattr(wb['Instructions']['B11'], 'value',
                         '▸ Open the "Conversion" tab and the "Trim Loss" tab.'), 'no es una pestaña', 'wb'),
-    ('7bis', '13 descuadrado con la ficha', '13-ingredient-price-list.xlsx',
-     lambda wb: setattr(wb['Price List']['G11'], 'value', wb['Price List']['G11'].value * 1.2), '≠ ficha', 'wb'),
-    ('7bis', 'porción del 12 distinta de la 01', '12-yield-test.xlsx',
+    ('7bis', '13 descuadrado con la ficha', F('13'),
+     lambda wb: setattr(wb[HOJA_13]['G11'], 'value', wb[HOJA_13]['G11'].value * 1.2), '≠ ficha', 'wb'),
+    ('7bis', 'porción del 12 distinta de la 01', F('12'),
      lambda wb: setattr(wb['Butcher Yield Test']['C9'], 'value', 19.5), '01!J5', 'wb'),
     ('pdf', 'PDF con una página menos', aplicar_en.PDF_EN, _pdf_sin_ultima, 'páginas', 'pdf'),
+    # D9 bis (renombrado): cada defecto tiene que salir por el gate «nombre»
+    ('nombre', 'docProps title con el nombre viejo del producto', P01,
+     lambda wb: setattr(wb.properties, 'title', 'Standard Recipe Cost Card — A La Carte Dish · Recipe Costing Kit Pro'),
+     'Recipe Costing', 'wb'),
+    ('nombre', 'pie de página con el nombre viejo', F('09'),
+     lambda wb: setattr(wb['Trend'].oddFooter.center, 'text', 'Recipe Costing Kit Pro · Page &P of &N'),
+     'Recipe Costing', 'wb'),
+    ('nombre', 'línea de versión con el slug viejo', F('06'),
+     lambda wb: [setattr(c, 'value', c.value.replace(mapas.SLUG, 'recipe-costing-kit'))
+                 for c in list(wb['Instructions']._cells.values())
+                 if isinstance(c.value, str) and c.value.startswith('Version ')], 'recipe-costing-kit', 'wb'),
+    ('nombre', 'título de Instructions distinto de D9 bis', F('13'),
+     lambda wb: _celda_titulo(wb, mapas.ICONO_TITULO + 'Ingredient Price Directory'), 'título de Instructions', 'wb'),
+    ('nombre', 'pestaña 10 con el nombre retirado', F('10'),
+     lambda wb: setattr(wb[HOJA_10], 'title', 'Menu Price Calculator'), 'retirado Menu Price Calculator', 'wb'),
+    ('nombre', 'fichero con el nombre retirado en la carpeta', F('11'),
+     lambda base: os.rename(os.path.join(base, F('11')), os.path.join(base, '11-monthly-food-cost-dashboard.xlsx')),
+     'nombre retirado', 'carpeta'),
+    ('nombre', 'PDF con el título viejo en los metadatos', aplicar_en.PDF_EN,
+     lambda p: _pdf_titulo(p, 'Control Your Food Cost in 30 Days'), 'retirado Control Your Food Cost', 'pdf'),
+    ('nombre', 'dato EN (textos_en) con el nombre viejo', 'textos_en/G0-comun.json',
+     lambda p: _texto_en(p, mapas.PRODUCTO + ' — AI Chef Pro', 'Recipe Costing Kit Pro — AI Chef Pro'),
+     'Recipe Costing', 'datos'),
+    ('nombre', 'dato EN (bono .md) con el fichero retirado', 'bonus-guide-food-cost-30-days.md',
+     lambda p: _texto_en(p, mapas.FICHEROS['01-escandallo-estandar.xlsx'] + '**', '01-standard-recipe-cost-card.xlsx**'),
+     'retirado 01-standard-recipe-cost-card.xlsx', 'datos'),
 ]
 
 
@@ -1502,8 +1687,11 @@ def autotest(carpeta, mes, datos):
         if os.path.isdir(base):
             shutil.rmtree(base)
         shutil.copytree(carpeta, base)
-        _mutar(base, fname, fn, modo)
+        dd = _mutar(base, fname, fn, modo)
+        if modo == 'datos':
+            datos['dir_datos'] = dd
         R = ejecutar(base, mes, [gate], datos, silencioso=True)
+        datos.pop('dir_datos', None)
         fallos = R.gates[list(R.gates)[0]]['fallos']
         propios = [f for f in fallos if esperado in f]
         ok = bool(propios)
@@ -1521,7 +1709,8 @@ def autotest(carpeta, mes, datos):
 # main
 # ==========================================================================
 GATES = OrderedDict([('1', gate1), ('2', gate2), ('3', gate3), ('4', gate4), ('5', gate5),
-                     ('6', gate6), ('7', gate7), ('7bis', gate7bis), ('pdf', gate_pdf)])
+                     ('6', gate6), ('7', gate7), ('7bis', gate7bis), ('pdf', gate_pdf),
+                     ('nombre', gate_nombre)])
 
 
 def cargar_datos():
@@ -1549,10 +1738,10 @@ def ejecutar(carpeta, mes, solo, datos, silencioso=False):
 
 
 def main():
-    ap = argparse.ArgumentParser(description='Gates F2 del Recipe Costing Kit Pro (EN)')
+    ap = argparse.ArgumentParser(description='Gates F2 del Food Cost Kit Pro (EN)')
     ap.add_argument('--dir', default=None, help='carpeta con los 14 xlsx EN (por defecto, la del dry-run)')
     ap.add_argument('--mes', default=None)
-    ap.add_argument('--solo', default=None, help='gates separados por comas (1,2,3,4,5,6,7,7bis,pdf)')
+    ap.add_argument('--solo', default=None, help='gates separados por comas (1,2,3,4,5,6,7,7bis,pdf,nombre)')
     ap.add_argument('--json', default=None)
     ap.add_argument('--verbose', action='store_true')
     ap.add_argument('--autotest', action='store_true')

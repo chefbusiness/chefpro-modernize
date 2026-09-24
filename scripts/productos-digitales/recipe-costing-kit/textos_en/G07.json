@@ -1,7 +1,7 @@
 [
  {
   "es": "📋 Lista de Precios de Ingredientes",
-  "en": "📋 Ingredient Price List"
+  "en": "📋 Ingredient Price Tracker"
  },
  {
   "es": "▸ Un único sitio con el precio actual de cada ingrediente, pasado a la unidad que usan tus fichas (kg, L o ud). Cuando llega una factura, actualizas aquí el precio y ves de un vistazo qué ha subido más de la cuenta.",
@@ -106,7 +106,7 @@
  },
  {
   "es": "▸ 3. En «Ud. Compra» de la ficha pon la unidad base de la lista. Ejemplo: los huevos camperos se compran por docena en la plantilla 03 (3,60 €/docena); en esta lista van por unidad (0,3000 €/ud). Si pegas 0,30, cambia «Ud. Compra» a «ud».",
-  "en": "▸ 3. In \"Purchase unit\" on the recipe cost card, enter the base unit from the list. Example: free-range eggs are bought by the dozen in template 03 (Prix Fixe Lunch Menu) ($3.60/dozen); in this list they're priced per each ($0.3000/each). If you paste 0.30, change \"Purchase unit\" to \"each\".",
+  "en": "▸ 3. In \"Purchase unit\" on the recipe cost card, enter the base unit from the list. Example: free-range eggs are bought by the dozen in template 03 (Prix Fixe & Set Menu) ($3.60/dozen); in this list they're priced per each ($0.3000/each). If you paste 0.30, change \"Purchase unit\" to \"each\".",
   "cifra_derivada": true,
   "nota": "Cita precios de ejemplo (categoría cerrada «precios» de M5): $3.60/dozen y $0.3000/each son una conversión directa provisional de 3,60 € / 0,30 €; el agente de mercado los sustituye por el precio real de huevos de granja en mercado_en.json."
  },
@@ -116,7 +116,7 @@
  },
  {
   "es": "▸ En la plantilla 04 (cócteles), el precio de los destilados, el vino y el espumoso viene de su pestaña «Formatos de Compra»: allí basta con actualizar el precio de la botella.",
-  "en": "▸ In template 04 (Cocktails & Drinks), the price of spirits, wine and sparkling wine comes from its \"Bottle Sizes\" tab: there, all you need to do is update the bottle price."
+  "en": "▸ In template 04 (Pour Cost Calculator), the price of spirits, wine and sparkling wine comes from its \"Bottle Sizes\" tab: there, all you need to do is update the bottle price."
  },
  {
   "es": "Filtrar y Ordenar",
@@ -144,7 +144,7 @@
  },
  {
   "es": "Lista de Precios de Ingredientes",
-  "en": "Ingredient Price List"
+  "en": "Ingredient Price Tracker"
  },
  {
   "es": "Un precio por ingrediente, pasado a la unidad que usan tus fichas. Las celdas verdes son editables. Para llevar un precio a una ficha, copia «Precio por unidad base» y pégalo con Pegado especial → Valores (Excel: Ctrl+Alt+V y luego V).",
@@ -204,11 +204,11 @@
  },
  {
   "es": "Lista de Precios de Ingredientes · Kit de Escandallos Pro",
-  "en": "Ingredient Price List · Recipe Costing Kit Pro"
+  "en": "Ingredient Price Tracker"
  },
  {
   "es": "📋 BONUS: Checklist Mermas + Inventario",
-  "en": "📋 BONUS: Waste Checklist + Inventory"
+  "en": "📋 BONUS: Actual vs Theoretical Food Cost (Inventory & Waste)"
  },
  {
   "es": "▸ Pestaña 'Ventas del periodo': lo que has vendido y cuánto lleva cada ración de cada producto.",
@@ -462,6 +462,6 @@
  },
  {
   "es": "BONUS: Checklist Mermas + Inventario · Kit de Escandallos Pro",
-  "en": "BONUS: Waste Checklist + Inventory · Recipe Costing Kit Pro"
+  "en": "BONUS: Actual vs Theoretical Food Cost (Inventory & Waste)"
  }
 ]

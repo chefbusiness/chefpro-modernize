@@ -1,7 +1,7 @@
 [
  {
   "es": "📋 Escandallo — Cocktails y Bebidas",
-  "en": "📋 Recipe Cost Card — Cocktails & Drinks"
+  "en": "📋 Pour Cost Calculator (Cocktails & Drinks)"
  },
  {
   "es": "▸ Una pestaña por cóctel: gin tonic, mojito, margarita y Aperol spritz.",
@@ -35,7 +35,7 @@
  },
  {
   "es": "▸ ¿Llevas tus precios en la plantilla 13 (Lista de Precios de Ingredientes)? Lleva su «Precio por unidad base» a «Precio/Ud (€)» con Pegado especial → Valores (en Excel, Ctrl+Alt+V y luego V) y pon esa misma unidad en «Ud. Compra». Un pegado normal arrastraría la fórmula: el precio y el coste de esa línea se quedarían en blanco sin avisar, y el coste del plato saldría más bajo. Los destilados, el vino y el espumoso no: su precio viene de la pestaña «Formatos de Compra».",
-  "en": "▸ Do you keep your prices in template 13 (Ingredient Price List)? Copy its Price per Base Unit into Price/Unit using Paste Special → Values (in Excel, Ctrl+Alt+V, then V) and set that same unit under Purchase Unit. A normal paste would drag the formula along: the price and cost for that line would go blank with no warning, and the dish cost would come out too low. Spirits, wine, and sparkling wine are the exception: their price comes from the \"Bottle Sizes\" tab."
+  "en": "▸ Do you keep your prices in template 13 (Ingredient Price Tracker)? Copy its Price per Base Unit into Price/Unit using Paste Special → Values (in Excel, Ctrl+Alt+V, then V) and set that same unit under Purchase Unit. A normal paste would drag the formula along: the price and cost for that line would go blank with no warning, and the dish cost would come out too low. Spirits, wine, and sparkling wine are the exception: their price comes from the \"Bottle Sizes\" tab."
  },
  {
   "es": "▸ Cantidad: la que usas en el cóctel, EN LA UNIDAD DE USO.",
@@ -187,11 +187,11 @@
  },
  {
   "es": "Escandallo — Cocktails y Bebidas · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Cocktails & Drinks · Recipe Costing Kit Pro"
+  "en": "Pour Cost Calculator (Cocktails & Drinks)"
  },
  {
   "es": "📋 Escandallo — Pastelería y Repostería",
-  "en": "📋 Recipe Cost Card — Pastry & Bakery"
+  "en": "📋 Bakery & Cake Pricing Calculator"
  },
  {
   "es": "▸ Una pestaña por elaboración: tarta de chocolate (12 raciones), croissants (20 unidades) y macarons (30 unidades).",
@@ -353,6 +353,6 @@
  },
  {
   "es": "Escandallo — Pastelería y Repostería · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Pastry & Bakery · Recipe Costing Kit Pro"
+  "en": "Bakery & Cake Pricing Calculator"
  }
 ]

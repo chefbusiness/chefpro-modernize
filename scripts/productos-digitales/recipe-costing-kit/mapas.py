@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-mapas.py — Recipe Costing Kit Pro (EN) · mapas ES→EN y tabla `Conversions` generada.
+mapas.py — Food Cost Kit Pro (EN) · mapas ES→EN y tabla `Conversions` generada.
 
-SPEC: `scripts/productos-digitales/recipe-costing-kit/SPEC.md` (D7, D8, D9, §2.2, §2.3, §2.4).
+SPEC: `scripts/productos-digitales/recipe-costing-kit/SPEC.md` (D7, D8, D9, D9 bis, §2.2, §2.3, §2.4).
+(La carpeta de trabajo conserva el nombre antiguo: es solo la ruta del repo; el producto es «Food Cost Kit Pro»,
+slug `food-cost-templates`.)
 
 Importable SIN efectos (solo constantes y funciones). Ejecutado como script corre el
 autotest y, si existe `censo_es.json` al lado, lo cruza con el censo del ES v2.1:
@@ -11,8 +13,13 @@ autotest y, si existe `censo_es.json` al lado, lo cruza con el censo del ES v2.1
     python3 mapas.py --json     # además vuelca la tabla Conversions en JSON por stdout
 
 Contenido:
-  · FICHEROS            nombres de fichero ES→EN (research §1.2 + D17).
-  · HOJAS               nombres de pestaña ES→EN (D9 + research §1.3; 12/13; «Mermas» → «Trim Loss Factors»).
+  · PRODUCTO / SLUG / URL_PRODUCTO  nombre, slug y URL del producto EN (D2, D1, D14).
+  · FICHEROS            nombres de fichero ES→EN (D9 bis: intención de búsqueda; D17).
+  · TITULOS             título interior de cada entregable EN (D9 bis: fila del título de Instructions y
+                        docProps title de los xlsx; título del PDF).
+  · NOMBRES_RETIRADOS   nombres y ficheros EN anteriores a D9 bis: ningún entregable ni dato EN los usa.
+  · HOJAS               nombres de pestaña ES→EN (D9 + research §1.3; 12/13; «Mermas» → «Trim Loss Factors»;
+                        D9 bis: 10 «Menu Pricing Calculator» y 13 «Price Tracker»).
   · HOJAS_ES_POR_LIBRO  pestañas de cada libro ES v2.1, en orden (para validar unicidad por libro).
   · CATEGORIAS          las 21 categorías de merma (research §1.4), en el orden de la hoja.
   · UNIDADES            unidades del desplegable ES → clave EN (§2.3: ud→each, docena→dozen…).
@@ -37,25 +44,73 @@ from fractions import Fraction as Fr
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
 # ==========================================================================
-# 1. Ficheros (research §1.2; 12 y 13 de D17)
+# 0. Producto (D1, D2, D14; nombre cambiado el 24-sep por intención de búsqueda)
+# ==========================================================================
+PRODUCTO = 'Food Cost Kit Pro'
+SLUG = 'food-cost-templates'
+URL_PRODUCTO = 'aichef.pro/en/digital-products/' + SLUG
+
+# ==========================================================================
+# 1. Ficheros y títulos (SPEC D9 bis: la palabra que se busca, no la traducción; 12 y 13 de D17)
 # ==========================================================================
 FICHEROS = OrderedDict([
-    ('01-escandallo-estandar.xlsx', '01-standard-recipe-cost-card.xlsx'),
-    ('02-menu-degustacion.xlsx', '02-tasting-menu.xlsx'),
-    ('03-menu-del-dia.xlsx', '03-prix-fixe-lunch-menu.xlsx'),
-    ('04-cocktails-bebidas.xlsx', '04-cocktails-and-drinks.xlsx'),
-    ('05-pasteleria.xlsx', '05-pastry-and-bakery.xlsx'),
-    ('06-catering.xlsx', '06-catering-and-events.xlsx'),
-    ('07-cafeteria-brunch.xlsx', '07-cafe-and-brunch.xlsx'),
-    ('08-food-truck.xlsx', '08-food-truck.xlsx'),
-    ('09-control-mermas.xlsx', '09-food-waste-tracker.xlsx'),
-    ('10-calculadora-pvp.xlsx', '10-menu-price-calculator.xlsx'),
-    ('11-dashboard-food-cost-mensual.xlsx', '11-monthly-food-cost-dashboard.xlsx'),
+    ('01-escandallo-estandar.xlsx', '01-recipe-cost-card.xlsx'),
+    ('02-menu-degustacion.xlsx', '02-tasting-menu-costing.xlsx'),
+    ('03-menu-del-dia.xlsx', '03-prix-fixe-set-menu-costing.xlsx'),
+    ('04-cocktails-bebidas.xlsx', '04-pour-cost-calculator.xlsx'),
+    ('05-pasteleria.xlsx', '05-bakery-cake-pricing.xlsx'),
+    ('06-catering.xlsx', '06-catering-pricing-quote.xlsx'),
+    ('07-cafeteria-brunch.xlsx', '07-cafe-brunch-costing.xlsx'),
+    ('08-food-truck.xlsx', '08-food-truck-pricing-break-even.xlsx'),
+    ('09-control-mermas.xlsx', '09-food-waste-log.xlsx'),
+    ('10-calculadora-pvp.xlsx', '10-menu-pricing-calculator.xlsx'),
+    ('11-dashboard-food-cost-mensual.xlsx', '11-food-cost-percentage-tracker.xlsx'),
     ('12-test-de-rendimiento.xlsx', '12-yield-test.xlsx'),
-    ('13-lista-precios-ingredientes.xlsx', '13-ingredient-price-list.xlsx'),
-    ('BONUS-mermas-inventario.xlsx', 'BONUS-inventory-and-waste-control.xlsx'),
-    ('BONUS-guia-food-cost-30-dias.pdf', 'BONUS-30-day-food-cost-guide.pdf'),
+    ('13-lista-precios-ingredientes.xlsx', '13-ingredient-price-tracker.xlsx'),
+    ('BONUS-mermas-inventario.xlsx', 'BONUS-actual-vs-theoretical-food-cost.xlsx'),
+    ('BONUS-guia-food-cost-30-dias.pdf', 'BONUS-reduce-food-cost-30-days.pdf'),
 ])
+# Título interior = título de la tabla D9 bis (landing y dashboard). En los xlsx va en el docProps `title`
+# y en la fila del título de Instructions (B2, tras el icono «📋 » del diseño ES). El PDF lleva el suyo.
+TITULOS = OrderedDict([
+    ('01-recipe-cost-card.xlsx', 'Recipe Cost Card & Plate Cost Calculator'),
+    ('02-tasting-menu-costing.xlsx', 'Tasting Menu Costing'),
+    ('03-prix-fixe-set-menu-costing.xlsx', 'Prix Fixe & Set Menu Costing'),
+    ('04-pour-cost-calculator.xlsx', 'Pour Cost Calculator (Cocktails & Drinks)'),
+    ('05-bakery-cake-pricing.xlsx', 'Bakery & Cake Pricing Calculator'),
+    ('06-catering-pricing-quote.xlsx', 'Catering Pricing Calculator & Quote'),
+    ('07-cafe-brunch-costing.xlsx', 'Café & Brunch Menu Costing'),
+    ('08-food-truck-pricing-break-even.xlsx', 'Food Truck Menu Pricing & Break-Even'),
+    ('09-food-waste-log.xlsx', 'Food Waste Log'),
+    ('10-menu-pricing-calculator.xlsx', 'Menu Pricing Calculator'),
+    ('11-food-cost-percentage-tracker.xlsx', 'Food Cost Percentage Tracker'),
+    ('12-yield-test.xlsx', 'Yield Test (Butcher & Cooking Loss)'),
+    ('13-ingredient-price-tracker.xlsx', 'Ingredient Price Tracker'),
+    ('BONUS-actual-vs-theoretical-food-cost.xlsx', 'BONUS: Actual vs Theoretical Food Cost (Inventory & Waste)'),
+    ('BONUS-reduce-food-cost-30-days.pdf', 'How to Reduce Food Cost in 30 Days'),
+])
+ICONO_TITULO = '\U0001F4CB '           # «📋 »: el título de Instructions del ES lo lleva delante
+
+
+def titulo_instrucciones(fname_en):
+    """Texto de la fila del título de Instructions (B2) de un xlsx EN."""
+    return ICONO_TITULO + TITULOS[fname_en]
+
+
+# Nombres EN anteriores a D9 bis (research §1.2 y producto «Recipe Costing Kit Pro»). Ningún xlsx, PDF ni dato
+# EN puede usarlos: el gate «nombre» de gates_en.py los busca. «12-yield-test.xlsx» no cambió y no está aquí.
+FICHEROS_RETIRADOS = [
+    '01-standard-recipe-cost-card.xlsx', '02-tasting-menu.xlsx', '03-prix-fixe-lunch-menu.xlsx',
+    '04-cocktails-and-drinks.xlsx', '05-pastry-and-bakery.xlsx', '06-catering-and-events.xlsx',
+    '07-cafe-and-brunch.xlsx', '08-food-truck.xlsx', '09-food-waste-tracker.xlsx',
+    '10-menu-price-calculator.xlsx', '11-monthly-food-cost-dashboard.xlsx', '13-ingredient-price-list.xlsx',
+    'BONUS-inventory-and-waste-control.xlsx', 'BONUS-30-day-food-cost-guide.pdf',
+]
+NOMBRES_RETIRADOS = [
+    'Standard Recipe Cost Card', 'Prix Fixe Lunch Menu', 'Food Waste Tracker', 'Menu Price Calculator',
+    'Monthly Food Cost Dashboard', 'Ingredient Price List', 'Waste Checklist + Inventory',
+    'Control Your Food Cost in 30 Days', '30-Day Food Cost Guide', '"Price List"',
+]
 LIBROS_ES = [f for f in FICHEROS if f.endswith('.xlsx')]          # los 14 xlsx, en orden
 
 # ==========================================================================
@@ -114,14 +169,14 @@ HOJAS = OrderedDict([
     ('Mermas Semanal', 'Weekly Waste Log'),
     ('Evolución', 'Trend'),
     # 10
-    ('Calculadora PVP', 'Menu Price Calculator'),
+    ('Calculadora PVP', 'Menu Pricing Calculator'),       # D9 bis
     # 11
     ('Dashboard', 'Dashboard'),
     # 12 (D9 / R2T-07)
     ('Test de despiece', 'Butcher Yield Test'),
     ('Test de cocción', 'Cooking Loss Test'),
     # 13
-    ('Lista de precios', 'Price List'),
+    ('Lista de precios', 'Price Tracker'),                # D9 bis
     # BONUS
     ('Inventario', 'Inventory'),
     ('Ventas del periodo', 'Sales for the Period'),
@@ -530,6 +585,24 @@ def autotest(censo_path=None, verbose=False):
         _check(len({e.lower() for e in ens}) == len(ens),
                'D9: nombres EN repetidos en {}: {}'.format(libro, ens), fallos)
     _check(HOJAS['Mermas'] == 'Trim Loss Factors', 'D9: «Mermas» → «Trim Loss Factors»', fallos)
+    _check(HOJAS['Calculadora PVP'] == 'Menu Pricing Calculator', 'D9 bis: 10 → «Menu Pricing Calculator»', fallos)
+    _check(HOJAS['Lista de precios'] == 'Price Tracker', 'D9 bis: 13 → «Price Tracker»', fallos)
+
+    # --- ficheros y títulos (D9 bis)
+    ens = list(FICHEROS.values())
+    _check(len(FICHEROS) == 15 and len(set(ens)) == 15, 'D9 bis: 15 ficheros EN distintos', fallos)
+    _check(list(TITULOS) == ens, 'D9 bis: TITULOS no tiene exactamente los ficheros de FICHEROS, en orden', fallos)
+    for f in ens:
+        _check(re.fullmatch(r'(?:\d{2}|BONUS)-[a-z0-9]+(?:-[a-z0-9]+)*\.(?:xlsx|pdf)', f) is not None,
+               'D9 bis: nombre de fichero no canónico: ' + f, fallos)
+        _check(f not in FICHEROS_RETIRADOS, 'D9 bis: fichero retirado en FICHEROS: ' + f, fallos)
+    for f, tit in TITULOS.items():
+        _check(tit and tit.strip() == tit, 'D9 bis: título vacío o con espacios: ' + f, fallos)
+        for viejo in NOMBRES_RETIRADOS:
+            _check(viejo not in tit, 'D9 bis: título de {} con el nombre retirado {!r}'.format(f, viejo), fallos)
+        _check('Recipe Costing' not in tit, 'D9 bis: «Recipe Costing» en el título de ' + f, fallos)
+    _check(URL_PRODUCTO == 'aichef.pro/en/digital-products/food-cost-templates', 'D1: URL del producto', fallos)
+    res['ficheros'] = {'n': len(ens), 'titulos': len(TITULOS)}
     _check(set(HOJAS_ES_POR_LIBRO) == set(LIBROS_ES), 'ficheros: HOJAS_ES_POR_LIBRO ≠ LIBROS_ES', fallos)
     res['hojas'] = {'es_distintas': len(HOJAS), 'libros': len(HOJAS_ES_POR_LIBRO),
                     'pestanas_total': sum(len(h) for h in HOJAS_ES_POR_LIBRO.values())}

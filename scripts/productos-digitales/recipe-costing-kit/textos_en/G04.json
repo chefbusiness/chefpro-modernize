@@ -1,7 +1,7 @@
 [
  {
   "es": "📋 Escandallo — Cafetería y Brunch",
-  "en": "📋 Recipe Cost Card — Café & Brunch"
+  "en": "📋 Café & Brunch Menu Costing"
  },
  {
   "es": "▸ 4 recetas típicas de brunch y cafetería: tostada de aguacate, açaí bowl, eggs benedict y carrot cake.",
@@ -128,11 +128,11 @@
  },
  {
   "es": "Escandallo — Cafetería y Brunch · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Café & Brunch · Recipe Costing Kit Pro"
+  "en": "Café & Brunch Menu Costing"
  },
  {
   "es": "📋 Escandallo — Food Truck",
-  "en": "📋 Recipe Cost Card — Food Truck"
+  "en": "📋 Food Truck Menu Pricing & Break-Even"
  },
  {
   "es": "▸ Una pestaña por producto de venta: smash burger, loaded fries y pulled pork.",
@@ -310,11 +310,11 @@
  },
  {
   "es": "Escandallo — Food Truck · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Food Truck · Recipe Costing Kit Pro"
+  "en": "Food Truck Menu Pricing & Break-Even"
  },
  {
   "es": "📋 Control de Mermas por Categoría",
-  "en": "📋 Food Waste Tracker by Category"
+  "en": "📋 Food Waste Log"
  },
  {
   "es": "▸ Esta plantilla mide el DESPERDICIO: los euros que se tiran (caducidad, mal estado, sobreproducción, porcionado) sobre los euros que se compran.",
@@ -400,7 +400,7 @@
  },
  {
   "es": "Control de Mermas — Desperdicio semanal sobre compra",
-  "en": "Food Waste Tracker — Weekly Waste vs. Purchases"
+  "en": "Food Waste Log — Weekly Waste vs. Purchases"
  },
  {
   "es": "Semana del:",
@@ -534,6 +534,6 @@
  },
  {
   "es": "Control de Mermas por Categoría · Kit de Escandallos Pro",
-  "en": "Food Waste Tracker by Category · Recipe Costing Kit Pro"
+  "en": "Food Waste Log"
  }
 ]

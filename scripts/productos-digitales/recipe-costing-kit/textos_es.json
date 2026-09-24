@@ -1,63 +1,63 @@
 {
  "meta": {
-  "generado": "2026-09-24T15:59:20Z",
+  "generado": "2026-09-24T20:01:40Z",
   "script": "scripts/productos-digitales/recipe-costing-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-escandallos",
-  "commit": "770aaf1a",
+  "commit": "b8779e07",
   "libros": {
    "01": {
     "es": "01-escandallo-estandar.xlsx",
-    "en": "01-standard-recipe-cost-card.xlsx",
+    "en": "01-recipe-cost-card.xlsx",
     "sha256": "2b4187b9a45da38523ae593686cb3e63b3ec85dba47936aa8a9b1f8d710b31c8"
    },
    "02": {
     "es": "02-menu-degustacion.xlsx",
-    "en": "02-tasting-menu.xlsx",
+    "en": "02-tasting-menu-costing.xlsx",
     "sha256": "c8e7360a8d1dd182a14c604153181d4ba186282285f9ff91507284becb0a4032"
    },
    "03": {
     "es": "03-menu-del-dia.xlsx",
-    "en": "03-prix-fixe-lunch-menu.xlsx",
+    "en": "03-prix-fixe-set-menu-costing.xlsx",
     "sha256": "d55d83b5c5b4db5444ab8bdb2aa4e98d27cedc1df8f780a129242a58ea09b2f2"
    },
    "04": {
     "es": "04-cocktails-bebidas.xlsx",
-    "en": "04-cocktails-and-drinks.xlsx",
+    "en": "04-pour-cost-calculator.xlsx",
     "sha256": "38f65512f882c3dc9d4278ba7c70ecd5524e92f96531df447dd49071c37168bf"
    },
    "05": {
     "es": "05-pasteleria.xlsx",
-    "en": "05-pastry-and-bakery.xlsx",
+    "en": "05-bakery-cake-pricing.xlsx",
     "sha256": "e8d81b29ced577eb40b9b583befa7b6099eb7c35e2c6b77955f7442af9ee9395"
    },
    "06": {
     "es": "06-catering.xlsx",
-    "en": "06-catering-and-events.xlsx",
+    "en": "06-catering-pricing-quote.xlsx",
     "sha256": "2ac6f161c91db60b773f2e7059962f08f03728a18dc1932739009750ba63fac8"
    },
    "07": {
     "es": "07-cafeteria-brunch.xlsx",
-    "en": "07-cafe-and-brunch.xlsx",
+    "en": "07-cafe-brunch-costing.xlsx",
     "sha256": "125f4e062bee2ce621adaed68b60595c39f2aca636df203893313f095855a9cb"
    },
    "08": {
     "es": "08-food-truck.xlsx",
-    "en": "08-food-truck.xlsx",
+    "en": "08-food-truck-pricing-break-even.xlsx",
     "sha256": "b5612ba0371401063fc1aff4557e2de72530502f14c53ea6a6e46a6eb03c14a7"
    },
    "09": {
     "es": "09-control-mermas.xlsx",
-    "en": "09-food-waste-tracker.xlsx",
+    "en": "09-food-waste-log.xlsx",
     "sha256": "82d47ea8e39c69930824bcf561a241d1a54dd91bb47921d754c67b507470acfa"
    },
    "10": {
     "es": "10-calculadora-pvp.xlsx",
-    "en": "10-menu-price-calculator.xlsx",
+    "en": "10-menu-pricing-calculator.xlsx",
     "sha256": "cdd0da9be3ce8a4e3c6d127485e72e5b40a0316bed844dd9d02fb26a845f50f1"
    },
    "11": {
     "es": "11-dashboard-food-cost-mensual.xlsx",
-    "en": "11-monthly-food-cost-dashboard.xlsx",
+    "en": "11-food-cost-percentage-tracker.xlsx",
     "sha256": "ee324e1daee03a667ed6f7e07e3e15f873ebac7a5f9f88a4e8cb23a77d790706"
    },
    "12": {
@@ -67,12 +67,12 @@
    },
    "13": {
     "es": "13-lista-precios-ingredientes.xlsx",
-    "en": "13-ingredient-price-list.xlsx",
+    "en": "13-ingredient-price-tracker.xlsx",
     "sha256": "308beeabb823e961d05b14849873d0598ce3dd24c0fd7b06a85371301ec632c4"
    },
    "BONUS": {
     "es": "BONUS-mermas-inventario.xlsx",
-    "en": "BONUS-inventory-and-waste-control.xlsx",
+    "en": "BONUS-actual-vs-theoretical-food-cost.xlsx",
     "sha256": "02442f54591bf3cdf4fc9054d894707a086608c0653b352795e3fd3aec25df05"
    }
   },
@@ -229,7 +229,7 @@
    "palabras": 7,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "81975e1a3f80",
@@ -958,7 +958,7 @@
    "con_cifra": true,
    "pistas": [
     "D5: sin símbolo de moneda; los rótulos pierden «(€)»; «$» solo en ejemplos de texto US",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")",
     "Glosario: «Purchase unit» / «Recipe unit»"
    ],
@@ -3359,7 +3359,7 @@
    "palabras": 9,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "899fa087d12d",
@@ -10757,7 +10757,7 @@
    "con_cifra": true,
    "pistas": [
     "D8/D9: merma = «trim loss %» (yield % = 100 % − trim loss %); «waste» solo para el desperdicio (09 y BONUS)",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")"
    ],
    "sha1": "76274f212f3d",
@@ -12141,7 +12141,7 @@
    ],
    "pistas": [
     "D8/D9: merma = «trim loss %» (yield % = 100 % − trim loss %); «waste» solo para el desperdicio (09 y BONUS)",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")"
    ],
    "sha1": "64e8b3fa5f27",
@@ -12452,7 +12452,7 @@
    "palabras": 10,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "5c2f56499213",
@@ -13487,7 +13487,7 @@
    "palabras": 7,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "dedaa06985fe",
@@ -14609,7 +14609,7 @@
    "con_cifra": false,
    "pistas": [
     "Glosario: «prix fixe lunch» (UK: set lunch menu)",
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "4f95d2d67458",
@@ -14813,7 +14813,7 @@
    ],
    "pistas": [
     "D5: sin símbolo de moneda; los rótulos pierden «(€)»; «$» solo en ejemplos de texto US",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")",
     "Glosario: «Purchase unit» / «Recipe unit»"
    ],
@@ -15891,7 +15891,7 @@
    "palabras": 8,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "82baa64a3e21",
@@ -17016,7 +17016,7 @@
    "palabras": 8,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "e625b4b6d8b7",
@@ -20495,7 +20495,7 @@
    "palabras": 8,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "0f94b2a5570c",
@@ -21366,7 +21366,7 @@
    "palabras": 8,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "97af878f2a05",
@@ -22503,7 +22503,7 @@
    "palabras": 7,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "6129e5293475",
@@ -23724,7 +23724,7 @@
    "con_cifra": false,
    "pistas": [
     "D8/D9: merma = «trim loss %» (yield % = 100 % − trim loss %); «waste» solo para el desperdicio (09 y BONUS)",
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "4bf1bfce3eae",
@@ -24649,7 +24649,7 @@
    "con_cifra": false,
    "pistas": [
     "D6/D8: PVP = menu price",
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "a79fb1548d35",
@@ -25557,7 +25557,7 @@
    "palabras": 8,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "beff1a3aeaeb",
@@ -26183,7 +26183,7 @@
    "pistas": [
     "D5: sin símbolo de moneda; los rótulos pierden «(€)»; «$» solo en ejemplos de texto US",
     "D8/D9: merma = «trim loss %» (yield % = 100 % − trim loss %); «waste» solo para el desperdicio (09 y BONUS)",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)"
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)"
    ],
    "sha1": "a6febe1fb428",
    "donde": [
@@ -26213,7 +26213,7 @@
    ],
    "pistas": [
     "D8/D9: merma = «trim loss %» (yield % = 100 % − trim loss %); «waste» solo para el desperdicio (09 y BONUS)",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")"
    ],
    "sha1": "1ce08976a3f5",
@@ -26237,7 +26237,7 @@
    "palabras": 60,
    "con_cifra": true,
    "pistas": [
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)"
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)"
    ],
    "sha1": "46d8aaf7289a",
    "donde": [
@@ -27362,7 +27362,7 @@
    "palabras": 7,
    "con_cifra": true,
    "pistas": [
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)"
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)"
    ],
    "sha1": "f5b756a1c456",
    "donde": [
@@ -27840,7 +27840,7 @@
    "palabras": 58,
    "con_cifra": true,
    "pistas": [
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)"
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)"
    ],
    "sha1": "c1b034f7b810",
    "donde": [
@@ -27863,7 +27863,7 @@
    "palabras": 10,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "f1ab7211b2b7",
@@ -28420,7 +28420,7 @@
    "con_cifra": true,
    "pistas": [
     "D5: sin símbolo de moneda; los rótulos pierden «(€)»; «$» solo en ejemplos de texto US",
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")",
     "Glosario: «Purchase unit» / «Recipe unit»"
    ],
@@ -28474,7 +28474,7 @@
     }
    ],
    "pistas": [
-    "D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)",
+    "D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)",
     "D9/R2T-18: pestañas citadas entre comillas dobles rectas (\"Recipe Cost Card\")"
    ],
    "sha1": "9983111bf25b",
@@ -28944,7 +28944,7 @@
    "palabras": 9,
    "con_cifra": false,
    "pistas": [
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "712b783f3c91",
@@ -30327,7 +30327,7 @@
    "con_cifra": false,
    "pistas": [
     "D8/D9: merma = «trim loss %» (yield % = 100 % − trim loss %); «waste» solo para el desperdicio (09 y BONUS)",
-    "D2: «Recipe Costing Kit Pro»",
+    "D2: «Food Cost Kit Pro»",
     "Glosario: escandallo = «recipe cost card»"
    ],
    "sha1": "68e07e0a8f13",
@@ -46002,98 +46002,98 @@
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "02",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "03",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "04",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "05",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "06",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "07",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "08",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "09",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "10",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "11",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "12",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "13",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     },
     {
      "f": "BONUS",
      "t": "docprops",
      "c": "subject",
      "tr": "regenerar",
-     "det": "D14 subject «Recipe Costing Kit Pro · v2.1»"
+     "det": "D14 subject «Food Cost Kit Pro · v2.1»"
     }
    ]
   },
@@ -46113,98 +46113,98 @@
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "02",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "03",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "04",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "05",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "06",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "07",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "08",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "09",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "10",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "11",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "12",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "13",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     },
     {
      "f": "BONUS",
      "t": "docprops",
      "c": "description",
      "tr": "regenerar",
-     "det": "D14 URL aichef.pro/en/digital-products/recipe-costing-kit"
+     "det": "D14 URL aichef.pro/en/digital-products/food-cost-templates"
     }
    ]
   },
@@ -47198,7 +47198,7 @@
    "es": "Calculadora PVP",
    "grupo": "GM-mapas",
    "tratamiento": "mapa-hoja",
-   "en_mapa": "Menu Price Calculator",
+   "en_mapa": "Menu Pricing Calculator",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -47380,7 +47380,7 @@
    "es": "Lista de precios",
    "grupo": "GM-mapas",
    "tratamiento": "mapa-hoja",
-   "en_mapa": "Price List",
+   "en_mapa": "Price Tracker",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,

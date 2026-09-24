@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-bono_guide_en.py — Maqueta el bono EN «Control Your Food Cost in 30 Days»
-(Recipe Costing Kit Pro, SPEC §2.6) desde Markdown a PDF (US Letter) y, si se
+bono_guide_en.py — Maqueta el bono EN «How to Reduce Food Cost in 30 Days»
+(Food Cost Kit Pro, SPEC §2.6 y D9 bis) desde Markdown a PDF (US Letter) y, si se
 pide, a DOCX de trabajo.
 
 Copia PARAMETRIZADA de `kit-escandallos-v2_0/bono_guia.py` (el maquetador del
@@ -52,18 +52,18 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table,
 # ==========================================================================
 PARAMS = {
     'pagesize': letter,                                   # SPEC D13: US Letter
-    'cabecera': 'AI Chef Pro · Recipe Costing Kit Pro',
+    'cabecera': 'AI Chef Pro · Food Cost Kit Pro',
     'pie': 'Page {n}',
-    'titulo_pdf': 'Control Your Food Cost in 30 Days',
+    'titulo_pdf': 'How to Reduce Food Cost in 30 Days',       # SPEC D9 bis (= mapas.TITULOS)
     # La línea en negrita bajo el H1 que se pinta como subtítulo (y no se
     # repite en el cuerpo). Se localiza por este marcador.
-    'marcador_meta': 'A bonus guide from Recipe Costing Kit Pro',
-    'meta_por_defecto': 'A bonus guide from Recipe Costing Kit Pro by AI Chef Pro',
+    'marcador_meta': 'A bonus guide from Food Cost Kit Pro',
+    'meta_por_defecto': 'A bonus guide from Food Cost Kit Pro by AI Chef Pro',
     'autor_pdf': 'AI Chef Pro',
-    'asunto_pdf': 'Recipe Costing Kit Pro · Bonus guide',
+    'asunto_pdf': 'Food Cost Kit Pro · Bonus guide',
     'creador_pdf': 'AI Chef Pro · aichef.pro',
-    'keywords_pdf': 'food cost, recipe costing, menu engineering, prime cost, '
-                    'Recipe Costing Kit Pro, AI Chef Pro',
+    'keywords_pdf': 'food cost, how to reduce food cost, menu engineering, prime cost, '
+                    'Food Cost Kit Pro, AI Chef Pro',
 }
 
 GOLD = '#B8860B'
@@ -650,8 +650,8 @@ def verificar_pdf(ruta_pdf):
 
 def autotest():
     """Prueba en negativo: cada defecto inyectado tiene que hacer saltar su gate."""
-    base = ('# Control Your Food Cost in 30 Days\n\n'
-            '**A bonus guide from Recipe Costing Kit Pro by AI Chef Pro**\n\n'
+    base = ('# How to Reduce Food Cost in 30 Days\n\n'
+            '**A bonus guide from Food Cost Kit Pro by AI Chef Pro**\n\n'
             'Food cost is what you use, not what you buy. Visit '
             'https://aichef.pro/en/digital-products or johnguerrero.es. '
             'Café, purée and açaí are fine.\n')

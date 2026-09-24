@@ -1,4 +1,8 @@
-# Recipe Costing Kit Pro — F2-EN · notas de trabajo
+# Food Cost Kit Pro — F2-EN · notas de trabajo
+
+> ⚠️ El producto se llamaba «Recipe Costing Kit Pro» hasta el 24-sep por la noche. Las secciones anteriores a
+> «Renombrado» conservan los nombres de entonces (ficheros, pestañas 10 y 13, `dl/recipe-costing-kit/`,
+> `RECIPE_COSTING_KIT_APPLY`): son historia. Lo vigente está en «Renombrado», al final.
 
 > Sesión Claude Code, 24-sep-2026. SPEC que manda: `SPEC.md` (D1-D20, §2.1-§2.6, §4). Fuente: los 14 xlsx del
 > Kit de Escandallos Pro **v2.1 publicados** en `astro-site/public/dl/kit-escandallos/` (HEAD `770aaf1`; última edición de esa carpeta en `960b959`), que
@@ -408,3 +412,102 @@ Ronda 1 de 2 (gate 8): lente de chef/manager US-UK (CHEF-01…19) y lente técni
 Pendiente (igual que antes): `--real` y `EXCLUIDOS` de `postprocess-transversal.py` (orquestador); ronda 2 (la última) si
 el orquestador la lanza; gate 9 (Google Sheets) con el consentimiento de John; la landing EN (F3) tiene que decir
 **23 páginas** (`PAGINAS_PDF` en `gates_en.py`).
+
+## Renombrado (D9 bis, sesión Claude Code, 24-sep, noche)
+
+El producto pasa a **Food Cost Kit Pro** (slug `food-cost-templates`, `aichef.pro/en/digital-products/food-cost-templates`)
+y los ficheros, títulos y dos pestañas se adaptan a la intención de búsqueda (SPEC, aviso de cabecera y D9 bis). Todo
+se cambia en **código y datos** y se regenera; ningún xlsx se toca a mano. Los ES de `dl/kit-escandallos/` siguen
+intactos. Scripts en serie con `istats` (48-61 °C). La carpeta de trabajo conserva su ruta
+(`scripts/productos-digitales/recipe-costing-kit/`): es lo único que puede llevar el nombre viejo.
+
+### Qué cambia y dónde
+
+| Pieza | Antes | Ahora | Fuente |
+|---|---|---|---|
+| Producto, `subject`, cabecera B3, ancla del pie de marca | Recipe Costing Kit Pro | **Food Cost Kit Pro** (`subject` «Food Cost Kit Pro · v2.1») | `mapas.PRODUCTO`; `textos_en/G0-comun`, `GM-mapas` |
+| URL (`description`, línea de versión D14) | …/recipe-costing-kit | `aichef.pro/en/digital-products/food-cost-templates` | `mapas.URL_PRODUCTO` |
+| `keywords` | recipe costing kit, AI Chef Pro | food cost kit, food cost templates, AI Chef Pro | `G0-comun` |
+| Ficheros (15) y títulos | research §1.2 | tabla D9 bis, exacta | `mapas.FICHEROS` y `mapas.TITULOS` (nuevo) |
+| Título interior | «📋 Standard Recipe Cost Card — A La Carte Dish»; docProps «… · Recipe Costing Kit Pro» | docProps `title` = título D9 bis **exacto**; Instructions B2 = «📋 » + título (el icono es el diseño del ES) | `textos_en/G01-G07`; `aplicar_en.comprobar_titulo()` aborta si no casan |
+| Pestaña 10 / 13 | Menu Price Calculator / Price List | **Menu Pricing Calculator** / **Price Tracker** | `mapas.HOJAS` |
+| PDF | «Control Your Food Cost in 30 Days», `BONUS-30-day-food-cost-guide.pdf` | **«How to Reduce Food Cost in 30 Days»**, `BONUS-reduce-food-cost-30-days.pdf`; cabecera, subtítulo, asunto y keywords con «Food Cost Kit Pro» | `bono_guide_en.py` (PARAMS), `bonus-guide-food-cost-30-days.md` |
+| `--real` | `dl/recipe-costing-kit/`, `RECIPE_COSTING_KIT_APPLY=1` | **`dl/food-cost-templates/`, `FOOD_COST_KIT_APPLY=1`** | `aplicar_en.py` |
+
+Ficheros EN finales (nombre → título interior):
+
+| Fichero | Título |
+|---|---|
+| `01-recipe-cost-card.xlsx` | Recipe Cost Card & Plate Cost Calculator |
+| `02-tasting-menu-costing.xlsx` | Tasting Menu Costing |
+| `03-prix-fixe-set-menu-costing.xlsx` | Prix Fixe & Set Menu Costing |
+| `04-pour-cost-calculator.xlsx` | Pour Cost Calculator (Cocktails & Drinks) |
+| `05-bakery-cake-pricing.xlsx` | Bakery & Cake Pricing Calculator |
+| `06-catering-pricing-quote.xlsx` | Catering Pricing Calculator & Quote |
+| `07-cafe-brunch-costing.xlsx` | Café & Brunch Menu Costing |
+| `08-food-truck-pricing-break-even.xlsx` | Food Truck Menu Pricing & Break-Even |
+| `09-food-waste-log.xlsx` | Food Waste Log |
+| `10-menu-pricing-calculator.xlsx` | Menu Pricing Calculator |
+| `11-food-cost-percentage-tracker.xlsx` | Food Cost Percentage Tracker |
+| `12-yield-test.xlsx` | Yield Test (Butcher & Cooking Loss) |
+| `13-ingredient-price-tracker.xlsx` | Ingredient Price Tracker |
+| `BONUS-actual-vs-theoretical-food-cost.xlsx` | BONUS: Actual vs Theoretical Food Cost (Inventory & Waste) |
+| `BONUS-reduce-food-cost-30-days.pdf` | How to Reduce Food Cost in 30 Days (23 páginas Letter) |
+
+### Referencias: qué se reescribe solo y qué no
+
+- **Solas** (`aplicar_en.py`, desde `mapas.HOJAS` / `mapas.FICHEROS`): fórmulas, DV, CF, áreas de impresión, XML de
+  los gráficos, nombre de fichero de salida y copia del PDF. Comprobado: 10 y 13 no se citan por nombre en ninguna
+  fórmula (refs 0 en los dos libros) y el gate 1 sigue en verde.
+- **No solas** (texto traducido), arregladas en datos: dos accesos fijos `wb['Menu Price Calculator']` y
+  `wb['Price List']` de `aplicar_en.py` (y siete en `gates_en.py`, más el pycel `'Price List'!K…`) pasan por
+  `mapas.hoja_en()`; las citas «template 13 (Ingredient Price List)» → «(Ingredient Price Tracker)» en `G0-comun`, `G02`
+  y `generar_instrucciones_extra.py` (12 filas); «Template 01 (Standard Recipe Cost Card)» → «(Recipe Cost Card)»
+  en `G06` y `generar_mercado.py`; «template 03 (Prix Fixe Lunch Menu)» y «template 04 (Cocktails & Drinks)» en `G07`;
+  en el bono, 13 nombres de fichero, 4 citas de pestaña («Menu Pricing Calculator», «Price Tracker») y «price list» →
+  «price tracker» en el titular y el checklist de la semana 3.
+- **Decisión (para la ronda 2):** los rótulos de hoja que repetían el nombre viejo del producto siguen al nombre
+  nuevo, como en el ES (que repite el suyo): 09 `Weekly Waste Log!A1` «Food Waste Log — Weekly Waste vs. Purchases»,
+  10 `B2` «Menu Pricing Calculator — Suggested Menu Price», 11 `Dashboard!B2` «Food Cost Percentage Tracker», 13 `A1`
+  «Ingredient Price Tracker» y 03 `Menu Summary` «Summary — Prix Fixe & Set Menu». Las formas cortas «template 12
+  (Yield Test)» y «Template 08 (Food Truck)» se quedan: son el arranque del título nuevo.
+- Regenerados en cadena (solo cambian los nombres; diffs revisados): `extraer_textos.py` → `textos_es.json` y
+  `censo_es.json` (pistas D2/D14, `en_mapa` de 10/13 y `nombre_en`), `generar_gm_mapas.py` → `GM-mapas.json`,
+  `generar_mercado.py` → `mercado_en.json` (2 líneas) → `validar_mercado.py` 0 fallos, `generar_instrucciones_extra.py`
+  → `instrucciones_extra_en.json` (claves por fichero EN; 0 fallos). A mano: `glosario_en.json` (ficheros, pestañas,
+  nombre del producto) y `textos_en_por_celda.json` (fichero del BONUS).
+
+### Gate nuevo `nombre` (`gates_en.py --solo nombre`)
+
+- (a) La carpeta tiene **exactamente** los 15 ficheros de `mapas.FICHEROS`: uno de más (p. ej. un nombre retirado
+  que quedó de una construcción vieja) o de menos falla.
+- (b) xlsx: **todo su XML** (valores, docProps, pies, fórmulas, DV, gráficos, `workbook.xml`), 196 partes: cero
+  «Recipe Costing» (con mayúsculas: en minúscula es término de oficio y se admite), cero `recipe-costing-kit` en
+  cualquier caja y cero nombres o ficheros retirados (`mapas.NOMBRES_RETIRADOS` y `FICHEROS_RETIRADOS`); docProps
+  `title` = D9 bis; una sola fila «📋 …» en Instructions = D9 bis; cabecera «Food Cost Kit Pro — AI Chef Pro»; las
+  pestañas de 10 y 13 existen.
+- (c) PDF: texto de las 23 páginas + metadatos, mismo filtro; título de metadatos = D9 bis; portada con título y
+  nombre del producto.
+- (d) Datos: `textos_en/*.json`, `textos_en_por_celda.json`, `mercado_en.json`, `mercado_fuentes_web.json`,
+  `instrucciones_extra_en.json`, `glosario_en.json`, `textos_es.json`, `censo_es.json` y el `.md` del bono (17
+  ficheros), con una única excepción: la ruta `scripts/productos-digitales/recipe-costing-kit/`. En los datos no cuenta
+  `08-food-truck.xlsx` como retirado, porque es también el nombre del fichero ES.
+- También `gate5` exige ahora `title` = D9 bis y «food cost kit» en `keywords`, y `mapas.py` (autotest) comprueba
+  15 ficheros canónicos, `TITULOS` alineado con `FICHEROS`, ningún retirado y las pestañas 10/13.
+- `PAGINAS_PDF` sigue en **23** (el título nuevo no mueve la paginación).
+
+### Resultados
+
+| Comprobación | Resultado |
+|---|---|
+| `mapas.py` (autotest) | OK: n = 252, rango `$A$5:$B$286`, 15 ficheros y títulos D9 bis |
+| `validar_mercado.py` | 0 fallos |
+| `bono_guide_en.py --autotest` y maquetado | 14/14; **23 páginas** Letter, `BONUS-reduce-food-cost-30-days.pdf` |
+| `aplicar_en.py` (dry-run, 50 s) | 14 xlsx + PDF; idempotencia 0 diferencias; `inject_cache` 2.848 fórmulas, `fallos_pycel=0` en los 14 |
+| `gates_en.py` | **10/10 en verde** (1, 2, 3, 4, 5, 6, 7, 7bis, pdf, **nombre**); PDF: 8 ficheros y 18 pestañas citados, todos existen |
+| `gates_en.py --autotest` | **34/34** defectos detectados con su mensaje (25 de antes + 9 del gate `nombre`: title, pie y línea de versión con el nombre/slug viejo, título de Instructions, pestaña 10 retirada, fichero retirado en la carpeta, título del PDF, `textos_en` y `.md` del bono) y base limpia en los 9 gates usados |
+| `censo-entregables.py --only rck-dryrun/ --letter --fail` | 15 ficheros, 0 defectos |
+
+Pendiente (orquestador / F3): `--real` con `FOOD_COST_KIT_APPLY=1` → `dl/food-cost-templates/`, `food-cost-templates`
+en `EXCLUIDOS` de `postprocess-transversal.py` en ese mismo commit, claves de `get-download-urls.ts` con los 15
+nombres nuevos, y la landing/dashboard EN con los títulos de la tabla D9 bis y «23 pages».

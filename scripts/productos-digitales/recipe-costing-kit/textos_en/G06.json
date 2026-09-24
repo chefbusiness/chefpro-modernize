@@ -1,7 +1,7 @@
 [
   {
     "es": "📋 Test de Rendimiento — Despiece y Cocción",
-    "en": "📋 Yield Test — Butchering and Cooking Loss"
+    "en": "📋 Yield Test (Butcher & Cooking Loss)"
   },
   {
     "es": "Para Qué Sirve",
@@ -113,13 +113,13 @@
   },
   {
     "es": "▸ Despiece: el solomillo de ternera entero, con cordón, que compra la plantilla 01, a 28,50 €/kg. Es un ejemplo orientativo, no un test pesado: una pieza de 2,8 kg (las enteras pesan entre 2,5 y 3,2 kg) con una merma de limpieza del 25 %, la referencia habitual para el solomillo entero con cordón. El reparto entre el cordón que se aprovecha y lo que se tira, y el valor del cordón, son estimaciones: pon los tuyos.",
-    "en": "▸ Butchering: the whole beef tenderloin with chain, the one Template 01 (Standard Recipe Cost Card) buys, at $28.50/kg. This is an illustrative example, not an actual weigh-in: a 2.8 kg piece (whole ones weigh between 2.5 and 3.2 kg) with a 25% cleaning trim loss, the usual reference for a whole tenderloin with the chain on. The split between the chain you use and what you discard, and the value of the chain, are estimates — enter your own.",
+    "en": "▸ Butchering: the whole beef tenderloin with chain, the one Template 01 (Recipe Cost Card) buys, at $28.50/kg. This is an illustrative example, not an actual weigh-in: a 2.8 kg piece (whole ones weigh between 2.5 and 3.2 kg) with a 25% cleaning trim loss, the usual reference for a whole tenderloin with the chain on. The split between the chain you use and what you discard, and the value of the chain, are estimates — enter your own.",
     "cifra_derivada": true,
     "nota": "Precio (28,50 €/kg), peso (2,8 kg) y merma (25%) son del solomillo ES. El agente de mercado los reescribe en USD/lb con datos reales del whole beef tenderloin PSMO."
   },
   {
     "es": "▸ Con ese despiece, la merma del solomillo para la ficha es del 23,5 % (el 25 % de limpieza menos lo que vale el cordón) y no del 20 % genérico de «Carne roja»: es la que lleva ahora la plantilla 01 en la fila del solomillo.",
-    "en": "▸ With that yield test, the tenderloin's trim loss for the card is 23.5% (the 25% cleaning loss minus what the chain is worth), not the generic 20% for \"Beef & red meat\": that's the figure Template 01 (Standard Recipe Cost Card) now carries in the tenderloin row.",
+    "en": "▸ With that yield test, the tenderloin's trim loss for the card is 23.5% (the 25% cleaning loss minus what the chain is worth), not the generic 20% for \"Beef & red meat\": that's the figure Template 01 (Recipe Cost Card) now carries in the tenderloin row.",
     "cifra_derivada": true,
     "nota": "23,5% / 25% / 20% son del ejemplo ES; se recalculan con el precio y la merma reales del PSMO US."
   },
@@ -443,6 +443,6 @@
   },
   {
     "es": "Test de Rendimiento: Despiece y Cocción · Kit de Escandallos Pro",
-    "en": "Yield Test: Butchering and Cooking · Recipe Costing Kit Pro"
+    "en": "Yield Test (Butcher & Cooking Loss)"
   }
 ]

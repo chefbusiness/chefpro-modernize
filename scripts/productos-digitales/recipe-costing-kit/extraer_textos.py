@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-extraer_textos.py — Recipe Costing Kit Pro (EN) · cimientos de la F2-EN.
+extraer_textos.py — Food Cost Kit Pro (EN) · cimientos de la F2-EN.
 
 Lee los 14 xlsx PUBLICADOS del Kit de Escandallos Pro v2.1 (`astro-site/public/dl/kit-escandallos/`,
 SOLO LECTURA) y escribe, junto a este script:
@@ -78,12 +78,12 @@ PISTAS = [
     (r'manipulador', '§2.5 (06): food handler cards / food manager certification'),
     (r'[Vv]entas netas|[Cc]ompras netas', 'D19: net sales = sin impuesto y sin service charge ni propinas; '
                                           '«Net purchases (excl. recoverable tax)»'),
-    (r'Kit de Escandallos', 'D2: «Recipe Costing Kit Pro»'),
-    (r'aichef\.pro/kit-escandallos', 'D14: aichef.pro/en/digital-products/recipe-costing-kit'),
+    (r'Kit de Escandallos', 'D2: «Food Cost Kit Pro»'),
+    (r'aichef\.pro/kit-escandallos', 'D14: ' + mapas.URL_PRODUCTO),
     (r'Página', 'D13: «Page &P of &N»'),
     (r'[Ee]scandall', 'Glosario: escandallo = «recipe cost card»'),
     (r'\b\d+ ?cl\b', '§2.5 (04) / D7: tamaños US en ml (750 ml, 355 ml); UK 70 cl / 330 ml solo en notas'),
-    (r'[Pp]lantilla \d+', 'D9: cita de plantilla → número + nombre EN del fichero (FICHEROS)'),
+    (r'[Pp]lantilla \d+', 'D9/D9 bis: cita de plantilla → número + nombre EN del fichero (FICHEROS/TITULOS)'),
     (r'[«»]', 'D9/R2T-18: pestañas citadas entre comillas dobles rectas ("Recipe Cost Card")'),
     (r'hasta la fila \d+', 'E2: la fila pasa a {fila}'),
     (r'Ud\. [Cc]ompra|Ud\. [Uu]so', 'Glosario: «Purchase unit» / «Recipe unit»'),
@@ -467,9 +467,9 @@ def censar_libro(path, fichero):
         if not isinstance(v, str) or not v:
             continue
         if campo == 'subject':
-            tr, det = 'regenerar', 'D14 subject «Recipe Costing Kit Pro · v2.1»'
+            tr, det = 'regenerar', 'D14 subject «%s · v2.1»' % mapas.PRODUCTO
         elif campo == 'description':
-            tr, det = 'regenerar', 'D14 URL aichef.pro/en/digital-products/recipe-costing-kit'
+            tr, det = 'regenerar', 'D14 URL ' + mapas.URL_PRODUCTO
         else:
             tr, det = 'traducir', None
         d = {'f': corto(fichero), 't': 'docprops', 'c': campo, 'tr': tr}

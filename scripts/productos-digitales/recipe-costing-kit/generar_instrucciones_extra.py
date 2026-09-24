@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recipe Costing Kit Pro (EN) · textos NUEVOS de Instrucciones que el ES no tiene.
+"""Food Cost Kit Pro (EN) · textos NUEVOS de Instrucciones que el ES no tiene.
 
 Escribe `instrucciones_extra_en.json` (por fichero) y lo valida. Sesión Claude Code, 24-sep-2026.
 Texto redactado por Claude (subagente Anthropic, regla 1bis); nunca bridge.py.
@@ -219,7 +219,7 @@ def yield_etc(ctx):
           "it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR "
           "product once and use that weight. Pinches of salt and spices: weigh them or leave them to the "
           "Q-factor."),
-        b("Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more "
+        b("Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more "
           "than {}% since your cards were costed, so you know which cards to update.".format(cif['umbral13'])),
     ])
 
@@ -323,7 +323,7 @@ def semanal11(ctx):
     """§2.5 fila 11 + R2-19: método semanal (solo texto)."""
     return ('Tracking by week', [
         b("Weekly works the same way: one row = one week. Count and value your inventory at the same moment every "
-          "week (e.g., Sunday night after close), with current prices from template 13 (Ingredient Price List). "
+          "week (e.g., Sunday night after close), with current prices from template 13 (Ingredient Price Tracker). "
           "Each week's ending inventory is next week's beginning inventory."),
         b("Purchases = invoices for goods delivered that week, minus credit memos, without recoverable tax. Net "
           "food sales = the week's POS food sales (drinks go in their own pour cost) without tax, service charges "
@@ -360,9 +360,9 @@ REL = {
              "it with template 12 (Yield Test) and type it in Trim loss % on the card. Log here only food that "
              "gets thrown away.")],
     '10': [b("Your cost per portion is only as good as its prices and trim loss: template 13 (Ingredient Price "
-             "List) flags ingredients that have gone up more than {}%, and template 12 (Yield Test) measures the "
+             "Tracker) flags ingredients that have gone up more than {}%, and template 12 (Yield Test) measures the "
              "real trim loss of the cuts you break down.".format(cif['umbral13']))],
-    '12': [b("Keep the whole cut's AP price in template 13 (Ingredient Price List). Re-run the test when the cut, "
+    '12': [b("Keep the whole cut's AP price in template 13 (Ingredient Price Tracker). Re-run the test when the cut, "
              "the supplier or your trim spec changes, not every time the price moves: the Cost factor covers "
              "price changes."),
            b("Reference yields for many foods (as purchased to ready to cook, raw to cooked): USDA Food Buying "
@@ -371,7 +371,7 @@ REL = {
              "tips, chain or bones, comes from template 12 (Yield Test), not from this list.")],
     'BONUS': [b("Quantities per portion come from your recipe cost cards (with trim loss measured in template 12, "
                 "Yield Test, where you have it); unit prices on \"Inventory\" from template 13 (Ingredient Price "
-                "List), in the same unit you count in.")],
+                "Tracker), in the same unit you count in.")],
 }
 
 
@@ -605,7 +605,7 @@ def main():
     fallos, avisos = validar(ficheros)
     out = OrderedDict([
         ('_leeme', [
-            'Recipe Costing Kit Pro (EN): textos de Instrucciones que el ES no tiene. Lo genera '
+            'Food Cost Kit Pro (EN): textos de Instrucciones que el ES no tiene. Lo genera '
             'generar_instrucciones_extra.py (no se edita a mano); cifras de mercado_en.json y mapas.py. '
             'Sesión Claude Code, 2026-09-24. Redactado por Claude (regla 1bis), sin bridge.py.',
             'aplicar_en.py: en la hoja Instructions de cada libro, insertar «filas» en la columna B justo ANTES de '
@@ -625,7 +625,7 @@ def main():
             ('columna', 'B'),
             ('posicion', 'antes_del_ancla'),
             ('ancla_es', '— Kit de Escandallos Pro · AI Chef Pro · aichef.pro'),
-            ('ancla_en', '— Recipe Costing Kit Pro · AI Chef Pro · aichef.pro'),
+            ('ancla_en', '— ' + mapas.PRODUCTO + ' · AI Chef Pro · aichef.pro'),
             ('estilos', OrderedDict([
                 ('titulo', {'font': 'Calibri', 'size': 12, 'bold': True, 'color': '001A1A1A', 'wrap': True,
                             'vertical': 'top'}),

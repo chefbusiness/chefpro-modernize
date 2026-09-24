@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""validar_mercado.py — gate de mercado_en.json (Recipe Costing Kit Pro, F2-EN).
+"""validar_mercado.py — gate de mercado_en.json (Food Cost Kit Pro, F2-EN).
 
 SPEC: D10-D12 y §4 gate 4 («Ejemplos creíbles»). Sesión Claude Code, 24-sep-2026.
 Lee los xlsx ES v2.1 publicados SOLO para leer (nunca los escribe) y recalcula todo con los factores de

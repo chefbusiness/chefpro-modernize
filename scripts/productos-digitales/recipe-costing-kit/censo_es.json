@@ -1,15 +1,15 @@
 {
  "meta": {
-  "generado": "2026-09-24T15:59:20Z",
+  "generado": "2026-09-24T20:01:40Z",
   "script": "scripts/productos-digitales/recipe-costing-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-escandallos",
-  "commit": "770aaf1a",
+  "commit": "b8779e07",
   "nota": "Censo del Kit de Escandallos Pro v2.1 PUBLICADO (SPEC §2.1). Los gates de la F2-EN comparan contra este fichero, no contra recuentos fijos de la v2.0. Fechas = celdas con formato de fecha (numFmtId 14 = fecha corta del sistema, D13)."
  },
  "libros": {
   "01-escandallo-estandar.xlsx": {
    "sha256": "2b4187b9a45da38523ae593686cb3e63b3ec85dba47936aa8a9b1f8d710b31c8",
-   "nombre_en": "01-standard-recipe-cost-card.xlsx",
+   "nombre_en": "01-recipe-cost-card.xlsx",
    "hojas": [
     "Instrucciones",
     "Escandallo",
@@ -798,7 +798,7 @@
   },
   "02-menu-degustacion.xlsx": {
    "sha256": "c8e7360a8d1dd182a14c604153181d4ba186282285f9ff91507284becb0a4032",
-   "nombre_en": "02-tasting-menu.xlsx",
+   "nombre_en": "02-tasting-menu-costing.xlsx",
    "hojas": [
     "Instrucciones",
     "1. Aperitivo",
@@ -4392,7 +4392,7 @@
   },
   "03-menu-del-dia.xlsx": {
    "sha256": "d55d83b5c5b4db5444ab8bdb2aa4e98d27cedc1df8f780a129242a58ea09b2f2",
-   "nombre_en": "03-prix-fixe-lunch-menu.xlsx",
+   "nombre_en": "03-prix-fixe-set-menu-costing.xlsx",
    "hojas": [
     "Instrucciones",
     "Primer Plato",
@@ -6024,7 +6024,7 @@
   },
   "04-cocktails-bebidas.xlsx": {
    "sha256": "38f65512f882c3dc9d4278ba7c70ecd5524e92f96531df447dd49071c37168bf",
-   "nombre_en": "04-cocktails-and-drinks.xlsx",
+   "nombre_en": "04-pour-cost-calculator.xlsx",
    "hojas": [
     "Instrucciones",
     "Formatos de Compra",
@@ -7902,7 +7902,7 @@
   },
   "05-pasteleria.xlsx": {
    "sha256": "e8d81b29ced577eb40b9b583befa7b6099eb7c35e2c6b77955f7442af9ee9395",
-   "nombre_en": "05-pastry-and-bakery.xlsx",
+   "nombre_en": "05-bakery-cake-pricing.xlsx",
    "hojas": [
     "Instrucciones",
     "Tarta Chocolate",
@@ -9395,7 +9395,7 @@
   },
   "06-catering.xlsx": {
    "sha256": "2ac6f161c91db60b773f2e7059962f08f03728a18dc1932739009750ba63fac8",
-   "nombre_en": "06-catering-and-events.xlsx",
+   "nombre_en": "06-catering-pricing-quote.xlsx",
    "hojas": [
     "Instrucciones",
     "Cocktail (por persona)",
@@ -10485,7 +10485,7 @@
   },
   "07-cafeteria-brunch.xlsx": {
    "sha256": "125f4e062bee2ce621adaed68b60595c39f2aca636df203893313f095855a9cb",
-   "nombre_en": "07-cafe-and-brunch.xlsx",
+   "nombre_en": "07-cafe-brunch-costing.xlsx",
    "hojas": [
     "Instrucciones",
     "Tostada Aguacate",
@@ -12317,7 +12317,7 @@
   },
   "08-food-truck.xlsx": {
    "sha256": "b5612ba0371401063fc1aff4557e2de72530502f14c53ea6a6e46a6eb03c14a7",
-   "nombre_en": "08-food-truck.xlsx",
+   "nombre_en": "08-food-truck-pricing-break-even.xlsx",
    "hojas": [
     "Instrucciones",
     "Smash Burger",
@@ -13870,7 +13870,7 @@
   },
   "09-control-mermas.xlsx": {
    "sha256": "82d47ea8e39c69930824bcf561a241d1a54dd91bb47921d754c67b507470acfa",
-   "nombre_en": "09-food-waste-tracker.xlsx",
+   "nombre_en": "09-food-waste-log.xlsx",
    "hojas": [
     "Instrucciones",
     "Mermas Semanal",
@@ -14368,14 +14368,14 @@
   },
   "10-calculadora-pvp.xlsx": {
    "sha256": "cdd0da9be3ce8a4e3c6d127485e72e5b40a0316bed844dd9d02fb26a845f50f1",
-   "nombre_en": "10-menu-price-calculator.xlsx",
+   "nombre_en": "10-menu-pricing-calculator.xlsx",
    "hojas": [
     "Instrucciones",
     "Calculadora PVP"
    ],
    "hojas_en": [
     "Instructions",
-    "Menu Price Calculator"
+    "Menu Pricing Calculator"
    ],
    "docprops": {
     "creator": "AI Chef Pro",
@@ -14447,7 +14447,7 @@
      "literales_cf": {}
     },
     "Calculadora PVP": {
-     "nombre_en": "Menu Price Calculator",
+     "nombre_en": "Menu Pricing Calculator",
      "dimension": "A1:J21",
      "max_fila": 21,
      "max_col": 10,
@@ -14601,7 +14601,7 @@
   },
   "11-dashboard-food-cost-mensual.xlsx": {
    "sha256": "ee324e1daee03a667ed6f7e07e3e15f873ebac7a5f9f88a4e8cb23a77d790706",
-   "nombre_en": "11-monthly-food-cost-dashboard.xlsx",
+   "nombre_en": "11-food-cost-percentage-tracker.xlsx",
    "hojas": [
     "Instrucciones",
     "Dashboard"
@@ -15403,14 +15403,14 @@
   },
   "13-lista-precios-ingredientes.xlsx": {
    "sha256": "308beeabb823e961d05b14849873d0598ce3dd24c0fd7b06a85371301ec632c4",
-   "nombre_en": "13-ingredient-price-list.xlsx",
+   "nombre_en": "13-ingredient-price-tracker.xlsx",
    "hojas": [
     "Instrucciones",
     "Lista de precios"
    ],
    "hojas_en": [
     "Instructions",
-    "Price List"
+    "Price Tracker"
    ],
    "docprops": {
     "creator": "AI Chef Pro",
@@ -15480,7 +15480,7 @@
      "literales_cf": {}
     },
     "Lista de precios": {
-     "nombre_en": "Price List",
+     "nombre_en": "Price Tracker",
      "dimension": "A1:M154",
      "max_fila": 154,
      "max_col": 13,
@@ -18259,7 +18259,7 @@
   },
   "BONUS-mermas-inventario.xlsx": {
    "sha256": "02442f54591bf3cdf4fc9054d894707a086608c0653b352795e3fd3aec25df05",
-   "nombre_en": "BONUS-inventory-and-waste-control.xlsx",
+   "nombre_en": "BONUS-actual-vs-theoretical-food-cost.xlsx",
    "hojas": [
     "Instrucciones",
     "Inventario",

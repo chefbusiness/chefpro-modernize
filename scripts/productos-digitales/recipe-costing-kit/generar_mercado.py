@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""generar_mercado.py — escribe mercado_en.json (Recipe Costing Kit Pro, F2-EN).
+"""generar_mercado.py — escribe mercado_en.json (Food Cost Kit Pro, F2-EN).
 
 SPEC que manda: SPEC.md (D5-D7, D10-D12, D19-D20, §2.1, §2.5). Sesión Claude Code, 24-sep-2026.
 
@@ -1484,7 +1484,7 @@ txt('▸ Raciones de la tanda: peso cocinado × 1.000 ÷ porción cocinada. En e
     % ('{:g}'.format(coc['C9_peso_cocinado_lb']), '{:g}'.format(coc['C12_porcion_cocinada_oz']), cr['porciones_tanda']),
     '2,775 × 16 ÷ 4,44 = 10,0.')
 txt('▸ Despiece: el solomillo de ternera entero, con cordón, que compra la plantilla 01, a 28,50 €/kg. Es un ejemplo orientativo, no un test pesado: una pieza de 2,8 kg (las enteras pesan entre 2,5 y 3,2 kg) con una merma de limpieza del 25 %, la referencia habitual para el solomillo entero con cordón. El reparto entre el cordón que se aprovecha y lo que se tira, y el valor del cordón, son estimaciones: pon los tuyos.',
-    '▸ Butchering: the whole beef tenderloin (PSMO) that Template 01 (Standard Recipe Cost Card) buys, at %s/lb. The '
+    '▸ Butchering: the whole beef tenderloin (PSMO) that Template 01 (Recipe Cost Card) buys, at %s/lb. The '
     'example follows a published weigh-in of a 5 lb 9 oz whole tenderloin: 3 lb 6 oz of center and head for steaks, '
     '6 oz of tips and 5 oz of chain you can use, and 1 lb 8 oz of fat and silverskin (27%% of the piece). The value of '
     'the tips and the chain is an estimate — weigh and price your own.' % money(p_ap), 'libro12.despiece.')
@@ -1578,7 +1578,7 @@ LISTA_BLANCA = [
 # ==========================================================================
 OUT = OrderedDict([
     ('_leeme', [
-        'Datos de mercado del Recipe Costing Kit Pro (EN), SPEC D5-D7, D10-D12, D19-D20, §2.1, §2.5. Lo genera '
+        'Datos de mercado del Food Cost Kit Pro (EN), SPEC D5-D7, D10-D12, D19-D20, §2.1, §2.5. Lo genera '
         'generar_mercado.py (no se edita a mano) y lo valida validar_mercado.py. Sesión Claude Code, ' + FECHA + '.',
         'Precios en USD por UNIDAD DE COMPRA de la ficha (D5: en los xlsx sin símbolo). Cada precio lleva su fuente o '
         '[estimado]/[derivado] con el razonamiento. Ningún precio de ingrediente se ha tocado para cuadrar un porcentaje '

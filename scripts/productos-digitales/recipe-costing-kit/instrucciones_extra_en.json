@@ -1,6 +1,6 @@
 {
  "_leeme": [
-  "Recipe Costing Kit Pro (EN): textos de Instrucciones que el ES no tiene. Lo genera generar_instrucciones_extra.py (no se edita a mano); cifras de mercado_en.json y mapas.py. Sesión Claude Code, 2026-09-24. Redactado por Claude (regla 1bis), sin bridge.py.",
+  "Food Cost Kit Pro (EN): textos de Instrucciones que el ES no tiene. Lo genera generar_instrucciones_extra.py (no se edita a mano); cifras de mercado_en.json y mapas.py. Sesión Claude Code, 2026-09-24. Redactado por Claude (regla 1bis), sin bridge.py.",
   "aplicar_en.py: en la hoja Instructions de cada libro, insertar «filas» en la columna B justo ANTES de la fila del pie de marca (ancla), después de traducir. La fila en blanco que ya precede al ancla separa lo existente del primer título nuevo; cada sección acaba con su propia fila vacía. Solo texto: ninguna fórmula, DV, CF ni área de impresión (Instructions no tiene).",
   "Estilos: copiar los de las filas ES (titulo = el de «Cómo usar esta plantilla»; vineta y linea = el de una fila «▸»); altura automática; ajuste de texto y alineación superior, como el ES.",
   "«notas_existentes»: sustituyen a la traducción de textos_en de esa cadena ES en esa hoja (misma regla que textos_cifra_derivada de mercado_en.json).",
@@ -12,7 +12,7 @@
   "columna": "B",
   "posicion": "antes_del_ancla",
   "ancla_es": "— Kit de Escandallos Pro · AI Chef Pro · aichef.pro",
-  "ancla_en": "— Recipe Costing Kit Pro · AI Chef Pro · aichef.pro",
+  "ancla_en": "— Food Cost Kit Pro · AI Chef Pro · aichef.pro",
   "estilos": {
    "titulo": {
     "font": "Calibri",
@@ -142,7 +142,7 @@
   }
  ],
  "ficheros": {
-  "01-standard-recipe-cost-card.xlsx": {
+  "01-recipe-cost-card.xlsx": {
    "fichero_es": "01-escandallo-estandar.xlsx",
    "hoja": "Instructions",
    "n_filas": 46,
@@ -254,7 +254,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -355,7 +355,7 @@
     }
    ]
   },
-  "02-tasting-menu.xlsx": {
+  "02-tasting-menu-costing.xlsx": {
    "fichero_es": "02-menu-degustacion.xlsx",
    "hoja": "Instructions",
    "n_filas": 46,
@@ -467,7 +467,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -568,7 +568,7 @@
     }
    ]
   },
-  "03-prix-fixe-lunch-menu.xlsx": {
+  "03-prix-fixe-set-menu-costing.xlsx": {
    "fichero_es": "03-menu-del-dia.xlsx",
    "hoja": "Instructions",
    "n_filas": 46,
@@ -680,7 +680,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -781,7 +781,7 @@
     }
    ]
   },
-  "04-cocktails-and-drinks.xlsx": {
+  "04-pour-cost-calculator.xlsx": {
    "fichero_es": "04-cocktails-bebidas.xlsx",
    "hoja": "Instructions",
    "n_filas": 59,
@@ -893,7 +893,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -1055,7 +1055,7 @@
     }
    ]
   },
-  "05-pastry-and-bakery.xlsx": {
+  "05-bakery-cake-pricing.xlsx": {
    "fichero_es": "05-pasteleria.xlsx",
    "hoja": "Instructions",
    "n_filas": 47,
@@ -1167,7 +1167,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -1273,7 +1273,7 @@
     }
    ]
   },
-  "06-catering-and-events.xlsx": {
+  "06-catering-pricing-quote.xlsx": {
    "fichero_es": "06-catering.xlsx",
    "hoja": "Instructions",
    "n_filas": 59,
@@ -1385,7 +1385,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -1547,7 +1547,7 @@
     }
    ]
   },
-  "07-cafe-and-brunch.xlsx": {
+  "07-cafe-brunch-costing.xlsx": {
    "fichero_es": "07-cafeteria-brunch.xlsx",
    "hoja": "Instructions",
    "n_filas": 46,
@@ -1659,7 +1659,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -1760,7 +1760,7 @@
     }
    ]
   },
-  "08-food-truck.xlsx": {
+  "08-food-truck-pricing-break-even.xlsx": {
    "fichero_es": "08-food-truck.xlsx",
    "hoja": "Instructions",
    "n_filas": 47,
@@ -1872,7 +1872,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price Tracker): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
      "bloque": "yield_etc"
     },
     {
@@ -1978,7 +1978,7 @@
     }
    ]
   },
-  "09-food-waste-tracker.xlsx": {
+  "09-food-waste-log.xlsx": {
    "fichero_es": "09-control-mermas.xlsx",
    "hoja": "Instructions",
    "n_filas": 17,
@@ -2058,7 +2058,7 @@
     }
    ]
   },
-  "10-menu-price-calculator.xlsx": {
+  "10-menu-pricing-calculator.xlsx": {
    "fichero_es": "10-calculadora-pvp.xlsx",
    "hoja": "Instructions",
    "n_filas": 20,
@@ -2094,7 +2094,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Your cost per portion is only as good as its prices and trim loss: template 13 (Ingredient Price List) flags ingredients that have gone up more than 5%, and template 12 (Yield Test) measures the real trim loss of the cuts you break down.",
+     "texto": "▸ Your cost per portion is only as good as its prices and trim loss: template 13 (Ingredient Price Tracker) flags ingredients that have gone up more than 5%, and template 12 (Yield Test) measures the real trim loss of the cuts you break down.",
      "bloque": "remisiones 12/13"
     },
     {
@@ -2149,7 +2149,7 @@
     }
    ]
   },
-  "11-monthly-food-cost-dashboard.xlsx": {
+  "11-food-cost-percentage-tracker.xlsx": {
    "fichero_es": "11-dashboard-food-cost-mensual.xlsx",
    "hoja": "Instructions",
    "n_filas": 20,
@@ -2164,7 +2164,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Weekly works the same way: one row = one week. Count and value your inventory at the same moment every week (e.g., Sunday night after close), with current prices from template 13 (Ingredient Price List). Each week's ending inventory is next week's beginning inventory.",
+     "texto": "▸ Weekly works the same way: one row = one week. Count and value your inventory at the same moment every week (e.g., Sunday night after close), with current prices from template 13 (Ingredient Price Tracker). Each week's ending inventory is next week's beginning inventory.",
      "bloque": "semanal11"
     },
     {
@@ -2259,7 +2259,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Keep the whole cut's AP price in template 13 (Ingredient Price List). Re-run the test when the cut, the supplier or your trim spec changes, not every time the price moves: the Cost factor covers price changes.",
+     "texto": "▸ Keep the whole cut's AP price in template 13 (Ingredient Price Tracker). Re-run the test when the cut, the supplier or your trim spec changes, not every time the price moves: the Cost factor covers price changes.",
      "bloque": "remisiones 12/13"
     },
     {
@@ -2329,7 +2329,7 @@
     }
    ]
   },
-  "13-ingredient-price-list.xlsx": {
+  "13-ingredient-price-tracker.xlsx": {
    "fichero_es": "13-lista-precios-ingredientes.xlsx",
    "hoja": "Instructions",
    "n_filas": 22,
@@ -2430,7 +2430,7 @@
     }
    ]
   },
-  "BONUS-inventory-and-waste-control.xlsx": {
+  "BONUS-actual-vs-theoretical-food-cost.xlsx": {
    "fichero_es": "BONUS-mermas-inventario.xlsx",
    "hoja": "Instructions",
    "n_filas": 22,
@@ -2476,7 +2476,7 @@
     },
     {
      "tipo": "vineta",
-     "texto": "▸ Quantities per portion come from your recipe cost cards (with trim loss measured in template 12, Yield Test, where you have it); unit prices on \"Inventory\" from template 13 (Ingredient Price List), in the same unit you count in.",
+     "texto": "▸ Quantities per portion come from your recipe cost cards (with trim loss measured in template 12, Yield Test, where you have it); unit prices on \"Inventory\" from template 13 (Ingredient Price Tracker), in the same unit you count in.",
      "bloque": "remisiones 12/13"
     },
     {
@@ -2535,14 +2535,14 @@
  "notas_existentes": [
   {
    "ficheros": [
-    "01-standard-recipe-cost-card.xlsx",
-    "02-tasting-menu.xlsx",
-    "03-prix-fixe-lunch-menu.xlsx",
-    "04-cocktails-and-drinks.xlsx",
-    "05-pastry-and-bakery.xlsx",
-    "06-catering-and-events.xlsx",
-    "07-cafe-and-brunch.xlsx",
-    "08-food-truck.xlsx"
+    "01-recipe-cost-card.xlsx",
+    "02-tasting-menu-costing.xlsx",
+    "03-prix-fixe-set-menu-costing.xlsx",
+    "04-pour-cost-calculator.xlsx",
+    "05-bakery-cake-pricing.xlsx",
+    "06-catering-pricing-quote.xlsx",
+    "07-cafe-brunch-costing.xlsx",
+    "08-food-truck-pricing-break-even.xlsx"
    ],
    "hoja_en": "Trim Loss Factors",
    "celda": "A2",
@@ -2552,14 +2552,14 @@
   },
   {
    "ficheros": [
-    "01-standard-recipe-cost-card.xlsx",
-    "02-tasting-menu.xlsx",
-    "03-prix-fixe-lunch-menu.xlsx",
-    "04-cocktails-and-drinks.xlsx",
-    "05-pastry-and-bakery.xlsx",
-    "06-catering-and-events.xlsx",
-    "07-cafe-and-brunch.xlsx",
-    "08-food-truck.xlsx"
+    "01-recipe-cost-card.xlsx",
+    "02-tasting-menu-costing.xlsx",
+    "03-prix-fixe-set-menu-costing.xlsx",
+    "04-pour-cost-calculator.xlsx",
+    "05-bakery-cake-pricing.xlsx",
+    "06-catering-pricing-quote.xlsx",
+    "07-cafe-brunch-costing.xlsx",
+    "08-food-truck-pricing-break-even.xlsx"
    ],
    "hoja_en": "Trim Loss Factors",
    "celda": "A3",
@@ -2571,14 +2571,14 @@
  "notas_nuevas": [
   {
    "ficheros": [
-    "01-standard-recipe-cost-card.xlsx",
-    "02-tasting-menu.xlsx",
-    "03-prix-fixe-lunch-menu.xlsx",
-    "04-cocktails-and-drinks.xlsx",
-    "05-pastry-and-bakery.xlsx",
-    "06-catering-and-events.xlsx",
-    "07-cafe-and-brunch.xlsx",
-    "08-food-truck.xlsx"
+    "01-recipe-cost-card.xlsx",
+    "02-tasting-menu-costing.xlsx",
+    "03-prix-fixe-set-menu-costing.xlsx",
+    "04-pour-cost-calculator.xlsx",
+    "05-bakery-cake-pricing.xlsx",
+    "06-catering-pricing-quote.xlsx",
+    "07-cafe-brunch-costing.xlsx",
+    "08-food-truck-pricing-break-even.xlsx"
    ],
    "hoja_en": "Trim Loss Factors",
    "celda": "E4",
@@ -2588,14 +2588,14 @@
   },
   {
    "ficheros": [
-    "01-standard-recipe-cost-card.xlsx",
-    "02-tasting-menu.xlsx",
-    "03-prix-fixe-lunch-menu.xlsx",
-    "04-cocktails-and-drinks.xlsx",
-    "05-pastry-and-bakery.xlsx",
-    "06-catering-and-events.xlsx",
-    "07-cafe-and-brunch.xlsx",
-    "08-food-truck.xlsx"
+    "01-recipe-cost-card.xlsx",
+    "02-tasting-menu-costing.xlsx",
+    "03-prix-fixe-set-menu-costing.xlsx",
+    "04-pour-cost-calculator.xlsx",
+    "05-bakery-cake-pricing.xlsx",
+    "06-catering-pricing-quote.xlsx",
+    "07-cafe-brunch-costing.xlsx",
+    "08-food-truck-pricing-break-even.xlsx"
    ],
    "hoja_en": "Trim Loss Factors",
    "celda": "E7",
@@ -2604,14 +2604,14 @@
   },
   {
    "ficheros": [
-    "01-standard-recipe-cost-card.xlsx",
-    "02-tasting-menu.xlsx",
-    "03-prix-fixe-lunch-menu.xlsx",
-    "04-cocktails-and-drinks.xlsx",
-    "05-pastry-and-bakery.xlsx",
-    "06-catering-and-events.xlsx",
-    "07-cafe-and-brunch.xlsx",
-    "08-food-truck.xlsx"
+    "01-recipe-cost-card.xlsx",
+    "02-tasting-menu-costing.xlsx",
+    "03-prix-fixe-set-menu-costing.xlsx",
+    "04-pour-cost-calculator.xlsx",
+    "05-bakery-cake-pricing.xlsx",
+    "06-catering-pricing-quote.xlsx",
+    "07-cafe-brunch-costing.xlsx",
+    "08-food-truck-pricing-break-even.xlsx"
    ],
    "hoja_en": "Trim Loss Factors",
    "celda": "E9",

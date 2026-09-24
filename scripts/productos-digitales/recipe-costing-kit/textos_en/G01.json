@@ -2,7 +2,7 @@
  {
   "id": "c0005",
   "es": "📋 Escandallo Estándar — Plato a la Carta",
-  "en": "📋 Standard Recipe Cost Card — A La Carte Dish"
+  "en": "📋 Recipe Cost Card & Plate Cost Calculator"
  },
  {
   "id": "c0009",
@@ -75,12 +75,12 @@
  {
   "id": "c0193",
   "es": "Escandallo Estándar — Plato a la Carta · Kit de Escandallos Pro",
-  "en": "Standard Recipe Cost Card — A La Carte Dish · Recipe Costing Kit Pro"
+  "en": "Recipe Cost Card & Plate Cost Calculator"
  },
  {
   "id": "c0208",
   "es": "📋 Escandallo — Menú Degustación",
-  "en": "📋 Recipe Cost Card — Tasting Menu"
+  "en": "📋 Tasting Menu Costing"
  },
  {
   "id": "c0209",
@@ -265,12 +265,12 @@
  {
   "id": "c0250",
   "es": "Escandallo — Menú Degustación · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Tasting Menu · Recipe Costing Kit Pro"
+  "en": "Tasting Menu Costing"
  },
  {
   "id": "c0256",
   "es": "📋 Escandallo — Menú del Día",
-  "en": "📋 Recipe Cost Card — Prix Fixe Lunch Menu"
+  "en": "📋 Prix Fixe & Set Menu Costing"
  },
  {
   "id": "c0257",
@@ -365,7 +365,7 @@
  {
   "id": "c0279",
   "es": "Resumen — Menú del Día",
-  "en": "Summary — Prix Fixe Lunch Menu"
+  "en": "Summary — Prix Fixe & Set Menu"
  },
  {
   "id": "c0281",
@@ -490,6 +490,6 @@
  {
   "id": "c0306",
   "es": "Escandallo — Menú del Día · Kit de Escandallos Pro",
-  "en": "Recipe Cost Card — Prix Fixe Lunch Menu · Recipe Costing Kit Pro"
+  "en": "Prix Fixe & Set Menu Costing"
  }
 ]

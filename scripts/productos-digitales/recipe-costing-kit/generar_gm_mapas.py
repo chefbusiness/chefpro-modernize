@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-generar_gm_mapas.py — Recipe Costing Kit Pro (EN) · traducción del grupo GM-mapas.
+generar_gm_mapas.py — Food Cost Kit Pro (EN) · traducción del grupo GM-mapas.
 
 Produce `textos_en/GM-mapas.json` a partir de `textos_es.json` (solo grupo GM-mapas),
 usando `mapas.py` y `glosario_en.json` como fuente de verdad, SIN desviarse de ellos.
@@ -148,15 +148,15 @@ E1 = {
 # ==========================================================================
 D14 = {
     'Versión 2.1 · septiembre 2026 · aichef.pro/kit-escandallos · info@aichef.pro':
-        ('Version 2.1 · [MONTH] 2026 · aichef.pro/en/digital-products/recipe-costing-kit · '
+        ('Version 2.1 · [MONTH] 2026 · ' + mapas.URL_PRODUCTO + ' · '
          'info@aichef.pro', True,
          'D14: aplicar_en.py resuelve [MONTH] al publicar (mes de publicación del EN, no '
          'tiene por qué coincidir con el de la v2.1 ES).'),
     'Kit de Escandallos Pro · v2.1':
-        ('Recipe Costing Kit Pro · v2.1', False,
+        (mapas.PRODUCTO + ' · v2.1', False,
          'D14/D2: subject de docProps, nombre ya decidido, no lo toca el agente de mercado.'),
     'aichef.pro/kit-escandallos':
-        ('aichef.pro/en/digital-products/recipe-costing-kit', False,
+        (mapas.URL_PRODUCTO, False,
          'D14/D1: slug ya decidido en la SPEC, no depende del mercado.'),
 }
 

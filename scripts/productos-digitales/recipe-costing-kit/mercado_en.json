@@ -1,6 +1,6 @@
 {
  "_leeme": [
-  "Datos de mercado del Recipe Costing Kit Pro (EN), SPEC D5-D7, D10-D12, D19-D20, §2.1, §2.5. Lo genera generar_mercado.py (no se edita a mano) y lo valida validar_mercado.py. Sesión Claude Code, 2026-09-24.",
+  "Datos de mercado del Food Cost Kit Pro (EN), SPEC D5-D7, D10-D12, D19-D20, §2.1, §2.5. Lo genera generar_mercado.py (no se edita a mano) y lo valida validar_mercado.py. Sesión Claude Code, 2026-09-24.",
   "Precios en USD por UNIDAD DE COMPRA de la ficha (D5: en los xlsx sin símbolo). Cada precio lleva su fuente o [estimado]/[derivado] con el razonamiento. Ningún precio de ingrediente se ha tocado para cuadrar un porcentaje (D11): donde el food cost caía fuera de D12 se corrigió la CANTIDAD (con «cambio_cantidad») o el precio de carta de referencia ([estimado]).",
   "Las cantidades EN son la conversión del ES redondeada a cifras de cocina (oz, fl oz, tsp/tbsp, each; gramos y ml en pastelería). Las mermas son las del ES salvo donde cambia el formato de compra (nota en la fila).",
   "aplicar_en.py escribe desde aquí: filas de las fichas (A-F y H), «Current menu price» (D10), Bottle Sizes (E3), valores por defecto de 03/06/08/09/10/11, el BONUS, los libros 12 y 13, y los textos con cifra derivada."
@@ -8514,7 +8514,7 @@
   },
   {
    "es": "▸ Despiece: el solomillo de ternera entero, con cordón, que compra la plantilla 01, a 28,50 €/kg. Es un ejemplo orientativo, no un test pesado: una pieza de 2,8 kg (las enteras pesan entre 2,5 y 3,2 kg) con una merma de limpieza del 25 %, la referencia habitual para el solomillo entero con cordón. El reparto entre el cordón que se aprovecha y lo que se tira, y el valor del cordón, son estimaciones: pon los tuyos.",
-   "en": "▸ Butchering: the whole beef tenderloin (PSMO) that Template 01 (Standard Recipe Cost Card) buys, at $17.21/lb. The example follows a published weigh-in of a 5 lb 9 oz whole tenderloin: 3 lb 6 oz of center and head for steaks, 6 oz of tips and 5 oz of chain you can use, and 1 lb 8 oz of fat and silverskin (27% of the piece). The value of the tips and the chain is an estimate — weigh and price your own.",
+   "en": "▸ Butchering: the whole beef tenderloin (PSMO) that Template 01 (Recipe Cost Card) buys, at $17.21/lb. The example follows a published weigh-in of a 5 lb 9 oz whole tenderloin: 3 lb 6 oz of center and head for steaks, 6 oz of tips and 5 oz of chain you can use, and 1 lb 8 oz of fat and silverskin (27% of the piece). The value of the tips and the chain is an estimate — weigh and price your own.",
    "calculo": "libro12.despiece."
   },
   {

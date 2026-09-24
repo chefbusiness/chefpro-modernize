@@ -1,6 +1,6 @@
-# Control Your Food Cost in 30 Days
+# How to Reduce Food Cost in 30 Days
 
-**A bonus guide from Recipe Costing Kit Pro by AI Chef Pro**
+**A bonus guide from Food Cost Kit Pro by AI Chef Pro**
 
 ---
 
@@ -59,7 +59,7 @@ On the first Monday of the plan, before a single delivery comes in, you take a f
 - **By category:** meat, seafood, dairy, produce, frozen, dry storage, oils and high-value spices (saffron, vanilla...).
 - **In units you can use:** pounds, ounces, gallons, each. Not "half a case of strip loin": write down 9.5 lb of strip loin.
 - **Valued at what it really cost you, without any tax you get back:** the price on your latest invoice. In the US, food bought for resale usually carries no sales tax, although the rules vary by state; if tax shows up on an invoice and you can't recover it, it's part of your cost. In the UK, if you're VAT-registered, use prices ex VAT (most food is zero-rated anyway).
-- **Tool:** a spreadsheet or the "Inventory" tab of BONUS-inventory-and-waste-control.xlsx. What matters is that it's systematic and repeatable.
+- **Tool:** a spreadsheet or the "Inventory" tab of BONUS-actual-vs-theoretical-food-cost.xlsx. What matters is that it's systematic and repeatable.
 
 **Example opening inventory (Monday morning):**
 
@@ -155,11 +155,11 @@ Actual Food Cost = 3,740 / 12,100 x 100 = 30.91%
 
 **Your actual food cost for Week 1 is 30.91%.**
 
-This number is your diagnosis. It isn't good or bad yet: it's your reality. From here on, everything you do is about moving it down. Write it into 11-monthly-food-cost-dashboard.xlsx, "Dashboard" tab: the "Period (month or week)" column takes weeks as well as months.
+This number is your diagnosis. It isn't good or bad yet: it's your reality. From here on, everything you do is about moving it down. Write it into 11-food-cost-percentage-tracker.xlsx, "Dashboard" tab: the "Period (month or week)" column takes weeks as well as months.
 
 ### Is your food cost good or bad?
 
-It depends on the kind of operation. These are the ranges the kit works with, the same ones as the "Menu Price Calculator" tab in 10-menu-price-calculator.xlsx:
+It depends on the kind of operation. These are the ranges the kit works with, the same ones as the "Menu Pricing Calculator" tab in 10-menu-pricing-calculator.xlsx:
 
 | Venue type | Typical food cost |
 |------------|-------------------|
@@ -225,7 +225,7 @@ Costing a dish means calculating **the exact ingredient cost of one portion**. N
 
 **Dish food cost = 6.52 / 22.73 x 100 = 28.68%**
 
-Do this for all ten dishes. Open **01-standard-recipe-cost-card.xlsx**, the first template in your dashboard, and go to the "Recipe Cost Card" tab. It takes minutes per dish, because the unit conversion (lb to oz, gal to fl oz, a case to each), the trim loss and the suggested menu price are worked out for you. Seasonings like the salt and pepper above usually go into the Q-factor (%) there instead of line by line. By hand it takes a while, but it's the best time you'll invest all week.
+Do this for all ten dishes. Open **01-recipe-cost-card.xlsx**, the first template in your dashboard, and go to the "Recipe Cost Card" tab. It takes minutes per dish, because the unit conversion (lb to oz, gal to fl oz, a case to each), the trim loss and the suggested menu price are worked out for you. Seasonings like the salt and pepper above usually go into the Q-factor (%) there instead of line by line. By hand it takes a while, but it's the best time you'll invest all week.
 
 ### Step 3: Build trim loss into your costs
 
@@ -327,9 +327,9 @@ You know which dishes hurt. Now you attack the spending at the source: **what yo
 
 Lowering food cost doesn't mean buying cheap at any price. It means buying **better**: better quality for the same price, or the same quality for a better price. The difference between a chef who negotiates and one who orders on autopilot can be 3 to 5 food cost points.
 
-### Start with a price list: template 13
+### Start with a price tracker: template 13
 
-You can't negotiate prices you don't track. Open **13-ingredient-price-list.xlsx**, "Price List" tab, and load your 20 biggest items: the purchase format exactly as it reads on the invoice, the format content, the base unit (lb, L or each) and the price of the format. The sheet works out the price per base unit and its variance against the previous price, and anything that jumps more than the alert threshold (5% by default) is flagged ALERT.
+You can't negotiate prices you don't track. Open **13-ingredient-price-tracker.xlsx**, "Price Tracker" tab, and load your 20 biggest items: the purchase format exactly as it reads on the invoice, the format content, the base unit (lb, L or each) and the price of the format. The sheet works out the price per base unit and its variance against the previous price, and anything that jumps more than the alert threshold (5% by default) is flagged ALERT.
 
 To carry a price over to a recipe cost card, copy the ingredient's "Price per base unit", paste it with **Paste Special, then Values** (in Excel, Ctrl+Alt+V, then V), and use that base unit as the purchase unit on the card. A normal paste drags the formula along with it.
 
@@ -447,7 +447,7 @@ A sheet in the kitchen where everything that gets thrown away is written down, w
 | Tuesday | Butternut squash soup | 1.5 qt | Left over from lunch, can't be frozen | $4.50 |
 | Wednesday | Tuna loin | 5 oz | Overcooked, plate refired | $5.70 |
 
-This sheet is a thermometer. If waste spikes one week, something's going on: overproduction, bad forecasting, poor storage, recipes that need adjusting. Enter it every week in 09-food-waste-tracker.xlsx, "Weekly Waste Log" tab.
+This sheet is a thermometer. If waste spikes one week, something's going on: overproduction, bad forecasting, poor storage, recipes that need adjusting. Enter it every week in 09-food-waste-log.xlsx, "Weekly Waste Log" tab.
 
 ### Weekly routine (30-45 minutes)
 
@@ -546,7 +546,7 @@ Check off each task as you complete it. Discipline is what separates a profitabl
 
 | ✅ | Task | Day |
 |----|------|-----|
-| ☐ | List your 20 highest-volume items and load them into the price list (template 13) | Monday |
+| ☐ | List your 20 highest-volume items and load them into the price tracker (template 13) | Monday |
 | ☐ | Ask three suppliers for written quotes on each item | Monday |
 | ☐ | Compare the offers in a table and spot the potential savings | Wednesday |
 | ☐ | Review purchase formats: whole vs. portion-cut, bulk vs. packaged | Thursday |
@@ -736,7 +736,7 @@ When an item's price shoots up (as beef has in 2025-26, or eggs did before it), 
 
 ### 4. Do drinks, and the tax on them, go into food cost?
 
-No. Food cost measures food. Drinks have their own ratio, **beverage cost** (pour cost at the bar), which you calculate the same way with beverage purchases and beverage sales; for a bar, 18-24% is the usual range, and 04-cocktails-and-drinks.xlsx works it out cocktail by cocktail. Tax never goes on either side of the formula. In the US, sales tax is added to the check and isn't a sale. In the UK, food and drink consumed on the premises are standard-rated at 20% VAT, so take it out of both before you calculate. Separate food and drink by the ratio, not by the tax.
+No. Food cost measures food. Drinks have their own ratio, **beverage cost** (pour cost at the bar), which you calculate the same way with beverage purchases and beverage sales; for a bar, 18-24% is the usual range, and 04-pour-cost-calculator.xlsx works it out cocktail by cocktail. Tax never goes on either side of the formula. In the US, sales tax is added to the check and isn't a sale. In the UK, food and drink consumed on the premises are standard-rated at 20% VAT, so take it out of both before you calculate. Separate food and drink by the ratio, not by the tax.
 
 ### 5. Is food cost software worth it?
 
@@ -764,15 +764,15 @@ In 30 days you've gone from not knowing your real food cost to having it measure
 
 Food cost is a living number. It changes with prices, with the seasons, with your team and with your menu. What's under control today can be out of control in three months if you stop watching it.
 
-**The good news is that the system is already built.** You don't have to start from scratch every time: your **Recipe Costing Kit Pro** dashboard has the templates that automate every step of this guide.
+**The good news is that the system is already built.** You don't have to start from scratch every time: your **Food Cost Kit Pro** dashboard has the templates that automate every step of this guide.
 
-- **01-standard-recipe-cost-card.xlsx**, "Recipe Cost Card" tab: the real cost of every dish, with trim loss built in and the unit conversion done for you. That's Week 2.
+- **01-recipe-cost-card.xlsx**, "Recipe Cost Card" tab: the real cost of every dish, with trim loss built in and the unit conversion done for you. That's Week 2.
 - **12-yield-test.xlsx**, "Butcher Yield Test" and "Cooking Loss Test" tabs: your own trim loss and cooking loss, measured, ready to carry over to the cost card. Also Week 2.
-- **13-ingredient-price-list.xlsx**, "Price List" tab: every invoice price by base unit, with an ALERT when one jumps. That's Week 3.
-- **09-food-waste-tracker.xlsx**, "Weekly Waste Log" tab: the weekly waste log with an OK/ALERT flag, plus the "Trend" tab to see 12 weeks in a row. That's the Week 4 routine.
-- **11-monthly-food-cost-dashboard.xlsx**, "Dashboard" tab: inventory, purchases and net food sales, month by month or week by week. It's where your Week 1 number lives from now on.
-- **10-menu-price-calculator.xlsx**, "Menu Price Calculator" tab: the menu price that hits the target food cost for your type of operation, with the delivery platform's commission taken out if you sell through one.
-- **BONUS-inventory-and-waste-control.xlsx**, "Inventory" tab: actual usage against theoretical usage, which is what uncovers the hidden losses.
+- **13-ingredient-price-tracker.xlsx**, "Price Tracker" tab: every invoice price by base unit, with an ALERT when one jumps. That's Week 3.
+- **09-food-waste-log.xlsx**, "Weekly Waste Log" tab: the weekly waste log with an OK/ALERT flag, plus the "Trend" tab to see 12 weeks in a row. That's the Week 4 routine.
+- **11-food-cost-percentage-tracker.xlsx**, "Dashboard" tab: inventory, purchases and net food sales, month by month or week by week. It's where your Week 1 number lives from now on.
+- **10-menu-pricing-calculator.xlsx**, "Menu Pricing Calculator" tab: the menu price that hits the target food cost for your type of operation, with the delivery platform's commission taken out if you sell through one.
+- **BONUS-actual-vs-theoretical-food-cost.xlsx**, "Inventory" tab: actual usage against theoretical usage, which is what uncovers the hidden losses.
 
 The guide and the templates are yours, with lifetime access and every update included. You have the knowledge, too. What you do with it starting tomorrow is up to you.
 

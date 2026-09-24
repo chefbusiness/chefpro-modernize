@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-aplicar_en.py — Recipe Costing Kit Pro (EN) · montaje de los 14 xlsx desde el ES v2.1 publicado.
+aplicar_en.py — Food Cost Kit Pro (EN) · montaje de los 14 xlsx desde el ES v2.1 publicado.
 
 SPEC que manda: `SPEC.md` (§2.1 orden, §2.2 hojas, §2.3 claves, §2.4 literales, §2.5 mercado,
 D5-D14, excepciones E1-E5). Sesión Claude Code, 24-sep-2026. El texto de producto sale de
 `textos_en/` (subagentes Anthropic, regla 1bis): aquí no se redacta nada ni se llama a bridge.py.
 
     python3 aplicar_en.py --salida <scratchpad>/rck-dryrun           # DRY-RUN (por defecto)
-    RECIPE_COSTING_KIT_APPLY=1 python3 aplicar_en.py --real --pdf <ruta del PDF EN>
+    FOOD_COST_KIT_APPLY=1 python3 aplicar_en.py --real --pdf <ruta del PDF EN>
 
 Dry-run: escribe los 14 xlsx EN en `--salida` (por defecto `$CLAUDE_SCRATCHPAD/rck-dryrun`, o
-`.work/recipe-costing-kit/rck-dryrun` del repo). `--real` escribe en
-`astro-site/public/dl/recipe-costing-kit/` y exige RECIPE_COSTING_KIT_APPLY=1 (lo lanza el
+`.work/food-cost-templates/rck-dryrun` del repo). `--real` escribe en
+`astro-site/public/dl/food-cost-templates/` y exige FOOD_COST_KIT_APPLY=1 (lo lanza el
 orquestador tras la revisión). Los ficheros ES de `dl/kit-escandallos/` NUNCA se escriben.
 
 Orden (SPEC §2.1), por libro, siempre desde una copia limpia del ES publicado (→ idempotente):
@@ -30,7 +30,8 @@ Orden (SPEC §2.1), por libro, siempre desde una copia limpia del ES publicado (
    8. mercado (mercado_en.json): fichas, precios de carta, Bottle Sizes en ml (E3), 06, 08, 09,
       10, 11, 12, 13 y BONUS;
    9. bloques extra de Instructions (instrucciones_extra_en.json) antes del pie de marca;
-  10. metadatos (docProps EN) y línea de versión D14 con el mes de publicación;
+  10. metadatos (docProps EN) y línea de versión D14 con el mes de publicación; el título interior
+      (docProps title y fila del título de Instructions) tiene que ser el de D9 bis (mapas.TITULOS);
   11. guardado con el nombre de fichero EN (mapas.FICHEROS);
   12. gráficos de 09 y 11: el XML original del ES con referencias y título EN (openpyxl pierde
       su <c:style>);
@@ -70,12 +71,12 @@ import extraer_textos                                        # noqa: E402
 logging.disable(logging.CRITICAL)
 
 ORIGEN = os.path.join(REPO, 'astro-site', 'public', 'dl', 'kit-escandallos')
-DESTINO_REAL = os.path.join(REPO, 'astro-site', 'public', 'dl', 'recipe-costing-kit')
+DESTINO_REAL = os.path.join(REPO, 'astro-site', 'public', 'dl', mapas.SLUG)          # food-cost-templates
 INJECT = os.path.join(SCRIPTS, 'inject_cache.py')
 
 VERSION = '2.1'
-SUBJECT = 'Recipe Costing Kit Pro · v2.1'
-DESCRIPTION = 'aichef.pro/en/digital-products/recipe-costing-kit'
+SUBJECT = mapas.PRODUCTO + ' · v2.1'                  # «Food Cost Kit Pro · v2.1» (D14)
+DESCRIPTION = mapas.URL_PRODUCTO                        # aichef.pro/en/digital-products/food-cost-templates
 CREATOR = 'AI Chef Pro'
 MESES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August',
          'September', 'October', 'November', 'December']
@@ -625,7 +626,7 @@ def mercado_09(wb, M, rep):
 
 
 def mercado_10(wb, M, rep):
-    ws = wb['Menu Price Calculator']
+    ws = wb[mapas.hoja_en('Calculadora PVP')]
     c = M['calculadora_10']
     escribir(ws, 'C4', c['C4_coste_racion'])
     escribir(ws, 'C5', c['C5_impuesto'])
@@ -688,7 +689,7 @@ def mercado_12(wb, M, rep):
 
 
 def mercado_13(wb, M, rep):
-    ws = wb['Price List']
+    ws = wb[mapas.hoja_en('Lista de precios')]
     l13 = M['libro13']
     escribir(ws, 'B5', l13['umbral_alerta'])
     filas = l13['filas']
@@ -877,6 +878,20 @@ def metadatos(wb, traducir, rep):
                                    'category', 'lastModifiedBy'))
 
 
+def comprobar_titulo(wb, fname_en, rep):
+    """D9 bis: el título interior sale de textos_en y tiene que ser EXACTAMENTE el de mapas.TITULOS, en el
+    docProps title y en la única fila de título («📋 …») de Instructions. Si no, se aborta: nunca se parchea."""
+    esperado = mapas.TITULOS[fname_en]
+    if wb.properties.title != esperado:
+        raise Aborta('%s: docProps title %r ≠ D9 bis %r' % (fname_en, wb.properties.title, esperado))
+    filas = [c for c in wb[HOJA_INSTR_EN]._cells.values()
+             if isinstance(c.value, str) and c.value.startswith(mapas.ICONO_TITULO)]
+    if len(filas) != 1 or filas[0].value != mapas.titulo_instrucciones(fname_en):
+        raise Aborta('%s: título de Instructions %r ≠ D9 bis %r'
+                     % (fname_en, [c.value for c in filas], mapas.titulo_instrucciones(fname_en)))
+    rep['titulo'] = OrderedDict([('celda', filas[0].coordinate), ('texto', esperado)])
+
+
 # ---------------------------------------------------------------- gráficos (ZIP)
 RX_F = re.compile(r'(<(?:c:)?f>)([^<]*)(</(?:c:)?f>)')
 RX_AT = re.compile(r'(<a:t>)([^<]*)(</a:t>)')
@@ -947,6 +962,7 @@ def construir_libro(fname_es, carpeta, datos, mes):
     notas_nuevas(wb, fname_en, datos, rep)                               # 9 (celdas nuevas)
     anchos(wb)
     metadatos(wb, traducir, rep)                                         # 10
+    comprobar_titulo(wb, fname_en, rep)                                  # 10 (D9 bis)
     normalizar_apostrofos(wb, rep)
     if rep['faltan']:
         raise Aborta('%s: %d textos sin traducción:\n  %s'
@@ -1038,15 +1054,15 @@ def carpeta_dryrun(arg):
     s = os.environ.get('CLAUDE_SCRATCHPAD')
     if s:
         return os.path.join(os.path.abspath(s), 'rck-dryrun')
-    return os.path.join(REPO, '.work', 'recipe-costing-kit', 'rck-dryrun')
+    return os.path.join(REPO, '.work', mapas.SLUG, 'rck-dryrun')
 
 
 def main():
-    ap = argparse.ArgumentParser(description='Recipe Costing Kit Pro (EN): montaje de los 14 xlsx')
+    ap = argparse.ArgumentParser(description='Food Cost Kit Pro (EN): montaje de los 14 xlsx')
     ap.add_argument('--salida', default=None, help='carpeta del dry-run (por defecto '
-                    '$CLAUDE_SCRATCHPAD/rck-dryrun o .work/recipe-costing-kit/rck-dryrun)')
+                    '$CLAUDE_SCRATCHPAD/rck-dryrun o .work/food-cost-templates/rck-dryrun)')
     ap.add_argument('--real', action='store_true', help='escribe en astro-site/public/dl/'
-                    'recipe-costing-kit/ (exige RECIPE_COSTING_KIT_APPLY=1)')
+                    'food-cost-templates/ (exige FOOD_COST_KIT_APPLY=1)')
     ap.add_argument('--pdf', default=None, help='PDF EN del bono (por defecto, el del dry-run)')
     ap.add_argument('--mes', default=None, help='mes de la línea de versión D14 (por defecto, el actual)')
     ap.add_argument('--json', default=None, help='informe JSON')
@@ -1054,9 +1070,9 @@ def main():
     ap.add_argument('--sin-cache', action='store_true', help='(depuración) no corre inject_cache')
     args = ap.parse_args()
 
-    if args.real and os.environ.get('RECIPE_COSTING_KIT_APPLY') != '1':
-        raise SystemExit('ABORTADO: --real escribe en dl/recipe-costing-kit/. Hace falta también '
-                         'RECIPE_COSTING_KIT_APPLY=1 (orquestador, tras la revisión).')
+    if args.real and os.environ.get('FOOD_COST_KIT_APPLY') != '1':
+        raise SystemExit('ABORTADO: --real escribe en dl/food-cost-templates/. Hace falta también '
+                         'FOOD_COST_KIT_APPLY=1 (orquestador, tras la revisión).')
     mes = args.mes or mes_por_defecto()
     if mes not in MESES:
         raise SystemExit('--mes debe ser un mes en inglés: %s' % ', '.join(MESES))
@@ -1107,7 +1123,7 @@ def main():
     fallos += ['inject_cache %s: exit %s' % (c['fichero'], c['exit']) for c in cache if c['exit']]
     fallos += ['inject_cache %s: %s' % (c['fichero'], c['salida']) for c in cache
                if 'fallos_pycel=0' not in c['salida']]
-    salida = OrderedDict([('producto', 'recipe-costing-kit'), ('version', VERSION),
+    salida = OrderedDict([('producto', mapas.SLUG), ('version', VERSION),
                           ('fecha', datetime.datetime.now().isoformat(timespec='seconds')),
                           ('modo', 'real' if args.real else 'dry-run'), ('carpeta', carpeta),
                           ('mes', mes), ('conversions_n', datos['n']),
