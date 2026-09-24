@@ -1,0 +1,514 @@
+{
+  "_leeme": [
+    "Datos de los ejemplos de las plantillas nuevas 12 y 13 del Kit de Escandallos Pro v2.1 (SPEC recipe-costing-kit §2.0, D11, R2-13).",
+    "Cada cifra lleva su fuente (URL + lo que dice) o [estimado]/[derivado] con el razonamiento. Ninguna cifra se presenta como medida sin serlo:",
+    "el despiece del ES (revisión R1, CH-01) es un ejemplo ORIENTATIVO construido sobre la merma de limpieza de referencia del solomillo entero (iumm.es, 25 %),",
+    "y la hoja lo dice («no es un test pesado»); el test pesado de EE. UU. que se usaba antes queda en despiece.reservado_en para el EN. El peso cocinado de",
+    "la hamburguesa aplica el rendimiento de referencia del USDA y la hoja también lo dice. Consultado el 24-sep-2026 (sesión Claude Code)."
+  ],
+  "despiece": {
+    "titulo": "Test de Despiece — Solomillo de Ternera Entero",
+    "producto": "Solomillo de ternera entero, con cordón (sin limpiar)",
+    "precio_ap_eur_kg": 28.5,
+    "precio_ap_fuente": "Misma pieza y precio que compra 01-escandallo-estandar.xlsx, hoja «Escandallo», fila 5 (D5 = 28,50 €/kg).",
+    "peso_ap_kg": 2.8,
+    "peso_ap_fuente": "[estimado] Dentro del rango español de iumm.es: «una pieza que está entre los 2,5 y los 3,2 Kg aproximadamente» (https://iumm.es/blog/limpieza-solomillo/, consultado el 24-sep-2026).",
+    "componentes": [
+      {
+        "pieza": "Centro, cabeza y punta limpios",
+        "tipo": "Útil",
+        "peso_kg": 2.1,
+        "valor_eur_kg": null,
+        "fuente": "[derivado] 2,8 kg × (1 − 0,25). Merma de limpieza del solomillo entero según iumm.es: «después de su limpieza merma un 25%» (sin descontar el cordón que se aprovecha)."
+      },
+      {
+        "pieza": "Cordón limpio (para fondo o picada)",
+        "tipo": "Subproducto",
+        "peso_kg": 0.16,
+        "valor_eur_kg": 9.5,
+        "fuente": "Peso: [estimado] ≈ 5,7 % de la pieza, redondeo de la proporción de cordón aprovechable de un test pesado publicado (For Love of the Table, 2010: «5 oz. of usable trimmed chain meat (5.6% of the original weight)», https://www.forloveofthetable.com/2010/08/how-to-trim-whole-beef-tenderloin.html). Valor: [estimado] valor de sustitución = precio de la carne picada de vacuno 80/20 del propio kit (08-food-truck.xlsx, «Smash Burger», D5 = 9,50 €/kg), que es lo que el cordón sustituye en una picada o un fondo."
+      },
+      {
+        "pieza": "Grasa, telilla y nervios",
+        "tipo": "Desecho",
+        "peso_kg": 0.54,
+        "valor_eur_kg": null,
+        "fuente": "[derivado] Resto del 25 % de limpieza: 0,700 − 0,160 kg."
+      }
+    ],
+    "cierre_pesos": "Los tres componentes suman los 2,800 kg de la pieza, así que la «pérdida de corte» del ejemplo sale 0,000 kg. No es una medida: la nota de la hoja lo dice y pide pesar el propio.",
+    "contraste": [
+      "iumm.es: merma de limpieza del 25 % (sin descontar subproductos). El ejemplo reproduce ese 25 % bruto; tras el crédito del cordón, la merma para la ficha sale del 23,5 %.",
+      "Carne y Delicatessen: «un solomillo entero sucio con cordón de unos 2.000g» y «el entero limpio (como se entrega) ronda los 1.300g» (35 % bruto; https://carneydelicatessen.com/producto/solomillo-de-vaca/). El 25 % es la referencia moderada.",
+      "Cárnicas Ismael (el solomillo comprado YA limpio rinde un 85-95 %) y el blog propio (que-son-las-mermas-en-cocina: «el solomillo de ternera, apenas un 10-15 %») hablan de la pieza limpia, no de la entera con cordón.",
+      "Tabla «Mermas» de las fichas 01-08: Carne roja típica 20 %, mínima 15 %, máxima 25 %. El 23,5 % queda dentro."
+    ],
+    "unidades_porcion_por_unidad_peso": 1000,
+    "porcion_g": 200,
+    "porcion_fuente": "La ficha 01 usa 0,2 kg de solomillo por ración (01-escandallo-estandar.xlsx, «Escandallo», E5).",
+    "nota_hoja": "Ejemplo orientativo, no un test pesado: pieza entera de 2,8 kg con la merma de limpieza del 25 % que se da como referencia para el solomillo entero con cordón. El reparto entre el cordón que se aprovecha y lo que se tira, y el valor del cordón, son estimaciones: pesa el tuyo. Duplica la pestaña para otro test (clic derecho sobre la pestaña → Mover o copiar → Crear una copia).",
+    "reservado_en": {
+      "_leeme": "Test pesado estadounidense que usaba la v2.1 antes de la revisión R1 (CH-01): solomillo de cebo de EE. UU. entero y sin pelar, con un 27 % de grasa. No encaja con el solomillo de ternera con cordón que compra la 01 a 28,50 €/kg (daba un 36 % de merma, fuera de la tabla «Mermas» del kit). Se RESERVA para el Recipe Costing Kit EN (whole untrimmed tenderloin), donde sí es el producto nativo.",
+      "peso_ap_kg": 2.523,
+      "peso_ap_fuente": "For Love of the Table, «How to Trim a Whole Beef Tenderloin» (ago-2010), test pesado de un solomillo entero sin limpiar: «5 pound 9 ounce whole tenderloin» = 89 oz = 2,5231 kg. https://www.forloveofthetable.com/2010/08/how-to-trim-whole-beef-tenderloin.html . Encaja en el rango español: «una pieza que está entre los 2,5 y los 3,2 Kg aproximadamente» (iumm.es, https://iumm.es/blog/limpieza-solomillo/).",
+      "componentes": [
+        {
+          "pieza": "Centro y cabeza limpios",
+          "tipo": "Útil",
+          "peso_kg": 1.531,
+          "fuente": "Mismo test: «3 lbs. 6 oz. meat appropriate for steaks or roasts (60.7% of the original weight)» = 54 oz = 1,5309 kg."
+        },
+        {
+          "pieza": "Puntas y recortes",
+          "tipo": "Subproducto",
+          "peso_kg": 0.17,
+          "fuente": "Peso: mismo test, «6 oz. of small pieces for quick sautés (6.7% of the original weight)» = 0,1701 kg. Valor: [estimado] valor de sustitución = lo que costaría la carne de ternera de primera que sustituyen en un salteado; por debajo del precio minorista de la babilla de ternera (17,90 €/kg, Tall a Tall Carnissers, https://www.tallatallcarnissers.com/babilla-de-ternera-1kg-oferta , consultado el 24-sep-2026) porque es recorte y se valora a precio mayorista."
+        },
+        {
+          "pieza": "Cordón limpio",
+          "tipo": "Subproducto",
+          "peso_kg": 0.142,
+          "fuente": "Peso: mismo test, «5 oz. of usable trimmed chain meat (5.6% of the original weight)» = 0,1417 kg. Valor: [estimado] valor de sustitución = precio de la carne picada de vacuno 80/20 del propio kit (08-food-truck.xlsx, «Smash Burger», D5 = 9,50 €/kg), que es lo que el cordón sustituye en una picada o un fondo."
+        },
+        {
+          "pieza": "Grasa, telilla y nervios",
+          "tipo": "Desecho",
+          "peso_kg": 0.68,
+          "fuente": "Mismo test: «1 1/2 lbs. unusable scrap (27% of the original weight)» = 24 oz = 0,6804 kg."
+        }
+      ],
+      "merma_resultante_con_precio_es": 0.359992
+    }
+  },
+  "coccion": {
+    "titulo": "Test de Cocción — Smash Burger (Plantilla 08)",
+    "elaboracion": "Mezcla de vacuno picada 80/20, en bolas de 90 g",
+    "peso_crudo_kg": 1.8,
+    "peso_crudo_fuente": "[derivado] 10 hamburguesas de la ficha 08 (08-food-truck.xlsx, «Smash Burger», E5 = 0,18 kg de mezcla 80/20 por hamburguesa).",
+    "coste_crudo_eur_kg": 9.5,
+    "coste_crudo_fuente": "08-food-truck.xlsx, «Smash Burger», D5 = 9,50 €/kg.",
+    "rendimiento_coccion": 0.74,
+    "rendimiento_fuente": "USDA Food Buying Guide for Child Nutrition Programs, Section 1 Meats/Meat Alternates, yield table: «Beef, Ground, fresh or frozen, no more than 20% fat … 1 lb AP = 0.74 lb cooked, drained, lean meat». https://foodbuyingguide.fns.usda.gov/files/Reports/USDA_FBG_Section1_MeatsAndMeatAlternatesYieldTable.pdf (pág. 13 del PDF). Contraste: «Las mermas típicas por cocción oscilan entre 15% y 35% del peso crudo limpio» (Cárnicas Ismael, https://www.carnicas-ismael.com/noticias/rendimiento-mermas-carne-restaurantes-como-calcular/).",
+    "peso_cocinado_kg": 1.332,
+    "peso_cocinado_fuente": "[derivado] 1,8 kg × 0,74 (USDA). NO es una medida: la nota de la hoja lo dice y pide pesar el propio.",
+    "merma_despiece": 0,
+    "merma_despiece_fuente": "La picada se compra lista: no tiene despiece. Desde la v2.1 (R1: CH-03/T2) la ficha 08 también lleva 0 % en esa fila (antes 15 % sobre el peso crudo), así que test y ficha cuadran: 180 g × 9,50 €/kg = 1,71 €.",
+    "unidades_porcion_por_unidad_peso": 1000,
+    "porcion_cocinada_g": 133,
+    "porcion_cocinada_fuente": "[derivado] 180 g crudos × 0,74 = 133,2 g, redondeado a 133 g.",
+    "nota_hoja": "Ejemplo: 10 hamburguesas de la plantilla 08 (180 g de mezcla 80/20 cada una). El peso cocinado aplica el rendimiento de referencia del USDA para picada de vacuno con un 20 % de grasa: 0,74 kg cocinados por kg crudo. No es una medida: pesa el tuyo, porque la plancha, el grosor y el punto lo cambian."
+  },
+  "lista_precios": {
+    "_leeme": "Filas = ingredientes distintos de las 8 fichas publicadas (01-08), leídos del fichero: nombre, categoría, unidad y precio. `alias` une dos nombres del mismo producto SOLO si en las fichas tienen el mismo precio y la misma unidad (el script lo comprueba y aborta si no). Los formatos de compra son [estimado]: formatos comerciales habituales en la distribución a hostelería en España, elegidos para que precio del formato ÷ contenido dé exactamente el precio de la ficha; el precio del formato se DERIVA del de la ficha (nunca al revés). Sin formato propio, el formato es la unidad de compra de la ficha (al peso, por litro, por unidad).",
+    "alias": {
+      "Mantequilla (hollandaise)": "Mantequilla",
+      "Aguacate Hass (½ pieza)": "Aguacate Hass",
+      "Pepinillo": "Pepinillos",
+      "Lima (zumo)": "Lima",
+      "Soda": "Soda / agua con gas",
+      "Soda/agua con gas": "Soda / agua con gas",
+      "AOVE": "Aceite de oliva virgen extra (AOVE)",
+      "Aceite de oliva virgen extra": "Aceite de oliva virgen extra (AOVE)",
+      "Huevos (unidades)": "Huevos",
+      "Huevo (para pintar)": "Huevos",
+      "Romero fresco (1 rama ≈ 1/12 manojo)": "Romero fresco",
+      "Hierbabuena (1 rama ≈ 1/12 manojo)": "Hierbabuena",
+      "Cebollino (1 rama ≈ 1/12 manojo)": "Cebollino",
+      "Croquetas (ud)": "Croquetas",
+      "Mini quiche (ud)": "Mini quiche",
+      "Pan mini (ud)": "Pan mini",
+      "Colorante rojo (bote 50 g · 2 g/tanda)": "Colorante rojo",
+      "Microgreens (bandeja 50 g)": "Microgreens",
+      "Naranja (rodaja)": "Naranja",
+      "Mantequilla (frosting)": "Mantequilla",
+      "Azúcar glas (frosting)": "Azúcar glas",
+      "Sal (para borde)": "Sal"
+    },
+    "formato_por_defecto": {
+      "kg": [
+        "Al peso (precio por kg)",
+        1,
+        "kg"
+      ],
+      "L": [
+        "Por litro",
+        1,
+        "L"
+      ],
+      "ud": [
+        "Por unidad",
+        1,
+        "ud"
+      ],
+      "docena": [
+        "Estuche 30 huevos",
+        30,
+        "ud"
+      ],
+      "manojo": [
+        "Manojo",
+        1,
+        "manojo"
+      ]
+    },
+    "formatos": {
+      "Patata agria": [
+        "Saco 10 kg",
+        10,
+        "kg"
+      ],
+      "Patata": [
+        "Saco 10 kg",
+        10,
+        "kg"
+      ],
+      "Patata para freír": [
+        "Saco 25 kg",
+        25,
+        "kg"
+      ],
+      "Cebolla": [
+        "Saco 10 kg",
+        10,
+        "kg"
+      ],
+      "Cebolla morada": [
+        "Malla 5 kg",
+        5,
+        "kg"
+      ],
+      "Zanahoria": [
+        "Saco 10 kg",
+        10,
+        "kg"
+      ],
+      "Ajo": [
+        "Malla 1 kg",
+        1,
+        "kg"
+      ],
+      "Espárrago verde": [
+        "Caja 5 kg",
+        5,
+        "kg"
+      ],
+      "Tomate": [
+        "Caja 6 kg",
+        6,
+        "kg"
+      ],
+      "Tomate pera": [
+        "Caja 6 kg",
+        6,
+        "kg"
+      ],
+      "Tomate cherry": [
+        "Caja 12 tarrinas de 250 g",
+        3,
+        "kg"
+      ],
+      "Limón": [
+        "Caja 5 kg",
+        5,
+        "kg"
+      ],
+      "Lima": [
+        "Caja 4 kg",
+        4,
+        "kg"
+      ],
+      "Naranja": [
+        "Caja 10 kg",
+        10,
+        "kg"
+      ],
+      "Arándanos": [
+        "Caja 12 tarrinas de 125 g",
+        1.5,
+        "kg"
+      ],
+      "Harina floja": [
+        "Saco 25 kg",
+        25,
+        "kg"
+      ],
+      "Harina de fuerza": [
+        "Saco 25 kg",
+        25,
+        "kg"
+      ],
+      "Azúcar": [
+        "Fardo 10 paquetes de 1 kg",
+        10,
+        "kg"
+      ],
+      "Mantequilla seca (82% MG)": [
+        "Placa 2 kg",
+        2,
+        "kg"
+      ],
+      "Chocolate negro 70%": [
+        "Saco 5 kg (gotas)",
+        5,
+        "kg"
+      ],
+      "Chocolate blanco": [
+        "Saco 5 kg (gotas)",
+        5,
+        "kg"
+      ],
+      "Carne picada (mezcla 80/20)": [
+        "Bandeja 5 kg",
+        5,
+        "kg"
+      ],
+      "Contramuslo de pollo": [
+        "Caja 5 kg",
+        5,
+        "kg"
+      ],
+      "Langostino cocido": [
+        "Caja 2 kg",
+        2,
+        "kg"
+      ],
+      "Queso feta": [
+        "Tarrina 2 kg",
+        2,
+        "kg"
+      ],
+      "Queso cheddar rallado": [
+        "Bolsa 2 kg",
+        2,
+        "kg"
+      ],
+      "Jamón ibérico (loncheado)": [
+        "Sobre 100 g",
+        0.1,
+        "kg"
+      ],
+      "Microgreens": [
+        "Bandeja 50 g",
+        0.05,
+        "kg"
+      ],
+      "Canela molida": [
+        "Bote 500 g",
+        0.5,
+        "kg"
+      ],
+      "Pimienta negra": [
+        "Bote 500 g",
+        0.5,
+        "kg"
+      ],
+      "Flor de sal": [
+        "Bote 250 g",
+        0.25,
+        "kg"
+      ],
+      "Sal en escamas": [
+        "Caja 250 g",
+        0.25,
+        "kg"
+      ],
+      "Enebro (bayas)": [
+        "Bote 250 g",
+        0.25,
+        "kg"
+      ],
+      "Levadura fresca": [
+        "Paquete 500 g",
+        0.5,
+        "kg"
+      ],
+      "Hielo": [
+        "Saco 10 kg",
+        10,
+        "kg"
+      ],
+      "Claras de huevo": [
+        "Brik 1 kg (pasteurizadas)",
+        1,
+        "kg"
+      ],
+      "Aceite de oliva virgen extra (AOVE)": [
+        "Garrafa 5 L",
+        5,
+        "L"
+      ],
+      "Aceite de girasol": [
+        "Garrafa 5 L",
+        5,
+        "L"
+      ],
+      "Aceite de girasol (fritura)": [
+        "Bidón 25 L",
+        25,
+        "L"
+      ],
+      "Aceite de sésamo": [
+        "Botella 500 ml",
+        0.5,
+        "L"
+      ],
+      "Leche entera": [
+        "Caja 6 briks de 1 L",
+        6,
+        "L"
+      ],
+      "Nata 35% MG": [
+        "Brik 1 L",
+        1,
+        "L"
+      ],
+      "Leche de avena": [
+        "Brik 1 L",
+        1,
+        "L"
+      ],
+      "Vino blanco seco": [
+        "Botella 75 cl",
+        0.75,
+        "L"
+      ],
+      "Vino tinto reserva": [
+        "Botella 75 cl",
+        0.75,
+        "L"
+      ],
+      "Vainilla (extracto)": [
+        "Botella 100 ml",
+        0.1,
+        "L"
+      ],
+      "Soda / agua con gas": [
+        "Pack 6 botellas de 1 L",
+        6,
+        "L"
+      ],
+      "Salsa BBQ": [
+        "Botella 2 L",
+        2,
+        "L"
+      ],
+      "Ginebra premium": [
+        "Botella 70 cl",
+        0.7,
+        "L"
+      ],
+      "Ron blanco": [
+        "Botella 70 cl",
+        0.7,
+        "L"
+      ],
+      "Tequila reposado": [
+        "Botella 70 cl",
+        0.7,
+        "L"
+      ],
+      "Triple Sec / Cointreau": [
+        "Botella 70 cl",
+        0.7,
+        "L"
+      ],
+      "Aperol": [
+        "Botella 70 cl",
+        0.7,
+        "L"
+      ],
+      "Prosecco": [
+        "Botella 75 cl",
+        0.75,
+        "L"
+      ],
+      "Tónica premium": [
+        "Caja 24 botellines de 20 cl",
+        24,
+        "ud"
+      ],
+      "Aguacate Hass": [
+        "Caja 20 piezas",
+        20,
+        "ud"
+      ],
+      "Pan brioche": [
+        "Bolsa 6 ud",
+        6,
+        "ud"
+      ],
+      "Pan brioche grande": [
+        "Bolsa 6 ud",
+        6,
+        "ud"
+      ],
+      "English muffin": [
+        "Bolsa 6 ud",
+        6,
+        "ud"
+      ],
+      "Pan mini": [
+        "Caja 100 ud",
+        100,
+        "ud"
+      ],
+      "Queso americano": [
+        "Paquete 84 lonchas",
+        84,
+        "ud"
+      ],
+      "Croquetas": [
+        "Caja 60 ud",
+        60,
+        "ud"
+      ],
+      "Mini quiche": [
+        "Caja 40 ud",
+        40,
+        "ud"
+      ],
+      "Colorante rojo": [
+        "Bote 50 g",
+        1,
+        "ud"
+      ],
+      "Pan de masa madre (rebanada gruesa)": [
+        "Por rebanada",
+        1,
+        "ud"
+      ],
+      "Café": [
+        "Por servicio (dosis)",
+        1,
+        "ud"
+      ]
+    },
+    "formatos_fuente": "Destilados, vino espumoso: tamaños de botella de 04-cocktails-bebidas.xlsx, hoja «Formatos de Compra» (70 cl destilados, 75 cl Prosecco). Resto: [estimado] formato comercial habitual en distribución HORECA en España.",
+    "precio_anterior_demo": {
+      "Aceite de oliva virgen extra (AOVE)": 6.8,
+      "Solomillo de ternera": 28.0
+    },
+    "precio_anterior_demo_fuente": "[estimado] Valores ilustrativos para que el ejemplo enseñe una ALERTA (+10,3 %) y un OK (+1,8 %) con el umbral del 5 %. La fila lo dice en «Notas».",
+    "nota_demo": "Ilustrativo: el precio anterior es de ejemplo, para que veas cómo funciona la alerta. Bórralo.",
+    "umbral_alerta": 0.05,
+    "filas_vacias": 30,
+    "alias_con_precio_distinto": "Un alias puede unir dos precios distintos del mismo producto SOLO con la misma unidad de compra: la lista se queda con el precio de la fila cuyo nombre es el canónico y avisa del otro en «Notas» («La plantilla NN lo usa a …, otro proveedor»), igual que con el huevo campero. Con unidades distintas el script aborta (R1: CH-10, T4).",
+    "excluir": {
+      "Bebida (vino + agua)": "Partida compuesta del cóctel de la plantilla 06 (vino y agua por persona): no es un producto que se compre a un proveedor (R1: CH-10)."
+    }
+  },
+  "correcciones_fichas": {
+    "_leeme": "Correcciones de TEXTO en las filas de ejemplo de 01-08 (R1: CH-10). Se aplican en parche_v2_1.py a las fichas y en nuevas.leer_fichas() a la lectura del 13. Las mermas de las filas precargadas están escritas a mano, así que ningún coste cambia. «Espárrago verde» se queda en «Verdura hoja»: de las 21 categorías del kit es la más cercana (tallo tierno, merma típica 20-35 %), y añadir una categoría sería estructura nueva en los 8 libros.",
+    "renombrar": {
+      "Carne picada (blend 80/20)": "Carne picada (mezcla 80/20)"
+    },
+    "categoria": {
+      "Salsa de soja": "Salsas/condimentos",
+      "Salsa BBQ": "Salsas/condimentos",
+      "Caramelo líquido": "Salsas/condimentos",
+      "Coliflor": "Verdura hoja",
+      "Hinojo fresco": "Verdura raíz"
+    },
+    "categoria_fuente": "Salsas: la categoría «Salsas/condimentos» existe desde la v2.0 (DOM-23). Coliflor: col, no raíz. Hinojo: bulbo; el kit ya clasifica los bulbos (cebolla, chalota) en «Verdura raíz»."
+  }
+}
