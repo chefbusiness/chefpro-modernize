@@ -293,7 +293,10 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Nombres propios de ciudad (enlaces pSEO del pie en todos los idiomas).
            'Bogotá', 'Medellín',
            # Marca propia de un proveedor (caviar Riofrío), citada en la ficha de un producto.
-           'Riofrío']
+           'Riofrío',
+           # Préstamos con tilde que el inglés escribe así (Food Cost Kit Pro: plantilla «Café & Brunch
+           # Menu Costing», «açaí bowls»). Palabras enteras: la «é»/«í» sueltas siguen vigiladas.
+           'Café', 'Cafés', 'café', 'cafés', 'açaí']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
