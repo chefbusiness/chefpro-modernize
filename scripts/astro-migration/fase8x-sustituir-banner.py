@@ -343,7 +343,8 @@ def main():
     # correo. `esc()` convierte el "&" literal del nombre en "&amp;".
     nombre_catalogo = prods[pid][cfg['lang']][0]
     ancla = cfg.get('ancla') or nombre_catalogo
-    cfg['_url'] = BASE_URL + prods[pid]['url']
+    # La landing del idioma del corpus (urlByLang), o la ES si no tiene versión propia.
+    cfg['_url'] = BASE_URL + mod.url_producto(prods[pid], cfg['lang'])
     cfg['_a'] = '<a href="%s">%s</a>' % (cfg['_url'], mod.esc(ancla))
     # Los prefijos que nunca se sacrifican. El propio producto entra siempre:
     # si una reejecución lo encontrase ya puesto, no se pisaría a sí mismo.

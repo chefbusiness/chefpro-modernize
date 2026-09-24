@@ -11,13 +11,18 @@ export interface ProductCatalogEntry {
 /**
  * Tienda internacional (2026-09-23, TIENDA-INTERNACIONAL.md §3.10): cuando un producto
  * tenga versión en otro idioma, su landing va en `urlByLang` (p. ej.
- * `{ en: '/en/digital-products/recipe-costing-kit' }`) y los banners de ese idioma
- * apuntan a ella; sin entrada para el idioma, se cae a `url` (la landing ES).
- * ⚠️ Colocarlo DESPUÉS de `description`: el parser de fase8c-libreria-assemble.py exige
- * `id`, `url`, `price` y `name` en líneas seguidas (y hoy sólo lee `url`: los banners que
- * genera ese script NO usan `urlByLang` hasta que se le enseñe).
+ * `{ en: '/en/digital-products/food-cost-templates' }`) y su precio en esa tienda en
+ * `priceByLang` (p. ej. `{ en: '$19' }`, el que cobra su Payment Link). Los banners y las
+ * tarjetas de ese idioma apuntan a ella con ese precio; sin entrada para el idioma, se cae
+ * a `url` y `price` (la landing y el precio ES).
+ * ⚠️ Colocarlos DESPUÉS de `description`: el parser de fase8c-libreria-assemble.py exige
+ * `id`, `url`, `price` y `name` en líneas seguidas, y lee `urlByLang`/`priceByLang` aparte,
+ * dentro del bloque de cada producto (sus banners del blog ya los usan).
+ * `sync-product-prices.py --check` cruza `priceByLang` con el precio real del producto de
+ * esa tienda (el productId es el último segmento de `urlByLang`).
  */
 export type ProductUrlByLang = Partial<Record<ProductLang, string>>;
+export type ProductPriceByLang = Partial<Record<ProductLang, string>>;
 
 interface ProductCatalogRaw {
   id: string;
@@ -26,11 +31,24 @@ interface ProductCatalogRaw {
   name: { es: string; en?: string };
   description: { es: string; en?: string };
   urlByLang?: ProductUrlByLang;
+  priceByLang?: ProductPriceByLang;
 }
 
 /** URL de la landing del producto en `lang`, o la ES (`url`) si no tiene versión propia. */
 export function productUrl(entry: { url: string; urlByLang?: ProductUrlByLang }, lang: ProductLang = 'es'): string {
   return entry.urlByLang?.[lang] ?? entry.url;
+}
+
+/**
+ * Precio del producto en `lang`. Solo cambia cuando `lang` tiene landing propia
+ * (`urlByLang`): un precio en otra moneda junto a la landing ES sería un cargo que
+ * no se cobra. Sin versión propia, el precio ES (`price`).
+ */
+export function productPrice(
+  entry: { price: string; urlByLang?: ProductUrlByLang; priceByLang?: ProductPriceByLang },
+  lang: ProductLang = 'es',
+): string {
+  return (entry.urlByLang?.[lang] && entry.priceByLang?.[lang]) || entry.price;
 }
 
 const RAW: Record<string, ProductCatalogRaw> = {
@@ -48,11 +66,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-escandallos',
     url: '/kit-escandallos',
     price: '€12',
-    name: { es: 'Kit de Escandallos Pro', en: 'Recipe Costing Kit Pro' },
+    name: { es: 'Kit de Escandallos Pro', en: 'Food Cost Kit Pro' },
     description: {
       es: 'Plantillas Excel para escandallar en minutos con food cost real.',
       en: 'Excel templates that cost out recipes in minutes with real food cost.',
     },
+    // Tienda EN (24-sep-2026): producto propio, `food-cost-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/food-cost-templates' },
+    priceByLang: { en: '$19' },
   },
   'pack-appcc': {
     id: 'pack-appcc',
@@ -550,7 +571,7 @@ function localize(entry: ProductCatalogRaw, lang: ProductLang): ProductCatalogEn
   return {
     id: entry.id,
     url: productUrl(entry, lang),
-    price: entry.price,
+    price: productPrice(entry, lang),
     name: entry.name[lang as 'es' | 'en'] ?? entry.name.es,
     description: entry.description[lang as 'es' | 'en'] ?? entry.description.es,
   };

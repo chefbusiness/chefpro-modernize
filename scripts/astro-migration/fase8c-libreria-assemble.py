@@ -273,6 +273,27 @@ def catalogo_productos():
             'en': (m.group(5) or m.group(4), m.group(7) or m.group(6)),
         }
     declaradas = set(re.findall(r"^  '([a-z0-9-]+)': \{", txt, re.M))
+    # Tienda internacional (TIENDA-INTERNACIONAL.md §3.10): un producto con versión
+    # propia en otro idioma declara `urlByLang` y `priceByLang` DESPUÉS de
+    # `description`. Se leen aparte, acotados al bloque de su producto (de su
+    # `'id': {` al siguiente), para que el regex de arriba no cambie y uno de estos
+    # campos nunca se atribuya al producto de al lado.
+    cabeceras = list(re.finditer(r"^  '([a-z0-9-]+)': \{", txt, re.M))
+    for i, c in enumerate(cabeceras):
+        pid = c.group(1)
+        if pid not in out:
+            continue
+        fin = cabeceras[i + 1].start() if i + 1 < len(cabeceras) else txt.find('\n};', c.end())
+        bloque = txt[c.end():fin]
+        for campo, clave in (('urlByLang', 'url_lang'), ('priceByLang', 'precio_lang')):
+            m = re.search(campo + r":\s*\{([^}]*)\}", bloque)
+            if m:
+                out[pid][clave] = dict(re.findall(r"([a-z]{2}):\s*'([^']+)'", m.group(1)))
+        huerfano = set(out[pid].get('precio_lang', {})) - set(out[pid].get('url_lang', {}))
+        if huerfano:
+            sys.exit('%s: priceByLang sin urlByLang para %s. Un precio de otra tienda '
+                     'junto a la landing ES sería un cargo que no se cobra.'
+                     % (pid, ', '.join(sorted(huerfano))))
     perdidas = declaradas - set(out)
     if perdidas:
         sys.exit('el parser del catálogo perdió %d producto(s): %s\n'
@@ -280,6 +301,19 @@ def catalogo_productos():
                  'entrada. Un producto perdido aquí es un producto que no se puede vender.'
                  % (len(perdidas), ', '.join(sorted(perdidas))))
     return out
+
+
+def url_producto(d, lang):
+    """Landing del producto en `lang` (`urlByLang`), o la ES si no tiene versión propia."""
+    return d.get('url_lang', {}).get(lang, d['url'])
+
+
+def precio_producto(d, lang):
+    """Precio en la tienda de `lang` (`priceByLang`), solo si esa tienda tiene landing
+    propia del producto; si no, el precio ES, que es el que cobra la landing ES."""
+    if lang in d.get('url_lang', {}):
+        return d.get('precio_lang', {}).get(lang, d['precio'])
+    return d['precio']
 
 
 def rotar_productos(slug_post, prods, fijados=None, n=3):
@@ -332,7 +366,8 @@ def banner(slug_producto, prods, slug_post, lang='es'):
         sys.exit('producto inexistente en el catálogo: %s' % slug_producto)
     d = prods[slug_producto]
     nombre, desc = d[lang]
-    url, precio = d['url'], d['precio']
+    # Con versión propia en `lang` (tienda internacional), su landing y su precio.
+    url, precio = url_producto(d, lang), precio_producto(d, lang)
     etiqueta, cta = COPY_BANNER[lang]
     return (
         '<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6">'
