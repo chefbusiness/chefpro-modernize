@@ -67,3 +67,14 @@ Hueco anterior al de la v2.1:
 - F1 del piloto EN: 2,8 M.
 - ES v2.1: 1,7 M (casilla «v2.x ES» de la rotación).
 - F2-EN: en curso; tope 1,8 M, y es probable que lo pase.
+
+## Actualización de la noche (sesión Claude Code)
+
+- **Nombre nuevo del producto:** «**Food Cost Kit Pro**», con slug y productId `food-cost-templates`. Los datos de SEO mandan; John lo aprobó. Nombres de las plantillas por intención de búsqueda en SPEC D9 bis.
+- **Stripe ✅:** `prod_VJvvfTWWWi4R4A`, $19 USD; Payment Link `https://buy.stripe.com/bJecMYa8AgIS9fhcbz6oo1y`, con la redirección verificada.
+- **Netlify ✅:** env var `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT` (builds, all).
+- **Simplificación de John:**
+  - La F3 es una RÉPLICA de la landing ES con los pagos que ya existen, y lo único que se reconstruye son los ficheros.
+  - Nada de fiscalidad extranjera ni monedas locales.
+  - Los términos y condiciones EN quedan pendientes y no bloquean.
+  - Banners del blog, spokes y catálogo: aplazados.

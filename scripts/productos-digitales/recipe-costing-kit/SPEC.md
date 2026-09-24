@@ -414,6 +414,12 @@ Memoria: `feedback_tienda-en-sin-complicar-fiscalidad`.
 - Claude da de alta `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT` en Netlify y regenera `payment-links.ts` / `product-prices.ts`.
 - ⚠️ Si el link sale en EUR: `product-prices.ts` con `eur`, y la landing y el hub EN muestran «€» en lugar de «$» (hay que parametrizarlo en la F3).
 
+**✅ HECHO (24-sep, noche):**
+- John creó el producto «Food Cost Kit Pro»: `prod_VJvvfTWWWi4R4A`, **$19.00 USD** pago único.
+- Payment Link `plink_1UJI5I4CcdRGidmEPvaCeZig` → `https://buy.stripe.com/bJecMYa8AgIS9fhcbz6oo1y`, activo y con la redirección a `/en/digital-products/food-cost-templates/access?session_id={CHECKOUT_SESSION_ID}` (verificado con la CLI de Stripe).
+- Env var `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT` creada en Netlify: scope `builds` y contexto `all`, igual que la del ES.
+- En la F3 falta: `stripeEnvKey` en la ficha EN → `sync-payment-links.py` y `sync-product-prices.py` (`usd: 19`).
+
 **Tareas pendientes que no bloquean el lanzamiento:**
 - condiciones de compra EN (`/en/terminos` solo cubre el SaaS);
 - `PURCHASE_VALIDATION=strict`;
