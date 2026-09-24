@@ -69,6 +69,9 @@ export default defineConfig({
           // de NOWPayments (/pago-cripto?o=<pedido>). URL privada de dinero, ya
           // noindex en el HTML; fuera también del sitemap.
           path === '/pago-cripto' ||
+          // Su gemela de la tienda EN (2026-09-24, Food Cost Kit Pro): misma página
+          // traducida, a la que crypto-checkout.ts manda los productos con lang 'en'.
+          path === '/en/crypto-payment' ||
           // '/admin' o '/admin/...' — NO startsWith('/admin') a secas, que
           // excluiría por error futuras rutas tipo /administracion-... (BAJA
           // del revisor adversarial de Fase 6).
