@@ -187,6 +187,13 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 (programar el 29-sep, tras el de la Chocolatería del 24-oct). Consumo total 2,39 M / 2,5 M. Hub reordenado y LIVE en `8b3fe17`
 (novedades primero, Mega Pack último). Handoff: `SESSION_HANDOFF_2026-09-20-taqueria-3-fases.md`.
 
+### ✅ 2026-09-24 (sesión Claude Code en el Mac) — Kit de Escandallos Pro **v2.1 LIVE** (PR #98 → `dd3c128`) + piloto EN en F2
+- Nuevas plantillas **12 Test de Rendimiento** y **13 Lista de Precios**, en ES y EN a la vez (decisión de John del 24-sep). El EN (Recipe Costing Kit Pro) se duplica desde esta v2.1.
+- Detalle: `kit-escandallos-v2_1/INFORME-construccion.md` y `recipe-costing-kit/SPEC.md`.
+- **Correo ES:** `broadcast-kit-escandallos-v2.1-es.html`, prueba enviada a John el 24-sep; **hueco 3-nov 08:00Z**, programable desde el 4-oct.
+- ⚠️ La cola previa sigue pendiente de programar: Chocolatería 24-oct (programable desde hoy; su HTML no está en `emails/`) y Taquería 29-oct (desde el 29-sep).
+- Consumo: F1 del piloto EN 2,8 M; ES v2.1 1,7 M (casilla «v2.x ES»).
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
