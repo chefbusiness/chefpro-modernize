@@ -29,6 +29,18 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Escandallos Pro</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 13 plantillas Excel + 2 bonus:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-09-24): gemelo de kit-escandallos, producto independiente con su propio
+  // acceso. `lang: 'en'` elige los textos fijos del email (netlify/shared/email-i18n.ts) y la
+  // página de estado cripto /en/crypto-payment (crypto-checkout.ts); precio en USD
+  // (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'food-cost-templates': {
+    accessPath: '/en/digital-products/food-cost-templates/access',
+    emailSubject: 'Your access to Food Cost Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Food Cost Kit Pro</strong> is ready. Click the button to open your dashboard and download the 13 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'pack-appcc': {
     accessPath: '/pack-appcc-access',
     emailSubject: 'Tu acceso al Pack de Plantillas APPCC',

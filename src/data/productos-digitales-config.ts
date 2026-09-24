@@ -43,6 +43,10 @@ export interface ProductDigitalConfig {
   emailBodyResend: string;
   /** Map of download key → /dl/... path (relative to /public). Empty for env-var-backed products. */
   files: Record<string, string>;
+  /** Store language (international store, 2026-09-24). Absent = 'es'. Must match `lang` in
+   *  PRODUCTS of verify-purchase.ts / resend-access.ts: it picks the email's fixed texts
+   *  (netlify/shared/email-i18n.ts) and the crypto status page. */
+  lang?: 'es' | 'en';
 }
 
 export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
@@ -86,6 +90,37 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'lista-precios': '/dl/kit-escandallos/13-lista-precios-ingredientes.xlsx',
       'bonus-mermas': '/dl/kit-escandallos/BONUS-mermas-inventario.xlsx',
     },
+  },
+  // International store (EN, 2026-09-24): twin of kit-escandallos, independent product.
+  'food-cost-templates': {
+    id: 'food-cost-templates',
+    name: 'Food Cost Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/food-cost-templates/access',
+    emailSubject: 'Your access to Food Cost Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Food Cost Kit Pro</strong> is ready. Click the button to open your dashboard and download the 13 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Food Cost Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 13 Excel templates + 2 bonuses:',
+    files: {
+      'estandar': '/dl/food-cost-templates/01-recipe-cost-card.xlsx',
+      'degustacion': '/dl/food-cost-templates/02-tasting-menu-costing.xlsx',
+      'menu-dia': '/dl/food-cost-templates/03-prix-fixe-set-menu-costing.xlsx',
+      'cocktails': '/dl/food-cost-templates/04-pour-cost-calculator.xlsx',
+      'pasteleria': '/dl/food-cost-templates/05-bakery-cake-pricing.xlsx',
+      'catering': '/dl/food-cost-templates/06-catering-pricing-quote.xlsx',
+      'cafeteria': '/dl/food-cost-templates/07-cafe-brunch-costing.xlsx',
+      'food-truck': '/dl/food-cost-templates/08-food-truck-pricing-break-even.xlsx',
+      'mermas': '/dl/food-cost-templates/09-food-waste-log.xlsx',
+      'calculadora-pvp': '/dl/food-cost-templates/10-menu-pricing-calculator.xlsx',
+      'dashboard': '/dl/food-cost-templates/11-food-cost-percentage-tracker.xlsx',
+      'test-rendimiento': '/dl/food-cost-templates/12-yield-test.xlsx',
+      'lista-precios': '/dl/food-cost-templates/13-ingredient-price-tracker.xlsx',
+      'bonus-mermas': '/dl/food-cost-templates/BONUS-actual-vs-theoretical-food-cost.xlsx',
+      'bonus-guia': '/dl/food-cost-templates/BONUS-reduce-food-cost-30-days.pdf',
+    },
+    lang: 'en',
   },
   'pack-appcc': {
     id: 'pack-appcc',
