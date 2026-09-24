@@ -284,7 +284,21 @@ class TextoVisible(HTMLParser):
 RESTOS_ES = [' para ', ' con ', ' los ', ' las ', ' del ', ' una ', 'Comprar', 'COMPRAR', 'Garantía', 'Garantia',
              'escandallo', 'Escandallo', 'Productos Digitales', 'Preguntas', 'Reenviar', 'ñ', 'á', 'é', 'í', 'ó', 'ú', '¿', '¡']
 # Nombres de idioma que la plantilla enseña a propósito en su lengua (píldoras «Disponible en 7 idiomas»).
-EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederlands']
+EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederlands',
+           # Nombres propios de ciudad (enlaces pSEO del pie en todos los idiomas).
+           'Bogotá', 'Medellín',
+           # Marca propia de un proveedor (caviar Riofrío), citada en la ficha de un producto.
+           'Riofrío']
+# La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
+# «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
+# tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
+NATIVOS: dict[str, set[str]] = {
+    'fr': {'é'},
+    'de': {'é'},  # «Café» es alemán estándar
+    'it': {' con ', ' del ', ' una ', 'é'},
+    'pt': {' para ', 'Garantia', 'á', 'é', 'í', 'ó', 'ú'},
+    'nl': {'é'},
+}
 NO_LATINOS = re.compile(r'[Ѐ-ӿ֐-׿؀-ۿ฀-๿぀-ヿ㐀-鿿가-힯]')
 
 
@@ -292,7 +306,7 @@ def contexto(txt: str, i: int, n: int = 50) -> str:
     return txt[max(0, i - n):i + n].replace('\n', ' ')
 
 
-def revisar_texto(tag: str, html: str) -> None:
+def revisar_texto(tag: str, html: str, lang: str = 'en') -> None:
     p = TextoVisible()
     p.feed(html)
     txt = p.texto()
@@ -302,6 +316,8 @@ def revisar_texto(tag: str, html: str) -> None:
     if '€' in limpio:
         mal(f'{tag}: «€» en el texto visible → …{contexto(limpio, limpio.index("€"))}…')
     for w in RESTOS_ES:
+        if w in NATIVOS.get(lang, set()):
+            continue
         if w in limpio:
             mal(f'{tag}: resto de español {w!r} → …{contexto(limpio, limpio.index(w))}…')
             break
@@ -343,7 +359,7 @@ def comprobar_par(base: str, tag: str, lang: str, ruta: str, ruta_es: str) -> No
             mal(f'{tag}: el gemelo ES {ruta_es} no declara hreflang {lang}={PROD + ruta} (tiene {h_es.get(lang)})')
         else:
             bien(f'{tag}: hreflang recíproco {lang}↔es')
-    revisar_texto(tag, html)
+    revisar_texto(tag, html, lang)
 
 
 WA_FLOTANTE = re.compile(r'<a[^>]*href="https://wa\.me/34744717942[^"]*"[^>]*class="[^"]*fixed bottom[^"]*"', re.S)
@@ -381,7 +397,7 @@ def comprobar_hubs(base: str, tiendas: dict[str, dict]) -> None:
         if n_wa != 1:
             mal(f'{tag}: {n_wa} botones flotantes de WhatsApp (esperado 1)')
         if lg != 'es':
-            revisar_texto(tag, html)
+            revisar_texto(tag, html, lg)
 
 
 def red(base: str) -> None:
