@@ -7,7 +7,7 @@
 //   · D3: $19, pago único. D4: anclas como en ES, en USD (priceOld €49 → $59; bonos €27 → $39 y
 //     €19 → $29, escalón $…9 por encima del cambio). Derivado: bonos $68 · total $127 ·
 //     ahorro $40 · descuento 1 − 19/59 = 67,8 % → «-67%» (redondeo hacia abajo, como el ES: 75,5 % → «-75%»).
-//   · Capa comercial honesta (TIENDA §3.5): SIN testimonials, reviews ni aggregateRating.
+//   · Sin reviews ni aggregateRating en el JSON-LD. Testimonios: los del ES traducidos (John, 25-sep).
 //   · D12 (benchmarks), D16 (solo Microsoft Excel), D18 (licencia), D15 (menu engineering solo
 //     como paso básico de la guía).
 //   · ogImage: la OG del ES (og-kit-escandallos.jpg) lleva texto en español incrustado; la EN es
@@ -325,7 +325,25 @@ const data: KitExcelData = {
     ctaLabel: 'YES, I WANT THE KIT — $19',
   },
 
-  // testimonials: OMITIDO (capa comercial honesta: sin compradores EN todavía).
+  // Testimonios: traducción fiel de los del ES (decisión de John, 25-sep-2026). Son del Kit de
+  // Escandallos Pro, la edición española de este kit: por eso conservan sus nombres, negocios,
+  // centilitros y euros, y el subtítulo lo dice. Solo se pintan: NO alimentan el JSON-LD.
+  testimonials: {
+    subtitle:
+      'Hospitality professionals who already keep their food cost under control with Kit de Escandallos Pro, the Spanish edition of this kit',
+    items: [
+      { name: 'Alejandro Ruiz', role: 'Head Chef, Restaurante Alma', text: 'I used to cost my recipes in a notebook. With these templates I know the food cost of every dish down to the cent. I brought it down from 35% to 28% in two months.', avatar: '/avatars/chef-avatar-1.jpg' },
+      { name: 'María José Pérez', role: 'Director of Operations, Grupo MJP', text: 'I run 4 restaurants, and these templates let me standardize recipe costing across all of them. The monthly dashboard is what I use most — I can see the trend at a glance.', avatar: '/avatars/avatar-2.jpg' },
+      { name: 'Tomás Herrero', role: 'Owner, Tapería El Rincón', text: 'Nobody taught me recipe costing in culinary school. With the kit I just enter ingredients and prices, and the spreadsheet tells me exactly what to charge for each dish.', avatar: '/avatars/avatar-3.jpg' },
+      { name: 'Lucía Fernández', role: 'Pastry Chef, Obrador La Dulce', text: 'The bakery template accounts for the waste on every ingredient. I found out I was losing 12% of my chocolate because I wasn\'t accounting for tempering loss properly.', avatar: '/avatars/avatar-4.jpg' },
+      { name: 'Fernando Navarro', role: 'Catering Director, Banquetes FN', text: 'The catering template with per-guest pricing has changed my life. I now put together professional quotes in 10 minutes. It used to take me the whole morning.', avatar: '/avatars/avatar-5.jpg' },
+      { name: 'Elena Molina', role: 'Bartender, Cóctel & Co', text: 'The cocktail template with measures in cl is perfect. I worked out that my premium gin and tonic has a pour cost of 16% — much better than I thought.', avatar: '/avatars/avatar-6.jpg' },
+      { name: 'Antonio Delgado', role: 'Restaurant Consultant', text: 'I use the kit with all my consulting clients. It\'s the most practical tool I\'ve found for teaching cost control. I recommend it to everyone in the industry.', avatar: '/avatars/chef-avatar-5.jpg' },
+      { name: 'Gonzalo Romero', role: 'Manager, Cafetería Central', text: 'The café template helped me discover that my avocado toast had a food cost of 42%. I adjusted the recipe and now it\'s at 27%. The kit pays for itself.', avatar: '/avatars/avatar-8.jpg' },
+      { name: 'Pablo Soto', role: 'Owner, Food Truck Street Bites', text: 'With the food truck costing template I worked out that my best-selling smash burger was leaving me only 1.20 euros of margin. I reworked the recipe and now it\'s 2.80 euros. Information is power.', avatar: '/avatars/avatar-7.jpg' },
+      { name: 'Sergio Vega', role: 'Purchasing Manager, Hotel Panorama', text: 'Tracking waste helped me negotiate better with suppliers. When I show them real waste data by category, I get better prices. An essential tool.', avatar: '/avatars/avatar-1.jpg' },
+    ],
+  },
 
   pricing: {
     priceOld: '$59',
