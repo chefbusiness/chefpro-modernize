@@ -7,6 +7,9 @@ en el mismo scratchpad.
 
 > **Estado: tras la revisión R1** (§7). Las cifras de §2-§5 son ya las vigentes después de R1. La construcción
 > inicial usaba un despiece estadounidense (merma del solomillo 36 %); R1 lo sustituyó (CH-01).
+>
+> **Publicación (24-sep, §8):** `--real` ejecutado en la rama `feat/kit-escandallos-v2-1` (worktree), con la fila
+> «Raciones por pieza» (CH-12) añadida antes; capa web ES y gates estáticos en §8. Merge y gates LIVE: orquestador.
 
 ## 1. Qué se ha hecho
 
@@ -66,7 +69,7 @@ Delicatessen, Cárnicas Ismael, Gastronomía Rentable).
 | Factor de coste | 1,3079 |
 | **Merma % para tu escandallo** | **23,5 %** (0,235437), dentro de «Carne roja» 15-25 % |
 | Porción de 200 g | 7,455 € |
-| Raciones por pieza (línea de Instrucciones) | 2,100 × 1.000 ÷ 200 = 10,5 |
+| **Raciones por pieza** (fila 38, calculada, hacia abajo; §8) | ⌊2,100 × 1.000 ÷ 200⌋ = **10** |
 
 ### Test de cocción
 
@@ -207,8 +210,8 @@ Resultados de la última pasada, tras R1.
 6. **Sin revisión visual en Excel ni LibreOffice** (restricción térmica, sin navegador). Pendiente de mirar: alturas
    de filas con notas combinadas y de las «Notas» del 13, autoajuste de las Instrucciones y vista previa de impresión
    (12 en vertical, 13 hasta la columna L).
-7. **Pendiente de John:** la fila calculada «Raciones que salen de la pieza» (R1 CH-12). Hoy va como línea de
-   Instrucciones con la cuenta.
+7. ~~Pendiente de John: la fila calculada «Raciones que salen de la pieza» (R1 CH-12).~~ **Resuelto en la
+   publicación** (decisión de Claude, §8): fila 38 «Raciones por pieza».
 8. **Fuera de este encargo** (PR de publicación, SPEC §2.0):
    - ejecutar `main.py --real --scratch <carpeta>`;
    - `kit-escandallos` en `EXCLUIDOS` de `postprocess-transversal.py`;
@@ -254,3 +257,66 @@ Además, durante R1:
 **Verificaciones tras R1** (detalle en §5): pycel 0 errores en 2.799 fórmulas · 12 coherente con 01 y 08 · 13 con
 alertas correctas, 147/156 + 8 avisadas + 1 excluida · rango libre OK · censo 0 defectos · paridad solo con los cambios
 previstos · forma OK · idempotencia 0 diferencias (dry-run y `--real` simulado).
+
+## 8. Publicación (sesión Claude Code, 24-sep-2026)
+
+Rama `feat/kit-escandallos-v2-1`, en un **worktree** aparte (otra sesión usaba el árbol principal). Todo en serie;
+CPU 42-50 °C. Sin `astro build` ni navegador: el build lo hace Netlify en el deploy preview.
+
+**Paso 0 · Raciones por pieza (R1 CH-12, decisión de Claude).** `nuevas.py`: fila 38 de «Test de despiece»,
+`=IFERROR(ROUNDDOWN(ROUND(C29*C11/C36,6),0),"")` (formato `#,##0`, bloqueada como el resto de calculadas). pycel
+evalúa `ROUNDDOWN` (probado aparte, también el `""` con porción vacía). El `ROUND(…,6)` previo evita que la coma
+flotante deje 9,9999999 y reste una ración. Ejemplo: **10** raciones (10,5 → hacia abajo). La línea de Instrucciones
+ahora cita la fila («RACIONES POR PIEZA: … En el ejemplo, los 2,100 kg útiles dan 10 raciones de 200 g (sobran
+100 g)…»). `DESP['raciones'] = 'C38'`; `raciones_python()` redondea igual que la hoja y `verificar.py` compara pycel
+con Python. `verificar.py` gana `--pruebas` (sin él, tras `--real` las copias de prueba caerían en
+`astro-site/public/dl/v2_1-pruebas/`). Dry-run y `verificar.py`: **OK**, 0 diferencias de idempotencia.
+
+**Paso 1 · `--real`.** `ROOT` se resuelve desde `__file__` (main.py y nuevas.py), así que escribe en el `dl/` del
+worktree; comprobado antes de ejecutar. `KIT_ESCANDALLOS_APPLY=1 main.py --real --scratch <scratchpad>/v21pub`:
+respaldo en `<scratchpad>/v21pub/kit-escandallos.bak-20260924-172455`, merma 0,235437, idempotencia 0 diferencias,
+`inject_cache` 14/14 con `fallos_pycel=0`.
+- `dl/kit-escandallos/`: **14 xlsx + el PDF** (15 ficheros). PDF del bono con el **mismo sha256** que antes
+  (`c7c26022…66ad2`): no se añade al commit.
+- `verificar.py --carpeta dl/kit-escandallos --publicados <respaldo> --pruebas <scratchpad>`: **VERIFICACIÓN OK**.
+  pycel 0 errores en 2.800 fórmulas (una más que en §5: la fila 38); raciones pycel 10 = Python 10; 01 v2.1 J5
+  7,4549 € vs 12 7,4552 €; 08 H5 = 0, J5 1,71 € vs test 1,7074 €; 13: 147/156 + 8 avisadas; rango libre OK;
+  paridad 01-08 solo con los cambios previstos; forma OK.
+- `censo-entregables.py --only kit-escandallos --fail`: **0 defectos** (15 ficheros: 14 xlsx + 1 pdf).
+
+**Paso 2 · Capa web ES.**
+
+| Fichero | Cambio |
+|---|---|
+| `netlify/functions/get-download-urls.ts` | claves `test-rendimiento` y `lista-precios` → 12 y 13 |
+| `src/pages/KitEscandallosDashboard.tsx` | 2 tarjetas (`Scale`, `ReceiptText`, de lucide-react 0.462.0) + «Tus 13 plantillas + 2 bonus» / «13 Plantillas + 2 Bonus» |
+| `astro-site/src/data/productos/kits/kit-escandallos.ts` | «11» → «13» en seo, schema, hero, grid (`countGold`), bonus, cta y `bonusTotalLabel`; 2 tarjetas (`Scale`, `Euro`, existentes en `Icon.astro`); FAQ nueva «¿Qué aportan el Test de Rendimiento y la Lista de Precios?» en on-page y en el FAQPage (dice que la lista NO alimenta sola las fichas: Pegado especial → Valores); `updateNote` «Versión 2.1 · septiembre 2026» |
+| Hubs (`ProductosDigitalesHubPage.astro` + 6 `DigitalProductsHubPage*.astro`) | tarjeta del kit: «11» → «13» en la descripción y en la 1.ª feature, en su idioma. Nada más |
+| `netlify/functions/verify-purchase.ts`, `resend-access.ts`, `src/data/productos-digitales-config.ts` | `emailBody` «las 13 plantillas Excel + 2 bonus»; el espejo también con las 2 claves nuevas |
+| `astro-site/src/data/productos/guias/guia-food-cost-ingenieria-menu.ts` | FAQ «El Kit son 13 plantillas…» |
+| `src/data/productos-changelog.ts` | entrada 2.1 (8 líneas, sin cifras que sincronizar) y `version: '2.1'` |
+| `scripts/productos-digitales/postprocess-transversal.py` | `kit-escandallos` en `EXCLUIDOS` |
+| `scripts/productos-digitales/tienda-gate.py` | `--esperadas <ruta>[,<ruta>]` para `--es-identico`: diff del texto visible sin fallar; ruta desconocida = fallo; sin `--es-identico` = error de uso. Probado con HTTP simulado |
+
+`products-catalog.ts` no cita el número: sin tocar. SPA muerta sin tocar (no se construye): `src/pages/KitEscandallos.tsx`,
+`src/components/kit-escandallos/*`, `src/pages/ProductosDigitales.tsx` (hub de la SPA) y `netlify/edge-functions/og-meta.ts`.
+
+**Paso 3 · Gates estáticos.**
+
+| Gate | Resultado |
+|---|---|
+| grep «11 (plantillas\|templates\|…)» en `src`, `astro-site/src`, `netlify` | **0** del kit fuera de la SPA muerta. Quedan los de otros productos (Kit de Tareas Restaurante Creativo, kits de chocolatería, changelog de los kits de tareas). OJO: el grep no ve «11 Excel templates/‑Vorlagen/‑sjablonen» (EN, DE, NL); esos se encontraron leyendo la tarjeta y están corregidos |
+| `@astrojs/compiler` + esbuild, 7 `.astro` | compilan; 3 avisos `is:inline` preexistentes (idénticos en `HEAD`) |
+| esbuild, 8 `.ts/.tsx` | parsean |
+| `gate-flujo-postpago.py --offline --only kit-escandallos` (con los xlsx en el índice) | **0 fallos**: 15 ficheros, 15 tarjetas; 2 avisos propios de `--offline` (secciones D y E) |
+| `tienda-gate.py` (estático) | **verde** |
+
+**Sin verificar (necesita build/preview, lo hace el orquestador):** `astro build` (tipos incluidos), render de la
+landing, del dashboard y de los hubs; `gate-flujo-postpago.py --base <preview>` (sección B: los `/dl/` en vivo y sus
+tamaños); `tienda-gate.py --es-identico --base <preview> --esperadas /kit-escandallos`; revisión visual de la fila 38
+en Excel/LibreOffice. Broadcast ES en la cola de 5 días: pendiente (fuera de este encargo).
+
+**Aviso de copy (no tocado):** la FAQ de la Guía Food Cost termina «si ya lo tienes, no compras nada repetido». La
+Guía incluye un xlsx «Rendimiento y Mermas por Producto» (test de rendimiento y merma de cocción) y el Kit v2.1 trae
+ahora el suyo (plantilla 12): la frase merece revisión.
+

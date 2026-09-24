@@ -35,6 +35,9 @@ MODOS
     /kit-plan-financiero) del preview contra https://aichef.pro, normalizando los hashes
     de /_astro/*.js|css, el id de scope de Astro (data-astro-cid-*) y el host del preview.
     Sale 1 ante cualquier diferencia y enseña el contexto de la primera.
+    --esperadas <ruta>[,<ruta>] (p. ej. /kit-escandallos en un PR que cambia ese producto):
+    para esas rutas NO falla; imprime el diff del TEXTO visible (producción → preview) para
+    revisarlo a ojo. El resto de rutas sigue exigiendo identidad byte a byte.
     ⚠️ Un preview con otras env vars de build que producción (CRYPTO_PRODUCTS, enlaces de
     Stripe) da diferencias que NO son de la plantilla: leer el contexto antes de culpar.
 
@@ -42,10 +45,12 @@ Uso:
     python3 scripts/productos-digitales/tienda-gate.py
     python3 scripts/productos-digitales/tienda-gate.py --base https://deploy-preview-N--aichefpro.netlify.app
     python3 scripts/productos-digitales/tienda-gate.py --es-identico --base https://deploy-preview-N--aichefpro.netlify.app
+    python3 scripts/productos-digitales/tienda-gate.py --es-identico --base <preview> --esperadas /kit-escandallos
 """
 from __future__ import annotations
 
 import argparse
+import difflib
 import importlib.util
 import re
 import time
@@ -441,8 +446,18 @@ def normalizar(html: str, base: str) -> str:
     return html
 
 
-def es_identico(base: str) -> None:
-    iguales = 0
+def fragmentos_texto(html: str) -> list[str]:
+    """Texto visible troceado por nodo (sin <script>/<style>): la unidad del diff de --esperadas."""
+    p = TextoVisible()
+    p.feed(html)
+    p.close()
+    return [t for t in (re.sub(r'\s+', ' ', x).strip() for x in p.partes) if t]
+
+
+def es_identico(base: str, esperadas: frozenset[str] = frozenset()) -> None:
+    iguales = cambiadas = 0
+    for ruta in sorted(esperadas - set(KITEXCEL_ES)):
+        mal(f'--esperadas {ruta}: no es una de las landings KitExcel ES ({", ".join(KITEXCEL_ES)})')
     for ruta in KITEXCEL_ES:
         st_p, prev = get(base.rstrip('/') + ruta)
         st_l, live = get(PROD + ruta)
@@ -452,13 +467,27 @@ def es_identico(base: str) -> None:
         a, b = normalizar(prev, base), normalizar(live, PROD)
         if a == b:
             iguales += 1
-            bien(f'{ruta}: byte a byte idéntico ({len(a)} bytes normalizados)')
+            bien(f'{ruta}: byte a byte idéntico ({len(a)} bytes normalizados)'
+                 + (' — ⚠️ estaba en --esperadas y no cambia' if ruta in esperadas else ''))
+            continue
+        if ruta in esperadas:
+            # Cambio previsto (p. ej. el producto que actualiza el PR): se enseña el diff de
+            # TEXTO para revisarlo, sin fallar. El HTML/JSON-LD no entra: el texto es lo que se lee.
+            cambiadas += 1
+            diff = list(difflib.unified_diff(fragmentos_texto(b), fragmentos_texto(a),
+                                             f'producción{ruta}', f'preview{ruta}',
+                                             lineterm='', n=1))
+            print(f'ℹ️  {ruta}: cambio ESPERADO (no falla) — diff del texto visible, '
+                  f'{sum(1 for x in diff if x[:1] in "+-" and x[:3] not in ("+++", "---"))} líneas:')
+            for linea in diff or ['   (el texto visible es idéntico: el cambio está en el HTML o el JSON-LD)']:
+                print('   ' + linea)
             continue
         i = next((k for k in range(min(len(a), len(b))) if a[k] != b[k]), min(len(a), len(b)))
         mal(f'{ruta}: DIFIERE en el byte {i} (preview {len(a)} / producción {len(b)} bytes)\n'
             f'     preview   : …{a[max(0, i - 120):i + 120]!r}…\n'
             f'     producción: …{b[max(0, i - 120):i + 120]!r}…')
-    print(f'\n{iguales}/{len(KITEXCEL_ES)} landings ES idénticas')
+    print(f'\n{iguales}/{len(KITEXCEL_ES)} landings ES idénticas'
+          + (f' · {cambiadas} con cambio esperado (--esperadas)' if esperadas else ''))
 
 
 # ------------------------------------------------------------------ main
@@ -468,11 +497,17 @@ def main() -> int:
     ap.add_argument('--base', help='URL del deploy a comprobar (preview o producción)')
     ap.add_argument('--es-identico', action='store_true',
                     help='compara las 5 landings ES KitExcel del --base contra producción')
+    ap.add_argument('--esperadas', default='',
+                    help='con --es-identico: rutas (separadas por comas, p. ej. /kit-escandallos) '
+                         'cuyo cambio es el del PR; imprime su diff de texto en vez de fallar')
     a = ap.parse_args()
+    esperadas = frozenset(r.strip().rstrip('/') or '/' for r in a.esperadas.split(',') if r.strip())
+    if esperadas and not a.es_identico:
+        ap.error('--esperadas solo vale con --es-identico')
     if a.es_identico:
         if not a.base:
             ap.error('--es-identico necesita --base <preview>')
-        es_identico(a.base)
+        es_identico(a.base, esperadas)
     elif a.base:
         red(a.base)
     else:

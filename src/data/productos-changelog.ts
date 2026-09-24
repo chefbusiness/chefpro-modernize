@@ -319,9 +319,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'kit-escandallos': {
-    version: '2.0',
-    updated: '2026-08-22',
+    version: '2.1',
+    updated: '2026-09-24',
     entries: [
+      {
+        version: '2.1',
+        date: '2026-09-24',
+        title: 'Test de rendimiento y lista de precios',
+        changes: [
+          'Nueva plantilla 12, Test de Rendimiento: pesa una pieza entera y lo que sale al limpiarla (despiece), o una elaboración antes y después de cocinarla (cocción), y obtén la merma real que llevas a tu escandallo, con el valor de los subproductos ya descontado. Calcula también el coste por kg útil, las raciones que salen de la pieza y un factor de coste para repercutir una subida del proveedor sin repetir el test.',
+          'Nueva plantilla 13, Lista de Precios de Ingredientes: los ingredientes de todas las fichas del kit en una sola hoja, con proveedor, formato de compra y precio por kg, litro o unidad, y un aviso en rojo cuando un ingrediente sube por encima del umbral que elijas. No actualiza sola las fichas, porque cada plantilla es un archivo independiente: el precio nuevo se copia a cada ficha con Pegado especial → Valores.',
+          'Conversiones: filas libres debajo de la tabla en las fichas de escandallo. Una conversión que añadas ahí (una lata, una caja, un manojo) ya la encuentran las fórmulas; antes, lo que se escribía debajo de la tabla no se leía.',
+          'Escandallo Estándar: la merma del solomillo del ejemplo deja de ser la genérica de «Carne roja» y pasa a ser la que sale del Test de Rendimiento, con la pieza entera y el cordón aprovechado. El coste del plato y el PVP sugerido del ejemplo suben ligeramente.',
+          'Food Truck: la carne picada de la smash burger lleva ahora un 0 % de merma, porque se compra lista y la ficha anota su peso en crudo; lo que pierde en la plancha se mide con el Test de Cocción. El coste por ración del ejemplo baja.',
+          'Menú del Día: la rotación semanal muestra el food cost objetivo en su propia celda, y el aviso en rojo de cada día se compara con ella.',
+          'Categoría corregida en algunos ingredientes de ejemplo (salsas, coliflor, hinojo). Ningún coste cambia.',
+          'Número de versión actualizado a 2.1 en la hoja de instrucciones de cada fichero.',
+        ],
+      },
       {
         version: '2.0',
         date: '2026-08-22',

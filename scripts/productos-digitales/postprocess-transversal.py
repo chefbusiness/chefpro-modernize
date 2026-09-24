@@ -76,8 +76,10 @@ SCRATCH = os.environ.get(
     '/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/'
     'f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad')
 
-#: Producto ya migrado a v2.0 con su propio post-proceso: intocable aquí.
-EXCLUIDOS = {'kit-tareas-pasteleria'}
+#: Productos ya migrados a v2.x con su propio post-proceso: intocables aquí (un `all`
+#: los devolvería a la v1.1). kit-escandallos: v2.1 desde el 24-sep-2026
+#: (`kit-escandallos-v2_1/main.py`, SPEC recipe-costing-kit §2.0).
+EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'
