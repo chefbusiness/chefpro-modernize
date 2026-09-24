@@ -93,8 +93,11 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
    `PlanNegocioLandingPage` y `ProPromptsEbookPage` ganan `lang` + diccionario de interfaz `astro-site/src/i18n/tienda/<lang>.json`.
    Datos EN en `astro-site/src/data/productos-en/<linea>/<slug>.ts` con **el mismo tipo** que los ES.
    **Condición dura: el HTML de las landings ES sale byte a byte idéntico** tras el cambio.
-5. **Capa comercial honesta:** en EN, **sin testimonios, sin ratings y sin `aggregateRating`** hasta que haya compradores
-   EN reales. Las reseñas ES no se traducen ni se reutilizan. Garantía y FAQ, sí.
+5. **Testimonios y reseñas (REVISADO por John, 25-sep-2026):** la landing de otro idioma replica la del ES también
+   en la sección de testimonios: se TRADUCEN los del ES tal cual (nombres, negocios y cifras de origen), con el
+   subtítulo diciendo que son de la edición española. Sin `aggregateRating` ni `review` en el JSON-LD. La tienda es
+   UNA, en España: quien compra desde EE. UU. o Reino Unido le compra a aichef.pro en España («no estoy montando una
+   tienda en Estados Unidos»).
 6. **Backend con idioma:** asunto/cuerpo del email y el envoltorio fijo de `sendAccessEmail()` por idioma;
    `ProductAccessGate.tsx` y los dashboards con `copy`/`lang`; `product-prices.ts` → `{eur?, usd?}` y
    `crypto-checkout.ts` con la moneda del producto (regenerar con `sync-product-prices.py` / `sync-payment-links.py`).
