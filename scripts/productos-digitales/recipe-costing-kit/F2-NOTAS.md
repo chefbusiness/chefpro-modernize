@@ -511,3 +511,32 @@ Ficheros EN finales (nombre → título interior):
 Pendiente (orquestador / F3): `--real` con `FOOD_COST_KIT_APPLY=1` → `dl/food-cost-templates/`, `food-cost-templates`
 en `EXCLUIDOS` de `postprocess-transversal.py` en ese mismo commit, claves de `get-download-urls.ts` con los 15
 nombres nuevos, y la landing/dashboard EN con los títulos de la tabla D9 bis y «23 pages».
+
+## F3-A · capa de producto EN (sesión Claude Code, 24/25-sep)
+
+> El Mac se apagó a mitad de la F3-A (sin batería). Lo hecho antes del apagón se reconstruyó en `bbd4b2a0`
+> (ficha, landing, access, library, dashboard, island, 4 componentes con `lang`, CryptoPayButton EN, hreflang
+> ES↔EN, `tienda.ts` en.vivo). Esta sesión cerró el resto. Todo en serie, `istats` antes de cada script
+> (51-58 °C), sin builds ni navegador.
+
+**Qué se hizo** (commits `c3999f7b`, `656ac9a3`, `067579cb`, `29137850`):
+- `/en/crypto-payment` = copia traducida de `/pago-cripto` (mismos 11 estados y mismos `data-*` en el mismo orden;
+  enlace «product page» → `/en/digital-products/<productId>`); fuera del sitemap; rastreable (lleva `noindex`).
+- Entrada `food-cost-templates` con `lang: 'en'` en `zona-app.ts`, `verify-purchase.ts`, `resend-access.ts`,
+  `get-download-urls.ts` (15 claves = las del dashboard), `admin-generate-access.ts` (email manual por idioma),
+  `AdminGenerateAccess.tsx` y `productos-digitales-config.ts`. `stripe-webhook`, `nowpayments-ipn`,
+  `crypto-checkout` y `crypto-order-status` no tienen mapa propio (leen `PRODUCTS`, `PAYMENT_LINKS`, `PRODUCT_PRICES`).
+- `payment-links.ts` y `product-prices.ts` regenerados: una línea añadida en cada uno (`bJecMYa8AgIS9fhcbz6oo1y`, `usd: 19`).
+- `miselup-gate.py` (entradas con `lang` ≠ es → cero rastros) y `whatsapp-gate.py` (dashboards anidados exentos).
+
+**Validación estática:** `fase5-generate-zona-app.py --check` verde (150 ficheros; EN omitida) · `tienda-gate.py`
+verde · `gate-flujo-postpago.py --offline` 51 productos / 736 entregables / 0 fallos (EN: 15 ficheros = 15 tarjetas) ·
+`sync-* --check` verdes · `robots-gate.py` verde · `@astrojs/compiler` sin errores en los 8 `.astro` · esbuild en los
+18 `.ts/.tsx` · `tsc` con los mismos 6 errores preexistentes antes y después · emails de los 50 productos ES
+(admin + verify) idénticos byte a byte · CryptoPayButton ES idéntico (6/6) · SaasDiscoveryBanner, LogoBadge,
+WhatsAppProductSupport y ProductChangelog: 107 renders ES idénticos sin prop y con `lang="es"`, cerrados y abiertos.
+
+**Pendiente (F3-B, con deploy preview):** `tienda-gate.py --base` y `--es-identico --esperadas /kit-escandallos`,
+`gate-flujo-postpago.py --base … --crypto-products all --crypto-exclude pro-prompts-ebook`, `miselup-gate`,
+`whatsapp-gate` sobre el `dist` del preview, `datafast-gate`, `nombre-gate`; lastmod de la landing EN en el sitemap
+(hoy caería en `NEW_URLS_LASTMOD`); enlaces entrantes (§3.7); compra de prueba y broadcast EN.
