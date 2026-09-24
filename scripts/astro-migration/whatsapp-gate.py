@@ -19,6 +19,9 @@ Qué verifica sobre el `dist/` (hace falta build reciente):
      PROPIO WhatsAppProductSupport en React dentro de un island `client:only`, así
      que su HTML estático lleva CERO a propósito y pasan `whatsapp={false}`.
      El gate exige que sean exactamente esas y que ninguna otra se quede sin botón.
+     Tiendas por idioma (2026-09-24): sus dashboards van ANIDADOS bajo el hub
+     (`pages/<lang>/<segmento>/<slug>/library.astro` → `<lang>/<segmento>/<slug>/library.html`,
+     p. ej. el de Food Cost Kit Pro) y cuentan igual que los `*-library` de la raíz.
 
   3. El `aria-label` del botón global está traducido (nada de castellano suelto en
      las ramas /en, /fr, /de, /it, /pt, /nl).
@@ -97,9 +100,12 @@ def main() -> int:
             if esperado and m and m.group(1) == TOOLTIP_ES:
                 fallos.append(f'{rel}: aria-label en castellano en la rama /{idioma(rel)}')
 
-    # Las únicas páginas que pueden no traerlo en el HTML son los 44 dashboards.
-    esperadas_sin = {p.name.replace('.astro', '.html')
-                     for p in (ROOT / 'astro-site' / 'src' / 'pages').glob('*-library.astro')}
+    # Las únicas páginas que pueden no traerlo en el HTML son los dashboards: los de la raíz
+    # (`*-library.astro`) y los anidados de las tiendas por idioma (`<lang>/<seg>/<slug>/library.astro`).
+    pages = ROOT / 'astro-site' / 'src' / 'pages'
+    esperadas_sin = {p.name.replace('.astro', '.html') for p in pages.glob('*-library.astro')}
+    esperadas_sin |= {p.relative_to(pages).with_suffix('.html').as_posix()
+                      for p in pages.glob('*/*/*/library.astro')}
     inesperadas = [s for s in sin_boton if s not in esperadas_sin]
     faltan = sorted(esperadas_sin - set(sin_boton))
 
