@@ -58,6 +58,10 @@ const data: KitExcelData = {
         a: 'AP (as purchased) is what you buy; EP (edible portion) is what is left after trimming. Yield % = 100% − trim loss %. The kit preloads typical trim loss for 21 ingredient categories, and the Yield Test measures your own.',
       },
       {
+        q: 'Can I use ounces and pounds — or grams?',
+        a: 'Both. The examples use US customary units (lb, oz, fl oz), and the unit drop-down also has kg, g, L, ml and cl. The bakery template weighs in grams, the way pastry kitchens formulate. Buy in one unit and use another: the Conversions tab does the math, and it never mixes weight and volume.',
+      },
+      {
         q: 'Does it handle case prices and catch weight?',
         a: 'Yes. Enter the price exactly as it appears on the invoice (a 50 lb bag, a 36 x 1 lb case, a 15-dozen case of eggs, a keg) and the Conversions tab turns it into the unit you use in the recipe. Catch-weight items go in lb or kg.',
       },
@@ -83,7 +87,7 @@ const data: KitExcelData = {
       },
       {
         q: 'Can I use it for several locations or with my clients?',
-        a: 'One purchase covers one business with all its locations. You can use the templates with your clients, but not hand them copies: each business buys its own. Culinary schools can ask for a classroom license at info@aichef.pro.',
+        a: 'One purchase covers one business with all its locations. You can use the templates with your clients, but you can\'t hand them copies: each business buys its own. Culinary schools can ask for a classroom license at info@aichef.pro.',
       },
       {
         q: 'Is it a subscription? Are future updates included?',
@@ -154,7 +158,7 @@ const data: KitExcelData = {
       'Every recipe cost card has the columns that matter — ingredient, category, purchase unit, price per unit, quantity, recipe unit, conversion factor, trim loss %, AP quantity and cost — with automatic formulas, preloaded trim-loss rates, a space for the dish photo and a print-ready US Letter layout.',
     fourCols: true,
     templates: [
-      { icon: 'UtensilsCrossed', title: 'Recipe Cost Card & Plate Cost Calculator', desc: "The most complete template for menu dishes. Enter ingredients, quantities and purchase prices — the formulas work out the trim loss, the real cost per portion, food cost % and the suggested menu price from your target margin. And the other way round: type the price already on your menu and the sheet returns your ACTUAL food cost, in red if it's over target. Includes a space for a photo of the plated dish." },
+      { icon: 'UtensilsCrossed', title: 'Recipe Cost Card & Plate Cost Calculator', desc: "The most complete template for à la carte dishes. Enter ingredients, quantities and purchase prices — the formulas work out the trim loss, the real cost per portion, food cost % and the suggested menu price from your target margin. And the other way round: type the price already on your menu and the sheet returns your ACTUAL food cost, in red if it's over target. Includes a space for a photo of the plated dish." },
       { icon: 'ChefHat', title: 'Tasting Menu Costing', desc: 'Built for tasting menus of 5 to 9 courses, with a cost card for each course. The summary sheet adds up the whole menu, works out the overall food cost and suggests the price per guest. Made for fine dining and premium experiences.' },
       { icon: 'ClipboardList', title: 'Prix Fixe & Set Menu Costing', desc: "Complete structure: starter, main, dessert and extras (bread & butter, plus a drink and coffee if they're included). Works out the full cost of the menu and the price you need to keep your margin. Includes a weekly rotation to plan 5 different menus and compare their costs." },
       { icon: 'Wine', title: 'Pour Cost Calculator (Cocktails & Drinks)', desc: 'Pour cost for 4 cocktails with standard US pours in fl oz, cost per ingredient and cost per drink. Set up for a bar pour cost target of 18-24%. The Bottle Sizes tab turns the bottle price on your invoice (750 ml, 1 L, 1.75 L) into a price per liter. Garnish and ice are costed line by line, and a spillage allowance covers over-pouring.' },
@@ -243,7 +247,7 @@ const data: KitExcelData = {
     },
     {
       q: 'Does it work in Google Sheets?',
-      a: 'The kit is built for Microsoft Excel (Windows, Mac and Microsoft 365), and that is where every formula, drop-down and protected cell has been tested. We haven\'t certified it in Google Sheets, so we don\'t promise it. If Excel isn\'t an option for you, email info@aichef.pro before you buy.',
+      a: 'The kit is built for Microsoft Excel on Windows or Mac (including Microsoft 365), and that is where every formula, drop-down and protected cell has been tested. We haven\'t certified it in Google Sheets, so we don\'t promise it. If Excel isn\'t an option for you, email info@aichef.pro before you buy.',
     },
     {
       q: 'Is 30% a typical food cost?',
@@ -251,7 +255,7 @@ const data: KitExcelData = {
     },
     {
       q: 'How do I calculate food cost for a recipe?',
-      a: 'Food cost % = cost per portion ÷ pre-tax menu price. The cost per portion adds up each ingredient (as-purchased quantity × price per unit, after trim loss), plus a Q-factor for seasonings, oil and small losses you don\'t cost line by line, divided by the number of portions. Suggested menu price = cost per portion ÷ target food cost %. The recipe cost card does all of it automatically.',
+      a: 'Food cost % = cost per portion ÷ pre-tax menu price. The cost per portion is the sum of each ingredient (as-purchased quantity × price per unit, after trim loss) plus a Q-factor for seasonings, oil and small losses you don\'t cost line by line, all divided by the number of portions. Suggested menu price = cost per portion ÷ target food cost %. The recipe cost card does all of it automatically.',
     },
     {
       q: 'What is the difference between AP and EP (yield)?',
