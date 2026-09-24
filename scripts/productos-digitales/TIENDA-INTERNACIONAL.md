@@ -11,12 +11,12 @@ handoffs, memorias, commits y PR:
 
 | Tienda | Hub | Estado |
 |---|---|---|
-| Tienda internacional en inglés | `/en/digital-products` | en marcha |
-| Tienda internacional en francés | `/fr/produits-numeriques` | pendiente |
-| Tienda internacional en alemán | `/de/digitale-produkte` | pendiente |
-| Tienda internacional en italiano | `/it/prodotti-digitali` | pendiente |
-| Tienda internacional en portugués | `/pt/produtos-digitais` | pendiente |
-| Tienda internacional en neerlandés | `/nl/digitale-producten` | pendiente |
+| Tienda internacional en inglés | `/en/digital-products` | hub LIVE (PR #95) |
+| Tienda internacional en francés | `/fr/produits-numeriques` | hub LIVE (PR #96) |
+| Tienda internacional en alemán | `/de/digitale-produkte` | hub LIVE (PR #96) |
+| Tienda internacional en italiano | `/it/prodotti-digitali` | hub LIVE (PR #96) |
+| Tienda internacional en portugués | `/pt/produtos-digitais` | hub LIVE (PR #96) |
+| Tienda internacional en neerlandés | `/nl/digitale-producten` | hub LIVE (PR #96) |
 
 Bélgica no tiene idioma propio: la cubren la tienda en neerlandés (Flandes) y la tienda en francés (Valonia y Bruselas).
 Todas nacen igual: **duplicando lo español y traduciéndolo** (§1).
@@ -193,3 +193,16 @@ la F1 de cada producto frente a Etsy/Gumroad.
     DataFast 1, Miselup 0, sitemap con el hub y sin dashboards.
   - Medir el menú a un ancho concreto exige que el viewport CSS lo sea: con `documentElement.style.width` las media
     queries siguen en escritorio (en ese Chrome, 1.653 px CSS con la ventana a 1.375).
+- **2026-09-24 (sesión Claude Code) — hubs de las 7 tiendas LIVE.** El hub EN hecho desde cero (`TiendaHubPage.astro`) se
+  tiró: John exige DUPLICAR lo español (§1). `DigitalProductsHubPage.astro` = copia traducida de `ProductosDigitalesHubPage.astro`
+  (PR #95) y `DigitalProductsHubPage{Fr,De,It,Pt,Nl}.astro` = copias traducidas de esa (PR #96, traducción con bridge.py y Sonnet
+  de respaldo). Tarjetas sin precio ni enlace («Coming soon in <idioma>») hasta que `FAMILIAS` marque `vivo` en ese idioma.
+  Sin estrellas ni 4,9/5 fuera de ES. `hubLocales()`/`hubAlternates()` en `tienda.ts` → hreflang recíproco de los 7 hubs;
+  enlace en menú y pie de cada portada (4 ficheros de navegación); menú completo desde 1.360 px en los 7 idiomas (medido en el
+  Chrome de Windows a 1.362 px: una fila, sin solapes) y 0 desbordes a 360 px en los 6 hubs. `tienda-gate.py --base` cubre ya
+  todas las tiendas activas. Lecciones:
+  - **Los traductores arrastran «ediciones en inglés» del hub EN** a la FAQ de disponibilidad: pasó en IT, PT y NL. Al traducir
+    desde la copia EN, grep del nombre del idioma de origen.
+  - **Una copia por idioma = un cambio de diseño se replica en 7 ficheros.** Es el precio de la regla de John; está anotado en
+    la cabecera de cada componente.
+
