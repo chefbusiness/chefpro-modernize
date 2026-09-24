@@ -364,10 +364,13 @@ que reconstruir es los productos a nivel de archivos. No me complicas la vida».
 4. **Backend:** la entrada `food-cost-templates` con `lang: 'en'` en los registros donde está `kit-escandallos` (zona-app, verify, resend, downloads, admin), con el email de acceso traducido.
 5. **Ficheros:** `aplicar_en.py --real` → `dl/food-cost-templates/`.
 6. **Publicar:** `FAMILIAS.en.vivo = true` (la tarjeta del hub EN pasa sola a viva) y el hreflang ES↔EN.
-7. **Gates** de siempre contra la preview, compra de prueba y broadcast EN (regla de un correo por producto nuevo).
+7. **Enlaces entrantes** (regla global de cero huérfanas; añadido el 24-sep al renombrar). Cambio mecánico, sin reescribir contenido:
+   - **catálogo:** `products-catalog.ts` → `name.en` «Food Cost Kit Pro», `urlByLang.en` y un precio EN $19;
+   - **blog EN:** los 26 banners del blog EN → nombre, URL de la landing EN y $19;
+   - **casos de uso EN:** las ~110 menciones de los spokes (`use-cases-content.en*.ts`) → nombre y enlace EN, y se quitan las funciones que el kit no tiene (M16: importar CSV, coste laboral).
+8. **Gates** de siempre contra la preview, compra de prueba y broadcast EN (regla de un correo por producto nuevo).
 
 **Aplazado como tarea aparte, fuera del lanzamiento:**
-- re-apuntar los 26 banners del blog EN y los spokes de casos de uso a la landing EN, con precio por idioma en el catálogo;
 - condiciones de compra EN;
 - test de Google Sheets.
 
