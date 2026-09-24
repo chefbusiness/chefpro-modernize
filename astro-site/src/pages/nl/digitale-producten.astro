@@ -1,0 +1,32 @@
+---
+// /nl/digitale-producten — HUB de la tienda NL. Envoltorio fino, COPIA del de /en/digital-products
+// (pages/en/digital-products.astro): mismo BaseLayout con las mismas props, SEO en neerlandés, y el
+// componente DigitalProductsHubPageNl, que es la copia traducida de DigitalProductsHubPage (mismo
+// diseño; cualquier cambio en uno se replica en los otros).
+//
+// hreflang recíproco con los demás hubs vivos vía hubLocales()/hubAlternates() de lib/tienda.ts (las
+// añade el integrador al fusionar hub-es/hub-en/hub-nl/hub-de/hub-pt; no se tocan aquí a mano).
+// omitGlobalApp OBLIGATORIO: el SoftwareApplication global del layout lleva ofertas en EUR y un rating
+// (4,8), y en la tienda NL no puede salir ninguno de los dos (tienda-gate.py). Los 3 JSON-LD propios
+// los emite el componente.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DigitalProductsHubPageNl from '../../components/pages/DigitalProductsHubPageNl.astro';
+import { hubLocales, hubAlternates } from '../../lib/tienda';
+
+const lang = 'nl';
+---
+
+<BaseLayout
+  whatsapp={false}
+  title="Digitale Producten voor Restaurants — Sjablonen, Gidsen, AI-Prompts | AI Chef Pro"
+  description="Restaurantsjablonen, Excel-sjablonen voor kostprijsberekening, HACCP-sjablonen, restaurant-e-books en AI-prompts voor chefs, managers en eigenaren. Nederlandse edities binnenkort beschikbaar."
+  keywords="digitale producten voor restaurants, restaurantsjablonen, kostprijsberekening Excel, food cost Excel sjabloon, HACCP sjablonen, restaurant e-books, businessplan sjabloon restaurant, AI-prompts voor restaurants, AI Chef Pro"
+  lang={lang}
+  basePath="/digitale-producten"
+  locales={hubLocales()}
+  alternates={hubAlternates()}
+  ogImage="https://aichef.pro/og-productos-digitales.jpg"
+  omitGlobalApp
+>
+  <DigitalProductsHubPageNl />
+</BaseLayout>

@@ -4,12 +4,12 @@
 // componente DigitalProductsHubPage, que es la copia traducida de ProductosDigitalesHubPage (mismo
 // diseño; cualquier cambio en uno se replica en el otro).
 //
-// hreflang recíproco con el hub ES desde lib/tienda.ts (TIENDAS). omitGlobalApp OBLIGATORIO: el
+// hreflang recíproco entre los 7 hubs vía hubLocales()/hubAlternates() de lib/tienda.ts. omitGlobalApp OBLIGATORIO: el
 // SoftwareApplication global del layout lleva ofertas en EUR y un rating (4,8), y en la tienda EN no
 // puede salir ninguno de los dos (tienda-gate.py). Los 3 JSON-LD propios los emite el componente.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DigitalProductsHubPage from '../../components/pages/DigitalProductsHubPage.astro';
-import { TIENDAS } from '../../lib/tienda';
+import { hubLocales, hubAlternates } from '../../lib/tienda';
 
 const lang = 'en';
 ---
@@ -21,8 +21,8 @@ const lang = 'en';
   keywords="digital products for restaurants, restaurant templates, recipe costing spreadsheet, food cost excel template, HACCP templates, restaurant ebooks, restaurant business plan template, AI prompts for restaurants, AI Chef Pro"
   lang={lang}
   basePath="/digital-products"
-  locales={['es', 'en']}
-  alternates={{ es: TIENDAS.es.hubPath, en: TIENDAS.en.hubPath }}
+  locales={hubLocales()}
+  alternates={hubAlternates()}
   ogImage="https://aichef.pro/og-digital-products-en.jpg"
   omitGlobalApp
 >

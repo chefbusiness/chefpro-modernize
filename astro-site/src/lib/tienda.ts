@@ -12,7 +12,7 @@
  *   - robots.txt (dos Disallow por cada tienda ACTIVA que no sea ES).
  *   Gate que comprueba que los tres coinciden: python3 scripts/productos-digitales/tienda-gate.py
  */
-import type { Locale } from '../i18n/config';
+import { LOCALES, type Locale } from '../i18n/config';
 
 export interface Tienda {
   /** Ruta del hub de la tienda de ese idioma. */
@@ -28,12 +28,12 @@ export const TIENDAS: Record<Locale, Tienda> = {
   es: { hubPath: '/productos-digitales', segmento: 'productos-digitales', moneda: 'EUR', activa: true },
   // EN activa desde la fase 0.C (24-sep-2026): el hub /en/digital-products existe.
   en: { hubPath: '/en/digital-products', segmento: 'digital-products', moneda: 'USD', activa: true },
-  // Reservados (sin fecha). Se fijan ya para que ningún slug nuevo los pise.
-  fr: { hubPath: '/fr/produits-numeriques', segmento: 'produits-numeriques', moneda: 'EUR', activa: false },
-  de: { hubPath: '/de/digitale-produkte', segmento: 'digitale-produkte', moneda: 'EUR', activa: false },
-  it: { hubPath: '/it/prodotti-digitali', segmento: 'prodotti-digitali', moneda: 'EUR', activa: false },
-  pt: { hubPath: '/pt/produtos-digitais', segmento: 'produtos-digitais', moneda: 'EUR', activa: false },
-  nl: { hubPath: '/nl/digitale-producten', segmento: 'digitale-producten', moneda: 'EUR', activa: false },
+  // FR/DE/IT/PT/NL activas desde el 24-sep-2026: hubs = copias traducidas del hub EN.
+  fr: { hubPath: '/fr/produits-numeriques', segmento: 'produits-numeriques', moneda: 'EUR', activa: true },
+  de: { hubPath: '/de/digitale-produkte', segmento: 'digitale-produkte', moneda: 'EUR', activa: true },
+  it: { hubPath: '/it/prodotti-digitali', segmento: 'prodotti-digitali', moneda: 'EUR', activa: true },
+  pt: { hubPath: '/pt/produtos-digitais', segmento: 'produtos-digitais', moneda: 'EUR', activa: true },
+  nl: { hubPath: '/nl/digitale-producten', segmento: 'digitale-producten', moneda: 'EUR', activa: true },
 };
 
 /** Enlace al hub de la tienda del idioma, o null si ese idioma no tiene tienda activa
@@ -48,7 +48,25 @@ export function tiendaHref(lang: Locale | string): string | null {
 export const TIENDA_NOMBRE: Partial<Record<Locale, string>> = {
   es: 'Productos Digitales',
   en: 'Digital Products',
+  fr: 'Produits numériques',
+  de: 'Digitale Produkte',
+  it: 'Prodotti Digitali',
+  pt: 'Produtos Digitais',
+  nl: 'Digitale producten',
 };
+
+/** Idiomas con tienda activa, en el orden de LOCALES (el que usa BaseLayout para los hreflang). */
+export function hubLocales(): Locale[] {
+  return LOCALES.filter((l) => TIENDAS[l].activa);
+}
+
+/** lang → hubPath de cada tienda activa. Se pasa como `alternates` a BaseLayout en los 7 hubs:
+ *  hreflang recíproco entre todos ellos + x-default al ES (DEFAULT_LOCALE). */
+export function hubAlternates(): Partial<Record<Locale, string>> {
+  const out: Partial<Record<Locale, string>> = {};
+  for (const l of hubLocales()) out[l] = TIENDAS[l].hubPath;
+  return out;
+}
 
 export type TiendaKind = 'landing' | 'access' | 'library';
 

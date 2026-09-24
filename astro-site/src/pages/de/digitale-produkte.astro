@@ -1,0 +1,32 @@
+---
+// /de/digitale-produkte — HUB de la tienda DE. Envoltorio fino, COPIA del de /productos-digitales
+// (pages/productos-digitales.astro) y de /en/digital-products (pages/en/digital-products.astro): mismo
+// BaseLayout con las mismas props, SEO en aleman, y el componente DigitalProductsHubPageDe, que es la
+// copia traducida de DigitalProductsHubPage (mismo diseño; cualquier cambio en uno se replica en los otros).
+//
+// hreflang: locales/alternates salen de hubLocales()/hubAlternates() de lib/tienda (los añade el
+// integrador cuando fusione esta rama con la de EN; hoy ese helper no existe todavia en tienda.ts —
+// ver nota en el handoff de esta sesion). omitGlobalApp OBLIGATORIO: el SoftwareApplication global del
+// layout lleva ofertas en EUR y un rating (4,8), y en la tienda DE (aun sin compradores) no puede salir
+// ninguno de los dos. Los 3 JSON-LD propios los emite el componente.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DigitalProductsHubPageDe from '../../components/pages/DigitalProductsHubPageDe.astro';
+import { hubLocales, hubAlternates } from '../../lib/tienda';
+
+const lang = 'de';
+---
+
+<BaseLayout
+  whatsapp={false}
+  title="Digitale Produkte für die Gastronomie — Vorlagen, Leitfäden, KI-Prompts | AI Chef Pro"
+  description="Excel-Vorlagen für die Rezeptkalkulation, HACCP-Vorlagen, eBooks und KI-Prompts für Köche, Restaurantleiter und Inhaber in der Gastronomie. Deutsche Ausgaben in Vorbereitung."
+  keywords="digitale Produkte Gastronomie, Excel Vorlagen Gastronomie, Rezeptkalkulation Excel, HACCP Vorlagen, Wareneinsatz berechnen, Restaurant Vorlagen, Gastronomie eBook, KI Prompts Restaurant, AI Chef Pro"
+  lang={lang}
+  basePath="/digitale-produkte"
+  locales={hubLocales()}
+  alternates={hubAlternates()}
+  ogImage="https://aichef.pro/og-productos-digitales.jpg"
+  omitGlobalApp
+>
+  <DigitalProductsHubPageDe />
+</BaseLayout>

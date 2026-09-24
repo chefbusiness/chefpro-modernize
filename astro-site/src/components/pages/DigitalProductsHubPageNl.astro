@@ -1,0 +1,2214 @@
+---
+// DigitalProductsHubPageNl.astro — COPIA del hub EN (components/pages/DigitalProductsHubPage.astro),
+// traducida al neerlandés. La monta pages/nl/digitale-producten.astro. Nace el 24-sep-2026 por orden de
+// John: la tienda NL es el MISMO hub que el español/inglés (mismas secciones, mismo orden, mismas clases,
+// mismas imágenes, mismo JS de filtros, «Load more» y buscador), no una plantilla propia.
+//
+// ⚠️ LOS TRES FICHEROS SON GEMELOS: cualquier cambio de diseño, de orden de productos o de JS en uno
+// se replica en los otros. Solo difieren en el idioma del texto y en estas adaptaciones deliberadas:
+//  · Tarjetas: ningún producto existe aún en neerlandés. Cada tarjeta se resuelve contra FAMILIAS de
+//    lib/tienda.ts por su slug ES: si la familia tiene `nl.vivo === true`, la tarjeta es un <a> a
+//    tiendaProductoPath('nl', slug) con su precio EUR de netlify/shared/product-prices.ts; si no,
+//    es un <div> sin enlace, sin precio y con el badge «Binnenkort in het Nederlands».
+//  · Sin tachados ni descuentos, sin rating visible ni en schema.
+//  · Los 3 JSON-LD (CollectionPage + FAQPage + BreadcrumbList) en neerlandés, UTF-8 correcto, sin
+//    ofertas; el ItemList solo lista productos vivos en NL (hoy ninguno → sin mainEntity).
+//  · Enlaces internos a su equivalente NL cuando existe (/nl, /nl/privacidad); sin blog ni librería de
+//    prompts en neerlandés todavía, esos dos van a /nl.
+//  · Buscador: mismo script; el índice se construye igual pero sin los alias ES por slug ni el gate
+//    de sinónimos huérfanos (los sinónimos de lib/sinonimos-buscador.json son de vocabulario español
+//    y con las tarjetas en neerlandés estarían todos «huérfanos»). El registro envía lang: 'nl'.
+import Icon from '../Icon.astro';
+import { indiceBusqueda } from '../../lib/normalizar-busqueda';
+import { FAMILIAS, tiendaProductoPath } from '../../lib/tienda';
+import { PRODUCT_PRICES } from '../../../../netlify/shared/product-prices';
+
+const ALL_TAGS = [
+  { id: 'all', label: 'Alles', iconName: 'Filter' },
+  // Format
+  { id: 'excel', label: 'Excel' },
+  { id: 'pdf', label: 'PDF / eBook' },
+  { id: 'templates', label: 'Sjablonen' },
+  { id: 'guides', label: 'Stap-voor-stapgidsen' },
+  { id: 'manuals', label: 'Handleidingen' },
+  { id: 'business-plan', label: 'Ondernemingsplannen' },
+  // Topic
+  { id: 'costs', label: 'Kostenbeheersing' },
+  { id: 'food-safety', label: 'Voedselveiligheid' },
+  { id: 'ai', label: 'Kunstmatige intelligentie' },
+  { id: 'management', label: 'Management' },
+  // Business concept
+  { id: 'restaurant', label: 'Restaurant' },
+  { id: 'cafe', label: 'Café' },
+  { id: 'pizzeria', label: 'Pizzeria' },
+  { id: 'burger', label: 'Burgerzaak' },
+  { id: 'dark-kitchen', label: 'Dark Kitchen' },
+  { id: 'pastry', label: 'Patisserie' },
+  { id: 'bakery', label: 'Bakkerij' },
+  { id: 'bar', label: 'Bar / Cocktails' },
+  { id: 'catering', label: 'Catering' },
+  { id: 'hotel', label: 'Hotel' },
+  { id: 'ice-cream', label: 'Gelato / IJs' },
+  { id: 'chocolate', label: 'Chocolaterie' },
+  { id: 'private-chef', label: 'Privékok' },
+  { id: 'food-truck', label: 'Foodtruck' },
+  { id: 'mobile-catering', label: 'Mobiele catering / Evenementen' },
+];
+
+// Mismo ORDEN que el hub ES (decisión de negocio: novedades primero, más vendidos, resto, Mega Pack
+// el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
+const products = [
+  {
+    name: 'Terugkerende taken: Mexicaanse taqueria',
+    slug: '/kit-tareas-taqueria',
+    description: '11 operationele checklists voor een Mexicaanse taqueria: al pastor-spit, nixtamal en tortillabereiding, salsabar, HACCP en allergenen (EU-allergeenregels), en een jaarlijkse takenkalender.',
+    features: [
+      'Verticaal spit (trompo): marineren, opbouw en temperatuursonde',
+      'Nixtamal en tortillabereiding: eigen maalderij en kalibratie',
+      'Salsabar + de 14 verplichte allergenen',
+      'Jaarlijkse kalender: Mexicaanse feestdagen en Spaanse campagnes',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
+  },
+  {
+    name: 'Het openen van een chocoladeboetiek & atelier',
+    slug: '/guia-chocolateria-obrador',
+    description: 'Werkplaats, wettelijke aanduidingen, vitrine, seizoenscampagnes, vergunningen, en leveranciers van couverture en cacao.',
+    features: [
+      '20 hoofdstukken + wettelijke bijlage + 9 Excel-bestanden',
+      'Capaciteit van de werkplaats, temperatuur- en vochtigheidsregeling',
+      'Wettelijke chocoladebenamingen en etikettering',
+      'Bonus: een ingevuld businessplan en 12 opgeloste beslissingen',
+    ],
+    iconName: 'Cookie',
+    image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
+  },
+  {
+    name: 'Het openen van een banketbakkerij',
+    slug: '/guia-pasteleria-obrador',
+    description: 'Werkplaats, vergunningen en cijfers voor iedereen die nog NIET geopend heeft: locatiegeschiktheid, openingskosten, vergunningen, menu en financieel plan. 20 hoofdstukken, 8 Excel-bestanden en 2 bonussen.',
+    features: [
+      '20 hoofdstukken + wettelijke bijlage + 8 Excel-bestanden',
+      'Capaciteit van de werkplaats en checklist voor locatiebezoek',
+      'Vergunningen en gezondheidsregistratie in een beslissingsboom',
+      'Bonus: een ingevuld businessplan en 12 opgeloste beslissingen',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
+  },
+  {
+    name: 'Handboek voor executive chef',
+    slug: '/manual-chef-ejecutivo',
+    description: 'Keukenbrigade, productie, receptspecificaties, keuken-KPI\'s, allergenen en risicopreventie: 20 hoofdstukken, 7 Excel-bestanden en 12 opgeloste scenario\'s.',
+    features: [
+      '20 hoofdstukken + 7 Excel-tools',
+      'Keukendashboard met verspilling en productie per station',
+      'Processpecificaties, keukenbrigade en menuontwikkeling',
+      'Bonus: 12 opgeloste keukenscenario\'s',
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'food-safety', 'restaurant', 'hotel', 'catering'],
+  },
+  {
+    name: 'Handboek voor restaurantmanager',
+    slug: '/manual-manager-restaurante',
+    description: 'Voor iedereen die al de dienst draait: operaties, personeel, cijfers, service en juridische naleving, met elke regelgeving geciteerd en gedateerd. 20 hoofdstukken + 7 Excel-bestanden met live formules.',
+    features: [
+      '20 hoofdstukken + 7 Excel-tools',
+      'Wekelijks dashboard met prime cost en operationele KPI\'s',
+      'Werkuren, verlof en disciplinaire regels met regelgeving en datum',
+      'Bonus: 12 opgeloste scenario\'s',
+    ],
+    iconName: 'BriefcaseBusiness',
+    image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
+  },
+  {
+    name: 'Food Cost + Menu Engineering-gids',
+    slug: '/guia-food-cost-ingenieria-menu',
+    description: 'Een complete methode om uw recepten te beprijzen, prijzen vast te stellen en uw menu vorm te geven: btw per kanaal, bezorging, dranken en prime cost. 20 hoofdstukken + 8 Excel-bestanden met live formules.',
+    features: [
+      '20 hoofdstukken + 8 Excel-tools',
+      '4 kruislings gecontroleerde menu engineering-methoden',
+      'Btw per kanaal: dine-in, afhaal en bezorging',
+      'Bonus: 12 opgeloste oefeningen',
+    ],
+    iconName: 'Calculator',
+    image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
+  },
+  {
+    name: 'Receptkostprijskit Pro',
+    slug: '/kit-escandallos',
+    description: '11 Excel-sjablonen met automatische formules, vooraf ingestelde verspillingspercentages en een menuprijscalculator. Neem de controle over uw food cost.',
+    features: [
+      '11 professionele Excel-sjablonen',
+      'Vooraf ingestelde standaard verspillingspercentages',
+      'Menuprijscalculator voor 9 soorten gelegenheden',
+      'Maandelijks food cost-dashboard',
+    ],
+    iconName: 'FileSpreadsheet',
+    image: '/kit-escandallos-hero.jpg',
+    badge: '🔥 Bestseller',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Gastro Pro Prompts-eBook',
+    slug: '/pro-prompts-ebook',
+    description: '300+ AI-prompts speciaal ontwikkeld voor de horeca: creatieve keuken, banket, catering, management, marketing en meer.',
+    features: [
+      'PDF-eBook + exclusief dashboard',
+      '300+ prompts georganiseerd per categorie',
+      'Werkt met ChatGPT, Claude, Gemini',
+      'Levenslange updates',
+    ],
+    iconName: 'BookOpen',
+    image: '/ebook-mockup-bundle.webp',
+    badge: 'Bestseller',
+    badgeColor: 'bg-[#FFD700]/20 text-[#FFD700]',
+    tags: ['pdf', 'ai'],
+  },
+  {
+    name: 'HACCP-sjablonenpakket',
+    slug: '/pack-appcc',
+    description: '17 sjablonen voor voedselveiligheid: temperaturen, reiniging, allergenen, HACCP, traceerbaarheid. Wettelijk verplicht.',
+    features: [
+      '17 sjablonen met automatische waarschuwingen',
+      'Matrix van de 14 verplichte allergenen',
+      'Vooringevulde HACCP-gevarenanalyse',
+      'Gids voor gezondheidsinspectie',
+    ],
+    iconName: 'ShieldCheck',
+    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+    badge: '🔥 Bestseller',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Voorraad- en inkoopcontrolkit',
+    slug: '/kit-inventario',
+    description: '9 Excel-sjablonen met automatische formules: dagelijkse voorraad, leveranciersadministratie, inkooporders, goederenontvangst, verspillingscontrole, FIFO, kostenanalyse en 2 bonussen.',
+    features: [
+      'Par-niveaus met bestelwaarschuwingen',
+      'Prijsvergelijking tussen leveranciers',
+      'Verspillingscontrole met een dashboard',
+      'FIFO en vervaldata met een stoplichtsysteem',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+    badge: '🔥 Bestseller',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Zo opent u een fine-dining restaurant',
+    slug: '/guia-restaurante-gastronomico',
+    description: 'Premium gids van 80+ pagina\'s: 22 hoofdstukken, financieel plan, ontwerp van keuken en eetzaal, keukenbrigade, wijnkelder, Michelin, Sol Repsol. 10 Excel-sjablonen + 8 checklists + businessplan + handleiding voor de zaal.',
+    features: [
+      'PDF + DOCX: 22 hoofdstukken, 80+ pagina\'s',
+      '10 Excel-sjablonen met formules',
+      '8 complete openingschecklists',
+      'Template voor een bankklaar businessplan',
+    ],
+    iconName: 'Star',
+    image: '/lovable-uploads/ai-gallery/guia-dk-cocina.jpg',
+    badge: 'Premium',
+    badgeColor: 'bg-amber-500/20 text-amber-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Zo opent u een casual restaurant',
+    slug: '/guia-restaurante-casual',
+    description: 'Premium gids van 60+ pagina\'s: 20 hoofdstukken, financieel plan, ontwerp van keuken en eetzaal, bezorging, terras, dagschotel. 9 Excel-sjablonen + 6 checklists + businessplan + operationeel handboek.',
+    features: [
+      'PDF + DOCX: 20 hoofdstukken, 60+ pagina\'s',
+      '9 Excel-sjablonen met formules',
+      '6 complete openingschecklists',
+      'Template voor een bankklaar businessplan',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/guia-casual-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Zo opent u een bakkerij met een productiekeuken',
+    slug: '/guia-panaderia-obrador',
+    description: 'Premium gids van 70+ pagina\'s: 20 hoofdstukken, receptenboek voor zuurdesem, afzuiging, HACCP voor de productieruimte met kruiscontactallergenen, fermentatieplan van 18-72 uur. 9 Excel-sjablonen + 6 checklists + businessplan + handboek voor de productieruimte.',
+    features: [
+      'PDF + DOCX: 20 hoofdstukken, 70+ pagina\'s',
+      'Volledig zuurdesemreceptenboek (baguette tradition, T80 boerenbrood, croissant, panettone)',
+      'Checklist afzuiging + vergunning voor geclassificeerde activiteit (28 items)',
+      'CAPEX-calculator + receptuurkostprijs per meelsoort',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/guia-panaderia-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'pastry', 'bakery', 'production-kitchen'],
+  },
+  {
+    name: 'Zo opent u een Mexicaans restaurant',
+    slug: '/guia-restaurante-mexicano',
+    description: 'Premium gids van 60+ pagina\'s: 20 hoofdstukken, Mexicaanse leveranciers in Spanje, tequila- en mezcalbar, receptuurkostprijs voor 15 gerechten. 9 Excel-sjablonen + 6 checklists + businessplan + operationeel handboek.',
+    features: [
+      'PDF + DOCX: 20 hoofdstukken, 60+ pagina\'s',
+      '9 Excel-sjablonen met formules',
+      '6 complete openingschecklists',
+      'Receptuurkostprijs voor 15 Mexicaanse gerechten',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Zo opent u een Peruaans restaurant',
+    slug: '/guia-restaurante-peruano',
+    description: 'Premium gids van 60+ pagina\'s: 20 hoofdstukken, cevichebar, Nikkei-keuken, piscobar, Peruaanse leveranciers in Spanje. 9 Excel-sjablonen + 6 checklists + businessplan + operationeel handboek.',
+    features: [
+      'PDF + DOCX: 20 hoofdstukken, 60+ pagina\'s',
+      '9 Excel-sjablonen met formules',
+      '6 complete openingschecklists',
+      'Receptuurkostprijs voor 15 Peruaanse gerechten',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-peruano-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Zo opent u een Japans restaurant',
+    slug: '/guia-restaurante-japones',
+    description: 'Premium gids van 60+ pagina\'s: 20 hoofdstukken, sushi-ya, ramen-ya, izakaya, omakase, robatayaki. Vis van sashimi-kwaliteit, anisakisvoorschriften, sake- en Japanse whiskychbar. 9 Excel-sjablonen + 6 checklists + businessplan + operationeel handboek.',
+    features: [
+      'PDF + DOCX: 20 hoofdstukken, 60+ pagina\'s',
+      '9 Excel-sjablonen met formules',
+      '6 checklists (inclusief anisakis-HACCP)',
+      'Receptuurkostprijs voor 15 Japanse gerechten',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Zo opent u een Nikkei-restaurant',
+    slug: '/guia-restaurante-nikkei',
+    description: 'Premium gids van 60+ pagina\'s: Peruaans-Japanse fusion. Tiradito\'s, Nikkei-ceviche, causa\'s, acevichado-maki\'s, anticucho\'s, chaufa, Nikkei-omakase. Pisco- + sakebar. Leveranciers van Peruaanse aji en vis van sashimi-kwaliteit. 9 Excel-sjablonen + 6 checklists + businessplan + operationeel handboek.',
+    features: [
+      'PDF + DOCX: 20 hoofdstukken, 60+ pagina\'s',
+      '9 Excel-sjablonen met formules',
+      '6 checklists (anisakis-HACCP + tijgermelkmarinade)',
+      'Receptuurkostprijs voor 15 Nikkei-gerechten',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-restaurante-nikkei-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Zo opent u een dark kitchen',
+    slug: '/guia-dark-kitchen',
+    description: 'Complete gids, PDF + bewerkbare DOCX: 12 hoofdstukken, juridische vereisten, financieel plan, keukenontwerp, technologie, marketing. 3 Excel-checklists + haalbaarheidscalculator.',
+    features: [
+      'Redactionele PDF + bewerkbare DOCX',
+      '12 hoofdstukken van idee tot lancering',
+      '3 Excel-checklists + calculator',
+      'Wettelijke vereisten in Spanje, 2026',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/guia-dk-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['pdf', 'guides', 'dark-kitchen'],
+  },
+  {
+    // RC-07 · la tarjeta conservaba la copia sin tildes y la descripción de la
+    // v1.1: el comprador saltaba de aquí a una landing ya acentuada.
+    name: 'Kit voor personeelsplanning en -beheer',
+    slug: '/kit-gestion-personal',
+    description: '9 Excel-sjablonen met automatische formules: roosters, overwerk, arbeidskosten, onboarding, vakanties, functioneringsgesprekken en een personeelsregister.',
+    features: [
+      'Dienstrooster met wettelijke alerts',
+      'Automatische overwerkregistratie',
+      'Arbeidskostenratio met een stoplichtsysteem',
+      'Onboarding, vakanties en functioneringsgesprekken',
+    ],
+    iconName: 'Users',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+
+  {
+    name: 'Kit financieel plan voor restaurants',
+    slug: '/kit-plan-financiero',
+    description: '10 Excel-sjablonen die samenwerken: financieel plan voor 3 en 5 jaar, break-evenpunt, cashflow, CAPEX, maandelijkse winst- en verliesrekening, financiële kengetallen en een bankklaar haalbaarheidsrapport.',
+    features: [
+      '3- en 5-jaars financiële prognose',
+      'Break-evenpunt met 3 scenario\'s',
+      'Cashflow met liquiditeitsalerts',
+      'Bankklaar haalbaarheidsrapport',
+    ],
+    iconName: 'TrendingUp',
+    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Businessplan: Bar-Restaurant',
+    slug: '/plan-negocio-bar-restaurante',
+    description: 'Volledig businessplan voor het openen van een bar-restaurant in Spanje: financieel plan in Excel met een winst- en verliesrekening over 3 jaar, gedetailleerde startinvestering, break-evenpoint, scenario\'s en een openingschecklist met 50+ procedures.',
+    features: [
+      'Financieel plan in Excel met winst- en verliesrekening over 3 jaar',
+      'Gedetailleerde startinvestering (Spaans referentiebudget)',
+      'Break-evenpoint + 3 scenario\'s',
+      'Openingschecklist: 50+ procedures, Spanje 2026',
+    ],
+    iconName: 'Banknote',
+    image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'bar', 'business-plan'],
+  },
+  {
+    name: 'Businessplan: Tapasbar / Gastrobar',
+    slug: '/plan-negocio-tapas-bar',
+    description: 'Volledig businessplan voor het openen van een tapasbar of gastrobar in Spanje: een DOCX-document met 10 secties + financieel plan in Excel met een winst- en verliesrekening over 3 jaar + een openingschecklist met 63 procedures, waaronder de vergunning voor geclassificeerde activiteiten en de rookafvoervergunning.',
+    features: [
+      'Professioneel DOCX-document met 10 secties',
+      'Financieel plan in Excel met winst- en verliesrekening over 3 jaar',
+      'Gedetailleerde startinvestering (Spaans referentiebudget)',
+      'Openingschecklist: 63 procedures, Spanje 2026',
+    ],
+    iconName: 'Banknote',
+    image: '/lovable-uploads/ai-gallery/plan-tapas-bar-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'bar', 'tapas', 'gastropub', 'business-plan'],
+  },
+  {
+    name: 'Businessplan: Koffiebar / Brunch',
+    slug: '/plan-negocio-cafeteria',
+    description: 'Volledig businessplan voor het openen van een koffiebar of brunchzaak in Spanje: financieel plan in Excel met een winst- en verliesrekening over 3 jaar + businessplan in Word + een openingschecklist met 65+ procedures onder de vergunning voor activiteiten met lage impact en het Spaanse levensmiddelenregister (RGSEAA).',
+    features: [
+      'Financieel plan in Excel met winst- en verliesrekening over 3 jaar',
+      'Gedetailleerde startinvestering (Spaans referentiebudget)',
+      'Break-even: 53 klanten per dag bij een gemiddelde Spaanse besteding per klant',
+      'Openingschecklist: 65+ procedures, Spanje 2026',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'brunch', 'business-plan'],
+  },
+  {
+    name: 'Businessplan: Bakkerij / Ambachtelijke bakkerij',
+    slug: '/plan-negocio-panaderia',
+    description: 'Volledig businessplan voor het openen van een bakkerij of ambachtelijke bakkerij in Spanje: financieel plan in Excel met een winst- en verliesrekening over 3 jaar + kerstseizoensinvloeden + een openingschecklist met 60+ procedures, waaronder de RGSEAA-registratie voor productiekeukens.',
+    features: [
+      'Financieel plan in Excel met kerstseizoensinvloeden',
+      'Gedetailleerde startinvestering (Spaans referentiebudget)',
+      'Break-even op basis van verkochte kilo\'s per dag en gemiddelde besteding',
+      'Checklist met 60+ procedures, waaronder RGSEAA-registratie voor de ambachtelijke bakkerij',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/plan-panaderia-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'bakery', 'production-kitchen', 'business-plan'],
+  },
+  {
+    name: 'Businessplan: Foodtruck',
+    slug: '/plan-negocio-food-truck',
+    description: 'Volledig businessplan voor het starten van een foodtruck in Spanje: een DOCX met 10 secties + financieel plan in Excel met een winst- en verliesrekening over 3 jaar + een openingschecklist met 59 procedures, waaronder de vergunning voor straatverkoop en de technische keuring voor aangepaste voertuigen (ITV).',
+    features: [
+      'Professioneel DOCX-document met 10 secties',
+      'Financieel plan in Excel met winst- en verliesrekening over 3 jaar',
+      'Gedetailleerde startinvestering (lage en hoge scenario\'s)',
+      'Checklist met 59 procedures + vergunningen per Spaanse regio',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/plan-food-truck-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'food-truck', 'street-food', 'business-plan', 'mobile-catering'],
+  },
+  {
+    name: 'Businessplan: Eventbartending / Mobiele bar',
+    slug: '/plan-negocio-cocteleria-eventos',
+    description: 'Complete professionele kit voor het starten van uw mobiele cocktailbar in Spanje: DOCX met 10 secties + financieel plan in Excel + prijscalculator + 96 leveranciers + apparatuurcatalogus + 15 cocktails + 10 belevingen + contracttemplate + checklist met 71 procedures.',
+    features: [
+      '9 professionele deliverables (~6,600 woorden)',
+      'Financieel plan in Excel met seizoensinvloeden voor evenementen',
+      'Prijscalculator per evenement + 96 leveranciers',
+      '15 themacocktails + 10 premium belevingen',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'cocktails', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Businessplan: Grillcatering voor evenementen',
+    slug: '/plan-negocio-parrillero-asador-eventos',
+    description: 'Professionele kit voor het starten van uw premium mobiele grill- en BBQ-service voor evenementen in Spanje. Hybride B2C+B2B-model: DOCX van 60+ pagina\'s + financieel plan in Excel + dubbele prijscalculator + 96 leveranciers + apparatuurcatalogus + technische handleiding + 12 sneden + B2C/B2B-contracttemplates + gids voor 8 systemen + foodtruck-routekaart + checklist in 6 fasen met een bijlage over openvuurvoorschriften per Spaanse regio.',
+    features: [
+      '11 deliverables (DOCX van 60+ pagina\'s + Excel)',
+      'Gevalideerd hybride model: 40% B2C + 60% B2B',
+      'Juridische bijlage open vuur per regio (8 Spaanse regio\'s)',
+      'Technische handleiding + 8 systemen + foodtruck-routekaart',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'grill-cook', 'grill-house', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Businessplan: Paellacatering voor evenementen',
+    slug: '/plan-negocio-paellero-eventos',
+    description: 'Professionele kit voor het starten van uw premium mobiele paella- en rijstgerechtenservice voor evenementen in Spanje. Hybride B2C+B2B-model: DOCX van 60+ pagina\'s + financieel plan in Excel + dubbele prijscalculator + 88 leveranciers onder de herkomstaanduidingen Valencia en Calasparra voor rijst + apparatuurcatalogus van Garcima/Vaello + technische handleiding voor vuur en socarrat + menu met 12 paella\'s + contracttemplates + gids voor 8 systemen + rijsttruck-routekaart + checklist in 6 fasen met een bijlage over open vuur per regio, inclusief de Falles-uitzondering.',
+    features: [
+      '11 deliverables (DOCX van 60+ pagina\'s + Excel)',
+      'Gevalideerd hybride model: 35% B2C + 65% B2B',
+      'Juridische bijlage open vuur + Falles-uitzondering (8 Spaanse regio\'s)',
+      'Technische handleiding vuur en socarrat + 12 paella\'s',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'paella-cook', 'paella', 'rice-restaurant', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Businessplan: Themacatering & kit voor evenementen',
+    slug: '/plan-catering-tematico-eventos',
+    description: 'Professionele kit voor het starten van uw premium multi-concept themacatering voor evenementen in Spanje. De enige kit die u leert om 5 concepten parallel te runnen (sushibar, tacos al pastor, houtovenpizza, Argentijnse asado, Peruaanse ceviche, premium vegan, Texas BBQ, Indiase tandoor...), niet slechts één concept. 11 deliverables: DOCX van 60+ pagina\'s + financieel plan in Excel met een mix van 35% B2C + 65% B2B + multi-concept prijscalculator + 96 leveranciers uit 12 wereldkeukens + apparatuurcatalogus voor meerdere keukens + 12 kant-en-klare concepten + multi-concept HACCP-technische handleiding + B2C/B2B-contracttemplates met een MSA + gids voor progressieve specialisatie + checklist in 6 fasen met een bijlage voor 17 regio\'s.',
+    features: [
+      '11 deliverables (DOCX van 60+ pagina\'s + Excel)',
+      'De enige multi-concept kit in Spanje (3-5 keukens parallel)',
+      '96 gevalideerde leveranciers, 12 wereldkeukens',
+      '12 kant-en-klare concepten + prijsberekening per gast',
+    ],
+    iconName: 'LayoutGrid',
+    image: '/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'catering', 'events', 'mobile-catering', 'multi-concept'],
+  },
+  {
+    name: 'Businessplan: Privékok / Showcooking aan huis',
+    slug: '/plan-chef-privado-showcooking-eventos',
+    description: 'Professionele kit voor het starten van uw premium privékok- en showcooking-service aan huis in Spanje. Duaal model: intieme B2C + zakelijke B2B: DOCX van 60+ pagina\'s + financieel plan in Excel + dubbele prijscalculator + 96 premium leveranciers (Japanse messen, Pordamsa-servies, extra vierge olijfolie met beschermde oorsprong, Riofrio-kaviaar) + apparatuurcatalogus + mobiele HACCP-technische handleiding + 12 themamenu\'s + B2C/B2B-contracttemplates + gids Privékok vs Persoonlijke kok vs Cateraar + checklist in 6 fasen met een bijlage over regelgeving voor mobiele catering per regio.',
+    features: [
+      '11 deliverables (DOCX van 60+ pagina\'s + Excel)',
+      'Gevalideerd duaal model: 40% B2C + 60% B2B',
+      'Bijlage regelgeving mobiele catering per regio (17 Spaanse regio\'s)',
+      'Mobiele HACCP-technische handleiding, 7 CCP\'s + 12 themamenu\'s',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-chef-privado-showcooking-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Terugkerende taken: informeel restaurant',
+    slug: '/kit-tareas',
+    description: '9 sjablonen + 2 bonussen (11 bestanden) met 491 kant-en-klare taken: opening, sluiting, bedrijfsvoering, kassa met kassaverschil, stations, manager, rollen en evenementen. Print het, delegeer het en laat het aftekenen.',
+    features: [
+      'Opening en sluiting per ruimte',
+      'Kassaverschil en maandelijks kaslog',
+      'Taken per functie',
+      'Dagelijkse/weekelijkse checklist voor de manager',
+      'Evenementen en feestdagen inbegrepen',
+    ],
+    iconName: 'ClipboardList',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'restaurant'],
+  },
+  {
+    name: 'Terugkerende taken: Café / Brunch',
+    slug: '/kit-tareas-cafeteria',
+    description: '463 taken + voorraadlijsten met ingebouwde formules: opening/sluiting, barista, banketvitrine, brunch, terras. Print het, delegeer het en laat het aftekenen.',
+    features: [
+      'Dagelijkse barvoorraad met meldingen',
+      'Baristaspecifieke taken',
+      'Vitrine- en banketcontrole',
+      'Zondagsbrunch en evenementen',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'cafe'],
+  },
+  {
+    name: 'Terugkerende taken: Pizzeria',
+    slug: '/kit-tareas-pizzeria',
+    description: '330 taken + voorraad: houtoven/steenoven, Napolitaans deeg, assemblagelijn, bezorging. Print het, delegeer het en laat het aftekenen.',
+    features: [
+      'Oven- en temperatuurcontrole',
+      'Pizza-assemblagelijn',
+      'Bezorging en verpakkingsbeheer',
+      'Deeg: fermentatie en uitrekken',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'pizzeria'],
+  },
+  {
+    name: 'Terugkerende taken: Burgerjoint',
+    slug: '/kit-tareas-hamburgueseria',
+    description: '302 vooraf ingevulde taken: grillplaat/grill, smashburgers, friteuse, assemblagelijn, bezorging en verpakking. Print het, delegeer het en laat het aftekenen.',
+    features: [
+      'Grillplaatcontrole en gaarheid van vlees',
+      'Smashburger- en grilltechniek',
+      'Friteuse: test op polaire stoffen, filteren, temperatuur',
+      'Bezorging en burgerverpakking',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'burger'],
+  },
+  {
+    name: 'Terugkerende taken: Dark kitchen',
+    slug: '/kit-tareas-dark-kitchen',
+    description: '293 vooraf ingevulde taken: productiestations voor meerdere merken, verpakking, platforms (Glovo, Uber Eats, Just Eat), bezorgers en verzending. Print het, delegeer het en laat het aftekenen.',
+    features: [
+      'Multimerk / ghost kitchen',
+      'Tablet- en platformbeheer',
+      'Merkspecifieke verpakking',
+      'Coördinatie van bezorgers en verzending',
+    ],
+    iconName: 'Warehouse',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'dark-kitchen'],
+  },
+  {
+    name: 'Terugkerende taken: Banketbakkerij / Bakkerij',
+    slug: '/kit-tareas-pasteleria',
+    description: '15 sjablonen voor banketbakkerijen en bakkerijen: 9 checklists + 4 logboeken + 2 bonussen. Deegproductie, fermentatie, crèmes, decoratie, vitrine, rollen, evenementen. Print het, delegeer het en laat het aftekenen.',
+    features: [
+      'Volledige ambachtelijke productie',
+      'Deeg, fermentatie, crèmes, decoratie',
+      'Evenementen: Kerst, Driekoningen, Valentijnsdag',
+      'Rollen: chef-banketbakker, gezel, assistent',
+    ],
+    iconName: 'Croissant',
+    image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'pastry'],
+  },
+
+  {
+    name: 'Terugkerende taken: Bar / Cocktails',
+    slug: '/kit-tareas-bar',
+    description: '9 vooraf ingevulde operationele checklists voor bars en cocktailbars: mixologie, barservice, tapbier, wijn per glas, terras, voorraad en evenementen. Print, delegeer en laat aftekenen.',
+    features: [
+      'Klassieke en eigentijdse mixologie',
+      'Tapbier, wijn en koffie',
+      'Evenementen: oudejaarsavond, Halloween, proeverijen',
+      'Rollen: hoofdbarman, barback',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'bar'],
+  },
+  {
+    name: 'Terugkerende taken: Catering / Evenementen',
+    slug: '/kit-tareas-catering',
+    description: '9 vooraf ingevulde operationele checklists voor cateringbedrijven: productie op locatie, transport, opbouw, bediening, afbouw en nazorg. Bruiloften, bedrijfsevenementen, cocktailparty\'s.',
+    features: [
+      'Productie op locatie en verpakking',
+      'Transport en koudeketen',
+      'Bruiloften, bedrijfsevenementen, cocktailparty\'s en buiten',
+      'Rollen: eventchef, zaalmanager, bediening',
+    ],
+    iconName: 'Tent',
+    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'catering', 'mobile-catering'],
+  },
+  {
+    name: 'Terugkerende taken: Volledig hotel',
+    slug: '/kit-tareas-hotel',
+    description: '46 operationele checklists verdeeld over 15 sjablonen voor 11 afdelingen: F&B, receptie, housekeeping, zwembad, terras, onderhoud, administratie en spa.',
+    features: [
+      'F&B: 6 complete outlets',
+      'Receptie, housekeeping, spa',
+      'Zwembad, terras, onderhoud',
+      'Administratie en revenue management',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'hotel'],
+  },
+  {
+    name: 'Terugkerende taken: Ambachtelijke ijssalon',
+    slug: '/kit-tareas-heladeria',
+    description: '9 vooraf ingevulde operationele checklists voor ambachtelijke gelato- en ijssalons: productie (pasteurisatie, draaien), bediening, beheer en seizoensgebondenheid.',
+    features: [
+      'Productie: pasteurisatie en draaien',
+      'Vitrine, toppings en bediening aan de toonbank',
+      'Rollen: ijsbereider, toonbankmedewerker, manager',
+      'Hoog-/laagseizoen plus eventcatering',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'ice-cream'],
+  },
+  {
+    name: 'Terugkerende taken: Chocolaterie / Atelier',
+    slug: '/kit-tareas-chocolateria',
+    description: '11 sjablonen voor ambachtelijke chocolatiers: 9 checklists plus 2 bonussen. Productie (tempereren, gieten, bonbons), toonbank, service, management en seizoensgebondenheid.',
+    features: [
+      'Productie: tempereren, gieten en bonbons',
+      'Toonbank, verpakking en bediening aan de balie',
+      'Rollen: chocolatier, baliemedewerker, manager',
+      'Seizoensgebonden: Kerst, Valentijnsdag, Pasen',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'chocolate'],
+  },
+  {
+    name: 'Terugkerende taken: Creatief / Chef-gedreven restaurant',
+    slug: '/kit-tareas-restaurante-creativo',
+    description: '11 vooringevulde operationele checklists voor creatieve en chef-gedreven restaurants: R&D, proefmenu\'s, creatieve brigade, sommelier, evenementen, fotografie en storytelling.',
+    features: [
+      'R&D: technische fiches, proeven en kostprijsberekening',
+      'Mise en place voor proefmenu en timing van gangen',
+      'Sommelier: wijnkelder, pairing, proeverijen',
+      'Chef\'s table, live cooking shows en pers',
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'restaurant'],
+  },
+  {
+    name: 'Terugkerende taken: Privékok / Persoonlijke chef',
+    slug: '/kit-tareas-chef-privado',
+    description: '9 professionele checklists voor privékoks: klantprofiel met allergieën, apparatuur en transport, mobiele HACCP, volledige service, klantenbinding en zelfstandigenadministratie.',
+    features: [
+      'Klantprofiel: allergieën, voorkeuren, keuken',
+      'Draagbare apparatuur, koeltransport, voertuig',
+      'Mobiele HACCP: temperaturen en allergenen',
+      'Service: voor, tijdens en na, plus opruimen',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'private-chef'],
+  },
+  {
+    name: 'Terugkerende taken: Sushibar',
+    slug: '/kit-tareas-sushi-bar',
+    description: '11 operationele checklists voor sushibars met het verplichte anisakis-HACCP-protocol volgens de Spaanse voedselveiligheidsvoorschriften, pH-controle van sushirijst, presentatie in de vitrine en de rollen van itamae en omakase.',
+    features: [
+      'Anisakis-HACCP: -20°C / 7 dagen per batch',
+      'Sushirijst met pH-controle (≤4,6)',
+      'Vitrinepresentatie (2-4°C) plus FIFO-rotatie',
+      'Rollen: itamae, assistent, eetzaal, bezorging',
+    ],
+    iconName: 'Fish',
+    image: '/lovable-uploads/ai-gallery/tareas-sushi-bar-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'sushi-bar', 'japanese'],
+  },
+  {
+    name: 'Terugkerende taken: Grillhouse / Josper Grill',
+    slug: '/kit-tareas-asador',
+    description: '11 operationele checklists voor grillrestaurants met een Josper-oven: aanmaken en onderhouden van de gloed, dry-aging en uitsnijden, temperaturen per stuk vlees en gegrilde vis en groenten.',
+    features: [
+      'Josper-protocol: aanmaken, warmtezones, houtskool',
+      'Dry-aging met registratieformulieren per stuk',
+      'Kerntemperaturen per stuk en gaarheid',
+      'Rollen: grillchef, assistent, keuken, eetzaal',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-asador-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'grill-house', 'grill', 'josper'],
+  },
+  {
+    name: 'Terugkerende taken: Visrestaurant met levende vistanks & HACCP',
+    slug: '/kit-tareas-marisqueria',
+    description: '11 operationele checklists voor visrestaurants: controle van levende vistanks (zuurstof, zoutgehalte, temperatuur), presentatie op ijs, HACCP-traceerbaarheid en allergenen voor schaaldieren en schelpdieren, vismarkten en Spaanse visseizoenen.',
+    features: [
+      'Levende vistanks: zuurstof, zoutgehalte, temperatuur, mortaliteit',
+      'HACCP-traceerbaarheid en EU-allergeenregels',
+      'Presentatie op ijs en FIFO-rotatie',
+      'Officiële Spaanse visseizoenen en gesloten periodes',
+    ],
+    iconName: 'Shell',
+    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'seafood-restaurant', 'fish', 'seafood'],
+  },
+  {
+    name: 'Terugkerende taken: Tapasbar / Gastrobar',
+    slug: '/kit-tareas-tapas-bar',
+    description: '11 operationele checklists voor tapasbars en gastrobars: koude tapas- en pintxos-toonbank, keuken voor kleine gerechten (planka, friteuse, stoofschotels), vatbier, wijn per glas, vermout, terras en seizoensgebonden menukaartrotatie.',
+    features: [
+      'Pintxos- en koude tapas-toonbank met rotatie',
+      'Keuken voor kleine gerechten: planka, friteuse, stoofschotels',
+      'Vatbier, wijn per glas en vermout',
+      'Terras, evenementen en seizoensmenu',
+    ],
+    iconName: 'Beer',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'tapas', 'gastropub', 'bar'],
+  },
+  {
+    name: 'Terugkerende taken: Foodtruck',
+    slug: '/kit-tareas-food-truck',
+    description: '11 operationele checklists voor foodtrucks: op- en afbouw, mobiel voertuig en generator, mobiele HACCP-voedselveiligheid, vergunningen en evenementen, teamrollen en jaarkalender.',
+    features: [
+      'Opbouw/afbouw: generator, gas, keuken, service',
+      'Mobiele HACCP: koudeketen en wisselende temperaturen',
+      'Vergunningen, licenties en verzekering per evenement',
+      'Onderhoud van voertuig en generator',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'food-truck', 'street-food', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Terugkerende taken: Bakkerij / Productiekeuken',
+    slug: '/kit-tareas-panaderia',
+    description: '11 operationele checklists voor bakkerijen en productiekeukens: vroege dienst vanaf 03:00, zuurdesem en voordeeg (poolish, biga), etage- en draaiovens, toonbank en verkoop, teamrollen en seizoenscampagnes.',
+    features: [
+      'Vroege dienst: bakkerij open vanaf 03:00',
+      'Zuurdesem, poolish, biga en fermentatiecontrole',
+      'Etage-, draai- en stoomovens',
+      'Campagnes voor Kerst, Driekoningen en Pasen',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
+    badge: 'Nieuw',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'bakery', 'production-kitchen', 'sourdough'],
+  },
+  {
+    name: 'Mega-pakket terugkerende taken — 13 kits',
+    slug: '/mega-pack-tareas',
+    description: 'Alle 13 kits voor terugkerende taken in één pakket: restaurant, café, pizzeria, bar, hotel, catering, ijssalon, chocolaterie en meer. 151 Excel-sjablonen.',
+    features: [
+      '13 complete kits voor terugkerende taken',
+      '151 bewerkbare Excel-sjablonen',
+      'Openen/sluiten van de zaak plus kasopmaak inbegrepen',
+      'Bespaar meer dan 45% ten opzichte van losse aankoop',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: '🎁 Mega-pakket',
+    badgeColor: 'bg-emerald-500 text-white ring-1 ring-emerald-300/50',
+    tags: ['excel', 'templates', 'bundle', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate', 'private-chef'],
+    featured: true,
+  },
+];
+
+const comingSoon = [
+  { iconName: 'Coffee', name: 'Hoe u een churros- en warme chocolademelkzaak opent', desc: 'Dikke warme chocolademelk en churros: pand, productiekeuken, menukaart, vergunningen en cijfers om met een helder hoofd te openen.', tags: ['pdf', 'guides', 'chocolate'], phase: 'Q4 2026' },
+  { iconName: 'IceCream', name: 'Businessplan: ambachtelijke gelateria', desc: 'Financieel plan in Excel, startinvestering, seizoensinvloeden en een openingschecklist voor uw gelateria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'Q4 2026' },
+  { iconName: 'BarChart3', name: 'Operationeel dashboardpakket', desc: 'Omzet per tijdvak en eetgedeelte, gemiddelde besteding, tafelomloopsnelheid en productiviteit per uur, in één dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
+  { iconName: 'Sandwich', name: 'Businessplan: smashburgerzaak', desc: 'Van het smashconcept tot break-even: investering, menukaart, kosten en een prognose per maand.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
+  { iconName: 'PartyPopper', name: 'Businessplan: evenementen- en trouwlocatie', desc: 'Capaciteit, vast menu-arrangementen, seizoensinvloeden voor bruiloften en personeelsinzet per evenement: het complete plan.', tags: ['business-plan', 'catering', 'excel'], phase: 'Q1 2027' },
+  { iconName: 'Flame', name: 'Terugkerende taken: rotisseriekippenzaak', desc: 'Braadspitten, braadtijden, uitvalpercentage en service tijdens piekuren, met de routines voor elke dienst.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
+  { iconName: 'Utensils', name: 'Terugkerende taken: arepazaak', desc: 'Deeg, vullingen, bakplaat en afsluiting: de dagelijkse routine van een arepazaak, per dienst vastgelegd.', tags: ['templates', 'excel', 'restaurant'], phase: 'Q1 2027' },
+  { iconName: 'Pizza', name: 'Businessplan: Napolitaanse pizzeria', desc: 'Zuurdesem, oven en tafelomloopsnelheid: het complete plan om een Napolitaanse pizzeria te openen.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'Q1 2027' },
+  { iconName: 'Beef', name: 'Businessplan: steakhouse', desc: 'Een vast pand met een dry-aging-kast en een houtskoolgrill: investering, menukaart, receptuurberekening en prognose.', tags: ['business-plan', 'restaurant', 'excel'], phase: 'Q1 2027' },
+  { iconName: 'ShoppingCart', name: 'Bezorgcommissiecalculator', desc: 'Voer uw commissie en uw menukaart in om te zien bij welke prijs elk bezorgplatform niet meer rendabel is.', tags: ['excel', 'costs', 'dark-kitchen'], phase: 'Q1 2027' },
+  { iconName: 'Leaf', name: 'Terugkerende taken: poké bowl / gezonde bowl', desc: 'Bereiding van bases en toppings, koelketen, diensten en sluiting voor een bowlrestaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Binnenkort' },
+  { iconName: 'Sprout', name: 'Terugkerende taken: vegetarisch / plantaardig restaurant', desc: 'Plantaardige basisproductie, allergenen, diensten en sluiting voor een plantaardig restaurant.', tags: ['templates', 'excel', 'restaurant'], phase: 'Binnenkort' },
+  { iconName: 'ConciergeBell', name: 'Businessplan: ham-carving service voor evenementen', desc: 'Zet uw ham-carving service op voor bruiloften en beurzen: tarieven, apparatuur en porties per evenement.', tags: ['business-plan', 'catering', 'mobile-catering'], phase: 'Binnenkort' },
+  { iconName: 'Coffee', name: 'Businessplan: mobiele koffiebar voor evenementen', desc: 'Specialty koffie op zakelijke evenementen, bruiloften en beurzen: minimale investering, tarieven en logistiek.', tags: ['business-plan', 'cafe', 'mobile-catering'], phase: 'Binnenkort' },
+  { iconName: 'Truck', name: 'Businessplan: mobiele houtovenpizza', desc: 'Een houtoven op een aanhanger voor bruiloften en beurzen: apparatuur, deeg, tarieven en logistiek.', tags: ['business-plan', 'pizzeria', 'mobile-catering'], phase: 'Binnenkort' },
+  { iconName: 'Star', name: 'AI Review Analyse Kit', desc: 'Een sjabloon en prompts voor uw agents: exporteer of plak uw reviews, sorteer ze op onderwerp en zie wat steeds terugkomt.', tags: ['excel', 'ai', 'management'], phase: 'Binnenkort' },
+  { iconName: 'Users', name: 'Personeelshandboek voor de horeca', desc: 'Onboardinghandboek, huisregels, hygiëne, training per functie en voorbeelddocumenten die u kunt aanpassen aan uw cao.', tags: ['manuals', 'management', 'pdf'], phase: 'Binnenkort' },
+  { iconName: 'CakeSlice', name: 'Businessplan: banketbakkerij & productiekeuken', desc: 'Het financiële plan voor uw banketbakkerijkeuken: investering, productie, verkooptoonbank en verkoopprijzen.', tags: ['business-plan', 'pastry', 'excel'], phase: 'Binnenkort' },
+  { iconName: 'Thermometer', name: 'Professioneel sous-vide koken e-book', desc: 'Tijd- en temperatuurtabellen per product, pasteurisatie, HACCP voor vacuümverpakken en opwarmen.', tags: ['pdf', 'restaurant', 'food-safety'], phase: 'Binnenkort' },
+  { iconName: 'Fish', name: 'Hoe opent u een visrestaurant', desc: 'Levende vistanks, vismarkt, zuivering en eetzaal: de complete gids voor het openen van een visrestaurant, met bijbehorende sjablonen.', tags: ['pdf', 'guides', 'restaurant'], phase: 'Binnenkort' },
+  { iconName: 'Store', name: 'Hoe opent u een boutique-slagerij', desc: 'Dry aging, slagerij en een signature toonbank: de gids voor het openen van een premium slagerij met een keuken.', tags: ['pdf', 'guides', 'management'], phase: 'Binnenkort' },
+];
+
+const PRODUCTS_PER_PAGE = 12;
+
+// Etiqueta de un tag (los tags sin entrada en ALL_TAGS — 'bundle', 'production-kitchen', 'tapas'… —
+// no renderizan pill, igual que en el hub ES).
+const tagLabel = (id: string) => ALL_TAGS.find((t) => t.id === id)?.label;
+
+// ── Tarjeta → producto NL vivo (FAMILIAS de lib/tienda.ts) ───────────────────────────
+// Sin familia o con `nl.vivo: false` → null: la tarjeta se pinta sin enlace ni precio y con el
+// badge «Binnenkort in het Nederlands». Con familia viva → landing NL + precio EUR (el que cobra el checkout).
+const nlVivo = (slugEs: string) => {
+  const f = FAMILIAS.find((x) => x.productos.es?.slug === slugEs.replace(/^\//, ''));
+  const nl = f?.productos.nl;
+  return nl && nl.vivo ? nl.slug : null;
+};
+const precioEur = (id: string) => {
+  const v = PRODUCT_PRICES[id]?.eur;
+  return typeof v === 'number' ? `€${v}` : null;
+};
+const cards = products.map((p) => {
+  const nlSlug = nlVivo(p.slug);
+  return {
+    ...p,
+    nlSlug,
+    href: nlSlug ? tiendaProductoPath('nl', nlSlug) : null,
+    price: nlSlug ? precioEur(nlSlug) : null,
+  };
+});
+const liveCards = cards.filter((c) => c.href);
+
+// ── Buscador: índice de texto por card (data-search) ────────────────────────────────
+// Misma normalización que el hub ES (indiceBusqueda). Sin el slug ES ni sus alias en español.
+const indiceProducto = (p: { name: string; description: string; features: string[]; tags: string[] }) =>
+  indiceBusqueda([p.name, p.description, ...p.features, ...p.tags, ...p.tags.map(tagLabel)]);
+
+// Contadores del badge del hero.
+const productsCount = products.length;
+const comingSoonCount = comingSoon.length;
+
+// WhatsApp (mismo número que el hub ES; mensaje prerellenado en neerlandés).
+const waPhone = '34744717942';
+const waMessage = encodeURIComponent('Hallo, ik heb hulp nodig met mijn aankoop van AI Chef Pro. ');
+const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+
+// Países del mundo.
+const countries = ['Spanje', 'Mexico', 'Colombia', 'Argentinië', 'Chili', 'Peru', 'Ecuador', 'Verenigde Staten', 'Duitsland', 'Frankrijk'];
+
+// FAQ VISIBLE (y fuente del FAQPage JSON-LD).
+const faqs = [
+  { q: 'In welk formaat zijn de digitale producten?', a: 'De meeste zijn Excel-sjablonen (.xlsx) die werken in Microsoft Excel, Google Sheets, LibreOffice en Apple Numbers. We leveren ook printklare handleidingen en checklists in PDF. U downloadt elk bestand vanaf uw persoonlijke dashboard.' },
+  { q: 'Hoe krijg ik de producten na aankoop?', a: 'Toegang is onmiddellijk. Zodra u via Stripe betaalt, brengen wij u naar uw persoonlijke dashboard, waar u elk bestand kunt downloaden. U ontvangt ook een e-mail met een magische link, zodat u altijd kunt terugkeren.' },
+  { q: 'Kan ik overal ter wereld kopen?', a: 'Ja. U kunt overal kopen met een kaart, Apple Pay of Google Pay. De huidige catalogus is in het Spaans geschreven en is opgebouwd rond Spaanse en EU-regelgeving; de Nederlandse edities komen eraan en verschijnen op deze pagina zodra elke editie klaar is.' },
+  { q: 'Bevatten de sjablonen automatische formules?', a: 'Ja. Elk Excel-sjabloon wordt geleverd met ingebouwde formules die het rekenwerk voor u doen: food cost, voorgestelde menuprijs, temperatuurmeldingen en afvalregistratie. U voert uw cijfers in en het spreadsheet doet de rest.' },
+  { q: 'Is er een geld-terug-garantie?', a: 'Elk product wordt geleverd met een volledige garantie van 30 dagen. Als u niet tevreden bent, vergoeden wij 100% terug, zonder vragen. Schrijf gewoon naar info@aichef.pro.' },
+  { q: 'Zijn toekomstige updates inbegrepen?', a: 'Ja. Elk product omvat levenslange toegang tot het online dashboard. Wanneer we nieuwe sjablonen toevoegen, verbeteringen aanbrengen of actualiseren vanwege regelgeving, ontvangt u deze zonder extra kosten.' },
+  { q: 'Kan ik de sjablonen in meer dan één restaurant gebruiken?', a: 'Ja. De licentie is persoonlijk: u kunt de sjablonen gebruiken in elke locatie die u beheert. Ideaal voor consultants, restaurantgroepen en managers van meerdere vestigingen.' },
+  { q: 'Welke betaalmethoden accepteert u?', a: 'Betalingen worden verwerkt door Stripe, een van de meest beveiligde betaalplatforms ter wereld. We accepteren credit- en debetkaarten (Visa, Mastercard, Amex), Apple Pay, Google Pay en Link (Stripe fast checkout).' },
+];
+
+// pSEO cities (las guías por ciudad solo existen en español: se listan sin enlace).
+const cities = [
+  { slug: 'madrid', label: 'Madrid' },
+  { slug: 'barcelona', label: 'Barcelona' },
+  { slug: 'valencia', label: 'Valencia' },
+  { slug: 'ciudad-de-mexico', label: 'Mexico-Stad' },
+  { slug: 'monterrey', label: 'Monterrey' },
+  { slug: 'bogota', label: 'Bogotá' },
+  { slug: 'medellin', label: 'Medellín' },
+  { slug: 'buenos-aires', label: 'Buenos Aires' },
+  { slug: 'santiago', label: 'Santiago' },
+];
+
+// ── JSON-LD (CollectionPage + FAQPage + BreadcrumbList, en neerlandés y sin ofertas ni rating) ──
+const HUB_URL = 'https://aichef.pro/nl/digitale-producten';
+const collectionSchema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Digitale producten voor restaurants en horeca — AI Chef Pro',
+  description: 'Excel-sjablonen, HACCP-handleidingen, AI-prompts en digitale tools voor chefs, restaurantmanagers en eigenaren.',
+  url: HUB_URL,
+  inLanguage: 'nl',
+  publisher: {
+    '@type': 'Organization',
+    name: 'AI Chef Pro',
+    url: 'https://aichef.pro/nl',
+  },
+};
+// El ItemList solo lista productos VIVOS en neerlandés (hoy ninguno → sin mainEntity).
+if (liveCards.length) {
+  collectionSchema.mainEntity = {
+    '@type': 'ItemList',
+    itemListElement: liveCards.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://aichef.pro${c.href}`,
+      name: c.name,
+    })),
+  };
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  inLanguage: 'nl',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: 'https://aichef.pro/nl' },
+    { '@type': 'ListItem', position: 2, name: 'Digitale producten', item: HUB_URL },
+  ],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+<div class="min-h-screen bg-[#0a0a0a]">
+  {/* ===== SaasDiscoveryBanner ===== */}
+  <div class="bg-gradient-to-r from-[#FFD700]/10 via-[#FFD700]/5 to-[#FFD700]/10 border-b border-[#FFD700]/20">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
+      <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
+      <p class="text-xs sm:text-sm text-gray-300">
+        <span class="hidden sm:inline">Deze digitale producten vormen een aanvulling op </span>
+        <a href="/nl" class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
+        <span class="hidden sm:inline"> — de AI SaaS voor de horeca met 55+ apps</span>
+        <span class="sm:hidden"> — AI SaaS voor de horeca</span>
+      </p>
+      <a href="/nl" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+        Ontdek
+        <Icon name="ArrowRight" class="h-3 w-3" />
+      </a>
+    </div>
+  </div>
+
+  {/* ===== Hero ===== */}
+  <section class="relative px-4 pt-6 pb-12 md:pt-8 md:pb-16 overflow-hidden">
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,215,0,0.08) 0%, transparent 70%);"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center z-10">
+      {/* LogoBadge (isHub → no back pill, just the white logo card) */}
+      <div>
+        <div class="flex justify-center py-6 md:py-8">
+          <a href="/nl" class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+            <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" />
+          </a>
+        </div>
+      </div>
+      <span class="inline-block mt-4 mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
+        {productsCount} producten · {comingSoonCount} in ontwikkeling
+      </span>
+
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        De <span class="text-[#FFD700]">Digitale</span> Productenwinkel voor de Horeca van Vandaag
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        E-books, Excel-sjablonen, voedselveiligheidsgidsen en AI-prompts ontworpen door en voor horecaprofessionals. Directe download, levenslange toegang.
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Buscador (filtra las MISMAS cards que los chips; la lógica va en el script del final) =====
+       El panel de «no hay resultados» NO vive aquí: está debajo del grid (#pd-search-empty).
+       Si estuviera encima de los chips, aparecer y desaparecer al teclear empujaría chips y
+       cards ~200 px arriba y abajo, y el clic sobre una card acabaría en otra cosa. */}
+  <section id="pd-search-section" class="px-4 pb-6">
+    <div class="max-w-2xl mx-auto" role="search">
+      <label for="pd-search-input" class="sr-only">Zoek producten op naam, onderwerp of type bedrijf</label>
+      {/* Descripción ESTÁTICA del campo, separada del contador a propósito: si el
+          aria-describedby apuntara a la región viva, el lector de pantalla leería el
+          conteo al enfocar Y otra vez en cada mutación (una por pausa de tecleo). */}
+      <span id="pd-search-ayuda" class="sr-only">
+        Typ ten minste twee letters. De lijst filtert terwijl u typt; druk op Escape om de zoekopdracht te wissen.
+      </span>
+
+      <div class="relative">
+        <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-[#FFD700]">
+          <Icon name="Search" class="w-5 h-5" />
+        </span>
+        <input
+          id="pd-search-input"
+          type="search"
+          maxlength="120"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          enterkeyhint="search"
+          aria-describedby="pd-search-ayuda"
+          placeholder="Zoek op onderwerp of bedrijfstype: kostprijsberekening, HACCP, foodtruck…"
+          class="w-full h-14 pl-5 pr-16 rounded-2xl bg-white/5 border-2 border-[#FFD700]/70 shadow-[0_0_24px_rgba(255,215,0,0.12)] text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/30"
+        />
+        <button
+          id="pd-search-clear"
+          type="button"
+          aria-label="Zoekopdracht wissen"
+          class="hidden absolute inset-y-0 right-11 items-center pr-1 text-gray-500 hover:text-[#FFD700] transition-colors"
+        >
+          <Icon name="X" class="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Contador VISIBLE (se actualiza al instante, sin aria-live) + región viva SOLO
+          para lectores de pantalla, con su propio retardo: anunciar en cada pausa de
+          tecleo encola avisos que se pisan unos a otros. */}
+      <p id="pd-search-status" class="mt-2.5 text-center text-xs text-gray-500 break-words">
+        {productsCount} producten
+      </p>
+      <p id="pd-search-announce" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+  </section>
+
+  {/* ===== Tag Filter ===== */}
+  <section class="px-4 pb-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-2">
+        {ALL_TAGS.map((tag) => (
+          <button
+            type="button"
+            data-tag-btn
+            data-tag={tag.id}
+            class={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${tag.id === 'all' ? 'bg-[#FFD700] text-black' : 'bg-white/5 text-gray-400 border border-white/10 hover:border-[#FFD700]/30 hover:text-white'}`}
+          >
+            {(tag as any).iconName && <Icon name={(tag as any).iconName} class="w-3.5 h-3.5 inline mr-1.5 -mt-0.5" />}
+            {tag.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Products Grid — 3 columns (todas las cards en el DOM; JS pagina/filtra) ===== */}
+  <section id="pd-products-section" class="px-4 pb-16 md:pb-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {cards.map((product, idx) => {
+        const Card = product.href ? 'a' : 'div';
+        const featured = (product as any).featured;
+        const cls = product.href
+          ? `group relative bg-white/[0.03] rounded-2xl overflow-hidden hover:bg-white/[0.05] transition-all duration-300 flex flex-col ${featured ? 'border-2 border-emerald-500/50 hover:border-emerald-400/70 ring-1 ring-emerald-500/20' : 'border border-white/10 hover:border-[#FFD700]/30'}${idx >= PRODUCTS_PER_PAGE ? ' hidden' : ''}`
+          : `relative bg-white/[0.03] rounded-2xl overflow-hidden transition-all duration-300 flex flex-col ${featured ? 'border-2 border-emerald-500/50 ring-1 ring-emerald-500/20' : 'border border-white/10'}${idx >= PRODUCTS_PER_PAGE ? ' hidden' : ''}`;
+        return (
+        <Card
+          href={product.href ?? undefined}
+          target={product.href ? '_blank' : undefined}
+          rel={product.href ? 'noopener noreferrer' : undefined}
+          data-product
+          data-nl-live={product.href ? 'true' : 'false'}
+          data-tags={product.tags.join(' ')}
+          data-search={indiceProducto(product)}
+          class={cls}
+        >
+          {/* Badge */}
+          <div class="absolute top-3 right-3 z-10">
+            {product.href ? (
+              <span class={`px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-black/40 backdrop-blur-sm ${product.badgeColor}`}>
+                {product.badge}
+              </span>
+            ) : (
+              <span class="px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-black/40 backdrop-blur-sm bg-[#FFD700]/15 text-[#FFD700] ring-1 ring-[#FFD700]/30">Binnenkort in het Nederlands</span>
+            )}
+          </div>
+
+          {/* Image */}
+          <div class="relative h-40 overflow-hidden bg-gradient-to-b from-white/[0.05] to-transparent">
+            <img
+              src={product.image}
+              alt={product.name}
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+          </div>
+
+          {/* Content */}
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-9 h-9 rounded-xl bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
+                <Icon name={product.iconName} class="w-4.5 h-4.5 text-[#FFD700]" />
+              </div>
+              <h2 class="text-lg md:text-base lg:text-lg font-bold text-white group-hover:text-[#FFD700] transition-colors leading-tight">
+                {product.name}
+              </h2>
+            </div>
+
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              {product.description}
+            </p>
+
+            {/* Features */}
+            <ul class="space-y-1.5 mb-5 flex-1">
+              {product.features.map((feature) => (
+                <li class="flex items-start gap-2 text-xs text-gray-300">
+                  <Icon name="Check" class="w-3.5 h-3.5 text-[#FFD700] flex-shrink-0 mt-0.5" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tags */}
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              {product.tags.map((tagId) => {
+                const label = tagLabel(tagId);
+                return label ? (
+                  <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-500 text-[10px] font-medium">
+                    {label}
+                  </span>
+                ) : null;
+              })}
+            </div>
+
+            {/* Price + CTA (solo con producto vivo en EN: precio USD, sin tachado ni descuento) */}
+            <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
+              {product.href ? (
+                <>
+                  <div class="flex items-center gap-2">
+                    {product.price && <span class="text-2xl font-extrabold text-[#FFD700]">{product.price}</span>}
+                  </div>
+                  <div class="flex items-center gap-1 text-[#FFD700] text-xs font-medium group-hover:gap-2 transition-all">
+                    Bekijken
+                    <Icon name="ArrowRight" class="w-3.5 h-3.5" />
+                  </div>
+                </>
+              ) : (
+                <span class="text-xs text-gray-500">Nederlandse editie in voorbereiding</span>
+              )}
+            </div>
+          </div>
+        </Card>
+        );
+      })}
+    </div>
+
+    {/* Cargar más */}
+    <div id="pd-loadmore-block" class="max-w-6xl mx-auto mt-10 flex flex-col items-center gap-3">
+      <button
+        id="pd-loadmore-btn"
+        type="button"
+        class="px-8 py-3 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-semibold hover:bg-[#FFD700]/20 hover:border-[#FFD700]/60 transition-all duration-200"
+      >Meer producten laden ({productsCount - PRODUCTS_PER_PAGE} resterend)</button>
+      <p id="pd-showing-line" class="text-xs text-gray-500">
+        {PRODUCTS_PER_PAGE} van {productsCount} weergegeven
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Búsqueda con resultados FUERA del chip activo =====
+       El 0 lo provoca el filtro de categoría, no el catálogo: el producto existe y está a
+       un clic. Enseñar aquí la captación de demanda sería perder la venta Y registrar un
+       hueco falso en el informe (medido: 66 combinaciones chip×consulta caían ahí). */}
+  <section id="pd-search-fuera" class="hidden px-4 pb-16 md:pb-24">
+    <div class="max-w-2xl mx-auto rounded-2xl border border-[#FFD700]/25 bg-[#FFD700]/[0.04] p-6 text-center">
+      <p id="pd-search-fuera-txt" class="text-white font-semibold mb-4 break-words"></p>
+      <button
+        id="pd-search-fuera-btn"
+        type="button"
+        class="px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+      >
+        Zoek in alle categorieën
+      </button>
+    </div>
+  </section>
+
+  {/* ===== Sin resultados DE BÚSQUEDA (el panel del filtro por tag sigue siendo #pd-noresults) =====
+       Va debajo del grid a propósito: encima de los chips empujaría toda la página al teclear. */}
+  <section id="pd-search-empty" class="hidden px-4 pb-16 md:pb-24">
+    <div class="max-w-2xl mx-auto rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center">
+      <p class="text-white font-semibold mb-1.5 break-words">
+        We hebben (nog) niets voor &ldquo;<span id="pd-search-empty-q" class="text-[#FFD700] break-all"></span>&rdquo;
+      </p>
+      <p class="text-gray-500 text-sm mb-5">
+        Laat ons weten wat u nodig heeft en we houden er rekening mee bij toekomstige producten.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button
+          id="pd-ask-toggle"
+          type="button"
+          class="px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Vertel ons wat u zocht
+        </button>
+        <a
+          id="pd-wa-empty"
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-sm font-medium hover:border-[#FFD700]/30 hover:text-white transition-colors"
+        >
+          <Icon name="MessageSquare" class="w-4 h-4" />
+          Stuur ons een bericht via WhatsApp
+        </a>
+      </div>
+
+      {/* Salidas secundarias: quien no encuentra un producto todavía puede encontrar valor
+          (y volver). Un callejón sin salida es tráfico tirado. */}
+      <p class="mt-5 text-xs text-gray-500">
+        Ondertussen:
+        <button id="pd-ver-todos" type="button" class="underline hover:text-[#FFD700] transition-colors">bekijk de volledige catalogus</button>
+        <span class="mx-1.5 text-gray-700">·</span>
+        <a href="/nl" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">promptbibliotheken</a>
+        <span class="mx-1.5 text-gray-700">·</span>
+        <a href="/nl" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">blog</a>
+      </p>
+
+      <div id="pd-ask-form" class="hidden mt-5 text-left">
+        <label for="pd-ask-detalle" class="block text-xs text-gray-400 mb-1.5">Wat heeft u precies nodig? (optioneel)</label>
+        <textarea
+          id="pd-ask-detalle"
+          rows="3"
+          maxlength="500"
+          aria-describedby="pd-ask-hint"
+          placeholder="Bijv. een fooienregistratiesjabloon voor een tapasbar"
+          class="w-full rounded-xl bg-white/5 border border-white/10 text-white text-base p-3 outline-none transition-colors placeholder:text-gray-400 focus:border-[#FFD700]/60"
+        ></textarea>
+
+        <label for="pd-ask-email" class="block text-xs text-gray-400 mt-3 mb-1.5">Uw e-mailadres, als u een bericht wilt ontvangen (optioneel)</label>
+        <input
+          id="pd-ask-email"
+          type="email"
+          maxlength="120"
+          autocomplete="email"
+          aria-describedby="pd-ask-hint"
+          placeholder="uwnaam@uwrestaurant.com"
+          class="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white text-base px-3 outline-none transition-colors placeholder:text-gray-400 focus:border-[#FFD700]/60"
+        />
+
+        {/* Honeypot REAL: el comentario de log-search.ts decía que el formulario lo pintaba
+            y no existía. Ninguna persona lo ve ni lo rellena; si llega con algo, el backend
+            responde 204 y no escribe nada. */}
+        <input
+          type="text"
+          id="pd-ask-website"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+          class="hidden"
+        />
+
+        <p id="pd-ask-hint" role="alert" class="hidden mt-2 text-xs text-[#FFD700]">
+          Vertel ons wat u nodig heeft of laat uw e-mailadres achter, dan laten we het u weten.
+        </p>
+
+        <button
+          id="pd-ask-send"
+          type="button"
+          class="mt-3 px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Versturen
+        </button>
+
+        {/* Dato personal: finalidad, uso y política, junto al campo que lo pide. */}
+        <p class="mt-2.5 text-xs text-gray-500">
+          We gebruiken uw e-mailadres alleen om u te laten weten wanneer we dit product lanceren; we delen het
+          nooit en voegen u nooit toe aan een lijst. <a href="/nl/privacidad" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">Privacybeleid</a>.
+        </p>
+      </div>
+
+      <p id="pd-ask-thanks" role="status" tabindex="-1" class="hidden mt-5 text-sm text-[#FFD700] font-medium outline-none">
+        Bedankt, we houden er rekening mee.
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Coming Soon ===== */}
+  {/* D6: sin productos en cola, la sección no se sirve (paridad con la SPA, ProductosDigitales.tsx:1265). */}
+  {comingSoon.length > 0 && (
+    <section id="pd-coming-section" class="px-4 pb-16 md:pb-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm font-medium">
+            <Icon name="Clock" class="w-4 h-4 inline mr-2" />
+            In Ontwikkeling
+          </span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
+            Toekomstige <span class="text-[#FFD700]">Producten</span>
+          </h2>
+          <p class="text-gray-500 text-sm max-w-2xl mx-auto">
+            Dezelfde kwaliteitsstandaard: directe toegang, levenslange updates en 30 dagen garantie.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {comingSoon.map((item) => (
+            <div
+              data-coming
+              data-tags={item.tags.join(' ')}
+              data-search={indiceBusqueda([item.name, item.desc, ...item.tags, ...item.tags.map(tagLabel)])}
+              class="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 opacity-70 hover:opacity-90 transition-opacity"
+            >
+              <div class="flex items-start gap-3 mb-3">
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                  <Icon name={item.iconName} class="w-4 h-4 text-gray-400" />
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-sm font-semibold text-white leading-tight mb-1">{item.name}</h3>
+                  <p class="text-[11px] text-gray-500 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex flex-wrap gap-1">
+                  {item.tags.slice(0, 2).map((tagId) => {
+                    const label = tagLabel(tagId);
+                    return label ? (
+                      <span class="px-1.5 py-0.5 rounded-full bg-white/5 text-gray-600 text-[9px] font-medium">
+                        {label}
+                      </span>
+                    ) : null;
+                  })}
+                </div>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-gray-500 font-medium">
+                  {item.phase}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ===== No results (oculto por defecto; JS lo muestra cuando 0 productos + 0 coming soon) ===== */}
+  <section id="pd-noresults" class="px-4 pb-16 md:pb-24 hidden">
+    <div class="max-w-3xl mx-auto text-center py-12">
+      <p class="text-gray-400 text-lg mb-4">Er zijn nog geen producten in deze categorie.</p>
+      <button
+        id="pd-reset"
+        type="button"
+        class="px-6 py-2 rounded-full bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium hover:bg-[#FFD700]/20 transition-colors"
+      >
+        Bekijk alle producten
+      </button>
+    </div>
+  </section>
+
+  {/* ===== Trust section ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto text-center">
+      {/* Sin estrellas ni «4,9/5» del hub ES: en inglés aún no hay compradores que lo respalden. */}
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          30 dagen garantie
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Directe toegang
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Gratis updates
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Veilig betalen met Stripe
+        </span>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Worldwide availability ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white/[0.03] border border-white/10 rounded-2xl p-8 md:p-10 text-center">
+        <div class="w-16 h-16 rounded-full bg-[#FFD700]/10 flex items-center justify-center mx-auto mb-5">
+          <Icon name="Globe" class="w-8 h-8 text-[#FFD700]" />
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-3">
+          Bestel <span class="text-[#FFD700]">vanuit de Hele Wereld</span>
+        </h2>
+        <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+          Onze digitale producten zijn ontstaan in de Spaanstalige horecamarkt, en de Nederlandse edities komen eraan.
+          Directe toegang na aankoop, waar u ook bent.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
+          {countries.map((country) => (
+            <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/[0.06]">
+              {country}
+            </span>
+          ))}
+          <span class="px-3 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] font-medium">
+            + wereldwijd
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== FAQ Section ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-10">
+        Veelgestelde <span class="text-[#FFD700]">Vragen</span>
+      </h2>
+      <div class="space-y-3">
+        {faqs.map((faq) => (
+          <details class="group bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+              <span class="text-white font-medium pr-4 text-sm md:text-base">{faq.q}</span>
+              <Icon name="ChevronDown" class="w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300 group-open:rotate-180" />
+            </summary>
+            <p class="px-5 pb-5 text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== pSEO Cities cross-link ===== */}
+  <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-xs font-medium mb-3">
+          Informatie per stad
+        </span>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+          Breng Uw Plan naar de <span class="text-[#FFD700]">Stad Waar U Gaat Openen</span>
+        </h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          Combineer onze kits en gidsen met geverifieerde gegevens per stad: reële kosten, lokale vergunningen, gangbare lonen en de beste wijken (stadsgidsen momenteel alleen beschikbaar in het Spaans).
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        {cities.map((c) => (
+          <span
+            class="px-4 py-2 rounded-full bg-white/5 text-gray-300 text-sm font-medium transition-colors border border-white/10"
+          >
+            Open een restaurant in {c.label}
+          </span>
+        ))}
+      </div>
+      <div class="text-center">
+        <a
+          href="/nl"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFD700] text-black font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Ontdek AI Chef Pro →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== SEO content block ===== */}
+  <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+        Professionele Digitale Hulpmiddelen voor de <span class="text-[#FFD700]">Horeca</span>
+      </h2>
+      <div class="text-gray-400 text-sm leading-relaxed space-y-4">
+        <p>
+          AI Chef Pro biedt een collectie digitale producten die specifiek zijn ontwikkeld voor horeca- en restaurantprofessionals. Van kunstmatige-intelligentieprompts geoptimaliseerd voor ChatGPT, Claude, Gemini en Perplexity tot Excel-sjablonen voor kostprijsberekening en de wettelijk verplichte HACCP-registraties voor voedselveiligheid.
+        </p>
+        <p>
+          Elk product is gemaakt door een chef die sinds zijn 17e in professionele keukens heeft gewerkt en sinds 2010 horecaconsultant is. Dit zijn geen generieke hulpmiddelen: het zijn doelgerichte tools voor executive chefs, chef-koks, restaurantmanagers, patissiers, bartenders, cateringdirecteuren en horecaondernemers.
+        </p>
+        <p>
+          Al onze producten omvatten directe toegang na aankoop, gratis levenslange updates, 8 gratis professionele tools en een 30 dagen niet-goed-geld-terug-garantie. Veilig betalen via Stripe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Footer ===== */}
+  <footer class="py-8 px-4 border-t border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-500 text-sm mb-2">
+        © 2026 AI Chef Pro · Alle rechten voorbehouden
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
+        <a href="https://aichef.pro/nl" class="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/nl" class="text-gray-500 hover:text-[#FFD700] transition-colors">Promptbibliotheken</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/nl/prijzen" class="text-gray-500 hover:text-[#FFD700] transition-colors">Prijzen</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/nl" class="text-gray-500 hover:text-[#FFD700] transition-colors">Blog</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="mailto:info@aichef.pro" class="text-gray-500 hover:text-[#FFD700] transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  {/* ===== WhatsAppProductSupport (tooltip vía CSS group-hover) ===== */}
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp-ondersteuning" class="group fixed bottom-6 right-4 md:right-6 z-40">
+    <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-3 py-2 whitespace-nowrap transition-all duration-300 opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
+      <span class="text-xs font-medium text-gray-800">Probleem met uw aankoop? Stuur ons een bericht</span>
+      <div class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95"></div>
+    </div>
+    <div class="relative transition-transform duration-300 hover:scale-110">
+      <div class="absolute inset-0 rounded-full bg-green-500/30 animate-ping"></div>
+      <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-white">
+        <img src="/assets/chef-john-guerrero-optimized.jpg" alt="Chef John Guerrero" loading="lazy" width="56" height="56" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute -bottom-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+        <svg viewBox="0 0 24 24" fill="white" class="w-3 h-3 sm:w-3.5 sm:h-3.5">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  /* Pulso del botón WhatsApp (animate-ping de la SPA) */
+  .animate-ping { animation: pd-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  @keyframes pd-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+
+  /* La X nativa de un input[type="search"] (Chrome/Safari) sobra: el buscador pinta la
+     suya en #pd-search-clear y las dos se solapan en la esquina derecha del campo. */
+  #pd-search-input::-webkit-search-cancel-button,
+  #pd-search-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+</style>
+
+<script>
+  // Filtro por tag + BUSCADOR + paginación "Cargar más" (sustituye useState de la SPA).
+  // TODAS las cards están en el DOM; este script solo muestra/oculta (nunca borra nodos).
+  // El criterio de texto vive DENTRO de matches(), que es la única función que comparten
+  // las cards de producto y las de "próximamente": así las dos reaccionan igual.
+  //
+  // La normalización y los sinónimos NO se definen aquí: vienen del módulo compartido con
+  // el frontmatter (que genera los data-search) y con buscador-report.py. Duplicarlos fue
+  // el defecto original: dos copias idénticas que nadie cruzaba.
+  import { normalizarBusqueda, GRUPOS_SINONIMOS, FRASES_SINONIMAS } from '../../lib/normalizar-busqueda';
+
+  const PER_PAGE = 12;
+  let activeTag = 'all';
+  let visibleCount = PER_PAGE;
+
+  const tagBtns = Array.from(document.querySelectorAll('[data-tag-btn]'));
+  const prodCards = Array.from(document.querySelectorAll('[data-product]'));
+  const comingCards = Array.from(document.querySelectorAll('[data-coming]'));
+  const productsSection = document.getElementById('pd-products-section');
+  const comingSection = document.getElementById('pd-coming-section');
+  const noResults = document.getElementById('pd-noresults');
+  const loadMoreBlock = document.getElementById('pd-loadmore-block');
+  const loadMoreBtn = document.getElementById('pd-loadmore-btn');
+  const showingLine = document.getElementById('pd-showing-line');
+
+  const TAG_ACTIVE = ['bg-[#FFD700]', 'text-black'];
+  const TAG_INACTIVE = ['bg-white/5', 'text-gray-400', 'border', 'border-white/10', 'hover:border-[#FFD700]/30', 'hover:text-white'];
+
+  // ── Buscador ──────────────────────────────────────────────────────────────────────
+  const searchInput = document.getElementById('pd-search-input');
+  const searchClear = document.getElementById('pd-search-clear');
+  const searchStatus = document.getElementById('pd-search-status');
+  const searchAnnounce = document.getElementById('pd-search-announce');
+  const searchEmpty = document.getElementById('pd-search-empty');
+  const searchEmptyQ = document.getElementById('pd-search-empty-q');
+  const searchFuera = document.getElementById('pd-search-fuera');
+  const searchFueraTxt = document.getElementById('pd-search-fuera-txt');
+  const searchFueraBtn = document.getElementById('pd-search-fuera-btn');
+  const waEmpty = document.getElementById('pd-wa-empty');
+  const askToggle = document.getElementById('pd-ask-toggle');
+  const askForm = document.getElementById('pd-ask-form');
+  const askDetalle = document.getElementById('pd-ask-detalle');
+  const askEmail = document.getElementById('pd-ask-email');
+  const askWebsite = document.getElementById('pd-ask-website');
+  const askHint = document.getElementById('pd-ask-hint');
+  const askSend = document.getElementById('pd-ask-send');
+  const askThanks = document.getElementById('pd-ask-thanks');
+  const verTodos = document.getElementById('pd-ver-todos');
+
+  const WA_BASE = 'https://wa.me/34744717942?text=';
+
+  let searchRaw = '';        // lo que ve el usuario (para los mensajes)
+  let searchNorm = '';       // normalizado (para deduplicar el registro)
+  let searchVariantes = [];  // [[token, token…], …] — basta con que UNA variante case entera
+
+  // Etiqueta visible de cada chip, para poder decir "…fuera de la categoría PDF / eBook".
+  const etiquetaTag = {};
+  tagBtns.forEach((btn) => { etiquetaTag[btn.dataset.tag || ''] = (btn.textContent || '').replace(/\s+/g, ' ').trim(); });
+
+  function variantesDeConsulta(q) {
+    const variantes = [q];
+    for (let i = 0; i < FRASES_SINONIMAS.length; i++) {
+      const a = FRASES_SINONIMAS[i][0];
+      const b = FRASES_SINONIMAS[i][1];
+      const previas = variantes.slice();
+      for (let j = 0; j < previas.length; j++) {
+        const v = previas[j];
+        if (v.indexOf(a) !== -1) variantes.push(v.split(a).join(b));
+        else if (v.indexOf(b) !== -1) variantes.push(v.split(b).join(a));
+      }
+    }
+    return variantes.slice(0, 6);
+  }
+
+  function construirConsulta(valor) {
+    searchRaw = (valor || '').trim();
+    searchNorm = normalizarBusqueda(valor);
+    searchVariantes = [];
+    if (!searchNorm) return;
+    const variantes = variantesDeConsulta(searchNorm);
+    for (let i = 0; i < variantes.length; i++) {
+      const tokens = variantes[i].split(' ').filter(function (t) { return t.length >= 2; });
+      if (tokens.length) searchVariantes.push(tokens);
+    }
+  }
+
+  function buscando() {
+    return searchVariantes.length > 0;
+  }
+
+  // hayPad = ' ' + data-search → indexOf(' ' + token) exige inicio de palabra
+  // (así "rol" no casa dentro de "control" y "escandall" sí casa con "escandallos").
+  function tokenEn(hayPad, token) {
+    if (hayPad.indexOf(' ' + token) !== -1) return true;
+    if (token.length < 3) return false;
+    for (let i = 0; i < GRUPOS_SINONIMOS.length; i++) {
+      const grupo = GRUPOS_SINONIMOS[i];
+      let dispara = false;
+      for (let j = 0; j < grupo.length; j++) {
+        if (grupo[j].indexOf(token) === 0) { dispara = true; break; }
+      }
+      if (!dispara) continue;
+      for (let k = 0; k < grupo.length; k++) {
+        if (hayPad.indexOf(' ' + grupo[k]) !== -1) return true;
+      }
+    }
+    return false;
+  }
+
+  function coincideTexto(card) {
+    if (!buscando()) return true;
+    const hayPad = ' ' + (card.dataset.search || '');
+    for (let i = 0; i < searchVariantes.length; i++) {
+      const tokens = searchVariantes[i];
+      let todos = true;
+      for (let j = 0; j < tokens.length; j++) {
+        if (!tokenEn(hayPad, tokens[j])) { todos = false; break; }
+      }
+      if (todos) return true;
+    }
+    return false;
+  }
+
+  function coincideTag(card) {
+    if (activeTag === 'all') return true;
+    return (card.dataset.tags || '').split(' ').includes(activeTag);
+  }
+
+  function matches(card) {
+    return coincideTag(card) && coincideTexto(card);
+  }
+
+  // Conteos SIN tocar el DOM. `global` ignora el chip a propósito: es el que dice si el
+  // producto EXISTE en la tienda, y es el que se registra (un 0 causado por el filtro no
+  // es demanda no cubierta, es un filtro puesto).
+  function contar() {
+    let global = 0;
+    let filtrado = 0;
+    for (let i = 0; i < prodCards.length; i++) {
+      if (!coincideTexto(prodCards[i])) continue;
+      global += 1;
+      if (coincideTag(prodCards[i])) filtrado += 1;
+    }
+    let coming = 0;
+    for (let i = 0; i < comingCards.length; i++) if (matches(comingCards[i])) coming += 1;
+    return { global: global, filtrado: filtrado, coming: coming };
+  }
+
+  function updateTagButtons() {
+    tagBtns.forEach((btn) => {
+      const active = btn.dataset.tag === activeTag;
+      btn.classList.remove(...(active ? TAG_INACTIVE : TAG_ACTIVE));
+      btn.classList.add(...(active ? TAG_ACTIVE : TAG_INACTIVE));
+    });
+  }
+
+  function apply() {
+    const enBusqueda = buscando();
+    const matching = prodCards.filter(matches);
+    const total = matching.length;
+    // Con búsqueda activa se enseñan TODOS los resultados (la paginación se aparca).
+    const limite = enBusqueda ? total : visibleCount;
+
+    prodCards.forEach((c) => c.classList.add('hidden'));
+    matching.slice(0, limite).forEach((c) => c.classList.remove('hidden'));
+
+    const showing = Math.min(limite, total);
+    const hasMore = !enBusqueda && visibleCount < total;
+
+    if (productsSection) productsSection.classList.toggle('hidden', total === 0);
+    if (loadMoreBlock) {
+      loadMoreBlock.classList.toggle('hidden', !hasMore);
+      loadMoreBlock.classList.toggle('flex', hasMore);
+    }
+    if (hasMore && loadMoreBtn) loadMoreBtn.textContent = `Meer producten laden (${total - visibleCount} resterend)`;
+    if (hasMore && showingLine) showingLine.textContent = `${showing} van ${total} weergegeven`;
+
+    const matchingComing = comingCards.filter(matches);
+    comingCards.forEach((c) => c.classList.toggle('hidden', !matches(c)));
+    if (comingSection) comingSection.classList.toggle('hidden', matchingComing.length === 0);
+
+    // Cuántos productos casarían con el texto SIN el chip. Si hay alguno, el 0 de arriba lo
+    // provoca la categoría, no el catálogo: se ofrece quitar el filtro en vez de pedir que
+    // nos cuente qué buscaba (el producto existe y está a un clic).
+    const sinChip = enBusqueda && activeTag !== 'all' ? prodCards.filter(coincideTexto).length : total;
+    const vacio = total === 0 && matchingComing.length === 0;
+    const fueraDeCategoria = vacio && enBusqueda && sinChip > 0;
+
+    // Sin texto → panel clásico del filtro por tag. Con texto → panel del buscador.
+    if (noResults) noResults.classList.toggle('hidden', !(vacio && !enBusqueda));
+    if (searchFuera) searchFuera.classList.toggle('hidden', !fueraDeCategoria);
+    if (searchEmpty) searchEmpty.classList.toggle('hidden', !(vacio && enBusqueda && !fueraDeCategoria));
+
+    if (fueraDeCategoria && searchFueraTxt) {
+      const etiqueta = etiquetaTag[activeTag] || activeTag;
+      searchFueraTxt.textContent =
+        (sinChip === 1 ? '1 product komt overeen' : sinChip + ' producten komen overeen') +
+        ' met “' + consultaVisible() + '”, maar ' + (sinChip === 1 ? 'dit valt' : 'deze vallen') + ' buiten de categorie ' + etiqueta + '.';
+    }
+    if (vacio && enBusqueda && !fueraDeCategoria) {
+      if (searchEmptyQ) searchEmptyQ.textContent = consultaVisible();
+      // El mensaje de WhatsApp por defecto es de SOPORTE POST-VENTA ("ayuda con mi compra"),
+      // que no es lo que quiere decir quien no ha encontrado nada. Se reescribe con lo que
+      // buscaba, que además es la única información valiosa de ese contacto.
+      if (waEmpty) {
+        waEmpty.href = WA_BASE + encodeURIComponent(
+          'Hallo, ik heb gezocht naar “' + searchRaw.slice(0, 80) + '” in de winkel, maar niets gevonden. Heeft u iets vergelijkbaars?',
+        );
+      }
+    }
+
+    actualizarEstado(total, matchingComing.length, enBusqueda);
+  }
+
+  // Lo tecleado se pinta recortado: una consulta larguísima no debe descuadrar la línea.
+  // Además se parten los tokens interminables (una URL pegada, "aaaaaa…"): sin espacios,
+  // 60 caracteres son ~530 px contra los ~280 px útiles de un móvil de 360 px, y el CSS
+  // por sí solo no evita que el panel se desborde en navegadores viejos.
+  function consultaVisible() {
+    const partido = searchRaw.split(/(\s+)/).map(function (t) {
+      return t.length > 24 ? t.slice(0, 24) + '…' : t;
+    }).join('');
+    return partido.length > 60 ? partido.slice(0, 60) + '…' : partido;
+  }
+
+  // El contador visible se actualiza al instante; el ANUNCIO al lector de pantalla va con
+  // su propio retardo (600 ms) y solo si el texto cambió de verdad — si no, cada pulsación
+  // que no altera el conteo encola un aviso que pisa al anterior.
+  let tAnuncio = 0;
+  function actualizarEstado(total, coming, enBusqueda) {
+    if (!searchStatus) return;
+    const q = consultaVisible();
+    let texto;
+    if (!enBusqueda) {
+      texto = total === 1 ? '1 product' : total + ' producten';
+    } else if (total === 0) {
+      texto = 'Geen producten komen overeen met “' + q + '”';
+    } else if (total === 1) {
+      texto = '1 product komt overeen met “' + q + '”';
+    } else {
+      texto = total + ' producten komen overeen met “' + q + '”';
+    }
+    if (enBusqueda && coming > 0) texto += ' · ' + coming + ' in ontwikkeling';
+    if (searchStatus.textContent === texto) return;
+    searchStatus.textContent = texto;
+    if (!searchAnnounce) return;
+    clearTimeout(tAnuncio);
+    tAnuncio = setTimeout(function () {
+      if (searchAnnounce.textContent !== texto) searchAnnounce.textContent = texto;
+    }, 600);
+  }
+
+  // ── Registro anónimo de búsquedas (nunca bloquea la UI; si falla, silencio) ──────
+  const LOG_URL = '/.netlify/functions/log-search';
+  const LOG_KEY = 'pd-busquedas-registradas';
+  let tRegistro = 0;
+
+  function listaRegistradas() {
+    try {
+      const guardado = sessionStorage.getItem(LOG_KEY) || '';
+      return guardado ? guardado.split('|') : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  // Duplicada = la misma consulta, o una de la que ésta es PREFIJO. Tecleando en móvil,
+  // una pausa de 1,2 s a media palabra registraba "escandall" y luego "escandallos" como
+  // dos consultas distintas: dos filas en el informe y un falso "sin resultados".
+  function yaRegistrada(q) {
+    const lista = listaRegistradas();
+    for (let i = 0; i < lista.length; i++) {
+      if (lista[i] === q || lista[i].indexOf(q) === 0) return true;
+    }
+    return false;
+  }
+
+  function marcarRegistrada(q) {
+    try {
+      // Al registrar la consulta larga se olvidan sus prefijos: si el visitante borra
+      // letras y vuelve a "escandall", ya no se registra otra vez.
+      const lista = listaRegistradas().filter(function (p) { return q.indexOf(p) !== 0; });
+      lista.push(q);
+      sessionStorage.setItem(LOG_KEY, lista.slice(-60).join('|'));
+    } catch (e) {
+      /* modo privado o storage bloqueado: se pierde el dedup, nada más */
+    }
+  }
+
+  function enviarLog(datos) {
+    try {
+      const cuerpo = JSON.stringify(datos);
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(LOG_URL, new Blob([cuerpo], { type: 'application/json' }));
+      } else if (window.fetch) {
+        fetch(LOG_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: cuerpo,
+          keepalive: true,
+        }).catch(() => {});
+      }
+    } catch (e) {
+      /* el buscador nunca depende del backend */
+    }
+  }
+
+  function registrarBusqueda() {
+    if (!searchInput) return;
+    const q = searchRaw.slice(0, 120);
+    if (searchNorm.length < 3) return;
+    if (yaRegistrada(searchNorm)) return;
+    marcarRegistrada(searchNorm);
+    // Se cuenta AQUÍ, no se lee el último render: el registro puede dispararse antes de
+    // que el debounce de 200 ms haya aplicado el filtro (blur, Enter).
+    const c = contar();
+    enviarLog({
+      q: q,
+      n: c.global,          // sin el chip: el dato que dice si el producto existe
+      n_filtrado: c.filtrado, // con el chip puesto (lo que vio en pantalla)
+      coming: c.coming,
+      tag: activeTag === 'all' ? '' : activeTag,
+      lang: 'nl',
+      path: location.pathname,
+      ts: Date.now(),
+      website: askWebsite && askWebsite.value ? askWebsite.value : '',
+    });
+  }
+
+  function programarRegistro() {
+    clearTimeout(tRegistro);
+    tRegistro = setTimeout(registrarBusqueda, 1200);
+  }
+
+  // ── Estado visual del buscador ───────────────────────────────────────────────────
+  function sincronizarBotonLimpiar() {
+    if (!searchClear || !searchInput) return;
+    const hayTexto = searchInput.value.length > 0;
+    searchClear.classList.toggle('hidden', !hayTexto);
+    searchClear.classList.toggle('flex', hayTexto);
+  }
+
+  function reiniciarPanelPregunta() {
+    if (askThanks && !askThanks.classList.contains('hidden')) {
+      askThanks.classList.add('hidden');
+      if (askToggle) askToggle.classList.remove('hidden');
+      if (askDetalle) askDetalle.value = '';
+      if (askEmail) askEmail.value = '';
+    }
+    if (askHint) askHint.classList.add('hidden');
+    marcarInvalido(false);
+  }
+
+  let tFiltro = 0;
+  // Clave de la búsqueda EFECTIVA: '' cuando lo tecleado no llega a filtrar nada
+  // (`construirConsulta` descarta los tokens de menos de 2 caracteres, así que «5», «a»
+  // o un símbolo suelto dejan la lista igual que si no hubiera búsqueda).
+  let claveAplicada = '';
+  function claveBusqueda() {
+    return buscando() ? searchNorm : '';
+  }
+  function filtrar() {
+    construirConsulta(searchInput ? searchInput.value : '');
+    // La paginación se reinicia SOLO si la búsqueda efectiva cambia. Antes se reiniciaba
+    // siempre: el visitante pulsaba «Cargar más» hasta ver los 46, tecleaba una letra y
+    // el grid colapsaba a 12 con el botón de vuelta, mientras el contador seguía diciendo
+    // «46 productos». Nada explicaba el colapso.
+    const clave = claveBusqueda();
+    if (clave !== claveAplicada) visibleCount = PER_PAGE;
+    claveAplicada = clave;
+    reiniciarPanelPregunta();
+    apply();
+  }
+
+  function aplicarBusqueda() {
+    filtrar();
+    programarRegistro();
+  }
+
+  function limpiarBusqueda(devolverFoco) {
+    if (searchInput) searchInput.value = '';
+    clearTimeout(tFiltro);
+    construirConsulta('');
+    visibleCount = PER_PAGE;
+    claveAplicada = '';
+    sincronizarBotonLimpiar();
+    reiniciarPanelPregunta();
+    apply();
+    if (devolverFoco && searchInput) searchInput.focus();
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      sincronizarBotonLimpiar();
+      clearTimeout(tFiltro);
+      tFiltro = setTimeout(aplicarBusqueda, 200);
+    });
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        limpiarBusqueda(true);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        clearTimeout(tFiltro);
+        filtrar();
+        clearTimeout(tRegistro);
+        registrarBusqueda();
+      }
+    });
+    // OJO: aquí NO se re-filtra. `blur` se dispara en el mousedown, antes del mouseup: si
+    // el grid se re-renderizara ahora, la card sobre la que el visitante está pinchando
+    // podría ocultarse o moverse y el clic se perdería (o abriría otro producto).
+    // El registro sí puede correr: `contar()` no toca el DOM.
+    searchInput.addEventListener('blur', () => {
+      if (!searchInput.value.trim()) return;
+      if (searchInput.value.trim() !== searchRaw) construirConsulta(searchInput.value);
+      clearTimeout(tRegistro);
+      registrarBusqueda();
+    });
+  }
+
+  searchClear?.addEventListener('click', () => limpiarBusqueda(true));
+
+  // Atajo: "/" enfoca el buscador (salvo si ya se está escribiendo en otro campo).
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || !searchInput) return;
+    const destino = e.target;
+    const etiqueta = destino && destino.tagName ? destino.tagName.toLowerCase() : '';
+    if (etiqueta === 'input' || etiqueta === 'textarea' || etiqueta === 'select') return;
+    if (destino && destino.isContentEditable) return;
+    e.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  });
+
+  // Quitar el chip sin perder lo tecleado (panel "están fuera de la categoría").
+  searchFueraBtn?.addEventListener('click', () => {
+    activeTag = 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+    if (searchInput) searchInput.focus();
+  });
+
+  // "Ver el catálogo completo" desde el panel de vacío.
+  verTodos?.addEventListener('click', () => {
+    activeTag = 'all';
+    updateTagButtons();
+    limpiarBusqueda(true);
+  });
+
+  // ── "Dinos qué buscabas" (solo se ve cuando la búsqueda no devuelve nada) ────────
+  function marcarInvalido(mal) {
+    [askDetalle, askEmail].forEach((el) => {
+      if (!el) return;
+      if (mal) el.setAttribute('aria-invalid', 'true');
+      else el.removeAttribute('aria-invalid');
+    });
+  }
+
+  function avisar(texto, foco) {
+    if (askHint) {
+      askHint.textContent = texto;
+      askHint.classList.remove('hidden');
+    }
+    marcarInvalido(true);
+    if (foco) foco.focus();
+  }
+
+  askToggle?.addEventListener('click', () => {
+    if (askForm) askForm.classList.remove('hidden');
+    askToggle.classList.add('hidden');
+    if (askDetalle) askDetalle.focus();
+  });
+
+  function enviarPeticion() {
+    const detalle = (askDetalle && askDetalle.value ? askDetalle.value : '').trim().slice(0, 500);
+    const email = (askEmail && askEmail.value ? askEmail.value : '').trim().slice(0, 120);
+    if (!detalle && !email) {
+      avisar('Vertel ons wat u nodig heeft of laat uw e-mailadres achter, dan laten we het u weten.', askDetalle);
+      return;
+    }
+    // Validación nativa: funciona igual en un input suelto que dentro de un <form>. Sin
+    // esto, "asdf" pasaba como email, se decía "Gracias" y quedaba un contacto inservible.
+    if (email && askEmail && typeof askEmail.checkValidity === 'function' && !askEmail.checkValidity()) {
+      avisar('Controleer uw e-mailadres: er lijkt iets te ontbreken.', askEmail);
+      return;
+    }
+    if (askHint) askHint.classList.add('hidden');
+    marcarInvalido(false);
+    const c = contar();
+    enviarLog({
+      q: searchRaw.slice(0, 120),
+      n: c.global,
+      n_filtrado: c.filtrado,
+      coming: c.coming,
+      tag: activeTag === 'all' ? '' : activeTag,
+      lang: 'nl',
+      path: location.pathname,
+      ts: Date.now(),
+      detalle: detalle,
+      email: email,
+      sin_resultados: true,
+      // El evento del formulario repite una `q` que ya se registró 1,2 s antes: lo nuevo
+      // son el detalle y el email. `origen` permite al informe no contarlo dos veces.
+      origen: 'form',
+      website: askWebsite && askWebsite.value ? askWebsite.value : '',
+    });
+    // El foco va a la confirmación ANTES de ocultar el formulario: si se oculta primero,
+    // el botón enfocado desaparece y el foco cae a <body> (el usuario de teclado acaba al
+    // principio del documento y no se entera de que su petición salió).
+    if (askThanks) {
+      askThanks.classList.remove('hidden');
+      askThanks.focus();
+    }
+    if (askForm) askForm.classList.add('hidden');
+  }
+
+  askSend?.addEventListener('click', enviarPeticion);
+  // Sin <form> no hay envío con Enter: sin esto, el teclado se queda sin salida.
+  askEmail?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); enviarPeticion(); }
+  });
+  askDetalle?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); enviarPeticion(); }
+  });
+
+  // ── Chips, paginación y reset ────────────────────────────────────────────────────
+  tagBtns.forEach((btn) => btn.addEventListener('click', () => {
+    activeTag = btn.dataset.tag || 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+  }));
+
+  loadMoreBtn?.addEventListener('click', () => { visibleCount += PER_PAGE; apply(); });
+  document.getElementById('pd-reset')?.addEventListener('click', () => {
+    activeTag = 'all';
+    if (searchInput) searchInput.value = '';
+    construirConsulta('');
+    visibleCount = PER_PAGE;
+    claveAplicada = '';
+    sincronizarBotonLimpiar();
+    reiniciarPanelPregunta();
+    updateTagButtons();
+    apply();
+  });
+
+  // Estado inicial (el navegador puede restaurar el valor del input al volver atrás).
+  construirConsulta(searchInput ? searchInput.value : '');
+  claveAplicada = claveBusqueda();
+  sincronizarBotonLimpiar();
+  apply();
+  // ── Placeholder animado (John, 2026-09-05): escribe ejemplos de búsqueda letra a letra
+  //    para que el buscador llame la atención. Se detiene al enfocar o al escribir, y con
+  //    «prefers-reduced-motion» deja el placeholder estático.
+  (function placeholderAnimado() {
+    const input = document.getElementById('pd-search-input');
+    if (!(input instanceof HTMLInputElement)) return;
+    const estatico = input.getAttribute('placeholder') || '';
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Ejemplos CORTOS (≤ 22 caracteres): en un móvil de 360 px el campo deja ~26 caracteres
+    // visibles y un ejemplo largo se recortaba a media palabra (John, 2026-09-05).
+    const ejemplos = [
+      'kostprijsberekening',
+      'food cost',
+      'HACCP',
+      'restaurantmanager',
+      'businessplan',
+      'voorraadbeheer',
+      'prompts voor chefs',
+      'personeelsplanning',
+      'patisserie openen',
+      'foodtruck',
+      'financieel plan',
+    ];
+    let i = 0, pos = 0, borrando = false, parado = false, timer = 0;
+    const parar = () => { parado = true; clearTimeout(timer); input.setAttribute('placeholder', estatico); };
+    const paso = () => {
+      if (parado || document.activeElement === input || input.value) return parar();
+      const texto = ejemplos[i % ejemplos.length];
+      if (!borrando) {
+        pos += 1;
+        input.setAttribute('placeholder', texto.slice(0, pos) + (pos < texto.length ? '|' : ''));
+        if (pos >= texto.length) { borrando = true; timer = window.setTimeout(paso, 1400); return; }
+        timer = window.setTimeout(paso, 55 + Math.round(Math.random() * 45));
+      } else {
+        pos -= 2;
+        if (pos <= 0) { pos = 0; borrando = false; i += 1; input.setAttribute('placeholder', ''); timer = window.setTimeout(paso, 350); return; }
+        input.setAttribute('placeholder', texto.slice(0, pos));
+        timer = window.setTimeout(paso, 28);
+      }
+    };
+    input.addEventListener('focus', parar, { once: true });
+    input.addEventListener('input', parar, { once: true });
+    timer = window.setTimeout(paso, 900);
+  })();
+</script>
