@@ -1,4 +1,17 @@
-# Recipe Costing Kit Pro — SPEC (F1 · 24-sep-2026 · sesión Claude Code)
+# Food Cost Kit Pro — SPEC (F1 · 24-sep-2026 · sesión Claude Code)
+
+> ## 🔴 NOMBRE CAMBIADO (John, 24-sep, noche): **Food Cost Kit Pro** · slug/productId **`food-cost-templates`**
+> «Recipe Costing Kit» era una traducción anclada a un slug reservado; los datos de SEO (§6 del research) dicen que el
+> mercado busca **«food cost»** (food cost templates 170/mes US y 30 UK frente a recipe costing template 30 y ≤ 10;
+> food cost calculator 1.900 frente a 880). Title: «Food Cost Kit Pro: 13 Food Cost Templates for Excel».
+> - URL: `/en/digital-products/food-cost-templates` (+ `/access`, `/library`).
+> - Env var: `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT`.
+> - JWT: `food-cost-templates-jwt`.
+> - Metadatos, pies, versión y cabecera del PDF: «Food Cost Kit Pro».
+> - Carpeta interna de trabajo: se queda en `scripts/productos-digitales/recipe-costing-kit/` (solo es la ruta del repo).
+> - **Cualquier «Recipe Costing Kit» que quede en código, datos, xlsx o PDF es un defecto.**
+> - Los **nombres de las plantillas y las pestañas** se revisan con el mismo criterio de intención (§1 D9 bis).
+
 
 > Primer producto de la **Tienda internacional en inglés**. Es la versión inglesa del **Kit de Escandallos Pro**
 > (`kit-escandallos`, 12 €, contenido v2.0). Doc canónico: `scripts/productos-digitales/TIENDA-INTERNACIONAL.md`.
@@ -39,14 +52,14 @@ John, 24-sep: «los archivos se tienen que adaptar a inglés y a métricas de us
 John, 24-sep: «el producto en inglés tiene que ser independiente al español al igual que los otros idiomas, con su
 propio dashboard, sus propios archivos… su propio producto en Stripe y var env en Netlify».
 
-| Pieza | Recipe Costing Kit Pro (EN) | Kit de Escandallos Pro (ES) |
+| Pieza | Food Cost Kit Pro (EN) | Kit de Escandallos Pro (ES) |
 |---|---|---|
-| productId | `recipe-costing-kit` | `kit-escandallos` |
-| Landing | `/en/digital-products/recipe-costing-kit` | `/kit-escandallos` |
-| Acceso y dashboard | `…/recipe-costing-kit/access` y `…/library`; `RecipeCostingKitDashboard.tsx`; JWT `recipe-costing-kit-jwt` | `/kit-escandallos-access` y `-library` |
-| Ficheros | `astro-site/public/dl/recipe-costing-kit/` (14 xlsx + PDF = 13 plantillas + 2 bonus, 100 % en inglés) | `…/dl/kit-escandallos/` (no se tocan) |
+| productId | `food-cost-templates` | `kit-escandallos` |
+| Landing | `/en/digital-products/food-cost-templates` | `/kit-escandallos` |
+| Acceso y dashboard | `…/food-cost-templates/access` y `…/library`; `RecipeCostingKitDashboard.tsx`; JWT `food-cost-templates-jwt` | `/kit-escandallos-access` y `-library` |
+| Ficheros | `astro-site/public/dl/food-cost-templates/` (14 xlsx + PDF = 13 plantillas + 2 bonus, 100 % en inglés) | `…/dl/kit-escandallos/` (no se tocan) |
 | Stripe | **producto y Payment Link propios, en USD** (los crea John) | los suyos, en EUR |
-| Netlify | **env var propia** `VITE_STRIPE_PAYMENT_LINK_RECIPE_COSTING_KIT`, scope Builds, **todos los contextos** [T15]; la da de alta Claude con el link de John | `VITE_STRIPE_PAYMENT_LINK_ESCANDALLOS` |
+| Netlify | **env var propia** `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT`, scope Builds, **todos los contextos** [T15]; la da de alta Claude con el link de John | `VITE_STRIPE_PAYMENT_LINK_ESCANDALLOS` |
 | Backend | entradas propias con `lang: 'en'` (verify, resend, downloads, admin y su desplegable, precios, links); email de acceso en inglés | las suyas |
 | Compra | cada producto tiene su propio acceso. ⚠️ Que una sesión pagada de uno **no** abra el otro solo se garantiza con `PURCHASE_VALIDATION=strict`; hoy está en `soft`, que es decisión aparcada por John (§5) [T8] | — |
 
@@ -80,8 +93,8 @@ compra nuevo, una hoja nueva) **se propone a John antes de hacerlo**.
 
 | # | Tema | Decisión |
 |---|---|---|
-| D1 | Slug | `recipe-costing-kit` → `/en/digital-products/recipe-costing-kit` (+ `/access`, `/library`) [research §6.4] |
-| D2 | Nombre [T13, M15, R2T-21] | **Recipe Costing Kit Pro**, gemelo de «Kit de Escandallos Pro». Ya lo llevan la tarjeta del hub EN, el catálogo, los 26 banners y los spokes EN. `titlePre + titleGold` y `schema.productName` = «Recipe Costing Kit Pro» **exactos**; la cifra va en `titlePost` o en la descripción. Se propaga a `<title>`, dashboard, email, changelog, metadatos de los xlsx y productLabel. Title SEO: `Recipe Costing Kit Pro: 13 Food Cost Templates for Excel` (+ «& Google Sheets» solo si pasa el test, D16). Gate: `nombre-gate.py --only recipe-costing-kit` |
+| D1 | Slug | `food-cost-templates` → `/en/digital-products/food-cost-templates` (+ `/access`, `/library`) [research §6.4] |
+| D2 | Nombre [T13, M15, R2T-21] | **Food Cost Kit Pro**, gemelo de «Kit de Escandallos Pro». Ya lo llevan la tarjeta del hub EN, el catálogo, los 26 banners y los spokes EN. `titlePre + titleGold` y `schema.productName` = «Food Cost Kit Pro» **exactos**; la cifra va en `titlePost` o en la descripción. Se propaga a `<title>`, dashboard, email, changelog, metadatos de los xlsx y productLabel. Title SEO: `Food Cost Kit Pro: 13 Food Cost Templates for Excel` (+ «& Google Sheets» solo si pasa el test, D16). Gate: `nombre-gate.py --only food-cost-templates` |
 | D3 | Precio | **$19**, pago único, acceso de por vida [research §5.2] |
 | D4 | Anclas comerciales | **Igual que en español** (John, 24-sep): precio tachado, % de descuento, nota de lanzamiento, «#1», valor de los bonos, badge «Best Seller». Solo se convierten y suben al escalón $…9 los importes **base**: el `priceOld` y el valor de cada bono. Todo lo demás se **deriva**: valor de bonos = suma de bonos; total = priceOld + bonos; ahorro = priceOld − 19; % = 1 − 19/priceOld. Gate con esas 4 identidades, y `cta.items` repite los valores de `bonus.items` [M3]. **Sin** testimonios, reseñas, rating ni `aggregateRating` (decisión del 23-sep, TIENDA §3.5) |
 | D5 | Moneda en los xlsx | Formato numérico **sin símbolo** (`#,##0.00`; el 11 `#,##0`; precio por unidad base del 13, 4 decimales). Rótulos sin «(€)». Instrucciones: «amounts are in your currency». Cero `€` en todo el libro. **`$` solo** dentro de celdas de TEXTO de Instrucciones y notas, en ejemplos US («a $29.99 bag of flour»); nunca en `number_format` ni en celdas numéricas [T9, R2T-14] |
@@ -93,13 +106,49 @@ compra nuevo, una hoja nueva) **se propone a John antes de hacerlo**.
 | D11 | Precios de ejemplo [M9] | `mercado_en.json` lleva **una fila por ingrediente**: los 126 de las recetas, 15 del BONUS, 8 de `Bottle Sizes` y los ejemplos de los libros 12 (pieza y subproductos) y 13 [R2T-08, R2-10, R2-18]. Cada fila tiene fuente (BLS, USDA, distribuidor…) o `[estimado]`. Gate: falla si falta alguna. **Nunca** se fabrica un precio de ingrediente para que cuadre un porcentaje. En el xlsx no se fecha ningún precio: una línea en Instrucciones, «Sample prices are illustrative U.S. references — replace them with your own supplier invoices». Nunca se convierten los € del ES |
 | D12 | Benchmarks, **fuente única** [M6] | Fine dining 30-35 % · casual 28-32 · fast casual 27-32 · café 25-30 · catering 28-35 · food truck 28-35 · hotel F&B 30-35 (sin fuente, se mantiene) · pastry & bakery 25-35 · bar **18-24 %** (pour cost) · delivery 28-32 % sobre neto con **comisión 25 %** por defecto (nota «UK ≈ 30 %»). Alimenta la calculadora 10, las Instrucciones del 04 al 08, la landing (grid y FAQ) y la sección de benchmarks del bono. Gate de texto **acotado** [R2T-13, R2-08]: solo compara los rangos que van junto a una etiqueta de tipo de local de D12, los de las filas de la calculadora y los del grid y la FAQ de la landing. Lista blanca en `mercado_en.json` para pour cost por categoría, prime cost, comisión, service charge, objetivos de desperdicio del 09, rendimientos del 12 y cadenas cotizadas |
 | D13 | Fechas y papel | **Toda** celda de fecha pasa a fecha corta del sistema (`numFmtId 14`), no a un `mm/dd` fijo [M17]: 93 en 06, 09 y BONUS, más las de 12 y 13. Los libros 12 y 13 ES **nacen** con `numFmtId 14`. Los gates cuentan por regla, no por número [R2-11]. Meses en inglés. **US Letter** (`paperSize 1`), mismo ajuste a una página de ancho. Pie «AI Chef Pro · aichef.pro · Page &P of &N» |
-| D14 | Versión y actualizaciones [R2T-16, R2-05] | El EN nace del ES **v2.1**: «Version 2.1 · <mes de publicación> 2026 · aichef.pro/en/digital-products/recipe-costing-kit · info@aichef.pro». `aplicar_en.py` resuelve el mes al publicar. Changelog EN: «first English edition of content 2.1». **Regla:** cada versión nueva del ES se porta al EN en la siguiente sesión EN de la rotación, con su changelog y su broadcast EN [M22] |
+| D14 | Versión y actualizaciones [R2T-16, R2-05] | El EN nace del ES **v2.1**: «Version 2.1 · <mes de publicación> 2026 · aichef.pro/en/digital-products/food-cost-templates · info@aichef.pro». `aplicar_en.py` resuelve el mes al publicar. Changelog EN: «first English edition of content 2.1». **Regla:** cada versión nueva del ES se porta al EN en la siguiente sesión EN de la rotación, con su changelog y su broadcast EN [M22] |
 | D15 | «Menu engineering» [M14] | Las plantillas no hacen análisis de menú; el bono sí trae una **introducción** (paso 5, matriz Kasavana & Smith). La landing puede decir «includes a basic menu-engineering step in the 30-day guide» y nada más. Se corrige TIENDA §2 con este matiz |
 | D16 | Google Sheets | Hasta que pase el test real, **solo «Microsoft Excel»** en `compatApps`, `compatPills`, FAQ, title y dashboard [M8]. Consentimiento de John para usar su Drive: **pendiente**; se pregunta cuando existan los ficheros |
 | D17 | **Dos plantillas nuevas, ES y EN a la vez** (John, 24-sep) | Ficheros **independientes**; no son hojas dentro de 01-08. Así no se reescribe la columna de precio de 71 hojas ni se enlazan libros separados, algo que no funciona bien entre ficheros ni en Google Sheets. **Primero en español** (Kit de Escandallos Pro **v2.1**, §2.0) y el EN los recibe por el mismo pipeline de duplicado. `12-test-de-rendimiento.xlsx` → `12-yield-test.xlsx` · `13-lista-precios-ingredientes.xlsx` → `13-ingredient-price-list.xlsx`. El kit pasa de 11 a **13 plantillas** + 2 bonus (landing, hub, dashboard y SEO: «13 Food Cost Templates»). Precio **sin cambio**: 12 € y $19. La subida a $24 del research queda para cuando haya reseñas EN |
 | D18 | Licencia (John, 24-sep; precisada por R2-17) | **Un negocio (con todos sus locales) por compra.** Se puede usar con tus clientes, pero **sin entregarles copias**: cada negocio compra la suya. Escuelas: licencia de aula en info@aichef.pro. Va en una FAQ de la landing EN, en una línea de Instrucciones de los xlsx EN y en las **condiciones de compra EN** (§5.4). En ES no se añade (no se ha pedido). Aviso en TIENDA: las FAQ de licencia de los kits hermanos («todos tus locales», «ideal para consultores») se revisan contra D18 al duplicarlos |
 | D19 | Ventas netas [research 8b-A C1] | «Net sales» = **sin impuesto y sin service charge ni propinas** en los textos del 10, el 11, el BONUS, el PDF e Instrucciones. UK: Employment (Allocation of Tips) Act 2023 y VAT Notice 709/1. US: DOL Fact Sheet #15 |
 | D20 | De la factura al precio por unidad [8b-B §1.6] | Bloque de Instrucciones en 01-08, «From invoice to price per unit»: catch weight → `lb`/`kg`; caja de la lista → precio de la caja tal cual; caja fuera de la lista → `lb`/`each` con precio ÷ contenido (*pack/size*); lata #10 por peso neto; aceite de freidora al Q-factor; precios sin impuesto recuperable. Más textos breves: yield propio, cooking loss, escalado, subrecetas y pesar los secos. En `Trim Loss Factors`, A2 remite al **12 Yield Test** y al USDA Food Buying Guide |
+
+
+### D9 bis — Nombres adaptados a la intención de búsqueda (decisión de Claude, 24-sep, noche)
+
+Volúmenes medidos con DataForSEO el 24-sep (US 2840/en · UK 2826/en), con la SERP comprobada en los casos dudosos. Se
+aplica la regla de la memoria `feedback_nombres-adaptados-a-intencion-no-traducidos`: la palabra que se busca y que el
+profesional entiende, no la traducción. **Sustituye** a los nombres de fichero del research §1.2 y a los títulos de
+las tarjetas.
+
+| # | Título en landing y dashboard | Fichero | Datos (US / UK) |
+|---|---|---|---|
+| — | **Food Cost Kit Pro** (producto) | slug `food-cost-templates` | food cost templates 170 / 30; recipe costing template 30 / ≤ 10 |
+| 01 | Recipe Cost Card & Plate Cost Calculator | `01-recipe-cost-card.xlsx` | plate cost calculator 50 · recipe cost card 30 (término de escuela) |
+| 02 | Tasting Menu Costing | `02-tasting-menu-costing.xlsx` | sin volumen: prima la claridad |
+| 03 | Prix Fixe & Set Menu Costing | `03-prix-fixe-set-menu-costing.xlsx` | prix fixe (US) / set menu (UK) |
+| 04 | Pour Cost Calculator (Cocktails & Drinks) | `04-pour-cost-calculator.xlsx` | pour cost calculator 260 · liquor/drink cost calculator 140 |
+| 05 | Bakery & Cake Pricing Calculator | `05-bakery-cake-pricing.xlsx` | cake pricing calculator 1.600 / 140 (SERP: pastelerías y reposteros que venden) · baking cost calculator 260 · bakery pricing calculator 170 |
+| 06 | Catering Pricing Calculator & Quote | `06-catering-pricing-quote.xlsx` | catering pricing calculator 210 · catering quote template 210 |
+| 07 | Café & Brunch Menu Costing | `07-cafe-brunch-costing.xlsx` | sin volumen |
+| 08 | Food Truck Menu Pricing & Break-Even | `08-food-truck-pricing-break-even.xlsx` | food truck menu pricing 140 |
+| 09 | Food Waste Log | `09-food-waste-log.xlsx` | food waste log 170 · waste log template 140 |
+| 10 | Menu Pricing Calculator | `10-menu-pricing-calculator.xlsx` | menu pricing calculator 1.900 / 260 |
+| 11 | Food Cost Percentage Tracker | `11-food-cost-percentage-tracker.xlsx` | food cost percentage calculator 260 («monthly food cost» 720 = presupuesto doméstico: descartado) |
+| 12 | Yield Test (Butcher & Cooking Loss) | `12-yield-test.xlsx` | yield test 70 · butcher yield test 20 («yield percentage calculator» 1.600 = química: descartado) |
+| 13 | Ingredient Price Tracker | `13-ingredient-price-tracker.xlsx` | «tracker» describe la alerta de subidas; food price tracker 40 |
+| B1 | BONUS: Actual vs Theoretical Food Cost (Inventory & Waste) | `BONUS-actual-vs-theoretical-food-cost.xlsx` | actual vs theoretical food cost 30 |
+| B2 | BONUS: How to Reduce Food Cost in 30 Days (PDF) | `BONUS-reduce-food-cost-30-days.pdf` | how to reduce food cost 30 / 20 |
+
+**Pestañas que cambian** (el resto, las de `mapas.py`):
+- 10 → `Menu Pricing Calculator`;
+- 13 → `Price Tracker`.
+
+El título interior de cada libro (fila 1 de Instrucciones y metadato `title`) = título de la tabla.
+
+**Gate nuevo:** cero «Recipe Costing» y cero `recipe-costing-kit` en los xlsx, en el PDF y en los datos EN, salvo la
+ruta interna de la carpeta de trabajo.
 
 ## 2. Entregables (F2)
 
@@ -187,14 +236,14 @@ del PR. Cuenta dentro del tope de 2 rondas por artefacto [R2-16].
 
 - **Fuente = los xlsx publicados** en `astro-site/public/dl/kit-escandallos/`: los 12 de la v2.0 (`ed45f35`) **+ los
   2 nuevos de la v2.1** (§2.0), y el `bono-guia-food-cost-30-dias.md`. **No** se usa `scripts/generate-escandallos.py`: es la v1.0 (inventario §2).
-- Salida: `astro-site/public/dl/recipe-costing-kit/` (14 xlsx + PDF). **Los ficheros ES no se tocan.**
+- Salida: `astro-site/public/dl/food-cost-templates/` (14 xlsx + PDF). **Los ficheros ES no se tocan.**
 - Código en `scripts/productos-digitales/recipe-costing-kit/`:
   - `extraer_textos.py` → `textos_es.json` (cadenas con contexto) **y `censo_es.json`**: fechas, literales, DV, CF, hojas y áreas de impresión por libro, generado del ES v2.1 publicado. Los gates comparan contra ese censo, no contra recuentos fijos de la v2.0 [R2T-17, R2-11].
   - `mapas.py`: hojas, claves-dato, literales y la `Conversions` generada (D7).
   - `textos_en.json`: traducción cadena a cadena por subagentes Anthropic; nada de `bridge.py` (regla 1bis).
   - `mercado_en.json`: sobrescrituras de celda con fuente o `[estimado]`, más **la lista cerrada de «textos con cifra derivada»** [M5]. Son las celdas de Instrucciones y notas que citan cifras que la versión EN cambia: comisión, tamaños de botella y lata, IVA, precios, ratio de camareros, «~21 %», «unos 3 puntos». Se **reescriben** con la cifra recalculada sobre la hoja EN final; no se traducen literalmente.
   - `aplicar_en.py`: copia → hojas → claves → `Conversions` → textos → literales → formatos → mercado → metadatos (los 6 campos de docProps, incluido `category` «AI Chef Pro · Digital products» [T9]), pie y papel → `inject_cache.py` **al final**. Idempotente y con `--dry-run` sobre el scratchpad.
-- En el mismo commit que publica `dl/recipe-costing-kit/`, `recipe-costing-kit` entra en `EXCLUIDOS` de
+- En el mismo commit que publica `dl/food-cost-templates/`, `food-cost-templates` entra en `EXCLUIDOS` de
   `postprocess-transversal.py`. Si no, un `all` le forzaría A4 y metadatos en español [T12].
 - Ejecución en el **Mac, en serie, con el vigilante**. **Excepción registrada** a la política de 3 fases (F2 de un M al
   VPS): es trabajo de kit xlsx, el mismo caso que la decisión del 20-sep para los kits réplica (openpyxl no calienta y
@@ -303,8 +352,8 @@ que reconstruir es los productos a nivel de archivos. No me complicas la vida».
 **Qué se hace en la F3 (y nada más):**
 1. **Landing EN = la landing ES replicada.**
    - Misma plantilla `KitExcelLandingPage` (ya acepta `lang`).
-   - `data/productos-en/kits/recipe-costing-kit.ts` = copia de `kit-escandallos.ts` traducida, con los datos de producto EN (13 plantillas, precio y anclas como en ES, D4; sin reseñas ni testimonios).
-   - Wrapper `pages/en/digital-products/recipe-costing-kit.astro` = copia de `pages/kit-escandallos.astro` con `lang="en"`.
+   - `data/productos-en/kits/food-cost-templates.ts` = copia de `kit-escandallos.ts` traducida, con los datos de producto EN (13 plantillas, precio y anclas como en ES, D4; sin reseñas ni testimonios).
+   - Wrapper `pages/en/digital-products/food-cost-templates.astro` = copia de `pages/kit-escandallos.astro` con `lang="en"`.
 2. **Acceso y dashboard.**
    - `…/access.astro` con el gate compartido `ProductAccessGate`, que ya habla inglés.
    - `…/library.astro` + `RecipeCostingKitDashboard.tsx` = copia traducida de `KitEscandallosDashboard.tsx`.
@@ -312,8 +361,8 @@ que reconstruir es los productos a nivel de archivos. No me complicas la vida».
 3. **Pagos: los mismos de siempre.**
    - **Stripe:** el Payment Link de John → env var en Netlify → `sync-payment-links.py` / `sync-product-prices.py`.
    - **NOWPayments:** el mismo `CryptoPayButton`, con sus textos en inglés; la página de vuelta `/en/crypto-payment` = copia traducida de `/pago-cripto`.
-4. **Backend:** la entrada `recipe-costing-kit` con `lang: 'en'` en los registros donde está `kit-escandallos` (zona-app, verify, resend, downloads, admin), con el email de acceso traducido.
-5. **Ficheros:** `aplicar_en.py --real` → `dl/recipe-costing-kit/`.
+4. **Backend:** la entrada `food-cost-templates` con `lang: 'en'` en los registros donde está `kit-escandallos` (zona-app, verify, resend, downloads, admin), con el email de acceso traducido.
+5. **Ficheros:** `aplicar_en.py --real` → `dl/food-cost-templates/`.
 6. **Publicar:** `FAMILIAS.en.vivo = true` (la tarjeta del hub EN pasa sola a viva) y el hreflang ES↔EN.
 7. **Gates** de siempre contra la preview, compra de prueba y broadcast EN (regla de un correo por producto nuevo).
 
@@ -333,7 +382,7 @@ que reconstruir es los productos a nivel de archivos. No me complicas la vida».
 4. **Ejemplos creíbles [T10, M9].** Por receta, un **precio de carta US de referencia** con fuente o `[estimado]` en `mercado_en.json`. El food cost implícito (coste por ración ÷ ese precio) cae en el rango D12 de su tipo de local; el pour cost de las 4 recetas del 04, entre 18 y 24 %. Si una receta cae fuera, se corrige la **cantidad** o el precio de carta de referencia, **nunca** un precio de ingrediente con fuente. Además, `mercado_en.json` completo (D11).
 5. **Formato.** Letter; cero formatos con `€` o `dd/mm`; **toda** celda de fecha con `numFmtId 14` (contada contra `censo_es.json`); línea de versión D14 en todos; `$` solo en texto de Instrucciones y notas (D5).
 6. **Coherencia de texto.** Rangos de D12 [M6]; cifras derivadas recalculadas [M5]; nombres de pestaña en textos (§2.2).
-7. `censo-entregables.py --only recipe-costing-kit --fail` en 0, con Letter admitido.
+7. `censo-entregables.py --only food-cost-templates --fail` en 0, con Letter admitido.
 7bis. **Libros 12 y 13** (ES v2.1 y EN):
    - pycel sin errores.
    - 12: rendimiento entre 0 y 1 y factor de coste ≥ 1. El coste por ración del 12 = el de la fila 5 de la 01 alimentada con «Merma % para tu escandallo» (tolerancia 0,5 %) [R2-02, R2-13].
@@ -346,7 +395,7 @@ que reconstruir es los productos a nivel de archivos. No me complicas la vida».
 - Gates: `tienda-gate.py` (estático y `--base`), `gate-flujo-postpago.py` LIVE, `robots-gate`, `whatsapp-gate`, `miselup-gate`, `datafast-gate`, `nombre-gate`, y los de T11.
 - **`audit-payment-links.py`**, más una consulta a Stripe del Price: currency usd, unit_amount 1900 = `product-prices.ts` [T15].
 - Gate de anclas D4 y gate de banners y spokes (§3).
-- Compra de prueba: email EN, dashboard, **15 descargas** (13 plantillas + BONUS xlsx + PDF) y log `[purchase-validation]` con match en `recipe-costing-kit` [T8, R2T-09].
+- Compra de prueba: email EN, dashboard, **15 descargas** (13 plantillas + BONUS xlsx + PDF) y log `[purchase-validation]` con match en `food-cost-templates` [T8, R2T-09].
 - `fase8c-libreria-en-gate.py --todos`.
 
 ## 5. Pendiente de John (simplificado por John el 24-sep)
@@ -360,9 +409,9 @@ Memoria: `feedback_tienda-en-sin-complicar-fiscalidad`.
 - comprobación de la moneda de liquidación y `tax_behavior`.
 
 **Stripe:**
-- Claude entregó el paquete el 24-sep: nombre «Recipe Costing Kit Pro», descripción en prosa de 254 caracteres, **$19** (si Stripe no deja USD, **17 €**) y redirección a `https://aichef.pro/en/digital-products/recipe-costing-kit/access?session_id={CHECKOUT_SESSION_ID}`.
+- Claude entregó el paquete el 24-sep: nombre «Food Cost Kit Pro», descripción en prosa de 254 caracteres, **$19** (si Stripe no deja USD, **17 €**) y redirección a `https://aichef.pro/en/digital-products/food-cost-templates/access?session_id={CHECKOUT_SESSION_ID}`.
 - John crea el producto y el Payment Link y devuelve el enlace `buy.stripe.com`.
-- Claude da de alta `VITE_STRIPE_PAYMENT_LINK_RECIPE_COSTING_KIT` en Netlify y regenera `payment-links.ts` / `product-prices.ts`.
+- Claude da de alta `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT` en Netlify y regenera `payment-links.ts` / `product-prices.ts`.
 - ⚠️ Si el link sale en EUR: `product-prices.ts` con `eur`, y la landing y el hub EN muestran «€» en lugar de «$» (hay que parametrizarlo en la F3).
 
 **Tareas pendientes que no bloquean el lanzamiento:**
