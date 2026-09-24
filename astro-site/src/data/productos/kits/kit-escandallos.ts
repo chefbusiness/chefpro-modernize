@@ -12,18 +12,18 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_ESCANDALLOS',
 
   seo: {
-    title: 'Kit Escandallos Pro: 11 Plantillas Excel con Food Cost Automatico | AI Chef Pro',
+    title: 'Kit Escandallos Pro: 13 Plantillas Excel con Food Cost Automatico | AI Chef Pro',
     description:
-      '11 plantillas de escandallos Excel profesionales: food cost automatico, mermas precargadas, calculadora PVP y simulador de rentabilidad. Para hosteleria. Solo 12 euros.',
+      '13 plantillas de escandallos Excel profesionales: food cost automatico, mermas precargadas, calculadora PVP y simulador de rentabilidad. Para hosteleria. Solo 12 euros.',
     keywords:
       'plantilla escandallo excel, plantilla escandallo, simulador escandallos, calcular food cost restaurante, plantilla food cost excel, escandallo hosteleria, calculadora PVP restaurante, mermas restaurante excel, plantillas escandallos gratis, escandallo excel, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-escandallos.jpg',
   },
 
   schema: {
-    productName: 'Kit de Escandallos Pro — 11 Plantillas Excel Profesionales',
+    productName: 'Kit de Escandallos Pro — 13 Plantillas Excel Profesionales',
     productDescription:
-      '11 plantillas de escandallos con fórmulas automáticas, mermas precargadas y calculadora de PVP. Para chefs, gerentes y dueños de restaurante.',
+      '13 plantillas de escandallos con fórmulas automáticas, mermas precargadas y calculadora de PVP. Para chefs, gerentes y dueños de restaurante.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -62,6 +62,10 @@ const data: KitExcelData = {
       {
         q: '¿Los datos de merma son fiables?',
         a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 21 categorías de ingredientes con mermas mínimas, máximas y típicas.',
+      },
+      {
+        q: '¿Qué aportan el Test de Rendimiento y la Lista de Precios?',
+        a: 'El Test de Rendimiento convierte el pesaje de una pieza o de una elaboración en la merma real que llevas a tu escandallo. La Lista de Precios reúne los precios de tus proveedores y te avisa cuando un ingrediente sube. No actualiza sola las fichas: el precio nuevo se copia a cada ficha con Pegado especial → Valores.',
       },
       {
         q: '¿Puedo personalizar las plantillas?',
@@ -111,9 +115,9 @@ const data: KitExcelData = {
     titlePost: ' con Plantillas Excel Profesionales',
     // sin titleSubtitle (Forma A: sin subtítulo bloque)
     description:
-      '11 plantillas de escandallos en Excel con fórmulas automáticas, mermas precargadas y calculadora de PVP. Calcula el food cost real de cada plato y controla los costes de tu restaurante, pastelería, catering o food truck desde el primer día.',
+      '13 plantillas de escandallos en Excel con fórmulas automáticas, mermas precargadas y calculadora de PVP. Calcula el food cost real de cada plato y controla los costes de tu restaurante, pastelería, catering o food truck desde el primer día.',
     checkItems: [
-      '11 plantillas Excel profesionales con fórmulas automáticas',
+      '13 plantillas Excel profesionales con fórmulas automáticas',
       'Mermas estándar de la industria precargadas',
       'Calculadora de PVP para 10 tipos de establecimiento',
       'Dashboard de Food Cost mensual con gráfico de evolución',
@@ -130,7 +134,7 @@ const data: KitExcelData = {
   },
 
   grid: {
-    countGold: '11',
+    countGold: '13',
     headingRest: ' Plantillas Profesionales',
     subtitle:
       'Cada plantilla de escandallo incluye fórmulas automáticas, mermas precargadas, zona para foto del plato y formato listo para imprimir.',
@@ -147,6 +151,8 @@ const data: KitExcelData = {
       { icon: 'TrendingDown', title: 'Control de Mermas', desc: 'Sistema de registro semanal de desperdicio real en 16 categorías de producto (carnes, pescados, frutas, lácteos…), con objetivo mínimo, típico y máximo por categoría. El semáforo marca OK o ALERTA en cuanto el desperdicio real supera el objetivo. Incluye gráfico de evolución del desperdicio a 12 semanas.' },
       { icon: 'Calculator', title: 'Calculadora de PVP', desc: 'Introduce el coste de cualquier plato y obtén el PVP recomendado para 10 tipos de establecimiento: restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel, pastelería y delivery. Cada uno con su rango de food cost objetivo del sector.' },
       { icon: 'BarChart3', title: 'Dashboard Mensual', desc: 'Panel de control con seguimiento de food cost durante 12 meses consecutivos. Registra stock inicial, compras, stock final y ventas: el food cost sale del CONSUMO, no de las compras — una compra fuerte a fin de mes ya no te mueve el indicador. Incluye gráfico de evolución anual y alertas cuando el food cost supera tu límite. Tu cockpit financiero de cocina.' },
+      { icon: 'Scale', title: 'Test de Rendimiento', desc: 'Pesa una pieza entera y lo que sale al limpiarla (despiece), o una elaboración antes y después de cocinarla (cocción), y la hoja te da la merma real que llevas a tu escandallo, con el valor de los subproductos ya descontado. Calcula también el coste por kg útil, las raciones que salen de la pieza y un factor de coste para repercutir una subida del proveedor sin repetir el test. Viene con el solomillo de la plantilla 01 y la smash burger de la 08 como ejemplo.' },
+      { icon: 'Euro', title: 'Lista de Precios de Ingredientes', desc: 'Todos los ingredientes de las plantillas del kit en una sola hoja, con proveedor, formato de compra y precio por kg, litro o unidad. Apunta el precio de la última factura y la hoja lo compara con el anterior: marca en rojo los ingredientes que suben por encima de tu umbral (5 % por defecto). No actualiza sola las fichas: copias el precio nuevo a cada una con Pegado especial → Valores.' },
     ],
   },
 
@@ -180,7 +186,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 11 plantillas, recibirás estos recursos adicionales — valorados en €46',
+      'Además de las 13 plantillas, recibirás estos recursos adicionales — valorados en €46',
     items: [
       {
         icon: 'BookOpen',
@@ -231,6 +237,10 @@ const data: KitExcelData = {
       a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 21 categorías de ingredientes con mermas mínimas, máximas y típicas. Puedes ajustarlas a tu realidad.',
     },
     {
+      q: '¿Qué aportan el Test de Rendimiento y la Lista de Precios?',
+      a: 'El Test de Rendimiento (plantilla 12) convierte el pesaje de una pieza (despiece) o de una elaboración (cocción) en la merma real que escribes en tu escandallo, en lugar de la merma estándar. La Lista de Precios (plantilla 13) reúne los precios de tus proveedores en una sola hoja, calcula el precio por kg, litro o unidad y te avisa cuando un ingrediente sube por encima del umbral que elijas. No actualiza sola las fichas, porque cada plantilla es un archivo independiente: copias el precio nuevo a la ficha con Pegado especial → Valores.',
+    },
+    {
       q: '¿Puedo personalizar las plantillas?',
       a: 'Totalmente. Puedes añadir ingredientes, modificar precios, ajustar mermas, cambiar el food cost objetivo y añadir tus propias fotos de platos. Las celdas editables están marcadas en verde.',
     },
@@ -247,9 +257,9 @@ const data: KitExcelData = {
   cta: {
     heading: 'Deja de Perder Dinero en tu Food Cost',
     subtitle:
-      '11 plantillas profesionales por menos de lo que cuesta un menú del día. Empieza a controlar tus costes hoy.',
+      '13 plantillas profesionales por menos de lo que cuesta un menú del día. Empieza a controlar tus costes hoy.',
     items: [
-      '11 plantillas Excel profesionales con fórmulas automáticas',
+      '13 plantillas Excel profesionales con fórmulas automáticas',
       'Mermas estándar de la industria precargadas (21 categorías)',
       'Calculadora de PVP para 10 tipos de establecimiento',
       'Dashboard de Food Cost mensual con gráfico de evolución',
@@ -285,7 +295,7 @@ const data: KitExcelData = {
     discountBadge: '-75%',
     heroNote: 'Precio especial de lanzamiento. Sube pronto',
     buyBoxNote: 'Precio especial de lanzamiento — 75% de descuento',
-    bonusTotalLabel: 'Valor total del kit completo: €95 — 11 plantillas (€49) + 2 bonos (€46)',
+    bonusTotalLabel: 'Valor total del kit completo: €95 — 13 plantillas (€49) + 2 bonos (€46)',
     bonusSaveLine: '¡Ahorra €37 HOY!',
   },
 
@@ -301,7 +311,7 @@ const data: KitExcelData = {
     { href: '/manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.1 · septiembre 2026',
 
   alreadyBought: {
     product: 'kit-escandallos',

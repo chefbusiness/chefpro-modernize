@@ -4,6 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   UtensilsCrossed, Wine, CakeSlice, Truck, Coffee,
   BarChart3, Calculator, TrendingDown, ClipboardList, ChefHat, PartyPopper, BookOpen,
+  Scale, ReceiptText,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -24,6 +25,8 @@ const TEMPLATES = [
   { key: 'mermas', icon: TrendingDown, title: 'Control de Mermas', desc: 'Registro semanal del desperdicio en 16 categorías, con semáforo y gráfico de evolución.' },
   { key: 'calculadora-pvp', icon: Calculator, title: 'Calculadora de PVP', desc: 'PVP recomendado para 10 tipos de establecimiento.' },
   { key: 'dashboard', icon: BarChart3, title: 'Dashboard Mensual', desc: 'Seguimiento de food cost durante 12 meses consecutivos.' },
+  { key: 'test-rendimiento', icon: Scale, title: 'Test de Rendimiento', desc: 'Despiece y cocción: pesa la pieza y obtén la merma real que llevas a tu escandallo.' },
+  { key: 'lista-precios', icon: ReceiptText, title: 'Lista de Precios de Ingredientes', desc: 'Precios de tus proveedores en una sola hoja, con alerta cuando un ingrediente sube.' },
   { key: 'bonus-mermas', icon: TrendingDown, title: 'BONUS: Mermas + Inventario', desc: 'Plantilla avanzada de control de mermas con inventario integrado.' },
   { key: 'bonus-guia', icon: BookOpen, title: 'BONUS: Guía Food Cost en 30 Días', desc: 'Guía paso a paso en PDF para bajar tu food cost 3-7 puntos en un mes.' },
 ];
@@ -82,7 +85,7 @@ export default function KitEscandallosDashboard() {
             <ProductVersionBadge productId="kit-escandallos" />
           </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Tus 11 plantillas + 2 bonus, listas para descargar.
+            Tus 13 plantillas + 2 bonus, listas para descargar.
             Acceso de por vida — incluye futuras actualizaciones.
           </p>
         </section>
@@ -91,7 +94,7 @@ export default function KitEscandallosDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              11 Plantillas + 2 Bonus · Descarga Directa
+              13 Plantillas + 2 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

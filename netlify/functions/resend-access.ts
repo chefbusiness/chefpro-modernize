@@ -27,7 +27,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/kit-escandallos-access',
     emailSubject: 'Tu acceso al Kit de Escandallos Pro',
     emailTitle: 'Accede a tu Kit de Escandallos Pro',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 11 plantillas Excel:',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 13 plantillas Excel + 2 bonus:',
     emailCta: 'Acceder a mis Plantillas',
   },
   'pack-appcc': {

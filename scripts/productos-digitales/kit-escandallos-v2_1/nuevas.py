@@ -24,6 +24,7 @@ import collections
 import copy
 import datetime
 import json
+import math
 import os
 import sys
 import unicodedata
@@ -228,7 +229,7 @@ DESP = {
     'tabla_cab': 13, 'd0': 14, 'd1': 25, 'perdida': 26,
     'peso_util': 'C29', 'valor_sub': 'C30', 'neto': 'C31', 'rend': 'C32',
     'coste_kg_util': 'C33', 'factor': 'C34', 'merma': 'C35', 'porcion': 'C36',
-    'coste_porcion': 'C37', 'nota': 39,
+    'coste_porcion': 'C37', 'raciones': 'C38', 'nota': 39,
 }
 COC = {
     'elaboracion': 'C5', 'fecha': 'C6', 'crudo': 'C7', 'coste_kg': 'C8',
@@ -349,6 +350,13 @@ def hoja_despiece(wb, d):
     calculada(ws, 'C37', '=IFERROR(C36/C11*C33,"")', motor.FMT_EUR, bold=True,
               size=12, relleno=motor.ORO)
     nota_celda(ws, 37, 'Porción × coste por kg útil. La ficha dará lo mismo.')
+    # R1 CH-12 (decisión de Claude en la publicación): la cuenta de raciones pasa de
+    # línea de Instrucciones a fila calculada. Hacia abajo, porque media ración no se
+    # sirve; el ROUND previo evita que la coma flotante deje 9,9999999 y reste una.
+    etiqueta(ws, 38, 'Raciones por pieza', bold=True)
+    calculada(ws, DESP['raciones'], '=IFERROR(ROUNDDOWN(ROUND(C29*C11/C36,6),0),"")',
+              '#,##0', bold=True)
+    nota_celda(ws, 38, 'Peso útil ÷ porción, redondeado hacia abajo.')
 
     nota_hoja(ws, DESP['nota'], d['nota_hoja'], 'F', 125, size=9, color=GRIS_NOTA)
     return ws
@@ -428,10 +436,12 @@ def merma_python(d):
 
 
 def raciones_python(d):
-    """Raciones que salen de la pieza (despiece) y de la tanda (cocción), para la
-    línea de Instrucciones de R1 CH-12 (la fila calculada queda pendiente de John)."""
+    """Raciones que salen de la pieza (despiece, la fila «Raciones por pieza»: hacia
+    abajo, como la hoja) y de la tanda (cocción), para las Instrucciones y como
+    contraprueba de pycel en verificar.py."""
     util = sum(c['peso_kg'] for c in d['despiece']['componentes'] if c['tipo'] == 'Útil')
-    r_desp = util * d['despiece']['unidades_porcion_por_unidad_peso'] / d['despiece']['porcion_g']
+    r_desp = math.floor(round(util * d['despiece']['unidades_porcion_por_unidad_peso']
+                              / d['despiece']['porcion_g'], 6))
     c = d['coccion']
     r_coc = c['peso_cocinado_kg'] * c['unidades_porcion_por_unidad_peso'] / c['porcion_cocinada_g']
     return util, r_desp, r_coc
@@ -474,9 +484,11 @@ def instrucciones_12(datos):
             '▸ Factor de coste: coste por kg útil ÷ precio por kg de compra. Si el proveedor sube el precio de la pieza, multiplica el precio nuevo por este factor y tendrás el nuevo coste por kg útil sin repetir el test, mientras no cambien la pieza ni la forma de limpiarla.',
             '▸ MERMA % PARA TU ESCANDALLO: 1 − precio de compra ÷ coste por kg útil. Ya descuenta lo que valen los subproductos y es la única cifra que va a la ficha.',
             '▸ COSTE POR PORCIÓN: porción estándar × coste por kg útil. La celda verde «Gramos por kilo» vale 1.000 porque la pieza se pesa en kg y la porción en g; si pesas y racionas en la misma unidad, ponla a 1.',
-            '▸ ¿Cuántas raciones salen de la pieza? Peso útil × 1.000 ÷ porción estándar. En el ejemplo, '
-            + es_num(util, 3) + ' × 1.000 ÷ ' + es_num(d['porcion_g'], 0) + ' = '
-            + es_num(r_desp, 1) + ' raciones: es la cuenta para saber cuántas piezas pedir.',
+            '▸ RACIONES POR PIEZA: peso útil × gramos por kilo ÷ porción estándar, redondeado hacia abajo, porque una ración incompleta no se sirve. En el ejemplo, los '
+            + es_num(util, 3) + ' kg útiles dan ' + es_num(r_desp, 0) + ' raciones de '
+            + es_num(d['porcion_g'], 0) + ' g (sobran '
+            + es_num(round(util * d['unidades_porcion_por_unidad_peso'] - r_desp * d['porcion_g']), 0)
+            + ' g): es la cifra para saber cuántas piezas pedir.',
         ]),
         ('Test de Cocción', [
             '▸ Pesa en crudo lo que vas a cocinar, ya limpio, y escribe el precio por kg de la factura, el mismo de la ficha. Si viene de una pieza que despiezas, escribe también su merma de despiece (la MERMA % PARA TU ESCANDALLO del test de despiece); si la compras lista, déjala en 0 %.',

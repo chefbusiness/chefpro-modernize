@@ -128,6 +128,7 @@ def v_12(carpeta, pruebas):
         'rendimiento': g(D['rend']), 'coste_kg_util': g(D['coste_kg_util']),
         'factor': g(D['factor']), 'merma': g(D['merma']),
         'porcion_g': g(D['porcion']), 'coste_porcion': g(D['coste_porcion']),
+        'raciones': g(D['raciones']),
         'perdida_corte_kg': g(f"C{D['perdida']}"),
         'coccion': {'perdida': k(C['perdida']), 'coste_kg_coc': k(C['coste_kg_coc']),
                     'coste_porcion': k(C['coste_porcion']),
@@ -140,6 +141,11 @@ def v_12(carpeta, pruebas):
         fallos.append(f"factor < 1: {r['factor']}")
     if abs(r['merma'] - (1 - 1 / r['factor'])) > 1e-12:
         fallos.append('merma ≠ 1 − 1/factor')
+    # R1 CH-12: fila «Raciones por pieza» = ⌊peso útil × unidades ÷ porción⌋ (pycel = Python)
+    _, r_py, _ = nuevas.raciones_python(nuevas.cargar_datos())
+    r['raciones_python'] = r_py
+    if r['raciones'] != r_py or int(r['raciones']) != r['raciones']:
+        fallos.append(f"raciones por pieza: pycel {r['raciones']} vs Python {r_py}")
 
     # 01 v2.1 (la de la carpeta): fila 5 con la merma del 12
     p01 = os.path.join(carpeta, motor.FICHEROS[0])
@@ -652,11 +658,14 @@ def main():
     ap.add_argument('--json', default=None)
     ap.add_argument('--publicados', default=build.ORIGEN,
                     help='carpeta con los 12 xlsx v2.0 de referencia (tras --real: el respaldo)')
+    ap.add_argument('--pruebas', default=None,
+                    help='carpeta de copias de prueba (por defecto, junto a --carpeta; tras '
+                         '--real, pásala fuera del repo: si no, cae en astro-site/public/dl/)')
     args = ap.parse_args()
     global ORIGEN
     ORIGEN = args.publicados
     carpeta = args.carpeta
-    pruebas = os.path.join(os.path.dirname(carpeta), 'v2_1-pruebas')
+    pruebas = args.pruebas or os.path.join(os.path.dirname(carpeta), 'v2_1-pruebas')
     if os.path.isdir(pruebas):
         shutil.rmtree(pruebas)
     os.makedirs(pruebas)
