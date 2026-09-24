@@ -11,7 +11,9 @@
 >
 > Esta SPEC **decide**. Lo que no está aquí no se hace.
 >
-> Estado: **pendiente del research de 8 bloques y del OK de John antes de la F2** (§0.3).
+> Estado: research de 8 bloques hecho (`F1-research-8-bloques-en.md`) y **OK de John recibido el 24-sep** con dos
+> decisiones que amplían el alcance: **dos plantillas nuevas en ES y EN a la vez** (D17) y **licencia de un negocio
+> por compra** (D18). Próximo paso: revisión R2 de esta SPEC → F2.
 
 ## 0. Reglas que mandan
 
@@ -66,6 +68,11 @@ Método de la memoria `feedback_research-previo-producto-nuevo`: 8 bloques adapt
 Se entregan a John y **se espera su OK antes de la F2**. Lo que el research pida y el kit ES no traiga (un formato de
 compra nuevo, una hoja nueva) **se propone a John antes de hacerlo**.
 
+**OK de John (24-sep):**
+- OK al research y a la adaptación que sale de él.
+- «Yield Test» e «Ingredient Price List»: **sí, en español e inglés a la vez** (D17).
+- Licencia: **un negocio por compra** (D18).
+
 ## 1. Decisiones
 
 | # | Tema | Decisión |
@@ -76,7 +83,7 @@ compra nuevo, una hoja nueva) **se propone a John antes de hacerlo**.
 | D4 | Anclas comerciales | **Igual que en español** (John, 24-sep): precio tachado, % de descuento, nota de lanzamiento, «#1», valor de los bonos, badge «Best Seller». Solo se convierten y suben al escalón $…9 los importes **base**: el `priceOld` y el valor de cada bono. Todo lo demás se **deriva**: valor de bonos = suma de bonos; total = priceOld + bonos; ahorro = priceOld − 19; % = 1 − 19/priceOld. Gate con esas 4 identidades, y `cta.items` repite los valores de `bonus.items` [M3]. **Sin** testimonios, reseñas, rating ni `aggregateRating` (decisión del 23-sep, TIENDA §3.5) |
 | D5 | Moneda en los xlsx | Formato numérico **sin símbolo** (`#,##0.00`; el 11 `#,##0`). Rótulos sin «(€)». Instrucciones: «amounts are in your currency». Cero `€` y cero `$` en valores **y** en `number_format` [T9] |
 | D6 | Impuesto | Misma celda y mismas filas que el ES, con otro rótulo: `Tax rate (%)` (sales tax / VAT / GST), **0 % por defecto**; `Suggested menu price (pre-tax)`; `Menu price incl. tax`; `Current menu price (pre-tax / ex VAT)`. No hay conmutador: sería una fila y una fórmula nuevas en 71 hojas. Instrucciones con la tabla por mercado: US 0 % o su tipo local (la carta va sin impuestos); UK 20 % VAT (se imprime el precio «incl. tax»; el precio actual se teclea sin VAT = carta ÷ 1,2); CA, carta sin impuestos; AU 10 % GST incluido |
-| D7 | Unidades y `Conversions` [T1, M4] | Ejemplos en **US customary**. `Conversions` **generada por script** como cierre completo de cada magnitud con factores NIST: masa `lb, oz, kg, g` (16 claves con identidades) y volumen `gal, qt, pt, cup, fl oz, tbsp, tsp, L, ml, cl` (100). Conteo: `each, dozen, case` (case = 12 editable). Envases con **un solo tamaño** en todas sus claves: `bottle` = 750 ml, `can` = 12 fl oz (355 ml). Más `bunch` y `packet` (= «sobre» del ES), con los valores del ES. **Cero claves duplicadas.** Lo imperial UK (pinta de 568 ml, galón de 4,546 L, botella de 70 cl) va como nota en Instrucciones, no como clave. Desplegable (lista literal ≤ 255 caracteres): `lb,oz,kg,g,gal,qt,pt,cup,fl oz,tbsp,tsp,L,ml,cl,each,dozen,case,bunch,packet,can,bottle`. Rangos VLOOKUP con margen `$A$5:$B$300` y área de impresión hasta la última fila real [T3]. Avisos: oz ≠ fl oz; pinta/galón US ≠ imperial; nunca peso ↔ volumen. **Los formatos de compra del bloque 4 del research (case, lata #10…) pueden añadir claves: se deciden al integrarlo** |
+| D7 | Unidades y `Conversions` [T1, M4, research 8b-B §1.6] | Ejemplos en **US customary**. **Desplegable EN** (una lista literal por hoja, como el ES; 33 unidades, 241 caracteres ≤ 255): `lb,oz,kg,g,gal,qt,pt,imp pt,cup,fl oz,tbsp,tsp,L,ml,cl,each,dozen,bunch,can,bottle,15 dz case,30 dz case,50 lb bag,40 lb case,36x1 lb case,16 kg sack,40x250 g case,4x1 gal case,12x750 ml case,24x12 fl oz case,1/2 bbl keg,1/6 bbl keg,50 L keg`. **Sin `case` genérico**: ningún factor único vale para 4 gal, 36 lb o 180 huevos. `Conversions` **generada por regla** en `mapas.py`: una clave `compra→uso` por cada pareja de la **misma dimensión**, con factor = tamaño(compra) ÷ tamaño(uso) y factores NIST. Los packs solo como unidad de compra, con su identidad y subunidades (`→each`, `→bottle`, `→can`). `can`/`bottle` solo a volumen, `each` y sí mismas. `bunch` sin peso. Unas **224 claves**, cero duplicados, cero peso↔volumen. `bottle` = 750 ml y `can` = 12 fl oz, editables, con aviso UK (70 cl / 330 ml). Tamaños de pack con fuente (USDA, TTB 27 CFR 5.203 y 25.11, distribuidores: 8b-B §1.4). Columna C generada («1 × 50 lb bag = 800 oz»). Rangos VLOOKUP `$A$5:$B$260` (tabla + ~30 filas vacías) y área de impresión hasta la última fila [T3]. Avisos: oz ≠ fl oz; US ≠ imperial; nunca peso↔volumen («pro kitchens weigh: weigh one cup once») |
 | D8 | Terminología [M7, M21] | Glosario del research §1.1: recipe cost card; **Trim loss %** para la merma (cabecera «Yield % = 100 % − trim loss %»); «waste» **solo** para el desperdicio (09 y BONUS); AP/EP; **Q-factor (%)** = «seasonings, oil, garnish, packaging and small prep losses you don't cost line by line» (sin energía, también en el 05); target/actual food cost %. Filas 36-37: **Gross profit per portion (at suggested price)** y **Target GP % (at suggested price)**. Fila 40: **Actual food cost % (actual GP % = 100 % − this)**. Pour cost en el bar. **Nunca «entrée».** Ortografía estadounidense; vocabulario UK solo en Instrucciones |
 | D9 | Ficheros y hojas | Nombres del research §1.2-1.3, salvo `Waste Factors`, que pasa a **`Yield Factors`** [M21]. El renombrado se hace **en el motor** y reescribe todas las referencias (§2.2) |
 | D10 | Recetas de ejemplo | **Las mismas del ES** (regla de copia), traducidas. Se permite sustituir un **ingrediente** sin fuente de precio ni disponibilidad en EE. UU. por otro medible (p. ej. Serrano por Ibérico), manteniendo el plato, la hoja y la estructura [M9]. 01 «Beef Tenderloin with PX Sherry Reduction & Asparagus» |
@@ -86,14 +93,62 @@ compra nuevo, una hoja nueva) **se propone a John antes de hacerlo**.
 | D14 | Versión y actualizaciones | «Version 2.0 · September 2026 · aichef.pro/en/digital-products/recipe-costing-kit · info@aichef.pro». Changelog EN con una entrada (primera edición en inglés del contenido 2.0). **Regla:** cada versión nueva del ES se porta al EN en la siguiente sesión EN de la rotación, con su changelog y su broadcast EN [M22] |
 | D15 | «Menu engineering» [M14] | Las plantillas no hacen análisis de menú; el bono sí trae una **introducción** (paso 5, matriz Kasavana & Smith). La landing puede decir «includes a basic menu-engineering step in the 30-day guide» y nada más. Se corrige TIENDA §2 con este matiz |
 | D16 | Google Sheets | Hasta que pase el test real, **solo «Microsoft Excel»** en `compatApps`, `compatPills`, FAQ, title y dashboard [M8]. Consentimiento de John para usar su Drive: **pendiente**; se pregunta cuando existan los ficheros |
+| D17 | **Dos plantillas nuevas, ES y EN a la vez** (John, 24-sep) | Ficheros **independientes**; no son hojas dentro de 01-08. Así no se reescribe la columna de precio de 71 hojas ni se enlazan libros separados, algo que no funciona bien entre ficheros ni en Google Sheets. **Primero en español** (Kit de Escandallos Pro **v2.1**, §2.0) y el EN los recibe por el mismo pipeline de duplicado. `12-test-de-rendimiento.xlsx` → `12-yield-test.xlsx` · `13-lista-precios-ingredientes.xlsx` → `13-ingredient-price-list.xlsx`. El kit pasa de 11 a **13 plantillas** + 2 bonus (landing, hub, dashboard y SEO: «13 Food Cost Templates»). Precio **sin cambio**: 12 € y $19. La subida a $24 del research queda para cuando haya reseñas EN |
+| D18 | Licencia (John, 24-sep) | **Un negocio por compra.** Se puede usar en tu negocio o con tus clientes, pero **sin entregarles copias**: cada negocio compra la suya. Escuelas: licencia de aula en info@aichef.pro. Va en una FAQ de la landing EN y en una línea de Instrucciones de los xlsx EN. En ES no se añade: no se ha pedido |
+| D19 | Ventas netas [research 8b-A C1] | «Net sales» = **sin impuesto y sin service charge ni propinas** en los textos del 10, el 11, el BONUS, el PDF e Instrucciones. UK: Employment (Allocation of Tips) Act 2023 y VAT Notice 709/1. US: DOL Fact Sheet #15 |
+| D20 | De la factura al precio por unidad [8b-B §1.6] | Bloque de Instrucciones en 01-08, «From invoice to price per unit»: catch weight → `lb`/`kg`; caja de la lista → precio de la caja tal cual; caja fuera de la lista → `lb`/`each` con precio ÷ contenido (*pack/size*); lata #10 por peso neto; aceite de freidora al Q-factor; precios sin impuesto recuperable. Más textos breves: yield propio, cooking loss, escalado, subrecetas y pesar los secos. En `Yield Factors`, A2 remite al **12 Yield Test** y al USDA Food Buying Guide |
 
 ## 2. Entregables (F2)
 
+### 2.0 Primero el español: Kit de Escandallos Pro v2.1 (D17)
+
+Dos libros nuevos con las convenciones del kit v2.0:
+- celdas de entrada en verde `E8F5E9` y calculadas sin relleno;
+- todas las divisiones con `IFERROR`;
+- protección de hoja sin contraseña, con las entradas desbloqueadas;
+- A4, pie y metadatos;
+- línea «Versión 2.1 · <mes> 2026 · aichef.pro/kit-escandallos»;
+- `inject_cache.py` al final;
+- verificación con pycel.
+
+Los textos los escriben subagentes Anthropic (regla 1bis). El generador vive en
+`scripts/productos-digitales/kit-escandallos-v2_1/`.
+
+**`12-test-de-rendimiento.xlsx`**
+- `Instrucciones`.
+- **`Test de despiece`** (*butcher's yield test*):
+  - Cabecera (entradas): producto, proveedor, fecha, peso de compra (AP), precio por kg AP y coste AP.
+  - Tabla de hasta 12 componentes: pieza; tipo con DV `Útil / Subproducto / Desecho`; peso; valor de mercado por kg (solo subproductos); valor; % del AP.
+  - Resultado: peso útil, valor de subproductos, coste neto útil = coste AP − subproductos, **rendimiento %**, **coste por kg útil**, **factor de coste** = coste por kg útil ÷ precio AP, **merma % para el escandallo** = 1 − rendimiento, porción estándar y coste por porción.
+- **`Test de cocción`** (*cooking loss test*):
+  - Entradas: peso crudo útil, coste crudo (a mano o el coste por kg útil del despiece) y peso cocinado.
+  - Resultado: **pérdida por cocción %**, coste por kg cocinado, porción cocinada, coste por porción y **rendimiento combinado** = despiece × cocción.
+- Ejemplos: el del despiece es una pieza del kit (solomillo o lomo entero); el de cocción, una elaboración del kit (hamburguesa o asado). Rendimientos típicos con fuente o `[estimado]`. «Duplica la pestaña para otro test.»
+
+**`13-lista-precios-ingredientes.xlsx`**
+- `Instrucciones`.
+- **`Lista de precios`**: un bloque de resumen arriba (nº de ingredientes, nº de alertas y mayor subida) y una tabla de ~120 filas.
+  - Columnas: ingrediente · categoría · proveedor · formato de compra (texto de la factura) · contenido del formato · unidad base (DV) · **precio del formato** · **precio por unidad base** · precio anterior · **variación %** · estado OK/ALERTA (CF) · fecha de la última factura · notas.
+  - Umbral de alerta en celda verde (5 %).
+  - Precargada con los ingredientes de ejemplo de las plantillas.
+- **Honestidad:** las fichas **no se alimentan solas** de la lista, porque cada plantilla es un libro independiente. Las Instrucciones y la landing lo dicen: «copia el precio por unidad base a la ficha, con esa unidad como unidad de compra».
+- Sin comparador de proveedores: es del Kit de Inventario.
+
+**Publicación del ES v2.1**, en un PR propio antes de la F3 EN:
+- los ficheros en `dl/kit-escandallos/`;
+- claves en `get-download-urls.ts`;
+- 2 tarjetas en el dashboard ES;
+- grid de la landing ES, y «11» → «13» en landing, hub ES, catálogo y FAQ;
+- `productos-changelog.ts` 2.1;
+- broadcast ES en la cola de 5 días (regla del 5-sep).
+
+**Gates:** `censo-entregables.py --only kit-escandallos --fail`, `gate-flujo-postpago.py`, pycel y `tienda-gate --es-identico` (solo cambian las landings esperadas).
+
 ### 2.1 Fuente y método
 
-- **Fuente = los 12 xlsx publicados** en `astro-site/public/dl/kit-escandallos/` (v2.0, `ed45f35`) y el
-  `bono-guia-food-cost-30-dias.md`. **No** se usa `scripts/generate-escandallos.py`: es la v1.0 (inventario §2).
-- Salida: `astro-site/public/dl/recipe-costing-kit/` (12 xlsx + PDF). **Los ficheros ES no se tocan.**
+- **Fuente = los xlsx publicados** en `astro-site/public/dl/kit-escandallos/`: los 12 de la v2.0 (`ed45f35`) **+ los
+  2 nuevos de la v2.1** (§2.0), y el `bono-guia-food-cost-30-dias.md`. **No** se usa `scripts/generate-escandallos.py`: es la v1.0 (inventario §2).
+- Salida: `astro-site/public/dl/recipe-costing-kit/` (14 xlsx + PDF). **Los ficheros ES no se tocan.**
 - Código en `scripts/productos-digitales/recipe-costing-kit/`:
   - `extraer_textos.py` → `textos_es.json` (832 cadenas con contexto).
   - `mapas.py`: hojas, claves-dato, literales y la `Conversions` generada (D7).
@@ -148,18 +203,20 @@ filas de ejemplo.
 
 | Fichero EN | Qué se adapta además del texto |
 |---|---|
-| 01 standard recipe cost card | Ingredientes en lb/oz/fl oz con precio por unidad de compra US; filas de impuesto (D6), GP (D8) y Q-factor 10 % |
+| 01 standard recipe cost card | Ingredientes en lb/oz/fl oz con precio por unidad de compra US (el solomillo en **catch weight**, `lb`); filas de impuesto (D6), GP (D8) y Q-factor 10 %. Instrucciones con el bloque D20 (común a 01-08) |
 | 02 tasting menu | Igual que 01 en los 9 pases; el food cost objetivo único de `Summary` se mantiene |
 | 03 prix fixe lunch menu | Extras [M19]: «Bread & butter» con valor, «Drink (if included)» y «Coffee (if included)» **a 0** por defecto, con nota. Food cost objetivo 33 %: se revisa contra D12 (casual 28-32 %) y se justifica en `mercado_en.json` |
-| 04 cocktails & drinks | **E3:** `Bottle Sizes!B` en **ml** (750 / 1000 / 1750; en EE. UU. el formato legal de destilado es métrico) y `D5:D16 = IFERROR(ROUND(C*1000/B,4),"")` = «Price per liter». Las recetas compran en `L` y usan `fl oz` (clave `L→fl oz` = 33,814), con pour estándar US de **1.5 fl oz** (NIAAA). Vino 750 ml; la lata va por `can` en `Conversions`, no en esta hoja. Nota UK: 25/35 ml y 70 cl. «Spillage & ice allowance» 5 % [T2, M1] |
-| 05 pastry & bakery | Rendimiento en unidades (se mantiene); ingredientes en lb/oz; mermas de obrador del ES; Q-factor sin «energía del horno» |
-| 06 catering & events | Recepción por invitado. En `Event Quote`: coste por hora del personal = salario OEWS de la ocupación + cargas del empleador en un % declarado `[estimado]`, o tarifa de agencia de personal con fuente [M20]; ratio de camareros, rentals por invitado, transporte, montaje y mínimo en USD. En `Event Checklist`: food handler cards / food manager certification, seguro, permisos y «Allergen matrix (US: 9 major · UK/EU: 14)». **`Client Proposal`** [M11]: «Price per guest», «TOTAL», A15 «Quote valid for 30 days. Applicable sales tax is added to the final invoice…», e Instrucciones UK/AU para cambiar a «Prices include VAT/GST». Se decide en F2 si una fila libre lleva de ejemplo «Service charge», sin tocar fórmulas |
-| 07 café & brunch | Mismas 4 recetas en unidades US |
-| 08 food truck | `Break-Even` con costes diarios US (commissary/parking, permisos y seguro, propano/generador, personal con cargas [M20], amortización, limpieza), con fuente o `[estimado]` |
+| 04 cocktails & drinks | **E3:** `Bottle Sizes!B` en **ml** (750 / 1000 / 1750; en EE. UU. el formato legal de destilado es métrico) y `D5:D16 = IFERROR(ROUND(C*1000/B,4),"")` = «Price per liter». Las recetas compran en `L` y usan `fl oz` (clave `L→fl oz` = 33,814), con pour estándar US de **1.5 fl oz** (NIAAA). Vino 750 ml; la lata va por `can` en `Conversions`, no en esta hoja. Nota UK: 25/35 ml y 70 cl. «Spillage & ice allowance» 5 % [T2, M1]. En las filas vacías de `Bottle Sizes` se precargan **un vino de 750 ml y un barril de 1/6 bbl**. Instrucciones con la tabla de medidas (US 1.5 / 5 / 12 fl oz; UK 25/35 ml, 125/175 ml y ⅓, ½ y ⅔ de pinta), el pour cost por categoría (destilados 18-20 %, barril ≈ 20 %, botella ≈ 25 %, vino más alto) y el impuesto de bebidas que paga el bar (p. ej. Texas 6,7 %) antes del pour cost [8b-A C5, 8b-B §2.4] |
+| 05 pastry & bakery | Rendimiento en unidades (se mantiene). **La pastelería de EE. UU. formula en gramos**: compra en formato de caja o `lb` y uso en `g` [8b-A C4]. Ejemplos con el precio de la factura tal cual: harina `50 lb bag`, mantequilla `36x1 lb case`, leche `4x1 gal case`, huevos `15 dz case` [8b-B §1.7]. Mermas de obrador del ES; Q-factor sin «energía del horno» |
+| 06 catering & events | Recepción por invitado. En `Event Quote` [8b-A C2, M20]: **1 camarero cada 25 invitados** en recepción (tabla de ratios en Instrucciones: emplatado 1:10-12, buffet 1:20); **camarero $25/h y jefe de sala $35/h** (OEWS $17 + 7,65 % FICA, o tarifa de agencia; `[estimado]` con el ancla); **rentals $3,50/invitado**; **mínimo $1.000**; el «margen sobre servicios» pasa a **«Service charge (%)» 20 %**. En `Event Checklist`: food handler cards / food manager certification, seguro, permisos y «Allergen matrix (US: 9 major · UK/EU: 14)». **`Client Proposal`** [M11]: «Price per guest», «TOTAL», A15 «Quote valid for 30 days. Applicable sales tax is added to the final invoice…», e Instrucciones UK/AU para cambiar a «Prices include VAT/GST». «…the service charge is not a gratuity» (D19) |
+| 07 café & brunch | Mismas 4 recetas en unidades US, con alguna fila en formato de caja [8b-B §1.7] |
+| 08 food truck | `Break-Even` con costes diarios US: **$45 + $25 + $30 + $300 + $50 + $15 = $465/día** (commissary/parking, permisos y seguro, propano/generador, 2 personas con cargas [M20], amortización, limpieza), con la cuenta de cada línea `[estimado]` [8b-A §4.3] |
 | 09 food waste tracker | 16 familias con objetivos, compras de ejemplo en USD, fecha D13, «Week 2…12», objetivo global 4 %. Aviso: «trim loss goes in the recipe cost card, not in the waste log» |
-| 10 menu price calculator | Filas D12; «DoorDash, Uber Eats or Grubhub (UK: Deliveroo, Just Eat)»; impuesto D6. El «~21 %» se recalcula con la comisión del 25 % (≈ 22,5 %) [M5] |
-| 11 monthly food cost dashboard | Meses en inglés (son las categorías del gráfico), año como celda editable, «use net sales (excluding sales tax/VAT)» y «unos 3 puntos» recalculado [M5] |
-| BONUS inventory & waste control | 15 productos: stock (C:E), precio (I) **y** matriz por ración (C5:Q14) convertidos con el **mismo factor**, con cantidades por ración iguales a la AP qty de las recetas EN. Gate: la desviación relativa H/F de cada producto es la misma que en el ES [M10]. 7 motivos (DV) y platos traducidos |
+| 10 menu price calculator | Filas D12; ventas netas D19; «DoorDash, Uber Eats or Grubhub (UK: Deliveroo, Just Eat)»; impuesto D6. El «~21 %» se recalcula con la comisión del 25 % (≈ 22,5 %) [M5] |
+| 11 monthly food cost dashboard | Meses en inglés (son las categorías del gráfico), año como celda editable, cabecera «Period (month or week)» con el método semanal en Instrucciones, «Net purchases (excl. recoverable tax)», ventas netas D19 y «unos 3 puntos» recalculado [M5, 8b-B §2.6] |
+| BONUS inventory & waste control | 15 productos: stock (C:E), precio (I) **y** matriz por ración (C5:Q14) convertidos con el **mismo factor**, con cantidades por ración iguales a la AP qty de las recetas EN. Gate: la desviación relativa H/F de cada producto es la misma que en el ES [M10]. 7 motivos (DV) y platos traducidos. «Net purchases (excl. recoverable tax)». Instrucción para pegar plato + unidades vendidas desde el *product mix* del TPV (Toast, Square, Clover, Lightspeed, Epos Now) en `Sales for the Period` A-B [8b-A C6] |
+| **12 yield test** | Duplicado del ES v2.1 (§2.0): lb/oz, USD, ejemplo con una pieza US (p. ej. *whole beef tenderloin, PSMO*), rendimiento típico con fuente o `[estimado]`, y remisión a *Trim loss %* de las fichas |
+| **13 ingredient price list** | Duplicado del ES v2.1: unidades base US (`lb, oz, kg, g, gal, fl oz, L, ml, each`), formatos de compra de D7 como texto de factura, distribuidores US genéricos (sin marcas), USD, umbral 5 % |
 
 Transversal:
 - Metadatos (§2.1) y línea de versión D14. «© 2026 AI Chef Pro · All rights reserved».
@@ -177,6 +234,13 @@ Transversal:
 - Nombres de fichero y pestaña EN exactos.
 - **Mismo caso práctico: 32 % declarado → 35,36 % real → 31,8 % en 30 días**, con los mismos porcentajes e importes en USD [M13].
 - Bio anclada.
+- Añadidos del research [8b-A C7/C9, 8b-B §2.6]:
+  - semana 1: cómo leer una factura (caja, catch weight, *pack/size*);
+  - semana 4: prime cost < 60-65 % (NRA);
+  - tabla de economía: márgenes NRA, food cost de cadenas cotizadas (las de Darden y Texas Roadhouse se confirman antes de publicar), inflación USDA ERS/ONS y la regla 30/30/30/10 con su matiz;
+  - «Further reading»: *Culinary Math*, *Math for the Professional Kitchen*, *Food and Beverage Cost Control*, sin afiliación;
+  - ventas netas D19;
+  - las plantillas 12 y 13 donde encajen (yield test en la semana 2, lista de precios en la semana 3).
 
 Maquetador: copia parametrizada de `bono_guia.py` (cabecera, «Page {n}», título, marcador de metadatos, Letter). Gate
 de glifos: cero caracteres fuera de WinAnsi y cero restos de español. El nº de páginas se comprueba contra la landing,
@@ -205,6 +269,13 @@ porque `paginas-gate.py` solo lee `productos/**` [T9].
 - `footerLinks` a la tienda y las herramientas EN. `alreadyBought.product = 'recipe-costing-kit'`.
 - OG image nueva sin texto español (`generate-images`).
 - `src/lib/sitemap-lastmod.json` con la fecha de publicación [T4].
+- **13 plantillas** + 2 bonus (D17) en el grid, la lista de columnas y el title.
+- FAQ adicionales [8b-A C8, 8b-B §4]:
+  - «Does it handle case prices and catch weight?»: sí.
+  - «What's not included?»: par levels, menu engineering (solo la introducción del PDF) y auto-feed de precios.
+  - Licencia D18.
+  - Private chef, meal prep, ghost kitchen y estudiantes.
+- **Comparativa honesta kit vs SaaS**: meez $19/mes, Jelly £129/mes, MarginEdge $350/mes, R365 $469-749/mes. El kit no los sustituye; es el pago único para quien aún no los necesita.
 
 **Páginas:**
 - `pages/en/digital-products/recipe-costing-kit.astro`: `lang="en"`, `basePath` **sin** `/en`, `alternatesFamilia`, `whatsapp={false}`, `omitGlobalApp`, `miselup={false}`.
@@ -263,6 +334,7 @@ porque `paginas-gate.py` solo lee `productos/**` [T9].
 5. **Formato.** Letter; cero formatos con `€` o `dd/mm`; las 93 fechas con `numFmtId 14`; línea de versión D14 en todos.
 6. **Coherencia de texto.** Rangos de D12 [M6]; cifras derivadas recalculadas [M5]; nombres de pestaña en textos (§2.2).
 7. `censo-entregables.py --only recipe-costing-kit --fail` en 0, con Letter admitido.
+7bis. **Libros 12 y 13** (ES v2.1 y EN): pycel sin errores; el ejemplo da un rendimiento entre 0 y 1, un factor de coste ≥ 1 y un coste por porción coherente; la alerta de precio salta cuando la variación supera el umbral y no salta cuando no; la lista de unidades base casa con D7.
 8. **Revisión adversarial** con tope de 2 rondas: lente de chef o manager de EE. UU. y del Reino Unido, y lente técnica.
 9. **Test de Google Sheets**, si John da el consentimiento (D16).
 
@@ -287,14 +359,18 @@ porque `paginas-gate.py` solo lee `productos/**` [T9].
 3. **Consentimiento para el test de Sheets** en su Drive (D16).
 4. **Condiciones de compra EN** para productos digitales: pago único, acceso de por vida, garantía de 30 días y renuncia al desistimiento donde aplique (EU/UK). `/en/terminos` solo trata la suscripción del SaaS, y es el destino del enlace del diálogo cripto y de los términos del Payment Link. Decisión legal suya antes de la F3 [M12]. El ES tiene el mismo hueco.
 5. `PURCHASE_VALIDATION=strict`: sin él, una sesión pagada de un producto abre otro [T8]. Aparcado por él.
-6. **OK del research de 8 bloques** (§0.3).
+6. ~~OK del research de 8 bloques~~ ✅ recibido el 24-sep (§0.3).
 
 ## 6. Presupuesto y fases
 
-Tamaño **M** (≤ 5 M tokens de subagentes). F1 lleva ≈ 1,4 M: inventario y research, 0,72 M; revisión R1, 0,70 M.
-Faltan el research de 8 bloques y la ronda R2 de esta SPEC tras integrarlo.
+Tamaño **M** (≤ 5 M tokens de subagentes). F1 lleva ≈ 2,1 M: inventario y research, 0,72 M; revisión R1, 0,70 M;
+8 bloques, 0,67 M. Falta la ronda R2.
 
-- **F2:** `extraer_textos.py` + `mapas.py` (opus) → traducción por grupos (sonnet, 2 a la vez, glosario común primero) → `mercado_en.json` (opus) → `aplicar_en.py` (opus) → gates → revisión.
+⚠️ D17 amplía el alcance con el ES v2.1: dos libros nuevos y su publicación. Si el total pasa de 6,5 M (techo + 30 %),
+se para y se reporta a John (política del 20-sep).
+
+- **F2-ES (v2.1):** generador de los 2 libros nuevos (opus) + textos (subagentes) → gates → PR de publicación ES.
+- **F2-EN:** `extraer_textos.py` + `mapas.py` (opus) → traducción por grupos (sonnet, 2 a la vez, glosario común primero) → `mercado_en.json` (opus) → `aplicar_en.py` (opus) → gates → revisión.
 - **F3:** capa de producto en un PR → Payment Link (John) → merge → compra de prueba → broadcast.
 
 Cada fase cierra con su gate, `commit` + `push` y una línea en el handoff.
