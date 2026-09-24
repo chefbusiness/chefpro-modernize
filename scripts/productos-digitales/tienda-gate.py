@@ -21,7 +21,10 @@ MODOS
     Con cero productos vivos fuera de ES pasa en verde.
 
   --base <url> — RED contra un deploy (preview o producción):
-    Para cada producto vivo de otro idioma y el hub de cada tienda activa no-ES:
+    Hubs de TODAS las tiendas activas (ES incluida): 200, <html lang>, canonical propio,
+    hreflang recíproco completo entre todos ellos + x-default al hub ES, y exactamente 1 botón
+    flotante de WhatsApp; los no-ES además pasan la revisión de texto de abajo.
+    Para cada producto vivo de otro idioma:
     200; hreflang recíproco con el gemelo ES (en los dos sentidos); sin '€' en el texto
     visible; sin restos de español (heurística; se ignoran <script>, <style> y el bloque
     marcado con el atributo data-lang-es, p. ej. «¿Hablas español?»); sin caracteres no
@@ -248,7 +251,7 @@ def get(url: str, intentos: int = 4) -> tuple[int, str]:
             if n == intentos - 1:
                 return 0, str(e)
         time.sleep(2 * (n + 1))
-    return 0, 
+    return 0, ''
 
 
 class TextoVisible(HTMLParser):
@@ -343,16 +346,52 @@ def comprobar_par(base: str, tag: str, lang: str, ruta: str, ruta_es: str) -> No
     revisar_texto(tag, html)
 
 
+WA_FLOTANTE = re.compile(r'<a[^>]*href="https://wa\.me/34744717942[^"]*"[^>]*class="[^"]*fixed bottom[^"]*"', re.S)
+
+
+def comprobar_hubs(base: str, tiendas: dict[str, dict]) -> None:
+    """Los hubs de TODAS las tiendas activas (ES incluida) entre sí: hreflang recíproco completo
+    (exactamente los idiomas activos, cada uno a su hub, + x-default al ES), canonical propio,
+    <html lang> correcto y exactamente 1 botón flotante de WhatsApp."""
+    activas = {lg: t for lg, t in tiendas.items() if t['activa']}
+    esperado = {lg: PROD + t['hub'] for lg, t in activas.items()}
+    esperado['x-default'] = PROD + tiendas['es']['hub']
+    for lg, t in activas.items():
+        tag = f'hub {lg}'
+        st, html = get(base + t['hub'])
+        time.sleep(2)
+        if st != 200:
+            mal(f'{tag}: {t["hub"]} → HTTP {st}')
+            continue
+        h = hreflang(html)
+        if h != esperado:
+            faltan = sorted(set(esperado) - set(h))
+            sobran = sorted(set(h) - set(esperado))
+            malos = sorted(k for k in set(h) & set(esperado) if h[k] != esperado[k])
+            mal(f'{tag}: hreflang no recíproco (faltan {faltan}, sobran {sobran}, mal apuntados {malos})')
+        else:
+            bien(f'{tag}: hreflang = {len(activas)} hubs + x-default→ES')
+        can = re.search(r'<link rel="canonical" href="([^"]+)"', html)
+        if not can or can.group(1) != PROD + t['hub']:
+            mal(f'{tag}: canonical {can.group(1) if can else None} != {PROD + t["hub"]}')
+        hl = re.search(r'<html[^>]*\blang="([^"]+)"', html)
+        if not hl or hl.group(1) != lg:
+            mal(f'{tag}: <html lang={hl.group(1) if hl else None}> (esperado {lg})')
+        n_wa = len(WA_FLOTANTE.findall(html))
+        if n_wa != 1:
+            mal(f'{tag}: {n_wa} botones flotantes de WhatsApp (esperado 1)')
+        if lg != 'es':
+            revisar_texto(tag, html)
+
+
 def red(base: str) -> None:
     base = base.rstrip('/')
     tiendas = leer_tiendas()
     familias = leer_familias()
     n = 0
-    for lg, t in tiendas.items():
-        if lg == 'es' or not t['activa']:
-            continue
+    if any(t['activa'] for lg, t in tiendas.items() if lg != 'es'):
         n += 1
-        comprobar_par(base, f'hub {lg}', lg, t['hub'], tiendas['es']['hub'])
+        comprobar_hubs(base, tiendas)
     for f in familias:
         es = f['productos'].get('es')
         for lg, p in f['productos'].items():

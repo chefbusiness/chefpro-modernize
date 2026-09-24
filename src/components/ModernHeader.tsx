@@ -7,8 +7,14 @@ import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Set
 // astro-site/src/lib/tienda.ts (TIENDAS + TIENDA_NOMBRE, fuente canónica): la SPA está en otra
 // raíz y no puede importar de astro-site/. Solo idiomas con tienda ACTIVA; al activar otra
 // tienda, tocar los dos. tienda-gate.py lo cruza.
-const TIENDA_PATHS: Record<string, string> = { es: '/productos-digitales', en: '/en/digital-products' };
-const TIENDA_NOMBRE: Record<string, string> = { es: 'Productos Digitales', en: 'Digital Products' };
+const TIENDA_PATHS: Record<string, string> = {
+  es: '/productos-digitales', en: '/en/digital-products', fr: '/fr/produits-numeriques',
+  de: '/de/digitale-produkte', it: '/it/prodotti-digitali', pt: '/pt/produtos-digitais', nl: '/nl/digitale-producten',
+};
+const TIENDA_NOMBRE: Record<string, string> = {
+  es: 'Productos Digitales', en: 'Digital Products', fr: 'Produits numériques',
+  de: 'Digitale Produkte', it: 'Prodotti Digitali', pt: 'Produtos digitais', nl: 'Digitale producten',
+};
 const tiendaHref = (l: string): string | null => TIENDA_PATHS[l] ?? null;
 
 // Landing de integraciones (2026-09-05). OJO: esta tabla está DUPLICADA a
