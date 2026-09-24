@@ -159,6 +159,40 @@ def catalog_prices():
     return prices, errors
 
 
+def catalog_lang_prices():
+    """[(entrada, lang, productId de esa tienda, (moneda, precio))] de las entradas del
+    catálogo con versión en otra tienda: `urlByLang: { en: '/en/digital-products/<id>' }` +
+    `priceByLang: { en: '$19' }`. El productId es el último segmento de la URL (así se
+    construyen las landings de las tiendas, TIENDA-INTERNACIONAL.md §3.2). Un banner EN
+    que anuncia un precio que no es el del Payment Link vende mal igual que uno ES."""
+    out, errors = [], []
+    if not os.path.exists(CATALOG):
+        return out, errors
+    t = open(CATALOG, encoding='utf-8').read()
+    rel = os.path.relpath(CATALOG, ROOT)
+    for m in re.finditer(r'^( {2})\'([a-z0-9-]+)\':\s*\{[ \t]*\n', t, re.M):
+        indent, pid = m.group(1), m.group(2)
+        close_m = re.search(r'\n' + re.escape(indent) + r'\},?[ \t]*\n', t[m.end():])
+        if not close_m:
+            continue
+        block = t[m.end():m.end() + close_m.start()]
+        urls = dict(re.findall(r"([a-z]{2}):\s*'([^']+)'",
+                               (re.search(r'urlByLang:\s*\{([^}]*)\}', block) or [None, ''])[1]))
+        precios = dict(re.findall(r"([a-z]{2}):\s*'([^']+)'",
+                                  (re.search(r'priceByLang:\s*\{([^}]*)\}', block) or [None, ''])[1]))
+        for lang in sorted(set(urls) | set(precios)):
+            if lang not in urls or lang not in precios:
+                errors.append(f'{rel} ({pid}): urlByLang y priceByLang deben ir juntos ({lang})')
+                continue
+            pm = re.fullmatch(r'([€$])\s*([\d.,]+)', precios[lang])
+            if not pm:
+                errors.append(f'{rel} ({pid}): priceByLang.{lang} {precios[lang]!r} no reconocible')
+                continue
+            out.append((pid, lang, urls[lang].rstrip('/').rsplit('/', 1)[-1],
+                        (SIMBOLOS[pm.group(1)], float(pm.group(2).replace(',', '.')))))
+    return out, errors
+
+
 def verify_purchase_products():
     t = open(os.path.join(ROOT, 'netlify/functions/verify-purchase.ts'), encoding='utf-8').read()
     block = t.split('const PRODUCTS', 1)[1].split('\n};', 1)[0]
@@ -248,12 +282,21 @@ def main():
                 problems.append(f'{pid}: products-catalog.ts trae {txt(cat_prices[pid])} pero no existe como producto real (ni ficha ni SPECIAL_PRICES)')
             elif prices[pid][0] != cat_prices[pid][0] or abs(prices[pid][1] - cat_prices[pid][1]) > 0.005:
                 problems.append(f'{pid}: ficha {txt(prices[pid])} ≠ products-catalog.ts {txt(cat_prices[pid])}')
+        # Y el precio de las otras tiendas (priceByLang) contra el producto de esa tienda.
+        lang_prices, lang_errors = catalog_lang_prices()
+        problems += lang_errors
+        for pid, lang, destino, mv in lang_prices:
+            if destino not in prices:
+                problems.append(f'{pid}: urlByLang.{lang} apunta a {destino!r}, que no es un producto real')
+            elif prices[destino][0] != mv[0] or abs(prices[destino][1] - mv[1]) > 0.005:
+                problems.append(f'{pid}: priceByLang.{lang} {txt(mv)} ≠ precio real de {destino} {txt(prices[destino])}')
         if problems:
             print(f'✗ {os.path.relpath(CATALOG, ROOT)} difiere del precio real ({len(problems)} discrepancia(s)):')
             for p in problems:
                 print(' ', p)
             sys.exit(1)
-        print(f'✓ product-prices.ts al día ({len(prices)} productos) · products-catalog.ts coincide en precio con las {len(cat_prices)} entradas')
+        print(f'✓ product-prices.ts al día ({len(prices)} productos) · products-catalog.ts coincide en precio con las {len(cat_prices)} entradas'
+              f' y con {len(lang_prices)} precio(s) de otras tiendas (priceByLang)')
         return
     open(OUT, 'w', encoding='utf-8').write(content)
     print(f'✓ escrito {os.path.relpath(OUT, ROOT)} con {len(prices)} productos')

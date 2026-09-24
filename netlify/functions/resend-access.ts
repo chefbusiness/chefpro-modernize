@@ -30,6 +30,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 13 plantillas Excel + 2 bonus:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-09-24): gemelo de kit-escandallos (ver verify-purchase.ts).
+  'food-cost-templates': {
+    accessPath: '/en/digital-products/food-cost-templates/access',
+    emailSubject: 'Your access to Food Cost Kit Pro',
+    emailTitle: 'Access your Food Cost Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 13 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'pack-appcc': {
     accessPath: '/pack-appcc-access',
     emailSubject: 'Tu acceso al Pack de Plantillas APPCC',

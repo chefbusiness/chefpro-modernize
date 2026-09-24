@@ -91,7 +91,7 @@ export const FAMILIAS: FamiliaProducto[] = [
     familia: 'kit-escandallos',
     productos: {
       es: { slug: 'kit-escandallos', vivo: true },
-      en: { slug: 'food-cost-templates', vivo: false },
+      en: { slug: 'food-cost-templates', vivo: true },
     },
   },
 ];

@@ -511,3 +511,67 @@ Ficheros EN finales (nombre → título interior):
 Pendiente (orquestador / F3): `--real` con `FOOD_COST_KIT_APPLY=1` → `dl/food-cost-templates/`, `food-cost-templates`
 en `EXCLUIDOS` de `postprocess-transversal.py` en ese mismo commit, claves de `get-download-urls.ts` con los 15
 nombres nuevos, y la landing/dashboard EN con los títulos de la tabla D9 bis y «23 pages».
+
+## F3-A · capa de producto EN (sesión Claude Code, 24/25-sep)
+
+> El Mac se apagó a mitad de la F3-A (sin batería). Lo hecho antes del apagón se reconstruyó en `bbd4b2a0`
+> (ficha, landing, access, library, dashboard, island, 4 componentes con `lang`, CryptoPayButton EN, hreflang
+> ES↔EN, `tienda.ts` en.vivo). Esta sesión cerró el resto. Todo en serie, `istats` antes de cada script
+> (51-58 °C), sin builds ni navegador.
+
+**Qué se hizo** (commits `c3999f7b`, `656ac9a3`, `067579cb`, `29137850`):
+- `/en/crypto-payment` = copia traducida de `/pago-cripto` (mismos 11 estados y mismos `data-*` en el mismo orden;
+  enlace «product page» → `/en/digital-products/<productId>`); fuera del sitemap; rastreable (lleva `noindex`).
+- Entrada `food-cost-templates` con `lang: 'en'` en `zona-app.ts`, `verify-purchase.ts`, `resend-access.ts`,
+  `get-download-urls.ts` (15 claves = las del dashboard), `admin-generate-access.ts` (email manual por idioma),
+  `AdminGenerateAccess.tsx` y `productos-digitales-config.ts`. `stripe-webhook`, `nowpayments-ipn`,
+  `crypto-checkout` y `crypto-order-status` no tienen mapa propio (leen `PRODUCTS`, `PAYMENT_LINKS`, `PRODUCT_PRICES`).
+- `payment-links.ts` y `product-prices.ts` regenerados: una línea añadida en cada uno (`bJecMYa8AgIS9fhcbz6oo1y`, `usd: 19`).
+- `miselup-gate.py` (entradas con `lang` ≠ es → cero rastros) y `whatsapp-gate.py` (dashboards anidados exentos).
+
+**Validación estática:** `fase5-generate-zona-app.py --check` verde (150 ficheros; EN omitida) · `tienda-gate.py`
+verde · `gate-flujo-postpago.py --offline` 51 productos / 736 entregables / 0 fallos (EN: 15 ficheros = 15 tarjetas) ·
+`sync-* --check` verdes · `robots-gate.py` verde · `@astrojs/compiler` sin errores en los 8 `.astro` · esbuild en los
+18 `.ts/.tsx` · `tsc` con los mismos 6 errores preexistentes antes y después · emails de los 50 productos ES
+(admin + verify) idénticos byte a byte · CryptoPayButton ES idéntico (6/6) · SaasDiscoveryBanner, LogoBadge,
+WhatsAppProductSupport y ProductChangelog: 107 renders ES idénticos sin prop y con `lang="es"`, cerrados y abiertos.
+
+**Pendiente (F3-B, con deploy preview):** `tienda-gate.py --base` y `--es-identico --esperadas /kit-escandallos`,
+`gate-flujo-postpago.py --base … --crypto-products all --crypto-exclude pro-prompts-ebook`, `miselup-gate`,
+`whatsapp-gate` sobre el `dist` del preview, `datafast-gate`, `nombre-gate`; lastmod de la landing EN en el sitemap
+(hoy caería en `NEW_URLS_LASTMOD`); enlaces entrantes (§3.7); compra de prueba y broadcast EN.
+
+## F3-B · enlaces entrantes y gates (sesión Claude Code, 25-sep)
+
+> Retomada tras el segundo apagón del Mac (sin batería). Todo en serie, `istats` antes de cada script (50-58 °C),
+> sin builds ni navegador. Commits `e12756e5`, `6cc7a832`, `d3c4769a`, `4627c14d`, `30f6eb2c`.
+
+**Qué se hizo:**
+- **Catálogo** (`products-catalog.ts`): `kit-escandallos` con `name.en` «Food Cost Kit Pro», `urlByLang.en` y
+  `priceByLang.en` '$19'. `productPrice()` (el precio de otra tienda solo se aplica si esa tienda tiene landing propia).
+  El ensamblador lee `urlByLang`/`priceByLang` acotado al bloque de cada producto (`url_producto()`,
+  `precio_producto()`, `banner()`); `fase8x-sustituir-banner.py` enlaza a la landing del idioma;
+  `sync-product-prices.py --check` cruza `priceByLang` con el precio real del producto de esa tienda.
+- **Blog EN:** los 26 banners → «Get Food Cost Kit Pro for $19» → `/en/digital-products/food-cost-templates`, UTM
+  intactos, sin tocar `modDate`. Script reutilizable para el próximo producto de otra tienda:
+  `fase8x-banners-tienda-idioma.py --producto <id> --lang <xx> [--aplicar]` (dry-run por defecto; gates de molde,
+  reversión byte a byte y «nada fuera del banner»). `fase8c-libreria-en-gate.py` gana `banners_tienda()` sobre todo el
+  blog EN.
+- **Casos de uso EN** (61 spokes, 176 menciones): nombre D9 bis, $19 y fuera lo que el kit no hace (M16: importar el
+  CSV, mano de obra, «load your recipe book», precio por canal, «€ by default», vídeo tutorial inexistente). Alias
+  «Food Cost Kit Pro» → landing EN en `linkify-use-case.ts` (y su gemelo SPA): 178 enlaces en el texto.
+- **Gates:** `robots-gate.py` censa la zona app anidada (3 terminaciones) y suma las páginas del repo al censo público;
+  `datafast-gate.py` suma hub, landing, acceso y `/en/crypto-payment`. `miselup`/`whatsapp` (de la F3-A) re-verificados.
+- **Sitemap:** lastmod 2026-09-25 para la landing EN y el hub EN.
+
+**Enlaces entrantes a `/en/digital-products/food-cost-templates` tras el merge:** tarjeta del hub EN (+ ItemList);
+26 banners del blog EN; 61 spokes EN (tarjeta de producto) + 178 menciones enlazadas en 57 de ellos; hreflang
+recíproco con `/kit-escandallos`; sitemap; `…/access` (sin compra) y el dashboard («back»); `/en/crypto-payment`
+(«product page»). Header y footer EN llevan al hub EN en todas las páginas inglesas.
+**Salientes de la landing (todos existen en `astro-site/src/pages`):** `/en`, `/en/digital-products`,
+`/en/food-cost-calculator-restaurant`, `/en/food-cost-calculator-restaurant-ai`, las 8 herramientas gratis EN,
+`/en/pricing`, `/en/terminos`, `/en/privacidad`, el Payment Link y `mailto:`.
+
+**Pendiente (con deploy preview):** `tienda-gate.py --base`, `gate-flujo-postpago.py --base … --crypto-products all
+--crypto-exclude pro-prompts-ebook`, `miselup-gate --base`, `whatsapp-gate` sobre el `dist` del preview,
+`datafast-gate --base` (en producción las 3 rutas nuevas dan 404 hasta el merge), compra de prueba y broadcast EN.

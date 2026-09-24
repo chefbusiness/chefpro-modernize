@@ -1,10 +1,14 @@
 import type { Handler } from '@netlify/functions';
+import { emailI18n, tiendaLang, type TiendaLang } from '../shared/email-i18n';
 
 // Map productId → { accessPath, label } (must match resend-access.ts entries).
 // Keep in sync with PRODUCTS in netlify/functions/resend-access.ts.
-const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
+// `lang` (tienda internacional, 2026-09-24): ausente = 'es'. Elige los textos del email manual
+// (ADMIN_EMAIL, abajo) y el párrafo fijo de netlify/shared/email-i18n.ts, como en verify/resend.
+const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: TiendaLang }> = {
   'pro-prompts-ebook': { accessPath: '/pro-prompts-library-access', label: 'Pro Prompts eBook' },
   'kit-escandallos': { accessPath: '/kit-escandallos-access', label: 'Kit de Escandallos Pro' },
+  'food-cost-templates': { accessPath: '/en/digital-products/food-cost-templates/access', label: 'Food Cost Kit Pro', lang: 'en' },
   'pack-appcc': { accessPath: '/pack-appcc-access', label: 'Pack Plantillas APPCC' },
   'kit-tareas': { accessPath: '/kit-tareas-access', label: 'Kit de Tareas Recurrentes' },
   'kit-tareas-cafeteria': { accessPath: '/kit-tareas-cafeteria-access', label: 'Kit Tareas Cafetería' },
@@ -55,6 +59,29 @@ const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
   'plan-catering-tematico-eventos': { accessPath: '/plan-catering-tematico-eventos-access', label: 'Plan de Negocio para Catering & Kit Temático para Eventos' },
 };
 
+/** Textos del email manual por idioma de la tienda. El bloque `es` es VERBATIM el que estaba en
+ *  línea en el handler (el HTML de los 50 productos españoles sale byte a byte igual; el párrafo
+ *  «Guarda este email…» era ya idéntico a EMAIL_I18N.es.guardaEmail y ahora sale de ahí). */
+const ADMIN_EMAIL: Record<TiendaLang, {
+  asunto: (label: string) => string;
+  titulo: (label: string) => string;
+  cuerpo: string;
+  cta: string;
+}> = {
+  es: {
+    asunto: (label) => `Tu acceso a ${label}`,
+    titulo: (label) => `Tu enlace de acceso a ${label}`,
+    cuerpo: 'Hemos generado manualmente tu acceso al producto. Haz clic en el botón para entrar a tu dashboard:',
+    cta: 'Acceder a mi producto',
+  },
+  en: {
+    asunto: (label) => `Your access to ${label}`,
+    titulo: (label) => `Your access link to ${label}`,
+    cuerpo: "We've generated your access to the product manually. Click the button to open your dashboard:",
+    cta: 'Access my product',
+  },
+};
+
 export const handler: Handler = async (event) => {
   const headers = {
     'Content-Type': 'application/json',
@@ -92,6 +119,7 @@ export const handler: Handler = async (event) => {
 
     let emailSent = false;
     if (sendEmail && process.env.RESEND_API_KEY) {
+      const t = ADMIN_EMAIL[tiendaLang(config.lang)];
       const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
@@ -101,20 +129,20 @@ export const handler: Handler = async (event) => {
         body: JSON.stringify({
           from: 'AI Chef Pro <noreply@contact.aichef.pro>',
           to: email,
-          subject: `Tu acceso a ${config.label}`,
+          subject: t.asunto(config.label),
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-              <h1 style="color: #FFD700; font-size: 24px;">Tu enlace de acceso a ${config.label}</h1>
+              <h1 style="color: #FFD700; font-size: 24px;">${t.titulo(config.label)}</h1>
               <p style="color: #333; line-height: 1.6;">
-                Hemos generado manualmente tu acceso al producto. Haz clic en el botón para entrar a tu dashboard:
+                ${t.cuerpo}
               </p>
               <div style="text-align: center; margin: 30px 0;">
                 <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
-                  Acceder a mi producto
+                  ${t.cta}
                 </a>
               </div>
               <p style="color: #666; font-size: 14px; line-height: 1.6;">
-                Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
+                ${emailI18n(config.lang).guardaEmail}
               </p>
               <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
               <p style="color: #999; font-size: 12px;">

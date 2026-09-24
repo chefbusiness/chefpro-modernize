@@ -7,6 +7,10 @@ cada página al sitio (--base; default producción) y exige:
   · landing y library: 1 `id="miselup-card"`, 1 bloque <style> con `#miselup-card`, 1 <script> con
     `miselupCardDismissed`, y el CTA a app.miselup.pro con sus UTM.
   · muestra de páginas AJENAS (home, hub, blog, precios, un -access, EN, términos): CERO rastros.
+  · productos de las tiendas por idioma (entradas con `lang` ≠ 'es' en zona-app.ts, p. ej.
+    food-cost-templates): su landing y su dashboard son páginas con CERO rastros — la tarjeta es
+    solo de la tienda ES hasta que Miselup tenga versión en ese idioma (TIENDA-INTERNACIONAL §3.9);
+    sus wrappers pasan miselup={false} a BaseLayout.
 NO construye nada en local (regla térmica): mide lo servido.
 
 Uso:
@@ -28,14 +32,16 @@ CTA = 'https://app.miselup.pro/signup?utm_source=aichef&utm_medium=sidecard&utm_
 
 
 def registro():
+    """(productId, landingPath, libraryPath, lang) de cada entrada; lang ausente = 'es'."""
     s = open(ZONA, encoding='utf-8').read()
     out = []
     for m in re.finditer(r"productId:\s*'([^']+)'(.*?)\}", s, re.S):
         pid, cuerpo = m.group(1), m.group(2)
         lp = re.search(r"landingPath:\s*'([^']+)'", cuerpo)
         lb = re.search(r"libraryPath:\s*'([^']+)'", cuerpo)
+        lg = re.search(r"\blang:\s*'([a-z]{2})'", cuerpo)
         if lp and lb:
-            out.append((pid, lp.group(1), lb.group(1)))
+            out.append((pid, lp.group(1), lb.group(1), lg.group(1) if lg else 'es'))
     return out
 
 
@@ -71,11 +77,15 @@ def main():
     if len(reg) < 40:
         print(f'✗ el registro zona-app.ts devuelve {len(reg)} productos: el parser ha perdido entradas')
         sys.exit(1)
-    objetivos = [(pid, 'landing', lp) for pid, lp, _ in reg] + [(pid, 'library', lb) for pid, _, lb in reg]
+    reg_es = [r for r in reg if r[3] == 'es']
+    otras = [r for r in reg if r[3] != 'es']
+    objetivos = [(pid, 'landing', lp) for pid, lp, _, _ in reg_es] + [(pid, 'library', lb) for pid, _, lb, _ in reg_es]
+    # Tiendas por idioma: landing y dashboard entran como páginas AJENAS (cero rastros).
+    ajenas = AJENAS + [lp for _, lp, _, _ in otras] + [lb for _, _, lb, _ in otras]
     fallos = []
     with cf.ThreadPoolExecutor(max_workers=8) as ex:
         res = list(ex.map(lambda t: (t, http(base + t[2])), objetivos))
-        aj = list(ex.map(lambda p: (p, http(base + p)), AJENAS))
+        aj = list(ex.map(lambda p: (p, http(base + p)), ajenas))
     ok = 0
     for (pid, tipo, path), (st, html) in res:
         if st != 200:
@@ -91,7 +101,8 @@ def main():
         if medir(html)['rastro']:
             fallos.append(f'ajena {path}: {medir(html)["rastro"]} rastros de la tarjeta Miselup y no debería haber ninguno')
     print(f'Miselup side-card en {base}: {ok}/{len(objetivos)} páginas de producto correctas '
-          f'({len(reg)} productos × landing + library) · {len(AJENAS)} páginas ajenas comprobadas')
+          f'({len(reg_es)} productos ES × landing + library) · {len(ajenas)} páginas ajenas comprobadas '
+          f'(de ellas {len(otras) * 2} de {len(otras)} producto(s) de otras tiendas, sin tarjeta)')
     for f in fallos:
         print('  ✗', f)
     sys.exit(1 if fallos else 0)

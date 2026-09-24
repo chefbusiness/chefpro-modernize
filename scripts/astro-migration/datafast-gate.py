@@ -14,9 +14,15 @@ WEBSITE_ID = 'dfid_QU6VBDPW3GqyxYmZoQvw0'
 DOMAIN = 'aichef.pro'
 # Muestra transversal: 7 portadas, precios, blog ES/EN, hub y landing de producto,
 # integraciones, legal, contacto y zona app (gate de acceso).
+# Tienda EN (25-sep-2026): hub, landing, gate de acceso ANIDADO y vuelta de cripto. El gate
+# de acceso es donde DataFast lee `?session_id=` para atribuir el Payment Link. Contra
+# producción, las tres rutas de food-cost-templates dan 404 hasta el merge: correr con
+# --base <deploy preview> antes.
 PAGINAS = ['/', '/en', '/fr', '/de', '/it', '/pt', '/nl', '/precios', '/en/pricing',
            '/blog', '/en/blog', '/productos-digitales', '/kit-escandallos', '/integraciones',
-           '/contacto', '/privacidad', '/kit-escandallos-access']
+           '/contacto', '/privacidad', '/kit-escandallos-access',
+           '/en/digital-products', '/en/digital-products/food-cost-templates',
+           '/en/digital-products/food-cost-templates/access', '/en/crypto-payment']
 SCRIPTS = ['https://datafa.st/js/script.js', 'https://datafa.st/js/script.cookieless.js']
 
 def get(url, timeout=30):

@@ -6,10 +6,19 @@ import logo from '@/assets/logo-ai-chef-pro.svg';
  * The pill is hidden on the products hub (you are already there); on every
  * other dark-bg page (landings, access gates, dashboards) it gives an
  * explicit way back to /productos-digitales and /.
+ *
+ * `lang` (2026-09-24, tienda internacional): con 'en' la píldora vuelve al hub EN
+ * (/en/digital-products) y a /en. Sin la prop (todo el ES) es exactamente lo de antes.
  */
-export default function LogoBadge() {
+const COPY = {
+  es: { hub: '/productos-digitales', hubLabel: '← Productos Digitales', home: '/', homeLabel: 'Inicio' },
+  en: { hub: '/en/digital-products', hubLabel: '← Digital Products', home: '/en', homeLabel: 'Home' },
+} as const;
+
+export default function LogoBadge({ lang = 'es' }: { lang?: 'es' | 'en' }) {
   const { pathname } = useLocation();
-  const isHub = pathname === '/productos-digitales';
+  const t = COPY[lang === 'en' ? 'en' : 'es'];
+  const isHub = pathname === t.hub;
 
   return (
     <div>
@@ -17,24 +26,24 @@ export default function LogoBadge() {
         <nav className="flex justify-center pt-1 mb-2 md:mb-3">
           <div className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-sm text-xs text-gray-400">
             <a
-              href="/productos-digitales"
+              href={t.hub}
               className="hover:text-[#FFD700] transition-colors whitespace-nowrap"
             >
-              ← Productos Digitales
+              {t.hubLabel}
             </a>
             <span className="text-white/20" aria-hidden="true">·</span>
             <a
-              href="/"
+              href={t.home}
               className="hover:text-[#FFD700] transition-colors"
             >
-              Inicio
+              {t.homeLabel}
             </a>
           </div>
         </nav>
       )}
       <div className="flex justify-center py-6 md:py-8">
         <a
-          href="/"
+          href={t.home}
           className="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow"
         >
           <img

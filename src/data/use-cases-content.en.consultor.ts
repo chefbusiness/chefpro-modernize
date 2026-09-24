@@ -23,7 +23,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     features: [
       { icon: 'BriefcaseBusiness', title: 'Restaurant Manager Pro', description: 'Operational and financial diagnosis of the client with an agent that understands industry ratios and HORECA benchmarks.' },
       { icon: 'FileText', title: 'Financial plan deliverable', description: 'Financial Plan Kit as the foundation of your deliverable: cash flow, breakeven, monthly P&L, ratio dashboard ready for investors.' },
-      { icon: 'Calculator', title: 'Professional recipe costing', description: 'Creative Kitchen delivers recipe + cost CSV with reference HORECA pricing; the Recipe Costing Pro Kit manages it with the client\'s real prices.' },
+      { icon: 'Calculator', title: 'Professional recipe costing', description: 'Creative Kitchen delivers recipe + cost CSV with reference HORECA pricing; the Food Cost Kit Pro manages it with the client\'s real prices.' },
       { icon: 'ShieldCheck', title: 'HACCP and auditable compliance', description: 'HACCP Pack with 19 records ready for inspection. Useful for the client\'s food safety audits.' },
       { icon: 'Search', title: 'Keyword Discovery AI+', description: 'Local SEO competitive analysis and positioning by postal area: direct input for the marketing diagnostic.' },
       { icon: 'BookOpen', title: 'Opening guides by concept', description: 'Premium Guides for Fine Dining, Casual, Mexican, Peruvian, Japanese, Nikkei, and Bakery with Obrador: business plan structure ready to personalize for each client.' },
@@ -36,7 +36,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       '8:30 AM · Coffee and new-client onboarding — open the client\'s «Who Am I?»: type of business, average ticket, location, team structure. The system is calibrated in 2 minutes.',
       '9:30 AM · Due diligence — ask Restaurant Manager Pro for an operational diagnosis using the data you uploaded the day before. Get 5 priority actions.',
       '11:00 AM · Financial analysis — open the Financial Plan Kit, load the client\'s P&L, and get industry ratios compared against benchmark.',
-      '1:00 PM · Costing critical menu items — Creative Kitchen delivers a CSV for the client\'s top 8 dishes; you load real prices into Recipe Costing Pro Kit and detect 3 dishes bleeding margin.',
+      '1:00 PM · Costing critical menu items — Creative Kitchen delivers a CSV for the client\'s top 8 dishes; you enter real prices in Food Cost Kit Pro and detect 3 dishes bleeding margin.',
       '3:00 PM · Client meeting — present the diagnostic with dashboard, action plan, and 90-day forecast. Wrapped up in 30 minutes.',
       '4:30 PM · Competitive analysis — Keyword Discovery AI+ returns a competitor map for the client\'s postal area and local SEO opportunities.',
       '5:30 PM · Drafting the continuity proposal — use the Pro Prompts eBook to structure the offer with fees, scope, and deliverables.',
@@ -72,7 +72,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     apps: [
       { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Main agent for operational and financial diagnostics for the client.' },
       { name: 'Casual Restaurants AI+', category: 'Conceptos de Negocio', description: 'Specialist in bistros, gastrobars, tapas, and Mediterranean: covers the casual spectrum.' },
-      { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Dish development with recipe + cost CSV to load into the client\'s Recipe Costing Pro Kit.' },
+      { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Dish development with recipe + cost CSV to paste into the client\'s Food Cost Kit Pro.' },
       { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Accurate yields and shrinkage by ingredient: key for realistic recipe costing in audits.' },
       { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Automatic allergen identification by dish: required for compliance reports.' },
       { name: 'MenuDish Local SEO', category: 'Contenidos y RRSS', description: 'Diagnostic of the client\'s dish descriptions and optimized local SEO proposal.' },
@@ -136,7 +136,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Consultant Chef',
     features: [
       { icon: 'ChefHat', title: 'Creative Kitchen', description: 'Professional dish development with detailed recipe + cost CSV using reference HORECA prices, ready to personalize.' },
-      { icon: 'Calculator', title: 'Professional costing', description: 'Recipe Costing Pro Kit: manages costing with the client\'s real prices, yields, and shrinkage; exports professional PDF.' },
+      { icon: 'Calculator', title: 'Professional costing', description: 'Food Cost Kit Pro: manages costing with the client\'s real prices, yields, and shrinkage; exports professional PDF.' },
       { icon: 'BookOpen', title: 'Technical sheets and manuals', description: 'Automatic generation of technical sheets with allergens, mise en place, dish photo, and detailed procedure.' },
       { icon: 'Users', title: 'Brigade training', description: 'Staff Management Kit with cook onboarding, collective-agreement-aware shift plans, and overtime control.' },
       { icon: 'Building2', title: 'Multi-location standardization', description: 'Replicable operational manuals: the same dish executed identically in 1, 5, or 25 kitchens of the client group.' },
@@ -149,7 +149,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · New-client calibration — open the client\'s «Who Am I?»: type of cuisine, target covers, average ticket, kitchen team, city.',
       '9:30 AM · Creative Kitchen — request 8 dishes for the client\'s seasonal menu change. Receive detailed recipe + cost CSV.',
-      '11:00 AM · Costing personalization — load the client\'s real prices into the Recipe Costing Pro Kit and adjust margins per dish.',
+      '11:00 AM · Costing personalization — enter the client\'s real prices in the Food Cost Kit Pro and adjust margins per dish.',
       '1:00 PM · Meeting with the client\'s executive chef — present the 8 dishes with photo, technical sheet, and target margin. Validate the 6 that go into production.',
       '3:00 PM · Operational manuals — generate technical sheets for the 6 dishes with allergens, mise en place, and step-by-step procedure.',
       '5:00 PM · Brigade training — prepare onboarding material with the Staff Management Kit. Print on professional template for the team.',
@@ -158,7 +158,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     ],
     productsTitle: 'Templates and Kits for Consultant Chefs',
     productIds: ['kit-escandallos', 'guia-restaurante-gastronomico', 'kit-tareas-restaurante-creativo', 'kit-gestion-personal', 'kit-inventario', 'pro-prompts-ebook'],
-    testimonialQuote: 'I used to spend 4 hours costing every client menu. Now Creative Kitchen delivers a CSV with reference prices and the Recipe Costing Pro Kit closes it in 30 minutes with the client\'s real prices. I\'ve tripled the projects I take on per year.',
+    testimonialQuote: 'I used to spend 4 hours costing every client menu. Now Creative Kitchen delivers a CSV with reference prices and the Food Cost Kit Pro closes it in 30 minutes with the client\'s real prices. I\'ve tripled the projects I take on per year.',
     testimonialAuthor: 'David Hernández',
     testimonialRole: 'Consultant Chef, former 2-star Michelin',
     faqTitle: 'Frequently Asked Questions from Consultant Chefs',
@@ -213,7 +213,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ],
       afterTitle: 'With AI Chef Pro',
       afterItems: [
-        '30 minutes per menu with Creative Kitchen + Recipe Costing Pro Kit',
+        '30 minutes per menu with Creative Kitchen + Food Cost Kit Pro',
         'Technical sheets with allergens generated automatically and editable',
         'Printable operational manuals the client\'s team can use without you',
         'Professional shift plans with Staff Management Kit respecting labor laws',
@@ -248,8 +248,8 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     ],
     featuresTitle: 'How AI Chef Pro Powers a Gelato Consultant',
     features: [
-      { icon: 'IceCream', title: 'Creative Kitchen Pro', description: 'Development of flavors and balanced bases with recipe + cost CSV ready for the client\'s Recipe Costing Pro Kit.' },
-      { icon: 'Calculator', title: 'Gelato costing', description: 'Recipe Costing Pro Kit adapted to gelato: client\'s real prices for dairy base, fruit, chocolate, nuts, and stabilizers.' },
+      { icon: 'IceCream', title: 'Creative Kitchen Pro', description: 'Development of flavors and balanced bases with recipe + cost CSV ready to paste into the client\'s Food Cost Kit Pro.' },
+      { icon: 'Calculator', title: 'Gelato costing', description: 'Food Cost Kit Pro adapted to gelato: client\'s real prices for dairy base, fruit, chocolate, nuts, and stabilizers.' },
       { icon: 'ShieldCheck', title: 'HACCP for gelato', description: 'HACCP Pack with specific templates: cold chain, pasteurization, batch freezer, display case, and traceability ready for inspection.' },
       { icon: 'CheckSquare', title: 'Operational tasks by shift', description: 'Gelato Tasks Kit with opening, closing, production, display case, and service: protocols ready for the client\'s team.' },
       { icon: 'FileText', title: 'Opening financial plan', description: 'Financial Plan Kit with batch freezer, blast chiller, display case, cold storage forecast, and ROI for project investors.' },
@@ -262,7 +262,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of shop (artisan, gelato, sorbet), average ticket, city, batch freezer and display case available.',
       '9:30 AM · Seasonal menu — Creative Kitchen Pro delivers 12 balanced flavors (POD/PAC/solids in range) for the summer season.',
-      '11:00 AM · Costing with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per flavor.',
+      '11:00 AM · Costing with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per flavor.',
       '1:00 PM · Meeting with the client\'s master gelato maker — present the 12 proposals. Validate 8 going into production.',
       '3:00 PM · Technical sheets — generate sheets with mix balance, allergens, and procedure ready to print in the lab.',
       '4:30 PM · HACCP — update cold chain, pasteurization, and display case records with the HACCP Pack. Client is ready for inspection.',
@@ -294,7 +294,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/heladero-consultor.jpg',
     },
     personalizationTitle: 'Every Gelato Shop, Calibrated From Minute One',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of shop (artisan, gelato, sorbet), target covers, average ticket, equipment available, and city. From there, Creative Kitchen Pro, Recipe Costing Pro Kit, and HACCP respond adapted to the client\'s context: milk and fruit prices in their area, national regulation, and real operational scale. Switch clients and recalibrate in 2 minutes.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of shop (artisan, gelato, sorbet), target covers, average ticket, equipment available, and city. From there, Creative Kitchen Pro, Food Cost Kit Pro, and HACCP respond adapted to the client\'s context: milk and fruit prices in their area, national regulation, and real operational scale. Switch clients and recalibrate in 2 minutes.',
     appsTitle: 'The AI Agents You\'ll Use as a Gelato Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Flavor and base development with POD/PAC/solids balance + cost CSV.' },
@@ -362,7 +362,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Chocolatier Consultant',
     features: [
       { icon: 'Cookie', title: 'Creative Kitchen Pro', description: 'Development of bonbons, tablets, and desserts with detailed recipe + cost CSV using premium cacao prices.' },
-      { icon: 'Calculator', title: 'Chocolaterie costing', description: 'Recipe Costing Pro Kit adapted to chocolate work: couverture by origin, premium nuts, butters, and specialties.' },
+      { icon: 'Calculator', title: 'Chocolaterie costing', description: 'Food Cost Kit Pro adapted to chocolate work: couverture by origin, premium nuts, butters, and specialties.' },
       { icon: 'ShieldCheck', title: 'HACCP for chocolaterie', description: 'HACCP Pack with cold chain, tempering, refrigerated display, and traceability ready for inspection and luxury hotel proposals.' },
       { icon: 'CheckSquare', title: 'Operational tasks', description: 'Chocolaterie Tasks Kit with opening, closing, production, display case, and service ready for the client\'s team.' },
       { icon: 'FileText', title: 'Project financial plan', description: 'Financial Plan Kit with tempering machine, display case, refrigerated cases, and ROI for investors and banks.' },
@@ -375,7 +375,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of shop (chocolate shop, hotel, restaurant), average ticket, city, tempering machine available.',
       '9:30 AM · Christmas collection — Creative Kitchen Pro delivers 15 holiday bonbons with recipe + cost CSV using premium couverture prices.',
-      '11:00 AM · Costing with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per piece.',
+      '11:00 AM · Costing with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per piece.',
       '1:00 PM · Meeting with the client\'s chocolatier — present the 15 proposals. Validate 12 going into production.',
       '3:00 PM · Technical sheets — generate sheets with tempering curve, shelf life, allergens, and detailed procedure.',
       '4:30 PM · HACCP — update cold chain, refrigerated display, and traceability records with the HACCP Pack.',
@@ -407,7 +407,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/chocolatero-consultor.jpg',
     },
     personalizationTitle: 'Every Chocolate Shop, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of chocolaterie (shop, hotel, restaurant), average ticket, equipment (tempering machine, display case, blast chiller), and city. From there, Creative Kitchen Pro, Recipe Costing Pro Kit, and HACCP respond adapted to the client\'s real context: couverture prices in their area, national regulation, and operational scale.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of chocolaterie (shop, hotel, restaurant), average ticket, equipment (tempering machine, display case, blast chiller), and city. From there, Creative Kitchen Pro, Food Cost Kit Pro, and HACCP respond adapted to the client\'s real context: couverture prices in their area, national regulation, and operational scale.',
     appsTitle: 'The AI Agents You\'ll Use as a Chocolatier Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of bonbons, tablets, and desserts with detailed recipe and tempering curve.' },
@@ -475,7 +475,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Pastry Consultant',
     features: [
       { icon: 'CakeSlice', title: 'Creative Kitchen Pro', description: 'Development of desserts, doughs, puff pastry, and panettone with detailed recipe + cost CSV using HORECA prices.' },
-      { icon: 'Calculator', title: 'Pastry costing', description: 'Recipe Costing Pro Kit adapted to pastry: butter, flour, premium dairy, chocolate, and nuts with the client\'s real prices.' },
+      { icon: 'Calculator', title: 'Pastry costing', description: 'Food Cost Kit Pro adapted to pastry: butter, flour, premium dairy, chocolate, and nuts with the client\'s real prices.' },
       { icon: 'ShieldCheck', title: 'HACCP for pastry', description: 'HACCP Pack with cold chain, refrigerated display, blast chiller, and traceability ready for inspection.' },
       { icon: 'CheckSquare', title: 'Operational tasks by shift', description: 'Pastry Tasks Kit with opening, closing, production, decoration, and service ready for the client\'s team.' },
       { icon: 'FileText', title: 'Opening financial plan', description: 'Financial Plan Kit with oven, blast chiller, display case forecast, and ROI for project investors.' },
@@ -488,7 +488,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of project (patisserie, restaurant, hotel), average ticket, city, equipment available.',
       '9:30 AM · Dessert menu — Creative Kitchen Pro delivers 10 balanced desserts for the client restaurant with recipe + cost CSV.',
-      '11:00 AM · Costing with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per dessert.',
+      '11:00 AM · Costing with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per dessert.',
       '1:00 PM · Meeting with the client\'s executive chef — present the 10 desserts. Validate 6 going into production.',
       '3:00 PM · Technical sheets — generate sheets with sourdough, fermentation times, allergens, and procedure ready for the lab.',
       '4:30 PM · HACCP — update cold chain and display case records with the HACCP Pack. Client is ready for inspection.',
@@ -520,7 +520,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/pastelero-consultor.jpg',
     },
     personalizationTitle: 'Every Pastry Project, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of project (restaurant dessert menu, retail patisserie, bakery café, hotel), average ticket, equipment (oven, blast chiller, display case), and city. From there, Creative Kitchen Pro, Recipe Costing Pro Kit, and HACCP respond adapted to the client\'s real context.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of project (restaurant dessert menu, retail patisserie, bakery café, hotel), average ticket, equipment (oven, blast chiller, display case), and city. From there, Creative Kitchen Pro, Food Cost Kit Pro, and HACCP respond adapted to the client\'s real context.',
     appsTitle: 'The AI Agents You\'ll Use as a Pastry Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of desserts, doughs, puff pastry, and viennoiserie with detailed recipe.' },
@@ -588,7 +588,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Pizza Consultant',
     features: [
       { icon: 'Pizza', title: 'Creative Kitchen Pro', description: 'Pizza development with detailed recipe (dough, sauce, mozzarella, toppings) + cost CSV using HORECA prices.' },
-      { icon: 'Calculator', title: 'Pizzeria costing', description: 'Recipe Costing Pro Kit adapted to pizzeria: Italian flour, fior di latte mozzarella, San Marzano tomato, premium oil with real prices.' },
+      { icon: 'Calculator', title: 'Pizzeria costing', description: 'Food Cost Kit Pro adapted to pizzeria: Italian flour, fior di latte mozzarella, San Marzano tomato, premium oil with real prices.' },
       { icon: 'ShieldCheck', title: 'HACCP for pizzeria', description: 'HACCP Pack with traceability, cold-room temperatures, controlled fermentation, and display ready for inspection.' },
       { icon: 'CheckSquare', title: 'Operational tasks', description: 'Pizzeria Tasks Kit with opening, closing, production, fermentation, and service for the client\'s team.' },
       { icon: 'FileText', title: 'Opening financial plan', description: 'Financial Plan Kit with oven (wood/electric/gas), fermentation chamber, mixer forecast, and ROI for investors.' },
@@ -601,7 +601,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of pizzeria (Neapolitan, Roman, gourmet, al taglio), average ticket, city, type of oven available.',
       '9:30 AM · Pizza menu — Creative Kitchen Pro delivers 12 pizzas with detailed recipe and cost CSV using HORECA prices for Italian flour, mozzarella, and tomato.',
-      '11:00 AM · Costing with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per pizza.',
+      '11:00 AM · Costing with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per pizza.',
       '1:00 PM · Meeting with the client\'s pizzaiolo — present the 12 proposals. Validate 8 going into production.',
       '3:00 PM · Fermentation manual — generate sheets with bulk fermentation, snap-cool, hydration ratios, and procedure ready to print in the lab.',
       '4:30 PM · HACCP — update traceability, controlled fermentation, and cold-room records with the HACCP Pack.',
@@ -633,7 +633,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/pizzero-consultor.jpg',
     },
     personalizationTitle: 'Every Pizzeria, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of pizzeria (Neapolitan, Roman, al taglio, gourmet), average ticket, equipment (wood/electric/gas oven), and city. From there, Creative Kitchen Pro and Recipe Costing Pro Kit respond adapted to the client\'s real context.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of pizzeria (Neapolitan, Roman, al taglio, gourmet), average ticket, equipment (wood/electric/gas oven), and city. From there, Creative Kitchen Pro and Food Cost Kit Pro respond adapted to the client\'s real context.',
     appsTitle: 'The AI Agents You\'ll Use as a Pizza Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Pizza development with detailed recipe (dough, sauce, mozzarella, toppings).' },
@@ -701,7 +701,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Barista Consultant',
     features: [
       { icon: 'Coffee', title: 'Creative Kitchen Pro', description: 'Coffee beverage development (classic espresso, signature drinks, batch brew) with recipe + cost CSV using HORECA prices.' },
-      { icon: 'Calculator', title: 'Café costing', description: 'Recipe Costing Pro Kit adapted to café: green coffee, milk, premium syrups, and specialties with the client\'s real prices.' },
+      { icon: 'Calculator', title: 'Café costing', description: 'Food Cost Kit Pro adapted to café: green coffee, milk, premium syrups, and specialties with the client\'s real prices.' },
       { icon: 'ShieldCheck', title: 'HACCP for café', description: 'HACCP Pack with milk cold chain, traceability, grinder and machine cleaning ready for inspection.' },
       { icon: 'CheckSquare', title: 'Operational tasks', description: 'Café Tasks Kit with opening, closing, production, grinder calibration, and service for the client\'s team.' },
       { icon: 'FileText', title: 'Project financial plan', description: 'Financial Plan Kit with espresso machine, grinder, roaster, batch brewer forecast, and ROI for investors.' },
@@ -714,7 +714,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of café (specialty, hotel café, brunch, omnivora), average ticket, city, machines available.',
       '9:30 AM · Coffee menu — Creative Kitchen Pro delivers 10 beverages (espresso, signature drinks, batch brew, café au lait) with cost CSV.',
-      '11:00 AM · Costing with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per beverage.',
+      '11:00 AM · Costing with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per beverage.',
       '1:00 PM · Client meeting — present the 10 proposals. Validate 7 going into production.',
       '3:00 PM · Extraction sheets — generate sheets with ratio, temperature, time, and calibration ready to print at the bar.',
       '4:30 PM · HACCP — update milk cold chain, grinder and machine cleaning records with the HACCP Pack.',
@@ -746,7 +746,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/barista-consultor.jpg',
     },
     personalizationTitle: 'Every Specialty Coffee Shop, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of café (specialty, hotel, brunch, omnivora), average ticket, equipment (machine, grinder, roaster), and city. From there, Creative Kitchen Pro and Recipe Costing Pro Kit respond adapted to the client\'s real context.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of café (specialty, hotel, brunch, omnivora), average ticket, equipment (machine, grinder, roaster), and city. From there, Creative Kitchen Pro and Food Cost Kit Pro respond adapted to the client\'s real context.',
     appsTitle: 'The AI Agents You\'ll Use as a Barista Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of coffee beverages and signature drinks with detailed recipe.' },
@@ -814,7 +814,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Sommelier Consultant',
     features: [
       { icon: 'Wine', title: 'Creative Kitchen Pro + Pairing', description: 'Pairing proposals with sommelier judgment for the client\'s dishes. Technical and business justification.' },
-      { icon: 'Calculator', title: 'Beverage cost and costing', description: 'Recipe Costing Pro Kit adapted to beverages: wines by glass, bottle, magnum, sparkling, fortified with target margin per reference.' },
+      { icon: 'Calculator', title: 'Beverage cost and costing', description: 'Food Cost Kit Pro adapted to beverages: wines by glass, bottle, magnum, sparkling, fortified with target margin per reference.' },
       { icon: 'BookOpen', title: 'List technical sheets', description: 'Sheets with winery, denomination, vintage, grapes, descriptors, and pairing ready for the floor. Printable and digital.' },
       { icon: 'BarChart3', title: 'Cellar optimization', description: 'Turnover analysis, dead stock, pricing opportunity, and seasonal list proposals.' },
       { icon: 'Users', title: 'Floor training', description: 'Staff Management Kit with floor team onboarding in wine, pairing, and service.' },
@@ -826,7 +826,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflowTitle: 'A Real Day of a Sommelier Consultant with AI Chef Pro',
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of restaurant (fine dining, casual, hotel, wine bar), average ticket, city, and cuisine style.',
-      '9:30 AM · Current list analysis — audit with Recipe Costing Pro Kit: detect references with off-target beverage cost and dead stock.',
+      '9:30 AM · Current list analysis — audit with Food Cost Kit Pro: detect references with off-target beverage cost and dead stock.',
       '11:00 AM · Creative Kitchen Pro + Pairing — request pairing proposals for the client\'s top 8 dishes. Get technical justification by glass and by bottle.',
       '1:00 PM · Meeting with the F&B Manager — present the audit, seasonal list proposal, and pricing plan. Wrapped in 60 minutes.',
       '3:00 PM · Technical sheets — generate sheets with winery, vintage, descriptors, and pairing ready for the floor. Printable and digital.',
@@ -859,7 +859,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/sommelier-consultor.jpg',
     },
     personalizationTitle: 'Every Wine Program, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of restaurant (fine dining, casual, hotel, wine bar), average ticket, cuisine style, and city. From there, Creative Kitchen Pro + Pairing, Recipe Costing Pro Kit, and HACCP Pack respond adapted to the client\'s real context.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of restaurant (fine dining, casual, hotel, wine bar), average ticket, cuisine style, and city. From there, Creative Kitchen Pro + Pairing, Food Cost Kit Pro, and HACCP Pack respond adapted to the client\'s real context.',
     appsTitle: 'The AI Agents You\'ll Use as a Sommelier Consultant',
     apps: [
       { name: 'Cocina Creativa Pro + Maridaje', category: 'Creatividad Culinaria', description: 'Pairing proposals with sommelier judgment for the client\'s dishes.' },
@@ -927,7 +927,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Bartender Consultant',
     features: [
       { icon: 'Martini', title: 'Creative Kitchen Pro', description: 'Cocktail development (classics, signature, low-ABV, alcohol-free) with recipe + cost CSV using HORECA prices.' },
-      { icon: 'Calculator', title: 'Beverage cost and costing', description: 'Recipe Costing Pro Kit adapted to cocktails: premium spirits, modifiers, bitters, garnish, and ice with the client\'s real prices.' },
+      { icon: 'Calculator', title: 'Beverage cost and costing', description: 'Food Cost Kit Pro adapted to cocktails: premium spirits, modifiers, bitters, garnish, and ice with the client\'s real prices.' },
       { icon: 'BookOpen', title: 'Bar technical sheets', description: 'Sheets with exact recipe (ml/oz), technique (shake/stir/build/throw), glassware, garnish, and notes ready to print.' },
       { icon: 'Users', title: 'Bar team training', description: 'Staff Management Kit with bartender onboarding, labor-cost control, and shift plans.' },
       { icon: 'FileText', title: 'Project financial plan', description: 'Financial Plan Kit with bar, displays, ice machine, batch cocktail machine forecast, and ROI.' },
@@ -940,7 +940,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of bar (signature cocktail bar, hotel, casual), average ticket, city, and equipment.',
       '9:30 AM · New menu — Creative Kitchen Pro delivers 12 cocktails (4 reread classics + 4 signature + 4 low-ABV) with cost CSV.',
-      '11:00 AM · Beverage cost with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per cocktail.',
+      '11:00 AM · Beverage cost with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per cocktail.',
       '1:00 PM · Client meeting — present the 12 proposals. Validate 9 going into production.',
       '3:00 PM · Bar technical sheets — generate sheets with exact recipe (ml/oz), technique, glassware, and garnish ready to print.',
       '4:30 PM · Team training — onboarding material with the Staff Management Kit. Internal quiz on mixology, technique, and service.',
@@ -972,7 +972,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/bartender-consultor.jpg',
     },
     personalizationTitle: 'Every Cocktail Bar, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of bar (signature cocktail bar, hotel, casual), average ticket, equipment, and city. From there, Creative Kitchen Pro and Recipe Costing Pro Kit respond adapted to the client\'s real context.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of bar (signature cocktail bar, hotel, casual), average ticket, equipment, and city. From there, Creative Kitchen Pro and Food Cost Kit Pro respond adapted to the client\'s real context.',
     appsTitle: 'The AI Agents You\'ll Use as a Bartender Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Cocktail development (reread classics, signature, low-ABV, alcohol-free) with detailed recipe.' },
@@ -1040,7 +1040,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     featuresTitle: 'How AI Chef Pro Powers a Baker Consultant',
     features: [
       { icon: 'Wheat', title: 'Creative Kitchen Pro', description: 'Development of breads, sourdoughs, puff pastry, and brioche with detailed recipe + cost CSV using HORECA prices.' },
-      { icon: 'Calculator', title: 'Bakery costing', description: 'Recipe Costing Pro Kit adapted to bakery: T55/T65/T80 flour, AOP butter, premium dairy, and seeds with the client\'s real prices.' },
+      { icon: 'Calculator', title: 'Bakery costing', description: 'Food Cost Kit Pro adapted to bakery: T55/T65/T80 flour, AOP butter, premium dairy, and seeds with the client\'s real prices.' },
       { icon: 'BookOpen', title: 'Lab manuals', description: 'Technical sheets with fermentation times (bulk, snap-cool, retard), hydration, preferments, and detailed procedure.' },
       { icon: 'ShieldCheck', title: 'HACCP for bakery', description: 'HACCP Pack with traceability, cold-room temperatures, controlled fermentation, and display ready for inspection.' },
       { icon: 'FileText', title: 'Project financial plan', description: 'Financial Plan Kit with hearth oven, mixer, fermentation chamber forecast, and ROI for investors.' },
@@ -1053,7 +1053,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
     workflow: [
       '8:30 AM · Client calibration — open «Who Am I?»: type of project (bakery café, lab bakery, hotel, group), average ticket, city, and equipment.',
       '9:30 AM · Product catalog — Creative Kitchen Pro delivers 15 references (5 breads + 5 viennoiserie + 5 panettone/puff) with cost CSV.',
-      '11:00 AM · Costing with real prices — load the client\'s prices into the Recipe Costing Pro Kit and validate target margin per product.',
+      '11:00 AM · Costing with real prices — enter the client\'s prices in the Food Cost Kit Pro and validate target margin per product.',
       '1:00 PM · Meeting with the client\'s baker — present the 15 proposals. Validate 10 going into production.',
       '3:00 PM · Lab manuals — generate sheets with bulk fermentation, snap-cool, hydration ratios, and procedure ready to print.',
       '4:30 PM · HACCP — update traceability, controlled fermentation, and cold-room records with the HACCP Pack.',
@@ -1085,7 +1085,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       ogImage: 'https://aichef.pro/og/use-cases/panadero-consultor.jpg',
     },
     personalizationTitle: 'Every Bakery, Calibrated in 2 Minutes',
-    personalizationBody: 'Every project starts with «Who Am I?»: type of project (bakery café, lab bakery, hotel, bakery chain), average ticket, equipment (hearth oven, mixer, fermentation chamber), and city. From there, Creative Kitchen Pro, Recipe Costing Pro Kit, and HACCP Pack respond adapted to the client\'s real context.',
+    personalizationBody: 'Every project starts with «Who Am I?»: type of project (bakery café, lab bakery, hotel, bakery chain), average ticket, equipment (hearth oven, mixer, fermentation chamber), and city. From there, Creative Kitchen Pro, Food Cost Kit Pro, and HACCP Pack respond adapted to the client\'s real context.',
     appsTitle: 'The AI Agents You\'ll Use as a Baker Consultant',
     apps: [
       { name: 'Cocina Creativa Pro', category: 'Creatividad Culinaria', description: 'Development of breads, sourdough, puff pastry, and brioche with detailed recipe.' },

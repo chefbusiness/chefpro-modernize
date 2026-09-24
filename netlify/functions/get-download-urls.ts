@@ -19,6 +19,25 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-mermas': '/dl/kit-escandallos/BONUS-mermas-inventario.xlsx',
     'bonus-guia': '/dl/kit-escandallos/BONUS-guia-food-cost-30-dias.pdf',
   },
+  // Tienda EN (2026-09-24): Food Cost Kit Pro. MISMAS claves que kit-escandallos (las del
+  // TEMPLATES de src/pages/FoodCostKitDashboard.tsx) → ficheros EN de /dl/food-cost-templates/.
+  'food-cost-templates': {
+    'estandar': '/dl/food-cost-templates/01-recipe-cost-card.xlsx',
+    'degustacion': '/dl/food-cost-templates/02-tasting-menu-costing.xlsx',
+    'menu-dia': '/dl/food-cost-templates/03-prix-fixe-set-menu-costing.xlsx',
+    'cocktails': '/dl/food-cost-templates/04-pour-cost-calculator.xlsx',
+    'pasteleria': '/dl/food-cost-templates/05-bakery-cake-pricing.xlsx',
+    'catering': '/dl/food-cost-templates/06-catering-pricing-quote.xlsx',
+    'cafeteria': '/dl/food-cost-templates/07-cafe-brunch-costing.xlsx',
+    'food-truck': '/dl/food-cost-templates/08-food-truck-pricing-break-even.xlsx',
+    'mermas': '/dl/food-cost-templates/09-food-waste-log.xlsx',
+    'calculadora-pvp': '/dl/food-cost-templates/10-menu-pricing-calculator.xlsx',
+    'dashboard': '/dl/food-cost-templates/11-food-cost-percentage-tracker.xlsx',
+    'test-rendimiento': '/dl/food-cost-templates/12-yield-test.xlsx',
+    'lista-precios': '/dl/food-cost-templates/13-ingredient-price-tracker.xlsx',
+    'bonus-mermas': '/dl/food-cost-templates/BONUS-actual-vs-theoretical-food-cost.xlsx',
+    'bonus-guia': '/dl/food-cost-templates/BONUS-reduce-food-cost-30-days.pdf',
+  },
   'pack-appcc': {
     'temp-diario': '/dl/pack-appcc/01-registro-temperaturas-diario.xlsx',
     'temp-recepcion': '/dl/pack-appcc/02-registro-temperaturas-recepcion.xlsx',

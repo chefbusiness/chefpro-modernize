@@ -1,0 +1,26 @@
+---
+// /en/digital-products/food-cost-templates/access — access gate de Food Cost Kit Pro (tienda EN).
+// COPIA de pages/kit-escandallos-access.astro, escrita A MANO: fase5-generate-zona-app.py salta
+// las entradas de zona-app.ts con lang ≠ 'es' (TIENDA §3). En lugar del gate vanilla del ES se
+// monta el gate COMPARTIDO ProductAccessGate con lang="en" (su COPY.en ya existe): mismo flujo
+// verify-purchase → JWT en localStorage → dashboard.
+// Island client:only="react" (window/localStorage en cliente; sin pase SSR). El <title> va en el
+// BaseLayout porque el shim de react-helmet-async anula el Helmet cliente (= COPY.en.title del gate).
+// Props de dinero = entrada `food-cost-templates` de lib/zona-app.ts y de verify-purchase.ts.
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../../../../components/FunctionsOriginPatch.astro';
+import ProductAccessGate from '../../../../../../src/components/shared/ProductAccessGate';
+---
+
+<BaseLayout title="Verifying access... | AI Chef Pro" lang="en" noindex>
+  <FunctionsOriginPatch />
+  <ProductAccessGate
+    client:only="react"
+    productId="food-cost-templates"
+    storageKey="food-cost-templates-jwt"
+    dashboardPath="/en/digital-products/food-cost-templates/library"
+    landingPath="/en/digital-products/food-cost-templates"
+    productLabel="Food Cost Kit Pro"
+    lang="en"
+  />
+</BaseLayout>
