@@ -1,0 +1,2217 @@
+---
+// DigitalProductsHubPageFr.astro — COPIA del hub EN (components/pages/DigitalProductsHubPage.astro),
+// traducida al francés. La monta pages/fr/produits-numeriques.astro. Nace el 24-sep-2026 por orden de
+// John: los hubs de cada idioma son el MISMO hub (mismas secciones, mismo orden, mismas clases, mismas
+// imágenes, mismo JS de filtros, «Load more» y buscador), nunca una plantilla propia. Se duplica y se
+// traduce; no se reconstruye.
+//
+// ⚠️ LOS FICHEROS SON GEMELOS (ES, EN, FR…): cualquier cambio de diseño, de orden de productos o de JS
+// en uno se replica en los demás. Solo difieren en el idioma del texto y en estas adaptaciones deliberadas:
+//  · Tarjetas: ningún producto existe aún en francés. Cada tarjeta se resuelve contra FAMILIAS de
+//    lib/tienda.ts por su slug ES: si la familia tiene `fr.vivo === true`, la tarjeta es un <a> a
+//    tiendaProductoPath('fr', slug) con su precio EUR de netlify/shared/product-prices.ts; si no,
+//    es un <div> sin enlace, sin precio y con el badge «Bientôt disponible en français».
+//  · Sin tachados ni descuentos, sin rating visible ni en schema (regla del hub EN, 24-sep-2026: sin
+//    compradores en ese idioma que lo respalden, tampoco los hay en francés).
+//  · Los 3 JSON-LD (CollectionPage + FAQPage + BreadcrumbList) en francés, UTF-8 correcto, sin
+//    ofertas; el ItemList solo lista productos vivos en FR (hoy ninguno → sin mainEntity).
+//  · Enlaces internos a su equivalente FR (/fr, /fr/blog, /fr/tarifs, /fr/privacidad); lo que no
+//    tiene equivalente FR (landings de producto ES, páginas pSEO de ciudades, el hub de librerías de
+//    prompts) va sin enlace o cae a /fr.
+//  · Buscador: mismo script; el índice se construye igual pero sin los alias ES por slug ni el gate
+//    de sinónimos huérfanos (los sinónimos de lib/sinonimos-buscador.json son de vocabulario español
+//    y con las tarjetas en francés estarían todos «huérfanos»). El registro envía lang: 'fr'.
+import Icon from '../Icon.astro';
+import { indiceBusqueda } from '../../lib/normalizar-busqueda';
+import { FAMILIAS, tiendaProductoPath } from '../../lib/tienda';
+import { PRODUCT_PRICES } from '../../../../netlify/shared/product-prices';
+
+const ALL_TAGS = [
+  { id: 'all', label: 'Tous', iconName: 'Filter' },
+  // Format
+  { id: 'excel', label: 'Excel' },
+  { id: 'pdf', label: 'PDF / eBook' },
+  { id: 'templates', label: 'Modèles' },
+  { id: 'guides', label: 'Guides pratiques' },
+  { id: 'manuals', label: 'Manuels' },
+  { id: 'business-plan', label: 'Plans d\'affaires' },
+  // Topic
+  { id: 'costs', label: 'Contrôle des coûts' },
+  { id: 'food-safety', label: 'Sécurité alimentaire' },
+  { id: 'ai', label: 'Intelligence artificielle' },
+  { id: 'management', label: 'Management' },
+  // Business concept
+  { id: 'restaurant', label: 'Restaurant' },
+  { id: 'cafe', label: 'Café' },
+  { id: 'pizzeria', label: 'Pizzeria' },
+  { id: 'burger', label: 'Restaurant de burgers' },
+  { id: 'dark-kitchen', label: 'Dark Kitchen' },
+  { id: 'pastry', label: 'Pâtisserie' },
+  { id: 'bakery', label: 'Boulangerie' },
+  { id: 'bar', label: 'Bar / Cocktails' },
+  { id: 'catering', label: 'Traiteur' },
+  { id: 'hotel', label: 'Hôtel' },
+  { id: 'ice-cream', label: 'Glacier / Glaces' },
+  { id: 'chocolate', label: 'Chocolaterie' },
+  { id: 'private-chef', label: 'Chef à domicile' },
+  { id: 'food-truck', label: 'Food truck' },
+  { id: 'mobile-catering', label: 'Traiteur mobile / Événements' },
+];
+
+// Mismo ORDEN que el hub ES (decisión de negocio: novedades primero, más vendidos, resto, Mega Pack
+// el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
+const products = [
+  {
+    name: 'Tâches récurrentes : Taquería mexicaine',
+    slug: '/kit-tareas-taqueria',
+    description: '11 fiches de contrôle pour une taquería mexicaine : broche al pastor, nixtamal et fabrication de tortillas, bar à salsas, HACCP et allergènes (règlementation UE sur les allergènes), et un calendrier annuel des tâches.',
+    features: [
+      'Broche verticale (trompo) : marinade, montage et sonde de température',
+      'Nixtamal et fabrication de tortillas : mouture maison et calibrage',
+      'Bar à salsas + les 14 allergènes obligatoires',
+      'Calendrier annuel : fêtes mexicaines et campagnes espagnoles',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/tareas-taqueria-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'templates', 'management', 'taqueria', 'mexican', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir une chocolaterie-boutique et un atelier',
+    slug: '/guia-chocolateria-obrador',
+    description: 'Atelier de production, appellations légales, vitrine de vente, campagnes saisonnières, licences, et fournisseurs de couverture et de cacao.',
+    features: [
+      '20 chapitres + annexe réglementaire + 9 fichiers Excel',
+      'Capacité de l\'atelier, contrôle de la température et de l\'humidité',
+      'Appellations légales du chocolat et étiquetage',
+      'Bonus : un business plan rempli et 12 décisions résolues',
+    ],
+    iconName: 'Cookie',
+    image: '/lovable-uploads/ai-gallery/guia-chocolateria-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
+  },
+  {
+    name: 'Comment ouvrir une pâtisserie',
+    slug: '/guia-pasteleria-obrador',
+    description: 'Atelier, licences et chiffres pour ceux qui n\'ont PAS encore ouvert : viabilité de l\'emplacement, coûts d\'ouverture, licences, carte et plan financier. 20 chapitres, 8 fichiers Excel et 2 bonus.',
+    features: [
+      '20 chapitres + annexe réglementaire + 8 fichiers Excel',
+      'Capacité de l\'atelier et checklist de visite de l\'emplacement',
+      'Licences et enregistrement sanitaire sous forme d\'arbre de décision',
+      'Bonus : un business plan rempli et 12 décisions résolues',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
+  },
+  {
+    name: 'Manuel du chef exécutif',
+    slug: '/manual-chef-ejecutivo',
+    description: 'Brigade de cuisine, production, fiches techniques, KPI de cuisine, allergènes et prévention des risques : 20 chapitres, 7 fichiers Excel et 12 scénarios résolus.',
+    features: [
+      '20 chapitres + 7 outils Excel',
+      'Tableau de bord cuisine avec pertes et production par poste',
+      'Fiches de process, brigade de cuisine et développement de la carte',
+      'Bonus : 12 scénarios de cuisine résolus',
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/manual-chef-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'food-safety', 'restaurant', 'hotel', 'catering'],
+  },
+  {
+    name: 'Manuel du manager de restaurant',
+    slug: '/manual-manager-restaurante',
+    description: 'Pour ceux qui gèrent déjà le service : opérations, équipe, chiffres, service et conformité légale, avec chaque réglementation citée et datée. 20 chapitres + 7 fichiers Excel avec formules dynamiques.',
+    features: [
+      '20 chapitres + 7 outils Excel',
+      'Tableau de bord hebdomadaire avec coût matière et KPI d\'exploitation',
+      'Horaires de travail, congés et règles disciplinaires avec réglementation et date',
+      'Bonus : 12 scénarios résolus',
+    ],
+    iconName: 'BriefcaseBusiness',
+    image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
+    badge: '✨ Nouveau',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
+  },
+  {
+    name: 'Guide Food Cost + Ingénierie de menu',
+    slug: '/guia-food-cost-ingenieria-menu',
+    description: 'Une méthode complète pour chiffrer vos recettes, fixer vos prix et structurer votre carte : TVA par canal, livraison, boissons et coût matière. 20 chapitres + 8 fichiers Excel avec formules dynamiques.',
+    features: [
+      '20 chapitres + 8 outils Excel',
+      '4 méthodes d\'ingénierie de menu recoupées',
+      'TVA par canal : sur place, à emporter et livraison',
+      'Bonus : 12 exercices résolus',
+    ],
+    iconName: 'Calculator',
+    image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
+  },
+  {
+    name: 'Kit de fiches techniques Pro',
+    slug: '/kit-escandallos',
+    description: '11 modèles Excel avec formules automatiques, taux de perte pré-remplis et un calculateur de prix de carte. Prenez le contrôle de votre coût matière.',
+    features: [
+      '11 modèles Excel professionnels',
+      'Taux de perte standard pré-remplis',
+      'Calculateur de prix de carte pour 9 types d\'établissements',
+      'Tableau de bord mensuel du coût matière',
+    ],
+    iconName: 'FileSpreadsheet',
+    image: '/kit-escandallos-hero.jpg',
+    badge: '🔥 Meilleure vente',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Ebook de prompts Gastro Pro',
+    slug: '/pro-prompts-ebook',
+    description: '300+ prompts d\'IA conçus spécifiquement pour l\'hôtellerie-restauration : cuisine créative, pâtisserie, traiteur, management, marketing et plus encore.',
+    features: [
+      'Ebook PDF + tableau de bord exclusif',
+      '300+ prompts organisés par catégorie',
+      'Compatible avec ChatGPT, Claude, Gemini',
+      'Mises à jour à vie',
+    ],
+    iconName: 'BookOpen',
+    image: '/ebook-mockup-bundle.webp',
+    badge: 'Meilleure vente',
+    badgeColor: 'bg-[#FFD700]/20 text-[#FFD700]',
+    tags: ['pdf', 'ai'],
+  },
+  {
+    name: 'Pack de modèles HACCP',
+    slug: '/pack-appcc',
+    description: '17 modèles de sécurité sanitaire : températures, nettoyage, allergènes, HACCP, traçabilité. Exigé par la loi.',
+    features: [
+      '17 modèles avec alertes automatiques',
+      'Matrice des 14 allergènes obligatoires',
+      'Analyse des dangers HACCP pré-remplie',
+      'Guide d\'inspection sanitaire',
+    ],
+    iconName: 'ShieldCheck',
+    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+    badge: '🔥 Meilleure vente',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Kit de contrôle des stocks et des achats',
+    slug: '/kit-inventario',
+    description: '9 modèles Excel avec formules automatiques : inventaire quotidien, fiches fournisseurs, bons de commande, réception de marchandises, contrôle des pertes, analyse des coûts, FIFO et 2 bonus.',
+    features: [
+      'Niveaux de stock avec alertes de réapprovisionnement',
+      'Comparaison des prix entre fournisseurs',
+      'Contrôle des pertes avec tableau de bord',
+      'FIFO et dates de péremption avec système de feux tricolores',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+    badge: '🔥 Meilleure vente',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Comment ouvrir un restaurant gastronomique',
+    slug: '/guia-restaurante-gastronomico',
+    description: 'Guide premium de 80+ pages : 22 chapitres, plan financier, conception de la cuisine et de la salle, brigade de cuisine, cave à vin, Michelin, Sol Repsol. 10 modèles Excel + 8 checklists + business plan + manuel de salle.',
+    features: [
+      'PDF + DOCX : 22 chapitres, 80+ pages',
+      '10 modèles Excel avec formules',
+      '8 checklists complètes d\'ouverture',
+      'Modèle de business plan prêt à présenter à la banque',
+    ],
+    iconName: 'Star',
+    image: '/lovable-uploads/ai-gallery/guia-dk-cocina.jpg',
+    badge: 'Premium',
+    badgeColor: 'bg-amber-500/20 text-amber-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir un restaurant casual',
+    slug: '/guia-restaurante-casual',
+    description: 'Guide premium de 60+ pages : 20 chapitres, plan financier, conception de la cuisine et de la salle, livraison, terrasse, menu du jour. 9 modèles Excel + 6 checklists + business plan + manuel d\'exploitation.',
+    features: [
+      'PDF + DOCX : 20 chapitres, 60+ pages',
+      '9 modèles Excel avec formules',
+      '6 checklists complètes d\'ouverture',
+      'Modèle de business plan prêt à présenter à la banque',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/guia-casual-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir une boulangerie avec un laboratoire de production',
+    slug: '/guia-panaderia-obrador',
+    description: 'Guide premium de 70+ pages : 20 chapitres, livre de recettes au levain, extraction des fumées, HACCP pour le laboratoire avec allergènes croisés, plan de fermentation 18-72h. 9 modèles Excel + 6 checklists + business plan + manuel du laboratoire.',
+    features: [
+      'PDF + DOCX : 20 chapitres, 70+ pages',
+      'Livre de recettes maîtresses au levain (baguette tradition, pain de campagne T80, croissant, panettone)',
+      'Checklist d\'extraction des fumées + licence d\'activité classée (28 points)',
+      'Calculateur CAPEX + chiffrage des recettes par type de farine',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/guia-panaderia-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'pastry', 'bakery', 'production-kitchen'],
+  },
+  {
+    name: 'Comment ouvrir un restaurant mexicain',
+    slug: '/guia-restaurante-mexicano',
+    description: 'Guide premium de 60+ pages : 20 chapitres, fournisseurs mexicains en Espagne, bar à tequila et mezcal, chiffrage de 15 recettes. 9 modèles Excel + 6 checklists + business plan + manuel d\'exploitation.',
+    features: [
+      'PDF + DOCX : 20 chapitres, 60+ pages',
+      '9 modèles Excel avec formules',
+      '6 checklists complètes d\'ouverture',
+      'Chiffrage des recettes pour 15 plats mexicains',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir un restaurant péruvien',
+    slug: '/guia-restaurante-peruano',
+    description: 'Guide premium de 60+ pages : 20 chapitres, bar à ceviche, cuisine nikkei, bar à pisco, fournisseurs péruviens en Espagne. 9 modèles Excel + 6 checklists + business plan + manuel d\'exploitation.',
+    features: [
+      'PDF + DOCX : 20 chapitres, 60+ pages',
+      '9 modèles Excel avec formules',
+      '6 checklists complètes d\'ouverture',
+      'Chiffrage des recettes pour 15 plats péruviens',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-peruano-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir un restaurant japonais',
+    slug: '/guia-restaurante-japones',
+    description: 'Guide premium de 60+ pages : 20 chapitres, sushi-ya, ramen-ya, izakaya, omakase, robatayaki. Poisson qualité sashimi, réglementation anisakis, bar à saké et whisky japonais. 9 modèles Excel + 6 checklists + business plan + manuel d\'exploitation.',
+    features: [
+      'PDF + DOCX : 20 chapitres, 60+ pages',
+      '9 modèles Excel avec formules',
+      '6 checklists (inclut HACCP anisakis)',
+      'Chiffrage des recettes pour 15 plats japonais',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir un restaurant Nikkei',
+    slug: '/guia-restaurante-nikkei',
+    description: 'Guide premium de 60+ pages : fusion péruvienne-japonaise. Tiraditos, ceviches nikkei, causas, makis acevichados, anticuchos, chaufa, omakase nikkei. Bar à pisco + saké. Fournisseurs d\'aji péruvien et de poisson qualité sashimi. 9 modèles Excel + 6 checklists + business plan + manuel d\'exploitation.',
+    features: [
+      'PDF + DOCX : 20 chapitres, 60+ pages',
+      '9 modèles Excel avec formules',
+      '6 checklists (HACCP anisakis + marinade leche de tigre)',
+      'Chiffrage des recettes pour 15 plats nikkei',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-restaurante-nikkei-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guides', 'restaurant'],
+  },
+  {
+    name: 'Comment ouvrir une Dark Kitchen',
+    slug: '/guia-dark-kitchen',
+    description: 'Guide complet, PDF + DOCX modifiable : 12 chapitres, exigences légales, plan financier, conception de la cuisine, technologie, marketing. 3 checklists Excel + calculateur de viabilité.',
+    features: [
+      'PDF éditorial + DOCX modifiable',
+      '12 chapitres, de l\'idée au lancement',
+      '3 checklists Excel + calculateur',
+      'Exigences légales Espagne, 2026',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/guia-dk-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['pdf', 'guides', 'dark-kitchen'],
+  },
+  {
+    // RC-07 · la tarjeta conservaba la copia sin tildes y la descripción de la
+    // v1.1: el comprador saltaba de aquí a una landing ya acentuada.
+    name: 'Kit de gestion du personnel et des plannings',
+    slug: '/kit-gestion-personal',
+    description: '9 modèles Excel avec formules automatiques : plannings des équipes, heures supplémentaires, coût du travail, intégration, congés, entretiens d\'évaluation et répertoire du personnel.',
+    features: [
+      'Planning des équipes avec alertes légales',
+      'Suivi automatique des heures supplémentaires',
+      'Ratio de coût du travail avec système de feux tricolores',
+      'Intégration, congés et entretiens d\'évaluation',
+    ],
+    iconName: 'Users',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+
+  {
+    name: 'Kit de plan financier pour restaurants',
+    slug: '/kit-plan-financiero',
+    description: '10 modèles Excel interconnectés : plan financier sur 3 et 5 ans, seuil de rentabilité, trésorerie, CAPEX, compte de résultat mensuel, ratios financiers et rapport de faisabilité présentable en banque.',
+    features: [
+      'Prévisionnel financier sur 3 et 5 ans',
+      'Seuil de rentabilité avec 3 scénarios',
+      'Trésorerie avec alertes de liquidité',
+      'Rapport de faisabilité présentable en banque',
+    ],
+    iconName: 'TrendingUp',
+    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Business plan : bar-restaurant',
+    slug: '/plan-negocio-bar-restaurante',
+    description: 'Business plan complet pour ouvrir un bar-restaurant en Espagne : plan financier Excel avec compte de résultat sur 3 ans, investissement de départ détaillé, seuil de rentabilité, scénarios et checklist d\'ouverture avec plus de 50 procédures.',
+    features: [
+      'Plan financier Excel avec compte de résultat sur 3 ans',
+      'Investissement de départ détaillé (budget de référence espagnol)',
+      'Seuil de rentabilité + 3 scénarios',
+      'Checklist d\'ouverture : plus de 50 procédures, Espagne 2026',
+    ],
+    iconName: 'Banknote',
+    image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'bar', 'business-plan'],
+  },
+  {
+    name: 'Business plan : bar à tapas / gastrobar',
+    slug: '/plan-negocio-tapas-bar',
+    description: 'Business plan complet pour ouvrir un bar à tapas ou un gastrobar en Espagne : document DOCX en 10 sections + plan financier Excel avec compte de résultat sur 3 ans + checklist d\'ouverture avec 63 procédures, incluant la licence d\'activité classée et le permis d\'extraction des fumées.',
+    features: [
+      'Document DOCX professionnel en 10 sections',
+      'Plan financier Excel avec compte de résultat sur 3 ans',
+      'Investissement de départ détaillé (budget de référence espagnol)',
+      'Checklist d\'ouverture : 63 procédures, Espagne 2026',
+    ],
+    iconName: 'Banknote',
+    image: '/lovable-uploads/ai-gallery/plan-tapas-bar-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'bar', 'tapas', 'gastropub', 'business-plan'],
+  },
+  {
+    name: 'Business plan : coffee shop / brunch',
+    slug: '/plan-negocio-cafeteria',
+    description: 'Business plan complet pour ouvrir un coffee shop ou un brunch en Espagne : plan financier Excel avec compte de résultat sur 3 ans + business plan Word + checklist d\'ouverture avec plus de 65 procédures sous licence d\'activité à faible impact et registre sanitaire espagnol (RGSEAA).',
+    features: [
+      'Plan financier Excel avec compte de résultat sur 3 ans',
+      'Investissement de départ détaillé (budget de référence espagnol)',
+      'Seuil de rentabilité : 53 clients/jour pour un ticket moyen espagnol type',
+      'Checklist d\'ouverture : plus de 65 procédures, Espagne 2026',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'brunch', 'business-plan'],
+  },
+  {
+    name: 'Business plan : boulangerie / atelier de cuisson',
+    slug: '/plan-negocio-panaderia',
+    description: 'Business plan complet pour ouvrir une boulangerie ou un atelier de cuisson artisanal en Espagne : plan financier Excel avec compte de résultat sur 3 ans + saisonnalité de Noël + checklist d\'ouverture avec plus de 60 procédures, incluant l\'enregistrement RGSEAA pour les cuisines de production.',
+    features: [
+      'Plan financier Excel avec saisonnalité de Noël',
+      'Investissement de départ détaillé (budget de référence espagnol)',
+      'Seuil de rentabilité en kilos vendus par jour et ticket moyen',
+      'Checklist de plus de 60 procédures, incluant l\'enregistrement RGSEAA pour l\'atelier de cuisson',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/plan-panaderia-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'bakery', 'production-kitchen', 'business-plan'],
+  },
+  {
+    name: 'Business plan : food truck',
+    slug: '/plan-negocio-food-truck',
+    description: 'Business plan complet pour lancer un food truck en Espagne : DOCX en 10 sections + plan financier Excel avec compte de résultat sur 3 ans + checklist d\'ouverture avec 59 procédures, incluant la licence de vente ambulante et le contrôle technique du véhicule aménagé (ITV).',
+    features: [
+      'Document DOCX professionnel en 10 sections',
+      'Plan financier Excel avec compte de résultat sur 3 ans',
+      'Investissement de départ détaillé (scénarios bas et haut)',
+      'Checklist de 59 procédures + autorisations par région espagnole',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/plan-food-truck-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'costs', 'food-truck', 'street-food', 'business-plan', 'mobile-catering'],
+  },
+  {
+    name: 'Business plan : barman événementiel / bar mobile',
+    slug: '/plan-negocio-cocteleria-eventos',
+    description: 'Kit professionnel complet pour lancer votre activité de bar à cocktails mobile en Espagne : DOCX en 10 sections + plan financier Excel + calculateur de prix + 96 fournisseurs + catalogue d\'équipement + 15 cocktails + 10 expériences + modèle de contrat + checklist de 71 procédures.',
+    features: [
+      '9 livrables professionnels (~6 600 mots)',
+      'Plan financier Excel avec saisonnalité des événements',
+      'Calculateur de prix par événement + 96 fournisseurs',
+      '15 cocktails thématiques + 10 expériences premium',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'cocktails', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Business plan : barbecue / grillades pour événements',
+    slug: '/plan-negocio-parrillero-asador-eventos',
+    description: 'Kit professionnel pour lancer votre service premium de grillades et barbecue mobile pour événements en Espagne. Modèle hybride B2C+B2B : DOCX de plus de 60 pages + plan financier Excel + double calculateur de prix + 96 fournisseurs + catalogue d\'équipement + manuel technique + 12 découpes + modèles de contrats B2C/B2B + guide des 8 systèmes + feuille de route food truck + checklist en 6 phases avec annexe sur la réglementation du feu ouvert par région espagnole.',
+    features: [
+      '11 livrables (DOCX de plus de 60 pages + Excel)',
+      'Modèle hybride validé : 40 % B2C + 60 % B2B',
+      'Annexe légale feu ouvert par région (8 régions espagnoles)',
+      'Manuel technique + 8 systèmes + feuille de route food truck',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'grill-cook', 'grill-house', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Business plan : paella pour événements',
+    slug: '/plan-negocio-paellero-eventos',
+    description: 'Kit professionnel pour lancer votre service premium de paella et plats de riz mobile pour événements en Espagne. Modèle hybride B2C+B2B : DOCX de plus de 60 pages + plan financier Excel + double calculateur de prix + 88 fournisseurs sous appellations d\'origine des riz de Valence et Calasparra + catalogue d\'équipement Garcima/Vaello + manuel technique feu et socarrat + menu de 12 paellas + modèles de contrats + guide des 8 systèmes + feuille de route riz mobile + checklist en 6 phases avec annexe feu ouvert par région, incluant l\'exception Fallas.',
+    features: [
+      '11 livrables (DOCX de plus de 60 pages + Excel)',
+      'Modèle hybride validé : 35 % B2C + 65 % B2B',
+      'Annexe légale feu ouvert + exception Fallas (8 régions espagnoles)',
+      'Manuel technique feu et socarrat + 12 paellas',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'paella-cook', 'paella', 'rice-restaurant', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Business plan : catering thématique pour événements',
+    slug: '/plan-catering-tematico-eventos',
+    description: 'Kit professionnel pour lancer votre service de catering thématique multi-concepts premium pour événements en Espagne. Le seul kit qui vous apprend à gérer 5 concepts en parallèle (bar à sushi, tacos al pastor, pizza au feu de bois, asado argentin, ceviche péruvien, vegan premium, BBQ texan, tandoor indien...), pas seulement un concept. 11 livrables : DOCX de plus de 60 pages + plan financier Excel avec mix 35 % B2C + 65 % B2B + calculateur de prix multi-concepts + 96 fournisseurs de 12 cuisines du monde + catalogue d\'équipement multi-cuisines + 12 concepts clés en main + manuel technique HACCP multi-concepts + modèles de contrats B2C/B2B avec accord-cadre + guide de spécialisation progressive + checklist en 6 phases avec annexe de 17 régions.',
+    features: [
+      '11 livrables (DOCX de plus de 60 pages + Excel)',
+      'Le seul kit multi-concepts en Espagne (3 à 5 cuisines en parallèle)',
+      '96 fournisseurs validés, 12 cuisines du monde',
+      '12 concepts clés en main + tarification par convive',
+    ],
+    iconName: 'LayoutGrid',
+    image: '/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'catering', 'events', 'mobile-catering', 'multi-concept'],
+  },
+  {
+    name: 'Business plan : chef privé / showcooking à domicile',
+    slug: '/plan-chef-privado-showcooking-eventos',
+    description: 'Kit professionnel pour lancer votre service premium de chef privé et de showcooking à domicile en Espagne. Modèle dual : B2C intimiste + B2B entreprise : DOCX de plus de 60 pages + plan financier Excel + double calculateur de prix + 96 fournisseurs premium (couteaux japonais, vaisselle Pordamsa, huile d\'olive extra vierge d\'origine protégée, caviar Riofrio) + catalogue d\'équipement + manuel technique HACCP mobile + 12 menus thématiques + modèles de contrats B2C/B2B + guide Chef privé vs Chef personnel vs Traiteur + checklist en 6 phases avec annexe sur la réglementation du catering mobile par région.',
+    features: [
+      '11 livrables (DOCX de plus de 60 pages + Excel)',
+      'Modèle dual validé : 40 % B2C + 60 % B2B',
+      'Annexe réglementation catering mobile par région (17 régions espagnoles)',
+      'Manuel technique HACCP mobile, 7 CCP + 12 menus thématiques',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-chef-privado-showcooking-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Tâches récurrentes : restaurant décontracté',
+    slug: '/kit-tareas',
+    description: '9 modèles + 2 bonus (11 fichiers) avec 491 tâches déjà rédigées : ouverture, fermeture, service, caisse avec relevé, postes, manager, rôles, événements. Imprimez-le, déléguez-le et validez-le.',
+    features: [
+      'Ouverture et fermeture par zone',
+      'Relevé de caisse et registre de caisse mensuel',
+      'Tâches par poste',
+      'Checklist quotidienne/hebdomadaire du manager',
+      'Événements et jours fériés inclus',
+    ],
+    iconName: 'ClipboardList',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'restaurant'],
+  },
+  {
+    name: 'Tâches récurrentes : café / brunch',
+    slug: '/kit-tareas-cafeteria',
+    description: '463 tâches + inventaires avec formules intégrées : ouverture/fermeture, barista, vitrine pâtissière, brunch, terrasse. Imprimez-le, déléguez-le et validez-le.',
+    features: [
+      'Inventaire bar quotidien avec alertes',
+      'Tâches spécifiques au barista',
+      'Contrôle de la vitrine et de la pâtisserie',
+      'Brunch du dimanche et événements',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'cafe'],
+  },
+  {
+    name: 'Tâches récurrentes : pizzeria',
+    slug: '/kit-tareas-pizzeria',
+    description: '330 tâches + inventaire : four à bois/sole, pâte napolitaine, ligne d\'assemblage, livraison. Imprimez-le, déléguez-le et validez-le.',
+    features: [
+      'Contrôle du four et des températures',
+      'Ligne d\'assemblage des pizzas',
+      'Gestion des livraisons et des emballages',
+      'Pâte : fermentation et façonnage',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'pizzeria'],
+  },
+  {
+    name: 'Tâches récurrentes : burger joint',
+    slug: '/kit-tareas-hamburgueseria',
+    description: '302 tâches pré-remplies : plaque/grill, smash burgers, friteuse, ligne d\'assemblage, livraison et emballage. Imprimez-le, déléguez-le et validez-le.',
+    features: [
+      'Contrôle de la plaque et cuisson de la viande',
+      'Technique smash burger et grill',
+      'Friteuse : test des composés polaires, filtration, température',
+      'Livraison et emballage des burgers',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'burger'],
+  },
+  {
+    name: 'Tâches récurrentes : Dark Kitchen',
+    slug: '/kit-tareas-dark-kitchen',
+    description: '293 tâches pré-remplies : stations de production multi-marques, conditionnement, plateformes (Glovo, Uber Eats, Just Eat), livreurs et expédition. Imprimez-la, déléguez-la et signez-la.',
+    features: [
+      'Multi-marques / cuisine fantôme',
+      'Gestion des tablettes et des plateformes',
+      'Conditionnement spécifique par marque',
+      'Coordination des livreurs et des expéditions',
+    ],
+    iconName: 'Warehouse',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'dark-kitchen'],
+  },
+  {
+    name: 'Tâches récurrentes : Pâtisserie / Boulangerie',
+    slug: '/kit-tareas-pasteleria',
+    description: '15 modèles pour pâtisseries et boulangeries : 9 listes de contrôle + 4 registres + 2 bonus. Production des pâtes, fermentation, crèmes, décoration, vitrine, rôles, événements. Imprimez-la, déléguez-la et signez-la.',
+    features: [
+      'Production artisanale complète',
+      'Pâtes, fermentation, crèmes, décoration',
+      'Événements : Noël, Épiphanie, Saint-Valentin',
+      'Rôles : chef pâtissier, ouvrier, assistant',
+    ],
+    iconName: 'Croissant',
+    image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'pastry'],
+  },
+
+  {
+    name: 'Tâches récurrentes : Bar / Cocktails',
+    slug: '/kit-tareas-bar',
+    description: '9 listes de contrôle opérationnelles pré-remplies pour bars et bars à cocktails : mixologie, service au bar, bière pression, vin au verre, terrasse, inventaire et événements. Imprimez, déléguez et signez.',
+    features: [
+      'Mixologie classique et contemporaine',
+      'Bière pression, vin et café',
+      'Événements : Saint-Sylvestre, Halloween, dégustations',
+      'Rôles : chef barman, commis de bar',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'bar'],
+  },
+  {
+    name: 'Tâches récurrentes : Traiteur / Événements',
+    slug: '/kit-tareas-catering',
+    description: '9 listes de contrôle opérationnelles pré-remplies pour les entreprises de traiteur : production hors site, transport, installation, service, démontage et post-événement. Mariages, événements d\'entreprise, cocktails.',
+    features: [
+      'Production hors site et conditionnement',
+      'Transport et chaîne du froid',
+      'Mariages, événements d\'entreprise, cocktails, extérieur',
+      'Rôles : chef de banquet, maître d\'hôtel, serveur',
+    ],
+    iconName: 'Tent',
+    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'catering', 'mobile-catering'],
+  },
+  {
+    name: 'Tâches récurrentes : Hôtel complet',
+    slug: '/kit-tareas-hotel',
+    description: '46 listes de contrôle opérationnelles sur 15 modèles pour 11 services : F&B, réception, housekeeping, piscine, terrasse, maintenance, administration et spa.',
+    features: [
+      'F&B : 6 points de vente complets',
+      'Réception, housekeeping, spa',
+      'Piscine, terrasse, maintenance',
+      'Administration et revenue management',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'hotel'],
+  },
+  {
+    name: 'Tâches récurrentes : Glacier artisanal',
+    slug: '/kit-tareas-heladeria',
+    description: '9 listes de contrôle opérationnelles pré-remplies pour glaciers et gelaterias artisanales : production (pasteurisation, turbinage), service, gestion et saisonnalité.',
+    features: [
+      'Production : pasteurisation et turbinage',
+      'Vitrine, toppings et service au comptoir',
+      'Rôles : glacier, employé de comptoir, responsable',
+      'Haute/basse saison et prestations événementielles',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'ice-cream'],
+  },
+  {
+    name: 'Tâches récurrentes : Chocolaterie / Atelier',
+    slug: '/kit-tareas-chocolateria',
+    description: '11 modèles pour chocolateries artisanales : 9 listes de contrôle + 2 bonus. Production (tempérage, moulage, bonbons), vitrine, service, gestion et saisonnalité.',
+    features: [
+      'Production : tempérage, moulage et bonbons',
+      'Vitrine, conditionnement et service au comptoir',
+      'Rôles : chocolatier, employé de comptoir, responsable',
+      'Saisonnier : Noël, Saint-Valentin, Pâques',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'chocolate'],
+  },
+  {
+    name: 'Tâches récurrentes : Restaurant créatif / dirigé par le chef',
+    slug: '/kit-tareas-restaurante-creativo',
+    description: '11 listes de contrôle opérationnelles pré-remplies pour restaurants créatifs et dirigés par le chef : R&D, menus dégustation, brigade créative, sommelier, événements, photographie et storytelling.',
+    features: [
+      'R&D : fiches techniques, essais et coût matière',
+      'Mise en place du menu dégustation et minutage des plats',
+      'Sommelier : cave, accords, dégustations',
+      'Table du chef, live cooking et presse',
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'restaurant'],
+  },
+  {
+    name: 'Tâches récurrentes : Chef privé / Chef à domicile',
+    slug: '/kit-tareas-chef-privado',
+    description: '9 listes de contrôle professionnelles pour chefs privés : profil client avec allergies, équipement et transport, HACCP mobile, service complet, fidélisation client et administration du travailleur indépendant.',
+    features: [
+      'Profil client : allergies, préférences, cuisine',
+      'Équipement portable, transport réfrigéré, véhicule',
+      'HACCP mobile : températures et allergènes',
+      'Service : avant, pendant, après, et nettoyage',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'private-chef'],
+  },
+  {
+    name: 'Tâches récurrentes : Sushi bar',
+    slug: '/kit-tareas-sushi-bar',
+    description: '11 listes de contrôle opérationnelles pour sushi bars couvrant le protocole HACCP obligatoire contre l\'anisakis selon la réglementation espagnole de sécurité alimentaire, le contrôle du pH du riz à sushi, la vitrine neta et les rôles itamae et omakase.',
+    features: [
+      'HACCP anisakis : -20 °C / 7 jours par lot',
+      'Riz à sushi avec contrôle du pH (≤ 4,6)',
+      'Vitrine neta (2-4 °C) et rotation FIFO',
+      'Rôles : itamae, assistant, salle, livraison',
+    ],
+    iconName: 'Fish',
+    image: '/lovable-uploads/ai-gallery/tareas-sushi-bar-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'sushi-bar', 'japanese'],
+  },
+  {
+    name: 'Tâches récurrentes : Grill / Josper',
+    slug: '/kit-tareas-asador',
+    description: '11 listes de contrôle opérationnelles pour restaurants de grillades avec four Josper : allumage et entretien de la braise, maturation à sec et découpe, températures par pièce de viande, et poissons et légumes grillés.',
+    features: [
+      'Protocole Josper : allumage, zones de chaleur, charbon de bois',
+      'Maturation à sec avec fiches de suivi par pièce',
+      'Températures à cœur par pièce et cuisson',
+      'Rôles : chef grillardin, assistant, cuisine, salle',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-asador-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'grill-house', 'grill', 'josper'],
+  },
+  {
+    name: 'Tâches récurrentes : Restaurant de fruits de mer avec bassins d\'eau de mer et HACCP',
+    slug: '/kit-tareas-marisqueria',
+    description: '11 listes de contrôle opérationnelles pour restaurants de fruits de mer : contrôle des bassins d\'eau de mer (oxygène, salinité, température), vitrine glacée, traçabilité HACCP et allergènes pour crustacés et coquillages, marchés aux poissons et saisons de pêche espagnoles.',
+    features: [
+      'Bassins d\'eau de mer : oxygène, salinité, température, mortalité',
+      'Traçabilité HACCP et réglementation UE sur les allergènes',
+      'Vitrine glacée et rotation FIFO',
+      'Saisons de pêche officielles en Espagne et fermetures',
+    ],
+    iconName: 'Shell',
+    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'seafood-restaurant', 'fish', 'seafood'],
+  },
+  {
+    name: 'Tâches récurrentes : Bar à tapas / Gastrobar',
+    slug: '/kit-tareas-tapas-bar',
+    description: '11 listes de contrôle opérationnelles pour bars à tapas et gastrobars : comptoir de tapas froides et pintxos, cuisine de petites assiettes (plancha, friteuse, ragoûts), bière pression, vin au verre, vermouth, terrasse et rotation de la carte saisonnière.',
+    features: [
+      'Comptoir de pintxos et tapas froides avec rotation',
+      'Cuisine de petites assiettes : plancha, friteuse, ragoûts',
+      'Bière pression, vin au verre et vermouth',
+      'Terrasse, événements et carte saisonnière',
+    ],
+    iconName: 'Beer',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'tapas', 'gastropub', 'bar'],
+  },
+  {
+    name: 'Tâches récurrentes : Food truck',
+    slug: '/kit-tareas-food-truck',
+    description: '11 listes de contrôle opérationnelles pour food trucks : mise en place et démontage, opérations du véhicule et du groupe électrogène, sécurité sanitaire HACCP mobile, autorisations et événements, rôles de l\'équipe et calendrier annuel.',
+    features: [
+      'Mise en place / démontage : groupe électrogène, gaz, cuisine, service',
+      'HACCP mobile : chaîne du froid et températures variables',
+      'Autorisations, licences et assurance par événement',
+      'Entretien du véhicule et du groupe électrogène',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'food-truck', 'street-food', 'events', 'mobile-catering'],
+  },
+  {
+    name: 'Tâches récurrentes : Boulangerie / Cuisine de production',
+    slug: '/kit-tareas-panaderia',
+    description: '11 listes de contrôle opérationnelles pour boulangeries et cuisines de production : prise de poste dès 03:00, levain et pré-ferments (poolish, biga), fours à sole et rotatifs, vitrine et vente, rôles de l\'équipe et campagnes saisonnières.',
+    features: [
+      'Prise de poste : ouverture de la boulangerie dès 03:00',
+      'Levain, poolish, biga et contrôle de la fermentation',
+      'Fours à sole, rotatifs et convection vapeur',
+      'Campagnes de Noël, de l\'Épiphanie et de Pâques',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
+    badge: 'Nouveau',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'templates', 'management', 'bakery', 'production-kitchen', 'sourdough'],
+  },
+  {
+    name: 'Mega Pack de tâches récurrentes — 13 kits',
+    slug: '/mega-pack-tareas',
+    description: 'Les 13 kits de tâches récurrentes dans un seul pack : restaurant, café, pizzeria, bar, hôtel, traiteur, glacier, chocolaterie et plus encore. 151 modèles Excel.',
+    features: [
+      '13 kits complets de tâches récurrentes',
+      '151 modèles Excel modifiables',
+      'Ouverture/fermeture de l\'établissement et comptage de caisse inclus',
+      'Économisez plus de 45 % par rapport à un achat séparé',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: '🎁 Méga Pack',
+    badgeColor: 'bg-emerald-500 text-white ring-1 ring-emerald-300/50',
+    tags: ['excel', 'templates', 'bundle', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate', 'private-chef'],
+    featured: true,
+  },
+];
+
+const comingSoon = [
+  { iconName: 'Coffee', name: 'Comment ouvrir une boutique de churros et chocolat chaud', desc: 'Chocolat chaud épais et churros : locaux, laboratoire de production, carte, licences et chiffres clés pour ouvrir l\'esprit tranquille.', tags: ['pdf', 'guides', 'chocolate'], phase: 'T4 2026' },
+  { iconName: 'IceCream', name: 'Plan d\'affaires : Gelateria artisanale', desc: 'Plan financier Excel, investissement de départ, saisonnalité et liste de contrôle pour l\'ouverture de votre gelateria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'T4 2026' },
+  { iconName: 'BarChart3', name: 'Kit de tableau de bord des opérations', desc: 'Ventes par créneau horaire et par zone de salle, ticket moyen, rotation des tables et productivité horaire, dans un seul tableau de bord.', tags: ['excel', 'management', 'templates'], phase: 'T4 2026' },
+  { iconName: 'Sandwich', name: 'Plan d\'affaires : Restaurant de smash burgers', desc: 'Du concept smash au seuil de rentabilité : investissement, carte, coûts et prévision mois par mois.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },
+  { iconName: 'PartyPopper', name: 'Plan d\'affaires : Lieu de réception pour événements et mariages', desc: 'Capacité d\'accueil, formules avec menu imposé, saisonnalité des mariages et effectifs par événement : le plan complet.', tags: ['business-plan', 'catering', 'excel'], phase: 'T1 2027' },
+  { iconName: 'Flame', name: 'Tâches récurrentes : Rôtisserie de poulets', desc: 'Broches, temps de cuisson, perte de rendement et service de pointe, avec les routines de chaque service.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
+  { iconName: 'Utensils', name: 'Tâches récurrentes : Arepería', desc: 'Pâte, garnitures, plancha et fermeture : la routine quotidienne d\'une arepería écrite noir sur blanc, service par service.', tags: ['templates', 'excel', 'restaurant'], phase: 'T1 2027' },
+  { iconName: 'Pizza', name: 'Plan d\'affaires : Pizzeria napolitaine', desc: 'Levain, four et rotation des tables : le plan complet pour ouvrir une pizzeria napolitaine.', tags: ['business-plan', 'pizzeria', 'excel'], phase: 'T1 2027' },
+  { iconName: 'Beef', name: 'Plan d\'affaires : Steakhouse', desc: 'Un local fixe avec une armoire de maturation à sec et un grill au charbon de bois : investissement, carte, coût matière des recettes et prévisionnel.', tags: ['business-plan', 'restaurant', 'excel'], phase: 'T1 2027' },
+  { iconName: 'ShoppingCart', name: 'Calculateur de commission des plateformes de livraison', desc: 'Saisissez votre commission et votre carte pour voir le prix à partir duquel chaque plateforme de livraison cesse d\'être rentable.', tags: ['excel', 'costs', 'dark-kitchen'], phase: 'T1 2027' },
+  { iconName: 'Leaf', name: 'Tâches récurrentes : Poke bowl / Bowl healthy', desc: 'Préparation des bases et des toppings, chaîne du froid, services et fermeture pour un restaurant de bowls.', tags: ['templates', 'excel', 'restaurant'], phase: 'Bientôt disponible' },
+  { iconName: 'Sprout', name: 'Tâches récurrentes : Restaurant végétarien / végétal', desc: 'Production des bases végétales, allergènes, services et fermeture pour un restaurant végétal.', tags: ['templates', 'excel', 'restaurant'], phase: 'Bientôt disponible' },
+  { iconName: 'ConciergeBell', name: 'Plan d\'affaires : Service de découpe de jambon pour événements', desc: 'Mettez en place votre service de découpe de jambon pour mariages et foires : tarifs, équipement et portions par événement.', tags: ['business-plan', 'catering', 'mobile-catering'], phase: 'Bientôt disponible' },
+  { iconName: 'Coffee', name: 'Plan d\'affaires : Bar à café mobile pour événements', desc: 'Café de spécialité pour événements d\'entreprise, mariages et foires : investissement minimal, tarifs et logistique.', tags: ['business-plan', 'cafe', 'mobile-catering'], phase: 'Bientôt disponible' },
+  { iconName: 'Truck', name: 'Plan d\'affaires : Pizzeria mobile au feu de bois', desc: 'Un four à bois sur remorque pour mariages et foires : équipement, pâtes, tarifs et logistique.', tags: ['business-plan', 'pizzeria', 'mobile-catering'], phase: 'Bientôt disponible' },
+  { iconName: 'Star', name: 'Kit d\'analyse des avis par IA', desc: 'Un modèle et des prompts pour vos agents : exportez ou collez vos avis, triez-les par thème et voyez ce qui revient le plus souvent.', tags: ['excel', 'ai', 'management'], phase: 'Bientôt disponible' },
+  { iconName: 'Users', name: 'Manuel de l\'employé en hôtellerie-restauration', desc: 'Manuel d\'intégration, règles internes, hygiène, formation par poste et documents types à adapter à votre convention collective.', tags: ['manuals', 'management', 'pdf'], phase: 'Bientôt disponible' },
+  { iconName: 'CakeSlice', name: 'Plan d\'affaires : Pâtisserie et laboratoire de production', desc: 'Le plan financier de votre laboratoire de pâtisserie : investissement, production, comptoir de vente et prix de vente.', tags: ['business-plan', 'pastry', 'excel'], phase: 'Bientôt disponible' },
+  { iconName: 'Thermometer', name: 'Livre numérique professionnel de cuisson sous vide', desc: 'Tableaux de temps et de température par produit, pasteurisation, HACCP pour la mise sous vide et le réchauffage.', tags: ['pdf', 'restaurant', 'food-safety'], phase: 'Bientôt disponible' },
+  { iconName: 'Fish', name: 'Comment ouvrir un restaurant de fruits de mer', desc: 'Bassins d\'eau de mer, mareyage, purification et salle : le guide complet pour ouvrir un restaurant de fruits de mer, avec ses modèles de documents.', tags: ['pdf', 'guides', 'restaurant'], phase: 'Bientôt disponible' },
+  { iconName: 'Store', name: 'Comment ouvrir une boucherie haut de gamme', desc: 'Maturation à sec, boucherie et comptoir signature : le guide pour ouvrir une boucherie haut de gamme avec cuisine.', tags: ['pdf', 'guides', 'management'], phase: 'Bientôt disponible' },
+];
+
+const PRODUCTS_PER_PAGE = 12;
+
+// Etiqueta de un tag (los tags sin entrada en ALL_TAGS — 'bundle', 'production-kitchen', 'tapas'… —
+// no renderizan pill, igual que en el hub ES).
+const tagLabel = (id: string) => ALL_TAGS.find((t) => t.id === id)?.label;
+
+// ── Tarjeta → producto FR vivo (FAMILIAS de lib/tienda.ts) ───────────────────────────
+// Sin familia o con `fr.vivo: false` → null: la tarjeta se pinta sin enlace ni precio y con el
+// badge «Bientôt disponible en français». Con familia viva → landing FR + precio EUR (el que cobra el checkout).
+const frVivo = (slugEs: string) => {
+  const f = FAMILIAS.find((x) => x.productos.es?.slug === slugEs.replace(/^\//, ''));
+  const fr = f?.productos.fr;
+  return fr && fr.vivo ? fr.slug : null;
+};
+const precioEur = (id: string) => {
+  const v = PRODUCT_PRICES[id]?.eur;
+  return typeof v === 'number' ? `${v} €` : null;
+};
+const cards = products.map((p) => {
+  const frSlug = frVivo(p.slug);
+  return {
+    ...p,
+    frSlug,
+    href: frSlug ? tiendaProductoPath('fr', frSlug) : null,
+    price: frSlug ? precioEur(frSlug) : null,
+  };
+});
+const liveCards = cards.filter((c) => c.href);
+
+// ── Buscador: índice de texto por card (data-search) ────────────────────────────────
+// Misma normalización que el hub ES (indiceBusqueda). Sin el slug ES ni sus alias en español.
+const indiceProducto = (p: { name: string; description: string; features: string[]; tags: string[] }) =>
+  indiceBusqueda([p.name, p.description, ...p.features, ...p.tags, ...p.tags.map(tagLabel)]);
+
+// Contadores del badge del hero.
+const productsCount = products.length;
+const comingSoonCount = comingSoon.length;
+
+// WhatsApp (mismo número que el hub ES; mensaje prerellenado en francés).
+const waPhone = '34744717942';
+const waMessage = encodeURIComponent('Bonjour, j\'ai besoin d\'aide avec mon achat sur AI Chef Pro. ');
+const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+
+// Worldwide countries.
+const countries = ['Espagne', 'Mexique', 'Colombie', 'Argentine', 'Chili', 'Pérou', 'Équateur', 'États-Unis', 'Allemagne', 'France'];
+
+// FAQ VISIBLE (y fuente del FAQPage JSON-LD).
+const faqs = [
+  { q: 'Sous quel format sont livrés les produits numériques ?', a: 'La plupart sont des modèles Excel (.xlsx) compatibles avec Microsoft Excel, Google Sheets, LibreOffice et Apple Numbers. Nous incluons également des guides et des listes de contrôle prêts à imprimer au format PDF. Vous téléchargez chaque fichier depuis votre tableau de bord privé.' },
+  { q: 'Comment puis-je obtenir les produits après l\'achat ?', a: 'L\'accès est instantané. Dès que vous payez via Stripe, nous vous redirigeons vers votre tableau de bord privé, où vous pouvez télécharger chaque fichier. Vous recevez également un e-mail avec un lien magique pour y revenir quand vous le souhaitez.' },
+  { q: 'Puis-je acheter depuis n\'importe où dans le monde ?', a: 'Oui. Vous pouvez acheter depuis n\'importe où avec une carte bancaire, Apple Pay ou Google Pay. Le catalogue actuel est rédigé en espagnol et conçu autour des réglementations espagnoles et européennes ; les éditions françaises arrivent et apparaîtront sur cette page dès que chacune sera prête.' },
+  { q: 'Les modèles incluent-ils des formules automatiques ?', a: 'Oui. Chaque modèle Excel est livré avec des formules intégrées qui font les calculs pour vous : coût matière, prix de vente suggéré, alertes de température et suivi des pertes. Vous saisissez vos chiffres et le tableur fait le reste.' },
+  { q: 'Y a-t-il une garantie de remboursement ?', a: 'Chaque produit est couvert par une garantie intégrale de 30 jours. Si vous n\'êtes pas satisfait, nous vous remboursons à 100 %, sans aucune question. Écrivez simplement à info@aichef.pro.' },
+  { q: 'Les mises à jour futures sont-elles incluses ?', a: 'Oui. Chaque produit inclut un accès à vie au tableau de bord en ligne. Lorsque nous ajoutons de nouveaux modèles, apportons des améliorations ou mettons à jour en fonction des évolutions réglementaires, vous les recevez sans frais supplémentaires.' },
+  { q: 'Puis-je utiliser les modèles dans plus d\'un restaurant ?', a: 'Oui. La licence est personnelle : vous pouvez utiliser les modèles dans tous les établissements que vous gérez. Idéal pour les consultants, les groupes de restauration et les gestionnaires multi-sites.' },
+  { q: 'Quels moyens de paiement acceptez-vous ?', a: 'Les paiements sont traités par Stripe, l\'une des plateformes de paiement les plus sécurisées au monde. Nous acceptons les cartes de crédit et de débit (Visa, Mastercard, Amex), Apple Pay, Google Pay et Link (paiement rapide Stripe).' },
+];
+
+// pSEO cities (las guías por ciudad solo existen en español: se listan sin enlace).
+const cities = [
+  { slug: 'madrid', label: 'Madrid' },
+  { slug: 'barcelona', label: 'Barcelone' },
+  { slug: 'valencia', label: 'Valence' },
+  { slug: 'ciudad-de-mexico', label: 'Mexico' },
+  { slug: 'monterrey', label: 'Monterrey' },
+  { slug: 'bogota', label: 'Bogotá' },
+  { slug: 'medellin', label: 'Medellín' },
+  { slug: 'buenos-aires', label: 'Buenos Aires' },
+  { slug: 'santiago', label: 'Santiago' },
+];
+
+// ── JSON-LD (CollectionPage + FAQPage + BreadcrumbList, en francés y sin ofertas ni rating) ──
+const HUB_URL = 'https://aichef.pro/fr/produits-numeriques';
+const collectionSchema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Produits numériques pour la restauration et l\'hôtellerie — AI Chef Pro',
+  description: 'Modèles Excel, guides HACCP, prompts d\'IA et outils numériques pour chefs, directeurs et propriétaires de restaurants.',
+  url: HUB_URL,
+  inLanguage: 'fr',
+  publisher: {
+    '@type': 'Organization',
+    name: 'AI Chef Pro',
+    url: 'https://aichef.pro/fr',
+  },
+};
+// El ItemList solo lista productos VIVOS en francés (hoy ninguno → sin mainEntity).
+if (liveCards.length) {
+  collectionSchema.mainEntity = {
+    '@type': 'ItemList',
+    itemListElement: liveCards.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://aichef.pro${c.href}`,
+      name: c.name,
+    })),
+  };
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  inLanguage: 'fr',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: 'https://aichef.pro/fr' },
+    { '@type': 'ListItem', position: 2, name: 'Produits numériques', item: HUB_URL },
+  ],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+<div class="min-h-screen bg-[#0a0a0a]">
+  {/* ===== SaasDiscoveryBanner ===== */}
+  <div class="bg-gradient-to-r from-[#FFD700]/10 via-[#FFD700]/5 to-[#FFD700]/10 border-b border-[#FFD700]/20">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
+      <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
+      <p class="text-xs sm:text-sm text-gray-300">
+        <span class="hidden sm:inline">Ces produits numériques complètent </span>
+        <a href="/fr" class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
+        <span class="hidden sm:inline"> — l'IA SaaS pour l'hôtellerie-restauration avec plus de 55 applications</span>
+        <span class="sm:hidden"> — IA SaaS pour l'hôtellerie-restauration</span>
+      </p>
+      <a href="/fr" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+        Découvrir
+        <Icon name="ArrowRight" class="h-3 w-3" />
+      </a>
+    </div>
+  </div>
+
+  {/* ===== Hero ===== */}
+  <section class="relative px-4 pt-6 pb-12 md:pt-8 md:pb-16 overflow-hidden">
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,215,0,0.08) 0%, transparent 70%);"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center z-10">
+      {/* LogoBadge (isHub → no back pill, just the white logo card) */}
+      <div>
+        <div class="flex justify-center py-6 md:py-8">
+          <a href="/fr" class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+            <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" />
+          </a>
+        </div>
+      </div>
+      <span class="inline-block mt-4 mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
+        {productsCount} produits · {comingSoonCount} en développement
+      </span>
+
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        La Boutique de <span class="text-[#FFD700]">Produits Numériques</span> pour l&rsquo;Hôtellerie-Restauration d&rsquo;Aujourd&rsquo;hui
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        eBooks, modèles Excel, guides de sécurité alimentaire et prompts IA conçus par et pour les professionnels de l'hôtellerie-restauration. Téléchargement instantané, accès à vie.
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Buscador (filtra las MISMAS cards que los chips; la lógica va en el script del final) =====
+       El panel de «no hay resultados» NO vive aquí: está debajo del grid (#pd-search-empty).
+       Si estuviera encima de los chips, aparecer y desaparecer al teclear empujaría chips y
+       cards ~200 px arriba y abajo, y el clic sobre una card acabaría en otra cosa. */}
+  <section id="pd-search-section" class="px-4 pb-6">
+    <div class="max-w-2xl mx-auto" role="search">
+      <label for="pd-search-input" class="sr-only">Rechercher des produits par nom, thème ou type d'établissement</label>
+      {/* Descripción ESTÁTICA del campo, separada del contador a propósito: si el
+          aria-describedby apuntara a la región viva, el lector de pantalla leería el
+          conteo al enfocar Y otra vez en cada mutación (una por pausa de tecleo). */}
+      <span id="pd-search-ayuda" class="sr-only">
+        Saisissez au moins deux lettres. La liste se filtre au fur et à mesure que vous tapez ; appuyez sur Échap pour effacer la recherche.
+      </span>
+
+      <div class="relative">
+        <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-[#FFD700]">
+          <Icon name="Search" class="w-5 h-5" />
+        </span>
+        <input
+          id="pd-search-input"
+          type="search"
+          maxlength="120"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          enterkeyhint="search"
+          aria-describedby="pd-search-ayuda"
+          placeholder="Rechercher par thème ou type d'établissement : coût matière, HACCP, food truck…"
+          class="w-full h-14 pl-5 pr-16 rounded-2xl bg-white/5 border-2 border-[#FFD700]/70 shadow-[0_0_24px_rgba(255,215,0,0.12)] text-white text-base placeholder:text-gray-400 outline-none transition-colors duration-200 focus:border-[#FFD700] focus:bg-white/[0.07] focus:ring-2 focus:ring-[#FFD700]/30"
+        />
+        <button
+          id="pd-search-clear"
+          type="button"
+          aria-label="Effacer la recherche"
+          class="hidden absolute inset-y-0 right-11 items-center pr-1 text-gray-500 hover:text-[#FFD700] transition-colors"
+        >
+          <Icon name="X" class="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Contador VISIBLE (se actualiza al instante, sin aria-live) + región viva SOLO
+          para lectores de pantalla, con su propio retardo: anunciar en cada pausa de
+          tecleo encola avisos que se pisan unos a otros. */}
+      <p id="pd-search-status" class="mt-2.5 text-center text-xs text-gray-500 break-words">
+        {productsCount} produits
+      </p>
+      <p id="pd-search-announce" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
+  </section>
+
+  {/* ===== Tag Filter ===== */}
+  <section class="px-4 pb-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-2">
+        {ALL_TAGS.map((tag) => (
+          <button
+            type="button"
+            data-tag-btn
+            data-tag={tag.id}
+            class={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${tag.id === 'all' ? 'bg-[#FFD700] text-black' : 'bg-white/5 text-gray-400 border border-white/10 hover:border-[#FFD700]/30 hover:text-white'}`}
+          >
+            {(tag as any).iconName && <Icon name={(tag as any).iconName} class="w-3.5 h-3.5 inline mr-1.5 -mt-0.5" />}
+            {tag.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Products Grid — 3 columns (todas las cards en el DOM; JS pagina/filtra) ===== */}
+  <section id="pd-products-section" class="px-4 pb-16 md:pb-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {cards.map((product, idx) => {
+        const Card = product.href ? 'a' : 'div';
+        const featured = (product as any).featured;
+        const cls = product.href
+          ? `group relative bg-white/[0.03] rounded-2xl overflow-hidden hover:bg-white/[0.05] transition-all duration-300 flex flex-col ${featured ? 'border-2 border-emerald-500/50 hover:border-emerald-400/70 ring-1 ring-emerald-500/20' : 'border border-white/10 hover:border-[#FFD700]/30'}${idx >= PRODUCTS_PER_PAGE ? ' hidden' : ''}`
+          : `relative bg-white/[0.03] rounded-2xl overflow-hidden transition-all duration-300 flex flex-col ${featured ? 'border-2 border-emerald-500/50 ring-1 ring-emerald-500/20' : 'border border-white/10'}${idx >= PRODUCTS_PER_PAGE ? ' hidden' : ''}`;
+        return (
+        <Card
+          href={product.href ?? undefined}
+          target={product.href ? '_blank' : undefined}
+          rel={product.href ? 'noopener noreferrer' : undefined}
+          data-product
+          data-fr-live={product.href ? 'true' : 'false'}
+          data-tags={product.tags.join(' ')}
+          data-search={indiceProducto(product)}
+          class={cls}
+        >
+          {/* Badge */}
+          <div class="absolute top-3 right-3 z-10">
+            {product.href ? (
+              <span class={`px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-black/40 backdrop-blur-sm ${product.badgeColor}`}>
+                {product.badge}
+              </span>
+            ) : (
+              <span class="px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-black/40 backdrop-blur-sm bg-[#FFD700]/15 text-[#FFD700] ring-1 ring-[#FFD700]/30">Bientôt disponible en français</span>
+            )}
+          </div>
+
+          {/* Image */}
+          <div class="relative h-40 overflow-hidden bg-gradient-to-b from-white/[0.05] to-transparent">
+            <img
+              src={product.image}
+              alt={product.name}
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+          </div>
+
+          {/* Content */}
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-9 h-9 rounded-xl bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
+                <Icon name={product.iconName} class="w-4.5 h-4.5 text-[#FFD700]" />
+              </div>
+              <h2 class="text-lg md:text-base lg:text-lg font-bold text-white group-hover:text-[#FFD700] transition-colors leading-tight">
+                {product.name}
+              </h2>
+            </div>
+
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              {product.description}
+            </p>
+
+            {/* Features */}
+            <ul class="space-y-1.5 mb-5 flex-1">
+              {product.features.map((feature) => (
+                <li class="flex items-start gap-2 text-xs text-gray-300">
+                  <Icon name="Check" class="w-3.5 h-3.5 text-[#FFD700] flex-shrink-0 mt-0.5" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tags */}
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              {product.tags.map((tagId) => {
+                const label = tagLabel(tagId);
+                return label ? (
+                  <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-500 text-[10px] font-medium">
+                    {label}
+                  </span>
+                ) : null;
+              })}
+            </div>
+
+            {/* Price + CTA (solo con producto vivo en FR: precio EUR, sin tachado ni descuento) */}
+            <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
+              {product.href ? (
+                <>
+                  <div class="flex items-center gap-2">
+                    {product.price && <span class="text-2xl font-extrabold text-[#FFD700]">{product.price}</span>}
+                  </div>
+                  <div class="flex items-center gap-1 text-[#FFD700] text-xs font-medium group-hover:gap-2 transition-all">
+                    Voir
+                    <Icon name="ArrowRight" class="w-3.5 h-3.5" />
+                  </div>
+                </>
+              ) : (
+                <span class="text-xs text-gray-500">Édition française en cours</span>
+              )}
+            </div>
+          </div>
+        </Card>
+        );
+      })}
+    </div>
+
+    {/* Cargar más */}
+    <div id="pd-loadmore-block" class="max-w-6xl mx-auto mt-10 flex flex-col items-center gap-3">
+      <button
+        id="pd-loadmore-btn"
+        type="button"
+        class="px-8 py-3 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-semibold hover:bg-[#FFD700]/20 hover:border-[#FFD700]/60 transition-all duration-200"
+      >Charger plus de produits ({productsCount - PRODUCTS_PER_PAGE} restants)</button>
+      <p id="pd-showing-line" class="text-xs text-gray-500">
+        Affichage de {PRODUCTS_PER_PAGE} sur {productsCount}
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Búsqueda con resultados FUERA del chip activo =====
+       El 0 lo provoca el filtro de categoría, no el catálogo: el producto existe y está a
+       un clic. Enseñar aquí la captación de demanda sería perder la venta Y registrar un
+       hueco falso en el informe (medido: 66 combinaciones chip×consulta caían ahí). */}
+  <section id="pd-search-fuera" class="hidden px-4 pb-16 md:pb-24">
+    <div class="max-w-2xl mx-auto rounded-2xl border border-[#FFD700]/25 bg-[#FFD700]/[0.04] p-6 text-center">
+      <p id="pd-search-fuera-txt" class="text-white font-semibold mb-4 break-words"></p>
+      <button
+        id="pd-search-fuera-btn"
+        type="button"
+        class="px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+      >
+        Rechercher dans toutes les catégories
+      </button>
+    </div>
+  </section>
+
+  {/* ===== Sin resultados DE BÚSQUEDA (el panel del filtro por tag sigue siendo #pd-noresults) =====
+       Va debajo del grid a propósito: encima de los chips empujaría toda la página al teclear. */}
+  <section id="pd-search-empty" class="hidden px-4 pb-16 md:pb-24">
+    <div class="max-w-2xl mx-auto rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center">
+      <p class="text-white font-semibold mb-1.5 break-words">
+        Nous n&rsquo;avons rien (pour l&rsquo;instant) pour «&nbsp;<span id="pd-search-empty-q" class="text-[#FFD700] break-all"></span>&nbsp;»
+      </p>
+      <p class="text-gray-500 text-sm mb-5">
+        Dites-nous ce dont vous avez besoin et nous en tiendrons compte pour les prochains produits.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <button
+          id="pd-ask-toggle"
+          type="button"
+          class="px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Dites-nous ce que vous cherchiez
+        </button>
+        <a
+          id="pd-wa-empty"
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 text-gray-300 text-sm font-medium hover:border-[#FFD700]/30 hover:text-white transition-colors"
+        >
+          <Icon name="MessageSquare" class="w-4 h-4" />
+          Écrivez-nous sur WhatsApp
+        </a>
+      </div>
+
+      {/* Salidas secundarias: quien no encuentra un producto todavía puede encontrar valor
+          (y volver). Un callejón sin salida es tráfico tirado. */}
+      <p class="mt-5 text-xs text-gray-500">
+        En attendant :
+        <button id="pd-ver-todos" type="button" class="underline hover:text-[#FFD700] transition-colors">voir le catalogue complet</button>
+        <span class="mx-1.5 text-gray-700">·</span>
+        <a href="/fr" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">bibliothèques de prompts</a>
+        <span class="mx-1.5 text-gray-700">·</span>
+        <a href="/fr/blog" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">blog</a>
+      </p>
+
+      <div id="pd-ask-form" class="hidden mt-5 text-left">
+        <label for="pd-ask-detalle" class="block text-xs text-gray-400 mb-1.5">De quoi avez-vous exactement besoin ? (facultatif)</label>
+        <textarea
+          id="pd-ask-detalle"
+          rows="3"
+          maxlength="500"
+          aria-describedby="pd-ask-hint"
+          placeholder="Par exemple, un modèle de suivi des pourboires pour un bar à tapas"
+          class="w-full rounded-xl bg-white/5 border border-white/10 text-white text-base p-3 outline-none transition-colors placeholder:text-gray-400 focus:border-[#FFD700]/60"
+        ></textarea>
+
+        <label for="pd-ask-email" class="block text-xs text-gray-400 mt-3 mb-1.5">Votre e-mail, si vous souhaitez que nous vous tenions informé(e) (facultatif)</label>
+        <input
+          id="pd-ask-email"
+          type="email"
+          maxlength="120"
+          autocomplete="email"
+          aria-describedby="pd-ask-hint"
+          placeholder="votrenom@votrerestaurant.com"
+          class="w-full h-11 rounded-xl bg-white/5 border border-white/10 text-white text-base px-3 outline-none transition-colors placeholder:text-gray-400 focus:border-[#FFD700]/60"
+        />
+
+        {/* Honeypot REAL: el comentario de log-search.ts decía que el formulario lo pintaba
+            y no existía. Ninguna persona lo ve ni lo rellena; si llega con algo, el backend
+            responde 204 y no escribe nada. */}
+        <input
+          type="text"
+          id="pd-ask-website"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+          class="hidden"
+        />
+
+        <p id="pd-ask-hint" role="alert" class="hidden mt-2 text-xs text-[#FFD700]">
+          Dites-nous ce dont vous avez besoin ou laissez votre e-mail pour que nous puissions vous tenir au courant.
+        </p>
+
+        <button
+          id="pd-ask-send"
+          type="button"
+          class="mt-3 px-5 py-2.5 rounded-full bg-[#FFD700] text-black text-sm font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Envoyer
+        </button>
+
+        {/* Dato personal: finalidad, uso y política, junto al campo que lo pide. */}
+        <p class="mt-2.5 text-xs text-gray-500">
+          Nous utilisons votre e-mail uniquement pour vous informer si nous lançons ce produit ; nous ne le partageons jamais et nous ne vous
+          ajoutons jamais à aucune liste. <a href="/fr/privacidad" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#FFD700] transition-colors">Politique de confidentialité</a>.
+        </p>
+      </div>
+
+      <p id="pd-ask-thanks" role="status" tabindex="-1" class="hidden mt-5 text-sm text-[#FFD700] font-medium outline-none">
+        Merci, nous en tiendrons compte.
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Coming Soon ===== */}
+  {/* D6: sin productos en cola, la sección no se sirve (paridad con la SPA, ProductosDigitales.tsx:1265). */}
+  {comingSoon.length > 0 && (
+    <section id="pd-coming-section" class="px-4 pb-16 md:pb-24">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-8">
+          <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm font-medium">
+            <Icon name="Clock" class="w-4 h-4 inline mr-2" />
+            En développement
+          </span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
+            <span class="text-[#FFD700]">Produits</span> à venir
+          </h2>
+          <p class="text-gray-500 text-sm max-w-2xl mx-auto">
+            Même niveau de qualité : accès instantané, mises à jour à vie et garantie de 30 jours.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {comingSoon.map((item) => (
+            <div
+              data-coming
+              data-tags={item.tags.join(' ')}
+              data-search={indiceBusqueda([item.name, item.desc, ...item.tags, ...item.tags.map(tagLabel)])}
+              class="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 opacity-70 hover:opacity-90 transition-opacity"
+            >
+              <div class="flex items-start gap-3 mb-3">
+                <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                  <Icon name={item.iconName} class="w-4 h-4 text-gray-400" />
+                </div>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-sm font-semibold text-white leading-tight mb-1">{item.name}</h3>
+                  <p class="text-[11px] text-gray-500 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex flex-wrap gap-1">
+                  {item.tags.slice(0, 2).map((tagId) => {
+                    const label = tagLabel(tagId);
+                    return label ? (
+                      <span class="px-1.5 py-0.5 rounded-full bg-white/5 text-gray-600 text-[9px] font-medium">
+                        {label}
+                      </span>
+                    ) : null;
+                  })}
+                </div>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-gray-500 font-medium">
+                  {item.phase}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {/* ===== No results (oculto por defecto; JS lo muestra cuando 0 productos + 0 coming soon) ===== */}
+  <section id="pd-noresults" class="px-4 pb-16 md:pb-24 hidden">
+    <div class="max-w-3xl mx-auto text-center py-12">
+      <p class="text-gray-400 text-lg mb-4">Il n'y a pas encore de produits dans cette catégorie.</p>
+      <button
+        id="pd-reset"
+        type="button"
+        class="px-6 py-2 rounded-full bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium hover:bg-[#FFD700]/20 transition-colors"
+      >
+        Voir tous les produits
+      </button>
+    </div>
+  </section>
+
+  {/* ===== Trust section ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto text-center">
+      {/* Sin estrellas ni «4,9/5» del hub ES: en francés aún no hay compradores que lo respalden. */}
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Garantie de 30 jours
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Accès instantané
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Mises à jour gratuites
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Paiement sécurisé par Stripe
+        </span>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Worldwide availability ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white/[0.03] border border-white/10 rounded-2xl p-8 md:p-10 text-center">
+        <div class="w-16 h-16 rounded-full bg-[#FFD700]/10 flex items-center justify-center mx-auto mb-5">
+          <Icon name="Globe" class="w-8 h-8 text-[#FFD700]" />
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-3">
+          Achetez depuis <span class="text-[#FFD700]">n'importe où dans le monde</span>
+        </h2>
+        <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+          Nos produits numériques sont nés sur le marché hispanophone de l'hôtellerie-restauration, et les éditions françaises arrivent.
+          Accès instantané après achat, où que vous soyez.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
+          {countries.map((country) => (
+            <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/[0.06]">
+              {country}
+            </span>
+          ))}
+          <span class="px-3 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] font-medium">
+            + dans le monde entier
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== FAQ Section ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-10">
+        Foire Aux <span class="text-[#FFD700]">Questions</span>
+      </h2>
+      <div class="space-y-3">
+        {faqs.map((faq) => (
+          <details class="group bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+              <span class="text-white font-medium pr-4 text-sm md:text-base">{faq.q}</span>
+              <Icon name="ChevronDown" class="w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300 group-open:rotate-180" />
+            </summary>
+            <p class="px-5 pb-5 text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== pSEO Cities cross-link ===== */}
+  <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-xs font-medium mb-3">
+          Ressources par ville
+        </span>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+          Portez Votre Projet vers la <span class="text-[#FFD700]">Ville où Vous Allez Ouvrir</span>
+        </h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          Associez nos kits et guides à des données vérifiées pour chaque ville : coûts réels, licences locales, salaires du secteur et meilleurs quartiers (guides des villes actuellement disponibles en espagnol uniquement).
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        {cities.map((c) => (
+          <span
+            class="px-4 py-2 rounded-full bg-white/5 text-gray-300 text-sm font-medium transition-colors border border-white/10"
+          >
+            Ouvrir un restaurant à {c.label}
+          </span>
+        ))}
+      </div>
+      <div class="text-center">
+        <a
+          href="/fr"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFD700] text-black font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Découvrir AI Chef Pro →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== SEO content block ===== */}
+  <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+        Ressources Numériques Professionnelles pour l&rsquo;<span class="text-[#FFD700]">Hôtellerie-Restauration</span>
+      </h2>
+      <div class="text-gray-400 text-sm leading-relaxed space-y-4">
+        <p>
+          AI Chef Pro propose une collection de produits numériques conçus spécifiquement pour les professionnels de l'hôtellerie-restauration. Des prompts d'intelligence artificielle optimisés pour ChatGPT, Claude, Gemini et Perplexity aux modèles Excel de coût matière et aux enregistrements de sécurité alimentaire HACCP exigés par la loi.
+        </p>
+        <p>
+          Chaque produit a été créé par un chef qui travaille dans des cuisines professionnelles depuis l'âge de 17 ans et qui est consultant en hôtellerie-restauration depuis 2010. Ce ne sont pas des ressources génériques : ce sont des outils spécialement conçus pour les chefs exécutifs, les chefs de cuisine, les directeurs de restaurant, les pâtissiers, les barmans, les directeurs de traiteur et les propriétaires d'entreprises de restauration.
+        </p>
+        <p>
+          Tous nos produits incluent un accès instantané après l'achat, des mises à jour gratuites à vie, 8 outils professionnels gratuits et une garantie de remboursement de 30 jours. Paiement sécurisé traité par Stripe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Footer ===== */}
+  <footer class="py-8 px-4 border-t border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-500 text-sm mb-2">
+        © 2026 AI Chef Pro · Tous droits réservés
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
+        <a href="https://aichef.pro/fr" class="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/fr" class="text-gray-500 hover:text-[#FFD700] transition-colors">Bibliothèques de prompts</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/fr/tarifs" class="text-gray-500 hover:text-[#FFD700] transition-colors">Tarifs</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/fr/blog" class="text-gray-500 hover:text-[#FFD700] transition-colors">Blog</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="mailto:info@aichef.pro" class="text-gray-500 hover:text-[#FFD700] transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  {/* ===== WhatsAppProductSupport (tooltip vía CSS group-hover) ===== */}
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="Support WhatsApp" class="group fixed bottom-6 right-4 md:right-6 z-40">
+    <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-3 py-2 whitespace-nowrap transition-all duration-300 opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
+      <span class="text-xs font-medium text-gray-800">Un souci avec votre achat ? Écrivez-nous</span>
+      <div class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95"></div>
+    </div>
+    <div class="relative transition-transform duration-300 hover:scale-110">
+      <div class="absolute inset-0 rounded-full bg-green-500/30 animate-ping"></div>
+      <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-white">
+        <img src="/assets/chef-john-guerrero-optimized.jpg" alt="Chef John Guerrero" loading="lazy" width="56" height="56" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute -bottom-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+        <svg viewBox="0 0 24 24" fill="white" class="w-3 h-3 sm:w-3.5 sm:h-3.5">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  /* Pulso del botón WhatsApp (animate-ping de la SPA) */
+  .animate-ping { animation: pd-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  @keyframes pd-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+
+  /* La X nativa de un input[type="search"] (Chrome/Safari) sobra: el buscador pinta la
+     suya en #pd-search-clear y las dos se solapan en la esquina derecha del campo. */
+  #pd-search-input::-webkit-search-cancel-button,
+  #pd-search-input::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+</style>
+
+<script>
+  // Filtro por tag + BUSCADOR + paginación "Cargar más" (sustituye useState de la SPA).
+  // TODAS las cards están en el DOM; este script solo muestra/oculta (nunca borra nodos).
+  // El criterio de texto vive DENTRO de matches(), que es la única función que comparten
+  // las cards de producto y las de "próximamente": así las dos reaccionan igual.
+  //
+  // La normalización y los sinónimos NO se definen aquí: vienen del módulo compartido con
+  // el frontmatter (que genera los data-search) y con buscador-report.py. Duplicarlos fue
+  // el defecto original: dos copias idénticas que nadie cruzaba.
+  import { normalizarBusqueda, GRUPOS_SINONIMOS, FRASES_SINONIMAS } from '../../lib/normalizar-busqueda';
+
+  const PER_PAGE = 12;
+  let activeTag = 'all';
+  let visibleCount = PER_PAGE;
+
+  const tagBtns = Array.from(document.querySelectorAll('[data-tag-btn]'));
+  const prodCards = Array.from(document.querySelectorAll('[data-product]'));
+  const comingCards = Array.from(document.querySelectorAll('[data-coming]'));
+  const productsSection = document.getElementById('pd-products-section');
+  const comingSection = document.getElementById('pd-coming-section');
+  const noResults = document.getElementById('pd-noresults');
+  const loadMoreBlock = document.getElementById('pd-loadmore-block');
+  const loadMoreBtn = document.getElementById('pd-loadmore-btn');
+  const showingLine = document.getElementById('pd-showing-line');
+
+  const TAG_ACTIVE = ['bg-[#FFD700]', 'text-black'];
+  const TAG_INACTIVE = ['bg-white/5', 'text-gray-400', 'border', 'border-white/10', 'hover:border-[#FFD700]/30', 'hover:text-white'];
+
+  // ── Buscador ──────────────────────────────────────────────────────────────────────
+  const searchInput = document.getElementById('pd-search-input');
+  const searchClear = document.getElementById('pd-search-clear');
+  const searchStatus = document.getElementById('pd-search-status');
+  const searchAnnounce = document.getElementById('pd-search-announce');
+  const searchEmpty = document.getElementById('pd-search-empty');
+  const searchEmptyQ = document.getElementById('pd-search-empty-q');
+  const searchFuera = document.getElementById('pd-search-fuera');
+  const searchFueraTxt = document.getElementById('pd-search-fuera-txt');
+  const searchFueraBtn = document.getElementById('pd-search-fuera-btn');
+  const waEmpty = document.getElementById('pd-wa-empty');
+  const askToggle = document.getElementById('pd-ask-toggle');
+  const askForm = document.getElementById('pd-ask-form');
+  const askDetalle = document.getElementById('pd-ask-detalle');
+  const askEmail = document.getElementById('pd-ask-email');
+  const askWebsite = document.getElementById('pd-ask-website');
+  const askHint = document.getElementById('pd-ask-hint');
+  const askSend = document.getElementById('pd-ask-send');
+  const askThanks = document.getElementById('pd-ask-thanks');
+  const verTodos = document.getElementById('pd-ver-todos');
+
+  const WA_BASE = 'https://wa.me/34744717942?text=';
+
+  let searchRaw = '';        // lo que ve el usuario (para los mensajes)
+  let searchNorm = '';       // normalizado (para deduplicar el registro)
+  let searchVariantes = [];  // [[token, token…], …] — basta con que UNA variante case entera
+
+  // Etiqueta visible de cada chip, para poder decir "…fuera de la categoría PDF / eBook".
+  const etiquetaTag = {};
+  tagBtns.forEach((btn) => { etiquetaTag[btn.dataset.tag || ''] = (btn.textContent || '').replace(/\s+/g, ' ').trim(); });
+
+  function variantesDeConsulta(q) {
+    const variantes = [q];
+    for (let i = 0; i < FRASES_SINONIMAS.length; i++) {
+      const a = FRASES_SINONIMAS[i][0];
+      const b = FRASES_SINONIMAS[i][1];
+      const previas = variantes.slice();
+      for (let j = 0; j < previas.length; j++) {
+        const v = previas[j];
+        if (v.indexOf(a) !== -1) variantes.push(v.split(a).join(b));
+        else if (v.indexOf(b) !== -1) variantes.push(v.split(b).join(a));
+      }
+    }
+    return variantes.slice(0, 6);
+  }
+
+  function construirConsulta(valor) {
+    searchRaw = (valor || '').trim();
+    searchNorm = normalizarBusqueda(valor);
+    searchVariantes = [];
+    if (!searchNorm) return;
+    const variantes = variantesDeConsulta(searchNorm);
+    for (let i = 0; i < variantes.length; i++) {
+      const tokens = variantes[i].split(' ').filter(function (t) { return t.length >= 2; });
+      if (tokens.length) searchVariantes.push(tokens);
+    }
+  }
+
+  function buscando() {
+    return searchVariantes.length > 0;
+  }
+
+  // hayPad = ' ' + data-search → indexOf(' ' + token) exige inicio de palabra
+  // (así "rol" no casa dentro de "control" y "escandall" sí casa con "escandallos").
+  function tokenEn(hayPad, token) {
+    if (hayPad.indexOf(' ' + token) !== -1) return true;
+    if (token.length < 3) return false;
+    for (let i = 0; i < GRUPOS_SINONIMOS.length; i++) {
+      const grupo = GRUPOS_SINONIMOS[i];
+      let dispara = false;
+      for (let j = 0; j < grupo.length; j++) {
+        if (grupo[j].indexOf(token) === 0) { dispara = true; break; }
+      }
+      if (!dispara) continue;
+      for (let k = 0; k < grupo.length; k++) {
+        if (hayPad.indexOf(' ' + grupo[k]) !== -1) return true;
+      }
+    }
+    return false;
+  }
+
+  function coincideTexto(card) {
+    if (!buscando()) return true;
+    const hayPad = ' ' + (card.dataset.search || '');
+    for (let i = 0; i < searchVariantes.length; i++) {
+      const tokens = searchVariantes[i];
+      let todos = true;
+      for (let j = 0; j < tokens.length; j++) {
+        if (!tokenEn(hayPad, tokens[j])) { todos = false; break; }
+      }
+      if (todos) return true;
+    }
+    return false;
+  }
+
+  function coincideTag(card) {
+    if (activeTag === 'all') return true;
+    return (card.dataset.tags || '').split(' ').includes(activeTag);
+  }
+
+  function matches(card) {
+    return coincideTag(card) && coincideTexto(card);
+  }
+
+  // Conteos SIN tocar el DOM. `global` ignora el chip a propósito: es el que dice si el
+  // producto EXISTE en la tienda, y es el que se registra (un 0 causado por el filtro no
+  // es demanda no cubierta, es un filtro puesto).
+  function contar() {
+    let global = 0;
+    let filtrado = 0;
+    for (let i = 0; i < prodCards.length; i++) {
+      if (!coincideTexto(prodCards[i])) continue;
+      global += 1;
+      if (coincideTag(prodCards[i])) filtrado += 1;
+    }
+    let coming = 0;
+    for (let i = 0; i < comingCards.length; i++) if (matches(comingCards[i])) coming += 1;
+    return { global: global, filtrado: filtrado, coming: coming };
+  }
+
+  function updateTagButtons() {
+    tagBtns.forEach((btn) => {
+      const active = btn.dataset.tag === activeTag;
+      btn.classList.remove(...(active ? TAG_INACTIVE : TAG_ACTIVE));
+      btn.classList.add(...(active ? TAG_ACTIVE : TAG_INACTIVE));
+    });
+  }
+
+  function apply() {
+    const enBusqueda = buscando();
+    const matching = prodCards.filter(matches);
+    const total = matching.length;
+    // Con búsqueda activa se enseñan TODOS los resultados (la paginación se aparca).
+    const limite = enBusqueda ? total : visibleCount;
+
+    prodCards.forEach((c) => c.classList.add('hidden'));
+    matching.slice(0, limite).forEach((c) => c.classList.remove('hidden'));
+
+    const showing = Math.min(limite, total);
+    const hasMore = !enBusqueda && visibleCount < total;
+
+    if (productsSection) productsSection.classList.toggle('hidden', total === 0);
+    if (loadMoreBlock) {
+      loadMoreBlock.classList.toggle('hidden', !hasMore);
+      loadMoreBlock.classList.toggle('flex', hasMore);
+    }
+    if (hasMore && loadMoreBtn) loadMoreBtn.textContent = `Charger plus de produits (${total - visibleCount} restants)`;
+    if (hasMore && showingLine) showingLine.textContent = `Affichage de ${showing} sur ${total}`;
+
+    const matchingComing = comingCards.filter(matches);
+    comingCards.forEach((c) => c.classList.toggle('hidden', !matches(c)));
+    if (comingSection) comingSection.classList.toggle('hidden', matchingComing.length === 0);
+
+    // Cuántos productos casarían con el texto SIN el chip. Si hay alguno, el 0 de arriba lo
+    // provoca la categoría, no el catálogo: se ofrece quitar el filtro en vez de pedir que
+    // nos cuente qué buscaba (el producto existe y está a un clic).
+    const sinChip = enBusqueda && activeTag !== 'all' ? prodCards.filter(coincideTexto).length : total;
+    const vacio = total === 0 && matchingComing.length === 0;
+    const fueraDeCategoria = vacio && enBusqueda && sinChip > 0;
+
+    // Sin texto → panel clásico del filtro por tag. Con texto → panel del buscador.
+    if (noResults) noResults.classList.toggle('hidden', !(vacio && !enBusqueda));
+    if (searchFuera) searchFuera.classList.toggle('hidden', !fueraDeCategoria);
+    if (searchEmpty) searchEmpty.classList.toggle('hidden', !(vacio && enBusqueda && !fueraDeCategoria));
+
+    if (fueraDeCategoria && searchFueraTxt) {
+      const etiqueta = etiquetaTag[activeTag] || activeTag;
+      searchFueraTxt.textContent =
+        (sinChip === 1 ? '1 produit correspond' : sinChip + ' produits correspondent') +
+        ' à « ' + consultaVisible() + ' », mais ' + (sinChip === 1 ? 'il est' : 'ils sont') + ' hors de la catégorie ' + etiqueta + '.';
+    }
+    if (vacio && enBusqueda && !fueraDeCategoria) {
+      if (searchEmptyQ) searchEmptyQ.textContent = consultaVisible();
+      // El mensaje de WhatsApp por defecto es de SOPORTE POST-VENTA ("ayuda con mi compra"),
+      // que no es lo que quiere decir quien no ha encontrado nada. Se reescribe con lo que
+      // buscaba, que además es la única información valiosa de ese contacto.
+      if (waEmpty) {
+        waEmpty.href = WA_BASE + encodeURIComponent(
+          'Bonjour, j\'ai cherché « ' + searchRaw.slice(0, 80) + ' » dans la boutique et je n\'ai rien trouvé. Avez-vous quelque chose de similaire ?',
+        );
+      }
+    }
+
+    actualizarEstado(total, matchingComing.length, enBusqueda);
+  }
+
+  // Lo tecleado se pinta recortado: una consulta larguísima no debe descuadrar la línea.
+  // Además se parten los tokens interminables (una URL pegada, "aaaaaa…"): sin espacios,
+  // 60 caracteres son ~530 px contra los ~280 px útiles de un móvil de 360 px, y el CSS
+  // por sí solo no evita que el panel se desborde en navegadores viejos.
+  function consultaVisible() {
+    const partido = searchRaw.split(/(\s+)/).map(function (t) {
+      return t.length > 24 ? t.slice(0, 24) + '…' : t;
+    }).join('');
+    return partido.length > 60 ? partido.slice(0, 60) + '…' : partido;
+  }
+
+  // El contador visible se actualiza al instante; el ANUNCIO al lector de pantalla va con
+  // su propio retardo (600 ms) y solo si el texto cambió de verdad — si no, cada pulsación
+  // que no altera el conteo encola un aviso que pisa al anterior.
+  let tAnuncio = 0;
+  function actualizarEstado(total, coming, enBusqueda) {
+    if (!searchStatus) return;
+    const q = consultaVisible();
+    let texto;
+    if (!enBusqueda) {
+      texto = total === 1 ? '1 produit' : total + ' produits';
+    } else if (total === 0) {
+      texto = 'Aucun produit ne correspond à « ' + q + ' »';
+    } else if (total === 1) {
+      texto = '1 produit correspond à « ' + q + ' »';
+    } else {
+      texto = total + ' produits correspondent à « ' + q + ' »';
+    }
+    if (enBusqueda && coming > 0) texto += ' · ' + coming + ' en développement';
+    if (searchStatus.textContent === texto) return;
+    searchStatus.textContent = texto;
+    if (!searchAnnounce) return;
+    clearTimeout(tAnuncio);
+    tAnuncio = setTimeout(function () {
+      if (searchAnnounce.textContent !== texto) searchAnnounce.textContent = texto;
+    }, 600);
+  }
+
+  // ── Registro anónimo de búsquedas (nunca bloquea la UI; si falla, silencio) ──────
+  const LOG_URL = '/.netlify/functions/log-search';
+  const LOG_KEY = 'pd-busquedas-registradas';
+  let tRegistro = 0;
+
+  function listaRegistradas() {
+    try {
+      const guardado = sessionStorage.getItem(LOG_KEY) || '';
+      return guardado ? guardado.split('|') : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  // Duplicada = la misma consulta, o una de la que ésta es PREFIJO. Tecleando en móvil,
+  // una pausa de 1,2 s a media palabra registraba "escandall" y luego "escandallos" como
+  // dos consultas distintas: dos filas en el informe y un falso "sin resultados".
+  function yaRegistrada(q) {
+    const lista = listaRegistradas();
+    for (let i = 0; i < lista.length; i++) {
+      if (lista[i] === q || lista[i].indexOf(q) === 0) return true;
+    }
+    return false;
+  }
+
+  function marcarRegistrada(q) {
+    try {
+      // Al registrar la consulta larga se olvidan sus prefijos: si el visitante borra
+      // letras y vuelve a "escandall", ya no se registra otra vez.
+      const lista = listaRegistradas().filter(function (p) { return q.indexOf(p) !== 0; });
+      lista.push(q);
+      sessionStorage.setItem(LOG_KEY, lista.slice(-60).join('|'));
+    } catch (e) {
+      /* modo privado o storage bloqueado: se pierde el dedup, nada más */
+    }
+  }
+
+  function enviarLog(datos) {
+    try {
+      const cuerpo = JSON.stringify(datos);
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon(LOG_URL, new Blob([cuerpo], { type: 'application/json' }));
+      } else if (window.fetch) {
+        fetch(LOG_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: cuerpo,
+          keepalive: true,
+        }).catch(() => {});
+      }
+    } catch (e) {
+      /* el buscador nunca depende del backend */
+    }
+  }
+
+  function registrarBusqueda() {
+    if (!searchInput) return;
+    const q = searchRaw.slice(0, 120);
+    if (searchNorm.length < 3) return;
+    if (yaRegistrada(searchNorm)) return;
+    marcarRegistrada(searchNorm);
+    // Se cuenta AQUÍ, no se lee el último render: el registro puede dispararse antes de
+    // que el debounce de 200 ms haya aplicado el filtro (blur, Enter).
+    const c = contar();
+    enviarLog({
+      q: q,
+      n: c.global,          // sin el chip: el dato que dice si el producto existe
+      n_filtrado: c.filtrado, // con el chip puesto (lo que vio en pantalla)
+      coming: c.coming,
+      tag: activeTag === 'all' ? '' : activeTag,
+      lang: 'fr',
+      path: location.pathname,
+      ts: Date.now(),
+      website: askWebsite && askWebsite.value ? askWebsite.value : '',
+    });
+  }
+
+  function programarRegistro() {
+    clearTimeout(tRegistro);
+    tRegistro = setTimeout(registrarBusqueda, 1200);
+  }
+
+  // ── Estado visual del buscador ───────────────────────────────────────────────────
+  function sincronizarBotonLimpiar() {
+    if (!searchClear || !searchInput) return;
+    const hayTexto = searchInput.value.length > 0;
+    searchClear.classList.toggle('hidden', !hayTexto);
+    searchClear.classList.toggle('flex', hayTexto);
+  }
+
+  function reiniciarPanelPregunta() {
+    if (askThanks && !askThanks.classList.contains('hidden')) {
+      askThanks.classList.add('hidden');
+      if (askToggle) askToggle.classList.remove('hidden');
+      if (askDetalle) askDetalle.value = '';
+      if (askEmail) askEmail.value = '';
+    }
+    if (askHint) askHint.classList.add('hidden');
+    marcarInvalido(false);
+  }
+
+  let tFiltro = 0;
+  // Clave de la búsqueda EFECTIVA: '' cuando lo tecleado no llega a filtrar nada
+  // (`construirConsulta` descarta los tokens de menos de 2 caracteres, así que «5», «a»
+  // o un símbolo suelto dejan la lista igual que si no hubiera búsqueda).
+  let claveAplicada = '';
+  function claveBusqueda() {
+    return buscando() ? searchNorm : '';
+  }
+  function filtrar() {
+    construirConsulta(searchInput ? searchInput.value : '');
+    // La paginación se reinicia SOLO si la búsqueda efectiva cambia. Antes se reiniciaba
+    // siempre: el visitante pulsaba «Cargar más» hasta ver los 46, tecleaba una letra y
+    // el grid colapsaba a 12 con el botón de vuelta, mientras el contador seguía diciendo
+    // «46 productos». Nada explicaba el colapso.
+    const clave = claveBusqueda();
+    if (clave !== claveAplicada) visibleCount = PER_PAGE;
+    claveAplicada = clave;
+    reiniciarPanelPregunta();
+    apply();
+  }
+
+  function aplicarBusqueda() {
+    filtrar();
+    programarRegistro();
+  }
+
+  function limpiarBusqueda(devolverFoco) {
+    if (searchInput) searchInput.value = '';
+    clearTimeout(tFiltro);
+    construirConsulta('');
+    visibleCount = PER_PAGE;
+    claveAplicada = '';
+    sincronizarBotonLimpiar();
+    reiniciarPanelPregunta();
+    apply();
+    if (devolverFoco && searchInput) searchInput.focus();
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      sincronizarBotonLimpiar();
+      clearTimeout(tFiltro);
+      tFiltro = setTimeout(aplicarBusqueda, 200);
+    });
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        limpiarBusqueda(true);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        clearTimeout(tFiltro);
+        filtrar();
+        clearTimeout(tRegistro);
+        registrarBusqueda();
+      }
+    });
+    // OJO: aquí NO se re-filtra. `blur` se dispara en el mousedown, antes del mouseup: si
+    // el grid se re-renderizara ahora, la card sobre la que el visitante está pinchando
+    // podría ocultarse o moverse y el clic se perdería (o abriría otro producto).
+    // El registro sí puede correr: `contar()` no toca el DOM.
+    searchInput.addEventListener('blur', () => {
+      if (!searchInput.value.trim()) return;
+      if (searchInput.value.trim() !== searchRaw) construirConsulta(searchInput.value);
+      clearTimeout(tRegistro);
+      registrarBusqueda();
+    });
+  }
+
+  searchClear?.addEventListener('click', () => limpiarBusqueda(true));
+
+  // Atajo: "/" enfoca el buscador (salvo si ya se está escribiendo en otro campo).
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || !searchInput) return;
+    const destino = e.target;
+    const etiqueta = destino && destino.tagName ? destino.tagName.toLowerCase() : '';
+    if (etiqueta === 'input' || etiqueta === 'textarea' || etiqueta === 'select') return;
+    if (destino && destino.isContentEditable) return;
+    e.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  });
+
+  // Quitar el chip sin perder lo tecleado (panel "están fuera de la categoría").
+  searchFueraBtn?.addEventListener('click', () => {
+    activeTag = 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+    if (searchInput) searchInput.focus();
+  });
+
+  // "Ver el catálogo completo" desde el panel de vacío.
+  verTodos?.addEventListener('click', () => {
+    activeTag = 'all';
+    updateTagButtons();
+    limpiarBusqueda(true);
+  });
+
+  // ── "Dinos qué buscabas" (solo se ve cuando la búsqueda no devuelve nada) ────────
+  function marcarInvalido(mal) {
+    [askDetalle, askEmail].forEach((el) => {
+      if (!el) return;
+      if (mal) el.setAttribute('aria-invalid', 'true');
+      else el.removeAttribute('aria-invalid');
+    });
+  }
+
+  function avisar(texto, foco) {
+    if (askHint) {
+      askHint.textContent = texto;
+      askHint.classList.remove('hidden');
+    }
+    marcarInvalido(true);
+    if (foco) foco.focus();
+  }
+
+  askToggle?.addEventListener('click', () => {
+    if (askForm) askForm.classList.remove('hidden');
+    askToggle.classList.add('hidden');
+    if (askDetalle) askDetalle.focus();
+  });
+
+  function enviarPeticion() {
+    const detalle = (askDetalle && askDetalle.value ? askDetalle.value : '').trim().slice(0, 500);
+    const email = (askEmail && askEmail.value ? askEmail.value : '').trim().slice(0, 120);
+    if (!detalle && !email) {
+      avisar('Dites-nous ce dont vous avez besoin ou laissez votre e-mail pour que nous puissions vous tenir au courant.', askDetalle);
+      return;
+    }
+    // Validación nativa: funciona igual en un input suelto que dentro de un <form>. Sin
+    // esto, "asdf" pasaba como email, se decía "Gracias" y quedaba un contacto inservible.
+    if (email && askEmail && typeof askEmail.checkValidity === 'function' && !askEmail.checkValidity()) {
+      avisar('Vérifiez votre adresse e-mail : quelque chose semble manquer.', askEmail);
+      return;
+    }
+    if (askHint) askHint.classList.add('hidden');
+    marcarInvalido(false);
+    const c = contar();
+    enviarLog({
+      q: searchRaw.slice(0, 120),
+      n: c.global,
+      n_filtrado: c.filtrado,
+      coming: c.coming,
+      tag: activeTag === 'all' ? '' : activeTag,
+      lang: 'fr',
+      path: location.pathname,
+      ts: Date.now(),
+      detalle: detalle,
+      email: email,
+      sin_resultados: true,
+      // El evento del formulario repite una `q` que ya se registró 1,2 s antes: lo nuevo
+      // son el detalle y el email. `origen` permite al informe no contarlo dos veces.
+      origen: 'form',
+      website: askWebsite && askWebsite.value ? askWebsite.value : '',
+    });
+    // El foco va a la confirmación ANTES de ocultar el formulario: si se oculta primero,
+    // el botón enfocado desaparece y el foco cae a <body> (el usuario de teclado acaba al
+    // principio del documento y no se entera de que su petición salió).
+    if (askThanks) {
+      askThanks.classList.remove('hidden');
+      askThanks.focus();
+    }
+    if (askForm) askForm.classList.add('hidden');
+  }
+
+  askSend?.addEventListener('click', enviarPeticion);
+  // Sin <form> no hay envío con Enter: sin esto, el teclado se queda sin salida.
+  askEmail?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); enviarPeticion(); }
+  });
+  askDetalle?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); enviarPeticion(); }
+  });
+
+  // ── Chips, paginación y reset ────────────────────────────────────────────────────
+  tagBtns.forEach((btn) => btn.addEventListener('click', () => {
+    activeTag = btn.dataset.tag || 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+  }));
+
+  loadMoreBtn?.addEventListener('click', () => { visibleCount += PER_PAGE; apply(); });
+  document.getElementById('pd-reset')?.addEventListener('click', () => {
+    activeTag = 'all';
+    if (searchInput) searchInput.value = '';
+    construirConsulta('');
+    visibleCount = PER_PAGE;
+    claveAplicada = '';
+    sincronizarBotonLimpiar();
+    reiniciarPanelPregunta();
+    updateTagButtons();
+    apply();
+  });
+
+  // Estado inicial (el navegador puede restaurar el valor del input al volver atrás).
+  construirConsulta(searchInput ? searchInput.value : '');
+  claveAplicada = claveBusqueda();
+  sincronizarBotonLimpiar();
+  apply();
+  // ── Placeholder animado (John, 2026-09-05): escribe ejemplos de búsqueda letra a letra
+  //    para que el buscador llame la atención. Se detiene al enfocar o al escribir, y con
+  //    «prefers-reduced-motion» deja el placeholder estático.
+  (function placeholderAnimado() {
+    const input = document.getElementById('pd-search-input');
+    if (!(input instanceof HTMLInputElement)) return;
+    const estatico = input.getAttribute('placeholder') || '';
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    // Ejemplos CORTOS (≤ 22 caracteres): en un móvil de 360 px el campo deja ~26 caracteres
+    // visibles y un ejemplo largo se recortaba a media palabra (John, 2026-09-05).
+    const ejemplos = [
+      'coût de recette',
+      'coût matière',
+      'HACCP',
+      'gérant restaurant',
+      'plan d\'affaires',
+      'gestion des stocks',
+      'conseils pour chefs',
+      'planning du personnel',
+      'créer une pâtisserie',
+      'food truck',
+      'plan financier',
+    ];
+    let i = 0, pos = 0, borrando = false, parado = false, timer = 0;
+    const parar = () => { parado = true; clearTimeout(timer); input.setAttribute('placeholder', estatico); };
+    const paso = () => {
+      if (parado || document.activeElement === input || input.value) return parar();
+      const texto = ejemplos[i % ejemplos.length];
+      if (!borrando) {
+        pos += 1;
+        input.setAttribute('placeholder', texto.slice(0, pos) + (pos < texto.length ? '|' : ''));
+        if (pos >= texto.length) { borrando = true; timer = window.setTimeout(paso, 1400); return; }
+        timer = window.setTimeout(paso, 55 + Math.round(Math.random() * 45));
+      } else {
+        pos -= 2;
+        if (pos <= 0) { pos = 0; borrando = false; i += 1; input.setAttribute('placeholder', ''); timer = window.setTimeout(paso, 350); return; }
+        input.setAttribute('placeholder', texto.slice(0, pos));
+        timer = window.setTimeout(paso, 28);
+      }
+    };
+    input.addEventListener('focus', parar, { once: true });
+    input.addEventListener('input', parar, { once: true });
+    timer = window.setTimeout(paso, 900);
+  })();
+</script>

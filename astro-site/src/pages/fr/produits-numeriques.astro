@@ -1,0 +1,32 @@
+---
+// /fr/produits-numeriques — HUB de la tienda FR. Envoltorio fino, COPIA del de /en/digital-products
+// (pages/en/digital-products.astro), que a su vez es COPIA del de /productos-digitales: mismo
+// BaseLayout con las mismas props, SEO en francés, y el componente DigitalProductsHubPageFr, que es
+// la copia traducida de DigitalProductsHubPage (mismo diseño; cualquier cambio en uno se replica en
+// los demás).
+//
+// hreflang recíproco con el resto de hubs vivos vía hubLocales()/hubAlternates() de lib/tienda.ts.
+// omitGlobalApp OBLIGATORIO: el SoftwareApplication global del layout lleva ofertas en EUR y un
+// rating (4,8), y en la tienda FR no puede salir ninguno de los dos (tienda-gate.py). Los 3 JSON-LD
+// propios los emite el componente.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DigitalProductsHubPageFr from '../../components/pages/DigitalProductsHubPageFr.astro';
+import { hubLocales, hubAlternates } from '../../lib/tienda';
+
+const lang = 'fr';
+---
+
+<BaseLayout
+  whatsapp={false}
+  title="Produits Numériques pour la Restauration — Modèles, Guides, Prompts IA | AI Chef Pro"
+  description="Modèles Excel, fiches techniques, modèles HACCP, guides et prompts IA pour chefs, gérants et propriétaires de restaurant. Ressources professionnelles, éditions françaises à venir."
+  keywords="produits numériques restauration, modèles Excel restaurant, fiche technique Excel, modèles HACCP, coût matière, prompts IA restaurant, guide ouverture restaurant, plan d'affaires restaurant, AI Chef Pro"
+  lang={lang}
+  basePath="/produits-numeriques"
+  locales={hubLocales()}
+  alternates={hubAlternates()}
+  ogImage="https://aichef.pro/og-productos-digitales.jpg"
+  omitGlobalApp
+>
+  <DigitalProductsHubPageFr />
+</BaseLayout>
