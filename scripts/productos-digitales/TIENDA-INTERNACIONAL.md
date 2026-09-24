@@ -124,7 +124,7 @@ Lo no delegable sigue siendo lo mismo: **el Payment Link de Stripe lo crea John*
   «Load more» y buscador; **cualquier cambio de diseño se replica en los dos**). Las 50 tarjetas salen «Coming soon
   in English», sin precio ni enlace, hasta que su familia tenga `en.vivo: true` en `FAMILIAS` (entonces: enlace a la
   landing EN + precio USD de `product-prices.ts`). Borrados `TiendaHubPage.astro`, `data/tienda-hub/en.ts` y
-  `public/tienda-en/recipe-costing-kit-card.jpg`; de `data/tienda-hub/en.json` solo se usa `homeStrip` (TiendaStrip).
+  `public/tienda-en/recipe-costing-kit-card.jpg`. **`TiendaStrip.astro` (franja de la portada EN) también se borró** (John, 24-sep: la portada ES no la tiene), con `data/tienda-hub/en.json` y `public/tienda-en/tienda-en-hero.jpg`, que solo la alimentaban: las 7 portadas montan hoy los mismos componentes en el mismo orden.
 
 ### Por producto — política de 3 fases (F1 fundamentos · F2 entregables · F3 lanzamiento)
 
@@ -205,4 +205,4 @@ la F1 de cada producto frente a Etsy/Gumroad.
     desde la copia EN, grep del nombre del idioma de origen.
   - **Una copia por idioma = un cambio de diseño se replica en 7 ficheros.** Es el precio de la regla de John; está anotado en
     la cabecera de cada componente.
-
+- **2026-09-24 (tarde, sesión Claude Code):** John decide (1) quitar `TiendaStrip` de la portada EN — las 7 portadas quedan con los mismos componentes que la ES— y (2) que el aviso cripto EN diga que se renuncia al derecho de cancelación de 14 días «where it applies (EU/UK)» (`netlify/shared/email-i18n.ts`): correcto en EU y UK, neutro en EE. UU. El diálogo cripto EN (F3 del piloto) tiene que pedir la misma renuncia con esa redacción.

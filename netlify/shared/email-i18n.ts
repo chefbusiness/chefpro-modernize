@@ -37,7 +37,7 @@ export const EMAIL_I18N: Record<TiendaLang, EmailI18n> = {
       'Keep this email. The link is valid for 12 months; when it expires, get a new one for free in one click from the product page ("Already purchased?"): your access never expires.',
     avisoCripto: `
           <p style="color: #666; font-size: 14px; line-height: 1.6;">
-            Paid in cryptocurrency. By requesting immediate access to the digital content, you waived the 14-day right of withdrawal, as you confirmed at checkout. If you need help, email us at <a href="mailto:info@aichef.pro" style="color: #FFD700;">info@aichef.pro</a> with your order number.
+            Paid in cryptocurrency. By requesting immediate access to the digital content, you waived the 14-day cancellation right where it applies (EU/UK), as you confirmed at checkout. If you need help, email us at <a href="mailto:info@aichef.pro" style="color: #FFD700;">info@aichef.pro</a> with your order number.
           </p>`,
   },
 };
