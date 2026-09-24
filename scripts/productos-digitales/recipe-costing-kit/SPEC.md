@@ -294,82 +294,35 @@ Maquetador: copia parametrizada de `bono_guia.py` (cabecera, «Page {n}», títu
 de glifos: cero caracteres fuera de WinAnsi y cero restos de español. El nº de páginas se comprueba contra la landing,
 porque `paginas-gate.py` solo lee `productos/**` [T9].
 
-## 3. Landing, dashboard y backend (F3)
+## 3. Landing, dashboard y backend (F3) — RÉPLICA del ES, sin reinventar (John, 24-sep)
 
-**Orden [T5]:**
-1. El Payment Link se pide a John **al cerrar la F2**.
-2. La F3 va en **un solo PR** que lleva a la vez:
-   - la env var ya dada de alta;
-   - `payment-links.ts` y `product-prices.ts` regenerados;
-   - el productId en verify, resend, downloads, admin y `zona-app`;
-   - las páginas;
-   - `FAMILIAS.en.vivo = true` [T4].
-3. Antes de fusionar: gates contra el deploy preview.
-4. Nada de producto EN en `main` sin link: `sync-payment-links.py` y `gate-flujo-postpago.py` se pondrían rojos para **todo** el catálogo.
-5. Tras el merge: compra de prueba en producción.
+John, 24-sep: «No necesito que te pongas a inventar la rueda. Mira cómo está construido en español: la pasarela de pago ya
+está (Stripe y NOWPayments). Replicar exactamente la landing page como está, de español a inglés… Lo único que hay
+que reconstruir es los productos a nivel de archivos. No me complicas la vida».
 
-**Landing:** `astro-site/src/data/productos-en/kits/recipe-costing-kit.ts` (tipo `KitExcelData`).
-- Sin `testimonials`, `reviews` ni `aggregateRating`.
-- Anclas D4 y nombre D2.
-- FAQ con el PAA (research §6.3) más la de moneda: «amounts have no currency symbol; checkout shows your local currency» [M22].
-- Columnas del kit listadas en claro (AI Overview).
-- D16 en `compatApps`, `compatPills` y la FAQ.
-- `footerLinks` a la tienda y las herramientas EN. `alreadyBought.product = 'recipe-costing-kit'`.
-- OG image nueva sin texto español (`generate-images`).
-- `src/lib/sitemap-lastmod.json` con la fecha de publicación [T4].
-- **13 plantillas** + 2 bonus (D17) en el grid, la lista de columnas y el title.
-- FAQ adicionales [8b-A C8, 8b-B §4]:
-  - «Does it handle case prices and catch weight?»: sí.
-  - «What's not included?»: par levels, menu engineering (solo la introducción del PDF) y auto-feed de precios.
-  - Licencia D18.
-  - Private chef, meal prep, ghost kitchen y estudiantes.
-- **Comparativa honesta kit vs SaaS**: meez $19/mes, Jelly £129/mes, MarginEdge $350/mes, R365 $469-749/mes. El kit no los sustituye; es el pago único para quien aún no los necesita.
+**Qué se hace en la F3 (y nada más):**
+1. **Landing EN = la landing ES replicada.**
+   - Misma plantilla `KitExcelLandingPage` (ya acepta `lang`).
+   - `data/productos-en/kits/recipe-costing-kit.ts` = copia de `kit-escandallos.ts` traducida, con los datos de producto EN (13 plantillas, precio y anclas como en ES, D4; sin reseñas ni testimonios).
+   - Wrapper `pages/en/digital-products/recipe-costing-kit.astro` = copia de `pages/kit-escandallos.astro` con `lang="en"`.
+2. **Acceso y dashboard.**
+   - `…/access.astro` con el gate compartido `ProductAccessGate`, que ya habla inglés.
+   - `…/library.astro` + `RecipeCostingKitDashboard.tsx` = copia traducida de `KitEscandallosDashboard.tsx`.
+   - Los textos españoles de los componentes compartidos del dashboard se traducen con un `lang` (el ES queda igual).
+3. **Pagos: los mismos de siempre.**
+   - **Stripe:** el Payment Link de John → env var en Netlify → `sync-payment-links.py` / `sync-product-prices.py`.
+   - **NOWPayments:** el mismo `CryptoPayButton`, con sus textos en inglés; la página de vuelta `/en/crypto-payment` = copia traducida de `/pago-cripto`.
+4. **Backend:** la entrada `recipe-costing-kit` con `lang: 'en'` en los registros donde está `kit-escandallos` (zona-app, verify, resend, downloads, admin), con el email de acceso traducido.
+5. **Ficheros:** `aplicar_en.py --real` → `dl/recipe-costing-kit/`.
+6. **Publicar:** `FAMILIAS.en.vivo = true` (la tarjeta del hub EN pasa sola a viva) y el hreflang ES↔EN.
+7. **Gates** de siempre contra la preview, compra de prueba y broadcast EN (regla de un correo por producto nuevo).
 
-**Páginas:**
-- `pages/en/digital-products/recipe-costing-kit.astro`: `lang="en"`, `basePath` **sin** `/en`, `alternatesFamilia`, `whatsapp={false}`, `omitGlobalApp`, `miselup={false}`.
-- `…/access.astro`: `ProductAccessGate lang="en"`.
-- `…/library.astro` + island + `src/pages/RecipeCostingKitDashboard.tsx`, copia traducida de `KitEscandallosDashboard.tsx`:
-  - sin Sheets (D16);
-  - sin la venta cruzada «Pro Prompts eBook — €9»: se quita o apunta al hub EN [M8].
-- `pages/kit-escandallos.astro` → `alternatesFamilia('kit-escandallos')`.
+**Aplazado como tarea aparte, fuera del lanzamiento:**
+- re-apuntar los 26 banners del blog EN y los spokes de casos de uso a la landing EN, con precio por idioma en el catálogo;
+- condiciones de compra EN;
+- test de Google Sheets.
 
-**Componentes compartidos** (`SaasDiscoveryBanner`, `ProductChangelog`, `LogoBadge`, `WhatsAppProductSupport`,
-`CryptoPayButton`): prop `lang` con el ES por defecto **byte a byte idéntico**, demostrado [T11]:
-- `--es-identico` sobre una muestra de cada plantilla que monta `CryptoPayButton`: KitExcel, Guía, KitTareas, Plan, `pro-prompts-ebook` y `mega-pack-tareas`;
-- diff del render ES con `react-dom/server` antes y después, para los React;
-- grep estático de «€», restos de español y rutas ES en `RecipeCostingKitDashboard.tsx`, su island y los wrappers EN (son `client:only`: `tienda-gate` no los ve).
-
-**Backend:**
-- `zona-app.ts`, `verify-purchase.ts`, `resend-access.ts`, `get-download-urls.ts` y `admin-generate-access.ts` (con email EN).
-- **El desplegable de `src/pages/AdminGenerateAccess.tsx`** y su espejo `src/data/productos-digitales-config.ts` [T7]. `gate-flujo-postpago` (sección A) cruza los ids del desplegable con PRODUCTS.
-
-**Cripto:**
-- `CryptoPayButton.astro` con `lang`: copy, países, enlace a las condiciones EN (§5.4) y la renuncia «where it applies (EU/UK)». El `<script is:inline>` lleva **una rama EN aparte** (8 errores, «Continue to payment»…) y el bloque ES queda **intacto** (las 48 landings ES byte a byte). Además, un grep sobre los `<script>` del HTML EN: cero «Continuar», «inténtalo», «escríbenos», «pasarela» [R2T-12].
-- `pages/en/crypto-payment.astro` = copia traducida de `pago-cripto.astro`, fuera del sitemap.
-- Si no llega a tiempo, el producto va a `CRYPTO_PRODUCTS_EXCLUDE`.
-
-**Gates que hay que ajustar antes:**
-- `miselup-gate.py`: en EN, cero tarjetas.
-- `whatsapp-gate.py`: exentos anidados.
-- `robots-gate.py`: rutas anidadas.
-- `tienda-gate.py`: hreflang que apunte a un 404 en páginas EN aún no vivas, y `--esperadas <ruta>` (§2.0).
-- `nombre-gate.py`: `productos-en/**` con `name.en`, y corrido con `--only recipe-costing-kit` (hoy está rojo en 44 productos ES) [T13, R2T-21].
-
-**Hub EN** [R2T-09, R2-04]: la tarjeta pasa a «13 Excel templates», «Preloaded trim-loss (yield) rates», «10 venue types», con el slug de la landing EN, precio vivo y badge D4. Gate: el nº de claves de `get-download-urls` de cada producto casa con el grid de su landing.
-
-**Catálogo y blog EN [T6, M2]:**
-- `products-catalog.ts` gana `urlByLang.en` **y precio por idioma**: `priceByLang` después de `description`, o el `usd` de `product-prices.ts`.
-- Los consumidores usan URL y precio por idioma: `localize()`, las tarjetas de `/en/use-cases/*`, `catalogo_productos()` / `banner()` del ensamblador y `fase8e-banners-corpus.py`.
-- Parche quirúrgico de los 26 banners, a URL EN + $19.
-- Gate: ningún banner ni página EN apunta a `/kit-escandallos` ni contiene «€12».
-
-**Spokes EN de casos de uso [M16]:** pasada de copy sobre `use-cases-content.en.ts`.
-- Se quitan las funciones que el kit no tiene: importar CSV, coste laboral, «load your recipe book», y el «€12».
-- Se describe como plantillas donde se teclean o pegan ingredientes y precios.
-
-**Enlazado:** enlaces contextuales desde los posts EN del tema y las herramientas gratuitas. Cero huérfanas.
-
-**Broadcast EN [M18]:** segmento EN de Resend, «Hi everyone,», hueco = último `scheduled_at` + 5 días, 08:00 UTC.
+*(La versión anterior de esta sección, más larga, está en el historial de git: commit `f257dd16`.)*
 
 ## 4. Gates
 
