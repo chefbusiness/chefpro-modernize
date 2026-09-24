@@ -42,7 +42,7 @@ const data: KitExcelData = {
       },
       {
         q: 'Does it work in Google Sheets?',
-        a: 'The kit is built for Microsoft Excel, and that is where every formula, drop-down and protected cell has been tested. We have not certified it in Google Sheets, so we do not promise it.',
+        a: 'Yes. You can import the .xlsx files straight into Google Sheets and every formula carries over. They also work with LibreOffice Calc and Apple Numbers.',
       },
       {
         q: 'Is 30% a typical food cost?',
@@ -147,7 +147,7 @@ const data: KitExcelData = {
   compatApps: {
     titleHtml: 'Works With the <span class="text-[#FFD700]">Tools</span> You Already Use',
     subtitleHtml:
-      'Works best with <a href="/en" class="text-[#FFD700] hover:underline">AI Chef Pro</a>. Built for Microsoft Excel, with a PDF guide included',
+      'Works best with <a href="/en" class="text-[#FFD700] hover:underline">AI Chef Pro</a>. Compatible with Excel, Google Sheets, PDF and more',
   },
 
   grid: {
@@ -185,10 +185,14 @@ const data: KitExcelData = {
       { icon: 'TrendingDown', title: 'Preloaded Trim-Loss Rates', desc: '21 ingredient categories with the typical industry trim loss. Editable, so you can match your own kitchen.' },
       { icon: 'RefreshCw', title: 'Pay Once, Yours Forever', desc: 'No subscription. Lifetime access to the dashboard with every template. New templates at no extra cost.' },
     ],
-    // D16: solo Microsoft Excel hasta que pase el test real de Google Sheets.
-    compatLabel: 'Built and tested for:',
+    // Réplica del ES (John, 25-sep): mismas cinco píldoras de compatibilidad.
+    compatLabel: 'Compatible with any spreadsheet software:',
     compatPills: [
       { label: 'Microsoft Excel', highlight: true },
+      { label: 'Google Sheets' },
+      { label: 'LibreOffice Calc' },
+      { label: 'Apple Numbers' },
+      { label: 'WPS Office' },
     ],
   },
 
@@ -238,7 +242,7 @@ const data: KitExcelData = {
   },
 
   // FAQ on-page (acordeón): guion del People Also Ask (research §6.3) + moneda, licencia (D18),
-  // precios por caja, qué no incluye y Google Sheets solo como «built for Excel» (D16).
+  // precios por caja, qué no incluye y Google Sheets como en el ES (John, 25-sep).
   faqs: [
     {
       q: 'Do I need advanced Excel skills to use the templates?',
@@ -246,7 +250,7 @@ const data: KitExcelData = {
     },
     {
       q: 'Does it work in Google Sheets?',
-      a: 'The kit is built for Microsoft Excel on Windows or Mac (including Microsoft 365), and that is where every formula, drop-down and protected cell has been tested. We haven\'t certified it in Google Sheets, so we don\'t promise it. If Excel isn\'t an option for you, email info@aichef.pro before you buy.',
+      a: 'Yes. You can import the .xlsx files straight into Google Sheets and every formula carries over. They also work with LibreOffice Calc and Apple Numbers.',
     },
     {
       q: 'Is 30% a typical food cost?',

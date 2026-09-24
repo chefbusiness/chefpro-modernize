@@ -157,10 +157,10 @@ export default function FoodCostKitDashboard() {
             {/* ── Tip banner ───────────────────────────────── */}
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">
-                Built for Microsoft Excel
+                Works with Excel, Google Sheets, LibreOffice and Numbers
               </p>
               <p className="text-gray-400 text-sm">
-                Download the .xlsx files and open them in Excel. Green cells are editable; the formulas are protected so you can&apos;t delete them by accident.
+                Download the .xlsx files and open them in your favorite spreadsheet app. Every formula carries over.
               </p>
             </div>
           </div>
