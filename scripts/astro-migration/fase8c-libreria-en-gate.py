@@ -33,8 +33,15 @@ MAPA = Path(__file__).parent / 'fase8c-agentes' / 'agentes-en.json'
 # Lo que NUNCA puede aparecer en un post inglés. La normativa europea no rige para
 # el lector estadounidense: traducirla sería publicar derecho que no le aplica.
 # El tercer campo exime al interior de los banners: ahí el € es el precio REAL que
-# cobra Stripe (los productos digitales solo tienen landing en español, decisión de
-# John 2026-07-31). Convertirlo a dólares sería mentir sobre el cargo.
+# cobra Stripe en la landing ESPAÑOLA a la que apunta el banner (decisión de John
+# 2026-07-31). Convertirlo a dólares sería mentir sobre el cargo.
+# Desde la tienda EN (25-sep-2026) hay productos con landing inglesa propia y precio en
+# USD (`urlByLang`/`priceByLang` de products-catalog.ts; el primero, Food Cost Kit Pro,
+# $19). Sus banners ya no llevan €, sino el precio de SU Payment Link. El VETADO no
+# cambia —el € sigue exento dentro de los banners que apuntan a una landing ES—, y la
+# coherencia banner ↔ tienda la comprueba aparte `banners_tienda()`: un banner EN a la
+# landing ES de un producto que ya tiene landing EN, o un banner a /en/… con € o con
+# otro precio, es un ERROR.
 VETADO = [
     (r'\bAPPCC\b', 'APPCC (en inglés es HACCP)', False),
     (r'Reglamento\s+\(?UE\)?', 'Reglamento UE', False),
@@ -101,6 +108,50 @@ def con_imperial_al_lado(texto, pos, radio=70):
     entre paréntesis marca como error la mitad de los casos correctos. Lo que
     importa es que la equivalencia imperial esté AL LADO, en el orden que sea."""
     return bool(IMPERIAL.search(texto[max(0, pos - radio):pos + radio]))
+
+
+def cargar_catalogo():
+    """Catálogo del ensamblador (importado, no copiado: lleva el gate de recuento y lee
+    urlByLang/priceByLang). Devuelve (módulo, productos)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        'fase8c_assemble', Path(__file__).parent / 'fase8c-libreria-assemble.py')
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod, mod.catalogo_productos()
+
+
+def banners_tienda(md, mod, prods):
+    """Coherencia de los banners de un post EN con la tienda de cada producto.
+
+    - Producto con landing EN (`urlByLang.en`): su banner tiene que apuntar a ella, con su
+      nombre EN y el precio de esa tienda (`priceByLang.en`), y sin €.
+    - Banner a una ruta /en/… que ningún producto del catálogo declara: ERROR (landing
+      inventada o renombrada sin actualizar el catálogo)."""
+    errores = []
+    es_con_en = {d['url']: pid for pid, d in prods.items() if 'en' in d.get('url_lang', {})}
+    por_ruta_en = {d['url_lang']['en']: pid for pid, d in prods.items() if 'en' in d.get('url_lang', {})}
+    for b in BANNER.findall(md.read_text(encoding='utf-8')):
+        h = re.search(r'<a href="([^"?]+)\?utm_source=blog&amp;utm_medium=banner', b)
+        if not h:
+            continue
+        ruta = h.group(1)
+        if ruta in es_con_en:
+            pid = es_con_en[ruta]
+            errores.append('%s: banner de %s a la landing ES %s; tiene landing EN %s'
+                           % (md.name, pid, ruta, prods[pid]['url_lang']['en']))
+        elif ruta.startswith('/en/'):
+            pid = por_ruta_en.get(ruta)
+            if not pid:
+                errores.append('%s: banner a %s, que ningún producto del catálogo declara'
+                               % (md.name, ruta))
+                continue
+            texto = limpia(b)
+            nombre, precio = prods[pid]['en'][0], mod.precio_producto(prods[pid], 'en')
+            if '€' in b or ('for %s' % precio) not in texto or nombre not in texto:
+                errores.append('%s: banner de %s sin el nombre «%s» o el precio %s de la tienda EN '
+                               '(o con €) → «%s»' % (md.name, pid, nombre, precio, texto[-80:]))
+    return errores
 
 
 def revisa(slug, mapa, prods_ts):
@@ -267,6 +318,21 @@ def main():
             print('   ⛔ %s' % e)
         for a in avisos:
             print('   ⚠  %s' % a)
+
+    # Banners ↔ tienda EN: con --todos, en TODO el blog EN (los banners de un producto
+    # con landing EN también viven fuera de las librerías); con --slug, en ese post.
+    mod, prods = cargar_catalogo()
+    posts = (sorted(EN.glob('*.md')) if args.todos
+             else [EN / (mapa[s]['slug_en'] + '.md') for s in slugs])
+    posts = [p for p in posts if p.exists()]
+    err_b = [e for p in posts for e in banners_tienda(p, mod, prods)]
+    total_e += len(err_b)
+    con_en = sorted(pid for pid, d in prods.items() if 'en' in d.get('url_lang', {}))
+    print('\n%s  banners ↔ tienda EN en %d post(s) · productos con landing EN: %s'
+          % ('✅ PASA' if not err_b else '⛔ %d ERROR(ES)' % len(err_b), len(posts),
+             ', '.join(con_en) or 'ninguno'))
+    for e in err_b:
+        print('   ⛔ %s' % e)
     print('\n%s' % ('─' * 70))
     print('%d post(s) · %d errores' % (len(slugs), total_e))
     sys.exit(1 if total_e else 0)
