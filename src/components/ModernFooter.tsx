@@ -29,7 +29,7 @@ const TIENDA_PATHS: Record<string, string> = {
 };
 const TIENDA_NOMBRE: Record<string, string> = {
   es: 'Productos Digitales', en: 'Digital Products', fr: 'Produits numériques',
-  de: 'Digitale Produkte', it: 'Prodotti Digitali', pt: 'Produtos digitais', nl: 'Digitale producten',
+  de: 'Digitale Produkte', it: 'Prodotti Digitali', pt: 'Produtos Digitais', nl: 'Digitale producten',
 };
 const tiendaHref = (l: string): string | null => TIENDA_PATHS[l] ?? null;
 

@@ -51,7 +51,7 @@ export const TIENDA_NOMBRE: Partial<Record<Locale, string>> = {
   fr: 'Produits numériques',
   de: 'Digitale Produkte',
   it: 'Prodotti Digitali',
-  pt: 'Produtos digitais',
+  pt: 'Produtos Digitais',
   nl: 'Digitale producten',
 };
 
