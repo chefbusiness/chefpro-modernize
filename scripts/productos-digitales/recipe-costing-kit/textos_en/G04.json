@@ -1,0 +1,539 @@
+[
+ {
+  "es": "📋 Escandallo — Cafetería y Brunch",
+  "en": "📋 Recipe Cost Card — Café & Brunch"
+ },
+ {
+  "es": "▸ 4 recetas típicas de brunch y cafetería: tostada de aguacate, açaí bowl, eggs benedict y carrot cake.",
+  "en": "▸ 4 classic café and brunch recipes: avocado toast, açaí bowl, eggs Benedict, and carrot cake."
+ },
+ {
+  "es": "▸ La carrot cake se escandalla por tanda: 12 raciones en «Nº de raciones» y el coste por porción sale solo.",
+  "en": "▸ The carrot cake is costed by batch: enter 12 in \"Number of portions\" and the cost per portion calculates itself."
+ },
+ {
+  "es": "▸ Food cost objetivo de referencia en cafetería: 25-30 %.",
+  "en": "▸ Reference target food cost for a café: 25-30%.",
+  "cifra_derivada": true,
+  "nota": "D12 benchmark (café 25-30 %); el agente de mercado confirma el rango final."
+ },
+ {
+  "es": "Tostada de Aguacate con Huevo Poché",
+  "en": "Avocado Toast with Poached Egg"
+ },
+ {
+  "es": "Pan de masa madre (rebanada gruesa)",
+  "en": "Sourdough bread (thick slice)"
+ },
+ {
+  "es": "Aguacate Hass (½ pieza)",
+  "en": "Hass avocado (½ each)"
+ },
+ {
+  "es": "Tomate cherry",
+  "en": "Cherry tomatoes"
+ },
+ {
+  "es": "Semillas mix",
+  "en": "Mixed seeds"
+ },
+ {
+  "es": "Sal en escamas",
+  "en": "Flaky sea salt"
+ },
+ {
+  "es": "Açaí Bowl con Granola y Fruta",
+  "en": "Açaí Bowl with Granola and Fruit"
+ },
+ {
+  "es": "Açaí congelado",
+  "en": "Frozen açaí"
+ },
+ {
+  "es": "Plátano",
+  "en": "Banana"
+ },
+ {
+  "es": "Leche de avena",
+  "en": "Oat milk"
+ },
+ {
+  "es": "Granola artesanal",
+  "en": "Artisan granola"
+ },
+ {
+  "es": "Arándanos",
+  "en": "Blueberries"
+ },
+ {
+  "es": "Coco rallado",
+  "en": "Shredded coconut"
+ },
+ {
+  "es": "Miel",
+  "en": "Honey"
+ },
+ {
+  "es": "Eggs Benedict con Salmón Ahumado",
+  "en": "Eggs Benedict with Smoked Salmon"
+ },
+ {
+  "es": "English muffin",
+  "en": "English muffin"
+ },
+ {
+  "es": "Mantequilla (hollandaise)",
+  "en": "Butter (hollandaise)"
+ },
+ {
+  "es": "Cebollino (1 rama ≈ 1/12 manojo)",
+  "en": "Chives (1 sprig ≈ 1/12 bunch)"
+ },
+ {
+  "es": "Carrot Cake con Frosting de Queso — tanda de 12 raciones (molde de 20 cm, dos capas)",
+  "en": "Carrot Cake with Cream Cheese Frosting — batch of 12 portions (8-inch pan, two layers)",
+  "nota": "20 cm → 8-inch, tamaño de molde equivalente más natural en EE. UU.; no es cifra de mercado (D7/D12), es adaptación de traducción."
+ },
+ {
+  "es": "Escandallo por TANDA. El «Nº de raciones» reparte el coste entre las porciones que salen.",
+  "en": "Recipe costed by BATCH. \"Number of portions\" divides the cost across the portions it yields."
+ },
+ {
+  "es": "Azúcar moreno",
+  "en": "Brown sugar"
+ },
+ {
+  "es": "Aceite de girasol",
+  "en": "Sunflower oil"
+ },
+ {
+  "es": "Nueces peladas",
+  "en": "Shelled walnuts"
+ },
+ {
+  "es": "Canela molida",
+  "en": "Ground cinnamon"
+ },
+ {
+  "es": "Queso crema (frosting)",
+  "en": "Cream cheese (frosting)"
+ },
+ {
+  "es": "Azúcar glas (frosting)",
+  "en": "Powdered sugar (frosting)"
+ },
+ {
+  "es": "Mantequilla (frosting)",
+  "en": "Butter (frosting)"
+ },
+ {
+  "es": "Escandallo — Cafetería y Brunch · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Café & Brunch · Recipe Costing Kit Pro"
+ },
+ {
+  "es": "📋 Escandallo — Food Truck",
+  "en": "📋 Recipe Cost Card — Food Truck"
+ },
+ {
+  "es": "▸ Una pestaña por producto de venta: smash burger, loaded fries y pulled pork.",
+  "en": "▸ One tab per menu item: smash burger, loaded fries, and pulled pork."
+ },
+ {
+  "es": "▸ Pestaña «Punto de Equilibrio»: escribe tus costes fijos del día y el mix de ventas, y la hoja te dice cuántas unidades tienes que vender para cubrirlos y con qué facturación.",
+  "en": "▸ The \"Break-Even\" tab: enter your daily fixed costs and sales mix, and the sheet tells you how many units you need to sell to cover them and at what revenue."
+ },
+ {
+  "es": "▸ El margen de contribución sale de las tres pestañas de escandallo: si cambias una receta o un precio, el punto de equilibrio se mueve solo.",
+  "en": "▸ The contribution margin comes from the three recipe cost card tabs: change a recipe or a price and the break-even point moves on its own."
+ },
+ {
+  "es": "▸ Food cost objetivo de referencia en street food: 28-35 %.",
+  "en": "▸ Reference target food cost for street food: 28-35%.",
+  "cifra_derivada": true,
+  "nota": "D12 benchmark (food truck 28-35 %); el agente de mercado confirma el rango final."
+ },
+ {
+  "es": "Smash Burger Doble con Queso",
+  "en": "Double Smash Burger with Cheese"
+ },
+ {
+  "es": "Carne picada (mezcla 80/20)",
+  "en": "Ground beef (80/20 blend)"
+ },
+ {
+  "es": "Pan brioche",
+  "en": "Brioche bun"
+ },
+ {
+  "es": "Queso americano",
+  "en": "American cheese"
+ },
+ {
+  "es": "Cebolla",
+  "en": "Onion"
+ },
+ {
+  "es": "Salsa especial",
+  "en": "Special sauce"
+ },
+ {
+  "es": "Pepinillo",
+  "en": "Pickle"
+ },
+ {
+  "es": "Loaded Fries con Pulled Pork",
+  "en": "Loaded Fries with Pulled Pork"
+ },
+ {
+  "es": "Patata para freír",
+  "en": "Potatoes (for fries)"
+ },
+ {
+  "es": "Pulled pork",
+  "en": "Pulled pork"
+ },
+ {
+  "es": "Queso cheddar rallado",
+  "en": "Shredded cheddar cheese"
+ },
+ {
+  "es": "Salsa BBQ",
+  "en": "BBQ sauce"
+ },
+ {
+  "es": "Aceite de girasol (fritura)",
+  "en": "Sunflower oil (frying)"
+ },
+ {
+  "es": "Pan brioche grande",
+  "en": "Large brioche bun"
+ },
+ {
+  "es": "Coleslaw (mix)",
+  "en": "Coleslaw (mix)"
+ },
+ {
+  "es": "Pepinillos",
+  "en": "Pickles"
+ },
+ {
+  "es": "Punto de Equilibrio Diario — Food Truck",
+  "en": "Daily Break-Even — Food Truck"
+ },
+ {
+  "es": "Cuántas unidades tienes que vender cada día sólo para cubrir los costes fijos. El margen sale de las pestañas de escandallo: si cambias una receta o un precio, esta hoja se mueve sola. El PVP es el que tengas escrito en «PVP actual en carta (sin IVA)» de cada pestaña; mientras esa celda esté vacía se usa el PVP sugerido, que casi nunca es el que cobras.",
+  "en": "How many units you need to sell each day just to cover your fixed costs. The margin comes from the recipe cost card tabs: change a recipe or a price and this sheet updates itself. The menu price used is whatever you entered in \"Current menu price (pre-tax / ex VAT)\" on each tab; while that cell is empty, the sheet uses the suggested menu price instead, which is almost never what you actually charge."
+ },
+ {
+  "es": "Costes fijos del día",
+  "en": "Daily fixed costs"
+ },
+ {
+  "es": "Importe (€/día)",
+  "en": "Amount (per day)"
+ },
+ {
+  "es": "Alquiler de plaza / canon del mercado",
+  "en": "Spot rental / market fee"
+ },
+ {
+  "es": "Seguros, licencias y tasas (prorrateo diario)",
+  "en": "Insurance, permits, and fees (daily allocation)"
+ },
+ {
+  "es": "Combustible del truck y generador",
+  "en": "Truck fuel and generator"
+ },
+ {
+  "es": "Personal (2 personas × jornada)",
+  "en": "Staff (2 people per shift)"
+ },
+ {
+  "es": "Amortización del truck y del equipamiento",
+  "en": "Truck and equipment depreciation"
+ },
+ {
+  "es": "Limpieza, consumibles y varios",
+  "en": "Cleaning, supplies, and miscellaneous"
+ },
+ {
+  "es": "COSTES FIJOS TOTALES (€/día)",
+  "en": "TOTAL FIXED COSTS (per day)"
+ },
+ {
+  "es": "Margen de contribución por unidad",
+  "en": "Contribution margin per unit"
+ },
+ {
+  "es": "PVP sin IVA (€)",
+  "en": "Menu price (pre-tax)"
+ },
+ {
+  "es": "Coste unitario (€)",
+  "en": "Unit cost"
+ },
+ {
+  "es": "Margen (€)",
+  "en": "Margin"
+ },
+ {
+  "es": "Mix de ventas",
+  "en": "Sales mix"
+ },
+ {
+  "es": "PVP MEDIO PONDERADO (€/ud)",
+  "en": "WEIGHTED AVERAGE MENU PRICE (per unit)"
+ },
+ {
+  "es": "MARGEN MEDIO PONDERADO (€/ud)",
+  "en": "WEIGHTED AVERAGE MARGIN (per unit)"
+ },
+ {
+  "es": "Resultado",
+  "en": "Result"
+ },
+ {
+  "es": "UNIDADES/DÍA PARA CUBRIR COSTES",
+  "en": "UNITS/DAY TO COVER COSTS"
+ },
+ {
+  "es": "FACTURACIÓN MÍNIMA sin IVA (€/día)",
+  "en": "MINIMUM REVENUE (pre-tax, per day)"
+ },
+ {
+  "es": "FACTURACIÓN MÍNIMA con IVA (€/día)",
+  "en": "MINIMUM REVENUE (incl. tax, per day)"
+ },
+ {
+  "es": "El «mix de ventas» es qué proporción de lo que vendes es cada producto: si un día vendes mitad de hamburguesas y el resto a partes iguales, deja 50 % / 25 % / 25 %. No tiene que sumar 100 %: la hoja pondera con lo que haya.",
+  "en": "The \"Sales mix\" is what share of what you sell is each product: if on a given day half your sales are burgers and the rest is split evenly, enter 50% / 25% / 25%. It doesn't have to add up to 100% — the sheet weights whatever numbers you enter."
+ },
+ {
+  "es": "Escandallo — Food Truck · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Food Truck · Recipe Costing Kit Pro"
+ },
+ {
+  "es": "📋 Control de Mermas por Categoría",
+  "en": "📋 Food Waste Tracker by Category"
+ },
+ {
+  "es": "▸ Esta plantilla mide el DESPERDICIO: los euros que se tiran (caducidad, mal estado, sobreproducción, porcionado) sobre los euros que se compran.",
+  "en": "▸ This template measures WASTE: the money thrown away (expired, spoiled, overproduction, over-portioning) over the money spent on purchases."
+ },
+ {
+  "es": "▸ NO mide la merma de despiece y limpieza. Esa va en las plantillas de escandallo (hoja «Mermas») y ya está cobrada dentro del precio del plato: registrarla otra vez aquí sería contarla dos veces.",
+  "en": "▸ It does NOT measure trim loss from butchering and prep. That belongs in the recipe cost card templates (the \"Trim Loss Factors\" tab) and is already priced into the dish cost — logging it again here would double-count it."
+ },
+ {
+  "es": "Cómo se rellena",
+  "en": "How to fill it in"
+ },
+ {
+  "es": "▸ Pestaña 'Mermas Semanal': escribe la fecha del lunes y, por categoría, la COMPRA de la semana y los EUROS desperdiciados.",
+  "en": "▸ The \"Weekly Waste Log\" tab: enter the Monday date and, by category, the week's PURCHASES and the AMOUNT wasted."
+ },
+ {
+  "es": "▸ El porcentaje, la diferencia en puntos y el estado salen solos.",
+  "en": "▸ The percentage, the point difference, and the status calculate themselves."
+ },
+ {
+  "es": "▸ Sólo se escriben las celdas VERDES. El resto son fórmulas.",
+  "en": "▸ Only fill in the GREEN cells. Everything else is a formula."
+ },
+ {
+  "es": "El semáforo",
+  "en": "The traffic-light system"
+ },
+ {
+  "es": "▸ Estado en VERDE («OK»): el desperdicio está en el objetivo o por debajo.",
+  "en": "▸ Status in GREEN (\"OK\"): waste is at or below target."
+ },
+ {
+  "es": "▸ Estado en ROJO («ALERTA»): te estás pasando. Empieza por ahí.",
+  "en": "▸ Status in RED (\"ALERT\"): you're over target. Start there."
+ },
+ {
+  "es": "▸ La columna «Desperdicio real (%)» lleva además una escala de color: de un vistazo se ve qué categoría se sale de la fila.",
+  "en": "▸ The \"Actual waste (%)\" column also has a color scale, so you can see at a glance which category is out of line."
+ },
+ {
+  "es": "Los objetivos (mín. / típico / máx.)",
+  "en": "The targets (min / typical / max)"
+ },
+ {
+  "es": "▸ Secos y congelados 2-3 % · carne y pescado 3-5 % · verdura y fruta 5-8 % · bebidas 1-2 % · pan y bollería 5-10 %.",
+  "en": "▸ Dry goods and frozen 2-3% · meat and fish 3-5% · produce 5-8% · beverages 1-2% · bread and pastry 5-10%.",
+  "cifra_derivada": true,
+  "nota": "Whitelist D12 — objetivos de desperdicio del 09; el agente de mercado los confirma o ajusta sobre mercado_en.json."
+ },
+ {
+  "es": "▸ El «objetivo típico» es la celda verde y es el que dispara la alerta: bájalo cuando tu casa mejore.",
+  "en": "▸ The \"Typical target\" is the green cell, and it's what triggers the alert — lower it as your operation improves."
+ },
+ {
+  "es": "▸ Mínimo y máximo son la horquilla del sector: sirven para saber si tu número es normal, bueno o malo.",
+  "en": "▸ Min and max are the industry range — they tell you whether your number is normal, good, or bad."
+ },
+ {
+  "es": "Pestaña «Evolución»",
+  "en": "The \"Trend\" tab"
+ },
+ {
+  "es": "▸ Doce semanas. La primera fila («Semana en curso») está ENLAZADA al TOTAL de «Mermas Semanal»: se mueve sola mientras rellenas la semana.",
+  "en": "▸ Twelve weeks. The first row (\"Current week\") is LINKED to the TOTAL of \"Weekly Waste Log\": it updates itself as you fill in the week."
+ },
+ {
+  "es": "▸ Cada lunes, ANTES de vaciar el registro semanal, copia su total en la fila de la semana que cierras y pega VALORES, no fórmulas. La primera vez pegarás encima del enlace, y así debe ser: si lo dejas vivo, la semana 1 pasará a enseñar los datos de la semana 2 y perderás el histórico.",
+  "en": "▸ Every Monday, BEFORE clearing the weekly log, copy its total into the row for the week you're closing and paste VALUES, not formulas. The first time, you'll paste over the link — and that's correct: if you leave it live, week 1 will end up showing week 2's data and you'll lose the history."
+ },
+ {
+  "es": "▸ El gráfico compara tu desperdicio con el objetivo global semana a semana: la tendencia es lo que decide, no la foto de un lunes.",
+  "en": "▸ The chart compares your waste against the overall target week by week: the trend is what matters, not any single Monday's snapshot."
+ },
+ {
+  "es": "▸ Las semanas todavía sin rellenar devuelven #N/A a propósito: es el único valor que el gráfico SALTA. Con una celda vacía o un texto, Excel dibujaría un cero y parecería que tu desperdicio se desplomó.",
+  "en": "▸ Weeks you haven't filled in yet return #N/A on purpose: it's the only value the chart SKIPS. With a blank cell or text, Excel would plot a zero and it would look like your waste had collapsed."
+ },
+ {
+  "es": "▸ Para tocar cualquier otra cosa: Revisar → Desproteger hoja. No pide contraseña.",
+  "en": "▸ To edit anything else: Review → Unprotect Sheet (Excel) or Data → Protect sheets and ranges (Google Sheets). No password is required."
+ },
+ {
+  "es": "Control de Mermas — Desperdicio semanal sobre compra",
+  "en": "Food Waste Tracker — Weekly Waste vs. Purchases"
+ },
+ {
+  "es": "Semana del:",
+  "en": "Week of:"
+ },
+ {
+  "es": "Objetivo mín.",
+  "en": "Min target"
+ },
+ {
+  "es": "Objetivo típico",
+  "en": "Typical target"
+ },
+ {
+  "es": "Objetivo máx.",
+  "en": "Max target"
+ },
+ {
+  "es": "Compra total (€)",
+  "en": "Total purchases"
+ },
+ {
+  "es": "Desperdicio real (€)",
+  "en": "Actual waste"
+ },
+ {
+  "es": "Desperdicio real (%)",
+  "en": "Actual waste (%)"
+ },
+ {
+  "es": "Diferencia (p.p.)",
+  "en": "Difference (pp)"
+ },
+ {
+  "es": "Notas",
+  "en": "Notes"
+ },
+ {
+  "es": "TOTAL",
+  "en": "TOTAL"
+ },
+ {
+  "es": "Aquí se registra el DESPERDICIO (caducidad, mal estado, sobreproducción, porcionado): euros tirados sobre euros comprados. La merma de despiece y limpieza NO va aquí — ya está cobrada dentro del coste del plato, en las plantillas de escandallo (hoja «Mermas»). Mezclarlas era el error de la v1.1: con un objetivo del 45 % un marisco podrido daba «OK».",
+  "en": "This is where you log WASTE (expired, spoiled, overproduction, over-portioning): money thrown away over money spent on purchases. Trim loss from butchering and prep does NOT go here — it's already priced into the dish cost, in the recipe cost card templates (the \"Trim Loss Factors\" tab). Mixing the two is a classic mistake: with a 45% target, spoiled shellfish would come back \"OK\"."
+ },
+ {
+  "es": "Objetivos de referencia sobre la compra: secos y congelados 2-3 % · carne y pescado 3-5 % · verdura y fruta 5-8 % · bebidas 1-2 % · pan y bollería 5-10 % (sobreproducción). El «objetivo típico» es la celda verde: ajústalo a tu casa; mínimo y máximo son la horquilla del sector.",
+  "en": "Reference targets on purchases: dry goods and frozen 2-3% · meat and fish 3-5% · produce 5-8% · beverages 1-2% · bread and pastry 5-10% (overproduction). The \"Typical target\" is the green cell — adjust it to your operation; min and max are the industry range.",
+  "cifra_derivada": true,
+  "nota": "Whitelist D12 — objetivos de desperdicio del 09; el agente de mercado los confirma o ajusta sobre mercado_en.json."
+ },
+ {
+  "es": "Evolución del desperdicio — 12 semanas",
+  "en": "Waste Trend — 12 Weeks"
+ },
+ {
+  "es": "La fila «Semana en curso» está ENLAZADA a «Mermas Semanal»: cambia sola según rellenas la semana. Cada lunes, ANTES de vaciar el registro semanal, copia su total (compra y desperdicio) en la fila de la semana que cierras y pega VALORES, no fórmulas — empezando por la Semana 1, cuyo enlace se sustituye al pegar encima. Si no lo haces, la semana 1 seguirá enseñando lo que haya en la hoja semanal y perderás el histórico, que es justo lo que esta pestaña existe para guardar.",
+  "en": "The \"Current week\" row is LINKED to \"Weekly Waste Log\": it changes automatically as you fill in the week. Every Monday, BEFORE clearing the weekly log, copy its total (purchases and waste) into the row for the week you're closing and paste VALUES, not formulas — starting with Week 1, whose link gets replaced the first time you paste over it. If you don't, week 1 will keep showing whatever is in the weekly sheet and you'll lose the history, which is exactly what this tab exists to keep."
+ },
+ {
+  "es": "Objetivo global de desperdicio (%)",
+  "en": "Overall waste target (%)"
+ },
+ {
+  "es": "Semana",
+  "en": "Week"
+ },
+ {
+  "es": "Desperdicio (€)",
+  "en": "Waste"
+ },
+ {
+  "es": "Desperdicio (%)",
+  "en": "Waste (%)"
+ },
+ {
+  "es": "Objetivo (%)",
+  "en": "Target (%)"
+ },
+ {
+  "es": "Semana en curso (enlazada a «Mermas Semanal» — pega encima el valor al cerrarla)",
+  "en": "Current week (linked to \"Weekly Waste Log\" — paste the value over it when you close it out)"
+ },
+ {
+  "es": "Semana 2",
+  "en": "Week 2"
+ },
+ {
+  "es": "Semana 3",
+  "en": "Week 3"
+ },
+ {
+  "es": "Semana 4",
+  "en": "Week 4"
+ },
+ {
+  "es": "Semana 5",
+  "en": "Week 5"
+ },
+ {
+  "es": "Semana 6",
+  "en": "Week 6"
+ },
+ {
+  "es": "Semana 7",
+  "en": "Week 7"
+ },
+ {
+  "es": "Semana 8",
+  "en": "Week 8"
+ },
+ {
+  "es": "Semana 9",
+  "en": "Week 9"
+ },
+ {
+  "es": "Semana 10",
+  "en": "Week 10"
+ },
+ {
+  "es": "Semana 11",
+  "en": "Week 11"
+ },
+ {
+  "es": "Semana 12",
+  "en": "Week 12"
+ },
+ {
+  "es": "Desperdicio semanal vs objetivo",
+  "en": "Weekly Waste vs. Target"
+ },
+ {
+  "es": "Control de Mermas por Categoría · Kit de Escandallos Pro",
+  "en": "Food Waste Tracker by Category · Recipe Costing Kit Pro"
+ }
+]

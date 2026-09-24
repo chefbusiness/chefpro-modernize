@@ -1,0 +1,358 @@
+[
+ {
+  "es": "📋 Escandallo — Cocktails y Bebidas",
+  "en": "📋 Recipe Cost Card — Cocktails & Drinks"
+ },
+ {
+  "es": "▸ Una pestaña por cóctel: gin tonic, mojito, margarita y Aperol spritz.",
+  "en": "▸ One tab per cocktail: Gin & Tonic, Mojito, Margarita, and Aperol Spritz."
+ },
+ {
+  "es": "▸ Las cantidades de destilados van en CL y el precio en €/L: el Factor (columna G) hace la conversión. 5 cl de una ginebra de 28 €/L son 1,40 € de producto (1,43 € en la hoja, porque esa fila lleva además un 2 % de merma de servicio), no 140 €.",
+  "en": "▸ Spirit quantities are in FL OZ and the price comes in per liter: the Factor (column G) does the conversion. 1.5 fl oz of a $30/liter gin is $1.33 of product ($1.36 on the sheet, because that row also carries a 2% spillage allowance), not $30.",
+  "cifra_derivada": true,
+  "nota": "Cifra derivada: unidad de uso pasa de CL a fl oz (D7) y el precio de ejemplo (28 €/L, 1,40 € / 1,43 €) es ilustrativo y provisional — el agente de mercado debe recalcular con un precio US real de ginebra por litro y una cantidad de 1.5 fl oz (pour estándar US, D7/§2.5)."
+ },
+ {
+  "es": "▸ Pestaña «Formatos de Compra»: convierte el precio de la BOTELLA de la factura (70 cl los destilados, 75 cl el vino y el espumoso) en el €/L que pide la columna «Precio/Ud». Es el error que más cuesta: una ginebra de 19,60 € la botella son 28 €/L.",
+  "en": "▸ \"Bottle Sizes\" tab: turns the invoice BOTTLE price (750 ml for spirits, wine, and sparkling wine) into the price-per-liter that the Price/Unit column needs. It's the costliest mistake: a $30 bottle of gin works out to $40/liter.",
+  "cifra_derivada": true,
+  "nota": "Cifra derivada: en EE. UU. destilados, vino y espumoso comparten el mismo tamaño de botella, 750 ml (D7/E3; el ES distingue 70 cl vs 75 cl) — y el precio de ejemplo (19,60 € / 28 €) es provisional; el agente de mercado debe fijar un precio US real de una botella de ginebra."
+ },
+ {
+  "es": "▸ El «Precio/Ud» de los destilados, el vino y el espumoso YA VIENE enlazado a «Formatos de Compra»: por eso esas celdas son azules y no verdes. Cambia el precio de la botella UNA vez allí y se actualizan todos los cócteles. Si quieres teclear el €/L a mano, desprotege la hoja y escribe encima (romperás el vínculo sólo en esa fila).",
+  "en": "▸ The Price/Unit for spirits, wine, and sparkling wine is already LINKED to \"Bottle Sizes\": that's why those cells are blue, not green. Change the bottle price ONCE there and every cocktail updates automatically. If you'd rather type the price per liter by hand, unprotect the sheet and overwrite it (you'll only break the link on that one row)."
+ },
+ {
+  "es": "▸ «Merma y hielo (%)» sustituye al coste de elaboración: el 5 % cubre el overpour de servir sin jigger y la dilución del hielo.",
+  "en": "▸ Spillage & Ice Allowance (%) replaces the Q-factor: the 5% covers the overpour of free-pouring without a jigger and the dilution from ice."
+ },
+ {
+  "es": "▸ Food cost objetivo de referencia en barra: 20-25 %.",
+  "en": "▸ Reference target pour cost at the bar: 18-24%.",
+  "cifra_derivada": true,
+  "nota": "Cifra derivada (benchmark D12): el bar se mide por pour cost, no food cost, y el rango US es 18-24% (D12), frente al 20-25% del ES — el agente de mercado confirma el rango y el nombre de la métrica antes de fijar el texto final."
+ },
+ {
+  "es": "▸ ¿Llevas tus precios en la plantilla 13 (Lista de Precios de Ingredientes)? Lleva su «Precio por unidad base» a «Precio/Ud (€)» con Pegado especial → Valores (en Excel, Ctrl+Alt+V y luego V) y pon esa misma unidad en «Ud. Compra». Un pegado normal arrastraría la fórmula: el precio y el coste de esa línea se quedarían en blanco sin avisar, y el coste del plato saldría más bajo. Los destilados, el vino y el espumoso no: su precio viene de la pestaña «Formatos de Compra».",
+  "en": "▸ Do you keep your prices in template 13 (Ingredient Price List)? Copy its Price per Base Unit into Price/Unit using Paste Special → Values (in Excel, Ctrl+Alt+V, then V) and set that same unit under Purchase Unit. A normal paste would drag the formula along: the price and cost for that line would go blank with no warning, and the dish cost would come out too low. Spirits, wine, and sparkling wine are the exception: their price comes from the \"Bottle Sizes\" tab."
+ },
+ {
+  "es": "▸ Cantidad: la que usas en el cóctel, EN LA UNIDAD DE USO.",
+  "en": "▸ Quantity: the amount you use in the cocktail, IN THE RECIPE UNIT."
+ },
+ {
+  "es": "▸ COSTE TOTAL DEL CÓCTEL: materia prima + coste de elaboración.",
+  "en": "▸ TOTAL COCKTAIL COST: ingredient cost + spillage & ice allowance cost."
+ },
+ {
+  "es": "▸ Nº de raciones: cuántas raciones salen de lo escandallado. Déjalo en 1 si es un cóctel individual.",
+  "en": "▸ Number of portions: how many portions the recipe cost card yields. Leave it at 1 for a single cocktail."
+ },
+ {
+  "es": "▸ Para tocar cualquier otra cosa —insertar filas, pegar la foto del cóctel, cambiar una fórmula—: Revisar → Desproteger hoja. No pide contraseña.",
+  "en": "▸ To do anything else — insert rows, paste in the cocktail photo, change a formula — go to Review → Unprotect Sheet. No password required."
+ },
+ {
+  "es": "▸ La foto del cóctel NO se puede arrastrar con la hoja protegida: primero Revisar → Desproteger hoja, y después Insertar → Imagen.",
+  "en": "▸ The cocktail photo can't be dragged in while the sheet is protected: first Review → Unprotect Sheet, then Insert → Pictures."
+ },
+ {
+  "es": "Del precio de la botella al precio por litro",
+  "en": "From bottle price to price per liter"
+ },
+ {
+  "es": "La columna «Precio/Ud (€)» del escandallo pide €/LITRO, pero la factura del proveedor viene por botella. Escribe aquí el formato y lo que pagas por botella, y copia el «Precio por litro» a la columna «Precio/Ud» de la pestaña del cóctel. Los destilados se compran en botella de 70 cl y el vino y el espumoso en 75 cl: teclear el precio de la botella tal cual infravalora el coste un 30 %.",
+  "en": "The Price/Unit column on the recipe cost card needs a PRICE PER LITER, but your supplier's invoice is priced per bottle. Enter the format and what you pay per bottle here, then copy Price per Liter into the Price/Unit column on the cocktail tab. Spirits, wine, and sparkling wine are all bought in 750 ml bottles: typing the bottle price as-is understates the cost by about a third.",
+  "cifra_derivada": true,
+  "nota": "Cifra derivada: en EE. UU. destilados y vino comparten tamaño de botella, 750 ml (D7/E3), así que el error real es 1/0,75−1 ≈ 33% — dejo «about a third» como provisional; el agente de mercado fija la cifra exacta («sobre el 33 %» u otra) sobre «tres 30%» del ES."
+ },
+ {
+  "es": "Formato de compra (cl)",
+  "en": "Bottle size (ml)"
+ },
+ {
+  "es": "Precio de la botella (€)",
+  "en": "Bottle price"
+ },
+ {
+  "es": "Precio por litro (€)",
+  "en": "Price per liter"
+ },
+ {
+  "es": "Dónde se usa",
+  "en": "Where it's used"
+ },
+ {
+  "es": "Ginebra premium",
+  "en": "Premium gin"
+ },
+ {
+  "es": "Ron blanco",
+  "en": "White rum"
+ },
+ {
+  "es": "Tequila reposado",
+  "en": "Reposado tequila"
+ },
+ {
+  "es": "Triple Sec / Cointreau",
+  "en": "Triple sec / Cointreau"
+ },
+ {
+  "es": "Aperol",
+  "en": "Aperol"
+ },
+ {
+  "es": "Prosecco",
+  "en": "Prosecco"
+ },
+ {
+  "es": "Vino blanco de copeo",
+  "en": "House white wine (by the glass)"
+ },
+ {
+  "es": "(añade tus referencias debajo)",
+  "en": "(add your own items below)"
+ },
+ {
+  "es": "El «Precio/Ud (€)» de las pestañas de cóctel está ENLAZADO a la columna «Precio por litro» de esta hoja (celdas azules): cambia aquí el precio de la botella y el escandallo se recalcula solo. Una ginebra de 19,60 € la botella de 70 cl son 28 €/L, que es lo que aparece en «Gin Tonic Premium».",
+  "en": "The Price/Unit on the cocktail tabs is LINKED to the Price per Liter column on this sheet (blue cells): change the bottle price here and the recipe cost card recalculates on its own. A $30 bottle of gin (750 ml) works out to $40/liter, which is what shows up on \"Gin & Tonic\".",
+  "cifra_derivada": true,
+  "nota": "Cifra derivada: precio de ejemplo (19,60 € / 28 €/L) provisional — el agente de mercado fija un precio US real de una botella de ginebra de 750 ml y recalcula el «precio por litro»."
+ },
+ {
+  "es": "Cantidades en la unidad de USO (cl los destilados) y precio en la de COMPRA (€/L). Las celdas verdes son las editables.",
+  "en": "Quantities are in the unit you USE (fl oz for spirits) and price is in the unit you BUY (price per liter). Green cells are editable."
+ },
+ {
+  "es": "📷 Foto del Cóctel",
+  "en": "📷 Cocktail Photo"
+ },
+ {
+  "es": "Tónica premium",
+  "en": "Premium tonic water"
+ },
+ {
+  "es": "Foto del cóctel terminado:\nRevisar → Desproteger hoja,\nluego Insertar → Imagen",
+  "en": "Photo of the finished cocktail:\nReview → Unprotect Sheet,\nthen Insert → Pictures"
+ },
+ {
+  "es": "Enebro (bayas)",
+  "en": "Juniper berries"
+ },
+ {
+  "es": "Hielo",
+  "en": "Ice"
+ },
+ {
+  "es": "Merma y hielo (%)",
+  "en": "Spillage & ice allowance (%)"
+ },
+ {
+  "es": "COSTE TOTAL DEL CÓCTEL",
+  "en": "TOTAL COCKTAIL COST"
+ },
+ {
+  "es": "Lima",
+  "en": "Lime"
+ },
+ {
+  "es": "Hierbabuena (1 rama ≈ 1/12 manojo)",
+  "en": "Mint (1 sprig ≈ 1/12 bunch)"
+ },
+ {
+  "es": "Soda/agua con gas",
+  "en": "Soda water / club soda"
+ },
+ {
+  "es": "Margarita Clásica",
+  "en": "Classic Margarita"
+ },
+ {
+  "es": "Lima (zumo)",
+  "en": "Lime (juice)"
+ },
+ {
+  "es": "Sal (para borde)",
+  "en": "Salt (for rim)"
+ },
+ {
+  "es": "Soda",
+  "en": "Soda water"
+ },
+ {
+  "es": "Naranja (rodaja)",
+  "en": "Orange (slice)"
+ },
+ {
+  "es": "Escandallo — Cocktails y Bebidas · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Cocktails & Drinks · Recipe Costing Kit Pro"
+ },
+ {
+  "es": "📋 Escandallo — Pastelería y Repostería",
+  "en": "📋 Recipe Cost Card — Pastry & Bakery"
+ },
+ {
+  "es": "▸ Una pestaña por elaboración: tarta de chocolate (12 raciones), croissants (20 unidades) y macarons (30 unidades).",
+  "en": "▸ One tab per item: chocolate cake (12 servings), croissants (20 pieces), and macarons (30 pieces)."
+ },
+ {
+  "es": "▸ El escandallo es de la TANDA COMPLETA. «Rendimiento (uds por tanda)» reparte el coste: «COSTE POR UNIDAD» y «PVP POR UNIDAD» son los que van a la vitrina, no el total de la tanda.",
+  "en": "▸ The recipe cost card covers the WHOLE BATCH. Yield (units per batch) spreads the cost across it: COST PER UNIT and MENU PRICE PER UNIT are the numbers that go on the display case, not the total for the batch."
+ },
+ {
+  "es": "▸ Mermas propias de obrador ya cargadas: 12 % en el chocolate de cobertura (pérdida de temperado) y 8 % en las harinas (evaporación de horneado).",
+  "en": "▸ Kitchen trim loss already built in: 5% on chocolate melted into a batter or ganache (bowl and scraping loss; use 10-12% for couverture you temper) and 8% on flour (dusting, bench flour and sifting)."
+ },
+ {
+  "es": "▸ El colorante se escandalla por bote: 2 g de un bote de 50 g = 0,04 botes, no 0,1 «unidades».",
+  "en": "▸ Food coloring is costed by the jar: 2 g from a 50 g jar = 0.04 jars, not 0.1 units."
+ },
+ {
+  "es": "▸ Food cost objetivo de referencia en pastelería: 20-30 %.",
+  "en": "▸ Reference target food cost for pastry & bakery: 25-35%.",
+  "cifra_derivada": true,
+  "nota": "Cifra derivada (benchmark D12): pastry & bakery = 25-35% en D12, frente al 20-30% del ES."
+ },
+ {
+  "es": "▸ Cantidad: la que usas en la elaboración, EN LA UNIDAD DE USO.",
+  "en": "▸ Quantity: the amount you use in the recipe, IN THE RECIPE UNIT."
+ },
+ {
+  "es": "▸ Coste elaboración (%): recargo sobre la materia prima para cubrir energía del horno, envasado y pérdidas de obrador que no se escandallan línea a línea. Viene al 10 %; ponlo a 0 % si prefieres imputar esos costes aparte.",
+  "en": "▸ Q-factor (%): a markup on ingredient cost to cover packaging and small kitchen losses that aren't costed line by line. It defaults to 10%; set it to 0% if you'd rather account for those costs separately."
+ },
+ {
+  "es": "▸ COSTE TOTAL DE LA TANDA: lo que cuesta la receta completa, no una pieza. Todo el escandallo está en cantidades de TANDA.",
+  "en": "▸ TOTAL BATCH COST: what the full recipe costs, not a single piece. The whole recipe cost card is in BATCH quantities."
+ },
+ {
+  "es": "▸ Rendimiento (uds por tanda): cuántas piezas salen de la receta completa (12 tartas, 20 croissants, 30 macarons…). Es la celda verde que reparte el coste.",
+  "en": "▸ Yield (units per batch): how many pieces the full recipe makes (12 cakes, 20 croissants, 30 macarons…). It's the green cell that spreads the cost."
+ },
+ {
+  "es": "▸ COSTE POR UNIDAD: coste de la tanda ÷ rendimiento. Es lo que te cuesta la pieza que pones en la vitrina.",
+  "en": "▸ COST PER UNIT: batch cost ÷ yield. It's what the piece you put in the display case costs you."
+ },
+ {
+  "es": "▸ Food Cost objetivo (%): el que quieres conseguir. PVP POR UNIDAD (sin IVA) = coste por unidad ÷ food cost objetivo.",
+  "en": "▸ Target food cost (%): the one you want to hit. MENU PRICE PER UNIT (pre-tax) = cost per unit ÷ target food cost."
+ },
+ {
+  "es": "▸ PVP actual en carta (sin IVA): lo que cobras HOY por PIEZA. Déjalo vacío si todavía no lo tienes.",
+  "en": "▸ Current menu price (pre-tax / ex VAT): what you charge TODAY per PIECE. Leave it blank if you don't have one yet."
+ },
+ {
+  "es": "▸ FOOD COST REAL (%): coste por unidad ÷ PVP actual. Se pone en rojo en cuanto supera tu objetivo.",
+  "en": "▸ ACTUAL FOOD COST (%): cost per unit ÷ current menu price. It turns red as soon as it goes over your target."
+ },
+ {
+  "es": "▸ Para tocar cualquier otra cosa —insertar filas, pegar la foto de la elaboración, cambiar una fórmula—: Revisar → Desproteger hoja. No pide contraseña.",
+  "en": "▸ To do anything else — insert rows, paste in the product photo, change a formula — go to Review → Unprotect Sheet. No password required."
+ },
+ {
+  "es": "▸ La foto de la elaboración NO se puede arrastrar con la hoja protegida: primero Revisar → Desproteger hoja, y después Insertar → Imagen.",
+  "en": "▸ The product photo can't be dragged in while the sheet is protected: first Review → Unprotect Sheet, then Insert → Pictures."
+ },
+ {
+  "es": "Tarta de Chocolate 70% — 12 raciones",
+  "en": "70% Chocolate Cake — 12 servings"
+ },
+ {
+  "es": "El escandallo es de la TANDA COMPLETA: el «Rendimiento» reparte el coste entre las unidades que salen. Las celdas verdes son las editables.",
+  "en": "The recipe cost card is for the WHOLE BATCH: Yield spreads the cost across the units it makes. Green cells are editable."
+ },
+ {
+  "es": "📷 Foto de la Elaboración",
+  "en": "📷 Product Photo"
+ },
+ {
+  "es": "Huevos (unidades)",
+  "en": "Eggs (each)"
+ },
+ {
+  "es": "Foto de la elaboración terminada:\nRevisar → Desproteger hoja,\nluego Insertar → Imagen",
+  "en": "Photo of the finished product:\nReview → Unprotect Sheet,\nthen Insert → Pictures"
+ },
+ {
+  "es": "Cacao en polvo",
+  "en": "Cocoa powder"
+ },
+ {
+  "es": "Sal",
+  "en": "Salt"
+ },
+ {
+  "es": "COSTE TOTAL DE LA TANDA",
+  "en": "TOTAL BATCH COST"
+ },
+ {
+  "es": "Rendimiento (uds por tanda)",
+  "en": "Yield (units per batch)"
+ },
+ {
+  "es": "COSTE POR UNIDAD",
+  "en": "COST PER UNIT"
+ },
+ {
+  "es": "PVP POR UNIDAD (sin IVA)",
+  "en": "MENU PRICE PER UNIT (pre-tax)"
+ },
+ {
+  "es": "PVP POR UNIDAD (con IVA)",
+  "en": "MENU PRICE PER UNIT (incl. tax)"
+ },
+ {
+  "es": "Croissants de Mantequilla — 20 unidades",
+  "en": "Butter Croissants — 20 pieces"
+ },
+ {
+  "es": "Harina de fuerza",
+  "en": "Bread flour"
+ },
+ {
+  "es": "Mantequilla seca (82% MG)",
+  "en": "European-style butter (82% butterfat)"
+ },
+ {
+  "es": "Levadura fresca",
+  "en": "Fresh yeast"
+ },
+ {
+  "es": "Huevo (para pintar)",
+  "en": "Egg (for egg wash)"
+ },
+ {
+  "es": "Macarons de Frambuesa — 30 unidades",
+  "en": "Raspberry Macarons — 30 pieces (wholesale to cafés)"
+ },
+ {
+  "es": "Harina de almendra",
+  "en": "Almond flour"
+ },
+ {
+  "es": "Azúcar glas",
+  "en": "Powdered sugar"
+ },
+ {
+  "es": "Claras de huevo",
+  "en": "Egg whites"
+ },
+ {
+  "es": "Frambuesa congelada",
+  "en": "Frozen raspberries"
+ },
+ {
+  "es": "Chocolate blanco",
+  "en": "White chocolate"
+ },
+ {
+  "es": "Colorante rojo (bote 50 g · 2 g/tanda)",
+  "en": "Red food coloring (50 g jar · 2 g/batch)"
+ },
+ {
+  "es": "Escandallo — Pastelería y Repostería · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Pastry & Bakery · Recipe Costing Kit Pro"
+ }
+]

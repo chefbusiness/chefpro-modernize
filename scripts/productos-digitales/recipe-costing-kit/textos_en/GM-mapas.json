@@ -1,0 +1,1166 @@
+[
+ {
+  "es": "Instrucciones",
+  "en": "Instructions"
+ },
+ {
+  "es": "Escandallo",
+  "en": "Recipe Cost Card"
+ },
+ {
+  "es": "Conversiones",
+  "en": "Conversions"
+ },
+ {
+  "es": "Mermas",
+  "en": "Trim Loss Factors"
+ },
+ {
+  "es": "Versión 2.1 · septiembre 2026 · aichef.pro/kit-escandallos · info@aichef.pro",
+  "en": "Version 2.1 · [MONTH] 2026 · aichef.pro/en/digital-products/recipe-costing-kit · info@aichef.pro",
+  "cifra_derivada": true,
+  "nota": "D14: aplicar_en.py resuelve [MONTH] al publicar (mes de publicación del EN, no tiene por qué coincidir con el de la v2.1 ES)."
+ },
+ {
+  "es": "Carne roja",
+  "en": "Beef & red meat"
+ },
+ {
+  "es": "kg",
+  "en": "kg"
+ },
+ {
+  "es": "Verdura raíz",
+  "en": "Root vegetables"
+ },
+ {
+  "es": "Verdura hoja",
+  "en": "Leafy greens"
+ },
+ {
+  "es": "Lácteos",
+  "en": "Dairy"
+ },
+ {
+  "es": "Bebidas/licores",
+  "en": "Beverages & spirits"
+ },
+ {
+  "es": "L",
+  "en": "L"
+ },
+ {
+  "es": "Salsas/condimentos",
+  "en": "Sauces & condiments"
+ },
+ {
+  "es": "Aceites/grasas",
+  "en": "Oils & fats"
+ },
+ {
+  "es": "Secos/granos",
+  "en": "Dry goods & grains"
+ },
+ {
+  "es": "Especias/hierbas",
+  "en": "Herbs & spices"
+ },
+ {
+  "es": "g",
+  "en": "g"
+ },
+ {
+  "es": "ml",
+  "en": "ml"
+ },
+ {
+  "es": "cl",
+  "en": "cl"
+ },
+ {
+  "es": "ud",
+  "en": "each"
+ },
+ {
+  "es": "docena",
+  "en": "dozen"
+ },
+ {
+  "es": "manojo",
+  "en": "bunch"
+ },
+ {
+  "es": "sobre",
+  "en": "packet"
+ },
+ {
+  "es": "lata",
+  "en": "can"
+ },
+ {
+  "es": "botella",
+  "en": "bottle"
+ },
+ {
+  "es": "kg→kg",
+  "en": "kg→kg"
+ },
+ {
+  "es": "misma unidad",
+  "en": "same unit"
+ },
+ {
+  "es": "kg→g",
+  "en": "kg→g"
+ },
+ {
+  "es": "1 kg = 1.000 g",
+  "en": "1 kg = 1,000 g"
+ },
+ {
+  "es": "g→g",
+  "en": "g→g"
+ },
+ {
+  "es": "g→kg",
+  "en": "g→kg"
+ },
+ {
+  "es": "1 g = 0,001 kg",
+  "en": "1 g = 0.001 kg"
+ },
+ {
+  "es": "L→L",
+  "en": "L→L"
+ },
+ {
+  "es": "L→ml",
+  "en": "L→ml"
+ },
+ {
+  "es": "1 L = 1.000 ml",
+  "en": "1 L = 1,000 ml"
+ },
+ {
+  "es": "L→cl",
+  "en": "L→cl"
+ },
+ {
+  "es": "1 L = 100 cl",
+  "en": "1 L = 100 cl"
+ },
+ {
+  "es": "ml→ml",
+  "en": "ml→ml"
+ },
+ {
+  "es": "ml→L",
+  "en": "ml→L"
+ },
+ {
+  "es": "1 ml = 0,001 L",
+  "en": "1 ml = 0.001 L"
+ },
+ {
+  "es": "ml→cl",
+  "en": "ml→cl"
+ },
+ {
+  "es": "1 ml = 0,1 cl",
+  "en": "1 ml = 0.1 cl"
+ },
+ {
+  "es": "cl→cl",
+  "en": "cl→cl"
+ },
+ {
+  "es": "cl→ml",
+  "en": "cl→ml"
+ },
+ {
+  "es": "1 cl = 10 ml",
+  "en": "1 cl = 10 ml"
+ },
+ {
+  "es": "cl→L",
+  "en": "cl→L"
+ },
+ {
+  "es": "1 cl = 0,01 L",
+  "en": "1 cl = 0.01 L"
+ },
+ {
+  "es": "ud→ud",
+  "en": "each→each"
+ },
+ {
+  "es": "docena→ud",
+  "en": "dozen→each"
+ },
+ {
+  "es": "1 docena = 12 ud",
+  "en": "1 dozen = 12 each"
+ },
+ {
+  "es": "docena→docena",
+  "en": "dozen→dozen"
+ },
+ {
+  "es": "ud→docena",
+  "en": "each→dozen"
+ },
+ {
+  "es": "1 ud = 1/12 docena",
+  "en": "1 each = 1/12 dozen"
+ },
+ {
+  "es": "manojo→manojo",
+  "en": "bunch→bunch"
+ },
+ {
+  "es": "manojo→ud",
+  "en": "bunch→each"
+ },
+ {
+  "es": "el manojo se compra y se usa como unidad",
+  "en": "same unit (bought and used as one bunch)",
+  "nota": "mapas.SUELTAS: texto exacto de mapas.conversions() para la identidad de bunch."
+ },
+ {
+  "es": "sobre→sobre",
+  "en": "packet→packet"
+ },
+ {
+  "es": "sobre→ud",
+  "en": "packet→each"
+ },
+ {
+  "es": "el sobre se compra y se usa como unidad",
+  "en": "same unit (bought and used as one packet)",
+  "nota": "mapas.SUELTAS: texto exacto de mapas.conversions() para la identidad de packet."
+ },
+ {
+  "es": "lata→lata",
+  "en": "can→can"
+ },
+ {
+  "es": "lata→ud",
+  "en": "can→each",
+  "nota": "mapas.ENVASES: nota exacta \"one can counted as one unit\"."
+ },
+ {
+  "es": "la lata se compra y se usa como unidad",
+  "en": "same unit (bought and used as one can)",
+  "nota": "mapas.ENVASES: texto exacto de mapas.conversions() para la identidad de can."
+ },
+ {
+  "es": "botella→botella",
+  "en": "bottle→bottle"
+ },
+ {
+  "es": "botella→ud",
+  "en": "bottle→each",
+  "nota": "mapas.ENVASES: nota exacta \"one bottle counted as one unit\"."
+ },
+ {
+  "es": "la botella se compra y se usa como unidad",
+  "en": "same unit (bought and used as one bottle)",
+  "nota": "mapas.ENVASES: texto exacto de mapas.conversions() para la identidad de bottle."
+ },
+ {
+  "es": "botella→cl",
+  "en": "bottle→cl",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl."
+ },
+ {
+  "es": "botella de 70 cl (destilados). Vino: cambia el 70 por 75",
+  "en": "From the bottle size cell (in ml) — edit the size there, not here.",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl. ES: ancla 70 cl (destilados) / 75 cl (vino)."
+ },
+ {
+  "es": "botella→ml",
+  "en": "bottle→ml",
+  "cifra_derivada": true,
+  "nota": "D7/E3: en EN el ancla de tamaño pasa de cl (ES) a ml — ver la fila →ml de bottle en mapas.ENVASES. La cifra la fija mapas.py, no se traduce a mano."
+ },
+ {
+  "es": "botella de 70 cl = 700 ml",
+  "en": "bottle size in ml: 750 (US wine & spirits). UK spirits: type 700 here — edit only this cell",
+  "cifra_derivada": true,
+  "nota": "Texto EXACTO de mapas.ENVASES[\"bottle\"][\"nota_tam\"] (D7/E3: 750 ml US, no 700)."
+ },
+ {
+  "es": "botella→L",
+  "en": "bottle→L",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl."
+ },
+ {
+  "es": "botella de 70 cl = 0,7 L",
+  "en": "From the bottle size cell (in ml) — edit the size there, not here.",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl."
+ },
+ {
+  "es": "lata→cl",
+  "en": "can→cl",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl."
+ },
+ {
+  "es": "lata de 33 cl",
+  "en": "From the can size cell (in ml) — edit the size there, not here.",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl. ES: ancla 33 cl."
+ },
+ {
+  "es": "lata→ml",
+  "en": "can→ml",
+  "cifra_derivada": true,
+  "nota": "D7/E3: en EN el ancla de tamaño pasa de cl (ES) a ml — ver la fila →ml de can en mapas.ENVASES. La cifra la fija mapas.py, no se traduce a mano."
+ },
+ {
+  "es": "lata de 33 cl = 330 ml",
+  "en": "beverage can 12 fl oz = 355 ml (UK: 330). Edit only this cell. For #10 food cans buy in oz",
+  "cifra_derivada": true,
+  "nota": "Texto EXACTO de mapas.ENVASES[\"can\"][\"nota_tam\"] (D7/E3: 355 ml US; el 330 ml de la ES es justo la cifra UK que cita la nota)."
+ },
+ {
+  "es": "lata→L",
+  "en": "can→L",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl."
+ },
+ {
+  "es": "lata de 33 cl = 0,33 L",
+  "en": "From the can size cell (in ml) — edit the size there, not here.",
+  "cifra_derivada": true,
+  "nota": "D7/E3: fila derivada de la celda de tamaño en ml (mapas.conversions() la calcula con una fórmula); en ES esta fila salía del ancla en cl."
+ },
+ {
+  "es": "manojo→g",
+  "en": "bunch→g",
+  "nota": "D7(4): en EN, bunch/packet no llevan peso por defecto — esta fila no existe en la Conversions EN (mapas.SUELTAS). Traducción solo de referencia."
+ },
+ {
+  "es": "manojo de hierbas ≈ 30 g",
+  "en": "herb bunch ≈ 30 g",
+  "nota": "D7(4): en EN, bunch/packet no llevan peso por defecto — esta fila no existe en la Conversions EN (mapas.SUELTAS). Traducción solo de referencia."
+ },
+ {
+  "es": "sobre→g",
+  "en": "packet→g",
+  "nota": "D7(4): en EN, bunch/packet no llevan peso por defecto — esta fila no existe en la Conversions EN (mapas.SUELTAS). Traducción solo de referencia."
+ },
+ {
+  "es": "sobre ≈ 10 g",
+  "en": "packet ≈ 10 g",
+  "nota": "D7(4): en EN, bunch/packet no llevan peso por defecto — esta fila no existe en la Conversions EN (mapas.SUELTAS). Traducción solo de referencia."
+ },
+ {
+  "es": "Aves",
+  "en": "Poultry"
+ },
+ {
+  "es": "Pescado",
+  "en": "Fish"
+ },
+ {
+  "es": "Marisco",
+  "en": "Shellfish"
+ },
+ {
+  "es": "Verdura fruto",
+  "en": "Fruiting vegetables"
+ },
+ {
+  "es": "Fruta",
+  "en": "Fruit"
+ },
+ {
+  "es": "Congelados",
+  "en": "Frozen"
+ },
+ {
+  "es": "Pan/bollería",
+  "en": "Bread & pastry"
+ },
+ {
+  "es": "Huevos",
+  "en": "Eggs"
+ },
+ {
+  "es": "Chocolate/cacao",
+  "en": "Chocolate & cocoa"
+ },
+ {
+  "es": "Setas/hongos",
+  "en": "Mushrooms"
+ },
+ {
+  "es": "Conservas/encurtidos",
+  "en": "Canned & pickled"
+ },
+ {
+  "es": "Pasta/arroz",
+  "en": "Pasta & rice"
+ },
+ {
+  "es": "Kit de Escandallos Pro · v2.1",
+  "en": "Recipe Costing Kit Pro · v2.1",
+  "nota": "D14/D2: subject de docProps, nombre ya decidido, no lo toca el agente de mercado."
+ },
+ {
+  "es": "aichef.pro/kit-escandallos",
+  "en": "aichef.pro/en/digital-products/recipe-costing-kit",
+  "nota": "D14/D1: slug ya decidido en la SPEC, no depende del mercado."
+ },
+ {
+  "es": "1. Aperitivo",
+  "en": "1. Amuse-Bouche"
+ },
+ {
+  "es": "2. Entrante",
+  "en": "2. Starter"
+ },
+ {
+  "es": "3. Pescado",
+  "en": "3. Fish"
+ },
+ {
+  "es": "4. Carne",
+  "en": "4. Meat"
+ },
+ {
+  "es": "5. Postre",
+  "en": "5. Dessert"
+ },
+ {
+  "es": "6. Pase",
+  "en": "6. Course"
+ },
+ {
+  "es": "7. Pase",
+  "en": "7. Course"
+ },
+ {
+  "es": "8. Pase",
+  "en": "8. Course"
+ },
+ {
+  "es": "9. Pase",
+  "en": "9. Course"
+ },
+ {
+  "es": "Resumen",
+  "en": "Summary"
+ },
+ {
+  "es": "Primer Plato",
+  "en": "Starter"
+ },
+ {
+  "es": "Segundo Plato",
+  "en": "Main"
+ },
+ {
+  "es": "Postre",
+  "en": "Dessert"
+ },
+ {
+  "es": "Resumen Menú",
+  "en": "Menu Summary"
+ },
+ {
+  "es": "Rotación Semanal",
+  "en": "Weekly Rotation"
+ },
+ {
+  "es": "Formatos de Compra",
+  "en": "Bottle Sizes"
+ },
+ {
+  "es": "Gin Tonic Premium",
+  "en": "Gin & Tonic"
+ },
+ {
+  "es": "Mojito Clásico",
+  "en": "Mojito"
+ },
+ {
+  "es": "Margarita",
+  "en": "Margarita"
+ },
+ {
+  "es": "Aperol Spritz",
+  "en": "Aperol Spritz"
+ },
+ {
+  "es": "Tarta Chocolate",
+  "en": "Chocolate Cake"
+ },
+ {
+  "es": "Croissants",
+  "en": "Croissants"
+ },
+ {
+  "es": "Macarons",
+  "en": "Macarons"
+ },
+ {
+  "es": "Cocktail (por persona)",
+  "en": "Reception (per guest)"
+ },
+ {
+  "es": "Presupuesto",
+  "en": "Event Quote"
+ },
+ {
+  "es": "Checklist Evento",
+  "en": "Event Checklist"
+ },
+ {
+  "es": "Presupuesto Cliente",
+  "en": "Client Proposal"
+ },
+ {
+  "es": "Tostada Aguacate",
+  "en": "Avocado Toast"
+ },
+ {
+  "es": "Açaí Bowl",
+  "en": "Açaí Bowl"
+ },
+ {
+  "es": "Eggs Benedict",
+  "en": "Eggs Benedict"
+ },
+ {
+  "es": "Carrot Cake",
+  "en": "Carrot Cake"
+ },
+ {
+  "es": "Smash Burger",
+  "en": "Smash Burger"
+ },
+ {
+  "es": "Loaded Fries",
+  "en": "Loaded Fries"
+ },
+ {
+  "es": "Pulled Pork Sándwich",
+  "en": "Pulled Pork Sandwich"
+ },
+ {
+  "es": "Punto de Equilibrio",
+  "en": "Break-Even"
+ },
+ {
+  "es": "Mermas Semanal",
+  "en": "Weekly Waste Log"
+ },
+ {
+  "es": "Evolución",
+  "en": "Trend"
+ },
+ {
+  "es": "Calculadora PVP",
+  "en": "Menu Price Calculator"
+ },
+ {
+  "es": "Dashboard",
+  "en": "Dashboard"
+ },
+ {
+  "es": "Test de despiece",
+  "en": "Butcher Yield Test"
+ },
+ {
+  "es": "Test de cocción",
+  "en": "Cooking Loss Test"
+ },
+ {
+  "es": "Útil",
+  "en": "Usable"
+ },
+ {
+  "es": "Subproducto",
+  "en": "By-product"
+ },
+ {
+  "es": "Desecho",
+  "en": "Trim (no value)"
+ },
+ {
+  "es": "Lista de precios",
+  "en": "Price List"
+ },
+ {
+  "es": "Bandeja 5 kg",
+  "en": "Tray, 5 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 08 «Smash Burger».",
+  "en": "Used in: 08 \"Smash Burger\"."
+ },
+ {
+  "es": "Al peso (precio por kg)",
+  "en": "By weight (price per kg)"
+ },
+ {
+  "es": "Se usa en: 02 «4. Carne».",
+  "en": "Used in: 02 \"4. Meat\"."
+ },
+ {
+  "es": "Sobre 100 g",
+  "en": "Packet, 100 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 06 «Cocktail (por persona)».",
+  "en": "Used in: 06 \"Reception (per guest)\"."
+ },
+ {
+  "es": "Se usa en: 08 «Loaded Fries», «Pulled Pork Sándwich».",
+  "en": "Used in: 08 \"Loaded Fries\", \"Pulled Pork Sandwich\"."
+ },
+ {
+  "es": "Se usa en: 01 «Escandallo». Ilustrativo: el precio anterior es de ejemplo, para que veas cómo funciona la alerta. Bórralo.",
+  "en": "Used in: 01 \"Recipe Cost Card\". Sample data: the previous price is just an example, so you can see how the alert works. Delete it."
+ },
+ {
+  "es": "Caja 5 kg",
+  "en": "Case, 5 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 03 «Segundo Plato».",
+  "en": "Used in: 03 \"Main\"."
+ },
+ {
+  "es": "Se usa en: 02 «1. Aperitivo».",
+  "en": "Used in: 02 \"1. Amuse-Bouche\"."
+ },
+ {
+  "es": "Se usa en: 02 «3. Pescado».",
+  "en": "Used in: 02 \"3. Fish\"."
+ },
+ {
+  "es": "Se usa en: 06 «Cocktail (por persona)» · 07 «Eggs Benedict».",
+  "en": "Used in: 06 \"Reception (per guest)\" · 07 \"Eggs Benedict\"."
+ },
+ {
+  "es": "Caja 2 kg",
+  "en": "Case, 2 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 02 «2. Entrante».",
+  "en": "Used in: 02 \"2. Starter\"."
+ },
+ {
+  "es": "Se usa en: 08 «Pulled Pork Sándwich».",
+  "en": "Used in: 08 \"Pulled Pork Sandwich\"."
+ },
+ {
+  "es": "Se usa en: 01 «Escandallo».",
+  "en": "Used in: 01 \"Recipe Cost Card\"."
+ },
+ {
+  "es": "Se usa en: 03 «Primer Plato».",
+  "en": "Used in: 03 \"Starter\"."
+ },
+ {
+  "es": "Microgreens",
+  "en": "Microgreens"
+ },
+ {
+  "es": "Bandeja 50 g",
+  "en": "Tray, 50 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Saco 10 kg",
+  "en": "Sack, 10 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Malla 5 kg",
+  "en": "Mesh bag, 5 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Saco 25 kg",
+  "en": "Sack, 25 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 08 «Loaded Fries».",
+  "en": "Used in: 08 \"Loaded Fries\"."
+ },
+ {
+  "es": "Se usa en: 02 «4. Carne» · 07 «Carrot Cake». La plantilla 07 lo usa a 1,40 €/kg (otro proveedor).",
+  "en": "Used in: 02 \"4. Meat\" · 07 \"Carrot Cake\". Template 07 uses a different supplier ([$ price TBD for the US market]/kg).",
+  "cifra_derivada": true,
+  "nota": "ES: 1,40 €/kg (plantilla 07, otro proveedor)."
+ },
+ {
+  "es": "Se usa en: 03 «Primer Plato» · 04 «Gin Tonic Premium».",
+  "en": "Used in: 03 \"Starter\" · 04 \"Gin & Tonic\"."
+ },
+ {
+  "es": "Caja 6 kg",
+  "en": "Case, 6 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Caja 12 tarrinas de 250 g",
+  "en": "Case of 12 tubs, 250 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 07 «Tostada Aguacate».",
+  "en": "Used in: 07 \"Avocado Toast\"."
+ },
+ {
+  "es": "Caja 20 piezas",
+  "en": "Case, 20 pieces",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 02 «1. Aperitivo» · 07 «Tostada Aguacate».",
+  "en": "Used in: 02 \"1. Amuse-Bouche\" · 07 \"Avocado Toast\"."
+ },
+ {
+  "es": "Caja 12 tarrinas de 125 g",
+  "en": "Case of 12 tubs, 125 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 07 «Açaí Bowl».",
+  "en": "Used in: 07 \"Açaí Bowl\"."
+ },
+ {
+  "es": "Se usa en: 02 «5. Postre».",
+  "en": "Used in: 02 \"5. Dessert\"."
+ },
+ {
+  "es": "Caja 4 kg",
+  "en": "Case, 4 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 04 «Mojito Clásico», «Margarita».",
+  "en": "Used in: 04 \"Mojito\", \"Margarita\"."
+ },
+ {
+  "es": "Se usa en: 04 «Gin Tonic Premium» · 07 «Eggs Benedict».",
+  "en": "Used in: 04 \"Gin & Tonic\" · 07 \"Eggs Benedict\"."
+ },
+ {
+  "es": "Naranja",
+  "en": "Orange"
+ },
+ {
+  "es": "Caja 10 kg",
+  "en": "Case, 10 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 04 «Aperol Spritz».",
+  "en": "Used in: 04 \"Aperol Spritz\"."
+ },
+ {
+  "es": "Caja 6 briks de 1 L",
+  "en": "Case of 6 cartons, 1 L",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 03 «Postre» · 05 «Croissants».",
+  "en": "Used in: 03 \"Dessert\" · 05 \"Croissants\"."
+ },
+ {
+  "es": "Se usa en: 01 «Escandallo» · 02 «2. Entrante», «3. Pescado» · 05 «Tarta Chocolate» · 07 «Eggs Benedict», «Carrot Cake». La plantilla 07 lo usa a 10,50 €/kg (otro proveedor).",
+  "en": "Used in: 01 \"Recipe Cost Card\" · 02 \"2. Starter\", \"3. Fish\" · 05 \"Chocolate Cake\" · 07 \"Eggs Benedict\", \"Carrot Cake\". Template 07 uses a different supplier ([$ price TBD for the US market]/kg).",
+  "cifra_derivada": true,
+  "nota": "ES: 10,50 €/kg (plantilla 07, otro proveedor)."
+ },
+ {
+  "es": "Placa 2 kg",
+  "en": "Slab, 2 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 05 «Croissants».",
+  "en": "Used in: 05 \"Croissants\"."
+ },
+ {
+  "es": "Brik 1 L",
+  "en": "Carton, 1 L",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 02 «2. Entrante», «5. Postre» · 05 «Tarta Chocolate».",
+  "en": "Used in: 02 \"2. Starter\", \"5. Dessert\" · 05 \"Chocolate Cake\"."
+ },
+ {
+  "es": "Paquete 84 lonchas",
+  "en": "Pack, 84 slices",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Bolsa 2 kg",
+  "en": "Bag, 2 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 07 «Carrot Cake».",
+  "en": "Used in: 07 \"Carrot Cake\"."
+ },
+ {
+  "es": "Tarrina 2 kg",
+  "en": "Tub, 2 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Fardo 10 paquetes de 1 kg",
+  "en": "Bundle of 10 packs, 1 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 02 «5. Postre» · 03 «Postre» · 04 «Mojito Clásico» · 05 «Tarta Chocolate», «Croissants», «Macarons».",
+  "en": "Used in: 02 \"5. Dessert\" · 03 \"Dessert\" · 04 \"Mojito\" · 05 \"Chocolate Cake\", \"Croissants\", \"Macarons\"."
+ },
+ {
+  "es": "Se usa en: 05 «Macarons» · 07 «Carrot Cake». La plantilla 07 lo usa a 2,80 €/kg (otro proveedor).",
+  "en": "Used in: 05 \"Macarons\" · 07 \"Carrot Cake\". Template 07 uses a different supplier ([$ price TBD for the US market]/kg).",
+  "cifra_derivada": true,
+  "nota": "ES: 2,80 €/kg (plantilla 07, otro proveedor)."
+ },
+ {
+  "es": "Colorante rojo",
+  "en": "Red food coloring"
+ },
+ {
+  "es": "Bote 50 g",
+  "en": "Jar, 50 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 05 «Macarons».",
+  "en": "Used in: 05 \"Macarons\"."
+ },
+ {
+  "es": "Bote 250 g",
+  "en": "Jar, 250 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 05 «Tarta Chocolate» · 07 «Carrot Cake». La plantilla 07 lo usa a 1,20 €/kg (otro proveedor).",
+  "en": "Used in: 05 \"Chocolate Cake\" · 07 \"Carrot Cake\". Template 07 uses a different supplier ([$ price TBD for the US market]/kg).",
+  "cifra_derivada": true,
+  "nota": "ES: 1,20 €/kg (plantilla 07, otro proveedor)."
+ },
+ {
+  "es": "Paquete 500 g",
+  "en": "Pack, 500 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 04 «Margarita» · 05 «Tarta Chocolate», «Croissants». La plantilla 04 lo usa a 0,80 €/kg (otro proveedor).",
+  "en": "Used in: 04 \"Margarita\" · 05 \"Chocolate Cake\", \"Croissants\". Template 04 uses a different supplier ([$ price TBD for the US market]/kg).",
+  "cifra_derivada": true,
+  "nota": "ES: 0,80 €/kg (plantilla 04, otro proveedor)."
+ },
+ {
+  "es": "Caja 250 g",
+  "en": "Case, 250 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Croquetas",
+  "en": "Croquettes"
+ },
+ {
+  "es": "Caja 60 ud",
+  "en": "Case, 60 each",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 04 «Gin Tonic Premium», «Mojito Clásico», «Margarita», «Aperol Spritz».",
+  "en": "Used in: 04 \"Gin & Tonic\", \"Mojito\", \"Margarita\", \"Aperol Spritz\"."
+ },
+ {
+  "es": "Mini quiche",
+  "en": "Mini quiche"
+ },
+ {
+  "es": "Caja 40 ud",
+  "en": "Case, 40 each",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Bolsa 6 ud",
+  "en": "Bag, 6 each",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 07 «Eggs Benedict».",
+  "en": "Used in: 07 \"Eggs Benedict\"."
+ },
+ {
+  "es": "Por rebanada",
+  "en": "Per slice"
+ },
+ {
+  "es": "Pan mini",
+  "en": "Mini bread rolls"
+ },
+ {
+  "es": "Caja 100 ud",
+  "en": "Case, 100 each",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Brik 1 kg (pasteurizadas)",
+  "en": "Carton, 1 kg (pasteurized)",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Estuche 30 huevos",
+  "en": "Carton of 30 eggs",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 03 «Postre» · 07 «Tostada Aguacate», «Eggs Benedict», «Carrot Cake». La plantilla 07 lo usa a 4,20 €/docena (otro proveedor).",
+  "en": "Used in: 03 \"Dessert\" · 07 \"Avocado Toast\", \"Eggs Benedict\", \"Carrot Cake\". Template 07 uses a different supplier ([$ price TBD for the US market]/dozen).",
+  "cifra_derivada": true,
+  "nota": "ES: 4,20 €/docena (plantilla 07, otro proveedor)."
+ },
+ {
+  "es": "Se usa en: 05 «Tarta Chocolate», «Croissants».",
+  "en": "Used in: 05 \"Chocolate Cake\", \"Croissants\"."
+ },
+ {
+  "es": "Garrafa 5 L",
+  "en": "Jug, 5 L",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Bidón 25 L",
+  "en": "Drum, 25 L",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Aceite de oliva virgen extra (AOVE)",
+  "en": "Extra virgin olive oil (EVOO)"
+ },
+ {
+  "es": "Se usa en: 01 «Escandallo» · 03 «Primer Plato», «Segundo Plato» · 07 «Tostada Aguacate». Ilustrativo: el precio anterior es de ejemplo, para que veas cómo funciona la alerta. Bórralo.",
+  "en": "Used in: 01 \"Recipe Cost Card\" · 03 \"Starter\", \"Main\" · 07 \"Avocado Toast\". Sample data: the previous price is just an example, so you can see how the alert works. Delete it."
+ },
+ {
+  "es": "Botella 500 ml",
+  "en": "Bottle, 500 ml",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Malla 1 kg",
+  "en": "Mesh bag, 1 kg",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Bote 500 g",
+  "en": "Jar, 500 g",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Cebollino",
+  "en": "Chives"
+ },
+ {
+  "es": "Manojo",
+  "en": "Bunch"
+ },
+ {
+  "es": "Se usa en: 07 «Eggs Benedict» · 08 «Loaded Fries».",
+  "en": "Used in: 07 \"Eggs Benedict\" · 08 \"Loaded Fries\"."
+ },
+ {
+  "es": "Se usa en: 04 «Gin Tonic Premium».",
+  "en": "Used in: 04 \"Gin & Tonic\"."
+ },
+ {
+  "es": "Hierbabuena",
+  "en": "Spearmint"
+ },
+ {
+  "es": "Se usa en: 04 «Mojito Clásico».",
+  "en": "Used in: 04 \"Mojito\"."
+ },
+ {
+  "es": "Romero fresco",
+  "en": "Fresh rosemary"
+ },
+ {
+  "es": "Se usa en: 02 «4. Carne» · 03 «Segundo Plato».",
+  "en": "Used in: 02 \"4. Meat\" · 03 \"Main\"."
+ },
+ {
+  "es": "Botella 100 ml",
+  "en": "Bottle, 100 ml",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 03 «Postre».",
+  "en": "Used in: 03 \"Dessert\"."
+ },
+ {
+  "es": "Se usa en: 05 «Tarta Chocolate».",
+  "en": "Used in: 05 \"Chocolate Cake\"."
+ },
+ {
+  "es": "Saco 5 kg (gotas)",
+  "en": "Sack, 5 kg (chips)",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 02 «5. Postre» · 05 «Tarta Chocolate».",
+  "en": "Used in: 02 \"5. Dessert\" · 05 \"Chocolate Cake\"."
+ },
+ {
+  "es": "Botella 70 cl",
+  "en": "Bottle, 70 cl",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Por servicio (dosis)",
+  "en": "Per serving (dose)"
+ },
+ {
+  "es": "Botella 75 cl",
+  "en": "Bottle, 75 cl",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Soda / agua con gas",
+  "en": "Soda / sparkling water"
+ },
+ {
+  "es": "Pack 6 botellas de 1 L",
+  "en": "Pack of 6 x 1 L bottles",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Se usa en: 04 «Mojito Clásico», «Aperol Spritz».",
+  "en": "Used in: 04 \"Mojito\", \"Aperol Spritz\"."
+ },
+ {
+  "es": "Se usa en: 04 «Margarita».",
+  "en": "Used in: 04 \"Margarita\"."
+ },
+ {
+  "es": "Caja 24 botellines de 20 cl",
+  "en": "Case of 24 x 20 cl bottles",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Por litro",
+  "en": "Per liter"
+ },
+ {
+  "es": "Se usa en: 08 «Smash Burger», «Pulled Pork Sándwich».",
+  "en": "Used in: 08 \"Smash Burger\", \"Pulled Pork Sandwich\"."
+ },
+ {
+  "es": "Botella 2 L",
+  "en": "Bottle, 2 L",
+  "cifra_derivada": true,
+  "nota": "R2-10: el 13 EN se genera desde las recetas EN (mercado_en.json), no traduciendo el ES — cambian ingredientes, formatos de compra (D7) y precios. Traducción de referencia."
+ },
+ {
+  "es": "Inventario",
+  "en": "Inventory"
+ },
+ {
+  "es": "Ventas del periodo",
+  "en": "Sales for the Period"
+ },
+ {
+  "es": "Checklist Mermas",
+  "en": "Waste Checklist"
+ },
+ {
+  "es": "Caducidad",
+  "en": "Expired"
+ },
+ {
+  "es": "Mal estado",
+  "en": "Spoiled"
+ },
+ {
+  "es": "Sobreproducción",
+  "en": "Overproduction"
+ },
+ {
+  "es": "Error de preparación",
+  "en": "Prep error"
+ },
+ {
+  "es": "Almacenaje incorrecto",
+  "en": "Improper storage"
+ },
+ {
+  "es": "Porcionado excesivo",
+  "en": "Over-portioning"
+ },
+ {
+  "es": "Otro",
+  "en": "Other"
+ }
+]

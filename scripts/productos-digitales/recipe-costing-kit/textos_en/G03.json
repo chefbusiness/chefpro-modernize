@@ -1,0 +1,550 @@
+[
+ {
+  "es": "📋 Escandallo — Catering por Persona",
+  "en": "📋 Recipe Cost Card — Catering per Guest"
+ },
+ {
+  "es": "▸ La pestaña «Cocktail (por persona)» se escandalla POR COMENSAL. El número de comensales se escribe UNA sola vez, en «Presupuesto»!C5: si lo metes también en el escandallo, facturas el evento por partida doble.",
+  "en": "▸ The \"Reception (per guest)\" tab is costed PER GUEST. The guest count is entered ONCE, in \"Event Quote\"!C5. Don't also enter it on the recipe cost card (keep Number of portions at 1), or you'll bill the event twice."
+ },
+ {
+  "es": "▸ «Presupuesto» es la hoja INTERNA: enseña tus costes y tu margen. El bloque de PVP de la hoja de escandallo es orientativo y sólo cubre la materia prima; el precio al cliente sale del Presupuesto.",
+  "en": "▸ \"Event Quote\" is the INTERNAL sheet: it shows your costs and your margin. The menu price block on the recipe cost card sheet is a reference only and covers ingredients alone; the price you give the client comes from the Event Quote."
+ },
+ {
+  "es": "▸ El personal ya no es una constante escondida: camareros = REDONDEAR.MÁS(comensales ÷ comensales por camarero) × horas × €/hora, más el jefe de sala. Todos los parámetros son celdas verdes.",
+  "en": "▸ Staff costs are no longer a hidden constant: servers = ROUNDUP(guests ÷ guests per server) × hours × hourly rate, plus the floor manager. Every parameter is a green cell."
+ },
+ {
+  "es": "▸ «Checklist Evento»: marca con ✓ en el desplegable de la última columna; el contador del final lleva la cuenta sobre el total.",
+  "en": "▸ \"Event Checklist\": mark ✓ in the dropdown in the last column; the counter at the bottom tracks progress against the total."
+ },
+ {
+  "es": "▸ «Presupuesto Cliente» es la ÚNICA hoja que se le enseña al cliente: concepto, comensales y precio con IVA. Sin costes ni margen.",
+  "en": "▸ \"Client Proposal\" is the ONLY sheet you show the client: item, guest count and price per guest (pre-tax in the U.S. and Canada; incl. VAT/GST in the UK and Australia, see below). No costs, no margin."
+ },
+ {
+  "es": "▸ Food cost objetivo de referencia en catering: 30-40 %.",
+  "en": "▸ Reference target food cost for catering: 30-40%.",
+  "cifra_derivada": true,
+  "nota": "D12 catering benchmark = 28-35%; el agente de mercado recalcula el rango sobre mercado_en.json."
+ },
+ {
+  "es": "Catering Cocktail — Coste por Persona",
+  "en": "Spanish-Style Cocktail Reception — Cost per Guest"
+ },
+ {
+  "es": "AVISO: todas las cantidades son POR COMENSAL. El número de comensales se escribe UNA sola vez, en «Presupuesto»!C5 — no lo multipliques aquí o facturarás el evento dos veces.",
+  "en": "NOTE: all quantities are PER GUEST. The guest count is entered ONCE, in \"Event Quote\"!C5 — don't multiply it here or you'll bill the event twice."
+ },
+ {
+  "es": "📷 Foto del Montaje",
+  "en": "📷 Setup Photo"
+ },
+ {
+  "es": "Jamón ibérico (loncheado)",
+  "en": "Sliced Ibérico ham"
+ },
+ {
+  "es": "Queso manchego curado",
+  "en": "Aged Manchego cheese"
+ },
+ {
+  "es": "Langostino cocido",
+  "en": "Cooked langostino",
+  "nota": "«Langostino» es el nombre exacto con el que se vende en EE. UU. (Trader Joe's, Costco, distribuidores de marisco); no es «shrimp» genérico."
+ },
+ {
+  "es": "Foto del montaje terminado:\nRevisar → Desproteger hoja,\nluego Insertar → Imagen",
+  "en": "Photo of the finished spread:\nExcel: Review → Unprotect Sheet, then Insert → Pictures\nGoogle Sheets: Data → Protect sheets and ranges, then Insert → Image → Image over cells"
+ },
+ {
+  "es": "Croquetas (ud)",
+  "en": "Croquettes (each)"
+ },
+ {
+  "es": "Mini quiche (ud)",
+  "en": "Mini quiches (each)"
+ },
+ {
+  "es": "Pan mini (ud)",
+  "en": "Mini bread rolls (each)"
+ },
+ {
+  "es": "Fruta variada",
+  "en": "Assorted fruit"
+ },
+ {
+  "es": "Bebida (vino + agua)",
+  "en": "Beverage (wine + water)"
+ },
+ {
+  "es": "COSTE TOTAL POR PERSONA",
+  "en": "TOTAL COST PER GUEST"
+ },
+ {
+  "es": "PVP orientativo: cubre sólo la materia prima. El precio que se le da al cliente sale de la hoja «Presupuesto», que suma personal, menaje, transporte y montaje.",
+  "en": "Reference menu price: covers ingredients only. The price you give the client comes from the \"Event Quote\" sheet, which adds staff, rentals, transport and setup."
+ },
+ {
+  "es": "Presupuesto de Catering — hoja INTERNA",
+  "en": "Catering Event Quote — INTERNAL sheet"
+ },
+ {
+  "es": "Enseña tus costes y tu margen: NO se le manda al cliente. Para eso está «Presupuesto Cliente».",
+  "en": "Shows your costs and your margin: do NOT send this to the client. That's what the \"Client Proposal\" is for."
+ },
+ {
+  "es": "Importe (€)",
+  "en": "Amount"
+ },
+ {
+  "es": "Número de comensales",
+  "en": "Number of guests"
+ },
+ {
+  "es": "Coste de alimentación por comensal (€) — enlazado al escandallo «Cocktail (por persona)»",
+  "en": "Food cost per guest — linked to the \"Reception (per guest)\" recipe cost card"
+ },
+ {
+  "es": "Coste total de alimentación (€)",
+  "en": "Total food cost"
+ },
+ {
+  "es": "Personal de servicio",
+  "en": "Service staff"
+ },
+ {
+  "es": "Comensales por camarero",
+  "en": "Guests per server"
+ },
+ {
+  "es": "Nº de camareros (calculado)",
+  "en": "Number of servers (calculated)"
+ },
+ {
+  "es": "Horas por camarero",
+  "en": "Hours per server"
+ },
+ {
+  "es": "Coste por hora de camarero (€)",
+  "en": "Server hourly rate"
+ },
+ {
+  "es": "Horas de jefe de sala",
+  "en": "Floor manager hours"
+ },
+ {
+  "es": "Coste por hora de jefe de sala (€)",
+  "en": "Floor manager hourly rate"
+ },
+ {
+  "es": "COSTE DE PERSONAL (€)",
+  "en": "STAFF COST"
+ },
+ {
+  "es": "Menaje, transporte y montaje",
+  "en": "Rentals, transport and setup"
+ },
+ {
+  "es": "Menaje y desechables por comensal (€)",
+  "en": "Rentals & disposables per guest"
+ },
+ {
+  "es": "Coste de menaje (€)",
+  "en": "Rentals cost"
+ },
+ {
+  "es": "Transporte y logística (€)",
+  "en": "Transport & logistics"
+ },
+ {
+  "es": "Montaje y desmontaje (€)",
+  "en": "Setup & breakdown"
+ },
+ {
+  "es": "COSTE TOTAL DEL EVENTO (€)",
+  "en": "TOTAL EVENT COST"
+ },
+ {
+  "es": "Coste por comensal (€)",
+  "en": "Cost per guest"
+ },
+ {
+  "es": "Precio de venta",
+  "en": "Selling price"
+ },
+ {
+  "es": "Food Cost objetivo de la COMIDA (%)",
+  "en": "Target food cost for the MEAL (%)"
+ },
+ {
+  "es": "Margen sobre servicios (%)",
+  "en": "Markup on services (%)"
+ },
+ {
+  "es": "PVP de la alimentación (€)",
+  "en": "Menu price for food"
+ },
+ {
+  "es": "PVP de los servicios (personal, menaje, transporte, montaje) (€)",
+  "en": "Menu price for services (staff, rentals, transport, setup)"
+ },
+ {
+  "es": "Mínimo de facturación por evento (€)",
+  "en": "Minimum billing per event"
+ },
+ {
+  "es": "PVP DEL EVENTO (sin IVA)",
+  "en": "EVENT MENU PRICE (pre-tax)"
+ },
+ {
+  "es": "PVP POR PERSONA (sin IVA)",
+  "en": "MENU PRICE PER GUEST (pre-tax)"
+ },
+ {
+  "es": "PVP POR PERSONA (con IVA)",
+  "en": "MENU PRICE PER GUEST (incl. tax)"
+ },
+ {
+  "es": "PRESUPUESTO TOTAL (con IVA)",
+  "en": "TOTAL QUOTE (incl. tax)"
+ },
+ {
+  "es": "Margen bruto del evento (€)",
+  "en": "Gross profit for the event"
+ },
+ {
+  "es": "Food cost de la comida sobre lo facturado (%)",
+  "en": "Meal food cost as % of total billed"
+ },
+ {
+  "es": "El food cost objetivo se aplica SÓLO a la comida (C7 ÷ C24). El personal, el menaje, el transporte y el montaje no llevan food cost: van a coste más el margen de servicios de C25. Aplicar el 35 % al coste total multiplicaba el presupuesto por 2,9 y perdías el evento. C35 te enseña qué food cost de comida te queda sobre el total facturado. Ojo con los eventos pequeños: el transporte, el montaje y el jefe de sala son fijos, así que con 10 comensales el precio por persona se dispara por encima de los 100 €. No es un error de la hoja: es lo que cuesta de verdad mover un catering para diez. Ajusta esas tres celdas verdes a la realidad de tu evento pequeño.",
+  "en": "The target food cost applies ONLY to the meal (C7 ÷ C24). Staff, rentals, transport and setup carry no food cost: they go in at cost plus the services markup in C25. Applying the 35% target to the total cost would have multiplied the quote by 2.9 and lost you the event. C35 shows the meal food cost you're left with over the total billed. Watch out with small events: transport, setup and the floor manager are fixed costs, so with 10 guests the price per guest jumps well above $100. That's not a spreadsheet error — it's what it really costs to run a catering job for ten. Adjust those three green cells to fit your small event.",
+  "cifra_derivada": true,
+  "nota": "Recalcular 35% / ×2.9 / $100 sobre los valores EN reales (server $25/h, floor manager $35/h, rentals $3.50/guest, mínimo $1,000, D12 catering 28-35%)."
+ },
+ {
+  "es": "Checklist de Evento — Catering",
+  "en": "Event Checklist — Catering"
+ },
+ {
+  "es": "Marca con ✓ en la columna «✓ Completada» (es un desplegable: ✓ / — / N/A). El contador del final cuenta sólo los ✓. Las cuatro filas en blanco del final son para tus propias tareas y también cuentan.",
+  "en": "Mark ✓ in the \"✓ Done\" column (it's a dropdown: ✓ / — / N/A). The counter at the bottom only counts the ✓. The four blank rows at the end are for your own tasks and count too."
+ },
+ {
+  "es": "Tarea",
+  "en": "Task"
+ },
+ {
+  "es": "Bloque",
+  "en": "Block"
+ },
+ {
+  "es": "Responsable",
+  "en": "Owner"
+ },
+ {
+  "es": "Cuándo",
+  "en": "When"
+ },
+ {
+  "es": "✓ Completada",
+  "en": "✓ Done"
+ },
+ {
+  "es": "Confirmar por escrito el nº definitivo de comensales",
+  "en": "Confirm the final guest count in writing"
+ },
+ {
+  "es": "Timings",
+  "en": "Timeline"
+ },
+ {
+  "es": "Comercial",
+  "en": "Sales"
+ },
+ {
+  "es": "D-7",
+  "en": "7 days out"
+ },
+ {
+  "es": "Cerrar menú definitivo y recoger alérgenos e intolerancias",
+  "en": "Finalize the menu and collect allergy and intolerance information"
+ },
+ {
+  "es": "Jefe de cocina",
+  "en": "Head chef"
+ },
+ {
+  "es": "Cursar pedido a proveedores con fecha y hora de entrega",
+  "en": "Place supplier orders with delivery date and time"
+ },
+ {
+  "es": "Compras",
+  "en": "Purchasing"
+ },
+ {
+  "es": "D-5",
+  "en": "5 days out"
+ },
+ {
+  "es": "Confirmar hora de acceso al espacio y muelle de carga",
+  "en": "Confirm access time to the venue and loading dock"
+ },
+ {
+  "es": "Producción",
+  "en": "Production"
+ },
+ {
+  "es": "D-3",
+  "en": "3 days out"
+ },
+ {
+  "es": "Producir las elaboraciones que aguantan 24 h",
+  "en": "Prepare the dishes that hold for 24 hours"
+ },
+ {
+  "es": "D-1",
+  "en": "Day before"
+ },
+ {
+  "es": "Cargar el vehículo siguiendo la hoja de ruta",
+  "en": "Load the vehicle following the route sheet"
+ },
+ {
+  "es": "D · mañana",
+  "en": "Event day, morning"
+ },
+ {
+  "es": "Montaje en el espacio (buffet, barras, office)",
+  "en": "Set up the venue (buffet, bars, service area)"
+ },
+ {
+  "es": "Jefe de sala",
+  "en": "Floor manager"
+ },
+ {
+  "es": "D · H-3 h",
+  "en": "3 h before service"
+ },
+ {
+  "es": "Briefing con el equipo de sala y reparto de rangos",
+  "en": "Brief the floor team and assign service stations"
+ },
+ {
+  "es": "D · H-1 h",
+  "en": "1 h before service"
+ },
+ {
+  "es": "Servicio",
+  "en": "Service"
+ },
+ {
+  "es": "Todo el equipo",
+  "en": "Whole team"
+ },
+ {
+  "es": "D · hora H",
+  "en": "Service time"
+ },
+ {
+  "es": "Desmontaje, recuento de material y salida",
+  "en": "Breakdown, equipment count and departure"
+ },
+ {
+  "es": "D · H+1 h",
+  "en": "After service"
+ },
+ {
+  "es": "Nº de camareros según el Presupuesto (1 por cada 22 pax)",
+  "en": "Number of servers per the Event Quote (1 per 22 guests)",
+  "cifra_derivada": true,
+  "nota": "Ratio ES 1/22; SPEC §2.5 (06) fija 1 camarero cada 25 invitados en recepción para EN — el agente de mercado reescribe el número."
+ },
+ {
+  "es": "Personal",
+  "en": "Staff"
+ },
+ {
+  "es": "Jefe de sala asignado, con el teléfono del cliente",
+  "en": "Floor manager assigned, with the client's phone number"
+ },
+ {
+  "es": "Cocina in situ: cuántos cocineros y en qué horario",
+  "en": "On-site cooking: how many cooks and what schedule"
+ },
+ {
+  "es": "Uniformidad completa y una muda de repuesto",
+  "en": "Full uniform plus a spare change of clothes"
+ },
+ {
+  "es": "Partes de horas firmados al terminar el servicio",
+  "en": "Signed timesheets at the end of service"
+ },
+ {
+  "es": "Vajilla, cristalería y cubertería contadas y embaladas",
+  "en": "Dishware, glassware and flatware counted and packed"
+ },
+ {
+  "es": "Menaje",
+  "en": "Rentals"
+ },
+ {
+  "es": "Mantelería, faldones y decoración del mobiliario",
+  "en": "Linens, table skirting and furniture decor"
+ },
+ {
+  "es": "Bandejas, pinzas y utillaje de pase",
+  "en": "Trays, tongs and service tools"
+ },
+ {
+  "es": "Desechables: servilletas, palillos y bolsas de residuos",
+  "en": "Disposables: napkins, toothpicks and trash bags"
+ },
+ {
+  "es": "Menaje de repuesto: un 10 % sobre el nº de comensales",
+  "en": "Backup rentals: 10% over the guest count"
+ },
+ {
+  "es": "Vehículo isotermo reservado, revisado y con combustible",
+  "en": "Insulated vehicle booked, checked and fueled"
+ },
+ {
+  "es": "Transporte",
+  "en": "Transport"
+ },
+ {
+  "es": "Logística",
+  "en": "Logistics"
+ },
+ {
+  "es": "D-2",
+  "en": "2 days out"
+ },
+ {
+  "es": "Cadena de frío: neveras, acumuladores y termómetro",
+  "en": "Cold chain: coolers, ice packs and thermometer"
+ },
+ {
+  "es": "Hoja de ruta con dirección, contacto y hora de llegada",
+  "en": "Route sheet with address, contact and arrival time"
+ },
+ {
+  "es": "Toma de corriente y potencia disponible verificadas",
+  "en": "Power outlet and available capacity checked"
+ },
+ {
+  "es": "Montaje",
+  "en": "Setup"
+ },
+ {
+  "es": "Punto de agua y evacuación localizados",
+  "en": "Water source and drainage located"
+ },
+ {
+  "es": "Plano de sala: buffet, barras, office y circulación",
+  "en": "Floor plan: buffet, bars, service area and traffic flow"
+ },
+ {
+  "es": "Ficha de alérgenos de cada elaboración, impresa",
+  "en": "Allergen matrix for every dish (US: 9 major allergens incl. sesame · UK/EU: 14)"
+ },
+ {
+  "es": "Alérgenos",
+  "en": "Allergens"
+ },
+ {
+  "es": "Comensales con alergia identificados y menú alternativo",
+  "en": "Guests with allergies identified and alternate menu ready"
+ },
+ {
+  "es": "Etiquetado de alérgenos en las bandejas del buffet",
+  "en": "Allergen labeling on the buffet trays"
+ },
+ {
+  "es": "Autorización del espacio y horario de música",
+  "en": "Venue authorization and music hours confirmed"
+ },
+ {
+  "es": "Permisos",
+  "en": "Permits"
+ },
+ {
+  "es": "Seguro de responsabilidad civil en vigor",
+  "en": "General liability insurance active"
+ },
+ {
+  "es": "Administración",
+  "en": "Admin"
+ },
+ {
+  "es": "Registro sanitario y carnés de manipulador al día",
+  "en": "Health permit, food handler cards and a certified food manager on site (UK: food hygiene certificates)"
+ },
+ {
+  "es": "Tareas completadas:",
+  "en": "Tasks completed:"
+ },
+ {
+  "es": "de",
+  "en": "of"
+ },
+ {
+  "es": "Responsable del evento:",
+  "en": "Event owner:"
+ },
+ {
+  "es": "Fecha del evento:",
+  "en": "Event date:"
+ },
+ {
+  "es": "Elige ✓, — o N/A.",
+  "en": "Choose ✓, — or N/A."
+ },
+ {
+  "es": "Propuesta de Catering",
+  "en": "Catering Proposal"
+ },
+ {
+  "es": "Cliente:",
+  "en": "Client:"
+ },
+ {
+  "es": "Evento y fecha:",
+  "en": "Event & date:"
+ },
+ {
+  "es": "Lugar:",
+  "en": "Venue:"
+ },
+ {
+  "es": "Comensales",
+  "en": "Guests"
+ },
+ {
+  "es": "Precio por persona (IVA incl.)",
+  "en": "Price per guest"
+ },
+ {
+  "es": "Total (€)",
+  "en": "Total"
+ },
+ {
+  "es": "Servicio de catering cocktail — menú acordado",
+  "en": "Spanish-style cocktail reception — agreed menu"
+ },
+ {
+  "es": "TOTAL (IVA incluido)",
+  "en": "TOTAL"
+ },
+ {
+  "es": "Presupuesto válido 30 días desde su emisión. Precios con IVA incluido. El número definitivo de comensales se confirma 7 días antes del evento; a partir de esa fecha se factura el número confirmado.",
+  "en": "Quote valid for 30 days. Applicable sales tax is added to the final invoice. The final guest count is confirmed 7 days before the event; from that date on, the confirmed number is what gets billed.",
+  "nota": "A15 sigue el texto exacto del SPEC §2.5(06)/M11 («Quote valid for 30 days. Applicable sales tax is added to the final invoice…»): en EE. UU. el impuesto se AÑADE en factura en vez de ir incluido en el precio mostrado, a diferencia del ES (IVA incluido)."
+ },
+ {
+  "es": "Escandallo — Catering por Persona · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Catering per Guest · Recipe Costing Kit Pro"
+ }
+]

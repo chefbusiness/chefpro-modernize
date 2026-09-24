@@ -1,0 +1,432 @@
+[
+  {
+    "es": "Kit de Escandallos Pro — AI Chef Pro",
+    "en": "Recipe Costing Kit Pro — AI Chef Pro"
+  },
+  {
+    "es": "www.aichef.pro",
+    "en": "www.aichef.pro"
+  },
+  {
+    "es": "Cómo usar esta plantilla",
+    "en": "How to use this template"
+  },
+  {
+    "es": "▸ Las celdas VERDES son las editables; el resto son fórmulas.",
+    "en": "▸ GREEN cells are editable; everything else is a formula."
+  },
+  {
+    "es": "Columnas de la hoja de escandallo",
+    "en": "Recipe cost card columns"
+  },
+  {
+    "es": "▸ Ingrediente: el producto tal como lo compras.",
+    "en": "▸ Ingredient: the product exactly as you buy it."
+  },
+  {
+    "es": "▸ Categoría: familia del ingrediente (desplegable). Es la que precarga la merma en las filas vacías.",
+    "en": "▸ Category: the ingredient's family (dropdown). It's what preloads the trim loss % in the empty rows."
+  },
+  {
+    "es": "▸ Ud. Compra: la unidad en la que COMPRAS (kg, L, docena, manojo…).",
+    "en": "▸ Purchase unit: the unit you BUY in (lb, gal, dozen, bunch…).",
+    "nota": "Ejemplos convertidos a US customary (D7); ES tenía kg, L, docena, manojo."
+  },
+  {
+    "es": "▸ Precio/Ud (€): lo que pagas por esa unidad de compra.",
+    "en": "▸ Price/Unit: what you pay for that purchase unit."
+  },
+  {
+    "es": "▸ ¿Llevas tus precios en la plantilla 13 (Lista de Precios de Ingredientes)? Lleva su «Precio por unidad base» a «Precio/Ud (€)» con Pegado especial → Valores (en Excel, Ctrl+Alt+V y luego V) y pon esa misma unidad en «Ud. Compra». Un pegado normal arrastraría la fórmula: el precio y el coste de esa línea se quedarían en blanco sin avisar, y el coste del plato saldría más bajo.",
+    "en": "▸ Do you keep your prices in template 13 (Ingredient Price List)? Copy its \"Price per base unit\" into \"Price/Unit\" with Paste Special → Values (in Excel, Ctrl+Alt+V then V) and put that same unit in \"Purchase unit.\" A normal paste would drag the formula along: the price and cost on that line would go blank with no warning, and the dish cost would come out lower than it really is."
+  },
+  {
+    "es": "▸ Cantidad: la que usas en el plato, EN LA UNIDAD DE USO.",
+    "en": "▸ Quantity: the amount you use in the dish, IN THE RECIPE UNIT."
+  },
+  {
+    "es": "▸ Ud. Uso: la unidad en la que mides al cocinar (g, ml, cl, ud…).",
+    "en": "▸ Recipe unit: the unit you measure in while cooking (oz, fl oz, tbsp, each…).",
+    "nota": "Ejemplos convertidos a unidades de cocina US; ES tenía g, ml, cl, ud."
+  },
+  {
+    "es": "▸ Factor: conversión automática Ud. Compra → Ud. Uso, de la hoja «Conversiones». Si la pareja NO está en la tabla, el Factor se pone en rojo con un «?» y el Coste dice «revisa unidades»: añade la equivalencia en «Conversiones» antes de fiarte del número. Nunca da un coste plausible y falso.",
+    "en": "▸ Factor: automatic Purchase unit → Recipe unit conversion, from the \"Conversions\" tab. If the pair is NOT in the table, Factor turns red with a \"?\" and Cost shows \"check units\": add the equivalence in \"Conversions\" before trusting the number. It never shows a plausible but wrong cost."
+  },
+  {
+    "es": "▸ Merma (%): desperdicio. En las filas de ejemplo está escrita a mano; en las vacías la trae la hoja «Mermas» en cuanto eliges categoría, y puedes escribir encima.",
+    "en": "▸ Trim loss %: the amount lost in cleaning and prep. In the example rows it's entered by hand; in the empty ones it's preloaded from the \"Trim Loss Factors\" tab as soon as you pick a category, and you can type over it."
+  },
+  {
+    "es": "▸ Ojo con la merma cuando mides en PIEZAS: la del 11 % de los huevos es la CÁSCARA, y sólo tiene sentido sobre el peso. Si compras y mides en unidades, déjala en 0 %: seis huevos son seis huevos, no 6,74. La misma regla vale para cualquier ingrediente que cuentes por unidad.",
+    "en": "▸ Watch the trim loss % when you measure by the PIECE: the 11% for eggs is the SHELL, and it only makes sense as a percentage of weight. If you buy and measure by the each, leave it at 0%: six eggs are six eggs, not 6.74. The same rule applies to any ingredient you count by the unit.",
+    "nota": "6,74 -> 6.74 (separador decimal US); 11 % de la cáscara del huevo se mantiene (no es cifra de mercado)."
+  },
+  {
+    "es": "▸ Cant. Bruta: lo que hay que comprar contando la merma (automático).",
+    "en": "▸ AP qty: what you need to buy once trim loss is factored in (automatic)."
+  },
+  {
+    "es": "▸ Coste (€): Cant. Bruta × Precio/Ud ÷ Factor (automático).",
+    "en": "▸ Cost: AP qty × Price/Unit ÷ Factor (automatic)."
+  },
+  {
+    "es": "Bloque de resultado",
+    "en": "Results block"
+  },
+  {
+    "es": "▸ Coste elaboración (%): recargo sobre la materia prima para cubrir energía, envasado y pérdidas de preparación que no se escandallan línea a línea. Viene al 10 %; ponlo a 0 % si prefieres imputar esos costes aparte.",
+    "en": "▸ Q-factor (%): a markup on the raw ingredient cost that covers seasonings, oil, garnish, packaging and small prep losses you don't cost line by line. It defaults to 10%; set it to 0% if you'd rather account for those costs separately.",
+    "nota": "Q-factor 10% por defecto se mantiene igual en EN (§2.5, fila 01); sin energía, según D8."
+  },
+  {
+    "es": "▸ COSTE TOTAL DEL PLATO: materia prima + coste de elaboración.",
+    "en": "▸ TOTAL DISH COST: raw ingredients + Q-factor."
+  },
+  {
+    "es": "▸ Nº de raciones: cuántas raciones salen de lo escandallado. Déjalo en 1 si es un plato individual.",
+    "en": "▸ Number of portions: how many portions the recipe cost card yields. Leave it at 1 for a single-serving dish."
+  },
+  {
+    "es": "▸ COSTE POR RACIÓN: coste total ÷ raciones. Es la base del PVP.",
+    "en": "▸ COST PER PORTION: total cost ÷ portions. It's the basis for the menu price."
+  },
+  {
+    "es": "▸ Food Cost objetivo (%): el que quieres conseguir. PVP sin IVA = coste por ración ÷ food cost objetivo.",
+    "en": "▸ Target food cost %: the one you want to hit. Suggested menu price (pre-tax) = cost per portion ÷ target food cost %."
+  },
+  {
+    "es": "▸ Tipo de IVA (%): editable. 10 % en hostelería en España; cámbialo si te aplica otro tipo (IGIC en Canarias, o el IVA/ITBIS/IVU de tu país en Latinoamérica).",
+    "en": "▸ Tax rate (%): editable. Defaults to 0% (US menu prices are usually shown pre-tax); change it if you're in the UK (20% VAT) or any other market with its own sales tax, VAT or GST.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (IVA/impuesto): traducción provisional según D6 (0% por defecto, UK 20% VAT). La reescribe el agente de mercado con la tabla completa US/UK/CA/AU de D6."
+  },
+  {
+    "es": "▸ PVP actual en carta (sin IVA): lo que cobras HOY. Déjalo vacío si todavía no lo tienes.",
+    "en": "▸ Current menu price (pre-tax / ex VAT): what you charge TODAY. Leave it blank if you don't have it yet."
+  },
+  {
+    "es": "▸ FOOD COST REAL (%): coste por ración ÷ PVP actual. Se pone en rojo en cuanto supera tu objetivo.",
+    "en": "▸ ACTUAL FOOD COST %: cost per portion ÷ current menu price. It turns red as soon as it goes over your target."
+  },
+  {
+    "es": "Hojas auxiliares",
+    "en": "Helper tabs"
+  },
+  {
+    "es": "▸ «Conversiones»: equivalencias Ud. Compra → Ud. Uso. Va SIN protección: añade las parejas que te falten y corrige el tamaño de los formatos (la botella viene a 70 cl y la lata a 33 cl; si tu vino es de 75 cl, cambia el 70 por 75 en «botella→cl»).",
+    "en": "▸ \"Conversions\": Purchase unit → Recipe unit equivalents. It has NO protection: add any pairs you're missing and fix the container sizes (the bottle defaults to 750 ml and the can to 355 ml; if your bottle is a different size, change the 750 in \"bottle→ml\").",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (tamaños de botella/lata). Provisional ya con los valores de D7/E3 (bottle 750 ml, can 355 ml); el agente de mercado confirma o ajusta el ejemplo final."
+  },
+  {
+    "es": "▸ «Mermas»: merma mínima, típica y máxima por categoría. La típica es la que se precarga en las filas vacías.",
+    "en": "▸ \"Trim Loss Factors\": minimum, typical and maximum trim loss % by category. The typical value is what preloads in the empty rows."
+  },
+  {
+    "es": "Protección de la hoja",
+    "en": "Sheet protection"
+  },
+  {
+    "es": "▸ Las hojas están protegidas SIN contraseña para que no borres una fórmula sin querer: sólo se escriben las celdas verdes.",
+    "en": "▸ Sheets are protected WITHOUT a password so you don't delete a formula by accident: only the green cells are meant to be edited."
+  },
+  {
+    "es": "▸ Para tocar cualquier otra cosa —insertar filas, pegar la foto del plato, cambiar una fórmula—: Revisar → Desproteger hoja. No pide contraseña.",
+    "en": "▸ To do anything else — insert rows, paste in the dish photo, change a formula: Excel: Review → Unprotect Sheet. Google Sheets: Data → Protect sheets and ranges. No password needed."
+  },
+  {
+    "es": "▸ Si te quedas sin filas: desprotege la hoja e inserta filas DENTRO del bloque de ingredientes (clic derecho sobre una fila del bloque → Insertar), nunca debajo de la última. Así el «COSTE TOTAL INGREDIENTES» las recoge solo; lo que escribas por debajo del bloque NO suma.",
+    "en": "▸ If you run out of rows: unprotect the sheet and insert rows INSIDE the ingredient block (right-click a row in the block → Insert), never below the last one. That way \"TOTAL INGREDIENT COST\" picks them up automatically; anything you type below the block does NOT get added."
+  },
+  {
+    "es": "▸ La foto del plato NO se puede arrastrar con la hoja protegida: primero Revisar → Desproteger hoja, y después Insertar → Imagen.",
+    "en": "▸ You can't drag in the dish photo while the sheet is protected: first Excel: Review → Unprotect Sheet, then Insert → Pictures. Google Sheets: Data → Protect sheets and ranges, then Insert → Image → Image over cells."
+  },
+  {
+    "es": "Referencia de mermas estándar",
+    "en": "Standard trim loss reference"
+  },
+  {
+    "es": "▸ Carne roja 20 % | Aves 25 % | Pescado 35 % | Marisco 45 %",
+    "en": "▸ Beef & red meat 20% | Poultry 25% | Fish 35% | Shellfish 45%",
+    "nota": "Porcentajes de merma sin cambio: no son cifra de mercado (comisión/impuesto/precio), son culinarios."
+  },
+  {
+    "es": "▸ Verdura hoja 25 % | Verdura raíz 12 % | Verdura fruto 10 % | Fruta 15 %",
+    "en": "▸ Leafy greens 25% | Root vegetables 12% | Fruiting vegetables 10% | Fruit 15%"
+  },
+  {
+    "es": "▸ Lácteos 3 % | Secos/granos 2 % | Congelados 7 % | Pan/bollería 5 %",
+    "en": "▸ Dairy 3% | Dry goods & grains 2% | Frozen 7% | Bread & pastry 5%"
+  },
+  {
+    "es": "▸ Huevos 11 % | Aceites/grasas 3 % | Especias/hierbas 20 % | Chocolate/cacao 5 %",
+    "en": "▸ Eggs 11% | Oils & fats 3% | Herbs & spices 20% | Chocolate & cocoa 5%"
+  },
+  {
+    "es": "▸ Bebidas/licores 2 % | Setas/hongos 20 % | Conservas/encurtidos 8 % | Salsas/condimentos 5 %",
+    "en": "▸ Beverages & spirits 2% | Mushrooms 20% | Canned & pickled 8% | Sauces & condiments 5%"
+  },
+  {
+    "es": "▸ Pasta/arroz 2 %",
+    "en": "▸ Pasta & rice 2%"
+  },
+  {
+    "es": "▸ Son las 21 categorías del desplegable. La tabla completa, con mínimo y máximo, está en la hoja «Mermas».",
+    "en": "▸ These are the 21 categories in the dropdown. The full table, with minimum and maximum, is on the \"Trim Loss Factors\" tab."
+  },
+  {
+    "es": "— Kit de Escandallos Pro · AI Chef Pro · aichef.pro",
+    "en": "— Recipe Costing Kit Pro · AI Chef Pro · aichef.pro"
+  },
+  {
+    "es": "© 2026 AI Chef Pro · Todos los derechos reservados",
+    "en": "© 2026 AI Chef Pro · All rights reserved"
+  },
+  {
+    "es": "AI Chef Pro · aichef.pro · Página &P de &N",
+    "en": "AI Chef Pro · aichef.pro · Page &P of &N"
+  },
+  {
+    "es": "Introduce tus ingredientes y cantidades. Las celdas verdes son editables.",
+    "en": "Enter your ingredients and quantities. Green cells are editable."
+  },
+  {
+    "es": "📷 Foto del Plato",
+    "en": "📷 Dish Photo"
+  },
+  {
+    "es": "Ingrediente",
+    "en": "Ingredient"
+  },
+  {
+    "es": "Categoría",
+    "en": "Category"
+  },
+  {
+    "es": "Ud. Compra",
+    "en": "Purchase unit"
+  },
+  {
+    "es": "Precio/Ud (€)",
+    "en": "Price/Unit"
+  },
+  {
+    "es": "Cantidad",
+    "en": "Quantity"
+  },
+  {
+    "es": "Ud. Uso",
+    "en": "Recipe unit"
+  },
+  {
+    "es": "Factor",
+    "en": "Factor"
+  },
+  {
+    "es": "Merma (%)",
+    "en": "Trim loss %"
+  },
+  {
+    "es": "Cant. Bruta",
+    "en": "AP qty"
+  },
+  {
+    "es": "Coste (€)",
+    "en": "Cost"
+  },
+  {
+    "es": "Mantequilla",
+    "en": "Butter"
+  },
+  {
+    "es": "Foto del plato terminado:\nRevisar → Desproteger hoja,\nluego Insertar → Imagen",
+    "en": "Photo of the finished dish:\nReview → Unprotect Sheet,\nthen Insert → Picture"
+  },
+  {
+    "es": "COSTE TOTAL INGREDIENTES",
+    "en": "TOTAL INGREDIENT COST"
+  },
+  {
+    "es": "Coste elaboración (%)",
+    "en": "Q-factor (%)"
+  },
+  {
+    "es": "COSTE TOTAL DEL PLATO",
+    "en": "TOTAL DISH COST"
+  },
+  {
+    "es": "Nº de raciones",
+    "en": "Number of portions"
+  },
+  {
+    "es": "COSTE POR RACIÓN",
+    "en": "COST PER PORTION"
+  },
+  {
+    "es": "Food Cost objetivo (%)",
+    "en": "Target food cost %"
+  },
+  {
+    "es": "PVP SUGERIDO (sin IVA)",
+    "en": "Suggested menu price (pre-tax)"
+  },
+  {
+    "es": "Tipo de IVA (%)",
+    "en": "Tax rate (%)"
+  },
+  {
+    "es": "PVP CON IVA",
+    "en": "Menu price incl. tax"
+  },
+  {
+    "es": "Margen bruto (€)",
+    "en": "Gross profit per portion (at suggested price)"
+  },
+  {
+    "es": "Margen bruto (%)",
+    "en": "Target GP % (at suggested price)"
+  },
+  {
+    "es": "PVP actual en carta (sin IVA)",
+    "en": "Current menu price (pre-tax / ex VAT)"
+  },
+  {
+    "es": "FOOD COST REAL (%)",
+    "en": "Actual food cost % (actual GP % = 100% − this)"
+  },
+  {
+    "es": "Valor no válido",
+    "en": "Invalid value"
+  },
+  {
+    "es": "Elige una categoría de la lista (hoja «Mermas»).",
+    "en": "Choose a category from the list (\"Trim Loss Factors\" tab)."
+  },
+  {
+    "es": "Elige una unidad de la lista.",
+    "en": "Choose a unit from the list."
+  },
+  {
+    "es": "Tabla de conversión Ud. Compra → Ud. Uso",
+    "en": "Purchase unit → Recipe unit conversion table"
+  },
+  {
+    "es": "La usa la columna «Factor» de cada escandallo. Puedes añadir parejas al final, hasta la fila 67: la clave se escribe «compra→uso».",
+    "en": "The \"Factor\" column of every recipe cost card uses it. You can add pairs at the end, up to row 286: the key is written \"purchase→recipe\".",
+    "nota": "Fila 67 (ES) -> 286 (EN): excepción estructural E2 ya fijada por D7/mapas.py, no es cifra de mercado."
+  },
+  {
+    "es": "Conversión (compra→uso)",
+    "en": "Conversion (purchase→recipe)"
+  },
+  {
+    "es": "Qué significa",
+    "en": "What it means"
+  },
+  {
+    "es": "Mermas de referencia por categoría",
+    "en": "Reference trim loss % by category"
+  },
+  {
+    "es": "La «típica» es la que se precarga en las filas vacías del escandallo al elegir categoría. Ajústala a tu proveedor.",
+    "en": "The \"Typical\" value is what preloads in the empty rows of the recipe cost card once you pick a category. Adjust it to your supplier."
+  },
+  {
+    "es": "Mide tu merma real con la plantilla 12 (Test de Rendimiento) y llévala a «Merma (%)» de la ficha.",
+    "en": "Measure your actual trim loss with template 12 (Yield Test) and enter it in the \"Trim loss %\" field of the cost card."
+  },
+  {
+    "es": "Merma típica",
+    "en": "Typical trim loss %"
+  },
+  {
+    "es": "Mínima",
+    "en": "Min trim loss %"
+  },
+  {
+    "es": "Máxima",
+    "en": "Max trim loss %"
+  },
+  {
+    "es": "kit escandallos, AI Chef Pro",
+    "en": "recipe costing kit, AI Chef Pro"
+  },
+  {
+    "es": "AI Chef Pro · Productos digitales",
+    "en": "AI Chef Pro · Digital products"
+  },
+  {
+    "es": "Food Cost objetivo (%) — se edita en el Resumen",
+    "en": "Target food cost % — edited on the Summary tab"
+  },
+  {
+    "es": "Nata 35% MG",
+    "en": "Heavy cream 35%"
+  },
+  {
+    "es": "Zanahoria",
+    "en": "Carrot"
+  },
+  {
+    "es": "Chocolate negro 70%",
+    "en": "Dark chocolate 70%"
+  },
+  {
+    "es": "Azúcar",
+    "en": "Sugar"
+  },
+  {
+    "es": "Pepino",
+    "en": "Cucumber"
+  },
+  {
+    "es": "Patata",
+    "en": "Potato"
+  },
+  {
+    "es": "Huevo campero",
+    "en": "Free-range egg"
+  },
+  {
+    "es": "Leche entera",
+    "en": "Whole milk"
+  },
+  {
+    "es": "Concepto",
+    "en": "Item"
+  },
+  {
+    "es": "Café",
+    "en": "Coffee"
+  },
+  {
+    "es": "Producto",
+    "en": "Product"
+  },
+  {
+    "es": "Limón",
+    "en": "Lemon"
+  },
+  {
+    "es": "Harina floja",
+    "en": "All-purpose flour"
+  },
+  {
+    "es": "Salmón ahumado",
+    "en": "Smoked salmon"
+  },
+  {
+    "es": "Lechuga",
+    "en": "Lettuce"
+  },
+  {
+    "es": "Tomate",
+    "en": "Tomato"
+  },
+  {
+    "es": "Estado",
+    "en": "Status"
+  }
+]

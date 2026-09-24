@@ -1,0 +1,461 @@
+{
+ "_leeme": "Listados de WebstaurantStore (distribuidor online de hostelería de EE. UU.) leídos con curl el 24-sep-2026 desde su página de búsqueda (www.webstaurantstore.com/search/<término>.html): título tal cual, precio del formato en USD y URL del producto. Evidencia de las fuentes «WSS» de mercado_en.json; lo lee generar_mercado.py.",
+ "consultado": "2026-09-24",
+ "listados": {
+  "Lee Kum Kee 1.65 Liter Premium Pure Sesame Oil - 10/Case": {
+   "titulo": "Lee Kum Kee 1.65 Liter Premium Pure Sesame Oil - 10/Case",
+   "precio_usd": 162.49,
+   "url": "https://www.webstaurantstore.com/lee-kum-kee-1-65-liter-premium-pure-sesame-oil-case/137LKK0233.html"
+  },
+  "Kikkoman Traditionally Brewed Soy Sauce 1 Gallon - 4/Case": {
+   "titulo": "Kikkoman Traditionally Brewed Soy Sauce 1 Gallon - 4/Case",
+   "precio_usd": 59.99,
+   "url": "https://www.webstaurantstore.com/kikkoman-traditionally-brewed-soy-sauce-1-gallon-container-case/13700171.html"
+  },
+  "Regal Hulled White Sesame Seeds 5 lb.": {
+   "titulo": "Regal Hulled White Sesame Seeds 5 lb.",
+   "precio_usd": 21.49,
+   "url": "https://www.webstaurantstore.com/regal-white-sesame-seeds-5-lb/102708370.html"
+  },
+  "Grade A Ultra-Pasteurized 40% Heavy Cream 32 fl. oz. - 12/Case": {
+   "titulo": "Grade A Ultra-Pasteurized 40% Heavy Cream 32 fl. oz. - 12/Case",
+   "precio_usd": 59.78,
+   "url": "https://www.webstaurantstore.com/1-qt-grade-a-ultra-pasteurized-40-heavy-cream-12-case/874RE2836.html"
+  },
+  "Grassland Unsalted Grade AA Butter Solid 1 lb. - 36/Case": {
+   "titulo": "Grassland Unsalted Grade AA Butter Solid 1 lb. - 36/Case",
+   "precio_usd": 116.42,
+   "url": "https://www.webstaurantstore.com/1-lb-unsalted-grade-aa-butter-solid-36-case/874RE3100.html"
+  },
+  "Cabot Grade AA 83% Unsalted European Butter Solid 1 lb. - 36/Case": {
+   "titulo": "Cabot Grade AA 83% Unsalted European Butter Solid 1 lb. - 36/Case",
+   "precio_usd": 133.0,
+   "url": "https://www.webstaurantstore.com/cabot-grade-aa-83-unsalted-european-butter-solid-1-lb-case/874RE0699.html"
+  },
+  "Cacao Barry Deodorized Cocoa Butter Pistoles 6.6 lb.": {
+   "titulo": "Cacao Barry Deodorized Cocoa Butter Pistoles 6.6 lb.",
+   "precio_usd": 142.99,
+   "url": "https://www.webstaurantstore.com/cacao-barry-deodorized-cocoa-butter-pistoles-6-6-lb/999BHD703.html"
+  },
+  "Callebaut Recipe CW2 White Chocolate Callets™ 22 lb.": {
+   "titulo": "Callebaut Recipe CW2 White Chocolate Callets™ 22 lb.",
+   "precio_usd": 218.49,
+   "url": "https://www.webstaurantstore.com/callebaut-recipe-cw2-white-chocolate-callets-22-lb/409CW2C595.html"
+  },
+  "HERSHEY'S 10-12% Fat Dutch Cocoa Powder 25 lb.": {
+   "titulo": "HERSHEY'S 10-12% Fat Dutch Cocoa Powder 25 lb.",
+   "precio_usd": 178.99,
+   "url": "https://www.webstaurantstore.com/hersheys-25-lb-dutch-cocoa-powder/403340063025.html"
+  },
+  "Blue Diamond Gluten-Free Almond Flour 25 lb.": {
+   "titulo": "Blue Diamond Gluten-Free Almond Flour 25 lb.",
+   "precio_usd": 158.99,
+   "url": "https://www.webstaurantstore.com/premium-gluten-free-almond-flour-25-lb/104ALMDFLR25.html"
+  },
+  "Domino 10X Confectioners Sugar 50 lb.": {
+   "titulo": "Domino 10X Confectioners Sugar 50 lb.",
+   "precio_usd": 48.49,
+   "url": "https://www.webstaurantstore.com/domino-10x-confectioners-sugar-50-lb/104SUG10X50.html"
+  },
+  "Domino Pure Cane Extra Fine Granulated Sugar - 50 lb.": {
+   "titulo": "Domino Pure Cane Extra Fine Granulated Sugar - 50 lb.",
+   "precio_usd": 50.49,
+   "url": "https://www.webstaurantstore.com/domino-extra-fine-granulated-sugar-50-lb/104SUGEFG50.html"
+  },
+  "Golden Barrel Light Brown Sugar 50 lb.": {
+   "titulo": "Golden Barrel Light Brown Sugar 50 lb.",
+   "precio_usd": 51.99,
+   "url": "https://www.webstaurantstore.com/golden-barrel-50-lb-light-brown-sugar/104SUGLTBR50.html"
+  },
+  "King Arthur Flour Special Patent Flour 50 lb.": {
+   "titulo": "King Arthur Flour Special Patent Flour 50 lb.",
+   "precio_usd": 30.49,
+   "url": "https://www.webstaurantstore.com/king-arthur-flour-special-patent-50-lb-flour/104NFL5105S.html"
+  },
+  "ADM All Purpose Flour 50 lb.": {
+   "titulo": "ADM All Purpose Flour 50 lb.",
+   "precio_usd": 29.99,
+   "url": "https://www.webstaurantstore.com/all-purpose-flour-50-lb/104HR.html"
+  },
+  "Fleischmann's Fresh Compressed Yeast 1 lb. - 24/Case": {
+   "titulo": "Fleischmann's Fresh Compressed Yeast 1 lb. - 24/Case",
+   "precio_usd": 52.92,
+   "url": "https://www.webstaurantstore.com/fleischmanns-fresh-compressed-yeast-case/877AMI2117.html"
+  },
+  "Papetti's Frozen Liquid Egg Whites 5 lb. - 6/Case": {
+   "titulo": "Papetti's Frozen Liquid Egg Whites 5 lb. - 6/Case",
+   "precio_usd": 105.71,
+   "url": "https://www.webstaurantstore.com/papettis-frozen-liquid-egg-whites-5-lb-case/873MIC50100.html"
+  },
+  "IQF Red Raspberries 10 lb. Bag": {
+   "titulo": "IQF Red Raspberries 10 lb. Bag",
+   "precio_usd": 41.99,
+   "url": "https://www.webstaurantstore.com/iqf-red-raspberries-10-lb-bag/877RE80243.html"
+  },
+  "Chefmaster 10.5 oz. Super Red Liqua-Gel Food Coloring": {
+   "titulo": "Chefmaster 10.5 oz. Super Red Liqua-Gel Food Coloring",
+   "precio_usd": 10.49,
+   "url": "https://www.webstaurantstore.com/chefmaster-10-5-oz-super-red-liqua-gel-food-coloring/999CM5477.html"
+  },
+  "Shank's Premium Pure Vanilla Extract 16 fl. oz.": {
+   "titulo": "Shank's Premium Pure Vanilla Extract 16 fl. oz.",
+   "precio_usd": 28.99,
+   "url": "https://www.webstaurantstore.com/shanks-premium-16-oz-pure-vanilla-extract/1041464.html"
+  },
+  "Torani Puremade Caramel Flavoring Sauce 64 fl. oz. - 4/Case": {
+   "titulo": "Torani Puremade Caramel Flavoring Sauce 64 fl. oz. - 4/Case",
+   "precio_usd": 69.99,
+   "url": "https://www.webstaurantstore.com/torani-puremade-caramel-flavoring-sauce-64-fl-oz-case/8808606CS.html"
+  },
+  "Large Pitted Kalamata Olives 9 lb. (4.4 lb. Dr. Wt.)": {
+   "titulo": "Large Pitted Kalamata Olives 9 lb. (4.4 lb. Dr. Wt.)",
+   "precio_usd": 23.99,
+   "url": "https://www.webstaurantstore.com/4-4-lb-large-pitted-kalamata-olives/999345213.html"
+  },
+  "Krinos Greek Feta Cheese Pail 10 lb.": {
+   "titulo": "Krinos Greek Feta Cheese Pail 10 lb.",
+   "precio_usd": 72.79,
+   "url": "https://www.webstaurantstore.com/krinos-greek-feta-cheese-pail-10-lb/875FETAK10.html"
+  },
+  "Santa Marta 4-Month Aged Manchego-Style Cheese Wheel 7 lb. - 2/Case": {
+   "titulo": "Santa Marta 4-Month Aged Manchego-Style Cheese Wheel 7 lb. - 2/Case",
+   "precio_usd": 169.9,
+   "url": "https://www.webstaurantstore.com/santa-marta-4-month-aged-manchego-style-cheese-wheel-7-lb-case/875SMARTA27.html"
+  },
+  "Norwell Sliced Cold Smoked Salmon 16 oz.": {
+   "titulo": "Norwell Sliced Cold Smoked Salmon 16 oz.",
+   "precio_usd": 35.03,
+   "url": "https://www.webstaurantstore.com/norwell-sliced-cold-smoked-salmon-16-oz/872OLM9003.html"
+  },
+  "Rico Foods Cuban Ham Croquettes 1.1 oz. - 40/Case": {
+   "titulo": "Rico Foods Cuban Ham Croquettes 1.1 oz. - 40/Case",
+   "precio_usd": 21.9,
+   "url": "https://www.webstaurantstore.com/rico-foods-cuban-ham-croquettes-1-oz-case/878RIC2060.html"
+  },
+  "Cuisine Innovations Mini Quiche Assortment 0.8 oz. - 100/Case": {
+   "titulo": "Cuisine Innovations Mini Quiche Assortment 0.8 oz. - 100/Case",
+   "precio_usd": 95.2,
+   "url": "https://www.webstaurantstore.com/cuisine-innovations-mini-quiche-assortment-0-8-oz-case/878FILLO51025.html"
+  },
+  "Turano 2 3/4\" Sliced Mini Brioche Slider Bun - 216/Case": {
+   "titulo": "Turano 2 3/4\" Sliced Mini Brioche Slider Bun - 216/Case",
+   "precio_usd": 69.59,
+   "url": "https://www.webstaurantstore.com/turano-2-3-4-sliced-mini-brioche-slider-bun-case/876TUR8307.html"
+  },
+  "Hometown Provisions Premium Blend Coarse Ground Coffee 2 lb. - 5/Case": {
+   "titulo": "Hometown Provisions Premium Blend Coarse Ground Coffee 2 lb. - 5/Case",
+   "precio_usd": 78.99,
+   "url": "https://www.webstaurantstore.com/hometown-provisions-premium-blend-coarse-ground-coffee-2-lb-case/110HPCGPREM.html"
+  },
+  "Sambazon Unsweetened Organic Acai 3.5 oz. Pack - 80/Case": {
+   "titulo": "Sambazon Unsweetened Organic Acai 3.5 oz. Pack - 80/Case",
+   "precio_usd": 97.59,
+   "url": "https://www.webstaurantstore.com/sambazon-unsweetened-organic-acai-3-5-oz-pack-case/877SAM000003.html"
+  },
+  "Oatly Barista Edition Oat Milk 32 fl. oz. - 12/Case": {
+   "titulo": "Oatly Barista Edition Oat Milk 32 fl. oz. - 12/Case",
+   "precio_usd": 39.99,
+   "url": "https://www.webstaurantstore.com/oatly-barista-edition-oat-milk-32-fl-oz-case/110OTBAROAT.html"
+  },
+  "Bob's Red Mill 25 lb. Classic Granola": {
+   "titulo": "Bob's Red Mill 25 lb. Classic Granola",
+   "precio_usd": 92.99,
+   "url": "https://www.webstaurantstore.com/bobs-red-mill-25-lb-classic-granola/1041669B25.html"
+  },
+  "Bob's Red Mill Unsweetened Shredded Coconut 25 lb.": {
+   "titulo": "Bob's Red Mill Unsweetened Shredded Coconut 25 lb.",
+   "precio_usd": 119.99,
+   "url": "https://www.webstaurantstore.com/bobs-red-mill-unsweetened-shredded-coconut-25-lb/104101058.html"
+  },
+  "Hometown Provisions Clover Honey 60 lb.": {
+   "titulo": "Hometown Provisions Clover Honey 60 lb.",
+   "precio_usd": 148.49,
+   "url": "https://www.webstaurantstore.com/hometown-provisions-60-lb-clover-honey/125HHCLOV60.html"
+  },
+  "Hometown Provisions Walnut Halves and Pieces 5 lb.": {
+   "titulo": "Hometown Provisions Walnut Halves and Pieces 5 lb.",
+   "precio_usd": 22.99,
+   "url": "https://www.webstaurantstore.com/hometown-provisions-walnut-halves-and-pieces-5-lb/113HTP19170.html"
+  },
+  "Regal Ground Cinnamon 4 lb.": {
+   "titulo": "Regal Ground Cinnamon 4 lb.",
+   "precio_usd": 19.49,
+   "url": "https://www.webstaurantstore.com/regal-ground-cinnamon-4-5-lb/1020708093.html"
+  },
+  "Philadelphia Original Firm Cream Cheese Block 3 lb. - 6/Case": {
+   "titulo": "Philadelphia Original Firm Cream Cheese Block 3 lb. - 6/Case",
+   "precio_usd": 89.34,
+   "url": "https://www.webstaurantstore.com/philadelphia-original-firm-cream-cheese-block-3-lb-case/875KRA616982.html"
+  },
+  "Turano 4 1/2\" Sliced Brioche Bun - 80/Case": {
+   "titulo": "Turano 4 1/2\" Sliced Brioche Bun - 80/Case",
+   "precio_usd": 74.99,
+   "url": "https://www.webstaurantstore.com/turano-4-1-2-sliced-brioche-bun-case/876TUR8327.html"
+  },
+  "Turano 5\" Sliced Brioche Bun - 80/Case": {
+   "titulo": "Turano 5\" Sliced Brioche Bun - 80/Case",
+   "precio_usd": 79.99,
+   "url": "https://www.webstaurantstore.com/turano-5-sliced-brioche-bun-case/876TUR8330.html"
+  },
+  "Thomas' Original English Muffins  - 72/Case": {
+   "titulo": "Thomas' Original English Muffins  - 72/Case",
+   "precio_usd": 35.7,
+   "url": "https://www.webstaurantstore.com/thomas-original-english-muffins-case/876BB117872.html"
+  },
+  "Kraft Sliced Yellow American Cheese - 640/Case": {
+   "titulo": "Kraft Sliced Yellow American Cheese - 640/Case",
+   "precio_usd": 88.15,
+   "url": "https://www.webstaurantstore.com/kraft-sliced-160-slice-yellow-american-cheese-5-lb-case/875KRA603142.html"
+  },
+  "Cornerstone 5 lb. Shredded Cheddar Cheese - 4/Case": {
+   "titulo": "Cornerstone 5 lb. Shredded Cheddar Cheese - 4/Case",
+   "precio_usd": 60.98,
+   "url": "https://www.webstaurantstore.com/cornerstone-5-lb-shredded-cheddar-cheese-case/875RE00725.html"
+  },
+  "Sweet Baby Ray's BBQ Sauce 1 Gallon - 4/Case": {
+   "titulo": "Sweet Baby Ray's BBQ Sauce 1 Gallon - 4/Case",
+   "precio_usd": 58.99,
+   "url": "https://www.webstaurantstore.com/sweet-baby-rays-1-gallon-barbecue-sauce-case/125991112.html"
+  },
+  "Del Sol 1 Gallon Sliced Dill Pickle Chips - 4/Case": {
+   "titulo": "Del Sol 1 Gallon Sliced Dill Pickle Chips - 4/Case",
+   "precio_usd": 24.99,
+   "url": "https://www.webstaurantstore.com/del-sol-1-gallon-sliced-dill-pickle-chips-case/12587541.html"
+  },
+  "Plain Cabbage Slaw 5 lb. - 4/Case": {
+   "titulo": "Plain Cabbage Slaw 5 lb. - 4/Case",
+   "precio_usd": 39.98,
+   "url": "https://www.webstaurantstore.com/plain-cabbage-slaw-5-lb-case/877JVI03295.html"
+  },
+  "Admiration Canola Frying Oil - 35 lb.": {
+   "titulo": "Admiration Canola Frying Oil - 35 lb.",
+   "precio_usd": 43.99,
+   "url": "https://www.webstaurantstore.com/admiration-canola-frying-oil-35-lb/101FRYNFRY.html"
+  },
+  "High-Oleic Sunflower Oil - 35 lb.": {
+   "titulo": "High-Oleic Sunflower Oil - 35 lb.",
+   "precio_usd": 65.49,
+   "url": "https://www.webstaurantstore.com/high-oleic-sunflower-oil-35-lb/101SUNFLWRHO.html"
+  },
+  "Q Mixers Premium Tonic Water Bottle 6.7 fl. oz. - 24/Case": {
+   "titulo": "Q Mixers Premium Tonic Water Bottle 6.7 fl. oz. - 24/Case",
+   "precio_usd": 40.99,
+   "url": "https://www.webstaurantstore.com/soda-tonic-6-7oz-6-4pk-q-mixers-glass-case/103QMTONICG.html"
+  },
+  "Polar 1 Liter Club Soda - 12/Case": {
+   "titulo": "Polar 1 Liter Club Soda - 12/Case",
+   "precio_usd": 12.99,
+   "url": "https://www.webstaurantstore.com/polar-1-liter-club-soda-case/103PLCLUB1L.html"
+  },
+  "Regal Juniper Berries 12 oz.": {
+   "titulo": "Regal Juniper Berries 12 oz.",
+   "precio_usd": 12.99,
+   "url": "https://www.webstaurantstore.com/regal-juniper-berries-12-oz/102708486.html"
+  },
+  "Maldon Sea Salt Bucket 3.1 lb.": {
+   "titulo": "Maldon Sea Salt Bucket 3.1 lb.",
+   "precio_usd": 31.99,
+   "url": "https://www.webstaurantstore.com/maldon-sea-salt-bucket-3-1-lb/102MDSALT60.html"
+  },
+  "Regal Spanish Natural Flower of Salt (Fleur de Sel) 1 lb.": {
+   "titulo": "Regal Spanish Natural Flower of Salt (Fleur de Sel) 1 lb.",
+   "precio_usd": 17.99,
+   "url": "https://www.webstaurantstore.com/regal-spanish-natural-flower-of-salt-fleur-de-sel-1-lb/10207588.html"
+  },
+  "Regal Whole Black Peppercorn 5 lb.": {
+   "titulo": "Regal Whole Black Peppercorn 5 lb.",
+   "precio_usd": 35.99,
+   "url": "https://www.webstaurantstore.com/regal-whole-black-peppercorn-5-lb/102707726.html"
+  },
+  "Morton Bulk Coarse Kosher Salt 3 lb. - 12/Case": {
+   "titulo": "Morton Bulk Coarse Kosher Salt 3 lb. - 12/Case",
+   "precio_usd": 42.49,
+   "url": "https://www.webstaurantstore.com/morton-3-lb-bulk-coarse-kosher-salt-case/102SALT1170CS.html"
+  },
+  "Regal Bulk Fine Sea Salt 25 lb.": {
+   "titulo": "Regal Bulk Fine Sea Salt 25 lb.",
+   "precio_usd": 39.49,
+   "url": "https://www.webstaurantstore.com/regal-salt-sea-fine-25/10207572.html"
+  },
+  "Les Vergers Boiron Passion Fruit 100% Fruit Puree 2.2 lb. - 6/Case": {
+   "titulo": "Les Vergers Boiron Passion Fruit 100% Fruit Puree 2.2 lb. - 6/Case",
+   "precio_usd": 113.81,
+   "url": "https://www.webstaurantstore.com/les-vergers-boiron-2-2-lb-passion-fruit-100-fruit-puree-case/877BPUREPASS.html"
+  },
+  "Roasted Unsalted Pumpkin Seeds 12 lb.": {
+   "titulo": "Roasted Unsalted Pumpkin Seeds 12 lb.",
+   "precio_usd": 59.99,
+   "url": "https://www.webstaurantstore.com/12-lb-unsalted-roasted-pumpkin-seeds/104992524.html"
+  },
+  "Roasted Unsalted Sunflower Seeds 30 lb.": {
+   "titulo": "Roasted Unsalted Sunflower Seeds 30 lb.",
+   "precio_usd": 69.99,
+   "url": "https://www.webstaurantstore.com/roasted-unsalted-sunflower-seeds-30-lb/113SFNSRNS30.html"
+  },
+  "Bakery de France 32 oz. Sliced Sourdough Bread Loaf - 6/Case": {
+   "titulo": "Bakery de France 32 oz. Sliced Sourdough Bread Loaf - 6/Case",
+   "precio_usd": 50.73,
+   "url": "https://www.webstaurantstore.com/bakery-de-france-32-oz-sliced-sourdough-bread-loaf-case/876BDFF2365.html"
+  },
+  "Fresh Standard Asparagus 11 lb.": {
+   "titulo": "Fresh Standard Asparagus 11 lb.",
+   "precio_usd": 89.4,
+   "url": "https://www.webstaurantstore.com/jvi-specialty-standard-asparagus-11-lb/877JVI131.html"
+  },
+  "Fresh #1 Grade Hass Avocados 48 Count": {
+   "titulo": "Fresh #1 Grade Hass Avocados 48 Count",
+   "precio_usd": 60.0,
+   "url": "https://www.webstaurantstore.com/jvi-specialty-1-grade-hass-avocados-48-count/877JVI391.html"
+  },
+  "Fresh Cauliflower Florets 3 lb. - 2/Case": {
+   "titulo": "Fresh Cauliflower Florets 3 lb. - 2/Case",
+   "precio_usd": 47.63,
+   "url": "https://www.webstaurantstore.com/fresh-cauliflower-florets-3-lb-2-case-case/877PRI221.html"
+  },
+  "Unpeeled Shallots 10 lb.": {
+   "titulo": "Unpeeled Shallots 10 lb.",
+   "precio_usd": 30.4,
+   "url": "https://www.webstaurantstore.com/unpeeled-shallots-10-lb/877JVI02084.html"
+  },
+  "Fresh Fennel Bulbs 18 lb.": {
+   "titulo": "Fresh Fennel Bulbs 18 lb.",
+   "precio_usd": 60.8,
+   "url": "https://www.webstaurantstore.com/fresh-fennel-bulbs-18-lb/877JVI00332.html"
+  },
+  "Rosemary 2.2 lb.": {
+   "titulo": "Rosemary 2.2 lb.",
+   "precio_usd": 24.32,
+   "url": "https://www.webstaurantstore.com/rosemary-2-2-lb/877JVI00937.html"
+  },
+  "Fresh Origins Micro Arugula 8 oz.": {
+   "titulo": "Fresh Origins Micro Arugula 8 oz.",
+   "precio_usd": 32.42,
+   "url": "https://www.webstaurantstore.com/fresh-origins-micro-arugula-8-oz/877SAN110087.html"
+  },
+  "Choice Lemon - 115/Case": {
+   "titulo": "Choice Lemon - 115/Case",
+   "precio_usd": 62.4,
+   "url": "https://www.webstaurantstore.com/choice-lemon-case/877JVI04481.html"
+  },
+  "Fresh Limes - 200/Case": {
+   "titulo": "Fresh Limes - 200/Case",
+   "precio_usd": 57.0,
+   "url": "https://www.webstaurantstore.com/jvi-specialty-limes-case/877JVI020.html"
+  },
+  "Fresh Mixed Color Cherry Tomatoes 1 Pint - 12/Case": {
+   "titulo": "Fresh Mixed Color Cherry Tomatoes 1 Pint - 12/Case",
+   "precio_usd": 30.4,
+   "url": "https://www.webstaurantstore.com/jvi-specialty-mixed-color-cherry-tomatoes-1-pint-case/877JVI320.html"
+  },
+  "Fresh Persian Cucumber 20 lb.": {
+   "titulo": "Fresh Persian Cucumber 20 lb.",
+   "precio_usd": 83.6,
+   "url": "https://www.webstaurantstore.com/jvi-specialty-persian-cucumber-20-lb/877JVI181.html"
+  },
+  "Jumbo Red Onion 25 lb.": {
+   "titulo": "Jumbo Red Onion 25 lb.",
+   "precio_usd": 33.44,
+   "url": "https://www.webstaurantstore.com/jumbo-red-onion-25-lb/877JVI04636.html"
+  },
+  "Peeled Garlic 5 lb. - 4/Case": {
+   "titulo": "Peeled Garlic 5 lb. - 4/Case",
+   "precio_usd": 82.08,
+   "url": "https://www.webstaurantstore.com/peeled-garlic-5-lb-case/877JVI02619.html"
+  },
+  "Fresh Mint 2.2 lb.": {
+   "titulo": "Fresh Mint 2.2 lb.",
+   "precio_usd": 21.28,
+   "url": "https://www.webstaurantstore.com/fresh-mint-2-2-lb/877JVI02119.html"
+  },
+  "Chives 2.2 lb.": {
+   "titulo": "Chives 2.2 lb.",
+   "precio_usd": 25.2,
+   "url": "https://www.webstaurantstore.com/chives-2-2-lb/877JVI01292.html"
+  },
+  "Fresh Spring Mix Salad 3 lb. - 4/Case": {
+   "titulo": "Fresh Spring Mix Salad 3 lb. - 4/Case",
+   "precio_usd": 43.88,
+   "url": "https://www.webstaurantstore.com/fresh-spring-mix-salad-3-lb-4-case-case/877PRI1886.html"
+  },
+  "Plum Tomatoes 25 lb.": {
+   "titulo": "Plum Tomatoes 25 lb.",
+   "precio_usd": 45.68,
+   "url": "https://www.webstaurantstore.com/plum-tomatoes-25-lb/877JVI01085.html"
+  },
+  "Loose Jumbo Carrots 25 lb.": {
+   "titulo": "Loose Jumbo Carrots 25 lb.",
+   "precio_usd": 23.03,
+   "url": "https://www.webstaurantstore.com/loose-jumbo-carrots-25-lb/877JVI00205.html"
+  },
+  "White Chef Potato 50 lb.": {
+   "titulo": "White Chef Potato 50 lb.",
+   "precio_usd": 36.48,
+   "url": "https://www.webstaurantstore.com/white-chef-potato-50-lb/877JVI00870.html"
+  },
+  "Fresh Sweet Potatoes US #1 40 lb.": {
+   "titulo": "Fresh Sweet Potatoes US #1 40 lb.",
+   "precio_usd": 63.84,
+   "url": "https://www.webstaurantstore.com/fresh-sweet-potatoes-us-1-40-lb/877JVI6352W.html"
+  },
+  "Fresh Oranges - 88/Case": {
+   "titulo": "Fresh Oranges - 88/Case",
+   "precio_usd": 51.68,
+   "url": "https://www.webstaurantstore.com/fresh-oranges-case/877JVI04474.html"
+  },
+  "8 oz. Sushi Grade Ahi Tuna Portions - 10 lb.": {
+   "titulo": "8 oz. Sushi Grade Ahi Tuna Portions - 10 lb.",
+   "precio_usd": 78.4,
+   "url": "https://www.webstaurantstore.com/10-lb-case-of-8-oz-sushi-grade-ahi-tuna-portions/872TUNAAHI8.html"
+  },
+  "Smithfield SmokeN'Fast 5 lb. Sauceless Pulled Pork - 2/Case": {
+   "titulo": "Smithfield SmokeN'Fast 5 lb. Sauceless Pulled Pork - 2/Case",
+   "precio_usd": 82.82,
+   "url": "https://www.webstaurantstore.com/smithfield-5-lb-sauceless-pulled-pork-case/878SMI269047.html"
+  },
+  "Spanish Yellow Onion 10 lb.": {
+   "titulo": "Spanish Yellow Onion 10 lb.",
+   "precio_usd": 12.16,
+   "url": "https://www.webstaurantstore.com/10-lb-spanish-onion/877JVI00680.html"
+  },
+  "Hometown Provisions Extra Heavy Mayonnaise 1 Gallon - 4/Case": {
+   "titulo": "Hometown Provisions Extra Heavy Mayonnaise 1 Gallon - 4/Case",
+   "precio_usd": 52.99,
+   "url": "https://www.webstaurantstore.com/hometown-provisions-extra-heavy-mayonnaise-1-gallon-case/125HPMAYXTR.html"
+  },
+  "Heinz #10 Fancy Tomato Ketchup Pouch 114 oz. Pack - 6/Case": {
+   "titulo": "Heinz #10 Fancy Tomato Ketchup Pouch 114 oz. Pack - 6/Case",
+   "precio_usd": 69.49,
+   "url": "https://www.webstaurantstore.com/heinz-fancy-ketchup-pouch-pack-case/125992331.html"
+  },
+  "Seamazz 16/20 Size Split and Deveined Easy Peel Raw White Shrimp 2 lb. Bag - 10/Case": {
+   "titulo": "Seamazz 16/20 Size Split and Deveined Easy Peel Raw White Shrimp 2 lb. Bag - 10/Case",
+   "precio_usd": 179.77,
+   "url": "https://www.webstaurantstore.com/seamazz-16-20-size-split-and-deveined-easy-peel-raw-white-shrimp-2-lb-bag-case/872MAZ524243.html"
+  },
+  "IQF Blueberries 30 lb. Case": {
+   "titulo": "IQF Blueberries 30 lb. Case",
+   "precio_usd": 62.58,
+   "url": "https://www.webstaurantstore.com/iqf-blueberries-30-lb-case/877PRO559681.html"
+  },
+  "Hometown Provisions Extra Virgin Olive Oil 3 Liter - 4/Case": {
+   "titulo": "Hometown Provisions Extra Virgin Olive Oil 3 Liter - 4/Case",
+   "precio_usd": 102.99,
+   "url": "https://www.webstaurantstore.com/hometown-provisions-extra-virgin-olive-oil-3-liter-case/101EVOOHTP.html"
+  },
+  "Callebaut Recipe 70/30 Dark Chocolate Callets™ 22 lb.": {
+   "titulo": "Callebaut Recipe 70/30 Dark Chocolate Callets™ 22 lb.",
+   "precio_usd": 216.49,
+   "url": "https://www.webstaurantstore.com/callebaut-recipe-70-30-dark-chocolate-callets-22-lb/999C7030595.html"
+  },
+  "Isigny Sainte-Mere Unfractionated Unsalted Lamination Butter Sheet 82% Butterfat 2.2 lb. - 10/Case": {
+   "titulo": "Isigny Sainte-Mere Unfractionated Unsalted Lamination Butter Sheet 82% Butterfat 2.2 lb. - 10/Case",
+   "precio_usd": 249.34,
+   "url": "https://www.webstaurantstore.com/isigny-sainte-mere-pastry-sheet-butter-2-2-lb-case/874ISI27830.html"
+  },
+  "Trident Seafoods 3 lb. Atlantic Smoked Salmon": {
+   "titulo": "Trident Seafoods 3 lb. Atlantic Smoked Salmon",
+   "precio_usd": 84.67,
+   "url": "https://www.webstaurantstore.com/3-lb-atlantic-smoked-salmon/872SLMNOR3.html"
+  }
+ }
+}

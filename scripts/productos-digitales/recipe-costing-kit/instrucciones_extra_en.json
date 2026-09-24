@@ -1,0 +1,2626 @@
+{
+ "_leeme": [
+  "Recipe Costing Kit Pro (EN): textos de Instrucciones que el ES no tiene. Lo genera generar_instrucciones_extra.py (no se edita a mano); cifras de mercado_en.json y mapas.py. Sesión Claude Code, 2026-09-24. Redactado por Claude (regla 1bis), sin bridge.py.",
+  "aplicar_en.py: en la hoja Instructions de cada libro, insertar «filas» en la columna B justo ANTES de la fila del pie de marca (ancla), después de traducir. La fila en blanco que ya precede al ancla separa lo existente del primer título nuevo; cada sección acaba con su propia fila vacía. Solo texto: ninguna fórmula, DV, CF ni área de impresión (Instructions no tiene).",
+  "Estilos: copiar los de las filas ES (titulo = el de «Cómo usar esta plantilla»; vineta y linea = el de una fila «▸»); altura automática; ajuste de texto y alineación superior, como el ES.",
+  "«notas_existentes»: sustituyen a la traducción de textos_en de esa cadena ES en esa hoja (misma regla que textos_cifra_derivada de mercado_en.json).",
+  "Comillas: las dobles rectas solo citan pestañas DEL MISMO libro (D9, R2T-18); las pestañas de otro libro y los rótulos van sin comillas; los valores a teclear, entre comillas simples."
+ ],
+ "fecha": "2026-09-24",
+ "insercion": {
+  "hoja": "Instructions",
+  "columna": "B",
+  "posicion": "antes_del_ancla",
+  "ancla_es": "— Kit de Escandallos Pro · AI Chef Pro · aichef.pro",
+  "ancla_en": "— Recipe Costing Kit Pro · AI Chef Pro · aichef.pro",
+  "estilos": {
+   "titulo": {
+    "font": "Calibri",
+    "size": 12,
+    "bold": true,
+    "color": "001A1A1A",
+    "wrap": true,
+    "vertical": "top"
+   },
+   "vineta": {
+    "font": "Calibri",
+    "size": 11,
+    "bold": false,
+    "color": "00333333",
+    "wrap": true,
+    "vertical": "top"
+   },
+   "linea": {
+    "font": "Calibri",
+    "size": 11,
+    "bold": false,
+    "color": "00333333",
+    "wrap": true,
+    "vertical": "top"
+   }
+  }
+ },
+ "cifras": {
+  "harina_precio": 29.99,
+  "harina_10oz": 0.37,
+  "solomillo_lb": 17.21,
+  "solomillo_racion_oz": 7,
+  "merma_ficha_12": 37.4,
+  "perdida_bruta_12": 39.3,
+  "fondo_qt": 10.0,
+  "keg_precio": 110.0,
+  "keg_floz": 661.3333333333334,
+  "keg_pinta": 2.66,
+  "margarita_precio": 14.0,
+  "texas_neto": 13.06,
+  "aperol_321_pc": 28,
+  "aperol_precio": 15.0,
+  "macaron_mayorista": 0.95,
+  "macaron_vitrina": 2.75,
+  "macaron_vitrina_fc": 9,
+  "celda_bottle": "B147",
+  "celda_can": "B153",
+  "bottle_ml": 750,
+  "can_ml": 355,
+  "pt_ml": 473,
+  "gal_l": 3.785,
+  "floz_ml": 29.6,
+  "imp_pt_ml": 568,
+  "uk_floz_ml": 28.4,
+  "bonus_solomillo_lb": 0.6988,
+  "c06": {
+   "C9_invitados_por_camarero": 25,
+   "C12_coste_hora_camarero": 25.0,
+   "C14_coste_hora_jefe_sala": 35.0,
+   "C17_rentals_por_invitado": 3.5,
+   "C28_minimo": 1000.0
+  },
+  "w2_servidor": 18.3,
+  "be08_total": 465.0,
+  "bar_min": 18,
+  "bar_max": 24,
+  "uk_gp_bar": "76-82%",
+  "umbral13": 5,
+  "caja_6x5lb": [
+   75.0,
+   30,
+   2.5
+  ],
+  "lata10": [
+   105,
+   5.25,
+   0.05
+  ],
+  "lata10_caja_lb": 39.375,
+  "uk_carta": [
+   18.0,
+   15.0,
+   14.4
+  ],
+  "escalado": [
+   10,
+   25,
+   2.5,
+   3,
+   7.5
+  ]
+ },
+ "linea_licencia_d18": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+ "linea_d11": "Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+ "rangos_para_lista_blanca": [
+  {
+   "rango": "18-20%",
+   "contexto": "04, pour cost de destilados"
+  },
+  {
+   "rango": "18-24%",
+   "contexto": "04, bar entero (D12 bar)"
+  },
+  {
+   "rango": "76-82%",
+   "contexto": "04, GP UK equivalente al pour cost D12 (100 − 18-24)"
+  },
+  {
+   "rango": "5-15%",
+   "contexto": "01-08, GST/HST de Canadá (D6)"
+  },
+  {
+   "rango": "18-22%",
+   "contexto": "06, service charge de catering en EE. UU."
+  },
+  {
+   "rango": "1:10-12 · 1:20 · 1:25",
+   "contexto": "06, ratios de personal"
+  },
+  {
+   "rango": "96 to 117 oz",
+   "contexto": "01-08, peso neto de la lata #10 (USDA FBG)"
+  },
+  {
+   "rango": "50-60%",
+   "contexto": "01-08 Trim Loss Factors!E7, merma de pescado entero a filete"
+  }
+ ],
+ "ficheros": {
+  "01-standard-recipe-cost-card.xlsx": {
+   "fichero_es": "01-escandallo-estandar.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 46,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin on \"Recipe Cost Card\" is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock on \"Recipe Cost Card\" ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "02-tasting-menu.xlsx": {
+   "fichero_es": "02-menu-degustacion.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 46,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock in template 01 ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "03-prix-fixe-lunch-menu.xlsx": {
+   "fichero_es": "03-menu-del-dia.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 46,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock in template 01 ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "04-cocktails-and-drinks.xlsx": {
+   "fichero_es": "04-cocktails-bebidas.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 59,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock in template 01 ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Pours, pour cost and bar taxes",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. standard pours: spirits 1.5 fl oz · wine 5 fl oz · beer 12 fl oz (bottle or can) · draft beer, usually a 16 fl oz pint.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK legal measures: gin, rum, vodka and whisky in 25 ml or 35 ml (or multiples) · still wine by the glass in 125 ml or 175 ml (or multiples) · draft beer and cider in ⅓, ½ or ⅔ pint, or multiples of ½ pint. Pour in ml, and in imp pt for beer.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Spirits: buy in L (price per liter from \"Bottle Sizes\"), pour in fl oz (UK: ml). Pour cost 18-20%.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Wine by the glass: the same, from its 750 ml row on \"Bottle Sizes\" (or by the 12x750 ml case). Its pour cost runs higher than spirits.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Draft beer: buy in 1/6 bbl keg, 1/2 bbl keg or 50 L keg at the keg price, pour in fl oz (UK: imp pt). About 20%. A $110 sixtel poured in 16 fl oz pints costs $2.66 a pint before foam and line loss: put those in Trim loss %.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Bottled and canned beer: buy by the 'can' or the 24x12 fl oz case, sell by the can. About 25%.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Aperol Spritz: the example uses a 1.5 fl oz house pour of Aperol. The classic 3-2-1 spec (3 parts prosecco, 2 Aperol, 1 soda) takes 2 fl oz and runs about 28% pour cost at $15: spritzes are wine-based and cost more than a spirit-forward drink.",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Whole bar: 18-24% pour cost, which a UK bar reads as 76-82% GP. To cost a beer or a glass of wine, duplicate a cocktail tab (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Taxes the bar pays on its drink sales come off the price before you judge pour cost. Texas, for example, charges the permit holder 6.7% of mixed-drink receipts, on top of the 8.25% sales tax the guest pays: for a $14.00 margarita, type 13.06 in Current menu price (14.00 × 0.933).",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: Alcohol Duty reaches you through your wholesaler's prices. Re-cost your drinks after each duty change (recent ones took effect on 1 February).",
+     "bloque": "bar04"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "05-pastry-and-bakery.xlsx": {
+   "fichero_es": "05-pasteleria.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 47,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Yield (units per batch) to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per unit doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (pastry cream, doughs, glazes): cost the batch on its own card (a copy of the tab) with Yield (units per batch) = the batch yield in the unit you'll use (e.g., 2,000 g) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER UNIT.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods; this template already works in grams, like most U.S. pastry kitchens. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Macarons: the example is priced wholesale to cafés ($0.95 a piece), which is what puts it in the 25-35% range. At retail ($2.75 in a pastry case) the same macaron runs about 9% food cost: its cost is labor, not ingredients, so price retail macarons on labor time, not on the food cost target.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "06-catering-and-events.xlsx": {
+   "fichero_es": "06-catering.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 59,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock in template 01 ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Service charge, staff and tax on the proposal",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Markup on services (%) on \"Event Quote\" (C25) is YOUR internal margin on staff, rentals, transport and setup. It isn't a service charge and never shows on the proposal.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Optional service charge: if you bill one, give it its own line on \"Client Proposal\": in B9 the item (e.g., Service charge, 20% on food), in C9 type 1 and in D9 the amount (20% × Menu price for food, C26 on \"Event Quote\"). U.S. caterers often charge 18-22%. It stays out of the meal food cost % (C35), as it should: it isn't food revenue.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Then add one sentence to the note at the bottom, A15 (Review → Unprotect Sheet first): A 20% service charge on food is added to the final invoice; it is not a gratuity.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: a mandatory service charge is not a tip (DOL Fact Sheet #15). It's your revenue (if you pass it to staff, it's paid as wages) and it can be subject to sales tax: in New York it is, unless it's stated separately as a gratuity and paid in full to the staff. Check your state. A tip the client adds on top belongs to the staff and isn't part of your sales.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: under the Employment (Allocation of Tips) Act 2023, in force since 1 October 2024, every tip, gratuity and service charge, mandatory or optional, goes to the staff in full, so a service charge can never be your margin. A mandatory service charge carries 20% VAT; a freely given tip doesn't.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK and Australia: set Tax rate (%) on \"Event Quote\" (C31) to 20% (VAT) or 10% (GST). Then unprotect \"Client Proposal\", change A15 to Prices include VAT (or GST) and add incl. VAT to the headings in D7 and B13.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and Canada: keep Tax rate (%) on \"Event Quote\" (C31) at 0%. \"Client Proposal\" takes the price per guest from C32, which already includes whatever rate C31 holds, and its note A15 says sales tax (GST/HST in Canada) is added to the final invoice: a rate in C31 would charge it twice.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Staffing guide, servers per guest: plated dinner 1:10-12 · buffet 1:20 · passed reception 1:25 (the default in Guests per server) · bar, 1 bartender per 50 guests.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Staff rates are placeholders: $25/h per server sits between the W-2 cost of a banquet server (about $18.30: $17.00 median wage + 7.65% payroll taxes) and an agency rate (about $30/h, often with a 4-hour minimum); the floor manager's $35/h keeps the same ratio. Rentals ($3.50 a guest) and the $1,000 minimum are placeholders too: replace them with what you pay.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK staff costs: National Living Wage £12.71/h (21 and over, from April 2026) plus employer NIC.",
+     "bloque": "catering06"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "07-cafe-and-brunch.xlsx": {
+   "fichero_es": "07-cafeteria-brunch.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 46,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as the Loaded Fries in template 08 does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock in template 01 ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "08-food-truck.xlsx": {
+   "fichero_es": "08-food-truck.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 47,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "From invoice to price per unit",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Price/Unit is what you pay for ONE purchase unit: fees included (a split-case fee, for instance), recoverable tax left out (UK VAT if you're VAT-registered; in the U.S., food bought for resale is usually exempt from sales tax).",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Catch weight (meat, fish or cheese billed by actual weight; the invoice line reads 1 case, 50.2 lb × price per lb): buy in lb or kg at the invoice price per lb or kg. The case doesn't matter. The tenderloin in template 01 is bought this way, at $17.21/lb.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fixed-weight case that's on the dropdown (50 lb bag, 36x1 lb case, 4x1 gal case, 15 dz case…): pick it as Purchase unit and type the case price exactly as invoiced; the Factor divides it for you. A $29.99 50 lb bag of flour used at 10 oz costs $0.37.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Any other case: read the pack/size on the invoice (4/10 lb = 4 bags of 10 lb = 40 lb; 6/105 oz = six 105 oz cans) and buy in lb, oz, gal or each, with Price/Unit = case price ÷ contents. Say a 6/5 lb case costs $75.00: that's 30 lb, so $2.50/lb. The dropdown won't take a unit that isn't on its list.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ #10 cans: the net weight depends on the product (96 to 117 oz, per the USDA Food Buying Guide), so there's no #10 unit. Buy in oz, with Price/Unit = can price ÷ the net weight on the label: a 105 oz can at $5.25 is $0.05 per oz.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Fryer oil is sold by weight (a 35 lb jug-in-box) and shared by everything you fry. Leave it to the Q-factor, or cost it by weight: buy in lb and use in oz, as \"Loaded Fries\" does.",
+     "bloque": "d20"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Units: what to watch",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ oz is weight, fl oz is volume. What you buy by weight (lb, oz, kg, g) you use by weight; what you buy by volume (gal, qt, pt, cup, fl oz, L, ml) you use by volume. Crossing over shows '?' and 'check units', on purpose.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and imperial measures differ. In this kit pt, qt, gal, cup and fl oz are U.S. (1 pt = 473 ml, 1 gal = 3.785 L, 1 fl oz = 29.6 ml). An imperial pint is 568 ml (use imp pt) and a UK fl oz is 28.4 ml; in the UK, work in ml and L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ 'can' on the list is a 12 fl oz (355 ml) beverage can, not a #10 food can (see above).",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK sizes, exactly where: on \"Conversions\", cell B147 (row bottle→ml, 750: type 700 for a 70 cl bottle) and cell B153 (row can→ml, 355: type 330). Every bottle and can row reads those two cells. It's one size per workbook: if you buy 70 cl spirits and 75 cl wine, keep 'bottle' for the one you use most and cost the other in L.",
+     "bloque": "unidades"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Yield, cooking loss, scaling and sub-recipes",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your own trim loss: weigh the product as it arrives and again once trimmed; trim loss % = 1 − trimmed weight ÷ AP weight. For whole cuts with trim you reuse (tips, chain, bones for stock), use template 12 (Yield Test): it credits those by-products, so the tenderloin's 39.3% raw loss becomes 37.4% for the card.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Cooking loss: if the quantity on the card is the COOKED portion (a 4 oz cooked patty), trim loss must include what's lost on the heat: 1 − (1 − trim loss) × (1 − cooking loss). The Cooking Loss Test tab of template 12 does the math. Or simply enter the raw weight.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Scaling: conversion factor = new yield ÷ old yield. Multiply every Quantity by it and set Number of portions to the new yield (from 10 to 25: factor 2.5, so 3 lb becomes 7.5 lb). Cost per portion doesn't change; the total does. Duplicate the tab first (right-click the tab → Move or Copy → Create a copy).",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sub-recipes (stocks, sauces, doughs): cost the batch on its own card (a copy of the tab) with Number of portions = the batch yield in the unit you'll use (e.g., 6 qt) and Q-factor at 0%, so it isn't counted twice. On the main card, buy it in that unit: in Price/Unit type = and click the sub-recipe's COST PER PORTION. The dark veal stock in template 01 ($10.00 a quart) is a placeholder for exactly that.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weigh dry goods. The kit never converts volume to weight: a cup of flour weighs more or less depending on how it's filled. Enter flour, sugar and the like in oz or g; if a recipe says cups, weigh one cup of YOUR product once and use that weight. Pinches of salt and spices: weigh them or leave them to the Q-factor.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep your prices in template 13 (Ingredient Price List): it flags any ingredient that has gone up more than 5% since your cards were costed, so you know which cards to update.",
+     "bloque": "yield_etc"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Tax by market: what to type and what to print",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S.: leave Tax rate (%) at 0%. Print the pre-tax suggested price; sales tax is added to the check (about 7.5% on average, state plus local). In Current menu price, type the price as printed.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK: set 20% (VAT) and print the price incl. tax, since UK menus show VAT-inclusive prices. In Current menu price, type your menu price WITHOUT VAT, dividing by 1.20 rather than subtracting 20%: £18.00 on the menu is 15.00, not 14.40. Your GP % is 100% minus the actual food cost %.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Canada: as in the U.S., menus show prices before GST/HST (5-15%): leave 0%, or type your rate to see what the guest pays.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Australia: set 10% (GST) and print the price incl. tax; in Current menu price, type the menu price ÷ 1.10.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Tips and service charges are never part of the price you cost against.",
+     "bloque": "impuesto"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (fl oz, 50 lb bag, Beef & red meat): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ The daily costs on \"Break-Even\" ($465 a day: commissary, insurance and permits, fuel, 2 staff, truck depreciation, cleaning) are U.S. placeholders. Replace them with yours.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "09-food-waste-tracker.xlsx": {
+   "fichero_es": "09-control-mermas.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 17,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "Related templates",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Trim loss (what you trim off before cooking) goes in the recipe cost card, not in this log: measure it with template 12 (Yield Test) and type it in Trim loss % on the card. Log here only food that gets thrown away.",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ If the chart looks different after converting, the numbers in the table don't change: the chart only draws them.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample amounts are illustrative U.S. figures — replace them with your own.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "10-menu-price-calculator.xlsx": {
+   "fichero_es": "10-calculadora-pvp.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 20,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "Which price goes on the menu",
+     "bloque": "calculadora10"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ U.S. and Canada: print Menu price (pre-tax); tax is added to the check. UK and Australia: print Menu price incl. tax, with C5 at 20% (VAT) or 10% (GST).",
+     "bloque": "calculadora10"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ UK kitchens talk GP %: GP % = 100% − food cost %, always on the price without VAT.",
+     "bloque": "calculadora10"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Related templates",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your cost per portion is only as good as its prices and trim loss: template 13 (Ingredient Price List) flags ingredients that have gone up more than 5%, and template 12 (Yield Test) measures the real trim loss of the cuts you break down.",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample amounts are illustrative U.S. figures — replace them with your own.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "11-monthly-food-cost-dashboard.xlsx": {
+   "fichero_es": "11-dashboard-food-cost-mensual.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 20,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "Tracking by week",
+     "bloque": "semanal11"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weekly works the same way: one row = one week. Count and value your inventory at the same moment every week (e.g., Sunday night after close), with current prices from template 13 (Ingredient Price List). Each week's ending inventory is next week's beginning inventory.",
+     "bloque": "semanal11"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Purchases = invoices for goods delivered that week, minus credit memos, without recoverable tax. Net food sales = the week's POS food sales (drinks go in their own pour cost) without tax, service charges or tips.",
+     "bloque": "semanal11"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ To label the rows by week: Review → Unprotect Sheet, type Wk 1 to Wk 12 (or each week's start date) over the month names in column B (the chart uses them as labels), then Review → Protect Sheet. The total row already reads TOTAL (12 periods).",
+     "bloque": "semanal11"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ One copy of the file holds 12 weeks, about a quarter: start a new copy for the next 12 and name each copy by its weeks.",
+     "bloque": "semanal11"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Weekly numbers jump around: one Friday delivery can move a week by several points. Judge the 4-week trend and the 12-week total, not a single week.",
+     "bloque": "semanal11"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ If the chart looks different after converting, the numbers in the table don't change: the chart only draws them.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample amounts are illustrative U.S. figures — replace them with your own.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "12-yield-test.xlsx": {
+   "fichero_es": "12-test-de-rendimiento.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 18,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "Related Templates",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Keep the whole cut's AP price in template 13 (Ingredient Price List). Re-run the test when the cut, the supplier or your trim spec changes, not every time the price moves: the Cost factor covers price changes.",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Reference yields for many foods (as purchased to ready to cook, raw to cooked): USDA Food Buying Guide, foodbuyingguide.fns.usda.gov. A starting point; your own test wins.",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (Usable, By-product, Trim (no value)): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Duplicate a tab: right-click the tab → Duplicate.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to Know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Working in metric (UK): enter weights in kg, the price per kg and the portion in g, and set Ounces per pound (for the portion) to 1000 on both tabs; labels that say lb then read kg. The formulas only need consistent units.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "13-ingredient-price-list.xlsx": {
+   "fichero_es": "13-lista-precios-ingredientes.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 22,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "Units and Invoice Formats",
+     "bloque": "unidades13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Base unit: lb, L or each whenever you can, the units your recipe cost cards buy in. oz is weight and fl oz is volume: a row never mixes the two.",
+     "bloque": "unidades13"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ From the invoice to Format content: pack/size 4/10 lb = 40 (base unit lb); a catch-weight line billed per lb = 1, with the price per lb as Price of the format; six #10 cans (6/105 oz) = 630 oz = 39.375 with base unit lb.",
+     "bloque": "unidades13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Related Templates",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Whole cuts you break down: list the AP price per lb here. Their trim loss, with the credit for tips, chain or bones, comes from template 12 (Yield Test), not from this list.",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Paste values only: Ctrl+Shift+V (Mac: Cmd+Shift+V) or Edit → Paste special → Values only. In Excel for Mac, Paste Special is Ctrl+Cmd+V.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (lb, L, each): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Filter and sort: Data → Create a filter, then sort from the filter arrows so each price stays on its ingredient's row.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to Know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  },
+  "BONUS-inventory-and-waste-control.xlsx": {
+   "fichero_es": "BONUS-mermas-inventario.xlsx",
+   "hoja": "Instructions",
+   "n_filas": 22,
+   "filas": [
+    {
+     "tipo": "titulo",
+     "texto": "Using your POS product mix",
+     "bloque": "pmix_bonus"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Your POS already counts what you sold: Toast (Product mix), Square (Item sales), Clover (Item Sales), Lightspeed (Product Mix), Epos Now (Sales by Product). Run it for the same dates as your inventory count.",
+     "bloque": "pmix_bonus"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Set up \"Sales for the Period\" once: each dish in column A and, across its row, what ONE portion uses of each product: the AP qty from its recipe cost card, in the unit shown above the product (a 7 oz tenderloin portion is 0.6988 lb AP once trim loss is in).",
+     "bloque": "pmix_bonus"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Every period, copy ONLY the units sold into column B, on the row of the matching dish. Never paste the export over column A: it comes in its own order, dishes would land next to another dish's recipe, and theoretical usage would be wrong with no warning.",
+     "bloque": "pmix_bonus"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ There are 10 dish rows: fill them first with the dishes that use your most expensive products.",
+     "bloque": "pmix_bonus"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Related templates",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Quantities per portion come from your recipe cost cards (with trim loss measured in template 12, Yield Test, where you have it); unit prices on \"Inventory\" from template 13 (Ingredient Price List), in the same unit you count in.",
+     "bloque": "remisiones 12/13"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Using Google Sheets",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ This file is built for Microsoft Excel. In Google Sheets: upload it to Google Drive, open it and choose File → Save as Google Sheets (Protect sheets and ranges isn't available while it's still an .xlsx). To go back: File → Download → Microsoft Excel (.xlsx).",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Protection: Data → Protect sheets and ranges. Dropdowns: Data → Data validation; if one doesn't come across, type the value exactly as it appears on its list (Expired, Spoiled, Overproduction): the formulas read the text.",
+     "bloque": "sheets"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "titulo",
+     "texto": "Good to know",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Amounts have no currency symbol: they're in your currency. The examples use U.S. dollars.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vineta",
+     "texto": "▸ Sample prices are illustrative U.S. references — replace them with your own supplier invoices.",
+     "bloque": "good"
+    },
+    {
+     "tipo": "linea",
+     "texto": "License: one business (all its locations) per purchase — use it with your clients, but don't hand out copies; schools: info@aichef.pro",
+     "bloque": "good"
+    },
+    {
+     "tipo": "vacia"
+    }
+   ]
+  }
+ },
+ "notas_existentes": [
+  {
+   "ficheros": [
+    "01-standard-recipe-cost-card.xlsx",
+    "02-tasting-menu.xlsx",
+    "03-prix-fixe-lunch-menu.xlsx",
+    "04-cocktails-and-drinks.xlsx",
+    "05-pastry-and-bakery.xlsx",
+    "06-catering-and-events.xlsx",
+    "07-cafe-and-brunch.xlsx",
+    "08-food-truck.xlsx"
+   ],
+   "hoja_en": "Trim Loss Factors",
+   "celda": "A2",
+   "spec": "D9 (yield = 100 % − trim loss)",
+   "es": "La «típica» es la que se precarga en las filas vacías del escandallo al elegir categoría. Ajústala a tu proveedor.",
+   "en": "Typical is the trim loss % that preloads in the empty rows of the recipe cost card when you pick a category. Adjust it to your supplier. Yield % = 100% − trim loss %."
+  },
+  {
+   "ficheros": [
+    "01-standard-recipe-cost-card.xlsx",
+    "02-tasting-menu.xlsx",
+    "03-prix-fixe-lunch-menu.xlsx",
+    "04-cocktails-and-drinks.xlsx",
+    "05-pastry-and-bakery.xlsx",
+    "06-catering-and-events.xlsx",
+    "07-cafe-and-brunch.xlsx",
+    "08-food-truck.xlsx"
+   ],
+   "hoja_en": "Trim Loss Factors",
+   "celda": "A3",
+   "spec": "D20 (remite al 12 y al USDA Food Buying Guide)",
+   "es": "Mide tu merma real con la plantilla 12 (Test de Rendimiento) y llévala a «Merma (%)» de la ficha.",
+   "en": "Measure your real trim loss with template 12 (Yield Test) and type it in Trim loss % on the cost card. Reference yields for many foods: USDA Food Buying Guide (foodbuyingguide.fns.usda.gov)."
+  }
+ ],
+ "notas_nuevas": [
+  {
+   "ficheros": [
+    "01-standard-recipe-cost-card.xlsx",
+    "02-tasting-menu.xlsx",
+    "03-prix-fixe-lunch-menu.xlsx",
+    "04-cocktails-and-drinks.xlsx",
+    "05-pastry-and-bakery.xlsx",
+    "06-catering-and-events.xlsx",
+    "07-cafe-and-brunch.xlsx",
+    "08-food-truck.xlsx"
+   ],
+   "hoja_en": "Trim Loss Factors",
+   "celda": "E4",
+   "estilo_de": "D4",
+   "ancho_columna": 62,
+   "en": "Notes"
+  },
+  {
+   "ficheros": [
+    "01-standard-recipe-cost-card.xlsx",
+    "02-tasting-menu.xlsx",
+    "03-prix-fixe-lunch-menu.xlsx",
+    "04-cocktails-and-drinks.xlsx",
+    "05-pastry-and-bakery.xlsx",
+    "06-catering-and-events.xlsx",
+    "07-cafe-and-brunch.xlsx",
+    "08-food-truck.xlsx"
+   ],
+   "hoja_en": "Trim Loss Factors",
+   "celda": "E7",
+   "estilo_de": "A7",
+   "en": "Gutted, head-on fish cut on the bone. Whole round fish to skin-on fillet loses 50-60%: measure it with template 12."
+  },
+  {
+   "ficheros": [
+    "01-standard-recipe-cost-card.xlsx",
+    "02-tasting-menu.xlsx",
+    "03-prix-fixe-lunch-menu.xlsx",
+    "04-cocktails-and-drinks.xlsx",
+    "05-pastry-and-bakery.xlsx",
+    "06-catering-and-events.xlsx",
+    "07-cafe-and-brunch.xlsx",
+    "08-food-truck.xlsx"
+   ],
+   "hoja_en": "Trim Loss Factors",
+   "celda": "E9",
+   "estilo_de": "A9",
+   "en": "Also stems and flowers, such as asparagus and cauliflower."
+  }
+ ],
+ "validacion": {
+  "fallos": [],
+  "avisos": []
+ }
+}

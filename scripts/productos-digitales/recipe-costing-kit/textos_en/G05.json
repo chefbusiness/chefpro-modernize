@@ -1,0 +1,358 @@
+[
+  {
+    "es": "📋 Calculadora de PVP por Tipo de Establecimiento",
+    "en": "📋 Menu Price Calculator by Venue Type"
+  },
+  {
+    "es": "▸ Escribe en la celda verde (C4) el coste de UNA ración. Sale de la plantilla de escandallo: es la fila «COSTE POR RACIÓN» en 01-04 y 06-08, y «COSTE POR UNIDAD» en 05-pastelería. NO el «COSTE TOTAL DE LA TANDA»: en pastelería difieren por 12, 20 o 30.",
+    "en": "▸ Enter the cost of ONE portion in the green cell (C4). It comes from the recipe cost card: it's the \"COST PER PORTION\" row in files 01-04 and 06-08, and \"COST PER UNIT\" in 05-pastry. NOT the \"TOTAL BATCH COST\": in pastry these differ by a factor of 12, 20, or 30."
+  },
+  {
+    "es": "▸ La tabla calcula el PVP para cada tipo de establecimiento. Sólo se escriben las celdas VERDES.",
+    "en": "▸ The table calculates the menu price for each venue type. Only the GREEN cells are meant to be filled in."
+  },
+  {
+    "es": "Qué es cada columna",
+    "en": "What each column means"
+  },
+  {
+    "es": "▸ Food Cost mín. / máx.: la horquilla de food cost objetivo de ese tipo de negocio. Editable.",
+    "en": "▸ Min./Max. food cost: the target food cost range for that type of business. Editable."
+  },
+  {
+    "es": "▸ Multiplicador: 1 ÷ media de la horquilla. Es el número por el que multiplicas el coste para sacar el PVP — el atajo que se usa en cocina.",
+    "en": "▸ Multiplier: 1 ÷ the range's average. It's the number you multiply the cost by to get the menu price — the shortcut used in the kitchen."
+  },
+  {
+    "es": "▸ Comisión plataforma (%): lo que se queda el intermediario. Se descuenta ANTES de calcular el precio.",
+    "en": "▸ Platform commission (%): what the middleman keeps. It's deducted BEFORE the price is calculated."
+  },
+  {
+    "es": "▸ PVP sin IVA: coste × multiplicador ÷ (1 − comisión).",
+    "en": "▸ Menu price (pre-tax): cost × multiplier ÷ (1 − commission)."
+  },
+  {
+    "es": "▸ PVP con IVA: el anterior por el tipo de IVA de C5.",
+    "en": "▸ Menu price incl. tax: the above, multiplied by the tax rate in C5."
+  },
+  {
+    "es": "▸ Ingreso neto tras comisión: lo que te ingresa la plataforma.",
+    "en": "▸ Net revenue after commission: what the platform actually pays you."
+  },
+  {
+    "es": "▸ Margen neto: ingreso neto − coste del plato. Es el dinero que te queda de verdad.",
+    "en": "▸ Net margin: net revenue − dish cost. It's the money you actually keep."
+  },
+  {
+    "es": "Delivery",
+    "en": "Delivery"
+  },
+  {
+    "es": "▸ Es la fila que más se equivoca todo el mundo. Aplicar el PVP de «Casual Dining» a una carta de Glovo o Uber Eats significa regalar la comisión: con un 30 % de comisión, un plato de 18 € deja 12,60 €.",
+    "en": "▸ It's the row everyone gets wrong most often. Applying the \"Casual Dining\" menu price to a DoorDash, Uber Eats or Grubhub menu (UK: Deliveroo, Just Eat) means giving away your commission for free: at a 25% commission, an $18 dish nets you $13.50.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (comisión y ejemplo de plato, D12/§2.5 fila 10): plataformas sustituidas por «DoorDash, Uber Eats or Grubhub (UK: Deliveroo, Just Eat)» y comisión recalculada al 25% por defecto de D12 (18 → $18 × 0,75 = $13.50, con la misma proporción que el 30%/18€/12,60€ del ES). El agente de mercado ajusta el precio de referencia del plato sobre mercado_en.json."
+  },
+  {
+    "es": "▸ Su food cost objetivo (28-32 %) se mide sobre el ingreso NETO, ya descontada la comisión. Un 30 % sobre neto equivale a un ~21 % sobre el PVP bruto: por eso el precio de la carta de delivery sale alto.",
+    "en": "▸ Its target food cost (28-32%) is measured on NET revenue, after the commission has already been taken out. A 30% food cost on net revenue works out to about 22.5% on the gross menu price — which is why the delivery-menu price comes out high.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada («~21%», D12/§2.5 fila 10): recalculado a ~22.5% con la comisión del 25% por defecto, tal y como fija la SPEC. El agente de mercado confirma el % final si mercado_en.json cambia la comisión."
+  },
+  {
+    "es": "▸ Si vendes por tu propia web o con reparto propio, pon la comisión a 0 % y usa el food cost de tu tipo de local.",
+    "en": "▸ If you sell through your own website or with your own delivery, set the commission to 0% and use the food cost target for your type of venue."
+  },
+  {
+    "es": "Tipo de IVA",
+    "en": "Tax rate"
+  },
+  {
+    "es": "▸ C5 es editable: 10 % en hostelería en España. Cámbialo si te aplica otro tipo (IGIC en Canarias, o el IVA/ITBIS/IVU de tu país en Latinoamérica).",
+    "en": "▸ C5 is editable. It defaults to 0% (US menu prices are usually shown pre-tax); change it if you're in the UK (20% VAT), Canada, Australia (10% GST), or any other market with its own sales tax, VAT or GST.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (IVA/impuesto, D6): misma reescritura que la ya aplicada en G0-comun para «Tipo de IVA (%): editable…» (0% por defecto, UK 20% VAT). El agente de mercado la confirma con la tabla completa US/UK/CA/AU de D6."
+  },
+  {
+    "es": "▸ La hoja está protegida SIN contraseña: sólo se escriben las celdas verdes. Revisar → Desproteger hoja para tocar el resto.",
+    "en": "▸ The sheet is protected with NO password: only the green cells are meant to be filled in. Review → Unprotect Sheet (Google Sheets: Data → Protect sheets and ranges) to edit the rest."
+  },
+  {
+    "es": "Calculadora de PVP Sugerido",
+    "en": "Suggested Menu Price Calculator"
+  },
+  {
+    "es": "COSTE POR RACIÓN / POR UNIDAD (€):",
+    "en": "COST PER PORTION / PER UNIT:"
+  },
+  {
+    "es": "Tipo de IVA (%):",
+    "en": "Tax rate (%):"
+  },
+  {
+    "es": "El IVA es una celda: 10 % en hostelería en España; cámbialo si te aplica otro tipo (IGIC en Canarias, o el IVA/ITBIS/IVU de tu país). El «Multiplicador» es 1 ÷ media del rango de food cost: es el número por el que multiplicas el coste para sacar el PVP.",
+    "en": "The tax rate is a single cell. It defaults to 0% (US menu prices are usually shown pre-tax); change it if you're in the UK (20% VAT) or any other market with its own sales tax, VAT or GST. The \"Multiplier\" is 1 ÷ the average of the food cost range: it's the number you multiply the cost by to get the menu price.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (IVA/impuesto, D6): misma reescritura que c0706/G0-comun (0% por defecto, UK 20% VAT). El agente de mercado la confirma con la tabla completa US/UK/CA/AU."
+  },
+  {
+    "es": "Tipo de establecimiento",
+    "en": "Venue type"
+  },
+  {
+    "es": "Food Cost mín.",
+    "en": "Min. food cost"
+  },
+  {
+    "es": "Food Cost máx.",
+    "en": "Max. food cost"
+  },
+  {
+    "es": "Multiplicador",
+    "en": "Multiplier"
+  },
+  {
+    "es": "Comisión plataforma (%)",
+    "en": "Platform commission (%)"
+  },
+  {
+    "es": "PVP con IVA (€)",
+    "en": "Menu price incl. tax"
+  },
+  {
+    "es": "Ingreso neto tras comisión (€)",
+    "en": "Net revenue after commission"
+  },
+  {
+    "es": "Margen neto (€)",
+    "en": "Net margin"
+  },
+  {
+    "es": "Fine Dining",
+    "en": "Fine Dining"
+  },
+  {
+    "es": "Casual Dining",
+    "en": "Casual Dining"
+  },
+  {
+    "es": "Fast Casual",
+    "en": "Fast Casual"
+  },
+  {
+    "es": "Cafetería",
+    "en": "Café"
+  },
+  {
+    "es": "Catering",
+    "en": "Catering"
+  },
+  {
+    "es": "Food Truck",
+    "en": "Food Truck"
+  },
+  {
+    "es": "Hotel F&B",
+    "en": "Hotel F&B"
+  },
+  {
+    "es": "Pastelería",
+    "en": "Pastry & Bakery"
+  },
+  {
+    "es": "Bar/Cócteles",
+    "en": "Bar/Cocktails"
+  },
+  {
+    "es": "Delivery: la comisión de la plataforma (25-35 %) se descuenta ANTES de calcular el precio, así que el PVP de la carta de delivery sale muy por encima del de sala — es la única forma de que te quede el mismo dinero en el bolsillo. Su food cost objetivo (28-32 %) se mide sobre el INGRESO NETO, no sobre el precio de la carta: un 30 % sobre neto equivale a un ~21 % sobre el PVP bruto, y por eso el precio de delivery sube. Si vendes por tu propia web, pon la comisión a 0 %.",
+    "en": "Delivery: the platform's commission (typically 25-35%) is deducted BEFORE the price is calculated, so the delivery-menu price comes out well above your dine-in price — it's the only way to keep the same amount of money in your pocket. Its target food cost (28-32%) is measured on NET revenue, not on the menu price: a 30% target on net revenue works out to about 22.5% on the gross menu price, and that's why the delivery price runs higher. If you sell through your own website, set the commission to 0%.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (comisión 25-35% y «~21%», D12): «~21%» recalculado a ~22.5% con la comisión del 25% por defecto que fija la SPEC (§2.5, fila 10). El agente de mercado ajusta el rango de comisión y el % final si mercado_en.json cambia la comisión por defecto."
+  },
+  {
+    "es": "La comisión funciona en TODAS las filas: si trabajas una carta de sala también en plataforma, copia el food cost de tu fila y pon la comisión que te cobren.",
+    "en": "The commission works on EVERY row: if you also sell a dine-in menu through a platform, copy your row's food cost and enter whatever commission they charge you."
+  },
+  {
+    "es": "Calculadora de PVP por Tipo de Establecimiento · Kit de Escandallos Pro",
+    "en": "Menu Price Calculator by Venue Type · Recipe Costing Kit Pro"
+  },
+  {
+    "es": "📋 Dashboard Food Cost Mensual",
+    "en": "📋 Monthly Food Cost Dashboard"
+  },
+  {
+    "es": "▸ Registra, mes a mes, el stock inicial, las compras, el stock final y las ventas. Sólo se escriben las celdas VERDES.",
+    "en": "▸ Record, month by month, your beginning inventory, purchases, ending inventory, and sales. Only the GREEN cells are meant to be filled in."
+  },
+  {
+    "es": "▸ El food cost, la diferencia con tu objetivo, el estado y el gráfico salen solos.",
+    "en": "▸ The food cost, the variance from your target, the status, and the chart all calculate themselves."
+  },
+  {
+    "es": "La fórmula (y por qué importa)",
+    "en": "The formula (and why it matters)"
+  },
+  {
+    "es": "▸ Consumo = stock inicial + compras − stock final.",
+    "en": "▸ Usage = beginning inventory + purchases − ending inventory."
+  },
+  {
+    "es": "▸ Food cost = consumo ÷ ventas.",
+    "en": "▸ Food cost = usage ÷ sales."
+  },
+  {
+    "es": "▸ NO es compras ÷ ventas. Una compra fuerte el día 28, o un vaciado de cámara, te movería el indicador varios puntos sin que hubiera cambiado nada en la cocina — que es justo el error que este dashboard existe para evitar.",
+    "en": "▸ It is NOT purchases ÷ sales. A big order on the 28th, or clearing out the walk-in, would swing the number by several points without anything actually changing in the kitchen — which is exactly the mistake this dashboard exists to prevent."
+  },
+  {
+    "es": "▸ El stock en euros lo sacas de la pestaña «Inventario» del BONUS: cantidad × precio unitario.",
+    "en": "▸ Get your stock's value from the \"Inventory\" tab in the BONUS file: quantity × unit price."
+  },
+  {
+    "es": "IVA: todo en NETO",
+    "en": "Tax: everything in NET amounts"
+  },
+  {
+    "es": "▸ Compras y ventas van SIN IVA. Si tu TPV te da las ventas con IVA incluido, divídelas entre 1,10 (o entre 1 + tu tipo) antes de escribirlas.",
+    "en": "▸ Purchases and sales go in NET (pre-tax) amounts. If your POS gives you sales with tax included, divide them by 1 + your tax rate (e.g., 1.20 for 20% UK VAT) before entering them.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (divisor de IVA español 1,10, D6): reescrito con la fórmula genérica 1 + tipo de impuesto y el ejemplo UK 20% VAT. El agente de mercado ajusta el ejemplo final (p. ej. sales tax US por estado)."
+  },
+  {
+    "es": "▸ Con las ventas en bruto el food cost sale unos 3 puntos mejor de lo real y te crees que vas bien.",
+    "en": "▸ Using gross sales makes your food cost look about 3 points better than it really is, so you think things are fine when they're not.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada («unos 3 puntos», §2.5 fila 11/M5): traducción provisional manteniendo la cifra del ES. El agente de mercado la recalcula o confirma sobre mercado_en.json con el impuesto por defecto de EE. UU./UK."
+  },
+  {
+    "es": "Alertas",
+    "en": "Alerts"
+  },
+  {
+    "es": "▸ Columna «Estado»: VERDE («OK») si el food cost del mes está en el objetivo o por debajo; ROJO («ALERTA») si se pasa.",
+    "en": "▸ \"Status\" column: GREEN (\"OK\") if the month's food cost is at or below target; RED (\"ALERT\") if it's over."
+  },
+  {
+    "es": "▸ La columna «Food Cost %» se pinta de rojo cuando supera el objetivo.",
+    "en": "▸ The \"Food Cost %\" column turns red when it goes over the target."
+  },
+  {
+    "es": "▸ El gráfico compara cada mes con el objetivo. Los meses sin datos no pintan barra: ni la real ni la del objetivo — sus celdas devuelven #N/A a propósito (es el único valor que el gráfico salta) y el formato condicional lo esconde de la tabla.",
+    "en": "▸ The chart compares each month against the target. Months with no data don't show a bar: neither the actual one nor the target one — their cells intentionally return #N/A (the only value the chart skips) and conditional formatting hides it from the table."
+  },
+  {
+    "es": "Dashboard Food Cost Mensual",
+    "en": "Monthly Food Cost Dashboard"
+  },
+  {
+    "es": "Año:",
+    "en": "Year:"
+  },
+  {
+    "es": "Food Cost objetivo (%):",
+    "en": "Target food cost (%):"
+  },
+  {
+    "es": "Food cost = (stock inicial + compras − stock final) ÷ ventas. NO es compras ÷ ventas: una compra fuerte a fin de mes te movería el indicador varios puntos sin que hubiera cambiado nada en la cocina. Todo SIN IVA: si tu TPV te da las ventas con IVA, divídelas entre 1,10 antes de escribirlas.",
+    "en": "Food cost = (beginning inventory + purchases − ending inventory) ÷ sales. It is NOT purchases ÷ sales: a big order at the end of the month would swing the number by several points without anything actually changing in the kitchen. Everything goes in NET (pre-tax) amounts: if your POS gives you sales with tax included, divide them by 1 + your tax rate (e.g., 1.20 for 20% UK VAT) before entering them.",
+    "cifra_derivada": true,
+    "nota": "Cifra derivada (divisor de IVA español 1,10, D6): misma reescritura que c0742 con la fórmula genérica 1 + tipo de impuesto y el ejemplo UK 20% VAT. El agente de mercado ajusta el ejemplo final."
+  },
+  {
+    "es": "Mes",
+    "en": "Period (month or week)"
+  },
+  {
+    "es": "Stock inicial (€)",
+    "en": "Beginning inventory"
+  },
+  {
+    "es": "Compras netas sin IVA (€)",
+    "en": "Net purchases (excl. recoverable tax)"
+  },
+  {
+    "es": "Stock final (€)",
+    "en": "Ending inventory"
+  },
+  {
+    "es": "Consumo (€)",
+    "en": "Usage"
+  },
+  {
+    "es": "Ventas netas sin IVA (€)",
+    "en": "Net food sales"
+  },
+  {
+    "es": "Food Cost %",
+    "en": "Food Cost %"
+  },
+  {
+    "es": "Objetivo %",
+    "en": "Target %"
+  },
+  {
+    "es": "Diferencia",
+    "en": "Variance"
+  },
+  {
+    "es": "Enero",
+    "en": "January"
+  },
+  {
+    "es": "Febrero",
+    "en": "February"
+  },
+  {
+    "es": "Marzo",
+    "en": "March"
+  },
+  {
+    "es": "Abril",
+    "en": "April"
+  },
+  {
+    "es": "Mayo",
+    "en": "May"
+  },
+  {
+    "es": "Junio",
+    "en": "June"
+  },
+  {
+    "es": "Julio",
+    "en": "July"
+  },
+  {
+    "es": "Agosto",
+    "en": "August"
+  },
+  {
+    "es": "Septiembre",
+    "en": "September"
+  },
+  {
+    "es": "Octubre",
+    "en": "October"
+  },
+  {
+    "es": "Noviembre",
+    "en": "November"
+  },
+  {
+    "es": "Diciembre",
+    "en": "December"
+  },
+  {
+    "es": "TOTAL ANUAL",
+    "en": "TOTAL (12 periods)"
+  },
+  {
+    "es": "Food Cost mensual vs objetivo",
+    "en": "Monthly Food Cost vs. Target"
+  },
+  {
+    "es": "Dashboard Food Cost Mensual · Kit de Escandallos Pro",
+    "en": "Monthly Food Cost Dashboard · Recipe Costing Kit Pro"
+  }
+]

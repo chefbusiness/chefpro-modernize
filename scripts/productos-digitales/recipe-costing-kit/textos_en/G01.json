@@ -1,0 +1,495 @@
+[
+ {
+  "id": "c0005",
+  "es": "📋 Escandallo Estándar — Plato a la Carta",
+  "en": "📋 Standard Recipe Cost Card — A La Carte Dish"
+ },
+ {
+  "id": "c0009",
+  "es": "▸ Ve a la pestaña 'Escandallo' para empezar.",
+  "en": "▸ Go to the \"Recipe Cost Card\" tab to get started."
+ },
+ {
+  "id": "c0010",
+  "es": "▸ El ejemplo cargado es un solomillo con Pedro Ximénez: bórralo o escribe encima.",
+  "en": "▸ The preloaded example is a beef tenderloin with Pedro Ximénez sherry: delete it or type over it."
+ },
+ {
+  "id": "c0022",
+  "es": "▸ La merma del solomillo (23,5 %) no es la genérica de «Carne roja» (20 %): sale del test de despiece de la plantilla 12 (Test de Rendimiento), que ya descuenta lo que vale el cordón. Mide tu propia merma con la plantilla 12.",
+  "en": "▸ The tenderloin's trim loss (23.5%) isn't the generic Beef & red meat rate (20%): it comes from the butcher's yield test in template 12 (Yield Test), which already credits the value of the trim removed. Measure your own trim loss with template 12.",
+  "nota": "Trim-loss % figures (23.5% tenderloin / 20% generic) come from the ES yield test data; per D9/R2-13 the EN Yield Test (template 12) may produce a different % once built from US market data — market agent to verify/recalculate before publishing."
+ },
+ {
+  "id": "c0055",
+  "es": "Escandallo — Solomillo con PX y Espárragos",
+  "en": "Recipe Cost Card — Beef Tenderloin with PX Sherry Reduction & Asparagus"
+ },
+ {
+  "id": "c0068",
+  "es": "Solomillo de ternera",
+  "en": "Beef tenderloin"
+ },
+ {
+  "id": "c0071",
+  "es": "Patata agria",
+  "en": "Agria potato",
+  "nota": "Agria is a starchy potato variety carried by some US specialty distributors; if not sourceable, market agent may substitute a common US variety (e.g. russet) per D10."
+ },
+ {
+  "id": "c0073",
+  "es": "Espárrago verde",
+  "en": "Green asparagus"
+ },
+ {
+  "id": "c0078",
+  "es": "Vino Pedro Ximénez",
+  "en": "Pedro Ximénez sherry"
+ },
+ {
+  "id": "c0081",
+  "es": "Fondo oscuro de ternera",
+  "en": "Dark veal stock"
+ },
+ {
+  "id": "c0083",
+  "es": "Aceite de oliva virgen extra",
+  "en": "Extra virgin olive oil"
+ },
+ {
+  "id": "c0085",
+  "es": "Flor de sal",
+  "en": "Fleur de sel"
+ },
+ {
+  "id": "c0087",
+  "es": "Pimienta negra",
+  "en": "Black pepper"
+ },
+ {
+  "id": "c0089",
+  "es": "Microgreens (bandeja 50 g)",
+  "en": "Microgreens (50 g tray)",
+  "nota": "US suppliers often sell microgreens by the 4-5 oz clamshell rather than a 50 g tray; market agent to confirm exact US pack size/price in mercado_en.json (D11)."
+ },
+ {
+  "id": "c0193",
+  "es": "Escandallo Estándar — Plato a la Carta · Kit de Escandallos Pro",
+  "en": "Standard Recipe Cost Card — A La Carte Dish · Recipe Costing Kit Pro"
+ },
+ {
+  "id": "c0208",
+  "es": "📋 Escandallo — Menú Degustación",
+  "en": "📋 Recipe Cost Card — Tasting Menu"
+ },
+ {
+  "id": "c0209",
+  "es": "▸ Cada pestaña numerada es un pase del menú: hay NUEVE ('1. Aperitivo'…'9. Pase'), los cinco primeros con ejemplo y los cuatro últimos vacíos.",
+  "en": "▸ Each numbered tab is a course of the menu: there are NINE (\"1. Amuse-Bouche\"…\"9. Course\"), the first five with an example and the last four empty."
+ },
+ {
+  "id": "c0210",
+  "es": "▸ La pestaña 'Resumen' suma sólo los pases que tengan ingredientes: los que dejes vacíos no ensucian el total.",
+  "en": "▸ The \"Summary\" tab only totals the courses that have ingredients: any you leave empty won't skew the total."
+ },
+ {
+  "id": "c0211",
+  "es": "▸ El Food Cost objetivo se edita UNA sola vez, en el Resumen; cada pase lo lee de allí, así que no hay dos precios para lo mismo.",
+  "en": "▸ The target food cost is edited ONCE, in the Summary; every course reads it from there, so you'll never have two different figures for the same thing."
+ },
+ {
+  "id": "c0212",
+  "es": "Aperitivo — Tartar de Atún con Aguacate",
+  "en": "Amuse-Bouche — Tuna Tartare with Avocado"
+ },
+ {
+  "id": "c0213",
+  "es": "Atún rojo (lomo)",
+  "en": "Bluefin tuna (loin)"
+ },
+ {
+  "id": "c0214",
+  "es": "Aguacate Hass",
+  "en": "Hass avocado"
+ },
+ {
+  "id": "c0215",
+  "es": "Sésamo tostado",
+  "en": "Toasted sesame seeds"
+ },
+ {
+  "id": "c0216",
+  "es": "Salsa de soja",
+  "en": "Soy sauce"
+ },
+ {
+  "id": "c0217",
+  "es": "Aceite de sésamo",
+  "en": "Sesame oil"
+ },
+ {
+  "id": "c0219",
+  "es": "Entrante — Vieira con Coliflor y Trufa",
+  "en": "Starter — Scallop with Cauliflower and Truffle"
+ },
+ {
+  "id": "c0220",
+  "es": "Vieira fresca (grande)",
+  "en": "Fresh scallop (large)"
+ },
+ {
+  "id": "c0221",
+  "es": "Coliflor",
+  "en": "Cauliflower"
+ },
+ {
+  "id": "c0222",
+  "es": "Trufa negra",
+  "en": "Black truffle"
+ },
+ {
+  "id": "c0224",
+  "es": "Pescado — Lubina con Beurre Blanc",
+  "en": "Fish — Sea Bass with Beurre Blanc"
+ },
+ {
+  "id": "c0225",
+  "es": "Lubina salvaje",
+  "en": "Wild sea bass"
+ },
+ {
+  "id": "c0226",
+  "es": "Chalota",
+  "en": "Shallot"
+ },
+ {
+  "id": "c0227",
+  "es": "Vino blanco seco",
+  "en": "Dry white wine"
+ },
+ {
+  "id": "c0228",
+  "es": "Hinojo fresco",
+  "en": "Fresh fennel"
+ },
+ {
+  "id": "c0229",
+  "es": "Carne — Carrillera Ibérica al Vino Tinto",
+  "en": "Meat — Iberian Pork Cheek in Red Wine"
+ },
+ {
+  "id": "c0230",
+  "es": "Carrillera ibérica",
+  "en": "Iberian pork cheek"
+ },
+ {
+  "id": "c0231",
+  "es": "Vino tinto reserva",
+  "en": "Reserve red wine"
+ },
+ {
+  "id": "c0233",
+  "es": "Puré de boniato",
+  "en": "Sweet potato purée"
+ },
+ {
+  "id": "c0234",
+  "es": "Romero fresco (1 rama ≈ 1/12 manojo)",
+  "en": "Fresh rosemary (1 sprig ≈ 1/12 bunch)"
+ },
+ {
+  "id": "c0235",
+  "es": "Postre — Esfera de Chocolate con Fruta de la Pasión",
+  "en": "Dessert — Chocolate Sphere with Passion Fruit"
+ },
+ {
+  "id": "c0237",
+  "es": "Fruta de la pasión",
+  "en": "Passion fruit"
+ },
+ {
+  "id": "c0239",
+  "es": "Manteca de cacao",
+  "en": "Cocoa butter"
+ },
+ {
+  "id": "c0240",
+  "es": "6. Pase — escribe aquí el nombre del pase",
+  "en": "6. Course — type the course name here"
+ },
+ {
+  "id": "c0241",
+  "es": "Pase libre: rellena los ingredientes y el Resumen lo suma solo. Si lo dejas vacío, no cuenta.",
+  "en": "Open course: fill in the ingredients and the Summary adds it up automatically. Leave it blank and it won't count."
+ },
+ {
+  "id": "c0242",
+  "es": "7. Pase — escribe aquí el nombre del pase",
+  "en": "7. Course — type the course name here"
+ },
+ {
+  "id": "c0243",
+  "es": "8. Pase — escribe aquí el nombre del pase",
+  "en": "8. Course — type the course name here"
+ },
+ {
+  "id": "c0244",
+  "es": "9. Pase — escribe aquí el nombre del pase",
+  "en": "9. Course — type the course name here"
+ },
+ {
+  "id": "c0245",
+  "es": "Resumen — Menú Degustación",
+  "en": "Summary — Tasting Menu"
+ },
+ {
+  "id": "c0246",
+  "es": "Pase",
+  "en": "Course"
+ },
+ {
+  "id": "c0247",
+  "es": "COSTE TOTAL MENÚ",
+  "en": "TOTAL MENU COST"
+ },
+ {
+  "id": "c0248",
+  "es": "Food Cost objetivo (%) — el único food cost del libro: los pases lo leen de aquí",
+  "en": "Target food cost (%) — the only food cost figure in this workbook: every course reads it from here"
+ },
+ {
+  "id": "c0249",
+  "es": "Los pases sin ingredientes no suman: el menú puede tener de 5 a 9 pases sin tocar una sola fórmula.",
+  "en": "Courses with no ingredients don't add to the total: the menu can run anywhere from 5 to 9 courses without touching a single formula."
+ },
+ {
+  "id": "c0250",
+  "es": "Escandallo — Menú Degustación · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Tasting Menu · Recipe Costing Kit Pro"
+ },
+ {
+  "id": "c0256",
+  "es": "📋 Escandallo — Menú del Día",
+  "en": "📋 Recipe Cost Card — Prix Fixe Lunch Menu"
+ },
+ {
+  "id": "c0257",
+  "es": "▸ Pestañas 'Primer Plato', 'Segundo Plato' y 'Postre': un escandallo cada una.",
+  "en": "▸ The \"Starter\", \"Main\", and \"Dessert\" tabs: one recipe cost card each."
+ },
+ {
+  "id": "c0258",
+  "es": "▸ Pestaña 'Resumen Menú': coste del menú completo (con pan, bebida y café) y PVP sugerido.",
+  "en": "▸ The \"Menu Summary\" tab: the full menu's cost (bread, drink, and coffee included) and the suggested menu price."
+ },
+ {
+  "id": "c0259",
+  "es": "▸ Pestaña 'Rotación Semanal': los cinco menús de lunes a viernes con su coste, su PVP y su food cost por día, más la media de la semana.",
+  "en": "▸ The \"Weekly Rotation\" tab: the five Monday-through-Friday menus with their cost, menu price, and daily food cost, plus the week's average."
+ },
+ {
+  "id": "c0260",
+  "es": "▸ El Food Cost objetivo se edita UNA sola vez, en el Resumen Menú.",
+  "en": "▸ The target food cost is edited ONCE, in the Menu Summary."
+ },
+ {
+  "id": "c0261",
+  "es": "Primer Plato — Ensalada Mediterránea",
+  "en": "Starter — Mediterranean Salad"
+ },
+ {
+  "id": "c0262",
+  "es": "Lechuga variada",
+  "en": "Mixed lettuce"
+ },
+ {
+  "id": "c0263",
+  "es": "Tomate pera",
+  "en": "Roma tomato"
+ },
+ {
+  "id": "c0265",
+  "es": "Cebolla morada",
+  "en": "Red onion"
+ },
+ {
+  "id": "c0266",
+  "es": "Aceitunas negras",
+  "en": "Black olives"
+ },
+ {
+  "id": "c0267",
+  "es": "Queso feta",
+  "en": "Feta cheese"
+ },
+ {
+  "id": "c0268",
+  "es": "AOVE",
+  "en": "EVOO"
+ },
+ {
+  "id": "c0269",
+  "es": "Segundo Plato — Pollo al Horno con Patatas",
+  "en": "Main — Roast Chicken with Potatoes"
+ },
+ {
+  "id": "c0270",
+  "es": "Contramuslo de pollo",
+  "en": "Chicken thigh"
+ },
+ {
+  "id": "c0272",
+  "es": "Pimiento rojo",
+  "en": "Red bell pepper"
+ },
+ {
+  "id": "c0273",
+  "es": "Ajo",
+  "en": "Garlic"
+ },
+ {
+  "id": "c0274",
+  "es": "Postre — Flan Casero",
+  "en": "Dessert — Homemade Flan"
+ },
+ {
+  "id": "c0277",
+  "es": "Vainilla (extracto)",
+  "en": "Vanilla (extract)"
+ },
+ {
+  "id": "c0278",
+  "es": "Caramelo líquido",
+  "en": "Liquid caramel"
+ },
+ {
+  "id": "c0279",
+  "es": "Resumen — Menú del Día",
+  "en": "Summary — Prix Fixe Lunch Menu"
+ },
+ {
+  "id": "c0281",
+  "es": "Pan (por comensal)",
+  "en": "Bread (per guest)"
+ },
+ {
+  "id": "c0282",
+  "es": "Bebida (agua/vino copa)",
+  "en": "Drink (water/glass of wine)"
+ },
+ {
+  "id": "c0284",
+  "es": "COSTE TOTAL MENÚ DEL DÍA",
+  "en": "TOTAL PRIX FIXE MENU COST"
+ },
+ {
+  "id": "c0285",
+  "es": "Food Cost objetivo (%) — el único food cost del libro: los platos lo leen de aquí",
+  "en": "Target food cost (%) — the only food cost figure in this workbook: every dish reads it from here"
+ },
+ {
+  "id": "c0286",
+  "es": "PVP SUGERIDO MENÚ (sin IVA)",
+  "en": "SUGGESTED MENU PRICE (PRE-TAX)"
+ },
+ {
+  "id": "c0287",
+  "es": "Rotación Semanal — los 5 menús del día",
+  "en": "Weekly Rotation — the 5 daily menus"
+ },
+ {
+  "id": "c0288",
+  "es": "Código de color: VERDE = lo escribes tú. GRIS = viene de otra hoja, no se toca. El LUNES trae el nombre y el coste enlazados a las pestañas «Primer Plato», «Segundo Plato» y «Postre»: cambia la receta allí y aquí cambia solo (por eso sus tres celdas de coste están en gris). De MARTES a VIERNES escribes tú el nombre y el coste de cada plato en las celdas verdes. La columna «PVP menú» también es gris: es el precio único del menú y sale del «Resumen Menú», así que el food cost es lo que cambia cada día. ¿Cobras otro precio un día concreto (festivo)? Revisar → Desproteger hoja y escribe encima de esa celda.",
+  "en": "Color code: GREEN = you type it in. GRAY = pulled from another tab, don't touch it. MONDAY has its name and cost linked to the \"Starter\", \"Main\", and \"Dessert\" tabs: change the recipe there and it updates here automatically (that's why its three cost cells are gray). From TUESDAY through FRIDAY, you type in the name and cost of each dish yourself, in the green cells. The Menu price column is also gray: it's the menu's single price and comes from the \"Menu Summary\" tab, so the food cost is what changes each day. Charging a different price on a specific day (a holiday)? Go to Review → Unprotect Sheet (Google Sheets: Data → Protect sheets and ranges) and type over that cell."
+ },
+ {
+  "id": "c0289",
+  "es": "Food cost objetivo (del Resumen)",
+  "en": "Target food cost (from Summary)"
+ },
+ {
+  "id": "c0290",
+  "es": "Día",
+  "en": "Day"
+ },
+ {
+  "id": "c0291",
+  "es": "Primer plato",
+  "en": "Starter"
+ },
+ {
+  "id": "c0292",
+  "es": "Segundo plato",
+  "en": "Main"
+ },
+ {
+  "id": "c0293",
+  "es": "Extras (pan/bebida/café)",
+  "en": "Extras (bread/drink/coffee)"
+ },
+ {
+  "id": "c0294",
+  "es": "COSTE MENÚ (€)",
+  "en": "MENU COST"
+ },
+ {
+  "id": "c0295",
+  "es": "PVP menú (del Resumen)",
+  "en": "Menu price (from Summary)"
+ },
+ {
+  "id": "c0296",
+  "es": "FOOD COST (%)",
+  "en": "FOOD COST (%)"
+ },
+ {
+  "id": "c0297",
+  "es": "Lunes",
+  "en": "Monday"
+ },
+ {
+  "id": "c0298",
+  "es": "Ensalada Mediterránea",
+  "en": "Mediterranean Salad"
+ },
+ {
+  "id": "c0299",
+  "es": "Pollo al Horno con Patatas",
+  "en": "Roast Chicken with Potatoes"
+ },
+ {
+  "id": "c0300",
+  "es": "Flan Casero",
+  "en": "Homemade Flan"
+ },
+ {
+  "id": "c0301",
+  "es": "Martes",
+  "en": "Tuesday"
+ },
+ {
+  "id": "c0302",
+  "es": "Miércoles",
+  "en": "Wednesday"
+ },
+ {
+  "id": "c0303",
+  "es": "Jueves",
+  "en": "Thursday"
+ },
+ {
+  "id": "c0304",
+  "es": "Viernes",
+  "en": "Friday"
+ },
+ {
+  "id": "c0305",
+  "es": "MEDIA SEMANA",
+  "en": "WEEKLY AVERAGE"
+ },
+ {
+  "id": "c0306",
+  "es": "Escandallo — Menú del Día · Kit de Escandallos Pro",
+  "en": "Recipe Cost Card — Prix Fixe Lunch Menu · Recipe Costing Kit Pro"
+ }
+]

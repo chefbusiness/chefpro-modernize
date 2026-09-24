@@ -1,0 +1,10 @@
+[
+ {
+  "fichero_en": "BONUS-inventory-and-waste-control.xlsx",
+  "hoja_en": "Inventory",
+  "celda": "D4",
+  "es": "Compras",
+  "en": "Purchases",
+  "motivo": "«Compras» es dos cosas en el ES: el departamento responsable en 06 «Event Checklist» (Purchasing, textos_en/G03) y la columna de cantidades compradas del BONUS (Purchases). Una cadena, dos traducciones: se fija por celda."
+ }
+]

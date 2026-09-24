@@ -1,0 +1,448 @@
+[
+  {
+    "es": "📋 Test de Rendimiento — Despiece y Cocción",
+    "en": "📋 Yield Test — Butchering and Cooking Loss"
+  },
+  {
+    "es": "Para Qué Sirve",
+    "en": "What It's For"
+  },
+  {
+    "es": "▸ La merma de la hoja «Mermas» de cada ficha es un punto de partida. La tuya depende del proveedor, de la pieza y de cómo la limpias, y la única forma de conocerla es pesar. Esta plantilla convierte ese pesaje en la cifra que necesita tu escandallo.",
+    "en": "▸ The trim loss on the \"Trim Loss Factors\" tab of each recipe cost card is a starting point. Yours depends on your supplier, the specific cut, and how you clean it — and the only way to know it is to weigh it. This template turns that weigh-in into the number your recipe cost card needs."
+  },
+  {
+    "es": "▸ Pestaña «Test de despiece»: una pieza que compras entera (un solomillo, un lomo, un pescado) y lo que sale de ella al limpiarla.",
+    "en": "▸ \"Butcher Yield Test\" tab: a piece you buy whole (a tenderloin, a loin, a whole fish) and what comes out of it once you clean it."
+  },
+  {
+    "es": "▸ Pestaña «Test de cocción»: lo que pierde una elaboración al cocinarla, para cuando racionas en peso cocinado.",
+    "en": "▸ \"Cooking Loss Test\" tab: what a preparation loses when you cook it, for when you portion by cooked weight."
+  },
+  {
+    "es": "Test de Despiece, Paso a Paso",
+    "en": "Butcher Yield Test, Step by Step"
+  },
+  {
+    "es": "▸ 1. Pesa la pieza tal como llega (peso bruto) y escribe el precio por kg de la factura.",
+    "en": "▸ 1. Weigh the piece as it arrives (gross/AP weight) and enter the invoice price per lb."
+  },
+  {
+    "es": "▸ 2. Límpiala y pesa por separado cada parte. Márcala como «Útil» (lo que vas a servir), «Subproducto» (lo que aprovechas en otra elaboración) o «Desecho» (lo que tiras).",
+    "en": "▸ 2. Clean it and weigh each part separately. Mark it as \"Usable\" (what you'll serve), \"By-product\" (what you'll use in another preparation), or \"Trim (no value)\" (what you throw away)."
+  },
+  {
+    "es": "▸ 3. A cada subproducto ponle su valor de mercado por kg: lo que te costaría comprar esa carne para el uso que le das (el cordón para una picada o un fondo, las puntas para un salteado). Ese valor se descuenta del coste de la pieza. Si no lo vas a aprovechar, márcalo como «Desecho».",
+    "en": "▸ 3. Give each by-product its market value per lb: what it would cost you to buy that cut for the use you're giving it (the chain for ground meat or stock, the trimmings for a stir-fry). That value is deducted from the cost of the piece. If you're not going to use it, mark it as \"Trim (no value)\"."
+  },
+  {
+    "es": "▸ 4. La fila «Pérdida de corte» calcula sola lo que no has pesado: el goteo y los recortes que se quedan en la tabla. Si sale negativa (en rojo), has pesado algo dos veces.",
+    "en": "▸ 4. The \"Cutting loss\" row automatically calculates what you haven't weighed: the drip loss and scraps left out of the table. If it comes out negative (in red), you've weighed something twice."
+  },
+  {
+    "es": "▸ 5. Lleva a la ficha la MERMA % PARA TU ESCANDALLO: escríbela en la columna «Merma (%)» de ese ingrediente y deja el precio por kg de compra de siempre. La ficha dará el mismo coste por ración que este test.",
+    "en": "▸ 5. Take the TRIM LOSS % FOR YOUR RECIPE COST CARD over to the card: enter it in that ingredient's \"Trim loss %\" column and keep the usual purchase price per lb. The card will give you the same cost per portion as this test."
+  },
+  {
+    "es": "Cómo Leer el Resultado",
+    "en": "How to Read the Result"
+  },
+  {
+    "es": "▸ Peso útil: la suma de las partes marcadas «Útil».",
+    "en": "▸ Usable weight: the sum of the parts marked \"Usable\"."
+  },
+  {
+    "es": "▸ Coste neto útil: lo que pagaste por la pieza menos lo que valen los subproductos.",
+    "en": "▸ Net usable cost: what you paid for the piece minus what the by-products are worth."
+  },
+  {
+    "es": "▸ Rendimiento bruto (%): peso útil ÷ peso bruto. Es informativo: no tiene en cuenta el valor de los subproductos, así que no lo lleves a la ficha.",
+    "en": "▸ Gross yield (%): usable weight ÷ gross weight. It's informational only — it doesn't account for the value of the by-products, so don't use it on the card."
+  },
+  {
+    "es": "▸ COSTE POR KG ÚTIL: lo que te cuesta de verdad cada kilo que sirves.",
+    "en": "▸ COST PER USABLE LB: what each pound you actually serve really costs you."
+  },
+  {
+    "es": "▸ Factor de coste: coste por kg útil ÷ precio por kg de compra. Si el proveedor sube el precio de la pieza, multiplica el precio nuevo por este factor y tendrás el nuevo coste por kg útil sin repetir el test, mientras no cambien la pieza ni la forma de limpiarla.",
+    "en": "▸ Cost factor: cost per usable lb ÷ purchase price per lb. If your supplier raises the price of the piece, multiply the new price by this factor and you'll have the new cost per usable lb without repeating the test, as long as the cut and how you clean it don't change."
+  },
+  {
+    "es": "▸ MERMA % PARA TU ESCANDALLO: 1 − precio de compra ÷ coste por kg útil. Ya descuenta lo que valen los subproductos y es la única cifra que va a la ficha.",
+    "en": "▸ TRIM LOSS % FOR YOUR RECIPE COST CARD: 1 − purchase price ÷ cost per usable lb. It already accounts for the value of the by-products, and it's the only figure that goes on the card."
+  },
+  {
+    "es": "▸ COSTE POR PORCIÓN: porción estándar × coste por kg útil. La celda verde «Gramos por kilo» vale 1.000 porque la pieza se pesa en kg y la porción en g; si pesas y racionas en la misma unidad, ponla a 1.",
+    "en": "▸ COST PER PORTION: standard portion × cost per usable lb. The green \"Ounces per pound\" cell is set to 16 because the piece is weighed in lb and the portion in oz; if you weigh and portion in the same unit, set it to 1."
+  },
+  {
+    "es": "▸ RACIONES POR PIEZA: peso útil × gramos por kilo ÷ porción estándar, redondeado hacia abajo, porque una ración incompleta no se sirve. En el ejemplo, los 2,100 kg útiles dan 10 raciones de 200 g (sobran 100 g): es la cifra para saber cuántas piezas pedir.",
+    "en": "▸ PORTIONS PER PIECE: usable weight × grams per kilogram ÷ standard portion, rounded down, because you don't serve a partial portion. In the example, 2.100 kg of usable weight yield 10 portions of 200 g (100 g left over): that's the number that tells you how many pieces to order.",
+    "cifra_derivada": true,
+    "nota": "Ejemplo métrico provisional del solomillo ES (2,100 kg útiles → 10 raciones de 200 g). El agente de mercado lo reescribe en lb/oz (factor 16 oz/lb) con el peso y la porción reales del whole beef tenderloin PSMO."
+  },
+  {
+    "es": "Test de Cocción",
+    "en": "Cooking Loss Test"
+  },
+  {
+    "es": "▸ Pesa en crudo lo que vas a cocinar, ya limpio, y escribe el precio por kg de la factura, el mismo de la ficha. Si viene de una pieza que despiezas, escribe también su merma de despiece (la MERMA % PARA TU ESCANDALLO del test de despiece); si la compras lista, déjala en 0 %.",
+    "en": "▸ Weigh what you're about to cook raw, already cleaned, and enter the invoice price per lb, the same one on the card. If it comes from a piece you butcher yourself, also enter its butchering trim loss (the TRIM LOSS % FOR YOUR RECIPE COST CARD from the Butcher Yield Test); if you buy it ready-trimmed, leave it at 0%."
+  },
+  {
+    "es": "▸ Cocínalo como en servicio y pésalo recién hecho, antes de racionar. PÉRDIDA POR COCCIÓN = 1 − peso cocinado ÷ peso crudo.",
+    "en": "▸ Cook it the way you would for service and weigh it right after cooking, before portioning. COOKING LOSS = 1 − cooked weight ÷ raw weight."
+  },
+  {
+    "es": "▸ Si en la ficha escribes la cantidad en peso CRUDO, usa como merma la del despiece, sin más. Si la escribes en peso COCINADO (la porción que sale al plato), usa la MERMA COMBINADA PARA LA FICHA: 1 − (1 − merma de despiece) × (1 − pérdida por cocción). Con cualquiera de las dos, la ficha da el mismo coste por porción que este test.",
+    "en": "▸ If you enter the quantity on the card in RAW weight, just use the butchering trim loss as-is. If you enter it in COOKED weight (the portion that hits the plate), use the COMBINED TRIM LOSS FOR THE CARD: 1 − (1 − butchering trim loss) × (1 − cooking loss). Either way, the card gives you the same cost per portion as this test."
+  },
+  {
+    "es": "▸ Raciones de la tanda: peso cocinado × 1.000 ÷ porción cocinada. En el ejemplo, 1,332 × 1.000 ÷ 133 = 10 hamburguesas.",
+    "en": "▸ Portions in the batch: cooked weight × 1,000 ÷ cooked portion. In the example, 1.332 × 1,000 ÷ 133 = 10 patties.",
+    "cifra_derivada": true,
+    "nota": "Ejemplo métrico provisional de la smash burger (1,332 kg cocinados ÷ ración de 133 g), no del solomillo. El agente de mercado lo rehace en lb/oz con el factor 16 (oz/lb) y el peso real de la smash burger US (Plantilla 08)."
+  },
+  {
+    "es": "▸ Duplica la pestaña para otro test: clic derecho sobre la pestaña → Mover o copiar → Crear una copia.",
+    "en": "▸ Duplicate the tab for another test: right-click the tab → Move or Copy → Create a copy."
+  },
+  {
+    "es": "Los Ejemplos Cargados",
+    "en": "The Loaded Examples"
+  },
+  {
+    "es": "▸ Despiece: el solomillo de ternera entero, con cordón, que compra la plantilla 01, a 28,50 €/kg. Es un ejemplo orientativo, no un test pesado: una pieza de 2,8 kg (las enteras pesan entre 2,5 y 3,2 kg) con una merma de limpieza del 25 %, la referencia habitual para el solomillo entero con cordón. El reparto entre el cordón que se aprovecha y lo que se tira, y el valor del cordón, son estimaciones: pon los tuyos.",
+    "en": "▸ Butchering: the whole beef tenderloin with chain, the one Template 01 (Standard Recipe Cost Card) buys, at $28.50/kg. This is an illustrative example, not an actual weigh-in: a 2.8 kg piece (whole ones weigh between 2.5 and 3.2 kg) with a 25% cleaning trim loss, the usual reference for a whole tenderloin with the chain on. The split between the chain you use and what you discard, and the value of the chain, are estimates — enter your own.",
+    "cifra_derivada": true,
+    "nota": "Precio (28,50 €/kg), peso (2,8 kg) y merma (25%) son del solomillo ES. El agente de mercado los reescribe en USD/lb con datos reales del whole beef tenderloin PSMO."
+  },
+  {
+    "es": "▸ Con ese despiece, la merma del solomillo para la ficha es del 23,5 % (el 25 % de limpieza menos lo que vale el cordón) y no del 20 % genérico de «Carne roja»: es la que lleva ahora la plantilla 01 en la fila del solomillo.",
+    "en": "▸ With that yield test, the tenderloin's trim loss for the card is 23.5% (the 25% cleaning loss minus what the chain is worth), not the generic 20% for \"Beef & red meat\": that's the figure Template 01 (Standard Recipe Cost Card) now carries in the tenderloin row.",
+    "cifra_derivada": true,
+    "nota": "23,5% / 25% / 20% son del ejemplo ES; se recalculan con el precio y la merma reales del PSMO US."
+  },
+  {
+    "es": "▸ Cocción: la smash burger de la plantilla 08, 10 hamburguesas de 180 g de mezcla 80/20. El peso cocinado aplica el rendimiento de referencia del USDA para picada de vacuno con un 20 % de grasa (0,74 kg cocinados por kg crudo). No es una medida: pesa la tuya, porque la plancha, el grosor y el punto lo cambian.",
+    "en": "▸ Cooking: the smash burger from Template 08 (Food Truck), 10 patties of 180 g of 80/20 blend. The cooked weight applies the USDA reference yield for 80/20 ground beef (0.74 kg cooked per kg raw). It's not a fixed measurement — weigh your own, because the flat-top, the thickness, and the doneness all change it.",
+    "cifra_derivada": true,
+    "nota": "180 g y 0,74 son del ejemplo ES; se convierten a oz/lb con el peso real de la smash burger US (la fuente USDA en sí puede mantenerse)."
+  },
+  {
+    "es": "▸ La picada se compra lista, así que su merma de despiece es 0 %, y la ficha 08 lleva también un 0 % en esa fila: con los 180 g en crudo cuesta lo mismo en la ficha que aquí.",
+    "en": "▸ The ground beef is bought ready-trimmed, so its butchering trim loss is 0%, and card 08 also carries 0% in that row: with the 180 g raw, it costs the same on the card as it does here.",
+    "cifra_derivada": true,
+    "nota": "180 g es el peso crudo del ejemplo ES; se convierte a la porción real en oz de la ficha 08 EN."
+  },
+  {
+    "es": "▸ Son datos de ejemplo: escribe encima de las celdas verdes o vacíalas con Supr.",
+    "en": "▸ These are sample figures: type over the green cells or clear them with Delete."
+  },
+  {
+    "es": "Protección de la Hoja",
+    "en": "Sheet Protection"
+  },
+  {
+    "es": "▸ Las hojas están protegidas SIN contraseña para que no borres una fórmula sin querer: se escriben únicamente las celdas verdes. Revisar → Desproteger hoja para tocar el resto; no pide contraseña.",
+    "en": "▸ The sheets are protected WITHOUT a password so you don't accidentally delete a formula: only the green cells are meant to be edited. Review → Unprotect Sheet to change anything else; it won't ask for a password."
+  },
+  {
+    "es": "Test de Despiece — Solomillo de Ternera Entero",
+    "en": "Butcher Yield Test — Whole Beef Tenderloin"
+  },
+  {
+    "es": "Pesa la pieza tal como llega y cada parte que sale al limpiarla. Las celdas verdes son editables; el resto son fórmulas.",
+    "en": "Weigh the piece as it arrives and each part that comes out when you clean it. The green cells are editable; the rest are formulas."
+  },
+  {
+    "es": "DATOS DE LA COMPRA",
+    "en": "PURCHASE DATA"
+  },
+  {
+    "es": "Solomillo de ternera entero, con cordón (sin limpiar)",
+    "en": "Whole beef tenderloin, with chain (untrimmed)"
+  },
+  {
+    "es": "Proveedor",
+    "en": "Supplier"
+  },
+  {
+    "es": "Fecha del test",
+    "en": "Test date"
+  },
+  {
+    "es": "Peso bruto de compra (kg)",
+    "en": "Gross purchase weight (lb)"
+  },
+  {
+    "es": "La pieza entera, tal como llega.",
+    "en": "The whole piece, as it arrives."
+  },
+  {
+    "es": "Precio por kg de compra (€/kg)",
+    "en": "Purchase price per lb"
+  },
+  {
+    "es": "El de la factura: el mismo que pones en la ficha.",
+    "en": "The one from the invoice: the same one you enter on the card."
+  },
+  {
+    "es": "Coste bruto de compra (€)",
+    "en": "Gross purchase cost"
+  },
+  {
+    "es": "Peso × precio.",
+    "en": "Weight × price."
+  },
+  {
+    "es": "Gramos por kilo (para la porción)",
+    "en": "Ounces per pound (for the portion)"
+  },
+  {
+    "es": "Déjalo en 1.000 si pesas la pieza en kg y la porción en g.",
+    "en": "Set it to 16 if you weigh the piece in lb and the portion in oz."
+  },
+  {
+    "es": "Pieza",
+    "en": "Piece"
+  },
+  {
+    "es": "Tipo",
+    "en": "Type"
+  },
+  {
+    "es": "Peso (kg)",
+    "en": "Weight (lb)"
+  },
+  {
+    "es": "Valor de mercado (€/kg)",
+    "en": "Market value (per lb)"
+  },
+  {
+    "es": "Valor (€)",
+    "en": "Value"
+  },
+  {
+    "es": "% del peso bruto",
+    "en": "% of gross weight"
+  },
+  {
+    "es": "Centro, cabeza y punta limpios",
+    "en": "Trimmed center, head, and tail"
+  },
+  {
+    "es": "Cordón limpio (para fondo o picada)",
+    "en": "Cleaned chain (for stock or ground meat)"
+  },
+  {
+    "es": "Grasa, telilla y nervios",
+    "en": "Fat, silverskin, and sinew"
+  },
+  {
+    "es": "Pérdida de corte (goteo y recortes que se pierden)",
+    "en": "Cutting loss (drip and scraps not weighed)"
+  },
+  {
+    "es": "RESULTADO",
+    "en": "RESULT"
+  },
+  {
+    "es": "Peso útil (kg)",
+    "en": "Usable weight (lb)"
+  },
+  {
+    "es": "Suma de las partes «Útil».",
+    "en": "Sum of the parts marked \"Usable\"."
+  },
+  {
+    "es": "Valor de los subproductos (€)",
+    "en": "Value of the by-products"
+  },
+  {
+    "es": "Lo que valen las partes que aprovechas.",
+    "en": "What the parts you use are worth."
+  },
+  {
+    "es": "Coste neto útil (€)",
+    "en": "Net usable cost"
+  },
+  {
+    "es": "Coste bruto de compra − valor de los subproductos.",
+    "en": "Gross purchase cost − value of the by-products."
+  },
+  {
+    "es": "Rendimiento bruto (%) · informativo",
+    "en": "Gross yield (%) · informational"
+  },
+  {
+    "es": "Peso útil ÷ peso bruto. No va a la ficha.",
+    "en": "Usable weight ÷ gross weight. Doesn't go on the card."
+  },
+  {
+    "es": "COSTE POR KG ÚTIL (€/kg)",
+    "en": "COST PER USABLE LB"
+  },
+  {
+    "es": "Lo que te cuesta cada kilo que sirves.",
+    "en": "What each pound you serve costs you."
+  },
+  {
+    "es": "Factor de coste",
+    "en": "Cost factor"
+  },
+  {
+    "es": "Precio nuevo × factor = nuevo coste por kg útil.",
+    "en": "New price × factor = new cost per usable lb."
+  },
+  {
+    "es": "MERMA % PARA TU ESCANDALLO",
+    "en": "TRIM LOSS % FOR YOUR RECIPE COST CARD"
+  },
+  {
+    "es": "La ÚNICA cifra que va a la ficha, a «Merma (%)».",
+    "en": "The ONLY figure that goes on the recipe cost card, in \"Trim loss %\"."
+  },
+  {
+    "es": "Porción estándar (g)",
+    "en": "Standard portion (oz)"
+  },
+  {
+    "es": "En crudo y ya limpia: la ficha 01 usa 200 g.",
+    "en": "Raw and already trimmed: card 01 uses 200 g.",
+    "cifra_derivada": true,
+    "nota": "200 g es la porción del ejemplo ES; se traduce a la porción real en oz de la ficha 01 EN."
+  },
+  {
+    "es": "COSTE POR PORCIÓN (€)",
+    "en": "COST PER PORTION"
+  },
+  {
+    "es": "Porción × coste por kg útil. La ficha dará lo mismo.",
+    "en": "Portion × cost per usable lb. The card will give you the same figure."
+  },
+  {
+    "es": "Raciones por pieza",
+    "en": "Portions per piece"
+  },
+  {
+    "es": "Peso útil ÷ porción, redondeado hacia abajo.",
+    "en": "Usable weight ÷ portion, rounded down."
+  },
+  {
+    "es": "Ejemplo orientativo, no un test pesado: pieza entera de 2,8 kg con la merma de limpieza del 25 % que se da como referencia para el solomillo entero con cordón. El reparto entre el cordón que se aprovecha y lo que se tira, y el valor del cordón, son estimaciones: pesa el tuyo. Duplica la pestaña para otro test (clic derecho sobre la pestaña → Mover o copiar → Crear una copia).",
+    "en": "Illustrative example, not an actual weigh-in: a whole 2.8 kg piece with the 25% cleaning trim loss typically used as a reference for a whole tenderloin with the chain on. The split between the chain you use and what you discard, and the value of the chain, are estimates — weigh your own. Duplicate the tab for another test (right-click the tab → Move or Copy → Create a copy).",
+    "cifra_derivada": true,
+    "nota": "2,8 kg / 25% son del ejemplo ES; se reescriben con el peso y la merma reales del whole beef tenderloin PSMO en lb."
+  },
+  {
+    "es": "Elige Útil, Subproducto o Desecho.",
+    "en": "Choose Usable, By-product, or Trim (no value)."
+  },
+  {
+    "es": "Test de Cocción — Smash Burger (Plantilla 08)",
+    "en": "Cooking Loss Test — Smash Burger (Template 08)"
+  },
+  {
+    "es": "Pesa en crudo lo que vas a cocinar, cocínalo como en servicio y pésalo antes de racionar. Las celdas verdes son editables.",
+    "en": "Weigh what you're about to cook raw, cook it the way you would for service, and weigh it before portioning. The green cells are editable."
+  },
+  {
+    "es": "DATOS DEL TEST",
+    "en": "TEST DATA"
+  },
+  {
+    "es": "Elaboración",
+    "en": "Preparation"
+  },
+  {
+    "es": "Mezcla de vacuno picada 80/20, en bolas de 90 g",
+    "en": "80/20 ground beef blend, in 90 g balls",
+    "cifra_derivada": true,
+    "nota": "90 g es el peso de bola del ejemplo ES; se convierte a oz reales de la smash burger US (Plantilla 08)."
+  },
+  {
+    "es": "Peso crudo útil (kg)",
+    "en": "Usable raw weight (lb)"
+  },
+  {
+    "es": "Ya limpio: lo que entra en la plancha.",
+    "en": "Already trimmed: what goes on the flat-top."
+  },
+  {
+    "es": "Precio de compra por kg (€/kg)",
+    "en": "Purchase price per lb"
+  },
+  {
+    "es": "Peso cocinado (kg)",
+    "en": "Cooked weight (lb)"
+  },
+  {
+    "es": "Recién hecho, antes de racionar.",
+    "en": "Straight off the heat, before portioning."
+  },
+  {
+    "es": "Merma de despiece de esta pieza (%)",
+    "en": "Butchering trim loss for this piece (%)"
+  },
+  {
+    "es": "La MERMA % del test de despiece; 0 % si la compras lista, como esta picada.",
+    "en": "The TRIM LOSS % from the Butcher Yield Test; 0% if you buy it ready-trimmed, like this ground beef."
+  },
+  {
+    "es": "Déjalo en 1.000 si pesas en kg y racionas en g.",
+    "en": "Set it to 16 if you weigh in lb and portion in oz."
+  },
+  {
+    "es": "Porción cocinada (g)",
+    "en": "Cooked portion (oz)"
+  },
+  {
+    "es": "La que sirves: 180 g crudos de la ficha 08 × 0,74.",
+    "en": "The one you serve: 180 g raw from card 08 × 0.74.",
+    "cifra_derivada": true,
+    "nota": "180 g y 0,74 son del ejemplo ES; se recalculan en oz con el peso real de la smash burger US y su rendimiento de cocción."
+  },
+  {
+    "es": "PÉRDIDA POR COCCIÓN (%)",
+    "en": "COOKING LOSS (%)"
+  },
+  {
+    "es": "1 − peso cocinado ÷ peso crudo.",
+    "en": "1 − cooked weight ÷ raw weight."
+  },
+  {
+    "es": "Coste por kg cocinado (€/kg)",
+    "en": "Cost per cooked lb"
+  },
+  {
+    "es": "Precio ÷ ((1 − merma de despiece) × (1 − pérdida por cocción)).",
+    "en": "Price ÷ ((1 − butchering trim loss) × (1 − cooking loss))."
+  },
+  {
+    "es": "COSTE POR PORCIÓN COCINADA (€)",
+    "en": "COST PER COOKED PORTION"
+  },
+  {
+    "es": "Porción × coste por kg cocinado.",
+    "en": "Portion × cost per cooked lb."
+  },
+  {
+    "es": "MERMA COMBINADA PARA LA FICHA (%)",
+    "en": "COMBINED TRIM LOSS FOR THE CARD (%)"
+  },
+  {
+    "es": "Si en la ficha escribes el peso COCINADO.",
+    "en": "If you enter the COOKED weight on the card."
+  },
+  {
+    "es": "Ejemplo: 10 hamburguesas de la plantilla 08 (180 g de mezcla 80/20 cada una). El peso cocinado aplica el rendimiento de referencia del USDA para picada de vacuno con un 20 % de grasa: 0,74 kg cocinados por kg crudo. No es una medida: pesa el tuyo, porque la plancha, el grosor y el punto lo cambian.",
+    "en": "Example: 10 patties from Template 08 (Food Truck), 180 g of 80/20 blend each. The cooked weight applies the USDA reference yield for 80/20 ground beef: 0.74 kg cooked per kg raw. It's not a fixed measurement — weigh your own, because the flat-top, the thickness, and the doneness all change it.",
+    "cifra_derivada": true,
+    "nota": "180 g y 0,74 son del ejemplo ES; se convierten a oz/lb con el peso real de la smash burger US (la fuente USDA puede mantenerse)."
+  },
+  {
+    "es": "Test de Rendimiento: Despiece y Cocción · Kit de Escandallos Pro",
+    "en": "Yield Test: Butchering and Cooking · Recipe Costing Kit Pro"
+  }
+]

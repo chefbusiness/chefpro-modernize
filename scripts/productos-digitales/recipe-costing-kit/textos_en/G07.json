@@ -1,0 +1,467 @@
+[
+ {
+  "es": "📋 Lista de Precios de Ingredientes",
+  "en": "📋 Ingredient Price List"
+ },
+ {
+  "es": "▸ Un único sitio con el precio actual de cada ingrediente, pasado a la unidad que usan tus fichas (kg, L o ud). Cuando llega una factura, actualizas aquí el precio y ves de un vistazo qué ha subido más de la cuenta.",
+  "en": "▸ One place with the current price of every ingredient, converted to the unit your recipe cost cards use (lb, L or each). When an invoice comes in, update the price here and see at a glance what's gone up more than it should."
+ },
+ {
+  "es": "▸ Viene cargada con los 115 ingredientes de las recetas de ejemplo del kit (plantillas 01 a 08) y sus precios, más 30 filas vacías al final para lo que te falte. Escribe encima de los ejemplos o vacíalos seleccionando solo las columnas verdes y pulsando Supr: las blancas son fórmulas y la hoja no deja borrarlas.",
+  "en": "▸ Comes preloaded with the 115 ingredients from the kit's example recipes (templates 01 through 08) and their prices, plus 30 blank rows at the end for anything you're missing. Type over the examples, or clear them by selecting only the green columns and pressing Delete: the white ones are formulas and the sheet won't let you delete them.",
+  "cifra_derivada": true,
+  "nota": "La cifra «aparente 115 ingredientes» queda pendiente de confirmar contra el recuento real de la 13 EN una vez generada desde las recetas EN finales (SPEC §2.5: «cambian ingredientes, unidades y precios»). El «30 filas vacías» es constante de diseño (R2-10) y NO cambia; se mantiene igual."
+ },
+ {
+  "es": "▸ Las celdas VERDES son las editables; las blancas son fórmulas.",
+  "en": "▸ GREEN cells are the editable ones; white cells are formulas."
+ },
+ {
+  "es": "Qué Es Cada Columna",
+  "en": "What Each Column Means"
+ },
+ {
+  "es": "▸ Ingrediente, Categoría y Proveedor: texto libre. La categoría es la misma que usan las fichas.",
+  "en": "▸ Ingredient, Category and Supplier: free text. The category is the same one your recipe cost cards use."
+ },
+ {
+  "es": "▸ Formato de compra: tal como viene en la factura («Saco 25 kg», «Garrafa 5 L», «Estuche 30 huevos»).",
+  "en": "▸ Purchase format: exactly as it appears on the invoice (\"50 lb bag\", \"4x1 gal case\", \"15 dz case\").",
+  "nota": "Ejemplos sustituidos por los 3 formatos D7 reales (bag/case/egg case) en vez de traducir literalmente «Saco 25 kg» / «Garrafa 5 L» / «Estuche 30 huevos»; no requiere el agente de mercado porque D7 ya los fija."
+ },
+ {
+  "es": "▸ Contenido del formato: cuántas unidades base trae (25 en un saco de 25 kg; 0,7 en una botella de 70 cl si la unidad base es el litro).",
+  "en": "▸ Format content: how many base units it holds (50 in a 50 lb bag; 0.75 in a 750 ml bottle if the base unit is the liter).",
+  "cifra_derivada": true,
+  "nota": "Cita un tamaño de botella (categoría cerrada «tamaños de botella/lata» de M5). 750 ml es el valor D7/ENVASES vigente; el agente de mercado confirma la cifra final tras cerrar «Bottle Sizes» (04) y su nota UK (700 ml)."
+ },
+ {
+  "es": "▸ Unidad base: la unidad en la que quieres el precio (desplegable). Usa kg, L o ud siempre que puedas: son las que entienden todas las fichas.",
+  "en": "▸ Base unit: the unit you want the price in (dropdown). Use lb, L or each whenever you can: those are the ones every recipe cost card understands."
+ },
+ {
+  "es": "▸ Precio del formato (€): lo que pagas por él, sin IVA, como en las fichas.",
+  "en": "▸ Price of the format: what you pay for it, before tax, same as on your recipe cost cards."
+ },
+ {
+  "es": "▸ Precio por unidad base (€): precio del formato ÷ contenido, con 4 decimales. Es el número que se lleva a las fichas.",
+  "en": "▸ Price per base unit: price of the format ÷ content, to 4 decimal places. It's the number you carry over to your recipe cost cards."
+ },
+ {
+  "es": "▸ Precio anterior por unidad base (€): el que tienen ahora tus fichas. Actualízalo (copia el «Precio por unidad base» y pégalo aquí con Pegado especial → Valores) solo cuando lleves el precio nuevo a las fichas.",
+  "en": "▸ Previous price per base unit: the one your recipe cost cards currently use. Update it (copy \"Price per base unit\" and paste it here with Paste Special → Values) only once you've carried the new price over to your cost cards."
+ },
+ {
+  "es": "▸ Variación (%): cuánto se ha movido el precio actual respecto al que tienen tus fichas.",
+  "en": "▸ Variance (%): how much the current price has moved compared with the one your recipe cost cards use."
+ },
+ {
+  "es": "▸ Estado: ALERTA (en rojo) si la subida supera el umbral: tus fichas están desfasadas más de la cuenta y toca volver a escandallar. OK si no. Las bajadas nunca dan alerta.",
+  "en": "▸ Status: ALERT (in red) if the increase is above the threshold: your recipe cost cards are out of date by more than they should be, and it's time to re-cost the dish. OK if not. Price drops never trigger an alert."
+ },
+ {
+  "es": "▸ Fecha última factura: para saber de cuándo es cada precio.",
+  "en": "▸ Last invoice date: so you know how current each price is."
+ },
+ {
+  "es": "▸ Notas: en los ejemplos dice en qué fichas del kit se usa cada ingrediente. Apunta lo mismo con tus fichas: es la lista de sitios a los que llevar un precio nuevo.",
+  "en": "▸ Notes: in the examples, this says which cost cards in the kit use each ingredient. Do the same with your own cost cards: it's the list of places to carry a new price to."
+ },
+ {
+  "es": "Umbral de Alerta y Resumen",
+  "en": "Alert Threshold and Summary"
+ },
+ {
+  "es": "▸ La celda verde «Umbral de alerta (%)» viene al 5 %: si el precio actual supera en más de eso al que tienen tus fichas, el ingrediente pasa a ALERTA. Una subida exactamente igual al umbral no la dispara.",
+  "en": "▸ The green \"Alert threshold (%)\" cell defaults to 5%: if the current price rises more than that above the one your recipe cost cards use, the ingredient switches to ALERT. An increase exactly equal to the threshold doesn't trigger it."
+ },
+ {
+  "es": "▸ Así, varias subidas pequeñas seguidas del mismo proveedor acaban saltando: la alerta compara siempre con el precio de tus fichas, no con la última factura.",
+  "en": "▸ That way, several small increases in a row from the same supplier still get caught: the alert always compares against the price on your recipe cost cards, not against the last invoice."
+ },
+ {
+  "es": "▸ Arriba tienes el resumen: nº de ingredientes, nº de alertas y la mayor subida de la lista.",
+  "en": "▸ At the top you'll find the summary: number of ingredients, number of alerts and the biggest increase on the list."
+ },
+ {
+  "es": "▸ En el ejemplo, dos filas llevan un precio anterior marcado «Ilustrativo» en Notas, para que veas una ALERTA y un OK. Bórralos cuando empieces con tus precios.",
+  "en": "▸ In the example, two rows carry a previous price marked \"Sample data\" in Notes, so you can see one ALERT and one OK. Delete them once you start entering your own prices."
+ },
+ {
+  "es": "Cómo Llevar un Precio a la Ficha",
+  "en": "How to Carry a Price Over to a Recipe Cost Card"
+ },
+ {
+  "es": "▸ Las fichas NO leen esta lista por su cuenta: cada plantilla es un libro independiente, y enlazar libros entre sí se rompe en cuanto mueves un fichero o lo abres en Google Sheets.",
+  "en": "▸ Recipe cost cards do NOT read this list on their own: each template is a separate workbook, and linking workbooks together breaks the moment you move a file or open it in Google Sheets."
+ },
+ {
+  "es": "▸ 1. Copia la celda «Precio por unidad base» del ingrediente.",
+  "en": "▸ 1. Copy the ingredient's \"Price per base unit\" cell."
+ },
+ {
+  "es": "▸ 2. En la ficha, sobre «Precio/Ud (€)», pega con Pegado especial → Valores: en Excel, Ctrl+Alt+V y luego V (o Inicio → Pegar → Pegar valores); en Google Sheets, Ctrl+Mayús+V. Un pegado normal arrastraría la fórmula: el precio y el coste de esa línea se quedarían en blanco sin avisar, y el coste del plato saldría más bajo. Comprueba que «Precio/Ud (€)» muestra el número.",
+  "en": "▸ 2. On the recipe cost card, over \"Price/Unit\", paste with Paste Special → Values: in Excel, Ctrl+Alt+V then V (or Home → Paste → Paste Values); in Google Sheets, Ctrl+Shift+V. A normal paste would drag the formula along: the price and cost on that line would go blank without warning, and the dish cost would come out lower. Check that \"Price/Unit\" shows the number."
+ },
+ {
+  "es": "▸ 3. En «Ud. Compra» de la ficha pon la unidad base de la lista. Ejemplo: los huevos camperos se compran por docena en la plantilla 03 (3,60 €/docena); en esta lista van por unidad (0,3000 €/ud). Si pegas 0,30, cambia «Ud. Compra» a «ud».",
+  "en": "▸ 3. In \"Purchase unit\" on the recipe cost card, enter the base unit from the list. Example: free-range eggs are bought by the dozen in template 03 (Prix Fixe Lunch Menu) ($3.60/dozen); in this list they're priced per each ($0.3000/each). If you paste 0.30, change \"Purchase unit\" to \"each\".",
+  "cifra_derivada": true,
+  "nota": "Cita precios de ejemplo (categoría cerrada «precios» de M5): $3.60/dozen y $0.3000/each son una conversión directa provisional de 3,60 € / 0,30 €; el agente de mercado los sustituye por el precio real de huevos de granja en mercado_en.json."
+ },
+ {
+  "es": "▸ 4. Copia también el precio nuevo a «Precio anterior» (Pegado especial → Valores): desde ese momento es el que tienen tus fichas.",
+  "en": "▸ 4. Also copy the new price into \"Previous price per base unit\" (Paste Special → Values): from that point on, it's the one your recipe cost cards use."
+ },
+ {
+  "es": "▸ En la plantilla 04 (cócteles), el precio de los destilados, el vino y el espumoso viene de su pestaña «Formatos de Compra»: allí basta con actualizar el precio de la botella.",
+  "en": "▸ In template 04 (Cocktails & Drinks), the price of spirits, wine and sparkling wine comes from its \"Bottle Sizes\" tab: there, all you need to do is update the bottle price."
+ },
+ {
+  "es": "Filtrar y Ordenar",
+  "en": "Filter and Sort"
+ },
+ {
+  "es": "▸ La tabla lleva autofiltro y funciona con la hoja protegida: usa las flechas de la cabecera para filtrar por categoría, proveedor o estado. Para ver lo que más ha subido, filtra «Estado» por ALERTA.",
+  "en": "▸ The table has autofilter and works with the sheet protected: use the header arrows to filter by category, supplier or status. To see what's gone up the most, filter \"Status\" by ALERT."
+ },
+ {
+  "es": "▸ Para ordenar, primero Revisar → Desproteger hoja (no pide contraseña) y ordena siempre desde las flechas de la cabecera, nunca una columna suelta: así cada precio sigue en la fila de su ingrediente. Si ordenas «Variación (%)» de mayor a menor, quita antes (Vacías) en el filtro de esa columna, o las filas sin precio anterior se quedan arriba. Al terminar, Revisar → Proteger hoja.",
+  "en": "▸ To sort, first go to Review → Unprotect Sheet (no password required; Google Sheets: Data → Protect sheets and ranges) and always sort using the header arrows, never a single column on its own: that way every price stays on its ingredient's row. If you sort \"Variance (%)\" from highest to lowest, first uncheck (Blanks) in that column's filter, or the rows with no previous price will end up at the top. When you're done, go to Review → Protect Sheet (Google Sheets: Data → Protect sheets and ranges)."
+ },
+ {
+  "es": "▸ La hoja está protegida SIN contraseña para que no borres una fórmula sin querer: se escriben las celdas verdes, y las blancas («Precio por unidad base», «Variación» y «Estado») están bloqueadas. Revisar → Desproteger hoja para tocar el resto; no pide contraseña.",
+  "en": "▸ The sheet is protected WITHOUT a password so you don't delete a formula by accident: you type into the green cells, while the white ones (\"Price per base unit\", \"Variance\" and \"Status\") are locked. Go to Review → Unprotect Sheet (Google Sheets: Data → Protect sheets and ranges) to edit the rest; no password required."
+ },
+ {
+  "es": "▸ ¿Te quedas sin filas? Revisar → Desproteger hoja, inserta filas DENTRO de la tabla (encima de la última) y copia en ellas las columnas blancas de la fila de arriba. Así el resumen, el filtro y la impresión las recogen.",
+  "en": "▸ Running out of rows? Go to Review → Unprotect Sheet (Google Sheets: Data → Protect sheets and ranges), insert rows INSIDE the table (above the last one) and copy the white columns from the row above into them. That way the summary, the filter and the print area all pick them up."
+ },
+ {
+  "es": "▸ Si con la hoja desprotegida borras una fórmula, cópiala de cualquiera de las filas vacías del final.",
+  "en": "▸ If you delete a formula while the sheet is unprotected, copy it back from any of the blank rows at the end."
+ },
+ {
+  "es": "Lista de Precios de Ingredientes",
+  "en": "Ingredient Price List"
+ },
+ {
+  "es": "Un precio por ingrediente, pasado a la unidad que usan tus fichas. Las celdas verdes son editables. Para llevar un precio a una ficha, copia «Precio por unidad base» y pégalo con Pegado especial → Valores (Excel: Ctrl+Alt+V y luego V).",
+  "en": "One price per ingredient, converted to the unit your recipe cost cards use. Green cells are editable. To carry a price over to a recipe cost card, copy \"Price per base unit\" and paste it with Paste Special → Values (Excel: Ctrl+Alt+V then V; Google Sheets: Ctrl+Shift+V)."
+ },
+ {
+  "es": "Nº de ingredientes",
+  "en": "No. of ingredients"
+ },
+ {
+  "es": "Umbral de alerta (%)",
+  "en": "Alert threshold (%)"
+ },
+ {
+  "es": "Una subida mayor pone el ingrediente en ALERTA.",
+  "en": "A bigger increase puts the ingredient in ALERT."
+ },
+ {
+  "es": "Nº de alertas",
+  "en": "No. of alerts"
+ },
+ {
+  "es": "Mayor subida (%)",
+  "en": "Biggest increase (%)"
+ },
+ {
+  "es": "Formato de compra",
+  "en": "Purchase format"
+ },
+ {
+  "es": "Contenido del formato",
+  "en": "Format content"
+ },
+ {
+  "es": "Unidad base",
+  "en": "Base unit"
+ },
+ {
+  "es": "Precio del formato (€)",
+  "en": "Price of the format"
+ },
+ {
+  "es": "Precio por unidad base (€)",
+  "en": "Price per base unit"
+ },
+ {
+  "es": "Precio anterior por unidad base (€)",
+  "en": "Previous price per base unit"
+ },
+ {
+  "es": "Variación (%)",
+  "en": "Variance (%)"
+ },
+ {
+  "es": "Fecha última factura",
+  "en": "Last invoice date"
+ },
+ {
+  "es": "Lista de Precios de Ingredientes · Kit de Escandallos Pro",
+  "en": "Ingredient Price List · Recipe Costing Kit Pro"
+ },
+ {
+  "es": "📋 BONUS: Checklist Mermas + Inventario",
+  "en": "📋 BONUS: Waste Checklist + Inventory"
+ },
+ {
+  "es": "▸ Pestaña 'Ventas del periodo': lo que has vendido y cuánto lleva cada ración de cada producto.",
+  "en": "▸ \"Sales for the Period\" tab: what you've sold and how much of each product goes into each portion."
+ },
+ {
+  "es": "▸ Pestaña 'Inventario': el stock real. Compara lo que gastaste con lo que deberías haber gastado y lo valora en euros.",
+  "en": "▸ \"Inventory\" tab: your actual stock. It compares what you used with what you should have used, and puts a dollar value on it."
+ },
+ {
+  "es": "▸ Pestaña 'Checklist Mermas': el registro de incidencias del mes.",
+  "en": "▸ \"Waste Checklist\" tab: the month's log of incidents."
+ },
+ {
+  "es": "▸ Sólo se escriben las celdas VERDES.",
+  "en": "▸ Only the GREEN cells get filled in."
+ },
+ {
+  "es": "Cómo se calcula el consumo teórico",
+  "en": "How Theoretical Usage Is Calculated"
+ },
+ {
+  "es": "▸ Consumo teórico = Σ (raciones vendidas del plato × cantidad de ese producto por ración).",
+  "en": "▸ Theoretical usage = Σ (portions sold of the dish × quantity of that product per portion)."
+ },
+ {
+  "es": "▸ Se rellena en 'Ventas del periodo': una fila por plato, las raciones vendidas en la columna B y la cantidad por ración debajo de cada producto.",
+  "en": "▸ Filled in on \"Sales for the Period\": one row per dish, portions sold in column B, and the quantity per portion under each product."
+ },
+ {
+  "es": "▸ La cantidad es la BRUTA del escandallo (columna «Cant. Bruta», con la merma de despiece ya dentro): si pones la neta, todo el despiece te saldrá como pérdida oculta.",
+  "en": "▸ The quantity is the AP (as-purchased) quantity from the recipe cost card (the \"AP qty\" column, with the butchering trim loss already built in): if you use the edible-portion quantity instead, all that trim will show up as a hidden loss."
+ },
+ {
+  "es": "▸ La fila de TOTALES es la que lee la columna 'Consumo teórico' del inventario. No hay que copiar nada a mano.",
+  "en": "▸ The TOTALS row is what feeds the \"Theoretical usage\" column on the Inventory tab. Nothing needs to be copied by hand."
+ },
+ {
+  "es": "Cómo se lee la diferencia",
+  "en": "How to Read the Variance"
+ },
+ {
+  "es": "▸ Consumo real = stock inicial + compras − stock final.",
+  "en": "▸ Actual usage = beginning inventory + purchases − ending inventory."
+ },
+ {
+  "es": "▸ Diferencia = consumo real − consumo teórico. En positivo, has gastado de más.",
+  "en": "▸ Variance = actual usage − theoretical usage. A positive number means you've used more than you should have."
+ },
+ {
+  "es": "▸ «Valor de la diferencia (€)» = diferencia × precio unitario. Es la columna que manda: prioriza por euros, no por kilos.",
+  "en": "▸ \"Value of the variance\" = variance × unit price. This is the column that matters: prioritize by dollars, not by pounds."
+ },
+ {
+  "es": "▸ Causas habituales de un desvío positivo: porcionado sin control, roturas y caídas, robo, o un escandallo desactualizado.",
+  "en": "▸ Common causes of a positive variance: uncontrolled portioning, breakage and spills, theft, or an outdated recipe cost card."
+ },
+ {
+  "es": "▸ Los productos sin ventas declaradas quedan en blanco a propósito: sin teórico no hay comparación posible.",
+  "en": "▸ Products with no sales logged are left blank on purpose: with no theoretical figure, there's no comparison to make."
+ },
+ {
+  "es": "Registro de incidencias",
+  "en": "Incident Log"
+ },
+ {
+  "es": "▸ 90 líneas al mes (unas tres al día). Fecha, producto, cantidad, motivo (desplegable), acción correctiva y coste estimado.",
+  "en": "▸ 90 lines a month (about three a day). Date, product, quantity, reason (dropdown), corrective action and estimated cost."
+ },
+ {
+  "es": "▸ El total del periodo se suma solo al pie de la tabla.",
+  "en": "▸ The period total adds up automatically at the bottom of the table."
+ },
+ {
+  "es": "▸ Cruza este total con la pestaña «Mermas Semanal» de 09-control-mermas: si no cuadran, es que hay mermas que no se están anotando.",
+  "en": "▸ Cross-check this total against the \"Weekly Waste Log\" tab in 09-food-waste-tracker: if they don't match, some waste isn't being logged."
+ },
+ {
+  "es": "Protección de las hojas",
+  "en": "Sheet Protection"
+ },
+ {
+  "es": "▸ Las hojas están protegidas SIN contraseña: sólo se escriben las celdas verdes. Revisar → Desproteger hoja para tocar el resto.",
+  "en": "▸ The sheets are protected WITHOUT a password: you only type into the green cells. Go to Review → Unprotect Sheet (Google Sheets: Data → Protect sheets and ranges) to edit the rest."
+ },
+ {
+  "es": "Control de Inventario — Semanal/Mensual",
+  "en": "Inventory Control — Weekly/Monthly"
+ },
+ {
+  "es": "Periodo:",
+  "en": "Period:"
+ },
+ {
+  "es": "Consumo real = stock inicial + compras − stock final. Consumo teórico = lo que DEBERÍAS haber gastado según lo que vendiste (pestaña «Ventas del periodo»). La diferencia, valorada en euros, es la pérdida oculta: roturas, robos, porcionado descontrolado o escandallos desactualizados.",
+  "en": "Actual usage = beginning inventory + purchases − ending inventory. Theoretical usage = what you SHOULD have used based on what you sold (the \"Sales for the Period\" tab). The variance, valued in dollars, is your hidden loss: breakage, theft, uncontrolled portioning or outdated recipe cost cards."
+ },
+ {
+  "es": "Ud.",
+  "en": "Unit"
+ },
+ {
+  "es": "Stock inicial",
+  "en": "Beginning inventory"
+ },
+ {
+  "es": "Stock final",
+  "en": "Ending inventory"
+ },
+ {
+  "es": "Consumo real",
+  "en": "Actual usage"
+ },
+ {
+  "es": "Consumo teórico",
+  "en": "Theoretical usage"
+ },
+ {
+  "es": "Diferencia (ud.)",
+  "en": "Variance (units)"
+ },
+ {
+  "es": "Precio unitario (€)",
+  "en": "Unit price"
+ },
+ {
+  "es": "Valor de la diferencia (€)",
+  "en": "Value of the variance"
+ },
+ {
+  "es": "Solomillo ternera",
+  "en": "Beef tenderloin"
+ },
+ {
+  "es": "Contramuslo pollo",
+  "en": "Chicken thigh"
+ },
+ {
+  "es": "Lubina",
+  "en": "Sea bass"
+ },
+ {
+  "es": "Langostino",
+  "en": "Shrimp"
+ },
+ {
+  "es": "Aceite oliva",
+  "en": "Olive oil"
+ },
+ {
+  "es": "Vino blanco",
+  "en": "White wine"
+ },
+ {
+  "es": "Harina",
+  "en": "Flour"
+ },
+ {
+  "es": "Nata",
+  "en": "Heavy cream"
+ },
+ {
+  "es": "Chocolate",
+  "en": "Chocolate"
+ },
+ {
+  "es": "TOTAL DESVÍO VALORADO",
+  "en": "TOTAL VALUE OF VARIANCE"
+ },
+ {
+  "es": "Un desvío POSITIVO significa que has gastado más de lo que vendiste justifica. Empieza siempre por el producto con más euros de desvío, no por el que más unidades se desvía.",
+  "en": "A POSITIVE variance means you've used more than what you sold accounts for. Always start with the product with the highest dollar variance, not the one with the biggest variance in units."
+ },
+ {
+  "es": "Los productos sin ventas declaradas dejan el consumo teórico y la diferencia en blanco: sin ventas no hay teórico con el que comparar, y un cero ahí haría parecer pérdida todo el consumo.",
+  "en": "Products with no sales logged leave theoretical usage and variance blank: with no sales, there's no theoretical figure to compare against, and a zero there would make all of the usage look like a loss."
+ },
+ {
+  "es": "Ventas del periodo — raciones vendidas por plato",
+  "en": "Sales for the Period — Portions Sold per Dish"
+ },
+ {
+  "es": "Una fila por plato: cuántas raciones vendiste y cuánto lleva CADA ración de cada producto del inventario. La cantidad es la BRUTA del escandallo (columna «Cant. Bruta», ya con la merma dentro). La fila de TOTALES multiplica raciones × cantidad y es el «Consumo teórico» que aparece en la pestaña «Inventario».",
+  "en": "One row per dish: how many portions you sold and how much of each inventory product EACH portion uses. The quantity is the AP (as-purchased) figure from the recipe cost card (the \"AP qty\" column, already including the trim). The TOTALS row multiplies portions × quantity and is the \"Theoretical usage\" that shows up on the \"Inventory\" tab."
+ },
+ {
+  "es": "Unidad →",
+  "en": "Unit →"
+ },
+ {
+  "es": "Plato",
+  "en": "Dish"
+ },
+ {
+  "es": "Raciones vendidas",
+  "en": "Portions sold"
+ },
+ {
+  "es": "Solomillo al Pedro Ximénez",
+  "en": "Beef Tenderloin with PX Reduction",
+  "nota": "Nombre acortado del plato de la 01 (D10: «Beef Tenderloin with PX Sherry Reduction & Asparagus»). Verificar contra el nombre EN final de la 01 al cerrar ese grupo."
+ },
+ {
+  "es": "Lubina a la plancha",
+  "en": "Grilled Sea Bass",
+  "nota": "Verificar contra el nombre EN final del plato de pescado equivalente en 03/07 al cerrar esos grupos."
+ },
+ {
+  "es": "Ensalada de la casa",
+  "en": "House salad"
+ },
+ {
+  "es": "TOTALES (raciones · consumo teórico)",
+  "en": "TOTALS (portions · theoretical usage)"
+ },
+ {
+  "es": "Los nombres y las unidades de la cabecera se leen de la pestaña «Inventario»: si cambias un producto allí, aquí cambia solo.",
+  "en": "The names and units in the header are pulled from the \"Inventory\" tab: change a product there and it updates here automatically."
+ },
+ {
+  "es": "Registro de incidencias (mes)",
+  "en": "Incident Log (Month)"
+ },
+ {
+  "es": "90 líneas: unas tres incidencias al día durante un mes. Anota cada merma en cuanto se produce — al final del turno ya no se acuerda nadie.",
+  "en": "90 lines: about three incidents a day over a month. Log each waste incident as soon as it happens — by the end of the shift, nobody remembers."
+ },
+ {
+  "es": "Fecha",
+  "en": "Date"
+ },
+ {
+  "es": "Motivo",
+  "en": "Reason"
+ },
+ {
+  "es": "Acción correctiva",
+  "en": "Corrective action"
+ },
+ {
+  "es": "Coste estimado (€)",
+  "en": "Estimated cost"
+ },
+ {
+  "es": "TOTAL MERMAS DEL PERIODO",
+  "en": "TOTAL WASTE FOR THE PERIOD"
+ },
+ {
+  "es": "Elige un motivo de la lista.",
+  "en": "Choose a reason from the list."
+ },
+ {
+  "es": "BONUS: Checklist Mermas + Inventario · Kit de Escandallos Pro",
+  "en": "BONUS: Waste Checklist + Inventory · Recipe Costing Kit Pro"
+ }
+]
