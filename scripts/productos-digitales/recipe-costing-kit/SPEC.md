@@ -396,21 +396,27 @@ porque `paginas-gate.py` solo lee `productos/**` [T9].
 - Compra de prueba: email EN, dashboard, **15 descargas** (13 plantillas + BONUS xlsx + PDF) y log `[purchase-validation]` con match en `recipe-costing-kit` [T8, R2T-09].
 - `fase8c-libreria-en-gate.py --todos`.
 
-## 5. Pendiente de John
+## 5. Pendiente de John (simplificado por John el 24-sep)
 
-1. **Payment Link USD $19**, al cerrar la F2. Claude le entrega en un bloque:
-   - nombre;
-   - descripción en prosa de ~260 caracteres;
-   - imagen;
-   - `success_url` = `https://aichef.pro/en/digital-products/recipe-costing-kit/access?session_id={CHECKOUT_SESSION_ID}`;
-   - `currency_options` GBP, CAD y AUD calculados ese día a escalón psicológico [M18].
+John, 24-sep: «vendo desde España; Stripe cobra IVA a quien aplica… no me busques las cinco patas del gato».
+Memoria: `feedback_tienda-en-sin-complicar-fiscalidad`.
 
-   Antes de crearlo, John comprueba en Stripe que **USD es moneda de liquidación** (si no, Adaptive Pricing no convierte) y fija `tax_behavior` [T15].
-2. **Fiscalidad de la venta**: registro de VAT del Reino Unido desde la primera venta a consumidores (servicios digitales, sin umbral), más CA, AU y EE. UU. Con el asesor, antes de la F3 (research §3.4).
-3. **Consentimiento para el test de Sheets** en su Drive (D16).
-4. **Condiciones de compra EN** para productos digitales: pago único, acceso de por vida, garantía de 30 días, licencia D18 y renuncia al desistimiento donde aplique (EU/UK). `/en/terminos` solo trata la suscripción del SaaS, y es el destino del enlace del diálogo cripto y de los términos del Payment Link. Decisión legal suya antes de la F3 [M12]. El ES tiene el mismo hueco.
-5. `PURCHASE_VALIDATION=strict`: sin él, una sesión pagada de un producto abre otro [T8]. Aparcado por él.
-6. ~~OK del research de 8 bloques~~ ✅ recibido el 24-sep (§0.3).
+**Fuera de esta SPEC por decisión de John:**
+- registro de VAT del Reino Unido;
+- `currency_options` GBP/CAD/AUD;
+- comprobación de la moneda de liquidación y `tax_behavior`.
+
+**Stripe:**
+- Claude entregó el paquete el 24-sep: nombre «Recipe Costing Kit Pro», descripción en prosa de 254 caracteres, **$19** (si Stripe no deja USD, **17 €**) y redirección a `https://aichef.pro/en/digital-products/recipe-costing-kit/access?session_id={CHECKOUT_SESSION_ID}`.
+- John crea el producto y el Payment Link y devuelve el enlace `buy.stripe.com`.
+- Claude da de alta `VITE_STRIPE_PAYMENT_LINK_RECIPE_COSTING_KIT` en Netlify y regenera `payment-links.ts` / `product-prices.ts`.
+- ⚠️ Si el link sale en EUR: `product-prices.ts` con `eur`, y la landing y el hub EN muestran «€» en lugar de «$» (hay que parametrizarlo en la F3).
+
+**Tareas pendientes que no bloquean el lanzamiento:**
+- condiciones de compra EN (`/en/terminos` solo cubre el SaaS);
+- `PURCHASE_VALIDATION=strict`;
+- test de Google Sheets (necesita su Drive);
+- pesar un solomillo real para el ejemplo ES.
 
 ## 6. Presupuesto y fases [R2-12, R2T-24]
 
