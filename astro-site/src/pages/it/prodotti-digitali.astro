@@ -1,0 +1,31 @@
+---
+// /it/prodotti-digitali — HUB de la tienda IT. Envoltorio fino, COPIA del de /en/digital-products
+// (pages/en/digital-products.astro): mismo BaseLayout con las mismas props, SEO en italiano, y el
+// componente DigitalProductsHubPageIt, que es la copia traducida de DigitalProductsHubPage (mismo
+// diseño; cualquier cambio en uno se replica en los otros dos).
+//
+// hreflang con el resto de tiendas desde lib/tienda.ts (TIENDAS) vía hubLocales()/hubAlternates()
+// (las añade el integrador de la tienda internacional). omitGlobalApp OBLIGATORIO: el
+// SoftwareApplication global del layout lleva ofertas en EUR y un rating (4,8), y en la tienda IT no
+// puede salir ninguno de los dos (tienda-gate.py). Los 3 JSON-LD propios los emite el componente.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DigitalProductsHubPageIt from '../../components/pages/DigitalProductsHubPageIt.astro';
+import { hubLocales, hubAlternates } from '../../lib/tienda';
+
+const lang = 'it';
+---
+
+<BaseLayout
+  whatsapp={false}
+  title="Prodotti Digitali per Ristoranti — Modelli Excel, Guide e Prompt IA | AI Chef Pro"
+  description="Modelli Excel per la ristorazione, distinte base per il food cost, modelli HACCP, eBook e prompt di IA per chef, gestori e proprietari di ristoranti. Le edizioni italiane sono in arrivo."
+  keywords="prodotti digitali ristorazione, modelli Excel ristorante, food cost Excel, modelli HACCP, scheda tecnica ricetta, distinta base ricetta, business plan ristorante, prompt IA ristorazione, AI Chef Pro"
+  lang={lang}
+  basePath="/prodotti-digitali"
+  locales={hubLocales()}
+  alternates={hubAlternates()}
+  ogImage="https://aichef.pro/og-productos-digitales.jpg"
+  omitGlobalApp
+>
+  <DigitalProductsHubPageIt />
+</BaseLayout>
