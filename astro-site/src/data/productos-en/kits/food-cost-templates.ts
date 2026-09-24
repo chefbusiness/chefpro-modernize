@@ -10,9 +10,8 @@
 //   · Capa comercial honesta (TIENDA §3.5): SIN testimonials, reviews ni aggregateRating.
 //   · D12 (benchmarks), D16 (solo Microsoft Excel), D18 (licencia), D15 (menu engineering solo
 //     como paso básico de la guía).
-//   · ogImage: la OG del ES (og-kit-escandallos.jpg) lleva texto en español incrustado; hasta
-//     que exista la OG EN se usa kit-escandallos-hero.jpg (foto del kit SIN texto, la misma de
-//     la tarjeta del hub EN).
+//   · ogImage: la OG del ES (og-kit-escandallos.jpg) lleva texto en español incrustado; la EN es
+//     og-food-cost-kit.jpg (Gemini, 1200×630, sin texto legible).
 // DINERO: stripeEnvKey = VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT (resuelto en el wrapper .astro).
 import type { KitExcelData } from '../../productos/kits/types';
 
@@ -26,7 +25,7 @@ const data: KitExcelData = {
       '13 food cost templates for Excel: recipe cost cards, plate cost and pour cost calculators, menu pricing for 10 venue types, yield test and price tracker. One-time $19.',
     keywords:
       'food cost templates, food cost template, recipe costing template, menu costing template, food cost spreadsheet, food cost calculator excel, food cost excel template, plate cost calculator, pour cost calculator, menu pricing calculator, recipe cost card, food cost percentage, yield test, AI Chef Pro',
-    ogImage: 'https://aichef.pro/kit-escandallos-hero.jpg',
+    ogImage: 'https://aichef.pro/og-food-cost-kit.jpg',
   },
 
   schema: {
