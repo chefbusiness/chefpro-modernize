@@ -318,6 +318,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-09-24): Food Cost Kit Pro, primera edición inglesa del contenido 2.1 del
+  // Kit de Escandallos Pro (SPEC recipe-costing-kit D14). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/FoodCostKitDashboard.tsx.
+  'food-cost-templates': {
+    version: '2.1',
+    updated: '2026-09-24',
+    entries: [
+      {
+        version: '2.1',
+        date: '2026-09-24',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.1: 13 food cost templates plus 2 bonuses, adapted to the US and the UK.',
+          'Examples in US customary units (lb, oz, fl oz), with metric units kept in the drop-down, and a Conversions tab that turns the case, bag and keg prices on your invoice into the unit you use in the recipe.',
+          'One Tax rate cell on every recipe cost card, 0% by default because US menu prices are pre-tax; enter 20% for UK VAT or 10% for Australian GST.',
+          'Target food cost ranges for 10 venue types in the Menu Pricing Calculator, with gross profit and GP % shown next to food cost on every cost card.',
+          'Every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-escandallos': {
     version: '2.1',
     updated: '2026-09-24',
@@ -1384,4 +1405,25 @@ export function formatFechaCorta(iso: string): string {
   const [y, m, d] = iso.split('-');
   if (!y || !m || !d) return iso;
   return `${d}/${m}/${y}`;
+}
+
+// Tienda internacional EN (2026-09-24): fechas en inglés para los dashboards EN. Sin formato
+// numérico (09/24 en EE. UU. y 24/09 en el Reino Unido se leen al revés): mes con letras.
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+/** "August 18, 2026" a partir de "2026-08-18" (sin depender de Intl/timezone). */
+export function formatDateLong(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  if (!y || !m || !d) return iso;
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+}
+
+/** "Aug 18, 2026" a partir de "2026-08-18". */
+export function formatDateShort(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  if (!y || !m || !d) return iso;
+  return `${MONTHS[m - 1].slice(0, 3)} ${d}, ${y}`;
 }

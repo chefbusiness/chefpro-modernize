@@ -1,0 +1,18 @@
+---
+// /en/digital-products/food-cost-templates/library — dashboard post-pago de Food Cost Kit Pro
+// (tienda EN). COPIA de pages/kit-escandallos-library.astro, escrita A MANO (el generador de la
+// zona app salta las entradas con lang ≠ 'es').
+// Island client:only="react": ProtectedRoute lee localStorage en render síncrono (ReferenceError
+// bajo SSR) → sin pase SSR, igual que el ES.
+// whatsapp={false}: el dashboard monta su PROPIO WhatsAppProductSupport (React, lang="en").
+// miselup={false}: la tarjeta lateral de Miselup es solo de la tienda ES (TIENDA §3.9); sin esto
+// BaseLayout la montaría por el libraryPath del registro zona-app.
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../../../../components/FunctionsOriginPatch.astro';
+import FoodCostKitLibraryIsland from '../../../../islands/library/FoodCostKitLibraryIsland';
+---
+
+<BaseLayout title="Food Cost Kit Pro — Dashboard | AI Chef Pro" lang="en" noindex whatsapp={false} miselup={false}>
+  <FunctionsOriginPatch />
+  <FoodCostKitLibraryIsland client:only="react" />
+</BaseLayout>

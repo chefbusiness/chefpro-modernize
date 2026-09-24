@@ -2,15 +2,19 @@
 // /kit-escandallos — LÍNEA KITS EXCEL (producto de referencia). Thin wrapper: pasa el objeto
 // data al template KitExcelLandingPage y el SEO a BaseLayout.
 //
-// SOLO ES: la SPA (KitEscandallos.tsx) hardcodea el Helmet en español y esta ruta NO tiene
-// variantes de idioma → locales={['es']} (BaseLayout emite hreflang es + x-default y nada más).
+// hreflang: alternatesFamilia('kit-escandallos') (lib/tienda.ts). Con el gemelo EN vivo
+// (Food Cost Kit Pro, /en/digital-products/food-cost-templates) emite es + en + x-default
+// recíprocos; si EN volviera a vivo:false, devuelve locales ['es'] sin alternates y el HTML
+// sería el de antes (hreflang es + x-default).
 // Canonical: https://aichef.pro/kit-escandallos. Meta robots se OMITE (desviación cross-cutting;
 // se añade en el cutover). Patrón = kit-tareas-*.astro.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import KitExcelLandingPage from '../components/pages/KitExcelLandingPage.astro';
 import data from '../data/productos/kits/kit-escandallos';
+import { alternatesFamilia } from '../lib/tienda';
 
 const lang = 'es';
+const hreflang = alternatesFamilia('kit-escandallos');
 
 // DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
 // Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
@@ -25,7 +29,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_ESCANDALLOS || '#com
   keywords={data.seo.keywords}
   lang={lang}
   basePath={`/${data.slug}`}
-  locales={['es']}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
   ogImage={data.seo.ogImage}
 >
   <KitExcelLandingPage data={data} stripeLink={stripeLink} />

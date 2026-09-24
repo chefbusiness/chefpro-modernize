@@ -52,6 +52,13 @@
  * Contrato: POST /.netlify/functions/crypto-checkout
  *   {product, email, country, acceptPolicy:true, waiveWithdrawal:true} → 200 {url, orderId}
  * y el navegador redirige a la página alojada de NOWPayments.
+ *
+ * IDIOMA (2026-09-24, tienda internacional EN): prop `lang` ('es' por defecto). Con 'en' cambian
+ * SOLO los textos —copy, países en inglés, errores y botón—, los enlaces legales (/en/terminos,
+ * /en/privacidad) y la RAMA EN del script inline; la estructura, las clases, los ids y el
+ * contrato con el backend son los mismos. Sin la prop (las 48 landings ES) el HTML es
+ * exactamente el de antes: las cadenas ES se quedan tal cual y el script ES no se ha tocado.
+ * ⚠️ Los dos scripts son gemelos: un cambio de lógica en uno se replica en el otro.
  */
 import { cryptoEnabledFor, CRYPTO_COINS_LABEL } from '../lib/crypto-checkout';
 import CryptoCoinIcon from './CryptoCoinIcon.astro';
@@ -67,9 +74,13 @@ interface Props {
   landingPath: string;
   /** Dónde va el botón. Los tres puntos de compra de la landing. */
   variant?: 'hero' | 'buybox' | 'cta';
+  /** Idioma de la tienda (el `lang` de la plantilla). Default 'es'. Solo 'en' tiene copy propio;
+   *  cualquier otro valor pinta el ES, como los diccionarios de la plantilla. */
+  lang?: string;
 }
 
-const { productId, productName, priceLabel, landingPath, variant = 'buybox' } = Astro.props;
+const { productId, productName, priceLabel, landingPath, variant = 'buybox', lang = 'es' } = Astro.props;
+const en = lang === 'en';
 
 const enabled = cryptoEnabledFor(productId);
 
@@ -385,6 +396,294 @@ const CONFIANZA = [
   'Recomendado: USDT en red TRON (TRC-20), comisiones de céntimos',
   'Desde Binance, Trust Wallet o cualquier wallet compatible con la red que elijas',
 ];
+
+// ── Tienda EN (lang="en") ─────────────────────────────────────────────────────────────────
+/**
+ * Los MISMOS 249 códigos ISO de PAISES (el backend valida el alfa-2, no el nombre), con el
+ * nombre en inglés de EE. UU. (Intl.DisplayNames 'en-US', generado el 24-sep-2026). Primero los
+ * mercados de la tienda EN; después el resto, alfabéticamente. Tres nombres van sin tilde
+ * (Reunion, St. Barthelemy, Sao Tome & Principe): la heurística de restos de español de
+ * tienda-gate.py marca «é»/«í» en el texto visible de una página EN.
+ */
+const PAISES_EN_FRECUENTES_N = 6;
+const PAISES_EN: { code: string; name: string }[] = [
+  { code: 'US', name: "United States" },
+  { code: 'GB', name: "United Kingdom" },
+  { code: 'CA', name: "Canada" },
+  { code: 'AU', name: "Australia" },
+  { code: 'IE', name: "Ireland" },
+  { code: 'NZ', name: "New Zealand" },
+  { code: 'AF', name: "Afghanistan" },
+  { code: 'AX', name: "Åland Islands" },
+  { code: 'AL', name: "Albania" },
+  { code: 'DZ', name: "Algeria" },
+  { code: 'AS', name: "American Samoa" },
+  { code: 'AD', name: "Andorra" },
+  { code: 'AO', name: "Angola" },
+  { code: 'AI', name: "Anguilla" },
+  { code: 'AQ', name: "Antarctica" },
+  { code: 'AG', name: "Antigua & Barbuda" },
+  { code: 'AR', name: "Argentina" },
+  { code: 'AM', name: "Armenia" },
+  { code: 'AW', name: "Aruba" },
+  { code: 'AT', name: "Austria" },
+  { code: 'AZ', name: "Azerbaijan" },
+  { code: 'BS', name: "Bahamas" },
+  { code: 'BH', name: "Bahrain" },
+  { code: 'BD', name: "Bangladesh" },
+  { code: 'BB', name: "Barbados" },
+  { code: 'BY', name: "Belarus" },
+  { code: 'BE', name: "Belgium" },
+  { code: 'BZ', name: "Belize" },
+  { code: 'BJ', name: "Benin" },
+  { code: 'BM', name: "Bermuda" },
+  { code: 'BT', name: "Bhutan" },
+  { code: 'BO', name: "Bolivia" },
+  { code: 'BA', name: "Bosnia & Herzegovina" },
+  { code: 'BW', name: "Botswana" },
+  { code: 'BV', name: "Bouvet Island" },
+  { code: 'BR', name: "Brazil" },
+  { code: 'IO', name: "British Indian Ocean Territory" },
+  { code: 'VG', name: "British Virgin Islands" },
+  { code: 'BN', name: "Brunei" },
+  { code: 'BG', name: "Bulgaria" },
+  { code: 'BF', name: "Burkina Faso" },
+  { code: 'BI', name: "Burundi" },
+  { code: 'KH', name: "Cambodia" },
+  { code: 'CM', name: "Cameroon" },
+  { code: 'CV', name: "Cape Verde" },
+  { code: 'BQ', name: "Caribbean Netherlands" },
+  { code: 'KY', name: "Cayman Islands" },
+  { code: 'CF', name: "Central African Republic" },
+  { code: 'TD', name: "Chad" },
+  { code: 'CL', name: "Chile" },
+  { code: 'CN', name: "China" },
+  { code: 'CX', name: "Christmas Island" },
+  { code: 'CC', name: "Cocos (Keeling) Islands" },
+  { code: 'CO', name: "Colombia" },
+  { code: 'KM', name: "Comoros" },
+  { code: 'CG', name: "Congo - Brazzaville" },
+  { code: 'CD', name: "Congo - Kinshasa" },
+  { code: 'CK', name: "Cook Islands" },
+  { code: 'CR', name: "Costa Rica" },
+  { code: 'CI', name: "Côte d’Ivoire" },
+  { code: 'HR', name: "Croatia" },
+  { code: 'CU', name: "Cuba" },
+  { code: 'CW', name: "Curaçao" },
+  { code: 'CY', name: "Cyprus" },
+  { code: 'CZ', name: "Czechia" },
+  { code: 'DK', name: "Denmark" },
+  { code: 'DJ', name: "Djibouti" },
+  { code: 'DM', name: "Dominica" },
+  { code: 'DO', name: "Dominican Republic" },
+  { code: 'EC', name: "Ecuador" },
+  { code: 'EG', name: "Egypt" },
+  { code: 'SV', name: "El Salvador" },
+  { code: 'GQ', name: "Equatorial Guinea" },
+  { code: 'ER', name: "Eritrea" },
+  { code: 'EE', name: "Estonia" },
+  { code: 'SZ', name: "Eswatini" },
+  { code: 'ET', name: "Ethiopia" },
+  { code: 'FK', name: "Falkland Islands" },
+  { code: 'FO', name: "Faroe Islands" },
+  { code: 'FJ', name: "Fiji" },
+  { code: 'FI', name: "Finland" },
+  { code: 'FR', name: "France" },
+  { code: 'GF', name: "French Guiana" },
+  { code: 'PF', name: "French Polynesia" },
+  { code: 'TF', name: "French Southern Territories" },
+  { code: 'GA', name: "Gabon" },
+  { code: 'GM', name: "Gambia" },
+  { code: 'GE', name: "Georgia" },
+  { code: 'DE', name: "Germany" },
+  { code: 'GH', name: "Ghana" },
+  { code: 'GI', name: "Gibraltar" },
+  { code: 'GR', name: "Greece" },
+  { code: 'GL', name: "Greenland" },
+  { code: 'GD', name: "Grenada" },
+  { code: 'GP', name: "Guadeloupe" },
+  { code: 'GU', name: "Guam" },
+  { code: 'GT', name: "Guatemala" },
+  { code: 'GG', name: "Guernsey" },
+  { code: 'GN', name: "Guinea" },
+  { code: 'GW', name: "Guinea-Bissau" },
+  { code: 'GY', name: "Guyana" },
+  { code: 'HT', name: "Haiti" },
+  { code: 'HM', name: "Heard & McDonald Islands" },
+  { code: 'HN', name: "Honduras" },
+  { code: 'HK', name: "Hong Kong SAR China" },
+  { code: 'HU', name: "Hungary" },
+  { code: 'IS', name: "Iceland" },
+  { code: 'IN', name: "India" },
+  { code: 'ID', name: "Indonesia" },
+  { code: 'IR', name: "Iran" },
+  { code: 'IQ', name: "Iraq" },
+  { code: 'IM', name: "Isle of Man" },
+  { code: 'IL', name: "Israel" },
+  { code: 'IT', name: "Italy" },
+  { code: 'JM', name: "Jamaica" },
+  { code: 'JP', name: "Japan" },
+  { code: 'JE', name: "Jersey" },
+  { code: 'JO', name: "Jordan" },
+  { code: 'KZ', name: "Kazakhstan" },
+  { code: 'KE', name: "Kenya" },
+  { code: 'KI', name: "Kiribati" },
+  { code: 'KW', name: "Kuwait" },
+  { code: 'KG', name: "Kyrgyzstan" },
+  { code: 'LA', name: "Laos" },
+  { code: 'LV', name: "Latvia" },
+  { code: 'LB', name: "Lebanon" },
+  { code: 'LS', name: "Lesotho" },
+  { code: 'LR', name: "Liberia" },
+  { code: 'LY', name: "Libya" },
+  { code: 'LI', name: "Liechtenstein" },
+  { code: 'LT', name: "Lithuania" },
+  { code: 'LU', name: "Luxembourg" },
+  { code: 'MO', name: "Macao SAR China" },
+  { code: 'MG', name: "Madagascar" },
+  { code: 'MW', name: "Malawi" },
+  { code: 'MY', name: "Malaysia" },
+  { code: 'MV', name: "Maldives" },
+  { code: 'ML', name: "Mali" },
+  { code: 'MT', name: "Malta" },
+  { code: 'MH', name: "Marshall Islands" },
+  { code: 'MQ', name: "Martinique" },
+  { code: 'MR', name: "Mauritania" },
+  { code: 'MU', name: "Mauritius" },
+  { code: 'YT', name: "Mayotte" },
+  { code: 'MX', name: "Mexico" },
+  { code: 'FM', name: "Micronesia" },
+  { code: 'MD', name: "Moldova" },
+  { code: 'MC', name: "Monaco" },
+  { code: 'MN', name: "Mongolia" },
+  { code: 'ME', name: "Montenegro" },
+  { code: 'MS', name: "Montserrat" },
+  { code: 'MA', name: "Morocco" },
+  { code: 'MZ', name: "Mozambique" },
+  { code: 'MM', name: "Myanmar (Burma)" },
+  { code: 'NA', name: "Namibia" },
+  { code: 'NR', name: "Nauru" },
+  { code: 'NP', name: "Nepal" },
+  { code: 'NL', name: "Netherlands" },
+  { code: 'NC', name: "New Caledonia" },
+  { code: 'NI', name: "Nicaragua" },
+  { code: 'NE', name: "Niger" },
+  { code: 'NG', name: "Nigeria" },
+  { code: 'NU', name: "Niue" },
+  { code: 'NF', name: "Norfolk Island" },
+  { code: 'KP', name: "North Korea" },
+  { code: 'MK', name: "North Macedonia" },
+  { code: 'MP', name: "Northern Mariana Islands" },
+  { code: 'NO', name: "Norway" },
+  { code: 'OM', name: "Oman" },
+  { code: 'PK', name: "Pakistan" },
+  { code: 'PW', name: "Palau" },
+  { code: 'PS', name: "Palestinian Territories" },
+  { code: 'PA', name: "Panama" },
+  { code: 'PG', name: "Papua New Guinea" },
+  { code: 'PY', name: "Paraguay" },
+  { code: 'PE', name: "Peru" },
+  { code: 'PH', name: "Philippines" },
+  { code: 'PN', name: "Pitcairn Islands" },
+  { code: 'PL', name: "Poland" },
+  { code: 'PT', name: "Portugal" },
+  { code: 'PR', name: "Puerto Rico" },
+  { code: 'QA', name: "Qatar" },
+  { code: 'RE', name: "Reunion" },
+  { code: 'RO', name: "Romania" },
+  { code: 'RU', name: "Russia" },
+  { code: 'RW', name: "Rwanda" },
+  { code: 'WS', name: "Samoa" },
+  { code: 'SM', name: "San Marino" },
+  { code: 'ST', name: "Sao Tome & Principe" },
+  { code: 'SA', name: "Saudi Arabia" },
+  { code: 'SN', name: "Senegal" },
+  { code: 'RS', name: "Serbia" },
+  { code: 'SC', name: "Seychelles" },
+  { code: 'SL', name: "Sierra Leone" },
+  { code: 'SG', name: "Singapore" },
+  { code: 'SX', name: "Sint Maarten" },
+  { code: 'SK', name: "Slovakia" },
+  { code: 'SI', name: "Slovenia" },
+  { code: 'SB', name: "Solomon Islands" },
+  { code: 'SO', name: "Somalia" },
+  { code: 'ZA', name: "South Africa" },
+  { code: 'GS', name: "South Georgia & South Sandwich Islands" },
+  { code: 'KR', name: "South Korea" },
+  { code: 'SS', name: "South Sudan" },
+  { code: 'ES', name: "Spain" },
+  { code: 'LK', name: "Sri Lanka" },
+  { code: 'BL', name: "St. Barthelemy" },
+  { code: 'SH', name: "St. Helena" },
+  { code: 'KN', name: "St. Kitts & Nevis" },
+  { code: 'LC', name: "St. Lucia" },
+  { code: 'MF', name: "St. Martin" },
+  { code: 'PM', name: "St. Pierre & Miquelon" },
+  { code: 'VC', name: "St. Vincent & Grenadines" },
+  { code: 'SD', name: "Sudan" },
+  { code: 'SR', name: "Suriname" },
+  { code: 'SJ', name: "Svalbard & Jan Mayen" },
+  { code: 'SE', name: "Sweden" },
+  { code: 'CH', name: "Switzerland" },
+  { code: 'SY', name: "Syria" },
+  { code: 'TW', name: "Taiwan" },
+  { code: 'TJ', name: "Tajikistan" },
+  { code: 'TZ', name: "Tanzania" },
+  { code: 'TH', name: "Thailand" },
+  { code: 'TL', name: "Timor-Leste" },
+  { code: 'TG', name: "Togo" },
+  { code: 'TK', name: "Tokelau" },
+  { code: 'TO', name: "Tonga" },
+  { code: 'TT', name: "Trinidad & Tobago" },
+  { code: 'TN', name: "Tunisia" },
+  { code: 'TR', name: "Türkiye" },
+  { code: 'TM', name: "Turkmenistan" },
+  { code: 'TC', name: "Turks & Caicos Islands" },
+  { code: 'TV', name: "Tuvalu" },
+  { code: 'UM', name: "U.S. Outlying Islands" },
+  { code: 'VI', name: "U.S. Virgin Islands" },
+  { code: 'UG', name: "Uganda" },
+  { code: 'UA', name: "Ukraine" },
+  { code: 'AE', name: "United Arab Emirates" },
+  { code: 'UY', name: "Uruguay" },
+  { code: 'UZ', name: "Uzbekistan" },
+  { code: 'VU', name: "Vanuatu" },
+  { code: 'VA', name: "Vatican City" },
+  { code: 'VE', name: "Venezuela" },
+  { code: 'VN', name: "Vietnam" },
+  { code: 'WF', name: "Wallis & Futuna" },
+  { code: 'EH', name: "Western Sahara" },
+  { code: 'YE', name: "Yemen" },
+  { code: 'ZM', name: "Zambia" },
+  { code: 'ZW', name: "Zimbabwe" },
+];
+// Mismo conjunto de códigos en los dos idiomas: si alguien añade un país a una lista y no a la
+// otra, el build falla aquí en lugar de dejar un país que un idioma no puede elegir.
+{
+  const codigos = new Set(PAISES.map((p) => p.code));
+  if (PAISES_EN.length !== PAISES.length || PAISES_EN.some((p) => !codigos.has(p.code))) {
+    throw new Error('CryptoPayButton: PAISES_EN y PAISES no tienen los mismos códigos ISO');
+  }
+}
+
+const CRYPTO_COINS_LABEL_EN = 'USDT · USDC · BTC · ETH and more';
+const TITULAR_EN = 'No international card, or prefer to pay from your wallet?';
+const SIN_RECARGO_EN = 'Same price as by card, no surcharge. You pay the equivalent in USDT, USDC, BTC or ETH at the current rate.';
+const NOTA_CORTA_EN = 'No international card, or prefer your wallet? Same price, no surcharge.';
+const CONFIANZA_EN = [
+  'Automatic delivery by email as soon as the gateway confirms the payment: usually a few minutes; Bitcoin can take longer',
+  'Recommended: USDT on the TRON network (TRC-20), with fees of a few cents',
+  'From Binance, Trust Wallet or any wallet that supports the network you choose',
+];
+
+// Lo que pinta el markup: las constantes ES tal cual, o su versión EN.
+const paisesFrecuentes = en ? PAISES_EN.slice(0, PAISES_EN_FRECUENTES_N) : PAISES_FRECUENTES;
+const paisesResto = en ? PAISES_EN.slice(PAISES_EN_FRECUENTES_N) : PAISES_RESTO;
+const coinsLabel = en ? CRYPTO_COINS_LABEL_EN : CRYPTO_COINS_LABEL;
+const titular = en ? TITULAR_EN : TITULAR;
+const sinRecargo = en ? SIN_RECARGO_EN : SIN_RECARGO;
+const notaCorta = en ? NOTA_CORTA_EN : NOTA_CORTA;
+const confianza = en ? CONFIANZA_EN : CONFIANZA;
 ---
 
 {enabled && (
@@ -396,18 +695,18 @@ const CONFIANZA = [
   >
     {/* Las TRES puertas llevan el separador: Stripe → «o» → cripto tiene que leerse igual
         en el hero, en el BuyBox y en el CTA final (John, 2026-09-06, sobre el preview). */}
-    <div class="aicp-crypto__sep" aria-hidden="true"><span>o</span></div>
+    <div class="aicp-crypto__sep" aria-hidden="true"><span>{en ? 'or' : 'o'}</span></div>
 
     <div class="aicp-crypto__box">
       {variant === 'buybox' ? (
         <Fragment>
-          <p class="aicp-crypto__eyebrow">Pago con criptomonedas</p>
-          <p class="aicp-crypto__headline">{TITULAR}</p>
+          <p class="aicp-crypto__eyebrow">{en ? 'Crypto payment' : 'Pago con criptomonedas'}</p>
+          <p class="aicp-crypto__headline">{titular}</p>
           {/* Sin precio grande: ya va dentro del botón y repetirlo era redundante (John). */}
-          <p class="aicp-crypto__note">{SIN_RECARGO}</p>
+          <p class="aicp-crypto__note">{sinRecargo}</p>
         </Fragment>
       ) : (
-        <p class="aicp-crypto__note">{NOTA_CORTA}</p>
+        <p class="aicp-crypto__note">{notaCorta}</p>
       )}
 
       <button
@@ -416,7 +715,7 @@ const CONFIANZA = [
         data-crypto-open
         aria-haspopup="dialog"
         aria-controls={dialogId}
-      >Pagar con cripto — {priceLabel}</button>
+      >{en ? 'Pay with crypto — ' : 'Pagar con cripto — '}{priceLabel}</button>
 
       {/* Equivalente del sello "Powered by Stripe": mismo ancho (260 px) y mismo mt-5,
           pero con el wordmark en TEXTO y las monedas en SVG inline — cero imágenes
@@ -427,7 +726,7 @@ const CONFIANZA = [
           <span class="aicp-crypto__wordmark-pre">Powered by</span>
           <span><span class="aicp-crypto__wordmark-now">NOW</span><span class="aicp-crypto__wordmark-pay">Payments</span></span>
         </span>
-        <span class="aicp-crypto__coins" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
+        <span class="aicp-crypto__coins" role="img" aria-label={en ? `Accepted cryptocurrencies: ${coinsLabel}` : `Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
           {MONEDAS_SELLO.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
         </span>
       </div>
@@ -436,7 +735,7 @@ const CONFIANZA = [
           final el bloque tiene que pesar lo mismo que el CTA dorado de al lado. */}
       {variant === 'buybox' && (
         <ul class="aicp-crypto__trust">
-          {CONFIANZA.map((linea) => <li>{linea}</li>)}
+          {confianza.map((linea) => <li>{linea}</li>)}
         </ul>
       )}
     </div>
@@ -448,24 +747,32 @@ const CONFIANZA = [
     {variant === 'buybox' && (
       <dialog id={dialogId} class="aicp-crypto__dialog" data-crypto-dialog data-crypto-product={productId} aria-labelledby={titleId}>
         <form class="aicp-crypto__form" data-crypto-form>
-          <button type="button" class="aicp-crypto__close" data-crypto-close aria-label="Cerrar">✕</button>
+          <button type="button" class="aicp-crypto__close" data-crypto-close aria-label={en ? 'Close' : 'Cerrar'}>✕</button>
 
           {/* «paso 1 de 2» porque la elección de moneda y red pasa en NOWPayments: sin
               decirlo, este formulario parece el pago entero y la redirección desconcierta. */}
-          <h2 id={titleId} class="aicp-crypto__title">Paga con cripto · paso 1 de 2</h2>
+          <h2 id={titleId} class="aicp-crypto__title">{en ? 'Pay with crypto · step 1 of 2' : 'Paga con cripto · paso 1 de 2'}</h2>
           <p class="aicp-crypto__product">
             <span>{productName}</span>
             <span class="aicp-crypto__product-price">{priceLabel}</span>
           </p>
+          {/* ES y EN por elemento entero: la rama ES es el marcado de siempre, byte a byte (con
+              compressHTML, una expresión dentro del <p> se come los saltos de línea del texto). */}
+          {en ? (
+            <p class="aicp-crypto__price">
+              One-time payment, lifetime access. You pay the equivalent in the crypto you choose, with no surcharge.
+            </p>
+          ) : (
           <p class="aicp-crypto__price">
             Pago único, acceso vitalicio. Pagas su equivalente en la cripto que elijas, sin recargo.
           </p>
-          <span class="aicp-crypto__coins aicp-crypto__coins--dialog" role="img" aria-label={`Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
+          )}
+          <span class="aicp-crypto__coins aicp-crypto__coins--dialog" role="img" aria-label={en ? `Accepted cryptocurrencies: ${coinsLabel}` : `Criptomonedas aceptadas: ${CRYPTO_COINS_LABEL}`}>
             {MONEDAS.map((moneda) => <CryptoCoinIcon name={moneda} decorative />)}
           </span>
 
           <div class="aicp-crypto__field">
-            <label class="aicp-crypto__label" for={emailId}>Tu email (ahí te enviamos el acceso)</label>
+            <label class="aicp-crypto__label" for={emailId}>{en ? "Your email (we'll send your access there)" : 'Tu email (ahí te enviamos el acceso)'}</label>
             <input
               class="aicp-crypto__input"
               id={emailId}
@@ -474,53 +781,83 @@ const CONFIANZA = [
               required
               autocomplete="email"
               inputmode="email"
-              placeholder="tucorreo@ejemplo.com"
+              placeholder={en ? 'you@example.com' : 'tucorreo@ejemplo.com'}
               data-crypto-email
             />
           </div>
 
           <div class="aicp-crypto__field">
-            <label class="aicp-crypto__label" for={countryId}>País de facturación</label>
+            <label class="aicp-crypto__label" for={countryId}>{en ? 'Billing country' : 'País de facturación'}</label>
             <select class="aicp-crypto__input" id={countryId} name="country" required data-crypto-country>
-              <option value="">Elige tu país…</option>
-              <optgroup label="Más frecuentes">
-                {PAISES_FRECUENTES.map((p) => <option value={p.code}>{p.name}</option>)}
+              <option value="">{en ? 'Choose your country…' : 'Elige tu país…'}</option>
+              <optgroup label={en ? 'Most common' : 'Más frecuentes'}>
+                {paisesFrecuentes.map((p) => <option value={p.code}>{p.name}</option>)}
               </optgroup>
-              <optgroup label="Resto de países">
-                {PAISES_RESTO.map((p) => <option value={p.code}>{p.name}</option>)}
+              <optgroup label={en ? 'All other countries' : 'Resto de países'}>
+                {paisesResto.map((p) => <option value={p.code}>{p.name}</option>)}
               </optgroup>
             </select>
           </div>
 
           <label class="aicp-crypto__check">
             <input type="checkbox" required data-crypto-accept />
+            {en ? (
+              <span>
+                I have read and accept the <a href="/en/terminos" target="_blank" rel="noopener noreferrer">terms of purchase and refunds</a>
+              </span>
+            ) : (
             <span>
               He leído y acepto las <a href="/terminos" target="_blank" rel="noopener noreferrer">condiciones de compra y devoluciones</a>
             </span>
+            )}
           </label>
 
           <label class="aicp-crypto__check">
             <input type="checkbox" required data-crypto-waive />
+            {en ? (
+              <span>
+                I request immediate access to the digital content and understand that, once I receive it, I lose the 14-day cancellation right where it applies (EU/UK). This does not affect our satisfaction guarantee.
+              </span>
+            ) : (
             <span>
               Solicito el acceso inmediato al contenido digital y entiendo que, al recibirlo, pierdo el derecho de desistimiento de 14 días. Esto no afecta a nuestra garantía de satisfacción.
             </span>
+            )}
           </label>
 
+          {en ? (
+            <p class="aicp-crypto__notice">
+              Send the exact amount the payment page shows. If you pay from an exchange, add its withdrawal fee: an incomplete payment isn't delivered automatically; if that happens, email info@aichef.pro with your order number and we'll sort it out.
+            </p>
+          ) : (
           <p class="aicp-crypto__notice">
             Envía el importe exacto que te indique la pasarela. Si retiras desde un exchange, súmale su comisión de retirada: un pago incompleto no se entrega automáticamente; si te pasa, escríbenos a info@aichef.pro con tu número de pedido y lo resolvemos.
           </p>
+          )}
 
+          {en ? (
+            <p class="aicp-crypto__next">
+              Next, we take you to NOWPayments' secure page, where you choose the coin and network.
+            </p>
+          ) : (
           <p class="aicp-crypto__next">
             Después te llevamos a la página segura de NOWPayments, donde eliges moneda y red.
           </p>
+          )}
 
           <p class="aicp-crypto__error" data-crypto-error role="alert" hidden></p>
 
-          <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>Continuar al pago</button>
+          <button type="submit" class="aicp-crypto__submit" data-crypto-submit disabled>{en ? 'Continue to payment' : 'Continuar al pago'}</button>
 
+          {en ? (
+            <p class="aicp-crypto__legal">
+              The payment is processed by NOWPayments. We receive the confirmation and send your access link to the email you give us; we only use it for that (<a href="/en/privacidad" target="_blank" rel="noopener noreferrer">privacy policy</a>).
+            </p>
+          ) : (
           <p class="aicp-crypto__legal">
             El cobro lo procesa NOWPayments. Nosotros recibimos la confirmación y te enviamos el enlace de acceso al email que nos dejes; lo tratamos solo para eso (<a href="/privacidad" target="_blank" rel="noopener noreferrer">política de privacidad</a>).
           </p>
+          )}
         </form>
       </dialog>
     )}
@@ -744,8 +1081,10 @@ const CONFIANZA = [
       .aicp-crypto__legal a { color: #9ca3af; text-decoration: underline; text-underline-offset: 2px; }
     </style>
 
-    {/* El script va con el diálogo: uno por página, no uno por puerta. */}
-    {variant === 'buybox' && (
+    {/* El script va con el diálogo: uno por página, no uno por puerta. Dos gemelos por idioma
+        (is:inline no admite expresiones): el ES es el de siempre, sin tocar; el EN solo cambia
+        los textos (MSG y las dos etiquetas del botón de envío). Misma lógica en los dos. */}
+    {variant === 'buybox' && !en && (
       <script is:inline>
         /* Vanilla, sin framework y sin bundle (is:inline): mismo patrón de fetch que el
            formulario "¿Ya compraste?" de la plantilla. El guard sigue puesto —el script se
@@ -901,6 +1240,194 @@ const CONFIANZA = [
                   if (redirected) return;
                   loading = false;
                   submit.textContent = 'Continuar al pago';
+                  syncSubmit();
+                });
+            });
+          }
+
+          /* Cada botón abre el diálogo que dice su `aria-controls`. Si no lo encuentra —una
+             plantilla sin BuyBox, que es quien lo emite—, lleva al bloque de compra en vez
+             de quedarse muerto bajo el dedo del comprador. */
+          function bindOpener(btn) {
+            if (btn.__aicpCryptoBound) return;
+            btn.__aicpCryptoBound = true;
+            btn.addEventListener('click', function () {
+              var id = btn.getAttribute('aria-controls');
+              var dialog = id ? document.getElementById(id) : null;
+              if (dialog && typeof dialog.__aicpCryptoOpen === 'function') { dialog.__aicpCryptoOpen(btn); return; }
+              var c = document.getElementById('comprar');
+              if (c) c.scrollIntoView({ behavior: 'smooth' });
+            });
+          }
+
+          function start() {
+            var dialogs = document.querySelectorAll('[data-crypto-dialog]');
+            for (var i = 0; i < dialogs.length; i++) initDialog(dialogs[i]);
+            var openers = document.querySelectorAll('[data-crypto-open]');
+            for (var j = 0; j < openers.length; j++) bindOpener(openers[j]);
+          }
+
+          if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+          else start();
+        })();
+      </script>
+    )}
+    {variant === 'buybox' && en && (
+      <script is:inline>
+        /* Vanilla, sin framework y sin bundle (is:inline): mismo patrón de fetch que el
+           formulario "¿Ya compraste?" de la plantilla. El guard sigue puesto —el script se
+           emite una sola vez por página, pero una plantilla con dos BuyBox lo duplicaría—;
+           inicializa el diálogo compartido y engancha las tres puertas. */
+        (function () {
+          if (window.__aicpCryptoPayInit) return;
+          window.__aicpCryptoPayInit = true;
+
+          var MSG = {
+            gateway: 'The crypto gateway is not available right now; you can pay by card.',
+            rate: 'Too many attempts. Wait a minute and try again.',
+            notEnabled: 'This product does not accept crypto yet.',
+            consent: 'Tick both boxes to continue.',
+            email: 'Check your email address: that is where we send your access.',
+            country: 'Choose your billing country.',
+            invalid: 'We could not validate the purchase from this page. Reload it and try again, or email us at info@aichef.pro and we will sort it out.',
+            generic: 'We could not open the payment gateway. Try again in a minute, or email us at info@aichef.pro and we will sort it out.'
+          };
+
+          function messageFor(status, data) {
+            var code = data && (data.error || data.code) ? String(data.error || data.code) : '';
+            if (status === 503 || status === 501) return MSG.gateway;
+            if (status === 429) return MSG.rate;
+            if (status === 403 && code === 'product_not_enabled') return MSG.notEnabled;
+            /* El formulario ya valida en el navegador, así que estos 400 sólo saltan si
+               algo se cuela; aun así merece la pena decir QUÉ revisar. */
+            if (status === 400 && code === 'invalid_email') return MSG.email;
+            if (status === 400 && code === 'invalid_country') return MSG.country;
+            if (status === 400 && code === 'consent_required') return MSG.consent;
+            /* El resto de 4xx (unknown_product, origin_not_allowed…) no se arregla reintentando. */
+            if (status >= 400 && status < 500) return MSG.invalid;
+            return MSG.generic;
+          }
+
+          /* Un solo diálogo por producto y página. Se inicializa UNA vez y el `product`
+             del payload sale de SU `data-crypto-product`, no del botón que lo abrió. */
+          function initDialog(dialog) {
+            if (dialog.__aicpCryptoReady) return;
+            var form = dialog.querySelector('[data-crypto-form]');
+            if (!form) return;
+            dialog.__aicpCryptoReady = true;
+
+            var closeBtn = form.querySelector('[data-crypto-close]');
+            var email = form.querySelector('[data-crypto-email]');
+            var country = form.querySelector('[data-crypto-country]');
+            var accept = form.querySelector('[data-crypto-accept]');
+            var waive = form.querySelector('[data-crypto-waive]');
+            var submit = form.querySelector('[data-crypto-submit]');
+            var errorEl = form.querySelector('[data-crypto-error]');
+            var loading = false;
+            var opener = null;
+
+            /* Al volver con «Atrás» desde NOWPayments, el bfcache restaura la página tal
+               cual se dejó: con el submit bloqueado en «Opening the payment page…». */
+            window.addEventListener('pageshow', function (ev) {
+              if (!ev.persisted) return;
+              loading = false;
+              submit.textContent = 'Continue to payment';
+              syncSubmit();
+            });
+
+            function setError(msg) {
+              if (!msg) { errorEl.textContent = ''; errorEl.hidden = true; return; }
+              /* Primero se muestra y DESPUÉS se escribe: un cambio dentro de un role="alert"
+                 oculto ocurre fuera del árbol de accesibilidad y el lector no lo anuncia. */
+              errorEl.hidden = false;
+              var escribir = function () { errorEl.textContent = msg; };
+              if (typeof window.requestAnimationFrame === 'function') window.requestAnimationFrame(escribir); else escribir();
+            }
+
+            function syncSubmit() {
+              submit.disabled = loading || !(accept.checked && waive.checked);
+            }
+
+            /* El foco vuelve al botón que abrió el diálogo: con tres puertas en la página,
+               devolverlo al principio del documento perdería al comprador. */
+            function restoreFocus() {
+              var btn = opener;
+              opener = null;
+              if (btn && typeof btn.focus === 'function') { try { btn.focus(); } catch (err) {} }
+            }
+
+            function closeDialog() {
+              if (typeof dialog.close === 'function' && dialog.open) { dialog.close(); return; }
+              dialog.removeAttribute('open');
+              restoreFocus();
+            }
+
+            /* `close` cubre las tres salidas nativas: ✕, Esc y clic en el fondo. */
+            dialog.addEventListener('close', restoreFocus);
+
+            accept.addEventListener('change', syncSubmit);
+            waive.addEventListener('change', syncSubmit);
+            syncSubmit();
+
+            if (closeBtn) closeBtn.addEventListener('click', closeDialog);
+            /* Clic en el fondo oscuro (el propio dialog ocupa el viewport; el formulario no).
+               Se exige que el gesto EMPIECE en el fondo: al arrastrar desde un campo y soltar
+               fuera, el `click` resultante también tiene el dialog como target. */
+            var downOnBackdrop = false;
+            dialog.addEventListener('pointerdown', function (ev) { downOnBackdrop = ev.target === dialog; });
+            dialog.addEventListener('click', function (ev) {
+              var onBackdrop = downOnBackdrop && ev.target === dialog;
+              downOnBackdrop = false;
+              if (onBackdrop) closeDialog();
+            });
+
+            dialog.__aicpCryptoOpen = function (btn) {
+              opener = btn || null;
+              setError('');
+              if (typeof dialog.showModal === 'function') dialog.showModal();
+              else dialog.setAttribute('open', '');
+              try { email.focus(); } catch (err) {}
+            };
+
+            form.addEventListener('submit', function (ev) {
+              ev.preventDefault();
+              if (loading) return;
+              if (!accept.checked || !waive.checked) { setError(MSG.consent); return; }
+              if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
+
+              var payload = {
+                product: dialog.getAttribute('data-crypto-product'),
+                email: (email.value || '').trim(),
+                country: (country.value || '').trim().toUpperCase(),
+                acceptPolicy: true,
+                waiveWithdrawal: true
+              };
+
+              loading = true;
+              syncSubmit();
+              submit.textContent = 'Opening the payment page…';
+              setError('');
+
+              fetch('/.netlify/functions/crypto-checkout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+              })
+                .then(function (res) {
+                  return res.json().catch(function () { return null; }).then(function (data) {
+                    if (res.ok && data && data.url) {
+                      window.location.assign(data.url);
+                      return true;
+                    }
+                    setError(messageFor(res.status, data));
+                    return false;
+                  });
+                })
+                .catch(function () { setError(MSG.generic); return false; })
+                .then(function (redirected) {
+                  if (redirected) return;
+                  loading = false;
+                  submit.textContent = 'Continue to payment';
                   syncSubmit();
                 });
             });

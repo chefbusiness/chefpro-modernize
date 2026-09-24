@@ -5,12 +5,30 @@ import chefProfile from '@/assets/chef-john-guerrero-optimized.jpg';
  * WhatsApp floating button for digital product pages.
  * Pre-filled message for purchase support.
  * Positioned above the mobile sticky buy bar (bottom-20 on mobile).
+ *
+ * `lang` (2026-09-24, tienda internacional): 'en' para los dashboards de la tienda EN, con los
+ * mismos textos que el botón de la plantilla de landing (astro-site/src/i18n/tienda/en.json).
+ * Sin la prop (todo el ES) el mensaje, el aria-label y el tooltip son exactamente los de antes.
  */
-export default function WhatsAppProductSupport() {
+const COPY = {
+  es: {
+    message: 'Hola, necesito ayuda con mi compra en AI Chef Pro. ',
+    ariaLabel: 'Soporte por WhatsApp',
+    tooltip: '¿Problemas con tu compra? Escríbenos',
+  },
+  en: {
+    message: 'Hi, I need help with my AI Chef Pro purchase. ',
+    ariaLabel: 'WhatsApp support',
+    tooltip: 'Trouble with your purchase? Message us',
+  },
+} as const;
+
+export default function WhatsAppProductSupport({ lang = 'es' }: { lang?: 'es' | 'en' }) {
+  const t = COPY[lang === 'en' ? 'en' : 'es'];
   const [isHovered, setIsHovered] = useState(false);
   const phoneNumber = '34744717942';
   const message = encodeURIComponent(
-    'Hola, necesito ayuda con mi compra en AI Chef Pro. '
+    t.message
   );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
@@ -19,7 +37,7 @@ export default function WhatsAppProductSupport() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Soporte por WhatsApp"
+      aria-label={t.ariaLabel}
       className="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -31,7 +49,7 @@ export default function WhatsAppProductSupport() {
         }`}
       >
         <span className="text-xs font-medium text-gray-800">
-          ¿Problemas con tu compra? Escríbenos
+          {t.tooltip}
         </span>
         <div className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95" />
       </div>
