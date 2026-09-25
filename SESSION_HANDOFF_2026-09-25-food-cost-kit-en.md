@@ -76,3 +76,27 @@
 - **Siguiente:** piloto de la galería «See what's inside» en este producto (componente copiado de `miselup/landing/src/components/ScreenshotCarousel.astro`,
   capturas reales en el VPS en `/root/capturas-aichef`, que ya tiene Playwright + los 9 xlsx). Después, encargo para la instancia del VPS
   (catálogo ya publicado); los productos nuevos nacen con la galería.
+
+## 🔜 Mañana (26-sep) — empezar por aquí (sesión Claude Code, cierre 25-sep noche)
+1. **John arregla `/dev/null` en el VPS** (root): `rm -f /dev/null && mknod -m 666 /dev/null c 1 3`. Comprobar con
+   `ssh vps 'stat -c "%F %a" /dev/null'` → «character special file 666». Después instalar en el VPS (carpeta aislada
+   `/root/capturas-aichef`, que NO es el repo; en `/root/chefpro-modernize` hay otras sesiones):
+   `apt-get -o Acquire::ForceIPv4=true update && apt-get install -y libreoffice-calc-nogui libreoffice-writer-nogui poppler-utils fonts-liberation2 fonts-dejavu-core fonts-noto-color-emoji`.
+   Playwright + Chromium y los 9 xlsx ya están allí (`overflow.mjs` = medidor de desbordamiento a 360 px).
+2. **John pasa el enlace de `/admin/generar-acceso`** (qa-admin-verify@aichef.pro · Restaurant Inventory Kit Pro · sin email) →
+   `python3 <scratchpad>/verificar_admin.py` no sirve sin contraseña: verificar con el JWT del enlace
+   (`GET /.netlify/functions/get-download-urls` con `Authorization: Bearer <jwt>` → 9 URLs 200 con el tamaño de disco) y abrir el
+   magic link (200).
+3. **Piloto de la galería «See what's inside»** en el Restaurant Inventory Kit Pro (memoria `project_galeria-capturas-productos`):
+   - Componente: copiar `/Users/johnguerrero/miselup/landing/src/components/ScreenshotCarousel.astro` (+ `src/data/product-tour.ts`)
+     a `astro-site/src/components/`, paleta negro/dorado, `style`/`script` **is:inline** (la plantilla KitExcel la importan 5 landings
+     ES que deben seguir byte a byte iguales), datos en `astro-site/src/data/capturas/<pid>.ts`, render justo bajo el hero solo si hay datos.
+   - 7 capturas reales: dashboard (Playwright con el JWT del punto 2) + 01 par sheet · 02 vendor price comparison · 03 purchase order ·
+     04 receiving log (ACCEPT/REJECT) · 06 FIFO (5 estados) · 07 purchasing cost analysis. Render xlsx → PDF por área de impresión con
+     LibreOffice → PNG → marco de ventana (nombre de fichero + pestaña) → WebP ~100 KB. Todo en el VPS; al Mac solo bajan las imágenes.
+   - Evento DataFast al interactuar. PR con preview → John aprueba en el móvil.
+   - Si aprueba: los productos NUEVOS nacen con la galería (entra en la F3) y se escribe el encargo para una instancia del VPS que la
+     extienda a los ya publicados.
+4. Pendientes de la cola ES (no de esta línea): Kit Tareas Chocolatería 2.1 LIVE antes del 24-oct (D53) · Taquería programable desde
+   el 29-sep · Escandallos 2.1 desde el 4-oct · Kit Chocolatería 2.1 correo 8-nov desde el 9-oct.
+5. Mac: `mediaanalysisd` y `photoanalysisd` quedaron CONGELADOS (`pkill -STOP`) por calentar al 100 %; reanudar con `pkill -CONT` si hace falta.
