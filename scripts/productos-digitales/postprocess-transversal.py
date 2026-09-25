@@ -81,7 +81,10 @@ SCRATCH = os.environ.get(
 #: (`kit-escandallos-v2_1/main.py`, SPEC recipe-costing-kit §2.0).
 #: food-cost-templates: Food Cost Kit Pro (EN), montado por `recipe-costing-kit/aplicar_en.py`
 #: en US Letter y con metadatos en inglés; un `all` le forzaría A4 y español (SPEC §2.1, T12).
-EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates'}
+#: restaurant-inventory-templates: Restaurant Inventory Kit Pro (EN), montado por
+#: `restaurant-inventory-kit/aplicar_en.py` (mismo motivo: Letter y metadatos EN).
+EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
+             'restaurant-inventory-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

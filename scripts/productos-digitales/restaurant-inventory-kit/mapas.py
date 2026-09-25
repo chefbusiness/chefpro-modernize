@@ -295,7 +295,7 @@ LITERALES = OrderedDict([
     (' líneas', ' lines'),
     ('⚠ faltan compras', '⚠ missing purchases'),
     # 04
-    ('⚠ FAMILIA SIN LÍMITE', '⚠ NO LIMIT FOR THIS GROUP'),
+    ('⚠ FAMILIA SIN LÍMITE', '⚠ NO LIMIT FOR THIS FAMILY'),
     ('✗ RECHAZAR (frío)', '✗ REJECT (too cold)'),
     ('✗ RECHAZAR (calor)', '✗ REJECT (too warm)'),
     ('✓ CONFORME', '✓ ACCEPT'),
@@ -333,7 +333,7 @@ ESTADOS_POR_RANGO = OrderedDict([
     ('02 U', ['⛔ QUOTE EXPIRED', '\U0001f7e1 expires this week', '\U0001f7e2 current']),
     ('03 A43', ["✓ This order meets the vendor's minimum",
                 '⚠ BELOW THE ORDER MINIMUM: you may be charged a delivery fee']),
-    ('04 R', ['⚠ NO LIMIT FOR THIS GROUP', '✗ REJECT (too cold)', '✗ REJECT (too warm)', '✓ ACCEPT', 'N/A']),
+    ('04 R', ['⚠ NO LIMIT FOR THIS FAMILY', '✗ REJECT (too cold)', '✗ REJECT (too warm)', '✓ ACCEPT', 'N/A']),
     ('05 D', ['\U0001f7e2 OK', '🔴 ALERT', '\U0001f7e1 REVIEW']),
     ('06 L', ['⛔ EXPIRED — DISCARD', '⚠ CHECK (best-by passed)', '🔴 URGENT', '\U0001f7e1 USE SOON',
               '\U0001f7e2 OK']),
