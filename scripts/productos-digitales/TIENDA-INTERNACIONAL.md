@@ -166,7 +166,7 @@ la F1 de cada producto frente a Etsy/Gumroad.
 - [ ] `robots-gate.py`, `tienda-gate.py`, `gate-flujo-postpago.py` LIVE, `whatsapp-gate.py` en verde.
 - [ ] Cero español, cero `€` y cero caracteres no latinos en el HTML y en los entregables.
 - [ ] Sin reseñas ni ratings inventados.
-- [ ] Payment Link USD con Adaptive Pricing + compra de prueba (email EN, dashboard, descargas).
+- [ ] Payment Link USD (John). **Sin compra de prueba** (John, 25-sep): acceso generado por admin + `gate-flujo-postpago.py --only <pid>` LIVE.
 - [ ] Tarjeta viva en el hub EN; banners del blog EN re-apuntados; broadcast EN programado.
 - [ ] **Antes de que el producto entre en `PRODUCTS`:** existe `/en/crypto-payment` (lee `?o=` y `&estado=parcial` como
       `/pago-cripto`) o el producto va en `CRYPTO_PRODUCTS_EXCLUDE`; con `CRYPTO_PRODUCTS=all` el botón cripto aparece
@@ -248,3 +248,9 @@ la F1 de cada producto frente a Etsy/Gumroad.
   redirección a `…/restaurant-inventory-templates/access?session_id={CHECKOUT_SESSION_ID}`), catálogo con `urlByLang`/`priceByLang`,
   4 banners del blog EN re-apuntados, 7 menciones de `/en/usos/` renombradas (enlazan vía alias), tarjeta del hub EN viva y
   primera (los productos vivos EN van arriba, el más nuevo en 1, con badge «New»).
+- **2026-09-25 (noche, sesión Claude Code) — Restaurant Inventory Kit Pro LIVE** (PR #103, `2b6afb33`): F2 (9 xlsx, gates G1-G8,
+  autotest 9/9) + F3 (landing, acceso, dashboard, 4 functions, Payment Link `plink_1UJf3q…` verificado con la CLI de Stripe, tarjeta
+  viva en el hub EN, 4 banners del blog EN, usos EN). Gates contra preview y LIVE en verde (`/kit-inventario` solo cambia en el
+  hreflang). Coste del producto: **1,90 M** de 2,5 M. Correo propio: **5-oct 14:00Z** (`5dd96142-…`); el del 28-sep ya lo nombra
+  como «already out». Pendientes: acceso admin (la contraseña que da la CLI de Netlify viene enmascarada → John genera el
+  enlace desde `/admin/generar-acceso`) y **galería de capturas** (piloto en este producto; ver memoria del proyecto).

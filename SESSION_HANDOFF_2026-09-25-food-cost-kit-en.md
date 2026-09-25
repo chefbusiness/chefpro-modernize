@@ -30,7 +30,7 @@
    un implementador + gates de script, sin fan-out de auditoría.
 
 ## Sesión Claude Code (25-sep, tarde) — correo de lanzamiento EN programado + GSC
-- **Broadcast programado:** `71959efe-3c2b-49dd-93f8-d8556da6c8cc (recreado el 25-sep para nombrar al «Restaurant Inventory Kit Pro»; el primero, d3bd1f9c, borrado)` · «Lanzamiento Food Cost Kit Pro + tienda EN (EN)» ·
+- **Broadcast programado:** `4f449fb2-67a4-4efd-ad81-5227337f4f79 (recreado dos veces el 25-sep: nombre del inventario y «already out»)` · «Lanzamiento Food Cost Kit Pro + tienda EN (EN)» ·
   asunto «Our digital store is now in English — first up: Food Cost Kit Pro» · segmento «AI Chef Pro EN» (`d06ed053-…`) ·
   from `hello@news.aichef.pro` · **lunes 28-sep-2026 14:00 UTC** (10:00 NY, 15:00 Londres). Prueba a John: `01a0d866-…`.
   HTML: `scripts/productos-digitales/emails/broadcast-food-cost-templates-lanzamiento-en.html`.
@@ -59,3 +59,20 @@
 - **GSC:** petición de indexación de la landing EN = clic de John (no había ningún Chrome conectado a la extensión).
 - **Segundo producto EN: Restaurant Inventory Kit Pro** — F1 cerrada (ver TIENDA-INTERNACIONAL.md, entrada del 25-sep noche).
   **Siguiente sesión EN: F2** (entregables) con el comando de retomar de ese bloque.
+
+## Sesión Claude Code (25-sep, noche) — Restaurant Inventory Kit Pro LIVE
+- **PR #103 → `2b6afb33`**: F2 + F3. Gates LIVE: `gate-flujo-postpago --only restaurant-inventory-templates` 9/0/0,
+  `tienda-gate --base https://aichef.pro` verde; preview: `--es-identico` 4/5 + `/kit-inventario` solo hreflang, miselup 100/100,
+  datafast 23/23, sin scroll horizontal a 360 px (Playwright en el VPS).
+- **Correos EN:** 28-sep 14:00Z tienda + Food Cost Kit (`4f449fb2-…`, ya menciona el inventario como publicado) · **5-oct 14:00Z**
+  Restaurant Inventory Kit Pro (`5dd96142-…`, prueba a John `01a0da3e-…`).
+- **Regla nueva (John):** sin compra de prueba; verificar con acceso admin + gates LIVE.
+- **Pendiente de John:**
+  1. Generar en `https://aichef.pro/admin/generar-acceso` un enlace para `qa-admin-verify@aichef.pro` + «Restaurant Inventory
+     Kit Pro» **sin** enviar email y pasarlo al chat (la CLI de Netlify devuelve `ADMIN_PASSWORD` enmascarada).
+  2. **VPS: `/dev/null` es un FICHERO normal (644 root), no el dispositivo** → `apt` no funciona (el usuario `_apt` no lo
+     abre) y no entran actualizaciones de seguridad. Arreglo (root en el VPS): `rm -f /dev/null && mknod -m 666 /dev/null c 1 3`.
+     Sin eso no se puede instalar LibreOffice para las capturas. (El clasificador no dejó a Claude tocar ese recurso compartido.)
+- **Siguiente:** piloto de la galería «See what's inside» en este producto (componente copiado de `miselup/landing/src/components/ScreenshotCarousel.astro`,
+  capturas reales en el VPS en `/root/capturas-aichef`, que ya tiene Playwright + los 9 xlsx). Después, encargo para la instancia del VPS
+  (catálogo ya publicado); los productos nuevos nacen con la galería.
