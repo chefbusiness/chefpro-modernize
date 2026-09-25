@@ -230,3 +230,11 @@ la F1 de cada producto frente a Etsy/Gumroad.
   - **Cola EN propia**: +5 días sobre el último envío al segmento EN, nunca el mismo día que un correo de producto ES, 14:00 UTC.
   - **No decir que el hub «muestra cuáles vienen»**: todas las tarjetas pendientes llevan el mismo «Coming soon in English».
   - Cuando haya 4-5 productos EN vivos, tiene sentido un correo-resumen de la tienda; antes, cada lanzamiento presenta la tienda.
+- **2026-09-25 (tarde, sesión Claude Code) — ola 1, producto 2: «Restaurant Inventory Kit Pro», F1 CERRADA** (duplicado del Kit de
+  Inventario ES, 9 xlsx, 14 € → **$19**; slug `restaurant-inventory-templates`). Tamaño **S** (techo 2,5 M): F1 = un solo
+  implementador opus, **0,37 M**, sin fan-out. Nombre por datos DataForSEO US (familia «restaurant inventory»: management 720 ·
+  spreadsheet/sheet 320 · template 210; «food/kitchen inventory template» 480 pero la SERP mezcla despensa doméstica). Docs en
+  `scripts/productos-digitales/restaurant-inventory-kit/` (`SPEC.md` D1-D26, `F1-inventario-es.md`, `censo_es.json`, `mapas.py`,
+  `gate_f1.py` verde). Nace corregido de 4 defectos heredados del ES (D23: el ES los corrige en su próxima v2.x).
+  **Retomar F2:** `cd scripts/productos-digitales/restaurant-inventory-kit && python3 gate_f1.py` y seguir `SPEC.md` §7 (pipeline del
+  piloto: textos EN por subagentes sonnet por grupos → `aplicar_en` adaptado → gates §8 contra el censo). Máquina: Mac en serie con vigilante (S).

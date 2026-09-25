@@ -50,3 +50,12 @@
   Sitemap reenviado por API. **Pedir indexación = clic de John en el panel** (la API no lo permite).
 - Pendiente de John: **D53** (¿Kit Chocolatería 2.1 delante? → Chocolatería 24-oct o 29-oct); el correo de la Chocolatería
   está escrito y en ventana desde el 24-sep. Taquería 29-oct programable desde el 29-sep; Escandallos 2.1 3-nov desde el 4-oct.
+
+## Sesión Claude Code (25-sep, noche) — detalles reparados + D53 + F1 del segundo producto EN
+- **PR #101 LIVE** (`7963bad0`): breadcrumb EN con el nivel del hub (3 niveles en producción) + `resend-broadcast.py` con reintentos.
+  `tienda-gate --es-identico` contra el preview: 5/5 landings ES idénticas.
+- **D53 decidida** (John delegó): kit Chocolatería 2.1 SÍ, LIVE antes del 24-oct; correo de la guía **programado 24-oct**
+  (`ff01873f-2746-4345-b8b4-bfc4685e2800`); el del kit, 8-nov. Detalle en CALENDARIO (entrada del 25-sep).
+- **GSC:** petición de indexación de la landing EN = clic de John (no había ningún Chrome conectado a la extensión).
+- **Segundo producto EN: Restaurant Inventory Kit Pro** — F1 cerrada (ver TIENDA-INTERNACIONAL.md, entrada del 25-sep noche).
+  **Siguiente sesión EN: F2** (entregables) con el comando de retomar de ese bloque.

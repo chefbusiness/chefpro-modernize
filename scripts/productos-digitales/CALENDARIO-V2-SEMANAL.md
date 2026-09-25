@@ -211,6 +211,9 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
     de §8.2 de la SPEC (grep de las 3 celdas, censo, descargas LIVE).
   - Correo del kit 2.1: siguiente hueco libre tras Escandallos 2.1 (3-nov) → **8-nov**, programable desde el 9-oct.
   - Guía v1.1: retirar la nota-puente del cap. 12 cuando el kit 2.1 esté LIVE (SPEC §D53 c).
+- **Tienda EN, producto 2: Restaurant Inventory Kit Pro ($19, S) — F1 cerrada** (0,37 M de 2,5 M). F2 en la próxima sesión EN.
+  Deuda ES que destapó (D23 de su SPEC): el Kit de Inventario ES muestra «RT-08:» en `BONUS-09!Parámetros!C12`, dice «8
+  plantillas» donde son 7 y sus estados FIFO/validez usan `TODAY()` contra fechas fijas de agosto → corregir en su próxima v2.x.
 - Cola ES: Chocolatería 24-oct ✅ programado · Taquería 29-oct (desde el 29-sep) · Escandallos 2.1 3-nov (desde el 4-oct) · Kit Chocolatería 2.1 8-nov (desde el 9-oct, si está LIVE).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
