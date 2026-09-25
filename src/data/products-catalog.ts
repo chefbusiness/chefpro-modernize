@@ -105,11 +105,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-inventario',
     url: '/kit-inventario',
     price: '€14',
-    name: { es: 'Kit Control de Inventario', en: 'Inventory Management Kit' },
+    name: { es: 'Kit Control de Inventario', en: 'Restaurant Inventory Kit Pro' },
     description: {
       es: 'Inventario, compras, mermas y proveedores.',
       en: 'Inventory, purchasing, waste tracking, and supplier management.',
     },
+    // Tienda EN (25-sep-2026): producto propio, `restaurant-inventory-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-inventory-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-plan-financiero': {
     id: 'kit-plan-financiero',

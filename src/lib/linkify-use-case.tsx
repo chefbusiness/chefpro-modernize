@@ -40,6 +40,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   // Producto con landing propia en la tienda EN (products-catalog.ts urlByLang.en): la
   // mención inglesa enlaza a ESA landing, no a la española (TIENDA-INTERNACIONAL §3.10).
   'Food Cost Kit Pro': '/en/digital-products/food-cost-templates',
+  'Restaurant Inventory Kit Pro': '/en/digital-products/restaurant-inventory-templates',
 };
 
 const ALL_PRODUCT_LINKS: Record<string, string> = { ...PRODUCT_LINKS, ...PRODUCT_ALIASES };
