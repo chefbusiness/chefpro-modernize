@@ -30,7 +30,7 @@
    un implementador + gates de script, sin fan-out de auditoría.
 
 ## Sesión Claude Code (25-sep, tarde) — correo de lanzamiento EN programado + GSC
-- **Broadcast programado:** `d3bd1f9c-3bb5-44ad-9d1b-5e8a165a24a9` · «Lanzamiento Food Cost Kit Pro + tienda EN (EN)» ·
+- **Broadcast programado:** `71959efe-3c2b-49dd-93f8-d8556da6c8cc (recreado el 25-sep para nombrar al «Restaurant Inventory Kit Pro»; el primero, d3bd1f9c, borrado)` · «Lanzamiento Food Cost Kit Pro + tienda EN (EN)» ·
   asunto «Our digital store is now in English — first up: Food Cost Kit Pro» · segmento «AI Chef Pro EN» (`d06ed053-…`) ·
   from `hello@news.aichef.pro` · **lunes 28-sep-2026 14:00 UTC** (10:00 NY, 15:00 Londres). Prueba a John: `01a0d866-…`.
   HTML: `scripts/productos-digitales/emails/broadcast-food-cost-templates-lanzamiento-en.html`.

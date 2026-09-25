@@ -195,7 +195,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - Consumo: F1 del piloto EN 2,8 M; ES v2.1 1,7 M (casilla «v2.x ES»).
 
 ### ✅ 2026-09-25 (sesión Claude Code en el Mac) — correo EN del Food Cost Kit Pro PROGRAMADO
-- **Segmento EN, lunes 28-sep 14:00 UTC** (`d3bd1f9c-…`): presentación de la tienda EN + primer producto en un solo correo.
+- **Segmento EN, lunes 28-sep 14:00 UTC** (`71959efe-…`): presentación de la tienda EN + primer producto en un solo correo.
 - La cola EN es **independiente** de la ES (otro segmento): hueco = último envío al segmento EN + 5 días, sin coincidir con un
   correo de producto ES el mismo día. Detalle: handoff `SESSION_HANDOFF_2026-09-25-food-cost-kit-en.md` (bloque de la tarde).
 - **D53 DECIDIDA (John delegó: «decide tú», 25-sep): SÍ al Kit de Tareas Chocolatería 2.1**, con el orden cambiado respecto a la
