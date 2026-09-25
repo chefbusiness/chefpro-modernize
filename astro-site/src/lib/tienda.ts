@@ -94,6 +94,13 @@ export const FAMILIAS: FamiliaProducto[] = [
       en: { slug: 'food-cost-templates', vivo: true },
     },
   },
+  {
+    familia: 'kit-inventario',
+    productos: {
+      es: { slug: 'kit-inventario', vivo: true },
+      en: { slug: 'restaurant-inventory-templates', vivo: true },
+    },
+  },
 ];
 
 /** hreflang de la landing de una familia: SOLO los idiomas con producto vivo. Mientras EN no

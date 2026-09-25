@@ -150,7 +150,7 @@ DL = os.path.join(ROOT, 'astro-site', 'public', 'dl')
 #: RUTA de carpeta (el dry-run del scratchpad, cuyo basename no es el producto) se declara con
 #: `--letter`. En esas carpetas se exige Letter (un A4 cuenta como defecto) y la hoja de texto
 #: que no necesita ajuste ni pie es «Instructions».
-PRODUCTOS_LETTER = frozenset({'food-cost-templates'})
+PRODUCTOS_LETTER = frozenset({'food-cost-templates', 'restaurant-inventory-templates'})
 PAPEL_A4, PAPEL_LETTER = 9, 1
 HOJAS_TEXTO = ('Instrucciones', 'Índice', 'Indice', 'Instructions')
 

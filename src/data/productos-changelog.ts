@@ -439,6 +439,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-09-25): Restaurant Inventory Kit Pro, primera edición inglesa del contenido 2.0
+  // del Kit de Inventario (SPEC restaurant-inventory-kit D21). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/RestaurantInventoryKitDashboard.tsx.
+  'restaurant-inventory-templates': {
+    version: '2.0',
+    updated: '2026-09-25',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-09-25',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 7 restaurant inventory templates plus 2 bonuses, adapted to the US and the UK.',
+          'The same 10 foodservice categories in all 9 templates and the same 16 units in the 7 that list products, with US customary units (lb, oz, gal, qt) in the examples and metric units kept in the drop-down.',
+          'Receiving log in degrees Fahrenheit with the FDA Food Code 2022 limits for 15 product families, and FIFO tracking that tells use-by from best-by dates.',
+          'Neutral tax: rates per category at 0% by default and an editable breakdown, so it works for US sales tax and UK VAT. No currency symbol in the templates: you type amounts in your own currency.',
+          'Sample data with 50 US items and 6 sample vendors, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-inventario': {
     version: '2.0',
     updated: '2026-08-23',

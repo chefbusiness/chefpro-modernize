@@ -25,6 +25,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'kit-tareas-chef-privado': { accessPath: '/kit-tareas-chef-privado-access', label: 'Kit Tareas Chef Privado' },
   'kit-gestion-personal': { accessPath: '/kit-gestion-personal-access', label: 'Kit Gestión de Personal' },
   'kit-inventario': { accessPath: '/kit-inventario-access', label: 'Kit Control de Inventario' },
+  'restaurant-inventory-templates': { accessPath: '/en/digital-products/restaurant-inventory-templates/access', label: 'Restaurant Inventory Kit Pro', lang: 'en' },
   'kit-plan-financiero': { accessPath: '/kit-plan-financiero-access', label: 'Kit Plan Financiero' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },

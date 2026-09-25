@@ -56,8 +56,43 @@ const ALL_TAGS = [
 ];
 
 // Mismo ORDEN que el hub ES (decisión de negocio: novedades primero, más vendidos, resto, Mega Pack
-// el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
+// el último), SALVO los productos ya vivos en inglés, que van arriba del todo y el más nuevo en 1
+// (25-sep-2026). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
+  // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
+  // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  {
+    name: 'Restaurant Inventory Kit Pro',
+    slug: '/kit-inventario',
+    description: '9 restaurant inventory templates for Excel with automatic formulas: par sheet, vendor price comparison, purchase orders, receiving log, food waste log, FIFO and food cost KPIs.',
+    features: [
+      'Par levels with reorder alerts by storage area',
+      'Receiving log in °F with credit memo tracking',
+      'Food waste log with a dashboard and action plan',
+      'FIFO with use-by vs best-by dates',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  {
+    name: 'Food Cost Kit Pro',
+    slug: '/kit-escandallos',
+    description: '13 Excel food cost templates with automatic formulas, preloaded trim-loss rates and a menu pricing calculator. Take control of your food cost.',
+    features: [
+      '13 professional Excel templates',
+      'Preloaded trim-loss (yield) rates',
+      'Menu pricing calculator for 10 venue types',
+      'Food cost percentage tracker',
+    ],
+    iconName: 'FileSpreadsheet',
+    image: '/kit-escandallos-hero.jpg',
+    badge: '🔥 Best Seller',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
   {
     name: 'Recurring Tasks: Mexican Taqueria',
     slug: '/kit-tareas-taqueria',
@@ -155,22 +190,6 @@ const products = [
     tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
   },
   {
-    name: 'Food Cost Kit Pro',
-    slug: '/kit-escandallos',
-    description: '13 Excel food cost templates with automatic formulas, preloaded trim-loss rates and a menu pricing calculator. Take control of your food cost.',
-    features: [
-      '13 professional Excel templates',
-      'Preloaded trim-loss (yield) rates',
-      'Menu pricing calculator for 10 venue types',
-      'Food cost percentage tracker',
-    ],
-    iconName: 'FileSpreadsheet',
-    image: '/kit-escandallos-hero.jpg',
-    badge: '🔥 Best Seller',
-    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
-    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
-  },
-  {
     name: 'Gastro Pro Prompts eBook',
     slug: '/pro-prompts-ebook',
     description: '300+ AI prompts built specifically for hospitality: creative cuisine, pastry, catering, management, marketing and more.',
@@ -201,22 +220,6 @@ const products = [
     badge: '🔥 Best Seller',
     badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
     tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
-  },
-  {
-    name: 'Restaurant Inventory Kit Pro',
-    slug: '/kit-inventario',
-    description: '9 Excel templates with automatic formulas: daily inventory, supplier records, purchase orders, goods receiving, waste control, FIFO, cost analysis and 2 bonuses.',
-    features: [
-      'Par levels with reorder alerts',
-      'Price comparison across suppliers',
-      'Waste control with a dashboard',
-      'FIFO and expiry dates with a traffic-light system',
-    ],
-    iconName: 'Package',
-    image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
-    badge: '🔥 Best Seller',
-    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
-    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
   {
     name: 'How to Open a Fine-Dining Restaurant',

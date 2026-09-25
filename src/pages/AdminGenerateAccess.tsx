@@ -22,6 +22,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'kit-tareas-chef-privado', label: 'Kit Tareas Chef Privado (€18)' },
   { id: 'kit-gestion-personal', label: 'Kit Gestión de Personal (€14)' },
   { id: 'kit-inventario', label: 'Kit Control de Inventario (€14)' },
+  { id: 'restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro (EN, $19)' },
   { id: 'kit-plan-financiero', label: 'Kit Plan Financiero (€39)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
   { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },

@@ -238,3 +238,13 @@ la F1 de cada producto frente a Etsy/Gumroad.
   `gate_f1.py` verde). Nace corregido de 4 defectos heredados del ES (D23: el ES los corrige en su próxima v2.x).
   **Retomar F2:** `cd scripts/productos-digitales/restaurant-inventory-kit && python3 gate_f1.py` y seguir `SPEC.md` §7 (pipeline del
   piloto: textos EN por subagentes sonnet por grupos → `aplicar_en` adaptado → gates §8 contra el censo). Máquina: Mac en serie con vigilante (S).
+- **2026-09-25 (noche, sesión Claude Code) — «Restaurant Inventory Kit Pro», F3 (capa de producto) en la rama
+  `feat/restaurant-inventory-kit-en`.** Réplica del piloto pieza a pieza: ficha EN `productos-en/kits/restaurant-inventory-templates.ts`
+  (copia de `kit-inventario.ts`, H1 = title D2 en Forma B, testimonios del ES traducidos, sin rating), 3 páginas anidadas,
+  dashboard + island, familia `kit-inventario` viva en `tienda.ts`, `zona-app.ts`, 4 functions con `lang: 'en'`, hreflang
+  recíproco en `/kit-inventario` (el HTML ES solo cambia en esas líneas: `tienda-gate --es-identico --esperadas /kit-inventario`),
+  `VITE_STRIPE_PAYMENT_LINK_RESTAURANT_INVENTORY_KIT` en Netlify (scope builds, contexto all, igual que el piloto),
+  `payment-links.ts`/`product-prices.ts` regenerados ($19), Payment Link verificado con la CLI de Stripe (USD 19,00,
+  redirección a `…/restaurant-inventory-templates/access?session_id={CHECKOUT_SESSION_ID}`), catálogo con `urlByLang`/`priceByLang`,
+  4 banners del blog EN re-apuntados, 7 menciones de `/en/usos/` renombradas (enlazan vía alias), tarjeta del hub EN viva y
+  primera (los productos vivos EN van arriba, el más nuevo en 1, con badge «New»).

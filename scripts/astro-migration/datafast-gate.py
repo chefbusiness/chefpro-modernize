@@ -22,7 +22,10 @@ PAGINAS = ['/', '/en', '/fr', '/de', '/it', '/pt', '/nl', '/precios', '/en/prici
            '/blog', '/en/blog', '/productos-digitales', '/kit-escandallos', '/integraciones',
            '/contacto', '/privacidad', '/kit-escandallos-access',
            '/en/digital-products', '/en/digital-products/food-cost-templates',
-           '/en/digital-products/food-cost-templates/access', '/en/crypto-payment']
+           '/en/digital-products/food-cost-templates/access', '/en/crypto-payment',
+           # Segundo producto EN (25-sep-2026): landing y gate de acceso (404 en producción hasta el merge).
+           '/en/digital-products/restaurant-inventory-templates',
+           '/en/digital-products/restaurant-inventory-templates/access']
 SCRIPTS = ['https://datafa.st/js/script.js', 'https://datafa.st/js/script.cookieless.js']
 
 def get(url, timeout=30):
