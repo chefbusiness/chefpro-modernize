@@ -153,6 +153,18 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit Control de Inventario y Compras</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de control de inventario:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-09-25): gemelo de kit-inventario, producto independiente con su propio acceso
+  // (mismo patrón que food-cost-templates). `lang: 'en'` elige los textos fijos del email
+  // (netlify/shared/email-i18n.ts) y la página de estado cripto /en/crypto-payment; precio en USD
+  // (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'restaurant-inventory-templates': {
+    accessPath: '/en/digital-products/restaurant-inventory-templates/access',
+    emailSubject: 'Your access to Restaurant Inventory Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Restaurant Inventory Kit Pro</strong> is ready. Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'guia-dark-kitchen': {
     accessPath: '/guia-dark-kitchen-access',
     emailSubject: 'Tu acceso a la Guía: Cómo Montar una Dark Kitchen',

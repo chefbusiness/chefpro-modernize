@@ -1,0 +1,40 @@
+---
+// /en/digital-products/restaurant-inventory-templates — Restaurant Inventory Kit Pro (tienda internacional EN).
+// COPIA de pages/kit-inventario.astro (vía el piloto food-cost-templates.astro) (thin wrapper: data → KitExcelLandingPage, SEO → BaseLayout)
+// con lang="en". Réplica del ES por decisión de John (SPEC restaurant-inventory-kit §6): misma plantilla,
+// mismos componentes; solo cambian los datos (data/productos-en/kits/restaurant-inventory-templates.ts).
+//
+// - basePath SIN «/en»: BaseLayout ya antepone el prefijo del idioma (con «/en» saldría /en/en/…).
+// - hreflang recíproco con el gemelo ES vía alternatesFamilia('kit-inventario') (lib/tienda.ts).
+// - whatsapp={false}: la plantilla pinta su propio botón de soporte (como el ES).
+// - omitGlobalApp: el SoftwareApplication global lleva ofertas en EUR y rating; en la tienda EN
+//   no puede salir ninguno de los dos (tienda-gate.py).
+// - miselup={false}: la tarjeta de Miselup es solo para la tienda ES (TIENDA §3.9).
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import KitExcelLandingPage from '../../../components/pages/KitExcelLandingPage.astro';
+import data from '../../../data/productos-en/kits/restaurant-inventory-templates';
+import { alternatesFamilia } from '../../../lib/tienda';
+
+const lang = 'en';
+const hreflang = alternatesFamilia('kit-inventario');
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO) para que Vite la inline en build.
+// data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_RESTAURANT_INVENTORY_KIT || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  miselup={false}
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/digital-products/${data.slug}`}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
+  ogImage={data.seo.ogImage}
+>
+  <KitExcelLandingPage data={data} stripeLink={stripeLink} lang={lang} />
+</BaseLayout>

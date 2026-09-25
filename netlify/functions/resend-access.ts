@@ -151,6 +151,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de control de inventario:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-09-25): gemelo de kit-inventario (ver verify-purchase.ts).
+  'restaurant-inventory-templates': {
+    accessPath: '/en/digital-products/restaurant-inventory-templates/access',
+    emailSubject: 'Your access to Restaurant Inventory Kit Pro',
+    emailTitle: 'Access your Restaurant Inventory Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'guia-dark-kitchen': {
     accessPath: '/guia-dark-kitchen-access',
     emailSubject: 'Tu acceso a la Guía: Cómo Montar una Dark Kitchen',

@@ -274,6 +274,19 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-inventario-rapido': '/dl/kit-inventario/BONUS-08-inventario-rapido-mensual.xlsx',
     'bonus-calculadora': '/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx',
   },
+  // Tienda EN (2026-09-25): Restaurant Inventory Kit Pro. MISMAS claves que kit-inventario (las del
+  // TEMPLATES de src/pages/RestaurantInventoryKitDashboard.tsx) → ficheros EN de /dl/restaurant-inventory-templates/.
+  'restaurant-inventory-templates': {
+    'stock': '/dl/restaurant-inventory-templates/01-kitchen-bar-inventory-par-sheet.xlsx',
+    'proveedores': '/dl/restaurant-inventory-templates/02-vendor-list-price-comparison.xlsx',
+    'pedidos': '/dl/restaurant-inventory-templates/03-purchase-order-template.xlsx',
+    'recepcion': '/dl/restaurant-inventory-templates/04-receiving-log.xlsx',
+    'mermas': '/dl/restaurant-inventory-templates/05-food-waste-log.xlsx',
+    'fifo': '/dl/restaurant-inventory-templates/06-fifo-expiration-date-tracker.xlsx',
+    'costes': '/dl/restaurant-inventory-templates/07-purchasing-cost-analysis.xlsx',
+    'bonus-inventario-rapido': '/dl/restaurant-inventory-templates/BONUS-08-month-end-inventory-count.xlsx',
+    'bonus-calculadora': '/dl/restaurant-inventory-templates/BONUS-09-reorder-point-calculator.xlsx',
+  },
   'guia-dark-kitchen': {
     'guia-pdf': '/dl/guia-dark-kitchen/guia-como-montar-dark-kitchen.pdf',
     'guia-docx': '/dl/guia-dark-kitchen/guia-como-montar-dark-kitchen.docx',

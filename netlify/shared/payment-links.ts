@@ -53,6 +53,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'plan-negocio-parrillero-asador-eventos': 'https://buy.stripe.com/cNi6oAa8A50a4Z1cbz6oo1a',
   'plan-negocio-tapas-bar': 'https://buy.stripe.com/aFadR21C4eAK8bd5Nb6oo15',
   'pro-prompts-ebook': 'https://buy.stripe.com/7sYfZafsU8cm3UX7Vj6oo00',
+  'restaurant-inventory-templates': 'https://buy.stripe.com/28EfZacgIdwGbnp8Zn6oo1z',
 };
 
 /** URL → productId (para el webhook: la sesión trae payment_link, no el producto). */
