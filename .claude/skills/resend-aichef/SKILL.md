@@ -100,5 +100,5 @@ los correos de producto ES, así que tiene **su propia cola**: hueco = último e
 día que un correo de producto ES, a las **14:00 UTC** (10:00 Nueva York, 15:00 Londres). Los broadcasts «Growth …» los
 envía un agente independiente de John (Grokbot): no cuentan para la cola ni se tocan. Precedente: Food Cost Kit Pro,
 `broadcast-food-cost-templates-lanzamiento-en.html`, 28-sep 14:00Z. Saludo «Hi everyone,»; pie «You’re receiving this email…
-Unsubscribe». Si el script aborta con «no vivo» en una URL que da 200 por curl, son las ráfagas de la IP del Mac contra
-Netlify: esperar ~20 s y repetir.
+Unsubscribe». Las ráfagas de la IP del Mac contra Netlify daban «no vivo» en falso: desde el 25-sep `vivo()` reintenta
+3 veces con 8 s de espera (un 404 es definitivo).
