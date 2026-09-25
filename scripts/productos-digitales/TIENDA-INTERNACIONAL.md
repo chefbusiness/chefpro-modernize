@@ -224,3 +224,9 @@ la F1 de cada producto frente a Etsy/Gumroad.
     - una tabla de conversiones «editable» tiene que tener filas libres dentro del rango del VLOOKUP (defecto heredado del ES);
     - un «service charge» no se puede usar como nombre de un margen interno;
     - las FAQ de licencia de los kits hermanos («todos tus locales», «ideal para consultores») se revisan contra la licencia D18 al duplicarlos.
+- **2026-09-25 (tarde, sesión Claude Code) — broadcast EN del Food Cost Kit Pro programado** (lunes 28-sep 14:00 UTC,
+  segmento «AI Chef Pro EN», from `hello@`). Un solo correo: tienda EN + primer producto + los tres siguientes de la ola 1 +
+  «responde con el que necesitas primero». Reglas para los siguientes lanzamientos EN:
+  - **Cola EN propia**: +5 días sobre el último envío al segmento EN, nunca el mismo día que un correo de producto ES, 14:00 UTC.
+  - **No decir que el hub «muestra cuáles vienen»**: todas las tarjetas pendientes llevan el mismo «Coming soon in English».
+  - Cuando haya 4-5 productos EN vivos, tiene sentido un correo-resumen de la tienda; antes, cada lanzamiento presenta la tienda.

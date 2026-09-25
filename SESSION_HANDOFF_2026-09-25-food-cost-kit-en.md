@@ -28,3 +28,25 @@
 2. GSC: pedir indexación de la landing EN (y comprobar que no cae en ningún Disallow: `robots-gate.py`).
 3. Siguiente producto de la ola EN según `TIENDA-INTERNACIONAL.md` (inventario), con presupuesto S:
    un implementador + gates de script, sin fan-out de auditoría.
+
+## Sesión Claude Code (25-sep, tarde) — correo de lanzamiento EN programado + GSC
+- **Broadcast programado:** `d3bd1f9c-3bb5-44ad-9d1b-5e8a165a24a9` · «Lanzamiento Food Cost Kit Pro + tienda EN (EN)» ·
+  asunto «Our digital store is now in English — first up: Food Cost Kit Pro» · segmento «AI Chef Pro EN» (`d06ed053-…`) ·
+  from `hello@news.aichef.pro` · **lunes 28-sep-2026 14:00 UTC** (10:00 NY, 15:00 Londres). Prueba a John: `01a0d866-…`.
+  HTML: `scripts/productos-digitales/emails/broadcast-food-cost-templates-lanzamiento-en.html`.
+- **Decisión (delegada por John): un solo correo** = presentación de la tienda EN + primer producto. Con 1 de 50 productos
+  comprables en inglés, un correo previo de «tienda» llevaba a un escaparate casi entero en «Coming soon». Cierra con los tres
+  siguientes de la ola 1 (Inventory, Pro Prompts, HACCP) y pide respuesta: «¿cuál necesitas primero?» (Reply-To info@aichef.pro)
+  → las respuestas sirven para ordenar la ola.
+- **Cola EN independiente de la ES** (decisión de esta sesión): el segmento EN no recibe los correos ES, así que su hueco se mide
+  contra el último envío AL SEGMENTO EN (+5 días) y sin coincidir el mismo día con un correo de producto ES. Hora EN 14:00 UTC.
+  Los «Growth» los manda Grokbot (agente independiente de John): no cuentan ni se coordinan.
+- Revisión adversarial (2 sonnet, 269 k tokens): 1 hallazgo real (el hub NO distingue qué productos vienen primero: todos
+  llevan el mismo «Coming soon in English») → frase quitada. Copy/reglas/render: sin hallazgos.
+- **Gotcha:** `resend-broadcast.py` abortó dos veces con «no vivo» en URLs que dan 200: son las ráfagas de la IP del Mac
+  contra Netlify (URL con UTM nueva = miss de caché de 3-5 s + 5xx intermitentes). Esperar ~20 s y repetir; no tocar el script.
+- **GSC:** hub `/en/digital-products` indexado (rastreado 24-sep). Landing `/en/digital-products/food-cost-templates`
+  «URL is unknown to Google»; en `sitemap-0.xml` y rastreable (robots OK; `/access` y `/library` bloqueados, correcto).
+  Sitemap reenviado por API. **Pedir indexación = clic de John en el panel** (la API no lo permite).
+- Pendiente de John: **D53** (¿Kit Chocolatería 2.1 delante? → Chocolatería 24-oct o 29-oct); el correo de la Chocolatería
+  está escrito y en ventana desde el 24-sep. Taquería 29-oct programable desde el 29-sep; Escandallos 2.1 3-nov desde el 4-oct.

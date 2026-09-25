@@ -91,3 +91,14 @@ correos**. Procedimiento:
 3. `resend-broadcast.py --html … --subject … --name "Actualización <producto> <versión> (ES)" --test john@chefbusiness.co`
    y, acto seguido, el mismo comando con `--scheduled-at <slot>`. El script bloquea si un enlace no responde 200.
 4. Anotar el slot en el handoff de la sesión y en `CALENDARIO-V2-SEMANAL.md`.
+
+## Cola del segmento EN (desde el 25-sep-2026)
+
+Los lanzamientos de la Tienda internacional en inglés van al segmento «AI Chef Pro EN» con
+`--segment d06ed053-4327-4bec-9e3b-25a9ee9f6704 --from "AI Chef Pro <hello@news.aichef.pro>"`. Ese segmento **no recibe**
+los correos de producto ES, así que tiene **su propia cola**: hueco = último envío AL SEGMENTO EN + 5 días, nunca el mismo
+día que un correo de producto ES, a las **14:00 UTC** (10:00 Nueva York, 15:00 Londres). Los broadcasts «Growth …» los
+envía un agente independiente de John (Grokbot): no cuentan para la cola ni se tocan. Precedente: Food Cost Kit Pro,
+`broadcast-food-cost-templates-lanzamiento-en.html`, 28-sep 14:00Z. Saludo «Hi everyone,»; pie «You’re receiving this email…
+Unsubscribe». Si el script aborta con «no vivo» en una URL que da 200 por curl, son las ráfagas de la IP del Mac contra
+Netlify: esperar ~20 s y repetir.
