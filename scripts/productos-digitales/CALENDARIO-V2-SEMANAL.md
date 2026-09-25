@@ -198,7 +198,20 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Segmento EN, lunes 28-sep 14:00 UTC** (`d3bd1f9c-…`): presentación de la tienda EN + primer producto en un solo correo.
 - La cola EN es **independiente** de la ES (otro segmento): hueco = último envío al segmento EN + 5 días, sin coincidir con un
   correo de producto ES el mismo día. Detalle: handoff `SESSION_HANDOFF_2026-09-25-food-cost-kit-en.md` (bloque de la tarde).
-- Cola ES sin cambios: Chocolatería 24-oct **pendiente de D53** (John) · Taquería 29-oct (desde el 29-sep) · Escandallos 2.1 3-nov (desde el 4-oct).
+- **D53 DECIDIDA (John delegó: «decide tú», 25-sep): SÍ al Kit de Tareas Chocolatería 2.1**, con el orden cambiado respecto a la
+  SPEC. Motivo: el kit es un producto VENDIDO cuyas tres celdas de declaración funden cacahuetes, frutos de cáscara y sésamo
+  en «frutos secos» y omiten los sulfitos (entradas 5, 8, 11 y 12 del Anexo II): es un error de etiquetado de alérgenos, no
+  de estilo, y arreglarlo cuesta ≈0,15 M. Alcance exacto en `guia-chocolateria-SPEC.md` §D53 (b) + acotación: solo las tres
+  celdas y la humedad 50-60 %; las otras 7 celdas con «frutos secos» NO se tocan.
+  - **Correo de la guía: 24-oct 08:00Z, PROGRAMADO** (`ff01873f-2746-4345-b8b4-bfc4685e2800`, prueba a John `01a0d89e-…`). La guía va
+    delante del kit (y no detrás, como decía la SPEC): lleva desde el 19-sep sin correo, es la venta grande (65 € frente a 12 €)
+    y su nota-puente del cap. 12 vale con el kit 2.0 y con el 2.1.
+  - 🔴 **Plazo: el kit 2.1 tiene que estar LIVE antes del 24-oct**, porque el correo de la guía recomienda el kit («lo que vas a
+    usar cada mañana»). Se hace en la próxima sesión «v2.x ES» (S, Mac en serie con vigilante), por su generador y con los gates
+    de §8.2 de la SPEC (grep de las 3 celdas, censo, descargas LIVE).
+  - Correo del kit 2.1: siguiente hueco libre tras Escandallos 2.1 (3-nov) → **8-nov**, programable desde el 9-oct.
+  - Guía v1.1: retirar la nota-puente del cap. 12 cuando el kit 2.1 esté LIVE (SPEC §D53 c).
+- Cola ES: Chocolatería 24-oct ✅ programado · Taquería 29-oct (desde el 29-sep) · Escandallos 2.1 3-nov (desde el 4-oct) · Kit Chocolatería 2.1 8-nov (desde el 9-oct, si está LIVE).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 

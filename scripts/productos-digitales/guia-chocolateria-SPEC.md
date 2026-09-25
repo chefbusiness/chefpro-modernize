@@ -205,6 +205,8 @@ escribir, **ya publicada por la casa en un producto vendido a 12 €**. Y las tr
 entrada cuando `CHN-34b` demuestra que **cacahuetes (punto 5), frutos de cáscara (punto 8) y granos de sésamo
 (punto 11) son entradas INDEPENDIENTES del Anexo II**; falta además el **sulfito (punto 12)** en las tres.
 
+> ✅ **25-sep-2026 — D53 RESUELTA por delegación de John («decide tú»): SÍ al kit 2.1, pero la guía va delante en la cola** (guía 24-oct PROGRAMADA; kit 2.1 LIVE antes del 24-oct porque el correo de la guía lo recomienda; su correo, 8-nov). Detalle en `CALENDARIO-V2-SEMANAL.md` (entrada del 25-sep).
+
 **Decisión (D53, REFORMULADA en la ronda 3): la GUÍA publica los ocho alérgenos; la regeneración del KIT a 2.1 es una
 PROPUESTA para John, no una tarea que el orquestador se auto-asigne.** El motivo es de método, no de contenido:
 **el kit es un producto VENDIDO (12 €), y regenerar un producto vendido lo decide John.** Precedente exacto y

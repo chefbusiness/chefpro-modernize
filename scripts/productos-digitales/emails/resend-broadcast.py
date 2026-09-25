@@ -76,12 +76,22 @@ def http(method, path, key, body=None):
     return int(status or 0), data
 
 
-def vivo(url):
+def vivo(url, intentos=3, espera=8):
+    # Netlify devuelve 5xx o corta la conexión a la IP del Mac tras una ráfaga de peticiones
+    # (25-sep: tres abortos en falso en URLs que daban 200). Un 404 es definitivo; lo demás se reintenta.
     import subprocess
-    out = subprocess.run(['curl', '-s', '-I', '-o', '/dev/null', '-w', '%{http_code} %{content_type}',
-                          '-A', 'aichef-broadcast-gate', url], capture_output=True, text=True, timeout=60).stdout
-    st, _, ct = out.partition(' ')
-    return int(st or 0), ct
+    import time
+    st, ct = 0, ''
+    for i in range(intentos):
+        out = subprocess.run(['curl', '-s', '-I', '-o', '/dev/null', '-w', '%{http_code} %{content_type}',
+                              '-A', 'aichef-broadcast-gate', url], capture_output=True, text=True, timeout=60).stdout
+        s, _, ct = out.partition(' ')
+        st = int(s or 0)
+        if st == 200 or st == 404:
+            break
+        if i < intentos - 1:
+            time.sleep(espera)
+    return st, ct
 
 
 def guardas(html, scheduled_at):

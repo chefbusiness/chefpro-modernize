@@ -44,7 +44,7 @@
 - Revisión adversarial (2 sonnet, 269 k tokens): 1 hallazgo real (el hub NO distingue qué productos vienen primero: todos
   llevan el mismo «Coming soon in English») → frase quitada. Copy/reglas/render: sin hallazgos.
 - **Gotcha:** `resend-broadcast.py` abortó dos veces con «no vivo» en URLs que dan 200: son las ráfagas de la IP del Mac
-  contra Netlify (URL con UTM nueva = miss de caché de 3-5 s + 5xx intermitentes). Esperar ~20 s y repetir; no tocar el script.
+  contra Netlify (URL con UTM nueva = miss de caché de 3-5 s + 5xx intermitentes). Arreglado ese mismo día: `vivo()` reintenta 3 veces con 8 s de espera (un 404 es definitivo).
 - **GSC:** hub `/en/digital-products` indexado (rastreado 24-sep). Landing `/en/digital-products/food-cost-templates`
   «URL is unknown to Google»; en `sitemap-0.xml` y rastreable (robots OK; `/access` y `/library` bloqueados, correcto).
   Sitemap reenviado por API. **Pedir indexación = clic de John en el panel** (la API no lo permite).
