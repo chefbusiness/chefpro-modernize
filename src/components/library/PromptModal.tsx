@@ -7,9 +7,11 @@ interface Props {
   text: string;
   compatible: string[];
   onClose: () => void;
+  /** 'en' = botón de copiar en inglés (tienda EN). Sin la prop (el ES) es lo de siempre. */
+  lang?: 'es' | 'en';
 }
 
-export default function PromptModal({ number, title, text, compatible, onClose }: Props) {
+export default function PromptModal({ number, title, text, compatible, onClose, lang = 'es' }: Props) {
   const [copied, setCopied] = useState(false);
   const [visible, setVisible] = useState(false);
 
@@ -86,12 +88,12 @@ export default function PromptModal({ number, title, text, compatible, onClose }
             {copied ? (
               <>
                 <Check className="w-4 h-4" />
-                ¡Copiado!
+                {lang === 'en' ? 'Copied!' : '¡Copiado!'}
               </>
             ) : (
               <>
                 <Copy className="w-4 h-4" />
-                Copiar prompt
+                {lang === 'en' ? 'Copy prompt' : 'Copiar prompt'}
               </>
             )}
           </button>

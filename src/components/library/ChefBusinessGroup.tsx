@@ -47,22 +47,39 @@ const brands = [
   },
 ];
 
-export default function ChefBusinessGroup() {
+// Tienda EN (2026-10-03): las mismas marcas, descripciones en inglés y AI Chef Pro a /en.
+const brandsEn: typeof brands = [
+  { ...brands[0], desc: 'AI for chefs and hospitality professionals', href: 'https://aichef.pro/en' },
+  { ...brands[1], desc: 'More customers from Google Maps' },
+  { ...brands[2], desc: 'SEO for restaurants' },
+  { ...brands[3], desc: 'Restaurant consulting', badge: 'Parent' },
+  { ...brands[4], desc: 'Connecting suppliers with hospitality' },
+  { ...brands[5], desc: 'Recurring task management for hospitality and retail' },
+];
+
+const COPY = {
+  es: { kicker: 'Parte de', text: 'Soluciones digitales para la industria gastronómica' },
+  en: { kicker: 'Part of', text: 'Digital solutions for the food and hospitality industry' },
+} as const;
+
+// `lang` (tienda EN, 2026-10-03): 'en' = textos en inglés. Sin la prop (el ES) es lo de siempre.
+export default function ChefBusinessGroup({ lang = 'es' }: { lang?: 'es' | 'en' }) {
+  const t = COPY[lang === 'en' ? 'en' : 'es'];
   return (
     <section className="py-16 px-4 border-t border-white/10">
       <div className="max-w-6xl mx-auto text-center">
         <p className="text-[#FFD700]/60 text-xs font-bold tracking-[0.25em] uppercase mb-3">
-          Parte de
+          {t.kicker}
         </p>
         <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-2 italic">
           ChefBusiness Group
         </h2>
         <p className="text-gray-400 mb-10">
-          Soluciones digitales para la industria gastronómica
+          {t.text}
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          {brands.map(({ icon: Icon, name, desc, href, color, badge }) => (
+          {(lang === 'en' ? brandsEn : brands).map(({ icon: Icon, name, desc, href, color, badge }) => (
             <a
               key={name}
               href={href}

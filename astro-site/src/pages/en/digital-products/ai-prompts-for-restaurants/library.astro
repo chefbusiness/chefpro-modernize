@@ -1,0 +1,18 @@
+---
+// /en/digital-products/ai-prompts-for-restaurants/library — dashboard post-pago del Gastro Pro Prompts
+// eBook (tienda EN): la Pro Prompts Library en inglés. Escrita A MANO (el generador de la zona app
+// salta las entradas con lang ≠ 'es'). Copia de pages/pro-prompts-library.astro.
+// Island client:only="react": ProtectedRoute lee localStorage en render síncrono (ReferenceError
+// bajo SSR) → sin pase SSR, igual que el ES.
+// whatsapp={false}: el dashboard monta su PROPIO WhatsAppProductSupport (React, lang="en").
+// miselup={false}: la tarjeta lateral de Miselup es solo de la tienda ES (TIENDA §3.9); sin esto
+// BaseLayout la montaría por el libraryPath del registro zona-app.
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../../../../components/FunctionsOriginPatch.astro';
+import AiPromptsForRestaurantsLibraryIsland from '../../../../islands/library/AiPromptsForRestaurantsLibraryIsland';
+---
+
+<BaseLayout title="Pro Prompts Library — Dashboard | AI Chef Pro" lang="en" noindex whatsapp={false} miselup={false}>
+  <FunctionsOriginPatch />
+  <AiPromptsForRestaurantsLibraryIsland client:only="react" />
+</BaseLayout>
