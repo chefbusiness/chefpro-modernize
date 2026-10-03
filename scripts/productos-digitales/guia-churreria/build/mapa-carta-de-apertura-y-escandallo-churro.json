@@ -1,0 +1,392 @@
+{
+ "Precio del aceite (base imponible) EUR/L": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L5",
+  "valor": 1.996,
+  "tipo": "salida"
+ },
+ "Absorción de aceite en % del peso frito": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L6",
+  "valor": 0.1,
+  "tipo": "salida"
+ },
+ "Densidad del aceite kg/L": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L7",
+  "valor": 0.92,
+  "tipo": "salida"
+ },
+ "Precio del preparado para masa (base imponible) EUR/kg": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L8",
+  "valor": 1.45,
+  "tipo": "salida"
+ },
+ "Kilos fritos por kilo de masa (celda de origen del cruce al libro 1)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L9",
+  "valor": 0.9,
+  "tipo": "salida"
+ },
+ "Kilos de masa por ración media (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L5",
+  "valor": 0.09791812865497075,
+  "tipo": "salida"
+ },
+ "Ticket sin IVA por ración en verano": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L6",
+  "valor": 2.2067272727272726,
+  "tipo": "salida"
+ },
+ "Materia por ración en verano": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L7",
+  "valor": 0.3585007170394811,
+  "tipo": "salida"
+ },
+ "Materia por ración para llevar (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L8",
+  "valor": 0.30546292831280536,
+  "tipo": "salida"
+ },
+ "Materia por ración en sala (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L9",
+  "valor": 0.2731486410667721,
+  "tipo": "salida"
+ },
+ "Ticket sin IVA por ración en sala (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L10",
+  "valor": 2.1480519480519478,
+  "tipo": "salida"
+ },
+ "Ticket sin IVA por ración para llevar (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L11",
+  "valor": 2.1924242424242424,
+  "tipo": "salida"
+ },
+ "Raciones en sala, en fracción": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L12",
+  "valor": 0.7,
+  "tipo": "salida"
+ },
+ "Aceite absorbido por ración media": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!L5",
+  "valor": 0.01911957894736842,
+  "tipo": "salida"
+ },
+ "Coste hora de mano de obra": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Coste Hora!L5",
+  "valor": 13.24384288441323,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Chocolate a la taza en polvo (bolsa de 800 g, rinde 4,3 L)» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L10",
+  "valor": 7.1875,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Cobertura de chocolate negro (1 kg)» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L11",
+  "valor": 6.5,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Cucurucho de cartón para churros (caja de 100)» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L12",
+  "valor": 0.15,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Vaso de papel plastificado con tapa» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L13",
+  "valor": 0.08,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Papel antigrasa para sueltos» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L14",
+  "valor": 0.02,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Caja de cartón para el kilo» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L15",
+  "valor": 0.25,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Café en grano» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L16",
+  "valor": 18.0,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Leche» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L17",
+  "valor": 0.85,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Azúcar para espolvorear y sobres» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L18",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Cacao soluble» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L19",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Infusión (sobre)» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L20",
+  "valor": 0.06,
+  "tipo": "salida"
+ },
+ "Precio sin IVA de «Agua (botella de 50 cl)» (celda de origen del cruce al libro 2)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!L21",
+  "valor": 0.22,
+  "tipo": "salida"
+ },
+ "IVA en sala": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B5",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA de churros y porras para llevar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B6",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA del chocolate para llevar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B7",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA de las demás bebidas para llevar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B8",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "IVA del granizado y la horchata para llevar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B9",
+  "valor": 0.21,
+  "tipo": "parametro"
+ },
+ "Gramos de masa por churro": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B14",
+  "valor": 20,
+  "tipo": "parametro"
+ },
+ "Gramos de masa por porra": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B15",
+  "valor": 60,
+  "tipo": "parametro"
+ },
+ "Merma de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B16",
+  "valor": 0.05,
+  "tipo": "parametro"
+ },
+ "Kilos fritos por kilo de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B17",
+  "valor": 0.9,
+  "tipo": "parametro"
+ },
+ "Importe del vaso para llevar cobrado aparte": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B25",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Precio del aceite por garrafa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B34",
+  "valor": 49.9,
+  "tipo": "entrada"
+ },
+ "Precio de la caja de preparado para masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B33",
+  "valor": 34.8,
+  "tipo": "entrada"
+ },
+ "Coste de 1 kg de masa con el preparado": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!E9",
+  "valor": 0.5043478260869564,
+  "tipo": "salida"
+ },
+ "Coste de 1 kg de masa con mix propio": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!E16",
+  "valor": 0.3632,
+  "tipo": "salida"
+ },
+ "Ahorro del mix propio por kg de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!B18",
+  "valor": 0.14114782608695636,
+  "tipo": "salida"
+ },
+ "Coste de materia de un churro": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!B30",
+  "valor": 0.015728604118993135,
+  "tipo": "salida"
+ },
+ "Coste de materia de una porra": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!C30",
+  "valor": 0.0471858123569794,
+  "tipo": "salida"
+ },
+ "Coste de materia de una docena de churros": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!B31",
+  "valor": 0.18874324942791762,
+  "tipo": "salida"
+ },
+ "Piezas de churro por kilo de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!B26",
+  "valor": 50.0,
+  "tipo": "salida"
+ },
+ "Euros de aceite absorbido por kilo de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!B11",
+  "valor": 0.1952608695652174,
+  "tipo": "salida"
+ },
+ "Litros de aceite que se lleva un kilo de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!B9",
+  "valor": 0.09782608695652174,
+  "tipo": "salida"
+ },
+ "Coste de la merma por kilo vendido": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!B16",
+  "valor": 0.03682151029748279,
+  "tipo": "salida"
+ },
+ "Peso del aceite absorbido en la materia de la ración": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!B22",
+  "valor": 0.06759786830768297,
+  "tipo": "salida"
+ },
+ "Coste del chocolate por litro": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B12",
+  "valor": 2.1872093023255816,
+  "tipo": "salida"
+ },
+ "Coste de una taza de chocolate": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B15",
+  "valor": 0.43744186046511635,
+  "tipo": "salida"
+ },
+ "Cacao seco total del preparado del ejemplo": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B21",
+  "valor": 0.35,
+  "tipo": "entrada"
+ },
+ "Cacao seco total mínimo del chocolate a la taza": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B23",
+  "valor": 0.35,
+  "tipo": "parametro"
+ },
+ "Aviso de la taza antes de imprimir la carta": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B24",
+  "valor": "Sin aviso: la carta usa la denominación de la etiqueta",
+  "tipo": "salida"
+ },
+ "Minutos de mano de obra por ración": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Coste Hora!B6",
+  "valor": 4.474860335195531,
+  "tipo": "entrada"
+ },
+ "Coste de mano de obra por ración": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Coste Hora!B8",
+  "valor": 0.9877391201503724,
+  "tipo": "salida"
+ },
+ "Formato que más deja por kilo de masa": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!B16",
+  "valor": "CH2 · Media ración de churros (3 uds)",
+  "tipo": "salida"
+ },
+ "Euros por kilo de masa del mejor formato": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!B17",
+  "valor": 19.404406455862972,
+  "tipo": "salida"
+ },
+ "Euros por kilo de masa del peor formato": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!B19",
+  "valor": 6.8118685770750975,
+  "tipo": "salida"
+ },
+ "Ticket sin IVA por ración (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!D6",
+  "valor": 2.1613636363636357,
+  "tipo": "salida"
+ },
+ "Materia por ración (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!D7",
+  "valor": 0.2828429272405821,
+  "tipo": "salida"
+ },
+ "Margen sobre materia por ración en euros (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!D8",
+  "valor": 1.8785207091230536,
+  "tipo": "salida"
+ },
+ "Comprobación de los dos mixes": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!B12",
+  "valor": "CUADRAN los dos mixes",
+  "tipo": "salida"
+ },
+ "Margen sobre materia prima (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B6",
+  "valor": 0.8691368159980482,
+  "tipo": "salida"
+ },
+ "Margen sobre materia prima (julio y agosto)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!C6",
+  "valor": 0.8375419013168702,
+  "tipo": "salida"
+ },
+ "Margen tras aceite y mano de obra (invierno)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B7",
+  "valor": 0.4121386952134384,
+  "tipo": "salida"
+ },
+ "Margen tras aceite y mano de obra (julio y agosto)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!C7",
+  "valor": 0.3899382792663596,
+  "tipo": "salida"
+ },
+ "Cifra de contraste de Loomis (CUS-01)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B13",
+  "valor": 0.6,
+  "tipo": "parametro"
+ },
+ "Cifra de contraste de La Artesana (CUS-30)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B14",
+  "valor": 0.5,
+  "tipo": "parametro"
+ },
+ "Margen de 100 raciones de invierno": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!I31",
+  "valor": 187.85207091230538,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto Mantener": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!B34",
+  "valor": 21.0,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto Revisar precio": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!B35",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto Vigilar rotación": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!B36",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Referencias con veredicto Retirar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!B37",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Euros por kilo de masa de Ración de churros (6 uds)": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!J7",
+  "valor": 17.965012516469034,
+  "tipo": "salida"
+ },
+ "Euros por kilo de masa de Docena de churros para llevar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!J12",
+  "valor": 11.253838274044796,
+  "tipo": "salida"
+ },
+ "Euros por kilo de masa de Kilo de churros para llevar": {
+  "ref": "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!J13",
+  "valor": 6.8118685770750975,
+  "tipo": "salida"
+ }
+}

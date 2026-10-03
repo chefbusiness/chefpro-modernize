@@ -1,0 +1,252 @@
+{
+ "producto": "guia-churreria-chocolateria",
+ "fecha": "2026-10-03",
+ "veredicto": "CORREGIR ANTES",
+ "resumen": {
+  "alto": 1,
+  "medio": 11,
+  "bajo": 11
+ },
+ "bloqueantes": [
+  "R-01",
+  "R-02",
+  "R-03",
+  "R-04",
+  "R-07",
+  "R-08",
+  "R-09",
+  "R-10"
+ ],
+ "hallazgos": [
+  {
+   "id": "R-01",
+   "titulo": "Seis filas de CUADRE de los libros 4 y 8 dicen «CUADRA» con una copia mal hecha",
+   "libro": "4 y 8",
+   "hoja_celda": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B49,B53 · turnos-plantilla-y-madrugada.xlsx!Parámetros!B74:B79",
+   "gravedad": "alto",
+   "problema": "Las filas de CUADRE de 6 cruces de los libros 4 y 8 no pueden detectar una copia mal hecha: comparan identidades o cotas (masa por ración ≤ 1/(1−absorción); reposición punta ≤ cuba; personas ≥ máximo del cuadrante; suma de franjas = horas con mínimo; 0 ≤ refuerzo ≤ horas de apertura), no la cifra copiada contra la que publica el origen. SPEC §2.2 exige que la fila avise «si lo tecleado se aleja del origen». El error pasa en silencio al libro 6 por X12 y X15.",
+   "evidencia": "pycel, salida evaluada ANTES de tocar la entrada: 4!Parámetros!B16 (cuba, X3) 25→50 ⇒ B53 sigue «CUADRA» y Consumo y Reposición!L5 (origen de X12) pasa de 0,028398 a 0,056797 €/ración (×2). 4!B10 (masa, X2 bis) 0,0979→0,2 ⇒ B49 sigue «CUADRA». 8!Parámetros!B12 (refuerzo, X7) 56→560 h ⇒ B79 sigue «CUADRA» y Coste de Plantilla!L5 (origen de X15) sube de 119.350,20 a 126.025,10 €. 8!B8/B10 intercambiados (desayuno/merienda) ⇒ B75 y B77 siguen «CUADRA». Además las tolerancias no son las mismas en la familia: 0,02 en 1, 2, 5 y 6; 0,05 en 4 (B33) y 8 (B62).",
+   "fix": "gen_aceite-de-fritura-coste-y-cambio.py y gen_turnos-plantilla-y-madrugada.py: para CADA celda de cruce, el patrón de los libros 1, 2, 5 y 6 (verde «Lo que publica hoy la celda de origen (anótalo)» con el valor_defecto + desviación relativa + veredicto contra la tolerancia de Parámetros). Las identidades actuales se quedan como filas de «Contraste», no de CUADRE. Tolerancia 0,02 «heredado» en los dos. Añadir al demo() las cuatro pruebas de arriba (deben encender «REVISA»)."
+  },
+  {
+   "id": "R-02",
+   "titulo": "La ficha de visita imprime un rótulo en lugar del riesgo de la cocina",
+   "libro": 1,
+   "hoja_celda": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!H9",
+   "gravedad": "medio",
+   "problema": "La columna «Dato de tu proyecto» del eliminatorio 4 («¿Aguanta la potencia y el riesgo de incendio?») apunta al RÓTULO de la fila, no al dato: imprime «Riesgo de la cocina» en la ficha que el lector se lleva a la visita.",
+   "evidencia": "H9 = 'Freidoras, Potencia y Riesgo'!$B$13 → 'Riesgo de la cocina' (data_only). El dato está en D13 («Riesgo bajo») y los kW en D12 (28). Es la única referencia de toda la familia que apunta a una celda de texto que no es entrada (barrido de las 6.276 fórmulas).",
+   "fix": "gen_produccion-hora-punta-y-local.py: H9 = 'Freidoras, Potencia y Riesgo'!$D$12&\" kW · \"&'Freidoras, Potencia y Riesgo'!$D$13 (o sólo $D$13). Añadir al demo(): con la segunda freidora en «Sí», H9 tiene que decir «Riesgo alto»."
+  },
+  {
+   "id": "R-03",
+   "titulo": "«¿Una churrera o dos?» no tiene veredicto: el 1 remite al 5 y el 5 al 1",
+   "libro": "1 y 5",
+   "hoja_celda": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B17 · temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!A24",
+   "gravedad": "medio",
+   "problema": "La decisión «¿Una churrera o dos?» (SPEC §2.1, libro 1) no la resuelve ninguna celda: el libro 1 remite al 5 y el 5 remite al 1. No hay veredicto ni etiqueta de mapa que el capítulo pueda citar.",
+   "evidencia": "1!Cuello de Botella!B17 = «Mira el libro 5: allí esta capacidad se cruza con tus franjas». 5!Capacidad contra el Pico!A24: «…y, si no basta, más línea (libro 1)». En 5 sólo hay números (E20 = 1 mes, E22 = 8,70 raciones/h de déficit en diciembre) y Cola del Domingo repite exactamente la misma cifra (F18 = 8,6986). Grep de «churrera», «segunda freidora» en el libro 5: 0.",
+   "fix": "gen_temporada-franjas-y-ferias.py: fila de veredicto en «Capacidad contra el Pico» (p. ej. B23 «¿Una churrera o dos?»): sin meses en déficit → «Una basta»; déficit sólo en días punta y ≤ lo que cubre el refuerzo de «Refuerzo por Pico» → «Una, con refuerzo en el pico»; si no → «Necesitas más línea: activa la segunda freidora en el libro 1 y vuelve a copiar la capacidad (X4)». Etiqueta en el mapa. gen_produccion: B17 cita esa celda exacta."
+  },
+  {
+   "id": "R-04",
+   "titulo": "Cruce no declarado: las partidas no amortizables viajan del 2 al 6 sin rótulo ni CUADRE",
+   "libro": 6,
+   "hoja_celda": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B52 → Inversión Inicial!B7",
+   "gravedad": "medio",
+   "problema": "«Partidas del CAPEX que no se amortizan (fianza, stock y marketing)» = 4.668,30 € es una cifra que nace en el libro 2 (bloques 9-11) y entra en el 6 como verde SIN estar en CRUCES, sin rótulo «cópialo del libro 2» y sin fila de CUADRE: un cruce no declarado que escapa al gate de ciclos. Si el lector cambia la fianza, el stock o el marketing en el 2, la amortización del 6 queda mal sin aviso.",
+   "evidencia": "0. Supuestos!D52 = «calculado en datos_ejemplo: capex_total() - capex_amortizable()»; E52 «Si tu CAPEX cambia, cambia esta cifra con él». El libro 2 ya publica el dato: CAPEX por Bloque!I45 = 81.747,35 (inmovilizado amortizable, en el mapa) y E42:E44 = 1.820 + 848,30 + 2.000. Inversión Inicial!B8 = B6 − B7.",
+   "fix": "Declarar «X10 bis» (2 → 6, arista ya existente) en datos_ejemplo.CRUCES con origen calculadora-capex-churreria.xlsx!Resumen!L6 = capex_total() − capex_amortizable(); gen_calculadora-capex-churreria.py publica K6/L6; gen_plan-financiero-3-anos-churreria.py recibe con rótulo_cruce() y su fila de CUADRE (la 25.ª)."
+  },
+  {
+   "id": "R-05",
+   "titulo": "Tres conceptos con dos fuentes: factor de fritura, precios de insumo y superficie",
+   "libro": "1, 2 y 3",
+   "hoja_celda": "1!Parámetros!B17 y 3!Parámetros!B17 · 2!CAPEX por Bloque!F19:F29 y 3!Parámetros!B36:B53 · 1!Parámetros!B6 y 2!Parámetros!B10",
+   "gravedad": "medio",
+   "problema": "Tres conceptos con dos celdas verdes y sin cruce («un concepto = una fuente»): (a) kilos fritos por kilo de masa 0,9 en los libros 1 y 3, del que depende el CUADRE de identidad del libro 4 (X3 se calcula con el del 1 y X2 bis con el del 3); (b) nueve precios de insumo (cobertura 6,50, cucurucho 0,15, vaso 0,08, papel 0,02, leche 0,85, café 18, infusión 0,06, agua 0,22, caja 0,25) tecleados otra vez en el stock inicial del libro 2; (c) superficie útil 75 m² en los libros 1 y 2.",
+   "evidencia": "Barrido de verdes numéricas repetidas entre libros (excluidas las filas de cruce y de CUADRE): 0.9 → (1, Parámetros!B17) y (3, Parámetros!B17); 6.5 → (2, CAPEX por Bloque!F19) y (3, Parámetros!B36); 0.15/0.08/0.02/0.22/0.25/0.85/18/0.06 ídem; 75 → (1, Parámetros!B6) y (2, Parámetros!B10). Las notas lo admiten: 1!E17 «no viaja como cruce»; 2!E10 «La MISMA que pusiste en … el libro 1».",
+   "fix": "datos_ejemplo.CRUCES (antes de regenerar): «X1 bis» 3 → 1 kg fritos/kg masa (3!Parámetros!L9); ampliar X17 (3 → 2) a los precios de insumo del stock o reducir el stock del libro 2 a aceite + mix + un importe de «resto de envases y bebidas» supuesto; «X9 bis» 1 → 2 superficie útil (1!Zonas y m²!L5). Todas las aristas ya existen (3→1, 3→2, 1→2). Regenerar 1, 2, 3 y 4 con sus filas de CUADRE."
+  },
+  {
+   "id": "R-06",
+   "titulo": "El 6 no enseña el verano con fijos de las tres salidas",
+   "libro": 6,
+   "hoja_celda": "plan-financiero-3-anos-churreria.xlsx!Escenarios!A20:D25",
+   "gravedad": "medio",
+   "problema": "SPEC §2.1 (libro 6): «“verano: resultado con fijos” de CADA salida en 6!Escenarios». La hoja enseña sólo «cerrar» (−27.713,28 €) y la elegida (−10.344,57 €); la tercera (ferias, −25.606,83 € en datos_ejemplo.verano_con_fijos) no está y A25 remite al libro 5. La decisión 9 del bonus 2 no puede citar las tres con fijos desde un mismo libro.",
+   "evidencia": "Escenarios!B22 = 0 (cerrar), B23 = 0. Supuestos!B32 (X16, sólo la elegida). 5!El Verano (Tres Salidas)!B16:D16 tiene las tres contribuciones (0 · 17.368,71 · 2.106,45), pero sólo C16 viaja.",
+   "fix": "datos_ejemplo.CRUCES: «X16 bis» 5 → 6 con las contribuciones de las dos salidas no elegidas (o de las tres) en 5!El Verano (Tres Salidas)!L6:L8; gen_temporada publica el bloque K/L; gen_plan-financiero añade la tercera fila con su resultado con fijos y su CUADRE."
+  },
+  {
+   "id": "R-07",
+   "titulo": "La nota del 676 publica en un Excel la cláusula de la media cuota",
+   "libro": 7,
+   "hoja_celda": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!A15 (comentario)",
+   "gravedad": "medio",
+   "problema": "La nota legal del 676 (CUN-10) publica, en el comentario de la celda, la cláusula de la media cuota: «…Cuando los establecimientos clasificados en este epígrafe permanezcan abiertos al público durante seis...». D14/A3 (SPEC §1.A): la nota del 676 entra sólo como una línea del cap. 09 «y en ningún Excel»; §5.1.8 veta la media cuota.",
+   "evidencia": "Comentario de A15 = datos_ejemplo.nota_legal('CUN-10'), que añade la frase con «epígrafe» de la ficha (ventana de _cita_articulo). La ficha CUN-10 de la verificación legal dice «PROHIBIDO» en su nota. El constructor L7 lo declaró y no lo corrigió.",
+   "fix": "gen_checklist-legal-fritura-y-licencias.py: nota propia para CUN-10 = «Verificado el 03-10-2026 · RDLeg 1175/1990 (tarifas del IAE), grupo 676 «Servicios en chocolaterías, heladerías y horchaterías» · URL» (sin la nota de temporada). Mejor aún, en datos_ejemplo.nota_legal(): para CUN-10 no ampliar con _cita_articulo (el «grupo 676» ya es epígrafe). Gate: «seis» y «media» ausentes de todo comentario del libro 7."
+  },
+  {
+   "id": "R-08",
+   "titulo": "La nota de CUN-03 cita el art. 8 derogado de la norma de aceites",
+   "libro": "4 y 7",
+   "hoja_celda": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!G18 · checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!A41 (comentarios)",
+   "gravedad": "medio",
+   "problema": "La nota de CUN-03 cita «arts. 8-9» de la Norma de aceites calentados de 1989. El art. 8 está derogado (RD 176/2013) y §5.1.5 prohíbe citarlo; el texto visible está bien, pero la referencia normativa que lee el comprador nombra el artículo vetado.",
+   "evidencia": "Ambos comentarios: «Verificado el 03-10-2026 · Orden de 26 de enero de 1989 … arts. 8-9 · https://www.boe.es/buscar/act.php?id=BOE-A-1989-2265». La ficha CUN-03: «Los arts. 7, 8, 10, 11 y 12 están derogados … el art. 9 sigue vivo» y «El producto NO puede citar el art. 8 como regla».",
+   "fix": "Nota sobrescrita en gen_aceite-de-fritura-coste-y-cambio.py y gen_checklist-legal-fritura-y-licencias.py: «… art. 9 (vigente; los arts. 7, 8, 10, 11 y 12 los derogó el RD 176/2013, art. 46) · URL». O corregir fuente_titulo en la verificación legal y regenerar. Gate: regex «arts?\\. ?8\\b» = 0 en comentarios."
+  },
+  {
+   "id": "R-09",
+   "titulo": "Texto interno de la fábrica a la vista del comprador en cinco libros",
+   "libro": "2, 5, 6, 7 y 8",
+   "hoja_celda": "6!0. Supuestos!D43:D62,D78,E49 · 8!Parámetros!E20,E21,D27,D28 · 8!Cuadrante por Franja!A23,A32 (com.) · 2!CAPEX por Bloque!P7,P9,L18 · 2!Variante del Formato!I8 · 2!Franquicia o Independiente!G16 · 5!Punto Muerto por Evento!B6 (com.) · 7!Ferias y Venta Ambulante!A16 (com.)",
+   "gravedad": "medio",
+   "problema": "Texto interno de la fábrica visible para el comprador de un producto de 65 €: rutas de ficheros de OTRO producto, nombres de funciones Python, códigos de decisión y hallazgo, y un «PROHIBIDO» de la verificación legal. El libro 3 sí lo limpió (NOTAS_PUBLICAS); los otros cinco no.",
+   "evidencia": "6!0. Supuestos!D49 «heredado: guia-chocolateria/datos_ejemplo.py PARAMS[meses_colchon_fondo_maniobra]» (13 filas así en la hoja principal de supuestos); D60 «calculado en datos_ejemplo: principal_prestamo()»; E49 «(D16)». 8!E20 «(V-01, rama A)»; E21 «(SR-04)»; comentario A32 «datos_ejemplo.TURNOS … Los tres casos de A1». 2!P7 «(N-4)», P9 «(SR-11)», L18 «(V-06)», Variante!I8 «(D2)», G16 id «CUS-D6». 5!B6 «(D2)». 7!Ferias!A16 «(PROHIBIDO citar cualquier artículo del RD 199/2010 (lo siguen citando ordenanzas y blogs: ver CUN-36).)», que sale de nota_legal('CUN-19').",
+   "fix": "Llevar a los cinco generadores el saneador del libro 3 (regex que quita paréntesis con código y traduce «heredado: guia-chocolateria/…» a «heredado de la Guía de la Chocolatería, supuesto declarado»; «calculado en datos_ejemplo» → «calculado»). Para CUN-19, nota propia sin la frase del analista. Gate en cada cierre: 0 coincidencias de r\"\\b(?:SR|V|N|D|A)-?\\d+\\b|datos_ejemplo|guia-chocolateria/|PROHIBIDO|rama [AB]|\\(\\w+\\(\\)\\)\" en texto visible y comentarios (los ids CUN/CUS/CHN de fuente sí valen)."
+  },
+  {
+   "id": "R-10",
+   "titulo": "Granizado y horchata para llevar al 21 % afirmado como regla",
+   "libro": 3,
+   "hoja_celda": "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B9 y E9",
+   "gravedad": "medio",
+   "problema": "El granizado y la horchata para llevar nacen al 21 % y la nota lo afirma como regla («la exclusión … los lleva al tipo general»). La SPEC (§3.3, V-04 rama B) fija para TODAS las bebidas para llevar celda verde al 10 % con «consulta a tu asesor: … podría ser el 21 %», y no hay ficha que resuelva la horchata (CUN-18: sin consulta DGT; CUN-17 sólo define bebida refrescante).",
+   "evidencia": "Parámetros!B9 = 0,21; D9 «FC-IVA-04 + CUN-17»; E9 «Granizado y horchata PARA LLEVAR: la exclusión de las bebidas refrescantes con azúcares añadidos del tipo reducido desde el 1-1-2021 los lleva al tipo general.» Frente a B7/B8 (taza y demás bebidas) al 10 % con el aviso de V-04.",
+   "fix": "gen_carta-de-apertura-y-escandallo-churro.py: B9 = 0,10 con el mismo aviso de B7/B8 («zona gris: consulta a tu asesor; con azúcar añadido podría ser el 21 %») o, si se quiere el 21 % por prudencia, registrarlo como decisión en la SPEC y redactar E9 como aviso, nunca como regla."
+  },
+  {
+   "id": "R-11",
+   "titulo": "Franquicias: diferencias y recuentos con bases mezcladas; decisión 12 con dos cifras",
+   "libro": 2,
+   "hoja_celda": "calculadora-capex-churreria.xlsx!Franquicia o Independiente!I6:I17, B23:B24",
+   "gravedad": "medio",
+   "problema": "La hoja resta y cuenta inversiones «desde», «más IVA», «sin obra» o «sin fianzas ni existencias» contra un CAPEX sin IVA y con obra (lista negra §5.2: «mezclar bases de IVA», «“desde” como cifra cerrada»). Además datos_ejemplo.cifras_decisiones()[12] compara las franquicias con la inversión TOTAL (165.468 €, con fondo) mientras el libro que cita la decisión 12 usa el CAPEX (86.416 €): el bonus 2 y la hoja darán cifras distintas.",
+   "evidencia": "I6:I17 = B − $B$19 (p. ej. I12 Kukuchurro «desde, más IVA» −11.415,65; I16 Churro Planet «sin la obra» −42.415,65); B23 = COUNTIF(B6:B17,\"<\"&B19) = 8 «por debajo de tu CAPEX». A26 avisa de que no se comparan, pero las columnas lo hacen. DECISIONES[12] → «2!Franquicia o Independiente».",
+   "fix": "gen_calculadora-capex-churreria.py: quitar I6:I17 y B23:B24, o añadir columna verde «¿Base comparable con tu CAPEX? (sí/no)» y calcular diferencias y recuentos sólo para «sí» (por defecto «no» en las «desde»/«más IVA»/«sin obra»). datos_ejemplo.cifras_decisiones()[12]: usar capex_total() (o citar 6!Inversión Inicial!B24 y cambiar la celda de DECISIONES)."
+  },
+  {
+   "id": "R-12",
+   "titulo": "Precios de hosteleria10 sin re-comprobar al construir el libro 2",
+   "libro": 2,
+   "hoja_celda": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!I6:I19 (fechas y fuentes)",
+   "gravedad": "medio",
+   "problema": "La SPEC (§3.4 y §1.B) pide re-comprobar y fechar los precios de hosteleria10 (descuentos caducables) AL CONSTRUIR el libro 2; no se hizo: las fechas son la fecha_publicacion de la lectura de L4.",
+   "evidencia": "Declaración del constructor L2: «Este constructor NO volvió a abrir las tiendas: la re-comprobación con el descuento vigente que pide la SPEC §1.B/§3.4 sigue pendiente». CUS-02 (82.000 € y 910 €/mes) tampoco re-verificado (SR-10, gate de F3).",
+   "fix": "Antes de copiar a dl/: re-leer las fichas CUS-33a, 34c, 35a, 36a, 37a, 39, 41 (y CUS-38), actualizar datos_ejemplo.EQUIPAMIENTO y fechas si cambian, comprobar() (8.618,35 / 9.117,35 al céntimo o nuevas sumas) y regenerar 2 → 6. Si no se puede, nota visible «precio de la ficha el 03-10-2026; los descuentos caducan»."
+  },
+  {
+   "id": "R-13",
+   "titulo": "Ventas del año con el verano valorado al ticket de invierno",
+   "libro": 6,
+   "hoja_celda": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C27:C29 · Punto de Equilibrio!B18",
+   "gravedad": "bajo",
+   "problema": "Las ventas del año (cifra de cabecera del plan y del resumen del BP) valoran julio y agosto con el ticket de invierno porque las ventas del verano no viajan.",
+   "evidencia": "C28 = 232.130,45 € frente a 232.556,76 € de datos_ejemplo.cuenta_resultados_crucero(); C29 13,85 % frente a 13,82 %. El resultado sí cuadra al céntimo (32.138,75 €).",
+   "fix": "Con el X16 bis de R-06, viajar también las ventas sin IVA de la salida elegida (5!El Verano!C12) y usarlas en C27."
+  },
+  {
+   "id": "R-14",
+   "titulo": "El % de sala viaja como 70 y obliga a la constante «Cien»",
+   "libro": "3 → 6",
+   "hoja_celda": "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!L12 · plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B14, B46",
+   "gravedad": "bajo",
+   "problema": "El % de sala viaja como 70 (y no 0,70 con 0,0 %), contra la convención de porcentajes de la familia; el 6 necesita una constante «Cien» y quien teclee «70 %» mete 0,7.",
+   "evidencia": "L12 = IFERROR(100*B10,\"\"); 6!B46 = 100 «Cien». pycel: 6!B14 = 0,7 ⇒ PyG!C23 pasa de 32.138,75 a 32.957,68 € (el CUADRE D97 sí avisa).",
+   "fix": "datos_ejemplo._pct_sala() en fracción; gen_carta: L12 = B10 con 0,0 %; gen_plan-financiero: quitar B46 y dividir por nada. Regenerar 3 y 6."
+  },
+  {
+   "id": "R-15",
+   "titulo": "Cruces que hay que copiar y que no mueven ningún cálculo",
+   "libro": "4 y 8",
+   "hoja_celda": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B10 · turnos-plantilla-y-madrugada.xlsx!Parámetros!B8:B11",
+   "gravedad": "bajo",
+   "problema": "Cruces que el lector tiene que copiar y que no mueven ningún cálculo: X2 bis (masa por ración) sólo alimenta su propio CUADRE en el 4; las cuatro franjas de X7 sólo alimentan una suma de control y una presentación en el 8.",
+   "evidencia": "Trazado de referencias: 4!B10 → sólo Parámetros!B41. 8!B8:B11 → Parámetros!B66 y Cuadrante por Franja!B7:B10 (presentación). pycel: intercambiar desayuno y merienda en el 8 no mueve Coste de Plantilla!L5.",
+   "fix": "O se usan (el 4 da litros y € por kg de masa; el 8 reparte refuerzo o mínimos por franja) o se quitan de datos_ejemplo.CRUCES y de la SPEC §2.2 antes de regenerar."
+  },
+  {
+   "id": "R-16",
+   "titulo": "Calendario repetido en cuatro libros y con dos modelos de días",
+   "libro": "4, 5, 6 y 8",
+   "hoja_celda": "4!Parámetros!B29:B31 · 5!Parámetros!B17:B23 · 6!0. Supuestos!B37:B42 · 8!Parámetros!B53:B55",
+   "gravedad": "bajo",
+   "problema": "Calendario y cierre repetidos en cuatro libros (365 días, 5 días cerrados, meses del verano) y con dos modelos: el 4 usa semana 5/2 sin festivos ni cierre; el 5 y el 6, 244 días tipo + 116 punta en 360 días.",
+   "evidencia": "4!Consumo y Reposición!B10 = 292,86 raciones/día medio; 6 multiplica la renovación por 107.400 raciones ⇒ 3.049,99 €/año, frente a 4!B13 × 12 = 3.035,58 €.",
+   "fix": "Días cerrados y festivos como supuesto de UN libro (el 5) con cruce, o el 4 con el mismo calendario 244/116/360 que el 5."
+  },
+  {
+   "id": "R-17",
+   "titulo": "Las chocolateras al baño maría suman 3 kW al riesgo de incendio",
+   "libro": 1,
+   "hoja_celda": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D11",
+   "gravedad": "bajo",
+   "problema": "Cuenta 3 kW de dos chocolateras al baño maría; la nota (2) de la tabla 2.1 del DB-SI sólo computa aparatos «susceptibles de provocar ignición». El veredicto no cambia, pero publica 28 kW donde serían 25.",
+   "evidencia": "D11 = 3; D12 = 28; nota de I11 lo reconoce («confirma con tu técnico»). datos_ejemplo.PRODUCCION[kw_otros_aparatos] = 3.",
+   "fix": "Decisión de John: valor por defecto 0 con la nota, o mantener 3 como supuesto prudente declarado. Regenerar 1 (y 2 si cambiase X9)."
+  },
+  {
+   "id": "R-18",
+   "titulo": "Rótulos «a partir de» con fórmulas «más de» en los umbrales del CTE",
+   "libro": 1,
+   "hoja_celda": "produccion-hora-punta-y-local.xlsx!Parámetros!A10:A12",
+   "gravedad": "bajo",
+   "problema": "Los rótulos dicen «a partir de 20/30/50 kW» y las fórmulas usan «más de» (correcto según el CTE: 20 < P ≤ 30…).",
+   "evidencia": "pycel: con 17 L + 3 kW = 20 kW exactos, D13 = «No es local de riesgo especial», mientras A10 dice «Riesgo especial BAJO a partir de 20».",
+   "fix": "gen_produccion: «Riesgo especial BAJO con más de», «MEDIO con más de», «ALTO con más de»."
+  },
+  {
+   "id": "R-19",
+   "titulo": "Una regla de formato condicional compara fechas sin ISNUMBER",
+   "libro": 7,
+   "hoja_celda": "checklist-legal-fritura-y-licencias.xlsx!Ferias y Venta Ambulante!B10 (formato condicional)",
+   "gravedad": "bajo",
+   "problema": "Única regla de formato condicional con comparación sin ISNUMBER: =AND($B$6=\"Sí\",$B$7<$B$8). Si se borra la fecha, se pinta.",
+   "evidencia": "Barrido de las reglas de formato condicional de los 8 libros: 1 sin ISNUMBER.",
+   "fix": "=AND($B$6=\"Sí\",ISNUMBER($B$7),ISNUMBER($B$8),$B$7<$B$8)."
+  },
+  {
+   "id": "R-20",
+   "titulo": "Al titular autónomo se le aplica el Estatuto; siete días a la semana",
+   "libro": 8,
+   "hoja_celda": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G8 · Horas del Titular!B6:B15",
+   "gravedad": "bajo",
+   "problema": "Al titular, que el propio juego de datos declara autónomo, se le aplica el Estatuto («¿Trabajador nocturno según el ET?» = «no»); debería decir «no aplica: autónomo». Y el caso publica un titular de 7 días y 52,5 h/semana que el libro marca en rojo: el guion tiene que contarlo o mover un turno.",
+   "evidencia": "G8 = «no»; PLANTILLA[P1].cotiza_ss_empresa = False; Horas del Titular!B15 «Trabajas los siete días…», B13 = 642,86 h/año, B14 = 8.513,90 €.",
+   "fix": "gen_turnos: si es_titular, G y K = «No aplica (autónomo)». Decisión de guion sobre el día libre del titular (datos_ejemplo.TURNOS)."
+  },
+  {
+   "id": "R-21",
+   "titulo": "El 86,9 % de margen sobre materia cae en el rango vetado 85-90 %",
+   "libro": 3,
+   "hoja_celda": "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B6",
+   "gravedad": "bajo",
+   "problema": "El margen sobre materia de El Molinete (86,9 %) cae dentro del 85-90 % vetado; verificar_guion no lo caza porque la lista negra sólo busca «85-90» y «85 y 90».",
+   "evidencia": "B6 = 0,869137 (mapa «Margen sobre materia prima (invierno)»); LISTA_NEGRA de datos_ejemplo.",
+   "fix": "No es un fallo del xlsx: añadir a verificar_guion un patrón que exija «sobre materia prima» + «El Molinete» junto a cualquier 85-90 % y prohíba el redondeo a «85-90 %»."
+  },
+  {
+   "id": "R-22",
+   "titulo": "«Colchón de caja» en el 2 y «fondo de maniobra» en el 6 para lo mismo",
+   "libro": "2 y 6",
+   "hoja_celda": "calculadora-capex-churreria.xlsx!Resumen!K5 · plan-financiero-3-anos-churreria.xlsx!0. Supuestos!A7",
+   "gravedad": "bajo",
+   "problema": "El mismo concepto con dos nombres: el 2 dice «colchón de caja» (para esquivar un futuro gate de texto) y el 6, el que recibe la copia, «fondo de maniobra».",
+   "evidencia": "2!K5 «CAPEX de apertura, sin el colchón de caja (lo suma el libro 6)»; 6!A7 «CAPEX de apertura SIN fondo de maniobra».",
+   "fix": "Usar «fondo de maniobra» en los textos del 2 y que gate_libros busque FILAS o BLOQUES que lo calculen, no la cadena."
+  },
+  {
+   "id": "R-23",
+   "titulo": "Deuda de datos_ejemplo y slugs en textos visibles",
+   "libro": "datos_ejemplo, 2 y 7",
+   "hoja_celda": "datos_ejemplo.py (CHECKLIST_LEGAL, HOJAS[6], veredicto_nota_2, INSUMOS[mix_churros]) · 7!Instrucciones!A41,A46 · 2!Variante del Formato!H19",
+   "gravedad": "bajo",
+   "problema": "Deuda del juego de datos que han tenido que esquivar los constructores: 45 días de maquinaria frente a 6 semanas; HOJAS[6] con «Instrucciones» la última; veredicto_nota_2() devuelve «local de riesgo especial no es local de riesgo especial»; la nota «Re-comprobar» de CUS-21 ya resuelta (34,80 € = 1 caja de 24 kg); tolerancia de CUADRE y franjas del plus fuera de PARAMS/CONVENIO. Y slugs en lugar de nombres de producto en textos visibles.",
+   "evidencia": "Declaraciones de L1, L3, L6, L7 y L8; 7!A41 «pack-appcc, registro 09», A46 «plan-negocio-food-truck y kit-tareas-food-truck»; 2!H19 «plan-negocio-cafeteria».",
+   "fix": "Limpiar datos_ejemplo (sin tocar cifras del caso) y, en los generadores 2 y 7, nombres de catálogo («Pack APPCC», «Plan de Negocio Food Truck»…)."
+  }
+ ]
+}

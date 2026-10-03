@@ -1,0 +1,477 @@
+{
+ "CAPEX de apertura SIN fondo de maniobra (base imponible) (copiado del libro 2, X10)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B7",
+  "valor": 86415.65000000001,
+  "tipo": "entrada"
+ },
+ "Coste de materia por ración en sala (invierno, aceite absorbido incluido) (copiado del libro 3, X11)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B11",
+  "valor": 0.2731486410667722,
+  "tipo": "entrada"
+ },
+ "Coste de materia por ración para llevar (invierno, aceite absorbido incluido) (copiado del libro 3, X11)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B12",
+  "valor": 0.3054629283128055,
+  "tipo": "entrada"
+ },
+ "Ticket sin IVA por ración en sala (invierno) (copiado del libro 3, X11)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B13",
+  "valor": 2.148051948051948,
+  "tipo": "entrada"
+ },
+ "Ticket sin IVA por ración para llevar (invierno) (copiado del libro 3, X11)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B14",
+  "valor": 2.192424242424243,
+  "tipo": "entrada"
+ },
+ "Raciones que se consumen en sala (el resto, para llevar) (copiado del libro 3, X11)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B15",
+  "valor": 0.7,
+  "tipo": "entrada"
+ },
+ "Renovación del aceite por ración (el aceite que se tira al cambiar la cuba) (copiado del libro 4, X12)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B17",
+  "valor": 0.02839837398373984,
+  "tipo": "entrada"
+ },
+ "Raciones de un año normal (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B19",
+  "valor": 107400,
+  "tipo": "entrada"
+ },
+ "Coeficiente de enero (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B20",
+  "valor": 1.25,
+  "tipo": "entrada"
+ },
+ "Coeficiente de febrero (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B21",
+  "valor": 1.15,
+  "tipo": "entrada"
+ },
+ "Coeficiente de marzo (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B22",
+  "valor": 1.1,
+  "tipo": "entrada"
+ },
+ "Coeficiente de abril (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B23",
+  "valor": 0.95,
+  "tipo": "entrada"
+ },
+ "Coeficiente de mayo (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B24",
+  "valor": 0.85,
+  "tipo": "entrada"
+ },
+ "Coeficiente de junio (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B25",
+  "valor": 0.7,
+  "tipo": "entrada"
+ },
+ "Coeficiente de julio (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B26",
+  "valor": 0.55,
+  "tipo": "entrada"
+ },
+ "Coeficiente de agosto (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B27",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Coeficiente de septiembre (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B28",
+  "valor": 0.8,
+  "tipo": "entrada"
+ },
+ "Coeficiente de octubre (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B29",
+  "valor": 1.1,
+  "tipo": "entrada"
+ },
+ "Coeficiente de noviembre (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B30",
+  "valor": 1.3,
+  "tipo": "entrada"
+ },
+ "Coeficiente de diciembre (copiado del libro 5, X13)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B31",
+  "valor": 1.75,
+  "tipo": "entrada"
+ },
+ "Resultado anual de ferias (las de fuera de julio y agosto) (copiado del libro 5, X14)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B32",
+  "valor": 0,
+  "tipo": "entrada"
+ },
+ "Coste anual de la plantilla (Seguridad Social, refuerzos y sustituciones incluidos) (copiado del libro 8, X15)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B39",
+  "valor": 119350.201113611,
+  "tipo": "entrada"
+ },
+ "Contribución de julio y agosto de la salida que eliges (copiado del libro 5, X16)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B33",
+  "valor": 17368.70905707602,
+  "tipo": "entrada"
+ },
+ "Renta mensual del local (sin IVA) (copiado del libro 2, X18)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B8",
+  "valor": 910,
+  "tipo": "entrada"
+ },
+ "Partidas del CAPEX que no se amortizan (fianza, stock inicial y marketing de apertura) (copiado del libro 2, X10 bis)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B9",
+  "valor": 4668.300000000003,
+  "tipo": "entrada"
+ },
+ "Contribución de julio y agosto si cierras (copiado del libro 5, X16 bis)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B34",
+  "valor": 0,
+  "tipo": "entrada"
+ },
+ "Contribución de julio y agosto con carta de verano (copiado del libro 5, X16 bis)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B35",
+  "valor": 17368.70905707602,
+  "tipo": "entrada"
+ },
+ "Contribución de julio y agosto con ferias (copiado del libro 5, X16 bis)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B36",
+  "valor": 2106.453743784074,
+  "tipo": "entrada"
+ },
+ "Ventas sin IVA del local en julio y agosto de la salida que eliges (copiado del libro 5, X16 ter)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B37",
+  "valor": 20737.71954545454,
+  "tipo": "entrada"
+ },
+ "Gastos fijos del mes, sin renta ni plantilla": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B83",
+  "valor": 1870.0,
+  "tipo": "salida"
+ },
+ "Meses de colchón del fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B53",
+  "valor": 6,
+  "tipo": "parametro"
+ },
+ "Préstamo bancario que se pide": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B63",
+  "valor": 99300,
+  "tipo": "entrada"
+ },
+ "Tipo de interés nominal anual": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B60",
+  "valor": 0.062,
+  "tipo": "parametro"
+ },
+ "Plazo del préstamo en meses": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B61",
+  "valor": 84,
+  "tipo": "parametro"
+ },
+ "Carencia del préstamo en meses": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B62",
+  "valor": 6,
+  "tipo": "parametro"
+ },
+ "Ventas del primer mes sobre un mes normal (rampa)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B48",
+  "valor": 0.55,
+  "tipo": "parametro"
+ },
+ "Cuota de autónomos del titular al mes": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B81",
+  "valor": 320,
+  "tipo": "entrada"
+ },
+ "Amortización anual": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B10",
+  "valor": 8174.735000000001,
+  "tipo": "salida"
+ },
+ "Fijos de caja de un mes": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B17",
+  "valor": 13175.413321976963,
+  "tipo": "salida"
+ },
+ "Fondo de maniobra": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B19",
+  "valor": 79052.47993186177,
+  "tipo": "salida"
+ },
+ "Inversión total (CAPEX más fondo de maniobra)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B24",
+  "valor": 165468.12993186177,
+  "tipo": "salida"
+ },
+ "Recursos propios que pone el promotor": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B26",
+  "valor": 66168.12993186177,
+  "tipo": "salida"
+ },
+ "Raciones del año 1 (con rampa)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!B7",
+  "valor": 93666.225,
+  "tipo": "salida"
+ },
+ "Contribución del año 1": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!B15",
+  "valor": 173009.28561377656,
+  "tipo": "salida"
+ },
+ "Resultado antes de impuestos del año 1": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!B23",
+  "valor": 6048.671025231539,
+  "tipo": "salida"
+ },
+ "Ventas sin IVA de la carta de invierno, año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C9",
+  "valor": 211819.0397727273,
+  "tipo": "salida"
+ },
+ "Contribución de la carta de invierno, año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C11",
+  "valor": 184099.72579583214,
+  "tipo": "salida"
+ },
+ "Contribución del año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C15",
+  "valor": 198418.44948705452,
+  "tipo": "salida"
+ },
+ "Costes fijos del año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C22",
+  "valor": 166279.69486372353,
+  "tipo": "salida"
+ },
+ "Intereses del año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C21",
+  "valor": 5394.75875011256,
+  "tipo": "salida"
+ },
+ "Resultado antes de impuestos del año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C23",
+  "valor": 32138.754623330984,
+  "tipo": "salida"
+ },
+ "Lectura del año de crucero (gana o pierde)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C24",
+  "valor": "Gana dinero",
+  "tipo": "salida"
+ },
+ "Ventas sin IVA del año de crucero (verano estimado)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C28",
+  "valor": 232556.75931818184,
+  "tipo": "salida"
+ },
+ "Resultado sobre ventas del año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C29",
+  "valor": 0.13819746507285588,
+  "tipo": "salida"
+ },
+ "Contribución por ración, año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C30",
+  "valor": 1.8474715967137292,
+  "tipo": "salida"
+ },
+ "Resultado antes de impuestos del año 3": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!D23",
+  "valor": 32981.17133088602,
+  "tipo": "salida"
+ },
+ "Punto de equilibrio en raciones al año": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B11",
+  "valor": 90003.92490986103,
+  "tipo": "salida"
+ },
+ "Punto de equilibrio en raciones al día": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B12",
+  "valor": 250.01090252739175,
+  "tipo": "salida"
+ },
+ "Raciones al día previstas (media del año)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B13",
+  "valor": 298.3333333333333,
+  "tipo": "salida"
+ },
+ "Margen de seguridad en raciones al día": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B14",
+  "valor": 48.322430805941565,
+  "tipo": "salida"
+ },
+ "Contribución mensual que pagan los fijos": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B17",
+  "valor": 13856.641238643628,
+  "tipo": "salida"
+ },
+ "Punto de equilibrio de caja en raciones al día": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B19",
+  "valor": 237.7197272462051,
+  "tipo": "salida"
+ },
+ "Meses del año de crucero que no pagan sus fijos": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B36",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Resultado de agosto en el año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!H30",
+  "valor": -5712.910125517998,
+  "tipo": "salida"
+ },
+ "Resultado del escenario pesimista": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!B12",
+  "valor": 4482.440944056871,
+  "tipo": "salida"
+ },
+ "Resultado del escenario optimista": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D12",
+  "valor": 26373.770838533266,
+  "tipo": "salida"
+ },
+ "Fijos de julio y agosto": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!B21",
+  "valor": 27713.282477287255,
+  "tipo": "salida"
+ },
+ "Verano con fijos si se cierra": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D22",
+  "valor": -27713.282477287255,
+  "tipo": "salida"
+ },
+ "Verano con fijos con la carta de verano": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D23",
+  "valor": -10344.573420211236,
+  "tipo": "salida"
+ },
+ "Verano con fijos saliendo de ferias": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D24",
+  "valor": -25606.828733503182,
+  "tipo": "salida"
+ },
+ "Verano con fijos de la salida elegida": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D25",
+  "valor": -10344.573420211236,
+  "tipo": "salida"
+ },
+ "Lo que deja la salida elegida frente a cerrar": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!B26",
+  "valor": 17368.70905707602,
+  "tipo": "salida"
+ },
+ "Resultado del mismo local sólo como despacho": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!C39",
+  "valor": -106505.999900495,
+  "tipo": "salida"
+ },
+ "Ahorro de fijos que necesitaría el despacho para no perder": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!C41",
+  "valor": 106505.999900495,
+  "tipo": "salida"
+ },
+ "Coste total de las personas": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Personal!B8",
+  "valor": 123190.201113611,
+  "tipo": "salida"
+ },
+ "Raciones al día sólo para pagar a las personas": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Personal!B13",
+  "valor": 185.22341761684356,
+  "tipo": "salida"
+ },
+ "Saldo de caja el día que se abre": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B32",
+  "valor": 79052.47993186176,
+  "tipo": "salida"
+ },
+ "Valle de tesorería del año 1": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B34",
+  "valor": 71517.71231128434,
+  "tipo": "salida"
+ },
+ "Mes del valle de tesorería": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B35",
+  "valor": "Octubre",
+  "tipo": "salida"
+ },
+ "Lectura del valle (aguanta o no el fondo)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B36",
+  "valor": "Aguanta: el saldo no baja de cero",
+  "tipo": "salida"
+ },
+ "Saldo de caja al cierre del año 1": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!M29",
+  "valor": 86973.1003320759,
+  "tipo": "salida"
+ },
+ "Préstamo que pide la estructura": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B15",
+  "valor": 99300.0,
+  "tipo": "salida"
+ },
+ "Comprobación del punto fijo del préstamo": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B16",
+  "valor": "Cerrado: el préstamo es el que pide la estructura",
+  "tipo": "salida"
+ },
+ "Cuota mensual del préstamo": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B24",
+  "valor": 1550.027349991906,
+  "tipo": "salida"
+ },
+ "Servicio de la deuda del año 2": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!D118",
+  "valor": 18600.32819990287,
+  "tipo": "salida"
+ },
+ "Lo que sobra en el peor año del préstamo": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B124",
+  "valor": 7920.620400214157,
+  "tipo": "salida"
+ },
+ "Lectura del banco (aguanta o no)": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B125",
+  "valor": "Aguanta: en el peor año te sobra dinero después de pagar la cuota",
+  "tipo": "salida"
+ },
+ "DSCR más bajo": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B127",
+  "valor": 1.6398710160047425,
+  "tipo": "salida"
+ },
+ "Ticket medio sin IVA de la carta de invierno": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!D8",
+  "valor": 2.1613636363636366,
+  "tipo": "salida"
+ },
+ "Materia media por ración de la carta de invierno": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!E8",
+  "valor": 0.28284292724058224,
+  "tipo": "salida"
+ },
+ "Contribución de la sala en el año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!G6",
+  "valor": 128621.6479399703,
+  "tipo": "salida"
+ },
+ "Contribución del para llevar en el año de crucero": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!G7",
+  "valor": 55478.07785586184,
+  "tipo": "salida"
+ },
+ "La sala menos los fijos del año": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!C17",
+  "valor": -37658.04692375324,
+  "tipo": "salida"
+ },
+ "Lectura de la sala frente a los fijos": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!D17",
+  "valor": "No llega a los fijos",
+  "tipo": "salida"
+ },
+ "Canal que más deja": {
+  "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!B21",
+  "valor": "Sala (barra, mesas y terraza)",
+  "tipo": "salida"
+ }
+}

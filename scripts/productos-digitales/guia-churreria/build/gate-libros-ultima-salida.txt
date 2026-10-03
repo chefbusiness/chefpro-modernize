@@ -1,0 +1,42 @@
+==================================================================================
+GATE FINAL — 8 libros «Cómo Montar una Churrería-Chocolatería» (2026-10-03)
+contrato: 67 celdas cruzadas · aristas [(1, 2), (1, 4), (1, 5), (1, 8), (2, 6), (3, 1), (3, 2), (3, 4), (3, 5), (3, 6), (3, 8), (4, 6), (5, 6), (5, 8), (8, 6)]
+==================================================================================
+
+[VERDE] produccion-hora-punta-y-local
+   fórmulas 93 (sin caché 2, «sin dato» a propósito) · verdes 51 · hojas 8
+
+[VERDE] calculadora-capex-churreria
+   fórmulas 667 (sin caché 47, «sin dato» a propósito) · verdes 297 · hojas 10
+
+[VERDE] carta-de-apertura-y-escandallo-churro
+   fórmulas 1316 (sin caché 1, «sin dato» a propósito) · verdes 455 · hojas 10
+
+[VERDE] aceite-de-fritura-coste-y-cambio
+   fórmulas 195 (sin caché 7, «sin dato» a propósito) · verdes 43 · hojas 6
+
+[VERDE] temporada-franjas-y-ferias
+   fórmulas 753 (sin caché 38, «sin dato» a propósito) · verdes 210 · hojas 10
+
+[VERDE] plan-financiero-3-anos-churreria
+   fórmulas 1151 (sin caché 0, «sin dato» a propósito) · verdes 96 · hojas 10
+
+[VERDE] checklist-legal-fritura-y-licencias
+   fórmulas 445 (sin caché 6, «sin dato» a propósito) · verdes 468 · hojas 11
+
+[VERDE] turnos-plantilla-y-madrugada
+   fórmulas 1752 (sin caché 5, «sin dato» a propósito) · verdes 319 · hojas 7
+
+--- SPEC §2.4: el grafo de cruces ---
+   canario 1 (CRUCES con ciclo 6 -> 3): aborta, bien
+   canario 2 (arista hacia atrás 6 -> 2): aborta, bien
+   canario 3 (libro 7 en una arista 7 -> 1): aborta, bien
+   canario 4 (rótulo no declarado): aborta, bien
+   CRUCES real: sin ciclos, orden de relleno topológico, libro 7 aislado
+[VERDE] auditar_ciclos(D): ciclo, orden de relleno, libro 7 y rótulos no declarados
+[VERDE] LAS 67 CELDAS CRUZADAS (rótulo literal, verde con valor por defecto, origen en K/L, una fila de CUADRE por celda)
+[VERDE] FRONTERAS: sin fondo de maniobra en el 2, sin gastos fijos ni renta en el 5, escandallo sin «CON IVA», notas legales del 676 y de la norma de aceites, veredicto «¿una churrera o dos?»
+
+==================================================================================
+RESULTADO GLOBAL: VERDE — 8/8 libros en verde, contrato de 67 celdas cruzadas sin ciclos
+==================================================================================

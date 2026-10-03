@@ -1,0 +1,342 @@
+{
+ "CAPEX de apertura sin fondo de maniobra (origen de X10)": {
+  "ref": "calculadora-capex-churreria.xlsx!Resumen!L5",
+  "valor": 86415.65000000001,
+  "tipo": "salida"
+ },
+ "CAPEX que no se amortiza: fianza, stock inicial y marketing (origen de X10 bis)": {
+  "ref": "calculadora-capex-churreria.xlsx!Resumen!L6",
+  "valor": 4668.300000000003,
+  "tipo": "salida"
+ },
+ "Renta mensual del local (origen de X18)": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!L5",
+  "valor": 910.0,
+  "tipo": "salida"
+ },
+ "¿Necesitas extinción automática? copiado del libro 1 (X9)": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B19",
+  "valor": 0,
+  "tipo": "entrada"
+ },
+ "Cuadre de la extinción automática con el libro 1": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B22",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Precio del aceite copiado del libro 3 (X17)": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B23",
+  "valor": 1.996,
+  "tipo": "entrada"
+ },
+ "Cuadre del precio del aceite con el libro 3": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B26",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Precio del mix copiado del libro 3 (X17)": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B27",
+  "valor": 1.45,
+  "tipo": "entrada"
+ },
+ "Cuadre del precio del mix con el libro 3": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B30",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Tipo de IVA general": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B6",
+  "valor": 0.21,
+  "tipo": "parametro"
+ },
+ "Tipo de IVA de los alimentos del stock": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B7",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Superficie útil del local": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B10",
+  "valor": 75.0,
+  "tipo": "parametro"
+ },
+ "Coste de obra por m²": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B11",
+  "valor": 380,
+  "tipo": "parametro"
+ },
+ "Renta mensual del local": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B12",
+  "valor": 910,
+  "tipo": "parametro"
+ },
+ "Meses de fianza": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B13",
+  "valor": 2,
+  "tipo": "parametro"
+ },
+ "Desviación admitida contra la referencia": {
+  "ref": "calculadora-capex-churreria.xlsx!Parámetros!B17",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "CAPEX total sin fondo de maniobra": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E45",
+  "valor": 86415.65000000001,
+  "tipo": "salida"
+ },
+ "IVA soportado del CAPEX": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!F45",
+  "valor": 17298.6235,
+  "tipo": "salida"
+ },
+ "Desembolso total con IVA": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!G45",
+  "valor": 103714.2735,
+  "tipo": "salida"
+ },
+ "Inmovilizado amortizable": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!I45",
+  "valor": 81747.35,
+  "tipo": "salida"
+ },
+ "Stock inicial sin IVA": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!I30",
+  "valor": 848.3,
+  "tipo": "salida"
+ },
+ "Obra y acondicionamiento del local": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!K6",
+  "valor": 28500.0,
+  "tipo": "salida"
+ },
+ "Fianza y garantías": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!K10",
+  "valor": 1820.0,
+  "tipo": "salida"
+ },
+ "Sistema automático de extinción (sólo si X9 = 1)": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!K9",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Importe de la extinción automática si te toca": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!H9",
+  "valor": 2800,
+  "tipo": "entrada"
+ },
+ "Bloque 1: Obra civil y acondicionamiento": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E34",
+  "valor": 28500.0,
+  "tipo": "salida"
+ },
+ "Bloque 2: Extracción y conducto": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E35",
+  "valor": 9990.0,
+  "tipo": "salida"
+ },
+ "Bloque 3: Fritura, dosificación y amasado": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E36",
+  "valor": 6754.2,
+  "tipo": "salida"
+ },
+ "Bloque 4: Chocolate y café": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E37",
+  "valor": 5675.4,
+  "tipo": "salida"
+ },
+ "Bloque 5: Barra, sala y terraza": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E38",
+  "valor": 20800.0,
+  "tipo": "salida"
+ },
+ "Bloque 6: Control y seguridad": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E39",
+  "valor": 1027.75,
+  "tipo": "salida"
+ },
+ "Bloque 7: TPV y rótulo": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E40",
+  "valor": 2900.0,
+  "tipo": "salida"
+ },
+ "Bloque 8: Licencias, proyecto de actividad y tasas": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E41",
+  "valor": 6100.0,
+  "tipo": "salida"
+ },
+ "Bloque 9: Fianza y garantías": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E42",
+  "valor": 1820.0,
+  "tipo": "salida"
+ },
+ "Bloque 10: Stock inicial y envase": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E43",
+  "valor": 848.3,
+  "tipo": "salida"
+ },
+ "Bloque 11: Marketing de apertura": {
+  "ref": "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E44",
+  "valor": 2000.0,
+  "tipo": "salida"
+ },
+ "Dotación con fuente del local con sala, con el medidor de polares": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!X35",
+  "valor": 9117.35,
+  "tipo": "salida"
+ },
+ "Núcleo con precio de ficha del local con sala": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!X36",
+  "valor": 8618.35,
+  "tipo": "salida"
+ },
+ "Dotación con fuente del despacho, con el medidor de polares": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!Y35",
+  "valor": 4684.45,
+  "tipo": "salida"
+ },
+ "Núcleo con precio de ficha del despacho": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!Y36",
+  "valor": 4185.45,
+  "tipo": "salida"
+ },
+ "Freidora de gas de 25 L, tu importe": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!L6",
+  "valor": 1907,
+  "tipo": "entrada"
+ },
+ "Medidor de polares, base sin IVA": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!O13",
+  "valor": 499.0,
+  "tipo": "salida"
+ },
+ "Freidora eléctrica de 25 L, referencia sin IVA": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!R19",
+  "valor": 2053.0,
+  "tipo": "salida"
+ },
+ "Rellenadora, importe del lector": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!L14",
+  "valor": 0,
+  "tipo": "entrada"
+ },
+ "Conducto a cubierta, obra y proyecto": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!L20",
+  "valor": 9000,
+  "tipo": "entrada"
+ },
+ "Desviación de tus importes contra la referencia": {
+  "ref": "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!T37",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Diferencia de dotación del despacho frente al local con sala": {
+  "ref": "calculadora-capex-churreria.xlsx!Variante del Formato!D7",
+  "valor": -4432.900000000001,
+  "tipo": "salida"
+ },
+ "Dotación de la caseta (equipo de feria elegido)": {
+  "ref": "calculadora-capex-churreria.xlsx!Variante del Formato!C8",
+  "valor": 14800.0,
+  "tipo": "salida"
+ },
+ "Inversión publicada de Maestro Churrero (CUS-M14)": {
+  "ref": "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B7",
+  "valor": 115000,
+  "tipo": "salida"
+ },
+ "Franquicias: inversión publicada más baja": {
+  "ref": "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B20",
+  "valor": 6000.0,
+  "tipo": "salida"
+ },
+ "Franquicias: inversión publicada más alta": {
+  "ref": "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B21",
+  "valor": 320000.0,
+  "tipo": "salida"
+ },
+ "Franquicias: enseñas con inversión publicada": {
+  "ref": "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B22",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "Franquicias de base comparable por debajo de tu CAPEX": {
+  "ref": "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B23",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Precio de traspaso pedido (techo con sala, CUS-02)": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B6",
+  "valor": 82000,
+  "tipo": "entrada"
+ },
+ "Inversión del traspaso (precio más adaptación)": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B16",
+  "valor": 88000.0,
+  "tipo": "salida"
+ },
+ "CAPEX comparable de la obra nueva (bloques 1 a 8)": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B11",
+  "valor": 81747.35,
+  "tipo": "salida"
+ },
+ "Precio de traspaso por debajo del cual gana el traspaso": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B18",
+  "valor": 75747.35,
+  "tipo": "salida"
+ },
+ "Veredicto de la inversión: traspaso u obra nueva": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B19",
+  "valor": "Sale mejor la OBRA NUEVA",
+  "tipo": "salida"
+ },
+ "Coste del traspaso en el horizonte": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B21",
+  "valor": 145330.0,
+  "tipo": "salida"
+ },
+ "Coste de la obra nueva en el horizonte": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B22",
+  "valor": 143172.35,
+  "tipo": "salida"
+ },
+ "Veredicto en el horizonte": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B24",
+  "valor": "Sale mejor la OBRA NUEVA",
+  "tipo": "salida"
+ },
+ "Traspasos de barrio: más bajo": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!D37",
+  "valor": 16000.0,
+  "tipo": "salida"
+ },
+ "Traspasos de barrio: más alto": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!D38",
+  "valor": 19500.0,
+  "tipo": "salida"
+ },
+ "Traspasos de cafetería-churrería: más bajo": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!D39",
+  "valor": 40000.0,
+  "tipo": "salida"
+ },
+ "Traspasos de cafetería-churrería: más alto": {
+  "ref": "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!D40",
+  "valor": 65000.0,
+  "tipo": "salida"
+ },
+ "IVA al tipo de los alimentos (stock)": {
+  "ref": "calculadora-capex-churreria.xlsx!IVA y Tesorería!C20",
+  "valor": 61.33,
+  "tipo": "salida"
+ },
+ "IVA al tipo general": {
+  "ref": "calculadora-capex-churreria.xlsx!IVA y Tesorería!C21",
+  "valor": 17237.2935,
+  "tipo": "salida"
+ },
+ "Peso del IVA sobre el desembolso": {
+  "ref": "calculadora-capex-churreria.xlsx!IVA y Tesorería!B28",
+  "valor": 0.16679115531769118,
+  "tipo": "salida"
+ }
+}

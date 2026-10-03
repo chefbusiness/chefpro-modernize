@@ -41,6 +41,12 @@
 | **D24** | **F2 en el Mac**, en serie y con el vigilante térmico (John, 3-oct: «pasa del VPS de momento»). Máximo DOS agentes a la vez: los 26 redactores van en tandas de 2. | Más reloj, cero riesgo térmico. |
 | **D25** | **Corte de F1:** research + SPEC refutada (≤ 2 rondas) + `datos_ejemplo.py` con su gate. **El guion pasa a F2, después de los libros**, porque cita sus celdas (es el orden real de la hermana: SPEC → datos → libros → guion). | Desviación del DoD de F1, anotada. |
 
+## D26 — Presupuesto de F2 (firmada el 3-oct por el orquestador, con «adelante con todo, decide tú» de John)
+
+| # | Decisión | Efecto |
+|---|---|---|
+| **D26** | La parada por PROYECCIÓN (14,06 M > 13 M) no bloquea: John quiere el producto listo para Stripe. Se mantienen los **8 libros** tal cual (sin rehacer SPEC ni datos) y se recorta la redacción: **16 capítulos + anexo** fundiendo 07+14 (Maquinaria y proveedores), 11+12 (Autocontrol, alérgenos, acrilamida y la inspección) y 16+17 (La temporada y las ferias), **bonus de 12 decisiones en 3 bloques de 4**, business plan en 2 → **22 bloques** (≈ 29.300 palabras de guion). Refutación de libros y de documentos en UNA ronda. Regla de control: medir tras las dos primeras tandas de redactores. | Proyección ≈ 13,2 M. Se reporta el consumo real al cerrar. |
+
 ## Verificaciones que cierran antes del guion (V-01…V-06)
 
 V-01 estado del convenio de hostelería de Madrid en 2026 · V-02 temperatura de fritura del churro con fuente primaria (si no

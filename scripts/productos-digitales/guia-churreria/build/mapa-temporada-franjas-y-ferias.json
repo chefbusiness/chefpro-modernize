@@ -1,0 +1,467 @@
+{
+ "Raciones de un día tipo (lunes a viernes) (copiado del libro 1, X4)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B7",
+  "valor": 250,
+  "tipo": "entrada"
+ },
+ "Raciones de un día punta (sábado, domingo y festivo) (copiado del libro 1, X4)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B8",
+  "valor": 400,
+  "tipo": "entrada"
+ },
+ "Capacidad de la línea, en raciones por hora (copiado del libro 1, X4)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B9",
+  "valor": 122.5513616817965,
+  "tipo": "entrada"
+ },
+ "Ticket sin IVA por ración en julio y agosto (carta de verano) (copiado del libro 3, X5)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B11",
+  "valor": 2.206727272727273,
+  "tipo": "entrada"
+ },
+ "Coste de materia por ración en julio y agosto (aceite absorbido incluido) (copiado del libro 3, X5)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B12",
+  "valor": 0.3585007170394811,
+  "tipo": "entrada"
+ },
+ "Coste de materia por ración para llevar (aceite absorbido incluido) (copiado del libro 3, X5)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B13",
+  "valor": 0.3054629283128055,
+  "tipo": "entrada"
+ },
+ "Coste hora de mano de obra (copiado del libro 3, X5)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B14",
+  "valor": 13.24384288441323,
+  "tipo": "entrada"
+ },
+ "Horas de refuerzo de Navidad y Reyes al año (origen de X7)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Refuerzo por Pico!L5",
+  "valor": 56.0,
+  "tipo": "salida"
+ },
+ "Raciones del año (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L5",
+  "valor": 107400.0,
+  "tipo": "salida"
+ },
+ "Coeficiente de enero (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L6",
+  "valor": 1.25,
+  "tipo": "salida"
+ },
+ "Coeficiente de febrero (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L7",
+  "valor": 1.15,
+  "tipo": "salida"
+ },
+ "Coeficiente de marzo (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L8",
+  "valor": 1.1,
+  "tipo": "salida"
+ },
+ "Coeficiente de abril (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L9",
+  "valor": 0.95,
+  "tipo": "salida"
+ },
+ "Coeficiente de mayo (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L10",
+  "valor": 0.85,
+  "tipo": "salida"
+ },
+ "Coeficiente de junio (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L11",
+  "valor": 0.7,
+  "tipo": "salida"
+ },
+ "Coeficiente de julio (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L12",
+  "valor": 0.55,
+  "tipo": "salida"
+ },
+ "Coeficiente de agosto (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L13",
+  "valor": 0.5,
+  "tipo": "salida"
+ },
+ "Coeficiente de septiembre (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L14",
+  "valor": 0.8,
+  "tipo": "salida"
+ },
+ "Coeficiente de octubre (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L15",
+  "valor": 1.1,
+  "tipo": "salida"
+ },
+ "Coeficiente de noviembre (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L16",
+  "valor": 1.3,
+  "tipo": "salida"
+ },
+ "Coeficiente de diciembre (origen de X13)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L17",
+  "valor": 1.75,
+  "tipo": "salida"
+ },
+ "Resultado anual de ferias (origen de X14)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Calendario de Ferias!L5",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto de la salida elegida (origen de X16)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!L5",
+  "valor": 17368.709057076023,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto si cierras (origen de X16 bis)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!L6",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto con carta de verano (origen de X16 bis)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!L7",
+  "valor": 17368.709057076023,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto con ferias (origen de X16 bis)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!L8",
+  "valor": 2106.4537437840745,
+  "tipo": "salida"
+ },
+ "Ventas sin IVA de julio y agosto de la salida elegida (origen de X16 ter)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!L9",
+  "valor": 20737.719545454547,
+  "tipo": "salida"
+ },
+ "Horas a la semana de la franja desayuno (dato de referencia)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!L5",
+  "valor": 23.0,
+  "tipo": "salida"
+ },
+ "Horas a la semana de la franja media mañana (dato de referencia)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!L6",
+  "valor": 21.0,
+  "tipo": "salida"
+ },
+ "Horas a la semana de la franja merienda (dato de referencia)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!L7",
+  "valor": 31.5,
+  "tipo": "salida"
+ },
+ "Horas a la semana de la franja noche (viernes y sábado) (dato de referencia)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!L8",
+  "valor": 8.0,
+  "tipo": "salida"
+ },
+ "Veredicto «¿Una churrera o dos?»": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!E23",
+  "valor": "Una, con refuerzo en el pico: masa preparada antes de abrir y una persona más",
+  "tipo": "salida"
+ },
+ "Déficit que cubren masa preparada y una persona más (% de la capacidad)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B36",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Días al año con el local cerrado": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B18",
+  "valor": 5,
+  "tipo": "entrada"
+ },
+ "Festivos de lunes a viernes que se abren como un domingo": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B20",
+  "valor": 12,
+  "tipo": "entrada"
+ },
+ "Factor de la hora punta": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B26",
+  "valor": 1.5,
+  "tipo": "parametro"
+ },
+ "Hora mínima de apertura como chocolatería (ejemplo de Madrid)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B28",
+  "valor": 8,
+  "tipo": "parametro"
+ },
+ "Hora mínima de apertura como cafetería o bar (ejemplo de Madrid)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B29",
+  "valor": 6,
+  "tipo": "parametro"
+ },
+ "Coeficiente desde el que un mes es temporada alta": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B32",
+  "valor": 1.1,
+  "tipo": "parametro"
+ },
+ "IVA de lo que se vende en una feria": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B34",
+  "valor": 0.1,
+  "tipo": "parametro"
+ },
+ "Tolerancia de las filas de CUADRE": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B35",
+  "valor": 0.02,
+  "tipo": "parametro"
+ },
+ "Cuadre de la capacidad de la línea (veredicto)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!D41",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Días tipo del año": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!B8",
+  "valor": 244.0,
+  "tipo": "salida"
+ },
+ "Días punta del año": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!B7",
+  "valor": 116.0,
+  "tipo": "salida"
+ },
+ "Días de apertura del año": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!B9",
+  "valor": 360.0,
+  "tipo": "salida"
+ },
+ "Raciones de diciembre": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!D29",
+  "valor": 15662.5,
+  "tipo": "salida"
+ },
+ "Raciones de agosto": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!D25",
+  "valor": 4475.0,
+  "tipo": "salida"
+ },
+ "Peso de diciembre sobre el año": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!E29",
+  "valor": 0.14583333333333334,
+  "tipo": "salida"
+ },
+ "Raciones de un día medio de diciembre": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!F29",
+  "valor": 522.0833333333334,
+  "tipo": "salida"
+ },
+ "Raciones del local en julio y agosto con carta de verano": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!B35",
+  "valor": 9397.5,
+  "tipo": "salida"
+ },
+ "Hora de apertura del sábado": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!D11",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Hora de apertura del lunes": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!D6",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Semáforo de la hora de apertura del sábado": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!E11",
+  "valor": "Antes de la hora de chocolatería: sólo como cafetería o bar (ejemplo de Madrid)",
+  "tipo": "salida"
+ },
+ "Días que se abre antes de la hora mínima de chocolatería": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!E16",
+  "valor": 7.0,
+  "tipo": "salida"
+ },
+ "Hora punta de un día tipo, mes medio (raciones/h)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!E14",
+  "valor": 62.5,
+  "tipo": "salida"
+ },
+ "Hora punta de un día punta, mes medio (raciones/h)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!E15",
+  "valor": 75.0,
+  "tipo": "salida"
+ },
+ "Inicio del desayuno del sábado": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!C42",
+  "valor": 6,
+  "tipo": "entrada"
+ },
+ "Parte de las raciones del desayuno del domingo": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!F46",
+  "valor": 0.5,
+  "tipo": "entrada"
+ },
+ "Parte de las raciones de la semana que se lleva el desayuno": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!D53",
+  "valor": 0.5,
+  "tipo": "salida"
+ },
+ "Parte de las raciones de la semana que se lleva la merienda": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!D55",
+  "valor": 0.38414634146341464,
+  "tipo": "salida"
+ },
+ "Raciones de la semana (mes medio)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Franjas del Día!C57",
+  "valor": 2050.0,
+  "tipo": "salida"
+ },
+ "Hora punta de un día punta de diciembre (raciones/h)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!F18",
+  "valor": 131.25,
+  "tipo": "salida"
+ },
+ "Déficit de un día punta de diciembre (raciones/h)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!I18",
+  "valor": 8.698638318203507,
+  "tipo": "salida"
+ },
+ "Meses que la línea no aguanta en los días punta": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!E20",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Cola del domingo de diciembre (raciones/h)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Cola del Domingo!F18",
+  "valor": 8.698638318203507,
+  "tipo": "salida"
+ },
+ "Espera al final de la hora punta del domingo de diciembre (min)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Cola del Domingo!H18",
+  "valor": 4.258771929824546,
+  "tipo": "salida"
+ },
+ "Meses con cola el domingo": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Cola del Domingo!E20",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Mes de la peor cola del domingo": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Cola del Domingo!E22",
+  "valor": "Diciembre",
+  "tipo": "salida"
+ },
+ "Días de refuerzo de Navidad y Reyes": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Refuerzo por Pico!B5",
+  "valor": 8,
+  "tipo": "entrada"
+ },
+ "Horas de refuerzo al día": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Refuerzo por Pico!B6",
+  "valor": 7,
+  "tipo": "entrada"
+ },
+ "Coste del refuerzo de Navidad y Reyes al año": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Refuerzo por Pico!B9",
+  "valor": 741.6552015271409,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto si se cierra": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B16",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto con carta de verano": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!C16",
+  "valor": 17368.709057076023,
+  "tipo": "salida"
+ },
+ "Contribución de julio y agosto saliendo de ferias": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!D16",
+  "valor": 2106.4537437840745,
+  "tipo": "salida"
+ },
+ "Ventas sin IVA del local en julio y agosto con carta de verano": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!C12",
+  "valor": 20737.719545454547,
+  "tipo": "salida"
+ },
+ "Salida del verano que se elige": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B20",
+  "valor": "Carta de verano",
+  "tipo": "entrada"
+ },
+ "Salida del verano que más deja": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B22",
+  "valor": "Carta de verano",
+  "tipo": "salida"
+ },
+ "Raciones al día por debajo de las cuales la carta de verano deja menos que las ferias": {
+  "ref": "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B24",
+  "valor": 18.382519328627847,
+  "tipo": "salida"
+ },
+ "Lo que dejan los eventos de julio y agosto": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!B39",
+  "valor": 2106.4537437840745,
+  "tipo": "salida"
+ },
+ "Raciones para cubrir el evento E1 (punto muerto)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!B32",
+  "valor": 632.6641113099311,
+  "tipo": "salida"
+ },
+ "Lo que deja el evento E1": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!B35",
+  "valor": 1192.3438796092503,
+  "tipo": "salida"
+ },
+ "Orden del evento E1": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!B37",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Raciones para cubrir el evento E2 (punto muerto)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!C32",
+  "valor": 378.5509267625389,
+  "tipo": "salida"
+ },
+ "Lo que deja el evento E2": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!C35",
+  "valor": 914.1098641748242,
+  "tipo": "salida"
+ },
+ "Orden del evento E2": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!C37",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Raciones para cubrir el evento E3 (punto muerto)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!D32",
+  "valor": 1356.8180893496947,
+  "tipo": "salida"
+ },
+ "Lo que deja el evento E3": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!D35",
+  "valor": 1852.8805457079734,
+  "tipo": "salida"
+ },
+ "Orden del evento E3": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!D37",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Raciones para cubrir el evento E4 (punto muerto)": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!E32",
+  "valor": 549.8595315367202,
+  "tipo": "salida"
+ },
+ "Lo que deja el evento E4": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!E35",
+  "valor": 702.6650295991931,
+  "tipo": "salida"
+ },
+ "Orden del evento E4": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!E37",
+  "valor": 4.0,
+  "tipo": "salida"
+ },
+ "Eventos a los que se va en el año": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Calendario de Ferias!D19",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Lo que dejan todos los eventos a los que se va": {
+  "ref": "temporada-franjas-y-ferias.xlsx!Calendario de Ferias!E19",
+  "valor": 0.0,
+  "tipo": "salida"
+ }
+}

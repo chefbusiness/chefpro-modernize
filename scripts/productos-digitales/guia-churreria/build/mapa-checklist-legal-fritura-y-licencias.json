@@ -1,0 +1,362 @@
+{
+ "¿La extracción necesita proyecto? (1.ª fila del checklist)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!K7",
+  "valor": "Sí",
+  "tipo": "entrada"
+ },
+ "Lo que te toca por la extracción": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!L7",
+  "valor": "Licencia de obra y técnico: el conducto necesita proyecto, aunque la actividad vaya por declaración responsable",
+  "tipo": "salida"
+ },
+ "¿Tu actividad está en el Anexo de la Ley 12/2012? (2.ª fila)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!K8",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Lo que te toca por el Anexo": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!L8",
+  "valor": "Tu actividad sale del Anexo (con mesas o barra, o más de 750 m²): el modelo, licencia o declaración, lo fija tu ayuntamiento; y las obras con proyecto, con su licencia aparte",
+  "tipo": "salida"
+ },
+ "Trámites del expediente": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D55",
+  "valor": 30.0,
+  "tipo": "salida"
+ },
+ "Trámites hechos": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D56",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Avance del expediente": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D58",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites sin importe (a presupuestar)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D62",
+  "valor": 30.0,
+  "tipo": "salida"
+ },
+ "Trámites que cambian según la comunidad autónoma": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D63",
+  "valor": 9.0,
+  "tipo": "salida"
+ },
+ "Avance de la fase F1": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!J13",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Trámites de la fase F1": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!E13",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Plazo en días del pedido de maquinaria crítica": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!E33",
+  "valor": 42.0,
+  "tipo": "salida"
+ },
+ "Comunidad autónoma del ejemplo": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D66",
+  "valor": "Comunidad de Madrid",
+  "tipo": "entrada"
+ },
+ "Lo que vale para ti de los ejemplos de Madrid": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D68",
+  "valor": "Los ejemplos de humos (ordenanza de Madrid) y de horario (orden de la Comunidad de Madrid) son los de tu comunidad; si tu municipio no es Madrid, busca además su ordenanza de humos",
+  "tipo": "salida"
+ },
+ "¿Consumo en el local?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B6",
+  "valor": "Sí",
+  "tipo": "entrada"
+ },
+ "¿Venta para llevar?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B7",
+  "valor": "Sí",
+  "tipo": "entrada"
+ },
+ "¿Ferias o casetas?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B8",
+  "valor": "No",
+  "tipo": "entrada"
+ },
+ "¿Sirves a otros negocios?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B9",
+  "valor": "No",
+  "tipo": "entrada"
+ },
+ "Epígrafe de la sala elegido": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B10",
+  "valor": "Aún no lo sé",
+  "tipo": "entrada"
+ },
+ "Formatos que te tocan": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B21",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Epígrafe candidato de la sala": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!C15",
+  "valor": "676 (chocolatería) o 673 (cafés y bares), más 644.6 si vendes al peso",
+  "tipo": "salida"
+ },
+ "¿Necesitas el 644.6 además de la sala?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B22",
+  "valor": "Pregúntalo: depende de si tu sala va al 676 o al 673",
+  "tipo": "salida"
+ },
+ "Epígrafes candidatos que llevas a tu asesor": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B23",
+  "valor": "676 (chocolatería) o 673 (cafés y bares), más 644.6 si vendes al peso. 644.6 (masas fritas y preparados de chocolate). ",
+  "tipo": "salida"
+ },
+ "¿Pagas el impuesto? (exención)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B24",
+  "valor": "Alta sí, pago no: están exentos los dos primeros años de actividad, todas las personas físicas y las sociedades por debajo de un millón de euros de cifra de negocio",
+  "tipo": "salida"
+ },
+ "La pregunta del CNAE para tu asesor": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B25",
+  "valor": "¿Con qué código del CNAE-2025 me doy de alta, y cuál es su equivalente del CNAE-2009, que también hay que comunicar? Mis candidatos: 56.11 o 56.30 (CNAE-2025), con su código de 2009; 47.24 o 56.11, con su código de 2009; y sé que el 47.81 del CNAE-2025 es comercio de vehículos de motor.",
+  "tipo": "salida"
+ },
+ "Tu actividad: régimen de apertura": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B13",
+  "valor": "Con mesas o barra (676 o 673) tu actividad sale del Anexo de la Ley 12/2012: el modelo, licencia o declaración responsable, lo fija tu ayuntamiento",
+  "tipo": "salida"
+ },
+ "Tus obras: licencia aparte": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B14",
+  "valor": "Las obras con proyecto, el conducto a cubierta incluido, van con su licencia de obra y su técnico, aparte de la actividad",
+  "tipo": "salida"
+ },
+ "Tu terraza: autorización aparte": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B15",
+  "valor": "Autorización de la terraza aparte: la ocupación de la vía pública no entra en el régimen de la Ley 12/2012 (art. 2.2)",
+  "tipo": "salida"
+ },
+ "Clasificación horaria del ejemplo": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B22",
+  "valor": "Cafetería o bar",
+  "tipo": "entrada"
+ },
+ "Hora mínima de apertura de cafetería o bar en Madrid": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B19",
+  "valor": "06:00:00",
+  "tipo": "parametro"
+ },
+ "Hora mínima de apertura de chocolatería en Madrid": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B20",
+  "valor": "08:00:00",
+  "tipo": "parametro"
+ },
+ "Hora mínima de apertura de tu clasificación": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B23",
+  "valor": "06:00:00",
+  "tipo": "salida"
+ },
+ "Lo que significa el horario para tu desayuno": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B25",
+  "valor": "Como cafetería o bar puedes abrir desde las 6:00 en el ejemplo de Madrid",
+  "tipo": "salida"
+ },
+ "Formato para humos y gas": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B6",
+  "valor": "Local con sala",
+  "tipo": "entrada"
+ },
+ "Gas o eléctrica": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B7",
+  "valor": "Gas",
+  "tipo": "entrada"
+ },
+ "Años entre inspecciones del gas": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B11",
+  "valor": 5,
+  "tipo": "parametro"
+ },
+ "Peso de bombona sin instalación receptora (kg)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B12",
+  "valor": 15,
+  "tipo": "parametro"
+ },
+ "Licencia de obra": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B16",
+  "valor": "Licencia de obra y técnico: el conducto necesita proyecto, aunque la actividad vaya por declaración responsable",
+  "tipo": "salida"
+ },
+ "Salida de humos del ejemplo de Madrid": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B17",
+  "valor": "Campana con captación, extracción forzada y filtro de grasas, conducto a cubierta y limpieza al menos una vez al año",
+  "tipo": "salida"
+ },
+ "Gas: lo que te toca": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B18",
+  "valor": "Instalación receptora con el certificado del instalador e inspección cada 5 años",
+  "tipo": "salida"
+ },
+ "Próxima inspección del gas": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B19",
+  "valor": "2031-10-03",
+  "tipo": "salida"
+ },
+ "Extintor de clase F": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B20",
+  "valor": "Falta: el agente extintor tiene que ser adecuado a la clase de fuego, y el de los aceites y grasas de cocina es la clase F",
+  "tipo": "salida"
+ },
+ "Papeles de obra, humos y gas que te tocan": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B31",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Veredicto de obra, humos y gas": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B33",
+  "valor": "Te faltan papeles de obra, humos o gas: 6 pendientes",
+  "tipo": "salida"
+ },
+ "Tu régimen sanitario": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol de Registro Sanitario!B11",
+  "valor": "Comercio al por menor: excluido del registro general (RGSEAA); te inscribes en el de tu comunidad autónoma",
+  "tipo": "salida"
+ },
+ "El trámite sanitario que te toca": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Árbol de Registro Sanitario!B12",
+  "valor": "Comunicación o declaración responsable al registro de tu comunidad autónoma: no habilita por sí sola, y cómo funciona cambia en cada comunidad",
+  "tipo": "salida"
+ },
+ "Estado de la autorización de feria": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Ferias y Venta Ambulante!B10",
+  "valor": "No vas a ferias",
+  "tipo": "salida"
+ },
+ "Requisitos del puesto que te aplican": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Ferias y Venta Ambulante!B25",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto de ferias": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Ferias y Venta Ambulante!B27",
+  "valor": "No vas a ferias: esta hoja no te aplica. Si algún día vas, cambia la respuesta en el árbol de formatos",
+  "tipo": "salida"
+ },
+ "¿Freidora dedicada o compartida?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B11",
+  "valor": "Dedicada al churro y a la porra: el aceite sólo lleva lo que lleva tu masa",
+  "tipo": "salida"
+ },
+ "Casillas de alérgenos pendientes de la etiqueta": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B21",
+  "valor": 21.0,
+  "tipo": "salida"
+ },
+ "¿Declaras el gluten por escrito?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B20",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Umbral del «sin gluten» (mg/kg)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B25",
+  "valor": 20,
+  "tipo": "parametro"
+ },
+ "Acrilamida: parte A": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B35",
+  "valor": "No fríes patatas: la parte A no te alcanza por ellas",
+  "tipo": "salida"
+ },
+ "Acrilamida: parte B": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B36",
+  "valor": "La parte B no te alcanza: sólo aplica a quien opera bajo marca o licencia siguiendo las instrucciones de un suministro centralizado (art. 2.3)",
+  "tipo": "salida"
+ },
+ "Riesgos de prioridad alta": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!PRL de la Fritura!C20",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Riesgos altos sin medida": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!PRL de la Fritura!C22",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Veredicto de riesgos de la fritura": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!PRL de la Fritura!C23",
+  "valor": "No abras la línea con riesgos altos sin su medida: te faltan 1",
+  "tipo": "salida"
+ },
+ "Personas con formación registrada": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Registro de Formación!C22",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Validez de la formación en meses": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Registro de Formación!C17",
+  "valor": 24,
+  "tipo": "parametro"
+ },
+ "Veredicto del registro de formación": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Registro de Formación!C25",
+  "valor": "Registro al día",
+  "tipo": "salida"
+ },
+ "Mes en que arranca el proyecto": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C5",
+  "valor": 11,
+  "tipo": "entrada"
+ },
+ "Plazo de entrega de la maquinaria crítica (semanas)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C6",
+  "valor": 6,
+  "tipo": "entrada"
+ },
+ "Duración del pedido de maquinaria (meses)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C20",
+  "valor": 1.380821917808219,
+  "tipo": "salida"
+ },
+ "Duración total del proyecto (meses)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C47",
+  "valor": 10.0,
+  "tipo": "salida"
+ },
+ "Hitos sin holgura (ruta crítica)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C48",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "Mes natural en el que abres": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C49",
+  "valor": 9.0,
+  "tipo": "salida"
+ },
+ "Nombre del mes de apertura": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C50",
+  "valor": "Septiembre",
+  "tipo": "salida"
+ },
+ "Mes en que quieres abrir": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C11",
+  "valor": 9,
+  "tipo": "entrada"
+ },
+ "¿Llegas a abrir en tu objetivo?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C53",
+  "valor": "LLEGAS JUSTO: cualquier retraso en la ruta crítica te mueve la apertura",
+  "tipo": "salida"
+ },
+ "¿La maquinaria está en la ruta crítica?": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C54",
+  "valor": "No",
+  "tipo": "salida"
+ },
+ "Holgura de la maquinaria (meses)": {
+  "ref": "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C55",
+  "valor": 3.119178082191781,
+  "tipo": "salida"
+ }
+}

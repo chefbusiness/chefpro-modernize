@@ -1,0 +1,312 @@
+{
+ "Personas en la línea en el pico del fin de semana (copiado del libro 1, X6)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B7",
+  "valor": 2,
+  "tipo": "entrada"
+ },
+ "Horas de refuerzo de Navidad y Reyes al año (copiado del libro 5, X7)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B8",
+  "valor": 56,
+  "tipo": "entrada"
+ },
+ "Coste hora de mano de obra que usaste en el escandallo (copiado del libro 3, X8)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B9",
+  "valor": 13.24384288441323,
+  "tipo": "entrada"
+ },
+ "Coste anual de plantilla (origen de X15)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!L5",
+  "valor": 119350.20111361095,
+  "tipo": "salida"
+ },
+ "Coste anual de plantilla (total de la hoja)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B25",
+  "valor": 119350.20111361095,
+  "tipo": "salida"
+ },
+ "Coste de los puestos al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B17",
+  "valor": 106083.18150415,
+  "tipo": "salida"
+ },
+ "Coste hora de la plantilla": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B19",
+  "valor": 13.243842884413233,
+  "tipo": "salida"
+ },
+ "Horas contratadas al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B18",
+  "valor": 8010.0,
+  "tipo": "salida"
+ },
+ "Horas de sustitución al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B22",
+  "valor": 945.7500000000002,
+  "tipo": "salida"
+ },
+ "Coste de sustituciones y refuerzo": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B24",
+  "valor": 13267.01960946096,
+  "tipo": "salida"
+ },
+ "Plus de nocturnidad de la plantilla al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!M14",
+  "valor": 2725.4707549999994,
+  "tipo": "salida"
+ },
+ "Provincia del convenio": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B12",
+  "valor": "Madrid",
+  "tipo": "entrada"
+ },
+ "Código REGCON del convenio de ejemplo": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B13",
+  "valor": "28002085011981",
+  "tipo": "parametro"
+ },
+ "Tablas salariales del ejemplo": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B16",
+  "valor": "2025 · convenio vencido el 31-12-2025, en negociación; se aplican sus tablas mientras no se publique el nuevo",
+  "tipo": "parametro"
+ },
+ "Pagas al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B17",
+  "valor": 14,
+  "tipo": "parametro"
+ },
+ "Plus de convenio al mes": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B18",
+  "valor": 191.22,
+  "tipo": "parametro"
+ },
+ "SMI anual": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B20",
+  "valor": 17094,
+  "tipo": "parametro"
+ },
+ "Seguridad Social de empresa": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B22",
+  "valor": 0.33,
+  "tipo": "parametro"
+ },
+ "Jornada anual de un contrato completo": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B23",
+  "valor": 1780,
+  "tipo": "parametro"
+ },
+ "Recargo del plus de 22:00 a 0:00": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B41",
+  "valor": 0.01,
+  "tipo": "parametro"
+ },
+ "Recargo del plus de 0:00 a 8:00": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B44",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Umbral de jornada nocturna del convenio": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B45",
+  "valor": 5,
+  "tipo": "parametro"
+ },
+ "Semanas que el local abre al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B52",
+  "valor": 51.42857142857143,
+  "tipo": "parametro"
+ },
+ "Cuadre del coste hora del escandallo (veredicto)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!D77",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Contraste del coste hora con tu plantilla (veredicto)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Parámetros!B71",
+  "valor": "COHERENTE",
+  "tipo": "salida"
+ },
+ "Horas de apertura con mínimo de cobertura a la semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B5",
+  "valor": 83.5,
+  "tipo": "salida"
+ },
+ "Horas de trabajo que piden los mínimos a la semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B6",
+  "valor": 163.5,
+  "tipo": "salida"
+ },
+ "Horas de trabajo que pone el cuadrante a la semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B7",
+  "valor": 189.0,
+  "tipo": "salida"
+ },
+ "Huecos de cobertura (medias horas)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B8",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Veredicto de cobertura del cuadrante": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B9",
+  "valor": "Sin huecos: el cuadrante cubre todos los mínimos",
+  "tipo": "salida"
+ },
+ "Máximo de personas en la línea a la vez": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B10",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Horas del titular a la semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B6",
+  "valor": 52.5,
+  "tipo": "salida"
+ },
+ "Horas de más del titular a la semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B8",
+  "valor": 12.5,
+  "tipo": "salida"
+ },
+ "Horas de madrugada del titular a la semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B10",
+  "valor": 5.0,
+  "tipo": "salida"
+ },
+ "Horas de más del titular al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B13",
+  "valor": 642.8571428571429,
+  "tipo": "salida"
+ },
+ "Valor de las horas de más del titular al año": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B14",
+  "valor": 8513.898997122793,
+  "tipo": "salida"
+ },
+ "Veredicto de las horas del titular": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B15",
+  "valor": "Trabajas los siete días: un plan que sólo cuadra con el titular sin descanso no aguanta un año; busca un relevo para un día",
+  "tipo": "salida"
+ },
+ "Coste anual del puesto: Titular (encargado/a)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!Q9",
+  "valor": 18348.6,
+  "tipo": "salida"
+ },
+ "Salario anual (antes del suelo): Titular (encargado/a)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!N9",
+  "valor": 18348.6,
+  "tipo": "salida"
+ },
+ "¿Trabajador nocturno según el ET?: Titular (encargado/a)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G8",
+  "valor": "No aplica (autónomo)",
+  "tipo": "salida"
+ },
+ "Horas de 22:00 a 6:00 a la semana: Titular (encargado/a)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!C8",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Plus de nocturnidad al año: Titular (encargado/a)": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!L8",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Coste anual del puesto: Churrero/a 1": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!Q10",
+  "valor": 25754.0185875,
+  "tipo": "salida"
+ },
+ "Salario anual (antes del suelo): Churrero/a 1": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!N10",
+  "valor": 19363.923749999998,
+  "tipo": "salida"
+ },
+ "¿Trabajador nocturno según el ET?: Churrero/a 1": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G9",
+  "valor": "no",
+  "tipo": "salida"
+ },
+ "Horas de 22:00 a 6:00 a la semana: Churrero/a 1": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!C9",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Plus de nocturnidad al año: Churrero/a 1": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!L9",
+  "valor": 1015.3237499999999,
+  "tipo": "salida"
+ },
+ "Coste anual del puesto: Churrero/a 2": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!Q11",
+  "valor": 25889.05664625,
+  "tipo": "salida"
+ },
+ "Salario anual (antes del suelo): Churrero/a 2": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!N11",
+  "valor": 19465.456124999997,
+  "tipo": "salida"
+ },
+ "¿Trabajador nocturno según el ET?: Churrero/a 2": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G10",
+  "valor": "no",
+  "tipo": "salida"
+ },
+ "Horas de 22:00 a 6:00 a la semana: Churrero/a 2": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!C10",
+  "valor": 3.0,
+  "tipo": "salida"
+ },
+ "Plus de nocturnidad al año: Churrero/a 2": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!L10",
+  "valor": 1116.8561249999998,
+  "tipo": "salida"
+ },
+ "Coste anual del puesto: Camarero/a de sala": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!Q12",
+  "valor": 24073.508565400003,
+  "tipo": "salida"
+ },
+ "Salario anual (antes del suelo): Camarero/a de sala": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!N12",
+  "valor": 18100.382380000003,
+  "tipo": "salida"
+ },
+ "¿Trabajador nocturno según el ET?: Camarero/a de sala": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G11",
+  "valor": "revísalo con tu asesor",
+  "tipo": "salida"
+ },
+ "Horas de 22:00 a 6:00 a la semana: Camarero/a de sala": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!C11",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Plus de nocturnidad al año: Camarero/a de sala": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!L11",
+  "valor": 213.08238000000006,
+  "tipo": "salida"
+ },
+ "Coste anual del puesto: Refuerzo de fin de semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!Q13",
+  "valor": 12017.997705000003,
+  "tipo": "salida"
+ },
+ "Salario anual (antes del suelo): Refuerzo de fin de semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!N13",
+  "valor": 9036.088500000002,
+  "tipo": "salida"
+ },
+ "¿Trabajador nocturno según el ET?: Refuerzo de fin de semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G12",
+  "valor": "no",
+  "tipo": "salida"
+ },
+ "Horas de 22:00 a 6:00 a la semana: Refuerzo de fin de semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!C12",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Plus de nocturnidad al año: Refuerzo de fin de semana": {
+  "ref": "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!L12",
+  "valor": 380.20849999999996,
+  "tipo": "salida"
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "kg fritos en un día tipo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L5",
+  "valor": 22.031578947368423,
+  "tipo": "salida"
+ },
+ "kg fritos en un día punta": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L6",
+  "valor": 35.25052631578948,
+  "tipo": "salida"
+ },
+ "Raciones del día tipo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L7",
+  "valor": 250.0,
+  "tipo": "salida"
+ },
+ "Raciones del día punta": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L8",
+  "valor": 400.0,
+  "tipo": "salida"
+ },
+ "Litros totales de cuba": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!L5",
+  "valor": 25.0,
+  "tipo": "salida"
+ },
+ "¿Necesitas extinción automática? (1 sí, 0 no)": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!L6",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Capacidad del conjunto en raciones por hora": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!L5",
+  "valor": 122.55136168179646,
+  "tipo": "salida"
+ },
+ "Personas en la línea en el pico": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Equipos y Capacidad!L5",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Superficie útil del local (celda de origen del cruce al libro 2)": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Zonas y m²!L5",
+  "valor": 75.0,
+  "tipo": "salida"
+ },
+ "kg de masa por ración media copiados del libro 3 (X1)": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B22",
+  "valor": 0.09791812865497077,
+  "tipo": "entrada"
+ },
+ "Cuadre de los kg de masa por ración con el libro 3": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B25",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Kilos fritos por kilo de masa copiados del libro 3 (X1 bis)": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B26",
+  "valor": 0.9,
+  "tipo": "entrada"
+ },
+ "Cuadre de los kilos fritos por kilo de masa con el libro 3": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B29",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Superficie útil del local": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B6",
+  "valor": 75,
+  "tipo": "parametro"
+ },
+ "Terraza aparte": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B7",
+  "valor": 20,
+  "tipo": "parametro"
+ },
+ "kW por litro de freidora (CTE)": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B9",
+  "valor": 1,
+  "tipo": "parametro"
+ },
+ "Umbral de riesgo especial bajo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B10",
+  "valor": 20,
+  "tipo": "parametro"
+ },
+ "Umbral de riesgo especial medio": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B11",
+  "valor": 30,
+  "tipo": "parametro"
+ },
+ "Umbral de riesgo alto y extinción automática": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B12",
+  "valor": 50,
+  "tipo": "parametro"
+ },
+ "Distancia mínima del filtro con gas": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B13",
+  "valor": 1.2,
+  "tipo": "parametro"
+ },
+ "Distancia mínima del filtro con otros aparatos": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Parámetros!B15",
+  "valor": 0.5,
+  "tipo": "parametro"
+ },
+ "m² repartidos por zonas": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Zonas y m²!D13",
+  "valor": 75.0,
+  "tipo": "salida"
+ },
+ "m² de producción": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Zonas y m²!D17",
+  "valor": 16.0,
+  "tipo": "salida"
+ },
+ "Parte del local dedicada a producción": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Zonas y m²!D18",
+  "valor": 0.21333333333333335,
+  "tipo": "salida"
+ },
+ "m² de atención al cliente": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Zonas y m²!D19",
+  "valor": 44.0,
+  "tipo": "salida"
+ },
+ "m² de la zona de fritura bajo campana": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Zonas y m²!D7",
+  "valor": 6,
+  "tipo": "entrada"
+ },
+ "kg de masa por hora de la línea": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Equipos y Capacidad!F9",
+  "valor": 12,
+  "tipo": "entrada"
+ },
+ "kg de masa por hora de la freidora": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Equipos y Capacidad!F10",
+  "valor": 15.0,
+  "tipo": "salida"
+ },
+ "kg de masa por hora de la amasadora": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Equipos y Capacidad!F11",
+  "valor": 90.0,
+  "tipo": "salida"
+ },
+ "kg de masa por hora y persona en la línea": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Equipos y Capacidad!F14",
+  "valor": 6.0,
+  "tipo": "salida"
+ },
+ "Litros de la freidora del ejemplo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D6",
+  "valor": 25,
+  "tipo": "entrada"
+ },
+ "kW de los demás aparatos de cocción": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D11",
+  "valor": 3,
+  "tipo": "entrada"
+ },
+ "kW computables de la cocina": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D12",
+  "valor": 28.0,
+  "tipo": "salida"
+ },
+ "Riesgo de la cocina": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D13",
+  "valor": "Riesgo bajo",
+  "tipo": "salida"
+ },
+ "¿Extinción automática obligatoria?": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D15",
+  "valor": "No obligatoria",
+  "tipo": "salida"
+ },
+ "Veredicto del Código Técnico para la cocina": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D20",
+  "valor": "Local de riesgo especial: riesgo bajo",
+  "tipo": "salida"
+ },
+ "¿Aplica la nota (3) del CTE?": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D21",
+  "valor": "Sí",
+  "tipo": "salida"
+ },
+ "Distancia mínima del filtro al foco": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D22",
+  "valor": 1.2,
+  "tipo": "salida"
+ },
+ "Kilos de masa por hora del conjunto": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B6",
+  "valor": 12.0,
+  "tipo": "salida"
+ },
+ "Eslabón que manda": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B7",
+  "valor": "Línea de dosificado y fritura (con su churrero/a)",
+  "tipo": "salida"
+ },
+ "Segundo eslabón más justo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B9",
+  "valor": "Freidora (por tandas)",
+  "tipo": "salida"
+ },
+ "Horas de línea a pleno ritmo en el día tipo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B15",
+  "valor": 2.0399610136452244,
+  "tipo": "salida"
+ },
+ "Horas de línea a pleno ritmo en el día punta": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B16",
+  "valor": 3.263937621832359,
+  "tipo": "salida"
+ },
+ "kg de masa en un día tipo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!B8",
+  "valor": 24.479532163742693,
+  "tipo": "salida"
+ },
+ "kg de masa en un día punta": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!C8",
+  "valor": 39.16725146198831,
+  "tipo": "salida"
+ },
+ "Tandas de freidora en un día punta": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!C11",
+  "valor": 40.0,
+  "tipo": "salida"
+ },
+ "Amasados en un día punta": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!C12",
+  "valor": 2.0,
+  "tipo": "salida"
+ },
+ "Raciones de la semana tipo": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!B16",
+  "valor": 2050.0,
+  "tipo": "salida"
+ },
+ "Raciones de un día medio de la semana": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!B18",
+  "valor": 292.85714285714283,
+  "tipo": "salida"
+ },
+ "Veredicto de la ficha de visita": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!E21",
+  "valor": "SIGUE ADELANTE CON RESERVAS",
+  "tipo": "salida"
+ },
+ "Primer eliminatorio que tumba el local": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!E20",
+  "valor": "Ninguno",
+  "tipo": "salida"
+ },
+ "Ítems que obligan a obra con proyecto y licencia": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!E17",
+  "valor": 1.0,
+  "tipo": "salida"
+ },
+ "Ficha, eliminatorio 1: ¿La extracción necesita proyecto?": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!I6",
+  "valor": "Con obra y licencia",
+  "tipo": "salida"
+ },
+ "Ficha, eliminatorio 2: ¿Se puede llevar un conducto a cubierta?": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!I7",
+  "valor": "OK",
+  "tipo": "salida"
+ },
+ "Ficha, eliminatorio 3: ¿Hay gas, o hay que llevarlo?": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!I8",
+  "valor": "OK",
+  "tipo": "salida"
+ },
+ "Ficha, eliminatorio 4: ¿Aguanta la potencia y el riesgo de incendio?": {
+  "ref": "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!I9",
+  "valor": "OK",
+  "tipo": "salida"
+ }
+}

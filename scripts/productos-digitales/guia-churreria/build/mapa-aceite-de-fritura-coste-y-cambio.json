@@ -1,0 +1,292 @@
+{
+ "Precio del aceite (base imponible) (copiado del libro 3, X2)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B7",
+  "valor": 1.996,
+  "tipo": "entrada"
+ },
+ "Absorción de aceite, en % del peso frito (copiado del libro 3, X2)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B8",
+  "valor": 0.1,
+  "tipo": "entrada"
+ },
+ "Densidad del aceite (copiado del libro 3, X2)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B9",
+  "valor": 0.92,
+  "tipo": "entrada"
+ },
+ "Kilos de masa por ración media (merma incluida) (copiado del libro 3, X2 bis)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B10",
+  "valor": 0.09791812865497077,
+  "tipo": "entrada"
+ },
+ "Aceite absorbido por ración media (copiado del libro 3, X2 bis)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B11",
+  "valor": 0.01911957894736842,
+  "tipo": "entrada"
+ },
+ "Kilos fritos en un día tipo (copiado del libro 1, X3)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B14",
+  "valor": 22.03157894736842,
+  "tipo": "entrada"
+ },
+ "Kilos fritos en un día punta (copiado del libro 1, X3)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B15",
+  "valor": 35.25052631578948,
+  "tipo": "entrada"
+ },
+ "Litros totales de cuba (todas las freidoras) (copiado del libro 1, X3)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B16",
+  "valor": 25,
+  "tipo": "entrada"
+ },
+ "Raciones de un día tipo (lunes a viernes) (copiado del libro 1, X3 bis)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B17",
+  "valor": 250,
+  "tipo": "entrada"
+ },
+ "Raciones de un día punta (sábado, domingo y festivo) (copiado del libro 1, X3 bis)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B18",
+  "valor": 400,
+  "tipo": "entrada"
+ },
+ "Renovación de aceite por ración (origen de X12)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!L5",
+  "valor": 0.02839837398373984,
+  "tipo": "salida"
+ },
+ "Días entre cambios de aceite": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B21",
+  "valor": 6,
+  "tipo": "entrada"
+ },
+ "Aceite que repones en un día tipo": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B22",
+  "valor": 2.39,
+  "tipo": "entrada"
+ },
+ "Aceite que repones en un día punta": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B23",
+  "valor": 3.83,
+  "tipo": "entrada"
+ },
+ "Coste del gestor de aceite usado al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B24",
+  "valor": 0,
+  "tipo": "entrada"
+ },
+ "Límite legal de compuestos polares": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B25",
+  "valor": 0.25,
+  "tipo": "parametro"
+ },
+ "Litros que retiró el gestor el último mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B26",
+  "valor": 126.7,
+  "tipo": "entrada"
+ },
+ "Tolerancia de los contrastes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B33",
+  "valor": 0.05,
+  "tipo": "parametro"
+ },
+ "Tolerancia de las filas de CUADRE": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B34",
+  "valor": 0.02,
+  "tipo": "parametro"
+ },
+ "Días naturales por mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B32",
+  "valor": 30.416666666666668,
+  "tipo": "parametro"
+ },
+ "Cuadre del aceite absorbido (veredicto)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!D57",
+  "valor": "CUADRA",
+  "tipo": "salida"
+ },
+ "Contraste A: aceite absorbido recalculado (veredicto)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B46",
+  "valor": "COHERENTE",
+  "tipo": "salida"
+ },
+ "Aceite absorbido por ración recalculado con las copias": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B37",
+  "valor": 0.01911957894736842,
+  "tipo": "salida"
+ },
+ "Kilos fritos por kilo de masa que implican las copias": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B42",
+  "valor": 0.8999999999999998,
+  "tipo": "salida"
+ },
+ "Litros renovados por día": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B7",
+  "valor": 4.166666666666667,
+  "tipo": "salida"
+ },
+ "Renovación en euros por día": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B9",
+  "valor": 8.316666666666666,
+  "tipo": "salida"
+ },
+ "Raciones de un día medio de la semana": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B10",
+  "valor": 292.85714285714283,
+  "tipo": "salida"
+ },
+ "Renovación por ración": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B11",
+  "valor": 0.02839837398373984,
+  "tipo": "salida"
+ },
+ "Renovación en euros al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B13",
+  "valor": 252.96527777777777,
+  "tipo": "salida"
+ },
+ "Reposición que sale de la absorción en un día tipo": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B19",
+  "valor": 2.394736842105263,
+  "tipo": "salida"
+ },
+ "Contraste de la reposición con la absorción (media de la semana)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!D21",
+  "valor": "Tu reposición cuadra con la absorción del libro 3",
+  "tipo": "salida"
+ },
+ "Reposición por ración (media de la semana)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!D23",
+  "valor": 0.019093443902439028,
+  "tipo": "salida"
+ },
+ "Litros de aceite que compras al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!E27",
+  "valor": 211.94623015873015,
+  "tipo": "salida"
+ },
+ "Euros de aceite que compras al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!E28",
+  "valor": 423.0446753968254,
+  "tipo": "salida"
+ },
+ "Aceite total por ración (absorbido del libro 3 más renovación)": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B33",
+  "valor": 0.04751795293110826,
+  "tipo": "salida"
+ },
+ "Aceite absorbido por kilo de masa": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B38",
+  "valor": 0.19526086956521738,
+  "tipo": "salida"
+ },
+ "Renovación de aceite por kilo de masa": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B39",
+  "valor": 0.2900216167713517,
+  "tipo": "salida"
+ },
+ "Aceite total por kilo de masa": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B40",
+  "valor": 0.48528248633656906,
+  "tipo": "salida"
+ },
+ "Parte del aceite total por ración que es renovación": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B34",
+  "valor": 0.5976346250629089,
+  "tipo": "salida"
+ },
+ "Coste de cambiar un día antes al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F19",
+  "valor": 50.59305555555559,
+  "tipo": "salida"
+ },
+ "Ahorro de alargar un día al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F20",
+  "valor": 36.13789682539682,
+  "tipo": "salida"
+ },
+ "Días en que la renovación por ración iguala al aceite absorbido": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F21",
+  "valor": 8.911819887429644,
+  "tipo": "salida"
+ },
+ "Veredicto del punto económico de cambio": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F22",
+  "valor": "Con tu ciclo, el aceite que tiras al cambiar cuesta más por ración que el que se lleva la masa: cada día que alargues, sin pasar del límite del medidor, se nota",
+  "tipo": "salida"
+ },
+ "Renovación por ración con un ciclo de 4 días": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!D8",
+  "valor": 0.04259756097560976,
+  "tipo": "salida"
+ },
+ "Renovación por ración con un ciclo de 8 días": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!D12",
+  "valor": 0.02129878048780488,
+  "tipo": "salida"
+ },
+ "Subida del aceite del escenario 1": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!B8",
+  "valor": 0.1,
+  "tipo": "entrada"
+ },
+ "Margen que pierdes al mes con el aceite un 10 % más caro": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!I8",
+  "valor": 42.304467539682605,
+  "tipo": "salida"
+ },
+ "Margen que pierdes al año con el aceite un 10 % más caro": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!J8",
+  "valor": 507.65361047619126,
+  "tipo": "salida"
+ },
+ "Subida del aceite del escenario 2": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!B9",
+  "valor": 0.2,
+  "tipo": "entrada"
+ },
+ "Margen que pierdes al mes con el aceite un 20 % más caro": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!I9",
+  "valor": 84.6089350793651,
+  "tipo": "salida"
+ },
+ "Margen que pierdes al año con el aceite un 20 % más caro": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!J9",
+  "valor": 1015.3072209523812,
+  "tipo": "salida"
+ },
+ "Subida del aceite del escenario 3": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!B10",
+  "valor": 0.3,
+  "tipo": "entrada"
+ },
+ "Margen que pierdes al mes con el aceite un 30 % más caro": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!I10",
+  "valor": 126.9134026190477,
+  "tipo": "salida"
+ },
+ "Margen que pierdes al año con el aceite un 30 % más caro": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!J10",
+  "valor": 1522.9608314285724,
+  "tipo": "salida"
+ },
+ "Litros al gestor al mes": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Gestor de Aceite Usado!B7",
+  "valor": 126.73611111111113,
+  "tipo": "salida"
+ },
+ "Litros al gestor al año": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Gestor de Aceite Usado!B8",
+  "valor": 1520.8333333333335,
+  "tipo": "salida"
+ },
+ "Coste del gestor al año": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Gestor de Aceite Usado!B10",
+  "valor": 0.0,
+  "tipo": "salida"
+ },
+ "Contraste con el registro de retiradas": {
+  "ref": "aceite-de-fritura-coste-y-cambio.xlsx!Gestor de Aceite Usado!B16",
+  "valor": "Cuadra con tu registro de retiradas",
+  "tipo": "salida"
+ }
+}
