@@ -144,3 +144,20 @@ Nota: `fase6-gate.py` recibe la URL BASE; sus 3 fallos son conteos congelados de
 
 **Pendiente:** correo de lanzamiento (hueco 13-nov 08:00Z, programable desde el 14-oct) · post `ia-churrerias-guia-completa`
 (SPEC §7.2) · hermana `guia-chocolateria-obrador` v1.0.1 (D7, su correo el 18-nov).
+
+### Cierre de la sesión (3-oct, tarde, Claude Code)
+
+- **Post `ia-churrerias-guia-completa` corregido** (SPEC §7.2, `c073ea03`): cifras sin fuente fuera, tabla de partidas con fuente,
+  punto de equilibrio como método, 3 banners rotados (configs `fase8x-config/guia-churreria-chocolateria.json` y `pack-appcc.json`).
+- **Correo de lanzamiento: programar a partir del 14-oct** para el 13-nov 08:00Z (procedimiento en `CALENDARIO-V2-SEMANAL.md`).
+- **Hermana v1.0.1 (D7): aplazada por John.** Factura QA cripto sin pagar: caduca sola.
+
+## ▶️ Próxima sesión (fresca): producto digital en INGLÉS
+
+1. Leer `CLAUDE.md` (bloques **PROPORCIONALIDAD** y **Reparto Mac ↔ VPS**) y `scripts/productos-digitales/TIENDA-INTERNACIONAL.md`
+   (ola 1: Pro Prompts → HACCP; Food Cost Kit Pro y Restaurant Inventory Kit Pro ya LIVE). Regla: DUPLICAR el producto ES y traducir/adaptar.
+2. **Modo de trabajo nuevo:** el Mac orquesta y redacta con agentes Sonnet (2-3 a la vez, `istats` < 60 °C); el VPS (`ssh vps`, venv
+   `/root/venv-guias`) ejecuta generadores de Excel, `documentos.py` y gates de openpyxl/PyMuPDF; Netlify construye el preview; UNA revisión
+   Opus final. Para lanzar agentes Claude EN el VPS, pedir a John que cambie a modo manual (Shift+Tab) en ese momento y luego vuelva al automático.
+3. Objetivo: producto listo para el Payment Link en 3-6 h, sin supervisión de John; él solo crea el Payment Link (USD en la tienda EN).
+4. Ojo VPS: `/dev/null` es un fichero normal allí (pendiente de John); redirigir a ficheros de `/tmp`, no a `/dev/null`, si importa la salida.
