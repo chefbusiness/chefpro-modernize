@@ -389,7 +389,8 @@ def dv_lista_en(items, donde):
 
 def reescribir_dv_cf(L, T):
     n = OrderedDict([('dv_listas', 0), ('dv_especiales', 0), ('dv_personalizadas', 0), ('dv_ref', 0),
-                     ('dv_mensajes', 0), ('cf_reglas', 0), ('cf_text', 0)])
+                     ('dv_mensajes', 0), ('dv_mensajes_fijados', 0), ('cf_reglas', 0), ('cf_text', 0)])
+    usados = set()
     for ws in L.wb.worksheets:
         h_es = L.inv[ws.title]
         for dv in ws.data_validations.dataValidation:
@@ -428,6 +429,11 @@ def reescribir_dv_cf(L, T):
                 en = L.en_de(ident, tr, es, '%s DV %s %s' % (ws.title, sq, attr))
                 if en is None:
                     raise Aborta('%s %s DV %s %s marcado «regenerar»' % (L.corto, h_es, sq, attr))
+                fijo = mapas.DV_MENSAJES_EN.get((L.corto, h_es, sq, attr))
+                if fijo is not None:                       # revisión final: arreglo solo para ESTA aparición
+                    en = fijo
+                    usados.add((L.corto, h_es, sq, attr))
+                    n['dv_mensajes_fijados'] += 1
                 setattr(dv, attr, en)
                 n['dv_mensajes'] += 1
         for cf in ws.conditional_formatting:
@@ -438,6 +444,9 @@ def reescribir_dv_cf(L, T):
                 if regla.text:
                     regla.text = clave_en(regla.text, 'CF %s %s' % (ws.title, cf.sqref))
                     n['cf_text'] += 1
+    sin_usar = [k for k in mapas.DV_MENSAJES_EN if k[0] == L.corto and k not in usados]
+    if sin_usar:
+        raise Aborta('%s: DV_MENSAJES_EN sin DV donde aplicarse: %r' % (L.corto, sin_usar))
     L.rep.update(n)
 
 
@@ -573,6 +582,51 @@ def capa_valores(L):
     L.rep['valores'] = n
 
 
+def alto_necesario(ws, fila):
+    """Alto (pt) que pide el texto ajustado más largo de la fila. Estimación conservadora: un carácter por unidad
+    de ancho de columna a 11 pt (el texto real es más estrecho que el «0» de referencia): sobra aire, no se corta."""
+    alto = 0
+    for cel in ws[fila]:
+        v = cel.value
+        if not isinstance(v, str) or cel.data_type == 'f' or not (cel.alignment and cel.alignment.wrap_text):
+            continue
+        if any(cel.coordinate in m for m in ws.merged_cells.ranges):
+            continue
+        ancho = ws.column_dimensions[cel.column_letter].width or 8.43
+        pt = (cel.font.sz if cel.font is not None and cel.font.sz else 11)
+        cpl = max(1, int(ancho * 11.0 / pt))
+        lineas = sum(max(1, -(-len(seg) // cpl)) for seg in v.split('\n'))
+        alto = max(alto, lineas * pt * 1.36)
+    return round(alto * 4) / 4.0
+
+
+def capa_ajuste(L):
+    """Revisión final: ajuste de texto en los rótulos que se cortaban (mapas.AJUSTE_TEXTO) y alto de fila."""
+    n = 0
+    for (c, h, rg) in mapas.AJUSTE_TEXTO:
+        if c != L.corto:
+            continue
+        ws = L.ws(h)
+        filas = set()
+        for coord in rango(rg):
+            cel = ws[coord]
+            if cel.value is None:
+                continue
+            if not isinstance(cel.value, str) or cel.data_type == 'f':
+                raise Aborta('%s %s!%s: AJUSTE_TEXTO sobre algo que no es un rótulo: %r' % (c, h, coord, cel.value))
+            al = copy.copy(cel.alignment)
+            al.wrap_text = True
+            cel.alignment = al
+            filas.add(cel.row)
+            n += 1
+        for fila in sorted(filas):
+            alto = alto_necesario(ws, fila)
+            actual = ws.row_dimensions[fila].height
+            if alto > (actual or 15):
+                ws.row_dimensions[fila].height = alto
+    L.rep['ajuste_texto'] = n
+
+
 # ==========================================================================
 # Formatos y papel (D17, D18)
 # ==========================================================================
@@ -679,6 +733,7 @@ def construir_libro(fname_es, carpeta, datos, mes):
     capa_por_celda(L)
     capa_parametros(L)
     capa_valores(L)
+    capa_ajuste(L)
     rep['refs_hoja'] = T.hojas_citadas
     rep['literales'] = T.literales
     formatos_y_papel(L)                                                        # 7

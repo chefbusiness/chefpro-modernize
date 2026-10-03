@@ -138,7 +138,7 @@ const data: KitExcelData = {
       'Every template comes with automatic formulas and is built for how restaurants really work. Adjust it to your business and start scheduling.',
     // fourCols omitido → md:grid-cols-3 (9 tarjetas, como el ES)
     templates: [
-      { icon: 'CalendarDays', title: 'Restaurant Schedule Template: Weekly & Monthly Staff Rota', desc: 'Weekly and monthly schedule with the alerts that matter: less than 10 hours between shifts (the "clopening" rule of Fair Workweek laws), shifts over 10 hours, weeks over 40 hours, days off, and night or double shifts for staff under 18. You set shift codes and times once.' },
+      { icon: 'CalendarDays', title: 'Restaurant Schedule Template: Weekly & Monthly Staff Rota', desc: 'Weekly and monthly schedule with the alerts that matter: less than 10 hours between shifts (the "clopening" rule of Fair Workweek laws), shifts over 10 hours, weeks over 40 hours, days off, and minors\' shifts (under 16: no work after 7 PM, 9 PM from June 1 to Labor Day, 29 CFR 570.35; 16-17: state law). You set shift codes and times once.' },
       { icon: 'Clock', title: 'Overtime Tracker & Time Log (FLSA 40-Hour Week)', desc: 'Time log per employee with overtime by workweek: hours over 40 at 1.5× (both editable), plus an optional daily threshold for states such as California. Unapproved overtime still counts, because it still has to be paid, and an annual overtime budget per person shows who is close to it.' },
       { icon: 'Banknote', title: 'Restaurant Labor Cost Calculator (Payroll & Labor %)', desc: 'Labor cost-to-sales ratio with a traffic light by type of restaurant (fast casual, casual dining, fine dining, catering...). Payroll by pay period (weekly, biweekly, semimonthly or monthly), employer taxes as an editable estimate, and a staffing forecast per service.' },
       { icon: 'UserPlus', title: 'New Hire Onboarding Checklist', desc: '50 tasks in five blocks: hiring paperwork, required training, equipment and access, on-the-job training, and the introductory period. Each one with its deadline in days from the hire date, such as Form I-9 Section 1 by the first day of work.' },
@@ -159,7 +159,7 @@ const data: KitExcelData = {
     reasons: [
       { icon: 'Utensils', title: 'Built for Restaurants, Not Generic HR', desc: 'Designed for restaurants, hotels and catering: split shifts, doubles, services, back of house and front of house, extra shifts on the weekend. Not generic HR templates.' },
       { icon: 'Calculator', title: 'Real Formulas', desc: 'Labor cost, overtime by workweek, covers per employee and a staffing forecast per service, all calculated automatically. Not theory: numbers.' },
-      { icon: 'ShieldCheck', title: 'Labor Rules, With the Exact Citation', desc: 'Each alert is built on an actual rule: overtime after 40 hours in a workweek (FLSA, 29 U.S.C. 207), rest between shifts from Fair Workweek laws (10 hours in Oregon and Seattle, 11 for fast food in New York City) and hour limits for minors (29 CFR 570.35). Every threshold is an editable cell, because state and city rules vary. A planning tool, not legal advice.' },
+      { icon: 'ShieldCheck', title: 'Labor Rules, With the Exact Citation', desc: 'Each legal alert cites its rule: overtime after 40 hours in a workweek (FLSA, 29 U.S.C. 207), rest between shifts from Fair Workweek laws (10 hours in Oregon and Seattle, 11 for fast food in New York City) and hour limits for minors under 16 (29 CFR 570.35). The 10 h long-shift alert and the 80 h overtime budget are kit defaults you can change. Every threshold is an editable cell, because state and city rules vary. A planning tool, not legal advice.' },
       { icon: 'RefreshCw', title: 'Scheduling Apps Charge Every Month, Per Location. This Is $19, Once', desc: 'The same planning tools as a scheduling subscription, in Excel, for a one-time payment. No subscription and no per-user fees.' },
     ],
     // Pastillas del ES (orden incluido) sin Google Sheets hasta el test real (SPEC §6, §9); «A4» → US Letter.
@@ -187,7 +187,7 @@ const data: KitExcelData = {
         label: 'BONUS 1',
         title: 'Shift Handover Log (Manager Log Book)',
         value: '$19',
-        desc: 'The template that makes sure no shift starts blind. Incidents, VIP reservations, pending tasks, low stock, staff absences, a cash count (opening bank, cash counted and cash sales from the POS Z report) and temperatures at handover, the exact moment food safety changes hands.',
+        desc: 'The template that makes sure no shift starts blind. Incidents, VIP reservations, pending tasks, low stock, staff absences, a cash count (opening float, cash counted and cash sales from the POS Z report) and temperatures at handover, the exact moment food safety changes hands.',
         image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-equipo.jpg',
       },
       {

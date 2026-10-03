@@ -170,10 +170,11 @@ CLAVES.update([
     ('⛔ 0 días', '⛔ 0 days off'),
     ('⚠ 1 día (el ET pide 1,5, acumulable en 14 días — art. 37.1)', '⚠ 6 days on: a 7th day in a row is premium pay in CA'),
     ('⛔ jornada > ', '⛔ shift > '),
-    ('⛔ jornada > 8 h (MENOR)', '⛔ shift > 8 h (MINOR)'),
+    # menores (revisión final): las reglas federales de horario son de MENORES DE 16 (29 CFR 570.35); 16-17 = estado
+    ('⛔ jornada > 8 h (MENOR)', '⛔ > 8 h (under-16 cap)'),
     ('⛔ MENOR: trabajo nocturno y turno doble prohibidos (art. 6 ET)',
-     '⛔ MINOR: no night or double shifts (29 CFR 570.35)'),
-    ('⚠ menor: sin horas extra (art. 6.3 ET)', '⚠ minor: check federal and state hour limits'),
+     '⛔ UNDER 16: no work after 7 PM (9 PM Jun 1–Labor Day), 29 CFR 570.35; 16-17: state law'),
+    ('⚠ menor: sin horas extra (art. 6.3 ET)', '⚠ Minor: under 16, PM/SP end after 7 PM — check 570.35 + state law'),
     ('⛔ media +', '⛔ avg +'),
     # 02 Registro y Resumen
     ('⚠ escribe la hora con dos puntos: 9:00, no 9', '⚠ type the time with a colon: 9:00 AM, not 9'),
@@ -257,12 +258,24 @@ DV_NUEVAS = OrderedDict([
     (('01', 'Turnos', 'C5:D12'), ('time', 'between', '0', '0.999305555555556',
                                   'Type a time like 7:00 AM or 3:30 PM (not a plain 7).')),
     (('02', 'Registro Horas', 'B3'), ('whole', 'between', '1', '7',
-                                      'FLSA workweek = any fixed 7 days you choose. 1 = Sunday … 7 = Saturday.')),
+                                      'FLSA workweek = any fixed 7 days you choose. 2 = Monday (default: the same week '
+                                      'as the schedule grid in file 01) · 1 = Sunday … 7 = Saturday.')),
     (('02', 'Registro Horas', 'D3'), ('decimal', 'between', '1', '80',
                                       'Federal overtime starts after 40 hours in the workweek (FLSA). UK: type your '
                                       'contract hours.')),
     (('02', 'Registro Horas', 'F3'), ('decimal', 'between', '1', '24',
                                       'Leave blank under federal law. California: 8 (also AK, NV). Colorado: 12.')),
+])
+
+# Mensajes de DV fijados por aparición (revisión final): pisan el texto por id de textos_en SOLO en esa DV,
+# cuando la cadena es compartida y el arreglo no vale para todas sus apariciones. (libro, hoja ES, sqref, campo)
+DV_MENSAJES_EN = OrderedDict([
+    # c0170 «…the summary formulas look for this exact text»: en 07 y B01 no hay fórmula que busque esos valores
+    # (en 02 «Time Log»!I y 05 «PTO Requests»!G sí: allí se queda)
+    (('07', 'Plantilla', 'D5:D34', 'error'), 'Pick a value from the list.'),
+    (('07', 'Plantilla', 'G5:G34', 'error'), 'Pick a value from the list.'),
+    (('B01', 'Briefing', 'C17:C22', 'error'), 'Pick a value from the list.'),
+    (('B01', 'Briefing', 'A25:A30', 'error'), 'Pick a value from the list.'),
 ])
 
 # ==========================================================================
@@ -331,8 +344,8 @@ PATRONES_SIN_CAMBIO = {
 # 7. Celdas nuevas (D10): parámetros FLSA en la fila 3 de «Time Log» (vacía en el ES). Verdes y desbloqueadas.
 # ==========================================================================
 PARAMETROS = OrderedDict([
-    (('02', 'Registro Horas', 'A3'), ('Workweek starts (1=Sun):', None)),
-    (('02', 'Registro Horas', 'B3'), (None, 1)),
+    (('02', 'Registro Horas', 'A3'), ('Workweek starts (1=Sun, 2=Mon):', None)),
+    (('02', 'Registro Horas', 'B3'), (None, 2)),                 # lunes = la rejilla del 01 (lunes-domingo)
     (('02', 'Registro Horas', 'C3'), ('Weekly OT after (h):', None)),
     (('02', 'Registro Horas', 'D3'), (None, 40)),
     (('02', 'Registro Horas', 'E3'), ('Daily OT after (h):', None)),
@@ -378,19 +391,19 @@ POR_CELDA = OrderedDict([
     (('01', 'Turnos', 'C3'), 'Fair Workweek "clopening" rule'),
     (('01', 'Turnos', 'C4'), 'Start time'), (('01', 'Turnos', 'D4'), 'End time'),
     (('01', 'Cuadrante Semanal', 'J5'), 'Max hours/week (OT after 40)'),
-    (('01', 'Cuadrante Semanal', 'O5'), 'Minor (under 18) Y/N'),
+    (('01', 'Cuadrante Semanal', 'O5'), 'Under 18? (Y/N)'),
     (('01', 'Cuadrante Mensual', 'I169'), 'Max hours/week (OT after 40)'),
     # 02 Monthly OT Summary (rótulos con la decisión D10)
-    (('02', 'Resumen Mensual', 'A3'), 'Regular hourly rate:'),
+    (('02', 'Resumen Mensual', 'A3'), 'Hourly rate for the OT cost estimate:'),
     (('02', 'Resumen Mensual', 'C3'), 'Overtime multiplier (FLSA: 1.5×):'),
     (('02', 'Resumen Mensual', 'E3'), 'Annual OT budget per person (h):'),
-    (('02', 'Resumen Mensual', 'B5'), 'Total OT hours this month'),
+    (('02', 'Resumen Mensual', 'B5'), 'Total OT hours (this copy)'),
     (('02', 'Resumen Mensual', 'C5'), 'Unapproved OT hours (still payable)'),
     (('02', 'Resumen Mensual', 'D5'), 'Approved OT hours'),
     (('02', 'Resumen Mensual', 'E5'), 'OT hours year to date'),
     (('02', 'Resumen Mensual', 'F5'), 'Status vs. annual OT budget'),
     (('02', 'Resumen Mensual', 'G5'), 'Overtime cost'),
-    (('02', 'Resumen Mensual', 'H5'), 'Worked − scheduled hours (month)'),
+    (('02', 'Resumen Mensual', 'H5'), 'Worked − scheduled hours (this copy)'),
     (('02', 'Registro Horas', 'G4'), 'Scheduled hours'),
     (('02', 'Registro Horas', 'H4'), 'OT hours (FLSA)'),
     (('02', 'Registro Horas', 'I4'), 'OT type'),
@@ -467,6 +480,23 @@ FORMATOS_EN = OrderedDict([
     ('hh:mm', 'h:mm AM/PM'),
 ])
 FMT_TURNOS = 'h:mm AM/PM;;'                    # Shifts!C5:D12: cero (día libre) en blanco
+
+# Ajuste de texto (revisión final): rótulos que se cortaban. (libro, hoja ES, rango) → ajuste + alto de fila
+# calculado (nunca menor que el que ya tenga la fila). Así se ven enteros también en visores que no autoajustan.
+AJUSTE_TEXTO = [
+    ('04', 'Checklist Onboarding', 'B7:B68'),
+    ('B02', 'Calculadora', 'A9'), ('B02', 'Calculadora', 'A12'),
+    ('05', 'Cobertura', 'A48'),
+    ('05', 'Calendario Anual', 'A37:A39'),
+]
+
+# Nombre corto con el que un texto cita otro fichero del kit: file NN "nombre" (un solo nivel, sin subtítulo)
+NOMBRES_CITA = OrderedDict([
+    ('01', 'Restaurant Schedule Template'), ('02', 'Overtime Tracker & Time Log'),
+    ('03', 'Restaurant Labor Cost Calculator'), ('04', 'New Hire Onboarding Checklist'),
+    ('05', 'PTO & Vacation Planner'), ('06', 'Employee Performance Review Form'),
+    ('07', 'Employee Directory & Expiry Tracker'),
+])
 
 # ==========================================================================
 # 11. Reglas US/UK con fuente (SPEC §3). clave → (valor, fuente). [estimado] / [criterio del kit] = no es norma.
@@ -572,6 +602,17 @@ def autotest():
     for k, (val, fuente) in REGLAS_US.items():
         if not fuente:
             err.append('regla sin fuente: ' + k)
+    # límites de Excel en la DV: título ≤ 32, mensaje ≤ 255 (más largo = el fichero «se repara» al abrir)
+    for k, v in DV_MENSAJES_EN.items():
+        lim = 32 if k[3].endswith('Title') else 255
+        if k[3] not in ('error', 'errorTitle', 'prompt', 'promptTitle') or len(v) > lim:
+            err.append('DV_MENSAJES_EN inválido o > %d: %r' % (lim, k))
+    for k, v in DV_NUEVAS.items():
+        if len(v[4]) > 255:
+            err.append('DV_NUEVAS: mensaje > 255 en %r' % (k,))
+    for k, v in CLAVES.items():
+        if len(v) > 255:
+            err.append('clave EN > 255 (literal de fórmula): %r' % v[:40])
     return err
 
 
@@ -654,6 +695,13 @@ def cruzar_censo(p):
     for (c, h, celda) in list(VALORES_EN) + list(POR_CELDA) + list(PARAMETROS):
         if not any(info['corto'] == c and h in info['hojas'] for info in censo['libros'].values()):
             err.append('celda en una hoja inexistente: %s / %s / %s' % (c, h, celda))
+    for (c, h, sq, campo) in DV_MENSAJES_EN:
+        info = next(i for i in censo['libros'].values() if i['corto'] == c)
+        if not any(dv['sqref'] == sq for dv in info['hojas_detalle'].get(h, {}).get('dv', [])):
+            err.append('DV_MENSAJES_EN cita una DV que no está en el censo: %s / %s / %s' % (c, h, sq))
+    for (c, h, rg) in AJUSTE_TEXTO:
+        if not any(info['corto'] == c and h in info['hojas'] for info in censo['libros'].values()):
+            err.append('AJUSTE_TEXTO en una hoja inexistente: %s / %s / %s' % (c, h, rg))
     for (c, h, sq) in list(DV_NUEVAS):
         info = next(i for i in censo['libros'].values() if i['corto'] == c)
         for dv in info['hojas_detalle'][h]['dv']:

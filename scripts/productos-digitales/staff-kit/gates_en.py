@@ -18,11 +18,12 @@ Gates (SPEC §8):
      columnas ocultas; protección (21 hojas, sin contraseña, mismos flags); verdes y desbloqueadas (+3 de D10);
      0 gráficos e imágenes;
   G2 restos: cero español, «€», caracteres fuera de la lista blanca, coma decimal, horas de 24 h, normativa ES
-     (RX_NORMA) e IDs internos en valores, literales, DV (ítem a ítem), CF, formatos, pies y docProps; «°C» solo
-     entre paréntesis tras su °F;
+     (RX_NORMA) e IDs internos (también los «kitgp-v2 · …» de los títulos de DV) en valores, literales, DV (ítem a
+     ítem), CF, formatos, pies y docProps; «°C» solo entre paréntesis tras su °F; citas a otro fichero de UN nivel
+     (file NN "nombre", sin «((» ni «)))»); DV con título ≤ 32 y mensaje ≤ 255 (límites de Excel); DV_MENSAJES_EN;
   G3 formato: paperSize 1 en las 30; fechas del censo con numFmtId 14 o «m/d»; horas con 18; «Shifts» C5:D12 con
      «h:mm AM/PM;;»; ningún otro formato de fecha; pie D18 en las 30; línea de marca D18 donde el ES la tenía;
-     versión D18; docProps; Instructions!B2 = título interior D5;
+     versión D18; docProps; Instructions!B2 = título interior D5; AJUSTE_TEXTO con ajuste y alto de fila;
   G4 claves: cada ítem de DV ∈ CLAVES (o D11); cada celda escrita en un rango con DV de lista es un ítem; las tablas
      de tipos de negocio (03, B02) = la lista de su DV; cada número de una DV numérica, dentro de sus límites;
   G5 CF: tokens EN inyectivos por rango, todos ∈ CLAVES (o sin letras) y mapas.cruzar_censo (ningún mensaje cambia
@@ -30,7 +31,8 @@ Gates (SPEC §8):
   G6 cálculo: <v> en toda <f>, cero errores; caché EN = caché ES (veredictos por CLAVES, números iguales) salvo
      las cifras que la SPEC cambia (D20), que se comprueban con su valor: Shifts!E5:E12 = 8,8,8,9,16,0,0,0; B02 = 7
      FTE, 72,800, 23,356.67, 32.1 %, EXCELLENT; 03 Staffing Forecast!B22 = 23,356.67; la frase de B02
-     Instructions!B16; casos FLSA de D10 en copias (6 × 9 h → 14 h con F3 vacío y con F3 = 8; 4 × 10 h → 0 y 8);
+     Instructions!B16; casos FLSA de D10 en copias con la semana en lunes (B3 = 2): 6 × 9 h → 14 h con F3 vacío
+     y con F3 = 8; 4 × 10 h → 0 y 8; 6 × 9 h de miércoles a lunes → 5 h (la semana corta en lunes);
   G7 reglas: VALORES_EN, PARAMETROS, DV_NUEVAS y FORMULAS_EN = SPEC §3 (mapas.REGLAS_US);
   G8 censo-entregables.py --fail (Letter) y gate-no-latinos.py en 0.
 Sale con código 1 si algún gate falla.
@@ -73,7 +75,11 @@ D11_ITEMS = {x for _es, en in mapas.DV_LISTAS_ESPECIALES.values() for x in en.st
 
 SIGNOS_ES = set('¿¡«»€ºª')
 RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
-                           r'\bD\d{1,2}\b(?=[:,)])|\bTEC-\d+\b')          # TEC-nn: ticket interno del ES (B01)
+                           r'\bD\d{1,2}\b(?=[:,)])|\bTEC-\d+\b|'         # TEC-nn: ticket interno del ES (B01)
+                           r'\b(?:kitgp|grupo[A-Z])-v\d+[a-z]?\b')           # IDs de las DV del ES (revisión final)
+# Citas a otro fichero: file NN "nombre", UN nivel (revisión final: «file 03 (Restaurant … (Payroll & Labor %))»)
+RX_CITA_ANIDADA = re.compile(r'\(\(|\)\)\)|\bfile (?:0\d|BONUS-0\d) \(')
+LIMITE_DV = {'promptTitle': 32, 'errorTitle': 32, 'prompt': 255, 'error': 255}     # Excel
 RX_TILDE = re.compile(r'[áéíóúüñÁÉÍÓÚÜÑ]')
 LISTA_BLANCA_TILDE = {'café', 'cafés', 'entrée', 'entrées', 'sauté', 'sautéed', 'purée', 'jalapeño', 'jalapeños',
                       'crème', 'brûlée', 'résumé', 'résumés', 'naïve'}
@@ -549,12 +555,28 @@ def gateG2(R, carpeta, datos):
             m = RX_ID_INTERNO.search(t)
             if m:
                 R.fallo('%s: ID interno %r en %s: …%s…' % (donde, m.group(0), tipo, t[max(0, m.start() - 30):m.end() + 10]))
+            m = RX_CITA_ANIDADA.search(t)
+            if m:
+                R.fallo('%s: cita anidada %r en %s: …%s…' % (donde, m.group(0), tipo, t[max(0, m.start() - 40):m.end() + 30]))
+            if tipo == 'dv':
+                attr = lugar.rsplit(' ', 1)[-1]
+                if len(t) > LIMITE_DV[attr]:
+                    R.fallo('%s: DV %s de %d caracteres > %d (límite de Excel)' % (donde, attr, len(t), LIMITE_DV[attr]))
+                n['dv_' + attr] += 1
             for motivo, ctx in restos_espanol(t):
                 R.fallo('%s: %s · …%s…' % (donde, motivo, ctx))
             for s in celsius_sueltos(t):
                 R.fallo('%s: °C sin su °F delante · …%s…' % (donde, s))
             if '°C' in t:
                 n['textos_con_celsius_ok'] += 1
+    # DV_MENSAJES_EN: el texto fijado por aparición está en su DV
+    for (corto, h_es, sq, attr), v in mapas.DV_MENSAJES_EN.items():
+        ws = cargar(fichero_en(carpeta, corto))[mapas.HOJAS[h_es]]
+        dvs = [d for d in ws.data_validations.dataValidation if str(d.sqref) == sq]
+        n['dv_mensajes_fijados'] += 1
+        if len(dvs) != 1 or getattr(dvs[0], attr) != v:
+            R.fallo('DV_MENSAJES_EN %s %s DV %s %s = %r ≠ %r' % (corto, ws.title, sq, attr,
+                                                                  getattr(dvs[0], attr) if dvs else None, v))
     for k, v in sorted(n.items()):
         R.dato(k, v)
 
@@ -630,6 +652,18 @@ def gateG3(R, carpeta, datos, mes):
                 R.fallo('%s: docProps %s %r ≠ %r' % (en, k, getattr(p, k), v))
         if ins['B2'].value != mapas.titulo_interior(es):
             R.fallo('%s: Instructions!B2 %r ≠ título interior D5 %r' % (en, ins['B2'].value, mapas.titulo_interior(es)))
+    # revisión final: rótulos con ajuste de texto y alto de fila suficiente (mapas.AJUSTE_TEXTO)
+    for (corto, h_es, rg) in mapas.AJUSTE_TEXTO:
+        ws = cargar(fichero_en(carpeta, corto))[mapas.HOJAS[h_es]]
+        for coord in A.rango(rg):
+            c = ws[coord]
+            if c.value is None:
+                continue
+            n['ajuste_texto'] += 1
+            alto = A.alto_necesario(ws, c.row)
+            if not (c.alignment and c.alignment.wrap_text) or (alto > 15 and (ws.row_dimensions[c.row].height or 0) < alto):
+                R.fallo('%s %s!%s: sin ajuste de texto o fila baja (alto %s < %s)' % (corto, ws.title, coord,
+                                                                                   ws.row_dimensions[c.row].height, alto))
     T0 = censo['totales']
     n_pies = sum(len(hd['cabeceras_pies']) for i in censo['libros'].values() for hd in i['hojas_detalle'].values())
     if n['hojas'] != T0['hojas'] or n['pies'] != n_pies:
@@ -786,11 +820,14 @@ ESPERADOS = OrderedDict([
 # D20: la frase de ejemplo de B02 Instructions!B16 lleva las cifras EN (y el veredicto)
 D20_FRASE = ('B02', 'Instructions', 'B16', ('72,800', '23,356.67', '32.1', 'EXCELLENT'))
 # D10: casos FLSA (SPEC §8 G6) en copias del 02 — (días, horas por día, F3) → horas extra totales
-CASOS_FLSA = [(6, 9, None, 14), (6, 9, 8, 14), (4, 10, None, 0), (4, 10, 8, 8)]
-LUNES_PRUEBA = datetime.datetime(2027, 1, 4)      # semana laboral domingo 3-ene (B3 = 1) → lunes a sábado
+LUNES_PRUEBA = datetime.datetime(2027, 1, 4)      # semana laboral lunes 4-ene (B3 = 2, = rejilla del 01) → lunes a sábado
+MIERCOLES_PRUEBA = datetime.datetime(2027, 1, 6)  # mié-dom (5 × 9 = 45 → 5 h) + lunes 11 en semana nueva (9 → 0) = 5 h;
+#                                                   con la semana en domingo (B3 = 1) daría 0 h: prueba que B3 = 2 manda
+CASOS_FLSA = [(6, 9, None, 14, LUNES_PRUEBA), (6, 9, 8, 14, LUNES_PRUEBA), (4, 10, None, 0, LUNES_PRUEBA),
+              (4, 10, 8, 8, LUNES_PRUEBA), (6, 9, None, 5, MIERCOLES_PRUEBA)]
 
 
-def caso_flsa(carpeta, dias, horas, f3):
+def caso_flsa(carpeta, dias, horas, f3, inicio=LUNES_PRUEBA):
     """Copia el 02, escribe un empleado con `dias` turnos de `horas` h (8:00 AM →), pone F3 y recalcula con
     inject_cache. Devuelve la suma de «Time Log»!H y la lista por fila."""
     tmp = tempfile.mkdtemp(prefix='staff-flsa-')
@@ -804,7 +841,7 @@ def caso_flsa(carpeta, dias, horas, f3):
         for i in range(dias):
             r = 5 + i
             ws['A%d' % r].value = 'FLSA test'
-            ws['B%d' % r].value = LUNES_PRUEBA + datetime.timedelta(days=i)
+            ws['B%d' % r].value = inicio + datetime.timedelta(days=i)
             ws['C%d' % r].value = datetime.time(8, 0)
             ws['D%d' % r].value = datetime.time(8 + horas, 0)
             ws['E%d' % r].value = 0
@@ -890,10 +927,10 @@ def gateG6(R, carpeta, datos, flsa=True):
         R.fallo('05 Annual Calendar B5/C5 = %r / %r (semana 1 en domingo, +7)' % (b5, c5))
     # D10: casos FLSA
     if flsa:
-        for dias, horas, f3, esperado in CASOS_FLSA:
-            tot, det = caso_flsa(carpeta, dias, horas, f3)
+        for dias, horas, f3, esperado, inicio in CASOS_FLSA:
+            tot, det = caso_flsa(carpeta, dias, horas, f3, inicio)
             n['casos_flsa'] += 1
-            R.dato('flsa_%dx%d_F3=%s' % (dias, horas, f3), tot)
+            R.dato('flsa_%dx%d_F3=%s_%s' % (dias, horas, f3, inicio.strftime('%a')), tot)
             if tot is None or abs(tot - esperado) > 0.001:
                 R.fallo('FLSA %d × %d h con F3=%s → %r ≠ %s h (%s)' % (dias, horas, f3, tot, esperado, det))
     for k, v in sorted(n.items()):
@@ -928,7 +965,7 @@ def gateG7(R, carpeta, datos):
         ('ot_semanal 40 h', P[('02', 'Registro Horas', 'D3')] == 40 and '40 h' in RU['ot_semanal']),
         ('ot_semanal 1.5×', V[('02', 'Resumen Mensual', 'D3')] == 1.5 and '1.5' in RU['ot_semanal']),
         ('F3 vacío = federal', P[('02', 'Registro Horas', 'F3')] is None),
-        ('semana laboral 1 = domingo', P[('02', 'Registro Horas', 'B3')] == 1),
+        ('semana laboral 2 = lunes (= rejilla lunes-domingo del 01)', P[('02', 'Registro Horas', 'B3')] == 2),
         ('turno_largo 10 h', V[('01', 'Turnos', 'B2')] == 10 and RU['turno_largo'].startswith('10 h')),
         ('descanso_turnos 10 h', V[('01', 'Turnos', 'B3')] == 10 and RU['descanso_turnos'].startswith('10 h')),
         ('coste_empresa 10 %', V[('03', 'Nóminas', 'C2')] == 0.10 == V[('03', 'Previsión por Servicio', 'B16')]
@@ -1030,6 +1067,17 @@ def _lock(wb):
     wb['Time Log']['B3'].protection = Protection(locked=True)
 
 
+def _dv_titulo_id(wb):
+    for dv in wb['Monthly OT Summary'].data_validations.dataValidation:
+        if str(dv.sqref) == 'B3':
+            dv.promptTitle = 'kitgp-v2 · hourly_rate'
+
+
+def _sin_ajuste(wb):
+    from openpyxl.styles import Alignment
+    wb['Onboarding Checklist']['B14'].alignment = Alignment(wrap_text=False)
+
+
 def _formula_shifts(wb):
     ws = wb['Shifts']
     ws['E5'].value = ws['E5'].value.replace('*24', '')
@@ -1042,6 +1090,10 @@ MUTACIONES = [
     ('G2', '03-labor-cost-calculator.xlsx', lambda wb: _set(wb['Instructions'], 'B3', 'Average pay: 1,400 € per period'), 'moneda'),
     ('G3', '06-employee-performance-review.xlsx', lambda wb: setattr(wb['Review History'].page_setup, 'paperSize', 9), 'paperSize'),
     ('G3', '05-pto-vacation-planner.xlsx', lambda wb: setattr(wb['Annual Calendar']['B5'], 'number_format', 'dd/mm'), 'formato'),
+    ('G2', '02-overtime-tracker.xlsx', _dv_titulo_id, 'ID interno'),
+    ('G2', '03-labor-cost-calculator.xlsx', lambda wb: _set(wb['Instructions'], 'B9', 'See file 02 (Overtime Tracker '
+                                                         '& Time Log (FLSA 40-Hour Week)).'), 'cita anidada'),
+    ('G3', '04-new-hire-onboarding-checklist.xlsx', _sin_ajuste, 'ajuste de texto'),
     ('G4', '01-restaurant-schedule-template.xlsx', lambda wb: _set(wb['Weekly Schedule'], 'B6', 'M'), 'fuera de su DV'),
     ('G5', '02-overtime-tracker.xlsx', _cf_colision, 'colisión'),
     ('G6', 'BONUS-02-restaurant-staffing-calculator.xlsx', lambda wb: _set(wb['Staffing Calculator'], 'B15', 25), 'SPEC'),
