@@ -1,0 +1,63 @@
+### Del kilo de masa a la pieza: el escandallo empieza en la masa
+
+En una churrería no se escandalla la ración: se escandalla el kilo de masa. La razón es sencilla y cambia por completo la forma de hacer las cuentas. La masa es la misma para el churro, para la porra y para la docena que se lleva el vecino del tercero; lo que cambia de un formato a otro es cuántas piezas salen de ella y cuánta masa hay que freír para vender cada ración. Si empiezas por la ración, mezclas dos preguntas distintas (qué cuesta la masa y cuánto de ella acaba en el cliente) y no puedes responder bien a ninguna.
+
+Por eso el libro de la carta de apertura (carta-de-apertura-y-escandallo-churro.xlsx) parte del preparado comercial. Toma lo que declara el vendedor que rinde cada saco y da el coste de un kilo de masa sin IVA: 0,50 €. Como ejemplo de dónde sale ese número, la ficha «Mix churros de lazo 4 kg caja 6 sacos» de Churrofácil (2026) la ofrece a 34,80 € sin IVA por caja, y el rendimiento de masa por saco es el que declara el propio vendedor, no uno medido por nosotros. Cuando pidas tu preparado, ese rendimiento es lo primero que debes comprobar con una tanda real.
+
+Para pasar del kilo a la pieza, El Molinete (la churrería-chocolatería modelada que recorre todo el libro) trabaja con cuatro supuestos. Son supuestos de El Molinete, datos de ejemplo para que el modelo calcule, y no una receta ni «lo normal en una churrería»:
+
+- Los gramos de masa de un churro.
+- Los gramos de masa de una porra, el churro grueso.
+- La merma, es decir, la masa que se fríe y no se vende.
+- Los kilos fritos que salen de un kilo de masa.
+
+El método para sustituirlos por los tuyos es el mismo para los cuatro: pesa diez piezas y divide. Cada pieza pesa lo que pese en tu churrera, con tu dosificadora y con tu churrero, y la hoja no discute con tu báscula. Con esos supuestos, la hoja «Escandallo por kg de Masa» calcula, formato a formato, tres cosas: la masa que se fríe, el aceite que se lleva y la materia en sala y para llevar. La tabla de abajo las recoge.
+
+Una frontera importante: estas cantidades son datos de ejemplo. El Kit de Escandallos Pro y la Guía Food Cost + Ingeniería de Menú enseñan el método general de escandallo, y lo enseñan bien, pero no costean masa frita por kilo, que es precisamente lo que hace este libro.
+
+### La absorción de aceite, en euros por kilo de masa
+
+El aceite es el ingrediente que no figura en ninguna receta y que sí se paga. Cada churro sale de la freidora con una parte del baño dentro, y esa parte hay que reponerla. Para ponerle precio sin inventar nada, el libro necesita dos supuestos declarados: la absorción, expresada como porcentaje del peso frito, y la densidad del aceite. Ninguno de los dos tiene fuente pública: no existe «la absorción del churro», y cualquier cifra suelta que circule por la red es de otra masa, de otra freidora y de otro aceite.
+
+Con esos dos supuestos y el precio del aceite, el libro obtiene los euros de aceite que se lleva cada kilo de masa y los mete en el coste de materia. El precio del aceite vive en su propia celda verde del libro de producción y local, para que lo cambies por el de tu proveedor. Como referencia de partida, Churrofácil (fichas 82 y 90, 2026) publica garrafas de 25 L a 49 € sin IVA, aunque es un proveedor de maquinaria y el único precio de aceite con fuente que hemos encontrado. En la hoja «Absorción de Aceite y Merma», el resultado para El Molinete es de 0,20 € de aceite absorbido por cada kilo de masa.
+
+¿Cuánto pesa ese aceite en la materia de la ración media? En El Molinete, el 6,8 %. Lee esa cifra como lo que es: el resultado de los supuestos del caso, no una medida de tu freidora. Para medir el tuyo hay un método casero y fiable: pesa una tanda de masa antes de freír y pesa lo que sale después. La diferencia, relacionada con el peso frito, es tu absorción. Hazlo con tu aceite, con tu freidora y con tu masa. Si cambias de aceite o de freidora, el número se mueve, y por eso el libro lo deja como celda editable y no como constante.
+
+Aquí no se comparan aceites ni marcas: el pack trabaja con tu aceite, tu precio y tu registro.
+
+### Ración, docena o kilo: lo que deja cada formato por kilo de masa
+
+Con la masa y el aceite costeados, se puede responder a la pregunta que de verdad decide la carta: ¿qué formato deja más dinero por cada kilo de masa que se fríe? La hoja «Ración, Docena o Kilo» lo calcula en euros sin IVA, en los dos lados del cociente: el ingreso sin IVA y la materia sin IVA. Mezclar bases es el error clásico, y por eso el libro no lo permite.
+
+El resultado para El Molinete es nítido. El formato que más deja es la CH2, la media ración de churros de tres unidades: 19,40 € sin IVA por cada kilo de masa. El que menos deja deja 6,81 € sin IVA por kilo de masa. La respuesta se da en euros, no en un porcentaje, porque la pregunta es en euros: un formato puede tener un margen enorme sobre la materia y dejar poco dinero por kilo si su precio por pieza es bajo.
+
+Y aquí viene la parte que sorprende. El formato que menos deja por kilo de masa es el kilo para llevar. La hoja lo explica: se vende por peso frito, y al precio más bajo por pieza. Quien compra un kilo se lleva muchas piezas a un precio unitario inferior al de la ración de sala. Eso no es un error de la carta ni una señal de que haya que quitarlo: es el formato del pedido grande del domingo, el que sostiene la caja cuando entra la cola de la familia entera. Lo que importa es saberlo y ponerle el precio con los ojos abiertos.
+
+Lo que la hoja te deja decidir es cuánto cuesta cada formato en masa, en aceite y en freidora, para que el precio de cada uno sea una decisión y no una costumbre. Cuál le conviene a El Molinete es la decisión 7 del bonus, donde se razona con los números del caso. En tu carta, haz el ejercicio con tus gramos y tus precios: la jerarquía de formatos puede cambiar, y es mejor que cambie en la hoja antes que en la caja.
+
+### Los dos márgenes, cada uno con su definición
+
+Hay dos márgenes en este libro y conviene no confundirlos nunca. Cada uno se nombra con su definición en la misma frase, siempre, porque una cifra de margen sin su definición es una cifra que mide otra cosa.
+
+El margen sobre materia prima es el ticket sin IVA menos la materia y el aceite absorbido, relacionado con el ticket sin IVA. En invierno, El Molinete tiene un margen sobre materia prima del 86,9 %. El margen tras aceite y mano de obra es ese mismo cálculo restando, además, la mano de obra de cada ración. En invierno, el margen tras aceite y mano de obra de El Molinete es del 41,2 %. La hoja «Los Dos Márgenes» los pone uno al lado del otro en el cuadro siguiente.
+
+Ninguno de los dos es la rentabilidad del negocio. No incluyen renta, suministros ni amortización: esa cuenta sale del plan financiero. Presentar el margen tras aceite y mano de obra como beneficio sería prometer algo que el libro no calcula.
+
+Ahora, las dos cifras que circulan por ahí, cada una con su definición y su fuente, para que no las compares con las tuyas a ciegas:
+
+- Loomis Pay, «¿Es rentable montar una churrería?» (07-08-2025), habla de «márgenes superiores al 60 % en producto». Es el margen sobre materia, lo que aquí llamamos margen sobre materia prima, publicado por un proveedor de terminales de punto de venta, con el sesgo comercial que eso supone y sin método publicado. El 85-90 % que circula atribuido a esa página no aparece en ella, y no lo damos por bueno.
+- El «un poquito más del cincuenta por ciento» lo dice de palabra el gestor de La Artesana, citado por El Español (2025). No es un margen sobre materia: es rentabilidad, con fiabilidad baja, y sólo lo usamos como contraste.
+
+Que el margen sobre materia de El Molinete sea alto no debe asustarte: es normal en una churrería, porque la masa es barata. Pero justo por eso sirve de poco por sí solo. Un margen sobre materia del 86,9 % convive con un 41,2 % tras aceite y mano de obra, y la distancia entre uno y otro es la parte del negocio que no se ve en la tienda del proveedor.
+
+La regla para el plan financiero no tiene excepciones: toma el margen sobre materia de TU escandallo y resta la nómina aparte. Si usaras el «poquito más del cincuenta» como margen bruto, contarías la mano de obra dos veces: una al aceptar una cifra que ya la lleva dentro y otra al restarla en la cuenta de resultados.
+
+### La mano de obra por ración: por qué el margen alto no paga la madrugada
+
+Lo caro de una churrería no es la masa: es la madrugada. Una ración de churros cuesta céntimos de masa y aceite, y sin embargo alguien tiene que estar a esas horas de la mañana con la masa hecha y el aceite en su punto. Por eso el libro asigna a cada ración su coste de mano de obra, que sale de dos datos: el coste hora de la plantilla y los minutos que lleva cada ración. Para El Molinete, ese coste es de 0,99 € por ración.
+
+Pon ese 0,99 € al lado de los 0,50 € que cuesta un kilo de masa y de los 0,20 € de aceite por kilo. La comparación es incómoda a propósito: la mano de obra por ración supera a la materia que la compone. Esa es la razón por la que el margen sobre materia, por alto que sea, no paga la nómina, y por la que el margen tras aceite y mano de obra baja tanto en comparación.
+
+El coste hora y el tiempo por ración son supuestos declarados de El Molinete que tú sustituyes por los tuyos. El cuadrante semana a semana y las nóminas son terreno del Kit Gestión de Personal y Turnos; este libro sólo construye la decisión previa, la de cuánto pesa cada ración en horas pagadas.
+
+Falta explicar el cuadre. Este libro va antes que el de turnos y supone el coste hora. Cuando rellenes el libro de turnos, su fila de cuadre compara los dos costes y te avisa si se separan. Si lo hacen, uno de los dos supuestos está mal, y es mejor enterarse en la hoja de cálculo antes de abrir que en la primera nómina (capítulo 13).

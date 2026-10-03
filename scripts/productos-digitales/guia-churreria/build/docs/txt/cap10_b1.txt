@@ -1,0 +1,66 @@
+### La norma del aceite: compuestos polares por debajo del límite, medidos en laboratorio
+
+Antes de hablar de dinero conviene saber qué te va a exigir la norma, porque de ahí sale todo lo demás. La Norma de Calidad para los Aceites y Grasas Calentados se aprobó por la Orden de 26 de enero de 1989 (publicada en el BOE el 31 de enero de 1989) y es norma básica. Su ámbito no deja dudas: nombra las freidurías, los bares, las cocinas de comida para llevar y los puestos de feria, tanto de instalaciones permanentes como de temporada. Una churrería-chocolatería con despacho, con sala o con caseta de feria está dentro, y lo está desde el primer día.
+
+La regla es esta: el aceite de fritura tiene que mantener sus compuestos polares por debajo del límite legal, que es el 25 %, y esa cifra se determina con el método del anexo 1 de la propia orden, una cromatografía en columna que se hace en un laboratorio (Orden de 26 de enero de 1989, arts. 3 y 6, comprobado el 3 de octubre de 2026). Los compuestos polares son lo que va dejando en el baño el calor repetido y el agua de la masa: cuanto más trabaja el aceite, más suben.
+
+Aquí aparece el malentendido más frecuente en las cocinas, y conviene aclararlo sin rodeos. El medidor de mano de compuestos polares es una herramienta útil y la guía te recomienda tener uno. Como referencia de precio, la tienda en línea de Infoagro ofrece el Testo 270 BT a 499 € sin IVA (Infoagro, tienda en línea, 2026; el importe sin IVA es un cálculo nuestro a partir del precio con IVA que muestra la página). Pero hay que ser claros con lo que hace y con lo que no hace:
+
+- Te dice cuándo cambiar el aceite: es una ayuda para decidir, con una lectura que se compara con tu criterio de cambio.
+- Su lectura se apunta en tu registro del aceite, que es lo que enseñas si alguien te lo pide.
+- No prueba que cumples. El límite legal se prueba en laboratorio, con el método del anexo, y un medidor de mano no sustituye esa prueba. Quien escribe en su registro «lectura correcta, cumplo» está afirmando algo que ese aparato no puede demostrar.
+
+Hay además un detalle de lo vivo y lo derogado que cambia cómo hablas de rellenar la cuba. Los artículos de la norma que regulaban las manipulaciones permitidas están derogados (RD 176/2013, art. 46). Dicho en cocina: rellenar la cuba con aceite nuevo es una decisión tuya de oficio, no un permiso que te dé la norma, y tampoco es una prohibición. Lo que sigue vivo es el art. 9 de la Orden de 26 de enero de 1989: prohíbe añadir al baño sustancias extrañas y prohíbe vender el aceite usado para uso alimentario. Esa segunda parte enlaza con lo que verás al final del capítulo: el aceite usado no se vende ni se regala para volver a la cocina de nadie, sale con un gestor.
+
+### Dos aceites por ración: el que se lleva la masa y el que tiras al cambiar
+
+Cuando se calcula el coste del aceite por ración, casi todo el mundo mezcla dos partidas distintas, y mezclarlas lleva a contar dos veces lo mismo o a no contarlo.
+
+La primera es el aceite absorbido: lo que se queda dentro de la masa y se va con el cliente. Ya está dentro del coste de materia de la ración en el libro de la carta, porque es parte de lo que compras para fabricar el producto. La segunda es la renovación: el aceite que tiras al cambiar la cuba cuando ya no te sirve. Eso no se va con el cliente, se va por la puerta de atrás, y lo calcula el libro del aceite (aceite-de-fritura-coste-y-cambio.xlsx).
+
+El plan financiero suma las dos partidas, cada una con su fuente. Y de ahí sale la regla práctica: si metes la renovación también en el escandallo (el costeo) de la ración, la estás contando dos veces. Cada partida vive en un solo sitio.
+
+Con las cifras de la Churrería-Chocolatería El Molinete (un caso modelado, no un negocio real), el libro da esto:
+
+- La renovación del aceite, lo que se tira al cambiar la cuba, cuesta 0,03 € por ración.
+- El aceite total por ración, el absorbido por la masa más la renovación, es de 0,05 €.
+- De ese aceite total, la renovación es el 60 %.
+
+El veredicto del libro del aceite sobre el ciclo de cambio de El Molinete es literal en la hoja Punto Económico de Cambio: «Con tu ciclo, el aceite que tiras al cambiar cuesta más por ración que el que se lleva la masa: cada día que alargues, sin pasar del límite del medidor, se nota». La lectura que importa es esta: cuando el aceite que tiras pesa más que el que se lleva la masa, cada día de cuba cuenta más que la absorción. Quien se obsesiona con que la masa absorba poco aceite está mirando la partida pequeña; la grande es cuántos días trabaja la cuba antes de vaciarla. Los gramos que absorbe la masa son un supuesto de ejemplo para que las fórmulas calculen, y tú pones los de tu masa y tu churrero.
+
+### Cada cuántos días cambias, y cuánto vale un día de cuba
+
+El punto económico de cambio se calcula con el ciclo de El Molinete, que es un supuesto declarado: seis días entre cambios. No es «lo normal» en una churrería ni una duración típica de ningún aceite. Es el número con el que el libro hace las cuentas, y lo sustituyes por el tuyo. La guía no compara marcas ni tipos de aceite ni dice cuánto dura uno: trabaja con tu aceite, tu precio y tu registro.
+
+Como precio de partida, la ficha de un proveedor de maquinaria da un aceite a 49 € por garrafa de 25 L, sin IVA, con oferta de compra de 30 garrafas y pago de 29 (Churrofácil, fichas 82 y 90, 2026). Es el único precio de aceite con fuente que hemos podido sostener, y es de un proveedor de maquinaria, no un precio de mercado. El libro lo lleva en una celda propia, de color verde, y ahí pones tu precio real con tu proveedor.
+
+Con el ciclo de El Molinete, el libro responde a las dos preguntas que de verdad importan:
+
+- Cambiar el aceite un día antes cuesta 50,59 € al mes.
+- Alargar un día el cambio, si el medidor lo permite, ahorra 36,14 € al mes.
+
+La tabla de abajo, la hoja Punto Económico de Cambio del libro del aceite, desglosa el valor de cada día de cuba. Léela como lo que es: te dice cuánto dinero hay en juego, no cuándo cambiar. El día del cambio lo decide la lectura del medidor y tu criterio de oficio, no la tabla. Alargar un día solo tiene sentido si la lectura lo permite; si el medidor te dice que toca cambiar, cambias, aunque el libro marque ahorro.
+
+¿De dónde sale el dato bueno? De tu registro del aceite en el Pack Plantillas APPCC (fichero 09-control-aceite-fritura.xlsx, hoja «Control Aceite»). Contando los días entre dos cambios de ese registro tienes tu ciclo real, y es ese número, no el supuesto de El Molinete, el que debes escribir en el libro. Esta guía no reproduce el registro: lo cita por su fichero y su hoja, porque ese producto ya lo resuelve. Lo que aporta la guía es la decisión previa: saber cuánto dinero se juega en cada día de cuba antes de abrir.
+
+### Si sube el aceite: lo que pierdes al mes y al año
+
+El aceite es una materia prima que se mueve con el mercado, y tu carta no se mueve al mismo ritmo. La pregunta correcta para quien aún no ha abierto es cuánto margen te quita una subida si no tocas el precio de venta.
+
+El libro del aceite trae tres escenarios de subida del precio y calcula, para cada uno, lo que El Molinete pierde de margen al mes y al año, suponiendo que el precio de venta no cambia. Con la primera subida del libro, el margen que se pierde al año es de 507,65 €. Los otros dos escenarios, con su pérdida mensual y anual, están en el cuadro siguiente, en la hoja Escenarios de Precio del Aceite.
+
+Un detalle de método para no equivocarte al leerlo: el margen que se pierde sale del aceite que se COMPRA, es decir, la renovación más la reposición del aceite que se lleva la masa, y no de las raciones. Si calcularas la pérdida multiplicando raciones por una subida por ración, te saldría otra cifra, y sería la equivocada.
+
+Y una regla de higiene que te ahorra un disgusto: el precio del aceite se cambia en una sola celda del libro de la carta. Esa celda lo pasa al libro del aceite y a la calculadora de inversión. Nunca lo cambies en dos sitios a la vez, porque en cuanto dos libros tengan precios distintos para el mismo aceite, ya no sabrás cuál de los dos números cree el plan financiero.
+
+### El gestor del aceite usado: recogida separada, papeles y litros
+
+El otro papel que te pide el aceite llega cuando ya no sirve. El aceite de cocina usado de la hostelería y la restauración tiene recogida separada obligatoria desde el 30 de junio de 2022, también para los residuos comerciales que no gestiona la entidad local (Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular, BOE-A-2022-5809, comprobado el 3 de octubre de 2026). En la práctica significa dos cosas: necesitas un contrato con un gestor autorizado y tienes que archivar el justificante de cada retirada.
+
+La prohibición de verter el aceite por el desagüe no la fija esta ley en tu local: la fijan las ordenanzas municipales, y varían de un ayuntamiento a otro. Es una pregunta que le haces al tuyo, no un dato que demos por sabido.
+
+Como ejemplo de gestor para Madrid, sin relación comercial con nosotros, Reseave se declara gestor autorizado de residuos no peligrosos y recoge el aceite de cocina usado y las grasas alimentarias a cambio de obsequios, servicios gratuitos o valoración económica, con una recogida declarada de 24 horas como máximo, y entrega Documento de identificación, Contrato y Certificado de Eliminación (Reseave, web, 2026). Ese tipo de papeles es justo el justificante que la ley te pide archivar. Es un ejemplo y no una recomendación: pide presupuesto a los gestores autorizados de tu zona.
+
+El libro del aceite calcula los litros que El Molinete entrega al gestor cada mes: 126,7 litros, y su gestor de ejemplo los recoge sin coste. Si el tuyo cobra, ese cargo es un coste fijo más que va a tu plan financiero. Cada retirada se anota en el registro del Pack Plantillas APPCC, en la hoja «Retirada de aceite usado» del mismo fichero, y el libro del aceite solo contrasta los litros del mes: si lo que anotas que entregas no se parece a lo que tu cuba debería generar, algo no cuadra, y es mejor saberlo tú que enterarte cuando te lo pregunten.
+
+El cuadro que sigue deja claro qué es del libro del aceite y qué es del registro del Pack APPCC. La frontera es sencilla: el libro calcula y decide el dinero, el registro guarda la prueba. Mezclarlos es el camino más corto a tener cifras bonitas y papeles vacíos.

@@ -1,0 +1,105 @@
+### Acrilamida: buena práctica en el churro, obligación si fríes patatas
+
+Empecemos por lo que dice la norma y no por lo que se oye en el gremio. El reglamento europeo de la acrilamida, el Reglamento (UE) 2017/2158 de la Comisión, de 20 de noviembre de 2017, por el que se establecen medidas de mitigación y niveles de referencia para reducir la presencia de acrilamida en los alimentos, tiene una lista cerrada de alimentos en su art. 1.2. En esa lista figuran las patatas fritas de patata fresca, los productos de masa de patata, el pan, los cereales de desayuno, la bollería, la pastelería, la repostería y la galletería, el café, los sucedáneos del café y los alimentos infantiles. La palabra «churro» no aparece ni una sola vez en el reglamento. Comprobado el 3 de octubre de 2026.
+
+Falta la mitad de la historia: el reglamento no define «bollería». Por eso no se puede afirmar con rigor ni que el churro entre en esa categoría ni que quede fuera de ella. Cualquiera que te diga con seguridad lo contrario, en un sentido o en otro, está estirando la norma. La frase que sí aguanta una inspección es esta: la ley no te obliga a controlar la acrilamida del churro, y controlarla es buena práctica. Y conviene que la leas dos veces, porque un contenido gratuito de los que circulan por ahí la cuenta al revés y te mete un miedo que el texto del reglamento no respalda.
+
+Lo que sí obliga, y a quién, tiene dos escalones.
+
+- **Si fríes patatas frescas, te toca la parte A del anexo II.** El epígrafe 644.6 de las tarifas del impuesto sobre actividades económicas (comercio al por menor de masas fritas, patatas fritas, preparados de chocolate y bebidas refrescantes, Real Decreto Legislativo 1175/1990, de 28 de septiembre) te faculta para elaborar en el propio establecimiento los productos de churrería y las patatas fritas, siempre que los vendas en tus propias dependencias de venta. Es decir, la licencia fiscal ya te deja freír patatas; lo que ocurre es que, en cuanto las fríes, entras en el ámbito del reglamento. La parte A trae sus medidas de mitigación para las patatas, y esas medidas son tuyas desde el primer día que pongas patatas en la cuba. Aquí no te voy a dar ninguna temperatura de fritura del churro: para el churro no hay ninguna fijada por fuente primaria, y las medidas de la parte A hablan de patatas, no de masa de trigo.
+- **La parte B del anexo II sólo alcanza a quien opera bajo marca o licencia.** Y no a todos los que operan así: sólo a quien lo hace como parte de un funcionamiento interconectado y siguiendo las pautas de quien le suministra de forma centralizada, según el art. 2.3. Escribir «a las franquicias» sin más es una simplificación falsa. Una franquicia que compra libremente sus ingredientes y cuyo franquiciador no le fija un suministro centralizado no encaja por el mero hecho de llevar un rótulo común. Si piensas entrar en una enseña, la pregunta que le haces al franquiciador es concreta: si tu freiduría opera bajo ese esquema de suministro centralizado y qué te exige por escrito.
+
+Para El Molinete, el libro legal de este pack lo resuelve así. La parte A del anexo II: no fríe patatas, así que la parte A no le alcanza por ellas. La parte B: no le alcanza, porque sólo aplica a quien opera bajo marca o licencia siguiendo las pautas de un suministro centralizado (art. 2.3). Fíjate en que la primera casilla cambia el día que decides añadir patatas a la carta; vuelve a ella entonces.
+
+Alrededor de ese mínimo hay tres piezas más, y cada una tiene su nivel, que no es el de una obligación:
+
+- La Recomendación (UE) 2019/1888 de la Comisión, de 10 de noviembre de 2019, sobre el control de la presencia de acrilamida en los alimentos, incluye los churros en su lista no exhaustiva de alimentos en los que se debe controlar. Es una recomendación: orienta, no es vinculante.
+- El Estudio prospectivo EP 01 18 ACR, informe de resultados de acrilamida en alimentos 2018, elaborado por las autoridades sanitarias con las comunidades autónomas y publicado por el Servicio Cántabro de Salud en 2019, recoge que no existe un valor de referencia para las masas fritas como los churros, y analizó churros tomados en restauración y venta ambulante. Traducido: si te mide un laboratorio, no tiene contra qué compararte.
+- La Comisión está revisando el marco de gestión de la acrilamida. Ajusta niveles de referencia y, por primera vez, plantea niveles máximos vinculantes para algunos alimentos seleccionados, en fase de consulta; los churros no se mencionan en lo que hemos leído. Esto es un riesgo de caducidad: lo que escribimos hoy puede cambiar, y por eso el anexo del pack da la fecha de revisión y te pide que la mires antes de imprimir cartas o protocolos.
+
+La consecuencia práctica para quien aún no ha abierto es sencilla. No montes el negocio sobre el miedo a una obligación que no existe, pero tampoco ignores el tema: es el tipo de asunto donde una sola pregunta de un cliente o de un inspector se contesta bien o mal según tengas o no tu criterio por escrito. Una nota breve en el plan de autocontrol que diga «controlamos la acrilamida del churro como buena práctica, no por obligación» deja claro el nivel y te protege de prometer algo que no es.
+
+La tabla de abajo, «La acrilamida en El Molinete: lo que es obligación y lo que es buena práctica», lo deja ordenado fila por fila en la hoja «Alérgenos y Aceite Compartido» del libro checklist-legal-fritura-y-licencias.xlsx.
+
+### Alérgenos de una churrería: gluten siempre, leche en la taza y lo que diga cada etiqueta
+
+La regla de los alérgenos sí es obligación, y no admite versiones blandas. Los catorce alérgenos del anexo II son de información obligatoria, y en un establecimiento como el tuyo se pueden dar de palabra sólo si constan por escrito en el local, a disposición del personal, de la inspección y del cliente, con un cartel visible que avise de que esa información existe. Todo, al menos, en castellano. Está en el Real Decreto 126/2015, de 27 de febrero, por el que se aprueba la norma general relativa a la información alimentaria de los alimentos que se presenten sin envasar para la venta al consumidor final, en sus arts. 4.1, 5.1, 6.2, 6.5 y 10. Comprobado el 3 de octubre de 2026.
+
+Dicho en la barra: no vale que el churrero se sepa de memoria qué lleva cada cosa. Si alguien pregunta, el dependiente puede contestar de viva voz, pero lo que contesta tiene que estar escrito en una hoja que el cliente pueda pedir y que la inspección pueda leer, y tiene que haber un cartel que lo anuncie.
+
+En una churrería de las de verdad hay dos alérgenos que no se discuten:
+
+- **El gluten, siempre.** Está en la masa de trigo del churro y de la porra. No hay versión de la carta donde el gluten no esté.
+- **La leche, en la taza.** El chocolate a la taza de El Molinete lleva leche, así que la leche está declarada en esa fila de la carta.
+
+Todo lo demás depende de la etiqueta de cada producto que compras. Es el punto donde más se equivocan los que abren con prisa: el mismo preparado para masa cambia de composición entre marcas, y hasta entre gamas de la misma marca. Un preparado de churros puede traer huevo, soja o frutos secos en una marca y no en otra; un preparado de chocolate puede llevar leche en polvo, lecitina de soja o trazas de frutos de cáscara. Por eso esta guía no te da una matriz completa de alérgenos de una receta concreta: sería inventarla. Se construye leyendo la etiqueta del producto que de verdad vas a comprar.
+
+El estado de la tabla de El Molinete en el libro legal es una buena radiografía de cómo se queda un negocio recién planteado. Declara el gluten por escrito: sí. Pero siguen pendientes de leer en la etiqueta 21 casillas. Mientras ese número no sea cero, la carta de alérgenos está incompleta, y una carta de alérgenos incompleta no es una carta de alérgenos: es un borrador. El trabajo de cerrarla es tuyo y es previo a la apertura: cuando tengas elegido el preparado de masa, el de chocolate y cualquier relleno o cobertura, pides las fichas técnicas a cada proveedor y rellenas las casillas con lo que dice la etiqueta, no con lo que supones.
+
+La tabla de abajo, «Los alérgenos de la carta de El Molinete, por familia», recoge ese estado en la hoja «Alérgenos y Aceite Compartido» del mismo libro.
+
+Capítulo aparte merece el «sin gluten», porque es la tentación más peligrosa de una carta. «Sin gluten» no es una declaración libre ni una forma de decir «lo hacemos con cuidado». Es un umbral analítico del producto tal como se vende al consumidor final: el Reglamento de Ejecución (UE) n.º 828/2014, en su art. 3 y su anexo, fija un máximo de 20 mg/kg de gluten. Con harina de trigo en el obrador, con la masa del churro en la mesa y con el polvo de la harina flotando en el aire del local, en una churrería casi nunca se puede decir. Y aunque a veces una analítica lo permitiera, no es un argumento de carta: es una promesa que sólo se sostiene con un análisis de laboratorio del producto y con un método que garantice que no cambia de un día a otro. Si pones «sin gluten» en una carta sin ese respaldo, estás prometiendo algo que el reglamento tiene definido con precisión y que tú no puedes demostrar. La alternativa honesta es contar qué lleva cada cosa y dejar que el cliente decida.
+
+### El aceite compartido es contaminación cruzada
+
+El aceite de la freidora es, para esto, parte del equipo. La regla está en el Reglamento (CE) n.º 852/2004, anexo II, capítulo IX, punto 9, en la redacción que le dio el Reglamento (UE) 2021/382: el equipo, los medios de transporte y los recipientes que hayan estado en contacto con sustancias alergénicas no se utilizarán para otros alimentos a menos que se hayan limpiado. Comprobado el 3 de octubre de 2026.
+
+Traslada eso a una cuba de fritura. Lo que has frito en esa cuba pasa al aceite, y lo que hay en el aceite pasa a lo siguiente que frías, porque no hay manera práctica de limpiar el baño entre una tanda y la siguiente. Si hoy fríes churros de trigo y mañana fríes un rebozado con huevo en la misma cuba, ese huevo ya forma parte de lo que lleva tu churro. Pasa igual con un buñuelo relleno de crema, con una croqueta o con unas patatas tratadas con algún aditivo. El cliente alérgico que pide churros no sabe qué más ha pasado por ese aceite, y el que no lo sabe es el que se juega el disgusto.
+
+La decisión que toma El Molinete es la más sencilla y la más robusta: freidora dedicada al churro y a la porra. Así su aceite sólo lleva lo que lleva su masa. Esta es la respuesta de la casilla del libro legal, «¿Freidora dedicada o compartida en El Molinete?»: dedicada al churro y a la porra; el aceite sólo lleva lo que lleva tu masa. Con esa decisión, la carta de alérgenos de la fritura se reduce a la de la masa, y la carta de alérgenos se puede cerrar con menos filas en blanco.
+
+La consecuencia es doble y conviene tenerla clara antes de comprar equipo. Primero: si un día fríes patatas, rebozados o buñuelos de otra masa en la misma freidora, cambian tus alérgenos, y tu carta tiene que cambiar con ellos. Segundo: si las patatas son frescas, te entra además la parte A del anexo II de la acrilamida, de la que hablábamos arriba. Una freidora compartida no es sólo un problema de limpieza; es un problema de alérgenos, de acrilamida y de cartel a la vez.
+
+Esta es la frontera con la segunda mitad del capítulo. Hasta aquí han quedado los peligros del producto: qué lleva el churro, qué pasa con la acrilamida y qué ocurre cuando el aceite es de todos. Desde aquí cambia la pregunta: cómo se organiza el control y cómo se demuestra que lo haces. La calidad del aceite como norma y su coste son otro asunto, y los tienes en el capítulo 10; aquí sólo importa su efecto en los alérgenos.
+
+### El autocontrol simplificado, con un responsable con nombre
+
+Toda empresa alimentaria tiene que tener un procedimiento permanente de autocontrol basado en los principios del análisis de peligros y puntos de control crítico. En un negocio pequeño como el que planteas, ese procedimiento puede aplicarse de manera simplificada, conforme a la Comunicación 2020/C 199/01 de la Comisión, pero con una condición que no se negocia: tiene que haber una persona responsable de su aplicación, con nombre. Lo dice el art. 20 del Real Decreto 1021/2022 (BOE-A-2022-21681), de 21 de diciembre de 2022. Comprobado el 3 de octubre de 2026.
+
+Esa persona suele ser el titular; en una sociedad, quien tú designes. Lo importante es que su nombre esté escrito en el plan, que sepa que lo es y que pueda explicar a un inspector qué hace cada semana para cumplir su parte. Un plan sin responsable con nombre es una carpeta de plantillas, no un sistema de autocontrol.
+
+Hay un matiz del tipo de negocio que montas que también cuenta. Servir chocolate y churros en sala, con taza y plato, es elaborar comidas preparadas. Esa actividad entra en el art. 30 del Real Decreto 1086/2020 (BOE-A-2020-15872) y exige una zona de elaboración separada de la venta. El art. 10 del Real Decreto 1021/2022 y los arts. 2.h) y siguientes del Real Decreto 1086/2020 encuadran la zona de degustación, que es legal. Pero no vale con un mostrador: tu obrador y tu sala son dos zonas que tienen que quedar diferenciadas en el plano que presentas. El registro sanitario de tu comunidad autónoma, que es lo que comunica todo esto a la administración, está en el capítulo 9.
+
+Qué pones dentro del plan lo decide tu actividad, no esta guía. Esto es lo que suele haber en el plan de una churrería-chocolatería pequeña, y lo que tienes en tus plantillas:
+
+- El registro del aceite de fritura, con las lecturas y los justificantes de retirada del gestor de residuos.
+- Las limpiezas y desinfecciones de la zona de elaboración, de la freidora y de la sala.
+- Las temperaturas de conservación de lo que mantienes en frío.
+- La trazabilidad de lo que compras, con el proveedor y la fecha de lo que entra.
+- La gestión de alérgenos: la carta por escrito y el cartel.
+- El registro de la formación del personal.
+
+Todo eso está en el Pack Plantillas APPCC, y por eso esta guía no lo copia. Allí tienes, por ejemplo, el fichero 09-control-aceite-fritura.xlsx con el registro del aceite de fritura. El libro legal de este pack sólo trae las filas del checklist que te recuerdan llevarlos: son los avisos de qué debes tener, no los registros. Duplicarlos aquí sería dejarte con dos versiones del mismo documento y con la duda de cuál es la buena.
+
+### Formación: lo que se acredita es el registro, no un carnet
+
+Sobre la formación hay más folklore que norma. La obligación viva es del empresario: tiene que garantizar que cada persona de su plantilla recibe formación de acuerdo con su actividad laboral y tiene que poder acreditarlo. Es el anexo II, capítulo XII, del Reglamento (CE) n.º 852/2004, y la ausencia de una obligación específica de carné en el Real Decreto 1021/2022. Comprobado el 3 de octubre de 2026.
+
+Lo que sale de ahí tiene dos consecuencias que importan:
+
+- La obligación no se delega en el empleado. Es tuya, y consiste en que cada persona sepa lo que le toca según su puesto: quien fríe necesita saber del aceite y de la contaminación cruzada; quien despacha en barra, de los alérgenos y de la higiene de manos; quien limpia, de la limpieza y desinfección de las zonas.
+- Ningún certificado suelto la sustituye. Un papel con un sello no demuestra que tu persona sepa lo que hace tu negocio. Lo que pide una inspección es el registro de formación: quién, qué contenido recibió y cuándo. Con el contenido y la fecha, para cada persona.
+
+La norma no fija caducidad a la formación. Cuándo toca repetirla es una decisión tuya, y la tienes que tomar y dejar escrita. El libro de El Molinete la fija en 24 meses, como supuesto de la casa: es el valor que usa para el caso modelado, y tú lo sustituyes por el tuyo. No lo pongas porque «la ley lo dice»; ponlo porque tú has decidido que ese es el plazo razonable para tu plantilla, y tenlo escrito.
+
+El registro de formación de El Molinete tiene 5 personas con la formación registrada, y el veredicto del libro es «Registro al día». La tabla de abajo, «El registro de formación de El Molinete», está en la hoja «Registro de Formación» del mismo libro. Cuando incorpores a alguien nuevo, el registro tiene que tener su fila antes de que se ponga delante de la freidora o de la barra, no después.
+
+### El día de la inspección: qué tener a mano
+
+La inspección sanitaria puede llegar sin avisar, y tampoco te va a pedir lo que tú creas importante, sino lo que le toca ver. Lo razonable es que tengas todo localizado en una carpeta, física o digital, y que cualquiera de tu equipo sepa dónde está. Esta es la lista, en el orden en que suele pedirse:
+
+- La comunicación al registro sanitario de tu comunidad autónoma, la que presentaste antes de abrir.
+- El plan de autocontrol, con el nombre de su responsable.
+- El registro del aceite, con las lecturas y los justificantes de retirada del gestor autorizado.
+- La carta de alérgenos por escrito, con su cartel visible y accesible para el cliente.
+- El registro de formación del personal, con contenido y fecha de cada persona.
+
+Con esos cinco papeles al día, la parte sanitaria de la visita se resuelve con tranquilidad. Si falta alguno, el inspector no te pregunta cuánto tardas en tenerlo: lo apunta. Y si tienes algún registro a medias, no lo rellenes de golpe la noche antes con fechas que no son las reales. Es peor que mostrarlo con un hueco y explicar por qué.
+
+Hay otra inspección que también llega, la de consumo, y mira cosas distintas:
+
+- Los precios a la vista, de forma que el cliente los vea antes de pedir.
+- El vaso cobrado aparte, reflejado en el tique, cuando lo cobras como concepto propio.
+- La denominación del chocolate, según lo que diga la etiqueta del preparado que compras. Es la regla del capítulo 3: qué preparado compras y qué dice su etiqueta; si está por debajo del mínimo de cacao o declara grasa vegetal, consulta a tu servicio de consumo antes de imprimir la carta.
+
+La fecha de corte de todo este capítulo es el 3 de octubre de 2026, y las normas que ya verificó la guía de chocolatería se comprobaron el 12 de septiembre de 2026. Es un mapa normativo con su norma y su artículo, no una garantía: el anexo del pack recoge las fechas de revisión de las piezas que pueden moverse, y la acrilamida es la primera de ellas. Lo que dependa de tu ayuntamiento o de tu comunidad autónoma sigue siendo una pregunta que haces tú, no un dato que te doy yo.
