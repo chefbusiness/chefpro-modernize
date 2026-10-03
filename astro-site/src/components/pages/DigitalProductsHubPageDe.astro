@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'So eröffnen Sie einen Churros- und Heißschokoladenladen',
+    slug: '/guia-churreria-chocolateria',
+    description: 'Räumlichkeiten, Produktionsküche, Fritteuse und Zahlen: das komplette Eröffnungsdossier für einen Churros- und Heißschokoladenladen, mit den Excel-Dateien, die Ihnen die Rechenarbeit abnehmen.',
+    features: [
+      '16 Kapitel + regulatorischer Anhang + 8 Excel-Dateien',
+      'Fritteuse, Abluft und Stoßzeit: Kapazität und Standort-Checkliste',
+      'Churros, Porras und dickflüssige heiße Schokolade: Rezeptkalkulation und Margen',
+      'Bonus: ein ausgefüllter Businessplan und 12 gelöste Entscheidungen',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
+    badge: '✨ Neu',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
+  },
+  {
     name: 'Wiederkehrende Aufgaben: Mexikanische Taqueria',
     slug: '/kit-tareas-taqueria',
     description: '11 operative Checklisten für eine mexikanische Taqueria: Al-Pastor-Spieß, Nixtamal- und Tortilla-Herstellung, Salsa-Bar, HACCP und Allergene (EU-Allergenregeln) sowie ein Jahresaufgabenkalender.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'BriefcaseBusiness',
     image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
-    badge: '✨ Neu',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Neu',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
   },
   {
@@ -869,7 +885,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'Coffee', name: 'Churros- und Heißschokoladenladen eröffnen', desc: 'Dickflüssige heiße Schokolade und Churros: Räumlichkeiten, Produktionsküche, Speisekarte, Lizenzen und Zahlen, um mit klarem Kopf zu eröffnen.', tags: ['pdf', 'guides', 'chocolate'], phase: 'Q4 2026' },
   { iconName: 'IceCream', name: 'Businessplan: Handwerkliche Eisdiele', desc: 'Excel-Finanzplan, Gründungsinvestition, Saisonalität und eine Eröffnungs-Checkliste für Ihre Eisdiele.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'Q4 2026' },
   { iconName: 'BarChart3', name: 'Betriebs-Dashboard-Kit', desc: 'Umsätze nach Zeitfenster und Gastraum, durchschnittlicher Bon, Tischumschlag und Produktivität pro Stunde – in einem einzigen Dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Businessplan: Smash-Burger-Laden', desc: 'Vom Smash-Konzept bis zur Gewinnschwelle: Investition, Speisekarte, Kosten und eine Monatsprognose.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },
