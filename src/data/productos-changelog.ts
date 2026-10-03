@@ -480,6 +480,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-03): Gastro Pro Prompts eBook, primera edición inglesa del eBook de prompts
+  // (SPEC pro-prompts-ebook-en). Textos en inglés: los pinta <ProductChangelog lang="en"/> en
+  // src/pages/ProPromptsLibraryEn.tsx.
+  'ai-prompts-for-restaurants': {
+    version: '1.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the eBook: 300 prompts in 3 blocks and 33 sections, written for restaurants and hospitality in the US, the UK and beyond.',
+          'Every agent recommendation uses the names of the AI Chef Pro agents in English; where there is no English agent, the prompt points to a general-purpose model such as ChatGPT or Gemini.',
+          'No currency or country hard-coded: prices, taxes and regulations are placeholders you fill in with your own (for example, the allergen rules that apply where you operate).',
+          'Both bonuses in English: the Prompt Engineering Guide (Word) and the Templates + Cheat Sheet (Excel).',
+          'This dashboard with 76 more prompts in 10 categories, ready to copy.',
+        ],
+      },
+    ],
+  },
   'kit-inventario': {
     version: '2.0',
     updated: '2026-08-23',

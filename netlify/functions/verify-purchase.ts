@@ -22,6 +22,19 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso a la <strong>Pro Prompts Library</strong> está listo. Haz clic en el botón para acceder a tus prompts y descargas:',
     emailCta: 'Acceder a mi Library',
   },
+  // Tienda EN (2026-10-03): gemelo de pro-prompts-ebook, producto independiente con su propio acceso
+  // (mismo patrón que food-cost-templates; NO hereda el fallback legacy del ES: su gate manda
+  // `product`). `lang: 'en'` elige los textos fijos del email (netlify/shared/email-i18n.ts) y la
+  // página de estado cripto /en/crypto-payment; precio en USD (product-prices.ts). El asunto
+  // empieza por «Your access to» para productoLabel().
+  'ai-prompts-for-restaurants': {
+    accessPath: '/en/digital-products/ai-prompts-for-restaurants/access',
+    emailSubject: 'Your access to the Gastro Pro Prompts eBook',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to the <strong>Gastro Pro Prompts eBook</strong> is ready. Click the button to open your Pro Prompts Library with all the prompts and downloads:',
+    emailCta: 'Open my Library',
+    lang: 'en',
+  },
   'kit-escandallos': {
     accessPath: '/kit-escandallos-access',
     emailSubject: 'Tu acceso al Kit de Escandallos Pro',

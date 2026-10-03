@@ -23,6 +23,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard con todos los prompts y descargas:',
     emailCta: 'Acceder a mi Library',
   },
+  // Tienda EN (2026-10-03): gemelo de pro-prompts-ebook (ver verify-purchase.ts).
+  'ai-prompts-for-restaurants': {
+    accessPath: '/en/digital-products/ai-prompts-for-restaurants/access',
+    emailSubject: 'Your access to the Gastro Pro Prompts eBook',
+    emailTitle: 'Access your Pro Prompts Library',
+    emailBody: 'Click the button to open your dashboard with all the prompts and downloads:',
+    emailCta: 'Open my Library',
+    lang: 'en',
+  },
   'kit-escandallos': {
     accessPath: '/kit-escandallos-access',
     emailSubject: 'Tu acceso al Kit de Escandallos Pro',
