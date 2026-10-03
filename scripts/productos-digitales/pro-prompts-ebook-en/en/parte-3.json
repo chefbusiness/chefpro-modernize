@@ -1,0 +1,639 @@
+{
+ "prompts": [
+  {
+   "n": 151,
+   "titulo": "Monthly Restaurant P&L Analysis",
+   "cuerpo": "I'm a restaurant manager and I need to analyze last month's P&L: revenue [X], rent [X], food cost [X%] and labor cost [X%], utilities [X], marketing [X] and other [X]. Interpret these figures, identify the deviations from targets, explain the likely causes and propose the 3 highest-priority corrective actions for next month with their expected impact.",
+   "apps": [
+    "Waste GenCal",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 152,
+   "titulo": "Reservation Management and Floor Optimization",
+   "cuerpo": "As a manager I need to optimize the reservation system for [RESTAURANT NAME] with [NUMBER] tables. Design: a reservation policy (minimum advance notice, deposit policy, walk-in handling), a protocol for nights with a waitlist, a no-show management system, and how to maximize occupancy on slow days of the week.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 153,
+   "titulo": "Weekly Reporting for Management",
+   "cuerpo": "Help me create the weekly reporting template to present to management. It must include: sales vs. target (by day and product), guest metrics (covers, average check, satisfaction score), kitchen KPIs (food cost, waste), relevant incidents of the week, open actions from the previous week and 3 priorities for the following week.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 154,
+   "titulo": "Supplier Management and Negotiation",
+   "cuerpo": "As a manager I handle relationships with [NUMBER] suppliers. I need to review the supplier portfolio to cut costs by [%]. Help me with: supplier evaluation criteria (quality, price, service, reliability), an approval process for new suppliers, a renegotiation pitch for current ones and a backup supplier policy to avoid stockouts.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 155,
+   "titulo": "Restaurant Opening and Closing Protocol",
+   "cuerpo": "Design the complete opening and closing protocol for a [TYPE OF RESTAURANT]. Opening: kitchen tasks (in order), front-of-house tasks, mandatory checks before opening to the public, team briefing. Closing: cash-out and accounting close protocol, cleaning and food safety, facility shutdown and a daily closing report with incidents. Checklist format.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 156,
+   "titulo": "Managing Multicultural Teams",
+   "cuerpo": "My restaurant team includes employees of [NUMBER] different nationalities. I'm having communication and team cohesion difficulties. Design: cultural integration strategies, communication adjustments for different cultural profiles, how to handle culture-based conflicts and how to turn diversity into a strength for the team.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 157,
+   "titulo": "New Location Opening Plan",
+   "cuerpo": "I'm the manager in charge of opening the new [CHAIN/BRAND] location in [CITY]. Design the opening plan: a 90-day pre-opening timeline, the team needed and the hiring and training process, a soft opening plan, a communication strategy for pre-opening and the first weeks, first-month success KPIs and a contingency plan.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 158,
+   "titulo": "Guest Experience: Customer Journey",
+   "cuerpo": "Map the complete customer journey of a guest at [RESTAURANT NAME], from discovery to post-visit. For each touchpoint identify: the current experience, the potential pain point, the improvement opportunity and the concrete action to improve it. Prioritize the improvements by impact on satisfaction and implementation cost.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 159,
+   "titulo": "Managing Events and Groups on the Floor",
+   "cuerpo": "My restaurant is receiving more and more event and group requests. Design: the service package for groups (minimum party size, available menu types, terms), a coordination protocol between front of house and kitchen for events, a standard event order sheet, pre- and post-event communication with the client and how to win more group business.",
+   "apps": [
+    "Catering AI+",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 160,
+   "titulo": "Health Inspection: Total Preparation",
+   "cuerpo": "My restaurant is about to have a health inspection. Help me prepare: a verification checklist for every area (kitchen, storage, walk-ins, locker rooms, dining room), the mandatory documentation I must have at hand (HACCP, temperature logs, staff training records), the points most frequently penalized in inspections and how to fix them before the visit.",
+   "apps": [
+    "Allergen ID",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 161,
+   "titulo": "Pastry Display Cases for the Whole Year",
+   "cuerpo": "I'm a production-kitchen pastry chef and I need to plan the display case assortment for the 12 months of the year. For each quarter: 8-10 individual pastries, 2-3 showpiece cakes, 1-2 exclusive seasonal products. Include a suggested sale price, estimated production time and shelf life for each item. Geared toward getting the most profit out of the production kitchen.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 162,
+   "titulo": "Artistic Sugar Techniques",
+   "cuerpo": "Guide me through artistic sugar techniques for pastry: [TECHNIQUE: pulled sugar/blown sugar/poured sugar/caramelized sugar]. For each technique: the working temperature of the sugar (temperature curve), essential tools, step-by-step process, common problems and their solutions, and how to incorporate it into a commercially viable pastry piece (not just a decorative one).",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 163,
+   "titulo": "No-Added-Sugar Pastry Line",
+   "cuerpo": "I want to develop a pastry line for diabetics and people cutting back on sugar. Design 6 no-added-sugar recipes using natural sweeteners (erythritol, xylitol, stevia, fruit) that keep professional flavor and texture. For each recipe: ingredients with exact weights (grams or ounces), process, texture notes and shelf life. With estimated nutrition labeling.",
+   "apps": [
+    "Creative Pastry",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 164,
+   "titulo": "Production Kitchen Organization for High Output",
+   "cuerpo": "I have a pastry production kitchen that needs to produce [QUANTITY] units/day of [PRODUCT TYPES]. Optimize: the distribution of tasks by employee level (pastry cook, assistant, apprentice), the production schedule (what to do and when so everything is ready for opening), walk-in and freezer management (what goes in frozen/refrigerated/room temperature) and a workflow without bottlenecks.",
+   "apps": [
+    "Creative Pastry",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 165,
+   "titulo": "International Pastry Trends",
+   "cuerpo": "As a pastry chef I want to bring the latest international pastry trends of [YEAR] into my production kitchen. Research and present: 5 restaurant pastry trends, 5 shop/display-case pastry trends and 5 emerging flavor trends. For each trend: description, origin, a recipe or technique to implement it and fit with my local market.",
+   "apps": [
+    "Creative Pastry",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 166,
+   "titulo": "Christmas Pastry Shop Window",
+   "cuerpo": "Design the pastry shop window proposal for the Christmas campaign. Include: 5 star pieces for the campaign (artisan nougat, shortbread cookies, King's Cake, Christmas cake and a surprise piece), a recipe for each with exact weights (grams or ounces) for a production run of [QUANTITY] units, sale price, recommended holiday packaging and a social media communication plan for the campaign.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 167,
+   "titulo": "High-Quality Vegan Pastry",
+   "cuerpo": "Develop a 100% vegan pastry line for [TYPE OF BUSINESS] that doesn't look or taste like a second-rate version. For the following products: genoise-style sponge, buttercream, chocolate ganache, puff pastry and sablée dough; give the exact vegan substitutes (brands if possible) with their equivalencies and process adjustments.",
+   "apps": [
+    "Creative Pastry",
+    "VegChef Plant-Based"
+   ]
+  },
+  {
+   "n": 168,
+   "titulo": "Seasonal Dessert Menu for a Restaurant",
+   "cuerpo": "As a restaurant pastry chef, design the dessert menu for the [SEASON] season. The restaurant's cuisine is [DESCRIPTION]. Create 5 desserts that: dialogue with the chef's culinary style, use seasonal products, offer different temperatures and textures, and can be executed by the team during service. Include the mise en place and plating time for each.",
+   "apps": [
+    "Creative Pastry",
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 169,
+   "titulo": "Cost Management in the Production Kitchen",
+   "cuerpo": "As the pastry chef in charge of the production kitchen I need to reduce production cost by [%]. Analyze these best-selling products: [LIST WITH RECIPES AND CURRENT COSTS]. Identify where the waste and hidden costs are, suggest ingredient alternatives without lowering quality, propose process optimizations to reduce preparation time and calculate the new projected cost.",
+   "apps": [
+    "Waste GenCal",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 170,
+   "titulo": "Couverture Chocolate: Mastering Tempering",
+   "cuerpo": "I need to perfectly master chocolate tempering for my production kitchen. Explain in detail: the physics and chemistry of tempering (cocoa butter crystal forms), the tempering curve for dark, milk and white chocolate (melting, cooling and working temperatures), tempering methods (marble slab, seeding, microwave) and how to verify the temper is correct.",
+   "apps": [
+    "Creative Chocolate Making",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 171,
+   "titulo": "Baker's Formula: Universal Base Recipe",
+   "cuerpo": "Act as an artisan master baker. Develop the baker's formula for [TYPE OF BREAD: country loaf/baguette/rye/whole spelt] with the following conditions: hydration [%], pre-ferment [type and %], flour [type]. Present it in baker's percentage format and in absolute weights for [NUMBER] pieces of [WEIGHT] grams each.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 172,
+   "titulo": "Diagnosing Dough Problems",
+   "cuerpo": "I'm having the following problems with my bread: [DESCRIPTION OF THE PROBLEM: dense crumb/pale crust/tearing/excessive sourness/poor fermentation]. Act as a bread doctor and diagnose: the possible causes of the problem (flour, hydration, fermentation, oven), how to confirm it, the necessary corrections to the recipe and process and how to prevent it in future bakes.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 173,
+   "titulo": "Daily Bakery Production Plan",
+   "cuerpo": "I have a bakery that opens at [TIME] and I need everything to be ready by then. I produce: [LIST OF BREADS WITH QUANTITIES]. Design the backward production plan from opening time, showing at what time I must: mix each dough, do the folds, shape, move into the final proof chamber, bake, and the optimal order to use the oven efficiently.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 174,
+   "titulo": "Alternative Flours: Usage Guide",
+   "cuerpo": "I want to add alternative flours to my bakery offering: [LIST: spelt/rye/kamut/oat/corn/rice]. For each flour: protein characteristics (gluten, if any), the maximum recommended percentage in a blend with wheat, necessary hydration adjustments, impact on fermentation and resulting flavor, and a specific bread where it shines.",
+   "apps": [
+    "Creative Bakery",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 175,
+   "titulo": "Laminated Pastry: Complete Technique",
+   "cuerpo": "I want to master laminated viennoiserie (such as danish, croissant and pain au chocolat). Give me the complete technique for: the base dough (détrempe) with exact proportions, the lamination butter (percentage, ideal temperature, how to prepare it), the number and type of folds, mandatory resting times between folds, the shaping technique for each piece and the perfect bake.",
+   "apps": [
+    "Creative Bakery",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 176,
+   "titulo": "Signature Bread with a Regional Ingredient",
+   "cuerpo": "Design a signature bread that incorporates [REGIONAL INGREDIENT: olive oil/olives/quince paste/local nuts/aromatic herbs] as the distinguishing element. Include: the bread concept and storytelling, the complete baker's formula, the process for incorporating the ingredient (timing and method), the expected result in flavor and texture and a suggestion for the ideal accompaniment.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 177,
+   "titulo": "Cold Fermentation: Technique and Benefits",
+   "cuerpo": "I want to implement cold fermentation (retard) in my production kitchen. Explain: the technical benefits (flavor development, gluten structure, digestibility), how to adapt my current recipes to cold fermentation, optimal times and temperatures for different dough types, walk-in logistics for staggered production and a comparison of results vs. room-temperature fermentation.",
+   "apps": [
+    "Creative Bakery",
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 178,
+   "titulo": "Stock and Waste Management in the Bakery",
+   "cuerpo": "In my bakery I have an end-of-day overproduction problem with waste of [%] of total output. Design an adjusted production management system: how to better predict demand by day of the week, what to do with leftover bread (second life, donation, last-minute discount), and how to communicate end-of-day scarcity as an advantage of craftsmanship.",
+   "apps": [
+    "Waste GenCal",
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 179,
+   "titulo": "Sourdough Bread Certification",
+   "cuerpo": "I want to officially certify that my bread is 100% sourdough with no additives. Research: what certifications exist for artisan sourdough bread (national and international), the requirements of each, cost and process to obtain them, how to visually differentiate the products on the label and packaging, and how to communicate it in marketing so the customer understands and values it.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 180,
+   "titulo": "Bread Workshop for Customers",
+   "cuerpo": "I want to run bread workshops for customers at my bakery on Saturday mornings. Design: the structure of a 3-hour workshop (theory, practice, tasting), which bread to teach at each level (beginner, intermediate), the list of materials needed, the workshop price with a profitability analysis and a communication strategy to fill it every week.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 181,
+   "titulo": "Signature Cocktail Creation",
+   "cuerpo": "Act as a creative mixologist with 10 years of experience. I want to develop a signature cocktail for [BAR/RESTAURANT NAME] that represents [CONCEPT/STORY/PLACE]. Include: the cocktail name, ingredients with measurements in oz (and ml), preparation process (technique, glass, ice, garnish), a narrative story for the bartender to tell the guest and estimated production cost.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 182,
+   "titulo": "Seasonal Cocktail Menu",
+   "cuerpo": "Design the [SEASON] cocktail menu for [BAR NAME] with [NUMBER] items. It must include: cocktails with alcohol (4-5), premium non-alcoholic cocktails (2-3) and shots/aperitifs (2). For each cocktail: name, ingredients with exact measurements, technique, presentation and sale price. Use seasonal fruits, herbs and flavors as the common thread.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 183,
+   "titulo": "Cocktail Batching for High Demand",
+   "cuerpo": "At my bar I serve [NUMBER] glasses of [COCKTAIL] during a high-demand service. I need to batch them so I can serve quickly with consistent quality. Explain: how to scale the recipe to [LITERS] of batch, which ingredients to add at the moment of service (never in the batch), how to store the batch and for how long, and how to keep the quality the same as one at a time.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 184,
+   "titulo": "Artisan Macerations and Infusions",
+   "cuerpo": "I want to create artisan macerations and infusions for my bar using [INGREDIENTS: fruits, spices, herbs, flowers]. For each maceration: the ideal alcohol base (neutral vodka/gin/pisco/white rum), ingredient-to-liter-of-alcohol ratio, maceration time, optimal temperature and location, filtering process and stability of the final product. Suggest applications in specific cocktails.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 185,
+   "titulo": "High-End Non-Alcoholic Cocktails",
+   "cuerpo": "Design a proposal of 5 high-end mocktails for non-drinking guests. I don't want fruit sodas; I want complexity, aromatic layers and the same sophistication as in the cocktails with alcohol. For each mocktail: ingredients (artisan syrups, non-alcoholic ferments, NA bitters, technical juices), preparation and presentation. With a suggested sale price.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 186,
+   "titulo": "Cocktail and Cuisine Pairing",
+   "cuerpo": "Work with me to develop the pairing program between the cocktails at my bar and the restaurant's dishes. The dishes on the menu are: [LIST]. For each dish propose 1-2 cocktails (with or without alcohol) that harmoniously complement or contrast the flavors. Include the presentation narrative so the front-of-house team can communicate it with confidence.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 187,
+   "titulo": "Bar Inventory Management",
+   "cuerpo": "I need to optimize my bar inventory. I currently carry [NUMBER] spirits SKUs and I'm losing money on: open bottles that expire, team over-pouring and a lack of key products. Design: a pour control system (mandatory jigger, standard measures), a list of the 20 essentials of any well-stocked bar and a weekly inventory protocol.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 188,
+   "titulo": "Bar Technique Training",
+   "cuerpo": "I'm a senior bartender and I must train my team of [NUMBER] people in bar techniques. Design the 4-week training program: Week 1 (mixology basics and spirits knowledge), Week 2 (preparation techniques and equipment), Week 3 (menu recipes + mise en place), Week 4 (guest service + selling). With a final practical evaluation.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 189,
+   "titulo": "Spirits Tasting Experience",
+   "cuerpo": "I want to organize spirits tasting nights at my bar: [TYPE: whiskies/rums/mezcals/gins]. Design: a selection of 4-5 references with a logical progression (from smooth to complex), the host's script (introduction of each spirit, tasting vocabulary, distillery history), a tasting sheet for the participant, the event price and a snack pairing to go alongside.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 190,
+   "titulo": "Natural and Orange Wine List",
+   "cuerpo": "The owner wants to add a selection of natural wines and orange wines to the menu. Explain: what natural and orange wines are (sensory profile, differences from conventional wine, how to present them to skeptical guests), criteria for selecting references, 6-8 specific wines recommended to start with, serving temperature and specific food pairing for each.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 191,
+   "titulo": "Building a Wine List",
+   "cuerpo": "Act as a sommelier with experience in high-end restaurants. I need to build the wine list for [TYPE OF RESTAURANT] with a budget of [AMOUNT] in initial stock. Design: the structure of the list (by region/grape/style), number of references per category, cost and sale price ranges, the industry-standard markup, and the 20 essential references to start with.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 192,
+   "titulo": "Wine Service and Presentation at the Table",
+   "cuerpo": "Train the front-of-house team in correct wine service. Include: the presentation protocol (showing the bottle, opening, first pour, refilling), serving temperature by wine type (complete table), glass type by grape/region, how to detect and present a faulty wine, and simple vocabulary to describe a wine to the guest without unnecessary jargon.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 193,
+   "titulo": "Pairing for a Tasting Menu",
+   "cuerpo": "Design the wine pairing for the following tasting menu: [DESCRIPTION OF EACH DISH ON THE MENU]. For each wine: appellation, winery, vintage if relevant, why it pairs with that dish (a technical but accessible argument), serving temperature and cost price. Also include an alternative non-alcoholic pairing option for each course.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 194,
+   "titulo": "Restaurant Wine Cellar Management",
+   "cuerpo": "I'm the sommelier in charge of the wine cellar at [RESTAURANT NAME] with a stock of [NUMBER] references and a value of [AMOUNT]. Design: a cellar inventory control system (receipts, issues, rotation), reorder criteria for each category, classification by aging potential vs. quick consumption, and how to reduce the capital tied up in stock without running out of key references.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 195,
+   "titulo": "Blind Tasting: WSET Methodology",
+   "cuerpo": "I want to train my blind tasting skills using the WSET Level 3-4 methodology. Design a 3-month training plan: weekly tasting exercises (region, grapes, styles to work on), systematic tasting sheets using the WSET system, how to identify faults, how to train olfactory and gustatory memory, and how to prepare a structured identification argument.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 196,
+   "titulo": "Wine Training for the Front-of-House Team",
+   "cuerpo": "I need to train the front-of-house team in basic wine concepts so they sell better. Design a 3-week training program (1 hour per week): Week 1 (wines of the world: the main regions on a map), Week 2 (our list: each wine with its story and pairing), Week 3 (selling technique: how to recommend wine without being pushy). With a practical tasting each week.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 197,
+   "titulo": "Themed Pairing Event",
+   "cuerpo": "Design the gastronomic pairing event [THEME: Old World vs. New World/natural wines/champagne vs. sparkling wines/sherry wines] for [NUMBER] people at [PRICE] per person. Include: a selection of wines with their story, an adapted 4-course menu, the sommelier's script for each wine, a tasting sheet, materials for the attendees and a communication plan for the event.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 198,
+   "titulo": "Wine Selection by Guest Budget",
+   "cuerpo": "A client tells me they want to spend [AMOUNT] on wine for a table of [NUMBER] guests who will order [TYPE OF DISHES]. Help me to: recommend the best combination of wines (white, red, possibly sparkling) within the budget, justify the selection to the client, plan the service protocol and suggest how to add value without exceeding the budget.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 199,
+   "titulo": "Wines of the World: Market Trends",
+   "cuerpo": "Research current wine market trends in my country: which appellations are growing, which wine styles the millennial consumer is looking for, the rise of natural and biodynamic wines, and the most interesting rediscovered native grapes. Include how to adapt a fine-dining restaurant's wine list to these trends with examples of specific wineries.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 200,
+   "titulo": "Champagne and Sparkling Wines: Complete Guide",
+   "cuerpo": "I need to master the world of sparkling wines to improve sales at my restaurant. Create the complete guide to: types of sparkling wine (pét-nat, crémant, prosecco, cava and champagne), the production method of each, sweetness categories (brut nature to demi-sec), serving temperatures, glass types, specific food pairing for each style and selling points for the floor staff.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 201,
+   "titulo": "Developing a Bonbon Collection",
+   "cuerpo": "Act as an artisan chocolatier with a creative focus. Design a collection of 12 bonbons for [SEASON/OCCASION] with a conceptual common thread: [THEME: flavors of the world/botanical garden/spice route]. For each bonbon: name, type of outer chocolate, description of the filling (ganache/praline/gianduja recipe), decoration technique and suggested sale price.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 202,
+   "titulo": "Praline and Gianduja: Master Techniques",
+   "cuerpo": "Explain in detail how to make artisan praline and gianduja. For the praline: types (wet, dry, mixed), nut-to-sugar proportions, nut roasting process, caramelization, grinding and final texture. For the gianduja: differences from praline, cocoa percentage, incorporation of the chocolate and the critical refining step. With base recipes and variations.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 203,
+   "titulo": "Single-Origin Cacao: In-Depth Knowledge",
+   "cuerpo": "Research the most highly regarded single-origin cacaos in fine chocolate making: [ORIGIN 1: Peru, Venezuela, Madagascar, Vietnam]. For each origin: specific region and microclimate, cacao variety (criollo/trinitario/forastero), expected aromatic profile, reference plantations or cooperatives, market price and how these cacaos influence the bar recipe (tempering and conching adjustments).",
+   "apps": [
+    "Creative Chocolate Making",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 204,
+   "titulo": "Chocolate Shop Packaging and Presentation",
+   "cuerpo": "Design the packaging strategy for my artisan chocolate shop [NAME]. Include: product naming and tagline, a packaging line for: individual bonbons, gift box (6 and 12 pieces), artisan bar and corporate pack. For each format: sustainable materials, mandatory label information, recommended aesthetic and packaging price range.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 205,
+   "titulo": "Bean-to-Bar Route: Complete Process",
+   "cuerpo": "Explain the complete bean-to-bar process for making chocolate from cacao beans to the finished bar. Phase by phase: receiving and selecting the cacao, roasting (roast profiles and their impact on flavor), winnowing, pre-grinding, refining in a melanger (optimal time), conching (temperature and duration for different profiles), tempering and molding.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 206,
+   "titulo": "Managing Corporate Chocolate Orders",
+   "cuerpo": "My artisan chocolate shop wants to develop the corporate channel (business gifts). Design: corporate packages by budget (basic/premium/luxury), a custom order process (lead times, minimum quantities, personalization options), a standard commercial proposal, how to prospect corporate clients and which times of year to concentrate corporate sales.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 207,
+   "titulo": "Chocolate and Fine Spirits Pairing",
+   "cuerpo": "Design a chocolate-spirits pairing experience for [NUMBER] people. Select 4-5 pairs of: chocolate type (% cacao, origin, flavor profile) + spirit (single malt whisky/aged rum/mezcal/armagnac). For each pairing: why they work together (shared aromatic compounds), tasting order and how to present it to the participant with storytelling.",
+   "apps": [
+    "Creative Chocolate Making",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 208,
+   "titulo": "Chocolate with Unconventional Ingredients",
+   "cuerpo": "I want to develop a line of bars and bonbons with unconventional ingredients that surprise: [UNUSUAL INGREDIENT: miso/olive oil/cheese/matcha tea/flowers]. For each creation: the pairing rationale (why it works), a detailed recipe (type of chocolate, inclusion percentage of the special ingredient), preparation technique and a suggested name for the collection.",
+   "apps": [
+    "Creative Chocolate Making",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 209,
+   "titulo": "Production Scale-Up: From Artisan to Semi-Industrial",
+   "cuerpo": "My artisan chocolate shop is growing and I need to scale production. I currently produce [QUANTITY] kg/week. I want to reach [QUANTITY]. Help me with: what additional machinery I need (with estimated cost), how to keep artisan quality while scaling, which processes to automate and which must stay manual, and the impact on unit production cost.",
+   "apps": [
+    "Creative Chocolate Making",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 210,
+   "titulo": "Chocolate Festival and Fair Strategy",
+   "cuerpo": "I'm going to take part in [NAME OF CHOCOLATE FAIR/FESTIVAL]. Design the complete strategy: which products to bring (selection criteria for a fair audience), booth presentation (visual concept, materials, shelf height), a live demonstration strategy to capture attention, how to manage stock during the fair and how to turn visitors into repeat customers.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 211,
+   "titulo": "Business Plan for a First Restaurant",
+   "cuerpo": "I want to open my first restaurant. I have [AMOUNT] in starting capital and the concept is [DESCRIPTION]. Help me build the complete business plan: local market analysis, estimate of the investment needed (renovation, equipment, licenses), month-by-month sales forecast for the first year, break-even point, financing sources other than my own capital and the main risks to mitigate.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 212,
+   "titulo": "Choosing the Location: Key Criteria",
+   "cuerpo": "I'm going to look for a space to open a [TYPE OF FOOD & BEVERAGE BUSINESS]. Help me define: the criteria for evaluating a space (minimum square footage, layout, exhaust hood venting, electrical capacity, ventilation, acceptable cost per square foot in [CITY]), areas of the city with the best potential for my concept, red flags to spot in a space before signing and a due diligence checklist for the space.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 213,
+   "titulo": "Financing and Grants for the Restaurant Industry",
+   "cuerpo": "I need financing for [PROJECT: opening/renovation/equipment/digitalization] in my restaurant business in [REGION/STATE]. Research: government-backed loan programs applicable to the restaurant industry, regional and national grants for restaurants and entrepreneurship, supranational or regional development funds that apply, and the terms of each (amounts, interest rate, term, requirements).",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 214,
+   "titulo": "Negotiating the Takeover of a Restaurant",
+   "cuerpo": "I want to buy an existing [TYPE OF RESTAURANT] in [AREA]. The owner is asking [AMOUNT]. The business has annual revenue of [X] with a [X%] margin. Help me to: assess whether the asking price is fair (industry multiples), critical due diligence points (debts, contracts, condition of the facilities, health inspection history), price negotiation arguments and the structure of the deal.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 215,
+   "titulo": "Expansion: Second Location or Franchise",
+   "cuerpo": "My restaurant [NAME] is doing well and I want to expand. I have two options: open a second company-owned location or start franchising the concept. Analyze both options for my specific case: [DESCRIPTION OF THE CURRENT BUSINESS]. For each option: investment needed, time to profitability, main risks, management complexity and which one you recommend given my profile.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 216,
+   "titulo": "Revenue Diversification Strategy",
+   "cuerpo": "My restaurant depends almost 100% on lunch/dinner service and I want to diversify revenue. Analyze these possible additional lines for [TYPE OF RESTAURANT]: own delivery, off-premise catering, a shop of own products, culinary workshops, private events, brand merchandise. For each: initial investment, revenue potential, complexity and fit with my current model.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 217,
+   "titulo": "Business Crisis Management",
+   "cuerpo": "My restaurant is in an economic crisis: revenue has dropped [%] over the last [MONTHS] because of [CAUSE]. I have [MONTHS] of cash reserves. Design the rescue plan: immediate cost-cutting actions without destroying the business, short-term strategies to increase revenue, communication to employees and suppliers and when to consider extreme options.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 218,
+   "titulo": "Balancing the Chef-Owner Role",
+   "cuerpo": "I'm a chef and also the owner of the restaurant. I struggle to separate the roles and I'm in everything, exhausted and unable to delegate. Design: how to structure my time between management and cooking, which decisions I should make and which to delegate, how to build a trusted team to delegate to, and how to transition from a chef who cooks to a chef-owner who leads without losing the culinary essence.",
+   "apps": [
+    "Mental Coach",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 219,
+   "titulo": "Chef Personal Brand Strategy",
+   "cuerpo": "I want to build my personal brand as a chef specializing in [SPECIALTY] for [GOAL: landing consulting work/attracting clients/getting sponsors/publishing a book/giving talks]. Design: my brand's unique value proposition, platforms to build it on (Instagram, LinkedIn, TikTok, podcast), the type of content I should create weekly, how to monetize the brand and 12-month milestones.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 220,
+   "titulo": "Selling the Business: Preparation and Valuation",
+   "cuerpo": "I want to sell my restaurant [BRIEF DESCRIPTION] within the next 2 years. Help me to: prepare the business to be more attractive to buyers (what to improve in financials, processes, contracts), how to value it correctly (valuation methods common in the restaurant industry), where to find potential buyers and how to structure the sale process while protecting confidentiality.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 221,
+   "titulo": "Catering Production for 500 Guests",
+   "cuerpo": "I'm a catering chef and I'm going to produce an event for [NUMBER] guests with the following menu: [DESCRIPTION]. Design the complete production plan: what to prepare [DAYS] ahead, what the day before, what the morning of the event and what on site. Include: refrigeration equipment for transport, reheating times, staff needed per station and service order.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 222,
+   "titulo": "Catering for an Outdoor Event",
+   "cuerpo": "I have an outdoor catering event at [TYPE OF VENUE] for [NUMBER] guests in [MONTH]. The challenges are: there's no on-site kitchen, the outside temperature is [APPROX.], and I must keep all food safe. Design: a menu adapted to the conditions (what to avoid, what works well outdoors), necessary equipment, cold transport, space setup and a food safety protocol.",
+   "apps": [
+    "Catering AI+",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 223,
+   "titulo": "Multicultural Menu for an International Event",
+   "cuerpo": "I'm going to cook a banquet for an international event with attendees from [LIST OF COUNTRIES/CULTURES]. Design a menu that: respects the cultural and religious restrictions of each group (halal, kosher, Hindu vegetarian, etc.), incorporates flavors everyone can enjoy, is visually global and festive, and is operationally executable in catering. With allergen information for each dish.",
+   "apps": [
+    "Catering AI+",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 224,
+   "titulo": "Briefing with the Event Client",
+   "cuerpo": "I'm about to have the briefing meeting with a client for a [TYPE] event. Prepare: the complete questionnaire I should ask them (type of event, number of guests, budget, restrictions, desired style, venue, time, protocol), the documents I should ask them for (venue floor plan, confirmation of dietary restrictions, point of contact on the day of the event) and how to close a price in that same meeting.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 225,
+   "titulo": "Managing Temporary Staff in Catering",
+   "cuerpo": "For my next event I'm hiring [NUMBER] temporary cooks who don't know my way of working. Design: a 30-minute onboarding briefing for the day of the event, assignment of stations and clear responsibilities, communication protocols during service (signals, channels), how to ensure quality and consistency with new staff and what to do if someone fails.",
+   "apps": [
+    "Catering AI+",
+    "Mental Coach"
+   ]
+  }
+ ]
+}
