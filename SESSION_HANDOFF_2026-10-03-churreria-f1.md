@@ -132,3 +132,15 @@ cripto, Miselup, DataFast, WhatsApp). `documentos.py`: 4 falsos positivos de gat
 `VITE_STRIPE_PAYMENT_LINK_GUIA_CHURRERIA_CHOCOLATERIA` (builds) → `python3 scripts/productos-digitales/sync-payment-links.py`
 en la rama → merge → `gate-flujo-postpago.py --only guia-churreria-chocolateria` LIVE + `robots-gate.py --live`.
 Pendientes aparte: post `ia-churrerias-guia-completa` (SPEC §7.2), hermana v1.0.1 (D7), correo del 13-nov (desde el 14-oct).
+
+### LIVE (3-oct, tarde, Claude Code)
+
+Payment Link `https://buy.stripe.com/7sY14gdkMeAK3UXejH6oo1A` → env `VITE_STRIPE_PAYMENT_LINK_GUIA_CHURRERIA_CHOCOLATERIA`
+(builds) → `sync-payment-links.py` (53) → **PR #105 fusionado** (`6615d775`). Verificado en producción:
+`gate-flujo-postpago.py --only guia-churreria-chocolateria` **0 fallos** (13/13 descargas, E-f cripto), `robots-gate.py --live`
+verde, sitemap + SEO server-side + tarjeta del hub, y `crypto-checkout` **200** con factura sin pagar de
+`qa-churreria@aichef.pro` (purgar con `crypto-report?purge_unpaid_before=` cuando haya `ADMIN_PASSWORD`).
+Nota: `fase6-gate.py` recibe la URL BASE; sus 3 fallos son conteos congelados de la migración (sitemap, hreflang de la home).
+
+**Pendiente:** correo de lanzamiento (hueco 13-nov 08:00Z, programable desde el 14-oct) · post `ia-churrerias-guia-completa`
+(SPEC §7.2) · hermana `guia-chocolateria-obrador` v1.0.1 (D7, su correo el 18-nov).
