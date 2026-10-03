@@ -3,6 +3,7 @@
 // española, `usd` en la internacional (una sola por producto). Es el importe con el que crypto-checkout crea
 // la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).
 export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
+  'ai-prompts-for-restaurants': { usd: 14 },
   'food-cost-templates': { usd: 19 },
   'guia-chocolateria-obrador': { eur: 65 },
   'guia-churreria-chocolateria': { eur: 65 },

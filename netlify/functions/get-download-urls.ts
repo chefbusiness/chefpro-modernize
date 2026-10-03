@@ -38,6 +38,14 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-mermas': '/dl/food-cost-templates/BONUS-actual-vs-theoretical-food-cost.xlsx',
     'bonus-guia': '/dl/food-cost-templates/BONUS-reduce-food-cost-30-days.pdf',
   },
+  // Tienda EN (2026-10-03): Gastro Pro Prompts eBook. A diferencia de su gemelo ES (rama especial
+  // de env vars PDF_*_URL, abajo), sale por este mapa estándar. Claves = las de DOWNLOADS en
+  // src/pages/ProPromptsLibraryEn.tsx (los mismos nombres de tarjeta que el ES: ebook/bonus1/bonus23).
+  'ai-prompts-for-restaurants': {
+    'ebook': '/dl/ai-prompts-for-restaurants/gastro-pro-prompts-ebook.pdf',
+    'bonus1': '/dl/ai-prompts-for-restaurants/bonus-1-prompt-engineering-guide.docx',
+    'bonus23': '/dl/ai-prompts-for-restaurants/bonus-2-3-templates-cheat-sheet.xlsx',
+  },
   'pack-appcc': {
     'temp-diario': '/dl/pack-appcc/01-registro-temperaturas-diario.xlsx',
     'temp-recepcion': '/dl/pack-appcc/02-registro-temperaturas-recepcion.xlsx',

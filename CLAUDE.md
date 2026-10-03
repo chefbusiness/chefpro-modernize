@@ -515,8 +515,11 @@ El español lleva **siempre** la delantera: cada producto se construye desde cer
 para cada idioma futuro se **duplican** su landing, su dashboard y sus ficheros (xlsx, pdf, docx, md…) —y los hubs— y
 se **traducen**, adaptando las variables del mercado nativo (terminología, moneda, impuestos, unidades, normativa o
 anexos, benchmarks, ejemplos). **Diseño, estructura, maquetación y componentes son los mismos**: `cp` del componente
-ES y traducir encima; ninguna plantilla ni página nueva. Si una adaptación obliga a cambiar la estructura, preguntar
-antes. Origen: el hub `/en/digital-products` se hizo con una plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo.
+ES y traducir encima; ninguna plantilla ni página nueva. Si una adaptación obliga a cambiar la estructura **del diseño**
+(landing, dashboard, componentes, maquetación), preguntar antes. Origen: el hub `/en/digital-products` se hizo con una
+plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo. **Lo que exige la norma del mercado DENTRO de un entregable
+(una columna, un desplegable, una celda de parámetro: FDA Food Code + notas UK) ya está decidido** desde el piloto
+(`TIENDA-INTERNACIONAL.md` §1): se aplica, se declara en la SPEC y no se pregunta (John, 3-oct-2026, «ojo con eso»).
 **Definición de «nativo» (John, 24-sep-2026):** que el producto esté **traducido al idioma en el que queremos que esté disponible**, con naturalidad. NO significa construir componentes, hooks ni páginas nuevas, ni reinventar la rueda.
 
 ### 🔴🔴 PROPORCIONALIDAD: el recurso escaso es el TIEMPO de John (3-oct-2026) — manda sobre todo lo de abajo

@@ -2,8 +2,10 @@
 // /pro-prompts-ebook — PORT one-off de la SPA src/pages/ProPromptsEbook.tsx. Thin wrapper:
 // pasa el SEO (valores EXACTOS del Helmet de la SPA) a BaseLayout y el stripeLink al template.
 //
-// SOLO ES: la SPA hardcodea el Helmet en español y esta ruta NO tiene variantes de idioma →
-// locales={['es']} (BaseLayout emite hreflang es + x-default y nada más).
+// hreflang: alternatesFamilia('pro-prompts-ebook') (lib/tienda.ts). Con el gemelo EN vivo
+// (Gastro Pro Prompts eBook, /en/digital-products/ai-prompts-for-restaurants) emite es + en +
+// x-default recíprocos; si EN volviera a vivo:false, devuelve locales ['es'] sin alternates y el
+// HTML sería el de antes (hreflang es + x-default). Patrón = kit-inventario.astro.
 // Canonical: https://aichef.pro/pro-prompts-ebook. Meta robots se OMITE (desviación cross-cutting
 // del layout; se añade en el cutover). Patrón = kit-escandallos.astro / guia-*.astro.
 //
@@ -11,8 +13,10 @@
 // server-side (paridad con los <script> del Helmet). BaseLayout genera el resto de OG/Twitter.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProPromptsEbookPage from '../components/pages/ProPromptsEbookPage.astro';
+import { alternatesFamilia } from '../lib/tienda';
 
 const lang = 'es';
+const hreflang = alternatesFamilia('pro-prompts-ebook');
 
 // SEO — valores literales del Helmet de ProPromptsEbook.tsx.
 const seo = {
@@ -35,7 +39,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
   keywords={seo.keywords}
   lang={lang}
   basePath="/pro-prompts-ebook"
-  locales={['es']}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
   ogImage={seo.ogImage}
 >
   <ProPromptsEbookPage stripeLink={stripeLink} />

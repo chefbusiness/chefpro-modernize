@@ -63,6 +63,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard con todos los prompts y descargas:',
     files: {},
   },
+  // International store (EN, 2026-10-03): twin of pro-prompts-ebook, independent product. Unlike
+  // the Spanish one, its downloads are regular /dl/ files (standard PRODUCT_FILES path).
+  'ai-prompts-for-restaurants': {
+    id: 'ai-prompts-for-restaurants',
+    name: 'Gastro Pro Prompts eBook',
+    priceLabel: '$14',
+    accessPath: '/en/digital-products/ai-prompts-for-restaurants/access',
+    emailSubject: 'Your access to the Gastro Pro Prompts eBook',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to the <strong>Gastro Pro Prompts eBook</strong> is ready. Click the button to open your Pro Prompts Library with all the prompts and downloads:',
+    emailCta: 'Open my Library',
+    emailTitleResend: 'Access your Pro Prompts Library',
+    emailBodyResend: 'Click the button to open your dashboard with all the prompts and downloads:',
+    files: {
+      'ebook': '/dl/ai-prompts-for-restaurants/gastro-pro-prompts-ebook.pdf',
+      'bonus1': '/dl/ai-prompts-for-restaurants/bonus-1-prompt-engineering-guide.docx',
+      'bonus23': '/dl/ai-prompts-for-restaurants/bonus-2-3-templates-cheat-sheet.xlsx',
+    },
+    lang: 'en',
+  },
   'kit-escandallos': {
     id: 'kit-escandallos',
     name: 'Kit de Escandallos Pro',

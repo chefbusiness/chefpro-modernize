@@ -1,0 +1,615 @@
+{
+ "prompts": [
+  {
+   "n": 76,
+   "titulo": "Sustitutos de Ingredientes Sin Perder Sabor",
+   "cuerpo": "Un ingrediente clave de mi receta no está disponible hoy: [INGREDIENTE ORIGINAL]. Necesito un sustituto que: mantenga el perfil aromático similar, tenga textura comparable y esté disponible ahora. Análiza los compuestos aromáticos del ingrediente original y dame 3 alternativas ordenadas por similitud, indicando ajustes en la receta que requiere cada sustitución.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 77,
+   "titulo": "Maridaje Aceite de Oliva y Gastronomía",
+   "cuerpo": "Actúa como experto en aceite de oliva virgen extra. Diseña una experiencia de maridaje con 4 tipos de AOVE (arbequina, picual, hojiblanca, cornicabra) y productos gastronómicos específicos. Para cada AOVE: características aromáticas y gustativas, mejor temperatura de degustación, con qué producto marino, cárnico y vegetal marida mejor y por qué.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 78,
+   "titulo": "Food Pairing para Menú Vegetariano",
+   "cuerpo": "Diseña un menú vegetariano completo de 4 tiempos usando principios de food pairing para crear combinaciones de sabor sorprendentes y satisfactorias. Los ingredientes principales son: [INGREDIENTE 1, 2, 3, 4]. Para cada plato explica la lógica de food pairing que lo sustenta y por qué la combinación funciona a nivel sensorial aunque no sea intuitiva.",
+   "apps": [
+    "Food Pairing AI",
+    "VegChef Plant-Based"
+   ]
+  },
+  {
+   "n": 79,
+   "titulo": "Cata de Aceites con Food Pairing",
+   "cuerpo": "Diseña un evento de cata de aceites de oliva virgen extra con maridaje gastronómico para [NÚMERO] personas. Incluye: selección de 4-5 AOVEs distintos con ficha de cada uno, orden de cata (de suaves a intensos), ingredientes de acompañamiento para destacar cada AOVE, ficha de cata para los asistentes y guion verbal del cata-sommelier para presentar cada aceite.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 80,
+   "titulo": "Combinaciones Sorprendentes Científicas",
+   "cuerpo": "Dame las 10 combinaciones de ingredientes más sorprendentes y contraintuitivas pero científicamente respaldadas por food pairing molecular. Para cada combinación: ingrediente A + ingrediente B, compuestos aromáticos que comparten, receta o preparación concreta donde aplicarla y nivel de dificultad para introducirla en un restaurante (del 1 al 5).",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 81,
+   "titulo": "Maridaje Coctelería y Gastronomía",
+   "cuerpo": "Diseña el maridaje entre 5 cócteles signature del bar y los platos del menú de [RESTAURANTE]. Para cada cóctel: nombre, ingredientes base, perfil aromático y 2-3 platos del menú con los que armoniza. Crea también la presentación verbal para que el bartender la explique cuando los comensales pregunten por el maridaje cóctel-comida.",
+   "apps": [
+    "Food Pairing AI",
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 82,
+   "titulo": "Análisis de Compatibilidad de Especias",
+   "cuerpo": "Necesito desarrollar una mezcla de especias propia para [TIPO DE COCINA/PLATO]. Analiza la compatibilidad aromática entre estas especias: [LISTA DE 6-8 ESPECIAS]. Dime cuáles combinan bien, cuáles entran en conflicto y cuáles son el nexo que une los perfiles. Propón 2 mezclas distintas con proporciones exactas y su aplicación culinaria.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 83,
+   "titulo": "Umami Natural: Potenciadores de Sabor",
+   "cuerpo": "Actúa como químico culinario especializado en umami. Explica cómo potenciar el umami de forma natural en estos platos: [LISTA DE PLATOS]. Para cada plato, identifica los ingredientes umami presentes, cómo potenciarlos con técnica (reducción, fermentación, tostado), qué ingredientes umami añadir sin que se note artificialmente y el efecto esperado en el resultado final.",
+   "apps": [
+    "Food Pairing AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 84,
+   "titulo": "Carta de Infusiones y Tisanas para Restaurante",
+   "cuerpo": "Diseña la carta de infusiones y tisanas para [TIPO DE RESTAURANTE], diferenciándote del té de bolsita estándar. Incluye: 8-10 infusiones de calidad (combinaciones de hierbas, flores, frutas secas), descripción de cada una con sus propiedades y sabores, temperatura de servicio, tiempo de infusión y maridaje con platos dulces o salados. Propuesta de presentación visual.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 85,
+   "titulo": "Identificación Completa de Alérgenos en Receta",
+   "cuerpo": "Analiza esta receta completa: [RECETA CON INGREDIENTES Y CANTIDADES] e identifica todos los alérgenos presentes según el Reglamento UE 1169/2011 (los 14 alérgenos de declaración obligatoria). Para cada alérgeno encontrado: qué ingrediente lo contiene, si existe riesgo de contaminación cruzada y cómo documentarlo en la ficha técnica del plato.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 86,
+   "titulo": "Adaptación de Plato sin Gluten",
+   "cuerpo": "Adapta esta receta para hacerla 100% sin gluten: [RECETA ORIGINAL]. Identifica todos los ingredientes con gluten (trigo, cebada, centeno, avena no certificada), proporciona sustitutos específicos con las modificaciones en proceso y cantidades necesarias. Incluye también el protocolo de cocina para evitar contaminación cruzada al elaborar este plato.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 87,
+   "titulo": "Menú Completo para Celíacos",
+   "cuerpo": "Diseña un menú completo (entrante, principal y postre) para un comensal celíaco en mi restaurante [TIPO]. El menú debe ser tan atractivo como el menú estándar, no una versión de segunda categoría. Incluye recetas de cada plato sin gluten, posibles contaminaciones cruzadas a evitar en cocina y cómo presentarlo en carta con la leyenda correspondiente.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 88,
+   "titulo": "Protocolo de Alérgenos para Todo el Equipo",
+   "cuerpo": "Redacta el protocolo de gestión de alérgenos para [NOMBRE DEL RESTAURANTE]. Incluye: procedimiento de toma de información al cliente con alergias, comunicación entre sala y cocina, preparación del plato sin alérgeno (utensilios, zona de trabajo, orden de elaboración), verificación antes de servir y protocolo de emergencia si el cliente tiene reacción. Formato de manual de procedimientos.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 89,
+   "titulo": "Etiquetado de Alérgenos para Bufé",
+   "cuerpo": "Diseña el sistema de etiquetado de alérgenos para el bufé de [HOTEL/CATERING/RESTAURANTE]. Para [NÚMERO] elaboraciones del bufé, crea el formato de ficha de identificación que incluya: nombre del plato, lista de ingredientes, alérgenos presentes (iconos visuales), posibles trazas y recomendación para clientes con alergia grave. Formato visual y fácil de entender.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 90,
+   "titulo": "Menú sin los 14 Alérgenos Principales",
+   "cuerpo": "Diseña un menú de 3 tiempos completamente libre de los 14 alérgenos de declaración obligatoria (gluten, crustáceos, huevos, pescado, cacahuetes, soja, lácteos, frutos de cáscara, apio, mostaza, sésamo, dióxido de azufre, altramuces y moluscos). El menú debe ser sabroso y completo, no restrictivo. Incluye recetas y verificación de cada ingrediente.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 91,
+   "titulo": "Análisis de Riesgo de Contaminación Cruzada",
+   "cuerpo": "En mi cocina elaboro simultáneamente platos con y sin gluten. Realiza un análisis de riesgo de contaminación cruzada para: zonas de la cocina, utensilios compartidos, freidoras, planchas y superficies de trabajo. Para cada punto de riesgo identificado: nivel de riesgo (alto/medio/bajo), medida correctora específica y verificación diaria recomendada.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 92,
+   "titulo": "Formación de Equipo en Alérgenos",
+   "cuerpo": "Crea el programa de formación en gestión de alérgenos para el personal de sala y cocina de mi restaurante. Incluye: contenido del módulo de sala (cómo preguntar, cómo informar, qué hacer si hay duda) y módulo de cocina (preparación, prevención contaminación, emergencias). Añade un test de 10 preguntas para verificar que el equipo ha asimilado la información.",
+   "apps": [
+    "ID Alérgenos",
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 93,
+   "titulo": "Carta con Iconografía de Alérgenos",
+   "cuerpo": "Rediseña la presentación de la carta de [NOMBRE DEL RESTAURANTE] para incluir información de alérgenos de forma visualmente atractiva y fácil de leer. Para cada plato de la carta: [LISTA DE PLATOS], indica los alérgenos con iconos, cómo adaptar el plato a demanda (sin X alérgeno) y el texto legal obligatorio a incluir en la carta según normativa española.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 94,
+   "titulo": "Salsas y Aderezos sin Alérgenos Ocultos",
+   "cuerpo": "Analiza estas salsas industriales que uso en mi restaurante: [LISTA DE SALSAS/ADEREZOS COMERCIALES]. Para cada una: lista de alérgenos presentes en etiqueta, posibles alérgenos ocultos en ingredientes compuestos, alternativa casera equivalente sin alérgenos y cómo documentar el cambio en las fichas técnicas de los platos que las usan.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 95,
+   "titulo": "Control de Temperatura APPCC Simplificado",
+   "cuerpo": "Diseña el sistema de control de temperatura APPCC simplificado para [TIPO DE NEGOCIO]. Incluye: puntos de control críticos (recepción de mercancía, almacenamiento, cocinado, enfriado, conservación y servicio), temperatura límite crítica para cada punto, frecuencia de medición, hoja de registro diaria semanal y protocolo de actuación cuando un punto está fuera de límite.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 96,
+   "titulo": "Gestión de Intolerancias en Restaurante",
+   "cuerpo": "Mi restaurante recibe cada vez más comensales con intolerancias (no alergias graves). Diseña el protocolo para gestionar eficientemente las intolerancias más frecuentes: lactosa, fructosa, histamina, FODMAP y sorbitol. Para cada intolerancia: qué alimentos evitar, adaptaciones en carta actuales y cómo comunicarlo al cliente sin crear alarma innecesaria.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 97,
+   "titulo": "Rotulación Legal de Productos Elaborados",
+   "cuerpo": "Necesito crear la etiqueta legal para estos productos elaborados en mi obrador/cocina que vendo envasados: [DESCRIPCIÓN DE PRODUCTOS]. Para cada producto genera la información obligatoria según normativa UE: denominación, ingredientes (orden por peso), alérgenos en negrita, peso neto, fecha de caducidad/consumo preferente, condiciones de conservación, empresa y modo de empleo.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 98,
+   "titulo": "Plan de Higiene y Limpieza de Cocina",
+   "cuerpo": "Diseña el plan de higiene y limpieza para la cocina de [TIPO DE ESTABLECIMIENTO]. Incluye: frecuencia de limpieza para cada zona y equipo (diaria, semanal, mensual), productos de limpieza y desinfección recomendados con diluciones y tiempos de contacto, registro de limpiezas para auditorías y protocolo de verificación de eficacia de la limpieza.",
+   "apps": [
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 99,
+   "titulo": "Plan de Negocio para Restaurante",
+   "cuerpo": "Ayúdame a desarrollar el plan de negocio para [CONCEPTO DE RESTAURANTE]. Incluye: resumen ejecutivo, análisis de mercado local (ciudad: [CIUDAD]), concepto gastronómico diferencial, modelo de operaciones, plan de marketing, estructura de costes (inversión inicial, costes fijos y variables), previsión de ingresos a 12 meses y punto de equilibrio. Formato profesional para banco o inversor.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 100,
+   "titulo": "Análisis DAFO del Restaurante",
+   "cuerpo": "Realiza el análisis DAFO completo para [NOMBRE DEL RESTAURANTE] con estos datos: [DESCRIPCIÓN DEL NEGOCIO, UBICACIÓN, COMPETENCIA, SITUACIÓN ACTUAL]. Para cada cuadrante (Fortalezas, Debilidades, Oportunidades, Amenazas) identifica mínimo 5 factores concretos y relevantes. Cierra con 3 estrategias de acción prioritarias derivadas del análisis.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 101,
+   "titulo": "KPIs Operativos para Restaurante",
+   "cuerpo": "Define los KPIs operativos clave que debo monitorizar mensualmente en mi restaurante [TIPO]. Para cada KPI: nombre, fórmula de cálculo, benchmark de referencia del sector, objetivo recomendado para mi tipo de negocio y cómo actuar si el valor está por debajo. Incluye: ticket medio, occupancy rate, RevPASH, food cost %, labor cost % y rotación de mesa.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 102,
+   "titulo": "Estudio de Viabilidad de Nuevo Negocio",
+   "cuerpo": "Realiza el estudio de viabilidad para abrir un [TIPO DE NEGOCIO GASTRONÓMICO] en [CIUDAD/BARRIO]. Analiza: demanda potencial de la zona, competencia existente, inversión inicial estimada, costes operativos mensuales, ingresos potenciales en escenario conservador y optimista, tiempo estimado de recuperación de inversión y principales riesgos del proyecto.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 103,
+   "titulo": "Optimización de Horarios de Personal",
+   "cuerpo": "Tengo un restaurante con los siguientes turnos y volumen de trabajo: [DESCRIPCIÓN DE HORARIOS Y PICOS]. Necesito optimizar la plantilla de [NÚMERO] empleados para reducir costes de personal al [%] de facturación sin bajar la calidad del servicio. Sugiere el cuadrante de turnos óptimo, los perfiles necesarios por turno y cómo gestionar los picos de demanda.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 104,
+   "titulo": "Plan de Expansión para Cadena",
+   "cuerpo": "Tengo [NÚMERO] restaurantes en [CIUDAD/REGIÓN] con el concepto [DESCRIPCIÓN]. Quiero expandir a [NUEVA CIUDAD/PAÍS]. Diseña el plan de expansión: análisis del nuevo mercado, modelo de expansión recomendado (propio/franquicia/joint venture), inversión estimada, adaptaciones del concepto al nuevo mercado, timeline de 18 meses y indicadores de éxito de la expansión.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 105,
+   "titulo": "Franquicia Gastronómica: Viabilidad",
+   "cuerpo": "Tengo un concepto de restaurante [DESCRIPCIÓN] con [NÚMERO] locales propios exitosos. Analiza la viabilidad de convertirlo en franquicia: qué elementos son franquiciables, qué documentación necesito (manual operativo, ficha del franquiciado, contrato tipo), inversión para el franquiciado estimada, canon de entrada y royalties de mercado, y primeros pasos legales.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 106,
+   "titulo": "Modelo de Negocio Dark Kitchen",
+   "cuerpo": "Diseña el modelo de negocio completo para una dark kitchen / cocina fantasma en [CIUDAD]. Incluye: concepto gastronómico óptimo para delivery (qué tipos de cocina funcionan mejor en reparto), plataformas de delivery a usar (estrategia multi-plataforma), inversión en equipamiento, costes operativos vs restaurante físico, radio de reparto óptimo y métricas de éxito.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 107,
+   "titulo": "Onboarding para Nuevo Personal de Cocina",
+   "cuerpo": "Diseña el plan de incorporación (onboarding) para un nuevo cocinero en [TIPO DE RESTAURANTE]. Plan para las primeras 4 semanas: objetivos de cada semana, habilidades y conocimientos a adquirir, mentor asignado y metodología de seguimiento, criterios de evaluación al finalizar el periodo de prueba y documento de bienvenida con valores y cultura del equipo.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 108,
+   "titulo": "Estrategia de Upselling para Sala",
+   "cuerpo": "Desarrolla la estrategia de upselling y cross-selling para el equipo de sala de [NOMBRE DEL RESTAURANTE]. Incluye: técnicas de sugerencia no invasivas, qué ofrecer y cuándo en el orden del servicio, argumentos de venta para los 5 platos/bebidas de mayor margen, formación práctica con role-play de situaciones y cómo medir el resultado del upselling por camarero.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 109,
+   "titulo": "Gestión de Programa de Fidelización",
+   "cuerpo": "Diseña un programa de fidelización de clientes para [NOMBRE DEL RESTAURANTE]. Incluye: mecánica del programa (puntos, niveles, beneficios), recompensas por tier (cliente nuevo, frecuente, VIP), herramienta de gestión recomendada, comunicación del programa al cliente y métricas de éxito (retención, frecuencia de visita, ticket medio de clientes del programa vs no miembros).",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 110,
+   "titulo": "Gestión de Crisis en Restaurante",
+   "cuerpo": "Mi restaurante está atravesando una crisis por [CAUSA: reseña viral negativa / inspección sanitaria / fallo de proveedor / problema con empleado / accidente en cocina]. Diseña el plan de gestión de crisis: acciones inmediatas (primeras 24h), comunicación interna al equipo, comunicación externa a clientes y medios, acciones correctoras y plan de recuperación de imagen y operaciones.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 111,
+   "titulo": "Modelo de Consultoría Gastronómica",
+   "cuerpo": "Soy consultor gastronómico y quiero estructurar mi servicio de consultoría. Diseña: los paquetes de servicio (básico, medio, premium) con contenido y precio de referencia, proceso de trabajo estándar para un proyecto de consultoría de 3 meses, herramientas y entregables de cada fase, propuesta comercial tipo y cómo posicionarme en el mercado español de consultoría gastronómica.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 112,
+   "titulo": "Revenue Management para Restaurante",
+   "cuerpo": "Aplica principios de revenue management a mi restaurante: [TIPO, NÚMERO DE MESAS, HORARIO]. Analiza: cómo maximizar el RevPASH (Revenue Per Available Seat Per Hour), estrategia de precios dinámicos para diferentes momentos del día/semana, gestión óptima de reservas vs walk-in, políticas para reducir no-shows y cómo gestionar los momentos de overbooking.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 113,
+   "titulo": "Gestión del Estrés en Cocina Profesional",
+   "cuerpo": "Actúa como coach especializado en bienestar de profesionales de hostelería. Estoy experimentando [SÍNTOMAS/SITUACIÓN DE ESTRÉS] en mi trabajo como [PUESTO]. El volumen de trabajo es [DESCRIPCIÓN]. Diseña un plan de gestión del estrés personalizado para los próximos 30 días: técnicas para antes del servicio, durante momentos de alta presión y recuperación post-servicio.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 114,
+   "titulo": "Evaluación de Desempeño del Equipo",
+   "cuerpo": "Diseña el sistema de evaluación de desempeño semestral para el equipo de cocina de [TIPO DE RESTAURANTE]. Incluye: competencias a evaluar (técnicas y blandas), escala de valoración, formulario de evaluación para el responsable y autoevaluación del empleado, protocolo de la entrevista de feedback y plan de desarrollo individual resultante. Formato listo para usar.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 115,
+   "titulo": "Resolución de Conflictos en Brigada",
+   "cuerpo": "En mi equipo de cocina hay tensión entre [DESCRIPCIÓN DEL CONFLICTO: dos empleados/departamentos/turno mañana-tarde]. La situación lleva [TIEMPO] y afecta al servicio. Actúa como mediador y diseña: la estrategia de mediación, preguntas para entender las dos partes, propuesta de solución equitativa y plan de seguimiento para que el conflicto no reaparezca.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 116,
+   "titulo": "Motivación de Equipo en Temporada Baja",
+   "cuerpo": "Mi equipo de cocina está desmotivado durante la temporada baja. El contexto es: [DESCRIPCIÓN DEL EQUIPO Y SITUACIÓN]. Diseña un plan de motivación para los próximos 2 meses que incluya: objetivos inspiradores para el equipo, formación interna aprovechando el tiempo, reconocimientos específicos, dinámicas de equipo, y cómo comunicar positivamente el valor de la temporada baja.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 117,
+   "titulo": "Comunicación Asertiva con el Equipo",
+   "cuerpo": "Necesito mejorar la comunicación con mi equipo de cocina. Situación actual: [DESCRIPCIÓN DE PROBLEMAS DE COMUNICACIÓN]. Dame: técnicas de comunicación asertiva aplicadas al entorno de cocina, cómo dar feedback negativo de forma constructiva, cómo reconocer el trabajo bien hecho de forma efectiva y frases concretas para situaciones difíciles (error grave, bajo rendimiento, conflicto).",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 118,
+   "titulo": "Plan de Formación Interna del Equipo",
+   "cuerpo": "Diseña el plan de formación interna anual para el equipo de [TIPO DE RESTAURANTE] con [NÚMERO] personas. Basado en las necesidades detectadas: [LISTA DE ÁREAS A MEJORAR]. Para cada módulo de formación: objetivo, contenido, duración, quién lo imparte (interno/externo), metodología y cómo evaluar si la formación ha tenido impacto en el trabajo diario.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 119,
+   "titulo": "Prevención del Burnout en Hostelería",
+   "cuerpo": "El sector de hostelería tiene las tasas de burnout más altas. Como chef/responsable de [NÚMERO] personas, diseña el programa de prevención del burnout para mi equipo. Incluye: señales de alerta temprana a identificar, factores de riesgo específicos de mi contexto, intervenciones preventivas concretas, política de descansos y vacaciones, y recursos de apoyo psicológico.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 120,
+   "titulo": "Retención de Talento en Cocina",
+   "cuerpo": "Tengo alta rotación en mi equipo de cocina: [TASA DE ROTACIÓN %]. Los principales motivos de salida son: [LISTA]. Diseña una estrategia de retención de talento que vaya más allá del salario: plan de carrera, beneficios no económicos, cultura de trabajo positiva, reconocimiento, autonomía y aprendizaje continuo. Con acciones concretas e indicadores de mejora.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 121,
+   "titulo": "Mindfulness para Chefs: Rutina Diaria",
+   "cuerpo": "Diseña una rutina de mindfulness adaptada a la realidad de un chef o cocinero. El tiempo disponible es: antes del servicio [X minutos], durante el servicio (micro-prácticas), después del servicio [X minutos]. Para cada momento: técnica específica adaptada al contexto de cocina, objetivo de la práctica y beneficio esperado. Progresión de 4 semanas de más simple a más profundo.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 122,
+   "titulo": "Liderazgo Positivo en Brigada de Cocina",
+   "cuerpo": "Quiero cambiar mi estilo de liderazgo de autoridad jerárquica a liderazgo positivo y colaborativo manteniendo los estándares de excelencia. Mi equipo actual: [DESCRIPCIÓN]. Dame: los principios del liderazgo positivo aplicados a cocina, cómo hacer la transición sin perder autoridad, 10 comportamientos concretos a cambiar desde mañana y cómo medir el impacto en el equipo.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 123,
+   "titulo": "Reuniones de Equipo Efectivas (Briefings)",
+   "cuerpo": "Diseña el formato ideal del briefing pre-servicio de 10 minutos para mi equipo de cocina y sala. Estructura: qué cubrir obligatoriamente (reservas, incidencias, platos del día, alérgenos relevantes), cómo gestionar el tiempo para no excederse, cómo crear energía positiva antes del servicio y cómo incorporar feedback del servicio anterior de forma constructiva.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 124,
+   "titulo": "Gestión de Empleado Difícil",
+   "cuerpo": "Tengo un empleado [PUESTO] con estas conductas problemáticas: [DESCRIPCIÓN]. Lleva en el equipo [TIEMPO]. El resto del equipo se ve afectado. Diseña el plan de actuación como responsable: conversación inicial de feedback (guion), plan de mejora con objetivos medibles, seguimiento a 30/60/90 días y cómo documentar el proceso de forma profesional y protegerte legalmente.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 125,
+   "titulo": "Equilibrio Vida-Trabajo para Hostelero",
+   "cuerpo": "Trabajo en hostelería con [HORARIO HABITUAL]. Tengo dificultad para desconectar y mi vida personal se ve afectada. Actúa como coach de vida y diseña un plan realista de equilibrio trabajo-vida para profesionales de hostelería. Incluye: estrategias para desconectar entre turnos, rutinas de recuperación, límites sanos con el trabajo y cómo proteger el tiempo personal.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 126,
+   "titulo": "Cultura de Equipo en Restaurante",
+   "cuerpo": "Quiero construir una cultura de equipo sólida en mi restaurante [TIPO]. Actualmente la cultura es [DESCRIPCIÓN SITUACIÓN ACTUAL]. Define: los valores del equipo (máximo 5, con descripción de qué significa cada uno en la práctica diaria), rituales de equipo que refuercen la cultura, cómo incorporar a nuevos empleados en la cultura y cómo protegerla cuando hay tensiones.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 127,
+   "titulo": "Investigación de Ingrediente Desconocido",
+   "cuerpo": "Actúa como investigador gastronómico y científico de alimentos. Necesito toda la información sobre el ingrediente [NOMBRE DEL INGREDIENTE/PRODUCTO]: origen geográfico e histórico, composición nutricional detallada, compuestos bioactivos relevantes, perfil organoléptico (aroma, sabor, textura), técnicas de preparación adecuadas, productores destacados y aplicaciones en cocina moderna.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 128,
+   "titulo": "Historia y Evolución de una Técnica Culinaria",
+   "cuerpo": "Investiga la historia completa de la técnica culinaria [NOMBRE DE LA TÉCNICA: sous vide/fermentación/esferificación/ahumado/liofilización]. Incluye: origen histórico y contexto, hitos de su desarrollo y popularización, base científica que la sustenta, chefs e investigadores que la han desarrollado, aplicaciones actuales en alta cocina y tendencias futuras de la técnica.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 129,
+   "titulo": "Análisis de Tendencias Gastronómicas",
+   "cuerpo": "Analiza las tendencias gastronómicas más relevantes para el sector [TIPO: restauración casual/alta cocina/pastelería/bebidas] en [AÑO]. Para cada tendencia identificada: descripción, por qué emerge ahora (contexto cultural/social/tecnológico), ejemplos de chefs o negocios que ya la aplican, cómo incorporarla en mi negocio y vida útil estimada de la tendencia.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 130,
+   "titulo": "Cocina Regional Española: Investigación Profunda",
+   "cuerpo": "Investiga en profundidad la gastronomía tradicional de [COMUNIDAD AUTÓNOMA/REGIÓN DE ESPAÑA]. Incluye: productos con denominación de origen o indicación geográfica protegida, platos emblemáticos con origen histórico, técnicas culinarias autóctonas, temporadas óptimas de los productos principales, chefs contemporáneos referentes de esa cocina y cómo reinterpretarla en clave actual.",
+   "apps": [
+    "Cocina Española AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 131,
+   "titulo": "Ciencia de la Fermentación: Base Teórica",
+   "cuerpo": "Actúa como microbiólogo y chef fermentador. Explica la ciencia completa detrás de la fermentación de [PRODUCTO: leche/vegetales/carnes/pescados/bebidas]. Incluye: microorganismos involucrados, proceso bioquímico paso a paso, variables que controlan la fermentación (pH, temperatura, sal, tiempo), factores de seguridad alimentaria críticos y cómo aprovechar este conocimiento en aplicaciones culinarias concretas.",
+   "apps": [
+    "Fermentus Con AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 132,
+   "titulo": "Análisis de Cocina de un País: Guía Completa",
+   "cuerpo": "Desarrolla la guía gastronómica completa de [PAÍS/REGIÓN DEL MUNDO]. Incluye: contexto geográfico y climático que define la gastronomía, ingredientes autóctonos imprescindibles, técnicas de cocción tradicionales, platos nacionales emblemáticos (con recetas simplificadas), ingredientes difíciles de conseguir y sus sustitutos, y cómo fusionar esta cocina con la cocina mediterránea.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 133,
+   "titulo": "Gastronomía Molecular: Base Científica",
+   "cuerpo": "Explica la base científica de las siguientes aplicaciones de gastronomía molecular que quiero implementar: [TÉCNICA 1: gelificación con agar/esferificación básica/espumas con lecitina]. Para cada técnica: principio científico, ingredientes activos con dosis exactas (por litro/kg), proceso paso a paso con variables críticas, troubleshooting de problemas comunes y aplicaciones en carta.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 134,
+   "titulo": "Nutrición Aplicada a Cocina Profesional",
+   "cuerpo": "Actúa como nutricionista y chef. Diseña un menú del día [NÚMERO DE PLATOS] para [TIPO DE ESTABLECIMIENTO: colectividad/restaurante saludable/centro deportivo] que cumpla con: requerimientos calóricos de [X] kcal, distribución de macronutrientes [%P/%HC/%G], micronutrientes prioritarios [LISTA] y que al mismo tiempo sea sabroso y visualmente atractivo.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 135,
+   "titulo": "Investigación sobre Nuevos Ingredientes",
+   "cuerpo": "Investiga los ingredientes emergentes más prometedores en gastronomía profesional en [AÑO]: proteínas alternativas, algas, fermentados exóticos, especias poco conocidas, etc. Para cada ingrediente: origen, disponibilidad en mercado español, propiedades nutricionales y organolépticas, precio aproximado, proveedor donde conseguirlo y 2-3 aplicaciones en cocina de restaurante.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 136,
+   "titulo": "Sostenibilidad Gastronómica: Marco Teórico",
+   "cuerpo": "Desarrolla el marco teórico y práctico de la sostenibilidad aplicada a mi restaurante [TIPO]. Incluye: pilares de la sostenibilidad gastronómica (producto, energía, agua, residuos, social), certificaciones relevantes (Bib Gourmand verde, Michelin verde, etc.), acciones concretas ordenadas por impacto y coste de implementación, y cómo comunicarlo a los clientes de forma auténtica.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 137,
+   "titulo": "Dicionario de Términos Técnicos de Cocina",
+   "cuerpo": "Actúa como Gastro Lexicum y crea el glosario técnico completo de la partida de [SALSAS/PASTELERÍA/CARNICERÍA/PESCADERÍA/COCINA FRÍA]. Incluye: 30 términos técnicos esenciales, definición precisa de cada uno, ejemplo de aplicación práctica en cocina profesional y errores comunes de interpretación. Ordenado de más básico a más avanzado.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 138,
+   "titulo": "Análisis de Competencia Gastronómica",
+   "cuerpo": "Realiza el análisis competitivo de los 5 principales competidores de [NOMBRE DEL RESTAURANTE] en [CIUDAD/ZONA]. Para cada competidor: tipo de cocina y concepto, rango de precios, fortalezas y debilidades percibidas, estrategia de comunicación digital, puntos de diferenciación. Concluye con las oportunidades de diferenciación para mi restaurante.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 139,
+   "titulo": "Investigación de Mercado para Nuevo Concepto",
+   "cuerpo": "Quiero abrir un nuevo concepto de restaurante basado en [DESCRIPCIÓN DEL CONCEPTO]. Antes de invertir, necesito investigar: tamaño del mercado objetivo en [CIUDAD], competencia directa e indirecta, perfil del cliente ideal con su comportamiento de consumo, barreras de entrada y factores críticos de éxito para este tipo de negocio. Conclusión con semáforo de viabilidad.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 140,
+   "titulo": "Historia de la Gastronomía: Línea Temporal",
+   "cuerpo": "Crea la línea temporal de los hitos más importantes de la gastronomía mundial desde el siglo XIX hasta hoy. Para cada hito: fecha, qué ocurrió, quién fue el protagonista, impacto en la gastronomía global y legado que persiste hoy. Incluye: Escoffier y la codificación de la cocina clásica, Nouvelle Cuisine, Nouvelle Espagne, el Bulli como laboratorio y la era del cocinero-artista.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 141,
+   "titulo": "Estrategia de Carta Anual",
+   "cuerpo": "Soy chef ejecutivo de un grupo gastronómico con [NÚMERO] restaurantes. Necesito diseñar la estrategia de carta anual alineada con: tendencias del mercado, estacionalidad de producto, objetivos de food cost del [%] y diferenciación entre los distintos conceptos del grupo. Dame el framework de planificación de carta anual con fechas clave de cambio y proceso de desarrollo de nuevos platos.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 142,
+   "titulo": "Gestión Multisede de Cocinas",
+   "cuerpo": "Como chef ejecutivo responsable de [NÚMERO] cocinas en diferentes localizaciones, necesito estandarizar procesos sin perder identidad de cada local. Diseña: el sistema de fichas técnicas estandarizadas, protocolo de comunicación entre chefs de cada local, visita de supervisión mensual (qué verificar, cómo documentar) y métricas de calidad homogéneas para todas las sedes.",
+   "apps": [
+    "Mermas GenCal",
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 143,
+   "titulo": "Presentación de Nueva Carta a Inversores",
+   "cuerpo": "Debo presentar la nueva propuesta de carta a los socios inversores del grupo. Necesito un documento ejecutivo que incluya: justificación gastronómica de los cambios, impacto esperado en food cost (de [%] a [%]), ticket medio proyectado, análisis de competencia que justifica el posicionamiento y cronograma de implementación. Tono profesional para no cocineros.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 144,
+   "titulo": "Tutoría de Chef Junior Talentoso",
+   "cuerpo": "Tengo bajo mi mentoring a un chef de [EDAD] años con [DESCRIPCIÓN DE TALENTO Y ÁREAS DE MEJORA]. Diseña el plan de mentoría de 6 meses para desarrollar su potencial: objetivos por mes, experiencias de aprendizaje (stages, proyectos especiales, responsabilidades graduales), feedback estructurado mensual y hoja de ruta hacia su próximo rol profesional.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 145,
+   "titulo": "Desarrollo de Identidad Culinaria de Marca",
+   "cuerpo": "Como chef ejecutivo necesito definir y documentar la identidad culinaria del grupo [NOMBRE]. Incluye: ADN gastronómico (valores culinarios, ingredientes prohibidos e imprescindibles, estilo de presentación), recetas pilares que representan la marca, técnicas signature, vocabulario culinario interno del grupo y cómo trasladar esta identidad a todos los platos nuevos que se desarrollen.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 146,
+   "titulo": "Gestión Presupuestaria de Cocina",
+   "cuerpo": "Soy chef ejecutivo y debo gestionar el presupuesto anual de cocina de [IMPORTE] euros para [NÚMERO] restaurantes. Ayúdame a: distribuir el presupuesto por categorías (materia prima, personal, equipamiento, formación, I+D), establecer alertas de desviación mensual, negociar reducciones de costes sin impactar calidad y presentar el presupuesto al comité directivo.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 147,
+   "titulo": "I+D Gastronómica: Proyecto de Innovación",
+   "cuerpo": "Lidera el proyecto de I+D gastronómica del grupo para la próxima temporada. El eje de investigación es [TEMA: fermentación/proteínas alternativas/cocina de desperdicio cero/influencias de una cultura]. Diseña: metodología del proyecto, calendario de sesiones de I+D, cómo documentar los resultados, proceso de selección de platos para carta y cómo comunicar la innovación a prensa.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Food Pairing AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 148,
+   "titulo": "Colaboración con Otros Chefs: Pop-up",
+   "cuerpo": "Voy a organizar una cena pop-up de colaboración con el chef [NOMBRE] de [RESTAURANTE]. Necesito diseñar: concepto narrativo de la cena, cómo dividir los platos entre los dos chefs de forma armoniosa, dossier para prensa, comunicación en RRSS para el evento, logística de cocina para una noche con brigada mixta y precio del menú con cálculo de rentabilidad.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 149,
+   "titulo": "Selección y Equipamiento de Nueva Cocina",
+   "cuerpo": "Voy a equipar la cocina de [TIPO DE RESTAURANTE] con capacidad para [NÚMERO] cubiertos/día. Diseña: lista de equipamiento necesario (por partida: fría, caliente, pastelería, lavado) con especificaciones técnicas, disposición funcional de la cocina según flujo de trabajo, criterios de selección de marcas y proveedores, presupuesto estimado y plan de implementación.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 150,
+   "titulo": "Guía de Estilo Culinario para el Equipo",
+   "cuerpo": "Crea el manual de estilo culinario del grupo gastronómico [NOMBRE] para que todo el equipo de cocina tenga una referencia clara. Incluye: filosofía culinaria del grupo (en 10 principios), estándares de calidad de producto (cómo seleccionarlo, cómo verificarlo), técnicas prohibidas y preferidas, estilo de presentación y emplatado con ejemplos, y valores que guían las decisiones creativas.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  }
+ ]
+}

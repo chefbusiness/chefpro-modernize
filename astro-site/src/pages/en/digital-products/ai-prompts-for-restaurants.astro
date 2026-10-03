@@ -1,0 +1,40 @@
+---
+// /en/digital-products/ai-prompts-for-restaurants — Gastro Pro Prompts eBook (tienda internacional EN).
+// COPIA de pages/pro-prompts-ebook.astro (thin wrapper: SEO → BaseLayout, stripeLink → plantilla) con
+// lang="en", siguiendo restaurant-inventory-templates.astro. La plantilla es el gemelo EN de la del ES
+// (components/pages/ProPromptsEbookPageEn.astro) y los datos, data/productos-en/ebooks/ai-prompts-for-restaurants.ts.
+//
+// - basePath SIN «/en»: BaseLayout ya antepone el prefijo del idioma (con «/en» saldría /en/en/…).
+// - hreflang recíproco con el gemelo ES vía alternatesFamilia('pro-prompts-ebook') (lib/tienda.ts).
+// - whatsapp={false}: la plantilla pinta su propio botón de soporte (como el ES).
+// - omitGlobalApp: el SoftwareApplication global lleva ofertas en EUR y rating; en la tienda EN
+//   no puede salir ninguno de los dos (tienda-gate.py).
+// - miselup={false}: la tarjeta de Miselup es solo para la tienda ES (TIENDA §3.9).
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProPromptsEbookPageEn from '../../../components/pages/ProPromptsEbookPageEn.astro';
+import data from '../../../data/productos-en/ebooks/ai-prompts-for-restaurants';
+import { alternatesFamilia } from '../../../lib/tienda';
+
+const lang = 'en';
+const hreflang = alternatesFamilia('pro-prompts-ebook');
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO) para que Vite la inline en build.
+// data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  miselup={false}
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={'/digital-products/' + data.slug}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
+  ogImage={data.seo.ogImage}
+>
+  <ProPromptsEbookPageEn stripeLink={stripeLink} />
+</BaseLayout>

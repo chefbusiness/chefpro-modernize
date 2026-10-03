@@ -7,6 +7,7 @@ import { emailI18n, tiendaLang, type TiendaLang } from '../shared/email-i18n';
 // (ADMIN_EMAIL, abajo) y el párrafo fijo de netlify/shared/email-i18n.ts, como en verify/resend.
 const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: TiendaLang }> = {
   'pro-prompts-ebook': { accessPath: '/pro-prompts-library-access', label: 'Pro Prompts eBook' },
+  'ai-prompts-for-restaurants': { accessPath: '/en/digital-products/ai-prompts-for-restaurants/access', label: 'Gastro Pro Prompts eBook', lang: 'en' },
   'kit-escandallos': { accessPath: '/kit-escandallos-access', label: 'Kit de Escandallos Pro' },
   'food-cost-templates': { accessPath: '/en/digital-products/food-cost-templates/access', label: 'Food Cost Kit Pro', lang: 'en' },
   'pack-appcc': { accessPath: '/pack-appcc-access', label: 'Pack Plantillas APPCC' },

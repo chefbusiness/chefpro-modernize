@@ -1,0 +1,1319 @@
+{
+ "docx_titulo": "",
+ "docx": [
+  {
+   "id": "t0",
+   "texto": "AI CHEF PRO · aichef.pro"
+  },
+  {
+   "id": "t1",
+   "texto": "BONUS 1"
+  },
+  {
+   "id": "t2",
+   "texto": "Guía de Prompt Engineering Gastronómico"
+  },
+  {
+   "id": "t3",
+   "texto": "Cómo construir prompts perfectos para hostelería desde cero"
+  },
+  {
+   "id": "t4",
+   "texto": "Incluido con tu Pro Prompts eBook · aichef.pro"
+  },
+  {
+   "id": "t5",
+   "texto": "  Por qué la mayoría de prompts fallan"
+  },
+  {
+   "id": "t7",
+   "texto": "El 80% de los profesionales que usan IA en su negocio gastronómico no obtienen resultados porque sus prompts son demasiado vagos. \"Dame ideas para mi carta\" o \"ayúdame con el marketing\" generan respuestas genéricas que no sirven para nada."
+  },
+  {
+   "id": "t9",
+   "texto": "Esta guía te enseña el framework exacto que usamos en AI Chef Pro para construir prompts que generan resultados profesionales desde la primera consulta."
+  },
+  {
+   "id": "t11",
+   "texto": "  Los 5 elementos de un prompt perfecto"
+  },
+  {
+   "id": "t14",
+   "texto": "ROL"
+  },
+  {
+   "id": "t15",
+   "texto": "MAL"
+  },
+  {
+   "id": "t16",
+   "texto": "Ayúdame con recetas"
+  },
+  {
+   "id": "t17",
+   "texto": "BIEN"
+  },
+  {
+   "id": "t18",
+   "texto": "Actúa como chef ejecutivo con 15 años de experiencia en cocina mediterránea contemporánea"
+  },
+  {
+   "id": "t21",
+   "texto": "CONTEXTO"
+  },
+  {
+   "id": "t22",
+   "texto": "MAL"
+  },
+  {
+   "id": "t23",
+   "texto": "tengo un restaurante"
+  },
+  {
+   "id": "t24",
+   "texto": "BIEN"
+  },
+  {
+   "id": "t25",
+   "texto": "Mi restaurante tiene 40 cubiertos, ticket medio 45€, cocina vasca, en el barrio de Gros de San Sebastián"
+  },
+  {
+   "id": "t28",
+   "texto": "TAREA"
+  },
+  {
+   "id": "t29",
+   "texto": "MAL"
+  },
+  {
+   "id": "t30",
+   "texto": "dame ideas"
+  },
+  {
+   "id": "t31",
+   "texto": "BIEN"
+  },
+  {
+   "id": "t32",
+   "texto": "Diseña un menú de temporada de 4 platos para otoño que use productos de temporada vascos"
+  },
+  {
+   "id": "t35",
+   "texto": "PARÁMETROS"
+  },
+  {
+   "id": "t36",
+   "texto": "MAL"
+  },
+  {
+   "id": "t37",
+   "texto": "(nada — la IA inventa lo que falta)"
+  },
+  {
+   "id": "t38",
+   "texto": "BIEN"
+  },
+  {
+   "id": "t39",
+   "texto": "Sin mariscos. Food cost máximo 32%. Tiempo de mise en place por plato: máximo 8 minutos."
+  },
+  {
+   "id": "t42",
+   "texto": "FORMATO"
+  },
+  {
+   "id": "t43",
+   "texto": "MAL"
+  },
+  {
+   "id": "t44",
+   "texto": "(nada — obtienes lo que la IA decide)"
+  },
+  {
+   "id": "t45",
+   "texto": "BIEN"
+  },
+  {
+   "id": "t46",
+   "texto": "Formato: tabla con columnas nombre del plato / ingrediente principal / técnica / precio de carta sugerido"
+  },
+  {
+   "id": "t48",
+   "texto": "  Ejemplos antes y después"
+  },
+  {
+   "id": "t50",
+   "texto": "Caso: RECETA"
+  },
+  {
+   "id": "t51",
+   "texto": "Prompt débil"
+  },
+  {
+   "id": "t52",
+   "texto": "\"Dame una receta de pescado\""
+  },
+  {
+   "id": "t53",
+   "texto": "Prompt profesional"
+  },
+  {
+   "id": "t54",
+   "texto": "\"Actúa como chef con experiencia en cocina marinera. Crea una receta de lubina para un restaurante de 35€ ticket medio en Valencia. Técnica: horno a baja temperatura. Sin frutos secos. Formato: nombre del plato, ingredientes para 4 pax con gramajes, elaboración paso a paso, emplatado, precio de carta sugerido.\""
+  },
+  {
+   "id": "t56",
+   "texto": "Caso: FOOD COST"
+  },
+  {
+   "id": "t57",
+   "texto": "Prompt débil"
+  },
+  {
+   "id": "t58",
+   "texto": "\"Calcula el coste de mi receta\""
+  },
+  {
+   "id": "t59",
+   "texto": "Prompt profesional"
+  },
+  {
+   "id": "t60",
+   "texto": "\"Calcula el food cost de esta receta [lista de ingredientes con gramajes y precio/kg]. Precio de venta objetivo: 18€. Dame: coste por ingrediente, coste total MP, food cost %, y si supera el 30% sugiere 2 optimizaciones sin bajar la calidad percibida.\""
+  },
+  {
+   "id": "t62",
+   "texto": "Caso: MARKETING"
+  },
+  {
+   "id": "t63",
+   "texto": "Prompt débil"
+  },
+  {
+   "id": "t64",
+   "texto": "\"Escribe un post para Instagram\""
+  },
+  {
+   "id": "t65",
+   "texto": "Prompt profesional"
+  },
+  {
+   "id": "t66",
+   "texto": "\"Escribe un post de Instagram para presentar nuestro nuevo plato de temporada: crema de calabaza asada con vieira y aceite de trufa. Tono elegante y cercano. CTA: reservar mesa. 150 palabras + 15 hashtags. Mi restaurante: La Xarxa, Barcelona, cocina de mercado contemporánea.\""
+  },
+  {
+   "id": "t68",
+   "texto": "Caso: CATERING"
+  },
+  {
+   "id": "t69",
+   "texto": "Prompt débil"
+  },
+  {
+   "id": "t70",
+   "texto": "\"Dame un menú para una boda\""
+  },
+  {
+   "id": "t71",
+   "texto": "Prompt profesional"
+  },
+  {
+   "id": "t72",
+   "texto": "\"Diseña la propuesta de menú para una boda de 120 personas en finca rural de Madrid, en junio. Presupuesto 65€/persona sin bebidas. 8 veganos y 4 celíacos confirmados. Formato: servicio a mesa con 3 pasos. Incluye cóctel de bienvenida, menú completo con alternativas para restricciones y estimación de personal.\""
+  },
+  {
+   "id": "t74",
+   "texto": "  Frases de activación que mejoran cualquier prompt"
+  },
+  {
+   "id": "t76",
+   "texto": "  Para obtener más profundidad"
+  },
+  {
+   "id": "t78",
+   "texto": "\"Sé extremadamente detallado y específico\""
+  },
+  {
+   "id": "t80",
+   "texto": "\"Incluye ejemplos concretos y aplicaciones reales\""
+  },
+  {
+   "id": "t82",
+   "texto": "\"Añade datos o métricas cuando sea posible\""
+  },
+  {
+   "id": "t84",
+   "texto": "\"No generalices, habla específicamente de mi caso\""
+  },
+  {
+   "id": "t86",
+   "texto": "  Para controlar el formato"
+  },
+  {
+   "id": "t88",
+   "texto": "\"Responde exclusivamente en formato tabla\""
+  },
+  {
+   "id": "t90",
+   "texto": "\"Organiza la respuesta en pasos numerados\""
+  },
+  {
+   "id": "t92",
+   "texto": "\"Dame primero el resumen ejecutivo y luego el detalle\""
+  },
+  {
+   "id": "t94",
+   "texto": "\"Máximo [N] palabras / puntos / páginas\""
+  },
+  {
+   "id": "t96",
+   "texto": "  Para calibrar el nivel"
+  },
+  {
+   "id": "t98",
+   "texto": "\"Asumo que tengo conocimientos básicos de [tema]\""
+  },
+  {
+   "id": "t100",
+   "texto": "\"Trátame como a un chef profesional con 10 años de experiencia\""
+  },
+  {
+   "id": "t102",
+   "texto": "\"Explícalo como si tuviera que implementarlo mañana\""
+  },
+  {
+   "id": "t104",
+   "texto": "\"Nivel técnico avanzado, sin explicaciones básicas\""
+  },
+  {
+   "id": "t106",
+   "texto": "  Para iterar sobre la respuesta"
+  },
+  {
+   "id": "t108",
+   "texto": "\"Ahora hazlo más corto y directo\""
+  },
+  {
+   "id": "t110",
+   "texto": "\"Expande el punto [N] con más detalle\""
+  },
+  {
+   "id": "t112",
+   "texto": "\"Dame 3 variaciones alternativas de esta propuesta\""
+  },
+  {
+   "id": "t114",
+   "texto": "\"Adapta esto para [nuevo contexto]\""
+  },
+  {
+   "id": "t117",
+   "texto": "Aplica todo esto con los 80 prompts del eBook en: aichef.pro"
+  },
+  {
+   "id": "t118",
+   "texto": "AI Chef Pro — La IA para el mundo de la gastronomía"
+  }
+ ],
+ "hojas": [
+  "Bonus 2 — Plantillas",
+  "Bonus 3 — Cheat Sheet"
+ ],
+ "xlsx": [
+  {
+   "id": "Bonus 2 — Plantillas!A1",
+   "texto": "AI CHEF PRO — BONUS 2: 10 Plantillas de Prompts Rellenables"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A2",
+   "texto": "Copia el prompt del campo 'Prompt Listo', rellena los [PLACEHOLDERS] en mayúsculas y pégalo en AI Chef Pro, ChatGPT o Claude."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A3",
+   "texto": "Campo"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B3",
+   "texto": "Tu información (rellena aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C3",
+   "texto": "Prompt listo para usar"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A4",
+   "texto": "PLANTILLA 1 — Receta creativa de autor"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A5",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B5",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C5",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A6",
+   "texto": "[TIPO DE COCINA]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B6",
+   "texto": "Ej: mediterránea, asiática, vasca..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C6",
+   "texto": "Actúa como chef ejecutivo con especialidad en [TIPO DE COCINA]. Crea una receta de [NIVEL] usando [INGREDIENTE PRINCIPAL] como protagonista.\n\nContexto: mi restaurante es [DESCRIPCIÓN BREVE], ticket medio [TICKET €], [N] cubiertos.\n\nLa receta debe: [TÉCNICA PRINCIPAL], estar lista en [TIEMPO], respetar temporada [ESTACIÓN], evitar [ALÉRGENOS].\n\nFormato: nombre del plato, historia (2 frases), ingredientes con gramajes para [N] porciones, elaboración paso a paso, emplatado, maridaje."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A7",
+   "texto": "[NIVEL]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B7",
+   "texto": "Ej: alta cocina / cocina casual / street food"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A8",
+   "texto": "[INGREDIENTE PRINCIPAL]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B8",
+   "texto": "Ej: lubina, alcachofa, wagyu..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A9",
+   "texto": "[DESCRIPCIÓN BREVE DEL RESTAURANTE]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B9",
+   "texto": "Ej: restaurante de mercado, 40 cubiertos, Madrid"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A10",
+   "texto": "[TICKET MEDIO €]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B10",
+   "texto": "Ej: 45€"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A11",
+   "texto": "[N CUBIERTOS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B11",
+   "texto": "Ej: 40"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A12",
+   "texto": "[TÉCNICA PRINCIPAL]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B12",
+   "texto": "Ej: horno a baja temperatura, fermentación..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A13",
+   "texto": "[TIEMPO DE ELABORACIÓN]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B13",
+   "texto": "Ej: 45 minutos de mise en place"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A14",
+   "texto": "[ESTACIÓN]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B14",
+   "texto": "Ej: otoño, primavera..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A15",
+   "texto": "[ALÉRGENOS A EVITAR]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B15",
+   "texto": "Ej: frutos secos, mariscos, lactosa..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A16",
+   "texto": "[N PORCIONES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B16",
+   "texto": "Ej: 4 porciones"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A17",
+   "texto": "  Compatible: Cocina · ChatGPT · Claude · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A19",
+   "texto": "PLANTILLA 2 — Escandallo y food cost"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A20",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B20",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C20",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A21",
+   "texto": "[NOMBRE DEL PLATO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B21",
+   "texto": "Ej: Lubina al horno con jugo de algas"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C21",
+   "texto": "Calcula el escandallo completo del plato [NOMBRE DEL PLATO].\n\nIngredientes: [LISTA CON CANTIDAD Y PRECIO/KG]\nPrecio de venta objetivo: [€]\nTiempo de elaboración: [MINUTOS]\nCoste mano de obra/hora: [€]\n\nNecesito: tabla de costes por ingrediente, coste total MP, coste MO, margen bruto, food cost %, recomendación de precio de carta si el food cost supera el [X]%."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A22",
+   "texto": "[LISTA DE INGREDIENTES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B22",
+   "texto": "Ej: lubina 200g - 18€/kg / aceite oliva 20ml - 8€/L..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A23",
+   "texto": "[PRECIO DE VENTA €]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B23",
+   "texto": "Ej: 22€"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A24",
+   "texto": "[MINUTOS DE ELABORACIÓN]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B24",
+   "texto": "Ej: 20 minutos"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A25",
+   "texto": "[COSTE MO POR HORA €]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B25",
+   "texto": "Ej: 12€/hora"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A26",
+   "texto": "[FOOD COST MÁXIMO %]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B26",
+   "texto": "Ej: 30%"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A27",
+   "texto": "  Compatible: Costes · ChatGPT · Gemini · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A29",
+   "texto": "PLANTILLA 3 — Análisis de rentabilidad de carta"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A30",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B30",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C30",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A31",
+   "texto": "[N PLATOS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B31",
+   "texto": "Ej: 8 platos"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C31",
+   "texto": "Analiza la rentabilidad de estos [N] platos de mi carta usando ingeniería de menú:\n\n[TABLA: Nombre del plato | Precio venta | Food cost € | Unidades vendidas/semana]\n\nClasifica cada plato como: Estrella / Caballo de batalla / Puzzle / Perro.\n\nPara cada clasificación recomienda: mantener, rediseñar, eliminar o relanzar. Incluye el impacto estimado en el margen mensual de cada acción."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A32",
+   "texto": "[TABLA DE PLATOS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B32",
+   "texto": "Ej:\nCrudo de atún | 18€ | 4,50€ | 32 uds\nCarpaccio buey | 22€ | 6€ | 15 uds\n(Añade todos tus platos)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A33",
+   "texto": "  Compatible: Costes · Claude · ChatGPT · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A35",
+   "texto": "PLANTILLA 4 — Propuesta de menú para evento"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A36",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B36",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C36",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A37",
+   "texto": "[TIPO DE EVENTO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B37",
+   "texto": "Ej: boda, corporativo, cumpleaños, gala..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C37",
+   "texto": "Diseña una propuesta de menú para [TIPO DE EVENTO] de [N] personas.\n\nFecha/temporada: [FECHA/MES]\nEspacio: [TIPO DE ESPACIO]\nFormato servicio: [BUFFET / SENTADO / ESTACIONES / COCKTAIL]\nPresupuesto por persona: [€] (sin bebidas)\nRestricciones confirmadas: [LISTA]\nPerfil de invitados: [DESCRIPCIÓN]\n\nIncluye: aperitivo, menú completo con opciones alternativas para restricciones, estimación de personal necesario."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A38",
+   "texto": "[N PERSONAS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B38",
+   "texto": "Ej: 120 personas"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A39",
+   "texto": "[FECHA/MES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B39",
+   "texto": "Ej: junio, otoño 2025..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A40",
+   "texto": "[TIPO DE ESPACIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B40",
+   "texto": "Ej: finca rural, hotel, espacio propio..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A41",
+   "texto": "[FORMATO DE SERVICIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B41",
+   "texto": "Ej: buffet / sentado / estaciones / cocktail"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A42",
+   "texto": "[PRESUPUESTO POR PERSONA €]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B42",
+   "texto": "Ej: 65€ sin bebidas"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A43",
+   "texto": "[RESTRICCIONES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B43",
+   "texto": "Ej: 8 veganos, 3 celíacos, 2 sin lactosa"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A44",
+   "texto": "[PERFIL DE INVITADOS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B44",
+   "texto": "Ej: empresarial mixto, 35-55 años, Madrid"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A45",
+   "texto": "  Compatible: Catering · ChatGPT · Claude · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A47",
+   "texto": "PLANTILLA 5 — Post de Instagram"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A48",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B48",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C48",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A49",
+   "texto": "[RESTAURANTE/NEGOCIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B49",
+   "texto": "Ej: Restaurante La Xarxa, Barcelona"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C49",
+   "texto": "Escribe un post de Instagram para [RESTAURANTE/NEGOCIO] presentando [PLATO/PRODUCTO/NOVEDAD].\n\nDescripción: [DESCRIPCIÓN DEL PLATO]\nIngredientes a mencionar: [LISTA]\nTono: [ELEGANTE / CERCANO / PASIONAL / INFORMATIVO]\nCTA: [RESERVAR / VISITAR / PEDIR / SEGUIR]\n\nFormato: gancho en primera frase, texto de 150-200 palabras, 15-20 hashtags relevantes para [TIPO DE NEGOCIO] en [CIUDAD/PAÍS]."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A50",
+   "texto": "[PLATO/PRODUCTO/NOVEDAD]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B50",
+   "texto": "Ej: nuevo plato de temporada: tataki de atún"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A51",
+   "texto": "[DESCRIPCIÓN DEL PLATO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B51",
+   "texto": "Ej: tataki de atún rojo con ponzu cítrico y wakame..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A52",
+   "texto": "[INGREDIENTES A MENCIONAR]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B52",
+   "texto": "Ej: atún rojo, ponzu, alga wakame, sésamo"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A53",
+   "texto": "[TONO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B53",
+   "texto": "Ej: elegante / cercano / pasional / informativo"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A54",
+   "texto": "[CTA]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B54",
+   "texto": "Ej: reservar / visitar / pedir / seguir"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A55",
+   "texto": "[TIPO DE NEGOCIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B55",
+   "texto": "Ej: restaurante japonés, bar de tapas..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A56",
+   "texto": "[CIUDAD/PAÍS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B56",
+   "texto": "Ej: Barcelona, España"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A57",
+   "texto": "  Compatible: Marketing · ChatGPT · Claude · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A59",
+   "texto": "PLANTILLA 6 — Respuesta a reseña negativa"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A60",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B60",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C60",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A61",
+   "texto": "[TEXTO DE LA RESEÑA]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B61",
+   "texto": "Pega aquí el texto exacto de la reseña negativa"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C61",
+   "texto": "Responde a esta reseña negativa de forma profesional y constructiva:\n\n[PEGAR TEXTO DE LA RESEÑA]\n\nContexto de lo ocurrido (solo para tu referencia, no lo menciones literalmente): [CONTEXTO INTERNO]\n\nLa respuesta debe: agradecer el feedback, reconocer el problema si es legítimo, explicar brevemente la acción tomada, invitar a volver, máximo 100 palabras, firmada por [NOMBRE/CARGO]."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A62",
+   "texto": "[CONTEXTO INTERNO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B62",
+   "texto": "Ej: el cliente llegó 45 min tarde y reclamó el tiempo de espera"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A63",
+   "texto": "[NOMBRE/CARGO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B63",
+   "texto": "Ej: Carlos, Jefe de Sala / María, Propietaria"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A64",
+   "texto": "  Compatible: Marketing · Claude · ChatGPT · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A66",
+   "texto": "PLANTILLA 7 — Investigación de ingrediente"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A67",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B67",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C67",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A68",
+   "texto": "[NOMBRE DEL INGREDIENTE]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B68",
+   "texto": "Ej: koji, trufa negra, flor de saúco..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C68",
+   "texto": "Necesito incorporar [NOMBRE DEL INGREDIENTE] a mi carta de [TIPO DE RESTAURANTE].\n\nInvestiga y dame:\n1. Origen, variedades y estacionalidad en [PAÍS/REGIÓN]\n2. Perfil de sabor y aroma (descriptores precisos)\n3. Técnicas culinarias que lo potencian\n4. 5 combinaciones de food pairing que funcionen\n5. Proveedores de referencia en [CIUDAD/REGIÓN]\n6. Precio de mercado aproximado\n7. 3 ideas de platos concretos para mi tipo de restaurante"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A69",
+   "texto": "[TIPO DE RESTAURANTE]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B69",
+   "texto": "Ej: restaurante de cocina de mercado contemporánea"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A70",
+   "texto": "[PAÍS/REGIÓN]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B70",
+   "texto": "Ej: España, Cataluña, País Vasco..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A71",
+   "texto": "[CIUDAD/REGIÓN PROVEEDORES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B71",
+   "texto": "Ej: Barcelona, Madrid, España..."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A72",
+   "texto": "  Compatible: Deep Research · Perplexity · Claude · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A74",
+   "texto": "PLANTILLA 8 — Plan de contenido mensual"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A75",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B75",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C75",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A76",
+   "texto": "[MES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B76",
+   "texto": "Ej: marzo 2025"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C76",
+   "texto": "Crea el plan de contenido para redes sociales del mes de [MES] para [NOMBRE/TIPO DE NEGOCIO].\n\nRedes activas: [INSTAGRAM / FACEBOOK / TIKTOK]\nFrecuencia: [N] publicaciones por semana\nRecursos disponibles: [FOTOS / VIDEO / SOLO TEXTO]\nEventos/fechas especiales ese mes: [LISTA]\n\nPor cada publicación indica: día, formato, tema, idea principal del copy, hashtags sugeridos."
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A77",
+   "texto": "[NOMBRE/TIPO DE NEGOCIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B77",
+   "texto": "Ej: Restaurante La Xarxa, cocina mediterránea, Barcelona"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A78",
+   "texto": "[REDES ACTIVAS]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B78",
+   "texto": "Ej: Instagram + Facebook / TikTok"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A79",
+   "texto": "[N PUBLICACIONES/SEMANA]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B79",
+   "texto": "Ej: 4 publicaciones por semana"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A80",
+   "texto": "[RECURSOS DISPONIBLES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B80",
+   "texto": "Ej: fotos profesionales / solo móvil / video y fotos"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A81",
+   "texto": "[EVENTOS/FECHAS ESPECIALES]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B81",
+   "texto": "Ej: San Valentín, lanzamiento nueva carta, cumpleaños del restaurante"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A82",
+   "texto": "  Compatible: Marketing · ChatGPT · Claude · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A84",
+   "texto": "PLANTILLA 9 — Análisis de viabilidad de servicio nuevo"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A85",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B85",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C85",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A86",
+   "texto": "[NUEVO SERVICIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B86",
+   "texto": "Ej: brunch los domingos / servicio de delivery / catering corporativo / clases de cocina"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C86",
+   "texto": "Quiero añadir [NUEVO SERVICIO] a mi negocio [TIPO Y CAPACIDAD ACTUAL].\n\nRealiza un análisis de viabilidad con:\n- Inversión inicial estimada\n- Costes operativos adicionales/mes\n- Proyección de ingresos: escenario [PESIMISTA / REALISTA / OPTIMISTA]\n- Punto de equilibrio en meses\n- Personal adicional necesario\n- Impacto en operación actual\n- Cronograma de implementación: 90 días\n- Top 3 riesgos y cómo mitigarlos"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A87",
+   "texto": "[TIPO Y CAPACIDAD ACTUAL]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B87",
+   "texto": "Ej: restaurante 40 cubiertos, lunch + cena, 5 días/semana"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A88",
+   "texto": "[ESCENARIO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B88",
+   "texto": "Ej: pesimista / realista / optimista (o los tres)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A89",
+   "texto": "  Compatible: Deep Research · Claude · ChatGPT · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A91",
+   "texto": "PLANTILLA 10 — Feedback constructivo al equipo"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A92",
+   "texto": "Placeholder"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B92",
+   "texto": "Tu información (edita aquí)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C92",
+   "texto": "Prompt completo (copia y pega en la IA)"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A93",
+   "texto": "[PERFIL DEL EMPLEADO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B93",
+   "texto": "Ej: cocinero de partida fría / jefe de sala / pastelero en prácticas"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!C93",
+   "texto": "Necesito dar feedback a [PERFIL DEL EMPLEADO] sobre este problema: [DESCRIPCIÓN OBJETIVA].\n\nContexto: lleva [TIEMPO] en el equipo, el impacto en el negocio es [DESCRIPCIÓN DEL IMPACTO].\n\nAyúdame con:\n1. Cómo abrir la conversación sin generar defensividad\n2. Las frases exactas para describir el problema (modelo SBI)\n3. Cómo escuchar su perspectiva\n4. Cómo acordar un plan de mejora medible\n5. Cómo cerrar de forma positiva"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A94",
+   "texto": "[DESCRIPCIÓN OBJETIVA DEL PROBLEMA]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B94",
+   "texto": "Ej: lleva 3 semanas llegando tarde 15-20 min sin avisar"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A95",
+   "texto": "[TIEMPO EN EL EQUIPO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B95",
+   "texto": "Ej: 8 meses / 2 años"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A96",
+   "texto": "[DESCRIPCIÓN DEL IMPACTO]"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!B96",
+   "texto": "Ej: retrasa el mise en place y genera tensión en el equipo"
+  },
+  {
+   "id": "Bonus 2 — Plantillas!A97",
+   "texto": "  Compatible: Liderazgo · Claude · ChatGPT · AI Chef Pro"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A1",
+   "texto": "AI CHEF PRO — BONUS 3: Cheat Sheet — Los 20 Mejores Prompts"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A2",
+   "texto": "Consulta rápida para el día a día. Busca el número de prompt en el eBook o en AI Chef Pro para ver el prompt completo."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B3",
+   "texto": "Nombre del Prompt"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C3",
+   "texto": "Cuándo usarlo"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D3",
+   "texto": "Compatible con"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B4",
+   "texto": "Receta de autor desde ingrediente principal"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C4",
+   "texto": "Cuando quieres innovar en carta"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D4",
+   "texto": "AI Chef Pro · ChatGPT · Claude"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B5",
+   "texto": "Food cost de una receta"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C5",
+   "texto": "Antes de fijar precio de venta"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D5",
+   "texto": "AI Chef Pro · ChatGPT · Gemini"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B6",
+   "texto": "Ingeniería de menú completo"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C6",
+   "texto": "Revisión trimestral de carta"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D6",
+   "texto": "AI Chef Pro · Claude · ChatGPT"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B7",
+   "texto": "Escandallo profesional"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C7",
+   "texto": "Cada vez que creas un plato nuevo"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D7",
+   "texto": "AI Chef Pro · ChatGPT · Gemini"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B8",
+   "texto": "Menú para boda/evento"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C8",
+   "texto": "Al recibir solicitud de catering"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D8",
+   "texto": "AI Chef Pro · ChatGPT · Claude"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B9",
+   "texto": "Post Instagram de un plato"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C9",
+   "texto": "Lanzamiento de plato nuevo"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D9",
+   "texto": "AI Chef Pro · ChatGPT · Claude"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B10",
+   "texto": "Blog SEO local para restaurante"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C10",
+   "texto": "Mensual, para posicionamiento"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D10",
+   "texto": "AI Chef Pro · Claude · ChatGPT"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B11",
+   "texto": "Respuesta a reseña negativa"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C11",
+   "texto": "En 24h tras recibir la reseña"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D11",
+   "texto": "AI Chef Pro · Claude · ChatGPT"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B12",
+   "texto": "Plan de contenido mensual"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C12",
+   "texto": "Primer día de cada mes"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D12",
+   "texto": "AI Chef Pro · ChatGPT · Claude"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B13",
+   "texto": "Maridaje molecular"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C13",
+   "texto": "Al crear combinaciones nuevas"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D13",
+   "texto": "AI Chef Pro · Claude · Perplexity"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B14",
+   "texto": "Sustituto de ingrediente"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C14",
+   "texto": "Cuando falta producto en stock"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D14",
+   "texto": "AI Chef Pro · ChatGPT · Claude"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B15",
+   "texto": "Análisis de alérgenos"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C15",
+   "texto": "Al crear o modificar una receta"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D15",
+   "texto": "AI Chef Pro · ChatGPT · Claude"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B16",
+   "texto": "Ficha técnica con alérgenos"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C16",
+   "texto": "Documentación legal de carta"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D16",
+   "texto": "AI Chef Pro · ChatGPT · Gemini"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B17",
+   "texto": "Feedback constructivo"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C17",
+   "texto": "Antes de conversación difícil"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D17",
+   "texto": "AI Chef Pro · Claude · ChatGPT"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B18",
+   "texto": "Rutina mindfulness pre-servicio"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C18",
+   "texto": "Servicios de alta presión"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D18",
+   "texto": "AI Chef Pro · Claude · ChatGPT"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B19",
+   "texto": "Tendencias gastronómicas"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C19",
+   "texto": "Planificación de nueva temporada"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D19",
+   "texto": "AI Chef Pro · Claude · Perplexity"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B20",
+   "texto": "Estudio de mercado"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C20",
+   "texto": "Antes de abrir o reformular concepto"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D20",
+   "texto": "AI Chef Pro · Claude · Perplexity"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B21",
+   "texto": "Benchmarking competitivo"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C21",
+   "texto": "Análisis semestral de competencia"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D21",
+   "texto": "AI Chef Pro · Claude · Perplexity"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B22",
+   "texto": "Auditoría experiencia cliente"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C22",
+   "texto": "Revisión anual del negocio"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D22",
+   "texto": "AI Chef Pro · Claude · Perplexity"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!B23",
+   "texto": "Generador maestro de prompts"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!C23",
+   "texto": "Para crear tus propios prompts"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!D23",
+   "texto": "AI Chef Pro · Claude · ChatGPT"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A25",
+   "texto": "  REGLAS DE ORO para usar prompts en hostelería"
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A26",
+   "texto": "  1.  Un prompt = una tarea. No mezcles objetivos en el mismo mensaje."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A27",
+   "texto": "  2.  Rellena siempre los [PLACEHOLDERS]. Cuanto más concreto, mejor el resultado."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A28",
+   "texto": "  3.  Si la respuesta no es buena, no repitas el mismo prompt. Añade más contexto."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A29",
+   "texto": "  4.  El rol al principio del prompt mejora la calidad hasta un 40%."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A30",
+   "texto": "  5.  Pide siempre el formato que necesitas: tabla, lista, email, paso a paso."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A31",
+   "texto": "  6.  Para análisis profundos usa Perplexity o Claude con web search activado."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A32",
+   "texto": "  7.  Guarda tus mejores prompts personalizados. Son tu activo más valioso."
+  },
+  {
+   "id": "Bonus 3 — Cheat Sheet!A34",
+   "texto": "Accede a todos los prompts interactivos en: aichef.pro  |  AI Chef Pro — La IA para toda la gastronomía"
+  }
+ ]
+}

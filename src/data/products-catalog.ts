@@ -56,11 +56,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'pro-prompts-ebook',
     url: '/pro-prompts-ebook',
     price: '€9',
-    name: { es: 'Pro Prompts eBook', en: 'Pro Prompts eBook' },
+    name: { es: 'Pro Prompts eBook', en: 'Gastro Pro Prompts eBook' },
     description: {
       es: '200+ prompts profesionales probados para chefs y propietarios.',
-      en: '200+ proven professional prompts for chefs and owners.',
+      en: '300 professional prompts for chefs and owners.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `ai-prompts-for-restaurants`, $14 USD.
+    urlByLang: { en: '/en/digital-products/ai-prompts-for-restaurants' },
+    priceByLang: { en: '$14' },
   },
   'kit-escandallos': {
     id: 'kit-escandallos',
