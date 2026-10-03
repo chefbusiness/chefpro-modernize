@@ -99,16 +99,37 @@ Lo grave venía **heredado del ES** (la traducción fiel lo arrastró). **Pendie
 - Preview `deploy-preview-109` en verde (10/10 descargas). Correo EN:
   `scripts/productos-digitales/emails/broadcast-restaurant-financial-plan-templates-lanzamiento-en.html` → **25-oct 14:00Z**.
 
-## 3. Al volver John con los dos Payment Links
+## 3. ▶️ RETOMAR (4-oct): Payment Links → publicar los 4 productos
 
-1. Env vars en Netlify (scope builds, contexto all): `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS`,
-   `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT`, `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT` y `VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT`; comprobar con la CLI de Stripe importe USD y redirección `…/access?session_id=`.
-2. En la rama del eBook: `python3 scripts/productos-digitales/sync-payment-links.py` → commit → merge #106 → gates LIVE
-   (`gate-flujo-postpago.py --only ai-prompts-for-restaurants`, `tienda-gate.py --base https://aichef.pro`).
-3. Rama del HACCP: `git merge origin/main`, `sync-payment-links.py` → merge #107 → gates LIVE con `--only haccp-templates`.
-   Igual con #108 (`--only restaurant-schedule-templates`) y #109 (`--only restaurant-financial-plan-templates`).
-4. Programar los 4 correos EN (10, 15, 20 y 25-oct, 14:00Z; comprobar antes que el 25 no hay correo ES) con `scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`).
-5. Limpiar worktrees: `git worktree remove <scratchpad>/wt-haccp`, `wt-staff` y `wt-fin`; las ramas `-f3` ya están fusionadas.
+Estado al cerrar (3-oct, noche): las 4 ramas están pusheadas y son una PILA: #109 contiene #108, #107 y #106
+(comprobado con `git merge-base --is-ancestor`). Los worktrees de esta sesión vivían en `/private/tmp` y mueren al apagar
+el Mac: no hacen falta (todo está en GitHub); al empezar, `git worktree prune`.
+
+1. **John crea los 4 Payment Links** en Stripe con la ficha de arriba (USD, Adaptive Pricing, redirección
+   `…/access?session_id={CHECKOUT_SESSION_ID}`, descripción en prosa) y pasa las 4 URL.
+2. **Comprobar cada link** con la CLI de Stripe: importe USD y URL de redirección (como en el Restaurant Inventory Kit).
+3. **Env vars** (scope builds, contexto all): `netlify env:set <VAR> <url> --scope builds` para
+   `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS`, `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT`,
+   `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT`, `VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT`.
+4. **Una sola sincronización y un solo merge**: `git worktree add <scratchpad>/wt-pub origin/feat/restaurant-financial-plan-templates-en`
+   (rama local con el mismo nombre) → `python3 scripts/productos-digitales/sync-payment-links.py` → commit + push → esperar el
+   preview del #109 → `gate-flujo-postpago.py --base https://deploy-preview-109--aichefpro.netlify.app --crypto-products all
+   --crypto-exclude pro-prompts-ebook --only <pid>` para los 4 (ya sin «#comprar») → **merge del #109 con MERGE COMMIT (no
+   squash)**: así GitHub da por fusionados #106, #107 y #108 solos (sus cabezas quedan dentro de main). Si no se cierran
+   solos, cerrarlos a mano citando el merge.
+5. **Gates LIVE** tras el deploy de producción: `gate-flujo-postpago.py --only <pid>` (los 4), `tienda-gate.py --base
+   https://aichef.pro`, `robots-gate.py --live`, `miselup-gate.py`, `datafast-gate.py`; tarjetas vivas en `/en/digital-products`.
+   Acceso admin (sin compra de prueba, regla de John): John genera un enlace en `/admin/generar-acceso` para un producto y se
+   comprueba que el dashboard descarga.
+6. **Correos EN** (segmento EN `d06ed053-4327-4bec-9e3b-25a9ee9f6704`, from `AI Chef Pro <hello@news.aichef.pro>`):
+   `python3 scripts/productos-digitales/emails/resend-broadcast.py --html <fichero> --subject "<asunto del comentario>"
+   --segment d06ed053-4327-4bec-9e3b-25a9ee9f6704 --from "AI Chef Pro <hello@news.aichef.pro>" --test <email de John>` y,
+   con su OK, `--scheduled-at`: eBook **2026-10-10T14:00:00Z**, HACCP **2026-10-15T14:00:00Z**, Staff **2026-10-20T14:00:00Z**,
+   Financial **2026-10-25T14:00:00Z** (comprobar antes en Resend que esos días no sale un correo ES). Ficheros:
+   `scripts/productos-digitales/emails/broadcast-{ai-prompts-for-restaurants,haccp-templates,restaurant-schedule-templates,restaurant-financial-plan-templates}-lanzamiento-en.html`.
+7. **Verificación humana** (recomendada antes de anunciar): abrir 2-3 xlsx por kit en Excel/LibreOffice (colores,
+   impresión, gráficos del Plan Financiero) y repasar las 4 landings en el Chrome de Windows a escritorio y a 360 px.
+8. Cerrar: handoff + memoria + `TIENDA-INTERNACIONAL.md` (LIVE) + commit `Via: Claude Code` + push; borrar ramas locales fusionadas.
 
 ## 4. Pendientes que NO son de estos productos
 
@@ -123,3 +144,9 @@ Lo grave venía **heredado del ES** (la traducción fiel lo arrastró). **Pendie
 - `photoanalysisd` congelado en el Mac (`pkill -STOP`); reanudar con `pkill -CONT photoanalysisd` cuando se quiera.
 
 Sesión Claude Code · `Via: Claude Code`.
+
+## Cierre de la sesión (3-oct, noche, Claude Code)
+
+Producción EN parada por John con 4 productos listos a falta de los Payment Links. Coste aproximado: ≈ 2,5 M de tokens de
+subagentes por kit (F1 0,3-0,45 · textos 0,4-0,7 · F2 0,4-0,5 · F3 0,4 · revisión 0,3-0,35 · arreglos 0,3-0,4) y ≈ 2,4 M el eBook.
+En el Mac quedó congelado `photoanalysisd` (`pkill -STOP`); el reinicio lo restablece.
