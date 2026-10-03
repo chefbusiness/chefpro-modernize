@@ -109,6 +109,40 @@ Barridos los dos ficheros del molde ▸ y sus «Instrucciones» con «carta»,
     —que reescribe entera `motor.reescribir_instrucciones`— no contienen
     ninguno de los cinco términos.
 
+VERSIÓN 2.1 (D53 de `guia-chocolateria-SPEC.md`, 3-oct-2026)
+================================================================================
+Dos correcciones y nada más («un dictado de John = sólo ese cambio»):
+
+  · **Los ocho alérgenos del Anexo II** del Rgto. 1169/2011 que aplican a una
+    bombonería (ficha `CHN-34b`) en las TRES celdas de declaración:
+    `01!Apertura` t.2, `04!Dependiente` t.2 y `06!Pascua` t.5 (`ALERGENOS_8`).
+    «Frutos secos» no es una entrada del anexo: cacahuetes (punto 5), frutos de
+    cáscara (punto 8) y sésamo (punto 11) son tres entradas independientes, y
+    faltaban los sulfitos (punto 12). Las otras siete celdas del kit que dicen
+    «frutos secos» (`02!Moldeado` B21, B43 y B46 · `03!Mensual` B6 ·
+    `05!Semanal` B23 · `05!Mensual` B15 · `BONUS-02!Calendario` C13) nombran un
+    ingrediente o una familia de producto y NO se tocan (R2-A4).
+  · **La humedad objetivo del AIRE del obrador**, unificada en 50-60 % (R2-A5):
+    el 02 («Templado» y su «Instrucciones») y el BONUS-01 decían «menos del
+    60 %» y el 08 ya decía 50-60 %. La de vitrina (menos del 55 %) y la de
+    cámara (50-60 %) no cambian.
+
+Cómo se regenera sin romper la idempotencia: el pipeline corre sobre lo
+PUBLICADO en `dl/`, que desde el 23-ago es la 2.0. Por eso cada sitio acepta
+como clave el texto de la v1 de fábrica Y el que publicó la 2.0
+(`_sustituir_alguno`), las dos tareas que la 2.0 INSERTÓ se reescriben en su
+sitio antes de que `_insertar_tras` mire si ya están (`_actualizar_si_esta`; si
+no, duplicaría la fila) y la viñeta de «Instrucciones» del 02 se reescribe en
+su sitio (`_linea_instrucciones`), porque `_instrucciones` no vuelve a emitir un
+bloque cuyo encabezado ya existe. Desde la v1 y desde la 2.0 sale la misma 2.1,
+y la 2.ª pasada no encuentra nada que cambiar. Medido el 3-oct-2026: dry-run
+desde la v1.1 de git (`4c38fcc1^`) frente a dry-run desde `dl/`, `regresion.py
+--estricto` = 0 diferencias (la huella de `main.digest` sólo ve el `title` de
+08 y 09, que la v1.1 traía de otra forma y que no es de esta versión).
+
+Versión por fichero: sólo suben a 2.1 los cinco ficheros que cambian
+(`VERSIONES`); los otros seis siguen diciendo «Versión 2.0 · agosto 2026».
+
 FUERA DE ESTE BARRIDO, PERO MEDIDO (para el orquestador)
 ================================================================================
 El mismo vocabulario sobrevive en dos celdas de los ficheros P4, que el encargo
@@ -241,6 +275,64 @@ def _sustituir(ws, viejo, nuevo, col=2):
     r = _exige(ws, viejo, col)
     ws.cell(row=r, column=col).value = nuevo
     return r
+
+
+def _sustituir_alguno(ws, viejos, nuevo, col=2):
+    """`_sustituir` con VARIAS claves (D53): el texto de la v1 y el de la 2.0.
+
+    `_sustituir` exige el literal de fábrica, y sobre lo publicado (la 2.0) ese
+    literal ya no está: lanzaría `AnclaPerdida`. Aquí vale cualquiera de las
+    claves, en orden. Devuelve la fila, o None si `nuevo` ya estaba; si no
+    está ni el nuevo ni ninguna clave, el molde ha cambiado y se para.
+    """
+    if _fila(ws, nuevo, col) is not None:
+        return None
+    for viejo in viejos:
+        r = _fila(ws, viejo, col)
+        if r is not None:
+            ws.cell(row=r, column=col).value = nuevo
+            return r
+    raise AnclaPerdida(f'«{ws.title}»: no encuentro {L(col)}= ninguna de '
+                       f'{viejos!r} (kit-tareas-chocolateria)')
+
+
+def _actualizar_si_esta(ws, viejo, nuevo, col=2):
+    """Reescribe EN SU SITIO una tarea que insertó una versión anterior (D53).
+
+    `_insertar_tras` decide si ya insertó mirando el texto de la PRIMERA
+    tarea: con el texto nuevo no encontraría la fila de la 2.0 e insertaría
+    otra debajo del ancla —la tarea saldría dos veces—. Se llama ANTES de
+    `_insertar_tras`: si está el texto de la 2.0, se sustituye y el insertor
+    ya encuentra el nuevo; si no está (regeneración desde la v1), no hace nada
+    y el insertor la crea con el texto nuevo. Devuelve la fila o None.
+    """
+    if _fila(ws, nuevo, col) is not None:
+        return None
+    r = _fila(ws, viejo, col)
+    if r is None:
+        return None
+    ws.cell(row=r, column=col).value = nuevo
+    return r
+
+
+def _linea_instrucciones(wb, viejo, nuevo):
+    """Reescribe EN SU SITIO una viñeta «▸ …» de «Instrucciones» (D53).
+
+    `_instrucciones` no vuelve a emitir un bloque cuyo encabezado ya existe, así
+    que una viñeta publicada por la 2.0 no se actualizaría cambiando sólo la
+    constante. Devuelve la fila o None (no estaba: o ya está la nueva, o el
+    bloque todavía no existe y lo creará `_instrucciones` con el texto nuevo).
+    """
+    if 'Instrucciones' not in wb.sheetnames:
+        return None
+    ws = wb['Instrucciones']
+    col = 2 if any(isinstance(ws.cell(row=r, column=2).value, str)
+                   for r in range(1, min(ws.max_row, 12) + 1)) else 1
+    for r in range(1, ws.max_row + 1):
+        if _norm(ws.cell(row=r, column=col).value) == _norm('▸ ' + viejo):
+            ws.cell(row=r, column=col).value = '▸ ' + nuevo
+            return r
+    return None
 
 
 def _fila_en_seccion(ws, banda, texto, col=2):
@@ -602,13 +694,33 @@ VITRINA = ('Comprobar que la vitrina de bombonería mantiene 16-18 °C y no '
 REGISTRO_TEMP = ('Registrar las temperaturas de obrador, cámara y nevera: si '
                  'tienes el Pack APPCC, en su hoja de temperaturas; si no, '
                  'aquí mismo en «Notas»')
+#: D53 (2.1) — los ocho alérgenos del Anexo II del Rgto. 1169/2011 que aplican
+#: a una bombonería (ficha `CHN-34b`). La 2.0 decía «frutos secos», que NO es
+#: una entrada del anexo: cacahuetes (punto 5), frutos de cáscara (punto 8) y
+#: sésamo (punto 11) son tres entradas independientes —un praliné de cacahuete
+#: y un crocanti de sésamo se etiquetan con su propio alérgeno— y faltaban los
+#: sulfitos (punto 12). La lecitina de soja cuenta: las exenciones del punto 6
+#: son otras. Es la MISMA lista en las tres celdas de declaración del kit
+#: (01 · 04 · 06) y sólo en ellas: las otras siete celdas que dicen «frutos
+#: secos» nombran un ingrediente o una familia de producto (R2-A4).
+ALERGENOS_8 = ('leche, huevo, cereales con gluten, soja, cacahuetes, frutos '
+               'de cáscara, sésamo y sulfitos')
 #: DOM-19 (equivalente) — el etiquetado del expositor es lo único que ve el
 #: cliente alérgico. En chocolatería los alérgenos NO son un caso raro: leche,
-#: frutos secos, soja (lecitina) y trazas están en casi toda la vitrina.
+#: frutos de cáscara, soja (lecitina) y trazas están en casi toda la vitrina.
+#: (2.1: el inciso va con la raya pegada a su primera y a su última palabra,
+#: que la 2.0 traía con un espacio de más tras la raya de apertura.)
 ETIQUETADO = ('Verificar el etiquetado de cada producto expuesto: '
               'denominación, precio (y precio por kilo si se vende al peso) y '
-              'los alérgenos declarados — leche, frutos secos, soja, gluten, '
-              'huevo y sésamo— más las trazas')
+              'los alérgenos declarados —' + ALERGENOS_8 + '— más las '
+              'trazas')
+#: Claves de búsqueda de `ETIQUETADO`: el literal de fábrica (v1) y lo que
+#: publicó la 2.0 el 23-ago-2026.
+ETIQUETADO_V1 = 'Verificar etiquetado de alérgenos en cada producto expuesto'
+ETIQUETADO_V20 = ('Verificar el etiquetado de cada producto expuesto: '
+                  'denominación, precio (y precio por kilo si se vende al '
+                  'peso) y los alérgenos declarados — leche, frutos secos, '
+                  'soja, gluten, huevo y sésamo— más las trazas')
 
 CIERRE_CAMARAS = ('Comprobar y registrar las temperaturas antes de cerrar: '
                   'cámara de conservación 15-18 °C y nevera de rellenos '
@@ -679,12 +791,12 @@ def _f01(wb, cambios):
         cambios.append('«Apertura»: la referencia al APPCC deja de dar por '
                        'hecho que el cliente lo tiene y ofrece «Notas» como '
                        'alternativa — §2.5 / DOM-23 (equivalente)')
-    if _sustituir(ws, 'Verificar etiquetado de alérgenos en cada producto '
-                      'expuesto', ETIQUETADO):
-        cambios.append('«Apertura»: el etiquetado nombra los alérgenos que de '
-                       'verdad hay en una vitrina de bombonería y añade el '
-                       'precio por kilo de la venta al peso — DOM-19 '
-                       '(equivalente)')
+    if _sustituir_alguno(ws, [ETIQUETADO_V1, ETIQUETADO_V20], ETIQUETADO):
+        cambios.append('«Apertura»: el etiquetado nombra los ocho alérgenos '
+                       'del Anexo II que hay en una vitrina de bombonería '
+                       '(cacahuetes, frutos de cáscara y sésamo por separado, '
+                       'y los sulfitos) y el precio por kilo de la venta al '
+                       'peso — DOM-19 (equivalente) + D53 (2.1)')
     if _sustituir(ws, 'Activar TPV y verificar fondo de caja', TPV_APERTURA):
         cambios.append('«Apertura»: el TPV y el fondo de caja se COMPRUEBAN '
                        'aquí y se cuentan en «Apertura de Caja» del 09, que es '
@@ -750,11 +862,31 @@ def _f01(wb, cambios):
 #: El control que decide si el día sale bien o se tira: templar con el obrador
 #: a 24 °C no cristaliza la manteca en forma β y el bombón sale mate, blando y
 #: con bloom en 48 h. No estaba en ninguna de las 11 hojas.
+#:
+#: D53 / R2-A5 (2.1) — la humedad objetivo del AIRE del obrador se publicaba de
+#: dos maneras: «menos del 60 %» aquí, en esta hoja de «Instrucciones» y en el
+#: BONUS-01, y «50-60 %» en el 08 (`OBRADOR_APERTURA`). Queda en 50-60 % en las
+#: cuatro, que es también lo que publica la guía hermana (D31).
 CLIMA_OBRADOR = [
     ('Comprobar la temperatura y la humedad del obrador ANTES de templar: '
-     'objetivo 18-20 °C y menos del 60 % de humedad (por encima, la manteca '
-     'no cristaliza y aparece bloom) — anota la lectura: ____ °C', 'Obrador'),
+     'objetivo 18-20 °C y 50-60 % de humedad (por encima, la manteca no '
+     'cristaliza y aparece bloom) — anota la lectura: ____ °C', 'Obrador'),
 ]
+#: Lo que publicó la 2.0: clave para reescribir EN SU SITIO la fila que ya
+#: insertó (`_actualizar_si_esta`) en vez de insertar otra.
+CLIMA_OBRADOR_V20 = ('Comprobar la temperatura y la humedad del obrador ANTES '
+                     'de templar: objetivo 18-20 °C y menos del 60 % de '
+                     'humedad (por encima, la manteca no cristaliza y aparece '
+                     'bloom) — anota la lectura: ____ °C')
+#: La misma ventana, en la viñeta de «Instrucciones» del 02 (sin el «▸ »).
+VENTANA_TEMPLADO = ('Antes de templar se comprueba el AIRE del obrador: '
+                    '18-20 °C y 50-60 % de humedad. Las tres curvas de '
+                    'cobertura de esta hoja sólo funcionan dentro de esa '
+                    'ventana.')
+VENTANA_TEMPLADO_V20 = ('Antes de templar se comprueba el AIRE del obrador: '
+                        '18-20 °C y menos del 60 % de humedad. Las tres curvas '
+                        'de cobertura de esta hoja sólo funcionan dentro de '
+                        'esa ventana.')
 TEST_NEGRO = ('Test de templado en punta de espátula: debe secar en 3-5 min a '
               '20 °C, con brillo, snap seco y contracción en el molde. Si no, '
               'volver a fundir y templar — no se moldea «a ver si sale»')
@@ -888,6 +1020,11 @@ def _tabla_vida(ws, cambios):
 def _f02(wb, cambios):
     tocado = False
     ws = wb['Templado']
+    if _actualizar_si_esta(ws, CLIMA_OBRADOR_V20, CLIMA_OBRADOR[0][0]):
+        cambios.append('«Templado»: la humedad objetivo del obrador antes de '
+                       'templar pasa de «menos del 60 %» a 50-60 %, la misma '
+                       'de las otras tres hojas que la publican — D53 / R2-A5 '
+                       '(2.1)')
     if _insertar_tras(ws, 'Verificar stock de cobertura blanca (28-33% cacao)',
                       CLIMA_OBRADOR):
         cambios.append('«Templado»: temperatura y humedad del OBRADOR antes de '
@@ -948,10 +1085,12 @@ def _f02(wb, cambios):
     _renumerar_p4(ws)
     _dv_extender(ws)
 
+    if _linea_instrucciones(wb, VENTANA_TEMPLADO_V20, VENTANA_TEMPLADO):
+        cambios.append('Instrucciones: la ventana de templado dice 50-60 % de '
+                       'humedad, como la tarea de «Templado» — D53 / R2-A5 '
+                       '(2.1)')
     if _instrucciones(wb, 'Templado y conservación:', [
-            'Antes de templar se comprueba el AIRE del obrador: 18-20 °C y '
-            'menos del 60 % de humedad. Las tres curvas de cobertura de esta '
-            'hoja sólo funcionan dentro de esa ventana.',
+            VENTANA_TEMPLADO,
             'Al pie de «Moldeado» tienes una tabla editable de vida útil por '
             'familia: ajústala a tu fórmula. Está fuera del contador porque '
             'es una referencia, no una tarea.',
@@ -1053,10 +1192,15 @@ ENCARGOS = ('Gestionar encargos y pedidos por adelantado: al CONFIRMAR el '
             'encargo, dejar por escrito alérgenos e intolerancias, unidades, '
             'fecha y hora de recogida, precio, señal cobrada y condiciones de '
             'cancelación')
+#: D53 (2.1) — los ocho del Anexo II, la misma lista que `ETIQUETADO`.
 ETIQUETADO_TIENDA = ('Verificar el etiquetado de cada referencia: precio, '
                      'precio por kilo si se vende al peso, y los alérgenos '
-                     'declarados (leche, frutos secos, soja, gluten, huevo y '
-                     'sésamo) más las trazas')
+                     'declarados (' + ALERGENOS_8 + ') más las trazas')
+ETIQUETADO_TIENDA_V1 = 'Verificar etiquetado de precios y alérgenos'
+ETIQUETADO_TIENDA_V20 = ('Verificar el etiquetado de cada referencia: precio, '
+                         'precio por kilo si se vende al peso, y los '
+                         'alérgenos declarados (leche, frutos secos, soja, '
+                         'gluten, huevo y sésamo) más las trazas')
 TEMP_TIENDA = ('Vigilar la temperatura de la tienda (20-22 °C) y la de la '
                'vitrina (16-18 °C): por encima el bombón suda y pierde brillo '
                '— anota la lectura: ____ °C')
@@ -1064,11 +1208,13 @@ TEMP_TIENDA = ('Vigilar la temperatura de la tienda (20-22 °C) y la de la '
 
 def _f04(wb, cambios):
     ws = wb['Dependiente']
-    if _sustituir(ws, 'Verificar etiquetado de precios y alérgenos',
-                  ETIQUETADO_TIENDA):
-        cambios.append('«Dependiente»: el etiquetado nombra los alérgenos '
-                       'reales de una vitrina de bombonería y el precio por '
-                       'kilo de la venta al peso — DOM-19 (equivalente)')
+    if _sustituir_alguno(ws, [ETIQUETADO_TIENDA_V1, ETIQUETADO_TIENDA_V20],
+                         ETIQUETADO_TIENDA):
+        cambios.append('«Dependiente»: el etiquetado nombra los ocho '
+                       'alérgenos del Anexo II de una vitrina de bombonería '
+                       '(cacahuetes, frutos de cáscara y sésamo por separado, '
+                       'y los sulfitos) y el precio por kilo de la venta al '
+                       'peso — DOM-19 (equivalente) + D53 (2.1)')
     if _sustituir(ws, 'Gestionar encargos especiales y pedidos por adelantado',
                   ENCARGOS):
         cambios.append('«Dependiente»: al confirmar el encargo se dejan por '
@@ -1273,9 +1419,17 @@ DOMICILIO = ('Gestionar los pedidos especiales y las entregas a domicilio: '
              'confirmar por escrito alérgenos, dirección, franja de entrega y '
              'quién recibe; en reparto propio, el producto viaja por debajo '
              'de 18 °C y nunca en el maletero al sol')
+#: D53 (2.1) — la 2.0 enumeraba CINCO alérgenos («leche, frutos secos, soja,
+#: gluten y huevo»), justo la lista corta que la verificación legal de la guía
+#: hermana prohíbe escribir. Ahora, los ocho del Anexo II (`ALERGENOS_8`).
 ENVASAR_PASCUA = ('Envasar y etiquetar la colección de Pascua: denominación, '
                   'peso neto, lote, consumo preferente y alérgenos declarados '
-                  '(leche, frutos secos, soja, gluten y huevo)')
+                  '(' + ALERGENOS_8 + ')')
+ENVASAR_PASCUA_V1 = 'Envasar y etiquetar colección de Pascua'
+ENVASAR_PASCUA_V20 = ('Envasar y etiquetar la colección de Pascua: '
+                      'denominación, peso neto, lote, consumo preferente y '
+                      'alérgenos declarados (leche, frutos secos, soja, gluten '
+                      'y huevo)')
 
 
 def _f06(wb, cambios):
@@ -1305,11 +1459,12 @@ def _f06(wb, cambios):
     _dv_extender(ws)
 
     ws = wb['Pascua']
-    if _sustituir(ws, 'Envasar y etiquetar colección de Pascua',
-                  ENVASAR_PASCUA):
+    if _sustituir_alguno(ws, [ENVASAR_PASCUA_V1, ENVASAR_PASCUA_V20],
+                         ENVASAR_PASCUA):
         cambios.append('«Pascua»: el etiquetado enumera lo que exige el '
                        'Rgto. 1169/2011 (denominación, peso neto, lote, '
-                       'consumo preferente y alérgenos) — DOM-19 (equivalente)')
+                       'consumo preferente y los ocho alérgenos del Anexo II '
+                       'de una bombonería) — DOM-19 (equivalente) + D53 (2.1)')
     _renumerar_p4(ws)
     _dv_extender(ws)
 
@@ -1330,14 +1485,21 @@ def _f06(wb, cambios):
 # ==========================================================================
 # BONUS-01-briefing-servicio.xlsx — «Briefing»
 # ==========================================================================
+#: D53 / R2-A5 (2.1) — misma ventana de humedad que `CLIMA_OBRADOR`: 50-60 %.
 CLIMA_BRIEFING = [
     ('Temperatura y humedad del obrador al arrancar: ____ °C / ____ % '
-     '(objetivo 18-20 °C y menos del 60 %)', 'Producción'),
+     '(objetivo 18-20 °C y 50-60 %)', 'Producción'),
 ]
+CLIMA_BRIEFING_V20 = ('Temperatura y humedad del obrador al arrancar: '
+                      '____ °C / ____ % (objetivo 18-20 °C y menos del 60 %)')
 
 
 def _bonus01(wb, cambios):
     ws = wb['Briefing']
+    if _actualizar_si_esta(ws, CLIMA_BRIEFING_V20, CLIMA_BRIEFING[0][0]):
+        cambios.append('«Briefing»: la humedad objetivo del obrador pasa de '
+                       '«menos del 60 %» a 50-60 %, la misma del resto del '
+                       'kit — D53 / R2-A5 (2.1)')
     if _insertar_tras(ws, 'Coberturas necesarias: negra ___ kg / leche ___ kg '
                           '/ blanca ___ kg', CLIMA_BRIEFING):
         cambios.append('«Briefing»: la reunión de 5 minutos empieza por el '
@@ -1761,6 +1923,20 @@ TRIO = {
 #: fuera de alcance en este kit por ser P4.
 SOLO_TEXTOS = ('07-plantilla-personalizable.xlsx',)
 
+#: D53 — versión POR FICHERO. Sólo suben a 2.1 los cinco ficheros que cambian
+#: en ella; los otros seis siguen en la 2.0 de agosto («Versión 2.1» en un
+#: fichero idéntico al de la 2.0 le diría al cliente que algo cambió donde no
+#: cambió nada). `main.py` pasa esta tabla a `motor.contexto()` y el motor la
+#: consulta al sellar la línea de versión de «Instrucciones» y el `subject`;
+#: los gates `version_desfasada` y `metadata` de `main.py` exigen la misma.
+VERSIONES = {
+    '01-apertura-cierre.xlsx': ('2.1', 'octubre 2026'),
+    '02-partidas-produccion.xlsx': ('2.1', 'octubre 2026'),
+    '04-tareas-perfiles.xlsx': ('2.1', 'octubre 2026'),
+    '06-eventos-temporada.xlsx': ('2.1', 'octubre 2026'),
+    'BONUS-01-briefing-servicio.xlsx': ('2.1', 'octubre 2026'),
+}
+
 
 def post(wb, fname, cambios):
     """CONTENIDO sobre un libro ya normalizado por `motor.aplicar`.
@@ -1795,5 +1971,5 @@ def post(wb, fname, cambios):
     # fichero P4 son los contadores, y `normalizar_p4` los vuelve a registrar
     # todos con su coordenada actual.
     motor.REGISTRO.clear()
-    motor.normalizar_p4(wb, cambios)
+    motor.normalizar_p4(wb, cambios, fname=fname)      # D53: versión por fichero
     return tocado

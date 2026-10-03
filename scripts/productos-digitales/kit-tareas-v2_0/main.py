@@ -834,17 +834,20 @@ def gate_metadata(carpeta, nombres):
     un producto v2.0) vivió cuatro tandas precisamente porque ningún gate miraba
     las propiedades de los ficheros fuera del molde ▸ — el censo mira las hojas.
     """
-    esperado_sub = '{} · v2.0'.format(
-        motor.CTX.get('sufijo') or 'Kit de Tareas Recurrentes Pro')
+    sufijo_kit = motor.CTX.get('sufijo') or 'Kit de Tareas Recurrentes Pro'
+    esperado_sub = '{} · v{}'.format(sufijo_kit, motor.version_de()[0])
     esperado_kw = motor.keywords_del_kit()
     mal, detalle, propias = [], [], []
     for n in nombres:
         p = openpyxl.load_workbook(os.path.join(carpeta, n)).properties
         detalle.append({'fichero': n, 'title': p.title, 'subject': p.subject,
                         'creator': p.creator, 'keywords': p.keywords})
-        if p.subject != esperado_sub:
+        # D53 — la versión se exige POR FICHERO (`motor.version_de`): sin tabla
+        # de versiones del kit es la de la familia y el gate es el de siempre.
+        esperado_n = '{} · v{}'.format(sufijo_kit, motor.version_de(n)[0])
+        if p.subject != esperado_n:
             mal.append(f'{n}: subject = {p.subject!r} (esperado '
-                       f'{esperado_sub!r})')
+                       f'{esperado_n!r})')
         if p.creator != 'AI Chef Pro':
             mal.append(f'{n}: creator = {p.creator!r}')
         if not motor.keywords_ok(p.keywords):
@@ -910,9 +913,11 @@ def gate_dv_y_bio(carpeta, nombres):
                 con_bio += 1
             else:
                 sin_bio.append(n)
-            if motor.version_line() not in texto:
+            # D53 — la línea que le toca a ESTE fichero (2.1 en los que suben
+            # de versión por su cuenta, la de la familia en el resto).
+            if motor.version_line(n) not in texto:
                 version_mal.append(f'{n}:Instrucciones: no dice '
-                                   f'«{motor.version_line()}»')
+                                   f'«{motor.version_line(n)}»')
         if not motor.en_alcance(wb):
             continue
         for ws in wb.worksheets:
@@ -1320,6 +1325,19 @@ def main():
             log(f'  {modulo} cargado')
         except ImportError:
             log(f'  {modulo}.py no existe — sólo motor')
+    # D53 — versión por fichero. La tabla `VERSIONES` del módulo de contenido
+    # se lee TAMBIÉN con `--solo motor`: el motor sella la línea de versión y
+    # el `subject` de todos los ficheros, y sin la tabla devolvería a la 2.0
+    # los que ya están en la 2.1. Sin tabla (el resto de la familia), {}.
+    versiones = {}
+    try:
+        versiones = dict(getattr(contenido or importlib.import_module(modulo),
+                                 'VERSIONES', None) or {})
+    except ImportError:
+        pass
+    if versiones:
+        log('  versión por fichero: ' + ' · '.join(
+            f'{f.split("-")[0]}={v[0]}' for f, v in sorted(versiones.items())))
 
     # m6/m8 — el 09 de catering se reconstruye ANTES de censar la carpeta y
     # antes del contexto: el modelo del dinero ('mostrador' o 'eventos') se
@@ -1336,7 +1354,7 @@ def main():
         ctx = motor.contexto(
             carpeta, nombres,
             lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)),
-            producto=pid)
+            producto=pid, versiones=versiones)
     except (motor.KitAmbiguo, motor.MoldeDesconocido) as e:
         # R3-a — el motor NO adivina el papel de un fichero. Se aborta con el
         # informe escrito, para que el orquestador vea por qué.
@@ -1432,7 +1450,7 @@ def main():
         motor.contexto(
             idem_dir, nombres,
             lambda f: openpyxl.load_workbook(os.path.join(idem_dir, f)),
-            producto=pid)
+            producto=pid, versiones=versiones)
         motor.CTX['producto'] = pid
         for fname in nombres:
             procesar(idem_dir, fname, etapas, contenido, [])
@@ -1447,7 +1465,7 @@ def main():
         motor.contexto(
             carpeta, nombres,
             lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)),
-            producto=pid)
+            producto=pid, versiones=versiones)
         motor.CTX['producto'] = pid
 
     log('\n== 4/7 · inject_cache (al final del todo) ==')
@@ -1485,7 +1503,8 @@ def main():
     log(f"  DV «✓,—,N/A»: {gates['hojas_checklist']} hojas de checklist, "
         f"{len(gates['dv_incorrectas'])} incorrectas · bio en "
         f"{gates['instrucciones_con_bio']}/{con_ins} Instrucciones del "
-        f"producto · {len(gates['version_desfasada'])} sin la versión 2.0")
+        f"producto · {len(gates['version_desfasada'])} sin la línea de "
+        "versión que les toca")
     for d in gates['dv_incorrectas'][:8]:
         log('    ' + d)
     for d in gates['version_desfasada'][:8]:
