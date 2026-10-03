@@ -225,8 +225,14 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   cola de construcción del §3, anunciado «Q4 2026» en el hub, temporada alta de churros, y la hermana (Chocolatería Boutique, D1) ya la separó como
   «otro negocio»: reutiliza sus 109 CHN y 115 CHS verificados, sus 9 generadores y su guion. F1 en el Mac (solo API) con 5 lentes de research,
   2 a la vez por la térmica (workflow `research-guia-churreria`, run `wf_ca9bdc63-a48`).
-- 🔴 **Recordatorio de plazo:** el **Kit de Tareas Chocolatería 2.1** tiene que estar LIVE antes del **24-oct** (D53; sigue en `version: '2.0'`
-  en `src/data/productos-changelog.ts:729`). Toca en la próxima sesión «v2.x ES».
+- ✅ **Kit de Tareas Chocolatería 2.1 LIVE el mismo 3-oct** (PR #104 → `1eb58b26`; plazo del 24-oct cumplido): los ocho alérgenos del Anexo II
+  en las tres celdas de declaración (01!Apertura B26 · 04!Dependiente B7 · 06!Pascua B17) y la humedad del obrador en 50-60 % (02!Templado,
+  02!Instrucciones, BONUS-01!Briefing); versión 2.1 solo en esos 5 ficheros. Por su generador: el motor de familia gana versión por fichero
+  (`VERSIONES` / `version_de`), regresión 0 en cafetería, hotel y heladería. Gates: censo 0, no latinos 0, post-pago LIVE 11/0/0. Coste 0,44 M.
+  **Correo: HTML `emails/broadcast-kit-tareas-chocolateria-v2.1-es.html`, prueba a John `01a0ffd4-…`; programarlo el 9-oct o después** con
+  `resend-broadcast.py --html … --subject "Kit de Tareas Chocolatería 2.1: los ocho alérgenos, uno a uno" --name "Actualización Kit de Tareas
+  Chocolatería 2.1 (ES)" --scheduled-at 2026-11-08T08:00:00Z` (Escandallos 2.1 va antes: 3-nov, programable desde el 4-oct).
+  Deuda que destapó: el changelog del Mega Pack (`get-download-urls.ts:1403`) sigue en 1.1 del 22-ago y nunca recoge las versiones de sus kits.
 - VPS: `/dev/null` sigue siendo un fichero normal (`regular file 644`, comprobado hoy) → la galería de capturas sigue bloqueada (arreglo de John).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
