@@ -50,7 +50,7 @@ La regla dura del pack es esta: toda línea de precio lleva al lado si el precio
 
 Cómo llegan los precios de compra al libro:
 
-- El preparado para masa, el aceite y el preparado de la taza se publican sin IVA en sus fichas, y así se anotan: la caja de 6 sacos de 4 kg a 34,80 € sin IVA (Churrofácil, ficha «Mix churros de lazo 4 kg caja 6 sacos», 2026-10-03), la garrafa de 25 L de aceite a 49 € sin IVA (Churrofácil, fichas 82 y 90, 2026-10-03) y la bolsa de 1,3 kg de preparado para chocolate a la taza a 8,20 € sin IVA (Churrofácil, ficha 14 y listado, 2026-10-03). La ficha dice «impuestos excluidos». El rendimiento de masa por saco lo declara el vendedor y se contrasta al pedir.
+- El preparado para masa, el aceite y el preparado de la taza se publican sin IVA en sus fichas, y así se anotan: la caja de 6 sacos de 4 kg a 34,80 € sin IVA (Churrofácil, ficha «Mix churros de lazo 4 kg caja 6 sacos», 2026-10-03), la garrafa de 25 L de aceite a 49,90 € sin IVA (Churrofácil, fichas 82 y 90, 2026-10-03) y la bolsa de 1,3 kg de preparado para chocolate a la taza a 8,20 € sin IVA (Churrofácil, ficha 14 y listado, 2026-10-03). La ficha dice «impuestos excluidos». El rendimiento de masa por saco lo declara el vendedor y se contrasta al pedir.
 - El cucurucho, la caja de 100 a 15 € (Churrofácil, listado de accesorios y consumibles, 2026-10-03), tiene la base inferida como sin IVA, y por eso va en una celda verde con su aviso: confírmalo con el proveedor al pedir.
 - El equipamiento, la obra, los envases y los servicios van al tipo general, el 21 %.
 

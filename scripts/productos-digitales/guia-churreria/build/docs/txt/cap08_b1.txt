@@ -60,7 +60,7 @@ En El Molinete, el fondo de maniobra es de 79.052 € (hoja «Inversión Inicial
 
 ### Contra qué contrastar tu cifra
 
-Seamos honestos con lo poco que hay: el pack trae una sola referencia externa de contraste. Es el anuncio de traspaso en Vallecas de Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026): un local de 74 m² cuyo anuncio declara incluidos unos equipos «valorados en 50.000 €» (freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV). La lectura es del anuncio y no la hemos podido reabrir hoy, porque el portal nos devolvió un captcha; además, el anuncio no aclara si esa valoración lleva o no IVA.
+Seamos honestos con lo poco que hay: el pack trae una sola referencia externa de contraste. Es el anuncio de traspaso en Vallecas de Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026): un local de 74 m² cuyo anuncio declara incluidos unos equipos «valorados en 50.000 €» (freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV). La lectura es la del anuncio el 3 de octubre de 2026, sin reverificar después; además, el anuncio no aclara si esa valoración lleva o no IVA.
 
 Con esas reservas, el uso es éste: ponla frente al equipamiento y el mobiliario de los bloques dos a siete de El Molinete, que suman 47.147,35 € sin IVA (hoja «Resumen» del libro calculadora-capex-churreria.xlsx). No es una validación: es un orden de magnitud para saber si te has olvidado algo. Si tu suma de equipamiento está muy por debajo de lo que declara un traspaso de un local de tamaño parecido, mira qué has dejado fuera. Y recuerda que un precio de traspaso es un precio pedido y negociable, no un precio de cierre.
 

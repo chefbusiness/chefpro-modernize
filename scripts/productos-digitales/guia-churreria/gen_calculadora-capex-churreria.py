@@ -975,7 +975,7 @@ def hoja_capex(wb):
         1: 'supuesto (obra por m²)', 2: 'CUS-36a + supuesto (conducto, CUS-36b sin fuente)',
         3: 'CUS-33a, CUS-34c, CUS-35a, CUS-39', 4: 'CUS-37a + supuesto (cafetera, CUS-43)',
         5: 'supuesto (CUS-43: sin precio con fuente)', 6: 'CUS-38, CUS-41 + supuesto',
-        7: 'supuesto', 8: 'supuesto (nunca la horquilla de nuestro post)',
+        7: 'supuesto', 8: 'supuesto declarado',
         9: 'meses de fianza por la renta (CUS-02)', 10: 'precios del libro 3 y de las fichas',
         11: 'supuesto'}
     for n in sorted(D.BLOQUES_CAPEX):
@@ -998,7 +998,7 @@ def hoja_capex(wb):
     for col in ('C', 'D', 'E', 'F', 'G', 'H', 'I'):
         formula(ws, '%s%d' % (col, B_TOT), '=SUM(%s%d:%s%d)' % (col, B_INI, col, B_FIN),
                 fmt=PCT if col == 'H' else EUR, bold=True, destacar=True)
-    motor.val(ws, 'J%d' % B_TOT, 'Viaja al libro 6 desde «Resumen» (L5). El libro 6 le suma el '
+    motor.val(ws, 'J%d' % B_TOT, 'Viaja al libro 6 desde «Resumen». El libro 6 le suma el '
                                  'fondo de maniobra de los primeros meses: aquí no está.', wrap=True)
     ws.row_dimensions[B_TOT].height = 44
 
@@ -1222,7 +1222,7 @@ def hoja_traspaso(wb):
         (T['pedido'], 'Precio de traspaso que te piden', vallecas['precio_pedido'], EUR, '€', 'CUS-02',
          'Sembrado con el traspaso con sala de Vallecas: 74 m², precio PEDIDO y negociable, con '
          'los equipos dentro. Es el techo de los anuncios leídos para un local con sala. Lectura '
-         'del 3-oct no reabierta por el captcha: se comprueba antes de publicar la guía.'),
+         'del anuncio del 3-10-2026, sin reverificar: compruébalo en el anuncio antes de usarlo.'),
         (T['adapt'], 'Inversión de adaptación que aún tendrías que hacer', D.dato(TA, 'adaptacion'),
          EUR, '€', TA['adaptacion'][1], TA['adaptacion'][2] + ' Supuesto de El Molinete. Pasa el '
          'local por la «Ficha de Visita a Local» del libro 1 antes de fiarte de esta cifra.'),
@@ -1323,8 +1323,8 @@ def hoja_traspaso(wb):
         nota_t = t['nota']
         if t['fuente'] == 'CUS-02':
             nota_t = ('Precio pedido y negociable, con unos 50.000 € de equipos declarados dentro y '
-                      'la misma renta que El Molinete. Lectura del 3-oct no reabierta por el captcha: '
-                      'se comprueba antes de publicar la guía.')
+                      'la misma renta que El Molinete. Lectura del anuncio del 3-10-2026, '
+                      'sin reverificar: compruébalo en el anuncio antes de usarlo.')
         motor.val(ws, 'E%d' % r, nota_t, wrap=True)
         formula(ws, 'F%d' % r, '=IFERROR(D%d/C%d,"")' % (r, r), fmt=EUR)
         motor.val(ws, 'G%d' % r, t['fuente'])

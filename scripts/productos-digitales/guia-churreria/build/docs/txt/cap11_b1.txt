@@ -13,7 +13,7 @@ Para El Molinete, el libro legal de este pack lo resuelve así. La parte A del a
 
 Alrededor de ese mínimo hay tres piezas más, y cada una tiene su nivel, que no es el de una obligación:
 
-- La Recomendación (UE) 2019/1888 de la Comisión, de 10 de noviembre de 2019, sobre el control de la presencia de acrilamida en los alimentos, incluye los churros en su lista no exhaustiva de alimentos en los que se debe controlar. Es una recomendación: orienta, no es vinculante.
+- La Recomendación (UE) 2019/1888 de la Comisión, de 7 de noviembre de 2019, sobre el control de la presencia de acrilamida en los alimentos, incluye los churros en su lista no exhaustiva de alimentos en los que se debe controlar. Es una recomendación: orienta, no es vinculante.
 - El Estudio prospectivo EP 01 18 ACR, informe de resultados de acrilamida en alimentos 2018, elaborado por las autoridades sanitarias con las comunidades autónomas y publicado por el Servicio Cántabro de Salud en 2019, recoge que no existe un valor de referencia para las masas fritas como los churros, y analizó churros tomados en restauración y venta ambulante. Traducido: si te mide un laboratorio, no tiene contra qué compararte.
 - La Comisión está revisando el marco de gestión de la acrilamida. Ajusta niveles de referencia y, por primera vez, plantea niveles máximos vinculantes para algunos alimentos seleccionados, en fase de consulta; los churros no se mencionan en lo que hemos leído. Esto es un riesgo de caducidad: lo que escribimos hoy puede cambiar, y por eso el anexo del pack da la fecha de revisión y te pide que la mires antes de imprimir cartas o protocolos.
 
@@ -54,7 +54,7 @@ Esta es la frontera con la segunda mitad del capítulo. Hasta aquí han quedado 
 
 ### El autocontrol simplificado, con un responsable con nombre
 
-Toda empresa alimentaria tiene que tener un procedimiento permanente de autocontrol basado en los principios del análisis de peligros y puntos de control crítico. En un negocio pequeño como el que planteas, ese procedimiento puede aplicarse de manera simplificada, conforme a la Comunicación 2020/C 199/01 de la Comisión, pero con una condición que no se negocia: tiene que haber una persona responsable de su aplicación, con nombre. Lo dice el art. 20 del Real Decreto 1021/2022 (BOE-A-2022-21681), de 21 de diciembre de 2022. Comprobado el 3 de octubre de 2026.
+Toda empresa alimentaria tiene que tener un procedimiento permanente de autocontrol basado en los principios del análisis de peligros y puntos de control crítico. En un negocio pequeño como el que planteas, ese procedimiento puede aplicarse de manera simplificada, conforme a la Comunicación 2020/C 199/01 de la Comisión, pero con una condición que no se negocia: tiene que haber una persona responsable de su aplicación, con nombre. Lo dice el art. 20 del Real Decreto 1021/2022 (BOE-A-2022-21681), de 13 de diciembre de 2022. Comprobado el 3 de octubre de 2026.
 
 Esa persona suele ser el titular; en una sociedad, quien tú designes. Lo importante es que su nombre esté escrito en el plan, que sepa que lo es y que pueda explicar a un inspector qué hace cada semana para cumplir su parte. Un plan sin responsable con nombre es una carpeta de plantillas, no un sistema de autocontrol.
 

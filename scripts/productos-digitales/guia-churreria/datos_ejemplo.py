@@ -250,7 +250,7 @@ NEGOCIO = {
                    'vía pública queda fuera del régimen de la Ley 12/2012 (CUN-35).'),
     'renta_mensual': (910.0, 'CUS-02',
                       'La renta del local de Vallecas de 74 m² (anuncio del 06-07-2026, '
-                      'lectura de L4 no reabierta por el captcha). Nace en el libro 2 y '
+                      'lectura del anuncio sin reverificar). Nace en el libro 2 y '
                       'la recibe el 6 por el cruce X18.'),
     'meses_fianza': (2, 'supuesto',
                      'Meses de fianza y garantía que pide el arrendador. Cambia por '
@@ -1683,7 +1683,7 @@ CAPEX_PARTIDAS = [
      'Supuesto declarado: ninguna ficha publica un coste de obra por m² de churrería. Se '
      'calcula con los m² de NEGOCIO.'),
     (8, 'Proyecto técnico de actividad y de la extracción', 4200.0, 'iva_general', 'supuesto', True,
-     'Supuesto declarado. Nunca la horquilla de licencias de nuestro post (N-4).'),
+     'Supuesto declarado.'),
     (8, 'Licencia de obra del conducto y tasas municipales', 1900.0, None, 'supuesto', True,
      'Las tasas no llevan IVA y cambian en cada ayuntamiento: es la cifra que hay que ir a '
      'buscar, no copiar.'),
@@ -1880,8 +1880,8 @@ TRASPASOS = [
     {'zona': 'Madrid (Vallecas)', 'tipo': 'Churrería-chocolatería con sala', 'm2': 74,
      'precio_pedido': 82000.0, 'fuente': 'CUS-02', 'fiabilidad': 'media',
      'nota': ('Precio pedido y negociable, con los equipos declarados de DOTACION_COMPLETA_'
-              'DECLARADA incluidos y la misma renta que El Molinete. Lectura de L4, no '
-              're-verificada por el captcha: se reabre antes de publicar (SR-10).')},
+              'DECLARADA incluidos y la misma renta que El Molinete. Lectura del anuncio del '
+              '3-10-2026, sin reverificar: compruébalo en el anuncio antes de usarlo.')},
 ]
 #: Supuestos de la alternativa de la decisión 2 (traspaso frente a obra nueva).
 TRASPASO_ALTERNATIVA = {
