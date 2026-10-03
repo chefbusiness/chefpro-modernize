@@ -23,6 +23,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'kit-tareas-restaurante-creativo', label: 'Kit Tareas Restaurante Creativo (€12)' },
   { id: 'kit-tareas-chef-privado', label: 'Kit Tareas Chef Privado (€18)' },
   { id: 'kit-gestion-personal', label: 'Kit Gestión de Personal (€14)' },
+  { id: 'restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro (EN, $19)' },
   { id: 'kit-inventario', label: 'Kit Control de Inventario (€14)' },
   { id: 'restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro (EN, $19)' },
   { id: 'kit-plan-financiero', label: 'Kit Plan Financiero (€39)' },

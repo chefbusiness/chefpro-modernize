@@ -95,7 +95,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-gestion-personal',
     url: '/kit-gestion-personal',
     price: '€14',
-    name: { es: 'Kit Gestión de Personal y Turnos', en: 'Staff Scheduling & Management Kit' },
+    name: { es: 'Kit Gestión de Personal y Turnos', en: 'Restaurant Staff Scheduling Kit Pro' },
     description: {
       // COM-22/RC-05/RD-25 · decía «ratios de productividad», que no existen
       // en ninguno de los 9 ficheros del kit: lo más cercano son los
@@ -104,8 +104,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
       // vacaciones y evaluación, que sí están. Este texto se sirve en producción (UseCasePageContent
       // y PSeoCityPageContent vía getProductsByIds).
       es: 'Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.',
-      en: 'Shift schedules, overtime, labor cost, onboarding, holidays, and team performance reviews.',
+      en: 'Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `restaurant-schedule-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-schedule-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-inventario': {
     id: 'kit-inventario',

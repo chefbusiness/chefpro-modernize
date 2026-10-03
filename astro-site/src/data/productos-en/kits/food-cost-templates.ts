@@ -363,6 +363,7 @@ const data: KitExcelData = {
     { href: '/en/digital-products', label: 'Digital Products' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
+    { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },
     { href: '/en/food-cost-calculator-restaurant', label: 'Food Cost Calculator for Restaurants' },
     { href: '/en/food-cost-calculator-restaurant-ai', label: 'Restaurant Food Cost with AI' },

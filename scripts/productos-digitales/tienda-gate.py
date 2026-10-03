@@ -302,7 +302,11 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            'Cafetería Central', 'Kit de Escandallos Pro',
            # Ídem, HACCP Food Safety Kit Pro (3-oct): testimonios del Pack Plantillas APPCC traducidos tal cual.
            'Marcos Ibáñez', 'Patricia Roldán', 'Ana Belén Torres', 'Cafetería El Trigal', 'Hotel Montaña',
-           'Catering Eventos del Sur']
+           'Catering Eventos del Sur',
+           # Ídem, Restaurant Staff Scheduling Kit Pro (3-oct): testimonios del Kit Gestión de Personal y
+           # Turnos traducidos tal cual, y el nombre de esa edición española en su subtítulo.
+           'Lucía Navarro', 'Alberto Méndez', 'Marta Jiménez', 'Roberto Sánchez',
+           'Kit Gestión de Personal y Turnos']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

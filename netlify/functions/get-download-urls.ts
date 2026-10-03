@@ -296,6 +296,20 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx',
     'bonus-calculadora': '/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx',
   },
+  // Tienda EN (2026-10-03): Restaurant Staff Scheduling Kit Pro. MISMAS claves que kit-gestion-personal
+  // (las del TEMPLATES de src/pages/RestaurantScheduleKitDashboard.tsx) → ficheros EN de
+  // /dl/restaurant-schedule-templates/ (SPEC staff-kit §2.1).
+  'restaurant-schedule-templates': {
+    'cuadrante': '/dl/restaurant-schedule-templates/01-restaurant-schedule-template.xlsx',
+    'horas-extra': '/dl/restaurant-schedule-templates/02-overtime-tracker.xlsx',
+    'coste-laboral': '/dl/restaurant-schedule-templates/03-labor-cost-calculator.xlsx',
+    'onboarding': '/dl/restaurant-schedule-templates/04-new-hire-onboarding-checklist.xlsx',
+    'vacaciones': '/dl/restaurant-schedule-templates/05-pto-vacation-planner.xlsx',
+    'evaluacion': '/dl/restaurant-schedule-templates/06-employee-performance-review.xlsx',
+    'directorio': '/dl/restaurant-schedule-templates/07-employee-directory.xlsx',
+    'bonus-briefing': '/dl/restaurant-schedule-templates/BONUS-01-shift-handover-log.xlsx',
+    'bonus-calculadora': '/dl/restaurant-schedule-templates/BONUS-02-restaurant-staffing-calculator.xlsx',
+  },
   'kit-inventario': {
     'stock': '/dl/kit-inventario/01-inventario-stock-diario.xlsx',
     'proveedores': '/dl/kit-inventario/02-fichas-proveedores.xlsx',
