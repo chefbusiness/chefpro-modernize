@@ -121,14 +121,14 @@ const data: KitExcelData = {
     // hero bg (6) — IDÉNTICAS al ES (ContentGrid usa el mismo set → gridGallery se omite).
     gallery: [
       '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
-      '/lovable-uploads/ai-gallery/plan-financiero-oficina.jpg',
+      '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg',
       '/lovable-uploads/ai-gallery/plan-financiero-reunion.jpg',
-      '/lovable-uploads/ai-gallery/plan-financiero-graficos.jpg',
+      '/lovable-uploads/ai-gallery/fin-en-projections.jpg',
       '/lovable-uploads/ai-gallery/plan-financiero-restaurante.jpg',
-      '/lovable-uploads/ai-gallery/plan-financiero-analisis.jpg',
+      '/lovable-uploads/ai-gallery/fin-en-partners-review.jpg',
     ],
-    whyBg: '/lovable-uploads/ai-gallery/plan-financiero-oficina.jpg',
-    buyBoxBg: '/lovable-uploads/ai-gallery/plan-financiero-oficina.jpg',
+    whyBg: '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg',
+    buyBoxBg: '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg',
     ctaBg: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
   },
 
@@ -219,7 +219,7 @@ const data: KitExcelData = {
         title: 'What-If Scenario Simulator',
         value: '$19',
         desc: 'Change the average check, covers per day and food cost and see the impact on profitability instantly. Compare 3 scenarios side by side: pessimistic, realistic and optimistic.',
-        image: '/lovable-uploads/ai-gallery/plan-financiero-graficos.jpg',
+        image: '/lovable-uploads/ai-gallery/fin-en-projections.jpg',
       },
       {
         icon: 'ClipboardList',
