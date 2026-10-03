@@ -7,6 +7,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'kit-escandallos', label: 'Kit de Escandallos Pro (€12)' },
   { id: 'food-cost-templates', label: 'Food Cost Kit Pro (EN, $19)' },
   { id: 'pack-appcc', label: 'Pack Plantillas APPCC (€14)' },
+  { id: 'haccp-templates', label: 'HACCP Food Safety Kit Pro (EN, $19)' },
   { id: 'kit-tareas', label: 'Kit Tareas Restaurante Casual (€14)' },
   { id: 'kit-tareas-cafeteria', label: 'Kit Tareas Cafetería (€12)' },
   { id: 'kit-tareas-pizzeria', label: 'Kit Tareas Pizzería (€12)' },

@@ -46,6 +46,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 19 registros + 2 bonus de seguridad alimentaria:',
     emailCta: 'Acceder a mis Plantillas APPCC',
   },
+  // Tienda EN (2026-10-03): gemelo de pack-appcc (ver verify-purchase.ts).
+  'haccp-templates': {
+    accessPath: '/en/digital-products/haccp-templates/access',
+    emailSubject: 'Your access to HACCP Food Safety Kit Pro',
+    emailTitle: 'Access your HACCP Food Safety Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 19 food safety templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas': {
     accessPath: '/kit-tareas-access',
     emailSubject: 'Tu acceso al Kit de Tareas Recurrentes',

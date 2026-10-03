@@ -1114,6 +1114,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-03): HACCP Food Safety Kit Pro, primera edición inglesa del contenido 2.0
+  // del Pack Plantillas APPCC (SPEC haccp-kit §1). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/HaccpKitDashboard.tsx.
+  'haccp-templates': {
+    version: '2.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 19 food safety templates plus 2 bonuses, adapted to the US and the UK.',
+          'FDA Food Code 2022 limits in degrees Fahrenheit in every formula: cold holding at 41 °F or below, hot holding at 135 °F or above, cooking at 165, 155, 145 or 135 °F, reheating to 165 °F within 2 hours and two-stage cooling (135 to 70 °F in 2 hours, to 41 °F in 6 hours).',
+          'Allergen matrix and allergen chart with the 14 UK allergens and the US Big 9 marked; the matrix checks that the specific tree nut, fish and crustacean shellfish are named.',
+          'Health inspection self-checklist with the Food Code categories (Priority, Priority foundation and Core), parasite destruction for fish served raw (−4 °F for 168 hours or −31 °F for 15 hours) and thermometer calibration corrected for altitude in feet.',
+          'UK notes wherever the rules differ (FSA Safer Food Better Business, 14 allergens, Food Hygiene Rating Scheme), sample data with US vendors and units, 12-hour times, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'pack-appcc': {
     version: '2.0',
     updated: '2026-08-22',
