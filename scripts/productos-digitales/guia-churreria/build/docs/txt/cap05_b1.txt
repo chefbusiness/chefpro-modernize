@@ -1,0 +1,76 @@
+### Freír pide campana, filtro y conducto a cubierta: el ejemplo de Madrid
+
+Antes de pagar la freidora, la pregunta es si tu local admite una cocina que fríe. Lo que sigue es el mapa de lo que exige la norma, comprobado el 3 de octubre de 2026, y conviene leerlo con una frontera clara: el capítulo 4 te dijo qué papel te toca, éste dice qué exige la norma a la campana, al conducto, a la potencia, al gas y al extintor, el capítulo 6 lo lleva a la visita del local y el capítulo 10 trata el aceite como insumo y como residuo.
+
+Tomamos Madrid como ejemplo, y sólo como ejemplo: es el único municipio que hemos verificado. Su Ordenanza 4/2021 de Calidad del Aire y Sostenibilidad de Madrid (OCAS), art. 23.1 (BOCM n.º 90, 16-04-2021), dice que quien cocina tiene que contar con captación, extracción forzada y filtrado de humos con recogida de grasas sobre toda la zona de emisión, y evacuar a través de un conducto a cubierta, con una limpieza como mínimo una vez al año. Dicho en obra: no basta con un extractor que saque el humo a un patio o a la fachada; hace falta recorrido hasta la cubierta, filtros que retengan la grasa y un mantenimiento anual que se pueda demostrar.
+
+Hay una excepción en esa ordenanza, y no te sirve. El art. 24.1 y el anexo I de la OCAS Madrid (BOCM n.º 90, 16-04-2021) dejan sin conducto a cubierta sólo a quien usa exclusivamente aparatos eléctricos que cocinan en su interior sin transmitir olores y cuya potencia útil nominal conjunta no supera 4 kW; además, la desembocadura sobrepasa 1 m la altura del edificio propio y de los situados en un radio de 15 m. Lo que sigue es una inferencia nuestra, de nivel B, y por eso te pedimos que la confirmes con tu ayuntamiento: una freidora de baño abierto no cocina «en el interior del propio aparato», así que no hay exención para una churrería. Ni la freidora eléctrica ni la de poca potencia te dejan sin conducto: la excepción está escrita para otros aparatos.
+
+Marca ahora la frontera de lo verificado, porque aquí se cometen errores caros:
+
+- Barcelona, Sevilla o Valencia tienen sus propias ordenanzas y no las hemos abierto. No te damos sus requisitos de humos y desconfía de quien te los dé sin enseñarte el artículo.
+- Lo de Madrid no es norma general. Es el ejemplo de cómo una ordenanza puede regular los humos de una cocina; la tuya dirá lo suyo.
+- Las reglas de chimenea que circulan por internet suelen ser las de las viviendas. El documento básico de salubridad HS 3, apartado 1.1, del Código Técnico de la Edificación (versión de 2026-09-10) sólo trata viviendas y, en edificios de otro uso, aparcamientos y garajes; para un local de cualquier otro tipo remite al reglamento de instalaciones térmicas, el Real Decreto 1027/2007 (RITE), cuyos arts. 2.1 y 2.6 y la IT 1.1.4.2.5 dejan fuera las instalaciones de procesos industriales en la parte que no busca el bienestar térmico de las personas y prohíben recircular el aire de expulsión de las categorías más cargadas o hacerlo compartir conducto.
+
+Y una última cosa que no fija ni la norma ni este libro: el caudal, la sección y el trazado del conducto los fija el proyecto técnico. Cualquier cifra de caudal o de sección que leas en un foro o en la web de un vendedor es una opinión sin proyecto detrás.
+
+### Los litros de la freidora deciden el riesgo de incendio
+
+El Código Técnico de la Edificación, documento básico DB-SI de seguridad en caso de incendio (versión de 2025-04-10), tiene una regla que sorprende a casi todos los que montan una churrería: en la sección SI 1, tabla 2.1, las freidoras se computan a un kilovatio por litro de cuba, tengan la potencia que tengan. Una freidora eléctrica potente y una de gas de la misma cuba cuentan lo mismo, y lo que pesa es el volumen de aceite que puede arder.
+
+A esos litros se suman los demás aparatos de cocción que computan, que son los destinados a preparar alimentos y capaces de provocar ignición. Aquí hay una duda que no resolvemos por ti: confirma con tu técnico si tus chocolateras al baño maría cuentan. En el caso que recorre este libro, la Churrería-Chocolatería El Molinete (un caso modelado en una ciudad media española, no un negocio real), las hemos metido en la suma, que es la lectura prudente.
+
+La escalera es ésta, y la leerás luego en la hoja de potencia:
+
+- Por encima de 20 kW computables, la cocina es local de riesgo especial. Entre 20 y 30 kW es riesgo bajo; entre 30 y 50 kW, riesgo medio; por encima de 50 kW, riesgo alto.
+- Por encima de 50 kW la extinción automática es obligatoria.
+
+El Molinete suma 25 litros totales de cuba en sus freidoras y 3 kW de los demás aparatos de cocción, sus dos chocolateras. Eso da 28 kW computables de cocina, que caen en la franja del riesgo bajo: el veredicto de la hoja «Freidoras, Potencia y Riesgo» del libro produccion-hora-punta-y-local.xlsx es «Local de riesgo especial: riesgo bajo». Y la extinción automática no le es obligatoria. Son supuestos de El Molinete; tú sustituyes los litros por los de tus freidoras y la hoja recalcula.
+
+Ser local de riesgo especial, aunque sea de riesgo bajo, trae consecuencias de obra: la campana separada de materiales combustibles, los conductos resistentes al fuego y los filtros a su distancia mínima del foco. Eso es obra con proyecto, no un ajuste de última hora, y por eso conviene saberlo antes de firmar el alquiler o el traspaso.
+
+Te avisamos de la compra que mueve los kilovatios: una segunda freidora. Antes de comprarla, vuelve a la hoja de potencia del libro de producción, porque los litros suben y con ellos el riesgo. Con 28 kW sobre una escalera que cambia de peldaño a 30 y a 50, añadir cuba es acercarte a una categoría que cambia el proyecto, y no hay marcha atrás barata una vez instalada.
+
+La distancia de los filtros al foco de calor también depende del aparato. Los filtros de la campana van a más de 1,20 m del foco si es de gas o de parrilla, y a más de 0,50 m si es de otro tipo. El Molinete fríe con gas, así que le toca la mayor: 1,2 m, que es lo que marca la hoja. Con varias freidoras de tipos distintos, manda la más exigente. No te quedes con los 0,50 m que algunas síntesis recogen sin distinguir el aparato: con gas, no valen.
+
+### Con extinción automática deja de ser local de riesgo especial, pero no te libra de la nota tres
+
+Éste es el matiz que casi nadie cuenta. En la misma tabla 2.1 del DB-SI, la nota 2 dice que, en usos distintos del hospitalario y del residencial público, una cocina con los aparatos protegidos por un sistema automático de extinción no se considera local de riesgo especial. Pero la nota 3 sigue aplicando: la campana, los conductos y los filtros tienen que ser como los de un local de riesgo especial. Es decir, la extinción automática te quita la etiqueta, no te quita la obra de la campana.
+
+Eso abre dos salidas, y las dos tienen coste en la calculadora de inversión (el libro calculadora-capex-churreria.xlsx, hoja «CAPEX por Bloque»):
+
+- No instalarla y asumir el régimen de local de riesgo especial que te toque. En El Molinete, riesgo bajo.
+- Instalarla aunque no sea obligatoria, por prudencia o porque tu aseguradora o tu propietario la pidan. En la calculadora figura como supuesto con un importe de 2.800 €, que es el que tendrás que sustituir por el presupuesto real de un instalador.
+
+La calculadora de inversión suma ese importe sólo cuando el libro de producción dice que la necesitas, de modo que no te hincha la inversión por si acaso. Si lo que quieres es saber cuál de las dos salidas le conviene a El Molinete, la decisión 4 del bonus la resuelve con sus números; aquí sólo dejamos lo que exige cada una. Los sistemas fijos de las cocinas comerciales se rigen por la norma UNE-EN 17446, que cita el reglamento de protección contra incendios de la sección siguiente; el proyecto del instalador dirá a qué se ajusta el tuyo.
+
+Una precisión de método: la tabla 2.1 y sus notas son el criterio del Código Técnico, no la última palabra sobre tu local. La licencia, la compañía de seguros y el técnico que firma el proyecto pueden pedirte más. Por eso lo que aquí figura es un mapa para preguntar mejor, no una promesa de que con ello esté todo resuelto.
+
+### Gas en un local: instalación receptora o freidora eléctrica, y nunca la bombona
+
+La regla es del Real Decreto 919/2006, de 28 de julio, reglamento técnico de distribución y utilización de combustibles gaseosos (BOE-A-2006-15345): en un local o en un despacho, una freidora de gas va con instalación receptora, certificado del instalador e inspección periódica cada cinco años. En su ITC-ICG 07, apartados 3.3 y 4.1 (última modificación: 03-09-2025), esa inspección comprueba la instalación receptora y, en las instalaciones de hasta 70 kW, incluye los aparatos y comprueba la ventilación y el volumen mínimo del local. Esto último te interesa antes de alquilar: un local pequeño y mal ventilado puede suspender la inspección, lo cual es otro motivo para visitarlo con el técnico.
+
+La alternativa es la freidora eléctrica: no pide gas, y sí potencia contratada. No te evita la campana ni el conducto, como hemos visto, y de los litros para el riesgo de incendio tampoco te libra. Qué le conviene a El Molinete, gas o eléctrica, con el precio de ficha de las dos freidoras, es la decisión 4 del bonus. Aquí, sólo lo que exige cada opción.
+
+Queda la excepción de la bombona, y hay que citarla con sus palabras exactas porque ahí nace casi toda la confusión. El mismo Real Decreto 919/2006 deja sin carácter de instalación receptora las instalaciones alimentadas por un único envase móvil de gases licuados del petróleo de menos de 15 kg, conectado por tubería flexible o acoplado a un solo aparato DE UTILIZACIÓN MÓVIL. Eso describe el puesto de feria del capítulo 14. Una freidora fija en un local no es un aparato móvil, y la bombona no te libra de nada: ni de la instalación receptora, ni del certificado, ni de la inspección. Si alguien te propone «arrancar con una bombona pequeña para no hacer la instalación», la respuesta es no, y conviene que lo tengas dicho antes de que te lo ofrezcan.
+
+### Fuego de aceite: extintor de clase F y los riesgos de la línea
+
+El Reglamento de instalaciones de protección contra incendios (RD 513/2017, BOE-A-2017-6606, texto consolidado) exige que los agentes extintores sean adecuados a la clase de fuego. Los fuegos derivados de aceites y grasas de cocina son de clase F. Traducido a la línea: junto a la freidora, un extintor de clase F. Y nunca, bajo ningún concepto, agua sobre aceite ardiendo: el agua se evapora de golpe, arrastra el aceite y convierte un conato en una bola de fuego. Esto no es una opinión de la casa, es la razón de que exista la clase F; ténla en el cartel que cuelgues junto a la línea y en la formación del primer día de cada persona que entre.
+
+El libro legal del pack, checklist-legal-fritura-y-licencias.xlsx, recoge en su hoja «PRL de la Fritura» los riesgos de la línea con su prioridad y su medida. Los que tienes que tener en la cabeza son:
+
+- Quemaduras por salpicadura al cargar la freidora.
+- Fuego de la cuba y de la campana por grasa acumulada, que es el motivo por el que la limpieza anual del conducto de Madrid no es un trámite.
+- Fuga de gas, si optas por la freidora de gas.
+- Resbalones, con el suelo de una cocina que fríe y masa por el aire.
+- Sobreesfuerzos con sacos y garrafas.
+- Cortes en la amasadora.
+- Quemaduras al vaciar el aceite.
+- Fatiga de la madrugada, porque esta línea arranca cuando casi todo el mundo duerme.
+
+El veredicto del libro es tajante: no se abre la línea con un riesgo alto sin su medida puesta. Si la hoja te marca un riesgo alto en alguna fila, esa fila se cierra antes de encender la primera cuba, no después del primer susto.
+
+Una advertencia de honestidad sobre esa hoja: las probabilidades y las gravedades que lleva son supuestos de la casa para ordenar las medidas, no una evaluación de riesgos laborales. Esa evaluación la hace un servicio de prevención sobre tu local y tu plantilla. Lo que tienes aquí es el orden en el que mirar, para llegar a esa conversación sabiendo qué preguntar.
+
+Y para cerrar el capítulo con los pies en el suelo, lo que no fijan ni la norma ni el pack: el caudal, la sección y el trazado del conducto los fija el proyecto técnico. Con tu freidora elegida y tu local a la vista, ése es el siguiente papel que necesitas: un técnico que mida, calcule y firme.

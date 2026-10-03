@@ -1,0 +1,85 @@
+### Seis formatos con el mismo nombre, y cuál te toca
+
+La palabra «churrería» tapa seis negocios que se montan de forma distinta, y casi todos los errores de presupuesto que vemos nacen de mezclarlos. Un número de inversión que no dice de qué formato habla ni con cuántos metros es una cifra que no sirve. Por eso este pack empieza aquí: para que sepas cuál de los seis estás montando de verdad. Los presentamos por lo que el pack le da a cada uno.
+
+- **El local con sala, terraza y despacho a calle.** Es el caso cifrado de principio a fin: obrador, fritura, barra, mesas y una terraza aparte. Todo el pack está construido sobre él.
+- **El despacho para llevar.** No lleva sala. Es una columna de escenario dentro de los mismos libros, con su propio régimen de apertura, y sale como «lo que quitas» al partir del local completo.
+- **La caseta o el remolque de feria.** Aquí el pack da los papeles y el punto muerto por evento. No hay caso cifrado: la feria como negocio con vehículo tiene su propio producto, que nombramos más abajo.
+- **La franquicia.** El pack trae un comparador de lo que publican las enseñas, sin recomendar ninguna. Lo que publica un franquiciador sobre facturación o recuperación de la inversión es una proyección suya, no un dato, y así se trata.
+- **Los churros dentro de una cafetería o un bar.** Sólo se cuenta lo que cambia al meter una freidora en un local que ya existe: humos, gas, aceite y otro riesgo de incendio.
+- **El obrador que fabrica para otros negocios.** Queda fuera. Si produces masa, churro congelado o prefrito para cafeterías, dejas de ser minorista y esta guía no te sirve; aquí sólo marcamos la frontera.
+
+Si dudas entre el local con sala y el despacho, la regla práctica es esta: ¿vas a servir chocolate a la taza en mesa, con camarero y terraza, o vas a despachar por una ventana y que el cliente se lo lleve? La primera respuesta es el caso del pack; la segunda es la columna del despacho.
+
+Por qué el caso es el local con sala y no el despacho. Primero, porque es el negocio que define la venta: la taza con el churro. Segundo, porque es el formato con comparables publicados, que permiten contrastar tus supuestos con algo que existe. Y tercero, porque es el más difícil: más obra, más papeles, más metros, más personal. Con ese formato cifrado, el despacho aparece como lo que quitas, y no al revés. Si empezáramos por el despacho, el lector que quiere sala tendría que adivinar todo lo que falta.
+
+Una advertencia que conviene hacer ya, antes de que veas ninguna cifra. La calculadora de inversión cifra tres variantes con precio de ficha, siempre sin IVA y, en las dos primeras, con el medidor de polares incluido: el local con sala suma 9.117,35 €, el despacho para llevar 4.684,45 € y la caseta de feria, el remolque con cartel, 14.800 € (fuente: Churrofácil, remolques, fichas 455, 207 y 221, consultadas el 3 de octubre de 2026). Esos importes NO son el presupuesto de apertura. Son la dotación de equipos que alguien publica con precio. Les falta todo lo que ninguna ficha publica, que es la mayor parte del dinero: obra, campana y conducto, instalación de gas y eléctrica, mobiliario de sala, licencias, honorarios técnicos y existencias iniciales. Esa cuenta completa la hace el capítulo 8. Y ojo con el remolque: su precio no es comparable con el de una dotación de local, porque incluye el vehículo y el local no.
+
+### El caso que recorre el pack: la Churrería-Chocolatería El Molinete
+
+La Churrería-Chocolatería El Molinete es un caso modelado, no un negocio real. No le atribuimos ciudad, dueños ni historia: está en una ciudad media española sin nombre, y eso es deliberado. Lo que sí tiene es una forma concreta:
+
+- Un local de 75 metros cuadrados de superficie útil.
+- Un obrador de masa a la vista, con 16 metros cuadrados de producción, donde la fritura va bajo campana.
+- Una barra con despacho a calle.
+- Una sala con mesas y, aparte, una terraza con su propia autorización.
+- Abre todos los días y madruga los fines de semana.
+
+Con ese local modelado, el pack calcula todo lo demás. Para que te hagas una idea del orden de magnitud, quédate con tres cifras. El CAPEX de apertura de El Molinete, sin fondo de maniobra y sin IVA, es de 86.416 €. Un día tipo, de lunes a viernes, se modela con 250 raciones, y un día punta, sábado, domingo y festivo, con 400. Todo lo demás se deriva de esas tres cifras en los libros, y por eso ninguna cuenta nueva aparece suelta en este texto: los totales ya están calculados en las hojas, que es donde puedes cambiarlos.
+
+Conviene aprender a distinguir desde el principio las tres clases de cifra que vas a encontrar, porque no pesan igual:
+
+- **Las que tienen fuente.** Un dato del sector, una norma, un precio publicado. Llevan su identificador con su enlace, y se citan con el sitio y el año.
+- **Los supuestos declarados de El Molinete.** Son las raciones de cada día, los gramos por pieza, la absorción de aceite, los días entre cambios de aceite, el reparto por franjas, el horario y los gastos fijos. Están en celda verde con la nota «supuesto, pon el tuyo». No son «lo normal en una churrería»: son los de este caso, y los sustituyes por los tuyos.
+- **Las que calcula el libro.** Salen de las fórmulas a partir de las dos clases anteriores. No se teclean.
+
+Y una regla para los ejemplos de Madrid. El horario, los humos y el convenio laboral que verás desarrollados son el ejemplo verificado, no la norma de tu ciudad. Lo que depende de tu ayuntamiento o de tu comunidad autónoma es una pregunta que le haces tú, nunca un dato que damos nosotros. La fecha de corte de esta edición es el 3 de octubre de 2026.
+
+### La bombonería es otro negocio, y tiene su propia guía
+
+Lo decimos arriba y en positivo, porque es una venta cruzada honesta: quien quiere hacer bombones tiene su propia guía, «Cómo Montar una Chocolatería Boutique & Atelier». Hacer bombones en un obrador es comercio con fabricación propia, y no lleva freidora. Servir chocolate a la taza con churros es hostelería con fritura. Son dos negocios con dos recorridos de papeles, de obra y de seguridad distintos, y mezclarlos en un solo presupuesto sólo produce una cifra que no es de ninguno.
+
+El argumento legal que los separa cabe en una línea, y no lo vendemos como novedad, porque ya lo explicaba la guía de chocolatería; su desarrollo es del capítulo 4. El Anexo de la Ley 12/2012, de 26 de diciembre, de medidas urgentes de liberalización del comercio y de determinados servicios, no contiene ningún grupo de la agrupación 67, la de servicios de restauración. Por eso la sala con mesas queda fuera de la inexigibilidad de licencia de actividad. En cambio, el despacho de masas fritas, epígrafe 644.6, está dentro, porque el Anexo incluye el grupo 644 completo. Los epígrafes se identifican por las claves del Real Decreto Legislativo 1175/1990, de 28 de septiembre, por el que se aprueban las tarifas y la instrucción del impuesto sobre actividades económicas (comprobado el 3 de octubre de 2026). Y cuidado con la lectura rápida: que el despacho esté dentro del Anexo no significa que no lleve papeles. Las obras que requieran proyecto, el conducto de extracción a cubierta incluido, siguen necesitando su licencia de obra y su técnico; la actividad, la obra y la terraza son tres papeles distintos.
+
+Si quieres las dos cosas, las dos guías se enlazan, y la frontera práctica es la freidora: trae humos, gas, aceite y otro riesgo de incendio. Donde no hay freidora, estás en la guía de la bombonería; donde la hay, en esta.
+
+### Qué incluye este pack, en qué orden se rellena y qué es de otro producto
+
+El pack son ocho libros de Excel. Cada uno contesta una pregunta distinta:
+
+- **Producción y local** (el libro produccion-hora-punta-y-local.xlsx): cuánta masa sale en el día tipo y en el punto de más demanda, y si el local, con sus metros, lo aguanta.
+- **Inversión** (el libro calculadora-capex-churreria.xlsx): cuánto cuesta abrir, línea a línea, en cada variante.
+- **Carta y escandallo**: qué precio tiene cada ración y cuánto deja, con la materia prima de tu proveedor.
+- **Aceite**: cuánto aceite consumes, cuánto cambias y qué te cuesta.
+- **Temporada y ferias**: cómo se mueven los meses y qué pasa con un evento puntual.
+- **Plan financiero** (el libro plan-financiero-3-anos.xlsx): si la cuenta sale, con tus números y con el horizonte de tres años.
+- **Checklist legal, fritura y licencias** (el libro checklist-legal-fritura-y-licencias.xlsx): qué papeles tienes que preguntar, en qué orden y a quién.
+- **Turnos**: cuántas manos hacen falta cada día de la semana.
+
+El orden en que se rellenan no es el de su número. Cada libro trae, por celda verde, la cifra que necesita de otro, con una fila de cuadre que te avisa si te has equivocado. Por eso se empieza por los que producen las cifras base, y se acaba por el plan financiero, que se alimenta de todos los demás. La tabla de abajo te da el orden exacto. Si saltas de libro sin seguirlo, el cuadre te lo dirá antes de que una cifra mal copiada llegue a la cuenta final.
+
+Hay tres cuadros justo después de este texto: las cuatro variantes con su dotación de ficha y su régimen de apertura, tu problema con el capítulo que lo trata y el libro que lo resuelve, y el orden de relleno de los ocho libros. Úsalos como mapa.
+
+Lo que este pack no construye, y dónde vive, también lo decimos desde el principio:
+
+- El registro diario del aceite de fritura y el resto del autocontrol están en el Pack Plantillas APPCC, concretamente en el fichero 09-control-aceite-fritura.xlsx. Aquí no se repite: se cita.
+- El cuadrante semana a semana y las nóminas están en el Kit Gestión de Personal y Turnos. La guía construye la decisión previa de cuánta gente necesitas, no el cuadrante.
+- La feria como negocio con vehículo está en el Plan de Negocio: Food Truck, con su kit Tareas: Food Truck.
+- La cafetería que mete churros está en el Plan de Negocio: Cafetería, con su kit Tareas: Cafetería / Brunch.
+- El método general de escandallo está en el Kit de Escandallos Pro y en la Guía Food Cost + Ingeniería de Menú. Ninguno de los dos costea masa frita por kilo: eso lo hace el libro de carta de este pack.
+
+### Lo que este pack no hace, y cómo llamamos a cada cosa
+
+Lo decimos sin adornos y antes de que lo busques. Este pack no enseña a freír. No es un recetario ni un curso de churrero: los gramajes y las cantidades por kilo de masa que verás son datos de ejemplo para que las fórmulas calculen, y se dice cada vez. No da ninguna temperatura de fritura del churro, porque no hay fuente primaria que la fije. La única temperatura de fritura que trae una norma es la de las patatas fritas, en el reglamento de la acrilamida, y para el churro no hay ninguna. No sustituye al proyecto técnico de la extracción ni a tu asesor. Y no promete rentabilidad: te da el modelo con el que calculas tu número, con la norma, el artículo y el enlace allí donde hay mapa normativo.
+
+También avisamos de que esta guía es para quien aún no ha abierto. No hay control diario de producción ni gestión del día a día. El marco legal es el español; la estructura económica del pack sirve en cualquier país, pero el marco sanitario, fiscal y laboral hay que adaptarlo, y esa adaptación la ofrecemos como servicio, sin promesa.
+
+Para que no haya malentendidos, fijamos aquí el vocabulario de todo el documento. La equivalencia se dice una sola vez, y desde el siguiente capítulo sólo usamos la forma española:
+
+- **Churro y porra.** La porra es el churro grueso. En otras zonas de España los llaman tejeringo, calentito o jeringo.
+- **Chocolate a la taza.** No es el chocolate caliente de México y Chile. El de aquí lleva almidón y es espeso.
+- **Churrera y dosificadora.** Es la máquina de churros.
+- **Escandallo.** Es el costeo: lo que cuesta de materia prima cada ración.
+- **Puesto, caseta y remolque.** En otros países se dice carrito.
+- **Montar.** En México se dice poner: montar una churrería es lo que aquí se llama abrir un negocio desde cero.
+- **Obrador.** El espacio donde se prepara la masa, a la vista o no.
