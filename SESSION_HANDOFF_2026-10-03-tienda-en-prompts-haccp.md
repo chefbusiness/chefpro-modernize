@@ -8,7 +8,7 @@
 | Producto | Precio | Redirección tras el pago | Env var (la pongo yo en Netlify, scope builds) |
 |---|---|---|---|
 | **Gastro Pro Prompts eBook** | **$14** | `https://aichef.pro/en/digital-products/ai-prompts-for-restaurants/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS` |
-| **HACCP Food Safety Kit Pro** | **$19** | `https://aichef.pro/en/digital-products/haccp-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_HACCP_TEMPLATES` |
+| **HACCP Food Safety Kit Pro** | **$19** (ancla $39) | `https://aichef.pro/en/digital-products/haccp-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT` |
 
 Descripciones para el producto de Stripe (prosa, sin viñetas):
 
