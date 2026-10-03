@@ -10,7 +10,7 @@
 | **Gastro Pro Prompts eBook** | **$14** | `https://aichef.pro/en/digital-products/ai-prompts-for-restaurants/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS` |
 | **HACCP Food Safety Kit Pro** | **$19** (ancla $39) | `https://aichef.pro/en/digital-products/haccp-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT` |
 | **Restaurant Staff Scheduling Kit Pro** | **$19** (ancla $59) | `https://aichef.pro/en/digital-products/restaurant-schedule-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT` |
-| **Restaurant Financial Plan Kit Pro** (en curso) | **$49** | `https://aichef.pro/en/digital-products/restaurant-financial-plan-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT` |
+| **Restaurant Financial Plan Kit Pro** | **$49** (ancla $199) | `https://aichef.pro/en/digital-products/restaurant-financial-plan-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT` |
 
 Descripciones para el producto de Stripe (prosa, sin viñetas):
 
@@ -21,6 +21,12 @@ Descripciones para el producto de Stripe (prosa, sin viñetas):
   analysis, built on the FDA Food Code 2022 with UK notes: temperatures in °F with automatic alerts, two-stage cooling, receiving,
   cleaning and sanitizing, allergens (US 9 and UK 14), traceability and a health inspection self-checklist. Two bonuses.
   One-time payment, lifetime access.»
+- **Restaurant Staff Scheduling Kit Pro** — «Seven Excel templates and two bonuses to schedule your restaurant team and
+  control labor cost: weekly and monthly staff schedule with alerts, FLSA overtime by workweek, labor cost by pay period,
+  onboarding, PTO, performance reviews and a staff directory. One-time payment, lifetime access.»
+- **Restaurant Financial Plan Kit Pro** — «Ten Excel templates to plan and track your restaurant's finances: 3- and
+  5-year projections, monthly P&L actual vs budget, break-even, cash-flow forecast, startup costs, a ratios dashboard and
+  a lender & investor summary with DSCR and IRR. One-time payment, lifetime access.»
 
 Con el link: env var → `python3 scripts/productos-digitales/sync-payment-links.py` en la rama → merge → gates LIVE.
 
@@ -80,18 +86,36 @@ Lo grave venía **heredado del ES** (la traducción fiel lo arrastró). **Pendie
 - Correo EN: `scripts/productos-digitales/emails/broadcast-restaurant-schedule-templates-lanzamiento-en.html` →
   **20-oct 14:00Z** (cola EN: 10-oct eBook, 15-oct HACCP; los ES del 19 y 24 no chocan).
 
+## 2c. Restaurant Financial Plan Kit Pro (ola 3, producto 6) — PR #109, listo a falta del Payment Link
+
+- Rama `feat/restaurant-financial-plan-templates-en` (apilada: **fusionar #106 → #107 → #108 → #109**). SPEC D1-D37 y notas
+  en `scripts/productos-digitales/financial-kit/` (`F2-NOTAS.md` §6 «Revisión final» con los defectos a corregir en el ES).
+- 10 xlsx EN (8 + 2 bonus) en `astro-site/public/dl/restaurant-financial-plan-templates/`: sales tax/VAT fuera de ingresos,
+  impuestos editables, préstamo tipo SBA 7(a) con periodo de solo intereses, DSCR «at full payment», amortización por vida
+  útil, sq ft; 9 gráficos con las pestañas renombradas; TIR en caché. VPS: gates G1-G8 verde, autotest 27/27, idempotencia 0.
+- Revisión Opus final: 0 bloqueantes, 6 mayores (DSCR inflado con carencia, «mínimo SBA 1,15×» quitado, plazos de proveedor
+  > 30 días rompían la tesorería —también en el ES—, base del sales tax, benchmarks presentados como norma, imagen con rótulo)
+  + 15 menores → todos arreglados (`9ae0654e`). Aviso «planning tool, not financial, tax or legal advice» en los 10 libros.
+- Preview `deploy-preview-109` en verde (10/10 descargas). Correo EN:
+  `scripts/productos-digitales/emails/broadcast-restaurant-financial-plan-templates-lanzamiento-en.html` → **25-oct 14:00Z**.
+
 ## 3. Al volver John con los dos Payment Links
 
 1. Env vars en Netlify (scope builds, contexto all): `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS`,
-   `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT` y `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT`; comprobar con la CLI de Stripe importe USD y redirección `…/access?session_id=`.
+   `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT`, `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT` y `VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT`; comprobar con la CLI de Stripe importe USD y redirección `…/access?session_id=`.
 2. En la rama del eBook: `python3 scripts/productos-digitales/sync-payment-links.py` → commit → merge #106 → gates LIVE
    (`gate-flujo-postpago.py --only ai-prompts-for-restaurants`, `tienda-gate.py --base https://aichef.pro`).
 3. Rama del HACCP: `git merge origin/main`, `sync-payment-links.py` → merge #107 → gates LIVE con `--only haccp-templates`.
-   Igual con #108 (`--only restaurant-schedule-templates`).
-4. Programar los 3 correos EN (10, 15 y 20-oct, 14:00Z) con `scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`).
-5. Limpiar worktrees: `git worktree remove <scratchpad>/wt-haccp` y `wt-staff`; las ramas `-f3` ya están fusionadas.
+   Igual con #108 (`--only restaurant-schedule-templates`) y #109 (`--only restaurant-financial-plan-templates`).
+4. Programar los 4 correos EN (10, 15, 20 y 25-oct, 14:00Z; comprobar antes que el 25 no hay correo ES) con `scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`).
+5. Limpiar worktrees: `git worktree remove <scratchpad>/wt-haccp`, `wt-staff` y `wt-fin`; las ramas `-f3` ya están fusionadas.
 
 ## 4. Pendientes que NO son de estos productos
+
+- Verificación humana antes de vender (recomendación de Claude, 3-oct): abrir 2-3 xlsx de cada kit en Excel/LibreOffice
+  (colores, impresión, gráficos del Plan Financiero) y repasar las 4 landings en el Chrome de Windows a escritorio y a 360 px.
+- ES `kit-plan-financiero`: defectos heredados listados en `financial-kit/F2-NOTAS.md` §6 (plazos de proveedor > 30 días,
+  DSCR con carencia, tipo 0 %, benchmarks de ocupación/GOP sin evaluar) para su próxima v2.x.
 
 - ES `pro-prompts-ebook`: las afirmaciones falsas listadas en §1 (v1.0.1 cuando John diga).
 - `use-cases-content.en.ts`: ~40 menciones tipo «Pizzeria HACCP Kit» prometen funciones que el kit no tiene (registro

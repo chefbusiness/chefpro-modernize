@@ -274,4 +274,10 @@ la F1 de cada producto frente a Etsy/Gumroad.
   worktree aparte · 1 revisión Opus · 1 ronda de arreglos). Lección: **un registro mensual de horas no sirve para la FLSA**
   si la semana laboral cruza el mes; el arreglo proporcional fue de instrucciones (copias con semanas completas), no de
   fórmulas. Y la semana del cuadrante y la de horas extra tienen que ser la MISMA (B3 = lunes, como la rejilla).
+- **2026-10-03 (noche, sesión Claude Code) — ola 3, producto 6: Restaurant Financial Plan Kit Pro** (PR #109, apilado,
+  `restaurant-financial-plan-templates`, $49). Mismo circuito. La revisión cazó lógica financiera que ningún gate mira
+  (DSCR inflado durante el periodo de solo intereses, plazos de proveedor > 30 días que convierten pagos en cobros, base del
+  sales tax): **en un kit financiero la revisión adversarial tiene que RECALCULAR cifras, no solo leer textos**. Varios de
+  esos fallos están también en el ES (anotados en `financial-kit/F2-NOTAS.md` §6). **Producción EN parada el 3-oct por
+  decisión de John**: 4 productos listos a falta de sus Payment Links (#106-#109).
 
