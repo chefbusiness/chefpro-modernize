@@ -16,22 +16,22 @@
  },
  "Coste anual de plantilla (origen de X15)": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!L5",
-  "valor": 119350.20111361095,
+  "valor": 119350.20111361096,
   "tipo": "salida"
  },
  "Coste anual de plantilla (total de la hoja)": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B25",
-  "valor": 119350.20111361095,
+  "valor": 119350.20111361096,
   "tipo": "salida"
  },
  "Coste de los puestos al año": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B17",
-  "valor": 106083.18150415,
+  "valor": 106083.18150415001,
   "tipo": "salida"
  },
  "Coste hora de la plantilla": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B19",
-  "valor": 13.243842884413233,
+  "valor": 13.243842884413235,
   "tipo": "salida"
  },
  "Horas contratadas al año": {
@@ -46,12 +46,12 @@
  },
  "Coste de sustituciones y refuerzo": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B24",
-  "valor": 13267.01960946096,
+  "valor": 13267.019609460962,
   "tipo": "salida"
  },
  "Plus de nocturnidad de la plantilla al año": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!M14",
-  "valor": 2725.4707549999994,
+  "valor": 2725.470755,
   "tipo": "salida"
  },
  "Provincia del convenio": {
@@ -176,7 +176,7 @@
  },
  "Valor de las horas de más del titular al año": {
   "ref": "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B14",
-  "valor": 8513.898997122793,
+  "valor": 8513.898997122795,
   "tipo": "salida"
  },
  "Veredicto de las horas del titular": {

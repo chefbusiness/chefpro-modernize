@@ -1,17 +1,17 @@
 {
  "CAPEX de apertura SIN fondo de maniobra (base imponible) (copiado del libro 2, X10)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B7",
-  "valor": 86415.65000000001,
+  "valor": 86415.65,
   "tipo": "entrada"
  },
  "Coste de materia por ración en sala (invierno, aceite absorbido incluido) (copiado del libro 3, X11)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B11",
-  "valor": 0.2731486410667722,
+  "valor": 0.2731486410667721,
   "tipo": "entrada"
  },
  "Coste de materia por ración para llevar (invierno, aceite absorbido incluido) (copiado del libro 3, X11)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B12",
-  "valor": 0.3054629283128055,
+  "valor": 0.3054629283128054,
   "tipo": "entrada"
  },
  "Ticket sin IVA por ración en sala (invierno) (copiado del libro 3, X11)": {
@@ -21,7 +21,7 @@
  },
  "Ticket sin IVA por ración para llevar (invierno) (copiado del libro 3, X11)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B14",
-  "valor": 2.192424242424243,
+  "valor": 2.192424242424242,
   "tipo": "entrada"
  },
  "Raciones que se consumen en sala (el resto, para llevar) (copiado del libro 3, X11)": {
@@ -121,7 +121,7 @@
  },
  "Partidas del CAPEX que no se amortizan (fianza, stock inicial y marketing de apertura) (copiado del libro 2, X10 bis)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B9",
-  "valor": 4668.300000000003,
+  "valor": 4668.299999999988,
   "tipo": "entrada"
  },
  "Contribución de julio y agosto si cierras (copiado del libro 5, X16 bis)": {
@@ -136,7 +136,7 @@
  },
  "Contribución de julio y agosto con ferias (copiado del libro 5, X16 bis)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B36",
-  "valor": 2106.453743784074,
+  "valor": 2106.453743784075,
   "tipo": "entrada"
  },
  "Ventas sin IVA del local en julio y agosto de la salida que eliges (copiado del libro 5, X16 ter)": {
@@ -216,42 +216,42 @@
  },
  "Contribución del año 1": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!B15",
-  "valor": 173009.28561377656,
+  "valor": 173009.28561377653,
   "tipo": "salida"
  },
  "Resultado antes de impuestos del año 1": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!B23",
-  "valor": 6048.671025231539,
+  "valor": 6048.671025231481,
   "tipo": "salida"
  },
  "Ventas sin IVA de la carta de invierno, año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C9",
-  "valor": 211819.0397727273,
+  "valor": 211819.03977272726,
   "tipo": "salida"
  },
  "Contribución de la carta de invierno, año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C11",
-  "valor": 184099.72579583214,
+  "valor": 184099.7257958321,
   "tipo": "salida"
  },
  "Contribución del año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C15",
-  "valor": 198418.44948705452,
+  "valor": 198418.4494870545,
   "tipo": "salida"
  },
  "Costes fijos del año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C22",
-  "valor": 166279.69486372353,
+  "valor": 166279.69486372356,
   "tipo": "salida"
  },
  "Intereses del año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C21",
-  "valor": 5394.75875011256,
+  "valor": 5394.758750112561,
   "tipo": "salida"
  },
  "Resultado antes de impuestos del año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C23",
-  "valor": 32138.754623330984,
+  "valor": 32138.754623330926,
   "tipo": "salida"
  },
  "Lectura del año de crucero (gana o pierde)": {
@@ -261,32 +261,32 @@
  },
  "Ventas sin IVA del año de crucero (verano estimado)": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C28",
-  "valor": 232556.75931818184,
+  "valor": 232556.7593181818,
   "tipo": "salida"
  },
  "Resultado sobre ventas del año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C29",
-  "valor": 0.13819746507285588,
+  "valor": 0.13819746507285563,
   "tipo": "salida"
  },
  "Contribución por ración, año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C30",
-  "valor": 1.8474715967137292,
+  "valor": 1.847471596713729,
   "tipo": "salida"
  },
  "Resultado antes de impuestos del año 3": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!D23",
-  "valor": 32981.17133088602,
+  "valor": 32981.17133088599,
   "tipo": "salida"
  },
  "Punto de equilibrio en raciones al año": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B11",
-  "valor": 90003.92490986103,
+  "valor": 90003.92490986105,
   "tipo": "salida"
  },
  "Punto de equilibrio en raciones al día": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B12",
-  "valor": 250.01090252739175,
+  "valor": 250.0109025273918,
   "tipo": "salida"
  },
  "Raciones al día previstas (media del año)": {
@@ -296,12 +296,12 @@
  },
  "Margen de seguridad en raciones al día": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B14",
-  "valor": 48.322430805941565,
+  "valor": 48.32243080594151,
   "tipo": "salida"
  },
  "Contribución mensual que pagan los fijos": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B17",
-  "valor": 13856.641238643628,
+  "valor": 13856.64123864363,
   "tipo": "salida"
  },
  "Punto de equilibrio de caja en raciones al día": {
@@ -316,42 +316,42 @@
  },
  "Resultado de agosto en el año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!H30",
-  "valor": -5712.910125517998,
+  "valor": -5712.910125517999,
   "tipo": "salida"
  },
  "Resultado del escenario pesimista": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!B12",
-  "valor": 4482.440944056871,
+  "valor": 4482.440944056812,
   "tipo": "salida"
  },
  "Resultado del escenario optimista": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D12",
-  "valor": 26373.770838533266,
+  "valor": 26373.770838533208,
   "tipo": "salida"
  },
  "Fijos de julio y agosto": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!B21",
-  "valor": 27713.282477287255,
+  "valor": 27713.28247728726,
   "tipo": "salida"
  },
  "Verano con fijos si se cierra": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D22",
-  "valor": -27713.282477287255,
+  "valor": -27713.28247728726,
   "tipo": "salida"
  },
  "Verano con fijos con la carta de verano": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D23",
-  "valor": -10344.573420211236,
+  "valor": -10344.57342021124,
   "tipo": "salida"
  },
  "Verano con fijos saliendo de ferias": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D24",
-  "valor": -25606.828733503182,
+  "valor": -25606.828733503186,
   "tipo": "salida"
  },
  "Verano con fijos de la salida elegida": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!D25",
-  "valor": -10344.573420211236,
+  "valor": -10344.57342021124,
   "tipo": "salida"
  },
  "Lo que deja la salida elegida frente a cerrar": {
@@ -361,12 +361,12 @@
  },
  "Resultado del mismo local sólo como despacho": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!C39",
-  "valor": -106505.999900495,
+  "valor": -106505.99990049502,
   "tipo": "salida"
  },
  "Ahorro de fijos que necesitaría el despacho para no perder": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Escenarios!C41",
-  "valor": 106505.999900495,
+  "valor": 106505.99990049502,
   "tipo": "salida"
  },
  "Coste total de las personas": {
@@ -376,17 +376,17 @@
  },
  "Raciones al día sólo para pagar a las personas": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Personal!B13",
-  "valor": 185.22341761684356,
+  "valor": 185.22341761684362,
   "tipo": "salida"
  },
  "Saldo de caja el día que se abre": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B32",
-  "valor": 79052.47993186176,
+  "valor": 79052.47993186177,
   "tipo": "salida"
  },
  "Valle de tesorería del año 1": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B34",
-  "valor": 71517.71231128434,
+  "valor": 71517.71231128435,
   "tipo": "salida"
  },
  "Mes del valle de tesorería": {
@@ -401,7 +401,7 @@
  },
  "Saldo de caja al cierre del año 1": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!M29",
-  "valor": 86973.1003320759,
+  "valor": 86973.10033207586,
   "tipo": "salida"
  },
  "Préstamo que pide la estructura": {
@@ -421,12 +421,12 @@
  },
  "Servicio de la deuda del año 2": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!D118",
-  "valor": 18600.32819990287,
+  "valor": 18600.328199902873,
   "tipo": "salida"
  },
  "Lo que sobra en el peor año del préstamo": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B124",
-  "valor": 7920.620400214157,
+  "valor": 7920.6204002141,
   "tipo": "salida"
  },
  "Lectura del banco (aguanta o no)": {
@@ -436,32 +436,32 @@
  },
  "DSCR más bajo": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Financiación!B127",
-  "valor": 1.6398710160047425,
+  "valor": 1.639871016004738,
   "tipo": "salida"
  },
  "Ticket medio sin IVA de la carta de invierno": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!D8",
-  "valor": 2.1613636363636366,
+  "valor": 2.161363636363636,
   "tipo": "salida"
  },
  "Materia media por ración de la carta de invierno": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!E8",
-  "valor": 0.28284292724058224,
+  "valor": 0.28284292724058213,
   "tipo": "salida"
  },
  "Contribución de la sala en el año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!G6",
-  "valor": 128621.6479399703,
+  "valor": 128621.64793997031,
   "tipo": "salida"
  },
  "Contribución del para llevar en el año de crucero": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!G7",
-  "valor": 55478.07785586184,
+  "valor": 55478.077855861826,
   "tipo": "salida"
  },
  "La sala menos los fijos del año": {
   "ref": "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!C17",
-  "valor": -37658.04692375324,
+  "valor": -37658.04692375325,
   "tipo": "salida"
  },
  "Lectura de la sala frente a los fijos": {

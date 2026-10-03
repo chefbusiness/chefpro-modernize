@@ -21,7 +21,7 @@ El plan de negocio de una churrería-chocolatería modelada, relleno de principi
 
 ### El proyecto en una página: qué se monta, dónde y para quién
 
-Churrería-Chocolatería El Molinete es una churrería-chocolatería con sala, barra, terraza y despacho a calle, en un local de barrio de una gran ciudad. Abre del desayuno a la merienda y, además, la noche del fin de semana. Vende churros y porras (el churro grueso; en otras zonas se oyen «tejeringo», «calentito» o «jeringo»), chocolate a la taza, cafés y una carta de verano.
+Churrería-Chocolatería El Molinete es una churrería-chocolatería con sala, barra, terraza y despacho a calle, en un local de barrio de una ciudad media. Abre del desayuno a la merienda y, además, la noche del fin de semana. Vende churros y porras (el churro grueso; en otras zonas se oyen «tejeringo», «calentito» o «jeringo»), chocolate a la taza, cafés y una carta de verano.
 
 Una advertencia de vocabulario, una sola vez. El chocolate a la taza de aquí lleva almidón y es espeso: no es el «chocolate caliente» de México o Chile, aunque a veces se use el mismo nombre. La máquina que dosifica la masa es la churrera o dosificadora, y «montar» un negocio es lo que en México se dice «poner» uno.
 
@@ -145,9 +145,9 @@ El calendario cierra el plan: el proyecto dura 10 meses desde la búsqueda del l
 
 | Canal | Parte de las raciones | Raciones del año | Ticket sin IVA | Materia por ración | Contribución por ración | Contribución del año |
 |---|---|---|---|---|---|---|
-| Sala (barra, mesas y terraza) | 70,0 % | 68.601,8 % | 2,1 % | 27,3 % | 1,9 % | 128.621,6 % |
-| Para llevar (despacho a calle) | 30,0 % | 29.400,8 % | 2,2 % | 30,5 % | 1,9 % | 55.478,1 % |
-| Carta de invierno: los dos canales juntos (la mezcla) | 100,0 % | 98.002,5 % | 2,2 % | 28,3 % | 1,9 % | 184.099,7 % |
+| Sala (barra, mesas y terraza) | 70 % | 68.602 | 2,15 € | 0,27 € | 1,87 € | 128.622 € |
+| Para llevar (despacho a calle) | 30 % | 29.401 | 2,19 € | 0,31 € | 1,89 € | 55.478 € |
+| Carta de invierno: los dos canales juntos (la mezcla) | 100 % | 98.002 | 2,16 € | 0,28 € | 1,88 € | 184.100 € |
 
 *Carta de invierno del año de crucero; julio y agosto van aparte, con la salida del verano que elige el plan.*
 
