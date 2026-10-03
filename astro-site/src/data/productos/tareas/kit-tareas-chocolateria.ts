@@ -360,7 +360,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.1 · octubre 2026',
 
   alreadyBought: {
     product: 'kit-tareas-chocolateria',

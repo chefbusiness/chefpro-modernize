@@ -726,9 +726,20 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'kit-tareas-chocolateria': {
-    version: '2.0',
-    updated: '2026-08-23',
+    version: '2.1',
+    updated: '2026-10-03',
     entries: [
+      {
+        version: '2.1',
+        date: '2026-10-03',
+        title: 'Ocho alérgenos declarados uno a uno y humedad del obrador unificada en 50-60 %',
+        changes: [
+          'Las tres tareas del kit que tratan la declaración de alérgenos en la etiqueta —el etiquetado del expositor en la Apertura (01), el de cada referencia en el perfil del Dependiente (04) y el envasado de la colección de Pascua (06)— enumeran ahora los ocho alérgenos habituales de una bombonería: leche, huevo, cereales con gluten, soja, cacahuetes, frutos de cáscara, sésamo y sulfitos. Cacahuetes, frutos de cáscara y sésamo son tres alérgenos distintos en el Anexo II del Reglamento (UE) n.º 1169/2011, así que cada uno se declara por separado y no bajo «frutos secos»; y se añaden los sulfitos, que no estaban en la lista.',
+          'La humedad objetivo del aire del obrador pasa a 50-60 % en las hojas que la indican: la comprobación antes de templar (02, hoja Templado), su explicación en las Instrucciones de esa plantilla y el briefing diario (BONUS-01). Así coinciden con la apertura del negocio (08) y trabajas con un solo valor cada mañana. Las humedades de la vitrina (menos del 55 %) y de la cámara de conservación (50-60 %) no cambian.',
+          'Donde «frutos secos» nombra un ingrediente o una familia de producto —las inclusiones del moldeado, los inventarios, la tabla de vida útil o el calendario— se mantiene tal cual: ahí no es una declaración de alérgenos.',
+          'La actualización afecta a cinco plantillas, que pasan a la versión 2.1: 01 Apertura y Cierre, 02 Partidas de Producción, 04 Tareas por Perfil, 06 Eventos y Temporada y BONUS-01 Briefing Diario. Las otras seis del kit no cambian. Si trabajas con las hojas impresas, vuelve a descargar e imprimir esas cinco.',
+        ],
+      },
       {
         version: '2.0',
         date: '2026-08-23',

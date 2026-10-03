@@ -1481,12 +1481,18 @@ def papel_del_fichero(wb):
     return None, detalle
 
 
-def contexto(carpeta, ficheros, abrir, producto=None):
+def contexto(carpeta, ficheros, abrir, producto=None, versiones=None):
     """Rellena CTX leyendo los ficheros del kit. `abrir(fname)` → Workbook.
 
     Sólo lee. Recorre TODOS los ficheros (también los que el motor no toca: de
     ellos salen la hora ancla del kit de hotel, cuyos 01-17 son otro molde),
     pero `ficheros` en el contexto lista únicamente los que están en alcance.
+
+    `versiones` — D53 (3-oct-2026): tabla {fichero: (versión, 'mes año')} de
+    los ficheros que suben de versión POR SU CUENTA (la declara el módulo de
+    contenido del kit como `VERSIONES` y la pasa `main.py`). Sin ella, que es
+    el caso de todos los kits de la familia salvo chocolatería, el contexto no
+    lleva la clave y todo sale como antes (`version_de`).
     """
     # CB-E3/CB-E9 — el identificador del producto tiene que estar puesto ANTES
     # de leer un solo fichero: `hojas_reconocidas` consulta `sub_cb()` para
@@ -1779,6 +1785,8 @@ def contexto(carpeta, ficheros, abrir, producto=None):
                   + ctx['marca'] + ' · ' + ctx['dominio'])
     if producto:
         ctx['producto'] = producto
+    if versiones:
+        ctx['versiones'] = dict(versiones)
     CTX.clear()
     CTX.update(ctx)
     # R3-f — los textos del MARCO (08 y 09) viven fuera de `ctx` a propósito:
@@ -2807,8 +2815,12 @@ def _dv_p4(ws, cambios):
     return n
 
 
-def bio_en_instrucciones(wb, cambios):
-    """§2.6 sin reescribir la hoja: bio anclada encima de la versión."""
+def bio_en_instrucciones(wb, cambios, fname=None):
+    """§2.6 sin reescribir la hoja: bio anclada encima de la versión.
+
+    `fname` (D53) sólo decide QUÉ versión se sella (`version_line(fname)`): sin
+    él, o sin tabla de versiones en el contexto, es la de la familia.
+    """
     if 'Instrucciones' not in wb.sheetnames:
         return
     ws = wb['Instrucciones']
@@ -2842,13 +2854,16 @@ def bio_en_instrucciones(wb, cambios):
         fila_v = sig
         cambios.append('Instrucciones: línea de autoría anclada encima de la '
                        'versión (§2.6)')
-    if ws.cell(row=fila_v, column=col).value != version_line():
-        ws.cell(row=fila_v, column=col).value = version_line()
-        cambios.append('Instrucciones: versión 2.0')
+    if ws.cell(row=fila_v, column=col).value != version_line(fname):
+        ws.cell(row=fila_v, column=col).value = version_line(fname)
+        cambios.append(f'Instrucciones: versión {version_de(fname)[0]}')
 
 
-def normalizar_p4(wb, cambios, saltar=(), bio=True):
-    """DV, contador honesto, CF y bio en las hojas del molde P4."""
+def normalizar_p4(wb, cambios, saltar=(), bio=True, fname=None):
+    """DV, contador honesto, CF y bio en las hojas del molde P4.
+
+    `fname` sólo viaja hasta `bio_en_instrucciones` (versión por fichero, D53).
+    """
     tocadas, n_dv = [], 0
     for ws in wb.worksheets:
         if ws.title in saltar:
@@ -2872,7 +2887,7 @@ def normalizar_p4(wb, cambios, saltar=(), bio=True):
     # —o no hay línea de versión donde anclar— no se inventa nada y lo canta el
     # gate `dv_y_bio` de main.py.
     if bio:
-        bio_en_instrucciones(wb, cambios)
+        bio_en_instrucciones(wb, cambios, fname)
     return tocadas
 
 
@@ -4239,17 +4254,38 @@ def reescribir_instrucciones(wb, fname, cambios):
     fila += 1
     escribe(fila, 'Contacto: info@aichef.pro', F_CAB)
     fila += 2
-    escribe(fila, version_line(), F_CAB)
+    escribe(fila, version_line(fname), F_CAB)
     ws.page_setup.paperSize = 9
     ws.page_setup.orientation = 'portrait'
     ws.print_area = f'A1:B{fila}'
     cambios.append(f'Instrucciones reescritas ({len(bloques)} bloques) con '
-                   '«Se conecta con», bio anclada y versión 2.0')
+                   '«Se conecta con», bio anclada y versión '
+                   f'{version_de(fname)[0]}')
 
 
-def version_line():
+#: Versión de FAMILIA: la que sella el motor en «Instrucciones» y en el
+#: `subject` de cada fichero que no tenga otra declarada.
+VERSION_FAMILIA = ('2.0', 'agosto 2026')
+
+
+def version_de(fname=None):
+    """(versión, 'mes año') que le toca a `fname`.
+
+    D53 (3-oct-2026) — un kit puede subir de versión SÓLO los ficheros que
+    cambian (chocolatería 2.1: 01, 02, 04, 06 y BONUS-01; los otros seis siguen
+    en la 2.0). La tabla la declara su módulo de contenido como `VERSIONES` y
+    llega a `CTX['versiones']` por `contexto()`. Sin tabla —los demás kits de la
+    familia— o sin `fname`, es `VERSION_FAMILIA`: mismo texto que antes, byte a
+    byte. Precedente: el mapa por fichero de `kit-pasteleria-v2_0-postprocess.py`
+    («para no revertir la 2.1» al reprocesar).
+    """
+    return CTX.get('versiones', {}).get(fname, VERSION_FAMILIA)
+
+
+def version_line(fname=None):
     pid = CTX.get('producto', 'kit-tareas')
-    return f'Versión 2.0 · agosto 2026 · aichef.pro/{pid} · info@aichef.pro'
+    num, fecha = version_de(fname)
+    return f'Versión {num} · {fecha} · aichef.pro/{pid} · info@aichef.pro'
 
 
 # ==========================================================================
@@ -4463,7 +4499,9 @@ def set_metadata(wb, fname, cambios):
     p.creator = 'AI Chef Pro'
     p.lastModifiedBy = 'AI Chef Pro'
     sufijo = CTX.get('sufijo') or 'Kit de Tareas Recurrentes Pro'
-    p.subject = f'{sufijo} · v2.0'
+    # D53 — el `subject` dice la MISMA versión que la línea de «Instrucciones»
+    # del fichero (m5: que las dos no se contradigan es justo lo que vigila).
+    p.subject = f'{sufijo} · v{version_de(fname)[0]}'
     if not keywords_ok(p.keywords):
         p.keywords = keywords_del_kit()
     titulo = p.title or ''
@@ -4881,7 +4919,7 @@ def aplicar(wb, fname, cambios):
         # (los 01-07 de catering, chocolatería, heladería, hotel y
         # restaurante-creativo). Se le pasa la normalización mínima para que el
         # producto no entregue dos desplegables y dos contadores distintos.
-        normalizar_p4(wb, cambios)
+        normalizar_p4(wb, cambios, fname=fname)
         return {}
 
     # DV y CF se vacían y se reconstruyen enteros (idempotencia)
