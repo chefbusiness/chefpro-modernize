@@ -234,6 +234,11 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   Chocolatería 2.1 (ES)" --scheduled-at 2026-11-08T08:00:00Z` (Escandallos 2.1 va antes: 3-nov, programable desde el 4-oct).
   Deuda que destapó: el changelog del Mega Pack (`get-download-urls.ts:1403`) sigue en 1.1 del 22-ago y nunca recoge las versiones de sus kits.
 - VPS: `/dev/null` sigue siendo un fichero normal (`regular file 644`, comprobado hoy) → la galería de capturas sigue bloqueada (arreglo de John).
+- ✅ **Churrería-Chocolatería, F1 CERRADA** (`c4449f1d`, `d419934d`, `079eca66`): research 2,11 M · fichas + SPEC + refutación 1,66 M ·
+  `datos_ejemplo.py` «El Molinete» 0,86 M = **4,63 M** (la SPEC lo estimaba en 3,26). Proyección con la F2 tal cual: **14,06 M → por
+  encima de la parada de 13 M → F2 PARADA hasta que John elija** entre A (≈ 13,2 M), **B (≈ 12,8 M, recomendada: 7 libros, 16 caps +
+  anexo)** y C (aplazar). Handoff: `SESSION_HANDOFF_2026-10-03-churreria-f1.md`.
+- John (3-oct): **VPS aparcado** hasta que él lo actualice entero y avise; la galería de capturas, en pausa con él.
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
@@ -339,7 +344,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | Producto (nombre de la tarjeta) | Familia | Precio | Ola |
 |---|---|---|---|
 | Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
-| Cómo Montar una Churrería-Chocolatería — 🔄 **F1 en curso desde el 3-oct-2026** | Guías Cómo Montar | 65 € | Q4 2026 |
+| Cómo Montar una Churrería-Chocolatería — ✅ **F1 cerrada el 3-oct-2026** (4,63 M) · ⏸️ **F2 en espera de John por presupuesto** (proyección 14,06 M > parada de 13 M; opciones en SPEC §9.1) | Guías Cómo Montar | 65 € | Q4 2026 |
 | Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
 | ~~Tareas Recurrentes: Taquería Mexicana~~ **✅ LIVE 20-sep-2026** (producto 50, 14 €, PR #85 → `4f214a0`; correo el 29-oct) | Kits de tareas | 14 € | — |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
