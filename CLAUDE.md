@@ -537,6 +537,17 @@ vigilar la sesión para que no se gastara la suscripción.
 - Reutilizar lo hecho (generadores, guiones y fichas de la hermana) cambiando datos; no rediseñar.
 - UltraCode **no** autoriza nada de esto a crecer: si un paso va a pasar de una hora o de ~1 M tokens, se recorta antes de lanzarlo.
 
+### 🔴 Reparto Mac ↔ VPS en TODOS los productos (John, 3-oct-2026)
+
+«Trabajamos en local lo que da la calidad; en el VPS todo lo que al Mac le supone un esfuerzo innecesario; tú ensamblas en
+local hasta pedirme el Payment Link». Probado en la Churrería-Chocolatería (PR #105):
+- **Mac**: orquestación, redactores Sonnet (Agent tool, API-bound, 2-3 a la vez con `istats` < 60 °C), ficha de landing, commits, PR.
+- **VPS** (`ssh vps`, `/root/chefpro-modernize`, venv `/root/venv-guias`): generadores de Excel + `gate_libros.py`,
+  `documentos.py`, gates con openpyxl/PyMuPDF (`paginas-gate`, `censo-entregables`, `gate-no-latinos`) en un `git worktree`
+  de la rama; `scp` de vuelta y commit desde el Mac; dejar el árbol del VPS limpio.
+- **Netlify** construye el preview; gates contra él con `--base`. **Una** revisión Opus final sobre los `.md` (cazó 9 bloqueantes).
+- Lanzar `claude -p` headless en el VPS lo bloquea el modo automático: requiere una regla de permiso que decide John.
+
 ### 🔴 Productos nuevos: POLÍTICA DE 3 FASES + presupuesto proporcional al precio (John, 20-sep-2026)
 
 John delegó la toma de decisiones del proyecto de productos digitales («tú lideras este proyecto conmigo, te delego la

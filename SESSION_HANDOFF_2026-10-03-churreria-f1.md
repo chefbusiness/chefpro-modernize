@@ -122,3 +122,13 @@ lentes, verificación cita a cita, SPEC de cientos de líneas, refutaciones en c
 **research en UNA pasada, SPEC corta, un implementador + gates de script, una sola comprobación adversarial final** (que los
 ficheros no estén corruptos y no haya errores), objetivo **3-6 horas por producto**, y la cuenta coste/retorno ANTES de
 elegirlo. Detalle en `CLAUDE.md` del proyecto y en la memoria `feedback_coste-vs-retorno-antes-de-elegir-producto`.
+
+## Sesión de la tarde (3-oct, Claude Code) — TERMINADA a falta del Payment Link
+
+22 bloques redactados (Sonnet, Mac) · Excel regenerados y documentos ensamblados en el VPS · revisión Opus final con 9
+bloqueantes arreglados · guía 95 págs (16 caps + anexo), BP 14, bonus 21 · **PR #105** con preview en verde (13 descargas,
+cripto, Miselup, DataFast, WhatsApp). `documentos.py`: 4 falsos positivos de gates acotados y el bug de «fila porcentual»
+(tabla del BP) arreglado, con regresión 0 sobre Chocolatería y Pastelería. **Retomar:** Payment Link de John → env
+`VITE_STRIPE_PAYMENT_LINK_GUIA_CHURRERIA_CHOCOLATERIA` (builds) → `python3 scripts/productos-digitales/sync-payment-links.py`
+en la rama → merge → `gate-flujo-postpago.py --only guia-churreria-chocolateria` LIVE + `robots-gate.py --live`.
+Pendientes aparte: post `ia-churrerias-guia-completa` (SPEC §7.2), hermana v1.0.1 (D7), correo del 13-nov (desde el 14-oct).
