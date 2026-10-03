@@ -5,6 +5,7 @@
 export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'food-cost-templates': { usd: 19 },
   'guia-chocolateria-obrador': { eur: 65 },
+  'guia-churreria-chocolateria': { eur: 65 },
   'guia-dark-kitchen': { eur: 24 },
   'guia-food-cost-ingenieria-menu': { eur: 55 },
   'guia-panaderia-obrador': { eur: 65 },
