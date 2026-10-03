@@ -216,6 +216,19 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   plantillas» donde son 7 y sus estados FIFO/validez usan `TODAY()` contra fechas fijas de agosto → corregir en su próxima v2.x.
 - Cola ES: Chocolatería 24-oct ✅ programado · Taquería 29-oct (desde el 29-sep) · Escandallos 2.1 3-nov (desde el 4-oct) · Kit Chocolatería 2.1 8-nov (desde el 9-oct, si está LIVE).
 
+### 🔄 2026-10-03 (sesión PAR, Claude Code en el Mac) — «Cómo Montar una Churrería-Chocolatería» F1 EN CURSO + correo de la Taquería PROGRAMADO
+- **Correo de la Taquería programado** (llevaba en ventana desde el 29-sep sin programar): **29-oct 08:00 UTC**,
+  `2e4b4d68-30e7-4962-b9d6-6376ca20e4e3`, segmento ES, guardas y enlaces en verde. Cola ES leída por `GET /broadcasts`: Panadería 2.2 4-oct ·
+  Food Truck 2.2 9-oct · Pastelería 14-oct · Kit Pastelería 2.1 19-oct · Chocolatería 24-oct · **Taquería 29-oct** · Escandallos 2.1 **3-nov
+  (programable desde el 4-oct 08:00Z)** · Kit Chocolatería 2.1 8-nov (desde el 9-oct, y solo si está LIVE) → hueco siguiente **13-nov**.
+- **Siguiente producto nuevo (decisión delegada): «Cómo Montar una Churrería-Chocolatería»** (L, 65 € orientativo, producto 51). Primero de la
+  cola de construcción del §3, anunciado «Q4 2026» en el hub, temporada alta de churros, y la hermana (Chocolatería Boutique, D1) ya la separó como
+  «otro negocio»: reutiliza sus 109 CHN y 115 CHS verificados, sus 9 generadores y su guion. F1 en el Mac (solo API) con 5 lentes de research,
+  2 a la vez por la térmica (workflow `research-guia-churreria`, run `wf_ca9bdc63-a48`).
+- 🔴 **Recordatorio de plazo:** el **Kit de Tareas Chocolatería 2.1** tiene que estar LIVE antes del **24-oct** (D53; sigue en `version: '2.0'`
+  en `src/data/productos-changelog.ts:729`). Toca en la próxima sesión «v2.x ES».
+- VPS: `/dev/null` sigue siendo un fichero normal (`regular file 644`, comprobado hoy) → la galería de capturas sigue bloqueada (arreglo de John).
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
@@ -320,7 +333,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | Producto (nombre de la tarjeta) | Familia | Precio | Ola |
 |---|---|---|---|
 | Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
-| Cómo Montar una Churrería-Chocolatería | Guías Cómo Montar | 65 € | Q4 2026 |
+| Cómo Montar una Churrería-Chocolatería — 🔄 **F1 en curso desde el 3-oct-2026** | Guías Cómo Montar | 65 € | Q4 2026 |
 | Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
 | ~~Tareas Recurrentes: Taquería Mexicana~~ **✅ LIVE 20-sep-2026** (producto 50, 14 €, PR #85 → `4f214a0`; correo el 29-oct) | Kits de tareas | 14 € | — |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |
