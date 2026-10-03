@@ -79,11 +79,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'pack-appcc',
     url: '/pack-appcc',
     price: '€14',
-    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Templates Pack' },
+    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Food Safety Kit Pro' },
     description: {
       es: 'APPCC y trazabilidad listos para inspección.',
       en: 'HACCP and traceability templates ready for inspection.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `haccp-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/haccp-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-gestion-personal': {
     id: 'kit-gestion-personal',

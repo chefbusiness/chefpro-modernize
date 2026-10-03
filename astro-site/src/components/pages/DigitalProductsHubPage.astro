@@ -61,6 +61,24 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // HACCP Food Safety Kit Pro (3-oct-2026): el más nuevo → 1. Imagen sin texto en español
+  // (la del ES, appcc-inspector-sanidad, lleva rótulos en castellano).
+  {
+    name: 'HACCP Food Safety Kit Pro',
+    slug: '/pack-appcc',
+    description: '19 HACCP and food safety templates for Excel + 2 bonuses: HACCP plan with hazard analysis, temperature and cooling logs, cleaning schedule, allergen matrix and a health inspection self-checklist.',
+    features: [
+      'HACCP plan pre-filled with 21 hazards',
+      'Temperature logs in °F with automatic alerts',
+      'Allergen matrix: US Big 9 and UK 14',
+      '25-point health inspection self-checklist',
+    ],
+    iconName: 'ShieldCheck',
+    image: '/lovable-uploads/ai-gallery/use-case-task-appcc-fridge.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
   {
     name: 'Restaurant Inventory Kit Pro',
     slug: '/kit-inventario',
@@ -220,22 +238,6 @@ const products = [
     badge: 'Best Seller',
     badgeColor: 'bg-[#FFD700]/20 text-[#FFD700]',
     tags: ['pdf', 'ai'],
-  },
-  {
-    name: 'HACCP Templates Pack',
-    slug: '/pack-appcc',
-    description: '17 food safety templates: temperatures, cleaning, allergens, HACCP, traceability. Required by law.',
-    features: [
-      '17 templates with automatic alerts',
-      'Matrix of the 14 mandatory allergens',
-      'Pre-filled HACCP hazard analysis',
-      'Health inspection guide',
-    ],
-    iconName: 'ShieldCheck',
-    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
-    badge: '🔥 Best Seller',
-    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
-    tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
   {
     name: 'How to Open a Fine-Dining Restaurant',

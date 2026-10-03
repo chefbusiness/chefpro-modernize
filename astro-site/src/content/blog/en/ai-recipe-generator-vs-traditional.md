@@ -51,7 +51,7 @@ imageAlt: "Comparison traditional versus AI recipe development"
 <li><strong>Cultural authenticity:</strong> Respecting traditional flavor profiles</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">HACCP Templates Pack</h3><p class="mt-2 text-muted-foreground">HACCP and traceability templates ready for inspection.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-recipe-generator-vs-traditional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get HACCP Templates Pack for €14</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">HACCP Food Safety Kit Pro</h3><p class="mt-2 text-muted-foreground">HACCP and traceability templates ready for inspection.</p><a href="/en/digital-products/haccp-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-recipe-generator-vs-traditional" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get HACCP Food Safety Kit Pro for $19</a></aside>
 
 <h2>Time Comparison: AI vs Traditional</h2>
 <p>We conducted a controlled test developing the same concept—&#8221;Pan-Seared Salmon with Seasonal Vegetables and Citrus Gastrique&#8221;—using both methods:</p>

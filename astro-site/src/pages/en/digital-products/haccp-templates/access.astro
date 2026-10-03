@@ -1,0 +1,26 @@
+---
+// /en/digital-products/haccp-templates/access — access gate de HACCP Food Safety Kit Pro (tienda EN).
+// COPIA de pages/pack-appcc-access.astro, escrita A MANO: fase5-generate-zona-app.py salta
+// las entradas de zona-app.ts con lang ≠ 'es' (TIENDA §3). En lugar del gate vanilla del ES se
+// monta el gate COMPARTIDO ProductAccessGate con lang="en" (su COPY.en ya existe): mismo flujo
+// verify-purchase → JWT en localStorage → dashboard.
+// Island client:only="react" (window/localStorage en cliente; sin pase SSR). El <title> va en el
+// BaseLayout porque el shim de react-helmet-async anula el Helmet cliente (= COPY.en.title del gate).
+// Props de dinero = entrada `haccp-templates` de lib/zona-app.ts y de verify-purchase.ts.
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../../../../components/FunctionsOriginPatch.astro';
+import ProductAccessGate from '../../../../../../src/components/shared/ProductAccessGate';
+---
+
+<BaseLayout title="Verifying access... | AI Chef Pro" lang="en" noindex>
+  <FunctionsOriginPatch />
+  <ProductAccessGate
+    client:only="react"
+    productId="haccp-templates"
+    storageKey="haccp-templates-jwt"
+    dashboardPath="/en/digital-products/haccp-templates/library"
+    landingPath="/en/digital-products/haccp-templates"
+    productLabel="HACCP Food Safety Kit Pro"
+    lang="en"
+  />
+</BaseLayout>

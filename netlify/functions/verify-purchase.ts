@@ -48,6 +48,19 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Pack de Plantillas APPCC</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 19 registros + 2 bonus de seguridad alimentaria:',
     emailCta: 'Acceder a mis Plantillas APPCC',
   },
+  // Tienda EN (2026-10-03): gemelo de pack-appcc, producto independiente con su propio acceso
+  // (mismo patrón que food-cost-templates y restaurant-inventory-templates). `lang: 'en'` elige los
+  // textos fijos del email (netlify/shared/email-i18n.ts) y la página de estado cripto
+  // /en/crypto-payment; precio en USD (product-prices.ts). El asunto empieza por «Your access to»
+  // para productoLabel().
+  'haccp-templates': {
+    accessPath: '/en/digital-products/haccp-templates/access',
+    emailSubject: 'Your access to HACCP Food Safety Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>HACCP Food Safety Kit Pro</strong> is ready. Click the button to open your dashboard and download the 19 food safety templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas': {
     accessPath: '/kit-tareas-access',
     emailSubject: 'Tu acceso al Kit de Tareas Recurrentes',

@@ -10,6 +10,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'kit-escandallos': { accessPath: '/kit-escandallos-access', label: 'Kit de Escandallos Pro' },
   'food-cost-templates': { accessPath: '/en/digital-products/food-cost-templates/access', label: 'Food Cost Kit Pro', lang: 'en' },
   'pack-appcc': { accessPath: '/pack-appcc-access', label: 'Pack Plantillas APPCC' },
+  'haccp-templates': { accessPath: '/en/digital-products/haccp-templates/access', label: 'HACCP Food Safety Kit Pro', lang: 'en' },
   'kit-tareas': { accessPath: '/kit-tareas-access', label: 'Kit de Tareas Recurrentes' },
   'kit-tareas-cafeteria': { accessPath: '/kit-tareas-cafeteria-access', label: 'Kit Tareas Cafetería' },
   'kit-tareas-pizzeria': { accessPath: '/kit-tareas-pizzeria-access', label: 'Kit Tareas Pizzería' },

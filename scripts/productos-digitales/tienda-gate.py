@@ -299,7 +299,10 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            'Café', 'Cafés', 'café', 'cafés', 'açaí',
            # Nombres propios de los testimonios traducidos del ES (Food Cost Kit Pro, 25-sep).
            'María José Pérez', 'Tomás Herrero', 'Tapería El Rincón', 'Lucía Fernández', 'Cóctel & Co',
-           'Cafetería Central', 'Kit de Escandallos Pro']
+           'Cafetería Central', 'Kit de Escandallos Pro',
+           # Ídem, HACCP Food Safety Kit Pro (3-oct): testimonios del Pack Plantillas APPCC traducidos tal cual.
+           'Marcos Ibáñez', 'Patricia Roldán', 'Ana Belén Torres', 'Cafetería El Trigal', 'Hotel Montaña',
+           'Catering Eventos del Sur']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
