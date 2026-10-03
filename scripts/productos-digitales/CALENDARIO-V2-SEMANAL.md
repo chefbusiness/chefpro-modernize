@@ -239,6 +239,12 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   encima de la parada de 13 M → F2 PARADA hasta que John elija** entre A (≈ 13,2 M), **B (≈ 12,8 M, recomendada: 7 libros, 16 caps +
   anexo)** y C (aplazar). Handoff: `SESSION_HANDOFF_2026-10-03-churreria-f1.md`.
 - John (3-oct): **VPS aparcado** hasta que él lo actualice entero y avise; la galería de capturas, en pausa con él.
+- ✅ **Churrería-Chocolatería LIVE (3-oct, tarde, PR #105)** — Stripe `7sY14gdkMeAK3UXejH6oo1A` + NOWPayments verificados en
+  producción. **Correo de lanzamiento: hueco 13-nov 08:00Z, PROGRAMAR a partir del 14-oct** (tope de 30 días de Resend), antes
+  `GET /broadcasts` para confirmar que Escandallos 2.1 (3-nov) y Kit Chocolatería 2.1 (8-nov) están programados; si no, el hueco es
+  el `scheduled_at` más tardío + 5 días. Plantilla de lanzamiento: `emails/broadcast-manual-manager-lanzamiento-es.html`; prueba a
+  John con `--test`. Hermana v1.0.1 (D7): aplazada por John; su correo, 5 días después del de la Churrería.
+- John (3-oct, tarde): **VPS reactivado** con reparto Mac ↔ VPS para todos los productos (regla en `CLAUDE.md`).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
