@@ -1,0 +1,683 @@
+[
+ {
+  "id": "guia_cap01_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap01_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap01_b1.txt",
+  "palabras_objetivo": 1600,
+  "palabras_min": 1152,
+  "capitulo": "Qué Negocio Estás Montando: Seis Formatos y Cuál te Toca",
+  "epigrafes": [
+   "Seis formatos con el mismo nombre, y cuál te toca",
+   "El caso que recorre el pack: la Churrería-Chocolatería El Molinete",
+   "La bombonería es otro negocio, y tiene su propia guía",
+   "Qué incluye este pack, en qué orden se rellena y qué es de otro producto",
+   "Lo que este pack no hace, y cómo llamamos a cada cosa"
+  ],
+  "puntos": [
+   "Abrir con el mapa: la palabra «churrería» tapa seis negocios que se montan distinto. Presentarlos por lo que el pack le da a cada uno: el local con sala, terraza y despacho a calle (el caso cifrado); el despacho para llevar (columna de escenario, con su propio régimen de apertura); la caseta o el remolque de feria (papeles y punto muerto por evento, sin caso cifrado); la franquicia (comparador de lo que publican las enseñas, sin recomendar ninguna); los churros dentro de una cafetería o un bar (sólo lo que cambia al meter una freidora); y el obrador que fabrica para otros negocios (fuera, en una línea).",
+   "Decir por qué el caso es el local con sala y no el despacho: es el negocio que define la venta —la taza con el churro—, es el formato con comparables publicados y es el más difícil; con él cifrado, el despacho sale como «lo que quitas», no al revés.",
+   "Dar la dotación con precio de ficha de las tres variantes que la calculadora cifra —local con sala, despacho y caseta— y avisar de que NO son el presupuesto de apertura: les falta todo lo que ninguna ficha publica, que es la mayor parte del dinero y la cuenta el capítulo 8.",
+   "Presentar El Molinete en cinco líneas: un local con la superficie útil del caso, obrador de masa a la vista, fritura bajo campana, barra con despacho a calle, sala y una terraza aparte con su propia autorización; en una ciudad media española sin nombre; abre todos los días y madruga los fines de semana.",
+   "Explicar las tres clases de cifra que el lector va a encontrar y cómo se distinguen en las hojas: las que tienen fuente (un id con su enlace), los SUPUESTOS DECLARADOS de El Molinete (celda verde con la nota «supuesto, pon el tuyo») y las que calcula el libro. Y la regla de los ejemplos de Madrid: horario, humos y convenio son el ejemplo verificado, no la norma de tu ciudad.",
+   "Dar el orden de magnitud del caso con tres cifras del pack —el CAPEX sin fondo de maniobra y las raciones de un día tipo y de un día punta— y decir que todo lo demás se deriva de ellas en los libros.",
+   "Decirlo arriba y en positivo, porque es una venta cruzada honesta: hacer bombones en un obrador es comercio con fabricación propia y no lleva freidora; servir chocolate a la taza con churros es hostelería con fritura. Quien quiera la bombonería tiene su guía, «Cómo Montar una Chocolatería Boutique & Atelier».",
+   "Y el argumento legal que los separa, en una línea y sin venderlo como novedad (el desarrollo es del capítulo 4): el Anexo de la Ley 12/2012 no contiene ningún grupo de la agrupación de restauración, así que la sala con mesas queda fuera de la inexigibilidad de licencia de actividad; el despacho de masas fritas, epígrafe 644.6, está dentro porque el Anexo incluye el grupo 644 completo, como ya explicaba la guía de chocolatería.",
+   "Qué hacer si quieres las dos cosas: las dos guías se enlazan, y la frontera práctica es la freidora, que trae humos, gas, aceite y otro riesgo de incendio.",
+   "Listar los ocho libros por su nombre de fichero y la pregunta que contesta cada uno —producción y local, inversión, carta y escandallo, aceite, temporada y ferias, plan financiero, checklist legal y turnos— y el ORDEN en que se rellenan, que no es el de su número: cada libro trae por celda verde, con una fila de cuadre que avisa si te equivocas, la cifra que necesita de otro.",
+   "Decir qué NO construye este pack y dónde vive: el registro diario del aceite y el resto del autocontrol están en el Pack Plantillas APPCC; el cuadrante semana a semana y las nóminas, en el Kit Gestión de Personal y Turnos; la feria como negocio con vehículo, en el Plan de Negocio: Food Truck; la cafetería que mete churros, en el Plan de Negocio: Cafetería; y el método general de escandallo, en el Kit de Escandallos Pro y la Guía Food Cost + Ingeniería de Menú, que no costean masa frita por kilo.",
+   "Decirlo sin adornos y antes de que el lector lo busque: no enseña a freír, no es un recetario ni un curso de churrero, no da ninguna temperatura de fritura del churro (no hay fuente primaria que la fije), no sustituye al proyecto técnico de la extracción ni a tu asesor, y no promete rentabilidad.",
+   "Fijar el vocabulario de todo el documento, con la equivalencia una sola vez y aquí: churro y porra (tejeringo, calentito y jeringo como nombres regionales), chocolate a la taza (que no es el chocolate caliente de México y Chile: el de aquí lleva almidón y es espeso), churrera y dosificadora (la máquina de churros), escandallo (costeo), puesto, caseta y remolque (carrito), y montar (en México, poner)."
+  ]
+ },
+ {
+  "id": "guia_cap02_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap02_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap02_b1.txt",
+  "palabras_objetivo": 1300,
+  "palabras_min": 936,
+  "capitulo": "El Cliente, las Franjas y la Plaza",
+  "epigrafes": [
+   "No hay censo de churrerías, y eso también es un dato",
+   "Desayuno, merienda y noche: las franjas que mandan",
+   "Lo que cuesta un churro depende de la plaza",
+   "Qué mirar en la calle antes de firmar"
+  ],
+  "puntos": [
+   "Decir la verdad incómoda primero: no existe un número oficial de churrerías en España. La clasificación nacional de actividades no tiene una clase propia para la churrería y el directorio de empresas del INE sólo publica la hostelería agregada: quien te dé una cifra de churrerías se la ha inventado.",
+   "Dar lo que sí tiene fuente y para qué sirve: los locales de hostelería de España, con su fecha (directorio del INE), son el orden de magnitud de la competencia por el desayuno y la merienda, no tu cuota. Y el informe de consumo alimentario del ministerio no tiene una línea de churros: no hay consumo de churros medido.",
+   "Sacar la consecuencia: el mercado de una churrería es su calle, y se mide andando, no en un informe. El último epígrafe da el método.",
+   "Explicar las franjas de El Molinete como lo que son, supuestos declarados del libro de temporada que el lector cambia por los suyos: el desayuno es la franja que más raciones se lleva de la semana, la merienda es la segunda franja, y la media mañana y la noche de los viernes y sábados son pequeñas.",
+   "Dar las horas a la semana de cada franja y la hora punta de un día tipo y de un día punta en raciones por hora, y explicar por qué la hora punta importa más que el total del día: la línea de fritura se dimensiona para la peor hora, no para la media. La cola del domingo se resuelve en el capítulo 6.",
+   "Avisar de la trampa de horario que va pegada al desayuno: abrir antes de las 8:00 tiene condiciones en el ejemplo de Madrid, que explica el capítulo 4. La franja vive sólo en el libro de temporada; el libro de turnos copia de ahí sus horas.",
+   "Presentar los precios publicados con su sitio y su año, uno por línea: la ración de seis churros y el chocolate a la taza en barra y en terraza de una churrería de Granada; la ración y la media ración de La Artesana, en Palma; el churro y la porra sueltos de una churrería de Vallecas; y el gasto por persona con chocolate en una chocolatería del centro de Madrid.",
+   "Leerlos bien: con chocolate, de la ración más la taza de Granada al gasto por persona del centro de Madrid, la plaza mueve el ticket alrededor de la mitad, y los datos son de años distintos. En este capítulo SÍ puedes sumar la ración y la taza de la misma carta de Granada para dar su precio con chocolate: es la única suma permitida.",
+   "Y la decisión que sale de ahí: no hay «precio de la ración en España». El ticket de El Molinete, sin IVA y con la carta de invierno, sale de su propia carta y de su mix, y el capítulo 3 explica cómo se fija.",
+   "Dar el método de una mañana de trabajo: contar churrerías, cafeterías y bares que sirven churros en el radio de caminata; mirar a qué hora abren y si hay cola el domingo; pedir la ración y la taza y apuntar el precio; y ver quién pasa a primera hora y quién a la hora de la merienda.",
+   "Dar los volúmenes que publican negocios reales, con su medio y su fecha, como contraste y no como objetivo: lo que cuenta el gestor de La Artesana que venden entre semana y en fin de semana, y lo que llega a vender en sus días fuertes la churrería de Vallecas. Las raciones de El Molinete son un supuesto apoyado en el primero, y se dice.",
+   "Cerrar con el criterio: una plaza sirve si su hora punta cabe en tu línea y su precio cabe en tu escandallo. Las dos cosas se comprueban en los libros de producción y de carta antes de firmar."
+  ]
+ },
+ {
+  "id": "guia_cap03_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap03_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap03_b1.txt",
+  "palabras_objetivo": 1600,
+  "palabras_min": 1152,
+  "capitulo": "La Carta de Apertura y el IVA de Cada Cosa",
+  "epigrafes": [
+   "Veinticuatro referencias en cinco familias, y el papel de cada una",
+   "Ración, docena y kilo: el formato también es precio",
+   "El chocolate a la taza: qué preparado compras y qué dice su etiqueta",
+   "El IVA de lo que vendes: sala, para llevar y la zona gris de la taza",
+   "El IVA de lo que compras: con o sin impuesto, siempre en base imponible"
+  ],
+  "puntos": [
+   "Presentar la carta de El Molinete como un ejemplo declarado, no como un surtido recomendado: churros y porras (la ración, la media ración, la ración de porras, el churro y la porra sueltos, la docena y el kilo para llevar), dos rellenos y especiales, cinco formatos de chocolate a la taza, seis cafés y bebidas y cuatro referencias de carta de verano.",
+   "Decir qué papel juega cada familia: el churro es el volumen y la materia más barata; la taza convierte la ración en un ticket con chocolate; los cafés llenan el desayuno; los rellenos suben ticket y redes; y la carta de verano es la que sostiene julio y agosto (capítulo 14).",
+   "Dar el veredicto del libro sobre la carta entera —cuántas referencias salen con «mantener» y cuántas con «revisar precio»— y la regla con la que se toma: margen en EUROS por unidad y rotación, nunca el porcentaje. El churro suelto deja mucho por kilo de masa y poco por unidad, y por eso sale a revisar.",
+   "Explicar en pocas líneas por qué el mismo churro se vende en formatos distintos y qué papel cumple cada uno: la ración y la media ración en sala, la docena y el kilo para llevar y para el pedido grande del domingo. Lo que deja cada formato por kilo de masa se calcula en el capítulo 12: aquí sólo se decide qué formatos entran en la carta.",
+   "Y el vaso de plástico o de papel plastificado para llevar: desde enero de 2023 se cobra aparte, con su línea propia en el tique (Ley 7/2022, art. 55). En El Molinete va en la carta con su importe, que es un supuesto: la ley obliga a cobrarlo, no fija cuánto.",
+   "Explicar lo que define la norma, con su apartado: el RD 1055/2003 define el PRODUCTO «chocolate a la taza» —el polvo o la tableta— con un mínimo de cacao seco total y un máximo de harina o almidón (apartado 1.11 de su Reglamentación), y reserva esa denominación a los productos que lo cumplen. Lo que no dice es qué nombre puede llevar la bebida que sirves.",
+   "Dar la fórmula de la guía, que es una interpretación de nivel B o C y se presenta así: la carta usa la denominación que figura en la etiqueta del preparado que compras; el libro de la carta te pide el cacao seco total de esa etiqueta y si declara grasa vegetal, y con menos del mínimo o con grasa vegetal te avisa: «consulta a tu servicio de consumo antes de imprimir la carta».",
+   "Dar el caso de El Molinete: un preparado cuya etiqueta dice «chocolate a la taza», con el cacao seco que declara frente al mínimo, y el aviso que da el libro. Y lo que cuesta una taza con ese preparado y su leche, que el capítulo 12 usa en el escandallo.",
+   "Dar las reglas con su norma: lo que se consume en barra, sala o terraza es servicio de hostelería y va al tipo reducido (art. 91 de la Ley 37/1992); los churros y las porras para llevar son la entrega de un alimento y van también al reducido.",
+   "El granizado y la horchata para llevar, como AVISO y no como regla: desde el 1 de enero de 2021 las bebidas refrescantes con azúcares añadidos para llevar quedan fuera del tipo reducido, y no hay una consulta que diga si tu granizado o tu horchata lo son. El Molinete les pone el tipo general por prudencia; es zona gris: consúltalo con tu asesor y, si te confirma el reducido, cámbialo en esa celda. En sala siguen al reducido, como servicio de hostelería.",
+   "La zona gris, sin dar un tipo en el texto: el chocolate a la taza para llevar y las demás bebidas para llevar. Con leche no encaja en la definición de bebida refrescante; con agua y un preparado azucarado podría leerse como tal; y no se ha localizado ninguna consulta vinculante. Por eso el libro de la carta lo lleva en una celda verde con su aviso, y el tipo lo decide tu asesor.",
+   "Explicar dónde se aplica cada tipo: en el libro de la carta, por referencia y por canal; y el ticket que viaja al plan financiero va SIEMPRE sin IVA.",
+   "La regla dura del pack: toda línea de precio lleva al lado si el precio que tienes delante lleva IVA y a qué tipo. El preparado para masa, el aceite y el preparado de la taza se publican sin IVA en sus fichas; el cucurucho, con la base inferida, en una celda verde con aviso; y el equipamiento, la obra, los envases y los servicios van al tipo general.",
+   "Y la consecuencia en el escandallo: el coste de materia se calcula SIEMPRE sobre base imponible en los dos lados del cociente, el del ingreso y el del coste. Mezclar un precio con IVA y otro sin IVA desvía el margen sin que se note. El IVA que adelantas al montar el local es caja, no inversión: lo explica el capítulo 8."
+  ]
+ },
+ {
+  "id": "guia_cap04_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap04_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap04_b1.txt",
+  "palabras_objetivo": 1700,
+  "palabras_min": 1224,
+  "capitulo": "Antes de Firmar: el Formato Decide el Régimen de Apertura, las Obras y el Horario",
+  "epigrafes": [
+   "La primera pregunta no es la licencia: es si la extracción necesita proyecto",
+   "Despacho o sala: dos regímenes de apertura distintos",
+   "La terraza y lo que sale a la calle van aparte",
+   "El horario: por qué una churrería de desayunos se clasifica como cafetería",
+   "Las seis comprobaciones de la fase uno, en orden"
+  ],
+  "puntos": [
+   "Explicar por qué la primera fila del checklist legal es ésta y no «¿licencia sí o no?»: freír pide campana y conducto, y si el conducto tiene que subir a cubierta o cruzar fachada o patio, casi siempre hace falta proyecto. Las obras que requieren proyecto siguen necesitando su licencia de obra y su técnico aunque la actividad vaya por declaración responsable (Ley 12/2012, art. 3.3 y 3.4).",
+   "Dar la respuesta de El Molinete, que entra en un local sin salida de humos: la extracción necesita proyecto, así que licencia de obra y técnico. Es el caso más duro a propósito, y el que obliga a presupuestar el conducto aparte (capítulo 8).",
+   "Frontera con el capítulo 5: aquí sólo se decide QUÉ papel te toca por la extracción; qué exige la norma a la campana, a los filtros y al conducto, y cómo se calcula el riesgo de incendio, es del capítulo siguiente.",
+   "Dar la regla con su norma y su límite dentro: la ACTIVIDAD de un despacho de masas fritas para llevar, epígrafe 644.6, está en el Anexo de la Ley 12/2012, así que hasta su umbral de superficie útil de exposición y venta ninguna administración puede exigirle licencia previa de actividad y se abre por declaración responsable o comunicación previa (art. 2.1); y en la misma frase, que las obras con proyecto van con su licencia aparte.",
+   "Y la otra mitad: con mesas o barra (grupo 676 de chocolaterías o grupo 673 de cafés y bares) la actividad sale del Anexo, que no contiene ningún grupo de la agrupación de restauración, y el modelo —licencia o declaración— lo fija tu ayuntamiento. Es la pregunta que hay que llevar escrita.",
+   "Una inferencia declarada, con su nivel: que el obrador de masa anexo al despacho va dentro de la misma actividad lo sugiere la nota del epígrafe 644.6, que faculta para elaborar los productos de churrería en el propio establecimiento si se venden allí; confírmalo con tu ayuntamiento antes de firmar.",
+   "Explicar que la ocupación del dominio público —la terraza, un conducto o un rótulo sobre la vía pública— no entra en el régimen de la Ley 12/2012 (art. 2.2): va con su propia autorización municipal, aparte de la actividad. El Molinete tiene terraza y la pide aparte.",
+   "Marcar la frontera de lo que no se puede afirmar: no se ha abierto ninguna ordenanza de terrazas, así que el plazo, la tasa y las condiciones son una pregunta para tu ayuntamiento, nunca un dato del libro.",
+   "Dar el ejemplo con su norma y sin extrapolarlo: la orden de horarios de la Comunidad de Madrid de abril de 2022 deja abrir a cafeterías, bares y cafés-bares desde las 6:00 y a chocolaterías, heladerías y salones de té desde las 8:00. Una churrería que vive del desayuno, en ese ejemplo, se clasifica como cafetería o bar, o no abre antes de las 8:00.",
+   "Dar el caso: El Molinete abre a las 7:00 entre semana y a las 6:00 los sábados, domingos y festivos, así que en el ejemplo de Madrid se clasifica como cafetería o bar; el libro de temporada cuenta los días que abre antes de la hora de chocolatería y el libro legal guarda la norma.",
+   "El despacho para llevar, como inferencia declarada: es comercio al por menor, y la ley de horarios comerciales da libertad horaria a los comercios por debajo de su umbral de superficie (Ley 1/2004, art. 5.2); confírmalo con tu ayuntamiento, porque la sala sigue el horario de los establecimientos públicos de tu comunidad. Cada comunidad tiene su orden de horarios: busca la tuya.",
+   "Recorrer la primera fase del checklist legal, la de antes de firmar: si la extracción necesita proyecto, si tu actividad está en el Anexo, la salida de humos del local, la potencia de la freidora y el riesgo de incendio, el gas o la freidora eléctrica, y el horario que te permite tu clasificación. Cada una con su responsable y su plazo orientativo.",
+   "Dar el tamaño del expediente entero y cuántos trámites cambian según la comunidad autónoma, y decir lo único que controlas del todo: pedir las cosas pronto. Los plazos dependen de terceros —el ayuntamiento, el técnico, el instalador, la comunidad de propietarios— y el libro los trata como orientativos.",
+   "Frontera con el capítulo 9: las altas fiscales, el registro sanitario, el autocontrol y la formación son las fases siguientes del mismo checklist y tienen su capítulo; aquí sólo lo que hay que saber ANTES de firmar el alquiler."
+  ]
+ },
+ {
+  "id": "guia_cap05_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap05_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap05_b1.txt",
+  "palabras_objetivo": 1700,
+  "palabras_min": 1224,
+  "capitulo": "Humos, Extracción y Fuego de Aceite: lo que Exige la Norma y lo que Fija el Proyecto",
+  "epigrafes": [
+   "Freír pide campana, filtro y conducto a cubierta: el ejemplo de Madrid",
+   "Los litros de la freidora deciden el riesgo de incendio",
+   "Con extinción automática deja de ser local de riesgo especial, pero no te libra de la nota tres",
+   "Gas en un local: instalación receptora o freidora eléctrica, y nunca la bombona",
+   "Fuego de aceite: extintor de clase F y los riesgos de la línea"
+  ],
+  "puntos": [
+   "Dar lo que exige la ordenanza de calidad del aire de Madrid, el único municipio verificado, con su artículo: quien cocina tiene que tener captación, extracción forzada y filtrado de humos con recogida de grasas sobre toda la zona de emisión, evacuar por un conducto a cubierta y limpiarlo al menos una vez al año (Ordenanza 4/2021, art. 23).",
+   "La excepción que no te sirve, como inferencia declarada: sólo se libra del conducto a cubierta quien usa exclusivamente aparatos eléctricos que cocinan en su interior sin transmitir olores, por debajo de una potencia conjunta pequeña (art. 24). Una freidora de baño abierto no cocina «en su interior», así que no hay excepción para una churrería.",
+   "Marcar la frontera de lo verificado: Barcelona, Sevilla o Valencia tienen sus propias ordenanzas y no se han abierto. Y las reglas de chimenea que circulan por internet suelen ser las de las viviendas: el documento de salubridad del Código Técnico sólo trata viviendas y garajes, y para un local remite al reglamento de instalaciones térmicas.",
+   "Explicar la regla del Código Técnico, con su tabla: las freidoras se computan a un kilovatio por litro de cuba, tengan la potencia que tengan, y se suman los demás aparatos de cocción que computan, los destinados a preparar alimentos y capaces de provocar ignición (confirma con tu técnico si tus chocolateras al baño maría cuentan). Por encima del primer umbral la cocina es local de riesgo especial, bajo, medio o alto, y por encima del último la extinción automática es obligatoria (tabla 2.1 de la sección de propagación interior).",
+   "Dar el caso de El Molinete con sus cifras: litros de cuba, kilovatios computables de la cocina, riesgo resultante y si la extinción automática le es obligatoria. Y lo que trae ser local de riesgo especial: campana separada de materiales combustibles, conductos resistentes al fuego y filtros a su distancia, que es obra con proyecto.",
+   "Avisar de la compra que mueve los kilovatios: una segunda freidora. Antes de comprarla, vuelve a la hoja de potencia del libro de producción, porque los litros suben y con ellos el riesgo.",
+   "Dar el matiz que casi nadie cuenta, con su nota: en usos distintos del hospitalario y del residencial público, una cocina con los aparatos protegidos por un sistema automático de extinción no se considera local de riesgo especial (nota (2) de la tabla 2.1), aunque le sigue aplicando la nota (3): la campana, los conductos y los filtros.",
+   "Presentar las dos salidas con su coste en la calculadora de inversión: no instalarla y asumir el régimen de local de riesgo especial que te toque, o instalarla aunque no sea obligatoria; el libro de inversión suma su importe sólo cuando el libro de producción dice que la necesitas. La decisión 4 del bonus la resuelve para El Molinete.",
+   "La distancia de los filtros al foco de calor depende del aparato: más de un metro veinte si es de gas o de parrilla, más de medio metro si es de otro tipo. El Molinete fríe con gas y le toca la mayor; con varias freidoras, manda la más exigente.",
+   "Dar la regla con su norma: en un local o en un despacho, una freidora de gas va con instalación receptora, certificado del instalador e inspección periódica cada cinco años, que en las instalaciones pequeñas incluye los aparatos y comprueba la ventilación (RD 919/2006). La alternativa es la freidora eléctrica, que no pide gas y sí potencia contratada.",
+   "La excepción de la bombona, con sus palabras exactas y en su sitio: no es instalación receptora la que alimenta un único envase de gases licuados por debajo de su límite de peso, conectado a un solo aparato DE UTILIZACIÓN MÓVIL. Eso es el puesto de feria del capítulo 14; una freidora fija en un local no es un aparato móvil, y la bombona no te libra de nada.",
+   "Frontera con el bonus: qué le conviene a El Molinete, gas o eléctrica, con el precio de ficha de las dos freidoras, es la decisión 4. Aquí, sólo lo que exige cada opción.",
+   "Dar la regla con su norma: los agentes extintores tienen que ser adecuados a la clase de fuego, y los fuegos de aceites y grasas de cocina son de clase F (reglamento de instalaciones de protección contra incendios, RD 513/2017). Junto a la freidora, un extintor de clase F; y nunca agua sobre aceite ardiendo.",
+   "Presentar los riesgos de la línea de fritura del libro legal con su prioridad: quemaduras por salpicadura al cargar la freidora, fuego de la cuba y de la campana por grasa acumulada, fuga de gas, resbalones, sobreesfuerzos con sacos y garrafas, cortes en la amasadora, quemaduras al vaciar el aceite y fatiga de la madrugada. El veredicto del libro: no se abre la línea con un riesgo alto sin su medida puesta.",
+   "Lo que no fija ni la norma ni el pack: el caudal, la sección y el trazado del conducto los fija el proyecto técnico, y las probabilidades y gravedades del libro son supuestos de la casa para ordenar las medidas, no una evaluación de riesgos laborales."
+  ]
+ },
+ {
+  "id": "guia_cap06_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap06_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap06_b1.txt",
+  "palabras_objetivo": 1800,
+  "palabras_min": 1296,
+  "capitulo": "El Local y la Hora Punta: Metros, Conducto, Ficha de Visita y la Cola del Domingo",
+  "epigrafes": [
+   "Seis zonas en el local, y la que decide es la más pequeña",
+   "La ficha de visita: cuatro eliminatorios antes que nada",
+   "Cuántas raciones por hora aguanta la línea, y quién manda",
+   "La hora punta del domingo, mes a mes",
+   "El traspaso que miras y la renta que pagas"
+  ],
+  "puntos": [
+   "Presentar el reparto de El Molinete como un supuesto declarado: obrador de masa a la vista, fritura bajo campana, barra y despacho a calle, sala, aseos y vestuario, y almacén de harina, aceite, envase y bidón de aceite usado; con los metros de producción y los de atención al cliente, y la terraza aparte, que no suma a la superficie útil.",
+   "La regla que da la hoja de zonas: la zona que decide si el local sirve es la más pequeña, la de fritura bajo campana, porque es la que pide conducto, gas o potencia y la que fija el riesgo de incendio. Antes de repartir el resto, se comprueba que esa zona tiene salida.",
+   "Y dos comprobaciones que se hacen sobre el plano y casi nadie hace: el descuadre entre los metros repartidos y la superficie útil real (entre la construida y la útil se van con facilidad varios metros), y que el bidón del aceite usado tenga sitio en el almacén, fuera de la fritura y de la sala.",
+   "Explicar el orden de la ficha de visita, que aplica lo que ya explicaron los capítulos 4 y 5: primero, si la extracción necesita proyecto; luego, si se puede llevar un conducto a cubierta, con el permiso de la comunidad de propietarios por escrito; luego, si hay gas o hay que llevarlo; y luego, si aguanta la potencia y el riesgo de incendio. Una respuesta que descarta en cualquiera de ellos tumba el local antes de seguir mirando.",
+   "Después, lo que no descarta pero cuesta: la superficie útil, el aseo de público y el vestuario, el almacén con su bidón y la terraza en la acera. Dar el veredicto de El Molinete y cuántos ítems le obligan a obra con proyecto y licencia.",
+   "Dar el uso práctico: la ficha se imprime y se lleva a cada visita, con el técnico si puede ser, y se rellena en el local, no en casa.",
+   "Explicar que la capacidad se mide en kilos de masa por hora y sólo al final se pasa a raciones: la línea de dosificado y fritura con su churrero, la freidora por tandas y la amasadora. El eslabón más lento marca el ritmo, y en El Molinete manda la línea con su churrero, no la máquina.",
+   "Avisar de la trampa que más dinero hace perder: el máximo del folleto del fabricante no es el ritmo de una línea. Los kilos por hora del libro son un supuesto declarado; el bueno es el que midas tú un domingo, pesando la masa que entra en una hora.",
+   "Dar las raciones por hora que aguanta el conjunto de El Molinete y qué hacer antes de comprar otra máquina: mejorar primero el eslabón que manda, porque comprar el segundo es dinero parado.",
+   "Cruzar la capacidad de la línea con la hora punta de cada mes: dar el déficit de la peor hora de un día punta de diciembre frente a lo que da la línea, que el libro de temporada cuenta en raciones por hora y en minutos de espera al final de esa hora. La tabla dice en qué meses se forma cola el domingo.",
+   "Dar las palancas en su orden, que no es subir el precio: masa preparada antes de abrir, una segunda persona en la línea esas mañanas (el refuerzo de Navidad y Reyes del capítulo 14) y, sólo si no basta, más línea.",
+   "Presentar los traspasos publicados como lo que son, precios PEDIDOS y no pagados, cada uno con su zona y sus metros: churrerías de barrio, cafeterías-churrería y la churrería-chocolatería con sala de Vallecas, con su renta y los equipos que declara incluidos. Un anuncio que lleva meses publicado es un precio que no se cierra.",
+   "Dar la renta de El Molinete, que es la del anuncio de Vallecas, y decir qué hay que mirar en un traspaso además del precio: si la extracción y el conducto están legalizados, si hay gas con su inspección, si la actividad está a nombre de quien traspasa y qué equipos funcionan de verdad.",
+   "Frontera con el capítulo 8 y con el bonus: lo que cuesta abrir en obra nueva está en el capítulo 8, y la comparación de dinero entre traspaso y obra nueva a cinco años es la decisión 2 del bonus."
+  ]
+ },
+ {
+  "id": "guia_cap07_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap07_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap07_b1.txt",
+  "palabras_objetivo": 2300,
+  "palabras_min": 1656,
+  "capitulo": "Maquinaria y Proveedores: Churrera, Dosificadora, Freidora, Chocolatera, Harina, Aceite, Envase y Gestor",
+  "epigrafes": [
+   "La línea de churros con precio de ficha: dosificadora, freidora, amasadora y campana",
+   "Equipo completo o línea separada, y la dotación del despacho",
+   "Chocolatera, cafetera y las partidas que ninguna ficha publica",
+   "Fabricantes y distribuidores de maquinaria, y el plazo de entrega",
+   "Preparado para masa, harina, aceite y chocolate: a quién y en qué formato",
+   "Envase para llevar y gestor del aceite usado"
+  ],
+  "puntos": [
+   "Presentar el núcleo de la dotación de El Molinete con su precio de ficha sin IVA, máquina a máquina y con su fuente: la freidora de gas de una cuba, la dosificadora automática, la amasadora automática, la campana con turbina, las dos chocolateras, el escurridor y la balanza; y su suma, el núcleo del local con sala.",
+   "Y el medidor de polares de mano, que se publica con IVA y cuya base sin IVA se calcula: sirve para decidir cuándo cambiar el aceite, no para demostrar el límite legal (capítulo 10). Con él, la dotación con fuente del local con sala.",
+   "Las reglas de lectura de esos precios: son precios de tienda con descuento y con fecha, que caducan, así que se vuelven a pedir antes de comprar; un precio «desde» no es una cifra cerrada; y cada línea dice si su precio lleva IVA.",
+   "Explicar las dos maneras de montar la línea: un equipo completo de churros, dosificador y caldero en una sola pieza, o máquinas separadas como las de El Molinete. Dar el precio de ficha del equipo completo de referencia y lo que cambia: el compacto ahorra dinero y sitio; la línea separada aguanta más kilos por hora y deja cambiar una pieza sin parar las demás.",
+   "Dar el núcleo con fuente del despacho para llevar, que monta el equipo completo con caldero, pala y escurridor, y su diferencia frente al local con sala. Qué le conviene a El Molinete y a partir de qué hora punta se elige lo contrario es la decisión 3 del bonus: aquí sólo las máquinas.",
+   "Dar la chocolatera de El Molinete con su fuente y su número de unidades, y decir que un despacho puede bastarse con una sola.",
+   "Enumerar las partidas que van como supuesto declarado porque no hay precio público verificable —la cafetera, el molinillo, el mostrador, la vitrina calefactada, las mesas de sala y de terraza, la vajilla, el lavavajillas, el frigorífico, el extintor de clase F, el filtrado del aceite, el TPV y el rótulo— y la que pesa más de todas, el conducto a cubierta con su obra y su proyecto, que presupuesta tu técnico. La rellenadora va sin cifra: no hay precio utilizable y el lector pone el suyo.",
+   "Dar el método para convertir un supuesto en un número tuyo: tres presupuestos por partida, con la base del IVA por escrito y el plazo de entrega dentro.",
+   "FRONTERA del capítulo: lo anterior son las máquinas; desde aquí, a quién se le compra. Nombrar los fabricantes con catálogo para churrería y los distribuidores con o sin precios publicados, sin relación comercial y sólo los que tienen la web comprobada; los que sólo salen en directorios no se publican.",
+   "Dar el plazo de entrega de la maquinaria crítica, que vive en un solo sitio del pack (el cronograma del libro legal) como supuesto declarado, y la holgura que le deja a El Molinete antes de mover la fecha de apertura. Se pide por escrito: si la maquinaria entra en la ruta crítica, tu apertura la manda el proveedor.",
+   "Dar los insumos con su formato de compra, su precio sin IVA y su fuente: el preparado para masa de churro en caja de sacos y lo que rinde cada saco según el vendedor, el aceite de fritura en garrafa y el chocolate a la taza en polvo. Y el distribuidor que da formación con la compra de maquinaria, que es un gancho de venta, no un curso.",
+   "Decir lo que no se publica y por qué: la harina especial para churros de un harinero aparece sin precio, y el chocolate a la taza en formato profesional de las marcas conocidas no tiene precio con fuente. El escandallo de esos insumos es del capítulo 12, y su IVA, del capítulo 3.",
+   "Dar el cucurucho de cartón con su precio, cuya base sin IVA es inferida (celda verde, por defecto «no lleva»), y el vaso: el de plástico o papel plastificado se cobra aparte en el tique desde 2023 (Ley 7/2022). El cucurucho de cartón no se presenta como conforme a esa ley mientras no conozcas su composición: pregúntala por escrito.",
+   "Elegir el gestor del aceite usado: tiene que ser un gestor autorizado, con contrato y justificante de cada retirada (la recogida separada del aceite de cocina usado de la hostelería es obligatoria desde junio de 2022, Ley 7/2022). Un ejemplo de Madrid, sin relación comercial, que recoge sin coste a cambio de obsequios o valoración. Cuánto aceite le llevas y cuánto te cuesta es del capítulo 10."
+  ]
+ },
+ {
+  "id": "guia_cap08_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap08_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap08_b1.txt",
+  "palabras_objetivo": 1600,
+  "palabras_min": 1152,
+  "capitulo": "Cuánto Cuesta Abrir, Partida a Partida",
+  "epigrafes": [
+   "Por qué no damos un número de churrería, sino el modelo que da el tuyo",
+   "Los once bloques de la inversión, del local en bruto al marketing de apertura",
+   "El IVA que adelantas no es inversión, es caja",
+   "El fondo de maniobra no está aquí: se calcula en el plan financiero",
+   "Contra qué contrastar tu cifra"
+  ],
+  "puntos": [
+   "Empezar por el problema: las horquillas de inversión que circulan para «montar una churrería» se copian unas a otras, no dicen de qué formato hablan y no salen de ninguna suma. La guía no da otra horquilla: da once bloques con su importe, y el lector cambia los suyos.",
+   "Dar las tres cifras de El Molinete que no hay que confundir —el CAPEX sin IVA y sin fondo de maniobra, el IVA que se adelanta y el desembolso total con IVA— y decir para qué sirve cada una.",
+   "Recorrer los bloques con su importe: la obra y el acondicionamiento del local en bruto, que es un supuesto por metro cuadrado y el bloque más grande; la extracción y el conducto; la fritura, la dosificación y el amasado; el chocolate y el café; la barra, la sala y la terraza; el control y la seguridad; el TPV y el rótulo; las licencias, el proyecto de actividad y las tasas; la fianza; el stock inicial y el envase; y el marketing de apertura.",
+   "Explicar los bloques que más se olvidan: el de licencias, proyecto y tasas, que es un supuesto y nunca una horquilla copiada; la fianza, que se recupera y no se amortiza; el stock inicial, que se calcula con los precios del libro de la carta; y la línea de extinción automática, que sólo suma si el libro de producción dice que la necesitas (en El Molinete, no).",
+   "Dar el inmovilizado amortizable y decir qué queda fuera: la fianza, el stock y el marketing no se amortizan.",
+   "Dar el IVA soportado de la inversión de El Molinete junto al desembolso con IVA, y explicar que sale de la cuenta el día que pagas y vuelve después, al ritmo al que factures, no en una fecha. Casi todo va al tipo general; sólo el stock de alimentos va al reducido. Las reglas del IVA están en el capítulo 3: aquí sólo su efecto en la caja.",
+   "La consecuencia que se negocia con el banco: el desembolso con IVA es lo que tienes que poder pagar al abrir, aunque una parte vuelva. Cuéntalo aparte del préstamo.",
+   "Explicar la diferencia que más confusión crea: el fondo de maniobra NO es inversión, es caja para pagar los fijos mientras el negocio arranca y en el valle del verano. La calculadora de inversión no lo lleva a propósito; se calcula en el plan financiero, con los gastos fijos y los meses de colchón, y la inversión total es la suma de los dos.",
+   "Dar el fondo de maniobra y la inversión total de El Molinete y remitir al capítulo 16 para cómo se financian.",
+   "Dar la única referencia de contraste que trae el pack: los equipos que declara incluidos el traspaso de Vallecas para un local de tamaño parecido, frente al equipamiento y el mobiliario de los bloques de El Molinete. No es una validación: es un orden de magnitud para saber si te has olvidado algo.",
+   "Y el control que de verdad sirve: la desviación de tus importes contra el precio de referencia de cada línea, que el libro calcula en cuanto metes tus presupuestos. Una línea fuera de tu horquilla se mira antes de firmar el pedido."
+  ]
+ },
+ {
+  "id": "guia_cap09_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap09_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap09_b1.txt",
+  "palabras_objetivo": 1600,
+  "palabras_min": 1152,
+  "capitulo": "Alta Fiscal y Sanitaria de Cada Formato: Epígrafe, Código de Actividad y Registro",
+  "epigrafes": [
+   "Cuatro casillas del impuesto para el churro, y la que te toca",
+   "Alta sí, pago casi nunca",
+   "El código de actividad no sale de una tabla: es una pregunta para tu asesor",
+   "Registro sanitario: el de tu comunidad, no el general",
+   "Las fases dos y cinco del expediente, en orden"
+  ],
+  "puntos": [
+   "Dar las casillas del impuesto sobre actividades económicas que tocan al churro, cada una con su nota y su formato: el epígrafe 644.6 (comercio al por menor de masas fritas), que faculta para elaborar los productos de churrería en el propio establecimiento si se venden allí; el epígrafe 663.1 (venta fuera de establecimiento permanente), con nota propia de churrería, para la caseta; el epígrafe 419.3 (industria de masas fritas), que marca la frontera del obrador que fabrica para otros; y la sala, en el grupo 676 de chocolaterías o en el grupo 673 de cafés y bares.",
+   "La inferencia que se lleva al asesor, con su nivel: la nota que faculta a los grupos de restaurantes, cafeterías y bares para vender en su propio establecimiento los productos de su servicio no la lleva el grupo 676, y cada cuota faculta sólo para su actividad (regla 4.ª de la Instrucción). Así que una sala en el grupo 676 que además vende churros al peso para llevar puede necesitar también el epígrafe 644.6: es una pregunta, no una afirmación.",
+   "Dar el caso de El Molinete: dos formatos (sala y despacho), los epígrafes candidatos que lleva a su asesor y la respuesta del libro a si necesita el 644.6 además del de la sala.",
+   "Dar la regla con su norma: el alta en el impuesto de actividades se hace igual, porque el epígrafe define lo que puedes hacer, pero están exentos los dos primeros años de actividad, todas las personas físicas y las sociedades por debajo del millón de euros de cifra de negocio (texto refundido de la Ley de Haciendas Locales, art. 82.1).",
+   "Una sola línea, y aquí, sobre la nota del grupo de chocolaterías que rebaja la cuota a quien abre seis meses o menos al año: existe, pero con la exención casi nunca te toca, y cerrar julio y agosto no es abrir seis meses. No es una salida para el verano (capítulo 14).",
+   "Decir la verdad: no hay una tabla oficial que lleve los epígrafes de la churrería a la clasificación nacional de actividades de 2025, y las notas explicativas del INE clasifican por actividad sin nombrar ni el churro ni la chocolatería. La correspondencia candidata es una inferencia, y el libro legal la da como pregunta redactada para tu asesor.",
+   "Lo que sí es norma: al darte de alta comunicas el código de 2025 y, además, el de 2009, mientras no se adapte la tarifa de accidentes: dos códigos, no uno (RD 10/2025). Y la trampa verificada: quien copie el antiguo código de los puestos de venta de alimentos se encuentra en la clasificación de 2025 con la clase 47.81, que hoy es la venta de vehículos de motor.",
+   "Dar la regla con su norma: el comercio al por menor —y una churrería que vende al consumidor final en su local, su despacho o su caseta lo es— queda excluido del registro general sanitario y se inscribe en el registro de su comunidad autónoma por comunicación o declaración responsable, que no habilita por sí sola (RD 191/2011, art. 2.2, en la redacción del RD 1021/2022). El trámite cambia en cada comunidad.",
+   "Marcar la frontera: lo que cambia las cosas es servir churros a OTRO negocio. La guía del registro de la Comunidad de Madrid pone como ejemplo de actividad restringida la churrería o pastelería que sirve a la cafetería, y servir a un establecimiento inscrito en el registro general rompe la excepción. El obrador que fabrica para otros queda fuera de este producto: si es tu caso, pregunta a tu comunidad.",
+   "Desmontar una frase que circula: no es verdad que la inspección de sanidad venga antes de la licencia. El orden de los papeles es el del checklist.",
+   "Recorrer la fase dos del checklist legal —constituir la sociedad o darse de alta como autónomo, el alta censal con el doble código, el alta en el impuesto, el encargo del proyecto técnico de actividad y de la extracción, y la firma del arrendamiento con su fianza— con su responsable y su plazo orientativo. Y una línea sobre la facturación verificable: llega en 2027, para las sociedades en enero y para el resto en julio, así que el TPV que compres ya debe estar adaptado.",
+   "Y la fase cinco, la sanitaria: la comunicación al registro autonómico, el plan de autocontrol con responsable y registro del aceite, los alérgenos por escrito, la acrilamida como buena práctica, el registro de formación, la denominación del chocolate según la etiqueta del preparado y el vaso cobrado aparte. Frontera: el detalle de cada una es de los capítulos 3, 10 y 11; aquí, sólo su sitio en el orden."
+  ]
+ },
+ {
+  "id": "guia_cap10_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap10_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap10_b1.txt",
+  "palabras_objetivo": 1600,
+  "palabras_min": 1152,
+  "capitulo": "Aceite de Fritura: Calidad, Cambio, Coste y Gestor",
+  "epigrafes": [
+   "La norma del aceite: compuestos polares por debajo del límite, medidos en laboratorio",
+   "Dos aceites por ración: el que se lleva la masa y el que tiras al cambiar",
+   "Cada cuántos días cambias, y cuánto vale un día de cuba",
+   "Si sube el aceite: lo que pierdes al mes y al año",
+   "El gestor del aceite usado: recogida separada, papeles y litros"
+  ],
+  "puntos": [
+   "Dar la regla con su norma y su ámbito: la norma de calidad de los aceites y grasas calentados es norma básica y alcanza a las freidurías, los bares, las cocinas de comida para llevar y los puestos de feria, permanentes o de temporada; el aceite de fritura tiene que tener los compuestos polares por debajo de su límite, determinados con el método de su anexo 1, una cromatografía en columna de laboratorio (Orden de 26 de enero de 1989, arts. 3 y 6).",
+   "Lo que hace y lo que no hace el medidor de mano: te dice cuándo cambiar el aceite y su lectura se apunta en tu registro, pero el límite legal se prueba en laboratorio, con el método del anexo. El medidor no prueba que cumples.",
+   "Lo derogado y lo vivo: los artículos de las manipulaciones permitidas están derogados, así que rellenar la cuba es una decisión de cocina, no un permiso de la norma; el artículo 9 sigue vivo y prohíbe añadir al baño sustancias extrañas y vender el aceite usado para uso alimentario.",
+   "Separar las dos partidas que casi todo el mundo mezcla: el aceite absorbido, que se queda en la masa y ya está dentro del coste de materia de la ración en el libro de la carta, y la renovación, el aceite que tiras al cambiar la cuba, que calcula el libro del aceite. El plan financiero suma las dos, cada una con su fuente; meter la renovación también en el escandallo la contaría dos veces.",
+   "Dar las cifras de El Molinete: el aceite total por ración y qué parte de él es renovación, con el veredicto del libro. La lectura que importa: cuando el aceite que tiras al cambiar la cuba pesa más que el que se lleva la masa, cada día de cuba cuenta más que la absorción.",
+   "Explicar el punto económico de cambio con el ciclo de El Molinete, que es un supuesto declarado: lo que cuesta al mes la renovación con su ciclo, lo que cuesta cambiar un día antes y lo que ahorra alargar un día si el medidor lo permite. El día del cambio lo decide la lectura del medidor, no la tabla: la tabla dice cuánto dinero hay en juego.",
+   "Dónde vive el dato bueno: los días entre cambios del lector salen de su registro del aceite en el Pack Plantillas APPCC (fichero 09-control-aceite-fritura.xlsx, hoja «Control Aceite»), contando los días entre dos cambios. Este libro no compara marcas ni tipos de aceite: trabaja con tu aceite, tu precio y tu registro.",
+   "Dar los tres escenarios de subida del precio del aceite del libro y lo que El Molinete pierde de margen al mes y al año en cada uno si no toca el precio de venta. El margen que se pierde sale del aceite que se COMPRA (la renovación más la reposición), no de las raciones.",
+   "Dónde se cambia el precio: en una sola celda del libro de la carta, que lo pasa al libro del aceite y a la calculadora de inversión; nunca en dos sitios a la vez.",
+   "Dar la obligación con su norma: el aceite de cocina usado de la hostelería tiene recogida separada obligatoria desde junio de 2022 (Ley 7/2022), así que hace falta contrato con un gestor autorizado y archivar el justificante de cada retirada. La prohibición de verterlo por el desagüe la fijan las ordenanzas municipales: mira la tuya.",
+   "Dar los litros que El Molinete entrega al gestor cada mes, y que su gestor de ejemplo recoge sin coste. Cada retirada se anota en el registro del Pack APPCC (hoja «Retirada de aceite usado») y el libro del aceite sólo contrasta los litros del mes."
+  ]
+ },
+ {
+  "id": "guia_cap11_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap11_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap11_b1.txt",
+  "palabras_objetivo": 2500,
+  "palabras_min": 1800,
+  "capitulo": "Autocontrol, Alérgenos, Acrilamida y el Día de la Inspección",
+  "epigrafes": [
+   "Acrilamida: buena práctica en el churro, obligación si fríes patatas",
+   "Alérgenos de una churrería: gluten siempre, leche en la taza y lo que diga cada etiqueta",
+   "El aceite compartido es contaminación cruzada",
+   "El autocontrol simplificado, con un responsable con nombre",
+   "Formación: lo que se acredita es el registro, no un carnet",
+   "El día de la inspección: qué tener a mano"
+  ],
+  "puntos": [
+   "Dar lo que dice la norma, con su artículo y sin estirarla: el reglamento europeo de la acrilamida tiene una lista cerrada de alimentos en su art. 1.2 y el churro no aparece; el reglamento no define «bollería», así que no se puede afirmar ni que el churro entre ni que quede fuera. Controlarla en el churro es BUENA PRÁCTICA (Reglamento (UE) 2017/2158).",
+   "Lo que sí obliga y a quién: si fríes patatas frescas —el epígrafe 644.6 te faculta para hacerlo—, te toca la parte A de su anexo II, con sus medidas para las patatas; y la parte B sólo alcanza a quien opera bajo marca o licencia, como parte de un funcionamiento interconectado y siguiendo las instrucciones de quien le suministra de forma centralizada (art. 2.3). Nunca «a las franquicias» sin más.",
+   "Lo que hay alrededor, con su nivel: una recomendación de la Comisión, no vinculante, incluye los churros entre los alimentos en los que conviene vigilarla; un estudio de las autoridades sanitarias recoge que no hay valor de referencia para las masas fritas; y la Comisión revisa el marco con niveles máximos por primera vez, en fase de consulta. Es un riesgo de caducidad: el anexo da la fecha de revisión.",
+   "Dar la regla con su norma: los catorce alérgenos son obligatorios, y en un establecimiento se pueden dar de palabra sólo si están por escrito, a disposición del personal, de la inspección y del cliente, con un cartel visible (RD 126/2015). En una churrería, el gluten está siempre en la masa de trigo y la leche, en la taza; lo demás depende de la etiqueta de cada producto que compras.",
+   "Dar el estado de la tabla de alérgenos de El Molinete en el libro legal: qué declara por escrito y cuántas casillas siguen pendientes de leer en la etiqueta. Mientras no sean cero, la carta de alérgenos está incompleta; el mismo preparado para masa cambia de composición entre marcas.",
+   "El «sin gluten»: es un umbral analítico del producto tal como se vende, no una declaración libre, y en una churrería con harina de trigo casi nunca se puede decir. No es un argumento de carta.",
+   "Dar la regla con su norma: el equipo que ha tocado un alérgeno no se usa para otros alimentos sin limpiarlo (Reglamento (CE) 852/2004, anexo II, capítulo IX). En fritura, el aceite es parte del equipo: lo que fríes en la misma cuba pasa al resto.",
+   "Dar la decisión de El Molinete y su consecuencia: freidora dedicada al churro y a la porra, así que su aceite sólo lleva lo que lleva su masa. Si un día fríes patatas, rebozados o buñuelos de otra masa en la misma freidora, cambian tus alérgenos y, con las patatas, te entra la parte A de la acrilamida. FRONTERA con la segunda mitad del capítulo: aquí terminan los peligros del producto; desde aquí, cómo se organiza y se demuestra el control.",
+   "Dar la regla con su norma: el procedimiento de autocontrol basado en el análisis de peligros y puntos de control crítico puede ser simplificado, pero tiene que tener una persona responsable con nombre (RD 1021/2022, art. 20). Servir chocolate y churros en sala es elaborar comidas preparadas, con su zona de elaboración separada de la venta (RD 1086/2020).",
+   "Decir dónde están los registros y por qué la guía no los copia: el registro del aceite, las limpiezas, las temperaturas de conservación y el resto están en el Pack Plantillas APPCC; el libro legal de este pack sólo trae las filas del checklist que te recuerdan llevarlos.",
+   "Dar la regla con su norma: la obligación es del empresario, que tiene que garantizar la formación de cada persona según su puesto y poder demostrarla; ningún carné la sustituye. Lo que pide una inspección es el registro de formación, con el contenido y la fecha.",
+   "Dar el registro de El Molinete: cuántas personas tienen la formación registrada, la validez que fija la casa (la norma no fija caducidad: es una decisión tuya) y el veredicto del libro.",
+   "Dar la lista de lo que se enseña, en el orden en que se pide: la comunicación al registro sanitario de tu comunidad, el plan de autocontrol con su responsable, el registro del aceite con las lecturas y los justificantes de retirada del gestor, la carta de alérgenos por escrito y su cartel, y el registro de formación.",
+   "Y lo que mira una inspección de consumo, que también llega: los precios a la vista, el vaso cobrado aparte en el tique y la denominación del chocolate según la etiqueta del preparado (capítulo 3). La fecha de corte de todo esto está en el anexo."
+  ]
+ },
+ {
+  "id": "guia_cap12_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap12_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap12_b1.txt",
+  "palabras_objetivo": 1600,
+  "palabras_min": 1152,
+  "capitulo": "Escandallo del Churro y de la Porra: Rendimiento, Absorción y los Dos Márgenes",
+  "epigrafes": [
+   "Del kilo de masa a la pieza: el escandallo empieza en la masa",
+   "La absorción de aceite, en euros por kilo de masa",
+   "Ración, docena o kilo: lo que deja cada formato por kilo de masa",
+   "Los dos márgenes, cada uno con su definición",
+   "La mano de obra por ración: por qué el margen alto no paga la madrugada"
+  ],
+  "puntos": [
+   "Explicar por qué en una churrería se escandalla el kilo de masa y no la ración: la masa es la misma para el churro, la porra y la docena, y lo que cambia es cuántas piezas salen y cuánta masa se fríe para venderlas. El libro de la carta parte del preparado comercial, con lo que declara el vendedor que rinde cada saco, y da el coste de un kilo de masa.",
+   "Dar los supuestos con los que El Molinete pasa del kilo a la pieza, como supuestos y con el método para cambiarlos: los gramos de masa de un churro y de una porra (pesa diez piezas y divide), la merma que se fríe y no se vende, y los kilos fritos que salen de un kilo de masa. Y el resultado, formato a formato en la tabla: la masa que se fríe, el aceite que se lleva y la materia en sala y para llevar.",
+   "Frontera: estas cantidades son datos de ejemplo para que el modelo calcule, no una receta. El Kit de Escandallos Pro y la Guía Food Cost + Ingeniería de Menú enseñan el método general, pero no costean masa frita por kilo, que es lo que hace este libro.",
+   "Explicar el cálculo sin cifras inventadas: la absorción es un supuesto declarado, en porcentaje del peso frito, y la densidad del aceite es otro; con los dos y el precio del aceite, el libro da los euros de aceite que se lleva cada kilo de masa y los mete en el coste de materia.",
+   "Dar lo que pesa ese aceite en la materia de la ración media y el método para medir el tuyo: pesa una tanda de masa antes y después de freír. Cambiar de aceite o de freidora la mueve, y por eso no hay «la absorción del churro».",
+   "Comparar los formatos por los euros sin IVA que deja cada kilo de masa: dar el formato que más deja y lo que deja, y lo que deja el que menos. La hoja explica por qué el kilo para llevar deja poco por kilo de masa: se vende por peso frito al precio más bajo por pieza. No es un error tenerlo: es el formato del pedido grande del domingo.",
+   "Decir lo que la hoja deja decidir: cuánto cuesta cada formato en masa, en aceite y en freidora, para que el precio de cada uno sea una decisión y no una costumbre. Cuál le conviene a El Molinete es la decisión 7 del bonus.",
+   "Dar los dos márgenes de El Molinete en invierno, con su definición en la misma frase: el margen sobre materia prima (el ticket sin IVA menos la materia y el aceite absorbido) y el margen tras aceite y mano de obra (además, la mano de obra de cada ración). Ninguno es la rentabilidad del negocio, que sale del plan financiero.",
+   "Ponerlos al lado de las dos cifras que circulan, cada una con su definición y su fuente: los «márgenes superiores al sesenta por ciento en producto» de un proveedor de TPV son margen sobre materia, sin método publicado; y el «un poquito más del cincuenta por ciento» lo dice de palabra el gestor de La Artesana y es rentabilidad, no margen sobre materia, con fiabilidad baja. El margen sobre materia alto de El Molinete es normal en una churrería: la masa es barata.",
+   "La regla del plan financiero, sin excepciones: toma el margen sobre materia de TU escandallo y resta la nómina aparte. Usar el «poquito más del cincuenta» como margen bruto contaría la mano de obra dos veces.",
+   "Dar el coste de mano de obra de cada ración de El Molinete, que sale del coste hora de su plantilla y de los minutos que lleva cada ración. Lo caro de una churrería no es la masa: es la madrugada.",
+   "Explicar el cuadre: este libro va antes que el de turnos y supone el coste hora; cuando rellenes el de turnos, su fila de cuadre compara los dos y te avisa si se separan (capítulo 13)."
+  ]
+ },
+ {
+  "id": "guia_cap13_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap13_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap13_b1.txt",
+  "palabras_objetivo": 1700,
+  "palabras_min": 1224,
+  "capitulo": "El Equipo, los Turnos y la Madrugada",
+  "epigrafes": [
+   "Cuántas personas hacen falta: la línea, la sala y el pico del fin de semana",
+   "Dos figuras que no se mezclan: el trabajador nocturno y el plus de nocturnidad",
+   "Tu convenio: el de Madrid como ejemplo vencido y el método para encontrar el tuyo",
+   "El salario mínimo es el suelo, y las ofertas publicadas sólo un contraste",
+   "Las horas del titular y el registro de jornada"
+  ],
+  "puntos": [
+   "Explicar de dónde sale la plantilla: no de una ratio, sino del cuadrante por franjas del libro de turnos, que pone un mínimo de personas en cada media hora de apertura y comprueba que ninguna queda sin cubrir. Las personas en la línea en el pico del fin de semana llegan del libro de producción y las horas de refuerzo de Navidad y Reyes, del libro de temporada.",
+   "Dar la plantilla de El Molinete —el titular, dos churreros, un camarero de sala y un refuerzo de fin de semana a media jornada— con su coste anual de plantilla y el coste hora que sale de ella, que es el que tiene que usar el escandallo del capítulo 12. FRONTERA: el cuadrante semanal por empleado, las vacaciones y la rotación son del Kit Gestión de Personal y Turnos; aquí la plantilla se dimensiona y se cuesta para el plan financiero.",
+   "Dar la regla con su norma: trabajo nocturno es el que se hace entre las 22:00 y las 6:00, y trabajador nocturno es quien hace normalmente en ese periodo al menos tres horas de su jornada diaria, o se prevé que haga en él un tercio de su jornada anual (Estatuto de los Trabajadores, art. 36.1). Es una figura con límites y protección propios.",
+   "El plus de nocturnidad es OTRA cosa: lo fija cada convenio, con sus franjas y su recargo sobre el salario base. En el convenio de Madrid, de ejemplo, una franja va de las 22:00 a las 0:00 con un recargo pequeño y otra de las 0:00 a las 8:00 con uno mayor (CUN-40). Se puede cobrar plus sin ser trabajador nocturno, y en una churrería es lo normal.",
+   "El caso de El Molinete, con la hoja de nocturnidad: el turno que empieza a las 4:30 del fin de semana tiene hora y media en el periodo del Estatuto, así que no hace de ese churrero un trabajador nocturno, pero sí cobra plus por la madrugada; y quien cierra el viernes y el sábado a la 1:00 suma tres horas sólo dos días a la semana, así que el libro le pone «revísalo con tu asesor».",
+   "Decir cómo se encuentra el convenio que te toca: el de hostelería de tu provincia o de tu comunidad, buscado en REGCON por denominación y ámbito; después, la clase o el grupo en que entra tu local y el nivel de cada puesto por sus funciones, que es una asimilación que se comprueba con el asesor. El acuerdo laboral estatal de hostelería nombra freidurías, quioscos y chocolaterías, la palabra «churrería» no aparece en él, y sigue vigente hasta el 31 de diciembre de 2030.",
+   "El ejemplo de Madrid, con su estado real: el convenio de hostelería de la Comunidad de Madrid venció el 31 de diciembre de 2025, la comisión negociadora del nuevo se constituyó en diciembre de 2025 y, sin texto nuevo publicado a 3 de octubre de 2026, se siguen aplicando sus tablas de 2025. Toda cifra que sale de esas tablas lleva esa etiqueta en el libro de turnos.",
+   "Y el método con otro convenio: el provincial de Toledo nombra los obradores de masas fritas, así que alcanza a un obrador de churros; que alcance a un despacho con sala es una interpretación que confirma un laboralista.",
+   "Dar la regla: el salario mínimo interprofesional de 2026 es el suelo de cada puesto a su jornada, con su cuantía anual de referencia. El libro compara el salario de convenio de cada puesto con ese suelo y se queda con el mayor de los dos; encima va la Seguridad Social de empresa de quien cotiza.",
+   "Las ofertas publicadas son contraste, no obligación: un aprendiz de churrero y un ayudante de cocina de una churrería de Madrid, con su rango mensual y sin pagas declaradas (CUS-54, CUS-55). Leídas a doce pagas, la primera queda por debajo del salario mínimo anual: por eso cuenta el suelo y no el anuncio. Lo que obliga es tu convenio y, por debajo de todo, el salario mínimo.",
+   "Las horas del titular de El Molinete: trabaja los siete días, con horas de más cada semana y la madrugada del fin de semana. El libro les pone valor al coste hora de la plantilla, que es lo que costaría pagárselas a otra persona y que no está en el coste de plantilla. Su retribución va en nómina como un puesto más, porque un plan que sólo cuadra si el titular trabaja gratis no sirve. Cuánta madrugada asume él es la decisión 10 del bonus.",
+   "El registro de jornada: diario, con la hora de inicio y de fin de cada persona, y conservado cuatro años; la norma no impone formato ni sistema digital (Estatuto de los Trabajadores, art. 34.9). El registro horario digital está pendiente de desarrollo, y el anexo lo vigila."
+  ]
+ },
+ {
+  "id": "guia_cap14_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap14_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap14_b1.txt",
+  "palabras_objetivo": 2700,
+  "palabras_min": 1944,
+  "capitulo": "La Temporada y las Ferias: de Octubre a Marzo, el Verano y las Casetas",
+  "epigrafes": [
+   "El año de una churrería: de octubre a marzo, y diciembre por encima de todo",
+   "Navidad y Reyes: el refuerzo que pide la cola",
+   "El verano tiene tres salidas, y se comparan en euros",
+   "Lo que es legal en una caseta: autorización, alta, registro, higiene y gas",
+   "Cuántas raciones necesita una feria para cubrirse",
+   "Cuando la feria es tu negocio, y no un complemento"
+  ],
+  "puntos": [
+   "Explicar el método del libro de temporada: las raciones de un año normal salen de las de un día tipo y un día punta del libro de producción, y doce coeficientes las reparten por meses, con el uno como mes medio. Son supuestos declarados con la forma que describen las fuentes del sector: temporada alta en otoño, invierno y Navidad, y valle en verano. No hay una estadística de ventas de churrerías por meses: los coeficientes son el modelo, no un dato.",
+   "Dar las cifras de El Molinete: las raciones del año y el peso de diciembre sobre ellas. Los coeficientes se cambian por los tuyos en cuanto tengas un año de ventas, y el libro los pasa al plan financiero.",
+   "Un contraste con fecha de lo que mueve una fiesta grande: los puestos de churros autorizados en las Fallas de Valencia de 2026 (CUS-29).",
+   "La cola del domingo, mes a mes, ya está en el capítulo 6: aquí sólo su consecuencia. Donde hay cola, la respuesta no es una segunda churrera, sino masa preparada antes de abrir y una persona más en la línea (decisión 3 del bonus).",
+   "El refuerzo de Navidad y Reyes, con su coste: días punta con una persona más por la mañana, sus horas al año y lo que cuestan al coste hora del escandallo. Esas horas viajan al libro de turnos y de ahí al coste de plantilla, así que no se cuentan dos veces.",
+   "Las tres salidas de julio y agosto, comparadas por lo que dejan: cerrar, que deja cero porque lo que pagas igual —renta, plantilla y gastos fijos— ya está en los fijos del año; abrir con carta de verano, con granizados, horchata, helado y algo de churro; o salir de ferias con el local cerrado. El libro da la contribución de cada una.",
+   "Dar el caso: El Molinete elige la carta de verano, y el umbral que lo cambiaría son las raciones al día del local por debajo de las cuales la carta de verano deja menos que las ferias. Y dar el resultado de julio y agosto con los fijos dentro con esa salida: un verano en negativo es lo normal en una churrería, y lo pagan los meses buenos (capítulo 16).",
+   "Dos formas reales de resolver el valle, como contraste: el local de heladería y churrería que vende helado en verano y churro en invierno (CUS-31e), y el que reparte el año entre una plaza de invierno y otra de verano (CUS-V17).",
+   "FRONTERA del capítulo: hasta aquí, el año del local; desde aquí, la caseta. La autorización de venta ambulante la da el ayuntamiento, no puede ser indefinida, se adjudica por un procedimiento transparente y no se renueva sola (Ley 7/1996, arts. 53 a 55). El RD 199/2010, de venta ambulante, está derogado desde el 7 de agosto de 2021: si tu ordenanza todavía lo cita, la autorización la sigue dando tu ayuntamiento con su ordenanza.",
+   "El alta y el registro: el puesto se da de alta en la casilla del impuesto de actividades que marca el libro legal —la venta fuera de establecimiento, con su nota de churrería, o la de quioscos y recintos feriales si pones mesas—; y la caseta, el tenderete o el remolque son comercio al por menor, así que van al registro sanitario de tu comunidad y no al general (RD 1021/2022, art. 2.2).",
+   "La higiene del puesto: lavado de manos, superficies lisas y lavables, agua potable caliente y fría y eliminación higiénica de los desechos (Reglamento (CE) 852/2004, anexo II, capítulo III), y los alérgenos por escrito también en el puesto.",
+   "El gas: la bombona única de menos de quince kilos sólo libra de la instalación receptora a un aparato DE UTILIZACIÓN MÓVIL (RD 919/2006), y eso sólo vale en la feria, nunca en el local (capítulo 5). Y el ejemplo de Madrid: cocinar en suelo de uso público pide autorización previa y captación y filtrado a distancia de cualquier hueco (CUN-25).",
+   "El punto muerto de cada evento: lo que cuesta ir —la tasa, el desplazamiento, el montaje y el personal que contratas sólo para el evento— entre lo que deja cada ración en la feria, que es el precio sin IVA menos la materia de una ración para llevar. La gente que pasa por delante del puesto en una hora y la parte que compra las cuentas tú un día normal de esa feria: es el supuesto que más mueve el resultado.",
+   "Dar los eventos de ejemplo de El Molinete con las raciones que necesita cada uno para cubrirse, lo que deja y su orden. Y la advertencia del calendario de ferias: una feria que cae en temporada alta saca a gente del local justo cuando más vende.",
+   "La tasa la fija la ordenanza fiscal de cada municipio: la de Ochavillo del Río (CUN-37) es un ejemplo, no un orden de magnitud. Y hay ordenanzas que no tratan el puesto de churros como ambulante y aún citan el real decreto derogado (CUN-36): se pregunta.",
+   "Cuándo deja de ser un complemento: si vas a vivir de ferias y mercados, con remolque propio y varias temporadas al año, es otro negocio con su propio plan, y lo cubren el Plan de Negocio: Food Truck y las Tareas: Food Truck. Este pack sólo cuesta la feria como salida del local.",
+   "El equipo de feria tiene precio con fuente: el remolque de churrería, el carrito para eventos y la churrería portátil (CUS-42), y la dotación de la caseta en la calculadora de inversión. Con ese equipo y varias ferias al año, el negocio ya no es el local: es el del plan del food truck."
+  ]
+ },
+ {
+  "id": "guia_cap15_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap15_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap15_b1.txt",
+  "palabras_objetivo": 1300,
+  "palabras_min": 936,
+  "capitulo": "Franquicia o Independiente",
+  "epigrafes": [
+   "Lo que publican las enseñas: un orden de magnitud con fecha, no un presupuesto",
+   "Canon, royalty y publicidad: lo que se paga también en verano",
+   "Tu inversión frente a las enseñas, con la misma base",
+   "Antes de firmar: la acrilamida con marca, el contrato y las preguntas"
+  ],
+  "puntos": [
+   "Explicar de dónde salen las cifras: la inversión que publica cada franquiciador a través de un agregador o de su dossier, consultada el 3 de octubre de 2026. Cada enseña dice «inversión» a su manera —con o sin obra, con o sin IVA, con o sin canon, «desde»— y por eso la tabla dice qué incluye cada una. Es un orden de magnitud con fecha, no un presupuesto.",
+   "Dar el abanico con sus extremos: la inversión publicada más baja, la más alta y cuántas enseñas la publican. La más baja no es una franquicia de churrería al uso: el negocio de esa marca es vender mezcla, máquinas y remolques (CUS-M23).",
+   "Lo que NO es dato: la facturación esperada, el plazo de recuperación o el número de aperturas que anuncia un franquiciador son proyecciones suyas, y no entran en tu plan.",
+   "Dar la mecánica con lo publicado: el canon de entrada, el royalty sobre las ventas y el canon de publicidad, cada uno con su enseña y su fuente (CUS-M12, CUS-M14, CUS-M15, CUS-M21, CUS-D6). El royalty se paga sobre las ventas de cada mes, también en julio y agosto, cuando una churrería vende menos: se pasa por el plan financiero mes a mes, no por la media del año.",
+   "La duración del contrato también es una cifra: una enseña publica diez años renovables y otra cinco (CUS-M15, CUS-M21). Lo que firmas son años de contrato, no una compra.",
+   "Comparar con la misma base: tu inversión de apertura sin fondo de maniobra (capítulo 8) frente a las enseñas que publican una base comparable, el local en bruto con obra, maquinaria y mobiliario. El libro cuenta cuántas quedan por debajo y cuántas por encima de tu cifra; las que no publican la obra o el IVA no se comparan, se leen.",
+   "La lectura: la franquicia compra marca, método y proveedor; la independiente se queda el royalty y la decisión. Ninguna es mejor en abstracto: lo es la que, con tus números en el plan financiero, paga sus fijos y el royalty en el peor mes. La decisión 12 del bonus lo resuelve para El Molinete.",
+   "La acrilamida con marca: la parte B del anexo II del reglamento sólo alcanza a quien opera bajo marca o licencia, como parte de un funcionamiento interconectado y siguiendo las instrucciones de quien le suministra de forma centralizada (Reglamento (UE) 2017/2158, art. 2.3). Si tu franquiciador te sirve la masa, pregúntale qué te toca.",
+   "Las preguntas antes de firmar, todas por escrito: qué incluye exactamente la inversión publicada, sobre qué ventas se calculan el royalty y la publicidad, qué proveedores son obligatorios y a qué precio, si te suministran la masa de forma centralizada, cuánto dura el contrato y qué pasa al terminar, y cuántos locales hay abiertos hoy. Y revisa el contrato con tu asesor antes de firmar."
+  ]
+ },
+ {
+  "id": "guia_cap16_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap16_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap16_b1.txt",
+  "palabras_objetivo": 1500,
+  "palabras_min": 1080,
+  "capitulo": "El Plan Financiero, el Punto de Equilibrio y los Primeros Noventa Días",
+  "epigrafes": [
+   "La cuenta de resultados a tres años, con el año de crucero delante",
+   "El punto de equilibrio en raciones al día, y los meses que no pagan sus fijos",
+   "Qué canal paga los fijos: la sala, el para llevar o los dos",
+   "La caja: inversión total, fondo de maniobra, préstamo y el valle del primer año",
+   "Los primeros noventa días: qué mirar cada semana"
+  ],
+  "puntos": [
+   "Explicar la estructura del plan: el año uno con la rampa de arranque, el año dos de crucero —un año entero sin rampa, la foto de un año normal— y el año tres, que repite el crucero y sólo cambia los intereses. Todas las ventas van sin IVA, y el margen de cada ración sale del escandallo del libro de la carta, nunca de un porcentaje del sector.",
+   "Dar el año de crucero de El Molinete: la contribución del año, los costes fijos —plantilla, renta, gastos fijos, amortización e intereses— y el resultado antes de impuestos, con su lectura en euros. El resultado sobre ventas es información, no veredicto. El impuesto de sociedades o el IRPF no están: dependen de tu forma jurídica y los calcula tu asesor.",
+   "El punto de equilibrio en la unidad que entiende una churrería: raciones al día. Dar el de El Molinete, las raciones que prevé vender de media y el margen de seguridad entre las dos.",
+   "Mes a mes: dar cuántos meses del año de crucero no pagan sus fijos; la tabla dice cuáles. Esos meses los pagan los meses buenos, y por eso el fondo de maniobra se calcula sobre meses de fijos y no sobre la media del año.",
+   "La pregunta que separa una churrería de una cafetería: si sólo tuvieras la sala, o sólo el para llevar, ¿pagarías los fijos del año? Dar, con la hoja de canales, lo que le sobra o le falta a la sala sola, y la lectura en euros de cada canal y de los dos juntos.",
+   "Lo que eso significa para el formato: el mismo local vendiendo sólo para llevar se compara en la decisión 1 del bonus, con los mismos fijos.",
+   "La inversión total que le enseñas al banco: la inversión de apertura sin fondo de maniobra (capítulo 8) más el fondo de maniobra, que se calcula sólo aquí, sobre meses de fijos de caja. El préstamo y lo que pone el promotor salen de la estructura de financiación del libro; el IVA que adelantas no está aquí, porque es caja que recuperas.",
+   "El valle de tesorería del primer año: el saldo más bajo de la cuenta, el mes en que llega y si el fondo lo aguanta. La carencia del préstamo hace que la cuota no se coma la caja durante la rampa; la cuota y lo que sobra en el peor año del préstamo están en la hoja de financiación.",
+   "Con el plan delante: compara cada semana las raciones vendidas con las del punto de equilibrio, el ticket sin IVA con el del escandallo y los días entre cambios de aceite con los del libro del aceite; y cada mes, el saldo de caja con el de la hoja de tesorería. Si la rampa va más lenta de lo previsto, lo verás antes en la caja que en el resultado.",
+   "Cuando tengas un año de ventas, sustituye los coeficientes de temporada por los tuyos y vuelve a pasar el plan; con la facturación verificable de 2027 en el horizonte (capítulo 9)."
+  ]
+ },
+ {
+  "id": "guia_cap17_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/cap17_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/guia_cap17_b1.txt",
+  "palabras_objetivo": 1200,
+  "palabras_min": 864,
+  "capitulo": "Anexo Normativo, Actualizado a 3 de Octubre de 2026",
+  "epigrafes": [
+   "Norma a norma: vigente, derogada o en revisión",
+   "Lo que va a cambiar y cuándo",
+   "Lo que no está verificado y se pregunta",
+   "Cómo se comprueba una norma en un minuto"
+  ],
+  "puntos": [
+   "Recorrer las normas del pack con su estado a 3 de octubre de 2026, una línea cada una y en el orden de los capítulos: la norma de calidad de los aceites calentados, en vigor y con los artículos de manipulaciones derogados; el reglamento europeo de la acrilamida y la recomendación de la Comisión; las tarifas del impuesto de actividades; la clasificación de actividades de 2025; los tipos de IVA; la ley de comercio minorista en su parte de venta ambulante y el real decreto de venta ambulante, derogado; el registro sanitario y el reglamento europeo de higiene; la Ley 12/2012; la ordenanza de calidad del aire y la orden de horarios de Madrid; el Código Técnico, el reglamento de protección contra incendios y el de gas; la ley de residuos; el Estatuto de los Trabajadores; el acuerdo laboral estatal de hostelería; el convenio de Madrid y el de Toledo; y la norma del chocolate.",
+   "Cada norma con su fecha de última actualización vista y su riesgo de caducidad: alto para la revisión de la acrilamida, la Ley 12/2012 y el convenio de Madrid; medio para las tarifas del impuesto, el IVA de la taza para llevar, las ordenanzas de Madrid, la normativa técnica y la de plásticos; bajo para el resto.",
+   "Lo que tiene fecha: la facturación verificable llega en 2027, para las sociedades en enero y para el resto en julio; la cuantía del salario mínimo es la de 2026; el convenio de Toledo de ejemplo rige hasta el 31 de diciembre de 2026; el acuerdo laboral estatal de hostelería sigue vigente hasta el 31 de diciembre de 2030; y el convenio de Madrid está vencido y en negociación, así que su texto nuevo cambiará el libro de turnos y el plan financiero.",
+   "Lo que está en marcha sin fecha: la Comisión revisa el marco de la acrilamida con niveles máximos por primera vez, en fase de consulta y con fuente secundaria (CUN-08), y el registro horario digital está pendiente de desarrollo. Cuando cambien, cambia la versión del pack.",
+   "Lo que este pack NO afirma, y a quién se le pregunta: las ordenanzas de humos, ruido, terrazas y vertido fuera de Madrid, al ayuntamiento; la correspondencia del epígrafe del impuesto con el código de actividad, al asesor; el tipo de IVA del chocolate y de las bebidas para llevar, al asesor; que el convenio de un obrador alcance a un despacho con sala, a un laboralista; la tasa de cada feria, a la ordenanza fiscal de cada municipio.",
+   "Lo que no se pudo abrir el día de la verificación y queda como dato de anuncio sin volver a comprobar: los anuncios de traspaso y la renta de referencia. Por eso son precios pedidos, no pagados.",
+   "El método: el texto consolidado del BOE, con la versión vigente y su fecha; el boletín de tu comunidad para su normativa; EUR-Lex para la europea; y REGCON para los convenios. Mira la fecha de la última modificación y, si es posterior a la de este anexo, lee el cambio antes de fiarte del libro.",
+   "Y cuándo hacerlo: antes de firmar el local, antes de pedir el préstamo y en cada actualización del pack."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-churreria-chocolateria_cap01_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/business-plan-modelo-churreria-chocolateria/cap01_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/business-plan-modelo-churreria-chocolateria_cap01_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Resumen Ejecutivo, Mercado, Concepto y Operaciones",
+  "epigrafes": [
+   "El proyecto en una página: qué se monta, dónde y para quién",
+   "La inversión, su financiación y el resultado del año de crucero",
+   "El mercado y la plaza: lo que se sabe y lo que no",
+   "El concepto y la carta: churro, porra y chocolate a la taza, en sala y para llevar",
+   "Las operaciones: el local, la línea de fritura y la hora punta",
+   "La plantilla, los turnos y el calendario de apertura"
+  ],
+  "puntos": [
+   "Presentar el proyecto en registro de banco: una churrería-chocolatería con sala, barra, terraza y despacho a calle, en un local de barrio de una gran ciudad, abierta del desayuno a la merienda y la noche del fin de semana. El caso es El Molinete, modelado: no es un negocio real, y sus cifras salen de las ocho herramientas Excel del pack.",
+   "Decir una sola vez, al principio, que cada cifra sale de una celda del pack que se puede abrir y cambiar por la propia: es una plantilla rellena, no una previsión de los resultados del lector.",
+   "Dar la inversión de apertura sin fondo de maniobra, el fondo de maniobra y la inversión total; y cómo se financia: el préstamo bancario y lo que pone el promotor.",
+   "Dar EN ESTA PÁGINA el resultado del año de crucero ANTES de impuestos, el resultado sobre ventas y el punto de equilibrio en raciones al día frente a las que se prevé vender, con el margen de seguridad entre las dos. No se remite a la sección financiera para esto.",
+   "Decir por qué el resultado va antes de impuestos: el impuesto de sociedades o el IRPF dependen de la forma jurídica, que el plan no fija.",
+   "Decir lo que no hay: ninguna estadística pública cuenta las churrerías ni sus ventas, así que el plan no da un tamaño de mercado; da la plaza. Los locales de hostelería del INE son el contexto (CUS-06), no el mercado de la churrería.",
+   "Dar la plaza con precios publicados y su año: lo que cuesta la ración y la taza en las ciudades con dato (CUS-15, CUS-17, CUS-19), y las franjas que mandan: el desayuno y la merienda, más la noche del fin de semana.",
+   "El concepto: churros y porras fritos al momento, chocolate a la taza hecho con un preparado comercial cuya etiqueta manda en la denominación, cafés y una carta de verano para julio y agosto; con el peso de cada canal, sala y para llevar, en la tabla de canales.",
+   "Dar el ticket medio sin IVA por ración de la carta de invierno y el margen sobre materia prima con su definición en la misma frase —el ticket sin IVA menos la materia y el aceite absorbido— y con su valor exacto. Y decir que no es la rentabilidad del negocio, que es el resultado del plan.",
+   "El local: la superficie útil, con la extracción a cubierta como primera condición —licencia de obra y técnico— y la fritura en su zona bajo campana. La capacidad de la línea en raciones por hora y el veredicto del libro de temporada sobre si hace falta una segunda churrera.",
+   "Las raciones de un año normal y cómo se reparten: temporada alta de octubre a marzo, diciembre por encima de todo y el valle de julio y agosto, con carta de verano.",
+   "La plantilla y su coste anual, con el convenio de ejemplo en su estado real —tablas de 2025 de un convenio vencido y en negociación— y el salario mínimo como suelo; las horas de apertura con mínimo de cobertura cada semana, y el titular en nómina como un puesto más.",
+   "El calendario: lo que dura el proyecto desde la búsqueda del local hasta la apertura, y el mes en que abre, con la ruta crítica del libro legal."
+  ]
+ },
+ {
+  "id": "business-plan-modelo-churreria-chocolateria_cap02_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/business-plan-modelo-churreria-chocolateria/cap02_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/business-plan-modelo-churreria-chocolateria_cap02_b1.txt",
+  "palabras_objetivo": 1750,
+  "palabras_min": 1260,
+  "capitulo": "Plan Financiero a Tres Años, Tesorería y Riesgos",
+  "epigrafes": [
+   "La cuenta de resultados a tres años",
+   "El punto de equilibrio y el año mes a mes",
+   "La tesorería del primer año y el valle",
+   "La financiación: el préstamo, la cuota y lo que sobra",
+   "Los riesgos, con su cifra y su respuesta"
+  ],
+  "puntos": [
+   "Dar los tres años con la tabla delante: el año uno con la rampa de arranque, el año dos de crucero y el año tres; la contribución, los costes fijos y el resultado antes de impuestos de cada uno, y la contribución por ración del crucero.",
+   "Explicar en una frase cada línea de coste fijo: la plantilla del libro de turnos, la renta, los gastos fijos que nacen en el propio plan (con su tabla), la amortización, que no sale de la caja, y los intereses del cuadro del préstamo.",
+   "Dar el punto de equilibrio contable y el de caja, en raciones al día, y cuántos meses del año de crucero no pagan sus fijos, con el resultado de agosto; la tabla mes a mes dice cuáles.",
+   "La consecuencia para la caja: los meses malos los pagan los buenos, y por eso el fondo de maniobra se calcula sobre meses de fijos.",
+   "Dar el saldo de caja el día que se abre, el valle del primer año con su mes y la lectura del libro, y el saldo al cierre del año uno.",
+   "Explicar por qué el valle llega pronto: la rampa de arranque vende menos los primeros meses mientras los fijos se pagan enteros desde el primero, y la carencia del préstamo evita que la cuota se sume a ese esfuerzo.",
+   "Dar las condiciones del préstamo de la estructura —tipo nominal, plazo y carencia—, la cuota mensual y lo que sobra en el peor año después de pagar al banco, con el ratio de cobertura de la deuda más bajo como información para el banco.",
+   "Pedir la oferta del banco por escrito y con su TAE: el tipo del plan es un supuesto heredado, no una oferta.",
+   "Riesgo de volumen: el margen de seguridad en raciones al día y las raciones al día que hacen falta sólo para pagar a las personas.",
+   "Riesgo del verano: lo que deja la carta de verano frente a cerrar, y el resultado de julio y agosto con sus fijos dentro.",
+   "Riesgo del aceite: el margen que se pierde al año con la subida más alta del libro del aceite si no se toca el precio de venta.",
+   "Riesgo de formato y de convenio: el resultado del mismo local vendiendo sólo para llevar, con los mismos fijos; y unas tablas salariales de un convenio vencido y en negociación, cuyo texto nuevo cambiará la plantilla y el plan."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap01_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap01_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap01_b1.txt",
+  "palabras_objetivo": 2200,
+  "palabras_min": 1584,
+  "capitulo": "Decisiones del Local y de la Línea",
+  "epigrafes": [
+   "Decisión 1. Sala o sólo despacho para llevar",
+   "Decisión 2. Traspaso u obra nueva",
+   "Decisión 3. Equipo completo de churros o línea separada",
+   "Decisión 4. Freidora de gas o eléctrica"
+  ],
+  "puntos": [
+   "El contexto: un despacho a calle es más barato de montar y de tramitar; una sala con barra y terraza vende más ticket y más rato. La pregunta es si el mismo barrio paga los fijos sin sala.",
+   "Las opciones: A, local con sala, barra y terraza, con despacho a calle; B, sólo despacho para llevar, en menos metros y con menos dotación.",
+   "El criterio: se decide por la contribución que deja cada formato frente a sus fijos, no por lo que cuesta abrir. El despacho ahorra dotación, pero pierde las raciones que se consumen en el local; y la sala cambia el régimen de apertura (capítulo 4).",
+   "El veredicto de El Molinete, con sala: la diferencia de dotación del despacho frente al local con sala (calculadora de inversión) y el resultado del mismo local vendiendo sólo para llevar con los mismos fijos (plan financiero, hoja «Escenarios»).",
+   "El umbral: elegirías el despacho si consigues unos fijos mucho más bajos —menos renta y menos plantilla—; el libro da el ahorro de fijos al año que necesitaría para no perder dinero.",
+   "La norma: la actividad del despacho va por declaración responsable cuando está en el Anexo de la Ley 12/2012, pero las obras que requieren proyecto, el conducto a cubierta incluido, siguen necesitando licencia de obra y técnico (arts. 3.3 y 3.4); con mesas, el régimen general de tu ayuntamiento (CUN-35, comprobado el 3 de octubre de 2026).",
+   "El contexto: un traspaso con la churrería en marcha parece un atajo, con clientela, licencia y máquinas. Pero el precio de un traspaso es lo que te piden, no lo que se paga, y la comparación sólo vale con la misma base y en el mismo horizonte.",
+   "Las opciones: A, el traspaso, al precio pedido más la adaptación que aún haría falta; B, obra nueva, con la inversión comparable de obra, extracción, maquinaria, barra, control, TPV y licencias.",
+   "El criterio: dos comparaciones, la inversión y el coste en el horizonte, con la renta y los meses pagando renta sin facturar, que en un traspaso en marcha son menos. Lo que el dinero no ve —la clientela, la distribución, el estado del conducto— se apunta aparte.",
+   "El veredicto de El Molinete: el de la inversión y el del horizonte frente al traspaso de referencia, el anuncio con sala de Vallecas con su precio pedido y negociable (CUS-02), y el precio por debajo del cual ganaría el traspaso, que es la cifra a la que hay que negociar (calculadora de inversión, hoja «Traspaso vs Obra Nueva»).",
+   "El umbral: elegirías el traspaso si lo cierras por debajo de esa cifra, o si el local trae resuelto lo que más cuesta y más tarda, la extracción a cubierta con su licencia.",
+   "La norma: no hay norma que decida esto. Sí hay una comprobación: que la licencia del local que traspasas cubra tu actividad y tu extracción; si no, la obra con proyecto vuelve a ser tuya (capítulo 4).",
+   "El contexto: hay equipos completos de churros —dosificador y sartén en un solo aparato— por mucho menos que una línea de dosificadora, freidora y amasadora por separado, y la tentación es empezar barato y ampliar después.",
+   "Las opciones: A, el equipo completo, con su precio de ficha; B, la línea separada de El Molinete, con dosificadora automática, freidora de una cuba y amasadora.",
+   "El criterio: se decide por la hora punta del domingo, no por el total del día. La capacidad se mide en kilos de masa por hora y la manda el eslabón más lento; si el equipo no aguanta la hora punta de tus meses fuertes, lo barato sale caro en cola.",
+   "El veredicto de El Molinete, línea separada: el precio de ficha del equipo completo, la capacidad de su línea en raciones por hora, el eslabón que la manda y la hora punta de un día punta de diciembre frente a esa capacidad (libro de temporada, hoja «Capacidad contra el Pico»).",
+   "El umbral: elegirías el equipo completo en un despacho de barrio o en una caseta con poca hora punta, o para empezar mientras validas la demanda. Y un déficit de diciembre no se arregla con una segunda churrera, sino con masa preparada antes de abrir y una persona más.",
+   "La norma: no hay norma que elija la máquina. Sí la hay para lo que va bajo la campana: los litros de la freidora cuentan en la potencia que decide el riesgo de incendio (capítulo 5).",
+   "El contexto: la freidora de gas es la de casi todas las churrerías y la eléctrica cuesta algo más de ficha, pero la decisión no es de precio: decide si llevas el gas al local y cuánta potencia computa tu cocina.",
+   "Las opciones: A, gas, con instalación receptora, certificado del instalador e inspección periódica; B, freidora eléctrica, con la potencia contratada que necesite. Lo que no es una opción en un local: la bombona.",
+   "El criterio: los litros de cuba computan como potencia, y la potencia de la cocina decide si es local de riesgo especial y si la extinción automática es obligatoria. Con extinción automática deja de ser local de riesgo especial, pero sigue sujeta a la nota 3: campana, conductos y filtros.",
+   "El veredicto de El Molinete, gas: los kW computables de su cocina, su riesgo y si la extinción automática es obligatoria (libro de producción); el precio de ficha de la freidora eléctrica de referencia frente a la de gas, y lo que costaría la extinción automática si le tocara (calculadora de inversión).",
+   "El umbral: elegirías la eléctrica si el local no tiene gas o llevarlo es una obra que no compensa; y con una segunda freidora, mira cómo sube la potencia antes de comprar, porque puede cambiarte de riesgo.",
+   "La norma: CTE DB-SI, tabla 2.1 y sus notas 2 y 3, y la instalación receptora de gas con su inspección periódica (RD 919/2006). La bombona única de menos de quince kilos sólo libra a un aparato de utilización móvil, en la feria (capítulo 14). Comprobado el 3 de octubre de 2026."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap02_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap02_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap02_b1.txt",
+  "palabras_objetivo": 2200,
+  "palabras_min": 1584,
+  "capitulo": "Decisiones de la Carta y del Horario",
+  "epigrafes": [
+   "Decisión 5. Preparado comercial o mezcla propia",
+   "Decisión 6. Qué preparado compras para la taza y qué dice su etiqueta",
+   "Decisión 7. Ración, docena o kilo: qué formato empujas",
+   "Decisión 8. Abrir antes de las 8:00"
+  ],
+  "puntos": [
+   "El contexto: el preparado para masa de churros es cómodo y regular; la harina especial con sal y agua es más barata por kilo de masa. La diferencia parece pequeña por kilo y se nota al año.",
+   "Las opciones: A, el preparado comercial, con lo que declara el vendedor que rinde cada saco; B, mezcla propia con harina especial para churros, sal y agua, con proporciones de ejemplo que no son una receta.",
+   "El criterio: el ahorro por kilo de masa por los kilos del año, frente a lo que cuesta la regularidad: el tiempo de quien mezcla y las tandas que salen mal. Y la etiqueta: con el preparado, los alérgenos los declara el fabricante; con la mezcla propia, los declaras tú.",
+   "El veredicto de El Molinete, preparado comercial: el coste de un kilo de masa con el preparado y con la mezcla propia, y el ahorro por kilo (libro de la carta, hoja «Escandallo por kg de Masa»).",
+   "El umbral: elegirías la mezcla propia con un churrero con oficio que la haga igual todos los días y con mucha masa al año; con rotación de personal, el preparado.",
+   "La norma: no hay norma que elija la masa. Sí la hay para lo que declaras: los alérgenos, por escrito, de tu masa y de cada producto que compras (RD 126/2015, capítulo 11).",
+   "El contexto: el chocolate a la taza de una churrería sale casi siempre de un preparado en polvo y leche, y lo que pone la carta depende de lo que dice la etiqueta de ese preparado, no del gusto ni de la costumbre.",
+   "Las opciones: A, un preparado cuya etiqueta dice «chocolate a la taza», con el cacao seco total que declara; B, un preparado con otra denominación o con grasa vegetal distinta de la manteca de cacao.",
+   "El criterio: la carta repite la denominación de la etiqueta. Si el cacao seco total está por debajo del mínimo del producto o la etiqueta declara grasa vegetal, el libro avisa: consulta a tu servicio de consumo antes de imprimir la carta. Y el coste por taza sale del formato que compras y de lo que rinde.",
+   "El veredicto de El Molinete: el cacao seco total de su preparado frente al mínimo, el aviso del libro y el coste de una taza (libro de la carta, hoja «Chocolate a la Taza»).",
+   "El umbral: cambiarías de preparado si su etiqueta dice otra cosa o declara grasa vegetal y quieres seguir llamándolo «chocolate a la taza»: primero la etiqueta, después el precio.",
+   "La norma: el RD 1055/2003 define el producto, no la bebida servida, y de ningún artículo sale que no puedas escribir «chocolate» en la carta con un preparado que no cumpla: es una interpretación y se consulta (CUN-42, CUN-V06; comprobado el 3 de octubre de 2026).",
+   "El contexto: la misma masa se vende en ración, media ración, docena, suelta o al kilo, y cada formato deja distinto por kilo de masa. La carta suele heredar los formatos de la competencia sin mirar cuál paga.",
+   "Las opciones: A, empujar la ración y la media ración en sala; B, empujar la docena y el kilo para llevar, el pedido grande del domingo; C, revisar el precio del formato que menos deja.",
+   "El criterio: los euros sin IVA que deja cada kilo de masa y la rotación. El libro marca un margen mínimo por unidad y una rotación mínima, criterio de la casa, para mantener, revisar el precio, vigilar o retirar cada referencia.",
+   "El veredicto de El Molinete: lo que deja por kilo de masa la ración, la docena y el kilo, con su margen mínimo por unidad y su rotación mínima, y el veredicto de cada formato de churro y porra (libro de la carta, hojas «Ración, Docena o Kilo» y «Decisión de Surtido»).",
+   "El umbral: empujarías el kilo si tu cola del domingo es de pedidos grandes para llevar y a tu línea le sobra capacidad; si no, cada kilo ocupa la línea con lo que menos deja.",
+   "La norma: no hay norma que decida el formato. Sí la hay para cómo lo cobras: el vaso de plástico para llevar se cobra aparte, en su propia línea del tique (Ley 7/2022, CUN-41; comprobado el 3 de octubre de 2026).",
+   "El contexto: el desayuno es la franja que más raciones se lleva en una churrería, y en el ejemplo de Madrid una chocolatería no puede abrir antes de las 8:00, mientras que una cafetería o un bar sí puede hacerlo desde las 6:00. La hora a la que abres decide cómo te clasificas.",
+   "Las opciones: A, abrir a las 6:00 o a las 7:00 clasificado como cafetería o bar; B, abrir a las 8:00 como chocolatería y renunciar a la primera hora del desayuno.",
+   "El criterio: las raciones que se lleva el desayuno y la norma de horarios de TU comunidad, no la de Madrid, que es un ejemplo y no se extrapola. La clasificación horaria es una cosa y el epígrafe del impuesto, otra (capítulo 9).",
+   "El veredicto de El Molinete: la parte de las raciones de la semana que se lleva el desayuno, la hora de apertura del sábado y los días que abre antes de la hora mínima de chocolatería (libro de temporada, hoja «Franjas del Día»), con lo que eso significa en el ejemplo de Madrid (libro legal).",
+   "El umbral: abrirías a las 8:00 si tu barrio no desayuna churros —una zona de oficinas o de paso de tarde— o si tu comunidad no permite antes la clasificación que necesitas.",
+   "La norma: Orden de 21 de abril de 2022 de la Comunidad de Madrid, con cafeterías y bares desde las 6:00 y chocolaterías desde las 8:00; es el ejemplo de Madrid y no se extrapola (CUN-34; comprobado el 3 de octubre de 2026). Pregunta la de tu comunidad."
+  ]
+ },
+ {
+  "id": "BONUS-12-decisiones-de-apertura_cap03_b1",
+  "ruta_txt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/txt/BONUS-12-decisiones-de-apertura/cap03_b1.txt",
+  "prompt": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guia-churreria/build/docs/prompts/BONUS-12-decisiones-de-apertura_cap03_b1.txt",
+  "palabras_objetivo": 2200,
+  "palabras_min": 1584,
+  "capitulo": "Decisiones del Verano, la Plantilla y el Modelo",
+  "epigrafes": [
+   "Decisión 9. El verano: cerrar, carta de verano o ferias",
+   "Decisión 10. Cuánta madrugada asumes tú",
+   "Decisión 11. Freidora dedicada o compartida",
+   "Decisión 12. Franquicia o por tu cuenta"
+  ],
+  "puntos": [
+   "El contexto: julio y agosto son el valle de una churrería y la tentación es cerrar y descansar. Pero los fijos de esos dos meses se pagan igual, y la pregunta es qué salida deja más contribución para pagarlos.",
+   "Las opciones: A, cerrar; B, abrir con carta de verano, con granizados, horchata, helado y algo de churro; C, cerrar el local y salir de ferias.",
+   "El criterio: se comparan por la contribución de julio y agosto —las ventas sin IVA menos la materia y el personal extra, más lo que dejan las ferias—, porque los fijos son los mismos en las tres. La fiscalidad no es una salida.",
+   "El veredicto de El Molinete, carta de verano: la contribución con carta de verano y saliendo de ferias, y el resultado de julio y agosto con los fijos dentro (libro de temporada, hoja «El Verano (Tres Salidas)», y plan financiero, hoja «Escenarios»).",
+   "El umbral: elegirías las ferias si tu local vendiera en verano menos raciones al día que el umbral del libro; y cerrarías sólo si ni la carta de verano ni las ferias dejan contribución.",
+   "La norma: si sales de ferias, la caseta tiene su autorización municipal, su alta y su registro (Ley 7/1996, arts. 53 a 55, y capítulo 14; comprobado el 3 de octubre de 2026).",
+   "El contexto: el titular de una churrería suele ser el primero en llegar y el último en irse, y un plan que sólo cuadra con sus horas gratis no aguanta un año. La madrugada del fin de semana es la parte más dura.",
+   "Las opciones: A, el titular abre la madrugada del fin de semana; B, la abre un churrero, con su plus de convenio, y el titular entra después; C, un relevo para que el titular descanse un día.",
+   "El criterio: las horas del titular a la semana, sus horas de madrugada y lo que valdrían al año sus horas de más al coste hora de la plantilla. El titular autónomo no cobra plus ni es trabajador nocturno; el churrero que abre la madrugada cobra plus sin ser, por eso, trabajador nocturno (capítulo 13).",
+   "El veredicto de El Molinete: el titular asume la madrugada del fin de semana desde las 6:00; sus horas a la semana, sus horas de madrugada, lo que valdrían al año sus horas de más y el veredicto del libro de turnos (hoja «Horas del Titular»).",
+   "El umbral: contratarías el relevo cuando lo que valen tus horas de más al año se acerque al coste de un refuerzo, o antes si el veredicto dice que trabajas los siete días.",
+   "La norma: el Estatuto de los Trabajadores, art. 36.1, para la plantilla, y el plus de nocturnidad del convenio de tu provincia; el titular autónomo queda fuera de las dos figuras (comprobado el 3 de octubre de 2026).",
+   "El contexto: freír patatas, rebozados o buñuelos de otra masa en la freidora de los churros ahorra una máquina y amplía la carta, pero lo que fríes en la misma cuba pasa al resto.",
+   "Las opciones: A, freidora dedicada al churro y a la porra; B, una sola freidora compartida con otros fritos; C, una segunda freidora para lo demás.",
+   "El criterio: el aceite compartido es contaminación cruzada, así que tus alérgenos pasan a ser los de todo lo que fríes en esa cuba; si fríes patatas frescas, te entra la parte A del reglamento de la acrilamida; y la segunda freidora suma potencia y puede cambiarte de riesgo de incendio.",
+   "El veredicto de El Molinete, dedicada: su decisión y su consecuencia (libro legal, hoja «Alérgenos y Aceite Compartido»), con la parte A de la acrilamida que no le alcanza y las casillas de alérgenos que aún tiene que leer en la etiqueta; y la potencia de su cocina con una sola freidora (libro de producción).",
+   "El umbral: compartirías la freidora sólo con productos de la misma masa y sin alérgenos nuevos; para patatas o rebozados, segunda freidora, con su potencia en el cálculo del riesgo.",
+   "La norma: Reglamento (CE) 852/2004, anexo II, capítulo IX, para el equipo que ha tocado un alérgeno; RD 126/2015, alérgenos por escrito; y Reglamento (UE) 2017/2158, anexo II, parte A, si fríes patatas frescas (comprobado el 3 de octubre de 2026).",
+   "El contexto: una franquicia de churros o de chocolate vende marca, método y proveedor, y publica una inversión que parece cerrada. Lo que no publica es lo que pagas cada mes ni lo que incluye de verdad.",
+   "Las opciones: A, una enseña de base comparable, con su canon, su royalty y su publicidad; B, por tu cuenta, con tu inversión y tu marca.",
+   "El criterio: con la misma base, tu inversión de apertura sin fondo de maniobra frente a las enseñas que publican local en bruto con obra, maquinaria y mobiliario; y el royalty pasado por el plan mes a mes, también en julio y agosto (capítulo 15).",
+   "El veredicto de El Molinete, por su cuenta: su inversión total, el abanico publicado y cuántas enseñas de base comparable quedan por debajo de su inversión de apertura (calculadora de inversión, hoja «Franquicia o Independiente»).",
+   "El umbral: elegirías la franquicia si no tienes oficio de churrero ni proveedor y tu plan aguanta el royalty en el peor mes, o si la enseña te da una ubicación que solo no conseguirías.",
+   "La norma: si la enseña te suministra la masa de forma centralizada y operas bajo su marca, te alcanza la parte B del anexo II de la acrilamida (Reglamento (UE) 2017/2158, art. 2.3; comprobado el 3 de octubre de 2026)."
+  ]
+ }
+]

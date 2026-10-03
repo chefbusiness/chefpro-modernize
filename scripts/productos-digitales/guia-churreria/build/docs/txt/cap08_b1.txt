@@ -1,0 +1,67 @@
+### Por qué no damos un número de churrería, sino el modelo que da el tuyo
+
+Busca «cuánto cuesta montar una churrería» y encontrarás horquillas de inversión por todas partes. Tienen tres problemas que se ven a la primera lectura atenta: se copian unas a otras, no dicen de qué formato hablan (¿un puesto de feria, un despacho a la calle, un local con sala y mesas, una chocolatería con barra?) y no salen de ninguna suma. Un rango sin partidas no se puede discutir ni corregir: sólo se puede creer. Y aquí nadie te pide que creas nada, porque vas a jugarte tu dinero.
+
+Esta guía no añade una horquilla más. Da once bloques con su importe, y el cambio de los importes es cosa tuya. El caso que recorre el pack, la Churrería-Chocolatería El Molinete, es un caso modelado: no es un negocio real, y sus cifras son las de un ejemplo que se calcula de principio a fin para que veas el método. Tus presupuestos reales sustituyen a los suyos, y la cifra final que sale es la tuya.
+
+Para ello, el libro calculadora-capex-churreria.xlsx tiene una hoja «CAPEX por Bloque» donde cada línea lleva su importe, su procedencia y su tipo de IVA. Y hay tres cifras de El Molinete que no conviene confundir, porque responden a tres preguntas distintas:
+
+- El CAPEX, que es la inversión sin IVA y sin fondo de maniobra: 86.415,65 €. Sirve para saber cuánto vale lo que montas y para cuadrar el inmovilizado.
+- El IVA soportado de esa inversión, que se adelanta: 17.298,62 €. Sirve para saber cuánta caja sale de tu cuenta y vuelve después.
+- El desembolso total con IVA: 103.714,27 €. Sirve para saber cuánto tienes que poder pagar el día que abres, que es la cifra que importa al hablar con el banco y con tu bolsillo.
+
+Casi todos los errores de cálculo de este capítulo nacen de usar una de las tres donde tocaba otra. Si alguien te dice «me costó tanto montarlo» y no te aclara cuál de las tres es, no tienes dato: tienes una anécdota.
+
+### Los once bloques de la inversión, del local en bruto al marketing de apertura
+
+Todo va en base imponible, con el IVA aparte, y las reglas de la extracción, la obra, la maquinaria y el IVA ya están explicadas en los capítulos 3 a 7: aquí sólo se suman. El cuadro siguiente a este texto trae los once bloques con su importe; este epígrafe te cuenta qué hay dentro de cada uno y cuáles se olvidan.
+
+**La obra y el acondicionamiento del local en bruto.** Es el bloque más grande y es un supuesto, no un dato del sector: El Molinete lo calcula con un coste de obra de 380 € por metro cuadrado de local en bruto, y el bloque resultante es de 28.500 € sin IVA. Los 380 € son un supuesto de El Molinete que sustituyes por el presupuesto de tu constructor; ni es «lo normal» ni lo que cuesta una reforma en tu ciudad. Un local que alquilas ya acondicionado tendrá aquí una línea mucho más pequeña, y uno en bruto, más grande.
+
+**La extracción y el conducto.** Es lo que exige la actividad con fritura y lo que decide la licencia de obra. Del conducto a cubierta y del proyecto que lo acompaña no tenemos precio con fuente: no hay dato público fiable que podamos darte, y por eso en tu caso es lo primero que pides por escrito a un técnico. Como referencia sólo de la campana: Churrofácil, ficha 28 (2026), anuncia una de acero inoxidable de 120 cm con turbina por 990 € sin IVA, y esa cifra no incluye el conducto ni el proyecto.
+
+**La fritura, la dosificación y el amasado.** Aquí viven la churrera o freidora, la dosificadora y la amasadora. Como orden de magnitud con precio visto el 3 de octubre de 2026, todos sin IVA y varios con descuento vigente que puede caducar: Hosteleria10, churreras (Mundigas, equipo de churros CH-1-D) (2026) lista un kit completo con dosificador de 1,5 kg y sartén de 14 litros a 2.188 €; Hosteleria10, churreras (ClimaHosteleria EMPLK002) (2026) lista una freidora de gas con una cuba de 25 litros a 1.907 €; Hosteleria10, churreras (CH, dosificadora automática) (2026) lista una dosificadora a 1.798 €; y Churrofácil, ficha 26 (2026) lista una amasadora de 30 kg a 2.550 €, con una alternativa artesanal en Hosteleria10 (Inhospan CALD50 y pala J.L. Blanco) (2026): un caldero amasador de 247,00 € más una pala de amasar desde 39,00 €. Un «desde» no es una cifra cerrada: es el suelo de una ficha, no tu presupuesto.
+
+**El chocolate y el café.** La chocolatera, la cafetera y los calientachocolates. Hosteleria10, churrería (chocolateras) (2026) lista una a 412,70 € sin IVA, de nuevo con descuento que puede caducar. De la cafetera y del resto de aparatos de la barra no hemos encontrado precio con fuente que podamos darte aquí.
+
+**La barra, la sala y la terraza.** Mostrador, mobiliario, vitrinas y, si tu local la permite, la terraza. De la terraza, ya lo sabes por capítulos anteriores: lo que depende del ayuntamiento es una pregunta que le haces tú, no un dato que te damos.
+
+**El control y la seguridad.** Báscula, medidor del aceite, escurridor y las bandejas, además de la seguridad contra incendios que pida tu local. Como orden de magnitud, también sin IVA: una báscula a 48,75 € (Hosteleria10, churreras (básculas), 2026), un escurridor desde 260 € (Hosteleria10, churreras y churrería, 2026) y un medidor de compuestos polares a 499 € (Infoagro, medidor de compuestos polares Testo 270 BT, tienda en línea, 2026; la página muestra 603,79 € con IVA y el importe sin IVA es un cálculo nuestro). Ese medidor te ayuda a decidir cuándo cambiar el aceite, pero no demuestra que cumples el límite legal: el límite se prueba en laboratorio con el método de la norma.
+
+**El TPV y el rótulo.** El terminal de cobro, el software y la imagen exterior del local. Sin precios con fuente en este pack: se presupuestan.
+
+**Las licencias, el proyecto de actividad y las tasas.** Es el bloque que más se olvida o se copia mal. En El Molinete son 6.100 € sin IVA, y son un supuesto de El Molinete, nunca una horquilla copiada de un artículo. La actividad, la obra y la terraza son tres papeles distintos, cada uno con su coste, y lo que depende de tu ayuntamiento o de tu comunidad autónoma es una pregunta que le haces a ellos, no una tarifa que te damos nosotros. Sustituye este importe por lo que te digan por escrito.
+
+**La fianza.** Es dinero que sale el día que firmas y que, en principio, se recupera al final del contrato: por eso no se amortiza ni se trata como gasto. Se cuenta como inversión porque tienes que tenerla al abrir.
+
+**El stock inicial y el envase.** Lo que llenas antes de vender: harina, aceite, chocolate, café, azúcar, y el envase para llevar. No se estima «a ojo»: se calcula con los precios del libro de la carta, multiplicando lo que vas a necesitar los primeros días por lo que cuesta cada cosa en tu proveedor. Como el stock de alimentos va al tipo reducido, su IVA no es el del resto de la inversión, y eso se ve en el siguiente epígrafe.
+
+**El marketing de apertura.** La campaña para que te encuentren, las primeras promociones y la señalización. Es un gasto de lanzamiento, no un activo: no se amortiza.
+
+Una línea más que sólo suma si procede: la extinción automática de incendios sobre la fritura. El libro de producción te dice si la necesitas con tu línea de fritura, y sólo entonces entra en la suma. En El Molinete, no.
+
+Con esto sale el inmovilizado amortizable de El Molinete: 81.747,35 €. Queda fuera de él lo que no se desgasta ni envejece como una máquina: la fianza, el stock y el marketing no se amortizan. Esa diferencia entre CAPEX y amortizable la ves en la tabla de abajo, y es la que usa el plan financiero para calcular la cuenta de resultados.
+
+### El IVA que adelantas no es inversión, es caja
+
+El IVA soportado de la inversión de El Molinete es de 17.298,62 €, y el desembolso con IVA es de 103.714,27 €. Casi todo el CAPEX va al tipo general del 21 % (Ley 37/1992, art. 90.Uno, comprobado el 3 de octubre de 2026); sólo el stock de alimentos va al reducido. Las reglas del IVA están en el capítulo 3: aquí sólo importa su efecto en la caja.
+
+Y su efecto es éste: ese dinero sale de tu cuenta el día que pagas a cada proveedor y vuelve después, al ritmo al que factures, no en una fecha. No es un gasto, porque lo recuperas; pero tampoco es dinero que tengas libre, porque lo has adelantado. Quien cuenta sólo el CAPEX sin IVA como «lo que tengo que tener» se queda corto justo cuando más lo necesita, que es el mes de apertura.
+
+La consecuencia se negocia con el banco. El desembolso con IVA es lo que tienes que poder pagar al abrir, aunque una parte vuelva después. Cuéntalo aparte del préstamo: la parte del IVA que vuelve no es financiación, y la que adelantas no es colchón. Si el banco te financia sólo lo que no lleva IVA, la diferencia la pones tú de tu bolsillo hasta que la Hacienda te la devuelva o se compense con tu IVA repercutido. El cómo se financia todo esto está en el capítulo 16.
+
+### El fondo de maniobra no está aquí: se calcula en el plan financiero
+
+Es la diferencia que más confusión crea, así que va dicha sin rodeos: el fondo de maniobra no es inversión. Es caja para pagar los gastos fijos mientras el negocio arranca y en el valle del verano, cuando entran menos ventas que gastos. No se compra, no se amortiza y, si todo va bien, no se gasta del todo.
+
+La calculadora de inversión no lo lleva, y es a propósito: si lo metieras dentro, lo contarías dos veces, una en el CAPEX y otra en el plan financiero. Se calcula en el plan financiero, con los gastos fijos y los meses de colchón, que son supuestos de El Molinete que tú sustituyes por los tuyos. La inversión total es la suma de los dos.
+
+En El Molinete, el fondo de maniobra es de 79.052 € (hoja «Inversión Inicial» del libro plan-financiero-3-anos-churreria.xlsx), y la inversión total, es decir, el CAPEX más ese fondo, es de 165.468 €. Cómo se financian esos dos pedazos, y cuánto debe venir de tu bolsillo y cuánto del banco, es cosa del capítulo 16.
+
+### Contra qué contrastar tu cifra
+
+Seamos honestos con lo poco que hay: el pack trae una sola referencia externa de contraste. Es el anuncio de traspaso en Vallecas de Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026): un local de 74 m² cuyo anuncio declara incluidos unos equipos «valorados en 50.000 €» (freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV). La lectura es del anuncio y no la hemos podido reabrir hoy, porque el portal nos devolvió un captcha; además, el anuncio no aclara si esa valoración lleva o no IVA.
+
+Con esas reservas, el uso es éste: ponla frente al equipamiento y el mobiliario de los bloques dos a siete de El Molinete, que suman 47.147,35 € sin IVA (hoja «Resumen» del libro calculadora-capex-churreria.xlsx). No es una validación: es un orden de magnitud para saber si te has olvidado algo. Si tu suma de equipamiento está muy por debajo de lo que declara un traspaso de un local de tamaño parecido, mira qué has dejado fuera. Y recuerda que un precio de traspaso es un precio pedido y negociable, no un precio de cierre.
+
+El control que de verdad sirve es otro, y es el tuyo. En cuanto metes tus presupuestos reales en el libro, éste calcula la desviación de tus importes contra el precio de referencia de cada línea. Una línea fuera de tu horquilla se mira antes de firmar el pedido: o tienes una razón (otro formato, otra marca, un descuento que no es de listado) o has encontrado un error a tiempo. Ese es el uso de las cifras de este capítulo: no se copian, se contrastan con las tuyas.
