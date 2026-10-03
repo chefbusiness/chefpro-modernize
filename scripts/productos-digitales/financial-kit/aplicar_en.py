@@ -38,6 +38,9 @@ Orden por libro, siempre desde una copia limpia del ES publicado (→ idempotent
       0 fallos de pycel), y `cachear_irr` del 07 que recalcula la TIR en Python desde los flujos cacheados y la
       compara con la caché (o la inyecta si faltara).
 
+Revisión final (SPEC D25-D37): en el paso 2, `mapas.PARCHES_FORMULA` (en espacio ES, antes de traducir); en el 4-5,
+`CF_SQREF_EN` y la DV partida del 03; en el 6, `UMBRALES_TEXTO_EN`, `FORMULAS_NUEVAS` (+ `ESTILO_DE`) y `TEXTOS_NUEVOS`.
+
 La protección de las 56 hojas (sin contraseña) viaja intacta con openpyxl.
 Térmica: todo en SERIE; `istats` antes de cada libro y de cada inject_cache (espera si ≥ 62 °C hasta < 60 °C). En el
 VPS (D24) no hay istats y la guarda no espera.
@@ -70,6 +73,7 @@ sys.path.insert(2, os.path.join(SCRIPTS, 'kit-plan-financiero-v2_0'))
 
 import openpyxl                                              # noqa: E402
 from openpyxl.worksheet.cell_range import MultiCellRange     # noqa: E402
+from openpyxl.formatting.formatting import ConditionalFormatting   # noqa: E402
 from openpyxl.worksheet.datavalidation import DataValidation  # noqa: E402
 
 import mapas                                                 # noqa: E402
@@ -345,18 +349,35 @@ def renombrar(wb):
     return mapa
 
 
-def reescribir_formulas(wb, T, rep):
+def reescribir_formulas(wb, T, rep, corto=None, inv=None):
+    """HOJAS + CLAVES (+ patrón D10) en toda fórmula; antes, en espacio ES, los PARCHES_FORMULA de la revisión final."""
     n = pat = 0
+    parcheadas = set()
     for ws in wb.worksheets:
+        h_es = inv[ws.title] if inv else None
         for c in list(ws._cells.values()):
             if c.data_type == 'f' and isinstance(c.value, str):
-                nuevo, es_pat = formula_en(c.value, c.row, T)
+                v = c.value
+                if corto is not None:
+                    try:
+                        v2 = mapas.parchear_formula_es(corto, h_es, c.coordinate, v)
+                    except ValueError as e:
+                        raise Aborta(str(e))
+                    if v2 != v:
+                        parcheadas.add((corto, h_es, c.coordinate))
+                    v = v2
+                nuevo, es_pat = formula_en(v, c.row, T)
                 pat += es_pat
                 if nuevo != c.value:
                     c.value = nuevo
                     n += 1
+    if corto is not None:
+        sin = sorted(set(mapas.celdas_parcheadas(corto)) - parcheadas)
+        if sin:
+            raise Aborta('%s: PARCHES_FORMULA sin aplicar (¿la celda no es fórmula en el ES?): %r' % (corto, sin[:5]))
     rep['formulas_reescritas'] = n
     rep['formulas_patron_en'] = pat
+    rep['formulas_parcheadas'] = len(parcheadas)
 
 
 def reescribir_titulos_impresion(wb, mapa, rep):
@@ -496,7 +517,8 @@ def dv_partida_nueva(dv_es, partida):
 
 def reescribir_dv_cf(L, T):
     n = OrderedDict([('dv_listas', 0), ('dv_personalizadas', 0), ('dv_ref', 0), ('dv_partidas', 0),
-                     ('dv_mensajes', 0), ('dv_mensajes_fijados', 0), ('cf_reglas', 0), ('cf_text', 0)])
+                     ('dv_mensajes', 0), ('dv_mensajes_fijados', 0), ('cf_reglas', 0), ('cf_text', 0),
+                     ('cf_ampliadas', 0)])
     usados = set()
     for ws in L.wb.worksheets:
         h_es = L.inv[ws.title]
@@ -553,10 +575,22 @@ def reescribir_dv_cf(L, T):
                 if regla.text:
                     regla.text = clave_en(regla.text, 'CF %s %s' % (ws.title, cf.sqref))
                     n['cf_text'] += 1
+        cfl = ws.conditional_formatting                    # revisión final D32: la CF cubre la fila nueva
+        if any((L.corto, h_es, str(cf.sqref)) in mapas.CF_SQREF_EN for cf in cfl._cf_rules):
+            viejo = list(cfl._cf_rules.items())            # la clave del dict es el rango: se reconstruye en orden
+            cfl._cf_rules = OrderedDict()
+            for cf, reglas in viejo:
+                amplia = mapas.CF_SQREF_EN.get((L.corto, h_es, str(cf.sqref)))
+                if amplia:
+                    cf = ConditionalFormatting(sqref=amplia, pivot=cf.pivot)
+                    n['cf_ampliadas'] += 1
+                cfl._cf_rules[cf] = reglas
     sin_usar = [k for k in mapas.DV_MENSAJES_EN if k[0] == L.corto and k not in usados]
     if sin_usar:
         raise Aborta('%s: DV_MENSAJES_EN sin DV donde aplicarse: %r' % (L.corto, sin_usar))
     esperadas = sum(1 for k in mapas.DV_PARTIDAS if k[0] == L.corto)
+    if n['cf_ampliadas'] != sum(1 for k in mapas.CF_SQREF_EN if k[0] == L.corto):
+        raise Aborta('%s: CF_SQREF_EN sin CF donde aplicarse' % L.corto)
     if n['dv_partidas'] != esperadas:
         raise Aborta('%s: %d DV partidas ≠ %d de DV_PARTIDAS' % (L.corto, n['dv_partidas'], esperadas))
     L.rep.update(n)
@@ -574,6 +608,11 @@ def capa_por_celda(L):
     for (c, h, coord), v in mapas.POR_CELDA.items():
         if c == L.corto:
             L.poner(h, coord, v, es_texto)
+            n += 1
+    sin_letras = lambda x: es_texto(x) and not any(ch.isalpha() for ch in x)      # noqa: E731
+    for (c, h, coord), v in mapas.UMBRALES_TEXTO_EN.items():                       # revisión final D34
+        if c == L.corto:
+            L.poner(h, coord, v, sin_letras)
             n += 1
     L.rep['por_celda'] = n
 
@@ -610,6 +649,46 @@ def capa_valores(L):
             L.poner(h, coord, v, num)
             n += 1
     L.rep['valores'] = n
+
+
+def capa_formulas_nuevas(L, T):
+    """Revisión final (D31-D32): celdas sin fórmula en el ES que pasan a fórmula. Se escriben en espacio ES y el
+    Transformador las pasa a EN; copian el estilo de ESTILO_DE (bloqueo y relleno incluidos)."""
+    n = 0
+    for (c, h, coord), f_es in mapas.FORMULAS_NUEVAS.items():
+        if c != L.corto:
+            continue
+        ws = L.ws(h)
+        cel = ws[coord]
+        if cel.data_type == 'f' or (isinstance(cel.value, str) and cel.value.startswith('=')):
+            raise Aborta('%s %s!%s ya es fórmula en el ES: FORMULAS_NUEVAS no aplica' % (c, h, coord))
+        cel._style = copy.copy(ws[mapas.ESTILO_DE[(c, h, coord)]]._style)
+        cel.value = T.celda(f_es)
+        L.escritas.add((h, coord))
+        n += 1
+    L.rep['formulas_nuevas'] = n
+
+
+def capa_textos_nuevos(L):
+    """Revisión final: textos en celdas sin texto en el ES (aviso legal D36 bajo la versión, notas D32-D35)."""
+    n = 0
+    for (c, h, coord), (texto, estilo) in mapas.TEXTOS_NUEVOS.items():
+        if c != L.corto:
+            continue
+        ws = L.ws(h)
+        cel = ws[coord]
+        if cel.value is not None:
+            raise Aborta('%s %s!%s no está vacía en el ES (%r): TEXTOS_NUEVOS no la pisa' % (c, h, coord, cel.value))
+        if h == 'Instrucciones' and texto == mapas.AVISO_EN:
+            ver = ws['B%d' % mapas.FILA_VERSION[c]].value
+            if not (isinstance(ver, str) and ver.startswith('Version ')):
+                raise Aborta('%s: la línea de versión no está en B%d (%r)' % (c, mapas.FILA_VERSION[c], ver))
+        if estilo:
+            cel._style = copy.copy(ws[estilo]._style)
+        cel.value = texto
+        L.escritas.add((h, coord))
+        n += 1
+    L.rep['textos_nuevos'] = n
 
 
 def alto_necesario(ws, fila):
@@ -840,13 +919,15 @@ def construir_libro(fname_es, carpeta, datos, mes):
     mapa = renombrar(wb)                                                       # 1
     L = Libro(wb, corto, mapa, datos, rep)
     T = Transformador(mapa)
-    reescribir_formulas(wb, T, rep)                                            # 2
+    reescribir_formulas(wb, T, rep, corto, L.inv)                              # 2 (+ PARCHES_FORMULA)
     regenerar = traducir_textos(L, mes)                                        # 3
-    reescribir_dv_cf(L, T)                                                     # 4-5
+    reescribir_dv_cf(L, T)                                                     # 4-5 (+ CF_SQREF_EN)
     capa_titulo(L, fname_es)                                                   # 6
     capa_por_celda(L)
     capa_fijos(L, regenerar)
     capa_valores(L)
+    capa_formulas_nuevas(L, T)                                                 # revisión final D31-D32
+    capa_textos_nuevos(L)                                                      # revisión final D32-D36
     capa_ajuste(L)
     capa_anchos(L)
     rep['refs_hoja'] = T.hojas_citadas

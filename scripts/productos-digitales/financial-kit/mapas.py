@@ -176,7 +176,8 @@ CLAVES = OrderedDict([
 #    útil en años. (libro, hoja ES, sqref ES) → (sqref que conserva la DV ES, sqref de la DV nueva, tipo, op, f1, f2,
 #    mensaje, título ≤ 32)
 # ==========================================================================
-_VIDA = 'Useful life in years (straight line). Leave blank for items you expense, such as permits.'
+_VIDA = ('Useful life in years (straight line). Leave blank for items you expense, such as license fees. Building '
+         'permits and design fees are part of the build-out: same life.')
 
 
 def _col(c, r1, r2):
@@ -188,6 +189,12 @@ for _h, _r2 in (('Obra', 14), ('Equipamiento Cocina', 16), ('Mobiliario Sala', 1
                 ('Licencias', 12)):
     DV_PARTIDAS[('04', _h, _col('C', 5, _r2) + ' ' + _col('H', 5, _r2))] = (
         _col('C', 5, _r2), _col('H', 5, _r2), 'decimal', 'between', '0', '50', _VIDA, 'Invalid useful life')
+# D27 (revisión final): el plazo de proveedores del 03 se limita a 0-30 días (el flujo solo paga este mes o el que
+# viene; con más días la fila 16 salía negativa). La DV «≥ 0» de C5 C6 C26 se parte: C5 y C26 la conservan.
+DV_PARTIDAS[('03', 'Parámetros', 'C5 C6 C26')] = (
+    'C5 C26', 'C6', 'decimal', 'between', '0', '30',
+    'Enter 0 to 30 days. This sheet pays each month\'s purchases this month or next, so longer terms count as 30.',
+    'Invalid payment terms')
 DV_NUEVAS = OrderedDict()                   # ninguna celda nueva
 
 # ==========================================================================
@@ -197,6 +204,92 @@ FORMULAS_EN = OrderedDict([
     # 04 CAPEX, columna I: dotación anual = coste / vida útil (años), lineal; vida vacía o 0 → 0 (se gasta)
     ('=$B{r}*$H{r}', '=IFERROR($B{r}/$H{r},0)'),
 ])
+
+# --------------------------------------------------------------------------
+# 5b. Revisión final (SPEC D25-D31): cambios de fórmula CELDA A CELDA, escritos en ESPACIO ES (pestañas y literales
+#     ES; el Transformador los pasa a EN como cualquier otra fórmula). Así la caché de referencia del gate G6 los aplica
+#     sobre el ES publicado y el gate G1 sigue exigiendo el resto de fórmulas idénticas al ES.
+#   · PARCHES_FORMULA: (libro, hoja ES, rango) → (viejo, nuevo): sustitución de subcadena (todas las apariciones) en
+#     cada celda con fórmula del rango; «{c}» = letra de columna de la celda. Aborta si `viejo` no está.
+#   · FORMULAS_NUEVAS: celdas SIN fórmula en el ES (vacías o inputs) que pasan a fórmula. ESTILO_DE = celda de la
+#     misma hoja de la que copian el estilo (y con él, bloqueo y relleno: dejan de ser input verde).
+#   · CF_SQREF_EN: rangos de formato condicional que se amplían para cubrir una fila nueva.
+# --------------------------------------------------------------------------
+PARCHES_FORMULA = OrderedDict([
+    # D25 DSCR a cuota completa: el denominador es la cuota anual constante (C8), no la del año 1 (que con
+    # interest-only es solo intereses y daba un DSCR inflado)
+    (('07', 'Ratios', 'C5'), ("'Financiación'!$C$12", "'Financiación'!$C$8")),
+    # D29 tipo 0 %: la anualidad francesa divide por 0 → el capital se reparte a partes iguales en el plazo restante
+    (('07', 'Financiación', 'C8'), ('IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0)',
+                                     'IF($C$5=0,$C$4/($C$6-$C$7),IFERROR($C$4*$C$5/(1-(1+$C$5)^(-($C$6-$C$7))),0))')),
+    # D27 plazo de proveedores: el flujo reparte las compras entre este mes y el siguiente; > 30 días daba pagos
+    # negativos → tope 30 (y DV 0-30 en DV_PARTIDAS)
+    (('03', 'Flujo Mensual', 'B16:M16'), ('Parámetros!$C$6', 'MIN(Parámetros!$C$6,30)')),
+    # D28 base del sales tax: dine-in + bar + eventos (filas 7, 8, 10). Fuera: delivery de marketplaces (el marketplace
+    # cobra e ingresa el impuesto en la mayoría de estados) y «otros cobros» (capital, préstamos, devoluciones)
+    (('03', 'Flujo Mensual', 'B36:M36'), ('{c}12-{c}12/(1+Parámetros!$C$7)',
+                                         '({c}7+{c}8+{c}10)-({c}7+{c}8+{c}10)/(1+Parámetros!$C$7)')),
+    # D30 ventas por sq ft: cifra ANUAL (convención US); las ventas de la hoja son mensuales
+    (('06', 'Ratios', 'C30'), ('$C$6/$C$11', '$C$6*12/$C$11')),
+])
+FORMULAS_NUEVAS = OrderedDict([
+    # D31 los datos de balance del 07 que ya están en el libro se enlazan en vez de teclearse dos veces
+    (('07', 'Ratios', 'C15'), "='Resumen Ejecutivo'!$C$14"),        # fondos propios = aportación del resumen
+    (('07', 'Ratios', 'C16'), "='Financiación'!$C$4"),              # deuda = importe del préstamo
+    # D32 06: la ocupación (alquiler / ventas) tenía benchmark y nadie la evaluaba → fila 26 con su semáforo
+    (('06', 'Ratios', 'C26'), '=IFERROR($C$38/$C$6,"Indica las ventas")'),
+    (('06', 'Ratios', 'D26'), '=Benchmarks!$D$8'),
+    (('06', 'Ratios', 'E26'), '=IFERROR(IF(ISNUMBER($C26),IF($C26<Benchmarks!$F$8,"✅ Excelente",'
+                              'IF($C26<=Benchmarks!$G$8,"⚠️ Aceptable","🔴 Alto")),"—"),"—")'),
+    (('06', 'Ratios', 'F26'), '=Benchmarks!$F$8'),
+])
+ESTILO_DE = OrderedDict([
+    (('07', 'Ratios', 'C15'), 'C17'), (('07', 'Ratios', 'C16'), 'C17'),
+    (('06', 'Ratios', 'B26'), 'B25'), (('06', 'Ratios', 'C26'), 'C25'), (('06', 'Ratios', 'D26'), 'D25'),
+    (('06', 'Ratios', 'E26'), 'E25'), (('06', 'Ratios', 'F26'), 'F25'),
+])
+CF_SQREF_EN = OrderedDict([(('06', 'Ratios', 'E17:E25'), 'E17:E26')])
+
+
+def _celdas_rango(ref):
+    m = re.fullmatch(r'([A-Z]+)(\d+)(?::([A-Z]+)(\d+))?', ref)
+    c1, r1 = m.group(1), int(m.group(2))
+    c2, r2 = (m.group(3), int(m.group(4))) if m.group(3) else (c1, r1)
+    def n(c):
+        x = 0
+        for ch in c:
+            x = x * 26 + ord(ch) - 64
+        return x
+    def l(i):
+        out = ''
+        while i:
+            i, r = divmod(i - 1, 26)
+            out = chr(65 + r) + out
+        return out
+    return ['%s%d' % (l(c), r) for r in range(r1, r2 + 1) for c in range(n(c1), n(c2) + 1)]
+
+
+_PARCHE_POR_CELDA = {}
+for (_c, _h, _rg), _par in PARCHES_FORMULA.items():
+    for _x in _celdas_rango(_rg):
+        _PARCHE_POR_CELDA[(_c, _h, _x)] = _par
+
+
+def parchear_formula_es(corto, hoja_es, coord, f):
+    """Fórmula ES con el parche de la revisión final aplicado (o la misma si la celda no tiene parche)."""
+    par = _PARCHE_POR_CELDA.get((corto, hoja_es, coord))
+    if par is None:
+        return f
+    col = re.match(r'[A-Z]+', coord).group(0)
+    viejo, nuevo = par[0].replace('{c}', col), par[1].replace('{c}', col)
+    if viejo not in f:
+        raise ValueError('PARCHES_FORMULA %s %s!%s: %r no está en %r' % (corto, hoja_es, coord, viejo, f[:120]))
+    return f.replace(viejo, nuevo)
+
+
+def celdas_parcheadas(corto=None):
+    return sorted(k for k in _PARCHE_POR_CELDA if corto is None or k[0] == corto)
+
 
 # Patrones con comparación numérica que NO cambian (clave = libro, hoja ES, primera celda del patrón)
 PATRONES_SIN_CAMBIO = {('05', _m, _c) for _m in MESES for _c in ('B27', 'C27')}   # food cost % «<=0» → ""
@@ -220,7 +313,9 @@ VALORES_EN = OrderedDict([
     (('04', 'Equipamiento Cocina', 'C5:C16'), 0), (('04', 'Equipamiento Cocina', 'H5:H16'), 7),
     (('04', 'Mobiliario Sala', 'C5:C14'), 0), (('04', 'Mobiliario Sala', 'H5:H14'), 7),
     (('04', 'Tecnología', 'C5:C12'), 0), (('04', 'Tecnología', 'H5:H12'), 5),
-    (('04', 'Licencias', 'H5:H12'), None),      # D10: permisos = gasto → vida útil VACÍA (IFERROR → 0)
+    (('04', 'Licencias', 'H5'), None),          # D10: licencias y tasas = gasto → vida útil VACÍA (IFERROR → 0)
+    (('04', 'Licencias', 'H6:H7'), 10),         # D33: licencia de obras y proyecto técnico se capitalizan con la obra
+    (('04', 'Licencias', 'H8:H12'), None),
     (('04', 'Otros conceptos de apertura', 'C5'), 0), (('04', 'Otros conceptos de apertura', 'C7'), 0),
     (('04', 'Otros conceptos de apertura', 'C8'), 0), (('04', 'Otros conceptos de apertura', 'C10'), 0),
     (('04', 'Otros conceptos de apertura', 'C12'), 0),
@@ -228,6 +323,8 @@ VALORES_EN = OrderedDict([
     (('06', 'Ratios', 'C11'), 860),
     (('06', 'Benchmarks', 'F5'), 0.30), (('06', 'Benchmarks', 'G5'), 0.35),
     (('06', 'Benchmarks', 'F8'), 0.06), (('06', 'Benchmarks', 'G8'), 0.10),
+    # D34 GOP = EBITDA + ocupación: objetivo 15 + 6 = 21 %, límite 10 + 6 = 16 % (antes 20/15, incoherente)
+    (('06', 'Benchmarks', 'F7'), 0.21), (('06', 'Benchmarks', 'G7'), 0.16),
     # 07 (D12, D13): ejemplo de préstamo tipo SBA 7(a) (10 %, 10 años) · aportación propia mínima SBA 10 %
     (('07', 'Financiación', 'C5'), 0.10), (('07', 'Financiación', 'C6'), 10),
     (('07', 'Ratios', 'G9'), 0.10),
@@ -258,7 +355,10 @@ FIJOS = OrderedDict([
      'Every figure in this template INCLUDES the sales tax you collect: it is cash. The rest of the kit (files 01, 01b, '
      '02, 05, 06 and 07) EXCLUDES sales tax.'),
     ('IVA repercutido en ventas (%)', 'Sales tax / VAT charged on sales (%)'),
-    ('Restauración: 10 %.', "US: your combined state + local rate on meals (8% is the kit's example). UK: 20% VAT."),
+    ('Restauración: 10 %.',
+     "US: your combined state + local rate on meals (8% is the kit's example). UK: 20% VAT. The tax row uses dine-in, "
+     'bar and events (rows 7, 8 and 10): third-party delivery marketplaces usually collect and remit the sales tax on '
+     'their orders in most US states; owner capital, loans and refunds are not taxable sales.'),
     ('IVA soportado en compras de alimentación (%)', 'Recoverable tax on food purchases (%)'),
     ('Alimentación: 10 % (4 % en algunos básicos).',
      'US: 0 (sales tax has no input credit; buy food for resale with a resale certificate). UK: most food is 0%.'),
@@ -275,7 +375,7 @@ FIJOS = OrderedDict([
     ('Liquidación de IVA (mod. 303) · enero = input (4T anterior)',
      'Sales tax / VAT payment (quarterly) · January = input (last Q4)'),
     ('Seguridad Social devengada del mes', 'Employer payroll taxes accrued this month'),
-    ('IVA repercutido del mes', 'Sales tax / VAT collected this month'),
+    ('IVA repercutido del mes', 'Sales tax / VAT collected this month (rows 7, 8 and 10)'),
     ('IVA soportado del mes', 'Recoverable tax paid this month (UK VAT; US: 0)'),
     # ---- 04 (D9, D10)
     ('▸ Cada partida lleva Base, IVA % e IVA (€): el desembolso real es la columna «Total con IVA», que con un 21 % es un '
@@ -313,7 +413,7 @@ FIJOS = OrderedDict([
      'loan has to cover it. US sales tax is not recoverable: it is already inside the cost.'),
     # ---- 06 (D14, D15)
     ('m² de sala', 'Dining room area (sq ft)'),
-    ('Ventas por m² de sala (€, sin IVA)', 'Sales per sq ft (excl. sales tax)'),
+    ('Ventas por m² de sala (€, sin IVA)', 'Annual sales per sq ft (excl. sales tax)'),
     ('RevPASH (€/plaza/hora)', 'RevPASH (per seat-hour)'),
     ('> 6€', '> 6'), ('3€ - 6€', '3 - 6'), ('< 3€', '< 3'),
     ('▸ Labor Cost %: óptimo < 25% · peligro > 30% (los números viven en Benchmarks!F:G).',
@@ -352,7 +452,7 @@ FIJOS = OrderedDict([
      'que de verdad pasa en un ICO de apertura.',
      'With an interest-only period, "Principal repaid" shows 0 in the first years and the balance does not go down: '
      'that is how an interest-only start really works.'),
-    ('Referencia Bancaria', 'Lender benchmark'),
+    ('Referencia Bancaria', 'Typical lender guideline (indicative)'),
     ('Aval personal del promotor', 'Personal guarantee (SBA: owners of 20%+)'),
     ('Pignoración de depósitos', 'Pledged deposits / cash collateral'),
     ('Aval SGR (Sociedad de Garantía Recíproca)', 'Blanket lien on business assets (UCC-1)'),
@@ -413,6 +513,33 @@ POR_CELDA = OrderedDict([
     (('06', 'Benchmarks', 'E5'), '> 35%'),
     (('06', 'Benchmarks', 'B8'), 'Occupancy (rent) / Sales'),
     (('06', 'Benchmarks', 'C8'), '< 6%'), (('06', 'Benchmarks', 'D8'), '6% - 10%'), (('06', 'Benchmarks', 'E8'), '> 10%'),
+    # D35 RevPASH: umbrales para el mercado y la moneda de cada uno
+    (('06', 'Benchmarks', 'B13'), 'RevPASH (per seat-hour, your market)'),
+])
+# Rótulos de umbral SIN letras en el ES (no están en textos_es.json: «invariables») que cambian con la cifra (D34)
+UMBRALES_TEXTO_EN = OrderedDict([
+    (('06', 'Benchmarks', 'C7'), '> 21%'), (('06', 'Benchmarks', 'D7'), '16% - 21%'), (('06', 'Benchmarks', 'E7'), '< 16%'),
+])
+
+# Textos en celdas SIN texto en el ES (revisión final). (libro, hoja ES, celda) → (texto, celda de la que copia estilo
+# o None = conserva el suyo). Aviso legal D36 en las 10 Instrucciones, justo debajo de la línea de versión.
+AVISO_EN = ('Planning tool, not financial, tax or legal advice. Requirements vary by state and city — check with your '
+            'accountant and local authorities.')
+AVISO_B09_EN = 'This checklist is a starting point, not an exhaustive list.'
+FILA_VERSION = OrderedDict([('01', 27), ('01b', 23), ('02', 19), ('03', 25), ('04', 23), ('05', 16), ('06', 24),
+                            ('07', 25), ('B08', 19), ('B09', 28)])
+TEXTOS_NUEVOS = OrderedDict()
+for _c, _f in FILA_VERSION.items():
+    TEXTOS_NUEVOS[(_c, 'Instrucciones', 'B%d' % (_f + 1))] = (AVISO_EN, 'B%d' % (_f - 2))
+TEXTOS_NUEVOS[('B09', 'Instrucciones', 'B%d' % (FILA_VERSION['B09'] + 2))] = (AVISO_B09_EN, 'B%d' % (FILA_VERSION['B09'] - 2))
+TEXTOS_NUEVOS.update([
+    (('06', 'Ratios', 'B26'), ('Occupancy (rent) / Sales', 'B25')),                                  # D32
+    (('06', 'Benchmarks', 'B18'), ('RevPASH thresholds (6 and 3 per seat-hour) assume US dollars: set them for your '
+                                   'currency and market.', 'B17')),                                   # D35
+    (('06', 'Benchmarks', 'B19'), ('GOP thresholds (21% / 16%) = EBITDA thresholds (15% / 10%) + 6 points of '
+                                   'occupancy (rent).', 'B17')),                                      # D34
+    (('04', 'Licencias', 'J6'), ('Capitalized with the build-out: same useful life.', None)),         # D33
+    (('04', 'Licencias', 'J7'), ('Capitalized with the build-out: same useful life.', None)),
 ])
 
 # ==========================================================================
@@ -431,6 +558,8 @@ FORMATOS_POR_RANGO = OrderedDict(
     ((('04', _h, 'H5:H%d' % _r2)), 'General') for _h, _r2 in (('Obra', 14), ('Equipamiento Cocina', 16),
                                                                ('Mobiliario Sala', 14), ('Tecnología', 12),
                                                                ('Licencias', 12)))
+FORMATOS_POR_RANGO[('06', 'Ratios', 'C26')] = '0.0%'           # D32: la fila nueva de ocupación, como la 25
+FORMATOS_POR_RANGO[('06', 'Ratios', 'F26')] = '0.0%'
 
 # Mensajes de DV fijados por APARICIÓN (revisión final; vacío de salida) y rótulos con ajuste de texto + alto de fila
 DV_MENSAJES_EN = OrderedDict()
@@ -441,7 +570,17 @@ AJUSTE_TEXTO = [
     ('04', 'Mobiliario Sala', 'A13'),
     ('07', 'Financiación', 'D4:D8'),
     ('B08', 'Simulador', 'A11'),
+    # revisión final: rótulos que se cortaban (D37) y los textos nuevos
+    ('01', 'Año 1', 'A27'), ('01', 'Año 2', 'A27'), ('01', 'Año 3', 'A27'),
+    ('01b', 'Año 1', 'A27'), ('01b', 'Año 2', 'A27'), ('01b', 'Año 3', 'A27'), ('01b', 'Año 4', 'A27'),
+    ('01b', 'Año 5', 'A27'),
+    ('04', 'Equipamiento Cocina', 'A15'),
+    ('B09', 'Checklist', 'B53:B58'), ('B09', 'Checklist', 'C5:C58'),
+    ('06', 'Ratios', 'D16'), ('06', 'Ratios', 'B30'),
+    ('07', 'Ratios', 'D3'),
+    ('06', 'Benchmarks', 'B17:B19'),
 ]
+AJUSTE_TEXTO += [(_c, _h, _x) for (_c, _h, _x), (_t, _e) in TEXTOS_NUEVOS.items() if _h == 'Instrucciones']
 # Columnas de rótulos de tabla que el sufijo «(excl. sales tax)» desborda: más ancho en vez de filas de dos líneas
 ANCHOS = OrderedDict([(('01', _h), {'A': 36}) for _h in ('Año 1', 'Año 2', 'Año 3', 'Resumen')])
 ANCHOS.update((('01b', _h), {'A': 36}) for _h in ('Año 1', 'Año 2', 'Año 3', 'Año 4', 'Año 5', 'Resumen'))
@@ -479,12 +618,16 @@ REGLAS_US = OrderedDict([
     ('uk_aia', ('Annual Investment Allowance £1,000,000', 'gov.uk/capital-allowances/annual-investment-allowance')),
     ('sba_plazo', ('hasta 10 años (equipo, circulante); 25 inmuebles', '13 CFR 120.212; sba.gov «7(a) loans»')),
     ('sba_tipo', ('máximo = Prime + diferencial; 10 % = ejemplo [kit estimate]', '13 CFR 120.213-120.214')),
-    ('dscr_sba', ('mínimo 1.15×', 'SBA SOP 50 10 8 (en vigor desde el 1-jun-2025)')),
-    ('dscr_banco', ('1.25× objetivo habitual de banca convencional', '[kit estimate] práctica de banca')),
-    ('aportacion_sba', ('≥ 10 % del proyecto en start-ups', 'SBA SOP 50 10 8')),
+    ('dscr_limite', ('1.15× = «Limit» editable del kit, SIN etiqueta SBA: el suelo SBA depende de la operación y del '
+                     'SOP vigente (revisión final)', '[kit estimate]; SBA SOP 50 10 vigente')),
+    ('dscr_banco', ('1.25× objetivo habitual del prestamista (orientativo)', '[kit estimate] práctica de banca')),
+    ('aportacion_sba', ('aportación propia habitual ≈ 10 % en start-ups (orientativo; lo deciden el prestamista y el '
+                        'SOP vigente)', 'SBA SOP 50 10 vigente [orientativo]')),
     ('aval_sba', ('aval personal de socios con 20 % o más', '13 CFR 120.160(a)')),
-    ('benchmarks', ('food 28-32 %, labor 30-35 %, prime 60-65 %, ocupación 6-10 %, bebida 18-24 %, EBITDA 10-15 %',
+    ('benchmarks', ('food 28-32 %, labor 30-35 %, prime 60-65 %, ocupación 6-10 %, bebida 18-24 %, EBITDA 10-15 %, '
+                    'GOP 16-21 % (= EBITDA + 6 pts de ocupación)',
                     '[kit estimate] reglas habituales del full-service US')),
+    ('revpash', ('6 / 3 por plaza-hora, pensado en USD: cada usuario lo ajusta a su moneda y mercado', '[kit estimate]')),
     ('sqft', ('1 m² = 10.764 sq ft → 80 m² ≈ 860 sq ft', 'NIST SP 811, Appendix B')),
     ('tarjeta', ('80 % de ventas con tarjeta', '[kit estimate]')),
 ])
@@ -550,6 +693,18 @@ def autotest():
     for es, en in FORMULAS_EN.items():
         if RX_ES.search(en):
             err.append('español en FORMULAS_EN: ' + en[:60])
+    for k, (t, _e) in TEXTOS_NUEVOS.items():
+        if RX_ES.search(t) or re.search(r'\d,\d', t) or re.search(r'\b(?:SPEC|D\d{1,2}|kit estimate)\b', t):
+            err.append('TEXTOS_NUEVOS con español, coma decimal o ID interno: %r' % t[:60])
+    for k in list(FORMULAS_NUEVAS) + list(ESTILO_DE):
+        if k in _PARCHE_POR_CELDA:
+            err.append('celda con parche y fórmula nueva a la vez: %r' % (k,))
+    for k in FORMULAS_NUEVAS:
+        if k not in ESTILO_DE:
+            err.append('FORMULAS_NUEVAS sin ESTILO_DE: %r' % (k,))
+    for (c, h, x), (viejo, nuevo) in PARCHES_FORMULA.items():
+        if viejo == nuevo or RX_ES.search(nuevo.replace('Parámetros', '').replace('Financiación', '')):
+            err.append('PARCHES_FORMULA vacío o con español: %r' % ((c, h, x),))
     for k, v in DV_PARTIDAS.items():
         if len(v[6]) > 255 or len(v[7]) > 32 or not set(v[0].split()) | set(v[1].split()) == set(k[2].split()):
             err.append('DV_PARTIDAS mal partida o mensaje > 255: %r' % (k[:2],))

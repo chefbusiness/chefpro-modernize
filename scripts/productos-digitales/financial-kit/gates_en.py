@@ -382,18 +382,35 @@ def gateG1(R, carpeta, datos):
             f_en = {c.coordinate: c.value for c in ws_en._cells.values() if c.data_type == 'f'}
             if len(f_es) != hd['celdas_formula']:
                 R.fallo('%s: el ES ya no cuadra con el censo (%d ≠ %d fórmulas)' % (lugar, len(f_es), hd['celdas_formula']))
-            if set(f_en) != set(f_es):
+            # revisión final: FORMULAS_NUEVAS (celdas sin fórmula en el ES) y PARCHES_FORMULA (en espacio ES)
+            nuevas = OrderedDict((x, f) for (c, h, x), f in mapas.FORMULAS_NUEVAS.items() if c == corto and h == h_es)
+            for x in nuevas:
+                if x in f_es:
+                    R.fallo('%s!%s: FORMULAS_NUEVAS sobre una celda que ya es fórmula en el ES' % (lugar, x))
+            if set(f_en) != set(f_es) | set(nuevas):
                 R.fallo('%s: celdas con fórmula distintas: solo ES %s · solo EN %s'
-                        % (lugar, sorted(set(f_es) - set(f_en))[:5], sorted(set(f_en) - set(f_es))[:5]))
+                        % (lugar, sorted((set(f_es) | set(nuevas)) - set(f_en))[:5],
+                           sorted(set(f_en) - set(f_es) - set(nuevas))[:5]))
             con_hoja = 0
+            extra_hoja = 0
+            for x, f in nuevas.items():
+                fn = f_en.get(x)
+                tot['formulas_nuevas'] += 1
+                esp = T.celda(f)
+                if A.extraer_textos.refs_hoja(esp):
+                    extra_hoja += 1
+                if fn != esp:
+                    R.fallo('%s!%s: fórmula nueva EN %r ≠ declarada %r' % (lugar, x, (fn or '')[:80], esp[:80]))
             for k, fe in f_es.items():
                 fn = f_en.get(k)
                 if fn is None:
                     continue
                 tot['formulas'] += 1
                 try:
-                    esperado_f, es_pat = A.formula_en(fe, ws_es[k].row, T)
-                except A.Aborta as e:
+                    fe2 = mapas.parchear_formula_es(corto, h_es, k, fe)
+                    tot['formulas_parcheadas'] += fe2 != fe
+                    esperado_f, es_pat = A.formula_en(fe2, ws_es[k].row, T)
+                except (A.Aborta, ValueError) as e:
                     esperado_f, es_pat = '<<%s>>' % e, False
                 tot['formulas_patron_en'] += es_pat
                 if esperado_f != fn:
@@ -403,7 +420,12 @@ def gateG1(R, carpeta, datos):
                     for h in A.extraer_textos.refs_hoja(fn):
                         if h not in wen.sheetnames:
                             R.fallo('%s!%s cita la hoja inexistente %r' % (lugar, k, h))
+            for x in nuevas:
+                for h in A.extraer_textos.refs_hoja(f_en.get(x) or ''):
+                    if h not in wen.sheetnames:
+                        R.fallo('%s!%s cita la hoja inexistente %r' % (lugar, x, h))
             tot['formulas_con_hoja'] += con_hoja
+            tot['formulas_con_hoja_nuevas'] += extra_hoja
             if con_hoja != hd['formulas_con_hoja']:
                 R.fallo('%s: %d fórmulas con referencia a hoja ≠ censo %d' % (lugar, con_hoja, hd['formulas_con_hoja']))
             # DV: las del ES transformadas; las DV_PARTIDAS se parten en C (misma DV) + H (vida útil)
@@ -435,8 +457,9 @@ def gateG1(R, carpeta, datos):
             tot['dv'] += len(reales)
             tot['dv_celdas'] += sum(len(celdas(d.sqref)) for d in ws_en.data_validations.dataValidation)
             # CF
-            cfe = sorted((_cf_firma(cf, r, T.formula, lambda t: A.clave_en(t, 'CF')) for cf in ws_es.conditional_formatting
-                          for r in cf.rules), key=repr)
+            cfe = sorted(((mapas.CF_SQREF_EN.get((corto, h_es, str(cf.sqref)), str(cf.sqref)),)
+                          + _cf_firma(cf, r, T.formula, lambda t: A.clave_en(t, 'CF'))[1:]
+                          for cf in ws_es.conditional_formatting for r in cf.rules), key=repr)
             cfn = sorted((_cf_firma(cf, r, lambda x: x, lambda t: t) for cf in ws_en.conditional_formatting
                           for r in cf.rules), key=repr)
             tot['cf'] += len(cfn)
@@ -472,6 +495,19 @@ def gateG1(R, carpeta, datos):
             un = {c.coordinate for c in celdas_reales(ws_en) if c.protection.locked is False}
             ve = {c.coordinate for c in celdas_reales(ws_es) if es_verde(c)}
             vn = {c.coordinate for c in celdas_reales(ws_en) if es_verde(c)}
+            # FORMULAS_NUEVAS: la celda toma el estilo de ESTILO_DE (un input verde que pasa a fórmula deja de serlo)
+            for x in nuevas:
+                src = ws_es[mapas.ESTILO_DE[(corto, h_es, x)]]
+                tot['delta_desbloqueadas'] -= x in ue
+                tot['delta_verdes'] -= x in ve
+                ue.discard(x)
+                ve.discard(x)
+                if src.protection.locked is False:
+                    ue.add(x)
+                    tot['delta_desbloqueadas'] += 1
+                if es_verde(src):
+                    ve.add(x)
+                    tot['delta_verdes'] += 1
             if un != ue:
                 R.fallo('%s: desbloqueadas distintas (solo ES %s, solo EN %s)' % (lugar, sorted(ue - un)[:5],
                                                                                    sorted(un - ue)[:5]))
@@ -517,12 +553,14 @@ def gateG1(R, carpeta, datos):
                 for p in hd['patrones_formula'] if p['patron'] in mapas.FORMULAS_EN)
     esperados = OrderedDict([
         ('hojas', T0['hojas']), ('formulas', T0['celdas_formula']), ('formulas_patron_en', n_pat),
+        ('formulas_nuevas', len(mapas.FORMULAS_NUEVAS)),
+        ('formulas_parcheadas', len(mapas.celdas_parcheadas())),
         ('formulas_con_hoja', T0['formulas_con_hoja']), ('dv', T0['dv'] + len(mapas.DV_PARTIDAS)),
         ('dv_partidas', len(mapas.DV_PARTIDAS)), ('dv_celdas', T0['dv_celdas']), ('cf', T0['cf']),
         ('merges', T0['merges']), ('hojas_protegidas', T0['hojas_protegidas']),
         ('areas_impresion', T0['areas_impresion']), ('titulos_impresion', T0['titulos_impresion']),
         ('paneles', T0['paneles']), ('columnas_ocultas', T0['columnas_ocultas']),
-        ('verdes', T0['verdes']), ('desbloqueadas', T0['desbloqueadas']),
+        ('verdes', T0['verdes'] + tot['delta_verdes']), ('desbloqueadas', T0['desbloqueadas'] + tot['delta_desbloqueadas']),
         ('graficos', T0['graficos']), ('series_grafico', T0['series_grafico']),
     ])
     for k, v in esperados.items():
@@ -809,8 +847,11 @@ def gateG5(R, carpeta, datos):
             tok_es, tok_en = {}, {}
             for ws, tok in ((ws_es, tok_es), (ws_en, tok_en)):
                 for cf in ws.conditional_formatting:
+                    rg = str(cf.sqref)
+                    if ws is ws_es:                        # revisión final D32: el rango ES ampliado en la EN
+                        rg = mapas.CF_SQREF_EN.get((corto, h_es, rg), rg)
                     for r in cf.rules:
-                        s = tok.setdefault(str(cf.sqref), set())
+                        s = tok.setdefault(rg, set())
                         for f in r.formula or []:
                             s.update(x for x in lits(f) if x)
                         if r.text:
@@ -895,9 +936,16 @@ def referencia(pes, corto):
                     continue
                 ws[coord].value = v
         for ws in wb.worksheets:
-            for cel in ws._cells.values():
-                if cel.data_type == 'f' and mapas.patron(cel.value) in mapas.FORMULAS_EN:
-                    cel.value = mapas.FORMULAS_EN[mapas.patron(cel.value)].replace('{r}', str(cel.row))
+            for cel in list(ws._cells.values()):
+                if cel.data_type != 'f':
+                    continue
+                v = mapas.parchear_formula_es(corto, ws.title, cel.coordinate, cel.value)    # revisión final
+                if mapas.patron(v) in mapas.FORMULAS_EN:
+                    v = mapas.FORMULAS_EN[mapas.patron(v)].replace('{r}', str(cel.row))
+                cel.value = v
+        for (c, h, x), f in mapas.FORMULAS_NUEVAS.items():
+            if c == corto:
+                wb[h][x].value = f
     wb, fail, _irr = recalcular(pes, mutar)          # el 07 ES evalúa IRR con el parche de inyectar_cache
     return wb, fail
 
@@ -910,7 +958,10 @@ ESPERADOS = OrderedDict([
     (('03', 'Monthly Cash Flow', 'B5'), 15000), (('03', 'Monthly Cash Flow', 'M29'), 15000),
     (('03', 'Cash Alerts', 'C17'), 15000), (('03', 'Cash Alerts', 'E17'), 5000),
     (('06', 'Ratios', 'C6'), 31460), (('06', 'Ratios', 'C23'), 0.172994), (('06', 'Ratios', 'C18'), 0.28),
-    (('06', 'Ratios', 'C30'), 31460 / 860.0),                                     # D14: ventas / 860 sq ft
+    (('06', 'Ratios', 'C30'), 31460 * 12 / 860.0),                                # D14 + D30: ventas ANUALES / 860 sq ft
+    (('06', 'Ratios', 'C26'), 3000 / 31460.0),                                    # D32: ocupación = alquiler / ventas
+    (('06', 'Ratios', 'E26'), CLAVES['⚠️ Aceptable']),                             # 9.5 % entre 6 y 10 %
+    (('06', 'Ratios', 'F20'), 0.21), (('06', 'Ratios', 'E20'), CLAVES['✅ Sano']),   # D34: GOP 26.8 % > 21 %
     (('06', 'Ratios', 'E18'), CLAVES['✅ Excelente']),                             # D15: labor 28 % < 30 % objetivo US
     (('B08', 'Simulator', 'C14'), 31460), (('B08', 'Simulator', 'C20'), 0.172924), (('B08', 'Simulator', 'C21'), 65282.4),
     (('B08', 'Comparison', 'D4'), 377520), (('B08', 'Comparison', 'D7'), 65282.4),
@@ -994,6 +1045,69 @@ def caso_tir(R, carpeta, n):
         if not ok:
             R.fallo('TIR/DSCR caso trazado: %s · TIR %r (ES %r, bisección %r) · VAN %r · payback %r · DSCR %r · flujos %r'
                     % (nombre, t, t_es, bis, P['B25'].value, P['B26'].value, Rt['C5'].value, flujos))
+    # D25: el mismo préstamo con 1 año interest-only → el DSCR divide por la cuota COMPLETA (9 años), no por los
+    # 10,000 de intereses del año 1 (la fórmula anterior daba 3.00×). D29: tipo 0 % → capital / plazo restante.
+    def io(wb):
+        mutar_traza(wb, True)
+        wb['Loan Schedule']['C7'].value = 1
+    wv2, fail2, _ = recalcular(pen, io)
+    cuota9 = TRAZA_PRESTAMO * 0.10 / (1 - 1.10 ** -9)
+    R2, F2 = wv2['Ratios'], wv2['Loan Schedule']
+    R.dato('dscr_traza_io_1', R2['C5'].value)
+    R.dato('dscr_traza_io_1_formula_anterior', 30000 / F2['C12'].value if num(F2['C12'].value) else None)
+    def cero(wb):
+        mutar_traza(wb, True)
+        wb['Loan Schedule']['C5'].value = 0
+    wv3, fail3, _ = recalcular(pen, cero)
+    R3, F3 = wv3['Ratios'], wv3['Loan Schedule']
+    R.dato('dscr_traza_tipo_0', R3['C5'].value)
+    chequeos = [
+        ('IO 1 año: fallos pycel 0', fail2 == 0 and fail3 == 0),
+        ('IO 1 año: año 1 = solo intereses 10,000', num(F2['C12'].value) and abs(F2['C12'].value - 10000) < 0.01),
+        ('IO 1 año: cuota completa sobre 9 años', num(F2['C8'].value) and abs(F2['C8'].value - cuota9) < 0.01),
+        ('IO 1 año: DSCR = 30,000 / cuota completa', num(R2['C5'].value) and abs(R2['C5'].value - 30000 / cuota9) < 1e-6),
+        ('IO 1 año: DSCR ✅ (≥ 1.25)', R2['E5'].value == '✅'),
+        ('D31: deuda de Ratios = préstamo', num(R2['C16'].value) and abs(R2['C16'].value - TRAZA_PRESTAMO) < 1e-9),
+        ('tipo 0 %: cuota = 100,000 / 10', num(F3['C8'].value) and abs(F3['C8'].value - 10000) < 1e-6),
+        ('tipo 0 %: DSCR 3.00×', num(R3['C5'].value) and abs(R3['C5'].value - 3.0) < 1e-9),
+    ]
+    for nombre, ok in chequeos:
+        if not ok:
+            R.fallo('DSCR a cuota completa / tipo 0 %%: %s · C8 %r · C12 %r · DSCR %r · tipo 0: C8 %r DSCR %r'
+                    % (nombre, F2['C8'].value, F2['C12'].value, R2['C5'].value, F3['C8'].value, R3['C5'].value))
+
+
+# D28: ventas de ejemplo con impuesto incluido (8 %): dine-in, bar, delivery de marketplace, eventos y un cobro que
+# no es venta (capital del socio). Solo dine-in + bar + eventos pagan sales tax.
+TRAZA_VENTAS_03 = {'7': 10800, '8': 2160, '9': 3240, '10': 1080, '11': 5000}
+
+
+def caso_03(R, carpeta, n):
+    def mutar(wb):
+        ws = wb['Monthly Cash Flow']
+        for col in 'BCD':
+            for fila, v in TRAZA_VENTAS_03.items():
+                ws[col + fila].value = v
+            ws[col + '33'].value = 6000
+        wb['Assumptions']['C6'].value = 45             # fuera de la DV (0-30): la fórmula lo topa igual
+    wv, fail, _ = recalcular(fichero_en(carpeta, '03'), mutar)
+    ws = wv['Monthly Cash Flow']
+    base = TRAZA_VENTAS_03['7'] + TRAZA_VENTAS_03['8'] + TRAZA_VENTAS_03['10']
+    trimestre = 3 * (base - base / 1.08)
+    antes = 3 * (sum(TRAZA_VENTAS_03.values()) - sum(TRAZA_VENTAS_03.values()) / 1.08)
+    R.dato('03_pago_abril_sales_tax', ws['E25'].value)
+    R.dato('03_pago_abril_formula_anterior', round(antes, 2))
+    R.dato('03_proveedores_45_dias', (ws['B16'].value, ws['C16'].value))
+    n['casos_03'] += 1
+    dvs = [d for d in cargar(fichero_en(carpeta, '03'))['Assumptions'].data_validations.dataValidation
+           if str(d.sqref) == 'C6']
+    if fail or not (num(ws['E25'].value) and abs(ws['E25'].value - trimestre) < 0.01) \
+            or not (num(ws['B16'].value) and abs(ws['B16'].value) < 1e-9) \
+            or not (num(ws['C16'].value) and abs(ws['C16'].value - 6000) < 1e-9) \
+            or len(dvs) != 1 or (dvs[0].type, dvs[0].operator, dvs[0].formula1, dvs[0].formula2) != ('decimal', 'between', '0', '30'):
+        R.fallo('03: pago de abril %r ≠ %r (base filas 7+8+10) · proveedores a 45 días B16 %r (0) C16 %r (6,000) · '
+                'DV C6 %r · fallos pycel %s' % (ws['E25'].value, round(trimestre, 2), ws['B16'].value, ws['C16'].value,
+                                                [(d.type, d.formula1, d.formula2) for d in dvs], fail))
 
 
 def caso_d10(R, carpeta, n):
@@ -1071,6 +1185,7 @@ def gateG6(R, carpeta, datos, casos=True):
     if casos:
         caso_tir(R, carpeta, n)
         caso_d10(R, carpeta, n)
+        caso_03(R, carpeta, n)
     for k, v in sorted(n.items()):
         R.dato(k, v)
 
@@ -1105,7 +1220,9 @@ def gateG7(R, carpeta, datos):
         ('tarjeta 80 %', V[('03', 'Parámetros', 'C4')] == 0.80 and RU['tarjeta'].startswith('80 %')),
         ('vidas útiles 10/7/7/5', [vidas[h] for h in ('Obra', 'Equipamiento Cocina', 'Mobiliario Sala', 'Tecnología')]
          == [10, 7, 7, 5] and 'vidas 10/7/7/5' in RU['amortizacion_libro']),
-        ('licencias: vida vacía (gasto)', V[('04', 'Licencias', 'H5:H12')] is None),
+        ('licencias: tasas vacías (gasto); licencia de obras y proyecto = vida de la obra (D33)',
+         V[('04', 'Licencias', 'H5')] is None and V[('04', 'Licencias', 'H8:H12')] is None
+         and V[('04', 'Licencias', 'H6:H7')] == vidas['Obra'] == 10),
         ('impuesto recuperable US 0 en el 04', all(v == 0 for (c, h, r), v in V.items() if c == '04' and r.startswith('C'))),
         ('860 sq ft', V[('06', 'Ratios', 'C11')] == 860 and '860 sq ft' in RU['sqft']),
         ('labor 30/35 %', (V[('06', 'Benchmarks', 'F5')], V[('06', 'Benchmarks', 'G5')]) == (0.30, 0.35)
@@ -1114,9 +1231,13 @@ def gateG7(R, carpeta, datos):
          and 'ocupación 6-10 %' in RU['benchmarks']),
         ('SBA 7(a) 10 % (ejemplo)', V[('07', 'Financiación', 'C5')] == 0.10 and '10 % = ejemplo' in RU['sba_tipo']),
         ('SBA 7(a) 10 años', V[('07', 'Financiación', 'C6')] == 10 and 'hasta 10 años' in RU['sba_plazo']),
-        ('aportación propia SBA 10 %', V[('07', 'Ratios', 'G9')] == 0.10 and '10 %' in RU['aportacion_sba']),
+        ('aportación propia 10 % (habitual, orientativa)', V[('07', 'Ratios', 'G9')] == 0.10
+         and '10 %' in RU['aportacion_sba'] and 'orientativo' in RU['aportacion_sba']),
         ('DSCR objetivo 1.25×', w7['Ratios']['F5'].value == 1.25 and '1.25' in RU['dscr_banco']),
-        ('DSCR mínimo SBA 1.15×', w7['Ratios']['G5'].value == 1.15 and '1.15' in RU['dscr_sba']),
+        ('DSCR límite 1.15× sin etiqueta SBA', w7['Ratios']['G5'].value == 1.15 and '1.15' in RU['dscr_limite']),
+        ('GOP 21/16 % = EBITDA 15/10 + ocupación 6', (V[('06', 'Benchmarks', 'F7')], V[('06', 'Benchmarks', 'G7')])
+         == (0.21, 0.16) and abs(0.21 - 0.15 - V[('06', 'Benchmarks', 'F8')]) < 1e-9
+         and abs(0.16 - 0.10 - V[('06', 'Benchmarks', 'F8')]) < 1e-9),
         ('impuesto efectivo 25 %', w7['Projections']['C29'].value == 0.25 and '21 %' in RU['impuesto_sociedades']),
         ('interest-only vacío / 0', w7['Loan Schedule']['C7'].value in (None, 0)),
     ]
@@ -1124,9 +1245,38 @@ def gateG7(R, carpeta, datos):
         n['reglas'] += 1
         if not ok:
             R.fallo('regla %s: xlsx/mapas ≠ SPEC §3' % nombre)
+    # revisión final: ningún texto atribuye a la SBA el 1.15× ni un «mínimo»; aviso legal en las 10 Instrucciones
+    rx_sba = re.compile(r'SBA[^.]{0,40}\b(?:minimum|floor)\b|\b(?:minimum|floor)\b[^.]{0,40}SBA|1\.15', re.I)
+    for es, en, corto, pes, pen in libros(carpeta):
+        wb = cargar(pen)
+        for ws in wb.worksheets:
+            for c in ws._cells.values():
+                if isinstance(c.value, str) and c.data_type != 'f' and rx_sba.search(c.value):
+                    R.fallo('%s %s!%s: afirmación SBA/1.15 %r' % (en, ws.title, c.coordinate, c.value[:80]))
+    for (corto, h_es, coord), (texto, _e) in mapas.TEXTOS_NUEVOS.items():
+        v = cargar(fichero_en(carpeta, corto))[mapas.HOJAS[h_es]][coord].value
+        n['textos_nuevos'] += 1
+        if v != texto:
+            R.fallo('%s %s!%s: texto nuevo %r ≠ %r' % (corto, mapas.HOJAS[h_es], coord, v, texto[:60]))
+    for (corto, h_es, coord), texto in list(mapas.POR_CELDA.items()) + list(mapas.UMBRALES_TEXTO_EN.items()):
+        v = cargar(fichero_en(carpeta, corto))[mapas.HOJAS[h_es]][coord].value
+        n['por_celda'] += 1
+        if v != texto:
+            R.fallo('%s %s!%s: %r ≠ POR_CELDA / UMBRALES_TEXTO_EN %r' % (corto, mapas.HOJAS[h_es], coord, v, texto))
+    n_aviso = sum(1 for (c, h, x), (t, e) in mapas.TEXTOS_NUEVOS.items() if t == mapas.AVISO_EN)
+    if n_aviso != len(mapas.FICHEROS):
+        R.fallo('aviso legal en %d Instrucciones ≠ %d' % (n_aviso, len(mapas.FICHEROS)))
+    # D27: plazo de proveedores 0-30 (DV partida) y MIN(…,30) en las 12 celdas de la fila 16
+    w3 = cargar(fichero_en(carpeta, '03'))
+    for col in 'BCDEFGHIJKLM':
+        n['d27_formulas'] += 1
+        if 'MIN(Assumptions!$C$6,30)' not in (w3['Monthly Cash Flow'][col + '16'].value or ''):
+            R.fallo('03 Monthly Cash Flow!%s16 sin el tope de 30 días: %r' % (col, w3['Monthly Cash Flow'][col + '16'].value))
     # D10: el patrón de dotación en las 48 celdas y la DV de vida útil 0-50
     w4 = cargar(fichero_en(carpeta, '04'))
     for (c, h, sq), partida in mapas.DV_PARTIDAS.items():
+        if c != '04':
+            continue
         ws = w4[mapas.HOJAS[h]]
         for coord in A.rango_lista(partida[1]):
             fi = ws['I' + coord[1:]].value
@@ -1283,6 +1433,17 @@ MUTACIONES = [
     ('G6', '07-restaurant-loan-proposal-lender-summary.xlsx', _tir_cache, 'TIR'),
     ('G7', '03-restaurant-cash-flow-forecast.xlsx', lambda wb: _set(wb['Assumptions'], 'C7', 0.1), 'VALORES_EN'),
     ('G7', '04-restaurant-startup-costs-budget.xlsx', lambda wb: _set(wb['Technology'], 'H6', 3), 'VALORES_EN'),
+    # revisión final
+    ('G1', '07-restaurant-loan-proposal-lender-summary.xlsx',
+     lambda wb: _set(wb['Ratios'], 'C5', '=IFERROR(Projections!$B$17/\'Loan Schedule\'!$C$12,"Enter the loan")'), 'fórmula EN'),
+    ('G1', '06-restaurant-kpi-ratios-dashboard.xlsx', lambda wb: _set(wb['Ratios'], 'F26', None), 'fórmula'),
+    ('G7', '05-restaurant-pl-template-budget-vs-actual.xlsx',
+     lambda wb: _set(wb['Instructions'], 'B17', None), 'texto nuevo'),
+    ('G7', '07-restaurant-loan-proposal-lender-summary.xlsx',
+     lambda wb: _set(wb['Ratios'], 'H5', 'SBA minimum 1.15x'), 'SBA'),
+    ('G7', '03-restaurant-cash-flow-forecast.xlsx',
+     lambda wb: _set(wb['Monthly Cash Flow'], 'D16', '=IFERROR(D33*(1-Assumptions!$C$6/30)+C33*Assumptions!$C$6/30,0)'),
+     'tope de 30 días'),
 ]
 if mapas.AJUSTE_TEXTO:
     _c, _h, _rg = mapas.AJUSTE_TEXTO[0]

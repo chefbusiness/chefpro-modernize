@@ -113,5 +113,50 @@ protegidas sin contraseña, US Letter y pie «AI Chef Pro · aichef.pro · Page 
 31,460/mes, EBITDA 17.3 %, break-even 23,076.92/mes (41 covers/día), break-even de caja 24,307.69 (43). El 07 llega
 sin datos (TIR/NPV/payback/DSCR se calculan al rellenarlo; caso de prueba: TIR 11.96 %, DSCR 1.84×). Sales tax 8 %
 de ejemplo y trimestral en el 03; vidas útiles 10/7/7/5; benchmarks US labor 30/35 % y ocupación 6/10 %; préstamo
-SBA 7(a) 10 % / 10 años; DSCR 1.25× / 1.15×; aportación propia mínima 10 %. Recordatorios: SPEC §9 y
+SBA 7(a) 10 % / 10 años; DSCR a cuota completa contra 1.25× (objetivo habitual; 1.15× = «Limit» del kit, nunca «mínimo SBA»); aportación propia habitual ≈ 10 % (orientativa). *Corregido en la revisión final (§6).* Recordatorios: SPEC §9 y
 `TIENDA-INTERNACIONAL.md` §6 (test de Google Sheets antes de afirmarlo en la FAQ: IRR, gráficos, protección).
+
+## 6. Revisión final (3-oct, sesión Claude Code) — 20 arreglos, SPEC D25-D37
+
+Construido y verificado en el **VPS** (worktree temporal `/root/wt-fin`, venv `/root/venv-guias`), `scp` de vuelta con
+sha256 idénticos, VPS limpio. Cambios de fórmula **declarados** (nada fuera de lo declarado: G1 sigue exigiendo el resto
+idéntico al ES):
+
+| Capa nueva (`mapas.py`) | Qué | D |
+|---|---|---|
+| `PARCHES_FORMULA` (27 celdas, espacio ES) | 07 `Ratios!C5` ÷ `'Loan Schedule'!$C$8` · 07 `Loan Schedule!C8` tipo 0 % · 03 `B16:M16` `MIN(C6,30)` · 03 `B36:M36` base filas 7+8+10 · 06 `C30` × 12 | D25 D27-D30 |
+| `FORMULAS_NUEVAS` + `ESTILO_DE` (6) | 07 `Ratios!C15:C16` enlazadas (dejan de ser input verde: verdes y desbloqueadas −2) · 06 fila 26 ocupación con semáforo | D31 D32 |
+| `CF_SQREF_EN` | 06 `Ratios` CF E17:E25 → E17:E26 | D32 |
+| `DV_PARTIDAS` +1 | 03 `Assumptions!C6` 0-30 días (6 DV partidas) | D27 |
+| `TEXTOS_NUEVOS` (16) | aviso legal en las 10 Instrucciones (+ B09 «starting point»), 06 B26 / Benchmarks B18:B19, 04 Licencias J6:J7 | D32-D36 |
+| `UMBRALES_TEXTO_EN`, `VALORES_EN`, `POR_CELDA`, `FIJOS` | GOP 21/16, licencias H6:H7 = 10, RevPASH «your market», rótulos «Kit benchmark», «Typical lender guideline», sales tax D7, A36, ventas anuales por sq ft | D33-D35 |
+| `textos_en` (13 ids únicos, sin compartidos) | c0115, c0324 (G1); c0565, c0581, c0486, c0487, c0559, c0421, c0446, c0465, c0472, c0402, c0403 (G2) | D25 D35 |
+| `AJUSTE_TEXTO` +15 | 01/01b `Year n!A27`, 04 `Kitchen Equipment!A15`, B09 `Checklist!B53:B58` y C5:C58, 06 D16/B30/Benchmarks B17:B19, 07 `Ratios!D3`, avisos | D37 |
+
+Gates: `gate_f1` VERDE · `mapas.py` 0 errores · **G1-G8 VERDE** (fórmulas 2.437 + 6 nuevas + 27 parcheadas, DV 66, CF 59,
+verdes 2.080, desbloqueadas 2.185) · **autotest 27/27 CAZADO** (5 defectos nuevos: DSCR viejo, fórmula nueva borrada, aviso
+borrado, «SBA minimum 1.15x», tope de 30 días quitado) · idempotencia 0 · `inject_cache` 0 fallos en los 10 + `cachear_irr`
+(«—», sin datos) · `censo-entregables --fail` 0 · `gate-no-latinos` 0.
+
+Cifras recalculadas (G6, casos trazados): préstamo 100,000 al 10 % / 10 años **sin** interest-only → cuota 16,274.54,
+DSCR 30,000 / 16,274.54 = **1.84×** (igual que antes). **Con 1 año interest-only** → año 1 = 10,000 de intereses, cuota
+completa 17,364.05 (9 años): DSCR **1.73×** (la fórmula anterior daba 30,000 / 10,000 = **3.00×**). Tipo 0 % → cuota
+10,000, DSCR 3.00× (antes: cuota 0 y DSCR «Enter the loan»). 03 con ventas de ejemplo con impuesto (sala 10,800, barra 2,160, delivery 3,240,
+eventos 1,080, otros cobros 5,000 al mes) → pago de abril **3,120** (antes **4,951.11**); proveedores a 45 días →
+B16 = 0 y C16 = 6,000 (antes B16 = −3,000). Break-even sin cambios: 23,076.92/mes (41 covers/día) y de caja 24,307.69
+(43). 06: ventas por sq ft 438.98 al año; ocupación 9.5 % «⚠️ Acceptable»; GOP 26.8 % «✅ Healthy» contra 21 %.
+
+Fuera de los xlsx: landing (FAQ del lender sin «SBA minimum», imágenes `fin-en-hero` / `fin-en-lender-meeting`, OG
+`og-financial-plan-kit.jpg`, «base», «kept outside EBITDA», «the big items»), changelog, tarjeta del hub EN y correo
+`emails/broadcast-restaurant-financial-plan-templates-lanzamiento-en.html` (cola EN; programar cuando esté LIVE).
+
+### Defectos a corregir en el ES (`kit-plan-financiero` v2.x)
+
+1. **03 Tesorería, plazo de proveedores**: `Flujo Mensual!B16:M16` reparte las compras entre este mes y el siguiente con
+   `Parámetros!C6/30`; con más de 30 días el pago del mes sale negativo (45 días → −50 % de las compras). Arreglo: DV 0-30
+   en `Parámetros!C6` y `MIN(C6;30)` en la fila 16 (como D27).
+2. **07 DSCR con carencia**: `Ratios!C5` divide por la cuota del año 1 (`Financiación!C12`), que con carencia es solo
+   intereses → DSCR inflado. Arreglo: dividir por la anualidad `Financiación!C8` (D25).
+3. **07 tipo 0 %**: `Financiación!C8` da 0 con un préstamo al 0 % (IFERROR de una división por cero) (D29).
+4. **06 benchmarks de ocupación y marketing** sin evaluar en `Ratios`, y GOP 20/15 incoherente con EBITDA 15/10 +
+   alquiler (D32, D34).

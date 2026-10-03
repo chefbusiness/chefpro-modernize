@@ -32,10 +32,10 @@
 | D7 | Claves | Un solo diccionario `mapas.CLAVES` (36): literales de fórmula y de CF e ítems de la DV del BONUS-09, en **un solo paso**. Tokens de CF 1:1; **ningún mensaje EN cambia de color** (SEARCH casa subcadenas); lo prueba `mapas.cruzar_censo` | DECIDIDA |
 | D8 | Sales tax / VAT | Ingresos **excl. sales tax** en 01, 01b, 02, 05, 06, 07, B08 (glosario); el 03 es caja **incl.** el impuesto cobrado. 03 `Assumptions`: C7 impuesto sobre ventas **8 %** [ejemplo; cada usuario pone su state + local; UK 20 %], C8 y C9 «recoverable tax» **0** (el sales tax no tiene crédito por compras; UK 20 % / alimentos 0 %). Fila 25: misma fórmula, **declarante trimestral** (abril, julio, octubre; enero = input del Q4 anterior); declarante mensual → desproteger y teclear; UK: 1 mes + 7 días. Textos en `FIJOS` | DECIDIDA |
 | D9 | Nóminas en el 03 | Fila 18 «Employer payroll taxes deposited (last month's)» ← fila 34 «accrued this month» (depositante mensual, IRS Pub. 15: el 15 del mes siguiente); fila 24 «Employee taxes withheld, deposited (income tax + FICA)»; fila 17 «Payroll (net pay)». Mismas fórmulas; UK PAYE el 22 | DECIDIDA |
-| D10 | CAPEX (04) | C = **Recoverable tax %**: US **0** (el sales tax va dentro del coste: forma parte de la base del activo), UK 20 %. H = **Useful life (years)**, lineal, libro: obra 10 (el menor de plazo del alquiler y vida útil), cocina 7, mobiliario 7, tecnología 5 [kit estimate], licencias vacío (gasto). **Único patrón que cambia**: `=$B{r}*$H{r}` → `=IFERROR($B{r}/$H{r},0)` (48 celdas). La DV 0-1 que cubría C y H se parte en 2 (**5 DV partidas**: H decimal 0-50, título «Invalid useful life»). MACRS/Section 179 y capital allowances UK solo en nota | DECIDIDA |
+| D10 | CAPEX (04) | C = **Recoverable tax %**: US **0** (el sales tax va dentro del coste: forma parte de la base del activo), UK 20 %. H = **Useful life (years)**, lineal, libro: obra 10 (el menor de plazo del alquiler y vida útil), cocina 7, mobiliario 7, tecnología 5 [kit estimate], licencias y tasas vacío (gasto; licencia de obras y proyecto técnico = 10, D33). **Único patrón que cambia**: `=$B{r}*$H{r}` → `=IFERROR($B{r}/$H{r},0)` (48 celdas). La DV 0-1 que cubría C y H se parte en 2 (**5 DV partidas**: H decimal 0-50, título «Invalid useful life»). MACRS/Section 179 y capital allowances UK solo en nota | DECIDIDA |
 | D11 | Coste de personal | 02 `Inputs!B7` «gross wages + employer payroll taxes», nota «≈ gross wages × 1.10 (more with benefits)» [kit estimate: FICA 7,65 % + FUTA/SUTA + workers' comp]. «Gestoría» → «accounting / bookkeeping» | DECIDIDA |
-| D12 | Informe para el banco (07) | → **Lender & Investor Summary** («Referencia Bancaria» → «Lender benchmark»). Impuesto: «Effective income tax rate» C29 = **25 %** (21 % federal C corp + estatal; pass-through = 0; UK 19-25 %), fórmulas iguales. Préstamo de ejemplo tipo **SBA 7(a)**: C5 **10 %** nominal («not APR»), C6 **10 años**, carencia → **interest-only period** (vacío). TIR/VAN/payback/DSCR sin cambios; la caché de la TIR se recalcula (Newton, `cachear_irr` del ES) | DECIDIDA |
-| D13 | Ratios y garantías (07) | DSCR: objetivo **1.25×** (práctica de banca) y límite **1.15×** (mínimo SBA), valores ya del ES. Fondos propios / inversión: límite G9 0.20 → **0.10** (aportación mínima SBA de start-ups); el resto, kit benchmark sin cambio. `Collateral`: personal guarantee (SBA: socios ≥ 20 %), mortgage, pledged deposits, blanket lien (UCC-1), assignment of life insurance, additional deposit (`FIJOS`) | DECIDIDA |
+| D12 | Informe para el banco (07) | → **Lender & Investor Summary** («Referencia Bancaria» → «Typical lender guideline (indicative)», D35). Impuesto: «Effective income tax rate» C29 = **25 %** (21 % federal C corp + estatal; pass-through = 0; UK 19-25 %), fórmulas iguales. Préstamo de ejemplo tipo **SBA 7(a)**: C5 **10 %** nominal («not APR»), C6 **10 años**, carencia → **interest-only period** (vacío). TIR/VAN/payback sin cambios (DSCR: D25); la caché de la TIR se recalcula (Newton, `cachear_irr` del ES) | DECIDIDA |
+| D13 | Ratios y garantías (07) | DSCR: objetivo **1.25×** (objetivo habitual del prestamista, orientativo) y límite **1.15×** («Limit» editable del kit, **sin etiqueta SBA**: el suelo SBA depende de la operación y del SOP vigente), valores ya del ES. Fondos propios / inversión: límite G9 0.20 → **0.10** (aportación propia habitual en start-ups, orientativa; la deciden el prestamista y el SOP vigente); el resto, kit benchmark sin cambio. *Enmendada en la revisión final.* `Collateral`: personal guarantee (SBA: socios ≥ 20 %), mortgage, pledged deposits, blanket lien (UCC-1), assignment of life insurance, additional deposit (`FIJOS`) | DECIDIDA |
 | D14 | Unidades | m² → **sq ft**: 06 `Ratios!C11` 80 → **860**; «Sales per sq ft»; 07 «Total area (sq ft)»; aviso «Enter the dining room sq ft» | DECIDIDA |
 | D15 | Benchmarks (06) | Reglas US full-service [kit estimate]: **labor 30 % / 35 %** (ES 25/30) y **ocupación 6 % / 10 %** (ES 8/12) en F:G y en sus textos (`POR_CELDA`); food 28/32, prime 60/65, GOP, EBITDA 15/10, bebida 18/24, margen bruto, coste/ticket sin cambio; RevPASH «per seat-hour» sin moneda (6/3). `Benchmarks!B17` reescrita (I3) | DECIDIDA |
 | D16 | Checklist (B09) | 54 tareas en 7 fases; **35 tareas** con trámite español pasan a su equivalente US por `FIJOS` (entidad LLC/S/C corp, articles, DBA, EIN, seller's permit, USPTO, SBA 7(a), business license y certificate of occupancy, health permit, fire inspection, liquor license, workers' comp, liquor liability, employer registration, posters, I-9/W-4, new-hire reporting, Form 941); el resto se traduce. Contador y CF sin cambio | DECIDIDA |
@@ -46,6 +46,19 @@
 | D21 | Datos de ejemplo | §5: mismos números (moneda neutra), salvo D8, D10 y D12-D15 | DECIDIDA |
 | D22 | Landing | §6 (todas las secciones del ES) | DECIDIDA |
 | D23 | Defectos heredados | EN nace corregido de I1-I3 (`F1-inventario-es.md` §3). En el ES se proponen para su próxima v2.x | PROPUESTA (ES) |
+| D25 | DSCR a cuota completa (07) · rev. final | `Ratios!C5` = flujo libre año 1 / **cuota anual completa** (`'Loan Schedule'!$C$8`), rótulo «DSCR at full payment»; con interest-only el año 1 solo paga intereses y el DSCR salía inflado. `Ratios!B21`, `Instructions!B15:B16`, `Loan Schedule!B18` coherentes (la cuota se COPIA a mano al 03) | DECIDIDA |
+| D26 | SBA en textos · rev. final | Ningún texto (xlsx, landing, changelog) dice «1.15× SBA minimum» ni «10 % SBA minimum»: «1.25× is the usual lender target; the SBA floor depends on the transaction and the current SOP» y «SBA lenders usually expect an owner equity injection (often around 10 % for start-ups)…». G7 lo vigila | DECIDIDA |
+| D27 | Plazo de proveedores (03) · rev. final | DV de `Assumptions!C6` 0-30 días (la DV «≥ 0» de C5 C6 C26 se parte: **6 DV partidas** en total) y `MIN(C6,30)` en `Monthly Cash Flow!B16:M16`: el flujo paga cada compra este mes o el siguiente; con > 30 días salían pagos negativos. **El ES tiene el mismo defecto** | DECIDIDA |
+| D28 | Base del sales tax (03) · rev. final | `B36:M36` = impuesto sobre filas 7 + 8 + 10 (sala, barra, eventos): fuera el delivery de marketplaces (el marketplace cobra e ingresa el impuesto en la mayoría de estados) y «Other receipts» (capital, préstamos, devoluciones). Nota en `Assumptions!D7`, rótulo A36 | DECIDIDA |
+| D29 | Tipo 0 % (07) · rev. final | `Loan Schedule!C8` = `IF(C5=0, C4/(C6-C7), anualidad)` | DECIDIDA |
+| D30 | Ventas por sq ft (06) · rev. final | `Ratios!C30` anual (× 12, convención US), rótulo «Annual sales per sq ft»; sin umbrales | DECIDIDA |
+| D31 | Balance del 07 · rev. final | `Ratios!C15` = `'Executive Summary'!C14`, `C16` = `'Loan Schedule'!C4` (fórmulas con el estilo de C17; dejan de ser input verde) | DECIDIDA |
+| D32 | Ocupación evaluada (06) · rev. final | Fila nueva `Ratios!26` «Occupancy (rent) / Sales» = C38 / C6 con semáforo contra `Benchmarks!F8:G8` (CF E17:E26). Marketing / Sales queda «reference only» (no hay dato de marketing) | DECIDIDA |
+| D33 | Licencias capitalizadas (04) · rev. final | `Licenses & Permits!H6:H7` (licencia de obras, proyecto técnico) = 10 años (vida de la obra, US GAAP); el resto de licencias y tasas, vacío (gasto). Nota en J6:J7 | DECIDIDA |
+| D34 | GOP (06) · rev. final | Umbrales **21 % / 16 %** = EBITDA 15 / 10 + 6 puntos de ocupación (antes 20/15, incoherentes); textos C7:E7, Instrucciones y nota B19 | DECIDIDA |
+| D35 | Benchmarks como estimación · rev. final | «Kit benchmark (editable estimate)», «Kit Benchmarks (editable estimates)», gráfico «Your value vs kit target», 07 «Typical lender guideline (indicative)»; RevPASH 6 / 3 «set for your market» (B13 y nota B18) | DECIDIDA |
+| D36 | Aviso legal · rev. final | En las 10 Instrucciones, bajo la versión: «Planning tool, not financial, tax or legal advice. Requirements vary by state and city — check with your accountant and local authorities.»; B09 además «This checklist is a starting point, not an exhaustive list.» | DECIDIDA |
+| D37 | Rótulos cortados · rev. final | Ajuste + alto de fila: 01/01b `Year n!A27`, 04 `Kitchen Equipment!A15`, B09 `Checklist!B53:B58` y C5:C58, 06 D16/B30 y `Benchmarks!B17:B19`, 07 `Ratios!D3` | DECIDIDA |
 | D24 | Máquina | F2 en el **VPS** (`ssh vps`, `/root/chefpro-modernize`, venv `/root/venv-guias`, `git worktree` de la rama; su `/dev/null` está roto → redirigir a ficheros de `/tmp`); `scp` de vuelta y commit desde el Mac. Si el VPS no responde: Mac en serie con `istats` < 62 °C | DECIDIDA |
 
 ## 2. Mapas
@@ -98,10 +111,10 @@ Los meses en celdas (cabeceras de 01, 01b, 03 y 05) usan el mismo mapa (`mapas.M
 | Impuesto sobre beneficios | IS 25 % (15 % nueva creación, art. 29.1 LIS) | 25 % efectivo = 21 % federal + estatal; pass-through 0; UK 19-25 % | IRC §11(b); IRS «Business structures»; gov.uk/corporation-tax-rates |
 | Amortización | coeficientes 3/12/10/25 % | lineal, vida útil 10/7/7/5 años [kit estimate]; leasehold improvements: menor de alquiler y vida | ASC 842-20-35-12; nota fiscal: IRS Pub. 946, IRC §168(e)(6); UK AIA gov.uk |
 | Préstamo | TIN 6 %, 8 años, carencia | 10 % nominal, 10 años, interest-only [ejemplo] | SBA 7(a): 13 CFR 120.212-120.214 |
-| DSCR | > 1,25× | objetivo 1.25× [práctica de banca]; mínimo 1.15× | SBA SOP 50 10 8 (1-jun-2025) |
-| Aportación propia | > 30 % / límite 20 % | > 30 % [kit]; límite 10 % | SBA SOP 50 10 8 (start-ups) |
+| DSCR | > 1,25× | objetivo 1.25× (habitual del prestamista); límite 1.15× del kit, sin etiqueta SBA (D26) | [kit estimate] práctica de banca; SBA SOP 50 10 vigente |
+| Aportación propia | > 30 % / límite 20 % | > 30 % [kit]; límite 10 % (habitual en start-ups, orientativo) | SBA SOP 50 10 vigente [orientativo] |
 | Aval | aval del promotor, SGR | personal guarantee de socios ≥ 20 % | 13 CFR 120.160(a) |
-| Benchmarks | labor 25/30, alquiler 8/12 | labor 30/35, ocupación 6/10; resto igual | [kit estimate] reglas full-service US |
+| Benchmarks | labor 25/30, alquiler 8/12, GOP 20/15 | labor 30/35, ocupación 6/10, GOP 21/16 (D34); RevPASH 6/3 en USD; resto igual | [kit estimate] reglas full-service US |
 | Superficie | 80 m² | 860 sq ft (1 m² = 10,764 sq ft) | NIST SP 811, Appendix B |
 | Cobro con tarjeta | 65 % | 80 % | [kit estimate] |
 
@@ -168,7 +181,7 @@ Presupuesto: F1 ≈ 0,3 M · F2 ≤ 2,5 M · F3 ≤ 1,5 M. Si el total pasa de 6
 ## 8. Gates de F2 (contra `censo_es.json`, nunca cifras fijas)
 
 - **G1 Paridad**: 56 hojas vía §2.2; 2.437 fórmulas idénticas tras HOJAS + CLAVES salvo el patrón D10 (celda a
-  celda); 60 DV + 5 DV partidas (mismo tipo salvo H; unión de sqref = la del ES); 59 CF (sqref, tipo, prioridad,
+  celda); 60 DV + 6 DV partidas (5 de vida útil + 1 de plazo de proveedores, D27; mismo tipo salvo la parte nueva; unión de sqref = la del ES); 59 CF (sqref, tipo, prioridad,
   relleno); 9 gráficos y 20 series (tipo, ancla, rangos con pestaña EN); 83 merges; 41 títulos de impresión;
   42 paneles; 56 hojas protegidas sin contraseña con los mismos flags; 2.082 celdas verdes y 2.187 desbloqueadas.
 - **G2 Restos**: cero español, `€`, «m²», caracteres no latinos, coma decimal, normativa ES (`RX_NORMA`) e IDs
@@ -180,8 +193,13 @@ Presupuesto: F1 ≈ 0,3 M · F2 ≤ 2,5 M · F3 ≤ 1,5 M. Si el total pasa de 6
 - **G5 CF**: tokens EN inyectivos por rango y cada mensaje EN con el mismo color que su ES (`mapas.cruzar_censo`).
 - **G6 Cálculo**: caché sin errores; caché EN = caché ES salvo lo que mueven D8, D10, D12-D15 (lo recalcula pycel);
   TIR cacheada (caso del ES: −150,000 / 30,000 / 45,000 / 60,000 / 70,000 → 11.9592 %); un caso D10 (coste 7,000,
-  vida 7 → 1,000; vida vacía → 0); 06 C30 = ventas / 860.
-- **G7 Reglas**: cada cifra de `VALORES_EN` coincide con §3 (`mapas.REGLAS_US`).
+  vida 7 → 1,000; vida vacía → 0); 06 C30 = ventas × 12 / 860. Revisión final: préstamo 100,000 al 10 % / 10 años
+  con 1 año interest-only → cuota 17,364.05 y DSCR 30,000 / 17,364.05 = 1.73× (antes 3.00×); tipo 0 % → cuota 10,000;
+  03 con ventas de ejemplo → pago de abril 3,120 (base 7 + 8 + 10; antes 4,951.11) y plazo 45 días → B16 = 0.
+- **G7 Reglas**: cada cifra de `VALORES_EN` coincide con §3 (`mapas.REGLAS_US`); `TEXTOS_NUEVOS`, `POR_CELDA` y
+  `UMBRALES_TEXTO_EN` escritos; ningún texto con «SBA minimum» ni «1.15»; tope de 30 días en las 12 celdas (D27).
+- **Fórmulas declaradas** (rev. final): `mapas.PARCHES_FORMULA` (D25, D27-D30, en espacio ES), `FORMULAS_NUEVAS` (D31-D32),
+  `CF_SQREF_EN` (D32); G1 las exige tal cual y el resto idéntico al ES; G6 las aplica a la referencia.
 - **G8** `censo-entregables.py --only restaurant-financial-plan-templates --fail` y `gate-no-latinos.py` en 0.
 
 ## 9. F3 y lo que decide John

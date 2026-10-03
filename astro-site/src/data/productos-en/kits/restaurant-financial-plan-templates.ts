@@ -13,8 +13,10 @@
 //     total $237 · ahorro $150 (199 − 49, como el ES) · descuento 1 − 49/199 = 75,4 % → «-75%» en hero
 //     Y buyBox (el «72 %» del buyBoxNote del ES era un quirk y no se copia).
 //   · Cifras SOLO de SPEC §3 y §5: sales tax 8 % de ejemplo y trimestral (D8), vidas útiles 10/7/7/5
-//     (D10), préstamo de ejemplo tipo SBA 7(a) a 10 años con interest-only opcional (D12), DSCR 1.25×
-//     objetivo y 1.15× mínimo SBA, aportación propia 10 % (D13), sq ft (D14), benchmarks US full-service
+//     (D10), préstamo de ejemplo tipo SBA 7(a) a 10 años con interest-only opcional (D12), DSCR a cuota
+//     completa contra 1.25× (objetivo habitual del prestamista; el suelo SBA «depende de la operación y del
+//     SOP vigente»; el 1.15 nunca se presenta como mínimo SBA) y aportación propia «often around 10 % for start-ups» como
+//     expectativa habitual, no mínimo (D13, D25, D26 de la revisión final), sq ft (D14), benchmarks US full-service
 //     como estimación editable del kit (D15), restaurante de ejemplo con EBITDA ≈ 17.3 % (§5). Sin
 //     «bank-approved», «SBA-approved», financiación garantizada ni asesoría fiscal o financiera: la
 //     línea «A planning tool, not financial or tax advice» va en el why y en la FAQ del lender.
@@ -29,8 +31,10 @@
 //   · FAQ: People Also Ask de «restaurant p&l template» (SPEC §6) + las 6 del ES adaptadas + UK +
 //     moneda y suscripción (como los hermanos EN). La licencia es la de la tienda EN (un negocio con
 //     todos sus locales; consultores sin entregar copias). schema.faqs = el MISMO array (COM-21 del ES).
-//   · Imágenes: el set del ES sin cambios (ninguna lleva texto en español, «€», bancos ni lugares
-//     españoles, ni capturas de una app); la OG del ES (og-kit-plan-financiero.jpg) tampoco.
+//   · Imágenes (revisión final): portada propia fin-en-hero.jpg (hero, galería y CTA) y foto de reunión
+//     propia fin-en-lender-meeting.jpg (galería y BONUS 2), ambas sin texto; las del ES que se iban
+//     (plan-financiero-hero/-reunion) llevaban fechas de 2023-2024 y rótulos de IA. OG propia:
+//     og-financial-plan-kit.jpg. Se conservan del ES plan-financiero-restaurante.jpg y las fin-en-* de F3.
 // DINERO: stripeEnvKey = VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT (resuelto en el wrapper .astro).
 import type { KitExcelData, KitExcelFaq } from '../../productos/kits/types';
 
@@ -66,7 +70,7 @@ const FAQS: KitExcelFaq[] = [
   },
   {
     q: 'Will a lender accept the Lender & Investor Summary?',
-    a: "It gives you the structure lenders and investors usually ask for: an executive summary, 5-year projections, IRR, NPV, payback, solvency ratios with the DSCR, and the collateral you can offer. The example loan follows the shape of an SBA 7(a) loan (10 years, with an optional interest-only period), the DSCR is checked against a 1.25× target and the 1.15× SBA minimum, and your own contribution against the 10% SBA minimum for start-ups. Approval always depends on your project, your credit and the lender. It's a planning tool, not financial or tax advice: review the final numbers with your accountant before you apply.",
+    a: "It gives you the structure lenders and investors usually ask for: an executive summary, 5-year projections, IRR, NPV, payback, solvency ratios with the DSCR, and the collateral you can offer. The example loan follows the shape of an SBA 7(a) loan (10 years, with an optional interest-only period). The DSCR is calculated on the full loan payment and checked against 1.25×, the usual lender target; the SBA floor depends on the transaction and the current SOP. SBA lenders usually expect an owner equity injection (often around 10% for start-ups): check the current SOP with your lender. Approval always depends on your project, your credit and the lender. It's a planning tool, not financial or tax advice: review the final numbers with your accountant before you apply.",
   },
   {
     q: 'Are the templates linked to each other?',
@@ -104,7 +108,7 @@ const data: KitExcelData = {
       '10 Excel templates for restaurant financial planning: P&L template budget vs actual, 3- and 5-year projections, break-even, cash flow, startup costs, KPIs and a lender summary with IRR, NPV and DSCR. $49',
     keywords:
       'restaurant p&l template, restaurant profit and loss template, restaurant budget template, restaurant financial projections, restaurant pro forma template, restaurant startup costs spreadsheet, restaurant break-even calculator, restaurant cash flow forecast, restaurant kpi dashboard, restaurant loan proposal, restaurant business plan financials, AI Chef Pro',
-    ogImage: 'https://aichef.pro/og-kit-plan-financiero.jpg',
+    ogImage: 'https://aichef.pro/og-financial-plan-kit.jpg',
   },
 
   schema: {
@@ -118,18 +122,18 @@ const data: KitExcelData = {
   },
 
   images: {
-    // hero bg (6) — IDÉNTICAS al ES (ContentGrid usa el mismo set → gridGallery se omite).
+    // hero bg (6) — el set del ES con portada y reunión propias (ContentGrid usa el mismo set → gridGallery se omite).
     gallery: [
-      '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+      '/lovable-uploads/ai-gallery/fin-en-hero.jpg',
       '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg',
-      '/lovable-uploads/ai-gallery/plan-financiero-reunion.jpg',
+      '/lovable-uploads/ai-gallery/fin-en-lender-meeting.jpg',
       '/lovable-uploads/ai-gallery/fin-en-projections.jpg',
       '/lovable-uploads/ai-gallery/plan-financiero-restaurante.jpg',
       '/lovable-uploads/ai-gallery/fin-en-partners-review.jpg',
     ],
     whyBg: '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg',
     buyBoxBg: '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg',
-    ctaBg: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+    ctaBg: '/lovable-uploads/ai-gallery/fin-en-hero.jpg',
   },
 
   hero: {
@@ -170,12 +174,12 @@ const data: KitExcelData = {
     templates: [
       { icon: 'TrendingUp', title: 'Restaurant Financial Projections: 3-Year Pro Forma P&L', desc: 'Revenue and expense projections for 3 years with a monthly breakdown. Revenue lines (dine-in, bar, delivery, events) excluding sales tax, food and beverage cost, labor, delivery platform fees, fixed costs, EBITDA and automatic charts.' },
       { icon: 'TrendingUp', title: 'Restaurant Financial Projections: 5-Year Pro Forma P&L', desc: 'The same structure as the 3-year plan, projected over 5 years. Built for lenders, investors or franchise applications that ask for a longer horizon.' },
-      { icon: 'Target', title: 'Restaurant Break-Even Calculator', desc: 'Works out the minimum covers per day, the break-even revenue and the average check you need for the covers you expect, with a revenue vs costs chart. Operating and cash break-even, with the loan payment coming out of EBITDA, and 3 scenarios: pessimistic, realistic and optimistic.' },
+      { icon: 'Target', title: 'Restaurant Break-Even Calculator', desc: 'Works out the minimum covers per day, the break-even revenue and the average check you need for the covers you expect, with a revenue vs costs chart. Operating and cash break-even, with the loan payment kept outside EBITDA, and 3 scenarios: pessimistic, base and optimistic.' },
       { icon: 'Wallet', title: 'Restaurant Cash Flow Forecast (12 Months)', desc: 'Monthly cash flow with the lag on card payments and supplier bills, seasonality, payroll taxes deposited the following month and sales tax remitted quarterly (8% example rate: enter your state and local rate). Automatic red alert when the balance drops below your safety threshold.' },
       { icon: 'Building2', title: 'Restaurant Startup Costs & Capex Budget', desc: 'Line by line: build-out, kitchen equipment, dining room FF&E, technology, licenses and permits, and other opening costs (opening inventory, deposits, contingency and working capital). Budget vs actual with % variance, a recoverable tax column (0 in the US, where sales tax is part of the cost; 20% VAT in the UK) and straight-line depreciation by useful life.' },
       { icon: 'BarChart3', title: 'Restaurant P&L Template: Monthly Budget vs Actual', desc: 'Every month compares actual vs budget with % variance and a traffic light (green under 5%, yellow 5-10%, red over 10%) that never flags selling more or spending less than planned. Food cost, beverage cost, labor cost and prime cost calculated automatically, plus an annual summary.' },
-      { icon: 'PieChart', title: 'Restaurant Financial Ratios & KPI Dashboard', desc: 'Food cost %, labor cost %, prime cost %, GOP, EBITDA, RevPASH per seat-hour, sales per sq ft and cost per cover, each one compared with an editable benchmark table for US full-service restaurants (kit estimates you can change).' },
-      { icon: 'FileText', title: 'Restaurant Loan Proposal: Lender & Investor Summary', desc: 'A professional summary for a lender or investor: executive summary, 5-year projections, IRR, NPV and payback, a loan amortization schedule (SBA 7(a)-style example: 10 years, optional interest-only period), DSCR against a 1.25× target and the 1.15× SBA minimum, and a collateral sheet.' },
+      { icon: 'PieChart', title: 'Restaurant Financial Ratios & KPI Dashboard', desc: 'Food cost %, labor cost %, prime cost %, GOP, EBITDA, occupancy (rent) %, RevPASH per seat-hour and cost per cover, each one compared with an editable benchmark table for US full-service restaurants (kit estimates you can change), plus annual sales per sq ft.' },
+      { icon: 'FileText', title: 'Restaurant Loan Proposal: Lender & Investor Summary', desc: 'A professional summary for a lender or investor: executive summary, 5-year projections, IRR, NPV and payback, a loan amortization schedule (SBA 7(a)-style example: 10 years, optional interest-only period), the DSCR on the full loan payment against 1.25×, the usual lender target, and a collateral sheet.' },
       { icon: 'Shuffle', title: 'BONUS: What-If Scenario Simulator', desc: 'Change the average check, covers per day and food cost and see the impact on profitability instantly. 3 scenarios compared side by side.' },
       { icon: 'ClipboardList', title: 'BONUS: Pre-Opening Financial Checklist (54 Tasks)', desc: "54 tasks in 7 phases: business formation, financing, licenses and permits, suppliers, insurance, cash management and employer obligations, from the EIN and the seller's permit to workers' comp. Each one with a status, an owner and a due date." },
     ],
@@ -218,7 +222,7 @@ const data: KitExcelData = {
         label: 'BONUS 1',
         title: 'What-If Scenario Simulator',
         value: '$19',
-        desc: 'Change the average check, covers per day and food cost and see the impact on profitability instantly. Compare 3 scenarios side by side: pessimistic, realistic and optimistic.',
+        desc: 'Change the average check, covers per day and food cost and see the impact on profitability instantly. Compare 3 scenarios side by side: pessimistic, base and optimistic.',
         image: '/lovable-uploads/ai-gallery/fin-en-projections.jpg',
       },
       {
@@ -226,8 +230,8 @@ const data: KitExcelData = {
         label: 'BONUS 2',
         title: 'Pre-Opening Financial Checklist (54 Tasks)',
         value: '$19',
-        desc: 'The 54 tasks to tick off before opening day, in 7 phases: business formation, financing, licenses and permits, suppliers, insurance, cash management and employer obligations. Each one with a status, an owner and a due date, so nothing slips through.',
-        image: '/lovable-uploads/ai-gallery/plan-financiero-reunion.jpg',
+        desc: 'The 54 tasks to tick off before opening day, in 7 phases: business formation, financing, licenses and permits, suppliers, insurance, cash management and employer obligations. Each one with a status, an owner and a due date, so the big items don\'t slip through.',
+        image: '/lovable-uploads/ai-gallery/fin-en-lender-meeting.jpg',
       },
     ],
   },
