@@ -19,6 +19,17 @@ parada de 13 M (techo L = 10 M). Opciones (detalle en `scripts/productos-digital
 Con A o B sigue la regla de control: medir tras las dos primeras tandas de redactores y parar si vuelve a pasar de 13 M.
 **Si John responde «decide tú»: B.**
 
+## 🔴 Recomendación para la PRÓXIMA sesión (antes que la rotación): la deuda del anisakis, abierta desde el 6-sep
+
+Comprobado hoy en los ficheros publicados (siguen vivos en producto vendido):
+- `kit-tareas-sushi-bar/03-seguridad-anisakis-appcc.xlsx` → «RD 1420/2006» (derogado) y «7 días»;
+- `kit-tareas-marisqueria/03-trazabilidad-appcc-marisco.xlsx` → «RD 1420/2006»;
+- `kit-inventario/04-recepcion-mercancias.xlsx` → «RD 3484/2000» (derogado).
+Lo vigente: RD 1021/2022 art. 8.1 (−20 °C ≥ 24 h o −35 °C ≥ 15 h). No es inseguro (7 días a −20 °C es más estricto), pero son citas
+derogadas en documentos de autocontrol que vendemos. Alcance S, por el generador de cada kit + `inject_cache` + censo + changelog +
+correo en la cola; en el Kit de Inventario se juntan los defectos D23 que destapó el EN («RT-08:» en `BONUS-09!Parámetros!C12`,
+«8 plantillas» donde son 7, `TODAY()` contra fechas fijas). No lo empecé hoy: serían tres productos más en una semana que ya lleva dos.
+
 ## Hecho
 
 1. **Correo de lanzamiento de la Taquería PROGRAMADO** (estaba en ventana desde el 29-sep sin programar): 29-oct 08:00Z,
