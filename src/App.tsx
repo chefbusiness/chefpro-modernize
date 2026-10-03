@@ -168,6 +168,8 @@ import GuiaPasteleriaAccessGate from "./pages/GuiaPasteleriaAccessGate";
 import GuiaPasteleriaDashboard from "./pages/GuiaPasteleriaDashboard";
 import GuiaChocolateriaAccessGate from "./pages/GuiaChocolateriaAccessGate";
 import GuiaChocolateriaDashboard from "./pages/GuiaChocolateriaDashboard";
+import GuiaChurreriaChocolateriaAccessGate from "./pages/GuiaChurreriaChocolateriaAccessGate";
+import GuiaChurreriaChocolateriaDashboard from "./pages/GuiaChurreriaChocolateriaDashboard";
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
@@ -929,6 +931,19 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-chocolateria-obrador-jwt" redirectTo="/guia-chocolateria-obrador">
                   <GuiaChocolateriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Cómo Montar una Churrería-Chocolatería — landing NATIVA en Astro
+                (astro-site/src/pages/guia-churreria-chocolateria.astro): aquí sólo
+                viven la zona app (access + library) que los islands reutilizan. */}
+            <Route path="/guia-churreria-chocolateria-access" element={<GuiaChurreriaChocolateriaAccessGate />} />
+            <Route
+              path="/guia-churreria-chocolateria-library"
+              element={
+                <ProtectedRoute storageKey="guia-churreria-chocolateria-jwt" redirectTo="/guia-churreria-chocolateria">
+                  <GuiaChurreriaChocolateriaDashboard />
                 </ProtectedRoute>
               }
             />

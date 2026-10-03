@@ -6,12 +6,12 @@
 // build format 'file').
 //
 // Paridad exacta con la SPA:
-//  · Las 49 tarjetas + 22 "próximamente" + los tags salen VERBATIM del array hardcodeado
+//  · Las 51 tarjetas + 20 "próximamente" + los tags salen VERBATIM del array hardcodeado
 //    (orden EXACTO = decisión de negocio). Extraídas byte a byte de la SPA (icon: X → iconName: 'X').
 //  · Filtro por tag + paginación "Cargar más" (12/pág) = <script> vanilla. TODAS las cards
 //    están en el DOM server-side (crawlables); el JS solo muestra/oculta (mismo criterio que
 //    las tabs de UseCasesHub — DESVIACIÓN DELIBERADA y coherente: la SPA solo renderiza 12 al
-//    DOM vía slice; aquí las 49 quedan en el DOM para SEO, el JS reproduce el slice inicial).
+//    DOM vía slice; aquí las 51 quedan en el DOM para SEO, el JS reproduce el slice inicial).
 //  · Iconos lucide vía <Icon> inline (añadidos Filter + Shell a Icon.astro).
 //  · 3 JSON-LD ÍNTEGROS (CollectionPage + FAQPage + BreadcrumbList) — mismos que el Helmet SPA.
 //  · SaasDiscoveryBanner / LogoBadge(isHub=true, sin pill) / WhatsAppProductSupport = markup
@@ -65,6 +65,23 @@ const ALL_TAGS = [
 // después el resto, y el Mega Pack SIEMPRE el último (0 ventas; si lo compra alguien será otro consultor). Un producto
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
+  {
+    name: 'Cómo Montar una Churrería-Chocolatería',
+    slug: '/guia-churreria-chocolateria',
+    price: '€65',
+    description: 'Local, obrador de masa, freidora y números: el dossier completo de apertura de una churrería-chocolatería, con los Excel que hacen tus cuentas.',
+    features: [
+      '16 capítulos + anexo normativo + 8 Excel',
+      'Freidora, humos y hora punta: capacidad y ficha de visita',
+      'Churro, porra y chocolate a la taza: escandallo y márgenes',
+      'Bonus: business plan relleno y 12 decisiones resueltas',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'chocolateria'],
+  },
   {
     name: 'Tareas Recurrentes: Taquería Mexicana',
     slug: '/kit-tareas-taqueria',
@@ -148,8 +165,8 @@ const products = [
     ],
     iconName: 'BriefcaseBusiness',
     image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'restaurante', 'bar', 'cafeteria', 'hotel', 'catering'],
   },
   {
@@ -1012,7 +1029,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'Coffee', name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { iconName: 'IceCream', name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
   { iconName: 'BarChart3', name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },
@@ -1121,21 +1137,21 @@ const collectionSchema = {
   mainEntity: {
     '@type': 'ItemList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, url: 'https://aichef.pro/kit-tareas-taqueria', name: 'Tareas Recurrentes: Taquería Mexicana' },
-      { '@type': 'ListItem', position: 2, url: 'https://aichef.pro/guia-chocolateria-obrador', name: 'Cómo Montar una Chocolatería Boutique & Atelier' },
-      { '@type': 'ListItem', position: 3, url: 'https://aichef.pro/guia-pasteleria-obrador', name: 'Cómo Montar una Pastelería' },
-      { '@type': 'ListItem', position: 4, url: 'https://aichef.pro/manual-chef-ejecutivo', name: 'Manual del Chef Ejecutivo' },
-      { '@type': 'ListItem', position: 5, url: 'https://aichef.pro/manual-manager-restaurante', name: 'Manual del Manager de Restaurante' },
-      { '@type': 'ListItem', position: 6, url: 'https://aichef.pro/guia-food-cost-ingenieria-menu', name: 'Guía Food Cost + Ingeniería de Menú' },
-      { '@type': 'ListItem', position: 7, url: 'https://aichef.pro/kit-escandallos', name: 'Kit de Escandallos Pro' },
-      { '@type': 'ListItem', position: 8, url: 'https://aichef.pro/pro-prompts-ebook', name: 'Gastro Pro Prompts eBook' },
-      { '@type': 'ListItem', position: 9, url: 'https://aichef.pro/pack-appcc', name: 'Pack Plantillas APPCC' },
-      { '@type': 'ListItem', position: 10, url: 'https://aichef.pro/kit-inventario', name: 'Kit Control de Inventario y Compras' },
-      { '@type': 'ListItem', position: 11, url: 'https://aichef.pro/guia-restaurante-gastronomico', name: 'Cómo Montar un Restaurante Gastronómico' },
-      { '@type': 'ListItem', position: 12, url: 'https://aichef.pro/guia-restaurante-casual', name: 'Cómo Montar un Restaurante Casual' },
-      { '@type': 'ListItem', position: 13, url: 'https://aichef.pro/guia-panaderia-obrador', name: 'Cómo Montar una Panadería con Obrador' },
-      { '@type': 'ListItem', position: 14, url: 'https://aichef.pro/guia-restaurante-mexicano', name: 'Cómo Montar un Restaurante Mexicano' },
-      { '@type': 'ListItem', position: 15, url: 'https://aichef.pro/guia-restaurante-peruano', name: 'Cómo Montar un Restaurante Peruano' },
+      { '@type': 'ListItem', position: 1, url: 'https://aichef.pro/guia-churreria-chocolateria', name: 'Cómo Montar una Churrería-Chocolatería' },
+      { '@type': 'ListItem', position: 2, url: 'https://aichef.pro/kit-tareas-taqueria', name: 'Tareas Recurrentes: Taquería Mexicana' },
+      { '@type': 'ListItem', position: 3, url: 'https://aichef.pro/guia-chocolateria-obrador', name: 'Cómo Montar una Chocolatería Boutique & Atelier' },
+      { '@type': 'ListItem', position: 4, url: 'https://aichef.pro/guia-pasteleria-obrador', name: 'Cómo Montar una Pastelería' },
+      { '@type': 'ListItem', position: 5, url: 'https://aichef.pro/manual-chef-ejecutivo', name: 'Manual del Chef Ejecutivo' },
+      { '@type': 'ListItem', position: 6, url: 'https://aichef.pro/manual-manager-restaurante', name: 'Manual del Manager de Restaurante' },
+      { '@type': 'ListItem', position: 7, url: 'https://aichef.pro/guia-food-cost-ingenieria-menu', name: 'Guía Food Cost + Ingeniería de Menú' },
+      { '@type': 'ListItem', position: 8, url: 'https://aichef.pro/kit-escandallos', name: 'Kit de Escandallos Pro' },
+      { '@type': 'ListItem', position: 9, url: 'https://aichef.pro/pro-prompts-ebook', name: 'Gastro Pro Prompts eBook' },
+      { '@type': 'ListItem', position: 10, url: 'https://aichef.pro/pack-appcc', name: 'Pack Plantillas APPCC' },
+      { '@type': 'ListItem', position: 11, url: 'https://aichef.pro/kit-inventario', name: 'Kit Control de Inventario y Compras' },
+      { '@type': 'ListItem', position: 12, url: 'https://aichef.pro/guia-restaurante-gastronomico', name: 'Cómo Montar un Restaurante Gastronómico' },
+      { '@type': 'ListItem', position: 13, url: 'https://aichef.pro/guia-restaurante-casual', name: 'Cómo Montar un Restaurante Casual' },
+      { '@type': 'ListItem', position: 14, url: 'https://aichef.pro/guia-panaderia-obrador', name: 'Cómo Montar una Panadería con Obrador' },
+      { '@type': 'ListItem', position: 15, url: 'https://aichef.pro/guia-restaurante-mexicano', name: 'Cómo Montar un Restaurante Mexicano' },
     ],
   },
 };

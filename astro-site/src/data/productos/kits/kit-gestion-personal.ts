@@ -309,6 +309,7 @@ const data: KitExcelData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: '/manual-manager-restaurante', label: 'Manual del Manager de Restaurante' },
+    { href: '/guia-churreria-chocolateria', label: 'Cómo Montar una Churrería-Chocolatería' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
