@@ -1,0 +1,81 @@
+### Decisión 1. Sala o sólo despacho para llevar
+
+Un despacho a calle es más barato de montar y de tramitar. Una sala con barra y terraza vende más ticket y más rato de permanencia. La pregunta que decide no es cuál de los dos formatos te gusta más, sino si el mismo barrio paga los fijos sin sala. Hay barrios donde la gente compra los churros y se los lleva a casa, y barrios donde se sienta; y eso no lo sabrás mirando el local, sino contando quién para delante de la puerta a la hora del desayuno y a la de la merienda.
+
+Las dos opciones sobre la mesa para la Churrería-Chocolatería El Molinete son estas:
+
+- **Opción A.** Local con sala, barra y terraza, con despacho a calle.
+- **Opción B.** Sólo despacho para llevar, en menos metros y con menos dotación.
+
+El criterio es la contribución que deja cada formato frente a sus fijos, no lo que cuesta abrir. El despacho ahorra dotación, eso es cierto, pero pierde todas las raciones que se consumen en el local, y esas raciones llevan chocolate a la taza, bebida y repetición. Además, la sala cambia el régimen de apertura: lo que para un despacho es un trámite, para un local con mesas es otro procedimiento, con otro papel y otros plazos (lo desarrolla el capítulo 4). Quien compara los dos formatos sólo por la factura de la obra compara mal, porque el formato barato de abrir puede ser el caro de sostener.
+
+**El veredicto de El Molinete: con sala.** La diferencia de dotación del despacho frente al local con sala es de -4.433 € (calculadora de inversión, hoja «Variante del Formato»). Dicho sin rodeos: pasar a despacho te ahorra dotación, pero muy poca cosa en comparación con lo que cuesta quitarle al local la mitad de su venta. El resultado del mismo local vendiendo sólo para llevar, con los mismos fijos, es de -106.506 € (plan financiero a tres años, hoja «Escenarios»). Los fijos son los mismos porque el caso parte de un local concreto con su renta y su plantilla; el despacho no abarata el alquiler de ese local, sólo quita ingresos. Esas cifras salen de los supuestos de El Molinete (reparto de canales, raciones de cada día, horario y gastos fijos), y tú los sustituyes por los tuyos antes de fiarte del resultado.
+
+**El umbral que cambiaría la decisión.** Elegirías el despacho si consigues unos fijos mucho más bajos: menos renta y menos plantilla. El libro te da el ahorro de fijos al año que necesitaría el despacho para no perder dinero: 106.506 € (plan financiero a tres años, hoja «Escenarios»). Es la cifra a la que tienes que llegar con un local más pequeño, una renta más baja o un equipo más corto antes de que el despacho empate. Si no la alcanzas negociando con el propietario ni redimensionando la plantilla, la sala sigue siendo la opción que se sostiene. Y si la alcanzas, apunta también lo que pierdes: la terraza, la conversación de barra y las raciones de consumo en el local.
+
+**La norma.** La actividad del despacho va por declaración responsable cuando está en el Anexo de la Ley 12/2012, de 26 de diciembre, de medidas urgentes de liberalización del comercio y de determinados servicios (2012): el epígrafe 644.6 llega hasta 750 m² de superficie útil de exposición y venta. Pero ojo con la condición: las obras que requieren proyecto, el conducto de extracción a cubierta incluido, siguen necesitando licencia de obra y técnico (arts. 3.3 y 3.4 de esa ley). Son papeles distintos: la actividad, la obra y la terraza. Con mesas, la actividad pasa al régimen general de tu ayuntamiento, y qué modelo de licencia te toca es una pregunta que le haces a tu ayuntamiento, no un dato que te demos aquí; en el caso de Madrid, que es sólo un ejemplo y no se extrapola, está verificado (comprobado el 3 de octubre de 2026). La terraza, si la quieres, va aparte con su propia tramitación.
+
+La tabla de abajo trae el mismo local con sala y sólo para llevar, hoja a hoja, para que cambies tus fijos y veas dónde cruza la línea.
+
+### Decisión 2. Traspaso u obra nueva
+
+Un traspaso con la churrería en marcha parece un atajo: ya tiene clientela, licencia y máquinas. Y a veces lo es. Pero el precio de un traspaso es lo que te piden, no lo que se paga, y la comparación sólo vale con la misma base y en el mismo horizonte. Comparar un traspaso a cierre con una obra nueva a presupuesto de ensueño no es comparar; es perder tiempo.
+
+Las opciones:
+
+- **Opción A.** El traspaso, al precio pedido más la adaptación que aún haría falta.
+- **Opción B.** Obra nueva, con la inversión comparable: obra, extracción, maquinaria, barra, control, TPV y licencias.
+
+El criterio son dos comparaciones, no una. La primera es la inversión: lo que desembolsas el primer día en cada caso. La segunda es el coste en el horizonte, que añade la renta y los meses pagando renta sin facturar. En un traspaso en marcha esos meses son menos, porque el local ya está abierto, y eso es una ventaja real que la factura de la obra no enseña. Lo que el dinero no ve se apunta aparte: la clientela que viene con el negocio, la distribución del local, el estado del conducto de extracción. Ninguna de esas tres cosas cabe en una celda, pero cualquiera de ellas puede inclinar la balanza.
+
+**El veredicto de El Molinete: obra nueva.** El traspaso de referencia es el anuncio con sala de Vallecas, publicado el 6 de julio de 2026 (Milanuncios, ficha «Vallecas c/ de Villacanas», 2026): 74 m², 82.000 € de traspaso pedido y negociable, y 910 € al mes de alquiler. Conviene repetirlo, porque se confunde a menudo: es un precio pedido, leído en el anuncio y no reabierto en la última consulta, no un precio de cierre. Con la adaptación que aún haría falta, la inversión del traspaso queda en 88.000 € (calculadora de inversión, hoja «Traspaso vs Obra Nueva»). El libro da el mismo veredicto en las dos comparaciones: sale mejor la obra nueva, tanto en la inversión como en el horizonte con la renta.
+
+La cifra que más te sirve de todo el cuadro es otra: el precio de traspaso por debajo del cual gana el traspaso, que es de 75.747 € (calculadora de inversión, hoja «Traspaso vs Obra Nueva»). Es la cifra a la que hay que negociar. Si el vendedor se queda en el precio pedido, te sale mejor construir; si baja de ese número, el traspaso empieza a ganar. Úsala en la mesa de negociación como un tope propio, no como un regateo al azar.
+
+**El umbral que cambiaría la decisión.** Elegirías el traspaso en dos casos. El primero, si lo cierras por debajo de esa cifra. El segundo, si el local trae resuelto lo que más cuesta y más tarda: la extracción a cubierta con su licencia. Un conducto hecho y legalizado vale más que muchas máquinas, porque es lo que de verdad retrasa una apertura y lo que más depende de terceros. Antes de dar por buena esa ventaja, pide verlo con tus propios ojos y con el técnico al lado.
+
+**La norma.** No hay norma que decida esto: la ley no te dice si traspasar o construir. Sí hay una comprobación que no te puedes saltar: que la licencia del local que traspasas cubra tu actividad y tu extracción. Si no la cubre, la obra con proyecto vuelve a ser tuya, con su técnico y su plazo, y el atajo deja de serlo (capítulo 4). Pregúntalo antes de firmar, no después, y pídelo por escrito.
+
+El cuadro siguiente pone las dos columnas lado a lado con la misma base. Mete tu precio pedido y el de la adaptación y mira en qué lado cae.
+
+### Decisión 3. Equipo completo de churros o línea separada
+
+Hay equipos completos de churros, con el dosificador y la sartén en un solo aparato, por mucho menos que una línea formada por dosificadora, freidora y amasadora por separado. La tentación es empezar barato y ampliar después. Es una tentación razonable, y a veces correcta, pero sólo si sabes cuánta gente va a ponerse en cola en tu mejor hora.
+
+Las opciones:
+
+- **Opción A.** El equipo completo, con su precio de ficha.
+- **Opción B.** La línea separada de El Molinete: dosificadora automática, freidora de una cuba y amasadora.
+
+El criterio es la hora punta del domingo, no el total del día. La capacidad se mide en kilos de masa por hora, y la manda el eslabón más lento de la cadena: da igual que la freidora tenga holgura si la dosificadora o quien la maneja no da más. Si el equipo no aguanta la hora punta de tus meses fuertes, lo barato sale caro en cola, en clientes que se van y en gente que no vuelve. Ese cálculo se hace con tu masa y con tu churrero o churrera, porque los kilos de masa por hora y los coeficientes de cada mes son supuestos de El Molinete que tú sustituyes, no datos del sector.
+
+**El veredicto de El Molinete: línea separada.** El precio de ficha del equipo completo es de 2.188 € sin IVA (calculadora de inversión, hoja «Equipamiento Línea a Línea»; Hosteleria10, churreras, equipo de churros CH-1-D de Mundigas, consulta del 3 de octubre de 2026, kit completo con dosificador de 1,5 kg y sartén de 14 litros). Son precios de listado con descuento vigente, así que pueden caducar. Para la línea separada, las fichas que usa el libro sin IVA son una dosificadora automática a 1.798 € (Hosteleria10, churreras, dosificadora automática CH, 2026) y una amasadora con capacidad de 30 kg a 2.550 € (Churrofácil, ficha 26, 2026); la freidora la tratamos en la decisión siguiente. Como alternativa artesanal a la amasadora existe un caldero amasador con su pala, también en la ficha de Hosteleria10.
+
+La línea separada de El Molinete tiene una capacidad de 123 raciones por hora, y el eslabón que la manda es la línea de dosificado y fritura, con su churrero o churrera (libro de producción y local, hoja «Cuello de Botella»). Frente a eso, la hora punta de un día punta de diciembre es de 131,2 raciones por hora (libro de temporada, hoja «Capacidad contra el Pico»). La hora punta supera la capacidad: ahí tienes el déficit que el libro enseña mes a mes, y que te interesa mirar antes de comprar cualquier cosa. Ni la capacidad de la línea ni esa hora punta son datos del sector; son los supuestos del caso, y la razón de este bonus es que los cambies por los tuyos.
+
+**El umbral que cambiaría la decisión.** Elegirías el equipo completo en un despacho de barrio o en una caseta con poca hora punta, o para empezar mientras validas la demanda. Si tu hora fuerte es corta y tu mes fuerte no se parece a diciembre, el equipo completo te basta y te ahorra una inversión que quizá nunca amortizas. Pero no te engañes con la solución al revés: un déficit de diciembre no se arregla con una segunda churrera. Se arregla con masa preparada antes de abrir y con una persona más. Comprar otra máquina sin tocar la preparación previa mueve el cuello de botella de sitio, pero no lo quita.
+
+**La norma.** No hay norma que elija la máquina: eso lo decides tú con tu hora punta. Sí la hay para lo que va bajo la campana: los litros de la freidora cuentan en la potencia que decide el riesgo de incendio (capítulo 5), y esa cuenta es la que desarrolla la decisión siguiente.
+
+Debajo tienes la hora punta mes a mes contra la capacidad de la línea. Si en tu caso una sola fila supera la capacidad, ya sabes qué meses te cuestan la cola.
+
+### Decisión 4. Freidora de gas o eléctrica
+
+La freidora de gas es la de casi todas las churrerías, y la eléctrica cuesta algo más de ficha, pero la decisión no es de precio. Lo que decide es si llevas el gas al local y cuánta potencia computa tu cocina. Esa potencia es lo que te cambia de categoría de riesgo, y con ella, lo que te toca instalar sobre la campana.
+
+Las opciones:
+
+- **Opción A.** Gas, con su instalación receptora, el certificado del instalador y la inspección periódica.
+- **Opción B.** Freidora eléctrica, con la potencia contratada que necesite.
+
+Lo que no es una opción en un local es la bombona.
+
+El criterio: los litros de cuba computan como potencia, y la potencia de la cocina decide si es local de riesgo especial y si la extinción automática es obligatoria. Según el Código Técnico de la Edificación, DB-SI, sección SI 1, tabla 2.1, notas 2 y 3 (2025), las freidoras se computan a 1 kW por litro de capacidad; las cocinas son locales de riesgo especial desde 20 kW, con riesgo bajo entre 20 y 30 kW, medio entre 30 y 50 kW y alto por encima de 50 kW; y la extinción automática es obligatoria por encima de 50 kW. Con extinción automática la cocina deja de ser local de riesgo especial, pero sigue sujeta a la nota 3: campana, conductos y filtros. Los filtros de la campana van a más de 1,20 m del foco si el aparato es de gas o de parrilla, y a más de 0,50 m si es de otro tipo; una freidora de gas pide la mayor de las dos distancias.
+
+**El veredicto de El Molinete: gas.** Los kW computables de su cocina son 28, su riesgo es bajo y la extinción automática no es obligatoria (libro de producción y local, hoja «Freidoras, Potencia y Riesgo»). Con una cuba de 25 litros, el equipo de referencia con gas cuesta 1.907 € sin IVA (Hosteleria10, churreras, ClimaHosteleria EMPLK002, 2026), con un descuento vigente que puede caducar, y la eléctrica de referencia, 2.053 € sin IVA (Hosteleria10, churreras, ClimaHosteleria EMPLK003, 2026; calculadora de inversión, hoja «Equipamiento Línea a Línea»). La eléctrica cuesta algo más de ficha, como decíamos, y esa diferencia no es lo que importa. Si la extinción automática te tocara, el importe previsto es de 2.800 € (calculadora de inversión, hoja «CAPEX por Bloque»), que sí cambia la cuenta. Todas estas cifras van sin IVA; si las comparas con otras de tu presupuesto, cuida que estén en la misma base.
+
+**El umbral que cambiaría la decisión.** Elegirías la eléctrica si el local no tiene gas o si llevarlo es una obra que no compensa. Y si piensas en una segunda freidora, mira cómo sube la potencia antes de comprarla, porque 28 kW computables dejan poco margen hasta pasar de riesgo bajo a medio, y cambiar de riesgo cambia lo que te exigen. Lo que se ahorra con una segunda cuba comprada sin mirar la tabla se puede gastar luego con creces en extinción, conductos y filtros. Haz la cuenta de los litros con tu equipo definitivo, no con el de la primera ficha que te guste.
+
+**La norma.** Para el gas, la instalación receptora y su inspección periódica vienen del Real Decreto 919/2006, de 28 de julio, Reglamento técnico de distribución y utilización de combustibles gaseosos (2006): la inspección es obligatoria cada cinco años y, en instalaciones de hasta 70 kW, incluye los aparatos y comprueba la ventilación y el volumen mínimo del local (ITC-ICG 07, apartados 3.3 y 4.1). Para la potencia y el riesgo, el CTE DB-SI que acabamos de ver. La excepción de la bombona se limita a una instalación alimentada por un único envase móvil de gas licuado de menos de 15 kg, conectado a un solo aparato de utilización móvil, y eso es un puesto de feria (capítulo 14). Una freidora fija de un local no es un aparato de utilización móvil, así que esa excepción no sirve ni para el local con sala ni para el despacho. Todo comprobado el 3 de octubre de 2026.
+
+El cuadro de abajo pone la freidora de gas y la eléctrica con su precio de ficha. Antes de decidir, confirma con tu instalador cuánta potencia computa tu cocina real y qué distancia de filtros te corresponde.

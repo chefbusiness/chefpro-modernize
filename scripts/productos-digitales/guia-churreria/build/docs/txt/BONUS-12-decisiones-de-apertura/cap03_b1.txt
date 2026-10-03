@@ -1,0 +1,76 @@
+### Decisión 9. El verano: cerrar, carta de verano o ferias
+
+Julio y agosto son el valle de una churrería. El churro y el chocolate caliente piden frío en la calle, y cuando aprieta el calor la sala se vacía. La tentación es evidente: bajar la persiana, irse de vacaciones y volver en septiembre con las pilas cargadas. Pero hay un detalle que lo cambia todo: los fijos de esos dos meses se pagan igual. El alquiler, las cuotas, la gestoría y los suministros mínimos no entienden de calendario. Así que la pregunta no es si descansas o no, sino qué salida deja más contribución para ir pagándolos.
+
+Tienes tres salidas:
+
+- **A. Cerrar.** No vendes, no gastas en materia ni en personal extra, y los fijos caen enteros sobre el resultado.
+- **B. Abrir con carta de verano.** Granizados, horchata, helado y algo de churro, con el local funcionando a otro ritmo.
+- **C. Cerrar el local y salir de ferias.** La caseta se lleva la masa a donde está la gente en verano.
+
+El criterio para compararlas es uno solo: la contribución de julio y agosto. Es decir, las ventas sin IVA, menos la materia y el personal extra, más lo que dejen las ferias si las haces. Los fijos son los mismos en las tres opciones, de modo que no sirven para discriminar entre ellas; sólo se miran después, para saber cuánto del agujero tapa la salida que elijas. La fiscalidad tampoco es una salida: aquí no entra ningún truco de cuotas, sólo ventas y costes de verdad. Chocolatería 1902 publica una carta de helados artesanales con granizado y horchata a 3 € cada uno, y Vigo Churros incluye en la suya un «Churri-Helado» con dos bolas, cuatro churros y topping, con el precio «consultar» (Chocolatería 1902, carta de helados; Vigo Churros, carta; consulta 2026-10-03). Del segundo no hay cifra, así que sólo nos sirve como prueba de que el modelo existe, no como precio de referencia.
+
+El veredicto de El Molinete es la carta de verano. En el libro de temporada, franjas y ferias, hoja «El Verano (Tres Salidas)», la contribución de julio y agosto con carta de verano es de 17.369 €, frente a 2.106 € saliendo de ferias. Ahora bien, no te cuentes la película: con los fijos dentro, el resultado de julio y agosto en El Molinete con la carta de verano es de -10.345 €, según la hoja «Escenarios» del plan financiero a tres años. Es decir, la mejor salida no convierte el valle en beneficio; lo que hace es reducir el agujero.
+
+Todas las ventas de verano de El Molinete parten de supuestos declarados: las raciones de cada día, el coeficiente de julio y de agosto y el reparto por franjas son supuestos de este caso que tú sustituyes por los de tu local. Lo que importa es el punto de corte. El libro calcula las raciones al día por debajo de las cuales la carta de verano deja menos que las ferias, y para El Molinete son 18,4. Si tu local vendiera en verano menos raciones al día que ese umbral, la carta no se paga a sí misma y las ferias pasan a ser la mejor salida. Y cerrarías sólo en un caso: cuando ni la carta de verano ni las ferias dejen contribución.
+
+Si sales de ferias, la caseta no es un trámite menor: necesita su autorización municipal, su alta y su registro. El marco de la venta no sedentaria es el de la Ley 7/1996, arts. 53 a 55, y lo desarrolla el capítulo 14 (comprobado el 3 de octubre de 2026). Lo que depende de tu ayuntamiento, como la ordenanza de cada feria, los plazos y las tasas, es una pregunta que le haces al propio consistorio, nunca un dato que puedas dar por supuesto. Si la feria va a ser tu negocio y no un parche de verano, o si te mueves en vehículo, tienes el «Plan de Negocio: Food Truck» y el kit «Tareas: Food Truck» para montarlo con otra lógica.
+
+### Decisión 10. Cuánta madrugada asumes tú
+
+El titular de una churrería suele ser el primero en llegar y el último en irse. Un plan que sólo cuadra porque tus horas salen gratis no aguanta un año. Y la parte más dura es la madrugada del fin de semana: la masa tiene que estar lista antes de que llegue la primera cola, y el sábado y el domingo la cola no perdona.
+
+Las salidas posibles son tres:
+
+- **A. El titular abre la madrugada del fin de semana.** Tú, a las 6:00, con la freidora encendida.
+- **B. La abre un churrero.** Con su plus de convenio, y tú entras después.
+- **C. Un relevo.** Alguien que cubre un día para que el titular descanse.
+
+El criterio no es el cansancio sino los números del libro de turnos: las horas del titular a la semana, sus horas de madrugada y lo que valdrían al año sus horas de más, valoradas al coste hora de la plantilla. Y hay una distinción legal que se confunde con frecuencia. El titular autónomo ni cobra plus ni es trabajador nocturno: no tiene convenio ni jornada que proteger, y eso, lejos de ser una ventaja, significa que nadie te va a limitar las horas más que tú mismo. En cambio, el churrero que abre la madrugada sí cobra plus sin ser por ello trabajador nocturno. El capítulo 13 explica la diferencia con detalle; aquí te basta con saber que son dos figuras distintas.
+
+El veredicto de El Molinete es que el titular asume la madrugada del fin de semana desde las 6:00. Pero el libro no te deja engañarte. En la hoja «Horas del Titular» del libro de turnos, plantilla y madrugada, el titular suma 52,5 horas a la semana, de las cuales 5,0 son de madrugada. Valoradas al coste hora de la plantilla, sus horas de más valen 8.514 € al año. Y el veredicto del propio libro es, literalmente: «Trabajas los siete días: un plan que sólo cuadra con el titular sin descanso no aguanta un año; busca un relevo para un día». O sea, la decisión de abrir tú la madrugada se sostiene, pero con una condición que el libro te pone por escrito.
+
+La tabla siguiente recoge esas horas tal como las calcula el libro. Los turnos, la entrada y el horario son supuestos declarados de El Molinete: sustitúyelos por los tuyos y mira qué dice tu hoja, no la nuestra.
+
+El umbral que cambia la decisión es doble. Contratarías el relevo cuando lo que valen tus horas de más al año se acerque al coste de un refuerzo, porque a partir de ahí te sale más caro no contratar que contratar. El cuadrante semana a semana y las nóminas de ese refuerzo los resuelve el «Kit Gestión de Personal y Turnos»; aquí sólo decides si hace falta.
+
+La norma, en dos piezas. Para la plantilla, la jornada y los descansos los fija el art. 36.1 del Estatuto de los Trabajadores, texto refundido aprobado por RDLeg 2/2015 (comprobado el 3 de octubre de 2026). Según ese artículo, trabajo nocturno es el realizado entre las 22:00 y las 6:00, y trabajador nocturno es quien realiza normalmente en ese periodo al menos 3 horas diarias de su jornada, o se prevé que realice un tercio de su jornada anual. Sólo a ese trabajador le alcanzan la prohibición de horas extraordinarias y el tope de 8 horas de promedio. Quien entra a las 4:30 tiene hora y media dentro del periodo del Estatuto: no es trabajador nocturno. Pero sí cobra plus, porque el plus lo paga el convenio por las horas de sus franjas. Como ejemplo, y sin extrapolarlo a tu provincia, el convenio de Hostelería y Actividades Turísticas de la Comunidad de Madrid (2024) fija un 25 % sobre el salario base entre las 0:00 y las 8:00. Qué convenio te aplica y en qué nivel encaja tu churrero, por asimilación de funciones, lo confirma tu asesor. El titular autónomo queda fuera de las dos figuras.
+
+### Decisión 11. Freidora dedicada o compartida
+
+Freír patatas, rebozados o buñuelos de otra masa en la freidora de los churros parece una buena idea: ahorras una máquina y amplías la carta. El peaje es que lo que fríes en la misma cuba pasa al resto. El aceite no distingue entre una masa y otra, y lo que lleva uno lo llevan todos.
+
+Las opciones son tres:
+
+- **A. Una freidora dedicada** al churro y a la porra.
+- **B. Una sola freidora compartida** con otros fritos.
+- **C. Una segunda freidora** para todo lo demás.
+
+El criterio tiene tres patas. Primera, el aceite compartido es contaminación cruzada: tus alérgenos dejan de ser los de tu masa y pasan a ser los de todo lo que fríes en esa cuba. Segunda, si fríes patatas frescas, te entra la parte A del reglamento de la acrilamida. Tercera, la segunda freidora suma potencia a la cocina y esa suma puede cambiarte de categoría en el cálculo del riesgo de incendio.
+
+El veredicto de El Molinete es la freidora dedicada. En el libro legal de fritura y licencias, hoja «Alérgenos y Aceite Compartido», la respuesta del caso es: «Dedicada al churro y a la porra: el aceite sólo lleva lo que lleva tu masa». La consecuencia práctica es que la lista de alérgenos de la carta sale de tu propia receta y no de una suma de todo lo que pase por la cuba. Eso sí, que sea dedicada no te libra de leer: quedan 21 casillas de alérgenos pendientes de leer en la etiqueta del preparado o de los ingredientes que compres, y no se rellenan solas. La etiqueta manda, y lo que no figure por escrito en ella es una pregunta que le haces a tu proveedor. Sobre la acrilamida, la misma hoja dice: «No fríes patatas: la parte A no te alcanza por ellas». En el libro de producción, hoja «Freidoras, Potencia y Riesgo», la cocina de El Molinete con una sola freidora computa 28 kW. Con una segunda sumarías potencia, y es esa cifra la que tendrías que recalcular antes de comprarla.
+
+La tabla de abajo muestra lo que fríe El Molinete en su freidora y por qué el aceite sólo lleva lo que lleva su masa. No lleva recetas ni temperaturas, y es a propósito: este pack no te da ninguna temperatura de fritura del churro porque no hay fuente primaria que la fije. La única temperatura que trae una norma es la de las patatas fritas del reglamento de la acrilamida, y para el churro no hay ninguna.
+
+El umbral que cambia la decisión es sencillo. Compartirías la freidora sólo con productos de la misma masa y sin alérgenos nuevos. Para patatas o rebozados, segunda freidora, con su potencia metida en el cálculo del riesgo. El registro del aceite lo tienes en el fichero 09-control-aceite-fritura.xlsx del «Pack Plantillas APPCC»; aquí no lo repetimos.
+
+La norma, en tres frases. Primera: el Reglamento (CE) 852/2004, anexo II, capítulo IX, punto 9, dice que el equipo y los recipientes usados con sustancias alergénicas no se utilizarán para otros alimentos a menos que se hayan limpiado. Segunda: el RD 126/2015 obliga a dar por escrito los 14 alérgenos del anexo II, y permite darlos de forma oral sólo si están por escrito en el establecimiento, accesibles al personal, a la inspección y al consumidor, con cartel visible y al menos en castellano. Tercera: el Reglamento (UE) 2017/2158, anexo II, parte A, te alcanza si fríes patatas frescas. Sobre el churro en sí, matiza: el art. 1.2 de ese reglamento contiene una lista cerrada de productos y la palabra «churro» aparece 0 veces. Tampoco define «bollería», así que no se puede afirmar ni que el churro entre ni que quede fuera. Controlar la acrilamida en el churro es buena práctica, no una obligación que podamos citar como tal (todo comprobado el 3 de octubre de 2026).
+
+### Decisión 12. Franquicia o por tu cuenta
+
+Una franquicia de churros o de chocolate te vende tres cosas: marca, método y proveedor. Y publica una inversión que parece cerrada. Lo que no publica, o lo publica en letra pequeña, es lo que pagas cada mes y lo que incluye de verdad. Antes de firmar nada conviene hacer una cuenta limpia.
+
+Las opciones son dos:
+
+- **A. Una enseña de base comparable**, con su canon de entrada, su royalty y su canon publicitario.
+- **B. Por tu cuenta**, con tu inversión y tu marca.
+
+El criterio exige la misma base en las dos orillas. Por un lado, tu inversión de apertura sin el fondo de maniobra, porque las franquicias publican local en bruto con obra, maquinaria y mobiliario, no el colchón de caja. Por otro, las enseñas que publican esa misma base. Y el royalty se pasa por el plan mes a mes, también en julio y agosto, que es cuando se nota (el capítulo 15 explica cómo). Una cosa más: lo que publica un franquiciador sobre facturación esperada o plazo de recuperación es una proyección suya, no un dato, y aquí no se usa.
+
+Tres ejemplos de lo que se publica, sin recomendar ninguno y sin nombrarlos. Una enseña declara 125.000 € de inversión para un local en bruto con obra, maquinaria y mobiliario, un canon de entrada de 24.040 € y un royalty del 5 % sobre ventas netas, con 39 locales, 32 de ellos en franquicia. Otra declara una inversión inicial desde 115.000 €, un canon de entrada de 15.000 €, un royalty del 5 % y un canon publicitario del 1 %; ojo, es un «desde», no una cifra cerrada. Y una tercera declara 45.000 € de inversión total, 12.000 € de canon de entrada y un royalty del 6 % de la facturación, con contrato de 10 años renovables. Todo ello es declarado por el franquiciador a través de un agregador, sin fecha de dato por marca: orden de magnitud, no precio de contrato (L'Express Franchise, «¿Cómo abrir una churrería en España? TOP 10 marcas de churros», 30-06-2026).
+
+El veredicto de El Molinete es por su cuenta. En el plan financiero a tres años, hoja «Inversión Inicial», la inversión total, con el fondo de maniobra incluido, es de 165.468 €. Pero la comparación se hace en el libro de la calculadora de inversión, hoja «Franquicia o Independiente»: las inversiones publicadas por las enseñas van de 6.000 € a 320.000 €, un abanico tan amplio que por sí solo no dice nada, y por debajo de la inversión de apertura de El Molinete quedan 2 enseñas de base comparable. La tabla siguiente muestra la inversión que publican las enseñas, con su base.
+
+El umbral que cambia el veredicto tiene dos puertas. Elegirías la franquicia si no tienes oficio de churrero ni proveedor y tu plan aguanta el royalty en el peor mes, que es el de verano. O si la enseña te da una ubicación que solo no conseguirías: ahí lo que compras es el sitio, y el sitio es lo más difícil de replicar.
+
+La norma sólo aparece si eliges la enseña. Si te suministra la masa de forma centralizada y operas bajo su marca, te alcanza la parte B del anexo II de la acrilamida, en los términos del art. 2.3 del Reglamento (UE) 2017/2158 (comprobado el 3 de octubre de 2026). Son tres condiciones a la vez: operas bajo marca o licencia, como parte de un funcionamiento interconectado, y siguiendo las instrucciones de quien te suministra de forma centralizada. Si falta una, no es la parte B. Y si fríes patatas frescas, la parte A te alcanza igual, seas franquiciado o independiente.
