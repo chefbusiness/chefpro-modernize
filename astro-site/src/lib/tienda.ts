@@ -116,6 +116,13 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    familia: 'kit-plan-financiero',
+    productos: {
+      es: { slug: 'kit-plan-financiero', vivo: true },
+      en: { slug: 'restaurant-financial-plan-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

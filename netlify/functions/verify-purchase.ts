@@ -309,6 +309,18 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit Plan Financiero para Restaurantes</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 10 plantillas financieras (8 + 2 bonus):',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-10-03): gemelo de kit-plan-financiero, producto independiente con su propio
+  // acceso (mismo patrón que restaurant-schedule-templates). `lang: 'en'` elige los textos fijos del
+  // email (netlify/shared/email-i18n.ts) y la página de estado cripto /en/crypto-payment; precio en
+  // USD (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'restaurant-financial-plan-templates': {
+    accessPath: '/en/digital-products/restaurant-financial-plan-templates/access',
+    emailSubject: 'Your access to Restaurant Financial Plan Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Restaurant Financial Plan Kit Pro</strong> is ready. Click the button to open your dashboard and download the 8 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

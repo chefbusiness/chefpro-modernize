@@ -27,6 +27,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'kit-inventario', label: 'Kit Control de Inventario (€14)' },
   { id: 'restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro (EN, $19)' },
   { id: 'kit-plan-financiero', label: 'Kit Plan Financiero (€39)' },
+  { id: 'restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro (EN, $49)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
   { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },
   { id: 'guia-restaurante-casual', label: 'Guía Restaurante Casual (€65)' },
