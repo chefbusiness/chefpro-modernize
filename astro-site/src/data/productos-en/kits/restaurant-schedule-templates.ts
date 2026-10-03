@@ -327,6 +327,7 @@ const data: KitExcelData = {
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
+    { href: '/en/digital-products/restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro' },
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],

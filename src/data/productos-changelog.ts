@@ -561,6 +561,29 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-03): Restaurant Financial Plan Kit Pro, primera edición inglesa del contenido
+  // 2.0 del Kit Plan Financiero (SPEC financial-kit D20: la EN nace en 2.0). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/RestaurantFinancialPlanKitDashboard.tsx.
+  'restaurant-financial-plan-templates': {
+    version: '2.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 8 financial planning templates plus 2 bonuses, adapted to the US with notes for the UK.',
+          'Revenue excluding sales tax in every template except the cash flow forecast, which works with cash: sales tax collected and remitted quarterly (an 8% example rate you replace with your state and local rate), payroll taxes deposited the following month and employee withholding shown on its own line.',
+          'Startup costs & capex budget with a recoverable tax column (0 in the US, 20% VAT in the UK) and straight-line depreciation by useful life in years (build-out 10, kitchen equipment 7, furniture 7, technology 5, all editable).',
+          'Lender & Investor Summary with IRR, NPV and payback on the project cash flows, an SBA 7(a)-style example loan (10 years, optional interest-only period), DSCR checked against a 1.25× target and the 1.15× SBA minimum, and a collateral sheet.',
+          'KPI dashboard with benchmarks for US full-service restaurants as editable kit estimates (labor 30% / 35%, occupancy 6% / 10%), sales per sq ft and RevPASH per seat-hour.',
+          'Pre-opening checklist with 54 tasks in 7 phases and the US steps: business entity, EIN, seller\'s permit, business license, health permit, liquor license, workers\' comp and payroll registrations.',
+          'No currency symbol in the templates (you type amounts in your own currency), area in square feet, US date format, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

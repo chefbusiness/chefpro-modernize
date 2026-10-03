@@ -30,6 +30,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'kit-inventario': { accessPath: '/kit-inventario-access', label: 'Kit Control de Inventario' },
   'restaurant-inventory-templates': { accessPath: '/en/digital-products/restaurant-inventory-templates/access', label: 'Restaurant Inventory Kit Pro', lang: 'en' },
   'kit-plan-financiero': { accessPath: '/kit-plan-financiero-access', label: 'Kit Plan Financiero' },
+  'restaurant-financial-plan-templates': { accessPath: '/en/digital-products/restaurant-financial-plan-templates/access', label: 'Restaurant Financial Plan Kit Pro', lang: 'en' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },

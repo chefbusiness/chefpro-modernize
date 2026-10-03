@@ -738,6 +738,21 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-simulador': '/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx',
     'bonus-checklist': '/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx',
   },
+  // Tienda EN (2026-10-03): Restaurant Financial Plan Kit Pro. MISMAS claves que kit-plan-financiero
+  // (las del TEMPLATES de src/pages/RestaurantFinancialPlanKitDashboard.tsx) → ficheros EN de
+  // /dl/restaurant-financial-plan-templates/ (SPEC financial-kit §2.1).
+  'restaurant-financial-plan-templates': {
+    'plan-previsional': '/dl/restaurant-financial-plan-templates/01-restaurant-financial-projections-3-year.xlsx',
+    'plan-previsional-5': '/dl/restaurant-financial-plan-templates/01b-restaurant-financial-projections-5-year.xlsx',
+    'break-even': '/dl/restaurant-financial-plan-templates/02-restaurant-break-even-calculator.xlsx',
+    'cash-flow': '/dl/restaurant-financial-plan-templates/03-restaurant-cash-flow-forecast.xlsx',
+    'capex': '/dl/restaurant-financial-plan-templates/04-restaurant-startup-costs-budget.xlsx',
+    'pyl': '/dl/restaurant-financial-plan-templates/05-restaurant-pl-template-budget-vs-actual.xlsx',
+    'ratios': '/dl/restaurant-financial-plan-templates/06-restaurant-kpi-ratios-dashboard.xlsx',
+    'viabilidad': '/dl/restaurant-financial-plan-templates/07-restaurant-loan-proposal-lender-summary.xlsx',
+    'bonus-simulador': '/dl/restaurant-financial-plan-templates/BONUS-08-what-if-scenario-simulator.xlsx',
+    'bonus-checklist': '/dl/restaurant-financial-plan-templates/BONUS-09-pre-opening-financial-checklist.xlsx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

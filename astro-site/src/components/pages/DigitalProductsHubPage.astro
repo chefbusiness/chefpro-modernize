@@ -61,9 +61,28 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
-  // Restaurant Staff Scheduling Kit Pro (3-oct-2026, después del HACCP): el más nuevo → 1; HACCP → 2,
-  // eBook → 3. Imagen: foto propia sin texto (staff-en-schedule-board); la del ES, tareas-gestion-personal-hero,
-  // enseña una app de turnos en una tablet, engañosa en un producto Excel.
+  // Restaurant Financial Plan Kit Pro (3-oct-2026, después del Staff Scheduling): el más nuevo → 1;
+  // Staff Scheduling → 2, HACCP → 3, eBook → 4. Imagen: la portada del ES (plan-financiero-hero), sin
+  // texto en español ni «€».
+  {
+    name: 'Restaurant Financial Plan Kit Pro',
+    slug: '/kit-plan-financiero',
+    description: '10 Excel templates for restaurant financial planning: 3- and 5-year projections, break-even calculator, cash flow forecast, startup costs, monthly P&L budget vs actual, KPI dashboard and a lender & investor summary.',
+    features: [
+      'P&L budget vs actual with a traffic light',
+      'Cash flow with quarterly sales tax and low-cash alerts',
+      'IRR, NPV, payback and DSCR for lenders',
+      'Startup costs with useful lives and depreciation',
+    ],
+    iconName: 'TrendingUp',
+    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  // Restaurant Staff Scheduling Kit Pro (3-oct-2026, después del HACCP) → 2. Imagen: foto propia sin
+  // texto (staff-en-schedule-board); la del ES, tareas-gestion-personal-hero, enseña una app de turnos
+  // en una tablet, engañosa en un producto Excel.
   {
     name: 'Restaurant Staff Scheduling Kit Pro',
     slug: '/kit-gestion-personal',
@@ -80,7 +99,7 @@ const products = [
     badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
-  // HACCP Food Safety Kit Pro (3-oct-2026) → 2. Imagen sin texto en español
+  // HACCP Food Safety Kit Pro (3-oct-2026) → 3. Imagen sin texto en español
   // (la del ES, appcc-inspector-sanidad, lleva rótulos en castellano).
   {
     name: 'HACCP Food Safety Kit Pro',
@@ -98,7 +117,7 @@ const products = [
     badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
-  // 3-oct-2026: Gastro Pro Prompts eBook (ai-prompts-for-restaurants) → 3 (el HACCP y el Staff Scheduling, del mismo día, son más nuevos).
+  // 3-oct-2026: Gastro Pro Prompts eBook (ai-prompts-for-restaurants) → 4 (el HACCP, el Staff Scheduling y el Financial Plan, del mismo día, son más nuevos).
   {
     name: 'Gastro Pro Prompts eBook',
     slug: '/pro-prompts-ebook',
@@ -386,22 +405,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['pdf', 'guides', 'dark-kitchen'],
-  },
-  {
-    name: 'Financial Plan Kit for Restaurants',
-    slug: '/kit-plan-financiero',
-    description: '10 Excel templates that work together: 3- and 5-year financial plan, break-even point, cash flow, CAPEX, monthly P&L, financial ratios, and a bank-ready feasibility report.',
-    features: [
-      '3- and 5-year financial forecast',
-      'Break-even point with 3 scenarios',
-      'Cash flow with liquidity alerts',
-      'Bank-ready feasibility report',
-    ],
-    iconName: 'TrendingUp',
-    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
   {
     name: 'Business Plan: Bar-Restaurant',

@@ -292,6 +292,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 10 plantillas financieras (8 + 2 bonus):',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-10-03): gemelo de kit-plan-financiero (ver verify-purchase.ts).
+  'restaurant-financial-plan-templates': {
+    accessPath: '/en/digital-products/restaurant-financial-plan-templates/access',
+    emailSubject: 'Your access to Restaurant Financial Plan Kit Pro',
+    emailTitle: 'Access your Restaurant Financial Plan Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 8 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

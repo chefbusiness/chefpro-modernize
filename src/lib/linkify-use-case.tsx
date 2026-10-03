@@ -45,6 +45,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Restaurant Inventory Kit Pro': '/en/digital-products/restaurant-inventory-templates',
   'HACCP Food Safety Kit Pro': '/en/digital-products/haccp-templates',
   'Restaurant Staff Scheduling Kit Pro': '/en/digital-products/restaurant-schedule-templates',
+  'Restaurant Financial Plan Kit Pro': '/en/digital-products/restaurant-financial-plan-templates',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

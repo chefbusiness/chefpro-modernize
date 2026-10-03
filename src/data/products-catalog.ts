@@ -127,11 +127,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-plan-financiero',
     url: '/kit-plan-financiero',
     price: '€39',
-    name: { es: 'Kit Plan Financiero', en: 'Financial Plan Kit' },
+    name: { es: 'Kit Plan Financiero', en: 'Restaurant Financial Plan Kit Pro' },
     description: {
       es: 'Cash flow, P&L, escenarios y dashboard de ratios financieros.',
       en: 'Cash flow, P&L, scenarios, and a financial ratios dashboard.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `restaurant-financial-plan-templates`, $49 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-financial-plan-templates' },
+    priceByLang: { en: '$49' },
   },
   'kit-tareas': {
     id: 'kit-tareas',
