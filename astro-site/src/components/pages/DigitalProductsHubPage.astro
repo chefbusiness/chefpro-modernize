@@ -61,6 +61,23 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // 3-oct-2026: Gastro Pro Prompts eBook (ai-prompts-for-restaurants), el más nuevo → en 1.
+  {
+    name: 'Gastro Pro Prompts eBook',
+    slug: '/pro-prompts-ebook',
+    description: '300 AI prompts for restaurants and hospitality, ready to copy into ChatGPT, Claude, Gemini or AI Chef Pro: creative cooking, pastry, catering, management, marketing and more.',
+    features: [
+      'PDF eBook + exclusive dashboard',
+      '300 prompts in 33 sections',
+      'Works with ChatGPT, Claude, Gemini',
+      '2 bonuses + lifetime updates',
+    ],
+    iconName: 'BookOpen',
+    image: '/tienda-en/ai-prompts-for-restaurants/ebook-mockup-bundle-en.webp',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'ai'],
+  },
   {
     name: 'Restaurant Inventory Kit Pro',
     slug: '/kit-inventario',
@@ -204,22 +221,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
-  },
-  {
-    name: 'Gastro Pro Prompts eBook',
-    slug: '/pro-prompts-ebook',
-    description: '300+ AI prompts built specifically for hospitality: creative cuisine, pastry, catering, management, marketing and more.',
-    features: [
-      'PDF eBook + exclusive dashboard',
-      '300+ prompts organized by category',
-      'Works with ChatGPT, Claude, Gemini',
-      'Lifetime updates',
-    ],
-    iconName: 'BookOpen',
-    image: '/ebook-mockup-bundle.webp',
-    badge: 'Best Seller',
-    badgeColor: 'bg-[#FFD700]/20 text-[#FFD700]',
-    tags: ['pdf', 'ai'],
   },
   {
     name: 'HACCP Templates Pack',

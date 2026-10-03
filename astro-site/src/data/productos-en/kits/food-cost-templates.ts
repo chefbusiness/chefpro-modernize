@@ -362,6 +362,7 @@ const data: KitExcelData = {
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
+    { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },
     { href: '/en/food-cost-calculator-restaurant', label: 'Food Cost Calculator for Restaurants' },
     { href: '/en/food-cost-calculator-restaurant-ai', label: 'Restaurant Food Cost with AI' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },

@@ -60,7 +60,7 @@ It works like this: you tell the agent what you want to do, in your own words, a
 
 There is no separate module to contract: it's included for all AI Chef Pro users, at no extra cost.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ proven professional prompts for chefs and owners.</p><a href="/pro-prompts-ebook?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-agents-connect-gmail-sheets-instagram" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Pro Prompts eBook for €9</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Gastro Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ proven professional prompts for chefs and owners.</p><a href="/en/digital-products/ai-prompts-for-restaurants?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-agents-connect-gmail-sheets-instagram" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Gastro Pro Prompts eBook for $14</a></aside>
 
 These are the 16 available platforms and how someone in the industry uses them:
 
