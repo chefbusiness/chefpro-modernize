@@ -1,0 +1,36 @@
+{
+  "producto": "guia-churreria-chocolateria",
+  "fecha": "2026-10-03",
+  "lang": "es",
+  "_doc": [
+    "Producto 51 · «Cómo Montar una Churrería-Chocolatería» · 65 €. SPEC §7.2 (D20): solo el post propio.",
+    "Pasada 1: guia-dark-kitchen → esta guía, y el miswiring kit-tareas-bar → guia-chocolateria-obrador.",
+    "Pasada 2 (pack-appcc.json): kit-tareas-restaurante-creativo → pack-appcc."
+  ],
+  "nunca": [
+    "guia-chocolateria-obrador",
+    "pack-appcc",
+    "kit-escandallos",
+    "plan-negocio-food-truck",
+    "plan-negocio-cafeteria",
+    "kit-gestion-personal"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 1,
+    "solo_enlace": 0,
+    "miswiring": 1
+  },
+  "posts": {
+    "ia-churrerias-guia-completa": {
+      "accion": "SUSTITUIR",
+      "victima": "guia-dark-kitchen",
+      "miswiring": {
+        "viejo": "kit-tareas-bar",
+        "nuevo": "guia-chocolateria-obrador"
+      },
+      "ancla_n": 2,
+      "parrafo": "Si quieres el desglose partida a partida con sus fuentes, el escandallo del churro y de la taza, el plan financiero a tres años y el checklist legal de la fritura, con un caso completo de 75 m² resuelto, lo tienes en la guía {ENLACE}."
+    }
+  }
+}

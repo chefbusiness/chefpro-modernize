@@ -1,0 +1,26 @@
+{
+  "producto": "pack-appcc",
+  "fecha": "2026-10-03",
+  "lang": "es",
+  "_doc": [
+    "Pasada 2 de la Churrería (SPEC §7.2): el registro del aceite de fritura es el fichero 09 del pack."
+  ],
+  "nunca": [
+    "guia-churreria-chocolateria",
+    "guia-chocolateria-obrador"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 1,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "ia-churrerias-guia-completa": {
+      "accion": "SUSTITUIR",
+      "victima": "kit-tareas-restaurante-creativo",
+      "ancla_n": 6,
+      "parrafo": "El aceite de fritura es el punto de control que más pesa en una churrería: el registro de cambios y de compuestos polares lo tienes listo en {ENLACE}."
+    }
+  }
+}
