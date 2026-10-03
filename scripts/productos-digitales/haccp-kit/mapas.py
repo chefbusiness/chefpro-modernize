@@ -30,6 +30,7 @@ Contenido:
   · SEVERIDAD_15                                        gravedad de los 25 puntos del 15 (D12)
   · LIMITES_F                                           límites US de las fórmulas con su fuente (SPEC §3)
   · POR_CELDA                                           textos EN fijados por celda (02 familias, 17 col. I y K)
+  · FECHAS_TEXTO_EN                                     fechas de ejemplo que cambian en EN (11: INC-001 = 9/9/26)
 """
 import json
 import math
@@ -188,7 +189,7 @@ CLAVES.update([
     ('Trimestral', 'Quarterly'), ('Semestral', 'Twice a year'), ('Anual', 'Yearly'),
     # 07 plagas
     ('Desinsectación', 'Insect treatment'), ('Desratización', 'Rodent treatment'),
-    ('Desinfección', 'Disinfection'), ('Revisión de cebos', 'Bait station check'),
+    ('Desinfección', 'Exclusion / proofing check'), ('Revisión de cebos', 'Bait station check'),   # revisión final: no «Disinfection»
     ('Inspección visual', 'Visual inspection'), ('Otro', 'Other'),
     ('Cebadero de roedores', 'Rodent bait station'), ('Trampa de captura', 'Mechanical trap'),
     ('Lámpara insectocutora', 'Insect light trap'), ('Trampa de feromonas', 'Pheromone trap'),
@@ -206,7 +207,7 @@ CLAVES.update([
     # 11 acciones correctivas
     ('Temperatura', 'Temperature'), ('Producto rechazado', 'Rejected product'), ('Limpieza', 'Cleaning'),
     ('Plagas', 'Pests'), ('Reclamación de cliente', 'Customer complaint'), ('Alérgeno', 'Allergen'),
-    ('Contaminación', 'Contamination'), ('Caducidad', 'Expired / date mark'), ('Trazabilidad', 'Traceability'),
+    ('Contaminación', 'Contamination'), ('Caducidad', 'Expiry / date mark'), ('Trazabilidad', 'Traceability'),
     ('Formación', 'Training'),
     ('01 Temperaturas diario', '01 Food temperatures'), ('02 Recepción temperaturas', '02 Receiving temps'),
     ('04 Limpieza diaria', '04 Daily cleaning'), ('05 Recepción mercancías', '05 Receiving checklist'),
@@ -443,7 +444,8 @@ SEVERIDAD_15 = OrderedDict([
     (21, ('Priority', '§3-302.11 separation')), (22, ('Core', '§6-305.11 dressing areas')),
     (24, ('Priority', '§3-501.18 discard past date')), (25, ('Priority', '§3-302.11(A) raw below RTE')),
     (26, ('Priority foundation', '§3-501.17 date marking')), (27, ('Core', '§3-305.11 off the floor')),
-    (28, ('Priority', '§7-201.11 chemicals')), (30, ('Core', '§2-302/2-303/2-402 hygiene')),
+    (28, ('Priority', '§7-201.11 chemicals')),
+    (30, ('Priority foundation', '§2-302.11 fingernails (Pf); §2-303/2-304/2-402 hygiene (C)')),   # revisión final
     (31, ('Core', 'kit criterion, no Food Code item')), (32, ('Priority foundation', '§3-501.13 thawing')),
     (33, ('Priority', '§3-402.11 parasite destruction')), (34, ('Priority foundation', '§2-103.11(N) allergens')),
 ])
@@ -451,6 +453,13 @@ SEVERIDAD_15 = OrderedDict([
 # 19!A3: la altitud pasa a pies (D17)
 ALTITUD_19 = ('Elevation of your kitchen (feet above sea level):',
               'Corrects the boiling-point reference. Leave 0 at sea level.')
+
+# Fechas de ejemplo (texto dd/mm/aaaa del ES) que cambian en EN (revisión final): INC-001 es la lectura del
+# MIÉRCOLES de 01 «Weekly Log»!B9 (44 °F), así que se abre y se cierra el miércoles 9/9/26, no el lunes 7.
+FECHAS_TEXTO_EN = OrderedDict([
+    (('11', 'Acciones Correctivas', 'B5'), '09/09/2026'),
+    (('11', 'Acciones Correctivas', 'L5'), '09/09/2026'),
+])
 
 
 def patron(formula):
@@ -505,6 +514,9 @@ def autotest():
     for k, v in POR_CELDA.items():
         if re.search(r'[áéíóúñ¿¡]|\bde\b|\by\b', v):
             err.append('POR_CELDA con español: %r' % (k,))
+    for k, v in FECHAS_TEXTO_EN.items():
+        if not re.fullmatch(r'\d\d/\d\d/\d{4}', v):
+            err.append('FECHAS_TEXTO_EN no es dd/mm/aaaa: %r' % (k,))
     if len(LIMITES_02) != 10:
         err.append('LIMITES_02 debe tener 10 filas (A5:A14)')
     # el semáforo universal tiene que ser inyectivo

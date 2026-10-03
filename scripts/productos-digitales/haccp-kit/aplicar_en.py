@@ -78,9 +78,9 @@ MESES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August
          'September', 'October', 'November', 'December']
 VERDE = 'E8F5E9'
 FMT_FECHA = 'mm-dd-yy'                     # numFmtId 14 (fecha corta del sistema)
-FMT_FECHA_HORA = 'm/d/yy h:mm'             # numFmtId 22
+FMT_FECHA_HORA = 'm/d/yy h:mm AM/PM'       # formato propio (revisión final): reloj de 12 h, como las horas sueltas
 FMT_HORA = 'h:mm AM/PM'                    # numFmtId 18
-NUMFMT = {FMT_FECHA: 14, FMT_FECHA_HORA: 22, FMT_HORA: 18}
+NUMFMT = {FMT_FECHA: 14, FMT_FECHA_HORA: None, FMT_HORA: 18}   # None = formato propio: G3 lo compara por cadena
 INVARIABLES = set(extraer_textos.INVARIABLES)
 RX_VERSION_ES = extraer_textos.RX_VERSION
 HOJA_INSTR_EN = mapas.HOJAS['Instrucciones']
@@ -506,6 +506,7 @@ def capa_celdas(L):
     if L.corto == '19':
         L.poner('Verificación Termómetros', 'A3', mapas.ALTITUD_19[0], lambda x: isinstance(x, str))
         L.poner('Verificación Termómetros', 'C3', mapas.ALTITUD_19[1], lambda x: isinstance(x, str))
+        envolver_a3(L.ws('Verificación Termómetros'), '19')
         n += 2
     L.rep['capa_celdas'] = n
 
@@ -527,6 +528,19 @@ def capa_temperaturas(L):
             L.poner(h, cel.coordinate, mapas.c_a_f(v, dec))
             n += 1
     L.rep['temperaturas_f'] = n
+
+
+# Revisión final: la etiqueta de A3 (columna de 14) salía cortada en 17 Thawing, 18 y 19 → ajuste de texto y fila 3
+# más alta (2-3 líneas en 17/18; la del 19 ocupa 4).
+ALTO_FILA3 = {'17': 45, '18': 45, '19': 60}
+
+
+def envolver_a3(ws, corto):
+    al = copy.copy(ws['A3'].alignment)
+    al.wrap_text = True
+    al.vertical = al.vertical or 'center'
+    ws['A3'].alignment = al
+    ws.row_dimensions[3].height = ALTO_FILA3[corto]
 
 
 def estilo_de(dst, src):
@@ -554,6 +568,7 @@ def capa_parametros(L, modelo):
             cel = L.poner(h, coord, v)
             estilo_de(cel, modelo[coord])
             n += 1
+        envolver_a3(ws, c)
     L.rep['parametros'] = n
 
 
@@ -565,7 +580,8 @@ def fechas_texto(L):
             cel = L.ws(h)[x['celda']]
             if cel.value != x['texto']:
                 raise Aborta('%s %s!%s: fecha de texto %r ≠ censo %r' % (L.corto, h, x['celda'], cel.value, x['texto']))
-            cel.value = datetime.datetime.strptime(x['texto'], '%d/%m/%Y')
+            texto = mapas.FECHAS_TEXTO_EN.get((L.corto, h, x['celda']), x['texto'])   # revisión final: INC-001
+            cel.value = datetime.datetime.strptime(texto, '%d/%m/%Y')
             cel.number_format = FMT_FECHA
             n += 1
     L.rep['fechas_texto'] = n

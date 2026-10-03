@@ -97,3 +97,34 @@ trabajo), 1.141 fórmulas con valor en caché, 58 desplegables y validaciones, 1
 (FDA Food Code 2022: 41 °F frío, 135 °F caliente, 165/155/145/135 °F cocción, enfriamiento en 2 tramos 135→70→41 °F,
 parásitos −4 °F 168 h / −31 °F 15 h, termómetros ±2 °F con corrección por altitud en pies); US Letter y pie
 «AI Chef Pro · aichef.pro · Page &P of &N» en las 48 hojas. Recordatorios: SPEC §9 y `TIENDA-INTERNACIONAL.md` §6.
+
+## 6. Revisión final (sesión Claude Code, 3-oct-2026)
+
+Arreglos de la revisión adversarial final, aplicados en la fuente (`textos_en/G1-G3.json` por id, `mapas.py`,
+`aplicar_en.py`, `gates_en.py`) y los 21 xlsx reconstruidos en el VPS (worktree temporal, borrado al terminar; sha256
+idénticos tras el `scp`). Todos los ids tocados tenían `n_apariciones = 1` salvo `c0431` («Caducidad», cabecera de
+05 + ítem de la DV del 11), que cambia en los dos sitios a propósito. 74 textos cambiados.
+
+| # | Qué | Dónde |
+|---|---|---|
+| 1 | Salud del personal: ictericia, dolor de garganta con fiebre, herida infectada/supurante; vómitos/diarrea = 24 h sin síntomas (§2-201.12-.13; UK 48 h, junto a esa regla y no a la de ictericia); garganta con fiebre = alta médica escrita; ictericia o Big 6 = vuelta solo con el visto bueno de sanidad | 13 Instructions!B16, Hygiene Checklist!B25-B26 y tarjeta 13 de la landing |
+| 2 | ALERT de enfriamiento = desechar + 11; recalentar a 165 °F y reiniciar solo si se detecta antes de las 2 h | 17 Instructions!B13, Cooling!A46 |
+| 3 | Desinfectante 50-200 ppm con tiras (§4-501.114, §4-302.14); «1:50» fuera de superficies de contacto (≈ 1 cucharadita por galón, escrito «about»: «≈» no está en la lista blanca de G2); lavavajillas químico 50-100 ppm; cada 4 h en uso continuo (§4-602.11). G6 pasa a lavar-aclarar-desinfectar-**secar al aire** (§4-901.11: un desinfectante sin aclarado no se aclara ni se seca con papel). En «Chemicals» la lejía 1:50 solo va a cubos, baños y contenedores (ninguna superficie de contacto); B7 añade la dilución de fregaderos | 03 Master Cleaning Plan!D6, D14, G6, G26, Chemicals!B7 |
+| 4 | REPEAT por tiempo (> 2 h a 165 °F) = desechar + 11 (§3-403.11(E)) | 16 Cooking & Reheating!A46, Instructions!B13 |
+| 5 | Fuera la frase «acota el tiempo en la zona de peligro»; agua fría corriente ≤ 70 °F (21 °C) admitida (§3-501.13(B)) | 12 Hazard Analysis!C12, I12, L12; 17 Thawing!A46 |
+| 6 | Control del alérgeno en cocina = OPRP al 100 % de las comandas con alergia (coherente con H17) | 12 Instructions!B14 |
+| 7 | 0,2 mg/L = mínimo a la entrada de la red; cloro total si hay cloramina; residual detectable en la red | 10 Water Checks!A37, Instructions!B13 y B26; 12!I15 |
+| 8 | «Desinfección» → `CLAVES['Desinfección'] = 'Exclusion / proofing check'` (DV 07!B5:B84; ninguna celda de ejemplo la usaba) | 07 Instructions!B6, B15 · `mapas.CLAVES` |
+| 9 | CFPM: «al menos un empleado con funciones de supervisión» (§2-102.12(A)) | 13 Instructions!B12, 15!C8, BONUS-01 Training Log!A49 |
+| 10 | Exenciones de §3-402.11(B) completas + declaración escrita del proveedor (§3-402.12(C)); 3.ª vía de congelación −31 °F hasta solidificar + −4 °F 24 h (la fórmula no la comprueba: se anota en «Notes») | 18 Instructions!B13, B24; Parasite Destruction!A46, A48; 15!C33 |
+| 11 | `FMT_FECHA_HORA = 'm/d/yy h:mm AM/PM'` (formato propio, ya no `numFmtId 22`): 160 celdas (17 Thawing D:E, 18 D:E…). `NUMFMT[FMT_FECHA_HORA] = None` y G3 lo compara por cadena | `aplicar_en.py`, `gates_en.py` G3 |
+| 12 | A3 con ajuste de texto y fila 3 más alta: 45 en 17/18; 60 en 19 (su etiqueta ocupa 4 líneas en una columna de 14) | `aplicar_en.envolver_a3` |
+| 13 | INC-001 = miércoles 9/9/26 (lectura de 44 °F de 01 Weekly Log!B9): `mapas.FECHAS_TEXTO_EN` (11!B5, L5), que leen `fechas_texto` y G3 | 11 Corrective Actions |
+| 14 | Reacción alérgica: adrenalina primero, luego 911 (UK 999) | 14 Instructions!B13, Allergen Chart!B29-B30 y tarjeta 14 de la landing |
+| 15 | Referencias cruzadas con paréntesis apilados → «template NN (Título corto)» con un solo nivel (35 textos reescritos; los títulos con paréntesis o dos puntos se acortan en todas las referencias: 01, 04, 06, 08, 09, 10, 12 → «HACCP Plan», 17, 18); «Expired» → «Expiry / date mark» (`CLAVES['Caducidad']` + `c0431`); «blast chiller» → «blast freezer» a −22 °F; punto 21 del 15: uñas = Pf (§2-302.11), el punto pasa a Priority foundation en `SEVERIDAD_15` (siguen 25 puntos) | 15, 16, 17, 18, 19, BONUS-02, 05, 11, 01 |
+
+Resultados (VPS, construcción real con `--idempotencia`): idempotencia 0 diferencias · `inject_cache` fallos_pycel=0
+en los 21 · G1-G8 VERDE (G2: 34 textos con °C, todos tras su °F; G3: fechas 14 = 495, fecha-hora = 160, 18 = 120) ·
+AUTOTEST 10/10 CAZADO · `censo-entregables --only haccp-templates --fail` 0 defectos · `gate-no-latinos` 0 ·
+comprobación openpyxl (data_only) en el Mac: los 1.141 valores en caché de las fórmulas, idénticos a los de antes de
+la revisión (0 diferencias), y las celdas de la tabla con su texto nuevo.

@@ -19,7 +19,7 @@ Gates (SPEC §8):
   G2 restos: cero español, «€», caracteres no latinos o fuera de la lista blanca, coma decimal, horas de 24 h,
      normativa ES (RX_NORMA, salvo la cita UK «retained»), IDs internos, en valores, literales, DV, CF, formatos,
      pies y docProps; todo «°C» de texto va entre paréntesis tras su °F;
-  G3 formato: paperSize 1 en las 48; fechas del censo con 14/22/18 según su tipo; las 62 de texto convertidas
+  G3 formato: paperSize 1 en las 48; fechas del censo con 14 / «m/d/yy h:mm AM/PM» / 18 según su tipo; las 62 de texto convertidas
      (fecha real, 14); pie D21 en las 48; firma PIE_EN; versión D21; docProps; Instructions!B2 = título D5;
   G4 claves: cada ítem de DV ∈ CLAVES (o D13); cada celda escrita en un rango con DV de lista es un ítem;
      cada número de ejemplo en una DV numérica, dentro de sus límites;
@@ -517,22 +517,26 @@ def gateG3(R, carpeta, datos, mes):
                 R.fallo('%s:%s: paperSize %s ≠ 1 (Letter)' % (en, ws.title, ws.page_setup.paperSize))
             fechas = {}
             for f in hd['fechas']:
-                fechas[f['celda']] = A.NUMFMT[A.tipo_fecha(f['formato'])]
+                fechas[f['celda']] = A.tipo_fecha(f['formato'])
             for f in hd['fechas_texto']:
                 c = ws[f['celda']]
                 n['fechas_texto'] += 1
-                esp = datetime.datetime.strptime(f['texto'], '%d/%m/%Y')
+                texto = mapas.FECHAS_TEXTO_EN.get((corto, h_es, f['celda']), f['texto'])     # revisión final: INC-001
+                esp = datetime.datetime.strptime(texto, '%d/%m/%Y')
                 if c.value != esp:
-                    R.fallo('%s:%s!%s: fecha de texto %r no convertida (%r)' % (en, ws.title, f['celda'], f['texto'], c.value))
-                fechas[f['celda']] = 14
-            for coord, fid in fechas.items():
+                    R.fallo('%s:%s!%s: fecha de texto %r no convertida (%r)' % (en, ws.title, f['celda'], texto, c.value))
+                fechas[f['celda']] = A.FMT_FECHA
+            for coord, fmt in fechas.items():
                 c = ws[coord]
-                n['fechas_%d' % fid] += 1
-                if c._style.numFmtId != fid:
+                fid = A.NUMFMT[fmt]                       # None = formato propio (fecha-hora m/d/yy h:mm AM/PM)
+                n['fechas_%s' % (fid if fid is not None else 'fecha_hora')] += 1
+                if fid is not None and c._style.numFmtId != fid:
                     R.fallo('%s:%s!%s: fecha con numFmtId %s ≠ %s' % (en, ws.title, coord, c._style.numFmtId, fid))
+                if fid is None and c.number_format != fmt:
+                    R.fallo('%s:%s!%s: fecha-hora con formato %r ≠ %r' % (en, ws.title, coord, c.number_format, fmt))
             for c in ws._cells.values():
-                if c._style.numFmtId in (14, 18, 22) and c.coordinate not in fechas:
-                    R.fallo('%s:%s!%s: numFmtId %s en una celda que no era fecha' % (en, ws.title, c.coordinate, c._style.numFmtId))
+                if (c._style.numFmtId in (14, 18, 22) or c.number_format == A.FMT_FECHA_HORA) and c.coordinate not in fechas:
+                    R.fallo('%s:%s!%s: formato de fecha %r en una celda que no era fecha' % (en, ws.title, c.coordinate, c.number_format))
             for k in hd['cabeceras_pies']:
                 obj, pos = k.split('.')
                 v = getattr(getattr(ws, obj), pos).text
