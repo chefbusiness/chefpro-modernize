@@ -1,0 +1,86 @@
+### El proyecto en una página: qué se monta, dónde y para quién
+
+Churrería-Chocolatería El Molinete es una churrería-chocolatería con sala, barra, terraza y despacho a calle, en un local de barrio de una gran ciudad. Abre del desayuno a la merienda y, además, la noche del fin de semana. Vende churros y porras (el churro grueso; en otras zonas se oyen «tejeringo», «calentito» o «jeringo»), chocolate a la taza, cafés y una carta de verano.
+
+Una advertencia de vocabulario, una sola vez. El chocolate a la taza de aquí lleva almidón y es espeso: no es el «chocolate caliente» de México o Chile, aunque a veces se use el mismo nombre. La máquina que dosifica la masa es la churrera o dosificadora, y «montar» un negocio es lo que en México se dice «poner» uno.
+
+El Molinete es un caso modelado, no un negocio real. No tiene ciudad, dueños ni historia. Cada cifra de este plan sale de una celda de las ocho herramientas Excel del pack, que puedes abrir y cambiar por la tuya. Es una plantilla rellena, no una previsión de tus resultados.
+
+### La inversión, su financiación y el resultado del año de crucero
+
+La inversión de apertura, sin fondo de maniobra, es de 86.416 €. El fondo de maniobra es de 79.052 €. La inversión total es de 165.468 €. Todo ello está en la hoja «Inversión Inicial» del libro plan-financiero-3-anos-churreria.xlsx.
+
+La financiación se reparte así:
+
+- Préstamo bancario: 99.300 €.
+- Recursos propios que pone el promotor: 66.168 €.
+
+El préstamo cubre la mayor parte y el promotor pone el resto de su bolsillo. El cuadro siguiente recoge la inversión y su financiación línea por línea.
+
+El resultado del año de crucero, aquí y no en la sección financiera, es este:
+
+- Ventas sin IVA: 232.557 €.
+- Resultado antes de impuestos: 32.139 €.
+- Resultado sobre ventas: 13,8 %.
+- Punto de equilibrio: 250 raciones al día.
+- Raciones al día previstas, media del año: 298.
+- Margen de seguridad: 48 raciones al día.
+
+Lectura para un banco: El Molinete necesita vender 250 raciones al día para no perder y el plan prevé 298 de media. Entre una cifra y otra hay 48 raciones de colchón. Es un colchón estrecho en un día normal y se estrecha más en el valle de julio y agosto, algo que el libro de temporada permite comprobar mes a mes. Las raciones previstas son un supuesto declarado de El Molinete: sustitúyelas por las tuyas.
+
+El resultado va antes de impuestos por una razón concreta: el impuesto de sociedades o el IRPF dependen de la forma jurídica, y el plan no la fija. Por eso tampoco se llama beneficio neto a esa cifra. Lo que queda después de impuestos lo calcula tu asesor con la forma que elijas.
+
+### El mercado y la plaza: lo que se sabe y lo que no
+
+Primero, lo que no hay. Ninguna estadística pública cuenta las churrerías ni sus ventas. La clasificación nacional de actividades económicas no tiene clase propia de churrería, y el directorio de empresas del INE solo publica «Hostelería» agregada por comunidad (INE, DIRCE 2025, 2 tablas: tamaño por edad y comunidad por sector, 11-12-2025). Por eso este plan no da un tamaño de mercado ni un número de churrerías: no existen con fuente. Da la plaza.
+
+El contexto, que no es el mercado de la churrería, es el de la hostelería en conjunto: a 1 de enero de 2025 había 313.827 locales de hostelería sobre 3.866.958 locales totales, un 8,1 % (INE, DIRCE 2025, Anexo de tablas, Tabla 2, 11-12-2025). Sirve para situar el sector, nada más. Dentro de esa cifra no se puede separar cuántos son churrerías.
+
+La plaza se mide con precios publicados, cada uno con su sitio y su año:
+
+- La Churrería de Granada, en su carta consultada el 3 de octubre de 2026: ración de 6 churros a 1,20 €, chocolate a la taza a 2,00 € en barra y 2,50 € en terraza, y menú de desayuno a 3,50 €. Abre de lunes a sábado de 9:00 a 21:00 y el domingo de 9:00 a 14:00. Churros con chocolate suman 3,20 € en barra y 3,70 € en terraza.
+- La Artesana, según El Español (21-10-2025): media ración de churros a 1,40 € y ración a 2,60 €. El precio lo da el creador de contenido que entrevista a la familia y no se indica cuántos churros lleva la ración.
+- Chocolatería 1902, según El Español (22-12-2024): siete porras y cuatro chocolates costaron 21 €, unos 5 € por persona con chocolate. Es un dato único de un local céntrico, de 2024, y no es una media del centro de Madrid.
+
+Las franjas que mandan en la plaza son el desayuno y la merienda, más la noche del fin de semana. Los horarios de las cartas consultadas lo confirman: los locales se organizan en torno a esos momentos.
+
+### El concepto y la carta: churro, porra y chocolate a la taza, en sala y para llevar
+
+La carta de El Molinete es corta a propósito:
+
+- Churros y porras, fritos al momento.
+- Chocolate a la taza hecho con un preparado comercial. Lo que dice su etiqueta manda en la denominación de la carta: se decide qué preparado compras y qué declara. Si su etiqueta declara menos cacao del mínimo o grasa vegetal, consulta a tu servicio de consumo antes de imprimir la carta.
+- Cafés.
+- Una carta de verano para julio y agosto.
+
+El peso de cada canal, sala y para llevar, está en la tabla de canales que aparece más abajo, en la hoja «Canales y Punto Muerto» del libro financiero. Es un mix declarado de El Molinete, no «lo normal en una churrería»: el tuyo saldrá de tu local y tu calle.
+
+El ticket medio sin IVA por ración de la carta de invierno es de 2,16 €. El margen sobre materia prima en invierno es de 86,9 %, y conviene leer su definición en la misma frase: el ticket sin IVA menos la materia prima y el aceite absorbido. Ese libro de carta se llama carta-de-apertura-y-escandallo-churro.xlsx y su hoja «Los Dos Márgenes» lo separa en dos. Ese 86,9 % no es la rentabilidad del negocio. La rentabilidad es el resultado antes de impuestos del año de crucero, que ya has visto: 13,8 % de las ventas. Entre uno y otro están el personal, el local, la energía y el resto de gastos fijos.
+
+El chocolate a la taza para llevar queda en una celda verde del libro de la carta, con su aviso. Es una zona gris fiscal y el tipo lo fija tu asesor, no este plan. Los gramos por pieza, la absorción de aceite y los cambios de aceite son supuestos declarados de El Molinete que sustituyes por los tuyos. La guía no es un recetario ni un curso de churrero: no hay recetas ni técnica de masa, y las cantidades por kilo son datos de ejemplo para que las fórmulas calculen.
+
+La bombonería de chocolate es otro negocio y tiene su propia guía: «Cómo Montar una Chocolatería Boutique & Atelier». El método general de escandallo (costeo de la carta) está en el «Kit de Escandallos Pro» y la «Guía Food Cost + Ingeniería de Menú»; ninguno de los dos costea masa frita por kilo, y de eso se ocupa el libro de la carta.
+
+### Las operaciones: el local, la línea de fritura y la hora punta
+
+El local de El Molinete tiene una superficie útil de 75 m². La primera condición del local no es el aforo: es poder sacar la extracción a cubierta. Freír exige campana y conducto a cubierta, y eso es una obra que requiere licencia de obra y técnico.
+
+Con la licencia pasa lo mismo que con tantos papeles de este negocio: son tres cosas distintas. La actividad, la obra y la terraza no son el mismo trámite. El anexo de la Ley 12/2012 incluye el epígrafe 644.6, hasta 750 m² de superficie útil de exposición y venta, y esa actividad se abre sin licencia previa. Pero las obras que requieren proyecto, el conducto de extracción a cubierta incluido, siguen necesitando su licencia de obra y su técnico (arts. 3.3 y 3.4 de la Ley 12/2012, comprobado el 3 de octubre de 2026). Cómo se llama el trámite de un local con mesas, qué piden por la terraza y qué tasas hay depende de tu ayuntamiento y de tu comunidad: son preguntas que haces tú, no datos de este plan. El único marco municipal verificado es el de Madrid y se presenta como ejemplo, no como regla general.
+
+La fritura va en su zona bajo campana. El libro produccion-hora-punta-y-local.xlsx, en su hoja «Cuello de Botella», da la capacidad de la línea: 123 raciones por hora. Es el techo con la masa y el churrero de El Molinete, supuestos declarados, no el máximo de ningún fabricante. La capacidad real de tu línea se mide con tu masa y tu churrero.
+
+La pregunta de la hora punta es si hace falta una segunda churrera. El veredicto del libro temporada-franjas-y-ferias.xlsx, hoja «Capacidad contra el Pico», es este: una, con refuerzo en el pico. Es decir, masa preparada antes de abrir y una persona más. No se compra una segunda máquina; se organiza el pico.
+
+Raciones de un año normal: 107.400, según la hoja «Peso sobre el Año» del mismo libro. Se reparten con temporada alta de octubre a marzo, diciembre por encima de todo, y el valle de julio y agosto, con carta de verano. Los coeficientes de cada mes y el reparto por franjas son supuestos de El Molinete. Cámbialos por los de tu plaza y mira cómo se mueve el punto de equilibrio.
+
+### La plantilla, los turnos y el calendario de apertura
+
+El coste anual de la plantilla es de 119.350 €, según la hoja «Coste de Plantilla» del libro turnos-plantilla-y-madrugada.xlsx. Cada puesto con su coste está en la última tabla de este capítulo. El titular entra en nómina como un puesto más: si no cobra, el resultado del plan engaña.
+
+El convenio de ejemplo es el de Hostelería y Actividades Turísticas de la Comunidad de Madrid, y se usa como ejemplo, sin extrapolarlo. Conviene decirlo con su estado real: las tablas son de 2025, de un convenio vencido el 31-12-2025 y en negociación. La comisión negociadora del nuevo se constituyó el 3-12-2025 y, a 3 de octubre de 2026, no hemos localizado ningún texto nuevo publicado en el boletín oficial de la comunidad, así que siguen aplicándose las tablas de 2025 mientras dura esa negociación (Convenio de Hostelería de la Comunidad de Madrid, art. 5, BOCM de 6 de abril de 2024, y art. 86.2 y 86.3 del Estatuto de los Trabajadores). Ese convenio incluye freidurías, quioscos y chocolaterías. Como ejemplo de lo que dicen sus tablas de 2025 en la clase C, que agrupa cafeterías de una taza, chocolaterías, cafés-bares y bares, el salario base mensual del nivel V es de 1.086,31 €.
+
+Dos advertencias de método. El puesto de churrero se encaja en un nivel por asimilación de funciones, y lo confirma tu asesor. Y el coste de plantilla usa el salario mínimo como suelo: ningún puesto del cálculo queda por debajo de él.
+
+Las horas de apertura con mínimo de cobertura son 83,5 a la semana, cifra de la hoja «Cuadrante por Franja». El cuadrante semana a semana y las nóminas pertenecen al «Kit Gestión de Personal y Turnos»; este plan solo da el mínimo que hay que cubrir. Quien entra de madrugada no es por ello trabajador nocturno en el sentido del Estatuto: son dos figuras distintas, la del plus que paga el convenio por las horas de sus franjas y la del trabajador nocturno que define la ley. Tu asesor laboral te dice a cuál de las dos corresponde cada turno.
+
+El calendario cierra el plan: el proyecto dura 10 meses desde la búsqueda del local hasta la apertura, y El Molinete abre en septiembre. La ruta crítica está en la hoja «Cronograma y Ruta Crítica» del libro checklist-legal-fritura-y-licencias.xlsx. Sobre ella pesan la licencia de obra y el conducto de extracción, que son lo que más tarda y lo que no admite atajos. El registro del aceite de fritura y el resto del autocontrol los trae el «Pack Plantillas APPCC» (el fichero 09-control-aceite-fritura.xlsx).

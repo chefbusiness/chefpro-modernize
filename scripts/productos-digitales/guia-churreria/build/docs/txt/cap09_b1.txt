@@ -1,0 +1,69 @@
+### Cuatro casillas del impuesto para el churro, y la que te toca
+
+El impuesto sobre actividades económicas funciona por epígrafes: cada actividad tiene el suyo, y el epígrafe define qué puedes hacer en tu local. Para el churro hay cuatro casillas que conviene tener delante antes de hablar con nadie, y todas salen del Real Decreto Legislativo 1175/1990, de 28 de septiembre, por el que se aprueban las tarifas y la instrucción del impuesto (comprobado el 3 de octubre de 2026).
+
+- **Epígrafe 644.6, comercio al por menor de masas fritas, patatas fritas, preparados de chocolate y bebidas refrescantes.** Es la casilla del despacho. Su nota faculta para elaborar los productos de churrería y patatas fritas en el propio establecimiento, siempre que se vendan en las propias dependencias de venta. Es decir: fríes detrás del mostrador y vendes delante, al consumidor final.
+- **Epígrafe 663.1, venta fuera de establecimiento comercial permanente.** Es la casilla de la caseta, el puesto o el remolque. Tiene su propia nota de churrería: cuando se dedica exclusivamente a masas fritas, patatas fritas, golosinas, preparados de chocolate y bebidas refrescantes, faculta para elaborar los productos en la propia instalación o vehículo.
+- **Epígrafe 419.3, industrias de elaboración de masas fritas.** Comprende la elaboración de churros y buñuelos y de patatas fritas. Es la frontera: si fabricas para que otros negocios revendan tu producto, ya no eres un comercio minorista, eres industria. Ese obrador queda fuera de este producto; si es tu caso, la conversación es con tu comunidad autónoma y con tu asesor, no con esta guía.
+- **La sala.** Si te sientas a servir chocolate a la taza con churros en mesa, la casilla de la sala es el grupo 676, chocolaterías, o el grupo 673, cafés y bares. Cuál de los dos depende de cómo plantees el negocio, y es una de las preguntas que van al asesor.
+
+Con esto, cada formato cae en su sitio. Una caseta de feria pide el 663.1. Un despacho de ventanilla, el 644.6. Una sala con mesas, el 676 o el 673. Y un negocio con sala y despacho a la vez, como el nuestro, necesita mirar dos casillas en lugar de una.
+
+Ahí está la inferencia que conviene llevar escrita al asesor, y la presento como lo que es: una inferencia, no una afirmación. La nota común que faculta a los grupos 671, 672 y 673 para vender en su propio establecimiento los productos de su servicio no la lleva el grupo 676. Y la regla 4.ª de la Instrucción añade que, con carácter general, el pago de la cuota de una actividad faculta exclusivamente para el ejercicio de esa actividad, salvo que la ley, las tarifas o la propia Instrucción digan otra cosa. Así que una sala en el grupo 676 que además vende churros al peso para llevar puede necesitar también el epígrafe 644.6. Puede, no necesita: es una pregunta, y la respuesta depende de a qué grupo vaya tu sala.
+
+El caso de Churrería-Chocolatería El Molinete lo deja claro. Le tocan dos formatos en el árbol del impuesto: la sala y el despacho. Los epígrafes candidatos que lleva a su asesor son el 676 (chocolatería) o el 673 (cafés y bares), más el 644.6 si vende al peso. ¿Necesita el 644.6 además del epígrafe de la sala? La respuesta del libro es la honesta: pregúntalo, porque depende de si su sala va al 676 o al 673. La tabla de abajo, en la hoja «Árbol IAE y CNAE por Formato» del libro checklist-legal-fritura-y-licencias.xlsx, recoge cada formato con sus candidatos; sustitúyelos por los tuyos.
+
+### Alta sí, pago casi nunca
+
+Aquí viene la parte que tranquiliza, con una trampa que desmontar. El alta en el impuesto de actividades se hace igual para todos, con el modelo 036 o 037, porque el epígrafe es lo que define lo que puedes hacer. Lo que cambia es el pago: según el art. 82.1, letras b y c, del texto refundido de la Ley Reguladora de las Haciendas Locales (Real Decreto Legislativo 2/2004), están exentos los dos primeros años de actividad, todas las personas físicas y las sociedades con una cifra neta de negocios inferior a un millón de euros.
+
+Traducido al caso: ¿paga El Molinete el impuesto de actividades? Alta sí, pago no. Está exento los dos primeros años de actividad, es persona física o sociedad por debajo de un millón de euros de cifra de negocio, y lo más probable es que siga así bastante después. Por eso no vas a encontrar en esta guía ninguna cuota ni ninguna partida de ese impuesto en el plan: no es un coste con el que debas contar, pero sí un papel que debes presentar bien.
+
+Una sola línea, y aquí, sobre una rebaja que circula. Existe una nota del grupo de chocolaterías que reduce la cuota a quien abre seis meses o menos al año, pero con la exención casi nunca te toca, y cerrar julio y agosto no es abrir seis meses. No es una salida para el verano; de la temporada hablamos en el capítulo 14.
+
+Por qué importa hacer el alta aunque no pagues: porque el epígrafe es lo que dice, ante la Administración, qué estás autorizado a vender y a elaborar en ese local. Un despacho que fríe y vende churros al peso con un epígrafe equivocado no se encuentra con una cuota, se encuentra con una discrepancia entre lo que declaraste y lo que haces. Y esa discrepancia es la que aparece en el peor momento: en una comprobación, en una subvención o al vender el traspaso.
+
+### El código de actividad no sale de una tabla: es una pregunta para tu asesor
+
+Aquí hay que decir la verdad entera, incluida la parte incómoda: no hay una tabla oficial que lleve los epígrafes de la churrería a la clasificación nacional de actividades económicas de 2025. Lo hemos buscado. Las notas explicativas de esa clasificación, publicadas por el INE (Notas explicativas CNAE-2025, clases 56.11, 56.12, 56.30, 47.24 y 10.71, 2025), describen cada clase por actividad, y ninguna menciona el churro, la chocolatería ni las masas fritas. Tampoco publican una tabla de equivalencias entre el impuesto de actividades y la clasificación. La búsqueda de las palabras «churro», «chocolater» y «masas fritas» en esas notas da cero apariciones.
+
+Lo que eso significa para ti: la correspondencia entre tu epígrafe y tu código de actividad es una inferencia, y el libro legal la da como pregunta redactada para tu asesor. El Molinete la lleva así: ¿con qué código del CNAE-2025 me doy de alta, y cuál es su equivalente del CNAE-2009, que también hay que comunicar? Mis candidatos son el 56.11 o el 56.30 del CNAE-2025, con su código de 2009, para la sala; y el 47.24 o el 56.11, con su código de 2009, para el despacho. El Real Decreto 10/2025, de 14 de enero, titula el 56.11 como restaurantes, el 56.12 como puestos de comidas, el 56.30 como servicios de bebidas, el 47.24 como comercio al por menor de pan, productos de panadería y confitería, y el 10.71 como fabricación de pan y de productos frescos de panadería y pastelería. Qué casilla encaja con tu forma de trabajar lo decide quien firma el alta, no esta página.
+
+Lo que sí es norma, y no inferencia: quien se incorpora comunica el código de 2025 y, además, el de 2009, mientras no entre en vigor la tarifa de primas de accidentes adaptada a la clasificación nueva (Real Decreto 10/2025, disposición adicional única, letra c). Son dos códigos, no uno. El plazo que se publicó para ponerse al día era para quien ya estaba dado de alta; tú, que te incorporas, comunicas los dos desde el primer momento.
+
+Y una trampa verificada. Si alguien te pasa el antiguo código de los puestos de venta de alimentos, el 4781 de la clasificación anterior, no lo copies: en la clasificación de 2025 el 47.81 es hoy la venta de vehículos de motor. Verifica siempre el código contra la clasificación vigente, no contra el modelo de un compañero.
+
+### Registro sanitario: el de tu comunidad, no el general
+
+Segunda regla con su norma. El comercio al por menor queda excluido del registro general sanitario de empresas alimentarias y alimentos, y se inscribe en el registro de su comunidad autónoma mediante comunicación o declaración responsable, que no habilita por sí sola. Así lo dicen el Real Decreto 191/2011, de 18 de febrero, en su art. 2.2 en la redacción del Real Decreto 1021/2022, de 13 de diciembre (BOE-A-2022-21681, texto consolidado). Una churrería que vende al consumidor final en su local, su despacho o su caseta es comercio al por menor: el mismo art. 2.2, letra a, incluye en esa categoría los locales ambulantes o provisionales (carpas, tenderetes y vehículos) y los de restauración y hostelería. Así que la caseta de feria no va al registro general; va al de tu comunidad. Lo anterior se aplica a El Molinete: comercio al por menor, excluido del registro general; se inscribe en el de su comunidad autónoma, por comunicación o declaración responsable, que no habilita por sí sola y que cambia en cada comunidad.
+
+Ese «cambia en cada comunidad» es literal: el formulario, la sede electrónica, el plazo de contestación y lo que te piden adjuntar son los de tu comunidad. Esta guía no los da y no los extrapola. Lo que sí hace es decirte dónde está la frontera que te sacaría de ese camino fácil.
+
+La frontera es servir churros a otro negocio. La guía informativa del registro general de la Comunidad de Madrid (junio de 2025) pone como ejemplo de actividad restringida precisamente la churrería o pastelería que sirve a la cafetería, y servir a un establecimiento inscrito en el registro general rompe la excepción de actividad restringida que prevé el art. 3 del Real Decreto 1021/2022. Es decir: el día que le vendas la masa o el churro a la cafetería de al lado, dejas de ser minorista a estos efectos. El obrador que fabrica para otros queda fuera de este producto. Si ese es tu plan, pregunta a tu comunidad antes de comprar nada: la tarea cambia de naturaleza.
+
+Una frase que circula, y que no es verdad: que la inspección de sanidad viene antes de la licencia. No es así, y quien lo cree se pasa meses esperando una visita que no toca. El orden de los papeles es el del checklist, que es lo que viene a continuación.
+
+### Las fases dos y cinco del expediente, en orden
+
+El checklist legal del libro está dividido en fases, y de ellas aquí nos interesan dos: la dos, la societaria y fiscal, y la cinco, la sanitaria. El detalle de la fase cinco es de otros capítulos; aquí solo su sitio en el orden.
+
+**Fase dos: sociedad, altas fiscales y proyecto técnico.** Cada tarea lleva su responsable y su plazo orientativo en la hoja «Checklist Legal (F1-F6)» del libro checklist-legal-fritura-y-licencias.xlsx, que aparece en la tabla de abajo. El orden de las tareas es este:
+
+- Constituir la sociedad o darte de alta como autónomo. Primero lo primero: sin titular no hay alta posible.
+- El alta censal, con el doble código de actividad del apartado anterior: el de 2025 y el de 2009.
+- El alta en el impuesto de actividades, con los epígrafes que te haya dicho tu asesor, aunque no pagues.
+- El encargo del proyecto técnico de actividad y de la extracción de humos. Quien lo firma es un técnico, no tú, y se encarga ahora porque su plazo condiciona todo lo que viene detrás. Recuerda que las obras que requieren proyecto, el conducto de extracción a cubierta incluido, siguen necesitando su licencia de obra y su técnico, vayas por declaración responsable o no. La actividad, la obra y la terraza son tres papeles distintos, y cada uno es una pregunta a tu ayuntamiento.
+- La firma del arrendamiento con su fianza. Se firma cuando ya sabes qué epígrafe y qué proyecto necesita ese local, no antes.
+
+Una línea sobre la facturación verificable, porque afecta a una compra de esta fase. Llega en 2027: antes del 1 de enero de 2027 para los contribuyentes del Impuesto sobre Sociedades y antes del 1 de julio de 2027 para el resto de obligados (Real Decreto 1007/2023, disposición final cuarta y art. 3.1 del Reglamento). Así que el terminal de venta que compres hoy ya debe estar adaptado; pregúntaselo al proveedor por escrito antes de pagar.
+
+**Fase cinco: la parte sanitaria.** Cuando el local ya existe y la actividad está a punto de arrancar, estos son los papeles, en este orden, sin desarrollar:
+
+- La comunicación al registro de tu comunidad autónoma, que es la que acabamos de explicar.
+- El plan de autocontrol, con responsable y con registro del aceite de fritura. Es del capítulo 11, y el registro vive en el fichero 09-control-aceite-fritura.xlsx del Pack Plantillas APPCC.
+- Los alérgenos por escrito. Es del capítulo 10.
+- La acrilamida, como buena práctica y no como obligación: controlarla en el churro es recomendable, pero no se puede afirmar que la norma lo exija.
+- El registro de formación del equipo.
+- La denominación del chocolate, según la etiqueta del preparado que compres: la carta debe decir lo que dice el envase, y si dudas, consulta a tu servicio de consumo antes de imprimirla. Y el vaso cobrado aparte, que es una decisión de carta con su correspondiente consecuencia de precio. Todo ello, con su detalle, en los capítulos 3, 10 y 11.
+
+Con esto, el orden de los papeles queda como un camino lineal: sociedad, altas, impuesto, proyecto, arrendamiento y, ya con el local en marcha, el registro sanitario y su autocontrol. Cada vez que el camino te pregunte algo que depende del ayuntamiento o de la comunidad, la respuesta es una pregunta a quien corresponda, no un dato. Todo lo que aquí figura se comprobó el 3 de octubre de 2026; si algo cambia después, manda el boletín, no este libro.

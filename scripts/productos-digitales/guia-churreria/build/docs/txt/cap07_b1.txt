@@ -1,0 +1,100 @@
+### La línea de churros con precio de ficha: dosificadora, freidora, amasadora y campana
+
+Antes de hablar de dinero, una regla de lectura que vale para todo el capítulo. Los precios de esta guía son precios de tienda, con descuento vigente y con fecha de consulta: el 3 de octubre de 2026. Caducan. Una oferta que hoy lleva rebaja mañana puede no existir, así que antes de comprar se vuelven a pedir por escrito. Un precio publicado «desde» no es una cifra cerrada: es el suelo de una gama, y el modelo que necesitas puede costar más. Y cada línea dice si su precio lleva IVA o no; en este tramo todo va sin IVA, salvo el medidor de polares, que la tienda publica con IVA y cuya base calculamos nosotros.
+
+Con eso claro, el núcleo de la dotación de Churrería-Chocolatería El Molinete, el caso modelado que recorre el pack, se compone de siete piezas con precio de ficha:
+
+- Freidora de gas de una cuba de 25 litros y 70 cm de fondo: 1.907,00 € sin IVA, con un 35 % de descuento en el momento de la consulta (Hosteleria10, churreras, referencia ClimaHosteleria EMPLK002, 3 de octubre de 2026).
+- Dosificadora automática: 1.798,00 € sin IVA, también con un 35 % de rebaja (Hosteleria10, churreras, dosificadora automática CH, 3 de octubre de 2026). Ojo con las comparaciones entre catálogos: otra referencia distinta de otra edición se anuncia bastante más cara, y no es la misma máquina.
+- Amasadora automática de 30 kg de capacidad: 2.550,00 € sin IVA (Churrofácil, ficha 26, con «impuestos excluidos» en la ficha; Hosteleria10 para la alternativa artesanal, 3 de octubre de 2026).
+- Campana de acero inoxidable de 120 cm con turbina incorporada: 990,00 € sin IVA (Churrofácil, ficha 28, 3 de octubre de 2026). Esta cifra es sólo la campana: más abajo verás lo que no incluye.
+- Chocolateras: El Molinete lleva dos, a 412,70 € sin IVA cada una, con un 23 % de descuento (Hosteleria10, churrería, chocolateras, 3 de octubre de 2026).
+- Escurridor: desde 260,00 € sin IVA en su modelo más sencillo; hay un modelo superior que sale más caro, y como todo «desde», no es un precio cerrado (Hosteleria10, churreras y churrería, 3 de octubre de 2026).
+- Balanza: 48,75 € sin IVA, con un 25 % de rebaja (Hosteleria10, churreras, básculas, 3 de octubre de 2026).
+
+La suma de ese núcleo, tal como la calcula la hoja «Equipamiento Línea a Línea» de calculadora-capex-churreria.xlsx, es de 8.618,35 € sin IVA: es el núcleo con precio de ficha del local con sala. Te lo cuento así, máquina a máquina, para que puedas repetir la cuenta con tus propias fichas y comprobar que el libro y el texto dicen lo mismo.
+
+Falta una pieza que no es de producción, pero que merece sitio en la dotación: el medidor de polares de mano. Es un Testo 270 BT que la tienda en línea de Infoagro ofrece a 603,79 € con IVA incluido; la base sin IVA, que calculamos nosotros dividiendo entre 1,21, es de 499,00 € (Infoagro, tienda en línea, 3 de octubre de 2026). Sirve para decidir cuándo toca cambiar el aceite, es decir, para gobernar tu coste y tu calidad de fritura. No sirve para demostrar que cumples el límite legal: ese límite se prueba en laboratorio con el método del anexo de la norma, y de eso se ocupa el capítulo 10. Con el medidor dentro, la dotación con fuente del local con sala queda en 9.117,35 € sin IVA.
+
+Una advertencia que te va a ahorrar un disgusto: esa cifra no es un presupuesto de apertura. Es lo que tiene precio público verificable, y nada más. Lo demás —lo que pesa mucho y no tiene ficha— viene en el tercer epígrafe, y la inversión entera la suma el capítulo 8.
+
+### Equipo completo o línea separada, y la dotación del despacho
+
+Hay dos maneras de montar la línea de churros, y elegir una u otra es lo primero que debes decidir al comprar.
+
+La primera es el equipo completo: un solo conjunto que trae el dosificador y el caldero de fritura en una sola pieza. El de referencia es el kit de Mundigas, modelo CH-1-D, con dosificador de 1,5 kg y sartén de 14 litros, a 2.188,00 € sin IVA (Hosteleria10, churreras, 3 de octubre de 2026). Esa base sin IVA la declara la propia ficha del listado.
+
+La segunda es la línea separada, que es la que monta El Molinete: freidora por un lado, dosificadora por otro, amasadora aparte. También hay una variante barata para el amasado, un caldero amasador Inhospan CALD50 a 247,00 € sin IVA más una pala de amasar desde 39,00 €, también sin IVA (Hosteleria10, 3 de octubre de 2026). Trabajar la masa a mano con pala es una alternativa que ahorra dinero y exige brazo y horas de alguien.
+
+¿Qué cambia entre una y otra? El equipo compacto ahorra dinero y ahorra sitio: cuesta menos y ocupa menos, y para un despacho pequeño eso pesa. La línea separada aguanta más kilos por hora y, sobre todo, te deja cambiar una pieza sin parar las demás. Si se estropea la dosificadora en un equipo compacto, se para todo; con las piezas por separado puedes sustituir una mientras el resto sigue fritando. Cuántos kilos de masa por hora saca tu línea no lo da ninguna ficha: es un supuesto declarado de El Molinete que tú sustituyes por tu masa y tu churrero. Y desconfía del máximo que publica un fabricante: es su techo de catálogo, no el ritmo real de una mañana de domingo.
+
+El despacho para llevar monta el equipo completo con caldero, pala y escurridor. Su núcleo con precio de ficha es de 4.185,45 € sin IVA, y la diferencia frente al local con sala es de -4.432,90 €, según la hoja «Variante del Formato» del mismo libro. Las dos cifras llevan la misma base de IVA, así que sí se pueden comparar. Qué conviene a El Molinete, y a partir de qué hora punta se elige la opción contraria, es la decisión 3 del bonus: aquí sólo hablamos de máquinas. Las alternativas con su precio de ficha —el equipo completo, el amasado a mano y la freidora eléctrica— las tienes en el cuadro siguiente.
+
+### Chocolatera, cafetera y las partidas que ninguna ficha publica
+
+El Molinete lleva dos chocolateras a 412,70 € sin IVA cada una (Hosteleria10, churrería, chocolateras, 3 de octubre de 2026). Un despacho para llevar, con menos volumen de chocolate sentado, puede bastarse con una sola. Es una pregunta de volumen que se responde con tu carta, no con una regla.
+
+Ahora la parte incómoda. Hay una lista de partidas que van como supuesto declarado porque no existe un precio público verificable, y conviene que las veas escritas antes de empezar a pedir presupuestos:
+
+- la cafetera y el molinillo,
+- el mostrador y la vitrina calefactada,
+- las mesas de sala y de terraza,
+- la vajilla,
+- el lavavajillas,
+- el frigorífico,
+- el extintor de clase F, el de las freidoras,
+- el filtrado del aceite,
+- el terminal de punto de venta (TPV) y
+- el rótulo.
+
+Para ninguna de ellas hay precio con fuente: no entran en la dotación sumada, y cualquier cifra que te dé un libro sin fuente es inventada. En el libro del pack llevan un supuesto que tú reemplazas por el tuyo. La rellenadora va directamente sin cifra: no hay precio utilizable y el importe es el que te presenten.
+
+La partida que más pesa de todas no es una máquina sino una obra: el conducto a cubierta, con su obra y su proyecto. La campana de 990,00 € no lo incluye, y no hay ningún precio público fiable para esto, porque depende de tu edificio, de tu cubierta y de lo que exija tu ayuntamiento. En el caso de El Molinete, la hoja «Equipamiento Línea a Línea» lo recoge como supuesto declarado, sin IVA, de 9.000 €. No es un dato del sector: es una cifra de trabajo para que las fórmulas calculen, y la sustituirás por el presupuesto de tu técnico. Es la partida que decide la licencia de obra, y por eso conviene preguntarla pronto.
+
+¿Cómo conviertes un supuesto en un número tuyo? Con tres presupuestos por partida. En cada uno exige tres cosas por escrito: la base del IVA (con o sin), el precio cerrado y el plazo de entrega dentro. Un presupuesto que no dice la base del IVA es un presupuesto que no puedes comparar con los otros dos, y la mezcla de bases es el error de método más barato de cometer y el más caro de pagar.
+
+### Fabricantes y distribuidores de maquinaria, y el plazo de entrega
+
+Aquí cruzamos la frontera del capítulo. Hasta ahora eran las máquinas: qué y cuánto. Desde aquí, a quién se le compra.
+
+Todo lo que sigue se ha comprobado en su web el 3 de octubre de 2026, no tenemos ninguna relación comercial con ninguno y no se publica nada que sólo aparezca en directorios. Es una lista de dónde mirar, no una recomendación de compra:
+
+- Mundigas, fabricante con equipo de churros en catálogo; su modelo CH-1-D aparece con precio en Hosteleria10.
+- Inhospan, con escurridores y calderos amasadores, también con precio en Hosteleria10.
+- ClimaHosteleria, la referencia de la freidora de gas de El Molinete.
+- Churrofácil, que vende churreras, amasadoras y remolques, y además el preparado, el aceite, el chocolate y los cucuruchos. Publica precios con los impuestos excluidos.
+- Inblan: publica una categoría de maquinaria para churrería sin precios; el resto de su catálogo aparece con precio en Hosteleria10 (Inblan, web, y Hosteleria10, 3 de octubre de 2026).
+- HostelShop España: distribuidor con teléfono 910 549 798, con una categoría que incluye churreras, freidoras, amasadoras y chocolateras sin precios en la página (HostelShop España, web, 3 de octubre de 2026).
+- Hosteleria10, que funciona como escaparate de varios fabricantes y deja una cabecera de «Precios Sin IVA» en el listado.
+
+Fíjate en que unos publican precio y otros no. Con los que no lo publican, el camino es el presupuesto por escrito. La tabla siguiente reúne a los proveedores con la web comprobada.
+
+Falta el plazo de entrega, porque es lo que te mueve la fecha de apertura. El plazo de pedido de la maquinaria crítica vive en un solo sitio del pack: el cronograma del libro legal, en la hoja «Checklist Legal» del libro checklist-legal-fritura-y-licencias.xlsx. Es un supuesto declarado de El Molinete, no un dato del sector: 42 días. Con ese plazo, la holgura de la maquinaria en el cronograma del caso es de 3,1 meses antes de que haya que mover la fecha de apertura, según la hoja «Cronograma y Ruta Crítica» del mismo libro. Esa holgura es de El Molinete; la tuya la fijan tus plazos.
+
+La regla práctica es sencilla: el plazo se pide por escrito, en cada presupuesto. Si la maquinaria entra en la ruta crítica de tu obra, tu fecha de apertura no la manda tu calendario, la manda el proveedor. Y si el proveedor te dice «unos días» de palabra, no tienes plazo: tienes una intención.
+
+### Preparado para masa, harina, aceite y chocolate: a quién y en qué formato
+
+El otro grupo de compras son los insumos, y aquí lo que importa es el formato de compra y la base del IVA. Todos los precios de este epígrafe son sin IVA y son los de la web del proveedor el 3 de octubre de 2026:
+
+- Preparado para masa de churro: la caja de seis sacos de cuatro kilos cuesta 34,80 € sin IVA (Churrofácil, ficha «Mix churros de lazo 4 kg caja 6 sacos»). Según el vendedor, cada saco prepara unos 11,5 kg de masa. Ese rendimiento lo declara el vendedor y lo vuelves a medir con tu agua y tu mano; el escandallo lo hace el capítulo 12.
+- Aceite de fritura: la garrafa de 25 litros de aceite especial de fritura cuesta 49,90 € sin IVA, y hay otra referencia de girasol de alto rendimiento a 49,00 € la garrafa, ambas con una oferta de compra por volumen (Churrofácil, fichas 82 y 90). Es el único precio de aceite con fuente que hemos encontrado, y es de un proveedor de maquinaria: el libro de la carta y el escandallo lleva ese precio en su propia celda verde para que pongas el tuyo. De cuánto aceite le llevas al gestor y cuánto te cuesta se ocupa el capítulo 10.
+- Chocolate a la taza en polvo: la bolsa de 1,3 kg, que rinde para 7 litros, cuesta 8,20 € sin IVA (Churrofácil, ficha 14 y listado). Hay también un formato más pequeño de 800 g para 4,3 litros y una cobertura de 1 kg. Esa ficha no dice a qué denominación de la norma del chocolate corresponde el producto, y por eso la pregunta que tienes que hacer es qué preparado compras y qué dice su etiqueta. Si declara menos cacao del que esperas, o una grasa vegetal, consulta a tu servicio de consumo antes de imprimir la carta.
+
+Y hay cosas que no se publican, y es mejor decirlo. La harina especial para churros de un harinero aparece en su web sin precio (Harinas Sánchez Palencia, web, 3 de octubre de 2026): para saber su coste hay que pedirle presupuesto. El chocolate a la taza en formato profesional de las marcas conocidas no tiene un precio con fuente. Sin precio no hay número, y un número sin fuente no entra en este libro. Su IVA, además, es del capítulo 3; aquí no lo tocamos.
+
+Un último matiz sobre Churrofácil: ofrece formación gratuita con la compra de maquinaria (Churrofácil, web, 3 de octubre de 2026). Tómala como lo que es, un gancho de venta, no un curso de churrero. Está bien aprovecharla, pero no sustituye a quien te enseñe el oficio.
+
+### Envase para llevar y gestor del aceite usado
+
+Si vendes para llevar, el envase es un coste que se come margen sin hacer ruido. El cucurucho de cartón para churros cuesta 15,00 € la caja de 100 unidades (Churrofácil, listado de accesorios y consumibles, 3 de octubre de 2026). La base sin IVA es inferida: la ficha no la declara con claridad, y por eso en el libro es una celda verde, con «no lleva» por defecto, que tú confirmas con tu proveedor.
+
+El vaso es otra historia. El de plástico o de papel plastificado para bebidas, y sus tapas de plástico, quedan sujetos a la reducción de consumo y, desde 2023, deben cobrarse aparte en el tique con un precio diferenciado (Ley 7/2022, art. 55 y anexo IV, partes A y B). Un vaso de polipropileno blanco de 200 cc, en cajas de 100, aparece en el mismo listado de Churrofácil a 1,99 €. Eso es lo que va en una chocolatera para llevar: el chocolate caliente viaja en vaso.
+
+El cucurucho de cartón, en cambio, no se presenta como conforme a esa ley mientras no conozcas su composición. Según la ficha no lleva plástico, pero eso es una inferencia nuestra, de nivel B: confírmalo por escrito con tu proveedor, preguntándole directamente de qué está hecho y si lleva recubrimiento. Hasta que lo tengas por escrito, no lo des por bueno.
+
+Queda el gestor del aceite usado. La recogida separada del aceite de cocina usado de la hostelería es obligatoria desde el 30 de junio de 2022, también para los residuos comerciales que no gestiona la entidad local (Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular, comprobado el 3 de octubre de 2026). Por eso el gestor tiene que ser un gestor autorizado, con contrato y con justificante de cada retirada. Sin ese papel, tu aceite usado es un problema tuyo, no del que se lo lleva.
+
+Como ejemplo para Madrid, y sin ninguna relación comercial, Reseave es un gestor autorizado de residuos no peligrosos que recoge aceite de cocina usado y grasas alimentarias a cambio de obsequios, servicios gratuitos o valoración económica, con un plazo máximo de recogida de 24 horas, según declara en su web (Reseave, web, 3 de octubre de 2026). Entrega un documento de identificación, un contrato y un certificado de eliminación. Es un ejemplo, no una recomendación, y no se extrapola a otras ciudades: en la tuya pregunta quién opera. El plazo de 24 horas es lo que declara el gestor, no algo que hayamos medido nosotros.
+
+Un detalle de método para cerrar este capítulo: guarda el justificante de cada retirada junto al registro del aceite de fritura que lleva el Pack Plantillas APPCC, en el fichero 09-control-aceite-fritura.xlsx. El papel del gestor y el registro de tu fritura cuentan, juntos, la misma historia ante quien te lo pida.

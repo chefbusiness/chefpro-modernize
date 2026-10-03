@@ -174,6 +174,7 @@ RX_CITA = re.compile(
     r'\(\s*[^)]{8,}\)'                 # «(Restauracion News, 2026-01-07)»
     r'|\(\s*(?:19|20)\d{2}\s*\)'       # «(2025)» — el ano de la fuente
     r'|\b\d{4}-\d{2}\b'                # fecha ISO de publicacion
+    r'|\bC[HU][NS]-[\w.]+'             # id de ficha de research (CUS-17, CHN-71c): dato fechado con fuente
     r'|seg\u00fan\s+(?:el\s+|la\s+|los\s+|datos\s+de\s+)?'
     r'[A-Z\u00c1\u00c9\u00cd\u00d3\u00da]')  # «segun Profesional Horeca»
 # Solo anios REALMENTE pasados (<= 2025): «previsiones para 2026» es correcto.
@@ -202,6 +203,13 @@ def erratas_fechas(texto):
             continue
         antes = texto[max(0, m.start() - 60):m.start()]
         if RX_LEGAL_ANTES.search(antes) or re.search(r'\d+/$', antes):
+            continue
+        # fecha completa «31-12-2025»: es un vencimiento o un corte fechado, no un precio caduco
+        if re.search(r'\b\d{1,2}-\d{1,2}-$', antes):
+            continue
+        # antes de 2000 no hay precio caduco posible en un producto de 2026: es un nombre
+        # («Chocolatería 1902») o una fecha histórica
+        if anio < 2000:
             continue
         ventana = texto[max(0, m.start() - 90):m.end() + 90]
         if not RX_PRECIO.search(ventana):
@@ -239,7 +247,7 @@ RX_MORTALIDAD2 = re.compile(
 # libro. Las dos cosas se venden tal cual si nadie las mide.
 RX_META = re.compile(
     r'(debo asegurar|me piden|se me pide|el maquetador|el prompt|'
-    r'las instrucciones|como modelo|no puedo escribir|voy a redactar|'
+    r'las instrucciones(?! de (?:un|una|quien|su|sus)\b)|como modelo|no puedo escribir|voy a redactar|'
     r'el guion dice|el usuario quiere|epígrafes que me)', re.I)
 
 

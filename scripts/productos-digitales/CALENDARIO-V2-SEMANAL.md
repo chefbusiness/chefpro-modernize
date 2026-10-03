@@ -344,7 +344,7 @@ tres meses tarde). Precios orientativos, coherentes con su familia LIVE.
 | Producto (nombre de la tarjeta) | Familia | Precio | Ola |
 |---|---|---|---|
 | Cómo Montar una Chocolatería Boutique & Atelier | Guías Cómo Montar | 65 € | Octubre 2026 |
-| Cómo Montar una Churrería-Chocolatería — ✅ **F1 cerrada el 3-oct-2026** (4,63 M) · ⏸️ **F2 en espera de John por presupuesto** (proyección 14,06 M > parada de 13 M; opciones en SPEC §9.1) | Guías Cómo Montar | 65 € | Q4 2026 |
+| Cómo Montar una Churrería-Chocolatería — ✅ F1 · ✅ 8 Excel · ✅ guion · ✅ capa técnica (rama) · ⏸️ **PARADA por John el 3-oct a las 11:20** (proceso desproporcionado: ≈ 10,5 M); falta redacción + landing + PR en modo mínimo (≈ 2 M) | Guías Cómo Montar | 65 € | Q4 2026 |
 | Plan de Negocio: Heladería Artesanal | Planes de negocio | 35 € | Q4 2026 |
 | ~~Tareas Recurrentes: Taquería Mexicana~~ **✅ LIVE 20-sep-2026** (producto 50, 14 €, PR #85 → `4f214a0`; correo el 29-oct) | Kits de tareas | 14 € | — |
 | Kit Cuadro de Mando Operativo | Kits de gestión | 19 € | Q4 2026 |

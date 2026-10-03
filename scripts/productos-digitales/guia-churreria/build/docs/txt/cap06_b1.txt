@@ -1,0 +1,81 @@
+### Seis zonas en el local, y la que decide es la más pequeña
+
+Antes de mirar un local conviene tener claro qué se le va a pedir. Para ponerlo en números, la guía reparte el local de la Churrería-Chocolatería El Molinete en seis zonas. Es un supuesto declarado, no un plano real: un caso modelado en una ciudad media española, con unos metros que tú sustituirás por los del local que tengas delante. Las zonas son el obrador de masa a la vista, la fritura bajo campana, la barra y el despacho a calle, la sala, los aseos con el vestuario, y el almacén de harina, aceite, envase y bidón de aceite usado.
+
+Los números del caso son estos. La superficie útil del local de El Molinete es de 75 metros cuadrados. De ellos, 16 son de producción, es decir, obrador de masa y fritura, y 44 son de atención al cliente, es decir, barra, despacho y sala. La terraza va aparte: está en la acera, no suma a la superficie útil y se tramita como un papel distinto. Todo esto sale de la hoja «Zonas y m²» del libro de producción y local (produccion-hora-punta-y-local.xlsx), y la tabla de abajo recoge cada zona con lo que tiene que cumplir.
+
+La regla que da esa hoja es la que más conviene grabarse: la zona que decide si el local sirve es la más pequeña, la de fritura bajo campana. Es la que pide conducto, gas o potencia, y es la que fija el riesgo de incendio. Una sala preciosa de muchos metros no sirve de nada si el rincón donde va la freidora no tiene salida de humos. Por eso el orden de trabajo es siempre el mismo: primero compruebas que la fritura tiene salida, y sólo después repartes el resto. Si repartes primero y descubres después que el conducto no llega a cubierta, has dibujado un local que no existe.
+
+Hay dos comprobaciones sobre el plano que casi nadie hace y que cuestan diez minutos con un metro láser.
+
+- **El descuadre de metros.** Suma los metros que has repartido entre las zonas y compáralos con la superficie útil real, no con la construida. Entre una y otra se van con facilidad varios metros, de muros, pilares, conductos y patinillos, y un reparto que cuadra sobre la superficie del anuncio puede quedarse corto en el local verdadero. El anuncio da la cifra que le conviene al que traspasa; la útil la mides tú.
+- **El bidón del aceite usado.** Necesita sitio propio en el almacén, fuera de la fritura y fuera de la sala. Parece un detalle, y es el que se olvida: el aceite usado se retira por un gestor, el bidón pesa cuando está lleno, y un bidón colocado junto a la freidora o en mitad de la sala es un problema de seguridad y de inspección.
+
+Si alguna de las dos no sale, no es motivo para descartar el local, pero sí para saber qué obra o qué renuncia te va a pedir.
+
+### La ficha de visita: cuatro eliminatorios antes que nada
+
+La ficha de visita aplica en el local lo que ya explicaron los capítulos 4 y 5, de modo que aquí no se repite la norma: se usa. Su orden no es casual, porque va de lo que más caro sale de arreglar a lo que menos. Se hace en cuatro preguntas, y una respuesta que descarta en cualquiera de ellas tumba el local antes de seguir mirando.
+
+1. **¿La extracción necesita proyecto?** Esa es la primera pregunta, porque de ella depende todo lo demás: si hay que hacer obra de conducto, hay técnico, proyecto y licencia de obra.
+2. **¿Se puede llevar un conducto a cubierta?** Y no basta con que el tejado exista: hace falta el permiso de la comunidad de propietarios por escrito. Una promesa de palabra del presidente de la comunidad no vale nada el día que cambie la junta.
+3. **¿Hay gas o hay que llevarlo?** Una freidora de baño abierto no tiene la excepción del conducto. Lo que se aplica en Madrid se lee en los artículos 23.1 y 24.1 y el anexo I de la Ordenanza 4/2021 de Calidad del Aire y Sostenibilidad (OCAS, BOCM n.º 90, 16-04-2021), comprobados el 3 de octubre de 2026. Que una freidora de baño abierto quede fuera de la excepción de aparatos eléctricos es una inferencia nuestra, no un texto literal: confírmalo con tu ayuntamiento. Y ojo, que ese es el marco de Madrid, un ejemplo que no se extrapola a tu ciudad.
+4. **¿Aguanta la potencia y el riesgo de incendio?** Es decir, si la instalación eléctrica del local soporta lo que vas a enchufar y si el entorno, el techo y los vecinos de arriba toleran una fritura.
+
+Después vienen los puntos que no descartan el local, pero cuestan dinero: la superficie útil, el aseo de público y el vestuario, el almacén con su bidón y la terraza en la acera. En esos cuatro la respuesta es un precio, no un no. Lo que depende del ayuntamiento, como la licencia de actividad de un local con mesas, la licencia de obra o la terraza, es una pregunta que haces tú en la visita, no un dato que traigas aprendido.
+
+El veredicto de la ficha para El Molinete es SIGUE ADELANTE CON RESERVAS. Pasa los cuatro eliminatorios, pero tiene 1 ítem que le obliga a obra con proyecto y licencia, y ese ítem es justamente el que tiene que costear antes de firmar. La tabla de abajo muestra la ficha completa con sus cuatro eliminatorios primero.
+
+El uso práctico es sencillo: la ficha se imprime y se lleva a cada visita, con el técnico si puede ser, y se rellena en el local, no en casa. En casa recordarás lo que te gustó; en el local tienes que mirar el techo, subir a la cubierta, abrir el cuadro eléctrico y preguntar. Una ficha rellenada desde el sofá es una ficha inventada.
+
+### Cuántas raciones por hora aguanta la línea, y quién manda
+
+La capacidad de un obrador se mide en kilos de masa por hora, y sólo al final se pasa a raciones. Hacerlo al revés, empezando por «cuántos churros saco», es la forma de engañarse con un número que parece concreto. La línea tiene tres eslabones: la línea de dosificado y fritura con su churrero, la freidora que trabaja por tandas y la amasadora. Cada uno aguanta un ritmo, y el conjunto va al del más lento.
+
+En El Molinete el eslabón que manda es la línea de dosificado y fritura, con su churrero o churrera, no la máquina. Y esa es la lección que más dinero ahorra: el cuello de botella no suele ser lo que se compra con dinero, sino lo que hace una persona con las manos y el tiempo. Con esos tres eslabones, el conjunto de la línea de El Molinete aguanta 122,6 raciones por hora, según la hoja «Cuello de Botella» del libro de producción y local.
+
+Cuidado con la trampa que más dinero hace perder: el máximo del folleto del fabricante no es el ritmo de una línea. Es lo que da la máquina en el mejor momento, con la masa ideal y sin nadie esperando. Los kilos por hora que usa el libro son un supuesto declarado de El Molinete, no un dato del sector ni «lo normal en una churrería», y tienes que sustituirlos por los tuyos. El dato bueno es el que midas tú un domingo, pesando la masa que entra en una hora. Se hace con una báscula, un cronómetro y una libreta, y no admite delegación: si no lo mides, estás calculando con el folleto.
+
+Antes de comprar otra máquina hay que mejorar primero el eslabón que manda, porque comprar el segundo es dinero parado. Si el cuello es el churrero, una segunda dosificadora no acelera nada: quedará a la espera de que alguien la atienda. Primero se organiza la línea, se prepara lo que se pueda antes de abrir y se mira dónde se detiene el trabajo. La máquina nueva es el último recurso, no el primero.
+
+### La hora punta del domingo, mes a mes
+
+Una capacidad en raciones por hora no dice nada hasta que se cruza con lo que pide la calle. El libro de temporada hace ese cruce mes a mes: pone la demanda de la hora más cargada de un domingo frente a lo que da la línea, y la cuenta en dos unidades, raciones por hora de déficit y minutos de espera de la última persona de la fila.
+
+Los datos del caso son estos, y son supuestos declarados de El Molinete: los coeficientes de cada mes, el reparto por franjas y las raciones de cada día son hipótesis de trabajo que el lector sustituye por las suyas. En la peor hora de un día punta de diciembre, la demanda supera lo que da la línea en 8,7 raciones por hora, según la hoja «Capacidad contra el Pico» del libro de temporada y franjas (temporada-franjas-y-ferias.xlsx). Eso se traduce en una espera de 4,3 minutos al final de esa hora del domingo de diciembre, según la hoja «Cola del Domingo». La tabla de abajo dice en qué meses se forma cola el domingo y en cuáles no.
+
+Para poner la escala real de un negocio abierto, una churrería de Vallecas declara hasta 2.000 churros en los días de más afluencia (Moncloa, «Madrid, Vallecas: churrería…», 21-09-2026). Ojo con la palabra «hasta»: es un máximo declarado, no una media, y no te dice nada de cuántas horas tarda en servirlos ni de qué fila se forma. Como cualquier cifra de negocio ajeno, sirve para dimensionar el orden de magnitud y no para sustituir tu medición.
+
+Cuatro minutos de espera no parecen una tragedia, pero se acumulan. Dos o tres domingos con cola dan reseñas de «tarda mucho», y la gente que mira la fila desde la acera y decide no entrar no deja rastro en ninguna hoja de cálculo. La cola de la hora punta es una pérdida de ventas que no se ve en caja.
+
+Las palancas, en su orden, y la primera no es subir el precio:
+
+- **Masa preparada antes de abrir.** Es la más barata: lo que se amasa y se deja listo antes de que llegue el primer cliente no compite con la fritura.
+- **Una segunda persona en la línea esas mañanas.** Es el refuerzo de Navidad y Reyes del capítulo 14: no se contrata para todo el año, sino para las horas y los días donde sale la cola.
+- **Sólo si no basta, más línea.** Una segunda máquina o una ampliación, y siempre después de comprobar que el primer eslabón no podía dar más.
+
+Subir el precio para que la gente se vaya de la cola es una palanca, pero la última, no la primera: castiga al cliente fiel antes de arreglar el problema, y el problema está en la línea.
+
+### El traspaso que miras y la renta que pagas
+
+Un traspaso ahorra obra, pero no ahorra preguntas. Los anuncios que siguen son precios PEDIDOS, no pagados ni cerrados, y cada uno va con su sitio, su fecha y sus metros. Ninguno se ha podido reabrir hoy: el portal devolvió un aviso de captcha, así que las lecturas son de la ficha o de la tarjeta del listado tal como se leyó. No se calcula media ni mediana de ellos, porque una media de precios pedidos no es un precio de mercado.
+
+- La churrería-chocolatería con sala de Vallecas: 74 metros cuadrados, 82.000 € de traspaso pedido y negociable, con un alquiler de 910 € al mes y equipos «valorados en 50.000 €» que el anuncio declara incluidos: freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV (Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026)). Esa lectura no se ha reabierto hoy, y el anuncio no menciona ningún beneficio demostrado.
+- Una churrería de barrio con carta mixta en Granada capital: 80 metros cuadrados por 19.500 € pedidos, 244 € por metro cuadrado, publicada hace 10 horas (Milanuncios, listado de traspasos de churrería en Granada capital, consulta 2026-10-03). Sin motivo de traspaso declarado.
+- Otra en Granada: 60 metros cuadrados por 16.000 € pedidos, 267 € por metro cuadrado, con 43 días publicada. Es la única con motivo declarado, la jubilación (Milanuncios, listado de traspasos de churrería en Granada, consulta 2026-10-03).
+- Dos más en Granada de 70 metros cuadrados cada una, por 40.000 € pedidos y 571 € por metro cuadrado, publicadas hace 179 días y hace 116 días (Milanuncios, listado de traspasos de churrería en Granada, consulta 2026-10-03). Seis meses sin venderse: el precio pedido no se cierra.
+- Un local de 105 metros cuadrados por 65.000 € pedidos, 619 € por metro cuadrado, con modelo de helado más churro, en Montefrío, Granada (Milanuncios, listado de traspasos de churrería en Montefrío (Granada), consulta 2026-10-03).
+- Un local de 240 metros cuadrados por 65.000 € pedidos, 271 € por metro cuadrado, en Valdemoro, Madrid (Milanuncios, listado de traspasos de churrería en Valdemoro (Madrid), consulta 2026-10-03). Con un alquiler declarado de 1.500 a 1.550 €, es un local grande que cuenta como uno solo y no se compara con los demás.
+
+Un anuncio que lleva meses publicado es un precio que no se cierra, y un anuncio sin motivo de traspaso invita a preguntar por qué se deja. El techo de traspaso con sala, en este caso, es el del anuncio de Vallecas, con su nota de que es un precio pedido, negociable y no reabierto.
+
+La renta mensual de El Molinete es la del anuncio de Vallecas: 910 € al mes, que el libro de la calculadora de inversión (calculadora-capex-churreria.xlsx) toma sin IVA. Es un supuesto declarado del caso, no la renta que vas a pagar tú.
+
+Más allá del precio, en cualquier traspaso hay cuatro cosas que mirar:
+
+- **Si la extracción y el conducto están legalizados.** Que el conducto exista no quiere decir que tenga licencia ni proyecto detrás. Pide el papel.
+- **Si hay gas con su inspección.** Una instalación con la revisión al día es una pregunta de papeles, no de buena fe.
+- **Si la actividad está a nombre de quien traspasa.** Si no lo está, lo que compras es un local con una máquina, no una licencia.
+- **Qué equipos funcionan de verdad.** El «valorado en» de un anuncio es una cifra del vendedor. Enciende la freidora, arranca la dosificadora y calienta el chocolate delante de ti.
+
+Lo que cuesta abrir en obra nueva está en el capítulo 8, y la comparación de dinero entre traspaso y obra nueva a cinco años es la decisión 2 del bonus.

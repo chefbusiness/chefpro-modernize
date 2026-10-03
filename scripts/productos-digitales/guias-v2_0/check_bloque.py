@@ -3,8 +3,8 @@
 documentos.py antes de aceptar una salida de bridge.
 Uso: python3 check_bloque.py <ruta_txt> <palabras_min> [<epígrafe1> <epígrafe2> …]
 Exit 0 = limpio y con extensión suficiente; 1 = defectos (los imprime)."""
-import importlib.util, re, sys
-sp = importlib.util.spec_from_file_location('d', '/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/guias-v2_0/documentos.py')
+import importlib.util, os, re, sys
+sp = importlib.util.spec_from_file_location('d', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'documentos.py'))
 d = importlib.util.module_from_spec(sp); sp.loader.exec_module(d)
 ruta, minimo = sys.argv[1], int(sys.argv[2]); epis = sys.argv[3:]
 t = open(ruta, encoding='utf-8').read().strip()

@@ -1,0 +1,1991 @@
+{
+  "_meta": {
+    "pid": "guia-churreria-chocolateria",
+    "generado": "2026-10-03 09:43",
+    "salida": "/root/guias-out",
+    "xlsx_dir": "/root/chefpro-modernize/astro-site/public/dl/guia-churreria-chocolateria",
+    "modelo": "~deepseek/deepseek-v4-flash-latest",
+    "research": "2026-08-29",
+    "research_ausente": false,
+    "erratas_reparadas": [
+      {
+        "de": "vuele",
+        "a": "vuelve",
+        "doc": "guia-churreria-chocolateria"
+      }
+    ],
+    "erratas_reparadas_n": 1
+  },
+  "documentos": {
+    "guia-churreria-chocolateria": {
+      "gates": {
+        "paginas_pdf": 95,
+        "paginas_prometidas": 80,
+        "palabras_md": 50904,
+        "palabras_pdf": 50220,
+        "palabras_docx": 48003,
+        "palabras_objetivo": 29300,
+        "capitulos": 17,
+        "tablas_md": 49,
+        "tablas_docx": 49,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 46322,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 48510,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar una Churrería-Chocolatería"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Cómo Montar una Churrería-Chocolatería",
+          "created": "2026-10-03 09:43:25+00:00"
+        },
+        "paridad_palabras_pct": 1.05,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 478,
+        "ficheros": {
+          "md": "/root/guias-out/guia-churreria-chocolateria.md",
+          "docx": "/root/guias-out/guia-churreria-chocolateria.docx",
+          "pdf": "/root/guias-out/guia-churreria-chocolateria.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Qué Negocio Estás Montando: Seis Formatos y Cuál te Toca",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-09",
+            "CUN-11",
+            "CUN-12",
+            "CUN-35",
+            "CHN-49b",
+            "CHN-49c",
+            "CUS-42"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Superficie útil del local de El Molinete, en metros cuadrados",
+              "75",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B6"
+            ],
+            [
+              "Metros cuadrados de producción (obrador de masa y fritura)",
+              "16",
+              "produccion-hora-punta-y-local.xlsx!Zonas y m²!D17"
+            ],
+            [
+              "Raciones de un día tipo, de lunes a viernes (supuesto de El Molinete)",
+              "250",
+              "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L7"
+            ],
+            [
+              "Raciones de un día punta, sábado, domingo y festivo (supuesto de El Molinete)",
+              "400",
+              "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L8"
+            ],
+            [
+              "CAPEX de apertura de El Molinete, sin fondo de maniobra y sin IVA",
+              "86.416 €",
+              "calculadora-capex-churreria.xlsx!Resumen!L5"
+            ],
+            [
+              "Dotación con precio de ficha del local con sala, sin IVA y con el medidor de polares",
+              "9.117,35 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!X35"
+            ],
+            [
+              "Dotación con precio de ficha del despacho para llevar, sin IVA y con el medidor de polares",
+              "4.684,45 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!Y35"
+            ],
+            [
+              "Dotación de la caseta de feria: el remolque con cartel, sin IVA",
+              "14.800 €",
+              "calculadora-capex-churreria.xlsx!Variante del Formato!C8"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "El Cliente, las Franjas y la Plaza",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-06",
+            "CUS-07",
+            "CUS-08",
+            "CUS-13",
+            "CUS-15",
+            "CUS-16",
+            "CUS-17",
+            "CUS-19",
+            "CUS-27"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Parte de las raciones de la semana que se lleva el desayuno (supuesto de El Molinete)",
+              "50 %",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!D53"
+            ],
+            [
+              "Parte de las raciones de la semana que se lleva la merienda (supuesto de El Molinete)",
+              "38,4 %",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!D55"
+            ],
+            [
+              "Horas a la semana de la franja de desayuno",
+              "23",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!L5"
+            ],
+            [
+              "Horas a la semana de la franja de merienda",
+              "31,5",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!L7"
+            ],
+            [
+              "Hora punta de un día tipo de un mes medio, en raciones por hora",
+              "62,5",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!E14"
+            ],
+            [
+              "Hora punta de un día punta de un mes medio, en raciones por hora",
+              "75,0",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!E15"
+            ],
+            [
+              "Raciones de una semana de un mes medio",
+              "2.050",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!C57"
+            ],
+            [
+              "Ticket medio sin IVA por ración de la carta de invierno de El Molinete",
+              "2,16 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!D6"
+            ],
+            [
+              "Raciones de un día tipo (supuesto de El Molinete)",
+              "250",
+              "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L7"
+            ],
+            [
+              "Raciones de un día punta (supuesto de El Molinete)",
+              "400",
+              "produccion-hora-punta-y-local.xlsx!Día Tipo y Día Punta!L8"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "La Carta de Apertura y el IVA de Cada Cosa",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-09",
+            "CUS-11",
+            "CUS-15",
+            "CUS-17",
+            "CUS-20",
+            "CUS-21",
+            "CUS-23",
+            "CUS-24",
+            "CUS-25",
+            "CHN-05",
+            "CUN-42",
+            "CUN-V06",
+            "CUN-41",
+            "CUN-17",
+            "CUN-18",
+            "CHN-71c",
+            "FC-IVA-01",
+            "FC-IVA-02",
+            "FC-IVA-04"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Referencias de la carta con veredicto «mantener»",
+              "21",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!B34"
+            ],
+            [
+              "Referencias de la carta con veredicto «revisar precio»",
+              "2",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Decisión de Surtido!B35"
+            ],
+            [
+              "Ticket medio sin IVA por ración de la carta de invierno",
+              "2,16 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!D6"
+            ],
+            [
+              "Cacao seco total que declara la etiqueta del preparado de El Molinete",
+              "35 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B21"
+            ],
+            [
+              "Cacao seco total mínimo del producto «chocolate a la taza» según el RD 1055/2003",
+              "35 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B23"
+            ],
+            [
+              "Aviso que da el libro de la carta a El Molinete antes de imprimir la carta",
+              "Sin aviso: la carta usa la denominación de la etiqueta",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B24"
+            ],
+            [
+              "Coste de una taza de chocolate de El Molinete, sin IVA",
+              "0,44 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B15"
+            ],
+            [
+              "IVA de lo que se consume en barra, sala y terraza",
+              "10 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B5"
+            ],
+            [
+              "IVA que El Molinete pone por prudencia al granizado y la horchata para llevar (aviso de zona gris, no regla: lo confirma tu asesor)",
+              "21 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B9"
+            ],
+            [
+              "Importe del vaso para llevar cobrado aparte en El Molinete (supuesto)",
+              "0,10 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B25"
+            ]
+          ]
+        },
+        {
+          "n": 4,
+          "titulo": "Antes de Firmar: el Formato Decide el Régimen de Apertura, las Obras y el Horario",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-35",
+            "CHN-49",
+            "CHN-49b",
+            "CHN-49c",
+            "CUN-09",
+            "CUN-14",
+            "CUN-34",
+            "CHN-77",
+            "CUN-23"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Respuesta de El Molinete a «¿la extracción necesita proyecto?», primera fila del checklist",
+              "Sí",
+              "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!K7"
+            ],
+            [
+              "Lo que le toca a El Molinete por la extracción",
+              "Licencia de obra y técnico: el conducto necesita proyecto, aunque la actividad vaya por declaración responsable",
+              "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!L7"
+            ],
+            [
+              "Lo que le toca a El Molinete por tener mesas y barra (segunda fila del checklist)",
+              "Tu actividad sale del Anexo (con mesas o barra, o más de 750 m²): el modelo, licencia o declaración, lo fija tu ayuntamiento; y las obras con proyecto, con su licencia aparte",
+              "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!L8"
+            ],
+            [
+              "Régimen de apertura de la actividad de El Molinete",
+              "Con mesas o barra (676 o 673) tu actividad sale del Anexo de la Ley 12/2012: el modelo, licencia o declaración responsable, lo fija tu ayuntamiento",
+              "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B13"
+            ],
+            [
+              "Las obras de El Molinete",
+              "Las obras con proyecto, el conducto a cubierta incluido, van con su licencia de obra y su técnico, aparte de la actividad",
+              "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B14"
+            ],
+            [
+              "La terraza de El Molinete",
+              "Autorización de la terraza aparte: la ocupación de la vía pública no entra en el régimen de la Ley 12/2012 (art. 2.2)",
+              "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B15"
+            ],
+            [
+              "Lo que significa el horario para el desayuno de El Molinete, en el ejemplo de Madrid",
+              "Como cafetería o bar puedes abrir desde las 6:00 en el ejemplo de Madrid",
+              "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B25"
+            ],
+            [
+              "Días a la semana que El Molinete abre antes de la hora mínima de chocolatería del ejemplo de Madrid",
+              "7",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!E16"
+            ],
+            [
+              "Trámites de todo el expediente del checklist legal",
+              "30",
+              "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D55"
+            ],
+            [
+              "Trámites del expediente que cambian según la comunidad autónoma",
+              "9",
+              "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!D63"
+            ]
+          ]
+        },
+        {
+          "n": 5,
+          "titulo": "Humos, Extracción y Fuego de Aceite: lo que Exige la Norma y lo que Fija el Proyecto",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-23",
+            "CUN-24",
+            "CUN-26",
+            "CUN-28",
+            "CUN-38",
+            "CHN-45",
+            "CHN-46",
+            "CHN-48"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Litros totales de cuba de El Molinete",
+              "25",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!L5"
+            ],
+            [
+              "Kilovatios de los demás aparatos de cocción de El Molinete (sus dos chocolateras)",
+              "3",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D11"
+            ],
+            [
+              "Kilovatios computables de la cocina de El Molinete",
+              "28",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D12"
+            ],
+            [
+              "Riesgo de la cocina de El Molinete según el Código Técnico",
+              "Riesgo bajo",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D13"
+            ],
+            [
+              "¿Le es obligatoria la extinción automática a El Molinete?",
+              "No obligatoria",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D15"
+            ],
+            [
+              "Veredicto del Código Técnico para la cocina de El Molinete",
+              "Local de riesgo especial: riesgo bajo",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D20"
+            ],
+            [
+              "Distancia mínima del filtro al foco en El Molinete, en metros",
+              "1,2",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D22"
+            ],
+            [
+              "Kilovatios por encima de los cuales la cocina es local de riesgo especial",
+              "20",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B10"
+            ],
+            [
+              "Kilovatios por encima de los cuales el riesgo es alto y la extinción automática es obligatoria",
+              "50",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B12"
+            ],
+            [
+              "Importe de la extinción automática en la calculadora de inversión, si te toca (supuesto)",
+              "2.800 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!H9"
+            ]
+          ]
+        },
+        {
+          "n": 6,
+          "titulo": "El Local y la Hora Punta: Metros, Conducto, Ficha de Visita y la Cola del Domingo",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-02",
+            "CUS-31a",
+            "CUS-31b",
+            "CUS-31c",
+            "CUS-31d",
+            "CUS-31e",
+            "CUS-31g",
+            "CUS-13",
+            "CUS-27",
+            "CUN-23",
+            "CUN-24"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Superficie útil del local de El Molinete, en metros cuadrados",
+              "75",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B6"
+            ],
+            [
+              "Metros cuadrados de producción (obrador de masa y fritura)",
+              "16",
+              "produccion-hora-punta-y-local.xlsx!Zonas y m²!D17"
+            ],
+            [
+              "Metros cuadrados de atención al cliente (barra, despacho y sala)",
+              "44",
+              "produccion-hora-punta-y-local.xlsx!Zonas y m²!D19"
+            ],
+            [
+              "Veredicto de la ficha de visita para el local de El Molinete",
+              "SIGUE ADELANTE CON RESERVAS",
+              "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!E21"
+            ],
+            [
+              "Ítems de la ficha que obligan a El Molinete a obra con proyecto y licencia",
+              "1",
+              "produccion-hora-punta-y-local.xlsx!Ficha de Visita a Local!E17"
+            ],
+            [
+              "Eslabón que manda en la línea de El Molinete",
+              "Línea de dosificado y fritura (con su churrero/a)",
+              "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "Raciones por hora que aguanta el conjunto de la línea de El Molinete",
+              "122,6",
+              "produccion-hora-punta-y-local.xlsx!Cuello de Botella!L5"
+            ],
+            [
+              "Déficit de la hora punta de un día punta de diciembre, en raciones por hora",
+              "8,7",
+              "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!I18"
+            ],
+            [
+              "Espera al final de la hora punta del domingo de diciembre, en minutos",
+              "4,3",
+              "temporada-franjas-y-ferias.xlsx!Cola del Domingo!H18"
+            ],
+            [
+              "Renta mensual del local de El Molinete, sin IVA (la del anuncio de Vallecas)",
+              "910 €",
+              "calculadora-capex-churreria.xlsx!Parámetros!L5"
+            ]
+          ]
+        },
+        {
+          "n": 7,
+          "titulo": "Maquinaria y Proveedores: Churrera, Dosificadora, Freidora, Chocolatera, Harina, Aceite, Envase y Gestor",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-32a",
+            "CUS-33a",
+            "CUS-34c",
+            "CUS-35a",
+            "CUS-36a",
+            "CUS-37a",
+            "CUS-38",
+            "CUS-39",
+            "CUS-41",
+            "CUS-44a",
+            "CUS-44b",
+            "CUS-44e",
+            "CUS-44f",
+            "CUS-44h",
+            "CUS-21",
+            "CUS-23",
+            "CUS-24",
+            "CUS-25",
+            "CUN-41",
+            "CUN-27"
+          ],
+          "sector_huecos": [
+            "CUS-36b",
+            "CUS-43"
+          ],
+          "cifras": [
+            [
+              "Núcleo con precio de ficha del local con sala, sin IVA",
+              "8.618,35 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!X36"
+            ],
+            [
+              "Medidor de polares de mano, base sin IVA calculada desde su precio con IVA",
+              "499,00 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!O13"
+            ],
+            [
+              "Dotación con fuente del local con sala, sin IVA y con el medidor de polares",
+              "9.117,35 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!X35"
+            ],
+            [
+              "Núcleo con precio de ficha del despacho para llevar, sin IVA",
+              "4.185,45 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!Y36"
+            ],
+            [
+              "Diferencia de dotación del despacho frente al local con sala",
+              "-4.432,90 €",
+              "calculadora-capex-churreria.xlsx!Variante del Formato!D7"
+            ],
+            [
+              "Conducto a cubierta, obra y proyecto: supuesto de El Molinete, sin IVA",
+              "9.000 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!L20"
+            ],
+            [
+              "Precio de la caja de preparado para masa de churro, sin IVA",
+              "34,80 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B33"
+            ],
+            [
+              "Precio de la garrafa de aceite de fritura, sin IVA",
+              "49,90 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B34"
+            ],
+            [
+              "Plazo del pedido de la maquinaria crítica, en días (supuesto de El Molinete)",
+              "42",
+              "checklist-legal-fritura-y-licencias.xlsx!Checklist Legal (F1-F6)!E33"
+            ],
+            [
+              "Holgura de la maquinaria en el cronograma de El Molinete, en meses",
+              "3,1",
+              "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C55"
+            ]
+          ]
+        },
+        {
+          "n": 8,
+          "titulo": "Cuánto Cuesta Abrir, Partida a Partida",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-02",
+            "CUS-32a",
+            "CUS-33a",
+            "CUS-34c",
+            "CUS-35a",
+            "CUS-36a",
+            "CUS-37a",
+            "CUS-38",
+            "CUS-39",
+            "CUS-41",
+            "CHN-71c"
+          ],
+          "sector_huecos": [
+            "CUS-36b",
+            "CUS-43"
+          ],
+          "cifras": [
+            [
+              "CAPEX total de El Molinete, sin IVA y sin fondo de maniobra",
+              "86.415,65 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E45"
+            ],
+            [
+              "IVA soportado del CAPEX, que se adelanta",
+              "17.298,62 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!F45"
+            ],
+            [
+              "Desembolso total con IVA",
+              "103.714,27 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!G45"
+            ],
+            [
+              "Inmovilizado amortizable",
+              "81.747,35 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!I45"
+            ],
+            [
+              "Bloque de obra y acondicionamiento del local en bruto, sin IVA",
+              "28.500 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!K6"
+            ],
+            [
+              "Coste de obra por metro cuadrado de local en bruto (supuesto de El Molinete)",
+              "380 €",
+              "calculadora-capex-churreria.xlsx!Parámetros!B11"
+            ],
+            [
+              "Bloque de licencias, proyecto de actividad y tasas, sin IVA (supuesto de El Molinete)",
+              "6.100 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!E41"
+            ],
+            [
+              "Equipamiento y mobiliario de los bloques dos a siete, sin IVA",
+              "47.147,35 €",
+              "calculadora-capex-churreria.xlsx!Resumen!B22"
+            ],
+            [
+              "Fondo de maniobra de El Molinete, que calcula el plan financiero",
+              "79.052 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B19"
+            ],
+            [
+              "Inversión total de El Molinete: CAPEX más fondo de maniobra",
+              "165.468 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B24"
+            ]
+          ]
+        },
+        {
+          "n": 9,
+          "titulo": "Alta Fiscal y Sanitaria de Cada Formato: Epígrafe, Código de Actividad y Registro",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-09",
+            "CUN-11",
+            "CUN-12",
+            "CUN-14",
+            "CUN-15",
+            "CUN-V03",
+            "CUN-21",
+            "CUN-30",
+            "CHN-39",
+            "CHN-41",
+            "CHN-73",
+            "CHN-74b",
+            "CHN-94",
+            "CHN-75"
+          ],
+          "sector_huecos": [
+            "CUN-16"
+          ],
+          "cifras": [
+            [
+              "Formatos que le tocan a El Molinete en el árbol del impuesto de actividades",
+              "2",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B21"
+            ],
+            [
+              "Epígrafes candidatos que El Molinete lleva a su asesor",
+              "676 (chocolatería) o 673 (cafés y bares), más 644.6 si vendes al peso. 644.6 (masas fritas y preparados de chocolate). ",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B23"
+            ],
+            [
+              "¿Necesita El Molinete el 644.6 además del epígrafe de la sala?",
+              "Pregúntalo: depende de si tu sala va al 676 o al 673",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B22"
+            ],
+            [
+              "¿Paga El Molinete el impuesto de actividades?",
+              "Alta sí, pago no: están exentos los dos primeros años de actividad, todas las personas físicas y las sociedades por debajo de un millón de euros de cifra de negocio",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B24"
+            ],
+            [
+              "La pregunta del código de actividad, redactada para el asesor",
+              "¿Con qué código del CNAE-2025 me doy de alta, y cuál es su equivalente del CNAE-2009, que también hay que comunicar? Mis candidatos: 56.11 o 56.30 (CNAE-2025), con su código de 2009; 47.24 o 56.11, con su código de 2009; y sé que el 47.81 del CNAE-2025 es comercio de vehículos de motor.",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol IAE y CNAE por Formato!B25"
+            ],
+            [
+              "Régimen sanitario de El Molinete",
+              "Comercio al por menor: excluido del registro general (RGSEAA); te inscribes en el de tu comunidad autónoma",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol de Registro Sanitario!B11"
+            ],
+            [
+              "El trámite sanitario que le toca a El Molinete",
+              "Comunicación o declaración responsable al registro de tu comunidad autónoma: no habilita por sí sola, y cómo funciona cambia en cada comunidad",
+              "checklist-legal-fritura-y-licencias.xlsx!Árbol de Registro Sanitario!B12"
+            ]
+          ]
+        },
+        {
+          "n": 10,
+          "titulo": "Aceite de Fritura: Calidad, Cambio, Coste y Gestor",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-01",
+            "CUN-02",
+            "CUN-03",
+            "CUN-27",
+            "CUS-23",
+            "CUS-38",
+            "CUS-44h"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Límite legal de compuestos polares del aceite de fritura",
+              "25 %",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B25"
+            ],
+            [
+              "Renovación del aceite por ración: lo que se tira al cambiar la cuba",
+              "0,03 €",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!L5"
+            ],
+            [
+              "Aceite total por ración: el absorbido por la masa más la renovación",
+              "0,05 €",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B33"
+            ],
+            [
+              "Parte del aceite total por ración que es renovación",
+              "60 %",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Consumo y Reposición!B34"
+            ],
+            [
+              "Días entre cambios de aceite de El Molinete (supuesto declarado)",
+              "6",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B21"
+            ],
+            [
+              "Veredicto del libro del aceite sobre el ciclo de cambio de El Molinete",
+              "Con tu ciclo, el aceite que tiras al cambiar cuesta más por ración que el que se lleva la masa: cada día que alargues, sin pasar del límite del medidor, se nota",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F22"
+            ],
+            [
+              "Lo que cuesta al mes cambiar el aceite un día antes",
+              "50,59 €",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F19"
+            ],
+            [
+              "Lo que se ahorra al mes alargando un día, si el medidor lo permite",
+              "36,14 €",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Punto Económico de Cambio!F20"
+            ],
+            [
+              "Margen que se pierde al año con la primera subida del aceite del libro",
+              "507,65 €",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!J8"
+            ],
+            [
+              "Litros de aceite usado que El Molinete entrega al gestor cada mes",
+              "126,7",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Gestor de Aceite Usado!B7"
+            ]
+          ]
+        },
+        {
+          "n": 11,
+          "titulo": "Autocontrol, Alérgenos, Acrilamida y el Día de la Inspección",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-04",
+            "CUN-06",
+            "CUN-07",
+            "CUN-09",
+            "CHN-32",
+            "CHN-33",
+            "CHN-34",
+            "CHN-37",
+            "CHN-51",
+            "CHN-69"
+          ],
+          "sector_huecos": [
+            "CUN-08"
+          ],
+          "cifras": [
+            [
+              "¿Freidora dedicada o compartida en El Molinete?",
+              "Dedicada al churro y a la porra: el aceite sólo lleva lo que lleva tu masa",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B11"
+            ],
+            [
+              "Casillas de alérgenos de El Molinete pendientes de leer en la etiqueta",
+              "21",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B21"
+            ],
+            [
+              "¿Declara El Molinete el gluten por escrito?",
+              "Sí",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B20"
+            ],
+            [
+              "Umbral del «sin gluten», en miligramos por kilo",
+              "20",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B25"
+            ],
+            [
+              "Acrilamida, parte A del anexo II, en El Molinete",
+              "No fríes patatas: la parte A no te alcanza por ellas",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B35"
+            ],
+            [
+              "Acrilamida, parte B del anexo II, en El Molinete",
+              "La parte B no te alcanza: sólo aplica a quien opera bajo marca o licencia siguiendo las instrucciones de un suministro centralizado (art. 2.3)",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B36"
+            ],
+            [
+              "Personas de El Molinete con la formación registrada",
+              "5",
+              "checklist-legal-fritura-y-licencias.xlsx!Registro de Formación!C22"
+            ],
+            [
+              "Validez de la formación que fija la casa, en meses (supuesto: la norma no fija caducidad)",
+              "24",
+              "checklist-legal-fritura-y-licencias.xlsx!Registro de Formación!C17"
+            ],
+            [
+              "Veredicto del registro de formación de El Molinete",
+              "Registro al día",
+              "checklist-legal-fritura-y-licencias.xlsx!Registro de Formación!C25"
+            ]
+          ]
+        },
+        {
+          "n": 12,
+          "titulo": "Escandallo del Churro y de la Porra: Rendimiento, Absorción y los Dos Márgenes",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-01",
+            "CUS-21",
+            "CUS-23",
+            "CUS-24",
+            "CUS-25"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste de un kilo de masa con el preparado comercial, sin IVA",
+              "0,50 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!E9"
+            ],
+            [
+              "Euros de aceite absorbido por cada kilo de masa",
+              "0,20 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!B11"
+            ],
+            [
+              "Peso del aceite absorbido en la materia de la ración media",
+              "6,8 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Absorción de Aceite y Merma!B22"
+            ],
+            [
+              "Formato de la carta que más euros deja por kilo de masa",
+              "CH2 · Media ración de churros (3 uds)",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!B16"
+            ],
+            [
+              "Euros sin IVA que deja cada kilo de masa en el formato que más deja",
+              "19,40 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!B17"
+            ],
+            [
+              "Euros sin IVA que deja cada kilo de masa en el formato que menos deja",
+              "6,81 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!B19"
+            ],
+            [
+              "Margen sobre materia prima de El Molinete en invierno",
+              "86,9 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B6"
+            ],
+            [
+              "Margen tras aceite y mano de obra de El Molinete en invierno",
+              "41,2 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B7"
+            ],
+            [
+              "«Un poquito más del…»: rentabilidad que declara de palabra el gestor de La Artesana (El Español, 2025), fiabilidad baja, sólo como contraste y nunca como margen",
+              "50 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B14"
+            ],
+            [
+              "Coste de mano de obra por ración de El Molinete",
+              "0,99 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Coste Hora!B8"
+            ]
+          ]
+        },
+        {
+          "n": 13,
+          "titulo": "El Equipo, los Turnos y la Madrugada",
+          "tablas": 3,
+          "sector_usado": [
+            "CUN-29",
+            "CUN-31",
+            "CUN-32",
+            "CUN-39",
+            "CUN-40",
+            "CUN-V01",
+            "CUN-V05",
+            "CHN-67",
+            "CHN-68",
+            "CHN-93",
+            "CUS-54",
+            "CUS-55"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Coste anual de plantilla de El Molinete, con Seguridad Social, refuerzo y sustituciones",
+              "119.350 €",
+              "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!L5"
+            ],
+            [
+              "Coste hora de la plantilla, el que usa el escandallo",
+              "13,24 €",
+              "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!B19"
+            ],
+            [
+              "¿Es trabajador nocturno del Estatuto el churrero del turno de las 4:30 del fin de semana?",
+              "no",
+              "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G10"
+            ],
+            [
+              "Horas a la semana de ese churrero en el periodo nocturno del Estatuto, de 22:00 a 6:00",
+              "3,0",
+              "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!C10"
+            ],
+            [
+              "¿Es trabajador nocturno del Estatuto quien cierra el viernes y el sábado?",
+              "revísalo con tu asesor",
+              "turnos-plantilla-y-madrugada.xlsx!Nocturnidad ET y Convenio!G11"
+            ],
+            [
+              "Plus de nocturnidad del convenio de ejemplo que paga la plantilla al año",
+              "2.725 €",
+              "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!M14"
+            ],
+            [
+              "Tablas salariales del convenio de ejemplo y su estado",
+              "2025 · convenio vencido el 31-12-2025, en negociación; se aplican sus tablas mientras no se publique el nuevo",
+              "turnos-plantilla-y-madrugada.xlsx!Parámetros!B16"
+            ],
+            [
+              "Salario mínimo interprofesional anual de 2026, suelo de cada puesto a jornada completa",
+              "17.094 €",
+              "turnos-plantilla-y-madrugada.xlsx!Parámetros!B20"
+            ],
+            [
+              "Horas a la semana del titular de El Molinete en el cuadrante",
+              "52,5",
+              "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B6"
+            ],
+            [
+              "Lo que valdrían al año las horas de más del titular, al coste hora de la plantilla",
+              "8.514 €",
+              "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B14"
+            ]
+          ]
+        },
+        {
+          "n": 14,
+          "titulo": "La Temporada y las Ferias: de Octubre a Marzo, el Verano y las Casetas",
+          "tablas": 3,
+          "sector_usado": [
+            "CUS-11",
+            "CUS-29",
+            "CUS-31e",
+            "CUS-V17",
+            "CUN-01",
+            "CUN-11",
+            "CUN-19",
+            "CUN-20",
+            "CUN-21",
+            "CUN-22",
+            "CUN-25",
+            "CUN-28",
+            "CUN-36",
+            "CUN-37",
+            "CUS-42",
+            "CHN-34"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Raciones de un año normal de El Molinete",
+              "107.400",
+              "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L5"
+            ],
+            [
+              "Peso de diciembre sobre las raciones del año",
+              "14,6 %",
+              "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!E29"
+            ],
+            [
+              "Coste del refuerzo de Navidad y Reyes al año",
+              "742 €",
+              "temporada-franjas-y-ferias.xlsx!Refuerzo por Pico!B9"
+            ],
+            [
+              "Contribución de julio y agosto si se cierra",
+              "0 €",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B16"
+            ],
+            [
+              "Contribución de julio y agosto con carta de verano",
+              "17.369 €",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!C16"
+            ],
+            [
+              "Contribución de julio y agosto saliendo de ferias",
+              "2.106 €",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!D16"
+            ],
+            [
+              "Raciones al día del local por debajo de las cuales la carta de verano deja menos que las ferias",
+              "18,4",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B24"
+            ],
+            [
+              "Resultado de julio y agosto con los fijos dentro, con la carta de verano",
+              "-10.345 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!D23"
+            ],
+            [
+              "Lo que deja el mercado navideño de ejemplo",
+              "1.853 €",
+              "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!D35"
+            ],
+            [
+              "Alta en el impuesto de actividades de un puesto de feria, según el libro legal",
+              "Alta en el IAE del puesto: 663.1, o 675 / 674.7 si pones mesas",
+              "checklist-legal-fritura-y-licencias.xlsx!Ferias y Venta Ambulante!A18"
+            ]
+          ]
+        },
+        {
+          "n": 15,
+          "titulo": "Franquicia o Independiente",
+          "tablas": 2,
+          "sector_usado": [
+            "CUS-M12",
+            "CUS-M14",
+            "CUS-M15",
+            "CUS-M17",
+            "CUS-M19",
+            "CUS-M20",
+            "CUS-M21",
+            "CUS-M22",
+            "CUS-M23",
+            "CUS-D6",
+            "CUS-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Inversión publicada más baja de las enseñas de la tabla",
+              "6.000 €",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B20"
+            ],
+            [
+              "Inversión publicada más alta de las enseñas de la tabla",
+              "320.000 €",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B21"
+            ],
+            [
+              "Enseñas con inversión publicada en la tabla",
+              "12",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B22"
+            ],
+            [
+              "Enseñas de base comparable que publican una inversión por debajo de la de El Molinete",
+              "2",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B23"
+            ],
+            [
+              "Enseñas de base comparable que publican una inversión igual o por encima de la de El Molinete",
+              "2",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B24"
+            ],
+            [
+              "Inversión de apertura de El Molinete sin fondo de maniobra",
+              "86.416 €",
+              "calculadora-capex-churreria.xlsx!Resumen!L5"
+            ]
+          ]
+        },
+        {
+          "n": 16,
+          "titulo": "El Plan Financiero, el Punto de Equilibrio y los Primeros Noventa Días",
+          "tablas": 3,
+          "sector_usado": [
+            "CHN-75",
+            "CHN-71c",
+            "CUN-18"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Contribución del año de crucero de El Molinete",
+              "198.418 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C15"
+            ],
+            [
+              "Resultado antes de impuestos del año de crucero",
+              "32.139 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C23"
+            ],
+            [
+              "Punto de equilibrio en raciones al día",
+              "250",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B12"
+            ],
+            [
+              "Raciones al día que prevé vender El Molinete, media del año",
+              "298",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B13"
+            ],
+            [
+              "Margen de seguridad en raciones al día por encima del equilibrio",
+              "48",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B14"
+            ],
+            [
+              "Meses del año de crucero que no pagan sus fijos",
+              "4",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B36"
+            ],
+            [
+              "La sala sola menos los fijos del año",
+              "-37.658 €",
+              "plan-financiero-3-anos-churreria.xlsx!Canales y Punto Muerto!C17"
+            ],
+            [
+              "Inversión total: inversión de apertura más fondo de maniobra",
+              "165.468 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B24"
+            ],
+            [
+              "Saldo más bajo de la cuenta en el primer año, el valle",
+              "71.518 €",
+              "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B34"
+            ],
+            [
+              "Mes del valle de tesorería",
+              "Octubre",
+              "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B35"
+            ]
+          ]
+        },
+        {
+          "n": 17,
+          "titulo": "Anexo Normativo, Actualizado a 3 de Octubre de 2026",
+          "tablas": 2,
+          "sector_usado": [
+            "CUN-02",
+            "CUN-19",
+            "CUN-26",
+            "CUN-32",
+            "CUN-34",
+            "CUN-35",
+            "CUN-V01",
+            "CHN-67",
+            "CHN-68",
+            "CHN-75"
+          ],
+          "sector_huecos": [
+            "CUN-08"
+          ],
+          "cifras": [
+            [
+              "Límite legal de compuestos polares del aceite de fritura",
+              "25 %",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Parámetros!B25"
+            ],
+            [
+              "Umbral del «sin gluten», en miligramos por kilo",
+              "20",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B25"
+            ],
+            [
+              "Salario mínimo interprofesional anual de 2026",
+              "17.094 €",
+              "turnos-plantilla-y-madrugada.xlsx!Parámetros!B20"
+            ],
+            [
+              "Tablas salariales del convenio de ejemplo y su estado",
+              "2025 · convenio vencido el 31-12-2025, en negociación; se aplican sus tablas mientras no se publique el nuevo",
+              "turnos-plantilla-y-madrugada.xlsx!Parámetros!B16"
+            ],
+            [
+              "Años entre inspecciones periódicas de la instalación de gas",
+              "5",
+              "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B11"
+            ],
+            [
+              "Kilos de la bombona por debajo de los cuales no hay instalación receptora, sólo con un aparato móvil y sólo en la feria",
+              "15",
+              "checklist-legal-fritura-y-licencias.xlsx!Licencia, Humos y Gas!B12"
+            ],
+            [
+              "Hora mínima de apertura como chocolatería en el ejemplo de Madrid",
+              "8",
+              "temporada-franjas-y-ferias.xlsx!Parámetros!B28"
+            ],
+            [
+              "Hora mínima de apertura como cafetería o bar en el ejemplo de Madrid",
+              "6",
+              "temporada-franjas-y-ferias.xlsx!Parámetros!B29"
+            ],
+            [
+              "Potencia de la cocina por encima de la cual es local de riesgo especial bajo, en kW",
+              "20",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B10"
+            ],
+            [
+              "Potencia de la cocina por encima de la cual el riesgo es alto y la extinción automática obligatoria, en kW",
+              "50",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B12"
+            ]
+          ]
+        }
+      ]
+    },
+    "business-plan-modelo-churreria-chocolateria": {
+      "gates": {
+        "paginas_pdf": 14,
+        "paginas_prometidas": 9,
+        "palabras_md": 6547,
+        "palabras_pdf": 6338,
+        "palabras_docx": 6027,
+        "palabras_objetivo": 3500,
+        "capitulos": 2,
+        "tablas_md": 11,
+        "tablas_docx": 11,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 5603,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 6058,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "Business Plan Modelo de una Churrería-Chocolatería"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "Business Plan Modelo de una Churrería-Chocolatería",
+          "created": "2026-10-03 09:43:28+00:00"
+        },
+        "paridad_palabras_pct": 0.51,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 186,
+        "ficheros": {
+          "md": "/root/guias-out/business-plan-modelo-churreria-chocolateria.md",
+          "docx": "/root/guias-out/business-plan-modelo-churreria-chocolateria.docx",
+          "pdf": "/root/guias-out/business-plan-modelo-churreria-chocolateria.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Resumen Ejecutivo, Mercado, Concepto y Operaciones",
+          "tablas": 5,
+          "sector_usado": [
+            "CUS-06",
+            "CUS-07",
+            "CUS-15",
+            "CUS-17",
+            "CUS-19",
+            "CUN-35",
+            "CUN-39",
+            "CUN-V01"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Inversión de apertura sin fondo de maniobra",
+              "86.416 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B22"
+            ],
+            [
+              "Fondo de maniobra",
+              "79.052 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B19"
+            ],
+            [
+              "Inversión total",
+              "165.468 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B24"
+            ],
+            [
+              "Préstamo bancario",
+              "99.300 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B25"
+            ],
+            [
+              "Recursos propios que pone el promotor",
+              "66.168 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B26"
+            ],
+            [
+              "Ventas sin IVA del año de crucero",
+              "232.557 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C28"
+            ],
+            [
+              "Resultado antes de impuestos del año de crucero",
+              "32.139 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C23"
+            ],
+            [
+              "Resultado sobre ventas del año de crucero",
+              "13,8 %",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C29"
+            ],
+            [
+              "Punto de equilibrio en raciones al día",
+              "250",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B12"
+            ],
+            [
+              "Raciones al día previstas, media del año",
+              "298",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B13"
+            ],
+            [
+              "Margen de seguridad en raciones al día",
+              "48",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B14"
+            ],
+            [
+              "Ticket medio sin IVA por ración de la carta de invierno",
+              "2,16 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Mix y Ticket Canal y Temporada!D6"
+            ],
+            [
+              "Margen sobre materia prima en invierno: el ticket sin IVA menos la materia y el aceite absorbido",
+              "86,9 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Los Dos Márgenes!B6"
+            ],
+            [
+              "Superficie útil del local",
+              "75",
+              "produccion-hora-punta-y-local.xlsx!Parámetros!B6"
+            ],
+            [
+              "Capacidad de la línea en raciones por hora",
+              "123",
+              "produccion-hora-punta-y-local.xlsx!Cuello de Botella!L5"
+            ],
+            [
+              "Veredicto «¿una churrera o dos?»",
+              "Una, con refuerzo en el pico: masa preparada antes de abrir y una persona más",
+              "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!E23"
+            ],
+            [
+              "Raciones de un año normal",
+              "107.400",
+              "temporada-franjas-y-ferias.xlsx!Peso sobre el Año!L5"
+            ],
+            [
+              "Coste anual de la plantilla",
+              "119.350 €",
+              "turnos-plantilla-y-madrugada.xlsx!Coste de Plantilla!L5"
+            ],
+            [
+              "Horas de apertura a la semana con mínimo de cobertura",
+              "83,5",
+              "turnos-plantilla-y-madrugada.xlsx!Cuadrante por Franja!B5"
+            ],
+            [
+              "Meses que dura el proyecto hasta la apertura",
+              "10",
+              "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C47"
+            ],
+            [
+              "Mes de apertura",
+              "Septiembre",
+              "checklist-legal-fritura-y-licencias.xlsx!Cronograma y Ruta Crítica!C50"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Plan Financiero a Tres Años, Tesorería y Riesgos",
+          "tablas": 6,
+          "sector_usado": [
+            "CUN-39",
+            "CUN-V01",
+            "CHN-75"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Contribución del año de crucero",
+              "198.418 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C15"
+            ],
+            [
+              "Costes fijos del año de crucero",
+              "166.280 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C22"
+            ],
+            [
+              "Resultado antes de impuestos del año de crucero",
+              "32.139 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C23"
+            ],
+            [
+              "Contribución por ración del año de crucero",
+              "1,85 €",
+              "plan-financiero-3-anos-churreria.xlsx!PyG 3 Años!C30"
+            ],
+            [
+              "Punto de equilibrio en raciones al día",
+              "250",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B12"
+            ],
+            [
+              "Punto de equilibrio de caja en raciones al día",
+              "238",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B19"
+            ],
+            [
+              "Margen de seguridad en raciones al día",
+              "48",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B14"
+            ],
+            [
+              "Meses del año de crucero que no pagan sus fijos",
+              "4",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!B36"
+            ],
+            [
+              "Resultado de agosto en el año de crucero",
+              "-5.713 €",
+              "plan-financiero-3-anos-churreria.xlsx!Punto de Equilibrio!H30"
+            ],
+            [
+              "Saldo de caja el día que se abre",
+              "79.052 €",
+              "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B32"
+            ],
+            [
+              "Valle de tesorería del primer año",
+              "71.518 €",
+              "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B34"
+            ],
+            [
+              "Mes del valle de tesorería",
+              "Octubre",
+              "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!B35"
+            ],
+            [
+              "Saldo de caja al cierre del primer año",
+              "86.973 €",
+              "plan-financiero-3-anos-churreria.xlsx!Tesorería 12 meses!M29"
+            ],
+            [
+              "Tipo de interés nominal anual del préstamo (supuesto)",
+              "6,2 %",
+              "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B60"
+            ],
+            [
+              "Plazo del préstamo en meses",
+              "84",
+              "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B61"
+            ],
+            [
+              "Carencia del préstamo en meses",
+              "6",
+              "plan-financiero-3-anos-churreria.xlsx!0. Supuestos!B62"
+            ],
+            [
+              "Cuota mensual del préstamo",
+              "1.550 €",
+              "plan-financiero-3-anos-churreria.xlsx!Financiación!B24"
+            ],
+            [
+              "Lo que sobra en el peor año del préstamo, después de pagar al banco",
+              "7.921 €",
+              "plan-financiero-3-anos-churreria.xlsx!Financiación!B124"
+            ],
+            [
+              "Ratio de cobertura de la deuda más bajo (información para el banco)",
+              "1,64",
+              "plan-financiero-3-anos-churreria.xlsx!Financiación!B127"
+            ],
+            [
+              "Raciones al día que hacen falta sólo para pagar a las personas",
+              "185",
+              "plan-financiero-3-anos-churreria.xlsx!Personal!B13"
+            ],
+            [
+              "Lo que deja la carta de verano frente a cerrar en julio y agosto",
+              "17.369 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!B26"
+            ],
+            [
+              "Resultado de julio y agosto con los fijos dentro, con la carta de verano",
+              "-10.345 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!D23"
+            ],
+            [
+              "Margen que se pierde al año con la subida más alta del aceite del libro",
+              "1.523 €",
+              "aceite-de-fritura-coste-y-cambio.xlsx!Escenarios de Precio del Aceite!J10"
+            ],
+            [
+              "Resultado del mismo local vendiendo sólo para llevar, con los mismos fijos",
+              "-106.506 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!C39"
+            ]
+          ]
+        }
+      ]
+    },
+    "BONUS-12-decisiones-de-apertura": {
+      "gates": {
+        "paginas_pdf": 21,
+        "paginas_prometidas": 20,
+        "palabras_md": 10383,
+        "palabras_pdf": 10296,
+        "palabras_docx": 9811,
+        "palabras_objetivo": 6600,
+        "capitulos": 3,
+        "tablas_md": 12,
+        "tablas_docx": 12,
+        "capitulos_cortos": {},
+        "no_latinos_md": 0,
+        "no_latinos_pdf": 0,
+        "no_latinos_docx": 0,
+        "fechas_caducas": [],
+        "mortalidad_sin_fuente": [],
+        "fugas_de_taller": [],
+        "citas_en_sintaxis_de_prompt": 0,
+        "citas_hoja_celda": [],
+        "degeneracion": [],
+        "truncamientos": [],
+        "parentesis_desequilibrados": [],
+        "erratas_ortograficas": [],
+        "erratas_ocurrencias": 0,
+        "entidades_html": [],
+        "euro_mal_escrito": [],
+        "fugas_de_modelo": [],
+        "epigrafes_ausentes": [],
+        "asteriscos_impresos": 0,
+        "palabras_reales_pdf": 9493,
+        "tabla_tras_ultimo_capitulo": false,
+        "titulos_ausentes_en_pdf": [],
+        "cifras_no_encontradas": [],
+        "cifras_aviso_no_dinero": [],
+        "palabras_pdf_cuerpo": 9897,
+        "meta_pdf": {
+          "author": "AI Chef Pro",
+          "title": "12 Decisiones de Apertura Resueltas"
+        },
+        "paginas_no_a4": [],
+        "meta_docx": {
+          "author": "AI Chef Pro",
+          "title": "12 Decisiones de Apertura Resueltas",
+          "created": "2026-10-03 09:43:29+00:00"
+        },
+        "paridad_palabras_pct": 0.87,
+        "ok": {
+          "paginas": true,
+          "palabras_pdf": true,
+          "palabras_docx": true,
+          "sin_capitulos_cortos": true,
+          "paridad": true,
+          "tablas_ancladas": true,
+          "no_latinos": true,
+          "fechas": true,
+          "mortalidad": true,
+          "sin_fugas_de_taller": true,
+          "citas_legibles": true,
+          "a4": true,
+          "metadata": true,
+          "coherencia_cifras": true,
+          "sin_degeneracion": true,
+          "sin_truncamientos": true,
+          "sin_erratas": true,
+          "parentesis_equilibrados": true,
+          "epigrafes_completos": true,
+          "sin_entidades_html": true,
+          "euro_bien_escrito": true,
+          "sin_fugas_de_modelo": true,
+          "sin_asteriscos_impresos": true
+        },
+        "verde": true,
+        "saneados_winansi": 93,
+        "ficheros": {
+          "md": "/root/guias-out/BONUS-12-decisiones-de-apertura.md",
+          "docx": "/root/guias-out/BONUS-12-decisiones-de-apertura.docx",
+          "pdf": "/root/guias-out/BONUS-12-decisiones-de-apertura.pdf"
+        }
+      },
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Decisiones del Local y de la Línea",
+          "tablas": 4,
+          "sector_usado": [
+            "CUN-35",
+            "CUS-02",
+            "CUS-32a",
+            "CUS-33a",
+            "CUS-33b",
+            "CUS-34c",
+            "CUS-35a",
+            "CUN-26",
+            "CUN-28",
+            "CHN-48"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Decisión 1 · Diferencia de dotación del despacho frente al local con sala",
+              "-4.433 €",
+              "calculadora-capex-churreria.xlsx!Variante del Formato!D7"
+            ],
+            [
+              "Decisión 1 · Resultado del mismo local vendiendo sólo para llevar, con los mismos fijos",
+              "-106.506 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!C39"
+            ],
+            [
+              "Decisión 1 · Ahorro de fijos al año que necesitaría el despacho para no perder dinero",
+              "106.506 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!C41"
+            ],
+            [
+              "Decisión 2 · Inversión del traspaso: precio pedido más adaptación",
+              "88.000 €",
+              "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B16"
+            ],
+            [
+              "Decisión 2 · Precio de traspaso por debajo del cual gana el traspaso",
+              "75.747 €",
+              "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B18"
+            ],
+            [
+              "Decisión 2 · Veredicto de la inversión",
+              "Sale mejor la OBRA NUEVA",
+              "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B19"
+            ],
+            [
+              "Decisión 2 · Veredicto en el horizonte, con la renta",
+              "Sale mejor la OBRA NUEVA",
+              "calculadora-capex-churreria.xlsx!Traspaso vs Obra Nueva!B24"
+            ],
+            [
+              "Decisión 3 · Precio de ficha del equipo completo de churros, sin IVA",
+              "2.188 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!I15"
+            ],
+            [
+              "Decisión 3 · Capacidad de la línea separada en raciones por hora",
+              "123",
+              "produccion-hora-punta-y-local.xlsx!Cuello de Botella!L5"
+            ],
+            [
+              "Decisión 3 · Eslabón que manda en la línea",
+              "Línea de dosificado y fritura (con su churrero/a)",
+              "produccion-hora-punta-y-local.xlsx!Cuello de Botella!B7"
+            ],
+            [
+              "Decisión 3 · Hora punta de un día punta de diciembre, en raciones por hora",
+              "131,2",
+              "temporada-franjas-y-ferias.xlsx!Capacidad contra el Pico!F18"
+            ],
+            [
+              "Decisión 4 · kW computables de la cocina de El Molinete",
+              "28",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D12"
+            ],
+            [
+              "Decisión 4 · Riesgo de la cocina",
+              "Riesgo bajo",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D13"
+            ],
+            [
+              "Decisión 4 · ¿Extinción automática obligatoria?",
+              "No obligatoria",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D15"
+            ],
+            [
+              "Decisión 4 · Precio de ficha de la freidora eléctrica de referencia, sin IVA",
+              "2.053 €",
+              "calculadora-capex-churreria.xlsx!Equipamiento Línea a Línea!R19"
+            ],
+            [
+              "Decisión 4 · Importe de la extinción automática si te toca",
+              "2.800 €",
+              "calculadora-capex-churreria.xlsx!CAPEX por Bloque!H9"
+            ]
+          ]
+        },
+        {
+          "n": 2,
+          "titulo": "Decisiones de la Carta y del Horario",
+          "tablas": 4,
+          "sector_usado": [
+            "CUS-21",
+            "CUS-24",
+            "CHN-05",
+            "CUN-42",
+            "CUN-V06",
+            "CUS-15",
+            "CUS-16",
+            "CUS-17",
+            "CUN-41",
+            "CUN-34"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Decisión 5 · Coste de un kilo de masa con el preparado comercial",
+              "0,50 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!E9"
+            ],
+            [
+              "Decisión 5 · Coste de un kilo de masa con mezcla propia",
+              "0,36 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!E16"
+            ],
+            [
+              "Decisión 5 · Ahorro de la mezcla propia por kilo de masa",
+              "0,14 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Escandallo por kg de Masa!B18"
+            ],
+            [
+              "Decisión 6 · Cacao seco total que declara la etiqueta del preparado de El Molinete",
+              "35 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B21"
+            ],
+            [
+              "Decisión 6 · Cacao seco total mínimo del producto «chocolate a la taza»",
+              "35 %",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B23"
+            ],
+            [
+              "Decisión 6 · Aviso del libro antes de imprimir la carta",
+              "Sin aviso: la carta usa la denominación de la etiqueta",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B24"
+            ],
+            [
+              "Decisión 6 · Coste de una taza de chocolate, sin IVA",
+              "0,44 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Chocolate a la Taza!B15"
+            ],
+            [
+              "Decisión 7 · Euros sin IVA que deja cada kilo de masa la ración de churros",
+              "17,97 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!J7"
+            ],
+            [
+              "Decisión 7 · Euros sin IVA que deja cada kilo de masa la docena para llevar",
+              "11,25 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!J12"
+            ],
+            [
+              "Decisión 7 · Euros sin IVA que deja cada kilo de masa el kilo para llevar",
+              "6,81 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Ración, Docena o Kilo!J13"
+            ],
+            [
+              "Decisión 7 · Margen mínimo por unidad para no revisar el precio (criterio de la casa)",
+              "0,50 €",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B28"
+            ],
+            [
+              "Decisión 7 · Rotación mínima, en % del mix, para no vigilar una referencia (criterio de la casa)",
+              "2",
+              "carta-de-apertura-y-escandallo-churro.xlsx!Parámetros!B29"
+            ],
+            [
+              "Decisión 8 · Parte de las raciones de la semana que se lleva el desayuno",
+              "50 %",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!D53"
+            ],
+            [
+              "Decisión 8 · Hora de apertura del sábado de El Molinete",
+              "6",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!D11"
+            ],
+            [
+              "Decisión 8 · Días a la semana que El Molinete abre antes de la hora mínima de chocolatería",
+              "7",
+              "temporada-franjas-y-ferias.xlsx!Franjas del Día!E16"
+            ],
+            [
+              "Decisión 8 · Lo que significa su horario para el desayuno, en el ejemplo de Madrid",
+              "Como cafetería o bar puedes abrir desde las 6:00 en el ejemplo de Madrid",
+              "checklist-legal-fritura-y-licencias.xlsx!Régimen de Apertura y Horario!B25"
+            ]
+          ]
+        },
+        {
+          "n": 3,
+          "titulo": "Decisiones del Verano, la Plantilla y el Modelo",
+          "tablas": 4,
+          "sector_usado": [
+            "CUS-11",
+            "CUS-31e",
+            "CUN-29",
+            "CUN-40",
+            "CHN-33",
+            "CHN-34",
+            "CUN-04",
+            "CUS-M12",
+            "CUS-M14",
+            "CUS-M15",
+            "CUS-03"
+          ],
+          "sector_huecos": [],
+          "cifras": [
+            [
+              "Decisión 9 · Contribución de julio y agosto con carta de verano",
+              "17.369 €",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!C16"
+            ],
+            [
+              "Decisión 9 · Contribución de julio y agosto saliendo de ferias",
+              "2.106 €",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!D16"
+            ],
+            [
+              "Decisión 9 · Raciones al día del local por debajo de las cuales la carta de verano deja menos que las ferias",
+              "18,4",
+              "temporada-franjas-y-ferias.xlsx!El Verano (Tres Salidas)!B24"
+            ],
+            [
+              "Decisión 9 · Resultado de julio y agosto con los fijos dentro, con la carta de verano",
+              "-10.345 €",
+              "plan-financiero-3-anos-churreria.xlsx!Escenarios!D23"
+            ],
+            [
+              "Decisión 10 · Horas del titular a la semana",
+              "52,5",
+              "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B6"
+            ],
+            [
+              "Decisión 10 · Horas de madrugada del titular a la semana",
+              "5,0",
+              "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B10"
+            ],
+            [
+              "Decisión 10 · Lo que valdrían al año las horas de más del titular",
+              "8.514 €",
+              "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B14"
+            ],
+            [
+              "Decisión 10 · Veredicto del libro de turnos sobre las horas del titular",
+              "Trabajas los siete días: un plan que sólo cuadra con el titular sin descanso no aguanta un año; busca un relevo para un día",
+              "turnos-plantilla-y-madrugada.xlsx!Horas del Titular!B15"
+            ],
+            [
+              "Decisión 11 · ¿Freidora dedicada o compartida en El Molinete?",
+              "Dedicada al churro y a la porra: el aceite sólo lleva lo que lleva tu masa",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B11"
+            ],
+            [
+              "Decisión 11 · Acrilamida, parte A del anexo II, en El Molinete",
+              "No fríes patatas: la parte A no te alcanza por ellas",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B35"
+            ],
+            [
+              "Decisión 11 · Casillas de alérgenos pendientes de leer en la etiqueta",
+              "21",
+              "checklist-legal-fritura-y-licencias.xlsx!Alérgenos y Aceite Compartido!B21"
+            ],
+            [
+              "Decisión 11 · kW computables de la cocina con una sola freidora",
+              "28",
+              "produccion-hora-punta-y-local.xlsx!Freidoras, Potencia y Riesgo!D12"
+            ],
+            [
+              "Decisión 12 · Inversión total de El Molinete, con el fondo de maniobra",
+              "165.468 €",
+              "plan-financiero-3-anos-churreria.xlsx!Inversión Inicial!B24"
+            ],
+            [
+              "Decisión 12 · Inversión publicada más baja de las enseñas",
+              "6.000 €",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B20"
+            ],
+            [
+              "Decisión 12 · Inversión publicada más alta de las enseñas",
+              "320.000 €",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B21"
+            ],
+            [
+              "Decisión 12 · Enseñas de base comparable por debajo de la inversión de apertura de El Molinete",
+              "2",
+              "calculadora-capex-churreria.xlsx!Franquicia o Independiente!B23"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

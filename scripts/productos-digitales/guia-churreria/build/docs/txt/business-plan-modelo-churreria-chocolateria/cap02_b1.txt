@@ -1,0 +1,59 @@
+### La cuenta de resultados a tres años
+
+El cuadro siguiente pone los tres años de El Molinete uno al lado del otro, y conviene leerlo con una idea en la cabeza: el año uno no es un año normal, es una rampa. El negocio arranca vendiendo menos raciones al día de las que vendrá a vender cuando la clientela lo conozca, y los costes fijos, en cambio, no esperan a nadie. El año dos es el de crucero, el que usamos como referencia para todo lo demás, y el año tres enseña hacia dónde se mueve el negocio una vez asentado. Las cifras de cada columna salen del libro plan-financiero-3-anos-churreria.xlsx, hoja «PyG 3 Años», y son las que tiene el lector en sus propias hojas.
+
+Para el año de crucero, la contribución es de 198.418 €. Es lo que queda de las ventas cuando se descuenta lo que cuesta producir cada ración (masa, aceite, chocolate, envases). Los costes fijos de ese mismo año suman 166.280 €, y el resultado antes de impuestos es de 32.139 €. Lo llamamos resultado antes de impuestos y nada más: este plan no calcula ningún impuesto, y quien lo lea con su asesor tiene que añadirlo en su caso. Cada ración vendida en el año de crucero deja una contribución de 1,85 €, y esa cifra es la que manda en todo lo que viene después: los fijos se pagan raciones a razón de 1,85 € cada una, ni una más.
+
+¿Qué hay dentro de los costes fijos? Cinco líneas, y las explicamos una por una porque cada una se comporta de forma distinta:
+
+- La plantilla sale del libro de turnos: son las personas que el horario de apertura exige, vendas mucho o vendas poco. El cuadrante semana a semana se trabaja con el Kit Gestión de Personal y Turnos; aquí sólo entra su resultado en euros.
+- La renta del local, que se paga entera cada mes, haya cola en la puerta o no.
+- Los gastos fijos que nacen en el propio plan: suministros, seguros, gestoría, software, mantenimiento y similares, con su importe en la tabla «Los gastos fijos del mes, sin renta ni plantilla» de la hoja «0. Supuestos». Son supuestos de El Molinete, y el lector los sustituye por los suyos con presupuestos reales.
+- La amortización, que es el desgaste contable de lo que se invirtió en obra y equipos. Resta en la cuenta de resultados, pero no sale de la caja ningún mes: no es un pago, es un reparto del gasto en el tiempo.
+- Los intereses, que vienen del cuadro de amortización del préstamo y bajan a medida que se devuelve capital.
+
+Una advertencia sobre las tablas salariales de la plantilla. El único convenio que hemos verificado para este ejemplo es el de Hostelería de la Comunidad de Madrid, y se presenta como ejemplo que no se extrapola a otras provincias. Según el art. 5 del «Convenio de Hostelería de la Comunidad de Madrid 28002085011981» (BOCM n.º 82, 06-04-2024), el convenio venció a finales de 2025, y la comisión negociadora del siguiente ya está constituida. A fecha de comprobación, el 3 de octubre de 2026, no hemos localizado ningún texto nuevo publicado en el BOCM, así que siguen aplicándose las tablas de 2025 en ultraactividad o prórroga, conforme a los apartados 2 y 3 del art. 86 del Estatuto de los Trabajadores. El puesto de churrero se encaja en un nivel por asimilación de funciones, y esa asimilación es una inferencia que tiene que confirmarte tu asesor laboral.
+
+### El punto de equilibrio y el año mes a mes
+
+El punto de equilibrio contable de El Molinete es de 250 raciones al día. Es la venta diaria a partir de la cual la contribución cubre todos los costes fijos, amortización incluida. Hay un segundo punto, el de caja, que deja fuera la amortización porque no sale de la cuenta del banco: 238 raciones al día. La diferencia entre los dos es lo que se desgasta contablemente pero no se paga, y es la que explica que un negocio pueda tener números rojos en la cuenta de resultados y aun así no quedarse sin dinero en el mes. 
+
+Frente a esas 250 raciones, el año de crucero se mueve con un margen de seguridad de 48 raciones al día. Una caída de ventas que se coma esas 48 raciones deja el negocio en el punto de equilibrio, y más allá empieza a perder.
+
+La tabla «El año de crucero mes a mes» de la hoja «Punto de Equilibrio» responde a la pregunta que más se esquiva en un plan de churrería: ¿en qué meses no se pagan los fijos? La respuesta del libro es que son 4 los meses del año de crucero que no pagan sus fijos. El caso más claro es agosto, que cierra con un resultado de -5.713 €. La curva de meses es un supuesto declarado de El Molinete, no un dato del sector: cada lector tiene que pegar la suya.
+
+La consecuencia para la caja es directa y se resume en una frase: los meses malos los pagan los buenos. El negocio no puede vivir de lo que gana un mes concreto, tiene que acumular en invierno lo que perderá en verano. Y por eso el fondo de maniobra no se calcula sobre ventas ni sobre un importe redondo, sino sobre meses de fijos: cuántos meses de renta, plantilla y gastos fijos puede aguantar el negocio sin vender nada, o vendiendo por debajo de su equilibrio.
+
+### La tesorería del primer año y el valle
+
+Todo lo anterior habla de resultados. La tesorería habla de dinero que entra y sale del banco, y es la que decide si el local sigue abierto. El libro de la hoja «Tesorería 12 meses» arranca el día de la apertura con un saldo de caja de 79.052 €. Es el dinero que queda después de pagar la obra, los equipos, las licencias y el primer pedido, y de dejar un fondo de maniobra. Desde ahí, el negocio empieza a gastar.
+
+El valle del primer año es de 71.518 €, y llega en octubre. Es el punto más bajo de la caja en los doce meses, y la lectura del libro es sencilla: en el peor momento del año, el negocio sigue teniendo ese dinero en el banco. No se queda sin caja. Al cierre del primer año, el saldo es de 86.973 €.
+
+Conviene entender por qué el valle llega tan pronto. La rampa de arranque vende menos los primeros meses, y los fijos (renta, plantilla, gastos) se pagan enteros desde el primer día, aunque la clientela todavía no conozca el sitio. La caja baja justo ahí, en los meses en que más cuesta darse a conocer. La carencia del préstamo evita que la cuota se sume a ese esfuerzo: durante los primeros meses sólo se pagan intereses, y el capital empieza a devolverse cuando la rampa ya ha subido. Sin carencia, el valle sería más hondo y llegaría antes.
+
+El valle depende de la rampa que escribas, y la rampa es un supuesto tuyo: pruébala con raciones más prudentes antes de firmar nada. Y el saldo al cierre del año uno no es un beneficio: es caja, y la caja incluye dinero prestado que aún no se ha devuelto.
+
+### La financiación: el préstamo, la cuota y lo que sobra
+
+La estructura de financiación del caso usa un préstamo con tres condiciones, todas ellas supuestos del plan: un tipo de interés nominal anual del 6,2 %, un plazo de 84 meses y una carencia de 6 meses. Con ellas, la cuota mensual sale a 1.550 €. El cuadro de la hoja «Financiación» recorre el préstamo año a año y responde a la pregunta que el banco hace en primer lugar: ¿genera el negocio la cuota?
+
+La respuesta del libro, en euros y no en ratios: en el peor año del préstamo, después de pagar al banco, sobran 7.921 €. Es poco margen, pero es positivo. Como información para el banco, el libro calcula también el ratio de cobertura de la deuda más bajo de todo el cuadro, que es de 1,64. Lo decisivo son los euros que sobran; el ratio es la forma en que los lee quien concede el crédito.
+
+El tipo del 6,2 % es un supuesto heredado del plan, no una oferta. Nadie ha ofrecido ese tipo a El Molinete, porque El Molinete es un caso modelado. Cuando el lector vaya a su banco, tiene que pedir la oferta por escrito y con su TAE, que es la tasa anual equivalente e incluye comisiones y gastos que el tipo nominal esconde. Con ese papel, sustituye el supuesto de la hoja «0. Supuestos» y mira qué le pasa a la cuota y a lo que sobra.
+
+### Los riesgos, con su cifra y su respuesta
+
+Un plan que enseña sólo el caso central no sirve para pedir dinero. Estos son los riesgos que el libro mide, cada uno con su cifra y con lo que hay que hacer.
+
+**Volumen.** El margen de seguridad es de 48 raciones al día sobre el punto de equilibrio de 250. Eso es lo que separa el negocio de las pérdidas. La respuesta es doble: no abrir con una plantilla que dependa de vender más que el equilibrio, y vigilar la venta diaria desde la primera semana contra ese número. Además, hacen falta 185 raciones al día sólo para pagar a las personas. Antes de pagar renta, gastos o banco, la plantilla ya exige esa venta. Si el horario se alarga, esa cifra sube, y cada hora de apertura que no vende tiene que justificarse.
+
+**Verano.** La carta de verano frente a cerrar en julio y agosto deja 17.369 €. Abrir con una carta pensada para el calor compensa más que bajar la persiana, pero no es gratis: aun con esa carta, el resultado de julio y agosto con los fijos dentro es de -10.345 €. La respuesta es decidir con la cifra delante, y no con el instinto de que cerrar «ahorra». Los fijos siguen ahí si cierras. La tabla «El verano con los fijos dentro», de la hoja «Escenarios», lo muestra lado a lado. Y una precisión: cerrar dos meses no es abrir seis meses o menos, así que ninguna rebaja de cuota de los establecimientos de temporada sirve aquí como argumento.
+
+**Aceite.** El aceite de fritura es la materia prima que más se mueve de precio. En el libro aceite-de-fritura-coste-y-cambio.xlsx, hoja «Escenarios de Precio del Aceite», la subida más alta que el libro contempla le cuesta al negocio 1.523 € de margen al año si no se toca el precio de venta. No es una cifra que hunda el negocio, pero se suma a un margen de seguridad ya escaso. La respuesta es doble: revisar el precio de la carta cuando el aceite se mueve, y llevar el registro del aceite con el fichero 09-control-aceite-fritura.xlsx del Pack Plantillas APPCC. El libro de escenarios trabaja con tu aceite y tu precio, no con el de una marca.
+
+**Formato.** Es el riesgo que más impresiona. El mismo local, con los mismos fijos, vendiendo sólo para llevar, da un resultado de -106.506 €. La conclusión es clara: el despacho solo no paga un local con sala, plantilla y renta como los de este caso. Si el modelo de negocio es el de ventana, hay que dimensionar otro local, con otros fijos, y partir de otro plan.
+
+**Convenio.** Ya lo hemos dicho: las tablas salariales de 2025 son de un convenio vencido y en negociación. Cuando se publique el texto nuevo, cambiará la plantilla, y con ella el punto de equilibrio, el valle y lo que sobra tras pagar al banco. La respuesta es dejar el sueldo como una celda que se actualiza, y repasar el plan entero el día que salga el texto en el boletín oficial.
+
+Una última cuestión, que es una pregunta y no un dato: según el Real Decreto 1007/2023 (BOE-A-2023-24840), disposición final cuarta y art. 3.1 del Reglamento, los sistemas de facturación tienen plazo de adaptación. Los contribuyentes del impuesto sobre sociedades, antes del 1 de enero de 2027, y el resto de obligados, antes del 1 de julio de 2027. Comprobado el 3 de octubre de 2026, y es algo que tiene que confirmar tu asesor, porque el software de caja que elijas tiene que cumplirlo desde el primer día.

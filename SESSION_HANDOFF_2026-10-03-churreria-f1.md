@@ -90,3 +90,35 @@ correo en la cola; en el Kit de Inventario se juntan los defectos D23 que destap
 5. Máquina: el Mac, en serie (VPS aparcado por John).
 
 Sesión Claude Code · `Via: Claude Code`.
+
+---
+
+## Sesión de la mañana (3-oct, Claude Code) — F2 a medias, PARADA por John
+
+John despertó esperando el producto hecho y le había dejado la F2 parada; se reanudó a las 8:36 y a las 11:20 John lo paró
+(«para para… ¿qué locura es esta?»): **el proceso fue desproporcionado para el producto** (ver la regla nueva abajo).
+
+**Estado (todo commiteado y pusheado):**
+- `main`: los 8 Excel en `scripts/productos-digitales/guia-churreria/build/` con sus generadores, `gate_libros.py` (con
+  `auditar_ciclos`) en VERDE, 67 celdas cruzadas, 70 demos OK (`ed26bd17`) · 7 imágenes (`9e09acb0`) · **guion completo**
+  `guias-v2_0/guion_guia_churreria_chocolateria.py` + `guia-churreria/verificar_guion.py` en VERDE (22 bloques, D26).
+- Rama `feat/guia-churreria-chocolateria` (pusheada, SIN PR): capa técnica (zona app 53, access/library/island, SPA, 4
+  functions con 13 descargas, catálogo 51, config, changelog, admin, hub ES ×2 + 6 hubs internacionales, buscador, rol,
+  footerLinks) — `36c1191c`, `b7105869`. Worktree local en `<scratchpad>/wt-churreria` (se puede recrear con `git worktree add`).
+- **Falta** (≈ 2 M y ~3 h en modo mínimo, cuando John diga): redactar los 22 bloques (Sonnet con el prompt cerrado dentro del
+  encargo, sin leer ficheros, 3 a la vez, ≤ 2 correcciones) → `documentos.py` local → gates de script (sin refutadores) →
+  ficha de la landing + correo + corrección del post (1 Sonnet calcando la hermana) → copiar los 13 ficheros a
+  `astro-site/public/dl/guia-churreria-chocolateria/` EN LA RAMA → PR con preview → Payment Link de John.
+- Pendiente menor detectado: `plan-financiero-3-anos-churreria.xlsx!Escenarios!C12` (base 59.852 €) no es el resultado de
+  crucero del P&L (C23 = 32.138,75 €); el guion no cita esas filas.
+
+**Consumo real del producto: ≈ 10,5 M** (F1 4,63 · Excel 4,27 · capa técnica 0,58 · guion y landing parados ≈ 1) + Kit
+Chocolatería 2.1 0,44 M. Desproporcionado para una guía de 65 € con ~150 búsquedas/mes de apertura.
+
+## 🔴 Regla nueva de John (3-oct): PROPORCIONALIDAD — que no se repita
+«Lo que vayas a desarrollar, investigar y proponer tiene que ser proporcional al producto». Los ~50 productos anteriores
+llevaron 3-6 horas cada uno; los últimos 3-4 se han ido a 1-2 días y millones de tokens con el mismo proceso pesado (5-6
+lentes, verificación cita a cita, SPEC de cientos de líneas, refutaciones en cadena, decenas de agentes opus). Desde hoy:
+**research en UNA pasada, SPEC corta, un implementador + gates de script, una sola comprobación adversarial final** (que los
+ficheros no estén corruptos y no haya errores), objetivo **3-6 horas por producto**, y la cuenta coste/retorno ANTES de
+elegirlo. Detalle en `CLAUDE.md` del proyecto y en la memoria `feedback_coste-vs-retorno-antes-de-elegir-producto`.

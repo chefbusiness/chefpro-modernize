@@ -1,0 +1,54 @@
+### No hay censo de churrerías, y eso también es un dato
+
+Empecemos por la verdad incómoda: en España no existe un número oficial de churrerías. La clasificación nacional de actividades económicas no tiene una clase propia para la churrería, y el directorio de empresas del INE solo publica la hostelería como bloque agregado (INE, DIRCE 2025, solo dos tablas publicadas: una de tamaño y edad y otra de comunidad autónoma y sector). Quien te dé una cifra de churrerías en España, o una facturación media por churrería, se la ha inventado. Aquí no la vas a encontrar, y el motivo es que no existe.
+
+Lo que sí tiene fuente es el orden de magnitud de la competencia general: a 1 de enero de 2025 había 313.827 locales de hostelería sobre 3.866.958 locales totales, el 8,1 % (INE, DIRCE 2025, Anexo de tablas, Tabla 2, 11-12-2025). Úsalo para lo que sirve: te dice cuánta oferta se reparte el desayuno y la merienda fuera de casa. No es tu cuota ni tu mercado, porque dentro de ese bloque caben desde un hotel hasta un bar de copas.
+
+Tampoco hay consumo de churros medido. El Informe del Consumo Alimentario 2025 del Ministerio de Agricultura, Pesca y Alimentación (MAPA) recoge chocolates y cacaos, pero en la búsqueda de texto que hicimos sobre sus 645 páginas no aparece ni «churro» ni «masas fritas». Del informe nos llevamos solo ese hallazgo: no hay una línea de churros. Si alguien te enseña un gráfico de «consumo nacional de churros», pregúntale de dónde sale.
+
+La consecuencia es práctica: el mercado de una churrería es su calle, y se mide andando, no en un informe. El último epígrafe de este capítulo te da el método para hacerlo en una mañana.
+
+### Desayuno, merienda y noche: las franjas que mandan
+
+Una churrería no vende de forma pareja a lo largo del día. Vende en olas, y conviene saber cuántas y de qué tamaño antes de elegir local, porque de ellas depende cuánta línea de fritura necesitas y a qué horas pagas personal.
+
+Lo que sigue es el reparto de El Molinete, la churrería-chocolatería modelada que recorre todo el pack. Es un supuesto declarado del libro de temporada, no un dato del sector ni «lo normal en una churrería», y tú lo cambias por el tuyo en el libro temporada-franjas-y-ferias.xlsx, hoja «Franjas del Día»:
+
+- **Desayuno:** es la franja que más raciones se lleva de la semana, el 50 %, en 23 horas a la semana.
+- **Merienda:** es la segunda franja, con el 38,4 % de las raciones, en 31,5 horas a la semana.
+- **Media mañana y noche de los viernes y sábados:** son franjas pequeñas. Existen, pero no sostienen el negocio por sí solas.
+
+Una semana de un mes medio suma 2.050 raciones en el modelo. Los siete días no pesan igual: la tabla de abajo ordena el tipo de día, las raciones, la apertura y la hora punta, y el cuadro de las cuatro franjas muestra cómo se reparten las horas.
+
+Lo que importa de verdad no es el total del día, sino la hora punta. En un día tipo de un mes medio, El Molinete llega a 62,5 raciones por hora en su peor hora; en un día punta del mismo mes, a 75,0. La línea de fritura se dimensiona para la peor hora, no para la media: si tu equipo da el ritmo de un día flojo, el sábado tendrás cola y clientes que se van. El modelo trabaja con 250 raciones en un día tipo y 400 en un día punta, también como supuesto de El Molinete. La cola del domingo se resuelve en el capítulo 6.
+
+Hay una trampa de horario pegada al desayuno: abrir antes de las 8:00 tiene condiciones, y el ejemplo de Madrid, que explica el capítulo 4, lo deja claro. Madrid es un ejemplo, no una regla que puedas extrapolar a tu ayuntamiento. Y un detalle de método: la franja vive solo en el libro de temporada. El libro de turnos copia de ahí sus horas, así que si cambias la franja en un sitio y no en el otro, tendrás cuadrantes que no cuadran con la caja.
+
+### Lo que cuesta un churro depende de la plaza
+
+No existe «el precio de la ración en España». Cada precio que sigue es de una carta concreta, en un sitio y un año concretos, y por eso van uno por línea:
+
+- Ración de seis churros: 1,20 € en una churrería de Granada (carta consultada el 3 de octubre de 2026).
+- Chocolate a la taza: 2,00 € en barra y 2,50 € en terraza, en la misma churrería de Granada (misma carta, 2026).
+- Ración de churros: 2,60 € en La Artesana, en Palma (El Español, 21-10-2025); la media ración, 1,40 €. El medio no indica cuántos churros lleva la ración.
+- Churro suelto: 0,30 € y porra: 0,60 €, en una churrería de Vallecas, en Madrid (Moncloa, 21-09-2026).
+- Gasto por persona con chocolate: unos 5 € en una chocolatería del centro de Madrid (El Español, Chocolatería 1902, 22-12-2024), a partir de siete porras y cuatro chocolates entre varios creadores de contenido.
+
+Léelos bien. En la carta de Granada, la ración más la taza da 3,20 € en barra y 3,70 € en terraza: es la única suma que hacemos en este capítulo, porque sale de la misma carta. Si comparas ese ticket con el gasto por persona del centro de Madrid, la plaza mueve el ticket alrededor de la mitad. Pero cuidado: son datos de años distintos, de locales distintos y el de Madrid es un único grupo de visitantes, no una media del centro. Sirve como orden de magnitud, con la fiabilidad limitada que eso implica, no como tarifa.
+
+Además, estos precios son de carta, y el ticket de El Molinete va sin IVA. No los mezcles en la misma cuenta: el ticket medio de la carta de invierno de El Molinete es de 2,16 € por ración sin IVA, y sale de su propia carta y de su propio mix, que el capítulo 3 explica cómo se fija. La decisión que sale de aquí es sencilla: tu precio lo decide tu plaza, y tu plaza se mira antes de firmar.
+
+Para contrastar volúmenes tenemos dos referencias de negocios reales, con su medio y su fecha. Son contraste, no objetivo. El gestor de La Artesana cuenta que venden entre 200 y 300 raciones entre semana y unas 400 en un día de fin de semana (El Español, 21-10-2025); es un dato declarado por él. Y la churrería de Vallecas llega a vender hasta 2.000 churros en sus días de más afluencia y casi 40 litros de chocolate diarios, con apertura de martes a domingo de 5:45 a 12:30 (Moncloa, 21-09-2026); ese «hasta» es un máximo declarado, no una media. Las raciones de El Molinete son un supuesto apoyado en el primero, y lo decimos para que nadie lo confunda con una previsión de ventas.
+
+### Qué mirar en la calle antes de firmar
+
+El método cabe en una mañana de trabajo. Ve a pie, con libreta o con el móvil, y haz lo siguiente:
+
+- **Cuenta la competencia en el radio de caminata:** churrerías, pero también cafeterías y bares que sirven churros. El cliente del desayuno no distingue entre ellos; solo elige el que le pilla de camino.
+- **Mira a qué hora abren y si hay cola el domingo.** La cola del domingo es la prueba más barata de que hay demanda en esa calle, y si nadie la tiene es una señal que conviene entender antes de firmar.
+- **Pide una ración y una taza en cada sitio y apunta el precio**, con el nombre del local y la fecha. Con esos datos tienes tu propia tabla de plaza, que vale más que cualquier horquilla copiada de un artículo.
+- **Fíjate en quién pasa a primera hora y quién a la hora de la merienda.** El desayuno lo hace el que va al trabajo o a clase; la merienda, familias y paseantes. Si el local que miras solo recibe a uno de los dos, ya sabes qué franja te va a faltar.
+
+Una nota para quien piensa en bombonería: la chocolatería de autor es otro negocio y tiene su propia guía, «Cómo Montar una Chocolatería Boutique & Atelier». Aquí hablamos de chocolate a la taza como acompañante del churro.
+
+El criterio con el que cerrar la visita es corto: una plaza sirve si su hora punta cabe en tu línea y su precio cabe en tu escandallo. Las dos cosas se comprueban antes de firmar: la primera en el libro de producción y local, la segunda en el de carta y escandallo. Si alguna de las dos no cuadra con tus propios números, ese local no es tu local, por muy bien que se vea desde la acera.
