@@ -88,7 +88,7 @@ El pack son ocho libros de Excel. Cada uno contesta una pregunta distinta:
 - **Carta y escandallo**: qué precio tiene cada ración y cuánto deja, con la materia prima de tu proveedor.
 - **Aceite**: cuánto aceite consumes, cuánto cambias y qué te cuesta.
 - **Temporada y ferias**: cómo se mueven los meses y qué pasa con un evento puntual.
-- **Plan financiero** (el libro plan-financiero-3-anos.xlsx): si la cuenta sale, con tus números y con el horizonte de tres años.
+- **Plan financiero** (el libro plan-financiero-3-anos-churreria.xlsx): si la cuenta sale, con tus números y con el horizonte de tres años.
 - **Checklist legal, fritura y licencias** (el libro checklist-legal-fritura-y-licencias.xlsx): qué papeles tienes que preguntar, en qué orden y a quién.
 - **Turnos**: cuántas manos hacen falta cada día de la semana.
 
@@ -320,7 +320,7 @@ La regla dura del pack es esta: toda línea de precio lleva al lado si el precio
 
 Cómo llegan los precios de compra al libro:
 
-- El preparado para masa, el aceite y el preparado de la taza se publican sin IVA en sus fichas, y así se anotan: la caja de 6 sacos de 4 kg a 34,80 € sin IVA (Churrofácil, ficha «Mix churros de lazo 4 kg caja 6 sacos», 2026-10-03), la garrafa de 25 L de aceite a 49 € sin IVA (Churrofácil, fichas 82 y 90, 2026-10-03) y la bolsa de 1,3 kg de preparado para chocolate a la taza a 8,20 € sin IVA (Churrofácil, ficha 14 y listado, 2026-10-03). La ficha dice «impuestos excluidos». El rendimiento de masa por saco lo declara el vendedor y se contrasta al pedir.
+- El preparado para masa, el aceite y el preparado de la taza se publican sin IVA en sus fichas, y así se anotan: la caja de 6 sacos de 4 kg a 34,80 € sin IVA (Churrofácil, ficha «Mix churros de lazo 4 kg caja 6 sacos», 2026-10-03), la garrafa de 25 L de aceite a 49,90 € sin IVA (Churrofácil, fichas 82 y 90, 2026-10-03) y la bolsa de 1,3 kg de preparado para chocolate a la taza a 8,20 € sin IVA (Churrofácil, ficha 14 y listado, 2026-10-03). La ficha dice «impuestos excluidos». El rendimiento de masa por saco lo declara el vendedor y se contrasta al pedir.
 - El cucurucho, la caja de 100 a 15 € (Churrofácil, listado de accesorios y consumibles, 2026-10-03), tiene la base inferida como sin IVA, y por eso va en una celda verde con su aviso: confírmalo con el proveedor al pedir.
 - El equipamiento, la obra, los envases y los servicios van al tipo general, el 21 %.
 
@@ -361,13 +361,13 @@ Una consecuencia más, que importa para la caja y no para el escandallo: el IVA 
 
 | Qué vendes y dónde | Tipo | Norma o dato |
 |---|---|---|
-| IVA en sala, barra y terraza (servicio de hostelería) | 10,0 % | CHN-71c + FC-IVA-01 |
-| IVA de churros y porras para llevar | 10,0 % | FC-IVA-02 |
-| IVA del chocolate a la taza para llevar | 10,0 % | CUN-18 |
-| IVA de las demás bebidas para llevar (café, leche con cacao, zumo, agua, batido) | 10,0 % | CUN-18 + CHN-71c |
-| IVA del granizado y la horchata para llevar | 21,0 % | FC-IVA-04 + CUN-17 |
-| IVA general (envases, equipamiento, servicios) | 21,0 % | CHN-71c |
-| IVA soportado de los alimentos que compras | 10,0 % | supuesto declarado |
+| IVA en sala, barra y terraza (servicio de hostelería) | 10 % | CHN-71c + FC-IVA-01 |
+| IVA de churros y porras para llevar | 10 % | FC-IVA-02 |
+| IVA del chocolate a la taza para llevar | 10 % | CUN-18 |
+| IVA de las demás bebidas para llevar (café, leche con cacao, zumo, agua, batido) | 10 % | CUN-18 + CHN-71c |
+| IVA del granizado y la horchata para llevar | 21 % | FC-IVA-04 + CUN-17 |
+| IVA general (envases, equipamiento, servicios) | 21 % | CHN-71c |
+| IVA soportado de los alimentos que compras | 10 % | supuesto declarado |
 
 *Verificado el 03-10-2026 · Ley 37/1992, arts. 90 y 91. La línea del chocolate y de las demás bebidas para llevar es una celda verde con aviso, no un tipo afirmado: consulta a tu asesor · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740*
 
@@ -680,12 +680,12 @@ Subir el precio para que la gente se vaya de la cola es una palanca, pero la úl
 
 ### El traspaso que miras y la renta que pagas
 
-Un traspaso ahorra obra, pero no ahorra preguntas. Los anuncios que siguen son precios PEDIDOS, no pagados ni cerrados, y cada uno va con su sitio, su fecha y sus metros. Ninguno se ha podido reabrir hoy: el portal devolvió un aviso de captcha, así que las lecturas son de la ficha o de la tarjeta del listado tal como se leyó. No se calcula media ni mediana de ellos, porque una media de precios pedidos no es un precio de mercado.
+Un traspaso ahorra obra, pero no ahorra preguntas. Los anuncios que siguen son precios PEDIDOS, no pagados ni cerrados, y cada uno va con su sitio, su fecha y sus metros. Las lecturas son las de la ficha o la tarjeta del listado consultadas el 3 de octubre de 2026, sin reverificar después: compruébalas en el anuncio antes de usarlas. No se calcula media ni mediana de ellos, porque una media de precios pedidos no es un precio de mercado.
 
 - La churrería-chocolatería con sala de Vallecas: 74 metros cuadrados, 82.000 € de traspaso pedido y negociable, con un alquiler de 910 € al mes y equipos «valorados en 50.000 €» que el anuncio declara incluidos: freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV (Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026)). Esa lectura no se ha reabierto hoy, y el anuncio no menciona ningún beneficio demostrado.
-- Una churrería de barrio con carta mixta en Granada capital: 80 metros cuadrados por 19.500 € pedidos, 244 € por metro cuadrado, publicada hace 10 horas (Milanuncios, listado de traspasos de churrería en Granada capital, consulta 2026-10-03). Sin motivo de traspaso declarado.
-- Otra en Granada: 60 metros cuadrados por 16.000 € pedidos, 267 € por metro cuadrado, con 43 días publicada. Es la única con motivo declarado, la jubilación (Milanuncios, listado de traspasos de churrería en Granada, consulta 2026-10-03).
-- Dos más en Granada de 70 metros cuadrados cada una, por 40.000 € pedidos y 571 € por metro cuadrado, publicadas hace 179 días y hace 116 días (Milanuncios, listado de traspasos de churrería en Granada, consulta 2026-10-03). Seis meses sin venderse: el precio pedido no se cierra.
+- Una churrería de barrio con carta mixta en Granada capital: 80 metros cuadrados por 19.500 € pedidos, 244 € por metro cuadrado (Milanuncios, listado de traspasos de churrería en Granada capital, consulta 2026-10-03). Sin motivo de traspaso declarado.
+- Otra en Granada: 60 metros cuadrados por 16.000 € pedidos, 267 € por metro cuadrado. Es la única con motivo declarado, la jubilación (Milanuncios, listado de traspasos de churrería en Granada, consulta 2026-10-03).
+- Dos más en Granada de 70 metros cuadrados cada una, por 40.000 € pedidos y 571 € por metro cuadrado (Milanuncios, listado de traspasos de churrería en Granada, consulta 2026-10-03). Seis meses sin venderse: el precio pedido no se cierra.
 - Un local de 105 metros cuadrados por 65.000 € pedidos, 619 € por metro cuadrado, con modelo de helado más churro, en Montefrío, Granada (Milanuncios, listado de traspasos de churrería en Montefrío (Granada), consulta 2026-10-03).
 - Un local de 240 metros cuadrados por 65.000 € pedidos, 271 € por metro cuadrado, en Valdemoro, Madrid (Milanuncios, listado de traspasos de churrería en Valdemoro (Madrid), consulta 2026-10-03). Con un alquiler declarado de 1.500 a 1.550 €, es un local grande que cuenta como uno solo y no se compara con los demás.
 
@@ -756,7 +756,7 @@ Lo que cuesta abrir en obra nueva está en el capítulo 8, y la comparación de 
 
 ### La línea de churros con precio de ficha: dosificadora, freidora, amasadora y campana
 
-Antes de hablar de dinero, una regla de lectura que vale para todo el capítulo. Los precios de esta guía son precios de tienda, con descuento vigente y con fecha de consulta: el 3 de octubre de 2026. Caducan. Una oferta que hoy lleva rebaja mañana puede no existir, así que antes de comprar se vuelven a pedir por escrito. Un precio publicado «desde» no es una cifra cerrada: es el suelo de una gama, y el modelo que necesitas puede costar más. Y cada línea dice si su precio lleva IVA o no; en este tramo todo va sin IVA, salvo el medidor de polares, que la tienda publica con IVA y cuya base calculamos nosotros.
+Antes de hablar de dinero, una regla de lectura que vale para todo el capítulo. Los precios de esta guía son precios de tienda, con descuento vigente y con fecha de consulta: el 3 de octubre de 2026. Caducan. Una oferta que hoy lleva rebaja mañana puede no existir, así que antes de comprar se vuelven a pedir por escrito. Un precio publicado «desde» no es una cifra cerrada: es el suelo de una gama, y el modelo que necesitas puede costar más. Y cada línea dice si su precio lleva IVA o no; en este capítulo todo va sin IVA, salvo el medidor de polares, que la tienda publica con IVA y cuya base calculamos nosotros.
 
 Con eso claro, el núcleo de la dotación de Churrería-Chocolatería El Molinete, el caso modelado que recorre el pack, se compone de siete piezas con precio de ficha:
 
@@ -765,7 +765,7 @@ Con eso claro, el núcleo de la dotación de Churrería-Chocolatería El Molinet
 - Amasadora automática de 30 kg de capacidad: 2.550,00 € sin IVA (Churrofácil, ficha 26, con «impuestos excluidos» en la ficha; Hosteleria10 para la alternativa artesanal, 3 de octubre de 2026).
 - Campana de acero inoxidable de 120 cm con turbina incorporada: 990,00 € sin IVA (Churrofácil, ficha 28, 3 de octubre de 2026). Esta cifra es sólo la campana: más abajo verás lo que no incluye.
 - Chocolateras: El Molinete lleva dos, a 412,70 € sin IVA cada una, con un 23 % de descuento (Hosteleria10, churrería, chocolateras, 3 de octubre de 2026).
-- Escurridor: desde 260,00 € sin IVA en su modelo más sencillo; hay un modelo superior que sale más caro, y como todo «desde», no es un precio cerrado (Hosteleria10, churreras y churrería, 3 de octubre de 2026).
+- Bandeja escurridor de 50 × 60 cm: 499,20 € sin IVA (Inblan, ficha del distribuidor, 3 de octubre de 2026). Hay escurridores desde 260,00 € sin IVA en su modelo más sencillo, una alternativa para el despacho que no entra en esta suma (Hosteleria10, churreras y churrería, 3 de octubre de 2026).
 - Balanza: 48,75 € sin IVA, con un 25 % de rebaja (Hosteleria10, churreras, básculas, 3 de octubre de 2026).
 
 La suma de ese núcleo, tal como la calcula la hoja «Equipamiento Línea a Línea» de calculadora-capex-churreria.xlsx, es de 8.618,35 € sin IVA: es el núcleo con precio de ficha del local con sala. Te lo cuento así, máquina a máquina, para que puedas repetir la cuenta con tus propias fichas y comprobar que el libro y el texto dicen lo mismo.
@@ -962,7 +962,7 @@ En El Molinete, el fondo de maniobra es de 79.052 € (hoja «Inversión Inicial
 
 ### Contra qué contrastar tu cifra
 
-Seamos honestos con lo poco que hay: el pack trae una sola referencia externa de contraste. Es el anuncio de traspaso en Vallecas de Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026): un local de 74 m² cuyo anuncio declara incluidos unos equipos «valorados en 50.000 €» (freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV). La lectura es del anuncio y no la hemos podido reabrir hoy, porque el portal nos devolvió un captcha; además, el anuncio no aclara si esa valoración lleva o no IVA.
+Seamos honestos con lo poco que hay: el pack trae una sola referencia externa de contraste. Es el anuncio de traspaso en Vallecas de Milanuncios, ficha «Vallecas c/ de Villacanas» (06-07-2026): un local de 74 m² cuyo anuncio declara incluidos unos equipos «valorados en 50.000 €» (freidora industrial, dosificadores, calientachocolates, cafetera, campana homologada, refrigeración y TPV). La lectura es la del anuncio el 3 de octubre de 2026, sin reverificar después; además, el anuncio no aclara si esa valoración lleva o no IVA.
 
 Con esas reservas, el uso es éste: ponla frente al equipamiento y el mobiliario de los bloques dos a siete de El Molinete, que suman 47.147,35 € sin IVA (hoja «Resumen» del libro calculadora-capex-churreria.xlsx). No es una validación: es un orden de magnitud para saber si te has olvidado algo. Si tu suma de equipamiento está muy por debajo de lo que declara un traspaso de un local de tamaño parecido, mira qué has dejado fuera. Y recuerda que un precio de traspaso es un precio pedido y negociable, no un precio de cierre.
 
@@ -979,11 +979,11 @@ El control que de verdad sirve es otro, y es el tuyo. En cuanto metes tus presup
 | Barra, sala y terraza | 20.800 € | 4.368 € | 25.168 € | 24,1 % | supuesto (CUS-43: sin precio con fuente) |
 | Control y seguridad | 1.028 € | 216 € | 1.244 € | 1,2 % | CUS-38, CUS-41 + supuesto |
 | TPV y rótulo | 2.900 € | 609 € | 3.509 € | 3,4 % | supuesto |
-| Licencias, proyecto de actividad y tasas | 6.100 € | 882 € | 6.982 € | 7,1 % | supuesto (nunca la horquilla de nuestro post) |
+| Licencias, proyecto de actividad y tasas | 6.100 € | 882 € | 6.982 € | 7,1 % | supuesto declarado |
 | Fianza y garantías | 1.820 € | 0 € | 1.820 € | 2,1 % | meses de fianza por la renta (CUS-02) |
 | Stock inicial y envase | 848 € | 111 € | 959 € | 1,0 % | precios del libro 3 y de las fichas |
 | Marketing de apertura | 2.000 € | 420 € | 2.420 € | 2,3 % | supuesto |
-| CAPEX TOTAL, sin fondo de maniobra | 86.416 € | 17.299 € | 103.714 € | 100,0 % | Viaja al libro 6 desde «Resumen» (L5). El libro 6 le suma el fondo de maniobra de los primeros meses: aquí no está. |
+| CAPEX TOTAL, sin fondo de maniobra | 86.416 € | 17.299 € | 103.714 € | 100,0 % | Viaja al libro 6 desde «Resumen». El libro 6 le suma el fondo de maniobra de los primeros meses: aquí no está. |
 
 *Los importes de obra, conducto, licencias, barra y sala, TPV y marketing son supuestos declarados de El Molinete: cámbialos por tus presupuestos. El fondo de maniobra no está aquí: lo calcula el plan financiero.*
 
@@ -1082,7 +1082,7 @@ Una línea sobre la facturación verificable, porque afecta a una compra de esta
 
 - La comunicación al registro de tu comunidad autónoma, que es la que acabamos de explicar.
 - El plan de autocontrol, con responsable y con registro del aceite de fritura. Es del capítulo 11, y el registro vive en el fichero 09-control-aceite-fritura.xlsx del Pack Plantillas APPCC.
-- Los alérgenos por escrito. Es del capítulo 10.
+- Los alérgenos por escrito. Es del capítulo 11.
 - La acrilamida, como buena práctica y no como obligación: controlarla en el churro es recomendable, pero no se puede afirmar que la norma lo exija.
 - El registro de formación del equipo.
 - La denominación del chocolate, según la etiqueta del preparado que compres: la carta debe decir lo que dice el envase, y si dudas, consulta a tu servicio de consumo antes de imprimirla. Y el vaso cobrado aparte, que es una decisión de carta con su correspondiente consecuencia de precio. Todo ello, con su detalle, en los capítulos 3, 10 y 11.
@@ -1161,7 +1161,7 @@ El veredicto del libro del aceite sobre el ciclo de cambio de El Molinete es lit
 
 El punto económico de cambio se calcula con el ciclo de El Molinete, que es un supuesto declarado: seis días entre cambios. No es «lo normal» en una churrería ni una duración típica de ningún aceite. Es el número con el que el libro hace las cuentas, y lo sustituyes por el tuyo. La guía no compara marcas ni tipos de aceite ni dice cuánto dura uno: trabaja con tu aceite, tu precio y tu registro.
 
-Como precio de partida, la ficha de un proveedor de maquinaria da un aceite a 49 € por garrafa de 25 L, sin IVA, con oferta de compra de 30 garrafas y pago de 29 (Churrofácil, fichas 82 y 90, 2026). Es el único precio de aceite con fuente que hemos podido sostener, y es de un proveedor de maquinaria, no un precio de mercado. El libro lo lleva en una celda propia, de color verde, y ahí pones tu precio real con tu proveedor.
+Como precio de partida, la ficha de un proveedor de maquinaria da un aceite a 49,90 € por garrafa de 25 L, sin IVA, con oferta de compra de 30 garrafas y pago de 29 (Churrofácil, fichas 82 y 90, 2026). Es el único precio de aceite con fuente que hemos podido sostener, y es de un proveedor de maquinaria, no un precio de mercado. El libro lo lleva en una celda propia, de color verde, y ahí pones tu precio real con tu proveedor.
 
 Con el ciclo de El Molinete, el libro responde a las dos preguntas que de verdad importan:
 
@@ -1251,7 +1251,7 @@ Para El Molinete, el libro legal de este pack lo resuelve así. La parte A del a
 
 Alrededor de ese mínimo hay tres piezas más, y cada una tiene su nivel, que no es el de una obligación:
 
-- La Recomendación (UE) 2019/1888 de la Comisión, de 10 de noviembre de 2019, sobre el control de la presencia de acrilamida en los alimentos, incluye los churros en su lista no exhaustiva de alimentos en los que se debe controlar. Es una recomendación: orienta, no es vinculante.
+- La Recomendación (UE) 2019/1888 de la Comisión, de 7 de noviembre de 2019, sobre el control de la presencia de acrilamida en los alimentos, incluye los churros en su lista no exhaustiva de alimentos en los que se debe controlar. Es una recomendación: orienta, no es vinculante.
 - El Estudio prospectivo EP 01 18 ACR, informe de resultados de acrilamida en alimentos 2018, elaborado por las autoridades sanitarias con las comunidades autónomas y publicado por el Servicio Cántabro de Salud en 2019, recoge que no existe un valor de referencia para las masas fritas como los churros, y analizó churros tomados en restauración y venta ambulante. Traducido: si te mide un laboratorio, no tiene contra qué compararte.
 - La Comisión está revisando el marco de gestión de la acrilamida. Ajusta niveles de referencia y, por primera vez, plantea niveles máximos vinculantes para algunos alimentos seleccionados, en fase de consulta; los churros no se mencionan en lo que hemos leído. Esto es un riesgo de caducidad: lo que escribimos hoy puede cambiar, y por eso el anexo del pack da la fecha de revisión y te pide que la mires antes de imprimir cartas o protocolos.
 
@@ -1292,7 +1292,7 @@ Esta es la frontera con la segunda mitad del capítulo. Hasta aquí han quedado 
 
 ### El autocontrol simplificado, con un responsable con nombre
 
-Toda empresa alimentaria tiene que tener un procedimiento permanente de autocontrol basado en los principios del análisis de peligros y puntos de control crítico. En un negocio pequeño como el que planteas, ese procedimiento puede aplicarse de manera simplificada, conforme a la Comunicación 2020/C 199/01 de la Comisión, pero con una condición que no se negocia: tiene que haber una persona responsable de su aplicación, con nombre. Lo dice el art. 20 del Real Decreto 1021/2022 (BOE-A-2022-21681), de 21 de diciembre de 2022. Comprobado el 3 de octubre de 2026.
+Toda empresa alimentaria tiene que tener un procedimiento permanente de autocontrol basado en los principios del análisis de peligros y puntos de control crítico. En un negocio pequeño como el que planteas, ese procedimiento puede aplicarse de manera simplificada, conforme a la Comunicación 2020/C 199/01 de la Comisión, pero con una condición que no se negocia: tiene que haber una persona responsable de su aplicación, con nombre. Lo dice el art. 20 del Real Decreto 1021/2022 (BOE-A-2022-21681), de 13 de diciembre de 2022. Comprobado el 3 de octubre de 2026.
 
 Esa persona suele ser el titular; en una sociedad, quien tú designes. Lo importante es que su nombre esté escrito en el plan, que sepa que lo es y que pueda explicar a un inspector qué hace cada semana para cumplir su parte. Un plan sin responsable con nombre es una carpeta de plantillas, no un sistema de autocontrol.
 
@@ -1406,7 +1406,7 @@ Una frontera importante: estas cantidades son datos de ejemplo. El Kit de Escand
 
 El aceite es el ingrediente que no figura en ninguna receta y que sí se paga. Cada churro sale de la freidora con una parte del baño dentro, y esa parte hay que reponerla. Para ponerle precio sin inventar nada, el libro necesita dos supuestos declarados: la absorción, expresada como porcentaje del peso frito, y la densidad del aceite. Ninguno de los dos tiene fuente pública: no existe «la absorción del churro», y cualquier cifra suelta que circule por la red es de otra masa, de otra freidora y de otro aceite.
 
-Con esos dos supuestos y el precio del aceite, el libro obtiene los euros de aceite que se lleva cada kilo de masa y los mete en el coste de materia. El precio del aceite vive en su propia celda verde del libro de producción y local, para que lo cambies por el de tu proveedor. Como referencia de partida, Churrofácil (fichas 82 y 90, 2026) publica garrafas de 25 L a 49 € sin IVA, aunque es un proveedor de maquinaria y el único precio de aceite con fuente que hemos encontrado. En la hoja «Absorción de Aceite y Merma», el resultado para El Molinete es de 0,20 € de aceite absorbido por cada kilo de masa.
+Con esos dos supuestos y el precio del aceite, el libro obtiene los euros de aceite que se lleva cada kilo de masa y los mete en el coste de materia. El precio del aceite vive en su propia celda verde del libro de la carta, en la hoja «Parámetros», para que lo cambies por el de tu proveedor. Como referencia de partida, Churrofácil (fichas 82 y 90, 2026) publica garrafas de 25 L a 49,90 € sin IVA, aunque es un proveedor de maquinaria y el único precio de aceite con fuente que hemos encontrado. En la hoja «Absorción de Aceite y Merma», el resultado para El Molinete es de 0,20 € de aceite absorbido por cada kilo de masa.
 
 ¿Cuánto pesa ese aceite en la materia de la ración media? En El Molinete, el 6,8 %. Lee esa cifra como lo que es: el resultado de los supuestos del caso, no una medida de tu freidora. Para medir el tuyo hay un método casero y fiable: pesa una tanda de masa antes de freír y pesa lo que sale después. La diferencia, relacionada con el peso frito, es tu absorción. Hazlo con tu aceite, con tu freidora y con tu masa. Si cambias de aceite o de freidora, el número se mueve, y por eso el libro lo deja como celda editable y no como constante.
 
@@ -1435,7 +1435,7 @@ Ahora, las dos cifras que circulan por ahí, cada una con su definición y su fu
 - Loomis Pay, «¿Es rentable montar una churrería?» (07-08-2025), habla de «márgenes superiores al 60 % en producto». Es el margen sobre materia, lo que aquí llamamos margen sobre materia prima, publicado por un proveedor de terminales de punto de venta, con el sesgo comercial que eso supone y sin método publicado. El 85-90 % que circula atribuido a esa página no aparece en ella, y no lo damos por bueno.
 - El «un poquito más del cincuenta por ciento» lo dice de palabra el gestor de La Artesana, citado por El Español (2025). No es un margen sobre materia: es rentabilidad, con fiabilidad baja, y sólo lo usamos como contraste.
 
-Que el margen sobre materia de El Molinete sea alto no debe asustarte: es normal en una churrería, porque la masa es barata. Pero justo por eso sirve de poco por sí solo. Un margen sobre materia del 86,9 % convive con un 41,2 % tras aceite y mano de obra, y la distancia entre uno y otro es la parte del negocio que no se ve en la tienda del proveedor.
+Que el margen sobre materia de El Molinete sea alto no debe asustarte: sale alto porque la masa es barata, y es el resultado de los supuestos del caso, no una norma del sector. Pero justo por eso sirve de poco por sí solo. Un margen sobre materia del 86,9 % convive con un 41,2 % tras aceite y mano de obra, y la distancia entre uno y otro es la parte del negocio que no se ve en la tienda del proveedor.
 
 La regla para el plan financiero no tiene excepciones: toma el margen sobre materia de TU escandallo y resta la nómina aparte. Si usaras el «poquito más del cincuenta» como margen bruto, contarías la mano de obra dos veces: una al aceptar una cifra que ya la lleva dentro y otra al restarla en la cuenta de resultados.
 
@@ -1646,7 +1646,7 @@ Una nota de fiscalidad que no es una salida: la rebaja de cuota que puede tener 
 
 Dos formas reales de resolver el valle, como contraste:
 
-- El local que vende helado en verano y churro en invierno. En Montefrío (Granada) hay un anuncio de heladería y churrería con 65.000 € de traspaso pedido (Milanuncios, listado de traspasos de churrería en Montefrío (Granada), consulta 2026-10-03). Es un precio pedido, no pagado ni cerrado, y ese día el portal nos devolvió un captcha, por lo que los datos son los de la tarjeta del listado. Lo que enseña es el modelo, no la cifra.
+- El local que vende helado en verano y churro en invierno. En Montefrío (Granada) hay un anuncio de heladería y churrería con 65.000 € de traspaso pedido (Milanuncios, listado de traspasos de churrería en Montefrío (Granada), consulta 2026-10-03). Es un precio pedido, no pagado ni cerrado, y los datos son los de la tarjeta del listado ese día, sin reverificar después. Lo que enseña es el modelo, no la cifra.
 - El que reparte el año entre dos plazas: opta por centrarse en Pamplona en invierno y en Zarautz en verano (Onda Vasca, María Malo, 20-12-2025). Es otra manera de llenar el valle, que exige dos plazas, dos autorizaciones y una vida organizada alrededor del calendario.
 
 Ninguna de las dos es la tuya, y la guía no te dice cuál elegir sin tus números.
@@ -1861,9 +1861,9 @@ De ahí sale una decisión práctica: el fondo de maniobra se calcula sobre mese
 
 La pregunta que separa una churrería de una cafetería es esta: si sólo tuvieras la sala, o sólo el para llevar, ¿pagarías los fijos del año? La hoja «Canales y Punto Muerto» responde con el mismo local, los mismos fijos y cada canal vendiendo solo.
 
-La sala sola se queda corta: le faltan 37.658 € para pagar los fijos del año. Es decir, con las mesas únicamente, El Molinete perdería dinero. Las mesas ocupan metros, exigen servicio y, en las horas de más afluencia, se llenan y no admiten más gente; el despacho a la ventana no tiene ese techo. La tabla de abajo pone en euros la lectura de cada canal y de los dos juntos: la sala sola en negativo y los dos canales juntos dando el resultado de 32.139 € del año de crucero. Mira la tabla y la última línea.
+La sala sola se queda corta: le faltan 37.658 € para pagar los fijos del año. Es decir, con las mesas únicamente, El Molinete perdería dinero. Y el para llevar solo se queda mucho más lejos, porque vende muchas menos raciones. La tabla de abajo pone en euros la lectura de cada canal y de los dos juntos: la sala sola en negativo y los dos canales juntos dando el resultado de 32.139 € del año de crucero. Mira la tabla y la última línea.
 
-Lo que esto significa para el formato es que el para llevar es el que paga el local y la sala es lo que lo convierte en churrería-chocolatería con sitio donde sentarse. Si te ronda la idea de abrir sólo con despacho a la calle, la decisión 1 del bonus compara el mismo local vendiendo únicamente para llevar, con los mismos fijos. El reparto entre canales es un supuesto de El Molinete: el tuyo dependerá de tu calle, de tu horario y de cuánta gente pasa por delante.
+Lo que esto significa para el formato es que ningún canal paga los fijos por sí solo: la sala aporta la mayor parte de la contribución del año y el para llevar completa lo que le falta. Si te ronda la idea de abrir sólo con despacho a la calle, la decisión 1 del bonus compara el mismo local vendiendo únicamente para llevar, con los mismos fijos y con la carta de todo el año, por eso su cifra no coincide con la de esta tabla, que es sólo la carta de invierno. El reparto entre canales es un supuesto de El Molinete: el tuyo dependerá de tu calle, de tu horario y de cuánta gente pasa por delante.
 
 ### La caja: inversión total, fondo de maniobra, préstamo y el valle del primer año
 

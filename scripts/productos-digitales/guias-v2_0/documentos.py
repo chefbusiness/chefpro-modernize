@@ -759,7 +759,12 @@ def construir_tabla(xlsx_dir, t):
             # columna.
             # La etiqueta no siempre es la primera celda: en la tabla de CAPEX
             # la columna A es el «#» y el concepto va en la B.
-            if es_fila_porcentual(fila[:2]):
+            # Sólo cuentan como etiqueta las celdas de formato texto: una columna
+            # 'pct0' en la B («70 %») convertía la fila entera en porcentual y el
+            # business plan de la Churrería publicó «68.601,8 %» raciones (3-oct-2026).
+            etiquetas = [fila[k] for k, (_t, _c, f) in enumerate(t['cols'][:2])
+                         if f == 'txt']
+            if es_fila_porcentual(etiquetas):
                 for k in range(1, len(fila)):
                     v = crudos[k]
                     if isinstance(v, (int, float)) and not isinstance(v, bool):

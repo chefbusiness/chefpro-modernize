@@ -1,6 +1,6 @@
 ### La línea de churros con precio de ficha: dosificadora, freidora, amasadora y campana
 
-Antes de hablar de dinero, una regla de lectura que vale para todo el capítulo. Los precios de esta guía son precios de tienda, con descuento vigente y con fecha de consulta: el 3 de octubre de 2026. Caducan. Una oferta que hoy lleva rebaja mañana puede no existir, así que antes de comprar se vuelven a pedir por escrito. Un precio publicado «desde» no es una cifra cerrada: es el suelo de una gama, y el modelo que necesitas puede costar más. Y cada línea dice si su precio lleva IVA o no; en este tramo todo va sin IVA, salvo el medidor de polares, que la tienda publica con IVA y cuya base calculamos nosotros.
+Antes de hablar de dinero, una regla de lectura que vale para todo el capítulo. Los precios de esta guía son precios de tienda, con descuento vigente y con fecha de consulta: el 3 de octubre de 2026. Caducan. Una oferta que hoy lleva rebaja mañana puede no existir, así que antes de comprar se vuelven a pedir por escrito. Un precio publicado «desde» no es una cifra cerrada: es el suelo de una gama, y el modelo que necesitas puede costar más. Y cada línea dice si su precio lleva IVA o no; en este capítulo todo va sin IVA, salvo el medidor de polares, que la tienda publica con IVA y cuya base calculamos nosotros.
 
 Con eso claro, el núcleo de la dotación de Churrería-Chocolatería El Molinete, el caso modelado que recorre el pack, se compone de siete piezas con precio de ficha:
 
@@ -9,7 +9,7 @@ Con eso claro, el núcleo de la dotación de Churrería-Chocolatería El Molinet
 - Amasadora automática de 30 kg de capacidad: 2.550,00 € sin IVA (Churrofácil, ficha 26, con «impuestos excluidos» en la ficha; Hosteleria10 para la alternativa artesanal, 3 de octubre de 2026).
 - Campana de acero inoxidable de 120 cm con turbina incorporada: 990,00 € sin IVA (Churrofácil, ficha 28, 3 de octubre de 2026). Esta cifra es sólo la campana: más abajo verás lo que no incluye.
 - Chocolateras: El Molinete lleva dos, a 412,70 € sin IVA cada una, con un 23 % de descuento (Hosteleria10, churrería, chocolateras, 3 de octubre de 2026).
-- Escurridor: desde 260,00 € sin IVA en su modelo más sencillo; hay un modelo superior que sale más caro, y como todo «desde», no es un precio cerrado (Hosteleria10, churreras y churrería, 3 de octubre de 2026).
+- Bandeja escurridor de 50 × 60 cm: 499,20 € sin IVA (Inblan, ficha del distribuidor, 3 de octubre de 2026). Hay escurridores desde 260,00 € sin IVA en su modelo más sencillo, una alternativa para el despacho que no entra en esta suma (Hosteleria10, churreras y churrería, 3 de octubre de 2026).
 - Balanza: 48,75 € sin IVA, con un 25 % de rebaja (Hosteleria10, churreras, básculas, 3 de octubre de 2026).
 
 La suma de ese núcleo, tal como la calcula la hoja «Equipamiento Línea a Línea» de calculadora-capex-churreria.xlsx, es de 8.618,35 € sin IVA: es el núcleo con precio de ficha del local con sala. Te lo cuento así, máquina a máquina, para que puedas repetir la cuenta con tus propias fichas y comprobar que el libro y el texto dicen lo mismo.

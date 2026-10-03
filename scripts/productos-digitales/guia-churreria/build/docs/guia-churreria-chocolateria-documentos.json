@@ -1,7 +1,7 @@
 {
   "_meta": {
     "pid": "guia-churreria-chocolateria",
-    "generado": "2026-10-03 09:43",
+    "generado": "2026-10-03 09:57",
     "salida": "/root/guias-out",
     "xlsx_dir": "/root/chefpro-modernize/astro-site/public/dl/guia-churreria-chocolateria",
     "modelo": "~deepseek/deepseek-v4-flash-latest",
@@ -21,9 +21,9 @@
       "gates": {
         "paginas_pdf": 95,
         "paginas_prometidas": 80,
-        "palabras_md": 50904,
-        "palabras_pdf": 50220,
-        "palabras_docx": 48003,
+        "palabras_md": 50916,
+        "palabras_pdf": 50232,
+        "palabras_docx": 48015,
         "palabras_objetivo": 29300,
         "capitulos": 17,
         "tablas_md": 49,
@@ -47,12 +47,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 46322,
+        "palabras_reales_pdf": 46327,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 48510,
+        "palabras_pdf_cuerpo": 48522,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "Cómo Montar una Churrería-Chocolatería"
@@ -61,9 +61,9 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Cómo Montar una Churrería-Chocolatería",
-          "created": "2026-10-03 09:43:25+00:00"
+          "created": "2026-10-03 09:57:38+00:00"
         },
-        "paridad_palabras_pct": 1.05,
+        "paridad_palabras_pct": 1.04,
         "ok": {
           "paginas": true,
           "palabras_pdf": true,
@@ -1268,9 +1268,9 @@
       "gates": {
         "paginas_pdf": 14,
         "paginas_prometidas": 9,
-        "palabras_md": 6547,
-        "palabras_pdf": 6338,
-        "palabras_docx": 6027,
+        "palabras_md": 6544,
+        "palabras_pdf": 6335,
+        "palabras_docx": 6024,
         "palabras_objetivo": 3500,
         "capitulos": 2,
         "tablas_md": 11,
@@ -1299,7 +1299,7 @@
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 6058,
+        "palabras_pdf_cuerpo": 6055,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "Business Plan Modelo de una Churrería-Chocolatería"
@@ -1308,7 +1308,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "Business Plan Modelo de una Churrería-Chocolatería",
-          "created": "2026-10-03 09:43:28+00:00"
+          "created": "2026-10-03 09:57:41+00:00"
         },
         "paridad_palabras_pct": 0.51,
         "ok": {
@@ -1337,7 +1337,7 @@
           "sin_asteriscos_impresos": true
         },
         "verde": true,
-        "saneados_winansi": 186,
+        "saneados_winansi": 183,
         "ficheros": {
           "md": "/root/guias-out/business-plan-modelo-churreria-chocolateria.md",
           "docx": "/root/guias-out/business-plan-modelo-churreria-chocolateria.docx",
@@ -1607,9 +1607,9 @@
       "gates": {
         "paginas_pdf": 21,
         "paginas_prometidas": 20,
-        "palabras_md": 10383,
-        "palabras_pdf": 10296,
-        "palabras_docx": 9811,
+        "palabras_md": 10380,
+        "palabras_pdf": 10293,
+        "palabras_docx": 9808,
         "palabras_objetivo": 6600,
         "capitulos": 3,
         "tablas_md": 12,
@@ -1633,12 +1633,12 @@
         "fugas_de_modelo": [],
         "epigrafes_ausentes": [],
         "asteriscos_impresos": 0,
-        "palabras_reales_pdf": 9493,
+        "palabras_reales_pdf": 9490,
         "tabla_tras_ultimo_capitulo": false,
         "titulos_ausentes_en_pdf": [],
         "cifras_no_encontradas": [],
         "cifras_aviso_no_dinero": [],
-        "palabras_pdf_cuerpo": 9897,
+        "palabras_pdf_cuerpo": 9894,
         "meta_pdf": {
           "author": "AI Chef Pro",
           "title": "12 Decisiones de Apertura Resueltas"
@@ -1647,7 +1647,7 @@
         "meta_docx": {
           "author": "AI Chef Pro",
           "title": "12 Decisiones de Apertura Resueltas",
-          "created": "2026-10-03 09:43:29+00:00"
+          "created": "2026-10-03 09:57:42+00:00"
         },
         "paridad_palabras_pct": 0.87,
         "ok": {

@@ -26,7 +26,7 @@
  },
  "Coste de materia por ración para llevar (aceite absorbido incluido) (copiado del libro 3, X5)": {
   "ref": "temporada-franjas-y-ferias.xlsx!Parámetros!B13",
-  "valor": 0.3054629283128055,
+  "valor": 0.3054629283128054,
   "tipo": "entrada"
  },
  "Coste hora de mano de obra (copiado del libro 3, X5)": {
@@ -396,7 +396,7 @@
  },
  "Raciones para cubrir el evento E1 (punto muerto)": {
   "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!B32",
-  "valor": 632.6641113099311,
+  "valor": 632.664111309931,
   "tipo": "salida"
  },
  "Lo que deja el evento E1": {
@@ -411,12 +411,12 @@
  },
  "Raciones para cubrir el evento E2 (punto muerto)": {
   "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!C32",
-  "valor": 378.5509267625389,
+  "valor": 378.55092676253884,
   "tipo": "salida"
  },
  "Lo que deja el evento E2": {
   "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!C35",
-  "valor": 914.1098641748242,
+  "valor": 914.1098641748245,
   "tipo": "salida"
  },
  "Orden del evento E2": {
@@ -441,7 +441,7 @@
  },
  "Raciones para cubrir el evento E4 (punto muerto)": {
   "ref": "temporada-franjas-y-ferias.xlsx!Punto Muerto por Evento!E32",
-  "valor": 549.8595315367202,
+  "valor": 549.85953153672,
   "tipo": "salida"
  },
  "Lo que deja el evento E4": {

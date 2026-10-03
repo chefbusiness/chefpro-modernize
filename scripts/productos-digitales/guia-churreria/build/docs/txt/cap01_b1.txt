@@ -52,7 +52,7 @@ El pack son ocho libros de Excel. Cada uno contesta una pregunta distinta:
 - **Carta y escandallo**: qué precio tiene cada ración y cuánto deja, con la materia prima de tu proveedor.
 - **Aceite**: cuánto aceite consumes, cuánto cambias y qué te cuesta.
 - **Temporada y ferias**: cómo se mueven los meses y qué pasa con un evento puntual.
-- **Plan financiero** (el libro plan-financiero-3-anos.xlsx): si la cuenta sale, con tus números y con el horizonte de tres años.
+- **Plan financiero** (el libro plan-financiero-3-anos-churreria.xlsx): si la cuenta sale, con tus números y con el horizonte de tres años.
 - **Checklist legal, fritura y licencias** (el libro checklist-legal-fritura-y-licencias.xlsx): qué papeles tienes que preguntar, en qué orden y a quién.
 - **Turnos**: cuántas manos hacen falta cada día de la semana.
 
