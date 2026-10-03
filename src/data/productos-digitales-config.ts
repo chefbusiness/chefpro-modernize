@@ -963,6 +963,31 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'bonus-calculadora': '/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx',
     },
   },
+  // International store (EN, 2026-10-03): twin of kit-gestion-personal, independent product.
+  'restaurant-schedule-templates': {
+    id: 'restaurant-schedule-templates',
+    name: 'Restaurant Staff Scheduling Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/restaurant-schedule-templates/access',
+    emailSubject: 'Your access to Restaurant Staff Scheduling Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Restaurant Staff Scheduling Kit Pro</strong> is ready. Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Restaurant Staff Scheduling Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    files: {
+      'cuadrante': '/dl/restaurant-schedule-templates/01-restaurant-schedule-template.xlsx',
+      'horas-extra': '/dl/restaurant-schedule-templates/02-overtime-tracker.xlsx',
+      'coste-laboral': '/dl/restaurant-schedule-templates/03-labor-cost-calculator.xlsx',
+      'onboarding': '/dl/restaurant-schedule-templates/04-new-hire-onboarding-checklist.xlsx',
+      'vacaciones': '/dl/restaurant-schedule-templates/05-pto-vacation-planner.xlsx',
+      'evaluacion': '/dl/restaurant-schedule-templates/06-employee-performance-review.xlsx',
+      'directorio': '/dl/restaurant-schedule-templates/07-employee-directory.xlsx',
+      'bonus-briefing': '/dl/restaurant-schedule-templates/BONUS-01-shift-handover-log.xlsx',
+      'bonus-calculadora': '/dl/restaurant-schedule-templates/BONUS-02-restaurant-staffing-calculator.xlsx',
+    },
+    lang: 'en',
+  },
   // International store (EN, 2026-09-25): twin of kit-inventario, independent product.
   'restaurant-inventory-templates': {
     id: 'restaurant-inventory-templates',

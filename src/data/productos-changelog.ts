@@ -420,6 +420,28 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-03): Restaurant Staff Scheduling Kit Pro, primera edición inglesa del contenido
+  // 2.0 del Kit Gestión de Personal (SPEC staff-kit D19: la EN nace en 2.0). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/RestaurantScheduleKitDashboard.tsx.
+  'restaurant-schedule-templates': {
+    version: '2.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 7 staff management templates plus 2 bonuses, adapted to the US with notes for the UK.',
+          'Restaurant schedule with US shift codes (AM, PM, N, SP for split shifts, DBL for doubles, OFF, V and S), real start and end times on a 12-hour clock, and alerts for shifts over 10 hours, less than 10 hours between shifts (clopening), weeks over 40 hours, days off and minors under 18.',
+          'Overtime tracker built on the FLSA 40-hour workweek at 1.5×, with an optional daily state threshold (8 hours in California); overtime that was not approved still counts and is paid.',
+          'Labor cost calculator with pay periods per year (weekly, biweekly, semimonthly or monthly; biweekly by default) and the employer cost on top of wages as an editable estimate (10% by default: FICA, FUTA/SUTA and workers\' comp; check with your payroll provider).',
+          'PTO & vacation planner with an editable entitlement, new hire onboarding with I-9, W-4 and new-hire reporting deadlines, an employee directory that stores only the last 4 digits of the SSN, and a shift handover log with temperatures in °F and a cash count against the Z report.',
+          'No currency symbol in the templates (you type amounts in your own currency), UK notes wherever the rules differ (rota, 11-hour rest, 48-hour average week, 5.6 weeks of holiday), and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-gestion-personal': {
     version: '2.0',
     updated: '2026-08-23',

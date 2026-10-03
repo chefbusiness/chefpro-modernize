@@ -26,6 +26,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'kit-tareas-restaurante-creativo': { accessPath: '/kit-tareas-restaurante-creativo-access', label: 'Kit Tareas Restaurante Creativo' },
   'kit-tareas-chef-privado': { accessPath: '/kit-tareas-chef-privado-access', label: 'Kit Tareas Chef Privado' },
   'kit-gestion-personal': { accessPath: '/kit-gestion-personal-access', label: 'Kit Gestión de Personal' },
+  'restaurant-schedule-templates': { accessPath: '/en/digital-products/restaurant-schedule-templates/access', label: 'Restaurant Staff Scheduling Kit Pro', lang: 'en' },
   'kit-inventario': { accessPath: '/kit-inventario-access', label: 'Kit Control de Inventario' },
   'restaurant-inventory-templates': { accessPath: '/en/digital-products/restaurant-inventory-templates/access', label: 'Restaurant Inventory Kit Pro', lang: 'en' },
   'kit-plan-financiero': { accessPath: '/kit-plan-financiero-access', label: 'Kit Plan Financiero' },

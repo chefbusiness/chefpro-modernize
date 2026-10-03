@@ -162,6 +162,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de gestión de personal:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-10-03): gemelo de kit-gestion-personal (ver verify-purchase.ts).
+  'restaurant-schedule-templates': {
+    accessPath: '/en/digital-products/restaurant-schedule-templates/access',
+    emailSubject: 'Your access to Restaurant Staff Scheduling Kit Pro',
+    emailTitle: 'Access your Restaurant Staff Scheduling Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-inventario': {
     accessPath: '/kit-inventario-access',
     emailSubject: 'Tu acceso al Kit Control de Inventario y Compras',

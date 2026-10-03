@@ -172,6 +172,19 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Gestión de Personal y Turnos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de gestión de personal:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  // Tienda EN (2026-10-03): gemelo de kit-gestion-personal, producto independiente con su propio
+  // acceso (mismo patrón que restaurant-inventory-templates y haccp-templates). `lang: 'en'` elige
+  // los textos fijos del email (netlify/shared/email-i18n.ts) y la página de estado cripto
+  // /en/crypto-payment; precio en USD (product-prices.ts). El asunto empieza por «Your access to»
+  // para productoLabel().
+  'restaurant-schedule-templates': {
+    accessPath: '/en/digital-products/restaurant-schedule-templates/access',
+    emailSubject: 'Your access to Restaurant Staff Scheduling Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Restaurant Staff Scheduling Kit Pro</strong> is ready. Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-inventario': {
     accessPath: '/kit-inventario-access',
     emailSubject: 'Tu acceso al Kit Control de Inventario y Compras',
