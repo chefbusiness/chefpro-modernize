@@ -220,6 +220,7 @@ VALORES_EN = OrderedDict([
     (('04', 'Equipamiento Cocina', 'C5:C16'), 0), (('04', 'Equipamiento Cocina', 'H5:H16'), 7),
     (('04', 'Mobiliario Sala', 'C5:C14'), 0), (('04', 'Mobiliario Sala', 'H5:H14'), 7),
     (('04', 'Tecnología', 'C5:C12'), 0), (('04', 'Tecnología', 'H5:H12'), 5),
+    (('04', 'Licencias', 'H5:H12'), None),      # D10: permisos = gasto → vida útil VACÍA (IFERROR → 0)
     (('04', 'Otros conceptos de apertura', 'C5'), 0), (('04', 'Otros conceptos de apertura', 'C7'), 0),
     (('04', 'Otros conceptos de apertura', 'C8'), 0), (('04', 'Otros conceptos de apertura', 'C10'), 0),
     (('04', 'Otros conceptos de apertura', 'C12'), 0),
@@ -238,7 +239,7 @@ VALORES_EN = OrderedDict([
 FIJOS = OrderedDict([
     # ---- transversal: base sin impuesto (D8)
     ('Todas las cifras van SIN IVA; en el 03 (tesorería) van CON IVA porque es caja.',
-     'All figures EXCLUDE sales tax; file 03 (cash flow) includes it because it is cash.'),
+     'All figures EXCLUDE sales tax; only file 03 "Cash Flow Forecast" includes it, because it is cash.'),
     # ---- 02 (D11)
     ('Coste total de personal fijo (salario bruto + SS empresa)',
      'Total fixed labor cost (gross wages + employer payroll taxes)'),
@@ -285,7 +286,8 @@ FIJOS = OrderedDict([
     ('▸ El coeficiente de amortización por pestaña (obra 3 %, cocina 12 %, mobiliario 10 %, tecnología 25 %) da la '
      'dotación anual que pide el 07.',
      '▸ Each line has a useful life in years (build-out 10, kitchen equipment 7, furniture 7, technology 5; straight '
-     'line, book basis): it gives the annual depreciation that file 07 needs. Tax depreciation (MACRS, Section 179, '
+     'line, book basis): it gives the annual depreciation that file 07 "Lender & Investor Summary" needs. Tax '
+     'depreciation (MACRS, Section 179, '
      'bonus) is a separate calculation for your CPA.'),
     ("▸ Lo que no es CAPEX —traspaso, fianza, stock inicial, nóminas pre-apertura, imprevistos y fondo de maniobra— va en "
      "la pestaña 'Otros conceptos de apertura'.",
@@ -311,7 +313,7 @@ FIJOS = OrderedDict([
      'loan has to cover it. US sales tax is not recoverable: it is already inside the cost.'),
     # ---- 06 (D14, D15)
     ('m² de sala', 'Dining room area (sq ft)'),
-    ('Ventas por m² de sala (€, sin IVA)', 'Sales per sq ft of dining room (excl. sales tax)'),
+    ('Ventas por m² de sala (€, sin IVA)', 'Sales per sq ft (excl. sales tax)'),
     ('RevPASH (€/plaza/hora)', 'RevPASH (per seat-hour)'),
     ('> 6€', '> 6'), ('3€ - 6€', '3 - 6'), ('< 3€', '< 3'),
     ('▸ Labor Cost %: óptimo < 25% · peligro > 30% (los números viven en Benchmarks!F:G).',
@@ -351,10 +353,10 @@ FIJOS = OrderedDict([
      'With an interest-only period, "Principal repaid" shows 0 in the first years and the balance does not go down: '
      'that is how an interest-only start really works.'),
     ('Referencia Bancaria', 'Lender benchmark'),
-    ('Aval personal del promotor', 'Personal guarantee of the owners (SBA: owners of 20% or more)'),
+    ('Aval personal del promotor', 'Personal guarantee (SBA: owners of 20%+)'),
     ('Pignoración de depósitos', 'Pledged deposits / cash collateral'),
-    ('Aval SGR (Sociedad de Garantía Recíproca)', 'Blanket lien on business assets (UCC-1 filing)'),
-    ('Seguro de caución', 'Assignment of life insurance (often required by SBA lenders)'),
+    ('Aval SGR (Sociedad de Garantía Recíproca)', 'Blanket lien on business assets (UCC-1)'),
+    ('Seguro de caución', 'Assignment of life insurance (SBA lenders)'),
     ('Fianza / depósito adicional', 'Additional deposit'),
     # ---- BONUS-09 (D16): tareas con trámite español → equivalente US (nota UK solo en Instrucciones)
     ('▸ Fase 7: Personal y obligaciones laborales (SS, RETA, apertura del centro de trabajo, contratos del convenio, '
@@ -419,9 +421,38 @@ POR_CELDA = OrderedDict([
 FORMATOS_EN = OrderedDict([
     ('#,##0.00 €', '#,##0.00'), ('€#,##0.00', '#,##0.00'), ('#,##0 €', '#,##0'),
     ('dd/mm/yyyy', 'NUMFMT14'),                  # fecha corta del sistema (m/d/yyyy en US)
+    ('DD/MM/YYYY', 'NUMFMT14'),
     ('0.0" p.p."', '0.0%'),                      # I1: 0,02 se veía «0,0 p.p.»; en % se ve 2.0%
     ('0.00" años"', '0.00" years"'), ('0.0" años"', '0.0" years"'),
 ])
+
+# D10: la columna H del 04 pasa de coeficiente (0.0%) a vida útil en años → formato numérico sin % (admite 7.5)
+FORMATOS_POR_RANGO = OrderedDict(
+    ((('04', _h, 'H5:H%d' % _r2)), 'General') for _h, _r2 in (('Obra', 14), ('Equipamiento Cocina', 16),
+                                                               ('Mobiliario Sala', 14), ('Tecnología', 12),
+                                                               ('Licencias', 12)))
+
+# Mensajes de DV fijados por APARICIÓN (revisión final; vacío de salida) y rótulos con ajuste de texto + alto de fila
+DV_MENSAJES_EN = OrderedDict()
+# Medido en el dry-run (F2-NOTAS §4): rótulos y notas EN que el vecino cortaba o que salían del ancho impreso
+AJUSTE_TEXTO = [
+    ('02', 'Datos', 'B7'), ('02', 'Datos', 'D7'), ('02', 'Datos', 'D15'), ('02', 'Datos', 'D17'),
+    ('03', 'Parámetros', 'D4:D9'),
+    ('04', 'Mobiliario Sala', 'A13'),
+    ('07', 'Financiación', 'D4:D8'),
+    ('B08', 'Simulador', 'A11'),
+]
+# Columnas de rótulos de tabla que el sufijo «(excl. sales tax)» desborda: más ancho en vez de filas de dos líneas
+ANCHOS = OrderedDict([(('01', _h), {'A': 36}) for _h in ('Año 1', 'Año 2', 'Año 3', 'Resumen')])
+ANCHOS.update((('01b', _h), {'A': 36}) for _h in ('Año 1', 'Año 2', 'Año 3', 'Año 4', 'Año 5', 'Resumen'))
+ANCHOS.update((('05', _m), {'A': 36}) for _m in MESES)
+ANCHOS[('02', 'Break-Even')] = {'B': 52}
+ANCHOS[('07', 'Resumen Ejecutivo')] = {'B': 44}
+
+
+def dv_lista(items):
+    return '"' + ','.join(items) + '"'
+
 
 # ==========================================================================
 # 9. Reglas US/UK con fuente (SPEC §3). clave → (valor, fuente). [kit estimate] = no es norma.

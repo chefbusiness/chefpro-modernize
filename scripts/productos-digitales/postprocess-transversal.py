@@ -85,8 +85,11 @@ SCRATCH = os.environ.get(
 #: `restaurant-inventory-kit/aplicar_en.py` (mismo motivo: Letter y metadatos EN).
 #: haccp-templates: HACCP Food Safety Kit Pro (EN), montado por `haccp-kit/aplicar_en.py` (ídem).
 #: restaurant-schedule-templates: Restaurant Staff Scheduling Kit Pro (EN), montado por `staff-kit/aplicar_en.py` (ídem).
+#: restaurant-financial-plan-templates: Restaurant Financial Plan Kit Pro (EN), montado por
+#: `financial-kit/aplicar_en.py` (ídem; además la caché de la TIR del 07 la pone ese script).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
-             'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates'}
+             'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
+             'restaurant-financial-plan-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'
