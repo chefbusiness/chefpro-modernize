@@ -254,3 +254,19 @@ la F1 de cada producto frente a Etsy/Gumroad.
   hreflang). Coste del producto: **1,90 M** de 2,5 M. Correo propio: **5-oct 14:00Z** (`5dd96142-…`); el del 28-sep ya lo nombra
   como «already out». Pendientes: acceso admin (la contraseña que da la CLI de Netlify viene enmascarada → John genera el
   enlace desde `/admin/generar-acceso`) y **galería de capturas** (piloto en este producto; ver memoria del proyecto).
+- **2026-10-03 (tarde, sesión Claude Code) — ola 1, productos 3 y 4, listos a falta del Payment Link.**
+  - **Gastro Pro Prompts eBook** (PR #106, `ai-prompts-for-restaurants`, $14, con cripto: $14 supera el mínimo de NOWPayments).
+    El PDF ES salió de un .docx de Google Docs que ya no existe: `extraer_es.py` lo vuelca a JSON por estilo y `maquetar_en.py`
+    (reportlab + Arial del sistema) calca el diseño MEDIDO (76 → 73 págs). 4 Sonnet traducen, `gate_en.py` verifica.
+  - **HACCP Food Safety Kit Pro** (PR #107, apilado sobre #106, `haccp-templates`, $19): F1 un Opus (0,46 M), textos 3 Sonnet,
+    F2 en el VPS (`aplicar_en.py` calcado del inventario), F3 un Opus en un worktree aparte, fusionados.
+  - Lecciones:
+    - **Al duplicar se duplican también los errores del ES.** La revisión del eBook cazó en el EN afirmaciones falsas heredadas
+      (CRAFT, «todos los prompts en el dashboard», «12 categorías», «80 prompts», cheat sheet con números del dashboard):
+      revisar las afirmaciones del ES contra lo que el producto entrega antes de traducirlas.
+    - **La adaptación normativa dentro de los entregables ya está decidida** (§1): no se pregunta a John (lo recordó el 3-oct).
+    - Dos ramas EN en paralelo chocan en los registros compartidos (hub, `tienda.ts`, linkify, footers): se resuelven UNA vez
+      fusionando la primera rama en la segunda y apilando los PR.
+    - Las imágenes de los usos (`use-case-task-appcc-*`) enseñan apps en tablet y lecturas en °C: no sirven para una landing
+      de plantillas Excel en °F. Fotos propias sin texto.
+
