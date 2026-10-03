@@ -9,7 +9,7 @@
 |---|---|---|---|
 | **Gastro Pro Prompts eBook** | **$14** | `https://aichef.pro/en/digital-products/ai-prompts-for-restaurants/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS` |
 | **HACCP Food Safety Kit Pro** | **$19** (ancla $39) | `https://aichef.pro/en/digital-products/haccp-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT` |
-| **Restaurant Staff Scheduling Kit Pro** (en curso) | **$19** | `https://aichef.pro/en/digital-products/restaurant-schedule-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT` |
+| **Restaurant Staff Scheduling Kit Pro** | **$19** (ancla $59) | `https://aichef.pro/en/digital-products/restaurant-schedule-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT` |
 
 Descripciones para el producto de Stripe (prosa, sin viñetas):
 
@@ -63,15 +63,32 @@ Lo grave venía **heredado del ES** (la traducción fiel lo arrastró). **Pendie
 - Correo EN: `scripts/productos-digitales/emails/broadcast-haccp-templates-lanzamiento-en.html` → **15-oct 14:00Z**
   (cola EN: eBook 10-oct; el 14-oct sale un correo ES, el 15 está libre).
 
+## 2b. Restaurant Staff Scheduling Kit Pro (ola 3, producto 5) — PR #108, listo a falta del Payment Link
+
+- Rama `feat/restaurant-schedule-templates-en` (apilada sobre #107 → #106: **fusionar #106 → #107 → #108**). SPEC, pipeline y
+  notas en `scripts/productos-digitales/staff-kit/` (`SPEC.md` D1-D24, `F2-NOTAS.md` §6 «Revisión final»).
+- 9 xlsx EN en `astro-site/public/dl/restaurant-schedule-templates/` (7 + 2 bonus): FLSA (horas extra > 40 h por semana
+  laboral a 1,5×, umbral diario estatal opcional), coste laboral por periodo de pago con % de cargas del empleador editable,
+  onboarding (I-9, W-4…), PTO sin mínimo federal, notas UK («rota», WTR 48 h/11 h, 5,6 semanas, NI 15 %). Sin afirmar
+  Google Sheets hasta un test real (SPEC). Construidos en el VPS: gates G1-G8 verde, autotest 13/13, idempotencia 0.
+- Revisión Opus final: 1 bloqueante (las horas extra de una semana que cruza meses se perdían entre copias mensuales →
+  cada copia guarda semanas COMPLETAS), 3 mayores (alertas de menores 14-15 vs 16-17, promedio de horas heredado de
+  España, semana del cuadrante lunes vs domingo → B3 por defecto lunes) + 10 menores → todos arreglados (`f9f973cf`).
+- Preview `deploy-preview-108`: `tienda-gate --es-identico --esperadas /kit-gestion-personal,/pack-appcc` verde, 9/9
+  descargas, Miselup 102/102. Imágenes propias sin texto (`og-staff-scheduling-kit.jpg`, `staff-en-*.jpg`).
+- Correo EN: `scripts/productos-digitales/emails/broadcast-restaurant-schedule-templates-lanzamiento-en.html` →
+  **20-oct 14:00Z** (cola EN: 10-oct eBook, 15-oct HACCP; los ES del 19 y 24 no chocan).
+
 ## 3. Al volver John con los dos Payment Links
 
-1. Env vars en Netlify (scope builds, contexto all): `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS` y
-   `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT`; comprobar con la CLI de Stripe importe USD y redirección `…/access?session_id=`.
+1. Env vars en Netlify (scope builds, contexto all): `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS`,
+   `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT` y `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT`; comprobar con la CLI de Stripe importe USD y redirección `…/access?session_id=`.
 2. En la rama del eBook: `python3 scripts/productos-digitales/sync-payment-links.py` → commit → merge #106 → gates LIVE
    (`gate-flujo-postpago.py --only ai-prompts-for-restaurants`, `tienda-gate.py --base https://aichef.pro`).
-3. Rama del HACCP: `git merge origin/main` (o rebase), `sync-payment-links.py` → merge #107 → gates LIVE con `--only haccp-templates`.
-4. Programar los 2 correos EN con `scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`).
-5. Limpiar worktrees: `git worktree remove <scratchpad>/wt-haccp` y `wt-haccp-f3`; borrar la rama `feat/haccp-templates-en-f3`.
+3. Rama del HACCP: `git merge origin/main`, `sync-payment-links.py` → merge #107 → gates LIVE con `--only haccp-templates`.
+   Igual con #108 (`--only restaurant-schedule-templates`).
+4. Programar los 3 correos EN (10, 15 y 20-oct, 14:00Z) con `scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`).
+5. Limpiar worktrees: `git worktree remove <scratchpad>/wt-haccp` y `wt-staff`; las ramas `-f3` ya están fusionadas.
 
 ## 4. Pendientes que NO son de estos productos
 

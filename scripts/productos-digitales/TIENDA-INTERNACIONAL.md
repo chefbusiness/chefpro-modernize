@@ -269,4 +269,9 @@ la F1 de cada producto frente a Etsy/Gumroad.
       fusionando la primera rama en la segunda y apilando los PR.
     - Las imágenes de los usos (`use-case-task-appcc-*`) enseñan apps en tablet y lecturas en °C: no sirven para una landing
       de plantillas Excel en °F. Fotos propias sin texto.
+- **2026-10-03 (noche, sesión Claude Code) — ola 3, producto 5: Restaurant Staff Scheduling Kit Pro** (PR #108, apilado sobre
+  #107, `restaurant-schedule-templates`, $19), mismo circuito que el HACCP (F1 Opus · 2 Sonnet · F2 en el VPS · F3 Opus en
+  worktree aparte · 1 revisión Opus · 1 ronda de arreglos). Lección: **un registro mensual de horas no sirve para la FLSA**
+  si la semana laboral cruza el mes; el arreglo proporcional fue de instrucciones (copias con semanas completas), no de
+  fórmulas. Y la semana del cuadrante y la de horas extra tienen que ser la MISMA (B3 = lunes, como la rejilla).
 
