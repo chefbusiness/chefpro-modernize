@@ -1,0 +1,54 @@
+# «Cómo Montar una Churrería-Chocolatería» — decisiones FIRMADAS (F1, 3-oct-2026)
+
+> Sesión Claude Code en el Mac. John delegó estas decisiones el 20-sep («te delego la toma de decisiones en todo») y lo
+> reiteró el 3-oct («decide tú con todo lo demás»). Solo el Payment Link de Stripe es suyo. Fuentes: research consolidado
+> `auditorias/guia-churreria-RESEARCH-2026-10-03.md` (545 líneas, 5 lentes) y su refutación
+> `auditorias/guia-churreria-research-REFUTACION-2026-10-03.md` («CORREGIR ANTES»: 6 altas · 13 medias · 7 bajas).
+> **Son firmes: la SPEC las aplica, no las reabre.** Donde la refutación corrige a la síntesis, manda la refutación.
+
+## Producto
+
+| # | Decisión | Motivo / coste |
+|---|---|---|
+| **D1** | Nombre «Cómo Montar una Churrería-Chocolatería» (H1 = catálogo = banner = asunto del correo = tarjeta del hub). Slug `guia-churreria-chocolateria` (+ `-access`, `-library`). Producto 51. | Es la tarjeta ya publicada; slug libre y cubierto por `robots.txt` (confirmar con `robots-gate.py` en F3). |
+| **D2** | **Caso central cifrado: (a) local fijo de 75 m²** con obrador de masa a la vista, freidora bajo campana, barra, sala, terraza y despacho a calle. **(b) despacho para llevar = columna de escenario** con su régimen de apertura. **(c) feria/caseta = capítulo + checklist (libro 7) + hoja «Punto Muerto por Evento» (libro 5)**, sin caso cifrado y con remisión a `plan-negocio-food-truck`/`kit-tareas-food-truck`. **(d) franquicia = capítulo comparador** con cifras como orden de magnitud publicado y FECHADO, sin recomendar marca. **(e) churros en cafetería/bar = epígrafe** con remisión. **(f) obrador B2B = fuera**, una línea de «cuándo dejas de ser minorista». | L1, L3, L4 y L5 coinciden; cifrar la feria costaría ≈0,3 M y pisaría al food truck. |
+| **D3** | **65 €**, sin `priceOld`, sin badge de descuento, sin `aggregateRating`, testimonios vacíos. Stripe + NOWPayments (3 puertas). | Paridad con la hermana. **Ancla corregida (A10): fuera el curso de 290 €** que nadie vio en su fuente; quedan el de 1.290 € (CUS-M06), el canon de 12.000 € de Churros Factory (CUS-M15) y la renta de 910 €/mes (CHS-37b). |
+| **D4** | **8 libros de Excel** (§9.2 del research), con la feria como hoja del libro 5 y libro propio de turnos y madrugada (dolor nº 1). **Sin hoja «Comparativa de Aceites»** (C5: un solo precio y la vida del aceite en lista negra). | 9 libros = +0,25 M; 7 dejaría sin libro el dolor nº 1. |
+| **D5** | Par de bonus de familia: **business plan relleno de «La Rueda» en 2 bloques** (≥3.500 palabras, ≥9 tablas; el resumen ejecutivo da resultado neto, margen y punto de equilibrio) y **«12 decisiones de apertura resueltas» en 4 bloques de 3**, cada decisión con su número, su criterio y su veredicto para el caso (C7: que no sea un índice de capítulos). | Palanca de presupuesto: −1 bloque de BP y −2 de bonus (≈ −0,5 M). |
+| **D6** | **Margen del churro:** `CHS-31` (85-90 %) a LISTA NEGRA. Se publican **>60 % sobre materia prima** (Loomis Pay, CUS-01) y **~50 % de rentabilidad declarada por una dueña** (CUS-?), cada uno con su definición, en `3!Los Dos Márgenes`. **El P&L NO usa el 50 % como margen bruto** (A9: contaría dos veces la mano de obra): el margen sale del escandallo del propio libro 3. | Un concepto, una fuente. |
+| **D7** | **Hermana `guia-chocolateria-obrador` v1.0.1 en la F3 de este producto**, antes de activar la venta cruzada: (1) el 85-90 % de `datos_ejemplo.py:2301` → `calculadora-capex-chocolateria.xlsx!Variante del Formato` y del P&L, más la frase de la pág. 9 de la guía; (2) el veredicto de `plan-financiero-3-anos-chocolateria.xlsx!PyG 3 Años!B68` en EUROS, no por ratio (hoy dice «restan» cuando el neto sube de 17.268,87 € a 20.043,54 €); (3) retirar la nota-puente del cap. 12 (el Kit de Tareas Chocolatería 2.1 ya está hecho, PR #104); (4) enlace a esta guía en su FAQ (`guia-chocolateria-obrador.ts:286/:349`); (5) lo que añada B5 de la refutación. **Un solo correo** para esa versión. | No es seguridad alimentaria: cifra de una variante que la propia guía llama «otro negocio» y que ya matiza con el ~50 %. Agrupar evita tres correos. |
+| **D8** | **Pack APPCC 09 (`09-control-aceite-fritura.xlsx`) = deuda en sesión «v2.x ES» aparte**: parametrizar 180/25/20 (hoy constantes dentro de la fórmula), etiquetar los 180 °C como criterio del operador y añadir el <175 °C de patatas del Rgto. 2017/2158 (CUN-05). Esta guía **no da temperatura de fritura del churro** salvo que V-02 encuentre fuente primaria. | Producto vivo distinto; no se mezcla con este. |
+| **D9** | **Convenio:** hostelería de Madrid, clase C, como EJEMPLO declarado, provincia en celda verde; método «cómo identificar el tuyo» apoyado en `CHN-93` (Toledo, «masas fritas»). Prohibido «no existe convenio de churrerías». **A1:** dos figuras separadas — **trabajador nocturno del ET art. 36.1** (22-6 h, ≥ 3 h o 1/3 de la jornada anual) y **plus de nocturnidad del convenio** (Madrid, 0-8 h, +25 % en el ejemplo); el libro 8 lleva una columna para cada una y desaparece «el que entra a las 4-5 es trabajador nocturno». Salarios con **suelo SMI 2026** (A7, `CHN-67`). | V-01 (estado del convenio de Madrid en 2026) se cierra antes del guion. |
+| **D10** | **Horario:** fila en el checklist + párrafo en el cap. 06: en Madrid, como cafetería/bar se abre a las 6:00 y como chocolatería a las 8:00 (`CUN-34`). No se extrapola a otras CCAA. | |
+| **D11** | **IVA del chocolate a la taza para llevar:** celda verde, 10 % por defecto, aviso «consulta a tu asesor»; nunca se afirma en prosa (`CUN-18`) salvo que V-04 encuentre consulta DGT. | |
+| **D12** | **Acrilamida:** buena práctica para el churro (no está en el art. 1.2 del Rgto. 2017/2158); obligación de la parte A si se fríen patatas frescas; parte B solo en los supuestos literales del art. 2.3 (A14: no «a las franquicias» sin más). Nunca «cumplimiento acrilamida». | |
+| **D13** | **Apertura (A4):** el despacho (644.6, Anexo de la Ley 12/2012) abre la ACTIVIDAD por declaración responsable, pero **las obras que requieren proyecto —el conducto de extracción a cubierta incluido— siguen necesitando su licencia y su técnico** (art. 3.3-3.4). Primera fila del checklist: «¿la extracción necesita proyecto?» antes de «¿Anexo sí o no?». FAQ 7, cap. 06 y `CUN-35` lo dicen así. | El mismo defecto se tumbó en el 644.5 de la hermana. |
+| **D14** | **Verano (A3):** fuera la «media cuota del 676» (casi ningún comprador paga IAE: exento por debajo de 1 M €, `CHN-73`; y cerrar dos meses no es abrir seis o menos). Tres salidas: cerrar, carta de verano, ferias. | |
+| **D15** | **Traspasos (A2):** fuera `CUS-31h/i` (reeditados durante más de dos años); con sala, techo 82.000-95.000 € (`CUS-02`, `CHS-37b`); 120.000 y 107.000 a `prohibido`. | |
+| **D16** | **Grafo de libros sin ciclos (C1, C2):** orden de relleno 3 → 1 → 4 → 5 → 8 → 2 → 6; el precio del aceite en celda propia del libro 3; CAPEX SIN fondo de maniobra; el fondo SOLO en el libro 6; la demanda por franja en UNA fuente; el punto muerto por evento solo en el libro 5. **Gate nuevo en `gate_libros.py`: aborta si encuentra un ciclo en las referencias «← N».** | |
+| **D17** | Caso ficticio **«Churrería-Chocolatería La Rueda»**, 75 m², renta 910 €/mes; comprobar el nombre en la OEPM antes del guion. Los parámetros de los que dependen el resultado neto y el punto de equilibrio llevan **supuesto declarado**, nunca «sin valor» (C3). | |
+| **D18** | La tarjeta de «Próximos Productos» NO lleva precio en F1: el componente gemelo no tiene ese campo y ninguna de las 21 tarjetas lo lleva. El precio llega con la tarjeta real en F3. Desviación del DoD de F1, anotada. | |
+| **D19** | Vocabulario es-ES; tejeringo, calentito, jeringo y «chocolate caliente» (LATAM), solo en la primera mención de cada documento. **Fuera de España** (B3): México sí tiene demanda medida de MAQUINARIA (churrera 1.600/mes); la FAQ ofrece la adaptación como servicio, sin promesa. | |
+| **D20** | **Blog:** solo se amplía el post propio `ia-churrerias-guia-completa` (corrigiendo su tabla, que suma 26.000-62.500 € y publica 12.000-50.000, y sus cifras sin fuente) con sustitución quirúrgica de sus 3 banners; **sin «posición 1» como argumento de canal** (B2: GSC no le atribuye consultas de apertura). Piezas nuevas, con research propio y fuera del presupuesto del producto. | |
+
+## Índice y presupuesto (B1 · palancas desde el diseño)
+
+| # | Decisión | Efecto |
+|---|---|---|
+| **D21** | **Capítulos 05 + 09 FUNDIDOS** en uno («El local y la hora punta: metros, conducto, ficha de visita y la cola del domingo») y **colocado DESPUÉS del 07** (C4: la ficha de visita aplica eliminatorios que 06 y 07 explican). La guía queda en **19 capítulos + anexo = 20 bloques**. | −1 bloque y C4 resuelto. |
+| **D22** | Presupuesto con la calibración medida de la hermana: **0,162 M por bloque** (suelo). Bloques: 20 (guía) + 2 (BP) + 4 (bonus) = **26 → ≈ 4,2 M de redacción**. La SPEC rehace el §15.4 del research con esa base y suma fila a fila. | Producto completo estimado ≈ 11-12 M: por encima del techo nominal L (10 M) y por debajo de la parada (+30 % = 13 M). **Se reporta a John.** |
+| **D23** | **Refutación de documentos en F2: una ronda con las 3 lentes en un prompt Opus** + gates de script (solape, páginas, guion); segunda ronda solo sobre bloqueantes. | ≈ −0,4 M frente al formato de la hermana. |
+| **D24** | **F2 en el Mac**, en serie y con el vigilante térmico (John, 3-oct: «pasa del VPS de momento»). Máximo DOS agentes a la vez: los 26 redactores van en tandas de 2. | Más reloj, cero riesgo térmico. |
+| **D25** | **Corte de F1:** research + SPEC refutada (≤ 2 rondas) + `datos_ejemplo.py` con su gate. **El guion pasa a F2, después de los libros**, porque cita sus celdas (es el orden real de la hermana: SPEC → datos → libros → guion). | Desviación del DoD de F1, anotada. |
+
+## Verificaciones que cierran antes del guion (V-01…V-06)
+
+V-01 estado del convenio de hostelería de Madrid en 2026 · V-02 temperatura de fritura del churro con fuente primaria (si no
+hay, no hay cifra) · V-03 notas del INE IAE → CNAE-2025 para 644.6, 676 y 663.1 · V-04 consulta DGT sobre bebida de cacao para
+llevar · V-05 ámbito funcional literal del convenio de Toledo 45000145011981 · **V-06 (A11)** qué denominación puede usar una
+churrería que prepara la taza con un preparado comercial que no cumple el RD 1055/2003 — interpretación con su nivel declarado,
+no «decisión resuelta» en el bonus.
+
+**Estado: firmadas el 2026-10-03. Siguiente paso: fichas JSON (CUN/CUS) + SPEC v1.0 → refutación (≤ 2 rondas) → datos.**
+
+Via: Claude Code
