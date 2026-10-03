@@ -20,10 +20,9 @@
 //  · SR-10 — no se han podido releer los anuncios de portales de clasificados: NINGUNA cifra que venga
 //    de ahí (ni el curso, ni la renta del local, ni los traspasos) aparece en la ficha.
 //    La maquinaria con precio publicado sí (sin IVA, y diciendo qué no incluye).
-//  · PÁGINAS = TOKENS. La guía son 95 páginas MEDIDAS. `21` (bonus «12
-//    decisiones de apertura resueltas») se sustituye por las páginas MEDIDAS cuando esté
-//    construido; NO publicar con el token puesto (paginas-gate.py exit 1). El business
-//    plan es DOCX y NO publica páginas.
+//  · Las páginas anunciadas de la guía y del bonus 2 son las MEDIDAS con PyMuPDF sobre el PDF
+//    final (3-oct-2026); las verifica paginas-gate.py. El business plan es DOCX y NO publica
+//    páginas.
 //  · Nunca «verificado contra el BOE», «cumple la normativa» ni «quedarás legal»; ni
 //    promesas de rentabilidad; ni «prueba gratis». Sin siglas (IAE, RGSEAA, APPCC, CTE) en
 //    el hero ni en los titulares de capítulo.
