@@ -27,7 +27,8 @@
 //   · Imágenes: la portada del ES (tareas-gestion-personal-hero.jpg) y su OG (og-kit-gestion-personal.jpg,
 //     la misma foto) enseñan una APP de turnos en una tablet: engañan en un producto Excel → fuera.
 //     Se queda el resto del set del ES (sin texto en español) y entra manual-manager-briefing.jpg (sin
-//     texto) en su lugar. OG provisional = manual-manager-briefing.jpg hasta que exista la inglesa.
+//     texto) en su lugar. Revisión 3-oct: OG og-staff-scheduling-kit.jpg y 3 fotos propias staff-en-* (Gemini,
+//     sin texto) sustituyen a la portada provisional y a -turnos/-oficina (rótulos de IA ilegibles).
 // DINERO: stripeEnvKey = VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT (resuelto en el wrapper .astro).
 import type { KitExcelData } from '../../productos/kits/types';
 
@@ -41,7 +42,7 @@ const data: KitExcelData = {
       '9 Excel templates to schedule restaurant staff: weekly & monthly schedule with clopening and minor-hour alerts, FLSA overtime tracker, labor cost %, PTO. One-time $19.',
     keywords:
       'restaurant schedule template, restaurant staff schedule template, restaurant employee schedule template, staff rota template, rota template, shift schedule template excel, server schedule template, restaurant overtime tracker, restaurant labor cost calculator, labor cost percentage restaurant, new hire onboarding checklist restaurant, pto planner template, employee directory template, AI Chef Pro',
-    ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/manual-manager-briefing.jpg',
+    ogImage: 'https://aichef.pro/og-staff-scheduling-kit.jpg',
   },
 
   schema: {
@@ -92,15 +93,15 @@ const data: KitExcelData = {
     // hero bg (6) — el set del ES salvo su portada (app de turnos en una tablet), sustituida por
     // manual-manager-briefing.jpg. gridGallery omitido: cae en `gallery`, como en el ES.
     gallery: [
-      '/lovable-uploads/ai-gallery/manual-manager-briefing.jpg',
-      '/lovable-uploads/ai-gallery/tareas-gestion-personal-turnos.jpg',
+      '/lovable-uploads/ai-gallery/staff-en-schedule-board.jpg',
+      '/lovable-uploads/ai-gallery/staff-en-preshift.jpg',
       '/lovable-uploads/ai-gallery/tareas-gestion-personal-cocina.jpg',
       '/lovable-uploads/ai-gallery/tareas-gestion-personal-equipo.jpg',
-      '/lovable-uploads/ai-gallery/tareas-gestion-personal-oficina.jpg',
+      '/lovable-uploads/ai-gallery/staff-en-office-schedule.jpg',
       '/lovable-uploads/ai-gallery/tareas-gestion-personal-servicio.jpg',
     ],
-    whyBg: '/lovable-uploads/ai-gallery/tareas-gestion-personal-oficina.jpg',
-    buyBoxBg: '/lovable-uploads/ai-gallery/tareas-gestion-personal-turnos.jpg',
+    whyBg: '/lovable-uploads/ai-gallery/staff-en-office-schedule.jpg',
+    buyBoxBg: '/lovable-uploads/ai-gallery/staff-en-schedule-board.jpg',
     ctaBg: '/lovable-uploads/ai-gallery/manual-manager-briefing.jpg',
   },
 
@@ -195,7 +196,7 @@ const data: KitExcelData = {
         title: 'Restaurant Staffing Calculator',
         value: '$19',
         desc: 'Works out how many people you need from your covers per service, days open, covers per employee and demand peaks. Stop being overstaffed or understaffed.',
-        image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-oficina.jpg',
+        image: '/lovable-uploads/ai-gallery/staff-en-office-schedule.jpg',
       },
     ],
   },
