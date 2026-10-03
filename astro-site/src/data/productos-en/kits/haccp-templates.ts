@@ -22,8 +22,8 @@
 //     «Mercado»), appcc-alergenos-carta («Alérgenos e intolerancias»), appcc-registro-plantilla
 //     («Restaurante Amura») y appcc-inspector-sanidad (carpeta «Documentos HACCP / Registros
 //     sanitarios») se sustituyen por las use-case-task-appcc-* (rótulos en inglés). La OG del ES
-//     (og-pack-appcc.jpg) lleva el titular en español: provisionalmente use-case-task-appcc-hero.jpg
-//     hasta que exista la OG inglesa.
+//     (og-pack-appcc.jpg) lleva el titular en español: la EN es og-haccp-kit.jpg (Gemini, 1200×630,
+//     sin texto legible, como og-food-cost-kit.jpg).
 // DINERO: stripeEnvKey = VITE_STRIPE_PAYMENT_LINK_HACCP_KIT (resuelto en el wrapper .astro).
 import type { KitExcelData } from '../../productos/kits/types';
 
@@ -37,7 +37,7 @@ const data: KitExcelData = {
       '21 HACCP & food safety templates for Excel: HACCP plan, temperature and cooling logs, cleaning schedule, allergen matrix. FDA Food Code limits in °F. One-time $19.',
     keywords:
       'haccp plan template, haccp template, food safety logs, food safety templates, food temperature log template, cooling log template, cleaning schedule template, allergen matrix template, health inspection checklist, food safety checklist for restaurants, haccp excel template, AI Chef Pro',
-    ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/use-case-task-appcc-hero.jpg',
+    ogImage: 'https://aichef.pro/og-haccp-kit.jpg',
   },
 
   schema: {
