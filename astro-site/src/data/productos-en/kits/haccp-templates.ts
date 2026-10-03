@@ -101,14 +101,15 @@ const data: KitExcelData = {
   },
 
   images: {
-    // hero bg (6) — sin texto en español (ver cabecera); gridGallery omitido: cae en `gallery`, como en el ES
+    // hero bg (6) — sin texto en español ni lecturas en °C ni apps en tablet (revisión final 3-oct: el producto
+    // son plantillas Excel); 3 fotos propias haccp-en-* (Gemini). gridGallery omitido: cae en `gallery`, como en el ES
     gallery: [
       '/lovable-uploads/ai-gallery/use-case-task-appcc-fridge.jpg',
-      '/lovable-uploads/ai-gallery/appcc-limpieza-cocina.jpeg',
+      '/lovable-uploads/ai-gallery/haccp-en-sanitizing.jpg',
       '/lovable-uploads/ai-gallery/use-case-task-appcc-thermometer.jpg',
       '/lovable-uploads/ai-gallery/use-case-task-appcc-cleaning.jpg',
-      '/lovable-uploads/ai-gallery/use-case-task-appcc-team.jpg',
-      '/lovable-uploads/ai-gallery/use-case-task-appcc-hero.jpg',
+      '/lovable-uploads/ai-gallery/haccp-en-logs-binder.jpg',
+      '/lovable-uploads/ai-gallery/haccp-en-probe-log.jpg',
     ],
     // Fondos de platos sin texto: los MISMOS del ES.
     whyBg: '/lovable-uploads/ai-gallery/cochinillo-asado.jpeg',
@@ -215,7 +216,7 @@ const data: KitExcelData = {
         title: 'Food Safety Training Log',
         value: '$19',
         desc: "A template to record all of your team's food safety training: Certified Food Protection Manager, food handler training, HACCP, allergen awareness and first aid, with renewal dates that flag themselves. A health inspector can ask for it at any time.",
-        image: '/lovable-uploads/ai-gallery/use-case-task-appcc-team.jpg',
+        image: '/lovable-uploads/ai-gallery/haccp-en-logs-binder.jpg',
       },
       {
         icon: 'AlertTriangle',
