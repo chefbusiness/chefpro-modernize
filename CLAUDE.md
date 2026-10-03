@@ -519,6 +519,24 @@ ES y traducir encima; ninguna plantilla ni página nueva. Si una adaptación obl
 antes. Origen: el hub `/en/digital-products` se hizo con una plantilla nueva (`TiendaHubPage.astro`) y hubo que tirarlo.
 **Definición de «nativo» (John, 24-sep-2026):** que el producto esté **traducido al idioma en el que queremos que esté disponible**, con naturalidad. NO significa construir componentes, hooks ni páginas nuevas, ni reinventar la rueda.
 
+### 🔴🔴 PROPORCIONALIDAD: el recurso escaso es el TIEMPO de John (3-oct-2026) — manda sobre todo lo de abajo
+
+John, tras parar la Churrería-Chocolatería (día y medio y ≈ 10,5 M tokens para una guía de 65 € con ~150 búsquedas/mes
+de apertura): «Lo que me preocupa, lo que me jode, es el TIEMPO. A ti te sobra el tiempo, pero a mí no». Y: «lo que vayas a
+desarrollar, investigar y proponer tiene que ser proporcional al producto». Los ~50 productos anteriores llevaron **3-6
+horas** cada uno; los últimos 3-4 se fueron a 1-2 días con el mismo proceso pesado (5-6 lentes de research, verificación
+legal cita a cita, SPEC de cientos de líneas, refutaciones en cadena, decenas de agentes Opus) y además obligaron a John a
+vigilar la sesión para que no se gastara la suscripción.
+
+- **Objetivo: producto terminado y listo para el Payment Link en 3-6 horas, sin que John tenga que supervisar.**
+- **Antes de elegir el producto**: cuenta corta de coste (horas + tokens) frente a retorno (demanda, precio). Si no se paga,
+  se recorta (p. ej. kit de Excel en vez de guía) o se elige otro.
+- **Research en UNA pasada** (un agente, las lentes en un solo prompt), **SPEC corta**, **un implementador** por pieza,
+  **gates de script** y **UNA sola comprobación adversarial final** (que no haya errores y que los ficheros no estén corruptos).
+  Nada de rondas encadenadas ni de verificar cada cita por separado salvo en lo legal que el producto afirma.
+- Reutilizar lo hecho (generadores, guiones y fichas de la hermana) cambiando datos; no rediseñar.
+- UltraCode **no** autoriza nada de esto a crecer: si un paso va a pasar de una hora o de ~1 M tokens, se recorta antes de lanzarlo.
+
 ### 🔴 Productos nuevos: POLÍTICA DE 3 FASES + presupuesto proporcional al precio (John, 20-sep-2026)
 
 John delegó la toma de decisiones del proyecto de productos digitales («tú lideras este proyecto conmigo, te delego la
