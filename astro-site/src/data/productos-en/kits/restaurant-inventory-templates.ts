@@ -360,6 +360,7 @@ const data: KitExcelData = {
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },
+    { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.0 · September 2026',
