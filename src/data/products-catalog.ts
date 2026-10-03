@@ -385,6 +385,16 @@ const RAW: Record<string, ProductCatalogRaw> = {
       en: 'Workshop, legal designations, display case, seasonal campaigns, licences and couverture and cocoa suppliers.',
     },
   },
+  'guia-churreria-chocolateria': {
+    id: 'guia-churreria-chocolateria',
+    url: '/guia-churreria-chocolateria',
+    price: '€65',
+    name: { es: 'Cómo Montar una Churrería-Chocolatería', en: 'Guide: How to Open a Churro & Hot Chocolate Shop' },
+    description: {
+      es: 'Local, freidora, carta, licencias y números: guía con 8 Excel y 2 bonus para abrir con criterio.',
+      en: 'Premises, fryer, menu, licences and numbers: guide with 8 Excel tools and 2 bonuses to open with a plan.',
+    },
+  },
   // ── Planes de negocio (Excel financiero + checklist de apertura) ─────────
   'plan-negocio-cafeteria': {
     id: 'plan-negocio-cafeteria',

@@ -4,6 +4,7 @@
 export const PAYMENT_LINKS: Record<string, string> = {
   'food-cost-templates': 'https://buy.stripe.com/bJecMYa8AgIS9fhcbz6oo1y',
   'guia-chocolateria-obrador': 'https://buy.stripe.com/4gMfZa1C42S23UX1wV6oo1w',
+  'guia-churreria-chocolateria': 'https://buy.stripe.com/7sY14gdkMeAK3UXejH6oo1A',
   'guia-dark-kitchen': 'https://buy.stripe.com/eVq5kw6WoboybnpdfD6oo0L',
   'guia-food-cost-ingenieria-menu': 'https://buy.stripe.com/bJe3codkMgISajl6Rf6oo1o',
   'guia-panaderia-obrador': 'https://buy.stripe.com/dRm6oAbcE78iajl2AZ6oo1e',

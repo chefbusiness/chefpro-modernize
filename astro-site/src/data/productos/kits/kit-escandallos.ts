@@ -308,6 +308,7 @@ const data: KitExcelData = {
     { href: '/guia-food-cost-ingenieria-menu', label: 'Guía Food Cost + Ingeniería de Menú' },
     { href: '/guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería' },
     { href: '/guia-chocolateria-obrador', label: 'Cómo Montar una Chocolatería Boutique & Atelier' },
+    { href: '/guia-churreria-chocolateria', label: 'Cómo Montar una Churrería-Chocolatería' },
     { href: '/manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],

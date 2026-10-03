@@ -163,6 +163,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'guia-churreria-chocolateria': {
+    version: '1.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-03',
+        title: 'Lanzamiento',
+        changes: [
+          'Guía completa en PDF y en DOCX editable: 16 capítulos de criterio para quien va a abrir una churrería-chocolatería, del primer local que visitas hasta los primeros noventa días, más un anexo normativo con fecha de corte.',
+          '8 libros de Excel con fórmulas vivas: producción, hora punta y ficha de visita al local; calculadora del coste de apertura con la comparación de traspaso frente a obra nueva; carta de apertura y escandallo por kilo de masa; aceite de fritura, coste y cambio; temporada, franjas del día y ferias; plan financiero a tres años; checklist legal, licencias y fritura; y turnos, plantilla y madrugada.',
+          'Bloque legal de apertura con su fecha de corte: régimen de apertura (declaración responsable de la actividad y obras con proyecto aparte), salida de humos y fuego de aceite, registro sanitario, alérgenos y aceite compartido, aceite usado, formación del equipo, nocturnidad y convenio. Cada dato lleva su norma, su artículo, su enlace y el día en que se comprobó.',
+          'Los parámetros legales (plazos, umbrales y tipos) nunca viven dentro de una fórmula: van en casilla editable con su nota y su fecha, y la guía cierra con un anexo que dice qué está vigente y qué fechas ya sabemos que se mueven.',
+          'Los libros se rellenan en el orden que indica la hoja de Instrucciones de cada uno: donde un dato viene de otro libro, es una casilla editable con su valor por defecto y una fila de cuadre que te avisa si te alejas del origen. Ninguna fórmula apunta a otro fichero.',
+          'Bonus 1: el business plan modelo relleno con el caso completo de ejemplo, en el formato que pide un banco o una línea de financiación pública, con las cifras cuadradas contra el plan financiero del pack.',
+          'Bonus 2: 12 decisiones de apertura resueltas, cada una con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve, el veredicto del caso de ejemplo y el umbral para elegir lo contrario.',
+        ],
+      },
+    ],
+  },
   'manual-chef-ejecutivo': {
     version: '1.0',
     updated: '2026-09-06',

@@ -59,6 +59,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo (€65)' },
   { id: 'guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería (€65)' },
   { id: 'guia-chocolateria-obrador', label: 'Cómo Montar una Chocolatería Boutique & Atelier (€65)' },
+  { id: 'guia-churreria-chocolateria', label: 'Cómo Montar una Churrería-Chocolatería (€65)' },
 ];
 
 export default function AdminGenerateAccess() {

@@ -296,6 +296,7 @@ const data: KitExcelData = {
     { href: '/kit-escandallos', label: 'Kit de Escandallos' },
     { href: '/guia-pasteleria-obrador', label: 'Cómo Montar una Pastelería' },
     { href: '/guia-chocolateria-obrador', label: 'Cómo Montar una Chocolatería Boutique & Atelier' },
+    { href: '/guia-churreria-chocolateria', label: 'Cómo Montar una Churrería-Chocolatería' },
     { href: '/manual-chef-ejecutivo', label: 'Manual del Chef Ejecutivo' },
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },

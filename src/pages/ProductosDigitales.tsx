@@ -48,6 +48,23 @@ const ALL_TAGS = [
 // nuevo entra en la posición 1 y desplaza; el que sale del top-5 pierde el «✨». Mantener los DOS ficheros gemelos iguales.
 const products = [
   {
+    name: 'Cómo Montar una Churrería-Chocolatería',
+    slug: '/guia-churreria-chocolateria',
+    price: '€65',
+    description: 'Local, obrador de masa, freidora y números: el dossier completo de apertura de una churrería-chocolatería, con los Excel que hacen tus cuentas.',
+    features: [
+      '16 capítulos + anexo normativo + 8 Excel',
+      'Freidora, humos y hora punta: capacidad y ficha de visita',
+      'Churro, porra y chocolate a la taza: escandallo y márgenes',
+      'Bonus: business plan relleno y 12 decisiones resueltas',
+    ],
+    icon: Coffee,
+    image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
+    badge: '✨ Nuevo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guias', 'plantillas', 'gestion', 'chocolateria'],
+  },
+  {
     name: 'Tareas Recurrentes: Taquería Mexicana',
     slug: '/kit-tareas-taqueria',
     price: '€14',
@@ -130,8 +147,8 @@ const products = [
     ],
     icon: BriefcaseBusiness,
     image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
-    badge: '✨ Nuevo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'plantillas', 'manuales', 'gestion', 'restaurante', 'bar', 'cafeteria', 'hotel', 'catering'],
   },
   {
@@ -995,7 +1012,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Coffee, name: 'Cómo Montar una Churrería-Chocolatería', desc: 'Chocolate a la taza y churros: local, obrador, carta, licencias y números para abrir con cabeza.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Q4 2026' },
   { icon: IceCream, name: 'Plan de Negocio: Heladería Artesanal', desc: 'Plan financiero Excel, inversión inicial, estacionalidad y checklist de apertura para tu heladería.', tags: ['plan-negocio', 'heladeria', 'excel'], phase: 'Q4 2026' },
   { icon: BarChart3, name: 'Kit Cuadro de Mando Operativo', desc: 'Ventas por franja y sala, ticket medio, rotación de mesas y productividad por hora, en un solo panel.', tags: ['excel', 'gestion', 'plantillas'], phase: 'Q4 2026' },
   { icon: Sandwich, name: 'Plan de Negocio: Hamburguesería Smash', desc: 'Del concepto smash al punto de equilibrio: inversión, carta, costes y previsión mes a mes.', tags: ['plan-negocio', 'hamburgueseria', 'excel'], phase: 'Q4 2026' },

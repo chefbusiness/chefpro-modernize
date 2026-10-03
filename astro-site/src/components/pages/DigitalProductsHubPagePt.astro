@@ -61,6 +61,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Como Abrir uma Loja de Churros e Chocolate Quente',
+    slug: '/guia-churreria-chocolateria',
+    description: 'Instalações, cozinha de produção, fritadeira e números: o dossiê completo de abertura de uma loja de churros e chocolate quente, com os ficheiros Excel que fazem as suas contas.',
+    features: [
+      '16 capítulos + apêndice regulamentar + 8 ficheiros Excel',
+      'Fritadeira, extração e hora de ponta: capacidade e visita ao local',
+      'Churros, porras e chocolate quente espesso: custeio de receitas e margens',
+      'Bónus: um plano de negócio preenchido e 12 decisões resolvidas',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
+    badge: '✨ Novo',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
+  },
+  {
     name: 'Tarefas Recorrentes: Taqueria Mexicana',
     slug: '/kit-tareas-taqueria',
     description: '11 listas de verificação operacionais para uma taqueria mexicana: espeto al pastor, produção de nixtamal e tortillas, bar de salsas, HACCP e alergénios (regras de alergénios da UE) e um calendário anual de tarefas.',
@@ -136,8 +152,8 @@ const products = [
     ],
     iconName: 'BriefcaseBusiness',
     image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
-    badge: '✨ Novo',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Novo',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
   },
   {
@@ -869,7 +885,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'Coffee', name: 'Como Abrir uma Loja de Churros e Chocolate Quente', desc: 'Chocolate quente espesso e churros: instalações, cozinha de produção, ementa, licenças e números para abrir com a cabeça tranquila.', tags: ['pdf', 'guides', 'chocolate'], phase: 'T4 2026' },
   { iconName: 'IceCream', name: 'Plano de Negócios: Gelataria Artesanal', desc: 'Plano financeiro em Excel, investimento inicial, sazonalidade e uma lista de verificação de abertura para a sua gelataria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'T4 2026' },
   { iconName: 'BarChart3', name: 'Kit de Dashboard de Operações', desc: 'Vendas por intervalo de tempo e área de refeições, ticket médio, rotação de mesas e produtividade por hora, num único dashboard.', tags: ['excel', 'management', 'templates'], phase: 'T4 2026' },
   { iconName: 'Sandwich', name: 'Plano de Negócios: Smash Burger Joint', desc: 'Do conceito smash ao ponto de equilíbrio: investimento, ementa, custos e previsão mês a mês.', tags: ['business-plan', 'burger', 'excel'], phase: 'T4 2026' },

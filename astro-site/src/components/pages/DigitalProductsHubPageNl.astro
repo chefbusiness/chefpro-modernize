@@ -59,6 +59,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Het openen van een churros- en warme chocolademelkzaak',
+    slug: '/guia-churreria-chocolateria',
+    description: 'Pand, productiekeuken, friteuse en cijfers: het complete openingsdossier voor een churros- en warme chocolademelkzaak, met de Excel-bestanden die uw berekeningen voor u doen.',
+    features: [
+      '16 hoofdstukken + wettelijke bijlage + 8 Excel-bestanden',
+      'Friteuse, afzuiging en piekuur: capaciteit en checklist voor locatiebezoek',
+      'Churros, porras en dikke warme chocolademelk: receptuurberekening en marges',
+      'Bonus: een ingevuld businessplan en 12 opgeloste beslissingen',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
+    badge: '✨ Nieuw',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
+  },
+  {
     name: 'Terugkerende taken: Mexicaanse taqueria',
     slug: '/kit-tareas-taqueria',
     description: '11 operationele checklists voor een Mexicaanse taqueria: al pastor-spit, nixtamal en tortillabereiding, salsabar, HACCP en allergenen (EU-allergeenregels), en een jaarlijkse takenkalender.',
@@ -134,8 +150,8 @@ const products = [
     ],
     iconName: 'BriefcaseBusiness',
     image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
-    badge: '✨ Nieuw',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Nieuw',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
   },
   {
@@ -867,7 +883,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'Coffee', name: 'Hoe u een churros- en warme chocolademelkzaak opent', desc: 'Dikke warme chocolademelk en churros: pand, productiekeuken, menukaart, vergunningen en cijfers om met een helder hoofd te openen.', tags: ['pdf', 'guides', 'chocolate'], phase: 'Q4 2026' },
   { iconName: 'IceCream', name: 'Businessplan: ambachtelijke gelateria', desc: 'Financieel plan in Excel, startinvestering, seizoensinvloeden en een openingschecklist voor uw gelateria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'Q4 2026' },
   { iconName: 'BarChart3', name: 'Operationeel dashboardpakket', desc: 'Omzet per tijdvak en eetgedeelte, gemiddelde besteding, tafelomloopsnelheid en productiviteit per uur, in één dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Businessplan: smashburgerzaak', desc: 'Van het smashconcept tot break-even: investering, menukaart, kosten en een prognose per maand.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },

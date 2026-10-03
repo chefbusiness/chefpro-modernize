@@ -62,6 +62,22 @@ const ALL_TAGS = [
 // el último). `slug` es la landing ES del producto: solo sirve para resolver su familia en FAMILIAS.
 const products = [
   {
+    name: 'Come Aprire una Churreria con Cioccolata Calda',
+    slug: '/guia-churreria-chocolateria',
+    description: 'Locale, laboratorio di produzione, friggitrice e numeri: il dossier completo di apertura di una churreria con cioccolata calda, con i file Excel che fanno i tuoi conti.',
+    features: [
+      '16 capitoli + appendice normativa + 8 file Excel',
+      'Friggitrice, cappa e ora di punta: capacità e checklist per il sopralluogo',
+      'Churros, porras e cioccolata calda densa: distinta base e margini',
+      'Bonus: un business plan già compilato e 12 decisioni risolte',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/guia-churreria-hero.jpg',
+    badge: '✨ Novità',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
+  },
+  {
     name: 'Attività Ricorrenti: Taqueria Messicana',
     slug: '/kit-tareas-taqueria',
     description: '11 checklist operative per una taqueria messicana: girarrosto al pastor, nixtamalizzazione e preparazione delle tortillas, banco delle salse, HACCP e allergeni (normativa europea), e un calendario annuale delle attività.',
@@ -137,8 +153,8 @@ const products = [
     ],
     iconName: 'BriefcaseBusiness',
     image: '/lovable-uploads/ai-gallery/manual-manager-hero.jpg',
-    badge: '✨ Novità',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badge: 'Novità',
+    badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
   },
   {
@@ -870,7 +886,6 @@ const products = [
 ];
 
 const comingSoon = [
-  { iconName: 'Coffee', name: 'Come Aprire una Churreria con Cioccolata Calda', desc: 'Cioccolata calda densa e churros: locale, laboratorio di produzione, menù, licenze e numeri per aprire con le idee chiare.', tags: ['pdf', 'guides', 'chocolate'], phase: 'Q4 2026' },
   { iconName: 'IceCream', name: 'Business Plan: Gelateria Artigianale', desc: 'Piano finanziario in Excel, investimento iniziale, stagionalità e checklist di apertura per la tua gelateria.', tags: ['business-plan', 'ice-cream', 'excel'], phase: 'Q4 2026' },
   { iconName: 'BarChart3', name: 'Kit Cruscotto Operativo', desc: 'Vendite per fascia oraria e area di servizio, scontrino medio, rotazione dei tavoli e produttività oraria, tutto in un\'unica dashboard.', tags: ['excel', 'management', 'templates'], phase: 'Q4 2026' },
   { iconName: 'Sandwich', name: 'Business Plan: Smash Burger', desc: 'Dal concetto smash burger al break-even: investimento, menù, costi e previsionale mese per mese.', tags: ['business-plan', 'burger', 'excel'], phase: 'Q4 2026' },

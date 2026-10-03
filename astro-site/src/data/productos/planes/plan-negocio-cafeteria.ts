@@ -285,6 +285,7 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-bar-restaurante', label: 'Plan Bar-Restaurante' },
     { href: '/kit-tareas-cafeteria', label: 'Kit Tareas Cafetería' },
     { href: '/pack-appcc', label: 'Pack APPCC' },
+    { href: '/guia-churreria-chocolateria', label: 'Cómo Montar una Churrería-Chocolatería' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
   updateNote: 'Producto actualizado · Versión 2.2 · septiembre 2026',
