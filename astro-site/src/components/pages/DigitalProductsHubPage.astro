@@ -61,7 +61,26 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
-  // HACCP Food Safety Kit Pro (3-oct-2026): el más nuevo → 1. Imagen sin texto en español
+  // Restaurant Staff Scheduling Kit Pro (3-oct-2026, después del HACCP): el más nuevo → 1; HACCP → 2,
+  // eBook → 3. Imagen: la pizarra de turnos (rótulos en inglés); la del ES, tareas-gestion-personal-hero,
+  // enseña una app de turnos en una tablet, engañosa en un producto Excel.
+  {
+    name: 'Restaurant Staff Scheduling Kit Pro',
+    slug: '/kit-gestion-personal',
+    description: '9 Excel templates to schedule your restaurant team: weekly and monthly schedule, FLSA overtime tracker, labor cost calculator, new hire onboarding, PTO planner, performance reviews and an employee directory.',
+    features: [
+      'Clopening, long-shift and minor-hour alerts',
+      'Overtime over 40 hours a week, with its cost',
+      'Labor cost % with a traffic light by concept',
+      'Onboarding with I-9 and new-hire deadlines',
+    ],
+    iconName: 'Users',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-turnos.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  // HACCP Food Safety Kit Pro (3-oct-2026) → 2. Imagen sin texto en español
   // (la del ES, appcc-inspector-sanidad, lleva rótulos en castellano).
   {
     name: 'HACCP Food Safety Kit Pro',
@@ -79,7 +98,7 @@ const products = [
     badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
-  // 3-oct-2026: Gastro Pro Prompts eBook (ai-prompts-for-restaurants) → 2 (el HACCP, del mismo día, es más nuevo).
+  // 3-oct-2026: Gastro Pro Prompts eBook (ai-prompts-for-restaurants) → 3 (el HACCP y el Staff Scheduling, del mismo día, son más nuevos).
   {
     name: 'Gastro Pro Prompts eBook',
     slug: '/pro-prompts-ebook',
@@ -368,25 +387,6 @@ const products = [
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['pdf', 'guides', 'dark-kitchen'],
   },
-  {
-    // RC-07 · la tarjeta conservaba la copia sin tildes y la descripción de la
-    // v1.1: el comprador saltaba de aquí a una landing ya acentuada.
-    name: 'Staff Scheduling & Management Kit',
-    slug: '/kit-gestion-personal',
-    description: '9 Excel templates with automatic formulas: shift schedules, overtime, labor cost, onboarding, holidays, performance reviews and a staff directory.',
-    features: [
-      'Shift schedule with legal alerts',
-      'Automatic overtime tracking',
-      'Labor cost ratio with a traffic-light system',
-      'Onboarding, holidays and performance reviews',
-    ],
-    iconName: 'Users',
-    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
-  },
-
   {
     name: 'Financial Plan Kit for Restaurants',
     slug: '/kit-plan-financiero',
