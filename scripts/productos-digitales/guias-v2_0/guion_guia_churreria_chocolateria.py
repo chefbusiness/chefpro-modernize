@@ -4729,6 +4729,9 @@ _ERRATAS_OK = (
     'Tardienta', 'Pinocho', 'Kukuchurro', 'ChurroWay', 'Churritopping',
     'Madrid1883', 'Tejeringo', 'Valor', 'Noia', 'Boiro', 'Padrón', 'Zarautz',
 )
+# Correctas que el detector de erratas marca (3-oct, ensayo de documentos.py): imperativos con tilde,
+# «Si calcularas» (subjuntivo), «chocolater» (término de búsqueda citado), verbos del léxico común.
+_ERRATAS_OK = _ERRATAS_OK + ('confírmalo', 'tómala', 'jubila', 'calcularas', 'chocolater', 'inferir', 'reflejado')
 GUIA['gates']['erratas_permitidas'] = _ERRATAS_OK
 for _b in BONUS:
     _b['gates']['erratas_permitidas'] = _ERRATAS_OK

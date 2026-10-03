@@ -1,0 +1,66 @@
+### Norma a norma: vigente, derogada o en revisión
+
+Todo lo que sigue está comprobado el 3 de octubre de 2026, que es la fecha de corte de esta edición; las normas que ya había verificado la guía de chocolatería se contrastaron el 12 de septiembre de 2026. Cada línea da el estado, el riesgo de que caduque y el capítulo donde se explica. Aquí no se repite la explicación: se dice en qué punto está la norma. El cuadro siguiente reúne lo mismo en forma de consulta rápida.
+
+- Aceites y grasas calentados. La Orden de 26 de enero de 1989 por la que se aprueba la Norma de Calidad para los Aceites y Grasas Calentados está en vigor, con los artículos sobre manipulaciones derogados. Sigue vivo el art. 9, que prohíbe añadir sustancias extrañas al baño y vender el aceite usado para uso alimentario. El límite es un 25 % máximo de compuestos polares, determinado con el método del anexo 1 (cromatografía en columna) en laboratorio. El medidor de mano ayuda a decidir cuándo cambiar el aceite, pero no es la prueba legal. Riesgo de caducidad: bajo. Detalle en el capítulo de la fritura.
+- Acrilamida. El Reglamento (UE) 2017/2158 y la Recomendación (UE) 2019/1888 de la Comisión están vigentes. El churro no aparece en la lista del art. 1.2 del reglamento, que no define «bollería»: no se puede afirmar ni que entre ni que quede fuera. Controlarla en el churro es buena práctica, no obligación demostrada. Riesgo de caducidad: alto, porque la Comisión está revisando el marco (lo vemos en el epígrafe siguiente).
+- Impuesto sobre actividades económicas. Las tarifas del RDLeg 1175/1990 están vigentes. Casi nadie lo paga, porque hay exención por debajo del millón de euros de cifra de negocio. Riesgo de caducidad: medio.
+- Clasificación nacional de actividades económicas. La de 2025, aprobada por el RD 10/2025, es la que manda; el código de la clasificación antigua no sirve para el puesto. Riesgo: bajo.
+- IVA. Los tipos de la Ley 37/1992 están vigentes. El tipo del chocolate a la taza para llevar y de las bebidas para llevar es una zona gris que fija tu asesor, no este libro. Riesgo: medio.
+- Venta ambulante. La Ley 7/1996 de ordenación del comercio minorista está vigente en su parte de venta ambulante. El Real Decreto 199/2010, de 26 de febrero, por el que se regula el ejercicio de la venta ambulante o no sedentaria, está derogado por el RD 538/2021 desde agosto de 2021, así que el pack no cita ningún artículo suyo. Riesgo: bajo.
+- Registro sanitario e higiene. El RD 191/2011 y el Reglamento (CE) 852/2004 están vigentes. Para la caseta de feria no se da por bueno el registro general sanitario. Riesgo: bajo.
+- Ley 12/2012. La Ley 12/2012, de 26 de diciembre, de medidas urgentes de liberalización del comercio, incluye en su anexo el epígrafe 644.6, hasta 750 m² de superficie útil de exposición y venta: la actividad se abre sin licencia previa, pero las obras que requieran proyecto y las de edificación siguen necesitando la suya (art. 3.3 y 3.4). Riesgo: alto.
+- Madrid, aire y horarios. La Ordenanza 4/2021 de calidad del aire y la Orden de 21 de abril de 2022 de la Consejería de Presidencia, Justicia e Interior están vigentes. La orden fija una chocolatería desde las 8:00 y una cafetería o bar desde las 6:00; las modificaciones posteriores no están comprobadas y no se extrapola a otras comunidades. Riesgo: medio.
+- Normativa técnica. El Código Técnico de la Edificación (DB-SI, con la sección SI 1 y la SI 4), el RD 513/2017 de protección contra incendios y el RD 919/2006 de gas están vigentes. Las freidoras se computan a 1 kW por litro; la cocina es local de riesgo especial desde 20 kW y la extinción automática es obligatoria por encima de 50 kW. Los filtros de la campana van a más de 1,20 m del foco si el aparato es de gas o de parrilla, y a más de 0,50 m si es de otro tipo; una freidora de gas pide la mayor distancia. La inspección periódica de la instalación de gas es cada 5 años. Riesgo: medio.
+- Residuos. La Ley 7/2022 y su normativa de plásticos están vigentes. No se afirma que un cucurucho de cartón la cumpla sin conocer su composición. Riesgo: medio.
+- Estatuto de los Trabajadores. El RDLeg 2/2015 está vigente. Su art. 34.9 exige registro diario con hora concreta de inicio y fin, conservado 4 años, y no impone formato ni sistema digital. Riesgo: bajo.
+- Salario mínimo. El RD 126/2026, de 18 de febrero, en sus arts. 1, 3.1 y 4.1, fija una cuantía anual de referencia de 17.094 €; no habla de catorce pagas. Es la cifra de 2026. Riesgo: bajo.
+- Acuerdo laboral estatal de hostelería. La resolución de 25 de agosto de 2026 registra y publica la modificación del sexto acuerdo y lo deja vigente hasta el 31 de diciembre de 2030. Riesgo: bajo.
+- Convenio de Madrid. Está vencido el 31 de diciembre de 2025 y en negociación. Como no se localizó texto nuevo en el boletín de la comunidad a 3 de octubre de 2026, se aplican las tablas de 2025 (art. 5 del convenio y art. 86.2 y 86.3 del Estatuto). Es un ejemplo, no un convenio que se extrapole. Riesgo: alto.
+- Convenio de Toledo. El convenio de ejemplo rige hasta el 31 de diciembre de 2026. Riesgo: bajo hasta esa fecha.
+- Chocolate. El RD 1055/2003 tiene un artículo único; sus divisiones son apartados de la Reglamentación técnico-sanitaria que aprueba, y por eso se cita el apartado 1.11 de la Reglamentación y no un artículo. Riesgo: bajo.
+
+### Lo que va a cambiar y cuándo
+
+Hay dos clases de cambio: los que tienen fecha y los que están en marcha sin ella. Los primeros se agendan; los segundos se vigilan.
+
+Con fecha:
+
+- Facturación verificable. El RD 1007/2023 (disposición final cuarta y art. 3.1 del Reglamento) la hace obligatoria en 2027: para los contribuyentes del impuesto sobre sociedades, antes del 1 de enero; para el resto de obligados, antes del 1 de julio. Si montas una sociedad, tu programa de facturación tiene que estar listo para enero.
+- Salario mínimo. La cuantía de 17.094 € es la de 2026. Cuando se apruebe la del año siguiente, el coste de personal de las hojas se recalcula con el nuevo suelo.
+- Convenio de Toledo. Su ejemplo caduca el 31 de diciembre de 2026: a partir de entonces habrá que mirar qué ha pasado con él antes de usarlo como referencia.
+- Acuerdo estatal. Sigue vigente hasta el 31 de diciembre de 2030, así que ahí tienes un marco estable.
+- Convenio de Madrid. Su texto nuevo cambiará el libro de turnos y el plan financiero. Mientras no se publique, el pack aplica las tablas del convenio vencido y lo dice en la propia hoja de parámetros del libro de turnos.
+
+En marcha, sin fecha:
+
+- Acrilamida. La Comisión revisa el marco con niveles de referencia ajustados y, por primera vez, niveles máximos vinculantes para alimentos seleccionados; no menciona los churros. Esto viene de una fuente secundaria, de modo que no hay cifra que ofrecer ni fecha de entrada en vigor. Es el cambio que más puede mover la ficha de la fritura.
+- Registro horario digital. Está pendiente de desarrollo: hoy el art. 34.9 del Estatuto no exige sistema digital, y nadie sabe aún qué formato pedirá la norma que lo regule.
+
+Cuando cualquiera de estos puntos cambie, cambia la versión del pack. Mientras tanto, no descuentes una norma futura en tus cuentas: calcula con la vigente y deja anotado qué hoja tocaría.
+
+### Lo que no está verificado y se pregunta
+
+Este pack no afirma lo que sigue. Lo formula como pregunta y te dice a quién se hace. Si algo de esta lista cambia tu decisión de abrir, la respuesta la quieres por escrito.
+
+- Humos, ruido, terrazas y vertido fuera de Madrid: al ayuntamiento. Lo único verificado es Madrid, y se presenta como ejemplo que no se extrapola. Pregunta qué modelo de licencia de actividad pide un local con mesas, qué exige la licencia de obra y qué se paga por ella.
+- La correspondencia entre el epígrafe del impuesto y el código de actividad: a tu asesor.
+- El tipo de IVA del chocolate a la taza para llevar y de las bebidas para llevar: a tu asesor. El libro de la carta lo lleva en una celda verde con su aviso, y el tipo no lo fija este libro. No hay consulta vinculante localizada.
+- Si el convenio de un obrador alcanza a un despacho con sala: a un laboralista. La búsqueda de convenios no fue exhaustiva, de modo que no se afirma ni que exista uno de churrerías ni que no. El acuerdo estatal nombra freidurías, quioscos y chocolaterías, el de Madrid es un ejemplo, y el puesto se encaja en un nivel por asimilación de funciones, que confirma tu asesor.
+- La tasa de cada feria: a la ordenanza fiscal de cada municipio. Ninguna tasa de un pueblo sirve de orden de magnitud para otro.
+- Si una bombona pequeña te sirve: sólo cabe la excepción para un único envase de utilización móvil conectado a un aparato móvil, en la caseta de feria y con una bombona por debajo de 15 kilos. Una freidora fija de un local no entra. Es una inferencia sobre tu caso: confírmalo con el instalador autorizado.
+
+Y hay dos datos que no se pudieron abrir el día de la verificación y quedan como dato de anuncio, sin volver a comprobar: los anuncios de traspaso y la renta de referencia. Por eso son precios pedidos, no pagados, y negociables. No los uses como precio de cierre.
+
+### Cómo se comprueba una norma en un minuto
+
+El método cabe en cuatro pasos y no necesita abogado.
+
+1. Para una norma estatal, abre su texto consolidado en el BOE. Arriba figura la versión vigente y la fecha de la última modificación.
+2. Para la normativa de tu comunidad, ve al boletín oficial de esa comunidad.
+3. Para lo europeo, usa EUR-Lex y mira si hay versión consolidada posterior.
+4. Para los convenios, consulta el registro REGCON y comprueba la vigencia y las tablas publicadas.
+
+Después compara fechas. Si la última modificación es posterior a la de este anexo, que es el 3 de octubre de 2026, lee el cambio antes de fiarte del libro. Si no hay modificación posterior, la ficha sigue en pie.
+
+Hazlo en tres momentos: antes de firmar el local, antes de pedir el préstamo y en cada actualización del pack. Son los tres puntos donde un cambio de norma te cuesta dinero de verdad.

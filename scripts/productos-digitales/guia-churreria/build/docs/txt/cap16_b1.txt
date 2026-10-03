@@ -1,0 +1,62 @@
+### La cuenta de resultados a tres años, con el año de crucero delante
+
+El plan financiero de Churrería-Chocolatería El Molinete cuenta tres años, y cada uno hace un trabajo distinto. El año uno lleva la rampa de arranque: las ventas empiezan por debajo de lo que el local puede dar y suben a medida que el barrio te conoce. El año dos es el de crucero: un año entero sin rampa, la foto de un año normal. El año tres repite el crucero y sólo cambia una línea, los intereses, porque el préstamo va amortizándose. Por eso conviene leer la cuenta empezando por el año dos y no por el uno: el primero te dice cómo arrancas, el segundo te dice si el negocio se sostiene.
+
+Tres reglas del modelo que el lector tiene que conocer antes de mirar ninguna cifra:
+
+- Todas las ventas van sin IVA. El impuesto lo trata el capítulo 3 (la hostelería para consumir en el acto va al 10 % y el tipo general es el 21 %, según el art. 91.Uno.2.2.º y el art. 90.Uno de la Ley 37/1992, comprobado el 3 de octubre de 2026) y aquí no entra en ninguna línea de ingresos.
+- El margen de cada ración sale del escandallo del libro de la carta, nunca de un porcentaje del sector. Si cambias un precio o un gramaje allí, el plan se recalcula entero.
+- Los supuestos del caso (las raciones de cada día, los coeficientes de cada mes, el mix de canales, los gastos fijos y el horario) son supuestos de El Molinete. Los sustituyes por los tuyos; no son lo normal en una churrería ni un dato del sector.
+
+Estas son las cifras del año de crucero de El Molinete, tal como las da la hoja «PyG 3 Años» del libro plan-financiero-3-anos-churreria.xlsx. La contribución del año, es decir, lo que dejan las ventas después de pagar la materia prima, es de 198.418 €. De ahí hay que pagar los costes fijos: la plantilla, la renta, los gastos fijos, la amortización y los intereses. Lo que queda es el resultado antes de impuestos: 32.139 €.
+
+La lectura en euros es simple: después de pagar a todo el equipo, el local, los suministros, el desgaste de la maquinaria y el coste del dinero prestado, al promotor le quedan 32.139 € antes de impuestos. Si ese resultado te compensa o no, lo decides tú comparándolo con lo que ganarías trabajando para otro; el porcentaje de resultado sobre ventas que ves en la tabla es información, no veredicto.
+
+El impuesto sobre sociedades o el IRPF no están en la cuenta. Dependen de tu forma jurídica y los calcula tu asesor. Y esto no es un detalle: la cifra que te sirve para decidir si abres es la de antes de impuestos, y la que te queda en el bolsillo la fija una persona con tus papeles delante.
+
+### El punto de equilibrio en raciones al día, y los meses que no pagan sus fijos
+
+En una churrería el punto de equilibrio no se expresa en euros de facturación sino en raciones al día, porque es la unidad que entiende quien está detrás del mostrador: no sabes cuántos euros llevas a las diez de la mañana, pero sabes cuántas raciones has sacado. La hoja «Punto de Equilibrio» divide los costes fijos del año entre lo que deja cada ración, con el margen del escandallo, y lo reparte entre los días de apertura.
+
+El resultado para El Molinete es de 250 raciones al día. El caso prevé vender de media 298 raciones al día. El margen de seguridad es, por tanto, de 48 raciones al día por encima del equilibrio. Léelo así: si la media del año se te queda 48 raciones por debajo de lo previsto, ya no pagas los fijos. Ese colchón es lo que separa un resultado positivo de uno negativo, y conviene mirarlo en raciones, que son las que puedes contar el lunes por la mañana, antes que en euros.
+
+Ahora viene la parte que descoloca a quien mira sólo la media. El año de crucero tiene 4 meses que no pagan sus fijos: la tabla de abajo dice cuáles. En esos meses la churrería vende menos raciones de las que necesita y pierde dinero mes a mes; lo compensan los meses buenos, los del frío, cuando el chocolate a la taza sube la media. La media anual es una media, y el banco no te presta una media: el alquiler y las nóminas se pagan cada mes con la caja que haya ese mes.
+
+De ahí sale una decisión práctica: el fondo de maniobra se calcula sobre meses de fijos y no sobre la media del año. Si lo calculases con la media, te quedarías corto justo en los meses malos, que es cuando más lo necesitas. Recuerda también que los coeficientes de temporada de cada mes son un supuesto de El Molinete, no un dato del sector; el verano, con su propia lógica, lo trata el capítulo 14 y aquí sólo se suma.
+
+### Qué canal paga los fijos: la sala, el para llevar o los dos
+
+La pregunta que separa una churrería de una cafetería es esta: si sólo tuvieras la sala, o sólo el para llevar, ¿pagarías los fijos del año? La hoja «Canales y Punto Muerto» responde con el mismo local, los mismos fijos y cada canal vendiendo solo.
+
+La sala sola se queda corta: le faltan 37.658 € para pagar los fijos del año. Es decir, con las mesas únicamente, El Molinete perdería dinero. Las mesas ocupan metros, exigen servicio y, en las horas de más afluencia, se llenan y no admiten más gente; el despacho a la ventana no tiene ese techo. La tabla de abajo pone en euros la lectura de cada canal y de los dos juntos: la sala sola en negativo y los dos canales juntos dando el resultado de 32.139 € del año de crucero. Mira la tabla y la última línea.
+
+Lo que esto significa para el formato es que el para llevar es el que paga el local y la sala es lo que lo convierte en churrería-chocolatería con sitio donde sentarse. Si te ronda la idea de abrir sólo con despacho a la calle, la decisión 1 del bonus compara el mismo local vendiendo únicamente para llevar, con los mismos fijos. El reparto entre canales es un supuesto de El Molinete: el tuyo dependerá de tu calle, de tu horario y de cuánta gente pasa por delante.
+
+### La caja: inversión total, fondo de maniobra, préstamo y el valle del primer año
+
+La inversión que le enseñas al banco es la inversión de apertura sin fondo de maniobra, que viene del capítulo 8, más el fondo de maniobra, que se calcula sólo aquí, sobre meses de fijos de caja. La hoja «Inversión Inicial» da el total para El Molinete: 165.468 €.
+
+Dos aclaraciones para que el banco no te devuelva el papel:
+
+- El IVA que adelantas al montar el local no está en esa cifra, porque es caja que recuperas.
+- El préstamo y lo que pone el promotor salen de la estructura de financiación del libro. Cada euro de inversión tiene que tener su origen: o lo aportas tú, o lo presta el banco.
+
+Después viene el valle de tesorería del primer año, que es el saldo más bajo que toca la cuenta mientras la rampa va subiendo. Según la hoja «Tesorería 12 meses», el valle de El Molinete es de 71.518 € y llega en octubre. El saldo más bajo sigue siendo positivo, así que el fondo de maniobra aguanta el valle. Esa es la comprobación que importa: no basta con que el plan dé resultado, la cuenta bancaria no puede tocar cero en ningún mes.
+
+La carencia del préstamo es lo que explica que esa caja aguante. Durante la rampa, la cuota no se come la tesorería, porque no pagas capital desde el primer día. La cuota y lo que sobra en el peor año del préstamo están en la hoja de financiación del libro; consúltalos allí con tus datos y no te quedes con los de El Molinete. Aquí se suman, no se vuelve a explicar: el préstamo se negocia con tu banco y se calcula con tus números.
+
+### Los primeros noventa días: qué mirar cada semana
+
+Con el plan delante, el seguimiento de los primeros meses cabe en pocas comparaciones. No necesitas un cuadro de mando enorme; necesitas leer cada semana lo que el plan ya te dice.
+
+Cada semana:
+
+- Compara las raciones vendidas con las del punto de equilibrio. Es el número que te dice si estás por encima o por debajo de la línea que paga los fijos.
+- Compara el ticket sin IVA con el del escandallo. Si el ticket real es más bajo, el margen por ración se resiente aunque vendas lo previsto.
+- Compara los días entre cambios de aceite con los del libro del aceite. Si cambias antes de lo previsto, el coste de la freidora está por encima del plan. El registro diario del aceite lo lleva el fichero 09-control-aceite-fritura.xlsx del «Pack Plantillas APPCC»; aquí sólo hace falta el dato para comparar con el plan.
+
+Cada mes:
+
+- Compara el saldo de caja con el de la hoja de tesorería. Es el control más importante del primer año, porque si la rampa va más lenta de lo previsto, lo verás antes en la caja que en el resultado: el resultado contable tarda en enseñar el problema, y la caja lo enseña al instante.
+
+Cuando tengas un año de ventas, sustituye los coeficientes de temporada por los tuyos y vuelve a pasar el plan. Los de El Molinete eran un punto de partida y los tuyos son los reales. Esa revisión llega, además, con la facturación verificable en el horizonte: el Real Decreto 1007/2023 (BOE-A-2023-24840), en su disposición final cuarta y en el art. 3.1 de su Reglamento, fija que los contribuyentes del Impuesto sobre Sociedades deben tener el sistema adaptado antes del 1 de enero de 2027 y el resto de obligados antes del 1 de julio de 2027, comprobado el 3 de octubre de 2026. El capítulo 9 explica qué significa para tu caja registradora; aquí basta con que tu año de ventas quede registrado con ese rigor desde el primer día, porque será el que sirva de base para volver a pasar el plan.

@@ -174,6 +174,7 @@ RX_CITA = re.compile(
     r'\(\s*[^)]{8,}\)'                 # «(Restauracion News, 2026-01-07)»
     r'|\(\s*(?:19|20)\d{2}\s*\)'       # «(2025)» — el ano de la fuente
     r'|\b\d{4}-\d{2}\b'                # fecha ISO de publicacion
+    r'|\bC[HU][NS]-[\w.]+'             # id de ficha de research (CUS-17, CHN-71c): dato fechado con fuente
     r'|seg\u00fan\s+(?:el\s+|la\s+|los\s+|datos\s+de\s+)?'
     r'[A-Z\u00c1\u00c9\u00cd\u00d3\u00da]')  # «segun Profesional Horeca»
 # Solo anios REALMENTE pasados (<= 2025): «previsiones para 2026» es correcto.
@@ -239,7 +240,7 @@ RX_MORTALIDAD2 = re.compile(
 # libro. Las dos cosas se venden tal cual si nadie las mide.
 RX_META = re.compile(
     r'(debo asegurar|me piden|se me pide|el maquetador|el prompt|'
-    r'las instrucciones|como modelo|no puedo escribir|voy a redactar|'
+    r'las instrucciones(?! de (?:un|una|quien|su|sus)\b)|como modelo|no puedo escribir|voy a redactar|'
     r'el guion dice|el usuario quiere|epígrafes que me)', re.I)
 
 

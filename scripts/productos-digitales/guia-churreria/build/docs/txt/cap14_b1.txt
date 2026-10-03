@@ -1,0 +1,94 @@
+### El año de una churrería: de octubre a marzo, y diciembre por encima de todo
+
+Un negocio que vende desayunos y meriendas de frío no factura igual en enero que en julio, y el error clásico de quien aún no ha abierto es dividir las ventas anuales entre doce y pensar que cada mes es un doceavo. No lo es. Para que tu plan financiero no se rompa en el primer verano, el pack reparte el año con un método que cabe en una hoja: el libro de temporada, el fichero temporada-franjas-y-ferias.xlsx.
+
+La mecánica es esta. Las raciones de un año normal salen de dos cifras que ya calculaste en el libro de producción: las de un día tipo y las de un día punta. Sobre ese esqueleto, doce coeficientes, uno por mes, reparten el año, y el uno marca el mes medio: por encima de uno, el mes vende más que la media; por debajo, menos. La hoja «Peso sobre el Año» te devuelve las raciones de cada mes y el peso de cada uno sobre el total, y el libro pasa esa curva al plan financiero para que la tesorería sepa cuándo entra el dinero y cuándo no.
+
+Conviene decir con claridad qué son esos coeficientes. Son supuestos declarados de El Molinete, y su forma es la que describen las fuentes del sector: temporada alta en otoño, invierno y Navidad, y valle en verano. Qamarero lo resume así (08-07-2025): «La temporada de mayor venta suele ser durante los meses fríos de otoño e invierno. Festividades como la Navidad y eventos locales también pueden incrementar significativamente las ventas», y no da una sola cifra. Ahí está el hueco: no hay una estadística pública de ventas de churrerías por meses. Los coeficientes son el modelo, no un dato, y nadie puede venderte «el reparto mensual del sector» porque no existe. Cámbialos por los tuyos en cuanto tengas un año de ventas reales; hasta entonces, trabaja con los del caso y con el escenario prudente.
+
+Con los supuestos del caso, la Churrería-Chocolatería El Molinete suma 107.400 raciones en un año normal, y diciembre pesa el 14,6 % de ellas. Es el mes más fuerte del año con diferencia, y eso condiciona decisiones de verdad: cuándo programar las vacaciones del equipo, cuándo renovar el aceite, cuándo no estrenar nada. Un diciembre que sale mal no se recupera en febrero.
+
+Para ponerle contraste a lo que mueve una fiesta grande, mira el calendario valenciano: según El Español (Fallas de Valencia, 26-02-2026), las Fallas de 2026 autorizaron 146 puestos de churros. Es un dato con fecha de un evento enorme, no una vara para medir tu feria ni tu local: sirve para recordar que, cuando una ciudad entera sale a la calle, el churro sale con ella y la competencia también.
+
+Queda la consecuencia de la cola del domingo, que ya viste mes a mes en el capítulo 6. Donde hay cola, la respuesta no es una segunda churrera. Es masa preparada antes de abrir y una persona más en la línea, que es la decisión 3 del bonus. Una máquina más sólo duplica el cuello de botella si la gente que sirve sigue siendo la misma.
+
+### Navidad y Reyes: el refuerzo que pide la cola
+
+El pico de diciembre y de la mañana de Reyes no se aguanta con la plantilla de un martes de marzo. La solución que usa el libro es modesta y medible: los días punta, una persona más por la mañana. Nada de contratar a un equipo paralelo.
+
+La hoja «Refuerzo por Pico» del libro de temporada te pide tres cosas: qué días son punta, cuántas horas pasa esa persona extra en el obrador o en el mostrador, y a cuánto sale la hora. El coste hora lo toma del escandallo, no de una cifra suelta, de modo que si cambias el salario o las cotizaciones en el libro de turnos, el refuerzo se recalcula. Con los supuestos de El Molinete, el refuerzo de Navidad y Reyes cuesta 742 € al año. Es poco dinero para proteger el mes que más pesa.
+
+Hay una trampa de doble contabilidad que conviene cerrar aquí. Esas horas viajan al libro de turnos, y de ahí al coste de plantilla del plan financiero. Si además sumas los 742 € como un gasto aparte, cuentas dos veces la misma persona. Ese importe sirve para decidir si el refuerzo merece la pena, no para sumarlo otra vez a los gastos de personal.
+
+Tres reglas prácticas para el refuerzo:
+
+- Fija los días punta con antelación y apúntalos en el calendario: una persona de refuerzo improvisada el mismo día rinde menos que la que ya conoce la línea.
+- Reparte las tareas antes de que llegue la cola: quien refuerza sirve y cobra, y quien lleva la churrera no se mueve de su sitio.
+- Anota cuántas raciones vendiste esos días: son los datos que te faltan para cambiar los coeficientes por los tuyos al año siguiente.
+
+Los turnos concretos, semana a semana, los resuelve el «Kit Gestión de Personal y Turnos»; la guía no reproduce su cuadrante y se limita a decirte cuánto cuesta el refuerzo antes de que lo programes.
+
+### El verano tiene tres salidas, y se comparan en euros
+
+Julio y agosto son el valle del año. El local sigue pagando renta, plantilla y gastos fijos, y las ventas de churros caen. Tienes tres salidas, y la hoja «El Verano (Tres Salidas)» las compara por lo único que importa: la contribución en euros de esos dos meses, antes de repartir los fijos.
+
+La primera es cerrar. Parece que no cuesta nada, y en contribución es exactamente eso: deja cero, 0 €. Pero cerrar no te libera de lo que pagas igual. La renta, la plantilla y los gastos fijos ya están en los fijos del año, así que cerrar no los reduce: sencillamente no entra nada para pagarlos. Cerrar no es ahorrar.
+
+La segunda es abrir con carta de verano: granizados, horchata, helado y algo de churro. No es una ocurrencia. Chocolatería 1902 publica una carta de helados artesanales con granizados a 3 € y horchata a 3 € (Chocolatería 1902, carta de helados; Vigo Churros, carta; consulta 2026-10-03), y Vigo Churros ofrece un «Churri-Helado (2 Bolas + 4 Churros + Topping)» con precio «consultar»: de ese precio no hay cifra, así que no la inventamos. Son dos cartas de dos negocios concretos, no el precio de ningún mercado. Con los supuestos de El Molinete, esa salida deja 17.369 € de contribución en julio y agosto.
+
+La tercera es salir de ferias con el local cerrado: la caseta recorre las fiestas del verano y el local descansa. Con los supuestos del caso deja 2.106 € de contribución, antes de los papeles y del desgaste de ir de un sitio a otro, que se trata en el epígrafe de la caseta.
+
+El caso: El Molinete elige la carta de verano. Hay un umbral que cambiaría la decisión, y es una cifra operativa, no un porcentaje: las raciones al día del local por debajo de las cuales la carta de verano deja menos que las ferias, 18,4 en el libro. Si en pleno verano tu local no pasa de ese ritmo, las ferias le ganan. Es un supuesto del caso, y lo cambias por el tuyo.
+
+Ahora, el dato que sorprende a quien lo ve por primera vez. Con los fijos dentro, el resultado de julio y agosto con la carta de verano es de -10.345 € según la hoja «Escenarios» del plan financiero de tres años (plan-financiero-3-anos-churreria.xlsx). Un verano en negativo es lo normal en una churrería. Lo pagan los meses buenos, y de cómo se financia ese hueco hablamos en el capítulo 16. Quien monta una churrería esperando que cada mes salga a flote se lleva un disgusto; quien lo sabe antes de firmar el contrato de alquiler puede elegir bien el local y la tesorería.
+
+Una nota de fiscalidad que no es una salida: la rebaja de cuota que puede tener un establecimiento de temporada en el impuesto sobre actividades económicas no se cuenta como ahorro del verano. Casi nadie paga ese impuesto (hay exención por debajo del millón de euros de cifra de negocio), y cerrar julio y agosto no es abrir seis meses o menos.
+
+Dos formas reales de resolver el valle, como contraste:
+
+- El local que vende helado en verano y churro en invierno. En Montefrío (Granada) hay un anuncio de heladería y churrería con 65.000 € de traspaso pedido (Milanuncios, listado de traspasos de churrería en Montefrío (Granada), consulta 2026-10-03). Es un precio pedido, no pagado ni cerrado, y ese día el portal nos devolvió un captcha, por lo que los datos son los de la tarjeta del listado. Lo que enseña es el modelo, no la cifra.
+- El que reparte el año entre dos plazas: opta por centrarse en Pamplona en invierno y en Zarautz en verano (Onda Vasca, María Malo, 20-12-2025). Es otra manera de llenar el valle, que exige dos plazas, dos autorizaciones y una vida organizada alrededor del calendario.
+
+Ninguna de las dos es la tuya, y la guía no te dice cuál elegir sin tus números.
+
+### Lo que es legal en una caseta: autorización, alta, registro, higiene y gas
+
+Hasta aquí, el año del local. Desde aquí, la caseta. Todo lo que sigue es norma, y cada regla va con su artículo y con la fecha de cierre de esta edición: comprobado el 3 de octubre de 2026. Lo que depende de tu ayuntamiento o de tu comunidad se pregunta, no se da por sabido.
+
+**Quién autoriza.** La autorización de venta ambulante la da el ayuntamiento. No puede ser indefinida, se adjudica por un procedimiento transparente y no se renueva sola (Ley 7/1996, de Ordenación del Comercio Minorista, arts. 53 a 55). Si piensas que un año de feria te da derecho al siguiente, estás equivocado: cada convocatoria se gana de nuevo.
+
+Un aviso sobre una norma que ya no vale. El RD 199/2010, de venta ambulante, está derogado desde el 7 de agosto de 2021 por el RD 538/2021. Si la ordenanza de tu municipio todavía lo cita, la autorización la sigue dando tu ayuntamiento con su ordenanza. Hay ordenanzas, como la de venta ambulante de Cehegín (Murcia), borrador definitivo de 2022, que excluyen de los puestos desmontables los «puestos de churros y gofres» y siguen remitiendo a ese real decreto derogado: no tratan el puesto de churros como ambulante. Moraleja: se pregunta.
+
+**El alta.** El puesto se da de alta en la casilla del impuesto sobre actividades económicas que marca el libro legal: la venta fuera de establecimiento, con su nota de churrería, es la 663.1, o la 675 / 674.7 si pones mesas, que es la de quioscos y recintos feriales. Ese es el contenido del libro checklist-legal-fritura-y-licencias.xlsx, hoja «Ferias y Venta Ambulante». El epígrafe 663.1, cuando se dedica exclusivamente a masas fritas, patatas fritas, golosinas, preparados de chocolate y bebidas refrescantes, faculta para elaborar los productos de churrería en la propia instalación o vehículo (Real Decreto Legislativo 1175/1990, tarifas y instrucción del impuesto). Es la lectura del texto, y tu asesor te confirma cuál te corresponde.
+
+**El registro sanitario.** La caseta, el tenderete o el remolque son comercio al por menor, y eso los lleva al registro sanitario de tu comunidad autónoma y no al registro general sanitario (RD 1021/2022, art. 2.2, letra a). Es un error frecuente pensar lo contrario.
+
+**La higiene del puesto.** El Reglamento (CE) 852/2004, anexo II, capítulo III, pide para carpas, tenderetes y vehículos: lavado de manos, superficies lisas, lavables y no tóxicas, agua potable caliente y fría, y eliminación higiénica de los desechos. Y los alérgenos por escrito también en el puesto: son los 14 alérgenos del anexo II del RD 126/2015, que pueden darse de forma oral sólo si constan por escrito en el establecimiento, accesibles al personal, a la inspección y al consumidor, con cartel visible y al menos en castellano. El registro del aceite de fritura que necesitas en el puesto lo tienes en el «Pack Plantillas APPCC», fichero 09-control-aceite-fritura.xlsx. La norma de calidad de los aceites y grasas calentados nombra también los puestos de feria, tanto los de instalación permanente como los de temporada.
+
+**El gas.** Aquí hay una trampa que ya salió en el capítulo 5. Según el RD 919/2006, no tienen carácter de instalación receptora las instalaciones alimentadas por un único envase móvil de gas licuado de menos de 15 kg, conectado por tubería flexible o acoplado a un solo aparato de utilización móvil. Fíjate en las palabras «de utilización móvil»: esa excepción sólo vale para el puesto de feria, y nunca para el local. Una freidora fija de un local no es un aparato móvil, y la bombona pequeña no te evita la instalación receptora allí.
+
+**Un ejemplo de ciudad.** En Madrid, cocinar en suelo de uso público pide autorización previa y casetas, quioscos o vehículos con captación y filtrado a 15 m de cualquier hueco receptor, salvo que no se use aceite (OCAS Madrid, art. 33.1, BOCM n.º 90, 16-04-2021). Es el único marco municipal que verificamos y se presenta como ejemplo: no se extrapola a Barcelona, a Sevilla ni a Valencia.
+
+### Cuántas raciones necesita una feria para cubrirse
+
+Antes de apuntarte a un evento, calcula su punto muerto. La hoja «Punto Muerto por Evento» del libro de temporada lo hace con una idea sencilla: lo que cuesta ir, entre lo que deja cada ración.
+
+Lo que cuesta ir es la suma de cuatro partidas: la tasa, el desplazamiento, el montaje y el personal que contratas sólo para el evento. Lo que deja cada ración en la feria es el precio sin IVA menos la materia de una ración para llevar. Con esos dos datos, el punto muerto son las raciones que tienes que vender para no perder. Todo en euros, sin ratios ni porcentajes, porque la pregunta es cuánto dinero te queda.
+
+El segundo ingrediente es el que más mueve el resultado: cuánta gente pasa por delante del puesto en una hora y qué parte de ella compra. Esa cifra la pones tú, a partir de lo que ves en un día normal de esa feria, y se escribe siempre como supuesto, no como dato. Si no la has medido, ve a la feria del año anterior como visitante y cuenta. Es la hora mejor invertida de la fase de planificación.
+
+La tasa la fija la ordenanza fiscal de cada municipio y varía de un sitio a otro. La de la entidad local autónoma de Ochavillo del Río (Córdoba) fija 550 € por toda la feria para churrerías y chocolaterías con terraza (art. 7.C, BOP de Córdoba n.º 144, 28-07-2026). Es un pueblo pequeño y su tasa es un ejemplo de cómo se fija una tasa, no un orden de magnitud de lo que cuesta una feria en una capital ni en ninguna otra parte. Lo mismo vale para las Fallas: son un contraste, no una referencia de ingresos.
+
+Los eventos de ejemplo de El Molinete, con las raciones que necesita cada uno para cubrirse, lo que deja y su orden, están en el cuadro que sigue a este texto. El mercado navideño de ejemplo es el que mejor sale: deja 1.853 €. Lo importante no es el orden concreto, que depende de los supuestos, sino el método: ordena tus ferias por lo que dejan en euros, no por lo vistosas que sean.
+
+Una advertencia de calendario. Una feria que cae en temporada alta saca a gente del local justo cuando más vende. Si un evento coincide con diciembre o con la cola del domingo, el coste real de ir incluye lo que dejas de vender en casa y el refuerzo que tienes que pagar para que el local no se quede cojo. Antes de decir sí a una feria, ponla encima del libro de temporada.
+
+### Cuando la feria es tu negocio, y no un complemento
+
+Este pack cuenta la feria como una salida del local: un hueco del verano o un refuerzo puntual. Si lo que quieres es vivir de ferias y mercados, con remolque propio y varias temporadas al año, estás hablando de otro negocio, con su propio plan, su propia inversión y su propia lógica de calendario. Eso lo cubren el «Plan de Negocio: Food Truck» y el kit «Tareas: Food Truck», y esta guía no lo desarrolla.
+
+Lo que sí tiene precio con fuente es el equipo, para que sepas de qué escala hablamos. Según las fichas de Churrofácil (remolques, fichas 455, 207 y 221, consulta 2026-10-03), todo sin IVA: un remolque de 3×2×2,10 m con cartel cuesta 14.800 €, un mini carrito para eventos y mercados 6.190 € y una churrería portátil para exteriores de cafeterías 4.190 €, con dosificadora manual de 2 kg, fogón de gasoil 70 y escurridor. Son tres fichas de un mismo proveedor y valen como referencia de precio de equipo, no como presupuesto cerrado. La dotación de una caseta que sólo sale unos días al año la tienes en la calculadora de inversión del pack.
+
+El criterio es simple. Con una caseta o un carrito y un par de ferias al año, el negocio sigue siendo el local. Con ese mismo equipo y varias ferias, ya no lo es: has pasado al negocio del plan del food truck, y ahí el cálculo cambia de arriba abajo.
+
+Un último matiz sobre el vehículo. Si vas en vehículo y lo tuyo es la ruta, ese es el terreno de los dos productos que acabamos de nombrar. Si vas de feria en feria pero tu base sigue siendo el local, quédate con el método de este capítulo: calcula el punto muerto de cada evento, mira el calendario y cuenta lo que dejas de vender en casa.

@@ -1,0 +1,61 @@
+### Cuántas personas hacen falta: la línea, la sala y el pico del fin de semana
+
+La plantilla de una churrería-chocolatería no sale de una ratio de «personas por cada tantos clientes». Sale de un cuadrante por franjas: el libro de turnos, turnos-plantilla-y-madrugada.xlsx, divide el horario de apertura en medias horas y exige un mínimo de personas en cada una. Después comprueba que ninguna franja queda sin cubrir. Si a las 7:30 hay cola en el mostrador y una sola persona sirviendo, la hoja te lo marca antes de que lo descubras con el local abierto.
+
+Ese mínimo no se inventa a ojo, y por eso el capítulo depende de otros dos libros. Las personas que hacen falta en la línea en el pico del fin de semana llegan del libro de producción y local: allí está calculado cuánta gente tiene que freír, dosificar y cortar cuando más vende El Molinete. Las horas de refuerzo de Navidad y Reyes, que son las semanas en las que la demanda se descuelga del resto del año, vienen del libro de temporada. Cada cifra de personal tiene así un origen rastreable, y cuando sustituyas los supuestos de El Molinete por los tuyos, la plantilla se recalcula sola.
+
+La plantilla de la Churrería-Chocolatería El Molinete es un caso modelado, no un negocio real. Son cinco figuras: el titular, dos churreros, un camarero de sala y un refuerzo de fin de semana a media jornada. Con Seguridad Social, refuerzo y sustituciones, el coste anual de esa plantilla es de 119.350 €, que es la cifra que la hoja «Coste de Plantilla» pone en su total. De ella sale el coste hora de la plantilla: 13,24 €. Ese es el número que tiene que usar el escandallo del capítulo 12 cuando reparte la mano de obra entre las raciones; si en el escandallo pones otro, los dos libros se contradicen y el margen que calculas deja de ser el que vas a cobrar.
+
+Una frontera para que no esperes de aquí lo que no hay. El cuadrante semanal por empleado, las vacaciones y la rotación de personal son del Kit Gestión de Personal y Turnos, que lleva la semana a semana y las nóminas. Este capítulo hace otra cosa: dimensiona y cuesta la plantilla para que el plan financiero tenga un número honesto antes de que firmes nada.
+
+### Dos figuras que no se mezclan: el trabajador nocturno y el plus de nocturnidad
+
+Aquí se equivoca casi todo el mundo, así que vamos despacio. Hay dos figuras distintas, cada una con su fuente, y una churrería puede tener la segunda sin tener la primera.
+
+La primera es la del Estatuto de los Trabajadores, art. 36.1 (RDLeg 2/2015, BOE-A-2015-11430, texto consolidado, comprobado el 3 de octubre de 2026). Trabajo nocturno es el que se realiza entre las 22:00 y las 6:00. Trabajador nocturno es quien hace normalmente en ese periodo al menos tres horas de su jornada diaria, o quien se prevé que haga en él un tercio de su jornada anual. Es una figura con límites y protección propios: un promedio máximo de ocho horas en quince días y sin horas extraordinarias. Esos límites alcanzan sólo a quien cumple la definición.
+
+La segunda es el plus de nocturnidad, y no es una figura del Estatuto: lo fija cada convenio, con sus propias franjas y su recargo sobre el salario base. En el convenio de hostelería de la Comunidad de Madrid, que usamos de ejemplo, una franja va de las 22:00 a las 0:00 con un recargo del 1 % del salario base y otra de las 0:00 a las 8:00 con un recargo del 25 % (Convenio colectivo de Hostelería y Actividades Turísticas de la Comunidad de Madrid, código 28002085011981, BOCM de abril de 2024). Cobrar el plus no convierte a nadie en trabajador nocturno, y ser trabajador nocturno no depende de lo que pague el convenio. Se puede cobrar plus sin serlo, y en una churrería es lo normal.
+
+El caso de El Molinete lo deja claro, y la hoja «Nocturnidad ET y Convenio» del libro de turnos lo muestra persona a persona, en dos columnas separadas.
+
+- El churrero que empieza a las 4:30 los fines de semana tiene hora y media dentro del periodo del Estatuto, el que va de las 22:00 a las 6:00. La hoja le calcula 3,0 horas a la semana en ese periodo, lejos del umbral de tres horas diarias, y contesta a la pregunta «¿es trabajador nocturno?» con un no. Pero esa madrugada está dentro de la franja de las 0:00 a las 8:00 del convenio, así que sí cobra plus. El plus de nocturnidad que la plantilla de ejemplo paga en un año es de 2.725 €.
+- Quien cierra el viernes y el sábado a la 1:00 suma tres horas en el periodo del Estatuto, pero sólo dos días a la semana. Con ese patrón no está claro si «normalmente» se cumple, y el libro no decide por ti: en esa casilla escribe «revísalo con tu asesor».
+
+Un detalle práctico: no apliques a quien no es trabajador nocturno la prohibición de horas extraordinarias ni el tope de ocho horas de promedio. Esos límites son de la figura del Estatuto, no del plus. Y quien entra a las 5:30 no es trabajador nocturno por entrar a esa hora: tiene media hora en el periodo, aunque su plus del convenio sí empiece a contar desde las 0:00.
+
+### Tu convenio: el de Madrid como ejemplo vencido y el método para encontrar el tuyo
+
+El convenio que te toca no tiene por qué ser el de Madrid. El de Madrid está en el libro porque es el único que hemos podido verificar entero, y se presenta siempre como un ejemplo que no se extrapola. Lo que sí se extrapola es el método, y son cuatro pasos.
+
+1. Busca en el REGCON, el registro y depósito de convenios colectivos, el convenio de hostelería de tu provincia o de tu comunidad, por denominación y por ámbito territorial.
+2. Mira a qué clase o grupo pertenece tu local. En el convenio de Madrid de ejemplo, la clase C agrupa cafeterías de una taza, chocolaterías, cafés-bares y bares (comprobado el 3 de octubre de 2026).
+3. Asigna a cada puesto su nivel por las funciones que realiza. Es una asimilación, no una equivalencia de nombres: quien fríe y dosifica se encaja en el nivel que más se parezca por funciones, y es una inferencia que confirma tu asesor laboral.
+4. Anota el estado del convenio: vigente, vencido en negociación, en prórroga. Una tabla sin su estado es una cifra sin fecha.
+
+Una advertencia sobre los nombres. El Acuerdo Laboral de Ámbito Estatal de Hostelería, en el art. 4 del VI Acuerdo (BOE-A-2023-6344, BOE del 10 de marzo de 2023), incluye cafés, bares, cafeterías, freidurías, quioscos, heladerías y chocolaterías; la palabra «churrería» no aparece en él. Su modificación fija un nuevo periodo de vigencia hasta el 31 de diciembre de 2030 (Resolución de 25 de agosto de 2026, publicada el 4 de septiembre de 2026). Eso te da el marco estatal; el convenio de tu provincia es el que concreta salarios y plus.
+
+El ejemplo de Madrid, con su estado real. El convenio de hostelería de la Comunidad de Madrid venció el 31 de diciembre de 2025 y la comisión negociadora del nuevo se constituyó en diciembre de 2025. A 3 de octubre de 2026 no hemos localizado ningún texto nuevo publicado en el BOCM, así que se siguen aplicando sus tablas de 2025, por la prórroga del art. 5 del propio convenio y por la vigencia durante las negociaciones del art. 86 del Estatuto. Por eso toda cifra del libro de turnos que sale de esas tablas lleva la etiqueta «2025, convenio vencido el 31-12-2025, en negociación; se aplican sus tablas mientras no se publique el nuevo». Cuando se publique el texto nuevo, la etiqueta es el aviso para actualizar.
+
+Y el método funciona con otro convenio. El convenio provincial de Toledo (Convenio colectivo provincial de Mazapán, Masas Fritas, Confitería y Chocolate de Toledo 2025-2026) se aplica a los obradores de masas fritas, y por eso alcanza a un obrador de churros. No menciona ni «churrería» ni «despacho» ni «venta»: que alcance a un despacho con sala es una interpretación que debe confirmar un laboralista. Una búsqueda en el REGCON localizó cuatro convenios de ámbito igual o superior a la provincia que nombran chocolates o bombones: Toledo, Comunitat Valenciana, Álava y Huesca (REGCON, consulta del 12 de septiembre de 2026). La búsqueda no fue exhaustiva, de modo que no afirmamos que no haya más ni que no haya otros que nombren la masa frita; sólo que el tuyo hay que buscarlo con el método y no suponerlo.
+
+La hoja «Identifica tu Convenio» del libro de turnos recorre estos pasos con Madrid como caso, y el cuadro siguiente los resume.
+
+### El salario mínimo es el suelo, y las ofertas publicadas sólo un contraste
+
+La regla de cálculo del libro es esta: el salario mínimo interprofesional de 2026 es el suelo de cada puesto a su jornada. El Real Decreto 126/2026, de 18 de febrero (BOE-A-2026-3815, arts. 1, 3.1 y 4.1), lo fija en 40,70 € al día o 1.221 € al mes, con una cuantía anual de referencia de 17.094 €. El real decreto no habla de catorce pagas: los 17.094 € son una cuantía anual mínima de referencia (comprobado el 3 de octubre de 2026).
+
+El libro hace así: para cada puesto compara el salario del convenio con ese suelo y se queda con el mayor de los dos. Encima de ese salario suma la Seguridad Social de empresa de quien cotiza. Si un puesto del convenio de ejemplo queda por debajo del suelo, la hoja «Coste de Plantilla» usa el salario mínimo como suelo, y lo dice en una nota; no escribe un salario por debajo de lo que la ley permite.
+
+Las ofertas de empleo publicadas son un contraste, no una obligación. En una consulta del 3 de octubre de 2026 en JobToday, un aprendiz de churrero a jornada completa de una churrería de Madrid aparecía con 1.300-1.500 € mensuales, y un ayudante de cocina con 1.500-1.600 €, con el requisito de tres años de experiencia y de poder empezar el turno a las 5:30. Ninguna de las dos ofertas declara el número de pagas ni si el importe es bruto. Leída a doce pagas, la primera queda por debajo del salario mínimo anual: por eso cuenta el suelo y no el anuncio. Son un rango de mercado con las pagas sin declarar, útil para saber qué ve un candidato al mirar tu oferta, y nada más. Lo que obliga es tu convenio y, por debajo de todo, el salario mínimo.
+
+Lo del ayudante de las 5:30 conviene leerlo con lo del apartado anterior: entrar a esa hora es media hora en el periodo del Estatuto, y por eso no hace a nadie trabajador nocturno.
+
+### Las horas del titular y el registro de jornada
+
+El titular de El Molinete trabaja los siete días de la semana. El cuadrante le pone 52,5 horas semanales, con horas de más cada semana y la madrugada del fin de semana. Son horas que no están en el coste de plantilla de los 119.350 €, porque el titular no cobra por ellas. La hoja «Horas del Titular» les pone valor al coste hora de la plantilla: lo que valdrían las horas de más del titular al año, pagadas a otra persona, son 8.514 €. No es un gasto que vayas a desembolsar; es un coste que existe aunque no lo pagues, y que el plan tiene que ver.
+
+Su retribución, además, va en nómina como un puesto más. Un plan que sólo cuadra si el titular trabaja gratis no sirve: el día que quiera descansar, enfermarse o contratar a alguien que ocupe su lugar, el número cambia y el negocio con él. Cuánta madrugada asume el propio titular y cuánta cubre la plantilla es la decisión 10 del bonus; no la tomes sin haber mirado las dos hojas.
+
+Sobre el registro de jornada, la norma es el art. 34.9 del Estatuto de los Trabajadores (RDLeg 2/2015, BOE-A-2015-11430). El registro es diario, con la hora concreta de inicio y de fin de cada persona, y se conserva cuatro años. La norma no impone formato ni sistema digital: vale una hoja firmada o una aplicación, con tal de que el dato sea real y esté a disposición de quien lo pida. El registro horario digital está pendiente de desarrollo, y el anexo de la guía vigila su publicación. Comprobado el 3 de octubre de 2026.
+
+En una churrería con madrugada esto no es un papeleo menor: la hora a la que entra el churrero es la que decide si hay plus del convenio, y el registro es lo único que la acredita. Anota la hora real, no la del cuadrante.
