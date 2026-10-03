@@ -416,8 +416,8 @@ PARAMETROS = OrderedDict([
                                 'House limit for portions. Large items need longer: allow about 24 h per 4-5 lb '
                                 '(USDA FSIS) and raise this number.')),
     (('18', 'Congelación Anisakis'), ('Minimum hours at -4 °F or below:', 168,
-                                      'US Food Code §3-402.11: 168 h (7 days). UK and EU rule: 24 h at -20 °C '
-                                      '(-4 °F): type 24 if you operate in the UK.')),
+                                      'US Food Code §3-402.11: 168 h (7 days). UK and EU rule: 24 h at -4 °F '
+                                      '(-20 °C): type 24 if you operate in the UK.')),
 ])
 # Celdas SIN letras que cambian en EN (el extractor las excluye de textos_es.json): horas de 12 h, turnos
 # mañana/tarde del 04 y el teléfono de emergencias del BONUS-02 (D7, D21, D23)
@@ -504,7 +504,7 @@ def autotest():
         err.append('SIN_LETRAS debe tener 21 celdas (6 horas + 14 turnos + 1 teléfono)')
     for k, v in POR_CELDA.items():
         if re.search(r'[áéíóúñ¿¡]|\bde\b|\by\b', v):
-            err('POR_CELDA con español: %r' % (k,))
+            err.append('POR_CELDA con español: %r' % (k,))
     if len(LIMITES_02) != 10:
         err.append('LIMITES_02 debe tener 10 filas (A5:A14)')
     # el semáforo universal tiene que ser inyectivo

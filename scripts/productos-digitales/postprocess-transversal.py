@@ -83,8 +83,9 @@ SCRATCH = os.environ.get(
 #: en US Letter y con metadatos en inglés; un `all` le forzaría A4 y español (SPEC §2.1, T12).
 #: restaurant-inventory-templates: Restaurant Inventory Kit Pro (EN), montado por
 #: `restaurant-inventory-kit/aplicar_en.py` (mismo motivo: Letter y metadatos EN).
+#: haccp-templates: HACCP Food Safety Kit Pro (EN), montado por `haccp-kit/aplicar_en.py` (ídem).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
-             'restaurant-inventory-templates'}
+             'restaurant-inventory-templates', 'haccp-templates'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'
