@@ -79,6 +79,8 @@ def aplicar():
         r.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
     d.core_properties.title = en.get('docx_titulo') or 'Bonus 1 — Restaurant Prompt Engineering Guide'
     d.core_properties.language = 'en-US'
+    d.core_properties.author = 'AI Chef Pro'
+    d.core_properties.last_modified_by = 'AI Chef Pro'
     for st in d.styles:                      # corrector ortográfico en inglés al abrirlo en Word
         try:
             rpr = st.element.get_or_add_rPr()
@@ -91,9 +93,13 @@ def aplicar():
     wb = openpyxl.load_workbook(XLSX_ES)
     for i, c in list(celdas_xlsx(wb)):
         c.value = txls[i]
+    # fila del «#77»: la fila ya no existe en el dashboard (76 prompts); el número no se extrae (sin letras) y se fija aquí
+    wb.worksheets[1]['A23'].value = 'Bonus 1'
     for ws, nombre in zip(wb.worksheets, en['hojas']):
         ws.title = nombre[:31]
     wb.properties.title = 'Bonus 2 & 3 — Prompt Templates + Cheat Sheet'
+    wb.properties.creator = 'AI Chef Pro'
+    wb.properties.lastModifiedBy = 'AI Chef Pro'
 
     DESTINO.mkdir(parents=True, exist_ok=True)
     d.save(DOCX_EN)

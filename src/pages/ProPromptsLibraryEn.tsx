@@ -165,7 +165,7 @@ export default function ProPromptsLibraryEn() {
                 Pro Prompts Library <span className="text-[#FFD700]">by AI Chef Pro</span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow-md">
-                Your exclusive dashboard with every prompt curated by <span className="whitespace-nowrap">Chef John Guerrero</span>, CEO of AI Chef Pro, plus downloadable bonuses and professional tools. Copy, use and master AI in your food business.
+                Your exclusive dashboard with 76 copy-ready prompts curated by <span className="whitespace-nowrap">Chef John Guerrero</span>, CEO of AI Chef Pro, plus downloadable bonuses and professional tools. Copy, use and master AI in your food business.
               </p>
             </div>
           </div>

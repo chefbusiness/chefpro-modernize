@@ -11,7 +11,7 @@ const COPY = {
     cta: 'Descubrir AI Chef Pro',
   },
   en: {
-    heading: 'Want to use these prompts with the 75+ AI agents in AI Chef Pro?',
+    heading: 'Want to use these prompts with the 70+ AI agents in AI Chef Pro?',
     text: 'The complete suite for all of hospitality: chefs, managers, pastry chefs, bartenders and business owners. Food Pairing AI, Waste GenCal, Catering AI+ and much more.',
     href: 'https://aichef.pro/en',
     cta: 'Discover AI Chef Pro',

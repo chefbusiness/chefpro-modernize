@@ -57,7 +57,7 @@ const data = {
   },
 
   checkItems: [
-    'PDF eBook + exclusive dashboard with every prompt',
+    'PDF eBook + a private dashboard with 76 more copy-ready prompts',
     '300+ prompts for every corner of hospitality',
     '8 free professional tools included',
     'Works with ChatGPT, Claude, Perplexity, DeepSeek and more',
@@ -68,15 +68,15 @@ const data = {
     { icon: 'ChefHat', title: 'Cooking & Recipes', desc: 'More than 40 prompts for chefs and cooks: create original recipes with the ingredients you have, adapt dishes to the season, explore fine-dining techniques and the fusion of world cuisines. Includes prompts for professional plating and presentation.' },
     { icon: 'Calculator', title: 'Management & Costs', desc: "Essential prompts for managers and owners: work out food cost in seconds, generate recipe cost cards automatically, analyze profitability dish by dish and optimize purchasing with your vendors. Turn AI into your kitchen's financial controller." },
     { icon: 'Cake', title: 'Pastry & Bakery', desc: "A section for pastry chefs, bakers and chocolatiers: formulas with baker's percentages, fermentation techniques, flavor combinations and recipe adaptations for food intolerances. Build seasonal menus in minutes." },
-    { icon: 'Wine', title: 'Front of House, Bar & Drinks', desc: 'For bartenders and sommeliers: create signature cocktails, design dish-by-dish pairings, write wine descriptions for your list and sharpen front-of-house service. Includes molecular mixology and beverage trend prompts.' },
+    { icon: 'Wine', title: 'Front of House, Bar & Drinks', desc: 'For bartenders and sommeliers: create signature cocktails, design dish-by-dish pairings, write wine descriptions for your list and sharpen front-of-house service. Includes beverage trend and menu-writing prompts.' },
     { icon: 'CalendarDays', title: 'Catering & Events', desc: 'Write tailored proposals and detailed per-guest quotes, plan logistics and design menus for weddings, corporate events and banquets. Every prompt is built to impress the client and close the event.' },
     { icon: 'Beaker', title: 'Food Pairing', desc: 'Discover science-based ingredient combinations: pairings by aroma compounds, smart substitutions when an ingredient runs out and unexpected combinations that surprise your guests. Creativity backed by science.' },
     { icon: 'Megaphone', title: 'Restaurant Marketing', desc: 'Prompts to create social media content, optimize your local SEO on Google, respond to reviews professionally, build email marketing campaigns and position your brand. An AI community manager, built in.' },
     { icon: 'ShieldCheck', title: 'Allergens & Food Safety', desc: 'Generate complete allergen spec sheets, labeling that follows the rules where you operate, up-to-date HACCP procedures and training plans for your team. Stay compliant without spending hours on paperwork.' },
     { icon: 'Briefcase', title: 'Business Management', desc: 'From business plans for new concepts to pricing strategies and franchise feasibility studies. Includes consulting prompts that help you make strategic decisions based on data, not gut feeling.' },
     { icon: 'Users', title: 'Leadership & Teams', desc: 'Prompts to sharpen your kitchen leadership: performance reviews, training plans, onboarding procedures for new hires and communication techniques for your brigade. Manage people, not just plates.' },
-    { icon: 'Cpu', title: 'Prompt Engineering', desc: 'The chapter that multiplies the value of all the others: learn the CRAFT framework for writing perfect hospitality prompts. Understand how AI thinks and get 10x better answers in any tool.' },
-    { icon: 'ClipboardList', title: 'Copy-Paste Templates', desc: 'Prompts ready to copy, paste and use in seconds, with no adapting needed. Organized by role: chef, manager, pastry chef, bartender, caterer and restaurant owner. The fastest way to get started.' },
+    { icon: 'Cpu', title: 'Bonus: Prompt Engineering Guide', desc: 'Learn to write your own prompts with the 5-element method: Role, Context, Task, Parameters and Format. Includes before-and-after examples for every area of hospitality.' },
+    { icon: 'ClipboardList', title: 'Bonus: Templates + Cheat Sheet', desc: 'Fill-in-the-blank prompt templates and a one-page cheat sheet of the 20 best prompts, in a spreadsheet you can reuse every day.' },
   ] as EbookEnCategory[],
 
   testimonials: {
@@ -98,7 +98,7 @@ const data = {
 
   reasons: [
     { icon: 'Globe', title: 'For the Whole Industry, Not Just the Kitchen', desc: "Whether you're a chef, manager, pastry chef, bartender or restaurant owner, every prompt is designed for your specific role in the business." },
-    { icon: 'FlaskConical', title: 'Prompts Tested in AI Chef Pro', desc: 'Every prompt has been tested on the platform to deliver consistent, professional-grade results in real hospitality settings.' },
+    { icon: 'FlaskConical', title: 'Built Around AI Chef Pro', desc: 'Every prompt is written around the agents on AI Chef Pro, so you get consistent, professional-grade results in real hospitality settings.' },
     { icon: 'Clock', title: 'Save Hours of Work', desc: "Stop experimenting with AI. Get quality results in seconds, whether it's a recipe, a catering quote or an Instagram post." },
     { icon: 'RefreshCw', title: 'Pay Once, Yours Forever', desc: 'No subscriptions or recurring payments. Your private dashboard keeps growing with new prompts and categories. Every future improvement is yours at no extra cost.' },
   ],
@@ -109,7 +109,7 @@ const data = {
   },
 
   bonuses: [
-    { icon: 'BookOpen', label: 'BONUS 1', title: 'Hospitality Prompt Engineering Guide', value: '$29', desc: 'Learn to write your own perfect hospitality prompts from scratch with the AI Chef Pro method. An editable Word document you can customize.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
+    { icon: 'BookOpen', label: 'BONUS 1', title: 'Restaurant Prompt Engineering Guide', value: '$29', desc: 'Learn to write your own perfect hospitality prompts from scratch with the AI Chef Pro method. An editable Word document you can customize.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
     { icon: 'FileText', label: 'BONUS 2', title: 'Templates + Cheat Sheet', value: '$25', desc: 'A spreadsheet with ready-to-use templates and a quick summary of the best hospitality prompts.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
   ],
 
@@ -135,7 +135,7 @@ const data = {
 
   ctaItems: [
     'Complete eBook with 300+ prompts for every corner of hospitality',
-    'BONUS 1: Hospitality Prompt Engineering Guide ($29)',
+    'BONUS 1: Restaurant Prompt Engineering Guide ($29)',
     'BONUS 2: Downloadable Templates + Cheat Sheet ($25)',
     'Pay once: lifetime access to the online dashboard',
     'Ongoing updates with new prompts at no extra cost',

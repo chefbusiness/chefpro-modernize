@@ -6,7 +6,7 @@
   },
   {
    "estilo": "B-24.0-#1d3a5e",
-   "texto": "PRO PROMPTS eBOOK"
+   "texto": "GASTRO PRO PROMPTS eBOOK"
   },
   {
    "estilo": "I-12.0-#666666",
@@ -32,7 +32,7 @@
  "bienvenida": [
   {
    "estilo": "B-16.0-#1a1a1a",
-   "texto": "Welcome to the Pro Prompts eBook"
+   "texto": "Welcome to the Gastro Pro Prompts eBook"
   },
   {
    "estilo": "R-10.0-#1a1a1a",
@@ -48,7 +48,7 @@
   },
   {
    "estilo": "I-10.0-#666666",
-   "texto": "10 categories × 14 prompts. Creative Cooking, Management, Costs & Waste, Catering, Digital Marketing, Pastry, Food Pairing, Allergens, Business Management, Leadership & Teams, Deep Research."
+   "texto": "10 categories × 14 prompts: Creative Cooking; Management, Costs & Waste; Catering; Digital Marketing; Pastry; Food Pairing; Allergens; Business Management; Leadership & Teams; Deep Research."
   },
   {
    "estilo": "R-10.0-#1a1a1a",
@@ -64,7 +64,7 @@
   },
   {
    "estilo": "I-10.0-#666666",
-   "texto": "7 business types + specialized agents in the suite. Restaurant, Hotel F&B, Ghost Kitchen, Production Kitchen, Bar & Cocktails, Food Truck, Specialized Agents."
+   "texto": "7 business types + specialized agents in the suite: Independent Restaurant; Casual Restaurant & Bistro; Hotel & Hotel Food Service; Ghost Kitchen / Delivery; Pastry Shop & Production Kitchen; Bar & Cocktails; Food Truck; plus Specialized Agents."
   },
   {
    "estilo": "B-13.0-#1a1a1a",
@@ -72,7 +72,7 @@
   },
   {
    "estilo": "R-10.0-#1a1a1a",
-   "texto": "1. Find your profile or category in the index of each block. 2. Copy the prompt straight into the matching agent in AI Chef Pro. 3. Replace the fields in [BRACKETS] with your own information. 4. Experiment: adjust the tone, extend the request or combine prompts. 5. Save your best results — they are assets of your business."
+   "texto": "1. Find your category, profile or business type in its block (see the structure above). 2. Copy the prompt straight into the matching agent in AI Chef Pro. 3. Replace the fields in [BRACKETS] with your own information. 4. Experiment: adjust the tone, extend the request or combine prompts. 5. Save your best results — they are assets of your business."
   }
  ],
  "cierre": [

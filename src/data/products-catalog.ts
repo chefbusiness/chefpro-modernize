@@ -59,7 +59,7 @@ const RAW: Record<string, ProductCatalogRaw> = {
     name: { es: 'Pro Prompts eBook', en: 'Gastro Pro Prompts eBook' },
     description: {
       es: '200+ prompts profesionales probados para chefs y propietarios.',
-      en: '200+ proven professional prompts for chefs and owners.',
+      en: '300 professional prompts for chefs and owners.',
     },
     // Tienda EN (3-oct-2026): producto propio, `ai-prompts-for-restaurants`, $14 USD.
     urlByLang: { en: '/en/digital-products/ai-prompts-for-restaurants' },

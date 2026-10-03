@@ -460,7 +460,7 @@ export const categories: Category[] = [
         id: 64,
         title: "Constructive feedback for the team",
         compatible: ["AI Chef Pro", "Claude", "ChatGPT"],
-        text: "I need to give feedback about a performance or attitude problem to a [PROFILE: cook/line cook lead/server/pastry cook]. The situation is: [OBJECTIVE DESCRIPTION OF THE PROBLEM]. The employee has been on the team for [TIME]. Help me:\n- Structure the conversation (SBI model: Situation-Behavior-Impact)\n- The exact phrases to open the conversation without triggering defensiveness\n- How to actively listen to their perspective\n- How to agree on a concrete, measurable improvement plan\n- What to say if the conversation gets tense"
+        text: "I need to give feedback about a performance or attitude problem to a [PROFILE: cook/chef de partie / line cook/server/pastry cook]. The situation is: [OBJECTIVE DESCRIPTION OF THE PROBLEM]. The employee has been on the team for [TIME]. Help me:\n- Structure the conversation (SBI model: Situation-Behavior-Impact)\n- The exact phrases to open the conversation without triggering defensiveness\n- How to actively listen to their perspective\n- How to agree on a concrete, measurable improvement plan\n- What to say if the conversation gets tense"
       },
       {
         id: 65,

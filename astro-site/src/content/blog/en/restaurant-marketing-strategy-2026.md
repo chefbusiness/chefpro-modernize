@@ -89,7 +89,7 @@ faq:
 <li><strong>Consistency matters:</strong> Post 3-5 times per week to maintain algorithmic visibility</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Gastro Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">200+ proven professional prompts for chefs and owners.</p><a href="/en/digital-products/ai-prompts-for-restaurants?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-marketing-strategy-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Gastro Pro Prompts eBook for $14</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Gastro Pro Prompts eBook</h3><p class="mt-2 text-muted-foreground">300 professional prompts for chefs and owners.</p><a href="/en/digital-products/ai-prompts-for-restaurants?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-marketing-strategy-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Gastro Pro Prompts eBook for $14</a></aside>
 
 <h3>Facebook: Local Community</h3>
 <p>Despite shifting user preferences among younger demographics, Facebook remains powerful for local restaurant marketing, particularly for reaching the 35-54 age group with higher disposable income.</p>

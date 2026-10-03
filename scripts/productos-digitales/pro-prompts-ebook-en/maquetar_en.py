@@ -130,7 +130,7 @@ def prompt(p, ultimo):
     cuerpo = Paragraph(escape(p['cuerpo']), S['cuerpo'])
     linea = Paragraph(f'<b>{escape(etiqueta)}</b> <i>{escape(", ".join(apps))}</i>', S['apps'])
     # Cabecera pegada a las primeras líneas del cuerpo (el ES nunca deja un título huérfano al pie).
-    out = [CondPageBreak(60), cab, Spacer(1, 4.1), cuerpo, Spacer(1, 1.1), linea]
+    out = [KeepTogether([cab, Spacer(1, 4.1), cuerpo, Spacer(1, 1.1), linea])]
     if not ultimo:
         out += [regla('#eeeeee', 1, 15.7, 8.4)]
     return out

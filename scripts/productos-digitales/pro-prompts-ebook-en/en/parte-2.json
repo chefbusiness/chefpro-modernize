@@ -175,7 +175,7 @@
   {
    "n": 97,
    "titulo": "Legal Labeling for Prepared Products",
-   "cuerpo": "I need to create the legal label for these products made in my production kitchen/kitchen that I sell packaged: [DESCRIPTION OF PRODUCTS]. For each product, generate the mandatory information according to the regulations that apply to me: product name, ingredients (in order by weight), allergens in bold, net weight, expiration/best-before date, storage conditions, company, and directions for use.",
+   "cuerpo": "I need to create the legal label for these products made in my production kitchen/kitchen that I sell packaged: [DESCRIPTION OF PRODUCTS]. For each product, generate the mandatory information according to the regulations that apply to me: product name, ingredients (in order by weight), allergen declaration in the format my market requires (US: \"Contains:\" statement; UK/EU: allergens in bold), net weight, expiration/best-before date, storage conditions, business name and address, and directions for use.",
    "apps": [
     "Allergen ID"
    ]
@@ -438,8 +438,8 @@
   },
   {
    "n": 130,
-   "titulo": "Regional Spanish Cuisine: Deep Research",
-   "cuerpo": "Research in depth the traditional cuisine of [AUTONOMOUS COMMUNITY/REGION OF SPAIN]. Include: products with protected designation of origin or protected geographical indication, emblematic dishes with historical origin, native culinary techniques, optimal seasons for the main products, contemporary chefs who are references for that cuisine, and how to reinterpret it in a modern way.",
+   "titulo": "Regional Cuisine: Deep Research",
+   "cuerpo": "Research in depth the traditional cuisine of [COUNTRY/REGION]. Include: products with protected designation of origin or protected geographical indication, emblematic dishes with historical origin, native culinary techniques, optimal seasons for the main products, contemporary chefs who are references for that cuisine, and how to reinterpret it in a modern way.",
    "apps": [
     "Spanish Cuisine",
     "Gastro Lexicum"
