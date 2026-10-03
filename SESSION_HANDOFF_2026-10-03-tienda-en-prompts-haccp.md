@@ -3,13 +3,14 @@
 > Sesión Claude Code. Rotación de 3 sesiones → tocaba producto EN (ola 1). Reglas vigentes: PROPORCIONALIDAD (3-6 h por
 > producto, sin supervisión), reparto Mac ↔ VPS, térmica del Mac (istats, cero Playwright/builds locales).
 
-## 🔴 TAREA DE JOHN — tres Payment Links de Stripe (USD, Adaptive Pricing activado, como los EN anteriores)
+## 🔴 TAREA DE JOHN — cuatro Payment Links de Stripe (USD, Adaptive Pricing activado, como los EN anteriores)
 
 | Producto | Precio | Redirección tras el pago | Env var (la pongo yo en Netlify, scope builds) |
 |---|---|---|---|
 | **Gastro Pro Prompts eBook** | **$14** | `https://aichef.pro/en/digital-products/ai-prompts-for-restaurants/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_AI_PROMPTS_FOR_RESTAURANTS` |
 | **HACCP Food Safety Kit Pro** | **$19** (ancla $39) | `https://aichef.pro/en/digital-products/haccp-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_HACCP_KIT` |
 | **Restaurant Staff Scheduling Kit Pro** | **$19** (ancla $59) | `https://aichef.pro/en/digital-products/restaurant-schedule-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT` |
+| **Restaurant Financial Plan Kit Pro** (en curso) | **$49** | `https://aichef.pro/en/digital-products/restaurant-financial-plan-templates/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT` |
 
 Descripciones para el producto de Stripe (prosa, sin viñetas):
 
