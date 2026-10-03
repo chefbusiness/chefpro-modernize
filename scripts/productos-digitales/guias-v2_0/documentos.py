@@ -204,6 +204,13 @@ def erratas_fechas(texto):
         antes = texto[max(0, m.start() - 60):m.start()]
         if RX_LEGAL_ANTES.search(antes) or re.search(r'\d+/$', antes):
             continue
+        # fecha completa «31-12-2025»: es un vencimiento o un corte fechado, no un precio caduco
+        if re.search(r'\b\d{1,2}-\d{1,2}-$', antes):
+            continue
+        # antes de 2000 no hay precio caduco posible en un producto de 2026: es un nombre
+        # («Chocolatería 1902») o una fecha histórica
+        if anio < 2000:
+            continue
         ventana = texto[max(0, m.start() - 90):m.end() + 90]
         if not RX_PRECIO.search(ventana):
             continue

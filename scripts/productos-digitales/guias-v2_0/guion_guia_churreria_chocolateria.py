@@ -2991,7 +2991,7 @@ CAP_13 = {
         'dato del sector: son contraste.',
         'PROHIBIDO presentar las tablas de Madrid como vigentes sin su '
         'etiqueta: convenio vencido el 31 de diciembre de 2025, en '
-        'negociación, con sus tablas de 2025.',
+        'negociación, con las tablas salariales de ese año.',
         'No reproduzcas el cuadrante semanal por empleado: es del Kit Gestión '
         'de Personal y Turnos.',
     ],
@@ -3870,7 +3870,7 @@ BONUS = [
                         'filas': (9, 13),
                         'ancla': ('B9', 'Titular'),
                         'nota': 'Convenio de hostelería de Madrid como ejemplo: vencido el 31-12-2025 y '
-                                'en negociación, con sus tablas de 2025. El salario mínimo es el suelo '
+                                'en negociación, con las tablas salariales de ese año. El salario mínimo es el suelo '
                                 'de cada puesto. El coste anual de plantilla suma además el refuerzo y '
                                 'las sustituciones.',
                     },
@@ -4732,7 +4732,7 @@ _ERRATAS_OK = (
 # Correctas que el detector de erratas marca (3-oct, ensayo de documentos.py): imperativos con tilde,
 # «Si calcularas» (subjuntivo), «chocolater» (término de búsqueda citado), verbos del léxico común.
 _ERRATAS_OK = _ERRATAS_OK + ('confírmalo', 'tómala', 'consúltalos', 'jubila', 'calcularas', 'chocolater', 'inferir', 'reflejado',
-                             'compensado', 'modesta')
+                             'compensado', 'modesta', 'peaje')
 GUIA['gates']['erratas_permitidas'] = _ERRATAS_OK
 for _b in BONUS:
     _b['gates']['erratas_permitidas'] = _ERRATAS_OK
