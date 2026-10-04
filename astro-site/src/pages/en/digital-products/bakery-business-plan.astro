@@ -1,0 +1,42 @@
+---
+// /en/digital-products/bakery-business-plan — Bakery Business Plan Kit (tienda internacional EN). COPIA de
+// pages/en/digital-products/restaurant-financial-plan-templates.astro (thin wrapper: data → plantilla,
+// SEO → BaseLayout) con la plantilla de la línea Planes, PlanNegocioLandingPage, y lang="en". Réplica
+// del ES (pages/plan-negocio-panaderia.astro) por SPEC business-plans-en §6: misma plantilla, mismos componentes; solo
+// cambian los datos (data/productos-en/planes/bakery-business-plan.ts).
+//
+// - basePath SIN «/en»: BaseLayout ya antepone el prefijo del idioma (con «/en» saldría /en/en/…).
+// - hreflang recíproco con el gemelo ES vía alternatesFamilia('plan-negocio-panaderia') (lib/tienda.ts).
+// - whatsapp={false}: la plantilla pinta su propio botón de soporte (como el ES).
+// - omitGlobalApp: el SoftwareApplication global lleva ofertas en EUR y rating; en la tienda EN
+//   no puede salir ninguno de los dos (tienda-gate.py).
+// - miselup={false}: la tarjeta de Miselup es solo para la tienda ES (TIENDA §3.9).
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PlanNegocioLandingPage from '../../../components/pages/PlanNegocioLandingPage.astro';
+import data from '../../../data/productos-en/planes/bakery-business-plan';
+import { alternatesFamilia } from '../../../lib/tienda';
+
+const lang = 'en';
+const hreflang = alternatesFamilia('plan-negocio-panaderia');
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO, SPEC D1) para que Vite la inline en build.
+// data.stripeEnvKey documenta cuál es; aquí se resuelve literal. Sin la env var (el Payment Link
+// lo crea John), el CTA cae a '#comprar' como en el resto de la línea.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_BAKERY_BUSINESS_PLAN || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  miselup={false}
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/digital-products/${data.slug}`}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
+  ogImage={data.seo.ogImage}
+>
+  <PlanNegocioLandingPage data={data} stripeLink={stripeLink} lang={lang} />
+</BaseLayout>

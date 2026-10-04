@@ -319,7 +319,8 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # traducidos tal cual (el nombre de esa edición no lleva tildes ni « para »).
            'Ricardo Gómez', 'Ana Beltrán', 'María Herrero',
            # Ídem, Food Truck y Coffee Shop Business Plan Kit (4-oct): testimonios de los planes de negocio
-           # Food Truck y Cafetería traducidos (mismos nombres en los dos).
+           # Food Truck y Cafetería traducidos (mismos nombres en los dos). Restaurant y Bakery Business
+           # Plan Kit (4-oct, segunda tanda) traducen los de Bar-Restaurante y Panadería: los MISMOS 5 nombres.
            'María López', 'Carlos Méndez', 'Laura Fernández', 'Ana García', 'Pedro Gutiérrez']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus

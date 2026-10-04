@@ -33,6 +33,8 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'restaurant-financial-plan-templates': { accessPath: '/en/digital-products/restaurant-financial-plan-templates/access', label: 'Restaurant Financial Plan Kit Pro', lang: 'en' },
   'food-truck-business-plan': { accessPath: '/en/digital-products/food-truck-business-plan/access', label: 'Food Truck Business Plan Kit', lang: 'en' },
   'coffee-shop-business-plan': { accessPath: '/en/digital-products/coffee-shop-business-plan/access', label: 'Coffee Shop Business Plan Kit', lang: 'en' },
+  'restaurant-business-plan': { accessPath: '/en/digital-products/restaurant-business-plan/access', label: 'Restaurant Business Plan Kit', lang: 'en' },
+  'bakery-business-plan': { accessPath: '/en/digital-products/bakery-business-plan/access', label: 'Bakery Business Plan Kit', lang: 'en' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },

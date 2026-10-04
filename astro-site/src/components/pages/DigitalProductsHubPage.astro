@@ -61,11 +61,47 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
-  // Food Truck Business Plan Kit y Coffee Shop Business Plan Kit (4-oct-2026, publicados juntos): los
-  // más nuevos → 1 y 2 (Food Truck primero: 12.100 búsquedas/mes en EE. UU. frente a 3.600); el
-  // Financial Plan Kit pasa a 3. Imágenes: portadas propias de la edición EN, sin texto (las del ES
-  // llevan rótulos en español o precios en €). Sustituyen a las tarjetas viejas «Business Plan: Food
-  // Truck» y «Business Plan: Coffee Shop», que describían el mercado español.
+  // Restaurant Business Plan Kit y Bakery Business Plan Kit (4-oct-2026, segunda tanda de planes EN,
+  // publicados juntos): los más nuevos → 1 y 2 (Restaurant primero: 2.400 búsquedas/mes en EE. UU.
+  // frente a 1.900); Food Truck y Coffee Shop pasan a 3 y 4. Imágenes: portadas propias de la edición
+  // EN, sin texto (rbp-en-hero / bbp-en-hero). Sustituyen a las tarjetas viejas «Business Plan:
+  // Bar-Restaurant» y «Business Plan: Bakery / Bakehouse», que describían el mercado español.
+  {
+    name: 'Restaurant Business Plan Kit',
+    slug: '/plan-negocio-bar-restaurante',
+    description: 'Restaurant business plan template for a casual restaurant with a bar: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even, 12-month cash flow and loan schedule, and a 64-task opening checklist.',
+    features: [
+      '10-section business plan in Word',
+      'Startup costs from build-out to hood and bar',
+      'SBA 7(a) and Microloan financing with DSCR',
+      '64 tasks: health plan review, liquor license, certificate of occupancy',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/rbp-en-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'bar', 'business-plan'],
+  },
+  {
+    name: 'Bakery Business Plan Kit',
+    slug: '/plan-negocio-panaderia',
+    description: 'Bakery business plan template for a retail and wholesale bakery: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even and cash flow, and a 66-task opening checklist.',
+    features: [
+      '10-section business plan in Word',
+      'Startup costs from deck oven to display case',
+      '3-year P&L, break-even and 12-month cash flow',
+      '66 tasks: zoning, health or agriculture license, cottage food vs commercial',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/bbp-en-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'bakery', 'production-kitchen', 'business-plan'],
+  },
+  // Food Truck Business Plan Kit y Coffee Shop Business Plan Kit (4-oct-2026, primera tanda): → 3 y 4
+  // desde la segunda tanda (eran 1 y 2; Food Truck antes que Coffee Shop: 12.100 búsquedas/mes en
+  // EE. UU. frente a 3.600). Sustituyeron a las tarjetas viejas «Business Plan: Food Truck» y
+  // «Business Plan: Coffee Shop», que describían el mercado español.
   {
     name: 'Food Truck Business Plan Kit',
     slug: '/plan-negocio-food-truck',
@@ -98,8 +134,8 @@ const products = [
     badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['excel', 'templates', 'costs', 'cafe', 'brunch', 'business-plan'],
   },
-  // Restaurant Financial Plan Kit Pro (3-oct-2026, después del Staff Scheduling): → 3 desde el 4-oct (era 1);
-  // Staff Scheduling → 4, HACCP → 5, eBook → 6 (antes 2, 3 y 4). Imagen: la portada propia de la edición EN
+  // Restaurant Financial Plan Kit Pro (3-oct-2026, después del Staff Scheduling): → 5 desde la segunda tanda
+  // de planes EN del 4-oct (era 1, luego 3); Staff Scheduling → 6, HACCP → 7, eBook → 8. Imagen: la portada propia de la edición EN
   // (fin-en-hero.jpg, sin texto), la misma del hero de su landing.
   {
     name: 'Restaurant Financial Plan Kit Pro',
@@ -444,22 +480,6 @@ const products = [
     tags: ['pdf', 'guides', 'dark-kitchen'],
   },
   {
-    name: 'Business Plan: Bar-Restaurant',
-    slug: '/plan-negocio-bar-restaurante',
-    description: 'Complete business plan for opening a bar-restaurant in Spain: Excel financial plan with 3-year P&L, detailed start-up investment, break-even point, scenarios, and an opening checklist with 50+ procedures.',
-    features: [
-      'Excel financial plan with 3-year P&L',
-      'Detailed start-up investment (Spanish reference budget)',
-      'Break-even point + 3 scenarios',
-      'Opening checklist: 50+ procedures, Spain 2026',
-    ],
-    iconName: 'Banknote',
-    image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'costs', 'restaurant', 'bar', 'business-plan'],
-  },
-  {
     name: 'Business Plan: Tapas Bar / Gastrobar',
     slug: '/plan-negocio-tapas-bar',
     description: 'Complete business plan for opening a tapas bar or gastrobar in Spain: a 10-section DOCX document + Excel financial plan with 3-year P&L + an opening checklist with 63 procedures, including the classified-activity licence and the smoke-extraction permit.',
@@ -474,22 +494,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'costs', 'bar', 'tapas', 'gastropub', 'business-plan'],
-  },
-  {
-    name: 'Business Plan: Bakery / Bakehouse',
-    slug: '/plan-negocio-panaderia',
-    description: 'Complete business plan for opening a bakery or artisan bakehouse in Spain: Excel financial plan with 3-year P&L + Christmas seasonality + an opening checklist with 60+ procedures, including the RGSEAA registration for production kitchens.',
-    features: [
-      'Excel financial plan with Christmas seasonality',
-      'Detailed start-up investment (Spanish reference budget)',
-      'Break-even by kilos sold per day and average check',
-      'Checklist of 60+ procedures, including RGSEAA registration for the bakehouse',
-    ],
-    iconName: 'Wheat',
-    image: '/lovable-uploads/ai-gallery/plan-panaderia-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'costs', 'bakery', 'production-kitchen', 'business-plan'],
   },
   {
     name: 'Business Plan: Event Bartending / Mobile Bar',

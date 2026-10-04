@@ -438,21 +438,27 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-bar-restaurante',
     url: '/plan-negocio-bar-restaurante',
     price: '€35',
-    name: { es: 'Plan de Negocio: Bar-Restaurante', en: 'Business Plan: Bar-Restaurant' },
+    name: { es: 'Plan de Negocio: Bar-Restaurante', en: 'Restaurant Business Plan Kit' },
     description: {
       es: 'Plan financiero Excel, inversión inicial y checklist de apertura.',
-      en: 'Excel financial plan, start-up investment and opening checklist.',
+      en: 'Word business plan, Excel financial projections and opening checklist.',
     },
+    // Tienda EN (4-oct-2026): producto propio, `restaurant-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-panaderia': {
     id: 'plan-negocio-panaderia',
     url: '/plan-negocio-panaderia',
     price: '€35',
-    name: { es: 'Plan de Negocio: Panadería', en: 'Business Plan: Bakery' },
+    name: { es: 'Plan de Negocio: Panadería', en: 'Bakery Business Plan Kit' },
     description: {
       es: 'Obrador incluido: plan financiero Excel e inversión inicial.',
-      en: 'Production room included: Excel financial plan and start-up investment.',
+      en: 'Word business plan, Excel financial projections and opening checklist.',
     },
+    // Tienda EN (4-oct-2026): producto propio, `bakery-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/bakery-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',

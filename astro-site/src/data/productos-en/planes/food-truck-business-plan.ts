@@ -304,6 +304,8 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
+    { href: '/en/digital-products/restaurant-business-plan', label: 'Restaurant Business Plan Kit' },
+    { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.2 · October 2026',

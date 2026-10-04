@@ -151,6 +151,8 @@ const data = {
     // Planes EN (4-oct-2026, SPEC business-plans-en D29: entrantes desde los pies de los 6 productos EN).
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
+    { href: '/en/digital-products/restaurant-business-plan', label: 'Restaurant Business Plan Kit' },
+    { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
 

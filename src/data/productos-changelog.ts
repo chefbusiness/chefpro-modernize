@@ -628,6 +628,51 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-04): Restaurant Business Plan Kit, primera edición inglesa del contenido 2.2 del plan-negocio-bar-restaurante
+  // (SPEC business-plans-en D20 + business-plans-en-2: la EN nace en 2.2). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'restaurant-business-plan': {
+    version: '2.2',
+    updated: '2026-10-04',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-04',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2: a 10-section business plan in Word, an Excel financial model with 9 sheets and an opening checklist, adapted to the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story.',
+          'Revenue and costs excluding sales tax in the P&L; the 12-month cash flow includes the sales tax you collect and remits it quarterly (an 8% example rate you replace with your state and local rate, with its own cell for alcohol served on site), with no input tax credit on purchases in the US.',
+          'Payroll with employer payroll taxes, 12 pay periods, a federal and a state or local minimum wage floor, and a 40-hour workweek. Servers and bartenders are budgeted at a full base wage: no tips and no tip credit in the model.',
+          'Startup costs with a Type I hood and fire suppression, a grease interceptor and a liquor license line (non-quota state example: in quota states the license costs much more).',
+          'Financing sheet with owner equity, an SBA-guaranteed 7(a) loan, an SBA Microloan, investors and local grants, a loan schedule with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          '64-task opening checklist in 7 phases: business setup (LLC, EIN, seller\'s permit, business license), location and permits (zoning, lease review, building permits, health plan review), build-out and equipment, staff, marketing and launch, what must be in place before you open (final inspections, liquor license, insurance, pest control and music licenses) and the first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), square feet and gallons, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
+  // Tienda EN (2026-10-04): Bakery Business Plan Kit, primera edición inglesa del contenido 2.2 del plan-negocio-panaderia
+  // (SPEC business-plans-en D20 + business-plans-en-2: la EN nace en 2.2). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'bakery-business-plan': {
+    version: '2.2',
+    updated: '2026-10-04',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-04',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2: a 10-section business plan in Word, an Excel financial model with 9 sheets and an opening checklist, adapted to the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story.',
+          'Revenue and costs excluding sales tax in the P&L; the 12-month cash flow includes the sales tax you collect and remits it quarterly (an 8% example rate you replace with your state and local rate), with an editable tax-exempt share for bakery goods sold to go and wholesale for resale, and no input tax credit on purchases in the US.',
+          'Payroll with employer payroll taxes, 12 pay periods, a federal and a state or local minimum wage floor, a 40-hour workweek and the early-morning production shift in the hours check.',
+          'Financing sheet with owner equity, an SBA-guaranteed 7(a) loan, an SBA Microloan, investors and local grants, a loan schedule with no interest-only period by default and the DSCR checked against a 1.25× target.',
+          '66-task opening checklist in 6 phases: business setup (with the health department or state agriculture license and how a commercial bakery differs from a cottage food operation), location and permits (zoning, building and gas permits, oven ventilation and the electrical service), equipment, staff, marketing (wholesale accounts included) and the first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), square feet and gallons, and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

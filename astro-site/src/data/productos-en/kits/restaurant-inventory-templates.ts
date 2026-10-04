@@ -366,6 +366,8 @@ const data: KitExcelData = {
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
+    { href: '/en/digital-products/restaurant-business-plan', label: 'Restaurant Business Plan Kit' },
+    { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.0 · September 2026',
