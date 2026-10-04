@@ -9,8 +9,8 @@
 |---|---|---|---|
 | **Food Truck Business Plan Kit** | **$39** | `https://aichef.pro/en/digital-products/food-truck-business-plan/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_FOOD_TRUCK_BUSINESS_PLAN` |
 | **Coffee Shop Business Plan Kit** | **$39** | `https://aichef.pro/en/digital-products/coffee-shop-business-plan/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_COFFEE_SHOP_BUSINESS_PLAN` |
-| Restaurant Business Plan Kit (cuando esté) | $39 | `https://aichef.pro/en/digital-products/restaurant-business-plan/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_RESTAURANT_BUSINESS_PLAN` |
-| Bakery Business Plan Kit (cuando esté) | $39 | `https://aichef.pro/en/digital-products/bakery-business-plan/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_BAKERY_BUSINESS_PLAN` |
+| **Restaurant Business Plan Kit** | $39 | `https://aichef.pro/en/digital-products/restaurant-business-plan/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_RESTAURANT_BUSINESS_PLAN` |
+| **Bakery Business Plan Kit** | $39 | `https://aichef.pro/en/digital-products/bakery-business-plan/access?session_id={CHECKOUT_SESSION_ID}` | `VITE_STRIPE_PAYMENT_LINK_BAKERY_BUSINESS_PLAN` |
 
 Descripciones (prosa):
 - **Food Truck Business Plan Kit** — «A ready-to-edit food truck business plan in Word (10 sections, written for a US truck)
@@ -49,10 +49,21 @@ Descripciones (prosa):
 - Hecho: F1 delta, F3, F2 completa (código común generalizado con `BP_CONJUNTO=restpan`; FT/CAF regenerados idénticos en
   canónico; 6 tandas Sonnet; aplicar_en + calibración + docx en el VPS: G1-G9 + autotest 20/20 + idempotencia 0;
   `TODO_CIFRA` rellenados). Caso base: REST 125 covers × $28, ventas $1,085,000, neto 7,9 %, DSCR 2,50×, holgura 21,5 % ·
-  PAN 210 transacciones × $10, $651,000, neto 6,0 %, DSCR 2,44×, holgura 16,9 %. En curso: revisión adversarial
-  (`business-plans-en-2/REVISION-FINAL.md`) y una ronda de arreglos.
+  PAN 210 transacciones × $10, $651,000, neto 6,0 %, DSCR 2,44×, holgura 16,9 %. Revisión adversarial (0 bloqueantes,
+  2 mayores: licencia de alcohol pedida un día antes de abrir → fase 2; resto de B1 en Instructions) y ronda de arreglos
+  hechas (`3aa6376d`): G1-G9 + autotest + idempotencia verdes; regresión FT/CAF idéntica en canónico. **Listos a falta del
+  Payment Link.** ≈ 4,0 M tokens de subagentes.
 - Sin deploy preview: Netlify solo construye PR contra `main`. Se tendrá al fusionar el #110 (el #111 se reapunta a `main`).
 - Correos EN: restaurant **9-nov**, bakery **14-nov** 14:00Z.
+
+**Orden de publicación:** primero el #110 (merge commit); el #111 se reapunta solo a `main` al borrarse la rama base (si
+no, `gh pr edit 111 --base main`), obtiene su deploy preview y entonces se pasan sus gates contra preview (`tienda-gate
+--base`, `--es-identico --esperadas /plan-negocio-bar-restaurante,/plan-negocio-panaderia`, `gate-flujo-postpago --only`
+×2, `miselup-gate --base`, `datafast-gate --base`) antes de fusionarlo. Con los 4 links a la vez: sync en la rama del #111
+(contiene la del #110) y fusionar solo el #111 con merge commit (cierra el #110 solo), como el 4-oct con el #109.
+
+Restos menores aceptados en FT/CAF (no bloquean): «$50,000» con símbolo en una nota de `Financing!C9` (cifra legal del
+SBA Microloan) y sin mención a la guarantee fee de la SBA (sí la llevan REST/PAN).
 
 ## 3. Pasos para publicar (cuando John pase los links)
 
