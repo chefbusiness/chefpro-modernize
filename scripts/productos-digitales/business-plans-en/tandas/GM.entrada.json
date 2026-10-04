@@ -1,0 +1,4750 @@
+{
+ "tanda": "GM",
+ "salida": "scripts/productos-digitales/business-plans-en/textos_en/GM.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 427,
+ "n_palabras": 4592,
+ "pistas": {
+  "P01": "D8: añade una vez que los importes van «in your currency» (sin símbolo)",
+  "P02": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P03": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P04": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P05": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P06": "A3: el EN no afirma «verified» en 50 estados: «a starting point; requirements vary by state, county and city»",
+  "P07": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P08": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P09": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P10": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P11": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P12": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P13": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P14": "D9: US: el sales tax pagado es coste (input tax recuperable = 0); UK: 20 % si está registrado en VAT",
+  "P15": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P16": "D7: los valores de la lista son «Yes» / «No»",
+  "P17": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P18": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P19": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P20": "SPEC §4.1 línea 4: sin divisores 1,10/1,21 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.",
+  "P21": "SPEC §4.1: estacionalidad «your area» (sin agosto/costa de España)",
+  "P22": "D13: DSCR límite 1.15× y objetivo 1.25×; NUNCA «SBA minimum»"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons"
+ },
+ "pestanas_es_en": {
+  "FTP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "CAFP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "FTC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Truck & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  },
+  "CAFC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local": "Phase 2 - Location & Permits",
+   "F3 - Equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Food Truck Business Plan Kit by AI Chef Pro.",
+  "Este fichero forma parte del producto «plan-negocio-cafeteria» de AI Chef Pro.": "This file is part of the Coffee Shop Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Pay periods per year",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "SBA-guaranteed loan (7(a), through your bank)",
+  "Préstamo participativo ENISA": "SBA Microloan (nonprofit intermediaries, up to $50,000)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12"
+ },
+ "cadenas": [
+  {
+   "id": "c0002",
+   "es": "SUPUESTOS — aquí se teclean las TASAS y los DRIVERS del modelo",
+   "donde": [
+    "FTP · 0. Supuestos!A1",
+    "CAFP · 0. Supuestos!A1"
+   ]
+  },
+  {
+   "id": "c0003",
+   "es": "Cambia las celdas VERDES: el resto del libro se recalcula solo. Las partidas de gasto se teclean en su hoja (también en verde) y no se repiten aquí.",
+   "donde": [
+    "FTP · 0. Supuestos!A2",
+    "CAFP · 0. Supuestos!A2"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0004",
+   "es": "ACTIVIDAD",
+   "donde": [
+    "FTP · 0. Supuestos!A3",
+    "CAFP · 0. Supuestos!A3"
+   ]
+  },
+  {
+   "id": "c0005",
+   "es": "Clientes/día (media del año 1)",
+   "donde": [
+    "FTP · 0. Supuestos!A4",
+    "CAFP · 0. Supuestos!A4"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0009",
+   "es": "Días de apertura al año",
+   "donde": [
+    "FTP · 0. Supuestos!A6",
+    "FTP · PyG 3 Años!A8",
+    "FTP · Punto Equilibrio!A11",
+    "FTP · Escenarios!A7",
+    "CAFP · 0. Supuestos!A6",
+    "CAFP · PyG 3 Años!A8",
+    "… y 2 apariciones más"
+   ]
+  },
+  {
+   "id": "c0011",
+   "es": "Crecimiento de volumen del año 2",
+   "donde": [
+    "FTP · 0. Supuestos!A7",
+    "CAFP · 0. Supuestos!A7"
+   ]
+  },
+  {
+   "id": "c0013",
+   "es": "Crecimiento de volumen del año 3",
+   "donde": [
+    "FTP · 0. Supuestos!A8",
+    "CAFP · 0. Supuestos!A8"
+   ]
+  },
+  {
+   "id": "c0016",
+   "es": "MIX Y COSTE DE MERCANCÍA",
+   "donde": [
+    "FTP · 0. Supuestos!A10",
+    "CAFP · 0. Supuestos!A10"
+   ]
+  },
+  {
+   "id": "c0017",
+   "es": "Ventas de COMIDA sobre el total",
+   "donde": [
+    "FTP · 0. Supuestos!A11",
+    "CAFP · 0. Supuestos!A11"
+   ]
+  },
+  {
+   "id": "c0018",
+   "es": "Peso de la COMIDA sobre el total de ventas. Es un INPUT: cámbialo aquí y el P&L, la tesorería y el IVA repercutido se recalculan solos",
+   "donde": [
+    "FTP · 0. Supuestos!C11",
+    "CAFP · 0. Supuestos!C11"
+   ],
+   "fila": "Ventas de COMIDA sobre el total",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0019",
+   "es": "Ventas de BEBIDA sobre el total",
+   "donde": [
+    "FTP · 0. Supuestos!A12",
+    "CAFP · 0. Supuestos!A12"
+   ]
+  },
+  {
+   "id": "c0020",
+   "es": "Se calcula como el resto: comida + bebida = 100 %",
+   "donde": [
+    "FTP · 0. Supuestos!C12",
+    "CAFP · 0. Supuestos!C12"
+   ],
+   "fila": "Ventas de BEBIDA sobre el total"
+  },
+  {
+   "id": "c0021",
+   "es": "Coste de mercancía sobre las ventas de COMIDA",
+   "donde": [
+    "FTP · 0. Supuestos!A13",
+    "CAFP · 0. Supuestos!A13"
+   ]
+  },
+  {
+   "id": "c0023",
+   "es": "Coste de mercancía sobre las ventas de BEBIDA",
+   "donde": [
+    "FTP · 0. Supuestos!A14",
+    "CAFP · 0. Supuestos!A14"
+   ]
+  },
+  {
+   "id": "c0025",
+   "es": "Consumibles sobre ventas",
+   "donde": [
+    "FTP · 0. Supuestos!A15",
+    "CAFP · 0. Supuestos!A15"
+   ]
+  },
+  {
+   "id": "c0027",
+   "es": "Ventas por delivery sobre el total",
+   "donde": [
+    "FTP · 0. Supuestos!A16",
+    "CAFP · 0. Supuestos!A16"
+   ]
+  },
+  {
+   "id": "c0029",
+   "es": "Comisión de la plataforma de delivery",
+   "donde": [
+    "FTP · 0. Supuestos!A17",
+    "CAFP · 0. Supuestos!A17"
+   ]
+  },
+  {
+   "id": "c0031",
+   "es": "Comisión de los medios de pago",
+   "donde": [
+    "FTP · 0. Supuestos!A18",
+    "CAFP · 0. Supuestos!A18"
+   ]
+  },
+  {
+   "id": "c0033",
+   "es": "PERSONAL",
+   "donde": [
+    "FTP · 0. Supuestos!A19",
+    "CAFP · 0. Supuestos!A19"
+   ]
+  },
+  {
+   "id": "c0035",
+   "es": "Contingencias comunes + AT/EP + desempleo + FOGASA + FP; ajusta a tu convenio y bonificaciones",
+   "donde": [
+    "FTP · 0. Supuestos!C20",
+    "CAFP · 0. Supuestos!C20"
+   ],
+   "fila": "Seguridad Social a cargo de la empresa",
+   "valor_us": {
+    "FTP": 0.1,
+    "CAFP": 0.1
+   },
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0037",
+   "es": "Salario bruto anual = bruto mensual × pagas",
+   "donde": [
+    "FTP · 0. Supuestos!C21",
+    "CAFP · 0. Supuestos!C21"
+   ],
+   "fila": "Número de pagas anuales",
+   "valor_us": {
+    "FTP": 12,
+    "CAFP": 12
+   },
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0039",
+   "es": "SMI 2026: 17.094 € al año (1.221 €/mes en 14 pagas), suelo legal por jornada completa. Comprueba el importe vigente si presentas el plan en otro ejercicio",
+   "donde": [
+    "FTP · 0. Supuestos!C22",
+    "CAFP · 0. Supuestos!C22"
+   ],
+   "fila": "SMI anual de referencia (€)",
+   "valor_us": {
+    "FTP": 15080,
+    "CAFP": 15080
+   },
+   "pistas": [
+    "P03",
+    "P05",
+    "P04",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0040",
+   "es": "LOCAL Y FIJOS",
+   "donde": [
+    "FTP · 0. Supuestos!A23",
+    "CAFP · 0. Supuestos!A23"
+   ]
+  },
+  {
+   "id": "c0041",
+   "es": "Alquiler mensual del local (€)",
+   "donde": [
+    "FTP · 0. Supuestos!A24",
+    "CAFP · 0. Supuestos!A24"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0045",
+   "es": "Suministros mensuales de luz, agua y gas (€)",
+   "donde": [
+    "FTP · 0. Supuestos!A26",
+    "CAFP · 0. Supuestos!A26"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0047",
+   "es": "Seguros (€/año)",
+   "donde": [
+    "FTP · 0. Supuestos!A27",
+    "CAFP · 0. Supuestos!A27"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0049",
+   "es": "Varios e imprevistos sobre ventas",
+   "donde": [
+    "FTP · 0. Supuestos!A28",
+    "CAFP · 0. Supuestos!A28"
+   ]
+  },
+  {
+   "id": "c0051",
+   "es": "FINANCIACIÓN",
+   "donde": [
+    "FTP · 0. Supuestos!A29",
+    "CAFP · 0. Supuestos!A29"
+   ]
+  },
+  {
+   "id": "c0052",
+   "es": "Recursos propios aportados (€)",
+   "donde": [
+    "FTP · 0. Supuestos!A30",
+    "CAFP · 0. Supuestos!A30"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0054",
+   "es": "Préstamo bancario solicitado (€)",
+   "donde": [
+    "FTP · 0. Supuestos!A31",
+    "CAFP · 0. Supuestos!A31"
+   ],
+   "pistas": [
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0056",
+   "es": "Tipo de interés nominal anual",
+   "donde": [
+    "FTP · 0. Supuestos!A32",
+    "FTP · Financiación!A21",
+    "CAFP · 0. Supuestos!A32",
+    "CAFP · Financiación!A21"
+   ]
+  },
+  {
+   "id": "c0058",
+   "es": "Plazo del préstamo (años)",
+   "donde": [
+    "FTP · 0. Supuestos!A33",
+    "CAFP · 0. Supuestos!A33"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0062",
+   "es": "Fondo de maniobra (meses de costes fijos)",
+   "donde": [
+    "FTP · 0. Supuestos!A35",
+    "CAFP · 0. Supuestos!A35"
+   ]
+  },
+  {
+   "id": "c0064",
+   "es": "FISCAL",
+   "donde": [
+    "FTP · 0. Supuestos!A36",
+    "CAFP · 0. Supuestos!A36"
+   ]
+  },
+  {
+   "id": "c0066",
+   "es": "Art. 29.1 LIS: el PRIMER ejercicio con base imponible positiva y el SIGUIENTE. El libro lo aproxima contando los dos primeros ejercicios con base positiva: coincide con la ley salvo que entre ellos haya un ejercicio en pérdidas",
+   "donde": [
+    "FTP · 0. Supuestos!C37",
+    "CAFP · 0. Supuestos!C37"
+   ],
+   "fila": "Impuesto de Sociedades, nueva creación",
+   "valor_us": {
+    "FTP": 0.25,
+    "CAFP": 0.25
+   },
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0068",
+   "es": "A partir del tercer ejercicio con base positiva. Es el tipo general del art. 29.1 LIS: si tu cifra de negocios queda por debajo de 1 M € (microempresa) o de 10 M € (reducida dimensión), desde 2025 hay tipos más bajos que se implantan de forma gradual; confirma el de tu ejercicio con tu asesor y cámbialo aquí",
+   "donde": [
+    "FTP · 0. Supuestos!C38",
+    "CAFP · 0. Supuestos!C38"
+   ],
+   "fila": "Impuesto de Sociedades, tipo general",
+   "valor_us": {
+    "FTP": 0.25,
+    "CAFP": 0.25
+   },
+   "pistas": [
+    "P03",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0070",
+   "es": "Tipo reducido de hostelería",
+   "donde": [
+    "FTP · 0. Supuestos!C39",
+    "CAFP · 0. Supuestos!C39"
+   ],
+   "fila": "IVA repercutido de restauración",
+   "valor_us": {
+    "FTP": 0.08,
+    "CAFP": 0.08
+   }
+  },
+  {
+   "id": "c0072",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por el alcohol que sale por delivery (es una entrega de bienes). El alcohol servido en sala va al reducido: su tipo está en el bloque de desglose del IVA. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. El libro manda al general sólo el alcohol: si compras refrescos o zumos con azúcares añadidos, su factura también va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "donde": [
+    "FTP · 0. Supuestos!C40",
+    "CAFP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": {
+    "FTP": 0.08,
+    "CAFP": 0.08
+   },
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0074",
+   "es": "Recuperable vía modelo 303, pero hay que adelantarlo",
+   "donde": [
+    "FTP · 0. Supuestos!C41",
+    "CAFP · 0. Supuestos!C41"
+   ],
+   "fila": "IVA soportado en compras e inversión",
+   "valor_us": {
+    "FTP": 0,
+    "CAFP": 0
+   },
+   "pistas": [
+    "P03",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0076",
+   "es": "Pérdidas pendientes de compensar al empezar (art. 26 LIS)",
+   "donde": [
+    "FTP · 0. Supuestos!C42",
+    "CAFP · 0. Supuestos!C42"
+   ],
+   "fila": "Bases negativas de ejercicios anteriores (€)",
+   "valor_us": {
+    "FTP": 0,
+    "CAFP": 0
+   },
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0077",
+   "es": "AMORTIZACIÓN",
+   "donde": [
+    "FTP · 0. Supuestos!A43",
+    "CAFP · 0. Supuestos!A43"
+   ]
+  },
+  {
+   "id": "c0078",
+   "es": "Vida útil de obra e instalaciones (años)",
+   "donde": [
+    "FTP · 0. Supuestos!A44",
+    "CAFP · 0. Supuestos!A44"
+   ]
+  },
+  {
+   "id": "c0080",
+   "es": "Vida útil de maquinaria y mobiliario (años)",
+   "donde": [
+    "FTP · 0. Supuestos!A45",
+    "CAFP · 0. Supuestos!A45"
+   ]
+  },
+  {
+   "id": "c0082",
+   "es": "CRECIMIENTO Y ACTUALIZACIÓN DE COSTES",
+   "donde": [
+    "FTP · 0. Supuestos!A47",
+    "CAFP · 0. Supuestos!A47"
+   ]
+  },
+  {
+   "id": "c0083",
+   "es": "Subida anual de los costes fijos",
+   "donde": [
+    "FTP · 0. Supuestos!A48",
+    "CAFP · 0. Supuestos!A48"
+   ]
+  },
+  {
+   "id": "c0084",
+   "es": "A CERO: las tres columnas están en euros del año 1 (términos reales). Súbela si quieres proyectar en euros corrientes",
+   "donde": [
+    "FTP · 0. Supuestos!C48",
+    "CAFP · 0. Supuestos!C48"
+   ],
+   "fila": "Subida anual de los costes fijos",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0085",
+   "es": "ARRANQUE Y AFORO",
+   "donde": [
+    "FTP · 0. Supuestos!A49",
+    "CAFP · 0. Supuestos!A49"
+   ]
+  },
+  {
+   "id": "c0088",
+   "es": "Actividad del mes 1 sobre la de crucero",
+   "donde": [
+    "FTP · 0. Supuestos!A52",
+    "CAFP · 0. Supuestos!A52"
+   ]
+  },
+  {
+   "id": "c0090",
+   "es": "Meses hasta alcanzar el régimen de crucero",
+   "donde": [
+    "FTP · 0. Supuestos!A53",
+    "CAFP · 0. Supuestos!A53"
+   ]
+  },
+  {
+   "id": "c0091",
+   "es": "La rampa sube en línea recta desde el porcentaje de arriba hasta el 100 % en este número de meses",
+   "donde": [
+    "FTP · 0. Supuestos!C53",
+    "CAFP · 0. Supuestos!C53"
+   ],
+   "fila": "Meses hasta alcanzar el régimen de crucero"
+  },
+  {
+   "id": "c0096",
+   "es": "COBROS, PAGOS Y DESGLOSE DEL IVA",
+   "donde": [
+    "FTP · 0. Supuestos!A57",
+    "CAFP · 0. Supuestos!A57"
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0097",
+   "es": "Días medios de cobro",
+   "donde": [
+    "FTP · 0. Supuestos!A58",
+    "CAFP · 0. Supuestos!A58"
+   ]
+  },
+  {
+   "id": "c0099",
+   "es": "Días medios de pago a proveedor",
+   "donde": [
+    "FTP · 0. Supuestos!A59",
+    "CAFP · 0. Supuestos!A59"
+   ]
+  },
+  {
+   "id": "c0100",
+   "es": "Lo que te financian tus proveedores. Es lo primero que se pierde si te retrasas en un pago",
+   "donde": [
+    "FTP · 0. Supuestos!C59",
+    "CAFP · 0. Supuestos!C59"
+   ],
+   "fila": "Días medios de pago a proveedor",
+   "valor_us": {
+    "FTP": 7,
+    "CAFP": 14
+   }
+  },
+  {
+   "id": "c0101",
+   "es": "Mes de la paga extra de verano",
+   "donde": [
+    "FTP · 0. Supuestos!A60",
+    "CAFP · 0. Supuestos!A60"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0102",
+   "es": "Mes del año (1-12) en el que sale de caja la primera paga extra",
+   "donde": [
+    "FTP · 0. Supuestos!C60",
+    "CAFP · 0. Supuestos!C60"
+   ],
+   "fila": "Mes de la paga extra de verano",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0103",
+   "es": "Mes de la paga extra de Navidad",
+   "donde": [
+    "FTP · 0. Supuestos!A61",
+    "CAFP · 0. Supuestos!A61"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0104",
+   "es": "Mes del año (1-12) en el que sale de caja la segunda paga extra",
+   "donde": [
+    "FTP · 0. Supuestos!C61",
+    "CAFP · 0. Supuestos!C61"
+   ],
+   "fila": "Mes de la paga extra de Navidad",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0105",
+   "es": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "donde": [
+    "FTP · 0. Supuestos!A62",
+    "CAFP · 0. Supuestos!A62"
+   ]
+  },
+  {
+   "id": "c0109",
+   "es": "UMBRALES Y SUELOS DE CONTROL",
+   "donde": [
+    "FTP · 0. Supuestos!A64",
+    "CAFP · 0. Supuestos!A64"
+   ]
+  },
+  {
+   "id": "c0111",
+   "es": "Por debajo de 1 el negocio no genera para pagar el préstamo. Ponlo en el covenant que te exija tu banco",
+   "donde": [
+    "FTP · 0. Supuestos!C65",
+    "CAFP · 0. Supuestos!C65"
+   ],
+   "fila": "DSCR mínimo aceptable",
+   "valor_us": {
+    "FTP": 1.15,
+    "CAFP": 1.15
+   },
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0113",
+   "es": "Lo que suele pedir una entidad para dar el préstamo sin garantías adicionales",
+   "donde": [
+    "FTP · 0. Supuestos!C66",
+    "CAFP · 0. Supuestos!C66"
+   ],
+   "fila": "DSCR objetivo (verde)",
+   "valor_us": {
+    "FTP": 1.25,
+    "CAFP": 1.25
+   },
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0114",
+   "es": "Holgura mínima sobre el punto de equilibrio",
+   "donde": [
+    "FTP · 0. Supuestos!A67",
+    "CAFP · 0. Supuestos!A67"
+   ]
+  },
+  {
+   "id": "c0115",
+   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "donde": [
+    "FTP · 0. Supuestos!C67",
+    "CAFP · 0. Supuestos!C67"
+   ],
+   "fila": "Holgura mínima sobre el punto de equilibrio",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0119",
+   "es": "Importe no válido",
+   "donde": [
+    "FTP · 0. Supuestos!B5 B22 B24 B26 B27 B30 B31 B42 B65 B66 B68 (dv-error-titulo)",
+    "FTP · Inversión Inicial!B7 B8 B9 B10 B11 B12 B13 B14 B15 B16 B17 B18 B19 B20 (dv-error-titulo)",
+    "FTP · PyG 3 Años!B26 B27 B28 B29 B30 B31 B32 B33 B34 B35 (dv-error-titulo)",
+    "FTP · Escenarios!B6 D6 (dv-error-titulo)",
+    "FTP · Personal!B5 B6 B8 B11 B12 B16 B17 B18 D5 D6 D7 D8 (dv-error-titulo)",
+    "FTP · Financiación!B8 B9 B10 B11 B42 (dv-error-titulo)",
+    "… y 7 apariciones más"
+   ],
+   "max_len": 32
+  },
+  {
+   "id": "c0120",
+   "es": "Escribe un número mayor o igual que 0.",
+   "donde": [
+    "FTP · 0. Supuestos!B5 B22 B24 B26 B27 B30 B31 B42 B65 B66 B68 (dv-error)",
+    "FTP · Inversión Inicial!B7 B8 B9 B10 B11 B12 B13 B14 B15 B16 B17 B18 B19 B20 (dv-error)",
+    "FTP · PyG 3 Años!B26 B27 B28 B29 B30 B31 B32 B33 B34 B35 (dv-error)",
+    "FTP · Escenarios!B6 D6 (dv-error)",
+    "FTP · Personal!B5 B6 B8 B11 B12 B16 B17 B18 D5 D6 D7 D8 (dv-error)",
+    "FTP · Financiación!B8 B9 B10 B11 B42 (dv-error)",
+    "… y 7 apariciones más"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0121",
+   "es": "Porcentaje no válido",
+   "donde": [
+    "FTP · 0. Supuestos!B7 B8 B11 B13 B14 B15 B16 B17 B18 B20 B28 B32 B37 B38 B39 B40 B41 B48 B52 B55 B62 B63 B67 (dv-error-titulo)",
+    "FTP · PyG 3 Años!E51 E53 E54 E55 E56 (dv-error-titulo)",
+    "FTP · Personal!C5 C6 C7 C8 (dv-error-titulo)",
+    "FTP · Tesorería 12 meses!B5 C5 D5 E5 F5 G5 H5 I5 J5 K5 L5 M5 (dv-error-titulo)",
+    "FTP · Financiación!B17 (dv-error-titulo)",
+    "CAFP · 0. Supuestos!B7 B8 B11 B13 B14 B15 B16 B17 B18 B20 B28 B32 B37 B38 B39 B40 B41 B48 B52 B55 B62 B63 B67 (dv-error-titulo)",
+    "… y 4 apariciones más"
+   ],
+   "max_len": 32
+  },
+  {
+   "id": "c0122",
+   "es": "Escribe un porcentaje entre 0 y 1 (0,35 = 35 %).",
+   "donde": [
+    "FTP · 0. Supuestos!B7 B8 B11 B13 B14 B15 B16 B17 B18 B20 B28 B32 B37 B38 B39 B40 B41 B48 B52 B55 B62 B63 B67 (dv-error)",
+    "FTP · PyG 3 Años!E51 E53 E54 E55 E56 (dv-error)",
+    "FTP · Personal!C5 C6 C7 C8 (dv-error)",
+    "FTP · Tesorería 12 meses!B5 C5 D5 E5 F5 G5 H5 I5 J5 K5 L5 M5 (dv-error)",
+    "FTP · Financiación!B17 (dv-error)",
+    "CAFP · 0. Supuestos!B7 B8 B11 B13 B14 B15 B16 B17 B18 B20 B28 B32 B37 B38 B39 B40 B41 B48 B52 B55 B62 B63 B67 (dv-error)",
+    "… y 4 apariciones más"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0123",
+   "es": "Días fuera de rango",
+   "donde": [
+    "FTP · 0. Supuestos!B6 B58 B59 (dv-error-titulo)",
+    "FTP · Escenarios!B7 D7 (dv-error-titulo)",
+    "CAFP · 0. Supuestos!B6 B58 B59 (dv-error-titulo)",
+    "CAFP · Escenarios!B7 D7 (dv-error-titulo)"
+   ],
+   "max_len": 32
+  },
+  {
+   "id": "c0124",
+   "es": "Los días van de 1 a 365.",
+   "donde": [
+    "FTP · 0. Supuestos!B6 B58 B59 (dv-error)",
+    "FTP · Escenarios!B7 D7 (dv-error)",
+    "CAFP · 0. Supuestos!B6 B58 B59 (dv-error)",
+    "CAFP · Escenarios!B7 D7 (dv-error)"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0125",
+   "es": "Recuento no válido",
+   "donde": [
+    "FTP · 0. Supuestos!B34 (dv-error-titulo)",
+    "FTP · 0. Supuestos!B53 B54 (dv-error-titulo)",
+    "FTP · 0. Supuestos!B60 B61 (dv-error-titulo)",
+    "FTP · 0. Supuestos!B33 (dv-error-titulo)",
+    "FTP · 0. Supuestos!B44 B45 (dv-error-titulo)",
+    "FTP · 0. Supuestos!B4 B25 B35 B51 (dv-error-titulo)",
+    "… y 11 apariciones más"
+   ],
+   "max_len": 32
+  },
+  {
+   "id": "c0126",
+   "es": "Años enteros de carencia, de 0 a 15. Si iguala o supera al plazo, la hoja la anula.",
+   "donde": [
+    "FTP · 0. Supuestos!B34 (dv-error)",
+    "CAFP · 0. Supuestos!B34 (dv-error)"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0127",
+   "es": "Número entero de meses (0 a 24).",
+   "donde": [
+    "FTP · 0. Supuestos!B53 B54 (dv-error)",
+    "CAFP · 0. Supuestos!B53 B54 (dv-error)"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0128",
+   "es": "Mes del año, de 1 a 12.",
+   "donde": [
+    "FTP · 0. Supuestos!B60 B61 (dv-error)",
+    "CAFP · 0. Supuestos!B60 B61 (dv-error)"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0129",
+   "es": "Plazo en años enteros: el cuadro de amortización de este libro llega a 15 años.",
+   "donde": [
+    "FTP · 0. Supuestos!B33 (dv-error)",
+    "CAFP · 0. Supuestos!B33 (dv-error)"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0130",
+   "es": "Vida útil en AÑOS ENTEROS (1 a 50). Los coeficientes máximos son los de la tabla del art. 12.1 LIS.",
+   "donde": [
+    "FTP · 0. Supuestos!B44 B45 (dv-error)",
+    "CAFP · 0. Supuestos!B44 B45 (dv-error)"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0131",
+   "es": "Escribe un número ENTERO de 1 en adelante: esta celda es un recuento y varias fórmulas dividen entre ella.",
+   "donde": [
+    "FTP · 0. Supuestos!B4 B25 B35 B51 (dv-error)",
+    "FTP · Escenarios!B5 D5 (dv-error)",
+    "FTP · Personal!B7 (dv-error)",
+    "CAFP · 0. Supuestos!B4 B25 B35 B51 (dv-error)",
+    "CAFP · Escenarios!B5 D5 (dv-error)"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0132",
+   "es": "Número de pagas al año: 12, 14 o las que fije tu convenio (12 a 16).",
+   "donde": [
+    "FTP · 0. Supuestos!B21 (dv-error)",
+    "CAFP · 0. Supuestos!B21 (dv-error)"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0135",
+   "es": "Inversión Inicial Estimada — España 2026",
+   "donde": [
+    "FTP · Inversión Inicial!A2",
+    "CAFP · Inversión Inicial!A2"
+   ],
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0137",
+   "es": "Concepto",
+   "donde": [
+    "FTP · Inversión Inicial!A5",
+    "FTP · PyG 3 Años!A4",
+    "FTP · Instrucciones!A34",
+    "FTP · Tesorería 12 meses!A4",
+    "FTP · Financiación!A4",
+    "CAFP · Inversión Inicial!A5",
+    "… y 4 apariciones más"
+   ]
+  },
+  {
+   "id": "c0138",
+   "es": "Importe",
+   "donde": [
+    "FTP · Inversión Inicial!B5",
+    "FTP · Financiación!B4",
+    "CAFP · Inversión Inicial!B5",
+    "CAFP · Financiación!B4"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0139",
+   "es": "% s/inversión",
+   "donde": [
+    "FTP · Inversión Inicial!C5",
+    "CAFP · Inversión Inicial!C5"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0140",
+   "es": "Notas",
+   "donde": [
+    "FTP · Inversión Inicial!D5",
+    "FTP · PyG 3 Años!F4",
+    "FTP · Punto Equilibrio!E4",
+    "FTP · Escenarios!E4",
+    "FTP · Personal!J4",
+    "FTP · Financiación!C4",
+    "… y 6 apariciones más"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0141",
+   "es": "¿Lleva IVA?",
+   "donde": [
+    "FTP · Inversión Inicial!E5",
+    "CAFP · Inversión Inicial!E5"
+   ],
+   "fila": "Concepto",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0142",
+   "es": "INVERSIÓN",
+   "donde": [
+    "FTP · Inversión Inicial!A6",
+    "CAFP · Inversión Inicial!A6"
+   ]
+  },
+  {
+   "id": "c0156",
+   "es": "Constitución SL + notaría + registro",
+   "donde": [
+    "FTP · Inversión Inicial!A13",
+    "CAFP · Inversión Inicial!A7"
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0173",
+   "es": "Fianza del alquiler",
+   "donde": [
+    "FTP · Inversión Inicial!A21",
+    "CAFP · Inversión Inicial!A30"
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0174",
+   "es": "Alquiler de los meses previos a la apertura",
+   "donde": [
+    "FTP · Inversión Inicial!A22",
+    "CAFP · Inversión Inicial!A31"
+   ]
+  },
+  {
+   "id": "c0175",
+   "es": "Imprevistos de obra y acondicionamiento",
+   "donde": [
+    "FTP · Inversión Inicial!A23",
+    "CAFP · Inversión Inicial!A32"
+   ]
+  },
+  {
+   "id": "c0176",
+   "es": "FONDO DE MANIOBRA",
+   "donde": [
+    "FTP · Inversión Inicial!A24",
+    "CAFP · Inversión Inicial!A33"
+   ]
+  },
+  {
+   "id": "c0177",
+   "es": "Colchón operativo hasta alcanzar el equilibrio",
+   "donde": [
+    "FTP · Inversión Inicial!A25",
+    "CAFP · Inversión Inicial!A34"
+   ]
+  },
+  {
+   "id": "c0178",
+   "es": "INVERSIÓN TOTAL (suma de los bloques)",
+   "donde": [
+    "FTP · Inversión Inicial!A26",
+    "CAFP · Inversión Inicial!A35"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "CAPEX (inversión sin el fondo de maniobra)",
+   "donde": [
+    "FTP · Inversión Inicial!A27",
+    "CAFP · Inversión Inicial!A36"
+   ]
+  },
+  {
+   "id": "c0180",
+   "es": "Es lo que se compra: obra, equipamiento, lanzamiento y gastos de constitución. El colchón de caja no es inversión, es circulante",
+   "donde": [
+    "FTP · Inversión Inicial!D27",
+    "CAFP · Inversión Inicial!D36"
+   ],
+   "fila": "CAPEX (inversión sin el fondo de maniobra)"
+  },
+  {
+   "id": "c0181",
+   "es": "IVA soportado sobre la inversión (recuperable)",
+   "donde": [
+    "FTP · Inversión Inicial!A28",
+    "CAFP · Inversión Inicial!A37"
+   ],
+   "pistas": [
+    "P03",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0182",
+   "es": "NECESIDAD TOTAL DE CAJA AL ARRANQUE",
+   "donde": [
+    "FTP · Inversión Inicial!A29",
+    "CAFP · Inversión Inicial!A38"
+   ]
+  },
+  {
+   "id": "c0183",
+   "es": "Es la cifra que tiene que cubrir la hoja de Financiación",
+   "donde": [
+    "FTP · Inversión Inicial!D29",
+    "CAFP · Inversión Inicial!D38"
+   ],
+   "fila": "NECESIDAD TOTAL DE CAJA AL ARRANQUE"
+  },
+  {
+   "id": "c0184",
+   "es": "BASES DE AMORTIZACIÓN (no suman a la inversión)",
+   "donde": [
+    "FTP · Inversión Inicial!A30",
+    "CAFP · Inversión Inicial!A39"
+   ]
+  },
+  {
+   "id": "c0185",
+   "es": "Obra, instalaciones y acondicionamiento",
+   "donde": [
+    "FTP · Inversión Inicial!A31",
+    "CAFP · Inversión Inicial!A40"
+   ]
+  },
+  {
+   "id": "c0186",
+   "es": "Maquinaria, mobiliario y equipos",
+   "donde": [
+    "FTP · Inversión Inicial!A32",
+    "CAFP · Inversión Inicial!A41"
+   ]
+  },
+  {
+   "id": "c0187",
+   "es": "Amortización anual del inmovilizado",
+   "donde": [
+    "FTP · Inversión Inicial!A33",
+    "CAFP · Inversión Inicial!A42"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0188",
+   "es": "Marca no válida",
+   "donde": [
+    "FTP · Inversión Inicial!E7:E20 (dv-error-titulo)",
+    "FTC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 (dv-error-titulo)",
+    "FTC · F2 - Vehículo!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error-titulo)",
+    "FTC · F3 - Equipamiento!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error-titulo)",
+    "FTC · F4 - Personal!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 (dv-error-titulo)",
+    "FTC · F5 - Marketing!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error-titulo)",
+    "… y 8 apariciones más"
+   ],
+   "max_len": 32
+  },
+  {
+   "id": "c0189",
+   "es": "Escribe «Sí» o «No»: de esta columna sale el IVA soportado de la inversión.",
+   "donde": [
+    "FTP · Inversión Inicial!E7:E20 (dv-error)",
+    "CAFP · Inversión Inicial!E7:E29 (dv-error)"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P03",
+    "P14",
+    "P15",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0191",
+   "es": "CUENTA DE RESULTADOS PREVISIONAL — 3 AÑOS",
+   "donde": [
+    "FTP · PyG 3 Años!A1",
+    "CAFP · PyG 3 Años!A1"
+   ]
+  },
+  {
+   "id": "c0193",
+   "es": "Año 1",
+   "donde": [
+    "FTP · PyG 3 Años!B4",
+    "FTP · PyG 3 Años!B50",
+    "FTP · Punto Equilibrio!B4",
+    "CAFP · PyG 3 Años!B4",
+    "CAFP · PyG 3 Años!B49",
+    "CAFP · Punto Equilibrio!B4"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0194",
+   "es": "Año 2",
+   "donde": [
+    "FTP · PyG 3 Años!C4",
+    "FTP · PyG 3 Años!C50",
+    "FTP · Punto Equilibrio!C4",
+    "CAFP · PyG 3 Años!C4",
+    "CAFP · PyG 3 Años!C49",
+    "CAFP · Punto Equilibrio!C4"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0195",
+   "es": "Año 3",
+   "donde": [
+    "FTP · PyG 3 Años!D4",
+    "FTP · PyG 3 Años!D50",
+    "FTP · Punto Equilibrio!D4",
+    "CAFP · PyG 3 Años!D4",
+    "CAFP · PyG 3 Años!D49",
+    "CAFP · Punto Equilibrio!D4"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0196",
+   "es": "% s/ventas (año 1)",
+   "donde": [
+    "FTP · PyG 3 Años!E4",
+    "CAFP · PyG 3 Años!E4"
+   ],
+   "fila": "Concepto"
+  },
+  {
+   "id": "c0197",
+   "es": "Tipo de IVA de la línea (%)",
+   "donde": [
+    "FTP · PyG 3 Años!G4",
+    "CAFP · PyG 3 Años!G4"
+   ],
+   "fila": "Concepto",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0198",
+   "es": "INGRESOS",
+   "donde": [
+    "FTP · PyG 3 Años!A5",
+    "CAFP · PyG 3 Años!A5"
+   ]
+  },
+  {
+   "id": "c0199",
+   "es": "Clientes/día (media)",
+   "donde": [
+    "FTP · PyG 3 Años!A6",
+    "CAFP · PyG 3 Años!A6"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0200",
+   "es": "El crecimiento de los años 2 y 3 está en la hoja de Supuestos",
+   "donde": [
+    "FTP · PyG 3 Años!F6",
+    "CAFP · PyG 3 Años!F6"
+   ],
+   "fila": "Clientes/día (media)"
+  },
+  {
+   "id": "c0201",
+   "es": "Ticket medio sin IVA",
+   "donde": [
+    "FTP · PyG 3 Años!A7",
+    "FTP · Punto Equilibrio!A8",
+    "FTP · Escenarios!A6",
+    "CAFP · PyG 3 Años!A7",
+    "CAFP · Punto Equilibrio!A8",
+    "CAFP · Escenarios!A6"
+   ],
+   "pistas": [
+    "P03",
+    "P17",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0202",
+   "es": "Constante en euros del año 1: una subida de precios es una decisión aparte",
+   "donde": [
+    "FTP · PyG 3 Años!F7",
+    "CAFP · PyG 3 Años!F7"
+   ],
+   "fila": "Ticket medio sin IVA",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0203",
+   "es": "INGRESOS TOTALES (sin IVA)",
+   "donde": [
+    "FTP · PyG 3 Años!A9",
+    "CAFP · PyG 3 Años!A9"
+   ],
+   "pistas": [
+    "P03",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0208",
+   "es": "COSTES VARIABLES",
+   "donde": [
+    "FTP · PyG 3 Años!A12",
+    "CAFP · PyG 3 Años!A12"
+   ]
+  },
+  {
+   "id": "c0209",
+   "es": "Coste de mercancía — comida",
+   "donde": [
+    "FTP · PyG 3 Años!A13",
+    "FTP · Escenarios!A9",
+    "CAFP · PyG 3 Años!A13",
+    "CAFP · Escenarios!A9"
+   ]
+  },
+  {
+   "id": "c0210",
+   "es": "Coste de mercancía — bebida",
+   "donde": [
+    "FTP · PyG 3 Años!A14",
+    "FTP · Escenarios!A10",
+    "CAFP · PyG 3 Años!A14",
+    "CAFP · Escenarios!A10"
+   ]
+  },
+  {
+   "id": "c0211",
+   "es": "Consumibles y envases",
+   "donde": [
+    "FTP · PyG 3 Años!A15",
+    "FTP · Escenarios!A11",
+    "CAFP · PyG 3 Años!A15",
+    "CAFP · Escenarios!A11"
+   ]
+  },
+  {
+   "id": "c0212",
+   "es": "Comisiones de delivery",
+   "donde": [
+    "FTP · PyG 3 Años!A16",
+    "FTP · Escenarios!A12",
+    "CAFP · PyG 3 Años!A16",
+    "CAFP · Escenarios!A12"
+   ]
+  },
+  {
+   "id": "c0213",
+   "es": "Sobre las ventas DEL CANAL. Con 0 % de delivery en Supuestos, esta línea vale cero",
+   "donde": [
+    "FTP · PyG 3 Años!F16",
+    "CAFP · PyG 3 Años!F16"
+   ],
+   "fila": "Comisiones de delivery"
+  },
+  {
+   "id": "c0214",
+   "es": "Comisiones de los medios de pago",
+   "donde": [
+    "FTP · PyG 3 Años!A17",
+    "FTP · Escenarios!A13",
+    "CAFP · PyG 3 Años!A17",
+    "CAFP · Escenarios!A13"
+   ]
+  },
+  {
+   "id": "c0215",
+   "es": "Las comisiones de los medios de pago están EXENTAS de IVA (art. 20.Uno.18 LIVA): no se deduce nada por ellas",
+   "donde": [
+    "FTP · PyG 3 Años!F17",
+    "CAFP · PyG 3 Años!F17"
+   ],
+   "fila": "Comisiones de los medios de pago",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0216",
+   "es": "Varios e imprevistos",
+   "donde": [
+    "FTP · PyG 3 Años!A18",
+    "FTP · Escenarios!A14",
+    "CAFP · PyG 3 Años!A18",
+    "CAFP · Escenarios!A14"
+   ]
+  },
+  {
+   "id": "c0217",
+   "es": "TOTAL COSTES VARIABLES",
+   "donde": [
+    "FTP · PyG 3 Años!A19",
+    "FTP · Escenarios!A15",
+    "CAFP · PyG 3 Años!A19",
+    "CAFP · Escenarios!A15"
+   ]
+  },
+  {
+   "id": "c0218",
+   "es": "MARGEN BRUTO",
+   "donde": [
+    "FTP · PyG 3 Años!A20",
+    "FTP · Escenarios!A16",
+    "CAFP · PyG 3 Años!A20",
+    "CAFP · Escenarios!A16"
+   ]
+  },
+  {
+   "id": "c0219",
+   "es": "COSTES FIJOS",
+   "donde": [
+    "FTP · PyG 3 Años!A21",
+    "CAFP · PyG 3 Años!A21"
+   ]
+  },
+  {
+   "id": "c0222",
+   "es": "Personal (nóminas + Seguridad Social)",
+   "donde": [
+    "FTP · PyG 3 Años!A23",
+    "CAFP · PyG 3 Años!A23"
+   ],
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0223",
+   "es": "Sale de la hoja de Personal: es el MISMO número, no una estimación aparte. Los años 2 y 3 suman las INCORPORACIONES declaradas en esa hoja, no un porcentaje de volumen",
+   "donde": [
+    "FTP · PyG 3 Años!F23",
+    "CAFP · PyG 3 Años!F23"
+   ],
+   "fila": "Personal (nóminas + Seguridad Social)"
+  },
+  {
+   "id": "c0224",
+   "es": "Suministros (luz, agua, gas)",
+   "donde": [
+    "FTP · PyG 3 Años!A24",
+    "CAFP · PyG 3 Años!A24"
+   ]
+  },
+  {
+   "id": "c0226",
+   "es": "Seguros (RC + multirriesgo)",
+   "donde": [
+    "FTP · PyG 3 Años!A25",
+    "CAFP · PyG 3 Años!A25"
+   ]
+  },
+  {
+   "id": "c0227",
+   "es": "Las operaciones de seguro están EXENTAS de IVA (art. 20.Uno.16 LIVA): la prima no lleva IVA deducible",
+   "donde": [
+    "FTP · PyG 3 Años!F25",
+    "CAFP · PyG 3 Años!F25"
+   ],
+   "fila": "Seguros (RC + multirriesgo)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0230",
+   "es": "Marketing y publicidad",
+   "donde": [
+    "FTP · PyG 3 Años!A28",
+    "CAFP · PyG 3 Años!A28"
+   ]
+  },
+  {
+   "id": "c0231",
+   "es": "Gestoría + contabilidad",
+   "donde": [
+    "FTP · PyG 3 Años!A29",
+    "CAFP · PyG 3 Años!A26"
+   ],
+   "pistas": [
+    "P03",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0233",
+   "es": "Limpieza y productos",
+   "donde": [
+    "FTP · PyG 3 Años!A31",
+    "CAFP · PyG 3 Años!A30"
+   ]
+  },
+  {
+   "id": "c0236",
+   "es": "Desinsectación, desratización y desinfección (DDD)",
+   "donde": [
+    "FTP · PyG 3 Años!A33",
+    "CAFP · PyG 3 Años!A32"
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0238",
+   "es": "Prevención de riesgos laborales y vigilancia de la salud",
+   "donde": [
+    "FTP · PyG 3 Años!A34",
+    "CAFP · PyG 3 Años!A34"
+   ]
+  },
+  {
+   "id": "c0242",
+   "es": "Amortización del inmovilizado",
+   "donde": [
+    "FTP · PyG 3 Años!A36",
+    "CAFP · PyG 3 Años!A35"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Sale de las bases de amortización de la hoja de Inversión: sólo inmovilizado real. NO sube con el IPC: es una cuota sobre el coste HISTÓRICO del inmovilizado",
+   "donde": [
+    "FTP · PyG 3 Años!F36",
+    "CAFP · PyG 3 Años!F35"
+   ],
+   "fila": "Amortización del inmovilizado",
+   "pistas": [
+    "P12",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0244",
+   "es": "Gastos financieros (intereses del préstamo)",
+   "donde": [
+    "FTP · PyG 3 Años!A37",
+    "CAFP · PyG 3 Años!A36"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0245",
+   "es": "Sólo los INTERESES son gasto. La devolución del principal va en la hoja de Tesorería",
+   "donde": [
+    "FTP · PyG 3 Años!F37",
+    "CAFP · PyG 3 Años!F36"
+   ],
+   "fila": "Gastos financieros (intereses del préstamo)"
+  },
+  {
+   "id": "c0246",
+   "es": "TOTAL COSTES FIJOS",
+   "donde": [
+    "FTP · PyG 3 Años!A38",
+    "CAFP · PyG 3 Años!A37"
+   ]
+  },
+  {
+   "id": "c0247",
+   "es": "IVA soportado de los costes variables",
+   "donde": [
+    "FTP · PyG 3 Años!A39",
+    "CAFP · PyG 3 Años!A38"
+   ],
+   "pistas": [
+    "P03",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0248",
+   "es": "Cada línea a SU tipo, leído de la columna de al lado. Es lo que la hoja de Tesorería paga de más a los proveedores y luego se deduce",
+   "donde": [
+    "FTP · PyG 3 Años!F39",
+    "CAFP · PyG 3 Años!F38"
+   ],
+   "fila": "IVA soportado de los costes variables"
+  },
+  {
+   "id": "c0249",
+   "es": "IVA soportado de los costes fijos",
+   "donde": [
+    "FTP · PyG 3 Años!A40",
+    "CAFP · PyG 3 Años!A39"
+   ],
+   "pistas": [
+    "P03",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0250",
+   "es": "RESULTADO ANTES DE IMPUESTOS",
+   "donde": [
+    "FTP · PyG 3 Años!A41",
+    "FTP · Escenarios!A18",
+    "CAFP · PyG 3 Años!A40",
+    "CAFP · Escenarios!A18"
+   ]
+  },
+  {
+   "id": "c0251",
+   "es": "Bases negativas pendientes al inicio",
+   "donde": [
+    "FTP · PyG 3 Años!A42",
+    "CAFP · PyG 3 Años!A41"
+   ],
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0252",
+   "es": "Art. 26 LIS: las pérdidas de un ejercicio se compensan con los beneficios de los siguientes",
+   "donde": [
+    "FTP · PyG 3 Años!F42",
+    "CAFP · PyG 3 Años!F41"
+   ],
+   "fila": "Bases negativas pendientes al inicio",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0253",
+   "es": "Base imponible (después de compensar)",
+   "donde": [
+    "FTP · PyG 3 Años!A43",
+    "CAFP · PyG 3 Años!A42"
+   ]
+  },
+  {
+   "id": "c0254",
+   "es": "Ejercicios con base positiva (acumulado)",
+   "donde": [
+    "FTP · PyG 3 Años!A44",
+    "CAFP · PyG 3 Años!A43"
+   ]
+  },
+  {
+   "id": "c0255",
+   "es": "Tipo de Impuesto de Sociedades aplicado",
+   "donde": [
+    "FTP · PyG 3 Años!A45",
+    "CAFP · PyG 3 Años!A44"
+   ],
+   "pistas": [
+    "P03",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0256",
+   "es": "Art. 29.1 LIS: el 15 % de entidad de nueva creación se aplica al PRIMER ejercicio con base positiva y al SIGUIENTE, no al primer año de vida. El libro lo aproxima contando los dos primeros ejercicios con base positiva",
+   "donde": [
+    "FTP · PyG 3 Años!F45",
+    "CAFP · PyG 3 Años!F44"
+   ],
+   "fila": "Tipo de Impuesto de Sociedades aplicado",
+   "pistas": [
+    "P03",
+    "P19",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0257",
+   "es": "Impuesto de Sociedades",
+   "donde": [
+    "FTP · PyG 3 Años!A46",
+    "FTP · Escenarios!A19",
+    "CAFP · PyG 3 Años!A45",
+    "CAFP · Escenarios!A19"
+   ],
+   "pistas": [
+    "P03",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0258",
+   "es": "Bases negativas pendientes al cierre",
+   "donde": [
+    "FTP · PyG 3 Años!A47",
+    "CAFP · PyG 3 Años!A46"
+   ],
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0259",
+   "es": "RESULTADO NETO",
+   "donde": [
+    "FTP · PyG 3 Años!A48",
+    "FTP · Escenarios!A20",
+    "CAFP · PyG 3 Años!A47",
+    "CAFP · Escenarios!A20"
+   ]
+  },
+  {
+   "id": "c0260",
+   "es": "RATIOS CLAVE",
+   "donde": [
+    "FTP · PyG 3 Años!A49",
+    "CAFP · PyG 3 Años!A48"
+   ]
+  },
+  {
+   "id": "c0261",
+   "es": "Ratio",
+   "donde": [
+    "FTP · PyG 3 Años!A50",
+    "FTP · Instrucciones!A17",
+    "CAFP · PyG 3 Años!A49",
+    "CAFP · Instrucciones!A18"
+   ]
+  },
+  {
+   "id": "c0262",
+   "es": "Umbral",
+   "donde": [
+    "FTP · PyG 3 Años!E50",
+    "FTP · Instrucciones!C17",
+    "CAFP · PyG 3 Años!E49",
+    "CAFP · Instrucciones!C18"
+   ],
+   "fila": "Ratio"
+  },
+  {
+   "id": "c0263",
+   "es": "Comentario",
+   "donde": [
+    "FTP · PyG 3 Años!F50",
+    "CAFP · PyG 3 Años!F49"
+   ],
+   "fila": "Ratio"
+  },
+  {
+   "id": "c0264",
+   "es": "Margen bruto / Ventas",
+   "donde": [
+    "FTP · PyG 3 Años!A51",
+    "FTP · Instrucciones!A22",
+    "CAFP · PyG 3 Años!A50",
+    "CAFP · Instrucciones!A23"
+   ]
+  },
+  {
+   "id": "c0266",
+   "es": "Coste de mercancía (comida + bebida)",
+   "donde": [
+    "FTP · PyG 3 Años!A52",
+    "CAFP · PyG 3 Años!A51"
+   ]
+  },
+  {
+   "id": "c0267",
+   "es": "Coste de mercancía / Ventas",
+   "donde": [
+    "FTP · PyG 3 Años!A53",
+    "FTP · Instrucciones!A18",
+    "CAFP · PyG 3 Años!A52",
+    "CAFP · Instrucciones!A19"
+   ]
+  },
+  {
+   "id": "c0269",
+   "es": "Coste de personal / Ventas",
+   "donde": [
+    "FTP · PyG 3 Años!A54",
+    "FTP · Escenarios!A23",
+    "FTP · Instrucciones!A19",
+    "CAFP · PyG 3 Años!A53",
+    "CAFP · Escenarios!A23",
+    "CAFP · Instrucciones!A20"
+   ]
+  },
+  {
+   "id": "c0273",
+   "es": "Resultado neto / Ventas",
+   "donde": [
+    "FTP · PyG 3 Años!A56",
+    "FTP · Instrucciones!A21",
+    "CAFP · PyG 3 Años!A55",
+    "CAFP · Instrucciones!A22"
+   ]
+  },
+  {
+   "id": "c0275",
+   "es": "Punto de equilibrio alcanzado",
+   "donde": [
+    "FTP · PyG 3 Años!A57",
+    "CAFP · PyG 3 Años!A56"
+   ]
+  },
+  {
+   "id": "c0276",
+   "es": "Compara las ventas de CADA año con el umbral de ese mismo año, que calcula la hoja de Punto de Equilibrio con los costes fijos del año",
+   "donde": [
+    "FTP · PyG 3 Años!F57",
+    "CAFP · PyG 3 Años!F56"
+   ],
+   "fila": "Punto de equilibrio alcanzado"
+  },
+  {
+   "id": "c0277",
+   "es": "Todas las cifras van SIN IVA. Las columnas de los años 2 y 3 están en euros del año 1 salvo que subas la actualización de costes en la hoja de Supuestos. La columna «Tipo de IVA de la línea» dice, en las líneas de VENTA, a qué tipo se repercute cada una, y en las de COSTE a qué tipo se compra la partida. La lee la hoja de Tesorería: los seguros y las comisiones de los medios de pago están exentos, y las nóminas, la amortización y los intereses no llevan IVA.",
+   "donde": [
+    "FTP · PyG 3 Años!A59",
+    "CAFP · PyG 3 Años!A58"
+   ],
+   "pistas": [
+    "P03",
+    "P05",
+    "P17",
+    "P12",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0279",
+   "es": "ANÁLISIS DE PUNTO DE EQUILIBRIO",
+   "donde": [
+    "FTP · Punto Equilibrio!A1",
+    "CAFP · Punto Equilibrio!A1"
+   ]
+  },
+  {
+   "id": "c0281",
+   "es": "Variable",
+   "donde": [
+    "FTP · Punto Equilibrio!A4",
+    "FTC · F1 - Constitución!D11",
+    "FTC · F2 - Vehículo!D13",
+    "FTC · F2 - Vehículo!D14",
+    "CAFP · Punto Equilibrio!A4",
+    "CAFC · F1 - Constitución!D12",
+    "… y 1 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0282",
+   "es": "DATOS BASE POR AÑO",
+   "donde": [
+    "FTP · Punto Equilibrio!A5",
+    "CAFP · Punto Equilibrio!A5"
+   ]
+  },
+  {
+   "id": "c0283",
+   "es": "Costes fijos anuales",
+   "donde": [
+    "FTP · Punto Equilibrio!A6",
+    "CAFP · Punto Equilibrio!A6"
+   ]
+  },
+  {
+   "id": "c0284",
+   "es": "Los MISMOS costes fijos del P&L. Cada año tiene los suyos: por eso el umbral no puede ser uno solo para los tres",
+   "donde": [
+    "FTP · Punto Equilibrio!E6",
+    "CAFP · Punto Equilibrio!E6"
+   ],
+   "fila": "Costes fijos anuales"
+  },
+  {
+   "id": "c0285",
+   "es": "Costes fijos mensuales",
+   "donde": [
+    "FTP · Punto Equilibrio!A7",
+    "CAFP · Punto Equilibrio!A7"
+   ]
+  },
+  {
+   "id": "c0286",
+   "es": "Coste variable por cliente",
+   "donde": [
+    "FTP · Punto Equilibrio!A9",
+    "CAFP · Punto Equilibrio!A9"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0287",
+   "es": "Sale del total de costes variables del P&L, no de una estimación aparte. Incluye los varios e imprevistos, que son un porcentaje de las ventas",
+   "donde": [
+    "FTP · Punto Equilibrio!E9",
+    "CAFP · Punto Equilibrio!E9"
+   ],
+   "fila": "Coste variable por cliente"
+  },
+  {
+   "id": "c0288",
+   "es": "Margen de contribución por cliente",
+   "donde": [
+    "FTP · Punto Equilibrio!A10",
+    "CAFP · Punto Equilibrio!A10"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0289",
+   "es": "Ticket menos coste variable unitario",
+   "donde": [
+    "FTP · Punto Equilibrio!E10",
+    "CAFP · Punto Equilibrio!E10"
+   ],
+   "fila": "Margen de contribución por cliente"
+  },
+  {
+   "id": "c0290",
+   "es": "El mismo calendario que el P&L y que los escenarios",
+   "donde": [
+    "FTP · Punto Equilibrio!E11",
+    "CAFP · Punto Equilibrio!E11"
+   ],
+   "fila": "Días de apertura al año"
+  },
+  {
+   "id": "c0291",
+   "es": "Devolución de principal del año (cuota)",
+   "donde": [
+    "FTP · Punto Equilibrio!A12",
+    "CAFP · Punto Equilibrio!A12"
+   ]
+  },
+  {
+   "id": "c0292",
+   "es": "El principal NO es gasto del P&L, pero sale de la caja. Sin él, el umbral de equilibrio se publica por debajo del real",
+   "donde": [
+    "FTP · Punto Equilibrio!E12",
+    "CAFP · Punto Equilibrio!E12"
+   ],
+   "fila": "Devolución de principal del año (cuota)"
+  },
+  {
+   "id": "c0293",
+   "es": "PUNTO DE EQUILIBRIO CONTABLE (incluye amortización)",
+   "donde": [
+    "FTP · Punto Equilibrio!A13",
+    "CAFP · Punto Equilibrio!A13"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0294",
+   "es": "Clientes necesarios al año",
+   "donde": [
+    "FTP · Punto Equilibrio!A14",
+    "CAFP · Punto Equilibrio!A14"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0295",
+   "es": "Clientes necesarios al día",
+   "donde": [
+    "FTP · Punto Equilibrio!A15",
+    "CAFP · Punto Equilibrio!A15"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0297",
+   "es": "PUNTO DE EQUILIBRIO DE CAJA (incluye la cuota del préstamo)",
+   "donde": [
+    "FTP · Punto Equilibrio!A17",
+    "CAFP · Punto Equilibrio!A17"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0298",
+   "es": "Costes fijos de caja + principal del año",
+   "donde": [
+    "FTP · Punto Equilibrio!A18",
+    "CAFP · Punto Equilibrio!A18"
+   ]
+  },
+  {
+   "id": "c0299",
+   "es": "Los fijos del P&L sin la amortización (que no se paga) y CON la devolución de principal (que sí). Es el umbral que decide si la caja aguanta",
+   "donde": [
+    "FTP · Punto Equilibrio!E18",
+    "CAFP · Punto Equilibrio!E18"
+   ],
+   "fila": "Costes fijos de caja + principal del año",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0300",
+   "es": "Clientes necesarios al año (caja)",
+   "donde": [
+    "FTP · Punto Equilibrio!A19",
+    "CAFP · Punto Equilibrio!A19"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0301",
+   "es": "Clientes necesarios al día (caja)",
+   "donde": [
+    "FTP · Punto Equilibrio!A20",
+    "CAFP · Punto Equilibrio!A20"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0303",
+   "es": "CONTRASTE CON EL PLAN",
+   "donde": [
+    "FTP · Punto Equilibrio!A22",
+    "CAFP · Punto Equilibrio!A22"
+   ]
+  },
+  {
+   "id": "c0304",
+   "es": "Clientes/día previstos en el plan",
+   "donde": [
+    "FTP · Punto Equilibrio!A23",
+    "CAFP · Punto Equilibrio!A23"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0305",
+   "es": "Holgura sobre el equilibrio de CAJA (%)",
+   "donde": [
+    "FTP · Punto Equilibrio!A24",
+    "CAFP · Punto Equilibrio!A24"
+   ]
+  },
+  {
+   "id": "c0306",
+   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "donde": [
+    "FTP · Punto Equilibrio!E24",
+    "CAFP · Punto Equilibrio!E24"
+   ],
+   "fila": "Holgura sobre el equilibrio de CAJA (%)",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0307",
+   "es": "INTERPRETACIÓN",
+   "donde": [
+    "FTP · Punto Equilibrio!A25",
+    "CAFP · Punto Equilibrio!A27"
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0308",
+   "es": "SENSIBILIDAD DEL PUNTO DE EQUILIBRIO",
+   "donde": [
+    "FTP · Punto Equilibrio!A28",
+    "CAFP · Punto Equilibrio!A30"
+   ]
+  },
+  {
+   "id": "c0309",
+   "es": "Clientes/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por cliente (filas). En verde, los que están por debajo de los clientes que prevé el plan.",
+   "donde": [
+    "FTP · Punto Equilibrio!A29",
+    "CAFP · Punto Equilibrio!A31"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0310",
+   "es": "Clientes/día necesarios: ticket medio sin IVA (columnas) × coste variable por cliente (filas)",
+   "donde": [
+    "FTP · Punto Equilibrio!A31",
+    "CAFP · Punto Equilibrio!A33"
+   ],
+   "pistas": [
+    "P03",
+    "P17",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0312",
+   "es": "ANÁLISIS DE ESCENARIOS",
+   "donde": [
+    "FTP · Escenarios!A1",
+    "CAFP · Escenarios!A1"
+   ]
+  },
+  {
+   "id": "c0313",
+   "es": "Métrica",
+   "donde": [
+    "FTP · Escenarios!A4",
+    "CAFP · Escenarios!A4"
+   ]
+  },
+  {
+   "id": "c0314",
+   "es": "Pesimista",
+   "donde": [
+    "FTP · Escenarios!B4",
+    "CAFP · Escenarios!B4"
+   ],
+   "fila": "Métrica"
+  },
+  {
+   "id": "c0315",
+   "es": "Realista",
+   "donde": [
+    "FTP · Escenarios!C4",
+    "CAFP · Escenarios!C4"
+   ],
+   "fila": "Métrica"
+  },
+  {
+   "id": "c0316",
+   "es": "Optimista",
+   "donde": [
+    "FTP · Escenarios!D4",
+    "CAFP · Escenarios!D4"
+   ],
+   "fila": "Métrica"
+  },
+  {
+   "id": "c0317",
+   "es": "Clientes/día",
+   "donde": [
+    "FTP · Escenarios!A5",
+    "CAFP · Escenarios!A5"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0318",
+   "es": "INGRESOS ANUALES (sin IVA)",
+   "donde": [
+    "FTP · Escenarios!A8",
+    "CAFP · Escenarios!A8"
+   ],
+   "pistas": [
+    "P03",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0319",
+   "es": "COSTES FIJOS (los del P&L)",
+   "donde": [
+    "FTP · Escenarios!A17",
+    "CAFP · Escenarios!A17"
+   ]
+  },
+  {
+   "id": "c0320",
+   "es": "Los costes fijos no cambian con el escenario: por eso son fijos",
+   "donde": [
+    "FTP · Escenarios!E17",
+    "CAFP · Escenarios!E17"
+   ],
+   "fila": "COSTES FIJOS (los del P&L)"
+  },
+  {
+   "id": "c0321",
+   "es": "Al tipo de entidad de nueva creación, compensando las bases negativas anteriores",
+   "donde": [
+    "FTP · Escenarios!E19",
+    "CAFP · Escenarios!E19"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "pistas": [
+    "P19",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0322",
+   "es": "Clientes/día para el equilibrio",
+   "donde": [
+    "FTP · Escenarios!A21",
+    "CAFP · Escenarios!A21"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0323",
+   "es": "LO QUE CADA ESCENARIO EXIGE",
+   "donde": [
+    "FTP · Escenarios!A22",
+    "CAFP · Escenarios!A22"
+   ]
+  },
+  {
+   "id": "c0324",
+   "es": "La MISMA plantilla en los tres escenarios. Si en el pesimista se dispara, el ajuste hay que hacerlo en la hoja de Personal, no aquí",
+   "donde": [
+    "FTP · Escenarios!E23",
+    "CAFP · Escenarios!E23"
+   ],
+   "fila": "Coste de personal / Ventas"
+  },
+  {
+   "id": "c0325",
+   "es": "Clientes al año por jornada equivalente",
+   "donde": [
+    "FTP · Escenarios!A24",
+    "CAFP · Escenarios!A24"
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0326",
+   "es": "Clientes que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+   "donde": [
+    "FTP · Escenarios!E24",
+    "CAFP · Escenarios!E24"
+   ],
+   "fila": "Clientes al año por jornada equivalente",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0327",
+   "es": "Saldo de caja al cierre del año 1 (estimado, el mismo método en los tres escenarios)",
+   "donde": [
+    "FTP · Escenarios!A25",
+    "CAFP · Escenarios!A25"
+   ]
+  },
+  {
+   "id": "c0328",
+   "es": "Saldo ESTIMADO: fondo de maniobra más el resultado del año, devolviendo la amortización (que no se paga) y restando el principal del préstamo. No incluye el desfase de cobros y pagos ni la liquidación del IVA, así que las tres columnas se pueden comparar entre sí. En rojo, el escenario se queda sin caja",
+   "donde": [
+    "FTP · Escenarios!E25",
+    "CAFP · Escenarios!E25"
+   ],
+   "fila": "Saldo de caja al cierre del año 1 (estimado, el mismo método en los tres escenarios)",
+   "pistas": [
+    "P03",
+    "P12",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0329",
+   "es": "Saldo real del mes 12 de la hoja de Tesorería (sólo realista)",
+   "donde": [
+    "FTP · Escenarios!A26",
+    "CAFP · Escenarios!A26"
+   ]
+  },
+  {
+   "id": "c0330",
+   "es": "El saldo REAL del caso base, con su desfase de cobros y pagos y su liquidación de IVA. Sólo existe para el escenario realista, que es el único con tesorería mensual propia: por eso no está en la fila de arriba, donde se compararía contra dos estimaciones",
+   "donde": [
+    "FTP · Escenarios!E26",
+    "CAFP · Escenarios!E26"
+   ],
+   "fila": "Saldo real del mes 12 de la hoja de Tesorería (sólo realista)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0331",
+   "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los clientes, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+   "donde": [
+    "FTP · Escenarios!A28",
+    "CAFP · Escenarios!A28"
+   ],
+   "pistas": [
+    "P02",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0333",
+   "es": "ESTRUCTURA DE PERSONAL Y COSTES",
+   "donde": [
+    "FTP · Personal!A1",
+    "CAFP · Personal!A1"
+   ]
+  },
+  {
+   "id": "c0334",
+   "es": "Puesto",
+   "donde": [
+    "FTP · Personal!A4",
+    "CAFP · Personal!A4"
+   ]
+  },
+  {
+   "id": "c0335",
+   "es": "Personas",
+   "donde": [
+    "FTP · Personal!B4",
+    "CAFP · Personal!B4"
+   ],
+   "fila": "Puesto"
+  },
+  {
+   "id": "c0336",
+   "es": "Jornada",
+   "donde": [
+    "FTP · Personal!C4",
+    "CAFP · Personal!C4"
+   ],
+   "fila": "Puesto"
+  },
+  {
+   "id": "c0337",
+   "es": "Bruto mes (€, total del puesto)",
+   "donde": [
+    "FTP · Personal!D4",
+    "CAFP · Personal!D4"
+   ],
+   "fila": "Puesto",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0338",
+   "es": "Seg. Social a cargo de la empresa (€)",
+   "donde": [
+    "FTP · Personal!E4",
+    "CAFP · Personal!E4"
+   ],
+   "fila": "Puesto",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0339",
+   "es": "Coste mes (€, total del puesto)",
+   "donde": [
+    "FTP · Personal!F4",
+    "CAFP · Personal!F4"
+   ],
+   "fila": "Puesto",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0340",
+   "es": "Coste año (€)",
+   "donde": [
+    "FTP · Personal!G4",
+    "CAFP · Personal!G4"
+   ],
+   "fila": "Puesto",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0341",
+   "es": "Horas/semana por persona",
+   "donde": [
+    "FTP · Personal!H4",
+    "CAFP · Personal!H4"
+   ],
+   "fila": "Puesto"
+  },
+  {
+   "id": "c0342",
+   "es": "Horas/año del puesto",
+   "donde": [
+    "FTP · Personal!I4",
+    "CAFP · Personal!I4"
+   ],
+   "fila": "Puesto"
+  },
+  {
+   "id": "c0349",
+   "es": "Suplencias de vacaciones y descansos",
+   "donde": [
+    "FTP · Personal!A8",
+    "CAFP · Personal!A10"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0351",
+   "es": "TOTAL PLANTILLA",
+   "donde": [
+    "FTP · Personal!A9",
+    "CAFP · Personal!A11"
+   ]
+  },
+  {
+   "id": "c0352",
+   "es": "CRECIMIENTO DE LA PLANTILLA (coste escalonado)",
+   "donde": [
+    "FTP · Personal!A10",
+    "CAFP · Personal!A12"
+   ]
+  },
+  {
+   "id": "c0353",
+   "es": "Coste anual de las incorporaciones del año 2 (€)",
+   "donde": [
+    "FTP · Personal!A11",
+    "CAFP · Personal!A13"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0354",
+   "es": "Coste ANUAL completo (bruto + Seguridad Social × pagas) de lo que se contrate ese año. El P&L lo suma al coste del año anterior: la plantilla no crece con un porcentaje, crece con personas",
+   "donde": [
+    "FTP · Personal!J11",
+    "FTP · Personal!J12",
+    "CAFP · Personal!J13",
+    "CAFP · Personal!J14"
+   ],
+   "fila": "Coste anual de las incorporaciones del año 2 (€)",
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0355",
+   "es": "Coste anual de las incorporaciones del año 3 (€)",
+   "donde": [
+    "FTP · Personal!A12",
+    "CAFP · Personal!A14"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0356",
+   "es": "Coste de personal del año 2",
+   "donde": [
+    "FTP · Personal!A13",
+    "CAFP · Personal!A15"
+   ]
+  },
+  {
+   "id": "c0357",
+   "es": "Coste de personal del año 3",
+   "donde": [
+    "FTP · Personal!A14",
+    "CAFP · Personal!A16"
+   ]
+  },
+  {
+   "id": "c0358",
+   "es": "COBERTURA POR HORAS DE SERVICIO",
+   "donde": [
+    "FTP · Personal!A15",
+    "CAFP · Personal!A17"
+   ]
+  },
+  {
+   "id": "c0359",
+   "es": "Jornada completa del convenio (horas/semana)",
+   "donde": [
+    "FTP · Personal!A16",
+    "CAFP · Personal!A18"
+   ],
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0360",
+   "es": "Art. 34.1 del Estatuto de los Trabajadores; tu convenio provincial puede fijar menos",
+   "donde": [
+    "FTP · Personal!J16",
+    "CAFP · Personal!J18"
+   ],
+   "fila": "Jornada completa del convenio (horas/semana)",
+   "valor_us": {
+    "FTP": 40,
+    "CAFP": 40
+   },
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0361",
+   "es": "Semanas trabajadas al año por persona",
+   "donde": [
+    "FTP · Personal!A17",
+    "CAFP · Personal!A19"
+   ]
+  },
+  {
+   "id": "c0362",
+   "es": "46 semanas: 52 menos las vacaciones (30 días naturales, art. 38 ET), los festivos y las ausencias medias",
+   "donde": [
+    "FTP · Personal!J17",
+    "CAFP · Personal!J19"
+   ],
+   "fila": "Semanas trabajadas al año por persona",
+   "valor_us": {
+    "FTP": 50,
+    "CAFP": 50
+   },
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0363",
+   "es": "Horas de servicio al día que hay que cubrir",
+   "donde": [
+    "FTP · Personal!A18",
+    "CAFP · Personal!A20"
+   ]
+  },
+  {
+   "id": "c0365",
+   "es": "Personas necesarias a la vez en cada franja",
+   "donde": [
+    "FTP · Personal!A19",
+    "CAFP · Personal!A21"
+   ]
+  },
+  {
+   "id": "c0367",
+   "es": "Horas de servicio a cubrir al año",
+   "donde": [
+    "FTP · Personal!A20",
+    "CAFP · Personal!A22"
+   ]
+  },
+  {
+   "id": "c0368",
+   "es": "Horas contratadas al año",
+   "donde": [
+    "FTP · Personal!A21",
+    "CAFP · Personal!A23"
+   ]
+  },
+  {
+   "id": "c0369",
+   "es": "Cobertura (contratadas / necesarias)",
+   "donde": [
+    "FTP · Personal!A22",
+    "CAFP · Personal!A24"
+   ]
+  },
+  {
+   "id": "c0370",
+   "es": "Por debajo del 100 % la plantilla no llega a cubrir el horario que declara el plan: o se contrata más o se recorta el horario",
+   "donde": [
+    "FTP · Personal!J22",
+    "CAFP · Personal!J24"
+   ],
+   "fila": "Cobertura (contratadas / necesarias)"
+  },
+  {
+   "id": "c0371",
+   "es": "Las columnas «Bruto mes», «Seg. Social», «Coste mes» y «Coste año» son TOTALES de la fila: en un puesto con dos personas incluyen a las dos. «Jornada» es el porcentaje sobre la jornada completa del convenio y sirve para comparar el salario con el suelo legal en proporción. El tipo de Seguridad Social y el número de pagas están en la hoja «0. Supuestos».",
+   "donde": [
+    "FTP · Personal!A24",
+    "CAFP · Personal!A26"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "pistas": [
+    "P03",
+    "P04",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0372",
+   "es": "El suelo salarial es el MAYOR entre el SMI y el salario de convenio, los dos en la hoja «0. Supuestos»; las jornadas parciales lo llevan en proporción. El convenio aplicable es el PROVINCIAL de hostelería: no existe una tabla salarial estatal única, así que la celda del convenio se entrega vacía para que copies la de tu provincia.",
+   "donde": [
+    "FTP · Personal!A25",
+    "CAFP · Personal!A27"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "pistas": [
+    "P03",
+    "P04",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0373",
+   "es": "Valor no válido",
+   "donde": [
+    "FTP · Personal!B19 (dv-error-titulo)",
+    "CAFP · Personal!B21 (dv-error-titulo)"
+   ],
+   "max_len": 32
+  },
+  {
+   "id": "c0374",
+   "es": "Escribe un número mayor o igual que 0; esta celda admite decimales (1,7 personas es una presencia media, no una persona y media).",
+   "donde": [
+    "FTP · Personal!B19 (dv-error)",
+    "CAFP · Personal!B21 (dv-error)"
+   ],
+   "max_len": 255,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0377",
+   "es": "CÓMO SE USA ESTE LIBRO",
+   "donde": [
+    "FTP · Instrucciones!A3",
+    "CAFP · Instrucciones!A3"
+   ]
+  },
+  {
+   "id": "c0378",
+   "es": "Este plan financiero es un MODELO: sólo se teclea en las celdas VERDES y el resto se recalcula solo.",
+   "donde": [
+    "FTP · Instrucciones!A4",
+    "CAFP · Instrucciones!A4"
+   ]
+  },
+  {
+   "id": "c0379",
+   "es": "1. «0. Supuestos» es la hoja de mando: clientes, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+   "donde": [
+    "FTP · Instrucciones!A5",
+    "CAFP · Instrucciones!A5"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "pistas": [
+    "P03",
+    "P17",
+    "P02",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0380",
+   "es": "2. Las partidas de la inversión, los costes fijos y la plantilla se teclean en su propia hoja, también en verde. Ningún número se escribe dos veces.",
+   "donde": [
+    "FTP · Instrucciones!A6",
+    "CAFP · Instrucciones!A6"
+   ]
+  },
+  {
+   "id": "c0382",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —bollería y pastelería incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica al alcohol del canal de delivery. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "FTP · Instrucciones!A8",
+    "CAFP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P03",
+    "P17",
+    "P08",
+    "P02",
+    "P15",
+    "P10",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0383",
+   "es": "5. Si cambias la plantilla, el P&L la lee sola: el coste de personal sale de la hoja «Personal», no de una estimación aparte.",
+   "donde": [
+    "FTP · Instrucciones!A9",
+    "CAFP · Instrucciones!A9"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Personal",
+     "en": "Staffing"
+    }
+   ],
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0384",
+   "es": "6. La hoja «Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. El saldo mínimo del año nunca puede salir en rojo.",
+   "donde": [
+    "FTP · Instrucciones!A10",
+    "CAFP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0385",
+   "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+   "donde": [
+    "FTP · Instrucciones!A11",
+    "CAFP · Instrucciones!A11"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "pistas": [
+    "P12",
+    "P07",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0387",
+   "es": "RATIOS QUE AUDITA EL LIBRO",
+   "donde": [
+    "FTP · Instrucciones!A14",
+    "CAFP · Instrucciones!A15"
+   ]
+  },
+  {
+   "id": "c0388",
+   "es": "Los umbrales viven en la columna «Umbral» del bloque RATIOS CLAVE del P&L: cámbialos ahí y el semáforo cambia con ellos.",
+   "donde": [
+    "FTP · Instrucciones!A15",
+    "CAFP · Instrucciones!A16"
+   ],
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Valor del año 1",
+   "donde": [
+    "FTP · Instrucciones!B17",
+    "CAFP · Instrucciones!B18"
+   ],
+   "fila": "Ratio"
+  },
+  {
+   "id": "c0390",
+   "es": "Estado",
+   "donde": [
+    "FTP · Instrucciones!D17",
+    "CAFP · Instrucciones!D18"
+   ],
+   "fila": "Ratio"
+  },
+  {
+   "id": "c0391",
+   "es": "CIFRAS DE ESTE PLAN",
+   "donde": [
+    "FTP · Instrucciones!A24",
+    "CAFP · Instrucciones!A25"
+   ]
+  },
+  {
+   "id": "c0392",
+   "es": "Inversión total (suma de los bloques)",
+   "donde": [
+    "FTP · Instrucciones!A25",
+    "CAFP · Instrucciones!A26"
+   ]
+  },
+  {
+   "id": "c0393",
+   "es": "Necesidad total de caja al arranque",
+   "donde": [
+    "FTP · Instrucciones!A26",
+    "FTP · Financiación!A14",
+    "CAFP · Instrucciones!A27",
+    "CAFP · Financiación!A14"
+   ]
+  },
+  {
+   "id": "c0394",
+   "es": "Fondo de maniobra dotado",
+   "donde": [
+    "FTP · Instrucciones!A27",
+    "CAFP · Instrucciones!A28"
+   ]
+  },
+  {
+   "id": "c0395",
+   "es": "Facturación prevista del año 1",
+   "donde": [
+    "FTP · Instrucciones!A28",
+    "CAFP · Instrucciones!A29"
+   ]
+  },
+  {
+   "id": "c0396",
+   "es": "Resultado neto del año 1",
+   "donde": [
+    "FTP · Instrucciones!A29",
+    "CAFP · Instrucciones!A30"
+   ]
+  },
+  {
+   "id": "c0397",
+   "es": "Clientes/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+   "donde": [
+    "FTP · Instrucciones!A30",
+    "CAFP · Instrucciones!A31"
+   ],
+   "pistas": [
+    "P12",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0398",
+   "es": "Payback del proyecto (años), antes de la deuda",
+   "donde": [
+    "FTP · Instrucciones!A31",
+    "FTP · Tesorería 12 meses!A31",
+    "CAFP · Instrucciones!A32",
+    "CAFP · Tesorería 12 meses!A31"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Referencia",
+   "donde": [
+    "FTP · Instrucciones!A54",
+    "CAFP · Instrucciones!A53"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "Valor",
+   "donde": [
+    "FTP · Instrucciones!B54",
+    "CAFP · Instrucciones!B53"
+   ],
+   "fila": "Referencia"
+  },
+  {
+   "id": "c0475",
+   "es": "Nota",
+   "donde": [
+    "FTP · Instrucciones!D54",
+    "CAFP · Instrucciones!D53"
+   ],
+   "fila": "Referencia"
+  },
+  {
+   "id": "c0537",
+   "es": "PREVISIÓN DE TESORERÍA — AÑO 1",
+   "donde": [
+    "FTP · Tesorería 12 meses!A1",
+    "CAFP · Tesorería 12 meses!A1"
+   ]
+  },
+  {
+   "id": "c0538",
+   "es": "El P&L dice si el negocio gana dinero; esta hoja dice si le queda caja para llegar a fin de mes. Es la primera que mira un banco.",
+   "donde": [
+    "FTP · Tesorería 12 meses!A2",
+    "CAFP · Tesorería 12 meses!A2"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0552",
+   "es": "Estacionalidad del mes (suma 100 %)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A5",
+    "CAFP · Tesorería 12 meses!A5"
+   ]
+  },
+  {
+   "id": "c0553",
+   "es": "Perfil de tu zona: agosto flojo en ciudad y fuerte en costa. Tiene que sumar 100 %",
+   "donde": [
+    "FTP · Tesorería 12 meses!O5",
+    "CAFP · Tesorería 12 meses!O5"
+   ],
+   "fila": "Estacionalidad del mes (suma 100 %)",
+   "pistas": [
+    "P13",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0554",
+   "es": "Rampa de arranque (% de la actividad de crucero)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A6",
+    "CAFP · Tesorería 12 meses!A6"
+   ]
+  },
+  {
+   "id": "c0555",
+   "es": "Sube en línea recta desde el porcentaje del mes 1 hasta el 100 % en los meses que digas en Supuestos. Con el mes 1 al 100 % la rampa desaparece",
+   "donde": [
+    "FTP · Tesorería 12 meses!O6",
+    "CAFP · Tesorería 12 meses!O6"
+   ],
+   "fila": "Rampa de arranque (% de la actividad de crucero)"
+  },
+  {
+   "id": "c0556",
+   "es": "Reparto de la actividad por mes (calculado)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A7",
+    "CAFP · Tesorería 12 meses!A7"
+   ]
+  },
+  {
+   "id": "c0557",
+   "es": "Estacionalidad × rampa, normalizado a 100 %: el AÑO factura lo que dice el P&L, pero repartido como lo reparte un local que acaba de abrir",
+   "donde": [
+    "FTP · Tesorería 12 meses!O7",
+    "CAFP · Tesorería 12 meses!O7"
+   ],
+   "fila": "Reparto de la actividad por mes (calculado)"
+  },
+  {
+   "id": "c0558",
+   "es": "COBROS",
+   "donde": [
+    "FTP · Tesorería 12 meses!A8",
+    "CAFP · Tesorería 12 meses!A8"
+   ]
+  },
+  {
+   "id": "c0559",
+   "es": "Ventas cobradas (con IVA repercutido)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A9",
+    "CAFP · Tesorería 12 meses!A9"
+   ],
+   "pistas": [
+    "P03",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0560",
+   "es": "Ventas del mes con el IVA repercutido, corregidas por los días medios de cobro de la hoja de Supuestos",
+   "donde": [
+    "FTP · Tesorería 12 meses!O9",
+    "CAFP · Tesorería 12 meses!O9"
+   ],
+   "fila": "Ventas cobradas (con IVA repercutido)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0561",
+   "es": "PAGOS",
+   "donde": [
+    "FTP · Tesorería 12 meses!A10",
+    "CAFP · Tesorería 12 meses!A10"
+   ]
+  },
+  {
+   "id": "c0562",
+   "es": "Compras y costes variables (IVA incluido)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A11",
+    "CAFP · Tesorería 12 meses!A11"
+   ],
+   "pistas": [
+    "P03",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0563",
+   "es": "Costes fijos de explotación (IVA incluido)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A12",
+    "CAFP · Tesorería 12 meses!A12"
+   ],
+   "pistas": [
+    "P03",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0564",
+   "es": "Los fijos que salen de caja, cada uno con su tipo de IVA: los seguros están exentos y no llevan",
+   "donde": [
+    "FTP · Tesorería 12 meses!O12",
+    "CAFP · Tesorería 12 meses!O12"
+   ],
+   "fila": "Costes fijos de explotación (IVA incluido)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0565",
+   "es": "Nóminas y Seguridad Social",
+   "donde": [
+    "FTP · Tesorería 12 meses!A13",
+    "CAFP · Tesorería 12 meses!A13"
+   ],
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0566",
+   "es": "Doce mensualidades más las pagas extra en los meses que digas en Supuestos. La suma del año es la misma que la del P&L",
+   "donde": [
+    "FTP · Tesorería 12 meses!O13",
+    "CAFP · Tesorería 12 meses!O13"
+   ],
+   "fila": "Nóminas y Seguridad Social",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0567",
+   "es": "Intereses del préstamo",
+   "donde": [
+    "FTP · Tesorería 12 meses!A14",
+    "CAFP · Tesorería 12 meses!A14"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0568",
+   "es": "Devolución de principal del préstamo",
+   "donde": [
+    "FTP · Tesorería 12 meses!A15",
+    "CAFP · Tesorería 12 meses!A15"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0570",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en sala, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el alcohol que sale por delivery, al general; el pan común y las harinas panificables, al superreducido (art. 91.Dos.1.1.º)",
+   "donde": [
+    "FTP · Tesorería 12 meses!O16",
+    "CAFP · Tesorería 12 meses!O16"
+   ],
+   "fila": "IVA repercutido del mes (memoria)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0572",
+   "es": "Cada partida a su tipo, leído de la columna de IVA del P&L: los seguros y las comisiones de los medios de pago están exentos",
+   "donde": [
+    "FTP · Tesorería 12 meses!O17",
+    "CAFP · Tesorería 12 meses!O17"
+   ],
+   "fila": "IVA soportado del mes (memoria)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0574",
+   "es": "El IVA soportado de la INVERSIÓN entra aquí: se compensa contra el repercutido de los trimestres siguientes hasta agotarlo (modelo 303)",
+   "donde": [
+    "FTP · Tesorería 12 meses!O18",
+    "CAFP · Tesorería 12 meses!O18"
+   ],
+   "fila": "IVA a compensar arrastrado (inversión incluida)",
+   "pistas": [
+    "P03",
+    "P14",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0576",
+   "es": "Repercutido menos soportado del trimestre menos lo que venía arrastrado. En negativo NO se paga: se compensa en el trimestre siguiente",
+   "donde": [
+    "FTP · Tesorería 12 meses!O19",
+    "CAFP · Tesorería 12 meses!O19"
+   ],
+   "fila": "Resultado de la liquidación trimestral",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0578",
+   "es": "Sólo sale caja cuando el resultado del trimestre es positivo. Los meses sin liquidación van en blanco, no a cero. La celda se pinta en ROJO cuando el pago del 303 se lleva más caja de la que queda ese mes",
+   "donde": [
+    "FTP · Tesorería 12 meses!O20",
+    "CAFP · Tesorería 12 meses!O20"
+   ],
+   "fila": "Pago del IVA (modelo 303)",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0579",
+   "es": "FLUJO DEL MES",
+   "donde": [
+    "FTP · Tesorería 12 meses!A21",
+    "CAFP · Tesorería 12 meses!A21"
+   ]
+  },
+  {
+   "id": "c0580",
+   "es": "SALDO ACUMULADO DE CAJA",
+   "donde": [
+    "FTP · Tesorería 12 meses!A22",
+    "CAFP · Tesorería 12 meses!A22"
+   ]
+  },
+  {
+   "id": "c0581",
+   "es": "Saldo mínimo del año",
+   "donde": [
+    "FTP · Tesorería 12 meses!A23",
+    "CAFP · Tesorería 12 meses!A23"
+   ]
+  },
+  {
+   "id": "c0582",
+   "es": "Si es negativo, sube el fondo de maniobra o el préstamo: te quedas sin caja",
+   "donde": [
+    "FTP · Tesorería 12 meses!D23",
+    "CAFP · Tesorería 12 meses!D23"
+   ],
+   "fila": "Saldo mínimo del año",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0583",
+   "es": "Mes en el que la caja toca fondo",
+   "donde": [
+    "FTP · Tesorería 12 meses!A24",
+    "CAFP · Tesorería 12 meses!A24"
+   ]
+  },
+  {
+   "id": "c0584",
+   "es": "Es la respuesta a la pregunta que decide una operación bancaria: en qué mes se agota la caja",
+   "donde": [
+    "FTP · Tesorería 12 meses!D24",
+    "CAFP · Tesorería 12 meses!D24"
+   ],
+   "fila": "Mes en el que la caja toca fondo"
+  },
+  {
+   "id": "c0585",
+   "es": "RETORNO DE LA INVERSIÓN",
+   "donde": [
+    "FTP · Tesorería 12 meses!A25",
+    "CAFP · Tesorería 12 meses!A25"
+   ]
+  },
+  {
+   "id": "c0586",
+   "es": "Flujo de caja libre antes de la deuda, año 1",
+   "donde": [
+    "FTP · Tesorería 12 meses!A26",
+    "CAFP · Tesorería 12 meses!A26"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0587",
+   "es": "Resultado neto más amortización (que no se paga) más los intereses de ese año: el principal no se resta porque este flujo es ANTES de la deuda. La MISMA base que los años 2 y 3, para que el payback compare peras con peras",
+   "donde": [
+    "FTP · Tesorería 12 meses!D26",
+    "CAFP · Tesorería 12 meses!D26"
+   ],
+   "fila": "Flujo de caja libre antes de la deuda, año 1",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0588",
+   "es": "Flujo de caja libre antes de la deuda, año 2",
+   "donde": [
+    "FTP · Tesorería 12 meses!A27",
+    "CAFP · Tesorería 12 meses!A27"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0589",
+   "es": "Resultado neto más amortización (que no se paga) más los intereses de ese año: el principal no se resta porque este flujo es ANTES de la deuda. Sin tabla mensual, es una estimación",
+   "donde": [
+    "FTP · Tesorería 12 meses!D27",
+    "FTP · Tesorería 12 meses!D28",
+    "CAFP · Tesorería 12 meses!D27",
+    "CAFP · Tesorería 12 meses!D28"
+   ],
+   "fila": "Flujo de caja libre antes de la deuda, año 2",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0590",
+   "es": "Flujo de caja libre antes de la deuda, año 3",
+   "donde": [
+    "FTP · Tesorería 12 meses!A28",
+    "CAFP · Tesorería 12 meses!A28"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0591",
+   "es": "Informativo: flujo REAL de caja del año 1 (tabla mensual, antes de la deuda)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A29",
+    "CAFP · Tesorería 12 meses!A29"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0592",
+   "es": "La suma de los doce FLUJO DEL MES de arriba, devolviéndole los intereses y el principal que se pagaron ese año. NO es la que usa el payback: lleva dentro el IVA que todavía no se ha liquidado y el crédito del proveedor, dos cosas que hay que devolver y que los años 2 y 3 no tienen",
+   "donde": [
+    "FTP · Tesorería 12 meses!D29",
+    "CAFP · Tesorería 12 meses!D29"
+   ],
+   "fila": "Informativo: flujo REAL de caja del año 1 (tabla mensual, antes de la deuda)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0593",
+   "es": "Inversión a recuperar (sin el IVA, que se recupera por el 303)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A30",
+    "CAFP · Tesorería 12 meses!A30"
+   ],
+   "pistas": [
+    "P03",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0594",
+   "es": "CAPEX más fondo de maniobra: la necesidad total de caja MENOS el IVA soportado de la inversión, que no se pierde (se recupera con el modelo 303 y esta misma hoja lo compensa trimestre a trimestre). El fondo de maniobra sí se recupera al cerrar, pero hasta entonces está inmovilizado",
+   "donde": [
+    "FTP · Tesorería 12 meses!D30",
+    "CAFP · Tesorería 12 meses!D30"
+   ],
+   "fila": "Inversión a recuperar (sin el IVA, que se recupera por el 303)",
+   "pistas": [
+    "P03",
+    "P14",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0595",
+   "es": "Mide cuánto tarda el negocio en devolver la inversión con lo que genera ANTES de pagar al banco, con la MISMA base de flujo en los tres años; si puedes pagar la cuota lo dice el DSCR de la hoja de Financiación. El documento Word del pack sigue en la versión 1.1 y no lee esta celda: las cifras válidas son las de este libro",
+   "donde": [
+    "FTP · Tesorería 12 meses!D31",
+    "CAFP · Tesorería 12 meses!D31"
+   ],
+   "fila": "Payback del proyecto (años), antes de la deuda",
+   "pistas": [
+    "P07",
+    "P22",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0596",
+   "es": "Payback sobre el CAPEX, sin fondo de maniobra (años)",
+   "donde": [
+    "FTP · Tesorería 12 meses!A32",
+    "CAFP · Tesorería 12 meses!A32"
+   ]
+  },
+  {
+   "id": "c0597",
+   "es": "El mismo cálculo sobre lo que se COMPRA (obra, equipamiento, lanzamiento y constitución), sin el fondo de maniobra: ese dinero no se gasta, se inmoviliza y vuelve al cerrar el negocio. Informativo: el payback que se publica es el de arriba",
+   "donde": [
+    "FTP · Tesorería 12 meses!D32",
+    "CAFP · Tesorería 12 meses!D32"
+   ],
+   "fila": "Payback sobre el CAPEX, sin fondo de maniobra (años)"
+  },
+  {
+   "id": "c0598",
+   "es": "El IVA del cuarto trimestre se liquida en enero del año siguiente, así que no aparece en este cuadro. El Impuesto de Sociedades del año 1 se paga en julio del año 2. La cuota del préstamo se reparte en doce partes iguales siguiendo el cuadro ANUAL de la hoja de Financiación, y las nóminas en doce mensualidades más las dos pagas extra en su mes.",
+   "donde": [
+    "FTP · Tesorería 12 meses!A34",
+    "CAFP · Tesorería 12 meses!A34"
+   ],
+   "pistas": [
+    "P03",
+    "P08",
+    "P19",
+    "P04",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0600",
+   "es": "PLAN DE FINANCIACIÓN",
+   "donde": [
+    "FTP · Financiación!A1",
+    "CAFP · Financiación!A1"
+   ]
+  },
+  {
+   "id": "c0601",
+   "es": "Qué hace falta, de dónde sale y cuánto cuesta devolverlo. Es la hoja que el banco pide junto con el P&L.",
+   "donde": [
+    "FTP · Financiación!A2",
+    "CAFP · Financiación!A2"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0602",
+   "es": "ORIGEN DE FONDOS",
+   "donde": [
+    "FTP · Financiación!A5",
+    "CAFP · Financiación!A5"
+   ]
+  },
+  {
+   "id": "c0603",
+   "es": "Recursos propios de los socios",
+   "donde": [
+    "FTP · Financiación!A6",
+    "CAFP · Financiación!A6"
+   ]
+  },
+  {
+   "id": "c0604",
+   "es": "Préstamo bancario",
+   "donde": [
+    "FTP · Financiación!A7",
+    "CAFP · Financiación!A7"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0606",
+   "es": "Consulta las líneas del ejercicio en curso en ico.es",
+   "donde": [
+    "FTP · Financiación!C8",
+    "CAFP · Financiación!C8"
+   ],
+   "fila": "Línea ICO (avalada por el ICO, la concede tu banco)"
+  },
+  {
+   "id": "c0608",
+   "es": "Para sociedades; sin garantías personales",
+   "donde": [
+    "FTP · Financiación!C9",
+    "CAFP · Financiación!C9"
+   ],
+   "fila": "Préstamo participativo ENISA"
+  },
+  {
+   "id": "c0610",
+   "es": "Entra en el capital: diluye, no se devuelve",
+   "donde": [
+    "FTP · Financiación!C10",
+    "CAFP · Financiación!C10"
+   ],
+   "fila": "Business angels o socios inversores"
+  },
+  {
+   "id": "c0612",
+   "es": "Suelen cobrarse DESPUÉS de justificar el gasto",
+   "donde": [
+    "FTP · Financiación!C11",
+    "CAFP · Financiación!C11"
+   ],
+   "fila": "Subvenciones autonómicas o locales"
+  },
+  {
+   "id": "c0613",
+   "es": "TOTAL ORIGEN DE FONDOS",
+   "donde": [
+    "FTP · Financiación!A12",
+    "CAFP · Financiación!A12"
+   ]
+  },
+  {
+   "id": "c0614",
+   "es": "USOS",
+   "donde": [
+    "FTP · Financiación!A13",
+    "CAFP · Financiación!A13"
+   ]
+  },
+  {
+   "id": "c0615",
+   "es": "Inversión más el IVA que hay que adelantar",
+   "donde": [
+    "FTP · Financiación!C14",
+    "CAFP · Financiación!C14"
+   ],
+   "fila": "Necesidad total de caja al arranque",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0616",
+   "es": "Diferencia (origen - usos)",
+   "donde": [
+    "FTP · Financiación!A15",
+    "CAFP · Financiación!A15"
+   ]
+  },
+  {
+   "id": "c0617",
+   "es": "En rojo (negativa) el plan NO está financiado. Muy por encima de cero tampoco es gratis: se pagan intereses por un dinero que no se usa",
+   "donde": [
+    "FTP · Financiación!C15",
+    "CAFP · Financiación!C15"
+   ],
+   "fila": "Diferencia (origen - usos)"
+  },
+  {
+   "id": "c0618",
+   "es": "Diferencia sobre los usos (%)",
+   "donde": [
+    "FTP · Financiación!A16",
+    "CAFP · Financiación!A16"
+   ]
+  },
+  {
+   "id": "c0619",
+   "es": "Ámbar por encima del margen que fijes: es deuda que pagas sin necesitarla",
+   "donde": [
+    "FTP · Financiación!C16",
+    "CAFP · Financiación!C16"
+   ],
+   "fila": "Diferencia sobre los usos (%)",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0620",
+   "es": "Exceso de financiación admisible (%)",
+   "donde": [
+    "FTP · Financiación!A17",
+    "CAFP · Financiación!A17"
+   ]
+  },
+  {
+   "id": "c0621",
+   "es": "Un pequeño colchón sobre la necesidad es sano; un 20 % de más son intereses tirados",
+   "donde": [
+    "FTP · Financiación!C17",
+    "CAFP · Financiación!C17"
+   ],
+   "fila": "Exceso de financiación admisible (%)"
+  },
+  {
+   "id": "c0622",
+   "es": "Préstamo que ajustaría el origen a la necesidad",
+   "donde": [
+    "FTP · Financiación!A18",
+    "CAFP · Financiación!A18"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0623",
+   "es": "Cópialo en «Préstamo bancario solicitado» de la hoja de Supuestos y la diferencia se pone a cero",
+   "donde": [
+    "FTP · Financiación!C18",
+    "CAFP · Financiación!C18"
+   ],
+   "fila": "Préstamo que ajustaría el origen a la necesidad",
+   "pistas": [
+    "P07",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0624",
+   "es": "CONDICIONES DEL PRÉSTAMO",
+   "donde": [
+    "FTP · Financiación!A19",
+    "CAFP · Financiación!A19"
+   ]
+  },
+  {
+   "id": "c0625",
+   "es": "Importe del principal",
+   "donde": [
+    "FTP · Financiación!A20",
+    "CAFP · Financiación!A20"
+   ]
+  },
+  {
+   "id": "c0626",
+   "es": "Plazo total (años)",
+   "donde": [
+    "FTP · Financiación!A22",
+    "CAFP · Financiación!A22"
+   ]
+  },
+  {
+   "id": "c0627",
+   "es": "Carencia de principal aplicada (años)",
+   "donde": [
+    "FTP · Financiación!A23",
+    "CAFP · Financiación!A23"
+   ],
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0628",
+   "es": "Una carencia igual o mayor que el plazo no existe: la hoja la anula en origen",
+   "donde": [
+    "FTP · Financiación!C23",
+    "CAFP · Financiación!C23"
+   ],
+   "fila": "Carencia de principal aplicada (años)",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0629",
+   "es": "Cuota anual durante la amortización",
+   "donde": [
+    "FTP · Financiación!A24",
+    "CAFP · Financiación!A24"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0630",
+   "es": "Sistema francés, anualidad algebraica. Con el tipo al 0 % es el principal entre los años de amortización: sin esa rama el cuadro se apagaba entero",
+   "donde": [
+    "FTP · Financiación!C24",
+    "CAFP · Financiación!C24"
+   ],
+   "fila": "Cuota anual durante la amortización",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0631",
+   "es": "CUADRO DE AMORTIZACIÓN",
+   "donde": [
+    "FTP · Financiación!A25",
+    "CAFP · Financiación!A25"
+   ]
+  },
+  {
+   "id": "c0632",
+   "es": "Año",
+   "donde": [
+    "FTP · Financiación!A26",
+    "CAFP · Financiación!A26"
+   ]
+  },
+  {
+   "id": "c0633",
+   "es": "Capital pendiente",
+   "donde": [
+    "FTP · Financiación!B26",
+    "CAFP · Financiación!B26"
+   ],
+   "fila": "Año"
+  },
+  {
+   "id": "c0634",
+   "es": "Intereses",
+   "donde": [
+    "FTP · Financiación!C26",
+    "CAFP · Financiación!C26"
+   ],
+   "fila": "Año"
+  },
+  {
+   "id": "c0635",
+   "es": "Amortización de principal",
+   "donde": [
+    "FTP · Financiación!D26",
+    "CAFP · Financiación!D26"
+   ],
+   "fila": "Año",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0636",
+   "es": "Cuota total",
+   "donde": [
+    "FTP · Financiación!E26",
+    "CAFP · Financiación!E26"
+   ],
+   "fila": "Año"
+  },
+  {
+   "id": "c0637",
+   "es": "Capital al cierre",
+   "donde": [
+    "FTP · Financiación!F26",
+    "CAFP · Financiación!F26"
+   ],
+   "fila": "Año"
+  },
+  {
+   "id": "c0638",
+   "es": "Flujo disponible para la deuda (después de impuestos; del año 4 en adelante, el del año 3 mantenido)",
+   "donde": [
+    "FTP · Financiación!G26",
+    "CAFP · Financiación!G26"
+   ],
+   "fila": "Año"
+  },
+  {
+   "id": "c0639",
+   "es": "DSCR del año",
+   "donde": [
+    "FTP · Financiación!H26",
+    "CAFP · Financiación!H26"
+   ],
+   "fila": "Año",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0640",
+   "es": "Tolerancia de cierre del cuadro (€)",
+   "donde": [
+    "FTP · Financiación!A42",
+    "CAFP · Financiación!A42"
+   ],
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0641",
+   "es": "Margen por redondeo. Por encima, el cuadro no cierra y hay capital sin devolver",
+   "donde": [
+    "FTP · Financiación!C42",
+    "CAFP · Financiación!C42"
+   ],
+   "fila": "Tolerancia de cierre del cuadro (€)"
+  },
+  {
+   "id": "c0642",
+   "es": "Capital pendiente al vencimiento",
+   "donde": [
+    "FTP · Financiación!A43",
+    "CAFP · Financiación!A43"
+   ]
+  },
+  {
+   "id": "c0643",
+   "es": "Tiene que ser cero: el principal devuelto en el cuadro tiene que ser el prestado. Si sale positivo, el plazo no llega",
+   "donde": [
+    "FTP · Financiación!C43",
+    "CAFP · Financiación!C43"
+   ],
+   "fila": "Capital pendiente al vencimiento"
+  },
+  {
+   "id": "c0644",
+   "es": "Intereses del año 1",
+   "donde": [
+    "FTP · Financiación!A44",
+    "CAFP · Financiación!A44"
+   ]
+  },
+  {
+   "id": "c0645",
+   "es": "Devolución de principal del año 1",
+   "donde": [
+    "FTP · Financiación!A45",
+    "CAFP · Financiación!A45"
+   ]
+  },
+  {
+   "id": "c0646",
+   "es": "Intereses del año 2",
+   "donde": [
+    "FTP · Financiación!A46",
+    "CAFP · Financiación!A46"
+   ]
+  },
+  {
+   "id": "c0647",
+   "es": "Devolución de principal del año 2",
+   "donde": [
+    "FTP · Financiación!A47",
+    "CAFP · Financiación!A47"
+   ]
+  },
+  {
+   "id": "c0648",
+   "es": "Intereses del año 3",
+   "donde": [
+    "FTP · Financiación!A48",
+    "CAFP · Financiación!A48"
+   ]
+  },
+  {
+   "id": "c0649",
+   "es": "Devolución de principal del año 3",
+   "donde": [
+    "FTP · Financiación!A49",
+    "CAFP · Financiación!A49"
+   ]
+  },
+  {
+   "id": "c0650",
+   "es": "COBERTURA DEL SERVICIO DE LA DEUDA (DSCR)",
+   "donde": [
+    "FTP · Financiación!A50",
+    "CAFP · Financiación!A50"
+   ],
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0651",
+   "es": "DSCR del año 1",
+   "donde": [
+    "FTP · Financiación!A51",
+    "CAFP · Financiación!A51"
+   ],
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0652",
+   "es": "Año de CARENCIA si la hay: con sólo intereses en el denominador el ratio se dispara y no mide el negocio",
+   "donde": [
+    "FTP · Financiación!C51",
+    "CAFP · Financiación!C51"
+   ],
+   "fila": "DSCR del año 1"
+  },
+  {
+   "id": "c0653",
+   "es": "DSCR del año 2",
+   "donde": [
+    "FTP · Financiación!A52",
+    "CAFP · Financiación!A52"
+   ],
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0654",
+   "es": "DSCR del año 3",
+   "donde": [
+    "FTP · Financiación!A53",
+    "CAFP · Financiación!A53"
+   ],
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0655",
+   "es": "DSCR mínimo de todo el cuadro",
+   "donde": [
+    "FTP · Financiación!A54",
+    "CAFP · Financiación!A54"
+   ],
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0656",
+   "es": "El peor año de los que dura el préstamo, no el mejor de los tres que proyecta el P&L. Es el número que decide una operación. Ojo al alcance: los años 1 a 3 salen del P&L y del año 4 en adelante el cuadro MANTIENE el flujo del año 3, así que el mínimo de esos años es una proyección sostenida, no un año calculado. El flujo va después de impuestos",
+   "donde": [
+    "FTP · Financiación!C54",
+    "CAFP · Financiación!C54"
+   ],
+   "fila": "DSCR mínimo de todo el cuadro",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0657",
+   "es": "El DSCR se calcula ANTES de la deuda y DESPUÉS de impuestos: al resultado antes de impuestos se le resta el Impuesto de Sociedades y se le devuelven la amortización contable y los intereses; el resultado se divide entre lo que hay que pagar ese año. Por debajo del mínimo de la hoja de Supuestos, el negocio no genera para pagar el préstamo. En el cuadro, el flujo de caja disponible de los años 4 en adelante se mantiene en el del año 3: el P&L sólo proyecta tres, y aquí no se inventa un crecimiento que no está calculado.",
+   "donde": [
+    "FTP · Financiación!A56",
+    "CAFP · Financiación!A56"
+   ],
+   "pistas": [
+    "P03",
+    "P19",
+    "P12",
+    "P07",
+    "P22",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0665",
+   "es": "TRÁMITE / ACCIÓN",
+   "donde": [
+    "FTC · F1 - Constitución!B4",
+    "FTC · F2 - Vehículo!B4",
+    "FTC · F3 - Equipamiento!B4",
+    "FTC · F4 - Personal!B4",
+    "FTC · F5 - Marketing!B4",
+    "FTC · F6 - 90 Días!B4",
+    "… y 6 apariciones más"
+   ],
+   "fila": "OK"
+  },
+  {
+   "id": "c0666",
+   "es": "RESPONSABLE",
+   "donde": [
+    "FTC · F1 - Constitución!C4",
+    "FTC · F2 - Vehículo!C4",
+    "FTC · F3 - Equipamiento!C4",
+    "FTC · F4 - Personal!C4",
+    "FTC · F5 - Marketing!C4",
+    "FTC · F6 - 90 Días!C4",
+    "… y 6 apariciones más"
+   ],
+   "fila": "OK"
+  },
+  {
+   "id": "c0667",
+   "es": "PLAZO",
+   "donde": [
+    "FTC · F1 - Constitución!D4",
+    "FTC · F2 - Vehículo!D4",
+    "FTC · F3 - Equipamiento!D4",
+    "FTC · F4 - Personal!D4",
+    "FTC · F5 - Marketing!D4",
+    "FTC · F6 - 90 Días!D4",
+    "… y 6 apariciones más"
+   ],
+   "fila": "OK"
+  },
+  {
+   "id": "c0668",
+   "es": "NOTAS",
+   "donde": [
+    "FTC · F1 - Constitución!E4",
+    "FTC · F2 - Vehículo!E4",
+    "FTC · F3 - Equipamiento!E4",
+    "FTC · F4 - Personal!E4",
+    "FTC · F5 - Marketing!E4",
+    "FTC · F6 - 90 Días!E4",
+    "… y 6 apariciones más"
+   ],
+   "fila": "OK"
+  },
+  {
+   "id": "c0670",
+   "es": "Gestor",
+   "donde": [
+    "FTC · F1 - Constitución!C5",
+    "FTC · F1 - Constitución!C7",
+    "FTC · F1 - Constitución!C8",
+    "FTC · F1 - Constitución!C15",
+    "FTC · F4 - Personal!C6",
+    "FTC · F4 - Personal!C13",
+    "… y 11 apariciones más"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0671",
+   "es": "Semana 1",
+   "donde": [
+    "FTC · F1 - Constitución!D5",
+    "CAFC · F1 - Constitución!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0674",
+   "es": "Notario/Gestor",
+   "donde": [
+    "FTC · F1 - Constitución!C6",
+    "CAFC · F1 - Constitución!C7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "1 día",
+   "donde": [
+    "FTC · F1 - Constitución!D7",
+    "FTC · F1 - Constitución!D8",
+    "FTC · F1 - Constitución!D12",
+    "FTC · F1 - Constitución!D13",
+    "FTC · F2 - Vehículo!D8",
+    "FTC · F2 - Vehículo!D15",
+    "… y 23 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0681",
+   "es": "Cuota según la base mínima del tramo que te corresponda. Consulta el importe del ejercicio en curso y verifica con tu gestoría si te aplica la cuota reducida de inicio de actividad",
+   "donde": [
+    "FTC · F1 - Constitución!E8",
+    "CAFC · F1 - Constitución!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "FNMT",
+   "donde": [
+    "FTC · F1 - Constitución!C9",
+    "CAFC · F1 - Constitución!C11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "1-3 días",
+   "donde": [
+    "FTC · F1 - Constitución!D9",
+    "FTC · F1 - Constitución!D10",
+    "CAFC · F1 - Constitución!D6",
+    "CAFC · F1 - Constitución!D10",
+    "CAFC · F1 - Constitución!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0687",
+   "es": "Titular",
+   "donde": [
+    "FTC · F1 - Constitución!C10",
+    "FTC · F1 - Constitución!C14",
+    "FTC · F2 - Vehículo!C5",
+    "FTC · F2 - Vehículo!C14",
+    "FTC · F2 - Vehículo!C15",
+    "FTC · F2 - Vehículo!C16",
+    "… y 61 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0689",
+   "es": "Inscripción en el Registro Sanitario de tu Comunidad Autónoma (declaración responsable de inicio de actividad alimentaria)",
+   "donde": [
+    "FTC · F1 - Constitución!B11",
+    "CAFC · F1 - Constitución!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Aseguradora",
+   "donde": [
+    "FTC · F1 - Constitución!C12",
+    "FTC · F1 - Constitución!C13",
+    "CAFC · F2 - Local!C12",
+    "CAFC · F2 - Local!C13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0697",
+   "es": "Registro de actividades de tratamiento de datos personales",
+   "donde": [
+    "FTC · F1 - Constitución!B14",
+    "CAFC · F1 - Constitución!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0698",
+   "es": "Antes de abrir",
+   "donde": [
+    "FTC · F1 - Constitución!D14",
+    "FTC · F1 - Constitución!D15",
+    "FTC · F5 - Marketing!D16",
+    "CAFC · F1 - Constitución!D14",
+    "CAFC · F1 - Constitución!D15",
+    "CAFC · F5 - Marketing!D18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0702",
+   "es": "Tareas completadas:",
+   "donde": [
+    "FTC · F1 - Constitución!B17",
+    "FTC · F2 - Vehículo!B19",
+    "FTC · F3 - Equipamiento!B18",
+    "FTC · F4 - Personal!B16",
+    "FTC · F5 - Marketing!B18",
+    "FTC · F6 - 90 Días!B16",
+    "… y 6 apariciones más"
+   ]
+  },
+  {
+   "id": "c0703",
+   "es": "de",
+   "donde": [
+    "FTC · F1 - Constitución!D17",
+    "FTC · F2 - Vehículo!D19",
+    "FTC · F3 - Equipamiento!D18",
+    "FTC · F4 - Personal!D16",
+    "FTC · F5 - Marketing!D18",
+    "FTC · F6 - 90 Días!D16",
+    "… y 6 apariciones más"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "Usa el desplegable: ✓, ☐, N/A. N/A = no aplica, sale del total.",
+   "donde": [
+    "FTC · F1 - Constitución!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 (dv-error)",
+    "FTC · F2 - Vehículo!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 A17 (dv-error)",
+    "FTC · F3 - Equipamiento!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "FTC · F4 - Personal!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 (dv-error)",
+    "FTC · F5 - Marketing!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 A15 A16 (dv-error)",
+    "FTC · F6 - 90 Días!A5 A6 A7 A8 A9 A10 A11 A12 A13 A14 (dv-error)",
+    "… y 6 apariciones más"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0716",
+   "es": "1 semana",
+   "donde": [
+    "FTC · F2 - Vehículo!D7",
+    "FTC · F2 - Vehículo!D17",
+    "FTC · F3 - Equipamiento!D6",
+    "FTC · F3 - Equipamiento!D8",
+    "FTC · F3 - Equipamiento!D9",
+    "FTC · F3 - Equipamiento!D10",
+    "… y 16 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0721",
+   "es": "Ingeniero",
+   "donde": [
+    "FTC · F2 - Vehículo!C9",
+    "CAFC · F2 - Local!C8",
+    "CAFC · F2 - Local!C9",
+    "CAFC · F3 - Equipamiento!C5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0722",
+   "es": "2-3 semanas",
+   "donde": [
+    "FTC · F2 - Vehículo!D9",
+    "FTC · F5 - Marketing!D5",
+    "CAFC · F3 - Equipamiento!D12",
+    "CAFC · F3 - Equipamiento!D13",
+    "CAFC · F3 - Equipamiento!D17",
+    "CAFC · F3 - Equipamiento!D19",
+    "… y 1 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0725",
+   "es": "2-4 semanas",
+   "donde": [
+    "FTC · F2 - Vehículo!D10",
+    "FTC · F5 - Marketing!D10",
+    "CAFC · F3 - Equipamiento!D5",
+    "CAFC · F3 - Equipamiento!D10",
+    "CAFC · F5 - Marketing!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0728",
+   "es": "Ayuntamiento",
+   "donde": [
+    "FTC · F2 - Vehículo!C11",
+    "FTC · F2 - Vehículo!C12",
+    "CAFC · F2 - Local!C7",
+    "CAFC · F2 - Local!C10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "1-3 meses",
+   "donde": [
+    "FTC · F2 - Vehículo!D11",
+    "CAFC · F2 - Local!D5",
+    "CAFC · F2 - Local!D8",
+    "CAFC · F2 - Local!D10",
+    "CAFC · F2 - Local!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0739",
+   "es": "Hojas de reclamaciones oficiales y su cartel anunciador",
+   "donde": [
+    "FTC · F2 - Vehículo!B15",
+    "CAFC · F2 - Local!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0742",
+   "es": "2 semanas",
+   "donde": [
+    "FTC · F2 - Vehículo!D16",
+    "FTC · F5 - Marketing!D12",
+    "CAFC · F2 - Local!D15",
+    "CAFC · F4 - Personal!D7",
+    "CAFC · F5 - Marketing!D13",
+    "CAFC · F5 - Marketing!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0744",
+   "es": "Contrato de desinsectación, desratización y desinfección (DDD)",
+   "donde": [
+    "FTC · F2 - Vehículo!B17",
+    "CAFC · F2 - Local!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "Proveedor",
+   "donde": [
+    "FTC · F3 - Equipamiento!C5",
+    "FTC · F3 - Equipamiento!C6",
+    "FTC · F3 - Equipamiento!C8",
+    "FTC · F3 - Equipamiento!C9",
+    "FTC · F3 - Equipamiento!C12",
+    "FTC · F3 - Equipamiento!C13",
+    "… y 4 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0750",
+   "es": "1-2 semanas",
+   "donde": [
+    "FTC · F3 - Equipamiento!D5",
+    "FTC · F3 - Equipamiento!D7",
+    "FTC · F3 - Equipamiento!D15",
+    "FTC · F4 - Personal!D6",
+    "FTC · F4 - Personal!D10",
+    "FTC · F5 - Marketing!D8",
+    "… y 8 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0755",
+   "es": "Instalador",
+   "donde": [
+    "FTC · F3 - Equipamiento!C7",
+    "FTC · F3 - Equipamiento!C10",
+    "FTC · F3 - Equipamiento!C11",
+    "CAFC · F3 - Equipamiento!C9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0773",
+   "es": "Rotulista",
+   "donde": [
+    "FTC · F3 - Equipamiento!C15",
+    "CAFC · F5 - Marketing!C11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0778",
+   "es": "FASE 4: PERSONAL Y FORMACIÓN",
+   "donde": [
+    "FTC · F4 - Personal!A2",
+    "CAFC · F4 - Personal!A2"
+   ]
+  },
+  {
+   "id": "c0783",
+   "es": "Formación en higiene alimentaria de todo el equipo",
+   "donde": [
+    "FTC · F4 - Personal!B7",
+    "CAFC · F4 - Personal!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0790",
+   "es": "Titular o servicio ajeno",
+   "donde": [
+    "FTC · F4 - Personal!C10",
+    "CAFC · F4 - Personal!C11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0797",
+   "es": "Registro horario diario de la jornada de todo el equipo",
+   "donde": [
+    "FTC · F4 - Personal!B13",
+    "CAFC · F4 - Personal!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0798",
+   "es": "Desde el primer contrato",
+   "donde": [
+    "FTC · F4 - Personal!D13",
+    "FTC · F4 - Personal!D14",
+    "CAFC · F4 - Personal!D15",
+    "CAFC · F4 - Personal!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0800",
+   "es": "Informar al equipo del registro horario y del tratamiento de sus datos",
+   "donde": [
+    "FTC · F4 - Personal!B14",
+    "CAFC · F4 - Personal!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0801",
+   "es": "La cláusula informativa se entrega con el contrato; el fichaje es un tratamiento de datos, no sólo una obligación laboral",
+   "donde": [
+    "FTC · F4 - Personal!E14",
+    "CAFC · F4 - Personal!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0803",
+   "es": "FASE 5: MARKETING Y LANZAMIENTO",
+   "donde": [
+    "FTC · F5 - Marketing!A2",
+    "CAFC · F5 - Marketing!A2"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Diseñador",
+   "donde": [
+    "FTC · F5 - Marketing!C5",
+    "CAFC · F5 - Marketing!C5",
+    "CAFC · F5 - Marketing!C10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0815",
+   "es": "Fotógrafo",
+   "donde": [
+    "FTC · F5 - Marketing!C9",
+    "CAFC · F5 - Marketing!C9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0823",
+   "es": "Evento de inauguración",
+   "donde": [
+    "FTC · F5 - Marketing!B13",
+    "CAFC · F5 - Marketing!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0833",
+   "es": "FASE 6: PRIMEROS 90 DÍAS",
+   "donde": [
+    "FTC · F6 - 90 Días!A2",
+    "CAFC · F6 - 90 Días!A2"
+   ]
+  },
+  {
+   "id": "c0835",
+   "es": "Mes 1",
+   "donde": [
+    "FTC · F6 - 90 Días!D5",
+    "FTC · F6 - 90 Días!D8",
+    "CAFC · F6 - 90 Días!D7",
+    "CAFC · F6 - 90 Días!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0838",
+   "es": "Diario",
+   "donde": [
+    "FTC · F6 - 90 Días!D6",
+    "CAFC · F6 - 90 Días!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0840",
+   "es": "Control food cost semanal",
+   "donde": [
+    "FTC · F6 - 90 Días!B7",
+    "CAFC · F6 - 90 Días!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0841",
+   "es": "Semanal",
+   "donde": [
+    "FTC · F6 - 90 Días!D7",
+    "CAFC · F6 - 90 Días!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0846",
+   "es": "Mes 1-2",
+   "donde": [
+    "FTC · F6 - 90 Días!D9",
+    "CAFC · F6 - 90 Días!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0849",
+   "es": "Mes 1-3",
+   "donde": [
+    "FTC · F6 - 90 Días!D10",
+    "CAFC · F6 - 90 Días!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0852",
+   "es": "Mes 2",
+   "donde": [
+    "FTC · F6 - 90 Días!D11",
+    "FTC · F6 - 90 Días!D12",
+    "CAFC · F6 - 90 Días!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0857",
+   "es": "Mes 3",
+   "donde": [
+    "FTC · F6 - 90 Días!D13",
+    "FTC · F6 - 90 Días!D14",
+    "CAFC · F6 - 90 Días!D13",
+    "CAFC · F6 - 90 Días!D14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0858",
+   "es": "Comparar P&L real vs plan financiero",
+   "donde": [
+    "FTC · F6 - 90 Días!E13",
+    "CAFC · F6 - 90 Días!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0861",
+   "es": "INSTRUCCIONES DE USO",
+   "donde": [
+    "FTC · Instrucciones!A1",
+    "CAFC · Instrucciones!A1"
+   ]
+  },
+  {
+   "id": "c0863",
+   "es": "Las celdas VERDES son las editables: cambia esas y el resto del libro se recalcula solo.",
+   "donde": [
+    "FTC · Instrucciones!A4",
+    "CAFC · Instrucciones!A4"
+   ]
+  },
+  {
+   "id": "c0864",
+   "es": "Columna OK: elige ✓ (hecho), ☐ (pendiente) o N/A (no aplica). Las N/A no cuentan en el total.",
+   "donde": [
+    "FTC · Instrucciones!A5",
+    "CAFC · Instrucciones!A5"
+   ]
+  },
+  {
+   "id": "c0865",
+   "es": "El contador de cada pestaña cuenta sólo las ✓; las N/A salen del total.",
+   "donde": [
+    "FTC · Instrucciones!A6",
+    "CAFC · Instrucciones!A6"
+   ]
+  }
+ ]
+}

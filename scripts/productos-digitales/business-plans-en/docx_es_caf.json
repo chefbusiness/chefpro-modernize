@@ -1,0 +1,2873 @@
+{
+ "meta": {
+  "generado": "2026-10-04T16:31:30+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "caf",
+  "fichero_es": "astro-site/public/dl/plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx",
+  "sha256": "be9a05b6462bb61fa3693e13c77549a754870d108b65bf75a1afb378041dcb4c",
+  "fichero_en": "astro-site/public/dl/coffee-shop-business-plan/coffee-shop-business-plan.docx",
+  "titulo_en": "Coffee Shop Business Plan (10 Sections)",
+  "n_parrafos": 167,
+  "n_con_texto": 145,
+  "n_sin_runs": 18,
+  "n_un_run": 149,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 157,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 69,
+   "subtitulo": 25,
+   "vacio": 22,
+   "fijo": 20,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 94,
+  "palabras_traducir": 6208,
+  "tandas": {
+   "caf_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93
+    ],
+    "palabras": 3049
+   },
+   "caf_b": {
+    "parrafos": [
+     96,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105,
+     108,
+     109,
+     110,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117,
+     118,
+     119,
+     120,
+     121,
+     122,
+     123,
+     124,
+     125,
+     126,
+     127,
+     128,
+     129,
+     130,
+     131,
+     134,
+     137,
+     138,
+     139,
+     140,
+     141,
+     142,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150
+    ],
+    "palabras": 3159
+   }
+  },
+  "pagina_emu": [
+   7772400,
+   10058400
+  ],
+  "mover": {
+   "despues_de": 133,
+   "orden": [
+    110,
+    134,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+   ]
+  },
+  "rpr_de": {
+   "134": 112
+  },
+  "tokens": {
+   "clientes_dia": "average customers per day, year 1",
+   "clientes_a2": "average customers per day, year 2",
+   "clientes_a3": "average customers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "packaging and disposables, % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (food truck: commissary + truck parking)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out (food truck: truck and build-out), years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "occupancy per year (food truck: commissary + parking; coffee shop: rent)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even customers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even customers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: customers per day",
+   "optimista_clientes": "optimistic scenario: customers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "inv_lanzamiento": "launch marketing budget",
+   "inv_stock": "opening inventory",
+   "inv_obra": "construction / build-out",
+   "inv_instalaciones": "electrical + HVAC",
+   "inv_espresso": "two-group espresso machine",
+   "inv_mobiliario": "dining room furniture",
+   "inv_barra": "counter and pastry display bar",
+   "inv_terraza": "patio / sidewalk seating",
+   "aforo": "seats (tables + bar)",
+   "rotaciones_dia": "implied seat turns per day"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Cafeteria / Brunch",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Coffee Shop"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, analisis de mercado,\nestrategia operativa y checklist de apertura\npara abrir una cafeteria con brunch en Espana",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and opening checklist\nto open a coffee shop with brunch in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Espana, 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoria Gastronomica con fines informativos y orientativos. Las cifras, proyecciones y datos incluidos se basan en fuentes publicas del mercado espanol y en la experiencia profesional de mas de 29 anos en el sector. Los resultados reales pueden variar significativamente en funcion de la ubicacion, la gestion, las condiciones del mercado y otros factores. Este plan de negocio no constituye asesoramiento financiero, legal ni fiscal. Recomendamos consultar con profesionales especializados antes de tomar decisiones de inversion.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness Consultoria Gastronomica — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "INDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y Recursos Humanos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist Apertura Excel",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Coffee Shop Financial Projections (Excel) + Coffee Shop Opening Checklist (Excel)"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "El mercado español de restauración vive una transformación estructural hacia formatos de menor inversión y mayor rotación que los restaurantes tradicionales completos. Dentro de este contexto, la combinación de specialty coffee y brunch se posiciona como una de las oportunidades más sólidas para 2026, con una demanda que supera claramente la oferta existente en la mayoría de ciudades españolas de más de 100.000 habitantes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 64
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "España registra actualmente un parque de más de 210.000 cafeterías, de las cuales apenas un 8-10% trabaja con cafés de especialidad tostados en origen. El segmento de brunch genera en Madrid y Barcelona una facturación media de 18-22 EUR por cubierto en fines de semana, con ocupaciones del 75-85% en franjas de 10:00 a 14:00 horas. La penetración de este servicio en ciudades medianas y capitales de provincia permanece baja, lo que indica un mercado claramente infradesarrollado fuera de las dos grandes urbes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 83
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "El concepto propuesto consiste en una cafetería de 50-70 metros cuadrados de sala con 30-40 plazas interiores y terraza, diseñada bajo criterios de eficiencia operativa y experiencia visual. La carta combina café de especialidad tostado en origen con acompañamientos de calidad —bollería artesanal, tostadas premium, platos fríos y calientes de brunch—servido los siete días de la semana con énfasis en el servicio de brunch los sábados y domingos. El ticket medio objetivo se sitúa entre 8 y 12 EUR en horario de cafetería estándar, subiendo a 14-20 EUR en el servicio brunch completo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 93
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "La inversión total estimada alcanza los 94.000 EUR, distribuidos entre obra civil y equipamiento (maquinaria espresso de dos grupos, molinillo on-demand, horno de convención, mobiliario, decoración instagrameable y capital circulante para los primeros meses). Este rango de inversión, inferior a los 120.000 EUR máximos contemplados, responde a un escenario de local en propiedad o alquiler con obra menor, optimizado para reducir la puesta en marcha sin sacrificar la propuesta de valor diferenciada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 72
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "Las proyecciones financieras contemplan una facturación anual de aproximadamente 190.000 EUR en el primer ejercicio, basada en una media de 55-70 covers diarios con ticket medio de 9,50 EUR y una rotación superior al estándar cafetería durante los fines de semana. El punto de equilibrio se alcanza entre los meses 11 y 12, un horizonte de rentabilidad coherente con el sector y asumible dado el nivel de inversión contenido. A partir del segundo año, con la consolidación de la clientela y la optimización de procesos, el margen operativo debería situarse en el 12-18% sobre ventas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 95
+  },
+  "44": {
+   "estilo": "Normal",
+   "texto": "El equipo promotor contempla una estructura de 4 a 5 personas, incluyendo un responsable de operaciones con experiencia en hostelería y un equipo de sala formado para el servicio de brunch y la atención al cliente característica del segmento specialty. La política de recursos humanos prioriza la retención mediante formación continua y incentivos vinculados a objetivos de satisfacción del cliente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 60
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "El momento actual presenta condiciones favorables por tres factores concatenados. Primero, la cultura del brunch en España ha pasado de ser una tendencia urbana a una demanda consolidada, especialmente entre el segmento de 25-45 años con poder adquisitivo medio-alto. Segundo, el specialty coffee continúa su expansión geográfica desde las capitales hacia ciudades secundarias, con consumidores cada vez más informados y dispuestos a pagar un sobreprecio por calidad perceptible. Tercero, los locales comerciales en zonas céntricas ofrecen mejores condiciones de alquiler que hace tres años, producto de la consolidación del comercio electrónico y la liberación de espacios retail.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 97
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "Esta oportunidad de mercado, combinada con una inversión contenida y un modelo de negocio validado en otras geografías españolas, configura una propuesta de viabilidad alta para un promoter con capacidad de ejecución y conocimiento del tejido comercial local.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 38
+  },
+  "47": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El concepto se define como una cafetería de specialty coffee con servicio de brunch los fines de semana, diseñada para ocupar un nicho de mercado en crecimiento dentro del sector hostelero español. La propuesta combina dos tendencias consolidadas: la demanda de café de calidad superior y la expansión del brunch como formato de comida fuera de casa. El modelo operativo contempla una superficie de entre 50 y 70 metros cuadrados de sala, con capacidad para 30 a 40 plazas interiores y disponibilidad de terraza, lo que permite gestionar picos de demanda sin comprometer la experiencia del cliente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 97
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor se articula sobre tres pilares fundamentales que determinan la diferenciación respecto a la competencia tradicional. En primer lugar, la calidad del café: se trabaja con grano de tostador local, molido on-demand en el momento de preparación, utilizando una máquina espresso profesional de dos grupos que garantiza consistencia en la extracción. El latte art se convierte en elemento diferenciador y elemento de comunicación visual, generando contenido que los clientes comparten en redes sociales de forma orgánica.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 79
+  },
+  "51": {
+   "estilo": "Normal",
+   "texto": "El segundo pilar es la propuesta gastronómica de brunch, un formato que en España ha registrado un crecimiento del 18% anual en demanda durante los últimos tres años según datos del sector. La carta incluye opciones consolidadas como avocado toast, huevos benedictine, pancakes y bowls, con elaboración propia que permite controlar calidad y márgenes. El precio medio del brunch completo se sitúa entre 14 y 20 euros, significativamente superior al ticket de un desayuno convencional, lo que mejora la ticket medio diario y la rentabilidad por cubierto.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 87
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "El tercer pilar es la ambientación diseñada específicamente para generar contenido compartible. La combinación de plantas, luz natural, elementos de madera y decoración moderna responde a las expectativas visuales del público objetivo. Este diseño no responde a una moda pasajera sino a una cambio estructural en el comportamiento del consumidor hostelero: el 73% de los clientes menores de 40 años considera que la estética del espacio influye en su decisión de visita, según estudios recientes de comportamiento de consumo en España.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 81
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "El público objetivo se centra en el segmento de 25 a 45 años, urbano, con poder adquisitivo medio-alto y habituado a consumir fuera de casa. Este perfil busca experiencias que combinen calidad de producto con un entorno que permita socialización y compartición en redes sociales. La ubicación en zona de alto tránsito comercial o residencial resulta determinante para captar este flujo de clientes recurrentes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 64
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "Los horarios de operación reflejan la adaptación al comportamiento del consumidor español: de lunes a viernes de 7:30 a 18 horas para captar desayunos y meriendas laborales, mientras que sábado y domingo amplían el servicio hasta las 16 horas con brunch disponible de 9 a 15 horas. Esta distribución optimiza el uso de la infraestructura y permite concentrar la oferta de mayor valor añadido en los días de mayor potencial de ticket medio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 73
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "La inversión estimada de 70.000 a 120.000 euros se justifica por la necesidad de equipamiento profesional (máquina espresso, molinillo on-demand, horno de convención), obra civil adaptada al concepto visual y capital de funcionamiento inicial. El retorno proyectado, con ticket medio ponderado entre 8 y 20 euros según día y servicio, permite alcanzar rentabilidad operativa en un plazo de 18 a 24 meses siempre que se cumplan los objetivos de ocupación y ticket medio establecidos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 74
+  },
+  "56": {
+   "estilo": "Heading 1",
+   "texto": "3. Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "ANALISIS DE MERCADO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": "1A1A1A"
+   },
+   "rol": "subtitulo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 3
+  },
+  "59": {
+   "estilo": "Normal",
+   "texto": "MERCADO DE CAFETERIAS EN ESPAÑA",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 5
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "El sector de cafeterías en España representa un segmento fundamental dentro de la hostelería española, con una estructura empresarial caracterizada por la fragmentación y la predominancia de pequeños establecimientos. Según datos del Directorio Central de Empresas del INE, el número de cafeterías y bares de café supera las 42.000 unidades en territorio nacional, representando aproximadamente el 18% del total de establecimientos de Hostelería. La facturación agregada del sector de cafeterías se sitúa alrededor de los 6.500 millones de euros anuales, con un crecimiento sostenido del 3,5% en los últimos ejercicios.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 90
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "El mercado español presenta una distribución geográfica asimétrica, con mayor concentración en las comunidades autónomas de Andalucía, Cataluña, Madrid y Comunidad Valenciana, que concentran más del 60% de la oferta. Las zonas urbanas de más de 100.000 habitantes generan el 75% de la facturación sectorial, evidenciando la correlación directa entre densidad poblacional, poder adquisitivo y consumo de cafetería.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 58
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "CRECIMIENTO DEL SPECIALTY COFFEE Y THIRD WAVE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 7
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "El segmento de specialty coffee experimenta una expansión notable en el mercado español, impulsado por la tercera ola del café que prioriza la calidad del grano, la trazabilidad del origen y las técnicas de extracción artesanales. Este fenómeno ha generado la aparición de más de 1.200 tostadores especializados en España y una red de cafeterías de especialidad quehan triplicado su presencia en los últimos cinco años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 66
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las principales ciudades españolas, particularmente Madrid, Barcelona, Bilbao, Valencia y Sevilla, lideran esta transformación con una oferta diferenciada que incluye métodos de preparación como pour-over, aeropress y espresso de alta gama. El precio medio de una taza de specialty coffee oscila entre 3,50 y 5,50 euros, significativamente superior al café tradicional, lo que permite márgenes operativos superiores para los establecimientos especializados.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 61
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "FENOMENO BRUNCH EN CIUDADES ESPAÑOLAS",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 5
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El brunch se ha consolidado como una propuesta gastronómica de alto potencial en el mercado urbano español, especialmente entre la población millennial y Generation Z. Las búsquedas relacionadas con brunch en buscadores especializados crecen un 28% anual en España, con máxima demanda los fines de semana en horarios entre las 10:00 y las 14:00 horas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 55
+  },
+  "67": {
+   "estilo": "Normal",
+   "texto": "Madrid y Barcelona concentran la mayor oferta de establecimientos especializados en brunch, con más de 350 locales que ofrecen esta modalidad en la capital española y cerca de 280 en Barcelona. Ciudades secundarias como Valencia, Bilbao, Málaga y Santiago de Compostela muestran tendencias de crecimiento acelerado, con incrementos de oferta superiores al 40% en los últimos tres años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 58
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "PERFIL DEL CONSUMIDOR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 3
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "El consumidor tipo de cafetería con brunch en España corresponde al segmento urbano de 25 a 45 años, con formación universitaria, ingresos medios-altos y estilo de vida cosmopolita. Este perfil demográfico presenta una frecuencia de visita semanal de 2,3 veces y un ticket medio superior a los 12 euros en propuestas de brunch completo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 54
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "El consumidor español de cafetería de especialidad muestra preferencia por experiencias diferenciadas, valorando la atmósfera del local, la calidad de los productos y la propuesta de valor única. La sensibilidad hacia aspectos como la sostenibilidad, la procedencia de los alimentos y las opciones saludables influye significativamente en la decisión de compra, especialmente en el segmento de 25 a 35 años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 60
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "GASTO MEDIO Y TENDENCIAS DE CONSUMO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 6
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "El gasto medio en cafeterías urbanas en España se sitúa en 4,80 euros por visita, aunque este indicador asciende a 14,50 euros cuando se incluye la consumición de brunch o desayuno completo. Las tendencias emergentes que condicionan la demanda incluyen el crecimiento de las leches vegetales, con una penetración superior al 35% en cafeterías de especialidad, la demanda de opciones sin gluten, que representa el 20% de las peticiones especiales, y la consolidación del formato take-away, que ya representa el 40% de las ventas en cafeterías urbanas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 87
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "La sostenibilidad emerge como factor determinante, con el 65% de los consumidores dispuestos a pagar un suplemento por productos de comercio justo y el 50% priorizando establecimientos con políticas de gestión de residuos y packaging ecológico. Estas tendencias configuran un escenario favorable para propuestas de cafetería con brunch que integren calidad, innovación y responsabilidad ambiental como pilares de su propuesta de valor.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 62
+  },
+  "74": {
+   "estilo": "Heading 1",
+   "texto": "4. Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "76": {
+   "estilo": "Normal",
+   "texto": "El mercado español de cafeterías specialty y brunch presenta una madurez creciente en las principales ciudades, con Madrid y Barcelona concentrando más del 45% de la oferta premium. En 2026, el segmento de specialty coffee representa aproximadamente el 18% del total de cafeterías en ciudades de más de 200.000 habitantes, frente al 8% de 2019, lo que evidencia una transformación profunda del consumidor urbano hacia experiencias de mayor calidad sensorial y ambiental.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 72
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "Los competidores directos se dividen en dos categorías claramente diferenciadas. La primera incluye cafeterías specialty consolidadas como Nomad Coffee, Hana Coffee o Coffee & Bread, con modelos de negocio probados, bases de clientes fieles y capacidad de inversión en equipamiento de alta gama. Estas operan con tickets medios de 6-10 euros en consumo básico y han normalizado el precio del cappuccino specialty entre 3,50-4,50 euros. La segunda categoría comprende brunch spots especializados como Federal, The Brunch Club o Blat, que han capitalizado la tendencia weekend con propuestas completas de 16-22 euros pero con menor enfoque en la calidad del café como eje diferenciador. El hueco competitivo reside precisamente en la intersección: un local que combine excelencia en café specialty con propuesta brunch premium, sin renunciar a la accesibilidad del consumo diario.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 131
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "Los competidores indirectos añaden presión competitiva significativa. Las franquicias de café como Starbucks, Costa Coffee o McCafé dominan el segmento de conveniencia con más de 3.200 puntos de venta en España, ofreciendo estandarización, reconocimiento de marca y capacidad de marketing que un independiente no puede igualar. Las panaderías artesanales tipo Panem o Radius han incorporado líneas de desayunos que compiten por el mismo ticket de 8-12 euros, aprovechando su base de clientes por compra de pan. El fast casual internacional, con marcas como Pret a Manger consolidada en Madrid, representa la amenaza más sofisticada por su propuesta de calidad percibida alta con velocidad de servicio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 105
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "El análisis de las Cinco Fuerzas de Porter revela una rivalidad competitiva alta en el segmento urbano premium, con poder de negociación elevado del cliente final debido a la abundante oferta alternativa y su disposición a cambiar de establecimiento. Los proveedores de café specialty mantienen poder moderado dado el número creciente de tostadores artesanales especializados como Four Coffee Roasters, Café de Colombia o Avatara. Las barreras de entrada son significativas: el coste de alquiler en ubicaciones prime supera los 18-28 euros por metro cuadrado mensual en ciudades principales, la inversión en maquinaria profesional oscila entre 20.000-35.000 euros para un equipo de dos grupos con molinillo on-demand, y la curva de aprendizaje para alcanzar consistencia en extracción specialty requiere 6-12 meses de formación especializada del personal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 125
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "El análisis DAFO identifica como fortalezas la diferenciación por calidad de café, la propuesta dual que abarca consumo diario y experiencia weekend, y el potencial de prescripción en redes sociales para el público objetivo de 25-45 años. Las debilidades incluyen la estacionalidad inherente al brunch concentrada en sábado y domingo, la dependencia crítica de la ubicación para generar tráfico espontáneo, y la limitación de capacidad con 30-40 plazas que restringe el volumen de facturación en horas punta. Las oportunidades se centran en el crecimiento sostenido del 12% anual en el segmento specialty, la demanda insatisfecha de brunch de calidad en barrios emergentes, y la posibilidad de desarrollar marca propia de café tostado que genere ingresos adicionales. Las amenazas principales son la entrada de competidores con mayor capacidad financiera, la presión inflacionista en materias primas y costes laborales, y el cambio en preferencias del consumidor hacia opciones más saludables que puedan erosionar la propuesta de bollería.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 155
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "Los factores críticos de éxito se reducen a tres ejes: ubicación en zona de alto tráfico con sinergia entre residentes jóvenes profesionales y turismo de calidad, consistencia en la calidad del café mediante inversión en formación barista y mantenimiento preventivo de equipos, y capacidad de generar contenido visual que impulse la prescripción orgánica en Instagram, donde el público objetivo valida experiencias antes de visitarlas. La ventaja competitiva sostenible no reside en ningún elemento aislable, sino en la ejecución integrada de los tres factores con disciplina operativa diaria, ya que cualquier competidor puede copiar la carta o la decoración, pero la replicación de la excelencia consistente en servicio y producto requiere meses de consolidación que generan ventana competitiva defensable.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 118
+  },
+  "82": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "83": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "Analisis del mercado y posicionamiento",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 5
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El sector de cafeterías specialty en España crece a un ritmo del 8-12% anual, impulsado por consumidores menores de 45 años que priorizan calidad de café, estética del espacio y experiencia compartible en redes sociales. El brunch se consolida como propuesta de valor diferenciadora los fines de semana, con un ticket medio superior en un 60-70% al desayuno convencional. La cafetería se posicionará en el segmento medio-alto, combinando producto de calidad profesional con un ambiente diseñado específicamente para generar contenido viral orgánico. La ubicación en zona urbana de alto tráfico footfall será factor determinante para rentabilizar la inversión en marketing digital.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 101
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Estrategia digital y presencia online",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 5
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "Instagram constituye el canal primario de adquisición, con objetivo de alcanzar 2.000 seguidores en los primeros seis meses mediante publicación diaria de contenido visual de alta calidad: platos terminados, latte art, ambiente del local y testimonios de clientes. La inversión en sesiones fotográficas mensuales con profesional externo se estima en 200-300 euros mensuales, amortizable mediante ahorro en publicidad paid. Google My Business requiere optimización completa desde el día de apertura: fotos profesionales, horario actualizado, descripción con palabras clave locales y solicitud activa de reseñas a cada cliente satisfecho. El objetivo es obtener 50 reseñas con valoración superior a 4,5 estrellas en el primer trimestre.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 104
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "Captación y colaboraciones estratégicas",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 4
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "El plan de apertura contempla tres acciones concretas: tasting gratuito para 50 influencers locales del sector foodie con audiencia entre 5.000 y 30.000 seguidores, valorado en 1.500 euros; lanzamiento de tarjeta de fidelización física que ofrece café gratuito tras la décima compra, con coste estimado de 0,80 euros por unidad; y distribución de 500 cupones de descuento del 20% en la zona de influencia directa. Las colaboraciones con influencers se estructurarán mediante acuerdo de contenido a cambio de producto, priorizando perfiles con engagement superior al 3% y audiencia geolocalizada. El presupuesto para microcolaboraciones mensuales posteriores a la apertura se establece en 300-500 euros.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 103
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "Fidelización y eventos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 3
+  },
+  "91": {
+   "estilo": "Normal",
+   "texto": "El programa de fidelización integra sistema de sellos físicos con incentivación digital mediante newsletter semanal con oferta exclusiva para suscriptores. Los eventos mensuales de cata de café y taller de latte art cumplen triple función: generación de contenido para redes, diferenciación competitiva y creación de comunidad autour del brand. Cada evento con capacidad para 12-15 personas genera ingresos adicionales de 15-25 euros por participante y produce material audiovisual para dos semanas de contenido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 73
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "Presupuesto y control de resultados",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 5
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "La asignación presupuestaria para marketing se sitúa en el 4,5% de la facturación prevista, equivalente a 1.800-2.700 euros mensuales suponiendo una facturación inicial de 40.000-60.000 euros. Los indicadores clave de rendimiento incluyen: crecimiento mensual de seguidores Instagram superior al 8%, incremento de reseñas Google en 15 unidades mensuales, tasa de clientes recurrentes superior al 25% a partir del tercer mes y ticket medio realimentado por upselling de brunch. El seguimiento será quincenal con ajuste de acciones según rendimiento medido. La inversión en marketing de apertura, estimada en 4.000-6.000 euros, debe recuperase mediante adquisición de clientela base en los primeros 90 días de actividad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "caf_a",
+   "palabras": 103
+  },
+  "94": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "Ubicación y criterios de selección del local",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 7
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "La ubicación determina entre el sixty y el seventy por ciento del éxito de una cafetería en el mercado español actual. Se priorizan locales en zonas de alto tráfico peatonal, con visibilidad directa desde calle y preferiblemente en entornos de oficinas, universidades o barrios residenciales de nivel socioeconómico medio-alto. El rango de superficie ideal de cincuenta a setenta metros cuadrados permite distribuir treinta y cuarenta plazas interiores junto con zona de terraza, requisito indispensable para el concepto brunch donde la experiencia visual es factor determinante en la decisión de visita del cliente target de veinticinco a cuarenta y cinco años. El alquiler mensual en zona prime de ciudad media española oscila entre mil doscientos y dos mil quinientos euros, dependiendo de la provincia y ubicación exacta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 126
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "Equipamiento y inversión operativa",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 4
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "El equipamiento profesional representa el núcleo tecnológico del negocio. Una máquina espresso de dos grupos, tipo La Marzocco o similar, tiene un coste de adquisición de aproximadamente ocho mil euros incluyendo instalación y mantenimiento primer año. El molinillo on-demand de gama profesional ronda mil doscientos euros. El horno convección para elaboración de brunches y repostería asciende a cuatro mil quinientos euros, la vitrina expositora refrigerada dos mil quinientos euros y el lavavajillas industrial tres mil euros. El mobiliario, decoración, ambientación de marca y utillaje complementario completa la inversión en equipamiento con un rango de quince a veinticinco mil euros adicionales. Se recomienda reservar un diez por ciento del presupuesto para contingencia y elementos no contemplados inicialmente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 116
+  },
+  "100": {
+   "estilo": "Normal",
+   "texto": "Proveedores y cadena de suministro",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 5
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "La selección de proveedores define la calidad percibida del producto final. El café debe proceder de un tostador local con perfil de tueste específico para specialty coffee, con contratos de suministro que garanticen frescura y consistencia organoléptica. La bollería y elementos de pastelería se abastecen mediante acuerdo con pasteleria artesanal de proximidad, priorizando la diferenciación respecto a cadenas competidoras. Los ingredientes para brunch, incluyendo huevos, quesos, aguacate y elementos proteínicos, requieren proveedores de alimentación con entrega diaria o interdiaria para garantizar frescura. La leche de calidad superior, fundamental para bebidas espresso, representa un coste mensual de aproximadamente cuatrocientos euros en volumen medio. Se establece un sistema de pedidos con revisión semanal de stock y reposición automática para productos no perecederos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 120
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Flujo operativo y dimensión de personal",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 6
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "El horario de apertura a las seis treinta de la mañana permite capturar el segmento de desayunos rápidos entre semana, mientras que el servicio de brunch sábado y domingo se extiende hasta las diecisiete horas. La dotación mínima de personal incluye un responsable de sala con funciones de formación y supervisión, dos baristas con dominio de latte art y elaboración de bebidas especiales, y un ayudante de cocina para preparación de elementos de brunch. El coste de personal en España para 2026, incluyendo seguridad social, se sitúa entre mil ochocientos y dos mil cuatrocientos euros mensuales por empleado dependiendo de categoría y experiencia. El horario partido o intensivo permite optimizar costes en jornadas de menor actividad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 116
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "Gestión de inventario y sistema TPV",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 6
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "El control de inventario mediante sistema TPV integrado permite seguimiento en tiempo real de consumos, rotación de productos y detección automática de roturas de stock. El café en grano, conservado en condiciones óptimas de temperatura y humedad, tiene una vida útil de treinta días desde tueste, por lo que se gestiona con pedidos semanales de tres a cinco kilogramos según volumen de venta previsto. Los productos perecederos de brunch requieren control de caducidades con protocolo de rotación FIFO y revisión diaria. El sistema TPV, con coste de licencia mensual de ochenta a ciento veinte euros, integra gestión de mesas, pedidos a domicilio y módulo de análisis de ventas por producto, herramienta fundamental para optimización del ticket medio objetivo de ocho a veinte euros según momento de consumo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 127
+  },
+  "106": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y Recursos Humanos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "Organigrama y estructura de personal",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 5,
+   "nota": "Subtítulo de §7 (texto plano, sin negrita: es un párrafo Normal de una línea)"
+  },
+  "109": {
+   "estilo": "Normal",
+   "texto": "La estructura organizativa de una cafetería con servicio de brunch debe responder a la realidad operativa del sector en España durante 2026, donde la escasez de perfiles cualificados en baristería specialty continúa siendo uno de los principales cuellos de botella para nuevos proyectos. El modelo propuesto contempla un equipo inicial de cinco personas incluyendo al propietario-gerente, quien asume funciones directivas y de supervisión durante los primeros meses de operación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 69
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "PLAN FINANCIERO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": "1A1A1A"
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 2,
+   "nota": "Este párrafo y el bloque 111-119 PASAN a la sección 8 (el ensamblador los mueve: en el ES el bloque financiero estaba dentro de §7 y §8 decía «[Contenido pendiente de generacion]»). 110 = subtítulo corto de §8, p. ej. «Financial plan at a glance»"
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "Inversión inicial y desglose de gastos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 6,
+   "nota": "Subtítulo (pasa a §8): «Startup costs and funding» o similar"
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "La apertura de una cafetería con brunch requiere una inversión inicial de 94.000 euros, distribuida en activos fijos, obras y gastos de puesta en marcha. El equipamiento profesional representa el núcleo de la inversión, con la máquina de café valorada en 8.000 euros y el molinillo especializado en 1.200 euros, elementos esenciales para garantizar la calidad de las bebidas que definirán la propuesta de valor. El horno profesional de 4.500 euros y la vitrina expositora de 2.500 euros completan el equipamiento de cocina y sala, mientras que el lavavajillas industrial de 2.500 euros asegura la eficiencia operativa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 97
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "El mobiliario asciende a 11.000 euros, incluyendo mesas, sillas y elementos de diseño que contribuyan a la experiencia de brunch que busca diferenciarse en el mercado. Las obras de adecuación del local representan 18.000 euros, presupuesto que contempla la instalación eléctrica, fontanería, climatización y acabados necesarios para cumplir la normativa sanitaria vigente. La terraza exterior, valorada en 4.000 euros, constituye un elemento diferenciador que amplía la capacidad de servicio y genera atractivo visual para los transeúntes. La decoración e imagen corporativa requieren 3.000 euros, mientras que la campaña inicial de marketing se estima en 2.000 euros para dar visibilidad a la apertura. Finalmente, el stock inicial de materias primas se fixa en 2.000 euros y el fondo de maniobra, que cubre los primeros meses de funcionamiento antes de alcanzar la rentabilidad, alcanza los 9.000 euros.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 135
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "Previsión de facturación y márgenes operativos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 6,
+   "nota": "Subtítulo (pasa a §8): «Sales forecast and margins» o similar"
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "El plan de negocio proyecta una facturación de 190.000 euros en el primer ejercicio, con una progresión hacia los 225.000 euros en el segundo año y los 263.000 euros en el tercero. Esta evolución refleja la consolidación de la clientela, el incremento del ticket medio y la optimización de los procesos operativos. El modelo de negocio contempla dos líneas de facturación claramente diferenciadas: la cafetería especializada, con un food cost situado entre el 25% y el 30%, y la oferta de brunch y restauración, con un food cost que oscila entre el 30% y el 35%. Estos márgenes permiten absorber los costes de personal, alquiler, suministros y gastos generales manteniendo una estructura rentable.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 113
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El punto de equilibrio se establece en 53 clientes diarios, con un ticket medio de 9,50 euros. Este cálculo considera los costes fijos mensuales, que incluyen alquiler, nóminas, servicios y amortizaciones, frente al margen de contribución generado por cada servicio. Alcanzar este volumen de clientela garantiza la viabilidad del proyecto sin generar pérdidas, constituyendo el umbral mínimo de actividad necesario para la sostenibilidad del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 65
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "Análisis de escenarios",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 3,
+   "nota": "Subtítulo (pasa a §8): «Scenario analysis» o similar"
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "La planificación financiera contempla tres escenarios que permiten evaluar la sensibilidad del proyecto ante variaciones en la demanda. En el escenario pesimista, con una facturación un 15% inferior a las previsiones, el punto de equilibrio se alcanzaría en el mes decimocuarto, manteniendo la viabilidad del proyecto aunque con un retraso en la generación de beneficios. El escenario realista asume el cumplimiento de las proyecciones establecidas, con un payback de 30 meses que permite recuperar la inversión inicial en un plazo de dos años y medio. En el escenario optimista, con una facturación un 10% superior a las estimaciones, el retorno de inversión se situaría en 24 meses, aprovechando el efecto alaveda de la terraza y la fidelización de una clientela recurrente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 121
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "El período de retorno de inversión estimado entre 24 y 36 meses se alinea con los estándares del sector de hostelería, donde la recuperación de capital suele extenderse más allá de los dos primeros años debido a la estacionalidad y al período de consolidación de mercado. La estructura financiera propuesta, con un fondo de maniobra suficiente para cubrir los primeros meses de actividad, proporciona margen para gestionar posibles desviaciones sin comprometer la operación diaria.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 74
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "Perfiles profesionales y competencias requeridas",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 5,
+   "nota": "Subtítulo de §7"
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "El perfil de barista principal debe cumplir con unos estándares mínimos que el mercado actual exige: dominio completo de extracción espresso, capacidad de latte art de nivel intermedio-avanzado, conocimiento de orígenes y perfiles de taza, y experiencia en mantenimiento de equipos de espresso. En el contexto español de 2026, este profesional representa el activo más valioso del proyecto, siendo responsable de la consistencia del producto y de la formación del equipo restante.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 72
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "Los baristas-camareros combinan funciones de preparación de bebidas básicas y atención al cliente, debiendo dominar la manipulación de leches vegetales, la preparación de desayunos rápidos y los protocolos de servicio. El ayudante de cocina para brunch requiere experiencia en elaboración de platos bruncheros: huevos benedict, avocado toast, pancakes y repostería de horneo, además de conocimientos de normativa de alérgenos yAPPCC.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 60
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "Costes laborales y estructura salarial",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 5,
+   "nota": "Subtítulo de §7"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "El Convenio Colectivo de Hostelería de España establece para 2026 unas retribuciones que, aplicadas a este proyecto, generan una estructura de costes laborales anuales de aproximadamente 72.000 euros en el primer ejercicio. Esta cifra incluye el salario base, las dos pagas extraordinarias obligatorias, el prorrateo de vacaciones y las cotizaciones a la Seguridad Social empresarial, que ascienden al 33,4% sobre la base de cotización.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 64
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "La distribución salarial propuesta para el año uno contempla un salario bruto anual de 28.000 euros para el barista principal, 24.000 euros para los baristas-camareros, 26.000 euros para el ayudante de cocina y 22.000 euros para el refuerzo de fines de semana en régimen de tiempo parcial. El propietario-gerente percibe un salario de 30.000 euros brutoss, asumiendo que una parte de su retribución se materializa vía participación en resultados a partir del segundo año.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 74
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "Planificación de turnos y gestión operativa",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 6,
+   "nota": "Subtítulo de §7"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "La organización de turnos responde al patrón de demanda característico de una cafetería con brunch: el horario de mañana presenta un pico entre las 08:00 y las 11:00 horas para desayunos rápidos, seguido de un descenso hasta la hora del brunch de fin de semana, que genera la mayor ocupación entre las 11:30 y las 15:00 horas. El equipo tipo para mañana incluye al barista principal y un barista-camarero, ampliándose con el ayudante de cocina y el refuerzo de fines de semana para el servicio de brunch.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 87
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "La jornada laboral semanal se establece en 40 horas distribuidas en cinco días para el personal fijo, con flexibilidad para adaptar turnos según estacionalidad y eventos locales. El propietario-gerente trabaja directamente en la operación durante los primeros seis meses, reduciendo su presencia a funciones de supervisión y gestión administrativa una vez consolidado el equipo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 54
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "Formación y desarrollo del equipo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 5,
+   "nota": "Subtítulo de §7"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "El plan formativo inicial contempla una inversión de 400-600 euros por empleado en formación específica durante el primer mes de operación. Los contenidos incluyen estandarización de extracciones según protocolos de la SCA, control de calidad de bebidas con leche, elaboración del menú brunch con fichas técnicas detalladas, gestión de alérgenos conforme alReal Decreto 126/2015 y protocolos de atención al cliente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 60
+  },
+  "131": {
+   "estilo": "Normal",
+   "texto": "La formación continua se estructura mediante reuniones semanales de quince minutos para revisión de calidad y sesiones mensuales de desarrollo de nuevas recetas. Esta inversión en capital humano resulta determinante para la diferenciación del proyecto en un mercado donde la experiencia del cliente depende directamente de la competencia del equipo barista.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 51
+  },
+  "132": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "133": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "134": {
+   "estilo": "Normal",
+   "texto": "[Contenido pendiente de generacion]",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": "CC0000"
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 4,
+   "nota": "En el ES: «[Contenido pendiente de generacion]». En la EN va JUSTO DESPUÉS del subtítulo 110: escribe el resumen del plan financiero (inversión, fondos propios + préstamo, ventas año 1-3, EBITDA y resultado, equilibrio, DSCR, saldo mínimo de caja) SOLO con tokens"
+  },
+  "135": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "136": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "137": {
+   "estilo": "Normal",
+   "texto": "La elección de la forma jurídica constituye el primer paso administrativo y determina el régimen de responsabilidad y fiscalidad del proyecto. Para una cafetería de este perfil, la Sociedad Limitada sigue siendo la estructura más recomendada por su protección patrimonial y flexibilidad en la gestión de beneficios. La Ley Crea y Crece permite actualmente la constitución con un capital mínimo de un euro, aunque desde la perspectiva de un consultor con tres décadas de experiencia recomiendo capitalizar al menos entre 3.000 y 5.000 euros para transmitir solvencia ante proveedores y entidades bancarias, además de cubrir los primeros meses de actividad hasta alcanzar el punto de equilibrio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 106,
+   "nota": "D22 §9 1/6: estructura (LLC vs sole proprietorship; Secretary of State; registered agent; operating agreement) + EIN gratis en el IRS. Fuente: sba.gov (choose a business structure), irs.gov"
+  },
+  "138": {
+   "estilo": "Normal",
+   "texto": "El epígrafe del Impuesto sobre Actividades Económicas correspondiente es el 671.4, que engloba cafés y bares sin spectacles, con una cuota provincial que varía entre 400 y 800 euros anuales dependiendo del municipio. Este epígrafe resulta determinante para la clasificación de la licencia de apertura, ya que define si el establecimiento se encuadra en la categoría de actividad inocua o clasificada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 61,
+   "nota": "§9 2/6: registros de impuestos y licencias: seller's permit / state sales tax registration, business license de la ciudad o el condado, DBA si aplica (sustituye el IAE)"
+  },
+  "139": {
+   "estilo": "Normal",
+   "texto": "La licencia de actividad constituye el permiso nuclear para la apertura. En la mayoría de municipios españoles, una cafetería que no incluya cocina elaboradora de frituras, asados o preparaciones culinarias complejas puede optar por la licencia de actividad inocua, cuyo procedimiento mediante declaración responsable permite abrir en un plazo de uno a tres meses frente a los seis a doce meses de una licencia clasificada. No obstante, la elaboración propia de bollería introduce un factor determinante: si se hornean croissants, magdalenas u otros productos de pastelería, el establecimiento debe figurar registrado en el Registro General Sanitario de Empresas Alimentarias y Alimentos (RGSEAA), lo que en algunos municipios implica solicitar una licencia de actividad clasificada en lugar de inocua. La decisión entre declarar responsablemente o solicitar licencia tradicional depende del ayuntamiento concreto y de la interpretación que este haga de la actividad productiva.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 142,
+   "nota": "§9 3/6: zoning check ANTES de firmar el alquiler + building permits de la obra + certificate of occupancy (sustituye la licencia de actividad)"
+  },
+  "140": {
+   "estilo": "Normal",
+   "texto": "El sistema APPCC (Análisis de Peligros y Puntos Críticos de Control) resulta obligatorio independientemente del tamaño del establecimiento. Para una cafetería con servicio de brunch, los alérgenos representan el punto crítico principal, especialmente por la manipulación de leches vegetales (avena, almendra, soja) que deben mantenerse estrictamente separadas de la leche convencional y etiquetarse correctamente. La formación como manipulador de alimentos es requisito indispensable para todo el personal que intervenga en la preparación y servicio, con renovación recomendada cada tres años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 80,
+   "nota": "§9 4/6: health permit del food establishment con plan review e inspección + Certified Food Protection Manager + food handler cards + plan de seguridad alimentaria basado en HACCP donde se exija + 9 alérgenos mayores (sustituye el APPCC). Fuente: fda.gov (Food Code)"
+  },
+  "141": {
+   "estilo": "Normal",
+   "texto": "La licencia de terraza constituye un permiso complementario esencial para el modelo de negocio descrito, dado que la experiencia instagrameable que busca el target de 25 a 45 años depende en gran medida del espacio exterior. Esta licencia se concede por temporadas, generalmente con renovación anual entre marzo y octubre, y su coste oscila entre 15 y 40 euros por metro cuadrado dependiendo del municipio. La tramitación debe realizarse con antelación mínima de dos meses respecto a la apertura prevista.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 80,
+   "nota": "§9 5/6: sidewalk café permit (terraza) + sign permit + liquor license SOLO si sirves alcohol (pídelo pronto: puede tardar meses)"
+  },
+  "142": {
+   "estilo": "Normal",
+   "texto": "En materia de prevención de riesgos laborales, el empresario debe elaborar el plan de prevención de riesgos laborales y realizar la evaluación de riesgos del puesto de trabajo, obligaciones aplicables desde el primer trabajador contratado. La integración de estos aspectos legales desde la fase de planificación permite evitar retrasos en la apertura y posibles sanciones que pueden alcanzar los 600.000 euros en casos graves de incumplimientosanitario. El presupuesto recomendado para cubrir tasas administrativas, licencias y legalización de equipos durante los primeros seis meses de actividad se sitúa entre 4.000 y 8.000 euros, inversión que debe contemplarse dentro del plan de financiación inicial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 102,
+   "nota": "§9 6/6: empleo y seguros: OSHA basics + workers' comp + I-9 / W-4 / new-hire reporting + general liability y BOP; como ÚLTIMA frase o frases, la nota UK: registrar el negocio de alimentos en el council 28 días antes de abrir (gratis), Food Hygiene Rating 1-5, VAT 20 % en el local y en comida caliente, 14 alérgenos, permiso del council para mesas en la calle"
+  },
+  "143": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "144": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "145": {
+   "estilo": "Normal",
+   "texto": "El mercado español del specialty coffee vive un momento de expansión acelerada. Las principales ciudades —Madrid, Barcelona, Valencia, Bilbao— han duplicado el número de cafeterías de tercer ola en los últimos cinco años, y la demanda sigue superando la oferta en barrios con densidad de población joven y profesional. El brunch se ha consolidado como categoría diferenciada: genera un ticket medio entre un 40% y un 65% superior al desayuno convencional y atrae a un clientele con mayor disposición a pagar por experiencia y presentación. La combinación de ambos conceptos —specialty coffee de calidad más brunch elsabado y domingo— responde a una tendencia estructural, no coyuntural. España cierra 2025 con más de 2.800 cafeterías specialty registradas, y el segmento brunch crece a doble dígito anual en las urbes de más de 300.000 habitantes. La oportunidad es real y tiene base en datos de consumo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 144
+  },
+  "146": {
+   "estilo": "Normal",
+   "texto": "Los riesgos existen y deben cuantificarse con honestidad. La dependencia del fin de semana para el brunch implica que el 60-70% de la facturación semanal debe generarse entre lunes y viernes con el negocio de café y desayunos diarios. Una ubicación con bajo tráfico entre semana erosiona la viabilidad del modelo. La estacionalidad turística afecta a locales en zonas de alto impacto estacional, con meses de ocupación dispar. El riesgo de ubicación es el primero que debe descartarse antes de comprometer inversión: un local en calle con paso superior a 2.000 peatones hora, preferiblemente cerca de oficinas, universidades o zonas residenciales de alto poder adquisitivo, no admite sustitutos. La concentración de margen en el café —producto de alto margen bruto pero volumen limitado— requiere volumen diario sostenido para cubrir costes fijos de local, personal y amortizaciones.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 136
+  },
+  "147": {
+   "estilo": "Normal",
+   "texto": "La inversión de 70.000 a 120.000 euros representa una fracción de lo que requiere un restaurante completo, y esa es la fortaleza principal del modelo. El margen bruto en café de especialidad oscila entre el 75% y el 85% cuando se controla el origen, se trabaja con tostados pequeños y se forma al equipo en extracción. La fidelización funciona: un cliente que consume café de calidad tres veces por semana genera un valor de vida útil superior a 400 euros anuales. La experiencia instagrameable —presentación cuidada, terraza, estética coherente— actúa como marketing gratuito cuando se combina con una estrategia activa de reseñas y presencia digital.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 105
+  },
+  "148": {
+   "estilo": "Normal",
+   "texto": "La ejecución debe seguir un cronograma preciso. El primer mes se dedica a la constitución jurídica, registro de marca y firma de arrendamiento del local, tras haber validado la ubicación con conteo de tráfico real durante al menos dos semanas. Los meses dos y tres comprenden la obra civil, instalaciones y adquisición de equipamiento: máquina de espresso de dos grupos con caldera independiente, molinillo on-demand de muelas cónicas, horno de convención para bollería y reposición, mobiliarioselected para 30-40 plazas. El mes cuatro se destina a la contratación de dos o tres personas —un barista titular con experiencia en specialty coffee y ayudantes de sala—, formación intensiva en espresso, latte art, protocolo de brunch y atención al cliente. El mes cinco marca el soft opening: horario reducido, servicio controlado, recolección activa de feedback y ajustes operativos. La apertura completa llega en el mes seis.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 143
+  },
+  "149": {
+   "estilo": "Normal",
+   "texto": "Los indicadores clave de rendimiento deben monitorearse semanalmente desde el inicio. El objetivo de clientes diarios se sitúa entre 80 y 120 en el primer trimestre, con escalada hasta 150-200 en el segundo año. El ticket medio objetivo supera los 11 euros incluyendo brunch. El food cost se mantiene por debajo del 28% mediante control de porciones y gestión de desperdicios. Las reseñas de Google deben alcanzar 4,5 estrellas con más de 50 opiniones en el primer trimestre y 150 en el primer año, como indicador de satisfacción y atractivo para nuevos clientes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 93
+  },
+  "150": {
+   "estilo": "Normal",
+   "texto": "A tres años, el negocio debe generar fondos propios suficientes para financiar un segundo punto de venta en otro barrio o ciudad, o bien desarrollar una línea de marca propia de café tostado para venta al detal y distribución a otras cafeterías. La visión de ChefBusiness para este tipo de proyecto es clara: rentabilidad demostrable en el primer año, escalabilidad en el segundo, diversificación de ingresos en el tercero. El modelo funciona cuando se ejecuta con rigor en la selección del local, formación del equipo y disciplina en los costes operativos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "caf_b",
+   "palabras": 91
+  },
+  "151": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "152": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "153": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "154": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "155": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "156": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "157": {
+   "estilo": "Normal",
+   "texto": "Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "158": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "159": {
+   "estilo": "Normal",
+   "texto": "Mas de 29 anos transformando negocios gastronomicos.\nDiagnostico, consultoria integral, mentoria y apertura de restaurantes.\n\nchefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Built on more than 29 years in professional kitchens and restaurant consulting.\nAI agents, templates and digital products for restaurants, cafes, bars and food trucks.\n\naichef.pro\ninfo@aichef.pro"
+  },
+  "160": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "161": {
+   "estilo": "Normal",
+   "texto": "Complementa este plan con nuestros productos digitales:",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Complete this plan with our digital products:"
+  },
+  "162": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas: Cafeteria / Brunch — 12 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro"
+  },
+  "163": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro — 12 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ HACCP Food Safety Kit Pro"
+  },
+  "164": {
+   "estilo": "Normal",
+   "texto": "→ Pack Plantillas APPCC — 14 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Restaurant Staff Scheduling Kit Pro"
+  },
+  "165": {
+   "estilo": "Normal",
+   "texto": "→ Gastro Pro Prompts eBook (300+ prompts IA) — 9 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Gastro Pro Prompts eBook (300+ AI prompts)"
+  },
+  "166": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}
