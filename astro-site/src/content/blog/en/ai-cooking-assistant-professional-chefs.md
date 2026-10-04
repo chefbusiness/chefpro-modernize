@@ -345,7 +345,7 @@ imageAlt: "Professional chef using AI tablet assistant in modern commercial kitc
 </ul>
 <p><strong>The AI role</strong>: Organize knowledge, suggest adaptations, ensure consistency. The human role: honor tradition while innovating respectfully.</p>
 <h3>Team Leadership and Mentoring</h3>
-<p>A kitchen runs on relationships as much as recipes. The emotional intelligence required to manage a brigade, develop talent, and maintain morale under pressure cannot be coded.</p>
+<p>A kitchen runs on relationships as much as recipes. The emotional intelligence required to manage a <a href="https://aichef.pro/en/blog/kitchen-brigade-system">brigade</a>, develop talent, and maintain morale under pressure cannot be coded.</p>
 <p><strong>Essential human leadership:</strong></p>
 <ul>
 <li><strong>Motivation during the rush</strong>: Keeping energy high when tickets are stacking and tickets are flying</li>
