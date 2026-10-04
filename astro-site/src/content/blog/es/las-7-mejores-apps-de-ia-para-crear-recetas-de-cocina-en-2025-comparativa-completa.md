@@ -92,9 +92,9 @@ Si trabajas escandallos reales, necesitas generar variaciones de una receta para
 **Mejor para:** aficionados que entrenan, cuentan calorías o quieren menús semanales equilibrados sin romperse la cabeza.  
 **Veredicto:** un asistente nutricional muy afinado, aunque la experiencia conversacional no es la más rápida para recetas exprés.
 
-ChefGPT funciona como un chatbot que te pregunta preferencias, restricciones y objetivos calóricos, y te genera planes de comida con recetas detalladas. El plan AI Chef Miembro permite cierta interacción y los planes superiores desbloquean planes ilimitados y ajustes más finos. Para quien necesita saber exactamente cuántos gramos de proteína lleva cada plato y tener la compra organizada, es difícil encontrar una alternativa tan cómoda. Aunque si buscas una receta con lo primero que pillas de la nevera, te irá mejor SuperCook o Mr. Cook.
+ChefGPT funciona como un chatbot que te pregunta preferencias, restricciones y objetivos calóricos, y te genera planes de comida con recetas detalladas. El plan básico de ChefGPT permite cierta interacción y los planes superiores desbloquean planes ilimitados y ajustes más finos. Para quien necesita saber exactamente cuántos gramos de proteína lleva cada plato y tener la compra organizada, es difícil encontrar una alternativa tan cómoda. Aunque si buscas una receta con lo primero que pillas de la nevera, te irá mejor SuperCook o Mr. Cook.
 
-[ChefGPT en español](https://aichef.pro/blog/chef-gpt-espanol)
+[Reseña completa de ChefGPT y alternativas](https://aichef.pro/blog/chef-gpt)
 
 <aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Chef Privado</h3><p class="mt-2 text-muted-foreground">Operativa para chef privado y personal chef.</p><a href="/kit-tareas-chef-privado?utm_source=blog&amp;utm_medium=banner&amp;utm_content=las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Chef Privado por €18</a></aside>
 
@@ -122,7 +122,7 @@ Estas dos apps (a veces bajo nombres distintos según la tienda) comparten filos
 **Mejor para:** quien quiere cero complicaciones: abrir la app, meter tres ingredientes y cocinar.  
 **Veredicto:** la opción más ligera, sin barreras de entrada, pero limitada en personalización y análisis.
 
-Mr. Cook no exige crear una cuenta; escribes lo que tienes en la nevera y en segundos te sugiere un plato. El plan AI Chef Miembro permite 10.000 créditos al mes para generaciones. Perfecto para una cena improvisada o para enganchar a alguien que nunca ha usado una app de cocina. Por contra, olvídate de ajustar raciones, ver información nutricional detallada o trabajar con decenas de ingredientes simultáneos.
+Mr. Cook no exige crear una cuenta; escribes lo que tienes en la nevera y en segundos te sugiere un plato. Su versión gratuita permite varias generaciones al día. Perfecto para una cena improvisada o para enganchar a alguien que nunca ha usado una app de cocina. Por contra, olvídate de ajustar raciones, ver información nutricional detallada o trabajar con decenas de ingredientes simultáneos.
 
 [IA para recetas de cocina](https://aichef.pro/blog/ia-para-recetas-de-cocina-gratis)
 
@@ -130,7 +130,7 @@ Mr. Cook no exige crear una cuenta; escribes lo que tienes en la nevera y en seg
 **Mejor para:** quien está aprendiendo a cocinar o quiere pasos muy pautados con desglose nutricional.  
 **Veredicto:** una buena escuela de cocina interactiva, pero le falta músculo para un entorno profesional.
 
-RecetApp se centra en la experiencia de usuario: pasos guiados, fotos, temporizador integrado y una ficha nutricional al final de cada receta. El plan AI Chef Miembro ya ofrece bastante y los planes premium añaden recetas exclusivas y planes de comida. Sin embargo, no genera recetas desde cero a partir de tus ingredientes con inteligencia artificial pura, sino que adapta su base de datos. Para hostelería, se queda en la superficie.
+RecetApp se centra en la experiencia de usuario: pasos guiados, fotos, temporizador integrado y una ficha nutricional al final de cada receta. Su versión gratuita ya ofrece bastante y los planes premium añaden recetas exclusivas y planes de comida. Sin embargo, no genera recetas desde cero a partir de tus ingredientes con inteligencia artificial pura, sino que adapta su base de datos. Para hostelería, se queda en la superficie.
 
 
 

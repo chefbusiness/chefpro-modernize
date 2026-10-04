@@ -1,6 +1,6 @@
 ---
-title: "Homogeneización: Concepto y Definición"
-description: "Descubre qué es la homogeneización: proceso mecánico que reduce partículas para crear mezclas estables. Aplicaciones en leche, jugos, salsas y cocina…"
+title: "Homogeneización: qué es y cómo funciona"
+description: "La homogeneización reduce el tamaño de las partículas de una mezcla para que no se separe. Así funciona en la leche, los zumos y las salsas, y en la cocina."
 pubDate: 2026-03-19
 modDate: 2026-09-05
 category: glosario

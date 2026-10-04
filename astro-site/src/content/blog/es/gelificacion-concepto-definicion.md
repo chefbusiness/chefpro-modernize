@@ -1,6 +1,6 @@
 ---
-title: "Gelificación: Concepto y Definición"
-description: "Descubre qué es la gelificación: transformación de líquidos en geles. Agentes (agar, gelatina, alginato), técnicas de esferificación, y aplicaciones en…"
+title: "Gelificación: qué es y cómo se logra"
+description: "La gelificación convierte un líquido en gel con agentes como agar-agar, gelatina o alginato. Conoce sus tipos, la esferificación y los errores más comunes."
 pubDate: 2026-03-19
 modDate: 2026-08-31
 category: glosario

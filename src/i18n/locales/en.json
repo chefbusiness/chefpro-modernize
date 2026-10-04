@@ -1688,14 +1688,14 @@
   },
   "landingMarketing": {
     "seo": {
-      "title": "Restaurant Marketing with AI | AI Chef Pro",
-      "description": "Automate your restaurant's marketing with artificial intelligence. Social media, Google My Business, review management and campaigns in minutes. Start today.",
-      "keywords": "restaurant marketing ai, restaurant social media ai, google my business restaurant, restaurant reviews ai, restaurant content ai, hospitality marketing ai, restaurant advertising ai"
+      "title": "AI Marketing for Restaurants | AI Chef Pro",
+      "description": "AI marketing for restaurants: create social media posts, reply to Google reviews and launch campaigns in minutes. Plans from €10/month. Try it today.",
+      "keywords": "ai marketing for restaurants, ai restaurant marketing, ai for restaurant marketing, ai tools for restaurant marketing, ai social media manager for restaurants, ai restaurant advertising, restaurant social media ai, google my business restaurant, restaurant reviews ai"
     },
     "hero": {
       "badge": "Gastronomy marketing automated with AI",
-      "h1": "Restaurant Marketing with Artificial Intelligence",
-      "subtitle": "Create social media content, manage reviews, optimize your Google listing and launch promotions in minutes. No agency, no inflated budget.",
+      "h1": "AI Marketing for Restaurants: Social Media, Reviews and Campaigns",
+      "subtitle": "AI restaurant marketing tools to create social media content, manage reviews, optimize your Google listing and launch promotions in minutes. No agency, no inflated budget.",
       "tagline": "Social media · Google My Business · Reviews · Campaigns · Email marketing",
       "cta_primary": "Start now",
       "cta_secondary": "View plans and pricing",
@@ -1703,16 +1703,16 @@
     },
     "results": [
       {
-        "metric": "10x",
-        "label": "faster to create social media content"
+        "metric": "Minutes",
+        "label": "to create a week of social media content, not hours"
       },
       {
-        "metric": "3h",
-        "label": "saved per week on digital marketing"
+        "metric": "Every",
+        "label": "Google review answered, in your brand's voice"
       },
       {
-        "metric": "4.8★",
-        "label": "average customer rating on Google"
+        "metric": "7",
+        "label": "languages for international and tourist guests"
       },
       {
         "metric": "75+",
@@ -1802,10 +1802,10 @@
       }
     ],
     "why_section": {
-      "title": "Why AI marketing is the future of hospitality?",
-      "body": "Restaurants that consistently publish quality content on social media have 40% more online bookings. AI makes it possible in minutes a day, without depending on external designers or community managers.",
+      "title": "Why AI marketing for restaurants is the future of hospitality",
+      "body": "Restaurant marketing is a constant race: posts, replies, promotions, newsletters. AI restaurant marketing takes the blank page out of the equation, so you can keep your social media, Google listing and campaigns consistent in minutes a day, without depending on external designers or community managers.",
       "benefits": [
-        "Create 30 posts for a full month in less than an hour",
+        "Plan a full month of posts in a single sitting",
         "Reply to all your Google reviews in minutes, not days",
         "Keep your Google listing always updated and optimized",
         "Launch seasonal campaigns without paying an agency",
@@ -1828,7 +1828,7 @@
     },
     "faq": [
       {
-        "question": "Can AI manage my restaurant's social media?",
+        "question": "Can AI act as a social media manager for my restaurant?",
         "answer": "AI Chef Pro's AI generates content (texts, hashtags, image ideas) for your posts on Instagram, Facebook and TikTok. You review, customize and publish. It's not automatic management, but intelligent assistance that lets you create professional content in minutes instead of hours."
       },
       {
@@ -1842,6 +1842,18 @@
       {
         "question": "Can I create marketing content in multiple languages?",
         "answer": "Yes. AI Chef Pro is available in 7 languages and can generate marketing content in the language you need: Spanish, English, French, German, Italian, Portuguese and Dutch. Perfect for restaurants with international or tourist clientele."
+      },
+      {
+        "question": "What are the best AI tools for restaurant marketing?",
+        "answer": "The best AI tool is the one that speaks restaurant, not generic marketing. Look for four things: content for Instagram, Facebook and TikTok, replies to Google reviews, help with your Google My Business listing, and campaign and newsletter copy. AI Chef Pro covers all of these inside its 75+ AI agents and tools built for restaurants and hospitality businesses, with plans from €10/month."
+      },
+      {
+        "question": "Can AI create advertising and promotions for my restaurant?",
+        "answer": "Yes, on the creative side. AI Chef Pro writes the texts, calls to action and message sequences for promotions, special events, seasonal menus and flash offers, ready for you to publish. It does not buy ad space or publish for you: you stay in control of what goes out and where."
+      },
+      {
+        "question": "How much does AI marketing for restaurants cost with AI Chef Pro?",
+        "answer": "The Member plan costs €10/month and includes 10,000 monthly credits and access to all 75+ AI agents and tools, marketing ones included. Higher plans add more credits, and there is also an annual plan. There is no commitment: you can cancel anytime."
       }
     ],
     "cta_section": {
@@ -2057,28 +2069,28 @@
   },
   "landingSoftwareGestion": {
     "seo": {
-      "title": "AI Kitchen Management Software | AI Chef Pro",
-      "description": "AI-powered kitchen management software: food cost, inventory, recipes and allergens in one platform. Used by 5,000+ restaurants. Start today.",
-      "keywords": "kitchen management software, restaurant management AI, hospitality software, professional kitchen software, restaurant inventory management, food cost AI"
+      "title": "Kitchen Management Software for Chefs with AI | AI Chef Pro",
+      "description": "Kitchen management software for chefs, powered by AI: food cost, inventory, recipes, allergens and menu engineering in one platform. From €10/month.",
+      "keywords": "kitchen management software, chef kitchen management software, chef kitchen software, ai smart kitchen management, ai food manager, artificial intelligence in professional kitchens, restaurant management AI, professional kitchen software, restaurant inventory management, food cost AI"
     },
     "breadcrumb": "AI Kitchen Management Software",
     "hero": {
       "badge": "AI Software for Professional Kitchen Management",
-      "h1": "AI Kitchen Management Software for Restaurants",
-      "subtitle": "Control food cost, inventory, recipes and allergens from a single platform. The specialized AI that truly understands professional kitchens.",
-      "tagline": "Save up to 3 hours daily on kitchen management.",
+      "h1": "AI Kitchen Management Software for Chefs and Restaurants",
+      "subtitle": "Smart kitchen management with AI: control food cost, inventory, recipes and allergens from a single platform. The specialized AI that truly understands professional kitchens.",
+      "tagline": "Spend less time on spreadsheets and more time on the pass.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
       "no_card": "From €10/month · No commitment · Instant access"
     },
     "results": [
       {
-        "metric": "3h",
-        "label": "Daily management savings"
+        "metric": "Hours",
+        "label": "of repetitive costing work handed to AI"
       },
       {
         "metric": "{{userCount}}+",
-        "label": "Active restaurants"
+        "label": "Chefs and hospitality professionals"
       },
       {
         "metric": "75+",
@@ -2086,7 +2098,7 @@
       },
       {
         "metric": "30%",
-        "label": "Average cost reduction"
+        "label": "Average ingredient-cost reduction"
       }
     ],
     "comparison": {
@@ -2206,7 +2218,7 @@
     ],
     "why_section": {
       "title": "The kitchen management chefs need, powered by AI",
-      "body": "Traditional management software is slow, rigid and doesn't understand the kitchen. AI Chef Pro is software designed by and for hospitality professionals.",
+      "body": "Traditional management software is slow, rigid and doesn't understand the kitchen. AI Chef Pro is software designed by and for hospitality professionals. Artificial intelligence in professional kitchens isn't a gadget: it takes over the repetitive math, such as costing every dish, recalculating when prices change and flagging allergens, so the chef can spend that time on the pass.",
       "benefits": [
         "Automatic food costing with up-to-date market prices",
         "Integrated allergen control compliant with current EU regulations",
@@ -2245,6 +2257,18 @@
       {
         "question": "Do I need to install any software on my computer?",
         "answer": "No. AI Chef Pro runs entirely in the cloud. Access from any device — computer, tablet or mobile — with no installations or manual updates."
+      },
+      {
+        "question": "What should kitchen management software for chefs include?",
+        "answer": "At a minimum: food costing per dish, recipe tech sheets with portion scaling, inventory and waste control, allergen management and a view of each dish's profitability. AI Chef Pro brings all of these together and adds AI so the calculations update themselves when your prices change."
+      },
+      {
+        "question": "How does AI help in a professional kitchen?",
+        "answer": "AI acts as a food manager that does the repetitive work: it calculates the cost of each dish, recalculates when supplier prices change, helps you standardize recipes, identifies the 14 EU allergens and analyzes which dishes earn the most. The chef keeps the decisions and the creativity."
+      },
+      {
+        "question": "Can AI help me design and cost my kitchen menu?",
+        "answer": "Yes. With menu engineering, AI Chef Pro analyzes the profitability of each dish so you can adjust your menu to maximize profit per cover. AI Chef Pro also includes Menu Design with AI for building the menu itself."
       }
     ],
     "cta_section": {

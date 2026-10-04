@@ -1,0 +1,9 @@
+{
+  "site": "sc-domain:aichef.pro",
+  "mercados": [],
+  "prefijo_idioma": ["en", "fr", "de", "it", "pt", "nl"],
+  "marca": ["ai chef", "aichef", "chefpro", "chef pro", "cheif"],
+  "genericas": ["restaurante", "restaurant", "cocina", "chef", "ia", "ai", "que", "es", "para", "de"],
+  "ciudades_glob": [],
+  "hubs": ["home", "blog", "productos-digitales", "digital-products", "precios", "integraciones"]
+}

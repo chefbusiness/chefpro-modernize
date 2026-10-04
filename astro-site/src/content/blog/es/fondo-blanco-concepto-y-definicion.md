@@ -1,6 +1,6 @@
 ---
-title: "Fondo Blanco: Concepto y Definición"
-description: "Caldo básico sin colorear para sopas y salsas blancas."
+title: "Fondo blanco: qué es y cómo se prepara"
+description: "El fondo blanco es un caldo base sin dorar para sopas y salsas claras. Ingredientes, proporciones, paso a paso, clarificado y diferencia con el fondo oscuro."
 pubDate: 2026-02-19
 modDate: 2026-08-31
 category: glosario

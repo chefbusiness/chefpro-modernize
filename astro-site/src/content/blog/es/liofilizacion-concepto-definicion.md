@@ -1,6 +1,6 @@
 ---
-title: "Liofilización: Concepto y Definición"
-description: "Descubre qué es la liofilización: secado por congelación que preserva nutrientes y sabores. Proceso de sublimación, aplicaciones en gastronomía y alta…"
+title: "Liofilización: qué es y cómo funciona"
+description: "La liofilización es un secado por congelación y sublimación del hielo que conserva nutrientes y sabor. Fases, usos en cocina y comparación con otros secados."
 pubDate: 2026-03-21
 modDate: 2026-09-05
 category: glosario
