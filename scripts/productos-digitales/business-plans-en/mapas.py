@@ -210,6 +210,8 @@ _SUP_COMUN = [  # (celda, (valor FT, valor CAF), rótulo)
     ('B39', (0.08, 0.08), 'IVA repercutido de restauración'), ('B40', (0.08, 0.08), 'IVA repercutido/soportado'),
     ('B41', (0, 0), 'IVA soportado en compras'), ('B42', (0, 0), 'Bases negativas'),
     ('B44', (7, 10), 'Vida útil de obra'), ('B45', (7, 7), 'Vida útil de maquinaria'),
+    # B58: el ES trae 0, que viola su propia DV (1-365). US: el abono de tarjeta llega el día hábil siguiente (F2-NOTAS §6)
+    ('B58', (1, 1), 'Días medios de cobro'),
     ('B59', (7, 14), 'Días medios de pago'), ('B62', (0, 0), 'Bebida ALCOHÓLICA'),
     ('B63', (0.08, 0.08), 'IVA de la bebida ALCOHÓLICA'),
     ('B65', (1.15, 1.15), 'DSCR mínimo'), ('B66', (1.25, 1.25), 'DSCR objetivo'),
@@ -276,6 +278,22 @@ VALORES_EN.update([
     (('CAFP', 'Escenarios', 'B7'), (329, 'Días')), (('CAFP', 'Escenarios', 'D7'), (351, 'Días')),
 ])
 
+# Calibración D15 (F2 tanda 2): celdas VERDES del caso que se apartan de research §7 para que el caso base cumpla
+# D15 con un caso creíble para un prestamista US. (corto, hoja ES, celda) → (valor, motivo). Cada entrada está
+# explicada en F2-NOTAS.md §6 y gates_en.py G7 lo exige (la celda debe aparecer allí).
+CALIBRACION_D15 = OrderedDict([
+    # FT: con 70 clientes/día la holgura sobre el equilibrio de caja salía 6 % (< 15 %) y el neto del año 1, 1.8 %.
+    # 80/día × $14 × 260 = $291,200: dentro del rango $250-500K y por debajo de la media de $346K (research §4)
+    (('FTP', '0. Supuestos', 'B4'), (80, 'D15: holgura de caja 6 % → ≥ 15 %; ventas $291K < media US $346K')),
+    (('FTP', 'Escenarios', 'B5'), (53, 'mismas proporciones que el ES (30/45) sobre los 80 del caso calibrado')),
+    (('FTP', 'Escenarios', 'D5'), (116, 'mismas proporciones que el ES (65/45) sobre los 80 del caso calibrado')),
+    # CAF: con $10.50 la holgura salía 12 % y el neto del año 1, 4.3 %. $11.00 de ticket medio de cafetería CON brunch
+    # (rango de transacción $7.81-$11.11, research §4; el brunch completo va a $14-20 en la tabla D19)
+    (('CAFP', '0. Supuestos', 'B5'), (11.0, 'D15: holgura de caja 12 % → ≥ 15 %; ticket dentro de $7.81-$11.11')),
+    (('CAFP', 'Escenarios', 'B6'), (10.33, 'mismas proporciones que el ES (9.20/9.80) sobre los $11.00 calibrados')),
+    (('CAFP', 'Escenarios', 'D6'), (11.67, 'mismas proporciones que el ES (10.40/9.80) sobre los $11.00 calibrados')),
+])
+
 # ==========================================================================
 # 6. Formato (D8, D20, D21, E1)
 # ==========================================================================
@@ -310,7 +328,8 @@ def docprops_en(corto_o_plan):
     return OrderedDict([
         ('title', '%s · %s' % (tit, p['producto'])), ('subject', '%s · v%s' % (p['producto'], VERSION)),
         ('keywords', p['keywords']), ('description', p['url']), ('category', 'AI Chef Pro · Digital products'),
-        ('creator', 'John Guerrero · AI Chef Pro'), ('lastModifiedBy', 'AI Chef Pro'),
+        # creator = «AI Chef Pro»: censo-entregables.py --fail lo exige (Fase A); la autoría de John va en la firma
+        ('creator', 'AI Chef Pro'), ('lastModifiedBy', 'AI Chef Pro'),
     ])
 
 

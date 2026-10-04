@@ -160,3 +160,32 @@ desconocido / párrafo que falta → aborta; importe sin fuente, `chefbusiness.c
 - CAF `0. Supuestos!C50`: «las plazas de la celda de arriba» (B51 está debajo).
 - `Tesorería 12 meses!O11` (FT y CAF): «las primeras compras se pagan ya en el año siguiente» (son las últimas).
 - `Inversión Inicial` D21/D25 (FT) y D30/D34 (CAF): «1 meses».
+- `0. Supuestos!B58` (FT y CAF): «Días medios de cobro» = 0 bajo una DV que solo admite 1-365 (la de B6/B58/B59): el
+  propio libro rechaza su valor de ejemplo si el usuario lo vuelve a teclear. La DV de B58 debería admitir 0.
+
+## 7. Tanda 2 (4-oct, sesión Claude Code): `aplicar_en.py` + `gates_en.py` + calibración D15 + docx
+
+### 7.1 Calibración D15 (`mapas.CALIBRACION_D15`; G7 exige que cada celda esté citada aquí)
+
+Con los valores de research §7 tal cual, el caso base recalculado (pycel) daba: FT ventas $254,800 · holgura sobre el
+equilibrio de caja **6.4 %** (< 15 %) · neto año 1 **1.8 %** · DSCR mín 1.32× · préstamo $112,000. CAF ventas $499,800 ·
+holgura **12.2 %** (< 15 %) · neto año 1 **4.3 %** · DSCR mín 1.86× · préstamo $204,000. Los dos suspendían D15 por la
+holgura (con interest-only 0 la cuota completa entra en el equilibrio de caja desde el año 1, D17). Se toca UNA
+palanca de ingresos por plan, dentro de lo que sostiene research §4, y los escenarios se reescalan con las mismas
+proporciones que el ES:
+
+| Celda | Research §7 | Calibrado | Por qué |
+|---|---|---|---|
+| FTP 0. Supuestos!B4 | 70 clientes/día | **80** | 80 × $14 × 260 = $291,200: dentro del rango US $250-500K y por debajo de la media de $346K (Toast / BizBuySell, research §4). El ticket ($14) no se toca. Holgura 6 % → 22 %; neto año 1 1.8 % → 7.1 % |
+| FTP Escenarios!B5 | 47 | **53** | pesimista = 80 × 30/45 (proporción del ES) |
+| FTP Escenarios!D5 | 101 | **116** | optimista = 80 × 65/45 |
+| CAFP 0. Supuestos!B5 | $10.50 | **$11.00** | ticket medio de cafetería CON brunch, dentro del rango por transacción $7.81-$11.11 (Dojo Business, research §4; el brunch completo va a $14-20 en la tabla D19). Los clientes (140) no se tocan. Holgura 12 % → 18 %; neto año 1 4.3 % → 6.3 % |
+| CAFP Escenarios!B6 | 9.86 | **10.33** | pesimista = 11.00 × 9.20/9.80 |
+| CAFP Escenarios!D6 | 11.14 | **11.67** | optimista = 11.00 × 10.40/9.80 |
+
+Descartado: bajar sueldos (la cobertura de horas de la CAF ya va al 98.4 % y los sueldos están en $15-18/h), subir la
+aportación propia (la holgura apenas se mueve: −1.5 clientes/día por cada $20K) y acortar el fondo de maniobra (es la
+red de seguridad que mira el prestamista). Además, fuera de D15: **`0. Supuestos!B58` = 1** en los dos planes (en
+`VALORES_EN`, no en la calibración): el ES trae 0, que viola la DV 1-365 de su propia celda (§6), y en EE. UU. el abono
+de las ventas con tarjeta llega el día hábil siguiente. Efecto en caja: 1/30 de las ventas del mes se cobra al mes
+siguiente.

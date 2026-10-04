@@ -121,7 +121,10 @@ def cifras_texto(t):
 
 
 def comunes(t, donde, err, avi):
-    for motivo, ctx in mapas.restos_espanol(t):
+    # Los NOMBRES de token ({{mes_saldo_minimo}}, {{fondos_propios}}…) son identificadores internos en español: se
+    # quitan antes de buscar restos de español, que si no cuentan «mes», «saldo»… como texto (falso positivo).
+    t_sin_tokens = mapas.RX_TOKEN.sub(' ', t)
+    for motivo, ctx in mapas.restos_espanol(t_sin_tokens):
         (avi if motivo.startswith('oficio') else err).append('%s: %s · «%s»' % (donde, motivo, ctx.strip()[:70]))
     nl = mapas.no_latinos(t)
     if nl:
