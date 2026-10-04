@@ -313,3 +313,10 @@ Implementador único. Todo lo que abre xlsx/docx, en el VPS (`/root/wt-bpfix`, v
 Todos los semáforos del P&L en verde los tres años; los márgenes brutos quedan justo sobre su umbral (riesgo ya anotado
 en §7.5, ahora más ajustado: 58.2 % y 65.0 %). Landings: FT «58.2% gross margin»; CAF «65.0% gross margin and
 break-even at 124 customers a day, against 145 expected». Inversión, ticket y food cost no cambian.
+
+**Añadido (4-oct, sesión Claude Code, desde la revisión de Restaurant/Bakery, m4):** la escala FHRS es **0-5** (0 =
+urgent improvement necessary), no 1-5: corregida en el checklist FT `Phase 2!E10` (c0726), CAF `Phase 1!E12` (c1146) y
+los docx FT [108] / CAF [142] (Escocia sigue en FHIS, Pass / Improvement Required), más `mapas.py` y los docs de F1.
+Regenerado en el VPS: idempotencia 0 diferencias, G1-G9 TODO VERDE, `--autotest` 20/20 y 18/18, `check_textos --todas`
+OK; los 2 planes de proyecciones y `cifras_caso.json`, iguales en canónico (no se republican). sha256: FT docx
+`82975577…`, FT checklist `7828264c…`, CAF docx `0887c498…`, CAF checklist `36aca14d…`.
