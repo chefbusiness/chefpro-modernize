@@ -1,4 +1,4 @@
-# Handoff 4-oct-2026 — Tienda EN: 4 business plans (Food Truck + Coffee Shop listos; Restaurant + Bakery en F2)
+# Handoff 4-oct-2026 — Tienda EN: 4 business plans LIVE (Food Truck, Coffee Shop, Restaurant, Bakery)
 
 > Sesión Claude Code. Mismo día: los 4 EN del 3-oct (#106-#109) quedaron LIVE (merge `1411b467`) con correos EN programados
 > 10/15/20/25-oct. Después, con DataForSEO US, se eligieron 4 planes de negocio (John aprobó y delegó la elección).
@@ -88,3 +88,21 @@ SBA Microloan) y sin mención a la guarantee fee de la SBA (sí la llevan REST/P
 - Verificación humana recomendada: abrir 2-3 xlsx/docx por producto en Excel/Word y repasar las landings a 360 px.
 
 Sesión Claude Code · `Via: Claude Code`.
+
+## ✅ LIVE el 4-oct, 22:10 UTC (sesión Claude Code)
+
+- Payment Links de John comprobados con la CLI de Stripe (USD 39, pago único, impuesto automático, redirección exacta):
+  FT `fZueV64OggISezB7Vj6oo1F` · CAF `eVq00c2G8gIScrtejH6oo1G` · REST `5kQ5kwbcE50advx6Rf6oo1H` · PAN `dRm7sEfsU2S2bnpdfD6oo1I`.
+  Env vars en Netlify (scope builds) + `sync-payment-links.py` (61 productos) en la rama del #111.
+- #111 reapuntado a `main` (Netlify no construye preview de un PR contra otra rama, ni reacciona al cambio de base: hizo
+  falta un commit vacío). Conflicto con `main` (#112/#113 de la sesión SEO) en 7 banners del blog EN: se conservó la elección
+  temática de `main`. Gates contra preview en verde y **merge del #111 con merge commit `21de11b4`, que cerró el #110 solo**.
+- Gates LIVE en verde: `gate-flujo-postpago --only` ×4 (0 fallos, 0 avisos), `tienda-gate --base https://aichef.pro`,
+  `robots-gate --live`, `miselup-gate` 102/102, `datafast-gate` 23/23, las 4 tarjetas enlazadas en `/en/digital-products`.
+- Correos EN: pruebas de los 4 enviadas a John. **Programado**: Food Truck 30-oct 14:00Z (`f52308c0`). **Pendientes de
+  programar (tope de 30 días de Resend)**: Coffee Shop **4-nov 14:00Z** (desde el 5-oct ~14:00Z) · Restaurant **9-nov** (desde
+  el 10-oct) · Bakery **14-nov** (desde el 15-oct). Comando: `resend-broadcast.py --html
+  scripts/productos-digitales/emails/broadcast-<slug>-lanzamiento-en.html --subject "<ASUNTO del comentario>" --name
+  "Lanzamiento <Nombre> (EN)" --segment d06ed053-4327-4bec-9e3b-25a9ee9f6704 --from "AI Chef Pro <hello@news.aichef.pro>"
+  --scheduled-at <fecha>`. Comprobar antes en Resend que ese día no sale un correo ES.
+- Tienda EN: **10 productos vivos**.

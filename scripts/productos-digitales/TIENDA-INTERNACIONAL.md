@@ -304,3 +304,7 @@ la F1 de cada producto frente a Etsy/Gumroad.
   - **«Regular price» y precio tachado** al que nunca se ha vendido = riesgo FTC (16 CFR 233.1): fuera de los correos de los
     planes; la política de anclas de las landings EN queda para John.
   - Un PR apilado sobre otra rama no tiene deploy preview en Netlify (solo PR contra `main`).
+- **2026-10-04 (22:10 UTC, sesión Claude Code) — los 4 business plans LIVE** (merge `21de11b4` del #111, que cerró el #110).
+  Gates LIVE en verde; correo de Food Truck programado el 30-oct; Coffee Shop, Restaurant y Bakery el 4, 9 y 14-nov (se
+  programan cuando entren en la ventana de 30 días de Resend). **Tienda EN: 10 productos vivos.** Lección: un PR apilado se
+  reapunta a `main` con `gh pr edit --base main`, pero Netlify no construye la preview hasta el siguiente push.

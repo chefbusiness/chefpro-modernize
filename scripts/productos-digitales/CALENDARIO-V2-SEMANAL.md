@@ -308,6 +308,12 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - eBook Pro Prompts: revisión de texto (sonnet, 1 sesión corta).
 - Homologación AICP↔CB (otra terminal, chefbusiness-astro).
 
+## 1-bis. Cola de correos EN (segmento EN, 14:00Z) — 4-oct
+
+10-oct eBook (`b2c99916`) · 15-oct HACCP (`9b7f8f57`) · 20-oct Staff (`7b520469`) · 25-oct Financial (`3d49a8d7`) · 30-oct
+Food Truck Business Plan (`f52308c0`) · **4-nov Coffee Shop (programar desde el 5-oct) · 9-nov Restaurant (desde el 10-oct) ·
+14-nov Bakery (desde el 15-oct)**. Siguiente hueco EN: 19-nov.
+
 ## 2. Calendario (semana = lunes a domingo; 1 producto, máx. 2)
 
 | Semana | Producto(s) | Trabajo | Presupuesto |
