@@ -15,7 +15,7 @@
 //     recomendado de gestión»), A11 (bono 1 = guía de permisos US + notas UK, §9 del plan + fases 1-2 del
 //     checklist; el cuadro de personal ya es una tarjeta del grid), A12-A14 (sin rating/review, sin
 //     superlativo, sin ICO/ENISA/licencia inocua/SS/SMI).
-//   · Compatibilidad, testimonios y TODO_CIFRA: como food-truck-business-plan.ts. Testimonios: fuera
+//   · Compatibilidad, testimonios y cifras del caso (cifras_caso.json de la F2): como food-truck-business-plan.ts. Testimonios: fuera
 //     «53 clientes/día con ticket medio €9,50» y «food cost 25-30 %» (cifras de la v1.1).
 //   · FAQ: People Also Ask de «coffee shop business plan» (research §2) + las del ES adaptadas + UK,
 //     moneda, suscripción, licencia y garantía. schema.faqs = el MISMO array.
@@ -36,8 +36,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'How much does it cost to open a coffee shop?',
-    // TODO_CIFRA: total de caja necesaria del coffee shop de ejemplo (Startup Costs, xlsx EN calibrado por la F2).
-    a: "It depends on the space more than on the espresso machine: a unit that was already a cafe needs a fraction of the build-out of an empty shell, and rent and permits vary a lot by city. The Startup Costs sheet lists every line — LLC and legal, licenses and health plan review, architect and building permits, build-out, electrical and HVAC, plumbing with grease interceptor and hand sinks, espresso machine, grinders, oven, pastry case, refrigeration, dishwasher, bar, seating, patio, smallwares, signs, POS, opening inventory and launch marketing — plus deposits, pre-opening months, contingency and working capital. The kit's example coffee shop needs TODO_CIFRA in total cash; replace each line with your own quotes.",
+    a: "It depends on the space more than on the espresso machine: a unit that was already a cafe needs a fraction of the build-out of an empty shell, and rent and permits vary a lot by city. The Startup Costs sheet lists every line — LLC and legal, licenses and health plan review, architect and building permits, build-out, electrical and HVAC, plumbing with grease interceptor and hand sinks, espresso machine, grinders, oven, pastry case, refrigeration, dishwasher, bar, seating, patio, smallwares, signs, POS, opening inventory and launch marketing — plus deposits, pre-opening months, contingency and working capital. The kit's example coffee shop needs $263,687 in total cash; replace each line with your own quotes.",
   },
   {
     q: 'Can I open a coffee shop with $50k?',
@@ -200,9 +199,7 @@ const data: PlanNegocioData = {
       'Not another generic template: a coffee shop plan written for the format lenders expect, with a financial model that recalculates from your own numbers.',
     reasons: [
       { icon: 'Coffee', title: 'Built for a Coffee Shop', desc: 'Espresso machine and grinders, pastry case, a coffee and brunch menu mix, an owner-barista on the schedule and the permits of a fixed location. Nothing to strip out from a generic restaurant template.' },
-      // TODO_CIFRA: ticket medio (excl. sales tax), margen bruto % y equilibrio en clientes/día del coffee shop
-      // de ejemplo (xlsx EN calibrado por la F2).
-      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example coffee shop: an average check of TODO_CIFRA (excl. sales tax), TODO_CIFRA gross margin and break-even at TODO_CIFRA customers a day. Replace them with yours.' },
+      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example coffee shop: an average check of $11 (excl. sales tax), 65.6% gross margin and break-even at 123 customers a day. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Zoning, Permits and 75 Tasks', desc: 'Zoning before you sign, building permits, certificate of occupancy, health plan review, sign and sidewalk cafe permits, employer registrations and a privacy notice for your loyalty list. A starting point: requirements vary by state, county and city.' },
       { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],

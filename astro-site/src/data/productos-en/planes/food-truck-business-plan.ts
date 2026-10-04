@@ -20,8 +20,8 @@
 //     española; fuera las cifras que ya no son verdad en el producto (59 trámites, 27 clientes/día a 12 €,
 //     ratios «food cost 30 %, margen 65 %, retorno 12-24 meses», guía «por CCAA»): esas frases se
 //     reformulan sin número. Las cifras personales del testimonio (su inversión, sus plazos) se conservan.
-//   · Cifras del caso de ejemplo US: quedan como TODO_CIFRA (las rellena el orquestador cuando la F2
-//     calibre el caso, D15/D22). Ninguna cifra del ES ni inventada. Los conteos del producto (10 secciones,
+//   · Cifras del caso de ejemplo US: las de `scripts/productos-digitales/business-plans-en/cifras_caso.json`
+//     (caché del xlsx EN calibrado por la F2, D15/D22; F2-NOTAS §7). Ninguna cifra del ES ni inventada. Los conteos del producto (10 secciones,
 //     9 hojas, 68 tareas en 6 fases, 3 escenarios) y los parámetros decididos en la SPEC (DSCR 1.25×,
 //     Microloan hasta $50,000, aportación propia «often around 10%», umbrales D16) sí van.
 //   · FAQ: People Also Ask de «food truck business plan» (research §2) + las del ES adaptadas + UK,
@@ -39,8 +39,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'How much money is needed to start a food truck?',
-    // TODO_CIFRA: total de caja necesaria del camión de ejemplo (Startup Costs, xlsx EN calibrado por la F2).
-    a: "It depends mostly on the truck: a used truck with a refit costs a fraction of a new custom build, and permits, commissary rent and insurance vary a lot from city to city. The Startup Costs sheet lists every line — truck, build-out and wrap, cooking and refrigeration equipment, generator, propane and fire suppression, water tanks and hand sinks, LLC and legal, first-year permits, plan review, POS, smallwares and packaging, opening inventory and launch marketing — plus deposits, pre-opening months, contingency and working capital. The kit's example truck needs TODO_CIFRA in total cash; replace each line with your own quotes.",
+    a: "It depends mostly on the truck: a used truck with a refit costs a fraction of a new custom build, and permits, commissary rent and insurance vary a lot from city to city. The Startup Costs sheet lists every line — truck, build-out and wrap, cooking and refrigeration equipment, generator, propane and fire suppression, water tanks and hand sinks, LLC and legal, first-year permits, plan review, POS, smallwares and packaging, opening inventory and launch marketing — plus deposits, pre-opening months, contingency and working capital. The kit's example truck needs $146,399 in total cash; replace each line with your own quotes.",
   },
   {
     q: 'What permits do I need to run a food truck?',
@@ -207,9 +206,7 @@ const data: PlanNegocioData = {
       "Not another generic template: a food truck plan written for the format lenders expect, with a financial model that recalculates from your own numbers.",
     reasons: [
       { icon: 'Truck', title: 'Less Capital Than a Restaurant', desc: "No dining room lease, a smaller team, and the option to move when a spot doesn't work. The model shows what that means in your numbers: startup costs line by line and the cash you need before your first sale." },
-      // TODO_CIFRA: ticket medio (excl. sales tax), coste de mercancía %, margen bruto %, equilibrio en clientes/día
-      // y clientes/día previstos del camión de ejemplo (xlsx EN calibrado por la F2).
-      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, cost of goods, gross margin and break-even come out of the workbook itself, from your assumptions. The example truck: an average check of TODO_CIFRA (excl. sales tax), TODO_CIFRA cost of goods, TODO_CIFRA gross margin and break-even at TODO_CIFRA customers a day, against TODO_CIFRA expected. Replace them with yours.' },
+      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, cost of goods, gross margin and break-even come out of the workbook itself, from your assumptions. The example truck: an average check of $14 (excl. sales tax), 29.3% cost of goods, 58.8% gross margin and break-even at 68 customers a day, against 80 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Permits Before Equipment', desc: '68 tasks in 6 phases, from your LLC and EIN to the health department plan review, the commissary agreement, city vending licenses, DMV and the fire marshal inspection. A starting point: requirements vary by state, county and city.' },
       { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
@@ -242,7 +239,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 2',
         title: 'Food Truck Benchmarks (Reference Table)',
         value: '$29',
-        desc: "The reference table inside the workbook: cost of goods, gross margin, labor, commissary and parking and net margin, each with its source or marked \"kit estimate\", and the OK / REVIEW check that tells you where your plan departs from the benchmark. Every threshold is an editable cell.",
+        desc: "The reference table inside the workbook: cost of goods, gross margin, labor and net margin, each with its source or marked \"kit estimate\", and the OK / REVIEW check (commissary and parking included) that tells you where your plan departs from the benchmark. Every threshold is an editable cell.",
         image: '/lovable-uploads/ai-gallery/ftbp-en-owner-plan.jpg',
       },
     ],
