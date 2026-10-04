@@ -148,6 +148,9 @@ const data = {
   footerLinks: [
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },
+    // Planes EN (4-oct-2026, SPEC business-plans-en D29: entrantes desde los pies de los 6 productos EN).
+    { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
+    { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
 

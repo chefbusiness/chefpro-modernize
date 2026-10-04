@@ -4,7 +4,9 @@
 // la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).
 export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'ai-prompts-for-restaurants': { usd: 14 },
+  'coffee-shop-business-plan': { usd: 39 },
   'food-cost-templates': { usd: 19 },
+  'food-truck-business-plan': { usd: 39 },
   'guia-chocolateria-obrador': { eur: 65 },
   'guia-churreria-chocolateria': { eur: 65 },
   'guia-dark-kitchen': { eur: 24 },

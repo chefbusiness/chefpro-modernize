@@ -368,6 +368,8 @@ const data: KitExcelData = {
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },
     { href: '/en/food-cost-calculator-restaurant', label: 'Food Cost Calculator for Restaurants' },
     { href: '/en/food-cost-calculator-restaurant-ai', label: 'Restaurant Food Cost with AI' },
+    { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
+    { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.1 · September 2026',

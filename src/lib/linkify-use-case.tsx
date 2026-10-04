@@ -36,7 +36,8 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Guide: How to Open a Chocolate Boutique & Atelier': '/guia-chocolateria-obrador',
   'Guide: How to Open a Churro & Hot Chocolate Shop': '/guia-churreria-chocolateria',
   'Guide: Bakery with Production Room': '/guia-panaderia-obrador',
-  'Business Plan: Coffee Shop': '/plan-negocio-cafeteria',
+  // 'Business Plan: Coffee Shop' (nombre EN viejo del catálogo) → landing EN desde el 4-oct-2026.
+  'Business Plan: Coffee Shop': '/en/digital-products/coffee-shop-business-plan',
   'Tasks: Ice Cream Shop': '/kit-tareas-heladeria',
   'Tasks: Pizzeria': '/kit-tareas-pizzeria',
   // Producto con landing propia en la tienda EN (products-catalog.ts urlByLang.en): la
@@ -46,6 +47,8 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'HACCP Food Safety Kit Pro': '/en/digital-products/haccp-templates',
   'Restaurant Staff Scheduling Kit Pro': '/en/digital-products/restaurant-schedule-templates',
   'Restaurant Financial Plan Kit Pro': '/en/digital-products/restaurant-financial-plan-templates',
+  'Food Truck Business Plan Kit': '/en/digital-products/food-truck-business-plan',
+  'Coffee Shop Business Plan Kit': '/en/digital-products/coffee-shop-business-plan',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

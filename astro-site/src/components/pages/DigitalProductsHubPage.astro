@@ -61,8 +61,45 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
-  // Restaurant Financial Plan Kit Pro (3-oct-2026, después del Staff Scheduling): el más nuevo → 1;
-  // Staff Scheduling → 2, HACCP → 3, eBook → 4. Imagen: la portada propia de la edición EN
+  // Food Truck Business Plan Kit y Coffee Shop Business Plan Kit (4-oct-2026, publicados juntos): los
+  // más nuevos → 1 y 2 (Food Truck primero: 12.100 búsquedas/mes en EE. UU. frente a 3.600); el
+  // Financial Plan Kit pasa a 3. Imágenes: portadas propias de la edición EN, sin texto (las del ES
+  // llevan rótulos en español o precios en €). Sustituyen a las tarjetas viejas «Business Plan: Food
+  // Truck» y «Business Plan: Coffee Shop», que describían el mercado español.
+  {
+    name: 'Food Truck Business Plan Kit',
+    slug: '/plan-negocio-food-truck',
+    description: 'Food truck business plan template: a 10-section Word plan, Excel financial projections with a 3-year P&L, break-even, 12-month cash flow and loan schedule, and a 68-task startup checklist.',
+    features: [
+      '10-section business plan in Word',
+      '3-year P&L, break-even and cash flow in Excel',
+      'SBA 7(a) and Microloan financing with DSCR',
+      '68 tasks: health permit, commissary, vending licenses',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/ftbp-en-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'food-truck', 'street-food', 'business-plan', 'mobile-catering'],
+  },
+  {
+    name: 'Coffee Shop Business Plan Kit',
+    slug: '/plan-negocio-cafeteria',
+    description: 'Coffee shop business plan template for a coffee shop with brunch: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even and cash flow, and a 75-task opening checklist.',
+    features: [
+      '10-section business plan in Word',
+      'Startup costs from build-out to espresso machine',
+      '3-year P&L, break-even and 12-month cash flow',
+      '75 tasks: zoning, building permits, health plan review',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/csbp-en-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'cafe', 'brunch', 'business-plan'],
+  },
+  // Restaurant Financial Plan Kit Pro (3-oct-2026, después del Staff Scheduling): → 3 desde el 4-oct (era 1);
+  // Staff Scheduling → 4, HACCP → 5, eBook → 6 (antes 2, 3 y 4). Imagen: la portada propia de la edición EN
   // (fin-en-hero.jpg, sin texto), la misma del hero de su landing.
   {
     name: 'Restaurant Financial Plan Kit Pro',
@@ -439,22 +476,6 @@ const products = [
     tags: ['excel', 'templates', 'costs', 'bar', 'tapas', 'gastropub', 'business-plan'],
   },
   {
-    name: 'Business Plan: Coffee Shop / Brunch',
-    slug: '/plan-negocio-cafeteria',
-    description: 'Complete business plan for opening a coffee shop or brunch spot in Spain: Excel financial plan with 3-year P&L + Word business plan + an opening checklist with 65+ procedures under the low-impact activity licence and the Spanish food safety registry (RGSEAA).',
-    features: [
-      'Excel financial plan with 3-year P&L',
-      'Detailed start-up investment (Spanish reference budget)',
-      'Break-even: 53 customers/day at a typical Spanish average check',
-      'Opening checklist: 65+ procedures, Spain 2026',
-    ],
-    iconName: 'Coffee',
-    image: '/lovable-uploads/ai-gallery/plan-cafeteria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'costs', 'cafe', 'brunch', 'business-plan'],
-  },
-  {
     name: 'Business Plan: Bakery / Bakehouse',
     slug: '/plan-negocio-panaderia',
     description: 'Complete business plan for opening a bakery or artisan bakehouse in Spain: Excel financial plan with 3-year P&L + Christmas seasonality + an opening checklist with 60+ procedures, including the RGSEAA registration for production kitchens.',
@@ -469,22 +490,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'templates', 'costs', 'bakery', 'production-kitchen', 'business-plan'],
-  },
-  {
-    name: 'Business Plan: Food Truck',
-    slug: '/plan-negocio-food-truck',
-    description: 'Complete business plan for launching a food truck in Spain: a 10-section DOCX + Excel financial plan with 3-year P&L + an opening checklist with 59 procedures, including the street-vending licence and the adapted-vehicle roadworthiness inspection (ITV).',
-    features: [
-      '10-section professional DOCX document',
-      'Excel financial plan with 3-year P&L',
-      'Detailed start-up investment (low and high scenarios)',
-      'Checklist of 59 procedures + permits by Spanish region',
-    ],
-    iconName: 'Truck',
-    image: '/lovable-uploads/ai-gallery/plan-food-truck-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'costs', 'food-truck', 'street-food', 'business-plan', 'mobile-catering'],
   },
   {
     name: 'Business Plan: Event Bartending / Mobile Bar',

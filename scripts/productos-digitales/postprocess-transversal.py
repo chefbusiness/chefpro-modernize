@@ -87,9 +87,11 @@ SCRATCH = os.environ.get(
 #: restaurant-schedule-templates: Restaurant Staff Scheduling Kit Pro (EN), montado por `staff-kit/aplicar_en.py` (ídem).
 #: restaurant-financial-plan-templates: Restaurant Financial Plan Kit Pro (EN), montado por
 #: `financial-kit/aplicar_en.py` (ídem; además la caché de la TIR del 07 la pone ese script).
+#: food-truck-business-plan / coffee-shop-business-plan: Food Truck y Coffee Shop Business Plan Kit (EN),
+#: montados por `business-plans-en/aplicar_en.py` (ídem: Letter y metadatos EN; SPEC business-plans-en §7.6).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
-             'restaurant-financial-plan-templates'}
+             'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'
