@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-04T16:31:29Z",
+  "generado": "2026-10-04T17:50:38Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "a8a9b055",
+  "commit": "3c57801a",
   "libros": {
    "FTP": {
     "es": "plan-financiero-food-truck.xlsx",
@@ -35091,7 +35091,7 @@
    "es": "Número de pagas anuales",
    "grupo": "GX",
    "tratamiento": "regenerar",
-   "en_mapa": "Pay periods per year",
+   "en_mapa": "Monthly pay periods per year (keep 12)",
    "planes": [
     "caf",
     "ft"
@@ -37453,7 +37453,7 @@
    "es": "Línea ICO (avalada por el ICO, la concede tu banco)",
    "grupo": "GX",
    "tratamiento": "regenerar",
-   "en_mapa": "SBA-guaranteed loan (7(a), through your bank)",
+   "en_mapa": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
    "planes": [
     "caf",
     "ft"
@@ -37485,7 +37485,7 @@
    "es": "Préstamo participativo ENISA",
    "grupo": "GX",
    "tratamiento": "regenerar",
-   "en_mapa": "SBA Microloan (nonprofit intermediaries, up to $50,000)",
+   "en_mapa": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
    "planes": [
     "caf",
     "ft"

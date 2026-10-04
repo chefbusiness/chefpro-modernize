@@ -6,7 +6,7 @@
 //   · D1/D2: slug `food-truck-business-plan`, nombre «Food Truck Business Plan Kit», H1 Forma B
 //     `Food Truck ` + oro `Business Plan` + subtítulo «Template: Word Plan + Excel Financial Projections
 //     + Startup Checklist»; title SEO de D2.
-//   · D3/D4: $39; priceOld $129; bonos $29 cada uno; total $187; ahorro $90 (129 − 39); «-70%» en hero y buyBox.
+//   · D3/D4: $39; priceOld $129; bono 2 $29 (el 1 «Included in the plan», m19); total $158; ahorro $90 (129 − 39); «-70%» en hero y buyBox.
 //   · D5: los 3 ficheros EN (dashboard FoodTruckBusinessPlanDashboard.tsx y get-download-urls.ts).
 //   · §6 aplicado: A1 (benchmarks con fuente real o «kit estimate», D19), A2 (equilibrio de caja «loan
 //     payments in, depreciation out», sin el «además»), A3 (checklist = punto de partida, no «verificado»),
@@ -16,6 +16,10 @@
 //   · Compatibilidad (decisión del orquestador, 4-oct): solo lo que son los ficheros — Microsoft Excel
 //     (.xlsx) y Microsoft Word (.docx), tamaño US Letter. Sin Google Sheets/Docs/LibreOffice/Numbers hasta
 //     un test real (D25): compatPills + compatSubtitle (sustituye la frase del marquee de la plantilla).
+//   · Revisión final (4-oct, ronda de arreglos): B1 (el cuadro y el DSCR cubren SOLO el préstamo principal,
+//     banco o SBA 7(a)), m3 (regla CDL completa, 49 CFR 383.91), m13 (el equipo va en varias líneas, no una
+//     por aparato), m19 (el bono 1 es la §9 del plan + una fase del checklist: «Included», total $158) y
+//     cifras del caso recalculadas con la comisión de tarjeta al 3.5 % (margen bruto 58.2 %).
 //   · Testimonios (D26 + decisión del orquestador): los 8 del ES traducidos, subtítulo de la edición
 //     española; fuera las cifras que ya no son verdad en el producto (59 trámites, 27 clientes/día a 12 €,
 //     ratios «food cost 30 %, margen 65 %, retorno 12-24 meses», guía «por CCAA»): esas frases se
@@ -47,7 +51,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'What does the truck itself need?',
-    a: "Health departments usually check fresh and gray water tanks (the gray water tank is normally larger than the fresh one), a hand sink, refrigeration that holds safe temperatures, and surfaces that can be cleaned. Fire marshals look at propane, extinguishers and the hood fire suppression system (NFPA 96 where it has been adopted). You only need a commercial driver's license (CDL) if the truck's gross vehicle weight rating is 26,001 lb or more. Every one of those items is a line in the Startup Costs sheet and a task in Phase 2 of the checklist; your county's plan review sets the exact specs.",
+    a: "Health departments usually check fresh and gray water tanks (the gray water tank is normally larger than the fresh one), a hand sink, refrigeration that holds safe temperatures, and surfaces that can be cleaned. Fire marshals look at propane, extinguishers and the hood fire suppression system (NFPA 96 where it has been adopted). Under federal rules (49 CFR 383.91) you need a commercial driver's license (CDL) if the truck's gross vehicle weight rating is 26,001 lb or more, or if you tow a trailer rated over 10,000 lb and the combination is rated 26,001 lb or more; your state DMV may add its own rules. All of it is budgeted in the Startup Costs sheet (kitchen and refrigeration equipment, generator, water tanks and sinks, propane and fire suppression) and listed as tasks in the checklist; your county's plan review sets the exact specs.",
   },
   {
     q: 'How much money does a food truck owner make?',
@@ -71,7 +75,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Can I present this plan to a lender or investors?',
-    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The financing sheet covers an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%). It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
+    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%). It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
   {
     q: 'How is it different from a free food truck business plan template?',
@@ -176,9 +180,9 @@ const data: PlanNegocioData = {
       { icon: 'BarChart3', title: 'Financial Scenarios', desc: 'Three scenarios side by side — pessimistic, base and optimistic — each with its own estimated cash balance, ready to show a lender or an investor.' },
       { icon: 'Users', title: 'Staffing & Payroll (4 Roles)', desc: 'A lean food truck team — the owner full time, a cook-cashier, extra hands for events and holiday cover — with gross pay, employer payroll taxes and the real cost of each role. The workbook flags in red any pay that falls below the minimum wage for the hours worked.' },
       { icon: 'ShieldCheck', title: 'Startup Checklist (68 Tasks, 6 Phases)', desc: "LLC or sole proprietorship, EIN, seller's permit and business license; health department plan review, mobile food unit permit and commissary agreement; city vending licenses, DMV and fire marshal inspection; equipment, staff, marketing and your first 90 days." },
-      { icon: 'Wrench', title: 'Mobile Kitchen Equipment', desc: 'Griddle, fryer, generator, fresh and gray water tanks, hand sink, hood with filters, propane and fire suppression: each one is a line in the startup costs, with a reference price you replace with your own quotes.' },
+      { icon: 'Wrench', title: 'Mobile Kitchen Equipment', desc: 'Griddle, fryer, generator, fresh and gray water tanks, hand sink, hood with filters, propane and fire suppression: all budgeted in the startup costs (kitchen and refrigeration equipment, generator, water tanks and sinks, propane and fire suppression), with reference prices you replace with your own quotes.' },
       { icon: 'ListChecks', title: 'Food Truck Benchmarks', desc: "Your plan's ratios — cost of goods, gross margin, labor, commissary and parking, net margin — each marked OK or REVIEW against an editable kit benchmark, next to a reference table of industry ranges with their source (or \"kit estimate\" when there isn't one). Payback isn't promised: the cash flow sheet calculates it from your own numbers." },
-      { icon: 'Banknote', title: 'Financing Plan', desc: "Its own sheet: owner equity, an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan, investors or partners and local grants, with the loan amortization schedule year by year, the debt service coverage ratio (DSCR) checked against a 1.25× target and a warning if your sources don't cover the cash you need." },
+      { icon: 'Banknote', title: 'Financing Plan', desc: "Its own sheet: owner equity and your loan (bank or SBA 7(a)) with its amortization schedule year by year and the debt service coverage ratio (DSCR) checked against a 1.25× target, plus an SBA Microloan, investors or partners and local grants as other sources of funds, and a warning if your sources don't cover the cash you need." },
     ],
   },
 
@@ -206,7 +210,7 @@ const data: PlanNegocioData = {
       "Not another generic template: a food truck plan written for the format lenders expect, with a financial model that recalculates from your own numbers.",
     reasons: [
       { icon: 'Truck', title: 'Less Capital Than a Restaurant', desc: "No dining room lease, a smaller team, and the option to move when a spot doesn't work. The model shows what that means in your numbers: startup costs line by line and the cash you need before your first sale." },
-      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, cost of goods, gross margin and break-even come out of the workbook itself, from your assumptions. The example truck: an average check of $14 (excl. sales tax), 29.3% cost of goods, 58.8% gross margin and break-even at 68 customers a day, against 80 expected. Replace them with yours.' },
+      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, cost of goods, gross margin and break-even come out of the workbook itself, from your assumptions. The example truck: an average check of $14 (excl. sales tax), 29.3% cost of goods, 58.2% gross margin and break-even at 68 customers a day, against 80 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Permits Before Equipment', desc: '68 tasks in 6 phases, from your LLC and EIN to the health department plan review, the commissary agreement, city vending licenses, DMV and the fire marshal inspection. A starting point: requirements vary by state, county and city.' },
       { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
@@ -224,13 +228,13 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the startup checklist, you get these extra resources — worth $58',
+      'Besides the business plan, the financial model and the startup checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Food Truck Permits & Licenses Guide (US + UK Notes)',
-        value: '$29',
+        value: 'Included in the plan',
         desc: "Section 9 of the plan plus Phase 2 of the checklist: why vending licenses are issued city by city and can't be transferred, how the health department plan review, the mobile food unit permit and the commissary agreement fit together, what the fire marshal and the DMV check, and how event permits work — with notes for the UK. No state forms included: requirements vary by state, county and city.",
         image: '/lovable-uploads/ai-gallery/ftbp-en-truck-park.jpg',
       },
@@ -274,7 +278,7 @@ const data: PlanNegocioData = {
       'Break-even and cash break-even, with a sensitivity table',
       '12-month cash flow and a loan schedule with DSCR',
       'Startup checklist: 68 tasks in 6 phases',
-      'BONUS: Food Truck Permits & Licenses Guide ($29)',
+      'BONUS: Food Truck Permits & Licenses Guide (included in the plan)',
       'BONUS: Food Truck Benchmarks ($29)',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
@@ -286,7 +290,7 @@ const data: PlanNegocioData = {
     discountBadge: '-70%',
     heroNote: 'Special launch price. Going up soon',
     buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $187 — business plan kit ($129) + 2 bonuses ($58)',
+    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Benchmarks bonus ($29)',
     bonusSaveLine: 'Save $90 TODAY!',
   },
 

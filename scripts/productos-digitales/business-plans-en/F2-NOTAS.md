@@ -249,3 +249,67 @@ de referencias no tiene fila de commissary (lo mide el semáforo OK / REVIEW) y 
   conservadora (un carácter por unidad de ancho): la verificación humana en Excel y a 360 px sigue siendo la última
   palabra.
 - Testimonios D26 con cifras de la v1.1 del ES: siguen como decidió el orquestador (fuera de esta tanda).
+
+## 8. Ronda de arreglos (4-oct, sesión Claude Code) — la única tras `REVISION-FINAL.md`
+
+Implementador único. Todo lo que abre xlsx/docx, en el VPS (`/root/wt-bpfix`, venv `/root/venv-guias`); de vuelta por
+`scp` con sha256 iguales. Sin tocar ninguna fórmula ni la estructura de los libros (G1 sigue verde).
+
+### 8.1 Arreglado
+
+| Id | Qué se hizo | Dónde |
+|---|---|---|
+| **B1** | `Financing!A7` = «Loan requested — bank or SBA 7(a) (amortized below)»; A8 = «Other loan (not in the schedule or the DSCR — enter your loan in row 7)»; A9 = «SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)»; notas C8/C9/C18 a juego; `'0. Assumptions'!C31` (FT c0055, CAF c0885) «if your loan is an SBA 7(a), this is the cell… the only loan the schedule, the P&L interest and the DSCR use»; `Instructions!A7` (c0381/c0994) dice que las filas 8-11 no se amortizan. Docx FT 94 / CAF 113: «bank or SBA 7(a) loan… It is the only debt in this plan, and the DSCR is measured against it». Landings (grid «Financing Plan» + FAQ del prestamista), hub (tarjeta FT), 2 correos y changelog: el cuadro y el DSCR cubren el préstamo principal; Microloan, inversores y subvenciones son otras fuentes, sin amortizar | `mapas.FIJOS`, `textos_en/GM·GFT·GCAF.json`, `docx_en_*_b.json`, fichas, `DigitalProductsHubPage.astro`, correos, `productos-changelog.ts` |
+| **M1** | `'0. Assumptions'!B18` = **3.5 %** en los dos planes (`VALORES_EN`; `REGLAS_US['tarjeta']` reescrita). C18 (FT c0032, CAF c0877): «blended rate: a percentage plus a per-transaction fee, which weighs more on small tickets; check your processor's statement», sin la equivalencia 2.6 % + $0.15. Docx CAF 105 añade «a blended rate that includes the per-transaction fees». `F1-research-us.md` §3 queda superado en ese punto | `mapas.VALORES_EN`, textos |
+| **M1 → D15** | Con 3.5 % el FT pasa todo (neto año 1 6.7 %, holgura 20 %). La CAF quedaba con el neto del año 1 en **5.9 % (REVIEW)**: se recalibra con UNA palanca, clientes/día **140 → 145** (research §4: 100-250), ticket intacto en $11.00. Escenarios con las proporciones del ES: pesimista 145 × 80/100 = 116, optimista 145 × 115/100 = 166.75 → 167 | `mapas.CALIBRACION_D15`: **CAFP 0. Supuestos!B4** (145), **CAFP Escenarios!B5** (116), **CAFP Escenarios!D5** (167) |
+| **M2** | `PlanNegocioLandingPage.astro`: fuera del ES el carrusel enseña solo «Microsoft Excel» y «Microsoft Word» (×16 para que el carril −50 % cubra la pantalla). La rama ES no cambia | componente |
+| **M3** | Fuera «(regular price $129)» de los 2 correos. El tachado de la landing no se toca | correos |
+| m1 / m2 | Docx FT 99 y CAF 118: ticket y días de cada escenario y el saldo de caja estimado del pesimista (FT −$14,985: «the working capital reserve would run out…»; CAF $33,950). 5 tokens nuevos en `TOKENS_DOCX` (`pesimista_ticket`, `optimista_ticket`, `pesimista_dias`, `optimista_dias`, `pesimista_caja` → `Escenarios` B/D 6-7 y B25), resueltos por `extraer_textos.py` en `censo_es.json` (95 tokens) | `mapas.py`, `censo_es.json`, docx |
+| m3 | Regla CDL completa, comprobada en 49 CFR 383.91 (LII/Cornell; FMCSA da 403): Group A = combinación con GCWR ≥ 26,001 lb si lo remolcado pasa de 10,000 lb; Group B = vehículo solo ≥ 26,001 lb. Checklist FT `Phase 2!B14/E14`, docx FT 107, FAQ FT «What does the truck itself need?» (+ «your state DMV may add its own rules») | textos, docx, ficha |
+| m4 | `Phase 3!E10` FT: sin la cifra española; «check your county's minimum fresh and gray water tank sizes (in gallons) with the health department» | GFT c0762 |
+| m5 | CAF C24 (c0878): «Include NNN / CAM charges… not just the base rent»; docx CAF 97: la línea de ocupación del ejemplo es solo renta base y NNN/CAM se suman si el contrato los repercute | textos, docx |
+| m6 | Docx CAF 99: la fontanería tiene su propia línea; la contingencia es una línea de los costes de arranque, aparte del fondo de maniobra | docx |
+| m7 | Docx FT 97 y CAF 115: «(a C corporation example; pass-through owners set it to 0 and pay tax on the profit personally)» | docx |
+| m8 | A21 (FIJO) = «Monthly pay periods per year (keep 12)»; C21 (c0037) y el error de la DV de B21 (c0132, ≤ 255) explican que son las pagas mensuales del modelo, no la frecuencia de nómina. Changelog: «12 monthly salaries a year (the model's pay count, not your payroll frequency)». El literal «pay periods» de la fórmula `Staffing!A2` (FORMULAS_EN) no se toca: casa con el rótulo | `mapas.FIJOS`, GM |
+| m9 | C58 FT (c0098) / CAF (c0900): «At 1 day, card settlements reach your bank the next business day» | textos |
+| m10 | C52 FT (c0089) / CAF (c0895): clientes/día = MEDIA del año 1; la rampa reparte las ventas entre meses y conserva el total. CAF `Instructions!D67` (c1111): el año 1 queda bajo por volumen aún creciendo e intereses más altos, no por la rampa | textos |
+| m11 | CAF `Phase 4!E5` (c1223): dos turnos de 8 h solapados (7 am-3 pm y 12 pm-8 pm, 13 h abiertos como en Staffing). `Staffing!A8` (c0986) «Brunch cook (4 days, weekends included)» y J8 (c0987) «0.8 FTE = 32 hours, always including Saturday and Sunday»; docx CAF 127 a juego. Sin tocar datos | GCAF, docx |
+| m12 | FT `Instructions!D43` (c0438): «Writing it in two places counts it twice: here it lives in one cell…» | GFT |
+| m13 | Landing FT, grid «Mobile Kitchen Equipment» y FAQ del camión: «all budgeted in the startup costs (kitchen and refrigeration equipment, generator, water tanks and sinks, propane and fire suppression)» | ficha FT |
+| m14 | Changelog: FT «US units (pounds and gallons)», CAF «square feet in the plan». CAF `0. Assumptions!C27` (c0882) y `Phase 2!E12` (c1174): «1 million per occurrence», sin «$» | changelog, GCAF |
+| m15 | Docx FT 94 / CAF 113: «(annual equivalent; the lender will set monthly payments)». El cuadro sigue siendo anual (ver 8.2) | docx |
+| m16 | FHRS solo en Inglaterra, Gales e Irlanda del Norte; Escocia = FHIS (Pass / Improvement Required): checklist FT `Phase 2!E10` (c0726), CAF `Phase 1!E12` (c1146), docx FT 108 y CAF 142 | textos, docx |
+| m17 | Docx CAF 137: el EIN se pide «to hire employees and to file federal employment and excise tax returns» | docx |
+| m18 | Checklists `Phase 4` FT B14/E14 y CAF B16/E16 (c0800/c0801): sin base RGPD; relojes biométricos (Illinois BIPA y otros estados) y nóminas seguras. FT `Phase 5!E16` (c0831) sin la autorreferencia | GM, GFT |
+| m19 | Bono 1 (guía de permisos = §9 del plan + fases del checklist): valor «Included in the plan»; subtítulo «worth $29, plus a permits guide drawn from the plan itself»; CTA «(included in the plan)»; total **$158** = kit $129 + bono 2 $29. Precio, tachado y «Save $90» intactos | fichas FT y CAF |
+
+### 8.2 Aceptado sin arreglar (exigiría fórmulas o estructura)
+
+- **B1, el fondo**: el modelo amortiza solo la fila 7. Que las filas 8-9 entren en el cuadro y el DSCR es un cambio de
+  fórmulas; se resuelve con rótulos y notas. `Financing!C7` está vacía en el ES: escribir allí sería una celda nueva
+  (G1 solo admite las de E1), así que el mensaje va en A7, A8/A9, C8/C9 y C18.
+- **m15**: cuadro en anualidades (≈ $700/año más conservador que mensualidades en el FT); solo se aclara en el docx.
+- **m20**: el FT sigue en 80 clientes/día (observación del revisor, sin cambio).
+- **CAF, rotación de mesas**: 145 clientes / 45 plazas = 3.2 rotaciones/día frente al techo de 3 de `Break-Even!B25`
+  (con 140 ya eran 3.1). Ese techo solo se compara con lo que exige el equilibrio de caja (2.67): en una cafetería de
+  barra parte de los clientes se lleva el café y no ocupa plaza. Observación, sin cambio.
+- **m19, bono 2**: la tabla de referencias también vive dentro del libro; la orden fue corregir solo el doble cómputo
+  del bono 1. Queda para la decisión de tienda de John.
+
+### 8.3 Caso base final (caché de los xlsx EN = `cifras_caso.json`; sustituye a la tabla de §7.2)
+
+| | Food truck | Coffee shop |
+|---|---|---|
+| Caja total necesaria (CAPEX + fondo de maniobra) | $146,399 ($114,120 + $32,279) | $263,687 ($193,800 + $69,887) |
+| Fondos propios + préstamo | $35,000 (24 %) + $112,000 a 7 años | $60,000 (23 %) + $204,000 a 10 años |
+| Clientes/día × ticket × días · ventas año 1 | 80 × $14.00 × 260 · $291,200 | **145** × $11.00 × 340 · **$542,300** |
+| Comisión de tarjeta · margen bruto | **3.5 % · 58.2 %** (umbral 58 %) | **3.5 % · 65.0 %** (umbral 65 %) |
+| EBITDA año 1 · neto años 1/2/3 | $51,680 (17.7 %) · $19,461 (6.7 %) / $34,926 / $46,028 | $93,565 (17.3 %) · $39,830 (7.3 %) / $54,807 / $65,516 |
+| DSCR mínimo · saldo mínimo de caja | 1.96× · $24,330 (mes 4) | 2.42× · $64,487 (mes 2) |
+| Equilibrio contable / de caja · holgura | 68 / 67 clientes/día · 20 % | 124 / 121 clientes/día · 21 % |
+| Payback del proyecto / sobre CAPEX | 2.6 / 2.1 años | 2.9 / 2.2 años (antes «more than 3 years») |
+| Pesimista: ingresos · resultado · caja estimada | $160,813 · −$49,990 · **−$14,985** | $394,234 · −$43,195 · $33,950 |
+
+Todos los semáforos del P&L en verde los tres años; los márgenes brutos quedan justo sobre su umbral (riesgo ya anotado
+en §7.5, ahora más ajustado: 58.2 % y 65.0 %). Landings: FT «58.2% gross margin»; CAF «65.0% gross margin and
+break-even at 124 customers a day, against 145 expected». Inversión, ticket y food cost no cambian.

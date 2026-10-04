@@ -7,7 +7,7 @@
 //   · D1/D2: slug `coffee-shop-business-plan`, nombre «Coffee Shop Business Plan Kit», H1 Forma B
 //     `Coffee Shop ` + oro `Business Plan` + subtítulo «Template: Word Plan + Excel Financial Projections
 //     + Opening Checklist»; el concepto se describe como «coffee shop with brunch» (el modelo del ES).
-//   · D3/D4: $39; priceOld $129; bonos $29; total $187; ahorro $90; «-70%» en hero y buyBox.
+//   · D3/D4: $39; priceOld $129; bono 2 $29 (el 1 «Included in the plan», m19); total $158; ahorro $90; «-70%» en hero y buyBox.
 //   · D5: los 3 ficheros EN (dashboard CoffeeShopBusinessPlanDashboard.tsx y get-download-urls.ts).
 //   · §6 aplicado: A3 (checklist = punto de partida), A7 (la tarjeta del DOCX va la PRIMERA del grid y la de
 //     «Equipamiento» se funde con «Startup Costs» para seguir en 9), A8 («with reference prices», sin
@@ -17,6 +17,9 @@
 //     superlativo, sin ICO/ENISA/licencia inocua/SS/SMI).
 //   · Compatibilidad, testimonios y cifras del caso (cifras_caso.json de la F2): como food-truck-business-plan.ts. Testimonios: fuera
 //     «53 clientes/día con ticket medio €9,50» y «food cost 25-30 %» (cifras de la v1.1).
+//   · Revisión final (4-oct, ronda de arreglos): B1 (cuadro y DSCR = SOLO el préstamo principal, banco o
+//     SBA 7(a)), m19 (bono 1 «Included in the plan», total $158) y cifras del caso recalculadas con la
+//     tarjeta al 3.5 % y 145 clientes/día (margen bruto 65.0 %, equilibrio 124).
 //   · FAQ: People Also Ask de «coffee shop business plan» (research §2) + las del ES adaptadas + UK,
 //     moneda, suscripción, licencia y garantía. schema.faqs = el MISMO array.
 //   · Imágenes: fotos propias sin texto (csbp-en-*) + use-case-cafeteria-brunch (sin rótulos). Las del ES
@@ -64,7 +67,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Can I present this plan to a lender, a landlord or investors?',
-    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The financing sheet covers an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
+    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
   {
     q: 'Can I change the numbers in the Excel model?',
@@ -173,7 +176,7 @@ const data: PlanNegocioData = {
       { icon: 'Users', title: 'Staffing & Payroll Costs', desc: 'Six roles — owner-barista, morning barista, afternoon barista-server, brunch cook, weekend extra and relief cover — with gross pay, employer payroll taxes, the real cost of each role and two alerts: pay below the minimum wage for the hours worked, and service hours left uncovered.' },
       { icon: 'ShieldCheck', title: 'Opening Checklist (75 Tasks, 6 Phases)', desc: "Business setup (LLC, EIN, seller's permit, business license), location and permits (zoning, lease review, building permits, certificate of occupancy, health plan review), build-out and equipment, staff, pre-opening marketing and your first 90 days." },
       { icon: 'ListChecks', title: 'Coffee Shop Benchmarks', desc: "Your plan's ratios — cost of goods, labor, rent and net margin — each marked OK or REVIEW against an editable kit benchmark, next to a reference table of industry ranges with their source (or \"kit estimate\" when there isn't one)." },
-      { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity, an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan, investors or partners and local grants, with the loan amortization schedule, the debt service coverage ratio (DSCR) year by year against a 1.25× target and a warning if your sources don't cover the cash you need." },
+      { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity and your loan (bank or SBA 7(a)) with its amortization schedule and the debt service coverage ratio (DSCR) year by year against a 1.25× target, plus an SBA Microloan, investors or partners and local grants as other sources of funds, and a warning if your sources don't cover the cash you need." },
     ],
   },
 
@@ -199,7 +202,7 @@ const data: PlanNegocioData = {
       'Not another generic template: a coffee shop plan written for the format lenders expect, with a financial model that recalculates from your own numbers.',
     reasons: [
       { icon: 'Coffee', title: 'Built for a Coffee Shop', desc: 'Espresso machine and grinders, pastry case, a coffee and brunch menu mix, an owner-barista on the schedule and the permits of a fixed location. Nothing to strip out from a generic restaurant template.' },
-      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example coffee shop: an average check of $11 (excl. sales tax), 65.6% gross margin and break-even at 123 customers a day. Replace them with yours.' },
+      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example coffee shop: an average check of $11 (excl. sales tax), 65.0% gross margin and break-even at 124 customers a day, against 145 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Zoning, Permits and 75 Tasks', desc: 'Zoning before you sign, building permits, certificate of occupancy, health plan review, sign and sidewalk cafe permits, employer registrations and a privacy notice for your loyalty list. A starting point: requirements vary by state, county and city.' },
       { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
@@ -216,13 +219,13 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $58',
+      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Coffee Shop Permits & Licenses Guide (US + UK Notes)',
-        value: '$29',
+        value: 'Included in the plan',
         desc: 'Section 9 of the plan plus Phases 1 and 2 of the checklist: what a fixed-location coffee shop usually needs and in what order — zoning check before you sign, building permits, certificate of occupancy, health department plan review and food establishment permit, sign permit, sidewalk cafe permit and a liquor license only if you serve alcohol — with notes for the UK. No state forms included: requirements vary by state, county and city.',
         image: '/lovable-uploads/ai-gallery/csbp-en-storefront.jpg',
       },
@@ -265,7 +268,7 @@ const data: PlanNegocioData = {
       'Break-even and cash break-even, with a sensitivity table',
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 75 tasks in 6 phases',
-      'BONUS: Coffee Shop Permits & Licenses Guide ($29)',
+      'BONUS: Coffee Shop Permits & Licenses Guide (included in the plan)',
       'BONUS: Coffee Shop Benchmarks ($29)',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
@@ -277,7 +280,7 @@ const data: PlanNegocioData = {
     discountBadge: '-70%',
     heroNote: 'Special launch price. Going up soon',
     buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $187 — business plan kit ($129) + 2 bonuses ($58)',
+    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Benchmarks bonus ($29)',
     bonusSaveLine: 'Save $90 TODAY!',
   },
 

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-04T17:18:09Z",
+  "generado": "2026-10-04T17:50:58Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "ft": "food-truck-financial-projections.xlsx",
@@ -101,9 +101,9 @@
    "celda": "B15"
   },
   "tarjeta_pct": {
-   "valor": 0.029,
+   "valor": 0.035,
    "fmt": "pct1",
-   "texto": "2.9%",
+   "texto": "3.5%",
    "hoja_es": "0. Supuestos",
    "celda": "B18"
   },
@@ -185,9 +185,9 @@
    "celda": "B53"
   },
   "margen_bruto_pct": {
-   "valor": 0.5884050000000001,
+   "valor": 0.5824050000000001,
    "fmt": "pct1",
-   "texto": "58.8%",
+   "texto": "58.2%",
    "hoja_es": "PyG 3 Años",
    "celda": "B51"
   },
@@ -248,37 +248,37 @@
    "celda": "B37"
   },
   "resultado_antes_impuestos_a1": {
-   "valor": 27695.307428571454,
+   "valor": 25948.107428571442,
    "fmt": "usd",
-   "texto": "$27,695",
+   "texto": "$25,948",
    "hoja_es": "PyG 3 Años",
    "celda": "B41"
   },
   "resultado_neto_a1": {
-   "valor": 20771.48057142859,
+   "valor": 19461.08057142858,
    "fmt": "usd",
-   "texto": "$20,771",
+   "texto": "$19,461",
    "hoja_es": "PyG 3 Años",
    "celda": "B48"
   },
   "resultado_neto_a2": {
-   "valor": 36433.03456891357,
+   "valor": 34926.07456891355,
    "fmt": "usd",
-   "texto": "$36,433",
+   "texto": "$34,926",
    "hoja_es": "PyG 3 Años",
    "celda": "C48"
   },
   "resultado_neto_a3": {
-   "valor": 47685.36136614709,
+   "valor": 46027.70536614708,
    "fmt": "usd",
-   "texto": "$47,685",
+   "texto": "$46,028",
    "hoja_es": "PyG 3 Años",
    "celda": "D48"
   },
   "margen_neto_a1": {
-   "valor": 0.07133063383045532,
+   "valor": 0.06683063383045529,
    "fmt": "pct1",
-   "texto": "7.1%",
+   "texto": "6.7%",
    "hoja_es": "PyG 3 Años",
    "celda": "B56"
   },
@@ -346,16 +346,16 @@
    "celda": "B24"
   },
   "dscr_a1": {
-   "valor": 2.021389624540631,
+   "valor": 1.9644291243736232,
    "fmt": "x2",
-   "texto": "2.02×",
+   "texto": "1.96×",
    "hoja_es": "Financiación",
    "celda": "B51"
   },
   "dscr_min": {
-   "valor": 2.021389624540631,
+   "valor": 1.9644291243736232,
    "fmt": "x2",
-   "texto": "2.02×",
+   "texto": "1.96×",
    "hoja_es": "Financiación",
    "celda": "B54"
   },
@@ -374,44 +374,44 @@
    "celda": "B66"
   },
   "equilibrio_clientes_dia": {
-   "valor": 67.0691089608089,
+   "valor": 67.7600622557924,
    "fmt": "ceil",
    "texto": "68",
    "hoja_es": "Punto Equilibrio",
    "celda": "B15"
   },
   "equilibrio_ventas": {
-   "valor": 244131.5566173444,
+   "valor": 246646.62661108433,
    "fmt": "usd",
-   "texto": "$244,132",
+   "texto": "$246,647",
    "hoja_es": "Punto Equilibrio",
    "celda": "B16"
   },
   "equilibrio_caja_clientes_dia": {
-   "valor": 65.79633840005107,
+   "valor": 66.47417947353142,
    "fmt": "ceil",
-   "texto": "66",
+   "texto": "67",
    "hoja_es": "Punto Equilibrio",
    "celda": "B20"
   },
   "equilibrio_caja_ventas": {
-   "valor": 239498.67177618592,
+   "valor": 241966.01328365435,
    "fmt": "usd",
-   "texto": "$239,499",
+   "texto": "$241,966",
    "hoja_es": "Punto Equilibrio",
    "celda": "B21"
   },
   "holgura_caja_pct": {
-   "valor": 0.21587313132212094,
+   "valor": 0.20347480230055748,
    "fmt": "pct0",
-   "texto": "22%",
+   "texto": "20%",
    "hoja_es": "Punto Equilibrio",
    "celda": "B24"
   },
   "saldo_minimo": {
-   "valor": 24672.12691700783,
+   "valor": 24330.187936047376,
    "fmt": "usd",
-   "texto": "$24,672",
+   "texto": "$24,330",
    "hoja_es": "Tesorería 12 meses",
    "celda": "B23"
   },
@@ -423,9 +423,9 @@
    "celda": "B24"
   },
   "payback": {
-   "valor": 2.5,
+   "valor": 2.6,
    "fmt": "anos1",
-   "texto": "2.5 years",
+   "texto": "2.6 years",
    "hoja_es": "Tesorería 12 meses",
    "celda": "B31"
   },
@@ -493,18 +493,53 @@
    "celda": "D8"
   },
   "pesimista_resultado": {
-   "valor": -49025.29066842857,
+   "valor": -49990.16626842857,
    "fmt": "usd",
-   "texto": "-$49,025",
+   "texto": "-$49,990",
    "hoja_es": "Escenarios",
    "celda": "B18"
   },
   "optimista_resultado": {
-   "valor": 146148.76551257144,
+   "valor": 143193.6887125714,
    "fmt": "usd",
-   "texto": "$146,149",
+   "texto": "$143,194",
    "hoja_es": "Escenarios",
    "celda": "D18"
+  },
+  "pesimista_ticket": {
+   "valor": 11.67,
+   "fmt": "usd2",
+   "texto": "$11.67",
+   "hoja_es": "Escenarios",
+   "celda": "B6"
+  },
+  "optimista_ticket": {
+   "valor": 16.33,
+   "fmt": "usd2",
+   "texto": "$16.33",
+   "hoja_es": "Escenarios",
+   "celda": "D6"
+  },
+  "pesimista_dias": {
+   "valor": 260,
+   "fmt": "int",
+   "texto": "260",
+   "hoja_es": "Escenarios",
+   "celda": "B7"
+  },
+  "optimista_dias": {
+   "valor": 260,
+   "fmt": "int",
+   "texto": "260",
+   "hoja_es": "Escenarios",
+   "celda": "D7"
+  },
+  "pesimista_caja": {
+   "valor": -14984.9536634667,
+   "fmt": "usd",
+   "texto": "-$14,985",
+   "hoja_es": "Escenarios",
+   "celda": "B25"
   },
   "inv_lanzamiento": {
    "valor": 3000,
@@ -562,15 +597,15 @@
    "deriv": true
   },
   "ebitda_a1": {
-   "valor": 53426.736000000026,
+   "valor": 51679.536000000015,
    "fmt": "usd",
-   "texto": "$53,427",
+   "texto": "$51,680",
    "deriv": true
   },
   "ebitda_pct_a1": {
-   "valor": 0.18347093406593415,
+   "valor": 0.17747093406593412,
    "fmt": "pct1",
-   "texto": "18.3%",
+   "texto": "17.7%",
    "deriv": true
   },
   "aportacion_pct": {
@@ -582,23 +617,23 @@
  },
  "caf": {
   "clientes_dia": {
-   "valor": 140,
+   "valor": 145,
    "fmt": "int",
-   "texto": "140",
+   "texto": "145",
    "hoja_es": "0. Supuestos",
    "celda": "B4"
   },
   "clientes_a2": {
-   "valor": 149.8,
+   "valor": 155.15,
    "fmt": "int",
-   "texto": "150",
+   "texto": "155",
    "hoja_es": "PyG 3 Años",
    "celda": "C6"
   },
   "clientes_a3": {
-   "valor": 157.29000000000002,
+   "valor": 162.9075,
    "fmt": "int",
-   "texto": "157",
+   "texto": "163",
    "hoja_es": "PyG 3 Años",
    "celda": "D6"
   },
@@ -673,9 +708,9 @@
    "celda": "B15"
   },
   "tarjeta_pct": {
-   "valor": 0.029,
+   "valor": 0.035,
    "fmt": "pct1",
-   "texto": "2.9%",
+   "texto": "3.5%",
    "hoja_es": "0. Supuestos",
    "celda": "B18"
   },
@@ -729,37 +764,37 @@
    "celda": "B45"
   },
   "ventas_a1": {
-   "valor": 523600.0,
+   "valor": 542300.0,
    "fmt": "usd",
-   "texto": "$523,600",
+   "texto": "$542,300",
    "hoja_es": "PyG 3 Años",
    "celda": "B9"
   },
   "ventas_a2": {
-   "valor": 560252.0000000001,
+   "valor": 580261.0,
    "fmt": "usd",
-   "texto": "$560,252",
+   "texto": "$580,261",
    "hoja_es": "PyG 3 Años",
    "celda": "C9"
   },
   "ventas_a3": {
-   "valor": 588264.6000000001,
+   "valor": 609274.05,
    "fmt": "usd",
-   "texto": "$588,265",
+   "texto": "$609,274",
    "hoja_es": "PyG 3 Años",
    "celda": "D9"
   },
   "cogs_pct": {
-   "valor": 0.2646,
+   "valor": 0.26460000000000006,
    "fmt": "pct1",
    "texto": "26.5%",
    "hoja_es": "PyG 3 Años",
    "celda": "B52"
   },
   "margen_bruto_pct": {
-   "valor": 0.6564,
+   "valor": 0.6504,
    "fmt": "pct1",
-   "texto": "65.6%",
+   "texto": "65.0%",
    "hoja_es": "PyG 3 Años",
    "celda": "B50"
   },
@@ -771,9 +806,9 @@
    "celda": "B23"
   },
   "personal_pct": {
-   "valor": 0.32266386554621845,
+   "valor": 0.31153752535496954,
    "fmt": "pct1",
-   "texto": "32.3%",
+   "texto": "31.2%",
    "hoja_es": "PyG 3 Años",
    "celda": "B53"
   },
@@ -785,9 +820,9 @@
    "celda": "B22"
   },
   "ocupacion_pct": {
-   "valor": 0.10313216195569137,
+   "valor": 0.09957588050894339,
    "fmt": "pct1",
-   "texto": "10.3%",
+   "texto": "10.0%",
    "hoja_es": "PyG 3 Años",
    "celda": "B54"
   },
@@ -820,37 +855,37 @@
    "celda": "B36"
   },
   "resultado_antes_impuestos_a1": {
-   "valor": 44085.66857142857,
+   "valor": 53106.548571428575,
    "fmt": "usd",
-   "texto": "$44,086",
+   "texto": "$53,107",
    "hoja_es": "PyG 3 Años",
    "celda": "B40"
   },
   "resultado_neto_a1": {
-   "valor": 33064.25142857143,
+   "valor": 39829.91142857143,
    "fmt": "usd",
-   "texto": "$33,064",
+   "texto": "$39,830",
    "hoja_es": "PyG 3 Años",
    "celda": "B47"
   },
   "resultado_neto_a2": {
-   "valor": 47568.03557027389,
+   "valor": 54807.291770273834,
    "fmt": "usd",
-   "texto": "$47,568",
+   "texto": "$54,807",
    "hoja_es": "PyG 3 Años",
    "celda": "C47"
   },
   "resultado_neto_a3": {
-   "valor": 57914.64354614659,
+   "valor": 65515.862556146574,
    "fmt": "usd",
-   "texto": "$57,915",
+   "texto": "$65,516",
    "hoja_es": "PyG 3 Años",
    "celda": "D47"
   },
   "margen_neto_a1": {
-   "valor": 0.06314792098657644,
+   "valor": 0.07344626853876347,
    "fmt": "pct1",
-   "texto": "6.3%",
+   "texto": "7.3%",
    "hoja_es": "PyG 3 Años",
    "celda": "B55"
   },
@@ -918,16 +953,16 @@
    "celda": "B24"
   },
   "dscr_a1": {
-   "valor": 2.214538817875258,
+   "valor": 2.418323385935954,
    "fmt": "x2",
-   "texto": "2.21×",
+   "texto": "2.42×",
    "hoja_es": "Financiación",
    "celda": "B51"
   },
   "dscr_min": {
-   "valor": 2.214538817875258,
+   "valor": 2.418323385935954,
    "fmt": "x2",
-   "texto": "2.21×",
+   "texto": "2.42×",
    "hoja_es": "Financiación",
    "celda": "B54"
   },
@@ -946,44 +981,44 @@
    "celda": "B66"
   },
   "equilibrio_clientes_dia": {
-   "valor": 122.04202937615132,
+   "valor": 123.1678783556361,
    "fmt": "ceil",
-   "texto": "123",
+   "texto": "124",
    "hoja_es": "Punto Equilibrio",
    "celda": "B15"
   },
   "equilibrio_ventas": {
-   "valor": 456437.1898668059,
+   "valor": 460647.865050079,
    "fmt": "usd",
-   "texto": "$456,437",
+   "texto": "$460,648",
    "hoja_es": "Punto Equilibrio",
    "celda": "B16"
   },
   "equilibrio_caja_clientes_dia": {
-   "valor": 119.08532872385771,
+   "valor": 120.18390186706672,
    "fmt": "ceil",
-   "texto": "120",
+   "texto": "121",
    "hoja_es": "Punto Equilibrio",
    "celda": "B20"
   },
   "equilibrio_caja_ventas": {
-   "valor": 445379.1294272279,
+   "valor": 449487.79298282956,
    "fmt": "usd",
-   "texto": "$445,379",
+   "texto": "$449,488",
    "hoja_es": "Punto Equilibrio",
    "celda": "B21"
   },
   "holgura_caja_pct": {
-   "valor": 0.17562760669402433,
+   "valor": 0.2064843772536351,
    "fmt": "pct0",
-   "texto": "18%",
+   "texto": "21%",
    "hoja_es": "Punto Equilibrio",
    "celda": "B24"
   },
   "saldo_minimo": {
-   "valor": 63228.3279786594,
+   "valor": 64486.93462620075,
    "fmt": "usd",
-   "texto": "$63,228",
+   "texto": "$64,487",
    "hoja_es": "Tesorería 12 meses",
    "celda": "B23"
   },
@@ -995,16 +1030,16 @@
    "celda": "B24"
   },
   "payback": {
-   "valor": "Over 3 years",
+   "valor": 2.9,
    "fmt": "anos1",
-   "texto": "more than 3 years",
+   "texto": "2.9 years",
    "hoja_es": "Tesorería 12 meses",
    "celda": "B31"
   },
   "payback_capex": {
-   "valor": 2.4,
+   "valor": 2.2,
    "fmt": "anos1",
-   "texto": "2.4 years",
+   "texto": "2.2 years",
    "hoja_es": "Tesorería 12 meses",
    "celda": "B32"
   },
@@ -1037,46 +1072,81 @@
    "celda": "B18"
   },
   "pesimista_clientes": {
-   "valor": 112,
+   "valor": 116,
    "fmt": "int",
-   "texto": "112",
+   "texto": "116",
    "hoja_es": "Escenarios",
    "celda": "B5"
   },
   "optimista_clientes": {
-   "valor": 161,
+   "valor": 167,
    "fmt": "int",
-   "texto": "161",
+   "texto": "167",
    "hoja_es": "Escenarios",
    "celda": "D5"
   },
   "pesimista_ventas": {
-   "valor": 380639.84,
+   "valor": 394234.12,
    "fmt": "usd",
-   "texto": "$380,640",
+   "texto": "$394,234",
    "hoja_es": "Escenarios",
    "celda": "B8"
   },
   "optimista_ventas": {
-   "valor": 659483.37,
+   "valor": 684060.39,
    "fmt": "usd",
-   "texto": "$659,483",
+   "texto": "$684,060",
    "hoja_es": "Escenarios",
    "celda": "D8"
   },
   "pesimista_resultado": {
-   "valor": -49753.38045257138,
+   "valor": -43195.49978057141,
    "fmt": "usd",
-   "texto": "-$49,753",
+   "texto": "-$43,195",
    "hoja_es": "Escenarios",
    "celda": "B18"
   },
   "optimista_resultado": {
-   "valor": 133279.5126394286,
+   "valor": 145307.50622742856,
    "fmt": "usd",
-   "texto": "$133,280",
+   "texto": "$145,308",
    "hoja_es": "Escenarios",
    "celda": "D18"
+  },
+  "pesimista_ticket": {
+   "valor": 10.33,
+   "fmt": "usd2",
+   "texto": "$10.33",
+   "hoja_es": "Escenarios",
+   "celda": "B6"
+  },
+  "optimista_ticket": {
+   "valor": 11.67,
+   "fmt": "usd2",
+   "texto": "$11.67",
+   "hoja_es": "Escenarios",
+   "celda": "D6"
+  },
+  "pesimista_dias": {
+   "valor": 329,
+   "fmt": "int",
+   "texto": "329",
+   "hoja_es": "Escenarios",
+   "celda": "B7"
+  },
+  "optimista_dias": {
+   "valor": 351,
+   "fmt": "int",
+   "texto": "351",
+   "hoja_es": "Escenarios",
+   "celda": "D7"
+  },
+  "pesimista_caja": {
+   "valor": 33949.71109196766,
+   "fmt": "usd",
+   "texto": "$33,950",
+   "hoja_es": "Escenarios",
+   "celda": "B25"
   },
   "inv_lanzamiento": {
    "valor": 4000,
@@ -1142,28 +1212,28 @@
    "celda": "B51"
   },
   "rotaciones_dia": {
-   "valor": 3.111111111111111,
+   "valor": 3.2222222222222223,
    "fmt": "dec1",
-   "texto": "3.1",
+   "texto": "3.2",
    "hoja_es": "0. Supuestos",
    "celda": "B50"
   },
   "ventas_dia": {
-   "valor": 1540.0,
+   "valor": 1595.0,
    "fmt": "usd",
-   "texto": "$1,540",
+   "texto": "$1,595",
    "deriv": true
   },
   "ebitda_a1": {
-   "valor": 84544.23999999999,
+   "valor": 93565.12,
    "fmt": "usd",
-   "texto": "$84,544",
+   "texto": "$93,565",
    "deriv": true
   },
   "ebitda_pct_a1": {
-   "valor": 0.1614672268907563,
+   "valor": 0.1725338742393509,
    "fmt": "pct1",
-   "texto": "16.1%",
+   "texto": "17.3%",
    "deriv": true
   },
   "aportacion_pct": {

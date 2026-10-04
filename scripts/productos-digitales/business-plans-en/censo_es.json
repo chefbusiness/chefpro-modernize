@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generado": "2026-10-04T16:31:29Z",
+  "generado": "2026-10-04T17:50:38Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-food-truck",
    "astro-site/public/dl/plan-negocio-cafeteria"
   ],
-  "commit": "a8a9b055",
+  "commit": "3c57801a",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -23311,6 +23311,41 @@
     "fmt": "usd",
     "valor_es": 66942.365
    },
+   "pesimista_ticket": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "B6",
+    "fmt": "usd2",
+    "valor_es": 10
+   },
+   "optimista_ticket": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "D6",
+    "fmt": "usd2",
+    "valor_es": 14
+   },
+   "pesimista_dias": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "B7",
+    "fmt": "int",
+    "valor_es": 250
+   },
+   "optimista_dias": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "D7",
+    "fmt": "int",
+    "valor_es": 250
+   },
+   "pesimista_caja": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "B25",
+    "fmt": "usd",
+    "valor_es": -6091.950000000001
+   },
    "inv_lanzamiento": {
     "hoja_es": "Inversión Inicial",
     "hoja_en": "Startup Costs",
@@ -23858,6 +23893,41 @@
     "celda": "D18",
     "fmt": "usd",
     "valor_es": 81934.05600000001
+   },
+   "pesimista_ticket": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "B6",
+    "fmt": "usd2",
+    "valor_es": 9.2
+   },
+   "optimista_ticket": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "D6",
+    "fmt": "usd2",
+    "valor_es": 10.4
+   },
+   "pesimista_dias": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "B7",
+    "fmt": "int",
+    "valor_es": 290
+   },
+   "optimista_dias": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "D7",
+    "fmt": "int",
+    "valor_es": 310
+   },
+   "pesimista_caja": {
+    "hoja_es": "Escenarios",
+    "hoja_en": "Scenarios",
+    "celda": "B25",
+    "fmt": "usd",
+    "valor_es": 25421.588999999978
    },
    "inv_lanzamiento": {
     "hoja_es": "Inversión Inicial",

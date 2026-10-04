@@ -198,7 +198,7 @@ _SUP_COMUN = [  # (celda, (valor FT, valor CAF), rótulo)
     ('B13', (0.30, 0.30), 'Coste de mercancía sobre las ventas de COMIDA'),
     ('B14', (0.25, 0.24), 'Coste de mercancía sobre las ventas de BEBIDA'),
     ('B15', (0.04, 0.03), 'Consumibles'), ('B16', (0, 0), 'Ventas por delivery'),
-    ('B17', (0.25, 0.25), 'Comisión de la plataforma'), ('B18', (0.029, 0.029), 'Comisión de los medios de pago'),
+    ('B17', (0.25, 0.25), 'Comisión de la plataforma'), ('B18', (0.035, 0.035), 'Comisión de los medios de pago'),
     ('B20', (0.10, 0.10), 'Seguridad Social'), ('B21', (12, 12), 'Número de pagas'),
     ('B22', (15080, 15080), 'SMI anual'),
     ('B24', (1200, 4500), 'Alquiler mensual'), ('B25', (1, 2), 'Fianza'), ('B26', (500, 1200), 'Suministros'),
@@ -292,6 +292,11 @@ CALIBRACION_D15 = OrderedDict([
     (('CAFP', '0. Supuestos', 'B5'), (11.0, 'D15: holgura de caja 12 % → ≥ 15 %; ticket dentro de $7.81-$11.11')),
     (('CAFP', 'Escenarios', 'B6'), (10.33, 'mismas proporciones que el ES (9.20/9.80) sobre los $11.00 calibrados')),
     (('CAFP', 'Escenarios', 'D6'), (11.67, 'mismas proporciones que el ES (10.40/9.80) sobre los $11.00 calibrados')),
+    # Ronda de arreglos (M1): con la comisión de tarjeta al 3.5 % combinado, el neto del año 1 de la CAF bajaba al 5.9 %
+    # (semáforo REVIEW). 145 clientes/día, dentro del rango 100-250 de research §4; el ticket se queda en $11.00
+    (('CAFP', '0. Supuestos', 'B4'), (145, 'M1: neto año 1 5.9 % → ≥ 6 % con la tarjeta al 3.5 %; research 100-250/día')),
+    (('CAFP', 'Escenarios', 'B5'), (116, 'mismas proporciones que el ES (80/100) sobre los 145 del caso calibrado')),
+    (('CAFP', 'Escenarios', 'D5'), (167, 'mismas proporciones que el ES (115/100) sobre los 145 del caso calibrado')),
 ])
 
 # ==========================================================================
@@ -361,7 +366,8 @@ FIJOS = OrderedDict([
     ('Ticket medio SIN IVA (€)', 'Average check (excl. sales tax)'),
     ('PVP equivalente con IVA (calculado)', 'Menu price incl. sales tax (calculated)'),
     ('Seguridad Social a cargo de la empresa', 'Employer payroll taxes'),
-    ('Número de pagas anuales', 'Pay periods per year'),
+    # m8 (revisión final): en EE. UU. «pay periods» es la frecuencia de nómina; aquí son las pagas MENSUALES del modelo
+    ('Número de pagas anuales', 'Monthly pay periods per year (keep 12)'),
     ('SMI anual de referencia (€)', 'Federal minimum wage, annual full-time'),
     ('Suelo salarial anual del convenio provincial (€)', 'State / local minimum wage, annual full-time'),
     ('Impuesto de Sociedades, nueva creación', 'Effective income tax rate (years 1-2)'),
@@ -375,9 +381,11 @@ FIJOS = OrderedDict([
     ('Carencia de principal (años)', 'Interest-only period (years)'),
     ('DSCR mínimo aceptable', 'DSCR limit (minimum acceptable)'),
     ('DSCR objetivo (verde)', 'DSCR target (green)'),
-    # ---- Financiación filas 8-11 (D13)
-    ('Línea ICO (avalada por el ICO, la concede tu banco)', 'SBA-guaranteed loan (7(a), through your bank)'),
-    ('Préstamo participativo ENISA', 'SBA Microloan (nonprofit intermediaries, up to $50,000)'),
+    # ---- Financiación filas 8-11 (D13). B1 (revisión final): el cuadro, los intereses del P&L y el DSCR leen SOLO la
+    #      fila 7 (= '0. Assumptions'!B31); las filas 8-9 suman como fuentes pero no se amortizan, y lo dicen
+    ('Línea ICO (avalada por el ICO, la concede tu banco)',
+     'Other loan (not in the schedule or the DSCR — enter your loan in row 7)'),
+    ('Préstamo participativo ENISA', 'SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)'),
     ('Business angels o socios inversores', 'Investors / partners (equity: dilutes, not repaid)'),
     ('Subvenciones autonómicas o locales', 'Local grants (usually paid after you spend)'),
     # ---- Tesorería filas 16-20 (D9, SPEC §4.1) y cabeceras «Mes n (€)» (D8)
@@ -453,7 +461,8 @@ REGLAS_US = OrderedDict([
     ('uk_fhrs', ('Food Hygiene Rating 1-5', 'food.gov.uk food hygiene rating scheme')),
     ('sqft', ('1 m² = 10.764 sq ft', 'NIST SP 811')),
     ('galon', ('1 US gal = 3.785 L', 'NIST SP 811')),
-    ('tarjeta', ('2.9% efectivo (≈ 2.6% + $0.15 presencial)', '[kit estimate] sobre tarifas de Square')),
+    ('tarjeta', ('3.5% tasa combinada (porcentaje + fijo por cobro, que pesa más en tickets pequeños); comprobar '
+                 'el extracto del procesador', '[kit estimate] (revisión final M1)')),
     ('delivery', ('comisión de apps 15-30% (25% en el ejemplo)', '[kit estimate]')),
 ])
 
@@ -578,6 +587,14 @@ TOKENS_DOCX = OrderedDict([
     ('optimista_ventas', ('usd', ('fila', _ES, 'INGRESOS ANUALES (sin IVA)', 'D'), 'optimistic scenario: annual revenue')),
     ('pesimista_resultado', ('usd', ('fila', _ES, 'RESULTADO ANTES DE IMPUESTOS', 'B'), 'pessimistic scenario: pre-tax profit (negative = loss)')),
     ('optimista_resultado', ('usd', ('fila', _ES, 'RESULTADO ANTES DE IMPUESTOS', 'D'), 'optimistic scenario: pre-tax profit')),
+    # ronda de arreglos (revisión final m1/m2): ticket y días de cada escenario (el lector reproduce los ingresos) y el
+    # saldo de caja estimado al cierre del año 1 (en el FT pesimista se agota)
+    ('pesimista_ticket', ('usd2', ('fila', _ES, 'Ticket medio sin IVA', 'B'), 'pessimistic scenario: average check excl. sales tax')),
+    ('optimista_ticket', ('usd2', ('fila', _ES, 'Ticket medio sin IVA', 'D'), 'optimistic scenario: average check excl. sales tax')),
+    ('pesimista_dias', ('int', ('fila', _ES, 'Días de apertura al año', 'B'), 'pessimistic scenario: operating days')),
+    ('optimista_dias', ('int', ('fila', _ES, 'Días de apertura al año', 'D'), 'optimistic scenario: operating days')),
+    ('pesimista_caja', ('usd', ('fila', _ES, 'Saldo de caja al cierre del año 1 (estimado, el mismo método en los tres '
+                                'escenarios)', 'B'), 'pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)')),
     # partidas de inversión
     ('inv_lanzamiento', ('usd', ('fila', _I, {'ft': 'Marketing lanzamiento', 'caf': 'Marketing lanzamiento (web + RRSS + Google)'}, 'B'),
                          'launch marketing budget')),
