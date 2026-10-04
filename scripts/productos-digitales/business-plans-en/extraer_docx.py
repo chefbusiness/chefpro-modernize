@@ -34,7 +34,7 @@ REPO = os.path.abspath(os.path.join(AQUI, '..', '..', '..'))
 sys.path.insert(0, AQUI)
 import mapas                                                     # noqa: E402
 
-N_PARRAFOS_SPEC = {'ft': 131, 'caf': 167}
+N_PARRAFOS_SPEC = mapas.DOCX_N_PARRAFOS
 LETTER = (7772400, 10058400)
 
 
@@ -180,7 +180,7 @@ def extraer(plan, repo):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[1])
     ap.add_argument('--origen-repo', default=REPO)
-    ap.add_argument('--salida', default=AQUI)
+    ap.add_argument('--salida', default=mapas.DATOS)
     args = ap.parse_args()
     todos = []
     for plan in mapas.PLANES:

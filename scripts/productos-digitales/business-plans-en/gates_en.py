@@ -176,7 +176,7 @@ def valores_esperados(corto, cifras):
 
 
 def cargar_cifras(base):
-    p = os.path.join(base, 'cifras_caso.json') if base else os.path.join(AQUI, 'cifras_caso.json')
+    p = os.path.join(base, 'cifras_caso.json') if base else os.path.join(mapas.DATOS, 'cifras_caso.json')
     if not os.path.exists(p):
         return None, p
     return json.load(open(p, encoding='utf-8')), p
@@ -285,10 +285,10 @@ def gateG1(R, carpetas, datos):
         if n_f != n_cen:
             R.f(G, '%s: %d fórmulas ≠ censo %d' % (corto, n_f, n_cen))
         if mapas.TIPO_DE[corto] == 'check':
-            fases = []
-            for h_es in wes.sheetnames[:-1]:
-                ws = wen[mapas.hoja_en(corto, h_es)]
-                fases.append(sum(1 for c in ws['A'] if c.value in ('☐', '✓', 'N/A')))
+            try:
+                fases = mapas.contar_tareas(corto, wen)                # por hoja (FT/CAF/PAN) o por fila-cabecera (REST)
+            except KeyError as e:
+                fases = ['pestaña que falta: %s' % e]
             if fases != mapas.TAREAS_POR_FASE[corto]:
                 R.f(G, '%s: tareas por fase %s ≠ %s' % (corto, fases, mapas.TAREAS_POR_FASE[corto]))
             else:
@@ -411,7 +411,7 @@ def gateG3(R, carpetas, datos, mes):
             if (ins.row_dimensions[ins[x].row].height or 0) < 2 * 11:
                 R.f(G, '%s: la fila del aviso D21 no tiene alto para su texto ajustado' % corto)
         marca = mapas.FIJOS['Más plantillas y kits del catálogo en aichef.pro/productos-digitales']
-        if not any(c.value == marca for c in ins['A']):
+        if (mapas.CON_MARCA is None or corto in mapas.CON_MARCA) and not any(c.value == marca for c in ins['A']):
             R.f(G, '%s: falta la línea de marca %r' % (corto, marca))
         p = wen.properties
         for k, v in mapas.docprops_en(corto).items():
@@ -486,7 +486,7 @@ def gateG4(R, carpetas, datos):
 # ==========================================================================
 def gateG5(R, carpetas, datos):
     G = 'G5'
-    for e in mapas.cruzar_censo(os.path.join(AQUI, 'censo_es.json')):
+    for e in mapas.cruzar_censo(os.path.join(mapas.DATOS, 'censo_es.json')):
         R.f(G, 'cruzar_censo: ' + e)
     n = 0
     for corto in mapas.LIBROS:
@@ -600,10 +600,11 @@ def gateG6(R, carpetas, datos, cifras, cifras_path):
         plan = mapas.PLAN_DE[corto]
         leer = lambda h, x, _c=corto, _wv=wv: _wv[mapas.hoja_en(_c, h)][x].value       # noqa: E731
         cen = A.censo_libro(datos, corto)
-        # E2: input tax de las compras = 0 (G13/G14 apuntan a B41 = 0)
-        for x in ('G13', 'G14'):
-            if leer('PyG 3 Años', x) != 0:
-                R.f(G, '%s 3-Year P&L!%s = %r (E2: input tax de compras = 0)' % (corto, x, leer('PyG 3 Años', x)))
+        # E2: input tax de las compras = 0 (FT/CAF G13/G14, REST G14/G15, PAN G13/G14 apuntan a B41 = 0)
+        for h_e2, x in mapas.celdas_e2(corto):
+            if leer(h_e2, x) != 0:
+                R.f(G, '%s %s!%s = %r (E2: input tax de compras = 0)' % (corto, mapas.hoja_en(corto, h_e2), x,
+                                                                         leer(h_e2, x)))
         # sales tax: memoria de input tax = 0; remitido cada trimestre = cobrado del trimestre
         f16 = A.fila_de(cen, 'Tesorería 12 meses', 'IVA repercutido del mes')
         f17 = A.fila_de(cen, 'Tesorería 12 meses', 'IVA soportado del mes')
@@ -654,7 +655,7 @@ def gateG6(R, carpetas, datos, cifras, cifras_path):
 # ==========================================================================
 def gateG7(R, carpetas, datos, cifras):
     G = 'G7'
-    notas = open(os.path.join(AQUI, 'F2-NOTAS.md'), encoding='utf-8').read()
+    notas = open(mapas.NOTAS_F2, encoding='utf-8').read()
     for (c, h, x), (v, motivo) in mapas.CALIBRACION_D15.items():
         cita = '%s %s!%s' % (c, h, x)
         if cita not in notas:
@@ -790,7 +791,7 @@ def _primera_cf_text(wb, hoja, texto):
 def _cifras_mal(base):
     p = os.path.join(base, 'cifras_caso.json')
     c = json.load(open(p, encoding='utf-8'))
-    c['ft']['ventas_a1']['texto'] = '$1'
+    c[list(mapas.PLANES)[0]]['ventas_a1']['texto'] = '$1'
     json.dump(c, open(p, 'w', encoding='utf-8'))
 
 
@@ -802,8 +803,23 @@ def _dv_lista(wb, hoja, nueva):
     raise RuntimeError('sin DV de lista en %s' % hoja)
 
 
+# Papeles del autotest (mapas.AUTOTEST): P1/P2 = planes financieros, C1/C2 = checklists; las pestañas se piden por su
+# nombre ES canónico y se traducen con mapas.hoja_en (en FT/CAF: exactamente las mismas celdas y pestañas de siempre)
+_AT = mapas.AUTOTEST
+P1, P2, C1, C2 = _AT['P1'], _AT['P2'], _AT['C1'], _AT['C2']
+
+
+def _h(corto, canon):
+    return mapas.hoja_en(corto, canon)
+
+
 def _tarea_fuera(wb):
-    ws = wb['Phase 1 - Business Setup']
+    if mapas.MOLDE_CHECK.get(C1, 'hojas') == 'cabeceras':          # RESTC: la tarea es la fila (col. B con texto)
+        h, cabs, _fin = mapas.FASES_CABECERA[C1]
+        ws = wb[_h(C1, h)]
+        ws.cell(cabs[0] + 1, 2).value = None
+        return
+    ws = wb[_h(C1, mapas.hojas_fase(C1)[0])]
     for c in ws['A']:
         if c.value == '☐':
             c.value = None
@@ -812,7 +828,7 @@ def _tarea_fuera(wb):
 
 
 def _desbloquear(wb):
-    ws = wb['3-Year P&L']
+    ws = wb[_h(P2, 'PyG 3 Años')]
     c = ws['A9']
     pr = copy.copy(c.protection)
     pr.locked = False
@@ -820,43 +836,49 @@ def _desbloquear(wb):
 
 
 def _e2_revertir(wb):
-    ws = wb['3-Year P&L']
-    ws['G13'].value = ws['G13'].value.replace("'0. Assumptions'!$B$41", "'0. Assumptions'!$B$39")
+    h, x = mapas.celdas_e2(P1)[0]
+    ws = wb[_h(P1, h)]
+    ws[x].value = ws[x].value.replace("'0. Assumptions'!$B$41", "'0. Assumptions'!$B$39")
+
+
+def _fila_aviso(corto):
+    return mapas.FILA_VERSION[corto]
 
 
 MUTACIONES = [
-    ('texto en español en una celda', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: w['Startup Costs'].cell(
-        row=3, column=1, value='Inversión total del vehículo')), {'G2'}),
-    ('fórmula alterada', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: w['3-Year P&L'].__setitem__(
-        'B9', '=IFERROR(IF(B6*B7*B8=0,"",B6*B7*B8*1.1),"")')), {'G1'}),
-    ('hoja en A4', 'FTC', lambda b: _wb_mutar(b, 'FTC', lambda w: setattr(w['Phase 2 - Truck & Permits'].page_setup,
-                                                                          'paperSize', 9)), {'G3'}),
-    ('formato con €', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: setattr(w['3-Year P&L']['B9'], 'number_format',
-                                                                             '#,##0 €')), {'G2'}),
-    ('ítem de DV en español', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: _dv_lista(w, 'Startup Costs', '"Sí,No"')),
-     {'G4'}),
-    ('token de CF que colisiona', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: setattr(
+    ('texto en español en una celda', P1, lambda b: _wb_mutar(b, P1, lambda w: w[_h(P1, 'Inversión Inicial')][
+        _AT['P1_celda_texto']].__setattr__('value', 'Inversión total del vehículo')), {'G2'}),
+    ('fórmula alterada', P1, lambda b: _wb_mutar(b, P1, lambda w: w[_h(P1, 'PyG 3 Años')].__setitem__(
+        _AT['P1_celda_formula'], '=IFERROR(IF(B6*B7*B8=0,"",B6*B7*B8*1.1),"")')), {'G1'}),
+    ('hoja en A4', C1, lambda b: _wb_mutar(b, C1, lambda w: setattr(w[_h(C1, _AT['C1_hoja_papel'])].page_setup,
+                                                                    'paperSize', 9)), {'G3'}),
+    ('formato con €', P1, lambda b: _wb_mutar(b, P1, lambda w: setattr(w[_h(P1, 'PyG 3 Años')][_AT['P1_celda_formula']],
+                                                                       'number_format', '#,##0 €')), {'G2'}),
+    ('ítem de DV en español', P1, lambda b: _wb_mutar(b, P1, lambda w: _dv_lista(w, _h(P1, 'Inversión Inicial'),
+                                                                                  '"Sí,No"')), {'G4'}),
+    ('token de CF que colisiona', P1, lambda b: _wb_mutar(b, P1, lambda w: setattr(
         _primera_cf_text(w, 'Instructions', 'OK'), 'text', 'REVIEW')), {'G5'}),
-    ('contraseña de protección', 'CAFP', lambda b: _wb_mutar(b, 'CAFP', lambda w: setattr(
-        w['Staffing'].protection, 'password', 'x')), {'G1'}),
-    ('celda desbloqueada fuera de verde', 'CAFP', lambda b: _wb_mutar(b, 'CAFP', _desbloquear), {'G1'}),
-    ('aviso D21 borrado', 'CAFC', lambda b: _wb_mutar(b, 'CAFC', lambda w: w['Instructions'].__setitem__('A12', None)),
-     {'G3'}),
-    ('línea de versión vieja', 'CAFC', lambda b: _wb_mutar(b, 'CAFC', lambda w: w['Instructions'].__setitem__(
-        'A11', mapas.version_en('caf', 'September 2026'))), {'G3'}),
-    ('docProps en español', 'FTC', lambda b: _zip_props(b, 'FTC', 'Food Truck Startup Checklist (68 Tasks)',
-                                                        'Checklist de apertura del food truck'), {'G2'}),
-    ('«SBA minimum» en una nota', 'CAFP', lambda b: _wb_mutar(b, 'CAFP', lambda w: w['Financing'].__setitem__(
+    ('contraseña de protección', P2, lambda b: _wb_mutar(b, P2, lambda w: setattr(
+        w[_h(P2, 'Personal')].protection, 'password', 'x')), {'G1'}),
+    ('celda desbloqueada fuera de verde', P2, lambda b: _wb_mutar(b, P2, _desbloquear), {'G1'}),
+    ('aviso D21 borrado', C2, lambda b: _wb_mutar(b, C2, lambda w: w['Instructions'].__setitem__(
+        'A%d' % (_fila_aviso(C2) + 1), None)), {'G3'}),
+    ('línea de versión vieja', C2, lambda b: _wb_mutar(b, C2, lambda w: w['Instructions'].__setitem__(
+        'A%d' % _fila_aviso(C2), mapas.version_en(mapas.PLAN_DE[C2], 'September 2026'))), {'G3'}),
+    ('docProps en español', C1, lambda b: _zip_props(b, C1, _AT['C1_titulo'],
+                                                     'Checklist de apertura del food truck'), {'G2'}),
+    ('«SBA minimum» en una nota', P2, lambda b: _wb_mutar(b, P2, lambda w: w[_h(P2, 'Financiación')].__setitem__(
         'C17', 'A 1.25x DSCR is the SBA minimum for this loan')), {'G7'}),
-    ('libro guardado sin caché', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: None), {'G6'}),
-    ('caso que rompe D15', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: w['0. Assumptions'].__setitem__('B4', 55),
-                                                      recalcular=True), {'G6', 'G7'}),
-    ('regla US cambiada', 'CAFP', lambda b: _wb_mutar(b, 'CAFP', lambda w: w['0. Assumptions'].__setitem__('B39', 0.07),
-                                                      recalcular=True), {'G7'}),
-    ('merge añadido', 'FTP', lambda b: _wb_mutar(b, 'FTP', lambda w: w['Staffing'].merge_cells('A30:C30')), {'G1'}),
-    ('tarea borrada del checklist', 'FTC', lambda b: _wb_mutar(b, 'FTC', _tarea_fuera), {'G1'}),
-    ('E2 revertido', 'FTP', lambda b: _wb_mutar(b, 'FTP', _e2_revertir, recalcular=True), {'G1', 'G6'}),
-    ('carácter no latino', 'CAFC', lambda b: _wb_mutar(b, 'CAFC', lambda w: w['Phase 5 - Marketing'].__setitem__(
+    ('libro guardado sin caché', P1, lambda b: _wb_mutar(b, P1, lambda w: None), {'G6'}),
+    ('caso que rompe D15', P1, lambda b: _wb_mutar(b, P1, lambda w: w['0. Assumptions'].__setitem__('B4', 55),
+                                                   recalcular=True), {'G6', 'G7'}),
+    ('regla US cambiada', P2, lambda b: _wb_mutar(b, P2, lambda w: w['0. Assumptions'].__setitem__('B39', 0.07),
+                                                  recalcular=True), {'G7'}),
+    ('merge añadido', P1, lambda b: _wb_mutar(b, P1, lambda w: w[_h(P1, 'Personal')].merge_cells(_AT['P1_merge'])),
+     {'G1'}),
+    ('tarea borrada del checklist', C1, lambda b: _wb_mutar(b, C1, _tarea_fuera), {'G1'}),
+    ('E2 revertido', P1, lambda b: _wb_mutar(b, P1, _e2_revertir, recalcular=True), {'G1', 'G6'}),
+    ('carácter no latino', C2, lambda b: _wb_mutar(b, C2, lambda w: w[_h(C2, _AT['C2_hoja_no_latino'])].__setitem__(
         'B3', 'Social media plan 计划')), {'G2'}),
     ('cifras_caso.json desalineado', '-', _cifras_mal, {'G6'}),
 ]

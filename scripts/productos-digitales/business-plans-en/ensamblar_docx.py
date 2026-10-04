@@ -63,7 +63,7 @@ class Aborta(Exception):
 
 
 def cargar_es(plan):
-    de = json.load(open(os.path.join(AQUI, 'docx_es_%s.json' % plan), encoding='utf-8'))
+    de = json.load(open(os.path.join(mapas.DATOS, 'docx_es_%s.json' % plan), encoding='utf-8'))
     ruta = os.path.join(REPO, mapas.PLANES[plan]['dir_es'], mapas.DOCX[plan][0])
     return de, ruta
 
@@ -82,8 +82,8 @@ def cargar_en(plan, rutas):
 def cifras_desde_es(plan):
     """Cifras de PRUEBA: caché del xlsx ES publicado (valores del caso español; solo para el autotest)."""
     import openpyxl
-    censo = json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8'))
-    corto = 'FTP' if plan == 'ft' else 'CAFP'
+    censo = json.load(open(os.path.join(mapas.DATOS, 'censo_es.json'), encoding='utf-8'))
+    corto = mapas.corto_plan(plan)
     wb = openpyxl.load_workbook(mapas.ruta_es(corto, REPO), data_only=True)
     return mapas.calcular_cifras(plan, lambda h, c: wb[h][c].value, censo['tokens_docx'][plan])
 
@@ -353,7 +353,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[1])
     ap.add_argument('--plan', choices=list(mapas.PLANES))
     ap.add_argument('--en', nargs='+')
-    ap.add_argument('--cifras', default=os.path.join(AQUI, 'cifras_caso.json'))
+    ap.add_argument('--cifras', default=os.path.join(mapas.DATOS, 'cifras_caso.json'))
     ap.add_argument('--cifras-desde-es', action='store_true', help='cifras de PRUEBA desde la caché del xlsx ES')
     ap.add_argument('--salida')
     ap.add_argument('--autotest', action='store_true')
@@ -362,9 +362,9 @@ def main():
     if args.autotest:
         return autotest(args.dir)
     if not args.plan:
-        ap.error('--plan ft|caf (o --autotest)')
+        ap.error('--plan %s (o --autotest)' % '|'.join(mapas.PLANES))
     plan = args.plan
-    rutas = args.en or [os.path.join(AQUI, 'docx_en_%s_%s.json' % (plan, s)) for s in ('a', 'b')]
+    rutas = args.en or [os.path.join(mapas.DATOS, 'docx_en_%s_%s.json' % (plan, s)) for s in ('a', 'b')]
     try:
         en = cargar_en(plan, rutas)
         if args.cifras_desde_es:

@@ -26,7 +26,9 @@ sys.path.insert(0, AQUI)
 import mapas                                                     # noqa: E402
 
 FIN = os.path.join(os.path.dirname(AQUI), 'financial-kit', 'textos_en')
-SALIDA = os.path.join(AQUI, 'tandas')
+SALIDA = os.path.join(mapas.DATOS, 'tandas')
+REPO = os.path.abspath(os.path.join(AQUI, '..', '..', '..'))
+REL = os.path.relpath(mapas.DATOS, REPO)                 # scripts/productos-digitales/business-plans-en(-2)
 
 
 def glosario():
@@ -40,15 +42,37 @@ def glosario():
     return g
 
 
+def escribir_reusadas(te):
+    """Grupos que NO van a los traductores porque su EN ya existe en otro conjunto (restpan: GM, del de FT/CAF):
+    escribe textos_en/<g>.json con los ids de ESTE textos_es.json. En ftcaf no hay ninguno."""
+    n = 0
+    for g in [x for x in mapas.GRUPOS if x not in mapas.GRUPOS_TRADUCTORES]:
+        out = OrderedDict()
+        for e in te['cadenas']:
+            if e['grupo'] != g:
+                continue
+            if 'reuso' not in e:
+                raise SystemExit('%s %s sin traducción reutilizable: %r' % (g, e['id'], e['es'][:60]))
+            out[e['id']] = e['reuso']['en']
+        os.makedirs(os.path.join(mapas.DATOS, 'textos_en'), exist_ok=True)
+        with open(os.path.join(mapas.DATOS, 'textos_en', '%s.json' % g), 'w', encoding='utf-8') as fh:
+            json.dump(out, fh, ensure_ascii=False, indent=1)
+            fh.write('\n')
+        print('textos_en/%s.json: %d cadenas REUTILIZADAS (no van a los traductores)' % (g, len(out)))
+        n += len(out)
+    return n
+
+
 def main():
     os.makedirs(SALIDA, exist_ok=True)
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
-    censo = json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8'))
+    te = json.load(open(os.path.join(mapas.DATOS, 'textos_es.json'), encoding='utf-8'))
+    censo = json.load(open(os.path.join(mapas.DATOS, 'censo_es.json'), encoding='utf-8'))
     por_corto = {i['corto']: i for i in censo['libros'].values()}
     glo = glosario()
     pestanas = OrderedDict((c, d) for c, d in mapas.HOJAS_POR_LIBRO.items())
     fijos = OrderedDict((k, v) for k, v in mapas.FIJOS.items())
-    for g in ('GM', 'GFT', 'GCAF'):
+    reusadas = escribir_reusadas(te)
+    for g in mapas.GRUPOS_TRADUCTORES:
         cad = [e for e in te['cadenas'] if e['grupo'] == g]
         cat = OrderedDict()
         out = []
@@ -80,6 +104,9 @@ def main():
             for k in ('max_len', 'cita_hojas', 'por_celda'):
                 if k in e:
                     x[k] = e[k]
+            if 'reuso' in e:                                   # restpan: EN ya escrito para FT/CAF → revisar contexto
+                x['propuesta_en'] = e['reuso']['en']
+                x['propuesta_de'] = '%s %s (%s)' % (e['reuso']['grupo'], e['reuso']['id'], ' / '.join(e['reuso']['donde']))
             refs = []
             for p in e.get('pistas', []):
                 if p not in cat:
@@ -89,7 +116,7 @@ def main():
                 x['pistas'] = refs
             out.append(x)
         obj = OrderedDict([
-            ('tanda', g), ('salida', 'scripts/productos-digitales/business-plans-en/textos_en/%s.json' % g),
+            ('tanda', g), ('salida', '%s/textos_en/%s.json' % (REL, g)),
             ('formato_salida', '{"<id>": "<texto EN>", …} con TODOS los ids de "cadenas" y nada más'),
             ('n_cadenas', len(out)), ('n_palabras', sum(len(e['es'].split()) for e in cad)),
             ('pistas', OrderedDict((v, k) for k, v in cat.items())),
@@ -102,7 +129,7 @@ def main():
             fh.write('\n')
         print('tandas/%s.entrada.json: %d cadenas, %d palabras, %d pistas' % (g, len(out), obj['n_palabras'], len(cat)))
     for tanda, (plan, secs) in mapas.DOCX_TANDAS.items():
-        de = json.load(open(os.path.join(AQUI, 'docx_es_%s.json' % plan), encoding='utf-8'))
+        de = json.load(open(os.path.join(mapas.DATOS, 'docx_es_%s.json' % plan), encoding='utf-8'))
         pars = []
         for k, e in de['parrafos'].items():
             if e.get('tanda') == tanda:
@@ -114,12 +141,13 @@ def main():
         fij = OrderedDict((str(i), t) for i, t in mapas.textos_fijos_docx(plan).items())
         obj = OrderedDict([
             ('tanda', tanda), ('plan', plan), ('producto', mapas.PLANES[plan]['producto']),
-            ('salida', 'scripts/productos-digitales/business-plans-en/docx_en_%s.json' % tanda),
+            ('salida', '%s/docx_en_%s.json' % (REL, tanda)),
             ('formato_salida', '{"<i>": "<párrafo EN>", …} con TODOS los "i" de "parrafos" y nada más'),
             ('secciones', ['%d. %s' % (s, mapas.ENCABEZADOS_EN[s - 1]) for s in secs]),
             ('n_parrafos', len(pars)), ('n_palabras', sum(p['palabras'] for p in pars)),
             ('tokens', OrderedDict((t, '%s [%s]' % (desc, fmt)) for t, (fmt, src, desc) in mapas.tokens_de(plan).items())),
             ('movimiento_caf', mapas.DOCX_MOVER.get(plan)),
+        ] + ([('notas_del_plan', mapas.DOCX_NOTAS_PLAN[plan])] if plan in getattr(mapas, 'DOCX_NOTAS_PLAN', {}) else []) + [
             ('fijos_que_no_escribes (portada, aviso, índice, encabezados, cierre: los pone ensamblar_docx.py)', fij),
             ('parrafos', pars),
         ])

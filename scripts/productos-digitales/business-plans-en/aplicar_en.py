@@ -75,8 +75,8 @@ CAMPO_DV = {'dv-error-titulo': 'errorTitle', 'dv-error': 'error', 'dv-prompt-tit
 INVARIABLES = set(extraer_textos.INVARIABLES)
 RX_VERSION_ES = extraer_textos.RX_VERSION
 VERDE = extraer_textos.VERDE
-PLANES_CORTO = OrderedDict([('ft', 'FTP'), ('caf', 'CAFP')])
-CHECK_CORTO = OrderedDict([('ft', 'FTC'), ('caf', 'CAFC')])
+PLANES_CORTO = OrderedDict((p, mapas.corto_plan(p)) for p in mapas.PLANES)       # ft→FTP, caf→CAFP (rest→RESTP…)
+CHECK_CORTO = OrderedDict((p, mapas.corto_check(p)) for p in mapas.PLANES)
 UMBRALES_D15 = OrderedDict([('dscr_min', 1.25), ('saldo_minimo', 0.0), ('cobertura_horas', 0.98),
                             ('holgura_caja_pct', 0.15)])
 
@@ -114,12 +114,12 @@ def destino(plan):
 
 
 def cargar_datos(parcial=False):
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
-    censo = json.load(open(os.path.join(AQUI, 'censo_es.json'), encoding='utf-8'))
+    te = json.load(open(os.path.join(mapas.DATOS, 'textos_es.json'), encoding='utf-8'))
+    censo = json.load(open(os.path.join(mapas.DATOS, 'censo_es.json'), encoding='utf-8'))
     por_id = {c['id']: c for c in te['cadenas']}
     tx = OrderedDict()
-    for g in ('GM', 'GFT', 'GCAF'):
-        p = os.path.join(AQUI, 'textos_en', g + '.json')
+    for g in mapas.GRUPOS:
+        p = os.path.join(mapas.DATOS, 'textos_en', g + '.json')
         if not os.path.exists(p):
             if parcial:
                 continue
@@ -139,8 +139,8 @@ def cargar_datos(parcial=False):
                 dvmsg[(d['f'], d['h'], d['c'], CAMPO_DV[d['t']])] = (c['id'], d['tr'], c['es'])
     # overrides por libro: {id: {libro, hoja (ES), celda, texto}} → solo en ESA celda
     overrides = OrderedDict()
-    for g in ('GFT', 'GCAF'):
-        p = os.path.join(AQUI, 'textos_en', 'overrides_%s.json' % g)
+    for g in mapas.GRUPOS_OVERRIDES:
+        p = os.path.join(mapas.DATOS, 'textos_en', 'overrides_%s.json' % g)
         if not os.path.exists(p):
             continue
         for ident, o in json.load(open(p, encoding='utf-8')).items():
@@ -155,7 +155,7 @@ def cargar_datos(parcial=False):
             if r or mapas.no_latinos(o['texto']):
                 raise Aborta('override %s con restos de español: %r' % (ident, r[:2]))
             overrides[k] = (ident, o['texto'])
-    faltan = sorted({c['id'] for c in te['cadenas'] if c['grupo'] in ('GM', 'GFT', 'GCAF') and c['id'] not in tx})
+    faltan = sorted({c['id'] for c in te['cadenas'] if c['grupo'] in mapas.GRUPOS and c['id'] not in tx})
     if faltan and not parcial:
         raise Aborta('%d cadenas sin traducción (p. ej. %r)' % (len(faltan), faltan[:5]))
     return {'te': te, 'censo': censo, 'tx': tx, 'celdas': celdas, 'dvmsg': dvmsg, 'overrides': overrides,
@@ -680,6 +680,7 @@ class Cache:
 
 
 def fila_de(censo_libro_, hoja_es, rotulo):
+    hoja_es = mapas.hoja_es(censo_libro_['corto'], hoja_es)          # canónico → pestaña real (RESTP numerada)
     for fila, et in censo_libro_['hojas_detalle'][hoja_es]['etiquetas'].items():
         if (et or '').startswith(rotulo):
             return int(fila)
@@ -767,12 +768,12 @@ def buscar_prestamos(datos, mes, semilla, log=print):
 
 
 def semilla_prestamos():
-    p = os.path.join(AQUI, 'cifras_caso.json')
+    p = os.path.join(mapas.DATOS, 'cifras_caso.json')
     try:
         c = json.load(open(p, encoding='utf-8'))
         return {plan: int(c[plan]['prestamo']['valor']) for plan in mapas.PLANES}
     except Exception:
-        return {'ft': 80000, 'caf': 140000}
+        return dict(mapas.PRESTAMO_SEMILLA)
 
 
 def escribir_cifras(carpetas, datos, destino_json):
@@ -858,6 +859,8 @@ def main():
     ap.add_argument('--parcial', action='store_true', help='(solo --dry-run) deja en ES lo que no tenga traducción')
     ap.add_argument('--prestamo-ft', type=int, default=None, help='(depuración) préstamo fijo, sin punto fijo')
     ap.add_argument('--prestamo-caf', type=int, default=None)
+    ap.add_argument('--prestamo', action='append', default=[], metavar='PLAN=IMPORTE',
+                    help='(depuración) préstamo fijo por plan, p. ej. --prestamo rest=150000 --prestamo pan=120000')
     args = ap.parse_args()
     if args.parcial and not args.dry_run:
         raise SystemExit('--parcial solo vale con --dry-run')
@@ -874,8 +877,11 @@ def main():
     t0 = time.time()
     try:
         datos = cargar_datos(args.parcial)
+        fijados = dict(x.split('=', 1) for x in args.prestamo)
         if args.prestamo_ft and args.prestamo_caf:
-            prestamos = {'ft': args.prestamo_ft, 'caf': args.prestamo_caf}
+            fijados.update(ft=args.prestamo_ft, caf=args.prestamo_caf)
+        if fijados and set(fijados) == set(mapas.PLANES):
+            prestamos = {k: int(v) for k, v in fijados.items()}
             print('== 0/4 · préstamo fijado a mano: %s' % prestamos, flush=True)
         else:
             print('== 0/4 · préstamo por punto fijo (B31 = Financing!B18 a 1,000 por arriba)', flush=True)
@@ -929,8 +935,8 @@ def main():
             print('      %-30s %s umbral %s %.3f → %s' % (rot, ['%.3f' % v for v in r['valores']], r['sentido'],
                                                           r['umbral'], ['OK' if x else 'ámbar' for x in r['cumple']]))
         fallos += ['D15 %s: %s' % (plan, x) for x in f]
-    destino_json = os.path.join(AQUI, 'cifras_caso.json') if not args.dry_run else \
-        os.path.join(os.path.dirname(carpetas['ft']), 'cifras_caso.json')
+    destino_json = os.path.join(mapas.DATOS, 'cifras_caso.json') if not args.dry_run else \
+        os.path.join(os.path.dirname(carpetas[list(mapas.PLANES)[0]]), 'cifras_caso.json')
     escribir_cifras(carpetas, datos, destino_json)
     print('  cifras_caso.json → %s' % destino_json)
 

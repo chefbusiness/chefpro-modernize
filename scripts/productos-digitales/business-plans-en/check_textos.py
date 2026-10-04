@@ -33,7 +33,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 import mapas                                                     # noqa: E402
 
-XLSX = ('GM', 'GFT', 'GCAF')
+XLSX = tuple(mapas.GRUPOS)
 DOCX = tuple(mapas.DOCX_TANDAS)
 CIUDADES_ES = re.compile(r'\b(?:Madrid|Barcelona|Valencia|Bilbao|Sevilla|Seville|M[aá]laga|Zaragoza|Spain|Spanish '
                          r'market|España)\b')
@@ -83,8 +83,7 @@ def cifras_permitidas():
     """Importes y porcentajes citables sin token: los de F1-research-us.md y SPEC.md (más las reglas de mapas)."""
     dol, pct = set(), set()
     textos = []
-    for f in ('F1-research-us.md', 'SPEC.md'):
-        p = os.path.join(AQUI, f)
+    for p in mapas.FUENTES_CIFRAS:
         if os.path.exists(p):
             textos.append(open(p, encoding='utf-8').read())
     textos += [v for v, _f in mapas.REGLAS_US.values()]
@@ -140,7 +139,7 @@ def comunes(t, donde, err, avi):
 
 
 def check_xlsx(tanda, fichero, err, avi):
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
+    te = json.load(open(os.path.join(mapas.DATOS, 'textos_es.json'), encoding='utf-8'))
     esperadas = OrderedDict((e['id'], e) for e in te['cadenas'] if e['grupo'] == tanda)
     en = json.load(open(fichero, encoding='utf-8'))
     if not isinstance(en, dict):
@@ -184,7 +183,7 @@ def check_xlsx(tanda, fichero, err, avi):
 
 def check_docx(tanda, fichero, err, avi):
     plan, secs = mapas.DOCX_TANDAS[tanda]
-    de = json.load(open(os.path.join(AQUI, 'docx_es_%s.json' % plan), encoding='utf-8'))
+    de = json.load(open(os.path.join(mapas.DATOS, 'docx_es_%s.json' % plan), encoding='utf-8'))
     esperadas = OrderedDict((k, e) for k, e in de['parrafos'].items() if e.get('traducir') and e.get('tanda') == tanda)
     en = json.load(open(fichero, encoding='utf-8'))
     if not isinstance(en, dict):
@@ -234,18 +233,20 @@ def check_docx(tanda, fichero, err, avi):
             if r < 0.5 or r > 1.8:
                 avi.append('%s: palabras EN/ES = %.2f' % (donde, r))
     # reglas por párrafo
-    ult9 = {'ft': '108', 'caf': '142'}[plan]
+    ult9 = mapas.DOCX_ULTIMO_9[plan]
     if ult9 in en and not re.search(r'\bUK\b|United Kingdom', en[ult9]):
         err.append('%s[%s]: el último párrafo de §9 debe cerrar con la nota UK (D22)' % (plan, ult9))
-    if plan == 'caf' and '134' in en and len(mapas.RX_TOKEN.findall(en['134'])) < 3:
-        err.append('caf[134]: el resumen de §8 debe citar sus cifras con tokens (≥ 3)')
+    if plan in mapas.DOCX_RESUMEN_TOKENS:
+        i_res, n_min = mapas.DOCX_RESUMEN_TOKENS[plan]
+        if i_res in en and len(mapas.RX_TOKEN.findall(en[i_res])) < n_min:
+            err.append('%s[%s]: el resumen de §8 debe citar sus cifras con tokens (≥ %d)' % (plan, i_res, n_min))
     print('  %s: %d párrafos esperados · %d recibidos · %d tokens' % (tanda, len(esperadas), len(en), n_tok))
 
 
 def fichero_de(tanda):
     if tanda in XLSX:
-        return os.path.join(AQUI, 'textos_en', '%s.json' % tanda)
-    return os.path.join(AQUI, 'docx_en_%s.json' % tanda)
+        return os.path.join(mapas.DATOS, 'textos_en', '%s.json' % tanda)
+    return os.path.join(mapas.DATOS, 'docx_en_%s.json' % tanda)
 
 
 def main():
@@ -261,7 +262,7 @@ def main():
     for t in tandas:
         f = args.fichero if (args.fichero and not args.todas) else fichero_de(t)
         if not os.path.exists(f):
-            print('%s: falta %s' % (t, os.path.relpath(f, AQUI)))
+            print('%s: falta %s' % (t, os.path.relpath(f, mapas.DATOS)))
             if not args.todas:
                 total_err += 1
             continue

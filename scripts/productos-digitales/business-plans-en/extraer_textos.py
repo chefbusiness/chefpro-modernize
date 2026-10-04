@@ -421,15 +421,20 @@ def censar_libro(path, fichero):
                         lits_cf[lit] += 1
         hd['cf'] = cfs
         hd['literales_cf'] = OrderedDict(sorted(lits_cf.items()))
-        # checklists: tareas = celdas de la DV de lista de la col. A (✓/☐/N/A)
+        # checklists: tareas = celdas de la DV de lista de la columna de OK (✓/☐/N/A o ✓/—/N/A); en el molde de
+        # filas-cabecera (RESTC) las cabeceras de fase no son tareas
         if info['tipo'] == 'check' and ws.title != 'Instrucciones':
+            col_ok = mapas.COL_OK.get(corto, 1)
+            cabs = set(mapas.FASES_CABECERA[corto][1]) if corto in mapas.FASES_CABECERA else set()
             tareas = sorted({r for dv in ws.data_validations.dataValidation if (dv.formula1 or '').startswith('"✓')
-                             for (r, c) in celdas_de(dv.sqref) if c == 1})
+                             for (r, c) in celdas_de(dv.sqref) if c == col_ok and r not in cabs})
             hd['tareas'] = len(tareas)
             hd['tareas_filas'] = '%d-%d' % (tareas[0], tareas[-1]) if tareas else None
             hd['tareas_con_texto'] = sum(1 for r in tareas if isinstance(ws.cell(r, 2).value, str))
         info['hojas_detalle'][ws.title] = hd
         info.setdefault('_wsv', {})[ws.title] = wsv
+    if info['tipo'] == 'check':
+        info['tareas_por_fase'] = mapas.contar_tareas(corto, wb, en=False)
     for campo, v in info['docprops'].items():
         if not isinstance(v, str) or not v or campo == 'creator':
             continue
@@ -484,7 +489,7 @@ def resolver_tokens(censo):
     """mapas.TOKENS_DOCX ('fila', hoja, rótulo, col) → celda en cada plan + valor ES en caché (comprobación)."""
     out = OrderedDict()
     for plan in mapas.PLANES:
-        corto = 'FTP' if plan == 'ft' else 'CAFP'
+        corto = mapas.corto_plan(plan)
         f = mapas.LIBROS[corto][1]
         info = censo['libros'][f]
         res = OrderedDict()
@@ -493,6 +498,7 @@ def resolver_tokens(censo):
                 continue
             _, hoja, rot, col = src
             rot = rot[plan] if isinstance(rot, dict) else rot
+            hoja = mapas.hoja_es(corto, hoja)                   # nombre canónico → pestaña real del libro
             filas = [r for r, et in info['hojas_detalle'][hoja]['etiquetas'].items() if et == rot]
             if len(filas) != 1:
                 raise SystemExit('token %s/%s: el rótulo %r aparece %d veces en %s' % (plan, t, rot, len(filas), hoja))
@@ -534,7 +540,7 @@ def palabras(s):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[1])
     ap.add_argument('--origen-repo', default=REPO, help='raíz del repo de la que salen los dl/ ES')
-    ap.add_argument('--salida', default=AQUI)
+    ap.add_argument('--salida', default=mapas.DATOS)
     ap.add_argument('--md', action='store_true', help='imprime la tabla §0 de F1-inventario-es.md')
     args = ap.parse_args()
 
@@ -633,15 +639,13 @@ def main():
 
     for e in cadenas:
         if e['tratamiento'] in ('traducir', 'localizar'):
-            e['grupo'] = 'GM' if e['planes'] == ['caf', 'ft'] else ('GFT' if e['planes'] == ['ft'] else 'GCAF')
+            e['grupo'] = mapas.grupo_de(e['planes'], e['es'], e['tratamiento'])
+            r = mapas.REUSO.get(e['es']) if e['tratamiento'] == 'traducir' else None
+            if r:                                          # ya traducida en otro conjunto (restpan: GM/GFT/GCAF)
+                e['reuso'] = r
         else:
             e['grupo'] = 'GX'
-    DESC = OrderedDict([
-        ('GM', 'Comunes a FT y CAF (motor 2.2 + molde del checklist): se traducen PRIMERO y fijan el glosario'),
-        ('GFT', 'Solo food truck (plan financiero + checklist FT), incluidas las celdas de las tablas D18/D19'),
-        ('GCAF', 'Solo cafetería (plan financiero + checklist CAF), incluidas las celdas de las tablas D18/D19'),
-        ('GX', 'NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps'),
-    ])
+    DESC = mapas.GRUPOS_DESC
     grupos = []
     for gid, desc in DESC.items():
         es = [e for e in cadenas if e['grupo'] == gid]

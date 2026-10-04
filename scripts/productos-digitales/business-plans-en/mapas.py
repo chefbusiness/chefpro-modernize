@@ -33,6 +33,12 @@ import unicodedata
 from collections import OrderedDict
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
+# Conjunto de planes activo (F2 tanda 1 de Restaurant + Bakery, 4-oct-2026): por defecto food truck + cafetería con
+# sus datos en esta carpeta; con BP_CONJUNTO=restpan, `../business-plans-en-2/mapas_rp.py` sustituye al final de
+# este módulo los datos por los de restaurante + panadería (DATOS = esa carpeta). El código de los scripts es el
+# mismo para los dos conjuntos: lee los datos de `mapas.DATOS` y los nombres de `mapas.*`.
+CONJUNTO = os.environ.get('BP_CONJUNTO', 'ftcaf')
+DATOS = AQUI
 
 # ==========================================================================
 # 0. Productos (D1-D3, D20)
@@ -104,6 +110,36 @@ def ruta_es(corto, repo):
     return os.path.join(repo, PLANES[plan]['dir_es'], f_es)
 
 
+def cortos_de(plan, tipo=None):
+    return [c for c, v in LIBROS.items() if v[0] == plan and (tipo is None or TIPO_DE[c] == tipo)]
+
+
+def corto_plan(plan):
+    """Libro del plan financiero de un plan (FTP, CAFP, RESTP, PANP)."""
+    return cortos_de(plan, 'plan')[0]
+
+
+def corto_check(plan):
+    return cortos_de(plan, 'check')[0]
+
+
+# Grupos de traducción (textos_es.json → textos_en/<grupo>.json). GX = no se traduce.
+GRUPOS = ('GM', 'GFT', 'GCAF')                     # los que lee aplicar_en.py
+GRUPOS_TRADUCTORES = GRUPOS                        # los que van a los subagentes (preparar_tandas / check_textos)
+GRUPOS_OVERRIDES = ('GFT', 'GCAF')                 # textos_en/overrides_<g>.json (EN por celda)
+GRUPOS_DESC = OrderedDict([
+    ('GM', 'Comunes a FT y CAF (motor 2.2 + molde del checklist): se traducen PRIMERO y fijan el glosario'),
+    ('GFT', 'Solo food truck (plan financiero + checklist FT), incluidas las celdas de las tablas D18/D19'),
+    ('GCAF', 'Solo cafetería (plan financiero + checklist CAF), incluidas las celdas de las tablas D18/D19'),
+    ('GX', 'NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps'),
+])
+
+
+def grupo_de(planes, texto=None, tratamiento=None):
+    """Grupo de una cadena traducible por los planes en los que aparece (lista ordenada)."""
+    return 'GM' if planes == ['caf', 'ft'] else ('GFT' if planes == ['ft'] else 'GCAF')
+
+
 # ==========================================================================
 # 2. Pestañas (D6, SPEC §2.2) — ≤ 31 caracteres, sin []:*?/\
 # ==========================================================================
@@ -137,8 +173,53 @@ HOJA_PROHIBIDOS = set('[]:*?/\\')
 TAREAS_POR_FASE = OrderedDict([('FTC', [11, 13, 12, 10, 12, 10]), ('CAFC', [11, 13, 15, 12, 14, 10])])
 
 
-def hoja_en(corto, hoja_es):
-    return HOJAS_POR_LIBRO[corto][hoja_es]
+def norm_hoja(h):
+    """Pestaña del molde numerado del bar-restaurante («1. Inversión Inicial», «2. P&L 3 Años») → nombre canónico
+    (el de FT/CAF, que es el que usan TOKENS_DOCX y el código). En FT/CAF es la identidad."""
+    if h == '0. Supuestos':
+        return h
+    h = re.sub(r'^\d+\. ', '', h)
+    return {'P&L 3 Años': 'PyG 3 Años'}.get(h, h)
+
+
+def hoja_es(corto, h):
+    """Nombre REAL de la pestaña ES del libro para un nombre real o canónico."""
+    hojas = HOJAS_POR_LIBRO[corto]
+    if h in hojas:
+        return h
+    for real in hojas:
+        if norm_hoja(real) == h:
+            return real
+    raise KeyError('%s: pestaña %r' % (corto, h))
+
+
+def hoja_en(corto, hoja_es_):
+    return HOJAS_POR_LIBRO[corto][hoja_es(corto, hoja_es_)]
+
+
+# Molde de cada checklist: 'hojas' = una hoja por fase, OK en la col. A (☐/✓/N/A); 'cabeceras' = una sola hoja con
+# las fases como filas-cabecera fusionadas (RESTC), ver FASES_CABECERA
+MOLDE_CHECK = OrderedDict([('FTC', 'hojas'), ('CAFC', 'hojas')])
+COL_OK = OrderedDict([('FTC', 1), ('CAFC', 1)])            # columna de la DV ✓ de cada checklist
+FASES_CABECERA = OrderedDict()                              # corto → (hoja ES, [filas-cabecera], última fila de tarea)
+VALORES_OK = ('☐', '✓', 'N/A')
+
+
+def hojas_fase(corto):
+    return [h for h in HOJAS_ES_POR_LIBRO[corto] if h != 'Instrucciones']
+
+
+def contar_tareas(corto, wb, en=True):
+    """Tareas por fase de un checklist abierto (EN si en=True; ES si no). 'hojas': ☐/✓/N/A de la col. A de cada hoja
+    de fase; 'cabeceras': filas con texto en la col. B entre una fila-cabecera y la siguiente."""
+    nombre = (lambda h: hoja_en(corto, h)) if en else (lambda h: h)
+    if MOLDE_CHECK.get(corto, 'hojas') == 'hojas':
+        return [sum(1 for c in wb[nombre(h)]['A'] if c.value in VALORES_OK) for h in hojas_fase(corto)]
+    h, cabs, fin = FASES_CABECERA[corto]
+    ws = wb[nombre(h)]
+    lims = list(cabs) + [fin + 1]
+    return [sum(1 for r in range(lims[k] + 1, lims[k + 1]) if isinstance(ws.cell(r, 2).value, str) and
+                ws.cell(r, 2).value.strip()) for k in range(len(cabs))]
 
 
 def todas_hojas_es():
@@ -170,6 +251,11 @@ PARCHES_FORMULA = OrderedDict([
     (('CAFP', 'PyG 3 Años', 'G14'), ("('0. Supuestos'!$B$62*'0. Supuestos'!$B$40+(1-'0. Supuestos'!$B$62)*"
                                      "'0. Supuestos'!$B$39)", "'0. Supuestos'!$B$41")),
 ])
+
+
+def celdas_e2(corto):
+    """(hoja ES, celda) del E2: soportado de compras → '0. Supuestos'!$B$41 (= 0 en la EN)."""
+    return [(h, x) for (c, h, x), (_v, n) in PARCHES_FORMULA.items() if c == corto and n.endswith('$B$41')]
 
 
 def parchear_formula_es(corto, hoja_es, coord, f):
@@ -893,6 +979,26 @@ except ImportError:                                                             
 
 
 # ==========================================================================
+# 12. Parámetros por conjunto que antes vivían escritos en los scripts (F2 tanda 1 de Restaurant + Bakery)
+# ==========================================================================
+FUENTES_CIFRAS = [os.path.join(AQUI, 'F1-research-us.md'), os.path.join(AQUI, 'SPEC.md')]   # cifras citables sin token
+NOTAS_F2 = os.path.join(AQUI, 'F2-NOTAS.md')               # G7: cada calibración D15 citada aquí
+DOCX_N_PARRAFOS = OrderedDict([('ft', 131), ('caf', 167)])  # SPEC D22
+DOCX_ULTIMO_9 = OrderedDict([('ft', '108'), ('caf', '142')])  # último párrafo de §9: cierra con la nota UK
+DOCX_RESUMEN_TOKENS = OrderedDict([('caf', ('134', 3))])    # párrafo que debe citar ≥ n tokens
+PRESTAMO_SEMILLA = OrderedDict([('ft', 80000), ('caf', 140000)])
+REUSO = OrderedDict()                                      # ES → EN ya traducido en otro conjunto (solo restpan)
+CON_MARCA = None                                           # libros con la línea «More templates…» (None = todos)
+# Autotest de gates_en.py: papeles de los libros (P1/P2 planes, C1/C2 checklists) y celdas que muta
+AUTOTEST = OrderedDict([
+    ('P1', 'FTP'), ('P2', 'CAFP'), ('C1', 'FTC'), ('C2', 'CAFC'),
+    ('C1_hoja_papel', 'F2 - Vehículo'), ('C1_titulo', 'Food Truck Startup Checklist (68 Tasks)'),
+    ('C2_hoja_no_latino', 'F5 - Marketing'), ('P1_celda_texto', 'A3'), ('P1_celda_formula', 'B9'),
+    ('P1_merge', 'A30:C30'),
+])
+
+
+# ==========================================================================
 # autotest y cruce con el censo
 # ==========================================================================
 RX_ES_CLAVE = re.compile(r'[áíóúñÁÍÓÚÑ¿¡€]|\b(?:de|del|los|las|con|sin|para|por|IVA)\b')
@@ -1064,9 +1170,21 @@ def cruzar_censo(p):
     return err
 
 
+# ==========================================================================
+# Conjunto restaurante + panadería: sustituye los datos de este módulo (ver CONJUNTO arriba)
+# ==========================================================================
+if CONJUNTO == 'restpan':
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-2'))
+    import mapas_rp as _rp                                                         # noqa: E402
+    _rp.instalar(_sys.modules[__name__])
+elif CONJUNTO != 'ftcaf':
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan)' % CONJUNTO)
+
+
 if __name__ == '__main__':
     e = autotest()
-    pc = os.path.join(AQUI, 'censo_es.json')
+    pc = os.path.join(DATOS, 'censo_es.json')
     if os.path.exists(pc):
         e += cruzar_censo(pc)
     for x in e:
