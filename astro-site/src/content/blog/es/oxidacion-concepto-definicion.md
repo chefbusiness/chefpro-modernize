@@ -1,6 +1,6 @@
 ---
-title: "Oxidación: Concepto y Definición"
-description: "Descubre qué es la oxidación en alimentos: proceso químico de pérdida de electrones. Tipos (enzimática, lipídica), prevención del pardeamiento y aplicaciones…"
+title: "Oxidación en cocina: qué es y cómo prevenirla"
+description: "Definición de oxidación: reacción química en la que una sustancia pierde electrones, a menudo por el oxígeno. En alimentos: pardeamiento, rancidez y prevención."
 pubDate: 2026-03-22
 modDate: 2026-09-05
 category: glosario

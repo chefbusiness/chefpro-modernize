@@ -1,6 +1,6 @@
 ---
-title: "Maceración: Concepto y Definición"
-description: "Descubre qué es la maceración: técnica de extracción de sabores mediante inmersión. Tipos (azúcar, alcohol, vinagre), aplicaciones en licores y gastronomía…"
+title: "Maceración: qué es y tipos en cocina"
+description: "La maceración aromatiza y ablanda un alimento dejándolo reposar en un líquido o con azúcar. Conoce sus tipos (azúcar, alcohol), usos, errores y conservación."
 pubDate: 2026-03-21
 modDate: 2026-08-31
 category: glosario

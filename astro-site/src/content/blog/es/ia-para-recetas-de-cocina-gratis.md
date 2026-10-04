@@ -234,7 +234,7 @@ wpId: 1500
 
 
 
-<p class="wp-block-paragraph"><strong>ChefGPT</strong> se ha establecido como una de las <strong>apps para crear recetas de cocina</strong> más populares, ofreciendo diferentes modos especializados que abordan necesidades específicas de la cocina moderna.</p>
+<p class="wp-block-paragraph"><a href="https://aichef.pro/blog/chef-gpt"><strong>ChefGPT</strong></a> se ha establecido como una de las <strong>apps para crear recetas de cocina</strong> más populares, ofreciendo diferentes modos especializados que abordan necesidades específicas de la cocina moderna.</p>
 
 
 

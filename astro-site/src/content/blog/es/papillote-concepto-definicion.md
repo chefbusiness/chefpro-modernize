@@ -1,6 +1,6 @@
 ---
-title: "Papillote: Concepto y Definición"
-description: "Descubre qué es el papillote: técnica francesa de cocción al vapor en envoltorio. Materiales, paso a paso, combinaciones de sabores y beneficios. Guía…"
+title: "Papillote: qué es y cómo se cocina"
+description: "El papillote es una técnica de cocción al vapor dentro de un envoltorio cerrado. Mira materiales, paso a paso, combinaciones de sabores y errores a evitar."
 pubDate: 2026-03-11
 modDate: 2026-09-05
 category: glosario

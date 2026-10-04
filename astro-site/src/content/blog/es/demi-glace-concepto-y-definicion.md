@@ -1,6 +1,6 @@
 ---
-title: "Demi-glace: Concepto y Definición"
-description: "Salsa madre oscura concentrada base de muchas salsas francesas."
+title: "Demi-glace: qué es y cómo se hace"
+description: "La demi-glace (o demiglace) es la salsa oscura que sale de reducir a la mitad salsa española y fondo oscuro. Cómo se elabora, sus usos y su conservación."
 pubDate: 2026-02-20
 modDate: 2026-08-31
 category: glosario

@@ -1,6 +1,6 @@
 ---
-title: "Flambeado: Concepto y Definición"
-description: "Descubre qué es el flambeado: técnica culinaria con fuego para realzar sabores. Historia, bebidas ideales, paso a paso y seguridad. Guía profesional completa."
+title: "Flambeado: qué es y cómo flambear bien"
+description: "El flambeado consiste en prender el licor añadido a una preparación para realzar su sabor. Aprende a flambear paso a paso, qué bebidas usar y la seguridad."
 pubDate: 2026-03-07
 modDate: 2026-09-05
 category: glosario

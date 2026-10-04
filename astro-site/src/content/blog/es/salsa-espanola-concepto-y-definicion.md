@@ -1,6 +1,6 @@
 ---
-title: "Salsa Española: Concepto y Definición"
-description: "Salsa madre francesa con roux oscuro y fondo de carne."
+title: "Salsa española: qué es y cómo se hace"
+description: "La salsa española es una de las cinco salsas madre francesas y, pese al nombre, no es de España. Descubre su origen, elaboración, derivadas y usos en cocina."
 pubDate: 2026-02-20
 modDate: 2026-08-31
 category: glosario
