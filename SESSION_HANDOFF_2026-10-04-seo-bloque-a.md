@@ -53,3 +53,12 @@ Auditoría adversarial Opus: sin bloqueantes; las correcciones menores están ap
 - **«Carlos Méndez» aparece como `Review` con `reviewRating` 5★ en el JSON-LD** de 12 landings de producto (`src/pages/KitTareas*.tsx`, `PlanNegocio*.tsx`, `astro-site/src/data/productos/{tareas,planes}/*.ts`).
 - La home EN/FR muestra «Bookings have increased by 40%» firmado por «El Olivo Restaurant».
 - Riesgo: acción manual de Google por reseñas no genuinas en datos estructurados y normativa UE contra reseñas falsas. Recomendación: retirarlos o sustituirlos por reseñas reales. Las landings de producto son territorio de la sesión de la tienda: hay que coordinarlo.
+
+## ✅ Tareas aparcadas para la semana del lunes 5-oct (decisión de John)
+
+- [ ] Cutover de `enblog.aichef.pro`: alias en Netlify y CNAME en Hostinger (John). Después, gate 301 y borrar los 4 sitemaps viejos en GSC (Claude). Apagar el WP solo semanas más tarde y con el backup a salvo.
+- [ ] Testimonios y reseñas inventados (4 nombres, `Review` 5★ en el JSON-LD de 12 landings, «El Olivo +40 %»). John decide si se quitan o se sustituyen; hay que coordinarlo con la sesión de la tienda.
+- [ ] Cifras sin fuente en `es/de/it/pt/nl.json` de las landings de marketing, software y escandallos.
+- [ ] `--rebalanceo` de banners EN cuando estén vivos los 4 productos EN nuevos.
+- [ ] Abrir `/nl/blog` (bloquea el primer post NL de la semana 4).
+- [ ] Semana 1 del plan de contenidos: ES refresh `escandallos-ia-cocina-profesional`, EN `kitchen-brigade-system` y PT `garum`.
