@@ -458,7 +458,7 @@ REGLAS_US = OrderedDict([
     ('allergens_uk', ('14 alérgenos', 'food.gov.uk')),
     ('cdl', ('CDL solo si GVWR ≥ 26,001 lb', '49 CFR 383.5 / 383.91')),
     ('uk_registro', ('registrar el negocio de alimentos 28 días antes de empezar', 'gov.uk/food-business-registration')),
-    ('uk_fhrs', ('Food Hygiene Rating 1-5', 'food.gov.uk food hygiene rating scheme')),
+    ('uk_fhrs', ('Food Hygiene Rating 0-5 (Escocia: FHIS, Pass / Improvement Required)', 'food.gov.uk food hygiene rating scheme')),
     ('sqft', ('1 m² = 10.764 sq ft', 'NIST SP 811')),
     ('galon', ('1 US gal = 3.785 L', 'NIST SP 811')),
     ('tarjeta', ('3.5% tasa combinada (porcentaje + fijo por cobro, que pesa más en tickets pequeños); comprobar '
@@ -755,7 +755,7 @@ DOCX_NOTAS = OrderedDict([
         (108, '§9 7/7: varias ciudades y eventos (cada ciudad su licencia; temporary food event permits; los '
               'organizadores piden seguro y permisos) y, como ÚLTIMA frase o frases del párrafo, la nota UK: registrar '
               'el negocio de alimentos en el council 28 días antes de empezar (gratis), street trading licence/consent '
-              'de cada council, Food Hygiene Rating 1-5, VAT 20 % en comida caliente y en el local, 14 alérgenos'),
+              'de cada council, Food Hygiene Rating 0-5, VAT 20 % en comida caliente y en el local, 14 alérgenos'),
     ])),
     ('caf', OrderedDict([
         (110, 'Este párrafo y el bloque 111-119 PASAN a la sección 8 (el ensamblador los mueve: en el ES el bloque '
@@ -782,7 +782,7 @@ DOCX_NOTAS = OrderedDict([
               'pronto: puede tardar meses)'),
         (142, "§9 6/6: empleo y seguros: OSHA basics + workers' comp + I-9 / W-4 / new-hire reporting + general "
               'liability y BOP; como ÚLTIMA frase o frases, la nota UK: registrar el negocio de alimentos en el council '
-              '28 días antes de abrir (gratis), Food Hygiene Rating 1-5, VAT 20 % en el local y en comida caliente, 14 '
+              '28 días antes de abrir (gratis), Food Hygiene Rating 0-5, VAT 20 % en el local y en comida caliente, 14 '
               'alérgenos, permiso del council para mesas en la calle'),
     ])),
 ])

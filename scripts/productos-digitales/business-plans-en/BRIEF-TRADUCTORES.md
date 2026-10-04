@@ -125,7 +125,7 @@ decisiones de traducción que el resto de tandas deba conocer.
 - **Checklist FT** (D24): misma tarea por fila (11/13/12/10/12/10), equivalente US de SPEC §4.2: col. B trámite, C
   responsable (Owner, Accountant, Attorney, Health department, City, DMV, Insurance agent, Fire marshal…), D plazo
   realista US («Same day (online)», «2-6 weeks»…), E nota; la nota UK, si aplica, al final de la col. E de la fila
-  equivalente (registro en el council 28 días antes, street trading licence, Food Hygiene Rating 1-5, 14 alérgenos).
+  equivalente (registro en el council 28 días antes, street trading licence, Food Hygiene Rating 0-5 (Escocia: FHIS), 14 alérgenos).
   Las hojas de reclamaciones (F2) → **commissary agreement**; ITV/carnet → DMV / CDL solo si GVWR ≥ 26,001 lb + fire
   marshal. Títulos de fase coherentes con las pestañas EN («PHASE 2: TRUCK & PERMITS»). A3 (afirmación «verificado»)
   no existe en EN: el checklist es «a starting point».

@@ -97,7 +97,7 @@ las fuentes van en la columna «Source» de la tabla de referencias; ninguna fil
 
 **Notas UK (breves, dentro de las notas existentes):** registrar el negocio de alimentos en el council **28 días antes de
 empezar** (gratis; la furgoneta, en el council donde se guarda); **street trading licence/consent** de cada council
-donde se venda; inspección y **Food Hygiene Rating (1-5)** en los primeros meses; **VAT 20 %** en comida caliente y en
+donde se venda; inspección y **Food Hygiene Rating (0-5; Escocia: FHIS)** en los primeros meses; **VAT 20 %** en comida caliente y en
 consumo en el local, casi todo alimento frío para llevar al 0 % (VAT Notice 709/1); 14 alérgenos.
 [fuente: https://www.gov.uk/food-business-registration], [fuente: https://www.camden.gov.uk/en/street-or-market-trading-licence]
 (ejemplo de council), [fuente: https://www.food.gov.uk/safety-hygiene/food-hygiene-rating-scheme]. Salario mínimo y NIC de

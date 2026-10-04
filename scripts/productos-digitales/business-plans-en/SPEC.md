@@ -103,7 +103,7 @@ food handler card · APPCC → HACCP-based food safety plan · registro sanitari
 Las de `F1-research-us.md` §3-§5 y §7, con su etiqueta. Resumen de lo normativo: sales tax 8 % ejemplo, sin crédito
 por compras; cargas ≈ × 1.10; mínimo federal $7.25/h; FLSA 40 h; impuesto efectivo 25 %; préstamo 10 % / 7-10 años /
 sin interest-only; DSCR 1.15 / 1.25; vidas 7/7 y 10/7; 9 alérgenos US (UK 14); CDL desde 26,001 lb; UK: registro 28
-días antes, street trading licence, FHRS 1-5, VAT 20 % en caliente y en local.
+días antes, street trading licence, FHRS 0-5 (Escocia: FHIS), VAT 20 % en caliente y en local.
 
 ## 4. Qué cambia en cada entregable además de la traducción
 
