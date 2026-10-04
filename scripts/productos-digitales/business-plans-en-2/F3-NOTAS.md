@@ -97,8 +97,23 @@ lleva hasta que se rellenen (REST 7 apariciones en el JSON de la ficha, PAN 5). 
 
 | Gate | Veredicto |
 |---|---|
-| `tienda-gate.py` (estático) | ✅ 10 productos vivos fuera de ES con data, páginas y zona-app |
+| `tienda-gate.py` (estático) | ❌ **esperado**: solo los 2 fallos nuevos «TODO_CIFRA sin rellenar» (11 en REST y 7 en PAN, comentarios incluidos); el resto verde (10 productos vivos fuera de ES con data, páginas y zona-app). Comprobación AÑADIDA en esta F3 (`tienda-gate.py`, bucle de familias): un producto `vivo: true` con el marcador lo publicaría en la landing y en el FAQPage; se pone verde al rellenar las cifras de la F2 |
 | `sync-product-prices.py --check` | ✅ 61 productos; catálogo coincide (10 `priceByLang`) |
 | `fase8c-libreria-en-gate.py --todos` | ✅ banners ↔ tienda EN en 68 posts, ya con `plan-negocio-bar-restaurante` y `plan-negocio-panaderia` con landing EN; 26 posts, 0 errores |
 | esbuild (transform) sobre los 30 TS/TSX tocados + `node --experimental-strip-types` sobre las 3 fichas | ✅ sintaxis; fichas: 17 FAQ, 9 tarjetas, 8 testimonios, 9 enlaces de pie |
-| Gates contra el preview | ver §«Preview» abajo |
+| `robots-gate.py --live` (censo = sitemap de producción + páginas del repo + zona-app) | ✅ 1.271 URLs públicas (las 2 landings nuevas entran como páginas del repo) y 164 rutas privadas (sus /access y /library): ninguna pública bloqueada, toda la zona app bloqueada |
+| `gate-flujo-postpago.py --offline --only <slug>` ×2 | ❌ esperado, 4 fallos cada uno y todos de los dos pendientes: 3 ficheros D32 sin disco (F2) + sin entrada en `payment-links.ts` (Payment Links de John; mismo fallo que FT/CAF). Secciones D y E sin verificar en offline |
+| Revisión adversarial (Opus, solo lectura, contra SPEC delta, inventario, research y los 6 ficheros ES leídos con openpyxl) | 0 bloqueantes. Corregidos los menores: 30/30/30/10 sin definir la regla («versions of it vary»), fuera «approval can take months» (sin fuente), «the most common way» → «a common way», changelog PAN sin «gallons» (el libro PAN no tiene volúmenes). Quedan para la F2: nombres de puestos («line cook» = «Ayudante de cocina»; el research pone 2 cocineros; «weekend extra» = fila 6, «dishwasher/fin de semana») y la frase de los $375,000 (DoorDash devuelve 403 a WebFetch; si nadie la confirma, quitarla) |
+
+### Preview: NO hay
+
+El PR #111 (borrador, base `feat/business-plans-en`) no recibe deploy preview: Netlify solo construye previews de
+PR contra `main` (`gh pr checks 111` → «no checks reported» tras más de 5 minutos, mientras el #110 sí tenía los suyos).
+Retargetear el PR a `main` para forzarlo y construir en el VPS fueron **denegados** por el clasificador del modo
+automático («Modify Shared Resources»), y el build local está prohibido (térmica). Por eso **no se han corrido** los
+gates contra preview: `tienda-gate --base`, `--es-identico --esperadas /plan-negocio-bar-restaurante,/plan-negocio-panaderia,/plan-negocio-food-truck,/plan-negocio-cafeteria`
+(las 2 últimas cambian solo porque vienen del #110 y se comparan con producción), `gate-flujo-postpago --base …
+--crypto-products all --crypto-exclude pro-prompts-ebook --only <slug>`, `miselup-gate --base`, `datafast-gate --base` y
+el curl (sin español, sin «€», sin no latinos, JSON-LD USD 39 sin rating/review). Opciones: (a) mergear el #110 en
+`main` y retargetear el #111 a `main` (GitHub lo hace solo al borrar la rama base) → preview; (b) que John autorice el
+retarget o el build en el VPS. Los comandos exactos están arriba.

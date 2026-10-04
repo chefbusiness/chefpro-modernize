@@ -230,8 +230,16 @@ def estatico() -> None:
                 continue
             if not f['productos'].get('es', {}).get('vivo'):
                 mal(f'{tag}: sin gemelo ES vivo (el hreflang recíproco no tiene a quién apuntar)')
-            if not list((ASTRO / f'src/data/productos-{lg}').glob(f'**/{slug}.ts')):
+            fichas = list((ASTRO / f'src/data/productos-{lg}').glob(f'**/{slug}.ts'))
+            if not fichas:
                 mal(f'{tag}: falta astro-site/src/data/productos-{lg}/**/{slug}.ts')
+            # Marcador de cifra pendiente (F3 de los planes EN, 4-oct-2026): la ficha nace con
+            # «TODO_CIFRA» donde va un dato del caso que calcula la F2. Un producto vivo con el
+            # marcador lo publicaría tal cual en la landing y en el FAQPage: rojo hasta rellenarlo.
+            for ficha in fichas:
+                n = ficha.read_text(encoding='utf-8').count('TODO_CIFRA')
+                if n:
+                    mal(f'{tag}: {n} «TODO_CIFRA» sin rellenar en {ficha.relative_to(REPO)}')
             base = ASTRO / 'src/pages' / lg / t['seg']
             landing = [base / f'{slug}.astro', base / slug / 'index.astro']
             if not any(x.exists() for x in landing):

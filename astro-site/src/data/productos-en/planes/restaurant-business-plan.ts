@@ -53,7 +53,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'What is the 30/30/30/10 rule for restaurants?',
-    a: "It's an informal rule of thumb that splits sales into roughly 30% cost of goods, 30% labor, 30% other operating costs and 10% profit. Use it as a quick sanity check, not as a target. The model checks your own ratios against editable kit benchmarks — gross margin of at least 65%, cost of goods up to 32%, labor up to 35%, rent up to 10% and net margin of at least 5% — and marks each one OK or REVIEW. Add cost of goods and labor and you get your prime cost: full-service restaurants usually aim for about 60-65% of sales.",
+    a: "It's an informal rule of thumb for splitting a restaurant's sales between costs and profit, and versions of it vary. Rather than a fixed split, the model checks your own ratios against editable kit benchmarks — gross margin of at least 65%, cost of goods up to 32%, labor up to 35%, rent up to 10% and net margin of at least 5% — and marks each one OK or REVIEW. Add cost of goods and labor and you get your prime cost: full-service restaurants usually aim for about 60-65% of sales.",
   },
   {
     q: 'Is a restaurant a profitable business?',
@@ -66,7 +66,7 @@ const FAQS: PlanNegocioFaq[] = [
   {
     q: 'How much does a liquor license cost?',
     // TODO_CIFRA: importe de la fila «Liquor license + permits (non-quota state example)» del xlsx EN (D37 fija $15,000; confirmar con la F2).
-    a: "It depends entirely on your state and city: from a few hundred dollars for a beer and wine license in some places to well over $100,000 in states that cap the number of licenses, where you buy an existing one from another business. Start early, because approval can take months. The kit's startup costs include a liquor license line of TODO_CIFRA as a non-quota state example, with a note to replace it with your state's fee or the market price of a transfer, and the plan reminds you to add liquor liability to your insurance.",
+    a: "It depends entirely on your state and city: from a few hundred dollars for a beer and wine license in some places to well over $100,000 in states that cap the number of licenses, where you buy an existing one from another business. The kit's startup costs include a liquor license line of TODO_CIFRA as a non-quota state example, with a note to replace it with your state's fee or the market price of a transfer, and the plan reminds you to add liquor liability to your insurance.",
   },
   {
     q: 'How do I open a restaurant, step by step?',

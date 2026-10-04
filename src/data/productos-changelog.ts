@@ -668,7 +668,7 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Payroll with employer payroll taxes, 12 pay periods, a federal and a state or local minimum wage floor, a 40-hour workweek and the early-morning production shift in the hours check.',
           'Financing sheet with owner equity, an SBA-guaranteed 7(a) loan, an SBA Microloan, investors and local grants, a loan schedule with no interest-only period by default and the DSCR checked against a 1.25× target.',
           '66-task opening checklist in 6 phases: business setup (with the health department or state agriculture license and how a commercial bakery differs from a cottage food operation), location and permits (zoning, building and gas permits, oven ventilation and the electrical service), equipment, staff, marketing (wholesale accounts included) and the first 90 days.',
-          'No currency symbol in the workbooks (you type amounts in your own currency), square feet and gallons, and every sheet set up to print on US Letter paper.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), square feet, and every sheet set up to print on US Letter paper.',
         ],
       },
     ],
