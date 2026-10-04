@@ -13,7 +13,8 @@
 //   · D32: los 3 ficheros EN (dashboard RestaurantBusinessPlanDashboard.tsx y get-download-urls.ts).
 //   · D45: tarjeta DOCX la PRIMERA del grid (el ES no vendía el Word). Bonos rehechos: 1 «Restaurant Permits &
 //     Licenses Guide (US + UK notes, liquor license included)» = §9 del plan + fases 1, 2 y 6 del checklist;
-//     2 «US Market Data & Industry Benchmarks (sourced)» = §3 del docx + tabla D19. Para no contar dos veces
+//     2 «US Industry Benchmarks (sourced)» (ronda de arreglos m9: antes «US Market Data & …», pero el §3 del docx no da
+//     datos nacionales) = §3 del docx + tabla D19. Para no contar dos veces
 //     la tabla de referencias, la tarjeta del grid se queda en «Instructions & Ratio Checks» (semáforo).
 //   · §4: R1 (sin «~80K-150K EUR» ni «~133K EUR»: la caja del caso US sale del xlsx EN), R2 (bono 1 ya no es
 //     el cuadro de personal), R3 (sin «Análisis de Mercado España 2026» ni tasa de cierre: no hay fuente),
@@ -89,7 +90,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Does it work in the UK?',
-    a: "Yes, with notes. Tax rates are editable cells: enter 20% VAT on restaurant sales and the VAT you can reclaim on purchases and on your build-out. The plan and the checklist add UK notes: register your food business with the council at least 28 days before you open, expect a food hygiene rating inspection in your first months, and to sell alcohol you need a premises licence plus a personal licence for your designated premises supervisor. UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
+    a: "Yes, with notes. Tax rates are editable cells: enter 20% VAT on restaurant sales and the VAT you can reclaim on purchases and on your build-out. The plan and the checklist add UK notes: register your food business with the council at least 28 days before you open, expect a food hygiene rating inspection in your first months, and to sell alcohol you need a premises licence plus a personal licence for your designated premises supervisor (England and Wales; Scotland and Northern Ireland have their own licensing laws). UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
   },
   {
     q: 'What currency will I pay in?',
@@ -188,7 +189,7 @@ const data: PlanNegocioData = {
       { icon: 'TrendingUp', title: 'Break-Even Point', desc: 'How many covers a day you need at your average check (excl. sales tax) and the table turns that implies, plus the cash break-even with loan payments in and depreciation out. Margin of safety, a sensitivity table for average check and variable cost, and a plain-English reading of the result.' },
       { icon: 'BarChart3', title: 'Financial Scenarios', desc: 'Three scenarios side by side — pessimistic, base and optimistic — each with its own estimated cash balance. Useful for a lender, a landlord or an investor.' },
       { icon: 'Users', title: 'Staffing & Payroll Costs', desc: "Seven roles — general manager / owner, head chef, line cooks, servers / bartenders, part-time servers, dishwasher / weekend extra and vacation relief — with gross pay, employer payroll taxes, the real cost of each role, the team's full-time equivalents and two alerts: pay below the minimum wage for the hours worked, and service hours left uncovered. Tips aren't modeled: servers and bartenders are budgeted at a full base wage." },
-      { icon: 'ShieldCheck', title: 'Opening Checklist (64 Tasks, 7 Phases)', desc: "Business setup (LLC, EIN, seller's permit, business license), location and permits (zoning, lease, building permits, health plan review), build-out and equipment, staff, marketing and launch, what must be in place before you open (final inspections, liquor license, insurance, pest control and music licenses) and your first 90 days." },
+      { icon: 'ShieldCheck', title: 'Opening Checklist (64 Tasks, 7 Phases)', desc: "Business setup (LLC, EIN, seller's permit, business license), location and permits (zoning, lease and liquor license application, building permits, health plan review), build-out and equipment, staff, marketing and launch, what must be in place before you open (final inspections, liquor license issued and posted, insurance, pest control and music licenses) and your first 90 days." },
       { icon: 'ListChecks', title: 'Instructions & Ratio Checks', desc: 'An Instructions tab that explains every sheet and which cells to type, plus five checks on the P&L — gross margin, cost of goods, labor, rent and net margin — each marked OK or REVIEW against an editable kit benchmark.' },
       { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity and your loan (bank or SBA 7(a)) with its amortization schedule and the debt service coverage ratio (DSCR) year by year against a 1.25× target, plus an SBA Microloan, investors or partners and local grants as other sources of funds, and a warning if your sources don't cover the cash you need." },
     ],
@@ -200,7 +201,7 @@ const data: PlanNegocioData = {
     subtitle:
       'Owners and investors who opened their restaurant with the Spanish edition of this plan',
     items: [
-      { name: 'Alejandro Ruiz', role: 'Restaurant & bar owner, Madrid, Spain', text: 'I took the financial plan to my bank in Spain and they approved the loan in 10 days. The 3-year projections with scenarios gave them a lot of confidence. Total investment: EUR 135,000.', avatar: '/avatars/avatar-1.jpg' },
+      { name: 'Alejandro Ruiz', role: 'Restaurant & bar owner, Madrid, Spain', text: 'I took the financial plan to my bank in Spain and they approved the loan. The 3-year projections with scenarios gave them a lot of confidence.', avatar: '/avatars/avatar-1.jpg' },
       { name: 'María López', role: 'Hospitality entrepreneur, Barcelona, Spain', text: 'The opening checklist saved me months of work. Every step organized by phase, from setting up the company to the activity license in Spain. I didn\'t leave a single thing pending.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Carlos Méndez', role: 'Restaurant investor', text: 'I use this plan as the starting point to evaluate restaurant projects. The break-even point and the financial scenarios are exactly what I need to make investment decisions.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Laura Fernández', role: 'Restaurant manager, Seville, Spain', text: 'The staffing sheet with employer costs was an eye-opener. I used to underestimate labor costs. Now I have just the right team to be profitable.', avatar: '/avatars/avatar-4.jpg' },
@@ -246,9 +247,9 @@ const data: PlanNegocioData = {
       {
         icon: 'BarChart3',
         label: 'BONUS 2',
-        title: 'US Market Data & Industry Benchmarks (Sourced)',
+        title: 'US Industry Benchmarks (Sourced)',
         value: '$29',
-        desc: 'The market section of the plan plus the reference table inside the workbook: industry ranges for cost of goods, labor, prime cost, overhead and rent, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
+        desc: 'The market section of the plan plus the reference table inside the workbook: US ranges for average check, rent, food cost, labor, prime cost, opening investment and the liquor license, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
         image: '/lovable-uploads/ai-gallery/rbp-en-owner-plan.jpg',
       },
     ],
@@ -283,7 +284,7 @@ const data: PlanNegocioData = {
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 64 tasks in 7 phases',
       'BONUS: Restaurant Permits & Licenses Guide (included in the plan)',
-      'BONUS: US Market Data & Industry Benchmarks ($29)',
+      'BONUS: US Industry Benchmarks ($29)',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },
@@ -294,7 +295,7 @@ const data: PlanNegocioData = {
     discountBadge: '-70%',
     heroNote: 'Special launch price. Going up soon',
     buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Market Data & Benchmarks bonus ($29)',
+    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + US Industry Benchmarks bonus ($29)',
     bonusSaveLine: 'Save $90 TODAY!',
   },
 

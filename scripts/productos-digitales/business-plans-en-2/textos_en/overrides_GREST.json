@@ -12,5 +12,12 @@
   "celda": "A28",
   "texto": "The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the row: for a position with two people they include both. FTE is the share of a full-time week for each person, and it is used to compare pay with the legal minimum in proportion; the TOTAL row multiplies it by the people in each position, so it gives the full-time equivalents of the whole team. The payroll tax rate and the number of pay periods are in the \"0. Assumptions\" tab.",
   "motivo": "E4: el total de FTE es Σ personas × FTE"
+ },
+ "c0617": {
+  "libro": "RESTP",
+  "hoja": "7. Financiación",
+  "celda": "C9",
+  "texto": "SBA Microloans go up to 50,000 through nonprofit intermediaries. Like row 8, a source of funds only: not in the schedule or the DSCR. If it is your only loan, enter it in row 7 instead",
+  "motivo": "Ronda de arreglos m22: sin símbolo de moneda («No currency symbol in the workbooks»); el GM común de FT/CAF conserva «$50,000»"
  }
 }

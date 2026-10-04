@@ -50,6 +50,15 @@ POR_CELDA = OrderedDict([
                                        'not count toward the total.'),
     (('RESTC', 'Checklist Apertura', 'B52'), 'Consumer advisory and allergen notice on the menu'),
     (('PANC', 'F2', 'B13'), 'Ingredient and allergen labels for packaged and wholesale products'),
+    # Ronda de arreglos (REVISION-FINAL m1): «Equipo» es categoría en A27-A30 (Equipment) y responsable aquí (Team)
+    (('RESTC', 'Checklist Apertura', 'C47'), 'Team'),
+    (('RESTC', 'Checklist Apertura', 'C48'), 'Team'),
+    (('RESTC', 'Checklist Apertura', 'C74'), 'Team'),
+    # M1: la licencia de alcohol se pide en la fase 2 (fila 17, tras firmar el alquiler) y se tiene colgada en la 6
+    (('RESTC', 'Checklist Apertura', 'D60'), 'Start in Phase 2: often 3-12 months'),
+    # m17: la tarea B14 es la de los dueños que no van en nómina, no el alta como empleador (PANC F1!E8 la conserva)
+    (('RESTC', 'Checklist Apertura', 'F14'), 'Owners of an LLC or sole proprietorship are not on payroll: they take '
+                                             'draws and pay self-employment tax. Ask your accountant how to set it up'),
 ])
 FIJOS_FUERA = ('Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.',
                'Este fichero forma parte del producto «plan-negocio-cafeteria» de AI Chef Pro.')

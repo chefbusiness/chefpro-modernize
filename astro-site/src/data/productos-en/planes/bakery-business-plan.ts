@@ -197,7 +197,7 @@ const data: PlanNegocioData = {
     subtitle:
       'Master bakers, artisan bakery owners and investors who opened their bakery with the Spanish edition of this plan',
     items: [
-      { name: 'Alejandro Ruiz', role: 'Master baker, Madrid, Spain', text: 'I took the plan to my bank in Spain and they approved EUR 65,000 of financing. The 3-year projection with seasonality was key for them to trust the project.', avatar: '/avatars/avatar-1.jpg' },
+      { name: 'Alejandro Ruiz', role: 'Master baker, Madrid, Spain', text: 'I took the plan to my bank in Spain and they approved the financing. The 3-year projection with seasonality was key for them to trust the project.', avatar: '/avatars/avatar-1.jpg' },
       { name: 'María López', role: 'Bakery entrepreneur, Barcelona, Spain', text: 'The checklist got me through the maze of Spain\'s food registry and the bakery license. It would have taken me twice as long without a guide organized by phase.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Carlos Méndez', role: 'Food industry investor', text: 'I use this plan to evaluate bakery projects in my portfolio. The break-even point and the cost ratios are exactly what I need to see.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Laura Fernández', role: 'Artisan bakery owner, Seville, Spain', text: 'The staffing sheet with the early-morning shift was an eye-opener. I used to get the head baker\'s costs wrong. Now my margins are real.', avatar: '/avatars/avatar-4.jpg' },

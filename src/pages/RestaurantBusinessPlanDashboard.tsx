@@ -38,7 +38,7 @@ const TEMPLATES = [
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Restaurant Opening Checklist (64 Tasks)',
-    desc: "64 tasks in 7 phases: business setup (LLC, EIN, seller's permit, business license), location and permits (zoning, lease, building permits, health plan review), build-out and equipment, staff, marketing and launch, what must be in place before you open (final inspections, liquor license, insurance, pest control and music licenses) and your first 90 days.",
+    desc: "64 tasks in 7 phases: business setup (LLC, EIN, seller's permit, business license), location and permits (zoning, lease and liquor license application, building permits, health plan review), build-out and equipment, staff, marketing and launch, what must be in place before you open (final inspections, liquor license issued and posted, insurance, pest control and music licenses) and your first 90 days.",
   },
 ];
 
