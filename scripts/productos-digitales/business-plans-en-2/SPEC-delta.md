@@ -58,7 +58,10 @@
 
 - **E1** · la celda del aviso D21 bajo la versión en los 4 libros (RESTP `Instructions!A64`, PANP `A73`, RESTC y PANC `A12`).
 - **E2** · REST `2. 3-Year P&L!G14,G15`; PAN `3-Year P&L!G13,G14` → `'0. Assumptions'!$B$41`.
-- **E3** · PAN `3-Year P&L!G10`: `0.04` → `0` (D36). Total: 2 fórmulas en REST y 3 en PAN; el resto, idénticas al ES.
+- **E3** · PAN `3-Year P&L!G10`: `0.04` → `0` (D36).
+- **E4** (añadida en la F2 tanda 2, `F2-NOTAS.md` §7.2) · total de FTE de la plantilla: REST `5. Staffing!C13` y PAN
+  `Staffing!C11`, `SUM(C…)` → `SUMPRODUCT(B…,C…)` (el ES sumaba el FTE por persona con filas de 2-3 personas). Total:
+  3 fórmulas en REST y 4 en PAN; el resto, idénticas al ES.
 
 ## 3. Checklists: equivalencias propias (se suman a la tabla §4.2 heredada, que manda)
 

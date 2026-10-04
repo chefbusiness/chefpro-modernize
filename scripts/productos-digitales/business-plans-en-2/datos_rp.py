@@ -110,6 +110,9 @@ TOKENS_PROPIOS = OrderedDict([
     ('aforo', ('int', ('fila', _S, {'rest': 'Aforo del local (plazas sentadas + barra)'}, 'B'), 'seats (tables + bar)')),
     ('rotaciones_dia', ('dec1', ('fila', _S, {'rest': 'Rotaciones al día implícitas (calculado)'}, 'B'),
                         'implied seat turns per day')),
+    # F2 tanda 2: el docx REST cita el prime cost de referencia (60-65 %, Restaurant365) y ahora también el del caso
+    ('prime_cost_pct', ('pct1', ('deriv', lambda c: c['cogs_pct'] + c['personal_pct']),
+                        'prime cost year 1 (cost of goods + labor, % of sales)')),
 ])
 
 
@@ -128,6 +131,8 @@ def tokens_rp(base):
             elif t == 'marketing_anual':
                 rot = {'rest': rot, 'pan': 'Marketing'}
             src = ('fila', hoja, rot, col)
+        if t == 'consumibles_pct':
+            fmt = 'pct1'                  # F2 tanda 2: el 1.5 % del restaurante salía «2%» con pct0
         out[t] = (fmt, src, _DESC.get(t, desc))
     out.update(TOKENS_PROPIOS)
     return out
@@ -323,10 +328,12 @@ def valores_rp(M):
                          ('B34', 0), ('B37', 0.25), ('B38', 0.25), ('B39', 0.08), ('B40', 0.08), ('B41', 0), ('B42', 0),
                          ('B44', 10), ('B45', 7), ('B58', 1), ('B59', 14), ('B63', 0.08), ('B65', 1.15), ('B66', 1.25),
                          ('B68', None)])
+    # REST B51 = 68 (F2 tanda 2): la inversión presupuesta «15 tables × 4 chairs» + «Bar stools (8 units)» y el rótulo
+    # de A51 dice «seats at tables + bar»: 60 + 8 = 68 (research §7 hablaba de «60 plazas» solo de mesas)
     propios = {
         'RESTP': [('B4', 125, 'Cubiertos/día'), ('B5', 28, None), ('B11', 0.70, 'Ventas de COMIDA'), ('B14', 0.24, None),
                   ('B15', 0.015, None), ('B24', 7000, None), ('B26', 2500, None), ('B27', 9000, None),
-                  ('B30', 130000, None), ('B51', 60, 'Aforo'), ('B62', 0.70, None)],
+                  ('B30', 130000, None), ('B51', 68, 'Aforo'), ('B62', 0.70, None)],
         'PANP': [('B4', 210, 'Transacciones/día'), ('B5', 10, None), ('B11', 0.85, 'Ventas de COMIDA'),
                  ('B14', 0.22, None), ('B15', 0.03, None), ('B24', 4200, None), ('B26', 1500, None), ('B27', 4500, None),
                  ('B30', 70000, None), ('B62', 0, None)],
@@ -392,6 +399,19 @@ def valores_rp(M):
     return v
 
 
+# ==========================================================================
+# Calibración D15 (F2 tanda 2; F2-NOTAS.md §7 la explica celda a celda: G7 exige la cita). UNA palanca por plan
+# ==========================================================================
+CALIBRACION_D15 = OrderedDict([
+    # REST: margen bruto 64.8 % < 65 % (ámbar los 3 años). Food cost de la comida 30 % → 29 %, dentro del 25-35 % de
+    # research §4 (Papaya) y de la tabla D19 (fila 51). Margen bruto 65.5 %; el ticket y el volumen no se tocan
+    (('RESTP', '0. Supuestos', 'B13'), (0.29, 'D41: margen bruto 64.8 % → 65.5 %; food cost dentro del 25-35 % de research')),
+    # PAN: la cobertura de horas salía 138 % con 1.5 personas en el mostrador: 210 transacciones/día con rincón de café
+    # piden 2 a la vez durante las 12 h. No cambia ningún coste (es la comprobación de Staffing): cobertura 112 %
+    (('PANP', 'Personal', 'B21'), (2, 'D15: cobertura 138 % → 112 %; 2 personas en el mostrador durante el servicio')),
+])
+
+
 def formulas_rp():
     p = os.path.join(AQUI, 'formulas_rp.json')
     out = OrderedDict()
@@ -413,6 +433,6 @@ def completar(M):
     M.DOCX_NOTAS_PLAN = DOCX_NOTAS_PLAN
     M.FORMULAS_EN = formulas_rp()
     M.VALORES_EN = valores_rp(M)
-    M.CALIBRACION_D15 = OrderedDict()                   # la fija la tanda de aplicar_en.py (D42 + D15)
+    M.CALIBRACION_D15 = CALIBRACION_D15
     M.CELDA_PISTAS = CELDA_PISTAS
     M.PISTAS_EXTRA = PISTAS_EXTRA

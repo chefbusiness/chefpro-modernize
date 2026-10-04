@@ -1,0 +1,16 @@
+{
+ "c0398": {
+  "libro": "RESTP",
+  "hoja": "5. Personal",
+  "celda": "A11",
+  "texto": "Dishwasher / weekend extra",
+  "motivo": "F2 tanda 2: en el restaurante es el friegaplatos de 0.75 FTE (research §7) que el docx llama «weekend dishwasher»; la panadería conserva «Weekend extra»"
+ },
+ "c0422": {
+  "libro": "RESTP",
+  "hoja": "5. Personal",
+  "celda": "A28",
+  "texto": "The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the row: for a position with two people they include both. FTE is the share of a full-time week for each person, and it is used to compare pay with the legal minimum in proportion; the TOTAL row multiplies it by the people in each position, so it gives the full-time equivalents of the whole team. The payroll tax rate and the number of pay periods are in the \"0. Assumptions\" tab.",
+  "motivo": "E4: el total de FTE es Σ personas × FTE"
+ }
+}

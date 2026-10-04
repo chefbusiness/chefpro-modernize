@@ -182,3 +182,150 @@ python3 bp2.py preparar_tandas && python3 bp2.py check_textos --todas
 ```
 
 En el VPS `/dev/null` es un fichero normal: redirigir siempre a `/tmp/*.txt`.
+
+## 7. Tanda 2 (4-oct, sesión Claude Code): `aplicar_en` real + calibración D15 + gates + docx + cifras de landing
+
+Implementador único (opus). Todo lo que abre xlsx/docx, en el VPS (`/root/wt-bp2t2`, venv `/root/venv-guias`); de vuelta
+por `scp` con sha256 iguales. Se arrancó con todo lo aprendido en la ronda de arreglos de FT/CAF
+(`../business-plans-en/F2-NOTAS.md` §8): tarjeta al 3.5 % combinado (`B18`), préstamo = fila 7 con rótulos B1 (FIJOS
+comunes), `B58` = 1, 25 % de C corp, pagas mensuales (m8), notas C18/C21/C31/C52/C58 ya en GM.
+
+### 7.1 Calibración D15 (`datos_rp.CALIBRACION_D15`; G7 exige que cada celda esté citada aquí)
+
+Caso de research §7 tal cual (dry-run completo, sin `--parcial`): REST margen bruto **64.8 %** (umbral D41 65 %: ámbar
+los 3 años), todo lo demás en verde; PAN todo en verde pero cobertura de horas **138 %**. UNA palanca por plan:
+
+| Celda | Research §7 | Calibrado | Por qué |
+|---|---|---|---|
+| RESTP 0. Supuestos!B13 | food cost comida 30 % | **29 %** | Dentro del 25-35 % de research §4 (Papaya) y de la fila 51 de la tabla D19. Margen bruto 64.8 → **65.5 %** (verde los 3 años); neto año 1 7.3 → 7.9 %; holgura 20.2 → 21.5 %. Ticket, volumen e inversión intactos (el préstamo no se mueve: depende de la inversión y de los fijos). Descartado bebida 24 → 22 % (research no da rango de bebida) y bajar consumibles o el 2 % de imprevistos (quita prudencia) |
+| PANP Personal!B21 | 1.5 personas a la vez en el servicio | **2** | La plantilla NO sobra: 5.56 FTE para $651K de ventas son $117K por FTE (magra) y el personal es el 33.9 % de las ventas, dentro del 24-40 % de Toast. Lo que estaba mal era la comprobación: 210 transacciones/día con rincón de café piden 2 personas en el mostrador durante las 12 h. Cobertura 138 % → **112 %** (el 12 % restante es la producción de día para el mayorista, que la comprobación no cuenta). No cambia ningún coste. Descartado subir las horas de producción antes de abrir a 8 (contradice el arranque 4-5 am de la fila 64 de la tabla D19) |
+
+**PAN, holgura 16.9 % y neto 6.0 %: se quedan.** Pasan D15 (≥ 15 %) y D41 (≥ 5 %), y una palanca de ingresos solo para
+ganar colchón haría el ejemplo menos creíble: el neto ya está por encima del 3-5 % típico del sector (Toast) y el EBITDA
+del año 2 (18.4 %) ya rozaba el techo del rango de la tabla. Riesgo anotado: cualquier coste nuevo que añada una revisión
+la acerca al 15 %.
+
+### 7.2 Otros cambios de datos y una excepción estructural nueva (E4)
+
+| Qué | Antes | Ahora | Por qué |
+|---|---|---|---|
+| RESTP `0. Supuestos!B51` (aforo, `VALORES_EN`) | 60 | **68** | La inversión presupuesta «15 tables × 4 chairs» + «Bar stools (8 units)» y el rótulo A51 dice «seats at tables + bar»: 60 + 8. Rotaciones implícitas 2.1 → **1.8**/día; las del equilibrio de caja, 1.5 (techo 3). El docx usa el token `aforo` |
+| **E4** · RESTP `5. Personal!C13` y PANP `Personal!C11` (`PARCHES_FORMULA`) | `SUM(C6:C12)` / `SUM(C5:C10)` | `SUMPRODUCT(B…,C…)` | El total de la columna FTE sumaba el FTE POR PERSONA aunque varias filas tienen 2-3 personas: «10 people, 5.45 FTE» (REST) y «8 people, 4.22 FTE» (PAN), cuando las horas contratadas de la propia hoja dan **7.95** y **5.56** (÷ 2,000 h). Un CPA lo ve en la misma pestaña, y el docx lo citaba 4 y 3 veces. En FT/CAF no pasa (todas sus filas son de una persona). G1 lo admite porque compara contra el ES parcheado con `PARCHES_FORMULA` (como E2/E3) |
+| `Staffing!A28` (los dos, override por celda de c0422) | «FTE is the share of a full-time week» | + «for each person… the TOTAL row multiplies it by the people in each position» | Acompaña a E4 (`textos_en/overrides_GREST.json` / `overrides_GPAN.json`) |
+| RESTP `5. Personal!A11` (override de c0398) | «Weekend extra» | **«Dishwasher / weekend extra»** | Es el friegaplatos de 0.75 FTE de research §7 y el docx lo llama «weekend dishwasher»; PAN conserva «Weekend extra» |
+| Token `consumibles_pct` | `pct0` | `pct1` | El 1.5 % del restaurante salía «2%» en el docx (PAN: «3.0%») |
+| Token nuevo `prime_cost_pct` (derivado: `cogs_pct + personal_pct`) | — | REST **58.4 %** | El docx REST cita tres veces el 60-65 % de Restaurant365: ahora dice también el del caso y por qué queda algo por debajo (la bebida cuesta menos que la comida) |
+
+### 7.3 Textos revisados contra el caso calibrado (tablas D19, notas y docx)
+
+- REST D19: ticket 25-40 (caso $28 → $30.24 con impuesto), alquiler ~7,000 (= caso), food cost 25-35 % (29 %), personal
+  25-33 % (30.9 %), neto ≥ 5 % (7.9 %), equilibrio en 12 meses (año 1 sí): **sin contradicción**. Fila 55 (c0527):
+  «(median 375,000)» → **«(survey median 375,500)»**, la cifra exacta que confirmó el orquestador; el docx §1 (rest_a 41)
+  decía «$375,000, so our plan sits within the range owners actually report» (una mediana no es un rango y el total del
+  caso es $528,696): ahora «$375,500; our startup costs of {{capex}} ($388,700) sit close to that figure, and the working
+  capital reserve comes on top». Prime cost (fila 57, 60-65 %): el caso da 58.4 % → explicado en el docx (rest_b 108).
+- PAN D19: **fila 57 «Beverage cost: coffee 25-30 %»** contradecía el 22 % del caso (research §7) y la nota F11 del P&L
+  (c0943) lo repetía con «the cost is high»: las dos pasan a **20-30 %** (kit estimate). **Fila 65 «EBITDA target (year 2)
+  10-18 %»**: el caso da 18.4 % en el año 2 → **10-20 %**. Ticket 7-12 ($10), personal 24-40 % (33.9 %), alquiler ≤ 10 %
+  (7.7 %), margen bruto ≥ 60 % (62.7 %): sin contradicción.
+- Docx REST: §8 (rest_b 108) decía que el coste de mercancía de 27.5 % incluía los consumibles (es solo comida + bebida) →
+  reescrito: COGS 27.5 %; con consumibles 1.5 %, tarjeta 3.5 % y la línea de imprevistos, margen bruto 65.5 %. Escenario
+  pesimista (rest_b 110): caja estimada −$7,642 → «the working capital reserve would run out before the year ends» (m1 de
+  FT/CAF). Organigrama (rest_b 99): fuera el «floor lead» (no hay jefe de sala en Staffing, R5) → «on each shift, a lead
+  server or bartender».
+- Docx PAN: §8 (pan_b 100) el mismo «Together, cost of goods is 28.8 %» con consumibles y tarjeta dentro → reescrito;
+  pesimista (pan_b 103) con su caja estimada (−$63,796) y la misma advertencia; §3 (pan_a 58) **fuera la cita de Zenind**
+  ($50-100K+ / $75-150K+): no se pudo abrir la fuente (timeout) ni la confirmó el orquestador → redacción cualitativa. Toast
+  3-5 % (pan_a 51) se queda: confirmada.
+- Cifras de mercado que quedan en los docx: $375,500 (RestaurantOwner.com vía DoorDash), prime cost 60-65 %
+  (Restaurant365), 3-5 % (Toast), tip credit $2.13 / $5.12 y los 7 estados (DOL), $7.25 (DOL), UK (gov.uk). Todas con
+  fuente en research o confirmadas.
+
+### 7.4 Caso base final (caché de los xlsx EN = `cifras_caso.json`)
+
+| | Restaurant | Bakery |
+|---|---|---|
+| Caja total necesaria (CAPEX + fondo de maniobra) | **$528,696** ($388,700 + $139,996) | **$266,709** ($182,500 + $84,209) |
+| Fondos propios + préstamo (10 %, 10 años, sin interest-only) | $130,000 (25 %) + **$399,000** | $70,000 (26 %) + **$197,000** |
+| Volumen × ticket × días · ventas año 1 | 125 covers × $28.00 × 310 · **$1,085,000** | 210 transactions × $10.00 × 310 · **$651,000** |
+| Food cost · COGS · margen bruto | 29 % / 24 % · 27.5 % · **65.5 %** | 30 % / 22 % · 28.8 % · **62.7 %** |
+| Personal · ocupación · prime cost | 30.9 % · 7.7 % · 58.4 % | 33.9 % · 7.7 % · — |
+| EBITDA año 1 · neto años 1/2/3 | $190,591 (17.6 %) · $85,240 (7.9 %) / $134,419 / $165,663 | $91,041 (14.0 %) · $38,744 (6.0 %) / $71,907 / $92,427 |
+| DSCR mínimo · saldo mínimo de caja | **2.50×** · $124,652 (mes 2) | **2.44×** · $76,772 (mes 2) |
+| Equilibrio contable / de caja · holgura | 106 / 103 covers/día · **21.5 %** | 184 / 180 transactions/día · **16.9 %** |
+| Plantilla · cobertura de horas | 10 personas = 7.95 FTE · 107 % | 8 personas = 5.56 FTE · 112 % |
+| Payback del proyecto / sobre CAPEX | 2.7 / 2.1 años | 2.6 / 1.9 años |
+| Pesimista: ingresos · resultado · caja estimada | $667,758 · −$159,640 · −$7,642 | $320,880 · −$155,327 · −$63,796 |
+
+Todos los semáforos del P&L en verde los tres años en los dos planes; ningún sueldo bajo el suelo (el más bajo, $15.60/h).
+
+### 7.5 Fichas de landing, changelog y correos (revisados contra los ficheros finales)
+
+- TODO_CIFRA rellenados (formato US): REST caja $528,696, licencia de alcohol **$15,000** (la fila
+  `1. Startup Costs!B42`, ejemplo de estado sin cupo), ticket $28.00 / margen bruto 65.5 % / equilibrio 106 covers; PAN
+  caja $266,709, ticket $10.00 / 62.7 % / 184 transacciones. Comentarios TODO fuera.
+- **B1** (también en las fichas nuevas): FAQ del prestamista, grid «Financing Plan» y `why` «Lender-Ready Format»
+  («covering SBA 7(a) loans and SBA Microloans» → el cuadro y el DSCR cubren el préstamo principal; Microloan, inversores y
+  subvenciones como otras fuentes sin amortizar), correos y changelog. **Ojo: las fichas de FT y CAF del #110 conservan
+  esa frase en `why.reasons[3]`** (la ronda B1 corrigió FAQ y grid, no esa tarjeta): queda para el orquestador. Hub
+  (`DigitalProductsHubPage.astro`), tarjeta REST: «SBA 7(a) and Microloan financing with DSCR» → «Loan schedule and DSCR
+  (bank or SBA 7(a))», como la de FT.
+- **m19**: bono 1 (guía de permisos = §9 + fases del checklist) «Included in the plan»; total **$158** = kit $129 + bono 2
+  $29. **M3**: fuera «(regular price $129)» de los 2 correos.
+- Puestos: los rótulos reales de `Staffing` (REST: general manager / owner, head chef, line cooks, servers / bartenders,
+  part-time servers, dishwasher / weekend extra, vacation and day-off relief; PAN: head baker / owner, baker, bakery
+  assistant, counter staff / baristas, weekend extra, vacation and day-off relief). Conteos comprobados: 9 hojas, 772 / 737
+  fórmulas en los planes («more than 700»), 64 tareas en 7 fases (10/8/8/7/8/15/8) y 66 en 6 (11/12/12/10/11/10).
+- Changelog 2.2: «12 monthly salaries a year (the model's pay count, not your payroll frequency)» (m8), financiación B1,
+  PAN «square feet and pounds» (el libro PAN tiene libras: amasadora 55-110 lb, producción en lb; no tiene galones).
+
+### 7.6 Gates, hashes y comandos
+
+| Comprobación (VPS, `/root/wt-bp2t2`) | Resultado |
+|---|---|
+| `bp2.py aplicar_en --idempotencia` | préstamo por punto fijo en 3 vueltas (REST $399,000 · PAN $197,000); **0 diferencias**; inject_cache 772/2/737/12 fórmulas, 0 fallos de pycel; D15 sin fallos |
+| `bp2.py gates_en` (G1-G9) | **TODO VERDE**: G1 64 tareas [10, 8, 8, 7, 8, 15, 8] y 66 [11, 12, 12, 10, 11, 10], 772/737 fórmulas · G2 2,497 textos · G3 27 hojas Letter · G4 398 DV · G5 11 CF · G6 0 diferencias con la referencia ES recalculada · G7 222 valores, 2 calibraciones citadas · G8 los 2 docx · G9 censo-entregables 0 defectos y 0 no latinos |
+| `bp2.py gates_en --autotest` · `bp2.py ensamblar_docx --autotest` | **20/20** · **16/16** |
+| `bp2.py ensamblar_docx --plan rest` / `--plan pan` | G8 VERDE los dos (pan_b de la tanda Sonnet, ya commiteada, con 2 párrafos corregidos aquí: 100 y 103) |
+| Regresión FT/CAF (`BP_CONJUNTO` por defecto): `aplicar_en --dry-run --idempotencia`, docx ft/caf, `comparar_publicados.py`, `gates_en`, `--autotest` | **6/6 IDÉNTICOS** en canónico (los 6 sha256 canónicos de §2) · `cifras_caso.json` FT/CAF igual · 0 diferencias · TODO VERDE · 20/20 |
+| Mac: `bp2.py mapas` · `check_textos --todas` · `tienda-gate.py` | 0 errores (97 tokens) · las 8 tandas OK · **verde** (ya sin TODO_CIFRA) |
+| `gate-flujo-postpago.py --offline --only <slug>` | solo el Payment Link pendiente de John (y «no trackeado» hasta el commit) |
+
+sha256 (Mac = VPS):
+
+```
+0dbb9332fae8f762…  restaurant-business-plan/restaurant-business-plan.docx
+a251816dd9302b96…  restaurant-business-plan/restaurant-financial-projections.xlsx
+b1882317e5348107…  restaurant-business-plan/restaurant-opening-checklist.xlsx
+0d4ed36232321d41…  bakery-business-plan/bakery-business-plan.docx
+d6c0125cac44a267…  bakery-business-plan/bakery-financial-projections.xlsx
+60b2e24567eb2e9f…  bakery-business-plan/bakery-opening-checklist.xlsx
+a32ad833040d5a24…  business-plans-en-2/cifras_caso.json
+```
+
+```bash
+# VPS
+cd /root/chefpro-modernize && git fetch origin && git worktree add --detach /root/wt-bp2t2 origin/feat/business-plans-en-2
+cd /root/wt-bp2t2/scripts/productos-digitales/business-plans-en-2 && PY=/root/venv-guias/bin/python
+$PY bp2.py aplicar_en --idempotencia --json /tmp/rp-real.json      # 4 xlsx en dl/<slug>/ + cifras_caso.json
+$PY bp2.py ensamblar_docx --plan rest && $PY bp2.py ensamblar_docx --plan pan
+$PY bp2.py gates_en && $PY bp2.py gates_en --autotest && $PY bp2.py ensamblar_docx --autotest --dir /tmp/rp-docx-at
+# regresión FT/CAF: §2 de este fichero
+# vuelta: scp de dl/restaurant-business-plan/*, dl/bakery-business-plan/* y cifras_caso.json (sha256 iguales)
+```
+
+### 7.7 Riesgos
+
+- **PAN holgura 16.9 %** (D15 ≥ 15 %): pasa, pero cualquier coste que añada una revisión la acerca al límite. Si hiciera
+  falta, la palanca prevista es la de research (transacciones en pasos de 5, hasta 230), no el ticket.
+- **REST prime cost 58.4 %**, algo por debajo del 60-65 % de referencia: declarado en el docx (rest_b 108). La plantilla no
+  incluye beneficios sociales (seguro médico), solo cargas del 10 %.
+- **E4 amplía la lista de excepciones estructurales** (SPEC delta §2.1). Es el único cambio de fórmulas fuera de E1-E3;
+  G1 lo admite porque compara contra el ES parcheado.
+- La celda de la licencia de alcohol ($15,000) es un ejemplo de estado sin cupo: lo dicen la fila 56 de la tabla D19, el
+  docx §9 y la FAQ.
+- `docx_en_pan_b.json`: 2 párrafos (100 y 103) corregidos sobre la versión ya commiteada de la tanda Sonnet; `check_textos`
+  sigue OK.
+- Fichas FT/CAF (#110): `why.reasons[3]` aún dice «covering SBA 7(a) loans and SBA Microloans» (B1 a medias).
+- Alto de filas con el EN más largo (notas de `0. Assumptions` y de los checklists): `capa_altos` actúa sola; la
+  verificación humana en Excel y a 360 px sigue siendo la última palabra.

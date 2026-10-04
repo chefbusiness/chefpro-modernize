@@ -95,7 +95,8 @@ COL_OK = OrderedDict([('RESTC', 5), ('PANC', 1)])
 FASES_CABECERA = OrderedDict([('RESTC', ('Checklist Apertura', [4, 15, 24, 33, 41, 50, 66], 74))])
 
 # ==========================================================================
-# 2. Fórmulas: E2 (soportado de compras → B41) y E3 (PAN G10: el 4 % del pan común → 0, parte exenta)
+# 2. Fórmulas: E2 (soportado de compras → B41), E3 (PAN G10: el 4 % del pan común → 0, parte exenta) y E4 (total
+#    de FTE de la plantilla = Σ personas × FTE)
 # ==========================================================================
 _E2_ALC = ("('0. Supuestos'!$B$62*'0. Supuestos'!$B$40+(1-'0. Supuestos'!$B$62)*'0. Supuestos'!$B$39)")
 PARCHES_FORMULA = OrderedDict([
@@ -104,6 +105,11 @@ PARCHES_FORMULA = OrderedDict([
     (('PANP', 'PyG 3 Años', 'G10'), ('H10*0.04', 'H10*0')),
     (('PANP', 'PyG 3 Años', 'G13'), ("$H$10*0.04+(1-$H$10)*'0. Supuestos'!$B$39", "'0. Supuestos'!$B$41")),
     (('PANP', 'PyG 3 Años', 'G14'), (_E2_ALC, "'0. Supuestos'!$B$41")),
+    # E4 (F2 tanda 2): el total de la columna «Jornada» (FTE por persona) sumaba la columna tal cual (REST 5.45, PAN
+    # 4.22) aunque varias filas tienen 2-3 personas; el total de FTE es Σ personas × FTE (7.95 / 5.56 = horas
+    # contratadas ÷ 2,000, como ya calcula la cobertura). En el FT/CAF no se nota: todas sus filas son de 1 persona
+    (('RESTP', '5. Personal', 'C13'), ('SUM(C6:C12)', 'SUMPRODUCT(B6:B12,C6:C12)')),
+    (('PANP', 'Personal', 'C11'), ('SUM(C5:C10)', 'SUMPRODUCT(B5:B10,C5:C10)')),
 ])
 
 # ==========================================================================

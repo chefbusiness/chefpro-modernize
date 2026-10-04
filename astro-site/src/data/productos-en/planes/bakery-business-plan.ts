@@ -7,7 +7,8 @@
 //   · D30: slug `bakery-business-plan`, nombre «Bakery Business Plan Kit», H1 Forma B `Bakery ` + oro
 //     `Business Plan` + «Template for a Retail & Wholesale Bakery: …». Concepto: «artisan bakery with a
 //     storefront, a small cafe corner and wholesale to cafes».
-//   · D31: $39; priceOld $129; bonos $29; total $187; ahorro $90; «-70%» en hero y buyBox.
+//   · D31: $39; priceOld $129; bonos $29; ahorro $90; «-70%» en hero y buyBox. Total $158, no $187 (m19 de la
+//     revisión de FT/CAF): el bono 1 sale del propio plan y va como «Included in the plan».
 //   · D32: los 3 ficheros EN (dashboard BakeryBusinessPlanDashboard.tsx y get-download-urls.ts).
 //   · D36 (E3): parte EXENTA del sales tax en la línea de panadería (para llevar + mayorista con resale
 //     certificate); se describe sin cifra (H10 es editable). D39: obrador COMERCIAL, no cottage food (FAQ).
@@ -24,7 +25,8 @@
 //     kilos de pan», «plus nocturnidad», «margen real superior al 25 %», «materia prima 22-28 %, merma 3-5 %,
 //     margen bollería >75 %», «mix de producción»). Se conservan las cifras personales (65.000 EUR, 800 EUR
 //     al mes, 4 meses, 3 aperturas) y las «6 fases» (el checklist EN también tiene 6).
-//   · Cifras del caso US: TODO_CIFRA con comentario encima (cifras_caso.json de la F2).
+//   · Cifras del caso US: de `scripts/productos-digitales/business-plans-en-2/cifras_caso.json` (F2 tanda 2,
+//     F2-NOTAS §7.4-§7.5); si se recalibra el caso, se actualizan a mano.
 //   · FAQ: People Also Ask de «bakery business plan» (research delta §2) + «how to start a bakery business»,
 //     «bakery startup costs», cottage food vs comercial (D39), sales tax del pan (D36) + UK, moneda,
 //     suscripción, licencia y garantía. schema.faqs = el MISMO array.
@@ -41,12 +43,11 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Is it a generic plan or built for a bakery?',
-    a: 'Built for an artisan bakery with a storefront, a small cafe corner and wholesale to cafes: deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, stainless benches, sheeter, display case and counter in the startup costs; a bakery line that combines retail and wholesale, with an editable tax-exempt share, plus coffee and drinks in the P&L; six roles in the staffing sheet (head baker-owner, baker, bakery assistant, counter staff, weekend extra and relief cover) with the early-morning production shift; and the permits of a commercial bakery.',
+    a: 'Built for an artisan bakery with a storefront, a small cafe corner and wholesale to cafes: deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, stainless benches, sheeter, display case and counter in the startup costs; a bakery line that combines retail and wholesale, with an editable tax-exempt share, plus coffee and drinks in the P&L; six roles in the staffing sheet (head baker / owner, baker, bakery assistant, counter staff / baristas, weekend extra and vacation relief) with the early-morning production shift; and the permits of a commercial bakery.',
   },
   {
     q: 'How much does it cost to open a bakery?',
-    // TODO_CIFRA: caja total necesaria de la bakery de ejemplo (Startup Costs, xlsx EN calibrado por la F2).
-    a: "It depends on the model and on the space: a storefront bakery with its own production room costs far more than a home-based cottage food business, and a unit that already has the electrical service and ventilation for commercial ovens saves a big part of the build-out. Equipment is usually the largest line, and buying part of it used is a common way to lower it. The Startup Costs sheet lists every line — LLC and legal, licenses and plan review, build-out, electrical service for the ovens, ventilation, deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, benches and shelving, sheeter, display case and counter, shop furniture, POS with scale, signs, launch marketing and opening inventory — plus deposits, pre-opening months, contingency and working capital. The kit's example bakery needs TODO_CIFRA in total cash; replace each line with your own quotes.",
+    a: "It depends on the model and on the space: a storefront bakery with its own production room costs far more than a home-based cottage food business, and a unit that already has the electrical service and ventilation for commercial ovens saves a big part of the build-out. Equipment is usually the largest line, and buying part of it used is a common way to lower it. The Startup Costs sheet lists every line — LLC and legal, licenses and plan review, build-out, electrical service for the ovens, ventilation, deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, benches and shelving, sheeter, display case and counter, shop furniture, POS with scale, signs, launch marketing and opening inventory — plus deposits, pre-opening months, contingency and working capital. The kit's example bakery needs $266,709 in total cash ($182,500 of startup costs plus $84,209 of working capital); replace each line with your own quotes.",
   },
   {
     q: 'Is a bakery a profitable business?',
@@ -78,7 +79,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Can I present this plan to a lender, a landlord or investors?',
-    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The financing sheet covers an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
+    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
   {
     q: 'Can I change the numbers in the Excel model?',
@@ -183,10 +184,10 @@ const data: PlanNegocioData = {
       { icon: 'Coins', title: 'Startup Costs & Equipment', desc: 'Build-out, electrical service for the ovens, bakery ventilation, deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, stainless benches and shelving, sheeter, display case and counter, shop furniture, POS with scale and signs, each with a reference price you replace with your quotes, plus deposits, pre-opening months, contingency and working capital. The total cash you need is calculated separately.' },
       { icon: 'TrendingUp', title: 'Break-Even Point', desc: 'How many transactions a day you need at your average check (excl. sales tax), and the cash break-even with loan payments in and depreciation out. Margin of safety, a sensitivity table for average check and variable cost, and a plain-English reading of the result.' },
       { icon: 'BarChart3', title: 'Financial Scenarios', desc: 'Three scenarios side by side — pessimistic, base and optimistic — that move transactions per day, average check and opening days, each with its own estimated cash balance. Useful for a lender, a landlord or an investor.' },
-      { icon: 'Users', title: 'Staffing & Payroll Costs', desc: 'Six roles — head baker-owner, baker, bakery assistant, counter staff, weekend extra and relief cover — with gross pay, employer payroll taxes, the real cost of each role and two alerts: pay below the minimum wage for the hours worked, and hours left uncovered across opening hours and the early-morning production shift.' },
+      { icon: 'Users', title: 'Staffing & Payroll Costs', desc: 'Six roles — head baker / owner, baker, bakery assistant, counter staff / baristas, weekend extra and vacation relief — with gross pay, employer payroll taxes, the real cost of each role, the team\'s full-time equivalents and two alerts: pay below the minimum wage for the hours worked, and hours left uncovered across opening hours and the early-morning production shift.' },
       { icon: 'ShieldCheck', title: 'Opening Checklist (66 Tasks, 6 Phases)', desc: "Business setup (LLC, EIN, seller's permit, business license, the health or agriculture license), location and permits (zoning, lease, building and gas permits, oven ventilation, electrical service), equipment, staff, marketing (wholesale accounts with cafes and restaurants included) and your first 90 days." },
       { icon: 'ListChecks', title: 'Instructions & Ratio Checks', desc: 'An Instructions tab that explains every sheet and which cells to type, plus five checks on the P&L — gross margin, cost of goods, labor, rent and net margin — each marked OK or REVIEW against an editable kit benchmark.' },
-      { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity, an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan, investors or partners and local grants, with the loan amortization schedule, the debt service coverage ratio (DSCR) year by year against a 1.25× target and a warning if your sources don't cover the cash you need." },
+      { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity and your loan (bank or SBA 7(a)) with its amortization schedule and the debt service coverage ratio (DSCR) year by year against a 1.25× target, plus an SBA Microloan, investors or partners and local grants as other sources of funds, and a warning if your sources don't cover the cash you need." },
     ],
   },
 
@@ -212,11 +213,9 @@ const data: PlanNegocioData = {
       'Not another generic template: a bakery plan written for the format lenders expect, with a financial model that recalculates from your own numbers.',
     reasons: [
       { icon: 'Wheat', title: 'Built for a Bakery', desc: 'Deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, sheeter and display case; a bakery line that combines retail and wholesale with an editable tax-exempt share; the early-morning production shift on the staffing sheet; and the permits of a commercial bakery, not a home kitchen. Nothing to strip out from a generic restaurant template.' },
-      // TODO_CIFRA: ticket medio (excl. sales tax), margen bruto % y equilibrio en transacciones/día de la bakery
-      // de ejemplo (xlsx EN calibrado por la F2).
-      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example bakery: an average check of TODO_CIFRA (excl. sales tax), TODO_CIFRA gross margin and break-even at TODO_CIFRA transactions a day. Replace them with yours.' },
+      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example bakery: an average check of $10.00 (excl. sales tax), a 62.7% gross margin and break-even at 184 transactions a day, against 210 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Commercial Bakery Permits and 66 Tasks', desc: 'Zoning before you sign, building, electrical and gas permits, oven ventilation, the health department or state agriculture license, allergen labels for what you sell packaged or wholesale and employer registrations, plus how a commercial bakery differs from a cottage food operation. A starting point: requirements vary by state, county and city.' },
-      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
+      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR for your main loan (bank or SBA 7(a)), with SBA Microloans and grants as other sources. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
     compatLabel: 'Works with:',
     compatPills: [
@@ -231,13 +230,13 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $58',
+      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Bakery Permits & Licenses Guide (Commercial vs Cottage Food, US + UK Notes)',
-        value: '$29',
+        value: 'Included in the plan',
         desc: 'Section 9 of the plan plus Phases 1 and 2 of the checklist: why a bakery with a storefront and wholesale accounts needs a licensed commercial kitchen and not a cottage food permit, who licenses it in your state (health department or agriculture department), zoning, building and gas permits, oven ventilation, when FDA food facility registration applies, sales tax on bakery goods to go and resale certificates for wholesale — with notes for the UK. No state forms included: requirements vary by state, county and city.',
         image: '/lovable-uploads/ai-gallery/bbp-en-wholesale.jpg',
       },
@@ -280,7 +279,7 @@ const data: PlanNegocioData = {
       'Break-even in transactions a day, with a sensitivity table',
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 66 tasks in 6 phases',
-      'BONUS: Bakery Permits & Licenses Guide ($29)',
+      'BONUS: Bakery Permits & Licenses Guide (included in the plan)',
       'BONUS: Bakery Industry Benchmarks ($29)',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
@@ -292,7 +291,7 @@ const data: PlanNegocioData = {
     discountBadge: '-70%',
     heroNote: 'Special launch price. Going up soon',
     buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $187 — business plan kit ($129) + 2 bonuses ($58)',
+    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Bakery Industry Benchmarks bonus ($29)',
     bonusSaveLine: 'Save $90 TODAY!',
   },
 

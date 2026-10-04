@@ -38,13 +38,13 @@
 
 | Concepto | Dato | Fuente |
 |---|---|---|
-| Restaurante: mediana de apertura | **$375,000** (encuesta RestaurantOwner.com, 350+ independientes); rango típico $175,000-$750,000+ | [fuente: https://merchants.doordash.com/en-us/blog/how-much-does-it-cost-to-open-a-restaurant] |
+| Restaurante: mediana de apertura | **$375,000** (encuesta RestaurantOwner.com, 350+ independientes; cifra exacta **$375,500**, confirmada en la fuente por el orquestador el 4-oct: la usan el docx y la tabla D19) ; rango típico $175,000-$750,000+ | [fuente: https://merchants.doordash.com/en-us/blog/how-much-does-it-cost-to-open-a-restaurant] |
 | Full-service (casual) pequeño | $175,000-$400,000 (medio $400-650 K; grande $650 K-$1 M+) | ídem |
 | Por plaza | $3,046/plaza con local alquilado ($275,000 de media) | [fuente: búsqueda 4-oct, cita RestaurantOwner vía https://cloudkitchens.com/blog/how-much-does-it-cost-to-start-restaurant-business] (no leído entero: usar como orden de magnitud) |
 | Campana Type I + supresión de incendios | sistema de supresión $3,000-$12,000 (habitual $5-8 K); campana completa instalada $5,000-$28,000 | [fuente: https://www.thepricer.org/kitchen-hood-fire-suppression-system-cost/] |
 | Separador de grasas | instalación básica $2,000-$8,000; local medio $3,500-$7,500; mantenimiento $250-$1,400/año | [fuente: https://azure.rotorooter.com/blog/grease-trap-installation-costs] (resumen de búsqueda) |
 | Licencia de alcohol | de **$50 a más de $300,000** según estado y tipo; en estados con cupo (quota) se compra una existente por traspaso; tasas de solicitud $40-$1,000 | [fuente: https://www.webstaurantstore.com/article/206/how-to-get-a-liquor-license.html] |
-| Bakery: por modelo | casera $15-25 K · online $20-40 K · **retail pequeña $50,000-$100,000+** · comercial/producción $75,000-$150,000+ | [fuente: https://www.zenind.com/help/post/how-much-does-it-cost-to-open-a-bakery-in-2026-] |
+| Bakery: por modelo (**sin confirmar**: la página no cargó en la F2 tanda 2; el docx PAN ya no la cita) | casera $15-25 K · online $20-40 K · **retail pequeña $50,000-$100,000+** · comercial/producción $75,000-$150,000+ | [fuente: https://www.zenind.com/help/post/how-much-does-it-cost-to-open-a-bakery-in-2026-] |
 | Bakery: equipo | hornos, amasadoras, frío y fermentadoras $20-30 K o más (el gasto mayor) | ídem (vía búsqueda) |
 
 ## 4. Benchmarks (para D19 y umbrales; todos «kit benchmark (editable estimate)» en el libro)

@@ -1,0 +1,9 @@
+{
+ "c0422": {
+  "libro": "PANP",
+  "hoja": "Personal",
+  "celda": "A28",
+  "texto": "The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the row: for a position with two people they include both. FTE is the share of a full-time week for each person, and it is used to compare pay with the legal minimum in proportion; the TOTAL row multiplies it by the people in each position, so it gives the full-time equivalents of the whole team. The payroll tax rate and the number of pay periods are in the \"0. Assumptions\" tab.",
+  "motivo": "E4: el total de FTE es Σ personas × FTE"
+ }
+}

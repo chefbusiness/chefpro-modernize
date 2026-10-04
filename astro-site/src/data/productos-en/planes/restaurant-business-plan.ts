@@ -8,25 +8,26 @@
 //   · D30: slug `restaurant-business-plan`, nombre «Restaurant Business Plan Kit», H1 Forma B `Restaurant ` +
 //     oro `Business Plan` + «Template for a Casual Restaurant & Bar: …». «bar business plan» solo como
 //     «Restaurant & Bar» (subtítulo, title, FAQ): es un restaurante con barra, no un bar de copas.
-//   · D31: $39; priceOld $129; bonos $29; total $187; ahorro $90; «-70%» en hero y buyBox.
+//   · D31: $39; priceOld $129; bonos $29; ahorro $90; «-70%» en hero y buyBox. Total $158, no $187 (m19 de la
+//     revisión de FT/CAF): el bono 1 sale del propio plan y va como «Included in the plan».
 //   · D32: los 3 ficheros EN (dashboard RestaurantBusinessPlanDashboard.tsx y get-download-urls.ts).
 //   · D45: tarjeta DOCX la PRIMERA del grid (el ES no vendía el Word). Bonos rehechos: 1 «Restaurant Permits &
 //     Licenses Guide (US + UK notes, liquor license included)» = §9 del plan + fases 1, 2 y 6 del checklist;
 //     2 «US Market Data & Industry Benchmarks (sourced)» = §3 del docx + tabla D19. Para no contar dos veces
 //     la tabla de referencias, la tarjeta del grid se queda en «Instructions & Ratio Checks» (semáforo).
-//   · §4: R1 (sin «~80K-150K EUR» ni «~133K EUR»: la caja del caso US es TODO_CIFRA), R2 (bono 1 ya no es
+//   · §4: R1 (sin «~80K-150K EUR» ni «~133K EUR»: la caja del caso US sale del xlsx EN), R2 (bono 1 ya no es
 //     el cuadro de personal), R3 (sin «Análisis de Mercado España 2026» ni tasa de cierre: no hay fuente),
 //     R4 (SBA 7(a) / Microloan, sin «orden recomendado de gestión»), R5 (los 7 puestos reales del libro, sin
 //     jefe de sala), R6/R10 (sin SS 33 %, 14 pagas, «Datos reales España», rating, superlativo ni «737»).
-//   · D37/D38: licencia de alcohol con nota de cupo (la cifra de la fila es TODO_CIFRA), sin propinas ni
+//   · D37/D38: licencia de alcohol con nota de cupo (la cifra es la fila `1. Startup Costs!B42`), sin propinas ni
 //     tip credit en el modelo (servers y bartenders a salario base completo).
 //   · Compatibilidad y testimonios (decisión del orquestador, como FT/CAF): solo Microsoft Excel (.xlsx) y
 //     Word (.docx) en US Letter; los 8 testimonios del ES traducidos con el subtítulo de la edición española,
 //     sin las cifras que el producto EN no tiene («50+ trámites», «Seg. Social al 33,4 % y 14 pagas», los
 //     ratios «28-32 %», «las 6 fases» —son 7—). Se conservan las cifras personales (135.000 EUR, 10 días,
 //     300 EUR al mes, 4 meses, 3 aperturas).
-//   · Cifras del caso US: TODO_CIFRA con comentario encima (las rellena el orquestador con cifras_caso.json
-//     de la F2). Los conteos del producto (10 secciones, 9 hojas, 64 tareas en 7 fases, 7 puestos) y los
+//   · Cifras del caso US: de `scripts/productos-digitales/business-plans-en-2/cifras_caso.json` (F2 tanda 2,
+//     F2-NOTAS §7.4-§7.5); si se recalibra el caso, se actualizan a mano. Los conteos del producto (10 secciones, 9 hojas, 64 tareas en 7 fases, 7 puestos) y los
 //     parámetros de la SPEC (DSCR 1.25×, Microloan hasta $50,000, umbrales D41) sí van.
 //   · FAQ: People Also Ask de «restaurant business plan» (research delta §2) + «how to open a restaurant»,
 //     «restaurant startup costs», «liquor license cost», «bar business plan» + UK, moneda, suscripción,
@@ -44,12 +45,11 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Is it a generic plan or built for a restaurant with a bar?',
-    a: 'Built for a casual, full-service restaurant with a bar: cooking line, convection oven, fryers, refrigerated prep tables, walk-in cooler, Type I hood with fire suppression, dishwasher, sinks with grease interceptor, the bar with beer taps and a wine fridge, tables, stools, glassware, POS and patio in the startup costs; food and beverage sales with the alcohol share in the P&L; seven roles in the staffing sheet (general manager-owner, head chef, line cook, server-bartender, part-time server, weekend extra and relief cover); and the permits of a full-service restaurant, liquor license included.',
+    a: 'Built for a casual, full-service restaurant with a bar: cooking line, convection oven, fryers, refrigerated prep tables, walk-in cooler, Type I hood with fire suppression, dishwasher, sinks with grease interceptor, the bar with beer taps and a wine fridge, tables, stools, glassware, POS and patio in the startup costs; food and beverage sales with the alcohol share in the P&L; seven roles in the staffing sheet (general manager / owner, head chef, line cooks, servers / bartenders, part-time servers, dishwasher / weekend extra and vacation relief); and the permits of a full-service restaurant, liquor license included.',
   },
   {
     q: 'How much does it cost to open a restaurant?',
-    // TODO_CIFRA: caja total necesaria del restaurante de ejemplo (Startup Costs, xlsx EN calibrado por la F2).
-    a: "It depends on the space more than on the kitchen equipment: a unit that was already a restaurant, with its hood and grease interceptor in place, needs a fraction of the build-out of an empty shell, and rent, permits and the liquor license vary a lot by city and state. A survey of independent owners by RestaurantOwner.com put the median opening cost at around $375,000. The Startup Costs sheet lists every line — lease review, build-out, architect and permits, cooking line, hood and fire suppression, walk-in cooler, dishwasher, the bar, furniture, POS, patio, brand and launch, LLC and legal, liquor license and opening inventory — plus deposits, pre-opening months, contingency and working capital. The kit's example restaurant needs TODO_CIFRA in total cash; replace each line with your own quotes.",
+    a: "It depends on the space more than on the kitchen equipment: a unit that was already a restaurant, with its hood and grease interceptor in place, needs a fraction of the build-out of an empty shell, and rent, permits and the liquor license vary a lot by city and state. A survey of independent owners by RestaurantOwner.com put the median opening cost at around $375,000. The Startup Costs sheet lists every line — lease review, build-out, architect and permits, cooking line, hood and fire suppression, walk-in cooler, dishwasher, the bar, furniture, POS, patio, brand and launch, LLC and legal, liquor license and opening inventory — plus deposits, pre-opening months, contingency and working capital. The kit's example restaurant needs $528,696 in total cash ($388,700 of startup costs plus $139,996 of working capital); replace each line with your own quotes.",
   },
   {
     q: 'What is the 30/30/30/10 rule for restaurants?',
@@ -65,8 +65,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'How much does a liquor license cost?',
-    // TODO_CIFRA: importe de la fila «Liquor license + permits (non-quota state example)» del xlsx EN (D37 fija $15,000; confirmar con la F2).
-    a: "It depends entirely on your state and city: from a few hundred dollars for a beer and wine license in some places to well over $100,000 in states that cap the number of licenses, where you buy an existing one from another business. The kit's startup costs include a liquor license line of TODO_CIFRA as a non-quota state example, with a note to replace it with your state's fee or the market price of a transfer, and the plan reminds you to add liquor liability to your insurance.",
+    a: "It depends entirely on your state and city: from a few hundred dollars for a beer and wine license in some places to well over $100,000 in states that cap the number of licenses, where you buy an existing one from another business. The kit's startup costs include a liquor license and permits line of $15,000 as an example for a state without a license quota, with a note to replace it with your state's fee or the market price of a transfer, and the plan reminds you to add liquor liability to your insurance.",
   },
   {
     q: 'How do I open a restaurant, step by step?',
@@ -82,7 +81,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Can I present this plan to a lender, a landlord or investors?',
-    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The financing sheet covers an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
+    a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
   {
     q: 'Can I change the numbers in the Excel model?',
@@ -188,10 +187,10 @@ const data: PlanNegocioData = {
       { icon: 'Coins', title: 'Startup Costs Line by Line', desc: 'Build-out, architect and permits, cooking line, convection oven, fryers, refrigerated prep tables, walk-in cooler, Type I hood with fire suppression, dishwasher, sinks with grease interceptor, the bar, tables and stools, beer taps, glassware, POS, patio and the liquor license, each with a reference price you replace with your quotes, plus deposits, pre-opening months, contingency and working capital. The total cash you need is calculated separately.' },
       { icon: 'TrendingUp', title: 'Break-Even Point', desc: 'How many covers a day you need at your average check (excl. sales tax) and the table turns that implies, plus the cash break-even with loan payments in and depreciation out. Margin of safety, a sensitivity table for average check and variable cost, and a plain-English reading of the result.' },
       { icon: 'BarChart3', title: 'Financial Scenarios', desc: 'Three scenarios side by side — pessimistic, base and optimistic — each with its own estimated cash balance. Useful for a lender, a landlord or an investor.' },
-      { icon: 'Users', title: 'Staffing & Payroll Costs', desc: "Seven roles — general manager-owner, head chef, line cook, server-bartender, part-time server, weekend extra and relief cover — with gross pay, employer payroll taxes, the real cost of each role and two alerts: pay below the minimum wage for the hours worked, and service hours left uncovered. Tips aren't modeled: servers and bartenders are budgeted at a full base wage." },
+      { icon: 'Users', title: 'Staffing & Payroll Costs', desc: "Seven roles — general manager / owner, head chef, line cooks, servers / bartenders, part-time servers, dishwasher / weekend extra and vacation relief — with gross pay, employer payroll taxes, the real cost of each role, the team's full-time equivalents and two alerts: pay below the minimum wage for the hours worked, and service hours left uncovered. Tips aren't modeled: servers and bartenders are budgeted at a full base wage." },
       { icon: 'ShieldCheck', title: 'Opening Checklist (64 Tasks, 7 Phases)', desc: "Business setup (LLC, EIN, seller's permit, business license), location and permits (zoning, lease, building permits, health plan review), build-out and equipment, staff, marketing and launch, what must be in place before you open (final inspections, liquor license, insurance, pest control and music licenses) and your first 90 days." },
       { icon: 'ListChecks', title: 'Instructions & Ratio Checks', desc: 'An Instructions tab that explains every sheet and which cells to type, plus five checks on the P&L — gross margin, cost of goods, labor, rent and net margin — each marked OK or REVIEW against an editable kit benchmark.' },
-      { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity, an SBA-guaranteed 7(a) loan through your bank, an SBA Microloan, investors or partners and local grants, with the loan amortization schedule, the debt service coverage ratio (DSCR) year by year against a 1.25× target and a warning if your sources don't cover the cash you need." },
+      { icon: 'Banknote', title: 'Financing Plan', desc: "Owner equity and your loan (bank or SBA 7(a)) with its amortization schedule and the debt service coverage ratio (DSCR) year by year against a 1.25× target, plus an SBA Microloan, investors or partners and local grants as other sources of funds, and a warning if your sources don't cover the cash you need." },
     ],
   },
 
@@ -217,11 +216,9 @@ const data: PlanNegocioData = {
       'Not another generic template: a restaurant & bar plan written for the format lenders expect, with a financial model that recalculates from your own numbers.',
     reasons: [
       { icon: 'UtensilsCrossed', title: 'Built for a Restaurant with a Bar', desc: 'A cooking line, walk-in cooler, Type I hood with fire suppression and a grease interceptor; a bar with beer taps and a wine fridge; food and beverage sales with the alcohol share; seven roles on the staffing sheet; and the permits of a full-service restaurant, liquor license included. Nothing to strip out from a generic template.' },
-      // TODO_CIFRA: ticket medio (excl. sales tax), margen bruto % y equilibrio en cubiertos/día del restaurante
-      // de ejemplo (xlsx EN calibrado por la F2).
-      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example restaurant: an average check of TODO_CIFRA (excl. sales tax), TODO_CIFRA gross margin and break-even at TODO_CIFRA covers a day. Replace them with yours.' },
+      { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example restaurant: an average check of $28.00 (excl. sales tax), a 65.5% gross margin and break-even at 106 covers a day, against 125 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Permits, Liquor License and 64 Tasks', desc: 'Zoning before you sign, building permits, health plan review, hood and fire inspections, certificate of occupancy, liquor license, insurance with liquor liability and employer registrations. A starting point: requirements vary by state, county and city.' },
-      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
+      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR for your main loan (bank or SBA 7(a)), with SBA Microloans and grants as other sources. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
     compatLabel: 'Works with:',
     compatPills: [
@@ -236,13 +233,13 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $58',
+      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Restaurant Permits & Licenses Guide (US + UK Notes, Liquor License Included)',
-        value: '$29',
+        value: 'Included in the plan',
         desc: 'Section 9 of the plan plus Phases 1, 2 and 6 of the checklist: what a full-service restaurant usually needs and in what order — zoning check before you sign, building permits, health department plan review and food establishment permit, hood, fire suppression and fire marshal inspections, certificate of occupancy, and the liquor license (state and local approval, quota states, liquor liability and responsible service) — with notes for the UK. No state forms included: requirements vary by state, county and city.',
         image: '/lovable-uploads/ai-gallery/rbp-en-storefront.jpg',
       },
@@ -285,7 +282,7 @@ const data: PlanNegocioData = {
       'Break-even in covers a day, with a sensitivity table',
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 64 tasks in 7 phases',
-      'BONUS: Restaurant Permits & Licenses Guide ($29)',
+      'BONUS: Restaurant Permits & Licenses Guide (included in the plan)',
       'BONUS: US Market Data & Industry Benchmarks ($29)',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
@@ -297,7 +294,7 @@ const data: PlanNegocioData = {
     discountBadge: '-70%',
     heroNote: 'Special launch price. Going up soon',
     buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $187 — business plan kit ($129) + 2 bonuses ($58)',
+    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Market Data & Benchmarks bonus ($29)',
     bonusSaveLine: 'Save $90 TODAY!',
   },
 
