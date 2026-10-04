@@ -168,6 +168,9 @@ la F1 de cada producto frente a Etsy/Gumroad.
 - [ ] Sin reseñas ni ratings inventados.
 - [ ] Payment Link USD (John). **Sin compra de prueba** (John, 25-sep): acceso generado por admin + `gate-flujo-postpago.py --only <pid>` LIVE.
 - [ ] Tarjeta viva en el hub EN; banners del blog EN re-apuntados; broadcast EN programado.
+- [ ] **GEO y sitemap**: el producto en `astro-site/public/llms.txt` y `llms-full.txt` (y el recuento «currently N products» del
+      hub EN en los dos), la landing en el sitemap SIN `/access` ni `/library`, y sitemap reenviado en GSC
+      (`sc-domain:aichef.pro`). Olvidado en los 4 business plans del 4-oct: lo cazó John.
 - [ ] **Antes de que el producto entre en `PRODUCTS`:** existe `/en/crypto-payment` (lee `?o=` y `&estado=parcial` como
       `/pago-cripto`) o el producto va en `CRYPTO_PRODUCTS_EXCLUDE`; con `CRYPTO_PRODUCTS=all` el botón cripto aparece
       solo y sus URLs de vuelta darían 404. `CryptoPayButton.astro` necesita `lang` (hoy tiene copy ES).
