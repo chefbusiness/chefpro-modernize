@@ -183,7 +183,7 @@ faq:
 <li><strong>Tracking changes:</strong> Update all directories when information changes</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Grill House</h3><p class="mt-2 text-muted-foreground">Lighting the embers, Josper protocol, ageing and butchery.</p><a href="/kit-tareas-asador?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-marketing-strategy-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Grill House for €14</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Staff Scheduling Kit Pro</h3><p class="mt-2 text-muted-foreground">Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.</p><a href="/en/digital-products/restaurant-schedule-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-marketing-strategy-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Staff Scheduling Kit Pro for $19</a></aside>
 
 <h3>Local Citations</h3>
 <p>Local citations are online mentions of your business that</p>
@@ -251,7 +251,7 @@ faq:
 <h2>Offline Marketing Strategies That Still Work</h2>
 <p>Despite digital dominance, traditional marketing methods maintain significant impact, especially when integrated with online efforts.</p>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Pizzeria</h3><p class="mt-2 text-muted-foreground">Prep, mise, service, and delivery checklists tailored to pizzerias.</p><a href="/kit-tareas-pizzeria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-marketing-strategy-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Pizzeria for €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Financial Plan Kit Pro</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, scenarios, and a financial ratios dashboard.</p><a href="/en/digital-products/restaurant-financial-plan-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=restaurant-marketing-strategy-2026" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Financial Plan Kit Pro for $49</a></aside>
 
 <h3>Local Partnerships</h3>
 <ul>
