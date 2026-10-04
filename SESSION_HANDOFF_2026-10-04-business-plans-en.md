@@ -21,6 +21,14 @@ Descripciones (prosa):
   brunch) with Excel financial projections: startup costs, 3-year P&L, 12-month cash flow, break-even, staffing, scenarios
   and a financing sheet with loan schedule and DSCR. Plus a 75-task opening checklist and a benchmarks bonus. One-time
   payment, lifetime access.»
+- **Restaurant Business Plan Kit** — «A ready-to-edit restaurant business plan in Word (10 sections, casual restaurant with a
+  bar, written for the US) with Excel financial projections: startup costs, 3-year P&L, 12-month cash flow, break-even,
+  staffing, scenarios and a financing sheet with loan schedule and DSCR. Plus a 64-task opening checklist and a US market
+  data & benchmarks bonus. One-time payment, lifetime access.»
+- **Bakery Business Plan Kit** — «A ready-to-edit bakery business plan in Word (10 sections, artisan bakery with storefront,
+  cafe corner and wholesale) with Excel financial projections: startup costs, 3-year P&L, 12-month cash flow, break-even,
+  staffing, scenarios and a financing sheet with loan schedule and DSCR. Plus a 66-task opening checklist and a bakery
+  benchmarks bonus. One-time payment, lifetime access.»
 
 ## 1. Food Truck + Coffee Shop Business Plan Kit — PR #110, listos a falta del Payment Link
 
@@ -38,8 +46,11 @@ Descripciones (prosa):
 ## 2. Restaurant + Bakery Business Plan Kit — PR #111 (borrador, base `feat/business-plans-en`)
 
 - Rama `feat/business-plans-en-2`. Docs en `scripts/productos-digitales/business-plans-en-2/` (SPEC-delta D30-D47).
-- Hecho: F1 delta, F3 completa (fichas con `TODO_CIFRA` que la F2 rellena; el `tienda-gate` da rojo si quedan). En curso:
-  F2 tanda 1 (generalizar el código común a 4 libros más, con FT/CAF regenerados idénticos como condición dura).
+- Hecho: F1 delta, F3, F2 completa (código común generalizado con `BP_CONJUNTO=restpan`; FT/CAF regenerados idénticos en
+  canónico; 6 tandas Sonnet; aplicar_en + calibración + docx en el VPS: G1-G9 + autotest 20/20 + idempotencia 0;
+  `TODO_CIFRA` rellenados). Caso base: REST 125 covers × $28, ventas $1,085,000, neto 7,9 %, DSCR 2,50×, holgura 21,5 % ·
+  PAN 210 transacciones × $10, $651,000, neto 6,0 %, DSCR 2,44×, holgura 16,9 %. En curso: revisión adversarial
+  (`business-plans-en-2/REVISION-FINAL.md`) y una ronda de arreglos.
 - Sin deploy preview: Netlify solo construye PR contra `main`. Se tendrá al fusionar el #110 (el #111 se reapunta a `main`).
 - Correos EN: restaurant **9-nov**, bakery **14-nov** 14:00Z.
 
