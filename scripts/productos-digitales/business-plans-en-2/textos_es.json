@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-04T18:35:46Z",
+  "generado": "2026-10-04T20:01:17Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "89f0836b",
+  "commit": "4b9f62d4",
   "libros": {
    "RESTP": {
     "es": "plan-financiero-bar-restaurante.xlsx",
@@ -14900,6 +14900,10 @@
    "es": "1 día",
    "grupo": "GM",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "planes": [
     "pan",
     "rest"
@@ -15004,7 +15008,8 @@
      "h": "Checklist Apertura",
      "c": "D60",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "PANC",
@@ -15029,6 +15034,10 @@
    "es": "Cuota según la base mínima del tramo que te corresponda. Consulta el importe del ejercicio en curso y verifica con tu gestoría si te aplica la cuota reducida de inicio de actividad",
    "grupo": "GM",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "planes": [
     "pan",
     "rest"
@@ -15046,7 +15055,8 @@
      "h": "Checklist Apertura",
      "c": "F14",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "PANC",
@@ -25930,6 +25940,10 @@
    "es": "Equipo",
    "grupo": "GREST",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "planes": [
     "rest"
    ],
@@ -25970,21 +25984,24 @@
      "h": "Checklist Apertura",
      "c": "C47",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "RESTC",
      "h": "Checklist Apertura",
      "c": "C48",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "RESTC",
      "h": "Checklist Apertura",
      "c": "C74",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ],
    "reuso": {

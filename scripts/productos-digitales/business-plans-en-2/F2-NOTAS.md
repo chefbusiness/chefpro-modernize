@@ -329,3 +329,98 @@ $PY bp2.py gates_en && $PY bp2.py gates_en --autotest && $PY bp2.py ensamblar_do
 - Fichas FT/CAF (#110): `why.reasons[3]` aún dice «covering SBA 7(a) loans and SBA Microloans» (B1 a medias).
 - Alto de filas con el EN más largo (notas de `0. Assumptions` y de los checklists): `capa_altos` actúa sola; la
   verificación humana en Excel y a 360 px sigue siendo la última palabra.
+
+## 8. Ronda de arreglos (4-oct, sesión Claude Code) — la única tras `REVISION-FINAL.md`
+
+Implementador único. Solo textos: **ninguna fórmula, valor ni fila nueva** (G1 sigue con 772/737 fórmulas y 64/66
+tareas; caché numérica de los 4 libros idéntica celda a celda; `cifras_caso.json` igual sin `meta`). Todo lo que abre
+xlsx/docx, en el VPS (`/root/wt-bp2fix`, ya borrado); de vuelta por `scp` con sha256 iguales. Antes, en la rama del #110,
+el FHRS 0-5 de FT/CAF (`9fa48603` + `f8d10072`, nota en `../business-plans-en/F2-NOTAS.md` §8), traído aquí con
+`git pull --rebase` sin conflictos.
+
+**Mecanismo (para la próxima vez):** `POR_CELDA` solo actúa sobre apariciones marcadas `regenerar` en `textos_es.json`,
+así que añadir una celda exige **re-extraer** (`bp2.py extraer_textos`, VPS). Diff de la re-extracción comprobado: solo
+las 5 apariciones nuevas pasan a `regenerar` (+ `tratamientos`) y, en `censo_es.json`, el `fmt` de `consumibles_pct`
+(pct0 → pct1, el cambio de token de §7.2 que nunca se había re-extraído; cosmético: `ensamblar_docx` toma el formato de
+`TOKENS_DOCX`). Para UNA celda de una cadena compartida basta un override (`textos_en/overrides_G*.json`, una entrada por
+id y fichero, sin re-extraer). Una cadena con TODAS sus apariciones en `POR_CELDA` pasaría a GX y descuadraría los JSON:
+por eso C9 va por override.
+
+### 8.1 Arreglado
+
+| Id | Qué se hizo | Dónde |
+|---|---|---|
+| **M1** | Fila 17 (fase 2) = «Sign the commercial lease and file the liquor license application right after (state alcohol agency + local approval)»; F17: la solicitud pide acreditar el local, presentarla al firmar. Fila 60 (fase 6) = «Liquor license issued and posted before opening, with age-restriction signage»; D60 «Start in Phase 2: often 3-12 months»; F60 «Applied for in Phase 2…», cupo, formación de servicio responsable, cartel de edad y «serve no alcohol until the license is issued». Docx §9 [119] «often 3-12 months, so we file the application right after signing the lease»; §10 [128] reescrito fase a fase contra el checklist real (también arregla: seguro en fase 6 y no en la 1, soft opening en fase 5 y no en la 7, CO y health permit en fase 2). FAQ de la landing («Apply for your liquor license early»), §10 [131] y tarjeta del grid / dashboard / changelog / correo («lease and liquor license application» en fase 2, «liquor license issued and posted» en fase 6): dicen lo mismo | RESTC B17/F17 (c0714/c0715), B60/F60 (c0824/c0825) en GREST; D60 por `POR_CELDA`; docx rest_b 119/128; ficha, `RestaurantBusinessPlanDashboard.tsx`, `productos-changelog.ts`, correo |
+| **M2** | RESTP `Instructions!A7` con el texto de la panadería y las pestañas numeradas: «…the other funding sources on "7. Financing" (rows 8-11 count as sources but are not amortized: your bank or SBA 7(a) loan goes in "Loan requested" on "0. Assumptions")» | GREST c0432 |
+| m1 | RESTC C47/C48/C74 → «Team» (la cadena «Equipo» sigue siendo «Equipment» en A27-A30) | `POR_CELDA` |
+| m2 | Docx REST [107] y PAN [103]: «(a C corporation example; pass-through owners set it to 0 and pay tax on the profit personally)» | docx |
+| m3 | Docx REST [115]: el EIN «is needed to hire employees and to file federal employment and excise tax returns» | docx |
+| m4 | FHRS **0-5**: RESTC F21 (c0730), docx REST [122] («from 0 to 5», FHIS ya estaba) y PAN [110] (+ «Scotland uses the Food Hygiene Information Scheme») | GREST, docx |
+| m5 | Docx REST [101]: «the head chef and a lead server join» | docx |
+| m6 | Docx REST [101]: «The model starts payroll on opening day, so these pre-opening wages are not a line of their own: they come out of the working capital reserve» (el fondo es 3 meses de fijos, $139,996; saldo mínimo $124,652). Sin tocar valores | docx |
+| m7 | Decisión del orquestador: el alquiler del caso ($7,000/mes) es el **coste total de ocupación** (renta base + NNN/CAM estimados). C24 y docx [81] lo dicen así y piden sumar los cargos si el contrato solo da la renta base | GREST c0042, docx rest_b 81 |
+| m8 | RESTP `Instructions!C51/C52` (fuente del food cost 25-35 % y del personal 25-33 %): «Papaya (papaya.co.th)» → **«Kit estimate»**. Restaurant365 solo confirma el prime cost 60-65 % (fila 57), no esos dos rangos. La justificación de `CALIBRACION_D15` en §7.1 cita «research §4 (Papaya)» como historia; la fila ya no lo publica | GREST c0515/c0518 |
+| m9 | Bono 2 REST «US Industry Benchmarks (Sourced)» (título, item del CTA, `bonusTotalLabel`, comentario de cabecera) y desc con las filas reales de la tabla (ticket, alquiler, food cost, personal, prime cost, inversión, licencia), sin «market data»; correo «US industry benchmarks with their sources». El dashboard y el changelog no lo nombraban. Valor $29 y total $158 intactos (decisión de tienda) | ficha, correo |
+| m10 | PANP `3-Year P&L!F10`: fuera la regla 80/80 de California → «Many states exempt bakery goods sold to go and tax what is eaten in the shop, but the rules vary by state: check yours» | GPAN c0941 |
+| m11 | PANC `Phase 2!E14`: «Butter and mixer wash water still reach the drain: ask whether you need a grease interceptor where the local plumbing code requires it»; docx PAN [107]: permisos de fontanería «including a grease interceptor where the local plumbing code requires it» | GPAN c1188, docx pan_b 107 |
+| m12 | PANP C14: «inside the 20-30%» | GPAN c0870 |
+| m13 | PANP `Staffing!J23` «The head baker and the baker…» (B23 = 2); J21 «two in this example, which covers the morning and afternoon peaks and the coffee corner» (B21 = 2) | GPAN c0993/c0989 |
+| m14 | PANP `Instructions!D47`: «the weighted average is about a day» (B58 = 1) | GPAN c1053 |
+| m15 | PANP `Instructions!D46`: fuera «it is the year when loan repayment weighs the most» | GPAN c1049 |
+| m16 | PANC `Phase 2!E13` (override): «Label packaged and wholesale items with the ingredient list, net contents and the 9 major allergens (FDA); your health department may ask for more». RESTC F52 conserva la nota de carteles | `overrides_GPAN.json` c0806 |
+| m17 | RESTC F14: «Owners of an LLC or sole proprietorship are not on payroll: they take draws and pay self-employment tax. Ask your accountant how to set it up» (PANC F1!E8 conserva la del alta como empleador) | `POR_CELDA` |
+| m18 | Docx PAN [114]: «shows what happens if the counter builds slowly: without corrective action, the reserve runs out» | docx |
+| m19 | Docx REST [122] y FAQ UK de la landing: Licensing Act 2003 = «England and Wales; Scotland and Northern Ireland have their own licensing laws» | docx, ficha |
+| m20 | Docx REST [111] y PAN [97]: «With an SBA 7(a), the SBA guarantee fee and the closing costs come on top: they change with the loan amount and each fiscal year, so we ask the lender for them and add them to the startup costs». Sin cifra (no confirmada en sba.gov en esta ronda) | docx |
+| m21 | Testimonio REST: fuera «in 10 days» y «Total investment: EUR 135,000»; testimonio PAN: fuera «EUR 65,000» («they approved the financing»). Mismo criterio: ningún plazo ni cifra de resultado que no se pueda sostener | fichas |
+| m22 | `7. Financing!C9` (los dos): «up to 50,000», sin símbolo (override por libro; el GM común de FT/CAF conserva «$50,000») | `overrides_GREST.json` / `overrides_GPAN.json` c0617 |
+| m23 | Docx PAN [103]: el optimista con ticket y días («at {{optimista_ticket}} over {{optimista_dias}} days» → $10.91 / 320) | docx |
+| m24 | PANP `Instructions!D66`: fuera la comparación con la cafetería | GPAN c1117 |
+
+Alto de filas (`capa_altos`, solo sube): RESTC fila 17 59.75 → 104.75 y fila 60 134.75 → 149.5 (notas acortadas tras
+una primera pasada que daba 149.5 / 194.5); RESTP `Instructions` fila 7 75 → 89.75; PANC `Phase 2` filas 13/14
+intercambian alto (104.75 ↔ 59.75) porque la nota larga pasa de E13 a E14.
+
+### 8.2 Aceptado sin arreglar
+
+- **m25** (orden de pestañas de RESTP, `Instructions` entre `5. Staffing` y `6. 12-Month Cash Flow`): mover una hoja es
+  una excepción estructural; cosmético, se deja como el ES.
+- **m6, el fondo**: la nómina previa a la apertura no se modela como línea propia (sería una fila nueva en
+  `1. Startup Costs`); el docx dice de dónde sale.
+- **m20, la cifra**: sin importe de la guarantee fee (cambia cada año fiscal y con el importe).
+- **m21, el resto**: los testimonios siguen siendo de la edición española con resultado cualitativo («approved the
+  loan»); quitar los testimonios o cambiar su formato es decisión de John (R12/D26).
+- **RESTC fila 18** (certificate of occupancy en la fase 2, heredado del ES): el docx [128] habla de «the start of… the
+  certificate of occupancy» para no contradecir al checklist; mover la tarea a la fase 6 sería cambiar la estructura.
+- **FT/CAF fuera de esta rama** (observaciones para el #110, no tocadas: el paso 1 era solo el FHRS): `Financing!C9`
+  sigue con «$50,000» (GM común) y sus docx no mencionan la guarantee fee de la SBA.
+- Observación del revisor sobre el caso REST optimista para un banco (prime cost 58.4 %, plantilla, EBITDA 17.6 %): sin
+  cambio, como el m20 de FT/CAF.
+
+### 8.3 Gates, regresión y hashes
+
+| Comprobación | Resultado |
+|---|---|
+| `bp2.py extraer_textos` (VPS) | diff = solo las 5 apariciones `POR_CELDA` (+ `fmt` cosmético de `consumibles_pct`) |
+| `bp2.py aplicar_en --idempotencia` | préstamo 399,000 / 197,000 en 1 vuelta; **0 diferencias**; RESTC 14 fijos (9 + 5) |
+| Cambios celda a celda vs publicados | RESTP 5 · RESTC 10 · PANP 8 · PANC 2 celdas de texto; **caché numérica 0 diferencias**; `cifras_caso.json` igual |
+| `bp2.py ensamblar_docx --plan rest / pan` | G8 VERDE; párrafos cambiados: REST 81, 101, 107, 111, 115, 119, 122, 128 · PAN 97, 103, 107, 110, 114 |
+| `bp2.py gates_en` · `--autotest` · `ensamblar_docx --autotest` | **TODO VERDE** (G1 64/66 tareas, 772/737 fórmulas; G6 0 diferencias; G9 0 defectos, 0 no latinos) · 20/20 · 16/16 |
+| `bp2.py check_textos --todas` (Mac y VPS) · `bp2.py mapas` | las 8 OK · 0 errores (97 tokens) |
+| Regresión FT/CAF (`ftcaf`, `comparar_publicados.py`) | **6/6 IDÉNTICOS** en canónico a los del paso 1 (FT checklist `74ff0874…`, FT docx `4bee0054…`, CAF checklist `25a4e336…`, CAF docx `9b33a18a…`; proyecciones `68a501c6…` / `9e7dcc45…` sin cambio); `cifras_caso.json` FT/CAF igual; gates TODO VERDE, 20/20, 18/18 |
+| `tienda-gate.py` (estático, Mac) | **verde** |
+
+sha256 (Mac = VPS):
+
+```
+caf73b2e0bf241a6…  restaurant-business-plan/restaurant-business-plan.docx
+1af892f3461c103c…  restaurant-business-plan/restaurant-financial-projections.xlsx
+296d8157e3372d5c…  restaurant-business-plan/restaurant-opening-checklist.xlsx
+aa7990f8f99fb4c0…  bakery-business-plan/bakery-business-plan.docx
+96317791f9c7648a…  bakery-business-plan/bakery-financial-projections.xlsx
+a1236f9e8103b808…  bakery-business-plan/bakery-opening-checklist.xlsx
+```
+
+**Ninguna cifra del caso cambió**: fichas, hub, correos y FAQ siguen valiendo ($528,696 / $266,709, 65.5 % / 62.7 %,
+106 / 184, $15,000). Lo que sí cambió en la copy: el nombre del bono 2 del restaurante, los dos testimonios y la licencia
+de alcohol repartida entre las fases 2 y 6.
