@@ -1,0 +1,22 @@
+{
+ "consumo (existencias)": "usage",
+ "Óptimo/Límite (nº)": "Target / Limit (no.)",
+ "Objetivo (ratio)": "Target",
+ "Sentido": "Direction",
+ "Benchmark Sector": "Industry Benchmark",
+ "endeudamiento": "debt-to-capital ratio",
+ "flujo libre del proyecto": "project free cash flow (no debt)",
+ "promotor": "owner / founder",
+ "equipo promotor": "founding team",
+ "garantías": "collateral",
+ "fase (checklist)": "phase",
+ "responsable": "owner",
+ "Constitución": "Formation",
+ "Licencias (fase)": "Licenses & Permits",
+ "Tesorería (fase)": "Cash Management",
+ "Personal y obligaciones laborales": "Staff & Employer Obligations",
+ "activo/pasivo corriente": "current assets / current liabilities",
+ "deuda financiera viva": "outstanding debt",
+ "existencias": "inventory",
+ "amortización (préstamo)": "principal repaid"
+}

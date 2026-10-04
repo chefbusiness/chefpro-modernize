@@ -38,6 +38,14 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-mermas': '/dl/food-cost-templates/BONUS-actual-vs-theoretical-food-cost.xlsx',
     'bonus-guia': '/dl/food-cost-templates/BONUS-reduce-food-cost-30-days.pdf',
   },
+  // Tienda EN (2026-10-03): Gastro Pro Prompts eBook. A diferencia de su gemelo ES (rama especial
+  // de env vars PDF_*_URL, abajo), sale por este mapa estándar. Claves = las de DOWNLOADS en
+  // src/pages/ProPromptsLibraryEn.tsx (los mismos nombres de tarjeta que el ES: ebook/bonus1/bonus23).
+  'ai-prompts-for-restaurants': {
+    'ebook': '/dl/ai-prompts-for-restaurants/gastro-pro-prompts-ebook.pdf',
+    'bonus1': '/dl/ai-prompts-for-restaurants/bonus-1-prompt-engineering-guide.docx',
+    'bonus23': '/dl/ai-prompts-for-restaurants/bonus-2-3-templates-cheat-sheet.xlsx',
+  },
   'pack-appcc': {
     'temp-diario': '/dl/pack-appcc/01-registro-temperaturas-diario.xlsx',
     'temp-recepcion': '/dl/pack-appcc/02-registro-temperaturas-recepcion.xlsx',
@@ -60,6 +68,31 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'termometros': '/dl/pack-appcc/19-verificacion-termometros.xlsx',
     'bonus-formacion': '/dl/pack-appcc/BONUS-01-registro-formacion.xlsx',
     'bonus-protocolo': '/dl/pack-appcc/BONUS-02-protocolo-alerta-alimentaria.xlsx',
+  },
+  // Tienda EN (2026-10-03): HACCP Food Safety Kit Pro. MISMAS claves que pack-appcc (las del
+  // TEMPLATES de src/pages/HaccpKitDashboard.tsx) → ficheros EN de /dl/haccp-templates/ (SPEC haccp-kit §2.1).
+  'haccp-templates': {
+    'temp-diario': '/dl/haccp-templates/01-food-temperature-log.xlsx',
+    'temp-recepcion': '/dl/haccp-templates/02-receiving-temperature-log.xlsx',
+    'plan-limpieza': '/dl/haccp-templates/03-cleaning-sanitizing-schedule.xlsx',
+    'registro-limpieza': '/dl/haccp-templates/04-daily-cleaning-checklist.xlsx',
+    'recepcion': '/dl/haccp-templates/05-receiving-checklist.xlsx',
+    'trazabilidad': '/dl/haccp-templates/06-traceability-log.xlsx',
+    'plagas': '/dl/haccp-templates/07-pest-control-log.xlsx',
+    'alergenos': '/dl/haccp-templates/08-allergen-matrix.xlsx',
+    'aceite': '/dl/haccp-templates/09-fryer-oil-log.xlsx',
+    'agua': '/dl/haccp-templates/10-water-quality-log.xlsx',
+    'acciones': '/dl/haccp-templates/11-corrective-action-log.xlsx',
+    'haccp': '/dl/haccp-templates/12-haccp-plan-hazard-analysis.xlsx',
+    'higiene': '/dl/haccp-templates/13-employee-hygiene-health-checklist.xlsx',
+    'fichas-alergenos': '/dl/haccp-templates/14-allergen-chart-reaction-protocol.xlsx',
+    'guia-inspeccion': '/dl/haccp-templates/15-health-inspection-checklist.xlsx',
+    'coccion': '/dl/haccp-templates/16-cooking-reheating-log.xlsx',
+    'enfriamiento': '/dl/haccp-templates/17-cooling-thawing-log.xlsx',
+    'anisakis': '/dl/haccp-templates/18-parasite-destruction-log.xlsx',
+    'termometros': '/dl/haccp-templates/19-thermometer-calibration-log.xlsx',
+    'bonus-formacion': '/dl/haccp-templates/BONUS-01-food-safety-training-log.xlsx',
+    'bonus-protocolo': '/dl/haccp-templates/BONUS-02-food-recall-response-plan.xlsx',
   },
   'kit-tareas': {
     'apertura-cierre': '/dl/kit-tareas/01-apertura-cierre.xlsx',
@@ -262,6 +295,20 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'directorio': '/dl/kit-gestion-personal/07-directorio-plantilla.xlsx',
     'bonus-briefing': '/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx',
     'bonus-calculadora': '/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx',
+  },
+  // Tienda EN (2026-10-03): Restaurant Staff Scheduling Kit Pro. MISMAS claves que kit-gestion-personal
+  // (las del TEMPLATES de src/pages/RestaurantScheduleKitDashboard.tsx) → ficheros EN de
+  // /dl/restaurant-schedule-templates/ (SPEC staff-kit §2.1).
+  'restaurant-schedule-templates': {
+    'cuadrante': '/dl/restaurant-schedule-templates/01-restaurant-schedule-template.xlsx',
+    'horas-extra': '/dl/restaurant-schedule-templates/02-overtime-tracker.xlsx',
+    'coste-laboral': '/dl/restaurant-schedule-templates/03-labor-cost-calculator.xlsx',
+    'onboarding': '/dl/restaurant-schedule-templates/04-new-hire-onboarding-checklist.xlsx',
+    'vacaciones': '/dl/restaurant-schedule-templates/05-pto-vacation-planner.xlsx',
+    'evaluacion': '/dl/restaurant-schedule-templates/06-employee-performance-review.xlsx',
+    'directorio': '/dl/restaurant-schedule-templates/07-employee-directory.xlsx',
+    'bonus-briefing': '/dl/restaurant-schedule-templates/BONUS-01-shift-handover-log.xlsx',
+    'bonus-calculadora': '/dl/restaurant-schedule-templates/BONUS-02-restaurant-staffing-calculator.xlsx',
   },
   'kit-inventario': {
     'stock': '/dl/kit-inventario/01-inventario-stock-diario.xlsx',
@@ -690,6 +737,21 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'viabilidad': '/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx',
     'bonus-simulador': '/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx',
     'bonus-checklist': '/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx',
+  },
+  // Tienda EN (2026-10-03): Restaurant Financial Plan Kit Pro. MISMAS claves que kit-plan-financiero
+  // (las del TEMPLATES de src/pages/RestaurantFinancialPlanKitDashboard.tsx) → ficheros EN de
+  // /dl/restaurant-financial-plan-templates/ (SPEC financial-kit §2.1).
+  'restaurant-financial-plan-templates': {
+    'plan-previsional': '/dl/restaurant-financial-plan-templates/01-restaurant-financial-projections-3-year.xlsx',
+    'plan-previsional-5': '/dl/restaurant-financial-plan-templates/01b-restaurant-financial-projections-5-year.xlsx',
+    'break-even': '/dl/restaurant-financial-plan-templates/02-restaurant-break-even-calculator.xlsx',
+    'cash-flow': '/dl/restaurant-financial-plan-templates/03-restaurant-cash-flow-forecast.xlsx',
+    'capex': '/dl/restaurant-financial-plan-templates/04-restaurant-startup-costs-budget.xlsx',
+    'pyl': '/dl/restaurant-financial-plan-templates/05-restaurant-pl-template-budget-vs-actual.xlsx',
+    'ratios': '/dl/restaurant-financial-plan-templates/06-restaurant-kpi-ratios-dashboard.xlsx',
+    'viabilidad': '/dl/restaurant-financial-plan-templates/07-restaurant-loan-proposal-lender-summary.xlsx',
+    'bonus-simulador': '/dl/restaurant-financial-plan-templates/BONUS-08-what-if-scenario-simulator.xlsx',
+    'bonus-checklist': '/dl/restaurant-financial-plan-templates/BONUS-09-pre-opening-financial-checklist.xlsx',
   },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',

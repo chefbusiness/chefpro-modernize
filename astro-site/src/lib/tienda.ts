@@ -101,6 +101,37 @@ export const FAMILIAS: FamiliaProducto[] = [
       en: { slug: 'restaurant-inventory-templates', vivo: true },
     },
   },
+  {
+    familia: 'pack-appcc',
+    productos: {
+      es: { slug: 'pack-appcc', vivo: true },
+      en: { slug: 'haccp-templates', vivo: true },
+    },
+  },
+  {
+    familia: 'kit-gestion-personal',
+    productos: {
+      es: { slug: 'kit-gestion-personal', vivo: true },
+      en: { slug: 'restaurant-schedule-templates', vivo: true },
+    },
+  },
+  {
+    familia: 'kit-plan-financiero',
+    productos: {
+      es: { slug: 'kit-plan-financiero', vivo: true },
+      en: { slug: 'restaurant-financial-plan-templates', vivo: true },
+    },
+  },
+  {
+    // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
+    // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
+    // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.
+    familia: 'pro-prompts-ebook',
+    productos: {
+      es: { slug: 'pro-prompts-ebook', vivo: true },
+      en: { slug: 'ai-prompts-for-restaurants', vivo: true },
+    },
+  },
 ];
 
 /** hreflang de la landing de una familia: SOLO los idiomas con producto vivo. Mientras EN no

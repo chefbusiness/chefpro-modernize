@@ -1,0 +1,615 @@
+{
+ "prompts": [
+  {
+   "n": 76,
+   "titulo": "Ingredient Substitutes Without Losing Flavor",
+   "cuerpo": "A key ingredient in my recipe isn't available today: [ORIGINAL INGREDIENT]. I need a substitute that: keeps a similar aromatic profile, has a comparable texture, and is available right now. Analyze the aromatic compounds of the original ingredient and give me 3 alternatives ranked by similarity, noting the recipe adjustments each substitution requires.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 77,
+   "titulo": "Olive Oil and Food Pairing",
+   "cuerpo": "Act as an extra virgin olive oil expert. Design a pairing experience with 4 types of EVOO (arbequina, picual, hojiblanca, cornicabra) and specific food products. For each EVOO: aromatic and flavor characteristics, best tasting temperature, and which seafood, meat, and vegetable product it pairs with best and why.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 78,
+   "titulo": "Food Pairing for a Vegetarian Menu",
+   "cuerpo": "Design a complete 4-course vegetarian menu using food pairing principles to create surprising, satisfying flavor combinations. The main ingredients are: [INGREDIENT 1, 2, 3, 4]. For each dish, explain the food pairing logic behind it and why the combination works on a sensory level even if it isn't intuitive.",
+   "apps": [
+    "Food Pairing AI",
+    "VegChef Plant-Based"
+   ]
+  },
+  {
+   "n": 79,
+   "titulo": "Olive Oil Tasting with Food Pairing",
+   "cuerpo": "Design an extra virgin olive oil tasting event with food pairing for [NUMBER] people. Include: a selection of 4-5 different EVOOs with a profile sheet for each, tasting order (from mild to intense), accompanying ingredients to highlight each EVOO, a tasting sheet for attendees, and a verbal script for the tasting host to introduce each oil.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 80,
+   "titulo": "Surprising Science-Backed Combinations",
+   "cuerpo": "Give me the 10 most surprising and counterintuitive ingredient combinations that are scientifically backed by molecular food pairing. For each combination: ingredient A + ingredient B, the aromatic compounds they share, a specific recipe or preparation where to apply it, and the difficulty level for introducing it in a restaurant (1 to 5).",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 81,
+   "titulo": "Cocktail and Food Pairing",
+   "cuerpo": "Design the pairing between 5 signature cocktails from the bar and the dishes on the menu at [RESTAURANT]. For each cocktail: name, base ingredients, aromatic profile, and 2-3 menu dishes it harmonizes with. Also create the verbal pitch for the bartender to explain when guests ask about the cocktail-and-food pairing.",
+   "apps": [
+    "Food Pairing AI",
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 82,
+   "titulo": "Spice Compatibility Analysis",
+   "cuerpo": "I need to develop my own spice blend for [CUISINE TYPE/DISH]. Analyze the aromatic compatibility between these spices: [LIST OF 6-8 SPICES]. Tell me which ones work well together, which ones clash, and which ones are the link that ties the profiles together. Propose 2 different blends with exact proportions and their culinary use.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 83,
+   "titulo": "Natural Umami: Flavor Enhancers",
+   "cuerpo": "Act as a culinary chemist specialized in umami. Explain how to boost umami naturally in these dishes: [LIST OF DISHES]. For each dish, identify the umami ingredients already present, how to enhance them with technique (reduction, fermentation, roasting), which umami ingredients to add without it tasting artificial, and the expected effect on the final result.",
+   "apps": [
+    "Food Pairing AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 84,
+   "titulo": "Infusion and Herbal Tea Menu for Restaurants",
+   "cuerpo": "Design the infusion and herbal tea menu for [RESTAURANT TYPE], setting yourself apart from the standard tea bag. Include: 8-10 quality infusions (blends of herbs, flowers, dried fruit), a description of each with its properties and flavors, serving temperature, steeping time, and pairing with sweet or savory dishes. Add a visual presentation proposal.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 85,
+   "titulo": "Complete Allergen Identification in a Recipe",
+   "cuerpo": "Analyze this complete recipe: [RECIPE WITH INGREDIENTS AND QUANTITIES] and identify all the allergens present according to the allergen rules that apply to you (US: the FDA's 9 major allergens · UK/EU: the 14 regulated allergens). For each allergen found: which ingredient contains it, whether there is a cross-contact risk, and how to document it on the dish's spec sheet.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 86,
+   "titulo": "Gluten-Free Dish Adaptation",
+   "cuerpo": "Adapt this recipe to make it 100% gluten-free: [ORIGINAL RECIPE]. Identify all ingredients containing gluten (wheat, barley, rye, uncertified oats) and provide specific substitutes with the process changes and quantities needed. Also include the kitchen protocol to avoid cross-contact when preparing this dish.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 87,
+   "titulo": "Complete Menu for Celiac Guests",
+   "cuerpo": "Design a complete menu (starter, main course, and dessert) for a celiac guest at my [TYPE] restaurant. The menu must be as appealing as the standard menu, not a second-class version. Include recipes for each gluten-free dish, possible cross-contact risks to avoid in the kitchen, and how to present it on the menu with the appropriate gluten-free label.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 88,
+   "titulo": "Allergen Protocol for the Whole Team",
+   "cuerpo": "Write the allergen management protocol for [RESTAURANT NAME]. Include: the procedure for taking information from guests with allergies, communication between front of house and kitchen, preparing the allergen-free dish (utensils, work area, order of preparation), verification before serving, and the emergency protocol if a guest has a reaction. Procedures manual format.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 89,
+   "titulo": "Allergen Labeling for Buffets",
+   "cuerpo": "Design the allergen labeling system for the buffet at [HOTEL/CATERING/RESTAURANT]. For [NUMBER] buffet items, create the identification card format including: dish name, ingredient list, allergens present (visual icons), possible traces, and a recommendation for guests with severe allergies. Visual format that's easy to understand.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 90,
+   "titulo": "Menu Free of the Major Allergens",
+   "cuerpo": "Design a 3-course menu completely free of the major regulated allergens (gluten, crustaceans, eggs, fish, peanuts, soy, dairy, tree nuts, celery, mustard, sesame, sulfur dioxide, lupin, and mollusks; adjust to the list that applies to you). The menu must be flavorful and complete, not restrictive. Include recipes and verification of each ingredient.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 91,
+   "titulo": "Cross-Contact Risk Analysis",
+   "cuerpo": "In my kitchen I prepare dishes with and without gluten at the same time. Carry out a cross-contact risk analysis for: kitchen zones, shared utensils, fryers, griddles, and work surfaces. For each risk point identified: risk level (high/medium/low), specific corrective measure, and recommended daily verification.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 92,
+   "titulo": "Allergen Training for Your Team",
+   "cuerpo": "Create the allergen management training program for the front-of-house and kitchen staff of my restaurant. Include: the front-of-house module content (how to ask, how to inform, what to do if in doubt) and the kitchen module (preparation, cross-contact prevention, emergencies). Add a 10-question test to verify the team has absorbed the information.",
+   "apps": [
+    "Allergen ID",
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 93,
+   "titulo": "Menu with Allergen Icons",
+   "cuerpo": "Redesign the menu presentation for [RESTAURANT NAME] to include allergen information in a visually appealing, easy-to-read way. For each dish on the menu: [LIST OF DISHES], indicate the allergens with icons, how to adapt the dish on request (without X allergen), and the mandatory legal text to include on the menu according to the local regulations that apply to me.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 94,
+   "titulo": "Sauces and Dressings Without Hidden Allergens",
+   "cuerpo": "Analyze these commercial sauces I use in my restaurant: [LIST OF COMMERCIAL SAUCES/DRESSINGS]. For each one: list of allergens on the label, possible hidden allergens in compound ingredients, an equivalent homemade allergen-free alternative, and how to document the change on the spec sheets of the dishes that use them.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 95,
+   "titulo": "Simplified HACCP Temperature Control",
+   "cuerpo": "Design the simplified HACCP temperature control system for [TYPE OF BUSINESS]. Include: critical control points (receiving, storage, cooking, cooling, holding, and service), the critical limit temperature for each point, measurement frequency, a daily and weekly log sheet, and the action protocol when a point is out of limits.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 96,
+   "titulo": "Managing Food Intolerances in a Restaurant",
+   "cuerpo": "My restaurant receives more and more guests with intolerances (not severe allergies). Design the protocol for efficiently handling the most common intolerances: lactose, fructose, histamine, FODMAP, and sorbitol. For each intolerance: which foods to avoid, current menu adaptations, and how to communicate it to the guest without creating unnecessary alarm.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 97,
+   "titulo": "Legal Labeling for Prepared Products",
+   "cuerpo": "I need to create the legal label for these products made in my production kitchen/kitchen that I sell packaged: [DESCRIPTION OF PRODUCTS]. For each product, generate the mandatory information according to the regulations that apply to me: product name, ingredients (in order by weight), allergen declaration in the format my market requires (US: \"Contains:\" statement; UK/EU: allergens in bold), net weight, expiration/best-before date, storage conditions, business name and address, and directions for use.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 98,
+   "titulo": "Kitchen Hygiene and Cleaning Plan",
+   "cuerpo": "Design the hygiene and cleaning plan for the kitchen of [TYPE OF ESTABLISHMENT]. Include: cleaning frequency for each zone and piece of equipment (daily, weekly, monthly), recommended cleaning and sanitizing products with dilutions and contact times, a cleaning log for audits, and a protocol for verifying cleaning effectiveness.",
+   "apps": [
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 99,
+   "titulo": "Restaurant Business Plan",
+   "cuerpo": "Help me develop the business plan for [RESTAURANT CONCEPT]. Include: executive summary, local market analysis (city: [CITY]), differentiating culinary concept, operating model, marketing plan, cost structure (initial investment, fixed and variable costs), 12-month revenue forecast, and break-even point. Professional format for a bank or investor.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 100,
+   "titulo": "Restaurant SWOT Analysis",
+   "cuerpo": "Carry out the complete SWOT analysis for [RESTAURANT NAME] with this data: [BUSINESS DESCRIPTION, LOCATION, COMPETITION, CURRENT SITUATION]. For each quadrant (Strengths, Weaknesses, Opportunities, Threats) identify at least 5 specific, relevant factors. Close with 3 priority action strategies derived from the analysis.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 101,
+   "titulo": "Operating KPIs for Restaurants",
+   "cuerpo": "Define the key operating KPIs I should monitor monthly in my [TYPE] restaurant. For each KPI: name, calculation formula, industry benchmark, recommended target for my type of business, and how to act if the value is below target. Include: average check, table turnover, RevPASH, occupancy rate, food cost %, and labor cost %.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 102,
+   "titulo": "Feasibility Study for a New Business",
+   "cuerpo": "Carry out the feasibility study for opening a [TYPE OF FOOD & BEVERAGE BUSINESS] in [CITY/NEIGHBORHOOD]. Analyze: potential demand in the area, existing competition, estimated initial investment, monthly operating costs, potential revenue in conservative and optimistic scenarios, estimated payback time, and the main risks of the project.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 103,
+   "titulo": "Staff Schedule Optimization",
+   "cuerpo": "I have a restaurant with the following shifts and workload: [DESCRIPTION OF SCHEDULES AND PEAKS]. I need to optimize the staffing of [NUMBER] employees to reduce labor costs to [%] of sales without lowering service quality. Suggest the optimal shift schedule, the profiles needed per shift, and how to handle demand peaks.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 104,
+   "titulo": "Chain Expansion Plan",
+   "cuerpo": "I have [NUMBER] restaurants in [CITY/REGION] with the concept [DESCRIPTION]. I want to expand to [NEW CITY/COUNTRY]. Design the expansion plan: analysis of the new market, recommended expansion model (company-owned/franchise/joint venture), estimated investment, adaptations of the concept to the new market, an 18-month timeline, and success indicators for the expansion.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 105,
+   "titulo": "Restaurant Franchise: Feasibility",
+   "cuerpo": "I have a restaurant concept [DESCRIPTION] with [NUMBER] successful company-owned locations. Analyze the feasibility of turning it into a franchise: which elements can be franchised, what documentation I need (operations manual, franchisee profile, standard contract), estimated investment for the franchisee, market-rate entry fee and royalties, and first legal steps.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 106,
+   "titulo": "Ghost Kitchen Business Model",
+   "cuerpo": "Design the complete business model for a ghost kitchen in [CITY]. Include: the best culinary concept for delivery (which types of cuisine work best for delivery), delivery platforms to use (multi-platform strategy), equipment investment, operating costs vs. a brick-and-mortar restaurant, optimal delivery radius, and success metrics.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 107,
+   "titulo": "Onboarding for New Kitchen Staff",
+   "cuerpo": "Design the onboarding plan for a new cook at [TYPE OF RESTAURANT]. Plan for the first 4 weeks: goals for each week, skills and knowledge to acquire, assigned mentor and follow-up method, evaluation criteria at the end of the probation period, and a welcome document with the team's values and culture.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 108,
+   "titulo": "Upselling Strategy for Front of House",
+   "cuerpo": "Develop the upselling and cross-selling strategy for the front-of-house team at [RESTAURANT NAME]. Include: non-intrusive suggestion techniques, what to offer and when in the order of service, sales arguments for the 5 highest-margin dishes/drinks, practical training with role-play of situations, and how to measure upselling results per server.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 109,
+   "titulo": "Loyalty Program Management",
+   "cuerpo": "Design a customer loyalty program for [RESTAURANT NAME]. Include: program mechanics (points, tiers, benefits), rewards by tier (new guest, frequent, VIP), recommended management tool, how to communicate the program to guests, and success metrics (retention, visit frequency, average check of program members vs. non-members).",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 110,
+   "titulo": "Restaurant Crisis Management",
+   "cuerpo": "My restaurant is going through a crisis due to [CAUSE: viral negative review/health inspection/supplier failure/employee issue/kitchen accident]. Design the crisis management plan: immediate actions (first 24 hours), internal communication to the team, external communication to guests and media, corrective actions, and a plan to recover reputation and operations.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 111,
+   "titulo": "Food & Beverage Consulting Model",
+   "cuerpo": "I'm a food service consultant and I want to structure my consulting service. Design: the service packages (basic, mid, premium) with content and reference price, a standard work process for a 3-month consulting project, tools and deliverables for each phase, a standard commercial proposal, and how to position myself in my local food service consulting market.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 112,
+   "titulo": "Revenue Management for Restaurants",
+   "cuerpo": "Apply revenue management principles to my restaurant: [TYPE, NUMBER OF TABLES, HOURS]. Analyze: how to maximize RevPASH, meaning revenue per seat-hour available, a dynamic pricing strategy for different times of day/week, optimal management of reservations vs. walk-ins, policies to reduce no-shows, and how to handle overbooking moments.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 113,
+   "titulo": "Stress Management in a Professional Kitchen",
+   "cuerpo": "Act as a coach specialized in the well-being of hospitality professionals. I'm experiencing [STRESS SYMPTOMS/SITUATION] in my job as [POSITION]. The workload is [DESCRIPTION]. Design a personalized stress management plan for the next 30 days: techniques for before service, during high-pressure moments, and post-service recovery.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 114,
+   "titulo": "Team Performance Review",
+   "cuerpo": "Design the semiannual performance review system for the kitchen team at [TYPE OF RESTAURANT]. Include: competencies to evaluate (technical and soft skills), rating scale, evaluation form for the manager and self-evaluation for the employee, feedback interview protocol, and the resulting individual development plan. Ready-to-use format.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 115,
+   "titulo": "Conflict Resolution in the Kitchen Brigade",
+   "cuerpo": "In my kitchen team there is tension between [DESCRIPTION OF CONFLICT: two employees/departments/morning-evening shift]. The situation has lasted [TIME] and is affecting service. Act as a mediator and design: the mediation strategy, questions to understand both sides, a fair solution proposal, and a follow-up plan so the conflict doesn't come back.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 116,
+   "titulo": "Team Motivation in the Slow Season",
+   "cuerpo": "My kitchen team is demotivated during the slow season. The context is: [DESCRIPTION OF THE TEAM AND SITUATION]. Design a motivation plan for the next 2 months that includes: inspiring goals for the team, internal training that takes advantage of the downtime, specific recognition, team activities, and how to communicate the value of the slow season in a positive way.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 117,
+   "titulo": "Assertive Communication with the Team",
+   "cuerpo": "I need to improve communication with my kitchen team. Current situation: [DESCRIPTION OF COMMUNICATION PROBLEMS]. Give me: assertive communication techniques applied to the kitchen environment, how to give negative feedback constructively, how to recognize good work effectively, and specific phrases for difficult situations (serious mistake, poor performance, conflict).",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 118,
+   "titulo": "Internal Team Training Plan",
+   "cuerpo": "Design the annual internal training plan for the team at [TYPE OF RESTAURANT] with [NUMBER] people. Based on the needs identified: [LIST OF AREAS TO IMPROVE]. For each training module: objective, content, duration, who delivers it (internal/external), methodology, and how to evaluate whether the training has had an impact on day-to-day work.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 119,
+   "titulo": "Burnout Prevention in Hospitality",
+   "cuerpo": "The restaurant industry has some of the highest burnout rates. As a chef/manager of [NUMBER] people, design the burnout prevention program for my team. Include: early warning signs to look for, risk factors specific to my context, concrete preventive interventions, a break and vacation policy, and psychological support resources.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 120,
+   "titulo": "Kitchen Talent Retention",
+   "cuerpo": "I have high turnover in my kitchen team: [TURNOVER RATE %]. The main reasons for leaving are: [LIST]. Design a talent retention strategy that goes beyond salary: career path, non-monetary benefits, positive work culture, recognition, autonomy, and continuous learning. With concrete actions and improvement indicators.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 121,
+   "titulo": "Mindfulness for Chefs: Daily Routine",
+   "cuerpo": "Design a mindfulness routine adapted to the reality of a chef or cook. The time available is: before service [X minutes], during service (micro-practices), after service [X minutes]. For each moment: a specific technique adapted to the kitchen context, the goal of the practice, and the expected benefit. A 4-week progression from simplest to deepest.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 122,
+   "titulo": "Positive Leadership in the Kitchen Brigade",
+   "cuerpo": "I want to change my leadership style from hierarchical authority to positive, collaborative leadership while maintaining standards of excellence. My current team: [DESCRIPTION]. Give me: the principles of positive leadership applied to the kitchen, how to make the transition without losing authority, 10 specific behaviors to change starting tomorrow, and how to measure the impact on the team.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 123,
+   "titulo": "Effective Team Meetings (Briefings)",
+   "cuerpo": "Design the ideal 10-minute pre-service briefing format for my kitchen and front-of-house team. Structure: what must be covered (reservations, incidents, daily specials, relevant allergens), how to manage time so it doesn't run over, how to create positive energy before service, and how to incorporate feedback from the previous service constructively.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 124,
+   "titulo": "Managing a Difficult Employee",
+   "cuerpo": "I have an employee [POSITION] with these problematic behaviors: [DESCRIPTION]. They've been on the team for [TIME]. The rest of the team is affected. Design the action plan as a manager: initial feedback conversation (script), improvement plan with measurable goals, 30/60/90-day follow-up, and how to document the process professionally and protect yourself legally.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 125,
+   "titulo": "Work-Life Balance for Hospitality Pros",
+   "cuerpo": "I work in hospitality with [USUAL SCHEDULE]. I have trouble disconnecting and my personal life is suffering. Act as a life coach and design a realistic work-life balance plan for hospitality professionals. Include: strategies for disconnecting between shifts, recovery routines, healthy boundaries with work, and how to protect personal time.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 126,
+   "titulo": "Team Culture in a Restaurant",
+   "cuerpo": "I want to build a strong team culture in my [TYPE] restaurant. Currently the culture is [DESCRIPTION OF CURRENT SITUATION]. Define: the team values (maximum 5, with a description of what each means in daily practice), team rituals that reinforce the culture, how to bring new employees into the culture, and how to protect it when tensions arise.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 127,
+   "titulo": "Researching an Unfamiliar Ingredient",
+   "cuerpo": "Act as a culinary researcher and food scientist. I need all the information about the ingredient [INGREDIENT/PRODUCT NAME]: geographic and historical origin, detailed nutritional composition, relevant bioactive compounds, organoleptic profile (aroma, flavor, texture), suitable preparation techniques, standout producers, and applications in modern cooking.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 128,
+   "titulo": "History and Evolution of a Culinary Technique",
+   "cuerpo": "Research the complete history of the culinary technique [TECHNIQUE NAME: sous vide/fermentation/spherification/smoking/freeze-drying]. Include: historical origin and context, milestones in its development and popularization, the scientific basis behind it, chefs and researchers who have developed it, current applications in fine dining, and future trends of the technique.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 129,
+   "titulo": "Food Trend Analysis",
+   "cuerpo": "Analyze the most relevant food trends for the [TYPE: casual dining/fine dining/pastry/beverages] sector in [YEAR]. For each trend identified: description, why it's emerging now (cultural/social/technological context), examples of chefs or businesses already applying it, how to incorporate it into my business, and the estimated lifespan of the trend.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 130,
+   "titulo": "Regional Cuisine: Deep Research",
+   "cuerpo": "Research in depth the traditional cuisine of [COUNTRY/REGION]. Include: products with protected designation of origin or protected geographical indication, emblematic dishes with historical origin, native culinary techniques, optimal seasons for the main products, contemporary chefs who are references for that cuisine, and how to reinterpret it in a modern way.",
+   "apps": [
+    "Spanish Cuisine",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 131,
+   "titulo": "Fermentation Science: Theoretical Foundations",
+   "cuerpo": "Act as a microbiologist and fermentation chef. Explain the complete science behind the fermentation of [PRODUCT: milk/vegetables/meats/fish/beverages]. Include: microorganisms involved, the biochemical process step by step, variables that control fermentation (pH, temperature, salt, time), critical food safety factors, and how to apply this knowledge in specific culinary applications.",
+   "apps": [
+    "Fermentus Pre AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 132,
+   "titulo": "Cuisine of a Country: Complete Guide",
+   "cuerpo": "Develop the complete culinary guide to [COUNTRY/REGION OF THE WORLD]. Include: the geographic and climatic context that defines the cuisine, essential native ingredients, traditional cooking techniques, emblematic national dishes (with simplified recipes), hard-to-find ingredients and their substitutes, and how to fuse this cuisine with Mediterranean cooking.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 133,
+   "titulo": "Molecular Gastronomy: Scientific Foundations",
+   "cuerpo": "Explain the scientific basis of the following molecular gastronomy applications that I want to implement: [TECHNIQUE 1: agar gelification/basic spherification/lecithin foams]. For each technique: scientific principle, active ingredients with exact doses (per liter/kg), step-by-step process with critical variables, troubleshooting for common problems, and applications on the menu.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 134,
+   "titulo": "Nutrition Applied to Professional Cooking",
+   "cuerpo": "Act as a nutritionist and chef. Design a daily set menu of [NUMBER OF COURSES] for [TYPE OF ESTABLISHMENT: institutional/healthy restaurant/sports center] that meets: calorie requirements of [X] kcal, macronutrient distribution [%P/%C/%F], priority micronutrients [LIST], and that is at the same time flavorful and visually appealing.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 135,
+   "titulo": "Research on New Ingredients",
+   "cuerpo": "Research the most promising emerging ingredients in professional food service in [YEAR]: alternative proteins, seaweeds, exotic ferments, little-known spices, etc. For each ingredient: origin, availability in my local market, nutritional and organoleptic properties, approximate price, supplier where to source it, and 2-3 applications in restaurant cooking.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 136,
+   "titulo": "Culinary Sustainability: Theoretical Framework",
+   "cuerpo": "Develop the theoretical and practical framework for sustainability applied to my [TYPE] restaurant. Include: the pillars of culinary sustainability (product, energy, water, waste, social), relevant certifications (Green Michelin Star, Green Restaurant Association, etc.), concrete actions ranked by impact and implementation cost, and how to communicate it to guests authentically.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 137,
+   "titulo": "Dictionary of Technical Kitchen Terms",
+   "cuerpo": "Act as Gastro Lexicum and create the complete technical glossary for the [SAUCES/PASTRY/BUTCHERY/FISH STATION/COLD KITCHEN] station. Include: 30 essential technical terms, a precise definition of each, a practical example of application in a professional kitchen, and common misinterpretations. Ordered from most basic to most advanced.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 138,
+   "titulo": "Competitive Analysis for Restaurants",
+   "cuerpo": "Carry out the competitive analysis of the 5 main competitors of [RESTAURANT NAME] in [CITY/AREA]. For each competitor: type of cuisine and concept, price range, perceived strengths and weaknesses, digital communication strategy, points of differentiation. Conclude with the differentiation opportunities for my restaurant.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 139,
+   "titulo": "Market Research for a New Concept",
+   "cuerpo": "I want to open a new restaurant concept based on [CONCEPT DESCRIPTION]. Before investing, I need to research: size of the target market in [CITY], direct and indirect competition, ideal customer profile with their spending behavior, barriers to entry, and critical success factors for this type of business. Conclude with a feasibility traffic light.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 140,
+   "titulo": "History of Gastronomy: Timeline",
+   "cuerpo": "Create the timeline of the most important milestones in world gastronomy from the 19th century to today. For each milestone: date, what happened, who the protagonist was, impact on global gastronomy, and the legacy that persists today. Include: Escoffier and the codification of classic cuisine, Nouvelle Cuisine, the Spanish culinary revolution, elBulli as a laboratory, and the era of the chef-artist.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 141,
+   "titulo": "Annual Menu Strategy",
+   "cuerpo": "I'm the executive chef of a restaurant group with [NUMBER] restaurants. I need to design the annual menu strategy aligned with: market trends, product seasonality, food cost targets of [%], and differentiation between the group's different concepts. Give me the annual menu planning framework with key change dates and the new dish development process.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 142,
+   "titulo": "Multi-Location Kitchen Management",
+   "cuerpo": "As the executive chef responsible for [NUMBER] kitchens in different locations, I need to standardize processes without losing the identity of each location. Design: the standardized recipe spec sheet system, communication protocol between the chefs at each location, a monthly supervision visit (what to check, how to document), and uniform quality metrics for all locations.",
+   "apps": [
+    "Waste GenCal",
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 143,
+   "titulo": "Presenting a New Menu to Investors",
+   "cuerpo": "I have to present the new menu proposal to the group's investor partners. I need an executive document that includes: culinary justification for the changes, expected impact on food cost (from [%] to [%]), projected average check, competitive analysis that justifies the positioning, and an implementation timeline. Professional tone for non-cooks.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 144,
+   "titulo": "Mentoring a Talented Junior Chef",
+   "cuerpo": "I'm mentoring a chef who is [AGE] years old with [DESCRIPTION OF TALENT AND AREAS FOR IMPROVEMENT]. Design the 6-month mentoring plan to develop their potential: goals per month, learning experiences (stages, special projects, gradual responsibilities), structured monthly feedback, and a roadmap toward their next professional role.",
+   "apps": [
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 145,
+   "titulo": "Developing a Brand's Culinary Identity",
+   "cuerpo": "As an executive chef I need to define and document the culinary identity of the group [NAME]. Include: culinary DNA (culinary values, forbidden and essential ingredients, presentation style), cornerstone recipes that represent the brand, signature techniques, the group's internal culinary vocabulary, and how to carry this identity into every new dish that gets developed.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 146,
+   "titulo": "Kitchen Budget Management",
+   "cuerpo": "I'm an executive chef and I must manage the annual kitchen budget of [AMOUNT] for [NUMBER] restaurants. Help me: distribute the budget by category (raw materials, labor, equipment, training, R&D), set up monthly variance alerts, negotiate cost reductions without affecting quality, and present the budget to the management committee.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 147,
+   "titulo": "Culinary R&D: Innovation Project",
+   "cuerpo": "Lead the group's culinary R&D project for the next season. The research focus is [TOPIC: fermentation/alternative proteins/zero-waste cooking/influences of a culture]. Design: project methodology, R&D session calendar, how to document the results, the process for selecting dishes for the menu, and how to communicate the innovation to the press.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Food Pairing AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 148,
+   "titulo": "Collaborating with Other Chefs: Pop-up",
+   "cuerpo": "I'm going to organize a collaboration pop-up dinner with chef [NAME] from [RESTAURANT]. I need to design: the narrative concept of the dinner, how to divide the dishes between the two chefs harmoniously, a press kit, social media communication for the event, kitchen logistics for a night with a mixed brigade, and the menu price with a profitability calculation.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 149,
+   "titulo": "Selecting and Equipping a New Kitchen",
+   "cuerpo": "I'm going to equip the kitchen of a [TYPE OF RESTAURANT] with a capacity of [NUMBER] covers/day. Design: the list of necessary equipment (by station: cold, hot, pastry, dishwashing) with technical specifications, a functional kitchen layout based on workflow, criteria for selecting brands and suppliers, estimated budget, and an implementation plan.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 150,
+   "titulo": "Culinary Style Guide for the Team",
+   "cuerpo": "Create the culinary style manual for the restaurant group [NAME] so the whole kitchen team has a clear reference. Include: the group's culinary philosophy (in 10 principles), product quality standards (how to select it, how to verify it), forbidden and preferred techniques, presentation and plating style with examples, and the values that guide creative decisions.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,879 @@
+{
+ "portada": [
+  {
+   "estilo": "B-36.0-#1a1a1a",
+   "texto": "AI CHEF PRO"
+  },
+  {
+   "estilo": "B-24.0-#1d3a5e",
+   "texto": "PRO PROMPTS eBOOK"
+  },
+  {
+   "estilo": "I-12.0-#666666",
+   "texto": "300 prompts profesionales para el mundo de la gastronomía"
+  },
+  {
+   "estilo": "B-11.0-#1a1a1a",
+   "texto": "300 Prompts · 3 Bloques · 20 Categorías · 55+ Apps"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "Para chefs, gerentes, pasteleros, panaderos, bartenders, chocolateros,"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "sommeliers, dueños de restaurante, caterers, food truckers y todos los profesionales del sector."
+  },
+  {
+   "estilo": "B-12.0-#1a1a1a",
+   "texto": "aichef.pro"
+  }
+ ],
+ "bienvenida": [
+  {
+   "estilo": "B-16.0-#1a1a1a",
+   "texto": "Bienvenido al Pro Prompts eBook"
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "Este eBook contiene 300 prompts profesionales listos para usar en AI Chef Pro. Un prompt bien construido multiplica el valor de cualquier herramienta de IA. Aquí encontrarás prompts organizados en 3 bloques estratégicos, diseñados para cubrir todas las situaciones que se presentan en el día a día del mundo de la gastronomía."
+  },
+  {
+   "estilo": "B-13.0-#1a1a1a",
+   "texto": "Estructura del eBook"
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "BLOQUE A — Categorías Temáticas (#001 – #140)"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "10 categorías × 14 prompts. Cocina Creativa, Gestión y Costes, Catering, Marketing Digital, Pastelería, Food Pairing, Alérgenos, Gestión de Negocio, Liderazgo y Equipos, Deep Research."
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "BLOQUE B — Perfiles Profesionales (#141 – #240)"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "10 perfiles × 10 prompts. Chef Ejecutivo, Gerente, Pastelero, Panadero, Bartender, Sommelier, Chocolatero, Dueño/Emprendedor, Chef de Catering, Consultor Gastronómico."
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "BLOQUE C — Tipos de Negocio + Apps (#241 – #300)"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "7 tipos de negocio + apps especializadas de la suite. Restaurante, Hotel F&B, Dark Kitchen, Obrador, Bar y Coctelería, Food Truck, Apps Especializadas."
+  },
+  {
+   "estilo": "B-13.0-#1a1a1a",
+   "texto": "Cómo usar este eBook"
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "1. Localiza tu perfil o categoría en el índice de cada bloque. 2. Copia el prompt directamente en la app correspondiente de AI Chef Pro. 3. Sustituye los campos en [CORCHETES] con tu información específica. 4. Experimenta: ajusta el tono, extiende la petición o combina prompts. 5. Guarda tus mejores resultados — son activos de tu negocio."
+  }
+ ],
+ "cierre": [
+  {
+   "estilo": "B-18.0-#1a1a1a",
+   "texto": "¡Gracias por elegir AI Chef Pro!"
+  },
+  {
+   "estilo": "R-11.0-#666666",
+   "texto": "Tienes en tus manos 300 herramientas para transformar tu trabajo gastronómico."
+  },
+  {
+   "estilo": "I-11.0-#1d3a5e",
+   "texto": "El único límite es tu curiosidad."
+  },
+  {
+   "estilo": "B-14.0-#1a1a1a",
+   "texto": "aichef.pro"
+  }
+ ],
+ "bloques": [
+  {
+   "etiqueta": "BLOQUE A",
+   "titulo": "Categorías Temáticas",
+   "rango": "#001 – #140",
+   "intro": "10 grandes categorías temáticas que cubren todas las áreas del trabajo culinario y gastronómico profesional. Cada categoría incluye 14 prompts listos para usar."
+  },
+  {
+   "etiqueta": "BLOQUE B",
+   "titulo": "Perfiles Profesionales",
+   "rango": "#141 – #240",
+   "intro": "10 perfiles profesionales del sector gastronómico. Cada perfil incluye 10 prompts diseñados específicamente para los retos y responsabilidades de ese rol."
+  },
+  {
+   "etiqueta": "BLOQUE C",
+   "titulo": "Tipos de Negocio + Apps",
+   "rango": "#241 – #300",
+   "intro": "Prompts específicos por tipo de negocio gastronómico y por apps especializadas de la suite AI Chef Pro. Diseñados para situaciones concretas de cada modelo de negocio."
+  }
+ ],
+ "secciones": [
+  {
+   "encabezado": "1. Cocina Creativa y Recetas de Autor",
+   "rango": "Prompts #001 – #014"
+  },
+  {
+   "encabezado": "2. Gestión, Costes y Mermas",
+   "rango": "Prompts #015 – #028"
+  },
+  {
+   "encabezado": "3. Catering y Eventos Gastronómicos",
+   "rango": "Prompts #029 – #042"
+  },
+  {
+   "encabezado": "4. Marketing Digital y Redes Sociales",
+   "rango": "Prompts #043 – #056"
+  },
+  {
+   "encabezado": "5. Pastelería, Panadería y Chocolatería",
+   "rango": "Prompts #057 – #070"
+  },
+  {
+   "encabezado": "6. Food Pairing y Maridaje",
+   "rango": "Prompts #071 – #084"
+  },
+  {
+   "encabezado": "7. Alérgenos y Seguridad Alimentaria",
+   "rango": "Prompts #085 – #098"
+  },
+  {
+   "encabezado": "8. Gestión de Negocio y Rentabilidad",
+   "rango": "Prompts #099 – #112"
+  },
+  {
+   "encabezado": "9. Liderazgo, Equipos y Bienestar",
+   "rango": "Prompts #113 – #126"
+  },
+  {
+   "encabezado": "10. Deep Research e Investigación Gastronómica",
+   "rango": "Prompts #127 – #140"
+  },
+  {
+   "encabezado": "1. Chef Ejecutivo",
+   "rango": "Prompts #141 – #150"
+  },
+  {
+   "encabezado": "2. Gerente / Manager de Restaurante",
+   "rango": "Prompts #151 – #160"
+  },
+  {
+   "encabezado": "3. Pastelero / Repostero Profesional",
+   "rango": "Prompts #161 – #170"
+  },
+  {
+   "encabezado": "4. Panadero Artesano",
+   "rango": "Prompts #171 – #180"
+  },
+  {
+   "encabezado": "5. Bartender / Mixólogo",
+   "rango": "Prompts #181 – #190"
+  },
+  {
+   "encabezado": "6. Sommelier",
+   "rango": "Prompts #191 – #200"
+  },
+  {
+   "encabezado": "7. Chocolatero Artesano",
+   "rango": "Prompts #201 – #210"
+  },
+  {
+   "encabezado": "8. Dueño / Emprendedor Gastronómico",
+   "rango": "Prompts #211 – #220"
+  },
+  {
+   "encabezado": "9. Chef de Catering y Eventos",
+   "rango": "Prompts #221 – #230"
+  },
+  {
+   "encabezado": "10. Consultor Gastronómico",
+   "rango": "Prompts #231 – #240"
+  },
+  {
+   "encabezado": "1. Restaurante Independiente",
+   "rango": "Prompts #241 – #247"
+  },
+  {
+   "encabezado": "2. Restaurante Casual y Bistró",
+   "rango": "Prompts #248 – #249"
+  },
+  {
+   "encabezado": "3. Hotel y Restauración Hotelera",
+   "rango": "Prompts #250 – #256"
+  },
+  {
+   "encabezado": "4. Dark Kitchen / Delivery",
+   "rango": "Prompts #257 – #263"
+  },
+  {
+   "encabezado": "5. Pastelería y Obrador",
+   "rango": "Prompts #264 – #269"
+  },
+  {
+   "encabezado": "6. Bar y Coctelería",
+   "rango": "Prompts #270 – #275"
+  },
+  {
+   "encabezado": "7. Food Truck",
+   "rango": "Prompts #276 – #281"
+  },
+  {
+   "encabezado": "8. Apps Especializadas: Fermentación",
+   "rango": "Prompts #282 – #284"
+  },
+  {
+   "encabezado": "9. Apps Especializadas: Cocinas del Mundo",
+   "rango": "Prompts #285 – #290"
+  },
+  {
+   "encabezado": "10. Apps Especializadas: Herramientas Técnicas",
+   "rango": "Prompts #291 – #294"
+  },
+  {
+   "encabezado": "11. Apps Especializadas: Contenido y RRSS",
+   "rango": "Prompts #295 – #297"
+  },
+  {
+   "encabezado": "12. Apps Especializadas: Conceptos de Negocio",
+   "rango": "Prompts #298 – #299"
+  },
+  {
+   "encabezado": "13. Apps Especializadas: Visión de Futuro",
+   "rango": "Prompts #300 – #300"
+  }
+ ],
+ "prompts": [
+  {
+   "n": 1,
+   "titulo": "Receta de Autor con Producto Local",
+   "cuerpo": "Actúa como chef de alta cocina con 15 años de experiencia en cocina de producto. Quiero desarrollar una receta de autor usando [PRODUCTO LOCAL/INGREDIENTE ESTRELLA]. El plato debe reflejar [FILOSOFÍA CULINARIA: temporada/km0/vanguardia]. Incluye: historia del plato, ingredientes con cantidades exactas para 4 pax, elaboración paso a paso, emplatado sugerido y maridaje recomendado.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Cocina Española AI"
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Reinterpretación de un Clásico",
+   "cuerpo": "Eres un chef creativo especializado en cocina de vanguardia. Toma el plato clásico [NOMBRE DEL PLATO CLÁSICO] y reinterprétalO con técnicas modernas. Mantén la esencia del sabor original pero transforma: textura, presentación y técnica de elaboración. Dame 3 versiones distintas: una minimalista, una deconstructivista y una con fusión cultural [CULTURA].",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "Menú Degustación de 7 Pasos",
+   "cuerpo": "Diseña un menú degustación de 7 pasos para un restaurante [TIPO/CONCEPTO]. Cada plato debe tener coherencia narrativa como si contara una historia gastronómica sobre [TEMA: un viaje, una estación, un recuerdo]. Incluye para cada paso: nombre poético del plato, ingredientes principales, técnica clave y tiempo estimado de elaboración en cocina.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Receta Zero Waste de Autor",
+   "cuerpo": "Actúa como chef especializado en cocina sostenible y zero waste. Tengo estos ingredientes completos disponibles: [LISTA DE INGREDIENTES]. Crea una receta de autor aprovechando el 100% de cada ingrediente, incluyendo partes que normalmente se descartan (pieles, pepitas, tallos, huesos). Explica qué parte de cada ingrediente se usa y para qué preparación.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Receta por Técnica Específica",
+   "cuerpo": "Soy chef y quiero dominar la técnica de [TÉCNICA: esferificación/gelificación/emulsificación/fermentación/ahumado en frío]. Diseña una receta completa que tenga esta técnica como protagonista. Incluye: explicación científica de la técnica, ingredientes con gramajes exactos, proceso paso a paso con temperaturas y tiempos críticos, errores comunes a evitar y cómo presentarlo en carta.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Fusión Cultural con Base Científica",
+   "cuerpo": "Combina la cocina [CULTURA 1] con la cocina [CULTURA 2] creando un plato de fusión que tenga sentido gastronómico, no solo estético. Argumenta por qué estos dos mundos culinarios son compatibles desde el punto de vista de perfiles aromáticos compartidos. Desarrolla la receta completa con ingredientes de ambas culturas y técnicas de preparación mixtas.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Receta Plant-Based de Alta Cocina",
+   "cuerpo": "Eres chef especializado en cocina plant-based de alta gama. Crea un plato principal vegano de restaurante fine dining usando [VEGETAL/LEGUMBRE/SETA PRINCIPAL]. El plato debe ser satisfactorio, complejo en sabores y visualmente impactante. Incluye técnicas de potenciación del sabor umami vegetal, sustitutos proteicos y presentación de nivel estrella Michelin.",
+   "apps": [
+    "VegChef Plant-Based",
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Receta de Temporada con Storytelling",
+   "cuerpo": "Crea una receta para la temporada de [TEMPORADA/MES] usando los mejores productos de mercado de esa época. Desarrolla también la historia del plato para incluir en carta: narrativa de máximo 80 palabras que evoque el origen del ingrediente, el productor local (ficticio pero creíble) y la emoción que busca transmitir el plato al comensal.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Receta para Menú Precio Fijo",
+   "cuerpo": "Diseña un menú precio fijo (prix-fixe) de [NÚMERO] platos para un restaurante con ticket medio de [PRECIO] euros por persona. El food cost objetivo es del [%]. Proporciona la receta completa de cada plato con escandallo básico por ración, indicando ingrediente, cantidad en gramos y coste estimado por plato.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Aperitivos y Snacks de Autor",
+   "cuerpo": "Crea una serie de 6 aperitivos/snacks de autor para el inicio de un menú en [TIPO DE RESTAURANTE]. Deben ser bocados de 2-3 cm, servidos en un solo mordisco, visualmente sorprendentes. Para cada uno: nombre, ingrediente principal, técnica, temperatura de servicio y descripción verbal para que el equipo de sala los presente correctamente.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Receta de Salsas Madre y Derivados",
+   "cuerpo": "Desarrolla la receta de la salsa madre [NOMBRE DE SALSA: española/velouté/bechamel/holandesa/tomate] con sus proporciones exactas y técnica de elaboración clásica. A partir de ella, genera 5 salsas derivadas con sus modificaciones específicas. Incluye aplicaciones culinarias de cada derivado y conservación recomendada.",
+   "apps": [
+    "Cocina Creativa AI",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Mise en Place Creativa para Servicio",
+   "cuerpo": "Soy chef de cocina en un restaurante con [NÚMERO] servicios al día. Diseña la mise en place completa para preparar el plato [NOMBRE DEL PLATO] en tiempo récord durante el servicio. Organiza por orden de anticipación: preparaciones del día anterior, de la mañana y del momento. Incluye tiempos estimados y puntos de control de calidad.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Receta con Restricciones Múltiples",
+   "cuerpo": "Un comensal tiene las siguientes restricciones alimentarias: [LISTA: sin gluten/sin lactosa/sin huevo/vegano/sin frutos secos]. Adapta la receta de [PLATO ORIGINAL] para que sea apta para este perfil sin perder sabor, textura ni presentación. Indica claramente los sustitutos utilizados y cómo cambia el proceso de elaboración.",
+   "apps": [
+    "Cocina Creativa AI",
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Receta Inspiration Board",
+   "cuerpo": "Actúa como director creativo gastronómico. Basándote en los siguientes inputs conceptuales: color [COLOR], emoción [EMOCIÓN], estación [ESTACIÓN], recuerdo de infancia [RECUERDO], desarrolla una receta de autor que sintetice todos estos elementos. Explica cómo cada ingrediente o técnica representa cada uno de los inputs dados.",
+   "apps": [
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Escandallo Profesional Completo",
+   "cuerpo": "Actúa como controller gastronómico experto. Necesito el escandallo completo del plato [NOMBRE DEL PLATO]. Para cada ingrediente indica: cantidad bruta en gramos, porcentaje de merma según tipo de procesado, cantidad neta resultante, coste por kg/unidad, y coste neto por ración. Al final calcula el food cost total y el precio de venta sugerido con margen del [%].",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 16,
+   "titulo": "Análisis de Mermas por Ingrediente",
+   "cuerpo": "Necesito los porcentajes de merma exactos para los siguientes ingredientes en las condiciones que indico: [INGREDIENTE 1] con proceso [PROCESO: pelado/fileteado/deshuesado], [INGREDIENTE 2] con proceso [PROCESO], [INGREDIENTE 3] con proceso [PROCESO]. Para cada uno indica el porcentaje de merma estándar, las causas de variación y cómo optimizar el rendimiento.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 17,
+   "titulo": "Optimización de Food Cost de Carta",
+   "cuerpo": "Tengo una carta con un food cost promedio del [%] y necesito reducirlo al [%] sin bajar la calidad percibida. Analiza estas categorías de platos: [ENTRANTES/PRINCIPALES/POSTRES] con sus precios de venta actuales. Sugiere qué ingredientes sustituir, qué porciones ajustar y qué platos de alto coste podrían tener versiones alternativas más rentables.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 18,
+   "titulo": "Plan de Aprovechamiento de Subproductos",
+   "cuerpo": "En mi cocina genero los siguientes subproductos semanalmente: [LISTA DE SUBPRODUCTOS: espinas de pescado/cáscaras/recortes de carne/etc.]. Diseña un plan de aprovechamiento completo para convertir cada subproducto en un elemento de valor: fondos, aceites infusionados, crujientes, polvos, etc. Incluye receta básica y aplicación en carta para cada uno.",
+   "apps": [
+    "Mermas GenCal",
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 19,
+   "titulo": "Ingeniería de Menú Matricial",
+   "cuerpo": "Aplica la metodología de ingeniería de menú (matriz estrellas/caballos/vacas/perros) a mi carta actual. Tengo estos platos con sus datos de ventas del último mes y coste: [LISTA DE PLATOS CON VENTAS Y COSTE CADA UNO]. Clasifica cada plato en su cuadrante, explica el razonamiento y recomienda acciones concretas para cada categoría.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 20,
+   "titulo": "Presupuesto de Materia Prima Mensual",
+   "cuerpo": "Soy el chef de un restaurante con [NÚMERO] cubiertos diarios y [NÚMERO] días de apertura al mes. El ticket medio es de [PRECIO] euros y el food cost objetivo es del [%]. Calcula el presupuesto mensual de materia prima y desglósalo en categorías: carnes, pescados, verduras, lácteos, bebidas y otros. Incluye margen de seguridad del [%] para imprevistos.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 21,
+   "titulo": "Análisis de Rentabilidad por Plato",
+   "cuerpo": "Calcula la rentabilidad real de estos platos de mi carta, considerando no solo el coste de ingredientes sino también el coste de mano de obra por tiempo de elaboración: [PLATO 1: ingredientes, tiempo de prep, precio venta], [PLATO 2], [PLATO 3]. Incluye margen de contribución real y recomendación de precio óptimo.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 22,
+   "titulo": "Receta Estándar para Estandarización",
+   "cuerpo": "Redacta la ficha técnica estandarizada del plato [NOMBRE DEL PLATO] para que cualquier miembro de mi equipo lo elabore de forma idéntica. La ficha debe incluir: foto de presentación final (descripción detallada), ingredientes con gramajes exactos por ración y por 10 raciones, proceso de elaboración numerado, temperatura de servicio, vajilla a usar y coste actualizado.",
+   "apps": [
+    "Mermas GenCal",
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 23,
+   "titulo": "Control de Inventario con IA",
+   "cuerpo": "Diseña un sistema de control de inventario para una cocina de [TIPO DE NEGOCIO] con [NÚMERO] empleados. Incluye: categorías de productos a inventariar, frecuencia de conteo recomendada, umbrales de reorden para los 20 productos más utilizados, hoja de registro simplificada y protocolo de alerta cuando el stock baje del mínimo. Formato práctico para imprimir y usar en cocina.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 24,
+   "titulo": "Negociación con Proveedores",
+   "cuerpo": "Actúa como asesor de compras gastronómicas. Necesito negociar mejores condiciones con mi proveedor de [CATEGORÍA: carnes/pescados/frutas y verduras/lácteos]. Mi volumen de compra mensual es de [CANTIDAD/IMPORTE]. Redacta un argumentario de negociación, los puntos clave a negociar (precio, plazos, exclusividades, descuentos por volumen) y un email profesional para abrir la negociación.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 25,
+   "titulo": "Reducción de Desperdicio Alimentario",
+   "cuerpo": "Mi restaurante genera actualmente [KG/SEMANA] de desperdicio alimentario. Los principales desperdicios son: [LISTA]. Diseña un plan de reducción de desperdicios en 3 fases (30, 60, 90 días) con acciones concretas, responsables de cada acción y métricas de seguimiento. Incluye cálculo del ahorro económico potencial.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 26,
+   "titulo": "Pricing Estratégico de Carta",
+   "cuerpo": "Ayúdame a revisar el pricing de mi carta. Mis datos: tipo de restaurante [TIPO], zona geográfica [CIUDAD/ZONA], competencia directa con precio medio de [PRECIO], mis costes laborales representan el [%] de facturación. Analiza estos [NÚMERO] platos con sus costes actuales y sugiere el precio de venta óptimo usando las metodologías: multiplicador de coste, valor percibido y precio de mercado.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 27,
+   "titulo": "APPCC Simplificado para Cocina",
+   "cuerpo": "Diseña los puntos críticos de control APPCC para el proceso de elaboración de [TIPO DE PLATO/PREPARACIÓN: carpaccio/tartar/postres con huevo crudo/ahumados]. Incluye: peligros identificados en cada etapa, límites críticos, sistema de vigilancia, medidas correctoras y registro documentado. Formato simple y visual para usar en cocina.",
+   "apps": [
+    "ID Alérgenos",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 28,
+   "titulo": "Optimización de Pedidos Semanales",
+   "cuerpo": "Tengo el menú de la semana siguiente con estos platos: [LISTA DE PLATOS]. Mis raciones estimadas por día son: [LUNES: X, MARTES: Y...]. Genera la lista de pedido optimizada a proveedores, agrupada por categorías y proveedor, con las cantidades exactas necesarias más un [%] de margen. Indica qué se puede preparar con anticipación para optimizar la cadena de frío.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 29,
+   "titulo": "Propuesta de Menú para Boda",
+   "cuerpo": "Diseña una propuesta de menú completo para una boda de [NÚMERO] invitados con presupuesto de [PRECIO] euros por persona. El estilo del evento es [ESTILO: clásico/bohemio/rústico/moderno]. El 20% de los invitados tienen restricciones: [LISTA]. Incluye: cóctel de bienvenida, primer plato, segundo plato, postre y mesa dulce. Con presentación para el cliente y desglose de coste.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 30,
+   "titulo": "Logística de Cocina para Gran Evento",
+   "cuerpo": "Soy el chef responsable de un evento de catering para [NÚMERO] comensales. El menú acordado es [DESCRIPCIÓN BREVE]. El evento es el [FECHA] en [TIPO DE ESPACIO]. Crea el plan de producción completo: cronograma de preparaciones (D-3, D-2, D-1, día del evento por horas), lista de equipamiento necesario, brigada mínima recomendada y puntos críticos de temperatura y seguridad alimentaria.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 31,
+   "titulo": "Presupuesto de Catering Detallado",
+   "cuerpo": "Necesito elaborar el presupuesto detallado para un servicio de catering: [DESCRIPCIÓN DEL EVENTO]. Desglosando: coste de materia prima, personal (horas × perfil), alquiler de equipamiento/vajilla, transporte/desplazamientos, materiales desechables/presentación, margen de beneficio del [%] y IVA. Presenta el presupuesto en formato profesional para enviar al cliente.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 32,
+   "titulo": "Menú de Catering Empresarial",
+   "cuerpo": "Diseña 3 propuestas de menú para un evento corporativo de [EMPRESA/SECTOR] con [NÚMERO] asistentes. Perfil del comensal: ejecutivos entre 35-55 años, almuerzo de trabajo de 2 horas. Las propuestas deben ser: BÁSICA (económica y eficiente), MEDIA (equilibrio calidad-precio) y PREMIUM (alta representación). Incluye montaje recomendado para cada opción.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 33,
+   "titulo": "Cóctel de Bienvenida Temático",
+   "cuerpo": "Diseña el cóctel de bienvenida para un evento temático basado en [TEMA: vendimia/mediterráneo/años 70/España en el mundo]. Incluye: 8-10 piezas de finger food con recetas breves, 2 cócteles signature sin alcohol y 2 con alcohol relacionados con el tema, presentación y decoración del espacio coherente con la temática y timing recomendado de servicio.",
+   "apps": [
+    "Catering AI+",
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 34,
+   "titulo": "Gestión de Alérgenos en Eventos Masivos",
+   "cuerpo": "Tengo un catering para [NÚMERO] personas donde el [%] tiene restricciones alimentarias diversas. Crea el protocolo completo de gestión de alérgenos para el evento: identificación de comensales con restricciones, sistema de bandejas/platos diferenciados, comunicación al equipo de sala, rotulación en bufé y protocolo de emergencia si hay reacción alérgica.",
+   "apps": [
+    "Catering AI+",
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 35,
+   "titulo": "Bufé Internacional para Hotel",
+   "cuerpo": "Diseña el bufé internacional de desayuno/almuerzo/cena para un hotel [CATEGORÍA] con [NÚMERO] habitaciones. El perfil de huéspedes es: [DESCRIPCIÓN]. Incluye rotación semanal de los elementos del bufé para que los clientes con estancias largas no se repitan, considerando: variedad cultural, rentabilidad por metro lineal de exposición y rotación de género.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 36,
+   "titulo": "Food Truck para Evento Especial",
+   "cuerpo": "Diseña el concepto gastronómico completo para llevar mi food truck al evento [TIPO DE EVENTO: festival/feria/mercado navideño/evento deportivo]. El espacio es de [M2] y la afluencia estimada es de [NÚMERO] personas en [HORAS]. Incluye: menú reducido y ejecutable (4-6 productos), precio de venta, coste estimado, equipamiento necesario y estrategia de visibilidad en el evento.",
+   "apps": [
+    "Food Truck AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 37,
+   "titulo": "Menú Navideño para Empresa",
+   "cuerpo": "Diseña el menú de la cena/comida de empresa navideña para [NÚMERO] personas con presupuesto de [PRECIO] euros por persona. El espacio es [DESCRIPCIÓN]. El menú debe tener espíritu festivo sin ser excesivamente caro. Incluye opción sin alcohol en cada paso, adaptación para vegetarianos del [%] del grupo y propuesta de decoración de mesa acorde.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 38,
+   "titulo": "Check-List Pre-Servicio de Catering",
+   "cuerpo": "Genera el check-list operativo completo para el día de un evento de catering de [TIPO]. Organizado por fases: 4 horas antes, 2 horas antes, 1 hora antes, 30 minutos antes, durante el servicio y cierre/desmontaje. Incluye: control de temperatura de alimentos, disposición del espacio, confirmación de cantidades, estado del personal y equipo de respaldo.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 39,
+   "titulo": "Rentabilidad de Servicios de Catering",
+   "cuerpo": "Analiza la rentabilidad de mis últimos 3 eventos de catering: [EVENTO 1: tipo, personas, facturación, costes reales], [EVENTO 2], [EVENTO 3]. Calcula el margen neto de cada uno, identifica dónde se han desviado los costes respecto al presupuesto inicial y proporciona 5 recomendaciones concretas para mejorar la rentabilidad en futuros eventos similares.",
+   "apps": [
+    "Catering AI+",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 40,
+   "titulo": "Carta de Vinos para Evento",
+   "cuerpo": "Diseña la selección de vinos para un evento de [TIPO] con menú [DESCRIPCIÓN]. Presupuesto por botella: entre [PRECIO MÍNIMO] y [PRECIO MÁXIMO] euros. Incluye: 2 blancos, 2 tintos, 1 rosado, 1 espumoso para brindis. Para cada vino indica: denominación de origen, varietal, maridaje específico con el plato del menú y precio de coste aproximado.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 41,
+   "titulo": "Protocolo de Devoluciones y Quejas en Catering",
+   "cuerpo": "Redacta el protocolo profesional de gestión de incidencias para servicios de catering. Incluye procedimiento para: plato que llega frío, contaminación cruzada detectada en evento, faltante de cantidad de producto, queja por calidad de un plato específico, cliente insatisfecho con presentación general. Para cada caso: respuesta inmediata, solución, seguimiento y compensación.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 42,
+   "titulo": "Propuesta Comercial de Catering",
+   "cuerpo": "Redacta una propuesta comercial profesional para el servicio de catering de [EVENTO: tipo, fecha, personas]. La propuesta debe incluir: presentación del servicio, menú detallado, condiciones del servicio, personal incluido, política de cancelación, forma de pago y diferenciadores respecto a la competencia. Estilo formal pero cercano, orientado a cerrar la venta.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 43,
+   "titulo": "Post de Instagram para Plato Estrella",
+   "cuerpo": "Actúa como copywriter gastronómico especializado en redes sociales. Escribe el post de Instagram para presentar [NOMBRE DEL PLATO] de mi restaurante. Estilo de comunicación: [TONO: elegante/desenfadado/emocional/técnico]. Incluye: 3 versiones del caption (corta 50 palabras, media 100 palabras, larga 200 palabras), 15 hashtags segmentados por alcance y el texto para las Stories de presentación.",
+   "apps": [
+    "InstaFlow AI Pro",
+    "Gastro Calendar"
+   ]
+  },
+  {
+   "n": 44,
+   "titulo": "Calendario de Contenidos Mensual",
+   "cuerpo": "Crea el calendario de contenidos para redes sociales de [NOMBRE DEL NEGOCIO] para el mes de [MES/AÑO]. Tipo de negocio: [DESCRIPCIÓN]. Incluye: fecha, plataforma (Instagram/Facebook/TikTok/Pinterest), tipo de contenido (reels/carrusel/foto/stories), tema del post, call to action y objetivo (engagement/venta/branding/educación). Formato tabla para 30 días.",
+   "apps": [
+    "Gastro Calendar",
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 45,
+   "titulo": "Descripción SEO para Plato en Web",
+   "cuerpo": "Escribe la descripción SEO-optimizada del plato [NOMBRE DEL PLATO] para la web de mi restaurante. Ciudad donde está el restaurante: [CIUDAD]. Incluye: título SEO (55-60 caracteres), meta description (150-160 caracteres), descripción larga del plato para la web (200 palabras), keywords secundarias a usar de forma natural y llamada a la acción para reservar.",
+   "apps": [
+    "Menu Plate Local SEO"
+   ]
+  },
+  {
+   "n": 46,
+   "titulo": "Respuesta Profesional a Reseña Negativa",
+   "cuerpo": "Actúa como director de comunicación de restaurante. Un cliente ha dejado esta reseña negativa en Google: [TEXTO DE LA RESEÑA]. Redacta 3 versiones de respuesta: una empática y disculpándose, una que explica el contexto sin excusas, y una que transforma la queja en oportunidad de mejora visible. Todas deben ser profesionales, no defensivas y orientadas a recuperar al cliente.",
+   "apps": [
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 47,
+   "titulo": "Guion para Reels de Cocina",
+   "cuerpo": "Escribe el guion completo para un Reels de Instagram de 60 segundos mostrando la elaboración de [NOMBRE DEL PLATO]. Incluye: escenas con descripción visual, texto superpuesto para cada escena, música sugerida por género, call to action final y caption del post. El estilo debe ser [ESTILO: profesional/divertido/educativo/emocional] y orientado a [OBJETIVO].",
+   "apps": [
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 48,
+   "titulo": "Newsletter para Clientes del Restaurante",
+   "cuerpo": "Redacta la newsletter mensual para los clientes de [NOMBRE DEL RESTAURANTE]. Incluye en este número: novedad de la carta de [MES], evento especial próximo [EVENTO], historia del chef/equipo (humanización), producto de temporada destacado y oferta exclusiva para suscriptores. Estilo cercano, como una carta personal de amigos gastrónomos. Extensión: 400-500 palabras.",
+   "apps": [
+    "Gastro Calendar",
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 49,
+   "titulo": "Estrategia de Lanzamiento de Nueva Carta",
+   "cuerpo": "Diseña la estrategia de comunicación completa para el lanzamiento de la nueva carta de temporada de [NOMBRE DEL RESTAURANTE]. Incluye plan de 4 semanas: semana de teaser, semana de revelación, semana de lanzamiento oficial y semana de consolidación. Para cada semana: acciones en RRSS, comunicación a prensa, email marketing y acciones en local.",
+   "apps": [
+    "InstaFlow AI Pro",
+    "Gastro Calendar"
+   ]
+  },
+  {
+   "n": 50,
+   "titulo": "Bio y Perfil Profesional del Chef",
+   "cuerpo": "Redacta la bio profesional del chef [NOMBRE] para: perfil de Instagram (150 caracteres), web del restaurante (200 palabras), nota de prensa (400 palabras) y LinkedIn (300 palabras). Sus datos son: [EXPERIENCIA, FORMACIÓN, COCINA QUE HACE, LOGROS, FILOSOFÍA]. Cada versión adaptada al canal y tono correspondiente.",
+   "apps": [
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 51,
+   "titulo": "Contenido para Pinterest Gastronómico",
+   "cuerpo": "Crea 10 ideas de pins para el tablero de [TEMA: recetas fáciles/técnicas de cocina/platos del mundo/repostería] de mi perfil de Pinterest gastronómico. Para cada pin indica: título (máx 100 caracteres), descripción (máx 500 caracteres), keywords relevantes para SEO de Pinterest y tipo de imagen ideal para acompañarlo. Optimizados para búsqueda en Pinterest.es.",
+   "apps": [
+    "PinterAI Content Pro"
+   ]
+  },
+  {
+   "n": 52,
+   "titulo": "Campaña de Email para Evento Especial",
+   "cuerpo": "Diseña una campaña de email en 3 fases para comunicar [EVENTO: cena especial/noche temática/lanzamiento de nuevo espacio] en [FECHA]. Email 1 (teaser, 2 semanas antes), Email 2 (invitación principal, 1 semana antes), Email 3 (último aviso + urgencia, 2 días antes). Para cada email: asunto, preheader, cuerpo del texto y CTA. Tono: [TONO].",
+   "apps": [
+    "Gastro Calendar"
+   ]
+  },
+  {
+   "n": 53,
+   "titulo": "Hashtag Strategy por Tipo de Restaurante",
+   "cuerpo": "Desarrolla la estrategia completa de hashtags para [TIPO DE RESTAURANTE] ubicado en [CIUDAD]. Crea 4 grupos de hashtags: mega hashtags (+1M publicaciones), grandes hashtags (100K-1M), medios (10K-100K) y de nicho (<10K). Incluye también hashtags geolocalizados para [CIUDAD] y [BARRIO/ZONA]. Total de 60 hashtags organizados y listos para usar en rotación.",
+   "apps": [
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 54,
+   "titulo": "Presentación de Carta para Sala",
+   "cuerpo": "Crea el guion verbal que el personal de sala usará para presentar los platos de la nueva carta a los comensales. Para cada uno de estos platos: [LISTA DE PLATOS], redacta una presentación oral de 20-30 segundos que destaque: ingrediente principal y su origen, técnica de elaboración principal, sabor/textura que el comensal experimentará. Lenguaje evocador pero no pedante.",
+   "apps": [
+    "Cocina Creativa AI",
+    "InstaFlow AI Pro"
+   ]
+  },
+  {
+   "n": 55,
+   "titulo": "Plan de Colaboración con Influencers",
+   "cuerpo": "Diseña el plan de colaboración con influencers gastronómicos para [NOMBRE DEL RESTAURANTE]. Incluye: perfil ideal de influencer (seguidores, engagement, nicho), briefing para la visita (qué mostrar, qué mensajes clave comunicar), condiciones de colaboración (compensación, contenido mínimo, timing de publicación) y métricas de éxito de la colaboración.",
+   "apps": [
+    "InstaFlow AI Pro",
+    "Gastro Calendar"
+   ]
+  },
+  {
+   "n": 56,
+   "titulo": "Google My Business Optimización",
+   "cuerpo": "Optimiza la presencia en Google My Business de [NOMBRE DEL RESTAURANTE] en [CIUDAD]. Genera: descripción del negocio (750 caracteres, SEO-optimizada con keywords locales), respuesta tipo a las 5 preguntas frecuentes más comunes de clientes, 3 publicaciones de Google Posts para el próximo mes y protocolo de gestión de reseñas (positivas y negativas) con plantillas de respuesta.",
+   "apps": [
+    "Menu Plate Local SEO"
+   ]
+  },
+  {
+   "n": 57,
+   "titulo": "Receta de Postre de Restaurante",
+   "cuerpo": "Actúa como pastelero ejecutivo de restaurante gastronómico. Diseña un postre de carta para [TEMPORADA] con [INGREDIENTE ESTRELLA] como protagonista. El postre debe tener mínimo 3 elaboraciones distintas (textura cremosa, elemento crujiente y salsa/coulis). Incluye: nombre del postre, historia conceptual, mise en place detallada, elaboración de cada componente, emplatado y maridaje con vino dulce o café.",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 58,
+   "titulo": "Receta de Pan Artesano de Autor",
+   "cuerpo": "Diseña la receta de un pan artesano de autor con [INGREDIENTE DIFERENCIADOR: masa madre/cereales antiguos/semillas especiales/infusiones]. Porcentaje de hidratación: [%]. Incluye: fórmula de panadero completa con porcentajes, proceso de fermentación (tiempos, temperaturas, fases), técnica de formado, puntuación y cocción. Explica el impacto de cada variable en el resultado final.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 59,
+   "titulo": "Bombón de Chocolate Relleno",
+   "cuerpo": "Desarrolla la receta completa de un bombón de chocolate [TIPO: moldeado/bañado/trufado] con relleno de [SABOR/INGREDIENTE]. Incluye: temperado del chocolate (curva de temperaturas según tipo: negro/leche/blanco), receta del ganache o relleno con gramajes exactos, proceso de elaboración paso a paso, decoración y conservación. Calcula el coste aproximado por unidad.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 60,
+   "titulo": "Tarta de Celebración Profesional",
+   "cuerpo": "Diseña la receta completa de una tarta de celebración [TIPO: cumpleaños/boda/aniversario] con [SABOR BASE] y [DECORACIÓN TEMÁTICA]. Para [NÚMERO] porciones. Incluye: bizcocho, almíbar de calado, crema de relleno, crema de cobertura, técnica de montaje nivel a nivel, acabado y decoración. Con especificaciones de temperatura para cada elaboración y tiempos de conservación.",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 61,
+   "titulo": "Croissant y Viennosería de Alta Pastelería",
+   "cuerpo": "Dame la receta profesional del croissant clásico con masa hojaldrada. Gramajes para [NÚMERO] unidades. Incluye: fórmula completa de la détrempe, proceso de tourage (número de vueltas, tiempos de reposo, temperatura de la mantequilla de touraje), formado, fermentación final y cocción. Después, adapta la misma masa base para crear 3 viennoiserías distintas.",
+   "apps": [
+    "Panadería Creativa",
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 62,
+   "titulo": "Helado Artesano de Sabor Complejo",
+   "cuerpo": "Diseña la receta de un helado artesano de alta gama con sabor [SABOR COMPLEJO: curry-mango/queso-higo/café-cardamomo]. Incluye: mix base de helado (tipo crema o sorbete), gramajes de cada componente, estabilizantes y emulsionantes necesarios con dosis exactas, proceso de pasteurización, maduración y mantecación. Textura objetivo y temperatura de servicio ideal.",
+   "apps": [
+    "Heladería Creativa"
+   ]
+  },
+  {
+   "n": 63,
+   "titulo": "Maridaje Chocolate-Bebida",
+   "cuerpo": "Actúa como chocolatero y sumiller especializado en cacao. Diseña un maridaje de 5 bombones o tabletas de chocolate con 5 bebidas distintas [CATEGORÍA: vinos/whiskies/cervezas artesanas/destilados]. Para cada par: origen y porcentaje del cacao, características organolépticas del chocolate, bebida elegida con sus notas y la explicación del por qué funcionan juntos.",
+   "apps": [
+    "Chocolatería Creativa",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 64,
+   "titulo": "Carta de Postres para Restaurante",
+   "cuerpo": "Diseña la carta de postres completa para un restaurante [TIPO] con [NÚMERO] referencias. Debe incluir: 1 postre cítrico refrescante, 1 postre de chocolate, 1 postre de fruta de temporada, 1 postre láctico, 1 tartaleta/pieza de pastelería y 1 postre nostálgico reinterpretado. Para cada uno: nombre, descripción para carta (40 palabras) y precio sugerido.",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 65,
+   "titulo": "Fermentados y Masas Madre",
+   "cuerpo": "Guíame en la creación y mantenimiento de una masa madre de [TIPO: trigo/centeno/espelta] desde cero. Plan para 14 días: qué hacer cada día (proporciones de harina, agua y temperatura), indicadores de salud de la masa en cada fase, cómo saber cuándo está lista para usar y protocolo de mantenimiento semanal una vez establecida. Con tabla de control diario.",
+   "apps": [
+    "Panadería Creativa",
+    "Fermentus Con AI+"
+   ]
+  },
+  {
+   "n": 66,
+   "titulo": "Escaparate de Pastelería para Temporada",
+   "cuerpo": "Diseña la propuesta de escaparate de pastelería para [TEMPORADA: Navidad/San Valentín/Pascua/Halloween/verano]. Incluye: 6-8 productos estrella de temporada con descripción, precio de venta sugerido y coste estimado, disposición visual del escaparate, packaging recomendado, mensaje de comunicación y acciones de RRSS para promocionar cada pieza.",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 67,
+   "titulo": "Receta de Tableta de Chocolate Bean-to-Bar",
+   "cuerpo": "Desarrolla el proceso completo para crear una tableta de chocolate bean-to-bar con cacao de origen [ORIGEN]. Desde el procesado del cacao: tostado (temperatura y tiempo), descascarillado, molienda, conchado, temperado y moldeo. Incluye las variables que determinan el perfil de sabor final y cómo ajustarlas para conseguir [PERFIL DESEADO: frutal/terroso/floral/especiado].",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 68,
+   "titulo": "Presupuesto de Tarta Personalizada",
+   "cuerpo": "Ayúdame a calcular el precio justo para una tarta personalizada con estos datos: [SABORES Y RELLENOS], [NÚMERO] pisos, decoración [DESCRIPCIÓN], para [NÚMERO] personas, entrega en [CIUDAD]. Desglosa: coste de materiales, tiempo de elaboración (horas × tarifa horaria de [PRECIO]), coste de packaging, margen de beneficio y precio final al cliente. Justificación del precio.",
+   "apps": [
+    "Pastelería Creativa",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 69,
+   "titulo": "Receta de Gelato Artesano",
+   "cuerpo": "Crea la receta de un gelato artesano italiano de [SABOR] con textura auténtica. Diferencias clave con el helado americano: menor porcentaje de grasa, mayor densidad, menos incorporación de aire (overrun). Incluye: ingredientes con gramajes exactos, mix base, proceso de pasteurización, maduración (mínimo 4h a 4°C), mantecación y temperatura de conservación y servicio.",
+   "apps": [
+    "Heladería Creativa"
+   ]
+  },
+  {
+   "n": 70,
+   "titulo": "Decoración con Chocolate para Alta Pastelería",
+   "cuerpo": "Guíame en la creación de las siguientes decoraciones de chocolate para alta pastelería: [TÉCNICA 1: transfert/spray/virutas/figuras moldeadas]. Para cada técnica: tipo de chocolate idóneo, temperatura de trabajo, herramientas necesarias, proceso paso a paso y errores comunes. Incluye también cómo combinar estas decoraciones en la presentación final de un postre de restaurante.",
+   "apps": [
+    "Chocolatería Creativa",
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 71,
+   "titulo": "Maridaje Científico de Ingredientes",
+   "cuerpo": "Actúa como especialista en food pairing molecular. Necesito encontrar los mejores ingredientes para maridar con [INGREDIENTE PRINCIPAL]. Analiza los compuestos aromáticos compartidos y sugiere: 3 maridajes clásicos y bien conocidos, 3 maridajes sorprendentes pero científicamente sólidos, y 3 maridajes de vanguardia para innovación. Para cada uno explica el porqué molecular.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 72,
+   "titulo": "Maridaje Vino-Plato para Carta",
+   "cuerpo": "Diseña la selección de maridaje vino-plato para la carta de mi restaurante. Los platos son: [LISTA DE PLATOS]. Para cada plato sugiere: vino blanco opción, vino tinto opción, opción alternativa (espumoso/rosado/generoso) y bebida sin alcohol para no bebedores. Incluye el argumento del maridaje en lenguaje accessible para que el personal de sala lo explique.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 73,
+   "titulo": "Maridaje Cerveza Artesana y Gastronomía",
+   "cuerpo": "Crea una guía de maridaje entre cervezas artesanas y gastronomía para [TIPO DE RESTAURANTE/BAR]. Para cada estilo de cerveza: [ALE ÁMBAR, IPA, STOUT, SAISON, LAGER ARTESANA], indica los mejores platos con los que marida, el porqué aromático/gustativo y cómo presentarlo en carta. Incluye también temperatura de servicio y tipo de vaso ideal.",
+   "apps": [
+    "Food Pairing AI",
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 74,
+   "titulo": "Menú Degustación con Maridaje Bebidas",
+   "cuerpo": "Para el siguiente menú degustación de [NÚMERO] pasos: [DESCRIPCIÓN DE CADA PLATO], diseña el maridaje de bebidas completo. Opción 1: maridaje clásico con vinos. Opción 2: maridaje alternativo con cervezas artesanas, kombuchas y destilados. Para cada bebida: nombre, motivo del maridaje y temperatura de servicio. Total de bebidas para menú completo.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 75,
+   "titulo": "Maridaje Queso y Productos Artesanos",
+   "cuerpo": "Diseña una tabla de quesos para [RESTAURANTE/BAR] con 5-7 variedades nacionales e internacionales. Para cada queso indica: nombre, origen, tipo de leche, maduración, características organolépticas, el mejor acompañamiento (mermelada, fruto seco, pan) y la bebida ideal de maridaje. Crea también la descripción de carta para que el equipo de sala la presente.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  }
+ ]
+}

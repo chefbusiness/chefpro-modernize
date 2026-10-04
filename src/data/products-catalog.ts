@@ -56,11 +56,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'pro-prompts-ebook',
     url: '/pro-prompts-ebook',
     price: '€9',
-    name: { es: 'Pro Prompts eBook', en: 'Pro Prompts eBook' },
+    name: { es: 'Pro Prompts eBook', en: 'Gastro Pro Prompts eBook' },
     description: {
       es: '200+ prompts profesionales probados para chefs y propietarios.',
-      en: '200+ proven professional prompts for chefs and owners.',
+      en: '300 professional prompts for chefs and owners.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `ai-prompts-for-restaurants`, $14 USD.
+    urlByLang: { en: '/en/digital-products/ai-prompts-for-restaurants' },
+    priceByLang: { en: '$14' },
   },
   'kit-escandallos': {
     id: 'kit-escandallos',
@@ -79,17 +82,20 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'pack-appcc',
     url: '/pack-appcc',
     price: '€14',
-    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Templates Pack' },
+    name: { es: 'Pack Plantillas APPCC', en: 'HACCP Food Safety Kit Pro' },
     description: {
       es: 'APPCC y trazabilidad listos para inspección.',
       en: 'HACCP and traceability templates ready for inspection.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `haccp-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/haccp-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-gestion-personal': {
     id: 'kit-gestion-personal',
     url: '/kit-gestion-personal',
     price: '€14',
-    name: { es: 'Kit Gestión de Personal y Turnos', en: 'Staff Scheduling & Management Kit' },
+    name: { es: 'Kit Gestión de Personal y Turnos', en: 'Restaurant Staff Scheduling Kit Pro' },
     description: {
       // COM-22/RC-05/RD-25 · decía «ratios de productividad», que no existen
       // en ninguno de los 9 ficheros del kit: lo más cercano son los
@@ -98,8 +104,11 @@ const RAW: Record<string, ProductCatalogRaw> = {
       // vacaciones y evaluación, que sí están. Este texto se sirve en producción (UseCasePageContent
       // y PSeoCityPageContent vía getProductsByIds).
       es: 'Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.',
-      en: 'Shift schedules, overtime, labor cost, onboarding, holidays, and team performance reviews.',
+      en: 'Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `restaurant-schedule-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-schedule-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-inventario': {
     id: 'kit-inventario',
@@ -118,11 +127,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-plan-financiero',
     url: '/kit-plan-financiero',
     price: '€39',
-    name: { es: 'Kit Plan Financiero', en: 'Financial Plan Kit' },
+    name: { es: 'Kit Plan Financiero', en: 'Restaurant Financial Plan Kit Pro' },
     description: {
       es: 'Cash flow, P&L, escenarios y dashboard de ratios financieros.',
       en: 'Cash flow, P&L, scenarios, and a financial ratios dashboard.',
     },
+    // Tienda EN (3-oct-2026): producto propio, `restaurant-financial-plan-templates`, $49 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-financial-plan-templates' },
+    priceByLang: { en: '$49' },
   },
   'kit-tareas': {
     id: 'kit-tareas',

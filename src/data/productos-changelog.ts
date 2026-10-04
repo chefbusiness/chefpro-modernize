@@ -420,6 +420,28 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-03): Restaurant Staff Scheduling Kit Pro, primera edición inglesa del contenido
+  // 2.0 del Kit Gestión de Personal (SPEC staff-kit D19: la EN nace en 2.0). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/RestaurantScheduleKitDashboard.tsx.
+  'restaurant-schedule-templates': {
+    version: '2.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 7 staff management templates plus 2 bonuses, adapted to the US with notes for the UK.',
+          'Restaurant schedule with US shift codes (AM, PM, N, SP for split shifts, DBL for doubles, OFF, V and S), real start and end times on a 12-hour clock, and alerts for shifts over 10 hours, less than 10 hours between shifts (clopening), weeks over 40 hours, days off and minors\' shifts (under 16: no work after 7 PM, 9 PM from June 1 to Labor Day, 29 CFR 570.35; 16-17: state law).',
+          'Overtime tracker built on the FLSA 40-hour workweek at 1.5× (the workweek starts on Monday by default, like the schedule, and each copy holds whole workweeks), with an optional daily state threshold (8 hours in California); overtime that was not approved still counts and is paid.',
+          'Labor cost calculator with pay periods per year (weekly, biweekly, semimonthly or monthly; biweekly by default) and the employer cost on top of wages as an editable estimate (10% by default: FICA, FUTA/SUTA and workers\' comp; check with your payroll provider).',
+          'PTO & vacation planner with an editable entitlement, new hire onboarding with I-9, W-4 and new-hire reporting deadlines, an employee directory that stores only the last 4 digits of the SSN, and a shift handover log with temperatures in °F and a cash count against the Z report.',
+          'No currency symbol in the templates (you type amounts in your own currency), UK notes wherever the rules differ (rota, 11-hour rest, 48-hour average week, 5.6 weeks of holiday), and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-gestion-personal': {
     version: '2.0',
     updated: '2026-08-23',
@@ -480,6 +502,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-03): Gastro Pro Prompts eBook, primera edición inglesa del eBook de prompts
+  // (SPEC pro-prompts-ebook-en). Textos en inglés: los pinta <ProductChangelog lang="en"/> en
+  // src/pages/ProPromptsLibraryEn.tsx.
+  'ai-prompts-for-restaurants': {
+    version: '1.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the eBook: 300 prompts in 3 blocks and 33 sections, written for restaurants and hospitality in the US, the UK and beyond.',
+          'Every agent recommendation uses the names of the AI Chef Pro agents in English; where there is no English agent, the prompt points to a general-purpose model such as ChatGPT or Gemini.',
+          'No currency or country hard-coded: prices, taxes and regulations are placeholders you fill in with your own (for example, the allergen rules that apply where you operate).',
+          'Both bonuses in English: the Prompt Engineering Guide (Word) and the Templates + Cheat Sheet (Excel).',
+          'This dashboard with 76 more prompts in 10 categories, ready to copy.',
+        ],
+      },
+    ],
+  },
   'kit-inventario': {
     version: '2.0',
     updated: '2026-08-23',
@@ -514,6 +557,29 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
           'Número de versión actualizado a 1.1 en la hoja de instrucciones de cada fichero.',
           'Metadatos, instrucciones y autoría actualizados en los 9 ficheros.',
+        ],
+      },
+    ],
+  },
+  // Tienda EN (2026-10-03): Restaurant Financial Plan Kit Pro, primera edición inglesa del contenido
+  // 2.0 del Kit Plan Financiero (SPEC financial-kit D20: la EN nace en 2.0). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/RestaurantFinancialPlanKitDashboard.tsx.
+  'restaurant-financial-plan-templates': {
+    version: '2.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 8 financial planning templates plus 2 bonuses, adapted to the US with notes for the UK.',
+          'Revenue excluding sales tax in every template except the cash flow forecast, which works with cash: sales tax collected and remitted quarterly (an 8% example rate you replace with your state and local rate), payroll taxes deposited the following month and employee withholding shown on its own line.',
+          'Startup costs & capex budget with a recoverable tax column (0 in the US, 20% VAT in the UK) and straight-line depreciation by useful life in years (build-out 10, kitchen equipment 7, furniture 7, technology 5, all editable).',
+          'Lender & Investor Summary with IRR, NPV and payback on the project cash flows, an SBA 7(a)-style example loan (10 years, optional interest-only period), the DSCR calculated on the full loan payment and checked against 1.25× (the usual lender target; the SBA floor depends on the transaction and the current SOP), and a collateral sheet.',
+          'KPI dashboard with benchmarks for US full-service restaurants as editable kit estimates (labor 30% / 35%, occupancy 6% / 10%, GOP 21% / 16%), occupancy (rent) % evaluated with its own traffic light, annual sales per sq ft and RevPASH per seat-hour.',
+          'Pre-opening checklist with 54 tasks in 7 phases and the US steps: business entity, EIN, seller\'s permit, business license, health permit, liquor license, workers\' comp and payroll registrations.',
+          'No currency symbol in the templates (you type amounts in your own currency), area in square feet, US date format, and every sheet set up to print on US Letter paper.',
         ],
       },
     ],
@@ -1110,6 +1176,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Desplegable ✓ / — / N/A y resaltado en verde al marcar en la columna OK.',
           'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
           'Metadatos y autoría actualizados en los 11 ficheros.',
+        ],
+      },
+    ],
+  },
+  // Tienda EN (2026-10-03): HACCP Food Safety Kit Pro, primera edición inglesa del contenido 2.0
+  // del Pack Plantillas APPCC (SPEC haccp-kit §1). Textos en inglés: los pinta
+  // <ProductChangelog lang="en"/> en src/pages/HaccpKitDashboard.tsx.
+  'haccp-templates': {
+    version: '2.0',
+    updated: '2026-10-03',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-03',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 19 food safety templates plus 2 bonuses, adapted to the US and the UK.',
+          'FDA Food Code 2022 limits in degrees Fahrenheit in every formula: cold holding at 41 °F or below, hot holding at 135 °F or above, cooking at 165, 155, 145 or 135 °F, reheating to 165 °F within 2 hours and two-stage cooling (135 to 70 °F in 2 hours, to 41 °F in 6 hours).',
+          'Allergen matrix and allergen chart with the 14 UK allergens and the US Big 9 marked; the matrix checks that the specific tree nut, fish and crustacean shellfish are named.',
+          'Health inspection self-checklist with the Food Code categories (Priority, Priority foundation and Core), parasite destruction for fish served raw (−4 °F for 168 hours or −31 °F for 15 hours) and thermometer calibration corrected for altitude in feet.',
+          'UK notes wherever the rules differ (FSA Safer Food Better Business, 14 allergens, Food Hygiene Rating Scheme), sample data with US vendors and units, 12-hour times, and every sheet set up to print on US Letter paper.',
         ],
       },
     ],

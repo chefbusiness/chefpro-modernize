@@ -2,6 +2,7 @@
 // productId → URL pública del Payment Link de Stripe (la misma que Vite inlina en la landing).
 // Regenerar tras cambiar cualquier VITE_STRIPE_PAYMENT_LINK_* en Netlify; el gate --check avisa del drift.
 export const PAYMENT_LINKS: Record<string, string> = {
+  'ai-prompts-for-restaurants': 'https://buy.stripe.com/4gMfZagwYaku4Z1b7v6oo1B',
   'food-cost-templates': 'https://buy.stripe.com/bJecMYa8AgIS9fhcbz6oo1y',
   'guia-chocolateria-obrador': 'https://buy.stripe.com/4gMfZa1C42S23UX1wV6oo1w',
   'guia-churreria-chocolateria': 'https://buy.stripe.com/7sY14gdkMeAK3UXejH6oo1A',
@@ -15,6 +16,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'guia-restaurante-mexicano': 'https://buy.stripe.com/4gM8wIgwY2S2fDFejH6oo0O',
   'guia-restaurante-nikkei': 'https://buy.stripe.com/aFa4gs1C464e0ILfnL6oo10',
   'guia-restaurante-peruano': 'https://buy.stripe.com/6oUbIU2G80JU0ILa3r6oo0P',
+  'haccp-templates': 'https://buy.stripe.com/4gM3cobcEboyajla3r6oo1C',
   'kit-escandallos': 'https://buy.stripe.com/cNi3cogwY64e9fhfnL6oo01',
   'kit-gestion-personal': 'https://buy.stripe.com/00weV64Og0JUezB2AZ6oo0H',
   'kit-inventario': 'https://buy.stripe.com/3cI6oA0y01NYbnp1wV6oo0I',
@@ -54,7 +56,9 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'plan-negocio-parrillero-asador-eventos': 'https://buy.stripe.com/cNi6oAa8A50a4Z1cbz6oo1a',
   'plan-negocio-tapas-bar': 'https://buy.stripe.com/aFadR21C4eAK8bd5Nb6oo15',
   'pro-prompts-ebook': 'https://buy.stripe.com/7sYfZafsU8cm3UX7Vj6oo00',
+  'restaurant-financial-plan-templates': 'https://buy.stripe.com/8x23cogwYdwGezBdfD6oo1E',
   'restaurant-inventory-templates': 'https://buy.stripe.com/28EfZacgIdwGbnp8Zn6oo1z',
+  'restaurant-schedule-templates': 'https://buy.stripe.com/9B6dR294w0JUbnpa3r6oo1D',
 };
 
 /** URL → productId (para el webhook: la sesión trae payment_link, no el producto). */

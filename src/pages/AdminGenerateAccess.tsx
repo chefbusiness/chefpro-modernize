@@ -4,9 +4,11 @@ import { Loader2, Copy, Check, Mail, Link as LinkIcon, ShieldAlert } from 'lucid
 
 const PRODUCTS: { id: string; label: string }[] = [
   { id: 'pro-prompts-ebook', label: 'Pro Prompts eBook (€9)' },
+  { id: 'ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook (EN, $14)' },
   { id: 'kit-escandallos', label: 'Kit de Escandallos Pro (€12)' },
   { id: 'food-cost-templates', label: 'Food Cost Kit Pro (EN, $19)' },
   { id: 'pack-appcc', label: 'Pack Plantillas APPCC (€14)' },
+  { id: 'haccp-templates', label: 'HACCP Food Safety Kit Pro (EN, $19)' },
   { id: 'kit-tareas', label: 'Kit Tareas Restaurante Casual (€14)' },
   { id: 'kit-tareas-cafeteria', label: 'Kit Tareas Cafetería (€12)' },
   { id: 'kit-tareas-pizzeria', label: 'Kit Tareas Pizzería (€12)' },
@@ -21,9 +23,11 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'kit-tareas-restaurante-creativo', label: 'Kit Tareas Restaurante Creativo (€12)' },
   { id: 'kit-tareas-chef-privado', label: 'Kit Tareas Chef Privado (€18)' },
   { id: 'kit-gestion-personal', label: 'Kit Gestión de Personal (€14)' },
+  { id: 'restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro (EN, $19)' },
   { id: 'kit-inventario', label: 'Kit Control de Inventario (€14)' },
   { id: 'restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro (EN, $19)' },
   { id: 'kit-plan-financiero', label: 'Kit Plan Financiero (€39)' },
+  { id: 'restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro (EN, $49)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
   { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },
   { id: 'guia-restaurante-casual', label: 'Guía Restaurante Casual (€65)' },

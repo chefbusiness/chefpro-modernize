@@ -3,6 +3,7 @@
 // española, `usd` en la internacional (una sola por producto). Es el importe con el que crypto-checkout crea
 // la invoice de NOWPayments: el precio es el mismo para todos los países (decisión de John 2026-09-05).
 export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
+  'ai-prompts-for-restaurants': { usd: 14 },
   'food-cost-templates': { usd: 19 },
   'guia-chocolateria-obrador': { eur: 65 },
   'guia-churreria-chocolateria': { eur: 65 },
@@ -16,6 +17,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'guia-restaurante-mexicano': { eur: 65 },
   'guia-restaurante-nikkei': { eur: 65 },
   'guia-restaurante-peruano': { eur: 65 },
+  'haccp-templates': { usd: 19 },
   'kit-escandallos': { eur: 12 },
   'kit-gestion-personal': { eur: 14 },
   'kit-inventario': { eur: 14 },
@@ -55,5 +57,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'plan-negocio-parrillero-asador-eventos': { eur: 45 },
   'plan-negocio-tapas-bar': { eur: 35 },
   'pro-prompts-ebook': { eur: 9 },
+  'restaurant-financial-plan-templates': { usd: 49 },
   'restaurant-inventory-templates': { usd: 19 },
+  'restaurant-schedule-templates': { usd: 19 },
 };

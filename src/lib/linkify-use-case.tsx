@@ -43,6 +43,10 @@ const PRODUCT_ALIASES: Record<string, string> = {
   // mención inglesa enlaza a ESA landing, no a la española (TIENDA-INTERNACIONAL §3.10).
   'Food Cost Kit Pro': '/en/digital-products/food-cost-templates',
   'Restaurant Inventory Kit Pro': '/en/digital-products/restaurant-inventory-templates',
+  'HACCP Food Safety Kit Pro': '/en/digital-products/haccp-templates',
+  'Restaurant Staff Scheduling Kit Pro': '/en/digital-products/restaurant-schedule-templates',
+  'Restaurant Financial Plan Kit Pro': '/en/digital-products/restaurant-financial-plan-templates',
+  'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 
 const ALL_PRODUCT_LINKS: Record<string, string> = { ...PRODUCT_LINKS, ...PRODUCT_ALIASES };

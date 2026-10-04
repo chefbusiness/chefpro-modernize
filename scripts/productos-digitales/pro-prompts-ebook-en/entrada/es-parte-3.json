@@ -1,0 +1,640 @@
+{
+ "prompts": [
+  {
+   "n": 151,
+   "titulo": "Análisis de P&L Mensual del Restaurante",
+   "cuerpo": "Soy gerente de un restaurante y debo analizar el P&L del mes pasado: ingresos [X], food cost [X%], labor cost [X%], alquiler [X], suministros [X], marketing [X] y otros [X]. Interpreta estos datos, identifica las desviaciones respecto a los objetivos, explica las causas probables y propón 3 acciones correctoras prioritarias para el mes próximo con impacto esperado.",
+   "apps": [
+    "Mermas GenCal",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 152,
+   "titulo": "Gestión de Reservas y Optimización de Sala",
+   "cuerpo": "Como gerente necesito optimizar el sistema de gestión de reservas para [NOMBRE DEL RESTAURANTE] con [NÚMERO] mesas. Diseña: política de reservas (tiempo mínimo de anticipación, política de depósito, gestión de walk-ins), protocolo para noches con lista de espera, sistema de gestión de no-shows, y cómo maximizar la ocupación en días flojos de la semana.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 153,
+   "titulo": "Reporting Semanal para Dirección",
+   "cuerpo": "Ayúdame a crear el template de reporting semanal para presentar a la dirección. Debe incluir: ventas vs objetivo (por día y producto), métricas de cliente (covers, ticket medio, índice de satisfacción), KPIs de cocina (food cost, desperdicio), incidencias relevantes de la semana, acciones pendientes de la semana anterior y 3 prioridades para la semana siguiente.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 154,
+   "titulo": "Gestión de Proveedores y Negociación",
+   "cuerpo": "Como gerente gestiono las relaciones con [NÚMERO] proveedores. Necesito revisar el portfolio de proveedores para reducir costes en [%]. Ayúdame a: criterios de evaluación de proveedores (calidad, precio, servicio, fiabilidad), proceso de homologación de nuevos proveedores, argumentario de renegociación con los actuales y política de proveedores de respaldo para evitar roturas de stock.",
+   "apps": [
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 155,
+   "titulo": "Protocolo de Apertura y Cierre del Restaurante",
+   "cuerpo": "Diseña el protocolo completo de apertura y cierre de [TIPO DE RESTAURANTE]. Apertura: tareas de cocina (por orden), tareas de sala, verificaciones obligatorias antes de abrir al público, briefing del equipo. Cierre: protocolo de caja y cierre contable, limpieza y seguridad alimentaria, cierre de instalaciones y parte de cierre diario con incidencias. Formato check-list.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 156,
+   "titulo": "Gestión de Equipos Multiculturales",
+   "cuerpo": "Mi equipo de restaurante tiene empleados de [NÚMERO] nacionalidades distintas. Estoy teniendo dificultades de comunicación y cohesión de equipo. Diseña: estrategias de integración cultural, adaptaciones en la comunicación para diferentes perfiles culturales, cómo gestionar los conflictos con base cultural y cómo convertir la diversidad en fortaleza del equipo.",
+   "apps": [
+    "Mental Coach AI"
+   ]
+  },
+  {
+   "n": 157,
+   "titulo": "Plan de Apertura de Nuevo Local",
+   "cuerpo": "Soy gerente responsable de la apertura del nuevo local de [CADENA/MARCA] en [CIUDAD]. Diseña el plan de apertura: cronograma de 90 días previos a apertura, equipo necesario y proceso de selección y formación, plan de soft opening, estrategia de comunicación pre-apertura y primeras semanas, KPIs de éxito del primer mes y plan de contingencia.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 158,
+   "titulo": "Experiencia del Cliente: Customer Journey",
+   "cuerpo": "Mapea el customer journey completo de un comensal en [NOMBRE DEL RESTAURANTE], desde el descubrimiento hasta el post-visita. Para cada touchpoint identifica: la experiencia actual, el pain point potencial, la oportunidad de mejora y la acción concreta para mejorarla. Prioriza las mejoras por impacto en satisfacción y coste de implementación.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 159,
+   "titulo": "Gestión de Eventos y Grupos en Sala",
+   "cuerpo": "Mi restaurante recibe cada vez más solicitudes de eventos y grupos. Diseña: el paquete de servicios para grupos (mínimo de personas, tipos de menú disponibles, condiciones), protocolo de coordinación entre sala y cocina para eventos, hoja de encargo tipo para eventos, comunicación pre y post evento con el cliente y cómo captar más negocio de grupos.",
+   "apps": [
+    "Catering AI+",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 160,
+   "titulo": "Inspección Sanitaria: Preparación Total",
+   "cuerpo": "Mi restaurante va a tener una inspección sanitaria. Ayúdame a preparar: check-list de verificación de todas las áreas (cocina, almacén, cámaras, vestuarios, sala), documentación obligatoria que debo tener a mano (APPCC, registros de temperatura, formación del personal), los puntos más frecuentemente penalizados en inspecciones y cómo corregirlos antes de la visita.",
+   "apps": [
+    "ID Alérgenos",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 161,
+   "titulo": "Vitrinas de Pastelería para Todo el Año",
+   "cuerpo": "Soy pastelero de obrador y necesito planificar el surtido de vitrina para los 12 meses del año. Para cada trimestre: 8-10 piezas de pastelería individual, 2-3 tartas de exposición, 1-2 productos de temporada exclusivos. Incluye precio de venta sugerido, tiempo de producción estimado y vida útil de cada pieza. Orientado a rentabilizar el obrador al máximo.",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 162,
+   "titulo": "Técnicas de Azúcar Artístico",
+   "cuerpo": "Guíame en las técnicas de azúcar artístico para pastelería: [TÉCNICA: azúcar estirado/soplado/coulé/caramelizado]. Para cada técnica: temperatura de trabajo del azúcar (curva de temperaturas), herramientas imprescindibles, proceso paso a paso, problemas comunes y sus soluciones, y cómo incorporarlo en una pieza de pastelería comercialmente viable (no solo decorativa).",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 163,
+   "titulo": "Línea de Pastelería Sin Azúcar Añadido",
+   "cuerpo": "Quiero desarrollar una línea de pastelería para diabéticos y personas que reducen el consumo de azúcar. Diseña 6 recetas sin azúcar añadido usando edulcorantes naturales (eritritol, xilitol, estevia, fruta) que mantengan sabor y textura profesionales. Para cada receta: ingredientes con gramajes, proceso, notas de textura y vida útil. Con etiquetado nutricional estimado.",
+   "apps": [
+    "Pastelería Creativa",
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 164,
+   "titulo": "Organización de Obrador para Alta Producción",
+   "cuerpo": "Tengo un obrador de pastelería que necesita producir [CANTIDAD] unidades/día de [TIPOS DE PRODUCTO]. Optimiza: la distribución de tareas por perfil de empleado (oficial pastelero, ayudante, aprendiz), cronograma de producción (qué hacer y cuándo para que todo esté listo para apertura), gestión de cámaras (qué entra congelado/refrigerado/temperatura ambiente) y flujo de trabajo sin cuellos de botella.",
+   "apps": [
+    "Pastelería Creativa",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 165,
+   "titulo": "Tendencias de Pastelería Internacional",
+   "cuerpo": "Como pastelero quiero incorporar las últimas tendencias de pastelería internacional de [AÑO] en mi obrador. Investiga y presenta: 5 tendencias de pastelería de restaurante, 5 tendencias de pastelería de tienda/vitrina y 5 tendencias en sabores emergentes. Para cada tendencia: descripción, origen, receta o técnica para implementarla y adecuación al mercado español.",
+   "apps": [
+    "Pastelería Creativa",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 166,
+   "titulo": "Escaparate de Navidad en Pastelería",
+   "cuerpo": "Diseña la propuesta de escaparate de pastelería para la campaña de Navidad. Incluye: 5 piezas estrella de la campaña (turrón artesano, polvorones, roscón de Reyes, tarta navideña y pieza sorpresa), receta de cada una con gramajes para producción de [CANTIDAD] unidades, precio de venta, packaging navideño recomendado y plan de comunicación en RRSS para la campaña.",
+   "apps": [
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 167,
+   "titulo": "Pastelería Vegana de Alta Calidad",
+   "cuerpo": "Desarrolla una línea de pastelería 100% vegana para [TIPO DE NEGOCIO] que no parezca ni sepa como una versión de segunda categoría. Para los siguientes productos: bizcocho tipo genoise, crema de mantequilla, ganache de chocolate, hojaldre y masa sablée; indica los sustitutos veganos exactos (marcas si es posible) con sus equivalencias y ajustes en proceso.",
+   "apps": [
+    "Pastelería Creativa",
+    "VegChef Plant-Based"
+   ]
+  },
+  {
+   "n": 168,
+   "titulo": "Carta de Postres de Temporada para Restaurante",
+   "cuerpo": "Como pastelero de restaurante, diseña la carta de postres para la temporada de [TEMPORADA]. La cocina del restaurante es [DESCRIPCIÓN]. Crear 5 postres que: dialoguen con el estilo culinario del chef, utilicen productos de temporada, tengan diferentes temperaturas y texturas, y sean ejecutables por el equipo durante el servicio. Incluye mise en place y tiempo de pase de cada uno.",
+   "apps": [
+    "Pastelería Creativa",
+    "Cocina Creativa AI"
+   ]
+  },
+  {
+   "n": 169,
+   "titulo": "Gestión de Costes en Obrador",
+   "cuerpo": "Como pastelero responsable del obrador necesito reducir el coste de producción en [%]. Analiza estos productos de mayor venta: [LISTA CON RECETAS Y COSTES ACTUALES]. Identifica dónde están las mermas y costes ocultos, sugiere alternativas de ingredientes sin bajar calidad, propone optimizaciones de proceso para reducir tiempo de elaboración y calcula el nuevo coste proyectado.",
+   "apps": [
+    "Mermas GenCal",
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 170,
+   "titulo": "Chocolate Couverture: Dominar el Temperado",
+   "cuerpo": "Necesito dominar perfectamente el temperado del chocolate para mi obrador. Explica en detalle: la física y química del temperado (formas cristalinas del cacao), la curva de temperado para chocolate negro, con leche y blanco (temperaturas de fusión, enfriado y trabajo), métodos de temperado (tablero de mármol, sembrado, microondas) y cómo verificar que el temperado es correcto.",
+   "apps": [
+    "Chocolatería Creativa",
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 171,
+   "titulo": "Fórmula de Panadero: Receta Base Universal",
+   "cuerpo": "Actúa como maestro panadero artesano. Desarrolla la fórmula de panadero para [TIPO DE PAN: hogaza de campo/baguette/centeno/espelta integral] con las siguientes condiciones: hidratación [%], preferimento [tipo y %], harina [tipo]. Presenta en formato porcentual de panadero y en gramajes absolutos para [NÚMERO] piezas de [PESO] gramos cada una.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 172,
+   "titulo": "Diagnóstico de Problemas en la Masa",
+   "cuerpo": "Estoy teniendo los siguientes problemas con mi pan: [DESCRIPCIÓN DEL PROBLEMA: miga densa/corteza sin color/desgarre/acidez excesiva/poca fermentación]. Actúa como doctor del pan y diagnostica: las posibles causas del problema (harina, hidratación, fermentación, horno), cómo confirmarlo, las correcciones necesarias en la receta y proceso y cómo prevenirlo en futuras hornadas.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 173,
+   "titulo": "Plan de Producción Diaria de Panadería",
+   "cuerpo": "Tengo una panadería que abre a las [HORA] y necesito que todo esté listo para esa hora. Produzco: [LISTA DE PANES CON CANTIDADES]. Diseña el plan de producción inverso desde la hora de apertura, indicando a qué hora debo: mezclar cada masa, plegados, formado, entrada en cámara de fermentación final, horneado y el orden óptimo para usar el horno eficientemente.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 174,
+   "titulo": "Harinas Alternativas: Guía de Uso",
+   "cuerpo": "Quiero incorporar harinas alternativas en mi oferta de panadería: [LISTA: espelta/centeno/kamut/avena/maíz/arroz]. Para cada harina: características de la proteína (gluten, si tiene), porcentaje máximo recomendado en mezcla con trigo, ajustes de hidratación necesarios, impacto en fermentación y sabor resultante, y un pan concreto donde brille especialmente.",
+   "apps": [
+    "Panadería Creativa",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 175,
+   "titulo": "Bollería Hojaldrada: Técnica Completa",
+   "cuerpo": "Quiero dominar la bollería hojaldrada (croissant, pain au chocolat, danish). Dame la técnica completa de: masa base (détrempe) con proporciones exactas, mantequilla de touraje (porcentaje, temperatura ideal, cómo prepararla), número y tipo de vueltas, tiempos de reposo obligatorios entre vueltas, técnica de formado de cada pieza y cocción perfecta.",
+   "apps": [
+    "Panadería Creativa",
+    "Pastelería Creativa"
+   ]
+  },
+  {
+   "n": 176,
+   "titulo": "Pan de Autor con Ingrediente Regional",
+   "cuerpo": "Diseña un pan de autor que incorpore [INGREDIENTE REGIONAL: aceite de oliva/aceitunas/membrillo/frutos secos locales/hierbas aromáticas] como elemento diferenciador. Incluye: concepto del pan y storytelling, fórmula de panadero completa, proceso de incorporación del ingrediente (momento y método), resultado esperado en sabor y textura y sugerencia de acompañamiento ideal.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 177,
+   "titulo": "Fermentación en Frío: Técnica y Beneficios",
+   "cuerpo": "Quiero implementar la fermentación en frío (retard) en mi obrador. Explica: los beneficios técnicos (desarrollo de sabor, estructura de gluten, digestibilidad), cómo adaptar mis recetas actuales a la fermentación en frío, tiempos y temperaturas óptimas para distintos tipos de masa, logística de cámara para producción escalonada y comparativa de resultado vs fermentación a temperatura ambiente.",
+   "apps": [
+    "Panadería Creativa",
+    "Fermentus Con AI+"
+   ]
+  },
+  {
+   "n": 178,
+   "titulo": "Gestión de Stock y Mermas en Panadería",
+   "cuerpo": "En mi panadería tengo el problema de sobreproducción al final del día con merma del [%] del total producido. Diseña un sistema de gestión de producción ajustada: cómo predecir mejor la demanda por día de semana, qué hacer con el pan sobrante (segunda vida, donación, descuento de última hora), y cómo comunicar la escasez final del día como una ventaja de la artesanía.",
+   "apps": [
+    "Mermas GenCal",
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 179,
+   "titulo": "Certificación de Pan de Masa Madre",
+   "cuerpo": "Quiero certificar oficialmente que mi pan es 100% de masa madre sin aditivos. Investigá: qué certificaciones existen para pan artesano de masa madre (nacionales e internacionales), requisitos de cada una, coste y proceso de obtención, cómo diferencia visualmente los productos en etiqueta y packaging, y cómo comunicarlo en marketing para que el cliente lo entienda y valore.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 180,
+   "titulo": "Taller de Pan para Clientes",
+   "cuerpo": "Quiero organizar talleres de pan para clientes en mi panadería los sábados por la mañana. Diseña: estructura del taller de 3 horas (teoría, práctica, degustación), qué pan enseñar para cada nivel (principiante, intermedio), lista de materiales necesarios, precio del taller con análisis de rentabilidad y estrategia de comunicación para llenarlo cada semana.",
+   "apps": [
+    "Panadería Creativa"
+   ]
+  },
+  {
+   "n": 181,
+   "titulo": "Creación de Cóctel Signature",
+   "cuerpo": "Actúa como mixólogo creativo con 10 años de experiencia. Quiero desarrollar un cóctel signature para [NOMBRE DEL BAR/RESTAURANTE] que represente [CONCEPTO/HISTORIA/LUGAR]. Incluye: nombre del cóctel, ingredientes con medidas en cl, proceso de elaboración (técnica de preparación, vaso, hielo, guarnición), historia narrativa para que el bartender la cuente al cliente y coste estimado de producción.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 182,
+   "titulo": "Carta de Cócteles de Temporada",
+   "cuerpo": "Diseña la carta de cócteles de [TEMPORADA] para [NOMBRE DEL BAR] con [NÚMERO] referencias. Debe incluir: cócteles con alcohol (4-5), cócteles sin alcohol premium (2-3) y shots/aperitivos (2). Para cada cóctel: nombre, ingredientes con medidas exactas, técnica, presentación y precio de venta. Usar frutas, hierbas y sabores de temporada como hilo conductor.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 183,
+   "titulo": "Batching de Cócteles para Alta Demanda",
+   "cuerpo": "En mi bar sirvo [NÚMERO] copas de [CÓCTEL] en un servicio de alta demanda. Necesito hacer batching (preparación en lote) para servirlos rápido y con calidad constante. Explica: cómo escalar la receta a [LITROS] de batch, qué ingredientes añadir al momento (nunca en batch), cómo conservar el batch y por cuánto tiempo, y cómo mantener la calidad igual que uno a uno.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 184,
+   "titulo": "Maceración y Destilados Artesanos",
+   "cuerpo": "Quiero crear macerados e infusiones artesanas para mi bar usando [INGREDIENTES: frutas, especias, hierbas, flores]. Para cada maceración: base alcohólica idónea (vodka neutro/gin/pisco/ron blanco), proporción ingrediente/litro de alcohol, tiempo de maceración, temperatura y lugar óptimo, proceso de filtrado y estabilidad del producto final. Sugiere aplicaciones en cócteles concretos.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Fermentus Con AI+"
+   ]
+  },
+  {
+   "n": 185,
+   "titulo": "Cócteles Sin Alcohol de Alta Gama",
+   "cuerpo": "Diseña una propuesta de 5 mocktails de alta gama para clientes no alcohólicos. No quiero refrescos con fruta — quiero complejidad, capas aromáticas y sofisticación igual que en los cócteles con alcohol. Para cada mocktail: ingredientes (jarabes artesanos, fermentados no alcohólicos, amargos NA, zumos técnicos), elaboración y presentación. Con precio de venta sugerido.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 186,
+   "titulo": "Maridaje Coctelería y Gastronomía",
+   "cuerpo": "Trabaja conmigo en desarrollar el programa de maridaje entre los cócteles de mi barra y los platos del restaurante. Los platos del menú son: [LISTA]. Para cada plato propón 1-2 cócteles (con o sin alcohol) que complementen o contrasten armónicamente los sabores. Incluye la narrativa de presentación para que el equipo de sala lo comunique con confianza.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 187,
+   "titulo": "Gestión de Inventario de Barra",
+   "cuerpo": "Necesito optimizar el inventario de mi barra. Actualmente tengo [NÚMERO] referencias de destilados y estoy perdiendo dinero en: botellas abiertas que caducan, over-pouring del equipo y falta de productos clave. Diseña: sistema de control de pouring (jigger obligatorio, medidas estándar), lista de los 20 imprescindibles de toda barra bien surtida y protocolo de inventario semanal.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 188,
+   "titulo": "Formación en Técnicas de Barra",
+   "cuerpo": "Soy bartender senior y debo entrenar a mi equipo de [NÚMERO] personas en técnicas de barra. Diseña el programa de formación de 4 semanas: Semana 1 (bases de mixología y conocimiento de destilados), Semana 2 (técnicas de preparación y equipamiento), Semana 3 (recetas de la carta + mise en place), Semana 4 (servicio al cliente + venta). Con evaluación práctica final.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 189,
+   "titulo": "Experiencia de Cata de Destilados",
+   "cuerpo": "Quiero organizar noches de cata de destilados en mi bar: [TIPO: whiskies/rones/mezcales/gin]. Diseña: selección de 4-5 referencias con progresión lógica (de suaves a complejos), guion del anfitrión (presentación de cada destilado, vocabulario de cata, historia de la destilería), ficha de cata para el participante, precio del evento y maridaje de snacks para acompañar.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 190,
+   "titulo": "Carta de Vinos Natural y Vinos Naranja",
+   "cuerpo": "El dueño quiere incorporar una selección de vinos naturales y vinos naranja a la carta. Explica: qué son los vinos naturales y naranjas (perfil organoléptico, diferencias con vino convencional, cómo presentarlos a clientes escépticos), criterios de selección de referencias, 6-8 vinos concretos recomendados para empezar, temperatura de servicio y maridaje gastronómico específico para cada uno.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 191,
+   "titulo": "Construcción de Carta de Vinos",
+   "cuerpo": "Actúa como sommelier con experiencia en restaurantes de alta gama. Necesito construir la carta de vinos para [TIPO DE RESTAURANTE] con presupuesto de [IMPORTE] euros en stock inicial. Diseña: estructura de la carta (por región/uva/estilo), número de referencias por categoría, rango de precios de coste y venta, marcado estándar del sector, y las 20 referencias imprescindibles con las que empezar.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 192,
+   "titulo": "Servicio y Presentación de Vinos en Mesa",
+   "cuerpo": "Forma al equipo de sala en el servicio correcto del vino. Incluye: protocolo de presentación (mostrar botella, descorche, primer servicio, rellenado), temperatura de servicio por tipo de vino (tabla completa), tipo de copa por uva/región, cómo descubrir y presentar un vino defectuoso, y el vocabulario sencillo para describir un vino al cliente sin tecnicismos innecesarios.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 193,
+   "titulo": "Maridaje para Menú Degustación",
+   "cuerpo": "Diseña el maridaje de vinos para el siguiente menú degustación: [DESCRIPCIÓN DE CADA PLATO DEL MENÚ]. Para cada vino: denominación de origen, bodega, añada si es relevante, por qué marida con ese plato (argumento técnico y accesible), temperatura de servicio y precio de coste. Incluye también opción de maridaje alternativo sin alcohol para cada paso.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 194,
+   "titulo": "Gestión de Bodega de Restaurante",
+   "cuerpo": "Soy sommelier responsable de la bodega de [NOMBRE DEL RESTAURANTE] con stock de [NÚMERO] referencias y valor de [IMPORTE]. Diseña: sistema de control de inventario de bodega (entradas, salidas, rotación), criterios de reorden de cada categoría, clasificación por potencial de guarda vs consumo rápido, y cómo reducir el capital inmovilizado en stock sin quedar sin referencias clave.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 195,
+   "titulo": "Cata a Ciegas: Metodología WSET",
+   "cuerpo": "Quiero entrenar mis habilidades de cata a ciegas usando la metodología WSET nivel 3-4. Diseña un plan de entrenamiento de 3 meses: ejercicios de cata semanal (región, uvas, estilos a trabajar), fichas de cata sistemáticas con el sistema WSET, cómo identificar defectos, cómo trabajar la memoria olfativa y gustativa, y cómo preparar un argumento de identificación estructurado.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 196,
+   "titulo": "Formación en Vinos al Equipo de Sala",
+   "cuerpo": "Necesito formar al equipo de sala en conceptos básicos de vino para que vendan mejor. Diseña un programa de formación de 3 semanas (1 hora semanal): Semana 1 (vinos del mundo: las regiones principales en mapa), Semana 2 (nuestra carta: cada vino con su historia y maridaje), Semana 3 (técnica de venta: cómo recomendar vino sin imponer). Con cata práctica semanal.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 197,
+   "titulo": "Evento de Maridaje Temático",
+   "cuerpo": "Diseña el evento gastronómico de maridaje [TEMA: Rioja vs. Ribera/vinos naturales/champagnes vs. cavas/vinos de Jerez] para [NÚMERO] personas a [PRECIO] euros por persona. Incluye: selección de vinos con su historia, menú de 4 pasos adaptado, guion del sommelier para cada vino, ficha de cata, materiales para los asistentes y plan de comunicación del evento.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 198,
+   "titulo": "Selección de Vinos por Presupuesto de Cliente",
+   "cuerpo": "Un cliente me dice que quiere gastarse [IMPORTE] en vino para una mesa de [NÚMERO] comensales que pedirán [TIPO DE PLATOS]. Ayúdame a: recomendar la mejor combinación de vinos (blanco, tinto, posiblemente espumoso) dentro del presupuesto, argumentar la selección al cliente, prever el protocolo de servicio y sugerir cómo añadir valor sin sobrepasar el presupuesto.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 199,
+   "titulo": "Vinos del Mundo: Tendencias de Mercado",
+   "cuerpo": "Investiga las tendencias actuales del mercado de vinos en España: qué denominaciones de origen están creciendo, qué estilos de vino busca el consumidor millennial, el auge de los vinos naturales y biodinámicos, y las uvas autóctonas recuperadas más interesantes. Incluye cómo adaptar la carta de un restaurante gastronómico a estas tendencias con ejemplos de bodegas concretas.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 200,
+   "titulo": "Champagne y Espumosos: Guía Completa",
+   "cuerpo": "Necesito dominar el universo de espumosos para mejorar las ventas en mi restaurante. Crea la guía completa de: tipos de espumosos (champagne, cava, prosecco, crémant, pét-nat), método de elaboración de cada uno, categorías de dulzor (brut nature a demi-sec), temperaturas de servicio, tipos de copa, maridaje gastronómico específico para cada estilo y argumentos de venta para el personal de sala.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 201,
+   "titulo": "Desarrollo de Colección de Bombones",
+   "cuerpo": "Actúa como chocolatero artesano con enfoque creativo. Diseña una colección de 12 bombones para [TEMPORADA/OCASIÓN] con un hilo conductor conceptual: [TEMA: sabores del mundo/jardín botánico/ruta de especias]. Para cada bombón: nombre, tipo de chocolate exterior, descripción del relleno (receta de ganache/praliné/gianduja), técnica de decoración y precio de venta sugerido.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 202,
+   "titulo": "Praliné y Gianduja: Técnicas Maestras",
+   "cuerpo": "Explica en detalle la elaboración de praliné y gianduja artesanos. Para el praliné: tipos (húmedo, seco, mixto), proporciones de fruto seco y azúcar, proceso de tostado del fruto seco, caramelización, triturado y textura final. Para la gianduja: diferencias con el praliné, porcentaje de cacao, incorporación del chocolate y el paso crítico del refinado. Con recetas base y variaciones.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 203,
+   "titulo": "Cacao de Origen: Conocimiento Profundo",
+   "cuerpo": "Investiga los cacaos de origen más valorados en chocolatería fina: [ORIGEN 1: Perú, Venezuela, Madagascar, Vietnam]. Para cada origen: región específica y microclima, variedad de cacao (criollo/trinitario/forastero), perfil aromático esperado, bodegas o cooperativas de referencia, precio de mercado y cómo estos cacaos influyen en la receta de la tableta (ajuste de temperado, conchado).",
+   "apps": [
+    "Chocolatería Creativa",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 204,
+   "titulo": "Packaging y Presentación de Chocolatería",
+   "cuerpo": "Diseña la estrategia de packaging para mi chocolatería artesana [NOMBRE]. Incluye: naming y claim del producto, línea de packaging para: bombones individuales, caja de regalo (6 y 12 unidades), tableta artesana y pack corporativo. Para cada formato: materiales sostenibles, información obligatoria en etiqueta, estética recomendada y rango de precio del packaging.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 205,
+   "titulo": "Ruta Bean-to-Bar: Proceso Completo",
+   "cuerpo": "Explica el proceso completo bean-to-bar para hacer chocolate desde el cacao en grano hasta la tableta final. Fase a fase: recepción y selección del cacao, tostado (perfiles de tostado y su impacto en sabor), descascarillado, pre-refinado, refinado en melangeadora (tiempo óptimo), conchado (temperatura y duración para diferentes perfiles), temperado y moldeo.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 206,
+   "titulo": "Gestión de Pedidos Corporativos de Chocolatería",
+   "cuerpo": "Mi chocolatería artesana quiere desarrollar el canal corporativo (regalos de empresa). Diseña: paquetes corporativos por presupuesto (básico/premium/lujo), proceso de pedido personalizado (tiempos, cantidades mínimas, opciones de personalización), propuesta comercial tipo, cómo prospectar clientes corporativos y en qué momentos del año concentrar la venta corporativa.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 207,
+   "titulo": "Maridaje Chocolate y Destilados Finos",
+   "cuerpo": "Diseña una experiencia de maridaje chocolate-destilados para [NÚMERO] personas. Selecciona 4-5 pares de: tipo de chocolate (% cacao, origen, perfil de sabor) + destilado (whisky single malt/ron añejo/mezcal/armagnac). Para cada maridaje: por qué funcionan juntos (compuestos aromáticos compartidos), orden de degustación y cómo presentarlo con storytelling al participante.",
+   "apps": [
+    "Chocolatería Creativa",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 208,
+   "titulo": "Chocolate con Ingredientes No Convencionales",
+   "cuerpo": "Quiero desarrollar una línea de tabletas y bombones con ingredientes no convencionales que sorprendan: [INGREDIENTE INSÓLITO: miso/aceite de oliva/queso/té matcha/flores]. Para cada creación: argumentación del maridaje (por qué funciona), receta detallada (tipo de chocolate, porcentaje de inclusión del ingrediente especial), técnica de elaboración y nombre sugerido para la colección.",
+   "apps": [
+    "Chocolatería Creativa",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 209,
+   "titulo": "Escala de Producción: De Artesano a Semi-Industrial",
+   "cuerpo": "Mi chocolatería artesana está creciendo y necesito escalar la producción. Actualmente produzco [CANTIDAD] kg/semana. Quiero llegar a [CANTIDAD]. Ayúdame a: qué maquinaria adicional necesito (con coste estimado), cómo mantener la calidad artesana al escalar, qué procesos automatizar y cuáles deben permanecer manuales, y el impacto en el coste unitario de producción.",
+   "apps": [
+    "Chocolatería Creativa",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 210,
+   "titulo": "Festival y Feria de Chocolate: Estrategia",
+   "cuerpo": "Voy a participar en [NOMBRE DE FERIA/FESTIVAL DE CHOCOLATE]. Diseña la estrategia completa: qué productos llevar (criterios de selección para público de feria), presentación del stand (concepto visual, materiales, altura de estantes), estrategia de demostración en vivo para captar atención, cómo gestionar el stock durante la feria y cómo convertir visitantes en clientes recurrentes.",
+   "apps": [
+    "Chocolatería Creativa"
+   ]
+  },
+  {
+   "n": 211,
+   "titulo": "Business Plan para Primer Restaurante",
+   "cuerpo": "Quiero abrir mi primer restaurante. Tengo [IMPORTE] de capital inicial y el concepto es [DESCRIPCIÓN]. Ayúdame a construir el business plan completo: análisis de mercado local, estimación de inversión necesaria (reforma, equipamiento, licencias), previsión de ventas mes a mes el primer año, punto de equilibrio, fuentes de financiación alternativas al capital propio y principales riesgos a mitigar.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 212,
+   "titulo": "Elección del Local: Criterios Clave",
+   "cuerpo": "Voy a buscar local para abrir [TIPO DE NEGOCIO GASTRONÓMICO]. Ayúdame a definir: los criterios de evaluación de un local (superficie mínima, distribución, salida de humos, potencia eléctrica, ventilación, coste por m2 aceptable en [CIUDAD]), zonas de la ciudad con mejor potencial para mi concepto, red flags a identificar en un local antes de firmarlo y checklist de due diligence del local.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 213,
+   "titulo": "Financiación y Subvenciones para Hostelería",
+   "cuerpo": "Necesito financiación para [PROYECTO: apertura/reforma/equipamiento/digitalización] en mi negocio de hostelería en [COMUNIDAD AUTÓNOMA]. Investiga: líneas de financiación de ICO aplicables a hostelería, subvenciones autonómicas y del Ministerio para restauración/emprendimiento, fondos europeos FEDER aplicables, y las condiciones de cada una (importes, tipo de interés, plazo, requisitos).",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 214,
+   "titulo": "Negociación de Traspaso de Restaurante",
+   "cuerpo": "Quiero comprar el traspaso de [TIPO DE RESTAURANTE] en [ZONA]. El propietario pide [IMPORTE]. El negocio factura [X] euros anuales con [X%] de margen. Ayúdame a: valorar si el precio de traspaso es justo (múltiplos del sector), puntos críticos de due diligence (deudas, contratos, estado de instalaciones, historial sanitario), argumentos de negociación del precio y estructura del acuerdo.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 215,
+   "titulo": "Expansión: Segundo Local o Franquicia",
+   "cuerpo": "Mi restaurante [NOMBRE] funciona bien y quiero expandirme. Tengo dos opciones: abrir un segundo local propio o empezar a franquiciar el concepto. Analiza ambas opciones para mi caso concreto: [DESCRIPCIÓN DEL NEGOCIO ACTUAL]. Para cada opción: inversión necesaria, tiempo hasta rentabilidad, riesgos principales, complejidad de gestión y cuál recomiendas dado mi perfil.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 216,
+   "titulo": "Estrategia de Diversificación de Ingresos",
+   "cuerpo": "Mi restaurante depende casi al 100% del servicio de comidas/cenas y quiero diversificar ingresos. Analiza estas posibles líneas adicionales para [TIPO DE RESTAURANTE]: delivery propio, catering externo, tienda de productos propios, talleres gastronómicos, eventos privados, merchandise de marca. Para cada una: inversión inicial, potencial de ingresos, complejidad y encaje con mi modelo actual.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 217,
+   "titulo": "Gestión de Crisis de Negocio",
+   "cuerpo": "Mi restaurante está en una situación de crisis económica: la facturación ha caído un [%] en los últimos [MESES] por [CAUSA]. Tengo [MESES] de reserva de caja. Diseña el plan de rescate: acciones de reducción de costes inmediatas sin destruir el negocio, estrategias para incrementar ingresos a corto plazo, comunicación a empleados y proveedores y cuándo considerar opciones extremas.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Mermas GenCal"
+   ]
+  },
+  {
+   "n": 218,
+   "titulo": "Conciliación de Rol Chef-Empresario",
+   "cuerpo": "Soy chef y también dueño del restaurante. Me cuesta separar los roles y estoy en todo, agotado y sin poder delegar. Diseña: cómo estructurar mi tiempo entre gestión y cocina, qué decisiones debo tomar yo y cuáles delegar, cómo construir un equipo de confianza al que delegar, y cómo ir transitando de chef cocinando a chef empresario dirigiendo sin perder la esencia gastronómica.",
+   "apps": [
+    "Mental Coach AI",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 219,
+   "titulo": "Estrategia de Marca Personal del Chef",
+   "cuerpo": "Quiero construir mi marca personal como chef de [ESPECIALIDAD] para [OBJETIVO: conseguir consultoría/atraer clientes/conseguir sponsors/publicar libro/dar conferencias]. Diseña: propuesta de valor única de mi marca, plataformas donde construirla (Instagram, LinkedIn, TikTok, podcast), tipo de contenido que debo crear semanalmente, cómo monetizar la marca y hitos a 12 meses.",
+   "apps": [
+    "InstaFlow AI Pro",
+    "Gastro Calendar"
+   ]
+  },
+  {
+   "n": 220,
+   "titulo": "Venta del Negocio: Preparación y Valoración",
+   "cuerpo": "Quiero vender mi restaurante [DESCRIPCIÓN BREVE] en los próximos 2 años. Ayúdame a: preparar el negocio para ser más atractivo para compradores (qué mejorar en financieros, procesos, contratos), cómo valorarlo correctamente (métodos de valoración habituales en hostelería), dónde encontrar compradores potenciales y cómo estructurar el proceso de venta protegiendo confidencialidad.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 221,
+   "titulo": "Producción de Catering para 500 Personas",
+   "cuerpo": "Soy chef de catering y voy a producir un evento para [NÚMERO] personas con el siguiente menú: [DESCRIPCIÓN]. Diseña el plan de producción completo: qué preparar con [DÍAS] de antelación, qué el día anterior, qué la mañana del evento y qué en el lugar. Incluye: equipamiento de frío para transporte, tiempos de regeneración, personal necesario por puesto y orden de servicio.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 222,
+   "titulo": "Catering para Evento al Aire Libre",
+   "cuerpo": "Tengo un evento de catering al aire libre en [TIPO DE ESPACIO] para [NÚMERO] personas en [MES]. Los retos son: no hay cocina in situ, temperatura exterior de [APROX], y debo mantener todos los alimentos seguros. Diseña: menú adaptado a las condiciones (qué evitar, qué funciona bien al aire libre), equipamiento necesario, transporte en frío, montaje del espacio y protocolo de seguridad alimentaria.",
+   "apps": [
+    "Catering AI+",
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 223,
+   "titulo": "Menú Multicultural para Evento Internacional",
+   "cuerpo": "Voy a cocinar un banquete para un evento internacional con asistentes de [LISTA DE PAÍSES/CULTURAS]. Diseña un menú que: respete las restricciones culturales y religiosas de cada grupo (halal, kosher, vegetariano hindú, etc.), incorpore sabores que todos puedan disfrutar, sea visualmente global y festivo, y sea operativamente ejecutable en catering. Con indicación de alérgenos por plato.",
+   "apps": [
+    "Catering AI+",
+    "ID Alérgenos"
+   ]
+  },
+  {
+   "n": 224,
+   "titulo": "Briefing con el Cliente de Evento",
+   "cuerpo": "Voy a tener la reunión de briefing con un cliente para un evento de [TIPO]. Prepara: el cuestionario completo que debo hacerle (tipo de evento, número de invitados, presupuesto, restricciones, estilo deseado, espacio, hora, protocolo), los documentos que debo pedirle (plano del espacio, confirmación de restricciones dietéticas, punto de contacto el día del evento) y cómo cerrar un precio en esa misma reunión.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 225,
+   "titulo": "Gestión de Equipo Eventual en Catering",
+   "cuerpo": "Para mi próximo evento contrato [NÚMERO] cocineros eventuales que no conocen mi sistema de trabajo. Diseña: briefing de incorporación de 30 minutos para el día del evento, asignación de puestos y responsabilidades claras, protocolos de comunicación durante el servicio (señales, canales), cómo asegurar calidad y consistencia con personal nuevo y qué hacer si alguien falla.",
+   "apps": [
+    "Catering AI+",
+    "Mental Coach AI"
+   ]
+  }
+ ]
+}

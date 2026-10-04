@@ -1,0 +1,42 @@
+---
+// /en/digital-products/restaurant-financial-plan-templates — Restaurant Financial Plan Kit Pro (tienda
+// internacional EN). COPIA de pages/en/digital-products/restaurant-schedule-templates.astro (thin
+// wrapper: data → KitExcelLandingPage, SEO → BaseLayout) con lang="en". Réplica del ES
+// (pages/kit-plan-financiero.astro) por decisión de John (SPEC financial-kit §6): misma plantilla,
+// mismos componentes; solo cambian los datos (data/productos-en/kits/restaurant-financial-plan-templates.ts).
+//
+// - basePath SIN «/en»: BaseLayout ya antepone el prefijo del idioma (con «/en» saldría /en/en/…).
+// - hreflang recíproco con el gemelo ES vía alternatesFamilia('kit-plan-financiero') (lib/tienda.ts).
+// - whatsapp={false}: la plantilla pinta su propio botón de soporte (como el ES).
+// - omitGlobalApp: el SoftwareApplication global lleva ofertas en EUR y rating; en la tienda EN
+//   no puede salir ninguno de los dos (tienda-gate.py).
+// - miselup={false}: la tarjeta de Miselup es solo para la tienda ES (TIENDA §3.9).
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import KitExcelLandingPage from '../../../components/pages/KitExcelLandingPage.astro';
+import data from '../../../data/productos-en/kits/restaurant-financial-plan-templates';
+import { alternatesFamilia } from '../../../lib/tienda';
+
+const lang = 'en';
+const hreflang = alternatesFamilia('kit-plan-financiero');
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO) para que Vite la inline en build.
+// data.stripeEnvKey documenta cuál es; aquí se resuelve literal. Sin la env var (el Payment Link
+// lo crea John), el CTA cae a '#comprar' como en el resto de la línea.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT || '#comprar';
+---
+
+<BaseLayout
+  whatsapp={false}
+  omitGlobalApp
+  miselup={false}
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/digital-products/${data.slug}`}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
+  ogImage={data.seo.ogImage}
+>
+  <KitExcelLandingPage data={data} stripeLink={stripeLink} lang={lang} />
+</BaseLayout>

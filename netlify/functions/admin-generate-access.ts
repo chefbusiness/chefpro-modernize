@@ -7,9 +7,11 @@ import { emailI18n, tiendaLang, type TiendaLang } from '../shared/email-i18n';
 // (ADMIN_EMAIL, abajo) y el párrafo fijo de netlify/shared/email-i18n.ts, como en verify/resend.
 const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: TiendaLang }> = {
   'pro-prompts-ebook': { accessPath: '/pro-prompts-library-access', label: 'Pro Prompts eBook' },
+  'ai-prompts-for-restaurants': { accessPath: '/en/digital-products/ai-prompts-for-restaurants/access', label: 'Gastro Pro Prompts eBook', lang: 'en' },
   'kit-escandallos': { accessPath: '/kit-escandallos-access', label: 'Kit de Escandallos Pro' },
   'food-cost-templates': { accessPath: '/en/digital-products/food-cost-templates/access', label: 'Food Cost Kit Pro', lang: 'en' },
   'pack-appcc': { accessPath: '/pack-appcc-access', label: 'Pack Plantillas APPCC' },
+  'haccp-templates': { accessPath: '/en/digital-products/haccp-templates/access', label: 'HACCP Food Safety Kit Pro', lang: 'en' },
   'kit-tareas': { accessPath: '/kit-tareas-access', label: 'Kit de Tareas Recurrentes' },
   'kit-tareas-cafeteria': { accessPath: '/kit-tareas-cafeteria-access', label: 'Kit Tareas Cafetería' },
   'kit-tareas-pizzeria': { accessPath: '/kit-tareas-pizzeria-access', label: 'Kit Tareas Pizzería' },
@@ -24,9 +26,11 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'kit-tareas-restaurante-creativo': { accessPath: '/kit-tareas-restaurante-creativo-access', label: 'Kit Tareas Restaurante Creativo' },
   'kit-tareas-chef-privado': { accessPath: '/kit-tareas-chef-privado-access', label: 'Kit Tareas Chef Privado' },
   'kit-gestion-personal': { accessPath: '/kit-gestion-personal-access', label: 'Kit Gestión de Personal' },
+  'restaurant-schedule-templates': { accessPath: '/en/digital-products/restaurant-schedule-templates/access', label: 'Restaurant Staff Scheduling Kit Pro', lang: 'en' },
   'kit-inventario': { accessPath: '/kit-inventario-access', label: 'Kit Control de Inventario' },
   'restaurant-inventory-templates': { accessPath: '/en/digital-products/restaurant-inventory-templates/access', label: 'Restaurant Inventory Kit Pro', lang: 'en' },
   'kit-plan-financiero': { accessPath: '/kit-plan-financiero-access', label: 'Kit Plan Financiero' },
+  'restaurant-financial-plan-templates': { accessPath: '/en/digital-products/restaurant-financial-plan-templates/access', label: 'Restaurant Financial Plan Kit Pro', lang: 'en' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },

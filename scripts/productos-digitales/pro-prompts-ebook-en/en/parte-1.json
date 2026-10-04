@@ -1,0 +1,874 @@
+{
+ "portada": [
+  {
+   "estilo": "B-36.0-#1a1a1a",
+   "texto": "AI CHEF PRO"
+  },
+  {
+   "estilo": "B-24.0-#1d3a5e",
+   "texto": "GASTRO PRO PROMPTS eBOOK"
+  },
+  {
+   "estilo": "I-12.0-#666666",
+   "texto": "300 professional prompts for the food & beverage industry"
+  },
+  {
+   "estilo": "B-11.0-#1a1a1a",
+   "texto": "300 Prompts  ·  3 Blocks  ·  33 Sections  ·  70+ AI Agents"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "For chefs, managers, pastry chefs, bakers, bartenders, chocolatiers,"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "sommeliers, restaurant owners, caterers, food truckers and every professional in the industry."
+  },
+  {
+   "estilo": "B-12.0-#1a1a1a",
+   "texto": "aichef.pro"
+  }
+ ],
+ "bienvenida": [
+  {
+   "estilo": "B-16.0-#1a1a1a",
+   "texto": "Welcome to the Gastro Pro Prompts eBook"
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "This eBook contains 300 professional prompts ready to use in AI Chef Pro. A well-built prompt multiplies the value of any AI tool. Here you will find prompts organized into 3 strategic blocks, designed to cover every situation you face in the day-to-day of the food & beverage industry."
+  },
+  {
+   "estilo": "B-13.0-#1a1a1a",
+   "texto": "How the eBook Is Organized"
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "BLOCK A — Thematic Categories (#001 – #140)"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "10 categories × 14 prompts: Creative Cooking; Management, Costs & Waste; Catering; Digital Marketing; Pastry; Food Pairing; Allergens; Business Management; Leadership & Teams; Deep Research."
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "BLOCK B — Professional Profiles (#141 – #240)"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "10 profiles × 10 prompts. Executive Chef, Manager, Pastry Chef, Baker, Bartender, Sommelier, Chocolatier, Owner/Entrepreneur, Catering Chef, Food & Beverage Consultant."
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "BLOCK C — Business Types + Agents (#241 – #300)"
+  },
+  {
+   "estilo": "I-10.0-#666666",
+   "texto": "7 business types + specialized agents in the suite: Independent Restaurant; Casual Restaurant & Bistro; Hotel & Hotel Food Service; Ghost Kitchen / Delivery; Pastry Shop & Production Kitchen; Bar & Cocktails; Food Truck; plus Specialized Agents."
+  },
+  {
+   "estilo": "B-13.0-#1a1a1a",
+   "texto": "How to Use This eBook"
+  },
+  {
+   "estilo": "R-10.0-#1a1a1a",
+   "texto": "1. Find your category, profile or business type in its block (see the structure above). 2. Copy the prompt straight into the matching agent in AI Chef Pro. 3. Replace the fields in [BRACKETS] with your own information. 4. Experiment: adjust the tone, extend the request or combine prompts. 5. Save your best results — they are assets of your business."
+  }
+ ],
+ "cierre": [
+  {
+   "estilo": "B-18.0-#1a1a1a",
+   "texto": "Thank you for choosing AI Chef Pro!"
+  },
+  {
+   "estilo": "R-11.0-#666666",
+   "texto": "You now hold 300 tools to transform your food & beverage work."
+  },
+  {
+   "estilo": "I-11.0-#1d3a5e",
+   "texto": "The only limit is your curiosity."
+  },
+  {
+   "estilo": "B-14.0-#1a1a1a",
+   "texto": "aichef.pro"
+  }
+ ],
+ "bloques": [
+  {
+   "etiqueta": "BLOCK A",
+   "titulo": "Thematic Categories",
+   "rango": "#001 – #140",
+   "intro": "10 major thematic categories covering every area of professional culinary and food & beverage work. Each category includes 14 ready-to-use prompts."
+  },
+  {
+   "etiqueta": "BLOCK B",
+   "titulo": "Professional Profiles",
+   "rango": "#141 – #240",
+   "intro": "10 professional profiles from the food & beverage industry. Each profile includes 10 prompts designed specifically for the challenges and responsibilities of that role."
+  },
+  {
+   "etiqueta": "BLOCK C",
+   "titulo": "Business Types + Agents",
+   "rango": "#241 – #300",
+   "intro": "Prompts specific to each type of food & beverage business and to the specialized agents in the AI Chef Pro suite. Designed for the concrete situations of each business model."
+  }
+ ],
+ "secciones": [
+  {
+   "encabezado": "1. Creative Cooking & Signature Recipes",
+   "rango": "Prompts #001 – #014"
+  },
+  {
+   "encabezado": "2. Management, Costs & Waste",
+   "rango": "Prompts #015 – #028"
+  },
+  {
+   "encabezado": "3. Catering & Food Events",
+   "rango": "Prompts #029 – #042"
+  },
+  {
+   "encabezado": "4. Digital Marketing & Social Media",
+   "rango": "Prompts #043 – #056"
+  },
+  {
+   "encabezado": "5. Pastry, Bakery & Chocolate Making",
+   "rango": "Prompts #057 – #070"
+  },
+  {
+   "encabezado": "6. Food Pairing",
+   "rango": "Prompts #071 – #084"
+  },
+  {
+   "encabezado": "7. Allergens & Food Safety",
+   "rango": "Prompts #085 – #098"
+  },
+  {
+   "encabezado": "8. Business Management & Profitability",
+   "rango": "Prompts #099 – #112"
+  },
+  {
+   "encabezado": "9. Leadership, Teams & Well-Being",
+   "rango": "Prompts #113 – #126"
+  },
+  {
+   "encabezado": "10. Deep Research & Culinary Investigation",
+   "rango": "Prompts #127 – #140"
+  },
+  {
+   "encabezado": "1. Executive Chef",
+   "rango": "Prompts #141 – #150"
+  },
+  {
+   "encabezado": "2. Restaurant Manager",
+   "rango": "Prompts #151 – #160"
+  },
+  {
+   "encabezado": "3. Professional Pastry Chef",
+   "rango": "Prompts #161 – #170"
+  },
+  {
+   "encabezado": "4. Artisan Baker",
+   "rango": "Prompts #171 – #180"
+  },
+  {
+   "encabezado": "5. Bartender / Mixologist",
+   "rango": "Prompts #181 – #190"
+  },
+  {
+   "encabezado": "6. Sommelier",
+   "rango": "Prompts #191 – #200"
+  },
+  {
+   "encabezado": "7. Artisan Chocolatier",
+   "rango": "Prompts #201 – #210"
+  },
+  {
+   "encabezado": "8. Owner / Food & Beverage Entrepreneur",
+   "rango": "Prompts #211 – #220"
+  },
+  {
+   "encabezado": "9. Catering & Events Chef",
+   "rango": "Prompts #221 – #230"
+  },
+  {
+   "encabezado": "10. Food & Beverage Consultant",
+   "rango": "Prompts #231 – #240"
+  },
+  {
+   "encabezado": "1. Independent Restaurant",
+   "rango": "Prompts #241 – #247"
+  },
+  {
+   "encabezado": "2. Casual Restaurant & Bistro",
+   "rango": "Prompts #248 – #249"
+  },
+  {
+   "encabezado": "3. Hotel & Hotel Food Service",
+   "rango": "Prompts #250 – #256"
+  },
+  {
+   "encabezado": "4. Ghost Kitchen / Delivery",
+   "rango": "Prompts #257 – #263"
+  },
+  {
+   "encabezado": "5. Pastry Shop & Production Kitchen",
+   "rango": "Prompts #264 – #269"
+  },
+  {
+   "encabezado": "6. Bar & Cocktails",
+   "rango": "Prompts #270 – #275"
+  },
+  {
+   "encabezado": "7. Food Truck",
+   "rango": "Prompts #276 – #281"
+  },
+  {
+   "encabezado": "8. Specialized Agents: Fermentation",
+   "rango": "Prompts #282 – #284"
+  },
+  {
+   "encabezado": "9. Specialized Agents: World Cuisines",
+   "rango": "Prompts #285 – #290"
+  },
+  {
+   "encabezado": "10. Specialized Agents: Technical Tools",
+   "rango": "Prompts #291 – #294"
+  },
+  {
+   "encabezado": "11. Specialized Agents: Content & Social Media",
+   "rango": "Prompts #295 – #297"
+  },
+  {
+   "encabezado": "12. Specialized Agents: Business Concepts",
+   "rango": "Prompts #298 – #299"
+  },
+  {
+   "encabezado": "13. Specialized Agents: Vision of the Future",
+   "rango": "Prompts #300 – #300"
+  }
+ ],
+ "prompts": [
+  {
+   "n": 1,
+   "titulo": "Signature Recipe with a Local Ingredient",
+   "cuerpo": "Act as a high-end chef with 15 years of experience in product-driven cuisine. I want to develop a signature recipe using [LOCAL INGREDIENT/STAR INGREDIENT]. The dish must reflect [CULINARY PHILOSOPHY: seasonal/hyperlocal/avant-garde]. Include: the story of the dish, ingredients with exact quantities for 4 servings, step-by-step preparation, suggested plating and a recommended pairing.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Spanish Cuisine"
+   ]
+  },
+  {
+   "n": 2,
+   "titulo": "Reinterpreting a Classic",
+   "cuerpo": "You are a creative chef specialized in avant-garde cuisine. Take the classic dish [CLASSIC DISH NAME] and reinterpret it with modern techniques. Keep the essence of the original flavor but transform the texture, presentation and cooking technique. Give me 3 different versions: a minimalist one, a deconstructed one and one with a cultural fusion [CULTURE].",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 3,
+   "titulo": "7-Course Tasting Menu",
+   "cuerpo": "Design a 7-course tasting menu for a [TYPE/CONCEPT] restaurant. Each dish must have narrative coherence, as if telling a culinary story about [THEME: a journey, a season, a memory]. For each course include: a poetic dish name, main ingredients, key technique and estimated kitchen prep time.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 4,
+   "titulo": "Signature Zero-Waste Recipe",
+   "cuerpo": "Act as a chef specialized in sustainable, zero-waste cooking. I have these whole ingredients available: [LIST OF INGREDIENTS]. Create a signature recipe that uses 100% of each ingredient, including the parts that are normally discarded (skins, seeds, stems, bones). Explain which part of each ingredient is used and for which preparation.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 5,
+   "titulo": "Recipe Built Around a Specific Technique",
+   "cuerpo": "I'm a chef and I want to master the technique of [TECHNIQUE: spherification/gelification/emulsification/fermentation/cold smoking]. Design a complete recipe that has this technique as its star. Include: a scientific explanation of the technique, ingredients with exact weights (grams or ounces), step-by-step process with critical temperatures and times, common mistakes to avoid and how to present it on the menu.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 6,
+   "titulo": "Cultural Fusion with a Scientific Basis",
+   "cuerpo": "Combine [CULTURE 1] cuisine with [CULTURE 2] cuisine to create a fusion dish that makes culinary sense, not just aesthetic sense. Argue why these two culinary worlds are compatible from the standpoint of shared aromatic profiles. Develop the complete recipe with ingredients from both cultures and mixed preparation techniques.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 7,
+   "titulo": "Fine-Dining Plant-Based Recipe",
+   "cuerpo": "You are a chef specialized in high-end plant-based cooking. Create a vegan main course for a fine-dining restaurant using [MAIN VEGETABLE/LEGUME/MUSHROOM]. The dish must be satisfying, complex in flavor and visually striking. Include techniques to boost plant-based umami, protein substitutes and Michelin-star-level presentation.",
+   "apps": [
+    "VegChef Plant-Based",
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 8,
+   "titulo": "Seasonal Recipe with Storytelling",
+   "cuerpo": "Create a recipe for the [SEASON/MONTH] season using the best market products of that time of year. Also develop the story of the dish for the menu: a narrative of at most 80 words that evokes the origin of the ingredient, the local producer (fictional but believable) and the emotion the dish aims to convey to the guest.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 9,
+   "titulo": "Recipe for a Prix-Fixe Menu",
+   "cuerpo": "Design a prix-fixe menu of [NUMBER] courses for a restaurant with an average check of [PRICE] per person. The target food cost is [%]. Provide the complete recipe for each dish with a basic cost card per portion, listing ingredient, quantity in grams and estimated cost per dish.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 10,
+   "titulo": "Signature Appetizers and Snacks",
+   "cuerpo": "Create a series of 6 signature appetizers/snacks to open a menu at a [TYPE OF RESTAURANT]. They must be 1-inch bites (2-3 cm), served in a single mouthful and visually surprising. For each one: name, main ingredient, technique, serving temperature and a verbal description so the front-of-house team can present them correctly.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 11,
+   "titulo": "Mother Sauces and Their Derivatives",
+   "cuerpo": "Develop the recipe for the mother sauce [SAUCE NAME: espagnole/velouté/béchamel/hollandaise/tomato] with its exact proportions and classic preparation technique. From it, generate 5 derivative sauces with their specific modifications. Include culinary applications for each derivative and recommended storage.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 12,
+   "titulo": "Creative Mise en Place for Service",
+   "cuerpo": "I'm a head chef in a restaurant with [NUMBER] services per day. Design the complete mise en place to prepare the dish [DISH NAME] in record time during service. Organize it in order of anticipation: day-before preparations, morning preparations and à la minute tasks. Include estimated times and quality-control checkpoints.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 13,
+   "titulo": "Recipe with Multiple Restrictions",
+   "cuerpo": "A guest has the following dietary restrictions: [LIST: gluten-free/lactose-free/egg-free/vegan/nut-free]. Adapt the recipe for [ORIGINAL DISH] so it suits this profile without losing flavor, texture or presentation. Clearly state the substitutes used and how the preparation process changes.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 14,
+   "titulo": "Recipe Inspiration Board",
+   "cuerpo": "Act as a culinary creative director. Based on the following conceptual inputs: color [COLOR], emotion [EMOTION], season [SEASON], childhood memory [MEMORY], develop a signature recipe that synthesizes all of these elements. Explain how each ingredient or technique represents each of the inputs given.",
+   "apps": [
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 15,
+   "titulo": "Complete Professional Recipe Costing",
+   "cuerpo": "Act as an expert food & beverage controller. I need the complete recipe costing for the dish [DISH NAME]. For each ingredient state: gross quantity in grams, yield loss percentage by type of processing, resulting net quantity, cost per kg/unit and net cost per portion. At the end calculate the total food cost and the suggested selling price with a margin of [%].",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 16,
+   "titulo": "Yield Loss Analysis by Ingredient",
+   "cuerpo": "I need the exact yield loss percentages for the following ingredients under the conditions I specify: [INGREDIENT 1] with process [PROCESS: peeling/filleting/deboning], [INGREDIENT 2] with process [PROCESS], [INGREDIENT 3] with process [PROCESS]. For each one state the standard yield loss percentage, the causes of variation and how to optimize yield.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 17,
+   "titulo": "Menu Food Cost Optimization",
+   "cuerpo": "I have a menu with an average food cost of [%] and I need to bring it down to [%] without lowering perceived quality. Analyze these dish categories: [APPETIZERS/MAIN COURSES/DESSERTS] with their current selling prices. Suggest which ingredients to substitute, which portions to adjust and which high-cost dishes could have more profitable alternative versions.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 18,
+   "titulo": "By-Product Utilization Plan",
+   "cuerpo": "In my kitchen I generate the following by-products every week: [LIST OF BY-PRODUCTS: fish bones/peels/meat trimmings/etc.]. Design a complete utilization plan to turn each by-product into something of value: stocks, infused oils, crisps, powders, etc. Include a basic recipe and a menu application for each one.",
+   "apps": [
+    "Waste GenCal",
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 19,
+   "titulo": "Menu Engineering Matrix",
+   "cuerpo": "Apply the menu engineering methodology (stars/plowhorses/puzzles/dogs matrix) to my current menu. I have these dishes with last month's sales data and cost: [LIST OF DISHES WITH SALES AND COST FOR EACH]. Classify each dish into its quadrant, explain the reasoning and recommend concrete actions for each category.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 20,
+   "titulo": "Monthly Raw Materials Budget",
+   "cuerpo": "I'm the chef of a restaurant with [NUMBER] covers per day and [NUMBER] operating days per month. The average check is [PRICE] and the target food cost is [%]. Calculate the monthly raw materials budget and break it down by category: meats, fish, vegetables, dairy, beverages and other. Include a safety margin of [%] for unexpected costs.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 21,
+   "titulo": "Profitability Analysis by Dish",
+   "cuerpo": "Calculate the real profitability of these dishes on my menu, considering not only ingredient cost but also labor cost based on preparation time: [DISH 1: ingredients, prep time, selling price], [DISH 2], [DISH 3]. Include the real contribution margin and an optimal price recommendation.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 22,
+   "titulo": "Standard Recipe for Standardization",
+   "cuerpo": "Write the standardized recipe card for the dish [DISH NAME] so that any member of my team can prepare it identically. The card must include: a photo of the final plating (detailed description), ingredients with exact weights (grams or ounces) per portion and per 10 portions, numbered preparation process, serving temperature, plateware to use and updated cost.",
+   "apps": [
+    "Waste GenCal",
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 23,
+   "titulo": "Inventory Control with AI",
+   "cuerpo": "Design an inventory control system for a [TYPE OF BUSINESS] kitchen with [NUMBER] employees. Include: product categories to inventory, recommended counting frequency, reorder thresholds for the 20 most-used products, a simplified log sheet and an alert protocol for when stock drops below the minimum. Practical format to print and use in the kitchen.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 24,
+   "titulo": "Supplier Negotiation",
+   "cuerpo": "Act as a food & beverage purchasing advisor. I need to negotiate better terms with my [CATEGORY: meat/fish/fruit and vegetable/dairy] supplier. My monthly purchase volume is [QUANTITY/AMOUNT]. Write a negotiation pitch, the key points to negotiate (price, payment terms, exclusivity, volume discounts) and a professional email to open the negotiation.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 25,
+   "titulo": "Food Waste Reduction",
+   "cuerpo": "My restaurant currently generates [KG/WEEK] of food waste. The main sources of waste are: [LIST]. Design a 3-phase waste reduction plan (30, 60, 90 days) with concrete actions, who is responsible for each action and tracking metrics. Include a calculation of the potential cost savings.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 26,
+   "titulo": "Strategic Menu Pricing",
+   "cuerpo": "Help me review the pricing of my menu. My data: restaurant type [TYPE], location [CITY/AREA], direct competition with an average price of [PRICE], my labor costs represent [%] of revenue. Analyze these [NUMBER] dishes with their current costs and suggest the optimal selling price using these methodologies: cost multiplier, perceived value and market price.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 27,
+   "titulo": "Simplified HACCP for the Kitchen",
+   "cuerpo": "Design the HACCP critical control points for the preparation process of [TYPE OF DISH/PREPARATION: carpaccio/tartare/desserts with raw egg/smoked items]. Include: hazards identified at each stage, critical limits, monitoring system, corrective actions and documented records. Simple, visual format for use in the kitchen.",
+   "apps": [
+    "Allergen ID",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 28,
+   "titulo": "Weekly Order Optimization",
+   "cuerpo": "I have next week's menu with these dishes: [LIST OF DISHES]. My estimated portions per day are: [MONDAY: 40, TUESDAY: 55...]. Generate the optimized supplier order list, grouped by category and supplier, with the exact quantities needed plus a [%] margin. Indicate what can be prepared in advance to optimize the cold chain.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 29,
+   "titulo": "Wedding Menu Proposal",
+   "cuerpo": "Design a complete menu proposal for a wedding with [NUMBER] guests and a budget of [PRICE] per person. The style of the event is [STYLE: classic/bohemian/rustic/modern]. 20% of the guests have restrictions: [LIST]. Include: welcome cocktail, first course, second course, dessert and sweet table. With a client-facing presentation and cost breakdown.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 30,
+   "titulo": "Kitchen Logistics for a Large Event",
+   "cuerpo": "I'm the chef in charge of a catering event for [NUMBER] guests. The agreed menu is [BRIEF DESCRIPTION]. The event is on [DATE] at [TYPE OF VENUE]. Create the complete production plan: prep schedule (D-3, D-2, D-1, event day by the hour), list of required equipment, recommended minimum crew and critical temperature and food safety points.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 31,
+   "titulo": "Detailed Catering Quote",
+   "cuerpo": "I need to prepare a detailed quote for a catering service: [EVENT DESCRIPTION]. Break it down by: raw material cost, staff (hours × role), equipment/tableware rental, transport/travel, disposables/presentation materials, profit margin of [%] and sales tax/VAT. Present the quote in a professional format to send to the client.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 32,
+   "titulo": "Corporate Catering Menu",
+   "cuerpo": "Design 3 menu proposals for a corporate event for [COMPANY/SECTOR] with [NUMBER] attendees. Guest profile: executives aged 35-55, a 2-hour working lunch. The proposals must be: BASIC (economical and efficient), MID (balance of quality and price) and PREMIUM (high-impact representation). Include the recommended setup for each option.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 33,
+   "titulo": "Themed Welcome Cocktail Reception",
+   "cuerpo": "Design the welcome cocktail reception for a themed event based on [THEME: harvest/Mediterranean/70s/Spain around the world]. Include: 8-10 finger food pieces with short recipes, 2 signature non-alcoholic cocktails and 2 alcoholic ones related to the theme, presentation and decoration of the space consistent with the theme and recommended service timing.",
+   "apps": [
+    "Catering AI+",
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 34,
+   "titulo": "Allergen Management at Large Events",
+   "cuerpo": "I have a catering job for [NUMBER] people where [%] have a variety of dietary restrictions. Create the complete allergen management protocol for the event, based on the allergen rules that apply to you (US: the FDA's 9 major allergens · UK/EU: the 14 regulated allergens): identification of guests with restrictions, system of differentiated trays/plates, communication to the front-of-house team, labeling at the buffet and an emergency protocol if there is an allergic reaction.",
+   "apps": [
+    "Catering AI+",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 35,
+   "titulo": "International Buffet for a Hotel",
+   "cuerpo": "Design the international breakfast/lunch/dinner buffet for a [CATEGORY] hotel with [NUMBER] rooms. The guest profile is: [DESCRIPTION]. Include a weekly rotation of the buffet items so that long-stay guests don't see repeats, considering: cultural variety, profitability per linear foot of display and rotation of the offering.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 36,
+   "titulo": "Food Truck for a Special Event",
+   "cuerpo": "Design the complete culinary concept to take my food truck to the [TYPE OF EVENT: festival/fair/Christmas market/sporting event] event. The space is [SQUARE FEET] and the expected attendance is [NUMBER] people over [HOURS]. Include: a reduced, executable menu (4-6 products), selling price, estimated cost, required equipment and a visibility strategy at the event.",
+   "apps": [
+    "Food Truck AI+",
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 37,
+   "titulo": "Corporate Holiday Menu",
+   "cuerpo": "Design the menu for the company holiday dinner/lunch for [NUMBER] people with a budget of [PRICE] per person. The venue is [DESCRIPTION]. The menu must have a festive spirit without being excessively expensive. Include an alcohol-free option for each course, an adaptation for the [%] of the group who are vegetarian and a matching table decoration proposal.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 38,
+   "titulo": "Pre-Service Catering Checklist",
+   "cuerpo": "Generate the complete operational checklist for the day of a [TYPE] catering event. Organized by phases: 4 hours before, 2 hours before, 1 hour before, 30 minutes before, during service and close-down/breakdown. Include: food temperature control, space layout, confirmation of quantities, staff readiness and backup equipment.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 39,
+   "titulo": "Catering Profitability",
+   "cuerpo": "Analyze the profitability of my last 3 catering events: [EVENT 1: type, guests, revenue, actual costs], [EVENT 2], [EVENT 3]. Calculate the net margin of each, identify where costs deviated from the original budget and provide 5 concrete recommendations to improve profitability on similar future events.",
+   "apps": [
+    "Catering AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 40,
+   "titulo": "Wine List for an Event",
+   "cuerpo": "Design the wine selection for a [TYPE] event with menu [DESCRIPTION]. Budget per bottle: between [MINIMUM PRICE] and [MAXIMUM PRICE]. Include: 2 whites, 2 reds, 1 rosé and 1 sparkling wine for the toast. For each wine state: appellation of origin, grape variety, specific pairing with the dish on the menu and approximate cost price.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 41,
+   "titulo": "Complaints and Returns Protocol for Catering",
+   "cuerpo": "Write the professional incident management protocol for catering services. Include the procedure for: a dish that arrives cold, cross-contamination detected at an event, a shortage in the quantity of product, a complaint about the quality of a specific dish, a client dissatisfied with the overall presentation. For each case: immediate response, solution, follow-up and compensation.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 42,
+   "titulo": "Catering Sales Proposal",
+   "cuerpo": "Write a professional sales proposal for the catering service for [EVENT: type, date, guests]. The proposal must include: introduction of the service, detailed menu, terms of service, staff included, cancellation policy, payment method and differentiators from the competition. Formal but warm style, aimed at closing the sale.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 43,
+   "titulo": "Instagram Post for a Signature Dish",
+   "cuerpo": "Act as a food & beverage copywriter specialized in social media. Write the Instagram post to present [DISH NAME] from my restaurant. Communication style: [TONE: elegant/casual/emotional/technical]. Include: 3 versions of the caption (short 50 words, medium 100 words, long 200 words), 15 hashtags segmented by reach and the text for the introductory Stories.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 44,
+   "titulo": "Monthly Content Calendar",
+   "cuerpo": "Create the social media content calendar for [BUSINESS NAME] for the month of [MONTH/YEAR]. Type of business: [DESCRIPTION]. Include: date, platform (Instagram/Facebook/TikTok/Pinterest), content type (reels/carousel/photo/stories), post topic, call to action and goal (engagement/sales/branding/education). Table format for 30 days.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 45,
+   "titulo": "SEO Description for a Dish on the Website",
+   "cuerpo": "Write the SEO-optimized description of the dish [DISH NAME] for my restaurant's website. City where the restaurant is located: [CITY]. Include: SEO title (55-60 characters), meta description (150-160 characters), long description of the dish for the website (200 words), secondary keywords to use naturally and a call to action to book.",
+   "apps": [
+    "Menu Dish Local SEO"
+   ]
+  },
+  {
+   "n": 46,
+   "titulo": "Professional Reply to a Negative Review",
+   "cuerpo": "Act as a restaurant communications director. A guest left this negative review on Google: [REVIEW TEXT]. Write 3 versions of a reply: one empathetic and apologetic, one that explains the context without making excuses, and one that turns the complaint into a visible opportunity for improvement. All must be professional, non-defensive and aimed at winning the guest back.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 47,
+   "titulo": "Script for Cooking Reels",
+   "cuerpo": "Write the complete script for a 60-second Instagram Reel showing the preparation of [DISH NAME]. Include: scenes with a visual description, on-screen text for each scene, suggested music by genre, a final call to action and the post caption. The style must be [STYLE: professional/fun/educational/emotional] and aimed at [GOAL].",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 48,
+   "titulo": "Newsletter for Restaurant Guests",
+   "cuerpo": "Write the monthly newsletter for the guests of [RESTAURANT NAME]. In this issue include: a new menu item for [MONTH], an upcoming special event [EVENT], the story of the chef/team (humanization), a featured seasonal product and an exclusive offer for subscribers. Warm style, like a personal letter from foodie friends. Length: 400-500 words.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 49,
+   "titulo": "New Menu Launch Strategy",
+   "cuerpo": "Design the complete communication strategy for the launch of the new seasonal menu at [RESTAURANT NAME]. Include a 4-week plan: teaser week, reveal week, official launch week and consolidation week. For each week: social media actions, press communication, email marketing and in-house activations.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 50,
+   "titulo": "Chef's Bio and Professional Profile",
+   "cuerpo": "Write the professional bio of chef [NAME] for: Instagram profile (150 characters), restaurant website (200 words), press release (400 words) and LinkedIn (300 words). Their details are: [EXPERIENCE, TRAINING, CUISINE, ACHIEVEMENTS, PHILOSOPHY]. Each version adapted to the corresponding channel and tone.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 51,
+   "titulo": "Content for Food Pinterest",
+   "cuerpo": "Create 10 pin ideas for the [TOPIC: easy recipes/cooking techniques/world dishes/baking] board of my food Pinterest profile. For each pin state: title (max 100 characters), description (max 500 characters), relevant keywords for Pinterest SEO and the ideal type of image to go with it. Optimized for search on Pinterest.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 52,
+   "titulo": "Email Campaign for a Special Event",
+   "cuerpo": "Design a 3-phase email campaign to promote [EVENT: special dinner/themed night/launch of a new space] on [DATE]. Email 1 (teaser, 2 weeks before), Email 2 (main invitation, 1 week before), Email 3 (last call + urgency, 2 days before). For each email: subject line, preheader, body copy and CTA. Tone: [TONE].",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 53,
+   "titulo": "Hashtag Strategy by Restaurant Type",
+   "cuerpo": "Develop the complete hashtag strategy for a [TYPE OF RESTAURANT] located in [CITY]. Create 4 groups of hashtags: mega hashtags (1M+ posts), large hashtags (100K-1M), medium (10K-100K) and niche (<10K). Also include geotagged hashtags for [CITY] and [NEIGHBORHOOD/AREA]. A total of 60 hashtags organized and ready to use in rotation.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 54,
+   "titulo": "Menu Presentation Script for Front of House",
+   "cuerpo": "Create the verbal script that the front-of-house staff will use to present the dishes of the new menu to guests. For each of these dishes: [LIST OF DISHES], write a 20-30 second oral presentation that highlights: the main ingredient and its origin, the main cooking technique, the flavor/texture the guest will experience. Evocative language but not pretentious.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 55,
+   "titulo": "Influencer Collaboration Plan",
+   "cuerpo": "Design the collaboration plan with food influencers for [RESTAURANT NAME]. Include: ideal influencer profile (followers, engagement, niche), briefing for the visit (what to show, what key messages to communicate), collaboration terms (compensation, minimum content, publishing timing) and success metrics for the collaboration.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 56,
+   "titulo": "Google Business Profile Optimization",
+   "cuerpo": "Optimize the Google Business Profile presence of [RESTAURANT NAME] in [CITY]. Generate: business description (750 characters, SEO-optimized with local keywords), standard replies to the 5 most common guest questions, 3 Google Posts for next month and a review management protocol (positive and negative) with reply templates.",
+   "apps": [
+    "Menu Dish Local SEO"
+   ]
+  },
+  {
+   "n": 57,
+   "titulo": "Restaurant Dessert Recipe",
+   "cuerpo": "Act as the executive pastry chef of a fine-dining restaurant. Design a menu dessert for [SEASON] with [STAR INGREDIENT] as the protagonist. The dessert must have at least 3 distinct components (creamy texture, crunchy element and sauce/coulis). Include: dessert name, conceptual story, detailed mise en place, preparation of each component, plating and a pairing with dessert wine or coffee.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 58,
+   "titulo": "Signature Artisan Bread Recipe",
+   "cuerpo": "Design the recipe for a signature artisan bread with [DIFFERENTIATING INGREDIENT: sourdough/ancient grains/special seeds/infusions]. Hydration percentage: [%]. Include: complete baker's formula with percentages, fermentation process (times, temperatures, stages), shaping technique, scoring and baking. Explain the impact of each variable on the final result.",
+   "apps": [
+    "Creative Bakery"
+   ]
+  },
+  {
+   "n": 59,
+   "titulo": "Filled Chocolate Bonbon",
+   "cuerpo": "Develop the complete recipe for a [TYPE: molded/dipped/truffle] chocolate bonbon with a [FLAVOR/INGREDIENT] filling. Include: tempering the chocolate (temperature curve by type: dark/milk/white), ganache or filling recipe with exact weights (grams or ounces), step-by-step process, decoration and storage. Calculate the approximate cost per unit.",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 60,
+   "titulo": "Professional Celebration Cake",
+   "cuerpo": "Design the complete recipe for a [TYPE: birthday/wedding/anniversary] celebration cake with [BASE FLAVOR] and [THEMED DECORATION]. For [NUMBER] servings. Include: sponge, soaking syrup, filling cream, covering cream, tier-by-tier assembly technique, finish and decoration. With temperature specifications for each component and shelf-life times.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 61,
+   "titulo": "Croissant and Viennoiserie for Fine Pastry",
+   "cuerpo": "Give me the professional recipe for the classic croissant with laminated dough. Weights for [NUMBER] units. Include: complete détrempe formula, lamination process (number of turns, resting times, temperature of the butter block), shaping, final proof and baking. Then adapt the same base dough to create 3 different viennoiseries.",
+   "apps": [
+    "Creative Bakery",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 62,
+   "titulo": "Artisan Ice Cream with a Complex Flavor",
+   "cuerpo": "Design the recipe for a high-end artisan ice cream with a [COMPLEX FLAVOR: curry-mango/cheese-fig/coffee-cardamom] flavor. Include: ice cream base mix (custard or sorbet type), weights of each component, required stabilizers and emulsifiers with exact doses, pasteurization, aging and churning process. Target texture and ideal serving temperature.",
+   "apps": [
+    "Creative Ice Cream Making"
+   ]
+  },
+  {
+   "n": 63,
+   "titulo": "Chocolate and Beverage Pairing",
+   "cuerpo": "Act as a chocolatier and sommelier specialized in cacao. Design a pairing of 5 bonbons or chocolate bars with 5 different beverages [CATEGORY: wines/whiskies/craft beers/spirits]. For each pair: origin and percentage of the cacao, sensory characteristics of the chocolate, chosen beverage with its notes and an explanation of why they work together.",
+   "apps": [
+    "Creative Chocolate Making",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 64,
+   "titulo": "Dessert Menu for a Restaurant",
+   "cuerpo": "Design the complete dessert menu for a [TYPE] restaurant with [NUMBER] items. It must include: 1 refreshing citrus dessert, 1 chocolate dessert, 1 seasonal fruit dessert, 1 dairy-based dessert, 1 tartlet/pastry piece and 1 reinterpreted nostalgic dessert. For each one: name, menu description (40 words) and suggested price.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 65,
+   "titulo": "Ferments and Sourdough Starters",
+   "cuerpo": "Guide me through creating and maintaining a [TYPE: wheat/rye/spelt] sourdough starter from scratch. A 14-day plan: what to do each day (proportions of flour, water and temperature), health indicators of the starter at each stage, how to know when it is ready to use and a weekly maintenance protocol once it is established. With a daily tracking table.",
+   "apps": [
+    "Creative Bakery",
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 66,
+   "titulo": "Pastry Shop Window Display for a Season",
+   "cuerpo": "Design the pastry shop window display proposal for [SEASON: Christmas/Valentine's Day/Easter/Halloween/summer]. Include: 6-8 star seasonal products with description, suggested selling price and estimated cost, visual layout of the window, recommended packaging, communication message and social media actions to promote each piece.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 67,
+   "titulo": "Bean-to-Bar Chocolate Bar Recipe",
+   "cuerpo": "Develop the complete process for making a bean-to-bar chocolate bar with cacao of [ORIGIN] origin. From cacao processing: roasting (temperature and time), winnowing, grinding, conching, tempering and molding. Include the variables that determine the final flavor profile and how to adjust them to achieve [DESIRED PROFILE: fruity/earthy/floral/spiced].",
+   "apps": [
+    "Creative Chocolate Making"
+   ]
+  },
+  {
+   "n": 68,
+   "titulo": "Custom Cake Quote",
+   "cuerpo": "Help me calculate the fair price for a custom cake with this data: [FLAVORS AND FILLINGS], [NUMBER] tiers, decoration [DESCRIPTION], for [NUMBER] people, delivery to [CITY]. Break down: materials cost, preparation time (hours × hourly rate of [PRICE]), packaging cost, profit margin and final price to the client. Justification of the price.",
+   "apps": [
+    "Creative Pastry",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 69,
+   "titulo": "Artisan Gelato Recipe",
+   "cuerpo": "Create the recipe for an Italian artisan gelato of [FLAVOR] with authentic texture. Key differences from American ice cream: lower fat percentage, higher density, less air incorporation (overrun). Include: ingredients with exact weights (grams or ounces), base mix, pasteurization process, aging (at least 4 hours at 39°F (4°C)), churning and storage and serving temperature.",
+   "apps": [
+    "Creative Ice Cream Making"
+   ]
+  },
+  {
+   "n": 70,
+   "titulo": "Chocolate Decoration for Fine Pastry",
+   "cuerpo": "Guide me through making the following chocolate decorations for fine pastry: [TECHNIQUE 1: transfer sheets/spray/shavings/molded figures]. For each technique: ideal type of chocolate, working temperature, necessary tools, step-by-step process and common mistakes. Also include how to combine these decorations in the final presentation of a restaurant dessert.",
+   "apps": [
+    "Creative Chocolate Making",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 71,
+   "titulo": "Scientific Ingredient Pairing",
+   "cuerpo": "Act as a specialist in molecular food pairing. I need to find the best ingredients to pair with [MAIN INGREDIENT]. Analyze the shared aromatic compounds and suggest: 3 classic, well-known pairings, 3 surprising but scientifically sound pairings, and 3 avant-garde pairings for innovation. For each one explain the molecular reason why.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 72,
+   "titulo": "Wine and Dish Pairing for the Menu",
+   "cuerpo": "Design the wine and dish pairing selection for my restaurant's menu. The dishes are: [LIST OF DISHES]. For each dish suggest: a white wine option, a red wine option, an alternative option (sparkling/rosé/fortified) and a non-alcoholic drink for non-drinkers. Include the reasoning behind the pairing in accessible language so the front-of-house staff can explain it.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 73,
+   "titulo": "Craft Beer and Food Pairing",
+   "cuerpo": "Create a craft beer and food pairing guide for [TYPE OF RESTAURANT/BAR]. For each beer style: [AMBER ALE, IPA, STOUT, SAISON, CRAFT LAGER], state the best dishes it pairs with, the aromatic/flavor reason why and how to present it on the menu. Also include serving temperature and ideal glass type.",
+   "apps": [
+    "Food Pairing AI",
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 74,
+   "titulo": "Tasting Menu with Beverage Pairing",
+   "cuerpo": "For the following tasting menu of [NUMBER] courses: [DESCRIPTION OF EACH DISH], design the complete beverage pairing. Option 1: classic pairing with wines. Option 2: alternative pairing with craft beers, kombuchas and spirits. For each beverage: name, reason for the pairing and serving temperature. Total beverages for the full menu.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 75,
+   "titulo": "Cheese and Artisan Product Pairing",
+   "cuerpo": "Design a cheese board for [RESTAURANT/BAR] with 5-7 domestic and international varieties. For each cheese state: name, origin, type of milk, aging, sensory characteristics, the best accompaniment (jam, nuts, bread) and the ideal beverage pairing. Also create the menu description so the team can present it.",
+   "apps": [
+    "Food Pairing AI"
+   ]
+  }
+ ]
+}

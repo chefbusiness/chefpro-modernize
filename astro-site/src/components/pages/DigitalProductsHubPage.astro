@@ -61,6 +61,79 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Restaurant Financial Plan Kit Pro (3-oct-2026, después del Staff Scheduling): el más nuevo → 1;
+  // Staff Scheduling → 2, HACCP → 3, eBook → 4. Imagen: la portada propia de la edición EN
+  // (fin-en-hero.jpg, sin texto), la misma del hero de su landing.
+  {
+    name: 'Restaurant Financial Plan Kit Pro',
+    slug: '/kit-plan-financiero',
+    description: '10 Excel templates for restaurant financial planning: 3- and 5-year projections, break-even calculator, cash flow forecast, startup costs, monthly P&L budget vs actual, KPI dashboard and a lender & investor summary.',
+    features: [
+      'P&L budget vs actual with a traffic light',
+      'Cash flow with quarterly sales tax and low-cash alerts',
+      'IRR, NPV, payback and DSCR for lenders',
+      'Startup costs with useful lives and depreciation',
+    ],
+    iconName: 'TrendingUp',
+    image: '/lovable-uploads/ai-gallery/fin-en-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  // Restaurant Staff Scheduling Kit Pro (3-oct-2026, después del HACCP) → 2. Imagen: foto propia sin
+  // texto (staff-en-schedule-board); la del ES, tareas-gestion-personal-hero, enseña una app de turnos
+  // en una tablet, engañosa en un producto Excel.
+  {
+    name: 'Restaurant Staff Scheduling Kit Pro',
+    slug: '/kit-gestion-personal',
+    description: '9 Excel templates to schedule your restaurant team: weekly and monthly schedule, FLSA overtime tracker, labor cost calculator, new hire onboarding, PTO planner, performance reviews and an employee directory.',
+    features: [
+      'Clopening, long-shift and minor-hour alerts',
+      'Overtime over 40 hours a week, with its cost',
+      'Labor cost % with a traffic light by concept',
+      'Onboarding with I-9 and new-hire deadlines',
+    ],
+    iconName: 'Users',
+    image: '/lovable-uploads/ai-gallery/staff-en-schedule-board.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  // HACCP Food Safety Kit Pro (3-oct-2026) → 3. Imagen sin texto en español
+  // (la del ES, appcc-inspector-sanidad, lleva rótulos en castellano).
+  {
+    name: 'HACCP Food Safety Kit Pro',
+    slug: '/pack-appcc',
+    description: '19 HACCP and food safety templates for Excel + 2 bonuses: HACCP plan with hazard analysis, temperature and cooling logs, cleaning schedule, allergen matrix and a health inspection self-checklist.',
+    features: [
+      'HACCP plan pre-filled with 21 hazards',
+      'Temperature logs in °F with automatic alerts',
+      'Allergen matrix: US Big 9 and UK 14',
+      '25-point health inspection self-checklist',
+    ],
+    iconName: 'ShieldCheck',
+    image: '/lovable-uploads/ai-gallery/use-case-task-appcc-fridge.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
+  },
+  // 3-oct-2026: Gastro Pro Prompts eBook (ai-prompts-for-restaurants) → 4 (el HACCP, el Staff Scheduling y el Financial Plan, del mismo día, son más nuevos).
+  {
+    name: 'Gastro Pro Prompts eBook',
+    slug: '/pro-prompts-ebook',
+    description: '300 AI prompts for restaurants and hospitality, ready to copy into ChatGPT, Claude, Gemini or AI Chef Pro: creative cooking, pastry, catering, management, marketing and more.',
+    features: [
+      'PDF eBook + exclusive dashboard',
+      '300 prompts in 33 sections',
+      'Works with ChatGPT, Claude, Gemini',
+      '2 bonuses + lifetime updates',
+    ],
+    iconName: 'BookOpen',
+    image: '/tienda-en/ai-prompts-for-restaurants/ebook-mockup-bundle-en.webp',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'ai'],
+  },
   {
     name: 'Restaurant Inventory Kit Pro',
     slug: '/kit-inventario',
@@ -206,38 +279,6 @@ const products = [
     tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
   },
   {
-    name: 'Gastro Pro Prompts eBook',
-    slug: '/pro-prompts-ebook',
-    description: '300+ AI prompts built specifically for hospitality: creative cuisine, pastry, catering, management, marketing and more.',
-    features: [
-      'PDF eBook + exclusive dashboard',
-      '300+ prompts organized by category',
-      'Works with ChatGPT, Claude, Gemini',
-      'Lifetime updates',
-    ],
-    iconName: 'BookOpen',
-    image: '/ebook-mockup-bundle.webp',
-    badge: 'Best Seller',
-    badgeColor: 'bg-[#FFD700]/20 text-[#FFD700]',
-    tags: ['pdf', 'ai'],
-  },
-  {
-    name: 'HACCP Templates Pack',
-    slug: '/pack-appcc',
-    description: '17 food safety templates: temperatures, cleaning, allergens, HACCP, traceability. Required by law.',
-    features: [
-      '17 templates with automatic alerts',
-      'Matrix of the 14 mandatory allergens',
-      'Pre-filled HACCP hazard analysis',
-      'Health inspection guide',
-    ],
-    iconName: 'ShieldCheck',
-    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
-    badge: '🔥 Best Seller',
-    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
-    tags: ['excel', 'templates', 'food-safety', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
-  },
-  {
     name: 'How to Open a Fine-Dining Restaurant',
     slug: '/guia-restaurante-gastronomico',
     description: 'Premium 80+ page guide: 22 chapters, financial plan, kitchen and dining room design, kitchen brigade, wine cellar, Michelin, Sol Repsol. 10 Excel templates + 8 checklists + business plan + front-of-house manual.',
@@ -364,41 +405,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['pdf', 'guides', 'dark-kitchen'],
-  },
-  {
-    // RC-07 · la tarjeta conservaba la copia sin tildes y la descripción de la
-    // v1.1: el comprador saltaba de aquí a una landing ya acentuada.
-    name: 'Staff Scheduling & Management Kit',
-    slug: '/kit-gestion-personal',
-    description: '9 Excel templates with automatic formulas: shift schedules, overtime, labor cost, onboarding, holidays, performance reviews and a staff directory.',
-    features: [
-      'Shift schedule with legal alerts',
-      'Automatic overtime tracking',
-      'Labor cost ratio with a traffic-light system',
-      'Onboarding, holidays and performance reviews',
-    ],
-    iconName: 'Users',
-    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
-  },
-
-  {
-    name: 'Financial Plan Kit for Restaurants',
-    slug: '/kit-plan-financiero',
-    description: '10 Excel templates that work together: 3- and 5-year financial plan, break-even point, cash flow, CAPEX, monthly P&L, financial ratios, and a bank-ready feasibility report.',
-    features: [
-      '3- and 5-year financial forecast',
-      'Break-even point with 3 scenarios',
-      'Cash flow with liquidity alerts',
-      'Bank-ready feasibility report',
-    ],
-    iconName: 'TrendingUp',
-    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'costs', 'restaurant', 'cafe', 'pizzeria', 'burger', 'dark-kitchen', 'pastry', 'bar', 'catering', 'hotel', 'ice-cream', 'chocolate'],
   },
   {
     name: 'Business Plan: Bar-Restaurant',

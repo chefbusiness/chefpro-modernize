@@ -30,6 +30,12 @@ Uso:
     python3 scripts/astro-migration/fase8x-banners-tienda-idioma.py --producto kit-escandallos --lang en --aplicar
 
 Dry-run por defecto. Idempotente: un banner que ya es el del catálogo se cuenta y no se toca.
+
+`--con-descripcion` (3-oct-2026, Restaurant Staff Scheduling Kit Pro): admite un CUARTO campo
+distinto, la línea de descripción del banner, y la reescribe con la del catálogo. Hace falta cuando
+lo publicado lleva una descripción que el catálogo ya corrigió (los 5 banners EN del Kit Gestión de
+Personal decían «productivity ratios», que el kit no tiene). Los dos gates no cambian: deshacer
+sigue devolviendo el original byte a byte y fuera de los banners no cambia nada.
 """
 import argparse
 import html
@@ -51,9 +57,14 @@ def cargar_ensamblador():
     return mod
 
 
-def campos(bloque):
-    """(nombre del h3, href, texto del botón) de un banner, o None si no tiene el molde."""
-    m = re.search(r'<h3\b[^>]*>(.*?)</h3>.*?<a href="([^"]+)"[^>]*>(.*?)</a>\s*</aside>$', bloque, re.S)
+def campos(bloque, con_descripcion=False):
+    """(nombre del h3, href, texto del botón) de un banner, o None si no tiene el molde.
+    Con `con_descripcion`: (nombre, descripción, href, botón)."""
+    if con_descripcion:
+        m = re.search(r'<h3\b[^>]*>(.*?)</h3>\s*<p\b[^>]*>(.*?)</p>.*?<a href="([^"]+)"[^>]*>(.*?)</a>\s*</aside>$',
+                      bloque, re.S)
+    else:
+        m = re.search(r'<h3\b[^>]*>(.*?)</h3>.*?<a href="([^"]+)"[^>]*>(.*?)</a>\s*</aside>$', bloque, re.S)
     return m.groups() if m else None
 
 
@@ -62,6 +73,8 @@ def main():
     ap.add_argument('--producto', required=True, help='id del catálogo (p. ej. kit-escandallos)')
     ap.add_argument('--lang', required=True, help='idioma del corpus y de la tienda (p. ej. en)')
     ap.add_argument('--aplicar', action='store_true', help='escribe los .md (sin esto, dry-run)')
+    ap.add_argument('--con-descripcion', action='store_true',
+                    help='admite también la descripción del banner como campo distinto (la del catálogo)')
     args = ap.parse_args()
 
     mod = cargar_ensamblador()
@@ -93,7 +106,7 @@ def main():
             if viejo == nuevo:
                 ya += 1
                 continue
-            cv, cn = campos(viejo), campos(nuevo)
+            cv, cn = campos(viejo, args.con_descripcion), campos(nuevo, args.con_descripcion)
             if not cv or not cn:
                 errores.append('%s: banner sin el molde esperado' % md.name)
                 continue
@@ -128,9 +141,8 @@ def main():
         cambiados += len(sustituciones)
         ficheros.append(md)
         for viejo, nuevo, cv, cn in sustituciones:
-            print('%s\n   %s | %s | %s\n → %s | %s | %s'
-                  % (md.name, html.unescape(cv[0]), cv[1], html.unescape(cv[2]),
-                     html.unescape(cn[0]), cn[1], html.unescape(cn[2])))
+            print('%s\n   %s\n → %s' % (md.name, ' | '.join(html.unescape(x) for x in cv),
+                                          ' | '.join(html.unescape(x) for x in cn)))
         if args.aplicar:
             md.write_text(salida, encoding='utf-8')
 

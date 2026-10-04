@@ -1,0 +1,642 @@
+{
+ "prompts": [
+  {
+   "n": 226,
+   "titulo": "Sustainable and Zero-Waste Catering",
+   "cuerpo": "A client is asking me for sustainable, zero-waste catering for their corporate event, and they have strong environmental values. Design: a menu built on local, seasonal ingredients, no single-use plastics (alternatives for every material), organic waste management for the event, presentation on reusable or biodegradable tableware, and how to certify the sustainability of the service and communicate it to the client.",
+   "apps": [
+    "Catering AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 227,
+   "titulo": "Corporate Breakfast Catering",
+   "cuerpo": "Design the catering for a business breakfast for a [INDUSTRY] company with [NUMBER] people. The format is a 45-minute standing breakfast before a meeting. Include: sweet and savory options, hot and cold drinks, adaptations for lactose-intolerant and gluten-free guests, executive-style presentation on stations or tables, the setup and breakdown time needed, and the price per person.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 228,
+   "titulo": "Post-Event Review and Improvement",
+   "cuerpo": "I just finished the catering event [DESCRIPTION]. These problems came up: [LIST]. These things worked well: [LIST]. Help me: do a structured post-event review (what to improve, what to repeat), quantify the financial impact of the problems, document it for similar future events, and decide how to handle client satisfaction if anything fell below expectations.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 229,
+   "titulo": "Catering for a Charity Event",
+   "cuerpo": "I'm going to offer catering pro bono or at a reduced price for a charity event for [ORGANIZATION]. I need to maximize impact with a limited budget of [AMOUNT] for [NUMBER] guests. Design: the most impactful menu possible within the budget, how to secure donations from suppliers and ingredient sources, and how to use this event as a portfolio piece to attract paying clients.",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 230,
+   "titulo": "Catering Niche Specialization",
+   "cuerpo": "I want to specialize in a specific catering niche: [NICHE: weddings/corporate/vegan/gourmet street food/luxury catering]. Design: the differentiating value proposition of this niche, the ideal client profile, how to position myself in this niche (portfolio, website, social media, partnerships), a justified premium price, and 3 first actions to land the first 5 clients in the niche.",
+   "apps": [
+    "Catering AI+",
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 231,
+   "titulo": "Diagnosing a Restaurant in Crisis",
+   "cuerpo": "I'm a consultant and I've been hired to diagnose a restaurant with the following symptoms: [DESCRIPTION: falling traffic/high food cost/unmotivated team/negative reviews]. Design the 2-week diagnostic process: what to analyze (financial, operational, culinary, guest), the audit methodology, analysis tools, how to present the diagnosis to the client, and the structure of the report.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 232,
+   "titulo": "High-Value Consulting Proposal",
+   "cuerpo": "I need to send a consulting proposal to a [CLIENT TYPE: independent restaurant/restaurant group/hotel]. The project is [DESCRIPTION]. Write the complete proposal: consultant introduction, analysis of the situation and the problem identified, working methodology, concrete deliverables, project timeline, team involved, price (with a justification of the value), and payment terms.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 233,
+   "titulo": "Restaurant Concept Redesign",
+   "cuerpo": "A restaurant [CURRENT DESCRIPTION: type, area, results] hired me to redesign its concept. The problem is [DIAGNOSIS]. Design the new concept: differentiated value proposition, redefined target audience, new name and branding if needed, reworked menu (what to remove, what to add, how to write it), repositioned pricing, and an implementation plan for the change.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 234,
+   "titulo": "Technology Implementation for Restaurants",
+   "cuerpo": "A [TYPE] restaurant wants to modernize its technology. It currently uses [LIST OF CURRENT SYSTEMS]. Help me design the technology transformation plan: recommended POS management software, reservation platform, social media management, delivery tools, data analytics for decision-making, and how to implement each one without disrupting operations.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 235,
+   "titulo": "Opening Consulting for an Investor",
+   "cuerpo": "An investor with no restaurant experience wants to open a [CONCEPT] restaurant in [CITY] with [BUDGET]. Act as their opening consultant and design: concept validation in that market, the management team structure needed, site search and evaluation (criteria), interior design and equipment project, selection of the chef and key team, and a realistic 12-month timeline to opening.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 236,
+   "titulo": "Kitchen Process Audit",
+   "cuerpo": "I've been hired to audit the kitchen processes of a [TYPE OF RESTAURANT]. Design the audit: areas to evaluate (receiving/storage/mise en place/production/pass/cleaning), evaluation criteria for each area, an observation method that doesn't interfere with service, a scoring system, identification of bottlenecks, and the format of the results report with prioritized recommendations.",
+   "apps": [
+    "Waste GenCal",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 237,
+   "titulo": "Food & Beverage Marketing Consulting",
+   "cuerpo": "A restaurant [DESCRIPTION] has asked me to improve its digital marketing. Run a diagnosis of its digital presence: website, Instagram, Google Business Profile, TripAdvisor/Yelp. For each channel: current situation (with metrics if you have them), concrete improvement recommendations, missing content, actions for the first 30 days, and an estimate of the impact on the number of reservations.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)",
+    "Menu Dish Local SEO"
+   ]
+  },
+  {
+   "n": 238,
+   "titulo": "Middle Management Training in Hospitality",
+   "cuerpo": "A restaurant chain has hired me to train its [NUMBER] location managers (head chefs and maîtres d'). Design the 2-day training program: leadership modules (communication, delegation, conflict resolution), operations management (KPIs, results analysis, cost control), and soft skills specific to the restaurant industry. With practical exercises and an application plan.",
+   "apps": [
+    "Mental Coach",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 239,
+   "titulo": "Operations Manual Development",
+   "cuerpo": "I need to create the complete operations manual for [BRAND/CHAIN] to serve as a guide for all locations. Include: the manual's structure (table of contents), the content of each chapter (kitchen standards, front of house, guest service, hygiene, human resources, local marketing), how to make it visual and usable in digital and print formats, and a process for regular updates.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 240,
+   "titulo": "Trends and Future of the Food & Beverage Industry",
+   "cuerpo": "As a food and beverage consultant, I need to stay current on the macro trends that will transform the industry over the next 3-5 years. Research and analyze: the impact of AI on food service, alternative proteins and their mass adoption, sustainability as a competitive advantage, the total digitalization of the restaurant, changes in consumer behavior after the pandemic, and the kitchen technology of the future.",
+   "apps": [
+    "Gastro Lexicum",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 241,
+   "titulo": "A Restaurant's Unique Value Proposition",
+   "cuerpo": "I own an independent restaurant [DESCRIPTION] that competes with big chains and trendy restaurants. Help me define my unique value proposition (UVP): what I have that chains can never have, how to communicate it at every guest touchpoint, and how to turn my independence into a strength instead of a weakness.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 242,
+   "titulo": "Profitable and Appealing Daily Set Menu",
+   "cuerpo": "I run a restaurant with a daily set menu at [PRICE]. Help me build next week's menu: [NUMBER] first-course options, [NUMBER] second-course options, and dessert. Criteria: maximum food cost of [%], use the seasonal products available, enough variety, executable by [NUMBER] cooks within service time, and appealing enough to build loyalty with regular guests.",
+   "apps": [
+    "Avant-Garde Cuisine",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 243,
+   "titulo": "Managing an Intense Peak Season",
+   "cuerpo": "My restaurant is in a tourist area and the peak season of [MONTHS] multiplies covers by [NUMBER]. Design the peak season plan: temporary hiring (profiles, process, accelerated training), menu adaptation for faster service, managing team stress, intensified quality control, and how to capitalize financially on the peak season.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Mental Coach"
+   ]
+  },
+  {
+   "n": 244,
+   "titulo": "Digitizing a Small Restaurant",
+   "cuerpo": "I run a traditional family restaurant and I want to go digital without losing the soul of the business. Available budget: [AMOUNT]. Prioritize the implementation of: a modern POS system, a Google presence, a QR digital menu, an online reservation system, and first social media accounts. For each tool: cost, implementation time, expected impact, and a concrete solution recommendation.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 245,
+   "titulo": "Local Community: Be the Neighborhood Restaurant",
+   "cuerpo": "I want my restaurant to be THE restaurant of the [NAME OF NEIGHBORHOOD/AREA] neighborhood. Design the strategy to connect with the local community: collaboration with neighboring businesses, presence at neighborhood events, a local loyalty program, a special menu for residents, a relationship with local schools, associations, and sports teams, and how to become the area's culinary reference.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Menu Dish Local SEO"
+   ]
+  },
+  {
+   "n": 246,
+   "titulo": "Delivery as an Additional Channel",
+   "cuerpo": "I want to add delivery to my [TYPE] restaurant without hurting the quality of service in the dining room. Design: which menu dishes suit delivery best (selection criteria), packaging adaptations for each dish, whether to use third-party platforms or my own delivery (analysis for my case), pricing and optimal radius, and how to operationally manage both channels in parallel.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 247,
+   "titulo": "Special Celebrations at the Restaurant",
+   "cuerpo": "I want to boost special celebrations (birthdays, anniversaries, farewell parties) at my restaurant. Design: a special celebration menu at a fixed price, a special group welcome protocol, a surprise welcome touch, birthday cake or special dessert options, and the acquisition strategy (how to get chosen for these special occasions).",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 248,
+   "titulo": "Modern Bistro Concept",
+   "cuerpo": "I want to open a modern bistro in [CITY] with a fresh, differentiating concept. Design: concept positioning (what kind of bistro, who it's for, what makes it different), a 20-25 dish menu with selling prices, recommended atmosphere and decor for the concept, the profile of the team needed, and the differentiator against the existing bistros and tapas bars in that city.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Avant-Garde Cuisine"
+   ]
+  },
+  {
+   "n": 249,
+   "titulo": "Profitable Tapas and Small Plates Menu",
+   "cuerpo": "I have a tapas gastrobar in [CITY]. Design the new tapas and small plates menu with: 8 fixed tapas (cold and hot), 4 sharing plates, 3 main courses, 2 desserts, and a by-the-glass wine list. For each tapa/dish: name, menu description (20 words), selling price, and estimated food cost. Oriented toward maximizing the average check per table.",
+   "apps": [
+    "Spanish Cuisine",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 250,
+   "titulo": "F&B Strategy for an Independent Hotel",
+   "cuerpo": "I'm the F&B director of a [CATEGORY] hotel with [NUMBER] rooms in a [TYPE OF DESTINATION]. The food and beverage area currently generates [AMOUNT] in revenue and the goal is to grow it by [%]. Design the complete F&B strategy: optimizing the hotel restaurant, a differentiating breakfast experience, a revised room service, the hotel bar as a local destination, and events as a source of revenue.",
+   "apps": [
+    "Catering AI+",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 251,
+   "titulo": "Premium Hotel Breakfast",
+   "cuerpo": "I want to turn my [CATEGORY] hotel's breakfast into a memorable experience that is a selling point for the rooms. Design the premium breakfast concept: regional artisan products, live stations, healthy and special options (gluten-free, vegan, low-carb), visual presentation of the buffet, and how to communicate it on the website and booking platforms.",
+   "apps": [
+    "Catering AI+",
+    "Allergen ID"
+   ]
+  },
+  {
+   "n": 252,
+   "titulo": "Room Service: Redesign for Profitability",
+   "cuerpo": "My hotel's room service loses money. Monthly revenue: [AMOUNT] vs. cost of service: [AMOUNT]. Redesign the room service model to make it profitable: a reduced menu focused on the highest-turnover, highest-margin items, optimized hours, a minimum order, eliminating the extra charge or building it into the price, and possibly a digital replacement (ordering app).",
+   "apps": [
+    "Catering AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 253,
+   "titulo": "Hotel Banquets and MICE",
+   "cuerpo": "I want to grow the banquet and MICE (meetings, incentives, conferences, events) business at my hotel. Design: F&B packages for corporate events (coffee break, working lunch, gala dinner) with a price per person, a menu tasting room for clients, the sales and follow-up process, and how to position the hotel as a premium venue in the MICE market in [CITY].",
+   "apps": [
+    "Catering AI+"
+   ]
+  },
+  {
+   "n": 254,
+   "titulo": "Hotel Bar as a Local Destination",
+   "cuerpo": "My hotel's bar is only used by guests. I want to turn it into a go-to bar for locals in [CITY]. Design: the bar's differentiating concept (what we offer that other bars don't), a differentiated drink and snack menu, a program of events and themed nights, communication aimed at the local public, and how to bring hotel guests and locals together in the same space.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 255,
+   "titulo": "F&B in a Boutique Hotel with Local Identity",
+   "cuerpo": "I have a boutique hotel with [NUMBER] rooms that wants its restaurant to be the culinary expression of the destination [PLACE]. Design: a food concept based on local cuisine (products, techniques, history), how to bring local producers into the menu, culinary experiences for guests (farm dinner, morning market, local cooking classes), and how to communicate it in the hotel's offering.",
+   "apps": [
+    "Spanish Cuisine",
+    "Catering AI+",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 256,
+   "titulo": "Loss Control in Hotel F&B",
+   "cuerpo": "My hotel's F&B department has unexplained losses of [AMOUNT] per month between inventory and billing. Design the loss control plan: an audit of receiving and storage processes, a portion control system in the kitchen and bar, management of internal staff consumption, detection of unrecorded waste, and a monthly report for management.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 257,
+   "titulo": "Multi-Brand Ghost Kitchen Concept",
+   "cuerpo": "I want to create a multi-brand ghost kitchen in [CITY] from a space of [SQUARE FEET]. Design the concept: which [NUMBER] virtual brands to launch (with names, culinary concepts, and distinct target audiences), how to share the kitchen efficiently across brands, which delivery platforms to use (DoorDash/Uber Eats/Grubhub/own), a basic financial model, and the risks of the model.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 258,
+   "titulo": "Menu Optimized for Delivery",
+   "cuerpo": "I run a ghost kitchen serving [TYPE] cuisine. The current menu has [NUMBER] items but 30% lose money in delivery because of packaging and delivery time. Optimize the menu for delivery: criteria for removing items unsuited to delivery, packaging improvements for the dishes that do work, star products to push, and the ideal menu architecture on the platforms (how to organize it so it sells).",
+   "apps": [
+    "Casual Restaurants AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 259,
+   "titulo": "Platform Rating Strategy",
+   "cuerpo": "My delivery brand has a rating of [SCORE] on [PLATFORM] and I need to raise it. Identify: the most common causes of low delivery ratings (temperature, time, order accuracy, packaging), concrete actions to improve each one, how to handle negative reviews on the platform, a response protocol, and a strategy for getting more positive reviews.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 260,
+   "titulo": "Sustainable Packaging for Delivery",
+   "cuerpo": "I want to move all my delivery packaging to sustainable materials without raising the price the guest perceives. Analyze: sustainable alternatives for each type of container I currently use (box, cup, cutlery, bag), additional cost per order, eco-friendly packaging suppliers in my area, how to communicate it in the app as added value, and an estimate of the impact on brand image.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 261,
+   "titulo": "Platform Profitability Analysis",
+   "cuerpo": "I'm on [PLATFORMS] and I pay commissions of [%]. My average check is [PRICE] and my food cost is [%]. Calculate: the real margin per order on each platform, the average check at which the business becomes profitable, whether I should negotiate commissions or build my own delivery, and which part of the menu I should drop because it isn't profitable after platform commissions.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 262,
+   "titulo": "Launching a New Virtual Brand",
+   "cuerpo": "I'm going to launch a new virtual brand of [CULINARY CONCEPT] from my ghost kitchen. Design the launch plan: brand name and concept, debut menu (6-8 items), product photography (a brief for the photographer), platform profile setup (keywords, description), launch discount and promotion strategy, and 30-day success KPIs.",
+   "apps": [
+    "Casual Restaurants AI+",
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 263,
+   "titulo": "Average Check: Strategies to Increase It",
+   "cuerpo": "My delivery average check is [PRICE] and I want to raise it to [PRICE]. Design strategies to increase it without raising prices: strategic combos and full meals, automatic upselling in the app (which add-on suggestions to offer with each dish), product bundling, premium options for each dish, and wording in each product description to raise perceived value.",
+   "apps": [
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 264,
+   "titulo": "Business Model for an Artisan Pastry Shop",
+   "cuerpo": "I want to open an artisan pastry shop with a differentiating concept in [CITY]. Design the business model: brand concept and storytelling, the ideal product mix (cakes/tarts/viennoiserie/chocolate), sales channels (shop/website/markets/delivery/B2B), cost structure for a production kitchen of [SQUARE FEET], break-even point, and a 2-year growth plan.",
+   "apps": [
+    "Creative Pastry",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 265,
+   "titulo": "B2B: Selling to Restaurants and Hotels",
+   "cuerpo": "I have an artisan production kitchen and I want to develop the B2B channel by selling my products to restaurants and hotels. Design: a B2B catalog (which products suit this channel), wholesale pricing and minimum order terms, the B2B client acquisition process (visit, sample, close), delivery logistics, and how to manage recurring orders with minimal administrative work.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 266,
+   "titulo": "Custom Cakes: Order Management",
+   "cuerpo": "My pastry shop is getting more and more custom cake orders and the process is chaotic. Design: the order flow (from the client's request to delivery), a standardized order form with all the necessary information, minimum lead times by cake type, a deposit and payment policy, handling last-minute changes, and how to manage production with simultaneous orders.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 267,
+   "titulo": "Social Media Strategy for a Pastry Shop",
+   "cuerpo": "My pastry shop has [NUMBER] Instagram followers and barely sells through social media. Analyze what might be going wrong and design the content strategy for a pastry shop: which type of content works best (process/result/behind the scenes/educational), posting frequency, how to present each product so it generates orders, and how to use stories to drive sales.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 268,
+   "titulo": "Gluten-Free Certification in Pastry",
+   "cuerpo": "I want to officially certify my production kitchen to make gluten-free products safely for people with celiac disease. Research: the certification process of a gluten-free certification body (e.g., GFCO in the US, Coeliac UK), facility and process requirements, the investment needed (adaptations, testing, training), how to communicate it to your clients, and the expected impact on sales.",
+   "apps": [
+    "Allergen ID",
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 269,
+   "titulo": "Pastry School Built into the Production Kitchen",
+   "cuerpo": "I want to add pastry workshops for customers in my production kitchen as an additional source of revenue. Design: workshop types (beginner/themed/professional), the structure of each workshop (duration, content, materials), selling price per person with a profitability analysis, maximum capacity, a management and booking platform, and a communication strategy to fill every workshop.",
+   "apps": [
+    "Creative Pastry"
+   ]
+  },
+  {
+   "n": 270,
+   "titulo": "Differentiating Cocktail Bar Concept",
+   "cuerpo": "I want to open a cocktail bar in [CITY] with a concept different from what's already out there. Design the concept: brand name and story, cocktail style (technique, ingredients, cultural references), a menu of 12-15 signature cocktails with prices, a proposed snack pairing menu, target guest profile, and a differentiation strategy against the existing cocktail bars.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 271,
+   "titulo": "Seasonal Cocktails with Fresh Ingredients",
+   "cuerpo": "I want to refresh [BAR]'s cocktail menu every season using fresh seasonal ingredients. For the [SEASON] season: available seasonal ingredients [LIST], design 4 new cocktails (2 with alcohol and 2 without) that showcase them. With a complete recipe, name, story, and how to communicate the menu change to regular guests.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 272,
+   "titulo": "Natural Wine Bar: Concept and List",
+   "cuerpo": "I want to open a natural wine bar in [CITY/NEIGHBORHOOD]. Design: the bar concept and how to communicate natural wines to guests who are new to them, a list of 15-20 natural wines organized in an accessible way (by flavor profile rather than by region), snacks and small plates to go with the wines, glass and bottle pricing, and a strategy for scheduling tasting nights.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 273,
+   "titulo": "Late-Night Program and Special Night",
+   "cuerpo": "My bar has low profitability in the late-night slot (11 PM to 3 AM). Design the proposal to activate this time slot: the type of music or entertainment programming that fits my concept, a special night offer of drinks and bites, smart promotions that don't hurt margins, how to communicate it on social media to attract a night crowd, and a capacity management protocol.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 274,
+   "titulo": "Making Artisan Syrups and Bitters",
+   "cuerpo": "I want to make all my syrups, bitters, and house bitters in the bar. For the following products: simple syrup, spice syrup, fresh herb syrup, citrus bitters, aromatic bitters. Give me the recipe for each one with: exact ingredients and proportions, production process, maceration/cooking time, filtering, storage, and shelf life. With suggested cocktails where each can be used.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 275,
+   "titulo": "Cocktail Cost Management",
+   "cuerpo": "My cocktail costs are above target. I have [NUMBER] cocktails on the menu with an average cost of [%] and I want to bring it down to [%]. For each cocktail on the menu: [RECIPE AND CURRENT COST], analyze where the highest costs are, which ingredients can be substituted without losing perceived quality, which pour control measures to implement, and how much each action saves.",
+   "apps": [
+    "Bar & Lounge AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 276,
+   "titulo": "Original Food Truck Concept",
+   "cuerpo": "I want to launch a food truck with an original concept in [CITY/REGION]. Design: a differentiating food concept (what cuisine, what story, what personality the truck has), a menu of 5-7 star products with selling prices, a social media positioning strategy, an event and market plan for the first 3 months, and an estimate of daily revenue under different scenarios.",
+   "apps": [
+    "Food Truck AI+"
+   ]
+  },
+  {
+   "n": 277,
+   "titulo": "Food Truck Operational Optimization",
+   "cuerpo": "I run a [TYPE OF CUISINE] food truck and my customers' wait time is too long ([MINUTES] on average). Design how to optimize: mise en place before opening (what to prep and in what order), workflow during service (each person's position, a map of the truck), batch cooking techniques for the most in-demand products, and a reduced menu for high-demand events.",
+   "apps": [
+    "Food Truck AI+",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 278,
+   "titulo": "Food Truck Permits and Regulations",
+   "cuerpo": "I want to launch my food truck in [STATE/CITY]. Give me the complete map of: required permits and licenses (mobile vending, food handler, vehicle operation), vehicle requirements (gas, electrical, and water installation), the zones where I can legally operate in [CITY], time restrictions, and the steps for a legal start-up within [MONTHS] months.",
+   "apps": [
+    "Food Truck AI+"
+   ]
+  },
+  {
+   "n": 279,
+   "titulo": "Food Truck Event Calendar",
+   "cuerpo": "Design the annual event calendar for my [TYPE OF CUISINE] food truck in [REGION]. Include: food festivals, farmers markets, music and culture festivals, sporting events, and local fairs with approximate dates, how to apply for a spot at each type of event, estimated participation cost, and potential revenue per event so I can prioritize the most profitable ones.",
+   "apps": [
+    "Food Truck AI+",
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 280,
+   "titulo": "Social Media for a Food Truck: Strategy",
+   "cuerpo": "My food truck needs to use social media to announce where we'll be each day and build community. Design: a daily location communication strategy (what to post, when, on which platform), the type of content to build the truck's personality beyond its location, how to manage social media in real time during service, and how to grow the truck's fan community.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)",
+    "Food Truck AI+"
+   ]
+  },
+  {
+   "n": 281,
+   "titulo": "Expansion: From Food Truck to Restaurant",
+   "cuerpo": "My food truck has been doing well for [TIME] and I want to make the leap to a fixed location. Design the transition: how to validate the concept for a fixed location (does it work as a sit-down?), what from the food truck to preserve in the restaurant (essence, menu, communication), critical operational differences between a truck and a restaurant, the investment needed, and whether it makes sense to keep the truck or sell it when the restaurant opens.",
+   "apps": [
+    "Food Truck AI+",
+    "Casual Restaurants AI+"
+   ]
+  },
+  {
+   "n": 282,
+   "titulo": "Signature Garum in Modern Cooking",
+   "cuerpo": "Act as an expert in fermentation and avant-garde cuisine using Fermentus Pre AI+. I want to develop a garum made from [PROTEIN: chicken/pork/beef/shellfish] to use as a flavor enhancer in my restaurant. Include: a recipe with koji and protein proportions, fermentation temperature, process time, signs that it's going well or badly, filtering, and final storage. Concrete culinary applications.",
+   "apps": [
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 283,
+   "titulo": "Gourmet Flavored Kombucha",
+   "cuerpo": "I want to produce premium flavored kombuchas to serve in my restaurant as a sophisticated non-alcoholic alternative. Design: a base kombucha recipe (tea, SCOBY, sugar, proportions, temperatures), the first and second fermentation process, natural flavorings with [FRUITS/FLOWERS/SPICES], controlled carbonation, bottling, and shelf life. With applications such as food pairing.",
+   "apps": [
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 284,
+   "titulo": "House-Made Miso and Shiro",
+   "cuerpo": "I want to make artisan miso in my restaurant to develop our fermented cuisine identity. Using Fermentus Pre AI+: a recipe for rice or barley koji (spores, temperature, humidity, time), koji/soybean/salt proportions for miso of different intensities, aging time based on the desired profile, storage, and how to gradually introduce it into the dishes on the menu.",
+   "apps": [
+    "Fermentus Pre AI+"
+   ]
+  },
+  {
+   "n": 285,
+   "titulo": "Authentic Japanese Cuisine Menu",
+   "cuerpo": "I'm a chef and I want to create an authentic Japanese cuisine menu for my restaurant. Using AI Chef Pro: design a menu of [NUMBER] dishes that covers different Japanese techniques (raw/marinated/cooked/fried/grilled), with authentic ingredients available in my area, their origin stories, and the adaptation needed for the local palate without losing authenticity.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 286,
+   "titulo": "Signature Dishes of Peruvian Cuisine",
+   "cuerpo": "I want to bring techniques and dishes from Peruvian cuisine into my fusion restaurant. Using Peruvian Cuisine: explain classic ceviche and its regional variations (tiger's milk marinade, tiradito, causa limeña), lomo saltado as an Andean wok technique, and Peruvian chiles (ají amarillo, rocoto, panca) with their flavor profiles and how to source or substitute them locally.",
+   "apps": [
+    "Peruvian Cuisine",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 287,
+   "titulo": "Rooted Mexican Cuisine Recipes",
+   "cuerpo": "Using Mexican Cuisine: design a rooted Mexican cuisine menu (not Tex-Mex) with [NUMBER] dishes that represent the different regions and techniques: nixtamalized corn masa, moles, comal techniques, dried chile marinades. For each dish: region of origin, ingredients with local substitutes if applicable, the key technique, and how to present it on the menu for a non-Mexican audience.",
+   "apps": [
+    "Mexican Cuisine",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 288,
+   "titulo": "Indian Cuisine: Curries and Spices",
+   "cuerpo": "I want to develop an authentic Indian cuisine menu for a [TYPE OF RESTAURANT]. Using Indian Cuisine: explain the different regional styles (north/south, Mughal/vegetarian), essential spice blends (garam masala, curry powder, chaat masala) with house recipes, the 6 most important cooking techniques in Indian cuisine, and 5 representative dishes with complete recipes.",
+   "apps": [
+    "Indian Cuisine",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 289,
+   "titulo": "French Cuisine: Mastering the Fundamentals",
+   "cuerpo": "Using French Cuisine: I want to master the fundamentals of classic French cooking. Give me the complete guide to: the 5 mother sauces and their most important derivatives, the classic cooking techniques (braising, sautéing, poaching, gratinéing), the kitchen stocks (recipes for brown stock, white veal stock, fish fumet), and the dishes every chef should know from cuisine classique.",
+   "apps": [
+    "French Cuisine",
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 290,
+   "titulo": "High-End Plant-Based Cuisine",
+   "cuerpo": "Using VegChef Plant-Based: develop 5 plant-based dishes for a fine dining menu that will satisfy non-vegetarian guests. The challenge: satisfying plant protein without processed soy, deep umami without animal products, and textures that recall meat or fish dishes without imitating them. For each dish: concept, complete recipe, and the flavor rationale for the menu.",
+   "apps": [
+    "VegChef Plant-Based",
+    "Food Pairing AI"
+   ]
+  },
+  {
+   "n": 291,
+   "titulo": "Universal Kitchen Measurement Converter",
+   "cuerpo": "Using Ingredient Converter: help me standardize all the units in my kitchen. I need the conversion table for: ounces to grams, pounds to kilos, cups to milliliters and grams (by ingredient density), tablespoons and teaspoons to ml, and temperatures from °F to °C. Also give me the equivalences for the most-used ingredients: 1 cup of flour/sugar/rice/oil/butter in grams.",
+   "apps": [
+    "Ingredient Converter"
+   ]
+  },
+  {
+   "n": 292,
+   "titulo": "Recipe Scaling with Ingredient Converter",
+   "cuerpo": "Using Ingredient Converter: I need to scale this original recipe of [NUMBER] servings to [NEW NUMBER] servings. [FULL RECIPE WITH INGREDIENTS AND EXACT WEIGHTS (GRAMS OR OUNCES)]. Beyond simple multiplication, indicate: which ingredients don't scale linearly (yeast, gelatin, spices, salt), oven time and temperature adjustments for larger volume, and possible changes to the production process.",
+   "apps": [
+    "Ingredient Converter",
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 293,
+   "titulo": "Gastro Lexicum: Fine Dining Terms",
+   "cuerpo": "Using Gastro Lexicum as a tutor: I'm a cook with [YEARS] years of experience and I want to expand my technical vocabulary of French and Spanish haute cuisine. Give me the complete glossary of the 50 most important technical terms every professional cook should know, with a precise definition, context of use, and an example in a real recipe. Level: intermediate-advanced professional.",
+   "apps": [
+    "Gastro Lexicum"
+   ]
+  },
+  {
+   "n": 294,
+   "titulo": "Waste Analysis with Waste GenCal",
+   "cuerpo": "Using Waste GenCal in an advanced way: I need the complete yield loss analysis for preparing a tasting menu of [NUMBER] dishes. The main ingredients are [LIST]. For each ingredient: net yield by preparation process, gross and net cost, equivalent for [NUMBER] servings, and a suggestion for using the by-product left over from the trim.",
+   "apps": [
+    "Waste GenCal"
+   ]
+  },
+  {
+   "n": 295,
+   "titulo": "Local SEO for Every Dish on the Menu",
+   "cuerpo": "Using Menu Dish Local SEO: I want to create SEO-optimized content for the [NUMBER] main dishes on my menu in [CITY]. For each dish, generate: a local SEO title (55 characters with the city keyword), a web description (150 words), 5 secondary local long-tail keywords, a short Google Business Profile description (100 words), and text for a blog post about that dish.",
+   "apps": [
+    "Menu Dish Local SEO"
+   ]
+  },
+  {
+   "n": 296,
+   "titulo": "Annual Food Content Calendar",
+   "cuerpo": "Using AI Chef Pro: create the food content calendar for the whole year [YEAR] for a [TYPE OF BUSINESS] in [CITY/COUNTRY]. Include: key food dates (world food days, local holidays with culinary tradition), product seasons, industry events, and a specific content idea for each highlighted date across the 12 months.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 297,
+   "titulo": "Viral Cooking Reels",
+   "cuerpo": "Using AI Chef Pro: design a series of 5 Instagram Reels focused on [TOPIC: cooking techniques/dishes of the day/behind the scenes/easy recipes] for a [TYPE OF RESTAURANT/CHEF]. For each Reel: video concept, scene-by-scene outline with durations, on-screen text for each scene, suggested music (genre), an opening hook for the first 3 seconds, and a final CTA.",
+   "apps": [
+    "General-purpose model (ChatGPT / Gemini)"
+   ]
+  },
+  {
+   "n": 298,
+   "titulo": "Gourmet Burger Joint: Concept and Menu",
+   "cuerpo": "Using Burgers Pro AI+: design the complete concept of a gourmet burger joint in [CITY]. Include: name and differentiating concept, a menu of 8 burgers with creative names and descriptions, house sauces and signature sides, vegan and gluten-free options, selling prices with estimated food cost, suggested drinks, and what makes this burger joint different from the 20 that already exist.",
+   "apps": [
+    "Burgers Pro AI+"
+   ]
+  },
+  {
+   "n": 299,
+   "titulo": "Bar & Lounge: Premium Night Experience",
+   "cuerpo": "Using Bar & Lounge AI+: design the complete experience of a premium bar for a [HOTEL/STANDALONE BAR] in [CITY]. The concept is [DESCRIPTION]. Include: the bar architecture (spirits, wines, beers, non-alcoholic), a signature cocktail menu (6 items), bar snacks that can be ordered at the table, a welcome and service protocol, atmosphere (music, lighting), and a monthly special night proposal.",
+   "apps": [
+    "Bar & Lounge AI+"
+   ]
+  },
+  {
+   "n": 300,
+   "titulo": "AI in Food & Beverage: Personal Implementation Plan",
+   "cuerpo": "I'm a food and beverage professional [DESCRIBE PROFILE AND SITUATION] and I want to use AI Chef Pro to its full potential. Design my personal plan for adopting AI in my work: the 10 agents in the suite most relevant to my specific profile, how to integrate them into my daily workflow, expected results at 30/60/90 days of regular use, how to measure the real impact, and which prompting skills I should develop first.",
+   "apps": [
+    "Every agent in the suite"
+   ]
+  }
+ ]
+}

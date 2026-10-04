@@ -23,6 +23,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard con todos los prompts y descargas:',
     emailCta: 'Acceder a mi Library',
   },
+  // Tienda EN (2026-10-03): gemelo de pro-prompts-ebook (ver verify-purchase.ts).
+  'ai-prompts-for-restaurants': {
+    accessPath: '/en/digital-products/ai-prompts-for-restaurants/access',
+    emailSubject: 'Your access to the Gastro Pro Prompts eBook',
+    emailTitle: 'Access your Pro Prompts Library',
+    emailBody: 'Click the button to open your dashboard with all the prompts and downloads:',
+    emailCta: 'Open my Library',
+    lang: 'en',
+  },
   'kit-escandallos': {
     accessPath: '/kit-escandallos-access',
     emailSubject: 'Tu acceso al Kit de Escandallos Pro',
@@ -45,6 +54,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailTitle: 'Accede a tu Pack de Plantillas APPCC',
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 19 registros + 2 bonus de seguridad alimentaria:',
     emailCta: 'Acceder a mis Plantillas APPCC',
+  },
+  // Tienda EN (2026-10-03): gemelo de pack-appcc (ver verify-purchase.ts).
+  'haccp-templates': {
+    accessPath: '/en/digital-products/haccp-templates/access',
+    emailSubject: 'Your access to HACCP Food Safety Kit Pro',
+    emailTitle: 'Access your HACCP Food Safety Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 19 food safety templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
   },
   'kit-tareas': {
     accessPath: '/kit-tareas-access',
@@ -143,6 +161,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailTitle: 'Accede a tu Kit de Gestión de Personal',
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de gestión de personal:',
     emailCta: 'Acceder a mis Plantillas',
+  },
+  // Tienda EN (2026-10-03): gemelo de kit-gestion-personal (ver verify-purchase.ts).
+  'restaurant-schedule-templates': {
+    accessPath: '/en/digital-products/restaurant-schedule-templates/access',
+    emailSubject: 'Your access to Restaurant Staff Scheduling Kit Pro',
+    emailTitle: 'Access your Restaurant Staff Scheduling Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 7 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
   },
   'kit-inventario': {
     accessPath: '/kit-inventario-access',
@@ -264,6 +291,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailTitle: 'Accede a tu Kit Plan Financiero',
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 10 plantillas financieras (8 + 2 bonus):',
     emailCta: 'Acceder a mis Plantillas',
+  },
+  // Tienda EN (2026-10-03): gemelo de kit-plan-financiero (ver verify-purchase.ts).
+  'restaurant-financial-plan-templates': {
+    accessPath: '/en/digital-products/restaurant-financial-plan-templates/access',
+    emailSubject: 'Your access to Restaurant Financial Plan Kit Pro',
+    emailTitle: 'Access your Restaurant Financial Plan Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 8 Excel templates + 2 bonuses:',
+    emailCta: 'Access my templates',
+    lang: 'en',
   },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
