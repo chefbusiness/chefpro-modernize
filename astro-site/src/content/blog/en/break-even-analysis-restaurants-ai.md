@@ -53,7 +53,7 @@ imageAlt: "Break Even Analysis"
 <li><strong>Semi-variable fixed:</strong> Utilities with seasonal variation, maintenance costs that increase with equipment age</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Tasks: Bakery</h3><p class="mt-2 text-muted-foreground">Night shift, sourdough, ovens and display case.</p><a href="/kit-tareas-panaderia?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Tasks: Bakery for €12</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Financial Plan Kit Pro</h3><p class="mt-2 text-muted-foreground">Cash flow, P&amp;L, scenarios, and a financial ratios dashboard.</p><a href="/en/digital-products/restaurant-financial-plan-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Financial Plan Kit Pro for $49</a></aside>
 
 <h3>Variable Costs (The Multipliers)</h3>
 <p>Not all sales dollars contribute equally to covering fixed costs. AI analyzes variable costs at the menu item level:</p>
@@ -121,7 +121,7 @@ imageAlt: "Break Even Analysis"
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use  </p>
 </div>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Business Plan: Paella Catering</h3><p class="mt-2 text-muted-foreground">Paella for events: business plan and kit with 11 deliverables.</p><a href="/plan-negocio-paellero-eventos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Business Plan: Paella Catering for €45</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost Kit Pro</h3><p class="mt-2 text-muted-foreground">Excel templates that cost out recipes in minutes with real food cost.</p><a href="/en/digital-products/food-cost-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=break-even-analysis-restaurants-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost Kit Pro for $19</a></aside>
 
 <h2>Before and After: The AI Break-Even Advantage</h2>
 <p>Here&#8217;s what restaurants achieve by replacing traditional break-even analysis with AI-powered tools:</p>

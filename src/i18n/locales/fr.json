@@ -2463,7 +2463,7 @@
     "breadcrumb": "Food Cost Restaurant avec IA",
     "hero": {
       "badge": "Logiciel de Food Cost IA pour Restaurants",
-      "h1": "Logiciel Food Cost Restaurant avec IA : Calcul Complet en 2 Minutes",
+      "h1": "Logiciel Food Cost Restaurant avec IA : Calcul Complet en Quelques Minutes",
       "subtitle": "Calculez le coût exact de chaque plat instantanément. Contrôle des pertes, prix de vente optimal et analyse de rentabilité pour maximiser les bénéfices de votre restaurant.",
       "tagline": "Arrêtez de perdre de l'argent à cause d'un food cost non maîtrisé.",
       "cta_primary": "Calculer mon food cost",
@@ -2472,16 +2472,16 @@
     },
     "results": [
       {
-        "metric": "2min",
-        "label": "Pour un calcul complet"
+        "metric": "Minutes",
+        "label": "pour un calcul complet, pas des heures"
       },
       {
         "metric": "30%",
-        "label": "Réduction moyenne des coûts"
+        "label": "Réduction moyenne du coût matière"
       },
       {
         "metric": "{{userCount}}+",
-        "label": "Restaurants actifs"
+        "label": "Chefs et professionnels de la restauration"
       },
       {
         "metric": "50+",
@@ -2496,8 +2496,8 @@
       "items": [
         {
           "feature": "Temps par calcul",
-          "other": "30-60 minutes par plat",
-          "aichef": "2 minutes avec l'IA"
+          "other": "Long et fastidieux, plat par plat",
+          "aichef": "Quelques minutes avec l'IA"
         },
         {
           "feature": "Mise à jour des prix",
@@ -2605,9 +2605,9 @@
     ],
     "why_section": {
       "title": "Le food cost non maîtrisé, c'est la marge que vous offrez",
-      "body": "La plupart des restaurants perdent entre 5% et 15% de bénéfice potentiel à cause d'un food cost mal calculé. AI Chef Pro vous donne le contrôle exact dont vous avez besoin pour protéger votre marge.",
+      "body": "Un food cost mal calculé, des pertes ignorées ou une hausse fournisseur non répercutée grignotent votre marge sans que vous le voyiez. AI Chef Pro vous donne le contrôle exact dont vous avez besoin pour la protéger.",
       "benefits": [
-        "Calcul complet de n'importe quel plat en moins de 2 minutes",
+        "Calcul complet de n'importe quel plat en quelques minutes",
         "Contrôle des pertes par type d'ingrédient et technique de cuisson",
         "Prix de vente optimal calculé avec votre marge cible",
         "Recalcul automatique quand les prix fournisseur changent",
@@ -2631,7 +2631,7 @@
     "faq": [
       {
         "question": "Qu'est-ce qu'une fiche de coût de restaurant ?",
-        "answer": "Une fiche de coût est le calcul détaillé du coût de production d'un plat : ingrédients, grammages, pertes et prix fournisseur. C'est la base du food cost et du prix de vente. AI Chef Pro la génère automatiquement avec l'IA en moins de 2 minutes."
+        "answer": "Une fiche de coût est le calcul détaillé du coût de production d'un plat : ingrédients, grammages, pertes et prix fournisseur. C'est la base du food cost et du prix de vente. AI Chef Pro la génère automatiquement avec l'IA en quelques minutes."
       },
       {
         "question": "Comment AI Chef Pro calcule-t-il le food cost d'un plat ?",

@@ -1703,16 +1703,16 @@
     },
     "results": [
       {
-        "metric": "10x",
-        "label": "faster to create social media content"
+        "metric": "Minutes",
+        "label": "to create a week of social media content, not hours"
       },
       {
-        "metric": "3h",
-        "label": "saved per week on digital marketing"
+        "metric": "Every",
+        "label": "Google review answered, in your brand's voice"
       },
       {
-        "metric": "4.8★",
-        "label": "average customer rating on Google"
+        "metric": "7",
+        "label": "languages for international and tourist guests"
       },
       {
         "metric": "75+",
@@ -1805,7 +1805,7 @@
       "title": "Why AI marketing for restaurants is the future of hospitality",
       "body": "Restaurant marketing is a constant race: posts, replies, promotions, newsletters. AI restaurant marketing takes the blank page out of the equation, so you can keep your social media, Google listing and campaigns consistent in minutes a day, without depending on external designers or community managers.",
       "benefits": [
-        "Create 30 posts for a full month in less than an hour",
+        "Plan a full month of posts in a single sitting",
         "Reply to all your Google reviews in minutes, not days",
         "Keep your Google listing always updated and optimized",
         "Launch seasonal campaigns without paying an agency",
@@ -2078,19 +2078,19 @@
       "badge": "AI Software for Professional Kitchen Management",
       "h1": "AI Kitchen Management Software for Chefs and Restaurants",
       "subtitle": "Smart kitchen management with AI: control food cost, inventory, recipes and allergens from a single platform. The specialized AI that truly understands professional kitchens.",
-      "tagline": "Save up to 3 hours daily on kitchen management.",
+      "tagline": "Spend less time on spreadsheets and more time on the pass.",
       "cta_primary": "Try now",
       "cta_secondary": "View plans and pricing",
       "no_card": "From €10/month · No commitment · Instant access"
     },
     "results": [
       {
-        "metric": "3h",
-        "label": "Daily management savings"
+        "metric": "Hours",
+        "label": "of repetitive costing work handed to AI"
       },
       {
         "metric": "{{userCount}}+",
-        "label": "Active restaurants"
+        "label": "Chefs and hospitality professionals"
       },
       {
         "metric": "75+",
@@ -2098,7 +2098,7 @@
       },
       {
         "metric": "30%",
-        "label": "Average cost reduction"
+        "label": "Average ingredient-cost reduction"
       }
     ],
     "comparison": {
