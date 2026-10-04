@@ -40,3 +40,16 @@ Auditoría adversarial Opus: sin bloqueantes; las correcciones menores están ap
 
 - Clon **parcial** (blobless + sparse). No ejecutar `git fsck` ni `sparse-checkout add` de carpetas de imágenes: dispara la descarga de cientos de MB.
 - Claves en `~/.config/chefbusiness/secrets.env` (600). DataForSEO: `DATAFORSEO_ENV=~/.config/chefbusiness/secrets.env`.
+
+## Segunda tanda (PR #113, en producción)
+
+- **Blog EN → tienda EN:** 128 banners de 62 posts apuntaban a landings ESPAÑOLAS. Ahora van a los 6 productos vivos de `/en/digital-products` (198 banners EN, 0 españoles, verificado en producción). Cuando salgan los 4 productos EN nuevos: `python3 scripts/astro-migration/fase8e-banners-en-reapuntar.py --rebalanceo` (dry-run primero; exige que cada producto nuevo tenga ya un banner modelo en el corpus).
+- **Hidrólisis:** unos 15 errores técnicos corregidos; el ceviche es desnaturalización.
+- **Landings EN/FR:** retiradas las cifras sin respaldo. **Las mismas cifras siguen en `es.json` y en de/it/pt/nl** de esas claves.
+
+## ⚠️ Pendiente de decisión de John: testimonios y reseñas inventados
+
+- 4 testimonios con nombre (Ana Martínez ×2, en dos negocios distintos; Carlos Méndez; Roberto Fernández) en los 7 locales. Todos nacieron el 25-feb-2026 en commits generados con un modelo y no tienen ninguna fuente.
+- **«Carlos Méndez» aparece como `Review` con `reviewRating` 5★ en el JSON-LD** de 12 landings de producto (`src/pages/KitTareas*.tsx`, `PlanNegocio*.tsx`, `astro-site/src/data/productos/{tareas,planes}/*.ts`).
+- La home EN/FR muestra «Bookings have increased by 40%» firmado por «El Olivo Restaurant».
+- Riesgo: acción manual de Google por reseñas no genuinas en datos estructurados y normativa UE contra reseñas falsas. Recomendación: retirarlos o sustituirlos por reseñas reales. Las landings de producto son territorio de la sesión de la tienda: hay que coordinarlo.
