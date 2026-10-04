@@ -1,0 +1,4167 @@
+{
+ "tanda": "GFT",
+ "salida": "scripts/productos-digitales/business-plans-en/textos_en/GFT.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 365,
+ "n_palabras": 5218,
+ "pistas": {
+  "P01": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P02": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P03": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P04": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P05": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P06": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P07": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P08": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P09": "Glosario: aparcamiento y base del vehículo → «commissary & truck parking»",
+  "P10": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P11": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P12": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P13": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P14": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P15": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P16": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P17": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P18": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P19": "D7: los valores de la lista son «Yes» / «No»",
+  "P20": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P21": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P22": "SPEC §4.1 línea 8 (I1): el Word del kit usa las MISMAS cifras de ejemplo que este libro; si cambias el libro, actualiza las cifras del Word",
+  "P23": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P24": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P25": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P26": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons"
+ },
+ "pestanas_es_en": {
+  "FTP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "CAFP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "FTC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Truck & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  },
+  "CAFC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local": "Phase 2 - Location & Permits",
+   "F3 - Equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Food Truck Business Plan Kit by AI Chef Pro.",
+  "Este fichero forma parte del producto «plan-negocio-cafeteria» de AI Chef Pro.": "This file is part of the Coffee Shop Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Pay periods per year",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "SBA-guaranteed loan (7(a), through your bank)",
+  "Préstamo participativo ENISA": "SBA Microloan (nonprofit intermediaries, up to $50,000)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Clientes servidos al día de media del año. Es el mismo «Clientes/día objetivo (Año 1)» que ya declaraba el fichero v1.1",
+   "donde": [
+    "FTP · 0. Supuestos!C4"
+   ],
+   "fila": "Clientes/día (media del año 1)",
+   "valor_us": 70,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA. Es el mismo 12 € que ya usaban Punto Equilibrio y la columna realista de Escenarios (declarar que es SIN IVA no cambia ningún número, sólo aclara qué era). Dentro del rango 10-15 € de la fila «Ticket medio food truck» de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones",
+   "donde": [
+    "FTP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 14,
+   "pistas": [
+    "P04",
+    "P05",
+    "P06",
+    "P01",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "El MISMO dato lo usan la cuenta de resultados, el punto de equilibrio y los escenarios. La versión anterior traía TRES calendarios que no coincidían: 25 días de servicio al mes en el punto de equilibrio (300 al año), 5 servicios por semana durante 48 semanas en los escenarios (240 al año) y ninguno declarado en la cuenta de resultados. Se fijan 250 días —5 días de servicio a la semana por 50 semanas activas, dentro de los «4-6 días operativos por semana» que declara este mismo libro— porque son los únicos que reproducen al céntimo la facturación que el propio libro ya publicaba: 45 × 12 × 250 = 135.000 €",
+   "donde": [
+    "FTP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 260,
+   "pistas": [
+    "P05",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "El fichero v1.1 proyectaba 175.000 € en el año 2 sobre 135.000 € (+29,6 %): se redondea a la baja porque un food truck de un año no tiene todavía rutas ni clientela corporativa consolidadas (mismo criterio conservador que tapas-bar y cafetería)",
+   "donde": [
+    "FTP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "pistas": [
+    "P05",
+    "P01",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "El fichero v1.1 proyectaba 215.000 € sobre 175.000 € (+22,9 %): igual, redondeado a la baja",
+   "donde": [
+    "FTP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "pistas": [
+    "P05",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Coste de mercancía de la comida: dentro del 28-33 % de la fila «Food cost comida» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («depende del concepto: burger 30 %, tacos 25 %, poke 35 %»). Se toma el extremo bajo del rango porque la compra diaria que exige un food truck, sin cámara grande, reduce la merma frente a una cocina fija. Es la palanca más sensible del plan: con el 33 % el resultado del primer año se queda muy justo",
+   "donde": [
+    "FTP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.3,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Bebidas embotelladas y refrescos: extremo bajo del 22-28 % de la fila «Food cost bebidas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («refrescos y agua embotellada, margen alto»)",
+   "donde": [
+    "FTP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.25,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Packaging biodegradable: extremo bajo del 3-5 % de la fila «Coste packaging / ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones. Es una partida realmente cara en un food truck (obligatoria por normativa municipal en muchos casos, como recuerda la fase de equipamiento de tu checklist) y por eso se cita al lado del food cost, no dentro de «varios»",
+   "donde": [
+    "FTP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.04,
+   "pistas": [
+    "P04",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "A CERO por defecto: este negocio vende en el punto de venta móvil, no reparte a domicilio. Súbelo si activas un canal de delivery desde una ubicación fija",
+   "donde": [
+    "FTP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0
+  },
+  {
+   "id": "c0030",
+   "es": "Sin uso mientras pct_delivery esté a 0: rango habitual de comisión de plataforma si algún día operas desde una ubicación fija con reparto",
+   "donde": [
+    "FTP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25
+  },
+  {
+   "id": "c0032",
+   "es": "Tarjeta y bizum sobre el total facturado: un food truck urbano cobra en tarjeta/contactless la mayoría de los tickets",
+   "donde": [
+    "FTP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.029,
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "ESTE NEGOCIO NO PAGA RENTA DE LOCAL: esta celda es el coste mensual del aparcamiento o la nave en la que el vehículo pernocta y se prepara cada jornada, y de ella salen también la fianza y los meses previos a la apertura. Es un concepto distinto del generador, que va en la celda de suministros. 400 €/mes es lo que cuesta una plaza cubierta con toma de agua y desagüe para un vehículo comercial grande en una ciudad media española: pide presupuesto en tu zona antes de firmar",
+   "donde": [
+    "FTP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 1200,
+   "pistas": [
+    "P04",
+    "P05",
+    "P09",
+    "P02",
+    "P10"
+   ]
+  },
+  {
+   "id": "c0043",
+   "es": "Fianza del aparcamiento (meses)",
+   "donde": [
+    "FTP · 0. Supuestos!A25"
+   ],
+   "pistas": [
+    "P04",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Dos meses de fianza por la plaza o la nave, menos que los tres habituales de un local comercial",
+   "donde": [
+    "FTP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del aparcamiento (meses)",
+   "valor_us": 1,
+   "pistas": [
+    "P04",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Combustible del generador eléctrico y mantenimiento de las tomas de agua y de vertido. Es el mismo concepto que la versión anterior llamaba «Generador (combustible/alquiler)» dentro de los costes fijos: ahora vive en una celda, para poder cambiarlo en un solo sitio y que el resto del libro se entere",
+   "donde": [
+    "FTP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 500,
+   "pistas": [
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil profesional alimentaria —la fase 1 de tu checklist pide un mínimo de 300.000 € de cobertura— más el seguro del vehículo a todo riesgo. Es la MISMA prima que la versión anterior contaba dos veces, una en la inversión y otra como gasto del año: aquí se cuenta una sola vez, que es como se paga",
+   "donde": [
+    "FTP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 4000,
+   "pistas": [
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Combustible del vehículo para desplazarse entre ubicaciones más el colchón de gasto corriente no presupuestado. Es un coste VARIABLE: sube y baja con los servicios que se hacen, así que no puede vivir entre los fijos, porque movería el punto de equilibrio sin que se notara. Agrupa dos partidas que la versión anterior tenía sueltas: el combustible, que ya era variable, y los varios e imprevistos, que estaban mal clasificados como fijos",
+   "donde": [
+    "FTP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "pistas": [
+    "P04",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0053",
+   "es": "Aportación del titular. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja de este plan",
+   "donde": [
+    "FTP · 0. Supuestos!C30"
+   ],
+   "fila": "Recursos propios aportados (€)",
+   "valor_us": 35000,
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que el origen de fondos cuadra con la necesidad de caja de la hoja 1 (25.000 € de recursos propios + 72.000 € de préstamo = 97.000 €). Está por encima de los 73.400 € que sumaba la versión anterior porque el fondo de maniobra pasa a ser de verdad de tres meses, y porque ahora se suman a la necesidad de caja el IVA de la inversión —que hay que adelantar aunque se recupere— y los imprevistos de la puesta en marcha",
+   "donde": [
+    "FTP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR",
+   "pistas": [
+    "P04",
+    "P05",
+    "P11",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual; un préstamo de menor importe y sin garantía inmobiliaria (el vehículo es la garantía) suele salir algo por encima del de un local: pide oferta a dos entidades y a una línea ICO/ENISA de emprendedores antes de fijarlo",
+   "donde": [
+    "FTP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P04",
+    "P11",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0059",
+   "es": "Años totales, carencia incluida. Un vehículo se amortiza más rápido que unas obras de local, así que el plazo también es más corto",
+   "donde": [
+    "FTP · 0. Supuestos!C33"
+   ],
+   "fila": "Plazo del préstamo (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P04",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "Primer año sólo intereses, que es cuando la caja está más tensa (adaptación del vehículo + primeras semanas de rodaje probando ubicaciones)",
+   "donde": [
+    "FTP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0
+  },
+  {
+   "id": "c0063",
+   "es": "Mínimo que exige este mismo libro (Instrucciones): un colchón por debajo de 3 meses no cubre un bache de mal tiempo o de temporada baja de eventos",
+   "donde": [
+    "FTP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)"
+  },
+  {
+   "id": "c0079",
+   "es": "Vehículo, adaptación y rotulación, instalación de gas, depósito de aguas y proyecto técnico: todo lo que va montado en el vehículo se amortiza con él. Ocho años son el 12,5 % anual, por debajo del coeficiente lineal máximo del 16 % que la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades fija para los elementos de transporte. Confírmalo con tu asesor",
+   "donde": [
+    "FTP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P04",
+    "P13",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Equipamiento de cocina, generador, TPV, menaje y toldo. El uso es más intenso que en una cocina fija por el montaje y el desmontaje diarios, pero el coeficiente lineal máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades es del 12 % para maquinaria y del 10 % para mobiliario: por debajo de 9-10 años el exceso no sería deducible. Confírmalo con tu asesor",
+   "donde": [
+    "FTP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P04",
+    "P13",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0086",
+   "es": "Plazas de pie y mesas altas junto al vehículo",
+   "donde": [
+    "FTP · 0. Supuestos!A51"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "DATO INFORMATIVO: no entra en ningún cálculo de este libro. Son las cuatro mesas altas plegables de cuatro posiciones que presupuesta la partida «Toldo, mobiliario exterior plegable» de la hoja de inversión. Un food truck no tiene aforo legal ni plazas sentadas, así que aquí no se calcula ninguna rotación por plaza: el techo real de este negocio son los clientes por servicio, que la tabla de referencias de este mismo libro sitúa en 40-80, y quien manda sobre el volumen es la celda «Clientes/día» de arriba",
+   "donde": [
+    "FTP · 0. Supuestos!C51"
+   ],
+   "fila": "Plazas de pie y mesas altas junto al vehículo",
+   "pistas": [
+    "P01",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0089",
+   "es": "Un food truck que arranca no factura desde el primer día lo mismo que a los seis meses: hay que probar ubicaciones, entrar en los mercados y que la gente te conozca. Con 100 % se elimina la rampa y el año 1 se proyecta a velocidad de crucero",
+   "donde": [
+    "FTP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero"
+  },
+  {
+   "id": "c0092",
+   "es": "Meses de alquiler del aparcamiento ANTES de abrir",
+   "donde": [
+    "FTP · 0. Supuestos!A54"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0093",
+   "es": "La adaptación del vehículo dura 4-8 semanas según la fase 2 de tu propio checklist: son dos meses de aparcamiento y base que se pagan antes de facturar el primer euro, así que forman parte de la inversión y no de la cuenta de resultados",
+   "donde": [
+    "FTP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler del aparcamiento ANTES de abrir",
+   "pistas": [
+    "P05",
+    "P09",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0094",
+   "es": "Imprevistos sobre las partidas de compra y adaptación del vehículo (%)",
+   "donde": [
+    "FTP · 0. Supuestos!A55"
+   ]
+  },
+  {
+   "id": "c0095",
+   "es": "Se conserva el mismo 8 % que la versión anterior tenía escrito a mano en su fila de imprevistos, ahora calculado por fórmula sobre las partidas de compra y adaptación del vehículo: si cambias el precio del vehículo, los imprevistos se recalculan solos. La nota de esa fila, en la hoja de Inversión, enumera exactamente qué partidas entran",
+   "donde": [
+    "FTP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de compra y adaptación del vehículo (%)",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0098",
+   "es": "En la ventanilla se cobra al contado (0 días). Súbelo si trabajas con organizadores de eventos o con clientes de catering que pagan a 15 o 30 días, o con plataformas que liquidan más tarde",
+   "donde": [
+    "FTP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0106",
+   "es": "Bebida ALCOHÓLICA sobre el total de bebida: casi nula — la línea de bebida de este plan es refrescos, agua y zumos, como describe la fila «Food cost bebidas» de la tabla de referencias («refrescos y agua embotellada»); sólo alguna cerveza envasada ocasional en festivales de música. El resto va al IVA reducido de hostelería. Este mismo peso reparte el IVA que SOPORTAS al comprar la bebida (la parte alcohólica al tipo general y el resto al reducido): si tu proveedor te factura al 21 % los refrescos y zumos con azúcares o edulcorantes añadidos —que es lo que manda el art. 91.Uno.1.1.º de la Ley 37/1992—, soportarás algo más de IVA del que estima el libro; lo recuperas igual con el modelo 303",
+   "donde": [
+    "FTP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0,
+   "pistas": [
+    "P04",
+    "P14",
+    "P02",
+    "P03",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0108",
+   "es": "10 %, igual que el resto de lo que se sirve para consumir en el acto: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el acto», sin excluir el alcohol, y eso es lo que hace un food truck. Si vendes alcohol envasado PARA LLEVAR no hay consumo en el acto y esa parte va al tipo general: el libro lo aplica sólo a la parte alcohólica que sale por el canal de la celda «Ventas por delivery sobre el total», que en este plan está a cero; súbela si abres ese canal",
+   "donde": [
+    "FTP · 0. Supuestos!C63"
+   ],
+   "fila": "IVA de la bebida ALCOHÓLICA para consumir en el acto",
+   "valor_us": 0.08,
+   "pistas": [
+    "P04",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0117",
+   "es": "El convenio PROVINCIAL de hostelería (o el de comercio, según cómo se clasifique la actividad de venta ambulante en tu provincia) es el suelo real del sector: cópialo de la tabla salarial que corresponda. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "FTP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P04",
+    "P16",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0134",
+   "es": "PLAN DE NEGOCIO: FOOD TRUCK",
+   "donde": [
+    "FTP · Inversión Inicial!A1"
+   ]
+  },
+  {
+   "id": "c0136",
+   "es": "Ajusta las cifras a tu proyecto.",
+   "donde": [
+    "FTP · Inversión Inicial!A3"
+   ]
+  },
+  {
+   "id": "c0143",
+   "es": "Vehículo food truck (nuevo o segunda mano)",
+   "donde": [
+    "FTP · Inversión Inicial!A7"
+   ]
+  },
+  {
+   "id": "c0144",
+   "es": "Furgoneta adaptada o remolque. Segunda mano desde 15K",
+   "donde": [
+    "FTP · Inversión Inicial!D7"
+   ],
+   "fila": "Vehículo food truck (nuevo o segunda mano)",
+   "valor_us": 45000
+  },
+  {
+   "id": "c0146",
+   "es": "Adaptación y rotulación vehículo",
+   "donde": [
+    "FTP · Inversión Inicial!A8"
+   ]
+  },
+  {
+   "id": "c0147",
+   "es": "Ventanilla servicio, mostrador, rotulación integral",
+   "donde": [
+    "FTP · Inversión Inicial!D8"
+   ],
+   "fila": "Adaptación y rotulación vehículo",
+   "valor_us": 20000
+  },
+  {
+   "id": "c0148",
+   "es": "Equipamiento cocina móvil",
+   "donde": [
+    "FTP · Inversión Inicial!A9"
+   ]
+  },
+  {
+   "id": "c0149",
+   "es": "Plancha, freidora, campaña, nevera, fregadero",
+   "donde": [
+    "FTP · Inversión Inicial!D9"
+   ],
+   "fila": "Equipamiento cocina móvil",
+   "valor_us": 15000
+  },
+  {
+   "id": "c0150",
+   "es": "Generador eléctrico o conexión",
+   "donde": [
+    "FTP · Inversión Inicial!A10"
+   ]
+  },
+  {
+   "id": "c0151",
+   "es": "Generador insonorizado o kit conexión a red",
+   "donde": [
+    "FTP · Inversión Inicial!D10"
+   ],
+   "fila": "Generador eléctrico o conexión",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0152",
+   "es": "Instalación gas (si aplica)",
+   "donde": [
+    "FTP · Inversión Inicial!A11"
+   ]
+  },
+  {
+   "id": "c0153",
+   "es": "Certificación gas obligatoria, revisión anual",
+   "donde": [
+    "FTP · Inversión Inicial!D11"
+   ],
+   "fila": "Instalación gas (si aplica)",
+   "valor_us": 4000
+  },
+  {
+   "id": "c0154",
+   "es": "Depósito de agua + aguas residuales",
+   "donde": [
+    "FTP · Inversión Inicial!A12"
+   ]
+  },
+  {
+   "id": "c0155",
+   "es": "Depósito de agua limpia y de aguas residuales del vehículo: es el equipo que exige el proyecto técnico sanitario para servir comida fuera de un local con acometida",
+   "donde": [
+    "FTP · Inversión Inicial!D12"
+   ],
+   "fila": "Depósito de agua + aguas residuales",
+   "valor_us": 1500
+  },
+  {
+   "id": "c0157",
+   "es": "SL unipersonal exprés. Las tasas y el arancel del Registro Mercantil no llevan IVA, pero los honorarios del notario y de tu gestoría sí (21 %, deducible): el libro deja la fila entera fuera del IVA que hay que adelantar para no inflarlo. Si tu presupuesto es sobre todo de honorarios, cambia el desplegable de la columna «¿Lleva IVA?» a «Sí»",
+   "donde": [
+    "FTP · Inversión Inicial!D13"
+   ],
+   "fila": "Constitución SL + notaría + registro",
+   "valor_us": 800,
+   "pistas": [
+    "P04",
+    "P18",
+    "P03",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0159",
+   "es": "Licencias y permisos (promedio)",
+   "donde": [
+    "FTP · Inversión Inicial!A14"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Varía mucho por municipio y comunidad autónoma: pide el importe en el tuyo antes de cerrar el presupuesto",
+   "donde": [
+    "FTP · Inversión Inicial!D14"
+   ],
+   "fila": "Licencias y permisos (promedio)",
+   "valor_us": 3000,
+   "pistas": [
+    "P04",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0161",
+   "es": "Proyecto técnico sanitario",
+   "donde": [
+    "FTP · Inversión Inicial!A15",
+    "FTC · F2 - Vehículo!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0162",
+   "es": "Obligatorio para la actividad alimentaria móvil: planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "FTP · Inversión Inicial!D15"
+   ],
+   "fila": "Proyecto técnico sanitario",
+   "valor_us": 1000
+  },
+  {
+   "id": "c0163",
+   "es": "TPV móvil + datáfono",
+   "donde": [
+    "FTP · Inversión Inicial!A16"
+   ],
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "TPV tablet + datáfono 4G para cobros",
+   "donde": [
+    "FTP · Inversión Inicial!D16"
+   ],
+   "fila": "TPV móvil + datáfono",
+   "valor_us": 1000,
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0165",
+   "es": "Menaje, utensilios, packaging eco",
+   "donde": [
+    "FTP · Inversión Inicial!A17"
+   ]
+  },
+  {
+   "id": "c0166",
+   "es": "Menaje, utensilios y cubertería desechable: es el equipamiento que se amortiza. La primera compra de envases entra aquí sólo como arranque; el packaging de cada día NO se amortiza, va como coste variable en la línea «Consumibles y envases» de la cuenta de resultados, al porcentaje sobre ventas de la hoja de Supuestos",
+   "donde": [
+    "FTP · Inversión Inicial!D17"
+   ],
+   "fila": "Menaje, utensilios, packaging eco",
+   "valor_us": 2000,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0167",
+   "es": "Stock inicial de producto",
+   "donde": [
+    "FTP · Inversión Inicial!A18"
+   ]
+  },
+  {
+   "id": "c0168",
+   "es": "Género para las primeras dos semanas de servicio. El libro calcula el IVA que adelantas por esta fila al tipo general, aunque los alimentos se compren al 10 % (o al 4 %): son unos euros de más en la caja del arranque, que se recuperan igual con el modelo 303",
+   "donde": [
+    "FTP · Inversión Inicial!D18"
+   ],
+   "fila": "Stock inicial de producto",
+   "valor_us": 2000,
+   "pistas": [
+    "P04",
+    "P05",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0169",
+   "es": "Marketing lanzamiento",
+   "donde": [
+    "FTP · Inversión Inicial!A19"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "RRSS, web, flyers, ficha Google, evento inaugural",
+   "donde": [
+    "FTP · Inversión Inicial!D19"
+   ],
+   "fila": "Marketing lanzamiento",
+   "valor_us": 3000,
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0171",
+   "es": "Toldo, mobiliario exterior plegable",
+   "donde": [
+    "FTP · Inversión Inicial!A20"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Mesas altas plegables, sombrilla, banderolas",
+   "donde": [
+    "FTP · Inversión Inicial!D20"
+   ],
+   "fila": "Toldo, mobiliario exterior plegable",
+   "valor_us": 1500
+  },
+  {
+   "id": "c0192",
+   "es": "Escenario realista — Food Truck urbano",
+   "donde": [
+    "FTP · PyG 3 Años!A2"
+   ]
+  },
+  {
+   "id": "c0204",
+   "es": "Ventas de comida (calle, mercados y catering privado)",
+   "donde": [
+    "FTP · PyG 3 Años!A10"
+   ]
+  },
+  {
+   "id": "c0205",
+   "es": "Producto principal servido en ubicaciones fijas y mercados, más el catering y las celebraciones privadas (la línea «Catering/eventos privados» de la v1.1, que en el fichero original NO llevaba coste de mercancía propio: aquí SÍ lo lleva, con el mismo tipo que la comida de calle)",
+   "donde": [
+    "FTP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de comida (calle, mercados y catering privado)",
+   "pistas": [
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0206",
+   "es": "Ventas de bebida (refrescos, agua y zumos embotellados)",
+   "donde": [
+    "FTP · PyG 3 Años!A11"
+   ]
+  },
+  {
+   "id": "c0207",
+   "es": "Bebidas embotelladas de acompañamiento del menú: el food truck no sirve bebida de barra",
+   "donde": [
+    "FTP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de bebida (refrescos, agua y zumos embotellados)"
+  },
+  {
+   "id": "c0220",
+   "es": "Aparcamiento y base del vehículo",
+   "donde": [
+    "FTP · PyG 3 Años!A22"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0221",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Es la plaza de aparcamiento y la base del vehículo (agua, limpieza y vaciado de residuales), no la renta de un local. Los meses previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+   "donde": [
+    "FTP · PyG 3 Años!F22"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0225",
+   "es": "Combustible del generador eléctrico, agua limpia y vaciado de residuales en la base del vehículo. Luz y gas van al 21 % y la factura del agua al 10 %: el libro aplica a toda la partida el tipo de la columna de al lado (21 %), así que si el agua pesa mucho en tu caso, sepárala en su propia línea",
+   "donde": [
+    "FTP · PyG 3 Años!F24"
+   ],
+   "fila": "Suministros (luz, agua, gas)",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0228",
+   "es": "Permisos y licencias (anuales)",
+   "donde": [
+    "FTP · PyG 3 Años!A26"
+   ]
+  },
+  {
+   "id": "c0229",
+   "es": "Mantenimiento vehículo + ITV",
+   "donde": [
+    "FTP · PyG 3 Años!A27"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0232",
+   "es": "Software (TPV, web, RRSS)",
+   "donde": [
+    "FTP · PyG 3 Años!A30"
+   ],
+   "pistas": [
+    "P08",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0234",
+   "es": "Gestión de residuos (orgánico, cartón y aceite usado)",
+   "donde": [
+    "FTP · PyG 3 Años!A32"
+   ]
+  },
+  {
+   "id": "c0235",
+   "es": "Gestor autorizado. El propio checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio. Pide presupuesto en tu zona",
+   "donde": [
+    "FTP · PyG 3 Años!F32"
+   ],
+   "fila": "Gestión de residuos (orgánico, cartón y aceite usado)",
+   "valor_us": 600,
+   "pistas": [
+    "P04",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0237",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que el checklist ya exige en su fase de personal",
+   "donde": [
+    "FTP · PyG 3 Años!F33"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 400,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0239",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995). A quién se marca como responsable se corrige en el propio checklist",
+   "donde": [
+    "FTP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 300,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0240",
+   "es": "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)",
+   "donde": [
+    "FTP · PyG 3 Años!A35"
+   ],
+   "pistas": [
+    "P04",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "Sólo se paga si el food truck pone música propia en ferias y festivales (distinto de la licencia del organizador, que cubre el recinto y no cada puesto). Presupuesto mínimo por si se usa",
+   "donde": [
+    "FTP · PyG 3 Años!F35"
+   ],
+   "fila": "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)",
+   "valor_us": 200,
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0265",
+   "es": "Suelo del propio libro: la fila «Margen bruto objetivo» (> 62 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones. Más bajo que el de un restaurante por el peso del packaging y del combustible",
+   "donde": [
+    "FTP · PyG 3 Años!F51"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.58,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0268",
+   "es": "Techo mezclado de los food cost que publica la tabla de referencias de este libro (comida 28-33 %, bebida 22-28 %). La ratio de al lado mide sólo la MERCANCÍA: los consumibles y los envases tienen su propia línea en la cuenta de resultados y no entran aquí, así que el caso base se queda holgadamente por debajo del techo",
+   "donde": [
+    "FTP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.35
+  },
+  {
+   "id": "c0270",
+   "es": "Techo del propio libro: la fila «Coste personal sobre ventas» (25-32 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones («menos personal que un restaurante: 2-3 personas»)",
+   "donde": [
+    "FTP · PyG 3 Años!F54"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.3,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0271",
+   "es": "Aparcamiento / Ventas",
+   "donde": [
+    "FTP · PyG 3 Años!A55",
+    "FTP · Instrucciones!A20"
+   ],
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0272",
+   "es": "No hay referencia de local en este libro (el food truck no paga renta de local): 5 % es un techo prudente para el aparcamiento/base del vehículo, muy por debajo del 8-12 % de un negocio con local fijo (mismo orden que el resto de la familia, adaptado a este molde)",
+   "donde": [
+    "FTP · PyG 3 Años!F55"
+   ],
+   "fila": "Aparcamiento / Ventas",
+   "valor_us": 0.06,
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0274",
+   "es": "Derivado del suelo de EBITDA que declara este producto para el año 2 —la fila «EBITDA objetivo (año 2)», 20-30 %, de la tabla de referencias—: descontando amortización, intereses e Impuesto de Sociedades, un EBITDA en la franja baja del rango deja un resultado neto positivo ya en el año 1, aunque ajustado por ser el primer ejercicio",
+   "donde": [
+    "FTP · PyG 3 Años!F56"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.06,
+   "pistas": [
+    "P04",
+    "P13",
+    "P21",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0280",
+   "es": "Break-even — Food Truck",
+   "donde": [
+    "FTP · Punto Equilibrio!A2"
+   ]
+  },
+  {
+   "id": "c0343",
+   "es": "Propietario/a — chef, gestión y conducción",
+   "donde": [
+    "FTP · Personal!A5"
+   ]
+  },
+  {
+   "id": "c0344",
+   "es": "Elabora el producto, conduce el vehículo entre ubicaciones y lleva la gestión, compras y RRSS. Cubre el turno fuerte de los 250 días de servicio al año",
+   "donde": [
+    "FTP · Personal!J5"
+   ],
+   "fila": "Propietario/a — chef, gestión y conducción",
+   "valor_us": {
+    "C": 1.0,
+    "D": 3000
+   },
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0345",
+   "es": "Ayudante de cocina y servicio",
+   "donde": [
+    "FTP · Personal!A6"
+   ]
+  },
+  {
+   "id": "c0346",
+   "es": "Prep, montaje, atención al cliente y desmontaje. A tiempo parcial: un food truck de dos servicios diarios como máximo no necesita una segunda persona a jornada completa. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "FTP · Personal!J6"
+   ],
+   "fila": "Ayudante de cocina y servicio",
+   "valor_us": {
+    "C": 0.8,
+    "D": 2218
+   },
+   "pistas": [
+    "P04",
+    "P16",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0347",
+   "es": "Refuerzo de festivales y eventos grandes",
+   "donde": [
+    "FTP · Personal!A7"
+   ]
+  },
+  {
+   "id": "c0348",
+   "es": "Sólo para los picos de afluencia que el propio fichero describe («Festivales = facturación x3-5 en un día»): unas pocas jornadas al mes, no un puesto estable. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "FTP · Personal!J7"
+   ],
+   "fila": "Refuerzo de festivales y eventos grandes",
+   "valor_us": {
+    "C": 0.15,
+    "D": 390
+   },
+   "pistas": [
+    "P04",
+    "P16",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0350",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) del propietario y del ayudante, y del descanso semanal. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "FTP · Personal!J8"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "C": 0.06,
+    "D": 166
+   },
+   "pistas": [
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0364",
+   "es": "Jornada efectiva completa del día de servicio: carga, desplazamiento, montaje, servicio, recogida y limpieza. El servicio al público es sólo una parte",
+   "donde": [
+    "FTP · Personal!J18"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 10
+  },
+  {
+   "id": "c0366",
+   "es": "Presencia media a bordo. En los picos de un festival hará falta un segundo par de manos: súbelo aquí y la plantilla se dimensiona sola",
+   "donde": [
+    "FTP · Personal!J19"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 1.5
+  },
+  {
+   "id": "c0376",
+   "es": "INSTRUCCIONES DE USO — Plan financiero Food Truck",
+   "donde": [
+    "FTP · Instrucciones!A1"
+   ]
+  },
+  {
+   "id": "c0381",
+   "es": "3. Sólo «Punto Equilibrio» se deriva entera de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+   "donde": [
+    "FTP · Instrucciones!A7"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Punto Equilibrio",
+     "en": "Break-Even"
+    },
+    {
+     "es": "Escenarios",
+     "en": "Scenarios"
+    },
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    },
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0386",
+   "es": "8. El documento Word de este pack es el de la versión 1.1: las cifras válidas son las de este Excel, que es el que se recalcula solo cuando cambias una celda verde.",
+   "donde": [
+    "FTP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P02",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0403",
+   "es": "Coste de personal en la cuenta de resultados",
+   "donde": [
+    "FTP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0404",
+   "es": "42.000 €",
+   "donde": [
+    "FTP · Instrucciones!B35"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0405",
+   "es": "42.081 €, leídos de la hoja Personal",
+   "donde": [
+    "FTP · Instrucciones!C35"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0406",
+   "es": "La cuenta de resultados usaba una cifra tecleada a mano que no era la de su propia hoja de Personal, que sumaba 76.566 €. Ahora la lee de ahí: si cambias un sueldo, el plan entero se recalcula",
+   "donde": [
+    "FTP · Instrucciones!D35"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0407",
+   "es": "Plantilla",
+   "donde": [
+    "FTP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0408",
+   "es": "3 puestos / 76.566 € al año",
+   "donde": [
+    "FTP · Instrucciones!B36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0409",
+   "es": "4 puestos (1 a jornada completa y 3 parciales) / 42.081 € al año",
+   "donde": [
+    "FTP · Instrucciones!C36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0410",
+   "es": "Dimensionada para los 250 días de servicio que hace este plan, con una línea nueva para cubrir vacaciones y descansos. Con la plantilla anterior el personal se comía el 56,7 % de las ventas y el negocio no era viable con sus propios números",
+   "donde": [
+    "FTP · Instrucciones!D36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P16",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0411",
+   "es": "Días de servicio al año",
+   "donde": [
+    "FTP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0412",
+   "es": "tres calendarios distintos en el mismo paquete: 300 días en el punto de equilibrio, 240 en los escenarios y ninguno declarado en la cuenta de resultados",
+   "donde": [
+    "FTP · Instrucciones!B37"
+   ],
+   "fila": "Días de servicio al año",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0413",
+   "es": "250 días, un solo dato para todo el libro",
+   "donde": [
+    "FTP · Instrucciones!C37"
+   ],
+   "fila": "Días de servicio al año",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0414",
+   "es": "Son los días que hacen exacta la facturación que el propio plan ya publicaba: 45 clientes × 12 € × 250 días = 135.000 €. Equivalen a 5 días de servicio por semana durante 50 semanas",
+   "donde": [
+    "FTP · Instrucciones!D37"
+   ],
+   "fila": "Días de servicio al año",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0415",
+   "es": "Ticket medio",
+   "donde": [
+    "FTP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0416",
+   "es": "12 € sin decir si llevaba IVA",
+   "donde": [
+    "FTP · Instrucciones!B38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0417",
+   "es": "12 € SIN IVA",
+   "donde": [
+    "FTP · Instrucciones!C38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0418",
+   "es": "El número no cambia; lo que cambia es que ahora se declara qué es. Con el IVA de hostelería son 13,20 € de precio de venta al público, dentro del rango 10-15 € que recoge este mismo libro",
+   "donde": [
+    "FTP · Instrucciones!D38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0419",
+   "es": "Aparcamiento y base del vehículo",
+   "donde": [
+    "FTP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0420",
+   "es": "no estaba",
+   "donde": [
+    "FTP · Instrucciones!B39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0421",
+   "es": "400 €/mes (4.800 € al año), más dos meses de fianza y dos meses antes de abrir",
+   "donde": [
+    "FTP · Instrucciones!C39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0422",
+   "es": "Un food truck necesita un sitio en el que pernoctar, cargar agua y vaciar residuos. El plan anterior no lo pagaba en ninguna línea, así que el negocio parecía no tener ningún coste de suelo",
+   "donde": [
+    "FTP · Instrucciones!D39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0423",
+   "es": "Fondo de maniobra",
+   "donde": [
+    "FTP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0424",
+   "es": "6.000 €, etiquetados «3 meses»",
+   "donde": [
+    "FTP · Instrucciones!B40"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0425",
+   "es": "18.053 €: tres meses de costes fijos de caja, calculados por fórmula",
+   "donde": [
+    "FTP · Instrucciones!C40"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0426",
+   "es": "Los 6.000 € daban para 1,1 meses, no para 3. Es el colchón que evita cerrar por una racha de mal tiempo o un mes flojo de eventos",
+   "donde": [
+    "FTP · Instrucciones!D40"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0427",
+   "es": "Amortización",
+   "donde": [
+    "FTP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0428",
+   "es": "10.343 € al año, a 7 años planos sobre todo, incluido lo que no es inmovilizado",
+   "donde": [
+    "FTP · Instrucciones!B41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0429",
+   "es": "dos vidas útiles: el vehículo, su adaptación y los imprevistos de la puesta en marcha a 8 años, y el equipamiento y el mobiliario a 10. La cuota del año la calcula la hoja de Inversión",
+   "donde": [
+    "FTP · Instrucciones!C41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "El vehículo se amortiza más rápido que el equipamiento porque son cosas distintas para Hacienda. Y el fondo de maniobra, el stock y el marketing no se amortizan: no son inmovilizado",
+   "donde": [
+    "FTP · Instrucciones!D41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0431",
+   "es": "Seguro del vehículo y RC",
+   "donde": [
+    "FTP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0432",
+   "es": "2.500 € en la inversión Y 2.500 € al año en los gastos: la misma prima contada dos veces",
+   "donde": [
+    "FTP · Instrucciones!B42"
+   ],
+   "fila": "Seguro del vehículo y RC",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "2.500 € al año, una sola vez",
+   "donde": [
+    "FTP · Instrucciones!C42"
+   ],
+   "fila": "Seguro del vehículo y RC",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "Contarla en los dos sitios inflaba la inversión, el IVA a adelantar y el dinero que hay que pedir al banco",
+   "donde": [
+    "FTP · Instrucciones!D42"
+   ],
+   "fila": "Seguro del vehículo y RC",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Generador",
+   "donde": [
+    "FTP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "2.400 € al año como línea suelta, además de los suministros",
+   "donde": [
+    "FTP · Instrucciones!B43"
+   ],
+   "fila": "Generador",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "2.400 € al año dentro de la celda de suministros",
+   "donde": [
+    "FTP · Instrucciones!C43"
+   ],
+   "fila": "Generador",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "Era el mismo gasto escrito en dos sitios. Ahora se cambia en uno solo y el resto del libro se entera",
+   "donde": [
+    "FTP · Instrucciones!D43"
+   ],
+   "fila": "Generador",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "Imprevistos de la puesta en marcha",
+   "donde": [
+    "FTP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "5.500 € escritos a mano (un 8 % del total)",
+   "donde": [
+    "FTP · Instrucciones!B44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "el mismo 8 %, pero calculado sobre la compra y la adaptación del vehículo",
+   "donde": [
+    "FTP · Instrucciones!C44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "Si cambias el precio del vehículo, los imprevistos se recalculan solos en vez de quedarse en la cifra vieja",
+   "donde": [
+    "FTP · Instrucciones!D44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "Impuesto de Sociedades",
+   "donde": [
+    "FTP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "25 % los tres años, sin compensar pérdidas",
+   "donde": [
+    "FTP · Instrucciones!B45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "15 % los dos primeros ejercicios con beneficio, compensando las pérdidas anteriores",
+   "donde": [
+    "FTP · Instrucciones!C45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "Es el tipo que la ley reserva a las empresas de nueva creación, y las pérdidas de un año se restan del beneficio de los siguientes",
+   "donde": [
+    "FTP · Instrucciones!D45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Cuota del préstamo",
+   "donde": [
+    "FTP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "la cuota entera restaba en el resultado",
+   "donde": [
+    "FTP · Instrucciones!B46"
+   ],
+   "fila": "Cuota del préstamo",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "sólo los intereses en el resultado; la devolución del principal, en la tesorería",
+   "donde": [
+    "FTP · Instrucciones!C46"
+   ],
+   "fila": "Cuota del préstamo",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "Meter la cuota completa antes del resultado convierte la cuenta de resultados en un flujo de caja y el banco lo ve al instante",
+   "donde": [
+    "FTP · Instrucciones!D46"
+   ],
+   "fila": "Cuota del préstamo",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P11",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "Plan de financiación",
+   "donde": [
+    "FTP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "no existía",
+   "donde": [
+    "FTP · Instrucciones!B47"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "hoja nueva: de dónde sale el dinero, a qué se destina y el cuadro de amortización del préstamo año a año",
+   "donde": [
+    "FTP · Instrucciones!C47"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P21",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "Es la hoja que pide el banco junto con la cuenta de resultados, y la que avisa si el dinero que se aporta no llega a lo que hace falta",
+   "donde": [
+    "FTP · Instrucciones!D47"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "Tesorería mes a mes",
+   "donde": [
+    "FTP · Instrucciones!A48"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "no existía",
+   "donde": [
+    "FTP · Instrucciones!B48"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "hoja nueva de 12 meses: cobros, pagos, IVA trimestral y saldo acumulado",
+   "donde": [
+    "FTP · Instrucciones!C48"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "Responde a la única pregunta que decide una operación bancaria: en qué mes se queda el negocio sin caja",
+   "donde": [
+    "FTP · Instrucciones!D48"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "Combustible y varios",
+   "donde": [
+    "FTP · Instrucciones!A49"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "4.800 € de combustible sueltos + 2.000 € de varios metidos entre los costes fijos",
+   "donde": [
+    "FTP · Instrucciones!B49"
+   ],
+   "fila": "Combustible y varios",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "un solo 5 % sobre las ventas, tratado como coste variable",
+   "donde": [
+    "FTP · Instrucciones!C49"
+   ],
+   "fila": "Combustible y varios",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "El combustible sube y baja con los servicios que se hacen: ponerlo entre los fijos falseaba el punto de equilibrio",
+   "donde": [
+    "FTP · Instrucciones!D49"
+   ],
+   "fila": "Combustible y varios",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "Catering y eventos privados",
+   "donde": [
+    "FTP · Instrucciones!A50"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "10.000 € de ingresos sin ningún coste de materia prima imputado",
+   "donde": [
+    "FTP · Instrucciones!B50"
+   ],
+   "fila": "Catering y eventos privados",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "sumados a la línea de comida, con el mismo coste de mercancía que el resto (28 %)",
+   "donde": [
+    "FTP · Instrucciones!C50"
+   ],
+   "fila": "Catering y eventos privados",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "Una línea de ingresos que no paga género da un margen que no existe",
+   "donde": [
+    "FTP · Instrucciones!D50"
+   ],
+   "fila": "Catering y eventos privados",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "Sueldos y SMI",
+   "donde": [
+    "FTP · Instrucciones!A51"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "sueldos sin comparar con ningún suelo legal",
+   "donde": [
+    "FTP · Instrucciones!B51"
+   ],
+   "fila": "Sueldos y SMI",
+   "por_celda": true,
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "ninguna fila por debajo del SMI en proporción a su jornada, y una celda para el convenio de tu provincia",
+   "donde": [
+    "FTP · Instrucciones!C51"
+   ],
+   "fila": "Sueldos y SMI",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "El convenio provincial de hostelería manda sobre el SMI: cópialo en la hoja de Supuestos y el semáforo te avisa si algún sueldo se queda corto",
+   "donde": [
+    "FTP · Instrucciones!D51"
+   ],
+   "fila": "Sueldos y SMI",
+   "por_celda": true,
+   "pistas": [
+    "P23",
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Food cost comida",
+   "donde": [
+    "FTP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "28-33 %",
+   "donde": [
+    "FTP · Instrucciones!B55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "Depende del concepto: burger 30 %, tacos 25 %, poke 35 %. Este plan trabaja con el 28 %, el extremo bajo: si tu carta va al 33 %, el resultado del primer año se queda muy justo",
+   "donde": [
+    "FTP · Instrucciones!D55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Food cost bebidas",
+   "donde": [
+    "FTP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "22-28 %",
+   "donde": [
+    "FTP · Instrucciones!B56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0483",
+   "es": "Refrescos y agua embotellada, margen alto",
+   "donde": [
+    "FTP · Instrucciones!D56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0484",
+   "es": "Coste packaging / ventas",
+   "donde": [
+    "FTP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0485",
+   "es": "3-5 %",
+   "donde": [
+    "FTP · Instrucciones!B57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0486",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0487",
+   "es": "Packaging eco más caro pero obligatorio en muchos municipios",
+   "donde": [
+    "FTP · Instrucciones!D57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0488",
+   "es": "Coste personal sobre ventas",
+   "donde": [
+    "FTP · Instrucciones!A58"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0489",
+   "es": "25-32 %",
+   "donde": [
+    "FTP · Instrucciones!B58"
+   ],
+   "fila": "Coste personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0490",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C58"
+   ],
+   "fila": "Coste personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0491",
+   "es": "Menos personal que un restaurante: 2-3 personas",
+   "donde": [
+    "FTP · Instrucciones!D58"
+   ],
+   "fila": "Coste personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0492",
+   "es": "Ticket medio food truck",
+   "donde": [
+    "FTP · Instrucciones!A59"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0493",
+   "es": "10-15 €",
+   "donde": [
+    "FTP · Instrucciones!B59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0494",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0495",
+   "es": "Menú completo: plato + bebida + extra. El de este plan son 12 € SIN IVA, que con el tipo de hostelería salen 13,20 € de PVP",
+   "donde": [
+    "FTP · Instrucciones!D59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P04",
+    "P05",
+    "P06",
+    "P01",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0496",
+   "es": "Clientes por servicio",
+   "donde": [
+    "FTP · Instrucciones!A60"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0497",
+   "es": "40-80",
+   "donde": [
+    "FTP · Instrucciones!B60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0498",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0499",
+   "es": "Depende de ubicación, evento y día de la semana. Este plan proyecta 45, el extremo bajo del rango, a propósito",
+   "donde": [
+    "FTP · Instrucciones!D60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0500",
+   "es": "Margen bruto objetivo",
+   "donde": [
+    "FTP · Instrucciones!A61"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0501",
+   "es": "> 62 %",
+   "donde": [
+    "FTP · Instrucciones!B61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0502",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0503",
+   "es": "Inferior a un restaurante por el peso del packaging y el combustible",
+   "donde": [
+    "FTP · Instrucciones!D61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0504",
+   "es": "EBITDA objetivo (año 2)",
+   "donde": [
+    "FTP · Instrucciones!A62"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0505",
+   "es": "20-30 %",
+   "donde": [
+    "FTP · Instrucciones!B62"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0506",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C62"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0507",
+   "es": "Muy rentable si aciertas las ubicaciones. Con los supuestos de partida este plan se queda por debajo del rango: es lo que hay que mejorar subiendo clientes por servicio o ticket",
+   "donde": [
+    "FTP · Instrucciones!D62"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0508",
+   "es": "Retorno de la inversión",
+   "donde": [
+    "FTP · Instrucciones!A63"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0509",
+   "es": "12-24 meses",
+   "donde": [
+    "FTP · Instrucciones!B63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0510",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0511",
+   "es": "Es la referencia del sector. El de ESTE plan lo calcula la hoja de Tesorería y sale más largo: se mide sobre la inversión completa, con el fondo de maniobra dentro —el IVA no cuenta, porque se recupera con el modelo 303— y con el flujo que genera el negocio ANTES de pagar al banco. Esa misma hoja publica debajo el plazo medido sólo sobre lo que se compra, sin el fondo de maniobra, que sale más corto",
+   "donde": [
+    "FTP · Instrucciones!D63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P04",
+    "P14",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0512",
+   "es": "Días operativos/semana",
+   "donde": [
+    "FTP · Instrucciones!A64"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0513",
+   "es": "4-6",
+   "donde": [
+    "FTP · Instrucciones!B64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0514",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0515",
+   "es": "Mercados, eventos, zona de oficinas, festivales",
+   "donde": [
+    "FTP · Instrucciones!D64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0516",
+   "es": "Servicios por día",
+   "donde": [
+    "FTP · Instrucciones!A65"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0517",
+   "es": "1-2",
+   "donde": [
+    "FTP · Instrucciones!B65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0518",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0519",
+   "es": "Comida (12-15 h) y/o cena (19-23 h) según ubicación",
+   "donde": [
+    "FTP · Instrucciones!D65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0520",
+   "es": "Coste de combustible/mes",
+   "donde": [
+    "FTP · Instrucciones!A66"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0521",
+   "es": "300-500 €",
+   "donde": [
+    "FTP · Instrucciones!B66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0522",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0523",
+   "es": "Desplazamiento entre ubicaciones. En este plan va dentro del «Varios e imprevistos» de los costes variables",
+   "donde": [
+    "FTP · Instrucciones!D66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0524",
+   "es": "Permisos anuales (promedio)",
+   "donde": [
+    "FTP · Instrucciones!A67"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0525",
+   "es": "2.000-5.000 €",
+   "donde": [
+    "FTP · Instrucciones!B67"
+   ],
+   "fila": "Permisos anuales (promedio)",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0526",
+   "es": "Fichero v1.1",
+   "donde": [
+    "FTP · Instrucciones!C67"
+   ],
+   "fila": "Permisos anuales (promedio)",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0527",
+   "es": "Varía mucho por municipio y comunidad autónoma",
+   "donde": [
+    "FTP · Instrucciones!D67"
+   ],
+   "fila": "Permisos anuales (promedio)",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0528",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "FTP · Instrucciones!A68"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0529",
+   "es": "PROVINCIAL de hostelería o de comercio (según clasificación de la venta ambulante)",
+   "donde": [
+    "FTP · Instrucciones!B68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0530",
+   "es": "Fichero v1.1 (fase 4 del checklist)",
+   "donde": [
+    "FTP · Instrucciones!C68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P24",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0531",
+   "es": "No existe una tabla salarial estatal única: copia la tabla que te corresponda en la celda de Supuestos",
+   "donde": [
+    "FTP · Instrucciones!D68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0663",
+   "es": "CHECKLIST APERTURA — FOOD TRUCK",
+   "donde": [
+    "FTC · F1 - Constitución!A1",
+    "FTC · F2 - Vehículo!A1",
+    "FTC · F3 - Equipamiento!A1",
+    "FTC · F4 - Personal!A1",
+    "FTC · F5 - Marketing!A1",
+    "FTC · F6 - 90 Días!A1"
+   ]
+  },
+  {
+   "id": "c0664",
+   "es": "FASE 1: CONSTITUCIÓN Y TRÁMITES",
+   "donde": [
+    "FTC · F1 - Constitución!A2"
+   ]
+  },
+  {
+   "id": "c0669",
+   "es": "Elegir forma jurídica (SL o autónomo)",
+   "donde": [
+    "FTC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0672",
+   "es": "Autónomo viable si empiezas solo, SL si hay socios",
+   "donde": [
+    "FTC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Constitución SL / alta autónomo",
+   "donde": [
+    "FTC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0675",
+   "es": "1-5 días",
+   "donde": [
+    "FTC · F1 - Constitución!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0676",
+   "es": "Capital 1 € Ley Crea y Crece",
+   "donde": [
+    "FTC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0677",
+   "es": "Alta Hacienda: modelo 036/037",
+   "donde": [
+    "FTC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "Epígrafe IAE: 672.x (servicios de restauración en quioscos, food trucks e instalaciones móviles análogas) o 677.9 (venta ambulante sin elaboración) — la elección la valida tu gestor según si elaboras el producto en el vehículo o sólo lo vendes",
+   "donde": [
+    "FTC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P17",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0680",
+   "es": "Alta Seguridad Social",
+   "donde": [
+    "FTC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "Certificado digital",
+   "donde": [
+    "FTC · F1 - Constitución!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0685",
+   "es": "Imprescindible para los trámites telemáticos",
+   "donde": [
+    "FTC · F1 - Constitución!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0686",
+   "es": "Apertura cuenta bancaria",
+   "donde": [
+    "FTC · F1 - Constitución!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0688",
+   "es": "Separar finanzas",
+   "donde": [
+    "FTC · F1 - Constitución!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0690",
+   "es": "Sanidad CCAA",
+   "donde": [
+    "FTC · F1 - Constitución!C11",
+    "FTC · F2 - Vehículo!C10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "El Registro General Sanitario estatal NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca es el autonómico, el mismo que pide la fase 2 de este checklist con la autorización sanitaria del vehículo",
+   "donde": [
+    "FTC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Seguro RC profesional",
+   "donde": [
+    "FTC · F1 - Constitución!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0694",
+   "es": "Mínimo 300.000 €, cubre intoxicaciones",
+   "donde": [
+    "FTC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0695",
+   "es": "Seguro del vehículo (furgoneta o remolque)",
+   "donde": [
+    "FTC · F1 - Constitución!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0696",
+   "es": "A todo riesgo recomendado",
+   "donde": [
+    "FTC · F1 - Constitución!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0699",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes del programa de fidelización, personal y proveedores",
+   "donde": [
+    "FTC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Adaptar el TPV móvil al sistema Veri*factu / factura electrónica",
+   "donde": [
+    "FTC · F1 - Constitución!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV móvil y el datáfono que ya presupuesta la hoja de Inversión Inicial: cambiarlo después cuesta el doble",
+   "donde": [
+    "FTC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P08",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0706",
+   "es": "FASE 2: VEHÍCULO Y PERMISOS",
+   "donde": [
+    "FTC · F2 - Vehículo!A2"
+   ]
+  },
+  {
+   "id": "c0707",
+   "es": "Selección y compra del vehículo",
+   "donde": [
+    "FTC · F2 - Vehículo!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0708",
+   "es": "2-6 semanas",
+   "donde": [
+    "FTC · F2 - Vehículo!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0709",
+   "es": "Furgoneta adaptada, remolque o trailer. Nuevo o 2a mano",
+   "donde": [
+    "FTC · F2 - Vehículo!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0710",
+   "es": "Adaptación del vehículo para cocina",
+   "donde": [
+    "FTC · F2 - Vehículo!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0711",
+   "es": "Taller especializado",
+   "donde": [
+    "FTC · F2 - Vehículo!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0712",
+   "es": "4-8 semanas",
+   "donde": [
+    "FTC · F2 - Vehículo!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0713",
+   "es": "Ventanilla, mostrador, instalaciones",
+   "donde": [
+    "FTC · F2 - Vehículo!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0714",
+   "es": "Certificación gas (si cocina a gas)",
+   "donde": [
+    "FTC · F2 - Vehículo!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0715",
+   "es": "Instalador autorizado",
+   "donde": [
+    "FTC · F2 - Vehículo!C7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0717",
+   "es": "Revisión anual obligatoria",
+   "donde": [
+    "FTC · F2 - Vehículo!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0718",
+   "es": "ITV especial (si modificación estructural)",
+   "donde": [
+    "FTC · F2 - Vehículo!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "ITV",
+   "donde": [
+    "FTC · F2 - Vehículo!C8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0720",
+   "es": "Obligatorio si se modifica la carrocería",
+   "donde": [
+    "FTC · F2 - Vehículo!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0723",
+   "es": "Planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "FTC · F2 - Vehículo!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0724",
+   "es": "Autorización sanitaria del vehículo",
+   "donde": [
+    "FTC · F2 - Vehículo!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0726",
+   "es": "Inspección del vehículo ya equipado",
+   "donde": [
+    "FTC · F2 - Vehículo!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0727",
+   "es": "Permiso venta ambulante (municipal)",
+   "donde": [
+    "FTC · F2 - Vehículo!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "CADA municipio tiene su normativa",
+   "donde": [
+    "FTC · F2 - Vehículo!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Permiso de ocupación de la vía pública",
+   "donde": [
+    "FTC · F2 - Vehículo!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "1-2 meses",
+   "donde": [
+    "FTC · F2 - Vehículo!D12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0733",
+   "es": "Si operas en espacio público fijo",
+   "donde": [
+    "FTC · F2 - Vehículo!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0734",
+   "es": "Inscripción en mercados/ferias",
+   "donde": [
+    "FTC · F2 - Vehículo!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0735",
+   "es": "Organizadores",
+   "donde": [
+    "FTC · F2 - Vehículo!C13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0736",
+   "es": "Muchos mercados tienen lista de espera",
+   "donde": [
+    "FTC · F2 - Vehículo!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0737",
+   "es": "Carnet conducir adecuado",
+   "donde": [
+    "FTC · F2 - Vehículo!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0738",
+   "es": "B para <3.500kg, C para mayor",
+   "donde": [
+    "FTC · F2 - Vehículo!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P25"
+   ]
+  },
+  {
+   "id": "c0740",
+   "es": "También son obligatorias en venta ambulante: el modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+   "donde": [
+    "FTC · F2 - Vehículo!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "Contrato con gestor autorizado de residuos y aceite usado",
+   "donde": [
+    "FTC · F2 - Vehículo!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Se comprueba en la inspección sanitaria del vehículo. Este mismo checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio",
+   "donde": [
+    "FTC · F2 - Vehículo!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0745",
+   "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC móvil que ya exige la fase 4 de este checklist",
+   "donde": [
+    "FTC · F2 - Vehículo!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0747",
+   "es": "FASE 3: EQUIPAMIENTO Y SETUP",
+   "donde": [
+    "FTC · F3 - Equipamiento!A2"
+   ]
+  },
+  {
+   "id": "c0748",
+   "es": "Plancha industrial (gas o eléctrica)",
+   "donde": [
+    "FTC · F3 - Equipamiento!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0751",
+   "es": "Adaptar al concepto: burgers, crepes, plancha...",
+   "donde": [
+    "FTC · F3 - Equipamiento!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0752",
+   "es": "Freidora (si aplica)",
+   "donde": [
+    "FTC · F3 - Equipamiento!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0753",
+   "es": "Con filtro y gestión aceite usado",
+   "donde": [
+    "FTC · F3 - Equipamiento!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0754",
+   "es": "Campana extractora con filtros",
+   "donde": [
+    "FTC · F3 - Equipamiento!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0756",
+   "es": "Obligatoria en espacio cerrado",
+   "donde": [
+    "FTC · F3 - Equipamiento!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0757",
+   "es": "Nevera/congelador compacto",
+   "donde": [
+    "FTC · F3 - Equipamiento!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0758",
+   "es": "12V o 220V según generador",
+   "donde": [
+    "FTC · F3 - Equipamiento!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0759",
+   "es": "Generador eléctrico insonorizado",
+   "donde": [
+    "FTC · F3 - Equipamiento!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0760",
+   "es": "5-7 kW mínimo, insonorizado (<70dB)",
+   "donde": [
+    "FTC · F3 - Equipamiento!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0761",
+   "es": "Depósito de agua limpia y de aguas residuales",
+   "donde": [
+    "FTC · F3 - Equipamiento!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0762",
+   "es": "Mínimo 40 L de agua limpia y 60 L de residual",
+   "donde": [
+    "FTC · F3 - Equipamiento!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0763",
+   "es": "Fregadero doble seno",
+   "donde": [
+    "FTC · F3 - Equipamiento!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0764",
+   "es": "Con adaptación",
+   "donde": [
+    "FTC · F3 - Equipamiento!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0765",
+   "es": "Obligatorio por normativa sanitaria",
+   "donde": [
+    "FTC · F3 - Equipamiento!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0766",
+   "es": "TPV móvil y datáfono 4G",
+   "donde": [
+    "FTC · F3 - Equipamiento!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Tablet y datáfono con cobertura 4G",
+   "donde": [
+    "FTC · F3 - Equipamiento!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0768",
+   "es": "Menaje y utensilios cocina",
+   "donde": [
+    "FTC · F3 - Equipamiento!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0769",
+   "es": "Adaptado al espacio reducido",
+   "donde": [
+    "FTC · F3 - Equipamiento!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0770",
+   "es": "Packaging biodegradable",
+   "donde": [
+    "FTC · F3 - Equipamiento!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0771",
+   "es": "Obligatorio en muchos municipios desde 2023",
+   "donde": [
+    "FTC · F3 - Equipamiento!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0772",
+   "es": "Rotulación integral del vehículo",
+   "donde": [
+    "FTC · F3 - Equipamiento!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0774",
+   "es": "Primera impresión, marca visible a distancia",
+   "donde": [
+    "FTC · F3 - Equipamiento!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0775",
+   "es": "Toldo, mesas plegables, banderolas",
+   "donde": [
+    "FTC · F3 - Equipamiento!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0776",
+   "es": "Kit de montaje rápido para cada servicio",
+   "donde": [
+    "FTC · F3 - Equipamiento!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0779",
+   "es": "Definir equipo mínimo (2-3 personas)",
+   "donde": [
+    "FTC · F4 - Personal!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0780",
+   "es": "Propietario + 1 ayudante mínimo",
+   "donde": [
+    "FTC · F4 - Personal!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0781",
+   "es": "Contratación ayudante (si aplica)",
+   "donde": [
+    "FTC · F4 - Personal!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0782",
+   "es": "Contrato temporal o fijo-discontinuo para eventos",
+   "donde": [
+    "FTC · F4 - Personal!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0784",
+   "es": "El «carnet de manipulador» está derogado (RD 109/2010): la formación la acredita la EMPRESA y se documenta en el plan APPCC móvil",
+   "donde": [
+    "FTC · F4 - Personal!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P03",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Formación en APPCC móvil",
+   "donde": [
+    "FTC · F4 - Personal!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0786",
+   "es": "Temperaturas, cadena de frío en el vehículo y trazabilidad",
+   "donde": [
+    "FTC · F4 - Personal!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0787",
+   "es": "Formación operativa food truck",
+   "donde": [
+    "FTC · F4 - Personal!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0788",
+   "es": "Montaje, servicio rápido, desmontaje y limpieza",
+   "donde": [
+    "FTC · F4 - Personal!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0789",
+   "es": "Plan PRL (prevención riesgos)",
+   "donde": [
+    "FTC · F4 - Personal!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "Riesgos específicos: gas, aceite, espacio reducido",
+   "donde": [
+    "FTC · F4 - Personal!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0792",
+   "es": "Protocolo alérgenos",
+   "donde": [
+    "FTC · F4 - Personal!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "14 alérgenos, cartel visible en food truck",
+   "donde": [
+    "FTC · F4 - Personal!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "Ensayo montaje/desmontaje completo",
+   "donde": [
+    "FTC · F4 - Personal!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0795",
+   "es": "Equipo",
+   "donde": [
+    "FTC · F4 - Personal!C12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0796",
+   "es": "Cronometrar: objetivo <30 min montaje",
+   "donde": [
+    "FTC · F4 - Personal!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0799",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años. Aplica desde el primer contrato del ayudante, aunque sea a tiempo parcial",
+   "donde": [
+    "FTC · F4 - Personal!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Crear identidad visual y marca",
+   "donde": [
+    "FTC · F5 - Marketing!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "Logo, colores, rotulación, packaging branded",
+   "donde": [
+    "FTC · F5 - Marketing!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0807",
+   "es": "Ficha Google My Business",
+   "donde": [
+    "FTC · F5 - Marketing!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Categoría: Food truck. Fotos, ubicaciones",
+   "donde": [
+    "FTC · F5 - Marketing!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0809",
+   "es": "Perfiles RRSS (Instagram + TikTok)",
+   "donde": [
+    "FTC · F5 - Marketing!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "Video del truck + comida = viral potencial",
+   "donde": [
+    "FTC · F5 - Marketing!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0811",
+   "es": "Página web con el calendario de ubicaciones",
+   "donde": [
+    "FTC · F5 - Marketing!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0812",
+   "es": "Dev",
+   "donde": [
+    "FTC · F5 - Marketing!C8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0813",
+   "es": "Dónde estarás cada día de la semana",
+   "donde": [
+    "FTC · F5 - Marketing!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0814",
+   "es": "Sesión fotos/video profesional",
+   "donde": [
+    "FTC · F5 - Marketing!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0816",
+   "es": "Comida en acción, truck rotulado, servicio",
+   "donde": [
+    "FTC · F5 - Marketing!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0817",
+   "es": "Acuerdos con mercados y eventos",
+   "donde": [
+    "FTC · F5 - Marketing!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0818",
+   "es": "Mercados fijos semanales = ingresos recurrentes",
+   "donde": [
+    "FTC · F5 - Marketing!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0819",
+   "es": "Registro en apps de food trucks",
+   "donde": [
+    "FTC · F5 - Marketing!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0820",
+   "es": "Roaming Hunger, apps locales de street food",
+   "donde": [
+    "FTC · F5 - Marketing!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0821",
+   "es": "Acuerdos con empresas/oficinas",
+   "donde": [
+    "FTC · F5 - Marketing!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0822",
+   "es": "Lunch corporativo: recurrencia garantizada",
+   "donde": [
+    "FTC · F5 - Marketing!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0824",
+   "es": "Primer servicio con promo: 2x1, redes, influencers",
+   "donde": [
+    "FTC · F5 - Marketing!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0825",
+   "es": "Programa de fidelización móvil",
+   "donde": [
+    "FTC · F5 - Marketing!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0826",
+   "es": "Tarjeta digital o QR: el décimo menú, gratis",
+   "donde": [
+    "FTC · F5 - Marketing!E14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0827",
+   "es": "Licencia de derechos de autor por música ambiental en ferias y festivales (SGAE/AGEDI-AIE)",
+   "donde": [
+    "FTC · F5 - Marketing!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0828",
+   "es": "Antes de poner música propia",
+   "donde": [
+    "FTC · F5 - Marketing!D15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Distinta de la licencia del organizador del festival, que cubre el recinto, no cada puesto individual",
+   "donde": [
+    "FTC · F5 - Marketing!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0830",
+   "es": "Cláusula informativa y consentimiento en el programa de fidelización con QR",
+   "donde": [
+    "FTC · F5 - Marketing!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0831",
+   "es": "El propio checklist promete un programa de fidelización móvil con QR que recoge datos de contacto: necesita su información previa",
+   "donde": [
+    "FTC · F5 - Marketing!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0834",
+   "es": "Testear ubicaciones (mínimo 5)",
+   "donde": [
+    "FTC · F6 - 90 Días!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0836",
+   "es": "Evaluar facturación por ubicación y día",
+   "donde": [
+    "FTC · F6 - 90 Días!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0837",
+   "es": "Registro diario ventas por ubicación",
+   "donde": [
+    "FTC · F6 - 90 Días!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0839",
+   "es": "Saber qué ubicaciones funcionan y cuáles no",
+   "donde": [
+    "FTC · F6 - 90 Días!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0842",
+   "es": "Pesar el género, controlar mermas y ajustar pedidos",
+   "donde": [
+    "FTC · F6 - 90 Días!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0843",
+   "es": "Ajustar carta según ventas",
+   "donde": [
+    "FTC · F6 - 90 Días!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0844",
+   "es": "Eliminar platos lentos, potenciar bestsellers",
+   "donde": [
+    "FTC · F6 - 90 Días!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0845",
+   "es": "Optimizar ruta semanal",
+   "donde": [
+    "FTC · F6 - 90 Días!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0847",
+   "es": "Fijar los mejores días/ubicaciones como ruta fija",
+   "donde": [
+    "FTC · F6 - 90 Días!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0848",
+   "es": "Encuestas a clientes y reseñas de Google",
+   "donde": [
+    "FTC · F6 - 90 Días!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0850",
+   "es": "Pedir reseñas, responder todas",
+   "donde": [
+    "FTC · F6 - 90 Días!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0851",
+   "es": "Evaluar eventos y festivales",
+   "donde": [
+    "FTC · F6 - 90 Días!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0853",
+   "es": "Festivales = facturación x3-5 en un día",
+   "donde": [
+    "FTC · F6 - 90 Días!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0854",
+   "es": "Renegociar proveedores",
+   "donde": [
+    "FTC · F6 - 90 Días!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0855",
+   "es": "Con volumen real, pedir mejores precios",
+   "donde": [
+    "FTC · F6 - 90 Días!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0856",
+   "es": "Primer cierre trimestral",
+   "donde": [
+    "FTC · F6 - 90 Días!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P14"
+   ]
+  },
+  {
+   "id": "c0859",
+   "es": "Plan de expansión (segundo truck o local fijo)",
+   "donde": [
+    "FTC · F6 - 90 Días!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0860",
+   "es": "Si funciona, evaluar un segundo vehículo o un local fijo",
+   "donde": [
+    "FTC · F6 - 90 Días!E14"
+   ],
+   "fila": "☐"
+  }
+ ]
+}

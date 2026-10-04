@@ -321,6 +321,54 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-food-truck, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-financial-plan-templates). `lang: 'en'` elige los textos fijos del email
+  // (netlify/shared/email-i18n.ts) y la página de estado cripto /en/crypto-payment; precio en USD
+  // (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'food-truck-business-plan': {
+    accessPath: '/en/digital-products/food-truck-business-plan/access',
+    emailSubject: 'Your access to Food Truck Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Food Truck Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-cafeteria, producto independiente con su propio acceso
+  // (mismo patrón que restaurant-financial-plan-templates). `lang: 'en'` elige los textos fijos del email
+  // (netlify/shared/email-i18n.ts) y la página de estado cripto /en/crypto-payment; precio en USD
+  // (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'coffee-shop-business-plan': {
+    accessPath: '/en/digital-products/coffee-shop-business-plan/access',
+    emailSubject: 'Your access to Coffee Shop Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Coffee Shop Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 75-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-bar-restaurante, producto independiente con su propio acceso
+  // (mismo patrón que coffee-shop-business-plan). `lang: 'en'` elige los textos fijos del email
+  // (netlify/shared/email-i18n.ts) y la página de estado cripto /en/crypto-payment; precio en USD
+  // (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'restaurant-business-plan': {
+    accessPath: '/en/digital-products/restaurant-business-plan/access',
+    emailSubject: 'Your access to Restaurant Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Restaurant Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 64-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-panaderia, producto independiente con su propio acceso
+  // (mismo patrón que coffee-shop-business-plan). `lang: 'en'` elige los textos fijos del email
+  // (netlify/shared/email-i18n.ts) y la página de estado cripto /en/crypto-payment; precio en USD
+  // (product-prices.ts). El asunto empieza por «Your access to» para productoLabel().
+  'bakery-business-plan': {
+    accessPath: '/en/digital-products/bakery-business-plan/access',
+    emailSubject: 'Your access to Bakery Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Bakery Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 66-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

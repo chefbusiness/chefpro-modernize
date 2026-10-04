@@ -1,0 +1,492 @@
+{
+ "tanda": "caf_a",
+ "plan": "caf",
+ "producto": "Coffee Shop Business Plan Kit",
+ "salida": "scripts/productos-digitales/business-plans-en/docx_en_caf_a.json",
+ "formato_salida": "{\"<i>\": \"<párrafo EN>\", …} con TODOS los \"i\" de \"parrafos\" y nada más",
+ "secciones": [
+  "1. Executive Summary",
+  "2. Concept & Value Proposition",
+  "3. Market Analysis",
+  "4. Competitive Analysis",
+  "5. Marketing Plan"
+ ],
+ "n_parrafos": 47,
+ "n_palabras": 3049,
+ "tokens": {
+  "clientes_dia": "average customers per day, year 1 [int]",
+  "clientes_a2": "average customers per day, year 2 [int]",
+  "clientes_a3": "average customers per day, year 3 [int]",
+  "ticket": "average check, excl. sales tax [usd2]",
+  "precio_menu": "average menu price incl. sales tax [usd2]",
+  "dias": "opening days per year [int]",
+  "crecimiento_a2": "volume growth in year 2 [pct0]",
+  "crecimiento_a3": "volume growth in year 3 [pct0]",
+  "sales_tax": "example sales tax rate [pct0]",
+  "impuesto_beneficios": "effective income tax rate [pct0]",
+  "food_cost_comida": "food cost on food sales [pct0]",
+  "food_cost_bebida": "beverage cost on beverage sales [pct0]",
+  "consumibles_pct": "packaging and disposables, % of sales [pct0]",
+  "tarjeta_pct": "card processing fees, % of sales [pct1]",
+  "cargas_pct": "employer payroll taxes, % of wages [pct0]",
+  "salario_minimo_federal": "federal minimum wage, annual full-time [usd]",
+  "alquiler_mes": "rent per month (food truck: commissary + truck parking) [usd]",
+  "suministros_mes": "utilities per month [usd]",
+  "seguros_anual": "insurance per year [usd]",
+  "vida_obra": "useful life of build-out (food truck: truck and build-out), years [int]",
+  "vida_equipo": "useful life of equipment, years [int]",
+  "ventas_a1": "revenue year 1, excl. sales tax [usd]",
+  "ventas_a2": "revenue year 2 [usd]",
+  "ventas_a3": "revenue year 3 [usd]",
+  "ventas_dia": "average sales per opening day, year 1 [usd]",
+  "cogs_pct": "cost of goods (food + beverage), % of sales [pct1]",
+  "margen_bruto_pct": "gross margin, % of sales [pct1]",
+  "personal_a1": "labor cost year 1 incl. payroll taxes [usd]",
+  "personal_pct": "labor cost, % of sales [pct1]",
+  "ocupacion_anual": "occupancy per year (food truck: commissary + parking; coffee shop: rent) [usd]",
+  "ocupacion_pct": "occupancy, % of sales [pct1]",
+  "marketing_anual": "marketing budget per year [usd]",
+  "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest) [usd]",
+  "amortizacion_anual": "annual depreciation [usd]",
+  "intereses_a1": "loan interest year 1 [usd]",
+  "resultado_antes_impuestos_a1": "pre-tax profit year 1 [usd]",
+  "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest) [usd]",
+  "ebitda_pct_a1": "EBITDA margin year 1 [pct1]",
+  "resultado_neto_a1": "net profit year 1 [usd]",
+  "resultado_neto_a2": "net profit year 2 [usd]",
+  "resultado_neto_a3": "net profit year 3 [usd]",
+  "margen_neto_a1": "net margin year 1 [pct1]",
+  "inversion_total": "total startup investment incl. working capital [usd]",
+  "capex": "capex (startup costs without working capital) [usd]",
+  "fondo_maniobra": "working capital reserve [usd]",
+  "necesidad_caja": "total cash needed at opening [usd]",
+  "fondos_propios": "owner's equity injection [usd]",
+  "prestamo": "loan amount [usd]",
+  "aportacion_pct": "owner's equity as % of the total cash needed [pct0]",
+  "tipo_prestamo": "loan interest rate (nominal, not APR) [pct1]",
+  "plazo_prestamo": "loan term, years [int]",
+  "cuota_anual": "annual loan payment [usd]",
+  "dscr_a1": "DSCR year 1 [x2]",
+  "dscr_min": "lowest DSCR over the loan term [x2]",
+  "dscr_limite": "DSCR limit used by the workbook [x2]",
+  "dscr_objetivo": "DSCR target (typical lender guideline) [x2]",
+  "equilibrio_clientes_dia": "break-even customers per day (accounting) [ceil]",
+  "equilibrio_ventas": "break-even revenue per year (accounting) [usd]",
+  "equilibrio_caja_clientes_dia": "cash break-even customers per day (loan payments in, depreciation out) [ceil]",
+  "equilibrio_caja_ventas": "cash break-even revenue per year [usd]",
+  "holgura_caja_pct": "margin of safety over cash break-even [pct0]",
+  "saldo_minimo": "lowest cash balance in year 1 [usd]",
+  "mes_saldo_minimo": "month of the lowest cash balance [int]",
+  "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\") [anos1]",
+  "payback_capex": "payback on capex only [anos1]",
+  "plantilla_puestos": "number of people on the payroll [int]",
+  "plantilla_jornadas": "staff in full-time equivalents (FTE) [dec2]",
+  "cobertura_horas": "hours coverage (scheduled / needed) [pct0]",
+  "horas_semana": "full-time hours per week [int]",
+  "pesimista_clientes": "pessimistic scenario: customers per day [int]",
+  "optimista_clientes": "optimistic scenario: customers per day [int]",
+  "pesimista_ventas": "pessimistic scenario: annual revenue [usd]",
+  "optimista_ventas": "optimistic scenario: annual revenue [usd]",
+  "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss) [usd]",
+  "optimista_resultado": "optimistic scenario: pre-tax profit [usd]",
+  "inv_lanzamiento": "launch marketing budget [usd]",
+  "inv_stock": "opening inventory [usd]",
+  "inv_obra": "construction / build-out [usd]",
+  "inv_instalaciones": "electrical + HVAC [usd]",
+  "inv_espresso": "two-group espresso machine [usd]",
+  "inv_mobiliario": "dining room furniture [usd]",
+  "inv_barra": "counter and pastry display bar [usd]",
+  "inv_terraza": "patio / sidewalk seating [usd]",
+  "aforo": "seats (tables + bar) [int]",
+  "rotaciones_dia": "implied seat turns per day [dec1]"
+ },
+ "movimiento_caf": {
+  "despues_de": 133,
+  "orden": [
+   110,
+   134,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   119
+  ]
+ },
+ "fijos_que_no_escribes (portada, aviso, índice, encabezados, cierre: los pone ensamblar_docx.py)": {
+  "6": "BUSINESS PLAN",
+  "7": "Coffee Shop",
+  "9": "Complete financial plan, market analysis,\noperations strategy and opening checklist\nto open a coffee shop with brunch in the United States",
+  "14": "AI Chef Pro",
+  "15": "aichef.pro",
+  "16": "US edition with UK notes · 2026",
+  "18": "LEGAL NOTICE",
+  "19": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities.",
+  "20": "© 2026 AI Chef Pro — aichef.pro",
+  "22": "CONTENTS",
+  "35": "Appendices: Coffee Shop Financial Projections (Excel) + Coffee Shop Opening Checklist (Excel)",
+  "156": "AI Chef Pro",
+  "157": "Templates and AI tools for food businesses",
+  "159": "Built on more than 29 years in professional kitchens and restaurant consulting.\nAI agents, templates and digital products for restaurants, cafes, bars and food trucks.\n\naichef.pro\ninfo@aichef.pro",
+  "161": "Complete this plan with our digital products:",
+  "162": "→ Food Cost Kit Pro",
+  "163": "→ HACCP Food Safety Kit Pro",
+  "164": "→ Restaurant Staff Scheduling Kit Pro",
+  "165": "→ Gastro Pro Prompts eBook (300+ AI prompts)",
+  "166": "\naichef.pro/en/digital-products",
+  "37": "1. Executive Summary",
+  "24": "1.  Executive Summary",
+  "47": "2. Concept & Value Proposition",
+  "25": "2.  Concept & Value Proposition",
+  "56": "3. Market Analysis",
+  "26": "3.  Market Analysis",
+  "74": "4. Competitive Analysis",
+  "27": "4.  Competitive Analysis",
+  "82": "5. Marketing Plan",
+  "28": "5.  Marketing Plan",
+  "94": "6. Operations Plan",
+  "29": "6.  Operations Plan",
+  "106": "7. Management & Staffing",
+  "30": "7.  Management & Staffing",
+  "132": "8. Financial Plan",
+  "31": "8.  Financial Plan",
+  "135": "9. Legal Requirements, Permits & Licenses",
+  "32": "9.  Legal Requirements, Permits & Licenses",
+  "143": "10. Conclusions & Action Plan",
+  "33": "10.  Conclusions & Action Plan"
+ },
+ "parrafos": [
+  {
+   "i": 39,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 64,
+   "es": "El mercado español de restauración vive una transformación estructural hacia formatos de menor inversión y mayor rotación que los restaurantes tradicionales completos. Dentro de este contexto, la combinación de specialty coffee y brunch se posiciona como una de las oportunidades más sólidas para 2026, con una demanda que supera claramente la oferta existente en la mayoría de ciudades españolas de más de 100.000 habitantes."
+  },
+  {
+   "i": 40,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 83,
+   "es": "España registra actualmente un parque de más de 210.000 cafeterías, de las cuales apenas un 8-10% trabaja con cafés de especialidad tostados en origen. El segmento de brunch genera en Madrid y Barcelona una facturación media de 18-22 EUR por cubierto en fines de semana, con ocupaciones del 75-85% en franjas de 10:00 a 14:00 horas. La penetración de este servicio en ciudades medianas y capitales de provincia permanece baja, lo que indica un mercado claramente infradesarrollado fuera de las dos grandes urbes."
+  },
+  {
+   "i": 41,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 93,
+   "es": "El concepto propuesto consiste en una cafetería de 50-70 metros cuadrados de sala con 30-40 plazas interiores y terraza, diseñada bajo criterios de eficiencia operativa y experiencia visual. La carta combina café de especialidad tostado en origen con acompañamientos de calidad —bollería artesanal, tostadas premium, platos fríos y calientes de brunch—servido los siete días de la semana con énfasis en el servicio de brunch los sábados y domingos. El ticket medio objetivo se sitúa entre 8 y 12 EUR en horario de cafetería estándar, subiendo a 14-20 EUR en el servicio brunch completo."
+  },
+  {
+   "i": 42,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 72,
+   "es": "La inversión total estimada alcanza los 94.000 EUR, distribuidos entre obra civil y equipamiento (maquinaria espresso de dos grupos, molinillo on-demand, horno de convención, mobiliario, decoración instagrameable y capital circulante para los primeros meses). Este rango de inversión, inferior a los 120.000 EUR máximos contemplados, responde a un escenario de local en propiedad o alquiler con obra menor, optimizado para reducir la puesta en marcha sin sacrificar la propuesta de valor diferenciada."
+  },
+  {
+   "i": 43,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 95,
+   "es": "Las proyecciones financieras contemplan una facturación anual de aproximadamente 190.000 EUR en el primer ejercicio, basada en una media de 55-70 covers diarios con ticket medio de 9,50 EUR y una rotación superior al estándar cafetería durante los fines de semana. El punto de equilibrio se alcanza entre los meses 11 y 12, un horizonte de rentabilidad coherente con el sector y asumible dado el nivel de inversión contenido. A partir del segundo año, con la consolidación de la clientela y la optimización de procesos, el margen operativo debería situarse en el 12-18% sobre ventas."
+  },
+  {
+   "i": 44,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 60,
+   "es": "El equipo promotor contempla una estructura de 4 a 5 personas, incluyendo un responsable de operaciones con experiencia en hostelería y un equipo de sala formado para el servicio de brunch y la atención al cliente característica del segmento specialty. La política de recursos humanos prioriza la retención mediante formación continua y incentivos vinculados a objetivos de satisfacción del cliente."
+  },
+  {
+   "i": 45,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 97,
+   "es": "El momento actual presenta condiciones favorables por tres factores concatenados. Primero, la cultura del brunch en España ha pasado de ser una tendencia urbana a una demanda consolidada, especialmente entre el segmento de 25-45 años con poder adquisitivo medio-alto. Segundo, el specialty coffee continúa su expansión geográfica desde las capitales hacia ciudades secundarias, con consumidores cada vez más informados y dispuestos a pagar un sobreprecio por calidad perceptible. Tercero, los locales comerciales en zonas céntricas ofrecen mejores condiciones de alquiler que hace tres años, producto de la consolidación del comercio electrónico y la liberación de espacios retail."
+  },
+  {
+   "i": 46,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 38,
+   "es": "Esta oportunidad de mercado, combinada con una inversión contenida y un modelo de negocio validado en otras geografías españolas, configura una propuesta de viabilidad alta para un promoter con capacidad de ejecución y conocimiento del tejido comercial local."
+  },
+  {
+   "i": 49,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 97,
+   "es": "El concepto se define como una cafetería de specialty coffee con servicio de brunch los fines de semana, diseñada para ocupar un nicho de mercado en crecimiento dentro del sector hostelero español. La propuesta combina dos tendencias consolidadas: la demanda de café de calidad superior y la expansión del brunch como formato de comida fuera de casa. El modelo operativo contempla una superficie de entre 50 y 70 metros cuadrados de sala, con capacidad para 30 a 40 plazas interiores y disponibilidad de terraza, lo que permite gestionar picos de demanda sin comprometer la experiencia del cliente."
+  },
+  {
+   "i": 50,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 79,
+   "es": "La propuesta de valor se articula sobre tres pilares fundamentales que determinan la diferenciación respecto a la competencia tradicional. En primer lugar, la calidad del café: se trabaja con grano de tostador local, molido on-demand en el momento de preparación, utilizando una máquina espresso profesional de dos grupos que garantiza consistencia en la extracción. El latte art se convierte en elemento diferenciador y elemento de comunicación visual, generando contenido que los clientes comparten en redes sociales de forma orgánica."
+  },
+  {
+   "i": 51,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 87,
+   "es": "El segundo pilar es la propuesta gastronómica de brunch, un formato que en España ha registrado un crecimiento del 18% anual en demanda durante los últimos tres años según datos del sector. La carta incluye opciones consolidadas como avocado toast, huevos benedictine, pancakes y bowls, con elaboración propia que permite controlar calidad y márgenes. El precio medio del brunch completo se sitúa entre 14 y 20 euros, significativamente superior al ticket de un desayuno convencional, lo que mejora la ticket medio diario y la rentabilidad por cubierto."
+  },
+  {
+   "i": 52,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 81,
+   "es": "El tercer pilar es la ambientación diseñada específicamente para generar contenido compartible. La combinación de plantas, luz natural, elementos de madera y decoración moderna responde a las expectativas visuales del público objetivo. Este diseño no responde a una moda pasajera sino a una cambio estructural en el comportamiento del consumidor hostelero: el 73% de los clientes menores de 40 años considera que la estética del espacio influye en su decisión de visita, según estudios recientes de comportamiento de consumo en España."
+  },
+  {
+   "i": 53,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 64,
+   "es": "El público objetivo se centra en el segmento de 25 a 45 años, urbano, con poder adquisitivo medio-alto y habituado a consumir fuera de casa. Este perfil busca experiencias que combinen calidad de producto con un entorno que permita socialización y compartición en redes sociales. La ubicación en zona de alto tránsito comercial o residencial resulta determinante para captar este flujo de clientes recurrentes."
+  },
+  {
+   "i": 54,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 73,
+   "es": "Los horarios de operación reflejan la adaptación al comportamiento del consumidor español: de lunes a viernes de 7:30 a 18 horas para captar desayunos y meriendas laborales, mientras que sábado y domingo amplían el servicio hasta las 16 horas con brunch disponible de 9 a 15 horas. Esta distribución optimiza el uso de la infraestructura y permite concentrar la oferta de mayor valor añadido en los días de mayor potencial de ticket medio."
+  },
+  {
+   "i": 55,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 74,
+   "es": "La inversión estimada de 70.000 a 120.000 euros se justifica por la necesidad de equipamiento profesional (máquina espresso, molinillo on-demand, horno de convención), obra civil adaptada al concepto visual y capital de funcionamiento inicial. El retorno proyectado, con ticket medio ponderado entre 8 y 20 euros según día y servicio, permite alcanzar rentabilidad operativa en un plazo de 18 a 24 meses siempre que se cumplan los objetivos de ocupación y ticket medio establecidos."
+  },
+  {
+   "i": 58,
+   "seccion": 3,
+   "rol": "subtitulo",
+   "palabras": 3,
+   "es": "ANALISIS DE MERCADO"
+  },
+  {
+   "i": 59,
+   "seccion": 3,
+   "rol": "subtitulo",
+   "palabras": 5,
+   "es": "MERCADO DE CAFETERIAS EN ESPAÑA"
+  },
+  {
+   "i": 60,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 90,
+   "es": "El sector de cafeterías en España representa un segmento fundamental dentro de la hostelería española, con una estructura empresarial caracterizada por la fragmentación y la predominancia de pequeños establecimientos. Según datos del Directorio Central de Empresas del INE, el número de cafeterías y bares de café supera las 42.000 unidades en territorio nacional, representando aproximadamente el 18% del total de establecimientos de Hostelería. La facturación agregada del sector de cafeterías se sitúa alrededor de los 6.500 millones de euros anuales, con un crecimiento sostenido del 3,5% en los últimos ejercicios."
+  },
+  {
+   "i": 61,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 58,
+   "es": "El mercado español presenta una distribución geográfica asimétrica, con mayor concentración en las comunidades autónomas de Andalucía, Cataluña, Madrid y Comunidad Valenciana, que concentran más del 60% de la oferta. Las zonas urbanas de más de 100.000 habitantes generan el 75% de la facturación sectorial, evidenciando la correlación directa entre densidad poblacional, poder adquisitivo y consumo de cafetería."
+  },
+  {
+   "i": 62,
+   "seccion": 3,
+   "rol": "subtitulo",
+   "palabras": 7,
+   "es": "CRECIMIENTO DEL SPECIALTY COFFEE Y THIRD WAVE"
+  },
+  {
+   "i": 63,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 66,
+   "es": "El segmento de specialty coffee experimenta una expansión notable en el mercado español, impulsado por la tercera ola del café que prioriza la calidad del grano, la trazabilidad del origen y las técnicas de extracción artesanales. Este fenómeno ha generado la aparición de más de 1.200 tostadores especializados en España y una red de cafeterías de especialidad quehan triplicado su presencia en los últimos cinco años."
+  },
+  {
+   "i": 64,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 61,
+   "es": "Las principales ciudades españolas, particularmente Madrid, Barcelona, Bilbao, Valencia y Sevilla, lideran esta transformación con una oferta diferenciada que incluye métodos de preparación como pour-over, aeropress y espresso de alta gama. El precio medio de una taza de specialty coffee oscila entre 3,50 y 5,50 euros, significativamente superior al café tradicional, lo que permite márgenes operativos superiores para los establecimientos especializados."
+  },
+  {
+   "i": 65,
+   "seccion": 3,
+   "rol": "subtitulo",
+   "palabras": 5,
+   "es": "FENOMENO BRUNCH EN CIUDADES ESPAÑOLAS"
+  },
+  {
+   "i": 66,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 55,
+   "es": "El brunch se ha consolidado como una propuesta gastronómica de alto potencial en el mercado urbano español, especialmente entre la población millennial y Generation Z. Las búsquedas relacionadas con brunch en buscadores especializados crecen un 28% anual en España, con máxima demanda los fines de semana en horarios entre las 10:00 y las 14:00 horas."
+  },
+  {
+   "i": 67,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 58,
+   "es": "Madrid y Barcelona concentran la mayor oferta de establecimientos especializados en brunch, con más de 350 locales que ofrecen esta modalidad en la capital española y cerca de 280 en Barcelona. Ciudades secundarias como Valencia, Bilbao, Málaga y Santiago de Compostela muestran tendencias de crecimiento acelerado, con incrementos de oferta superiores al 40% en los últimos tres años."
+  },
+  {
+   "i": 68,
+   "seccion": 3,
+   "rol": "subtitulo",
+   "palabras": 3,
+   "es": "PERFIL DEL CONSUMIDOR"
+  },
+  {
+   "i": 69,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 54,
+   "es": "El consumidor tipo de cafetería con brunch en España corresponde al segmento urbano de 25 a 45 años, con formación universitaria, ingresos medios-altos y estilo de vida cosmopolita. Este perfil demográfico presenta una frecuencia de visita semanal de 2,3 veces y un ticket medio superior a los 12 euros en propuestas de brunch completo."
+  },
+  {
+   "i": 70,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 60,
+   "es": "El consumidor español de cafetería de especialidad muestra preferencia por experiencias diferenciadas, valorando la atmósfera del local, la calidad de los productos y la propuesta de valor única. La sensibilidad hacia aspectos como la sostenibilidad, la procedencia de los alimentos y las opciones saludables influye significativamente en la decisión de compra, especialmente en el segmento de 25 a 35 años."
+  },
+  {
+   "i": 71,
+   "seccion": 3,
+   "rol": "subtitulo",
+   "palabras": 6,
+   "es": "GASTO MEDIO Y TENDENCIAS DE CONSUMO"
+  },
+  {
+   "i": 72,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 87,
+   "es": "El gasto medio en cafeterías urbanas en España se sitúa en 4,80 euros por visita, aunque este indicador asciende a 14,50 euros cuando se incluye la consumición de brunch o desayuno completo. Las tendencias emergentes que condicionan la demanda incluyen el crecimiento de las leches vegetales, con una penetración superior al 35% en cafeterías de especialidad, la demanda de opciones sin gluten, que representa el 20% de las peticiones especiales, y la consolidación del formato take-away, que ya representa el 40% de las ventas en cafeterías urbanas."
+  },
+  {
+   "i": 73,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 62,
+   "es": "La sostenibilidad emerge como factor determinante, con el 65% de los consumidores dispuestos a pagar un suplemento por productos de comercio justo y el 50% priorizando establecimientos con políticas de gestión de residuos y packaging ecológico. Estas tendencias configuran un escenario favorable para propuestas de cafetería con brunch que integren calidad, innovación y responsabilidad ambiental como pilares de su propuesta de valor."
+  },
+  {
+   "i": 76,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 72,
+   "es": "El mercado español de cafeterías specialty y brunch presenta una madurez creciente en las principales ciudades, con Madrid y Barcelona concentrando más del 45% de la oferta premium. En 2026, el segmento de specialty coffee representa aproximadamente el 18% del total de cafeterías en ciudades de más de 200.000 habitantes, frente al 8% de 2019, lo que evidencia una transformación profunda del consumidor urbano hacia experiencias de mayor calidad sensorial y ambiental."
+  },
+  {
+   "i": 77,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 131,
+   "es": "Los competidores directos se dividen en dos categorías claramente diferenciadas. La primera incluye cafeterías specialty consolidadas como Nomad Coffee, Hana Coffee o Coffee & Bread, con modelos de negocio probados, bases de clientes fieles y capacidad de inversión en equipamiento de alta gama. Estas operan con tickets medios de 6-10 euros en consumo básico y han normalizado el precio del cappuccino specialty entre 3,50-4,50 euros. La segunda categoría comprende brunch spots especializados como Federal, The Brunch Club o Blat, que han capitalizado la tendencia weekend con propuestas completas de 16-22 euros pero con menor enfoque en la calidad del café como eje diferenciador. El hueco competitivo reside precisamente en la intersección: un local que combine excelencia en café specialty con propuesta brunch premium, sin renunciar a la accesibilidad del consumo diario."
+  },
+  {
+   "i": 78,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 105,
+   "es": "Los competidores indirectos añaden presión competitiva significativa. Las franquicias de café como Starbucks, Costa Coffee o McCafé dominan el segmento de conveniencia con más de 3.200 puntos de venta en España, ofreciendo estandarización, reconocimiento de marca y capacidad de marketing que un independiente no puede igualar. Las panaderías artesanales tipo Panem o Radius han incorporado líneas de desayunos que compiten por el mismo ticket de 8-12 euros, aprovechando su base de clientes por compra de pan. El fast casual internacional, con marcas como Pret a Manger consolidada en Madrid, representa la amenaza más sofisticada por su propuesta de calidad percibida alta con velocidad de servicio."
+  },
+  {
+   "i": 79,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 125,
+   "es": "El análisis de las Cinco Fuerzas de Porter revela una rivalidad competitiva alta en el segmento urbano premium, con poder de negociación elevado del cliente final debido a la abundante oferta alternativa y su disposición a cambiar de establecimiento. Los proveedores de café specialty mantienen poder moderado dado el número creciente de tostadores artesanales especializados como Four Coffee Roasters, Café de Colombia o Avatara. Las barreras de entrada son significativas: el coste de alquiler en ubicaciones prime supera los 18-28 euros por metro cuadrado mensual en ciudades principales, la inversión en maquinaria profesional oscila entre 20.000-35.000 euros para un equipo de dos grupos con molinillo on-demand, y la curva de aprendizaje para alcanzar consistencia en extracción specialty requiere 6-12 meses de formación especializada del personal."
+  },
+  {
+   "i": 80,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 155,
+   "es": "El análisis DAFO identifica como fortalezas la diferenciación por calidad de café, la propuesta dual que abarca consumo diario y experiencia weekend, y el potencial de prescripción en redes sociales para el público objetivo de 25-45 años. Las debilidades incluyen la estacionalidad inherente al brunch concentrada en sábado y domingo, la dependencia crítica de la ubicación para generar tráfico espontáneo, y la limitación de capacidad con 30-40 plazas que restringe el volumen de facturación en horas punta. Las oportunidades se centran en el crecimiento sostenido del 12% anual en el segmento specialty, la demanda insatisfecha de brunch de calidad en barrios emergentes, y la posibilidad de desarrollar marca propia de café tostado que genere ingresos adicionales. Las amenazas principales son la entrada de competidores con mayor capacidad financiera, la presión inflacionista en materias primas y costes laborales, y el cambio en preferencias del consumidor hacia opciones más saludables que puedan erosionar la propuesta de bollería."
+  },
+  {
+   "i": 81,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 118,
+   "es": "Los factores críticos de éxito se reducen a tres ejes: ubicación en zona de alto tráfico con sinergia entre residentes jóvenes profesionales y turismo de calidad, consistencia en la calidad del café mediante inversión en formación barista y mantenimiento preventivo de equipos, y capacidad de generar contenido visual que impulse la prescripción orgánica en Instagram, donde el público objetivo valida experiencias antes de visitarlas. La ventaja competitiva sostenible no reside en ningún elemento aislable, sino en la ejecución integrada de los tres factores con disciplina operativa diaria, ya que cualquier competidor puede copiar la carta o la decoración, pero la replicación de la excelencia consistente en servicio y producto requiere meses de consolidación que generan ventana competitiva defensable."
+  },
+  {
+   "i": 84,
+   "seccion": 5,
+   "rol": "subtitulo",
+   "palabras": 5,
+   "es": "Analisis del mercado y posicionamiento"
+  },
+  {
+   "i": 85,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 101,
+   "es": "El sector de cafeterías specialty en España crece a un ritmo del 8-12% anual, impulsado por consumidores menores de 45 años que priorizan calidad de café, estética del espacio y experiencia compartible en redes sociales. El brunch se consolida como propuesta de valor diferenciadora los fines de semana, con un ticket medio superior en un 60-70% al desayuno convencional. La cafetería se posicionará en el segmento medio-alto, combinando producto de calidad profesional con un ambiente diseñado específicamente para generar contenido viral orgánico. La ubicación en zona urbana de alto tráfico footfall será factor determinante para rentabilizar la inversión en marketing digital."
+  },
+  {
+   "i": 86,
+   "seccion": 5,
+   "rol": "subtitulo",
+   "palabras": 5,
+   "es": "Estrategia digital y presencia online"
+  },
+  {
+   "i": 87,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 104,
+   "es": "Instagram constituye el canal primario de adquisición, con objetivo de alcanzar 2.000 seguidores en los primeros seis meses mediante publicación diaria de contenido visual de alta calidad: platos terminados, latte art, ambiente del local y testimonios de clientes. La inversión en sesiones fotográficas mensuales con profesional externo se estima en 200-300 euros mensuales, amortizable mediante ahorro en publicidad paid. Google My Business requiere optimización completa desde el día de apertura: fotos profesionales, horario actualizado, descripción con palabras clave locales y solicitud activa de reseñas a cada cliente satisfecho. El objetivo es obtener 50 reseñas con valoración superior a 4,5 estrellas en el primer trimestre."
+  },
+  {
+   "i": 88,
+   "seccion": 5,
+   "rol": "subtitulo",
+   "palabras": 4,
+   "es": "Captación y colaboraciones estratégicas"
+  },
+  {
+   "i": 89,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 103,
+   "es": "El plan de apertura contempla tres acciones concretas: tasting gratuito para 50 influencers locales del sector foodie con audiencia entre 5.000 y 30.000 seguidores, valorado en 1.500 euros; lanzamiento de tarjeta de fidelización física que ofrece café gratuito tras la décima compra, con coste estimado de 0,80 euros por unidad; y distribución de 500 cupones de descuento del 20% en la zona de influencia directa. Las colaboraciones con influencers se estructurarán mediante acuerdo de contenido a cambio de producto, priorizando perfiles con engagement superior al 3% y audiencia geolocalizada. El presupuesto para microcolaboraciones mensuales posteriores a la apertura se establece en 300-500 euros."
+  },
+  {
+   "i": 90,
+   "seccion": 5,
+   "rol": "subtitulo",
+   "palabras": 3,
+   "es": "Fidelización y eventos"
+  },
+  {
+   "i": 91,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 73,
+   "es": "El programa de fidelización integra sistema de sellos físicos con incentivación digital mediante newsletter semanal con oferta exclusiva para suscriptores. Los eventos mensuales de cata de café y taller de latte art cumplen triple función: generación de contenido para redes, diferenciación competitiva y creación de comunidad autour del brand. Cada evento con capacidad para 12-15 personas genera ingresos adicionales de 15-25 euros por participante y produce material audiovisual para dos semanas de contenido."
+  },
+  {
+   "i": 92,
+   "seccion": 5,
+   "rol": "subtitulo",
+   "palabras": 5,
+   "es": "Presupuesto y control de resultados"
+  },
+  {
+   "i": 93,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 103,
+   "es": "La asignación presupuestaria para marketing se sitúa en el 4,5% de la facturación prevista, equivalente a 1.800-2.700 euros mensuales suponiendo una facturación inicial de 40.000-60.000 euros. Los indicadores clave de rendimiento incluyen: crecimiento mensual de seguidores Instagram superior al 8%, incremento de reseñas Google en 15 unidades mensuales, tasa de clientes recurrentes superior al 25% a partir del tercer mes y ticket medio realimentado por upselling de brunch. El seguimiento será quincenal con ajuste de acciones según rendimiento medido. La inversión en marketing de apertura, estimada en 4.000-6.000 euros, debe recuperase mediante adquisición de clientela base en los primeros 90 días de actividad."
+  }
+ ]
+}

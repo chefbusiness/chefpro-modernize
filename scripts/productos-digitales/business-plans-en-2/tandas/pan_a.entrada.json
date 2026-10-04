@@ -1,0 +1,352 @@
+{
+ "tanda": "pan_a",
+ "plan": "pan",
+ "producto": "Bakery Business Plan Kit",
+ "salida": "scripts/productos-digitales/business-plans-en-2/docx_en_pan_a.json",
+ "formato_salida": "{\"<i>\": \"<párrafo EN>\", …} con TODOS los \"i\" de \"parrafos\" y nada más",
+ "secciones": [
+  "1. Executive Summary",
+  "2. Concept & Value Proposition",
+  "3. Market Analysis",
+  "4. Competitive Analysis",
+  "5. Marketing Plan"
+ ],
+ "n_parrafos": 29,
+ "n_palabras": 3233,
+ "tokens": {
+  "clientes_dia": "average covers (restaurant) or transactions (bakery) per day, year 1 [int]",
+  "clientes_a2": "average covers / transactions per day, year 2 [int]",
+  "clientes_a3": "average covers / transactions per day, year 3 [int]",
+  "ticket": "average check, excl. sales tax [usd2]",
+  "precio_menu": "average menu price incl. sales tax [usd2]",
+  "dias": "opening days per year [int]",
+  "crecimiento_a2": "volume growth in year 2 [pct0]",
+  "crecimiento_a3": "volume growth in year 3 [pct0]",
+  "sales_tax": "example sales tax rate [pct0]",
+  "impuesto_beneficios": "effective income tax rate [pct0]",
+  "food_cost_comida": "food cost on food sales [pct0]",
+  "food_cost_bebida": "beverage cost on beverage sales [pct0]",
+  "consumibles_pct": "packaging and disposables, % of sales [pct0]",
+  "tarjeta_pct": "card processing fees, % of sales [pct1]",
+  "cargas_pct": "employer payroll taxes, % of wages [pct0]",
+  "salario_minimo_federal": "federal minimum wage, annual full-time [usd]",
+  "alquiler_mes": "rent per month (base rent of the premises) [usd]",
+  "suministros_mes": "utilities per month [usd]",
+  "seguros_anual": "insurance per year [usd]",
+  "vida_obra": "useful life of build-out, years [int]",
+  "vida_equipo": "useful life of equipment, years [int]",
+  "ventas_a1": "revenue year 1, excl. sales tax [usd]",
+  "ventas_a2": "revenue year 2 [usd]",
+  "ventas_a3": "revenue year 3 [usd]",
+  "ventas_dia": "average sales per opening day, year 1 [usd]",
+  "cogs_pct": "cost of goods (food + beverage), % of sales [pct1]",
+  "margen_bruto_pct": "gross margin, % of sales [pct1]",
+  "personal_a1": "labor cost year 1 incl. payroll taxes [usd]",
+  "personal_pct": "labor cost, % of sales [pct1]",
+  "ocupacion_anual": "rent per year (occupancy) [usd]",
+  "ocupacion_pct": "occupancy, % of sales [pct1]",
+  "marketing_anual": "marketing budget per year [usd]",
+  "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest) [usd]",
+  "amortizacion_anual": "annual depreciation [usd]",
+  "intereses_a1": "loan interest year 1 [usd]",
+  "resultado_antes_impuestos_a1": "pre-tax profit year 1 [usd]",
+  "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest) [usd]",
+  "ebitda_pct_a1": "EBITDA margin year 1 [pct1]",
+  "resultado_neto_a1": "net profit year 1 [usd]",
+  "resultado_neto_a2": "net profit year 2 [usd]",
+  "resultado_neto_a3": "net profit year 3 [usd]",
+  "margen_neto_a1": "net margin year 1 [pct1]",
+  "inversion_total": "total startup investment incl. working capital [usd]",
+  "capex": "capex (startup costs without working capital) [usd]",
+  "fondo_maniobra": "working capital reserve [usd]",
+  "necesidad_caja": "total cash needed at opening [usd]",
+  "fondos_propios": "owner's equity injection [usd]",
+  "prestamo": "loan amount [usd]",
+  "aportacion_pct": "owner's equity as % of the total cash needed [pct0]",
+  "tipo_prestamo": "loan interest rate (nominal, not APR) [pct1]",
+  "plazo_prestamo": "loan term, years [int]",
+  "cuota_anual": "annual loan payment [usd]",
+  "dscr_a1": "DSCR year 1 [x2]",
+  "dscr_min": "lowest DSCR over the loan term [x2]",
+  "dscr_limite": "DSCR limit used by the workbook [x2]",
+  "dscr_objetivo": "DSCR target (typical lender guideline) [x2]",
+  "equilibrio_clientes_dia": "break-even covers / transactions per day (accounting) [ceil]",
+  "equilibrio_ventas": "break-even revenue per year (accounting) [usd]",
+  "equilibrio_caja_clientes_dia": "cash break-even covers / transactions per day (loan payments in, depreciation out) [ceil]",
+  "equilibrio_caja_ventas": "cash break-even revenue per year [usd]",
+  "holgura_caja_pct": "margin of safety over cash break-even [pct0]",
+  "saldo_minimo": "lowest cash balance in year 1 [usd]",
+  "mes_saldo_minimo": "month of the lowest cash balance [int]",
+  "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\") [anos1]",
+  "payback_capex": "payback on capex only [anos1]",
+  "plantilla_puestos": "number of people on the payroll [int]",
+  "plantilla_jornadas": "staff in full-time equivalents (FTE) [dec2]",
+  "cobertura_horas": "hours coverage (scheduled / needed) [pct0]",
+  "horas_semana": "full-time hours per week [int]",
+  "pesimista_clientes": "pessimistic scenario: covers / transactions per day [int]",
+  "optimista_clientes": "optimistic scenario: covers / transactions per day [int]",
+  "pesimista_ventas": "pessimistic scenario: annual revenue [usd]",
+  "optimista_ventas": "optimistic scenario: annual revenue [usd]",
+  "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss) [usd]",
+  "optimista_resultado": "optimistic scenario: pre-tax profit [usd]",
+  "pesimista_ticket": "pessimistic scenario: average check excl. sales tax [usd2]",
+  "optimista_ticket": "optimistic scenario: average check excl. sales tax [usd2]",
+  "pesimista_dias": "pessimistic scenario: operating days [int]",
+  "optimista_dias": "optimistic scenario: operating days [int]",
+  "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out) [usd]",
+  "inv_lanzamiento": "grand opening / launch marketing budget [usd]",
+  "inv_stock": "opening food inventory (bakery: flour, yeast and other ingredients) [usd]",
+  "inv_obra": "build-out of the premises [usd]",
+  "inv_horno": "deck / rack oven [usd]",
+  "inv_amasadora": "spiral mixer [usd]",
+  "inv_fermentacion": "proofer / retarder (controlled fermentation cabinet) [usd]",
+  "inv_vitrina": "display case and counter [usd]",
+  "inv_electricidad": "electrical service upgrade for the ovens [usd]"
+ },
+ "movimiento_caf": null,
+ "notas_del_plan": "Concepto (D30): panadería artesana con tienda, un pequeño rincón de café y venta mayorista a cafés («artisan bakery with a storefront, a small café corner and wholesale to cafés»). Volumen diario = «transactions». Lo mayorista va DENTRO de la línea de pan (no es un canal modelado aparte) y los escenarios mueven transacciones, ticket y días, no el mix (R8). Las cifras del docx ES (105.000 €, 200.000 €, 110 transacciones a 5 €, equilibrio en 114 a 4,5 €, 4-5 personas, retorno en 24-36 meses, mayorista 40 % / 25-35 %) CONTRADICEN al Excel (I1-P): no se traducen; cada cifra va con su token {{…}}. Sin leasing de horno (R7)",
+ "fijos_que_no_escribes (portada, aviso, índice, encabezados, cierre: los pone ensamblar_docx.py)": {
+  "6": "BUSINESS PLAN",
+  "7": "Bakery",
+  "9": "Complete financial plan, market analysis,\noperations strategy and opening checklist\nto open a retail and wholesale bakery in the United States",
+  "14": "AI Chef Pro",
+  "15": "aichef.pro",
+  "16": "US edition with UK notes · 2026",
+  "18": "LEGAL NOTICE",
+  "19": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities.",
+  "20": "© 2026 AI Chef Pro — aichef.pro",
+  "22": "CONTENTS",
+  "35": "Appendices: Bakery Financial Projections (Excel) + Bakery Opening Checklist (Excel)",
+  "124": "AI Chef Pro",
+  "125": "Templates and AI tools for food businesses",
+  "127": "aichef.pro\ninfo@aichef.pro",
+  "128": "→ Food Cost Kit Pro · HACCP Food Safety Kit Pro",
+  "129": "→ Restaurant Staff Scheduling Kit Pro · Gastro Pro Prompts eBook (300+ AI prompts)",
+  "130": "\naichef.pro/en/digital-products",
+  "37": "1. Executive Summary",
+  "24": "1.  Executive Summary",
+  "45": "2. Concept & Value Proposition",
+  "25": "2.  Concept & Value Proposition",
+  "52": "3. Market Analysis",
+  "26": "3.  Market Analysis",
+  "59": "4. Competitive Analysis",
+  "27": "4.  Competitive Analysis",
+  "68": "5. Marketing Plan",
+  "28": "5.  Marketing Plan",
+  "76": "6. Operations Plan",
+  "29": "6.  Operations Plan",
+  "84": "7. Management & Staffing",
+  "30": "7.  Management & Staffing",
+  "94": "8. Financial Plan",
+  "31": "8.  Financial Plan",
+  "104": "9. Legal Requirements, Permits & Licenses",
+  "32": "9.  Legal Requirements, Permits & Licenses",
+  "111": "10. Conclusions & Action Plan",
+  "33": "10.  Conclusions & Action Plan"
+ },
+ "parrafos": [
+  {
+   "i": 39,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 114,
+   "es": "El mercado español de panadería artesanal atraviesa un momento de transformación profunda. El consumidor contemporáneo ha recuperado la preferencia por el pan real, aquel elaborado con masa madre, fermentación lenta y ingredientes de proximidad, frente al pan industrial que dominó las últimas décadas. Esta tendencia, consolidada desde 2020 y acelerada post-pandemia, ha generado una demanda sostenida de obradores artesanales que ofrezcan producto diferenciador. Según datos del sector, el segmento de pan artesano crece a tasas superiores al 8% anual, mientras el consumo de pan industrial se contrae de forma continuada. España, con una cultura panadera profundamente arraigada, representa un mercado ideal para desarrollar un concepto de obrador artesanal que combine tradición con profesionalización empresarial."
+  },
+  {
+   "i": 40,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 110,
+   "es": "El negocio propuesto consiste en una panadería artesanal con obrador propio ubicada en una zona de barrio residencial con actividad hostelera. El local, con una superficie de entre 80 y 120 metros cuadrados, integra zona de venta directa, obrador y almacenamiento. La propuesta de valor se centra en tres pilares: pan de masa madre con fermentaciones de entre 24 y 48 horas, bollería de calidad superior y una oferta de café de especialidad que complementa la experiencia de compra. La diferenciación fundamental respecto a competidores directos radica en el canal mayorista hacia restaurantes, segmento que permite estabilizar producción y generar ingresos recurrentes con ticket medio superior al de venta particular."
+  },
+  {
+   "i": 41,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 115,
+   "es": "La inversión total estimada se sitúa en torno a 105.000 euros, distribuidos entre obra civil y adecuación del local, equipamiento de obrador de alta gama, mobiliario de tienda, capital circulante y gastos de lanzamiento. El horario de producción comienza a las 4 de la madrugada, garantizando producto fresco disponible para la apertura de tienda a las 8 horas y para las entregas a restauración antes del servicio de comidas. La estructura de costes fijos contempla un equipo de cuatro a cinco personas, incluyendo al panadero titular con experiencia demostrable en masa madre, un ayudante de obrador, personal de tienda con capacidad de atención y gestión, y la figura del responsable comercial para el canal mayorista."
+  },
+  {
+   "i": 42,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 100,
+   "es": "Las proyecciones financieras para el primer año de actividad prevén una facturación cercana a los 200.000 euros, con un mix de negocio que distribuye aproximadamente el 60% de la facturación en venta directa y el 40% restante en el canal mayorista hacia restaurantes. Este equilibrio permite optimizar la capacidad productiva del obrador, reduciendo desperdicios y mejorando márgenes operativos. El punto de equilibrio se estima alcanzable antes del final del primer año, con una trayectoria de crecimiento moderada basada en la consolidación de la cartera de clientes hosteleros y el incremento progresivo de la frecuencia de compra en el canal minorista."
+  },
+  {
+   "i": 43,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 67,
+   "es": "El equipo promotor aporta más de una década de experiencia combinada en el sector de la hostelería y la panadería artesanal, con conocimiento profundo de las dinámicas de producción y comercialización en el mercado español. Esta experiencia resulta determinante para abordar con garantías un proyecto que combina la complejidad técnica de la elaboración artesanal con las exigencias de gestión empresarial propias de cualquier pyme del sector alimentario."
+  },
+  {
+   "i": 44,
+   "seccion": 1,
+   "rol": "cuerpo",
+   "palabras": 77,
+   "es": "La visión a tres años contempla la consolidación del obrador como referente de calidad en su zona de influencia, el crecimiento controlado del canal mayorista hacia nuevas cuentas de restauración y la posibilidad de explorar opciones de expansión si la rentabilidad del modelo lo permite. El proyecto combina la pasión por el producto artesanal con una aproximación rigurosa a la gestión financiera, posicionándose como una oportunidad de negocio sólida en un segmento de mercado en clara expansión."
+  },
+  {
+   "i": 47,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 92,
+   "es": "El concepto de negocio se fundamenta en la recuperación del pan artesano como producto de alta calidad frente a la producción industrial que domina el mercado español. La panadería artesanal con obrador propio representa un modelo de negocio que combina la tradición panadera con los estándares contemporáneos de transparencia, calidad de ingredientes y experiencia de compra. Este modelo permite controlar toda la cadena de producción, desde la selección de harinas hasta la entrega del producto al consumidor, garantizando una propuesta diferenciada que responde a la creciente demanda de alimentos auténticos y artesanales."
+  },
+  {
+   "i": 48,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 132,
+   "es": "La propuesta de valor se articula alrededor de cuatro pilares fundamentales que responden a las tendencias de consumo actuales en España. El primer pilar es el pan de masa madre con fermentación lenta de entre 24 y 48 horas, un proceso que desarrolla perfiles de sabor complejos, mejora la digestibilidad y elimina la necesidad de aditivos químicos. El segundo pilar consiste en el uso de harinas ecológicas y de proveedores locales, estableciendo relaciones directas con molinos artesanales y cerealistas de la región que garantizan la trazabilidad completa del grano. El tercer pilar es la bollería de mantequilla premium, frente a las alternativas industriales que utilizan grasas hidrogenadas y conservantes. El cuarto pilar es el café specialty de tueste reciente, complementario al pan y que genera un ticket medio superior en la compra."
+  },
+  {
+   "i": 49,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 80,
+   "es": "El modelo de producción visible constituye el principal elemento diferenciador respecto a la competencia convencional. La apertura del obrador al cliente, permitiendo presenciar el proceso de horneado y la manipulación de las masas, genera una conexión emocional con el producto que justifica un precio premium. Esta transparencia responde a la demanda de los consumidores actuales de conocer el origen y los procesos de elaboración de los alimentos que consumen, especialmente en segmentos de mayor poder adquisitivo y conciencia sobre alimentación."
+  },
+  {
+   "i": 50,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 101,
+   "es": "El mercado objetivo se concentra en dos segmentos complementarios que aseguran diversificación de ingresos y reducción de dependencia de un solo canal. El segmento de venta directa incluye residentes de barrios residenciales con poder adquisitivo medio-alto, profesionales del entorno y familias que priorizan la calidad sobre el precio en su consumo de pan diario. El segmento mayorista abarca restaurantes de cocina local y de producto que buscan un pan artesanal que complemente su propuesta gastronómica, además de cafeterías y establecimientos de desayunos que requieren un producto diferenciador. Este canal B2B permite stabilizecer pedidos regulares y planificar la producción con mayor precisión."
+  },
+  {
+   "i": 51,
+   "seccion": 2,
+   "rol": "cuerpo",
+   "palabras": 141,
+   "es": "La inversión inicial de entre 75.000 y 130.000 euros se distribuye entre equipamiento del obrador con maquinaria profesional de alta gama, adecuación del local con instalación eléctrica trifásica y sistemas de climatización específicos para la fermentación, mobiliario de tienda y punto de venta, capital de trabajo para los primeros meses de actividad y reserva de tesorería. El punto de equilibrio se estima en torno a los 2.800-3.200 euros diarios de facturación, alcanzable con una combinación de venta directa y contratos con restaurantes que aseguren un volumen base de producción. La rentabilidad del sector de panadería artesanal en España se sitúa en márgenes brutos del 65-72% sobre ventas, con un resultado neto después de costes de personal, alquileres y gastos operativos que oscila entre el 8% y el 15% dependiendo de la gestión de costes y el mix de canales de venta."
+  },
+  {
+   "i": 54,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 107,
+   "es": "El mercado panadero español atraviesa una fase de transformación significativa que favorece directamente el modelo de obrador artesanal con venta directa. El consumo per cápita de pan en España se mantiene en torno a los 30-35 kilogramos anuales según datos del Ministerio de Agricultura, cifra que, aunque inferior a la de décadas anteriores, revela un comportamiento de consumo más selectivo donde el consumidor prioriza calidad sobre cantidad. Esta realidad constituye el fundamento estratégico de cualquier inversión en panadería artesanal: no se trata de competir en volumen con la industria panadera, sino de capturar el segmento de consumidores dispuestos a pagar un precio superior por un producto diferenciado."
+  },
+  {
+   "i": 55,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 119,
+   "es": "La brecha de precio entre el pan artesanal y el pan industrial representa la oportunidad de negocio más relevante del sector. Mientras el pan de barra industrial se sitúa en un rango de 1 a 2 euros por kilogramo en distribución moderna, el pan artesano de masa madre alcanza precios de 3 a 6 euros por kilogramo en punto de venta, con picos de hasta 8 euros en productos premium de obradores especializados. Esta diferencia de precio, que puede triplicar el ticket medio por unidad, permite compensar volúmenes de venta inferiores con márgenes brutos significativamente más altos, condición indispensable para la viabilidad económica de un obrador de 80 a 120 metros cuadrados con equipo de 4 a 5 personas."
+  },
+  {
+   "i": 56,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 101,
+   "es": "El crecimiento sostenido de las panaderías artesanales en España confirma la validación de mercado de este modelo de negocio. Según datos de la Federación de Industrias de la Alimentación y Bebidas, el segmento de panadería artesanal ha registrado tasas de crecimiento positivas durante los últimos cinco años, creciendo en contraste con la tendencia decreciente del consumo global de pan. Este fenómeno responde a una mudança en las preferencias del consumidor español, que asocia cada vez más el pan artesano con atributos de calidad, tradición y alimentación saludable, especialmente tras la pandemia, que aceleró la valoración de productos locales y de proximidad."
+  },
+  {
+   "i": 57,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 102,
+   "es": "El canal HORECA representa una palanca de crecimiento fundamental para un obrador artesanal con capacidad de producción moderada. Los restaurantes, cafeterías y hoteles de zona demandan pan de calidad diferenciada para acompañar sus ofertas gastronómicas, y muchos establecimientos han incorporado el pan artesano como elemento de posicionamiento de marca. La venta mayorista a restauración permite diversificar ingresos, estabilar la producción diaria y reducir la dependencia exclusiva de la clientela de paso en tienda. Para un obrador con producción matutina desde las 4-5 de la madrugada, la venta a restaurantes constituye un complemento natural que optimiza el uso de la capacidad productiva instalada."
+  },
+  {
+   "i": 58,
+   "seccion": 3,
+   "rol": "cuerpo",
+   "palabras": 127,
+   "es": "El perfil demográfico del barrio residencial como ubicación estratégica determina en gran medida el éxito de este modelo. Los neighbourhoods con poder adquisitivo medio-alto, presencia de familias con hijos y sensibilidad hacia la alimentación saludable presentan las mayores tasas de conversión a clientes habituales de panadería artesanal. La combinación de tienda física con venta directa y la distribución a restaurantes locales genera un modelo de negocio con dos fuentes de ingresos claramente diferenciadas, lo que reduce la vulnerabilidad ante variaciones estacionales del tráfico de clientes en tienda. La inversión requerida de 75 a 130 mil euros se enmarca dentro de parámetros razonables para un proyecto de estas características, siempre que la ubicación y la ejecución operativa respondan a los estándares de calidad que el mercado artesanal demanda."
+  },
+  {
+   "i": 61,
+   "seccion": 4,
+   "rol": "subtitulo",
+   "palabras": 2,
+   "es": "ANALISIS COMPETITIVO"
+  },
+  {
+   "i": 62,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 105,
+   "es": "El sector de la panadería artesanal en España atraviesa una fase de transformación significativa driven por la recuperación del consumo de pan de calidad y el cambio en los hábitos de compra post-pandemia. Según datos de la Federación Española de Panadería, el segmento de pan artesano ha registrado un crecimiento sostenido del 3-4% anual en los últimos tres años, mientras que el consumo de pan industrial experimenta un descenso acumulado del 12%. Esta tendencia favorece el posicionamiento de obradores que ofrecen producto diferenciado basado en masa madre y procesos tradicionales, aunque la competencia se ha intensificado tanto en el canal tradicional como en el moderno."
+  },
+  {
+   "i": 63,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 134,
+   "es": "El análisis de la competencia directa en el entorno de barrio revela un panorama polarizado. Por un lado, las panaderías artesanales consolidadas con más de quince años de trayectoria dominan la clientela tradicional y mantienen márgenes operativos del 18-25% gracias a la fidelidad de barrio. Estas instalaciones suelen operar con modelos de negocio similares al propuesto: producción propia, horarios tempranos y combinación de venta directa con pequeños acuerdos de suministro a restaurantes. Su principal debilidad radica en la resistencia a la innovación en producto y en la dependencia de un maestro panadero cuya jubilación plantea problemas de sucesión. En el extremo opuesto, las panaderías low-cost de barrio compiten exclusivamente en precio, ofreciendo producto de menor calidad organoléptica que no constituye una amenaza real para un proyecto basado en diferenciación por calidad de masa madre."
+  },
+  {
+   "i": 64,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 135,
+   "es": "El canal de supermercados representa el competidor indirecto más relevante en términos de volumen. Las cadenas de distribución han desarrollado líneas de pan artesano con marcas propias que copan el segmento de conveniencia, con precios que oscilan entre 1,50 y 2,80 euros la barra. Sin embargo, este canal presenta limitaciones inherentes: el producto pierde frescura por la logística de distribución, y el consumidor cada vez diferencia mejor entre pan de verdad y pan industrial presentado como artesano. Las franquicias del sector, como Panishop o La Casa del Pan, operan en locales de alto tráfico comercial con modelos estandarizados que ofrecen consistencia pero carecen de la autenticidad que demanda el consumidor actual. Su propuesta de valor se orienta al conveniencia y no al producto artesanal diferenciado, lo cual reduce la presión competitiva directa sobre el proyecto."
+  },
+  {
+   "i": 65,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 138,
+   "es": "El análisis según el modelo de las cinco fuerzas de Porter evidencia una intensidad competitiva moderada con oportunidades claras para el posicionamiento diferenciado. El poder de negociación de los proveedores de harina especializada y materias primas de calidad es bajo dada la existencia de múltiples distribuidores artesanales en el mercado español. El poder de negociación de los clientes finales es limitado en el segmento de barrio, donde la fidelidad se construye mediante calidad consistente y relación de proximidad. La amenaza de productos sustitutivos es manejable: el café de tercera ola y la bollería artesanal complementan la oferta y aumentan el ticket medio por visita. La amenaza de nuevos entrantes constituye la fuerza más relevante, dado que las barreras de entrada son significativas pero no insuperables, lo cual explica la proliferación de proyectos artesanales en los últimos cinco años."
+  },
+  {
+   "i": 66,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 144,
+   "es": "Las barreras de entrada para una panadería artesanal con las características descritas son sustanciales y constituyen el principal factor de protección competitiva. La inversión inicial en equipamiento de obrador, incluyendo amasadora profesional, horno de convección, cámaras de fermentación y utillaje específico, oscila entre 35.000 y 55.000 euros para un equipo operativo de capacidad media. A esta inversión en activos materiales se suma la dificultad crítica de encontrar maestro panadero con dominio de masa madre, conocimiento de fermentaciones largas y capacidad de gestionar la producción en horarios de madrugada. Esta escasez de talento especializado representa una barrera más relevante que la inversión financiera, dado que la calidad del pan depende directamente del conocimiento tácito del artesano. Adicionalmente, la normativa sanitaria para obradores de producción propia exige cumplimiento de requisitos de seguridad alimentaria que incrementan los costes de puesta en marcha y los plazos de apertura."
+  },
+  {
+   "i": 67,
+   "seccion": 4,
+   "rol": "cuerpo",
+   "palabras": 137,
+   "es": "Los factores críticos de éxito para el proyecto se derivan directamente del análisis competitivo y deben guiar todas las decisiones operativas. La calidad de la masa madre constituye el elemento diferenciador por excelencia: un fermento vivo bien mantenido produce un perfil organoléptico que ningún competidor industrial puede replicar. El horario de producción desde las cuatro de la madrugada garantiza producto fresco disponible a primera hora, condición indispensable para capturar la demanda de desayunos y restauración. La ubicación en barrio residencial con flujo de paso hacia zonas de restauración permite capturar tanto la venta directa a vecinos como los contratos de suministro a restaurantes que valoran pan de calidad. La combinación de estos tres factores, ejecutada con consistencia operativa, genera una propuesta de valor difícilmente replicable por nuevos entrantes y resistente a la competencia de supermercados y franquicias."
+  },
+  {
+   "i": 70,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 84,
+   "es": "La estrategia de marketing para esta panadería artesanal se fundamenta en tres pilares diferenciados: la comunicación digital enfocada en el proceso productivo, la captación de clientes B2B mediante acuerdos con establecimientos de restauración, y la construcción de una comunidad local fiel mediante acciones de proximidad. El presupuesto de marketing inicial se sitúa entre 400 y 700 euros mensuales, representando aproximadamente un 3-5% de la facturación prevista en fase de lanzamiento, con capacidad de ajuste según la respuesta del mercado y la estacionalidad del negocio."
+  },
+  {
+   "i": 71,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 175,
+   "es": "La presencia digital se concentra en Instagram como canal principal de comunicación visual, donde el contenido debe mostrar el proceso completo de elaboración: desde la harina hasta el producto final, prestando especial atención a la masa madre, la formación de la miga y el desarrollo de la corteza. Este tipo de contenido genera engagement orgánico superior al promedio del sector alimentario porque conecta emocionalmente con el consumidor que valora la artesanía y la transparencia. La frecuencia de publicación recomendada es de cuatro a cinco publicaciones semanales complementadas con historias diarias que muestren el ambiente del obrador, las incorporaciones de producto y la interacción con clientes. Google My Business constituye una herramienta crítica para este tipo de establecimiento, dado que la mayoría de las compras son de proximidad y los clientes potenciales buscan información sobre horarios, ubicación y opiniones antes de visitar el local. La gestión activa de reseñas, respondiendo a cada comentario en un plazo inferior a 24 horas, impacta directamente en la visibilidad local y en la tasa de conversión de visitantes a compradores."
+  },
+  {
+   "i": 72,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 126,
+   "es": "El marketing sensorial representa una ventaja competitiva diferencial que no requiere inversión económica significativa pero que genera un impacto considerable en la decisión de compra. El aroma del pan recién horneado que se extiende por el barrio constituye el elemento de captación más efectivo para la clientela de paso, y debe integrarse deliberadamente en la planificación de la producción. La práctica de hornear los primeros productos del día entre las siete y las nueve de la mañana, cuando el flujo de vecinos camino al trabajo es máximo, maximiza la captación de clientes espontáneos. Adicionalmente, la política de ofrecer muestras gratuitas de los productos estrella durante los primeros meses de actividad permite acelerar la curva de aprendizaje del consumidor y generar una primera experiencia de compra positiva."
+  },
+  {
+   "i": 73,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 134,
+   "es": "La captación de clientes mayoristas mediante acuerdos con restaurantes y hoteles de la zona representa un canal de facturación complementario que aporta volumen y regularidad al negocio. La estrategia comercial debe enfocarse en establecer contacto directo con los responsables de cocina de establecimientos que incluyan pan de calidad en su propuesta de valor, presentando muestras del producto y ofreciendo condiciones de entrega matutina que permitan recibir el pan antes de la apertura del servicio. Los restaurantes con filosofía de producto local y artesano constituyen el target prioritario, mientras que los hoteles de categoría media y alta que incluyan desayunos buffet representan una oportunidad adicional. La capacidad de producción estimada, entre 200 y 400 piezas diarias, permite atender simultáneamente la venta directa y un volumen mayorista sin comprometer la calidad ni la frescura del producto."
+  },
+  {
+   "i": 74,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 117,
+   "es": "Las acciones de captación local incluyen la participación periódica en mercados de productores artesanales de la comarca, donde la panadería puede dar a conocer su marca y establecer relaciones directas con consumidores sensibles al producto de cercanía. Las degustaciones programadas en el propio establecimiento, especialmente durante fines de semana y fechas señaladas, funcionan como evento de atracción que genera contenido para redes sociales y fortalece el vínculo con la comunidad. El programa de fidelización para clientes del barrio puede implementarse mediante una tarjeta de puntos física o una aplicación sencilla que premie la compra recurrente con productos gratuitos o descuentos progresivos, siendo el coste marginal de estas acciones inferior al valor del cliente capturado a largo plazo."
+  },
+  {
+   "i": 75,
+   "seccion": 5,
+   "rol": "cuerpo",
+   "palabras": 117,
+   "es": "La planificación temporal recomienda priorizar en los primeros tres meses la puesta en marcha de Google My Business, la creación de contenido inicial para Instagram y la implementación del programa de degustaciones en tienda. A partir del cuarto mes, se inicia la prospección comercial activa hacia restaurantes y hoteles, manteniendo simultáneamente las acciones de comunidad. El seguimiento de métricas básicas, incluyendo ticket medio, número de transacciones diarias, porcentaje de clientes recurrentes y tasa de conversión desde redes sociales, permite ajustar la estrategia y reasignar recursos hacia los canales más productivos. La inversión en marketing digital pago debe reservarse para la fase de consolidación, una vez validados los canales orgánicos y cuantificado el retorno de cada acción implementada."
+  }
+ ]
+}

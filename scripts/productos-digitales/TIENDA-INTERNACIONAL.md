@@ -290,3 +290,17 @@ la F1 de cada producto frente a Etsy/Gumroad.
   25-oct (`3d49a8d7`), 14:00Z. Siguientes (decisión con DataForSEO US, aprobada por John): **Food Truck Business Plan**
   («food truck business plan» 12.100/mes) y **Coffee Shop Business Plan** (3.600/mes), duplicados de `plan-negocio-food-truck`
   y `plan-negocio-cafeteria`; los checklists de la ola 2 rondan 50-1.000/mes y quedan detrás.
+- **2026-10-04 (tarde-noche, sesión Claude Code) — 4 business plans EN listos a falta del Payment Link.** Food Truck +
+  Coffee Shop Business Plan Kit (PR #110) y Restaurant + Bakery Business Plan Kit (PR #111, apilado), $39 cada uno, elegidos
+  con DataForSEO US (12.100 / 3.600 / 2.400 / 1.900 búsquedas/mes). Mismo motor ES (línea A) → una capa EN para los 4
+  (`business-plans-en/`, generalizada con `BP_CONJUNTO=restpan` en `business-plans-en-2/`); plantilla `PlanNegocioLandingPage`
+  con `lang` (las 15 landings ES byte a byte iguales). ≈ 8,3 M tokens de subagentes para los 4 (FT+CAF 4,3 · REST+PAN 4,0),
+  todo lo pesado en el VPS. Lecciones:
+  - **Duplicar un plan de negocio = recalibrar el caso, no convertir moneda.** Los números ES en dólares dejaban sueldos bajo
+    el mínimo federal; cada plan necesitó su caso US y UNA palanca de calibración documentada (G7 la exige).
+  - **La revisión que RECALCULA caza lo que ningún gate ve:** préstamo SBA tecleado en una fila que no se amortiza (B1),
+    comisión de tarjeta «2,6 % + $0,15 = 2,9 %» que en tickets de $11-15 es 3,9-4,2 %, licencia de alcohol pedida un día
+    antes de abrir, FTE que sumaba por persona en filas de 2-3 personas, escala FHRS 1-5 (es 0-5).
+  - **«Regular price» y precio tachado** al que nunca se ha vendido = riesgo FTC (16 CFR 233.1): fuera de los correos de los
+    planes; la política de anclas de las landings EN queda para John.
+  - Un PR apilado sobre otra rama no tiene deploy preview en Netlify (solo PR contra `main`).

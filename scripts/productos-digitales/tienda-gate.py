@@ -30,9 +30,10 @@ MODOS
     marcado con el atributo data-lang-es, p. ej. «¿Hablas español?»); sin caracteres no
     latinos (CJK, cirílico, hangul, árabe, hebreo, tailandés). Gate y dashboard: noindex.
 
-  --es-identico --base <preview> — las 5 landings ES de la plantilla KitExcel
-    (/kit-escandallos, /pack-appcc, /kit-inventario, /kit-gestion-personal,
-    /kit-plan-financiero) del preview contra https://aichef.pro, normalizando los hashes
+  --es-identico --base <preview> — las 15 landings ES de las plantillas con `lang`: las 5 de
+    KitExcel (/kit-escandallos, /pack-appcc, /kit-inventario, /kit-gestion-personal,
+    /kit-plan-financiero) y las 10 de PlanNegocio (/plan-negocio-*, /plan-chef-privado-*,
+    /plan-catering-*; desde el 4-oct-2026) del preview contra https://aichef.pro, normalizando los hashes
     de /_astro/*.js|css, el id de scope de Astro (data-astro-cid-*) y el host del preview.
     Sale 1 ante cualquier diferencia y enseña el contexto de la primera.
     --esperadas <ruta>[,<ruta>] (p. ej. /kit-escandallos en un PR que cambia ese producto):
@@ -69,6 +70,13 @@ ZONA_APP = ASTRO / 'src/lib/zona-app.ts'
 ROBOTS_GATE = REPO / 'scripts/astro-migration/robots-gate.py'
 PROD = 'https://aichef.pro'
 KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gestion-personal', '/kit-plan-financiero']
+# PlanNegocioLandingPage recibe `lang` desde el 4-oct-2026 (planes de negocio EN): sus 10 landings ES
+# tienen que seguir byte a byte iguales, igual que las de KitExcel.
+PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
+             '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
+             '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
+             '/plan-chef-privado-showcooking-eventos', '/plan-catering-tematico-eventos']
+LANDINGS_ES = KITEXCEL_ES + PLANES_ES
 
 errores: list[str] = []
 
@@ -222,8 +230,16 @@ def estatico() -> None:
                 continue
             if not f['productos'].get('es', {}).get('vivo'):
                 mal(f'{tag}: sin gemelo ES vivo (el hreflang recíproco no tiene a quién apuntar)')
-            if not list((ASTRO / f'src/data/productos-{lg}').glob(f'**/{slug}.ts')):
+            fichas = list((ASTRO / f'src/data/productos-{lg}').glob(f'**/{slug}.ts'))
+            if not fichas:
                 mal(f'{tag}: falta astro-site/src/data/productos-{lg}/**/{slug}.ts')
+            # Marcador de cifra pendiente (F3 de los planes EN, 4-oct-2026): la ficha nace con
+            # «TODO_CIFRA» donde va un dato del caso que calcula la F2. Un producto vivo con el
+            # marcador lo publicaría tal cual en la landing y en el FAQPage: rojo hasta rellenarlo.
+            for ficha in fichas:
+                n = ficha.read_text(encoding='utf-8').count('TODO_CIFRA')
+                if n:
+                    mal(f'{tag}: {n} «TODO_CIFRA» sin rellenar en {ficha.relative_to(REPO)}')
             base = ASTRO / 'src/pages' / lg / t['seg']
             landing = [base / f'{slug}.astro', base / slug / 'index.astro']
             if not any(x.exists() for x in landing):
@@ -309,7 +325,11 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            'Kit Gestión de Personal y Turnos',
            # Ídem, Restaurant Financial Plan Kit Pro (3-oct): testimonios del Kit Plan Financiero
            # traducidos tal cual (el nombre de esa edición no lleva tildes ni « para »).
-           'Ricardo Gómez', 'Ana Beltrán', 'María Herrero']
+           'Ricardo Gómez', 'Ana Beltrán', 'María Herrero',
+           # Ídem, Food Truck y Coffee Shop Business Plan Kit (4-oct): testimonios de los planes de negocio
+           # Food Truck y Cafetería traducidos (mismos nombres en los dos). Restaurant y Bakery Business
+           # Plan Kit (4-oct, segunda tanda) traducen los de Bar-Restaurante y Panadería: los MISMOS 5 nombres.
+           'María López', 'Carlos Méndez', 'Laura Fernández', 'Ana García', 'Pedro Gutiérrez']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
@@ -472,9 +492,9 @@ def fragmentos_texto(html: str) -> list[str]:
 
 def es_identico(base: str, esperadas: frozenset[str] = frozenset()) -> None:
     iguales = cambiadas = 0
-    for ruta in sorted(esperadas - set(KITEXCEL_ES)):
-        mal(f'--esperadas {ruta}: no es una de las landings KitExcel ES ({", ".join(KITEXCEL_ES)})')
-    for ruta in KITEXCEL_ES:
+    for ruta in sorted(esperadas - set(LANDINGS_ES)):
+        mal(f'--esperadas {ruta}: no es una de las landings ES con plantilla multi-idioma ({", ".join(LANDINGS_ES)})')
+    for ruta in LANDINGS_ES:
         st_p, prev = get(base.rstrip('/') + ruta)
         st_l, live = get(PROD + ruta)
         if st_p != 200 or st_l != 200:
@@ -502,7 +522,7 @@ def es_identico(base: str, esperadas: frozenset[str] = frozenset()) -> None:
         mal(f'{ruta}: DIFIERE en el byte {i} (preview {len(a)} / producción {len(b)} bytes)\n'
             f'     preview   : …{a[max(0, i - 120):i + 120]!r}…\n'
             f'     producción: …{b[max(0, i - 120):i + 120]!r}…')
-    print(f'\n{iguales}/{len(KITEXCEL_ES)} landings ES idénticas'
+    print(f'\n{iguales}/{len(LANDINGS_ES)} landings ES idénticas'
           + (f' · {cambiadas} con cambio esperado (--esperadas)' if esperadas else ''))
 
 
@@ -512,7 +532,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
     ap.add_argument('--base', help='URL del deploy a comprobar (preview o producción)')
     ap.add_argument('--es-identico', action='store_true',
-                    help='compara las 5 landings ES KitExcel del --base contra producción')
+                    help='compara las 15 landings ES (5 KitExcel + 10 PlanNegocio) del --base contra producción')
     ap.add_argument('--esperadas', default='',
                     help='con --es-identico: rutas (separadas por comas, p. ej. /kit-escandallos) '
                          'cuyo cambio es el del PR; imprime su diff de texto en vez de fallar')

@@ -1,0 +1,4573 @@
+{
+ "tanda": "GCAF",
+ "salida": "scripts/productos-digitales/business-plans-en/textos_en/GCAF.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 418,
+ "n_palabras": 4436,
+ "pistas": {
+  "P01": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P02": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P03": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P04": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P05": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P06": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P07": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P08": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P09": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P10": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P11": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P12": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P13": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P14": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P15": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P16": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P17": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P18": "SPEC §4.1 línea 8 (I1): el Word del kit usa las MISMAS cifras de ejemplo que este libro; si cambias el libro, actualiza las cifras del Word",
+  "P19": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P20": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P21": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P22": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P23": "A3: el EN no afirma «verified» en 50 estados: «a starting point; requirements vary by state, county and city»",
+  "P24": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons"
+ },
+ "pestanas_es_en": {
+  "FTP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "CAFP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "FTC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Truck & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  },
+  "CAFC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local": "Phase 2 - Location & Permits",
+   "F3 - Equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Food Truck Business Plan Kit by AI Chef Pro.",
+  "Este fichero forma parte del producto «plan-negocio-cafeteria» de AI Chef Pro.": "This file is part of the Coffee Shop Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Pay periods per year",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "SBA-guaranteed loan (7(a), through your bank)",
+  "Préstamo participativo ENISA": "SBA Microloan (nonprofit intermediaries, up to $50,000)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12"
+ },
+ "cadenas": [
+  {
+   "id": "c0867",
+   "es": "Clientes servidos al día de media del año, contando el café de barra y el brunch de mesa. Dentro del rango de 80 a 150 que este mismo libro publica para una cafetería urbana en la tabla de referencias del sector; la rotación que implica sobre el aforo la calcula la celda «Rotaciones al día implícitas» de esta misma hoja",
+   "donde": [
+    "CAFP · 0. Supuestos!C4"
+   ],
+   "fila": "Clientes/día (media del año 1)",
+   "valor_us": 140,
+   "pistas": [
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0868",
+   "es": "SIN IVA. El PVP equivalente lo calcula la celda «PVP equivalente con IVA» de esta misma hoja; compáralo con el «Ticket medio combinado» de la tabla de referencias del sector, más abajo en la hoja de Instrucciones",
+   "donde": [
+    "CAFP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 10.5,
+   "pistas": [
+    "P03",
+    "P04",
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0869",
+   "es": "El MISMO dato lo usan la cuenta de resultados («PyG 3 Años»), el punto de equilibrio y los escenarios: el fichero v1.1 tenía DOS calendarios distintos (Punto Equilibrio: 30 días/mes; Escenarios: 300-310 días/año)",
+   "donde": [
+    "CAFP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 340,
+   "cita_hojas": [
+    {
+     "es": "PyG 3 Años",
+     "en": "3-Year P&L"
+    }
+   ],
+   "pistas": [
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "Segundo año con la clientela de barrio ya fidelizada. Es ocupación en hora punta, no clientela nueva: el año 1 ya arranca con 100 clientes al día",
+   "donde": [
+    "CAFP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0871",
+   "es": "Tercer año, cerca del techo de aforo en las horas punta",
+   "donde": [
+    "CAFP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3"
+  },
+  {
+   "id": "c0872",
+   "es": "Food cost de la comida (brunch, bollería, tostas): dentro del 30-35 % que declara la tabla de referencias del sector de este mismo libro",
+   "donde": [
+    "CAFP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.3
+  },
+  {
+   "id": "c0873",
+   "es": "Coste del café y de las bebidas (calientes y frías) sobre sus propias ventas: media ponderada entre el 25-30 % del café y el 28-32 % de las bebidas frías que publica este mismo libro",
+   "donde": [
+    "CAFP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.24
+  },
+  {
+   "id": "c0874",
+   "es": "Servilletas, papel, vasos de llevar y productos de limpieza de barra",
+   "donde": [
+    "CAFP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.03
+  },
+  {
+   "id": "c0875",
+   "es": "A CERO por defecto: el checklist de esta apertura lo marca como tarea del mes 2-3 («Implementar delivery si hay demanda»), no del día 1. Súbelo al peso real del canal cuando lo actives",
+   "donde": [
+    "CAFP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0876",
+   "es": "Comisión típica de Glovo/Uber Eats sobre el pedido servido por ese canal; confírmala en tu contrato antes de proyectar",
+   "donde": [
+    "CAFP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0877",
+   "es": "Tarjeta y bizum sobre el total facturado; una cafetería de barra cobra en tarjeta la mayoría de los tickets",
+   "donde": [
+    "CAFP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.029,
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0878",
+   "es": "Local de cafetería/brunch de 30-40 plazas interiores más terraza. Con el caso base recalibrado se queda dentro del 8-12 % sobre ventas que fija la tabla de referencias del sector de este mismo libro",
+   "donde": [
+    "CAFP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 4500
+  },
+  {
+   "id": "c0879",
+   "es": "Fianza del alquiler (meses)",
+   "donde": [
+    "CAFP · 0. Supuestos!A25"
+   ],
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0880",
+   "es": "Tres meses de renta, como en el contrato tipo de local de negocio",
+   "donde": [
+    "CAFP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del alquiler (meses)",
+   "valor_us": 2
+  },
+  {
+   "id": "c0881",
+   "es": "Luz, agua y gas de una barra de café con horno de brunch: pide el histórico del local antes de firmar",
+   "donde": [
+    "CAFP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 1200,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0882",
+   "es": "Responsabilidad civil (el checklist pide un mínimo de 300.000 € de cobertura) y multirriesgo del local",
+   "donde": [
+    "CAFP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 3500,
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0883",
+   "es": "Colchón de gasto corriente no presupuestado",
+   "donde": [
+    "CAFP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas"
+  },
+  {
+   "id": "c0884",
+   "es": "Aportación de los socios. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja que calcula la hoja de Inversión",
+   "donde": [
+    "CAFP · 0. Supuestos!C30"
+   ],
+   "fila": "Recursos propios aportados (€)",
+   "valor_us": 60000,
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0885",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que el origen y los usos cuadran con la necesidad de caja calculada en la hoja de Inversión, y trae una celda que calcula el importe exacto que los ajusta",
+   "donde": [
+    "CAFP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR"
+  },
+  {
+   "id": "c0886",
+   "es": "Tipo nominal anual; pide oferta a dos entidades y a una línea ICO antes de fijarlo",
+   "donde": [
+    "CAFP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P03",
+    "P09",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0887",
+   "es": "Años totales, carencia incluida",
+   "donde": [
+    "CAFP · 0. Supuestos!C33"
+   ],
+   "fila": "Plazo del préstamo (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P03",
+    "P10"
+   ]
+  },
+  {
+   "id": "c0888",
+   "es": "Primer año sólo intereses, que es cuando la caja está más tensa",
+   "donde": [
+    "CAFP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0
+  },
+  {
+   "id": "c0889",
+   "es": "Mínimo que exige este mismo libro: un colchón por debajo de 3 meses no cubre un bache de temporada baja",
+   "donde": [
+    "CAFP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)"
+  },
+  {
+   "id": "c0890",
+   "es": "Obra, instalaciones y decoración de una cafetería. Coeficientes de la tabla del art. 12.1 LIS: confírmalo con tu asesor",
+   "donde": [
+    "CAFP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0891",
+   "es": "Máquina de café, molinillo, horno, vitrinas y mobiliario. Coeficiente lineal máximo del art. 12.1 LIS: 12 % maquinaria, 10 % mobiliario — por debajo de 8-10 años el exceso no es deducible. Confírmalo con tu asesor",
+   "donde": [
+    "CAFP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0892",
+   "es": "Rotaciones al día implícitas (calculado)",
+   "donde": [
+    "CAFP · 0. Supuestos!A50"
+   ]
+  },
+  {
+   "id": "c0893",
+   "es": "Aforo del local (plazas sentadas + barra)",
+   "donde": [
+    "CAFP · 0. Supuestos!A51"
+   ]
+  },
+  {
+   "id": "c0894",
+   "es": "Plazas interiores (30-40 según la hoja de Inversión) más las de la terraza (8-10 mesas). De aquí sale la rotación implícita: clientes/día ÷ aforo",
+   "donde": [
+    "CAFP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas + barra)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0895",
+   "es": "Un local que abre no factura desde el primer día lo mismo que a los seis meses. Con 100 % se elimina la rampa y el año 1 se proyecta a velocidad de crucero",
+   "donde": [
+    "CAFP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero"
+  },
+  {
+   "id": "c0896",
+   "es": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "donde": [
+    "CAFP · 0. Supuestos!A54"
+   ]
+  },
+  {
+   "id": "c0897",
+   "es": "El local se paga desde que se firma. Estos meses son inversión: NO se solapan con el P&L, que arranca el día de la apertura",
+   "donde": [
+    "CAFP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler ANTES de abrir (obra y licencias)"
+  },
+  {
+   "id": "c0898",
+   "es": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "donde": [
+    "CAFP · 0. Supuestos!A55"
+   ]
+  },
+  {
+   "id": "c0899",
+   "es": "Colchón sobre la partida de obra y acondicionamiento. Un banco no financia una reforma sin él",
+   "donde": [
+    "CAFP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0900",
+   "es": "En barra y sala se cobra al contado (0 días). Súbelo si trabajas con plataformas de reserva o de reparto, que liquidan a D+1/D+30",
+   "donde": [
+    "CAFP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro"
+  },
+  {
+   "id": "c0901",
+   "es": "Bebida ALCOHÓLICA sobre el total de bebida: mínima en una cafetería/brunch (algún mimosa o cava de celebración). El resto —café, zumos, smoothies, refrescos— va al IVA reducido de hostelería",
+   "donde": [
+    "CAFP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0903",
+   "es": "10 %, igual que el resto del consumo en sala: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el acto», sin excluir el alcohol. El 21 % es el tipo GENERAL y, fuera del consumo en el acto, alcanza al alcohol y también a los refrescos y zumos con azúcares o edulcorantes añadidos vendidos para llevar o a domicilio (art. 91.Uno.1.1.º de la misma ley). El libro lo aplica sólo a la parte ALCOHÓLICA de la bebida que sale por el canal de la celda «Ventas por delivery sobre el total»; los refrescos azucarados repartidos irían también al general y el libro no los separa",
+   "donde": [
+    "CAFP · 0. Supuestos!C63"
+   ],
+   "fila": "IVA de la bebida ALCOHÓLICA servida en sala",
+   "valor_us": 0.08,
+   "pistas": [
+    "P03",
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0904",
+   "es": "El convenio PROVINCIAL de hostelería, no el SMI, es el suelo real del sector: cópialo de la tabla salarial de tu provincia. Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "CAFP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0905",
+   "es": "PLAN DE NEGOCIO: CAFETERÍA / BRUNCH",
+   "donde": [
+    "CAFP · Inversión Inicial!A1"
+   ]
+  },
+  {
+   "id": "c0906",
+   "es": "Ajusta las cifras a tu proyecto. Los rangos reflejan mercado español actual.",
+   "donde": [
+    "CAFP · Inversión Inicial!A3"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0907",
+   "es": "SL unipersonal express 3-5 días",
+   "donde": [
+    "CAFP · Inversión Inicial!D7"
+   ],
+   "fila": "Constitución SL + notaría + registro",
+   "valor_us": 1500,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0908",
+   "es": "Licencia de actividad (inocua)",
+   "donde": [
+    "CAFP · Inversión Inicial!A8"
+   ]
+  },
+  {
+   "id": "c0909",
+   "es": "Cafetería sin cocina elaborada = inocua en muchos municipios",
+   "donde": [
+    "CAFP · Inversión Inicial!D8"
+   ],
+   "fila": "Licencia de actividad (inocua)",
+   "valor_us": 2000,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0910",
+   "es": "Proyecto técnico + certificación",
+   "donde": [
+    "CAFP · Inversión Inicial!A9"
+   ]
+  },
+  {
+   "id": "c0911",
+   "es": "Obligatorio si superas los 100 m² o cambias el uso del local. Incluye planos, memoria técnica e instalaciones",
+   "donde": [
+    "CAFP · Inversión Inicial!D9"
+   ],
+   "fila": "Proyecto técnico + certificación",
+   "valor_us": 8000,
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0912",
+   "es": "Obra civil y adecuación local",
+   "donde": [
+    "CAFP · Inversión Inicial!A10"
+   ]
+  },
+  {
+   "id": "c0913",
+   "es": "Suelo, pintura, instalaciones y baño accesible",
+   "donde": [
+    "CAFP · Inversión Inicial!D10"
+   ],
+   "fila": "Obra civil y adecuación local",
+   "valor_us": 40000
+  },
+  {
+   "id": "c0914",
+   "es": "Instalación eléctrica + climatización",
+   "donde": [
+    "CAFP · Inversión Inicial!A11"
+   ]
+  },
+  {
+   "id": "c0915",
+   "es": "Potencia mínima 15-20 kW para equipamiento",
+   "donde": [
+    "CAFP · Inversión Inicial!D11"
+   ],
+   "fila": "Instalación eléctrica + climatización",
+   "valor_us": 15000
+  },
+  {
+   "id": "c0916",
+   "es": "Fontanería + evacuación",
+   "donde": [
+    "CAFP · Inversión Inicial!A12"
+   ]
+  },
+  {
+   "id": "c0917",
+   "es": "Toma de agua, desagüe y trampa de grasas si hay cocina",
+   "donde": [
+    "CAFP · Inversión Inicial!D12"
+   ],
+   "fila": "Fontanería + evacuación",
+   "valor_us": 10000
+  },
+  {
+   "id": "c0918",
+   "es": "Molinillo de café profesional",
+   "donde": [
+    "CAFP · Inversión Inicial!A13"
+   ]
+  },
+  {
+   "id": "c0919",
+   "es": "Molinillo on-demand, fundamental para specialty coffee",
+   "donde": [
+    "CAFP · Inversión Inicial!D13"
+   ],
+   "fila": "Molinillo de café profesional",
+   "valor_us": 3000
+  },
+  {
+   "id": "c0920",
+   "es": "Horno combinado / horno convección",
+   "donde": [
+    "CAFP · Inversión Inicial!A14"
+   ]
+  },
+  {
+   "id": "c0921",
+   "es": "Para bollería, brunch, tostas calientes",
+   "donde": [
+    "CAFP · Inversión Inicial!D14"
+   ],
+   "fila": "Horno combinado / horno convección",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0922",
+   "es": "Vitrina refrigerada exposición",
+   "donde": [
+    "CAFP · Inversión Inicial!A15"
+   ]
+  },
+  {
+   "id": "c0923",
+   "es": "Para sándwiches, tartas y bollería",
+   "donde": [
+    "CAFP · Inversión Inicial!D15"
+   ],
+   "fila": "Vitrina refrigerada exposición",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0924",
+   "es": "Neveras bajo barra + almacén",
+   "donde": [
+    "CAFP · Inversión Inicial!A16"
+   ]
+  },
+  {
+   "id": "c0925",
+   "es": "2-3 unidades bajo barra + 1 armario frigorífico",
+   "donde": [
+    "CAFP · Inversión Inicial!D16"
+   ],
+   "fila": "Neveras bajo barra + almacén",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0926",
+   "es": "Plancha / sandwichera industrial",
+   "donde": [
+    "CAFP · Inversión Inicial!A17"
+   ]
+  },
+  {
+   "id": "c0927",
+   "es": "Para tostas, paninis, huevos brunch",
+   "donde": [
+    "CAFP · Inversión Inicial!D17"
+   ],
+   "fila": "Plancha / sandwichera industrial",
+   "valor_us": 2000
+  },
+  {
+   "id": "c0928",
+   "es": "Batidora, exprimidor, tostadora",
+   "donde": [
+    "CAFP · Inversión Inicial!A18"
+   ]
+  },
+  {
+   "id": "c0929",
+   "es": "Zumos naturales, smoothies, tostadas",
+   "donde": [
+    "CAFP · Inversión Inicial!D18"
+   ],
+   "fila": "Batidora, exprimidor, tostadora",
+   "valor_us": 1500
+  },
+  {
+   "id": "c0930",
+   "es": "Lavavajillas industrial",
+   "donde": [
+    "CAFP · Inversión Inicial!A19"
+   ]
+  },
+  {
+   "id": "c0931",
+   "es": "Ciclo corto 2-3 min, imprescindible en volumen",
+   "donde": [
+    "CAFP · Inversión Inicial!D19"
+   ],
+   "fila": "Lavavajillas industrial",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0932",
+   "es": "Mobiliario sala (mesas + sillas)",
+   "donde": [
+    "CAFP · Inversión Inicial!A20"
+   ]
+  },
+  {
+   "id": "c0933",
+   "es": "12-15 mesas, 30-40 plazas interior",
+   "donde": [
+    "CAFP · Inversión Inicial!D20"
+   ],
+   "fila": "Mobiliario sala (mesas + sillas)",
+   "valor_us": 10000
+  },
+  {
+   "id": "c0934",
+   "es": "Barra y mostrador expositor",
+   "donde": [
+    "CAFP · Inversión Inicial!A21"
+   ]
+  },
+  {
+   "id": "c0935",
+   "es": "Barra en L o recta, mostrador pasteles/bocadillos",
+   "donde": [
+    "CAFP · Inversión Inicial!D21"
+   ],
+   "fila": "Barra y mostrador expositor",
+   "valor_us": 12000
+  },
+  {
+   "id": "c0936",
+   "es": "Terraza (mobiliario + toldo)",
+   "donde": [
+    "CAFP · Inversión Inicial!A22"
+   ]
+  },
+  {
+   "id": "c0937",
+   "es": "8-10 mesas exterior si hay licencia",
+   "donde": [
+    "CAFP · Inversión Inicial!D22"
+   ],
+   "fila": "Terraza (mobiliario + toldo)",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0938",
+   "es": "Vajilla, cristalería, cubertería",
+   "donde": [
+    "CAFP · Inversión Inicial!A23"
+   ]
+  },
+  {
+   "id": "c0939",
+   "es": "Tazas specialty, platos brunch, clientes",
+   "donde": [
+    "CAFP · Inversión Inicial!D23"
+   ],
+   "fila": "Vajilla, cristalería, cubertería",
+   "valor_us": 3000,
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0940",
+   "es": "Decoración + iluminación",
+   "donde": [
+    "CAFP · Inversión Inicial!A24"
+   ]
+  },
+  {
+   "id": "c0941",
+   "es": "Iluminación cálida, plantas y un estilo cuidado para las fotos",
+   "donde": [
+    "CAFP · Inversión Inicial!D24"
+   ],
+   "fila": "Decoración + iluminación",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0942",
+   "es": "Rotulación + imagen exterior",
+   "donde": [
+    "CAFP · Inversión Inicial!A25"
+   ]
+  },
+  {
+   "id": "c0943",
+   "es": "Rótulo, pizarra y vinilo de escaparate",
+   "donde": [
+    "CAFP · Inversión Inicial!D25"
+   ],
+   "fila": "Rotulación + imagen exterior",
+   "valor_us": 4000
+  },
+  {
+   "id": "c0944",
+   "es": "Marketing lanzamiento (web + RRSS + Google)",
+   "donde": [
+    "CAFP · Inversión Inicial!A26"
+   ],
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0945",
+   "es": "Web, ficha Google, RRSS, flyers zona",
+   "donde": [
+    "CAFP · Inversión Inicial!D26"
+   ],
+   "fila": "Marketing lanzamiento (web + RRSS + Google)",
+   "valor_us": 4000,
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0946",
+   "es": "Stock inicial (café, leche, bollería, etc.)",
+   "donde": [
+    "CAFP · Inversión Inicial!A27"
+   ]
+  },
+  {
+   "id": "c0947",
+   "es": "Café specialty, leches vegetales, ingredientes brunch",
+   "donde": [
+    "CAFP · Inversión Inicial!D27"
+   ],
+   "fila": "Stock inicial (café, leche, bollería, etc.)",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0948",
+   "es": "Máquina de café espresso profesional",
+   "donde": [
+    "CAFP · Inversión Inicial!A28"
+   ]
+  },
+  {
+   "id": "c0949",
+   "es": "2 grupos, molinillo integrado o separado",
+   "donde": [
+    "CAFP · Inversión Inicial!D28"
+   ],
+   "fila": "Máquina de café espresso profesional",
+   "valor_us": 15000
+  },
+  {
+   "id": "c0950",
+   "es": "TPV + software gestión",
+   "donde": [
+    "CAFP · Inversión Inicial!A29"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0951",
+   "es": "TPV táctil con software de control de caja y stock",
+   "donde": [
+    "CAFP · Inversión Inicial!D29"
+   ],
+   "fila": "TPV + software gestión",
+   "valor_us": 3000,
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0952",
+   "es": "Escenario realista — Cafetería/Brunch 35-40 plazas",
+   "donde": [
+    "CAFP · PyG 3 Años!A2"
+   ]
+  },
+  {
+   "id": "c0953",
+   "es": "Ventas de comida (brunch, bollería, tostas y otros)",
+   "donde": [
+    "CAFP · PyG 3 Años!A10"
+   ]
+  },
+  {
+   "id": "c0954",
+   "es": "Brunch de fin de semana, bollería y tostas del servicio de mañana, más ventas menores de temporada (take-away extra, catering mini, merchandising)",
+   "donde": [
+    "CAFP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de comida (brunch, bollería, tostas y otros)"
+  },
+  {
+   "id": "c0955",
+   "es": "Ventas de bebida (café, bebidas calientes y frías)",
+   "donde": [
+    "CAFP · PyG 3 Años!A11"
+   ]
+  },
+  {
+   "id": "c0956",
+   "es": "Espresso, cafés con leche, tés e infusiones de barra, más zumos naturales y smoothies, que son los de coste más alto por trabajar con producto fresco",
+   "donde": [
+    "CAFP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de bebida (café, bebidas calientes y frías)"
+  },
+  {
+   "id": "c0957",
+   "es": "Alquiler del local",
+   "donde": [
+    "CAFP · PyG 3 Años!A22"
+   ]
+  },
+  {
+   "id": "c0958",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. La renta de los meses de obra, que es anterior a la apertura, está en la hoja de Inversión y NO se cuenta dos veces",
+   "donde": [
+    "CAFP · PyG 3 Años!F22"
+   ],
+   "fila": "Alquiler del local"
+  },
+  {
+   "id": "c0959",
+   "es": "Luz y gas van al 21 %; la factura del agua, al 10 %. El libro aplica a toda esta partida el tipo de la columna de al lado (21 %): si el agua pesa mucho en tu local, sepárala en su línea",
+   "donde": [
+    "CAFP · PyG 3 Años!F24"
+   ],
+   "fila": "Suministros (luz, agua, gas)"
+  },
+  {
+   "id": "c0960",
+   "es": "Mantenimiento maquinaria",
+   "donde": [
+    "CAFP · PyG 3 Años!A27"
+   ]
+  },
+  {
+   "id": "c0961",
+   "es": "Software (TPV, web, delivery)",
+   "donde": [
+    "CAFP · PyG 3 Años!A29"
+   ],
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0962",
+   "es": "Gestión de residuos (orgánico, cartón y aceite si fríes)",
+   "donde": [
+    "CAFP · PyG 3 Años!A31"
+   ]
+  },
+  {
+   "id": "c0963",
+   "es": "Gestor autorizado; el checklist lo pide antes de abrir. Esta cafetería NO lleva cocina de frituras (licencia «inocua»), así que el volumen es menor que en un restaurante — pide presupuesto en tu zona",
+   "donde": [
+    "CAFP · PyG 3 Años!F31"
+   ],
+   "fila": "Gestión de residuos (orgánico, cartón y aceite si fríes)",
+   "valor_us": 1200,
+   "pistas": [
+    "P03",
+    "P14",
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0964",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC que el checklist ya exige",
+   "donde": [
+    "CAFP · PyG 3 Años!F32"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 800,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0965",
+   "es": "Derechos de autor por música ambiental",
+   "donde": [
+    "CAFP · PyG 3 Años!A33"
+   ],
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0966",
+   "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo de tu local",
+   "donde": [
+    "CAFP · PyG 3 Años!F33"
+   ],
+   "fila": "Derechos de autor por música ambiental",
+   "valor_us": 600,
+   "pistas": [
+    "P03",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0967",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995) — el checklist lo corrige",
+   "donde": [
+    "CAFP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 500,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0968",
+   "es": "Suelo del propio libro: «Margen bruto objetivo: > 65 %» en la tabla de referencias del sector",
+   "donde": [
+    "CAFP · PyG 3 Años!F50"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0969",
+   "es": "Techo de la franja alta que publica este producto: «Food cost comida brunch: 30-35 %», mezclado con el café (25-30 %) y las bebidas frías (28-32 %)",
+   "donde": [
+    "CAFP · PyG 3 Años!F52"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.35,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0970",
+   "es": "Techo MÁS ESTRICTO del rango que publica este producto: «Coste de personal sobre ventas: 35-40 %»",
+   "donde": [
+    "CAFP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.35,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0971",
+   "es": "Alquiler / Ventas",
+   "donde": [
+    "CAFP · PyG 3 Años!A54",
+    "CAFP · Instrucciones!A21"
+   ]
+  },
+  {
+   "id": "c0972",
+   "es": "Techo del propio libro: «Alquiler sobre ventas: 8-12 %, no superar el 12 % para ser viable»",
+   "donde": [
+    "CAFP · PyG 3 Años!F54"
+   ],
+   "fila": "Alquiler / Ventas",
+   "valor_us": 0.12,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0973",
+   "es": "Derivado del suelo de EBITDA que declara este producto para el año 2 («EBITDA objetivo: 8-15 %, el primer año puede ser negativo»): descontando amortización, intereses e Impuesto de Sociedades, un EBITDA en la franja baja deja un resultado neto en torno al 5 %",
+   "donde": [
+    "CAFP · PyG 3 Años!F55"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.06,
+   "pistas": [
+    "P03",
+    "P16",
+    "P17",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0974",
+   "es": "Break-even mensual y diario — Cafetería / Brunch",
+   "donde": [
+    "CAFP · Punto Equilibrio!A2"
+   ]
+  },
+  {
+   "id": "c0975",
+   "es": "Rotaciones al día que da el local como máximo",
+   "donde": [
+    "CAFP · Punto Equilibrio!A25"
+   ]
+  },
+  {
+   "id": "c0976",
+   "es": "Servicios completos por plaza y día que puedes llegar a hacer con tu horario. Es el techo físico del local, no un objetivo",
+   "donde": [
+    "CAFP · Punto Equilibrio!E25"
+   ],
+   "fila": "Rotaciones al día que da el local como máximo"
+  },
+  {
+   "id": "c0977",
+   "es": "Rotaciones al día que exige el equilibrio de caja",
+   "donde": [
+    "CAFP · Punto Equilibrio!A26"
+   ]
+  },
+  {
+   "id": "c0978",
+   "es": "Clientes de equilibrio entre las plazas que declara la hoja de Supuestos. Por encima del techo de arriba, el punto de equilibrio está fuera del alcance del local",
+   "donde": [
+    "CAFP · Punto Equilibrio!E26"
+   ],
+   "fila": "Rotaciones al día que exige el equilibrio de caja",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0979",
+   "es": "Pesimista / Realista / Optimista — Año 1",
+   "donde": [
+    "CAFP · Escenarios!A2"
+   ]
+  },
+  {
+   "id": "c0980",
+   "es": "Propietario/a y barista principal",
+   "donde": [
+    "CAFP · Personal!A5"
+   ]
+  },
+  {
+   "id": "c0981",
+   "es": "Trabaja en barra en el turno fuerte de mañana: compras, caja, proveedores y redes sociales",
+   "donde": [
+    "CAFP · Personal!J5"
+   ],
+   "fila": "Propietario/a y barista principal",
+   "valor_us": {
+    "C": 1.0,
+    "D": 3500
+   }
+  },
+  {
+   "id": "c0982",
+   "es": "Barista / camarero de sala (turno de mañana)",
+   "donde": [
+    "CAFP · Personal!A6"
+   ]
+  },
+  {
+   "id": "c0983",
+   "es": "Especialista en café y latte art. La mañana es el turno más fuerte de una cafetería: café de barra, desayunos y bollería",
+   "donde": [
+    "CAFP · Personal!J6"
+   ],
+   "fila": "Barista / camarero de sala (turno de mañana)",
+   "valor_us": {
+    "C": 1.0,
+    "D": 2773
+   },
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0984",
+   "es": "Camarero/a de barra y sala (turno de tarde)",
+   "donde": [
+    "CAFP · Personal!A7"
+   ]
+  },
+  {
+   "id": "c0985",
+   "es": "Cierra el servicio de tarde y prepara la mise en place del día siguiente. Sin este puesto el local no puede abrir las 13 horas que declara este mismo libro",
+   "donde": [
+    "CAFP · Personal!J7"
+   ],
+   "fila": "Camarero/a de barra y sala (turno de tarde)",
+   "valor_us": {
+    "C": 1.0,
+    "D": 2600
+   }
+  },
+  {
+   "id": "c0986",
+   "es": "Ayudante de brunch de fin de semana",
+   "donde": [
+    "CAFP · Personal!A8"
+   ]
+  },
+  {
+   "id": "c0987",
+   "es": "Cocina ligera del brunch: sábado y domingo, el servicio con más demanda, con dos o tres turnos de mesa",
+   "donde": [
+    "CAFP · Personal!J8"
+   ],
+   "fila": "Ayudante de brunch de fin de semana",
+   "valor_us": {
+    "C": 0.8,
+    "D": 2496
+   }
+  },
+  {
+   "id": "c0988",
+   "es": "Extra de fin de semana (barra y sala)",
+   "donde": [
+    "CAFP · Personal!A9"
+   ]
+  },
+  {
+   "id": "c0989",
+   "es": "Refuerzo de los picos de sábado y domingo, cuando la ocupación sube al 70-90 % según las referencias de este mismo libro",
+   "donde": [
+    "CAFP · Personal!J9"
+   ],
+   "fila": "Extra de fin de semana (barra y sala)",
+   "valor_us": {
+    "C": 0.45,
+    "D": 1170
+   }
+  },
+  {
+   "id": "c0990",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo",
+   "donde": [
+    "CAFP · Personal!J10"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "C": 0.1,
+    "D": 260
+   },
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0991",
+   "es": "De la apertura al cierre, barra incluida. Cuéntalas sobre tu horario real",
+   "donde": [
+    "CAFP · Personal!J20"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir"
+  },
+  {
+   "id": "c0992",
+   "es": "Media de presencia simultánea entre cocina, barra y sala. En los dos servicios fuertes hará falta más y a media tarde menos",
+   "donde": [
+    "CAFP · Personal!J21"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja"
+  },
+  {
+   "id": "c0993",
+   "es": "INSTRUCCIONES DE USO — Plan financiero Cafetería / Brunch",
+   "donde": [
+    "CAFP · Instrucciones!A1"
+   ]
+  },
+  {
+   "id": "c0994",
+   "es": "3. En «Punto Equilibrio» sólo se teclea el techo de rotaciones que da tu local; todo lo demás se deriva de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+   "donde": [
+    "CAFP · Instrucciones!A7"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Punto Equilibrio",
+     "en": "Break-Even"
+    },
+    {
+     "es": "Escenarios",
+     "en": "Scenarios"
+    },
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    },
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0995",
+   "es": "8. En este libro llamamos «el P&L» a la hoja «PyG 3 Años»: es la misma cuenta de resultados, con una columna por cada uno de los tres años.",
+   "donde": [
+    "CAFP · Instrucciones!A12"
+   ],
+   "cita_hojas": [
+    {
+     "es": "PyG 3 Años",
+     "en": "3-Year P&L"
+    }
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0996",
+   "es": "9. El documento de Word que acompaña a este plan financiero es todavía el de la versión 1.1: las cifras válidas son las de este Excel.",
+   "donde": [
+    "CAFP · Instrucciones!A13"
+   ],
+   "pistas": [
+    "P05",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0997",
+   "es": "Coste de personal en la cuenta de resultados",
+   "donde": [
+    "CAFP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0998",
+   "es": "72.000 € tecleados",
+   "donde": [
+    "CAFP · Instrucciones!B36"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0999",
+   "es": "El que suma la hoja de Personal, por fórmula",
+   "donde": [
+    "CAFP · Instrucciones!C36"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1000",
+   "es": "La cuenta de resultados usaba una cifra distinta de la de su propia hoja de personal, que sumaba 137.270 €. Ahora las dos dicen lo mismo, y si cambias un sueldo el resultado cambia solo.",
+   "donde": [
+    "CAFP · Instrucciones!D36"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1001",
+   "es": "Plantilla",
+   "donde": [
+    "CAFP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1002",
+   "es": "5 puestos · 137.270 € al año",
+   "donde": [
+    "CAFP · Instrucciones!B37"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1003",
+   "es": "6 puestos (tres a jornada parcial) · 100.083 € al año",
+   "donde": [
+    "CAFP · Instrucciones!C37"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1004",
+   "es": "Dimensionada por las horas de servicio que declara este mismo libro. Con la anterior, el personal se comía el 72 % de las ventas; con ésta se queda en el 34 %, por debajo del techo del 35 % que publica este producto.",
+   "donde": [
+    "CAFP · Instrucciones!D37"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1005",
+   "es": "Sueldos de la plantilla de ejemplo",
+   "donde": [
+    "CAFP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1006",
+   "es": "Sin ninguna comprobación frente al salario mínimo",
+   "donde": [
+    "CAFP · Instrucciones!B38"
+   ],
+   "fila": "Sueldos de la plantilla de ejemplo",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1007",
+   "es": "Todos igualan o superan el SMI de 2026 (17.094 € al año) en proporción a su jornada",
+   "donde": [
+    "CAFP · Instrucciones!C38"
+   ],
+   "fila": "Sueldos de la plantilla de ejemplo",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P08",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1008",
+   "es": "La hoja de Personal lo comprueba fila a fila y avisa en rojo si bajas de ese suelo. Un libro que propone sueldos por debajo del mínimo legal no se puede enseñar en el banco.",
+   "donde": [
+    "CAFP · Instrucciones!D38"
+   ],
+   "fila": "Sueldos de la plantilla de ejemplo",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P09"
+   ]
+  },
+  {
+   "id": "c1009",
+   "es": "Cobertura del horario",
+   "donde": [
+    "CAFP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1010",
+   "es": "La hoja no relacionaba la plantilla con las horas de apertura",
+   "donde": [
+    "CAFP · Instrucciones!B39"
+   ],
+   "fila": "Cobertura del horario",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1011",
+   "es": "La plantilla cubre el 100 % de las horas de servicio declaradas",
+   "donde": [
+    "CAFP · Instrucciones!C39"
+   ],
+   "fila": "Cobertura del horario",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1012",
+   "es": "Con 13 horas de apertura y dos personas a la vez hacen falta 7.800 horas al año. Ahora el libro las cuenta y avisa en rojo si la plantilla no llega a cubrirlas.",
+   "donde": [
+    "CAFP · Instrucciones!D39"
+   ],
+   "fila": "Cobertura del horario",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1013",
+   "es": "Clientes al día",
+   "donde": [
+    "CAFP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1014",
+   "es": "67 (deducidos de la facturación objetivo)",
+   "donde": [
+    "CAFP · Instrucciones!B40"
+   ],
+   "fila": "Clientes al día",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1015",
+   "es": "100",
+   "donde": [
+    "CAFP · Instrucciones!C40"
+   ],
+   "fila": "Clientes al día",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1016",
+   "es": "Está dentro del rango de 80 a 150 clientes al día que este mismo libro publica para una cafetería urbana, y son 2,2 servicios por plaza y día sobre las 45 plazas del local.",
+   "donde": [
+    "CAFP · Instrucciones!D40"
+   ],
+   "fila": "Clientes al día",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P01",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1017",
+   "es": "Ticket medio",
+   "donde": [
+    "CAFP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1018",
+   "es": "9,50 € (sin decir si llevaba IVA)",
+   "donde": [
+    "CAFP · Instrucciones!B41"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P08",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1019",
+   "es": "9,80 € SIN IVA, que son 10,78 € de PVP",
+   "donde": [
+    "CAFP · Instrucciones!C41"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P08",
+    "P04",
+    "P01",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1020",
+   "es": "Ahora se declara sin IVA y la hoja de Supuestos calcula el precio de carta equivalente. Sigue dentro del rango de 8 a 12 € de ticket medio combinado que publica este producto.",
+   "donde": [
+    "CAFP · Instrucciones!D41"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P08",
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1021",
+   "es": "Alquiler",
+   "donde": [
+    "CAFP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1022",
+   "es": "2.000 € al mes",
+   "donde": [
+    "CAFP · Instrucciones!B42"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1023",
+   "es": "2.000 € al mes (sin cambio)",
+   "donde": [
+    "CAFP · Instrucciones!C42"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1024",
+   "es": "Con el caso base recalibrado son el 8,2 % de las ventas, en la parte baja del 8-12 % que este mismo libro fija como límite de viabilidad.",
+   "donde": [
+    "CAFP · Instrucciones!D42"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1025",
+   "es": "Calendario de apertura",
+   "donde": [
+    "CAFP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1026",
+   "es": "Dos calendarios distintos en el mismo libro: 30 días al mes en el punto de equilibrio y 300-310 días al año en los escenarios",
+   "donde": [
+    "CAFP · Instrucciones!B43"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1027",
+   "es": "300 días al año, un único dato en la hoja de Supuestos",
+   "donde": [
+    "CAFP · Instrucciones!C43"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1028",
+   "es": "El punto de equilibrio diario salía casi un 20 % por debajo del que corresponde a los días que el propio libro declaraba abrir.",
+   "donde": [
+    "CAFP · Instrucciones!D43"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1029",
+   "es": "Fondo de maniobra",
+   "donde": [
+    "CAFP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1030",
+   "es": "9.000 € etiquetados «3 meses»",
+   "donde": [
+    "CAFP · Instrucciones!B44"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08",
+    "P02"
+   ]
+  },
+  {
+   "id": "c1031",
+   "es": "3 meses de costes fijos de caja, por fórmula (38.526 €)",
+   "donde": [
+    "CAFP · Instrucciones!C44"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1032",
+   "es": "Los 9.000 € cubrían menos de un mes de costes fijos, no tres. Ahora se recalcula solo cuando cambias cualquier gasto.",
+   "donde": [
+    "CAFP · Instrucciones!D44"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1033",
+   "es": "Amortización",
+   "donde": [
+    "CAFP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P17"
+   ]
+  },
+  {
+   "id": "c1034",
+   "es": "9.490 € al año, a 10 años planos sobre TODA la inversión (fondo de maniobra y stock incluidos)",
+   "donde": [
+    "CAFP · Instrucciones!B45"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1035",
+   "es": "Sólo sobre la obra y la maquinaria, cada una con su vida útil",
+   "donde": [
+    "CAFP · Instrucciones!C45"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1036",
+   "es": "El colchón de caja, las existencias, la fianza, la renta de los meses de obra y los gastos de constitución, licencias y lanzamiento no son inmovilizado: amortizarlos inflaba el gasto y falseaba el impuesto. Los imprevistos de obra sí se amortizan, porque forman parte del coste de la reforma.",
+   "donde": [
+    "CAFP · Instrucciones!D45"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1037",
+   "es": "Imprevistos de obra",
+   "donde": [
+    "CAFP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1038",
+   "es": "7.000 € (un 8 % escrito dentro del rótulo)",
+   "donde": [
+    "CAFP · Instrucciones!B46"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1039",
+   "es": "Por fórmula sobre las partidas de obra, con el porcentaje en Supuestos",
+   "donde": [
+    "CAFP · Instrucciones!C46"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1040",
+   "es": "Un porcentaje escondido en un rótulo deja de ser verdad al cambiar una sola partida, y aquí ya no cuadraba: eran el 6,7 %.",
+   "donde": [
+    "CAFP · Instrucciones!D46"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1041",
+   "es": "Impuesto de Sociedades",
+   "donde": [
+    "CAFP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1042",
+   "es": "25 % en los años 2 y 3, sin compensar las pérdidas del año 1",
+   "donde": [
+    "CAFP · Instrucciones!B47"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1043",
+   "es": "15 % en los dos primeros ejercicios con beneficio y compensación de las pérdidas anteriores",
+   "donde": [
+    "CAFP · Instrucciones!C47"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1044",
+   "es": "Es el tipo de entidad de nueva creación de los artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades.",
+   "donde": [
+    "CAFP · Instrucciones!D47"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P16",
+    "P09"
+   ]
+  },
+  {
+   "id": "c1045",
+   "es": "Plan de financiación",
+   "donde": [
+    "CAFP · Instrucciones!A48"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1046",
+   "es": "No existía",
+   "donde": [
+    "CAFP · Instrucciones!B48"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1047",
+   "es": "Hoja «Financiación»: origen de fondos, usos y cuadro de amortización francés",
+   "donde": [
+    "CAFP · Instrucciones!C48"
+   ],
+   "fila": "Plan de financiación",
+   "cita_hojas": [
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P17",
+    "P02"
+   ]
+  },
+  {
+   "id": "c1048",
+   "es": "La ficha del producto lo prometía y ningún fichero lo traía. Ahora el libro comprueba solo si el dinero que entra cubre lo que hay que poner sobre la mesa.",
+   "donde": [
+    "CAFP · Instrucciones!D48"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1049",
+   "es": "Tesorería mes a mes",
+   "donde": [
+    "CAFP · Instrucciones!A49"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1050",
+   "es": "No existía",
+   "donde": [
+    "CAFP · Instrucciones!B49"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1051",
+   "es": "Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo acumulado",
+   "donde": [
+    "CAFP · Instrucciones!C49"
+   ],
+   "fila": "Tesorería mes a mes",
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P03",
+    "P21",
+    "P02"
+   ]
+  },
+  {
+   "id": "c1052",
+   "es": "Es la hoja que responde a la pregunta que decide una operación bancaria: en qué mes se agota la caja.",
+   "donde": [
+    "CAFP · Instrucciones!D49"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1053",
+   "es": "Financiación solicitada",
+   "donde": [
+    "CAFP · Instrucciones!A50"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1054",
+   "es": "(no había hoja que la cuadrara)",
+   "donde": [
+    "CAFP · Instrucciones!B50"
+   ],
+   "fila": "Financiación solicitada",
+   "por_celda": true,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c1055",
+   "es": "40.000 € de recursos propios y 112.000 € de préstamo",
+   "donde": [
+    "CAFP · Instrucciones!C50"
+   ],
+   "fila": "Financiación solicitada",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08",
+    "P09"
+   ]
+  },
+  {
+   "id": "c1056",
+   "es": "Cubren los 147.868 € de necesidad de caja que calcula este mismo libro, con 4.132 € de margen: un 2,8 %, por debajo del 5 % que el propio libro admite como exceso sano. Pedir más es pagar intereses por un dinero que no se usa, y la hoja de Financiación calcula el importe exacto que pondría esa diferencia a cero.",
+   "donde": [
+    "CAFP · Instrucciones!D50"
+   ],
+   "fila": "Financiación solicitada",
+   "por_celda": true,
+   "pistas": [
+    "P19",
+    "P08",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1057",
+   "es": "Food cost café",
+   "donde": [
+    "CAFP · Instrucciones!A54"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1058",
+   "es": "25-30 %",
+   "donde": [
+    "CAFP · Instrucciones!B54"
+   ],
+   "fila": "Food cost café",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1059",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C54"
+   ],
+   "fila": "Food cost café",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1060",
+   "es": "El café specialty puede llegar al 20 % con un buen proveedor",
+   "donde": [
+    "CAFP · Instrucciones!D54"
+   ],
+   "fila": "Food cost café",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1061",
+   "es": "Food cost comida brunch",
+   "donde": [
+    "CAFP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1062",
+   "es": "30-35 %",
+   "donde": [
+    "CAFP · Instrucciones!B55"
+   ],
+   "fila": "Food cost comida brunch",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1063",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C55"
+   ],
+   "fila": "Food cost comida brunch",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1064",
+   "es": "El control de porciones y de mermas es lo que lo decide",
+   "donde": [
+    "CAFP · Instrucciones!D55"
+   ],
+   "fila": "Food cost comida brunch",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1065",
+   "es": "Food cost bebidas frías",
+   "donde": [
+    "CAFP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1066",
+   "es": "28-32 %",
+   "donde": [
+    "CAFP · Instrucciones!B56"
+   ],
+   "fila": "Food cost bebidas frías",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1067",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C56"
+   ],
+   "fila": "Food cost bebidas frías",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1068",
+   "es": "Zumos y smoothies: coste alto por trabajar con producto fresco",
+   "donde": [
+    "CAFP · Instrucciones!D56"
+   ],
+   "fila": "Food cost bebidas frías",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1069",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "CAFP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1070",
+   "es": "35-40 %",
+   "donde": [
+    "CAFP · Instrucciones!B57"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1071",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C57"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1072",
+   "es": "Se aplica el más estricto de los dos extremos que publica este producto",
+   "donde": [
+    "CAFP · Instrucciones!D57"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1073",
+   "es": "Alquiler sobre ventas",
+   "donde": [
+    "CAFP · Instrucciones!A58"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1074",
+   "es": "8-12 %",
+   "donde": [
+    "CAFP · Instrucciones!B58"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1075",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C58"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1076",
+   "es": "No superar el 12 % para ser viable",
+   "donde": [
+    "CAFP · Instrucciones!D58"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1077",
+   "es": "Ticket medio café/desayuno",
+   "donde": [
+    "CAFP · Instrucciones!A59"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1078",
+   "es": "4-6 €",
+   "donde": [
+    "CAFP · Instrucciones!B59"
+   ],
+   "fila": "Ticket medio café/desayuno",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1079",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C59"
+   ],
+   "fila": "Ticket medio café/desayuno",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1080",
+   "es": "Sólo café y bollería básica",
+   "donde": [
+    "CAFP · Instrucciones!D59"
+   ],
+   "fila": "Ticket medio café/desayuno",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1081",
+   "es": "Ticket medio brunch completo",
+   "donde": [
+    "CAFP · Instrucciones!A60"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1082",
+   "es": "14-20 €",
+   "donde": [
+    "CAFP · Instrucciones!B60"
+   ],
+   "fila": "Ticket medio brunch completo",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1083",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C60"
+   ],
+   "fila": "Ticket medio brunch completo",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1084",
+   "es": "Plato principal, bebida y postre o café",
+   "donde": [
+    "CAFP · Instrucciones!D60"
+   ],
+   "fila": "Ticket medio brunch completo",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1085",
+   "es": "Ticket medio combinado",
+   "donde": [
+    "CAFP · Instrucciones!A61"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1086",
+   "es": "8-12 €",
+   "donde": [
+    "CAFP · Instrucciones!B61"
+   ],
+   "fila": "Ticket medio combinado",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1087",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C61"
+   ],
+   "fila": "Ticket medio combinado",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1088",
+   "es": "Media ponderada de todos los servicios. El ticket SIN IVA de esta previsión y su PVP equivalente los calcula la hoja 0. Supuestos",
+   "donde": [
+    "CAFP · Instrucciones!D61"
+   ],
+   "fila": "Ticket medio combinado",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P03",
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1089",
+   "es": "Clientes/día (cafetería urbana)",
+   "donde": [
+    "CAFP · Instrucciones!A62"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1090",
+   "es": "80-150",
+   "donde": [
+    "CAFP · Instrucciones!B62"
+   ],
+   "fila": "Clientes/día (cafetería urbana)",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1091",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C62"
+   ],
+   "fila": "Clientes/día (cafetería urbana)",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1092",
+   "es": "Depende mucho de la ubicación y del paso de gente",
+   "donde": [
+    "CAFP · Instrucciones!D62"
+   ],
+   "fila": "Clientes/día (cafetería urbana)",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1093",
+   "es": "Ocupación media entre semana",
+   "donde": [
+    "CAFP · Instrucciones!A63"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1094",
+   "es": "40-60 %",
+   "donde": [
+    "CAFP · Instrucciones!B63"
+   ],
+   "fila": "Ocupación media entre semana",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1095",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C63"
+   ],
+   "fila": "Ocupación media entre semana",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1096",
+   "es": "La mañana es el pico; la tarde, el turno más flojo",
+   "donde": [
+    "CAFP · Instrucciones!D63"
+   ],
+   "fila": "Ocupación media entre semana",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1097",
+   "es": "Ocupación media el fin de semana",
+   "donde": [
+    "CAFP · Instrucciones!A64"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1098",
+   "es": "70-90 %",
+   "donde": [
+    "CAFP · Instrucciones!B64"
+   ],
+   "fila": "Ocupación media el fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1099",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C64"
+   ],
+   "fila": "Ocupación media el fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1100",
+   "es": "Es lo que justifica el refuerzo de sábado y domingo de la hoja de Personal",
+   "donde": [
+    "CAFP · Instrucciones!D64"
+   ],
+   "fila": "Ocupación media el fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1101",
+   "es": "Rotación de mesa en el brunch de fin de semana",
+   "donde": [
+    "CAFP · Instrucciones!A65"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1102",
+   "es": "2-3 turnos",
+   "donde": [
+    "CAFP · Instrucciones!B65"
+   ],
+   "fila": "Rotación de mesa en el brunch de fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1103",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C65"
+   ],
+   "fila": "Rotación de mesa en el brunch de fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1104",
+   "es": "Con 45 plazas es la referencia que sostiene los clientes/día del caso base",
+   "donde": [
+    "CAFP · Instrucciones!D65"
+   ],
+   "fila": "Rotación de mesa en el brunch de fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1105",
+   "es": "Margen bruto objetivo",
+   "donde": [
+    "CAFP · Instrucciones!A66"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1106",
+   "es": "> 65 %",
+   "donde": [
+    "CAFP · Instrucciones!B66"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1107",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C66"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1108",
+   "es": "EBITDA objetivo (año 2)",
+   "donde": [
+    "CAFP · Instrucciones!A67"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1109",
+   "es": "8-15 %",
+   "donde": [
+    "CAFP · Instrucciones!B67"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1110",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C67"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1111",
+   "es": "El primer año puede ser negativo: es normal en hostelería. Este caso base queda POR ENCIMA del techo del rango los tres años, porque el coste de personal se ha ajustado justo por debajo de su techo y el propietario sólo cobra su nómina. Lo calculas restando al margen bruto los costes fijos sin la amortización ni los intereses; si añades retribución del socio o más plantilla, vuelve al rango",
+   "donde": [
+    "CAFP · Instrucciones!D67"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P17"
+   ]
+  },
+  {
+   "id": "c1112",
+   "es": "Retorno de la inversión",
+   "donde": [
+    "CAFP · Instrucciones!A68"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1113",
+   "es": "24-36 meses",
+   "donde": [
+    "CAFP · Instrucciones!B68"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1114",
+   "es": "Fichero v1.1",
+   "donde": [
+    "CAFP · Instrucciones!C68"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1115",
+   "es": "Es una referencia del sector medida sobre lo que pone el emprendedor. La hoja de Tesorería publica el payback del PROYECTO: antes de pagar al banco y sobre la inversión sin el IVA, que se recupera con el modelo 303. Compara esa celda con este rango. Si quieres el retorno de TU dinero, divide los recursos propios entre el flujo de caja libre de esa misma hoja",
+   "donde": [
+    "CAFP · Instrucciones!D68"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P03",
+    "P21",
+    "P09",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1116",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "CAFP · Instrucciones!A69"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1117",
+   "es": "PROVINCIAL de hostelería",
+   "donde": [
+    "CAFP · Instrucciones!B69"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1118",
+   "es": "Fichero v1.1 y checklist de apertura",
+   "donde": [
+    "CAFP · Instrucciones!C69"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1119",
+   "es": "No existe una tabla salarial estatal única: copia la tabla de tu provincia en la celda de Supuestos",
+   "donde": [
+    "CAFP · Instrucciones!D69"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1120",
+   "es": "Salario mínimo interprofesional 2026",
+   "donde": [
+    "CAFP · Instrucciones!A70"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c1121",
+   "es": "17.094 €/año",
+   "donde": [
+    "CAFP · Instrucciones!B70"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1122",
+   "es": "BOE (comprueba el Real Decreto vigente)",
+   "donde": [
+    "CAFP · Instrucciones!C70"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P03",
+    "P23"
+   ]
+  },
+  {
+   "id": "c1123",
+   "es": "Suelo legal a jornada completa en 14 pagas. Las jornadas parciales lo llevan en proporción; el semáforo de la hoja de Personal lo comprueba fila a fila. Si presentas el plan en otro ejercicio, actualiza el importe con el Real Decreto en vigor",
+   "donde": [
+    "CAFP · Instrucciones!D70"
+   ],
+   "fila": "Salario mínimo interprofesional 2026",
+   "por_celda": true,
+   "pistas": [
+    "P22",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1128",
+   "es": "CHECKLIST APERTURA — CAFETERÍA / BRUNCH",
+   "donde": [
+    "CAFC · F1 - Constitución!A1",
+    "CAFC · F2 - Local!A1",
+    "CAFC · F3 - Equipamiento!A1",
+    "CAFC · F4 - Personal!A1",
+    "CAFC · F5 - Marketing!A1",
+    "CAFC · F6 - 90 Días!A1"
+   ]
+  },
+  {
+   "id": "c1129",
+   "es": "FASE 1: CONSTITUCIÓN Y TRÁMITES LEGALES",
+   "donde": [
+    "CAFC · F1 - Constitución!A2"
+   ]
+  },
+  {
+   "id": "c1130",
+   "es": "Elegir forma jurídica (SL, autónomo)",
+   "donde": [
+    "CAFC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1131",
+   "es": "SL unipersonal recomendada por responsabilidad limitada",
+   "donde": [
+    "CAFC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1132",
+   "es": "Constitución SL ante notario",
+   "donde": [
+    "CAFC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1133",
+   "es": "Notario",
+   "donde": [
+    "CAFC · F1 - Constitución!C6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1134",
+   "es": "Capital social mínimo de 1 € (Ley 18/2022, Crea y Crece): hay que destinar el 20 % del beneficio a reserva legal hasta que el capital y la reserva sumen 3.000 €, y los socios responden solidariamente de esa diferencia",
+   "donde": [
+    "CAFC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1135",
+   "es": "Inscripción en Registro Mercantil",
+   "donde": [
+    "CAFC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1136",
+   "es": "3-7 días",
+   "donde": [
+    "CAFC · F1 - Constitución!D7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1137",
+   "es": "Solicitar CIF provisional mientras se tramita",
+   "donde": [
+    "CAFC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1138",
+   "es": "Alta en Hacienda: modelo 036/037",
+   "donde": [
+    "CAFC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1139",
+   "es": "Epígrafe IAE: Grupo 672 (Cafeterías, por categoría 672.1/672.2/672.3 según el servicio) o 673.2 (Otros cafés y bares; el 673.1 es el de categoría especial) si no hay servicio de mesa; el 671 es de restaurantes",
+   "donde": [
+    "CAFC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1140",
+   "es": "Alta en Seguridad Social (autónomo + empresa)",
+   "donde": [
+    "CAFC · F1 - Constitución!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1141",
+   "es": "Apertura cuenta bancaria empresa",
+   "donde": [
+    "CAFC · F1 - Constitución!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1142",
+   "es": "Necesario para separar finanzas personales/empresa",
+   "donde": [
+    "CAFC · F1 - Constitución!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1143",
+   "es": "Obtener certificado digital",
+   "donde": [
+    "CAFC · F1 - Constitución!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1144",
+   "es": "Imprescindible para los trámites telemáticos con Hacienda y con la Seguridad Social",
+   "donde": [
+    "CAFC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1145",
+   "es": "Sanidad",
+   "donde": [
+    "CAFC · F1 - Constitución!C12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1146",
+   "es": "El Registro General Sanitario estatal (RGSEAA) NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca es el autonómico. Sólo necesitas el estatal si vendes tu bollería a otras empresas",
+   "donde": [
+    "CAFC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1147",
+   "es": "Registro de marca (opcional)",
+   "donde": [
+    "CAFC · F1 - Constitución!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1148",
+   "es": "OEPM",
+   "donde": [
+    "CAFC · F1 - Constitución!C13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1149",
+   "es": "4-6 meses",
+   "donde": [
+    "CAFC · F1 - Constitución!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1150",
+   "es": "Si quieres proteger nombre de la cafetería",
+   "donde": [
+    "CAFC · F1 - Constitución!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1151",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes, personal y proveedores",
+   "donde": [
+    "CAFC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1152",
+   "es": "Adaptar el TPV y la facturación al sistema Veri*factu / factura electrónica",
+   "donde": [
+    "CAFC · F1 - Constitución!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P07"
+   ]
+  },
+  {
+   "id": "c1153",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV que presupuesta la hoja de Inversión",
+   "donde": [
+    "CAFC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P07",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1155",
+   "es": "FASE 2: LOCAL Y LICENCIAS",
+   "donde": [
+    "CAFC · F2 - Local!A2"
+   ]
+  },
+  {
+   "id": "c1156",
+   "es": "Búsqueda y selección de local",
+   "donde": [
+    "CAFC · F2 - Local!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1157",
+   "es": "Busca zonas con tráfico peatonal, oficinas o universidades",
+   "donde": [
+    "CAFC · F2 - Local!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1158",
+   "es": "Negociación contrato alquiler",
+   "donde": [
+    "CAFC · F2 - Local!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1159",
+   "es": "Titular/Abogado",
+   "donde": [
+    "CAFC · F2 - Local!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1160",
+   "es": "La renta y el plazo se pactan libremente (LAU, Título III: arrendamiento para uso distinto de vivienda). Negocia 2-3 meses de carencia mientras dura la obra",
+   "donde": [
+    "CAFC · F2 - Local!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P10"
+   ]
+  },
+  {
+   "id": "c1161",
+   "es": "Verificar uso urbanístico (hostelería)",
+   "donde": [
+    "CAFC · F2 - Local!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1162",
+   "es": "Pedir informe urbanístico ANTES de firmar",
+   "donde": [
+    "CAFC · F2 - Local!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1163",
+   "es": "Solicitar licencia de actividad",
+   "donde": [
+    "CAFC · F2 - Local!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1164",
+   "es": "Cafetería sin cocina elaborada = actividad inocua en muchos municipios",
+   "donde": [
+    "CAFC · F2 - Local!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1165",
+   "es": "Declaración responsable (si aplica)",
+   "donde": [
+    "CAFC · F2 - Local!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1166",
+   "es": "15 días",
+   "donde": [
+    "CAFC · F2 - Local!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1167",
+   "es": "Alternativa a la licencia en muchos municipios, y más rápida",
+   "donde": [
+    "CAFC · F2 - Local!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1168",
+   "es": "Licencia de terraza (si aplica)",
+   "donde": [
+    "CAFC · F2 - Local!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1169",
+   "es": "Renovación anual, tasa municipal variable",
+   "donde": [
+    "CAFC · F2 - Local!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1170",
+   "es": "Licencia de obras (si reforma)",
+   "donde": [
+    "CAFC · F2 - Local!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1171",
+   "es": "Arquitecto",
+   "donde": [
+    "CAFC · F2 - Local!C11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1172",
+   "es": "Solo si hay obra mayor o cambio de uso",
+   "donde": [
+    "CAFC · F2 - Local!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1173",
+   "es": "Seguro responsabilidad civil",
+   "donde": [
+    "CAFC · F2 - Local!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1174",
+   "es": "Mínimo 300.000 € RC, obligatorio",
+   "donde": [
+    "CAFC · F2 - Local!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c1175",
+   "es": "Seguro multirriesgo del local",
+   "donde": [
+    "CAFC · F2 - Local!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1176",
+   "es": "Cubre incendio, robo, daños por agua, etc.",
+   "donde": [
+    "CAFC · F2 - Local!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1177",
+   "es": "El modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+   "donde": [
+    "CAFC · F2 - Local!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1178",
+   "es": "Contrato con gestor autorizado de residuos",
+   "donde": [
+    "CAFC · F2 - Local!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P14"
+   ]
+  },
+  {
+   "id": "c1179",
+   "es": "Se comprueba en la inspección. Cartón, orgánico y, si fríes, aceite usado, que no puede ir al desagüe",
+   "donde": [
+    "CAFC · F2 - Local!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1180",
+   "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC",
+   "donde": [
+    "CAFC · F2 - Local!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1181",
+   "es": "Cartel y contrato de videovigilancia con la empresa de seguridad",
+   "donde": [
+    "CAFC · F2 - Local!B17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1182",
+   "es": "Con la obra",
+   "donde": [
+    "CAFC · F2 - Local!D17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1183",
+   "es": "Cartel homologado en zona visible, contrato de encargado de tratamiento y plazo máximo de conservación de 30 días",
+   "donde": [
+    "CAFC · F2 - Local!E17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1184",
+   "es": "FASE 3: OBRA Y EQUIPAMIENTO",
+   "donde": [
+    "CAFC · F3 - Equipamiento!A2"
+   ]
+  },
+  {
+   "id": "c1185",
+   "es": "Proyecto técnico (si >100m2 o cambio uso)",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1186",
+   "es": "Incluye planos, memoria técnica, instalaciones",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1187",
+   "es": "Obra civil: suelos, paredes, techos",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1188",
+   "es": "Constructor",
+   "donde": [
+    "CAFC · F3 - Equipamiento!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1189",
+   "es": "3-6 semanas",
+   "donde": [
+    "CAFC · F3 - Equipamiento!D6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1190",
+   "es": "Materiales lavables en zona manipulación",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1191",
+   "es": "Instalación eléctrica (potencia 15-20 kW)",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1192",
+   "es": "Electricista",
+   "donde": [
+    "CAFC · F3 - Equipamiento!C7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1193",
+   "es": "Máquina de café, horno y lavavajillas: es el equipo que dispara el consumo eléctrico",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1194",
+   "es": "Fontanería y evacuación",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1195",
+   "es": "Fontanero",
+   "donde": [
+    "CAFC · F3 - Equipamiento!C8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1196",
+   "es": "Trampa de grasas obligatoria si hay cocina",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1197",
+   "es": "Climatización (aire acondicionado + calefacción)",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1198",
+   "es": "Imprescindible para confort, sobre todo en terraza cerrada",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1199",
+   "es": "Compra de la máquina de café profesional",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1200",
+   "es": "2 grupos mínimo, considerar contrato con tostador",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1201",
+   "es": "Compra molinillo profesional",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1202",
+   "es": "On-demand, fundamental para quality coffee",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1203",
+   "es": "Compra horno convección/combinado",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1204",
+   "es": "Para bollería, brunch caliente, tostas",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1205",
+   "es": "Compra vitrinas refrigeradas",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1206",
+   "es": "Expositor de tartas, sándwiches y bollería",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1207",
+   "es": "Compra neveras y congelador",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1208",
+   "es": "Bajo barra + almacén frigorífico",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1209",
+   "es": "Compra lavavajillas industrial",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1210",
+   "es": "Ciclo 2-3 min, imprescindible con volumen",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1211",
+   "es": "Mobiliario sala y barra",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1212",
+   "es": "Carpintero/Prov.",
+   "donde": [
+    "CAFC · F3 - Equipamiento!C16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1213",
+   "es": "3-4 semanas",
+   "donde": [
+    "CAFC · F3 - Equipamiento!D16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1214",
+   "es": "Estilo coherente con el concepto y cómodo para un brunch largo",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1215",
+   "es": "Mobiliario terraza + toldo/parasol",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1216",
+   "es": "Verificar normativa municipal de terraza",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1217",
+   "es": "Instalación TPV + software",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c1218",
+   "es": "Integrar pedidos, caja, stock",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1219",
+   "es": "Decoración e iluminación",
+   "donde": [
+    "CAFC · F3 - Equipamiento!B19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1220",
+   "es": "Interiorista",
+   "donde": [
+    "CAFC · F3 - Equipamiento!C19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1221",
+   "es": "Iluminación cálida, plantas y una zona cuidada para las fotos",
+   "donde": [
+    "CAFC · F3 - Equipamiento!E19"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1222",
+   "es": "Definir organigrama y turnos",
+   "donde": [
+    "CAFC · F4 - Personal!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1223",
+   "es": "Cafetería: turnos mañana (6-15h) y tarde (14-22h)",
+   "donde": [
+    "CAFC · F4 - Personal!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1224",
+   "es": "Publicar ofertas de empleo",
+   "donde": [
+    "CAFC · F4 - Personal!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1225",
+   "es": "Buscar baristas con experiencia en specialty coffee",
+   "donde": [
+    "CAFC · F4 - Personal!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1226",
+   "es": "Selección y entrevistas",
+   "donde": [
+    "CAFC · F4 - Personal!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1227",
+   "es": "Prueba práctica: preparar un espresso y un latte art",
+   "donde": [
+    "CAFC · F4 - Personal!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1228",
+   "es": "Contratos de trabajo",
+   "donde": [
+    "CAFC · F4 - Personal!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1229",
+   "es": "Convenio provincial hostelería, verificar categoría",
+   "donde": [
+    "CAFC · F4 - Personal!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1230",
+   "es": "Alta trabajadores en Seguridad Social",
+   "donde": [
+    "CAFC · F4 - Personal!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1231",
+   "es": "Antes del alta",
+   "donde": [
+    "CAFC · F4 - Personal!D9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1232",
+   "es": "Mínimo 1 día antes de empezar",
+   "donde": [
+    "CAFC · F4 - Personal!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1233",
+   "es": "El «carnet de manipulador» está derogado (RD 109/2010): la formación la acredita la EMPRESA y se documenta en el plan APPCC",
+   "donde": [
+    "CAFC · F4 - Personal!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P02",
+    "P24"
+   ]
+  },
+  {
+   "id": "c1234",
+   "es": "Plan de prevención de riesgos (PRL)",
+   "donde": [
+    "CAFC · F4 - Personal!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1235",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no: con menos de 25 trabajadores y un solo centro el titular puede asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)",
+   "donde": [
+    "CAFC · F4 - Personal!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c1236",
+   "es": "Formación barista y café",
+   "donde": [
+    "CAFC · F4 - Personal!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1237",
+   "es": "Titular/Formador",
+   "donde": [
+    "CAFC · F4 - Personal!C12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1238",
+   "es": "Estandarizar extracciones, recetas y limpieza de la máquina",
+   "donde": [
+    "CAFC · F4 - Personal!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1239",
+   "es": "Formación alérgenos y APPCC",
+   "donde": [
+    "CAFC · F4 - Personal!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P24"
+   ]
+  },
+  {
+   "id": "c1240",
+   "es": "Leches vegetales, gluten, frutos secos — crítico en brunch",
+   "donde": [
+    "CAFC · F4 - Personal!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1241",
+   "es": "Formación atención al cliente",
+   "donde": [
+    "CAFC · F4 - Personal!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c1242",
+   "es": "Estándares de servicio, reclamaciones y venta sugerida",
+   "donde": [
+    "CAFC · F4 - Personal!E14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1243",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años",
+   "donde": [
+    "CAFC · F4 - Personal!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c1244",
+   "es": "Diseñar la identidad visual: logotipo, colores y tipografía",
+   "donde": [
+    "CAFC · F5 - Marketing!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c1245",
+   "es": "Estilo coherente: rústico, moderno, specialty...",
+   "donde": [
+    "CAFC · F5 - Marketing!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1246",
+   "es": "Crear página web básica",
+   "donde": [
+    "CAFC · F5 - Marketing!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1247",
+   "es": "Diseñador/Dev",
+   "donde": [
+    "CAFC · F5 - Marketing!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1248",
+   "es": "La ficha de Google es más urgente que la web",
+   "donde": [
+    "CAFC · F5 - Marketing!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1249",
+   "es": "Ficha Google My Business (CRÍTICO)",
+   "donde": [
+    "CAFC · F5 - Marketing!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1250",
+   "es": "Categoría: Cafetería. Cuida las fotos, el horario y la carta",
+   "donde": [
+    "CAFC · F5 - Marketing!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1251",
+   "es": "Perfiles RRSS (Instagram prioritario)",
+   "donde": [
+    "CAFC · F5 - Marketing!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1252",
+   "es": "Instagram es el canal #1 para cafeterías/brunch",
+   "donde": [
+    "CAFC · F5 - Marketing!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1253",
+   "es": "Sesión fotos profesional",
+   "donde": [
+    "CAFC · F5 - Marketing!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1254",
+   "es": "Fotos de platos brunch, café latte art, ambiente",
+   "donde": [
+    "CAFC · F5 - Marketing!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1255",
+   "es": "Diseño de la carta y de la pizarra de la barra",
+   "donde": [
+    "CAFC · F5 - Marketing!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1256",
+   "es": "Carta física, pizarra en la barra y carta digital con código QR",
+   "donde": [
+    "CAFC · F5 - Marketing!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1257",
+   "es": "Rotulación exterior + vinilo escaparate",
+   "donde": [
+    "CAFC · F5 - Marketing!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1258",
+   "es": "Primera impresión desde la calle, fundamental",
+   "donde": [
+    "CAFC · F5 - Marketing!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1259",
+   "es": "Campaña pre-apertura en RRSS",
+   "donde": [
+    "CAFC · F5 - Marketing!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1260",
+   "es": "Cuenta atrás, contenido de la puesta a punto y sorteo inaugural",
+   "donde": [
+    "CAFC · F5 - Marketing!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1261",
+   "es": "Acuerdos con proveedores de café",
+   "donde": [
+    "CAFC · F5 - Marketing!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1262",
+   "es": "Considerar tostador local — diferencial de marca",
+   "donde": [
+    "CAFC · F5 - Marketing!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1263",
+   "es": "Registrarse en Google Maps, TripAdvisor",
+   "donde": [
+    "CAFC · F5 - Marketing!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1264",
+   "es": "También TheFork si hay brunch con reservas",
+   "donde": [
+    "CAFC · F5 - Marketing!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1265",
+   "es": "Invitar vecinos, influencers locales, prensa barrio",
+   "donde": [
+    "CAFC · F5 - Marketing!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1266",
+   "es": "Programa de fidelización",
+   "donde": [
+    "CAFC · F5 - Marketing!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1267",
+   "es": "Tarjeta de sellos con el décimo café gratis, o aplicación de puntos",
+   "donde": [
+    "CAFC · F5 - Marketing!E16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1268",
+   "es": "Licencia de derechos de autor por la música ambiental",
+   "donde": [
+    "CAFC · F5 - Marketing!B17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c1269",
+   "es": "SGAE y AGEDI-AIE son dos licencias distintas y se pagan las dos",
+   "donde": [
+    "CAFC · F5 - Marketing!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P15"
+   ]
+  },
+  {
+   "id": "c1270",
+   "es": "Cláusula informativa y consentimiento en el sistema de reservas y en la lista de correo",
+   "donde": [
+    "CAFC · F5 - Marketing!B18"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1271",
+   "es": "TheFork, WhatsApp y newsletter tratan datos: cada canal necesita su información previa",
+   "donde": [
+    "CAFC · F5 - Marketing!E18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1272",
+   "es": "Revisión diaria de caja y ventas",
+   "donde": [
+    "CAFC · F6 - 90 Días!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1273",
+   "es": "Comparar con previsiones del plan financiero",
+   "donde": [
+    "CAFC · F6 - 90 Días!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1274",
+   "es": "Pesar y medir: café, leche, ingredientes brunch",
+   "donde": [
+    "CAFC · F6 - 90 Días!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1275",
+   "es": "Ajustar carta según ventas reales",
+   "donde": [
+    "CAFC · F6 - 90 Días!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1276",
+   "es": "Eliminar lo que no se vende, potenciar bestsellers",
+   "donde": [
+    "CAFC · F6 - 90 Días!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1277",
+   "es": "Encuestas a clientes (presencial + Google)",
+   "donde": [
+    "CAFC · F6 - 90 Días!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c1278",
+   "es": "Pedir reseñas Google, responder TODAS",
+   "donde": [
+    "CAFC · F6 - 90 Días!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1279",
+   "es": "Optimizar turnos de personal",
+   "donde": [
+    "CAFC · F6 - 90 Días!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1280",
+   "es": "Reforzar pico mañana, reducir horas muertas tarde",
+   "donde": [
+    "CAFC · F6 - 90 Días!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1281",
+   "es": "Revisar proveedores y negociar precios",
+   "donde": [
+    "CAFC · F6 - 90 Días!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1282",
+   "es": "Con volumen real, renegociar café, leche, bollería",
+   "donde": [
+    "CAFC · F6 - 90 Días!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1283",
+   "es": "Implementar delivery si hay demanda",
+   "donde": [
+    "CAFC · F6 - 90 Días!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1284",
+   "es": "Mes 2-3",
+   "donde": [
+    "CAFC · F6 - 90 Días!D11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1285",
+   "es": "Glovo/Uber Eats para brunch take-away",
+   "donde": [
+    "CAFC · F6 - 90 Días!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1286",
+   "es": "Analizar competencia local",
+   "donde": [
+    "CAFC · F6 - 90 Días!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1287",
+   "es": "Visitar otras cafeterías de la zona, comparar",
+   "donde": [
+    "CAFC · F6 - 90 Días!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1288",
+   "es": "Primer cierre contable trimestral",
+   "donde": [
+    "CAFC · F6 - 90 Días!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21"
+   ]
+  },
+  {
+   "id": "c1289",
+   "es": "Plan de acción correctivo",
+   "donde": [
+    "CAFC · F6 - 90 Días!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1290",
+   "es": "Si desviación >15%, revisar costes y estrategia",
+   "donde": [
+    "CAFC · F6 - 90 Días!E14"
+   ],
+   "fila": "☐"
+  }
+ ]
+}

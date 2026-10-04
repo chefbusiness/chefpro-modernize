@@ -1,0 +1,4514 @@
+{
+ "tanda": "GPAN",
+ "salida": "scripts/productos-digitales/business-plans-en-2/textos_en/GPAN.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 385,
+ "n_palabras": 5080,
+ "pistas": {
+  "P01": "D43: la panadería habla de «transactions»",
+  "P02": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P03": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P04": "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan",
+  "P05": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P06": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P07": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P08": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P09": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P10": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P11": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P12": "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica",
+  "P13": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P14": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P15": "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»",
+  "P16": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P17": "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)",
+  "P18": "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy",
+  "P19": "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales",
+  "P20": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P21": "D36 (E3): la col. H es la parte EXENTA del sales tax de la línea (bollería para llevar + venta mayorista a un café que revende, con resale certificate); ejemplo 0.80; CA exime la bollería para llevar y grava el consumo en el local (regla 80/80) — «check your state»; con 0 el libro grava toda la línea; UK: zero-rated para llevar, 20 % en el local. Solo afecta a la tesorería (el P&L va sin impuesto)",
+  "P22": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P23": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P24": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P25": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P26": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P27": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P28": "SPEC §4.1 línea 4: sin divisores 1,10/1,21/1,04 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; en la panadería, la parte exenta de la línea de pan (col. H del P&L, D36) no lleva sales tax",
+  "P29": "SPEC §4.1 línea 8 (I1): el Word del kit usa las MISMAS cifras de ejemplo que este libro; si cambias el libro, actualiza las cifras del Word",
+  "P30": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P31": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P32": "SPEC delta §3: health department plan review → food establishment permit (PAN: o licencia estatal de agricultura si hay mayorista; FDA facility registration solo si lo mayorista domina)",
+  "P33": "SPEC delta §3: USPTO trademark (opcional)"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons"
+ },
+ "pestanas_es_en": {
+  "RESTP": {
+   "0. Supuestos": "0. Assumptions",
+   "1. Inversión Inicial": "1. Startup Costs",
+   "2. P&L 3 Años": "2. 3-Year P&L",
+   "3. Punto Equilibrio": "3. Break-Even",
+   "4. Escenarios": "4. Scenarios",
+   "5. Personal": "5. Staffing",
+   "Instrucciones": "Instructions",
+   "6. Tesorería 12 meses": "6. 12-Month Cash Flow",
+   "7. Financiación": "7. Financing"
+  },
+  "RESTC": {
+   "Checklist Apertura": "Opening Checklist",
+   "Instrucciones": "Instructions"
+  },
+  "PANP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PANC": {
+   "F1": "Phase 1 - Business Setup",
+   "F2": "Phase 2 - Location & Permits",
+   "F3": "Phase 3 - Equipment",
+   "F4": "Phase 4 - Staff",
+   "F5": "Phase 5 - Marketing",
+   "F6": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-bar-restaurante» de AI Chef Pro.": "This file is part of the Restaurant Business Plan Kit by AI Chef Pro.",
+  "Este fichero forma parte del producto «plan-negocio-panaderia» de AI Chef Pro.": "This file is part of the Bakery Business Plan Kit by AI Chef Pro.",
+  "ChefBusiness Consultoría Gastronómica": "AI Chef Pro",
+  "ChefBusiness.co — Plan de Negocio: Bar-Restaurante": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+  "Plan de Negocio: Bar-Restaurante / Restaurante Casual — España 2026": "Restaurant Business Plan: Casual Restaurant & Bar — US example (2026)",
+  "Inversión Inicial — Bar-Restaurante": "Startup Costs — Restaurant & Bar",
+  "Cuenta de Resultados Previsional — 3 Años": "3-Year Projected P&L",
+  "Punto de Equilibrio (Break-Even) — Bar-Restaurante": "Break-Even Analysis — Restaurant & Bar",
+  "Análisis de Escenarios — Año 1": "Scenario Analysis — Year 1",
+  "NOTA: Todos los importes son estimaciones basadas en precios de mercado en España 2026. Ajusta cada partida a tu situación real.": "NOTE: all amounts are US kit-example estimates (2026); replace them with your own quotes.",
+  "Cuadro de Personal y Coste Laboral": "Staffing Plan & Labor Cost",
+  "Checklist Apertura — Bar-Restaurante / España 2026": "Opening Checklist — Restaurant & Bar (US example, 2026)",
+  "ChefBusiness.co — Checklist Apertura Bar-Restaurante / España 2026": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+  "Licencias y permisos varios": "Liquor license + permits (non-quota state example)",
+  "Inversión Inicial — España 2026": "Startup Costs — US example (2026)",
+  "IVA de la bebida ALCOHÓLICA servida en mostrador": "Sales tax rate on alcohol served at the counter",
+  "Pan común sobre la línea (%)": "Tax-exempt share of the line (%)"
+ },
+ "cadenas": [
+  {
+   "id": "c0863",
+   "es": "Transacciones/día (media del año 1)",
+   "donde": [
+    "PANP · 0. Supuestos!A4"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0864",
+   "es": "Transacciones servidas al día de media del año (barra de pan, bollería y café, más lo que recoge el canal mayorista). Dentro del rango 80-200 que este mismo libro publica en «Escenarios» (pesimista/optimista): el «objetivo» de la v1.1 (148) era una cifra DERIVADA de la facturación buscada, no un input real. Con menos transacciones el resultado neto se quedaba por debajo del 5 % que este libro fija como suelo, porque los costes fijos (personal, alquiler, seguros…) no crecen con el volumen y cada transacción de más va casi entera al resultado. OJO: el caso base es exigente por los DOS lados a la vez —el 90 % del volumen del escenario optimista que publica «Escenarios» y el ticket de ese mismo escenario optimista—; si sólo se cumple uno de los dos, el resultado neto cae por debajo de ese suelo. Contrástalo con tu zona antes de darlo por bueno",
+   "donde": [
+    "PANP · 0. Supuestos!C4"
+   ],
+   "fila": "Transacciones/día (media del año 1)",
+   "valor_us": 210,
+   "cita_hojas": [
+    {
+     "es": "Escenarios",
+     "en": "Scenarios"
+    }
+   ],
+   "pistas": [
+    "P02",
+    "P03",
+    "P04",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0865",
+   "es": "SIN IVA. Dentro del rango 3-6 € que este mismo kit declara en la tabla «Datos de referencia del sector» de la hoja de Instrucciones («Ticket medio panadería»), en el tercio alto porque incluye bollería y café además de la barra de pan, no sólo la barra. Ojo: coincide con el ticket que la versión anterior usaba en su escenario OPTIMISTA, así que compruébalo con tu carta antes de darlo por bueno — si tu ticket real es menor, bájalo aquí y mira qué le pasa al resultado",
+   "donde": [
+    "PANP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 10,
+   "pistas": [
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0866",
+   "es": "El MISMO dato lo usan el P&L, el punto de equilibrio y los escenarios: el fichero v1.1 tenía DOS calendarios distintos («Punto Equilibrio!C8»: «30 días apertura», mensual; «Escenarios!C7»: 310 días/año, realista)",
+   "donde": [
+    "PANP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 310,
+   "pistas": [
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0867",
+   "es": "Segundo año con el canal mayorista (restaurantes y hoteles) ya consolidado y sin gastos de lanzamiento. Muy por debajo del salto que proyectaba la versión anterior de este libro (de 200.000 € a 250.000 €, un 25 %)",
+   "donde": [
+    "PANP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "pistas": [
+    "P06",
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0868",
+   "es": "Tercer año, cerca del techo de producción del horno instalado. La versión anterior proyectaba un 20 % de subida en este año",
+   "donde": [
+    "PANP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0869",
+   "es": "Food cost de pan y bollería, ponderado con los rangos que este mismo kit publica en la tabla «Datos de referencia del sector» de la hoja de Instrucciones: pan 25-30 % y bollería 32-38 %. El pan pesa más del mix, así que el blend queda cerca del extremo bajo del rango de bollería",
+   "donde": [
+    "PANP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.3,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "Coste de café y bebidas sobre sus propias ventas: dentro del 25-30 % que declara la tabla «Datos de referencia del sector» de la hoja de Instrucciones de este mismo libro",
+   "donde": [
+    "PANP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.22,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0871",
+   "es": "Bolsas de papel, cajas de bollería y servilletas de mostrador",
+   "donde": [
+    "PANP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.03
+  },
+  {
+   "id": "c0872",
+   "es": "A CERO por defecto: el pan recién horneado no viaja bien y este plan no lo vende a domicilio el día 1. Súbelo si activas un canal de reparto de bollería/desayunos",
+   "donde": [
+    "PANP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0873",
+   "es": "Comisión típica de Glovo/Uber Eats sobre el pedido servido por ese canal, si algún día lo activas",
+   "donde": [
+    "PANP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0874",
+   "es": "Tarjeta y bizum sobre el total facturado en tienda",
+   "donde": [
+    "PANP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.035,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0875",
+   "es": "Local de obrador + tienda (mínimo 80 m² entre obrador, tienda y almacén, checklist F2). Lo que pesa sobre las ventas lo calcula el propio libro en la fila «Alquiler / Ventas» del bloque de ratios del P&L: en el caso base queda por DEBAJO del 10-14 % que la tabla de referencias de la hoja de Instrucciones da como habitual del sector",
+   "donde": [
+    "PANP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 4200,
+   "pistas": [
+    "P11",
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0876",
+   "es": "Luz (hornos, potencia 30-40 kW — checklist F2), agua y gas: pide el histórico del local antes de firmar",
+   "donde": [
+    "PANP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 1500,
+   "pistas": [
+    "P02",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0877",
+   "es": "Responsabilidad civil (mínimo 300.000 € — checklist F1) + multirriesgo del local con hornos («incendio crítico por hornos», checklist F2)",
+   "donde": [
+    "PANP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 4500,
+   "pistas": [
+    "P06",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0878",
+   "es": "Aportación de los socios. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja de este plan",
+   "donde": [
+    "PANP · 0. Supuestos!C30"
+   ],
+   "fila": "Recursos propios aportados (€)",
+   "valor_us": 70000,
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0879",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que origen y usos cuadran con la necesidad de caja calculada en la hoja 1",
+   "donde": [
+    "PANP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR"
+  },
+  {
+   "id": "c0880",
+   "es": "Tipo nominal anual; pide oferta a dos entidades y a una línea ICO antes de fijarlo (el horno y la maquinaria de un obrador son objeto habitual de leasing/renting: compáralo)",
+   "donde": [
+    "PANP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "pistas": [
+    "P05",
+    "P13",
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0881",
+   "es": "Primer año pagando sólo intereses, que es cuando la caja está más tensa (obra y maquinaria antes de facturar nada). Al salir de la carencia la devolución del principal entra de golpe: la hoja de Punto de Equilibrio mide esa holgura año a año",
+   "donde": [
+    "PANP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0,
+   "pistas": [
+    "P05",
+    "P14",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0882",
+   "es": "Mínimo que exige este mismo libro (Instrucciones): un colchón por debajo de 3 meses no cubre un bache de temporada baja",
+   "donde": [
+    "PANP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)"
+  },
+  {
+   "id": "c0883",
+   "es": "Tipo general. En este libro lo usan dos cosas: el IVA que soportas al comprar el alcohol (el proveedor lo factura al 21 %) y el que repercutes por el alcohol que sale por delivery (es una entrega de bienes). El alcohol servido en mostrador va al reducido: su tipo está en el bloque de desglose del IVA. Suministros, equipamiento y servicios tienen su tipo en la celda de abajo. El libro manda al general sólo el alcohol: si compras refrescos o zumos con azúcares añadidos, su factura también va al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992)",
+   "donde": [
+    "PANP · 0. Supuestos!C40"
+   ],
+   "fila": "IVA repercutido/soportado general",
+   "valor_us": 0.08,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0884",
+   "es": "Obra, instalación eléctrica de potencia y salida de humos de un obrador. Coeficientes de la tabla del art. 12.1 LIS: confírmalo con tu asesor",
+   "donde": [
+    "PANP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P05",
+    "P12",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0885",
+   "es": "Horno, amasadora, divisora, cámaras y vitrina. El coeficiente lineal máximo del art. 12.1 LIS para maquinaria es del 12 % anual: por debajo de 9 años el exceso no sería deducible. Confírmalo con tu asesor",
+   "donde": [
+    "PANP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0886",
+   "es": "La mayoría de las transacciones son de mostrador (llevar), no de mesa: este número cubre sólo el rincón de café con asientos, no la cola de la barra de pan. Sirve para dimensionar el espacio de consumo del local; el volumen del negocio se proyecta con las transacciones de mostrador, no con la rotación de las plazas",
+   "donde": [
+    "PANP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas + barra)",
+   "pistas": [
+    "P15",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0887",
+   "es": "Media ponderada: el mostrador cobra al contado (0 días) y el canal mayorista —restaurantes y hoteles— paga a 30 días, que es el plazo por defecto del art. 4 de la Ley 3/2004 contra la morosidad (60 como máximo, y sólo si se pacta). Con el peso que este plan da al mayorista salen 3 días de media: súbelo si tu reparto a otros negocios pesa más",
+   "donde": [
+    "PANP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 1,
+   "pistas": [
+    "P05",
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0888",
+   "es": "A CERO: la línea de bebida de este plan es café e infusiones, sin alcohol (a diferencia de cafetería, que sí sirve algún mimosa de celebración). Si añades cava para desayunos de celebración, sube este parámetro",
+   "donde": [
+    "PANP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0
+  },
+  {
+   "id": "c0890",
+   "es": "10 %, igual que el resto del consumo en mostrador: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el acto», sin excluir el alcohol. El 21 % es el tipo GENERAL y, fuera del consumo en el acto, alcanza al alcohol y también a los refrescos y zumos con azúcares o edulcorantes añadidos vendidos para llevar o a domicilio (art. 91.Uno.1.1.º de la misma ley). El libro lo aplica sólo a la parte ALCOHÓLICA de la bebida que sale por el canal de la celda «Ventas por delivery sobre el total»; los refrescos azucarados repartidos irían también al general y el libro no los separa",
+   "donde": [
+    "PANP · 0. Supuestos!C63"
+   ],
+   "fila": "IVA de la bebida ALCOHÓLICA servida en mostrador",
+   "valor_us": 0.08,
+   "pistas": [
+    "P05",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0891",
+   "es": "El convenio PROVINCIAL de panadería/pastelería, no el SMI, es el suelo real del sector: cópialo de la tabla salarial de tu provincia («Convenio hostelería/alimentación», checklist F4). Con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "PANP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P05",
+    "P16",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0893",
+   "es": "PLAN DE NEGOCIO: PANADERÍA / OBRADOR",
+   "donde": [
+    "PANP · Inversión Inicial!A1"
+   ]
+  },
+  {
+   "id": "c0895",
+   "es": "Ajusta las cifras a tu proyecto.",
+   "donde": [
+    "PANP · Inversión Inicial!A3"
+   ],
+   "propuesta_en": "Adjust the figures to your project.",
+   "propuesta_de": "GFT c0136 (FTP Inversión Inicial!A3)"
+  },
+  {
+   "id": "c0897",
+   "es": "Constitución SL + notaría",
+   "donde": [
+    "PANP · Inversión Inicial!A7"
+   ],
+   "pistas": [
+    "P05",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0898",
+   "es": "SL unipersonal express",
+   "donde": [
+    "PANP · Inversión Inicial!D7"
+   ],
+   "fila": "Constitución SL + notaría",
+   "valor_us": 1500,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0899",
+   "es": "Licencia actividad (clasificada)",
+   "donde": [
+    "PANP · Inversión Inicial!A8"
+   ],
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0900",
+   "es": "Obrador con horno = actividad clasificada",
+   "donde": [
+    "PANP · Inversión Inicial!D8"
+   ],
+   "fila": "Licencia actividad (clasificada)",
+   "valor_us": 2500,
+   "pistas": [
+    "P18",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0901",
+   "es": "Proyecto técnico + certificación",
+   "donde": [
+    "PANP · Inversión Inicial!A9"
+   ],
+   "propuesta_en": "Architect and building permits",
+   "propuesta_de": "GCAF c0910 (CAFP Inversión Inicial!A9)",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0902",
+   "es": "Obligatorio: salida humos, potencia eléctrica",
+   "donde": [
+    "PANP · Inversión Inicial!D9"
+   ],
+   "fila": "Proyecto técnico + certificación",
+   "valor_us": 6000,
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0903",
+   "es": "Obra civil y adecuación local",
+   "donde": [
+    "PANP · Inversión Inicial!A10"
+   ],
+   "propuesta_en": "Construction / build-out",
+   "propuesta_de": "GCAF c0912 (CAFP Inversión Inicial!A10)"
+  },
+  {
+   "id": "c0904",
+   "es": "Suelo técnico, revestimientos lavables, obrador",
+   "donde": [
+    "PANP · Inversión Inicial!D10"
+   ],
+   "fila": "Obra civil y adecuación local",
+   "valor_us": 35000,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0905",
+   "es": "Instalación eléctrica (potencia 30-40 kW)",
+   "donde": [
+    "PANP · Inversión Inicial!A11"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0906",
+   "es": "Hornos eléctricos consumen mucha potencia",
+   "donde": [
+    "PANP · Inversión Inicial!D11"
+   ],
+   "fila": "Instalación eléctrica (potencia 30-40 kW)",
+   "valor_us": 10000,
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0907",
+   "es": "Salida humos + ventilación obrador",
+   "donde": [
+    "PANP · Inversión Inicial!A12"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0908",
+   "es": "Obligatoria: campana + extractor + filtros",
+   "donde": [
+    "PANP · Inversión Inicial!D12"
+   ],
+   "fila": "Salida humos + ventilación obrador",
+   "valor_us": 10000,
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0909",
+   "es": "Horno de pisos / rotativo profesional",
+   "donde": [
+    "PANP · Inversión Inicial!A13"
+   ]
+  },
+  {
+   "id": "c0910",
+   "es": "Horno de pisos (artesanal) o rotativo (volumen)",
+   "donde": [
+    "PANP · Inversión Inicial!D13"
+   ],
+   "fila": "Horno de pisos / rotativo profesional",
+   "valor_us": 25000
+  },
+  {
+   "id": "c0911",
+   "es": "Amasadora espiral (25-50 kg)",
+   "donde": [
+    "PANP · Inversión Inicial!A14"
+   ],
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0912",
+   "es": "Capacidad según producción diaria",
+   "donde": [
+    "PANP · Inversión Inicial!D14",
+    "PANC · F3!E6"
+   ],
+   "fila": "Amasadora espiral (25-50 kg)",
+   "valor_us": 9000
+  },
+  {
+   "id": "c0913",
+   "es": "Divisora + boleadora",
+   "donde": [
+    "PANP · Inversión Inicial!A15",
+    "PANC · F3!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0914",
+   "es": "Para producción en serie de piezas",
+   "donde": [
+    "PANP · Inversión Inicial!D15"
+   ],
+   "fila": "Divisora + boleadora",
+   "valor_us": 7000
+  },
+  {
+   "id": "c0915",
+   "es": "Cámara de fermentación controlada",
+   "donde": [
+    "PANP · Inversión Inicial!A16"
+   ]
+  },
+  {
+   "id": "c0916",
+   "es": "Fermentación lenta programable, clave calidad",
+   "donde": [
+    "PANP · Inversión Inicial!D16"
+   ],
+   "fila": "Cámara de fermentación controlada",
+   "valor_us": 10000
+  },
+  {
+   "id": "c0917",
+   "es": "Cámara frigorífica + congelador",
+   "donde": [
+    "PANP · Inversión Inicial!A17",
+    "PANC · F3!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0918",
+   "es": "Almacén materia prima + masa congelada",
+   "donde": [
+    "PANP · Inversión Inicial!D17"
+   ],
+   "fila": "Cámara frigorífica + congelador",
+   "valor_us": 9000
+  },
+  {
+   "id": "c0919",
+   "es": "Mesa de trabajo inox + estanterías",
+   "donde": [
+    "PANP · Inversión Inicial!A18"
+   ]
+  },
+  {
+   "id": "c0920",
+   "es": "Superficie de trabajo obrador",
+   "donde": [
+    "PANP · Inversión Inicial!D18"
+   ],
+   "fila": "Mesa de trabajo inox + estanterías",
+   "valor_us": 5000,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0921",
+   "es": "Laminadora (si bollería)",
+   "donde": [
+    "PANP · Inversión Inicial!A19",
+    "PANC · F3!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0922",
+   "es": "Para croissants, hojaldre, bollería",
+   "donde": [
+    "PANP · Inversión Inicial!D19"
+   ],
+   "fila": "Laminadora (si bollería)",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0923",
+   "es": "Vitrina expositor + mostrador",
+   "donde": [
+    "PANP · Inversión Inicial!A20"
+   ]
+  },
+  {
+   "id": "c0924",
+   "es": "Exposición pan y bollería al público",
+   "donde": [
+    "PANP · Inversión Inicial!D20"
+   ],
+   "fila": "Vitrina expositor + mostrador",
+   "valor_us": 9000
+  },
+  {
+   "id": "c0925",
+   "es": "Mobiliario tienda (si venta directa)",
+   "donde": [
+    "PANP · Inversión Inicial!A21"
+   ]
+  },
+  {
+   "id": "c0926",
+   "es": "Mostrador, estanterías, caja",
+   "donde": [
+    "PANP · Inversión Inicial!D21"
+   ],
+   "fila": "Mobiliario tienda (si venta directa)",
+   "valor_us": 4000
+  },
+  {
+   "id": "c0927",
+   "es": "TPV + balanza + software",
+   "donde": [
+    "PANP · Inversión Inicial!A22"
+   ],
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0928",
+   "es": "TPV con control producción y ventas",
+   "donde": [
+    "PANP · Inversión Inicial!D22"
+   ],
+   "fila": "TPV + balanza + software",
+   "valor_us": 2500,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0929",
+   "es": "Rotulación + imagen exterior",
+   "donde": [
+    "PANP · Inversión Inicial!A23"
+   ],
+   "propuesta_en": "Signage and exterior branding",
+   "propuesta_de": "GCAF c0942 (CAFP Inversión Inicial!A25)"
+  },
+  {
+   "id": "c0930",
+   "es": "Rótulo y escaparate",
+   "donde": [
+    "PANP · Inversión Inicial!D23"
+   ],
+   "fila": "Rotulación + imagen exterior",
+   "valor_us": 3000
+  },
+  {
+   "id": "c0931",
+   "es": "Marketing lanzamiento",
+   "donde": [
+    "PANP · Inversión Inicial!A24"
+   ],
+   "propuesta_en": "Launch marketing",
+   "propuesta_de": "GFT c0169 (FTP Inversión Inicial!A19)"
+  },
+  {
+   "id": "c0932",
+   "es": "Web, Google My Business, RRSS, flyers",
+   "donde": [
+    "PANP · Inversión Inicial!D24"
+   ],
+   "fila": "Marketing lanzamiento",
+   "valor_us": 4000,
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0933",
+   "es": "Stock inicial (harinas, levaduras, etc.)",
+   "donde": [
+    "PANP · Inversión Inicial!A25"
+   ]
+  },
+  {
+   "id": "c0934",
+   "es": "Harina fuerza, centeno, masa madre, levadura",
+   "donde": [
+    "PANP · Inversión Inicial!D25"
+   ],
+   "fila": "Stock inicial (harinas, levaduras, etc.)",
+   "valor_us": 3000
+  },
+  {
+   "id": "c0936",
+   "es": "CUENTA DE RESULTADOS — 3 AÑOS",
+   "donde": [
+    "PANP · PyG 3 Años!A1"
+   ]
+  },
+  {
+   "id": "c0937",
+   "es": "Escenario realista — Panadería / Obrador",
+   "donde": [
+    "PANP · PyG 3 Años!A2"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0939",
+   "es": "Transacciones/día (media)",
+   "donde": [
+    "PANP · PyG 3 Años!A6"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0940",
+   "es": "Ventas de pan, bollería y mayorista (obrador + reparto HORECA)",
+   "donde": [
+    "PANP · PyG 3 Años!A10"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0941",
+   "es": "Barra de pan artesanal y bollería/pastelería de tienda, más el canal mayorista a restaurantes y hoteles (el pan que se vende a otro negocio sigue siendo la misma partida de producto que el que se vende en mostrador, sólo cambia el canal). OJO: el modelo proyecta las ventas con UN solo motor —transacciones × ticket × días—, así que el reparto a otro negocio entra aquí como una transacción más y no como un pedido grande. Lo que sí recoge el libro es su efecto en la caja, con los días medios de cobro de la hoja de Supuestos. Si el mayorista pesa de verdad en tu proyecto, proyéctalo aparte · El 4 % es el tipo SUPERREDUCIDO del pan común y de las harinas panificables (art. 91.Dos.1.1.º de la Ley 37/1992); la bollería, la pastelería y el consumo en el propio local van al 10 %. El porcentaje de la derecha dice qué parte de esta línea es pan común: sale del desglose de la versión anterior de este plan (pan artesanal 120.000 € + mayorista 20.000 € sobre 185.000 €). Ajústalo a tu carta: un pan especial NO es pan común",
+   "donde": [
+    "PANP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de pan, bollería y mayorista (obrador + reparto HORECA)",
+   "pistas": [
+    "P05",
+    "P06",
+    "P02",
+    "P04",
+    "P01",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0942",
+   "es": "Ventas de café y bebidas (sin alcohol)",
+   "donde": [
+    "PANP · PyG 3 Años!A11"
+   ]
+  },
+  {
+   "id": "c0943",
+   "es": "Café de grano, tés e infusiones de mostrador, para acompañar el desayuno o la merienda: el coste es alto por el grano de calidad, y la tabla de referencias de la hoja de Instrucciones lo sitúa en el 25-30 % de sus propias ventas",
+   "donde": [
+    "PANP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de café y bebidas (sin alcohol)"
+  },
+  {
+   "id": "c0944",
+   "es": "Mantenimiento hornos y maquinaria",
+   "donde": [
+    "PANP · PyG 3 Años!A27"
+   ]
+  },
+  {
+   "id": "c0945",
+   "es": "Software",
+   "donde": [
+    "PANP · PyG 3 Años!A29"
+   ]
+  },
+  {
+   "id": "c0946",
+   "es": "Limpieza",
+   "donde": [
+    "PANP · PyG 3 Años!A30"
+   ]
+  },
+  {
+   "id": "c0947",
+   "es": "Varios",
+   "donde": [
+    "PANP · PyG 3 Años!A31"
+   ]
+  },
+  {
+   "id": "c0948",
+   "es": "Gestión de residuos (orgánico de obrador, cartón; sin aceite de fritura)",
+   "donde": [
+    "PANP · PyG 3 Años!A32"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0949",
+   "es": "Gestor autorizado; el checklist lo pide antes de abrir. Este plan no fríe (licencia «inocua»), así que el volumen es menor que en un restaurante — pide presupuesto en tu zona",
+   "donde": [
+    "PANP · PyG 3 Años!F32"
+   ],
+   "fila": "Gestión de residuos (orgánico de obrador, cartón; sin aceite de fritura)",
+   "valor_us": 1200,
+   "pistas": [
+    "P05",
+    "P22",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0950",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC que el checklist ya exige (F4). La harina almacenada atrae plaga con más facilidad que en un restaurante: presupuesto ligeramente mayor",
+   "donde": [
+    "PANP · PyG 3 Años!F33"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 900,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0951",
+   "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo de tu tienda",
+   "donde": [
+    "PANP · PyG 3 Años!F34"
+   ],
+   "fila": "Derechos de autor por música ambiental",
+   "valor_us": 600,
+   "pistas": [
+    "P05",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0952",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995) — el checklist F4 lo corrige. Un obrador tiene riesgos específicos (quemaduras, cargas, harina en suspensión) que el propio checklist ya nombra (F4!E10)",
+   "donde": [
+    "PANP · PyG 3 Años!F35"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 500,
+   "pistas": [
+    "P05",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0953",
+   "es": "Suelo que declara este mismo kit en la tabla «Datos de referencia del sector» de la hoja de Instrucciones: «Margen bruto objetivo: > 62 %»",
+   "donde": [
+    "PANP · PyG 3 Años!F51"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.6,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0954",
+   "es": "Techo del blend que publica este producto en esa misma tabla de referencias: pan 25-30 %, bollería 32-38 % y café 25-30 %",
+   "donde": [
+    "PANP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.33
+  },
+  {
+   "id": "c0955",
+   "es": "Techo del extremo ALTO del rango que publica este producto en la tabla de referencias de la hoja de Instrucciones («Coste de personal sobre ventas: 35-42 %»), el más alto de los cinco planes de restauración de esta línea. La nota de esa misma fila explica por qué: turno de madrugada y doble oficio (producción + venta). Usar el extremo bajo (35 %, el criterio de una cafetería) habría exigido una plantilla por debajo del mínimo operable de un obrador con horno diario",
+   "donde": [
+    "PANP · PyG 3 Años!F54"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.38,
+   "pistas": [
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0956",
+   "es": "Techo del extremo estricto que declara este mismo kit en la tabla de referencias de la hoja de Instrucciones: «Alquiler sobre ventas: 10-14 %»",
+   "donde": [
+    "PANP · PyG 3 Años!F55"
+   ],
+   "fila": "Alquiler / Ventas",
+   "valor_us": 0.1,
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0957",
+   "es": "Derivado del suelo de EBITDA que declara este producto para el año 2 en la tabla de referencias de la hoja de Instrucciones («EBITDA objetivo (año 2): 10-18 %, el primer año puede ser negativo»): descontando amortización, intereses e Impuesto de Sociedades, un EBITDA en la franja baja deja un resultado neto en torno al 5 %",
+   "donde": [
+    "PANP · PyG 3 Años!F56"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05,
+   "pistas": [
+    "P05",
+    "P24",
+    "P25",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0959",
+   "es": "PUNTO DE EQUILIBRIO",
+   "donde": [
+    "PANP · Punto Equilibrio!A1"
+   ]
+  },
+  {
+   "id": "c0960",
+   "es": "Coste variable por transacción",
+   "donde": [
+    "PANP · Punto Equilibrio!A9"
+   ]
+  },
+  {
+   "id": "c0961",
+   "es": "Margen de contribución por transacción",
+   "donde": [
+    "PANP · Punto Equilibrio!A10"
+   ]
+  },
+  {
+   "id": "c0962",
+   "es": "Transacciones necesarias al año",
+   "donde": [
+    "PANP · Punto Equilibrio!A14"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0963",
+   "es": "Transacciones necesarias al día",
+   "donde": [
+    "PANP · Punto Equilibrio!A15"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0964",
+   "es": "Transacciones necesarias al año (caja)",
+   "donde": [
+    "PANP · Punto Equilibrio!A19"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0965",
+   "es": "Transacciones necesarias al día (caja)",
+   "donde": [
+    "PANP · Punto Equilibrio!A20"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0966",
+   "es": "Transacciones/día previstos en el plan",
+   "donde": [
+    "PANP · Punto Equilibrio!A23"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0967",
+   "es": "Transacciones/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por transacción (filas). En verde, los que están por debajo de las transacciones que prevé el plan.",
+   "donde": [
+    "PANP · Punto Equilibrio!A29"
+   ],
+   "pistas": [
+    "P08",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0968",
+   "es": "Transacciones/día necesarios: ticket medio sin IVA (columnas) × coste variable por transacción (filas)",
+   "donde": [
+    "PANP · Punto Equilibrio!A31"
+   ],
+   "pistas": [
+    "P05",
+    "P07",
+    "P08",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0970",
+   "es": "ESCENARIOS",
+   "donde": [
+    "PANP · Escenarios!A1"
+   ]
+  },
+  {
+   "id": "c0971",
+   "es": "Transacciones/día",
+   "donde": [
+    "PANP · Escenarios!A5"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0972",
+   "es": "Transacciones/día para el equilibrio",
+   "donde": [
+    "PANP · Escenarios!A21"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0973",
+   "es": "Transacciones al año por jornada equivalente",
+   "donde": [
+    "PANP · Escenarios!A24"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0974",
+   "es": "Transacciones que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+   "donde": [
+    "PANP · Escenarios!E24"
+   ],
+   "fila": "Transacciones al año por jornada equivalente",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0975",
+   "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son las transacciones, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+   "donde": [
+    "PANP · Escenarios!A28"
+   ],
+   "pistas": [
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0977",
+   "es": "PERSONAL Y COSTES",
+   "donde": [
+    "PANP · Personal!A1"
+   ]
+  },
+  {
+   "id": "c0978",
+   "es": "Maestro panadero / Propietario/a",
+   "donde": [
+    "PANP · Personal!A5"
+   ]
+  },
+  {
+   "id": "c0979",
+   "es": "Turno de madrugada (4:00-5:00 AM, checklist F4): amasado, formado y horneado de la primera hornada, más gestión y compras. Es el puesto de mayor cualificación del obrador",
+   "donde": [
+    "PANP · Personal!J5"
+   ],
+   "fila": "Maestro panadero / Propietario/a",
+   "valor_us": {
+    "B": 1,
+    "C": 1,
+    "D": 4000
+   },
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0980",
+   "es": "Oficial panadero",
+   "donde": [
+    "PANP · Personal!A6"
+   ]
+  },
+  {
+   "id": "c0981",
+   "es": "Segunda hornada y bollería del turno de mañana; cubre al maestro panadero en sus descansos",
+   "donde": [
+    "PANP · Personal!J6"
+   ],
+   "fila": "Oficial panadero",
+   "valor_us": {
+    "B": 1,
+    "C": 1,
+    "D": 3300
+   }
+  },
+  {
+   "id": "c0982",
+   "es": "Ayudante/a de obrador",
+   "donde": [
+    "PANP · Personal!A7"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0983",
+   "es": "Pesaje, limpieza, carga/descarga de hornos y apoyo en fermentación (Personal!F7 de la v1.1)",
+   "donde": [
+    "PANP · Personal!J7"
+   ],
+   "fila": "Ayudante/a de obrador",
+   "valor_us": {
+    "B": 1,
+    "C": 1,
+    "D": 2800
+   },
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0984",
+   "es": "Dependienta/e de tienda",
+   "donde": [
+    "PANP · Personal!A8"
+   ]
+  },
+  {
+   "id": "c0985",
+   "es": "Atención al cliente, caja y reposición de vitrina durante toda la jornada de apertura",
+   "donde": [
+    "PANP · Personal!J8"
+   ],
+   "fila": "Dependienta/e de tienda",
+   "valor_us": {
+    "B": 3,
+    "C": 0.67,
+    "D": 5200
+   },
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0986",
+   "es": "Refuerzo del pico de sábado-domingo mañana, cuando la demanda de bollería sube (Personal!F9 de la v1.1)",
+   "donde": [
+    "PANP · Personal!J9"
+   ],
+   "fila": "Extra de fin de semana",
+   "valor_us": {
+    "B": 1,
+    "C": 0.4,
+    "D": 1040
+   },
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0987",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo de obrador",
+   "donde": [
+    "PANP · Personal!J10"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "B": 1,
+    "C": 0.15,
+    "D": 390
+   },
+   "pistas": [
+    "P05",
+    "P16",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0988",
+   "es": "De la apertura al cierre de la TIENDA. El turno de obrador va en la fila de abajo y no se solapa con el mostrador. Cuéntalas sobre tu horario real",
+   "donde": [
+    "PANP · Personal!J20"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 12,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0989",
+   "es": "Presencia media simultánea en el mostrador a lo largo del día: una persona fija más el refuerzo de las puntas de la mañana y de la merienda",
+   "donde": [
+    "PANP · Personal!J21"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 1.5
+  },
+  {
+   "id": "c0990",
+   "es": "Horas de producción al día ANTES de abrir",
+   "donde": [
+    "PANP · Personal!A22"
+   ]
+  },
+  {
+   "id": "c0991",
+   "es": "Turno de madrugada (4:00-5:00 AM, checklist F4): amasado, formado y horneado de la primera hornada, ANTES de abrir la tienda",
+   "donde": [
+    "PANP · Personal!J22"
+   ],
+   "fila": "Horas de producción al día ANTES de abrir",
+   "valor_us": 4
+  },
+  {
+   "id": "c0992",
+   "es": "Personas en el turno de producción",
+   "donde": [
+    "PANP · Personal!A23"
+   ]
+  },
+  {
+   "id": "c0993",
+   "es": "El maestro panadero. Si tu obrador arranca con dos personas, súbelo aquí",
+   "donde": [
+    "PANP · Personal!J23"
+   ],
+   "fila": "Personas en el turno de producción",
+   "valor_us": 2,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0994",
+   "es": "INSTRUCCIONES DE USO — Plan financiero Panadería / Obrador",
+   "donde": [
+    "PANP · Instrucciones!A1"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0995",
+   "es": "1. «0. Supuestos» es la hoja de mando: transacciones, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+   "donde": [
+    "PANP · Instrucciones!A5"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "pistas": [
+    "P05",
+    "P07",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0996",
+   "es": "3. Sólo «Punto Equilibrio» se deriva entera de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+   "donde": [
+    "PANP · Instrucciones!A7"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Punto Equilibrio",
+     "en": "Break-Even"
+    },
+    {
+     "es": "Escenarios",
+     "en": "Scenarios"
+    },
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    },
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "propuesta_en": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+   "propuesta_de": "GFT c0381 (FTP Instrucciones!A7)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0997",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,04 el pan común y las harinas panificables (tipo superreducido, art. 91.Dos.1.1.º de la Ley 37/1992 del IVA); entre 1,10 todo el consumo en el acto —comida y bebida, alcohol incluido— (art. 91.Uno.2.2.º) y, cuando se venden para llevar, los demás alimentos, bollería y pastelería incluidas, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica al alcohol del canal de delivery. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "PANP · Instrucciones!A8"
+   ],
+   "pistas": [
+    "P05",
+    "P07",
+    "P26",
+    "P08",
+    "P03",
+    "P27",
+    "P28"
+   ]
+  },
+  {
+   "id": "c1000",
+   "es": "8. El documento Word de este pack es el de la versión 1.1: las cifras válidas son las de este Excel, que es el que se recalcula solo cuando cambias un supuesto.",
+   "donde": [
+    "PANP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P02",
+    "P29"
+   ]
+  },
+  {
+   "id": "c1001",
+   "es": "Transacciones/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+   "donde": [
+    "PANP · Instrucciones!A30"
+   ],
+   "pistas": [
+    "P25",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1002",
+   "es": "Coste de personal imputado al P&L",
+   "donde": [
+    "PANP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1003",
+   "es": "72.000 €",
+   "donde": [
+    "PANP · Instrucciones!B35"
+   ],
+   "fila": "Coste de personal imputado al P&L",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1004",
+   "es": "Sale de la hoja Personal, por fórmula",
+   "donde": [
+    "PANP · Instrucciones!C35"
+   ],
+   "fila": "Coste de personal imputado al P&L",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1005",
+   "es": "La cuenta de resultados llevaba tecleada una cifra distinta de la que sumaba su propia hoja de Personal (135.408 €): 63.408 € de diferencia. Con la cifra buena, el coste laboral se comía el 67,7 % de las ventas y el negocio no se sostenía",
+   "donde": [
+    "PANP · Instrucciones!D35"
+   ],
+   "fila": "Coste de personal imputado al P&L",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06",
+    "P27"
+   ]
+  },
+  {
+   "id": "c1006",
+   "es": "Plantilla",
+   "donde": [
+    "PANP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1007",
+   "es": "5 puestos / 135.408 €",
+   "donde": [
+    "PANP · Instrucciones!B36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1008",
+   "es": "6 puestos con las jornadas ajustadas / 113.861 €",
+   "donde": [
+    "PANP · Instrucciones!C36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1009",
+   "es": "Dimensionada por las horas que hay que cubrir de verdad —turno de madrugada del obrador, jornada de tienda y una línea para las suplencias de vacaciones y descansos, que antes no existía— y con el techo del 42 % de coste de personal sobre ventas que declara este mismo libro. Ninguna nómina baja del salario mínimo en proporción a su jornada",
+   "donde": [
+    "PANP · Instrucciones!D36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P16",
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1010",
+   "es": "Transacciones al día",
+   "donde": [
+    "PANP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P01"
+   ]
+  },
+  {
+   "id": "c1011",
+   "es": "148 (200.000 € ÷ 4,50 € ÷ 300 días: una cifra derivada, no un dato)",
+   "donde": [
+    "PANP · Instrucciones!B37"
+   ],
+   "fila": "Transacciones al día",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06",
+    "P27"
+   ]
+  },
+  {
+   "id": "c1012",
+   "es": "180",
+   "donde": [
+    "PANP · Instrucciones!C37"
+   ],
+   "fila": "Transacciones al día",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1013",
+   "es": "Dentro del rango 80-200 que la versión anterior publicaba como escenario pesimista y optimista. Con 165 el resultado neto se quedaba por debajo del 5 % que este libro fija como suelo: los costes fijos no crecen con el volumen, así que cada transacción de más va casi entera al resultado",
+   "donde": [
+    "PANP · Instrucciones!D37"
+   ],
+   "fila": "Transacciones al día",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P02"
+   ]
+  },
+  {
+   "id": "c1014",
+   "es": "Ticket medio",
+   "donde": [
+    "PANP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1015",
+   "es": "4,50 € (sin decir si llevaba IVA)",
+   "donde": [
+    "PANP · Instrucciones!B38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P06",
+    "P27"
+   ]
+  },
+  {
+   "id": "c1016",
+   "es": "5,50 € SIN IVA",
+   "donde": [
+    "PANP · Instrucciones!C38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P06",
+    "P07",
+    "P27"
+   ]
+  },
+  {
+   "id": "c1017",
+   "es": "Ahora se declara sin IVA, que es como se proyecta un negocio. Está en el tercio alto del rango 3-6 € del propio libro porque el ticket combina barra de pan, bollería y café, no sólo la barra",
+   "donde": [
+    "PANP · Instrucciones!D38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P06",
+    "P07"
+   ]
+  },
+  {
+   "id": "c1018",
+   "es": "Alquiler",
+   "donde": [
+    "PANP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1019",
+   "es": "2.000 €/mes (24.000 €/año)",
+   "donde": [
+    "PANP · Instrucciones!B39"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1020",
+   "es": "2.100 €/mes",
+   "donde": [
+    "PANP · Instrucciones!C39"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1021",
+   "es": "Un obrador necesita más metros que una tienda sola: obrador, tienda y almacén suman los 80 m² mínimos que pide el checklist. Con las ventas del caso base son el 8,2 % de la facturación, por debajo del 10-14 % que declara este mismo libro",
+   "donde": [
+    "PANP · Instrucciones!D39"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P11",
+    "P27",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1022",
+   "es": "Suministros",
+   "donde": [
+    "PANP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1023",
+   "es": "800 €/mes (9.600 €/año)",
+   "donde": [
+    "PANP · Instrucciones!B40"
+   ],
+   "fila": "Suministros",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1024",
+   "es": "875 €/mes",
+   "donde": [
+    "PANP · Instrucciones!C40"
+   ],
+   "fila": "Suministros",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1025",
+   "es": "Hornos de 30-40 kW de potencia contratada: el consumo eléctrico de un obrador no es el de una tienda. Pide el histórico del local antes de firmar el contrato",
+   "donde": [
+    "PANP · Instrucciones!D40"
+   ],
+   "fila": "Suministros",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P02",
+    "P12",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1026",
+   "es": "Calendario de apertura",
+   "donde": [
+    "PANP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1027",
+   "es": "Punto de equilibrio calculado a 30 días al mes y escenarios a 300-320 días al año",
+   "donde": [
+    "PANP · Instrucciones!B41"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1028",
+   "es": "310 días al año, un único dato en Supuestos",
+   "donde": [
+    "PANP · Instrucciones!C41"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1029",
+   "es": "El libro traía dos calendarios distintos y el punto de equilibrio diario salía entre un 17 y un 20 % por debajo del que corresponde a los días que el propio libro declaraba abrir",
+   "donde": [
+    "PANP · Instrucciones!D41"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1030",
+   "es": "Fondo de maniobra",
+   "donde": [
+    "PANP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1031",
+   "es": "8.000 € etiquetados «3 meses»",
+   "donde": [
+    "PANP · Instrucciones!B42"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1032",
+   "es": "3 × los costes fijos de caja mensuales, por fórmula",
+   "donde": [
+    "PANP · Instrucciones!C42"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1033",
+   "es": "Los 8.000 € cubrían 0,80 meses, no 3. Ahora el colchón se calcula solo y se mueve cuando cambian los costes: si subes el alquiler o la plantilla, sube con ellos",
+   "donde": [
+    "PANP · Instrucciones!D42"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06",
+    "P27"
+   ]
+  },
+  {
+   "id": "c1034",
+   "es": "Amortización",
+   "donde": [
+    "PANP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P25"
+   ]
+  },
+  {
+   "id": "c1035",
+   "es": "10.450 €/año a 10 años planos sobre TODA la inversión, colchón de caja e imprevistos incluidos",
+   "donde": [
+    "PANP · Instrucciones!B43"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1036",
+   "es": "Obra e instalaciones a 10 años y maquinaria a 9 / 9.292 €/año",
+   "donde": [
+    "PANP · Instrucciones!C43"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1037",
+   "es": "Sólo se amortiza el inmovilizado: ni el colchón de caja, ni las existencias, ni los imprevistos, que no son bienes. Y la maquinaria a 9 años porque el coeficiente lineal máximo del art. 12.1 de la Ley del Impuesto sobre Sociedades es del 12 % anual: a 8 años el exceso no sería deducible",
+   "donde": [
+    "PANP · Instrucciones!D43"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P24"
+   ]
+  },
+  {
+   "id": "c1038",
+   "es": "Imprevistos de obra",
+   "donde": [
+    "PANP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1039",
+   "es": "7.500 € redondos bajo el rótulo «Imprevistos (8%)»",
+   "donde": [
+    "PANP · Instrucciones!B44"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1040",
+   "es": "3.700 € (10 % sobre las partidas de obra, por fórmula)",
+   "donde": [
+    "PANP · Instrucciones!C44"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1041",
+   "es": "La cifra anterior era un número redondo escrito a mano que no salía de ningún porcentaje del propio libro. Ahora el colchón se calcula sólo sobre lo que de verdad se puede desviar en una reforma —proyecto técnico, obra civil, instalación eléctrica, salida de humos y rotulación—, y no sobre el equipamiento, que se compra con precio cerrado: por eso la cifra BAJA aunque el porcentaje que la calcula sea mayor. Ese porcentaje vive en la hoja de Supuestos: cámbialo y la cifra se recalcula sola, en vez de rehacerse a mano cada vez que se toca un presupuesto",
+   "donde": [
+    "PANP · Instrucciones!D44"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P19",
+    "P12"
+   ]
+  },
+  {
+   "id": "c1042",
+   "es": "Impuesto de Sociedades",
+   "donde": [
+    "PANP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P24"
+   ]
+  },
+  {
+   "id": "c1043",
+   "es": "25 % en los años 2 y 3, sin compensar las pérdidas del año 1",
+   "donde": [
+    "PANP · Instrucciones!B45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1044",
+   "es": "15 % en los dos primeros ejercicios con beneficio, compensando las bases negativas",
+   "donde": [
+    "PANP · Instrucciones!C45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P24"
+   ]
+  },
+  {
+   "id": "c1045",
+   "es": "Es lo que fijan los artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades para una entidad de nueva creación",
+   "donde": [
+    "PANP · Instrucciones!D45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P24",
+    "P13"
+   ]
+  },
+  {
+   "id": "c1046",
+   "es": "Crecimiento del año 2",
+   "donde": [
+    "PANP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1047",
+   "es": "+25 % (de 200.000 € a 250.000 €)",
+   "donde": [
+    "PANP · Instrucciones!B46"
+   ],
+   "fila": "Crecimiento del año 2",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1048",
+   "es": "+12 %",
+   "donde": [
+    "PANP · Instrucciones!C46"
+   ],
+   "fila": "Crecimiento del año 2",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1049",
+   "es": "La versión anterior proyectaba un salto del 25 % en el año 2 y otro del 20 % en el año 3. Aquí se proyecta menos de la mitad, que es lo prudente, pero no menos: el año 2 es el que carga de golpe la devolución del principal del préstamo al terminar la carencia, y con un crecimiento del 10 % la holgura sobre el punto de equilibrio de caja se quedaba por debajo del 15 % que el propio libro exige",
+   "donde": [
+    "PANP · Instrucciones!D46"
+   ],
+   "fila": "Crecimiento del año 2",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P13",
+    "P14",
+    "P02"
+   ]
+  },
+  {
+   "id": "c1050",
+   "es": "Días medios de cobro",
+   "donde": [
+    "PANP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1051",
+   "es": "0 días: todo al contado",
+   "donde": [
+    "PANP · Instrucciones!B47"
+   ],
+   "fila": "Días medios de cobro",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1052",
+   "es": "3 días de media ponderada",
+   "donde": [
+    "PANP · Instrucciones!C47"
+   ],
+   "fila": "Días medios de cobro",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1053",
+   "es": "El mostrador cobra al contado, pero un restaurante o un hotel paga a 30 días, que es el plazo por defecto del art. 4 de la Ley 3/2004 contra la morosidad. Con el peso que este negocio da al canal mayorista, la media son 3 días, y la hoja de Tesorería ya los tiene en cuenta",
+   "donde": [
+    "PANP · Instrucciones!D47"
+   ],
+   "fila": "Días medios de cobro",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1054",
+   "es": "Plan de financiación",
+   "donde": [
+    "PANP · Instrucciones!A48"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1055",
+   "es": "no existía",
+   "donde": [
+    "PANP · Instrucciones!B48"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1056",
+   "es": "Hoja «Financiación»: origen de fondos, usos y cuadro de amortización francés",
+   "donde": [
+    "PANP · Instrucciones!C48"
+   ],
+   "fila": "Plan de financiación",
+   "cita_hojas": [
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P25",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1057",
+   "es": "Es la hoja que el banco pide junto con la cuenta de resultados, y el pack no la traía. Ahora comprueba además que lo que se aporta cubre lo que hace falta",
+   "donde": [
+    "PANP · Instrucciones!D48"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P13"
+   ]
+  },
+  {
+   "id": "c1058",
+   "es": "Tesorería mensual",
+   "donde": [
+    "PANP · Instrucciones!A49"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1059",
+   "es": "no existía",
+   "donde": [
+    "PANP · Instrucciones!B49"
+   ],
+   "fila": "Tesorería mensual",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1060",
+   "es": "Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo acumulado",
+   "donde": [
+    "PANP · Instrucciones!C49"
+   ],
+   "fila": "Tesorería mensual",
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P26",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1061",
+   "es": "Responde la pregunta que decide una operación bancaria: en qué mes se agota la caja",
+   "donde": [
+    "PANP · Instrucciones!D49"
+   ],
+   "fila": "Tesorería mensual",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1062",
+   "es": "Epígrafe de IAE",
+   "donde": [
+    "PANP · Instrucciones!A50"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05"
+   ]
+  },
+  {
+   "id": "c1063",
+   "es": "«471.1 pan y bollería», que no existe",
+   "donde": [
+    "PANP · Instrucciones!B50"
+   ],
+   "fila": "Epígrafe de IAE",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1064",
+   "es": "644.1 (venta al por menor de pan y pastelería), con aviso del 419.1 si el mayorista pesa",
+   "donde": [
+    "PANP · Instrucciones!C50"
+   ],
+   "fila": "Epígrafe de IAE",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1065",
+   "es": "El 471 no es un grupo del IAE de panadería. La elección final la valida tu gestor: condiciona inspecciones y licencia",
+   "donde": [
+    "PANP · Instrucciones!D50"
+   ],
+   "fila": "Epígrafe de IAE",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c1066",
+   "es": "Registro sanitario",
+   "donde": [
+    "PANP · Instrucciones!A51"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1067",
+   "es": "exigía el registro estatal sin matices",
+   "donde": [
+    "PANP · Instrucciones!B51"
+   ],
+   "fila": "Registro sanitario",
+   "por_celda": true,
+   "pistas": [
+    "P30"
+   ]
+  },
+  {
+   "id": "c1068",
+   "es": "Registro de tu Comunidad Autónoma, con aviso para el canal mayorista",
+   "donde": [
+    "PANP · Instrucciones!C51"
+   ],
+   "fila": "Registro sanitario",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1069",
+   "es": "El registro estatal no alcanza al minorista que vende al consumidor final (art. 2.2 del RD 191/2011). Pero la exención del minorista puro no cubre automáticamente la venta a otros negocios: si el mayorista crece, consúltalo con tu gestoría",
+   "donde": [
+    "PANP · Instrucciones!D51"
+   ],
+   "fila": "Registro sanitario",
+   "por_celda": true,
+   "pistas": [
+    "P30",
+    "P05",
+    "P22",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1070",
+   "es": "Food cost pan artesanal",
+   "donde": [
+    "PANP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1071",
+   "es": "25-30 %",
+   "donde": [
+    "PANP · Instrucciones!B55"
+   ],
+   "fila": "Food cost pan artesanal",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1072",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C55"
+   ],
+   "fila": "Food cost pan artesanal",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1073",
+   "es": "Harina + levadura + agua = bajo coste unitario",
+   "donde": [
+    "PANP · Instrucciones!D55"
+   ],
+   "fila": "Food cost pan artesanal",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1074",
+   "es": "Food cost bollería",
+   "donde": [
+    "PANP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1075",
+   "es": "32-38 %",
+   "donde": [
+    "PANP · Instrucciones!B56"
+   ],
+   "fila": "Food cost bollería",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1076",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C56"
+   ],
+   "fila": "Food cost bollería",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1077",
+   "es": "Mantequilla y chocolate suben el coste",
+   "donde": [
+    "PANP · Instrucciones!D56"
+   ],
+   "fila": "Food cost bollería",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1078",
+   "es": "Food cost café",
+   "donde": [
+    "PANP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1079",
+   "es": "25-30 %",
+   "donde": [
+    "PANP · Instrucciones!B57"
+   ],
+   "fila": "Food cost café",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1080",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C57"
+   ],
+   "fila": "Food cost café",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1081",
+   "es": "Café de grano, margen alto",
+   "donde": [
+    "PANP · Instrucciones!D57"
+   ],
+   "fila": "Food cost café",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1082",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "PANP · Instrucciones!A58"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1083",
+   "es": "35-42 %",
+   "donde": [
+    "PANP · Instrucciones!B58"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1084",
+   "es": "Versión anterior de este kit — contrástalo con tu convenio",
+   "donde": [
+    "PANP · Instrucciones!C58"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1085",
+   "es": "El más alto de la línea de planes de restauración: turno de madrugada y doble oficio (producción + venta)",
+   "donde": [
+    "PANP · Instrucciones!D58"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1086",
+   "es": "Alquiler sobre ventas",
+   "donde": [
+    "PANP · Instrucciones!A59"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1087",
+   "es": "10-14 %",
+   "donde": [
+    "PANP · Instrucciones!B59"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1088",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C59"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1089",
+   "es": "Un obrador necesita más metros que una tienda sola: el alquiler pesa más que en una cafetería",
+   "donde": [
+    "PANP · Instrucciones!D59"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1090",
+   "es": "Ticket medio panadería",
+   "donde": [
+    "PANP · Instrucciones!A60"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1091",
+   "es": "3-6 €",
+   "donde": [
+    "PANP · Instrucciones!B60"
+   ],
+   "fila": "Ticket medio panadería",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P06"
+   ]
+  },
+  {
+   "id": "c1092",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C60"
+   ],
+   "fila": "Ticket medio panadería",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1093",
+   "es": "Barra de pan + bollería + café. El ticket SIN IVA de ESTE plan lo calcula la hoja 0. Supuestos",
+   "donde": [
+    "PANP · Instrucciones!D60"
+   ],
+   "fila": "Ticket medio panadería",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P05",
+    "P07"
+   ]
+  },
+  {
+   "id": "c1094",
+   "es": "Producción diaria (kg pan)",
+   "donde": [
+    "PANP · Instrucciones!A61"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1095",
+   "es": "80-200 kg",
+   "donde": [
+    "PANP · Instrucciones!B61"
+   ],
+   "fila": "Producción diaria (kg pan)",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P20"
+   ]
+  },
+  {
+   "id": "c1096",
+   "es": "Versión anterior de este kit — depende de tu horno",
+   "donde": [
+    "PANP · Instrucciones!C61"
+   ],
+   "fila": "Producción diaria (kg pan)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1097",
+   "es": "Depende del horno y del equipo instalado",
+   "donde": [
+    "PANP · Instrucciones!D61"
+   ],
+   "fila": "Producción diaria (kg pan)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1098",
+   "es": "Merma de pan (no vendido)",
+   "donde": [
+    "PANP · Instrucciones!A62"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1099",
+   "es": "5-10 %",
+   "donde": [
+    "PANP · Instrucciones!B62"
+   ],
+   "fila": "Merma de pan (no vendido)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1100",
+   "es": "Versión anterior de este kit — mídela tú cada semana",
+   "donde": [
+    "PANP · Instrucciones!C62"
+   ],
+   "fila": "Merma de pan (no vendido)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1101",
+   "es": "Pan del día: lo que no se vende se pierde — vigílalo cada semana (checklist F6)",
+   "donde": [
+    "PANP · Instrucciones!D62"
+   ],
+   "fila": "Merma de pan (no vendido)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1102",
+   "es": "Margen bruto objetivo",
+   "donde": [
+    "PANP · Instrucciones!A63"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1103",
+   "es": "> 62 %",
+   "donde": [
+    "PANP · Instrucciones!B63"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1104",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C63"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1105",
+   "es": "El pan artesanal tiene mejor margen que el industrial",
+   "donde": [
+    "PANP · Instrucciones!D63"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1106",
+   "es": "Hora de inicio de producción",
+   "donde": [
+    "PANP · Instrucciones!A64"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1107",
+   "es": "4:00-5:00 AM",
+   "donde": [
+    "PANP · Instrucciones!B64"
+   ],
+   "fila": "Hora de inicio de producción",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1108",
+   "es": "Versión anterior de este kit",
+   "donde": [
+    "PANP · Instrucciones!C64"
+   ],
+   "fila": "Hora de inicio de producción",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1109",
+   "es": "Turno de madrugada crítico para tener pan a las 7:30",
+   "donde": [
+    "PANP · Instrucciones!D64"
+   ],
+   "fila": "Hora de inicio de producción",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1110",
+   "es": "EBITDA objetivo (año 2)",
+   "donde": [
+    "PANP · Instrucciones!A65"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1111",
+   "es": "10-18 %",
+   "donde": [
+    "PANP · Instrucciones!B65"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1112",
+   "es": "Versión anterior de este kit — contrástalo en tu zona",
+   "donde": [
+    "PANP · Instrucciones!C65"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1113",
+   "es": "El primer año puede ser negativo: es normal en un obrador nuevo",
+   "donde": [
+    "PANP · Instrucciones!D65"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1114",
+   "es": "Retorno de la inversión",
+   "donde": [
+    "PANP · Instrucciones!A66"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1115",
+   "es": "lo calcula este libro: fila «Payback del proyecto»",
+   "donde": [
+    "PANP · Instrucciones!B66"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1116",
+   "es": "Calculado por este libro, no copiado",
+   "donde": [
+    "PANP · Instrucciones!C66"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1117",
+   "es": "La versión anterior publicaba «24-36 meses» como si fuera un dato del sector. Aquí no se copia de nadie: el propio libro lo calcula con SU inversión y SUS flujos de caja antes de la deuda, y lo publica arriba, en la fila «Payback del proyecto» del bloque de cifras. Un obrador tarda más en devolver la inversión que una cafetería, porque el horno, la amasadora y las cámaras se pagan el primer día",
+   "donde": [
+    "PANP · Instrucciones!D66"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P02",
+    "P03",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1118",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "PANP · Instrucciones!A67"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1119",
+   "es": "PROVINCIAL de hostelería/alimentación",
+   "donde": [
+    "PANP · Instrucciones!B67"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1120",
+   "es": "Checklist de apertura, fase 4",
+   "donde": [
+    "PANP · Instrucciones!C67"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1121",
+   "es": "No existe una tabla salarial estatal única: copia la tabla de tu provincia en la celda de Supuestos",
+   "donde": [
+    "PANP · Instrucciones!D67"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c1124",
+   "es": "Cada línea de venta a SU tipo, leído de la columna de IVA del P&L: en mostrador, alcohol incluido, el reducido (art. 91.Uno.2.2.º de la Ley 37/1992 del IVA); el alcohol que sale por delivery, al general; el pan común y las harinas panificables, al superreducido (art. 91.Dos.1.1.º)",
+   "donde": [
+    "PANP · Tesorería 12 meses!O16"
+   ],
+   "fila": "IVA repercutido del mes (memoria)",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1130",
+   "es": "CHECKLIST APERTURA — PANADERÍA / OBRADOR",
+   "donde": [
+    "PANC · F1!A1",
+    "PANC · F2!A1",
+    "PANC · F3!A1",
+    "PANC · F4!A1",
+    "PANC · F5!A1",
+    "PANC · F6!A1"
+   ]
+  },
+  {
+   "id": "c1131",
+   "es": "FASE 1: CONSTITUCIÓN",
+   "donde": [
+    "PANC · F1!A2"
+   ]
+  },
+  {
+   "id": "c1132",
+   "es": "TRÁMITE",
+   "donde": [
+    "PANC · F1!B4",
+    "PANC · F2!B4",
+    "PANC · F3!B4",
+    "PANC · F4!B4",
+    "PANC · F5!B4",
+    "PANC · F6!B4"
+   ],
+   "fila": "OK"
+  },
+  {
+   "id": "c1136",
+   "es": "Forma jurídica (SL)",
+   "donde": [
+    "PANC · F1!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1138",
+   "es": "Sem 1",
+   "donde": [
+    "PANC · F1!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1139",
+   "es": "Capital 1 €",
+   "donde": [
+    "PANC · F1!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1140",
+   "es": "Constitución SL",
+   "donde": [
+    "PANC · F1!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1141",
+   "es": "1-3d",
+   "donde": [
+    "PANC · F1!D6",
+    "PANC · F1!D9",
+    "PANC · F1!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1142",
+   "es": "Alta Hacienda 036",
+   "donde": [
+    "PANC · F1!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1143",
+   "es": "1d",
+   "donde": [
+    "PANC · F1!D7",
+    "PANC · F1!D8",
+    "PANC · F1!D12",
+    "PANC · F2!D11",
+    "PANC · F4!D7",
+    "PANC · F4!D9",
+    "… y 5 apariciones más"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1144",
+   "es": "Epígrafe IAE: 644.1 (comercio al por menor de pan, pastelería, confitería y similares) para la venta en tienda; si el canal mayorista pesa de verdad en tu facturación, consulta con tu gestor si corresponde además el 419.1 (industrias del pan, la bollería y la pastelería) — la elección la valida tu gestor",
+   "donde": [
+    "PANC · F1!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P22",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1145",
+   "es": "Alta SS",
+   "donde": [
+    "PANC · F1!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1146",
+   "es": "Certificado digital",
+   "donde": [
+    "PANC · F1!B9"
+   ],
+   "fila": "☐",
+   "propuesta_en": "City or county business license",
+   "propuesta_de": "GFT c0682 (FTC F1 - Constitución!B9)"
+  },
+  {
+   "id": "c1148",
+   "es": "Cuenta bancaria",
+   "donde": [
+    "PANC · F1!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1149",
+   "es": "Sanidad",
+   "donde": [
+    "PANC · F1!C11"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Health department",
+   "propuesta_de": "GCAF c1145 (CAFC F1 - Constitución!C12)",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1150",
+   "es": "El Registro General Sanitario estatal (RGSEAA) NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca por la venta en tienda es el autonómico. PERO si el canal mayorista (venta a otros negocios: restaurantes, hoteles) crece más allá de un reparto puntual, consulta con tu gestoría si tu volumen y forma de venta te obligan además a la inscripción en el RGSEAA — la exención del minorista puro no cubre automáticamente al mayorista",
+   "donde": [
+    "PANC · F1!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P22",
+    "P02",
+    "P32",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1151",
+   "es": "Seguro RC",
+   "donde": [
+    "PANC · F1!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1153",
+   "es": "Mínimo 300.000 € de cobertura",
+   "donde": [
+    "PANC · F1!E12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c1154",
+   "es": "Marca OEPM (opc)",
+   "donde": [
+    "PANC · F1!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P33"
+   ]
+  },
+  {
+   "id": "c1155",
+   "es": "OEPM",
+   "donde": [
+    "PANC · F1!C13"
+   ],
+   "fila": "☐",
+   "propuesta_en": "USPTO",
+   "propuesta_de": "GCAF c1148 (CAFC F1 - Constitución!C13)",
+   "pistas": [
+    "P05",
+    "P33"
+   ]
+  },
+  {
+   "id": "c1156",
+   "es": "4-6m",
+   "donde": [
+    "PANC · F1!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1157",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes, personal y proveedores (harineras, distribuidores)",
+   "donde": [
+    "PANC · F1!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P08"
+   ]
+  },
+  {
+   "id": "c1158",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV + balanza que presupuesta la hoja de Inversión — y ten en cuenta el canal mayorista, que factura a otras empresas",
+   "donde": [
+    "PANC · F1!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P10",
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1162",
+   "es": "FASE 2: LOCAL Y LICENCIAS",
+   "donde": [
+    "PANC · F2!A2"
+   ],
+   "propuesta_en": "PHASE 2: LOCATION & PERMITS",
+   "propuesta_de": "GCAF c1155 (CAFC F2 - Local!A2)"
+  },
+  {
+   "id": "c1163",
+   "es": "Búsqueda local (zona+obrador)",
+   "donde": [
+    "PANC · F2!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1164",
+   "es": "1-3m",
+   "donde": [
+    "PANC · F2!D5",
+    "PANC · F2!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1165",
+   "es": "Mínimo 80 m²: obrador + tienda + almacén",
+   "donde": [
+    "PANC · F2!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P11",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1166",
+   "es": "Contrato alquiler",
+   "donde": [
+    "PANC · F2!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1167",
+   "es": "Abogado",
+   "donde": [
+    "PANC · F2!C6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1168",
+   "es": "1-2sem",
+   "donde": [
+    "PANC · F2!D6",
+    "PANC · F3!D11",
+    "PANC · F3!D12",
+    "PANC · F4!D10",
+    "PANC · F4!D11",
+    "PANC · F5!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1169",
+   "es": "Carencia 2-3 meses obra",
+   "donde": [
+    "PANC · F2!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P14"
+   ]
+  },
+  {
+   "id": "c1170",
+   "es": "Informe urbanístico",
+   "donde": [
+    "PANC · F2!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1171",
+   "es": "Ayto",
+   "donde": [
+    "PANC · F2!C7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1172",
+   "es": "Verificar uso ANTES firmar",
+   "donde": [
+    "PANC · F2!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1173",
+   "es": "Licencia actividad CLASIFICADA",
+   "donde": [
+    "PANC · F2!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c1175",
+   "es": "2-4m",
+   "donde": [
+    "PANC · F2!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1176",
+   "es": "Obrador con horno = clasificada",
+   "donde": [
+    "PANC · F2!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P18",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1177",
+   "es": "Proyecto técnico (salida humos, potencia)",
+   "donde": [
+    "PANC · F2!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19",
+    "P12"
+   ]
+  },
+  {
+   "id": "c1178",
+   "es": "2-4sem",
+   "donde": [
+    "PANC · F2!D9",
+    "PANC · F2!D12",
+    "PANC · F4!D6",
+    "PANC · F5!D10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1179",
+   "es": "Crítico: hornos necesitan mucha potencia",
+   "donde": [
+    "PANC · F2!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c1180",
+   "es": "Licencia obras",
+   "donde": [
+    "PANC · F2!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1181",
+   "es": "Si reforma mayor",
+   "donde": [
+    "PANC · F2!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1182",
+   "es": "Seguro multirriesgo",
+   "donde": [
+    "PANC · F2!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1183",
+   "es": "Incendio crítico por hornos",
+   "donde": [
+    "PANC · F2!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1184",
+   "es": "Contrato suministro eléctrico (30-40 kW)",
+   "donde": [
+    "PANC · F2!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c1185",
+   "es": "Comercializadora",
+   "donde": [
+    "PANC · F2!C12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1186",
+   "es": "Potencia alta: hornos + cámara frío",
+   "donde": [
+    "PANC · F2!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1187",
+   "es": "Contrato con gestor autorizado de residuos",
+   "donde": [
+    "PANC · F2!B14"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Contract with a licensed waste / grease hauler",
+   "propuesta_de": "GCAF c1178 (CAFC F2 - Local!B15)",
+   "pistas": [
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c1188",
+   "es": "Se comprueba en la inspección. Cartón y orgánico (masa y restos de obrador); este plan no fríe, así que no hay aceite usado de fritura que gestionar",
+   "donde": [
+    "PANC · F2!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1189",
+   "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC. La harina almacenada es un foco habitual de plaga: no lo dejes para después de abrir",
+   "donde": [
+    "PANC · F2!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1191",
+   "es": "FASE 3: EQUIPAMIENTO",
+   "donde": [
+    "PANC · F3!A2"
+   ]
+  },
+  {
+   "id": "c1192",
+   "es": "Horno de pisos o rotativo",
+   "donde": [
+    "PANC · F3!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1193",
+   "es": "4-8sem",
+   "donde": [
+    "PANC · F3!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1194",
+   "es": "Pisos=artesanal, rotativo=volumen",
+   "donde": [
+    "PANC · F3!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1195",
+   "es": "Amasadora espiral 25-50kg",
+   "donde": [
+    "PANC · F3!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c1196",
+   "es": "2-3sem",
+   "donde": [
+    "PANC · F3!D6",
+    "PANC · F3!D7",
+    "PANC · F3!D10",
+    "PANC · F3!D14",
+    "PANC · F5!D5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1197",
+   "es": "Producción en serie",
+   "donde": [
+    "PANC · F3!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1198",
+   "es": "Cámara fermentación controlada",
+   "donde": [
+    "PANC · F3!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1199",
+   "es": "3-4sem",
+   "donde": [
+    "PANC · F3!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1200",
+   "es": "Fermentación lenta nocturna programable",
+   "donde": [
+    "PANC · F3!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1201",
+   "es": "2sem",
+   "donde": [
+    "PANC · F3!D9",
+    "PANC · F3!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1202",
+   "es": "Almacén MP + masa congelada",
+   "donde": [
+    "PANC · F3!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1203",
+   "es": "Croissants, hojaldre",
+   "donde": [
+    "PANC · F3!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1204",
+   "es": "Mesa inox + estanterías obrador",
+   "donde": [
+    "PANC · F3!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1205",
+   "es": "Superficie trabajo suficiente",
+   "donde": [
+    "PANC · F3!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1206",
+   "es": "Salida humos + campana + extractor",
+   "donde": [
+    "PANC · F3!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c1207",
+   "es": "Obligatoria",
+   "donde": [
+    "PANC · F3!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1208",
+   "es": "Vitrina expositor",
+   "donde": [
+    "PANC · F3!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1209",
+   "es": "Pan y bollería del día",
+   "donde": [
+    "PANC · F3!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1210",
+   "es": "Mostrador tienda + caja",
+   "donde": [
+    "PANC · F3!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1211",
+   "es": "Carpintero",
+   "donde": [
+    "PANC · F3!C14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1212",
+   "es": "TPV + balanza",
+   "donde": [
+    "PANC · F3!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c1213",
+   "es": "1sem",
+   "donde": [
+    "PANC · F3!D15",
+    "PANC · F3!D16",
+    "PANC · F4!D5",
+    "PANC · F5!D11",
+    "PANC · F5!D13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1214",
+   "es": "Bandejas, moldes, utensilios",
+   "donde": [
+    "PANC · F3!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1216",
+   "es": "FASE 4: PERSONAL",
+   "donde": [
+    "PANC · F4!A2"
+   ]
+  },
+  {
+   "id": "c1217",
+   "es": "Organigrama y turnos",
+   "donde": [
+    "PANC · F4!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1218",
+   "es": "Turno madrugada 4-5AM crítico",
+   "donde": [
+    "PANC · F4!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1219",
+   "es": "Buscar maestro panadero",
+   "donde": [
+    "PANC · F4!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1220",
+   "es": "Experiencia masa madre y fermentación lenta",
+   "donde": [
+    "PANC · F4!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1221",
+   "es": "Contratos",
+   "donde": [
+    "PANC · F4!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1222",
+   "es": "Convenio hostelería/alimentación",
+   "donde": [
+    "PANC · F4!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1223",
+   "es": "Alta SS trabajadores",
+   "donde": [
+    "PANC · F4!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1224",
+   "es": "Antes alta",
+   "donde": [
+    "PANC · F4!D8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1225",
+   "es": "Formación en higiene alimentaria de todo el equipo (el «carnet» está DEROGADO, RD 109/2010: la formación la acredita la EMPRESA y se documenta en el plan APPCC)",
+   "donde": [
+    "PANC · F4!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P03"
+   ]
+  },
+  {
+   "id": "c1226",
+   "es": "PRL (hornos, cargas, madrugada) — el plan de prevención es obligatorio; el proveedor externo, no: con menos de 25 trabajadores y un solo centro el titular puede asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)",
+   "donde": [
+    "PANC · F4!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1227",
+   "es": "Riesgos específicos: quemaduras, harina en aire",
+   "donde": [
+    "PANC · F4!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1228",
+   "es": "Formación masa madre y fermentación",
+   "donde": [
+    "PANC · F4!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1229",
+   "es": "Maestro",
+   "donde": [
+    "PANC · F4!C11",
+    "PANC · F6!C5",
+    "PANC · F6!C9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1230",
+   "es": "Estandarizar: tiempos, temperaturas, hidratación",
+   "donde": [
+    "PANC · F4!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1231",
+   "es": "Formación APPCC panadería",
+   "donde": [
+    "PANC · F4!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c1232",
+   "es": "Alérgenos gluten crítico, trazabilidad harinas",
+   "donde": [
+    "PANC · F4!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1233",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años. Especialmente relevante con el turno de madrugada del maestro panadero",
+   "donde": [
+    "PANC · F4!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P16"
+   ]
+  },
+  {
+   "id": "c1235",
+   "es": "FASE 5: MARKETING",
+   "donde": [
+    "PANC · F5!A2"
+   ]
+  },
+  {
+   "id": "c1236",
+   "es": "Identidad visual",
+   "donde": [
+    "PANC · F5!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c1237",
+   "es": "Estilo artesanal, rústico o moderno",
+   "donde": [
+    "PANC · F5!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1238",
+   "es": "Google My Business",
+   "donde": [
+    "PANC · F5!B6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c1239",
+   "es": "Categoría: Panadería. Fotos pan recién hecho",
+   "donde": [
+    "PANC · F5!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1240",
+   "es": "Instagram",
+   "donde": [
+    "PANC · F5!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1241",
+   "es": "Fotos masa madre, proceso, hornada fresca",
+   "donde": [
+    "PANC · F5!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1242",
+   "es": "Web básica",
+   "donde": [
+    "PANC · F5!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1243",
+   "es": "Dev",
+   "donde": [
+    "PANC · F5!C8"
+   ],
+   "fila": "☐",
+   "propuesta_en": "Developer",
+   "propuesta_de": "GFT c0812 (FTC F5 - Marketing!C8)"
+  },
+  {
+   "id": "c1244",
+   "es": "Con horario, carta, pedidos mayorista",
+   "donde": [
+    "PANC · F5!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1245",
+   "es": "Fotos profesionales",
+   "donde": [
+    "PANC · F5!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1247",
+   "es": "Pan saliendo horno, miga, corteza, obrador",
+   "donde": [
+    "PANC · F5!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1248",
+   "es": "Acuerdos restaurantes/hoteles",
+   "donde": [
+    "PANC · F5!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c1249",
+   "es": "Canal mayorista: ingresos recurrentes",
+   "donde": [
+    "PANC · F5!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1250",
+   "es": "Rotulación",
+   "donde": [
+    "PANC · F5!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1252",
+   "es": "Inauguración",
+   "donde": [
+    "PANC · F5!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1253",
+   "es": "Degustación pan + café gratis",
+   "donde": [
+    "PANC · F5!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1254",
+   "es": "Tarjeta fidelización",
+   "donde": [
+    "PANC · F5!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1255",
+   "es": "La 10.ª barra, gratis",
+   "donde": [
+    "PANC · F5!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1256",
+   "es": "Licencia de derechos de autor por la música ambiental (SGAE/AGEDI-AIE)",
+   "donde": [
+    "PANC · F5!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P05",
+    "P23"
+   ]
+  },
+  {
+   "id": "c1257",
+   "es": "Dos licencias distintas y se pagan las dos, si pones música en la tienda",
+   "donde": [
+    "PANC · F5!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c1258",
+   "es": "Cláusula informativa y consentimiento en la lista de correo y en los acuerdos con el canal mayorista",
+   "donde": [
+    "PANC · F5!B15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1259",
+   "es": "WhatsApp, newsletter y los datos de contacto de restaurantes y hoteles del canal mayorista tratan datos: cada canal necesita su información previa",
+   "donde": [
+    "PANC · F5!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c1261",
+   "es": "FASE 6: 90 DÍAS",
+   "donde": [
+    "PANC · F6!A2"
+   ]
+  },
+  {
+   "id": "c1262",
+   "es": "Control producción diaria (kg)",
+   "donde": [
+    "PANC · F6!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c1263",
+   "es": "Ajustar producción a demanda real",
+   "donde": [
+    "PANC · F6!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1264",
+   "es": "Control merma pan no vendido",
+   "donde": [
+    "PANC · F6!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1265",
+   "es": "Objetivo: <8% merma",
+   "donde": [
+    "PANC · F6!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1266",
+   "es": "Food cost semanal",
+   "donde": [
+    "PANC · F6!B7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1267",
+   "es": "Controlar harina, mantequilla, chocolate",
+   "donde": [
+    "PANC · F6!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1268",
+   "es": "Ajustar carta",
+   "donde": [
+    "PANC · F6!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1270",
+   "es": "Potenciar lo que más se vende",
+   "donde": [
+    "PANC · F6!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1271",
+   "es": "Optimizar horario producción",
+   "donde": [
+    "PANC · F6!B9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1272",
+   "es": "Tener pan fresco a las 7:30 y a las 17:00",
+   "donde": [
+    "PANC · F6!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1273",
+   "es": "Reseñas Google",
+   "donde": [
+    "PANC · F6!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1275",
+   "es": "Pedir, responder todas",
+   "donde": [
+    "PANC · F6!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1276",
+   "es": "Evaluar canal mayorista",
+   "donde": [
+    "PANC · F6!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c1278",
+   "es": "Restaurantes y hoteles = volumen estable",
+   "donde": [
+    "PANC · F6!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c1279",
+   "es": "Renegociar proveedores harinas",
+   "donde": [
+    "PANC · F6!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1280",
+   "es": "Con volumen real",
+   "donde": [
+    "PANC · F6!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1281",
+   "es": "Cierre trimestral",
+   "donde": [
+    "PANC · F6!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c1283",
+   "es": "P&L real vs plan",
+   "donde": [
+    "PANC · F6!E13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1284",
+   "es": "Evaluar un 2.º turno de producción",
+   "donde": [
+    "PANC · F6!B14"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c1285",
+   "es": "Si demanda crece: turno tarde para bollería",
+   "donde": [
+    "PANC · F6!E14"
+   ],
+   "fila": "☐"
+  }
+ ]
+}

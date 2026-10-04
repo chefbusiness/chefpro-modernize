@@ -1,0 +1,2209 @@
+{
+ "meta": {
+  "generado": "2026-10-04T16:31:30+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "ft",
+  "fichero_es": "astro-site/public/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx",
+  "sha256": "12f2c0b446134c995fb7aaeb21343faad832ff8f9bb8ad5cee31b07d86d676e9",
+  "fichero_en": "astro-site/public/dl/food-truck-business-plan/food-truck-business-plan.docx",
+  "titulo_en": "Food Truck Business Plan (10 Sections)",
+  "n_parrafos": 131,
+  "n_con_texto": 110,
+  "n_sin_runs": 17,
+  "n_un_run": 114,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 121,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 61,
+   "vacio": 21,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 61,
+  "palabras_traducir": 6719,
+  "tandas": {
+   "ft_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     46,
+     47,
+     48,
+     49,
+     50,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "palabras": 2954
+   },
+   "ft_b": {
+    "parrafos": [
+     78,
+     79,
+     80,
+     81,
+     82,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     93,
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117
+    ],
+    "palabras": 3765
+   }
+  },
+  "pagina_emu": [
+   7772400,
+   10058400
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average customers per day, year 1",
+   "clientes_a2": "average customers per day, year 2",
+   "clientes_a3": "average customers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "packaging and disposables, % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (food truck: commissary + truck parking)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out (food truck: truck and build-out), years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "occupancy per year (food truck: commissary + parking; coffee shop: rent)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even customers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even customers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: customers per day",
+   "optimista_clientes": "optimistic scenario: customers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "inv_lanzamiento": "launch marketing budget",
+   "inv_stock": "opening inventory",
+   "inv_vehiculo": "used food truck",
+   "inv_adaptacion": "truck build-out and wrap",
+   "inv_equipo_cocina": "kitchen and refrigeration equipment",
+   "inv_generador": "generator",
+   "inv_permisos": "first-year permits and licenses"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Food Truck",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Food Truck"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, analisis de mercado,\nestrategia operativa y checklist de apertura\npara montar un food truck en Espana",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and startup checklist\nto launch a food truck in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Espana, 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoria Gastronomica con fines informativos y orientativos. Las cifras y datos se basan en fuentes publicas del mercado espanol y en la experiencia profesional de mas de 29 anos en el sector. Los resultados reales pueden variar. No constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "INDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist Apertura Excel",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Food Truck Financial Projections (Excel) + Food Truck Startup Checklist (Excel)"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "El mercado de street food en España experimenta un crecimiento sostenido que lo posiciona como una de las oportunidades más atractivas del sector hostelero para 2026. Los datos del sector reflejan un incremento del 23% en la demanda de food trucks durante los últimos tres años, impulsado por cambios en los hábitos de consumo: los clientes buscan experiencias gastronómicas flexibles, de calidad y a precios accesibles, sin necesidad de comprometer una comida completa en un establecimiento tradicional. Los festivales gastronómicos, mercados de productores, zonas de oficinas y eventos corporativos se han consolidado como ubicaciones de alto rendimiento para este modelo de negocio, con una frecuencia de demanda que permite planificar calendarios operativos con visibilidad de ingresos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 116
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "El concepto propuesto se basa en una oferta de street food gourmet con especialización en un producto diferenciador: burgers artesanales, tacos de autor o poke bowl, dependiendo de la ubicación y el perfil demográfico del público objetivo. Esta estrategia de concentración en un núcleo de producto permite mantener controles de calidad estrictos, reducir el desperdicio alimentario y construir reconocimiento de marca de forma más eficiente que en conceptos generalistas. El ticket medio previsto de entre 10 y 15 euros se sitúa en el rango medio-alto del mercado de food trucks, justificado por la calidad de ingredientes, la elaboración artesana y la experiencia de marca. La movilidad del vehículo permite adaptar la oferta a diferentes ubicaciones y eventos, maximizando la exposición al público y diversificando las fuentes de ingresos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 128
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total estimada se sitúa en torno a 73.000 euros, distribuida entre la adquisición o adaptación del vehículo, equipamiento de cocina profesional, licencias y permisos administrativos, capital de trabajo inicial y reserva de contingencia. Este rango de inversión se encuentra dentro de los parámetros habituales para food trucks de calidad en España, representando una fracción significativa del coste de apertura de un restaurante fijo, que typically supera los 150.000 euros en ubicación urbana. La estructura de costes operativos mensuales, con un peso reducido de alquileres y gastos fijos, permite alcanzar el punto de equilibrio con volúmenes de facturación asumibles, reduciendo sustancialmente el riesgo empresarial respecto al modelo tradicional de restauración.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 111
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "Las proyecciones financieras para el primer año de operación estiman una facturación de aproximadamente 135.000 euros, considerando una ocupación efectiva del 70% en días operativos y un ticket medio de 12,50 euros. El punto de equilibrio se proyecta entre los meses 8 y 9 de actividad, un horizonte temporal realista para un food truck que necesita construir clientela, optimizar procesos operativos y establecer rutas estables de ubicación. A partir del segundo año, con la consolidación de la marca y la repetición de clientes, se anticipate un incremento de facturación del 15-20% y una mejora progresiva de márgenes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 97
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo promotor cuenta con la experiencia necesaria en gestión hostelera y operaciones de food truck, complementada con perfiles operativos para la atención al cliente y la elaboración de producto. La estructura de 2-3 personas permite mantener la agilidad del modelo sin incurrir en costes de personal que comprometan la viabilidad económica en fases iniciales. Este plan de negocio demuestra que el food truck gourmet representa una oportunidad de entrada al sector hostelero con menor riesgo, mayor flexibilidad y potencial de escalabilidad, siempre que se ejecute con disciplina operativa y una estrategia de posicionamiento de marca clara.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 97
+  },
+  "44": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "45": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "El concepto de food truck que planteamos responde a una oportunidad de mercado claramente identificada en el panorama hostelero español actual. La restauración móvil de calidad fill the gap existente entre la comida rápida tradicional y los restaurantes formales, ofreciendo una propuesta intermedia que satisface la demanda de consumidores que buscan experiencia gastronómica sin renunciar a la inmediatez y la movilidad. En el contexto español de 2026, donde el mercado de street food ha madurado significativamente desde su boom de la década de 2010, el diferenciador ya no está en ofrecer comida de calle, sino en ofrecer comida de calle con estándares de restauración tradicional aplicada a un formato móvil.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 110
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor central se articula en torno a tres pilares fundamentales que configuran la ventaja competitiva del negocio. El primer pilar es el producto: elaboraciones preparadas al momento con materia prima de calidad, alejadas de la precocinación y los ultraprocesados que caracterizan a la competencia de bajo coste. El segundo pilar es la experiencia: una cocina abierta visible que genera confianza en el consumidor y convierte el proceso de elaboración en parte del espectáculo gastronómico, un elemento diferenciador frente a los food trucks que operan con estructuras cerradas. El tercer pilar es la accesibilidad: un modelo de negocio que permite llevar el producto directamente a donde está la demanda, ya sean mercados urbanos, zonas de oficinas, festivales musicales o eventos corporativos, optimizando así la cobertura geográfica sin los costes estructurales de un local fijo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 136
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "Desde la perspectiva financiera, el modelo de inversión propuesto, ranging from 45,000 to 85,000 euros, presenta una estructura de costes operativos significativamente inferior a la de un restaurante tradicional. El ticket medio proyectado de 10-15 euros, combinado con un volumen de operación basado en eventos de alta rotación, permite alcanzar rentabilidades positivas con umbrales de rentabilidad inferiores a los de un establecimiento fijo. Esta flexibilidad financiera constituye uno de los argumentos más sólidos para inversores que evalúan el proyecto desde una perspectiva de riesgo-retorno.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 84
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El posicionamiento competitivo del food truck frente a alternativas del mercado presenta ventajas tangibles. Comparado con un restaurante fijo, el modelo ofrece flexibilidad de ubicación, inversión inicial inferior y capacidad de adaptación rápida a tendencias gastronómicas cambiantes. Comparado con otros food trucks de perfil básico, la diferenciación radica en el concepto culinary único, el branding profesional del vehículo y la propuesta de valor centrada en calidad y experiencia, no exclusivamente en precio. El target demográfico definido, adultos entre 20 y 45 años en entornos urbanos, corresponde precisamente al segmento de consumidores que valoran estos atributos y presentan mayor disposición de gasto en experiencias gastronómicas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 104
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor se completa con un modelo operativo realista que contempla un equipo de 2-3 personas, suficiente para garantizar la ejecución operativa en eventos y la atención al cliente sin sobrecostes de personal. Este dimensionamiento permite mantener la estructura de costes variables dentro de parámetros que aseguran la viabilidad del proyecto en escenarios de ocupación media. La combinación de concepto diferenciado, modelo operativo eficiente y inversión contenida configura una propuesta de negocio con fundamentos sólidos para su desarrollo en el mercado español de 2026.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 86
+  },
+  "51": {
+   "estilo": "Heading 1",
+   "texto": "3. Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "El mercado de food trucks en España ha experimentado una transformación significativa durante la última década, consolidándose como un segmento dinámico dentro del sector de hostelería. Actualmente se estima que operan entre 2.500 y 3.500 unidades en territorio nacional, concentrándose principalmente en las comunidades autónomas de Madrid, Cataluña, Andalucía y la Comunidad Valenciana, donde la densidad de población urbana y la cultura de consumo callejero favorecen el desarrollo del modelo. El crecimiento anual del sector se sitúa entre el ocho y el doce por ciento, impulsado por la demanda de restauración flexible y la preferencia del consumidor por experiencias gastronómicas informales pero de calidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 104
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "La evolución del consumidor español ha sido determinante en la consolidación de este modelo de negocio. El perfil demográfico principal comprende personas entre veinte y cuarenta y cinco años, residentes en entornos urbanos, con poder adquisitivo medio-alto y familiarizados con tendencias gastronómicas internacionales. Este segmento valora la autenticidad, la innovación culinaria y la posibilidad de consumir productos diferenciados fuera del contexto tradicional de restauración. El gasto medio por ticket se sitúa entre diez y quince euros, rango coherente con el concepto de street food gourmet propuesto y que permite márgenes operativos adecuados una vez alcanzado el volumen de clientela objetivo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 100
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "La regulación del sector presenta una complejidad notable derivada del marco competencial autonómico español. Cada comunidad autónoma establece requisitos específicos para la autorización de vehículos de venta de alimentos, incluyendo licencias de apertura, permisos de circulación, cumplimiento de normativas sanitarias y autorizaciones municipales de ocupación de vía pública. Madrid y Barcelona han desarrollado marcos regulatorios más detallados y restrictivos, mientras que otras regiones ofrecen mayor flexibilidad. Esta heterogeneidad normativa implica que el operador debe realizar un análisis jurídico específico por cada ubicación de operación, constituyendo uno de los factores críticos de éxito en la planificación del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 97
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "Las oportunidades de channel mix para un food truck urbano son diversas y complementarias. Los mercados gastronómicos permanentes, como el Mercado de San Miguel en Madrid o La Boqueria en Barcelona, representan puntos de alta rotación y visibilidad de marca, aunque las condiciones de acceso y tarifas de alquiler varían sustancialmente. Los eventos corporativos y team buildings constituyen un segmento de alto valor medio, con contratos que pueden superar los mil euros por servicio y que generan recurrencia en empresas con culturas organizacionales orientadas al bienestar del empleado. Los festivales musicales y gastronómicos, así como las ferias locales, completan el mapa de oportunidades, con calendarios predecibles que permiten planificación operativa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 110
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El turismo gastronómico añade una dimensión de demanda adicional, especialmente en destinos urbanos consolidados y zonas costeras con alta penetración de visitantes internacionales. Este segmento muestra disposición a pagar precios premium por experiencias culinarias auténticas y diferenciadas, representando una oportunidad de ticket medio elevado cuando el food truck se posiciona en ubicaciones estratégicas con flujo turístico.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 56
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "Las tendencias emergentes que condicionan la oferta del sector incluyen la sostenibilidad ambiental, con preferencia marcada por packaging biodegradable y productos de proximidad, la cocina de fusión que combina tradiciones culinarias diversas, y la transparencia en la cadena de suministro. El operador que integre estas dimensiones en su propuesta de valor accederá a segmentos de consumidor más comprometidos y tolerantes con políticas de precio superiores a la media del mercado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 70
+  },
+  "59": {
+   "estilo": "Heading 1",
+   "texto": "4. Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "El mercado español de food trucks ha experimentado un crecimiento sostenido del 12-15% anual desde 2020, consolidándose como una alternativa viable dentro del sector de restauración. En 2025 operan más de 3.500 unidades en territorio nacional, con una concentración especial en comunidades autónomas como Cataluña, Madrid, Andalucía y la Comunidad Valenciana, donde la regulación municipal ha evolucionado favorablemente para este modelo de negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 63
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "El análisis según las cinco fuerzas de Porter revela un sector con barreras de entrada moderadas y competencia fragmentada. El poder de negociación de los proveedores es bajo, dado que existe una red consolidada de distribuidores especializados en equipamiento para vehículos de restauración y materia prima alimentaria. Los clientes disponen de múltiples opciones dentro del street food urbano, lo que limita su poder de negociación siempre que el concepto diferenciador sea sólido. La amenaza de productos sustitutivos es significativa, considerando la expansión del delivery gastronómico y las plataformas como Glovo o Just Eat, que han modificado los hábitos de consumo urbano. La intensidad de la rivalidad es alta en ubicaciones prime como mercados municipales y zonas de oficinas, donde la saturación de oferta puede comprimir márgenes. Las barreras de entrada incluyen la inversión inicial en vehículo adaptado, que oscila entre 25.000 y 50.000 euros dependiendo del estado del chassis y el equipamiento necesario, además de los permisos administrativos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 158
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "Los competidores directos incluyen tanto food trucks establecidos con presencia consolidada en eventos y festivales, como nuevos operadores que han incorporado conceptos de burgers gourmet, tacos artesanales o poke bowl con precios que oscilan entre 9 y 18 euros por unidad. Los restaurantes fast casual como Five Guys, Shack Shake o locales independientes representan competencia indirecta significativa, especialmente en zonas comerciales donde el cliente puede optar por una experiencia de sentado. El canal delivery representa una amenaza estructural que obliga al food truck a diferenciarse mediante la experiencia de consumo in situ y la frescura del producto, elementos que no pueden replicarse en un formato de entrega a domicilio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 109
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada más relevantes son de naturaleza administrativa. Cada municipio establece sus propios requisitos para la ocupación de vía pública, con ordenanzas que varían sustancialmente entre ciudades como Madrid, Barcelona, Valencia o Sevilla. El permiso de actividad requiere normalmente licencia de apertura, compatibilidad urbanística del enclave y contrato con gestor de residuos, además de la inspección técnica del vehículo. El tiempo medio para obtener toda la documentación oscila entre tres y seis meses, lo que convierte la planificación en un factor crítico.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 84
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Los factores críticos de éxito incluyen la ubicación estratégica, que determina entre el 60 y 70% del resultado económico según estudios del sector. La rotación de cubiertos, inexistente en el food truck, se sustituye por velocidad de servicio, objetivo inferior a tres minutos por cliente en horas punta. La presencia activa en redes sociales, especialmente Instagram y TikTok, funciona como canal principal de captación y fidelización, donde un contenido viral puede generar incrementos de facturación del 40% en eventos concretos. El concepto diferenciador debe ser suficientemente específico para generar recuerdo, evitando la dispersión hacia menús demasiado amplios que complican la operativa con equipo reducido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 104
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El análisis DAFO interno identifica como fortalezas la movilidad, que permite testar ubicaciones con inversión mínima y ajustar la estrategia según respuesta del público, junto con la menor inversión inicial comparada con un restaurante tradicional, que reduce el riesgo financiero. Las debilidades incluyen la dependencia meteorológica, la limitación de capacidad de producción en horas punta y la estacionalidad de ciertos eventos. Las oportunidades se concentran en la recuperación del consumo presencial post-pandemia, la demanda de experiencias gastronómicas urbanas y el crecimiento de eventos corporativos que buscan opciones de restauración diferenciadas. Las amenazas principales son la regulación restrictiva en determinados municipios y la competencia de plataformas de delivery que capturan cuota de mercado en zonas residenciales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 115
+  },
+  "67": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "69": {
+   "estilo": "Normal",
+   "texto": "La estrategia de marketing para un food truck en España debe pivotar sobre un concepto claro: la calidad gastronómica urbana accesible fuera del restaurante tradicional. En mercados donde el consumidor de street food busca experiencias visuales y sabores diferenciados, el posicionamiento debe construir narrativa de exclusividad móvil, donde cada plato ofrece la técnica de cocina de restaurante con la inmediatez y accesibilidad del formato food truck. El target de 20 a 45 años urbano demanda coherencia entre producto, comunicación y experiencia, por lo que la propuesta de valor debe articularse desde la excelencia culinaria adaptada al formato callejero, no como una versión reducida de restauración tradicional.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 106
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "La presencia digital constituye el canal principal de captación en este segmento, dado que el consumidor actual investiga, visualiza y decide dónde comprar mediante dispositivos móviles. Instagram y TikTok funcionan como plataformas complementarias donde el contenido visual del producto estrella, procesos de elaboración y testimonios de clientes generan comunidad orgánica. La inversión en producción audiovisual debe priorizarse sobre publicidad pagada en fase inicial, ya que el algoritmo de ambas plataformas premia contenido nativo y auténtico que muestre la realidad del food truck: preparación en vivo, ingredientes de calidad y la experiencia de consumo en ubicación urbana. Un calendario de publicaciones de cuatro a cinco semanal, combinando contenido de producto con detrás de cámaras y ubicaciones futuras, permite construir audiencia sin dependencia de inversión publicitaria continua.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 125
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "La optimización de Google My Business con ubicaciones dinámicas representa una herramienta crítica que muchos food trucks subestiman. Cada ubicación donde se opera debe configurarse como punto de interés independiente, con horarios específicos, fotografías actualizadas y gestión activa de reseñas. La respuesta inmediata a comentarios, tanto positivos como negativos, construye credibilidad local que se traduce en visitas recurrentes. La web corporativa con calendario semanal de ubicaciones funciona como centro de operaciones donde el cliente puede planificar su visita, consultar menú actualizado y acceder al programa de fidelización, funcionando como pilar de captación orgánica que reduce dependencia de plataformas de terceros.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 100
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La captación directa en mercados y eventos constituye el canal de ingresos más predecible para un food truck. Los mercados municipales urbanos de ciudades como Madrid, Barcelona, Valencia o Sevilla generan flujosconstants de tráfico con ticket medio superior a doce euros en formatos de street food premium. La estrategia debe articularse mediante acuerdos de ocupación temporal con gestores de mercados, priorizando aquellos con rotación de vendedores que permitan diversificación de oferta y attracted clientela. La participación en eventos gastronómicos, festivales de música y ferias locales complementa la ocupación semanal con picos de facturación que pueden triplicar el ticket medio habitual, aunque requieren planificación de producción y gestión de inventario con semanas de anticipación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 113
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "El segmento de lunch corporativo en zonas de oficinas representa una palanca de facturación recurrente que estabiliza la operación semanal. Las business parks y centros empresariales de ciudades españolas generan demanda de catering informal para reuniones de trabajo, eventos de equipo y almuerzos de empresa. La propuesta comercial debe estructurarse con mínimo de pedido, menú cerrado para grupos y sistema de reservas con veinticuatro horas de antelación, ofreciendo margen bruto superior al sesenta por ciento al eliminar costes de ubicación y reducir complejidad operativa. Este canal requiere desarrollo comercial activo mediante visitas presenciales a administradores de oficinas y plataformas de networking corporativo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 102
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "El programa de fidelización mediante código QR integrado en el packaging y punto de venta genera datos de cliente que permiten segmentar comunicaciones y premiar visitas recurrentes. La estructura de recompensa debe diseñarse con umbral alcanzable en tres o cuatro visitas, ofreciendo producto gratuito o descuento progresivo que incentive repetición sin destruir margen. Las colaboraciones con influencers foodie locales deben negociarse bajo modelo de intercambio de producto por contenido auténtico, priorizando perfiles con audiencias locales inferiores a quince mil seguidores que ofrecen mayor tasa de engagement y credibilidad dentro del nicho gastronómico de cada ciudad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 95
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "La inversión en marketing debe presupuestarse entre el ocho y doce por ciento de la facturación mensual durante el primer año, con concentración de gasto en producción audiovisual, material de punto de venta y comisiones de plataformas de eventos. El retorno de esta inversión debe medirse mediante tracking de ubicaciones, donde cada punto de ventaimplemente código promocional específico que permita imputar ventas a canal de captación y optimizar rotación de ubicaciones según rentabilidad demostrada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "ft_a",
+   "palabras": 74
+  },
+  "76": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "La selección del vehículo constituye la primera decisión crítica y determinantepara la viabilidad operativa del proyecto. En el mercado español actual, la elección se concentra entre dos opciones principales: la furgoneta adaptada o el remolque profesional. La furgoneta, típicamente modelos de entre 2.800 y 3.500 kg de MMA, ofrece la ventaja de la autonomía total al integrar zona de trabajo y almacenamiento en una sola unidad, eliminando la necesidad de un vehículo tractor adicional. Sin embargo, el remolque de food truck profesional presenta mejores prestaciones para eventos de mayor duración y volumen de servicio, además de requerir menor inversión inicial en el conjunto. Para un food truck urbano de tamaño medio, un remolque de entre 4 y 6 metros lineales con ejes reforzados y suspensión de calidad representa una inversión de 12.000 a 25.000 euros en mercado de segunda mano en buen estado, frente a los 18.000 a 35.000 euros que requiere una furgoneta homologada con equipamiento incluido. La decisión entre nuevo y ocasión debe equilibrar la garantía mecánica del primero con la depreciación ya absorbida del segundo, siendo mi recomendación para proyectos con inversión inicial moderada adquirir un remolque de segunda mano con menos de cinco años de antigüedad y realizar una reforma integral de la cocina según las especificaciones propias del concepto.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 214
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "El equipamiento de cocina móvil debe dimensionarse con precisión para evitar cuellos de botella durante las horas punta de servicio. Una instalación estándar para street food gourmet requiere una plancha de superficie profesional de al menos 90 centímetros, una freidora de capacidad mínima de ocho litros con termostato de precisión, un mostrador refrigerado con función de exposición, un lavamanos con depósito de aguas grises homologado, y un sistema de extracción forzada que cumpla la normativa vigente en cada municipio. El generador eléctrico representa un elemento crítico que frecuentemente se subestima: para una operación con los equipos mencionados se requiere un grupo electrógeno silenciado de al menos 5.000 vatios de potencia nominal, con autonomía mínima de ocho horas de funcionamiento continuo. La inversión en equipamiento completo oscila entre 8.000 y 15.000 euros dependiendo de la calidad de los componentes y si se opta por equipamiento nuevo o reacondicionado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 147
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "La logística diaria de un food truck requiere una organización meticulosa que determine directamente la rentabilidad de cada servicio. El protocolo operativo estándar establece las siguientes fases: carga de géneros perecederos en origen con verificación de temperaturas de cadena de frío, desplazamiento al punto de servicio con tiempos estimados según tráfico urbano, montaje de instalación consetup completo en treinta minutos incluyendo conexión a red eléctrica exterior cuando esté disponible, período de servicio que oscila entre cuatro y seis horas según evento, desmontaje y limpieza en destino, y retorno a base con lavado completo de equipos. Esta secuencia consume entre diez y doce horas de jornada laboral efectiva, por lo que la planificación de rutas semanales debe priorizar puntos de servicio que minimicen desplazamientos superiores a cuarenta minutos entre ubicaciones consecutivas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 130
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "La gestión de inventarios perecederos constituye un aspecto operativo que diferencia claramente al profesional del emprendedor novato. El modelo de compra diaria, aunque genera mayor trabajo administrativo, reduce drásticamente las pérdidas por caducidad y optimiza la tesorería del negocio. Para un food truck con ticket medio de doce euros y volumen medio de ciento veinte servicios por jornada, la inversión en género fresco debe situarse entre el veinticinco y el treinta por ciento de la facturación esperada, lo que implica una salida de caja diaria de aproximadamente trescientos sesenta euros en productos. La relación con proveedores debe establecerse con al menos dos opciones por categoría principal de producto para garantizar continuidad de servicio ante incidencias de suministro.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 117
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "El mantenimiento preventivo del vehículo y equipamiento debe documentarse en un calendario estructurado que incluya revisión mecánica trimestral del motor y sistemas de frenado, limpieza mensual de filtros de extracción y campanas, revisión semestral de instalación eléctrica y gas, y sustitución anual de elementos de desgaste como juntas, correas y elementos de estanqueidad. El coste anual de mantenimiento programado para un food truck bien mantenido oscila entre 1.500 y 2.500 euros, cifra que debe contemplarse como inversión de obligado cumplimiento y nunca como gasto opcional, dado que una avería en plena jornada de servicio puede generar pérdidas directas superiores a mil euros además del daño reputacional asociado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 107
+  },
+  "83": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El modelo de estructura organizativa en un food truck debe equilibrar la capacidad de producción con la sostenibilidad económica del proyecto. Dado que la inversión inicial se sitúa entre 45.000 y 85.000 euros y el ticket medio oscila entre 10 y 15 euros, la dimensión del equipo resulta determinante para la viabilidad del negocio. La operativa de un food truck urbano requiere cubrir simultáneamente funciones de cocina, atención al cliente, gestión administrativa y conducción del vehículo, lo que exige una definición precisa de roles y una política de recursos humanos que minimice la dependencia del propietario sin comprometer la rentabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 100
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "El equipo mínimo viable para un food truck de street food de calidad está compuesto por dos o tres personas. El propietario asume el rol de chef y gestor, siendo responsable de la elaboración de los productos, la supervisión de la calidad, la gestión económica y administrativa, y la conducción del vehículo hasta el punto de venta. Esta concentración de funciones en una sola persona reduce los costes de personal pero genera una dependencia crítica: si el propietario enferma o no puede operar, el negocio deja de generar ingresos inmediatamente. La experiencia de más de dos décadas en consultoría de hostelería demuestra que esta configuración es habitual en las fases iniciales, pero debe planificarse la incorporación de un segundo recurso fijo antes de que el volumen de operaciones lo haga imprescindible.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 131
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "El ayudante de cocina complementa la operativa diaria, ocupándose de la preparación de ingredientes, el montaje de los platos, el servicio al cliente y las tareas de limpieza durante el turno. En eventos de gran affluencia, como festivales o mercados con alta demanda, resulta necesario incorporar un tercer recurso eventual que permita mantener la velocidad de servicio sin comprometer la calidad. La contratación de este personal adicional puede realizarse mediante contratos temporales por circunstancias de la producción o mediante acuerdos con empresas de trabajo temporal especializadas en hostelería, lo que aporta flexibilidad para ajustar la plantilla a la estacionalidad del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 101
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "El coste laboral en España para 2026 se calcula aplicando el tipo de cotización a la Seguridad Social del 33,4% sobre la base de cotización correspondiente. Para un salario base de 1.300 euros mensuales en 14 pagas, el coste empresarial mensual por trabajador asciende a aproximadamente 1.734 euros, mientras que el coste anual supera los 24.000 euros por empleado. A este coste hay que añadir los gastos de uniforme, manutención durante la jornada y, en su caso, el desplazamiento al punto de venta. En un modelo con propietario y un ayudante fijo, el coste de personal representa el mayor gasto operativo del negocio, por lo que su control resulta esencial para alcanzar los márgenes de rentabilidad objetivo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 117
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "La formación del equipo debe contemplar varios ámbitos fundamentales. En primer lugar, la velocidad de servicio resulta crítica en un food truck, donde el cliente espera recibir su pedido en pocos minutos; la organización del espacio de trabajo y la coordinación entre cocina y servicio determinan la capacidad de atención. En segundo lugar, la normativa APPCC para unidades móviles de restauración exige la implementación de un sistema de análisis de peligros y puntos críticos de control, así como la formación específica en manipulación de alimentos y gestión de alérgenos. Finalmente, el personal debe dominar las operaciones de montaje y desmontaje del equipo en el punto de venta, incluyendo la conexión eléctrica, la instalación de estructuras auxiliares y la gestión de residuos, tareas que pueden representar hasta una hora diaria de trabajo no productivo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 133
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "La gestión de los recursos humanos en un food truck presenta particularidades que requieren un enfoque práctico. La rotación de personal en hostelería es elevada, por lo que es recomendable establecer procesos de selección que prioricen la polyvalencia y la capacidad de adaptación. Además, la planificación de vacaciones y sustituciones debe realizarse con suficiente antelación, dado que la operativa no admite improvizaciones: un food truck que no abre en un evento contratado genera pérdida de reputación y facturación. La incorporación progresiva de personal adicional conforme crece la demanda, manteniendo siempre la estructura de costes bajo control, constituye la estrategia más prudente para un proyecto de estas características.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 107
+  },
+  "91": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "La viabilidad económica de un food truck en el mercado español responde a una ecuación de inversión contenida y rotación elevada que lo posiciona como una de las opciones más atractivas dentro del sector de la hostelería. Frente a un restaurante tradicional, donde las barreras de entrada superan los 150.000 euros y los plazos de retorno se extienden entre 36 y 60 meses, el modelo de food truck permite reducir la inversión inicial en más de un cincuenta por ciento y acelerar significativamente la recuperación del capital invertido.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 88
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La inversión total necesaria para poner en marcha este proyecto se sitúa en torno a los 73.000 euros, distribuidos en seis partidas principales que cubren desde la adquisición del vehículo hasta la disposición de capital de trabajo para los primeros meses de operación. El vehículo constituye la partida más relevante, con un desembolso de 25.000 euros destinados a la compra de una furgoneta o remolque en condiciones adecuadas para su adaptación posterior. La transformación del vehículo, incluyendo instalación eléctrica, fontanería, campana extractora y acabados de cocina profesional, requiere una inversión adicional de 8.000 euros. El equipamiento de cocina, entendiendo freidoras, planchas, hornos, neveras y utillaje, representa otros 10.000 euros, mientras que el grupo electrógeno para eventos sin conexión a red suma 3.000 euros. Los permisos administrativos, licencias de apertura, seguro de responsabilidad civil y tasas municipales ascienden a 2.000 euros, mientras que la campaña inicial de lanzamiento, incluyendo branding del vehículo, cartelería digital y material publicitario, requiere otros 2.000 euros. Finalmente, el fondo de maniobra de 6.000 euros cubre stock inicial de materias primas, imprevistos y gastos de los primeros sixty días hasta alcanzar la rentabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 186
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "Las proyecciones de facturación para los tres primeros ejercicios reflejan una curva de crecimiento sostenido basada en la consolidación de la clientela y la expansión hacia nuevos puntos de venta. El primer año se estima una facturación de 135.000 euros, equivalente a una media de 450 euros diarios considerando 300 días de operación, cifra conservadora para un food truck que opera en mercados, zonas de oficinas y eventos. El segundo año, con la consolidación de rutas fijas y presencia en festivales de mayor magnitud, la facturación alcanzaría los 175.000 euros, representando un incremento del treinta por ciento respecto al ejercicio inicial. El tercer año, con una plantilla optimizada y posibles expansiones de servicio, la facturación se situaría en 215.000 euros.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 120
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "La estructura de costes directos del negocio presenta un food cost del treinta por ciento sobre ventas, alineado con los estándares del sector de restauración rápida de calidad. El packaging representa un cuatro por ciento adicional, lo que deja un margen bruto del sesenta y cinco por ciento, suficiente para cubrir gastos de personal, alquiler de espacios, combustible del vehículo, mantenimiento y amortizaciones. Los costes de personal, con un equipo de dos a tres personas incluyendo el propietario, representan la partida más significativa después de la materia prima, y deben gestionarse con flexibilidad mediante combinaciones de salario fijo y incentivos por productividad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 102
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "El punto de equilibrio se alcanza con 27 clientes diarios a un ticket medio de 12 euros, cifra perfectamente alcanzable en ubicaciones con alto tráfico de peatones o durante eventos específicos. Este umbral de rentabilidad resulta especialmente relevante porque permite al food truck operar con beneficio desde el primer mes en condiciones normales de demanda, evitando la situación de pérdidas acumuladas que caracteriza a muchos restaurantes tradicionales durante sus primeros doce a dieciocho meses de actividad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 76
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "El período de retorno de la inversión se estima entre doce y veinticuatro meses, dependiendo de la estacionalidad, la consistencia de las ubicaciones y la capacidad del equipo para maximizar la productividad durante los picos de demanda. Esta horquilla de recuperación situaría al food truck entre las inversiones más rentables del sector hostelero español, donde el retorno medio en restaurantes convencionales supera los tres años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 65
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "No obstante, el análisis debe considerar factores de riesgo que podrían afectar a estas proyecciones. La dependencia de permisos municipales para operar en determinadas ubicaciones, la competencia creciente en el segmento de street food gourmet y la volatilidad del coste de materias primas constituyen variables que requieren seguimiento continuo y estrategias de mitigación. Recomiendo establecer acuerdos marco con proveedores, diversificar las ubicaciones de operación y desarrollar una base de clientes corporativos que genere ingresos recurrentes mediante servicios de catering empresarial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 80
+  },
+  "100": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "La apertura de un food truck en España implica navegar un entorno regulatorio complejo caracterizado por la ausencia de una ley nacional unificada que regule específicamente esta modalidad de negocio. La legislación aplicable varía significativamente según la comunidad autónoma y el municipio donde se pretenda operar, lo que constituye uno de los principales desafíos administrativos a los que se enfrenta cualquier emprendedor del sector. Esta fragmentación normativa exige un conocimiento detallado de las ordenanzas locales y una planificación rigurosa de las ubicaciones donde se desarrollará la actividad comercial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 88,
+   "nota": "D22 §9 párrafo 1/7: el marco US por niveles (federal, estatal, condado, ciudad): qué regula cada nivel y que un food truck tramita en CADA ciudad donde vende. Fuente: sba.gov (apply for licenses and permits)"
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "El permiso de venta ambulante constituye el primer requisito fundamental y se obtiene en el ayuntamiento correspondiente al municipio donde se desea operar. Este permiso tiene carácter municipal y intransferible, lo que significa que obtener la autorización en una ciudad no habilita para operar en otra distinta sin solicitar una nueva licencia. LosAyuntamientos suelen exigir la presentación de documentación relativa al vehículo, seguro de responsabilidad civil, certificaciones sanitarias y, en muchos casos, un proyecto de actividad compatible con las ordenanzas urbanísticas locales. Los plazos de resolución pueden extenderse entre tres y seis meses, por lo que resulta imprescindible iniciar estos trámites con suficiente antelación al planned lanzamiento del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 109,
+   "nota": "§9 2/7: mobile vending license de la ciudad (por ciudad, intransferible, una por unidad); zonas y reglas de aparcamiento; permiso escrito para vender en propiedad privada. Ejemplo citable: chicago.gov"
+  },
+  "104": {
+   "estilo": "Normal",
+   "texto": "La autorización sanitaria del vehículo representa otro pilar esencial del cumplimiento normativo. La autoridad sanitaria de la comunidad autónoma debe otorgar la autorización que certifica que el vehículo cumple con los requisitos técnicos y de higiene alimentaria establecidos en la normativa vigente. Este proceso incluye la inspección de las instalaciones de conservación, preparación y venta de alimentos, así como la verificación de que el personal manipulador dispone de los cursos de manipulación de alimentos exigidos. La documentación debe renovarse periódicamente y cualquier modificación sustancial en el equipamiento requeriría una nueva autorización.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 91,
+   "nota": "§9 3/7: health permit de unidad móvil + plan review del health department + commissary agreement (la mayoría de jurisdicciones lo exige) + inspección. Ejemplo citable: cabq.gov (Albuquerque)"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "El Registro General Sanitario de Empresas Alimentarias y Alimentos, conocido como RGSEAA, es obligatorio para todas las empresas del sector alimentario, incluyendo los food trucks. Este registro se gestiona ante la autoridad competente de la comunidad autónoma y requiere demostrar el cumplimiento de las normas de seguridad alimentaria, desde la trazabilidad de los productos hasta las condiciones de almacenamiento y manipulación. Adicionalmente, si el food truck utiliza gas para la cocción de alimentos, es obligatorio contar con la correspondiente certificación de instalación de gas, que debe realizarse por un instalador autorizado y cumplir con la normativa de seguridad aplicable a instalaciones de gas en vehículos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 105,
+   "nota": "§9 4/7: higiene y alérgenos: Certified Food Protection Manager (p. ej. ServSafe) + food handler cards según estado; FDA Food Code adoptado por cada estado; 9 alérgenos mayores (sésamo desde 2023). Sustituye el párrafo del RGSEAA (que en el ES además era erróneo)"
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "El seguro de responsabilidad civil es requisito indispensable para la obtención de cualquier autorización municipal. La cobertura mínima recomendada debe ser suficiente para proteger el negocio frente a reclamaciones por daños a terceros derivados de la actividad de venta ambulante. Asimismo, si el vehículo ha sido modificado estructuralmente para adaptarlo a la actividad de restauración, es necesario pasar la ITV correspondiente que certifique que las modificaciones cumplen con la normativa de circulación y seguridad vial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 75,
+   "nota": "§9 5/7: seguros: general liability (a menudo $1M por siniestro, lo piden eventos y propietarios) + commercial auto + workers' comp; el ejemplo del libro presupuesta {{seguros_anual}} al año"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "El carnet de conducir adecuado es un requisito frecuentemente pasado por alto. Los vehículos de categoría N1, que son los utilizados habitualmente como base para food trucks, requieren el carnet B para vehículos de hasta 3.500 kilogramos. Si se utiliza un remolque, puede ser necesario el carnet BE o C1E en función de la MMA combinada. La verificación de que el titular del negocio o los conductores previstos disponen de los permisos correctos evitará problemas posteriores durante la operativa diaria.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 80,
+   "nota": "§9 6/7: vehículo: registro y título en el DMV del estado; CDL SOLO si GVWR ≥ 26,001 lb (49 CFR 383); inspección del fire marshal (propano, extintores, supresión; NFPA 96 donde se adopte)"
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "La planificación de un food truck que opere en múltiples ubicaciones debe contemplar que cada municipio puede exigir permisos temporales específicos para eventos concretos, mercados o zonas de concentración. Algunos ayuntamientos establecen restricciones de zonificación que delimitan las áreas donde está permitido el comercio ambulante, y en zonas de especial protección urbanística puede existir prohibición absoluta. La recomendación estratégica es establecer alianzas con organizadores de eventos y gestores de mercados que ya cuenten con las autorizaciones necesarias, simplificando así el proceso administrativo y reduciendo el riesgo de sanciones por incumplimiento normativo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 91,
+   "nota": "§9 7/7: varias ciudades y eventos (cada ciudad su licencia; temporary food event permits; los organizadores piden seguro y permisos) y, como ÚLTIMA frase o frases del párrafo, la nota UK: registrar el negocio de alimentos en el council 28 días antes de empezar (gratis), street trading licence/consent de cada council, Food Hygiene Rating 1-5, VAT 20 % en comida caliente y en el local, 14 alérgenos"
+  },
+  "109": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "El food truck representa una oportunidad de entrada al sector de hostelería con un perfil de riesgo controlado y un potencial de escalabilidad significativo. En comparación con un restaurante tradicional, la inversión inicial se reduce entre un 70 y un 85 por ciento, la curva de aprendizaje del mercado es más corta y la movilidad permite testar múltiples ubicaciones antes de comprometer recursos en un punto fijo. Los datos del sector en España reflejan un crecimiento sostenido del mercado de street food, impulsado por cambios en los hábitos de consumo y la demanda de experiencias gastronómicas accesibles y de calidad. Para un empresario con experiencia en hostelería, este modelo permite testar concepto, generar caja y validar hipótesis de rentabilidad antes de escalar hacia estructuras más complejas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 126
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "Los riesgos principales de este modelo de negocio son tres: la dependencia de factores meteorológicos que pueden afectar directamente a la facturación en días de lluvia o frío intenso, la complejidad administrativa de los permisos municipales que varían significativamente entre localidades y que en ciudades como Madrid o Barcelona implican plazos de entre dos y seis meses, y la dependencia del propietario del vehículo o del local donde se engancha la corriente eléctrica. La experiencia demuestra que un food truck bien gestionado debe generar al menos el 60 por ciento de su facturación en condiciones de clima adverso mediante eventos cubiertos, catering corporativo y alianzas con espacios interiores. Respecto a los permisos, es fundamental iniciar los trámites con un mínimo de tres meses de margen antes de la fecha de lanzamiento prevista, trabajando directamente con el ayuntamiento correspondiente y contando con un asesor legal especializado en licencias de-activity alimentaria.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 149
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "Las fortalezas competitivas de este modelo son la flexibilidad operativa, que permite estar presente en eventos, mercados y zonas con alta rotación de público sin compromisos de alquiler a largo plazo, y el bajo coste fijo, que en una fase inicial puede limitarse al renting del vehículo si no se dispone de capital para la compra, más el salario del equipo y los costes logísticos. La presencia en redes sociales constituye una ventaja competitiva crítica: un food truck con una estrategia de contenido coherente puede generar una comunidad de seguidores locales que se traduzca en demanda recurrente. La clave está en documentar el proceso de preparación, mostrar los ingredientes y crear una identidad visual reconocible que diferencie el producto de la competencia existente en cada zona de actuación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 128
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "La hoja de ruta de implementación se estructura en cinco fases claramente definidas. Durante el primer mes se procederá a la constitución de la sociedad limitada, la inscripción en el registro sanitario y la apertura de las cuentas bancarias necesarias para la gestión empresarial. Los meses segundo y tercero se dedicarán a la adquisición o renting del vehículo, la adaptación del mismo según la normativa vigente en materia de seguridad alimentaria y la tramitación de licencias municipales, que incluyen el permiso de actividad, la autorización de vertidos y el contrato de suministro eléctrico. El cuarto mes se destinará a la formación del equipo en protocolos de servicio, seguridad alimentaria y gestión de redes sociales, junto con una campaña de marketing de lanzamiento que incluya tasting sessions con influencers locales del sector gastronómico. El quinto mes marca el inicio de operaciones con presencia en un máximo de tres ubicaciones distintas para identificar cuál genera mayor rendimiento por hora de operación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 159
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "Los indicadores clave de rendimiento deben medirse semanalmente durante los primeros seis meses de operación. El número de clientes por servicio permite evaluar la capacidad de atracción de cada ubicación y su correspondencia con los costes logísticos de desplazamiento. El ticket medio por transacción indica si el posicionamiento de precio y la oferta de productos son coherentes con el target definido. La rentabilidad por hora de operación mide la eficiencia real del negocio al relacionar ingresos generados con tiempo de exposición en cada punto de venta. La tasa de clientes recurrentes, medida mediante programas de fidelización con tarjeta de cliente o aplicaciones móviles sencillas, determina el grado de vinculación emocional con la marca y el potencial de ingresos predecibles. El objetivo para el primer año es alcanzar un ticket medio de 12 euros con un mínimo de 50 clientes por servicio en jornadas de cuatro horas y una tasa de repetición del 25 por ciento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 155
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "La visión a medio plazo de este proyecto contempla tres horizontes de crecimiento. En el primer año se establece como meta alcanzar el punto de equilibrio financiero y consolidar un mínimo de cinco ubicaciones recurrentes con contratos de ocupación temporal. El segundo año contempla la incorporación de un segundo vehículo adaptado a un concepto complementario que permita diversificar la oferta y aumentar la capacidad de captación de eventos corporativos y celebraciones privadas. El tercer año abre la posibilidad de evaluar la apertura de un local fijo de formato reducido que funcione como flagship store y centro de operaciones, o bien el desarrollo de un modelo de franquicia para terceros que permita replicar el concepto en otras ciudades con inversión moderada. Cada fase requiere una evaluación rigurosa de la capacidad de financiación, la disponibilidad de equipo humano cualificado y la madurez del mercado local para absorber la expansión sin diluir la propuesta de valor original.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 154
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "La conclusión final es que el food truck constituye una puerta de entrada sólida al sector de hostelería para empresarios con experiencia en gestión operativa, siempre que se aborde con una planificación rigurosa de la inversión, una estrategia clara de diferenciación y un compromiso firme con la calidad del producto y la experiencia del cliente. La inversión propuesta de entre 45.000 y 85.000 euros es asumible con financiación propia o mediante préstamos específicos para emprendedores del sector que actualmente ofrecen entidades bancarias con condiciones favorables para proyectos de economía real. El mercado español de street food continúa en fase de crecimiento y ofrece espacio para propuestas bien ejecutadas que respondan a la demanda de consumidor urbano de entre 20 y 45 años con poder adquisitivo medio-alto y disposición a pagar por experiencias gastronómicas memorables.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "ft_b",
+   "palabras": 134
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas: Food Truck — 12 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro · HACCP Food Safety Kit Pro"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro — 12 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Restaurant Staff Scheduling Kit Pro"
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Gastro Pro Prompts eBook — 9 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Gastro Pro Prompts eBook (300+ AI prompts)"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}

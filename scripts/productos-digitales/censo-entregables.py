@@ -151,7 +151,9 @@ DL = os.path.join(ROOT, 'astro-site', 'public', 'dl')
 #: `--letter`. En esas carpetas se exige Letter (un A4 cuenta como defecto) y la hoja de texto
 #: que no necesita ajuste ni pie es «Instructions».
 PRODUCTOS_LETTER = frozenset({'food-cost-templates', 'restaurant-inventory-templates', 'haccp-templates',
-                              'restaurant-schedule-templates', 'restaurant-financial-plan-templates'})
+                              'restaurant-schedule-templates', 'restaurant-financial-plan-templates',
+                              'food-truck-business-plan', 'coffee-shop-business-plan',
+                              'restaurant-business-plan', 'bakery-business-plan'})
 PAPEL_A4, PAPEL_LETTER = 9, 1
 HOJAS_TEXTO = ('Instrucciones', 'Índice', 'Indice', 'Instructions')
 

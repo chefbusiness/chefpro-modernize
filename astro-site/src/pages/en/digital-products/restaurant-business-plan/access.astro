@@ -1,0 +1,26 @@
+---
+// /en/digital-products/restaurant-business-plan/access — access gate de Restaurant Business Plan Kit (tienda EN). COPIA de
+// pages/en/digital-products/restaurant-financial-plan-templates/access.astro, escrita A MANO:
+// fase5-generate-zona-app.py salta las entradas de zona-app.ts con lang ≠ 'es' (TIENDA §3). En lugar
+// del gate del ES se monta el gate COMPARTIDO ProductAccessGate con lang="en" (su COPY.en ya existe):
+// mismo flujo verify-purchase → JWT en localStorage → dashboard. Island client:only="react"
+// (window/localStorage en cliente; sin pase SSR). El <title> va en el BaseLayout porque el shim de
+// react-helmet-async anula el Helmet cliente (= COPY.en.title del gate). Props de dinero = entrada
+// `restaurant-business-plan` de lib/zona-app.ts y de verify-purchase.ts.
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../../../../components/FunctionsOriginPatch.astro';
+import ProductAccessGate from '../../../../../../src/components/shared/ProductAccessGate';
+---
+
+<BaseLayout title="Verifying access... | AI Chef Pro" lang="en" noindex>
+  <FunctionsOriginPatch />
+  <ProductAccessGate
+    client:only="react"
+    productId="restaurant-business-plan"
+    storageKey="restaurant-business-plan-jwt"
+    dashboardPath="/en/digital-products/restaurant-business-plan/library"
+    landingPath="/en/digital-products/restaurant-business-plan"
+    productLabel="Restaurant Business Plan Kit"
+    lang="en"
+  />
+</BaseLayout>

@@ -1,0 +1,32 @@
+{
+ "c0040": {
+  "libro": "FTP",
+  "hoja": "0. Supuestos",
+  "celda": "A23",
+  "texto": "COMMISSARY AND FIXED COSTS"
+ },
+ "c0041": {
+  "libro": "FTP",
+  "hoja": "0. Supuestos",
+  "celda": "A24",
+  "texto": "Monthly commissary & truck parking"
+ },
+ "c0173": {
+  "libro": "FTP",
+  "hoja": "Inversión Inicial",
+  "celda": "A21",
+  "texto": "Commissary & parking deposit"
+ },
+ "c0174": {
+  "libro": "FTP",
+  "hoja": "Inversión Inicial",
+  "celda": "A22",
+  "texto": "Commissary & parking rent before opening"
+ },
+ "c0379": {
+  "libro": "FTP",
+  "hoja": "Instrucciones",
+  "celda": "A5",
+  "texto": "1. \"0. Assumptions\" is the control sheet: customers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, commissary & truck parking, financing and taxes."
+ }
+}

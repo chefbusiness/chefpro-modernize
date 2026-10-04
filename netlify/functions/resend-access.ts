@@ -301,6 +301,42 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my templates',
     lang: 'en',
   },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-food-truck (ver verify-purchase.ts).
+  'food-truck-business-plan': {
+    accessPath: '/en/digital-products/food-truck-business-plan/access',
+    emailSubject: 'Your access to Food Truck Business Plan Kit',
+    emailTitle: 'Access your Food Truck Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-cafeteria (ver verify-purchase.ts).
+  'coffee-shop-business-plan': {
+    accessPath: '/en/digital-products/coffee-shop-business-plan/access',
+    emailSubject: 'Your access to Coffee Shop Business Plan Kit',
+    emailTitle: 'Access your Coffee Shop Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 75-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-bar-restaurante (ver verify-purchase.ts).
+  'restaurant-business-plan': {
+    accessPath: '/en/digital-products/restaurant-business-plan/access',
+    emailSubject: 'Your access to Restaurant Business Plan Kit',
+    emailTitle: 'Access your Restaurant Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 64-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
+  // Tienda EN (2026-10-04): gemelo de plan-negocio-panaderia (ver verify-purchase.ts).
+  'bakery-business-plan': {
+    accessPath: '/en/digital-products/bakery-business-plan/access',
+    emailSubject: 'Your access to Bakery Business Plan Kit',
+    emailTitle: 'Access your Bakery Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 66-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

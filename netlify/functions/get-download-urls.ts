@@ -753,6 +753,34 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-simulador': '/dl/restaurant-financial-plan-templates/BONUS-08-what-if-scenario-simulator.xlsx',
     'bonus-checklist': '/dl/restaurant-financial-plan-templates/BONUS-09-pre-opening-financial-checklist.xlsx',
   },
+  // Tienda EN (2026-10-04): Food Truck Business Plan Kit. MISMAS claves que plan-negocio-food-truck (las del TEMPLATES de
+  // src/pages/FoodTruckBusinessPlanDashboard.tsx) → ficheros EN de /dl/food-truck-business-plan/ (SPEC business-plans-en §2.1, D5).
+  'food-truck-business-plan': {
+    'plan-negocio': '/dl/food-truck-business-plan/food-truck-business-plan.docx',
+    'plan-financiero': '/dl/food-truck-business-plan/food-truck-financial-projections.xlsx',
+    'checklist-apertura': '/dl/food-truck-business-plan/food-truck-startup-checklist.xlsx',
+  },
+  // Tienda EN (2026-10-04): Coffee Shop Business Plan Kit. MISMAS claves que plan-negocio-cafeteria (las del TEMPLATES de
+  // src/pages/CoffeeShopBusinessPlanDashboard.tsx) → ficheros EN de /dl/coffee-shop-business-plan/ (SPEC business-plans-en §2.1, D5).
+  'coffee-shop-business-plan': {
+    'plan-negocio': '/dl/coffee-shop-business-plan/coffee-shop-business-plan.docx',
+    'plan-financiero': '/dl/coffee-shop-business-plan/coffee-shop-financial-projections.xlsx',
+    'checklist-apertura': '/dl/coffee-shop-business-plan/coffee-shop-opening-checklist.xlsx',
+  },
+  // Tienda EN (2026-10-04): Restaurant Business Plan Kit. MISMAS claves que plan-negocio-bar-restaurante (las del TEMPLATES de
+  // src/pages/RestaurantBusinessPlanDashboard.tsx) → ficheros EN de /dl/restaurant-business-plan/ (SPEC business-plans-en-2 D32).
+  'restaurant-business-plan': {
+    'plan-negocio': '/dl/restaurant-business-plan/restaurant-business-plan.docx',
+    'plan-financiero': '/dl/restaurant-business-plan/restaurant-financial-projections.xlsx',
+    'checklist-apertura': '/dl/restaurant-business-plan/restaurant-opening-checklist.xlsx',
+  },
+  // Tienda EN (2026-10-04): Bakery Business Plan Kit. MISMAS claves que plan-negocio-panaderia (las del TEMPLATES de
+  // src/pages/BakeryBusinessPlanDashboard.tsx) → ficheros EN de /dl/bakery-business-plan/ (SPEC business-plans-en-2 D32).
+  'bakery-business-plan': {
+    'plan-negocio': '/dl/bakery-business-plan/bakery-business-plan.docx',
+    'plan-financiero': '/dl/bakery-business-plan/bakery-financial-projections.xlsx',
+    'checklist-apertura': '/dl/bakery-business-plan/bakery-opening-checklist.xlsx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',
