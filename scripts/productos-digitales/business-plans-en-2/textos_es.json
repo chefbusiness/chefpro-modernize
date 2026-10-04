@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-04T18:27:36Z",
+  "generado": "2026-10-04T18:35:46Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "373a3836",
+  "commit": "89f0836b",
   "libros": {
    "RESTP": {
     "es": "plan-financiero-bar-restaurante.xlsx",
@@ -26,18 +26,18 @@
    }
   },
   "n_cadenas": 1288,
-  "n_traducir": 988,
+  "n_traducir": 981,
   "n_localizar": 203,
-  "n_palabras_subagentes": 13188,
+  "n_palabras_subagentes": 13144,
   "n_apariciones": 2262,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: idénticas a una cadena común de FT/CAF ya traducida (textos_en/GM.json de business-plans-en); preparar_tandas.py escribe su EN con los ids de este conjunto. No van a los traductores",
-    "n_cadenas": 392,
-    "n_palabras": 4302,
+    "n_cadenas": 391,
+    "n_palabras": 4294,
     "n_plan": 345,
-    "n_check": 50,
+    "n_check": 49,
     "n_localizar": 0,
     "n_max_len": 19
    },
@@ -54,19 +54,19 @@
    {
     "id": "GREST",
     "descripcion": "Solo restaurante (plan financiero + checklist de una hoja), incluidas las celdas de las tablas D18/D19",
-    "n_cadenas": 388,
-    "n_palabras": 3468,
-    "n_plan": 238,
-    "n_check": 150,
+    "n_cadenas": 384,
+    "n_palabras": 3444,
+    "n_plan": 236,
+    "n_check": 148,
     "n_localizar": 83,
     "n_max_len": 1
    },
    {
     "id": "GPAN",
     "descripcion": "Solo panadería (plan financiero + checklist F1-F6), incluidas las celdas de las tablas D18/D19",
-    "n_cadenas": 387,
-    "n_palabras": 5138,
-    "n_plan": 251,
+    "n_cadenas": 385,
+    "n_palabras": 5126,
+    "n_plan": 249,
     "n_check": 140,
     "n_localizar": 120,
     "n_max_len": 0
@@ -74,16 +74,16 @@
    {
     "id": "GX",
     "descripcion": "NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps",
-    "n_cadenas": 97,
-    "n_palabras": 460,
-    "n_plan": 86,
-    "n_check": 24,
+    "n_cadenas": 104,
+    "n_palabras": 504,
+    "n_plan": 90,
+    "n_check": 27,
     "n_localizar": 0,
     "n_max_len": 0,
     "por_tratamiento": {
      "mapa-clave": 2,
      "mapa-hoja": 23,
-     "regenerar": 72
+     "regenerar": 79
     }
    }
   ],
@@ -358,6 +358,9 @@
    ],
    "n_apariciones": 2,
    "palabras": 28,
+   "pistas": [
+    "D8: añade una vez que los importes van «in your currency» (sin símbolo)"
+   ],
    "sha1": "fdbceb4865ac",
    "donde": [
     {
@@ -10087,7 +10090,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D38: el libro NO modela propinas ni tip credit: servers y bartenders a ≥ $15/h de salario base; federal $2.13/h + tip credit hasta $5.12 donde el estado lo permite; CA, OR, WA, AK, MN, MT y NV no lo permiten (DOL). Suelo = el MAYOR entre el mínimo federal y el estatal/local de \"0. Assumptions\""
    ],
    "sha1": "aef565efad9d",
    "donde": [
@@ -10327,7 +10331,8 @@
     "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
     "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)"
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "SPEC §4.1 línea 4: sin divisores 1,10/1,21/1,04 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl."
    ],
    "sha1": "b8ea0286270a",
    "donde": [
@@ -11091,7 +11096,8 @@
    "n_apariciones": 2,
    "palabras": 16,
    "pistas": [
-    "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»"
+    "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+    "SPEC §4.1: estacionalidad «your area» (sin agosto/costa de España)"
    ],
    "sha1": "a3caeedce903",
    "donde": [
@@ -15193,7 +15199,9 @@
    "n_apariciones": 2,
    "palabras": 16,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy",
+    "SPEC delta §3: health department plan review → food establishment permit (PAN: o licencia estatal de agricultura si hay mayorista; FDA facility registration solo si lo mayorista domina)"
    ],
    "sha1": "af0fa1a6a027",
    "donde": [
@@ -16023,44 +16031,6 @@
    }
   },
   {
-   "id": "c0805",
-   "es": "Hojas de reclamaciones oficiales y su cartel anunciador",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "pan",
-    "rest"
-   ],
-   "n_apariciones": 2,
-   "palabras": 8,
-   "sha1": "3dbf57ff5065",
-   "donde": [
-    {
-     "f": "RESTC",
-     "h": "Checklist Apertura",
-     "c": "B52",
-     "t": "celda",
-     "tr": "traducir"
-    },
-    {
-     "f": "PANC",
-     "h": "F2",
-     "c": "B13",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0739",
-    "en": "Commissary agreement signed and a copy on file",
-    "donde": [
-     "FTC F2 - Vehículo!B15",
-     "CAFC F2 - Local!B14"
-    ]
-   }
-  },
-  {
    "id": "c0807",
    "es": "Registro horario diario de la jornada de todo el equipo",
    "grupo": "GM",
@@ -16542,6 +16512,10 @@
    "es": "Columna OK: elige ✓ (hecho), ☐ (pendiente) o N/A (no aplica). Las N/A no cuentan en el total.",
    "grupo": "GM",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "planes": [
     "pan",
     "rest"
@@ -16555,7 +16529,8 @@
      "h": "Instrucciones",
      "c": "A5",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "PANC",
@@ -18468,6 +18443,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "6704120f2d36",
    "donde": [
     {
@@ -18491,7 +18469,8 @@
    "palabras": 49,
    "pistas": [
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)"
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "4f17176c9d8e",
    "donde": [
@@ -18591,6 +18570,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 9,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "2d4b616891d1",
    "donde": [
     {
@@ -18770,7 +18752,8 @@
    "n_apariciones": 1,
    "palabras": 20,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
    ],
    "sha1": "f8f520ca95bd",
    "donde": [
@@ -19028,6 +19011,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 19,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "968692bcb1a1",
    "donde": [
     {
@@ -19049,6 +19035,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 27,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "24523cbc56e1",
    "donde": [
     {
@@ -19079,7 +19068,8 @@
    "n_apariciones": 1,
    "palabras": 83,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D37: alcohol = 70 % de las ventas de bebida en el ejemplo US (barra con cerveza, vino y cócteles)"
    ],
    "sha1": "6b61b1bfa9bd",
    "donde": [
@@ -19105,7 +19095,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D37: algunos estados y ciudades añaden un impuesto por consumición de alcohol al sales tax → teclea aquí el tipo COMBINADO; 8 % de ejemplo"
    ],
    "sha1": "608dbf774b0c",
    "donde": [
@@ -19245,6 +19236,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "0d88e0b6ddeb",
    "donde": [
     {
@@ -19266,6 +19260,10 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales",
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy"
+   ],
    "sha1": "99cd1e3bbeab",
    "donde": [
     {
@@ -19581,6 +19579,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "19153f68b280",
    "donde": [
     {
@@ -20173,6 +20174,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: sidewalk café / outdoor dining permit"
+   ],
    "sha1": "66a2246c3231",
    "donde": [
     {
@@ -20194,6 +20198,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 29,
+   "pistas": [
+    "SPEC delta §3: sidewalk café / outdoor dining permit"
+   ],
    "sha1": "bde4530c0e1a",
    "donde": [
     {
@@ -20393,7 +20400,8 @@
    "n_apariciones": 1,
    "palabras": 4,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)"
    ],
    "sha1": "03ae233f7115",
    "donde": [
@@ -20426,27 +20434,6 @@
      "f": "RESTP",
      "h": "1. Inversión Inicial",
      "c": "D41",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0207",
-   "es": "Licencias y permisos varios",
-   "grupo": "GREST",
-   "tratamiento": "traducir",
-   "planes": [
-    "rest"
-   ],
-   "n_apariciones": 1,
-   "palabras": 4,
-   "sha1": "e545e3a1606b",
-   "donde": [
-    {
-     "f": "RESTP",
-     "h": "1. Inversión Inicial",
-     "c": "A42",
      "t": "celda",
      "tr": "traducir"
     }
@@ -20570,6 +20557,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "314c2fbd8695",
    "donde": [
     {
@@ -21066,6 +21056,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "ee2abf496072",
    "donde": [
     {
@@ -21087,6 +21080,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "c4017c592b0f",
    "donde": [
     {
@@ -21108,6 +21104,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "c42216490567",
    "donde": [
     {
@@ -21129,6 +21128,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "b17971d37293",
    "donde": [
     {
@@ -21150,6 +21152,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "67f18f4c6767",
    "donde": [
     {
@@ -21171,6 +21176,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "16d0ed411eb4",
    "donde": [
     {
@@ -21192,6 +21200,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "bd48e8957ee7",
    "donde": [
     {
@@ -21300,6 +21311,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 28,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "3d8fbebe7b39",
    "donde": [
     {
@@ -21322,7 +21336,8 @@
    "n_apariciones": 1,
    "palabras": 32,
    "pistas": [
-    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»"
+    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "6e2aab2b4ebd",
    "donde": [
@@ -21348,7 +21363,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
-    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»"
+    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "dd04b228a5a9",
    "donde": [
@@ -21371,6 +21387,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 2,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "79786e6598d0",
    "donde": [
     {
@@ -21392,6 +21411,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "d7368bff86ef",
    "donde": [
     {
@@ -21413,6 +21435,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "168b90fd8c54",
    "donde": [
     {
@@ -21434,6 +21459,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 20,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
+   ],
    "sha1": "0767c9d2af6f",
    "donde": [
     {
@@ -21456,7 +21484,8 @@
    "n_apariciones": 1,
    "palabras": 76,
    "pistas": [
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "4f4f889bed1d",
    "donde": [
@@ -21489,27 +21518,6 @@
      "f": "RESTP",
      "h": "4. Escenarios",
      "c": "A30",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0378",
-   "es": "Cuadro de Personal y Coste Laboral",
-   "grupo": "GREST",
-   "tratamiento": "traducir",
-   "planes": [
-    "rest"
-   ],
-   "n_apariciones": 1,
-   "palabras": 6,
-   "sha1": "d202043ad4a2",
-   "donde": [
-    {
-     "f": "RESTP",
-     "h": "5. Personal",
-     "c": "A2",
      "t": "celda",
      "tr": "traducir"
     }
@@ -21658,6 +21666,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D38: sin tip credit en el libro (servers ≥ $15/h); nota federal $2.13/h + tip credit donde el estado lo permite"
+   ],
    "sha1": "1efae2978bc6",
    "donde": [
     {
@@ -21700,6 +21711,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D38: sin tip credit en el libro (servers ≥ $15/h); nota federal $2.13/h + tip credit donde el estado lo permite"
+   ],
    "sha1": "f8075afe39ab",
    "donde": [
     {
@@ -21876,7 +21890,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "f638f742e781",
    "donde": [
@@ -21918,7 +21933,8 @@
     }
    ],
    "pistas": [
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "1ddcf0edc7d8",
    "donde": [
@@ -22004,7 +22020,8 @@
    "n_apariciones": 1,
    "palabras": 12,
    "pistas": [
-    "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»"
+    "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "sha1": "a961b3cdda6a",
    "donde": [
@@ -22241,7 +22258,8 @@
    "n_apariciones": 1,
    "palabras": 5,
    "pistas": [
-    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española"
+    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "por_celda": true,
    "sha1": "d76e170b468e",
@@ -22320,7 +22338,8 @@
    "palabras": 32,
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)"
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»"
    ],
    "por_celda": true,
    "sha1": "1a8cf6a7310b",
@@ -22652,7 +22671,8 @@
    "palabras": 15,
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)"
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
    ],
    "por_celda": true,
    "sha1": "c73d66e0c96c",
@@ -23957,7 +23977,8 @@
    "palabras": 9,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "I10/D37: esta fila ES («tasa de cierre 25 %», sin fuente) se SUSTITUYE por «Liquor license (state + local)» · «from $50 to $300,000+» · webstaurantstore.com · «this workbook budgets a non-quota state example; in quota states you buy an existing license»"
    ],
    "por_celda": true,
    "sha1": "b886ae105ca4",
@@ -23983,7 +24004,8 @@
    "n_apariciones": 1,
    "palabras": 1,
    "pistas": [
-    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)"
+    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+    "I10/D37: esta fila ES («tasa de cierre 25 %», sin fuente) se SUSTITUYE por «Liquor license (state + local)» · «from $50 to $300,000+» · webstaurantstore.com · «this workbook budgets a non-quota state example; in quota states you buy an existing license»"
    ],
    "por_celda": true,
    "sha1": "4d04d593eab2",
@@ -24010,7 +24032,8 @@
    "palabras": 3,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "I10/D37: esta fila ES («tasa de cierre 25 %», sin fuente) se SUSTITUYE por «Liquor license (state + local)» · «from $50 to $300,000+» · webstaurantstore.com · «this workbook budgets a non-quota state example; in quota states you buy an existing license»"
    ],
    "por_celda": true,
    "sha1": "506ee1dc7758",
@@ -24036,7 +24059,8 @@
    "n_apariciones": 1,
    "palabras": 26,
    "pistas": [
-    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)"
+    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+    "I10/D37: esta fila ES («tasa de cierre 25 %», sin fuente) se SUSTITUYE por «Liquor license (state + local)» · «from $50 to $300,000+» · webstaurantstore.com · «this workbook budgets a non-quota state example; in quota states you buy an existing license»"
    ],
    "por_celda": true,
    "sha1": "b7243bf03897",
@@ -24063,7 +24087,8 @@
    "palabras": 9,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "I10: esta fila ES («cierre a 5 años 50 %», sin fuente) se SUSTITUYE por «Prime cost (food + labor)» · «60-65% of sales» · restaurant365.com"
    ],
    "por_celda": true,
    "sha1": "f88f11890f7a",
@@ -24089,7 +24114,8 @@
    "n_apariciones": 1,
    "palabras": 1,
    "pistas": [
-    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)"
+    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+    "I10: esta fila ES («cierre a 5 años 50 %», sin fuente) se SUSTITUYE por «Prime cost (food + labor)» · «60-65% of sales» · restaurant365.com"
    ],
    "por_celda": true,
    "sha1": "4bd3acba376e",
@@ -24116,7 +24142,8 @@
    "palabras": 3,
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "I10: esta fila ES («cierre a 5 años 50 %», sin fuente) se SUSTITUYE por «Prime cost (food + labor)» · «60-65% of sales» · restaurant365.com"
    ],
    "por_celda": true,
    "sha1": "506ee1dc7758",
@@ -24234,30 +24261,6 @@
      "t": "celda",
      "tr": "localizar",
      "det": "D19"
-    }
-   ]
-  },
-  {
-   "id": "c0672",
-   "es": "Checklist Apertura — Bar-Restaurante / España 2026",
-   "grupo": "GREST",
-   "tratamiento": "traducir",
-   "planes": [
-    "rest"
-   ],
-   "n_apariciones": 1,
-   "palabras": 6,
-   "pistas": [
-    "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»"
-   ],
-   "sha1": "47d485fa8ddc",
-   "donde": [
-    {
-     "f": "RESTC",
-     "h": "Checklist Apertura",
-     "c": "A2",
-     "t": "celda",
-     "tr": "traducir"
     }
    ]
   },
@@ -24503,6 +24506,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "SPEC delta §3: LLC; business name availability search + DBA si se opera con otro nombre"
+   ],
    "sha1": "6575da3ac3cc",
    "donde": [
     {
@@ -24546,7 +24552,8 @@
    "n_apariciones": 1,
    "palabras": 3,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)"
    ],
    "sha1": "0b56ec83b752",
    "donde": [
@@ -24773,7 +24780,8 @@
    "n_apariciones": 1,
    "palabras": 6,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)"
    ],
    "sha1": "c1fd664e71cb",
    "donde": [
@@ -24821,7 +24829,8 @@
    "n_apariciones": 1,
    "palabras": 5,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)"
    ],
    "sha1": "9b00faa4c314",
    "donde": [
@@ -25402,6 +25411,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy"
+   ],
    "sha1": "0a14e459e916",
    "donde": [
     {
@@ -25447,6 +25459,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales"
+   ],
    "sha1": "df318b19d4d2",
    "donde": [
     {
@@ -25629,6 +25644,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: sidewalk café / outdoor dining permit"
+   ],
    "sha1": "2def62174ba7",
    "donde": [
     {
@@ -25848,6 +25866,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales"
+   ],
    "sha1": "847d0b7ae950",
    "donde": [
     {
@@ -25869,6 +25890,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "9a96890d72c4",
    "donde": [
     {
@@ -26460,6 +26484,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: Indeed, Culinary Agents, Poached"
+   ],
    "sha1": "c173fd0670bc",
    "donde": [
     {
@@ -27412,6 +27439,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 10,
+   "pistas": [
+    "SPEC delta §3: food donation program (Bill Emerson Good Samaritan Act) + reglas locales de reciclaje orgánico donde existan"
+   ],
    "sha1": "c77bd601611e",
    "donde": [
     {
@@ -27434,7 +27464,8 @@
    "n_apariciones": 1,
    "palabras": 17,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: food donation program (Bill Emerson Good Samaritan Act) + reglas locales de reciclaje orgánico donde existan"
    ],
    "sha1": "c1ab35aae55a",
    "donde": [
@@ -27457,6 +27488,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 11,
+   "pistas": [
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales"
+   ],
    "sha1": "768043a70c33",
    "donde": [
     {
@@ -27478,6 +27512,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 11,
+   "pistas": [
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy"
+   ],
    "sha1": "45419ef650ee",
    "donde": [
     {
@@ -27499,6 +27536,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 11,
+   "pistas": [
+    "SPEC delta §3: state new-employer registration + carteles laborales federales y estatales"
+   ],
    "sha1": "a898e367e0b3",
    "donde": [
     {
@@ -28129,30 +28169,6 @@
    ]
   },
   {
-   "id": "c0853",
-   "es": "ChefBusiness.co — Checklist Apertura Bar-Restaurante / España 2026",
-   "grupo": "GREST",
-   "tratamiento": "traducir",
-   "planes": [
-    "rest"
-   ],
-   "n_apariciones": 1,
-   "palabras": 8,
-   "pistas": [
-    "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»"
-   ],
-   "sha1": "3f530be9ec73",
-   "donde": [
-    {
-     "f": "RESTC",
-     "h": "Checklist Apertura",
-     "c": "A76",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0854",
    "es": "Ítems completados:",
    "grupo": "GREST",
@@ -28226,6 +28242,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "126b71e62a97",
    "donde": [
     {
@@ -28255,7 +28274,9 @@
    ],
    "pistas": [
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan",
+    "D43: la panadería habla de «transactions»"
    ],
    "sha1": "f9b18c81c156",
    "donde": [
@@ -28334,7 +28355,8 @@
    "palabras": 37,
    "pistas": [
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "fc80e3b0c5ca",
    "donde": [
@@ -28450,6 +28472,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 32,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "7b2c4ecbbc1c",
    "donde": [
     {
@@ -28521,7 +28546,8 @@
    "palabras": 62,
    "pistas": [
     "D14: m² → sq ft (1 m² = 10.764 sq ft)",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "fe1ea9354dfa",
    "donde": [
@@ -28545,7 +28571,8 @@
    "n_apariciones": 1,
    "palabras": 19,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
    ],
    "sha1": "045234e0a751",
    "donde": [
@@ -28641,7 +28668,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "3de13ed453b0",
    "donde": [
@@ -28736,7 +28764,9 @@
    "n_apariciones": 1,
    "palabras": 25,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "8862921ecfd3",
    "donde": [
@@ -28783,6 +28813,10 @@
    ],
    "n_apariciones": 1,
    "palabras": 57,
+   "pistas": [
+    "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»",
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "47a287efdac0",
    "donde": [
     {
@@ -28806,7 +28840,8 @@
    "palabras": 68,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "960a9e8b5ae3",
    "donde": [
@@ -28835,30 +28870,6 @@
      "f": "PANP",
      "h": "0. Supuestos",
      "c": "C62",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0889",
-   "es": "IVA de la bebida ALCOHÓLICA servida en mostrador",
-   "grupo": "GPAN",
-   "tratamiento": "traducir",
-   "planes": [
-    "pan"
-   ],
-   "n_apariciones": 1,
-   "palabras": 8,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
-   ],
-   "sha1": "740ee90938e1",
-   "donde": [
-    {
-     "f": "PANP",
-     "h": "0. Supuestos",
-     "c": "A63",
      "t": "celda",
      "tr": "traducir"
     }
@@ -28938,30 +28949,6 @@
    ]
   },
   {
-   "id": "c0894",
-   "es": "Inversión Inicial — España 2026",
-   "grupo": "GPAN",
-   "tratamiento": "traducir",
-   "planes": [
-    "pan"
-   ],
-   "n_apariciones": 1,
-   "palabras": 4,
-   "pistas": [
-    "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»"
-   ],
-   "sha1": "551696a98c02",
-   "donde": [
-    {
-     "f": "PANP",
-     "h": "Inversión Inicial",
-     "c": "A2",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0895",
    "es": "Ajusta las cifras a tu proyecto.",
    "grupo": "GPAN",
@@ -29001,7 +28988,8 @@
    "n_apariciones": 1,
    "palabras": 3,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)"
    ],
    "sha1": "871e0cdd12ef",
    "donde": [
@@ -29048,6 +29036,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy"
+   ],
    "sha1": "e6ee15b1c864",
    "donde": [
     {
@@ -29069,6 +29060,10 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "82266c5762c3",
    "donde": [
     {
@@ -29090,6 +29085,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales"
+   ],
    "sha1": "3d960bef5f2f",
    "donde": [
     {
@@ -29119,6 +29117,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "47bbdf578e9f",
    "donde": [
     {
@@ -29169,6 +29170,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "b26fc19b56e2",
    "donde": [
     {
@@ -29190,6 +29194,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "d61c4726190c",
    "donde": [
     {
@@ -29211,6 +29218,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "e17d7d85c736",
    "donde": [
     {
@@ -29232,6 +29242,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "d09fa93c4344",
    "donde": [
     {
@@ -29253,6 +29266,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "111dc7cef86f",
    "donde": [
     {
@@ -29529,6 +29545,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "e87777e48ddc",
    "donde": [
     {
@@ -29897,6 +29916,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "19664e09ca7f",
    "donde": [
     {
@@ -29918,6 +29940,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "bf22f8ac5abc",
    "donde": [
     {
@@ -29939,6 +29964,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 9,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "d3ee4786ec8e",
    "donde": [
     {
@@ -29963,7 +29991,10 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan",
+    "D43: la panadería habla de «transactions»",
+    "D36 (E3): la col. H es la parte EXENTA del sales tax de la línea (bollería para llevar + venta mayorista a un café que revende, con resale certificate); ejemplo 0.80; CA exime la bollería para llevar y grava el consumo en el local (regla 80/80) — «check your state»; con 0 el libro grava toda la línea; UK: zero-rated para llevar, 20 % en el local. Solo afecta a la tesorería (el P&L va sin impuesto)"
    ],
    "sha1": "6b2f5c32a01b",
    "donde": [
@@ -30112,6 +30143,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 11,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "5ee27b5ba258",
    "donde": [
     {
@@ -30210,7 +30244,8 @@
    "n_apariciones": 1,
    "palabras": 41,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "2b8493712c70",
    "donde": [
@@ -30279,7 +30314,8 @@
    "n_apariciones": 1,
    "palabras": 81,
    "pistas": [
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "2f49cf866260",
    "donde": [
@@ -30416,6 +30452,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "307b1323b465",
    "donde": [
     {
@@ -30437,6 +30476,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "ff39a074dbe4",
    "donde": [
     {
@@ -30458,6 +30500,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "b7e285f97482",
    "donde": [
     {
@@ -30479,6 +30524,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "810122f3c4dd",
    "donde": [
     {
@@ -30500,6 +30548,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "98e304e02058",
    "donde": [
     {
@@ -30522,7 +30573,8 @@
    "n_apariciones": 1,
    "palabras": 32,
    "pistas": [
-    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»"
+    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+    "D43: la panadería habla de «transactions»"
    ],
    "sha1": "129eb4f5c7e5",
    "donde": [
@@ -30548,7 +30600,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
-    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»"
+    "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+    "D43: la panadería habla de «transactions»"
    ],
    "sha1": "b7d01556b3f6",
    "donde": [
@@ -30592,6 +30645,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 2,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "169676e0f49b",
    "donde": [
     {
@@ -30613,6 +30669,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "352d60302b10",
    "donde": [
     {
@@ -30634,6 +30693,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "c7db686bf473",
    "donde": [
     {
@@ -30655,6 +30717,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 20,
+   "pistas": [
+    "D43: la panadería habla de «transactions»"
+   ],
    "sha1": "41e6d9c5faf9",
    "donde": [
     {
@@ -30677,7 +30742,8 @@
    "n_apariciones": 1,
    "palabras": 76,
    "pistas": [
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D43: la panadería habla de «transactions»"
    ],
    "sha1": "f6294d0f7d40",
    "donde": [
@@ -30742,6 +30808,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 30,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "4853f3cf4420",
    "donde": [
     {
@@ -30805,6 +30874,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "3fb64a2010be",
    "donde": [
     {
@@ -30921,7 +30993,8 @@
    "palabras": 18,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas"
+    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "ca5b9e6477ef",
    "donde": [
@@ -30944,6 +31017,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 30,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "9a2fc9eb210b",
    "donde": [
     {
@@ -31049,6 +31125,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 12,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "2238a19e64ff",
    "donde": [
     {
@@ -31070,6 +31149,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 7,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "bbf78b8a765a",
    "donde": [
     {
@@ -31100,7 +31182,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D43: la panadería habla de «transactions»"
    ],
    "sha1": "4948c5f6e179",
    "donde": [
@@ -31179,7 +31262,8 @@
     "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
     "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)"
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "SPEC §4.1 línea 4: sin divisores 1,10/1,21/1,04 → «divide a menu price by 1 + your sales tax rate»; P&L excl. sales tax, cash flow incl.; en la panadería, la parte exenta de la línea de pan (col. H del P&L, D36) no lleva sales tax"
    ],
    "sha1": "6b98247ccc0b",
    "donde": [
@@ -31203,7 +31287,8 @@
    "n_apariciones": 1,
    "palabras": 33,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "SPEC §4.1 línea 8 (I1): el Word del kit usa las MISMAS cifras de ejemplo que este libro; si cambias el libro, actualiza las cifras del Word"
    ],
    "sha1": "37f868d007ee",
    "donde": [
@@ -31227,7 +31312,8 @@
    "n_apariciones": 1,
    "palabras": 12,
    "pistas": [
-    "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»"
+    "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+    "D43: la panadería habla de «transactions»"
    ],
    "sha1": "d985a5cb82a9",
    "donde": [
@@ -31440,7 +31526,8 @@
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
     "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "916f7363481e",
@@ -31466,7 +31553,8 @@
    "n_apariciones": 1,
    "palabras": 3,
    "pistas": [
-    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española"
+    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+    "D43: la panadería habla de «transactions»"
    ],
    "por_celda": true,
    "sha1": "75fa1a729cf3",
@@ -31770,7 +31858,8 @@
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
     "D14: m² → sq ft (1 m² = 10.764 sq ft)",
-    "Formato US: punto decimal y coma de miles («0.35 = 35%»)"
+    "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "68ab95f15165",
@@ -31877,7 +31966,9 @@
    "palabras": 30,
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "688fe923d7f5",
@@ -32305,7 +32396,9 @@
    "n_apariciones": 1,
    "palabras": 99,
    "pistas": [
-    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española"
+    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
    ],
    "por_celda": true,
    "sha1": "45ea1372d3ba",
@@ -32629,7 +32722,8 @@
    "palabras": 57,
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "844a0523ef01",
@@ -32935,7 +33029,8 @@
    "n_apariciones": 1,
    "palabras": 19,
    "pistas": [
-    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española"
+    "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "1dd675a855e7",
@@ -33042,7 +33137,8 @@
    "palabras": 11,
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "4a5c46639353",
@@ -33070,7 +33166,8 @@
    "pistas": [
     "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»"
+    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "123122647ad6",
@@ -33592,7 +33689,8 @@
    "n_apariciones": 1,
    "palabras": 17,
    "pistas": [
-    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)"
+    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "f1b49de6ef88",
@@ -34222,7 +34320,8 @@
    "n_apariciones": 1,
    "palabras": 12,
    "pistas": [
-    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)"
+    "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "9767a4cedbe9",
@@ -34329,7 +34428,8 @@
    "pistas": [
     "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
-    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")"
+    "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "por_celda": true,
    "sha1": "17b7c355f081",
@@ -34862,7 +34962,8 @@
    "palabras": 53,
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»"
+    "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "0128c7199f40",
    "donde": [
@@ -34995,7 +35096,9 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "SPEC delta §3: health department plan review → food establishment permit (PAN: o licencia estatal de agricultura si hay mayorista; FDA facility registration solo si lo mayorista domina)",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "f811bbdbd7a7",
    "donde": [
@@ -35064,7 +35167,8 @@
    "n_apariciones": 1,
    "palabras": 3,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: USPTO trademark (opcional)"
    ],
    "sha1": "2493c5ea38f9",
    "donde": [
@@ -35088,7 +35192,8 @@
    "n_apariciones": 1,
    "palabras": 1,
    "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita"
+    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+    "SPEC delta §3: USPTO trademark (opcional)"
    ],
    "sha1": "6f61565e68b3",
    "donde": [
@@ -35168,7 +35273,8 @@
    "pistas": [
     "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
     "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "2928c3736494",
    "donde": [
@@ -35220,6 +35326,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "2caed35023cf",
    "donde": [
     {
@@ -35270,7 +35379,8 @@
    "n_apariciones": 1,
    "palabras": 6,
    "pistas": [
-    "D14: m² → sq ft (1 m² = 10.764 sq ft)"
+    "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "ad9a27262b94",
    "donde": [
@@ -35479,6 +35589,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy"
+   ],
    "sha1": "5644eb8fbcff",
    "donde": [
     {
@@ -35521,6 +35634,10 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "fb4826d04a48",
    "donde": [
     {
@@ -35542,6 +35659,10 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales",
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "386159c04107",
    "donde": [
     {
@@ -35605,6 +35726,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "6bc25ba64695",
    "donde": [
     {
@@ -35710,6 +35834,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "db6166bf8793",
    "donde": [
     {
@@ -35806,6 +35933,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 27,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "ed5be1a73771",
    "donde": [
     {
@@ -36162,6 +36292,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "bdedc3077d78",
    "donde": [
     {
@@ -36204,6 +36337,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica"
+   ],
    "sha1": "915390eaf9f9",
    "donde": [
     {
@@ -37041,6 +37177,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 5,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "56333cdfcdf5",
    "donde": [
     {
@@ -37083,6 +37222,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 6,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "2f4610320aeb",
    "donde": [
     {
@@ -37128,6 +37270,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 4,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "f9bfbcbe6696",
    "donde": [
     {
@@ -37303,6 +37448,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 17,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "49da2cbc696c",
    "donde": [
     {
@@ -37325,7 +37473,8 @@
    "n_apariciones": 1,
    "palabras": 22,
    "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
+    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
    ],
    "sha1": "820fc643d759",
    "donde": [
@@ -37624,6 +37773,9 @@
    ],
    "n_apariciones": 1,
    "palabras": 3,
+   "pistas": [
+    "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan"
+   ],
    "sha1": "a3826511cca8",
    "donde": [
     {
@@ -39244,6 +39396,29 @@
    ]
   },
   {
+   "id": "c0207",
+   "es": "Licencias y permisos varios",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "en_mapa": "Liquor license + permits (non-quota state example)",
+   "planes": [
+    "rest"
+   ],
+   "n_apariciones": 1,
+   "palabras": 4,
+   "sha1": "e545e3a1606b",
+   "donde": [
+    {
+     "f": "RESTP",
+     "h": "1. Inversión Inicial",
+     "c": "A42",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
    "id": "c0225",
    "es": "NOTA: Todos los importes son estimaciones basadas en precios de mercado en España 2026. Ajusta cada partida a tu situación real.",
    "grupo": "GX",
@@ -39539,6 +39714,29 @@
      "t": "hoja",
      "tr": "mapa-hoja",
      "det": "nombre de pestaña"
+    }
+   ]
+  },
+  {
+   "id": "c0378",
+   "es": "Cuadro de Personal y Coste Laboral",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "en_mapa": "Staffing Plan & Labor Cost",
+   "planes": [
+    "rest"
+   ],
+   "n_apariciones": 1,
+   "palabras": 6,
+   "sha1": "d202043ad4a2",
+   "donde": [
+    {
+     "f": "RESTP",
+     "h": "5. Personal",
+     "c": "A2",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "decisión de la SPEC (mapas.FIJOS)"
     }
    ]
   },
@@ -40850,6 +41048,83 @@
    ]
   },
   {
+   "id": "c0672",
+   "es": "Checklist Apertura — Bar-Restaurante / España 2026",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "en_mapa": "Opening Checklist — Restaurant & Bar (US example, 2026)",
+   "planes": [
+    "rest"
+   ],
+   "n_apariciones": 1,
+   "palabras": 6,
+   "sha1": "47d485fa8ddc",
+   "donde": [
+    {
+     "f": "RESTC",
+     "h": "Checklist Apertura",
+     "c": "A2",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Hojas de reclamaciones oficiales y su cartel anunciador",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "planes": [
+    "pan",
+    "rest"
+   ],
+   "n_apariciones": 2,
+   "palabras": 8,
+   "sha1": "3dbf57ff5065",
+   "donde": [
+    {
+     "f": "RESTC",
+     "h": "Checklist Apertura",
+     "c": "B52",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    },
+    {
+     "f": "PANC",
+     "h": "F2",
+     "c": "B13",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "ChefBusiness.co — Checklist Apertura Bar-Restaurante / España 2026",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "en_mapa": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+   "planes": [
+    "rest"
+   ],
+   "n_apariciones": 1,
+   "palabras": 8,
+   "sha1": "3f530be9ec73",
+   "donde": [
+    {
+     "f": "RESTC",
+     "h": "Checklist Apertura",
+     "c": "A76",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
    "id": "c0858",
    "es": "Este fichero forma parte del producto «plan-negocio-bar-restaurante» de AI Chef Pro.",
    "grupo": "GX",
@@ -40901,6 +41176,29 @@
    ]
   },
   {
+   "id": "c0889",
+   "es": "IVA de la bebida ALCOHÓLICA servida en mostrador",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "en_mapa": "Sales tax rate on alcohol served at the counter",
+   "planes": [
+    "pan"
+   ],
+   "n_apariciones": 1,
+   "palabras": 8,
+   "sha1": "740ee90938e1",
+   "donde": [
+    {
+     "f": "PANP",
+     "h": "0. Supuestos",
+     "c": "A63",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
    "id": "c0892",
    "es": "Inversión Inicial",
    "grupo": "GX",
@@ -40919,6 +41217,29 @@
      "t": "hoja",
      "tr": "mapa-hoja",
      "det": "nombre de pestaña"
+    }
+   ]
+  },
+  {
+   "id": "c0894",
+   "es": "Inversión Inicial — España 2026",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "en_mapa": "Startup Costs — US example (2026)",
+   "planes": [
+    "pan"
+   ],
+   "n_apariciones": 1,
+   "palabras": 4,
+   "sha1": "551696a98c02",
+   "donde": [
+    {
+     "f": "PANP",
+     "h": "Inversión Inicial",
+     "c": "A2",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "decisión de la SPEC (mapas.FIJOS)"
     }
    ]
   },

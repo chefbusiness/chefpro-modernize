@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generado": "2026-10-04T18:27:36Z",
+  "generado": "2026-10-04T18:35:46Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-bar-restaurante",
    "astro-site/public/dl/plan-negocio-panaderia"
   ],
-  "commit": "373a3836",
+  "commit": "89f0836b",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -23501,12 +23501,26 @@
     "fmt": "usd",
     "valor_es": -30524.774999999976
    },
+   "inv_lanzamiento": {
+    "hoja_es": "Inversión Inicial",
+    "hoja_en": "Startup Costs",
+    "celda": "B24",
+    "fmt": "usd",
+    "valor_es": 2000
+   },
    "inv_stock": {
     "hoja_es": "Inversión Inicial",
     "hoja_en": "Startup Costs",
     "celda": "B25",
     "fmt": "usd",
     "valor_es": 1500
+   },
+   "inv_obra": {
+    "hoja_es": "Inversión Inicial",
+    "hoja_en": "Startup Costs",
+    "celda": "B10",
+    "fmt": "usd",
+    "valor_es": 20000
    },
    "inv_horno": {
     "hoja_es": "Inversión Inicial",

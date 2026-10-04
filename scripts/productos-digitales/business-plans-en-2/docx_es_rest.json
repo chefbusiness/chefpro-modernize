@@ -1,0 +1,2512 @@
+{
+ "meta": {
+  "generado": "2026-10-04T18:35:47+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "rest",
+  "fichero_es": "astro-site/public/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx",
+  "sha256": "ce4f3d9e66957f822b3ab749b65bc529eeca80e90ecf3c990650b9ffabeaccd3",
+  "fichero_en": "astro-site/public/dl/restaurant-business-plan/restaurant-business-plan.docx",
+  "titulo_en": "Restaurant Business Plan (10 Sections)",
+  "n_parrafos": 148,
+  "n_con_texto": 126,
+  "n_sin_runs": 18,
+  "n_un_run": 130,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 138,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 69,
+   "vacio": 22,
+   "fijo": 20,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10,
+   "subtitulo": 6
+  },
+  "n_traducir": 75,
+  "palabras_traducir": 6663,
+  "tandas": {
+   "rest_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77
+    ],
+    "palabras": 3148
+   },
+   "rest_b": {
+    "parrafos": [
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93,
+     94,
+     95,
+     96,
+     99,
+     100,
+     101,
+     102,
+     103,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111,
+     112,
+     115,
+     116,
+     117,
+     118,
+     119,
+     120,
+     121,
+     122,
+     125,
+     126,
+     127,
+     128,
+     129,
+     130,
+     131
+    ],
+    "palabras": 3515
+   }
+  },
+  "pagina_emu": [
+   7772400,
+   10058400
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average covers (restaurant) or transactions (bakery) per day, year 1",
+   "clientes_a2": "average covers / transactions per day, year 2",
+   "clientes_a3": "average covers / transactions per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "packaging and disposables, % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (base rent of the premises)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out, years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year (occupancy)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even covers / transactions per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even covers / transactions per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: covers / transactions per day",
+   "optimista_clientes": "optimistic scenario: covers / transactions per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: average check excl. sales tax",
+   "optimista_ticket": "optimistic scenario: average check excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: operating days",
+   "optimista_dias": "optimistic scenario: operating days",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_lanzamiento": "grand opening / launch marketing budget",
+   "inv_stock": "opening food inventory (bakery: flour, yeast and other ingredients)",
+   "inv_stock_barra": "opening bar inventory (wine, beer, spirits)",
+   "inv_obra": "build-out of the premises",
+   "inv_cocina": "cooking line (range + griddle)",
+   "inv_campana": "Type I hood with UL 300 fire suppression",
+   "inv_barra": "bar (build and install)",
+   "inv_sala": "dining tables and chairs",
+   "inv_licencias": "liquor license and permits (non-quota state example)",
+   "aforo": "seats (tables + bar)",
+   "rotaciones_dia": "implied seat turns per day"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Bar-Restaurante",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Restaurant & Bar"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, analisis de mercado,\nestrategia operativa y checklist de apertura\npara abrir un bar-restaurante en Espana",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and opening checklist\nto open a casual restaurant with a bar in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Espana, 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoria Gastronomica con fines informativos y orientativos. Las cifras, proyecciones y datos incluidos se basan en fuentes publicas del mercado espanol y en la experiencia profesional de mas de 29 anos en el sector. Los resultados reales pueden variar significativamente en funcion de la ubicacion, la gestion, las condiciones del mercado y otros factores. Este plan de negocio no constituye asesoramiento financiero, legal ni fiscal. Recomendamos consultar con profesionales especializados antes de tomar decisiones de inversion. ChefBusiness no se responsabiliza de las decisiones tomadas en base a este documento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness Consultoria Gastronomica — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "INDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y Recursos Humanos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist Apertura Excel",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Restaurant Financial Projections (Excel) + Restaurant Opening Checklist (Excel)"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "El sector de la hostelería española atraviesa en 2026 un momento de consolidación tras los años de transformación post-pandemia. Los datos del INE reflejan una recuperación sostenida del consumo en restauración, con un incremento del 4,2% en la facturación del sector durante 2025 y una previsión de crecimiento del 3,5% para el presente ejercicio. El consumidor español ha modificado estructuralmente sus hábitos: demanda experiencias de restauración con propuesta de valor clara, abandona el consumo masivo en favor de conceptos especializados y muestra disposición a pagar más por calidad percibida y ambiente. Esta evolución genera una ventana de oportunidad para proyectos bien definidos que operen en el segmento casual dining de gama media-alta, donde la competencia aún no ha saturado las ubicaciones prime en ciudades de más de 100.000 habitantes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 129
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "El concepto propuesto consiste en un bar-restaurante casual de 60 a 80 metros cuadrados de sala más cocina, con capacidad para 40 a 50 comensales en interior y posibilidad de terraza. La oferta gastronómica se centrará en cocina de mercado con producto de temporada, complementada por una carta de barras con selección de vermuts, cócteles de autor y una bodega reducida pero orientada a la relación calidad-precio. El posicionamiento busca diferenciarse en un segmento donde la mayoría de competidores ofrecen propuesta genérica: ambiente cuidado sin ostentación, servicio profesional pero cercano, y una carta que rote trimestralmente según disponibilidad de producto. El ticket medio objetivo de 18 a 25 euros se sitúa en el rango medio-alto del segmento casual, justificable por la calidad de materia prima y la experiencia global propuesta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 130
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total requerida se estima entre 80.000 y 150.000 euros, dependiendo de si el local requiere obra civil completa o existe infraestructura previa. El desglose aproximado incluye: obra y equipamiento de cocina (35.000-55.000 euros), mobiliario y decoración de sala (20.000-30.000 euros), utensilios menores y mise en place (8.000-12.000 euros), fondo de maniobra para los primeros tres meses (15.000-25.000 euros) y gastos de apertura y marketing inicial (8.000-15.000 euros). Esta horquilla permite adaptarse a diferentes escenarios de negociación de alquiler y estado del local, manteniendo siempre un margen de seguridad del 15% sobre la estimación superior.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 96
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "Las proyecciones financieras para el primer año contemplan una facturación de aproximadamente 350.000 euros, basada en una ocupación media del 65% en horario de comida y del 55% en cena durante los primeros seis meses, con mejora progresiva hasta alcanzar el 80% de ocupación en horario de cena al cierre del ejercicio. El punto de equilibrio se estima entre los meses 8 y 10 de actividad, una vez consolidada la clientela habitual y ejecutadas las acciones de marketing de lanzamiento. El margen bruto de explotación se sitúa en el 62-65%, comparable con proyectos similares en el segmento, y el resultado neto del primer año debería alcanzar el 8-12% de la facturación, siempre que la gestión de costes de personal y materia prima se ejecute con rigor.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 126
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo necesario para la operación contempla entre 8 y 10 personas: un director-gerente con funciones de gestión comercial y financiera, un jefe de cocina responsable de la línea de producción, dos cocineros de ejecución, dos camareros de sala más el responsable de barra, un ayudante de barra y un auxiliar polivalente para cobertura de fines de semana. La estructura salarial se ha diseñado considerando el marco del convenio de hostelería de la comunidad autónoma correspondiente, con incentivos vinculados a objetivos de facturación y satisfacción del cliente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 87
+  },
+  "44": {
+   "estilo": "Normal",
+   "texto": "El momento actual presenta características favorables para este tipo de proyecto. Los tipos de interés han comenzado su ciclo descendente, mejorando las condiciones de financiación bancaria para proyectos con garantías sólidas. El mercado laboral en hostelería muestra mayor estabilidad salarial tras los ajustes de 2023-2024, y existe disponibilidad de locales comerciales en ubicacionesprime a precios de alquiler que aún no han recuperado los niveles de 2019. La combinación de estos factores, junto con la solidez del plan financiero presentado, convierte este proyecto en una oportunidad de inversión con perfil de riesgo moderado y horizonte de retorno de 18 a 24 meses.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 101
+  },
+  "45": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "El mercado de restauración casual en España en 2026 presenta una oportunidad clara en el segmento medio-alto: el consumidor busca experiencias gastronómicas de calidad sin formalidad, con una inversión por comensal que ronde los 20-25 euros. Este perfil, mayoritariamente urbano y con edades entre 30 y 50 años, representa aproximadamente el 35% del gasto en restauración fuera del hogar, según datos del sector. La pandemia aceleró la preferencia por espacios más reducidos pero con mayor calidad percibida, lo que convierte un local de 60-80 metros cuadrados en una superficie óptima para maximizar rentabilidad por metro cuadrado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 96
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "El concepto se define como bar-restaurante casual-chic de cocina mediterránea contemporánea. La propuesta gastronómica huye de la tradicional barra de tapeo para ofrecer una carta estructurada en tres tiempos: entrantes para compartir diseñados para facilitar la socialización, platos principales de elaboración propia con producto de temporada, y postres artesanales con presentación actual. La carta de cócteles y combinados premium complementa la oferta, posicionando el establecimiento como alternativa a los bares de copas tradicionales para el público que busca algo más que una consumición.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 83
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El ambiente se diseña con materiales nobles: madera natural en mobiliario y revestimientos, iluminación cálida mediante sistemas LED regulables que permiten ajustar la atmósfera según el momento del día, y una distribución que combina la barra como elemento central de socialización con mesas en sala que garantizan intimidad. La terraza, con capacidad para 15-20 cubiertos adicionales, representa un activo diferenciador en zonas urbanas donde la demanda de espacio exterior se mantiene estable durante ocho meses al año. El diseño interior busca una inversión en mobiliario y decoración que no supere los 25.000 euros, priorizando calidad y durabilidad sobre tendencias efímeras.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 100
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "El modelo de servicio opera en dos vertientes complementarias. La barra funciona de forma continua desde las 12:00 hasta la 1:00 de la madrugada, ofreciendo desde un café matutino hasta cócteles nocturnos. El servicio de sala se estructura en dos franjas horarias diferenciadas: comidas de 13:00 a 16:00 y cenas de 20:00 a 24:00, con una rotación objetivo de 1,5 servicios en comida y 1,2 en cena. Este horario permite reducir personal en horas de menor actividad y concentrar la oferta en los momentos de mayor ticket medio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 88
+  },
+  "51": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor única se construye sobre tres pilares: producto de calidad con trazabilidad demostrable, ambiente que invita a la permanencia sin precipitar el consumo, y una relación calidad-precio claramente favorable respecto a la competencia directa. El ticket medio objetivo de 22-25 euros en comida y 25-30 euros en cena se sitúa en el segmento superior del casual dining, justificado por la calidad de materias primas y la elaboración artesanal. La diferenciación frente a cadenas como Five Guys, Smashburger o incluso marcas locales de tapeo tradicional reside en la experiencia integral: no se viene a comer rápido sino a disfrutar de un momento gastronómico completo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 106
+  },
+  "52": {
+   "estilo": "Normal",
+   "texto": "El posicionamiento estratégico busca capturar al consumidor que rechaza la masificación de las cadenas pero no dispone de presupuesto para alta cocina. En términos de rentabilidad, un local con 45 plazas interiores y 18 de terraza, operando a un 65% de ocupación media durante 340 días anuales, genera una facturación bruto de entre 520.000 y 620.000 euros, con un margen de explotación del 12-15% una vez descontados costes de personal, materias primas y gastos operativos. Este modelo equilibra inversión moderada con potencial de retorno atractivo para un emprendedor con experiencia en hostelería.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 92
+  },
+  "53": {
+   "estilo": "Heading 1",
+   "texto": "3. Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "El sector hostelero español atraviesa en 2026 una fase de consolidación tras los profundos cambios estructurales derivados de la pandemia. Según datos de la Federación Española de Hostelería y Restauración, España cuenta actualmente con aproximadamente 355.000 establecimientos de restauración, de los cuales cerca de 210.000 corresponden a bares y restaurantes propiamente dichos, mientras que el resto incluye cafeterías, establecimientos de comida rápida y otros formatos. El sector genera una facturación anual superior a los 145.000 millones de euros, lo que representa aproximadamente el 6,5% del PIB nacional y constituye uno de los pilares fundamentales de la economía española, con más de 1,7 millones de empleados directos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 106
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "El gasto medio per cápite en restauración fuera del hogar se sitúa en torno a los 1.650 euros anuales, mostrando una recuperación sostenida respecto a los niveles prepandémicos y un cambio cualitativo en el comportamiento del consumidor. El cliente post-covid ha modificado sustancialmente sus hábitos: busca experiencias memorables más que simple alimentación, prioriza la calidad del producto y la sostenibilidad sobre el precio, y valora positivamente aquellos establecimientos que ofrecen una propuesta diferencial basada en producto local, elaboración artesana y servicio attentive.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 82
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "El ticket medio en un bar-restaurante casual como el proyectado oscila entre 18 y 25 euros en comida y entre 22 y 30 euros en cena, dependiendo de la ubicación y el posicionamiento del local. Las zonas urbanas de alta densidad comercial, los entornos empresariales y los barrios con tejido comercial consolidado presentan los mejores indicadores de ticket medio y frecuencia de visita. La combinación de servicio de barra con mesa permite capturar diferentes momentos de consumo y optimizar la rotación, aspecto crítico para la rentabilidad del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 88
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "La tasa de supervivencia de nuevos establecimientos hosteleros en España se sitúa en torno al 65% durante los primeros tres años de actividad, aunque este porcentaje varía significativamente según la ubicación, el concepto y la solidez del plan de negocio. Los principales factores de fracaso están relacionados con una inadecuada gestión de costes, una localización inadecuada y la falta de diferenciación competitiva. En sentido contrario, los establecimientos que survive y prosperan comparten características comunes: propuesta de valor clara, posicionamiento en un segmento de mercado definido, atención rigurosa a la experiencia del cliente y gestión profesionalizada de la explotación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 98
+  },
+  "59": {
+   "estilo": "Normal",
+   "texto": "Las tendencias que definen el sector en 2026 refuerzan la viabilidad del concepto propuesto. La demanda de producto local y de temporada continúa en ascenso, con consumidores dispuestos a pagar un sobreprecio por garantías de procedencia y sostenibilidad. La digitalización affecting tanto la gestión interna como la relación con el cliente: reservas online, sistemas de pedido, presencia en plataformas de delivery y gestión de redes sociales constituyen elementos prácticamente obligatorios para cualquier nuevo proyecto. La experiencia inmersiva, entendida como la capacidad del establecimiento para ofrecer algo más que alimentación, marca la diferencia entre locales con listas de espera y otros que luchan por completar su ocupación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 106
+  },
+  "60": {
+   "estilo": "Normal",
+   "texto": "Madrid, Barcelona, Valencia, Sevilla y Bilbao lideran la densidad hostelera por número de establecimientos y facturación, aunque el mercado provincial presenta oportunidades significativas en ciudades de tamaño medio con tejido empresarial consolidado y población con poder adquisitivo medio-alto. El público objetivo de 25 a 55 años, con nivel adquisitivo medio-alto, representa el segmento con mayor frecuencia de consumo en restauración casual y el más sensible a la propuesta de valor diferenciada que caracteriza al concepto analizado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 76
+  },
+  "61": {
+   "estilo": "Heading 1",
+   "texto": "4. Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "El mercado de restauración casual en España en 2026 presenta una fragmentación significativa que exige un análisis competitivo riguroso para cualquier proyecto de bar-restaurante. La identificación precisa de competidores directos e indirectos resulta fundamental para definir el posicionamiento y las barreras de protección del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 45
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "En el segmento de competidores directos, el bar-restaurante casual de 40-50 plazas competirá directamente con establecimientos similares en un radio de influencia de 800 metros. Estos incluyen bares de barrio reconvertidos que han actualizado su oferta gastronómica, locales de hostelería tradicional que han incorporado carta de cocina y terrazas con mesas de formatos similares. En zonas urbanas consolidadas de ciudades como Madrid, Barcelona, Valencia o Sevilla, la densidad media de competidores directos oscila entre 12 y 18 establecimientos por kilómetro cuadrado, según datos del directorio de hostelería de Hosteleria. El análisis de mercado revela que el 67% de estos competidores opera con modelos de negocio heredados, sin sistematización de procesos ni diferenciación clara en propuesta de valor, lo cual representa una oportunidad estratégica para un proyecto con enfoque profesional.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 129
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Los competidores indirectos ejercen presión competitiva relevante sobre el modelo propuesto. El segmento de fast-casual ha crecido un 23% en España entre 2023 y 2026, con cadenas como Five Guys, Smashburger y locales de comida internacional captandoclientela joven con tickets medios de 14-22 EUR. El delivery representa el competidor indirecto más relevante: las plataformas Glovo, Deliveroo y Uber Eats concentran el 31% del gasto en alimentación fuera del hogar en zonas urbanas, con un ticket medio por pedido de 24-28 EUR que compite directamente con la propuesta de consumo en sala. Finalmente, la cocina en casa ha recuperado terreno tras la inflación de 2024-2025, con el consumidor español priorizando el ahorro en ocasiones de consumo cotidiano.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 116
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El análisis DAFO del concepto propuesto revela elementos críticos para la viabilidad del proyecto. Las fortalezas residen en la profesionalización del modelo de gestión, la diferenciación mediante carta de producto propia con proveedores seleccionados y la optimización de espacios para maximizar facturación por metro cuadrado. Las debilidades principales incluyen la dependencia de ubicación específica, la necesidad de construir clientela desde cero y la exposición a la estacionalidad en zonas con turismo fluctuante. Las oportunidades de mercado son claras: el segmento de restauración casual de calidad media-alta crece un 8% anual, el consumidor demanda experiencias diferenciadas fuera de casa y el turismo gastronómico urbano se consolida. Las amenazas más relevantes son la subida de costes laborales derivada de la normativa laboral española, la competencia de plataformas de delivery que erosionan márgenes y la posible saturación de zonas urbanas con alta densidad de hostelería.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 142
+  },
+  "67": {
+   "estilo": "Normal",
+   "texto": "Aplicando las Cinco Fuerzas de Porter al sector, el poder de negociación de proveedores es medio-alto en productos frescos de temporada, pero bajo en productos de distribución estándar. El poder de negociación de clientes es alto dado el exceso de oferta en zonas urbanas, lo que exige diferenciación clara. La amenaza de nuevos entrantes es elevada por las bajas barreras de apertura de un bar-restaurante básico, aunque el proyecto propuesto cuenta con barreras estructurales superiores al average del sector. La amenaza de sustitutivos es crítica, especialmente por el delivery y la cocina en casa. La intensidad de la rivalidad competitiva es muy alta, con márgenes operativos medios del 8-12% en el segmento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 112
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "Los factores críticos de éxito para este tipo de proyecto incluyen la ubicación en zona de alto tráfico peatonal con visibilidad, la capacidad de generar rotación de servicios (mínimo 1,8 covers por servicio por mesa), el control riguroso de costes de materia prima (objetivo inferior al 32% de venta) y la construcción de un equipo de sala con capacidad de upselling. Las ventajas competitivas sostenibles derivan de la diferenciación en propuesta de valor, la profesionalización de la gestión operativa y la capacidad de generar fidelización mediante experiencias memorables que el competidor tradicional no puede replicar con facilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 97
+  },
+  "69": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "El posicionamiento estratégico de este bar-restaurante debe construirse sobre la propuesta de valor diferenciada: cocina de mercado con producto de proximidad, ambiente contemporáneo sin formalidad excesiva y una relación calidad-precio que justifique un ticket medio de 20-24 euros. El target de consumidores entre 25 y 55 años con poder adquisitivo medio-alto demanda autenticidad, coherencia en la experiencia y una narrativa de marca que trascienda la simple oferta gastronómica. La zona urbana donde se ubique determinará el posicionamiento exacto, pero la premisa base es convertir el local en un referente de comida casual de calidad, evitando la etiqueta de \"restaurante caro\" pero tampoco la de \"bar económico\".",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 106
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La identidad visual requiere una inversión inicial de entre 2.500 y 4.000 euros en branding profesional: diseño de logo, carta, señalética interior y exterior, y elementos de packaging si se ofrece comida para llevar. El estilo visual debe transmitir modernidad mediterránea, utilizando colores neutros con acentos de temporada en la decoración y una tipografía legible que refleje profesionalidad. Este investimento se amortiza en los primeros seis meses si el diseño genera reconocimiento de marca y reduce la dependencia de publicidad pagada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 81
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "La presencia digital constituye el canal primario de captación, con un presupuesto mensual de marketing digital de 400-800 euros dependiendo de la facturación. Google My Business optimizado con fotos profesionales, descripción detallada, horarios actualizados y gestión activa de reseñas es absolutamente crítico; el objetivo es alcanzar 50 reseñas positivas en los primeros tres meses y mantener una calificación superior a 4,3 estrellas. La web corporativa, con un coste de desarrollo de 800-1.500 euros, debe incluir reserva online, carta digital actualizada, historia de la marca y un blog con contenido gastronómico que posicione orgánicamente para búsquedas locales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 96
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "Instagram funciona como escaparate principal, con una estrategia de contenidos basada en tres pilares: producto visual (platos y bebidas), ambiente y experiencia (fotos de clientes, terraza, momentos del servicio), y contenido educativo (origen de productos, técnicas de cocina, maridajes). El objetivo es publicar 4-5 veces por semana, alcanzar 1.500 seguidores en seis meses y mantener un engagement rate superior al 3 por ciento. TripAdvisor requiere una gestión proactiva: responder a todas las opiniones, solicitar feedback a clientes satisfechos y monitorizar la posición en el ranking local.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 86
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "El marketing de apertura necesita una inversión de 3.000-5.000 euros y debe ejecutarse en dos fases. La primera semana se dedica a una soften opening con invitación de conocidos, proveedores y profesionales del sector para ajustar operaciones. La segunda semana incluye un evento inaugural con capacidad limitada, invitación a 15-20 micro-influencers locales del sector gastronómico y lifestyle, y nota de prensa a medios locales y digitales especializados. El retorno de esta inversión se mide en cobertura mediática valorada en equivalente publicitario y en la base de datos inicial de clientes.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 90
+  },
+  "76": {
+   "estilo": "Normal",
+   "texto": "Los programas de fidelización deben construirse sobre la tarjeta de cliente frecuente con sistema de puntos canjeables por productos o descuentos, representando un coste de implementación de 500-800 euros. El objetivo es capturar el 15 por ciento de los clientes recurrentes en los primeros seis meses. Las alianzas locales con tiendas gourmet, vinotecas, gimnasios y empresas del entorno generan tráfico cruzado con un coste operativo mínimo; un acuerdo de descuento cruzado con tres o cuatro negocios complementarios multiplica la visibilidad sin inversión significativa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 83
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "El presupuesto de marketing se sitúa en el 5 por ciento de la facturación proyectada, lo que equivale a 600-1.200 euros mensuales para un negocio con ticket medio de 20 euros y 80-120 cubreos diarios. Los KPIs fundamentales incluyen: coste de adquisición de cliente (CAC objetivo inferior a 8 euros), tasa de conversión de reserva a visita (objetivo 70 por ciento), frecuencia de visita de clientes fidelizados (objetivo 2,5 veces al mes), y ratio de recomendaciones que se mide mediante pregunta directa en factura o mediante código QR de satisfacción. La política de precios y carta debe revisarse trimestralmente, manteniendo un margen de materia prima inferior al 32 por ciento y una estructura de carta que combine estrellas de rentabilidad (3-4 platos de alto margen) con captadores de tráfico (platos de entrada con precio competitivo). El sistema de reservas, ya sea mediante widget en web, teléfono o plataformas como TheFork, debe gestionar el 40 por ciento de las cenas con cita previa, dejando capacidad para clientela de paso que garantiza la ocupación en horarios valle.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "rest_a",
+   "palabras": 175
+  },
+  "78": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "79": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "Selección y acondicionamiento del local",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 5
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "La ubicación debe cumplir tres criterios fundamentales: visibilidad desde vía pública, accesibilidad en transporte público y densidad de público objetivo superior a 8.000 habitantes por kilómetro cuadrado en radio de 500 metros. Las zonas prime de ciudades medias españolas cumplen este perfil con rentas entre 18-28 EUR/m2/mes para locales de segunda mano, o 25-40 EUR/m2/mes en obra nueva. El contrato de arrendamiento debe incluir cláusula de renovación tácita y techo de incremento anual del IPC más 1,5 puntos máximo, practise habitual en el mercado español de 2026.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 87
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "La distribución funcional recomendada para 60-80m2 totales distribuye 15-20m2 para cocina, 40-50m2 para sala interior con capacidad para 40-50 covers, 8-12m2 para barra y zona de barra, y el resto para almacén, vestuarios y office. La relación cocina-sala debe permitir un flujo de expediciones inferior a tres minutos desde pickup hasta servicio en mesa. La terraza, si existe disponibilidad, añade 20-30 plazas adicionales con permiso municipal específico para terrazas estacionales, cuyo coste medio en ciudades españolas oscila entre 800-2.400 EUR anuales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 81
+  },
+  "83": {
+   "estilo": "Normal",
+   "texto": "Equipamiento necesario",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 2
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "El equipamiento de cocina representa aproximadamente el 35-40% de la inversión inicial, con un desembolso estimado de 28.000-60.000 EUR. La cocina debe incluir fuego industrial de cuatro fuegos con horno, plancha de hierro fundido, freidora de capacidad mínima 8 litros, campana extractora con extracción mínima de 1.200 m3/h, y mesa de trabajo en acero inoxidable. El frío requiere armario refrigerado de dos puertas, mesa fría de preparación, y cámara de conservación para productos sensibles, con inversión estimada de 12.000-18.000 EUR. El lavavajillas industrial de capota representa 4.000-7.000 EUR, con capacidad mínima de 40 cubiertos por ciclo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 96
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "El mobiliario de sala incluye mesas para 2-4 comensales en melamina de alta presión o madera tratada, sillas o taburetes según concepto, y barra de bar en acero inoxidable o piedra compactada. La inversión en mobiliario oscila entre 8.000-15.000 EUR para un equipamiento funcional de primera calidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 47
+  },
+  "86": {
+   "estilo": "Normal",
+   "texto": "Proveedores y gestión de compras",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 5
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "La selección de proveedores debe diversificarse en tres categorías: alimentación fresca con entrega diaria o cada 48 horas, bebidas con entrega semanal, y productos de limpieza con entrega quincenal. El sector mayorista español ofrece condiciones de pago a 30-60 días para pequeños establecimientos, con descuentos por volumen del 5-12%. Es recomendable mantener un proveedor principal y otro alternativo para productos críticos, evitando la dependencia superior al 70% de un único proveedor.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 71
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "Procesos operativos diarios",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 3
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "La apertura diaria incluye verificación de temperaturas de cámaras, revisión de stock de productos críticos, preparación de la mise en place según planificación de carta, y checks de funcionalidad de equipos. El proceso de mise en place asigna 90-120 minutos antes del servicio para preparación de elaboraciones base, corte de materias primas, y montaje de líneas de trabajo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 58
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "El flujo de servicio distingue entre modalidad barra, con tiempo medio de servicio de 2-3 minutos por consumición, y modalidad mesa, con tiempo de primera bebida de 15 minutos y rotación media de cubiertos de 1,2-1,5 en horario lunch y 0,8-1,0 en horario cena. El cierre incluye proceso de cierre de barra, control de caja con arqueo documentado, guardado de productos refrigerados, y checklist de cierre de cocina.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 68
+  },
+  "91": {
+   "estilo": "Normal",
+   "texto": "Gestión de stocks y sistema de gestión",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 7
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "El stock mínimo de seguridad para productos de alta rotación debe cubrir 2-3 días de actividad, mientras que productosno perecederos mantienen stock para 7-10 días. El pedido diario se estructura en función de covers previstos, con margen de error del 15-20%. El control de mermas mediante pesada diaria de desperdicios permite identificar desviaciones superiores al 5% sobre objetivo, indicando problemas de planificación o conservación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 64
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "El sistema de TPV debe integrar gestión de mesas, control de inventario, módulo de cocina con ticketing automático, y reporting de ventas por producto y turno. Las soluciones del mercado español para restauración ofrecen licencias desde 50-150 EUR mensuales, con hardware adicional de 800-1.500 EUR.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 45
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "Estructura de personal y mantenimiento",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "subtitulo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 5
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "La plantilla necesaria para operación en dos turnos incluye un encargado-jefe de sala con funciones de apertura y cierre, dos cocineros para producción, dos camareros-baristas para servicio, y apoyo parcial en horas punta. La jornada laboral se organiza en turnos partidos de mañana con servicio de 12:00-16:00 y turno de tarde de 19:00-24:00, cumpliendo la normativa española de descansos entre jornadas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 61
+  },
+  "96": {
+   "estilo": "Normal",
+   "texto": "El plan de mantenimiento preventivo incluye revisión semanal de equipos de frío, limpieza mensual de campana y conductos de extracción, y revisión trimestral de instalaciones eléctricas y gas. La inversión anual en mantenimiento preventivo representa aproximadamente el 3-5% del coste de equipamiento, evitando averías que duplican costes por paradas no planificadas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 51
+  },
+  "97": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y Recursos Humanos",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "La estructura organizativa de un bar-restaurante de 60-80 metros cuadrados con 40-50 plazas requiere un equipo mínimo de cinco a seis personas en fase de lanzamiento, ampliándose a ocho o nueve una vez consolidada la operación. El organigrama se configura con el gerente-propietario al frente de la dirección estratégica y financiera,un jefe de cocina responsable de la producción,y un jefe de sala que gestiona el servicio en sala y barra. Bajo ellos,dos cocineros de oficio ejecutan la oferta gastronómica,mientras que dos camareros atienden mesa y barra,y un ayudante de cocina asume funciones de apoyo en elaboración y limpieza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 98
+  },
+  "100": {
+   "estilo": "Normal",
+   "texto": "El perfil del gerente-propietario debe combinar conocimientos de gestión financiera hostelera,capacidad de negociación con proveedores y dominio de herramientas de control de costes. En un negocio de esta inversión,es habitual que el propietario asuma también funciones de dirección operativa durante los primeros doce a dieciocho meses,lo que permite reducir costes fijos mientras se alcanza el punto de equilibrio. El jefe de cocina requiere formación técnica en cocina mediterránea o de mercado,experiencia en carta de bar-restaurante y capacidad de gestión de aprovisionamientos. El convenio colectivo de hostelería establece para este categoría un salario base de 2.134 euros mensuales en catorce pagas,al que se añade el prorrateo de pagas extras y la antigüedad correspondiente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 112
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "El plan de contratación por fases contempla tres momentos diferenciados. En la fase pre-apertura,dos meses antes de la apertura,se incorporan el jefe de cocina y el jefe de sala para diseñar la carta,establecer proveedores y formar al equipo. Una semana antes de la apertura se incorpora el resto del personal:dos cocineros,dos camareros y un ayudante. Durante los meses tres a seis se evalúa la necesidad de ampliar plantilla en función de la ocupación real,y a partir del mes doce,si el negocio supera las expectativas de ticket medio y rotación,se incorpora un sexto Camarero o un segundo ayudante para cubrir picos de demanda en terraza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 104
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Los turnos de trabajo se organizan en dos franjas:el turno de día cubre de 09:00 a 17:00 horas para la preparación del servicio de comidas,y el turno de tarde de 16:00 a 00:00 horas para el servicio de cenas y barra nocturna. La distribución semanal estándar implica cuatro días de trabajo para el turno de día y cuatro para el de tarde,con dos días de descanso consecutivos. El coste laboral total incluyendo Seguridad Social a cargo de la empresa del 33,4 por ciento se sitúa entre 2.400 y 2.900 euros mensuales por empleado de categoría media,cifra que multiplicada por seis trabajadores arroja un coste mensual de personal de 14.400 a 17.400 euros,equivalente al 35-45 por ciento de la facturación prevista con ticket medio de 20 euros y ocupación media del 65 por ciento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 133
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "La formación inicial se estructura en dos semanas intensivas que incluyen manipulación de alimentos,normas de higiene,servicio de sala según estándares del local y conocimientos básicos de prevención de riesgos laborales. El plan de prevención de riesgos laborales,obligatorio según la ley 31/1995,contempla la evaluación de riesgos específicos de Hostelería,la formación en medidas de emergencia,el uso correcto de maquinaria de cocina y la ergonomía en el servicio de mesa. La política de incentivos incluye un bonus trimestral de hasta 300 euros por empleado vinculado a objetivos de calidad de servicio y cumplimiento de costes de materia prima,así como un programa de participación en beneficios a partir del segundo año si el resultado de explotación supera el 8 por ciento de la facturación. Esta estructura de incentivos genera compromiso del equipo y alinea intereses con la rentabilidad del negocio,objetivo prioritario para cualquier consultoría especializada en hostelería.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 143
+  },
+  "104": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "La inversión inicial para un bar-restaurante de estas características se sitúa en 133.000 euros, distribuida en partidas que reflejan las prioridades operativas de un proyecto de restauración moderno. El local requiere una inversión de 25.000 euros, incluyendo obra civil, licencias de apertura y adecuación de instalaciones; esta partida varía significativamente según el estado del inmueble y su ubicación dentro del tejido urbano español. El equipamiento de cocina representa 30.000 euros, partida que incluye mobiliario gastronómico, maquinaria de cocción, frío y extracción, considerando marcas de fabricantes nacionales como Fagor o Rational para garantizar durabilidad y servicio técnico cercano. La sala precisa 15.000 euros para mobiliario, decoración y ambientación, mientras que la barra de bar requiere 8.000 euros en equipamiento específico. La terraza implica 6.000 euros de inversión adicional, partida que puede reducirse si el local ya dispone de ella o incrementarse si requiere estructura propia. El marketing de lanzamiento se estima en 5.000 euros, incluyendo branding, presencia digital y campaña de apertura. Los gastos legales y administrativos ascienden a 3.000 euros, el stock inicial de materias primas a 5.000 euros, el fondo de maniobra a 25.000 euros para cubrir los primeros meses de actividad sin ingresos estables, y los imprevistos a 11.000 euros como reserva de contingencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 206
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "La cuenta de resultados previsional a tres años refleja la evolución típica de un establecimiento de esta categoría en el mercado español. El primer año se proyecta una facturación de 350.000 euros, equivalente a una ocupación media del 65% sobre las 50 plazas disponibles, considerando la curva de aprendizaje y la consolidación de clientela. El segundo año se estima un crecimiento del 20% hasta 420.000 euros, con mejora de la ocupación y incremento del ticket medio. El tercer año alcanza los 480.000 euros, consolidando el posicionamiento y captando demanda recurrente. Estas cifras son coherentes con el ticket medio de 22 euros propuesto y una rotación media de 1,8 servicios diarios en temporada alta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 113
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "La estructura de costes opera con los siguientes márgenes: food cost entre 28% y 32% de la facturación, porcentaje alineado con la restauración casual española donde la optimización de compras y el control de mermas determinan la rentabilidad. El personal representa entre 30% y 35% de la facturación, incluyendo nóminas, seguridad social y costes asociados; este porcentaje requiere gestión cuidadosa para mantener competitividad sin comprometer calidad de servicio. El alquiler se sitúa entre 8% y 10%, lo que implica un contrato de arrendamiento que no supere los 800-1.000 euros mensuales en zona urbana de nivel medio-alto. Los costes operativos restantes (energía, suministros, mantenimiento, seguros, marketing recurrente) ocupan el 15-20% restante.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 110
+  },
+  "109": {
+   "estilo": "Normal",
+   "texto": "El punto de equilibrio se alcanza con 40 cubiertos diarios a un ticket medio de 22 euros, generando ingresos diarios de 880 euros y anuales de 321.200 euros. Este umbral representa el 80% de la capacidad instalada, objetivo alcanzable en el primer año de actividad dado el posicionamiento del concepto y la ubicación propuesta. Por debajo de esta cifra, el proyecto genera pérdidas que deben compensarse con el fondo de maniobra.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 71
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "Los escenarios contemplan tres situaciones: el pesimista asume una facturación un 20% inferior a lo previsto, manteniendo costes fijos y posponiendo inversiones adicionales, lo que retrasa el retorno a 50 meses. El realista proyecta los flujos descritos y alcanza rentabilidad entre 30 y 40 meses. El optimista, con ocupación superior al 75% y ticket medio de 24 euros, permite amortización acelerada en 24-28 meses.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 64
+  },
+  "111": {
+   "estilo": "Normal",
+   "texto": "Las necesidades de financiación se cubren mediante combinación de capital propio y financiación externa. Se recomienda aportar al menos el 40% del capital total desde recursos propios, solicitando 80.000 euros a entidades financieras con condiciones específicas para el sector hostelero, considerando los programas ICO o líneas de CaixaBank y BBVA orientadas a emprendedores de restauración. El plazo de devolución recomendado es de 7-10 años para aliviar la carga financiera mensual.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 70
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "El retorno de inversión se estima entre 30 y 40 meses en el escenario realista, período coherente con bar-restaurantes de similares características en el mercado español actual. Este plazo asume gestión eficiente de costes, consolidación de clientela y ausencia de perturbaciones macroeconómicas significativas. La viabilidad del proyecto depende fundamentalmente del control del food cost por debajo del 30% y del mantenimiento de una rotación de sala superior a 1,5 servicios diarios.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 71
+  },
+  "113": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "La elección de la forma jurídica constituye la primera decisión estratégica del proyecto. Para un bar-restaurante de esta envergadura, la Sociedad Limitada Unipersonal representa la opción más equilibrada entre protección patrimonial y flexibilidad operativa. La Ley Crea y Crece de 2022 permite constituir una SL con apenas un euro de capital social mínimo, aunque la práctica habitual en hostelería exige aportar entre 3.000 y 10.000 euros para cubrir gastos iniciales de constitución y disponer de tesorería suficiente. Esta fórmula limita la responsabilidad personal del empresario al capital aportado, aspecto crítico en un sector donde las reclamaciones de clientes y proveedores pueden ser significativas. La alternativa de autónomo persona física resulta viable pero expone el patrimonio personal del titular, situación que desaconsejo para inversiones superiores a 80.000 euros.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 127,
+   "nota": "D44 §9 1/8: el marco US por niveles (federal, estatal, condado, ciudad): qué regula cada uno; LLC vs sole proprietorship (Secretary of State, operating agreement) + EIN gratis en el IRS. Fuente: sba.gov"
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "El proceso de constitución requiere aproximadamente seis semanas. El primer paso consiste en obtener el certificado de denominación social en el Registro Mercantil, trámite que costa unos 20 euros y evita duplicidades. Posteriormente, se otorga escritura pública ante notario, con coste variable entre 300 y 500 euros según la complejidad del instrumento. La inscripción en el Registro Mercantil Provincial genera una tasa de aproximadamente 150 euros. Paralelamente, es imprescindible presentar el modelo 036 de Hacienda para obtener el CIF y darte de alta en el Impuesto sobre Actividades Económicas en el epígrafe correspondiente a restauración. La Tesorería General de la Seguridad Social exige el alta de trabajadores por cuenta propia o ajena desde el primer día de actividad, con cuotas mensuales que rondan los 300 euros para un autónomo societario.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 130,
+   "nota": "§9 2/8: health department plan review ANTES de la obra → food establishment permit + inspección previa; seller's permit / sales tax registration y business license de la ciudad (sustituye el certificado de denominación y la constitución en notaría)"
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "La licencia de apertura constituye el elemento más crítico y dilatado del proceso. El permiso de actividad clasificada, necesario para establecimientos de restauración con locales que superen los 75 metros cuadrados o generen impacto acústico, requiere la presentación de proyecto técnico firmado por arquitecto y la obtención de licencia de obras si existen reformas. El Ayuntamiento de Madrid, por ejemplo, concede licencia de obras en plazo medio de ocho a doce semanas, mientras que la licencia de apertura puede extenderse entre cuatro y seis meses desde la solicitud completa. El coste total de licencias municipales oscila entre 2.000 y 5.000 euros dependiendo del municipio y la necesidad de informes ambientales o acústicos adicionales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 113,
+   "nota": "§9 3/8: zoning check antes de firmar el lease + building, electrical, plumbing y gas permits con sus inspecciones → certificate of occupancy (sustituye la licencia de actividad clasificada)"
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "La terraza exterior exige licencia específica, generalmente mediante autorización temporal anual. Los Ayuntamientos de ciudades como Barcelona, Valencia o Sevilla imponen tasas elevadas y restricciones de horario que pueden limitar la viabilidad económica del espacio exterior. La licencia de música, necesaria para reproducir sonido amplificado, está sujeta al cumplimiento del aislamiento acústico requerido y al horario municipal vigente, siendo habitual la prohibición de música en vivo después de medianoche en zonas residenciales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 72,
+   "nota": "§9 4/8: cocina: campana Type I con supresión UL 300 (NFPA 96), separador de grasas (grease interceptor) según el código de fontanería local, inspección del fire marshal; sidewalk café permit si hay terraza (sustituye la licencia de terraza)"
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "El Registro General Sanitario de Empresas Alimentarias y Alimentos (RGSEAA) es obligatorio desde el primer día de actividad. La inscripción se realiza telemáticamente a través de la web de la Agencia Española de Seguridad Alimentaria y Nutrition, sin coste económico pero con responsabilidad penal en caso de incumplimiento. El sistema de Análisis de Peligros y Puntos Críticos de Control (APPCC) debe implementarse desde la apertura, documentando todos los procesos de manipulación de alimentos, trazabilidad de materias primas y controles de temperatura. La normativa de 2024 refuerza los requisitos de formación del personal manipulador, exigiendo certificado oficial de al menos veinte horas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 101,
+   "nota": "§9 5/8: LIQUOR LICENSE: licencia estatal (ABC) + aprobación local; en estados con cupo se compra una licencia existente y el coste cambia un orden de magnitud (el libro presupuesta {{inv_licencias}} como ejemplo de estado sin cupo); plazos de meses; liquor liability en el seguro; formación de servicio responsable (TIPS / ServSafe Alcohol) y cartel de edad. Sustituye el párrafo del RGSEAA"
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "La adaptación al Reglamento General de Protección de Datos resulta obligatoria independientemente del tamaño del establecimiento. El registro de actividades de tratamiento ante la Agencia Española de Protección de Datos, la política de privacidad para clientes y la gestión del consentimiento para comunicaciones comerciales generan un coste estimado de entre 500 y 1.500 euros si se externaliza a un experto en compliance.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 62,
+   "nota": "§9 6/8: empleo: I-9, W-4, new-hire reporting, carteles laborales, workers' comp; salario mínimo federal y estatal; propinas: el libro NO modela tip credit (servers a ≥ $15/h); federal $2.13/h + tip credit donde el estado lo permite; CA, OR, WA, AK, MN, MT y NV no lo permiten (DOL). Sustituye el RGPD"
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "El seguro de Responsabilidad Civil obligatorio cubre reclamaciones de terceros por daños materiales o personales. Las aseguradoras especializadas en hostelería ofrecen pólizas desde 400 euros anuales para establecimientos de este tamaño, aunque la cobertura mínima recomendada asciende a 300.000 euros. La prevención de riesgos laborales exige la evaluación de riesgos del establecimiento, el plan de emergencias y la formación específica del personal, obligaciones que pueden cumplirse mediante servicio de prevención ajeno con coste aproximado de 600 euros anuales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 78,
+   "nota": "§9 7/8: seguridad alimentaria y seguros: Certified Food Protection Manager + food handler cards, FDA Food Code adoptado por el estado, 9 alérgenos mayores y consumer advisory en la carta (crudo / poco hecho); general liability + liquor liability + property + workers' comp (el libro presupuesta {{seguros_anual}})"
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "El plazo total para obtener la totalidad de licencias y poder abrir legalmente se estima entre cinco y ocho meses, siendo recomendable iniciar los trámites de licencia de obras y actividad con cuatro meses de antelación sobre la fecha prevista de apertura.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 42,
+   "nota": "§9 8/8: plazos (de 4 a 8 meses hasta abrir, el más largo suele ser la licencia de alcohol o el plan review) y, como ÚLTIMA frase o frases, la nota UK: premises licence + personal licence para el alcohol (Licensing Act 2003), registro del negocio de alimentos en el council 28 días antes de abrir, Food Hygiene Rating (FHIS en Escocia), VAT 20 % en el local, 14 alérgenos"
+  },
+  "123": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "La oportunidad de mercado en el sector de restauración casual español presenta condiciones favorables para 2026. El consumidor español ha consolidado su hábito de comer fuera de casa, con un gasto medio anual que supera los 1.800 euros por persona en restauración, según datos del sector. El segmento casual dining crece a un ritmo del 4-5% anual, impulsado por la demanda de experiencias gastronómicas accesibles sin formalidad excesiva. La zona urbana seleccionada, con densidad de población joven-profesional y poder adquisitivo medio-alto, cumple el perfil demográfico óptimo: público entre 25 y 55 años que genera una frecuencia de visita semanal superior a la media nacional. El ticket medio proyectado de 18-25 EUR se sitúa en el rango medio-alto del segmento, lo que permite márgenes operativos sólidos siempre que el control de costes sea riguroso.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 133
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "Los principales riesgos del proyecto requieren una estrategia de mitigación clara. El riesgo de costes laborales, que representa entre el 30-35% de la facturación en restauración, se mitiga con una plantilla ajustada de 6-8 empleados, priorizando versatilidad funcional y horarios flexibles. La inflación en materias primas, que ha registrado incrementos del 8-12% en los últimos dos años, se gestiona mediante acuerdos de aprovisionamiento con proveedores locales, negociación de contratos anuales y carta diseñada con productos de temporada que reducen la dependencia de materias primas volátiles. El riesgo de competencia en zona urbana se mitiga con una propuesta diferenciada: cocina visible, terraza operativa y una carta reducida pero de alta rotación que genere percepción de calidad. Finalmente, el riesgo de liquidez en los primeros meses se cubre con un fondo de maniobra de 25.000 euros adicionales a la inversión inicial, suficiente para cubrir seis meses de operación sin rentabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 148
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "Las fortalezas del proyecto radican en tres pilares: ubicación en zona de alto tráfico comercial, concepto diferenciador que combina la accesibilidad del bar con la propuesta gastronómica de restaurante, y una estructura de costes optimizada desde el diseño inicial. La inversión de 80.000-150.000 euros se amortiza en un horizonte de 36-48 meses según el escenario de facturación, con un punto de equilibrio estimado en 45-50 cubiertos diarios.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 67
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "La hoja de ruta de implementación se estructura en seis meses. Durante los meses 1 y 2 se constituye la sociedad limitada, se formaliza la arrendamiento del local con condiciones favorables y se inicia el trámite de licencia de apertura ante el ayuntamiento, proceso que en España puede extenderse 45-60 días. Los meses 3 y 4 se dedican a la obra de adaptación del local, instalación de cocina según normativa sanitaria vigente y equipamiento de sala, incluyendo mobiliario, decoración y sistema de punto de venta. El mes 5 se centra en la contratación del equipo inicial, formación en estándares de servicio y protocolos de seguridad alimentaria, y pruebas técnicas de cocina. El mes 6 contempla el soft opening con invitación a clientes seleccionados durante dos semanas, ajuste de procesos y apertura oficial al público.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 134
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "Los indicadores clave de seguimiento se definen con objetivos cuantificables. En fase de lanzamiento, el objetivo mínimo es alcanzar 35-40 cubiertos diarios el primer trimestre, escalando a 50-60 cubiertos al cierre del primer año. El ticket medio debe mantenerse entre 19-24 euros con una variación máxima del 10%. El food cost objetivo se sitúa en el 28-32% de la facturación, mientras que el labor cost no debe superar el 34%. La satisfacción del cliente, medida mediante encuesta post-visita, debe alcanzar una puntuación mínima de 4,2 sobre 5,0.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 87
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "La visión a tres-cinco años contempla dos escenarios de crecimiento. El escenario conservador proyecta consolidación del primer local con facturación anual de 450.000-550.000 euros y rentabilidad del 8-12%. El escenario expansivo contempla la apertura de un segundo local en zona complementaria del mismo municipio entre el año 3 y 4, con inversión estimada de 120.000-180.000 euros y objetivo de alcanzar una facturación conjunta de 900.000 euros en el año 5. La opción de modelo de franquicia se evalúa a partir del año 4 únicamente si se cumplen tres condiciones: rentabilidad sostenida superior al 10%, sistema de operaciones documentado y demanda externa identificada.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 102
+  },
+  "131": {
+   "estilo": "Normal",
+   "texto": "El plan de acción inmediato requiere aprobar la inversión, constituir la sociedad en las próximas tres semanas y comenzar la búsqueda activa de locales en las tres ubicaciones candidatas identificadas. La ventana de oportunidad de mercado favorece la ejecución rápida: las condiciones actuales de disponibilidad de locales comerciales en zonas urbanas y la recuperación del consumo permiten capturar cuota de mercado antes de que la competencia se intensifique.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "rest_b",
+   "palabras": 68
+  },
+  "132": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "133": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "134": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "135": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "136": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "137": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "138": {
+   "estilo": "Normal",
+   "texto": "Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "139": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "140": {
+   "estilo": "Normal",
+   "texto": "Mas de 29 anos transformando negocios gastronomicos.\nDiagnostico, consultoria integral, mentoria y apertura de restaurantes.\n\nchefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Built on more than 29 years in professional kitchens and restaurant consulting.\nAI agents, templates and digital products for restaurants, cafes, bars and bakeries.\n\naichef.pro\ninfo@aichef.pro"
+  },
+  "141": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "142": {
+   "estilo": "Normal",
+   "texto": "Complementa este plan con nuestros productos digitales:",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Complete this plan with our digital products:"
+  },
+  "143": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas: Restaurante Casual — 14 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro"
+  },
+  "144": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro — 12 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ HACCP Food Safety Kit Pro"
+  },
+  "145": {
+   "estilo": "Normal",
+   "texto": "→ Pack Plantillas APPCC — 14 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Restaurant Staff Scheduling Kit Pro"
+  },
+  "146": {
+   "estilo": "Normal",
+   "texto": "→ Gastro Pro Prompts eBook (300+ prompts IA) — 9 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Gastro Pro Prompts eBook (300+ AI prompts)"
+  },
+  "147": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}

@@ -721,8 +721,8 @@ def gateG9(R, carpetas, datos):
 # ==========================================================================
 # Ejecución
 # ==========================================================================
-def ejecutar(base, mes, solo=None, silencioso=False, g9=True):
-    datos = A.cargar_datos()
+def ejecutar(base, mes, solo=None, silencioso=False, g9=True, parcial=False):
+    datos = A.cargar_datos(parcial)
     carpetas = carpetas_de(base)
     cifras, cifras_path = cargar_cifras(base)
     R = Resultado(silencioso)
@@ -928,13 +928,14 @@ def main():
     ap.add_argument('--solo', default=None, help='p. ej. G1,G2')
     ap.add_argument('--json', default=None)
     ap.add_argument('--autotest', action='store_true')
+    ap.add_argument('--parcial', action='store_true', help='(ensayo) acepta grupos de textos_en aún sin traducir')
     args = ap.parse_args()
     mes = '%s %s' % (args.mes, mapas.MES_VERSION.split()[1])
     t0 = time.time()
     if args.autotest:
         sys.exit(autotest(args.dir, mes))
     solo = set(args.solo.split(',')) if args.solo else None
-    R = ejecutar(os.path.abspath(args.dir) if args.dir else None, mes, solo)
+    R = ejecutar(os.path.abspath(args.dir) if args.dir else None, mes, solo, parcial=args.parcial)
     rojos = R.gates_rojos()
     if args.json:
         json.dump({'fallos': R.fallos, 'info': R.info}, open(args.json, 'w', encoding='utf-8'), ensure_ascii=False,

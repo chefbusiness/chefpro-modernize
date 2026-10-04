@@ -1,0 +1,560 @@
+{
+ "tanda": "GN",
+ "salida": "scripts/productos-digitales/business-plans-en-2/textos_en/GN.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 24,
+ "n_palabras": 286,
+ "pistas": {
+  "P01": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P02": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P03": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P04": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P05": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P06": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons"
+ },
+ "pestanas_es_en": {
+  "RESTP": {
+   "0. Supuestos": "0. Assumptions",
+   "1. Inversión Inicial": "1. Startup Costs",
+   "2. P&L 3 Años": "2. 3-Year P&L",
+   "3. Punto Equilibrio": "3. Break-Even",
+   "4. Escenarios": "4. Scenarios",
+   "5. Personal": "5. Staffing",
+   "Instrucciones": "Instructions",
+   "6. Tesorería 12 meses": "6. 12-Month Cash Flow",
+   "7. Financiación": "7. Financing"
+  },
+  "RESTC": {
+   "Checklist Apertura": "Opening Checklist",
+   "Instrucciones": "Instructions"
+  },
+  "PANP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PANC": {
+   "F1": "Phase 1 - Business Setup",
+   "F2": "Phase 2 - Location & Permits",
+   "F3": "Phase 3 - Equipment",
+   "F4": "Phase 4 - Staff",
+   "F5": "Phase 5 - Marketing",
+   "F6": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-bar-restaurante» de AI Chef Pro.": "This file is part of the Restaurant Business Plan Kit by AI Chef Pro.",
+  "Este fichero forma parte del producto «plan-negocio-panaderia» de AI Chef Pro.": "This file is part of the Bakery Business Plan Kit by AI Chef Pro.",
+  "ChefBusiness Consultoría Gastronómica": "AI Chef Pro",
+  "ChefBusiness.co — Plan de Negocio: Bar-Restaurante": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+  "Plan de Negocio: Bar-Restaurante / Restaurante Casual — España 2026": "Restaurant Business Plan: Casual Restaurant & Bar — US example (2026)",
+  "Inversión Inicial — Bar-Restaurante": "Startup Costs — Restaurant & Bar",
+  "Cuenta de Resultados Previsional — 3 Años": "3-Year Projected P&L",
+  "Punto de Equilibrio (Break-Even) — Bar-Restaurante": "Break-Even Analysis — Restaurant & Bar",
+  "Análisis de Escenarios — Año 1": "Scenario Analysis — Year 1",
+  "NOTA: Todos los importes son estimaciones basadas en precios de mercado en España 2026. Ajusta cada partida a tu situación real.": "NOTE: all amounts are US kit-example estimates (2026); replace them with your own quotes.",
+  "Cuadro de Personal y Coste Laboral": "Staffing Plan & Labor Cost",
+  "Checklist Apertura — Bar-Restaurante / España 2026": "Opening Checklist — Restaurant & Bar (US example, 2026)",
+  "ChefBusiness.co — Checklist Apertura Bar-Restaurante / España 2026": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+  "Licencias y permisos varios": "Liquor license + permits (non-quota state example)",
+  "Inversión Inicial — España 2026": "Startup Costs — US example (2026)",
+  "IVA de la bebida ALCOHÓLICA servida en mostrador": "Sales tax rate on alcohol served at the counter",
+  "Pan común sobre la línea (%)": "Tax-exempt share of the line (%)"
+ },
+ "cadenas": [
+  {
+   "id": "c0043",
+   "es": "Fianza del alquiler (meses)",
+   "donde": [
+    "RESTP · 0. Supuestos!A25",
+    "PANP · 0. Supuestos!A25"
+   ],
+   "propuesta_en": "Security deposit (months of rent)",
+   "propuesta_de": "GCAF c0879 (CAFP 0. Supuestos!A25)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Tres meses de renta, como en el contrato tipo de local de negocio",
+   "donde": [
+    "RESTP · 0. Supuestos!C25",
+    "PANP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del alquiler (meses)",
+   "valor_us": {
+    "RESTP": 2,
+    "PANP": 2
+   },
+   "propuesta_en": "Months of rent held as a security deposit. It is set in your commercial lease, so check the terms before you sign",
+   "propuesta_de": "GCAF c0880 (CAFP 0. Supuestos!C25)"
+  },
+  {
+   "id": "c0050",
+   "es": "Colchón de gasto corriente no presupuestado",
+   "donde": [
+    "RESTP · 0. Supuestos!C28",
+    "PANP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "propuesta_en": "Cushion for operating expenses that are not budgeted",
+   "propuesta_de": "GCAF c0883 (CAFP 0. Supuestos!C28)"
+  },
+  {
+   "id": "c0059",
+   "es": "Años totales, carencia incluida",
+   "donde": [
+    "RESTP · 0. Supuestos!C33",
+    "PANP · 0. Supuestos!C33"
+   ],
+   "fila": "Plazo del préstamo (años)",
+   "valor_us": {
+    "RESTP": 10,
+    "PANP": 10
+   },
+   "propuesta_en": "Total years, interest-only period included",
+   "propuesta_de": "GCAF c0887 (CAFP 0. Supuestos!C33)",
+   "pistas": [
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "Aforo del local (plazas sentadas + barra)",
+   "donde": [
+    "RESTP · 0. Supuestos!A51",
+    "PANP · 0. Supuestos!A51"
+   ],
+   "propuesta_en": "Seating capacity (seats at tables + bar)",
+   "propuesta_de": "GCAF c0893 (CAFP 0. Supuestos!A51)"
+  },
+  {
+   "id": "c0090",
+   "es": "Un local que abre no factura desde el primer día lo mismo que a los seis meses. Con 100 % se elimina la rampa y el año 1 se proyecta a velocidad de crucero",
+   "donde": [
+    "RESTP · 0. Supuestos!C52",
+    "PANP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "propuesta_en": "A new shop does not sell on day one what it sells six months later. Customers per day above are the year-1 AVERAGE: the ramp only spreads year 1's sales across the months (slower start, stronger finish) and keeps the annual total. At 100% there is no ramp",
+   "propuesta_de": "GCAF c0895 (CAFP 0. Supuestos!C52)"
+  },
+  {
+   "id": "c0093",
+   "es": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "donde": [
+    "RESTP · 0. Supuestos!A54",
+    "PANP · 0. Supuestos!A54"
+   ],
+   "propuesta_en": "Months of rent BEFORE opening (build-out and permits)",
+   "propuesta_de": "GCAF c0896 (CAFP 0. Supuestos!A54)"
+  },
+  {
+   "id": "c0094",
+   "es": "El local se paga desde que se firma. Estos meses son inversión: NO se solapan con el P&L, que arranca el día de la apertura",
+   "donde": [
+    "RESTP · 0. Supuestos!C54",
+    "PANP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler ANTES de abrir (obra y licencias)",
+   "propuesta_en": "You pay for the space from the day you sign. These months are a startup cost: they do NOT overlap the P&L, which starts on opening day",
+   "propuesta_de": "GCAF c0897 (CAFP 0. Supuestos!C54)"
+  },
+  {
+   "id": "c0095",
+   "es": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "donde": [
+    "RESTP · 0. Supuestos!A55",
+    "PANP · 0. Supuestos!A55"
+   ],
+   "propuesta_en": "Contingency on the BUILD-OUT lines of the space block (%)",
+   "propuesta_de": "GCAF c0898 (CAFP 0. Supuestos!A55)"
+  },
+  {
+   "id": "c0096",
+   "es": "Colchón sobre la partida de obra y acondicionamiento. Un banco no financia una reforma sin él",
+   "donde": [
+    "RESTP · 0. Supuestos!C55",
+    "PANP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+   "propuesta_en": "Cushion on the build-out and fit-out line. A lender will not finance a renovation without it",
+   "propuesta_de": "GCAF c0899 (CAFP 0. Supuestos!C55)",
+   "pistas": [
+    "P03"
+   ]
+  },
+  {
+   "id": "c0257",
+   "es": "Alquiler del local",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A23",
+    "PANP · PyG 3 Años!A22"
+   ],
+   "propuesta_en": "Rent",
+   "propuesta_de": "GCAF c0957 (CAFP PyG 3 Años!A22)"
+  },
+  {
+   "id": "c0258",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. La renta de los meses de obra, que es anterior a la apertura, está en la hoja de Inversión y NO se cuenta dos veces",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F23",
+    "PANP · PyG 3 Años!F22"
+   ],
+   "fila": "Alquiler del local",
+   "propuesta_en": "The monthly amount is on the \"0. Assumptions\" tab; here it is multiplied by twelve. Rent for the build-out months, which comes before opening, is on the \"Startup Costs\" tab and is NOT counted twice",
+   "propuesta_de": "GCAF c0958 (CAFP PyG 3 Años!F22)"
+  },
+  {
+   "id": "c0262",
+   "es": "Luz y gas van al 21 %; la factura del agua, al 10 %. El libro aplica a toda esta partida el tipo de la columna de al lado (21 %): si el agua pesa mucho en tu local, sepárala en su línea",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F25",
+    "PANP · PyG 3 Años!F24"
+   ],
+   "fila": "Suministros (luz, agua, gas)",
+   "propuesta_en": "Enter the monthly bills excl. sales tax. The workbook applies a single tax treatment to this whole line, the one in the column next to it; if one utility is taxed differently in your area, give it its own line",
+   "propuesta_de": "GCAF c0959 (CAFP PyG 3 Años!F24)"
+  },
+  {
+   "id": "c0275",
+   "es": "Derechos de autor por música ambiental",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A34",
+    "PANP · PyG 3 Años!A34"
+   ],
+   "propuesta_en": "Music licensing (ASCAP, BMI, SESAC)",
+   "propuesta_de": "GCAF c0965 (CAFP PyG 3 Años!A33)",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0312",
+   "es": "Alquiler / Ventas",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A57",
+    "RESTP · Instrucciones!A19",
+    "PANP · PyG 3 Años!A55",
+    "PANP · Instrucciones!A20"
+   ],
+   "propuesta_en": "Rent / Sales",
+   "propuesta_de": "GCAF c0971 (CAFP PyG 3 Años!A54 / CAFP Instrucciones!A21)"
+  },
+  {
+   "id": "c0398",
+   "es": "Extra de fin de semana",
+   "donde": [
+    "RESTP · 5. Personal!A11",
+    "PANP · Personal!A9"
+   ]
+  },
+  {
+   "id": "c0680",
+   "es": "Gestoría",
+   "donde": [
+    "RESTC · Checklist Apertura!C5",
+    "RESTC · Checklist Apertura!C6",
+    "RESTC · Checklist Apertura!C9",
+    "RESTC · Checklist Apertura!C10",
+    "RESTC · Checklist Apertura!C11",
+    "RESTC · Checklist Apertura!C12",
+    "… y 10 apariciones más"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P01",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "Notario",
+   "donde": [
+    "RESTC · Checklist Apertura!C8",
+    "PANC · F1!C6"
+   ],
+   "fila": "Legal",
+   "propuesta_en": "Attorney",
+   "propuesta_de": "GCAF c1133 (CAFC F1 - Constitución!C6)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Arquitecto",
+   "donde": [
+    "RESTC · Checklist Apertura!C18",
+    "PANC · F2!C10"
+   ],
+   "fila": "Licencia",
+   "propuesta_en": "City / county",
+   "propuesta_de": "GCAF c1171 (CAFC F2 - Local!C11)"
+  },
+  {
+   "id": "c0806",
+   "es": "El modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+   "donde": [
+    "RESTC · Checklist Apertura!F52",
+    "PANC · F2!E13"
+   ],
+   "fila": "Legal",
+   "propuesta_en": "Your health department sets what must be displayed, and the federal and state labor law posters go in a common area. If you serve alcohol (for example mimosas), your state liquor license and its posted notices apply: check with your state alcohol agency",
+   "propuesta_de": "GCAF c1177 (CAFC F2 - Local!E14)",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0819",
+   "es": "Con la obra",
+   "donde": [
+    "RESTC · Checklist Apertura!D58",
+    "RESTC · Checklist Apertura!D63",
+    "PANC · F2!D16"
+   ],
+   "fila": "Obra",
+   "propuesta_en": "With the build-out",
+   "propuesta_de": "GCAF c1182 (CAFC F2 - Local!D17)"
+  },
+  {
+   "id": "c0831",
+   "es": "Cartel y contrato de videovigilancia con la empresa de seguridad",
+   "donde": [
+    "RESTC · Checklist Apertura!B63",
+    "PANC · F2!B16"
+   ],
+   "fila": "RGPD",
+   "propuesta_en": "Security camera signage and contract with the security company",
+   "propuesta_de": "GCAF c1181 (CAFC F2 - Local!B17)"
+  },
+  {
+   "id": "c0832",
+   "es": "Cartel homologado en zona visible, contrato de encargado de tratamiento y plazo máximo de conservación de 30 días",
+   "donde": [
+    "RESTC · Checklist Apertura!F63",
+    "PANC · F2!E16"
+   ],
+   "fila": "RGPD",
+   "propuesta_en": "Post notices where your state requires them; check the rules on audio recording and keep footage only as long as you need it",
+   "propuesta_de": "GCAF c1183 (CAFC F2 - Local!E17)"
+  },
+  {
+   "id": "c0835",
+   "es": "Adaptar el TPV y la facturación al sistema Veri*factu / factura electrónica",
+   "donde": [
+    "RESTC · Checklist Apertura!B65",
+    "PANC · F1!B15"
+   ],
+   "fila": "Fiscal",
+   "propuesta_en": "Set up your POS to collect and report sales tax by location",
+   "propuesta_de": "GCAF c1152 (CAFC F1 - Constitución!B15)",
+   "pistas": [
+    "P01",
+    "P06"
+   ]
+  }
+ ]
+}

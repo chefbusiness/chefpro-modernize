@@ -1,0 +1,4344 @@
+{
+ "tanda": "GREST",
+ "salida": "scripts/productos-digitales/business-plans-en-2/textos_en/GREST.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 384,
+ "n_palabras": 3405,
+ "pistas": {
+  "P01": "D43: el restaurante habla de «covers» (cubiertos) y «seat turns»",
+  "P02": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P03": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P04": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P05": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P06": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P07": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P08": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P09": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P10": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P11": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P12": "SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) · oven ventilation permit · utility service upgrade (3-phase) con la compañía eléctrica",
+  "P13": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P14": "D30/D39: panadería COMERCIAL con tienda, rincón de café y mayorista a cafés; cottage food = otro comprador (venta desde casa con topes); lo mayorista va DENTRO de la línea de pan",
+  "P15": "D37: alcohol = 70 % de las ventas de bebida en el ejemplo US (barra con cerveza, vino y cócteles)",
+  "P16": "D37: algunos estados y ciudades añaden un impuesto por consumición de alcohol al sales tax → teclea aquí el tipo COMBINADO; 8 % de ejemplo",
+  "P17": "SPEC delta §3: architect + MEP drawings; building, electrical, plumbing and gas permits con inspecciones finales",
+  "P18": "SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy",
+  "P19": "SPEC delta §3: sidewalk café / outdoor dining permit",
+  "P20": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P21": "SPEC delta §3: articles of organization (Secretary of State); operating agreement; owners' draws y self-employment tax (accountant)",
+  "P22": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P23": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P24": "D38: sin tip credit en el libro (servers ≥ $15/h); nota federal $2.13/h + tip credit donde el estado lo permite",
+  "P25": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P26": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P27": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P28": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P29": "I10/D37: esta fila ES («tasa de cierre 25 %», sin fuente) se SUSTITUYE por «Liquor license (state + local)» · «from $50 to $300,000+» · webstaurantstore.com · «this workbook budgets a non-quota state example; in quota states you buy an existing license»",
+  "P30": "I10: esta fila ES («cierre a 5 años 50 %», sin fuente) se SUSTITUYE por «Prime cost (food + labor)» · «60-65% of sales» · restaurant365.com",
+  "P31": "SPEC delta §3: LLC; business name availability search + DBA si se opera con otro nombre",
+  "P32": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P33": "SPEC delta §3: Indeed, Culinary Agents, Poached",
+  "P34": "SPEC delta §3: food donation program (Bill Emerson Good Samaritan Act) + reglas locales de reciclaje orgánico donde existan",
+  "P35": "SPEC delta §3: state new-employer registration + carteles laborales federales y estatales"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons"
+ },
+ "pestanas_es_en": {
+  "RESTP": {
+   "0. Supuestos": "0. Assumptions",
+   "1. Inversión Inicial": "1. Startup Costs",
+   "2. P&L 3 Años": "2. 3-Year P&L",
+   "3. Punto Equilibrio": "3. Break-Even",
+   "4. Escenarios": "4. Scenarios",
+   "5. Personal": "5. Staffing",
+   "Instrucciones": "Instructions",
+   "6. Tesorería 12 meses": "6. 12-Month Cash Flow",
+   "7. Financiación": "7. Financing"
+  },
+  "RESTC": {
+   "Checklist Apertura": "Opening Checklist",
+   "Instrucciones": "Instructions"
+  },
+  "PANP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "PANC": {
+   "F1": "Phase 1 - Business Setup",
+   "F2": "Phase 2 - Location & Permits",
+   "F3": "Phase 3 - Equipment",
+   "F4": "Phase 4 - Staff",
+   "F5": "Phase 5 - Marketing",
+   "F6": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-bar-restaurante» de AI Chef Pro.": "This file is part of the Restaurant Business Plan Kit by AI Chef Pro.",
+  "Este fichero forma parte del producto «plan-negocio-panaderia» de AI Chef Pro.": "This file is part of the Bakery Business Plan Kit by AI Chef Pro.",
+  "ChefBusiness Consultoría Gastronómica": "AI Chef Pro",
+  "ChefBusiness.co — Plan de Negocio: Bar-Restaurante": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+  "Plan de Negocio: Bar-Restaurante / Restaurante Casual — España 2026": "Restaurant Business Plan: Casual Restaurant & Bar — US example (2026)",
+  "Inversión Inicial — Bar-Restaurante": "Startup Costs — Restaurant & Bar",
+  "Cuenta de Resultados Previsional — 3 Años": "3-Year Projected P&L",
+  "Punto de Equilibrio (Break-Even) — Bar-Restaurante": "Break-Even Analysis — Restaurant & Bar",
+  "Análisis de Escenarios — Año 1": "Scenario Analysis — Year 1",
+  "NOTA: Todos los importes son estimaciones basadas en precios de mercado en España 2026. Ajusta cada partida a tu situación real.": "NOTE: all amounts are US kit-example estimates (2026); replace them with your own quotes.",
+  "Cuadro de Personal y Coste Laboral": "Staffing Plan & Labor Cost",
+  "Checklist Apertura — Bar-Restaurante / España 2026": "Opening Checklist — Restaurant & Bar (US example, 2026)",
+  "ChefBusiness.co — Checklist Apertura Bar-Restaurante / España 2026": "AI Chef Pro · aichef.pro/en/digital-products/restaurant-business-plan",
+  "Licencias y permisos varios": "Liquor license + permits (non-quota state example)",
+  "Inversión Inicial — España 2026": "Startup Costs — US example (2026)",
+  "IVA de la bebida ALCOHÓLICA servida en mostrador": "Sales tax rate on alcohol served at the counter",
+  "Pan común sobre la línea (%)": "Tax-exempt share of the line (%)"
+ },
+ "cadenas": [
+  {
+   "id": "c0005",
+   "es": "Cubiertos/día (media del año 1)",
+   "donde": [
+    "RESTP · 0. Supuestos!A4"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0006",
+   "es": "Comensales servidos al día de media del año, contando todos los servicios. La rotación que implica sobre el aforo la calcula la celda «Rotaciones al día implícitas» de esta misma hoja; el documento del plan pide un MÍNIMO de 1,8 covers por mesa y servicio en temporada alta",
+   "donde": [
+    "RESTP · 0. Supuestos!C4"
+   ],
+   "fila": "Cubiertos/día (media del año 1)",
+   "valor_us": 125,
+   "pistas": [
+    "P02",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA. El PVP equivalente lo calcula la celda «PVP equivalente con IVA» de abajo (al 10 % en sala son 20,02 € con los supuestos de partida): dentro del rango 15-22 € que declara este mismo libro y del 18-25 € que fija el documento del plan",
+   "donde": [
+    "RESTP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 28,
+   "pistas": [
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "Cierre semanal de un día y vacaciones. El MISMO dato lo usan el P&L, el punto de equilibrio y los escenarios",
+   "donde": [
+    "RESTP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 310,
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "Segundo año con la clientela ya asentada",
+   "donde": [
+    "RESTP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "Tercer año, cerca del techo de rotación del local",
+   "donde": [
+    "RESTP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Food cost objetivo del bar-restaurante casual: 28-32 % según las referencias de este mismo libro. Se aplica SOLO a la comida",
+   "donde": [
+    "RESTP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.3
+  },
+  {
+   "id": "c0024",
+   "es": "Coste de la bebida sobre las ventas de bebida, no sobre el total",
+   "donde": [
+    "RESTP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.24
+  },
+  {
+   "id": "c0026",
+   "es": "Servilletas, papel, productos de limpieza y envases de llevar",
+   "donde": [
+    "RESTP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.015
+  },
+  {
+   "id": "c0028",
+   "es": "A CERO por defecto: si no repartes no arrastras un coste inventado. Súbelo al peso REAL del canal y la comisión se aplica sólo sobre esa parte",
+   "donde": [
+    "RESTP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0
+  },
+  {
+   "id": "c0030",
+   "es": "Comisión típica de las plataformas sobre el pedido servido por ese canal; confírmala en tu contrato antes de proyectar",
+   "donde": [
+    "RESTP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0032",
+   "es": "Tarjeta y bizum sobre el total facturado; pide oferta a dos proveedores de TPV",
+   "donde": [
+    "RESTP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.035,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Dentro del rango 2.000-4.500 €/mes que declara este libro para un local de 80-120 m² en zona urbana, y respetando el techo del 10 % sobre ventas",
+   "donde": [
+    "RESTP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 7000,
+   "pistas": [
+    "P05",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Luz, agua y gas de una cocina con horno, cámaras y campana: pide el histórico del local antes de firmar",
+   "donde": [
+    "RESTP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 2500,
+   "pistas": [
+    "P09",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil + multirriesgo del local + convenio",
+   "donde": [
+    "RESTP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 9000,
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0053",
+   "es": "Aportación de los socios. Con menos, el banco no entra: pide un 35-40 % de fondos propios sobre la inversión",
+   "donde": [
+    "RESTP · 0. Supuestos!C30"
+   ],
+   "fila": "Recursos propios aportados (€)",
+   "valor_us": 130000,
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que origen y usos cuadran, y trae una celda que calcula el importe exacto que los ajusta",
+   "donde": [
+    "RESTP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR"
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual; pide oferta a dos entidades y a una línea ICO antes de fijarlo",
+   "donde": [
+    "RESTP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "propuesta_en": "Nominal annual rate, not APR; get offers from two lenders, including an SBA-guaranteed loan, before you fix it",
+   "propuesta_de": "GCAF c0886 (CAFP 0. Supuestos!C32)",
+   "pistas": [
+    "P04",
+    "P13",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0061",
+   "es": "Primer año sólo intereses, que es cuando la caja está más tensa",
+   "donde": [
+    "RESTP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0,
+   "propuesta_en": "Years in which you pay only interest, usually the first year, when cash is tightest. Zero by default in this workbook",
+   "propuesta_de": "GCAF c0888 (CAFP 0. Supuestos!C34)"
+  },
+  {
+   "id": "c0063",
+   "es": "Mínimo que exige este mismo libro: «Fondo de maniobra: mínimo 3 meses de costes fijos antes de abrir»",
+   "donde": [
+    "RESTP · 0. Supuestos!C35"
+   ],
+   "fila": "Fondo de maniobra (meses de costes fijos)",
+   "pistas": [
+    "P09",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Obra, instalaciones y decoración. Coeficientes de la tabla del art. 12.1 LIS: confírmalo con tu asesor",
+   "donde": [
+    "RESTP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Maquinaria de cocina, mobiliario y equipos. El coeficiente lineal máximo de la tabla del art. 12.1 LIS es del 12 % para maquinaria y del 10 % para mobiliario: por debajo de 9-10 años el exceso no es deducible. Confírmalo con tu asesor",
+   "donde": [
+    "RESTP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0086",
+   "es": "Rotaciones al día implícitas (calculado)",
+   "donde": [
+    "RESTP · 0. Supuestos!A50"
+   ],
+   "propuesta_en": "Implied seat turns per day (calculated)",
+   "propuesta_de": "GCAF c0892 (CAFP 0. Supuestos!A50)"
+  },
+  {
+   "id": "c0088",
+   "es": "De aquí sale la rotación implícita: cubiertos/día ÷ aforo. Cuéntalo sobre el plano de tu local, no lo copies",
+   "donde": [
+    "RESTP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas + barra)",
+   "valor_us": 60,
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0099",
+   "es": "En barra y sala se cobra al contado (0 días). Súbelo si trabajas con plataformas de reserva o de reparto, que liquidan a D+1/D+30",
+   "donde": [
+    "RESTP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 1,
+   "propuesta_en": "At 1 day, card settlements reach your bank the next business day. Raise it if you work with reservation or delivery platforms, which usually pay out between the next day and 30 days later",
+   "propuesta_de": "GCAF c0900 (CAFP 0. Supuestos!C58)",
+   "pistas": [
+    "P14"
+   ]
+  },
+  {
+   "id": "c0107",
+   "es": "Peso del alcohol dentro de la línea de bebida. Se usa igual en ventas y en compras, y es una aproximación (el alcohol suele pesar algo más en el coste que en la venta). En sala todo se repercute al 10 %, refrescos incluidos. En la factura del proveedor, el alcohol va al tipo general; el agua, el café y los zumos naturales al 10 %; los refrescos y zumos con azúcares o edulcorantes añadidos al 21 % desde 2021, que el libro aproxima al 10 %",
+   "donde": [
+    "RESTP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0.7,
+   "pistas": [
+    "P09",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0109",
+   "es": "10 %, igual que el resto del consumo en sala: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el acto», sin excluir el alcohol. El 21 % es el tipo GENERAL y, fuera del consumo en el acto, alcanza al alcohol y también a los refrescos y zumos con azúcares o edulcorantes añadidos vendidos para llevar o a domicilio (art. 91.Uno.1.1.º de la misma ley). El libro lo aplica sólo a la parte ALCOHÓLICA de la bebida que sale por el canal de la celda «Ventas por delivery sobre el total»; los refrescos azucarados repartidos irían también al general y el libro no los separa",
+   "donde": [
+    "RESTP · 0. Supuestos!C63"
+   ],
+   "fila": "IVA de la bebida ALCOHÓLICA servida en sala",
+   "valor_us": 0.08,
+   "propuesta_en": "Same rate as the rest of on-site sales in this example (8%: state + local). Alcohol rates vary by state and some states add a separate liquor tax: check yours. The workbook applies the alcohol rates only to the ALCOHOLIC part of beverage sales",
+   "propuesta_de": "GCAF c0903 (CAFP 0. Supuestos!C63)",
+   "pistas": [
+    "P04",
+    "P09",
+    "P02",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0118",
+   "es": "El convenio PROVINCIAL de hostelería, no el SMI, es el suelo real. Cópialo de la tabla salarial de tu provincia; con 0 el semáforo compara sólo contra el SMI",
+   "donde": [
+    "RESTP · 0. Supuestos!C68"
+   ],
+   "fila": "Suelo salarial anual del convenio provincial (€)",
+   "valor_us": null,
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0143",
+   "es": "LOCAL Y ACONDICIONAMIENTO",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A6"
+   ]
+  },
+  {
+   "id": "c0144",
+   "es": "Honorarios inmobiliaria",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A7"
+   ]
+  },
+  {
+   "id": "c0145",
+   "es": "Medio mes de alquiler",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D7"
+   ],
+   "fila": "Honorarios inmobiliaria",
+   "valor_us": 3000
+  },
+  {
+   "id": "c0147",
+   "es": "Obra civil y reforma local",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A8"
+   ]
+  },
+  {
+   "id": "c0148",
+   "es": "Cocina, extracción, instalaciones, suelo, pintura",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D8"
+   ],
+   "fila": "Obra civil y reforma local",
+   "valor_us": 90000,
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0149",
+   "es": "Proyecto técnico + licencia actividad",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A9"
+   ],
+   "pistas": [
+    "P17",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0150",
+   "es": "Ingeniero + tasas ayuntamiento",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D9"
+   ],
+   "fila": "Proyecto técnico + licencia actividad",
+   "valor_us": 18000
+  },
+  {
+   "id": "c0151",
+   "es": "Decoración e interiorismo",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A10"
+   ]
+  },
+  {
+   "id": "c0152",
+   "es": "Mobiliario sala, iluminación, rotulación",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D10"
+   ],
+   "fila": "Decoración e interiorismo",
+   "valor_us": 10000
+  },
+  {
+   "id": "c0157",
+   "es": "EQUIPAMIENTO COCINA",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A14"
+   ]
+  },
+  {
+   "id": "c0158",
+   "es": "Cocina industrial (fuegos + plancha)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A15"
+   ]
+  },
+  {
+   "id": "c0159",
+   "es": "4 fuegos + plancha 80cm",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D15"
+   ],
+   "fila": "Cocina industrial (fuegos + plancha)",
+   "valor_us": 14000
+  },
+  {
+   "id": "c0160",
+   "es": "Horno mixto (convección + vapor)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A16"
+   ]
+  },
+  {
+   "id": "c0161",
+   "es": "10 bandejas GN 1/1",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D16"
+   ],
+   "fila": "Horno mixto (convección + vapor)",
+   "valor_us": 9000
+  },
+  {
+   "id": "c0162",
+   "es": "Freidora profesional",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A17"
+   ]
+  },
+  {
+   "id": "c0163",
+   "es": "2 cubetas x 8L",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D17"
+   ],
+   "fila": "Freidora profesional",
+   "valor_us": 4000
+  },
+  {
+   "id": "c0164",
+   "es": "Mesa refrigerada bajo mostrador",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A18"
+   ]
+  },
+  {
+   "id": "c0165",
+   "es": "3 puertas, 400L",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D18"
+   ],
+   "fila": "Mesa refrigerada bajo mostrador",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0166",
+   "es": "Cámara frigorífica",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A19"
+   ]
+  },
+  {
+   "id": "c0167",
+   "es": "Positiva + negativa",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D19"
+   ],
+   "fila": "Cámara frigorífica",
+   "valor_us": 16000
+  },
+  {
+   "id": "c0168",
+   "es": "Campana extractora + motor",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A20"
+   ],
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0169",
+   "es": "Instalación incluida",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D20"
+   ],
+   "fila": "Campana extractora + motor",
+   "valor_us": 25000
+  },
+  {
+   "id": "c0170",
+   "es": "Lavavajillas industrial",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A21"
+   ],
+   "propuesta_en": "Commercial dishwasher",
+   "propuesta_de": "GCAF c0930 (CAFP Inversión Inicial!A19)"
+  },
+  {
+   "id": "c0171",
+   "es": "Cesta 50x50",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D21"
+   ],
+   "fila": "Lavavajillas industrial",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0172",
+   "es": "Menaje y utensilios cocina",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A22"
+   ],
+   "propuesta_en": "Smallwares and kitchen utensils",
+   "propuesta_de": "GFT c0768 (FTC F3 - Equipamiento!B13)"
+  },
+  {
+   "id": "c0173",
+   "es": "Sartenes, ollas, GN, cuchillos, tablas",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D22"
+   ],
+   "fila": "Menaje y utensilios cocina",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0174",
+   "es": "Fregadero industrial doble seno",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A23"
+   ]
+  },
+  {
+   "id": "c0175",
+   "es": "Estanterías inox almacén",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A24"
+   ]
+  },
+  {
+   "id": "c0176",
+   "es": "4 niveles x 3 unidades",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D24"
+   ],
+   "fila": "Estanterías inox almacén",
+   "valor_us": 3000
+  },
+  {
+   "id": "c0177",
+   "es": "EQUIPAMIENTO SALA Y BARRA",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A25"
+   ]
+  },
+  {
+   "id": "c0178",
+   "es": "Barra de bar (fabricación + instalación)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A26"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "5 metros lineales",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D26"
+   ],
+   "fila": "Barra de bar (fabricación + instalación)",
+   "valor_us": 25000
+  },
+  {
+   "id": "c0180",
+   "es": "Mesas y sillas (12 mesas x 4 sillas)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A27"
+   ]
+  },
+  {
+   "id": "c0181",
+   "es": "Set 120 €/mesa",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D27"
+   ],
+   "fila": "Mesas y sillas (12 mesas x 4 sillas)",
+   "valor_us": 15000,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0182",
+   "es": "Taburetes barra (8 unidades)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A28"
+   ]
+  },
+  {
+   "id": "c0183",
+   "es": "120 €/ud",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D28"
+   ],
+   "fila": "Taburetes barra (8 unidades)",
+   "valor_us": 2400,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0184",
+   "es": "Cafetera espresso profesional",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A29"
+   ]
+  },
+  {
+   "id": "c0185",
+   "es": "2 grupos",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D29"
+   ],
+   "fila": "Cafetera espresso profesional",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0186",
+   "es": "Molinillo café profesional",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A30"
+   ]
+  },
+  {
+   "id": "c0187",
+   "es": "Grifo cerveza (2 tomas)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A31"
+   ]
+  },
+  {
+   "id": "c0188",
+   "es": "Instalación + barril inicial",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D31"
+   ],
+   "fila": "Grifo cerveza (2 tomas)",
+   "valor_us": 6000
+  },
+  {
+   "id": "c0189",
+   "es": "Vinoteca / nevera vinos",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A32"
+   ]
+  },
+  {
+   "id": "c0190",
+   "es": "24 botellas",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D32"
+   ],
+   "fila": "Vinoteca / nevera vinos",
+   "valor_us": 2500
+  },
+  {
+   "id": "c0191",
+   "es": "Cristalería, vajilla, cubertería",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A33"
+   ]
+  },
+  {
+   "id": "c0192",
+   "es": "Servicio completo 50 pax",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D33"
+   ],
+   "fila": "Cristalería, vajilla, cubertería",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0193",
+   "es": "TPV + software hostelería",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A34"
+   ],
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0194",
+   "es": "Terminal + licencia anual",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D34"
+   ],
+   "fila": "TPV + software hostelería",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0195",
+   "es": "Mobiliario y toldo de terraza",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A35"
+   ],
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0196",
+   "es": "Mesas, sillas, toldo y estufas para las plazas de terraza que describe el plan. Ponlo a 0 si tu local no tiene terraza o si la licencia no sale",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D35"
+   ],
+   "fila": "Mobiliario y toldo de terraza",
+   "valor_us": 8000,
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0197",
+   "es": "MARKETING Y LANZAMIENTO",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A36"
+   ]
+  },
+  {
+   "id": "c0198",
+   "es": "Diseño marca e identidad visual",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A37"
+   ],
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0199",
+   "es": "Logo, carta, señalética",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D37"
+   ],
+   "fila": "Diseño marca e identidad visual",
+   "valor_us": 5000
+  },
+  {
+   "id": "c0200",
+   "es": "Web + Google My Business",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A38"
+   ],
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0201",
+   "es": "Página básica + ficha GMB",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D38"
+   ],
+   "fila": "Web + Google My Business",
+   "valor_us": 3000
+  },
+  {
+   "id": "c0202",
+   "es": "Campaña lanzamiento RRSS + inauguración",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A39"
+   ],
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0203",
+   "es": "3 meses iniciales",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D39"
+   ],
+   "fila": "Campaña lanzamiento RRSS + inauguración",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0204",
+   "es": "GASTOS LEGALES Y CONSTITUCIÓN",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A40"
+   ]
+  },
+  {
+   "id": "c0205",
+   "es": "Constitución SL (notaría + registro)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A41"
+   ],
+   "pistas": [
+    "P04",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0206",
+   "es": "Capital social mín. 1 € (Ley Crea y Crece)",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D41"
+   ],
+   "fila": "Constitución SL (notaría + registro)",
+   "valor_us": 2500,
+   "pistas": [
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0208",
+   "es": "EXISTENCIAS INICIALES",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A43"
+   ]
+  },
+  {
+   "id": "c0209",
+   "es": "Primera compra de despensa y cámaras",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A44"
+   ]
+  },
+  {
+   "id": "c0210",
+   "es": "Materia prima para arrancar el servicio: seco, fresco y congelado. NO se amortiza, es circulante",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D44"
+   ],
+   "fila": "Primera compra de despensa y cámaras",
+   "valor_us": 8000
+  },
+  {
+   "id": "c0211",
+   "es": "Primera compra de bodega y barra",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!A45"
+   ]
+  },
+  {
+   "id": "c0212",
+   "es": "Vinos, cervezas, destilados y refrescos de la carta de salida. Pide depósito a tus distribuidores antes de presupuestarlo",
+   "donde": [
+    "RESTP · 1. Inversión Inicial!D45"
+   ],
+   "fila": "Primera compra de bodega y barra",
+   "valor_us": 10000,
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0237",
+   "es": "Cubiertos/día (media)",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A7"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0242",
+   "es": "Ventas de comida (cocina y barra)",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A11"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Menú del mediodía, carta y raciones",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F11"
+   ],
+   "fila": "Ventas de comida (cocina y barra)"
+  },
+  {
+   "id": "c0244",
+   "es": "Ventas de bebida (cañas, vinos, cafés y copas)",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A12"
+   ]
+  },
+  {
+   "id": "c0267",
+   "es": "Mantenimiento y reparaciones",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A29"
+   ]
+  },
+  {
+   "id": "c0268",
+   "es": "Software (TPV, reservas, RRSS)",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A30"
+   ],
+   "pistas": [
+    "P10",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0269",
+   "es": "Limpieza, lavandería y lencería",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A31"
+   ]
+  },
+  {
+   "id": "c0270",
+   "es": "Mantelería, paños y uniformes. Pide presupuesto en tu zona: es un importe orientativo y editable",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F31"
+   ],
+   "fila": "Limpieza, lavandería y lencería",
+   "valor_us": 9600
+  },
+  {
+   "id": "c0271",
+   "es": "Gestión de residuos y de aceite vegetal usado",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A32"
+   ]
+  },
+  {
+   "id": "c0272",
+   "es": "Gestor autorizado. Lo pide la inspección y el aceite no puede ir al desagüe",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F32"
+   ],
+   "fila": "Gestión de residuos y de aceite vegetal usado",
+   "valor_us": 3600,
+   "pistas": [
+    "P04",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0274",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F33"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 1200,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0276",
+   "es": "SGAE y AGEDI-AIE son dos licencias distintas; el importe depende de los metros y del aforo",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F34"
+   ],
+   "fila": "Derechos de autor por música ambiental",
+   "valor_us": 1200,
+   "pistas": [
+    "P04",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0278",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995)",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F35"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 1000,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0279",
+   "es": "Comisiones de reservas online",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A36"
+   ]
+  },
+  {
+   "id": "c0280",
+   "es": "TheFork y similares cobran por comensal sentado: mira la letra pequeña antes de firmar",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F36"
+   ],
+   "fila": "Comisiones de reservas online",
+   "valor_us": 3000,
+   "pistas": [
+    "P09",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0281",
+   "es": "Reposición de menaje, cristalería y vajilla",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!A37"
+   ]
+  },
+  {
+   "id": "c0282",
+   "es": "Roturas del ejercicio. En un casual con barra se rompe más de lo que se presupuesta",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F37"
+   ],
+   "fila": "Reposición de menaje, cristalería y vajilla",
+   "valor_us": 4800
+  },
+  {
+   "id": "c0306",
+   "es": "Por debajo, revisa precios de carta y escandallos",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F53"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.65
+  },
+  {
+   "id": "c0309",
+   "es": "Techo del propio libro: «Food cost objetivo 28-32 %»",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F55"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.32,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0311",
+   "es": "Techo MÁS ESTRICTO de los que publica este producto: «el labor cost no debe superar el 34 %». Es el que manda",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F56"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.35,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0313",
+   "es": "Techo del propio libro: «Alquiler: no superar 8-10 % de los ingresos»",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F57"
+   ],
+   "fila": "Alquiler / Ventas",
+   "valor_us": 0.1,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0315",
+   "es": "Suelo del propio libro: «Margen neto medio sector: 5-10 %»",
+   "donde": [
+    "RESTP · 2. P&L 3 Años!F58"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05,
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0326",
+   "es": "Coste variable por cubierto",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A10"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0328",
+   "es": "Margen de contribución por cubierto",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A11"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0334",
+   "es": "Cubiertos necesarios al año",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A15"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0335",
+   "es": "Cubiertos necesarios al día",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A16"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0340",
+   "es": "Cubiertos necesarios al año (caja)",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A20"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0341",
+   "es": "Cubiertos necesarios al día (caja)",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A21"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0344",
+   "es": "Cubiertos/día previstos en el plan",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A24"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0347",
+   "es": "Rotaciones al día que da el local como máximo",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A26"
+   ],
+   "propuesta_en": "Maximum seat turns per day the space allows",
+   "propuesta_de": "GCAF c0975 (CAFP Punto Equilibrio!A25)"
+  },
+  {
+   "id": "c0348",
+   "es": "Servicios completos por plaza y día que puedes llegar a hacer con tu horario. Es el techo físico del local, no un objetivo",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!E26"
+   ],
+   "fila": "Rotaciones al día que da el local como máximo",
+   "propuesta_en": "Full table services per seat per day that your opening hours allow. It is the physical ceiling of the space, not a target",
+   "propuesta_de": "GCAF c0976 (CAFP Punto Equilibrio!E25)"
+  },
+  {
+   "id": "c0349",
+   "es": "Rotaciones al día que exige el equilibrio de caja",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A27"
+   ],
+   "propuesta_en": "Seat turns per day that the cash break-even requires",
+   "propuesta_de": "GCAF c0977 (CAFP Punto Equilibrio!A26)"
+  },
+  {
+   "id": "c0350",
+   "es": "Cubiertos de equilibrio entre las plazas que declara la hoja de Supuestos. Por encima del techo de arriba, el punto de equilibrio está fuera del alcance del local",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!E27"
+   ],
+   "fila": "Rotaciones al día que exige el equilibrio de caja",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0353",
+   "es": "Cubiertos/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por cubierto (filas). En verde, los que están por debajo de los cubiertos que prevé el plan.",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A32"
+   ],
+   "pistas": [
+    "P07",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0354",
+   "es": "Cubiertos/día necesarios: ticket medio sin IVA (columnas) × coste variable por cubierto (filas)",
+   "donde": [
+    "RESTP · 3. Punto Equilibrio!A34"
+   ],
+   "pistas": [
+    "P04",
+    "P06",
+    "P07",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0361",
+   "es": "Cubiertos/día",
+   "donde": [
+    "RESTP · 4. Escenarios!A6"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0366",
+   "es": "Cubiertos/día para el equilibrio",
+   "donde": [
+    "RESTP · 4. Escenarios!A22"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0369",
+   "es": "Cubiertos al año por jornada equivalente",
+   "donde": [
+    "RESTP · 4. Escenarios!A25"
+   ],
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0370",
+   "es": "Cubiertos que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+   "donde": [
+    "RESTP · 4. Escenarios!E25"
+   ],
+   "fila": "Cubiertos al año por jornada equivalente",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0375",
+   "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los cubiertos, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+   "donde": [
+    "RESTP · 4. Escenarios!A29"
+   ],
+   "pistas": [
+    "P02",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0376",
+   "es": "NOTA: El escenario pesimista refleja un arranque lento con menor afluencia. El optimista asume alta ocupación y ticket medio superior. Los costes fijos son constantes en los 3 escenarios.",
+   "donde": [
+    "RESTP · 4. Escenarios!A30"
+   ],
+   "pistas": [
+    "P07",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0388",
+   "es": "Gerente / Propietario",
+   "donde": [
+    "RESTP · 5. Personal!A6"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Trabaja en sala: compras, cierre de caja, proveedores y RRSS",
+   "donde": [
+    "RESTP · 5. Personal!J6"
+   ],
+   "fila": "Gerente / Propietario",
+   "valor_us": {
+    "B": 1,
+    "C": 1,
+    "D": 4500
+   },
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0390",
+   "es": "Jefe de cocina",
+   "donde": [
+    "RESTP · 5. Personal!A7"
+   ]
+  },
+  {
+   "id": "c0391",
+   "es": "Escandallos, pedidos y línea caliente",
+   "donde": [
+    "RESTP · 5. Personal!J7"
+   ],
+   "fila": "Jefe de cocina",
+   "valor_us": {
+    "B": 1,
+    "C": 1,
+    "D": 4200
+   }
+  },
+  {
+   "id": "c0392",
+   "es": "Ayudante de cocina",
+   "donde": [
+    "RESTP · 5. Personal!A8"
+   ]
+  },
+  {
+   "id": "c0393",
+   "es": "Mise en place, fríos y limpieza de cocina. Por encima del SMI de jornada completa",
+   "donde": [
+    "RESTP · 5. Personal!J8"
+   ],
+   "fila": "Ayudante de cocina",
+   "valor_us": {
+    "B": 2,
+    "C": 1,
+    "D": 6400
+   },
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0394",
+   "es": "Camarero/a de barra y sala",
+   "donde": [
+    "RESTP · 5. Personal!A9"
+   ],
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0395",
+   "es": "Jornada completa, con el servicio de mediodía y el de noche",
+   "donde": [
+    "RESTP · 5. Personal!J9"
+   ],
+   "fila": "Camarero/a de barra y sala",
+   "valor_us": {
+    "B": 2,
+    "C": 1,
+    "D": 5200
+   }
+  },
+  {
+   "id": "c0396",
+   "es": "Camarero/a a tiempo parcial",
+   "donde": [
+    "RESTP · 5. Personal!A10"
+   ],
+   "pistas": [
+    "P24"
+   ]
+  },
+  {
+   "id": "c0397",
+   "es": "Refuerzo de los dos servicios fuertes, 30 horas semanales",
+   "donde": [
+    "RESTP · 5. Personal!J10"
+   ],
+   "fila": "Camarero/a a tiempo parcial",
+   "valor_us": {
+    "B": 2,
+    "C": 0.5,
+    "D": 2600
+   }
+  },
+  {
+   "id": "c0399",
+   "es": "Viernes, sábado y domingo, 20 horas semanales",
+   "donde": [
+    "RESTP · 5. Personal!J11"
+   ],
+   "fila": "Extra de fin de semana",
+   "valor_us": {
+    "B": 1,
+    "C": 0.75,
+    "D": 1950
+   }
+  },
+  {
+   "id": "c0401",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal de los seis puestos. Equivale a una jornada del 15 %",
+   "donde": [
+    "RESTP · 5. Personal!J12"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "B": 1,
+    "C": 0.2,
+    "D": 520
+   },
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0415",
+   "es": "De la apertura al cierre, barra incluida. Cuéntalas sobre tu horario real",
+   "donde": [
+    "RESTP · 5. Personal!J22"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 12,
+   "propuesta_en": "From opening to closing, bar included. Count them on your real schedule",
+   "propuesta_de": "GCAF c0991 (CAFP Personal!J20)"
+  },
+  {
+   "id": "c0417",
+   "es": "Media de presencia simultánea entre cocina, barra y sala. En los dos servicios fuertes hará falta más y a media tarde menos",
+   "donde": [
+    "RESTP · 5. Personal!J23"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 4,
+   "propuesta_en": "Average number of people present at the same time across kitchen, bar and floor. The two busy services need more and mid-afternoon needs fewer",
+   "propuesta_de": "GCAF c0992 (CAFP Personal!J21)"
+  },
+  {
+   "id": "c0427",
+   "es": "INSTRUCCIONES DE USO — Plan financiero Bar-Restaurante / Restaurante Casual",
+   "donde": [
+    "RESTP · Instrucciones!A1"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "1. «0. Supuestos» es la hoja de mando: cubiertos, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+   "donde": [
+    "RESTP · Instrucciones!A5"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "pistas": [
+    "P04",
+    "P06",
+    "P02",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0432",
+   "es": "3. En «3. Punto Equilibrio» sólo se teclea el techo de rotaciones que da tu local; todo lo demás se deriva de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «4. Escenarios», la estacionalidad y la rampa de arranque en «6. Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «7. Financiación». Todo lo demás se calcula.",
+   "donde": [
+    "RESTP · Instrucciones!A7"
+   ],
+   "cita_hojas": [
+    {
+     "es": "3. Punto Equilibrio",
+     "en": "3. Break-Even"
+    },
+    {
+     "es": "4. Escenarios",
+     "en": "4. Scenarios"
+    },
+    {
+     "es": "6. Tesorería 12 meses",
+     "en": "6. 12-Month Cash Flow"
+    },
+    {
+     "es": "7. Financiación",
+     "en": "7. Financing"
+    }
+   ],
+   "pistas": [
+    "P02",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "6. La hoja «6. Tesorería 12 meses» responde la pregunta que decide una operación bancaria: en qué mes se agota la caja. El saldo mínimo del año nunca puede salir en rojo.",
+   "donde": [
+    "RESTP · Instrucciones!A10"
+   ],
+   "cita_hojas": [
+    {
+     "es": "6. Tesorería 12 meses",
+     "en": "6. 12-Month Cash Flow"
+    }
+   ],
+   "pistas": [
+    "P02"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "7. La hoja «7. Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado.",
+   "donde": [
+    "RESTP · Instrucciones!A11"
+   ],
+   "cita_hojas": [
+    {
+     "es": "7. Financiación",
+     "en": "7. Financing"
+    }
+   ],
+   "pistas": [
+    "P25",
+    "P13",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "Cubiertos/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+   "donde": [
+    "RESTP · Instrucciones!A29"
+   ],
+   "pistas": [
+    "P25",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "Coste de personal imputado al P&L",
+   "donde": [
+    "RESTP · Instrucciones!A34"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "115.200 €",
+   "donde": [
+    "RESTP · Instrucciones!B34"
+   ],
+   "fila": "Coste de personal imputado al P&L",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "Sale de la hoja Personal, por fórmula",
+   "donde": [
+    "RESTP · Instrucciones!C34"
+   ],
+   "fila": "Coste de personal imputado al P&L",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "El P&L decía «ver hoja Personal» y usaba otra cifra; ahora lee la hoja",
+   "donde": [
+    "RESTP · Instrucciones!D34"
+   ],
+   "fila": "Coste de personal imputado al P&L",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "Plantilla",
+   "donde": [
+    "RESTP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "7 personas / 209.171 €",
+   "donde": [
+    "RESTP · Instrucciones!B35"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "7 puestos, tres a tiempo parcial (uno de ellos, suplencias) / 151.939 €",
+   "donde": [
+    "RESTP · Instrucciones!C35"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "Dimensionada por horas de servicio para 56 plazas; con la plantilla anterior el coste laboral era el 66,3 % de las ventas",
+   "donde": [
+    "RESTP · Instrucciones!D35"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "Cubiertos/día del año 1",
+   "donde": [
+    "RESTP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "55",
+   "donde": [
+    "RESTP · Instrucciones!B36"
+   ],
+   "fila": "Cubiertos/día del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "80",
+   "donde": [
+    "RESTP · Instrucciones!C36"
+   ],
+   "fila": "Cubiertos/día del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "1,43 rotaciones sobre las 56 plazas del propio pack; el documento pide un MÍNIMO de 1,8 en temporada alta, así que el caso base se proyecta por debajo a propósito",
+   "donde": [
+    "RESTP · Instrucciones!D36"
+   ],
+   "fila": "Cubiertos/día del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P03",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "Ticket medio",
+   "donde": [
+    "RESTP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "18,50 € (sin declarar IVA)",
+   "donde": [
+    "RESTP · Instrucciones!B37"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P04",
+    "P05",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "18,20 € SIN IVA",
+   "donde": [
+    "RESTP · Instrucciones!C37"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P04",
+    "P05",
+    "P06",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "El ticket de la versión 1.1 no decía si llevaba IVA; ahora se declara sin IVA y equivale a 20,02 € de PVP al 10 % en sala, dentro del rango 15-22 € del propio libro",
+   "donde": [
+    "RESTP · Instrucciones!D37"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P09",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "Alquiler",
+   "donde": [
+    "RESTP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "3.000 €/mes",
+   "donde": [
+    "RESTP · Instrucciones!B38"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "3.000 €/mes (sin cambio)",
+   "donde": [
+    "RESTP · Instrucciones!C38"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Con el ticket recalibrado son el 8,0 % de las ventas, dentro del techo de 8-10 % del propio libro",
+   "donde": [
+    "RESTP · Instrucciones!D38"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "Suministros",
+   "donde": [
+    "RESTP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "1.200 €/mes",
+   "donde": [
+    "RESTP · Instrucciones!B39"
+   ],
+   "fila": "Suministros",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "1.800 €/mes",
+   "donde": [
+    "RESTP · Instrucciones!C39"
+   ],
+   "fila": "Suministros",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Una cocina con horno, cámaras y campana no consume el 3,2 % de las ventas",
+   "donde": [
+    "RESTP · Instrucciones!D39"
+   ],
+   "fila": "Suministros",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P03",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "Fondo de maniobra",
+   "donde": [
+    "RESTP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "30.000 € etiquetados «3 meses»",
+   "donde": [
+    "RESTP · Instrucciones!B40"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "3 × costes fijos de caja mensuales, por fórmula",
+   "donde": [
+    "RESTP · Instrucciones!C40"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Los 30.000 € cubrían 1,8 meses, no 3",
+   "donde": [
+    "RESTP · Instrucciones!D40"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "Amortización",
+   "donde": [
+    "RESTP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "5.000 €/año (base implícita 50.000 €)",
+   "donde": [
+    "RESTP · Instrucciones!B41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0483",
+   "es": "Base amortizable real / vida útil, por fórmula",
+   "donde": [
+    "RESTP · Instrucciones!C41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0484",
+   "es": "El inmovilizado del propio libro suma bastante más, y el fondo de maniobra no se amortiza",
+   "donde": [
+    "RESTP · Instrucciones!D41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0485",
+   "es": "Cuota del préstamo en el P&L",
+   "donde": [
+    "RESTP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0486",
+   "es": "7.200 €/año de cuota completa",
+   "donde": [
+    "RESTP · Instrucciones!B42"
+   ],
+   "fila": "Cuota del préstamo en el P&L",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0487",
+   "es": "sólo los intereses; el principal va a tesorería",
+   "donde": [
+    "RESTP · Instrucciones!C42"
+   ],
+   "fila": "Cuota del préstamo en el P&L",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0488",
+   "es": "Meter la cuota entera antes del resultado convierte el P&L en un flujo de caja",
+   "donde": [
+    "RESTP · Instrucciones!D42"
+   ],
+   "fila": "Cuota del préstamo en el P&L",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0489",
+   "es": "Impuesto de Sociedades",
+   "donde": [
+    "RESTP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P04",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0490",
+   "es": "25 % en los años 2 y 3, sin compensar la BIN",
+   "donde": [
+    "RESTP · Instrucciones!B43"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0491",
+   "es": "15 % los dos primeros ejercicios con base positiva y compensación de bases negativas",
+   "donde": [
+    "RESTP · Instrucciones!C43"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0492",
+   "es": "Artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades",
+   "donde": [
+    "RESTP · Instrucciones!D43"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P04",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0493",
+   "es": "Comisiones de delivery",
+   "donde": [
+    "RESTP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0494",
+   "es": "5 % de TODA la facturación, sin interruptor",
+   "donde": [
+    "RESTP · Instrucciones!B44"
+   ],
+   "fila": "Comisiones de delivery",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0495",
+   "es": "% del canal × comisión de la plataforma, a 0 por defecto",
+   "donde": [
+    "RESTP · Instrucciones!C44"
+   ],
+   "fila": "Comisiones de delivery",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0496",
+   "es": "Si no repartes, no arrastras un coste inventado",
+   "donde": [
+    "RESTP · Instrucciones!D44"
+   ],
+   "fila": "Comisiones de delivery",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0497",
+   "es": "Coste de la bebida",
+   "donde": [
+    "RESTP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0498",
+   "es": "food cost del 30 % sobre el total MÁS un 22 % sobre la bebida",
+   "donde": [
+    "RESTP · Instrucciones!B45"
+   ],
+   "fila": "Coste de la bebida",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0499",
+   "es": "cada familia paga su propio coste",
+   "donde": [
+    "RESTP · Instrucciones!C45"
+   ],
+   "fila": "Coste de la bebida",
+   "por_celda": true,
+   "pistas": [
+    "P26"
+   ]
+  },
+  {
+   "id": "c0500",
+   "es": "33.119,63 € cobrados dos veces en el año 1",
+   "donde": [
+    "RESTP · Instrucciones!D45"
+   ],
+   "fila": "Coste de la bebida",
+   "por_celda": true,
+   "pistas": [
+    "P26",
+    "P05",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0506",
+   "es": "Ticket medio de restaurante casual (PVP)",
+   "donde": [
+    "RESTP · Instrucciones!A49"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0507",
+   "es": "15-22 €",
+   "donde": [
+    "RESTP · Instrucciones!B49"
+   ],
+   "fila": "Ticket medio de restaurante casual (PVP)",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0508",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C49"
+   ],
+   "fila": "Ticket medio de restaurante casual (PVP)",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0509",
+   "es": "El PVP equivalente de este plan lo calcula la hoja 0. Supuestos",
+   "donde": [
+    "RESTP · Instrucciones!D49"
+   ],
+   "fila": "Ticket medio de restaurante casual (PVP)",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0510",
+   "es": "Alquiler de local de 80-120 m² en zona urbana",
+   "donde": [
+    "RESTP · Instrucciones!A50"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0511",
+   "es": "2.000-4.500 €/mes",
+   "donde": [
+    "RESTP · Instrucciones!B50"
+   ],
+   "fila": "Alquiler de local de 80-120 m² en zona urbana",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0512",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C50"
+   ],
+   "fila": "Alquiler de local de 80-120 m² en zona urbana",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0513",
+   "es": "Food cost objetivo",
+   "donde": [
+    "RESTP · Instrucciones!A51"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0514",
+   "es": "28-32 %",
+   "donde": [
+    "RESTP · Instrucciones!B51"
+   ],
+   "fila": "Food cost objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0515",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C51"
+   ],
+   "fila": "Food cost objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0516",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "RESTP · Instrucciones!A52"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0517",
+   "es": "máx. 34 %",
+   "donde": [
+    "RESTP · Instrucciones!B52"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0518",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C52"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0519",
+   "es": "Se aplica el más estricto de los techos que publica este producto",
+   "donde": [
+    "RESTP · Instrucciones!D52"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0520",
+   "es": "Margen neto medio del sector",
+   "donde": [
+    "RESTP · Instrucciones!A53"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0521",
+   "es": "5-10 %",
+   "donde": [
+    "RESTP · Instrucciones!B53"
+   ],
+   "fila": "Margen neto medio del sector",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0522",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C53"
+   ],
+   "fila": "Margen neto medio del sector",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0523",
+   "es": "Punto de equilibrio",
+   "donde": [
+    "RESTP · Instrucciones!A54"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0524",
+   "es": "alcanzable en menos de 12 meses",
+   "donde": [
+    "RESTP · Instrucciones!B54"
+   ],
+   "fila": "Punto de equilibrio",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0525",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C54"
+   ],
+   "fila": "Punto de equilibrio",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0526",
+   "es": "Inversión media de apertura",
+   "donde": [
+    "RESTP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0527",
+   "es": "80.000-150.000 €",
+   "donde": [
+    "RESTP · Instrucciones!B55"
+   ],
+   "fila": "Inversión media de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0528",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C55"
+   ],
+   "fila": "Inversión media de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0529",
+   "es": "Es el rango de referencia del sector. La inversión de ESTE plan la calcula la hoja 1: si queda por encima, es porque incluye el fondo de maniobra, las existencias iniciales y el IVA que hay que adelantar, que ese rango no siempre cuenta",
+   "donde": [
+    "RESTP · Instrucciones!D55"
+   ],
+   "fila": "Inversión media de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0530",
+   "es": "Tasa de cierre de restaurantes en el primer año",
+   "donde": [
+    "RESTP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0531",
+   "es": "25 %",
+   "donde": [
+    "RESTP · Instrucciones!B56"
+   ],
+   "fila": "Tasa de cierre de restaurantes en el primer año",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0532",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C56"
+   ],
+   "fila": "Tasa de cierre de restaurantes en el primer año",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0533",
+   "es": "Es el dato que más pesa en un comité de riesgos: por eso el plan lleva fondo de maniobra, escenario pesimista y tesorería mes a mes",
+   "donde": [
+    "RESTP · Instrucciones!D56"
+   ],
+   "fila": "Tasa de cierre de restaurantes en el primer año",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0534",
+   "es": "Tasa de cierre de restaurantes a los cinco años",
+   "donde": [
+    "RESTP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0535",
+   "es": "50 %",
+   "donde": [
+    "RESTP · Instrucciones!B57"
+   ],
+   "fila": "Tasa de cierre de restaurantes a los cinco años",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0536",
+   "es": "Fichero v1.1",
+   "donde": [
+    "RESTP · Instrucciones!C57"
+   ],
+   "fila": "Tasa de cierre de restaurantes a los cinco años",
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0537",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "RESTP · Instrucciones!A58"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P28",
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0538",
+   "es": "PROVINCIAL de hostelería",
+   "donde": [
+    "RESTP · Instrucciones!B58"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0539",
+   "es": "DOM-24 / checklist F37",
+   "donde": [
+    "RESTP · Instrucciones!C58"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0540",
+   "es": "No existe una tabla salarial estatal única: copia la tabla de tu provincia en la celda de Supuestos",
+   "donde": [
+    "RESTP · Instrucciones!D58"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P28"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Fase",
+   "donde": [
+    "RESTC · Checklist Apertura!A3"
+   ]
+  },
+  {
+   "id": "c0674",
+   "es": "Trámite / Tarea",
+   "donde": [
+    "RESTC · Checklist Apertura!B3"
+   ],
+   "fila": "Fase"
+  },
+  {
+   "id": "c0675",
+   "es": "Responsable",
+   "donde": [
+    "RESTC · Checklist Apertura!C3"
+   ],
+   "fila": "Fase"
+  },
+  {
+   "id": "c0676",
+   "es": "Plazo",
+   "donde": [
+    "RESTC · Checklist Apertura!D3"
+   ],
+   "fila": "Fase"
+  },
+  {
+   "id": "c0677",
+   "es": "FASE 1: CONSTITUCIÓN DE LA EMPRESA (meses 1-2)",
+   "donde": [
+    "RESTC · Checklist Apertura!A4"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "Legal",
+   "donde": [
+    "RESTC · Checklist Apertura!A5",
+    "RESTC · Checklist Apertura!A6",
+    "RESTC · Checklist Apertura!A7",
+    "RESTC · Checklist Apertura!A8",
+    "RESTC · Checklist Apertura!A9",
+    "RESTC · Checklist Apertura!A52",
+    "… y 3 apariciones más"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "Elegir forma jurídica (SL recomendada, capital mín. 1 €)",
+   "donde": [
+    "RESTC · Checklist Apertura!B5"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "Ley 18/2022 (Crea y Crece): capital mínimo 1 €, con la obligación de destinar el 20 % del beneficio a reserva legal hasta que capital y reserva sumen 3.000 €, y responsabilidad solidaria de los socios por esa diferencia",
+   "donde": [
+    "RESTC · Checklist Apertura!F5"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "Solicitar certificación negativa de denominación social",
+   "donde": [
+    "RESTC · Checklist Apertura!B6"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "3-5 días",
+   "donde": [
+    "RESTC · Checklist Apertura!D6"
+   ],
+   "fila": "Legal"
+  },
+  {
+   "id": "c0685",
+   "es": "Registro Mercantil Central",
+   "donde": [
+    "RESTC · Checklist Apertura!F6"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0686",
+   "es": "Abrir cuenta bancaria a nombre de la sociedad",
+   "donde": [
+    "RESTC · Checklist Apertura!B7"
+   ],
+   "fila": "Legal"
+  },
+  {
+   "id": "c0687",
+   "es": "Socios",
+   "donde": [
+    "RESTC · Checklist Apertura!C7",
+    "RESTC · Checklist Apertura!C16",
+    "RESTC · Checklist Apertura!C17",
+    "RESTC · Checklist Apertura!C23",
+    "RESTC · Checklist Apertura!C27",
+    "RESTC · Checklist Apertura!C28",
+    "… y 15 apariciones más"
+   ],
+   "fila": "Legal"
+  },
+  {
+   "id": "c0689",
+   "es": "Depositar capital social",
+   "donde": [
+    "RESTC · Checklist Apertura!F7"
+   ],
+   "fila": "Legal"
+  },
+  {
+   "id": "c0690",
+   "es": "Escritura pública de constitución ante notario",
+   "donde": [
+    "RESTC · Checklist Apertura!B8"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "~300-500 €",
+   "donde": [
+    "RESTC · Checklist Apertura!F8"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Inscripción en el Registro Mercantil",
+   "donde": [
+    "RESTC · Checklist Apertura!B9"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0694",
+   "es": "15 días",
+   "donde": [
+    "RESTC · Checklist Apertura!D9"
+   ],
+   "fila": "Legal",
+   "propuesta_en": "After final inspection",
+   "propuesta_de": "GCAF c1166 (CAFC F2 - Local!D9)"
+  },
+  {
+   "id": "c0695",
+   "es": "~150-200 €",
+   "donde": [
+    "RESTC · Checklist Apertura!F9"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "Fiscal",
+   "donde": [
+    "RESTC · Checklist Apertura!A10",
+    "RESTC · Checklist Apertura!A11",
+    "RESTC · Checklist Apertura!A12",
+    "RESTC · Checklist Apertura!A65"
+   ]
+  },
+  {
+   "id": "c0697",
+   "es": "Solicitar CIF provisional (mod. 036)",
+   "donde": [
+    "RESTC · Checklist Apertura!B10"
+   ],
+   "fila": "Fiscal",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0698",
+   "es": "Agencia Tributaria",
+   "donde": [
+    "RESTC · Checklist Apertura!F10"
+   ],
+   "fila": "Fiscal"
+  },
+  {
+   "id": "c0699",
+   "es": "Alta en el IAE: epígrafe 671.4 (restaurantes de dos tenedores) o 673.1 (servicios de bar especiales), según el peso de la barra",
+   "donde": [
+    "RESTC · Checklist Apertura!B11"
+   ],
+   "fila": "Fiscal",
+   "pistas": [
+    "P04",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Doble exención: los dos primeros períodos impositivos de la actividad (art. 82.1.b del TRLRHL) y, después, mientras la cifra de negocio no llegue al millón de euros. La elección del epígrafe la valida tu gestor: condiciona inspecciones y licencia",
+   "donde": [
+    "RESTC · Checklist Apertura!F11"
+   ],
+   "fila": "Fiscal",
+   "pistas": [
+    "P04",
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Alta censal y elección régimen IVA",
+   "donde": [
+    "RESTC · Checklist Apertura!B12"
+   ],
+   "fila": "Fiscal",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0702",
+   "es": "Régimen general o recargo",
+   "donde": [
+    "RESTC · Checklist Apertura!F12"
+   ],
+   "fila": "Fiscal"
+  },
+  {
+   "id": "c0703",
+   "es": "Laboral",
+   "donde": [
+    "RESTC · Checklist Apertura!A13",
+    "RESTC · Checklist Apertura!A14",
+    "RESTC · Checklist Apertura!A53",
+    "RESTC · Checklist Apertura!A59"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "Inscripción empresa en Seguridad Social",
+   "donde": [
+    "RESTC · Checklist Apertura!B13"
+   ],
+   "fila": "Laboral",
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0705",
+   "es": "3 días",
+   "donde": [
+    "RESTC · Checklist Apertura!D13"
+   ],
+   "fila": "Laboral"
+  },
+  {
+   "id": "c0706",
+   "es": "Código cuenta cotización",
+   "donde": [
+    "RESTC · Checklist Apertura!F13"
+   ],
+   "fila": "Laboral"
+  },
+  {
+   "id": "c0707",
+   "es": "Alta autónomos socios trabajadores (si aplica)",
+   "donde": [
+    "RESTC · Checklist Apertura!B14"
+   ],
+   "fila": "Laboral",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0709",
+   "es": "FASE 2: LOCAL Y LICENCIAS (meses 2-6)",
+   "donde": [
+    "RESTC · Checklist Apertura!A15"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "Local",
+   "donde": [
+    "RESTC · Checklist Apertura!A16",
+    "RESTC · Checklist Apertura!A17"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Búsqueda y negociación del local",
+   "donde": [
+    "RESTC · Checklist Apertura!B16"
+   ],
+   "fila": "Local"
+  },
+  {
+   "id": "c0713",
+   "es": "Verificar uso hostelería permitido",
+   "donde": [
+    "RESTC · Checklist Apertura!F16"
+   ],
+   "fila": "Local"
+  },
+  {
+   "id": "c0714",
+   "es": "Firma contrato arrendamiento",
+   "donde": [
+    "RESTC · Checklist Apertura!B17"
+   ],
+   "fila": "Local"
+  },
+  {
+   "id": "c0715",
+   "es": "Revisar cláusulas: duración, renta, obras",
+   "donde": [
+    "RESTC · Checklist Apertura!F17"
+   ],
+   "fila": "Local"
+  },
+  {
+   "id": "c0716",
+   "es": "Licencia",
+   "donde": [
+    "RESTC · Checklist Apertura!A18",
+    "RESTC · Checklist Apertura!A19",
+    "RESTC · Checklist Apertura!A20",
+    "RESTC · Checklist Apertura!A21",
+    "RESTC · Checklist Apertura!A22",
+    "RESTC · Checklist Apertura!A23"
+   ]
+  },
+  {
+   "id": "c0717",
+   "es": "Declaración responsable o licencia actividad",
+   "donde": [
+    "RESTC · Checklist Apertura!B18"
+   ],
+   "fila": "Licencia",
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0720",
+   "es": "Según municipio",
+   "donde": [
+    "RESTC · Checklist Apertura!F18"
+   ],
+   "fila": "Licencia",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Proyecto técnico de actividad (ingeniero/arquitecto)",
+   "donde": [
+    "RESTC · Checklist Apertura!B19"
+   ],
+   "fila": "Licencia",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "Técnico",
+   "donde": [
+    "RESTC · Checklist Apertura!C19"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0723",
+   "es": "Incluye APPCC, accesibilidad, incendios",
+   "donde": [
+    "RESTC · Checklist Apertura!F19"
+   ],
+   "fila": "Licencia",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "Licencia de obras (si reforma mayor)",
+   "donde": [
+    "RESTC · Checklist Apertura!B20"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0726",
+   "es": "1-2 meses",
+   "donde": [
+    "RESTC · Checklist Apertura!D20"
+   ],
+   "fila": "Licencia",
+   "propuesta_en": "2-8 weeks",
+   "propuesta_de": "GFT c0732 (FTC F2 - Vehículo!D12)"
+  },
+  {
+   "id": "c0727",
+   "es": "Depende de la obra",
+   "donde": [
+    "RESTC · Checklist Apertura!F20"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0729",
+   "es": "Consejería",
+   "donde": [
+    "RESTC · Checklist Apertura!C21"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0730",
+   "es": "El Registro General Sanitario estatal NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca es el autonómico",
+   "donde": [
+    "RESTC · Checklist Apertura!F21"
+   ],
+   "fila": "Licencia",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "Licencia de terraza (si aplica)",
+   "donde": [
+    "RESTC · Checklist Apertura!B22"
+   ],
+   "fila": "Licencia",
+   "propuesta_en": "Sidewalk café permit (if applicable)",
+   "propuesta_de": "GCAF c1168 (CAFC F2 - Local!B10)",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "Tasa anual + m2",
+   "donde": [
+    "RESTC · Checklist Apertura!F22"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0733",
+   "es": "Alta suministros: luz, agua, gas",
+   "donde": [
+    "RESTC · Checklist Apertura!B23"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0735",
+   "es": "Contratos a nombre de la sociedad",
+   "donde": [
+    "RESTC · Checklist Apertura!F23"
+   ],
+   "fila": "Licencia"
+  },
+  {
+   "id": "c0736",
+   "es": "FASE 3: OBRA Y EQUIPAMIENTO (meses 4-7)",
+   "donde": [
+    "RESTC · Checklist Apertura!A24"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Obra",
+   "donde": [
+    "RESTC · Checklist Apertura!A25",
+    "RESTC · Checklist Apertura!A26",
+    "RESTC · Checklist Apertura!A58"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Reforma y acondicionamiento del local",
+   "donde": [
+    "RESTC · Checklist Apertura!B25"
+   ],
+   "fila": "Obra"
+  },
+  {
+   "id": "c0739",
+   "es": "Contratista",
+   "donde": [
+    "RESTC · Checklist Apertura!C25"
+   ],
+   "fila": "Obra"
+  },
+  {
+   "id": "c0740",
+   "es": "4-8 semanas",
+   "donde": [
+    "RESTC · Checklist Apertura!D25"
+   ],
+   "fila": "Obra",
+   "propuesta_en": "4-8 weeks",
+   "propuesta_de": "GFT c0712 (FTC F2 - Vehículo!D6)"
+  },
+  {
+   "id": "c0741",
+   "es": "Según proyecto técnico",
+   "donde": [
+    "RESTC · Checklist Apertura!F25"
+   ],
+   "fila": "Obra",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Instalación cocina: extracción, gas, electricidad",
+   "donde": [
+    "RESTC · Checklist Apertura!B26"
+   ],
+   "fila": "Obra",
+   "pistas": [
+    "P12"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "Certificados instalación",
+   "donde": [
+    "RESTC · Checklist Apertura!F26"
+   ],
+   "fila": "Obra"
+  },
+  {
+   "id": "c0746",
+   "es": "Equipo",
+   "donde": [
+    "RESTC · Checklist Apertura!A27",
+    "RESTC · Checklist Apertura!A28",
+    "RESTC · Checklist Apertura!A29",
+    "RESTC · Checklist Apertura!A30",
+    "RESTC · Checklist Apertura!C47",
+    "RESTC · Checklist Apertura!C48",
+    "… y 1 apariciones más"
+   ],
+   "fila": "Lanzamiento",
+   "propuesta_en": "Team",
+   "propuesta_de": "GFT c0795 (FTC F4 - Personal!C12)"
+  },
+  {
+   "id": "c0747",
+   "es": "Compra e instalación equipamiento cocina",
+   "donde": [
+    "RESTC · Checklist Apertura!B27"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0749",
+   "es": "Ver hoja Inversión Inicial",
+   "donde": [
+    "RESTC · Checklist Apertura!F27"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0750",
+   "es": "Compra mobiliario sala y barra",
+   "donde": [
+    "RESTC · Checklist Apertura!B28"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0751",
+   "es": "Instalación TPV y software hostelería",
+   "donde": [
+    "RESTC · Checklist Apertura!B29"
+   ],
+   "fila": "Equipo",
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "Formación equipo incluida",
+   "donde": [
+    "RESTC · Checklist Apertura!F29"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0755",
+   "es": "Instalación cafetera y grifos cerveza",
+   "donde": [
+    "RESTC · Checklist Apertura!B30"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0756",
+   "es": "1-2 días",
+   "donde": [
+    "RESTC · Checklist Apertura!D30"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0757",
+   "es": "Servicio técnico oficial",
+   "donde": [
+    "RESTC · Checklist Apertura!F30"
+   ],
+   "fila": "Equipo"
+  },
+  {
+   "id": "c0758",
+   "es": "APPCC",
+   "donde": [
+    "RESTC · Checklist Apertura!A31",
+    "RESTC · Checklist Apertura!A32",
+    "RESTC · Checklist Apertura!A55",
+    "RESTC · Checklist Apertura!A57"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Implementar sistema APPCC completo",
+   "donde": [
+    "RESTC · Checklist Apertura!B31"
+   ],
+   "fila": "APPCC",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0760",
+   "es": "Consultor",
+   "donde": [
+    "RESTC · Checklist Apertura!C31"
+   ],
+   "fila": "APPCC"
+  },
+  {
+   "id": "c0761",
+   "es": "Plan autocontrol obligatorio",
+   "donde": [
+    "RESTC · Checklist Apertura!F31"
+   ],
+   "fila": "APPCC"
+  },
+  {
+   "id": "c0762",
+   "es": "Registro de alérgenos en carta",
+   "donde": [
+    "RESTC · Checklist Apertura!B32"
+   ],
+   "fila": "APPCC",
+   "pistas": [
+    "P32"
+   ]
+  },
+  {
+   "id": "c0763",
+   "es": "Cocina",
+   "donde": [
+    "RESTC · Checklist Apertura!C32",
+    "RESTC · Checklist Apertura!C57",
+    "RESTC · Checklist Apertura!C68"
+   ],
+   "fila": "APPCC"
+  },
+  {
+   "id": "c0764",
+   "es": "14 alérgenos obligatorios UE",
+   "donde": [
+    "RESTC · Checklist Apertura!F32"
+   ],
+   "fila": "APPCC",
+   "pistas": [
+    "P32"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "FASE 4: PERSONAL (mes 7)",
+   "donde": [
+    "RESTC · Checklist Apertura!A33"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "RRHH",
+   "donde": [
+    "RESTC · Checklist Apertura!A34",
+    "RESTC · Checklist Apertura!A35",
+    "RESTC · Checklist Apertura!A36",
+    "RESTC · Checklist Apertura!A37",
+    "RESTC · Checklist Apertura!A38",
+    "RESTC · Checklist Apertura!A39",
+    "… y 1 apariciones más"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Publicar ofertas de empleo",
+   "donde": [
+    "RESTC · Checklist Apertura!B34"
+   ],
+   "fila": "RRHH",
+   "propuesta_en": "Post job openings",
+   "propuesta_de": "GCAF c1224 (CAFC F4 - Personal!B6)"
+  },
+  {
+   "id": "c0768",
+   "es": "InfoJobs, Indeed, boca a boca",
+   "donde": [
+    "RESTC · Checklist Apertura!F34"
+   ],
+   "fila": "RRHH",
+   "pistas": [
+    "P33"
+   ]
+  },
+  {
+   "id": "c0769",
+   "es": "Selección y entrevistas",
+   "donde": [
+    "RESTC · Checklist Apertura!B35"
+   ],
+   "fila": "RRHH",
+   "propuesta_en": "Screening and interviews",
+   "propuesta_de": "GCAF c1226 (CAFC F4 - Personal!B7)"
+  },
+  {
+   "id": "c0770",
+   "es": "Prioriza la experiencia en hostelería",
+   "donde": [
+    "RESTC · Checklist Apertura!F35"
+   ],
+   "fila": "RRHH"
+  },
+  {
+   "id": "c0771",
+   "es": "Contratos de trabajo",
+   "donde": [
+    "RESTC · Checklist Apertura!B36"
+   ],
+   "fila": "RRHH",
+   "propuesta_en": "Employment paperwork: offer letters, I-9 and W-4",
+   "propuesta_de": "GCAF c1228 (CAFC F4 - Personal!B8)"
+  },
+  {
+   "id": "c0772",
+   "es": "Convenio hostelería de tu provincia",
+   "donde": [
+    "RESTC · Checklist Apertura!F36"
+   ],
+   "fila": "RRHH",
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0773",
+   "es": "Alta trabajadores en Seguridad Social",
+   "donde": [
+    "RESTC · Checklist Apertura!B37"
+   ],
+   "fila": "RRHH",
+   "propuesta_en": "Report new hires to your state (new-hire reporting)",
+   "propuesta_de": "GCAF c1230 (CAFC F4 - Personal!B9)",
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0774",
+   "es": "Antes inicio",
+   "donde": [
+    "RESTC · Checklist Apertura!D37"
+   ],
+   "fila": "RRHH"
+  },
+  {
+   "id": "c0775",
+   "es": "Formación equipo: carta, servicio, APPCC",
+   "donde": [
+    "RESTC · Checklist Apertura!B38"
+   ],
+   "fila": "RRHH",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "El «carnet de manipulador» está derogado (RD 109/2010): la formación la acredita la EMPRESA y se documenta en el plan APPCC",
+   "donde": [
+    "RESTC · Checklist Apertura!F39"
+   ],
+   "fila": "RRHH",
+   "propuesta_en": "Food handler card rules vary by state and county, and the person in charge usually needs a Certified Food Protection Manager certificate (for example ServSafe). Keep copies on file and document the training in your HACCP-based food safety plan",
+   "propuesta_de": "GCAF c1233 (CAFC F4 - Personal!E10)",
+   "pistas": [
+    "P04",
+    "P02",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Plan de prevención de riesgos laborales (asumido por el titular o con servicio ajeno)",
+   "donde": [
+    "RESTC · Checklist Apertura!B40"
+   ],
+   "fila": "RRHH"
+  },
+  {
+   "id": "c0782",
+   "es": "Obligatorio es el PLAN de prevención, no contratar un servicio ajeno: con menos de 25 trabajadores y un solo centro el empresario puede asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)",
+   "donde": [
+    "RESTC · Checklist Apertura!F40"
+   ],
+   "fila": "RRHH",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0783",
+   "es": "FASE 5: MARKETING Y LANZAMIENTO (meses 7-8)",
+   "donde": [
+    "RESTC · Checklist Apertura!A41"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "Marca",
+   "donde": [
+    "RESTC · Checklist Apertura!A42"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Diseño logo, identidad visual, carta",
+   "donde": [
+    "RESTC · Checklist Apertura!B42"
+   ],
+   "fila": "Marca",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "Digital",
+   "donde": [
+    "RESTC · Checklist Apertura!A43",
+    "RESTC · Checklist Apertura!A44",
+    "RESTC · Checklist Apertura!A45",
+    "RESTC · Checklist Apertura!A46"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "Crear web básica + dominio",
+   "donde": [
+    "RESTC · Checklist Apertura!B43"
+   ],
+   "fila": "Digital"
+  },
+  {
+   "id": "c0789",
+   "es": "Agencia/DIY",
+   "donde": [
+    "RESTC · Checklist Apertura!C43"
+   ],
+   "fila": "Digital"
+  },
+  {
+   "id": "c0790",
+   "es": "Alta Google My Business + fotos profesionales",
+   "donde": [
+    "RESTC · Checklist Apertura!B44"
+   ],
+   "fila": "Digital",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "Crítico para SEO local",
+   "donde": [
+    "RESTC · Checklist Apertura!F44"
+   ],
+   "fila": "Digital"
+  },
+  {
+   "id": "c0792",
+   "es": "Perfiles RRSS: Instagram, TikTok, Facebook",
+   "donde": [
+    "RESTC · Checklist Apertura!B45"
+   ],
+   "fila": "Digital",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Configurar reservas online (TheFork, Google)",
+   "donde": [
+    "RESTC · Checklist Apertura!B46"
+   ],
+   "fila": "Digital",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "Lanzamiento",
+   "donde": [
+    "RESTC · Checklist Apertura!A47",
+    "RESTC · Checklist Apertura!A48",
+    "RESTC · Checklist Apertura!A49"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Soft opening con familia/amigos (1 semana)",
+   "donde": [
+    "RESTC · Checklist Apertura!B47"
+   ],
+   "fila": "Lanzamiento"
+  },
+  {
+   "id": "c0796",
+   "es": "Detectar fallos antes de abrir",
+   "donde": [
+    "RESTC · Checklist Apertura!F47"
+   ],
+   "fila": "Lanzamiento",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Inauguración oficial + evento",
+   "donde": [
+    "RESTC · Checklist Apertura!B48"
+   ],
+   "fila": "Lanzamiento"
+  },
+  {
+   "id": "c0798",
+   "es": "Invitar prensa local, influencers",
+   "donde": [
+    "RESTC · Checklist Apertura!F48"
+   ],
+   "fila": "Lanzamiento"
+  },
+  {
+   "id": "c0799",
+   "es": "Activar campaña RRSS + Google Ads local",
+   "donde": [
+    "RESTC · Checklist Apertura!B49"
+   ],
+   "fila": "Lanzamiento",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "Primeras 4 semanas críticas",
+   "donde": [
+    "RESTC · Checklist Apertura!F49"
+   ],
+   "fila": "Lanzamiento"
+  },
+  {
+   "id": "c0801",
+   "es": "FASE 6: OBLIGACIONES QUE HAY QUE TENER CERRADAS ANTES DE ABRIR (meses 6-8)",
+   "donde": [
+    "RESTC · Checklist Apertura!A50"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Seguros",
+   "donde": [
+    "RESTC · Checklist Apertura!A51"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Contratar el seguro de responsabilidad civil y el multirriesgo del local",
+   "donde": [
+    "RESTC · Checklist Apertura!B51"
+   ],
+   "fila": "Seguros"
+  },
+  {
+   "id": "c0804",
+   "es": "Está presupuestado en la hoja de Inversión y hasta ahora no había ninguna tarea que lo ejecutara",
+   "donde": [
+    "RESTC · Checklist Apertura!F51"
+   ],
+   "fila": "Seguros"
+  },
+  {
+   "id": "c0809",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años",
+   "donde": [
+    "RESTC · Checklist Apertura!F53"
+   ],
+   "fila": "Laboral",
+   "propuesta_en": "Required by the FLSA (DOL); keep payroll and time records for the period that federal and state rules require",
+   "propuesta_de": "GCAF c1243 (CAFC F4 - Personal!E15)",
+   "pistas": [
+    "P04",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "Contrato con gestor autorizado de residuos y de aceite vegetal usado",
+   "donde": [
+    "RESTC · Checklist Apertura!B54"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Se comprueba en la inspección; el aceite usado no puede ir al desagüe",
+   "donde": [
+    "RESTC · Checklist Apertura!F54"
+   ],
+   "fila": "Legal"
+  },
+  {
+   "id": "c0813",
+   "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC",
+   "donde": [
+    "RESTC · Checklist Apertura!F55"
+   ],
+   "fila": "APPCC",
+   "propuesta_en": "Part of your HACCP-based food safety plan; keep the service reports for inspections",
+   "propuesta_de": "GCAF c1180 (CAFC F2 - Local!E16)",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "Licencia de derechos de autor por la música ambiental",
+   "donde": [
+    "RESTC · Checklist Apertura!B56"
+   ],
+   "fila": "Legal",
+   "propuesta_en": "ASCAP / BMI / SESAC licenses for background music",
+   "propuesta_de": "GCAF c1268 (CAFC F5 - Marketing!B17)",
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "SGAE y AGEDI-AIE son dos licencias distintas y se pagan las dos",
+   "donde": [
+    "RESTC · Checklist Apertura!F56"
+   ],
+   "fila": "Legal",
+   "propuesta_en": "ASCAP, BMI and SESAC are separate licenses: check which ones cover the music you play",
+   "propuesta_de": "GCAF c1269 (CAFC F5 - Marketing!E17)",
+   "pistas": [
+    "P04",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0816",
+   "es": "Plan de prevención de las pérdidas y el desperdicio alimentario",
+   "donde": [
+    "RESTC · Checklist Apertura!B57"
+   ],
+   "fila": "APPCC",
+   "pistas": [
+    "P34"
+   ]
+  },
+  {
+   "id": "c0817",
+   "es": "Ley 1/2025: obliga a tener un plan escrito y a ofrecer la comida sobrante para donación",
+   "donde": [
+    "RESTC · Checklist Apertura!F57"
+   ],
+   "fila": "APPCC",
+   "pistas": [
+    "P04",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0818",
+   "es": "Boletines de la instalación eléctrica y de la instalación de gas",
+   "donde": [
+    "RESTC · Checklist Apertura!B58"
+   ],
+   "fila": "Obra",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0820",
+   "es": "Sin ellos no hay alta de suministros ni licencia de actividad",
+   "donde": [
+    "RESTC · Checklist Apertura!F58"
+   ],
+   "fila": "Obra",
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Comunicación de apertura del centro de trabajo a la autoridad laboral",
+   "donde": [
+    "RESTC · Checklist Apertura!B59"
+   ],
+   "fila": "Laboral",
+   "pistas": [
+    "P35"
+   ]
+  },
+  {
+   "id": "c0822",
+   "es": "Primeros 30 días",
+   "donde": [
+    "RESTC · Checklist Apertura!D59"
+   ],
+   "fila": "Laboral"
+  },
+  {
+   "id": "c0823",
+   "es": "Se presenta en los treinta días siguientes al inicio de la actividad",
+   "donde": [
+    "RESTC · Checklist Apertura!F59"
+   ],
+   "fila": "Laboral"
+  },
+  {
+   "id": "c0824",
+   "es": "Cartel de prohibición de venta de alcohol y tabaco a menores",
+   "donde": [
+    "RESTC · Checklist Apertura!B60"
+   ],
+   "fila": "Legal"
+  },
+  {
+   "id": "c0825",
+   "es": "La redacción exacta y el tamaño los fija tu Comunidad Autónoma",
+   "donde": [
+    "RESTC · Checklist Apertura!F60"
+   ],
+   "fila": "Legal",
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "RGPD",
+   "donde": [
+    "RESTC · Checklist Apertura!A61",
+    "RESTC · Checklist Apertura!A62",
+    "RESTC · Checklist Apertura!A63",
+    "RESTC · Checklist Apertura!A64"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0828",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes, personal y proveedores",
+   "donde": [
+    "RESTC · Checklist Apertura!F61"
+   ],
+   "fila": "RGPD",
+   "propuesta_en": "If you text customers you need their TCPA consent first. Keep a short record of what data you collect, why and where it is stored; banks and payment processors may ask for it",
+   "propuesta_de": "GCAF c1151 (CAFC F1 - Constitución!E14)",
+   "pistas": [
+    "P04",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "Cláusula informativa y consentimiento en el sistema de reservas y en la lista de correo",
+   "donde": [
+    "RESTC · Checklist Apertura!B64"
+   ],
+   "fila": "RGPD",
+   "propuesta_en": "Privacy notice and consent on your reservation system and email list",
+   "propuesta_de": "GCAF c1270 (CAFC F5 - Marketing!B18)"
+  },
+  {
+   "id": "c0834",
+   "es": "Reservas online, WhatsApp y newsletter tratan datos: cada canal necesita su información previa",
+   "donde": [
+    "RESTC · Checklist Apertura!F64"
+   ],
+   "fila": "RGPD"
+  },
+  {
+   "id": "c0836",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV que presupuesta la hoja de Inversión: cambiarlo después cuesta el doble",
+   "donde": [
+    "RESTC · Checklist Apertura!F65"
+   ],
+   "fila": "Fiscal",
+   "pistas": [
+    "P04",
+    "P10",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "FASE 7: PRIMEROS 90 DÍAS (meses 8-11)",
+   "donde": [
+    "RESTC · Checklist Apertura!A66"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Operación",
+   "donde": [
+    "RESTC · Checklist Apertura!A67",
+    "RESTC · Checklist Apertura!A68",
+    "RESTC · Checklist Apertura!A69",
+    "RESTC · Checklist Apertura!A70"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Revisión diaria de ventas y food cost",
+   "donde": [
+    "RESTC · Checklist Apertura!B67"
+   ],
+   "fila": "Operación"
+  },
+  {
+   "id": "c0840",
+   "es": "Gerente",
+   "donde": [
+    "RESTC · Checklist Apertura!C67",
+    "RESTC · Checklist Apertura!C69",
+    "RESTC · Checklist Apertura!C70",
+    "RESTC · Checklist Apertura!C72"
+   ],
+   "fila": "Operación"
+  },
+  {
+   "id": "c0842",
+   "es": "Ajustar carta según demanda real",
+   "donde": [
+    "RESTC · Checklist Apertura!B68"
+   ],
+   "fila": "Operación"
+  },
+  {
+   "id": "c0843",
+   "es": "Mensual",
+   "donde": [
+    "RESTC · Checklist Apertura!D68",
+    "RESTC · Checklist Apertura!D70",
+    "RESTC · Checklist Apertura!D71",
+    "RESTC · Checklist Apertura!D72",
+    "RESTC · Checklist Apertura!D73"
+   ],
+   "fila": "Operación"
+  },
+  {
+   "id": "c0844",
+   "es": "Implementar encuesta satisfacción cliente",
+   "donde": [
+    "RESTC · Checklist Apertura!B69"
+   ],
+   "fila": "Operación",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Evaluar desempeño equipo",
+   "donde": [
+    "RESTC · Checklist Apertura!B70"
+   ],
+   "fila": "Operación"
+  },
+  {
+   "id": "c0847",
+   "es": "Financiero",
+   "donde": [
+    "RESTC · Checklist Apertura!A71",
+    "RESTC · Checklist Apertura!A72"
+   ]
+  },
+  {
+   "id": "c0848",
+   "es": "Revisar P&L vs previsiones",
+   "donde": [
+    "RESTC · Checklist Apertura!B71"
+   ],
+   "fila": "Financiero"
+  },
+  {
+   "id": "c0849",
+   "es": "Ajustar precios si food cost se desvía",
+   "donde": [
+    "RESTC · Checklist Apertura!B72"
+   ],
+   "fila": "Financiero"
+  },
+  {
+   "id": "c0850",
+   "es": "Evaluar ROI campaña marketing",
+   "donde": [
+    "RESTC · Checklist Apertura!B73"
+   ],
+   "fila": "Marketing"
+  },
+  {
+   "id": "c0851",
+   "es": "Pedir reseñas Google a clientes satisfechos",
+   "donde": [
+    "RESTC · Checklist Apertura!B74"
+   ],
+   "fila": "Marketing",
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "Continuo",
+   "donde": [
+    "RESTC · Checklist Apertura!D74"
+   ],
+   "fila": "Marketing"
+  },
+  {
+   "id": "c0854",
+   "es": "Ítems completados:",
+   "donde": [
+    "RESTC · Checklist Apertura!B77"
+   ]
+  },
+  {
+   "id": "c0856",
+   "es": "Usa el desplegable: ✓, —, N/A. N/A = no aplica, sale del total.",
+   "donde": [
+    "RESTC · Checklist Apertura!E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E16 E17 E18 E19 E20 E21 E22 E23 E25 E26 E27 E28 E29 E30 E31 E32 E34 E35 E36 E37 E38 E39 E40 E42 E43 E44 E45 E46 E47 E48 E49 E51 E52 E53 E54 E55 E56 E57 E58 E59 E60 E61 E62 E63 E64 E65 E67 E68 E69 E70 E71 E72 E73 E74 (dv-error)"
+   ],
+   "max_len": 255
+  },
+  {
+   "id": "c0861",
+   "es": "El contador del pie cuenta sólo las ✓ de toda la lista; las N/A salen del total.",
+   "donde": [
+    "RESTC · Instrucciones!A6"
+   ]
+  }
+ ]
+}
