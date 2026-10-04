@@ -492,10 +492,53 @@ def capa_textos_nuevos(L):
         if not (isinstance(ver, str) and ver.startswith('Version ')):
             raise Aborta('%s: la línea de versión no está en %s (%r)' % (c, estilo, ver))
         cel._style = copy.copy(ws[estilo]._style)
+        al = copy.copy(cel.alignment)                # el aviso se ajusta dentro de su celda: no desborda al imprimir
+        al.wrap_text = True
+        cel.alignment = al
         cel.value = texto
+        alto = round(lineas_estimadas(texto, ws, cel) * pt_de(cel) * 1.36 * 4) / 4.0
+        ws.row_dimensions[cel.row].height = max(alto, ws.row_dimensions[cel.row].height or 0)
         L.escritas.add((h, coord))
         n += 1
     L.rep['textos_nuevos'] = n
+
+
+def pt_de(cel):
+    return cel.font.sz if cel.font is not None and cel.font.sz else 11
+
+
+def lineas_estimadas(texto, ws, cel):
+    """Líneas que ocupa un texto ajustado en su columna (estimación: un carácter por unidad de ancho a 11 pt, con un
+    15 % de holgura porque el texto real es más estrecho que el «0» de referencia)."""
+    ancho = ws.column_dimensions[cel.column_letter].width or 8.43
+    cpl = max(1, int(ancho * 11.0 / pt_de(cel) * 1.15))
+    return sum(max(1, -(-len(seg) // cpl)) for seg in texto.split('\n'))
+
+
+def capa_altos(L, wes):
+    """Filas de texto ajustado cuyo EN ocupa más líneas que el ES y que su alto: se suben (nunca se bajan). Las
+    celdas combinadas no se miden. Sin esto, una nota EN más larga que la ES se corta en pantalla e impresa."""
+    n = 0
+    for ws in L.wb.worksheets:
+        a = wes[L.inv[ws.title]]
+        comb = {c for m in ws.merged_cells.ranges for fila in ws[m.coord] for c in (x.coordinate for x in fila)}
+        filas = {}
+        for c in ws._cells.values():
+            if not isinstance(c.value, str) or c.data_type == 'f' or not (c.alignment and c.alignment.wrap_text):
+                continue
+            if c.coordinate in comb:
+                continue
+            ve = a[c.coordinate].value
+            ne = lineas_estimadas(c.value, ws, c)
+            ns = lineas_estimadas(ve, ws, c) if isinstance(ve, str) else 0
+            f = filas.setdefault(c.row, [0, 0, 11])
+            f[0], f[1], f[2] = max(f[0], ne), max(f[1], ns), max(f[2], pt_de(c))
+        for r, (ne, ns, pt) in sorted(filas.items()):
+            h = ws.row_dimensions[r].height or 15
+            if ne > max(ns, int(h / (pt * 1.25))):
+                ws.row_dimensions[r].height = max(h, round(ne * pt * 1.36 * 4) / 4.0)
+                n += 1
+    L.rep['altos_subidos'] = n
 
 
 def formatos_y_papel(L):
@@ -573,6 +616,7 @@ def construir_libro(corto, carpeta, datos, mes, prestamos):
         capa_valores(L, prestamos)                                              # 6
     formatos_y_papel(L)                                                         # 7
     capa_textos_nuevos(L)                                                       # 8
+    capa_altos(L, openpyxl.load_workbook(src))                                  # alto de las filas que el EN alarga
     metadatos(L)                                                                # 10
     normalizar_comillas(L)
     sin_capa = [x for x in regenerar if x not in L.escritas]

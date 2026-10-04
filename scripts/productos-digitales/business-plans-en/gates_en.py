@@ -405,8 +405,11 @@ def gateG3(R, carpetas, datos, mes):
                 continue
             if ins[x].value != texto:
                 R.f(G, '%s: aviso D21 en Instructions!%s = %r' % (corto, x, ins[x].value))
-            if tuple(ins[x]._style) != tuple(ins[estilo]._style):
-                R.f(G, '%s: el aviso D21 no lleva el estilo de la línea de versión' % corto)
+            sa, sb = list(ins[x]._style), list(ins[estilo]._style)
+            if sa[:5] + sa[6:] != sb[:5] + sb[6:] or not ins[x].alignment.wrap_text:
+                R.f(G, '%s: el aviso D21 no lleva el estilo de la línea de versión (con ajuste de texto)' % corto)
+            if (ins.row_dimensions[ins[x].row].height or 0) < 2 * 11:
+                R.f(G, '%s: la fila del aviso D21 no tiene alto para su texto ajustado' % corto)
         marca = mapas.FIJOS['Más plantillas y kits del catálogo en aichef.pro/productos-digitales']
         if not any(c.value == marca for c in ins['A']):
             R.f(G, '%s: falta la línea de marca %r' % (corto, marca))

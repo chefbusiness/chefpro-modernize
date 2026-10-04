@@ -189,3 +189,63 @@ red de seguridad que mira el prestamista). Además, fuera de D15: **`0. Supuesto
 `VALORES_EN`, no en la calibración): el ES trae 0, que viola la DV 1-365 de su propia celda (§6), y en EE. UU. el abono
 de las ventas con tarjeta llega el día hábil siguiente. Efecto en caja: 1/30 de las ventas del mes se cobra al mes
 siguiente.
+
+### 7.2 Caso base final (caché de los xlsx EN = `cifras_caso.json`)
+
+| | Food truck | Coffee shop |
+|---|---|---|
+| Caja total necesaria (inversión + fondo de maniobra) | $146,399 (CAPEX $114,120 + $32,279) | $263,687 (CAPEX $193,800 + $69,887) |
+| Fondos propios + préstamo (10 %, sin interest-only) | $35,000 (24 %) + $112,000 a 7 años | $60,000 (23 %) + $204,000 a 10 años |
+| Clientes/día × ticket × días · ventas año 1 | 80 × $14.00 × 260 · $291,200 | 140 × $11.00 × 340 · $523,600 |
+| Margen bruto · personal · ocupación | 58.8 % · 26.2 % · 4.9 % | 65.6 % · 32.3 % · 10.3 % |
+| EBITDA año 1 · neto años 1/2/3 | $53,427 (18.3 %) · $20,771 (7.1 %) / $36,433 / $47,685 | $84,544 (16.1 %) · $33,064 (6.3 %) / $47,568 / $57,915 |
+| DSCR mínimo del cuadro · saldo mínimo de caja | 2.02× · $24,672 (mes 4) | 2.21× · $63,228 |
+| Equilibrio contable / de caja · holgura | 68 / 66 clientes/día · 22 % | 123 / 120 clientes/día · 18 % |
+| Cobertura de horas · sueldos bajo el suelo | 103 % · ninguno | 98.4 % · ninguno |
+| Payback del proyecto / sobre CAPEX | 2.5 / 2.1 años | más de 3 años / 2.4 años |
+
+Todos los semáforos del P&L en verde los tres años (ninguno queda ámbar: no hace falta nota de excepción).
+
+### 7.3 Textos D19 revisados contra el caso calibrado
+
+- **CAF `Instrucciones` fila 67** (c1108-c1111, `textos_en/GCAF.json`): «Target EBITDA (year 2) · 8-15 % · Kit estimate»
+  contradecía al caso (EBITDA año 1 16.1 %, año 2 ≈ 19 %) y a su propio comentario del umbral (`PyG!F55`: «healthy coffee
+  shops net about 8-12 % (industry benchmarks table)», fila que no existía): un EBITDA del 8-15 % es incompatible con un
+  neto sano del 8-12 %. Pasa a **«Net margin (healthy coffee shop) · 8-12% (under 6%: structural problem) · Bellwether
+  Coffee (bellwethercoffee.com)»** con nota que remite a Net income / Sales. Es la fuente de research §4 y la simétrica
+  de la fila 62 del FT (Net margin 6-9 %, Beancount). El bono 2 de la landing CAF ya vendía «net margin» en esa tabla.
+- **FT fila 63** «Payback period · 1-3 years»: se queda (el caso da 2.5 años).
+- **CAF fila 68** «Payback period · 24-36 months»: se queda; su nota ya explica que es la referencia medida sobre lo que
+  pone el dueño y que el libro publica el payback del PROYECTO (más de 3 años, con fondo de maniobra; 2.4 sobre CAPEX).
+- FT fila 60 «Customers per service · 40-80» casa con 80/día de media en 1-2 servicios.
+
+### 7.4 Piezas y comandos
+
+`aplicar_en.py` (punto fijo del préstamo: 80/140K → 111/203K → 112/204K, 3 vueltas; `--idempotencia` 0 diferencias;
+inject_cache 722/12/742/12 fórmulas, 0 fallos de pycel; D15 y cifras_caso.json) · `gates_en.py` G1-G9 (+ `--autotest`
+20/20) · `ensamblar_docx.py --plan ft|caf` (G8 verde en los dos; CAF con el movimiento I7). En el VPS:
+
+```bash
+cd /root/wt-bp/scripts/productos-digitales/business-plans-en && PY=/root/venv-guias/bin/python
+$PY aplicar_en.py --idempotencia --json /tmp/bp-real.json    # 4 xlsx en dl/<slug>/ + cifras_caso.json
+$PY ensamblar_docx.py --plan ft && $PY ensamblar_docx.py --plan caf
+$PY gates_en.py && $PY gates_en.py --autotest                 # TODO VERDE · 20/20
+```
+
+Fórmulas finales: FT 722 (plan) + 12 (checklist), CAF 742 + 12 → «more than 700 linked formulas» de las dos landings
+sigue siendo cierto. Changelog 2.2: fuera «US date format» (ningún libro tiene fechas); lo demás se comprobó contra los
+ficheros (LLC/EIN/seller's permit/plan review/commissary/vending/DMV/fire marshal en el FT; zoning/lease/building
+permits/certificate of occupancy en la CAF; galones en el FT, square feet en el docx CAF). Landing FT, bono 2: la tabla
+de referencias no tiene fila de commissary (lo mide el semáforo OK / REVIEW) y ahora lo dice así.
+
+### 7.5 Riesgos
+
+- CAF: payback del proyecto «more than 3 years» frente a la referencia 24-36 meses (explicado en la nota de la fila 68).
+- Márgenes justos pero en verde: FT margen bruto 58.8 % frente a 58 %; CAF cobertura de horas 98.4 % frente a 98 %
+  (13 h × 2 personas se conservan del ES).
+- Alto de filas: el EN alarga algunas notas ajustadas (21 filas: cabeceras de `Staffing`, notas de `Instructions`, columna
+  E de los checklists). `capa_altos` sube el alto SOLO donde el EN ocupa más líneas que el ES y que su alto (nunca lo
+  baja); el aviso D21 (E1) copia el estilo de la línea de versión más el ajuste de texto y su alto. Es una estimación
+  conservadora (un carácter por unidad de ancho): la verificación humana en Excel y a 360 px sigue siendo la última
+  palabra.
+- Testimonios D26 con cifras de la v1.1 del ES: siguen como decidió el orquestador (fuera de esta tanda).
