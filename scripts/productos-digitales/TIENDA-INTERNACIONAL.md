@@ -281,3 +281,12 @@ la F1 de cada producto frente a Etsy/Gumroad.
   esos fallos están también en el ES (anotados en `financial-kit/F2-NOTAS.md` §6). **Producción EN parada el 3-oct por
   decisión de John**: 4 productos listos a falta de sus Payment Links (#106-#109).
 
+- **2026-10-04 (sesión Claude Code) — los 4 LIVE** (merge commit `1411b467` del #109, que cerró #106-#108 solos). Payment Links
+  de John comprobados con la CLI de Stripe (USD, pago único, redirección a `/access?session_id=`, impuesto automático), env vars
+  en Netlify (scope builds) y `sync-payment-links.py` (57 productos). Gates LIVE en verde: `gate-flujo-postpago --only` ×4
+  (0 fallos, 0 avisos), `tienda-gate --base https://aichef.pro`, `robots-gate --live`, `miselup-gate` (un «HTTP 0» transitorio
+  en `/kit-escandallos-library` que dio 200 al repetir), `datafast-gate` 23/23; las 6 tarjetas EN enlazadas en el hub (45 «Coming
+  soon»). Correos EN programados: eBook 10-oct (`b2c99916`), HACCP 15-oct (`9b7f8f57`), Staff 20-oct (`7b520469`), Financial
+  25-oct (`3d49a8d7`), 14:00Z. Siguientes (decisión con DataForSEO US, aprobada por John): **Food Truck Business Plan**
+  («food truck business plan» 12.100/mes) y **Coffee Shop Business Plan** (3.600/mes), duplicados de `plan-negocio-food-truck`
+  y `plan-negocio-cafeteria`; los checklists de la ola 2 rondan 50-1.000/mes y quedan detrás.

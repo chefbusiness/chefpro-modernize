@@ -150,3 +150,9 @@ Sesión Claude Code · `Via: Claude Code`.
 Producción EN parada por John con 4 productos listos a falta de los Payment Links. Coste aproximado: ≈ 2,5 M de tokens de
 subagentes por kit (F1 0,3-0,45 · textos 0,4-0,7 · F2 0,4-0,5 · F3 0,4 · revisión 0,3-0,35 · arreglos 0,3-0,4) y ≈ 2,4 M el eBook.
 En el Mac quedó congelado `photoanalysisd` (`pkill -STOP`); el reinicio lo restablece.
+
+## ✅ Cerrado el 4-oct (sesión Claude Code)
+
+Los 4 productos están LIVE (merge `1411b467`). Gates LIVE en verde y correos EN programados (10/15/20/25-oct, 14:00Z): detalle en
+`TIENDA-INTERNACIONAL.md` §7. Queda la verificación humana recomendada (abrir 2-3 xlsx por kit en Excel y repasar las landings a
+360 px en el Chrome de Windows). Siguientes productos EN: Food Truck Business Plan y Coffee Shop Business Plan.
