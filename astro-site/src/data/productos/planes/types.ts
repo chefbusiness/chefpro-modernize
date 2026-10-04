@@ -64,6 +64,14 @@
 //     — usar el símbolo EXACTO de cada producto.
 //   · schema.faqs (JSON-LD FAQPage) suele ser un SUBCONJUNTO más corto que faqs on-page
 //     (bar: 5 en el schema vs 6 en el acordeón). Copiar cada bloque según su origen en la SPA.
+//
+// IDIOMA (2026-10-04, tienda internacional EN; mismo patrón que la línea Kits): este mismo tipo
+// sirve para las fichas de otras tiendas (astro-site/src/data/productos-<lang>/planes/<slug>.ts) y
+// la plantilla recibe `lang`. Los precios de display (`pricing.*`, `hero.ctaLabel`, `stickyLabel`…)
+// llevan su símbolo tal cual ("$49"); la moneda del JSON-LD la pone la plantilla desde
+// TIENDAS[lang].moneda (src/lib/tienda.ts). Las «constantes de línea» de arriba son el ES: en otro
+// idioma salen del diccionario de la tienda (astro-site/src/i18n/tienda/<lang>.json) y de UI_PLAN
+// en la plantilla, no de aquí.
 // ---------------------------------------------------------------------------
 
 /** Nombre de icono lucide. Debe existir en Icon.astro; si falta, añadirlo
@@ -200,6 +208,12 @@ export interface PlanNegocioData {
     ctaLabel: string; // "DESCARGAR PLAN DE NEGOCIO — €35"
   };
 
+  /** Opcional (2026-10-04). Sustituye el subtítulo constante del CompatibleAppsMarquee («Plantillas
+   *  Excel optimizadas para imprimir en A4. Compatible con Excel, Google Sheets, LibreOffice y
+   *  Numbers» / su versión EN) cuando el producto no cumple esa frase (formato de papel, Google
+   *  Sheets sin test real…). Las 10 fichas ES no lo usan. */
+  compatSubtitle?: string;
+
   // ---- Content grid (H2 constante 'Qué Incluye el Plan de Negocio'; solo varía subtítulo + tarjetas) ----
   grid: {
     subtitle: string;
@@ -250,8 +264,11 @@ export interface PlanNegocioData {
     ctaLabel: string;
   };
 
-  // ---- Testimonials (marquee). El título 'Lo Que Dicen los Profesionales' es constante. ----
-  testimonials: {
+  // ---- Testimonials (marquee). El título 'Lo Que Dicen los Profesionales' sale del diccionario
+  //      de la tienda. OPCIONAL desde 2026-10-04 (tienda internacional, capa comercial honesta):
+  //      sin testimonios reales en ese idioma se omite y la plantilla no pinta ni el marquee ni los
+  //      avatares con 5 estrellas del hero. Las 10 fichas ES lo traen. ----
+  testimonials?: {
     subtitle: string;
     items: PlanNegocioTestimonial[];
   };

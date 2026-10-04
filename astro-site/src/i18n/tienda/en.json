@@ -1,5 +1,5 @@
 {
-  "_nota": "Interface dictionary for the STORE templates (today: KitExcelLandingPage). US English. No '€' anywhere: the EN store sells in USD and tienda-gate.py fails on any euro sign. Same keys as es.json.",
+  "_nota": "Interface dictionary for the STORE templates (today: KitExcelLandingPage and PlanNegocioLandingPage). US English. No '€' anywhere: the EN store sells in USD and tienda-gate.py fails on any euro sign. Same keys as es.json.",
   "homeHref": "/en",
   "saasBannerPre": "These digital products pair with ",
   "saasBannerPost": " — the AI platform for hospitality with 55+ tools",

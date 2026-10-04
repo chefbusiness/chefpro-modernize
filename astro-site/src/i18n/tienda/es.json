@@ -1,5 +1,5 @@
 {
-  "_nota": "Diccionario de interfaz de las plantillas de la TIENDA (hoy: KitExcelLandingPage). Textos copiados VERBATIM de la plantilla ES: el HTML de las landings ES tiene que salir byte a byte identico, asi que NO se corrigen aqui tildes ni estilo (algunos textos de la linea van sin tildes a proposito). Los 'Default' solo se usan si el data file del producto no trae su propia variante.",
+  "_nota": "Diccionario de interfaz de las plantillas de la TIENDA (hoy: KitExcelLandingPage y PlanNegocioLandingPage). Textos copiados VERBATIM de la plantilla ES: el HTML de las landings ES tiene que salir byte a byte identico, asi que NO se corrigen aqui tildes ni estilo (algunos textos de la linea van sin tildes a proposito). Los 'Default' solo se usan si el data file del producto no trae su propia variante.",
   "homeHref": "/",
   "saasBannerPre": "Estos productos digitales complementan ",
   "saasBannerPost": " — el SaaS de IA para hostelería con +55 aplicaciones",

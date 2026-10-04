@@ -30,9 +30,10 @@ MODOS
     marcado con el atributo data-lang-es, p. ej. «¿Hablas español?»); sin caracteres no
     latinos (CJK, cirílico, hangul, árabe, hebreo, tailandés). Gate y dashboard: noindex.
 
-  --es-identico --base <preview> — las 5 landings ES de la plantilla KitExcel
-    (/kit-escandallos, /pack-appcc, /kit-inventario, /kit-gestion-personal,
-    /kit-plan-financiero) del preview contra https://aichef.pro, normalizando los hashes
+  --es-identico --base <preview> — las 15 landings ES de las plantillas con `lang`: las 5 de
+    KitExcel (/kit-escandallos, /pack-appcc, /kit-inventario, /kit-gestion-personal,
+    /kit-plan-financiero) y las 10 de PlanNegocio (/plan-negocio-*, /plan-chef-privado-*,
+    /plan-catering-*; desde el 4-oct-2026) del preview contra https://aichef.pro, normalizando los hashes
     de /_astro/*.js|css, el id de scope de Astro (data-astro-cid-*) y el host del preview.
     Sale 1 ante cualquier diferencia y enseña el contexto de la primera.
     --esperadas <ruta>[,<ruta>] (p. ej. /kit-escandallos en un PR que cambia ese producto):
@@ -69,6 +70,13 @@ ZONA_APP = ASTRO / 'src/lib/zona-app.ts'
 ROBOTS_GATE = REPO / 'scripts/astro-migration/robots-gate.py'
 PROD = 'https://aichef.pro'
 KITEXCEL_ES = ['/kit-escandallos', '/pack-appcc', '/kit-inventario', '/kit-gestion-personal', '/kit-plan-financiero']
+# PlanNegocioLandingPage recibe `lang` desde el 4-oct-2026 (planes de negocio EN): sus 10 landings ES
+# tienen que seguir byte a byte iguales, igual que las de KitExcel.
+PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-negocio-cafeteria',
+             '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
+             '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
+             '/plan-chef-privado-showcooking-eventos', '/plan-catering-tematico-eventos']
+LANDINGS_ES = KITEXCEL_ES + PLANES_ES
 
 errores: list[str] = []
 
@@ -472,9 +480,9 @@ def fragmentos_texto(html: str) -> list[str]:
 
 def es_identico(base: str, esperadas: frozenset[str] = frozenset()) -> None:
     iguales = cambiadas = 0
-    for ruta in sorted(esperadas - set(KITEXCEL_ES)):
-        mal(f'--esperadas {ruta}: no es una de las landings KitExcel ES ({", ".join(KITEXCEL_ES)})')
-    for ruta in KITEXCEL_ES:
+    for ruta in sorted(esperadas - set(LANDINGS_ES)):
+        mal(f'--esperadas {ruta}: no es una de las landings ES con plantilla multi-idioma ({", ".join(LANDINGS_ES)})')
+    for ruta in LANDINGS_ES:
         st_p, prev = get(base.rstrip('/') + ruta)
         st_l, live = get(PROD + ruta)
         if st_p != 200 or st_l != 200:
@@ -502,7 +510,7 @@ def es_identico(base: str, esperadas: frozenset[str] = frozenset()) -> None:
         mal(f'{ruta}: DIFIERE en el byte {i} (preview {len(a)} / producción {len(b)} bytes)\n'
             f'     preview   : …{a[max(0, i - 120):i + 120]!r}…\n'
             f'     producción: …{b[max(0, i - 120):i + 120]!r}…')
-    print(f'\n{iguales}/{len(KITEXCEL_ES)} landings ES idénticas'
+    print(f'\n{iguales}/{len(LANDINGS_ES)} landings ES idénticas'
           + (f' · {cambiadas} con cambio esperado (--esperadas)' if esperadas else ''))
 
 
@@ -512,7 +520,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
     ap.add_argument('--base', help='URL del deploy a comprobar (preview o producción)')
     ap.add_argument('--es-identico', action='store_true',
-                    help='compara las 5 landings ES KitExcel del --base contra producción')
+                    help='compara las 15 landings ES (5 KitExcel + 10 PlanNegocio) del --base contra producción')
     ap.add_argument('--esperadas', default='',
                     help='con --es-identico: rutas (separadas por comas, p. ej. /kit-escandallos) '
                          'cuyo cambio es el del PR; imprime su diff de texto en vez de fallar')
