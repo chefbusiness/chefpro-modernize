@@ -317,7 +317,10 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            'Kit Gestión de Personal y Turnos',
            # Ídem, Restaurant Financial Plan Kit Pro (3-oct): testimonios del Kit Plan Financiero
            # traducidos tal cual (el nombre de esa edición no lleva tildes ni « para »).
-           'Ricardo Gómez', 'Ana Beltrán', 'María Herrero']
+           'Ricardo Gómez', 'Ana Beltrán', 'María Herrero',
+           # Ídem, Food Truck y Coffee Shop Business Plan Kit (4-oct): testimonios de los planes de negocio
+           # Food Truck y Cafetería traducidos (mismos nombres en los dos).
+           'María López', 'Carlos Méndez', 'Laura Fernández', 'Ana García', 'Pedro Gutiérrez']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.
