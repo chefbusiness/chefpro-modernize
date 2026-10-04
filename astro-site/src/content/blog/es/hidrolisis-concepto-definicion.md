@@ -1,6 +1,6 @@
 ---
-title: "Hidrólisis: Concepto y Definición"
-description: "Descubre qué es la hidrólisis: reacción química que rompe moléculas con agua. Tipos (proteolítica, amilolítica, lipolítica), aplicaciones en cocina y…"
+title: "Hidrólisis: qué es y sus usos en cocina"
+description: "La hidrólisis es la reacción en la que el agua rompe una molécula. Te explicamos sus tipos, el papel de las enzimas y ejemplos en carnes, quesos y soja."
 pubDate: 2026-03-20
 modDate: 2026-08-31
 category: glosario

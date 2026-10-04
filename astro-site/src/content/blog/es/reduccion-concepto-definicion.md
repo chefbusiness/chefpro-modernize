@@ -1,6 +1,6 @@
 ---
-title: "Reducción: Concepto y Definición"
-description: "Descubre qué es la reducción: técnica de cocción que concentra sabores mediante evaporación. Aplicaciones en salsas, glaseados y cocina profesional. Guía…"
+title: "Reducción en cocina: qué es y cómo hacerla"
+description: "La reducción en cocina concentra el sabor de un líquido al evaporar agua a fuego controlado. Aprende la prueba de la cuchara, los errores típicos y sus usos."
 pubDate: 2026-03-24
 modDate: 2026-09-05
 category: glosario

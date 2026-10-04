@@ -88,7 +88,7 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">La diferencia clave de AI Chef Pro respecto a herramientas genéricas como ChefGPT radica en su <strong>enfoque profesional</strong>. Mientras que la mayoría de las aplicaciones se centran en usuarios domésticos, AI Chef Pro comprende las necesidades específicas de brigadas, control de costes, estandarización de procesos y creatividad a nivel comercial.</p>
+<p class="wp-block-paragraph">La diferencia clave de AI Chef Pro respecto a herramientas genéricas como <a href="https://aichef.pro/blog/chef-gpt">ChefGPT</a> radica en su <strong>enfoque profesional</strong>. Mientras que la mayoría de las aplicaciones se centran en usuarios domésticos, AI Chef Pro comprende las necesidades específicas de brigadas, control de costes, estandarización de procesos y creatividad a nivel comercial.</p>
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Emulsión: Concepto y Definición"
-description: "Descubre qué es una emulsión: mezcla estable de líquidos inmiscibles como aceite y agua. Ciencia de emulsionantes, tipos O/W y W/O, técnicas paso a paso y…"
+title: "Qué es una emulsión y cómo se hace"
+description: "Una emulsión es la mezcla estable de dos líquidos que no se unen, como aceite y agua. Tipos (O/W y W/O), emulsionantes y por qué se corta una salsa emulsionada."
 pubDate: 2026-03-18
 modDate: 2026-08-31
 category: glosario

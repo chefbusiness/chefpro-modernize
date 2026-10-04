@@ -1,6 +1,6 @@
 ---
-title: "Roux: Concepto y Definición"
-description: "Base espesante de harina y grasa en cocina francesa clásica. Aprende roux blanco, rubio y oscuro."
+title: "Roux: tipos, proporción y cómo se hace"
+description: "El roux es la mezcla cocida de harina y grasa que espesa las salsas. Aprende los tipos (blanco, rubio y oscuro), la proporción 1:1 en peso y cómo evitar grumos."
 pubDate: 2026-02-17
 modDate: 2026-08-31
 category: glosario

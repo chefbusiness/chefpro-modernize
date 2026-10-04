@@ -1,6 +1,6 @@
 ---
-title: "Salsa Velouté: Concepto y Definición"
-description: "Salsa madre con roux rubio y caldo claro. Domina el velouté profesional."
+title: "Salsa velouté: cómo se hace y derivadas"
+description: "La velouté es una salsa madre de fondo blanco y roux rubio. Te contamos su elaboración paso a paso, las proporciones según el uso y sus salsas derivadas."
 pubDate: 2026-02-18
 modDate: 2026-08-31
 category: glosario

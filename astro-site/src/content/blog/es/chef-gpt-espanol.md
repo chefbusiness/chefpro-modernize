@@ -64,7 +64,7 @@ El mercado ha madurado y hoy puedes elegir entre varias herramientas según tu p
 
 ## Chef GPT gratis: qué puedes hacer sin pagar (y dónde se queda corto)
 
-La gratuidad en 2026 te permite hacer mucho más que hace un par de años. Con un GPT gratuito o el plan básico de ChefGPT.xyz puedes:
+La gratuidad en 2026 te permite hacer mucho más que hace un par de años. Si quieres saber qué es y cómo funciona ChefGPT.xyz, tienes nuestra [reseña completa de ChefGPT.xyz](https://aichef.pro/blog/chef-gpt). Con un GPT gratuito o el plan básico de ChefGPT.xyz puedes:
 
 - Generar recetas creativas a partir de 3-4 ingredientes que te han sobrado.
 - Pedir menús semanales familiares con lista de la compra incluida.

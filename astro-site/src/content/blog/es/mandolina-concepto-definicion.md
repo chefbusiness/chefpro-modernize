@@ -1,6 +1,6 @@
 ---
-title: "Mandolina: Concepto y Definición"
-description: "Descubre qué es una mandolina: utensilio de corte profesional para láminas uniformes. Tipos, técnicas de uso seguro, cortes y mantenimiento. Guía completa."
+title: "Mandolina de cocina: qué es y cómo se usa"
+description: "La mandolina es un utensilio con cuchilla para cortar láminas uniformes. Descubre sus tipos, la tabla de cortes, cómo usarla con seguridad y limpiarla."
 pubDate: 2026-03-08
 modDate: 2026-08-31
 category: glosario
