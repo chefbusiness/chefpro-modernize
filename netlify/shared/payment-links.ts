@@ -3,7 +3,10 @@
 // Regenerar tras cambiar cualquier VITE_STRIPE_PAYMENT_LINK_* en Netlify; el gate --check avisa del drift.
 export const PAYMENT_LINKS: Record<string, string> = {
   'ai-prompts-for-restaurants': 'https://buy.stripe.com/4gMfZagwYaku4Z1b7v6oo1B',
+  'bakery-business-plan': 'https://buy.stripe.com/dRm7sEfsU2S2bnpdfD6oo1I',
+  'coffee-shop-business-plan': 'https://buy.stripe.com/eVq00c2G8gIScrtejH6oo1G',
   'food-cost-templates': 'https://buy.stripe.com/bJecMYa8AgIS9fhcbz6oo1y',
+  'food-truck-business-plan': 'https://buy.stripe.com/fZueV64OggISezB7Vj6oo1F',
   'guia-chocolateria-obrador': 'https://buy.stripe.com/4gMfZa1C42S23UX1wV6oo1w',
   'guia-churreria-chocolateria': 'https://buy.stripe.com/7sY14gdkMeAK3UXejH6oo1A',
   'guia-dark-kitchen': 'https://buy.stripe.com/eVq5kw6WoboybnpdfD6oo0L',
@@ -56,6 +59,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'plan-negocio-parrillero-asador-eventos': 'https://buy.stripe.com/cNi6oAa8A50a4Z1cbz6oo1a',
   'plan-negocio-tapas-bar': 'https://buy.stripe.com/aFadR21C4eAK8bd5Nb6oo15',
   'pro-prompts-ebook': 'https://buy.stripe.com/7sYfZafsU8cm3UX7Vj6oo00',
+  'restaurant-business-plan': 'https://buy.stripe.com/5kQ5kwbcE50advx6Rf6oo1H',
   'restaurant-financial-plan-templates': 'https://buy.stripe.com/8x23cogwYdwGezBdfD6oo1E',
   'restaurant-inventory-templates': 'https://buy.stripe.com/28EfZacgIdwGbnp8Zn6oo1z',
   'restaurant-schedule-templates': 'https://buy.stripe.com/9B6dR294w0JUbnpa3r6oo1D',
