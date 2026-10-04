@@ -387,13 +387,16 @@ def traducir_textos(L, mes):
 
 
 def capa_fijos(L, regenerar):
-    """FIJOS: cadenas fijadas por la SPEC, por TEXTO, en toda aparición «regenerar» aún sin escribir."""
+    """POR_CELDA (el EN de ESA celda) y FIJOS (por TEXTO) en toda aparición «regenerar» aún sin escribir."""
     n = 0
     for h_es, coord in regenerar:
         if (h_es, coord) in L.escritas:
             continue
         v = L.ws(h_es)[coord].value
-        if v in mapas.FIJOS:
+        if (L.corto, h_es, coord) in mapas.POR_CELDA:              # restpan: RESTC A5 / B52, PANC F2!B13
+            L.poner(h_es, coord, mapas.POR_CELDA[(L.corto, h_es, coord)], lambda x: isinstance(x, str))
+            n += 1
+        elif v in mapas.FIJOS:
             L.poner(h_es, coord, mapas.FIJOS[v], lambda x: isinstance(x, str))
             n += 1
     L.rep['fijos'] = n

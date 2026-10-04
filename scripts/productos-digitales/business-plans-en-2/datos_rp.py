@@ -33,8 +33,23 @@ FIJOS_NUEVOS = OrderedDict([
     ('Análisis de Escenarios — Año 1', 'Scenario Analysis — Year 1'),
     ('NOTA: Todos los importes son estimaciones basadas en precios de mercado en España 2026. Ajusta cada partida a '
      'tu situación real.', 'NOTE: all amounts are US kit-example estimates (2026); replace them with your own quotes.'),
+    ('Cuadro de Personal y Coste Laboral', 'Staffing Plan & Labor Cost'),
+    ('Checklist Apertura — Bar-Restaurante / España 2026', 'Opening Checklist — Restaurant & Bar (US example, 2026)'),
+    ('ChefBusiness.co — Checklist Apertura Bar-Restaurante / España 2026', 'AI Chef Pro · ' + URL_REST),
+    # D37: la fila de licencias del restaurante es la de alcohol; ejemplo de estado SIN cupo
+    ('Licencias y permisos varios', 'Liquor license + permits (non-quota state example)'),
+    # I9: título de la inversión de la panadería sin «España 2026»; D37: B63 de la panadería
+    ('Inversión Inicial — España 2026', 'Startup Costs — US example (2026)'),
+    ('IVA de la bebida ALCOHÓLICA servida en mostrador', 'Sales tax rate on alcohol served at the counter'),
     # D36 (E3): la col. H del P&L de la panadería es la parte EXENTA del sales tax
     ('Pan común sobre la línea (%)', 'Tax-exempt share of the line (%)'),
+])
+# Mismo ES con dos EN según el libro (D35/I8 y SPEC delta §3): solo en ESA celda
+POR_CELDA = OrderedDict([
+    (('RESTC', 'Instrucciones', 'A5'), 'OK column: choose ✓ (done), — (pending) or N/A (not applicable). N/A items do '
+                                       'not count toward the total.'),
+    (('RESTC', 'Checklist Apertura', 'B52'), 'Consumer advisory and allergen notice on the menu'),
+    (('PANC', 'F2', 'B13'), 'Ingredient and allergen labels for packaged and wholesale products'),
 ])
 FIJOS_FUERA = ('Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.',
                'Este fichero forma parte del producto «plan-negocio-cafeteria» de AI Chef Pro.')
@@ -67,14 +82,16 @@ _SOLO_FTCAF = ('inv_vehiculo', 'inv_adaptacion', 'inv_equipo_cocina', 'inv_gener
                'inv_stock', 'aforo', 'rotaciones_dia')
 _I, _S = 'Inversión Inicial', '0. Supuestos'
 TOKENS_PROPIOS = OrderedDict([
-    ('inv_lanzamiento', ('usd', ('fila', _I, {'rest': 'Campaña lanzamiento RRSS + inauguración'}, 'B'),
+    ('inv_lanzamiento', ('usd', ('fila', _I, {'rest': 'Campaña lanzamiento RRSS + inauguración',
+                                              'pan': 'Marketing lanzamiento'}, 'B'),
                          'grand opening / launch marketing budget')),
     ('inv_stock', ('usd', ('fila', _I, {'rest': 'Primera compra de despensa y cámaras',
                                         'pan': 'Stock inicial (harinas, levaduras, etc.)'}, 'B'),
                    'opening food inventory (bakery: flour, yeast and other ingredients)')),
     ('inv_stock_barra', ('usd', ('fila', _I, {'rest': 'Primera compra de bodega y barra'}, 'B'),
                          'opening bar inventory (wine, beer, spirits)')),
-    ('inv_obra', ('usd', ('fila', _I, {'rest': 'Obra civil y reforma local'}, 'B'), 'build-out of the premises')),
+    ('inv_obra', ('usd', ('fila', _I, {'rest': 'Obra civil y reforma local', 'pan': 'Obra civil y adecuación local'},
+                          'B'), 'build-out of the premises')),
     ('inv_cocina', ('usd', ('fila', _I, {'rest': 'Cocina industrial (fuegos + plancha)'}, 'B'),
                     'cooking line (range + griddle)')),
     ('inv_campana', ('usd', ('fila', _I, {'rest': 'Campana extractora + motor'}, 'B'),
@@ -213,16 +230,189 @@ DOCX_NOTAS_PLAN = OrderedDict([
 ])
 
 
+# ==========================================================================
+# Pistas por celda y por texto (las lee extraer_textos.py → textos_es.json → tandas)
+# ==========================================================================
+_A8 = ('SPEC §4.1 línea 4: sin divisores 1,10/1,21/1,04 → «divide a menu price by 1 + your sales tax rate»; P&L excl. '
+       'sales tax, cash flow incl.')
+CELDA_PISTAS = OrderedDict([
+    (('RESTP', '0. Supuestos', 'A2'), 'D8: añade una vez que los importes van «in your currency» (sin símbolo)'),
+    (('PANP', '0. Supuestos', 'A2'), 'D8: añade una vez que los importes van «in your currency» (sin símbolo)'),
+    (('RESTP', 'Instrucciones', 'A8'), _A8),
+    (('PANP', 'Instrucciones', 'A8'), _A8 + '; en la panadería, la parte exenta de la línea de pan (col. H del P&L, D36) '
+                                          'no lleva sales tax'),
+    (('PANP', 'Instrucciones', 'A12'), 'SPEC §4.1 línea 8 (I1): el Word del kit usa las MISMAS cifras de ejemplo que '
+                                       'este libro; si cambias el libro, actualiza las cifras del Word'),
+    (('RESTP', '6. Tesorería 12 meses', 'O5'), 'SPEC §4.1: estacionalidad «your area» (sin agosto/costa de España)'),
+    (('PANP', 'Tesorería 12 meses', 'O5'), 'SPEC §4.1: estacionalidad «your area» (sin agosto/costa de España)'),
+    # D36: nota de la col. H (F10) y su cabecera
+    (('PANP', 'PyG 3 Años', 'F10'), 'D36 (E3): la col. H es la parte EXENTA del sales tax de la línea (bollería para '
+                                    'llevar + venta mayorista a un café que revende, con resale certificate); ejemplo '
+                                    '0.80; CA exime la bollería para llevar y grava el consumo en el local (regla '
+                                    '80/80) — «check your state»; con 0 el libro grava toda la línea; UK: zero-rated '
+                                    'para llevar, 20 % en el local. Solo afecta a la tesorería (el P&L va sin impuesto)'),
+    # D37: alcohol en el restaurante
+    (('RESTP', '0. Supuestos', 'C63'), 'D37: algunos estados y ciudades añaden un impuesto por consumición de alcohol al '
+                                       'sales tax → teclea aquí el tipo COMBINADO; 8 % de ejemplo'),
+    (('RESTP', '0. Supuestos', 'C62'), 'D37: alcohol = 70 % de las ventas de bebida en el ejemplo US (barra con '
+                                       'cerveza, vino y cócteles)'),
+    # D38: propinas
+    (('RESTP', '5. Personal', 'A29'), 'D38: el libro NO modela propinas ni tip credit: servers y bartenders a ≥ $15/h '
+                                      'de salario base; federal $2.13/h + tip credit hasta $5.12 donde el estado lo '
+                                      'permite; CA, OR, WA, AK, MN, MT y NV no lo permiten (DOL). Suelo = el MAYOR '
+                                      'entre el mínimo federal y el estatal/local de "0. Assumptions"'),
+    # D19 del restaurante: las filas de cierre de restaurantes no tienen fuente (I10) → otras filas con fuente
+    (('RESTP', 'Instrucciones', 'A56'), 'I10/D37: esta fila ES («tasa de cierre 25 %», sin fuente) se SUSTITUYE por '
+                                        '«Liquor license (state + local)» · «from $50 to $300,000+» · webstaurantstore.com '
+                                        '· «this workbook budgets a non-quota state example; in quota states you buy an '
+                                        'existing license»'),
+    (('RESTP', 'Instrucciones', 'A57'), 'I10: esta fila ES («cierre a 5 años 50 %», sin fuente) se SUSTITUYE por «Prime '
+                                        'cost (food + labor)» · «60-65% of sales» · restaurant365.com'),
+])
+for _col in 'BCD':
+    CELDA_PISTAS[('RESTP', 'Instrucciones', '%s56' % _col)] = CELDA_PISTAS[('RESTP', 'Instrucciones', 'A56')]
+    CELDA_PISTAS[('RESTP', 'Instrucciones', '%s57' % _col)] = CELDA_PISTAS[('RESTP', 'Instrucciones', 'A57')]
+# Equivalencias de los checklists y del docx (SPEC delta §3): pista por TEXTO, como mapas.PISTAS
+PISTAS_EXTRA = [
+    (r'SL con capital|certificación negativa|denominación', 'SPEC delta §3: LLC; business name availability search + '
+                                                             'DBA si se opera con otro nombre'),
+    (r'[Ee]scritura|Registro Mercantil|alta de autónomos|notar', 'SPEC delta §3: articles of organization (Secretary of '
+                                                                 'State); operating agreement; owners\' draws y '
+                                                                 'self-employment tax (accountant)'),
+    (r'[Pp]royecto técnico|licencia de obras|[Bb]oletines', 'SPEC delta §3: architect + MEP drawings; building, '
+                                                           'electrical, plumbing and gas permits con inspecciones finales'),
+    (r'[Dd]eclaración responsable|licencia de actividad|[Ll]icencia actividad|clasificada',
+     'SPEC delta §3: zoning check (retail bakery / light food manufacturing use) → certificate of occupancy'),
+    (r'[Ee]xtracción|salida de humos|[Cc]ampana|potencia|kW', 'SPEC delta §3: Type I hood + UL 300 suppression (NFPA 96) '
+                                                              '· oven ventilation permit · utility service upgrade '
+                                                              '(3-phase) con la compañía eléctrica'),
+    (r'Registro Sanitario|RGSEAA', 'SPEC delta §3: health department plan review → food establishment permit (PAN: o '
+                                   'licencia estatal de agricultura si hay mayorista; FDA facility registration solo si '
+                                   'lo mayorista domina)'),
+    (r'[Tt]erraza', 'SPEC delta §3: sidewalk café / outdoor dining permit'),
+    (r'alcohol a menores|[Ll]icencia de alcohol|bebidas alcohólicas', 'SPEC delta §3 / D37: liquor license (state ABC + '
+                                                                       'local; quota states: license transfer) + '
+                                                                       'responsible beverage service training + age '
+                                                                       'signage'),
+    (r'[Hh]ojas de reclamaciones', 'SPEC delta §3: REST consumer advisory and allergen notice on the menu · PAN '
+                                   'ingredient and allergen labels for packaged and wholesale products'),
+    (r'[Dd]esperdicio|Ley 1/2025', 'SPEC delta §3: food donation program (Bill Emerson Good Samaritan Act) + reglas '
+                                   'locales de reciclaje orgánico donde existan'),
+    (r'[Cc]omunicación de apertura|centro de trabajo', 'SPEC delta §3: state new-employer registration + carteles '
+                                                       'laborales federales y estatales'),
+    (r'OEPM|[Mm]arca registrada', 'SPEC delta §3: USPTO trademark (opcional)'),
+    (r'InfoJobs|Indeed', 'SPEC delta §3: Indeed, Culinary Agents, Poached'),
+    (r'[Cc]asera|[Oo]brador|mayorista|reparto|HORECA', 'D30/D39: panadería COMERCIAL con tienda, rincón de café y '
+                                                       'mayorista a cafés; cottage food = otro comprador (venta desde '
+                                                       'casa con topes); lo mayorista va DENTRO de la línea de pan'),
+    (r'[Cc]ubiertos?|comensales|rotaci', 'D43: el restaurante habla de «covers» (cubiertos) y «seat turns»'),
+    (r'[Tt]ransacciones', 'D43: la panadería habla de «transactions»'),
+    (r'[Pp]ropina|[Cc]amarer', 'D38: sin tip credit en el libro (servers ≥ $15/h); nota federal $2.13/h + tip credit '
+                               'donde el estado lo permite'),
+]
+
+
+# ==========================================================================
+# Caso de ejemplo US (D42, F1-research-us-delta §7): celdas VERDES. (corto, hoja ES, celda) → (valor, rótulo)
+# ==========================================================================
+def valores_rp(M):
+    v = OrderedDict()
+    sup = OrderedDict((c, rot) for c, _vals, rot in M._SUP_COMUN)
+    comun = OrderedDict([('B6', 310), ('B13', 0.30), ('B16', 0), ('B17', 0.25), ('B18', 0.035), ('B20', 0.10),
+                         ('B21', 12), ('B22', 15080), ('B25', 2), ('B31', M.CALIBRAR), ('B32', 0.10), ('B33', 10),
+                         ('B34', 0), ('B37', 0.25), ('B38', 0.25), ('B39', 0.08), ('B40', 0.08), ('B41', 0), ('B42', 0),
+                         ('B44', 10), ('B45', 7), ('B58', 1), ('B59', 14), ('B63', 0.08), ('B65', 1.15), ('B66', 1.25),
+                         ('B68', None)])
+    propios = {
+        'RESTP': [('B4', 125, 'Cubiertos/día'), ('B5', 28, None), ('B11', 0.70, 'Ventas de COMIDA'), ('B14', 0.24, None),
+                  ('B15', 0.015, None), ('B24', 7000, None), ('B26', 2500, None), ('B27', 9000, None),
+                  ('B30', 130000, None), ('B51', 60, 'Aforo'), ('B62', 0.70, None)],
+        'PANP': [('B4', 210, 'Transacciones/día'), ('B5', 10, None), ('B11', 0.85, 'Ventas de COMIDA'),
+                 ('B14', 0.22, None), ('B15', 0.03, None), ('B24', 4200, None), ('B26', 1500, None), ('B27', 4500, None),
+                 ('B30', 70000, None), ('B62', 0, None)],
+    }
+    for corto in ('RESTP', 'PANP'):
+        for c, val in comun.items():
+            v[(corto, '0. Supuestos', c)] = (val, sup.get(c))
+        for c, val, rot in propios[corto]:
+            v[(corto, '0. Supuestos', c)] = (val, rot or sup.get(c))
+    inv_rest = [(7, 3000), (8, 90000), (9, 18000), (10, 10000), (15, 14000), (16, 9000), (17, 4000), (18, 6000),
+                (19, 16000), (20, 25000), (21, 8000), (22, 8000), (23, 9000), (24, 3000), (26, 25000), (27, 15000),
+                (28, 2400), (29, 8000), (30, 1500), (31, 6000), (32, 2500), (33, 8000), (34, 5000), (35, 8000),
+                (37, 5000), (38, 3000), (39, 8000), (41, 2500), (42, 15000), (44, 8000), (45, 10000)]
+    for f, val in inv_rest:
+        v[('RESTP', '1. Inversión Inicial', 'B%d' % f)] = (val, None)
+    # PAN: research §7 da 18 partidas para 19 filas; la 9 («Proyecto técnico + certificación») = arquitecto y planos
+    # MEP del obrador, 6,000 [kit estimate] (F2-NOTAS §4)
+    inv_pan = [1500, 2500, 6000, 35000, 10000, 10000, 25000, 9000, 7000, 10000, 9000, 5000, 8000, 9000, 4000, 2500,
+               3000, 4000, 3000]
+    for k, val in enumerate(inv_pan):
+        v[('PANP', 'Inversión Inicial', 'B%d' % (7 + k))] = (val, None)
+    for k, val in enumerate([6000, 18000, 9000, 4800, 9600, 3600, 1200, 1200, 1000, 3000, 4800]):
+        v[('RESTP', '2. P&L 3 Años', 'B%d' % (27 + k))] = (val, None)
+    for k, val in enumerate([3600, 4000, 7200, 1800, 2400, 1200, 1200, 900, 600, 500]):
+        v[('PANP', 'PyG 3 Años', 'B%d' % (26 + k))] = (val, None)
+    # umbrales D41 [kit benchmark] y la parte exenta de la línea de pan (D36)
+    for c, val, rot in [('E53', 0.65, 'Margen bruto'), ('E55', 0.32, 'Coste de mercancía'),
+                        ('E56', 0.35, 'Coste de personal'), ('E57', 0.10, 'Alquiler'), ('E58', 0.05, 'Resultado neto')]:
+        v[('RESTP', '2. P&L 3 Años', c)] = (val, rot)
+    for c, val, rot in [('E51', 0.60, 'Margen bruto'), ('E53', 0.33, 'Coste de mercancía'),
+                        ('E54', 0.38, 'Coste de personal'), ('E55', 0.10, 'Alquiler'), ('E56', 0.05, 'Resultado neto'),
+                        ('H10', 0.80, 'Ventas de pan')]:
+        v[('PANP', 'PyG 3 Años', c)] = (val, rot)
+    # Personal (research §7): personas (B), jornada por persona (C), bruto mes TOTAL de la fila (D); sin tip credit
+    for f, (b, c, d) in zip(range(6, 13), [(1, 1, 4500), (1, 1, 4200), (2, 1, 6400), (2, 1, 5200), (2, 0.5, 2600),
+                                           (1, 0.75, 1950), (1, 0.2, 520)]):
+        for col, val in zip('BCD', (b, c, d)):
+            v[('RESTP', '5. Personal', '%s%d' % (col, f))] = (val, None)
+    for f, (b, c, d) in zip(range(5, 11), [(1, 1, 4000), (1, 1, 3300), (1, 1, 2800), (3, 0.67, 5200), (1, 0.4, 1040),
+                                           (1, 0.15, 390)]):
+        for col, val in zip('BCD', (b, c, d)):
+            v[('PANP', 'Personal', '%s%d' % (col, f))] = (val, None)
+    v.update([
+        (('RESTP', '5. Personal', 'B15'), (8000, 'Coste anual')), (('RESTP', '5. Personal', 'B16'), (8000, 'Coste anual')),
+        (('RESTP', '5. Personal', 'B20'), (40, 'Jornada completa')), (('RESTP', '5. Personal', 'B21'), (50, 'Semanas')),
+        (('RESTP', '5. Personal', 'B22'), (12, 'Horas de servicio')),
+        (('RESTP', '5. Personal', 'B23'), (4, 'Personas necesarias')),
+        (('PANP', 'Personal', 'B13'), (6000, 'Coste anual')), (('PANP', 'Personal', 'B14'), (6000, 'Coste anual')),
+        (('PANP', 'Personal', 'B18'), (40, 'Jornada completa')), (('PANP', 'Personal', 'B19'), (50, 'Semanas')),
+        (('PANP', 'Personal', 'B20'), (12, 'Horas de servicio')), (('PANP', 'Personal', 'B21'), (1.5, 'Personas')),
+        (('PANP', 'Personal', 'B22'), (4, 'Horas de producción')), (('PANP', 'Personal', 'B23'), (2, 'Personas')),
+    ])
+    # Escenarios [kit estimate]: mismas proporciones que el ES (REST 58/80/95 · 15.90/18.20/18.50 · 300/310/320;
+    # PAN 120/180/200 · 4.20/5.50/6.00 · 300/310/320) sobre el caso base US
+    v.update([
+        (('RESTP', '4. Escenarios', 'B6'), (91, 'Cubiertos/día')), (('RESTP', '4. Escenarios', 'D6'), (148, 'Cubiertos/día')),
+        (('RESTP', '4. Escenarios', 'B7'), (24.46, 'Ticket')), (('RESTP', '4. Escenarios', 'D7'), (28.46, 'Ticket')),
+        (('RESTP', '4. Escenarios', 'B8'), (300, 'Días')), (('RESTP', '4. Escenarios', 'D8'), (320, 'Días')),
+        (('PANP', 'Escenarios', 'B5'), (140, 'Transacciones/día')), (('PANP', 'Escenarios', 'D5'), (233, 'Transacciones/día')),
+        (('PANP', 'Escenarios', 'B6'), (7.64, 'Ticket')), (('PANP', 'Escenarios', 'D6'), (10.91, 'Ticket')),
+        (('PANP', 'Escenarios', 'B7'), (300, 'Días')), (('PANP', 'Escenarios', 'D7'), (320, 'Días')),
+    ])
+    return v
+
+
+def formulas_rp():
+    p = os.path.join(AQUI, 'formulas_rp.json')
+    out = OrderedDict()
+    if os.path.exists(p):
+        for k, d in json.load(open(p, encoding='utf-8')).items():
+            c, h, x = k.split('|')
+            out[(c, h, x)] = d['en']
+    return out
+
+
 def completar(M):
     fijos = OrderedDict((k, v) for k, v in M.FIJOS.items() if k not in FIJOS_FUERA)
     fijos.update(FIJOS_NUEVOS)
     M.FIJOS = fijos
-    M.POR_CELDA = OrderedDict()
+    M.POR_CELDA = POR_CELDA
     M.TOKENS_DOCX = tokens_rp(M.TOKENS_DOCX)
     M.DOCX_FIJOS = docx_fijos(M)
     M.DOCX_NOTAS = DOCX_NOTAS
     M.DOCX_NOTAS_PLAN = DOCX_NOTAS_PLAN
-    M.FORMULAS_EN = OrderedDict()
-    M.VALORES_EN = OrderedDict()
-    M.CALIBRACION_D15 = OrderedDict()
-    M.CELDA_PISTAS = OrderedDict()
+    M.FORMULAS_EN = formulas_rp()
+    M.VALORES_EN = valores_rp(M)
+    M.CALIBRACION_D15 = OrderedDict()                   # la fija la tanda de aplicar_en.py (D42 + D15)
+    M.CELDA_PISTAS = CELDA_PISTAS
+    M.PISTAS_EXTRA = PISTAS_EXTRA

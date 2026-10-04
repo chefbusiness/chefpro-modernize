@@ -520,7 +520,7 @@ LIMITE = {'dv-error-titulo': 32, 'dv-prompt-titulo': 32, 'dv-error': 255, 'dv-pr
 
 
 def pistas(texto):
-    return [nota for rx, nota in PISTAS if re.search(rx, texto)]
+    return [nota for rx, nota in PISTAS + list(mapas.PISTAS_EXTRA) if re.search(rx, texto)]
 
 
 def citas_hoja(texto, todas_hojas, cortos):

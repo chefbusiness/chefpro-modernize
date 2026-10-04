@@ -1,0 +1,162 @@
+{
+ "RESTP|0. Supuestos|C9": {
+  "en": "=IFERROR(\"Average check excl. sales tax plus the weighted sales tax of your sales lines (\"&TEXT(SUMPRODUCT('2. 3-Year P&L'!$E$11:$E$12,'2. 3-Year P&L'!$G$11:$G$12)*100,\"0\")&\"%), rounded. In the US, menu prices usually exclude sales tax and it is added at the register; in the UK, menu prices include VAT.\",\"\")",
+  "de": "FTP|0. Supuestos|C9",
+  "metodo": "auto"
+ },
+ "RESTP|0. Supuestos|C50": {
+  "en": "=IFERROR(\"That is \"&TEXT(INT(ROUND(B50,1)),\"0\")&\".\"&TEXT(ROUND(MOD(ROUND(B50,1),1)*10,0),\"0\")&\" seat turns per day on the \"&TEXT($B$51,\"0\")&\" seats in the cell below. Compare this daily average with your real meal periods and with the table turns you can sustain at peak before you rely on it.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "RESTP|1. Inversión Inicial|D11": {
+  "en": "=IFERROR(\"\"&TEXT('0. Assumptions'!$B$25,\"0\")&IF('0. Assumptions'!$B$25=1,\" month\",\" months\")&\" of rent, from \"\"0. Assumptions\"\". Refundable when the lease ends: it is not depreciated and carries no tax\",\"\")",
+  "de": "FTP|Inversión Inicial|D21",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D12": {
+  "en": "=IFERROR(\"Rent \"&IF('0. Assumptions'!$B$54=1,\"for the month\",\"for the \"&TEXT('0. Assumptions'!$B$54,\"0\")&\" months\")&\" of build-out and permits before opening. It does not overlap the P&L, which starts on opening day: its twelve months are twelve trading months\",\"\")",
+  "de": "FTP|Inversión Inicial|D22",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D13": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$55,\"0%\")&\" of the BUILD-OUT items of this block (build-out, architect and permit drawings, interior design), not of the whole block: the other items are left out. No lender funds a build-out without a cushion: the percentage is in \"\"0. Assumptions\"\"\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "RESTP|1. Inversión Inicial|D47": {
+  "en": "=IFERROR(\"Covers \"&TEXT('0. Assumptions'!$B$35,\"0\")&IF('0. Assumptions'!$B$35=1,\" month\",\" months\")&\" of year-1 CASH fixed costs (the P&L fixed costs minus depreciation, which is not paid out), the minimum the Instructions of this workbook ask for\",\"\")",
+  "de": "FTP|Inversión Inicial|D25",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D48": {
+  "en": "=IFERROR(\"The percentages in column C are read on this figure, which includes the working capital (\"&TEXT(C46,\"0%\")&\" of the total). To compare the breakdown with another plan, use the CAPEX row below.\",\"\")",
+  "de": "FTP|Inversión Inicial|D26",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D50": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$41,\"0%\")&\" on the items marked \"\"Yes\"\" in the tax column. US: the sales tax you pay on equipment is part of its cost and is not recovered, so this rate is 0. UK (VAT-registered): 20%, reclaimed on your VAT return, but you pay it first, so the loan has to cover it\",\"\")",
+  "de": "FTP|Inversión Inicial|D28",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D53": {
+  "en": "=IFERROR(\"Depreciated over \"&TEXT('0. Assumptions'!$B$44,\"0\")&\" years\",\"\")",
+  "de": "FTP|Inversión Inicial|D31",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D54": {
+  "en": "=IFERROR(\"Depreciated over \"&TEXT('0. Assumptions'!$B$45,\"0\")&\" years\",\"\")",
+  "de": "FTP|Inversión Inicial|D31",
+  "metodo": "auto"
+ },
+ "RESTP|1. Inversión Inicial|D55": {
+  "en": "=IFERROR(\"Not depreciated, because they are not fixed assets: broker and lease review fees, security deposit, pre-opening rent, brand design, website and Google Business Profile, grand opening campaign, entity formation and legal, liquor license and permits, opening food and bar inventory and the working capital reserve. They add up to \"&TEXT(B48-B53-B54,\"#,##0\")&\" of the \"&TEXT(B48,\"#,##0\")&\" total investment.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "RESTP|2. P&L 3 Años|F14": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$13,\"0%\")&\" of FOOD sales, not of total sales: beverages have their own line\",\"\")",
+  "de": "FTP|PyG 3 Años|F13",
+  "metodo": "auto"
+ },
+ "RESTP|2. P&L 3 Años|F15": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$14,\"0%\")&\" of BEVERAGE sales\",\"\")",
+  "de": "FTP|PyG 3 Años|F14",
+  "metodo": "auto"
+ },
+ "RESTP|2. P&L 3 Años|F19": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$28,\"0%\")&\" of sales. It is a VARIABLE cost: it moves with revenue, so it cannot sit in fixed costs\",\"\")",
+  "de": "FTP|PyG 3 Años|F18",
+  "metodo": "auto"
+ },
+ "RESTP|3. Punto Equilibrio|A29": {
+  "en": "=IFERROR(\"With the average check excl. sales tax above, you need \"&TEXT(ROUNDUP(B16,0),\"0\")&\" covers a day over your \"&TEXT(B12,\"0\")&\" opening days to avoid losing money (accounting break-even, depreciation included), and \"&TEXT(ROUNDUP(B21,0),\"0\")&\" for cash to hold (cash break-even: depreciation out, because it is not paid, and the year's loan payment in\"&IF(B13=0,\"; no principal is repaid this year (interest-only period or no loan)\",\"\")&\"). The \"\"Revenue needed per year\"\" rows show the same figures in your currency.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "RESTP|6. Tesorería 12 meses|O11": {
+  "en": "=IFERROR(\"Food and beverage purchases, consumables, fees and contingencies, each at ITS tax rate (column G of the P&L; 0 in the US, where the sales tax you pay is part of the cost) and with the supplier payment days from \"\"0. Assumptions\"\".\"&IF('0. Assumptions'!$B$59=0,\"\",\" With \"&TEXT('0. Assumptions'!$B$59,\"0\")&\" payment days, the last purchases of the year are paid next year: the \"\"Year\"\" column of this row holds \"&TEXT(MAX(0,12-ROUNDUP('0. Assumptions'!$B$59/30,0)),\"0\")&\" months of purchases, not the year's cost.\"),\"\")",
+  "de": "FTP|Tesorería 12 meses|O11",
+  "metodo": "auto"
+ },
+ "PANP|0. Supuestos|C9": {
+  "en": "=IFERROR(\"Average check excl. sales tax plus the weighted sales tax of your sales lines (\"&TEXT(SUMPRODUCT('3-Year P&L'!$E$10:$E$11,'3-Year P&L'!$G$10:$G$11)*100,\"0\")&\"%), rounded: the tax-exempt share of the bakery line (column H of \"\"3-Year P&L\"\") lowers it. In the US, prices usually exclude sales tax and it is added at the register; in the UK, prices include VAT.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "PANP|Inversión Inicial|D26": {
+  "en": "=IFERROR(\"\"&TEXT('0. Assumptions'!$B$25,\"0\")&IF('0. Assumptions'!$B$25=1,\" month\",\" months\")&\" of rent, from \"\"0. Assumptions\"\". Refundable when the lease ends: it is not depreciated and carries no tax\",\"\")",
+  "de": "FTP|Inversión Inicial|D21",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D27": {
+  "en": "=IFERROR(\"Rent \"&IF('0. Assumptions'!$B$54=1,\"for the month\",\"for the \"&TEXT('0. Assumptions'!$B$54,\"0\")&\" months\")&\" of build-out and permits before opening. It does not overlap the P&L, which starts on opening day: its twelve months are twelve trading months\",\"\")",
+  "de": "FTP|Inversión Inicial|D22",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D28": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$55,\"0%\")&\" of the BUILD-OUT items of this block (architect and building permits, construction, electrical service upgrade for the ovens, oven ventilation and exhaust, signage), not of the whole block: the other items are left out. No lender funds a build-out without a cushion: the percentage is in \"\"0. Assumptions\"\"\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "PANP|Inversión Inicial|D30": {
+  "en": "=IFERROR(\"Covers \"&TEXT('0. Assumptions'!$B$35,\"0\")&IF('0. Assumptions'!$B$35=1,\" month\",\" months\")&\" of year-1 CASH fixed costs (the P&L fixed costs minus depreciation, which is not paid out), the minimum the Instructions of this workbook ask for\",\"\")",
+  "de": "FTP|Inversión Inicial|D25",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D31": {
+  "en": "=IFERROR(\"The percentages in column C are read on this figure, which includes the working capital (\"&TEXT(C29,\"0%\")&\" of the total). To compare the breakdown with another plan, use the CAPEX row below.\",\"\")",
+  "de": "FTP|Inversión Inicial|D26",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D33": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$41,\"0%\")&\" on the items marked \"\"Yes\"\" in the tax column. US: the sales tax you pay on equipment is part of its cost and is not recovered, so this rate is 0. UK (VAT-registered): 20%, reclaimed on your VAT return, but you pay it first, so the loan has to cover it\",\"\")",
+  "de": "FTP|Inversión Inicial|D28",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D36": {
+  "en": "=IFERROR(\"Depreciated over \"&TEXT('0. Assumptions'!$B$44,\"0\")&\" years\",\"\")",
+  "de": "FTP|Inversión Inicial|D31",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D37": {
+  "en": "=IFERROR(\"Depreciated over \"&TEXT('0. Assumptions'!$B$45,\"0\")&\" years\",\"\")",
+  "de": "FTP|Inversión Inicial|D31",
+  "metodo": "auto"
+ },
+ "PANP|Inversión Inicial|D38": {
+  "en": "=IFERROR(\"Not depreciated, because they are not fixed assets: entity formation and legal, licenses and health plan review, launch marketing, opening inventory, security deposit, pre-opening rent and the working capital reserve. They add up to \"&TEXT(B31-B36-B37,\"#,##0\")&\" of the \"&TEXT(B31,\"#,##0\")&\" total investment.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "PANP|PyG 3 Años|F13": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$13,\"0%\")&\" of FOOD sales, not of total sales: beverages have their own line · In the US the sales tax you pay on ingredients is a cost, not a credit, so column G of this row is 0\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "PANP|PyG 3 Años|F14": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$14,\"0%\")&\" of BEVERAGE sales\",\"\")",
+  "de": "FTP|PyG 3 Años|F14",
+  "metodo": "auto"
+ },
+ "PANP|PyG 3 Años|F18": {
+  "en": "=IFERROR(\"At \"&TEXT('0. Assumptions'!$B$28,\"0%\")&\" of sales. It is a VARIABLE cost: it moves with revenue, so it cannot sit in fixed costs\",\"\")",
+  "de": "FTP|PyG 3 Años|F18",
+  "metodo": "auto"
+ },
+ "PANP|Punto Equilibrio|A26": {
+  "en": "=IFERROR(\"With the average check excl. sales tax above, you need \"&TEXT(ROUNDUP(B15,0),\"0\")&\" transactions a day over your \"&TEXT(B11,\"0\")&\" opening days to avoid losing money (accounting break-even, depreciation included), and \"&TEXT(ROUNDUP(B20,0),\"0\")&\" for cash to hold (cash break-even: depreciation out, because it is not paid, and the year's loan payment in\"&IF(B12=0,\"; no principal is repaid this year (interest-only period or no loan)\",\"\")&\"). The \"\"Revenue needed per year\"\" rows show the same figures in your currency.\",\"\")",
+  "de": null,
+  "metodo": "manual"
+ },
+ "PANP|Personal|A2": {
+  "en": "=IFERROR(\"Payroll — \"&TEXT('0. Assumptions'!$B$21,\"0\")&\" pay periods + employer taxes \"&TEXT('0. Assumptions'!$B$20*100,\"0\")&\"%\",\"\")",
+  "de": "FTP|Personal|A2",
+  "metodo": "auto"
+ },
+ "PANP|Tesorería 12 meses|O11": {
+  "en": "=IFERROR(\"Food and beverage purchases, consumables, fees and contingencies, each at ITS tax rate (column G of the P&L; 0 in the US, where the sales tax you pay is part of the cost) and with the supplier payment days from \"\"0. Assumptions\"\".\"&IF('0. Assumptions'!$B$59=0,\"\",\" With \"&TEXT('0. Assumptions'!$B$59,\"0\")&\" payment days, the last purchases of the year are paid next year: the \"\"Year\"\" column of this row holds \"&TEXT(MAX(0,12-ROUNDUP('0. Assumptions'!$B$59/30,0)),\"0\")&\" months of purchases, not the year's cost.\"),\"\")",
+  "de": "FTP|Tesorería 12 meses|O11",
+  "metodo": "auto"
+ }
+}

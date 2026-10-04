@@ -101,7 +101,7 @@ _E2_ALC = ("('0. Supuestos'!$B$62*'0. Supuestos'!$B$40+(1-'0. Supuestos'!$B$62)*
 PARCHES_FORMULA = OrderedDict([
     (('RESTP', '2. P&L 3 Años', 'G14'), ("'0. Supuestos'!$B$39", "'0. Supuestos'!$B$41")),
     (('RESTP', '2. P&L 3 Años', 'G15'), (_E2_ALC, "'0. Supuestos'!$B$41")),
-    (('PANP', 'PyG 3 Años', 'G10'), ('$H$10*0.04', '$H$10*0')),
+    (('PANP', 'PyG 3 Años', 'G10'), ('H10*0.04', 'H10*0')),
     (('PANP', 'PyG 3 Años', 'G13'), ("$H$10*0.04+(1-$H$10)*'0. Supuestos'!$B$39", "'0. Supuestos'!$B$41")),
     (('PANP', 'PyG 3 Años', 'G14'), (_E2_ALC, "'0. Supuestos'!$B$41")),
 ])

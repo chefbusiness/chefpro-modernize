@@ -988,6 +988,7 @@ DOCX_ULTIMO_9 = OrderedDict([('ft', '108'), ('caf', '142')])  # último párrafo
 DOCX_RESUMEN_TOKENS = OrderedDict([('caf', ('134', 3))])    # párrafo que debe citar ≥ n tokens
 PRESTAMO_SEMILLA = OrderedDict([('ft', 80000), ('caf', 140000)])
 REUSO = OrderedDict()                                      # ES → EN ya traducido en otro conjunto (solo restpan)
+PISTAS_EXTRA = []                                          # pistas por texto propias del conjunto (extraer_textos)
 CON_MARCA = None                                           # libros con la línea «More templates…» (None = todos)
 # Autotest de gates_en.py: papeles de los libros (P1/P2 planes, C1/C2 checklists) y celdas que muta
 AUTOTEST = OrderedDict([
