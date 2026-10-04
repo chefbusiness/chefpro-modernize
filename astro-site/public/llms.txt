@@ -37,7 +37,7 @@ AI Chef Pro agents can act inside the user's own tools: the user authorizes an a
 Downloadable professional resources for hospitality: Excel template kits (recipe costing, HACCP/APPCC, inventory, staffing, financial plan), "how to open a..." business-plan guides, recurring-task checklist kits by business concept, and AI prompt ebooks. One-time payment, immediate digital delivery and lifetime access to a private dashboard; no subscription. Digital products carry a 30-day money-back guarantee as stated on their product pages.
 
 - [Digital products hub (ES)](https://aichef.pro/productos-digitales): 51 products available (the hub also announces more coming soon), priced from 9 EUR to 89 EUR.
-- [Digital products hub (EN)](https://aichef.pro/en/digital-products): English editions, currently 6 products priced in USD (more English editions coming soon).
+- [Digital products hub (EN)](https://aichef.pro/en/digital-products): English editions, currently 10 products priced in USD (more English editions coming soon).
 - Hubs in other languages: [FR](https://aichef.pro/fr/produits-numeriques) · [DE](https://aichef.pro/de/digitale-produkte) · [IT](https://aichef.pro/it/prodotti-digitali) · [PT](https://aichef.pro/pt/produtos-digitais) · [NL](https://aichef.pro/nl/digitale-producten)
 - [Kit Escandallos Pro (12 EUR)](https://aichef.pro/kit-escandallos): 13 Excel templates for recipe costing and automatic food cost (Spanish).
 - [Pack APPCC (14 EUR)](https://aichef.pro/pack-appcc): food-safety (HACCP/APPCC) record templates for Spanish inspections.
@@ -49,6 +49,10 @@ Downloadable professional resources for hospitality: Excel template kits (recipe
 - [Food Cost Kit Pro (19 USD, EN)](https://aichef.pro/en/digital-products/food-cost-templates): 13 food cost templates for Excel.
 - [HACCP Food Safety Kit Pro (19 USD, EN)](https://aichef.pro/en/digital-products/haccp-templates): HACCP plan and food safety logs for Excel.
 - [Gastro Pro Prompts eBook (14 USD, EN)](https://aichef.pro/en/digital-products/ai-prompts-for-restaurants): 300+ AI prompts for restaurants and hospitality.
+- [Food Truck Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/food-truck-business-plan): Word business plan, Excel financial projections and startup checklist for a US food truck.
+- [Coffee Shop Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/coffee-shop-business-plan): Word business plan, Excel financial projections and opening checklist for a coffee shop with brunch.
+- [Restaurant Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/restaurant-business-plan): Word business plan, Excel financial projections and opening checklist for a casual restaurant with a bar.
+- [Bakery Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/bakery-business-plan): Word business plan, Excel financial projections and opening checklist for an artisan bakery (retail + wholesale).
 - [Prompt libraries hub (ES)](https://aichef.pro/libreria-de-prompts) · [Prompt libraries hub (EN)](https://aichef.pro/en/prompt-libraries): prompt libraries for the platform's agents.
 
 ## Blog and Glossary

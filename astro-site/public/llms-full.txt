@@ -64,7 +64,7 @@ Pages: [ES](https://aichef.pro/integraciones) · [EN](https://aichef.pro/en/inte
 Downloadable professional resources, paid once, delivered immediately, with lifetime access to a private dashboard and a 30-day money-back guarantee as stated on the product pages. They are separate from the SaaS subscription. Prices below were read from each product page.
 
 - Spanish hub: https://aichef.pro/productos-digitales - 51 products available (more announced as coming soon), from 9 EUR to 89 EUR. The Spanish-catalog products are written in Spanish and aimed at Spain and Latin America.
-- English hub: https://aichef.pro/en/digital-products - English editions priced in USD, currently 6 products; more English editions coming soon.
+- English hub: https://aichef.pro/en/digital-products - English editions priced in USD, currently 10 products; more English editions coming soon.
 - Hubs in other languages: [FR](https://aichef.pro/fr/produits-numeriques) · [DE](https://aichef.pro/de/digitale-produkte) · [IT](https://aichef.pro/it/prodotti-digitali) · [PT](https://aichef.pro/pt/produtos-digitais) · [NL](https://aichef.pro/nl/digitale-producten)
 - Prompt libraries: [ES](https://aichef.pro/libreria-de-prompts) · [EN](https://aichef.pro/en/prompt-libraries)
 
@@ -76,6 +76,10 @@ Downloadable professional resources, paid once, delivered immediately, with life
 - [Restaurant Inventory Kit Pro (19 USD)](https://aichef.pro/en/digital-products/restaurant-inventory-templates): 9 inventory templates (par sheet, purchase orders, receiving, waste, FIFO).
 - [Restaurant Staff Scheduling Kit Pro (19 USD)](https://aichef.pro/en/digital-products/restaurant-schedule-templates): 9 scheduling templates (schedules, FLSA overtime tracker, labor cost).
 - [Restaurant Financial Plan Kit Pro (49 USD)](https://aichef.pro/en/digital-products/restaurant-financial-plan-templates): 10 Excel templates (P&L, projections, break-even, cash flow, lender summary).
+- [Food Truck Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/food-truck-business-plan): a 10-section Word business plan for a US food truck, Excel financial projections (startup costs, 3-year P&L, 12-month cash flow, break-even, staffing, scenarios, loan schedule with DSCR) and a 68-task startup checklist.
+- [Coffee Shop Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/coffee-shop-business-plan): the same structure for a coffee shop with brunch, with a 75-task opening checklist.
+- [Restaurant Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/restaurant-business-plan): the same structure for a casual restaurant with a bar (liquor license, no tip credit), with a 64-task opening checklist.
+- [Bakery Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/bakery-business-plan): the same structure for an artisan bakery with storefront, cafe corner and wholesale (cottage food vs commercial bakery explained), with a 66-task opening checklist.
 
 ### Spanish catalog (EUR)
 
