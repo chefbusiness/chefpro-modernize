@@ -106,3 +106,12 @@ Sesión Claude Code · `Via: Claude Code`.
   "Lanzamiento <Nombre> (EN)" --segment d06ed053-4327-4bec-9e3b-25a9ee9f6704 --from "AI Chef Pro <hello@news.aichef.pro>"
   --scheduled-at <fecha>`. Comprobar antes en Resend que ese día no sale un correo ES.
 - Tienda EN: **10 productos vivos**.
+
+## Cierre de la sesión (5-oct, 00:40 CEST, Claude Code)
+
+- GEO: los 4 planes añadidos a `llms.txt` y `llms-full.txt` («currently 10 products»), `c1749d5a`; sitemap comprobado (las 8
+  landings EN del 3-4 oct dentro, sin `/access` ni `/library`) y reenviado en GSC. Checklist de cierre EN ampliado (§6).
+- Al retomar: programar los correos EN de Coffee Shop (4-nov, ya programable), Restaurant (9-nov, desde el 10-oct) y Bakery
+  (14-nov, desde el 15-oct). Decisiones abiertas de John: precio tachado $129 en la tienda EN (FTC); verificación humana de
+  2-3 ficheros por kit en Excel/Word y landings a 360 px.
+- Mac: daemons de Fotos (`photoanalysisd`, `photolibraryd`) congelados durante la sesión; el reinicio los restablece.
