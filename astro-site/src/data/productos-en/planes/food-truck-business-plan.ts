@@ -212,7 +212,7 @@ const data: PlanNegocioData = {
       { icon: 'Truck', title: 'Less Capital Than a Restaurant', desc: "No dining room lease, a smaller team, and the option to move when a spot doesn't work. The model shows what that means in your numbers: startup costs line by line and the cash you need before your first sale." },
       { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, cost of goods, gross margin and break-even come out of the workbook itself, from your assumptions. The example truck: an average check of $14 (excl. sales tax), 29.3% cost of goods, 58.2% gross margin and break-even at 68 customers a day, against 80 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Permits Before Equipment', desc: '68 tasks in 6 phases, from your LLC and EIN to the health department plan review, the commissary agreement, city vending licenses, DMV and the fire marshal inspection. A starting point: requirements vary by state, county and city.' },
-      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
+      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR for your main loan (bank or SBA 7(a)). Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
     compatLabel: 'Works with:',
     compatPills: [

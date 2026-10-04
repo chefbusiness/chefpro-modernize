@@ -204,7 +204,7 @@ const data: PlanNegocioData = {
       { icon: 'Coffee', title: 'Built for a Coffee Shop', desc: 'Espresso machine and grinders, pastry case, a coffee and brunch menu mix, an owner-barista on the schedule and the permits of a fixed location. Nothing to strip out from a generic restaurant template.' },
       { icon: 'BarChart3', title: 'Numbers Calculated, Not Copied', desc: 'Average check, gross margin and break-even come out of the workbook itself, from your assumptions. The example coffee shop: an average check of $11 (excl. sales tax), 65.0% gross margin and break-even at 124 customers a day, against 145 expected. Replace them with yours.' },
       { icon: 'ShieldCheck', title: 'Zoning, Permits and 75 Tasks', desc: 'Zoning before you sign, building permits, certificate of occupancy, health plan review, sign and sidewalk cafe permits, employer registrations and a privacy notice for your loyalty list. A starting point: requirements vary by state, county and city.' },
-      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR, covering SBA 7(a) loans and SBA Microloans. Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
+      { icon: 'Banknote', title: 'Lender-Ready Format', desc: 'Written plan, 3-year P&L, break-even, 3 scenarios, cash flow and a loan schedule with DSCR for your main loan (bank or SBA 7(a)). Approval is never guaranteed, and it is a planning tool, not financial advice. One-time payment, no subscription.' },
     ],
     compatLabel: 'Works with:',
     compatPills: [
