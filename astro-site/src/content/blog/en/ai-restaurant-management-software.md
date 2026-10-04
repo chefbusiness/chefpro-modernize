@@ -133,7 +133,7 @@ imageAlt: "Restaurant Management"
 <div class="step-number">2</div>
 <div class="step-content">
 <h4>Staff &#038; Menu Configuration (Week 2)</h4>
-<p>Input employee roles, wages, and availability. Upload your complete menu with recipes and ingredient specifications. Set par levels for inventory items based on current usage patterns.</p>
+<p>Input employee roles, wages, and availability (if your kitchen roles are still loosely defined, our <a href="https://aichef.pro/en/blog/kitchen-brigade-system">chef hierarchy guide</a> is a useful reference). Upload your complete menu with recipes and ingredient specifications. Set par levels for inventory items based on current usage patterns.</p>
 </p></div>
 </p></div>
 <div class="implementation-step">
