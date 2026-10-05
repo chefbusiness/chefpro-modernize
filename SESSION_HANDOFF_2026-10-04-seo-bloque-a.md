@@ -62,3 +62,15 @@ Auditoría adversarial Opus: sin bloqueantes; las correcciones menores están ap
 - [ ] `--rebalanceo` de banners EN cuando estén vivos los 4 productos EN nuevos.
 - [ ] Abrir `/nl/blog` (bloquea el primer post NL de la semana 4).
 - [ ] Semana 1 del plan de contenidos: ES refresh `escandallos-ia-cocina-profesional`, EN `kitchen-brigade-system` y PT `garum`.
+
+## Tercera tanda — 2026-10-05 (sesión Claude Code): primer post del plan Q4
+
+- **Publicado:** `/en/blog/kitchen-brigade-system` (PR #114). Keyword de 2.900/mes en EE. UU. Unas 3.500 palabras, 4 tablas, 7 FAQ, 3 imágenes Gemini, banners Scheduling/Food Cost/HACCP + CTA a enapp, 9 enlaces salientes y 5 entrantes. Sitemap reenviado a GSC.
+- **Pipeline probado** (repetirlo tal cual en las siguientes piezas):
+  1. `dataforseo.py serp` + `vol` (país e idioma explícitos) y comprobar canibalización con grep en `blog/<lang>/`.
+  2. Brief cerrado: keywords, PAA, estructura, HECHOS seguros, banners exactos copiados del corpus, enlaces e imágenes ya decididos.
+  3. Redactor Sonnet escribe el `.md` completo; en paralelo, imágenes Gemini con curl + `magick … -resize 1200x675^ -extent 1200x675 -quality 78` en `astro-site/public/blog-assets/<lang>/AAAA/MM/` (en el T480 no hay `sips`).
+  4. Auditoría Opus que EDITA el fichero; en paralelo, Sonnet añade 4-5 enlaces entrantes.
+  5. `fase8b-regen-lastmod.py`, `fase8c-h1-unico.py`, `fase8d-faq-duplicadas.py --lang <x>`.
+  6. `git add --sparse` (las imágenes caen fuera del sparse) → PR → verificar el preview (título, H1, FAQPage, imágenes, canonical, sitemap) → merge → `curl` a producción.
+- **Siguiente:** S1 ES refresh de `escandallos-ia-cocina-profesional` («Qué es un escandallo y cómo hacerlo», 5.400/mes) y S1 PT `garum` (1.300/mes, Portugal: `--pais 2620 --idioma pt`; banners solo ES/EN, en PT el CTA al producto va a mano).
