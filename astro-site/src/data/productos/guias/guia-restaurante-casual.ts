@@ -17,6 +17,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-casual-hero.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'El 60% de los restaurantes casuales cierra en los primeros 3 años — planificar bien marca la diferencia',
     titlePre: 'Cómo Montar un ',

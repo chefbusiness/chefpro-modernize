@@ -18,6 +18,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-peruano-hero.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'La cocina peruana es la más premiada de Latinoamérica — 3 restaurantes entre los 50 Best del mundo',
     titlePre: 'Cómo Montar un ',

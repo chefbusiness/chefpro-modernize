@@ -22,6 +22,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/og-guia-panaderia-obrador.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'El pan industrial cae -22% mientras el artesanal con masa madre crece +9% interanual — el momento es ahora',
     titlePre: 'Cómo Montar una ',

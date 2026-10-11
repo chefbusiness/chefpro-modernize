@@ -17,6 +17,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'La cocina japonesa es Patrimonio UNESCO — la segunda más demandada en España con ticket premium',
     titlePre: 'Cómo Montar un ',
