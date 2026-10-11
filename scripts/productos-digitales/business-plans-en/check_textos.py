@@ -39,8 +39,10 @@ CIUDADES_ES = re.compile(r'\b(?:Madrid|Barcelona|Valencia|Bilbao|Sevilla|Seville
                          r'market|España)\b')
 PROHIBIDO = re.compile(r'SBA minimum|minimum required by the SBA|approval (?:is )?guaranteed|guaranteed approval|'
                        r'\bverified against\b', re.I)
-RX_DOLAR = re.compile(r'\$\s?(\d[\d,]*(?:\.\d+)?)\s?(K|M|million|thousand)?(?:\s?[-–]\s?\$?\s?(\d[\d,]*(?:\.\d+)?)\s?'
-                      r'(K|M|million|thousand)?)?', re.I)
+# El número no se come la coma que lo sigue y el sufijo (K, M, million…) tiene que ser palabra entera: «$488,932, made
+# up of…» leía la «m» de «made» como millones (falso positivo cazado en el docx del bar, 11-oct-2026)
+RX_DOLAR = re.compile(r'\$\s?(\d(?:[\d,]*\d)?(?:\.\d+)?)\s?(K|M|million|thousand)?(?![A-Za-z])(?:\s?[-–]\s?\$?\s?'
+                      r'(\d(?:[\d,]*\d)?(?:\.\d+)?)\s?(K|M|million|thousand)?(?![A-Za-z]))?', re.I)
 RX_PCT = re.compile(r'(\d+(?:\.\d+)?)(?:\s?%?\s?[-–]\s?(\d+(?:\.\d+)?))?\s?%')
 
 
