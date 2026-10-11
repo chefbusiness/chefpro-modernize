@@ -296,7 +296,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Además hoy (PR #117):** fuera el precio tachado y los «valores» de bonus de toda la tienda EN (FTC 16 CFR 233.1). Los correos EN
   ya programados que dicen «launch/regular price» se quedan así (John: «déjalo así… para no retrasar trabajo»).
 
-### ▶️ 2026-10-11 (Claude Code en el Mac + VPS) — **Catering Business Plan Kit (EN, $39) LISTO a falta del Payment Link** (PR #122 draft)
+### ✅ 2026-10-11 (Claude Code en el Mac + VPS) — **Catering Business Plan Kit (EN, $39) LIVE** (PR #122, merge `2e96d40`)
 
 - John eligió el Catering (880/mes en EE. UU., LOW, subiendo) y el retoque del Bakery para «pastry business plan» (1.900/mes;
   su SERP es de bakery business plans → sin producto nuevo; LIVE en el PR #121).
@@ -318,6 +318,11 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   `VITE_STRIPE_PAYMENT_LINK_CATERING_BUSINESS_PLAN` (builds) → `sync-payment-links.py` → PR fuera de draft + merge → gates
   LIVE (`gate-flujo-postpago --only`, completo, `tienda-gate`, `robots-gate --live`, `carrusel-apps-gate`) → GSC → correo EN
   24-nov 14:00Z (borrador + routine el 25-oct; plantilla `broadcast-catering-business-plan-lanzamiento-en.html`) → worktrees fuera.
+- **LIVE el 11-oct (17:50 Madrid):** Stripe `plink_1UPOsm4CcdRGidmEPrEMILKX` = `buy.stripe.com/fZuaEQa8AdwGfDF0sR6oo1K` ($39 USD,
+  impuesto automático, redirección comprobada con la CLI) + env + mapa de 63 links. Gates LIVE: `--only` 4/4 · completo **63 productos /
+  823 entregables / 0 fallos / 0 avisos** · tienda-gate · robots-gate · carrusel 63/63. Sitemap reenviado en GSC. **Tienda EN: 12 productos.**
+  Correo EN: borrador `dc53426b`, lo programa para el **24-nov 14:00Z** el routine **`trig_01RQdZrmsAtKFEUCjWykZQyy`** (25-oct 15:07Z).
+  Siguiente hueco EN: 29-nov 14:00Z.
 - 🔜 **SIGUIENTE TAREA tras el Catering EN (John, 11-oct: «habrá que solucionar el de español… para que quede conforme a los
   estándares de calidad»): Plan Catering Temático Eventos ES → 2.0.** Reutiliza el motor que sale del EN (molde FT ES con
   eventos/año × €/invitado × invitados/evento, personal fijo + cobertura por evento, calculadora coste → precio con IVA 10 %),
