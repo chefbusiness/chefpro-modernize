@@ -69,7 +69,7 @@ const data: PlanNegocioData = {
     faqs: [
       {
         q: '¿Para quién está pensado este plan?',
-        a: 'Para profesionales de la parrilla — argentinos, uruguayos, colombianos, asadores castellanos o emprendedores españoles — que quieren montar un servicio premium itinerante para eventos en España. Cubre cliente final particular (bodas íntimas, cumpleaños, bautizos) y B2B (wedding planners, agencias, hoteles, restaurantes show cooking).',
+        a: 'Para profesionales de la parrilla — argentinos, uruguayos, colombianos, asadores castellanos o emprendedores españoles — que quieren montar un servicio premium itinerante para eventos en España. Cubre cliente final particular (bodas, cumpleaños, bautizos) y B2B (wedding planners, agencias, hoteles, restaurantes show cooking).',
       },
       {
         q: '¿Qué diferencia hay con un Plan de Asador con local fijo?',
@@ -146,9 +146,9 @@ const data: PlanNegocioData = {
       { icon: 'Wrench', title: 'Catálogo Equipamiento + Menaje', desc: 'Parrilla GGM KGE1200 709 EUR + Brogas asador cruz + Comander COMPER-M ahumador + cuchillería Arcos + vajilla eventos + EPI Texfire. SKU + URL + precio orientativo.' },
       { icon: 'ShieldCheck', title: 'Checklist de Apertura (83 Tareas)', desc: 'Seis fases: constitución y fiscalidad (SL o autónomo, IAE, IVA al 10 %) · cocina de apoyo autorizada, registro sanitario, APPCC, fuego y permisos, seguros · equipamiento y proveedores · personal y formación · marca y captación · primer evento y primeros 90 días.' },
       { icon: 'Beef', title: 'Carta 12 Cortes de Carne', desc: 'Argentinos (asado tira, bife chorizo, vacío) + castellanos (cordero a la cruz, cochinillo) + picaña y tomahawk + BBQ texano (brisket, ribs). Técnica + Tº + merma + maridaje.' },
-      { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B', desc: 'Plantillas editables y orientativas (revísalas con tu asesor): B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias) con anexo tarifario. IVA al 10 %, cancelación por tramos, sin derecho de desistimiento en un servicio con fecha y fuerza mayor con plan B de gas.' },
+      { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B', desc: 'Plantillas editables y orientativas (revísalas con tu asesor): B2C particular (cumpleaños, bautizos, bodas) + B2B profesional (wedding planners, agencias) con anexo tarifario. IVA al 10 %, cancelación por tramos, sin derecho de desistimiento en un servicio con fecha y fuerza mayor con plan B de gas.' },
       { icon: 'Sparkles', title: '10 Experiencias Temáticas', desc: 'Asado argentino, asador a la cruz, parrilla uruguaya, BBQ texano, rodizio brasileño, asador criollo, mediterránea, llanera, show de fuego y brunch parrillero corporate.' },
-      { icon: 'Flame', title: 'Manual Técnico Parrillero', desc: '8 salmueras + 12 marinados + tabla de cocción de 18 cortes con Tº interna y merma + escalado de carne cruda, parrillas, parrilleros y carbón para 50, 100 o 200 invitados + chimichurri 3 versiones + 5 salsas profesionales. Lo que separa al amateur del profesional.' },
+      { icon: 'Flame', title: 'Manual Técnico Parrillero', desc: '8 salmueras + 12 marinados + tabla de cocción de 18 cortes con Tº interna y merma + escalado de carne cruda, parrillas, parrilleros y carbón de 40 a 300 invitados + chimichurri 3 versiones + 5 salsas profesionales. Lo que separa al amateur del profesional.' },
       { icon: 'Tent', title: 'Guía 8 Sistemas + Food Truck', desc: 'Comparativa parrilla argentina, asador cruz, BBQ pit, caja china, barril llanero, modular inox, brasero, lift-grill. + Roadmap food truck especializado: inversión 30-75K EUR, regulación 8 CCAA.' },
     ],
   },
@@ -173,7 +173,7 @@ const data: PlanNegocioData = {
       'No es otra plantilla genérica. Es un plan completo para montar tu servicio premium itinerante de parrilla, con el caso calculado en Excel y el marco del fuego al aire libre por comunidades.',
     reasons: [
       { icon: 'Flame', title: 'Anexo del Fuego en 8 Comunidades', desc: 'Anexo en el plan de negocio con la autorización que se pide, la época de peligro y la franja alrededor del monte en 8 comunidades. En terreno forestal o en esa franja la restricción se aplica aunque la finca tenga licencia; por eso los contratos llevan fuerza mayor con plan B.' },
-      { icon: 'BarChart3', title: 'Modelo Híbrido B2C + B2B', desc: 'Particulares (bodas íntimas, cumpleaños, bautizos) y empresas (wedding planners, agencias, hoteles, show cooking). La calculadora tiene selector particular / empresa con los tramos de cancelación de cada canal, y hay modelos de contrato para cada uno.' },
+      { icon: 'BarChart3', title: 'Modelo Híbrido B2C + B2B', desc: 'Particulares (bodas, cumpleaños, bautizos) y empresas (wedding planners, agencias, hoteles, show cooking). La calculadora tiene selector particular / empresa con los tramos de cancelación de cada canal, y hay modelos de contrato para cada uno.' },
       { icon: 'ShieldCheck', title: '93 Proveedores para Empezar', desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas), Tienda Biomasa (quebracho), GGM Gastro España, Brogas 1958, Texfire EPI, Hiscox/Mapfre. Con web y zona, y su estado en «Por verificar» para que lleves tu seguimiento.' },
       { icon: 'Banknote', title: 'Caso Calculado, sin Local Propio', desc: 'El caso de ejemplo necesita unos 77.000 € de inversión total, fondo de maniobra incluido, y alcanza el punto de equilibrio en torno a 80 eventos al año, trabajando desde una cocina de apoyo autorizada. Cambia los supuestos y el Excel recalcula tu caso. Pago único, sin suscripciones.' },
     ],
@@ -201,7 +201,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 1',
         title: 'Manual Técnico Parrillero',
         value: '€40',
-        desc: '8 salmueras + 12 marinados + tabla de cocción para 18 cortes con Tº interna y merma + escalado para 50, 100 o 200 invitados + chimichurri en 3 versiones + 5 salsas profesionales. La pieza que separa al parrillero amateur del profesional.',
+        desc: '8 salmueras + 12 marinados + tabla de cocción para 18 cortes con Tº interna y merma + escalado de carne cruda, parrillas, parrilleros y carbón de 40 a 300 invitados + chimichurri en 3 versiones + 5 salsas profesionales. La pieza que separa al parrillero amateur del profesional.',
         image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-3.jpg',
       },
       {
@@ -233,7 +233,7 @@ const data: PlanNegocioData = {
   faqs: [
     {
       q: '¿Para quién está pensado este plan?',
-      a: 'Para profesionales de la parrilla — argentinos, uruguayos, colombianos, asadores castellanos o emprendedores españoles con dominio del producto — que quieren montar un servicio premium itinerante de parrilla para eventos en España. Cubre tanto el cliente final particular (cumpleaños, bautizos, bodas íntimas en finca) como el cliente B2B (wedding planners, agencias de eventos, hoteles, empresas, restaurantes que contratan show cooking en directo).',
+      a: 'Para profesionales de la parrilla — argentinos, uruguayos, colombianos, asadores castellanos o emprendedores españoles con dominio del producto — que quieren montar un servicio premium itinerante de parrilla para eventos en España. Cubre tanto el cliente final particular (cumpleaños, bautizos, bodas en finca) como el cliente B2B (wedding planners, agencias de eventos, hoteles, empresas, restaurantes que contratan show cooking en directo).',
     },
     {
       q: '¿Sirve si nunca he montado mi propio negocio antes?',

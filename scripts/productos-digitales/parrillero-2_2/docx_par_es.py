@@ -32,6 +32,7 @@ NOMBRE = 'plan-de-negocio-parrillero-asador-eventos.docx'
 sys.path.insert(0, AQUI)
 sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'planes-v2_0'))
 import motor                                                                       # noqa: E402
+import par_version                                                                 # noqa: E402,F401  (mes de versión: octubre 2026)
 import tandas_docx as T                                                            # noqa: E402
 
 FIJOS = {

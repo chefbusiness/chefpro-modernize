@@ -71,8 +71,8 @@ FASES = [
          'Puntos críticos: frío del marisco y la carne en el transporte, cocción y servicio a 63 °C o más (art. 30 '
          'del RD 1086/2020) y alioli con huevo pasteurizado o sin huevo. Nunca arroz tibio a temperatura ambiente. '
          'Guarda una comida testigo de cada arroz (100 g, identificada y fechada, a 4 °C o menos o congelada, 7 '
-         'días): obligatoria en eventos de más de 40 personas y si los eventos son tu actividad principal (art. '
-         '30.8 y 30.10 del RD 1086/2020)'),
+         'días): obligatoria en todos tus eventos, porque son tu actividad principal (art. 30.8.d del RD '
+         '1086/2020), y en cualquier encargo de más de 40 personas (30.8.e); conservación según el 30.10'),
         ('Fichas de alérgenos de cada arroz y de las salsas', 'Titular', 'Antes del primer evento',
          'Reglamento (UE) 1169/2011 y RD 126/2015: crustáceos, moluscos, pescado, apio de los caldos, sulfitos, '
          'huevo del alioli, gluten de la fideuá. La tabla del manual técnico es tu punto de partida'),

@@ -6,6 +6,6 @@ SCR=${CLAUDE_SCRATCHPAD:-/root/tmp-par-f2/motor}
 AQUI=$(cd "$(dirname "$0")" && pwd)
 PY=/root/venv-guias/bin/python
 cd "$AQUI" && $PY semilla_par.py --salida "$SCR/origen" || exit 2
-cd "$AQUI/../planes-v2_0" && CLAUDE_SCRATCHPAD=$SCR timeout 900 $PY main.py --producto plan-negocio-parrillero-asador-eventos \
+cd "$AQUI/../planes-v2_0" && CLAUDE_SCRATCHPAD=$SCR timeout 900 $PY "$AQUI/main_par.py" --producto plan-negocio-parrillero-asador-eventos \
   --dry-run --origen "$SCR/origen" --solo a --json "$SCR/inf.json" "$@" > "$SCR/run.log" 2>&1
 echo "main.py exit $?"

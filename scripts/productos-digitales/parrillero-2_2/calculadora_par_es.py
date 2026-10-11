@@ -35,6 +35,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 PD = os.path.dirname(AQUI)
 sys.path.insert(0, os.path.join(PD, 'planes-v2_0'))
 import motor                                                                       # noqa: E402
+import par_version                                                                 # noqa: E402,F401  (mes de versión: octubre 2026)
 
 PID = 'plan-negocio-parrillero-asador-eventos'
 FICHERO = 'calculadora-pricing-eventos-parrillero.xlsx'
@@ -206,9 +207,9 @@ REF_FORMATO, REF_SERVICIO = 'Plato principal', 'Buffet'
 ESC_FILAS = ['Carne cruda (kg)', 'Carne servida (kg)', 'Parrillas', 'Parrilleros', 'Ayudantes', 'Carbón (kg)']
 
 EJEMPLOS = OrderedDict([
-    ('Boda particular con show de fuego', dict(
+    ('Boda particular con cortes en mesa', dict(
         canal='Particular', guests=110, formato='Asado completo', exper='01 Asado argentino', servicio='Cortes en mesa',
-        beb=4.0, menaje=0.60, hours=9, wage=13.0, ss=0.33, rentals=0.0, km=35, per_km=0.95, show=2.0, iva=0.10)),
+        beb=5.0, menaje=0.60, hours=9, wage=13.0, ss=0.33, rentals=0.0, km=35, per_km=0.95, show=0.0, iva=0.10)),
     ('Team building de empresa con BBQ texano', dict(
         canal='Empresa', guests=70, formato='Plato principal', exper='04 BBQ texano', servicio='Buffet',
         beb=3.0, menaje=0.60, hours=8, wage=13.0, ss=0.33, rentals=0.0, km=25, per_km=0.95, show=0.0, iva=0.10)),
@@ -218,8 +219,8 @@ EJEMPLOS = OrderedDict([
         per_km=0.95, show=0.0, iva=0.10)),
 ])
 EJ_NOTAS = OrderedDict([
-    ('Boda particular con show de fuego', 'Particular, 110 invitados (la boda del caso del plan financiero), asado argentino de 500 g de carne cruda por '
-     'invitado con cortes en mesa, bebida incluida y un suplemento de 2 € por invitado por el show de fuego. El precio con IVA es el que ve el particular; cobro en tres '
+    ('Boda particular con cortes en mesa', 'Particular, 110 invitados (la boda del caso del plan financiero), asado argentino de 500 g de carne cruda por '
+     'invitado con cortes en mesa, bebida con vino incluida (5 €). Sin show: con él, súmale de 8 a 15 € por invitado. El precio con IVA es el que ve el particular; cobro en tres '
      'pagos (30 % al firmar, 40 % a siete días, 30 % a las 48 horas).'),
     ('Team building de empresa con BBQ texano', 'Empresa, 70 invitados, BBQ texano en buffet con 400 g de carne cruda, '
      'refrescos y cerveza incluidos y presupuesto «+ IVA». Cobro del 30 % al firmar y el 70 % a 30 días de la factura; '
@@ -629,7 +630,7 @@ def generar(destino):
 PROHIBIDOS = [r'\bfreelance', r'validad[oa]s?', r'Espa[ñn]a,? 2026', r'food ?truck', r'carnet', r'carné',
               r'tarifa plana', r'cocina central']
 #: rangos del research §2 (€/invitado sin IVA) que deben cumplir los ejemplos
-RANGOS_EJEMPLO = {'Boda particular con show de fuego': (40, 46), 'Team building de empresa con BBQ texano': (25, 40),
+RANGOS_EJEMPLO = {'Boda particular con cortes en mesa': (40, 46), 'Team building de empresa con BBQ texano': (25, 40),
                   'Fiesta o feria municipal de volumen': (8, 12)}
 #: escenario estándar con el que se rotulan los tickets de las 10 experiencias (arreglos_d9 los importa)
 ESCENARIO_TICKET = dict(guests=80, formato='Plato principal', servicio='Cortes en mesa', beb=0.0, menaje=0.60, hours=9,

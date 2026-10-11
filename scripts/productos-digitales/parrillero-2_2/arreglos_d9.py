@@ -68,7 +68,8 @@ TEXTO = {
     EXP: [
         ('Validadas contra mercado real España 2026 — todas tienen demanda confirmada.',
          'La demanda que se indica en cada experiencia es orientativa: compruébala en tu zona antes de apostar por '
-         'ella. Los tickets van sin IVA y también son orientativos.', 1),
+         'ella. Los tickets van sin IVA y también son orientativos. Las celebraciones privadas sencillas del plan '
+         'financiero (25 € sin IVA) son una parrillada sin experiencia temática: quedan por debajo de estos rangos.', 1),
         ('ajada gallega + salsa villaroy', 'ajada gallega + salsa verde', 1),
         ('Cochinillo segoviano IGP (alternativa)', 'Cochinillo de Segovia (Marca de Garantía; alternativa)', 1),
         ('Lechazo de Castilla DOP en horno de leña', 'Lechazo de Castilla y León IGP en horno de leña', 1),
@@ -88,6 +89,11 @@ TEXTO = {
          'Las experiencias se combinan. Aquí tienes tres combinaciones de ejemplo:', 1),
     ],
     CARTA: [
+        ('Combina cortes según el concepto del evento (asado argentino, mediterráneo, castellano, BBQ texano, mix premium).',
+         'Combina cortes según el concepto del evento (asado argentino, mediterráneo, castellano, BBQ texano, mix premium). '
+         'Los objetivos por debajo de 70 °C son el punto «poco hecho»: solo en piezas enteras e intactas de vacuno o '
+         'cordero y a petición del invitado. Cerdo, aves, picada y embutido, a 70 °C en el centro (74 °C las aves; '
+         'recomendación de AESAN).', 1),
         ('DOP Castilla y León', 'IGP Lechazo de Castilla y León', 1),
         ('IGP Segovia', 'Marca de Garantía Cochinillo de Segovia', 1),
         ('Salsa Villaroy o salsa verde', 'Salsa verde o chimichurri', 1),
@@ -139,6 +145,10 @@ TEXTO = {
          'Es el concepto principal de la mayoría de los parrilleros de eventos. Inversión de base.', 1),
     ],
     MANUAL: [
+        ('el grosor manda.',
+         'el grosor manda. Los objetivos por debajo de 70 °C son el punto «poco hecho»: solo en piezas enteras e '
+         'intactas de vacuno o cordero y a petición del invitado. Cerdo, aves, picada y embutido, a 70 °C en el '
+         'centro (74 °C las aves; recomendación de AESAN).', 1),
         ('Temperatura ambiente 30 min antes de cocinar — nunca pieza fría directa al fuego.',
          'Atempera la pieza antes de cocinar: sácala de frío solo el tiempo mínimo (como máximo 30 minutos y a la '
          'sombra, según tu APPCC) — nunca helada y directa al fuego.', 1),
@@ -146,6 +156,13 @@ TEXTO = {
         ('5. Salsa de mostaza al miel', '5. Salsa de mostaza a la miel', 1),
     ],
     CONTRATO: [
+        ('BODAS ÍNTIMAS EN FINCA/CHALET', 'BODAS Y CELEBRACIONES EN FINCA O CHALET', 1),
+        ('bodas íntimas', 'bodas', 1),
+        ('Servicio de un (1) parrillero profesional y [N] ayudante(s) si aplica.',
+         'Servicio de [N] parrillero(s) y [N] ayudante(s), según la tabla de escalado del manual.', 1),
+        ('Permisos administrativos del lugar del evento (responsabilidad del CLIENTE).',
+         'Permiso del propietario del lugar (CLIENTE). La autorización municipal o autonómica de uso del fuego la '
+         'tramita el PARRILLERO con los datos del CLIENTE, salvo pacto en contrario.', 1),
         ('en nombre propio y en su condición de profesional autónomo prestador',
          'en nombre propio o en representación de [razón social del PARRILLERO], prestador', 1),
         (', en adelante el «PARRILLERO» o el «PROVEEDOR».',
@@ -202,6 +219,16 @@ COMBOS_VIEJOS = [('Ticket: 95-130 €/pax.', 'boda_premium'), ('Ticket: 65-90 �
 
 #: Celdas de tabla: fichero → [(tabla, fila, columna, texto viejo EXACTO, texto nuevo)]
 CELDAS = {
+    CARTA: [(2, 2, 1, '60 °C, jamás bien hecho.', '60 °C a petición; 70 °C por defecto.')],
+    MANUAL: [(2, 13, 3, '63 °C punto medio', '70 °C (APPCC del kit)'), (2, 14, 3, '62 °C', '70 °C (APPCC del kit)'),
+             (2, 15, 3, '60 °C', '70 °C (APPCC del kit)')],
+    GUIA: [(11, 1, 2, 'Eventos privados sin problema. Vía pública restringida zonas centro.',
+            'Eventos privados: autorización municipal; en la franja forestal, las mismas restricciones (plan INFOMA). '
+            'Vía pública restringida en zonas centro.'),
+           (11, 8, 2, 'Más permisivo que mediterránea, fincas tradición castellana.',
+            'Época de peligro alto de junio a octubre (INFOCAL): sin fuego para cocinar en zona forestal ni en su franja.'),
+           (12, 3, 3, '3.800 €/evento medio', '3.800 € por evento el año 1 y 3.900 € el año 2'),
+           (12, 4, 3, '700 €/día medio', '700 € por día el año 1 y unos 810 € el año 2')],
     CONTRATO: [
         (0, 0, 1, '€/pax bajo', '€/inv. bajo, sin IVA'), (0, 0, 2, '€/pax medio', '€/inv. medio, sin IVA'),
         (0, 0, 3, '€/pax premium', '€/inv. premium, sin IVA'), (0, 0, 5, 'Fee desplazamiento (€)',

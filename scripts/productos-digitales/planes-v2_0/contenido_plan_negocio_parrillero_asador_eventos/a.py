@@ -455,9 +455,9 @@ INSTRUCCIONES = {
          'El epígrafe 677.9 es una actividad empresarial: tus facturas a empresas no llevan retención'),
         ('Pago de los ayuntamientos', '30 días desde la conformidad', 'Ley 9/2017, art. 198.4',
          'Contrato menor de servicios por debajo de 15.000 € (art. 118), sin anticipo, y factura electrónica por '
-         'FACe si eres SL (Ley 25/2013, art. 4)'),
+         'FACe si eres SL, salvo que exima las de hasta 5.000 € (Ley 25/2013, art. 4)'),
         ('Temperaturas de la carne', '≤ 7 °C al recibirla · 70 °C en el centro al cocinarla · ≥ 63 °C en caliente',
-         'Reglamento (CE) 853/2004 y RD 1086/2020, art. 30',
+         'Reglamento (CE) 853/2004 (recepción), AESAN (cocción, recomendación) y RD 1086/2020, art. 30 (mantenimiento)',
          'Despojos ≤ 3 °C, aves y preparados ≤ 4 °C y picada ≤ 2 °C; aves a 74 °C en el centro (recomendación de '
          'AESAN)'),
         ('Convenio colectivo aplicable', 'Provincial de hostelería',

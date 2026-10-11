@@ -81,8 +81,8 @@ FASES = [
          'del RD 1086/2020); alioli con huevo pasteurizado'),
         ('Comida testigo de cada plato', 'Titular', 'Desde el primer evento',
          'Guarda 100 g de cada plato, identificados y fechados, a 4 °C o menos o congelados, durante 7 días: '
-         'obligatoria en eventos de más de 40 personas y si los eventos son tu actividad principal (art. 30.8 y '
-         '30.10 del RD 1086/2020)'),
+         'obligatoria en todos tus eventos, porque son tu actividad principal (art. 30.8.d del RD 1086/2020), y '
+         'en cualquier encargo de más de 40 personas (30.8.e); conservación según el 30.10'),
         ('Fichas de alérgenos de cada menú y de las salsas', 'Titular', 'Antes del primer evento',
          'Reglamento (UE) 1169/2011 y RD 126/2015: leche de la provoleta, gluten del pan, de las empanadas y de '
          'algunas salsas y embutidos, sulfitos del vinagre y del vino de los marinados, mostaza, apio y soja de '
