@@ -76,6 +76,9 @@ VOCABULARIO = {
     'partidas de obra y acondicionamiento': 'partidas de la furgoneta',
     'de obra y licencias': 'de puesta en marcha (pruebas de menú y degustaciones)',
     'un banco no financia una reforma sin colchón': 'un banco no financia una compra así sin colchón',
+    # REVISION-FINAL M1: el Word del pack 2.2 sí cita el payback; frase fija del motor (grupo_a.py:3766)
+    'El documento Word del pack sigue en la versión 1.1 y no lee esta celda: las cifras válidas son las de este libro':
+        'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
 }
 
 SUPUESTOS = {

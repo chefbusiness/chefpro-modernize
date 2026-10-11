@@ -53,7 +53,7 @@ export const planCateringTematicoEventosTestimonials = [
   {
     name: 'Sam Williams',
     role: 'Texas BBQ pitmaster, Madrid',
-    text: 'Slow-smoked BBQ con smoker offset es nicho en España. El plan me dio el dossier B2B y los modelos de contrato MSA — cerré acuerdo marco anual con 2 empresas tech corporate creativo en Madrid.',
+    text: 'Slow-smoked BBQ con smoker offset es nicho en España. El plan me dio los contratos B2B y los modelos de contrato MSA — cerré acuerdo marco anual con 2 empresas tech corporate creativo en Madrid.',
     avatar: avatar8,
   },
 ];

@@ -86,6 +86,7 @@ MAPA = {
     'BE_INGRESOS_CAJA': ('Punto Equilibrio', r'^ingresos necesarios al a[ñn]o \(caja\)', 2, 'eur'),
     'HOLGURA_CAJA': ('Punto Equilibrio', r'^holgura sobre el equilibrio de caja', 2, 'pct'),
     'HOLGURA_CAJA_A2': ('Punto Equilibrio', r'^holgura sobre el equilibrio de caja', 3, 'pct'),
+    'HOLGURA_CAJA_A3': ('Punto Equilibrio', r'^holgura sobre el equilibrio de caja', 4, 'pct'),
     'BE_INGRESOS_CAJA_A2': ('Punto Equilibrio', r'^ingresos necesarios al a[ñn]o \(caja\)', 3, 'eur'),
     'INVITADOS_EVENTO_A2': ('PyG 3 Años', r'^invitados por evento \(media\)', 3, 'dec1'),
     'INVITADOS_EVENTO_A3': ('PyG 3 Años', r'^invitados por evento \(media\)', 4, 'dec1'),

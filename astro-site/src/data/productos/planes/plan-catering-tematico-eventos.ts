@@ -166,7 +166,7 @@ const data: PlanNegocioData = {
       { name: 'Carolina Vega', role: 'Chef ceviche + barra Pisco, Barcelona', text: 'La calculadora pricing dual + el factor multi-concepto me ahorró 6 meses de prueba y error. Hago bodas premium peruano + brunch latino y ya cierro presupuestos en 10 minutos con margen real del 55 %.', avatar: '/avatars/avatar-5.jpg' },
       { name: 'Rajesh Patel', role: 'Tandoor master + curry station, Madrid', text: 'Ofrezco tandoor móvil para bodas multiculturales y embajadas. El kit me organizó proveedores premium (Spice Box, TRS Foods) y la matriz de 96 proveedores fue oro. Ticket medio embajadas 110 €/pax.', avatar: '/avatars/avatar-6.jpg' },
       { name: 'Carmen Soler', role: 'Catering vegano premium, Madrid', text: 'El catering vegano ESG está explotando para corporate. El plan + la guía de especialización me clarificaron cómo posicionarme premium (45-85 €/pax) y no como alternativa low-cost. Brand events corporate son ahora mi 65 % de ingresos.', avatar: '/avatars/avatar-7.jpg' },
-      { name: 'Sam Williams', role: 'Texas BBQ pitmaster, Madrid', text: 'Slow-smoked BBQ con smoker offset es nicho en España. El plan me dio el dossier B2B y los modelos de contrato MSA — cerré acuerdo marco anual con 2 empresas tech corporate creativo en Madrid.', avatar: '/avatars/avatar-8.jpg' },
+      { name: 'Sam Williams', role: 'Texas BBQ pitmaster, Madrid', text: 'Slow-smoked BBQ con smoker offset es nicho en España. El plan me dio los contratos B2B y los modelos de contrato MSA — cerré acuerdo marco anual con 2 empresas tech corporate creativo en Madrid.', avatar: '/avatars/avatar-8.jpg' },
     ],
   },
 

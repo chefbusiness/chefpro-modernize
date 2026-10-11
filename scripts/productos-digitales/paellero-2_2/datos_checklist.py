@@ -69,7 +69,10 @@ FASES = [
          'caldos para restaurantes) de forma no marginal; para servir al cliente final, no (art. 2 del RD 191/2011)'),
         ('Plan APPCC itinerante: prerrequisitos y puntos de control', 'Titular', 'Antes del primer evento',
          'Puntos críticos: frío del marisco y la carne en el transporte, cocción y servicio a 63 °C o más (art. 30 '
-         'del RD 1086/2020) y alioli con huevo pasteurizado o sin huevo. Nunca arroz tibio a temperatura ambiente'),
+         'del RD 1086/2020) y alioli con huevo pasteurizado o sin huevo. Nunca arroz tibio a temperatura ambiente. '
+         'Guarda una comida testigo de cada arroz (100 g, identificada y fechada, a 4 °C o menos o congelada, 7 '
+         'días): obligatoria en eventos de más de 40 personas y si los eventos son tu actividad principal (art. '
+         '30.8 y 30.10 del RD 1086/2020)'),
         ('Fichas de alérgenos de cada arroz y de las salsas', 'Titular', 'Antes del primer evento',
          'Reglamento (UE) 1169/2011 y RD 126/2015: crustáceos, moluscos, pescado, apio de los caldos, sulfitos, '
          'huevo del alioli, gluten de la fideuá. La tabla del manual técnico es tu punto de partida'),
@@ -195,15 +198,16 @@ FASES = [
         ('Alta en directorios de eventos para empresas y en Hosply', 'Titular', 'Mes 2',
          'Visibilidad ante agencias, planners y empresas'),
         ('Wedding planners: lista y primer contacto', 'Titular', 'Mes 1-3',
-         'Lista de los planners de tu zona y un correo personal a cada uno (anexo del plan de negocio)'),
+         'Lista de los planners de tu zona y un correo personal a cada uno (sección 5 del plan de negocio)'),
         ('Degustación para planners y fincas', 'Titular', 'Mes 2-4',
          'Una paella en directo para los que más bodas mueven: es tu mejor dossier'),
         ('Agencias, empresas y hoteles de la zona', 'Titular', 'Mes 2-4',
          'Comidas de verano, Navidad y show cooking en terrazas y hoteles'),
         ('Ayuntamientos y comisiones de fiestas: contrato menor y factura por FACe', 'Titular', 'Mes 2-6',
          'Un ayuntamiento compra por contrato menor (servicios de menos de 15.000 €, Ley 9/2017 art. 118) y paga a '
-         '30 días desde la conformidad (art. 198.4). Si eres SL, la factura va en electrónico por FACe (Ley 25/2013, '
-         'art. 4). Alta en la Plataforma de Contratación para ver las licitaciones'),
+         '30 días desde la conformidad (art. 198.4), sin anticipo. Si eres SL, la factura va en electrónico a su punto '
+         'general de entrada (FACe en la mayoría; Ley 25/2013, art. 4), salvo que exima las de hasta 5.000 €. Alta en '
+         'la Plataforma de Contratación para ver las licitaciones'),
         ('Dossiers para bodas, empresas y ayuntamientos', 'Titular', 'Mes 1-2',
          'Con las 10 experiencias y la carta de 12 arroces del kit, y los precios por ración de cada tipo de evento'),
         ('Publicidad, referidos y jornada de puertas abiertas', 'Titular', 'Mes 2+',
@@ -217,7 +221,8 @@ FASES = [
          'terreno forestal o en su franja'),
         ('Presupuesto firmado y anticipo del 30 %', 'Titular', 'Al reservar la fecha',
          'Sin anticipo no se bloquea la fecha. Particulares: el 70 % restante el día del evento; empresas: a 30 días '
-         'de la factura. En efectivo, sólo hasta 1.000 € con particulares (Ley 7/2012, art. 7)'),
+         'de la factura. En efectivo, sólo pagos por debajo de 1.000 € (Ley 7/2012, art. 7). Los ayuntamientos no '
+         'adelantan: pagan a 30 días desde la conformidad'),
         ('Contrato firmado con cancelación, fuerza mayor y plan B', 'Titular', 'Al reservar la fecha',
          'Modelos del kit: tramos de cancelación, sin desistimiento en un servicio con fecha (art. 103.l TRLGDCU) y '
          'plan B si una alerta de incendios prohíbe el fuego o el gas'),
@@ -234,12 +239,14 @@ FASES = [
         ('Salida con margen, montaje y encendido', 'Titular', 'Día del evento',
          'Una hora de margen sobre el trayecto y 30-45 minutos para montar y encender'),
         ('Cocción, show cooking y servicio', 'Titular', 'Día del evento',
-         'Registro de temperaturas en el APPCC y servicio a 63 °C o más; nada de arroz tibio a temperatura ambiente'),
+         'Registro de temperaturas en el APPCC y servicio a 63 °C o más; nada de arroz tibio a temperatura ambiente. '
+         'Aparta la comida testigo de cada arroz (art. 30.8 del RD 1086/2020)'),
         ('Recogida, limpieza y fotos del espacio', 'Ayudante', 'Final del evento',
          'Fotos del espacio antes y después: te protegen ante una reclamación de daños'),
         ('Cobro y factura', 'Titular', 'D+1 / D+2',
-         'Particulares: el 70 % el día del evento. Empresas: a 30 días de la factura. Ayuntamientos: por FACe y a '
-         '30 días desde la conformidad'),
+         'Particulares: el 70 % el día del evento. Empresas: a 30 días de la factura. Ayuntamientos: factura '
+         'electrónica en su punto general de entrada (FACe en la mayoría, salvo que exima las de hasta 5.000 €) y '
+         'cobro a 30 días desde la conformidad'),
         ('Reseña, fotos y agradecimiento al planner', 'Titular', 'D+2',
          'Pide la reseña y el permiso para publicar las fotos; si vino por un planner, agradéceselo'),
         ('CRM, costes reales frente al presupuesto y cierre trimestral', 'Titular', 'D+7 y cada trimestre',

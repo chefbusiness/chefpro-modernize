@@ -122,3 +122,47 @@ Después: (1) **Una revisión opus final** (D15) recalcular a mano 3 cifras del 
 | Plan de negocio docx | `2a36662b…fb6` |
 
 - **Pendiente** (fuera de este paso): la revisión opus final (D15), D14 y D16 (otro agente), `gate-flujo-postpago --only plan-negocio-paellero-eventos` en preview y en LIVE, y las páginas del docx (el VPS no tiene LibreOffice).
+
+## 6. Ronda de arreglos tras `REVISION-FINAL.md` (11-oct-2026): 0 bloqueantes, 6 mayores y 16 menores aplicados
+
+Todos, salvo la fecha «septiembre 2026» del motor (aceptada). Los testimonios, por decisión de John: «dossier B2B» → «los contratos B2B» (Antonio Rivas y Sam Williams, ficha y SPA).
+
+- **M1**: frase del motor sobre el «Word en la versión 1.1», por `VOCABULARIO` (Tesorería!D31). En el paellero, además, el cuadro de Instrucciones pasa a «respecto de la versión 1.2 / v1.2». **El Catering ES 2.2 también lo lleva**: `ciclo.sh` re-pasado y sus 2 xlsx copiados a `dl/`.
+- **M2**: carta re-escandallada, «food cost de la paella (sin entrantes)»: 2,00-6,00 € por ración, con los rangos del research §2. Calculadora con la paella más los entrantes: la boda, 6,70 + 0,48 € → 28 €.
+- **M3**: un ayuntamiento no adelanta el 30 %.
+  - Calculadora: nota del canal y ejemplo con 0 % de anticipo.
+  - Docx p82/p107/p112, checklist F5/F6.
+  - Landing `:150` y dashboard `:68`: «(wedding planners y agencias)».
+- **M4**: comida testigo (RD 1086/2020, art. 30.8 y 30.10, leído en el BOE) en el checklist F2/F6 y el docx p104. **El catering la omitía**: añadida en su checklist (F2/F6) y en su docx p104, re-ensamblado.
+- **M5/M6**: fiesta popular de las experiencias (3-6 € por ración, paelleras de 120-150 cm). La guía del food truck, sin márgenes ni plazos de la 1.x atribuidos a los eventos.
+- **Menores**:
+  - Efectivo «por debajo de 1.000 €».
+  - Exención FACe hasta 5.000 €.
+  - Holgura del año 3 (token `HOLGURA_CAJA_A3`).
+  - Restos de molde por `VOCABULARIO` («pan común» de O16, «obra» de A31/A44/D27/D32) y «dos auxiliares».
+  - Contratos: fuera «+ factura por gestión»; RC [600.000] € como mínimo; «en nombre propio o en representación de…»; derechos RGPD completos; interés de demora de la Ley 3/2004.
+  - Anticipo antes del D-30, cobertura bien explicada, artículos ante los %, ATP matizado, ficha de Bodas.net y Fogueres de Sant Joan.
+- **m9 · cifras**: `pct_comida` = 0,92 (SPEC D4; el libro conservaba el 85,19 % del molde). Cambian:
+
+| Dato | Antes | Ahora |
+|---|---|---|
+| Neto año 1 | 12.209 € | 12.392 € (7,8 %) |
+| DSCR mínimo | 1,70 | 1,72 |
+| Holgura de caja años 1/2/3 | 22,2 / 13,5 % | 22,4 / 13,7 / 13,5 % |
+| Margen bruto | 63,2 % | 63,3 % |
+| PVP con IVA | 17,61 € | 17,60 € |
+| Saldo mínimo de tesorería | 6.088 € | 6.130 € |
+
+  Sin cambios: inversión (63.111 €), préstamo (51.600 €), necesidad de caja (71.487 €) y equilibrio (81/90; caja 77/86; año 2, 102 eventos). La landing no citaba ninguna de las cifras que se mueven.
+- **Gates del paellero**:
+  - Motor: TODO VERDE, idempotencia 0. D15 VERDE.
+  - Docx: 11 H1, 7.990 palabras, 0 tokens. Calculadora: 336/336.
+  - Restos: VERDE. Prohibidos: 0. Términos D15 y de la ronda: 0.
+  - Censo 0, no latinos 0, moldes A-β / C2 / calc-beta / P2.
+  - Manual: 4.437 palabras, 14 H1 y 10 tablas.
+- **Gates del catering**:
+  - Motor: TODO VERDE, idempotencia 0. D15 VERDE, con `cifras_caso_es.json` sin cambios.
+  - Docx: 10 H1, 7.607 palabras.
+  - Restos sin opciones: VERDE. Prohibidos: 0. Censo 0. No latinos 0.
+- **Pendiente del catering** (fuera del encargo, para decidir): su `0. Supuestos!B11` también conserva el 85,19 % del molde frente al 82/18 de sus líneas de venta, y su Tesorería!O16 cita «el pan común».
+- **sha256** (Mac = VPS en los 22 ficheros de los dos productos): en el informe del commit.

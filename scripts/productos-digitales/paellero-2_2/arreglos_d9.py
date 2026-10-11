@@ -43,6 +43,25 @@ DOCX = {
         (('p', 6), 'Cada una tiene su propio dossier visual, ticket recomendado y storytelling diferenciado.',
          'Cada una tiene su ticket recomendado y su storytelling, y puedes preparar su dossier visual para '
          'presentarla.'),
+        # Ronda de la REVISION-FINAL (m16, M5)
+        (('p', 6), 'aumenta el ticket medio 30-45 % y mejora', 'te deja cobrar la experiencia y no solo el plato, y mejora'),
+        (('p', 20), 'Ticket por pax: 12-18 €/pax',
+         'Ticket por ración: 3-6 € sin IVA para el ayuntamiento (volumen, una variedad); 12-18 € si es la comida de '
+         'una peña con entrante y servicio'),
+        (('p', 21), 'Paellera 200 cm sobre fuego de leña con trípode tradicional.',
+         'En paelleras de 120-150 cm, con gas o con leña donde esté permitido.'),
+        (('p', 36), 'o julio (Hogueras Alicante)', 'o junio (Fogueres de Sant Joan, Alicante)'),
+    ],
+    'guia-tipos-paellero-roadmap-food-truck.docx': [
+        # Ronda de la REVISION-FINAL (M6): sin márgenes ni plazos de la 1.x atribuidos a los eventos
+        (('p', 9), '99 % de la facturación', 'la mayoría de los eventos'),
+        (('p', 66), 'con un retorno de inversión típico de 18-30 meses.',
+         'y el plazo de recuperación depende de la inversión y del volumen: mídelo con el plan financiero del kit.'),
+        (('p', 97), '(más bajo que paella eventos por compra a granel)', '(estimación del kit)'),
+        (('p', 98), 'Margen neto objetivo: 22-28 % (más bajo que paella eventos por costes operativos diarios).',
+         'Margen neto: calcúlalo con el plan financiero del kit; el caso de eventos deja un 7,8 % el primer año.'),
+        (('p', 100), 'Break-even típico: 18-30 meses según inversión inicial y volumen.',
+         'Break-even: depende de la inversión y del volumen; mídelo con el plan financiero del kit.'),
     ],
     CARTA: [
         (('p', 1), 'Recetas profesionales · Escandallo · Maridaje',
@@ -58,15 +77,20 @@ DOCX = {
          'La inversión inicial completa (con la furgoneta, la cocina de apoyo y el fondo de maniobra) está calculada '
          'en el plan financiero de este kit; este catálogo detalla el equipamiento de cocción y servicio.'),
     ],
-    'guia-tipos-paellero-roadmap-food-truck.docx': [],
     'manual-tecnico-paellero-profesional.docx': [],
     CONTRATO: [
         (('p', 2), 'Plantillas validadas con asesor legal — adapta nombre, fecha, importe y demás datos',
          'Plantillas orientativas: revísalas con tu asesor antes de usarlas y adapta nombre, fecha, importe y demás '
          'datos'),
         (('p', 23), 'o efectivo el día del evento.',
-         'o en efectivo el día del evento, solo hasta 1.000 € (límite de pagos en efectivo entre un empresario y un '
-         'consumidor, art. 7 de la Ley 7/2012).'),
+         'o en efectivo el día del evento solo si el pago es inferior a 1.000 € (la ley prohíbe pagar en efectivo '
+         '1.000 € o más entre un empresario y un consumidor, art. 7 de la Ley 7/2012).'),
+        # Ronda de la REVISION-FINAL (m3, m12)
+        (('p', 66), 'facturación 100 % del importe + factura por gestión.', 'facturación del 100 % del importe.'),
+        (('p', 68), 'con cobertura ampliada de 1.000.000 €', 'con cobertura de [600.000] € como mínimo'),
+        (('p', 35), 'derechos de acceso, rectificación y supresión',
+         'derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición'),
+        (('p', 53), 'interés legal del dinero + 2 puntos', 'el interés de demora del art. 7 de la Ley 3/2004'),
         (('p', 31), 'intervención de la autoridad sanitaria)',
          'intervención de la autoridad sanitaria, la prohibición del uso del fuego o del gas por la época o el nivel '
          'de peligro de incendios)'),
@@ -97,18 +121,37 @@ INSERTAR = {
              'Fiestas populares por volumen: una paella grande para un ayuntamiento o una comisión de fiestas, de '
              '300-400 raciones o más, se cobra a 3-6 € por ración sin IVA, con una sola variedad y servicio en plato '
              'desechable. Referencias: contratos menores publicados en la Plataforma de Contratación del Sector '
-             'Público (Sayalonga, 2025: 400 raciones de paella mixta con menaje y servicio por 1.480 €) y fichas de '
-             'proveedores de paella gigante en Bodas.net (3-10 € por invitado). En las fiestas privadas (cumpleaños, '
+             'Público (Sayalonga, 2025: 400 raciones de paella mixta con menaje y servicio por 1.480 €) y la ficha de un '
+             'proveedor de paella gigante en Bodas.net (3-10 € por invitado, mínimo 300). En las fiestas privadas (cumpleaños, '
              'comuniones, peñas) con una paella y un entrante, el plan financiero usa 18 € por ración; una paella sola '
              'para grupos se cobra a 11-14 € por persona (tarifa publicada de un proveedor de Cataluña, 2026).')],
 }
 
+_FC = iter(())
+
+
+def _reiniciar_fc():
+    global _FC
+    _FC = iter(('2,20', '5,80', '5,20', '3,60', '3,50', '3,40', '3,50', '6,00', '6,00', '3,20', '3,40', '2,00'))
+
+
+def _FOOD_COST(_m):
+    return 'Food cost de la paella (sin entrantes): %s € por ración' % next(_FC)
+
+
 #: Sustituciones por patrón en TODOS los párrafos de un fichero (se exige el nº exacto).
 REGEX = {
+    # m12 (REVISION-FINAL): el plan es de una SL; las dos partes «Paellero» de los modelos B2C y B2B
+    CONTRATO: [
+        (re.compile(r'en calidad de profesional autónomo'),
+         r'en nombre propio o en representación de [Razón social del Paellero]', 2),
+    ],
     CARTA: [
         (re.compile(r'PVP recomendado al cliente: (\d+-\d+) € / pax'),
          r'PVP orientativo por ración (bodas y empresas, con entrantes y show cooking, sin IVA): \1 €', 12),
-        (re.compile(r'Food cost estimado: ([\d,]+) € / pax'), r'Food cost estimado: \1 € por ración', 12),
+        # M2 (REVISION-FINAL): food cost de la PAELLA SOLA, re-escandallado con los rangos del research §2
+        # (Valenciana 2,0-2,4 €; mixta y marisco 3,5-6 €), en el orden de la carta
+        (re.compile(r'Food cost estimado: [\d,]+ € / pax'), _FOOD_COST, 12),
     ],
 }
 
@@ -192,10 +235,11 @@ def docx_(origen, destino, reglas, log):
     # (2) sustituciones por patrón
     for rx, repl, esperado in REGEX.get(f, []):
         n = 0
+        _reiniciar_fc()
         for p in d.paragraphs:
             m = rx.search(p.text)
             if m:
-                if not _sustituir_parrafo(p, m.group(0), m.expand(repl)):
+                if not _sustituir_parrafo(p, m.group(0), repl(m) if callable(repl) else m.expand(repl)):
                     raise SystemExit('ABORTADO: %s no pude sustituir «%s»' % (f, m.group(0)))
                 n += 1
         if n != esperado:

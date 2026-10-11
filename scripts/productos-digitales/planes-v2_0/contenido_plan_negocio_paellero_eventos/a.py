@@ -77,6 +77,19 @@ VOCABULARIO = {
     'partidas de obra y acondicionamiento': 'partidas de la furgoneta',
     'de obra y licencias': 'de puesta en marcha (pruebas de arroz y degustaciones)',
     'un banco no financia una reforma sin colchón': 'un banco no financia una compra así sin colchón',
+    # REVISION-FINAL M1: el Word del pack 2.2 sí cita el payback; frase fija del motor (grupo_a.py:3766)
+    'El documento Word del pack sigue en la versión 1.1 y no lee esta celda: las cifras válidas son las de este libro':
+        'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
+    # La versión anterior del paellero es la 1.2 (Instrucciones, cuadro «qué ha cambiado»)
+    'qué ha cambiado respecto de la versión 1.1': 'QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.2',
+    'v1.1': 'v1.2',
+    # REVISION-FINAL m8: restos de otros moldes en las frases del motor
+    'el pan común y las harinas panificables, al superreducido (art. 91.Dos.1.1.º':
+        'la carpa o el mobiliario facturados aparte, al general (art. 90',
+    'obra, instalaciones y acondicionamiento': 'furgoneta, rotulación e imprevistos',
+    'de obra e instalaciones': 'de la furgoneta y su rotulación',
+    'lo que se compra: obra, equipamiento': 'lo que se compra: furgoneta, equipamiento',
+    'lo que se COMPRA (obra, equipamiento': 'lo que se COMPRA (furgoneta, equipamiento',
 }
 
 #: clave → (fila, rótulo, valor, formato, nota, fuente). Fila, rótulo y formato a None: los pone el motor.
@@ -110,6 +123,11 @@ SUPUESTOS = {
         'peñas, urbanizaciones) y 10 fiestas populares. Es el MISMO dato para la cuenta de resultados, el punto de '
         'equilibrio, los escenarios y las horas de personal',
         'research §3 [estimado]'),
+    'pct_comida': (
+        None, None, 0.92, None,
+        'Comida (paellas, entrantes y postre) sobre las ventas; el 8 % restante es el pack opcional de bebida. Es la '
+        'suma de las líneas de comida del P&L',
+        'research §3 · SPEC D4 (92/8)'),
     'coste_comida': (
         None, None, 0.28, None,
         'Materia prima de la comida sobre las ventas de comida: arroz, carne, marisco, verdura, caldo, azafrán, '
@@ -201,7 +219,7 @@ SUPUESTOS = {
         'molde (mínimo de la familia)'),
     'vida_obra': (
         None, None, 8, None,
-        'En este plan la «obra» es la furgoneta isoterma y su rotulación: ocho años son el 12,5 % anual, por debajo '
+        'La furgoneta isoterma y su rotulación se amortizan en ocho años, el 12,5 % anual, por debajo '
         'del 16 % máximo para elementos de transporte de la tabla del art. 12.1 de la Ley del Impuesto sobre '
         'Sociedades. Confírmalo con tu asesor',
         'research §3 · LIS art. 12.1'),
@@ -219,7 +237,7 @@ SUPUESTOS = {
     'aforo': (
         None, 'Capacidad máxima por evento (invitados)', 500, None,
         'DATO INFORMATIVO: no entra en ningún cálculo. Es la fiesta más grande que puedes servir con dos paelleros, '
-        'tres auxiliares y tus paelleras (incluida la de 150 cm, de 90-120 raciones)',
+        'los dos auxiliares y tus paelleras (incluida la de 150 cm, de 90-120 raciones)',
         'research §3 · manual técnico 1.2, tabla 1 [estimado]'),
     'salario_convenio': (
         None, None, 0, None,

@@ -51,18 +51,19 @@ TABLA = OrderedDict([(50, (7, 700, 1.8)), (60, (11, 1100, 2.8)), (70, (16, 1600,
 
 ENTRADAS = [
     ('canal', 'Cliente', '@', 'Particular',
-     'Particular o Empresa: cambia los tramos de cancelación (contratos del kit). Ayuntamientos y comisiones de '
-     'fiestas cuentan como Empresa.'),
+     'Particular o Empresa: cambia los tramos de cancelación (contratos del kit). Las comisiones de fiestas y '
+     'peñas cuentan como Empresa. Un ayuntamiento no adelanta el 30 %: compra por contrato menor y paga a 30 días '
+     'desde la conformidad (art. 198.4 de la Ley 9/2017); pon 0 % de anticipo.'),
     ('guests', 'Invitados previstos', ENT, 120, 'Número entero de raciones que sirves.'),
     ('arroz', 'Arroz principal (informativo)', '@', 'Valenciana',
      'Sólo etiqueta el presupuesto: no entra en el cálculo. Cada variedad extra suma su paellera.'),
     ('diam', 'Diámetro de paellera (cm)', ENT, 120,
      'Fija las raciones, el arroz y el caldo por paellera con la tabla del final de esta hoja.'),
-    ('mp', 'Coste de materia prima por invitado', EUR, 8.90,
-     'Tu escandallo. La carta del kit da el food cost por ración con acompañamientos (7,60-16,50 €) para bodas y '
-     'empresas; una paella sola de fiesta popular ronda 2,00-2,50 €.'),
-    ('menaje', 'Coste de menaje, pan y desechables por invitado', EUR, 0.40,
-     'Estimación del kit: 0,30-0,45 €. Pon 0 si el cliente pone el menaje.'),
+    ('mp', 'Coste de materia prima por invitado', EUR, 6.70,
+     'Tu escandallo. La carta del kit da el food cost de la paella sola (2,00-6,00 € por ración): suma los '
+     'entrantes, el pan y el alioli si los sirves. Una paella sola de fiesta popular ronda 2,00-2,50 €.'),
+    ('menaje', 'Coste de menaje, pan y desechables por invitado', EUR, 0.48,
+     'Estimación del kit: 0,30-0,50 €. Pon 0 si el cliente pone el menaje.'),
     ('gas_kg', 'Gas por paellera y servicio (kg)', DEC, 1.3, 'Estimación del kit: 1,3 kg por paellera.'),
     ('gas_p', 'Precio del gas (€ por kg)', EUR, 2.25,
      'Propano de 35 kg a 78,80 € en julio de 2026 (boletín del IDAE): unos 2,25 € por kg.'),
@@ -97,7 +98,8 @@ SALIDAS = [
     ('rac', 'Raciones por paellera (tabla)', ENT, '{t_rac}', 'Busca el diámetro en la tabla del final.'),
     ('pan', 'Paelleras necesarias', ENT, 'roundup({guests}/{rac},0)', 'Invitados entre raciones por paellera, hacia arriba.'),
     ('pae', 'Paelleros necesarios', ENT, 'roundup({pan}/3,0)',
-     'Tres paelleras son el techo de un paellero (manual técnico 1.2).'),
+     'Regla conservadora: un paellero lleva hasta tres paelleras; con ayudante, cuatro (manual técnico del kit, '
+     'tabla para 100 invitados).'),
     ('kg_arroz', 'Arroz total (kg)', DEC, '{pan}*{t_arroz}/1000', 'Paelleras × arroz por paellera de la tabla.'),
     ('l_caldo', 'Caldo total (litros)', DEC, '{pan}*{t_caldo}', 'Paelleras × caldo por paellera de la tabla.'),
     ('kg_gas', 'Gas total (kg)', DEC, '{pan}*{gas_kg}', ''),
@@ -131,8 +133,8 @@ SALIDAS = [
      'if({canal}=="Particular",{total}*0.5,{dep_amt}*0.3)',
      'Particular: el 50 % del total. Empresa: el 30 % del anticipo.'),
     ('can3', 'Importe retenido si cancela con menos de 30 días (Empresa: entre 30 y 15)', EUR,
-     'if({canal}=="Particular",{total}*0.75,{dep_amt}*0.6+%d)' % GESTION,
-     'Particular: el 75 % del total. Empresa: el 60 % del anticipo más 200 € de gestión.'),
+     'if({canal}=="Particular",{total}*0.75,if({dep_amt}==0,0,{dep_amt}*0.6+%d))' % GESTION,
+     'Particular: el 75 % del total. Empresa: el 60 % del anticipo más 200 € de gestión (0 si no hay anticipo).'),
     ('can4', 'Importe retenido si cancela con 72 horas o menos (Empresa: menos de 15 días)', EUR, '{total}',
      'Particular y Empresa: el 100 % del total.'),
 ]
@@ -140,26 +142,32 @@ S = OrderedDict((k, F_CALC + 1 + i) for i, (k, *_r) in enumerate(SALIDAS))
 F_TABLA = F_CALC + 1 + len(SALIDAS) + 1
 
 EJEMPLOS = OrderedDict([
-    ('Boda en finca', dict(canal='Particular', guests=120, arroz='Valenciana', diam=120, mp=8.90, menaje=0.40,
+    ('Boda en finca', dict(canal='Particular', guests=120, arroz='Valenciana', diam=120, mp=6.70, menaje=0.48,
                            gas_kg=1.3, gas_p=2.25, help=2, hours=9, wage=13.0, ss=0.33, rentals=400.0, km=35,
-                           per_km=0.95, show=0.0, margin=0.40, iva=0.10, deposit=0.30)),
-    ('Comida de empresa con show cooking', dict(canal='Empresa', guests=70, arroz='Marisco', diam=90, mp=8.50,
+                           per_km=0.95, show=0.0, margin=0.48, iva=0.10, deposit=0.30)),
+    ('Comida de empresa con show cooking', dict(canal='Empresa', guests=70, arroz='Marisco', diam=90, mp=5.70,
                                                 menaje=0.45, gas_kg=1.3, gas_p=2.25, help=1, hours=7, wage=13.0,
-                                                ss=0.33, rentals=0.0, km=25, per_km=0.95, show=0.08, margin=0.45,
+                                                ss=0.33, rentals=0.0, km=25, per_km=0.95, show=0.08, margin=0.56,
                                                 iva=0.10, deposit=0.30)),
     ('Fiesta popular de ayuntamiento', dict(canal='Empresa', guests=400, arroz='Mixta', diam=150, mp=2.25,
                                             menaje=0.30, gas_kg=1.3, gas_p=2.25, help=2, hours=7, wage=12.0, ss=0.33,
                                             rentals=0.0, km=30, per_km=0.95, show=0.0, margin=0.12, iva=0.10,
-                                            deposit=0.30)),
+                                            deposit=0.0)),
 ])
 EJ_NOTAS = OrderedDict([
     ('Boda en finca', 'Particular, 120 invitados, dos variedades en paellera de 120 cm más entrantes (la materia '
-                      'prima incluye los acompañamientos), carpa y mesas alquiladas repercutidas y precio con IVA.'),
-    ('Comida de empresa con show cooking', 'Empresa: presupuesto «+ IVA», cocina a la vista con el 8 % de suplemento '
-                                           'y tramos de cancelación sobre el anticipo.'),
-    ('Fiesta popular de ayuntamiento', 'Ayuntamiento = Empresa. 400 raciones en paelleras de 150 cm, menaje '
+                      'prima incluye la paella y los entrantes), carpa y mesas alquiladas repercutidas, margen objetivo del 48 % '
+                      'y precio con IVA.'),
+    ('Comida de empresa con show cooking', 'Empresa: presupuesto «+ IVA», cocina a la vista con el 8 % de suplemento, '
+                                           'margen alto por el show cooking y el servicio a empresa, y tramos de '
+                                           'cancelación sobre el anticipo.'),
+    ('Fiesta popular de ayuntamiento', '400 raciones en paelleras de 150 cm, menaje '
                                        'desechable y margen bajo por volumen: el precio por ración queda en el '
-                                       'orden de 4-5 € (en 2025, Sayalonga cobró 1.480 € por 400 raciones).'),
+                                       'orden de 4-5 € (en 2025, Sayalonga cobró 1.480 € por 400 raciones). Sin anticipo: el '
+                                           'ayuntamiento paga a 30 días desde la conformidad; los tramos de cancelación '
+                                           'de los contratos del kit no se le aplican (contrata con su propio pliego o '
+                                           'contrato menor). El kit trae una paellera de 150 cm: alquila las demás o '
+                                           'usa varias de 120 cm.'),
 ])
 
 
@@ -209,7 +217,7 @@ def calcular(e):
     part = e['canal'] == 'Particular'
     r['can1'] = r['total'] * 0.3 if part else 0.0
     r['can2'] = r['total'] * 0.5 if part else r['dep_amt'] * 0.3
-    r['can3'] = r['total'] * 0.75 if part else r['dep_amt'] * 0.6 + GESTION
+    r['can3'] = r['total'] * 0.75 if part else (0.0 if r['dep_amt'] == 0 else r['dep_amt'] * 0.6 + GESTION)
     r['can4'] = r['total']
     return r
 
@@ -281,7 +289,7 @@ def hoja_calculadora(wb):
         _f(ws, 'B%d' % f, '=' + a_excel(expr, ref), fmt=fmt, b=neg)
         if nota:
             _f(ws, 'C%d' % f, nota, wrap=True)
-    _f(ws, 'A%d' % F_TABLA, 'TABLA DE ESCALADO POR PAELLERA (manual técnico 1.2, tabla 1): diámetro en cm',
+    _f(ws, 'A%d' % F_TABLA, 'TABLA DE ESCALADO POR PAELLERA (manual técnico del kit, tabla 1): diámetro en cm',
        b=True, fill=GRIS)
     for col, t in zip('BCD', ('Raciones', 'Arroz (g)', 'Caldo (L)')):
         _f(ws, '%s%d' % (col, F_TABLA), t, b=True, fill=GRIS)
@@ -363,8 +371,9 @@ INSTRUCCIONES = [
     ('Convierte tus costes en un precio por invitado y en un presupuesto completo: paelleras y paelleros, arroz, '
      'caldo y gas, subtotal, IVA, total, anticipo y lo que retienes si el cliente cancela. Sólo se escribe en las '
      'celdas VERDES; el margen se calcula.', False),
-    ('1. Elige el cliente (Particular o Empresa; ayuntamientos y comisiones de fiestas cuentan como Empresa), los '
-     'invitados y el diámetro de paellera.', False),
+    ('1. Elige el cliente (Particular o Empresa; las comisiones de fiestas y peñas cuentan como Empresa; a un '
+     'ayuntamiento, que paga a 30 días desde la conformidad, ponle 0 % de anticipo), los invitados y el diámetro '
+     'de paellera.', False),
     ('2. La tabla de escalado del final de la primera hoja da las raciones, el arroz y el caldo por paellera. Las '
      'paelleras salen de dividir los invitados entre las raciones de la paellera, hacia arriba; un paellero atiende '
      'como máximo tres paelleras.', False),
@@ -383,7 +392,7 @@ INSTRUCCIONES = [
      '91.Uno.2.2.º). Lo que facturas aparte sin ser accesorio, como la carpa o el mobiliario, va al 21 %.', False),
     ('La propina voluntaria es decisión del cliente y es del equipo: no entra en el precio, en la base imponible ni '
      'en el total.', False),
-    ('Los pagos en efectivo con particulares sólo valen hasta 1.000 € (art. 7 de la Ley 7/2012).', False),
+    ('Los pagos en efectivo con particulares solo valen por debajo de 1.000 €: la ley prohíbe pagar en efectivo 1.000 € o más (art. 7 de la Ley 7/2012).', False),
     ('ANTICIPO Y CANCELACIÓN', True),
     ('El anticipo es del 30 % al firmar. Importes retenidos según los contratos del kit. Particular, sobre el total: '
      'más de 60 días, el 30 %; entre 60 y 30 días, el 50 %; menos de 30 días, el 75 %; con 72 horas o menos, el '

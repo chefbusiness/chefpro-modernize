@@ -65,7 +65,7 @@ const TEMPLATES = [
     icon: ScrollText,
     type: '.docx',
     title: 'Modelos Contrato B2C + B2B',
-    desc: 'Plantillas editables y orientativas: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias, ayuntamientos) con anexo tarifario, briefing y SLA, IVA al 10 %, cancelación escalonada y fuerza mayor por alerta de incendios. Revísalas con tu asesor antes de usarlas.',
+    desc: 'Plantillas editables y orientativas: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners y agencias) con anexo tarifario, briefing y SLA, IVA al 10 %, cancelación escalonada y fuerza mayor por alerta de incendios. Revísalas con tu asesor antes de usarlas.',
   },
   {
     key: 'experiencias-tematicas',

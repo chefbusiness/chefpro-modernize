@@ -23,7 +23,7 @@ export const planPaelleroEventosTestimonials = [
   {
     name: 'Antonio Rivas',
     role: 'Paellero murciano, Mar Menor',
-    text: 'Soy de Murcia y llevaba años haciendo paella de marisco en eventos privados sin marca. El plan de negocio y el dossier B2B me posicionaron premium en wedding planners de la zona Levante.',
+    text: 'Soy de Murcia y llevaba años haciendo paella de marisco en eventos privados sin marca. El plan de negocio y los contratos B2B me posicionaron premium en wedding planners de la zona Levante.',
     avatar: avatar3,
   },
   {
