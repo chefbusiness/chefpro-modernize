@@ -1,0 +1,1697 @@
+{
+ "sha256": {
+  "12-conceptos-tematicos-pre-empaquetados.docx": "b2b62aa6190b0349f57bf0e56f660c5ebe210d43dc642ce1779908b68ca820e3",
+  "calculadora-pricing-catering-tematico-eventos.xlsx": "8e2d3c65e61d88f8757e56ceca5abd311559b752af14ab5815c74c79abbb6fa4",
+  "carta-12-menus-tematicos-cocinas-mundo.docx": "69e76000dc452743c2b8501b2faf76e00115d9b5a15a09ac4e250daff32ee219",
+  "catalogo-equipamiento-multi-cocina-catering-tematico.docx": "e191ae90df05045bcec632a5d36813db84744b9cc0a9d60b9e00a8b255981470",
+  "checklist-apertura-catering-tematico-eventos.xlsx": "5aa1a1dafb55c91736c2f043d7669e12adc031ab6765c7b4084429a1ee4fc077",
+  "guia-especializacion-catering-tematico-multi-concepto.docx": "9de62b1fe8c21ba2b1932bb9958554fd508a5859fb4e4566a012baa3ba1dd7ab",
+  "manual-tecnico-multi-cocina-appcc-catering.docx": "a7ecc8d53f07a887d83a6c3f64671c06c647a46e2805cabf0cf112ae123d9352",
+  "modelos-contrato-catering-tematico-b2c-b2b.docx": "3d40913e6fc4b1e008ea1858202a46692a592bfc7a21e98d9c442ad59b542c37",
+  "plan-de-negocio-catering-tematico-eventos.docx": "f079c60c892006e10a70fb52b95f970294fec71fdd0a3cf11218e08eed2dd575",
+  "plan-financiero-catering-tematico-eventos.xlsx": "98ad894992661d37e2258afc21234691ac66c4cb4ab21cd30441e130ae391e37",
+  "plantilla-proveedores-catering-tematico-eventos.xlsx": "2cd1b793e5f6387f7b32e8538dddb5bc946ab20c03ff9923c593d600b83cbc34"
+ },
+ "en_alcance": [
+  "plan-financiero-catering-tematico-eventos.xlsx",
+  "calculadora-pricing-catering-tematico-eventos.xlsx",
+  "checklist-apertura-catering-tematico-eventos.xlsx",
+  "plan-de-negocio-catering-tematico-eventos.docx"
+ ],
+ "CATP": {
+  "Resumen": {
+   "rango": "A1:J21",
+   "formulas": 18,
+   "textos": 41,
+   "palabras": 190,
+   "dv": 0,
+   "cf": 0,
+   "merges": 3,
+   "protegida": false,
+   "rellenos": {
+    "0A0908": 6,
+    "E8E0D2": 5,
+    "C4974A": 1
+   },
+   "fx_con_constantes": [],
+   "fx_con_texto": []
+  },
+  "P&L Año 1": {
+   "rango": "A1:N19",
+   "formulas": 84,
+   "textos": 28,
+   "palabras": 76,
+   "dv": 0,
+   "cf": 0,
+   "merges": 2,
+   "protegida": false,
+   "rellenos": {
+    "E8E0D2": 28,
+    "0A0908": 14,
+    "C4974A": 14
+   },
+   "fx_con_constantes": [
+    [
+     "B9",
+     "=B7*0.28",
+     5012.000000000001
+    ],
+    [
+     "C9",
+     "=C7*0.28",
+     6272.000000000001
+    ],
+    [
+     "D9",
+     "=D7*0.28",
+     10024.000000000002
+    ],
+    [
+     "E9",
+     "=E7*0.28",
+     11900.000000000002
+    ],
+    [
+     "F9",
+     "=F7*0.28",
+     18144.0
+    ],
+    [
+     "G9",
+     "=G7*0.28",
+     21896.000000000004
+    ],
+    [
+     "H9",
+     "=H7*0.28",
+     17500.0
+    ],
+    [
+     "I9",
+     "=I7*0.28",
+     9996.000000000002
+    ],
+    [
+     "J9",
+     "=J7*0.28",
+     16884.0
+    ],
+    [
+     "K9",
+     "=K7*0.28",
+     17528.0
+    ],
+    [
+     "L9",
+     "=L7*0.28",
+     12544.000000000002
+    ],
+    [
+     "M9",
+     "=M7*0.28",
+     21336.000000000004
+    ],
+    [
+     "N9",
+     "=N7*0.28",
+     169036.00000000003
+    ],
+    [
+     "B10",
+     "=B7*0.05",
+     895.0
+    ],
+    [
+     "C10",
+     "=C7*0.05",
+     1120.0
+    ],
+    [
+     "D10",
+     "=D7*0.05",
+     1790.0
+    ],
+    [
+     "E10",
+     "=E7*0.05",
+     2125.0
+    ],
+    [
+     "F10",
+     "=F7*0.05",
+     3240.0
+    ],
+    [
+     "G10",
+     "=G7*0.05",
+     3910.0
+    ],
+    [
+     "H10",
+     "=H7*0.05",
+     3125.0
+    ],
+    [
+     "I10",
+     "=I7*0.05",
+     1785.0
+    ],
+    [
+     "J10",
+     "=J7*0.05",
+     3015.0
+    ],
+    [
+     "K10",
+     "=K7*0.05",
+     3130.0
+    ],
+    [
+     "L10",
+     "=L7*0.05",
+     2240.0
+    ],
+    [
+     "M10",
+     "=M7*0.05",
+     3810.0
+    ],
+    [
+     "N10",
+     "=N7*0.05",
+     30185.0
+    ],
+    [
+     "B11",
+     "=B7*0.15",
+     2685.0
+    ],
+    [
+     "C11",
+     "=C7*0.15",
+     3360.0
+    ],
+    [
+     "D11",
+     "=D7*0.15",
+     5370.0
+    ],
+    [
+     "E11",
+     "=E7*0.15",
+     6375.0
+    ],
+    [
+     "F11",
+     "=F7*0.15",
+     9720.0
+    ],
+    [
+     "G11",
+     "=G7*0.15",
+     11730.0
+    ],
+    [
+     "H11",
+     "=H7*0.15",
+     9375.0
+    ],
+    [
+     "I11",
+     "=I7*0.15",
+     5355.0
+    ],
+    [
+     "J11",
+     "=J7*0.15",
+     9045.0
+    ],
+    [
+     "K11",
+     "=K7*0.15",
+     9390.0
+    ],
+    [
+     "L11",
+     "=L7*0.15",
+     6720.0
+    ],
+    [
+     "M11",
+     "=M7*0.15",
+     11430.0
+    ],
+    [
+     "N11",
+     "=N7*0.15",
+     90555.0
+    ]
+   ],
+   "fx_con_texto": []
+  },
+  "Proyección 3 años": {
+   "rango": "A1:J18",
+   "formulas": 27,
+   "textos": 20,
+   "palabras": 58,
+   "dv": 0,
+   "cf": 0,
+   "merges": 2,
+   "protegida": false,
+   "rellenos": {
+    "E8E0D2": 8,
+    "0A0908": 4,
+    "C4974A": 4
+   },
+   "fx_con_constantes": [
+    [
+     "B12",
+     "=B11*0.28",
+     169036.00000000003
+    ],
+    [
+     "C12",
+     "=C11*0.26",
+     220147.2
+    ],
+    [
+     "D12",
+     "=D11*0.25",
+     278850.0
+    ],
+    [
+     "B13",
+     "=B11*0.05",
+     30185.0
+    ],
+    [
+     "C13",
+     "=C11*0.05",
+     42336.0
+    ],
+    [
+     "D13",
+     "=D11*0.05",
+     55770.0
+    ],
+    [
+     "B14",
+     "=B11*0.15",
+     90555.0
+    ],
+    [
+     "C14",
+     "=C11*0.14",
+     118540.80000000002
+    ],
+    [
+     "D14",
+     "=D11*0.13",
+     145002.0
+    ]
+   ],
+   "fx_con_texto": []
+  },
+  "Break-even": {
+   "rango": "A1:J10",
+   "formulas": 5,
+   "textos": 10,
+   "palabras": 52,
+   "dv": 0,
+   "cf": 0,
+   "merges": 2,
+   "protegida": false,
+   "rellenos": {
+    "0A0908": 2,
+    "C4974A": 2
+   },
+   "fx_con_constantes": [
+    [
+     "B6",
+     "=2200*0.35+4500*0.65",
+     3695.0
+    ],
+    [
+     "B7",
+     "=1-0.28-0.05-0.15",
+     0.5199999999999999
+    ],
+    [
+     "B10",
+     "=B9/12",
+     0.4579993754553972
+    ]
+   ],
+   "fx_con_texto": []
+  },
+  "Mix B2C-B2B": {
+   "rango": "A1:J14",
+   "formulas": 0,
+   "textos": 48,
+   "palabras": 112,
+   "dv": 0,
+   "cf": 0,
+   "merges": 2,
+   "protegida": false,
+   "rellenos": {
+    "0A0908": 6
+   },
+   "fx_con_constantes": [],
+   "fx_con_texto": []
+  },
+  "KPIs": {
+   "rango": "A1:J14",
+   "formulas": 0,
+   "textos": 44,
+   "palabras": 134,
+   "dv": 0,
+   "cf": 0,
+   "merges": 2,
+   "protegida": false,
+   "rellenos": {
+    "0A0908": 4
+   },
+   "fx_con_constantes": [],
+   "fx_con_texto": []
+  }
+ },
+ "caso_es": {
+  "inversion_min_rec_prem": [
+   8520.0,
+   21410.0,
+   54440.0
+  ],
+  "inversion_suma_min_tecleada": 8520,
+  "ingresos_a1_a2_a3": [
+   603700.0,
+   846720.0,
+   1115400.0
+  ],
+  "neto_a1_a2_a3": [
+   303364.0,
+   453496.0,
+   621378.0
+  ],
+  "margen_neto_a1_a2_a3": [
+   0.5025,
+   0.5356,
+   0.5571
+  ],
+  "eventos_b2c_b2b_a1": [
+   76,
+   97
+  ],
+  "ticket_b2c_b2b_proyeccion": [
+   2200,
+   4500
+  ],
+  "eventos_mix": {
+   "B2C": 76,
+   "B2B": 97
+  },
+  "ticket_ponderado_mix": {
+   "B2C": 2736.8,
+   "B2B": 5115.5
+  },
+  "fijos_anuales_PE_B5": 10560,
+  "pe_eventos_anio_mes": [
+   5.5,
+   0.458
+  ],
+  "pyg_a1_ingresos_mensuales": [
+   17900.0,
+   22400.0,
+   35800.0,
+   42500.0,
+   64800.0,
+   78200.0,
+   62500.0,
+   35700.0,
+   60300.0,
+   62600.0,
+   44800.0,
+   76200.0
+  ],
+  "pyg_a1_estacionalidad_pct": [
+   0.0297,
+   0.0371,
+   0.0593,
+   0.0704,
+   0.1073,
+   0.1295,
+   0.1035,
+   0.0591,
+   0.0999,
+   0.1037,
+   0.0742,
+   0.1262
+  ],
+  "pyg_a1_neto": 303364.0,
+  "kpi_margen_neto_objetivo": "27 %",
+  "kpi_eventos_mes": 14
+ },
+ "CATPR": {
+  "Calculadora pricing": {
+   "rango": "A1:J35",
+   "formulas": 16,
+   "textos": 57,
+   "palabras": 265,
+   "dv": 0,
+   "cf": 0,
+   "merges": 24,
+   "protegida": false,
+   "rellenos": {
+    "FFF7C2": 10,
+    "E8E0D2": 7,
+    "C4974A": 4
+   },
+   "fx_con_constantes": [
+    [
+     "B17",
+     "=IF(B5=\"B2B\", IF(B6<40, 65, IF(B6<100, 55, 48)), IF(B6<40, 58, IF(B6<80, 48, 42)))",
+     55.0
+    ],
+    [
+     "B18",
+     "=IF(B10=\"exclusivo\",1.55,IF(B10=\"premium\",1.25,1.00))",
+     1.25
+    ],
+    [
+     "B19",
+     "=IF(B8>=4,1.32,IF(B8=3,1.18,IF(B8=2,1.08,1.00)))",
+     1.18
+    ],
+    [
+     "B20",
+     "=IF(OR(B9=\"japonés\",B9=\"marisquería\",B9=\"indio\"),1.18,IF(OR(B9=\"peruano\",B9=\"vegano\"),1.10,1.00))",
+     1.18
+    ],
+    [
+     "B21",
+     "=IF(B13=\"sí\",1.12,1.00)",
+     1.12
+    ],
+    [
+     "B22",
+     "=IF(B11=\"sí\",14,0)",
+     0.0
+    ],
+    [
+     "B23",
+     "=IF(B12=\"sí\",280,0)",
+     0.0
+    ],
+    [
+     "B24",
+     "=B7*0.95*2",
+     66.5
+    ],
+    [
+     "B25",
+     "=B14*135",
+     270.0
+    ],
+    [
+     "B33",
+     "=B31*0.4",
+     3565.4736
+    ],
+    [
+     "B34",
+     "=B31*0.55",
+     4902.5262
+    ]
+   ],
+   "fx_con_texto": [
+    "B17",
+    "B18",
+    "B20",
+    "B21",
+    "B22",
+    "B23"
+   ]
+  },
+  "10 ejemplos validados": {
+   "rango": "A1:J14",
+   "formulas": 0,
+   "textos": 51,
+   "palabras": 117,
+   "dv": 0,
+   "cf": 0,
+   "merges": 2,
+   "protegida": false,
+   "rellenos": {
+    "0A0908": 9
+   },
+   "fx_con_constantes": [],
+   "fx_con_texto": []
+  }
+ },
+ "CATC_libro": {
+  "Checklist 6 fases": {
+   "rango": "A1:J123",
+   "formulas": 0,
+   "textos": 446,
+   "palabras": 1527,
+   "dv": 0,
+   "cf": 0,
+   "merges": 8,
+   "protegida": false,
+   "rellenos": {
+    "0A0908": 6,
+    "C4974A": 6
+   },
+   "fx_con_constantes": [],
+   "fx_con_texto": []
+  }
+ },
+ "CATC": {
+  "titulo_A2": "6 fases · 110 hitos · adaptado al modelo multi-concepto · Tachar al avanzar",
+  "cabecera_fila4": [
+   "Fase",
+   "#",
+   "Hito",
+   "Detalle / Acción",
+   "Plazo",
+   "OK"
+  ],
+  "total_tareas": 108,
+  "por_fase": {
+   "1. Constitución legal": {
+    "tareas": 17,
+    "filas": [
+     6,
+     22
+    ],
+    "es_solo": [
+     7,
+     12,
+     13,
+     14,
+     19,
+     20,
+     21
+    ],
+    "adaptar": 8,
+    "multicocina": 0
+   },
+   "2. Seguros y autorizaciones": {
+    "tareas": 10,
+    "filas": [
+     25,
+     34
+    ],
+    "es_solo": [],
+    "adaptar": 10,
+    "multicocina": 0
+   },
+   "3. Equipamiento + proveedores": {
+    "tareas": 28,
+    "filas": [
+     37,
+     64
+    ],
+    "es_solo": [
+     64
+    ],
+    "adaptar": 6,
+    "multicocina": 12
+   },
+   "4. Marca, web y SEO": {
+    "tareas": 17,
+    "filas": [
+     67,
+     83
+    ],
+    "es_solo": [
+     83
+    ],
+    "adaptar": 4,
+    "multicocina": 0
+   },
+   "5. Captación B2C + B2B": {
+    "tareas": 16,
+    "filas": [
+     86,
+     101
+    ],
+    "es_solo": [],
+    "adaptar": 1,
+    "multicocina": 0
+   },
+   "6. Operativa primer evento multi-concepto": {
+    "tareas": 20,
+    "filas": [
+     104,
+     123
+    ],
+    "es_solo": [],
+    "adaptar": 1,
+    "multicocina": 0
+   }
+  },
+  "clasificacion": {
+   "ADAPTAR": 30,
+   "ES_SOLO": 9,
+   "directo": 57,
+   "MULTICOCINA": 12
+  },
+  "reparto_fases_en": {
+   "1": 13,
+   "2": 7,
+   "3": 26,
+   "4": 1,
+   "5": 32,
+   "6": 20
+  },
+  "sin_fase_en": [],
+  "palabras_hito_detalle": 1153
+ },
+ "CATD": {
+  "parrafos": 120,
+  "con_texto": 119,
+  "estilos": {
+   "Normal": 49,
+   "List Bullet": 65,
+   "List Number": 6
+  },
+  "headings": 0,
+  "secciones": 9,
+  "subsecciones": 19,
+  "palabras_parrafos": 1969,
+  "palabras_tablas": 707,
+  "por_seccion": {
+   "portada": {
+    "parrafos": 4,
+    "palabras": 24,
+    "idx": []
+   },
+   "1. Resumen ejecutivo": {
+    "parrafos": 3,
+    "palabras": 241,
+    "idx": [
+     5
+    ]
+   },
+   "2. Concepto y propuesta de valor": {
+    "parrafos": 21,
+    "palabras": 360,
+    "idx": [
+     9
+    ]
+   },
+   "3. Análisis de mercado España 2026": {
+    "parrafos": 21,
+    "palabras": 353,
+    "idx": [
+     31
+    ]
+   },
+   "4. Modelo de negocio": {
+    "parrafos": 13,
+    "palabras": 138,
+    "idx": [
+     53
+    ]
+   },
+   "5. Plan operativo": {
+    "parrafos": 22,
+    "palabras": 511,
+    "idx": [
+     67
+    ]
+   },
+   "6. Plan de marketing y captación": {
+    "parrafos": 21,
+    "palabras": 214,
+    "idx": [
+     90
+    ]
+   },
+   "7. Plan financiero (resumen)": {
+    "parrafos": 3,
+    "palabras": 18,
+    "idx": [
+     112
+    ]
+   },
+   "8. Riesgos y mitigaciones": {
+    "parrafos": 0,
+    "palabras": 0,
+    "idx": [
+     116
+    ]
+   },
+   "9. Anexo: regulación catering itinerante por CCAA": {
+    "parrafos": 2,
+    "palabras": 67,
+    "idx": [
+     117
+    ]
+   }
+  },
+  "tablas": [
+   [
+    15,
+    5,
+    "#"
+   ],
+   [
+    7,
+    4,
+    "Perfil B2B"
+   ],
+   [
+    3,
+    6,
+    "Canal"
+   ],
+   [
+    17,
+    4,
+    "Concepto"
+   ],
+   [
+    4,
+    5,
+    "Año"
+   ],
+   [
+    10,
+    4,
+    "Riesgo"
+   ],
+   [
+    18,
+    3,
+    "CCAA"
+   ]
+  ],
+  "importes_eur": [
+   [
+    7,
+    "150 €"
+   ],
+   [
+    7,
+    "65 €"
+   ],
+   [
+    8,
+    "11.500 €"
+   ],
+   [
+    8,
+    "16.000 €"
+   ],
+   [
+    8,
+    "5.500 €"
+   ],
+   [
+    8,
+    "35.000 €"
+   ],
+   [
+    11,
+    "85 €"
+   ],
+   [
+    11,
+    "130 €"
+   ],
+   [
+    13,
+    "35.000 €"
+   ],
+   [
+    13,
+    "300.000 €"
+   ],
+   [
+    28,
+    "130 €"
+   ],
+   [
+    33,
+    "25.183 €"
+   ],
+   [
+    46,
+    "120.000 €"
+   ],
+   [
+    59,
+    "10.560 €"
+   ],
+   [
+    60,
+    "4.800 €"
+   ],
+   [
+    65,
+    "0,95 €"
+   ],
+   [
+    65,
+    "14 €"
+   ],
+   [
+    65,
+    "280 €"
+   ],
+   [
+    108,
+    "650 €"
+   ]
+  ],
+  "pagina_emu": [
+   7772400,
+   10058400
+  ]
+ },
+ "docx_ft_es": {
+  "parrafos": 131,
+  "headings_idx": [
+   37,
+   44,
+   51,
+   59,
+   67,
+   76,
+   83,
+   91,
+   100,
+   109
+  ],
+  "palabras": 6930,
+  "tablas": 0
+ },
+ "en": {
+  "FT": {
+   "formulas": 722,
+   "hojas": {
+    "0. Assumptions": [
+     "A1:C68",
+     3
+    ],
+    "Startup Costs": [
+     "A1:E33",
+     42
+    ],
+    "3-Year P&L": [
+     "A1:H59",
+     186
+    ],
+    "Break-Even": [
+     "A1:F36",
+     78
+    ],
+    "Scenarios": [
+     "A1:F28",
+     55
+    ],
+    "Staffing": [
+     "A1:J25",
+     33
+    ],
+    "Instructions": [
+     "A1:E74",
+     22
+    ],
+    "12-Month Cash Flow": [
+     "A1:O70",
+     175
+    ],
+    "Financing": [
+     "A1:H80",
+     128
+    ]
+   },
+   "B4_B5_B6": [
+    "Customers per day (year-1 average)",
+    "Average check (excl. sales tax)",
+    "Operating days per year"
+   ],
+   "B24": [
+    "Monthly commissary & truck parking",
+    1200
+   ],
+   "activacion_B4_B5_B6": [
+    80,
+    14,
+    260
+   ],
+   "startup_tecleadas": 14,
+   "startup_filas": [
+    7,
+    20
+   ],
+   "startup_rotulos": [
+    "Food truck or trailer (used)",
+    "Build-out and wrap",
+    "Kitchen and refrigeration equipment",
+    "Generator",
+    "Propane system and fire suppression",
+    "Fresh / gray water tanks and handwashing sinks",
+    "LLC formation and legal",
+    "First-year permits and licenses",
+    "Health plan review and drawings",
+    "POS and card reader",
+    "Smallwares and packaging",
+    "Opening inventory",
+    "Launch marketing",
+    "Awning, folding tables and banners"
+   ],
+   "staffing_puestos": 4,
+   "staffing_total_fila": 9,
+   "staffing_fte_total": "=IFERROR(IF(COUNT(D5:D8)=0,\"\",SUM(C5:C8)),\"\")",
+   "pyg_fijos": [
+    "Commissary & truck parking",
+    "Labor (wages + employer payroll taxes)",
+    "Utilities (electricity, water, gas)",
+    "Insurance (general liability + property / auto)",
+    "Annual permits and licenses",
+    "Truck maintenance and inspections",
+    "Marketing and advertising",
+    "Accounting / bookkeeping",
+    "Software (POS, website, social)",
+    "Cleaning supplies",
+    "Waste and grease disposal (organic waste, cardboard and used cooking oil)",
+    "Pest control",
+    "Training and certifications",
+    "Music licensing (ASCAP, BMI, SESAC)",
+    "Depreciation of fixed assets",
+    "Interest expense (loan interest)"
+   ],
+   "estacionalidad_A5": "Monthly seasonality (adds up to 100%)",
+   "estacionalidad": [
+    0.06,
+    0.062,
+    0.075,
+    0.08,
+    0.088,
+    0.098,
+    0.105,
+    0.1,
+    0.088,
+    0.08,
+    0.074,
+    0.09
+   ],
+   "checklist": "food-truck-startup-checklist.xlsx",
+   "checklist_tareas_por_fase": [
+    11,
+    13,
+    12,
+    10,
+    12,
+    10
+   ],
+   "docx": {
+    "parrafos": 131,
+    "headings_idx": [
+     37,
+     44,
+     51,
+     59,
+     67,
+     76,
+     83,
+     91,
+     100,
+     109
+    ],
+    "palabras": 6602,
+    "tablas": 0,
+    "fichero": "food-truck-business-plan.docx"
+   }
+  },
+  "CAF": {
+   "formulas": 742,
+   "hojas": {
+    "0. Assumptions": [
+     "A1:C68",
+     5
+    ],
+    "Startup Costs": [
+     "A1:E42",
+     51
+    ],
+    "3-Year P&L": [
+     "A1:H58",
+     182
+    ],
+    "Break-Even": [
+     "A1:F38",
+     81
+    ],
+    "Scenarios": [
+     "A1:F28",
+     55
+    ],
+    "Staffing": [
+     "A1:J27",
+     43
+    ],
+    "Instructions": [
+     "A1:E76",
+     22
+    ],
+    "12-Month Cash Flow": [
+     "A1:O70",
+     175
+    ],
+    "Financing": [
+     "A1:H80",
+     128
+    ]
+   },
+   "B4_B5_B6": [
+    "Customers per day (year-1 average)",
+    "Average check (excl. sales tax)",
+    "Operating days per year"
+   ],
+   "B24": [
+    "Monthly rent",
+    4500
+   ],
+   "activacion_B4_B5_B6": [
+    145,
+    11,
+    340
+   ],
+   "startup_tecleadas": 23,
+   "startup_filas": [
+    7,
+    29
+   ],
+   "startup_rotulos": [
+    "LLC formation and legal",
+    "Licenses and health plan review",
+    "Architect and building permits",
+    "Construction / build-out",
+    "Electrical and HVAC",
+    "Plumbing (grease interceptor, floor drains, handwashing sinks)",
+    "Coffee grinders",
+    "Oven",
+    "Refrigerated display case",
+    "Refrigeration",
+    "Griddle / panini press",
+    "Blenders, juicer, toaster",
+    "Commercial dishwasher",
+    "Dining room furniture (tables + chairs)",
+    "Counter and pastry display",
+    "Patio / sidewalk seating (furniture + awning)",
+    "Smallwares, cups and glassware",
+    "Decor and lighting",
+    "Signage and exterior branding",
+    "Launch marketing (website + social media + Google)",
+    "Opening inventory (coffee, milk, pastries, etc.)",
+    "Espresso machine (2 groups)",
+    "POS and software"
+   ],
+   "staffing_puestos": 6,
+   "staffing_total_fila": 11,
+   "staffing_fte_total": "=IFERROR(IF(COUNT(D5:D10)=0,\"\",SUM(C5:C10)),\"\")",
+   "pyg_fijos": [
+    "Rent",
+    "Labor (wages + employer payroll taxes)",
+    "Utilities (electricity, water, gas)",
+    "Insurance (general liability + property / auto)",
+    "Accounting / bookkeeping",
+    "Equipment maintenance",
+    "Marketing and advertising",
+    "Software (POS, website, delivery)",
+    "Cleaning supplies",
+    "Waste and recycling (organic waste, cardboard and used oil if you fry)",
+    "Pest control",
+    "Music licensing (ASCAP, BMI, SESAC)",
+    "Training and certifications",
+    "Depreciation of fixed assets",
+    "Interest expense (loan interest)"
+   ],
+   "estacionalidad_A5": "Monthly seasonality (adds up to 100%)",
+   "estacionalidad": [
+    0.075,
+    0.075,
+    0.085,
+    0.088,
+    0.09,
+    0.085,
+    0.075,
+    0.06,
+    0.085,
+    0.09,
+    0.085,
+    0.107
+   ],
+   "checklist": "coffee-shop-opening-checklist.xlsx",
+   "checklist_tareas_por_fase": [
+    11,
+    13,
+    15,
+    12,
+    14,
+    10
+   ],
+   "docx": {
+    "parrafos": 167,
+    "headings_idx": [
+     37,
+     47,
+     56,
+     74,
+     82,
+     94,
+     106,
+     122,
+     135,
+     143
+    ],
+    "palabras": 7333,
+    "tablas": 0,
+    "fichero": "coffee-shop-business-plan.docx"
+   }
+  },
+  "BAR": {
+   "formulas": 742,
+   "hojas": {
+    "0. Assumptions": [
+     "A1:C68",
+     5
+    ],
+    "Startup Costs": [
+     "A1:E37",
+     46
+    ],
+    "3-Year P&L": [
+     "A1:H58",
+     182
+    ],
+    "Break-Even": [
+     "A1:F38",
+     81
+    ],
+    "Scenarios": [
+     "A1:F28",
+     55
+    ],
+    "Staffing": [
+     "A1:J30",
+     48
+    ],
+    "Instructions": [
+     "A1:E75",
+     22
+    ],
+    "12-Month Cash Flow": [
+     "A1:O70",
+     175
+    ],
+    "Financing": [
+     "A1:H80",
+     128
+    ]
+   },
+   "B4_B5_B6": [
+    "Covers per day (year-1 average)",
+    "Average check (excl. sales tax)",
+    "Operating days per year"
+   ],
+   "B24": [
+    "Monthly rent",
+    6500
+   ],
+   "activacion_B4_B5_B6": [
+    95,
+    27,
+    360
+   ],
+   "startup_tecleadas": 18,
+   "startup_filas": [
+    7,
+    24
+   ],
+   "startup_rotulos": [
+    "LLC formation + legal",
+    "Liquor license + local permits (non-quota state example)",
+    "Architect, MEP drawings + permit fees",
+    "Build-out (second-generation space)",
+    "Electrical + HVAC",
+    "Plumbing, grease interceptor + Type I hood",
+    "Kitchen equipment (griddle, fryer, oven)",
+    "Refrigeration (walk-in + back-bar coolers)",
+    "Bar build (bar top + underbar stations)",
+    "Draft beer system + installation",
+    "Furniture (tables, high-tops + bar stools)",
+    "Patio (furniture + awning)",
+    "Glassware, smallwares + tableware",
+    "Decor, lighting + sound",
+    "Exterior signage",
+    "Launch marketing",
+    "Opening inventory (liquor, beer, wine + food)",
+    "POS + handhelds + software"
+   ],
+   "staffing_puestos": 7,
+   "staffing_total_fila": 12,
+   "staffing_fte_total": "=IFERROR(IF(COUNT(D5:D11)=0,\"\",SUMPRODUCT(B5:B11,C5:C11)),\"\")",
+   "pyg_fijos": [
+    "Rent",
+    "Labor (wages + employer payroll taxes)",
+    "Utilities (electricity, water, gas)",
+    "Insurance (general + liquor liability + property)",
+    "Accounting + bookkeeping",
+    "Equipment maintenance",
+    "Marketing and advertising",
+    "Software (POS, reservations, inventory)",
+    "Cleaning supplies + linens",
+    "Waste + grease hauling (trash, recycling, used oil)",
+    "Pest control",
+    "Music licensing (ASCAP/BMI/SESAC)",
+    "Safety + responsible-service training",
+    "Depreciation of fixed assets",
+    "Interest expense (loan interest)"
+   ],
+   "estacionalidad_A5": "Monthly seasonality (adds up to 100%)",
+   "estacionalidad": [
+    0.064,
+    0.068,
+    0.078,
+    0.08,
+    0.086,
+    0.093,
+    0.098,
+    0.093,
+    0.083,
+    0.08,
+    0.077,
+    0.1
+   ],
+   "checklist": "bar-opening-checklist.xlsx",
+   "checklist_tareas_por_fase": [
+    11,
+    13,
+    13,
+    12,
+    14,
+    10
+   ],
+   "docx": {
+    "parrafos": 133,
+    "headings_idx": [
+     37,
+     45,
+     52,
+     60,
+     69,
+     79,
+     86,
+     96,
+     104,
+     111
+    ],
+    "palabras": 7780,
+    "tablas": 0,
+    "fichero": "bar-business-plan.docx"
+   }
+  },
+  "REST": {
+   "formulas": 772,
+   "hojas": {
+    "0. Assumptions": [
+     "A1:C68",
+     5
+    ],
+    "1. Startup Costs": [
+     "A1:E58",
+     69
+    ],
+    "2. 3-Year P&L": [
+     "A1:H62",
+     190
+    ],
+    "3. Break-Even": [
+     "A1:F81",
+     81
+    ],
+    "4. Scenarios": [
+     "A1:F31",
+     55
+    ],
+    "5. Staffing": [
+     "A1:J30",
+     47
+    ],
+    "Instructions": [
+     "A1:E64",
+     22
+    ],
+    "6. 12-Month Cash Flow": [
+     "A1:O70",
+     175
+    ],
+    "7. Financing": [
+     "A1:H80",
+     128
+    ]
+   },
+   "B4_B5_B6": [
+    "Covers per day (year-1 average)",
+    "Average check (excl. sales tax)",
+    "Operating days per year"
+   ],
+   "B24": [
+    "Monthly rent",
+    7000
+   ],
+   "activacion_B4_B5_B6": [
+    125,
+    28,
+    310
+   ],
+   "startup_tecleadas": 31,
+   "startup_filas": [
+    7,
+    45
+   ],
+   "startup_rotulos": [
+    "Broker and lease review",
+    "Build-out (second-generation restaurant space)",
+    "Architect, MEP drawings and permits (building + health plan review)",
+    "Interior design",
+    "Cooking line (range + griddle)",
+    "Convection oven",
+    "Fryers",
+    "Refrigerated prep tables",
+    "Walk-in cooler",
+    "Type I hood + UL 300 fire suppression",
+    "Commercial dishwasher",
+    "Smallwares and kitchen utensils",
+    "Sinks + grease interceptor",
+    "NSF shelving",
+    "Bar (build and install)",
+    "Dining tables and chairs (15 tables × 4 chairs)",
+    "Bar stools (8 units)",
+    "Espresso machine",
+    "Coffee grinder",
+    "Beer taps (2 lines)",
+    "Wine fridge",
+    "Glassware, plates and flatware",
+    "POS + reservations",
+    "Patio furniture",
+    "Brand and menu design",
+    "Website + Google Business Profile",
+    "Grand opening campaign",
+    "LLC formation and legal",
+    "Liquor license + permits (non-quota state example)",
+    "Opening food inventory",
+    "Opening bar inventory"
+   ],
+   "staffing_puestos": 7,
+   "staffing_total_fila": 13,
+   "staffing_fte_total": "=IFERROR(IF(COUNT(D6:D12)=0,\"\",SUMPRODUCT(B6:B12,C6:C12)),\"\")",
+   "pyg_fijos": [
+    "Rent",
+    "Labor (wages + employer payroll taxes)",
+    "Utilities (electricity, water, gas)",
+    "Insurance (general liability + property / auto)",
+    "Accounting / bookkeeping",
+    "Marketing and advertising",
+    "Maintenance and repairs",
+    "Software (POS, reservations, social media)",
+    "Cleaning, laundry and linens",
+    "Waste and grease hauling",
+    "Pest control",
+    "Music licensing (ASCAP, BMI, SESAC)",
+    "Training and certifications",
+    "Online reservation fees",
+    "Smallwares and glassware replacement",
+    "Depreciation of fixed assets",
+    "Interest expense (loan interest)"
+   ],
+   "estacionalidad_A5": "Monthly seasonality (adds up to 100%)",
+   "estacionalidad": [
+    0.07,
+    0.072,
+    0.082,
+    0.085,
+    0.09,
+    0.088,
+    0.085,
+    0.062,
+    0.085,
+    0.088,
+    0.087,
+    0.106
+   ],
+   "checklist": "restaurant-opening-checklist.xlsx",
+   "checklist_tareas_por_fase": [],
+   "docx": {
+    "parrafos": 148,
+    "headings_idx": [
+     37,
+     45,
+     53,
+     61,
+     69,
+     78,
+     97,
+     104,
+     113,
+     123
+    ],
+    "palabras": 7784,
+    "tablas": 0,
+    "fichero": "restaurant-business-plan.docx"
+   }
+  },
+  "PAN": {
+   "formulas": 737,
+   "hojas": {
+    "0. Assumptions": [
+     "A1:C68",
+     3
+    ],
+    "Startup Costs": [
+     "A1:E38",
+     47
+    ],
+    "3-Year P&L": [
+     "A1:H59",
+     186
+    ],
+    "Break-Even": [
+     "A1:F36",
+     78
+    ],
+    "Scenarios": [
+     "A1:F28",
+     55
+    ],
+    "Staffing": [
+     "A1:J29",
+     43
+    ],
+    "Instructions": [
+     "A1:E73",
+     22
+    ],
+    "12-Month Cash Flow": [
+     "A1:O70",
+     175
+    ],
+    "Financing": [
+     "A1:H80",
+     128
+    ]
+   },
+   "B4_B5_B6": [
+    "Transactions per day (average for year 1)",
+    "Average check (excl. sales tax)",
+    "Operating days per year"
+   ],
+   "B24": [
+    "Monthly rent",
+    4200
+   ],
+   "activacion_B4_B5_B6": [
+    210,
+    10,
+    310
+   ],
+   "startup_tecleadas": 19,
+   "startup_filas": [
+    7,
+    25
+   ],
+   "startup_rotulos": [
+    "LLC formation and legal",
+    "Licenses and health plan review",
+    "Architect and permit drawings",
+    "Build-out",
+    "Electrical service upgrade for the ovens",
+    "Oven ventilation and exhaust",
+    "Deck / rack oven",
+    "Spiral mixer (55-110 lb)",
+    "Divider-rounder",
+    "Proofer / retarder",
+    "Walk-in cooler and freezer",
+    "Stainless tables and shelving",
+    "Dough sheeter (for pastries)",
+    "Display case and counter",
+    "Retail store fixtures",
+    "POS + scale + software",
+    "Signage and exterior branding",
+    "Launch marketing",
+    "Opening ingredients inventory (flour, yeast, etc.)"
+   ],
+   "staffing_puestos": 6,
+   "staffing_total_fila": 11,
+   "staffing_fte_total": "=IFERROR(IF(COUNT(D5:D10)=0,\"\",SUMPRODUCT(B5:B10,C5:C10)),\"\")",
+   "pyg_fijos": [
+    "Rent",
+    "Labor (wages + employer payroll taxes)",
+    "Utilities (electricity, water, gas)",
+    "Insurance (general liability + property / auto)",
+    "Accountant",
+    "Oven and equipment maintenance",
+    "Marketing",
+    "Software",
+    "Cleaning",
+    "Miscellaneous",
+    "Waste hauling (organic and cardboard)",
+    "Pest control",
+    "Music licensing (ASCAP, BMI, SESAC)",
+    "Training and certifications",
+    "Depreciation of fixed assets",
+    "Interest expense (loan interest)"
+   ],
+   "estacionalidad_A5": "Monthly seasonality (adds up to 100%)",
+   "estacionalidad": [
+    0.083,
+    0.078,
+    0.083,
+    0.085,
+    0.083,
+    0.08,
+    0.075,
+    0.06,
+    0.083,
+    0.085,
+    0.083,
+    0.122
+   ],
+   "checklist": "bakery-opening-checklist.xlsx",
+   "checklist_tareas_por_fase": [
+    11,
+    12,
+    12,
+    10,
+    11,
+    10
+   ],
+   "docx": {
+    "parrafos": 131,
+    "headings_idx": [
+     37,
+     45,
+     52,
+     59,
+     68,
+     76,
+     84,
+     94,
+     104,
+     111
+    ],
+    "palabras": 7448,
+    "tablas": 0,
+    "fichero": "bakery-business-plan.docx"
+   }
+  }
+ },
+ "drivers_ft": {
+  "uso": {
+   "B4_actividad": [
+    "3-Year P&L!B6"
+   ],
+   "B5_ticket": [
+    "3-Year P&L!B7"
+   ],
+   "B6_dias": [
+    "3-Year P&L!B8",
+    "Staffing!B20"
+   ],
+   "PL6_actividad": [
+    "3-Year P&L!B9",
+    "3-Year P&L!C6",
+    "3-Year P&L!C9",
+    "3-Year P&L!D6",
+    "3-Year P&L!D9",
+    "Break-Even!B23",
+    "Break-Even!B9",
+    "Break-Even!C23",
+    "Break-Even!C9",
+    "Break-Even!D23",
+    "Break-Even!D9",
+    "Scenarios!C5"
+   ],
+   "PL7_ticket": [
+    "3-Year P&L!B9",
+    "3-Year P&L!C7",
+    "3-Year P&L!C9",
+    "3-Year P&L!D7",
+    "3-Year P&L!D9",
+    "Break-Even!B8",
+    "Break-Even!C8",
+    "Break-Even!D8",
+    "Scenarios!C6"
+   ],
+   "PL8_dias": [
+    "3-Year P&L!B9",
+    "3-Year P&L!C8",
+    "3-Year P&L!C9",
+    "3-Year P&L!D8",
+    "3-Year P&L!D9",
+    "Break-Even!B11",
+    "Break-Even!B9",
+    "Break-Even!C11",
+    "Break-Even!C9",
+    "Break-Even!D11",
+    "Break-Even!D9",
+    "Scenarios!C7"
+   ]
+  },
+  "n_uso": {
+   "B4_actividad": 1,
+   "B5_ticket": 1,
+   "B6_dias": 2,
+   "PL6_actividad": 12,
+   "PL7_ticket": 9,
+   "PL8_dias": 12
+  },
+  "n_textos_actividad": 91,
+  "textos_actividad_por_hoja": {
+   "0. Assumptions": 26,
+   "Startup Costs": 5,
+   "3-Year P&L": 14,
+   "Break-Even": 13,
+   "Scenarios": 7,
+   "Staffing": 4,
+   "Instructions": 22
+  }
+ },
+ "ficha_es": {
+  "5.500": 4,
+  "11.500": 2,
+  "35.000": 3,
+  "14 eventos/mes": 3,
+  "60+ pp": 4,
+  "110 hitos": 2,
+  "10 ejemplos validados": 1,
+  "96 proveedores": 7,
+  "priceOld": 1,
+  "73 % de descuento": 1
+ }
+}
