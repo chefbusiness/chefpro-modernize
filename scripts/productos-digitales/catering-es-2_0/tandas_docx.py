@@ -106,7 +106,9 @@ PISTAS = {
 #: Prohibidos en el texto (SPEC D12 · research §5-D4 · vocabulario del molde FT).
 PROHIBIDOS = [
     r'\bfreelance', r'validad[oa]s?', r'Espa[ñn]a,? 2026', r'food ?truck', r'\bcami[oó]n\b', r'ventanilla',
-    r'generador', r'\b173 eventos', r'2\.200', r'4\.500', r'10\.560', r'8\.520', r'21\.410', r'54\.440', r'603\.700',
+    r'generador', r'\b173 eventos',
+    # el ticket de la 1.x (2.200 / 4.500 € por evento); 2.200 € a secas es legítimo (los seguros del caso 2.2)
+    r'(ticket|evento)[^.]{0,40}(2\.200|4\.500)|(2\.200|4\.500)\s?€?\s?(/|por)\s?evento', r'10\.560', r'8\.520', r'21\.410', r'54\.440', r'603\.700',
     r'846\.7', r'14 eventos', r'5\.500', r'11\.500', r'4\.585', r'4\.885', r'sin licencia de actividad',
     r'\b38 ?% de (las )?bodas', r'\b58 ?%', r'\b73 ?% (de los )?millennials', r'tarifa plana', r'\bRGSEAA\b(?!.{0,80}(s[oó]lo|otros establecimientos))',
 ]

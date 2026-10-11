@@ -116,3 +116,40 @@ cifras por token desde `cifras_caso_es.json`; sin DSCR, payback ni saldos). Lueg
 - **Rótulos de importe sin palabras de recuento** («días», «invitados», «eventos», «mes», «clientes», «personas»), salvo que lleven una palabra fuerte de euro («coste», «importe», «precio»…). Si no, `gate_formatos` los marca. Pasó en la calculadora: 20 celdas.
 - **Suprimir o añadir filas del molde FT** (fijos, plantilla) se cuenta como fórmulas perdidas: se usan las filas existentes.
 - **La calculadora tiene que llamar a sus hojas `Calculadora` + `Ejemplos`**: es la firma `calc-beta` de `motor.detectar`. Con otro nombre, cualquier pasada de familia sobre la carpeta aborta.
+
+## 6. Cierre de la F2 (paso 3, 11-oct-2026) — los 11 ficheros en `dl/`, todo en verde
+
+- **Versión 2.2** (decisión del orquestador): la estampan el motor en los dos xlsx, la calculadora y la portada del docx.
+- **Rehechos (sha256)**: plan financiero `fedc828d…71d` · checklist `ed26df9a…5c4` · calculadora `4fd16345…ee7` ·
+  plan de negocio docx `24a7744f…119`. D9 aplicado en los otros 7 (23 sustituciones, lista en §1/`arreglos_d9.py`).
+  Respaldo del 1.x: en git (`ee9c03b1`); sha256 Mac = VPS en los 11 + `cifras_caso_es.json`.
+- **Caso final**: idéntico al de §2 (130 × 65 × 53 €; neto año 1 39.297 €; préstamo 111.000 €; DSCR 2,84; saldo mínimo
+  26.201 €; equilibrio 55 invitados/evento o 109 eventos/año; holgura de caja 23,7 %).
+- **Gates D12**:
+  - Motor: TODO VERDE, 13/13 gates, idempotencia 0, 82 ítems de checklist.
+  - Calibración D15: VERDE, 5/5.
+  - Docx: 10 Heading 1, A4, 0 tokens sin resolver, 0 prohibidos, 7.426 palabras.
+  - Calculadora: autotest 168/168.
+  - Censo (11 ficheros): 0 defectos. No latinos: 0.
+  - Barrido de prohibidos en los 11: 0 («freelance», «validado», «España 2026», cifras de la 1.x).
+  - Regresión de los 5 planes: 0 diferencias.
+  - Moldes en `dl/`: A-β, C2, calc-beta y P2.
+- **Barrido amplio del docx**: 7 coincidencias revisadas, todas legítimas («negocio de calle», «salir a la calle», «ticket de
+  {TICKET_EVENTO} por evento», «mínimo de comensales», «vehículo» en las frases del ATP).
+- **Textos corregidos tras la revisión** (`textos/cat_es_a.json`):
+  - **p43**: el núcleo fijo son 3 personas a jornada completa (dueño, jefe de cocina, ayudante-conductor). La coordinadora-maître
+    va dentro de la bolsa de 8 fijos discontinuos, como en la hoja Personal. `{PLANTILLA_PERSONAS}` = 11 = suma de la
+    columna «Personas» (3 + 8), que equivalen a 3,32 jornadas completas.
+  - **p48**: la mezcla tecleada suma los 130 eventos del Excel (token `{EVENTOS_ANO}`). Su media exacta es 65,6
+    invitados y 52,92 €, y el texto dice que el Excel la redondea con prudencia: 65 y 53 €, con ventas un 0,7 % por debajo
+    de la mezcla. El «con el IVA del 10 %» pasa a «con el IVA incluido», porque el PVP de 58,33 € pondera el 21 % del alcohol en drop-off.
+  - **«25.183 €»**: se queda. `F1-research-es.md` §2 lo trae con fuente: Bodas.net, Informe del Sector Nupcial 2026, con enlace.
+- **Gate afinado** (`tandas_docx.PROHIBIDOS`): «2.200»/«4.500» sólo se prohíben como ticket por evento de la 1.x. Los
+  2.200 € de seguros del caso 2.2 (`{SEGUROS_ANO}`) son legítimos: el primer ensamblado los marcó por error.
+- **No medido**: páginas del docx (el VPS no tiene LibreOffice y `paginas-gate` no encontró menciones en la ficha). Hay que medirlas antes de
+  escribir el número en la landing (D10).
+- **Pendiente** (fuera de este paso):
+  - D10: landing, dashboard y changelog con «Versión 2.2» y las cifras por token desde `cifras_caso_es.json`.
+  - D11: correo.
+  - La revisión opus final de D12.
+  - `gate-flujo-postpago --only plan-catering-tematico-eventos` en preview y en LIVE.
