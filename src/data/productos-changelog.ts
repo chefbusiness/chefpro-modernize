@@ -696,6 +696,32 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-11): Catering Business Plan Kit, edición inglesa (contenido 2.2) del plan-catering-tematico-eventos
+  // con otro concepto (SPEC business-plans-en-4 D66-D79: full-service off-site event caterer + calculadora de precios).
+  // Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'catering-business-plan': {
+    version: '2.2',
+    updated: '2026-10-11',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-11',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2 for a full-service, off-site event caterer that works from a shared commissary kitchen with a refrigerated van: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator and a startup checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story.',
+          'The model runs on events per year, average price per guest (excluding sales tax, service included) and average guests per event, with the break-even measured in events per year. Corporate catering marketplace sales carry their own commission, clients pay after an average number of days you set, and client deposits are not counted, which keeps the cash flow on the cautious side.',
+          'Revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect on the whole catering invoice and remits it quarterly (an 8% example rate you replace with your state and local rate).',
+          'Payroll with four roles — owner / executive chef and sales, sous chef, a pool of hourly event staff on W-2 payroll and a prep cook who drives the van — employer payroll taxes, a federal and a state or local minimum wage floor, and a check of the event hours you need against the hours you hire.',
+          'Startup costs with a used refrigerated cargo van and its refrigeration unit, your own kitchen equipment, chafing dishes and serving ware, commissary storage, first-year permits and catering software, plus the commissary deposit and rent before opening: no kitchen build-out.',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          'New pricing calculator: from food cost per guest, event staff, rentals and mileage to a price per guest and a quote with service charge, sales tax, deposit and balance, with the gross margin calculated, the voluntary gratuity kept off the price and three example quotes.',
+          '68-task startup checklist in 6 phases: business setup (LLC, EIN, seller\'s permit, business license, catering contract, food safety plan), kitchen, van and permits (commissary agreement, county catering permit, temporary event permits, commercial auto, liquor liability), equipment, staff (W-2 event staff, food handler cards, alcohol server certification), marketing and the first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

@@ -477,11 +477,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-catering-tematico-eventos',
     url: '/plan-catering-tematico-eventos',
     price: '€45',
-    name: { es: 'Plan de Negocio: Catering Temático', en: 'Business Plan: Themed Catering' },
+    name: { es: 'Plan de Negocio: Catering Temático', en: 'Catering Business Plan Kit' },
     description: {
       es: 'Catering y kit temático para eventos, con 11 entregables.',
-      en: 'Catering and themed event kit, with 11 deliverables.',
+      en: 'Word business plan, Excel financial projections, pricing calculator and startup checklist.',
     },
+    // Tienda EN (11-oct-2026): producto propio, `catering-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/catering-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-chef-privado-showcooking-eventos': {
     id: 'plan-chef-privado-showcooking-eventos',

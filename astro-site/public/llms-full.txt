@@ -64,7 +64,7 @@ Pages: [ES](https://aichef.pro/integraciones) · [EN](https://aichef.pro/en/inte
 Downloadable professional resources, paid once, delivered immediately, with lifetime access to a private dashboard and a 30-day money-back guarantee as stated on the product pages. They are separate from the SaaS subscription. Prices below were read from each product page.
 
 - Spanish hub: https://aichef.pro/productos-digitales - 51 products available (more announced as coming soon), from 9 EUR to 89 EUR. The Spanish-catalog products are written in Spanish and aimed at Spain and Latin America.
-- English hub: https://aichef.pro/en/digital-products - English editions priced in USD, currently 11 products; more English editions coming soon.
+- English hub: https://aichef.pro/en/digital-products - English editions priced in USD, currently 12 products; more English editions coming soon.
 - Hubs in other languages: [FR](https://aichef.pro/fr/produits-numeriques) · [DE](https://aichef.pro/de/digitale-produkte) · [IT](https://aichef.pro/it/prodotti-digitali) · [PT](https://aichef.pro/pt/produtos-digitais) · [NL](https://aichef.pro/nl/digitale-producten)
 - Prompt libraries: [ES](https://aichef.pro/libreria-de-prompts) · [EN](https://aichef.pro/en/prompt-libraries)
 
@@ -81,6 +81,7 @@ Downloadable professional resources, paid once, delivered immediately, with life
 - [Restaurant Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/restaurant-business-plan): the same structure for a casual restaurant with a bar (liquor license, no tip credit), with a 64-task opening checklist.
 - [Bakery Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/bakery-business-plan): the same structure for an artisan bakery and pastry shop (bread, butter pastries and coffee) with storefront, cafe corner and wholesale (cottage food vs commercial bakery explained); also works as a pastry business plan, with a 66-task opening checklist.
 - [Bar Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/bar-business-plan): the same structure for a neighborhood bar with small plates where drinks lead (pour cost kept apart from food cost, liquor license on the critical path, dram shop liability, no tip credit), with a 73-task opening checklist.
+- [Catering Business Plan Kit (39 USD)](https://aichef.pro/en/digital-products/catering-business-plan): the same structure for a full-service event caterer working from a shared commissary kitchen with a refrigerated van (break-even in events per year, sales tax on the whole invoice, service charge vs gratuity, W-2 event staff), plus a pricing calculator from cost per guest to quote and a 68-task startup checklist.
 
 ### Spanish catalog (EUR)
 

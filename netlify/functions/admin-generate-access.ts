@@ -36,6 +36,7 @@ const PRODUCTS: Record<string, { accessPath: string; label: string; lang?: Tiend
   'restaurant-business-plan': { accessPath: '/en/digital-products/restaurant-business-plan/access', label: 'Restaurant Business Plan Kit', lang: 'en' },
   'bakery-business-plan': { accessPath: '/en/digital-products/bakery-business-plan/access', label: 'Bakery Business Plan Kit', lang: 'en' },
   'bar-business-plan': { accessPath: '/en/digital-products/bar-business-plan/access', label: 'Bar Business Plan Kit', lang: 'en' },
+  'catering-business-plan': { accessPath: '/en/digital-products/catering-business-plan/access', label: 'Catering Business Plan Kit', lang: 'en' },
   'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
   'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
   'guia-food-cost-ingenieria-menu': { accessPath: '/guia-food-cost-ingenieria-menu-access', label: 'Guía Food Cost + Ingeniería de Menú' },
