@@ -46,6 +46,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: 'Built for an artisan bakery with a storefront, a small cafe corner and wholesale to cafes: deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, stainless benches, sheeter, display case and counter in the startup costs; a bakery line that combines retail and wholesale, with an editable tax-exempt share, plus coffee and drinks in the P&L; six roles in the staffing sheet (head baker / owner, baker, bakery assistant, counter staff / baristas, weekend extra and vacation relief) with the early-morning production shift; and the permits of a commercial bakery.',
   },
   {
+    q: 'Does it work as a pastry business plan?',
+    a: 'Yes, for a bakery that sells pastries: the example business sells sourdough bread, butter pastries such as croissants and specialty coffee, and the Excel model keeps the cost of goods of pastries (32-38%) apart from bread (25-30%), with a dough sheeter in the startup costs. If you plan a pastry shop with little or no bread, change the product mix, the average check and the cost percentages in the green cells and the whole workbook recalculates; the written plan is in Word, so you can rewrite the concept for your pastry line.',
+  },
+  {
     q: 'How much does it cost to open a bakery?',
     a: "It depends on the model and on the space: a storefront bakery with its own production room costs far more than a home-based cottage food business, and a unit that already has the electrical service and ventilation for commercial ovens saves a big part of the build-out. Equipment is usually the largest line, and buying part of it used is a common way to lower it. The Startup Costs sheet lists every line — LLC and legal, licenses and plan review, build-out, electrical service for the ovens, ventilation, deck or rack oven, spiral mixer, divider-rounder, proofer and retarder, refrigeration, benches and shelving, sheeter, display case and counter, shop furniture, POS with scale, signs, launch marketing and opening inventory — plus deposits, pre-opening months, contingency and working capital. The kit's example bakery needs $266,709 in total cash ($182,500 of startup costs plus $84,209 of working capital); replace each line with your own quotes.",
   },
@@ -113,11 +117,11 @@ const data: PlanNegocioData = {
 
   seo: {
     title:
-      'Bakery Business Plan Template: Word + Excel Financial Projections + Opening Checklist | AI Chef Pro',
+      'Bakery Business Plan Template for a Bakery & Pastry Shop: Word + Excel Projections + Checklist | AI Chef Pro',
     description:
-      'Bakery business plan template for a retail and wholesale bakery: a 10-section Word plan, Excel financial projections (3-year P&L, break-even, cash flow, loan and DSCR) and a 66-task opening checklist. $39.',
+      'Bakery and pastry business plan template for a retail and wholesale bakery: a 10-section Word plan, Excel financial projections (3-year P&L, break-even, cash flow, loan and DSCR) and a 66-task opening checklist. $39.',
     keywords:
-      'bakery business plan, bakery business plan template, how to start a bakery business, bakery startup costs, bakery financial projections, bakery opening checklist, AI Chef Pro',
+      'bakery business plan, bakery business plan template, pastry business plan, pastry shop business plan, how to start a bakery business, bakery startup costs, bakery financial projections, bakery opening checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-bakery-business-plan.jpg',
   },
 
@@ -160,7 +164,7 @@ const data: PlanNegocioData = {
     titlePre: 'Bakery ',
     titleGold: 'Business Plan',
     titleSubtitle:
-      'Template for a Retail & Wholesale Bakery: Word Plan + Excel Financial Projections + Opening Checklist',
+      'Template for a Retail & Wholesale Bakery and Pastry Shop: Word Plan + Excel Financial Projections + Opening Checklist',
     description:
       'Everything you need to plan and pitch an artisan bakery with a storefront and wholesale accounts: a 10-section business plan in Word, already written for the format lenders expect; an Excel model that recalculates your startup costs, 3-year P&L, break-even, 12-month cash flow and loan payments from your own numbers; and a 66-task checklist from the zoning check before you sign the lease to your first 90 days open. Set up for the US, with notes for the UK.',
     checkItems: [

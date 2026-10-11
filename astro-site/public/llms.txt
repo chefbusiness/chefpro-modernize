@@ -52,7 +52,7 @@ Downloadable professional resources for hospitality: Excel template kits (recipe
 - [Food Truck Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/food-truck-business-plan): Word business plan, Excel financial projections and startup checklist for a US food truck.
 - [Coffee Shop Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/coffee-shop-business-plan): Word business plan, Excel financial projections and opening checklist for a coffee shop with brunch.
 - [Restaurant Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/restaurant-business-plan): Word business plan, Excel financial projections and opening checklist for a casual restaurant with a bar.
-- [Bakery Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/bakery-business-plan): Word business plan, Excel financial projections and opening checklist for an artisan bakery (retail + wholesale).
+- [Bakery Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/bakery-business-plan): Word business plan, Excel financial projections and opening checklist for an artisan bakery and pastry shop (retail + wholesale). Also works as a pastry business plan.
 - [Bar Business Plan Kit (39 USD, EN)](https://aichef.pro/en/digital-products/bar-business-plan): Word business plan, Excel financial projections and opening checklist for a neighborhood bar with small plates (liquor license first).
 - [Prompt libraries hub (ES)](https://aichef.pro/libreria-de-prompts) · [Prompt libraries hub (EN)](https://aichef.pro/en/prompt-libraries): prompt libraries for the platform's agents.
 
