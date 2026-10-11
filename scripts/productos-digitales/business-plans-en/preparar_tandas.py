@@ -54,6 +54,16 @@ def escribir_reusadas(te):
             if 'reuso' not in e:
                 raise SystemExit('%s %s sin traducción reutilizable: %r' % (g, e['id'], e['es'][:60]))
             out[e['id']] = e['reuso']['en']
+        # bar: la revisión de las reutilizadas (la escribe el traductor que las revisa: textos_en/<g>.revision.json,
+        # {id: EN corregido}, solo las que cambian) se aplica encima en cada pasada. En ftcaf/restpan no existe.
+        rev_p = os.path.join(mapas.DATOS, 'textos_en', '%s.revision.json' % g)
+        if os.path.exists(rev_p):
+            rev = json.load(open(rev_p, encoding='utf-8'))
+            ajenos = [k for k in rev if k not in out]
+            if ajenos:
+                raise SystemExit('%s.revision.json trae ids que no son de %s: %s' % (g, g, ajenos[:10]))
+            out.update(rev)
+            print('textos_en/%s.revision.json: %d correcciones aplicadas' % (g, len(rev)))
         os.makedirs(os.path.join(mapas.DATOS, 'textos_en'), exist_ok=True)
         with open(os.path.join(mapas.DATOS, 'textos_en', '%s.json' % g), 'w', encoding='utf-8') as fh:
             json.dump(out, fh, ensure_ascii=False, indent=1)
@@ -115,6 +125,20 @@ def main():
             if refs:
                 x['pistas'] = refs
             out.append(x)
+        revisar = OrderedDict()
+        for gr in getattr(mapas, 'REVISAR_EN_TANDA', {}).get(g, ()):    # bar: GBAR-check revisa las de GR
+            lista = []
+            for e in te['cadenas']:
+                if e['grupo'] != gr:
+                    continue
+                lista.append(OrderedDict([
+                    ('id', e['id']), ('es', e['es']), ('en_actual', e['reuso']['en']),
+                    ('de', '%s %s (%s)' % (e['reuso']['grupo'], e['reuso']['id'], ' / '.join(e['reuso']['donde']))),
+                    ('donde', ['%s · %s!%s' % (o['f'], o.get('h', ''), o.get('c', '')) for o in e['donde'][:4]])]))
+            revisar[gr] = OrderedDict([
+                ('salida', '%s/textos_en/%s.revision.json' % (REL, gr)),
+                ('formato_salida', '{"<id>": "<EN corregido>"} SOLO con las que cambian ({} si ninguna)'),
+                ('n', len(lista)), ('cadenas', lista)])
         obj = OrderedDict([
             ('tanda', g), ('salida', '%s/textos_en/%s.json' % (REL, g)),
             ('formato_salida', '{"<id>": "<texto EN>", …} con TODOS los ids de "cadenas" y nada más'),
@@ -123,7 +147,7 @@ def main():
             ('glosario', glo), ('pestanas_es_en', pestanas), ('claves_es_en', mapas.CLAVES),
             ('fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)', fijos),
             ('cadenas', out),
-        ])
+        ] + ([('revisar_reutilizadas', revisar)] if revisar else []))
         with open(os.path.join(SALIDA, '%s.entrada.json' % g), 'w', encoding='utf-8') as fh:
             json.dump(obj, fh, ensure_ascii=False, indent=1)
             fh.write('\n')

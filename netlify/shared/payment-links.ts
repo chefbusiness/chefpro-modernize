@@ -4,6 +4,7 @@
 export const PAYMENT_LINKS: Record<string, string> = {
   'ai-prompts-for-restaurants': 'https://buy.stripe.com/4gMfZagwYaku4Z1b7v6oo1B',
   'bakery-business-plan': 'https://buy.stripe.com/dRm7sEfsU2S2bnpdfD6oo1I',
+  'bar-business-plan': 'https://buy.stripe.com/bJe00c3KccsCcrt0sR6oo1J',
   'coffee-shop-business-plan': 'https://buy.stripe.com/eVq00c2G8gIScrtejH6oo1G',
   'food-cost-templates': 'https://buy.stripe.com/bJecMYa8AgIS9fhcbz6oo1y',
   'food-truck-business-plan': 'https://buy.stripe.com/fZueV64OggISezB7Vj6oo1F',

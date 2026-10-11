@@ -39,8 +39,10 @@ CIUDADES_ES = re.compile(r'\b(?:Madrid|Barcelona|Valencia|Bilbao|Sevilla|Seville
                          r'market|España)\b')
 PROHIBIDO = re.compile(r'SBA minimum|minimum required by the SBA|approval (?:is )?guaranteed|guaranteed approval|'
                        r'\bverified against\b', re.I)
-RX_DOLAR = re.compile(r'\$\s?(\d[\d,]*(?:\.\d+)?)\s?(K|M|million|thousand)?(?:\s?[-–]\s?\$?\s?(\d[\d,]*(?:\.\d+)?)\s?'
-                      r'(K|M|million|thousand)?)?', re.I)
+# El número no se come la coma que lo sigue y el sufijo (K, M, million…) tiene que ser palabra entera: «$488,932, made
+# up of…» leía la «m» de «made» como millones (falso positivo cazado en el docx del bar, 11-oct-2026)
+RX_DOLAR = re.compile(r'\$\s?(\d(?:[\d,]*\d)?(?:\.\d+)?)\s?(K|M|million|thousand)?(?![A-Za-z])(?:\s?[-–]\s?\$?\s?'
+                      r'(\d(?:[\d,]*\d)?(?:\.\d+)?)\s?(K|M|million|thousand)?(?![A-Za-z]))?', re.I)
 RX_PCT = re.compile(r'(\d+(?:\.\d+)?)(?:\s?%?\s?[-–]\s?(\d+(?:\.\d+)?))?\s?%')
 
 
@@ -136,6 +138,8 @@ def comunes(t, donde, err, avi):
         err.append('%s: referencia española «%s»' % (donde, CIUDADES_ES.search(t).group(0)))
     if '  ' in t.strip('\n'):
         avi.append('%s: doble espacio' % donde)
+    for motivo, frag in mapas.cifras_prohibidas(mapas.RX_TOKEN.sub(' ', t)):     # bar: SPEC D52
+        err.append('%s: %s «%s»' % (donde, motivo, frag))
 
 
 def check_xlsx(tanda, fichero, err, avi):
@@ -179,6 +183,21 @@ def check_xlsx(tanda, fichero, err, avi):
             if len(e['es']) > 40 and (r < 0.4 or r > 2.2):
                 avi.append('%s: longitud EN/ES = %.1f' % (donde, r))
     print('  %s: %d ids esperados · %d recibidos' % (tanda, len(esperadas), len(en)))
+    # bar: revisión de un grupo reutilizado (textos_en/<g>.revision.json): solo ids del grupo, textos limpios
+    rev_p = os.path.join(mapas.DATOS, 'textos_en', '%s.revision.json' % tanda)
+    if os.path.exists(rev_p):
+        rev = json.load(open(rev_p, encoding='utf-8'))
+        for k, v in rev.items():
+            if k not in esperadas:
+                err.append('%s.revision.json: %s no es de %s' % (tanda, k, tanda))
+            elif not isinstance(v, str) or not v.strip():
+                err.append('%s.revision.json: %s vacío' % (tanda, k))
+            else:
+                comunes(v, '%s (revisión)' % k, err, avi)
+                if en.get(k) != v:
+                    err.append('%s.revision.json: %s no está aplicada en %s.json (corre preparar_tandas)' % (
+                        tanda, k, tanda))
+        print('  %s.revision.json: %d correcciones' % (tanda, len(rev)))
 
 
 def check_docx(tanda, fichero, err, avi):

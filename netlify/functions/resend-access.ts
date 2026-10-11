@@ -337,6 +337,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-11): gemelo de plan-negocio-tapas-bar (ver verify-purchase.ts).
+  'bar-business-plan': {
+    accessPath: '/en/digital-products/bar-business-plan/access',
+    emailSubject: 'Your access to Bar Business Plan Kit',
+    emailTitle: 'Access your Bar Business Plan Kit',
+    emailBody: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 73-task opening checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

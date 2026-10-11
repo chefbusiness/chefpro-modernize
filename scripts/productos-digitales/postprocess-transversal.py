@@ -91,10 +91,11 @@ SCRATCH = os.environ.get(
 #: montados por `business-plans-en/aplicar_en.py` (ídem: Letter y metadatos EN; SPEC business-plans-en §7.6).
 #: restaurant-business-plan / bakery-business-plan: Restaurant y Bakery Business Plan Kit (EN), ídem
 #: (SPEC business-plans-en-2 §5.3).
+#: bar-business-plan: Bar Business Plan Kit (EN), ídem (SPEC business-plans-en-3 D63).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
-             'restaurant-business-plan', 'bakery-business-plan'}
+             'restaurant-business-plan', 'bakery-business-plan', 'bar-business-plan'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

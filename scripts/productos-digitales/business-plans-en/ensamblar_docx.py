@@ -41,6 +41,7 @@ import copy
 import datetime
 import json
 import os
+import re
 import shutil
 import sys
 import tempfile
@@ -231,6 +232,7 @@ def g8(plan, salida, cifras=None):
         dl, pc = check_textos.cifras_texto(t)
         tok_dol |= {v for v, _ in dl}
         tok_pct |= {v for v, _ in pc}
+    tok_digitos = {re.sub(r'\D', '', c.get('texto') or '') for c in (cifras or {}).values()} - {''}
     for pos, p in enumerate(pn):
         t = p.text
         if not t.strip():
@@ -246,6 +248,11 @@ def g8(plan, salida, cifras=None):
             fallos.append('%s: marcador de contenido pendiente' % donde)
         if check_textos.PROHIBIDO.search(t):
             fallos.append('%s: afirmación prohibida' % donde)
+        for motivo, frag in mapas.cifras_prohibidas(t):              # bar: SPEC D52 (vacío en los otros conjuntos)
+            dig = re.sub(r'\D', '', frag)
+            if dig and dig in tok_digitos:
+                continue                    # es una cifra del caso que pone un token (solo el autotest usa el ES)
+            fallos.append('%s: %s «%s»' % (donde, motivo, frag))
         dl, pc = check_textos.cifras_texto(t)
         for v, txt in dl:
             if v not in dol_ok and v not in tok_dol:

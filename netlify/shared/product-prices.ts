@@ -5,6 +5,7 @@
 export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'ai-prompts-for-restaurants': { usd: 14 },
   'bakery-business-plan': { usd: 39 },
+  'bar-business-plan': { usd: 39 },
   'coffee-shop-business-plan': { usd: 39 },
   'food-cost-templates': { usd: 19 },
   'food-truck-business-plan': { usd: 39 },

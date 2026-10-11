@@ -78,7 +78,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Does it work as a bar business plan?',
-    a: "It's built for a restaurant with a full bar, so the bar side is already there: the bar build, beer taps, wine fridge, glassware, bar stock, the alcohol share of beverage sales and the liquor license. If you're opening a bar that serves little or no food, the Excel model still works — lower the food share and adjust the startup costs and staffing — but the written plan describes a restaurant & bar, so you'll rewrite more of the text.",
+    a: "It's built for a restaurant with a full bar, so the bar side is already there: the bar build, beer taps, wine fridge, glassware, bar stock, the alcohol share of beverage sales and the liquor license. If you're opening a bar where drinks are most of the sales and the kitchen serves small plates, our Bar Business Plan Kit is written for exactly that — a beverage-led plan with pour cost, the draft system, bartenders and barbacks, and the liquor license on the critical path — so you won't need to rewrite the text.",
   },
   {
     q: 'Can I present this plan to a lender, a landlord or investors?',
@@ -120,7 +120,7 @@ const data: PlanNegocioData = {
     description:
       'Restaurant business plan template for a casual restaurant & bar: a 10-section Word plan, Excel financial projections (3-year P&L, break-even, cash flow, loan and DSCR) and a 64-task opening checklist. $39.',
     keywords:
-      'restaurant business plan, restaurant business plan template, bar business plan, restaurant startup costs, how to open a restaurant, restaurant financial projections, restaurant opening checklist, AI Chef Pro',
+      'restaurant business plan, restaurant business plan template, restaurant startup costs, how to open a restaurant, restaurant financial projections, restaurant opening checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-restaurant-business-plan.jpg',
   },
 
@@ -302,6 +302,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
+    { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },

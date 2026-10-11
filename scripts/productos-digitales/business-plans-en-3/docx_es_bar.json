@@ -1,0 +1,2272 @@
+{
+ "meta": {
+  "generado": "2026-10-11T11:28:51+00:00",
+  "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
+  "plan": "bar",
+  "fichero_es": "astro-site/public/dl/plan-negocio-tapas-bar/plan-de-negocio-tapas-bar.docx",
+  "sha256": "73103bb9fe4629ce9d9daace333a053e85f46f596ff97fefaedf7a4ad5e8d2c8",
+  "fichero_en": "astro-site/public/dl/bar-business-plan/bar-business-plan.docx",
+  "titulo_en": "Bar Business Plan (10 Sections)",
+  "n_parrafos": 133,
+  "n_con_texto": 111,
+  "n_sin_runs": 18,
+  "n_un_run": 115,
+  "multi_run": [],
+  "estilos": {
+   "Normal": 123,
+   "Heading 1": 10
+  },
+  "roles": {
+   "cuerpo": 62,
+   "vacio": 22,
+   "fijo": 18,
+   "separador": 11,
+   "indice": 10,
+   "encabezado": 10
+  },
+  "n_traducir": 62,
+  "palabras_traducir": 6630,
+  "tandas": {
+   "bar_a": {
+    "parrafos": [
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     47,
+     48,
+     49,
+     50,
+     51,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78
+    ],
+    "palabras": 3535
+   },
+   "bar_b": {
+    "parrafos": [
+     81,
+     82,
+     83,
+     84,
+     85,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93,
+     94,
+     95,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     106,
+     107,
+     108,
+     109,
+     110,
+     113,
+     114,
+     115,
+     116,
+     117,
+     118
+    ],
+    "palabras": 3095
+   }
+  },
+  "pagina_emu": [
+   7772400,
+   10058400
+  ],
+  "mover": null,
+  "rpr_de": null,
+  "tokens": {
+   "clientes_dia": "average covers (guests) per day, year 1",
+   "clientes_a2": "average covers per day, year 2",
+   "clientes_a3": "average covers per day, year 3",
+   "ticket": "average check, excl. sales tax",
+   "precio_menu": "average menu price incl. sales tax",
+   "dias": "opening days per year",
+   "crecimiento_a2": "volume growth in year 2",
+   "crecimiento_a3": "volume growth in year 3",
+   "sales_tax": "example sales tax rate",
+   "impuesto_beneficios": "effective income tax rate",
+   "food_cost_comida": "food cost on food sales",
+   "food_cost_bebida": "beverage cost on beverage sales",
+   "consumibles_pct": "consumables (napkins, straws, to-go), % of sales",
+   "tarjeta_pct": "card processing fees, % of sales",
+   "cargas_pct": "employer payroll taxes, % of wages",
+   "salario_minimo_federal": "federal minimum wage, annual full-time",
+   "alquiler_mes": "rent per month (base rent of the premises)",
+   "suministros_mes": "utilities per month",
+   "seguros_anual": "insurance per year",
+   "vida_obra": "useful life of build-out, years",
+   "vida_equipo": "useful life of equipment, years",
+   "ventas_a1": "revenue year 1, excl. sales tax",
+   "ventas_a2": "revenue year 2",
+   "ventas_a3": "revenue year 3",
+   "ventas_dia": "average sales per opening day, year 1",
+   "cogs_pct": "cost of goods (food + beverage), % of sales",
+   "margen_bruto_pct": "gross margin, % of sales",
+   "personal_a1": "labor cost year 1 incl. payroll taxes",
+   "personal_pct": "labor cost, % of sales",
+   "ocupacion_anual": "rent per year (occupancy)",
+   "ocupacion_pct": "occupancy, % of sales",
+   "marketing_anual": "marketing budget per year",
+   "costes_fijos_a1": "total fixed costs year 1 (incl. depreciation and interest)",
+   "amortizacion_anual": "annual depreciation",
+   "intereses_a1": "loan interest year 1",
+   "resultado_antes_impuestos_a1": "pre-tax profit year 1",
+   "ebitda_a1": "EBITDA year 1 (pre-tax profit + depreciation + interest)",
+   "ebitda_pct_a1": "EBITDA margin year 1",
+   "resultado_neto_a1": "net profit year 1",
+   "resultado_neto_a2": "net profit year 2",
+   "resultado_neto_a3": "net profit year 3",
+   "margen_neto_a1": "net margin year 1",
+   "inversion_total": "total startup investment incl. working capital",
+   "capex": "capex (startup costs without working capital)",
+   "fondo_maniobra": "working capital reserve",
+   "necesidad_caja": "total cash needed at opening",
+   "fondos_propios": "owner's equity injection",
+   "prestamo": "loan amount",
+   "aportacion_pct": "owner's equity as % of the total cash needed",
+   "tipo_prestamo": "loan interest rate (nominal, not APR)",
+   "plazo_prestamo": "loan term, years",
+   "cuota_anual": "annual loan payment",
+   "dscr_a1": "DSCR year 1",
+   "dscr_min": "lowest DSCR over the loan term",
+   "dscr_limite": "DSCR limit used by the workbook",
+   "dscr_objetivo": "DSCR target (typical lender guideline)",
+   "equilibrio_clientes_dia": "break-even covers per day (accounting)",
+   "equilibrio_ventas": "break-even revenue per year (accounting)",
+   "equilibrio_caja_clientes_dia": "cash break-even covers per day (loan payments in, depreciation out)",
+   "equilibrio_caja_ventas": "cash break-even revenue per year",
+   "holgura_caja_pct": "margin of safety over cash break-even",
+   "saldo_minimo": "lowest cash balance in year 1",
+   "mes_saldo_minimo": "month of the lowest cash balance",
+   "payback": "project payback before debt (renders \"2.8 years\" or \"more than 3 years\")",
+   "payback_capex": "payback on capex only",
+   "plantilla_puestos": "number of people on the payroll",
+   "plantilla_jornadas": "staff in full-time equivalents (FTE)",
+   "cobertura_horas": "hours coverage (scheduled / needed)",
+   "horas_semana": "full-time hours per week",
+   "pesimista_clientes": "pessimistic scenario: covers per day",
+   "optimista_clientes": "optimistic scenario: covers per day",
+   "pesimista_ventas": "pessimistic scenario: annual revenue",
+   "optimista_ventas": "optimistic scenario: annual revenue",
+   "pesimista_resultado": "pessimistic scenario: pre-tax profit (negative = loss)",
+   "optimista_resultado": "optimistic scenario: pre-tax profit",
+   "pesimista_ticket": "pessimistic scenario: average check excl. sales tax",
+   "optimista_ticket": "optimistic scenario: average check excl. sales tax",
+   "pesimista_dias": "pessimistic scenario: operating days",
+   "optimista_dias": "optimistic scenario: operating days",
+   "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
+   "inv_licencia": "liquor license + local permits (non-quota state example)",
+   "inv_proyecto": "architect, MEP drawings and permit fees",
+   "inv_obra": "build-out of a second-generation space",
+   "inv_instalaciones": "electrical + HVAC",
+   "inv_campana": "plumbing, grease interceptor and Type I hood",
+   "inv_cocina": "kitchen equipment (griddle, fryer, oven)",
+   "inv_frio": "refrigeration (walk-in + back-bar coolers)",
+   "inv_barra": "bar build (bar top + underbar stations)",
+   "inv_grifos": "draft beer system + installation",
+   "inv_mobiliario": "furniture (tables, high-tops and bar stools)",
+   "inv_terraza": "patio (furniture + awning)",
+   "inv_lanzamiento": "launch marketing budget",
+   "inv_stock": "opening inventory (liquor, beer, wine + food)",
+   "inv_tpv": "POS + handhelds + software",
+   "aforo": "seats (tables + bar)",
+   "rotaciones_dia": "implied seat turns per day",
+   "comida_pct": "food share of sales",
+   "bebida_pct": "beverage share of sales",
+   "alcohol_pct": "alcohol share of beverage sales",
+   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)",
+   "meses_alquiler_previo": "months of rent paid before opening (build-out and licenses)",
+   "costes_variables_pct": "all variable costs year 1 (cost of goods + card fees + disposables + contingency), % of sales",
+   "otros_variables_pct": "card fees + disposables + contingency, % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount",
+   "pesimista_perdida_operativa": "pessimistic scenario: operating loss before depreciation and interest (positive)"
+  },
+  "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
+ },
+ "parrafos": {
+  "0": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "1": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "2": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "3": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "4": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "5": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "6": {
+   "estilo": "Normal",
+   "texto": "PLAN DE NEGOCIO",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 36.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "BUSINESS PLAN"
+  },
+  "7": {
+   "estilo": "Normal",
+   "texto": "Tapas Bar / Gastrobar",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Neighborhood Bar with Small Plates"
+  },
+  "8": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 0,
+   "traducir": false
+  },
+  "9": {
+   "estilo": "Normal",
+   "texto": "Plan financiero completo, analisis de mercado,\nestrategia operativa y checklist de apertura\npara abrir un tapas bar o gastrobar en Espana",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Complete financial plan, market analysis,\noperations strategy and opening checklist\nto open a neighborhood bar with small plates in the United States"
+  },
+  "10": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "11": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "12": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "13": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "14": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "15": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "aichef.pro"
+  },
+  "16": {
+   "estilo": "Normal",
+   "texto": "Espana, 2026",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "US edition with UK notes · 2026"
+  },
+  "17": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "18": {
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 14.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "LEGAL NOTICE"
+  },
+  "19": {
+   "estilo": "Normal",
+   "texto": "Este documento ha sido elaborado por ChefBusiness Consultoria Gastronomica con fines informativos y orientativos. Las cifras, proyecciones y datos incluidos se basan en fuentes publicas del mercado espanol y en la experiencia profesional de mas de 29 anos en el sector. Los resultados reales pueden variar significativamente. Este plan de negocio no constituye asesoramiento financiero, legal ni fiscal.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "This document was prepared by John Guerrero for AI Chef Pro for planning and information purposes. Its figures come from the example case in the Excel workbook of this kit and from the public sources named in the text; your results will differ. It is not financial, legal or tax advice: requirements vary by state, county and city — check with your accountant and local authorities."
+  },
+  "20": {
+   "estilo": "Normal",
+   "texto": "© 2026 ChefBusiness Consultoria Gastronomica — chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 9.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "© 2026 AI Chef Pro — aichef.pro"
+  },
+  "21": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "22": {
+   "estilo": "Normal",
+   "texto": "INDICE",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 24.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "CONTENTS"
+  },
+  "23": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "24": {
+   "estilo": "Normal",
+   "texto": "1.  Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "1.  Executive Summary"
+  },
+  "25": {
+   "estilo": "Normal",
+   "texto": "2.  Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "2.  Concept & Value Proposition"
+  },
+  "26": {
+   "estilo": "Normal",
+   "texto": "3.  Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "3.  Market Analysis"
+  },
+  "27": {
+   "estilo": "Normal",
+   "texto": "4.  Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "4.  Competitive Analysis"
+  },
+  "28": {
+   "estilo": "Normal",
+   "texto": "5.  Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "5.  Marketing Plan"
+  },
+  "29": {
+   "estilo": "Normal",
+   "texto": "6.  Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "6.  Operations Plan"
+  },
+  "30": {
+   "estilo": "Normal",
+   "texto": "7.  Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "7.  Management & Staffing"
+  },
+  "31": {
+   "estilo": "Normal",
+   "texto": "8.  Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "8.  Financial Plan"
+  },
+  "32": {
+   "estilo": "Normal",
+   "texto": "9.  Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "9.  Legal Requirements, Permits & Licenses"
+  },
+  "33": {
+   "estilo": "Normal",
+   "texto": "10.  Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 13.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "indice",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "10.  Conclusions & Action Plan"
+  },
+  "34": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "35": {
+   "estilo": "Normal",
+   "texto": "Anexos: Plan Financiero Excel + Checklist Apertura Excel",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": true,
+    "size_pt": 11.0,
+    "font": null,
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 0,
+   "traducir": false,
+   "en_fijo": "Appendices: Bar Financial Projections (Excel) + Bar Opening Checklist (Excel)"
+  },
+  "36": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 0,
+   "traducir": false
+  },
+  "37": {
+   "estilo": "Heading 1",
+   "texto": "1. Resumen Ejecutivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 1,
+   "traducir": false,
+   "en_fijo": "1. Executive Summary"
+  },
+  "38": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 1,
+   "traducir": false
+  },
+  "39": {
+   "estilo": "Normal",
+   "texto": "El mercado español de hostelería atraviesa un momento de transformación acelerada que favorece la apertura de conceptos de restauración especializados y diferenciados. El gastrobar, como formato híbrido entre taberna tradicional y restaurante gastronómico, ha consolidado su posición como una de las opciones más demandadas por el consumidor urbano en 2026. Esta tendencia se sustenta en tres pilares fundamentales: el crecimiento del turismo gastronómico internacional, la consolidación del afterwork como fórmula de ocio nocturno y la preferencia creciente del consumidor por experiencias culinarias de calidad a precios accesibles. España cerró 2025 con más de 32 millones de turistas internacionales que buscan activamente la experiencia de tapeo authentic, mientras que el segmento de ocio pós-laboral genera ya el 35 por ciento de la facturación en locales urbanos de las principales ciudades españolas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 130
+  },
+  "40": {
+   "estilo": "Normal",
+   "texto": "El concepto propuesto responde a esta oportunidad con un modelo de gastrobar urbano de 60 a 80 metros cuadrados de sala, cocina operativa y barra prominente, complementado con terraza y una capacidad total de 40 a 50 plazas. La carta se estructura en torno a tapas de autor, raciones compartibles, una selección curada de vinos nacionales, vermut artesanal y cócteles de diseño, con un ticket medio objetivo de entre 15 y 22 euros por comensal. Este posicionamiento permite capturar tanto el segmento de comida rápida de calidad durante el almuerzo como el público de cena y afterwork en horario nocturno, maximizando así la rotación por servicio y el ticket medio ponderado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 111
+  },
+  "41": {
+   "estilo": "Normal",
+   "texto": "La inversión total estimada se sitúa en torno a 115.000 euros, distribuidos entre obra civil y equipamiento de cocina, mobiliario y decoración, sistema de punto de venta, fondo de maniobra para los primeros meses de actividad y reserva para contingencias. Este rango se enmarca dentro de los 90.000 a 140.000 euros habituales para establecimientos de este formato en zonas urbanas de mercado medio, y contempla una estructura de financiación que combina capital propio con deuda bancaria especializada en el sector hostelero, una opción cada vez más accesible dado el interés de las entidades financieras en el segmento de restauración.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 99,
+   "nota": "§1: la inversión y su reparto SOLO con tokens ({{inversion_total}}, {{capex}}, {{fondo_maniobra}}, {{inv_licencia}}…); fuera «115.000 €» y «100.000-140.000 € habituales» (I1-BAR). Como contexto de mercado, la encuesta de RestaurantOwner.com ($110,000-$550,000 en local alquilado, media $425,500; research §4)"
+  },
+  "42": {
+   "estilo": "Normal",
+   "texto": "Las proyecciones financieras para el primer año de actividad contemplan una facturación de 270.000 euros, basada en una ocupación media del 65 por ciento en horario de comidas y del 75 por ciento en cenas, con una rotación de 1,8 servicios por cubierto en almuerzo y 1,5 en cena. El punto de equilibrio se estima entre los meses 7 y 8 de actividad, una vez superada la curva de aprendizaje inicial y consolidada la base de clientes recurrentes. El margen bruto de explotación se proyecta en torno al 68 por ciento, alineado con los estándares del sector para formatos de gastrobar bien gestionados, lo que permite absorber los costes de personal, alquileres y gastos operativos manteniendo una rentabilidad sostenible.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 119,
+   "nota": "§1: ventas, ticket, cubiertos y rotaciones con tokens ({{ventas_a1}}, {{clientes_dia}}, {{ticket}}, {{rotaciones_dia}}); fuera «270.000 €» y «1,8 servicios por cubierto»"
+  },
+  "43": {
+   "estilo": "Normal",
+   "texto": "El equipo promotor cuenta con experiencia contrastada en gestión de establecimientos de hostelería, conocimiento del mercado local y capacidad operativa para arrancar el proyecto con un equipo inicial de 7 personas, incluyendo dirección, cocina, sala y apoyo administrativo. Esta estructura permite cubrir los dos servicios diarios con la flexibilidad necesaria para adaptar la plantilla a la estacionalidad y demanda real del establecimiento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 62
+  },
+  "44": {
+   "estilo": "Normal",
+   "texto": "El momento actual presenta condiciones favorables para la apertura. Los locales comerciales en zonas urbanas han experimentado una estabilización de rentas tras los ajustes de los últimos años, existe disponibilidad de profesionales hosteleros cualificados y el consumidor muestra disposición a gastar en experiencias gastronómicas de calidad. Además, los programas de apoyo a entrepreneurship y las líneas de financiación específicas para el sector hostelero facilitan el acceso al capital necesario. La combinación de estos factores convierte 2026 en un momento óptimo para lanzar un gastrobar con propuesta de valor diferenciada, modelo de negocio validable y proyección de rentabilidad clara.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 1,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 98
+  },
+  "45": {
+   "estilo": "Heading 1",
+   "texto": "2. Concepto y Propuesta de Valor",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 2,
+   "traducir": false,
+   "en_fijo": "2. Concept & Value Proposition"
+  },
+  "46": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 2,
+   "traducir": false
+  },
+  "47": {
+   "estilo": "Normal",
+   "texto": "El concepto de este gastrobar se fundamenta en la convergencia de dos tendencias consolidadas en el mercado hostelero español: la evolución natural de la tapa tradicional hacia formatos de mayor calidad y elaboración, y la demanda creciente de espacios de socialización que combinen gastronomía, ambiente y experiencia. El local apostará por una barra protagonista, elemento arquitectónico y funcional que marca la diferencia respecto a competidores convencionales y que permite al cliente percibir la elaboración en tiempo real, generando una conexión emocional con el producto que eleva el valor percibido de la oferta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 92
+  },
+  "48": {
+   "estilo": "Normal",
+   "texto": "La propuesta de valor se articula en torno a tres pilares fundamentales que responden a las expectativas del consumidor actual. En primer lugar, la calidad del producto raw material, trabajando con proveedores locales de confianza y priorizando la temporada como criterio de selección, lo que permite ofrecer tapas con identidad propia y diferenciación respecto a la carta estática de la competencia. En segundo lugar, la experiencia integral, donde la ambientación, el servicio y la carta de vinos y vermuts se diseñan como un conjunto coherente que justifica un ticket medio superior al de un bar de tapas tradicional. En tercer lugar, la accesibilidad temporal, cubriendo tanto comidas como cenas y posicionándose como espacio de afterwork, un segmento en expansión en las zonas urbanas españolas que genera rotación y ticket medio elevado en franjas horarias de menor competencia.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 137
+  },
+  "49": {
+   "estilo": "Normal",
+   "texto": "El modelo de negocio contempla una carta estructurada en tres niveles de consumo que maximizan el ticket medio sin excluir perfiles de gasto inferior. Las tapas clásicas de toda la vida, ejecutadas con materia prima de primera calidad, actúan como elemento de entrada y familiaridad para el cliente ocasional. Las tapas de autor, con elaboraciones más complejas y presentación cuidada, representan el diferenciador principal y justifican el posicionamiento premium del establecimiento. Las raciones para compartir fomentan el consumo colectivo y elevan el ticket por comensal, siendo especialmente atractivas para grupos que buscan una experiencia gastronómica completa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 96
+  },
+  "50": {
+   "estilo": "Normal",
+   "texto": "La carta de bebidas se configura como un elemento estratégico de rentabilidad y diferenciación. La selección de vinos por copa, con especial atención a denominaciones de origen españolas menos conocidas pero de alta calidad relación precio-calidad, permite ofrecer maridajes recomendados por el equipo y genera margen superior al vino embotellado. El vermut artesanal, tendencia en auge en el mercado español, se posiciona como producto estrella de la tarde-noche con una carta curada que incluye productores artesanales y permite márgenes superiores al 70 por ciento en consumo por cliente. Los cuatro a seis grifos de cerveza de calidad completan una oferta que cubre todos los perfiles de consumo sin dispersar la propuesta.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 111
+  },
+  "51": {
+   "estilo": "Normal",
+   "texto": "El posicionamiento comercial se dirige a un segmento de cliente con poder adquisitivo medio-alto, edad comprendida entre veinticinco y cincuenta y cinco años, que busca más que una simple comida: valora la experiencia gastronómica, el ambiente cuidado y la posibilidad de descubrir productos nuevos en cada visita. Este perfil, habitual en el tejido urbano español actual, está dispuesto a pagar entre quince y veintidós euros de ticket medio cuando la propuesta le ofrece un valor diferencial claro en producto, ambiente y servicio. La terraza complementa la oferta permitiendo captarclientela de paso y generando una imagen de local completo que refuerza el posicionamiento en el imaginario del consumidor potencial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 2,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 108
+  },
+  "52": {
+   "estilo": "Heading 1",
+   "texto": "3. Analisis de Mercado",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 3,
+   "traducir": false,
+   "en_fijo": "3. Market Analysis"
+  },
+  "53": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 3,
+   "traducir": false
+  },
+  "54": {
+   "estilo": "Normal",
+   "texto": "El mercado de la hostelería en España mantiene una estructura fragmentada con más de 250.000 establecimientos de restauración, de los cuales el segmento de bares y restaurantes de tapas concentra aproximadamente el 35 por ciento del total, según datos del Directorio Central de Empresas del INE actualizados a 2025. Esta cifra posiciona a España como el país con mayor densidad de bares por habitante de la Unión Europea, generando un volumen de negocio superior a los 120.000 millones de euros anuales en el sector de restauración, según la Federación Española de Hostelería y Restauración. El gastrobar, entendido como el establecimiento que eleva la tapa tradicional hacia una propuesta gastronómica más elaborada, ha experimentado un crecimiento sostenido del 8 por ciento anual en los últimos cinco años, consolidándose como la categoría con mayor rentabilidad dentro del segmento de bares de tapas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 140
+  },
+  "55": {
+   "estilo": "Normal",
+   "texto": "El gasto medio por consumidor en bares de tapas se sitúa entre 18 y 25 euros, dependiendo de la ubicación urbana y el perfil del establecimiento, según el informe anual de la FEHR. En zonas céntricas de ciudades como Madrid, Barcelona, Valencia o Sevilla, el ticket medio en gastrobar alcanza los 22 euros en horario de cenas, mientras que en comidas se mantiene en torno a los 15 euros. Esta diferencial de siete euros entre servicios representa una palanca estratégica para maximizar la rentabilidad del negocio, dado que los márgenes brutos en cenas oscilan entre el 65 y 70 por ciento, frente al 55-60 por ciento en comidas.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 108,
+   "nota": "§3: gasto medio → el ticket del caso ({{ticket}} sin impuesto, {{precio_menu}} con él); ningún dato de gasto medio de mercado sin fuente en research"
+  },
+  "56": {
+   "estilo": "Normal",
+   "texto": "El turismo gastronómico constituye un motor de demanda complementario que no debe subestimarse. España recibió más de 85 millones de turistas internacionales en 2024, de los cuales el 78 por ciento identificó la gastronomía como un motivador principal o secundario de su viaje, según datos del Instituto Nacional de Estadística. El turista gastronómico medio gasta un 35 por ciento más que el turista general y presenta una menor sensibilidad al precio, lo que permite posicionar el gastrobar como una propuesta de valor diferenciada frente a la competencia tradicional.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 88
+  },
+  "57": {
+   "estilo": "Normal",
+   "texto": "La cultura del vermú ha experimentado un renacimiento notable en los últimos ocho años, consolidándose como una bebida de tendencia que atrae a un público adulto entre 30 y 55 años con alto poder adquisitivo. Las búsquedas relacionadas con vermuterías y vermouth han crecido un 120 por ciento en Google Trends desde 2018, y el consumo de vermú en España supera los 50 millones de litros anuales, con un incremento del 15 por ciento en el segmento premium. Paralelamente, la cerveza artesana ha ganado cuota de mercado, representando ya el 4,5 por ciento del total de cerveza consumida en hostelería, con precios de venta un 40 por ciento superiores a la cerveza industrial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 113,
+   "nota": "§3: la «cultura del vermú» española → cócteles y happy hour en EE. UU., redacción cualitativa (sin cifras de tendencia sin fuente)"
+  },
+  "58": {
+   "estilo": "Normal",
+   "texto": "El fenómeno afterwork se ha consolidado como una de las principales fuentes de facturación en el sector de gastrobar, representando entre el 25 y 30 por ciento de la facturación semanal en ciudades de más de 200.000 habitantes. Este modelo de consumo, centrado en el horario de 18 a 21 horas entre semana, genera una ocupación media del 75 por ciento en franjas horarias que tradicionalmente estaban infrautilizadas, mejorando significativamente la rotación por metro cuadrado y los costes fijos del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 81
+  },
+  "59": {
+   "estilo": "Normal",
+   "texto": "La competencia en el segmento de gastrobar es intensa pero presenta oportunidades de diferenciación. El 60 por ciento de los bares de tapas en España operan con modelos tradicionales que no han incorporado innovación ni en producto ni en experiencia de cliente. Esta brecha entre la oferta mayoritaria y la demanda creciente de propuestas gastronómicas de calidad crea un espacio de mercado accesible para nuevos operadores que ejecuten un concepto bien definido, con una carta equilibrada entre clásicos reinventados y creaciones propias, una carta de vinos y vermuts seleccionada y un ambiente que combine tradición y contemporaneidad. La inversión requerida de 90.000 a 140.000 euros para un establecimiento de 60 a 80 metros cuadrados con 40 a 50 plazas se amortiza típicamente en un plazo de tres a cuatro años en ubicaciones con tráfico peatonal superior a 5.000 personas diarias, según los ratios operativos del sector.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 3,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 146,
+   "nota": "§3: competencia y oportunidad: fuera «100.000-140.000 €»; fuentes posibles de research §4-§5 (Restaurant365 $100,000-$850,000+, BevSpot pour cost 18-24 %)"
+  },
+  "60": {
+   "estilo": "Heading 1",
+   "texto": "4. Analisis Competitivo",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 4,
+   "traducir": false,
+   "en_fijo": "4. Competitive Analysis"
+  },
+  "61": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 4,
+   "traducir": false
+  },
+  "62": {
+   "estilo": "Normal",
+   "texto": "El mercado de tapas y gastrobar en España presenta una competencia fragmentada pero intensa, especialmente en zonas urbanas donde la densidad de establecimientos de restauración es elevada. En 2026, el sector hostelero español ha consolidado tendencias como la fusión de tradición y modernidad, la experiencia inmersiva en torno a la comida y la importancia del espacio como elemento diferenciador. Un proyecto de gastrobar con las características descritas debe posicionarse estratégicamente frente a competidores que van desde el bar de tapas tradicional hasta restaurantes de alta cocina informal, pasando por cadenas de restauración y plataformas de delivery que han reconfigurado los hábitos de consumo.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 103
+  },
+  "63": {
+   "estilo": "Normal",
+   "texto": "Los competidores directos en un entorno urbano corresponden principalmente a dos categorías: los establecimientos de tapas clásicos que operan con modelos de negocio consolidados, carta amplia y precios contenidos, y los gastrobars de nueva generación que apostan por la especialización en producto, la carta reducida de alta rotación y una propuesta de experiencia diferenciada. Los primeros ofrecen ventajas en precio y familiaridad para el cliente tradicional, mientras que los segundos compiten directamente en el segmento de ocio gastronómico y afterwork que constituye el público objetivo del proyecto. La identificación precisa de estos competidores en un radio de influencia de entre 500 metros y un kilómetro resulta determinante para evaluar la saturación del mercado y las oportunidades de posicionamiento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 118
+  },
+  "64": {
+   "estilo": "Normal",
+   "texto": "Los competidores indirectos incluyen restaurantes de cocina española o mediterránea que incorporan secciones de tapas en su carta, cadenas de restauración temática con presencia en centros comerciales y zonas de alto tránsito, locales de comida internacional que captan parte del presupuesto de ocio del target, y especialmente las plataformas de delivery que han democratizado el acceso a la comida de tapas a domicilio. Estas plataformas representan un competidor estructural que ha modificado los hábitos de consumo, permitiendo que el cliente acceda a productos de restauración desde su hogar con descuentos significativos, lo cual obliga al establecimiento presencial a ofrecer una experiencia que justifique la visita física.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 106
+  },
+  "65": {
+   "estilo": "Normal",
+   "texto": "Desde la perspectiva de las cinco fuerzas de Porter, el poder de negociación de los clientes es alto dado el elevado número de alternativas disponibles y la transparencia de precios que facilita internet. El poder de negociación de los proveedores depende del posicionamiento en producto: un gastrobar que apuesta por productos de calidad superior tendrá menor capacidad de presión sobre precios que un establecimiento de volumen. La amenaza de nuevos entrantes es moderada, con barreras de entrada que incluyen la ubicación prime, la licencia de apertura, la inversión inicial en equipamiento y la necesidad de diferenciación en un mercado saturado. La amenaza de productos sustitutivos es elevada por el crecimiento del delivery y las alternativas de ocio no gastronómicas. Finalmente, la rivalidad entre competidores existentes es intensa, especialmente en segmentos de precio medio donde la diferenciación es compleja.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 138
+  },
+  "66": {
+   "estilo": "Normal",
+   "texto": "El análisis DAFO del proyecto revela fortalezas significativas en la propuesta de valor: barra prominente como elemento diferenciador y de experiencia, carta de tapas rotativa que permite innovación y adaptación estacional, y la posibilidad de ofrecer un ambiente de afterwork que conecta con las tendencias de consumo del target. Las debilidades potenciales incluyen la dependencia de la ubicación, la necesidad de construir marca desde cero y la presión sobre márgenes derivada de la inversión inicial. Las oportunidades del entorno incluyen el crecimiento del turismo gastronómico urbano, la demanda de experiencias de ocio diferenciadas y el potencial de las redes sociales como canal de captación. Las amenazas principales son la competencia de plataformas de delivery, la posible saturación del mercado en zonas de alta densidad hostelera y la evolución de los hábitos de consumo hacia opciones más saludables o alternativas de ocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 141
+  },
+  "67": {
+   "estilo": "Normal",
+   "texto": "Las barreras de entrada más relevantes para un nuevo gastrobar son la obtención de una ubicación con licencia de actividad hostelera en zona prime, la inversión necesaria para equipamiento de cocina profesional, barra y terraza, y la construcción de una reputación que genereclientela recurrente en un mercado con elevada competencia. Los factores críticos de éxito identificados incluyen la ubicación en zona de alto tránsito con presencia de público objetivo, el diseño de una barra que funcione como elemento experiencial y no solo de servicio, una carta de tapas que combine tradición y innovación con rotación periódica que genere interés y visitas recurrentes, y una propuesta de precio-calidad queposicione al establecimiento en el rango de ticket medio de 15 a 22 euros de forma sostenible.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 124
+  },
+  "68": {
+   "estilo": "Normal",
+   "texto": "Las ventajas competitivas sostenibles derivan de la combinación de estos factores y de la capacidad de crear comunidad en torno a la marca. Un gastrobar que integre correctamente ubicación, ambiente, producto y servicio puede generar fidelidad y diferenciación frente a competidores que compiten únicamente en precio o en carta. La clave reside en convertir la visita en una experiencia que el cliente no pueda replicar en su hogar ni en competidores genéricos, apostandopor la calidad del producto, la profesionalidad del servicio y la atmósfera del local como pilares de posicionamiento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 4,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 90
+  },
+  "69": {
+   "estilo": "Heading 1",
+   "texto": "5. Plan de Marketing y Captacion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 5,
+   "traducir": false,
+   "en_fijo": "5. Marketing Plan"
+  },
+  "70": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 5,
+   "traducir": false
+  },
+  "71": {
+   "estilo": "Normal",
+   "texto": "La estrategia de marketing para un gastrobar de estas características debe construirse sobre tres pilares fundamentales: visibilidad digital local, experiencia diferenciada en establecimiento y construcción de comunidad recurrente. Con un ticket medio de entre quince y veintidós euros y una capacidad de cuarenta a cincuenta plazas, el objetivo no es captar masa sino clientela cualificada que valore la propuesta gastronómica y repita con regularidad. El presupuesto inicial de marketing debe situarse entre el cinco y el seis por ciento de la facturación prevista, lo que significa que en fase de lanzamiento podemos esperar una inversión mensual de entre mil doscientos y dos mil quinientos euros durante los primeros doce meses, ajustando según estacionalidad y respuesta del mercado.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 117
+  },
+  "72": {
+   "estilo": "Normal",
+   "texto": "La presencia digital local constituye el canal prioritario y requiere inversión desproporcionada desde el primer día. Google My Business optimizado con fotografías profesionales de interior, terraza, platos estrella y equipo humano, junto con respuestas personalizadas a todas las reseñas, genera un impacto directo en las búsquedas de proximidad. Estudios de comportamiento gastronómico indican que el setenta y tres por ciento de los usuarios decide dónde comer en elradio de quince minutos desde su ubicación, por lo que aparecer en los primeros resultados de búsqueda local determina en gran medida la captación de oportunidad. La ficha debe incluir horarios actualizados, carta detallada, precios y enlace directo a reservas, eliminando fricción en el proceso de decisión del cliente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 116
+  },
+  "73": {
+   "estilo": "Normal",
+   "texto": "Instagram funciona como escaparate visual pero requiere una estrategia de contenido que vaya más allá de fotografías de platos. El gastrobar debe posicionar su cuenta como referente de lifestyle urbano, combinando imágenes de producto con contenido de ambiente de local, eventos, equipo de cocina y storytelling de marca. La frecuencia recomendada es de cuatro a cinco publicaciones semanales en feed, historias diarias y reels semanales con recetas rápidas, preparación de tapas o experiencias de clientes. El engagement objetivo en el primer año debe situarse por encima del cuatro por ciento, significativamente superior al promedio del sector hostelero que ronda el uno coma cinco por ciento. La inversión en publicidad pagada en Instagram debe orientarse a un radio de cinco kilómetros desde el local durante las horas previas a las comidas, segmentando por intereses gastronómicos y edad entre veinticinco y cincuenta y cinco años.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 143
+  },
+  "74": {
+   "estilo": "Normal",
+   "texto": "Las plataformas de reseñas y reservas como TripAdvisor y TheFork requieren una gestión activa desde la apertura. Obtener las primeras cincuenta reseñas positivas en TripAdvisor durante los primeros tres meses es crítico para construir autoridad y visibilidad en búsquedas orgánicas de viajeros y foodies. La estrategia incluye incentivos sutiles a clientes satisfechos, respuesta a todas las reseñas incluyendo las negativas con tono profesional y propuesta de mejora, y monitorización de la evolución del ranking local. Respecto a TheFork, la visibilidad en esta plataforma debe usarse estratégicamente para llenar horas valle, ofreciendo descuentos del veinte al treinta por ciento en días y turnos de menor demanda, pero evitando convertir estas promociones en el canal principal de captación que erosione el ticket medio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 121
+  },
+  "75": {
+   "estilo": "Normal",
+   "texto": "La programación de eventos semanales genera razones recurrentes para visitar el establecimiento y crea contenido shareable para redes sociales. Los vermuts de sábado con música en directo y vermut de calidad representan un gancho tradicional que atrae a un público de entre treinta y cinco y cincuenta y cinco años con alto poder adquisitivo y predisposición al consumo complementario. Las catas de vino mensuales, idealmente partnering con bodegas locales o distribuidores especializados, posicionan al gastrobar como referente gastronómico y generan ventas adicionales de producto premium. Los eventos temáticos de tapeo internacional o jornadas de producto seasonal añaden variedad a la propuesta y razones para volver.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 105
+  },
+  "76": {
+   "estilo": "Normal",
+   "texto": "El programa de fidelización debe diseñarse con lógica de negocio, no como mera acción promocional. Un sistema de puntos canjeables por tapas, copas o experiencias exclusivas, vinculado a una aplicación propia o sistema de tarjeta física, permite capturar datos de cliente para acciones de marketing directo. El objetivo es construir una base de clientes frecuentes que represente al menos el treinta por ciento de la facturación, con un ticket medio superior al de clientes ocasionales gracias a la familiaridad y la confianza. Complementariamente, la pizarra de tapas del día funciona como elemento diferenciador que genera urgencia y prueba de frescura, además de permitir márgenes más flexibles en productos de rotación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 110
+  },
+  "77": {
+   "estilo": "Normal",
+   "texto": "Las colaboraciones con influencers foodie locales deben abordarse con criterio de retorno medible. El enfoque correcto implica invitar a perfiles con audiencias reales y engagement auténtico, preferentemente microinfluencers con entre cinco mil y treinta mil seguidores en la zona de influencia del local, ofreciendo experiencia completa a cambio de contenido honesto y mención de ubicación. El coste por colaboración puede oscilar entre cincuenta y doscientos euros dependiendo del perfil, con resultados medibles en incremento de seguidores, menciones geolocalizadas y tráfico derivado. Evita colaboraciones con perfiles de audiencia masiva y genérica donde el impacto en tu zona específica será irrelevante.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 99
+  },
+  "78": {
+   "estilo": "Normal",
+   "texto": "Finalmente, el plan debe incluir métricas mensuales de seguimiento: coste de adquisición de cliente por canal, tasa de conversión de reservas online, evolución de reseñas y valoración media, engagement en redes sociales, porcentaje de clientes recurrentes y ticket medio por fuente de captación. Estos indicadores permiten reasignar presupuesto hacia los canales con mejor rendimiento y detectar early warning de posibles problemas de percepción o posicionamiento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 5,
+   "traducir": true,
+   "tanda": "bar_a",
+   "palabras": 65
+  },
+  "79": {
+   "estilo": "Heading 1",
+   "texto": "6. Plan de Operaciones",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 6,
+   "traducir": false,
+   "en_fijo": "6. Operations Plan"
+  },
+  "80": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 6,
+   "traducir": false
+  },
+  "81": {
+   "estilo": "Normal",
+   "texto": "La selección del local determina en gran medida la viabilidad operativa del proyecto. Se requiere una ubicación en zona de vida nocturna con paso peatonal significativo, preferiblemente en calles con concentración de bares y restaurantes que generen flujo natural declientela. El superficie de 60-80 metros cuadrados para sala y cocina, más la posibilidad de terraza, permite optimizar el rendimiento por metro cuadrado manteniendo la eficiencia en el flujo de servicio. La distribución debe priorizar una barra prominente de al menos cuatro metros lineales que funcione como eje de facturación y espacio de tapeo rápido, complementada con mesas para servicio completo en sala. La cocina debe ubicarse en zona posterior con ventilación adecuada y acceso directo a la barra para minimizar tiempos de entrega.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 123
+  },
+  "82": {
+   "estilo": "Normal",
+   "texto": "El equipamiento de cocina constituye el núcleo operativo y debe dimensionarse para una producción eficiente de tapas y raciones. Una plancha de gas de al menos 80 centímetros, freidora de capacidad media con sistema de filtrado, horno mixto para regeneraciones y elaboraciones complejas, y salamandra para gratinados y finish de platos, conforman el equipamiento base. La barra requiere instalación de grifos de cerveza con sistema de presión dimensionado para al menos cuatro líneas, cámara refrigerada bajo barra con capacidad para botellasy refrescos, y vitrina expositora refrigerada para tapas frías que permita presentación atractiva y mantenimiento de cadena de frío. El mobiliario complementario incluye mesas para 40-50 cubiertos, sillas apilables para adaptación de sala, y mobiliario de terraza cuando esté disponible.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 120,
+   "nota": "§6: equipamiento: cocina corta (griddle, fryer, oven), barra con underbar stations, draft system (líneas, glycol; lo instala el distribuidor), Type I hood + grease interceptor"
+  },
+  "83": {
+   "estilo": "Normal",
+   "texto": "La selección de proveedores debe equilibrar calidad, precio y fiabilidad de servicio. El distribuidor de cerveza debe garantizar entregas diarias o cada dos días para mantener frescura, con condiciones de pago a 30 días que permitan gestionar tesorería. La bodega de vinos requiere catálogo amplio de referencias nacionales, servicio de asesoramiento en selección y posibilidad de entrega fraccionada. El mercado central o mercados de abastos locales proporcionan productos frescos de primera calidad, aunque requiere desplazamiento diario y gestión de compras tempranas. Es recomendable mantener al menos dos proveedores por categoría de producto crítico para garantizar continuidad operativa ante incidencias.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 99,
+   "nota": "§6: proveedores = three-tier system (compras a distribuidores con licencia); tied-house rules limitan lo que un fabricante te da gratis (sustituye «exclusividad de cerveza por grifos gratis»)"
+  },
+  "84": {
+   "estilo": "Normal",
+   "texto": "El flujo de servicio debe diseñarse para gestionar picos de demanda diferenciados entre comida y cena. El tapeo rápido en barra requiere preparación anticipada de tapas frías y empanadillas que permitan servicio inmediato, mientras las tapas calientes se elaboran bajo pedido con tiempo máximo de preparación de cinco minutos. El servicio en mesa sigue protocolo de atención inicial en tres minutos, toma de pedido de bebida inmediata y recomendación de tapas según perfil de clientela. La rotación objetivo en cenas debe situarse en 1,5 servicios por mesa para optimizar facturación, mientras el servicio de comida permite permanencia más prolongada con ticket medio inferior.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 103
+  },
+  "85": {
+   "estilo": "Normal",
+   "texto": "La gestión de stocks perecederos requiere un control diario con pedido mínimo que garantice frescura y minimice desperdicios. El sistema de tapas del día permite aprovechar productos próximos a caducidad y ofrecer variedad rotativa que incentive visitas repetidas. El inventario de bebidas debe mantener stock de seguridad para los productos de mayor rotación, con revisión semanal de niveles y negociación de condiciones de compra por volumen. La planificación de personal debe contemplar flexibilidad para ajustar plantilla según ocupación prevista, con posibilidad de refuerzos puntuales en fines de semana y eventos especiales.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 6,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 91,
+   "nota": "§6: control de inventario de barra: pour cost por categoría (BevSpot: cerveza 24 %, destilados 15 %, vino 28 %; total 18-24 %), inventario semanal, merma; el libro usa {{food_cost_bebida}} de coste de bebida"
+  },
+  "86": {
+   "estilo": "Heading 1",
+   "texto": "7. Estructura Organizativa y RRHH",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 7,
+   "traducir": false,
+   "en_fijo": "7. Management & Staffing"
+  },
+  "87": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 7,
+   "traducir": false
+  },
+  "88": {
+   "estilo": "Normal",
+   "texto": "La estructura organizativa de un tapas bar o gastrobar en el contexto actual del mercado español debe responder a criterios de eficiencia operativa, flexibilidad horaria y capacidad de adaptación a los picos de demanda característicos de este formato. El sector de hostelería en España presenta unaatomización significativa, con predominio de empresas de pequeño tamaño, donde la polivalencia del personal y la claridad en las funciones resultan determinantes para la rentabilidad del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 72
+  },
+  "89": {
+   "estilo": "Normal",
+   "texto": "La plantilla propuesta para un establecimiento de las dimensiones indicadas, con capacidad para cuarenta a cincuenta plazas interiores más terraza, debe configurarse con un mínimo de seis a siete efectivos distribuidos en las funciones críticas de gestión, producción y servicio. El gerente asume la responsabilidad integral del negocio, incluyendo la gestión comercial, control de costes, relación con proveedores y supervisión operativa diaria. Esta figura resulta imprescindible en un gastrobar donde la propuesta de valor incluye una carta de vinos, vermut de calidad y una selección de cócteles que requieren conocimiento especializado y capacidad de prescripción.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 95,
+   "nota": "§7: la plantilla del libro: {{plantilla_puestos}} personas = {{plantilla_jornadas}} FTE; puestos de Staffing (owner / general manager, kitchen lead, bartenders, servers, line / prep cook, barback / weekend extra, relief cover)"
+  },
+  "90": {
+   "estilo": "Normal",
+   "texto": "El departamento de cocina se estructura en torno al jefe de cocina, figura que debe dominar la técnica específica de elaboración de tapas, entendiendo este formato como una categoría gastronómica con identidad propia dentro de la cocina española. La ejecución de tapas exige velocidad, consistencia en la presentación y capacidad de trabajo en equipo bajo presión, competencias que distinguen al especialista en este formato del cocinero de cocina tradicional. El equipo de producción se completa con dos cocineros de ejecución, responsables de la preparación de raciones, elaboraciones frías y mantenimiento de la calidad durante los servicios de comida y cena.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 100
+  },
+  "91": {
+   "estilo": "Normal",
+   "texto": "El área de servicio requiere una configuración específica para un establecimiento con barra prominente y orientación hacia el afterwork. El camarero de barra debe poseer dominio absoluto del tiraje de cerveza, conocimiento profundo de la carta de vinos y vermut, y capacidad para gestionar simultáneamente múltiples pedidos mientras mantiene la conversación con el cliente. Esta figura resulta estratégica en un gastrobar, donde la experiencia en barra constituye un elemento diferenciador de la propuesta de valor. El camarero de sala complementa el servicio en mesa, atendiendo especialmente a los clientes de cena y a los grupos que ocupan la terraza.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 99
+  },
+  "92": {
+   "estilo": "Normal",
+   "texto": "El ayudante de cocina asume funciones de apoyo a la producción, limpieza de materias primas, mantenimiento del orden en la zona de trabajo y colaboración en tareas de mise en place. El refuerzo de fines de semana, generalmente mediante contratación temporal o acuerdos con profesionales autónomos del sector, permite absorber los incrementos de demanda del viernes, sábado y domingo sin comprometer la estructura de costes fijos durante los días de menor actividad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 72
+  },
+  "93": {
+   "estilo": "Normal",
+   "texto": "La estructura de costes laborales en España contempla una cotización a la Seguridad Social del treinta y tres coma cuatro por ciento sobre la base de cotización correspondiente a cada trabajador. El régimen de catorce pagas, habitual en el sector, implica que el coste anual de cada empleado equivale a la retribución bruta más la aportación empresarial a la Seguridad Social correspondiente a las doce mensualidades ordinarias más las dos pagas extraordinarias. Esta configuración requiere una planificación cuidadosa de la masa salarial, que en un establecimiento de estas características suele representar entre el veintiocho y el treinta y cinco por ciento de la facturación, dependiendo de la eficiencia en la gestión de horarios y la optimización de recursos humanos.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 119,
+   "nota": "§7: costes laborales US: employer payroll taxes {{cargas_pct}}; mínimo federal ({{salario_minimo_federal}} al año a jornada completa) + el estatal; el libro NO modela tip credit ni propinas (bartenders y servers con salario base ≥ $15/h); federal $2.13/h + tip credit hasta $5.12 donde el estado lo permite; CA, OR, WA, AK, MN, MT y NV no lo permiten (DOL). Fuera «33 %» y «14 pagas»"
+  },
+  "94": {
+   "estilo": "Normal",
+   "texto": "La formación continua del equipo constituye un elemento diferenciador en un mercado donde la profesionalización del sector hostelero español ha avanzado significativamente en las últimas décadas. El programa formativo debe incluir formación específica en tiraje de cerveza y mantenimiento de instalaciones de presión, técnicas de servicio de tapas que optimicen la presentación y la rotación en mesa, y obligatoria formación en manipulación de alimentos con especial atención al control de alérgenos, requisito legal desde la entrada en vigor de la normativa europea que obliga a informar al consumidor sobre la presencia de sustancias causantes de alergias e intolerancias. Adicionalmente, resulta recomendable incorporar formación en atención al cliente, gestión de objeciones y técnicas de venta cruzada que incrementen el ticket medio mediante la recomendación de vinos, vermut o postres.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 128
+  },
+  "95": {
+   "estilo": "Normal",
+   "texto": "La gestión de horarios en un gastrobar presenta el desafío de cubrir dos servicios diarios con picos de demanda diferenciados, lo que hace recomendable la implementación de turnos partidos o jornadas continuadas según las necesidades de cada día. La flexibilidad contractual, dentro del marco del Convenio Colectivo de Hostelería correspondiente, permite adaptar la plantilla a la estacionalidad y a las oscilaciones de la demanda propias de cada zona urbana. La retención del talento en un sector con elevada rotación requiere ofrecer condiciones laborales competitivas, ambiente de trabajo profesional y oportunidades de desarrollo profesional, elementos que contribuyen a la estabilidad del equipo y, en última instancia, a la calidad del servicio prestado al cliente.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 7,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 113
+  },
+  "96": {
+   "estilo": "Heading 1",
+   "texto": "8. Plan Financiero",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 8,
+   "traducir": false,
+   "en_fijo": "8. Financial Plan"
+  },
+  "97": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 8,
+   "traducir": false
+  },
+  "98": {
+   "estilo": "Normal",
+   "texto": "La inversión inicial para un tapas bar de estas características se sitúa en torno a ciento quince mil euros, cantidad que debe distribuirse de forma estratégica entre los diferentes activos necesarios para la puesta en marcha. El alquiler de local, incluyendo derecho de traspaso y fianza, representa aproximadamente veinticinco mil euros, partida que varía significativamente según la ciudad y zona dentro del territorio español. La obra civil y adecuación del local, incluyendo fontanería, electricidad, climatización y acabados, requiere una inversión de treinta mil euros considerando las necesidades específicas de una cocina profesional y una sala con barra prominente. El equipamiento de cocina, incluyendo fogones, freidoras, planchas, hornos y frío, supone veinte mil euros, mientras que el mobiliario de sala, barras, taburetes, mesas y sillas representa otros quince mil euros. La inversión en menaje, vajilla, cubertería y cristalería alcanza los ocho mil euros, a lo que deben añadirse cinco mil euros para sistemas de punto de venta, software de gestión y tecnología de sala. Por último, la reserva de fondo de maniobra para los primeros meses de actividad se establece en doce mil euros, cantidad esencial para cubrir gastos operativos antes de alcanzar la rentabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 194,
+   "nota": "§8: inversión y financiación con tokens ({{inversion_total}}, {{capex}}, {{fondo_maniobra}}, {{necesidad_caja}}, {{fondos_propios}}, {{prestamo}}, {{tipo_prestamo}}, {{plazo_prestamo}}); fuera 115.000 €"
+  },
+  "99": {
+   "estilo": "Normal",
+   "texto": "La facturación proyectada para el primer año de actividad asciende a doscientos setenta mil euros, cifra que se obtiene considerando una ocupación media del sesenta por ciento en horario de comida y del setenta y cinco por ciento en cena, con un ticket medio de diecisiete euros cincuenta céntimos. El segundo año se proyecta un crecimiento del dieciocho por ciento hasta alcanzar los trescientos veinte mil euros, impulsado por la consolidación de la clientela y el incremento del ticket medio hasta los dieciocho euros. El tercer año la facturación debería situarse en trescientos setenta mil euros, representando un crecimiento del quince por ciento respecto al ejercicio anterior, momento en el que el negocio alcanza su madurez operativa.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 117,
+   "nota": "§8: ventas años 1-3 ({{ventas_a1}}, {{ventas_a2}}, {{ventas_a3}}), mezcla comida/bebida ({{comida_pct}} / {{bebida_pct}}), coste de mercancía y margen bruto con tokens"
+  },
+  "100": {
+   "estilo": "Normal",
+   "texto": "La estructura de costes presenta los parámetros habituales del sector de restauración urbana en España. El coste de materia prima para alimentos se sitúa entre el veintiocho y el treinta y dos por ciento de la facturación de comida, mientras que el coste de bebidas oscila entre el veintidós y el veintiocho por ciento de la facturación de barra. Esta diferenciación permite alcanzar un margen bruto conjunto del setenta y dos por ciento sobre ventas totales, porcentaje alineado con los estándares de gastrobar urbano en el mercado español actual. Los costes de personal representan aproximadamente el treinta y cinco por ciento de la facturación, incluyendo los salarios del equipo de cocina, sala y dirección. Los gastos operativos restantes, incluyendo alquiler, suministros, seguros, mantenimiento y marketing, absorben cerca del veinticinco por ciento de la facturación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 134,
+   "nota": "§8: estructura de costes: COGS {{cogs_pct}} (solo comida + bebida; los consumibles, la tarjeta y los imprevistos van aparte), personal {{personal_pct}}, alquiler {{ocupacion_pct}}, prime cost {{prime_cost_pct}}; el pour cost manda (riesgo §8.2 de la SPEC)"
+  },
+  "101": {
+   "estilo": "Normal",
+   "texto": "El punto de equilibrio se calcula en treinta y cuatro clientes diarios con un ticket medio de dieciocho euros, lo que equivale a una facturación mensual de aproximadamente dieciocho mil trescientos sesenta euros. Este umbral de rentabilidad se alcanzaría típicamente entre el cuarto y sexto mes de actividad, dependiendo de la estacionalidad y la capacidad de atracción de la zona de ubicación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 62,
+   "nota": "§8: equilibrio con tokens ({{equilibrio_clientes_dia}} / {{equilibrio_caja_clientes_dia}} covers al día, {{holgura_caja_pct}} de holgura); fuera «treinta y cuatro clientes» (D52)"
+  },
+  "102": {
+   "estilo": "Normal",
+   "texto": "Los escenarios proyectados contemplan tres situaciones diferenciadas. En el escenario conservador, con una ocupación media del cincuenta por ciento y ticket de dieciséis euros, el período de retorno de la inversión se extiende hasta treinta meses. El escenario base, con las proyecciones descritas anteriormente, sitúa el retorno entre veintidós y veinticuatro meses. El escenario optimista, con ocupación del ochenta por ciento en horarios peak y ticket medio de veinte euros, permite recuperar la inversión en dieciocho meses.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 77,
+   "nota": "§8: escenarios con tokens (cubiertos, ticket, días, ingresos, resultado y caja estimada de cada extremo)"
+  },
+  "103": {
+   "estilo": "Normal",
+   "texto": "La viabilidad financiera del proyecto depende fundamentalmente de tres factores críticos: la ubicación del local en zona de alto tránsito urbano, el control riguroso del food cost mediante gestión de compras y desperdicios, y la capacidad de generar una propuesta de valor diferenciada que justifique un ticket medio superior al de la competencia tradicional. El análisis demuestra que, con una gestión profesional de los recursos y una ejecución operativa eficaz, el proyecto alcanza rentabilidad dentro del horizonte temporal esperado de dieciocho a treinta meses.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 8,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 84
+  },
+  "104": {
+   "estilo": "Heading 1",
+   "texto": "9. Aspectos Legales y Licencias",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 9,
+   "traducir": false,
+   "en_fijo": "9. Legal Requirements, Permits & Licenses"
+  },
+  "105": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 9,
+   "traducir": false
+  },
+  "106": {
+   "estilo": "Normal",
+   "texto": "La apertura de un tapas bar o gastrobar en España requiere obtener una serie de autorizaciones administrativas que constituyen el pilar fundamental para el inicio de la actividad. El primer paso consiste en solicitar la licencia de apertura ante el ayuntamiento correspondiente, determinando si la actividad se clasifica como inocua o sujeta a autorización ambiental. En el caso de un establecimiento que elabora cocina en el propio local, como corresponde a un gastrobar con carta de tapas y raciones calientes, la actividad se considera clasificada, lo que implica un procedimiento administrativo más exhaustivo que incluye la presentación de proyecto técnico y, en muchos municipios, la calificación ambiental del negocio.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 109,
+   "nota": "D61 §9 1/5: el marco US por niveles (federal, estatal, condado, ciudad); LLC + EIN gratis en el IRS; seller's permit / sales tax registration; business license; zoning check ANTES de firmar el lease; building permits de la obra → certificate of occupancy (sustituye la licencia de apertura)"
+  },
+  "107": {
+   "estilo": "Normal",
+   "texto": "La diferencia entre actividad inocua y clasificada resulta determinante para el gastrobar. Mientras que una actividad inocua solo requiere comunicación previa al ayuntamiento, la elaboración de alimentos cocinados in situ sitúa al establecimiento en la categoría de actividad clasificada, sujeta a autorización. Esto implica que el local debe cumplir con requisitos específicos de ventilación y extracción de humos, debiendo disponerse de una salida de humos independiente que cumpla con la normativa vigente, generalmente mediante conductos que alcancen la cubierta del edificio o cumplan con las distancias mínimas establecidas por la ordenanza municipal de actividades.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 94,
+   "nota": "§9 2/5: LIQUOR LICENSE (camino crítico): agencia estatal (ABC / control board) + aprobación local; clases beer & wine (desde ~$3,000) y full liquor ($12,000-$400,000); en estados con cupo se compra o transfiere una licencia existente a precio de mercado (Boston > $450,000); el libro presupuesta {{inv_licencia}} como ejemplo de estado SIN cupo; pídela al firmar el local: a menudo 3-12 meses; una licencia comprada es un activo intangible: «ask your CPA» (sustituye inocua / clasificada)"
+  },
+  "108": {
+   "estilo": "Normal",
+   "texto": "El Registro General Sanitario de Empresas Alimentarias y Alimentos constituye otro requisito obligatorio. El establecimiento debe inscribirse en el RGSEAA antes del inicio de la actividad, presentando la documentación que acredite la formación adecuada del personal manipulador de alimentos y los procedimientos de higiene implantados. Complementariamente, resulta imprescindible disponer de un sistema de Análisis de Peligros y Puntos Críticos de Control documentado, el conocido APPCC, que permita garantizar la seguridad alimentaria de las elaboraciones servidas. Este sistema debe contemplar la trazabilidad de materias primas, el control de temperaturas de conservación, las condiciones de manipulación y el plan de limpieza y desinfección de instalaciones.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 103,
+   "nota": "§9 3/5: health department plan review → food establishment permit + inspección; Certified Food Protection Manager + food handler cards; FDA Food Code adoptado por el estado; 9 alérgenos mayores; cocina: Type I hood con supresión UL 300 (NFPA 96) + grease interceptor + fire marshal (sustituye el RGSEAA)"
+  },
+  "109": {
+   "estilo": "Normal",
+   "texto": "La licencia de terraza representa un elemento diferenciador para el modelo de negocio propuesto, dado que el gastrobar contempla servicio en terraza. Esta autorización se solicita de forma independiente a la licencia de actividad y está sujeta a la ordenanza municipal de terrazas, que establece limitaciones de ocupación, horarios y condiciones estéticas. En zonas con elevada densidad de población, el ayuntamiento puede exigir una medición acústicaprevia del local para verificar el cumplimiento de los niveles sonoros permitidos, especialmente si el establecimiento se ubica en una zona residencial o mixta. En caso de superar los límites establecidos, será necesario instalar sistemas de aislamiento acústico que deberán especificarse en el proyecto técnico.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 110,
+   "nota": "§9 4/5: dram shop / liquor liability (el local puede responder del daño de un cliente servido en exceso; mediana de $2,039/año en bares pequeños, Insureon; el libro presupuesta {{seguros_anual}} con general liability + liquor liability + property); servicio responsable (TIPS / ServSafe Alcohol) y control de edad; sidewalk café / patio permit (sustituye la licencia de terraza)"
+  },
+  "110": {
+   "estilo": "Normal",
+   "texto": "La licencia de música ambiente o entretenimiento requiere tramitación separada en la mayoría de municipios, debiendo especificar el tipo de equipamiento sonoro instalado y sus características. El volumen máximo permitido varía según la zonificación urbana, y su incumplimiento puede derivar en sanciones y requerimientos de cierre. Por último, en materia laboral y de prevención de riesgos, el empresario debe cumplir con las obligaciones derivadas de la Ley de Prevención de Riesgos Laborales, incluyendo la evaluación de riesgos del centro de trabajo, la formación de los empleados y la disposición de los equipos de protección necesarios. Adicionalmente, resulta obligatorio aplicar el Convenio Colectivo de Hostelería de la provincia correspondiente para la contratación del personal, garantizando las condiciones salariales y laborales establecidas en el acuerdo sectorial.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 9,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 124,
+   "nota": "§9 5/5: música (ASCAP / BMI / SESAC) + entertainment permit si hay música en vivo o DJ + noise ordinance; horario y last call los fija el estado y a menudo la ciudad (parámetro, sin cifra); y, como ÚLTIMA frase o frases, la nota UK: premises licence + personal licence (Licensing Act 2003), registro del negocio de alimentos en el council 28 días antes de abrir, Food Hygiene Rating (FHIS en Escocia), VAT 20 % en el local, 14 alérgenos"
+  },
+  "111": {
+   "estilo": "Heading 1",
+   "texto": "10. Conclusiones y Plan de Accion",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "encabezado",
+   "seccion": 10,
+   "traducir": false,
+   "en_fijo": "10. Conclusions & Action Plan"
+  },
+  "112": {
+   "estilo": "Normal",
+   "texto": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": 8.0,
+    "font": null,
+    "color": "C6A664"
+   },
+   "rol": "separador",
+   "seccion": 10,
+   "traducir": false
+  },
+  "113": {
+   "estilo": "Normal",
+   "texto": "La oportunidad de mercado que presenta este proyecto es sólida y se sustenta en tres pilares fundamentales que no dependen de modas pasajeras sino de estructuras profundas del comportamiento consumidor español. El modelo de tapas genera un ticket medio contenido que facilita la frecuencia de visita, mientras que la cultura del tapeo está profundamente arraigada y se combina perfectamente con el crecimiento del turismo gastronómico y la demanda de espacios de afterwork en zonas urbanas. El gastrobar eleva esta propuesta tradicional hacia una experiencia más sofisticada sin perder el espíritu de accesibilidad que hace viable el volumen de operación necesario para alcanzar rentabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 103
+  },
+  "114": {
+   "estilo": "Normal",
+   "texto": "Los riesgos identificados son manejables pero requieren atención activa. La dependencia de la ubicación es crítica y la elección del barrio determinará en gran medida el éxito del proyecto, por lo que recomiendo priorizar ubicaciones con flujo peatonal consolidado, preferiblemente cerca de oficinas, zonas de ocio o ejes comerciales. La competencia en el segmento de tapas y gastrobar se ha intensificado significativamente en los últimos cinco años, lo que exige una diferenciación clara en propuesta de valor, ya sea por producto, ambiente o servicio. La estacionalidad afecta menos a locales urbanos bien ubicados, pero el verano en ciudades costeras o turísticas requiere estrategia específica para mantener ocupación.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 107
+  },
+  "115": {
+   "estilo": "Normal",
+   "texto": "Las fortalezas operativas del modelo son relevantes. El margen bruto en tapas puede alcanzar el 65-70% cuando la oferta está bien diseñada y el control de merma es riguroso, frente al 55-60% de un restaurante tradicional. La rotación rápida de mesas permite varios servicios en el mismo espacio, especialmente en cenas, y el formato de barra reduce la necesidad de personal de servicio especializado. La inversión moderada de 90-140 mil euros es asumible para un negocio de estas características y permite estructurar una deuda razonable con plazos de amortización que no comprometan la viabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 94
+  },
+  "116": {
+   "estilo": "Normal",
+   "texto": "La hoja de ruta propuesta es realista si se mantiene disciplina en los tiempos. Los meses uno y dos deben dedicarse a la constitución jurídica, búsqueda intensiva de lokal y negociación de condiciones. Los meses tres y cuatro comprenden la obra y equipamiento, fase crítica donde los sobrecostes acechan en todo proyecto de hostelería. El mes cinco se enfoca en selección y formación del equipo, aspecto que marca la diferencia entre un apertura exitosa y un comienzo problemático. La apertura en el mes seis requiere al menos cuatro semanas de preopening para pruebas de producto, ajustes de proceso y marketing de lanzamiento.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 102,
+   "nota": "§10: hoja de ruta en el orden del checklist (73 tareas en 6 fases): la licencia de alcohol se pide en la fase 2, al firmar el local; fuera «lokal» y la constitución de una SL"
+  },
+  "117": {
+   "estilo": "Normal",
+   "texto": "Los indicadores clave de seguimiento deben incluir ticket medio diario, cubierto medio por servicio, índice de repetición de clientela, ratio de costes de personal sobre ventas, margen bruto operativo y NPS de experiencia de cliente. Recomiendo establecer revisión mensual de estos indicadores con objetivos progresivos: los primeros seis meses para alcanzar punto de equilibrio, el primer año para consolidar clientela base, y el segundo año para evaluar posibilidad de expansión o mejora de rentabilidad.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 74
+  },
+  "118": {
+   "estilo": "Normal",
+   "texto": "La visión a tres años sitúa al establecimiento como referente en su zona, con una clientela fiel que represente al menos el 30% de la facturación, capacidad de generar caja suficiente para reinvertir en mejoras y potencial de replicar el modelo si los resultados lo justifican. El objetivo realista es alcanzar una rentabilidad sobre inversión del 15-20% al tercer año, dato alineado con proyectos similares de este segmento en el mercado español actual.",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "cuerpo",
+   "seccion": 10,
+   "traducir": true,
+   "tanda": "bar_b",
+   "palabras": 73
+  },
+  "119": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 1,
+   "fmt": {
+    "bold": null,
+    "italic": null,
+    "size_pt": null,
+    "font": null,
+    "color": null
+   },
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "120": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "121": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "122": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "123": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "124": {
+   "estilo": "Normal",
+   "texto": "ChefBusiness",
+   "n_runs": 1,
+   "fmt": {
+    "bold": true,
+    "italic": null,
+    "size_pt": 28.0,
+    "font": "Georgia",
+    "color": "1A1A1A"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "AI Chef Pro"
+  },
+  "125": {
+   "estilo": "Normal",
+   "texto": "Consultoria Gastronomica",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 18.0,
+    "font": "Georgia",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "Templates and AI tools for food businesses"
+  },
+  "126": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "127": {
+   "estilo": "Normal",
+   "texto": "chefbusiness.co\ninfo@chefbusiness.co",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 12.0,
+    "font": "Calibri",
+    "color": "6B6B6B"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "aichef.pro\ninfo@aichef.pro"
+  },
+  "128": {
+   "estilo": "Normal",
+   "texto": "",
+   "n_runs": 0,
+   "rol": "vacio",
+   "seccion": 10,
+   "traducir": false
+  },
+  "129": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Tareas: Tapas Bar / Gastrobar — 14 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Food Cost Kit Pro · HACCP Food Safety Kit Pro"
+  },
+  "130": {
+   "estilo": "Normal",
+   "texto": "→ Kit de Escandallos Pro — 12 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Restaurant Staff Scheduling Kit Pro"
+  },
+  "131": {
+   "estilo": "Normal",
+   "texto": "→ Pack Plantillas APPCC — 14 EUR",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 10.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "→ Gastro Pro Prompts eBook (300+ AI prompts)"
+  },
+  "132": {
+   "estilo": "Normal",
+   "texto": "\nchefbusiness.co/productos-digitales/",
+   "n_runs": 1,
+   "fmt": {
+    "bold": false,
+    "italic": null,
+    "size_pt": 11.0,
+    "font": "Calibri",
+    "color": "C6A664"
+   },
+   "rol": "fijo",
+   "seccion": 11,
+   "traducir": false,
+   "en_fijo": "\naichef.pro/en/digital-products"
+  }
+ }
+}
