@@ -20,7 +20,7 @@ const checkItems = [
   'Plan Financiero Excel con mix B2C 35 % + B2B 65 % y estacionalidad mayo-octubre + Falles',
   'Plantilla 88 proveedores reales (arroceros DO Valencia + Calasparra, mariscos Mediterráneo, Garcima, Pordamsa)',
   'Catálogo equipamiento + utensilios + menaje con SKU + URL + precio actualizado',
-  'Manual técnico paellero: técnica del fuego + socarrat + 6 tipos arroz + 3 caldos pro + tabla 12 paellas',
+  'Manual técnico paellero: escalado por paellera + técnica del fuego + socarrat + 6 tipos de arroz + 4 caldos + tabla de 12 paellas + alérgenos',
   '10 experiencias temáticas + Guía 8 sistemas de cocción + roadmap food truck arrocería',
   '2 modelos de contrato (B2C particular + B2B profesional con anexo tarifario)',
   'Acceso inmediato + actualizaciones de por vida',
