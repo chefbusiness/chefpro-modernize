@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-11T11:12:15Z",
+  "generado": "2026-10-11T11:29:27Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "bar": "bar-financial-projections.xlsx"
@@ -673,6 +673,13 @@
    "hoja_es": "0. Supuestos",
    "celda": "B62"
   },
+  "meses_alquiler_previo": {
+   "valor": 2,
+   "fmt": "int",
+   "texto": "2",
+   "hoja_es": "0. Supuestos",
+   "celda": "B54"
+  },
   "ventas_dia": {
    "valor": 2565.0,
    "fmt": "usd",
@@ -701,6 +708,30 @@
    "valor": 0.5824457439896037,
    "fmt": "pct1",
    "texto": "58.2%",
+   "deriv": true
+  },
+  "costes_variables_pct": {
+   "valor": 0.30299999999999994,
+   "fmt": "pct1",
+   "texto": "30.3%",
+   "deriv": true
+  },
+  "otros_variables_pct": {
+   "valor": 0.05499999999999991,
+   "fmt": "pct1",
+   "texto": "5.5%",
+   "deriv": true
+  },
+  "pesimista_perdida": {
+   "valor": 122493.41428571427,
+   "fmt": "usd",
+   "texto": "$122,493",
+   "deriv": true
+  },
+  "pesimista_perdida_operativa": {
+   "valor": 51387.69999999998,
+   "fmt": "usd",
+   "texto": "$51,388",
    "deriv": true
   }
  }

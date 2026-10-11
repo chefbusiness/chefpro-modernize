@@ -4,8 +4,8 @@
  "ficheros": {
   "bar-financial-projections.xlsx": {
    "titulo": "Bar Financial Projections: 3-Year P&L, Cash Flow & Financing",
-   "sha256": "fbd3e1d912923aeacb888ba1bf981053601a49aea64a74e03b46070b975c2f15",
-   "bytes": 66121,
+   "sha256": "fff7c6482759c63f44a8c12e68f94fa461ee88ca850f98617f2f82277cf4c381",
+   "bytes": 66224,
    "hojas": [
     "0. Assumptions",
     "Startup Costs",
@@ -22,8 +22,8 @@
   },
   "bar-opening-checklist.xlsx": {
    "titulo": "Bar Opening Checklist (73 Tasks)",
-   "sha256": "e077a4821d7595a57d5631fd3db0eb6dff16cc2af21ab9cc14749b7fa82611c8",
-   "bytes": 22989,
+   "sha256": "9621312611ab4707b5745a8dd254332174bd502a0c7a6d740f22c48ff236be06",
+   "bytes": 23059,
    "hojas": [
     "Phase 1 - Business Setup",
     "Phase 2 - Location & Licenses",
@@ -47,11 +47,11 @@
   },
   "bar-business-plan.docx": {
    "titulo": "Bar Business Plan (10 Sections)",
-   "sha256": "ece4f2cbe2cead447a2ec8413f0ddf5806cf8cb928583d4431daca11af3f90fd",
-   "bytes": 54552,
+   "sha256": "d4d9574487edabe8e33789f8b6b9566c0cb40e23a0a2a12799b74148092ad0e7",
+   "bytes": 55070,
    "parrafos": 133,
    "con_texto": 111,
-   "palabras": 7583,
+   "palabras": 7803,
    "encabezados": [
     "1. Executive Summary",
     "2. Concept & Value Proposition",

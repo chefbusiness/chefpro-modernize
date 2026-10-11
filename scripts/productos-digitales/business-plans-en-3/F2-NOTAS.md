@@ -245,3 +245,32 @@ $PY bp3.py aplicar_en --idempotencia --json /tmp/bar-real.json && $PY bp3.py ens
 $PY bp3.py gates_en && $PY bp3.py gates_en --autotest && $PY bp3.py ensamblar_docx --autotest --dir /tmp/bar-docx-at
 $PY resumen_entregables.py                                   # entregables_bar.json + barrido independiente
 ```
+
+## 9. Ronda de arreglos tras `REVISION-FINAL.md` (11-oct, sesión Claude Code) — todo por la vía de TEXTO
+
+Aplicados los 7 MAYOR, los 17 MENOR y el opcional de `Instructions!A52`, dentro del circuito (ningún fichero generado
+se parchea a mano; M4 sin tocar `B54`):
+
+| Dónde vive | Arreglos |
+|---|---|
+| `textos_en/GBAR-plan.json` | m3 `Startup Costs!D8` (renovación anual o bienal) · m4 `C44`/`C45` (el draft system pasa a la obra) · m6 `Instructions!D55` (rótulo real) · m7 `C51` (patio solo si abre casi todo el año) · M7 `Instructions!D69` (dol.gov) |
+| `textos_en/GBAR-check.json` | M4 `Phase 2!E6` (rent abatement + license contingency) · M7 `Phase 4!E5`, `Phase 4!E13`, `Phase 1!E6` · m10 `Phase 3!E11` (instalador de grifos) · m11 `Phase 1!E8` |
+| `textos_en/GR.revision.json` (4 correcciones) | M4 `0. Assumptions!C54` (meses hasta la licencia) · m5 `Scenarios!E24` («"Staffing"») |
+| `datos_bar.py` POR_CELDA / FIJOS | m8 `C63` (6.7 % × cuota de alcohol) · m17 `Staffing!A29` (sin la 2.ª frase) · m12 `Phase 3!D5` «1-3 months» · m13 `Phase 6!B6/C6` · A52 «US INDUSTRY BENCHMARKS (sourced) AND KIT ESTIMATES» (c0883 pasa de GM a POR_CELDA) |
+| `docx_en_bar_a.json` / `_b.json` | M1 [42], [100] · M2 [102] · M3 [58], [76] · M4 [114] · M5 [59] · M6 [106] · m1 [107] · m2 [42], [118] · m9 [94] · m10 [82] · m14 [116] · m15 [100] · m16 [39] |
+
+Para que el docx no lleve cifras sin token: 5 tokens **derivados del mismo caso** en `datos_bar.TOKENS_PROPIOS`
+(`meses_alquiler_previo` 2 · `costes_variables_pct` 30.3 % · `otros_variables_pct` 5.5 % · `pesimista_perdida`
+$122,493 · `pesimista_perdida_operativa` $51,388). Re-extracción en el VPS: **mismos ids y mismo ES** que antes.
+
+| Comprobación (VPS, `5be311da`) | Resultado |
+|---|---|
+| `check_textos --todas` (Mac) | las 6 OK |
+| `aplicar_en --idempotencia` | préstamo $369,000 en 1 vuelta · faltan 0 · 0 diferencias · 0 fallos de pycel · D15 sin fallos |
+| `ensamblar_docx --plan bar` · `gates_en` G1-G9 | G8 VERDE · **TODO VERDE** (G9: censo-entregables 0 defectos, no latinos 0) |
+| `gates_en --autotest` · `ensamblar_docx --autotest` | 20/20 · 8/8 |
+| `resumen_entregables.py` | 3,429 piezas · 0 cifras ES prohibidas · 0 español · 0 no latinos |
+| `cifras_caso.json` frente al de §8 | **los 100 tokens anteriores, idénticos** (valor y texto); 5 nuevos derivados |
+
+sha256: `bar-business-plan.docx` `d4d9574487edabe8…` · `bar-financial-projections.xlsx` `fff7c6482759c63f…` ·
+`bar-opening-checklist.xlsx` `9621312611ab4707…` · `cifras_caso.json` `bc45391432e5742b…`.
