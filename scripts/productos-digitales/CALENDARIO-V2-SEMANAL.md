@@ -357,6 +357,27 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   pp» y «17 CCAA»: verificar al pasarles el motor; (2) la panadería publicada dice «Transacciones/día previstos / necesarios»
   (concordancia); (3) proponer a John el mismo motor para el resto de la línea B, uno a uno.
 
+### ✅ 2026-10-11 (Claude Code en el Mac + VPS) — **Plan de Negocio Paellero para Eventos ES 2.2 LIVE** (PR #124, merge `57a4bc1`)
+
+- John: «dale, arranca con el paellero» (tras el catering). Mismo método: motor ES de línea A sobre el FT ES con el módulo clonado
+  del catering (`planes-v2_0/contenido_plan_negocio_paellero_eventos/`, carpeta `scripts/productos-digitales/paellero-2_2/` con F1,
+  research delta de gas / fuego / fiestas populares con BOE, SPEC, F2-NOTAS y REVISION-FINAL). Caso: 105 eventos × 94 raciones ×
+  16 € de media (bodas 28 · empresas 24 · privadas 18 · populares 5) = 157.920 € · neto 7,8 % · préstamo 51.600 € · DSCR 1,72 ·
+  equilibrio 90 eventos/año · holgura de caja 22,4 % (año 2: 13,7 %, explicada con palancas). Checklist 83 tareas, calculadora por
+  paelleras (autotest 336/336), docx reescrito 7.990 palabras con anexo autonómico corregido (PATRICOVA era de inundaciones),
+  carta re-escandallada, contratos con fuerza mayor (B2C y B2B), no desistimiento y efectivo < 1.000 €; manual técnico de la 1.2
+  intacto. Revisión opus: 0 bloqueantes, 6 MAYOR + 16 MENOR aplicados (comida testigo RD 1086/2020 art. 30.8 incluida).
+- **El mismo PR corrigió el Catering 2.2 LIVE**: nota del Excel «el Word sigue en la versión 1.1» (texto del motor, falso en las
+  2.2), comida testigo que faltaba, comida al 82 % (no el 85,19 % del molde), «pan común» en Tesorería y el email post-compra de
+  `verify-purchase.ts` (decía «DOCX 60+ pp… anexo 17 CCAA»). Equilibrio del catering: 108 eventos/año (landing actualizada).
+- Testimonios (John): Marc Esteve sin «4.200 EUR / escenario mínimo viable»; Antonio Rivas y Sam Williams «los contratos B2B».
+- LIVE: 22/22 ficheros = repo byte a byte; gate completo 63 / 823 / 0 (un fallo pasajero en la 1.ª pasada, 0 al repetir);
+  carrusel 63/63; robots verde. ≈ 2,3 M tokens.
+- **Correo de la 2.2**: el borrador `42ccda21` lleva ya la 2.2 («Actualización Plan de Negocio Paellero 2.2 (ES)»), mismo hueco
+  **18-nov 08:00Z**; el routine `trig_01WdpgX2KtUL9PbTyXHC4dVg` (19-oct) actualizado con el nombre nuevo. Prueba enviada a John.
+- **Deuda anotada**: email post-compra y tarjetas de **chef privado**, **parrillero** y **coctelería** con «DOCX 60+ pp» / «17 CCAA»
+  (pendientes de su 2.2); la nota «el Word sigue en la 1.1» es cierta en los 5 de línea A mientras su docx siga en 1.1 (T9).
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
