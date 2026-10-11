@@ -888,13 +888,35 @@ def _clasificar_amortizable(rotulo, tablas):
     return 'no'
 
 
-def compilar_vocabulario(voc):
-    """(regex, mapa) del vocabulario del oficio (M9), o `(None, {})`."""
+#: Catering ES 2.0 (11-oct-2026): la clave se guarda normalizada (sin tildes)
+#: y el texto llega CON tildes («Días de apertura al año»): con `re.escape`
+#: de la clave normalizada una clave con tilde no casaba nunca. Con
+#: `VOCABULARIO_SIN_TILDES = True` en el módulo de contenido, cada vocal (y la
+#: n) se compila como clase con sus variantes acentuadas. OPT-IN a propósito:
+#: la panadería declara frases con tilde («cubiertos/día previstos» →
+#: «transacciones/día previstas») que hoy NO casan, y encenderlo para todos
+#: cambiaría 3 rótulos de su libro publicado (regresion5.py, 11-oct-2026).
+_CLASES_SIN_TILDE = {'a': '[aáàä]', 'e': '[eéèë]', 'i': '[iíìï]',
+                     'o': '[oóòö]', 'u': '[uúùü]', 'n': '[nñ]'}
+
+
+def _patron_sin_tildes(clave):
+    return ''.join(_CLASES_SIN_TILDE.get(ch, re.escape(ch)) for ch in clave)
+
+
+def compilar_vocabulario(voc, sin_tildes=False):
+    """(regex, mapa) del vocabulario del oficio (M9), o `(None, {})`.
+
+    Con `sin_tildes` la clave casa con o sin tildes (frases como «días de
+    apertura al año»); la búsqueda en `mapa` es siempre `motor.norm` del
+    texto encontrado.
+    """
     mapa = dict((motor.norm(k), v) for k, v in (voc or {}).items() if k and v)
     if not mapa:
         return None, {}
+    patron = _patron_sin_tildes if sin_tildes else re.escape
     rx = re.compile(r'\b(' + '|'.join(
-        re.escape(k) for k in sorted(mapa, key=len, reverse=True))
+        patron(k) for k in sorted(mapa, key=len, reverse=True))
         + r')\b', re.I | re.U)
     return rx, mapa
 
@@ -1015,7 +1037,9 @@ class Plan(object):
         fórmula, sólo se traduce lo que va entre comillas dobles: las
         referencias a hoja van entre comillas SIMPLES y no se rozan.
         """
-        rx, mapa = compilar_vocabulario(self.dato('VOCABULARIO', {}))
+        rx, mapa = compilar_vocabulario(
+            self.dato('VOCABULARIO', {}),
+            bool(self.dato('VOCABULARIO_SIN_TILDES', False)))
         if not rx:
             return 0
 
@@ -4922,7 +4946,8 @@ def demos(carpeta, demos_dir, pid, origen=None):
     # canta «no se localizan las filas be_dia, cubiertos» y tumba el dry-run
     # de los tres hermanos que lo usan. Medido en la panadería, 2026-09-05.
     _voc['rx'], _voc['mapa'] = compilar_vocabulario(
-        getattr(_cont, 'VOCABULARIO', None) if _cont is not None else None)
+        getattr(_cont, 'VOCABULARIO', None) if _cont is not None else None,
+        bool(getattr(_cont, 'VOCABULARIO_SIN_TILDES', False)))
 
     def RATIO(clave, defecto):
         return _rot_ratio.get(clave, defecto)
