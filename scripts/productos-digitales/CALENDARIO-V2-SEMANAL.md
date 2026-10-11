@@ -258,9 +258,14 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   simétrica, fuero del consumidor), manual técnico (tiempos = suma de fases, alioli), anexo legal autonómico verificado, A4 en los 7 docx.
   Scripts: `scripts/productos-digitales/paellero-v1_2/`.
 - **Verificado LIVE** (`45a45121`): los 11 ficheros servidos = repo byte a byte (`cmp`), `gate-flujo-postpago.py --only` 11/11, 0 fallos, landing con «Versión 1.2» y «104 hitos».
+- **Manual técnico AMPLIADO el mismo día (PR #116, John: «démosle más calidad»):** de ~1.100 a ~4.400 palabras y de 2 a 10
+  tablas (escalado por paellera en rangos evento/menú, fuego gas/leña, caldos, cronograma, seguridad alimentaria, alérgenos
+  ×12 paellas, problemas y soluciones, checklist); catálogo con las capacidades de las paelleras alineadas (prometía 25-30 /
+  40-60 / 80-150; ahora ≈ 11-15 / 30-40 / 60-80 raciones). Verificado LIVE byte a byte y gate 11/11. Borrador del correo del
+  18-nov actualizado (ojo: `PATCH` sin `name` lo deja «Untitled»).
 - **La v2.0 completa de línea B (motor `grupo_b.py`, SPEC §3) sigue pendiente** y NO se hizo: break-even sin amortización (10,2
   eventos/año frente a «18-22» de la landing), inversión de la landing (3.500-25.000) frente al xlsx (3.790 / 9.670 / 23.110),
-  tasas dentro de fórmulas, manual técnico corto (~1.100 palabras), «Plantillas validadas con asesor legal» sin respaldo.
+  tasas dentro de fórmulas, «Plantillas validadas con asesor legal» sin respaldo.
 - **Cola de correos SANEADA el 11-oct** (John: «decide tú y soluciona eso»; había 4 huecos programables sin programar):
   - Programados hoy: **Escandallos 2.1** 3-nov 08:00Z `bd4839ce` · **Kit Chocolatería 2.1** 8-nov 08:00Z `f53775c5` (ES) ·
     **Coffee Shop** 4-nov 14:00Z `c6f59951` · **Restaurant** 9-nov 14:00Z `8789caca` (EN).
