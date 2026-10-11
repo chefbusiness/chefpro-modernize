@@ -632,7 +632,7 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     accessPath: '/plan-negocio-parrillero-asador-eventos-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Parrillero / Asador para Eventos',
     emailTitle: '¡Gracias por tu compra!',
-    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Parrillero / Asador para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing, plantilla de 96 proveedores, catálogo equipamiento, manual técnico parrillero, carta de 12 cortes, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck y checklist de apertura con anexo CCAA fuego al aire libre:',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Parrillero / Asador para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: plan de negocio en Word de 10 secciones con anexo del fuego al aire libre, plan financiero Excel de 9 hojas, calculadora de presupuestos por evento, plantilla de 93 proveedores, catálogo equipamiento, manual técnico parrillero, carta de 12 cortes, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck y checklist de apertura de 83 tareas en 6 fases:',
     emailCta: 'Acceder a mi Plan de Negocio',
     emailTitleResend: 'Accede a tu Plan de Negocio: Parrillero / Asador para Eventos',
     emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables del kit de parrillero / asador para eventos:',
