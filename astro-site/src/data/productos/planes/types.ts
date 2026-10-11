@@ -105,7 +105,7 @@ export interface PlanNegocioBonus {
   icon: IconName;
   label: string; // "BONUS 1"
   title: string;
-  value: string; // "€19"
+  value?: string; // "€19" (opcional: el EN no anuncia valor de bono)
   desc: string;
   image: string; // /lovable-uploads/ai-gallery/....jpg
 }
@@ -141,7 +141,7 @@ export interface PlanNegocioPricing {
   discountBadge?: string; // "-71%" (opcional: sin ancla no hay badge)
   heroNote: string; // hero: "Precio especial de lanzamiento. Sube pronto"
   buyBoxNote: string; // buyBox: "Precio especial de lanzamiento — 71 % de descuento"
-  bonusTotalLabel: string; // "Valor total del pack completo"
+  bonusTotalLabel?: string; // "Valor total del pack completo"
   bonusSaveLine?: string; // "¡Ahorra €85 HOY!" (opcional)
 }
 

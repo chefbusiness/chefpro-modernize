@@ -230,13 +230,12 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
+      'Besides the business plan, the financial model and the opening checklist, you get these extra resources, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Bakery Permits & Licenses Guide (Commercial vs Cottage Food, US + UK Notes)',
-        value: 'Included in the plan',
         desc: 'Section 9 of the plan plus Phases 1 and 2 of the checklist: why a bakery with a storefront and wholesale accounts needs a licensed commercial kitchen and not a cottage food permit, who licenses it in your state (health department or agriculture department), zoning, building and gas permits, oven ventilation, when FDA food facility registration applies, sales tax on bakery goods to go and resale certificates for wholesale — with notes for the UK. No state forms included: requirements vary by state, county and city.',
         image: '/lovable-uploads/ai-gallery/bbp-en-wholesale.jpg',
       },
@@ -244,7 +243,6 @@ const data: PlanNegocioData = {
         icon: 'ListChecks',
         label: 'BONUS 2',
         title: 'Bakery Industry Benchmarks (Sourced)',
-        value: '$29',
         desc: 'The market section of the plan plus the reference table inside the workbook: industry ranges for cost of goods, labor and margin in bakeries, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
         image: '/lovable-uploads/ai-gallery/bbp-en-owner-plan.jpg',
       },
@@ -280,19 +278,15 @@ const data: PlanNegocioData = {
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 66 tasks in 6 phases',
       'BONUS: Bakery Permits & Licenses Guide (included in the plan)',
-      'BONUS: Bakery Industry Benchmarks ($29)',
+      'BONUS: Bakery Industry Benchmarks',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },
 
   pricing: {
-    priceOld: '$129',
     price: '$39',
-    discountBadge: '-70%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Bakery Industry Benchmarks bonus ($29)',
-    bonusSaveLine: 'Save $90 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'BAKERY BUSINESS PLAN — $39',

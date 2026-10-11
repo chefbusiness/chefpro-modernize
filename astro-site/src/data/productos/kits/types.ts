@@ -79,7 +79,7 @@ export interface KitExcelBonus {
   icon: IconName;
   label: string; // "BONUS 1"
   title: string;
-  value: string; // "€27" / "9 EUR"
+  value?: string; // "€27" / "9 EUR" (opcional: el EN no anuncia valor de bono)
   desc: string;
   image: string; // /lovable-uploads/ai-gallery/....jpeg
 }
@@ -115,7 +115,7 @@ export interface KitExcelPricing {
   discountBadge?: string; // "-75%" (opcional: sin ancla no hay badge)
   heroNote: string; // "Precio especial de lanzamiento. Sube pronto"
   buyBoxNote: string; // "Precio especial de lanzamiento — 75% de descuento"
-  bonusTotalLabel: string; // "Valor total del kit completo" / "...del pack completo"
+  bonusTotalLabel?: string; // "Valor total del kit completo" / "...del pack completo"
   bonusSaveLine?: string; // "¡Ahorra €37 HOY!" / "Ahorra 35 EUR HOY" (opcional)
 }
 

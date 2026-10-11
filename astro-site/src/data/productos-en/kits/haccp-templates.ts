@@ -208,13 +208,12 @@ const data: KitExcelData = {
     headingPre: 'Exclusive ',
     headingGold: 'Bonuses',
     subtitle:
-      'Besides the 19 templates, you get these extra resources — worth $28',
+      'Besides the 19 templates, you get these extra resources',
     items: [
       {
         icon: 'GraduationCap',
         label: 'BONUS 1',
         title: 'Food Safety Training Log',
-        value: '$19',
         desc: "A template to record all of your team's food safety training: Certified Food Protection Manager, food handler training, HACCP, allergen awareness and first aid, with renewal dates that flag themselves. A health inspector can ask for it at any time.",
         image: '/lovable-uploads/ai-gallery/haccp-en-logs-binder.jpg',
       },
@@ -222,7 +221,6 @@ const data: KitExcelData = {
         icon: 'AlertTriangle',
         label: 'BONUS 2',
         title: 'Food Recall & Foodborne Illness Response Plan',
-        value: '$9',
         desc: 'A printable poster with the 7 steps to follow in a recall or a suspected foodborne illness, plus emergency contacts for the US and the UK. Identify → Isolate → Notify → Document → Communicate → Verify → Record.',
         image: '/lovable-uploads/ai-gallery/use-case-task-appcc-fridge.jpg',
       },
@@ -308,8 +306,8 @@ const data: KitExcelData = {
       'HACCP plan pre-filled with 21 hazards',
       'Master cleaning schedule with 32 areas, inside and out',
       '25-point health inspection self-checklist',
-      'BONUS: Food Safety Training Log ($19)',
-      'BONUS: Food Recall & Foodborne Illness Response Plan ($9)',
+      'BONUS: Food Safety Training Log',
+      'BONUS: Food Recall & Foodborne Illness Response Plan',
       '30-day money-back guarantee',
     ],
     ctaLabel: 'YES, I WANT THE HACCP KIT — $19',
@@ -337,13 +335,9 @@ const data: KitExcelData = {
   },
 
   pricing: {
-    priceOld: '$39',
     price: '$19',
-    discountBadge: '-51%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 51% off',
-    bonusTotalLabel: 'Total value of the complete kit: $67 — 19 templates ($39) + 2 bonuses ($28)',
-    bonusSaveLine: 'Save $20 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'HACCP FOOD SAFETY KIT PRO — $19',

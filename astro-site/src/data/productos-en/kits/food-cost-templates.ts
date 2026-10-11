@@ -205,13 +205,12 @@ const data: KitExcelData = {
     headingPre: 'Exclusive ',
     headingGold: 'Bonuses',
     subtitle:
-      'On top of the 13 templates, you get these extra resources — worth $68',
+      'On top of the 13 templates, you get these extra resources',
     items: [
       {
         icon: 'BookOpen',
         label: 'BONUS 1',
         title: 'Guide: How to Reduce Food Cost in 30 Days',
-        value: '$39',
         desc: 'A week-by-week action plan to bring your food cost down: how to read an invoice, supplier negotiation tactics, a weekly checklist, a basic menu-engineering step and a worked case study built from real consulting work. 23-page PDF.',
         image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg',
       },
@@ -219,7 +218,6 @@ const data: KitExcelData = {
         icon: 'FileSpreadsheet',
         label: 'BONUS 2',
         title: 'Actual vs Theoretical Food Cost (Inventory & Waste)',
-        value: '$29',
         desc: 'Excel template with an incident log for waste (with reasons and corrective actions) and inventory control that compares actual usage with the theoretical usage from what you sold.',
         image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg',
       },
@@ -317,8 +315,8 @@ const data: KitExcelData = {
       'Menu pricing calculator for 10 venue types',
       'Food cost percentage tracker with a trend chart',
       "ACTUAL food cost: type the price you charge today and the sheet flags it in red if you're over target",
-      'BONUS: "How to Reduce Food Cost in 30 Days" guide ($39)',
-      'BONUS: Actual vs Theoretical Food Cost (Inventory & Waste) ($29)',
+      'BONUS: "How to Reduce Food Cost in 30 Days" guide',
+      'BONUS: Actual vs Theoretical Food Cost (Inventory & Waste)',
       'Pay once — lifetime access to the online dashboard',
       '30-day money-back guarantee',
     ],
@@ -346,13 +344,9 @@ const data: KitExcelData = {
   },
 
   pricing: {
-    priceOld: '$59',
     price: '$19',
-    discountBadge: '-67%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 67% off',
-    bonusTotalLabel: 'Total value of the complete kit: $127 — 13 templates ($59) + 2 bonuses ($68)',
-    bonusSaveLine: 'Save $40 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'FOOD COST KIT PRO — $19',

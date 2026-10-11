@@ -219,13 +219,12 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
+      'Besides the business plan, the financial model and the opening checklist, you get these extra resources, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Coffee Shop Permits & Licenses Guide (US + UK Notes)',
-        value: 'Included in the plan',
         desc: 'Section 9 of the plan plus Phases 1 and 2 of the checklist: what a fixed-location coffee shop usually needs and in what order — zoning check before you sign, building permits, certificate of occupancy, health department plan review and food establishment permit, sign permit, sidewalk cafe permit and a liquor license only if you serve alcohol — with notes for the UK. No state forms included: requirements vary by state, county and city.',
         image: '/lovable-uploads/ai-gallery/csbp-en-storefront.jpg',
       },
@@ -233,7 +232,6 @@ const data: PlanNegocioData = {
         icon: 'ListChecks',
         label: 'BONUS 2',
         title: 'Coffee Shop Benchmarks (Reference Table)',
-        value: '$29',
         desc: 'The reference table inside the workbook: cost of goods, labor, rent and net margin, each with its source or marked "kit estimate", and the OK / REVIEW check that tells you where your plan departs from the benchmark. Every threshold is an editable cell.',
         image: '/lovable-uploads/ai-gallery/csbp-en-owner-plan.jpg',
       },
@@ -269,19 +267,15 @@ const data: PlanNegocioData = {
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 75 tasks in 6 phases',
       'BONUS: Coffee Shop Permits & Licenses Guide (included in the plan)',
-      'BONUS: Coffee Shop Benchmarks ($29)',
+      'BONUS: Coffee Shop Benchmarks',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },
 
   pricing: {
-    priceOld: '$129',
     price: '$39',
-    discountBadge: '-70%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Benchmarks bonus ($29)',
-    bonusSaveLine: 'Save $90 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'COFFEE SHOP BUSINESS PLAN — $39',
