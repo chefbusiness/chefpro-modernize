@@ -127,7 +127,8 @@
   "inv_menaje": "smallwares, hotel and sheet pans [usd]",
   "inv_menaje_servicio": "chafing dishes, insulated carriers, serving ware [usd]",
   "ventas_evento": "average revenue per event, year 1 (excl. sales tax) [usd]",
-  "invitados_a1": "guests served in year 1 [int]"
+  "invitados_a1": "guests served in year 1 [int]",
+  "caida_absorbible_pct": "drop in events the plan can absorb before cash stops covering costs (1 − break-even ÷ plan) [pct0]"
  },
  "movimiento_caf": null,
  "notas_del_plan": "ESCRIBES, NO TRADUCES (D78). El «es» de cada párrafo es la RANURA del plan de FOOD TRUCK (sirve solo para el papel del párrafo y su longitud aproximada): el contenido es de CATERING, desde fuente_es_cat.json (concepto, mezcla particulares/empresas, política comercial —anticipo, cancelación—, operativa de un evento en 6 fases, riesgos) y research §1-§6 (F1-research-us-delta.md). Concepto (D69): FULL-SERVICE OFF-SITE EVENT CATERER desde una cocina comisaria compartida con permiso + una furgoneta refrigerada; empresas entre semana (drop-off, buffets, recepciones, fiestas de diciembre) y particulares el fin de semana (bodas, fiestas privadas); estilos drop-off · buffet · family-style · plated · stations; diferencial = chef-attended themed stations (NO «12 cocinas del mundo»); sin alcohol propio (lo compra el cliente y lo sirven bartenders certificados). Cifras del caso SOLO con tokens {{…}}; de mercado, solo las de research con su fuente. Prohibido (gate): «food truck», «truck», «per day», «operating days», «customers» (di clients / guests; «corporate customers» sí), «window», «festival», «España», «ChefBusiness», las cifras del ES de catering (603.700, 2.200, 4.500, 5.500, 11.500, «14 eventos/mes», «55 %»), «60+ páginas», «96 proveedores», «10 ejemplos validados», porcentajes sin fuente. El cierre (productos) lo escribe el ensamblador",

@@ -69,12 +69,14 @@ ENTRADAS = [
     ('margin', 'Target gross margin on the food & service subtotal', PCT, 0.50,
      'Share of the subtotal left after the direct costs above. Kit estimate.'),
     ('sc', 'Service charge (% of subtotal)', PCT, 0.20,
-     'A mandatory service charge is wages, not a tip (IRS Rev. Rul. 2012-18). Kit estimate.'),
+     'Added on top of the price per guest. The part you pay out to staff is wages, not tips (IRS Rev. Rul. '
+     '2012-18), with payroll taxes; the part you keep is revenue. Kit estimate.'),
     ('tax', 'Sales tax rate (state + local)', PCT1, 0.08, 'Kit estimate: use your own state + local rate.'),
     ('tax_sc', 'Does your state tax the service charge?', '@', 'Yes',
-     'CA: a mandatory service charge is taxable. NY: not taxable only if it is separately stated as a gratuity and '
-     'all of it goes to the staff. TX: not taxable up to 20% if separately stated and distributed to qualified '
-     'employees. Check your state.'),
+     'CA: a mandatory service charge is taxable. NY: not taxable only if it is separately stated, identified as a '
+     'gratuity and all of it goes to the staff. TX: not taxable up to 20% if separately stated, identified as a '
+     'gratuity and paid to qualified employees (servers and bartenders, not chefs); over 20%, all of it is taxable. '
+     'Check your state.'),
     ('gratuity', 'Suggested voluntary gratuity (% of subtotal; NOT in the price)', PCT, 0.0,
      'Optional. A voluntary tip is the client\'s decision and goes to the staff: it stays out of the total.'),
     ('deposit', 'Deposit to book the date (% of total)', PCT, 0.35,
@@ -89,8 +91,8 @@ SALIDAS = [
     ('c_other', 'Rentals and mileage', MONEDA, '{rentals}+{miles}*{per_mile}', ''),
     ('c_total', 'Total direct cost', MONEDA, '{c_food}+{c_staff}+{c_other}', ''),
     ('c_guest', 'Direct cost per billable guest', MONEDA, '{c_total}/{billable}', ''),
-    ('price', 'PRICE PER GUEST (rounded up to the next 0.50)', MONEDA, 'roundup({c_total}/(1-{margin})/{billable}*2)/2',
-     'Excl. service charge and sales tax.'),
+    ('price', 'PRICE PER GUEST before service charge and tax', MONEDA, 'roundup({c_total}/(1-{margin})/{billable}*2)/2',
+     'Rounded up to the next 0.50. Excl. service charge and sales tax; staff wages are already inside it.'),
     ('subtotal', 'Food & service subtotal', MONEDA, '{price}*{billable}', 'Price per guest × billable guests.'),
     ('sc_amt', 'Service charge', MONEDA, '{subtotal}*{sc}', ''),
     ('tax_amt', 'Sales tax', MONEDA, '({subtotal}+if({tax_sc}=="Yes",{sc_amt},0))*{tax}',
@@ -325,13 +327,14 @@ INSTRUCCIONES = [
     ('7. The deposit books the date; the balance is due before the event. The "3 Example Quotes" tab shows three '
      'complete quotes calculated with the same formulas.', False),
     ('SERVICE CHARGE, GRATUITY AND SALES TAX (US)', True),
-    ('A mandatory service charge is not a tip: the IRS treats it as wages paid to the staff, with payroll taxes (Rev. '
-     'Rul. 2012-18). A voluntary gratuity is the client\'s decision: this calculator keeps it out of the price and the '
-     'total.', False),
+    ('A mandatory service charge is not a tip: the part you pay out to the staff is wages, with payroll taxes (IRS '
+     'Rev. Rul. 2012-18), and the part you keep is revenue. A voluntary gratuity is the client\'s decision: this '
+     'calculator keeps it out of the price and the total.', False),
     ('Sales tax on catering: in many states it applies to the whole catering invoice (food, staff, rentals). Whether '
      'it also applies to the service charge depends on the state: in California a mandatory service charge is '
-     'taxable; in New York it is not taxable only when it is separately stated as a gratuity and all of it goes to '
-     'the staff; in Texas it is not taxable up to 20% if separately stated and distributed to qualified employees. '
+     'taxable; in New York it is not taxable only when it is separately stated, identified as a gratuity and all of '
+     'it goes to the staff; in Texas it is not taxable up to 20% if separately stated, identified as a gratuity and '
+     'paid to qualified employees (servers and bartenders, not chefs), and over 20% all of it is taxable. '
      'Check your state\'s rules and set the switch.', False),
     ('UK: catering for events and functions is standard-rated for VAT (20%, HMRC VAT Notice 709/1): enter 0.20 as the '
      'tax rate and include it in your quotes.', False),

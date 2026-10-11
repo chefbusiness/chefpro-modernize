@@ -81,7 +81,7 @@ POR_CELDA = OrderedDict([
     (('CATP', _I, 'A12'), 'Commissary storage fit-out'),
     (('CATP', _I, 'A13'), 'LLC formation and legal'),
     (('CATP', _I, 'A14'), 'First-year permits and licenses'),
-    (('CATP', _I, 'A15'), 'Health plan review (only if you lease your own kitchen)'),
+    (('CATP', _I, 'A15'), 'Health permit plan / SOP review'),                    # M1 (revisión final)
     (('CATP', _I, 'A16'), 'Catering software + card reader'),
     (('CATP', _I, 'A17'), 'Smallwares, hotel and sheet pans'),
     (('CATP', _I, 'A18'), 'Opening inventory'),
@@ -93,7 +93,7 @@ POR_CELDA = OrderedDict([
     (('CATP', _I, 'A31'), 'Van, upfit and fit-out (depreciated over the van life)'),
     # 3-Year P&L (D74)
     (('CATP', _P, 'A22'), 'Commissary kitchen rent & van parking'),
-    (('CATP', _P, 'A27'), 'Van fuel, maintenance and inspections'),
+    (('CATP', _P, 'A27'), 'Van maintenance, repairs and inspections'),           # M2: el combustible va en varios
     (('CATP', _P, 'A34'), 'Food safety and alcohol service training (ServSafe, TIPS)'),
     (('CATP', _P, 'A35'), 'Tastings for prospects'),
     (('CATP', _P, 'A55'), 'Commissary / Sales'),
@@ -107,17 +107,23 @@ POR_CELDA = OrderedDict([
     (('CATP', _R, 'A18'), 'Hours per event to cover (production, loading, service, pack-down)'),
     (('CATP', _R, 'A19'), 'People needed per event (average)'),
     (('CATP', _R, 'A20'), 'Event hours to cover per year'),
-    (('CATP', _R, 'A24'), 'The gross pay, employer payroll taxes, monthly cost and annual cost columns are TOTALS for the '
-                          'row: the event staff row covers all the people in it. Event staff (servers, bartenders, '
-                          'attendants) are budgeted as hourly W-2 employees with employer payroll taxes and workers\' '
-                          'comp: paying them as 1099 contractors is a misclassification risk (FLSA economic-reality test; '
-                          'California AB5 presumes employment). The payroll tax rate and the number of pay periods are '
-                          'in the "0. Assumptions" tab.'),
+    (('CATP', _R, 'A24'), 'Columns D-G are TOTALS for the row: the event staff row covers all its people. Event staff '
+                          '(servers, bartenders, attendants) are hourly W-2 employees with payroll taxes and workers\' comp; '
+                          'paying them as 1099 contractors is a misclassification risk (FLSA; California AB5). Tax rate and '
+                          'pay periods: "0. Assumptions".'),                         # m9: cabe en el alto de la fila
     # 12-Month Cash Flow (D74): Month 1 = mes de apertura; anticipos fuera del modelo
-    (('CATP', _T, 'O5'), 'Share of the year\'s events in each month (adds up to 100%). Month 1 = your opening month: '
-                         'the example opens in March, so it starts with spring weddings and peaks in October and '
-                         'December (holiday parties); to open in another month, rotate the row. Deposits (25-50% when '
-                         'the contract is signed) are not modeled: they make your real cash flow better than this sheet.'),
+    (('CATP', _T, 'O5'), 'Share of the year\'s events per month (100% in total). Month 1 = opening month (March in the '
+                         'example): rotate the row.'),                               # m10: última columna sin ajuste
+    # Ronda de arreglos de la revisión final (m2, m4, m11): notas del motor (GM) que no valían tal cual en catering
+    (('CATP', _S, 'C20'), 'FICA (Social Security 6.2% + Medicare 1.45%) + federal and state unemployment taxes (FUTA / '
+                          'SUTA) + workers\' comp. The example uses a lean 10% with no benefits; the benchmarks table on '
+                          '"Instructions" gives 15-30% with benefits. Ask your payroll provider and carrier for your rate.'),
+    (('CATP', _S, 'C39'), 'Example rate: state + local sales tax combined. It varies widely by state and city: look up '
+                          'yours. UK: 20% VAT applies to catering for events and functions (VAT Notice 709/1)'),
+    (('CATP', _S, 'C67'), 'Minimum cushion of the plan above break-even (plan ÷ break-even − 1). The drop you can absorb is '
+                          '1 − break-even ÷ plan: a 15% cushion lets events fall by about 13% before costs stop being covered'),
+    (('CATP', _E, 'E24'), 'How far the plan sits above the cash break-even (plan ÷ break-even − 1); the drop you can absorb '
+                          'is 1 − break-even ÷ plan. The required minimum is set in the "0. Assumptions" tab'),
 ])
 
 # ==========================================================================
@@ -247,6 +253,9 @@ TOKENS_PROPIOS = OrderedDict([
     ('ventas_evento', ('usd', ('deriv', lambda c: c['ventas_a1'] / c['clientes_dia']),
                        'average revenue per event, year 1 (excl. sales tax)')),
     ('invitados_a1', ('int', ('deriv', lambda c: c['clientes_dia'] * c['dias']), 'guests served in year 1')),
+    # revisión final m2: lo que pueden caer los eventos antes de dejar de cubrir la caja = 1 − equilibrio ÷ plan
+    ('caida_absorbible_pct', ('pct0', ('deriv', lambda c: c['holgura_caja_pct'] / (1 + c['holgura_caja_pct'])),
+                              'drop in events the plan can absorb before cash stops covering costs (1 − break-even ÷ plan)')),
 ])
 
 
@@ -730,6 +739,10 @@ _C9_CAT = ('=IFERROR("Price per guest excl. sales tax plus the weighted sales ta
            'quote adds sales tax on top, and many states tax the whole catering invoice (food, staff, rentals and the '
            'service charge); in the UK, VAT is included in the price.","")')
 
+_F18_CAT = ('=IFERROR("At "&TEXT(\'0. Assumptions\'!$B$28,"0%")&" of sales: van fuel for each trip to the venues plus a '
+            'cushion for unbudgeted running costs. It is a VARIABLE cost: it moves with the number of events, so it cannot '
+            'sit in fixed costs (van maintenance and inspections are in row 27)","")')
+
 
 def formulas_cat():
     sys.path.insert(0, BP)
@@ -739,6 +752,7 @@ def formulas_cat():
         for c, f in d.items():
             out[('CATP', h, c)] = f
     out[('CATP', _S, 'C9')] = _C9_CAT
+    out[('CATP', _P, 'F18')] = _F18_CAT                                       # M2: el combustible de cada viaje, aquí
     out[('CATP', _E, 'A26')] = _PE_CAT
     for c, f in F._inversion('D21', 'D22', 'D23', 'D25', 'D26', 'D28', 'D31', 'D32', 'D33', 24, 26, 31, 32,
                              'used refrigerated van, van upfit, van refrigeration unit, commissary storage fit-out and '
@@ -746,7 +760,7 @@ def formulas_cat():
                              'LLC formation and legal, first-year permits, opening inventory, website, photography and '
                              'launch marketing, the commissary deposit, pre-opening commissary rent and the working '
                              'capital reserve').items():
-        out[('CATP', _I, c)] = f
+        out[('CATP', _I, c)] = f.replace('when the lease ends', 'when the commissary agreement ends')   # m11
     return out
 
 

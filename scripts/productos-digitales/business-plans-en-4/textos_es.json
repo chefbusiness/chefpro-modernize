@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-11T14:30:22Z",
+  "generado": "2026-10-11T15:08:52Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "784b2e0f",
+  "commit": "10a76f21",
   "libros": {
    "CATP": {
     "es": "plan-financiero-food-truck.xlsx",
@@ -16,17 +16,17 @@
    }
   },
   "n_cadenas": 959,
-  "n_traducir": 424,
+  "n_traducir": 420,
   "n_localizar": 396,
-  "n_palabras_subagentes": 9588,
+  "n_palabras_subagentes": 9537,
   "n_apariciones": 1123,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: cadenas del motor común FT/CAF cuyo EN del Food Truck publicado vale para catering (sin vocabulario de food truck ni de local). preparar_tandas escribe su EN. No van a los traductores",
-    "n_cadenas": 335,
-    "n_palabras": 3669,
-    "n_plan": 322,
+    "n_cadenas": 331,
+    "n_palabras": 3618,
+    "n_plan": 318,
     "n_check": 14,
     "n_localizar": 0,
     "n_max_len": 17
@@ -64,16 +64,16 @@
    {
     "id": "GX",
     "descripcion": "NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps",
-    "n_cadenas": 139,
-    "n_palabras": 724,
-    "n_plan": 129,
+    "n_cadenas": 143,
+    "n_palabras": 775,
+    "n_plan": 133,
     "n_check": 19,
     "n_localizar": 0,
     "n_max_len": 0,
     "por_tratamiento": {
      "mapa-clave": 2,
      "mapa-hoja": 15,
-     "regenerar": 122
+     "regenerar": 126
     }
    }
   ],
@@ -705,41 +705,6 @@
    }
   },
   {
-   "id": "c0035",
-   "es": "Contingencias comunes + AT/EP + desempleo + FOGASA + FP; ajusta a tu convenio y bonificaciones",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "cat"
-   ],
-   "n_apariciones": 1,
-   "palabras": 13,
-   "pistas": [
-    "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-    "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas"
-   ],
-   "sha1": "c9d84fd79f4f",
-   "donde": [
-    {
-     "f": "CATP",
-     "h": "0. Supuestos",
-     "c": "C20",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0035",
-    "en": "FICA (Social Security 6.2% + Medicare 1.45%) + federal and state unemployment taxes (FUTA / SUTA) + workers' comp. About 10% in total: adjust it to your state and your insurance carrier",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en (Food Truck EN publicado)",
-    "donde": [
-     "FTP 0. Supuestos!C20"
-    ]
-   }
-  },
-  {
    "id": "c0037",
    "es": "Salario bruto anual = bruto mensual × pagas",
    "grupo": "GM",
@@ -1213,37 +1178,6 @@
     "conjunto": "business-plans-en (Food Truck EN publicado)",
     "donde": [
      "FTP 0. Supuestos!C38"
-    ]
-   }
-  },
-  {
-   "id": "c0070",
-   "es": "Tipo reducido de hostelería",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "cat"
-   ],
-   "n_apariciones": 1,
-   "palabras": 4,
-   "sha1": "102816a469f3",
-   "donde": [
-    {
-     "f": "CATP",
-     "h": "0. Supuestos",
-     "c": "C39",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0070",
-    "en": "Example rate: state + local sales tax combined. It varies widely by state and city: look up yours. UK: 20% VAT on hot food and dine-in",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en (Food Truck EN publicado)",
-    "donde": [
-     "FTP 0. Supuestos!C39"
     ]
    }
   },
@@ -2054,40 +1988,6 @@
     "conjunto": "business-plans-en (Food Truck EN publicado)",
     "donde": [
      "FTP 0. Supuestos!A67"
-    ]
-   }
-  },
-  {
-   "id": "c0115",
-   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "cat"
-   ],
-   "n_apariciones": 1,
-   "palabras": 11,
-   "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
-   ],
-   "sha1": "721896d9dc29",
-   "donde": [
-    {
-     "f": "CATP",
-     "h": "0. Supuestos",
-     "c": "C67",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0115",
-    "en": "How far you can fall below plan before you start losing money",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en (Food Truck EN publicado)",
-    "donde": [
-     "FTP 0. Supuestos!C67"
     ]
    }
   },
@@ -6009,40 +5909,6 @@
     "conjunto": "business-plans-en (Food Truck EN publicado)",
     "donde": [
      "FTP Punto Equilibrio!A24"
-    ]
-   }
-  },
-  {
-   "id": "c0306",
-   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "cat"
-   ],
-   "n_apariciones": 1,
-   "palabras": 23,
-   "pistas": [
-    "D18: la EN nace en 2.2: explica el porqué sin historia de versiones"
-   ],
-   "sha1": "a40f4860d483",
-   "donde": [
-    {
-     "f": "CATP",
-     "h": "Punto Equilibrio",
-     "c": "E24",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0306",
-    "en": "How far you can fall before you cannot pay the fixed costs and the loan payment. The required minimum is set in the \"0. Assumptions\" tab",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en (Food Truck EN publicado)",
-    "donde": [
-     "FTP Punto Equilibrio!E24"
     ]
    }
   },
@@ -12148,7 +12014,7 @@
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
     "D72: motor permutado: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
-    "D70: caso US = 170 eventos/año × 60 invitados × $60 por invitado (sin sales tax, servicio incluido) ≈ $612,000; drivers permutados: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento; los años 2-3 crecen en EVENTOS (B7/B8); compara con la capacidad (fila 51)"
+    "D70: caso US = 180 eventos/año (calibrado D15; research: 170) × 60 invitados × $60 por invitado (sin sales tax, servicio incluido) = $648,000; drivers permutados: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar); los años 2-3 crecen en EVENTOS (B7/B8); compara con la capacidad (fila 51)"
    ],
    "sha1": "4e0fffa093b6",
    "donde": [
@@ -12189,7 +12055,7 @@
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
     "D72: motor permutado: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
     "D69: la furgoneta refrigerada («refrigerated van»); nunca «truck» (gate)",
-    "D70: caso US = 170 eventos/año × 60 invitados × $60 por invitado (sin sales tax, servicio incluido) ≈ $612,000; drivers permutados: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento; precio por invitado SIN sales tax con el personal y el service charge incluidos y SIN la propina voluntaria; la calculadora del kit lo saca por estilo de servicio"
+    "D70: caso US = 180 eventos/año (calibrado D15; research: 170) × 60 invitados × $60 por invitado (sin sales tax, servicio incluido) = $648,000; drivers permutados: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar); precio por invitado SIN sales tax con el personal y el service charge incluidos y SIN la propina voluntaria; la calculadora del kit lo saca por estilo de servicio"
    ],
    "sha1": "54c920663ce5",
    "donde": [
@@ -12226,7 +12092,7 @@
     "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
     "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
     "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
-    "D70: caso US = 170 eventos/año × 60 invitados × $60 por invitado (sin sales tax, servicio incluido) ≈ $612,000; drivers permutados: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento; invitados medios por evento (research: 50-75 es lo típico); la mezcla del ejemplo va de drop-off de 40 a bodas de 120"
+    "D70: caso US = 180 eventos/año (calibrado D15; research: 170) × 60 invitados × $60 por invitado (sin sales tax, servicio incluido) = $648,000; drivers permutados: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar); invitados medios por evento (research: 50-75 es lo típico); la mezcla del ejemplo va de drop-off de 40 a bodas de 120"
    ],
    "sha1": "44546b2770bb",
    "donde": [
@@ -29608,6 +29474,28 @@
    ]
   },
   {
+   "id": "c0035",
+   "es": "Contingencias comunes + AT/EP + desempleo + FOGASA + FP; ajusta a tu convenio y bonificaciones",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "planes": [
+    "cat"
+   ],
+   "n_apariciones": 1,
+   "palabras": 13,
+   "sha1": "c9d84fd79f4f",
+   "donde": [
+    {
+     "f": "CATP",
+     "h": "0. Supuestos",
+     "c": "C20",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0036",
    "es": "Número de pagas anuales",
    "grupo": "GX",
@@ -29808,6 +29696,28 @@
      "t": "celda",
      "tr": "regenerar",
      "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
+   "id": "c0070",
+   "es": "Tipo reducido de hostelería",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "planes": [
+    "cat"
+   ],
+   "n_apariciones": 1,
+   "palabras": 4,
+   "sha1": "102816a469f3",
+   "donde": [
+    {
+     "f": "CATP",
+     "h": "0. Supuestos",
+     "c": "C39",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30034,6 +29944,28 @@
      "t": "celda",
      "tr": "regenerar",
      "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
+   "id": "c0115",
+   "es": "Cuánto puedes caer sobre lo previsto antes de entrar en pérdidas",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "planes": [
+    "cat"
+   ],
+   "n_apariciones": 1,
+   "palabras": 11,
+   "sha1": "721896d9dc29",
+   "donde": [
+    {
+     "f": "CATP",
+     "h": "0. Supuestos",
+     "c": "C67",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -31384,6 +31316,28 @@
      "t": "celda",
      "tr": "regenerar",
      "det": "decisión de la SPEC (mapas.FIJOS)"
+    }
+   ]
+  },
+  {
+   "id": "c0306",
+   "es": "Cuánto puedes caer antes de no poder pagar los costes fijos y la cuota. El mínimo exigible está en la hoja de Supuestos",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "planes": [
+    "cat"
+   ],
+   "n_apariciones": 1,
+   "palabras": 23,
+   "sha1": "a40f4860d483",
+   "donde": [
+    {
+     "f": "CATP",
+     "h": "Punto Equilibrio",
+     "c": "E24",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },

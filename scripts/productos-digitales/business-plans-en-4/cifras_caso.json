@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-11T14:49:15Z",
+  "generado": "2026-10-11T15:08:58Z",
   "script": "scripts/productos-digitales/business-plans-en/aplicar_en.py",
   "fuentes": {
    "cat": "catering-financial-projections.xlsx"
@@ -799,6 +799,12 @@
    "valor": 10800,
    "fmt": "int",
    "texto": "10,800",
+   "deriv": true
+  },
+  "caida_absorbible_pct": {
+   "valor": 0.16370960417357558,
+   "fmt": "pct0",
+   "texto": "16%",
    "deriv": true
   }
  }

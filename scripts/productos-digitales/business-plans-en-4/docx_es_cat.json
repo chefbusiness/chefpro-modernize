@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-11T14:30:22+00:00",
+  "generado": "2026-10-11T15:08:53+00:00",
   "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
   "plan": "cat",
   "fichero_es": "astro-site/public/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx",
@@ -219,7 +219,8 @@
    "inv_menaje": "smallwares, hotel and sheet pans",
    "inv_menaje_servicio": "chafing dishes, insulated carriers, serving ware",
    "ventas_evento": "average revenue per event, year 1 (excl. sales tax)",
-   "invitados_a1": "guests served in year 1"
+   "invitados_a1": "guests served in year 1",
+   "caida_absorbible_pct": "drop in events the plan can absorb before cash stops covering costs (1 − break-even ÷ plan)"
   },
   "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
  },

@@ -186,3 +186,36 @@ del food truck; (2) recalcular a mano 3 cifras (ventas = 180 × 60 × 60, equili
 del §9 (eldoradocounty.ca.gov, tax.ny.gov TB-ST-320, IRS Rev. Rul. 2012-18); (3) D19: 6 filas «Kit estimate»;
 (4) desviaciones §4 (pestaña de 31 caracteres, umbral 60 %, calibración); (5) notas largas de `Staffing!A24` y
 `Cash Flow!O5`: alto de fila en Excel / LibreOffice y a 360 px; (6) «guests» frente a «clients» en el docx.
+
+## 9. Ronda de arreglos tras `REVISION-FINAL.md` (11-oct, sesión Claude Code): todo por la vía de TEXTO
+
+Aplicados los 5 MAYOR y los 14 MENOR sin tocar ninguna fórmula numérica ni ninguna cifra del caso:
+
+| Dónde vive | Arreglos |
+|---|---|
+| `datos_cat.py` POR_CELDA | M1 `Startup Costs!A15` «Health permit plan / SOP review» · M2 `3-Year P&L!A27` «Van maintenance, repairs and inspections» · m9 `Staffing!A24` (corta) · m10 `Cash Flow!O5` (corta) · m4 `0. Assumptions!C20` · m11 `C39` (VAT del catering, Notice 709/1) · m2 `C67` y `Break-Even!E24` (holgura frente a caída absorbible). Las 4 últimas eran GM (motor) y pasan a GX: mismos ids y mismo ES al re-extraer |
+| `datos_cat.py` FORMULAS_EN | M2 `3-Year P&L!F18`: el combustible de cada viaje está en «Miscellaneous» (variable) y el mantenimiento en la fila 27 · m11 `Startup Costs!D21` «when the commissary agreement ends» |
+| `datos_cat.py` TOKENS | `caida_absorbible_pct` (derivado = holgura ÷ (1 + holgura) = **16%**) para el docx [97] (m2) |
+| `textos_en/GCAT-plan.json` | M1 `D15` · M2 `Instructions!A43` «Generator and burner fuel» · M3 `C5` (cómo traer el precio de la calculadora) · m1 `F53` · m8 `Instructions!D66` |
+| `textos_en/GCAT-check.json` | M1 `Phase 2!E7` · M3 `Phase 4!E14` · m5 LLC (fila 6) antes que EIN (fila 7) · m6 `Phase 6!B11/E11` · m14 `Phase 2!E6/B13`, `Phase 3!B10` |
+| `docx_en_cat_a/_b.json` | M1 [103] · M2 [82] · M3 [106] · M4 [64], [102] · M5 [99] · m2 [97] · m3 [43], [86], [87] · m6 [98] · m7 [106] · m12 [114] · m13 [40], [105] |
+| `calculadora_cat.py` | M3 rótulo «PRICE PER GUEST before service charge and tax», notas `C19` (service charge: lo repartido es salario, lo retenido ingreso) y `C32` · m7 `C21` e `Instructions` (NY/TX: «identified as a gratuity», TX > 20 % todo gravado) |
+
+**Desviación**: la nota de M2 en `3-Year P&L!F27` no se puede escribir. La celda está vacía en el FT ES y el código común
+solo deja añadir celdas en el aviso D21 (`TEXTOS_NUEVOS`, G1). Esa nota va en `F18`, la nota de la fila de varios, y
+en el rótulo A27. «El Dorado County» en `D15` se escribe como «one California county does: eldoradocounty.ca.gov»
+porque el detector común de español lee «El» y no se puede tocar.
+
+**Regeneración y gates (VPS)**: `aplicar_en --idempotencia` → préstamo $146,000 en 1 vuelta, 0 diferencias, 0 fallos
+de pycel, D15 sin fallos. **`cifras_caso.json`: ninguna cifra cambia**, solo se añade `caida_absorbible_pct` (115
+tokens; sha256 `75cc508097d70fa2…`). `ensamblar_docx` G8 VERDE. Calculadora con autotest VERDE (los 3 ejemplos no
+cambian). `gates_en` G1-G9 **TODO VERDE** · `--autotest` 20/20 · `ensamblar_docx --autotest` 8/8 · `check_textos
+--todas` OK · `barrido_cat.py` 1,557 piezas, 0 fallos · `censo-entregables --letter` 4 ficheros, 0 defectos ·
+`gate-no-latinos` 0 · regresión FT/CAF, REST/PAN y BAR en verde.
+
+| Entregable | sha256 (Mac = VPS) |
+|---|---|
+| `catering-business-plan.docx` (6,662 palabras) | `d35a5e9395cccbe8d93c034817d78c0c30b79670a6fc1aeb8ee2fa21438a046d` |
+| `catering-financial-projections.xlsx` | `2265cb3e8d724e1ecb3b5fdee346e61294e8e82b6f5c0be1eb574b05204d506e` |
+| `catering-pricing-calculator.xlsx` | `f60afcefbca519d0705657ccd0b2289ac678bbe08ec980078e9a4741ebceb7b3` |
+| `catering-startup-checklist.xlsx` | `fc21a29b67a6c749e08421c1781c38447cb34d0ff1317199bc672985e0f57ff4` |
