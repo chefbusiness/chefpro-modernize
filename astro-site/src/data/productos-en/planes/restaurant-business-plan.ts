@@ -81,6 +81,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "It's built for a restaurant with a full bar, so the bar side is already there: the bar build, beer taps, wine fridge, glassware, bar stock, the alcohol share of beverage sales and the liquor license. If you're opening a bar where drinks are most of the sales and the kitchen serves small plates, our Bar Business Plan Kit is written for exactly that — a beverage-led plan with pour cost, the draft system, bartenders and barbacks, and the liquor license on the critical path — so you won't need to rewrite the text.",
   },
   {
+    q: 'Does it work for a catering business?',
+    a: "It's built for a restaurant with a dining room and a bar. If you're planning a catering company with no dining room — off-site events, weddings, corporate lunches — our Catering Business Plan Kit is written for that: a shared commissary kitchen instead of a lease, a refrigerated van, event staff on W-2 payroll, a break-even in events per year and a pricing calculator that turns your cost per guest into a quote.",
+  },
+  {
     q: 'Can I present this plan to a lender, a landlord or investors?',
     a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
@@ -303,6 +307,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
+    { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },

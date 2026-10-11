@@ -61,6 +61,27 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Catering Business Plan Kit (11-oct-2026, cuarta tanda de planes EN): el más nuevo → 1; Bar, Restaurant, Bakery,
+  // Food Truck y Coffee Shop pasan a 2-6. Sustituye a la tarjeta vieja «Business Plan: Themed Catering & Kit for Events»,
+  // que describía el kit español (11 entregables, 96 proveedores, multi-concepto en España). Imagen: foto sin texto del
+  // Kit de Tareas Catering (tareas-catering-transporte: la furgoneta refrigerada del concepto; tareas-catering-hero ya la
+  // usa la tarjeta del Kit de Tareas Catering).
+  {
+    name: 'Catering Business Plan Kit',
+    slug: '/plan-catering-tematico-eventos',
+    description: 'Catering business plan template for a full-service event catering company: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in events per year, cash flow and loan schedule, a per-guest pricing calculator and a 68-task startup checklist.',
+    features: [
+      '10-section business plan in Word',
+      'Pricing calculator: cost per guest to quote',
+      'Break-even in events per year, loan schedule and DSCR',
+      '68 tasks: commissary agreement, catering permit, event permits',
+    ],
+    iconName: 'ConciergeBell',
+    image: '/lovable-uploads/ai-gallery/tareas-catering-transporte.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'catering', 'events', 'mobile-catering', 'business-plan'],
+  },
   // Bar Business Plan Kit (11-oct-2026, tercera tanda de planes EN): el más nuevo → 1; Restaurant, Bakery, Food Truck
   // y Coffee Shop pasan a 2-5. Sustituye a la tarjeta vieja «Business Plan: Tapas Bar / Gastrobar», que describía el
   // mercado español (63 trámites, licencia clasificada). Imagen: foto sin texto del Kit de Tareas Bar
@@ -546,22 +567,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['business-plan', 'paella-cook', 'paella', 'rice-restaurant', 'events', 'mobile-catering'],
-  },
-  {
-    name: 'Business Plan: Themed Catering & Kit for Events',
-    slug: '/plan-catering-tematico-eventos',
-    description: 'Professional kit for launching your premium multi-concept themed catering service for events in Spain. The only kit that teaches you how to run 5 concepts in parallel (sushi bar, tacos al pastor, wood-fired pizza, Argentine asado, Peruvian ceviche, premium vegan, Texas BBQ, Indian tandoor...), not just one concept. 11 deliverables: 60+ page DOCX + Excel Financial Plan with a 35% B2C + 65% B2B mix + multi-concept Pricing Calculator + 96 suppliers across 12 world cuisines + multi-kitchen Equipment catalog + 12 pre-packaged concepts + multi-concept HACCP technical manual + B2C/B2B contract templates with an MSA + progressive specialization guide + 6-phase checklist with a 17-region annex.',
-    features: [
-      '11 deliverables (60+ page DOCX + Excel)',
-      'The only multi-concept kit in Spain (3-5 cuisines in parallel)',
-      '96 validated suppliers, 12 world cuisines',
-      '12 pre-packaged concepts + per-guest pricing',
-    ],
-    iconName: 'LayoutGrid',
-    image: '/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['business-plan', 'catering', 'events', 'mobile-catering', 'multi-concept'],
   },
   {
     name: 'Business Plan: Private Chef / At-Home Showcooking',

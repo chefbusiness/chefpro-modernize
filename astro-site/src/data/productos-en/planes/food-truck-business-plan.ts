@@ -74,6 +74,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Often, yes: many events and markets charge a vendor fee, a share of sales or both, and some need their own temporary food event permit. On private property you need the owner's written permission; on public streets, the city's vending and parking rules apply. You can model events in your operating days and fixed costs, and the checklist includes temporary event permits.",
   },
   {
+    q: 'Does it work for a catering business?',
+    a: "It's built for a food truck that sells to walk-up customers, with events as part of the calendar. If most of your work will be catered events — weddings, corporate lunches and buffets at the client's venue — our Catering Business Plan Kit is written for that: a full-service caterer working from a shared commissary kitchen with a refrigerated van, a break-even in events per year and a pricing calculator that turns your cost per guest into a quote.",
+  },
+  {
     q: 'Can I present this plan to a lender or investors?',
     a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%). It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
@@ -301,6 +305,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/restaurant-business-plan', label: 'Restaurant Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
+    { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.2 · October 2026',

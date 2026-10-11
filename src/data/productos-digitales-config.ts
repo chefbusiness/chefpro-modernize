@@ -1181,6 +1181,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-11): twin of plan-catering-tematico-eventos, independent product.
+  'catering-business-plan': {
+    id: 'catering-business-plan',
+    name: 'Catering Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/catering-business-plan/access',
+    emailSubject: 'Your access to Catering Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Catering Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Catering Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator and the 68-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/catering-business-plan/catering-business-plan.docx',
+      'plan-financiero': '/dl/catering-business-plan/catering-financial-projections.xlsx',
+      'calculadora-pricing': '/dl/catering-business-plan/catering-pricing-calculator.xlsx',
+      'checklist-apertura': '/dl/catering-business-plan/catering-startup-checklist.xlsx',
+    },
+    lang: 'en',
+  },
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',
     name: 'Guía Dark Kitchen',

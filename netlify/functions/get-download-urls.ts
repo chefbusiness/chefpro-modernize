@@ -788,6 +788,15 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-financiero': '/dl/bar-business-plan/bar-financial-projections.xlsx',
     'checklist-apertura': '/dl/bar-business-plan/bar-opening-checklist.xlsx',
   },
+  // Tienda EN (2026-10-11): Catering Business Plan Kit. MISMAS claves que plan-catering-tematico-eventos (las del
+  // TEMPLATES de src/pages/CateringBusinessPlanDashboard.tsx) → los 4 ficheros EN de /dl/catering-business-plan/
+  // (SPEC business-plans-en-4 D68).
+  'catering-business-plan': {
+    'plan-negocio': '/dl/catering-business-plan/catering-business-plan.docx',
+    'plan-financiero': '/dl/catering-business-plan/catering-financial-projections.xlsx',
+    'calculadora-pricing': '/dl/catering-business-plan/catering-pricing-calculator.xlsx',
+    'checklist-apertura': '/dl/catering-business-plan/catering-startup-checklist.xlsx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

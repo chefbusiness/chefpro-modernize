@@ -1,0 +1,45 @@
+{
+ "carpeta": "astro-site/public/dl/catering-business-plan",
+ "piezas": 1557,
+ "fallos": 0,
+ "ficheros": {
+  "catering-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 6662,
+   "piezas": 116,
+   "sha256": "d35a5e9395cccbe8d93c034817d78c0c30b79670a6fc1aeb8ee2fa21438a046d",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "catering-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 722,
+   "piezas": 818,
+   "sha256": "2265cb3e8d724e1ecb3b5fdee346e61294e8e82b6f5c0be1eb574b05204d506e",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "catering-pricing-calculator.xlsx": {
+   "hojas": 3,
+   "formulas": 68,
+   "piezas": 188,
+   "sha256": "f60afcefbca519d0705657ccd0b2289ac678bbe08ec980078e9a4741ebceb7b3",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "catering-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 435,
+   "sha256": "fc21a29b67a6c749e08421c1781c38447cb34d0ff1317199bc672985e0f57ff4",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

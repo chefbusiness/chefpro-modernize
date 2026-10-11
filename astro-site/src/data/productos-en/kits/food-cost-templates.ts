@@ -367,6 +367,7 @@ const data: KitExcelData = {
     { href: '/en/digital-products/restaurant-business-plan', label: 'Restaurant Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
+    { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.1 · September 2026',

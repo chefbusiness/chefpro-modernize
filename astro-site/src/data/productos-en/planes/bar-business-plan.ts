@@ -306,6 +306,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
+    { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.2 · October 2026',

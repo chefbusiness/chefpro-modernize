@@ -2,14 +2,18 @@
 // /plan-catering-tematico-eventos — LÍNEA PLANES (sub-línea B "eventos"). Thin wrapper: pasa el objeto
 // data al MISMO template PlanNegocioLandingPage (mismo template que bar-restaurante y cocteleria-eventos).
 //
-// SOLO ES: la SPA (PlanCateringTematicoEventos.tsx) hardcodea el Helmet en español y esta ruta NO tiene
-// variantes de idioma → locales={['es']}. Canonical: https://aichef.pro/plan-catering-tematico-eventos.
+// hreflang: alternatesFamilia('plan-catering-tematico-eventos') (lib/tienda.ts). Con el gemelo EN vivo
+// (Catering Business Plan Kit, /en/digital-products/catering-business-plan) emite es + en + x-default recíprocos; si
+// EN volviera a vivo:false, devuelve locales ['es'] sin alternates y el HTML sería el de antes (hreflang es +
+// x-default). Patrón = plan-negocio-tapas-bar.astro. Canonical: https://aichef.pro/plan-catering-tematico-eventos.
 // Meta robots se OMITE (desviación cross-cutting; se añade en el cutover). Build format 'file'.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PlanNegocioLandingPage from '../components/pages/PlanNegocioLandingPage.astro';
 import data from '../data/productos/planes/plan-catering-tematico-eventos';
+import { alternatesFamilia } from '../lib/tienda';
 
 const lang = 'es';
+const hreflang = alternatesFamilia('plan-catering-tematico-eventos');
 
 // DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
 // Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
@@ -24,7 +28,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_CATERING_TEMATI
   keywords={data.seo.keywords}
   lang={lang}
   basePath={`/${data.slug}`}
-  locales={['es']}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
   ogImage={data.seo.ogImage}
 >
   <PlanNegocioLandingPage data={data} stripeLink={stripeLink} />

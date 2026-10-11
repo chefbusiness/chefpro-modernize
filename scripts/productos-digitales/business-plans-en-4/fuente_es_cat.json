@@ -1,0 +1,1778 @@
+{
+ "meta": {
+  "generado": "2026-10-11T14:28:32+00:00",
+  "script": "scripts/productos-digitales/business-plans-en-4/fuente_cat.py",
+  "uso": "CONTENIDO de catering para los redactores (D71, D77, D78). NO se traduce tal cual: se condensa y se adapta a EE. UU. con research (F1-research-us-delta.md). Las cifras del ES NO se usan (D70): las del caso salen del libro EN (tokens). Fuera: tareas marcadas SOLO_ES y MULTICOCINA, «España», «ChefBusiness», «96 proveedores», «12 cocinas del mundo», importes en €",
+  "fuentes": {
+   "astro-site/public/dl/plan-catering-tematico-eventos/checklist-apertura-catering-tematico-eventos.xlsx": "5aa1a1dafb55c91736c2f043d7669e12adc031ab6765c7b4084429a1ee4fc077",
+   "astro-site/public/dl/plan-catering-tematico-eventos/plan-de-negocio-catering-tematico-eventos.docx": "f079c60c892006e10a70fb52b95f970294fec71fdd0a3cf11218e08eed2dd575"
+  }
+ },
+ "checklist_es": {
+  "1. Constitución legal": {
+   "fase_en_sugerida": "P1 Business Setup (+ P2 / P4)",
+   "tareas": [
+    {
+     "fila": 6,
+     "hito": "Alta autónomo en SS y Hacienda",
+     "detalle": "Modelo 036/037 + tarifa plana 80€/mes 12m",
+     "plazo": "Día 1-3"
+    },
+    {
+     "fila": 7,
+     "hito": "IAE 677.9 servicios catering / colectividades",
+     "detalle": "Epígrafe correcto para catering itinerante",
+     "plazo": "Día 1",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 8,
+     "hito": "Apertura cuenta bancaria autónomo",
+     "detalle": "Separar finanzas para deducciones IRPF",
+     "plazo": "Día 1-7"
+    },
+    {
+     "fila": 9,
+     "hito": "Plan APPCC móvil específico catering temático",
+     "detalle": "7 PCC + protocolo multi-cocina simultánea",
+     "plazo": "Semana 1-2"
+    },
+    {
+     "fila": 10,
+     "hito": "Curso manipulador alimentos certificado plantilla",
+     "detalle": "Curso oficial + carnet plastificado",
+     "plazo": "Semana 1"
+    },
+    {
+     "fila": 11,
+     "hito": "Registro Sanitario CCAA actividad itinerante",
+     "detalle": "Salud Pública autonómica para catering móvil",
+     "plazo": "Semana 2-4"
+    },
+    {
+     "fila": 12,
+     "hito": "Inscripción RGSEAA para transportar alimentos",
+     "detalle": "Registro General Sanitario Empresas y Alimentos",
+     "plazo": "Semana 2-4",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 13,
+     "hito": "RGPD + LOPD-GDD plantilla web + base datos",
+     "detalle": "Política privacidad + cláusulas contrato",
+     "plazo": "Semana 1-2",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 14,
+     "hito": "Aviso legal + condiciones reserva web + cookies",
+     "detalle": "LSSI + LOPD-GDD cumplimiento",
+     "plazo": "Semana 2",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 15,
+     "hito": "Ley Defensa Consumidores devoluciones B2C",
+     "detalle": "Plazo desistimiento 14 días + política",
+     "plazo": "Semana 2"
+    },
+    {
+     "fila": 16,
+     "hito": "Asesor laboral / fiscal para gestión",
+     "detalle": "Quipu / Holded / Anfix online",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 17,
+     "hito": "Modelo 130 IRPF trimestral",
+     "detalle": "Calendario fiscal trimestral",
+     "plazo": "Trimestral"
+    },
+    {
+     "fila": 18,
+     "hito": "Modelo 303 IVA catering 10% reducido",
+     "detalle": "IVA reducido para servicio comida elaborada",
+     "plazo": "Trimestral"
+    },
+    {
+     "fila": 19,
+     "hito": "Modelo 390 resumen anual IVA",
+     "detalle": "Cierre fiscal enero año siguiente",
+     "plazo": "Anual",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 20,
+     "hito": "Modelo 347 si superas 3.005,06€/cliente B2B",
+     "detalle": "Declaración operaciones con terceros",
+     "plazo": "Anual",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 21,
+     "hito": "Modelo 349 si trabajas con clientes europeos",
+     "detalle": "Operaciones intracomunitarias",
+     "plazo": "Trimestral si aplica",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 22,
+     "hito": "Considerar SL si facturación > 60K€/año",
+     "detalle": "Análisis fiscal para decidir SL vs autónomo",
+     "plazo": "Mes 6+"
+    }
+   ]
+  },
+  "2. Seguros y autorizaciones": {
+   "fase_en_sugerida": "P1 / P2 Kitchen, Van & Permits",
+   "tareas": [
+    {
+     "fila": 25,
+     "hito": "Seguro RC profesional eventos cobertura ≥ 600.000 €",
+     "detalle": "Hiscox / Mapfre / Generali — clave para B2B premium",
+     "plazo": "Semana 2-4"
+    },
+    {
+     "fila": 26,
+     "hito": "Seguro RC con cláusula intoxicación alimentaria",
+     "detalle": "Cobertura específica imprescindible catering",
+     "plazo": "Semana 2-4"
+    },
+    {
+     "fila": 27,
+     "hito": "Seguro furgoneta uso comercial multi-evento",
+     "detalle": "Carga + transporte equipamiento profesional",
+     "plazo": "Semana 2"
+    },
+    {
+     "fila": 28,
+     "hito": "Seguro responsabilidad patronal contratación freelance",
+     "detalle": "Plus en póliza para subcontratación legal",
+     "plazo": "Mes 2-3"
+    },
+    {
+     "fila": 29,
+     "hito": "Seguro robo/daños equipamiento (multi-cocina)",
+     "detalle": "Cobertura material profesional fuera del local",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 30,
+     "hito": "Cláusula fuerza mayor + cancelación en póliza",
+     "detalle": "Lluvia, eventos climatológicos, fuerza mayor",
+     "plazo": "Semana 2-4"
+    },
+    {
+     "fila": 31,
+     "hito": "Autorizaciones puntuales por evento ayuntamiento",
+     "detalle": "Espacios públicos: 30-60 días antes",
+     "plazo": "Por evento"
+    },
+    {
+     "fila": 32,
+     "hito": "Autorización venta ambulante CCAA si food festival",
+     "detalle": "Carnet venta ambulante o equivalente",
+     "plazo": "Solo si aplica"
+    },
+    {
+     "fila": 33,
+     "hito": "Permiso fuego al aire libre por evento (BBQ + leña)",
+     "detalle": "Por concepto: pizza leña, BBQ, asado",
+     "plazo": "Por evento"
+    },
+    {
+     "fila": 34,
+     "hito": "Cumplimiento normativa cocina cliente final",
+     "detalle": "Verificación instalación legal gas/electricidad",
+     "plazo": "Por evento"
+    }
+   ]
+  },
+  "3. Equipamiento + proveedores": {
+   "fase_en_sugerida": "P3 Equipment (+ P2 van)",
+   "tareas": [
+    {
+     "fila": 37,
+     "hito": "Cuchillería japonesa profesional: gyuto + petty + yanagiba",
+     "detalle": "Tojiro entry, Misono/Yoshihiro premium para sushi",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 38,
+     "hito": "Wok profesional inox + utensilios chinos",
+     "detalle": "Wokinox España + utensilios bambú largo",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 39,
+     "hito": "Plancha teppanyaki + robatagrill",
+     "detalle": "Josper Robatagrill o equivalente",
+     "plazo": "Mes 1-2",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 40,
+     "hito": "Horno de leña pizza móvil",
+     "detalle": "Pizza Party / Ooni Pro / fabricación a medida",
+     "plazo": "Mes 1-2",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 41,
+     "hito": "Tandoor portátil + brochetas largas + utensilios",
+     "detalle": "Importación India o adaptación local",
+     "plazo": "Mes 2-3",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 42,
+     "hito": "Smoker offset texano + termómetros",
+     "detalle": "Importación EE.UU. o fabricación a medida",
+     "plazo": "Mes 2-3",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 43,
+     "hito": "Trompo al pastor a gas + soporte transporte",
+     "detalle": "Importaciones Cuesta / Jasa Internacional",
+     "plazo": "Mes 1-2",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 44,
+     "hito": "Comales + planchas mexicanas + tortillera",
+     "detalle": "Maíz Maya / CMA / Importaciones Cuesta",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 45,
+     "hito": "Vaporeras bambú industriales (dim sum, bao)",
+     "detalle": "Cominport / EMB Food",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 46,
+     "hito": "Inducción portátil 3.5kW × 2 unidades",
+     "detalle": "Vollrath/Iwatani/Lacor profesional",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 47,
+     "hito": "Sous-vide circulator + máquina vacío",
+     "detalle": "Anova/Polyscience/Sammic",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 48,
+     "hito": "Tablas técnicas color HACCP (4)",
+     "detalle": "Verde verduras + roja carne + azul pescado + amarilla aves",
+     "plazo": "Mes 1",
+     "marca": "MULTICOCINA (fuera)"
+    },
+    {
+     "fila": 49,
+     "hito": "Vajilla blanca premium 100 plates + tableware",
+     "detalle": "Pordamsa/Steelite/Schönwald + linen",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 50,
+     "hito": "Vajilla específica por concepto (bambú, ceramica MX)",
+     "detalle": "Attrezzo cultural diferenciador por cocina",
+     "plazo": "Mes 2-3"
+    },
+    {
+     "fila": 51,
+     "hito": "Cubertería inox + cristalería + decanters",
+     "detalle": "Schott Zwiesel + Pasabache eventos",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 52,
+     "hito": "Mantelería linen + servilletas + caminos mesa",
+     "detalle": "Cream, blanco, soft black para flexibilidad",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 53,
+     "hito": "Bandejas pizarra + tablas wood + plating tools",
+     "detalle": "Set plating profesional plus pinzas tweezers",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 54,
+     "hito": "Neveras profesionales + acumuladores + termómetros",
+     "detalle": "Sistema cadena frío validado APPCC",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 55,
+     "hito": "Cajas de transporte modulares + ranuras",
+     "detalle": "Sistema reutilizable mise en place portable",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 56,
+     "hito": "EPI: chaqueta marca + delantal piel + cofia",
+     "detalle": "Profesional bordado logo + recambios",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 57,
+     "hito": "Báscula precisión 0.1g + termómetros sondas",
+     "detalle": "Escandallo + verificación T° APPCC",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 58,
+     "hito": "Acuerdo importador asiático (EMB Food / Cominport)",
+     "detalle": "Productos japoneses, chinos, tailandeses",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 59,
+     "hito": "Acuerdo importador latino (Importaciones Cuesta / CMA)",
+     "detalle": "Productos mexicanos, peruanos, argentinos",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 60,
+     "hito": "Acuerdo carnicero premium (Cesáreo Gómez / Discarlux)",
+     "detalle": "Carne madurada para BBQ + asado argentino",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 61,
+     "hito": "Acuerdo pescadero Mercamadrid o Pescaderías Coruñesas",
+     "detalle": "Pescado/marisco fresco para sushi + ceviche",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 62,
+     "hito": "Acuerdo verdurero local + microbrotes",
+     "detalle": "Producto fresco + microbrotes plating",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 63,
+     "hito": "Furgoneta Renault Master / Iveco Daily + branded wrap",
+     "detalle": "Carga útil 1500-3500kg para multi-equipo",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 64,
+     "hito": "Conexión con Hosply.pro + alta directorios B2B",
+     "detalle": "Visibilidad B2B + leads sector eventos",
+     "plazo": "Mes 1",
+     "marca": "SOLO_ES (fuera)"
+    }
+   ]
+  },
+  "4. Marca, web y SEO": {
+   "fase_en_sugerida": "P5 Marketing",
+   "tareas": [
+    {
+     "fila": 67,
+     "hito": "Naming + logo + identidad visual multi-concepto",
+     "detalle": "Diseñador profesional o IA branded coherente",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 68,
+     "hito": "Dominio + correos profesionales",
+     "detalle": "info@, reservas@, eventos@, brand@",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 69,
+     "hito": "Web profesional con portfolio multi-cocina + booking + Stripe",
+     "detalle": "Astro/WordPress + integración formulario y pago",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 70,
+     "hito": "Sesión foto profesional 12 conceptos temáticos",
+     "detalle": "Inversión 1.500-3.500€ — clave premium B2B",
+     "plazo": "Mes 2-3"
+    },
+    {
+     "fila": 71,
+     "hito": "Vídeo presentación 90-120 seg multi-concepto",
+     "detalle": "Showcooking + plating + montaje editorial",
+     "plazo": "Mes 2-3"
+    },
+    {
+     "fila": 72,
+     "hito": "Google Business Profile + categorías catering eventos",
+     "detalle": "Servicios catering + showcooking + wedding",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 73,
+     "hito": "Pinterest profesional con boards bodas/corporate",
+     "detalle": "Tráfico orgánico clave bodas premium",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 74,
+     "hito": "Instagram profesional + Reels semanales por concepto",
+     "detalle": "Una cocina por semana en rotación",
+     "plazo": "Mes 1+"
+    },
+    {
+     "fila": 75,
+     "hito": "LinkedIn empresa para B2B corporate",
+     "detalle": "Crítico para wedding planners y RRHH empresas",
+     "plazo": "Mes 2"
+    },
+    {
+     "fila": 76,
+     "hito": "TikTok detrás escenas + storytelling cultural",
+     "detalle": "Viralidad sector catering + showcooking",
+     "plazo": "Mes 2+"
+    },
+    {
+     "fila": 77,
+     "hito": "WhatsApp Business + plantillas mensajes",
+     "detalle": "Plantilla bienvenida + cotización + post-evento",
+     "plazo": "Mes 1"
+    },
+    {
+     "fila": 78,
+     "hito": "Schema Markup web (LocalBusiness + FoodService + Catering)",
+     "detalle": "SEO técnico para visibilidad local",
+     "plazo": "Mes 2"
+    },
+    {
+     "fila": 79,
+     "hito": "Sitemap + robots.txt + Google Search Console",
+     "detalle": "Indexación correcta + monitoring SEO",
+     "plazo": "Mes 2"
+    },
+    {
+     "fila": 80,
+     "hito": "Reseñas Google — pedir las primeras 10",
+     "detalle": "Programa post-evento con QR review",
+     "plazo": "Mes 2-3"
+    },
+    {
+     "fila": 81,
+     "hito": "Alta Bodas.net (PRO) + Zankyou Weddings",
+     "detalle": "Visibilidad B2C bodas + planificación",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 82,
+     "hito": "Alta CateringClick + GuiaCatering",
+     "detalle": "Visibilidad B2B agencias + planners + corporate",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 83,
+     "hito": "Alta Hosply.pro directorio B2B HORECA",
+     "detalle": "Visibilidad sector hostelería profesional",
+     "plazo": "Mes 1",
+     "marca": "SOLO_ES (fuera)"
+    }
+   ]
+  },
+  "5. Captación B2C + B2B": {
+   "fase_en_sugerida": "P5 Marketing",
+   "tareas": [
+    {
+     "fila": 86,
+     "hito": "Lista 40 wedding planners zona objetivo",
+     "detalle": "LinkedIn + Bodas.net + Hosply.pro",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 87,
+     "hito": "Email outreach personalizado wedding planners",
+     "detalle": "10 emails/semana primeros 3 meses",
+     "plazo": "Mes 2-4"
+    },
+    {
+     "fila": 88,
+     "hito": "Visita presencial planners top 15 con showcooking prueba",
+     "detalle": "Demo concepto + portfolio impreso",
+     "plazo": "Mes 2-4"
+    },
+    {
+     "fila": 89,
+     "hito": "Lista 25 agencias eventos corporate locales",
+     "detalle": "Cámara comercio + LinkedIn + sector MICE",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 90,
+     "hito": "Dossier B2B PDF 16pp con conceptos temáticos + casos",
+     "detalle": "Pieza profesional para enviar a leads B2B",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 91,
+     "hito": "Dossier B2C PDF 12pp bodas + cumpleaños temáticos",
+     "detalle": "Pieza para clientes finales",
+     "plazo": "Mes 1-2"
+    },
+    {
+     "fila": 92,
+     "hito": "Lista 15 hoteles 4-5 estrellas zona",
+     "detalle": "Catering como servicio diferencial eventos",
+     "plazo": "Mes 2-3"
+    },
+    {
+     "fila": 93,
+     "hito": "Contacto 15 RRHH empresas — corporate brand events",
+     "detalle": "Showcookings + activación marca + ESG",
+     "plazo": "Mes 2-4"
+    },
+    {
+     "fila": 94,
+     "hito": "Lista 10 embajadas / consulados zona",
+     "detalle": "Eventos diplomáticos multiculturales",
+     "plazo": "Mes 3-4"
+    },
+    {
+     "fila": 95,
+     "hito": "Google Ads campaña local + bodas temáticas",
+     "detalle": "Presupuesto 350-650€/mes",
+     "plazo": "Mes 2+"
+    },
+    {
+     "fila": 96,
+     "hito": "Pinterest Ads boards bodas + cumpleaños temáticos",
+     "detalle": "Tráfico cualificado low-cost B2C",
+     "plazo": "Mes 2+"
+    },
+    {
+     "fila": 97,
+     "hito": "Programa referidos clientes B2C contentos",
+     "detalle": "5% segunda contratación + referido",
+     "plazo": "Mes 3+"
+    },
+    {
+     "fila": 98,
+     "hito": "Estrategia post-evento: testimonios + reseña",
+     "detalle": "WhatsApp 24h con plantilla + QR review",
+     "plazo": "Permanente"
+    },
+    {
+     "fila": 99,
+     "hito": "Showroom multi-concepto cooking class abierto trimestral",
+     "detalle": "Captación masiva planners + influencers",
+     "plazo": "Mes 6+"
+    },
+    {
+     "fila": 100,
+     "hito": "Newsletter mensual con concepto destacado del mes",
+     "detalle": "Mantener top of mind + driver de venta",
+     "plazo": "Permanente"
+    },
+    {
+     "fila": 101,
+     "hito": "Activación pre-evento (storytelling deck cliente)",
+     "detalle": "Diferenciador clave premium B2C+B2B",
+     "plazo": "Por evento"
+    }
+   ]
+  },
+  "6. Operativa primer evento multi-concepto": {
+   "fase_en_sugerida": "P6 First 90 Days",
+   "tareas": [
+    {
+     "fila": 104,
+     "hito": "Recepción briefing cliente — formulario detallado",
+     "detalle": "Form online: pax, alergias, conceptos elegidos, presupuesto",
+     "plazo": "Mín. 21 días antes"
+    },
+    {
+     "fila": 105,
+     "hito": "Visita técnica al lugar para multi-station setup",
+     "detalle": "Acceso, electricidad, gas, agua, espacio estaciones",
+     "plazo": "Mín. 14 días antes"
+    },
+    {
+     "fila": 106,
+     "hito": "Presupuesto firmado + anticipo 40 % cobrado",
+     "detalle": "Antes de bloquear fecha en agenda",
+     "plazo": "Mín. 21 días antes"
+    },
+    {
+     "fila": 107,
+     "hito": "Contrato firmado con cláusula cancelación + alergias",
+     "detalle": "Plantilla B2C o B2B según corresponda",
+     "plazo": "Mín. 21 días antes"
+    },
+    {
+     "fila": 108,
+     "hito": "Plan B clima si evento outdoor",
+     "detalle": "Carpas + cobertura alternativa documentada",
+     "plazo": "Mín. 14 días antes"
+    },
+    {
+     "fila": 109,
+     "hito": "Confirmación menús definitivos por concepto",
+     "detalle": "Email cierre con TODOS los menús + alergias firmadas",
+     "plazo": "5-7 días antes"
+    },
+    {
+     "fila": 110,
+     "hito": "Pedidos a importadores especializados anticipados",
+     "detalle": "EMB Food / Cominport / Importaciones Cuesta 7 días",
+     "plazo": "5-7 días antes"
+    },
+    {
+     "fila": 111,
+     "hito": "Compras frescas (pescado/marisco/verdura) D-1 a D-2",
+     "detalle": "Cadena frío validada + inspección visual",
+     "plazo": "D-1 a D-2"
+    },
+    {
+     "fila": 112,
+     "hito": "Mise en place D-1 por concepto (multi-cocina)",
+     "detalle": "Cocina compartida o cocina propia con APPCC",
+     "plazo": "D-1"
+    },
+    {
+     "fila": 113,
+     "hito": "Carga furgoneta — checklist 50 ítems multi-equipo",
+     "detalle": "Checklist por concepto — no faltar nada",
+     "plazo": "D"
+    },
+    {
+     "fila": 114,
+     "hito": "Salida con margen 1.5h sobre tiempo Google Maps",
+     "detalle": "Imprevistos + tráfico + montaje multi-station",
+     "plazo": "D"
+    },
+    {
+     "fila": 115,
+     "hito": "Llegada lugar + montaje multi-station 60-90 min",
+     "detalle": "Cada concepto con su estación + signage",
+     "plazo": "D"
+    },
+    {
+     "fila": 116,
+     "hito": "Mise en place final + briefing equipo freelance",
+     "detalle": "Confirmar timings, alergias, ritmo del menú",
+     "plazo": "D"
+    },
+    {
+     "fila": 117,
+     "hito": "Servicio + showcooking explicativo por concepto",
+     "detalle": "Talk track entrenado por cocina",
+     "plazo": "D"
+    },
+    {
+     "fila": 118,
+     "hito": "Limpieza + recogida equipamiento + foto previa",
+     "detalle": "Foto previa + post-entrega del lugar",
+     "plazo": "D"
+    },
+    {
+     "fila": 119,
+     "hito": "Pago final liquidado + factura emitida en 24-48h",
+     "detalle": "Importante para flujo de caja B2B",
+     "plazo": "D+1-2"
+    },
+    {
+     "fila": 120,
+     "hito": "Solicitud reseña Google + foto recuerdo cliente",
+     "detalle": "WhatsApp 24h post-evento + QR review",
+     "plazo": "D+1"
+    },
+    {
+     "fila": 121,
+     "hito": "Registro evento en CRM + lecciones aprendidas",
+     "detalle": "Notion / Airtable / Google Sheet por concepto",
+     "plazo": "D+2-7"
+    },
+    {
+     "fila": 122,
+     "hito": "Análisis costes reales vs presupuestados por concepto",
+     "detalle": "Ajustar food cost real vs proyectado",
+     "plazo": "D+7"
+    },
+    {
+     "fila": 123,
+     "hito": "Storytelling post-evento (contenido orgánico)",
+     "detalle": "Reels + posts con clientes etiquetados",
+     "plazo": "D+1-7"
+    }
+   ]
+  }
+ },
+ "plan_docx_es": {
+  "parrafos": [
+   {
+    "i": 0,
+    "estilo": "Normal",
+    "texto": "Plan de Negocio"
+   },
+   {
+    "i": 1,
+    "estilo": "Normal",
+    "texto": "Catering & Kit Temático para Eventos en España 2026"
+   },
+   {
+    "i": 2,
+    "estilo": "Normal",
+    "texto": "Modelo multi-concepto B2C íntimo + B2B corporate · Sin local fijo · Premium"
+   },
+   {
+    "i": 3,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoría Gastronómica"
+   },
+   {
+    "i": 5,
+    "estilo": "Normal",
+    "texto": "1. Resumen ejecutivo"
+   },
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "Este plan describe el lanzamiento y la operativa de una empresa premium de catering temático para eventos en España, con un modelo multi-concepto sin local fijo y dos canales comerciales paralelos. El canal B2C atiende clientes particulares (bodas multiculturales, cumpleaños temáticos, aniversarios, celebraciones familiares con concepto cultural) mientras que el canal B2B atiende empresas corporativas (showcooking corporate, brand events, eventos diplomáticos, cooking class team-building, wedding planners con bodas tematizadas y festivales gastronómicos)."
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "El producto entregado al cliente final no es un catering generalista — es una experiencia gastronómica multi-cultural. Una boda con tres estaciones temáticas (sushi-bar, pizza al horno de leña, asado argentino) ofrece un ticket muy superior al banquete tradicional, con márgenes 30-40 % más altos. Un corporate brand event con catering temático alineado al país sede del cliente justifica tickets de 80-150 €/pax frente a los 45-65 €/pax del catering generalista."
+   },
+   {
+    "i": 8,
+    "estilo": "Normal",
+    "texto": "La inversión inicial recomendada se sitúa entre 11.500 € y 16.000 €, con escenario mínimo viable de 5.500 € (sin furgoneta propia, alquiler puntual, 3 conceptos dominados al inicio) y escenario premium de 35.000 € (furgoneta nueva con branded wrap, equipamiento de cocina del mundo profesional completo, branding e identidad visual completos, sesión foto editorial 12 conceptos, attrezzo cultural por estación). El break-even se alcanza con 14 eventos al mes en el año 1. La proyección financiera contempla un crecimiento del 30 % en año 2 y del 22 % en año 3, con un beneficio neto del 27-32 % sobre ingresos a partir del segundo año."
+   },
+   {
+    "i": 9,
+    "estilo": "Normal",
+    "texto": "2. Concepto y propuesta de valor"
+   },
+   {
+    "i": 10,
+    "estilo": "Normal",
+    "texto": "2.1 El diferencial multi-concepto"
+   },
+   {
+    "i": 11,
+    "estilo": "Normal",
+    "texto": "Frente al catering generalista (ticket 45-85 €/pax) y al monoconcepto especializado (paellero, parrillero, sushi-bar como servicio único), el catering temático multi-concepto ocupa el espacio premium del segmento eventos: capacidad de servir simultáneamente 3-5 cocinas del mundo en un mismo evento, con ticket medio 70-130 €/pax y margen bruto 50-55 %. Es la propuesta más rentable del segmento gastro-itinerante."
+   },
+   {
+    "i": 12,
+    "estilo": "Normal",
+    "texto": "Las ventajas estructurales del modelo:"
+   },
+   {
+    "i": 13,
+    "estilo": "List Bullet",
+    "texto": "Inversión 5-9 veces menor que un catering con cocina central (12.000-35.000 € vs 100.000-300.000 €)."
+   },
+   {
+    "i": 14,
+    "estilo": "List Bullet",
+    "texto": "Sin licencia de actividad clasificada — se opera con autorizaciones puntuales por evento."
+   },
+   {
+    "i": 15,
+    "estilo": "List Bullet",
+    "texto": "Sin plantilla fija — equipo freelance especializado por concepto bajo demanda."
+   },
+   {
+    "i": 16,
+    "estilo": "List Bullet",
+    "texto": "Operatividad todo el año, con pico mayo-octubre (bodas) + noviembre-diciembre (corporate fin de año)."
+   },
+   {
+    "i": 17,
+    "estilo": "List Bullet",
+    "texto": "Captación dual B2C+B2B con dossiers diferenciados aporta resiliencia frente a estacionalidad."
+   },
+   {
+    "i": 18,
+    "estilo": "List Bullet",
+    "texto": "Replicabilidad geográfica con mismo know-how y branded experience."
+   },
+   {
+    "i": 19,
+    "estilo": "List Bullet",
+    "texto": "Up-selling natural: empieza con 1-2 conceptos dominados, añade 1-2/año hasta tener 8-10 en portafolio."
+   },
+   {
+    "i": 20,
+    "estilo": "Normal",
+    "texto": "2.2 Diferencial competitivo premium"
+   },
+   {
+    "i": 21,
+    "estilo": "Normal",
+    "texto": "El mercado español de catering temático multi-concepto está fragmentado: el Top 5 de catering general acumula >45 % de cuota en colectividades pero el segmento eventos especializados está abierto a entrantes con ángulo diferenciado. La oportunidad está en posicionarse premium con estos diferenciales:"
+   },
+   {
+    "i": 22,
+    "estilo": "List Bullet",
+    "texto": "Storytelling cultural en directo durante el showcooking ('este mole lleva 28 ingredientes y 6 horas...')."
+   },
+   {
+    "i": 23,
+    "estilo": "List Bullet",
+    "texto": "Visual-first by design — cada estación con backdrop fotogénico, hashtag del evento integrado."
+   },
+   {
+    "i": 24,
+    "estilo": "List Bullet",
+    "texto": "Dietas especiales como plus, no como excepción (vegano + sin gluten + halal en mismo nivel estético)."
+   },
+   {
+    "i": 25,
+    "estilo": "List Bullet",
+    "texto": "Sostenibilidad verificable — proveedores km0 documentados, packaging compostable, balance residuos."
+   },
+   {
+    "i": 26,
+    "estilo": "List Bullet",
+    "texto": "Brand catering corporate — menú a medida que refuerza branding del cliente (colores, país sede)."
+   },
+   {
+    "i": 27,
+    "estilo": "List Bullet",
+    "texto": "Activación pre-evento — entrega menú degustación + storytelling deck 4-6 semanas antes."
+   },
+   {
+    "i": 28,
+    "estilo": "List Bullet",
+    "texto": "Multi-concepto modular — 'feria gastronómica del mundo' como formato premium 90-130 €/pax."
+   },
+   {
+    "i": 29,
+    "estilo": "Normal",
+    "texto": "2.3 Posicionamiento dual B2C íntimo + B2B corporate"
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "El modelo se construye sobre dos columnas complementarias. El canal B2C (35 % de los ingresos) genera contenido visual, reseñas Google, viralidad en redes sociales y testimonios; el canal B2B (65 % de los ingresos) aporta volumen, ticket medio alto y ratio de repetición elevado. Una boda multicultural temática bien fotografiada se convierte en venta corporate; un brand event corporate bien ejecutado genera 6-10 eventos privados de los asistentes en los 6 meses siguientes."
+   },
+   {
+    "i": 31,
+    "estilo": "Normal",
+    "texto": "3. Análisis de mercado España 2026"
+   },
+   {
+    "i": 32,
+    "estilo": "Normal",
+    "texto": "3.1 Tamaño del mercado"
+   },
+   {
+    "i": 33,
+    "estilo": "Normal",
+    "texto": "Según el Observatorio Sectorial DBK de INFORMA (2024), el mercado total de catering en España alcanzó los 4.585 millones de euros en 2023 (+8,8 % YoY), del cual el segmento eventos y celebraciones representa entre el 12-15 % del total (~600-700 millones €). Bodas.net Informe Sector Nupcial 2026 confirma que el coste medio de una boda en España alcanzó los 25.183 € en 2025 con 116 invitados de media; el banquete representa el 53 % del presupuesto total. El mercado MICE corporate supera los 14.296 millones € (2024) con previsiones de crecimiento sostenido 2025-2027. El segmento de catering temático especializado, dentro del catering de eventos, está en expansión por la demanda creciente de experiencias gastronómicas diferenciadoras."
+   },
+   {
+    "i": 34,
+    "estilo": "Normal",
+    "texto": "3.2 Tendencias 2026 confirmadas"
+   },
+   {
+    "i": 35,
+    "estilo": "List Bullet",
+    "texto": "Fusión cultural — 38 % de bodas son multiculturales (parejas con orígenes diversos) y demandan menús que reflejen sus raíces y viajes."
+   },
+   {
+    "i": 36,
+    "estilo": "List Bullet",
+    "texto": "Showcooking en directo — 'estaciones de comida (sushi, parrilla, postres) seguirán creciendo' (HOLA / Ondarreta / Mangoa)."
+   },
+   {
+    "i": 37,
+    "estilo": "List Bullet",
+    "texto": "Family Style + estaciones temáticas — formato compartido reemplaza al banquete sentado en bodas millennial."
+   },
+   {
+    "i": 38,
+    "estilo": "List Bullet",
+    "texto": "Sostenibilidad como requisito — zero waste, productores km0, packaging compostable."
+   },
+   {
+    "i": 39,
+    "estilo": "List Bullet",
+    "texto": "Plant-based premium — 58 % de las parejas piden ≥1 menú alternativo (WeddingWire Global 2025)."
+   },
+   {
+    "i": 40,
+    "estilo": "List Bullet",
+    "texto": "Visual-first / instagrameable — flores comestibles, presentaciones artísticas, 'cada plato como lienzo'."
+   },
+   {
+    "i": 41,
+    "estilo": "List Bullet",
+    "texto": "Storytelling cultural del chef — narrativa en directo durante showcooking aumenta percepción de valor."
+   },
+   {
+    "i": 42,
+    "estilo": "List Bullet",
+    "texto": "Activación pre-evento — entrega menú degustación + storytelling deck a la pareja/cliente como contenido orgánico."
+   },
+   {
+    "i": 43,
+    "estilo": "Normal",
+    "texto": "3.3 Top 14 conceptos temáticos más vendibles 2026"
+   },
+   {
+    "i": 44,
+    "estilo": "Normal",
+    "texto": "Datos cruzados de Bodas.net, MICE Catering, Roble Agency, Top 5 catering DBK y plataformas B2B (CateringClick, Bodas.net PRO):"
+   },
+   {
+    "i": 45,
+    "estilo": "Normal",
+    "texto": "3.4 Cliente ideal B2C"
+   },
+   {
+    "i": 46,
+    "estilo": "Normal",
+    "texto": "Hogares de renta media-alta (50.000-120.000 € brutos anuales), con interés gastronómico activo y disposición a pagar por experiencias diferenciadas. Edad típica 30-55 años. 73 % son Millennials (digital-native, alta sensibilidad a redes) y 17 % Gen Z. Disparadores de compra:"
+   },
+   {
+    "i": 47,
+    "estilo": "List Bullet",
+    "texto": "Bodas multiculturales (parejas con orígenes/culturas distintas que quieren reflejarlo en el banquete)."
+   },
+   {
+    "i": 48,
+    "estilo": "List Bullet",
+    "texto": "Cumpleaños redondos (30, 40, 50) con concepto cultural específico (boda Bollywood, fiesta mexicana)."
+   },
+   {
+    "i": 49,
+    "estilo": "List Bullet",
+    "texto": "Celebraciones familiares con tema (comuniones temáticas, baby showers internacionales)."
+   },
+   {
+    "i": 50,
+    "estilo": "List Bullet",
+    "texto": "Aniversarios de pareja con cocina del país de luna de miel o destino significativo."
+   },
+   {
+    "i": 51,
+    "estilo": "List Bullet",
+    "texto": "Festejos pre/post-boda con concepto distinto al banquete principal."
+   },
+   {
+    "i": 52,
+    "estilo": "Normal",
+    "texto": "3.5 Cliente ideal B2B"
+   },
+   {
+    "i": 53,
+    "estilo": "Normal",
+    "texto": "4. Modelo de negocio"
+   },
+   {
+    "i": 54,
+    "estilo": "Normal",
+    "texto": "4.1 Estructura de ingresos"
+   },
+   {
+    "i": 55,
+    "estilo": "Normal",
+    "texto": "4.2 Estructura de costes"
+   },
+   {
+    "i": 56,
+    "estilo": "List Bullet",
+    "texto": "Food cost: 28 % en año 1, optimizable a 23-25 % con acuerdos directos a importadores especializados (EMB Food, Cominport, Importaciones Cuesta)."
+   },
+   {
+    "i": 57,
+    "estilo": "List Bullet",
+    "texto": "Logística (transporte, neveras, multi-equipamiento): 5 % constante."
+   },
+   {
+    "i": 58,
+    "estilo": "List Bullet",
+    "texto": "Personal freelance especializado: 15 % medio (chef sushi, taquero, pizzaiolo, parrillero según concepto)."
+   },
+   {
+    "i": 59,
+    "estilo": "List Bullet",
+    "texto": "Costes fijos anuales: 10.560 € (cuota autónomo, seguros, marketing, furgoneta)."
+   },
+   {
+    "i": 60,
+    "estilo": "List Bullet",
+    "texto": "Amortización equipamiento multi-cocina: 3.500-4.800 € año, recuperable en 14-18 meses."
+   },
+   {
+    "i": 61,
+    "estilo": "Normal",
+    "texto": "4.3 Pricing y políticas comerciales"
+   },
+   {
+    "i": 62,
+    "estilo": "List Bullet",
+    "texto": "Anticipo 40 % al firmar contrato. Sin anticipo no se bloquea fecha en agenda."
+   },
+   {
+    "i": 63,
+    "estilo": "List Bullet",
+    "texto": "Cláusula cancelación: > 21 días devolución íntegra, 21-7 días retención 50 %, < 7 días retención 100 %."
+   },
+   {
+    "i": 64,
+    "estilo": "List Bullet",
+    "texto": "Pricing público en web por rango de pax + número de conceptos + nivel calidad."
+   },
+   {
+    "i": 65,
+    "estilo": "List Bullet",
+    "texto": "Recargos transparentes: distancia > 30 km (0,95 €/km I+V), pairing (+14 €/pax), branded experience (+280 €)."
+   },
+   {
+    "i": 66,
+    "estilo": "List Bullet",
+    "texto": "Descuentos B2B con acuerdo marco anual: 5-12 % en cliente recurrente con compromiso 4+ eventos."
+   },
+   {
+    "i": 67,
+    "estilo": "Normal",
+    "texto": "5. Plan operativo"
+   },
+   {
+    "i": 68,
+    "estilo": "Normal",
+    "texto": "5.1 Operativa multi-concepto día a día"
+   },
+   {
+    "i": 69,
+    "estilo": "Normal",
+    "texto": "Un evento típico de catering temático multi-concepto se desarrolla en 6 fases. La diferencia entre un servicio amateur y uno premium está en el cumplimiento riguroso de las fases y en la coordinación de las múltiples estaciones simultáneas:"
+   },
+   {
+    "i": 70,
+    "estilo": "List Number",
+    "texto": "Briefing cliente (D-21 a D-14): formulario online con número pax, alergias, conceptos elegidos, presupuesto, espacio, equipamiento disponible, ambientación deseada, horarios."
+   },
+   {
+    "i": 71,
+    "estilo": "List Number",
+    "texto": "Visita técnica (D-14 a D-7): verificación acceso, electricidad multi-station, gas, espacio frigorífico, layout, plan B clima si outdoor."
+   },
+   {
+    "i": 72,
+    "estilo": "List Number",
+    "texto": "Preparación D-1: pedidos a importadores especializados, mise en place avanzado por concepto en cocina central o compartida, carga del kit operativo en furgoneta."
+   },
+   {
+    "i": 73,
+    "estilo": "List Number",
+    "texto": "Servicio en evento (D): llegada con 90-120 min de antelación, montaje multi-station 60-90 min, briefing equipo freelance, servicio escalonado por concepto, control APPCC continuo."
+   },
+   {
+    "i": 74,
+    "estilo": "List Number",
+    "texto": "Recogida y limpieza (D): foto previa del estado, limpieza completa, retirada residuos separada, foto posterior con cliente."
+   },
+   {
+    "i": 75,
+    "estilo": "List Number",
+    "texto": "Post-evento (D+1 a D+7): factura emitida en 24-48 h, mensaje WhatsApp con foto recuerdo, solicitud reseña Google, registro en CRM, análisis costes reales por concepto, contenido orgánico en redes."
+   },
+   {
+    "i": 76,
+    "estilo": "Normal",
+    "texto": "5.2 Equipamiento multi-cocina del mundo"
+   },
+   {
+    "i": 77,
+    "estilo": "Normal",
+    "texto": "El detalle exhaustivo está en el Catálogo de Equipamiento adjunto. Resumen por concepto:"
+   },
+   {
+    "i": 78,
+    "estilo": "List Bullet",
+    "texto": "Sushi-bar: cuchillería japonesa profesional (gyuto, petty, yanagiba), tabla cortar, hangiri, mat bambú, plating slate."
+   },
+   {
+    "i": 79,
+    "estilo": "List Bullet",
+    "texto": "Tacos al pastor: trompo a gas + soporte transporte, comales, planchas, tortilleras (Maíz Maya)."
+   },
+   {
+    "i": 80,
+    "estilo": "List Bullet",
+    "texto": "Pizza horno de leña móvil: Pizza Party / Ooni Pro, pala pizza, mesa preparación, leña briquetas."
+   },
+   {
+    "i": 81,
+    "estilo": "List Bullet",
+    "texto": "Parrilla argentina: parrilla portátil + cruz asado lechón/cordero, leña, instrumentos."
+   },
+   {
+    "i": 82,
+    "estilo": "List Bullet",
+    "texto": "Ceviche peruano: cuchillería precisión, plating slate + ceviche bowls cerámica, exprimidor cítricos."
+   },
+   {
+    "i": 83,
+    "estilo": "List Bullet",
+    "texto": "Tandoor indio: tandoor portátil + brochetas largas + utensilios kebab."
+   },
+   {
+    "i": 84,
+    "estilo": "List Bullet",
+    "texto": "BBQ texano: smoker offset + termómetros + slicers + butcher block."
+   },
+   {
+    "i": 85,
+    "estilo": "List Bullet",
+    "texto": "Wok asiático: wok pro + utensilios bambú + vaporeras dim sum."
+   },
+   {
+    "i": 86,
+    "estilo": "List Bullet",
+    "texto": "Inducción portátil 3.5 kW × 2-3 unidades para back-up multi-concepto."
+   },
+   {
+    "i": 87,
+    "estilo": "List Bullet",
+    "texto": "Mise en place portable: neveras profesionales, cajas modulares, termómetros sondas, báscula."
+   },
+   {
+    "i": 88,
+    "estilo": "Normal",
+    "texto": "5.3 Gestión de proveedores especializados"
+   },
+   {
+    "i": 89,
+    "estilo": "Normal",
+    "texto": "La autenticidad del producto entregado depende directamente de la red de proveedores. El kit incluye una plantilla con 96 proveedores reales validados España 2026 distribuidos en 12 bloques: importadores asiáticos premium (EMB Food, Cominport, Garmiko, Janax), importadores latinos / mexicanos (Importaciones Cuesta, Central Mexicana de Abastos, Jasa Internacional, Maíz Maya, Distribuidora Latinoandina), italiano / mediterráneo (Caputo Harinas, Italfoods, Casa de la Pasta, AOVE DO Sierra Mágina), indio / tandoor (Spice Box, Patak's, TRS Foods, Bombay Spices, iCatering Indian), BBQ texano (Dame la Brasa, ALEXS BBQ, Smokefire, Pit Pal, Maderas BBQ premium), carnicero premium (Cesáreo Gómez, Discarlux, El Capricho León, Filo Catering, Treviño), pescado y marisco premium (Pescaderías Coruñesas, Mariscos Linamar, Castellet, Daganzo, Nardín, Caviar Riofrío, Pescados Solla), vegano premium (Aymat Vegan, Los Pucheros del Marqués, Heura Foods, Beyond Meat, Aitana Microgreens, MyHerbs), equipamiento multi-cocina pro (Wokinox, Josper, Pizza Party, Ooni, Sammic, Anova, Vollrath, Iwatani, GGM Gastro, Sirman), vajilla cristalería (Pordamsa, Steelite, Schönwald, Schott Zwiesel, Pasabache, Galileo, Estela, Nordal), marketing y plataformas (Hosply.pro, Bodas.net PRO, Zankyou, CateringClick, GuiaCatering, MICE Catering, fotógrafos pro, Stripe, Pinterest Business), furgoneta y servicios (Renault Master, Iveco Daily, ALD Renting, Schoeller Allibert, Hiscox, Mapfre, Generali, Quipu, Holded). Estrategia: trabajar con 2-3 proveedores principales por bloque y mantener un proveedor de respaldo activo."
+   },
+   {
+    "i": 90,
+    "estilo": "Normal",
+    "texto": "6. Plan de marketing y captación"
+   },
+   {
+    "i": 91,
+    "estilo": "Normal",
+    "texto": "6.1 Estrategia digital"
+   },
+   {
+    "i": 92,
+    "estilo": "List Bullet",
+    "texto": "SEO local optimizado: Google Business Profile, schema markup (LocalBusiness + Catering + FoodService), reseñas activas."
+   },
+   {
+    "i": 93,
+    "estilo": "List Bullet",
+    "texto": "Pinterest profesional con boards por concepto temático — tráfico orgánico cualificado bodas."
+   },
+   {
+    "i": 94,
+    "estilo": "List Bullet",
+    "texto": "Instagram con Reels semanales — un concepto en rotación por semana, plating editorial, behind-the-scenes."
+   },
+   {
+    "i": 95,
+    "estilo": "List Bullet",
+    "texto": "LinkedIn empresa para B2B corporate, especialmente RRHH y agencias eventos."
+   },
+   {
+    "i": 96,
+    "estilo": "List Bullet",
+    "texto": "TikTok detrás de las escenas + storytelling cultural — viralidad sectorial creciente."
+   },
+   {
+    "i": 97,
+    "estilo": "Normal",
+    "texto": "6.2 Captación B2B activa"
+   },
+   {
+    "i": 98,
+    "estilo": "List Bullet",
+    "texto": "Email outreach personalizado a wedding planners (10-15/semana primeros 3 meses)."
+   },
+   {
+    "i": 99,
+    "estilo": "List Bullet",
+    "texto": "Visita presencial a planners top 15 con showcooking de prueba de un concepto + portfolio impreso."
+   },
+   {
+    "i": 100,
+    "estilo": "List Bullet",
+    "texto": "Dossier B2B PDF de 16 páginas con conceptos temáticos disponibles, casos de estudio y pricing."
+   },
+   {
+    "i": 101,
+    "estilo": "List Bullet",
+    "texto": "LinkedIn outreach a directores de RRHH, Marketing y Eventos de empresas corporate locales."
+   },
+   {
+    "i": 102,
+    "estilo": "List Bullet",
+    "texto": "Alta en Hosply.pro, CateringClick, GuiaCatering, MICE Catering Network."
+   },
+   {
+    "i": 103,
+    "estilo": "List Bullet",
+    "texto": "Programa partnership con hoteles boutique 4-5 estrellas (eventos privados con concepto temático)."
+   },
+   {
+    "i": 104,
+    "estilo": "List Bullet",
+    "texto": "Contacto embajadas / consulados zona — eventos diplomáticos multiculturales (ticket alto)."
+   },
+   {
+    "i": 105,
+    "estilo": "Normal",
+    "texto": "6.3 Captación B2C orgánica"
+   },
+   {
+    "i": 106,
+    "estilo": "List Bullet",
+    "texto": "Bodas.net PRO + Zankyou Weddings — visibilidad en planificación de bodas multiculturales."
+   },
+   {
+    "i": 107,
+    "estilo": "List Bullet",
+    "texto": "Pinterest Ads con boards por concepto temático — tráfico cualificado low-cost."
+   },
+   {
+    "i": 108,
+    "estilo": "List Bullet",
+    "texto": "Google Ads campaña local 'catering temático bodas + ciudad' — presupuesto 350-650 €/mes."
+   },
+   {
+    "i": 109,
+    "estilo": "List Bullet",
+    "texto": "Programa referidos: 5 % en segunda contratación o regalo gourmet temático."
+   },
+   {
+    "i": 110,
+    "estilo": "List Bullet",
+    "texto": "Newsletter mensual con concepto destacado del mes — driver de cumpleaños y aniversarios."
+   },
+   {
+    "i": 111,
+    "estilo": "List Bullet",
+    "texto": "Showroom multi-concepto cooking class trimestral — captación masiva e influencers locales."
+   },
+   {
+    "i": 112,
+    "estilo": "Normal",
+    "texto": "7. Plan financiero (resumen)"
+   },
+   {
+    "i": 113,
+    "estilo": "Normal",
+    "texto": "7.1 Inversión inicial recomendada"
+   },
+   {
+    "i": 114,
+    "estilo": "Normal",
+    "texto": "7.2 Proyección 3 años"
+   },
+   {
+    "i": 115,
+    "estilo": "Normal",
+    "texto": "La proyección financiera detallada está en el Excel adjunto. Resumen:"
+   },
+   {
+    "i": 116,
+    "estilo": "Normal",
+    "texto": "8. Riesgos y mitigaciones"
+   },
+   {
+    "i": 117,
+    "estilo": "Normal",
+    "texto": "9. Anexo: regulación catering itinerante por CCAA"
+   },
+   {
+    "i": 118,
+    "estilo": "Normal",
+    "texto": "La actividad de catering temático itinerante tiene normativa común estatal (RD 191/2011 sobre Registro General Sanitario de Empresas Alimentarias, RD 109/2010 sobre alérgenos, normativa manipulador) y normativa autonómica complementaria. Puntos clave por CCAA:"
+   },
+   {
+    "i": 119,
+    "estilo": "Normal",
+    "texto": "Importante: este anexo es orientativo. Antes de iniciar la actividad consulta con un asesor fiscal-laboral local o con la administración autonómica correspondiente. ChefBusiness ofrece consultoría puntual de orientación regulatoria si la necesitas."
+   }
+  ],
+  "tablas": [
+   [
+    [
+     "#",
+     "Concepto",
+     "ICP principal",
+     "Ticket €/pax",
+     "Dificultad"
+    ],
+    [
+     "1",
+     "Sushi-bar + sushiman directo",
+     "Bodas urbanas, corporate premium",
+     "35-90",
+     "Alta"
+    ],
+    [
+     "2",
+     "Tacos al pastor + trompo móvil",
+     "Bodas millennial, brand events",
+     "25-45",
+     "Media"
+    ],
+    [
+     "3",
+     "Parrilla argentina / asado a la cruz",
+     "Bodas finca, corporate outdoor",
+     "32-60",
+     "Media"
+    ],
+    [
+     "4",
+     "Pizza al horno de leña móvil napolitana",
+     "Bodas informales, late-snack",
+     "15-30",
+     "Baja-Media"
+    ],
+    [
+     "5",
+     "Ceviche peruano + barra Pisco",
+     "Bodas premium, corporate trendy",
+     "40-75",
+     "Alta"
+    ],
+    [
+     "6",
+     "Marisquería gallega showcooking",
+     "Bodas alto standing, VIP",
+     "70-120",
+     "Alta"
+    ],
+    [
+     "7",
+     "Tandoor indio + curry station",
+     "Bodas multiculturales, embajadas",
+     "35-55",
+     "Media-Alta"
+    ],
+    [
+     "8",
+     "Couscous / tagín marroquí",
+     "Bodas Andalucía, embajadas",
+     "30-50",
+     "Baja-Media"
+    ],
+    [
+     "9",
+     "Plant-based premium / vegano gourmet",
+     "Bodas millennials, corporate ESG",
+     "45-85",
+     "Media"
+    ],
+    [
+     "10",
+     "Brasileño rodízio / picanha",
+     "Bodas grupales, summer parties",
+     "35-60",
+     "Media"
+    ],
+    [
+     "11",
+     "BBQ texano slow-smoked",
+     "Bodas country-chic, corporate creativo",
+     "30-50",
+     "Alta"
+    ],
+    [
+     "12",
+     "Mediterráneo griego/turco (mezze)",
+     "Bodas costa verano, corporate",
+     "25-45",
+     "Baja-Media"
+    ],
+    [
+     "13",
+     "Asiático fusión Pan-Asia (wok+bao)",
+     "Corporate millennial, urbanos",
+     "30-55",
+     "Media"
+    ],
+    [
+     "14",
+     "Brunch internacional (avocado/dim sum)",
+     "Corporate matinal, after-party",
+     "22-40",
+     "Baja"
+    ]
+   ],
+   [
+    [
+     "Perfil B2B",
+     "Ticket medio",
+     "Frecuencia anual",
+     "Estacionalidad"
+    ],
+    [
+     "Corporate brand event empresa",
+     "6.800 €",
+     "2-4 eventos/año",
+     "Mar-jun + sept-dic"
+    ],
+    [
+     "Wedding planner boda multi-station",
+     "5.200 €",
+     "1-2 eventos por boda",
+     "Mayo-octubre"
+    ],
+    [
+     "Hotel boutique evento corporativo",
+     "4.200 €",
+     "8-15 eventos/año",
+     "Todo el año"
+    ],
+    [
+     "Embajada / evento diplomático",
+     "6.500 €",
+     "1-2 eventos/año",
+     "Todo el año"
+    ],
+    [
+     "Festival gastronómico / activación",
+     "3.800 €",
+     "3-6 eventos/año",
+     "Mar-oct + dic"
+    ],
+    [
+     "Cena directiva fin de año empresa",
+     "5.500 €",
+     "1-2 eventos/año",
+     "Noviembre-diciembre"
+    ]
+   ],
+   [
+    [
+     "Canal",
+     "% Ingresos año 1",
+     "Ticket medio",
+     "Margen bruto",
+     "CAC",
+     "LTV"
+    ],
+    [
+     "B2C bodas y eventos privados",
+     "35 %",
+     "2.200 €",
+     "55 %",
+     "85 €",
+     "3.500 €"
+    ],
+    [
+     "B2B corporate y planners",
+     "65 %",
+     "4.500 €",
+     "52 %",
+     "180 €",
+     "12.500 €"
+    ]
+   ],
+   [
+    [
+     "Concepto",
+     "Mín. (€)",
+     "Recomendado (€)",
+     "Premium (€)"
+    ],
+    [
+     "Constitución autónomo + IAE + APPCC móvil",
+     "350",
+     "600",
+     "950"
+    ],
+    [
+     "Cuchillería japonesa profesional",
+     "480",
+     "980",
+     "2.400"
+    ],
+    [
+     "Inducción portátil x 2 + cables",
+     "240",
+     "520",
+     "1.280"
+    ],
+    [
+     "Wok + plancha teppanyaki + parrilla josper",
+     "580",
+     "1.480",
+     "3.850"
+    ],
+    [
+     "Horno de leña pizza móvil",
+     "850",
+     "2.200",
+     "4.800"
+    ],
+    [
+     "Tandoor portátil + smoker BBQ",
+     "480",
+     "1.450",
+     "3.850"
+    ],
+    [
+     "Trompo al pastor + comales",
+     "280",
+     "580",
+     "1.450"
+    ],
+    [
+     "Vajilla blanca premium 100 plates",
+     "780",
+     "1.850",
+     "4.200"
+    ],
+    [
+     "Cristalería + cubertería + mantelería",
+     "380",
+     "880",
+     "2.200"
+    ],
+    [
+     "Mise en place portátil + neveras",
+     "480",
+     "980",
+     "2.380"
+    ],
+    [
+     "Attrezzo cultural por concepto",
+     "380",
+     "1.180",
+     "3.200"
+    ],
+    [
+     "Uniformidad chef × 4",
+     "280",
+     "580",
+     "1.280"
+    ],
+    [
+     "Marca + web + identidad + Stripe",
+     "580",
+     "1.850",
+     "4.800"
+    ],
+    [
+     "Sesión foto profesional 12 conceptos",
+     "580",
+     "1.480",
+     "3.800"
+    ],
+    [
+     "Furgoneta usada / leasing + branded wrap",
+     "1.800",
+     "4.800",
+     "14.000"
+    ],
+    [
+     "TOTAL",
+     "8.540 €",
+     "21.410 €",
+     "54.440 €"
+    ]
+   ],
+   [
+    [
+     "Año",
+     "Eventos",
+     "Ingresos",
+     "Margen bruto",
+     "Margen neto"
+    ],
+    [
+     "Año 1",
+     "173 (B2C 76 + B2B 97)",
+     "603.700 €",
+     "62 %",
+     "27 %"
+    ],
+    [
+     "Año 2",
+     "225 (B2C 99 + B2B 126)",
+     "846.730 €",
+     "63 %",
+     "30 %"
+    ],
+    [
+     "Año 3",
+     "275 (B2C 121 + B2B 154)",
+     "1.115.400 €",
+     "63 %",
+     "32 %"
+    ]
+   ],
+   [
+    [
+     "Riesgo",
+     "Probabilidad",
+     "Impacto",
+     "Mitigación"
+    ],
+    [
+     "Cancelación cliente último momento",
+     "Media",
+     "Alto",
+     "Anticipo 40 % + cláusula 21 días"
+    ],
+    [
+     "Intoxicación alimentaria multi-cocina",
+     "Baja",
+     "Crítico",
+     "Seguro RC con cláusula intox + APPCC riguroso por concepto"
+    ],
+    [
+     "Avería equipamiento crítico durante evento",
+     "Media",
+     "Alto",
+     "Equipamiento de respaldo + 2 inducciones portátiles"
+    ],
+    [
+     "Cliente B2B no paga factura",
+     "Media",
+     "Medio",
+     "40 % anticipo + 30 % al confirmar + 30 % D+30"
+    ],
+    [
+     "Falta de personal freelance especializado",
+     "Alta",
+     "Medio",
+     "Bolsa de 3-4 freelance fiables por concepto"
+    ],
+    [
+     "Reseñas negativas (alergia no comunicada)",
+     "Media",
+     "Alto",
+     "Briefing por escrito + plantilla alergias firmada por concepto"
+    ],
+    [
+     "Lluvia evento outdoor sin plan B",
+     "Alta",
+     "Alto",
+     "Plan B clima documentado + carpa de respaldo"
+    ],
+    [
+     "Imitadores low-cost en plataformas",
+     "Alta",
+     "Bajo",
+     "Marca personal fuerte + portfolio premium + ángulo multi-concepto"
+    ],
+    [
+     "Gestión simultánea de 3+ estaciones",
+     "Alta",
+     "Medio",
+     "SOP por concepto + checklist multi-station + briefing equipo"
+    ]
+   ],
+   [
+    [
+     "CCAA",
+     "Registro Sanitario",
+     "Notas específicas"
+    ],
+    [
+     "Madrid",
+     "Salud Pública CAM",
+     "Ventanilla única online; trámite 15-30 días; epígrafe IAE 677.9"
+    ],
+    [
+     "Cataluña",
+     "Generalitat Salut Pública",
+     "Etiquetado en catalán obligatorio; tasa anual ~80 €"
+    ],
+    [
+     "Andalucía",
+     "Junta Andalucía Salud",
+     "Comunicación previa + RGSEAA; control aleatorio anual"
+    ],
+    [
+     "Comunidad Valenciana",
+     "Conselleria Sanidad",
+     "Registro telemático; verificación cocina cliente final"
+    ],
+    [
+     "País Vasco",
+     "Osasun Saila Salud Vasca",
+     "Posible bilingüismo etiquetado; fiscalidad foral"
+    ],
+    [
+     "Galicia",
+     "Sergas Salud Pública",
+     "Comunicación previa; menos restrictivo en itinerante"
+    ],
+    [
+     "Castilla y León",
+     "Sacyl Salud Pública",
+     "Trámite presencial + telemático; 30 días"
+    ],
+    [
+     "Castilla-La Mancha",
+     "Sescam Salud Pública",
+     "Comunicación previa + RGSEAA"
+    ],
+    [
+     "Aragón",
+     "Salud Pública Aragón",
+     "Trámite online; documentación APPCC simplificada"
+    ],
+    [
+     "Islas Baleares",
+     "IB-Salut Salud Pública",
+     "Verificación específica para temporada turística"
+    ],
+    [
+     "Islas Canarias",
+     "Servicio Canario Salud",
+     "Trámite específico + cumplimiento normativa transporte"
+    ],
+    [
+     "Navarra",
+     "Salud Pública Foral",
+     "Tasa anual reducida; foral facilita autónomos"
+    ],
+    [
+     "La Rioja",
+     "Salud La Rioja",
+     "Trámite online; 15-25 días"
+    ],
+    [
+     "Asturias",
+     "SESPA Salud Pública",
+     "Comunicación previa; menos restrictivo"
+    ],
+    [
+     "Cantabria",
+     "Servicio Cántabro Salud",
+     "Trámite presencial + telemático"
+    ],
+    [
+     "Murcia",
+     "Murciasalud",
+     "Comunicación previa; normativa amplia para itinerante"
+    ],
+    [
+     "Extremadura",
+     "SES Salud Pública",
+     "Trámite online; menos restrictivo"
+    ]
+   ]
+  ]
+ }
+}

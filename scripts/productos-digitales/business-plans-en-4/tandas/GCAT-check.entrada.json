@@ -1,0 +1,4634 @@
+{
+ "tanda": "GCAT-check",
+ "salida": "scripts/productos-digitales/business-plans-en-4/textos_en/GCAT-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 272,
+ "n_palabras": 1253,
+ "pistas": {
+  "P01": "Celda a celda: escribe SOLO el texto de ESTA celda (una tabla o una tarea): mira su pista propia",
+  "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P03": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 1/11: estructura: LLC frente a S corp con tu contador (ES: alta autónomo / SL)",
+  "P04": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P05": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 2/11: EIN gratis en el IRS + alta estatal de nóminas y desempleo",
+  "P06": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P07": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 3/11: registrar la LLC en el Secretary of State + registered agent + operating agreement",
+  "P08": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
+  "P09": "D69: la furgoneta refrigerada («refrigerated van»); nunca «truck» (gate)",
+  "P10": "D69: catering de eventos en el lugar del cliente; sin ventanilla, festivales, mercados ni venta ambulante (gate)",
+  "P11": "D74: «portable cooking and power (induction, burners, generator)»",
+  "P12": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P13": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 4/11: cuenta bancaria del negocio y finanzas separadas",
+  "P14": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 5/11: seller's permit / registro de sales tax del estado (en muchos estados tributa toda la factura de catering)",
+  "P15": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 6/11: business license de la ciudad o el condado (+ DBA si usas nombre comercial)",
+  "P16": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 7/11: contador / bookkeeper y estimated taxes trimestrales (ES: modelo 130)",
+  "P17": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 8/11: software de catering: propuestas, contratos, anticipos y facturas",
+  "P18": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 9/11: contrato tipo con un abogado: anticipo, cancelación, mínimo de invitados, service charge frente a propina (ES: desistimiento → cancelación)",
+  "P19": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 10/11: plan de seguridad alimentaria basado en HACCP y SOP de transporte (ES: APPCC)",
+  "P20": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P21": "D72: motor permutado: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+  "P22": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P23": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 1, tarea 11/11: Certified Food Protection Manager (ServSafe Manager) del dueño o chef (ES: manipulador)",
+  "P24": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P25": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 1/13: elegir cocina comisaria compartida: horas, almacenaje frío y seco, parking de la furgoneta (visita y precios)",
+  "P26": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 2/13: commissary agreement por escrito (lo exige el health department)",
+  "P27": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 3/13: catering / health permit del condado (plan review solo si alquilas cocina propia; inspección)",
+  "P28": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 4/13: temporary food event permits para eventos comunitarios o públicos",
+  "P29": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 5/13: fire marshal: llama abierta, combustible de chafing y carpas (según venue y ciudad)",
+  "P30": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 6/13: comprar la furgoneta refrigerada usada (inspección mecánica + unidad de frío)",
+  "P31": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 7/13: registro y título en el DMV + commercial auto insurance (CDL solo con GVWR ≥ 26,001 lb)",
+  "P32": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 8/13: adaptación de la furgoneta: estanterías, sujeción de cargas, rotulación",
+  "P33": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 9/13: general liability + BOP; certificado de seguro (COI) y «additional insured» que piden los venues",
+  "P34": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 10/13: liquor liability si sirves alcohol que compra el cliente (bartenders certificados)",
+  "P35": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
+  "P36": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 11/13: workers' comp (obligatorio con empleados en casi todos los estados)",
+  "P37": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 12/13: residuos y grasa con un hauler con licencia (a menudo lo gestiona la comisaria)",
+  "P38": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 2, tarea 13/13: control de plagas con empresa con licencia (vía comisaria) y avisos obligatorios publicados",
+  "P39": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 1/12: lista de equipo propio frente a alquiler (party rental) por estilo de servicio",
+  "P40": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 2/12: chafing dishes, cajas isotermas y termómetros calibrados",
+  "P41": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 3/12: cocina portátil: inducción, quemadores y energía para el lugar del evento",
+  "P42": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 4/12: menaje GN: hotel pans, sheet pans, utensilios",
+  "P43": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 5/12: menaje de servicio y presentación para estaciones temáticas (displays, bandejas)",
+  "P44": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 6/12: cuentas con un distribuidor broadline (US Foods, Sysco, Restaurant Depot) (ES: proveedores españoles → US)",
+  "P45": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 7/12: proveedores especializados para las estaciones temáticas",
+  "P46": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 8/12: acuerdo con una empresa de alquileres (mesas, mantelería, vajilla) con tarifa pactada",
+  "P47": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 9/12: desechables y envases para drop-off (compostables si la ciudad lo exige)",
+  "P48": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 10/12: registros de temperatura en el transporte (data logger)",
+  "P49": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 11/12: montar el espacio en la comisaria: estanterías, etiquetado, FIFO",
+  "P50": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 3, tarea 12/12: ensayo completo de un evento (dry run) con el equipo",
+  "P51": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 1/10: plan de personal por evento según el estilo de servicio (ratio de servers por invitados)",
+  "P52": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 2/10: pool de event staff en nómina W-2 (no 1099: FLSA; California AB5)",
+  "P53": "Glosario: event catering; weddings; corporate events; drop-off, buffet, family-style, plated, stations",
+  "P54": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 3/10: offer letters, I-9 y W-4; salario mínimo estatal",
+  "P55": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P56": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P57": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 4/10: new-hire reporting al estado",
+  "P58": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 5/10: proveedor de nóminas y workers' comp en marcha",
+  "P59": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 6/10: food handler cards del equipo",
+  "P60": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 7/10: alcohol server certification (TIPS / ServSafe Alcohol / TABC) de los bartenders",
+  "P61": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 8/10: OSHA basics: quemaduras, cargas, conducción",
+  "P62": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 9/10: formación de servicio y protocolo del evento (uniforme, briefing, 9 alérgenos mayores)",
+  "P63": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 4, tarea 10/10: política de service charge y propinas (Rev. Rul. 2012-18: el service charge es salario)",
+  "P64": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P65": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 1/12: marca, logo, menú de estaciones temáticas y fotos profesionales",
+  "P66": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P67": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 2/12: web con menús, precios «desde» por invitado y formulario de presupuesto",
+  "P68": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 3/12: Google Business Profile y reseñas",
+  "P69": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 4/12: perfiles en The Knot y WeddingWire (ES: Bodas.net / Zankyou)",
+  "P70": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 5/12: alta en ezCater (marketplace corporativo) (ES: CateringClick)",
+  "P71": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 6/12: prospección B2B: office managers, HR, event planners (lista y visitas)",
+  "P72": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 7/12: acuerdos con venues y wedding planners (preferred vendor lists)",
+  "P73": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 8/12: política de degustaciones para prospectos",
+  "P74": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 9/12: Instagram y redes con fotos de eventos (ES: WhatsApp → texto / SMS)",
+  "P75": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 10/12: plantilla de propuesta con la calculadora del kit y seguimiento en el CRM",
+  "P76": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P77": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 11/12: programa de referidos y reseñas después de cada evento",
+  "P78": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 5, tarea 12/12: evento de lanzamiento / showcase para planners y empresas",
+  "P79": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 1/10: briefing con el cliente D-21: invitados, dietas, timeline del evento",
+  "P80": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 2/10: visita técnica al venue D-14: accesos, cocina, enchufes, agua",
+  "P81": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 3/10: compras D-7 / D-1 y lista de producción",
+  "P82": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 4/10: checklist de carga y transporte con temperaturas",
+  "P83": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 5/10: montaje 60-90 min antes y servicio",
+  "P84": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 6/10: recogida, limpieza y devolución de alquileres",
+  "P85": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 7/10: factura del saldo y cobro en 24-48 h; control de anticipos",
+  "P86": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 8/10: pedir reseña y fotos; seguimiento en el CRM",
+  "P87": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P88": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 9/10: revisión semanal de food cost y personal por evento frente a la calculadora",
+  "P89": "D77: escribe una TAREA de catering (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) condensando el checklist ES de catering (fuente_es_cat.json) + research §6. Esta fila: fase 6, tarea 10/10: revisión a los 90 días: precios por invitado, mínimos y paquetes"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cliente/día → (motor)": "events per year",
+  "ticket medio sin IVA → (motor)": "average price per guest (excl. sales tax)",
+  "días de apertura → (motor)": "average guests per event",
+  "aparcamiento y base del vehículo": "commissary kitchen & van parking",
+  "evento": "event",
+  "invitados / comensales": "guests",
+  "precio por invitado / por cubierto": "price per guest",
+  "cocina comisaria / cocina compartida": "commissary kitchen / shared kitchen",
+  "furgoneta refrigerada": "refrigerated (cargo) van",
+  "anticipo / señal": "deposit",
+  "cancelación": "cancellation",
+  "degustación": "tasting",
+  "estación temática": "chef-attended (themed) station",
+  "bufé": "buffet",
+  "emplatado": "plated",
+  "servicio a la mesa compartido": "family-style",
+  "entrega sin servicio": "drop-off",
+  "camarero de eventos": "event server / event staff",
+  "cargo por servicio": "service charge",
+  "propina voluntaria": "gratuity (voluntary tip)",
+  "alquileres (mesas, mantelería)": "party rentals",
+  "organizador de bodas": "wedding planner",
+  "espacio del evento": "venue",
+  "mínimo de invitados": "guest minimum",
+  "chafing": "chafing dish",
+  "caja isoterma": "insulated food carrier",
+  "cliente corporativo": "corporate client",
+  "particular": "private / social client"
+ },
+ "pestanas_es_en": {
+  "CATP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "CATC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Kitchen, Van, Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Catering Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US CATERING BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average price per guest (excl. sales tax, service included)",
+  "PVP equivalente con IVA (calculado)": "Price per guest incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "CHECKLIST APERTURA — FOOD TRUCK": "CATERING STARTUP CHECKLIST — FULL-SERVICE EVENT CATERER",
+  "FASE 2: VEHÍCULO Y PERMISOS": "PHASE 2: KITCHEN, VAN & PERMITS",
+  "INSTRUCCIONES DE USO — Plan financiero Food Truck": "HOW TO USE THIS WORKBOOK — Catering Financial Projections",
+  "PLAN DE NEGOCIO: FOOD TRUCK": "BUSINESS PLAN: FULL-SERVICE EVENT CATERER",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — Food Truck urbano": "Base case — full-service event caterer",
+  "Break-even — Food Truck": "Break-even — Event Catering",
+  "Ticket medio sin IVA": "Average price per guest (excl. sales tax)",
+  "Clientes/día (media del año 1)": "Events per year (year-1 average)",
+  "Clientes/día (media)": "Events per year (average)",
+  "Clientes/día": "Events per year",
+  "Días de apertura al año": "Average guests per event",
+  "Coste variable por cliente": "Variable cost per guest",
+  "Margen de contribución por cliente": "Contribution margin per guest",
+  "Ticket menos coste variable unitario": "Price per guest minus variable cost per guest",
+  "Clientes necesarios al año": "Guests needed per year",
+  "Clientes necesarios al día": "Events needed per year",
+  "Clientes necesarios al año (caja)": "Guests needed per year (cash)",
+  "Clientes necesarios al día (caja)": "Events needed per year (cash)",
+  "Clientes/día previstos en el plan": "Events per year in the plan",
+  "Clientes/día para el equilibrio": "Events per year to break even",
+  "Clientes al año por jornada equivalente": "Guests per year per full-time equivalent",
+  "Comisiones de delivery": "Corporate marketplace commissions"
+ },
+ "cadenas": [
+  {
+   "id": "c0669",
+   "es": "Elegir forma jurídica (SL o autónomo)",
+   "donde": [
+    "CATC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Choose your legal structure (LLC or sole proprietorship)",
+   "propuesta_de": "GFT c0669 (FTC F1 - Constitución!B5)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0670",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F1 - Constitución!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F1 - Constitución!C5)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0671",
+   "es": "Semana 1",
+   "donde": [
+    "CATC · F1 - Constitución!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Week 1",
+   "propuesta_de": "GM c0671 (FTC F1 - Constitución!D5)",
+   "pistas": [
+    "P01",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0672",
+   "es": "Autónomo viable si empiezas solo, SL si hay socios",
+   "donde": [
+    "CATC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A sole proprietorship can work if you start alone; an LLC separates personal and business liability and suits partners. Ask your accountant about S or C corporations.",
+   "propuesta_de": "GFT c0672 (FTC F1 - Constitución!E5)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0673",
+   "es": "Constitución SL / alta autónomo",
+   "donde": [
+    "CATC · F1 - Constitución!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Form your LLC (articles of organization, registered agent, operating agreement)",
+   "propuesta_de": "GFT c0673 (FTC F1 - Constitución!B6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0674",
+   "es": "Notario/Gestor",
+   "donde": [
+    "CATC · F1 - Constitución!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Attorney / Accountant",
+   "propuesta_de": "GM c0674 (FTC F1 - Constitución!C6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0675",
+   "es": "1-5 días",
+   "donde": [
+    "CATC · F1 - Constitución!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day to 4 weeks",
+   "propuesta_de": "GFT c0675 (FTC F1 - Constitución!D6)",
+   "pistas": [
+    "P01",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0676",
+   "es": "Capital 1 € Ley Crea y Crece",
+   "donde": [
+    "CATC · F1 - Constitución!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Skip this step if you operate as a sole proprietor. Filing fees and processing times vary by state; write an operating agreement even for a single-member LLC.",
+   "propuesta_de": "GFT c0676 (FTC F1 - Constitución!E6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P06",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0677",
+   "es": "Alta Hacienda: modelo 036/037",
+   "donde": [
+    "CATC · F1 - Constitución!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Get your EIN (IRS) and register for state sales tax (seller's permit)",
+   "propuesta_de": "GFT c0677 (FTC F1 - Constitución!B7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0678",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F1 - Constitución!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F1 - Constitución!C7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0679",
+   "es": "1 día",
+   "donde": [
+    "CATC · F1 - Constitución!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F1 - Constitución!D7)",
+   "pistas": [
+    "P01",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0680",
+   "es": "Epígrafe IAE: 672.x (servicios de restauración en quioscos, food trucks e instalaciones móviles análogas) o 677.9 (venta ambulante sin elaboración) — la elección la valida tu gestor según si elaboras el producto en el vehículo o sólo lo vendes",
+   "donde": [
+    "CATC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "The EIN is free from the IRS and you need one if you have employees or a multi-member LLC. Register for sales tax with your state before your first sale and ask whether you file monthly or quarterly. Keep a resale certificate for tax-free purchases of items you resell.",
+   "propuesta_de": "GFT c0679 (FTC F1 - Constitución!E7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P08",
+    "P04",
+    "P09",
+    "P10",
+    "P11",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0681",
+   "es": "Alta Seguridad Social",
+   "donde": [
+    "CATC · F1 - Constitución!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Register as an employer (state withholding, unemployment insurance and workers' comp)",
+   "propuesta_de": "GFT c0680 (FTC F1 - Constitución!B8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P12",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0682",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F1 - Constitución!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F1 - Constitución!C8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0683",
+   "es": "1 día",
+   "donde": [
+    "CATC · F1 - Constitución!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F1 - Constitución!D8)",
+   "pistas": [
+    "P01",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0684",
+   "es": "Cuota según la base mínima del tramo que te corresponda. Consulta el importe del ejercicio en curso y verifica con tu gestoría si te aplica la cuota reducida de inicio de actividad",
+   "donde": [
+    "CATC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Registration steps and unemployment insurance rates vary by state: confirm them with your state workforce agency and your accountant before your first payroll",
+   "propuesta_de": "GM c0681 (FTC F1 - Constitución!E8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0685",
+   "es": "Certificado digital",
+   "donde": [
+    "CATC · F1 - Constitución!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "City or county business license",
+   "propuesta_de": "GFT c0682 (FTC F1 - Constitución!B9)",
+   "pistas": [
+    "P01",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0686",
+   "es": "FNMT",
+   "donde": [
+    "CATC · F1 - Constitución!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "City / county",
+   "propuesta_de": "GM c0683 (FTC F1 - Constitución!C9)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0687",
+   "es": "1-3 días",
+   "donde": [
+    "CATC · F1 - Constitución!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-3 days",
+   "propuesta_de": "GM c0684 (FTC F1 - Constitución!D9)",
+   "pistas": [
+    "P01",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0688",
+   "es": "Imprescindible para los trámites telemáticos",
+   "donde": [
+    "CATC · F1 - Constitución!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Required in most cities, and some issue it online. If you trade under another name, file a DBA. The mobile vending license comes in Phase 2.",
+   "propuesta_de": "GFT c0685 (FTC F1 - Constitución!E9)",
+   "pistas": [
+    "P01",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0689",
+   "es": "Apertura cuenta bancaria",
+   "donde": [
+    "CATC · F1 - Constitución!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Open a business bank account",
+   "propuesta_de": "GFT c0686 (FTC F1 - Constitución!B10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0690",
+   "es": "Titular",
+   "donde": [
+    "CATC · F1 - Constitución!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F1 - Constitución!C10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0691",
+   "es": "1-3 días",
+   "donde": [
+    "CATC · F1 - Constitución!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-3 days",
+   "propuesta_de": "GM c0684 (FTC F1 - Constitución!D10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0692",
+   "es": "Separar finanzas",
+   "donde": [
+    "CATC · F1 - Constitución!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Keep business and personal money separate",
+   "propuesta_de": "GFT c0688 (FTC F1 - Constitución!E10)",
+   "pistas": [
+    "P01",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0693",
+   "es": "Inscripción en el Registro Sanitario de tu Comunidad Autónoma (declaración responsable de inicio de actividad alimentaria)",
+   "donde": [
+    "CATC · F1 - Constitución!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Health permit application with your county or city health department (plan review, then inspection)",
+   "propuesta_de": "GM c0689 (FTC F1 - Constitución!B11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0694",
+   "es": "Sanidad CCAA",
+   "donde": [
+    "CATC · F1 - Constitución!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Health department",
+   "propuesta_de": "GFT c0690 (FTC F1 - Constitución!C11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0695",
+   "es": "Variable",
+   "donde": [
+    "CATC · F1 - Constitución!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Variable",
+   "propuesta_de": "GM c0281 (FTC F1 - Constitución!D11)",
+   "pistas": [
+    "P01",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0696",
+   "es": "El Registro General Sanitario estatal NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca es el autonómico, el mismo que pide la fase 2 de este checklist con la autorización sanitaria del vehículo",
+   "donde": [
+    "CATC · F1 - Constitución!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "For a food truck the permit is the mobile food unit permit, which comes after plan review (see Phase 2). Ask your county or city health department what it needs before you build. UK: register your food business with the council at least 28 days before you start (free; use the council where the vehicle is kept).",
+   "propuesta_de": "GFT c0691 (FTC F1 - Constitución!E11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P09",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0697",
+   "es": "Seguro RC profesional",
+   "donde": [
+    "CATC · F1 - Constitución!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "General liability insurance",
+   "propuesta_de": "GFT c0692 (FTC F1 - Constitución!B12)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0698",
+   "es": "Aseguradora",
+   "donde": [
+    "CATC · F1 - Constitución!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Insurance agent",
+   "propuesta_de": "GM c0693 (FTC F1 - Constitución!C12)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0699",
+   "es": "1 día",
+   "donde": [
+    "CATC · F1 - Constitución!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F1 - Constitución!D12)",
+   "pistas": [
+    "P01",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0700",
+   "es": "Mínimo 300.000 €, cubre intoxicaciones",
+   "donde": [
+    "CATC · F1 - Constitución!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Events and landlords often require 1M per occurrence. Ask your insurance agent for certificates of insurance, which events will ask you to provide.",
+   "propuesta_de": "GFT c0694 (FTC F1 - Constitución!E12)",
+   "pistas": [
+    "P01",
+    "P06",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0701",
+   "es": "Seguro del vehículo (furgoneta o remolque)",
+   "donde": [
+    "CATC · F1 - Constitución!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Commercial auto insurance (truck or trailer)",
+   "propuesta_de": "GFT c0695 (FTC F1 - Constitución!B13)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0702",
+   "es": "Aseguradora",
+   "donde": [
+    "CATC · F1 - Constitución!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Insurance agent",
+   "propuesta_de": "GM c0693 (FTC F1 - Constitución!C13)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0703",
+   "es": "1 día",
+   "donde": [
+    "CATC · F1 - Constitución!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F1 - Constitución!D13)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0704",
+   "es": "A todo riesgo recomendado",
+   "donde": [
+    "CATC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Comprehensive and collision coverage recommended",
+   "propuesta_de": "GFT c0696 (FTC F1 - Constitución!E13)",
+   "pistas": [
+    "P01",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0705",
+   "es": "Registro de actividades de tratamiento de datos personales",
+   "donde": [
+    "CATC · F1 - Constitución!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Privacy notice and a record of how you collect and store customer data (loyalty program, email, SMS)",
+   "propuesta_de": "GM c0697 (FTC F1 - Constitución!B14)",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0706",
+   "es": "Titular",
+   "donde": [
+    "CATC · F1 - Constitución!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F1 - Constitución!C14)",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0707",
+   "es": "Antes de abrir",
+   "donde": [
+    "CATC · F1 - Constitución!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Before opening",
+   "propuesta_de": "GM c0698 (FTC F1 - Constitución!D14)",
+   "pistas": [
+    "P01",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0708",
+   "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes del programa de fidelización, personal y proveedores",
+   "donde": [
+    "CATC · F1 - Constitución!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Collecting emails, phone numbers or text consent for a loyalty program brings privacy duties: post a simple privacy notice, get TCPA consent before you text, and keep a record of what you collect and where it is stored. Covers loyalty members, staff and suppliers.",
+   "propuesta_de": "GFT c0699 (FTC F1 - Constitución!E14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P20",
+    "P21",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0709",
+   "es": "Adaptar el TPV móvil al sistema Veri*factu / factura electrónica",
+   "donde": [
+    "CATC · F1 - Constitución!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up your POS to collect and report sales tax by location",
+   "propuesta_de": "GFT c0700 (FTC F1 - Constitución!B15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P22",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F1 - Constitución!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F1 - Constitución!C15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Antes de abrir",
+   "donde": [
+    "CATC · F1 - Constitución!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Before opening",
+   "propuesta_de": "GM c0698 (FTC F1 - Constitución!D15)",
+   "pistas": [
+    "P01",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0712",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV móvil y el datáfono que ya presupuesta la hoja de Inversión Inicial: cambiarlo después cuesta el doble",
+   "donde": [
+    "CATC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A truck often sells in several cities or counties with different rates. Choose a POS that applies the right rate by location and exports reports for your sales tax return, before you buy the tablet and card reader budgeted on the Startup Costs tab: switching later is expensive.",
+   "propuesta_de": "GFT c0701 (FTC F1 - Constitución!E15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P22",
+    "P24",
+    "P23"
+   ]
+  },
+  {
+   "id": "c0718",
+   "es": "Selección y compra del vehículo",
+   "donde": [
+    "CATC · F2 - Vehículo!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Select and buy the truck",
+   "propuesta_de": "GFT c0707 (FTC F2 - Vehículo!B5)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0719",
+   "es": "Titular",
+   "donde": [
+    "CATC · F2 - Vehículo!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F2 - Vehículo!C5)",
+   "pistas": [
+    "P01",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0720",
+   "es": "2-6 semanas",
+   "donde": [
+    "CATC · F2 - Vehículo!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2-6 weeks",
+   "propuesta_de": "GFT c0708 (FTC F2 - Vehículo!D5)",
+   "pistas": [
+    "P01",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0721",
+   "es": "Furgoneta adaptada, remolque o trailer. Nuevo o 2a mano",
+   "donde": [
+    "CATC · F2 - Vehículo!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Step van, trailer or truck, new or used. Have a mechanic inspect any used unit, and check its GVWR: it decides whether you need a CDL (see below).",
+   "propuesta_de": "GFT c0709 (FTC F2 - Vehículo!E5)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0722",
+   "es": "Adaptación del vehículo para cocina",
+   "donde": [
+    "CATC · F2 - Vehículo!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Build out the truck for cooking",
+   "propuesta_de": "GFT c0710 (FTC F2 - Vehículo!B6)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0723",
+   "es": "Taller especializado",
+   "donde": [
+    "CATC · F2 - Vehículo!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Specialized truck builder",
+   "propuesta_de": "GFT c0711 (FTC F2 - Vehículo!C6)",
+   "pistas": [
+    "P01",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0724",
+   "es": "4-8 semanas",
+   "donde": [
+    "CATC · F2 - Vehículo!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "4-8 weeks",
+   "propuesta_de": "GFT c0712 (FTC F2 - Vehículo!D6)",
+   "pistas": [
+    "P01",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0725",
+   "es": "Ventanilla, mostrador, instalaciones",
+   "donde": [
+    "CATC · F2 - Vehículo!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Service window, counter, plumbing and electrical installations. The layout has to match the plans you submit to the health department.",
+   "propuesta_de": "GFT c0713 (FTC F2 - Vehículo!E6)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0726",
+   "es": "Certificación gas (si cocina a gas)",
+   "donde": [
+    "CATC · F2 - Vehículo!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Propane system inspection and fire marshal sign-off (if you cook with propane)",
+   "propuesta_de": "GFT c0714 (FTC F2 - Vehículo!B7)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0727",
+   "es": "Instalador autorizado",
+   "donde": [
+    "CATC · F2 - Vehículo!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Installer / fire marshal",
+   "propuesta_de": "GFT c0715 (FTC F2 - Vehículo!C7)",
+   "pistas": [
+    "P01",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0728",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F2 - Vehículo!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F2 - Vehículo!D7)",
+   "pistas": [
+    "P01",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0729",
+   "es": "Revisión anual obligatoria",
+   "donde": [
+    "CATC · F2 - Vehículo!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Many cities send the fire marshal before the health inspection (propane, extinguishers, suppression); NFPA 96 applies where adopted. Re-inspection is often annual.",
+   "propuesta_de": "GFT c0717 (FTC F2 - Vehículo!E7)",
+   "pistas": [
+    "P01",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "ITV especial (si modificación estructural)",
+   "donde": [
+    "CATC · F2 - Vehículo!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "DMV registration and title",
+   "propuesta_de": "GFT c0718 (FTC F2 - Vehículo!B8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0731",
+   "es": "ITV",
+   "donde": [
+    "CATC · F2 - Vehículo!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "DMV",
+   "propuesta_de": "GFT c0719 (FTC F2 - Vehículo!C8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0732",
+   "es": "1 día",
+   "donde": [
+    "CATC · F2 - Vehículo!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F2 - Vehículo!D8)",
+   "pistas": [
+    "P01",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0733",
+   "es": "Obligatorio si se modifica la carrocería",
+   "donde": [
+    "CATC · F2 - Vehículo!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Register the vehicle in the state where you will keep it. Bring the title or bill of sale and proof of insurance; some states require an inspection after structural modifications.",
+   "propuesta_de": "GFT c0720 (FTC F2 - Vehículo!E8)",
+   "pistas": [
+    "P01",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0734",
+   "es": "Proyecto técnico sanitario",
+   "donde": [
+    "CATC · F2 - Vehículo!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Health plan review and drawings",
+   "propuesta_de": "GFT c0161 (FTC F2 - Vehículo!B9)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0735",
+   "es": "Ingeniero",
+   "donde": [
+    "CATC · F2 - Vehículo!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Architect / engineer",
+   "propuesta_de": "GM c0721 (FTC F2 - Vehículo!C9)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0736",
+   "es": "2-3 semanas",
+   "donde": [
+    "CATC · F2 - Vehículo!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2-3 weeks",
+   "propuesta_de": "GM c0722 (FTC F2 - Vehículo!D9)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0737",
+   "es": "Planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "CATC · F2 - Vehículo!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Equipment layout, workflow and water tank drawings: most health departments review them before you build.",
+   "propuesta_de": "GFT c0723 (FTC F2 - Vehículo!E9)",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Autorización sanitaria del vehículo",
+   "donde": [
+    "CATC · F2 - Vehículo!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Mobile food unit permit and health inspection",
+   "propuesta_de": "GFT c0724 (FTC F2 - Vehículo!B10)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0739",
+   "es": "Sanidad CCAA",
+   "donde": [
+    "CATC · F2 - Vehículo!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Health department",
+   "propuesta_de": "GFT c0690 (FTC F2 - Vehículo!C10)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0740",
+   "es": "2-4 semanas",
+   "donde": [
+    "CATC · F2 - Vehículo!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2-4 weeks",
+   "propuesta_de": "GM c0725 (FTC F2 - Vehículo!D10)",
+   "pistas": [
+    "P01",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0741",
+   "es": "Inspección del vehículo ya equipado",
+   "donde": [
+    "CATC · F2 - Vehículo!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Inspection of the finished, equipped truck. UK: the council inspects and gives you a Food Hygiene Rating (0-5) in your first months in England, Wales and Northern Ireland; Scotland uses FHIS (Pass / Improvement Required).",
+   "propuesta_de": "GFT c0726 (FTC F2 - Vehículo!E10)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0742",
+   "es": "Permiso venta ambulante (municipal)",
+   "donde": [
+    "CATC · F2 - Vehículo!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "City mobile vending license (one per city)",
+   "propuesta_de": "GFT c0727 (FTC F2 - Vehículo!B11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P08",
+    "P10",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Ayuntamiento",
+   "donde": [
+    "CATC · F2 - Vehículo!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "City / county",
+   "propuesta_de": "GM c0728 (FTC F2 - Vehículo!C11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0744",
+   "es": "1-3 meses",
+   "donde": [
+    "CATC · F2 - Vehículo!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-3 months",
+   "propuesta_de": "GM c0729 (FTC F2 - Vehículo!D11)",
+   "pistas": [
+    "P01",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "CADA municipio tiene su normativa",
+   "donde": [
+    "CATC · F2 - Vehículo!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Every city has its own rules. A license is not transferable between cities and each truck needs its own. UK: street trading licence or consent from each council where you sell.",
+   "propuesta_de": "GFT c0730 (FTC F2 - Vehículo!E11)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Permiso de ocupación de la vía pública",
+   "donde": [
+    "CATC · F2 - Vehículo!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Parking and vending-zone rules; written permission for private property",
+   "propuesta_de": "GFT c0731 (FTC F2 - Vehículo!B12)",
+   "pistas": [
+    "P01",
+    "P08",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0747",
+   "es": "Ayuntamiento",
+   "donde": [
+    "CATC · F2 - Vehículo!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "City / county",
+   "propuesta_de": "GM c0728 (FTC F2 - Vehículo!C12)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0748",
+   "es": "1-2 meses",
+   "donde": [
+    "CATC · F2 - Vehículo!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2-8 weeks",
+   "propuesta_de": "GFT c0732 (FTC F2 - Vehículo!D12)",
+   "pistas": [
+    "P01",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "Si operas en espacio público fijo",
+   "donde": [
+    "CATC · F2 - Vehículo!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "If you plan a fixed spot: check the designated vending zones and time limits, or get the property owner's written permission.",
+   "propuesta_de": "GFT c0733 (FTC F2 - Vehículo!E12)",
+   "pistas": [
+    "P01",
+    "P32"
+   ]
+  },
+  {
+   "id": "c0750",
+   "es": "Inscripción en mercados/ferias",
+   "donde": [
+    "CATC · F2 - Vehículo!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Apply to markets and events (temporary food event permits)",
+   "propuesta_de": "GFT c0734 (FTC F2 - Vehículo!B13)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0751",
+   "es": "Organizadores",
+   "donde": [
+    "CATC · F2 - Vehículo!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Organizers",
+   "propuesta_de": "GFT c0735 (FTC F2 - Vehículo!C13)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0752",
+   "es": "Variable",
+   "donde": [
+    "CATC · F2 - Vehículo!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Variable",
+   "propuesta_de": "GM c0281 (FTC F2 - Vehículo!D13)",
+   "pistas": [
+    "P01",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "Muchos mercados tienen lista de espera",
+   "donde": [
+    "CATC · F2 - Vehículo!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Many markets keep waitlists, and events often require a temporary food permit for each date.",
+   "propuesta_de": "GFT c0736 (FTC F2 - Vehículo!E13)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "Carnet conducir adecuado",
+   "donde": [
+    "CATC · F2 - Vehículo!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Driver's license class (CDL at 26,001 lb GVWR or more, or for a heavy truck-and-trailer combination)",
+   "propuesta_de": "GFT c0737 (FTC F2 - Vehículo!B14)",
+   "pistas": [
+    "P01",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0755",
+   "es": "Titular",
+   "donde": [
+    "CATC · F2 - Vehículo!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F2 - Vehículo!C14)",
+   "pistas": [
+    "P01",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0756",
+   "es": "Variable",
+   "donde": [
+    "CATC · F2 - Vehículo!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Variable",
+   "propuesta_de": "GM c0281 (FTC F2 - Vehículo!D14)",
+   "pistas": [
+    "P01",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "B para <3.500kg, C para mayor",
+   "donde": [
+    "CATC · F2 - Vehículo!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Federal rule (49 CFR 383.91): a CDL is required for a single vehicle rated 26,001 lb GVWR or more, or for a combination rated 26,001 lb or more when the trailer is rated over 10,000 lb (Class A). Below that, most trucks need only a regular license; check with your state DMV, which may add its own rules.",
+   "propuesta_de": "GFT c0738 (FTC F2 - Vehículo!E14)",
+   "pistas": [
+    "P01",
+    "P35",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0758",
+   "es": "Hojas de reclamaciones oficiales y su cartel anunciador",
+   "donde": [
+    "CATC · F2 - Vehículo!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Commissary agreement signed and a copy on file",
+   "propuesta_de": "GM c0739 (FTC F2 - Vehículo!B15)",
+   "pistas": [
+    "P01",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Titular",
+   "donde": [
+    "CATC · F2 - Vehículo!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F2 - Vehículo!C15)",
+   "pistas": [
+    "P01",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0760",
+   "es": "1 día",
+   "donde": [
+    "CATC · F2 - Vehículo!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F2 - Vehículo!D15)",
+   "pistas": [
+    "P01",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0761",
+   "es": "También son obligatorias en venta ambulante: el modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+   "donde": [
+    "CATC · F2 - Vehículo!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Most health departments require a signed agreement with a licensed commissary for water, waste dumping, food storage and cleaning. Keep a copy on the truck for inspections.",
+   "propuesta_de": "GFT c0740 (FTC F2 - Vehículo!E15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P08",
+    "P10",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0762",
+   "es": "Contrato con gestor autorizado de residuos y aceite usado",
+   "donde": [
+    "CATC · F2 - Vehículo!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Contract with a licensed grease / waste hauler",
+   "propuesta_de": "GFT c0741 (FTC F2 - Vehículo!B16)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0763",
+   "es": "Titular",
+   "donde": [
+    "CATC · F2 - Vehículo!C16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F2 - Vehículo!C16)",
+   "pistas": [
+    "P01",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0764",
+   "es": "2 semanas",
+   "donde": [
+    "CATC · F2 - Vehículo!D16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2 weeks",
+   "propuesta_de": "GM c0742 (FTC F2 - Vehículo!D16)",
+   "pistas": [
+    "P01",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0765",
+   "es": "Se comprueba en la inspección sanitaria del vehículo. Este mismo checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio",
+   "donde": [
+    "CATC · F2 - Vehículo!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Often handled at the commissary: ask what it provides. Used fryer oil needs a licensed collector, and the arrangement may be checked in the truck's health inspection.",
+   "propuesta_de": "GFT c0743 (FTC F2 - Vehículo!E16)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0766",
+   "es": "Contrato de desinsectación, desratización y desinfección (DDD)",
+   "donde": [
+    "CATC · F2 - Vehículo!B17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Licensed pest control contract",
+   "propuesta_de": "GM c0744 (FTC F2 - Vehículo!B17)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Titular",
+   "donde": [
+    "CATC · F2 - Vehículo!C17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F2 - Vehículo!C17)",
+   "pistas": [
+    "P01",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0768",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F2 - Vehículo!D17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F2 - Vehículo!D17)",
+   "pistas": [
+    "P01",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0769",
+   "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC móvil que ya exige la fase 4 de este checklist",
+   "donde": [
+    "CATC · F2 - Vehículo!E17"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Usually arranged through the commissary. Keep the service reports for health inspections and for your HACCP-based food safety plan (Phase 4).",
+   "propuesta_de": "GFT c0745 (FTC F2 - Vehículo!E17)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0772",
+   "es": "Plancha industrial (gas o eléctrica)",
+   "donde": [
+    "CATC · F3 - Equipamiento!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Griddle (propane or electric)",
+   "propuesta_de": "GFT c0748 (FTC F3 - Equipamiento!B5)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0773",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C5)",
+   "pistas": [
+    "P01",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0774",
+   "es": "1-2 semanas",
+   "donde": [
+    "CATC · F3 - Equipamiento!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-2 weeks",
+   "propuesta_de": "GM c0750 (FTC F3 - Equipamiento!D5)",
+   "pistas": [
+    "P01",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0775",
+   "es": "Adaptar al concepto: burgers, crepes, plancha...",
+   "donde": [
+    "CATC · F3 - Equipamiento!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Match it to your concept: burgers, crepes, tacos",
+   "propuesta_de": "GFT c0751 (FTC F3 - Equipamiento!E5)",
+   "pistas": [
+    "P01",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0776",
+   "es": "Freidora (si aplica)",
+   "donde": [
+    "CATC · F3 - Equipamiento!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Fryer (if you need one)",
+   "propuesta_de": "GFT c0752 (FTC F3 - Equipamiento!B6)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0777",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C6)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D6)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0779",
+   "es": "Con filtro y gestión aceite usado",
+   "donde": [
+    "CATC · F3 - Equipamiento!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "With a filter and a plan for used oil",
+   "propuesta_de": "GFT c0753 (FTC F3 - Equipamiento!E6)",
+   "pistas": [
+    "P01",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0780",
+   "es": "Campana extractora con filtros",
+   "donde": [
+    "CATC · F3 - Equipamiento!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Exhaust hood with filters",
+   "propuesta_de": "GFT c0754 (FTC F3 - Equipamiento!B7)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0781",
+   "es": "Instalador",
+   "donde": [
+    "CATC · F3 - Equipamiento!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Installer",
+   "propuesta_de": "GM c0755 (FTC F3 - Equipamiento!C7)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "1-2 semanas",
+   "donde": [
+    "CATC · F3 - Equipamiento!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-2 weeks",
+   "propuesta_de": "GM c0750 (FTC F3 - Equipamiento!D7)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0783",
+   "es": "Obligatoria en espacio cerrado",
+   "donde": [
+    "CATC · F3 - Equipamiento!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Needed over cooking equipment that produces grease-laden vapor. Check your local fire code (NFPA 96 where adopted).",
+   "propuesta_de": "GFT c0756 (FTC F3 - Equipamiento!E7)",
+   "pistas": [
+    "P01",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0784",
+   "es": "Nevera/congelador compacto",
+   "donde": [
+    "CATC · F3 - Equipamiento!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Compact refrigerator / freezer",
+   "propuesta_de": "GFT c0757 (FTC F3 - Equipamiento!B8)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C8)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0786",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D8)",
+   "pistas": [
+    "P01",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0787",
+   "es": "12V o 220V según generador",
+   "donde": [
+    "CATC · F3 - Equipamiento!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "12V or 120V depending on the generator",
+   "propuesta_de": "GFT c0758 (FTC F3 - Equipamiento!E8)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "Generador eléctrico insonorizado",
+   "donde": [
+    "CATC · F3 - Equipamiento!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Quiet generator",
+   "propuesta_de": "GFT c0759 (FTC F3 - Equipamiento!B9)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C9)",
+   "pistas": [
+    "P01",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0790",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D9)",
+   "pistas": [
+    "P01",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "5-7 kW mínimo, insonorizado (<70dB)",
+   "donde": [
+    "CATC · F3 - Equipamiento!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "5-7 kW minimum, quiet (below 70 dB)",
+   "propuesta_de": "GFT c0760 (FTC F3 - Equipamiento!E9)",
+   "pistas": [
+    "P01",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Depósito de agua limpia y de aguas residuales",
+   "donde": [
+    "CATC · F3 - Equipamiento!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Fresh water and gray water tanks",
+   "propuesta_de": "GFT c0761 (FTC F3 - Equipamiento!B10)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Instalador",
+   "donde": [
+    "CATC · F3 - Equipamiento!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Installer",
+   "propuesta_de": "GM c0755 (FTC F3 - Equipamiento!C10)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D10)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Mínimo 40 L de agua limpia y 60 L de residual",
+   "donde": [
+    "CATC · F3 - Equipamiento!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Tank sizes are set by your county: check your county's minimum fresh and gray water tank sizes (in gallons) with the health department before you build. Gray water usually has to exceed fresh water.",
+   "propuesta_de": "GFT c0762 (FTC F3 - Equipamiento!E10)",
+   "pistas": [
+    "P01",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Fregadero doble seno",
+   "donde": [
+    "CATC · F3 - Equipamiento!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Dish sink (two or three compartments) and handwashing sink",
+   "propuesta_de": "GFT c0763 (FTC F3 - Equipamiento!B11)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Instalador",
+   "donde": [
+    "CATC · F3 - Equipamiento!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Installer",
+   "propuesta_de": "GM c0755 (FTC F3 - Equipamiento!C11)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0798",
+   "es": "Con adaptación",
+   "donde": [
+    "CATC · F3 - Equipamiento!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "With the build-out",
+   "propuesta_de": "GFT c0764 (FTC F3 - Equipamiento!D11)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0799",
+   "es": "Obligatorio por normativa sanitaria",
+   "donde": [
+    "CATC · F3 - Equipamiento!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Required by the health code. Confirm how many compartments your county wants.",
+   "propuesta_de": "GFT c0765 (FTC F3 - Equipamiento!E11)",
+   "pistas": [
+    "P01",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0800",
+   "es": "TPV móvil y datáfono 4G",
+   "donde": [
+    "CATC · F3 - Equipamiento!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Mobile POS and 4G card reader",
+   "propuesta_de": "GFT c0766 (FTC F3 - Equipamiento!B12)",
+   "pistas": [
+    "P01",
+    "P22",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0801",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C12)",
+   "pistas": [
+    "P01",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D12)",
+   "pistas": [
+    "P01",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0803",
+   "es": "Tablet y datáfono con cobertura 4G",
+   "donde": [
+    "CATC · F3 - Equipamiento!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Tablet and card reader with a 4G connection",
+   "propuesta_de": "GFT c0767 (FTC F3 - Equipamiento!E12)",
+   "pistas": [
+    "P01",
+    "P22",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0804",
+   "es": "Menaje y utensilios cocina",
+   "donde": [
+    "CATC · F3 - Equipamiento!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Smallwares and kitchen utensils",
+   "propuesta_de": "GFT c0768 (FTC F3 - Equipamiento!B13)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C13)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D13)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0807",
+   "es": "Adaptado al espacio reducido",
+   "donde": [
+    "CATC · F3 - Equipamiento!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Sized for a very small space",
+   "propuesta_de": "GFT c0769 (FTC F3 - Equipamiento!E13)",
+   "pistas": [
+    "P01",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0808",
+   "es": "Packaging biodegradable",
+   "donde": [
+    "CATC · F3 - Equipamiento!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Compostable packaging",
+   "propuesta_de": "GFT c0770 (FTC F3 - Equipamiento!B14)",
+   "pistas": [
+    "P01",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0809",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C14)",
+   "pistas": [
+    "P01",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D14)",
+   "pistas": [
+    "P01",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Obligatorio en muchos municipios desde 2023",
+   "donde": [
+    "CATC · F3 - Equipamiento!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Some cities require compostable or recyclable packaging and restrict foam: check yours.",
+   "propuesta_de": "GFT c0771 (FTC F3 - Equipamiento!E14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0812",
+   "es": "Rotulación integral del vehículo",
+   "donde": [
+    "CATC · F3 - Equipamiento!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Full truck wrap",
+   "propuesta_de": "GFT c0772 (FTC F3 - Equipamiento!B15)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0813",
+   "es": "Rotulista",
+   "donde": [
+    "CATC · F3 - Equipamiento!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Sign maker",
+   "propuesta_de": "GM c0773 (FTC F3 - Equipamiento!C15)",
+   "pistas": [
+    "P01",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0814",
+   "es": "1-2 semanas",
+   "donde": [
+    "CATC · F3 - Equipamiento!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-2 weeks",
+   "propuesta_de": "GM c0750 (FTC F3 - Equipamiento!D15)",
+   "pistas": [
+    "P01",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0815",
+   "es": "Primera impresión, marca visible a distancia",
+   "donde": [
+    "CATC · F3 - Equipamiento!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "First impression: your brand must be visible from a distance",
+   "propuesta_de": "GFT c0774 (FTC F3 - Equipamiento!E15)",
+   "pistas": [
+    "P01",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0816",
+   "es": "Toldo, mesas plegables, banderolas",
+   "donde": [
+    "CATC · F3 - Equipamiento!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Awning, folding tables and banners",
+   "propuesta_de": "GFT c0775 (FTC F3 - Equipamiento!B16)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0817",
+   "es": "Proveedor",
+   "donde": [
+    "CATC · F3 - Equipamiento!C16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Supplier",
+   "propuesta_de": "GM c0749 (FTC F3 - Equipamiento!C16)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0818",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F3 - Equipamiento!D16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F3 - Equipamiento!D16)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0819",
+   "es": "Kit de montaje rápido para cada servicio",
+   "donde": [
+    "CATC · F3 - Equipamiento!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A quick-setup kit for every service",
+   "propuesta_de": "GFT c0776 (FTC F3 - Equipamiento!E16)",
+   "pistas": [
+    "P01",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0822",
+   "es": "Definir equipo mínimo (2-3 personas)",
+   "donde": [
+    "CATC · F4 - Personal!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Define the minimum crew (2-3 people)",
+   "propuesta_de": "GFT c0779 (FTC F4 - Personal!B5)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "Titular",
+   "donde": [
+    "CATC · F4 - Personal!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F4 - Personal!C5)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0824",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F4 - Personal!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F4 - Personal!D5)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0825",
+   "es": "Propietario + 1 ayudante mínimo",
+   "donde": [
+    "CATC · F4 - Personal!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner plus at least one helper",
+   "propuesta_de": "GFT c0780 (FTC F4 - Personal!E5)",
+   "pistas": [
+    "P01",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0826",
+   "es": "Contratación ayudante (si aplica)",
+   "donde": [
+    "CATC · F4 - Personal!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Hire a helper (if applicable)",
+   "propuesta_de": "GFT c0781 (FTC F4 - Personal!B6)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0827",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F4 - Personal!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F4 - Personal!C6)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0828",
+   "es": "1-2 semanas",
+   "donde": [
+    "CATC · F4 - Personal!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-2 weeks",
+   "propuesta_de": "GM c0750 (FTC F4 - Personal!D6)",
+   "pistas": [
+    "P01",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Contrato temporal o fijo-discontinuo para eventos",
+   "donde": [
+    "CATC · F4 - Personal!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "W-2 employee or 1099 contractor? Misclassifying is risky: ask your accountant. New hires need an I-9 and W-4, and your state may require new-hire reporting.",
+   "propuesta_de": "GFT c0782 (FTC F4 - Personal!E6)",
+   "pistas": [
+    "P01",
+    "P53",
+    "P52"
+   ]
+  },
+  {
+   "id": "c0830",
+   "es": "Formación en higiene alimentaria de todo el equipo",
+   "donde": [
+    "CATC · F4 - Personal!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Food safety training for the whole team (food handler cards; certified food protection manager for the person in charge)",
+   "propuesta_de": "GM c0783 (FTC F4 - Personal!B7)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0831",
+   "es": "Titular",
+   "donde": [
+    "CATC · F4 - Personal!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F4 - Personal!C7)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "1 día",
+   "donde": [
+    "CATC · F4 - Personal!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F4 - Personal!D7)",
+   "pistas": [
+    "P01",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "El «carnet de manipulador» está derogado (RD 109/2010): la formación la acredita la EMPRESA y se documenta en el plan APPCC móvil",
+   "donde": [
+    "CATC · F4 - Personal!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Requirements vary by state: many require food handler cards for staff, and the person in charge usually needs a Certified Food Protection Manager certificate (for example ServSafe). Keep copies of the certificates on the truck.",
+   "propuesta_de": "GFT c0784 (FTC F4 - Personal!E7)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P55",
+    "P56",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0834",
+   "es": "Formación en APPCC móvil",
+   "donde": [
+    "CATC · F4 - Personal!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Train the team on your HACCP-based food safety plan",
+   "propuesta_de": "GFT c0785 (FTC F4 - Personal!B8)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0835",
+   "es": "Titular",
+   "donde": [
+    "CATC · F4 - Personal!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F4 - Personal!C8)",
+   "pistas": [
+    "P01",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "1 día",
+   "donde": [
+    "CATC · F4 - Personal!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F4 - Personal!D8)",
+   "pistas": [
+    "P01",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Temperaturas, cadena de frío en el vehículo y trazabilidad",
+   "donde": [
+    "CATC · F4 - Personal!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Temperatures, the cold chain on the truck and traceability",
+   "propuesta_de": "GFT c0786 (FTC F4 - Personal!E8)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P57"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "Formación operativa food truck",
+   "donde": [
+    "CATC · F4 - Personal!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Food truck operations training",
+   "propuesta_de": "GFT c0787 (FTC F4 - Personal!B9)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0839",
+   "es": "Titular",
+   "donde": [
+    "CATC · F4 - Personal!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F4 - Personal!C9)",
+   "pistas": [
+    "P01",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0840",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F4 - Personal!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F4 - Personal!D9)",
+   "pistas": [
+    "P01",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0841",
+   "es": "Montaje, servicio rápido, desmontaje y limpieza",
+   "donde": [
+    "CATC · F4 - Personal!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Setup, fast service, breakdown and cleaning",
+   "propuesta_de": "GFT c0788 (FTC F4 - Personal!E9)",
+   "pistas": [
+    "P01",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0842",
+   "es": "Plan PRL (prevención riesgos)",
+   "donde": [
+    "CATC · F4 - Personal!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "OSHA basics and workplace safety plan",
+   "propuesta_de": "GFT c0789 (FTC F4 - Personal!B10)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0843",
+   "es": "Titular o servicio ajeno",
+   "donde": [
+    "CATC · F4 - Personal!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner or outside consultant",
+   "propuesta_de": "GM c0790 (FTC F4 - Personal!C10)",
+   "pistas": [
+    "P01",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0844",
+   "es": "1-2 semanas",
+   "donde": [
+    "CATC · F4 - Personal!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-2 weeks",
+   "propuesta_de": "GM c0750 (FTC F4 - Personal!D10)",
+   "pistas": [
+    "P01",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0845",
+   "es": "Riesgos específicos: gas, aceite, espacio reducido",
+   "donde": [
+    "CATC · F4 - Personal!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Specific hazards: propane, hot oil, tight space",
+   "propuesta_de": "GFT c0791 (FTC F4 - Personal!E10)",
+   "pistas": [
+    "P01",
+    "P11",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Protocolo alérgenos",
+   "donde": [
+    "CATC · F4 - Personal!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Allergen protocol",
+   "propuesta_de": "GFT c0792 (FTC F4 - Personal!B11)",
+   "pistas": [
+    "P01",
+    "P56",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0847",
+   "es": "Titular",
+   "donde": [
+    "CATC · F4 - Personal!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F4 - Personal!C11)",
+   "pistas": [
+    "P01",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0848",
+   "es": "1 día",
+   "donde": [
+    "CATC · F4 - Personal!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F4 - Personal!D11)",
+   "pistas": [
+    "P01",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0849",
+   "es": "14 alérgenos, cartel visible en food truck",
+   "donde": [
+    "CATC · F4 - Personal!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Know the 9 major US allergens (sesame since 2023; UK: 14) and post a visible allergen notice at the service window",
+   "propuesta_de": "GFT c0793 (FTC F4 - Personal!E11)",
+   "pistas": [
+    "P01",
+    "P56",
+    "P09",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0850",
+   "es": "Ensayo montaje/desmontaje completo",
+   "donde": [
+    "CATC · F4 - Personal!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Full setup and breakdown rehearsal",
+   "propuesta_de": "GFT c0794 (FTC F4 - Personal!B12)",
+   "pistas": [
+    "P01",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0851",
+   "es": "Equipo",
+   "donde": [
+    "CATC · F4 - Personal!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Team",
+   "propuesta_de": "GFT c0795 (FTC F4 - Personal!C12)",
+   "pistas": [
+    "P01",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "1 día",
+   "donde": [
+    "CATC · F4 - Personal!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F4 - Personal!D12)",
+   "pistas": [
+    "P01",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "Cronometrar: objetivo <30 min montaje",
+   "donde": [
+    "CATC · F4 - Personal!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Time it: aim for under 30 minutes to set up",
+   "propuesta_de": "GFT c0796 (FTC F4 - Personal!E12)",
+   "pistas": [
+    "P01",
+    "P61"
+   ]
+  },
+  {
+   "id": "c0854",
+   "es": "Registro horario diario de la jornada de todo el equipo",
+   "donde": [
+    "CATC · F4 - Personal!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Time and payroll records for all employees (FLSA)",
+   "propuesta_de": "GM c0797 (FTC F4 - Personal!B13)",
+   "pistas": [
+    "P01",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0855",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F4 - Personal!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F4 - Personal!C13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0856",
+   "es": "Desde el primer contrato",
+   "donde": [
+    "CATC · F4 - Personal!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "From the first hire",
+   "propuesta_de": "GM c0798 (FTC F4 - Personal!D13)",
+   "pistas": [
+    "P01",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0857",
+   "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años. Aplica desde el primer contrato del ayudante, aunque sea a tiempo parcial",
+   "donde": [
+    "CATC · F4 - Personal!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "The FLSA requires accurate records of hours worked and pay. They apply from the first hire, even part time; check your state's retention rules.",
+   "propuesta_de": "GFT c0799 (FTC F4 - Personal!E13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P12",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0858",
+   "es": "Informar al equipo del registro horario y del tratamiento de sus datos",
+   "donde": [
+    "CATC · F4 - Personal!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Tell the team how their time records and personal data are handled",
+   "propuesta_de": "GM c0800 (FTC F4 - Personal!B14)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0859",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F4 - Personal!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F4 - Personal!C14)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0860",
+   "es": "Desde el primer contrato",
+   "donde": [
+    "CATC · F4 - Personal!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "From the first hire",
+   "propuesta_de": "GM c0798 (FTC F4 - Personal!D14)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0861",
+   "es": "La cláusula informativa se entrega con el contrato; el fichaje es un tratamiento de datos, no sólo una obligación laboral",
+   "donde": [
+    "CATC · F4 - Personal!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "There is no single federal rule, but some states protect employee data: if your time clock scans fingerprints or faces, Illinois (BIPA) and a few other states require written notice and consent first. Keep payroll records secure",
+   "propuesta_de": "GM c0801 (FTC F4 - Personal!E14)",
+   "pistas": [
+    "P01",
+    "P63"
+   ]
+  },
+  {
+   "id": "c0864",
+   "es": "Crear identidad visual y marca",
+   "donde": [
+    "CATC · F5 - Marketing!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Create your visual identity and brand",
+   "propuesta_de": "GFT c0804 (FTC F5 - Marketing!B5)",
+   "pistas": [
+    "P01",
+    "P64",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0865",
+   "es": "Diseñador",
+   "donde": [
+    "CATC · F5 - Marketing!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Designer",
+   "propuesta_de": "GM c0805 (FTC F5 - Marketing!C5)",
+   "pistas": [
+    "P01",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0866",
+   "es": "2-3 semanas",
+   "donde": [
+    "CATC · F5 - Marketing!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2-3 weeks",
+   "propuesta_de": "GM c0722 (FTC F5 - Marketing!D5)",
+   "pistas": [
+    "P01",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0867",
+   "es": "Logo, colores, rotulación, packaging branded",
+   "donde": [
+    "CATC · F5 - Marketing!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Logo, colors, truck wrap, branded packaging",
+   "propuesta_de": "GFT c0806 (FTC F5 - Marketing!E5)",
+   "pistas": [
+    "P01",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0868",
+   "es": "Ficha Google My Business",
+   "donde": [
+    "CATC · F5 - Marketing!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Set up your Google Business Profile",
+   "propuesta_de": "GFT c0807 (FTC F5 - Marketing!B6)",
+   "pistas": [
+    "P01",
+    "P66",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0869",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C6)",
+   "pistas": [
+    "P01",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "1 día",
+   "donde": [
+    "CATC · F5 - Marketing!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F5 - Marketing!D6)",
+   "pistas": [
+    "P01",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0871",
+   "es": "Categoría: Food truck. Fotos, ubicaciones",
+   "donde": [
+    "CATC · F5 - Marketing!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Category: Food truck. Photos and locations",
+   "propuesta_de": "GFT c0808 (FTC F5 - Marketing!E6)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0872",
+   "es": "Perfiles RRSS (Instagram + TikTok)",
+   "donde": [
+    "CATC · F5 - Marketing!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Social media profiles (Instagram + TikTok)",
+   "propuesta_de": "GFT c0809 (FTC F5 - Marketing!B7)",
+   "pistas": [
+    "P01",
+    "P66",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0873",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C7)",
+   "pistas": [
+    "P01",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0874",
+   "es": "1 día",
+   "donde": [
+    "CATC · F5 - Marketing!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F5 - Marketing!D7)",
+   "pistas": [
+    "P01",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0875",
+   "es": "Video del truck + comida = viral potencial",
+   "donde": [
+    "CATC · F5 - Marketing!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A video of the truck and the food has viral potential",
+   "propuesta_de": "GFT c0810 (FTC F5 - Marketing!E7)",
+   "pistas": [
+    "P01",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0876",
+   "es": "Página web con el calendario de ubicaciones",
+   "donde": [
+    "CATC · F5 - Marketing!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Website with your location calendar",
+   "propuesta_de": "GFT c0811 (FTC F5 - Marketing!B8)",
+   "pistas": [
+    "P01",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0877",
+   "es": "Dev",
+   "donde": [
+    "CATC · F5 - Marketing!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Developer",
+   "propuesta_de": "GFT c0812 (FTC F5 - Marketing!C8)",
+   "pistas": [
+    "P01",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0878",
+   "es": "1-2 semanas",
+   "donde": [
+    "CATC · F5 - Marketing!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1-2 weeks",
+   "propuesta_de": "GM c0750 (FTC F5 - Marketing!D8)",
+   "pistas": [
+    "P01",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0879",
+   "es": "Dónde estarás cada día de la semana",
+   "donde": [
+    "CATC · F5 - Marketing!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Where you will be each day of the week",
+   "propuesta_de": "GFT c0813 (FTC F5 - Marketing!E8)",
+   "pistas": [
+    "P01",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0880",
+   "es": "Sesión fotos/video profesional",
+   "donde": [
+    "CATC · F5 - Marketing!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Professional photo and video shoot",
+   "propuesta_de": "GFT c0814 (FTC F5 - Marketing!B9)",
+   "pistas": [
+    "P01",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0881",
+   "es": "Fotógrafo",
+   "donde": [
+    "CATC · F5 - Marketing!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Photographer",
+   "propuesta_de": "GM c0815 (FTC F5 - Marketing!C9)",
+   "pistas": [
+    "P01",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0882",
+   "es": "1 día",
+   "donde": [
+    "CATC · F5 - Marketing!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F5 - Marketing!D9)",
+   "pistas": [
+    "P01",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0883",
+   "es": "Comida en acción, truck rotulado, servicio",
+   "donde": [
+    "CATC · F5 - Marketing!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Food in action, the wrapped truck, service",
+   "propuesta_de": "GFT c0816 (FTC F5 - Marketing!E9)",
+   "pistas": [
+    "P01",
+    "P70"
+   ]
+  },
+  {
+   "id": "c0884",
+   "es": "Acuerdos con mercados y eventos",
+   "donde": [
+    "CATC · F5 - Marketing!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Agreements with markets and events",
+   "propuesta_de": "GFT c0817 (FTC F5 - Marketing!B10)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P53",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0885",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C10)",
+   "pistas": [
+    "P01",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0886",
+   "es": "2-4 semanas",
+   "donde": [
+    "CATC · F5 - Marketing!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2-4 weeks",
+   "propuesta_de": "GM c0725 (FTC F5 - Marketing!D10)",
+   "pistas": [
+    "P01",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0887",
+   "es": "Mercados fijos semanales = ingresos recurrentes",
+   "donde": [
+    "CATC · F5 - Marketing!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weekly markets mean recurring income",
+   "propuesta_de": "GFT c0818 (FTC F5 - Marketing!E10)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0888",
+   "es": "Registro en apps de food trucks",
+   "donde": [
+    "CATC · F5 - Marketing!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Sign up on food truck apps",
+   "propuesta_de": "GFT c0819 (FTC F5 - Marketing!B11)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0889",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C11)",
+   "pistas": [
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0890",
+   "es": "1 día",
+   "donde": [
+    "CATC · F5 - Marketing!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F5 - Marketing!D11)",
+   "pistas": [
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0891",
+   "es": "Roaming Hunger, apps locales de street food",
+   "donde": [
+    "CATC · F5 - Marketing!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Roaming Hunger, StreetFoodFinder and local street food apps",
+   "propuesta_de": "GFT c0820 (FTC F5 - Marketing!E11)",
+   "pistas": [
+    "P01",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0892",
+   "es": "Acuerdos con empresas/oficinas",
+   "donde": [
+    "CATC · F5 - Marketing!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Agreements with offices and companies",
+   "propuesta_de": "GFT c0821 (FTC F5 - Marketing!B12)",
+   "pistas": [
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0893",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C12)",
+   "pistas": [
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0894",
+   "es": "2 semanas",
+   "donde": [
+    "CATC · F5 - Marketing!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "2 weeks",
+   "propuesta_de": "GM c0742 (FTC F5 - Marketing!D12)",
+   "pistas": [
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0895",
+   "es": "Lunch corporativo: recurrencia garantizada",
+   "donde": [
+    "CATC · F5 - Marketing!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Corporate lunches bring recurring orders",
+   "propuesta_de": "GFT c0822 (FTC F5 - Marketing!E12)",
+   "pistas": [
+    "P01",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0896",
+   "es": "Evento de inauguración",
+   "donde": [
+    "CATC · F5 - Marketing!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Grand opening event",
+   "propuesta_de": "GM c0823 (FTC F5 - Marketing!B13)",
+   "pistas": [
+    "P01",
+    "P53",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0897",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C13)",
+   "pistas": [
+    "P01",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0898",
+   "es": "1 día",
+   "donde": [
+    "CATC · F5 - Marketing!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 day",
+   "propuesta_de": "GM c0678 (FTC F5 - Marketing!D13)",
+   "pistas": [
+    "P01",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0899",
+   "es": "Primer servicio con promo: 2x1, redes, influencers",
+   "donde": [
+    "CATC · F5 - Marketing!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "First service with a promo: buy one get one, social media, local influencers",
+   "propuesta_de": "GFT c0824 (FTC F5 - Marketing!E13)",
+   "pistas": [
+    "P01",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0900",
+   "es": "Programa de fidelización móvil",
+   "donde": [
+    "CATC · F5 - Marketing!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Mobile loyalty program",
+   "propuesta_de": "GFT c0825 (FTC F5 - Marketing!B14)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0901",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C14)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0902",
+   "es": "1 semana",
+   "donde": [
+    "CATC · F5 - Marketing!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "1 week",
+   "propuesta_de": "GM c0716 (FTC F5 - Marketing!D14)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0903",
+   "es": "Tarjeta digital o QR: el décimo menú, gratis",
+   "donde": [
+    "CATC · F5 - Marketing!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Digital card or QR code: the tenth meal is free",
+   "propuesta_de": "GFT c0826 (FTC F5 - Marketing!E14)",
+   "pistas": [
+    "P01",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0904",
+   "es": "Licencia de derechos de autor por música ambiental en ferias y festivales (SGAE/AGEDI-AIE)",
+   "donde": [
+    "CATC · F5 - Marketing!B15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Music licenses (ASCAP / BMI / SESAC) if you play music at events and festivals",
+   "propuesta_de": "GFT c0827 (FTC F5 - Marketing!B15)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P76",
+    "P10",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0905",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C15)",
+   "pistas": [
+    "P01",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0906",
+   "es": "Antes de poner música propia",
+   "donde": [
+    "CATC · F5 - Marketing!D15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Before you play music",
+   "propuesta_de": "GFT c0828 (FTC F5 - Marketing!D15)",
+   "pistas": [
+    "P01",
+    "P76",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0907",
+   "es": "Distinta de la licencia del organizador del festival, que cubre el recinto, no cada puesto individual",
+   "donde": [
+    "CATC · F5 - Marketing!E15"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask the organizer: a festival's license may cover the venue but not each vendor's own speaker.",
+   "propuesta_de": "GFT c0829 (FTC F5 - Marketing!E15)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0908",
+   "es": "Cláusula informativa y consentimiento en el programa de fidelización con QR",
+   "donde": [
+    "CATC · F5 - Marketing!B16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Privacy notice and consent for the QR loyalty program (TCPA consent for SMS)",
+   "propuesta_de": "GFT c0830 (FTC F5 - Marketing!B16)",
+   "pistas": [
+    "P01",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0909",
+   "es": "Titular",
+   "donde": [
+    "CATC · F5 - Marketing!C16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F5 - Marketing!C16)",
+   "pistas": [
+    "P01",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0910",
+   "es": "Antes de abrir",
+   "donde": [
+    "CATC · F5 - Marketing!D16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Before opening",
+   "propuesta_de": "GM c0698 (FTC F5 - Marketing!D16)",
+   "pistas": [
+    "P01",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0911",
+   "es": "El propio checklist promete un programa de fidelización móvil con QR que recoge datos de contacto: necesita su información previa",
+   "donde": [
+    "CATC · F5 - Marketing!E16"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "A QR loyalty program collects contact details: post a privacy notice up front, and get consent before you send marketing texts (TCPA).",
+   "propuesta_de": "GFT c0831 (FTC F5 - Marketing!E16)",
+   "pistas": [
+    "P01",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0914",
+   "es": "Testear ubicaciones (mínimo 5)",
+   "donde": [
+    "CATC · F6 - 90 Días!B5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Test locations (at least 5)",
+   "propuesta_de": "GFT c0834 (FTC F6 - 90 Días!B5)",
+   "pistas": [
+    "P01",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0915",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C5)",
+   "pistas": [
+    "P01",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0916",
+   "es": "Mes 1",
+   "donde": [
+    "CATC · F6 - 90 Días!D5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 1",
+   "propuesta_de": "GM c0835 (FTC F6 - 90 Días!D5)",
+   "pistas": [
+    "P01",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0917",
+   "es": "Evaluar facturación por ubicación y día",
+   "donde": [
+    "CATC · F6 - 90 Días!E5"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Measure sales by location and day of the week",
+   "propuesta_de": "GFT c0836 (FTC F6 - 90 Días!E5)",
+   "pistas": [
+    "P01",
+    "P79"
+   ]
+  },
+  {
+   "id": "c0918",
+   "es": "Registro diario ventas por ubicación",
+   "donde": [
+    "CATC · F6 - 90 Días!B6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Daily sales log by location",
+   "propuesta_de": "GFT c0837 (FTC F6 - 90 Días!B6)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0919",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C6)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0920",
+   "es": "Diario",
+   "donde": [
+    "CATC · F6 - 90 Días!D6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Daily",
+   "propuesta_de": "GM c0838 (FTC F6 - 90 Días!D6)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0921",
+   "es": "Saber qué ubicaciones funcionan y cuáles no",
+   "donde": [
+    "CATC · F6 - 90 Días!E6"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Learn which locations work and which do not",
+   "propuesta_de": "GFT c0839 (FTC F6 - 90 Días!E6)",
+   "pistas": [
+    "P01",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0922",
+   "es": "Control food cost semanal",
+   "donde": [
+    "CATC · F6 - 90 Días!B7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weekly food cost check",
+   "propuesta_de": "GM c0840 (FTC F6 - 90 Días!B7)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0923",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C7)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0924",
+   "es": "Semanal",
+   "donde": [
+    "CATC · F6 - 90 Días!D7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weekly",
+   "propuesta_de": "GM c0841 (FTC F6 - 90 Días!D7)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0925",
+   "es": "Pesar el género, controlar mermas y ajustar pedidos",
+   "donde": [
+    "CATC · F6 - 90 Días!E7"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Weigh ingredients, track waste and adjust your orders",
+   "propuesta_de": "GFT c0842 (FTC F6 - 90 Días!E7)",
+   "pistas": [
+    "P01",
+    "P81"
+   ]
+  },
+  {
+   "id": "c0926",
+   "es": "Ajustar carta según ventas",
+   "donde": [
+    "CATC · F6 - 90 Días!B8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Adjust the menu based on sales",
+   "propuesta_de": "GFT c0843 (FTC F6 - 90 Días!B8)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0927",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C8)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0928",
+   "es": "Mes 1",
+   "donde": [
+    "CATC · F6 - 90 Días!D8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 1",
+   "propuesta_de": "GM c0835 (FTC F6 - 90 Días!D8)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0929",
+   "es": "Eliminar platos lentos, potenciar bestsellers",
+   "donde": [
+    "CATC · F6 - 90 Días!E8"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Drop slow items, push bestsellers",
+   "propuesta_de": "GFT c0844 (FTC F6 - 90 Días!E8)",
+   "pistas": [
+    "P01",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0930",
+   "es": "Optimizar ruta semanal",
+   "donde": [
+    "CATC · F6 - 90 Días!B9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Optimize your weekly route",
+   "propuesta_de": "GFT c0845 (FTC F6 - 90 Días!B9)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0931",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C9)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0932",
+   "es": "Mes 1-2",
+   "donde": [
+    "CATC · F6 - 90 Días!D9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 1-2",
+   "propuesta_de": "GM c0846 (FTC F6 - 90 Días!D9)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0933",
+   "es": "Fijar los mejores días/ubicaciones como ruta fija",
+   "donde": [
+    "CATC · F6 - 90 Días!E9"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Lock in your best days and locations as a fixed route",
+   "propuesta_de": "GFT c0847 (FTC F6 - 90 Días!E9)",
+   "pistas": [
+    "P01",
+    "P83"
+   ]
+  },
+  {
+   "id": "c0934",
+   "es": "Encuestas a clientes y reseñas de Google",
+   "donde": [
+    "CATC · F6 - 90 Días!B10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Customer surveys and Google / Yelp reviews",
+   "propuesta_de": "GFT c0848 (FTC F6 - 90 Días!B10)",
+   "pistas": [
+    "P01",
+    "P20",
+    "P21",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0935",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C10)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0936",
+   "es": "Mes 1-3",
+   "donde": [
+    "CATC · F6 - 90 Días!D10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 1-3",
+   "propuesta_de": "GM c0849 (FTC F6 - 90 Días!D10)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0937",
+   "es": "Pedir reseñas, responder todas",
+   "donde": [
+    "CATC · F6 - 90 Días!E10"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Ask for reviews and answer every one",
+   "propuesta_de": "GFT c0850 (FTC F6 - 90 Días!E10)",
+   "pistas": [
+    "P01",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0938",
+   "es": "Evaluar eventos y festivales",
+   "donde": [
+    "CATC · F6 - 90 Días!B11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Evaluate events and festivals",
+   "propuesta_de": "GFT c0851 (FTC F6 - 90 Días!B11)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P53",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0939",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C11)",
+   "pistas": [
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0940",
+   "es": "Mes 2",
+   "donde": [
+    "CATC · F6 - 90 Días!D11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 2",
+   "propuesta_de": "GM c0852 (FTC F6 - 90 Días!D11)",
+   "pistas": [
+    "P01",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0941",
+   "es": "Festivales = facturación x3-5 en un día",
+   "donde": [
+    "CATC · F6 - 90 Días!E11"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Festivals can multiply a normal day's sales: track them separately",
+   "propuesta_de": "GFT c0853 (FTC F6 - 90 Días!E11)",
+   "pistas": [
+    "P01",
+    "P10",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0942",
+   "es": "Renegociar proveedores",
+   "donde": [
+    "CATC · F6 - 90 Días!B12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Renegotiate with suppliers",
+   "propuesta_de": "GFT c0854 (FTC F6 - 90 Días!B12)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0943",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C12)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0944",
+   "es": "Mes 2",
+   "donde": [
+    "CATC · F6 - 90 Días!D12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 2",
+   "propuesta_de": "GM c0852 (FTC F6 - 90 Días!D12)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0945",
+   "es": "Con volumen real, pedir mejores precios",
+   "donde": [
+    "CATC · F6 - 90 Días!E12"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "With real volume, ask for better prices",
+   "propuesta_de": "GFT c0855 (FTC F6 - 90 Días!E12)",
+   "pistas": [
+    "P01",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0946",
+   "es": "Primer cierre trimestral",
+   "donde": [
+    "CATC · F6 - 90 Días!B13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "First quarter close and first sales tax return",
+   "propuesta_de": "GFT c0856 (FTC F6 - 90 Días!B13)",
+   "pistas": [
+    "P01",
+    "P87",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0947",
+   "es": "Gestor",
+   "donde": [
+    "CATC · F6 - 90 Días!C13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Accountant",
+   "propuesta_de": "GM c0670 (FTC F6 - 90 Días!C13)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P04",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0948",
+   "es": "Mes 3",
+   "donde": [
+    "CATC · F6 - 90 Días!D13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 3",
+   "propuesta_de": "GM c0857 (FTC F6 - 90 Días!D13)",
+   "pistas": [
+    "P01",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0949",
+   "es": "Comparar P&L real vs plan financiero",
+   "donde": [
+    "CATC · F6 - 90 Días!E13"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Compare actual P&L against the financial plan",
+   "propuesta_de": "GM c0858 (FTC F6 - 90 Días!E13)",
+   "pistas": [
+    "P01",
+    "P88"
+   ]
+  },
+  {
+   "id": "c0950",
+   "es": "Plan de expansión (segundo truck o local fijo)",
+   "donde": [
+    "CATC · F6 - 90 Días!B14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Expansion plan (second truck or brick-and-mortar location)",
+   "propuesta_de": "GFT c0859 (FTC F6 - 90 Días!B14)",
+   "pistas": [
+    "P01",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0951",
+   "es": "Titular",
+   "donde": [
+    "CATC · F6 - 90 Días!C14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Owner",
+   "propuesta_de": "GM c0687 (FTC F6 - 90 Días!C14)",
+   "pistas": [
+    "P01",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0952",
+   "es": "Mes 3",
+   "donde": [
+    "CATC · F6 - 90 Días!D14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "Month 3",
+   "propuesta_de": "GM c0857 (FTC F6 - 90 Días!D14)",
+   "pistas": [
+    "P01",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0953",
+   "es": "Si funciona, evaluar un segundo vehículo o un local fijo",
+   "donde": [
+    "CATC · F6 - 90 Días!E14"
+   ],
+   "fila": "☐",
+   "por_celda": true,
+   "propuesta_en": "If it works, evaluate a second truck or a fixed location",
+   "propuesta_de": "GFT c0860 (FTC F6 - 90 Días!E14)",
+   "pistas": [
+    "P01",
+    "P09",
+    "P89"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-4/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 7,
+   "cadenas": [
+    {
+     "id": "c0180",
+     "es": "Es lo que se compra: obra, equipamiento, lanzamiento y gastos de constitución. El colchón de caja no es inversión, es circulante",
+     "en_actual": "What you buy: build-out, equipment, launch and formation costs. The cash cushion is not an investment: it is working capital",
+     "de": "GM c0180 (FTP Inversión Inicial!D27)",
+     "donde": [
+      "CATP · Inversión Inicial!D27"
+     ]
+    },
+    {
+     "id": "c0213",
+     "es": "Sobre las ventas DEL CANAL. Con 0 % de delivery en Supuestos, esta línea vale cero",
+     "en_actual": "Applied to the sales of THAT CHANNEL. With 0% delivery in Assumptions, this line is zero",
+     "de": "GM c0213 (FTP PyG 3 Años!F16)",
+     "donde": [
+      "CATP · PyG 3 Años!F16"
+     ]
+    },
+    {
+     "id": "c0382",
+     "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —bollería y pastelería incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica al alcohol del canal de delivery. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+     "en_actual": "4. All figures are EXCL. SALES TAX. To turn a menu price into a price excl. sales tax, divide it by 1 + your sales tax rate (with an 8% rate, divide by 1.08); if an item is taxed at a different rate (alcohol to go, for instance), use that rate. The rate of each sales line is in the \"Sales tax rate on the line (%)\" column of the P&L, and from it come the receipts, the sales tax collected and the equivalent menu price incl. sales tax. With the default 0% recoverable input tax, the sales tax you pay on purchases and startup costs is treated as a cost; in the UK, enter 20% if you are VAT-registered.",
+     "de": "GM c0382 (FTP Instrucciones!A8)",
+     "donde": [
+      "CATP · Instrucciones!A8"
+     ]
+    },
+    {
+     "id": "c0597",
+     "es": "El mismo cálculo sobre lo que se COMPRA (obra, equipamiento, lanzamiento y constitución), sin el fondo de maniobra: ese dinero no se gasta, se inmoviliza y vuelve al cerrar el negocio. Informativo: el payback que se publica es el de arriba",
+     "en_actual": "The same calculation on what you BUY (build-out, equipment, launch and formation costs), without working capital: that money is not spent, it is tied up and comes back when the business closes. For reference only: the payback that matters is the one above",
+     "de": "GM c0597 (FTP Tesorería 12 meses!D32)",
+     "donde": [
+      "CATP · Tesorería 12 meses!D32"
+     ]
+    },
+    {
+     "id": "c0664",
+     "es": "FASE 1: CONSTITUCIÓN Y TRÁMITES",
+     "en_actual": "PHASE 1: BUSINESS SETUP & REGISTRATIONS",
+     "de": "GFT c0664 (FTC F1 - Constitución!A2)",
+     "donde": [
+      "CATC · F1 - Constitución!A2"
+     ]
+    },
+    {
+     "id": "c0771",
+     "es": "FASE 3: EQUIPAMIENTO Y SETUP",
+     "en_actual": "PHASE 3: EQUIPMENT & SETUP",
+     "de": "GFT c0747 (FTC F3 - Equipamiento!A2)",
+     "donde": [
+      "CATC · F3 - Equipamiento!A2"
+     ]
+    },
+    {
+     "id": "c0958",
+     "es": "El contador de cada pestaña cuenta sólo las ✓; las N/A salen del total.",
+     "en_actual": "Each tab's counter counts only the ✓; N/A items come out of the total.",
+     "de": "GM c0865 (FTC Instrucciones!A6)",
+     "donde": [
+      "CATC · Instrucciones!A6"
+     ]
+    }
+   ]
+  }
+ }
+}
