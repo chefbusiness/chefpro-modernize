@@ -307,6 +307,15 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Retomar:** worktrees `scratchpad/wt-cat` (Mac) y `/root/wt-cat` (VPS) en la rama; F2 paso 1 = implementador opus
   según `SPEC-delta.md` §3-§7 y el patrón de `business-plans-en-3/F2-NOTAS.md`. Deuda ES de la línea B (ficha del catering:
   «break-even 14 eventos/mes», «60+ pp.», «10 ejemplos validados»): anotada, no se toca ahora.
+- 🔜 **SIGUIENTE TAREA tras el Catering EN (John, 11-oct: «habrá que solucionar el de español… para que quede conforme a los
+  estándares de calidad»): Plan Catering Temático Eventos ES → 2.0.** Reutiliza el motor que sale del EN (molde FT ES con
+  eventos/año × €/invitado × invitados/evento, personal fijo + cobertura por evento, calculadora coste → precio con IVA 10 %),
+  caso España con cocina comisaria, sueldo del dueño y amortización, docx en las ranuras del FT, checklist 68 tareas desde las
+  99 válidas del ES, y la landing/dashboard sin las afirmaciones falsas (L1-L16 de `business-plans-en-4/F1-inventario-delta.md`:
+  «60+ pp.» frente a ~2.700 palabras, «break-even 14 eventos/mes», «10 ejemplos validados», «110 hitos» = 108, inversión
+  5.500/11.500 en ficha y docx frente a 8.520/21.410/54.440 en el xlsx). Versión 2.0 (cambia el modelo) + correo de
+  actualización a la cola ES. Después, proponer a John el mismo motor para el resto de la línea B (paellero, parrillero,
+  coctelería, chef privado), uno a uno.
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
