@@ -108,3 +108,14 @@ $PY scripts/productos-digitales/gate-no-latinos.py --only plan-negocio-parriller
 - **`(?<!hasta )5\.000` casaba con «15.000 €»** (contrato menor): el prohibido lleva también `(?<![\d.])`.
 - **Las notas del contenido también pasan el barrido**: «la carne pesa más que el arroz» (umbral) y «CNAE» (checklist) los cazó el gate de restos, no la revisión.
 - **«tres auxiliares»** con dos filas de auxiliar en la plantilla era el m8 del paellero: las notas dicen ahora «los dos auxiliares y un tercero de la bolsa o de una ETT».
+
+## 6. Paso 3 ejecutado (orquestador, 12-oct)
+
+- Motor TODO VERDE; `cifras_caso_es.json` idéntico sobre el publicado; calculadora 552/552; `arreglos_d9.py --aplicar` 112
+  arreglos, barrido 0; docx 142 párrafos · 11 H1 · 8.120 palabras · VERDE; censo `--fail` 0; no latinos 0. Mac = VPS en los 11
+  (sha256).
+- Arreglo de texto: «un ticket de {TICKET_EVENTO} por evento» → «una facturación media de…» (`par_es_a`, ranura del concepto).
+- **Coincidencias de gate LEGÍTIMAS** (no se tocan): `gate_restos_ft` → URL del proveedor de remolques
+  `foodtrucksbreadandbutter.com/comprar-foodtruck-remolque` (catálogo) y el bloque 8 de proveedores (remolques food truck: roadmap
+  del kit; se pasan con `--permitir`); «vinagrete + arroz» del rodizio (experiencias). `barrido_es` → «cubiertos compostables»
+  (cubertería, `Calculadora!C11`) y «Generador eléctrico» (contrato).
