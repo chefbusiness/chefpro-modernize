@@ -1645,9 +1645,24 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-parrillero-asador-eventos': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.2',
+    updated: '2026-10-12',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-10-12',
+        title: 'Modelo rehecho: plan financiero de 9 hojas, calculadora de presupuestos, checklist de 83 tareas y plan de negocio en Word',
+        changes: [
+          'Plan financiero Excel rehecho en 9 hojas: supuestos, inversión inicial, cuenta de resultados a 3 años, punto de equilibrio, escenarios, personal, tesorería de 12 meses, financiación e instrucciones. Las ventas salen de una fórmula —eventos al año × invitados por evento × precio por invitado sin IVA—, con el IVA del servicio al 10 % y el Impuesto de Sociedades de una SL (si arrancas como autónomo, el resultado tributa en el IRPF).',
+          'Lo que corregimos de la versión anterior: el modelo no sumaba como un plan financiero de verdad, porque no tenía sueldo del dueño, personal contratado, amortización, IVA, impuestos, préstamo ni tesorería; los ayudantes figuraban como autónomos que facturan en lugar de contratados como fijos discontinuos; y las cifras de inversión y de beneficio del Excel, del Word y de la ficha del producto no cuadraban entre sí.',
+          'El modelo recoge lo que de verdad cuesta un servicio itinerante de parrilla: una cocina de apoyo autorizada para la mise en place y el almacén (para eventos no se puede preparar en casa), el sueldo del dueño, la amortización de la furgoneta, las parrillas y el equipo, y un fondo de maniobra. El punto de equilibrio se lee en invitados por evento y en ingresos, y el plan de negocio lo traduce a eventos al año. Tesorería mes a mes con la estacionalidad de bodas y fiestas y la liquidación trimestral del IVA, y hoja de financiación con recursos propios, préstamo con carencia, cuadro de amortización y comprobación de la capacidad de pago.',
+          'Calculadora de presupuestos nueva: de los invitados saca la carne cruda, las parrillas, los parrilleros y el carbón que necesitas, suma materia prima, menaje, personal con su Seguridad Social y alquileres, y da el precio por invitado sin IVA y con IVA (10 %), el cobro por adelantado y los importes por tramo de cancelación de particulares y empresas. Los 3 presupuestos de ejemplo —una boda de 110 invitados, un evento de empresa de 70 y una fiesta municipal de 300— se calculan con las mismas fórmulas y sustituyen a los ejemplos de valores fijos de la versión anterior.',
+          'Checklist de apertura de 83 tareas en 6 fases, cada una con responsable, plazo y nota: constitución y fiscalidad; cocina de apoyo autorizada, registro sanitario, APPCC, gas, extintores y permisos de fuego, seguros; equipamiento y proveedores; personal y formación; marca y captación; primer evento y primeros 90 días.',
+          'Plan de negocio en Word de 10 secciones con encabezados navegables, en A4 y con las mismas cifras que el Excel, más un anexo del fuego al aire libre en 8 comunidades: en terreno forestal o en su franja la restricción se aplica aunque la finca tenga licencia. Fuera las cifras de mercado sin una fuente que las respalde.',
+          'Los otros 7 ficheros, revisados: los contratos pasan a ser plantillas orientativas para revisar con tu asesor; el de particulares avisa de que no hay derecho de desistimiento en un servicio con fecha, y los dos llevan fuerza mayor con plan B si una alerta de incendios prohíbe el fuego o el gas. La plantilla de proveedores trae 93 con la columna de estado en «Por verificar», el manual técnico suma la sección de escalado y las temperaturas de la carne, y el catálogo y las experiencias pasan a precios orientativos. Todo en A4.',
+          'Número de versión (2.2) en el plan financiero, el checklist, la calculadora y el plan de negocio.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',

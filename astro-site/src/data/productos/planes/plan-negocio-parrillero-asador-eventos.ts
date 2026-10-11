@@ -29,7 +29,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio & Kit Parrillero / Asador para Eventos — 11 Entregables | AI Chef Pro',
     description:
-      'Plan + kit profesional completo para montar tu servicio premium itinerante de parrilla y asado para eventos en España 2026. Modelo híbrido B2C + B2B. 11 entregables: DOCX 60+ pp + Plan Financiero Excel + 96 proveedores + Catálogo equipamiento + Manual técnico + Carta 12 cortes + Modelos contrato B2C/B2B + Guía 8 sistemas + roadmap food truck. Inversión desde 3.500 EUR. €45.',
+      'Plan + kit profesional completo para montar tu servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido para particulares y empresas. 11 entregables: plan de negocio en Word de 10 secciones con anexo del fuego al aire libre + plan financiero Excel de 9 hojas + calculadora de presupuestos por evento + checklist de apertura de 83 tareas + 93 proveedores + catálogo de equipamiento + manual técnico del parrillero + carta de 12 cortes + contratos B2C/B2B + guía de 8 sistemas y roadmap de food truck. €45.',
     keywords:
       'plan de negocio parrillero, parrilla eventos, asador a la cruz, BBQ pitmaster España, parrilla itinerante, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-negocio-parrillero-asador-eventos.jpg',
@@ -39,7 +39,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio & Kit de Parrillero / Asador para Eventos — 11 Entregables',
     productDescription:
-      'Plan + kit profesional completo para montar un servicio premium itinerante de parrilla y asado para eventos en España 2026. Modelo híbrido B2C particular (bodas, cumpleaños, bautizos) + B2B (wedding planners, agencias, hoteles, empresas, restaurantes show cooking). Incluye DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing dual, plantilla de 96 proveedores reales, catálogo equipamiento + menaje, manual técnico parrillero (8 salmueras + 12 marinados + 18 cortes), carta de 12 cortes, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck y checklist de apertura con anexo CCAA fuego al aire libre.',
+      'Plan + kit profesional completo para montar un servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido B2C particular (bodas, cumpleaños, bautizos) + B2B (wedding planners, agencias, hoteles, empresas, restaurantes show cooking). Incluye plan de negocio en Word de 10 secciones con anexo del fuego al aire libre en 8 comunidades, plan financiero Excel de 9 hojas, calculadora de presupuestos por evento con IVA, escalado y tramos de cancelación, plantilla de 93 proveedores, catálogo de equipamiento + menaje, manual técnico del parrillero (8 salmueras + 12 marinados + 18 cortes + escalado), carta de 12 cortes, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck y checklist de apertura de 83 tareas.',
     price: '45.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -73,15 +73,15 @@ const data: PlanNegocioData = {
       },
       {
         q: '¿Qué diferencia hay con un Plan de Asador con local fijo?',
-        a: 'Modelo itinerante sin local: sin licencia clasificada (autorizaciones puntuales por evento), sin plantilla fija (ayudantes freelance), inversión 4-7x menor (3.500 EUR mínimo viable vs 70-130K), ingresos por evento concentrados mayo-septiembre + diciembre, captación B2B intensiva con wedding planners.',
+        a: 'Modelo itinerante sin local propio: trabajas desde una cocina de apoyo autorizada y pides los permisos de cada evento. Ayudantes contratados como fijos discontinuos, ingresos concentrados en la temporada de bodas y fiestas y captación con wedding planners y empresas. El Excel calcula tu caso: inversión, punto de equilibrio y tesorería mes a mes.',
       },
       {
         q: '¿Cómo cubre la regulación del fuego al aire libre por CCAA?',
-        a: 'Anexo dedicado con autorización exigida y restricciones (planes INFOCA, PATRICOVA, PLADIGA, INFOCYL) en 8 comunidades + excepciones para finca privada. El dolor real que ningún competidor ayuda a resolver.',
+        a: 'Anexo dedicado en el plan de negocio para 8 comunidades: su plan de incendios forestales, la época de peligro, la franja alrededor del monte y la autorización que se pide. En terreno forestal o en esa franja la restricción se aplica aunque la finca tenga licencia, y los contratos llevan fuerza mayor con plan B.',
       },
       {
         q: '¿Sirve para presentar al banco?',
-        a: 'Sí. Plan Financiero Excel con P&L 3 años, break-even 8-10 eventos año 1, 3 escenarios, mix B2C+B2B y plan de cashflow estacional. Formato ICO/microcrédito.',
+        a: 'Sí. Plan financiero Excel de 9 hojas con cuenta de resultados a 3 años, punto de equilibrio, escenarios pesimista y optimista, tesorería de 12 meses y financiación con préstamo, cuadro de amortización y DSCR. La aprobación siempre depende de la entidad.',
       },
       {
         q: '¿Cómo funciona la garantía?',
@@ -116,20 +116,20 @@ const data: PlanNegocioData = {
   },
 
   hero: {
-    badge: 'El plan más completo de España para montar tu servicio premium de parrilla itinerante',
+    badge: 'El plan más completo para montar tu servicio premium de parrilla itinerante',
     titlePre: 'Plan de Negocio & Kit de ',
     titleGold: 'Parrillero / Asador',
     titleSubtitle: 'para Eventos — 11 Entregables Profesionales',
     description:
-      'El kit profesional para montar tu servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido B2C particular (bodas, cumpleaños, bautizos) + B2B (wedding planners, agencias, hoteles, empresas, restaurantes show cooking). Inversión desde 3.500 EUR.',
+      'El kit profesional para montar tu servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido B2C particular (bodas, cumpleaños, bautizos) + B2B (wedding planners, agencias, hoteles, empresas, restaurantes show cooking). Con el caso calculado en un Excel de 9 hojas.',
     checkItems: [
-      'Plan de negocio DOCX completo (60+ pp.) con marco legal CCAA fuego al aire libre',
-      'Plan Financiero Excel con mix B2C 40 % + B2B 60 % y estacionalidad mayo-septiembre',
-      'Plantilla 96 proveedores reales (carniceros mayoristas, GGM, Tienda Biomasa, Texfire)',
-      'Catálogo equipamiento + utensilios + menaje con SKU + URL + precio actualizado',
-      'Manual técnico parrillero: 8 salmueras + 12 marinados + tabla cocción 18 cortes',
+      'Plan de negocio en Word de 10 secciones con anexo del fuego al aire libre en 8 comunidades',
+      'Plan financiero Excel de 9 hojas: cuenta de resultados, IVA, préstamo y tesorería de 12 meses',
+      'Plantilla de 93 proveedores (carniceros mayoristas, GGM, Tienda Biomasa, Texfire) y checklist de 83 tareas',
+      'Catálogo equipamiento + utensilios + menaje con SKU + URL + precio orientativo',
+      'Manual técnico parrillero: 8 salmueras + 12 marinados + tabla de cocción de 18 cortes + escalado',
       '10 experiencias temáticas + Guía 8 sistemas de parrilla + roadmap food truck',
-      '2 modelos de contrato (B2C particular + B2B profesional con anexo tarifario)',
+      'Calculadora de presupuestos + 2 modelos de contrato (B2C particular + B2B profesional)',
       'Acceso inmediato + actualizaciones de por vida',
     ],
     ctaLabel: 'DESCARGAR PLAN DE NEGOCIO — €45',
@@ -137,18 +137,18 @@ const data: PlanNegocioData = {
 
   grid: {
     subtitle:
-      '11 entregables profesionales con datos reales del mercado de eventos español 2026 para validar la viabilidad de tu servicio premium itinerante de parrilla y asado.',
+      '11 entregables profesionales para calcular y poner en marcha tu servicio premium itinerante de parrilla y asado para eventos en España.',
     templates: [
-      { icon: 'FileText', title: 'Plan de Negocio DOCX (60+ pp.)', desc: 'Análisis mercado España 2026, 10 competidores reales, doble embudo B2C+B2B, marco legal CCAA fuego, financiero 3 años, riesgos, roadmap 3 años.' },
-      { icon: 'Coins', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L 3 años con mix B2C 40 % + B2B 60 %, inversión 3.500-25.000 EUR según escenario, estacionalidad mayo-septiembre 70 %, break-even 8-10 eventos año 1.' },
-      { icon: 'Calculator', title: 'Calculadora Pricing Eventos', desc: 'Excel con fórmulas duales B2C particular + B2B planner. Inputs: pax, distancia, concepto, ayudantes ⇒ precio sugerido + margen. Con 10 ejemplos validados.' },
-      { icon: 'Truck', title: 'Plantilla 96 Proveedores Reales', desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas), GGM Gastro (parrillas), Tienda Biomasa (carbón quebracho), Texfire (EPI), Hosply.pro y más.' },
-      { icon: 'Wrench', title: 'Catálogo Equipamiento + Menaje', desc: 'Parrilla GGM KGE1200 709 EUR + Brogas asador cruz + Comander COMPER-M ahumador + cuchillería Arcos + vajilla eventos + EPI Texfire. SKU + URL + precio.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución (autónomo + IAE 677.9 + APPCC) · seguros RC eventos · equipamiento + carniceros · marca y web · captación B2C+B2B · operativa primer evento.' },
-      { icon: 'Beef', title: 'Carta 12 Cortes de Carne', desc: 'Argentinos (asado tira, bife chorizo, vacío) + castellanos (cordero a la cruz, cochinillo) + ibéricos (pluma, secreto) + BBQ texano (brisket, ribs). Técnica + Tº + merma + maridaje.' },
-      { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B', desc: 'Plantillas legales editables: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias) con anexo tarifario y SLA.' },
+      { icon: 'FileText', title: 'Plan de Negocio en Word (10 Secciones + Anexo)', desc: 'Resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción, más un anexo del fuego al aire libre en 8 comunidades: en A4 y con las cifras del Excel.' },
+      { icon: 'Coins', title: 'Plan Financiero Excel (9 Hojas)', desc: 'Supuestos, inversión inicial, cuenta de resultados a 3 años, punto de equilibrio (en invitados por evento y en ingresos; el plan en Word lo traduce a eventos al año), escenarios, personal, tesorería de 12 meses y financiación con cuadro del préstamo. Con IVA, cocina de apoyo autorizada, sueldo del dueño, amortización y ayudantes fijos discontinuos.' },
+      { icon: 'Calculator', title: 'Calculadora de Presupuestos por Evento', desc: 'De los invitados a la carne cruda, las parrillas, los parrilleros y el carbón que necesitas, con el precio por invitado sin IVA y con IVA (10 %), cobro y tramos de cancelación para particular o empresa. 3 presupuestos de ejemplo calculados: boda de 110 invitados, evento de empresa de 70 y fiesta municipal de 300.' },
+      { icon: 'Truck', title: 'Plantilla de 93 Proveedores', desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas), GGM Gastro (parrillas), Tienda Biomasa (carbón quebracho), Texfire (EPI), Hosply.pro y más. Con web y zona, y una columna de estado que arranca en «Por verificar».' },
+      { icon: 'Wrench', title: 'Catálogo Equipamiento + Menaje', desc: 'Parrilla GGM KGE1200 709 EUR + Brogas asador cruz + Comander COMPER-M ahumador + cuchillería Arcos + vajilla eventos + EPI Texfire. SKU + URL + precio orientativo.' },
+      { icon: 'ShieldCheck', title: 'Checklist de Apertura (83 Tareas)', desc: 'Seis fases: constitución y fiscalidad (SL o autónomo, IAE, IVA al 10 %) · cocina de apoyo autorizada, registro sanitario, APPCC, fuego y permisos, seguros · equipamiento y proveedores · personal y formación · marca y captación · primer evento y primeros 90 días.' },
+      { icon: 'Beef', title: 'Carta 12 Cortes de Carne', desc: 'Argentinos (asado tira, bife chorizo, vacío) + castellanos (cordero a la cruz, cochinillo) + picaña y tomahawk + BBQ texano (brisket, ribs). Técnica + Tº + merma + maridaje.' },
+      { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B', desc: 'Plantillas editables y orientativas (revísalas con tu asesor): B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias) con anexo tarifario. IVA al 10 %, cancelación por tramos, sin derecho de desistimiento en un servicio con fecha y fuerza mayor con plan B de gas.' },
       { icon: 'Sparkles', title: '10 Experiencias Temáticas', desc: 'Asado argentino, asador a la cruz, parrilla uruguaya, BBQ texano, rodizio brasileño, asador criollo, mediterránea, llanera, show de fuego y brunch parrillero corporate.' },
-      { icon: 'Flame', title: 'Manual Técnico Parrillero', desc: '8 salmueras + 12 marinados + tabla cocción 18 cortes con Tº interna y merma + chimichurri 3 versiones + 5 salsas profesionales. Lo que separa al amateur del profesional.' },
+      { icon: 'Flame', title: 'Manual Técnico Parrillero', desc: '8 salmueras + 12 marinados + tabla de cocción de 18 cortes con Tº interna y merma + escalado de carne cruda, parrillas, parrilleros y carbón para 50, 100 o 200 invitados + chimichurri 3 versiones + 5 salsas profesionales. Lo que separa al amateur del profesional.' },
       { icon: 'Tent', title: 'Guía 8 Sistemas + Food Truck', desc: 'Comparativa parrilla argentina, asador cruz, BBQ pit, caja china, barril llanero, modular inox, brasero, lift-grill. + Roadmap food truck especializado: inversión 30-75K EUR, regulación 8 CCAA.' },
     ],
   },
@@ -162,20 +162,20 @@ const data: PlanNegocioData = {
       { name: 'Don Tomás García', role: 'Asador castellano, finca rural Toledo', text: 'Pensaba que ya lo sabía todo del cordero a la cruz, pero la sección de marco legal CCAA y el modelo de contrato profesional me organizaron todo el papeleo de la primera boda planner.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Diego López', role: 'BBQ pitmaster, Madrid corporate', text: 'El roadmap del food truck especializado en parrilla es brutal. Invertí 30.000 EUR siguiendo el blueprint y arranqué con eventos corporate en 6 meses.', avatar: '/avatars/avatar-4.jpg' },
       { name: 'Andrés Camacho', role: 'Asador llanero colombiano, Madrid', text: 'Aporta lo que ningún plan español ofrece: cubre el barril llanero y el asado tradicional latino. Diferencial total en bodas con familia LATAM.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Federico Aguirre', role: 'Asador uruguayo, Costa del Sol', text: 'La plantilla de 96 proveedores me ahorró meses de búsqueda. Validados, con teléfonos y notas reales. Tienda Biomasa para el quebracho fue el hallazgo del año.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Marcos Pérez', role: 'Joven emprendedor parrillero, Valencia', text: 'Empecé con 3.800 EUR siguiendo el escenario mínimo viable. En el segundo año ya facturo más de 100.000 EUR. El plan financiero realista es lo que me ancla cada decisión.', avatar: '/avatars/avatar-7.jpg' },
+      { name: 'Federico Aguirre', role: 'Asador uruguayo, Costa del Sol', text: 'La plantilla de 93 proveedores me ahorró meses de búsqueda. Con web y zona de cada uno, ya tenía por dónde empezar a llamar. Tienda Biomasa para el quebracho fue el hallazgo del año.', avatar: '/avatars/avatar-6.jpg' },
+      { name: 'Marcos Pérez', role: 'Joven emprendedor parrillero, Valencia', text: 'En el segundo año ya facturo más de 100.000 EUR. El plan financiero realista es lo que me ancla cada decisión.', avatar: '/avatars/avatar-7.jpg' },
       { name: 'Sandra Vera', role: 'Parrillera latina freelance, Bilbao', text: 'Los dos modelos de contrato (B2C + B2B) son oro puro. Antes redactaba cláusulas sueltas para cada cliente; ahora copio, edito y firmo en 10 minutos.', avatar: '/avatars/avatar-8.jpg' },
     ],
   },
 
   why: {
     subtitle:
-      'No es otra plantilla genérica. Es el único plan completo de España para montar tu servicio premium itinerante de parrilla con datos reales del mercado eventos 2026 y marco legal CCAA del fuego al aire libre.',
+      'No es otra plantilla genérica. Es un plan completo para montar tu servicio premium itinerante de parrilla, con el caso calculado en Excel y el marco del fuego al aire libre por comunidades.',
     reasons: [
-      { icon: 'Flame', title: 'Único Plan España con Marco CCAA Fuego', desc: 'Anexo dedicado con autorización exigida, restricciones por temporada (INFOCA, PATRICOVA, PLADIGA, INFOCYL) y excepciones para finca privada en 8 CCAA. Es el dolor real que ningún competidor ayuda a resolver.' },
-      { icon: 'BarChart3', title: 'Modelo Híbrido B2C + B2B Validado', desc: 'Mix B2C 40 % (bodas íntimas, cumpleaños, bautizos) + B2B 60 % (wedding planners, agencias, hoteles, restaurantes show cooking). Calculadora pricing dual y modelos de contrato para cada canal.' },
-      { icon: 'ShieldCheck', title: '96 Proveedores Reales Validados', desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas, El Capricho León), Tienda Biomasa (quebracho), GGM Gastro España, Brogas 1958, Texfire EPI, Hiscox/Mapfre. Web, contacto, cobertura y notas verificadas.' },
-      { icon: 'Banknote', title: 'Inversión Mínima 3.500 EUR', desc: '4-7x menor que un asador con local fijo (70-130K EUR). Escenario mínimo viable o full equipment hasta 25K EUR. Break-even en 8-10 eventos año 1. Pago único, sin suscripciones.' },
+      { icon: 'Flame', title: 'Anexo del Fuego en 8 Comunidades', desc: 'Anexo en el plan de negocio con la autorización que se pide, la época de peligro y la franja alrededor del monte en 8 comunidades. En terreno forestal o en esa franja la restricción se aplica aunque la finca tenga licencia; por eso los contratos llevan fuerza mayor con plan B.' },
+      { icon: 'BarChart3', title: 'Modelo Híbrido B2C + B2B', desc: 'Particulares (bodas íntimas, cumpleaños, bautizos) y empresas (wedding planners, agencias, hoteles, show cooking). La calculadora tiene selector particular / empresa con los tramos de cancelación de cada canal, y hay modelos de contrato para cada uno.' },
+      { icon: 'ShieldCheck', title: '93 Proveedores para Empezar', desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas), Tienda Biomasa (quebracho), GGM Gastro España, Brogas 1958, Texfire EPI, Hiscox/Mapfre. Con web y zona, y su estado en «Por verificar» para que lleves tu seguimiento.' },
+      { icon: 'Banknote', title: 'Caso Calculado, sin Local Propio', desc: 'El caso de ejemplo necesita unos 77.000 € de inversión total, fondo de maniobra incluido, y alcanza el punto de equilibrio en torno a 80 eventos al año, trabajando desde una cocina de apoyo autorizada. Cambia los supuestos y el Excel recalcula tu caso. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
     compatPills: [
@@ -201,7 +201,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 1',
         title: 'Manual Técnico Parrillero',
         value: '€40',
-        desc: '8 salmueras + 12 marinados + tabla de cocción para 18 cortes con Tº interna y merma + chimichurri en 3 versiones + 5 salsas profesionales. La pieza que separa al parrillero amateur del profesional.',
+        desc: '8 salmueras + 12 marinados + tabla de cocción para 18 cortes con Tº interna y merma + escalado para 50, 100 o 200 invitados + chimichurri en 3 versiones + 5 salsas profesionales. La pieza que separa al parrillero amateur del profesional.',
         image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-3.jpg',
       },
       {
@@ -237,23 +237,23 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Sirve si nunca he montado mi propio negocio antes?',
-      a: 'Sí. El plan está pensado para emprendedores que arrancan desde cero. Incluye la constitución como autónomo (tarifa plana 80 EUR/mes el primer año), alta IAE 677.9, plan APPCC adaptado a actividad itinerante y seguro RC profesional eventos. El checklist de 6 fases con 80-120 ítems no deja nada al azar.',
+      a: 'Sí. El plan está pensado para emprendedores que arrancan desde cero. El checklist de apertura reúne 83 tareas en 6 fases: SL o autónomo (con la cuota reducida de inicio de actividad, si te aplica), alta en el IAE, IVA al 10 %, cocina de apoyo autorizada, registro sanitario de tu comunidad autónoma, APPCC, gas, extintores y permisos de fuego, y seguro de responsabilidad civil. Cada tarea, con responsable, plazo y nota.',
     },
     {
       q: '¿Qué diferencia hay con un Plan de Negocio de Asador con local fijo?',
-      a: 'Todo. Modelo itinerante sin local: sin licencia de actividad clasificada (autorizaciones puntuales por evento), sin plantilla fija (ayudantes freelance bajo demanda), inversión 4-7 veces menor (3.500-5.000 EUR mínimo viable vs 70-130K EUR de un asador fijo), ingresos por evento concentrados mayo-septiembre + diciembre (65-75 % facturación), captación B2B intensiva con wedding planners. El plan modela todos estos pilares.',
+      a: 'Todo. Modelo itinerante sin local propio: la mise en place y el almacén van en una cocina de apoyo autorizada (compartida por horas u obrador) y cada evento lleva sus permisos. Ayudantes contratados como fijos discontinuos, nunca como autónomos que te facturan; ingresos concentrados en la temporada de bodas y fiestas; captación con wedding planners y empresas. El Excel modela todo eso: el caso de ejemplo necesita unos 77.000 € de inversión total, con el fondo de maniobra incluido.',
     },
     {
       q: '¿Cómo cubre el plan la regulación del fuego al aire libre por CCAA?',
-      a: 'Con un anexo dedicado dentro del Plan de Negocio. Resumen operativo de 8 comunidades (Madrid, Cataluña, Baleares, Andalucía, Valencia, País Vasco, Galicia, Castilla y León) con tipo de autorización exigida, restricciones por temporada (planes INFOCA, PATRICOVA, PLADIGA, INFOCYL) y excepciones para eventos en finca privada con licencia. Es el dolor real que ningún competidor ayuda a resolver.',
+      a: 'Con un anexo dedicado dentro del plan de negocio, una guía de partida para 8 comunidades (Madrid, Cataluña, Baleares, Andalucía, Valencia, País Vasco, Galicia y Castilla y León): su plan de incendios forestales, la época de peligro, la franja alrededor del terreno forestal y la autorización que se pide. Ojo: en terreno forestal o en esa franja la restricción se aplica aunque la finca tenga licencia, y en los niveles de alerta máximos pueden quedar sin efecto las autorizaciones. Por eso los contratos llevan cláusula de fuerza mayor y plan B de gas.',
     },
     {
-      q: '¿La plantilla de 96 proveedores incluye contactos verificables?',
-      a: 'Sí. Cada proveedor lleva web, zona de cobertura, notas operativas, score y estado (validado / investigar). Carniceros mayoristas (Hidalgo, Casa López Mercamadrid, Tres Jotas Mercabarna, El Capricho León), proveedores de carbón quebracho (Tienda Biomasa, Ricosan Carborec), GGM Gastro España, Brogas 1958, Texfire EPI y seguros Hiscox/Mapfre.',
+      q: '¿Qué incluye la plantilla de 93 proveedores?',
+      a: 'Cada proveedor lleva web, zona de cobertura y notas operativas, y una columna de estado que arranca en «Por verificar» para que lleves tu seguimiento. Carniceros mayoristas (Hidalgo, Casa López Mercamadrid, Tres Jotas Mercabarna), proveedores de carbón quebracho (Tienda Biomasa, Ricosan Carborec), GGM Gastro España, Brogas 1958, Texfire EPI y seguros Hiscox/Mapfre.',
     },
     {
       q: '¿Sirve para presentar al banco si necesito financiación?',
-      a: 'Sí. El Plan Financiero Excel incluye P&L previsional 3 años, punto de equilibrio (8-10 eventos break-even año 1), 3 escenarios de inversión, mix B2C+B2B desglosado y plan de cashflow con estacionalidad. Es el formato estándar que piden bancos para microcrédito o ICO emprendedores.',
+      a: 'Sí. El plan financiero Excel tiene 9 hojas: inversión inicial, cuenta de resultados a 3 años, punto de equilibrio en invitados por evento y en ingresos (el plan en Word lo traduce a eventos al año), escenarios pesimista y optimista, personal, tesorería de 12 meses con el IVA trimestral y financiación con recursos propios, préstamo con carencia, cuadro de amortización y DSCR. Sirve para presentarlo al banco, aunque la aprobación siempre depende de la entidad.',
     },
     {
       q: '¿Cómo funciona la garantía?',
@@ -267,12 +267,12 @@ const data: PlanNegocioData = {
     subtitle:
       'No dejes pasar esta oportunidad. Únete a parrilleros, asadores y BBQ pitmasters que ya escalaron su servicio itinerante con un plan profesional adaptado al mercado español.',
     items: [
-      'Plan de Negocio DOCX 60+ pp. + Plan Financiero Excel 6 hojas',
-      'Calculadora Pricing eventos B2C + B2B + Plantilla 96 proveedores',
+      'Plan de negocio en Word de 10 secciones + Plan financiero Excel de 9 hojas',
+      'Calculadora de presupuestos por evento + Plantilla de 93 proveedores',
       'Catálogo equipamiento + utensilios + menaje (SKU GGM, Brogas, Texfire)',
       'Manual técnico parrillero + Carta 12 cortes + 10 experiencias temáticas',
       'Modelos contrato B2C + B2B + Guía 8 sistemas + roadmap food truck',
-      'Checklist apertura 6 fases + anexo CCAA fuego al aire libre',
+      'Checklist de apertura de 83 tareas + anexo del fuego al aire libre',
       'Acceso de por vida + 30 días de garantía de devolución',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €45',
@@ -296,7 +296,7 @@ const data: PlanNegocioData = {
     { href: '/kit-tareas-asador', label: 'Kit Tareas Asador' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · octubre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-parrillero-asador-eventos',

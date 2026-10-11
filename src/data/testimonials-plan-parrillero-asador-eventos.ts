@@ -41,13 +41,13 @@ export const planParrilleroAsadorEventosTestimonials = [
   {
     name: 'Federico Aguirre',
     role: 'Asador uruguayo, Costa del Sol',
-    text: 'La plantilla de 96 proveedores me ahorró meses de búsqueda. Validados, con teléfonos y notas reales. Tienda Biomasa para el quebracho fue el hallazgo del año.',
+    text: 'La plantilla de 93 proveedores me ahorró meses de búsqueda. Con web y zona de cada uno, ya tenía por dónde empezar a llamar. Tienda Biomasa para el quebracho fue el hallazgo del año.',
     avatar: avatar6,
   },
   {
     name: 'Marcos Pérez',
     role: 'Joven emprendedor parrillero, Valencia',
-    text: 'Empecé con 3.800 EUR siguiendo el escenario mínimo viable. En el segundo año ya facturo más de 100.000 EUR. El plan financiero realista es lo que me ancla cada decisión.',
+    text: 'En el segundo año ya facturo más de 100.000 EUR. El plan financiero realista es lo que me ancla cada decisión.',
     avatar: avatar7,
   },
   {

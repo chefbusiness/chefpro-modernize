@@ -16,56 +16,56 @@ const TEMPLATES = [
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'DOCX completo de 60+ páginas: análisis de mercado España 2026, 10 competidores, doble embudo B2C+B2B, marco legal CCAA fuego al aire libre, financiero 3 años, riesgos y roadmap.',
+    desc: 'Word de 10 secciones en A4: resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción, con un anexo del fuego al aire libre en 8 comunidades.',
   },
   {
     key: 'plan-financiero',
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L 3 años con mix B2C 40 % + B2B 60 %, inversión 3.500-25.000 EUR según escenario, estacionalidad mayo-septiembre 70 %, break-even 8-10 eventos año 1.',
+    desc: '9 hojas: supuestos, inversión inicial, cuenta de resultados a 3 años, punto de equilibrio, escenarios, personal, tesorería de 12 meses y financiación con cuadro del préstamo. Con IVA, ayudantes fijos discontinuos y cocina de apoyo autorizada.',
   },
   {
     key: 'calculadora-pricing',
     icon: Calculator,
     type: '.xlsx',
-    title: 'Calculadora Pricing Eventos',
-    desc: 'Excel con fórmulas duales B2C particular + B2B planner. Inputs: pax, distancia, concepto, ayudantes ⇒ precio sugerido + margen. Con 10 ejemplos validados.',
+    title: 'Calculadora de Presupuestos por Evento',
+    desc: 'De los invitados a la carne cruda, las parrillas, los parrilleros y el carbón, con el precio por invitado sin IVA y con IVA (10 %), cobro y tramos de cancelación para particular o empresa. 3 presupuestos de ejemplo calculados: boda, empresa y fiesta municipal.',
   },
   {
     key: 'plantilla-proveedores',
     icon: Truck,
     type: '.xlsx',
-    title: 'Plantilla 96 Proveedores Reales',
-    desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas), GGM Gastro (parrillas), Tienda Biomasa (carbón quebracho), Texfire (EPI), Hosply.pro y más. Web, contacto y notas reales.',
+    title: 'Plantilla de 93 Proveedores',
+    desc: 'Carniceros mayoristas (Hidalgo, Casa López, Tres Jotas), GGM Gastro (parrillas), Tienda Biomasa (carbón quebracho), Texfire (EPI), Hosply.pro y más. Con web y zona, y una columna de estado que arranca en «Por verificar».',
   },
   {
     key: 'catalogo-equipamiento',
     icon: Wrench,
     type: '.docx',
     title: 'Catálogo Equipamiento + Menaje',
-    desc: 'Parrilla GGM KGE1200 709 EUR + Brogas asador cruz + Comander COMPER-M ahumador + cuchillería Arcos + vajilla eventos + EPI Texfire. SKU + URL + precio actualizado.',
+    desc: 'Parrilla GGM KGE1200 709 EUR + Brogas asador cruz + Comander COMPER-M ahumador + cuchillería Arcos + vajilla eventos + EPI Texfire. SKU + URL + precio orientativo.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
-    title: 'Checklist Apertura (6 fases)',
-    desc: 'Constitución (autónomo + IAE 677.9 + APPCC) · seguros RC eventos · equipamiento + carniceros · marca y web · captación B2C+B2B · operativa primer evento.',
+    title: 'Checklist de Apertura (83 tareas)',
+    desc: '6 fases: constitución y fiscalidad · cocina de apoyo autorizada, registro sanitario, APPCC, fuego y permisos, seguros · equipamiento y proveedores · personal y formación · marca y captación · primer evento y primeros 90 días.',
   },
   {
     key: 'carta-cortes',
     icon: Beef,
     type: '.docx',
     title: 'Carta 12 Cortes de Carne',
-    desc: 'Argentinos (asado tira, bife chorizo, vacío) + castellanos (cordero a la cruz, cochinillo) + ibéricos (pluma, secreto) + BBQ texano (brisket, ribs). Técnica + Tº + merma + maridaje.',
+    desc: 'Argentinos (asado tira, bife chorizo, vacío) + castellanos (cordero a la cruz, cochinillo) + picaña y tomahawk + BBQ texano (brisket, ribs). Técnica + Tº + merma + maridaje.',
   },
   {
     key: 'modelos-contrato',
     icon: ScrollText,
     type: '.docx',
     title: 'Modelos Contrato B2C + B2B',
-    desc: 'Plantillas legales editables: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias) con anexo tarifario y SLA.',
+    desc: 'Plantillas legales editables: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias) con anexo tarifario. IVA al 10 %, cancelación por tramos y fuerza mayor con plan B de gas.',
   },
   {
     key: 'experiencias-tematicas',
@@ -79,7 +79,7 @@ const TEMPLATES = [
     icon: Flame,
     type: '.docx',
     title: 'Manual Técnico Parrillero',
-    desc: '8 salmueras + 12 marinados + tabla cocción 18 cortes con Tº interna y merma + chimichurri 3 versiones + 5 salsas profesionales. Lo que separa al amateur del profesional.',
+    desc: '8 salmueras + 12 marinados + tabla de cocción de 18 cortes con Tº interna y merma + escalado de carne, parrillas, parrilleros y carbón + chimichurri 3 versiones + 5 salsas profesionales. Lo que separa al amateur del profesional.',
   },
   {
     key: 'guia-sistemas',
@@ -125,7 +125,7 @@ export default function PlanNegocioParrilleroAsadorEventosDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-parrillero-asador-eventos" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 11 entregables para montar tu servicio premium itinerante de parrilla y asado en España 2026.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 11 entregables para montar tu servicio premium itinerante de parrilla y asado en España.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
