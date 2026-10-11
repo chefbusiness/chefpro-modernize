@@ -16,21 +16,21 @@ const TEMPLATES = [
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'DOCX completo de 60+ páginas: análisis mercado España 2026 (4.585 M€ catering, 25.183 € boda media), top 14 conceptos temáticos validados, modelo multi-concepto sin local fijo, anexo regulación 17 CCAA, financiero 3 años, riesgos y roadmap progresivo.',
+    desc: 'Plan de negocio en 10 secciones (unas 7.000 palabras, A4): resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción. Sus cifras son las del caso de ejemplo del Excel: si cambias el Excel, manda el Excel.',
   },
   {
     key: 'plan-financiero',
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L 3 años con mix B2C 35 % + B2B 65 %, inversión 5.500-35.000 EUR según escenario, estacionalidad bodas mayo-octubre + corporate diciembre, break-even 14 eventos/mes año 1.',
+    desc: '9 hojas: supuestos, inversión inicial, PyG 3 años, punto de equilibrio (invitados por evento y eventos al año), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × invitados por evento × precio por invitado sin IVA; IVA del 10 %, cocina central compartida, sueldo del dueño, amortización y extras fijos discontinuos. Cambia las celdas verdes por tus datos.',
   },
   {
     key: 'calculadora-pricing',
     icon: Calculator,
     type: '.xlsx',
-    title: 'Calculadora Pricing Multi-concepto',
-    desc: 'Excel con fórmulas duales B2C bodas + B2B corporate + factor multi-concepto. Inputs: pax, distancia, número conceptos (1-5+), nivel calidad, pairing, branded experience ⇒ precio sugerido + margen.',
+    title: 'Calculadora de Precios por Invitado',
+    desc: 'Del escandallo de comida y bebida, el personal del evento con su Seguridad Social, las estaciones temáticas en directo, los kilómetros de ida y vuelta y los alquileres, al precio por invitado sin IVA y con IVA (10 %). Particular o empresa, mínimo facturable, anticipo del 40 %, importes por tramo de cancelación y margen bruto calculado. 3 presupuestos de ejemplo.',
   },
   {
     key: 'plantilla-proveedores',
@@ -50,8 +50,8 @@ const TEMPLATES = [
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
-    title: 'Checklist Apertura (6 fases)',
-    desc: 'Constitución (autónomo + IAE 677.9 + APPCC móvil multi-concepto + RGSEAA) · seguros RC eventos con cláusula intoxicación · proveedores especializados 12 cocinas · marca multi-concepto · captación B2C+B2B · operativa primer evento multi-station. 110 hitos.',
+    title: 'Checklist de Apertura (82 tareas)',
+    desc: '82 tareas en 6 fases: constitución y fiscalidad (IAE 677.9, Veri*factu, IVA al 10 %, RGPD y LSSI) · cocina central autorizada, registro sanitario autonómico, APPCC, seguros y permisos · equipamiento y proveedores · personal y formación · marca y captación · primer evento y primeros 90 días.',
   },
   {
     key: '12-conceptos',
@@ -79,14 +79,14 @@ const TEMPLATES = [
     icon: Flame,
     type: '.docx',
     title: 'Manual Técnico APPCC Multi-concepto',
-    desc: '7 PCC adaptados a multi-cocina simultánea (cadena frío diferenciada, T° servicio por concepto, alérgenos en multi-station) + cronograma evento 80 pax + layout multi-station + coordinación equipo freelance especializado por concepto.',
+    desc: '7 PCC adaptados a multi-cocina simultánea (cadena frío diferenciada, T° servicio por concepto, alérgenos en multi-station) + cronograma evento 80 pax + layout multi-station + coordinación del equipo de eventos por concepto.',
   },
   {
     key: 'guia-especializacion',
     icon: BookOpen,
     type: '.docx',
     title: 'Guía Especialización Progresiva',
-    desc: 'Hoja de ruta para construir tu portafolio de cocinas del mundo: empieza con 1-2 conceptos, añade 1-2/año validando demanda. Top 5 mejores conceptos + 4 sub-explotados (oportunidad). Roadmap 12 meses para llegar a 6 conceptos en producción.',
+    desc: 'Hoja de ruta para construir tu portafolio de cocinas del mundo: empieza con 1-2 conceptos, añade 1-2/año según la demanda. Top 5 mejores conceptos + 4 sub-explotados (oportunidad). Roadmap 12 meses para llegar a 6 conceptos en producción.',
   },
 ];
 
