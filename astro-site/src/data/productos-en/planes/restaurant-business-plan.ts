@@ -120,7 +120,7 @@ const data: PlanNegocioData = {
     description:
       'Restaurant business plan template for a casual restaurant & bar: a 10-section Word plan, Excel financial projections (3-year P&L, break-even, cash flow, loan and DSCR) and a 64-task opening checklist. $39.',
     keywords:
-      'restaurant business plan, restaurant business plan template, bar business plan, restaurant startup costs, how to open a restaurant, restaurant financial projections, restaurant opening checklist, AI Chef Pro',
+      'restaurant business plan, restaurant business plan template, restaurant startup costs, how to open a restaurant, restaurant financial projections, restaurant opening checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-restaurant-business-plan.jpg',
   },
 
