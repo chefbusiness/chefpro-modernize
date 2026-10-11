@@ -52,6 +52,11 @@ DOCX = {
         (('p', 1), 'SKU, URL y precio actualizado', 'SKU, URL y precio orientativo'),
         (('p', 2), 'España 2026 · Garcima', 'Edición 2026 · Garcima'),
         (('p', 6), 'precio actualizado a abril 2026', 'precio orientativo de abril 2026 (confírmalo con el proveedor)'),
+        # F2 paso 3 (barrido D15): la inversión de la 1.x en el catálogo → la del plan financiero 2.2, sin cifra
+        (('p', 6), 'La inversión recomendada está en torno a 8.500-12.000 €, con escenario mínimo viable de 3.500 € y '
+                   'premium de 25.000 €.',
+         'La inversión inicial completa (con la furgoneta, la cocina de apoyo y el fondo de maniobra) está calculada '
+         'en el plan financiero de este kit; este catálogo detalla el equipamiento de cocción y servicio.'),
     ],
     'guia-tipos-paellero-roadmap-food-truck.docx': [],
     'manual-tecnico-paellero-profesional.docx': [],
@@ -77,7 +82,17 @@ INSERTAR = {
     CONTRATO: [(29, 'despues', 31,
                 'Al tratarse de un servicio de comida con fecha determinada, el Cliente no dispone del derecho de '
                 'desistimiento (art. 103.l del Texto Refundido de la Ley General para la Defensa de los Consumidores '
-                'y Usuarios).')],
+                'y Usuarios).'),
+               # Decisión del orquestador (F2 paso 3, D10/D8): la misma fuerza mayor en el modelo B2B, como cláusula
+               # nueva entre la QUINTA (cancelaciones) y la SEXTA; en orden, las dos «antes» del p67 original.
+               (67, 'antes', 61, 'QUINTA BIS — Fuerza mayor'),
+               (67, 'antes', 62,
+                'En caso de fuerza mayor (catástrofe natural, prohibición administrativa, condiciones meteorológicas '
+                'extremas declaradas por AEMET, intervención de la autoridad sanitaria o prohibición del uso del fuego '
+                'o del gas por la época o el nivel de peligro de incendios), las partes intentarán primero el plan B '
+                'pactado en el Anexo I (cocina del recinto o equipos sin llama); si no es posible, reprogramarán el '
+                'evento sin coste adicional, y si la reprogramación tampoco lo es, el Paellero devolverá íntegramente '
+                'el anticipo a la Agencia.')],
     CARTA: [(5, 'antes', 7,
              'Fiestas populares por volumen: una paella grande para un ayuntamiento o una comisión de fiestas, de '
              '300-400 raciones o más, se cobra a 3-6 € por ración sin IVA, con una sola variedad y servicio en plato '
@@ -187,8 +202,8 @@ def docx_(origen, destino, reglas, log):
             raise SystemExit('ABORTADO: %s patrón %s: %d coincidencias (esperadas %d)' % (f, rx.pattern, n, esperado))
         log.append((f, '%s: patrón «%s» ×%d' % (corto, rx.pattern[:40], n)))
     # (3) párrafos nuevos (referencias resueltas ANTES de insertar)
+    ps = d.paragraphs   # una sola vez: los índices de INSERTAR son los del original y no se mueven al insertar
     for ref, modo, molde, texto in INSERTAR.get(f, []):
-        ps = d.paragraphs
         base, mold = ps[ref], ps[molde]
         nuevo = _clonar(mold, texto)
         if modo == 'despues':

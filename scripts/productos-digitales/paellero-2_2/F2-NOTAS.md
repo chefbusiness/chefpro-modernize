@@ -95,3 +95,30 @@ Después: (1) **Una revisión opus final** (D15) recalcular a mano 3 cifras del 
 - **La demo §2.11.5 del motor depende del caso.** Busca, bajando las raciones de 2 en 2 %, un punto con el año 1 en pérdidas, el año 2 positivo pero menor que la base negativa y el año 3 tributando. Con márgenes pequeños, la ventana es más estrecha que el paso de búsqueda. Si falla, mueve un fijo menor ±100 € antes de tocar el caso.
 - **«carné» y «carne» en el mismo libro** encienden el gate de ortografía (§1.7).
 - **`PAYBACK` puede ser texto** («Más de 3 años»): `cifras_pae_es.py` lo acepta como token de texto en lugar de abortar.
+
+## 5. Cierre de la F2 (paso 3, 11-oct-2026): los 11 ficheros en `dl/`, todo en verde
+
+- **Decisiones del orquestador**: aceptadas las desviaciones 1-9 y 11-13; la holgura del año 2 (13,5 %) se queda y el docx la explica. D10: el contrato B2B gana la cláusula «QUINTA BIS — Fuerza mayor» (alerta de incendios o prohibición de fuego/gas → plan B, reprogramación o devolución del anticipo, como el B2C).
+- **Respaldo de la 1.2**: en git (`2d6cac44`), que es de donde parte `arreglos_d9.py`.
+- **Excel**: `ciclo.sh` TODO VERDE (13/13, idempotencia 0, censo 0, demos, 30/30 moldes). `cifras_caso_es.json` es idéntico al del paso 1. Caso: §2, sin cambios.
+- **Docx**: 142 párrafos, 11 H1, 7.811 palabras, A4, 0 tokens sin resolver y 0 prohibidos.
+- **Calculadora**: autotest 336/336.
+- **D9 / D13** (`--aplicar`): 23 arreglos en los 7 ficheros.
+  - Contrato (8): p2, p23 efectivo, p31 fuego/gas + plan B, no desistimiento y QUINTA BIS en el B2B.
+  - Carta (5), catálogo (5: p1, p2, p6 y la inversión de la 1.x de p6, que cazó el barrido), experiencias (2), proveedores (1).
+  - Guía y manual: solo A4 y docProps. El manual conserva 4.437 palabras, 14 H1 y 10 tablas (medido antes y después).
+- **Gates D15**:
+  - restos FT + catering: VERDE (`--excluir` la guía; `--permitir "roadmap food truck"`, nombre de la guía citado en el docx §1). El del catering, sin opciones, sigue VERDE.
+  - barrido de los rehechos: solo «un ticket de {TICKET_EVENTO} por evento» (legítimo, como en el catering). Prohibidos en los otros 10: 0.
+  - términos D15 (freelance, validado, carnet de manipulador, sin licencia clasificada, PATRICOVA, PIDOM, INFOCYL, tarifa plana, España 2026) en los 11: 0.
+  - censo `--fail`: 0. No latinos: 0. Moldes: A-β / C2 / calc-beta / P2.
+- **sha256** (Mac = VPS en los 11):
+
+| Fichero | sha256 |
+|---|---|
+| Plan financiero | `dfc62f85…b0f` |
+| Checklist | `7fdb26cb…10c` |
+| Calculadora | `ee9884eb…a6c` |
+| Plan de negocio docx | `2a36662b…fb6` |
+
+- **Pendiente** (fuera de este paso): la revisión opus final (D15), D14 y D16 (otro agente), `gate-flujo-postpago --only plan-negocio-paellero-eventos` en preview y en LIVE, y las páginas del docx (el VPS no tiene LibreOffice).
