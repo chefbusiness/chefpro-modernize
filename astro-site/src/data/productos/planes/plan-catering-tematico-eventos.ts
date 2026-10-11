@@ -29,7 +29,7 @@ const data: PlanNegocioData = {
     title:
       'Plan de Negocio para Catering & Kit Temático para Eventos — 11 Entregables | AI Chef Pro',
     description:
-      'Plan + kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España 2026. El único kit que enseña a montar 5 conceptos en paralelo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…). Modelo dual B2C bodas multiculturales + B2B corporate brand events. 11 entregables. Inversión desde 5.500 EUR. €45.',
+      'Plan + kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España 2026. El único kit que enseña a montar 5 conceptos en paralelo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…). Modelo dual B2C bodas multiculturales + B2B corporate brand events. 11 entregables: plan de negocio en Word, plan financiero Excel de 9 hojas, calculadora de precios por invitado y checklist de 82 tareas. €45.',
     keywords:
       'plan negocio catering temático, catering eventos multi-concepto, catering bodas multiculturales, brand events corporate, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-plan-catering-tematico-eventos.jpg',
@@ -39,7 +39,7 @@ const data: PlanNegocioData = {
     productName:
       'Plan de Negocio para Catering & Kit Temático para Eventos — 11 Entregables',
     productDescription:
-      'Plan + kit profesional completo para montar un servicio premium de catering temático multi-concepto para eventos en España 2026. El único kit del mercado español enfocado en multi-concepto (3-5 cocinas del mundo en paralelo en un mismo evento). Modelo dual B2C bodas multiculturales + B2B corporate brand events. Incluye DOCX 60+ pp, Plan Financiero Excel con mix B2C 35 % + B2B 65 %, Calculadora Pricing multi-concepto, plantilla de 96 proveedores especializados en 12 cocinas del mundo (importadores asiáticos, latinos, italianos, BBQ texano, indios), catálogo equipamiento multi-cocina (cuchillería japonesa, horno leña, tandoor, smoker, wok), 12 conceptos pre-empaquetados, carta 12 menús cocinas del mundo, manual técnico APPCC multi-concepto, modelos contrato B2C + B2B corporate, guía especialización progresiva y checklist apertura con anexo regulación 17 CCAA catering itinerante.',
+      'Plan + kit profesional completo para montar un servicio premium de catering temático multi-concepto para eventos en España 2026. El único kit del mercado español enfocado en multi-concepto (3-5 cocinas del mundo en paralelo en un mismo evento). Modelo dual B2C bodas multiculturales + B2B corporate brand events. Incluye plan de negocio en Word de 10 secciones, plan financiero Excel de 9 hojas (PyG 3 años, punto de equilibrio, escenarios, tesorería 12 meses y financiación), calculadora de precios por invitado con IVA al 10 %, plantilla de 96 proveedores especializados en 12 cocinas del mundo (importadores asiáticos, latinos, italianos, BBQ texano, indios), catálogo equipamiento multi-cocina (cuchillería japonesa, horno leña, tandoor, smoker, wok), 12 conceptos pre-empaquetados, carta 12 menús cocinas del mundo, manual técnico APPCC multi-concepto, modelos contrato B2C + B2B corporate, guía especialización progresiva y checklist de apertura de 82 tareas en 6 fases.',
     price: '45.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -52,7 +52,7 @@ const data: PlanNegocioData = {
       {
         author: 'Yuki Tanaka',
         rating: '5',
-        body: 'El kit me dio el blueprint para escalar de hacer sushi en mi casa a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.',
+        body: 'El kit me dio el blueprint para escalar de hacer sushi para amigos y familia a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.',
       },
       {
         author: 'Miguel Hernández',
@@ -73,15 +73,15 @@ const data: PlanNegocioData = {
       },
       {
         q: '¿Qué hace este kit diferente del Parrillero, Paellero o Chef Privado?',
-        a: 'Esos productos son monoconcepto. Este es el ÚNICO multi-concepto: enseña a montar 3-5 cocinas del mundo en paralelo en un mismo evento (sushi-bar + pizza al horno de leña + asado argentino simultáneamente). Justifica ticket 70-130 €/pax frente a 45-85 €/pax monoconcepto.',
+        a: 'Esos productos son monoconcepto. Este es el ÚNICO multi-concepto: enseña a montar 3-5 cocinas del mundo en paralelo en un mismo evento (sushi-bar + pizza al horno de leña + asado argentino simultáneamente). La calculadora suma el coste de cada estación temática en directo y te da el precio por invitado con el margen que tú fijes.',
       },
       {
         q: '¿Cuántos conceptos temáticos cubre?',
-        a: '12 conceptos pre-empaquetados: sushi-bar omakase, tacos al pastor, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional. Cada uno con menú + escandallo + equipamiento + ambientación + operativa.',
+        a: '12 conceptos pre-empaquetados: sushi-bar omakase, tacos al pastor, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional. Cada uno con menú propuesto, equipamiento clave, ambientación, operativa y precio orientativo.',
       },
       {
-        q: '¿Cómo cubre la regulación catering itinerante por CCAA?',
-        a: 'Anexo dedicado con resumen operativo de 17 CCAA: Registro Sanitario + RGSEAA, requisitos cocina cliente, normativa transporte alimentos, etiquetado bilingüe Cataluña/País Vasco, trámites telemáticos vs presenciales. Plus orientación específica APPCC multi-concepto.',
+        q: '¿Cómo cubre la normativa sanitaria del catering?',
+        a: 'El plan de negocio (sección de aspectos legales) y el checklist explican lo que pide la norma estatal: cocina central autorizada (cocinar en casa para eventos está prohibido, RD 1021/2022), registro sanitario de tu comunidad autónoma previa declaración responsable (el RGSEAA, sólo si suministras a otros establecimientos), APPCC, transporte en vehículo ATP y seguros. Los trámites y plazos concretos los fija tu comunidad y tu ayuntamiento.',
       },
       {
         q: '¿Cómo funciona la garantía?',
@@ -122,13 +122,13 @@ const data: PlanNegocioData = {
     titleGold: 'Catering & Kit Temático',
     titleSubtitle: 'para Eventos — 11 Entregables Profesionales',
     description:
-      'El kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España. Modelo dual B2C bodas multiculturales + B2B corporate brand events, con 11 entregables y 96 proveedores especializados en 12 cocinas del mundo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…). Inversión 5-9x menor que un catering con cocina central.',
+      'El kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España. Modelo dual B2C bodas multiculturales + B2B corporate brand events, con 11 entregables y 96 proveedores especializados en 12 cocinas del mundo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…). Sin obra de cocina propia: el modelo trabaja desde una cocina central compartida y autorizada.',
     checkItems: [
-      'Plan de negocio DOCX completo (60+ pp.) con anexo regulación 17 CCAA catering itinerante',
-      'Plan Financiero Excel: P&L 3 años con mix B2C 35 % + B2B 65 % multi-concepto',
+      'Plan de negocio en Word: 10 secciones (más de 7.000 palabras) con las mismas cifras que el Excel',
+      'Plan financiero Excel de 9 hojas: eventos × invitados × precio por invitado, PyG 3 años, tesorería y financiación',
       'Plantilla 96 proveedores reales (12 cocinas del mundo + equipamiento + servicios)',
       'Catálogo equipamiento multi-cocina: cuchillería japonesa, horno leña, tandoor, smoker, wok',
-      '12 conceptos temáticos pre-empaquetados con menú + escandallo + ambientación + pricing',
+      '12 conceptos temáticos pre-empaquetados con menú, ambientación, equipamiento y precio orientativo',
       'Carta 12 menús temáticos cocinas del mundo (sushi, mexicano, italiano, argentino, indio…)',
       'Manual técnico APPCC multi-concepto (7 PCC adaptados + cronograma multi-station)',
       'Modelos contrato B2C + B2B corporate (con MSA acuerdo marco anual y confidencialidad)',
@@ -139,19 +139,19 @@ const data: PlanNegocioData = {
 
   grid: {
     subtitle:
-      '11 entregables profesionales con datos reales del mercado español 2026 para montar tu catering temático multi-concepto premium con 12 cocinas del mundo en portafolio.',
+      '11 entregables profesionales, con la fiscalidad y los trámites de España, para montar tu catering temático multi-concepto premium con 12 cocinas del mundo en portafolio.',
     templates: [
-      { icon: 'FileText', title: 'Plan de Negocio DOCX (60+ pp.)', desc: 'Análisis mercado España 2026 (4.585 M€ catering, 25.183 € boda media), top 14 conceptos temáticos validados, modelo multi-concepto sin local fijo, anexo 17 CCAA, financiero 3 años, riesgos, roadmap progresivo.' },
-      { icon: 'Coins', title: 'Plan Financiero Excel (6 hojas)', desc: 'P&L 3 años con mix B2C 35 % + B2B 65 %, inversión 5.500-35.000 EUR según escenario, estacionalidad bodas mayo-octubre + corporate diciembre, break-even 14 eventos/mes año 1, ticket medio 2.200-4.500 €.' },
-      { icon: 'Calculator', title: 'Calculadora Pricing Multi-concepto', desc: 'Excel con fórmulas duales B2C + B2B + factor multi-concepto. Inputs: pax, distancia, número conceptos (1-5+), nivel calidad, pairing, branded experience, freelance especializado ⇒ precio sugerido + margen. 10 ejemplos validados.' },
+      { icon: 'FileText', title: 'Plan de Negocio en Word (10 Secciones)', desc: 'Resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción: más de 7.000 palabras en A4, con las cifras del Excel. Caso de ejemplo: 130 eventos al año de 65 invitados a 53 € por invitado sin IVA.' },
+      { icon: 'Coins', title: 'Plan Financiero Excel (9 Hojas)', desc: 'Supuestos, inversión inicial, PyG 3 años, punto de equilibrio (en invitados por evento y en ingresos; el plan en Word lo traduce a eventos al año), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × invitados por evento × precio por invitado sin IVA, con IVA del 10 %, cocina central compartida, sueldo del dueño, amortización, extras fijos discontinuos y estacionalidad de bodas y Navidad de empresa.' },
+      { icon: 'Calculator', title: 'Calculadora de Precios por Invitado', desc: 'Del escandallo de comida y bebida, el personal del evento con su Seguridad Social, el número de estaciones temáticas en directo, los kilómetros de ida y vuelta y los alquileres, al precio por invitado sin IVA y con IVA (10 %). Particular o empresa, mínimo facturable, anticipo del 40 %, importes por tramo de cancelación y margen bruto calculado; la propina voluntaria queda fuera del total. 3 presupuestos de ejemplo calculados.' },
       { icon: 'Truck', title: 'Plantilla 96 Proveedores · 12 Cocinas', desc: 'Importadores asiáticos (EMB Food, Cominport, Garmiko) + latinos (Imp. Cuesta, CMA, Jasa, Maíz Maya) + italiano (Caputo, Italfoods) + indio (Spice Box, Patak\'s, TRS) + BBQ (ALEXS, Smokefire) + carniceros premium + pescaderías + vegano + equipamiento + plataformas.' },
       { icon: 'Wrench', title: 'Catálogo Equipamiento Multi-cocina', desc: 'Por concepto: cuchillería japonesa sushi (Tojiro, Yoshihiro) + horno leña pizza (Pizza Party, Ooni Pro) + parrilla argentina + trompo pastor + tandoor portátil + smoker offset texano + wok pro (Wokinox) + sous-vide (Anova, Sammic) + vajilla premium.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución (autónomo + IAE 677.9 + APPCC móvil multi-concepto + RGSEAA) · seguros RC eventos con cláusula intoxicación · proveedores especializados 12 cocinas · marca multi-concepto · captación B2C+B2B · operativa primer evento multi-station. 110 hitos.' },
+      { icon: 'ShieldCheck', title: 'Checklist de Apertura (82 Tareas)', desc: 'Seis fases: constitución y fiscalidad (IAE 677.9, Veri*factu, IVA al 10 %, RGPD y LSSI) · cocina central autorizada, registro sanitario autonómico, APPCC, seguros RC con intoxicación y permisos · equipamiento y proveedores · personal y formación · marca y captación B2C + B2B · primer evento y primeros 90 días.' },
       { icon: 'LayoutGrid', title: '12 Conceptos Temáticos Pre-empaquetados', desc: 'Sushi-bar omakase + tacos al pastor + trattoria italiana + asado argentino + ceviche peruano + marisquería gallega + tandoor indio + mediterráneo + vegano premium + brasileño rodízio + BBQ texano + brunch internacional. Cada uno con menú + ambientación + equipamiento + operativa.' },
       { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B Corporate', desc: 'Plantillas legales editables: B2C particular (boda multicultural, cumpleaños temático, aniversarios) + B2B corporate (brand event, embajada, festival gastronómico, planner) con MSA acuerdo marco anual, confidencialidad y propiedad intelectual del menú multi-concepto.' },
-      { icon: 'Utensils', title: 'Carta 12 Menús Cocinas del Mundo', desc: 'Boda multicultural premium 7 estaciones + tasting Asia 7 pasos + mexicano Día de Muertos + italiano trattoria + argentino tradicional + peruano Lima + indio Bollywood + griego/turco + vegano premium + BBQ texano + brunch internacional + mariscada gallega.' },
-      { icon: 'Flame', title: 'Manual Técnico APPCC Multi-concepto', desc: '7 PCC adaptados a multi-cocina simultánea (cadena frío diferenciada, T° servicio por concepto, alérgenos en multi-station) + cronograma evento 80 pax + layout multi-station + coordinación equipo freelance especializado por concepto.' },
-      { icon: 'BookOpen', title: 'Guía Especialización Progresiva', desc: 'Cómo construir tu portafolio de cocinas del mundo: empieza con 1-2 conceptos, añade 1-2/año validando demanda. Roadmap 12 meses para llegar a 6 conceptos. Top 5 mejores conceptos para empezar + 4 sub-explotados (oportunidad). Modelo escalable y validado España 2026.' },
+      { icon: 'Utensils', title: 'Carta 12 Menús Cocinas del Mundo', desc: 'Boda multicultural premium 6 estaciones + activación previa + tasting Asia 7 pasos + mexicano Día de Muertos + italiano trattoria + argentino tradicional + peruano Lima + indio Bollywood + griego/turco + vegano premium + BBQ texano + brunch internacional + mariscada gallega.' },
+      { icon: 'Flame', title: 'Manual Técnico APPCC Multi-concepto', desc: '7 PCC adaptados a multi-cocina simultánea (cadena frío diferenciada, T° servicio por concepto, alérgenos en multi-station) + cronograma evento 80 pax + layout multi-station + coordinación del equipo de eventos por concepto.' },
+      { icon: 'BookOpen', title: 'Guía Especialización Progresiva', desc: 'Cómo construir tu portafolio de cocinas del mundo: empieza con 1-2 conceptos, añade 1-2/año validando demanda. Roadmap 12 meses para llegar a 6 conceptos. Top 5 mejores conceptos para empezar + 4 sub-explotados (oportunidad). Modelo escalable, paso a paso.' },
     ],
   },
 
@@ -159,7 +159,7 @@ const data: PlanNegocioData = {
     subtitle:
       'Sushi masters, taqueros, pizzaiolos, asadores argentinos, chefs ceviche peruano, tandoor masters, plant-based premium y BBQ pitmasters que usaron el plan para montar o escalar su catering temático multi-concepto en España',
     items: [
-      { name: 'Yuki Tanaka', role: 'Sushi master para eventos premium, Madrid', text: 'El kit me dio el blueprint para escalar de hacer sushi en mi casa a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.', avatar: '/avatars/avatar-1.jpg' },
+      { name: 'Yuki Tanaka', role: 'Sushi master para eventos premium, Madrid', text: 'El kit me dio el blueprint para escalar de hacer sushi para amigos y familia a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.', avatar: '/avatars/avatar-1.jpg' },
       { name: 'Miguel Hernández', role: 'Taquero pro showcooking, Madrid', text: 'Empecé con tacos al pastor en cumpleaños familiares. Tras el plan añadí cochinita pibil + ceviche peruano + barra mezcal y ahora hago corporate brand events de 80-150 pax con 4 estaciones. La guía de especialización progresiva fue clave.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Giuseppe Romano', role: 'Pizzaiolo móvil + trattoria eventos, Toledo', text: 'Tenía un horno de leña móvil y hacía bodas con sólo pizza. El kit me enseñó a integrar pasta fresca + antipasti + dolci en mi servicio. Ahora ofrezco trattoria completa por 65 €/pax y subí volumen 3x.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Diego Ferreyra', role: 'Asador argentino premium, Madrid', text: 'El plan financiero con multi-concepto me convenció de añadir BBQ texano a mi asado argentino. Ahora cubro bodas y corporate outdoor con 2 conceptos potentes. Margen subió del 48 % al 58 %.', avatar: '/avatars/avatar-4.jpg' },
@@ -172,12 +172,12 @@ const data: PlanNegocioData = {
 
   why: {
     subtitle:
-      'No es otra plantilla genérica. Es el único plan completo del mercado español para montar tu catering temático multi-concepto premium: 11 entregables con 12 cocinas del mundo, 96 proveedores especializados (importadores asiáticos, latinos, italianos, BBQ texano), datos reales 2026 (4.585 M€ catering España, boda media 25.183 €) y anexo regulación 17 CCAA.',
+      'No es otra plantilla genérica. Es el único plan completo del mercado español para montar tu catering temático multi-concepto premium: 11 entregables con 12 cocinas del mundo, 96 proveedores especializados (importadores asiáticos, latinos, italianos, BBQ texano), un plan financiero de 9 hojas con la fiscalidad española y un checklist de apertura de 82 tareas.',
     reasons: [
-      { icon: 'Globe', title: 'Único Plan España con Modelo Multi-concepto', desc: 'El ÚNICO plan del mercado español que enseña a montar 3-5 cocinas del mundo en paralelo en un mismo evento (sushi-bar + pizza al horno de leña + asado argentino simultáneamente), no monoconcepto. Justifica ticket 70-130 €/pax frente a 45-85 €/pax monoconcepto, con márgenes 30-40 % más altos.' },
-      { icon: 'BarChart3', title: 'Modelo Dual B2C Bodas Multiculturales + B2B Corporate', desc: 'Mix B2C 35 % (bodas multiculturales, cumpleaños temáticos, aniversarios) + B2B 65 % (corporate brand events, embajadas, wedding planners, festivales gastronómicos, hoteles boutique). Calculadora pricing dual con factor multi-concepto y modelos de contrato para cada canal.' },
+      { icon: 'Globe', title: 'Único Plan España con Modelo Multi-concepto', desc: 'El ÚNICO plan del mercado español que enseña a montar 3-5 cocinas del mundo en paralelo en un mismo evento (sushi-bar + pizza al horno de leña + asado argentino simultáneamente), no monoconcepto. La calculadora suma el coste de cada estación temática en directo y te da el precio por invitado con el margen que tú fijes.' },
+      { icon: 'BarChart3', title: 'Modelo Dual B2C Bodas Multiculturales + B2B Corporate', desc: 'Caso de ejemplo con 130 eventos al año: 45 de particulares (bodas multiculturales, cumpleaños temáticos, aniversarios) y 85 de empresa (corporate brand events, coffee breaks, cócteles, comidas y Navidad). Calculadora con selector particular / empresa (precio con IVA o «+ IVA» y tramos de cancelación de cada canal) y modelos de contrato para cada uno.' },
       { icon: 'ShieldCheck', title: '96 Proveedores · 12 Cocinas del Mundo', desc: 'Importadores asiáticos premium (EMB Food, Cominport, Garmiko) + latinos/mexicanos (Importaciones Cuesta, CMA, Jasa, Maíz Maya) + italiano (Caputo, Italfoods) + indio (Spice Box, Patak\'s, TRS) + BBQ texano (ALEXS, Smokefire) + carniceros premium + pescaderías + vegano + equipamiento + plataformas.' },
-      { icon: 'Banknote', title: 'Inversión Mínima 5.500 EUR', desc: '5-9x menor que un catering con cocina central (45-120K EUR). Escenario mínimo viable, recomendado 11.500 EUR o premium hasta 35.000 EUR. Break-even 14 eventos/mes año 1. Pago único, sin suscripciones.' },
+      { icon: 'Banknote', title: 'Caso Calculado, sin Obra de Cocina', desc: 'El caso de ejemplo factura 447.850 € sin IVA el primer año (130 eventos de 65 invitados a 53 € sin IVA) y alcanza el punto de equilibrio en torno a 109 eventos al año. Unos 130.000 € de inversión total, fondo de maniobra incluido: furgoneta frigorífica, estaciones temáticas, menaje y lanzamiento, trabajando desde una cocina central compartida y autorizada. Pago único, sin suscripciones.' },
     ],
     compatLabel: 'Compatible con cualquier software ofimático:',
     compatPills: [
@@ -239,27 +239,27 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Qué hace este kit diferente del Parrillero, Paellero o Chef Privado?',
-      a: 'Esos productos son monoconcepto (un único producto/servicio: parrilla, paella o chef privado). Este es el ÚNICO multi-concepto: enseña a montar 3-5 cocinas del mundo en paralelo en un mismo evento (ejemplo: sushi-bar + pizza al horno de leña + asado argentino simultáneamente). Esto justifica ticket 70-130 €/pax frente a 45-85 €/pax monoconcepto, con márgenes 30-40 % más altos. Pensado para emprendedores que quieren un sistema operativo, no una receta.',
+      a: 'Esos productos son monoconcepto (un único producto/servicio: parrilla, paella o chef privado). Este es el ÚNICO multi-concepto: enseña a montar 3-5 cocinas del mundo en paralelo en un mismo evento (ejemplo: sushi-bar + pizza al horno de leña + asado argentino simultáneamente). Cada estación temática en directo suma su coste (gas, montaje y menaje específico) y la calculadora te sugiere un cocinero más por estación; con eso te da el precio por invitado con el margen que tú fijes. Pensado para emprendedores que quieren un sistema operativo, no una receta.',
     },
     {
       q: '¿Sirve si nunca he montado mi propio negocio antes?',
-      a: 'Sí. El plan está pensado para chefs que arrancan desde cero. Incluye constitución autónomo (tarifa plana 80 EUR/mes primer año), alta IAE 677.9, plan APPCC móvil multi-concepto, RGSEAA, seguro RC profesional eventos con cláusula intoxicación. La guía de especialización progresiva te orienta para empezar con 1-2 conceptos dominados y añadir 1-2/año. El checklist de 6 fases con 110 hitos no se te escapa nada.',
+      a: 'Sí. El plan está pensado para chefs que arrancan desde cero. El checklist de apertura reúne 82 tareas en 6 fases: SL o autónomo (con la cuota reducida de inicio de actividad, si te aplica), alta en el epígrafe 677.9 del IAE, facturación Veri*factu, IVA al 10 %, contrato de cocina central autorizada, registro sanitario autonómico, APPCC y seguro de responsabilidad civil con cobertura de intoxicación alimentaria. La guía de especialización progresiva te orienta para empezar con 1-2 conceptos dominados y añadir 1-2/año.',
     },
     {
       q: '¿Cuántos conceptos temáticos cubre el plan?',
-      a: 'El plan documenta 12 conceptos pre-empaquetados (sushi-bar omakase, tacos al pastor + trompo móvil, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional). Cada uno con menú propuesto + escandallo + equipamiento clave + ambientación + operativa específica. La guía de especialización te orienta cómo elegir cuáles dominar primero según tu perfil y zona.',
+      a: 'El plan documenta 12 conceptos pre-empaquetados (sushi-bar omakase, tacos al pastor + trompo móvil, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional). Cada uno con menú propuesto + equipamiento clave + ambientación + operativa y precio orientativo. La guía de especialización te orienta cómo elegir cuáles dominar primero según tu perfil y zona.',
     },
     {
-      q: '¿La plantilla de 96 proveedores incluye contactos verificables?',
-      a: 'Sí. Cada proveedor lleva web, zona de cobertura y notas operativas. 12 bloques: importadores asiáticos premium (EMB Food, Cominport, Garmiko, Janax) + latinos/mexicanos (Importaciones Cuesta, CMA, Jasa Internacional, Maíz Maya) + italiano/mediterráneo (Caputo Harinas, Italfoods, Galbani) + indio/tandoor (Spice Box, Patak\'s, TRS Foods, Bombay Spices, iCatering Indian) + BBQ texano (ALEXS BBQ, Dame la Brasa, Smokefire) + carniceros premium (Cesáreo Gómez, Discarlux, El Capricho León, Treviño) + pescaderías + vegano + equipamiento (Wokinox, Josper, Pizza Party, Sammic) + vajilla (Pordamsa, Steelite, Schönwald) + plataformas. Verifica con cada uno antes de cerrar acuerdos.',
+      q: '¿Qué incluye la plantilla de 96 proveedores?',
+      a: 'Cada proveedor lleva web, zona de cobertura y notas operativas, y una columna de estado que arranca en «Por verificar» para que lleves el seguimiento. 12 bloques: importadores asiáticos premium (EMB Food, Cominport, Garmiko, Janax) + latinos/mexicanos (Importaciones Cuesta, CMA, Jasa Internacional, Maíz Maya) + italiano/mediterráneo (Caputo Harinas, Italfoods, Galbani) + indio/tandoor (Spice Box, Patak\'s, TRS Foods, Bombay Spices, iCatering Indian) + BBQ texano (ALEXS BBQ, Dame la Brasa, Smokefire) + carniceros premium (Cesáreo Gómez, Discarlux, El Capricho León, Treviño) + pescaderías + vegano + equipamiento (Wokinox, Josper, Pizza Party, Sammic) + vajilla (Pordamsa, Steelite, Schönwald) + plataformas. Confirma disponibilidad y condiciones con cada uno antes de pedir.',
     },
     {
-      q: '¿Cómo cubre el plan la regulación de catering itinerante por CCAA?',
-      a: 'Con un anexo dedicado en el Plan de Negocio. Resumen operativo de 17 comunidades autónomas: Registro Sanitario CCAA + RGSEAA, requisitos cocina cliente, normativa transporte alimentos, etiquetado bilingüe (Cataluña, País Vasco), trámites telemáticos vs presenciales y plazos. Plus orientación específica APPCC multi-concepto (cada concepto tiene riesgos distintos: pescado crudo sushi vs cordero asado argentino vs tandoor indio).',
+      q: '¿Cómo cubre el plan la normativa sanitaria del catering?',
+      a: 'Con la sección de aspectos legales del plan de negocio y la fase 2 del checklist: cocina central autorizada (para eventos no se puede cocinar en casa, RD 1021/2022), inscripción en el registro sanitario de tu comunidad autónoma previa declaración responsable (el RGSEAA, sólo si suministras a otros establecimientos), transporte en vehículo ATP, seguros y permisos de evento. Los trámites y plazos concretos los fija tu comunidad y tu ayuntamiento: confírmalos antes de abrir. Además, el manual técnico trae el APPCC multi-concepto (cada concepto tiene riesgos distintos: pescado crudo sushi vs cordero asado argentino vs tandoor indio).',
     },
     {
       q: '¿Sirve para presentar al banco si necesito financiación?',
-      a: 'Sí. El Plan Financiero Excel incluye P&L previsional 3 años, punto de equilibrio (14 eventos/mes break-even año 1), 3 escenarios inversión (5.500 € mínimo viable / 11.500 € recomendado / 35.000 € premium), mix B2C+B2B desglosado por canal, plan cashflow con estacionalidad bodas + corporate. Formato estándar bancos para microcrédito o ICO emprendedores.',
+      a: 'Sí. El plan financiero Excel tiene 9 hojas: inversión inicial, PyG previsional a 3 años, punto de equilibrio en invitados por evento y en ingresos (el plan en Word lo traduce a eventos al año), escenarios pesimista y optimista, personal, tesorería de 12 meses con el IVA trimestral y financiación con recursos propios, préstamo con carencia, cuadro de amortización y DSCR. El plan de negocio en Word cuenta las mismas cifras. Sirve para presentarlo al banco, aunque la aprobación siempre depende de la entidad.',
     },
     {
       q: '¿Cómo funciona la garantía?',
@@ -273,13 +273,13 @@ const data: PlanNegocioData = {
     subtitle:
       'No dejes pasar esta oportunidad. Únete a sushi masters, taqueros, pizzaiolos, asadores argentinos, chefs ceviche y tandoor masters que ya montaron o escalaron su catering temático multi-concepto con un plan adaptado al mercado español premium.',
     items: [
-      'Plan de Negocio DOCX 60+ pp. + Plan Financiero Excel 6 hojas',
-      'Calculadora Pricing multi-concepto + Plantilla 96 proveedores · 12 cocinas del mundo',
+      'Plan de negocio en Word (10 secciones) + Plan financiero Excel de 9 hojas',
+      'Calculadora de precios por invitado + Plantilla de 96 proveedores · 12 cocinas del mundo',
       'Catálogo equipamiento multi-cocina (cuchillería japonesa, horno leña, tandoor, smoker, wok)',
       '12 conceptos pre-empaquetados + Carta 12 menús temáticos cocinas del mundo',
       'Manual técnico APPCC multi-concepto + Modelos contrato B2C + B2B corporate (con MSA)',
       'Guía especialización progresiva — escalar de 1 a 6+ conceptos en portafolio',
-      'Checklist apertura 6 fases + anexo regulación 17 CCAA catering itinerante',
+      'Checklist de apertura: 82 tareas en 6 fases, con los trámites españoles',
       'Acceso de por vida + 30 días garantía devolución',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €45',
@@ -303,7 +303,7 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-paellero-eventos', label: 'Plan Paellero Eventos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.2 · octubre 2026',
 
   alreadyBought: {
     product: 'plan-catering-tematico-eventos',
