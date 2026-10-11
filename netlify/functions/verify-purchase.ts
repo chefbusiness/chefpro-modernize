@@ -500,7 +500,7 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/plan-negocio-paellero-eventos-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Paellero / Paella para Eventos',
     emailTitle: '¡Gracias por tu compra!',
-    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Paellero / Paella para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing, plantilla de 88 proveedores DO Valencia + Calasparra, catálogo equipamiento, manual técnico paellero (fuego + socarrat), carta de 12 paellas, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck arrocería y checklist de apertura con anexo CCAA fuego al aire libre y excepción Falles:',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Paellero / Paella para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: plan de negocio en Word de 10 secciones con anexo del fuego al aire libre, plan financiero Excel de 9 hojas, calculadora de presupuestos por evento, plantilla de 88 proveedores DO Valencia + Calasparra, catálogo equipamiento, manual técnico paellero (fuego + socarrat), carta de 12 paellas, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck arrocería y checklist de apertura de 83 tareas en 6 fases:',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
   'plan-chef-privado-showcooking-eventos': {
@@ -514,7 +514,7 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/plan-catering-tematico-eventos-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Catering & Kit Temático para Eventos',
     emailTitle: '¡Gracias por tu compra!',
-    emailBody: 'Tu acceso al <strong>Plan de Negocio para Catering &amp; Kit Temático para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C 35 % + B2B 65 %, Calculadora Pricing multi-concepto, plantilla de 96 proveedores especializados en 12 cocinas del mundo (importadores asiáticos, latinos, italianos, BBQ texano, indios), catálogo equipamiento multi-cocina (cuchillería japonesa, horno leña, tandoor, smoker, wok), 12 conceptos pre-empaquetados, carta 12 menús cocinas del mundo, manual técnico APPCC multi-concepto, modelos contrato B2C + B2B corporate con MSA, guía especialización progresiva y checklist apertura con anexo regulación 17 CCAA catering itinerante:',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio para Catering &amp; Kit Temático para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables de la versión 2.2: plan de negocio en Word de 10 secciones, plan financiero Excel de 9 hojas (eventos × invitados × precio por invitado, con tesorería y préstamo), calculadora de presupuestos por invitado, checklist de apertura de 82 tareas en 6 fases, plantilla de 96 proveedores de 12 cocinas del mundo, catálogo de equipamiento multi-cocina, 12 conceptos pre-empaquetados, carta de 12 menús de cocinas del mundo, manual técnico APPCC multi-concepto, modelos de contrato B2C y B2B y guía de especialización progresiva:',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
 };

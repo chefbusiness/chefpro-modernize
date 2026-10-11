@@ -16,56 +16,56 @@ const TEMPLATES = [
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'DOCX completo de 60+ páginas: análisis de mercado España 2026, 10 competidores, doble embudo B2C+B2B, marco legal CCAA fuego al aire libre con excepción Falles, financiero 3 años, riesgos y roadmap.',
+    desc: 'Plan de negocio en 10 secciones más un anexo del fuego al aire libre en 8 comunidades (más de 7.000 palabras, A4): resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción. Sus cifras son las del caso de ejemplo del Excel: si cambias el Excel, manda el Excel.',
   },
   {
     key: 'plan-financiero',
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: 'P&L 3 años con mix B2C 35 % + B2B 65 %, inversión 3.500-25.000 EUR según escenario, estacionalidad mayo-octubre + Falles, break-even 18-22 eventos año 1.',
+    desc: '9 hojas: supuestos, inversión inicial, PyG 3 años, punto de equilibrio (raciones por evento e ingresos), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × raciones por evento × precio por ración sin IVA; IVA del 10 %, cocina de apoyo autorizada, sueldo del dueño, amortización y ayudantes fijos discontinuos. Cambia las celdas verdes por tus datos.',
   },
   {
     key: 'calculadora-pricing',
     icon: Calculator,
     type: '.xlsx',
-    title: 'Calculadora Pricing Eventos',
-    desc: 'Excel con fórmulas duales B2C particular + B2B planner. Inputs: pax, distancia, tipo de paella, concepto, ayudantes ⇒ precio sugerido + margen. Con 10 ejemplos validados.',
+    title: 'Calculadora de Presupuestos por Evento',
+    desc: 'Paelleras por diámetro, paelleros, kilos de arroz, litros de caldo y gas; materia prima, menaje, personal con su Seguridad Social y alquileres, al precio por invitado sin IVA y con IVA (10 %). Particular o empresa, desplazamiento a 0,95 €/km, anticipo del 30 %, importes por tramo de cancelación y margen calculado. 3 presupuestos de ejemplo: boda, empresa y fiesta popular.',
   },
   {
     key: 'plantilla-proveedores',
     icon: Truck,
     type: '.xlsx',
-    title: 'Plantilla 88 Proveedores Reales',
-    desc: 'Arroceros DO Valencia (Tartana, J. Sendra, Calasparra DO), carniceros mayoristas, mariscos Mediterráneo (Linamar, Castellet, Nardín DO Denia), verduras Levante, azafrán DO La Mancha, Garcima/Vaello, Pordamsa.',
+    title: 'Plantilla de 88 Proveedores',
+    desc: 'Arroceros DO Valencia (Tartana, J. Sendra, Calasparra DO), carniceros mayoristas, mariscos Mediterráneo (Linamar, Castellet, Nardín DO Denia), verduras Levante, azafrán DO La Mancha, Garcima/Vaello, Pordamsa. Con una columna de estado que arranca en «Por verificar».',
   },
   {
     key: 'catalogo-equipamiento',
     icon: Wrench,
     type: '.docx',
     title: 'Catálogo Equipamiento + Menaje',
-    desc: 'Paelleras Garcima 60-90-120 cm + paellero Vaello 4 fuegos 50 kW + trípode leña + cuchillería Arcos + vajilla Pordamsa + EPI Texfire. SKU + URL + precio actualizado.',
+    desc: 'Paelleras Garcima 60-90-120 cm + paellero Vaello 4 fuegos 50 kW + trípode leña + cuchillería Arcos + vajilla Pordamsa + EPI Texfire. SKU + URL + precio orientativo.',
   },
   {
     key: 'checklist-apertura',
     icon: ClipboardCheck,
     type: '.xlsx',
-    title: 'Checklist Apertura (6 fases)',
-    desc: 'Constitución (autónomo + IAE 677.9 + APPCC + RGSEAA) · seguros RC eventos con cláusula intoxicación · equipamiento + arroceros DO · marca y web · captación B2C+B2B · operativa primer evento. 104 hitos.',
+    title: 'Checklist de Apertura (83 tareas)',
+    desc: '83 tareas en 6 fases: constitución y fiscalidad (IAE 677.9, Veri*factu, IVA al 10 %) · cocina de apoyo autorizada, registro sanitario autonómico, APPCC, gas, fuego y permisos · equipamiento y proveedores · personal y formación · marca y captación (ayuntamientos por FACe) · primer evento y primeros 90 días.',
   },
   {
     key: 'carta-paellas',
     icon: Utensils,
     type: '.docx',
     title: 'Carta 12 Paellas y Arroces',
-    desc: 'Valenciana DO + marisco premium + senyoret + arroz negro + mixta + arroz a banda + fideuá + meloso bogavante + caldoso bogavante + montaña + alicantina con costra + vegetal DO. Receta + escandallo + maridaje.',
+    desc: 'Valenciana DO + marisco premium + senyoret + arroz negro + mixta + arroz a banda + fideuá + meloso bogavante + caldoso bogavante + montaña + alicantina con costra + vegetal DO. Receta + food cost por ración + maridaje, con PVP orientativo por ración.',
   },
   {
     key: 'modelos-contrato',
     icon: ScrollText,
     type: '.docx',
     title: 'Modelos Contrato B2C + B2B',
-    desc: 'Plantillas legales editables: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias, ayuntamientos) con anexo tarifario, briefing y SLA.',
+    desc: 'Plantillas editables y orientativas: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners y agencias) con anexo tarifario, briefing y SLA, IVA al 10 %, cancelación escalonada y fuerza mayor por alerta de incendios. Revísalas con tu asesor antes de usarlas.',
   },
   {
     key: 'experiencias-tematicas',
@@ -86,7 +86,7 @@ const TEMPLATES = [
     icon: Tent,
     type: '.docx',
     title: 'Guía 8 Sistemas + Roadmap Food Truck',
-    desc: 'Comparativa paellero gas profesional, fuego de leña con trípode, paellero leña obra, eléctrico inducción, gas industrial, portátil camping, caja china peruana, paellero solar. + Roadmap food truck arrocería: inversión 30-75K EUR, regulación 8 CCAA.',
+    desc: 'Comparativa paellero gas profesional, fuego de leña con trípode, paellero leña obra, eléctrico inducción, gas industrial, portátil camping, caja china peruana, paellero solar. + Roadmap food truck arrocería: inversión de 26.000 a 86.000 € según su tabla, regulación 8 CCAA.',
   },
 ];
 
@@ -125,7 +125,7 @@ export default function PlanNegocioPaelleroEventosDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-paellero-eventos" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 11 entregables para montar tu servicio premium itinerante de paella y arroces en España 2026.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 11 entregables para montar tu servicio premium itinerante de paella y arroces en España.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">

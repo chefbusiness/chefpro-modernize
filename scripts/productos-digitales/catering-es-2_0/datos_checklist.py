@@ -61,7 +61,9 @@ FASES = [
          'falta si suministras a otros establecimientos de forma no marginal'),
         ('Plan APPCC del catering: prerrequisitos y puntos de control', 'Jefe/a de cocina', 'Antes del primer evento',
          'Cadena de frío y de caliente en producción, transporte y estación: 63 °C o más en caliente, 4-8 °C o '
-         'menos en frío (art. 30 del RD 1086/2020). Registros de temperatura en cada evento'),
+         'menos en frío (art. 30 del RD 1086/2020). Registros de temperatura en cada evento. Guarda una comida testigo '
+         'de cada plato (100 g, identificada y fechada, a 4 °C o menos o congelada, 7 días): obligatoria en eventos y '
+         'en encargos de más de 40 personas (art. 30.8 y 30.10 del RD 1086/2020)'),
         ('Fichas de alérgenos por menú y por estación', 'Jefe/a de cocina', 'Antes del primer evento',
          'Reglamento (UE) 1169/2011 y RD 126/2015: información de los 14 alérgenos en alimentos sin envasar, '
          'también en las estaciones en directo'),
@@ -207,7 +209,7 @@ FASES = [
         ('Montaje de las estaciones y briefing del equipo', 'Coordinador/a de eventos', 'Día del evento',
          '60-90 minutos de montaje; en el briefing: horarios, alergias y quién atiende cada estación'),
         ('Servicio y show cooking', 'Equipo', 'Día del evento',
-         'Temperaturas registradas en cada estación'),
+         'Temperaturas registradas en cada estación y comida testigo de cada plato (art. 30.8 del RD 1086/2020)'),
         ('Recogida y entrega del espacio con fotos', 'Coordinador/a de eventos', 'Final del evento',
          'Fotos del espacio antes y después'),
         ('Factura final en 24-48 horas y cobro', 'Titular', 'D+1 / D+2',

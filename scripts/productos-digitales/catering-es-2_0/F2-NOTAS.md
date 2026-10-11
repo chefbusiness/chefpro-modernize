@@ -205,3 +205,17 @@ cifras por token desde `cifras_caso_es.json`; sin DSCR, payback ni saldos). Lueg
 | Checklist | `05495c3b…0b81` |
 | Calculadora | `bdab5bb1…7199` |
 | Docx | `521ae473…c0c8` |
+
+## 8. Ronda del Paellero 2.2 aplicada aquí (11-oct-2026, sesión Claude Code)
+
+- M1: la frase «el Word sigue en la versión 1.1» de `Tesorería!D31` va por `VOCABULARIO`.
+- M4: comida testigo (RD 1086/2020, art. 30.8 y 30.10) en el checklist (F2 y F6) y en el docx p104.
+- m8: `Tesorería!O16` ya no cita «el pan común».
+- m9: `0. Supuestos!B11` pasa al 82 % de la SPEC D4 (conservaba el 85,19 % del molde).
+- Cambios de cifras:
+  - neto 39.297 → 39.540 €;
+  - DSCR 2,84 → 2,85;
+  - equilibrio 55 → 54 invitados/evento y 109 → 108 eventos/año (caja 106 → 105);
+  - holgura de caja 23,7/24,3 → 23,8/24,4 %;
+  - margen bruto 61,3 → 61,4 %.
+- Sin cambios: ventas, inversión y préstamo. La landing pasa a «en torno a 108 eventos al año».

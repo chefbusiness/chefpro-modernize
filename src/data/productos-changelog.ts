@@ -1567,9 +1567,25 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-paellero-eventos': {
-    version: '1.2',
-    updated: '2026-10-11',
+    version: '2.2',
+    updated: '2026-10-12',
     entries: [
+      {
+        version: '2.2',
+        date: '2026-10-12',
+        title: 'Modelo rehecho: plan financiero de 9 hojas, calculadora nueva, checklist de 83 tareas y plan de negocio reescrito',
+        changes: [
+          'Plan financiero Excel rehecho en 9 hojas: supuestos, inversión inicial, PyG a 3 años, punto de equilibrio, escenarios, personal, tesorería de 12 meses, financiación e instrucciones. Las ventas salen de una fórmula —eventos al año × raciones por evento × precio por ración sin IVA—, con el IVA del catering con servicio al 10 % y el Impuesto de Sociedades de una SL (si arrancas como autónomo, el resultado tributa en el IRPF).',
+          'Lo que corregimos de la versión anterior: el modelo no tenía sueldo del dueño, personal contratado, amortización, IVA, impuestos, préstamo ni tesorería, así que su punto de equilibrio salía muy por debajo de la realidad; los ayudantes figuraban como autónomos que facturan en lugar de contratados; los porcentajes de coste estaban tecleados dentro de las fórmulas, y las cifras de inversión y de beneficio del Excel, del Word y de la ficha del producto no cuadraban entre sí.',
+          'El modelo recoge lo que de verdad cuesta un servicio itinerante de paellas: una cocina de apoyo autorizada para la mise en place, los caldos y el almacén de paelleras y bombonas (para eventos no se puede preparar en casa, RD 1021/2022), el sueldo del dueño, la amortización de la furgoneta y del equipo y un fondo de maniobra. Caso de ejemplo: 105 eventos al año con una media de 94 raciones a 16 € por ración sin IVA, la media de mezclar bodas, comidas de empresa, fiestas privadas y fiestas populares de ayuntamiento. El punto de equilibrio se lee en raciones por evento y en ingresos, y el plan de negocio lo traduce a eventos al año.',
+          'Personal: el dueño-paellero, un ayudante que hace de segundo paellero y dos auxiliares de evento, los tres contratados como fijos discontinuos (art. 16 del Estatuto de los Trabajadores) y no como autónomos que te facturan, con la Seguridad Social de la empresa y la comprobación de que las horas contratadas cubren las de los eventos. Tesorería mes a mes con la estacionalidad de bodas y fiestas y la liquidación trimestral del IVA, y hoja de financiación con recursos propios, préstamo con carencia, cuadro de amortización y comprobación de la capacidad de pago (DSCR).',
+          'Calculadora de presupuestos nueva: de los invitados y el diámetro de paellera saca las paelleras y los paelleros que necesitas (uno por cada tres paelleras), los kilos de arroz, los litros de caldo y el gas; suma materia prima, menaje, personal con su Seguridad Social y alquileres, y da el precio por invitado sin IVA y con IVA (10 %), el desplazamiento a 0,95 €/km en una línea aparte, el anticipo del 30 %, los importes por tramo de cancelación de particulares y empresas y el margen bruto calculado, no tecleado. Los 3 presupuestos de ejemplo —una boda, una comida de empresa con show cooking y una fiesta popular de ayuntamiento— se calculan con las mismas fórmulas y sustituyen a los ejemplos de valores fijos de la versión anterior.',
+          'Checklist de apertura de 83 tareas en 6 fases, cada una con responsable, plazo y nota, en lugar de la lista de una sola hoja: constitución y fiscalidad (IAE 677.9, Veri*factu, IVA al 10 %, RGPD y LSSI); cocina de apoyo autorizada, registro sanitario de tu comunidad autónoma previa declaración responsable (el RGSEAA, sólo si suministras a otros establecimientos), APPCC, gas (aparatos con marcado CE, transporte de las botellas en la furgoneta y extintores), época de peligro de incendios, seguros y permisos; equipamiento y proveedores; personal y formación en higiene alimentaria; marca y captación, con los ayuntamientos por contrato menor y factura electrónica por FACe, y primer evento y primeros 90 días.',
+          'Plan de negocio en Word reescrito: 10 secciones con encabezados navegables, más de 7.000 palabras en A4 y las mismas cifras que el Excel. El anexo del fuego al aire libre en 8 comunidades, revisado: los nombres de los planes de incendios, la franja alrededor del monte (donde la licencia de la finca no levanta la restricción) y las paellas de Fallas y de las fiestas en la calle, que dependen del bando de cada municipio. Fuera las cifras de mercado sin una fuente que las respalde y la tabla de competidores con nombres sin verificar.',
+          'Los otros 7 ficheros, revisados sobre la 1.2, que ya traía el manual técnico ampliado: los contratos pasan a ser plantillas orientativas para revisar con tu asesor; el de particulares avisa de que no hay derecho de desistimiento en un servicio con fecha y limita el pago en efectivo a 1.000 €, y los dos llevan fuerza mayor con plan B si una alerta de incendios prohíbe el fuego o el gas. La carta da el food cost y el PVP orientativo por ración (bodas y empresas) y explica el precio de las fiestas populares por volumen; el catálogo, precios orientativos, y la plantilla de proveedores trae la columna de estado en «Por verificar» y pierde el sello «España 2026» de la cabecera, que no tenía respaldo.',
+          'Número de versión (2.2) en el plan financiero, el checklist, la calculadora y el plan de negocio.',
+        ],
+      },
       {
         version: '1.2',
         date: '2026-10-11',

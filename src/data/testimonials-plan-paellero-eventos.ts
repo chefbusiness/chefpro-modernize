@@ -23,13 +23,13 @@ export const planPaelleroEventosTestimonials = [
   {
     name: 'Antonio Rivas',
     role: 'Paellero murciano, Mar Menor',
-    text: 'Soy de Murcia y llevaba años haciendo paella de marisco en eventos privados sin marca. El plan de negocio y el dossier B2B me posicionaron premium en wedding planners de la zona Levante.',
+    text: 'Soy de Murcia y llevaba años haciendo paella de marisco en eventos privados sin marca. El plan de negocio y los contratos B2B me posicionaron premium en wedding planners de la zona Levante.',
     avatar: avatar3,
   },
   {
     name: 'Marc Esteve',
     role: 'Joven emprendedor arrocero, Valencia',
-    text: 'Empecé con 4.200 EUR siguiendo el escenario mínimo viable. En el segundo año ya facturo más de 95.000 EUR. La plantilla de 88 proveedores DO Valencia me ahorró 3 meses de búsqueda.',
+    text: 'En el segundo año ya facturo más de 95.000 EUR. La plantilla de 88 proveedores DO Valencia me ahorró 3 meses de búsqueda.',
     avatar: avatar4,
   },
   {
