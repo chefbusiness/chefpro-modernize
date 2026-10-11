@@ -261,8 +261,15 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **La v2.0 completa de línea B (motor `grupo_b.py`, SPEC §3) sigue pendiente** y NO se hizo: break-even sin amortización (10,2
   eventos/año frente a «18-22» de la landing), inversión de la landing (3.500-25.000) frente al xlsx (3.790 / 9.670 / 23.110),
   tasas dentro de fórmulas, manual técnico corto (~1.100 palabras), «Plantillas validadas con asesor legal» sin respaldo.
-- **Correo (regla del 5-sep):** slot **18-nov 08:00 UTC** (Churrería 13-nov + 5), programable desde el **19-oct** (tope de 30 días
-  de Resend). Plantilla de partida: `emails/broadcast-plan-negocio-*-v2.2-es.html`.
+- **Cola de correos SANEADA el 11-oct** (John: «decide tú y soluciona eso»; había 4 huecos programables sin programar):
+  - Programados hoy: **Escandallos 2.1** 3-nov 08:00Z `bd4839ce` · **Kit Chocolatería 2.1** 8-nov 08:00Z `f53775c5` (ES) ·
+    **Coffee Shop** 4-nov 14:00Z `c6f59951` · **Restaurant** 9-nov 14:00Z `8789caca` (EN).
+  - Más allá del tope de 30 días de Resend → **BORRADORES** + routine en la nube **`trig_01WdpgX2KtUL9PbTyXHC4dVg`** (19-oct 08:23Z,
+    conector Resend, probado en lectura con `trig_013WPxwByVLs8GG76vN2djSD`) que los programa: **Churrería** 13-nov 08:00Z `395a7eb1`
+    (`emails/broadcast-guia-churreria-lanzamiento-es.html`) · **Bakery EN** 14-nov 14:00Z `68bc8f49` · **Paellero 1.2** 18-nov 08:00Z
+    `42ccda21` (`emails/broadcast-plan-negocio-paellero-eventos-v1.2-es.html`). Pruebas de los dos ES enviadas a John.
+    Comprobar el resultado: `RemoteTrigger list_runs` del routine o https://claude.ai/code/routines.
+  - **Siguiente hueco libre: ES 23-nov 08:00Z · EN 19-nov 14:00Z.**
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
@@ -330,7 +337,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 
 10-oct eBook (`b2c99916`) · 15-oct HACCP (`9b7f8f57`) · 20-oct Staff (`7b520469`) · 25-oct Financial (`3d49a8d7`) · 30-oct
 Food Truck Business Plan (`f52308c0`) · **4-nov Coffee Shop (programar desde el 5-oct) · 9-nov Restaurant (desde el 10-oct) ·
-14-nov Bakery (desde el 15-oct)**. Siguiente hueco EN: 19-nov.
+14-nov Bakery (desde el 15-oct)**. Siguiente hueco EN: 19-nov. → **11-oct: Coffee Shop y Restaurant PROGRAMADOS; Bakery en borrador, lo programa el routine del 19-oct (ver entrada 11-oct).**
 
 ## 2. Calendario (semana = lunes a domingo; 1 producto, máx. 2)
 
