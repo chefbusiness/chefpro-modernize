@@ -4,8 +4,12 @@ gate_restos_ft.py — Catering ES 2.2 (REVISION-FINAL B1 y m13): en los 11 fiche
   · 0 restos del molde Food Truck («food truck», «food-truck», «plan-negocio-food-truck») en celdas (valores y
     literales de fórmula), docProps de los xlsx y texto, tablas y docProps de los docx;
   · los 8 docx en A4, con autor «AI Chef Pro», sin «python-docx» en los metadatos y con fecha de creación ≥ 2026.
-Corre en el VPS. Uso: gate_restos_ft.py [carpeta] · exit 1 si algo falla. Sesión Claude Code, 11-oct-2026.
+Corre en el VPS. Uso: gate_restos_ft.py [carpeta] [--rx-extra REGEX] [--excluir f1,f2] · exit 1 si algo falla.
+Sin opciones se comporta como en el catering. Paellero 2.2 (SPEC D15): `--rx-extra` añade los restos del catering y
+`--excluir` salta la búsqueda de restos (no la de A4 ni docProps) en los ficheros donde «food truck» es legítimo.
+Sesión Claude Code, 11-oct-2026.
 """
+import argparse
 import os
 import re
 import sys
@@ -19,24 +23,26 @@ DL = os.path.abspath(os.path.join(AQUI, '..', '..', '..', 'astro-site', 'public'
 RX = re.compile(r'food[\s-]?truck|plan-negocio-food-truck', re.I)
 
 
-def main(carpeta):
+def main(carpeta, rx_extra=None, excluir=()):
+    rx_ok = RX if not rx_extra else re.compile(RX.pattern + '|' + rx_extra, re.I)
     err, n = [], 0
     for f in sorted(os.listdir(carpeta)):
         p = os.path.join(carpeta, f)
         n += 1
+        RXF = re.compile(r'(?!x)x') if f in excluir else rx_ok   # nunca casa: fichero exento de restos
         if f.endswith('.xlsx'):
             wb = openpyxl.load_workbook(p)
             for ws in wb.worksheets:
-                if RX.search(ws.title):
+                if RXF.search(ws.title):
                     err.append('%s: pestaña «%s»' % (f, ws.title))
                 for row in ws.iter_rows():
                     for c in row:
-                        if isinstance(c.value, str) and RX.search(c.value):
+                        if isinstance(c.value, str) and RXF.search(c.value):
                             err.append('%s · %s!%s: %s' % (f, ws.title, c.coordinate, c.value[:90]))
             pr = wb.properties
             for campo in ('title', 'subject', 'description', 'keywords', 'category', 'creator', 'lastModifiedBy'):
                 v = getattr(pr, campo) or ''
-                if RX.search(str(v)):
+                if RXF.search(str(v)):
                     err.append('%s · docProps %s: %s' % (f, campo, v))
         elif f.endswith('.docx'):
             d = docx.Document(p)
@@ -48,12 +54,12 @@ def main(carpeta):
                 for hf in (s.header, s.footer, s.first_page_header, s.first_page_footer):
                     textos += [x.text for x in hf.paragraphs]
             for t in textos:
-                if RX.search(t):
+                if RXF.search(t):
                     err.append('%s: «%s»' % (f, t[:90]))
             cp = d.core_properties
             for campo in ('title', 'subject', 'comments', 'keywords', 'category', 'author', 'last_modified_by'):
                 v = getattr(cp, campo) or ''
-                if RX.search(v) or 'python-docx' in v:
+                if RXF.search(v) or 'python-docx' in v:
                     err.append('%s · docProps %s: %s' % (f, campo, v))
             if cp.author != 'AI Chef Pro':
                 err.append('%s · autor %r' % (f, cp.author))
@@ -70,4 +76,9 @@ def main(carpeta):
 
 
 if __name__ == '__main__':
-    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else DL))
+    ap = argparse.ArgumentParser()
+    ap.add_argument('carpeta', nargs='?', default=DL)
+    ap.add_argument('--rx-extra')
+    ap.add_argument('--excluir', default='')
+    a = ap.parse_args()
+    sys.exit(main(a.carpeta, a.rx_extra, tuple(x for x in a.excluir.split(',') if x)))
