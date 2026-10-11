@@ -7,7 +7,7 @@ const bonuses = [
     label: 'BONUS 1',
     title: 'Manual Técnico Paellero',
     value: '€40',
-    desc: 'Técnica del fuego en 4 fases (sofrito, proteínas, caldo + arroz, socarrat) + 6 tipos de arroz Bomba/J. Sendra/Albufera/Sénia + 3 caldos profesionales + salmueras + tabla de cocción de 12 paellas + 4 salsas. La pieza que separa al paellero amateur del profesional.',
+    desc: 'El manual de cocina del evento: escalado por paellera y número de invitados, técnica del fuego en 4 fases con gas o leña, 6 tipos de arroz Bomba/J. Sendra/Albufera/Sénia, 4 caldos, tabla de cocción de 12 paellas, cronograma hora a hora, seguridad alimentaria, alérgenos por paella y tabla de problemas y soluciones. La pieza que separa al paellero amateur del profesional.',
     image: '/lovable-uploads/ai-gallery/plan-paellero-eventos-3.jpg',
   },
   {

@@ -79,7 +79,7 @@ const TEMPLATES = [
     icon: Flame,
     type: '.docx',
     title: 'Manual Técnico Paellero',
-    desc: 'Técnica del fuego en 4 fases (sofrito, proteínas, caldo+arroz, socarrat) + 6 tipos arroz Bomba/Sendra/Albufera + 3 caldos pro + salmueras + tabla cocción 12 paellas + 4 salsas + errores frecuentes.',
+    desc: 'Escalado por paellera (diámetro → raciones → arroz → caldo → quemador) y cómo cubrir 50, 100 o 200 invitados + técnica del fuego en 4 fases, con gas o leña + 6 tipos de arroz + 4 caldos + tabla de cocción de 12 paellas + cronograma del evento + seguridad alimentaria y alérgenos por paella + problemas y soluciones + checklist de material.',
   },
   {
     key: 'guia-sistemas',
