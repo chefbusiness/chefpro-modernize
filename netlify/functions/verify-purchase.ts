@@ -500,7 +500,7 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/plan-negocio-paellero-eventos-access',
     emailSubject: 'Tu acceso al Plan de Negocio: Paellero / Paella para Eventos',
     emailTitle: '¡Gracias por tu compra!',
-    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Paellero / Paella para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing, plantilla de 88 proveedores DO Valencia + Calasparra, catálogo equipamiento, manual técnico paellero (fuego + socarrat), carta de 12 paellas, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck arrocería y checklist de apertura con anexo CCAA fuego al aire libre y excepción Falles:',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Paellero / Paella para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: plan de negocio en Word de 10 secciones con anexo del fuego al aire libre, plan financiero Excel de 9 hojas, calculadora de presupuestos por evento, plantilla de 88 proveedores DO Valencia + Calasparra, catálogo equipamiento, manual técnico paellero (fuego + socarrat), carta de 12 paellas, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck arrocería y checklist de apertura de 83 tareas en 6 fases:',
     emailCta: 'Acceder a mi Plan de Negocio',
   },
   'plan-chef-privado-showcooking-eventos': {

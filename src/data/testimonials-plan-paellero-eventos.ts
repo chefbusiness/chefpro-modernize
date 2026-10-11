@@ -29,7 +29,7 @@ export const planPaelleroEventosTestimonials = [
   {
     name: 'Marc Esteve',
     role: 'Joven emprendedor arrocero, Valencia',
-    text: 'Empecé con 4.200 EUR siguiendo el escenario mínimo viable. En el segundo año ya facturo más de 95.000 EUR. La plantilla de 88 proveedores DO Valencia me ahorró 3 meses de búsqueda.',
+    text: 'En el segundo año ya facturo más de 95.000 EUR. La plantilla de 88 proveedores DO Valencia me ahorró 3 meses de búsqueda.',
     avatar: avatar4,
   },
   {
