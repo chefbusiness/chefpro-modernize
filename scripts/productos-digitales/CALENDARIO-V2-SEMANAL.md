@@ -296,7 +296,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Además hoy (PR #117):** fuera el precio tachado y los «valores» de bonus de toda la tienda EN (FTC 16 CFR 233.1). Los correos EN
   ya programados que dicen «launch/regular price» se quedan así (John: «déjalo así… para no retrasar trabajo»).
 
-### ▶️ 2026-10-11 (Claude Code en el Mac + VPS) — **Catering Business Plan Kit (EN, $39) EN CURSO** · F1 cerrada
+### ▶️ 2026-10-11 (Claude Code en el Mac + VPS) — **Catering Business Plan Kit (EN, $39) LISTO a falta del Payment Link** (PR #122 draft)
 
 - John eligió el Catering (880/mes en EE. UU., LOW, subiendo) y el retoque del Bakery para «pastry business plan» (1.900/mes;
   su SERP es de bakery business plans → sin producto nuevo; LIVE en el PR #121).
@@ -307,6 +307,17 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Retomar:** worktrees `scratchpad/wt-cat` (Mac) y `/root/wt-cat` (VPS) en la rama; F2 paso 1 = implementador opus
   según `SPEC-delta.md` §3-§7 y el patrón de `business-plans-en-3/F2-NOTAS.md`. Deuda ES de la línea B (ficha del catering:
   «break-even 14 eventos/mes», «60+ pp.», «10 ejemplos validados»): anotada, no se toca ahora.
+- **F2 + F3 cerradas el mismo día** (rama `feat/catering-business-plan-en`, HEAD `261804be`; preview
+  `deploy-preview-122--aichefpro.netlify.app`). 4 ficheros en `dl/catering-business-plan/` (docx 6.662 palabras · xlsx 9 hojas
+  722 fórmulas · calculadora con autotest · checklist 68 tareas). Caso: 180 eventos × 60 invitados × $60 = $648,000 · préstamo
+  $146,000 · DSCR 2.60 · equilibrio 151 eventos · neto 7,5 %. Revisión opus: 0 bloqueantes, 5 MAYOR + 14 MENOR de TEXTO
+  aplicados (`e958c641`; ninguna cifra cambió). Gates F2 y regresión FT/CAF/REST/PAN/BAR en verde; contra la preview solo
+  fallan los 3 del Payment Link. ≈ 2,6 M tokens en total (techo M = 5 M).
+- **Cierre al recibir el link** (como el Bar): CLI de Stripe (USD 39, redirección
+  `/en/digital-products/catering-business-plan/access?session_id={CHECKOUT_SESSION_ID}`) → env
+  `VITE_STRIPE_PAYMENT_LINK_CATERING_BUSINESS_PLAN` (builds) → `sync-payment-links.py` → PR fuera de draft + merge → gates
+  LIVE (`gate-flujo-postpago --only`, completo, `tienda-gate`, `robots-gate --live`, `carrusel-apps-gate`) → GSC → correo EN
+  24-nov 14:00Z (borrador + routine el 25-oct; plantilla `broadcast-catering-business-plan-lanzamiento-en.html`) → worktrees fuera.
 - 🔜 **SIGUIENTE TAREA tras el Catering EN (John, 11-oct: «habrá que solucionar el de español… para que quede conforme a los
   estándares de calidad»): Plan Catering Temático Eventos ES → 2.0.** Reutiliza el motor que sale del EN (molde FT ES con
   eventos/año × €/invitado × invitados/evento, personal fijo + cobertura por evento, calculadora coste → precio con IVA 10 %),
