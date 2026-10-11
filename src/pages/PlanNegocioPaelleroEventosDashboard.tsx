@@ -51,7 +51,7 @@ const TEMPLATES = [
     icon: ClipboardCheck,
     type: '.xlsx',
     title: 'Checklist Apertura (6 fases)',
-    desc: 'Constitución (autónomo + IAE 677.9 + APPCC + RGSEAA) · seguros RC eventos con cláusula intoxicación · equipamiento + arroceros DO · marca y web · captación B2C+B2B · operativa primer evento. 110 hitos.',
+    desc: 'Constitución (autónomo + IAE 677.9 + APPCC + RGSEAA) · seguros RC eventos con cláusula intoxicación · equipamiento + arroceros DO · marca y web · captación B2C+B2B · operativa primer evento. 104 hitos.',
   },
   {
     key: 'carta-paellas',

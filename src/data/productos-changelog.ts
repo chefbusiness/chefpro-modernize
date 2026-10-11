@@ -1502,9 +1502,23 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'plan-negocio-paellero-eventos': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '1.2',
+    updated: '2026-10-11',
     entries: [
+      {
+        version: '1.2',
+        date: '2026-10-11',
+        title: 'Revisión de los 11 ficheros: fórmulas comprobadas, desplegables y contrato al día',
+        changes: [
+          'Calculadora de precios: el anticipo se muestra en euros (antes salía como porcentaje), el precio por comensal ya no da error si el número de invitados está en blanco o a cero, y los campos de texto que leen las fórmulas (canal B2C/B2B, tipo de paella, opciones sí/no, clima) tienen desplegable, para que una tilde de menos no lleve a un precio equivocado.',
+          'Plan financiero: el número de eventos de la proyección a 3 años se muestra como recuento, no en euros. Todas las fórmulas de los Excel comprobadas, sin errores.',
+          'Checklist de apertura: columna OK con desplegable (✓, ☐, N/A), contador de progreso y color verde al completar. El recuento real es de 104 hitos en 6 fases.',
+          'Plantilla de proveedores: la pestaña se llama ahora «88 proveedores», el número real que contiene.',
+          'Modelos de contrato: IVA del servicio al 10 % (hostelería) en lugar del 21 %, cancelación del cliente particular escalonada y con indemnización simétrica si cancela el paellero, y tribunales del domicilio del consumidor en el contrato B2C.',
+          'Manual técnico: el tiempo total de cada una de las 12 paellas es ahora la suma de sus fases, un solo rango de cocción para la fase del caldo y aviso de seguridad alimentaria en el alioli (huevo pasteurizado o versión sin huevo).',
+          'Plan de negocio y guía de sistemas: nombres de los planes autonómicos de incendios y de las leyes de venta ambulante revisados uno a uno, mix B2C/B2B unificado en 35/65, inversión del roadmap de food truck cuadrada con su tabla y erratas corregidas. Los 7 documentos Word pasan a tamaño A4.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',

@@ -144,7 +144,7 @@ const data: PlanNegocioData = {
       { icon: 'Calculator', title: 'Calculadora Pricing Eventos', desc: 'Excel con fórmulas duales B2C particular + B2B planner. Inputs: pax, distancia, tipo de paella, concepto premium, ayudantes ⇒ precio sugerido + margen. 10 ejemplos validados.' },
       { icon: 'Truck', title: 'Plantilla 88 Proveedores Reales', desc: 'Arroceros DO Valencia (Tartana, J. Sendra, Calasparra), carniceros, mariscos Mediterráneo, verduras Levante (garrofó, ferraura), azafrán DO La Mancha, equipamiento Garcima/Vaello, vajilla Pordamsa.' },
       { icon: 'Wrench', title: 'Catálogo Equipamiento + Menaje', desc: 'Paelleras Garcima 60-90-120 cm + paellero Vaello 4 fuegos 50 kW + trípode leña + cuchillería Arcos + vajilla Pordamsa + EPI Texfire. SKU + URL + precio actualizado.' },
-      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución (autónomo + IAE 677.9 + APPCC + RGSEAA) · seguros RC eventos con cláusula intoxicación · equipamiento + arroceros DO · marca y web · captación B2C+B2B · operativa primer evento. 110 hitos.' },
+      { icon: 'ShieldCheck', title: 'Checklist Apertura (6 fases)', desc: 'Constitución (autónomo + IAE 677.9 + APPCC + RGSEAA) · seguros RC eventos con cláusula intoxicación · equipamiento + arroceros DO · marca y web · captación B2C+B2B · operativa primer evento. 104 hitos.' },
       { icon: 'Utensils', title: 'Carta 12 Paellas y Arroces', desc: 'Valenciana DO + marisco premium + senyoret + arroz negro + mixta + arroz a banda + fideuá + meloso bogavante + caldoso bogavante + montaña + alicantina con costra + vegetal DO. Receta + escandallo + maridaje.' },
       { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B', desc: 'Plantillas legales editables: B2C particular (cumpleaños, bautizos, bodas íntimas) + B2B profesional (wedding planners, agencias, ayuntamientos) con anexo tarifario, briefing y SLA.' },
       { icon: 'Sparkles', title: '10 Experiencias Temáticas', desc: 'Boda en finca · corporate showcooking · fiesta del pueblo popular · bautizo familiar · cumpleaños senyoret · Falles + festes · boda exclusiva 5* · hotel show cooking · vegetal DO inclusive · brunch banda + fideuá.' },
@@ -237,7 +237,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Sirve si nunca he montado mi propio negocio antes?',
-      a: 'Sí. El plan está pensado para emprendedores que arrancan desde cero. Incluye la constitución como autónomo (tarifa plana 80 EUR/mes primer año), alta IAE 677.9, plan APPCC adaptado a actividad itinerante, RGSEAA, seguro RC profesional eventos con cláusula intoxicación. El checklist de 6 fases con 110 hitos no deja nada al azar.',
+      a: 'Sí. El plan está pensado para emprendedores que arrancan desde cero. Incluye la constitución como autónomo (tarifa plana 80 EUR/mes primer año), alta IAE 677.9, plan APPCC adaptado a actividad itinerante, RGSEAA, seguro RC profesional eventos con cláusula intoxicación. El checklist de 6 fases con 104 hitos no deja nada al azar.',
     },
     {
       q: '¿Qué diferencia hay con un Plan de Negocio de Restaurante de Arroces con local fijo?',
@@ -296,7 +296,7 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-cocteleria-eventos', label: 'Plan Coctelería Eventos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 1.2 · octubre 2026',
 
   alreadyBought: {
     product: 'plan-negocio-paellero-eventos',

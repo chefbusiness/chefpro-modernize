@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: '¿Sirve si nunca he montado mi propio negocio antes?',
-    a: 'Sí. El plan está pensado para emprendedores que arrancan desde cero. Incluye la constitución como autónomo (tarifa plana 80 EUR/mes primer año), alta IAE 677.9, plan APPCC adaptado a actividad itinerante, RGSEAA, seguro RC profesional eventos con cláusula intoxicación. El checklist de 6 fases con 110 hitos no deja nada al azar.',
+    a: 'Sí. El plan está pensado para emprendedores que arrancan desde cero. Incluye la constitución como autónomo (tarifa plana 80 EUR/mes primer año), alta IAE 677.9, plan APPCC adaptado a actividad itinerante, RGSEAA, seguro RC profesional eventos con cláusula intoxicación. El checklist de 6 fases con 104 hitos no deja nada al azar.',
   },
   {
     q: '¿Qué diferencia hay con un Plan de Negocio de Restaurante de Arroces con local fijo?',
