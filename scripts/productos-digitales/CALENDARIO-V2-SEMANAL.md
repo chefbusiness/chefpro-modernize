@@ -246,6 +246,24 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   John con `--test`. Hermana v1.0.1 (D7): aplazada por John; su correo, 5 días después del de la Churrería.
 - John (3-oct, tarde): **VPS reactivado** con reparto Mac ↔ VPS para todos los productos (regla en `CLAUDE.md`).
 
+### ✅ 2026-10-11 (Claude Code en el Mac + VPS) — Plan Paellero **1.2 LIVE** (PR #115): revisión rápida por un cliente real
+
+- **Origen:** un cliente compró el 10-oct a las 22:11 por la **réplica de ChefBusiness** (Payment Link `eVqeV60…`, redirige a
+  `chefbusiness.co/…/acceso/`, sin webhook y con el correo sin `await`) y **no recibió nada**. Acceso reenviado el 11-oct a las
+  10:12 Madrid desde aichef.pro (`resend-access`, entregado). Pendiente a futuro (John): el hub de CB pasa a ser un catálogo de
+  tarjetas que abren la landing de aichef.pro, sin Payment Links propios.
+- **Regla nueva de John:** actualizar = **mejoras puntuales** con sonnet/haiku y revisión rápida; la SPEC de familia es catálogo, no
+  alcance. Hecho con 2 sonnet en paralelo (xlsx y docx, ejecución en el VPS) en ~1 h: pycel 0 errores, anticipo en €, IFERROR,
+  desplegables, «88 proveedores», checklist con OK/contador (**104 hitos**, no 110), contrato (IVA 10 %, cancelación B2C escalonada y
+  simétrica, fuero del consumidor), manual técnico (tiempos = suma de fases, alioli), anexo legal autonómico verificado, A4 en los 7 docx.
+  Scripts: `scripts/productos-digitales/paellero-v1_2/`.
+- **Verificado LIVE** (`45a45121`): los 11 ficheros servidos = repo byte a byte (`cmp`), `gate-flujo-postpago.py --only` 11/11, 0 fallos, landing con «Versión 1.2» y «104 hitos».
+- **La v2.0 completa de línea B (motor `grupo_b.py`, SPEC §3) sigue pendiente** y NO se hizo: break-even sin amortización (10,2
+  eventos/año frente a «18-22» de la landing), inversión de la landing (3.500-25.000) frente al xlsx (3.790 / 9.670 / 23.110),
+  tasas dentro de fórmulas, manual técnico corto (~1.100 palabras), «Plantillas validadas con asesor legal» sin respaldo.
+- **Correo (regla del 5-sep):** slot **18-nov 08:00 UTC** (Churrería 13-nov + 5), programable desde el **19-oct** (tope de 30 días
+  de Resend). Plantilla de partida: `emails/broadcast-plan-negocio-*-v2.2-es.html`.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
@@ -301,7 +319,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 | guia-restaurante-japones | guías | `contenido_guia_restaurante_japones/` PARCIAL | completar → refutar → fixes → APPLY → documentos |
 
 ### Sin empezar
-- Planes línea B: coctelería (representante B: `grupo_b.py` + contenido; SPEC §3), parrillero, paellero, catering, chef-privado-showcooking.
+- Planes línea B: coctelería (representante B: `grupo_b.py` + contenido; SPEC §3), parrillero, paellero, catering, chef-privado-showcooking. (Paellero: revisión rápida **1.2** LIVE el 11-oct; su v2.0 de motor sigue pendiente.)
 - Planes docx (10): regeneración con bridge.py (SPEC planes §4) — se hace con el producto de su semana.
 - Guías: nikkei, panadería-obrador, dark-kitchen (+ documentos de los 7 hermanos: el pipeline `documentos.py` es de familia).
 - Kits CB: asador, marisquería, panadería, food-truck, tapas-bar, chef-privado (canario), mega-pack (decisión de John si se amplía).
