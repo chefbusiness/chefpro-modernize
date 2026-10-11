@@ -296,6 +296,18 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Además hoy (PR #117):** fuera el precio tachado y los «valores» de bonus de toda la tienda EN (FTC 16 CFR 233.1). Los correos EN
   ya programados que dicen «launch/regular price» se quedan así (John: «déjalo así… para no retrasar trabajo»).
 
+### ▶️ 2026-10-11 (Claude Code en el Mac + VPS) — **Catering Business Plan Kit (EN, $39) EN CURSO** · F1 cerrada
+
+- John eligió el Catering (880/mes en EE. UU., LOW, subiendo) y el retoque del Bakery para «pastry business plan» (1.900/mes;
+  su SERP es de bakery business plans → sin producto nuevo; LIVE en el PR #121).
+- **F1 cerrada** en la rama `feat/catering-business-plan-en` (`784b2e0f`): `business-plans-en-4/` con `F1-inventario-delta.md`
+  (gemelo = **Food Truck EN**; la línea B del ES no es financiable: margen neto 50 %, break-even de 5,5 eventos/año),
+  `F1-research-us-delta.md` y `SPEC-delta.md` (D66-D80). 4 ficheros: plan Word, Excel (motor del FT con eventos/año ×
+  $/invitado × invitados/evento), **calculadora de precios** regenerada en EN y checklist de 68 tareas. F1 ≈ 0,59 M tokens.
+- **Retomar:** worktrees `scratchpad/wt-cat` (Mac) y `/root/wt-cat` (VPS) en la rama; F2 paso 1 = implementador opus
+  según `SPEC-delta.md` §3-§7 y el patrón de `business-plans-en-3/F2-NOTAS.md`. Deuda ES de la línea B (ficha del catering:
+  «break-even 14 eventos/mes», «60+ pp.», «10 ejemplos validados»): anotada, no se toca ahora.
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
