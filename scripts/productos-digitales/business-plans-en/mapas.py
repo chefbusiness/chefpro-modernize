@@ -135,8 +135,9 @@ GRUPOS_DESC = OrderedDict([
 ])
 
 
-def grupo_de(planes, texto=None, tratamiento=None):
-    """Grupo de una cadena traducible por los planes en los que aparece (lista ordenada)."""
+def grupo_de(planes, texto=None, tratamiento=None, donde=None):
+    """Grupo de una cadena traducible por los planes en los que aparece (lista ordenada). `donde` (apariciones de
+    textos_es.json) solo lo usa el conjunto «bar», que reparte por libro (plan / checklist)."""
     return 'GM' if planes == ['caf', 'ft'] else ('GFT' if planes == ['ft'] else 'GCAF')
 
 
@@ -987,9 +988,31 @@ DOCX_N_PARRAFOS = OrderedDict([('ft', 131), ('caf', 167)])  # SPEC D22
 DOCX_ULTIMO_9 = OrderedDict([('ft', '108'), ('caf', '142')])  # último párrafo de §9: cierra con la nota UK
 DOCX_RESUMEN_TOKENS = OrderedDict([('caf', ('134', 3))])    # párrafo que debe citar ≥ n tokens
 PRESTAMO_SEMILLA = OrderedDict([('ft', 80000), ('caf', 140000)])
-REUSO = OrderedDict()                                      # ES → EN ya traducido en otro conjunto (solo restpan)
+REUSO = OrderedDict()                                      # ES → EN ya traducido en otro conjunto (restpan, bar)
 PISTAS_EXTRA = []                                          # pistas por texto propias del conjunto (extraer_textos)
 CON_MARCA = None                                           # libros con la línea «More templates…» (None = todos)
+# Cifras / términos que NO pueden llegar al EN (conjunto «bar», SPEC D52): [(regex, motivo, regex de excepción o
+# None)]. Vacío en FT/CAF y REST/PAN. Lo usan check_textos (traductores), gates_en G2 (xlsx) y ensamblar_docx g8.
+CIFRAS_PROHIBIDAS = []
+
+
+def cifras_prohibidas(t):
+    """[(motivo, fragmento)] de las cifras/términos prohibidos del conjunto que aparecen en el texto t."""
+    out = []
+    for rx, motivo, excepcion in CIFRAS_PROHIBIDAS:
+        if excepcion and re.search(excepcion, t):
+            continue
+        m = re.search(rx, t)
+        if m:
+            out.append((motivo, m.group(0)))
+    return out
+
+
+def reuso_de(e):
+    """EN reutilizable de una cadena de textos_es.json (extraer_textos). Por defecto, solo para «traducir»."""
+    return REUSO.get(e['es']) if e['tratamiento'] == 'traducir' else None
+
+
 # Autotest de gates_en.py: papeles de los libros (P1/P2 planes, C1/C2 checklists) y celdas que muta
 AUTOTEST = OrderedDict([
     ('P1', 'FTP'), ('P2', 'CAFP'), ('C1', 'FTC'), ('C2', 'CAFC'),
@@ -1020,8 +1043,8 @@ def autotest():
                 err.append('pestaña inválida: ' + en)
         if list(d) != HOJAS_ES_POR_LIBRO[c] and sorted(d) != sorted(HOJAS_ES_POR_LIBRO[c]):
             err.append('HOJAS_POR_LIBRO y HOJAS_ES_POR_LIBRO no cuadran en ' + c)
-    if len(set(FICHEROS.values())) != 6:
-        err.append('FICHEROS debe tener 6 nombres EN distintos')
+    if len(set(FICHEROS.values())) != 3 * len(PLANES):
+        err.append('FICHEROS debe tener %d nombres EN distintos' % (3 * len(PLANES)))
     for k, v in CLAVES.items():
         if '"' in v or RX_ES_CLAVE.search(v):
             err.append('comilla o español en una clave EN: %r' % v)
@@ -1179,8 +1202,14 @@ if CONJUNTO == 'restpan':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-2'))
     import mapas_rp as _rp                                                         # noqa: E402
     _rp.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'bar':
+    # Bar Business Plan Kit (F2 de business-plans-en-3, 11-oct-2026): molde FT/CAF, datos en business-plans-en-3/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-3'))
+    import mapas_bar as _bar                                                       # noqa: E402
+    _bar.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
-    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan)' % CONJUNTO)
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar)' % CONJUNTO)
 
 
 if __name__ == '__main__':

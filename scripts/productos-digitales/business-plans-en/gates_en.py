@@ -354,6 +354,8 @@ def gateG2(R, carpetas, datos):
                 R.f(G, '%s: resto del ES «%s»' % (lugar, m.group(0)))
             if mapas.RX_ID_INTERNO.search(t):
                 R.f(G, '%s: ID interno «%s»' % (lugar, mapas.RX_ID_INTERNO.search(t).group(0)))
+            for motivo, frag in mapas.cifras_prohibidas(t):          # bar: SPEC D52 (vacío en los otros conjuntos)
+                R.f(G, '%s: %s «%s»' % (lugar, motivo, frag))
         for ws in wb.worksheets:
             for c in ws._cells.values():
                 if '€' in (c.number_format or ''):

@@ -1,0 +1,3003 @@
+{
+ "tanda": "GBAR-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-3/textos_en/GBAR-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 191,
+ "n_palabras": 2947,
+ "pistas": {
+  "P01": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P02": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P03": "D55: el libro dice «covers» (cubiertos) y «seat turns»; nunca «customers» para el volumen diario",
+  "P04": "D51: «small plates» («small plates (tapas-style)» solo la primera vez en el docx); nunca «tapas bar» ni «gastrobar»",
+  "P05": "Glosario: barra → «bar» (la del local); camarero de barra → «bartender»; ayudante → «barback»",
+  "P06": "D52: caso US = 95 covers/día × $27 (sin sales tax) × 360 días, bebida 65 %, 60 plazas; sin historia de versiones («v1.1», «el documento de este plan») ni cifras del docx ES; rotaciones implícitas = cubiertos ÷ plazas (celda B50): compáralas con el techo de \"Break-Even\"",
+  "P07": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P08": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P09": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P10": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P11": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P12": "D52: caso US = 95 covers/día × $27 (sin sales tax) × 360 días, bebida 65 %, 60 plazas; sin historia de versiones («v1.1», «el documento de este plan») ni cifras del docx ES; el ticket es SIN sales tax; el precio de carta con impuesto lo calcula la fila \"Menu price incl. sales tax\"",
+  "P13": "D52: caso US = 95 covers/día × $27 (sin sales tax) × 360 días, bebida 65 %, 60 plazas; sin historia de versiones («v1.1», «el documento de este plan») ni cifras del docx ES; 360 días = 7 días a la semana menos ~5 festivos",
+  "P14": "D51: vermouth / cocktails; sin «hora del vermut» española",
+  "P15": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P16": "D14: m² → sq ft (1 m² = 10.764 sq ft)",
+  "P17": "Glosario: tiraje → «pouring / draft service»; grifos → «draft lines / taps»",
+  "P18": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P19": "D57/D60: liquor license (state + local; quota states); dram shop / liquor liability; responsible beverage service (TIPS / ServSafe Alcohol)",
+  "P20": "D57: alcohol = 90 % de las ventas de bebida en el ejemplo US (cócteles, cerveza y vino; el resto, sin alcohol)",
+  "P21": "D54 nota de la fila 8: «beer & wine from ~$3,000; full liquor $12,000-$400,000; in quota states you buy an existing license at market price» (esta fila = ejemplo de estado SIN cupo); una licencia comprada a otro dueño es un activo intangible: «ask your CPA»",
+  "P22": "D54: nota de la partida del ejemplo US (rótulo fijado de la col. A en \"fijos_en\"); sin rangos, marcas ni normas españolas: solo rangos con fuente de research §4 o ninguno",
+  "P23": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P24": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P25": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P26": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P27": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P28": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P29": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P30": "SPEC §4.1 línea 8 (I1): el Word del kit usa las MISMAS cifras de ejemplo que este libro; si cambias el libro, actualiza las cifras del Word (fuera «versión 1.1»)",
+  "P31": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P32": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P33": "D19: tabla «INDUSTRY BENCHMARKS» (Benchmark | Value | Source | Note). Valor = rango US de F1-research-us.md §3-§4 en formato US («28-35%», «$10-$15», sin € ni coma decimal); Source = el dominio de la fuente de research (p. ej. «Toast (pos.toasttab.com)») o «Kit estimate»; NUNCA «Fichero v1.1» ni «BOE». Filas de convenio/SMI → suelo de salario mínimo federal + estatal (DOL)",
+  "P34": "D58 fila → «Food cost (small plates)» · «25-35% of food sales» · el mismo Source que la fila de food cost del Restaurant (BP2) · nota: cocina corta, aprovechamiento",
+  "P35": "D58 fila → «Pour cost, whole bar» · «18-24%» (mediana «just above 20%») · «BevSpot (bevspot.com)» · nota: el coste de bebida del ejemplo (fila \"Beverage cost\" de \"0. Assumptions\") suma garnish y merma",
+  "P36": "D58 fila → «Beer pour cost (median)» · «24%» · «BevSpot (bevspot.com)» · nota: el grifo (draft) baja el coste frente a la botella si las líneas se limpian y se controla la merma",
+  "P37": "D58 fila → «Labor cost / sales» · «≤ 35%» · «Kit estimate» · nota: incluye barbacks y extras de fin de semana; sin propinas",
+  "P38": "D58 fila → «Rent / sales» · «≤ 10%» · «Kit estimate» · nota: el umbral del semáforo del P&L",
+  "P39": "D58 fila → «Average check per guest» · «$20-$35 excl. sales tax» · «Kit estimate» · nota: small plates + drinks; el precio con impuesto de ESTE plan lo calcula \"0. Assumptions\"",
+  "P40": "D58 fila (sustituye «ticket gastrobar») → «Spirits pour cost (median)» · «15%» · «BevSpot (bevspot.com)» · nota: cócteles con receta estandarizada y jigger",
+  "P41": "D58 fila (sustituye «consumiciones de barra», sin fuente) → «Wine pour cost (median)» · «28%» · «BevSpot (bevspot.com)» · nota: vino por copa: controlar la botella abierta",
+  "P42": "D58 fila → «Seat turns per day» · «1.5-3» · «Kit estimate» · nota: es el techo por defecto de \"Break-Even\": ajústalo a tu horario y aforo",
+  "P43": "D58 fila (sustituye «ocupación entre semana», sin fuente) → «Startup costs, bar in a leased space» · «$110,000-$550,000 (survey average $425,500)» · «RestaurantOwner.com survey, via Poster (joinposter.com)» · nota: compara con el CAPEX de \"Startup Costs\"",
+  "P44": "D58 fila (sustituye «ocupación fin de semana», sin fuente) → «Liquor license» · «beer & wine from ~$3,000; full liquor $12,000-$400,000» · «Poster (joinposter.com)» · nota: en estados con cupo se compra una licencia existente a precio de mercado; este libro presupuesta un estado sin cupo",
+  "P45": "D58/D56 fila → «Gross margin target» · «≥ 68%» · «Kit benchmark (editable estimate)» · nota: el umbral del semáforo del P&L",
+  "P46": "D58 fila (sustituye «EBITDA objetivo», sin fuente) → «Liquor liability insurance (small bars)» · «median $2,039 a year» · «Insureon (insureon.com)» · nota: muestra de bares pequeños; un local de este tamaño paga más: el ejemplo presupuesta general + liquor liability + property juntos",
+  "P47": "D58 fila (sustituye «retorno 18-30 meses», sin fuente) → «Operating cash reserve» · «$75,000-$100,000 or six months of costs» · «RestaurantOwner.com survey, via Poster (joinposter.com)» · nota: compárala con el fondo de maniobra de \"Startup Costs\"",
+  "P48": "D58 fila (sustituye «merma media», sin fuente) → «Prime cost (cost of goods + labor)» · «60-65% of sales (full-service)» · «Restaurant365 (restaurant365.com)» · nota: un bar queda algo por debajo porque la bebida cuesta menos que la comida",
+  "P49": "D58 fila 69 → «Minimum wage floor» · «federal $7.25/h + your state» · «U.S. Department of Labor (dol.gov)» · nota: teclea el suelo de tu estado en \"0. Assumptions\"; sin convenio"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cubiertos/día": "covers per day",
+  "tapas / raciones": "small plates",
+  "camarero/a de barra": "bartender",
+  "ayudante de barra": "barback",
+  "camarero/a de sala": "server",
+  "grifos de cerveza": "draft beer system / taps",
+  "tiraje": "pouring / draft service",
+  "licencia de alcohol": "liquor license",
+  "RC por alcohol": "liquor liability (dram shop) insurance",
+  "servicio responsable de alcohol": "responsible beverage service (TIPS / ServSafe Alcohol)",
+  "distribuidor": "licensed distributor (three-tier system)",
+  "comandero": "handheld POS",
+  "vermut": "vermouth",
+  "cóctel": "cocktail"
+ },
+ "pestanas_es_en": {
+  "BARP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "BARC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local": "Phase 2 - Location & Licenses",
+   "F3 - Equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-tapas-bar» de AI Chef Pro.": "This file is part of the Bar Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST APERTURA — TAPAS BAR / GASTROBAR": "BAR OPENING CHECKLIST — NEIGHBORHOOD BAR WITH SMALL PLATES",
+  "INSTRUCCIONES DE USO — Plan financiero Tapas Bar / Gastrobar": "HOW TO USE THIS WORKBOOK — Bar Financial Projections",
+  "PLAN DE NEGOCIO: TAPAS BAR / GASTROBAR": "BAR BUSINESS PLAN: NEIGHBORHOOD BAR WITH SMALL PLATES",
+  "Inversión Inicial Estimada — España 2026": "Estimated Startup Costs — US kit example (2026)",
+  "Ajusta las cifras a tu proyecto. Rangos mercado español actual.": "US kit example (2026) — replace with your own quotes.",
+  "FASE 2: LOCAL Y LICENCIAS": "PHASE 2: LOCATION & LICENSES",
+  "Constitución SL + notaría + registro": "LLC formation + legal",
+  "Licencia de actividad (clasificada)": "Liquor license + local permits (non-quota state example)",
+  "Proyecto técnico + certificación": "Architect, MEP drawings + permit fees",
+  "Obra civil y adecuación local": "Build-out (second-generation space)",
+  "Instalación eléctrica + climatización": "Electrical + HVAC",
+  "Fontanería + evacuación + extracciones": "Plumbing, grease interceptor + Type I hood",
+  "Equipamiento cocina (plancha, freidora, horno)": "Kitchen equipment (griddle, fryer, oven)",
+  "Equipamiento frío (cámaras, neveras barra)": "Refrigeration (walk-in + back-bar coolers)",
+  "Barra y mostrador de tapas": "Bar build (bar top + underbar stations)",
+  "Grifos cerveza + instalación": "Draft beer system + installation",
+  "Mobiliario sala (mesas altas + bajas + taburetes)": "Furniture (tables, high-tops + bar stools)",
+  "Terraza (mobiliario + toldo)": "Patio (furniture + awning)",
+  "Vajilla, cristalería tapas, cubertería": "Glassware, smallwares + tableware",
+  "Decoración + iluminación ambiente": "Decor, lighting + sound",
+  "Rotulación + imagen exterior": "Exterior signage",
+  "Marketing lanzamiento": "Launch marketing",
+  "Stock inicial (producto, vinos, cervezas)": "Opening inventory (liquor, beer, wine + food)",
+  "TPV + software gestión + comandero": "POS + handhelds + software",
+  "Escenario realista — Tapas Bar / Gastrobar 40-50 plazas": "Base case — neighborhood bar with small plates, 60 seats",
+  "Ventas de comida (tapas, raciones y otros)": "Food sales (small plates)",
+  "Ventas de bebida (cerveza, vino, vermut y cócteles)": "Beverage sales (cocktails, beer, wine + non-alcoholic)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property)",
+  "Gestoría + contabilidad": "Accounting + bookkeeping",
+  "Mantenimiento equipos": "Equipment maintenance",
+  "Software (TPV, reservas, delivery)": "Software (POS, reservations, inventory)",
+  "Limpieza y productos": "Cleaning supplies + linens",
+  "Gestión de residuos (orgánico, cartón y aceite usado)": "Waste + grease hauling (trash, recycling, used oil)",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Safety + responsible-service training",
+  "Propietario/a y encargado/a de sala": "Owner / general manager",
+  "Jefe de cocina": "Kitchen lead",
+  "Camarero/a de barra (turno fuerte)": "Bartenders (peak shifts)",
+  "Camarero/a de sala y terraza": "Servers (floor & patio)",
+  "Ayudante de cocina": "Line / prep cook",
+  "Extra de fin de semana (barra y sala)": "Barback / weekend extra",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations + days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Clientes servidos al día de media del año, tapeo de barra y raciones de mesa incluidos. Son 1,24 servicios por plaza y día sobre el aforo de esta misma hoja; el documento de este plan describe rotaciones de 1,8 en el almuerzo y 1,5 en la cena con ocupaciones del 65 % y el 75 %, así que el caso base se proyecta muy por debajo, a propósito",
+   "donde": [
+    "BARP · 0. Supuestos!C4"
+   ],
+   "fila": "Cubiertos/día (media del año 1)",
+   "valor_us": 95,
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA. Es el mismo 18 € del fichero v1.1: declarar que es SIN IVA no cambia ningún número, sólo aclara qué era. Con el IVA de sala son 19,80 € de PVP —lo calcula la celda «PVP equivalente con IVA» de abajo—, dentro del rango de 15-22 € que la hoja «Instrucciones» publica como ticket medio de un tapas bar",
+   "donde": [
+    "BARP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 27,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P07",
+    "P08",
+    "P09",
+    "P01",
+    "P10",
+    "P11",
+    "P02",
+    "P04",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "El MISMO dato lo usan el P&L, el punto de equilibrio y los escenarios: el fichero v1.1 tenía DOS calendarios distintos (Escenarios!B7:D7: 310-320 días/año; 'PyG 3 Años'!B10 = 270.000 € está calculado con 300 días). Se elige 300 por ser el más prudente de los dos y el que la propia cuenta de resultados ya usaba, no un dato nuevo",
+   "donde": [
+    "BARP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 360,
+   "cita_hojas": [
+    {
+     "es": "PyG 3 Años",
+     "en": "3-Year P&L"
+    }
+   ],
+   "pistas": [
+    "P08",
+    "P10",
+    "P11",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "El fichero v1.1 proyectaba 320.000 € en el año 2 sobre 270.000 € (+18,5 %): se redondea a la baja para no depender de la consolidación de la clientela afterwork en el primer año",
+   "donde": [
+    "BARP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.15,
+   "pistas": [
+    "P08",
+    "P01",
+    "P10",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0014",
+   "es": "El fichero v1.1 proyectaba 370.000 € sobre 320.000 € (+15,6 %): igual, redondeado a la baja",
+   "donde": [
+    "BARP · 0. Supuestos!C8"
+   ],
+   "fila": "Crecimiento de volumen del año 3",
+   "valor_us": 0.1,
+   "pistas": [
+    "P08",
+    "P10",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Food cost de tapas y raciones: dentro del 28-32 % que la hoja «Instrucciones» de este mismo libro declara para tapas y raciones. Coincide con el 43.500/145.000 = 30 % que ya tenía la v1.1",
+   "donde": [
+    "BARP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.3,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P10",
+    "P11",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Coste de cerveza, vino, vermut y cócteles sobre sus propias ventas: media ponderada entre el 22-28 % de cerveza y vino y el 18-25 % de cócteles que publica la hoja «Instrucciones». Coincide con (23.750+6.250)/(95.000+25.000) = 25 % de la v1.1",
+   "donde": [
+    "BARP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.22,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P10",
+    "P11",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Vajilla desechable de take-away, servilletas y papel de barra",
+   "donde": [
+    "BARP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.01,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "A CERO por defecto: el checklist de este plan lo deja para el mes 2-3 y sólo si el margen lo permite, no para el día 1. Súbelo al peso real del canal cuando lo actives",
+   "donde": [
+    "BARP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0
+  },
+  {
+   "id": "c0030",
+   "es": "El propio checklist v1.1 ya cita el rango: «Solo si margen lo permite (comisiones 25-35%)» — se toma el punto medio",
+   "donde": [
+    "BARP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.25,
+   "pistas": [
+    "P10",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0032",
+   "es": "Tarjeta y bizum sobre el total facturado; un tapas bar con barra prominente cobra en tarjeta la mayoría de las consumiciones",
+   "donde": [
+    "BARP · 0. Supuestos!C18"
+   ],
+   "fila": "Comisión de los medios de pago",
+   "valor_us": 0.035,
+   "pistas": [
+    "P15",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "Local de tapas bar/gastrobar de 60-80 m² con barra prominente + terraza. 9,9 % de las ventas del caso base, por debajo del techo del 12 % que fija la hoja «Instrucciones» de este mismo libro",
+   "donde": [
+    "BARP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 6500,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P16",
+    "P11",
+    "P02",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Luz, agua y gas de cocina con plancha, freidora y horno + barra de grifos de cerveza (enfriador): pide el histórico del local antes de firmar",
+   "donde": [
+    "BARP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 2000,
+   "pistas": [
+    "P10",
+    "P17",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil (mínimo 300.000 €, como pide el checklist en su fase de local) + multirriesgo del local",
+   "donde": [
+    "BARP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 12000,
+   "pistas": [
+    "P08"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Colchón de gasto corriente no presupuestado. Es un coste VARIABLE: sube y baja con la facturación, así que no puede vivir entre los costes fijos; la v1.1 lo llevaba ahí como una fila de importe fijo",
+   "donde": [
+    "BARP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "valor_us": 0.01,
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0053",
+   "es": "Aportación de los socios. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja de este plan. En el caso base son el 29 %",
+   "donde": [
+    "BARP · 0. Supuestos!C30"
+   ],
+   "fila": "Recursos propios aportados (€)",
+   "valor_us": 120000,
+   "pistas": [
+    "P18"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que origen y usos cuadran con la necesidad de caja calculada en la hoja de Inversión, y trae una celda que calcula el importe exacto que los ajusta",
+   "donde": [
+    "BARP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR"
+  },
+  {
+   "id": "c0061",
+   "es": "Primer año sólo intereses, que es cuando la caja está más tensa (obra + primeras semanas de rodaje)",
+   "donde": [
+    "BARP · 0. Supuestos!C34"
+   ],
+   "fila": "Carencia de principal (años)",
+   "valor_us": 0
+  },
+  {
+   "id": "c0079",
+   "es": "Obra, instalaciones, extracción y decoración de un tapas bar con cocina clasificada. Coincide con los «10 años» que ya citaba la v1.1. Coeficientes de la tabla del art. 12.1 LIS: confírmalo con tu asesor",
+   "donde": [
+    "BARP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 10,
+   "pistas": [
+    "P07",
+    "P10",
+    "P11",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Plancha, freidora, horno, cámaras, grifos de cerveza y mobiliario de barra. Coeficiente lineal máximo del art. 12.1 LIS: 12 % maquinaria, 10 % mobiliario — por debajo de 8-10 años el exceso no es deducible. Confírmalo con tu asesor",
+   "donde": [
+    "BARP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 7,
+   "pistas": [
+    "P07",
+    "P17",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0088",
+   "es": "Aforo TOTAL del local: sala, barra y terraza. El documento de este plan describe «una capacidad total de 40 a 50 plazas» para un local de 60-80 m² con terraza, y 45 es el punto medio. De aquí sale la rotación implícita: clientes/día ÷ aforo. Cuéntalo sobre el plano de tu local, no lo copies: si tu terraza es grande, el aforo sube y la rotación baja",
+   "donde": [
+    "BARP · 0. Supuestos!C51"
+   ],
+   "fila": "Aforo del local (plazas sentadas + barra)",
+   "valor_us": 60,
+   "pistas": [
+    "P16",
+    "P01",
+    "P11",
+    "P03",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0107",
+   "es": "Bebida ALCOHÓLICA sobre el total de bebida: la línea de bebida de este plan es cerveza, vino, vermut y cócteles/destilados — un tapas bar con la «barra prominente» que describe el documento de este plan vende sobre todo alcohol. El resto —refrescos, agua, algún café— va al IVA reducido de hostelería",
+   "donde": [
+    "BARP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0.9,
+   "pistas": [
+    "P07",
+    "P11",
+    "P04",
+    "P14",
+    "P05",
+    "P19",
+    "P20"
+   ]
+  },
+  {
+   "id": "c0148",
+   "es": "Tapas bar con cocina elaborada = actividad clasificada",
+   "donde": [
+    "BARP · Inversión Inicial!D8"
+   ],
+   "fila": "Licencia de actividad (clasificada)",
+   "valor_us": 15000,
+   "pistas": [
+    "P04",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0150",
+   "es": "Obligatorio para actividad clasificada con cocina",
+   "donde": [
+    "BARP · Inversión Inicial!D9"
+   ],
+   "fila": "Proyecto técnico + certificación",
+   "valor_us": 15000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0153",
+   "es": "Suelo, pintura, instalaciones, baño accesible y extracciones",
+   "donde": [
+    "BARP · Inversión Inicial!D10"
+   ],
+   "fila": "Obra civil y adecuación local",
+   "valor_us": 70000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0155",
+   "es": "Potencia 20-25 kW para cocina + climatización",
+   "donde": [
+    "BARP · Inversión Inicial!D11"
+   ],
+   "fila": "Instalación eléctrica + climatización",
+   "valor_us": 22000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0157",
+   "es": "Campana extractora, salida humos, trampa grasas",
+   "donde": [
+    "BARP · Inversión Inicial!D12"
+   ],
+   "fila": "Fontanería + evacuación + extracciones",
+   "valor_us": 28000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0159",
+   "es": "Plancha industrial, freidora, horno rational, salamandra",
+   "donde": [
+    "BARP · Inversión Inicial!D13"
+   ],
+   "fila": "Equipamiento cocina (plancha, freidora, horno)",
+   "valor_us": 20000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0161",
+   "es": "Cámara frigorífica + 3-4 neveras bajo barra",
+   "donde": [
+    "BARP · Inversión Inicial!D14"
+   ],
+   "fila": "Equipamiento frío (cámaras, neveras barra)",
+   "valor_us": 18000,
+   "pistas": [
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0163",
+   "es": "Barra con vitrina de tapas calientes/frías, grifo cerveza",
+   "donde": [
+    "BARP · Inversión Inicial!D15"
+   ],
+   "fila": "Barra y mostrador de tapas",
+   "valor_us": 35000,
+   "pistas": [
+    "P04",
+    "P17",
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0165",
+   "es": "4-6 grifos, enfriador, barrilería, CO2",
+   "donde": [
+    "BARP · Inversión Inicial!D16"
+   ],
+   "fila": "Grifos cerveza + instalación",
+   "valor_us": 14000,
+   "pistas": [
+    "P17",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0167",
+   "es": "Mesas altas barra, mesas bajas sala, 40-50 plazas",
+   "donde": [
+    "BARP · Inversión Inicial!D17"
+   ],
+   "fila": "Mobiliario sala (mesas altas + bajas + taburetes)",
+   "valor_us": 15000,
+   "pistas": [
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0169",
+   "es": "10-12 mesas exterior si hay licencia",
+   "donde": [
+    "BARP · Inversión Inicial!D18"
+   ],
+   "fila": "Terraza (mobiliario + toldo)",
+   "valor_us": 6000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0171",
+   "es": "Platos tapas/raciones, catavinos, cañas, copas",
+   "donde": [
+    "BARP · Inversión Inicial!D19"
+   ],
+   "fila": "Vajilla, cristalería tapas, cubertería",
+   "valor_us": 8000,
+   "pistas": [
+    "P04",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0173",
+   "es": "Iluminación cálida, azulejos, madera y pizarras",
+   "donde": [
+    "BARP · Inversión Inicial!D20"
+   ],
+   "fila": "Decoración + iluminación ambiente",
+   "valor_us": 18000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0175",
+   "es": "Rótulo, pizarra de tapas y vinilo de escaparate",
+   "donde": [
+    "BARP · Inversión Inicial!D21"
+   ],
+   "fila": "Rotulación + imagen exterior",
+   "valor_us": 5000,
+   "pistas": [
+    "P04",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0177",
+   "es": "Web, Google My Business, RRSS, evento inauguración",
+   "donde": [
+    "BARP · Inversión Inicial!D22"
+   ],
+   "fila": "Marketing lanzamiento",
+   "valor_us": 7000,
+   "pistas": [
+    "P23",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0179",
+   "es": "Género perecedero, bodega de vinos y barrilería de cerveza",
+   "donde": [
+    "BARP · Inversión Inicial!D23"
+   ],
+   "fila": "Stock inicial (producto, vinos, cervezas)",
+   "valor_us": 15000,
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0181",
+   "es": "TPV táctil de barra + comandero inalámbrico + software de gestión",
+   "donde": [
+    "BARP · Inversión Inicial!D24"
+   ],
+   "fila": "TPV + software gestión + comandero",
+   "valor_us": 5000,
+   "pistas": [
+    "P15",
+    "P05",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0214",
+   "es": "Tapas y raciones de barra y mesa, más eventos, catering mini y take-away (la línea \"Otros\" de la v1.1)",
+   "donde": [
+    "BARP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de comida (tapas, raciones y otros)",
+   "pistas": [
+    "P10",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0216",
+   "es": "Grifos de cerveza, vino y vermut de barra, más cócteles y destilados (coste más alto por elaboración: el 18-25 % que publica la hoja «Instrucciones»)",
+   "donde": [
+    "BARP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de bebida (cerveza, vino, vermut y cócteles)",
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P11",
+    "P14",
+    "P17",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0243",
+   "es": "Gestor autorizado; el checklist lo pide antes de abrir. Con plancha y freidora en marcha, un tapas bar genera MÁS aceite usado que una cafetería — pide presupuesto en tu zona",
+   "donde": [
+    "BARP · PyG 3 Años!F31"
+   ],
+   "fila": "Gestión de residuos (orgánico, cartón y aceite usado)",
+   "valor_us": 3000,
+   "pistas": [
+    "P07",
+    "P24",
+    "P10",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0245",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC que el checklist ya exige en su fase de personal («Formación alérgenos + APPCC»)",
+   "donde": [
+    "BARP · PyG 3 Años!F32"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 1200,
+   "pistas": [
+    "P07",
+    "P11",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0247",
+   "es": "Es una licencia DISTINTA de la municipal de música ambiente que el checklist ya tiene en su fase de local: esa es administrativa, ésta es de propiedad intelectual. Se pagan las dos si hay hilo musical o DJ",
+   "donde": [
+    "BARP · PyG 3 Años!F33"
+   ],
+   "fila": "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)",
+   "valor_us": 3000,
+   "pistas": [
+    "P07",
+    "P26"
+   ]
+  },
+  {
+   "id": "c0249",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995) — la fase de personal del checklist lo corrige",
+   "donde": [
+    "BARP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 1000,
+   "pistas": [
+    "P07"
+   ]
+  },
+  {
+   "id": "c0273",
+   "es": "Suelo del propio libro: la hoja «Instrucciones» fija un margen bruto objetivo por encima del 68 %",
+   "donde": [
+    "BARP · PyG 3 Años!F50"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.68,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0276",
+   "es": "Blend de los tres food cost que este producto publica en la hoja «Instrucciones» (comida 28-32 %, cerveza y vino 22-28 %, cócteles 18-25 %): el 30 % coincide, con margen, con el 28,1 % que la propia v1.1 ya declaraba en su cuenta de resultados",
+   "donde": [
+    "BARP · PyG 3 Años!F52"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.28,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P10",
+    "P11",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0278",
+   "es": "Dentro del rango 32-38 % que la hoja «Instrucciones» de este mismo libro publica para el coste de personal: cerca del extremo estricto, pero dejando margen realista para retribuir un jefe de cocina cualificado a jornada completa",
+   "donde": [
+    "BARP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.35,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0280",
+   "es": "Techo del propio libro: la hoja «Instrucciones» sitúa el alquiler entre el 8 % y el 12 % de las ventas y pide no pasar del 12 % para ser viable",
+   "donde": [
+    "BARP · PyG 3 Años!F54"
+   ],
+   "fila": "Alquiler / Ventas",
+   "valor_us": 0.1,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0282",
+   "es": "Derivado del EBITDA objetivo del 15-22 % que la hoja «Instrucciones» declara para el año 2: descontando amortización, intereses e Impuesto de Sociedades, un EBITDA en la franja baja del rango deja un resultado neto en torno al 5 % ya en el año 1",
+   "donde": [
+    "BARP · PyG 3 Años!F55"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05,
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P07",
+    "P27",
+    "P28",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0288",
+   "es": "Break-even mensual y diario — Tapas Bar / Gastrobar",
+   "donde": [
+    "BARP · Punto Equilibrio!A2"
+   ],
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0357",
+   "es": "Gestiona compras, caja, proveedores y RRSS, y cubre barra/sala en el turno fuerte de tarde-noche",
+   "donde": [
+    "BARP · Personal!J5"
+   ],
+   "fila": "Propietario/a y encargado/a de sala",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 5000
+   },
+   "pistas": [
+    "P23",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0359",
+   "es": "Diseña la carta de tapas, coordina la línea de cocina y controla el food cost semanal, que el checklist marca como tarea SEMANAL de los primeros 90 días. Es el puesto cualificado del equipo y el único claramente por encima del suelo del convenio",
+   "donde": [
+    "BARP · Personal!J6"
+   ],
+   "fila": "Jefe de cocina",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 4200
+   },
+   "pistas": [
+    "P07",
+    "P29",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0361",
+   "es": "Tiraje de cerveza, vermut y cócteles: el afterwork representa el 25-30 % de la facturación de un gastrobar, según el documento de este plan",
+   "donde": [
+    "BARP · Personal!J7"
+   ],
+   "fila": "Camarero/a de barra (turno fuerte)",
+   "valor_us": {
+    "B": 3,
+    "C": 0.7,
+    "D": 6188
+   },
+   "pistas": [
+    "P04",
+    "P14",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0363",
+   "es": "Cubre el servicio de mesa y terraza en el turno de tarde-noche, 24 horas semanales; la hoja «Instrucciones» sitúa la ocupación media de entre semana en el 50-65 %",
+   "donde": [
+    "BARP · Personal!J8"
+   ],
+   "fila": "Camarero/a de sala y terraza",
+   "valor_us": {
+    "B": 2,
+    "C": 0.5,
+    "D": 2600
+   },
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0365",
+   "es": "Mise en place, limpieza y apoyo en plancha/freidora en el turno fuerte, 18 horas semanales",
+   "donde": [
+    "BARP · Personal!J9"
+   ],
+   "fila": "Ayudante de cocina",
+   "valor_us": {
+    "B": 1,
+    "C": 0.8,
+    "D": 2496
+   }
+  },
+  {
+   "id": "c0367",
+   "es": "Refuerzo de los picos de viernes-sábado, cuando la ocupación sube al 80-95 % que publica la hoja «Instrucciones». Seis horas semanales",
+   "donde": [
+    "BARP · Personal!J10"
+   ],
+   "fila": "Extra de fin de semana (barra y sala)",
+   "valor_us": {
+    "B": 2,
+    "C": 0.4,
+    "D": 2080
+   },
+   "cita_hojas": [
+    {
+     "es": "Instrucciones",
+     "en": "Instructions"
+    }
+   ],
+   "pistas": [
+    "P11"
+   ]
+  },
+  {
+   "id": "c0383",
+   "es": "Horas con el local abierto al público, sumando el servicio de mediodía y el de la noche; la tarde de cierre entre los dos no se cuenta. Es una estimación para un gastrobar con dos servicios: cuéntalas sobre tu horario real",
+   "donde": [
+    "BARP · Personal!J21"
+   ],
+   "fila": "Horas de servicio al día que hay que cubrir",
+   "valor_us": 9,
+   "pistas": [
+    "P04"
+   ]
+  },
+  {
+   "id": "c0385",
+   "es": "Media de presencia simultánea entre barra y sala en los dos servicios. En las puntas hará falta más y al final de cada turno, menos",
+   "donde": [
+    "BARP · Personal!J22"
+   ],
+   "fila": "Personas necesarias a la vez en cada franja",
+   "valor_us": 3.5,
+   "pistas": [
+    "P05"
+   ]
+  },
+  {
+   "id": "c0387",
+   "es": "Mise en place de tapas, raciones y elaboraciones antes de abrir: en un local con plancha, freidora, horno y salamandra el pase no se improvisa. Es tiempo de trabajo que no se solapa con la atención al público",
+   "donde": [
+    "BARP · Personal!J23"
+   ],
+   "fila": "Horas de producción al día ANTES de abrir",
+   "valor_us": 3,
+   "pistas": [
+    "P10",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0389",
+   "es": "Jefe de cocina y ayudante. El cierre, la limpieza y la gestión de compras y caja quedan FUERA de este cuadrante: son el margen que separa las horas contratadas de las necesarias",
+   "donde": [
+    "BARP · Personal!J24"
+   ],
+   "fila": "Personas en el turno de producción",
+   "valor_us": 2
+  },
+  {
+   "id": "c0408",
+   "es": "7. La hoja «Financiación» cuadra lo que hace falta con lo que se aporta y monta el cuadro de amortización del préstamo. Si la diferencia sale en rojo, el plan no está financiado; muy por encima de cero tampoco es gratis, porque se pagan intereses por un dinero que no se usa.",
+   "donde": [
+    "BARP · Instrucciones!A11"
+   ],
+   "cita_hojas": [
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "pistas": [
+    "P28",
+    "P18",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0409",
+   "es": "8. El documento Word de este pack es el de la versión 1.1: las cifras válidas son las de este Excel, que es el que se recalcula solo. Donde una y otra no coincidan, manda esta hoja de cálculo.",
+   "donde": [
+    "BARP · Instrucciones!A12"
+   ],
+   "pistas": [
+    "P10",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0426",
+   "es": "Coste de personal en la cuenta de resultados",
+   "donde": [
+    "BARP · Instrucciones!A35"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Labor cost in the P&L",
+   "propuesta_de": "GCAF c0997 (CAFP Instrucciones!A36)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0427",
+   "es": "96.000 €",
+   "donde": [
+    "BARP · Instrucciones!B35"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0428",
+   "es": "El que suma la hoja «Personal»: 108.368 €",
+   "donde": [
+    "BARP · Instrucciones!C35"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "cita_hojas": [
+    {
+     "es": "Personal",
+     "en": "Staffing"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0429",
+   "es": "La cuenta de resultados llevaba una cifra tecleada a mano que no era la que sumaba su propia hoja de Personal (209.174 €). Ahora las dos son el mismo número y se recalcula sola cada vez que cambias un sueldo.",
+   "donde": [
+    "BARP · Instrucciones!D35"
+   ],
+   "fila": "Coste de personal en la cuenta de resultados",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "Plantilla",
+   "donde": [
+    "BARP · Instrucciones!A36"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Staffing",
+   "propuesta_de": "GREST c0457 (RESTP Instrucciones!A35)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0431",
+   "es": "7 puestos / 209.174 € al año",
+   "donde": [
+    "BARP · Instrucciones!B36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0432",
+   "es": "7 puestos, cuatro de ellos a jornada parcial / 108.368 € al año",
+   "donde": [
+    "BARP · Instrucciones!C36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0433",
+   "es": "Dimensionada por horas, con el cuadrante a la vista en la hoja de Personal: las 9,5 horas de los dos servicios con público más las 3,5 de mise en place anterior a la apertura, con dos personas a la vez, los 300 días que abre el local. Las horas contratadas cubren esas horas necesarias y dejan un margen mínimo para el cierre, la limpieza y la gestión. Ningún sueldo baja del salario mínimo, y las jornadas parciales lo respetan en proporción. Con la estructura anterior el coste laboral era el 77,5 % de las ventas; ahora es el 35,8 %, dentro del 32-38 % que este mismo libro publica como referencia.",
+   "donde": [
+    "BARP · Instrucciones!D36"
+   ],
+   "fila": "Plantilla",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0434",
+   "es": "Clientes al día del año 1",
+   "donde": [
+    "BARP · Instrucciones!A37"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "50",
+   "donde": [
+    "BARP · Instrucciones!B37"
+   ],
+   "fila": "Clientes al día del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0436",
+   "es": "56",
+   "donde": [
+    "BARP · Instrucciones!C37"
+   ],
+   "fila": "Clientes al día del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0437",
+   "es": "Son 1,24 servicios por plaza y día sobre las 45 plazas del aforo, la mitad de la ocupación que describe el documento (1,8 servicios en el almuerzo y 1,5 en la cena). Suben porque el equipo mínimo de un tapas bar con cocina propia que abre dos servicios los 300 días del calendario cuesta 108.368 € al año pagando al menos el salario mínimo, y eso sobre los 270.000 € de la versión anterior era el 40,1 % de las ventas: por encima del 32-38 % que este mismo libro publica como referencia. Sobre la facturación recalibrada es el 35,8 %.",
+   "donde": [
+    "BARP · Instrucciones!D37"
+   ],
+   "fila": "Clientes al día del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08",
+    "P10",
+    "P02",
+    "P04"
+   ]
+  },
+  {
+   "id": "c0438",
+   "es": "Ticket medio",
+   "donde": [
+    "BARP · Instrucciones!A38"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Average check",
+   "propuesta_de": "GREST c0465 (RESTP Instrucciones!A37)",
+   "pistas": [
+    "P31",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0439",
+   "es": "18 € (sin decir si llevaba IVA)",
+   "donde": [
+    "BARP · Instrucciones!B38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P07",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0440",
+   "es": "18 € SIN IVA (el mismo número)",
+   "donde": [
+    "BARP · Instrucciones!C38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P07",
+    "P08",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "Se declara qué era esa cifra, no se cambia: con el IVA de sala son 19,80 € de precio de venta, dentro del rango de 15-22 € que publica este mismo libro.",
+   "donde": [
+    "BARP · Instrucciones!D38"
+   ],
+   "fila": "Ticket medio",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P07",
+    "P08",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "Facturación del año 1",
+   "donde": [
+    "BARP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0443",
+   "es": "270.000 €",
+   "donde": [
+    "BARP · Instrucciones!B39"
+   ],
+   "fila": "Facturación del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0444",
+   "es": "302.400 €",
+   "donde": [
+    "BARP · Instrucciones!C39"
+   ],
+   "fila": "Facturación del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0445",
+   "es": "56 clientes × 18 € × 300 días. Sube por el número de clientes, no por el precio: el ticket es exactamente el mismo.",
+   "donde": [
+    "BARP · Instrucciones!D39"
+   ],
+   "fila": "Facturación del año 1",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08",
+    "P01"
+   ]
+  },
+  {
+   "id": "c0446",
+   "es": "Alquiler",
+   "donde": [
+    "BARP · Instrucciones!A40"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Rent",
+   "propuesta_de": "GREST c0469 (RESTP Instrucciones!A38)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0447",
+   "es": "2.500 €/mes",
+   "donde": [
+    "BARP · Instrucciones!B40"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0448",
+   "es": "2.500 €/mes (sin cambio)",
+   "donde": [
+    "BARP · Instrucciones!C40"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0449",
+   "es": "Con la facturación recalibrada son el 9,9 % de las ventas, por debajo del techo del 12 % que fija este mismo libro.",
+   "donde": [
+    "BARP · Instrucciones!D40"
+   ],
+   "fila": "Alquiler",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0450",
+   "es": "Calendario de apertura",
+   "donde": [
+    "BARP · Instrucciones!A41"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Opening calendar",
+   "propuesta_de": "GCAF c1025 (CAFP Instrucciones!A43)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0451",
+   "es": "Escenarios: 310-320 días/año · cuenta de resultados: 300 implícitos",
+   "donde": [
+    "BARP · Instrucciones!B41"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0452",
+   "es": "300 días al año, un único dato en «0. Supuestos»",
+   "donde": [
+    "BARP · Instrucciones!C41"
+   ],
+   "fila": "Calendario de apertura",
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0453",
+   "es": "El libro traía dos calendarios distintos y las hojas no cuadraban entre sí. Se toma el más prudente, que además es el que la cuenta de resultados ya usaba.",
+   "donde": [
+    "BARP · Instrucciones!D41"
+   ],
+   "fila": "Calendario de apertura",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0454",
+   "es": "Fondo de maniobra",
+   "donde": [
+    "BARP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Working capital",
+   "propuesta_de": "GREST c0477 (RESTP Instrucciones!A40)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0455",
+   "es": "12.000 € etiquetados «3 meses»",
+   "donde": [
+    "BARP · Instrucciones!B42"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0456",
+   "es": "3 × los costes fijos de caja de un mes, por fórmula",
+   "donde": [
+    "BARP · Instrucciones!C42"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0457",
+   "es": "Los 12.000 € no llegaban a cubrir un solo mes de los costes fijos de caja de este plan, no tres. Ahora se recalcula solo cada vez que cambias un coste fijo.",
+   "donde": [
+    "BARP · Instrucciones!D42"
+   ],
+   "fila": "Fondo de maniobra",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0458",
+   "es": "Amortización",
+   "donde": [
+    "BARP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Depreciation",
+   "propuesta_de": "GREST c0481 (RESTP Instrucciones!A41)",
+   "pistas": [
+    "P31",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0459",
+   "es": "11.550 € al año, 10 años planos sobre toda la inversión",
+   "donde": [
+    "BARP · Instrucciones!B43"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0460",
+   "es": "Sólo sobre la obra (10 años) y la maquinaria (8 años), por fórmula",
+   "donde": [
+    "BARP · Instrucciones!C43"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0461",
+   "es": "El fondo de maniobra, la fianza, las existencias iniciales y el marketing de lanzamiento no son inmovilizado y no se amortizan.",
+   "donde": [
+    "BARP · Instrucciones!D43"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P07"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "Imprevistos de obra",
+   "donde": [
+    "BARP · Instrucciones!A44"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Build-out contingency",
+   "propuesta_de": "GCAF c1037 (CAFP Instrucciones!A46)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0463",
+   "es": "8.500 € tecleados a mano",
+   "donde": [
+    "BARP · Instrucciones!B44"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0464",
+   "es": "Un porcentaje sobre las partidas de obra, editable en «0. Supuestos»",
+   "donde": [
+    "BARP · Instrucciones!C44"
+   ],
+   "fila": "Imprevistos de obra",
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "El porcentaje vivía dentro del rótulo de la fila, así que mentía cada vez que se tocaba cualquier partida.",
+   "donde": [
+    "BARP · Instrucciones!D44"
+   ],
+   "fila": "Imprevistos de obra",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0466",
+   "es": "Impuesto de Sociedades",
+   "donde": [
+    "BARP · Instrucciones!A45"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Income tax",
+   "propuesta_de": "GM c0257 (FTP PyG 3 Años!A46 / FTP Escenarios!A19)",
+   "pistas": [
+    "P31",
+    "P07",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0467",
+   "es": "25 % los tres años, sin compensar pérdidas",
+   "donde": [
+    "BARP · Instrucciones!B45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "propuesta_en": "A flat rate every year, with no offset for losses",
+   "propuesta_de": "GFT c0444 (FTP Instrucciones!B45)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0468",
+   "es": "15 % los dos primeros ejercicios con beneficio, compensando las pérdidas anteriores",
+   "donde": [
+    "BARP · Instrucciones!C45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "propuesta_en": "One effective rate for years 1-2 and another from year 3, offsetting net operating losses carried forward",
+   "propuesta_de": "GFT c0445 (FTP Instrucciones!C45)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0469",
+   "es": "Es el tipo de entidad de nueva creación y la compensación de bases negativas que permiten los artículos 26 y 29.1 de la Ley del Impuesto sobre Sociedades.",
+   "donde": [
+    "BARP · Instrucciones!D45"
+   ],
+   "fila": "Impuesto de Sociedades",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P07",
+    "P27",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0470",
+   "es": "Plan de financiación",
+   "donde": [
+    "BARP · Instrucciones!A46"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Financing plan",
+   "propuesta_de": "GCAF c1045 (CAFP Instrucciones!A48)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0471",
+   "es": "no existía",
+   "donde": [
+    "BARP · Instrucciones!B46"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "propuesta_en": "Not included",
+   "propuesta_de": "GPAN c1055 (PANP Instrucciones!B48)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0472",
+   "es": "Hoja «Financiación»: de dónde sale el dinero, si cuadra con lo que hace falta, y el cuadro de amortización del préstamo",
+   "donde": [
+    "BARP · Instrucciones!C46"
+   ],
+   "fila": "Plan de financiación",
+   "cita_hojas": [
+    {
+     "es": "Financiación",
+     "en": "Financing"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P28",
+    "P18",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0473",
+   "es": "La ficha del producto lo prometía y ningún fichero de la familia lo traía.",
+   "donde": [
+    "BARP · Instrucciones!D46"
+   ],
+   "fila": "Plan de financiación",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0474",
+   "es": "Dinero que hay que poner",
+   "donde": [
+    "BARP · Instrucciones!A47"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0475",
+   "es": "no se declaraba",
+   "donde": [
+    "BARP · Instrucciones!B47"
+   ],
+   "fila": "Dinero que hay que poner",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "50.000 € de los socios y 129.000 € de préstamo",
+   "donde": [
+    "BARP · Instrucciones!C47"
+   ],
+   "fila": "Dinero que hay que poner",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "Se ajusta a la necesidad de caja que calcula la hoja de Inversión: ni por debajo, porque entonces el proyecto no está financiado, ni muy por encima, porque se pagan intereses por un dinero que no se usa. Los socios ponen el 29 %, que es lo que suele pedir una entidad.",
+   "donde": [
+    "BARP · Instrucciones!D47"
+   ],
+   "fila": "Dinero que hay que poner",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Tesorería mes a mes",
+   "donde": [
+    "BARP · Instrucciones!A48"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Month-by-month cash flow",
+   "propuesta_de": "GCAF c1049 (CAFP Instrucciones!A49)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "no existía",
+   "donde": [
+    "BARP · Instrucciones!B48"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "propuesta_en": "Not included",
+   "propuesta_de": "GPAN c1055 (PANP Instrucciones!B48)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Hoja «Tesorería 12 meses»: cobros, pagos, IVA trimestral y saldo acumulado",
+   "donde": [
+    "BARP · Instrucciones!C48"
+   ],
+   "fila": "Tesorería mes a mes",
+   "cita_hojas": [
+    {
+     "es": "Tesorería 12 meses",
+     "en": "12-Month Cash Flow"
+    }
+   ],
+   "por_celda": true,
+   "propuesta_en": "The \"12-Month Cash Flow\" tab: receipts, payments, quarterly sales tax and running balance",
+   "propuesta_de": "GCAF c1051 (CAFP Instrucciones!C49)",
+   "pistas": [
+    "P31",
+    "P07",
+    "P32",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "Es la hoja que responde en qué mes se agota la caja, que es lo que decide una operación bancaria.",
+   "donde": [
+    "BARP · Instrucciones!D48"
+   ],
+   "fila": "Tesorería mes a mes",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "Varios e imprevistos",
+   "donde": [
+    "BARP · Instrucciones!A49"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Miscellaneous and contingency",
+   "propuesta_de": "GM c0216 (FTP PyG 3 Años!A18 / FTP Escenarios!A14)",
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0483",
+   "es": "2.500 € al año dentro de los costes fijos",
+   "donde": [
+    "BARP · Instrucciones!B49"
+   ],
+   "fila": "Varios e imprevistos",
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0484",
+   "es": "1 % de las ventas, como coste variable",
+   "donde": [
+    "BARP · Instrucciones!C49"
+   ],
+   "fila": "Varios e imprevistos",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0485",
+   "es": "Un gasto que sube y baja con la facturación no puede vivir en los costes fijos: movía el punto de equilibrio sin motivo.",
+   "donde": [
+    "BARP · Instrucciones!D49"
+   ],
+   "fila": "Varios e imprevistos",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0486",
+   "es": "Sueldos y horario cubierto",
+   "donde": [
+    "BARP · Instrucciones!A50"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P31",
+    "P03"
+   ]
+  },
+  {
+   "id": "c0487",
+   "es": "sin ninguna comprobación",
+   "donde": [
+    "BARP · Instrucciones!B50"
+   ],
+   "fila": "Sueldos y horario cubierto",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0488",
+   "es": "Semáforo por sueldo y contador de horas contratadas frente a las necesarias",
+   "donde": [
+    "BARP · Instrucciones!C50"
+   ],
+   "fila": "Sueldos y horario cubierto",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0489",
+   "es": "La hoja de Personal avisa en rojo si un sueldo queda por debajo del mínimo legal en proporción a su jornada, y en ámbar si el equipo no llega a cubrir el horario que el propio proyecto declara.",
+   "donde": [
+    "BARP · Instrucciones!D50"
+   ],
+   "fila": "Sueldos y horario cubierto",
+   "por_celda": true,
+   "pistas": [
+    "P31"
+   ]
+  },
+  {
+   "id": "c0495",
+   "es": "Food cost comida (tapas/raciones)",
+   "donde": [
+    "BARP · Instrucciones!A54"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P04",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0496",
+   "es": "28-32 %",
+   "donde": [
+    "BARP · Instrucciones!B54"
+   ],
+   "fila": "Food cost comida (tapas/raciones)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0497",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C54"
+   ],
+   "fila": "Food cost comida (tapas/raciones)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0498",
+   "es": "Las tapas permiten aprovechar recortes y género de menor coste",
+   "donde": [
+    "BARP · Instrucciones!D54"
+   ],
+   "fila": "Food cost comida (tapas/raciones)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P04",
+    "P34"
+   ]
+  },
+  {
+   "id": "c0499",
+   "es": "Food cost bebidas (cerveza/vino)",
+   "donde": [
+    "BARP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0500",
+   "es": "22-28 %",
+   "donde": [
+    "BARP · Instrucciones!B55"
+   ],
+   "fila": "Food cost bebidas (cerveza/vino)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0501",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C55"
+   ],
+   "fila": "Food cost bebidas (cerveza/vino)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0502",
+   "es": "La cerveza de grifo tiene mejor margen que la de botella",
+   "donde": [
+    "BARP · Instrucciones!D55"
+   ],
+   "fila": "Food cost bebidas (cerveza/vino)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P17",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0503",
+   "es": "Food cost cócteles",
+   "donde": [
+    "BARP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0504",
+   "es": "18-25 %",
+   "donde": [
+    "BARP · Instrucciones!B56"
+   ],
+   "fila": "Food cost cócteles",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0505",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C56"
+   ],
+   "fila": "Food cost cócteles",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0506",
+   "es": "Margen alto si se estandarizan recetas",
+   "donde": [
+    "BARP · Instrucciones!D56"
+   ],
+   "fila": "Food cost cócteles",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0507",
+   "es": "Coste de personal sobre ventas",
+   "donde": [
+    "BARP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0508",
+   "es": "32-38 %",
+   "donde": [
+    "BARP · Instrucciones!B57"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0509",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C57"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0510",
+   "es": "Incluye los extras de fin de semana en el cálculo",
+   "donde": [
+    "BARP · Instrucciones!D57"
+   ],
+   "fila": "Coste de personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0511",
+   "es": "Alquiler sobre ventas",
+   "donde": [
+    "BARP · Instrucciones!A58"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0512",
+   "es": "8-12 %",
+   "donde": [
+    "BARP · Instrucciones!B58"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0513",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C58"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0514",
+   "es": "No superar el 12 % para ser viable",
+   "donde": [
+    "BARP · Instrucciones!D58"
+   ],
+   "fila": "Alquiler sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0515",
+   "es": "Ticket medio tapas bar",
+   "donde": [
+    "BARP · Instrucciones!A59"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P01",
+    "P04",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0516",
+   "es": "15-22 €",
+   "donde": [
+    "BARP · Instrucciones!B59"
+   ],
+   "fila": "Ticket medio tapas bar",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P08",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0517",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C59"
+   ],
+   "fila": "Ticket medio tapas bar",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0518",
+   "es": "2-3 tapas + 2 bebidas por persona. Va con IVA: el PVP equivalente de ESTE plan lo calcula la hoja «0. Supuestos»",
+   "donde": [
+    "BARP · Instrucciones!D59"
+   ],
+   "fila": "Ticket medio tapas bar",
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P07",
+    "P09",
+    "P01",
+    "P11",
+    "P04",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0519",
+   "es": "Ticket medio gastrobar",
+   "donde": [
+    "BARP · Instrucciones!A60"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P01",
+    "P04",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0520",
+   "es": "22-30 €",
+   "donde": [
+    "BARP · Instrucciones!B60"
+   ],
+   "fila": "Ticket medio gastrobar",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P08",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0521",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C60"
+   ],
+   "fila": "Ticket medio gastrobar",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0522",
+   "es": "Raciones + maridaje de vino o vermut",
+   "donde": [
+    "BARP · Instrucciones!D60"
+   ],
+   "fila": "Ticket medio gastrobar",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P04",
+    "P14",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0523",
+   "es": "Consumiciones de barra sobre ventas",
+   "donde": [
+    "BARP · Instrucciones!A61"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P05",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0524",
+   "es": "35-45 %",
+   "donde": [
+    "BARP · Instrucciones!B61"
+   ],
+   "fila": "Consumiciones de barra sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0525",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C61"
+   ],
+   "fila": "Consumiciones de barra sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0526",
+   "es": "La barra es clave en un tapas bar, con alto margen",
+   "donde": [
+    "BARP · Instrucciones!D61"
+   ],
+   "fila": "Consumiciones de barra sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P04",
+    "P05",
+    "P41"
+   ]
+  },
+  {
+   "id": "c0527",
+   "es": "Rotación de mesa",
+   "donde": [
+    "BARP · Instrucciones!A62"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0528",
+   "es": "2-3 turnos",
+   "donde": [
+    "BARP · Instrucciones!B62"
+   ],
+   "fila": "Rotación de mesa",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0529",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C62"
+   ],
+   "fila": "Rotación de mesa",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0530",
+   "es": "Servicios completos por plaza y día. Es de donde sale el techo de rotaciones que trae por defecto la hoja «Punto Equilibrio»: si tu horario y tu aforo dan para más, súbelo en esa celda verde",
+   "donde": [
+    "BARP · Instrucciones!D62"
+   ],
+   "fila": "Rotación de mesa",
+   "cita_hojas": [
+    {
+     "es": "Punto Equilibrio",
+     "en": "Break-Even"
+    }
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P11",
+    "P03",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0531",
+   "es": "Ocupación media semana",
+   "donde": [
+    "BARP · Instrucciones!A63"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0532",
+   "es": "50-65 %",
+   "donde": [
+    "BARP · Instrucciones!B63"
+   ],
+   "fila": "Ocupación media semana",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0533",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C63"
+   ],
+   "fila": "Ocupación media semana",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0534",
+   "es": "El afterwork de jueves-viernes es muy fuerte",
+   "donde": [
+    "BARP · Instrucciones!D63"
+   ],
+   "fila": "Ocupación media semana",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0535",
+   "es": "Ocupación fin de semana",
+   "donde": [
+    "BARP · Instrucciones!A64"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0536",
+   "es": "80-95 %",
+   "donde": [
+    "BARP · Instrucciones!B64"
+   ],
+   "fila": "Ocupación fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0537",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C64"
+   ],
+   "fila": "Ocupación fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0538",
+   "es": "Vermut de sábado + cenas de fin de semana",
+   "donde": [
+    "BARP · Instrucciones!D64"
+   ],
+   "fila": "Ocupación fin de semana",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P14",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0539",
+   "es": "Margen bruto objetivo",
+   "donde": [
+    "BARP · Instrucciones!A65"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0540",
+   "es": "> 68 %",
+   "donde": [
+    "BARP · Instrucciones!B65"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0541",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C65"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0542",
+   "es": "Un tapas bar tiene margen superior al de un restaurante casual",
+   "donde": [
+    "BARP · Instrucciones!D65"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P04",
+    "P45"
+   ]
+  },
+  {
+   "id": "c0543",
+   "es": "EBITDA objetivo (año 2)",
+   "donde": [
+    "BARP · Instrucciones!A66"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0544",
+   "es": "15-22 %",
+   "donde": [
+    "BARP · Instrucciones!B66"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0545",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C66"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0546",
+   "es": "Más rentable que un restaurante por el ticket rápido de barra",
+   "donde": [
+    "BARP · Instrucciones!D66"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P05",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0547",
+   "es": "Retorno de la inversión",
+   "donde": [
+    "BARP · Instrucciones!A67"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0548",
+   "es": "18-30 meses",
+   "donde": [
+    "BARP · Instrucciones!B67"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0549",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C67"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0550",
+   "es": "Es la referencia del sector, medida sobre lo que se COMPRA: obra y equipamiento. Lo comparable con ella es la fila «Payback sobre el CAPEX» de la hoja de Tesorería, que mide exactamente eso. El «Payback del proyecto» del bloque de arriba mide algo más amplio, porque recupera además el fondo de maniobra de tres meses, que queda inmovilizado hasta que se cierra el negocio: por eso sale más largo. El IVA de la inversión no entra en ninguno de los dos, porque se recupera con el modelo 303. La cifra que publica ESTE plan es la de arriba",
+   "donde": [
+    "BARP · Instrucciones!D67"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P07",
+    "P32",
+    "P11",
+    "P47"
+   ]
+  },
+  {
+   "id": "c0551",
+   "es": "Merma media",
+   "donde": [
+    "BARP · Instrucciones!A68"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0552",
+   "es": "3-5 %",
+   "donde": [
+    "BARP · Instrucciones!B68"
+   ],
+   "fila": "Merma media",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0553",
+   "es": "Fichero v1.1",
+   "donde": [
+    "BARP · Instrucciones!C68"
+   ],
+   "fila": "Merma media",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P10",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0554",
+   "es": "Las tapas permiten aprovechar recortes: menor merma que en un restaurante de carta",
+   "donde": [
+    "BARP · Instrucciones!D68"
+   ],
+   "fila": "Merma media",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P04",
+    "P48"
+   ]
+  },
+  {
+   "id": "c0555",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "BARP · Instrucciones!A69"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P07",
+    "P29",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0556",
+   "es": "PROVINCIAL de hostelería",
+   "donde": [
+    "BARP · Instrucciones!B69"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0557",
+   "es": "Checklist de apertura, fase de personal",
+   "donde": [
+    "BARP · Instrucciones!C69"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0558",
+   "es": "No existe una tabla salarial estatal única: copia la tabla de tu provincia en la celda de Supuestos",
+   "donde": [
+    "BARP · Instrucciones!D69"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P33",
+    "P49"
+   ]
+  }
+ ]
+}

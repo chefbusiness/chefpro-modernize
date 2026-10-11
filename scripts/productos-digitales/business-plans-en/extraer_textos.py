@@ -639,9 +639,9 @@ def main():
 
     for e in cadenas:
         if e['tratamiento'] in ('traducir', 'localizar'):
-            e['grupo'] = mapas.grupo_de(e['planes'], e['es'], e['tratamiento'])
-            r = mapas.REUSO.get(e['es']) if e['tratamiento'] == 'traducir' else None
-            if r:                                          # ya traducida en otro conjunto (restpan: GM/GFT/GCAF)
+            e['grupo'] = mapas.grupo_de(e['planes'], e['es'], e['tratamiento'], donde=e['donde'])
+            r = mapas.reuso_de(e)
+            if r:                                          # ya traducida en otro conjunto (restpan/bar: propuesta)
                 e['reuso'] = r
         else:
             e['grupo'] = 'GX'

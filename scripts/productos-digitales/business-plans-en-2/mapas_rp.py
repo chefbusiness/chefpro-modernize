@@ -155,7 +155,7 @@ GRUPOS_DESC = OrderedDict([
 ])
 
 
-def grupo_de(planes, texto=None, tratamiento=None):
+def grupo_de(planes, texto=None, tratamiento=None, donde=None):
     r = REUSO.get(texto) if tratamiento == 'traducir' else None
     if r and r['grupo'] == 'GM':
         return 'GM'

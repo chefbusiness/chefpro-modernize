@@ -1,0 +1,2306 @@
+{
+ "tanda": "GBAR-check",
+ "salida": "scripts/productos-digitales/business-plans-en-3/textos_en/GBAR-check.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 106,
+ "n_palabras": 657,
+ "pistas": {
+  "P01": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P02": "D60: «LLC vs S corp with your accountant»",
+  "P03": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P04": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P05": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P06": "Glosario: barra → «bar» (la del local); camarero de barra → «bartender»; ayudante → «barback»",
+  "P07": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P08": "D60: «EIN + state payroll / unemployment registration»; los dueños de una LLC no van en nómina (draws + self-employment tax)",
+  "P09": "D51: «small plates» («small plates (tapas-style)» solo la primera vez en el docx); nunca «tapas bar» ni «gastrobar»",
+  "P10": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P11": "D60: «POS that reports sales tax correctly» (sin Veri*factu ni RD)",
+  "P12": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P13": "D60: «Zoning check before signing» (confirm bar / restaurant use and any distance rules for alcohol)",
+  "P14": "D60: LIQUOR LICENSE: «apply right after signing the lease» (state alcohol agency + local approval; quota states: buy / transfer an existing license); responsable Owner + attorney (lección M1 de BP2: nunca un trámite de un día)",
+  "P15": "D60: «Sidewalk café / patio permit» (renovación según la ciudad); sin «facturación extra 20-30 %» (sin fuente)",
+  "P16": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P17": "D60: «Entertainment permit if live music or DJ» (local)",
+  "P18": "D60: general liability + liquor liability (dram shop): la pide el estado o la aseguradora con la licencia; sin «300.000 €»",
+  "P19": "D60: «Noise ordinance check (residential neighbors)»",
+  "P20": "D60: «Architect + MEP drawings → building permits + health department plan review»",
+  "P21": "D14/D60: sin kW españoles: «Electrical service sized for the kitchen line and bar coolers»",
+  "P22": "D60: «Type I hood + UL 300 suppression (NFPA 96)»",
+  "P23": "D60: «Grease interceptor (plumbing review)»",
+  "P24": "Glosario: tiraje → «pouring / draft service»; grifos → «draft lines / taps»",
+  "P25": "D60: «Draft system: distributor install (lines, glycol)»; tied-house rules limit what a brewer can give you free; sin marcas españolas (Mahou, Estrella)",
+  "P26": "D60: sin marcas españolas; distribuidores con licencia (three-tier system)",
+  "P27": "D60: «Offer letters, I-9, W-4; state minimum wage» (sin convenio provincial)",
+  "P28": "D60: «New-hire reporting» (state)",
+  "P29": "D60: «OSHA basics»",
+  "P30": "D60: «Bar service + responsible beverage service certification (TIPS / ServSafe Alcohol)»; age-ID checks",
+  "P31": "D51: vermouth / cocktails; sin «hora del vermut» española",
+  "P32": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P33": "D60: «Allergen + food safety (Food Code)»; 9 alérgenos mayores US (UK 14)",
+  "P34": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P35": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P36": "D60: «Distributor accounts (beer, wine, spirits) — three-tier system: you buy from licensed distributors»; sin «exclusividad por grifos gratis»",
+  "P37": "D60: Google, Yelp, OpenTable / Resy",
+  "P38": "D60: «Google, Yelp, OpenTable / Resy»",
+  "P39": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P40": "D60: DoorDash / Uber Eats SOLO para la comida (el reparto de alcohol depende de la ley del estado)"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "cliente/día": "customers per day",
+  "ticket medio sin IVA": "average check (excl. sales tax)",
+  "PVP con IVA": "menu price incl. sales tax",
+  "aparcamiento y base del vehículo": "commissary & truck parking",
+  "venta ambulante": "mobile vending",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cubiertos/día": "covers per day",
+  "tapas / raciones": "small plates",
+  "camarero/a de barra": "bartender",
+  "ayudante de barra": "barback",
+  "camarero/a de sala": "server",
+  "grifos de cerveza": "draft beer system / taps",
+  "tiraje": "pouring / draft service",
+  "licencia de alcohol": "liquor license",
+  "RC por alcohol": "liquor liability (dram shop) insurance",
+  "servicio responsable de alcohol": "responsible beverage service (TIPS / ServSafe Alcohol)",
+  "distribuidor": "licensed distributor (three-tier system)",
+  "comandero": "handheld POS",
+  "vermut": "vermouth",
+  "cóctel": "cocktail"
+ },
+ "pestanas_es_en": {
+  "BARP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "BARC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Local": "Phase 2 - Location & Licenses",
+   "F3 - Equipamiento": "Phase 3 - Build-Out & Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US INDUSTRY BENCHMARKS",
+  "Ticket medio SIN IVA (€)": "Average check (excl. sales tax)",
+  "PVP equivalente con IVA (calculado)": "Menu price incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol to go",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "Este fichero forma parte del producto «plan-negocio-tapas-bar» de AI Chef Pro.": "This file is part of the Bar Business Plan Kit by AI Chef Pro.",
+  "CHECKLIST APERTURA — TAPAS BAR / GASTROBAR": "BAR OPENING CHECKLIST — NEIGHBORHOOD BAR WITH SMALL PLATES",
+  "INSTRUCCIONES DE USO — Plan financiero Tapas Bar / Gastrobar": "HOW TO USE THIS WORKBOOK — Bar Financial Projections",
+  "PLAN DE NEGOCIO: TAPAS BAR / GASTROBAR": "BAR BUSINESS PLAN: NEIGHBORHOOD BAR WITH SMALL PLATES",
+  "Inversión Inicial Estimada — España 2026": "Estimated Startup Costs — US kit example (2026)",
+  "Ajusta las cifras a tu proyecto. Rangos mercado español actual.": "US kit example (2026) — replace with your own quotes.",
+  "FASE 2: LOCAL Y LICENCIAS": "PHASE 2: LOCATION & LICENSES",
+  "Constitución SL + notaría + registro": "LLC formation + legal",
+  "Licencia de actividad (clasificada)": "Liquor license + local permits (non-quota state example)",
+  "Proyecto técnico + certificación": "Architect, MEP drawings + permit fees",
+  "Obra civil y adecuación local": "Build-out (second-generation space)",
+  "Instalación eléctrica + climatización": "Electrical + HVAC",
+  "Fontanería + evacuación + extracciones": "Plumbing, grease interceptor + Type I hood",
+  "Equipamiento cocina (plancha, freidora, horno)": "Kitchen equipment (griddle, fryer, oven)",
+  "Equipamiento frío (cámaras, neveras barra)": "Refrigeration (walk-in + back-bar coolers)",
+  "Barra y mostrador de tapas": "Bar build (bar top + underbar stations)",
+  "Grifos cerveza + instalación": "Draft beer system + installation",
+  "Mobiliario sala (mesas altas + bajas + taburetes)": "Furniture (tables, high-tops + bar stools)",
+  "Terraza (mobiliario + toldo)": "Patio (furniture + awning)",
+  "Vajilla, cristalería tapas, cubertería": "Glassware, smallwares + tableware",
+  "Decoración + iluminación ambiente": "Decor, lighting + sound",
+  "Rotulación + imagen exterior": "Exterior signage",
+  "Marketing lanzamiento": "Launch marketing",
+  "Stock inicial (producto, vinos, cervezas)": "Opening inventory (liquor, beer, wine + food)",
+  "TPV + software gestión + comandero": "POS + handhelds + software",
+  "Escenario realista — Tapas Bar / Gastrobar 40-50 plazas": "Base case — neighborhood bar with small plates, 60 seats",
+  "Ventas de comida (tapas, raciones y otros)": "Food sales (small plates)",
+  "Ventas de bebida (cerveza, vino, vermut y cócteles)": "Beverage sales (cocktails, beer, wine + non-alcoholic)",
+  "Seguros (RC + multirriesgo)": "Insurance (general + liquor liability + property)",
+  "Gestoría + contabilidad": "Accounting + bookkeeping",
+  "Mantenimiento equipos": "Equipment maintenance",
+  "Software (TPV, reservas, delivery)": "Software (POS, reservations, inventory)",
+  "Limpieza y productos": "Cleaning supplies + linens",
+  "Gestión de residuos (orgánico, cartón y aceite usado)": "Waste + grease hauling (trash, recycling, used oil)",
+  "Desinsectación, desratización y desinfección (DDD)": "Pest control",
+  "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)": "Music licensing (ASCAP/BMI/SESAC)",
+  "Prevención de riesgos laborales y vigilancia de la salud": "Safety + responsible-service training",
+  "Propietario/a y encargado/a de sala": "Owner / general manager",
+  "Jefe de cocina": "Kitchen lead",
+  "Camarero/a de barra (turno fuerte)": "Bartenders (peak shifts)",
+  "Camarero/a de sala y terraza": "Servers (floor & patio)",
+  "Ayudante de cocina": "Line / prep cook",
+  "Extra de fin de semana (barra y sala)": "Barback / weekend extra",
+  "Suplencias de vacaciones y descansos": "Relief cover (vacations + days off)"
+ },
+ "cadenas": [
+  {
+   "id": "c0696",
+   "es": "Elegir forma jurídica (SL recomendada)",
+   "donde": [
+    "BARC · F1 - Constitución!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0699",
+   "es": "SL unipersonal, capital 1 € (Ley Crea y Crece)",
+   "donde": [
+    "BARC · F1 - Constitución!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P03",
+    "P02"
+   ]
+  },
+  {
+   "id": "c0703",
+   "es": "Llevar certificación nombre, estatutos, DNI",
+   "donde": [
+    "BARC · F1 - Constitución!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0707",
+   "es": "Solicitar CIF provisional",
+   "donde": [
+    "BARC · F1 - Constitución!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01"
+   ]
+  },
+  {
+   "id": "c0710",
+   "es": "Epígrafe IAE: 671.5 (restaurantes de un tenedor) o 673.2 (otros cafés y bares), según el peso de la barra frente al servicio de mesa — la elección la valida tu gestor: condiciona inspecciones y licencia",
+   "donde": [
+    "BARC · F1 - Constitución!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P04",
+    "P05",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0711",
+   "es": "Alta Seguridad Social (autónomo + empresa)",
+   "donde": [
+    "BARC · F1 - Constitución!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P07",
+    "P08"
+   ]
+  },
+  {
+   "id": "c0715",
+   "es": "Separar finanzas personales/empresa",
+   "donde": [
+    "BARC · F1 - Constitución!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0718",
+   "es": "Imprescindible para trámites telemáticos",
+   "donde": [
+    "BARC · F1 - Constitución!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0725",
+   "es": "Proteger nombre del gastrobar",
+   "donde": [
+    "BARC · F1 - Constitución!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0730",
+   "es": "El RD 1007/2023 y su calendario escalonado obligan a que el software de facturación sea verificable. Consulta la fecha que te aplica antes de comprar el TPV + comandero que presupuesta la hoja de Inversión",
+   "donde": [
+    "BARC · F1 - Constitución!E15"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P10",
+    "P05",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0738",
+   "es": "Zona con vida nocturna, paso peatonal, terrazas",
+   "donde": [
+    "BARC · F2 - Local!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0742",
+   "es": "Carencia 2-3 meses para obra",
+   "donde": [
+    "BARC · F2 - Local!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P12"
+   ]
+  },
+  {
+   "id": "c0743",
+   "es": "Verificar uso urbanístico",
+   "donde": [
+    "BARC · F2 - Local!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0745",
+   "es": "Informe urbanístico ANTES de firmar",
+   "donde": [
+    "BARC · F2 - Local!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P13"
+   ]
+  },
+  {
+   "id": "c0746",
+   "es": "Solicitar licencia de actividad CLASIFICADA",
+   "donde": [
+    "BARC · F2 - Local!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P14"
+   ]
+  },
+  {
+   "id": "c0749",
+   "es": "Tapas bar con cocina = actividad clasificada (más exigente)",
+   "donde": [
+    "BARC · F2 - Local!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0750",
+   "es": "Licencia de terraza",
+   "donde": [
+    "BARC · F2 - Local!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0751",
+   "es": "Terraza = facturación extra 20-30%, renovación anual",
+   "donde": [
+    "BARC · F2 - Local!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P15"
+   ]
+  },
+  {
+   "id": "c0752",
+   "es": "Licencia de música ambiente",
+   "donde": [
+    "BARC · F2 - Local!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P16",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0753",
+   "es": "1 mes",
+   "donde": [
+    "BARC · F2 - Local!D10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P17"
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "Si quieres hilo musical o DJ en gastrobar",
+   "donde": [
+    "BARC · F2 - Local!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0757",
+   "es": "Mínimo 300.000 € RC",
+   "donde": [
+    "BARC · F2 - Local!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P03",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0759",
+   "es": "Incendio, robo, daños agua",
+   "donde": [
+    "BARC · F2 - Local!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0760",
+   "es": "Medición acústica (si aplica)",
+   "donde": [
+    "BARC · F2 - Local!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0762",
+   "es": "Obligatorio si zona residencial mixta",
+   "donde": [
+    "BARC · F2 - Local!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P19"
+   ]
+  },
+  {
+   "id": "c0767",
+   "es": "Se comprueba en la inspección. Cartón, orgánico y el aceite usado de plancha y freidora, que no puede ir al desagüe",
+   "donde": [
+    "BARC · F2 - Local!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0776",
+   "es": "Proyecto técnico actividad clasificada",
+   "donde": [
+    "BARC · F3 - Equipamiento!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0778",
+   "es": "Planos, memoria, instalaciones, salida humos",
+   "donde": [
+    "BARC · F3 - Equipamiento!E5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P20"
+   ]
+  },
+  {
+   "id": "c0782",
+   "es": "Materiales lavables en cocina",
+   "donde": [
+    "BARC · F3 - Equipamiento!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0783",
+   "es": "Instalación eléctrica (potencia 20-25 kW)",
+   "donde": [
+    "BARC · F3 - Equipamiento!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P21"
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Cocina industrial + climatización = alta potencia",
+   "donde": [
+    "BARC · F3 - Equipamiento!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0786",
+   "es": "Salida de humos + campana extractora",
+   "donde": [
+    "BARC · F3 - Equipamiento!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P22"
+   ]
+  },
+  {
+   "id": "c0788",
+   "es": "Crítico en tapas bar: plancha, freidora generan mucho humo",
+   "donde": [
+    "BARC · F3 - Equipamiento!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Fontanería, evacuación y trampa grasas",
+   "donde": [
+    "BARC · F3 - Equipamiento!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0791",
+   "es": "Trampa grasas obligatoria con cocina elaborada",
+   "donde": [
+    "BARC · F3 - Equipamiento!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P23"
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Climatización (AA + calefacción)",
+   "donde": [
+    "BARC · F3 - Equipamiento!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0793",
+   "es": "Barra genera calor, necesita buen flujo aire",
+   "donde": [
+    "BARC · F3 - Equipamiento!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0794",
+   "es": "Instalación grifos cerveza (4-6 grifos)",
+   "donde": [
+    "BARC · F3 - Equipamiento!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0795",
+   "es": "Proveedor cerveza",
+   "donde": [
+    "BARC · F3 - Equipamiento!C11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P25"
+   ]
+  },
+  {
+   "id": "c0796",
+   "es": "Negociar con distribuidores (Mahou, Estrella, craft)",
+   "donde": [
+    "BARC · F3 - Equipamiento!E11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P26",
+    "P25"
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "Compra equipamiento cocina",
+   "donde": [
+    "BARC · F3 - Equipamiento!B12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0799",
+   "es": "Plancha, freidora, horno, salamandra y baño maría",
+   "donde": [
+    "BARC · F3 - Equipamiento!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0800",
+   "es": "Compra equipamiento frío",
+   "donde": [
+    "BARC · F3 - Equipamiento!B13"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0801",
+   "es": "Cámara + neveras bajo barra + congelador",
+   "donde": [
+    "BARC · F3 - Equipamiento!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06"
+   ]
+  },
+  {
+   "id": "c0802",
+   "es": "Construcción barra + mostrador tapas",
+   "donde": [
+    "BARC · F3 - Equipamiento!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0805",
+   "es": "Barra con vitrina tapas, zona tiraje, fregadero",
+   "donde": [
+    "BARC · F3 - Equipamiento!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P24",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0806",
+   "es": "Mobiliario sala + terraza",
+   "donde": [
+    "BARC · F3 - Equipamiento!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0808",
+   "es": "Mesas altas + bajas, taburetes, terraza",
+   "donde": [
+    "BARC · F3 - Equipamiento!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0809",
+   "es": "Instalación TPV + comandero",
+   "donde": [
+    "BARC · F3 - Equipamiento!B16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10"
+   ]
+  },
+  {
+   "id": "c0810",
+   "es": "TPV barra + comandero sala",
+   "donde": [
+    "BARC · F3 - Equipamiento!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P10",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0811",
+   "es": "Decoración, iluminación, pizarras",
+   "donde": [
+    "BARC · F3 - Equipamiento!B17"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0813",
+   "es": "Azulejos, madera, pizarras tapas del día",
+   "donde": [
+    "BARC · F3 - Equipamiento!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0817",
+   "es": "Turno partido (almuerzo + cena) o continuo",
+   "donde": [
+    "BARC · F4 - Personal!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0818",
+   "es": "Publicar ofertas empleo",
+   "donde": [
+    "BARC · F4 - Personal!B6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0819",
+   "es": "Buscar cocinero con experiencia en tapas",
+   "donde": [
+    "BARC · F4 - Personal!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Prueba práctica: elaborar 3 tapas en 20 min",
+   "donde": [
+    "BARC · F4 - Personal!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0823",
+   "es": "Convenio provincial hostelería",
+   "donde": [
+    "BARC · F4 - Personal!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P07",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0824",
+   "es": "Alta trabajadores Seguridad Social",
+   "donde": [
+    "BARC · F4 - Personal!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P07",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0829",
+   "es": "Plan prevención riesgos (PRL)",
+   "donde": [
+    "BARC · F4 - Personal!B11"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0832",
+   "es": "Formación cocina tapas",
+   "donde": [
+    "BARC · F4 - Personal!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0833",
+   "es": "Jefe cocina",
+   "donde": [
+    "BARC · F4 - Personal!C12",
+    "BARC · F6 - 90 Días!C6",
+    "BARC · F6 - 90 Días!C8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0834",
+   "es": "Estandarizar recetas, presentaciones, tiempos",
+   "donde": [
+    "BARC · F4 - Personal!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0835",
+   "es": "Formación servicio y barra",
+   "donde": [
+    "BARC · F4 - Personal!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P06",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0836",
+   "es": "Tiraje cerveza, vermut, servicio tapas en barra",
+   "donde": [
+    "BARC · F4 - Personal!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P31",
+    "P24",
+    "P06",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0837",
+   "es": "Formación alérgenos + APPCC",
+   "donde": [
+    "BARC · F4 - Personal!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P32",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0838",
+   "es": "14 alérgenos, registro temperaturas, trazabilidad",
+   "donde": [
+    "BARC · F4 - Personal!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P32",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0846",
+   "es": "Diseñar identidad visual",
+   "donde": [
+    "BARC · F5 - Marketing!B5"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P34"
+   ]
+  },
+  {
+   "id": "c0848",
+   "es": "Logo, colores, tipografía y estilo visual",
+   "donde": [
+    "BARC · F5 - Marketing!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0850",
+   "es": "Categoría: Bar de tapas. Fotos, horario, carta",
+   "donde": [
+    "BARC · F5 - Marketing!E6"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0852",
+   "es": "Instagram para fotos de tapas, TikTok para vídeos de cocina",
+   "donde": [
+    "BARC · F5 - Marketing!E7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0853",
+   "es": "Página web básica",
+   "donde": [
+    "BARC · F5 - Marketing!B8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0854",
+   "es": "Dev/Diseñador",
+   "donde": [
+    "BARC · F5 - Marketing!C8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0855",
+   "es": "Con carta, ubicación, reservas, horario",
+   "donde": [
+    "BARC · F5 - Marketing!E8"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0858",
+   "es": "Tapas, raciones, barra, ambiente, terraza",
+   "donde": [
+    "BARC · F5 - Marketing!E9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09",
+    "P06"
+   ]
+  },
+  {
+   "id": "c0859",
+   "es": "Diseñar carta / pizarras tapas",
+   "donde": [
+    "BARC · F5 - Marketing!B10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0860",
+   "es": "Carta física + pizarra de tapas del día + QR digital",
+   "donde": [
+    "BARC · F5 - Marketing!E10"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0861",
+   "es": "Rotulación exterior",
+   "donde": [
+    "BARC · F5 - Marketing!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0863",
+   "es": "Rótulo + pizarra exterior + vinilo",
+   "donde": [
+    "BARC · F5 - Marketing!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0864",
+   "es": "Campaña pre-apertura RRSS",
+   "donde": [
+    "BARC · F5 - Marketing!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35"
+   ]
+  },
+  {
+   "id": "c0865",
+   "es": "Cocina a la vista, cuenta atrás y sorteo inaugural",
+   "donde": [
+    "BARC · F5 - Marketing!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0866",
+   "es": "Acuerdos proveedores (cerveza, vino, vermut)",
+   "donde": [
+    "BARC · F5 - Marketing!B13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P31",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0867",
+   "es": "Negociar exclusividad cerveza por grifos gratis",
+   "donde": [
+    "BARC · F5 - Marketing!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P24",
+    "P36"
+   ]
+  },
+  {
+   "id": "c0868",
+   "es": "Registrarse en Google Maps, TripAdvisor, TheFork",
+   "donde": [
+    "BARC · F5 - Marketing!B14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P37",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0869",
+   "es": "TheFork importante para tapas con reserva",
+   "donde": [
+    "BARC · F5 - Marketing!E14"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P09",
+    "P37",
+    "P38"
+   ]
+  },
+  {
+   "id": "c0870",
+   "es": "Evento inauguración",
+   "donde": [
+    "BARC · F5 - Marketing!B15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0871",
+   "es": "Invitar vecinos, influencers foodie, prensa barrio",
+   "donde": [
+    "BARC · F5 - Marketing!E15"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0872",
+   "es": "Programa fidelización",
+   "donde": [
+    "BARC · F5 - Marketing!B16"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0873",
+   "es": "Tarjeta tapas 10a gratis o app de puntos",
+   "donde": [
+    "BARC · F5 - Marketing!E16"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0875",
+   "es": "Distinta de la licencia municipal de música que ya tiene este checklist: ésta es de propiedad intelectual y se paga aunque el ayuntamiento ya haya autorizado el hilo musical o el DJ",
+   "donde": [
+    "BARC · F5 - Marketing!E17"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P01",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0876",
+   "es": "Cláusula informativa y consentimiento en TheFork y en la lista de correo",
+   "donde": [
+    "BARC · F5 - Marketing!B18"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0880",
+   "es": "Revisión diaria caja y ventas",
+   "donde": [
+    "BARC · F6 - 90 Días!B5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0882",
+   "es": "Comparar con previsiones plan financiero",
+   "donde": [
+    "BARC · F6 - 90 Días!E5"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0885",
+   "es": "Pesar el género: carnes, pescado y embutidos",
+   "donde": [
+    "BARC · F6 - 90 Días!E6"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0886",
+   "es": "Análisis de las tapas más vendidas frente a las menos vendidas",
+   "donde": [
+    "BARC · F6 - 90 Días!B7"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0888",
+   "es": "Aplicar ingeniería de menú: Stars, Puzzles, Dogs",
+   "donde": [
+    "BARC · F6 - 90 Días!E7"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0889",
+   "es": "Ajustar carta tapas del día",
+   "donde": [
+    "BARC · F6 - 90 Días!B8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0890",
+   "es": "Rotar tapas según temporada y producto disponible",
+   "donde": [
+    "BARC · F6 - 90 Días!E8"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  },
+  {
+   "id": "c0891",
+   "es": "Encuestas clientes + reseñas Google",
+   "donde": [
+    "BARC · F6 - 90 Días!B9"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P39"
+   ]
+  },
+  {
+   "id": "c0893",
+   "es": "Pedir reseñas, responder TODAS",
+   "donde": [
+    "BARC · F6 - 90 Días!E9"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0894",
+   "es": "Optimizar turnos personal",
+   "donde": [
+    "BARC · F6 - 90 Días!B10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0896",
+   "es": "Reforzar viernes-sábado, reducir lunes-martes",
+   "donde": [
+    "BARC · F6 - 90 Días!E10"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0897",
+   "es": "Revisar proveedores y negociar",
+   "donde": [
+    "BARC · F6 - 90 Días!B11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0899",
+   "es": "Con volumen real, renegociar precios cerveza, vino",
+   "donde": [
+    "BARC · F6 - 90 Días!E11"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0900",
+   "es": "Evaluar delivery (Glovo, Uber Eats)",
+   "donde": [
+    "BARC · F6 - 90 Días!B12"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P35",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0902",
+   "es": "Solo si margen lo permite (comisiones 25-35%)",
+   "donde": [
+    "BARC · F6 - 90 Días!E12"
+   ],
+   "fila": "☐"
+  },
+  {
+   "id": "c0904",
+   "es": "Visitar otros tapas bars zona, comparar",
+   "donde": [
+    "BARC · F6 - 90 Días!E13"
+   ],
+   "fila": "☐",
+   "pistas": [
+    "P09"
+   ]
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GR": {
+   "salida": "scripts/productos-digitales/business-plans-en-3/textos_en/GR.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 97,
+   "cadenas": [
+    {
+     "id": "c0005",
+     "es": "Cubiertos/día (media del año 1)",
+     "en_actual": "Covers per day (year-1 average)",
+     "de": "GREST c0005 (RESTP 0. Supuestos!A4)",
+     "donde": [
+      "BARP · 0. Supuestos!A4"
+     ]
+    },
+    {
+     "id": "c0043",
+     "es": "Fianza del alquiler (meses)",
+     "en_actual": "Security deposit (months of rent)",
+     "de": "GN c0043 (RESTP 0. Supuestos!A25 / PANP 0. Supuestos!A25)",
+     "donde": [
+      "BARP · 0. Supuestos!A25"
+     ]
+    },
+    {
+     "id": "c0044",
+     "es": "Tres meses de renta, como en el contrato tipo de local de negocio",
+     "en_actual": "Months of rent held as a security deposit. It is set in your commercial lease, so check the terms before you sign",
+     "de": "GN c0044 (RESTP 0. Supuestos!C25 / PANP 0. Supuestos!C25)",
+     "donde": [
+      "BARP · 0. Supuestos!C25"
+     ]
+    },
+    {
+     "id": "c0057",
+     "es": "Tipo nominal anual; pide oferta a dos entidades y a una línea ICO antes de fijarlo",
+     "en_actual": "Nominal annual rate, not APR; get offers from two lenders, including an SBA-guaranteed loan, before you fix it",
+     "de": "GREST c0057 (RESTP 0. Supuestos!C32)",
+     "donde": [
+      "BARP · 0. Supuestos!C32"
+     ]
+    },
+    {
+     "id": "c0059",
+     "es": "Años totales, carencia incluida",
+     "en_actual": "Total years, interest-only period included",
+     "de": "GN c0059 (RESTP 0. Supuestos!C33 / PANP 0. Supuestos!C33)",
+     "donde": [
+      "BARP · 0. Supuestos!C33"
+     ]
+    },
+    {
+     "id": "c0063",
+     "es": "Mínimo que exige este mismo libro (Instrucciones): un colchón por debajo de 3 meses no cubre un bache de temporada baja",
+     "en_actual": "The minimum this workbook requires (see \"Instructions\"): a cushion of less than 3 months will not cover a slow season",
+     "de": "GPAN c0882 (PANP 0. Supuestos!C35)",
+     "donde": [
+      "BARP · 0. Supuestos!C35"
+     ]
+    },
+    {
+     "id": "c0086",
+     "es": "Rotaciones al día implícitas (calculado)",
+     "en_actual": "Implied seat turns per day (calculated)",
+     "de": "GREST c0086 (RESTP 0. Supuestos!A50)",
+     "donde": [
+      "BARP · 0. Supuestos!A50"
+     ]
+    },
+    {
+     "id": "c0087",
+     "es": "Aforo del local (plazas sentadas + barra)",
+     "en_actual": "Seating capacity (seats at tables + bar)",
+     "de": "GN c0087 (RESTP 0. Supuestos!A51 / PANP 0. Supuestos!A51)",
+     "donde": [
+      "BARP · 0. Supuestos!A51"
+     ]
+    },
+    {
+     "id": "c0090",
+     "es": "Un local que abre no factura desde el primer día lo mismo que a los seis meses. Con 100 % se elimina la rampa y el año 1 se proyecta a velocidad de crucero",
+     "en_actual": "A new business does not sell on day one what it sells six months later. The daily volume above is the year-1 AVERAGE: the ramp only spreads year 1's sales across the months (slower start, stronger finish) and keeps the annual total. At 100% there is no ramp",
+     "de": "GN c0090 (RESTP 0. Supuestos!C52 / PANP 0. Supuestos!C52)",
+     "donde": [
+      "BARP · 0. Supuestos!C52"
+     ]
+    },
+    {
+     "id": "c0093",
+     "es": "Meses de alquiler ANTES de abrir (obra y licencias)",
+     "en_actual": "Months of rent BEFORE opening (build-out and permits)",
+     "de": "GN c0093 (RESTP 0. Supuestos!A54 / PANP 0. Supuestos!A54)",
+     "donde": [
+      "BARP · 0. Supuestos!A54"
+     ]
+    },
+    {
+     "id": "c0094",
+     "es": "El local se paga desde que se firma. Estos meses son inversión: NO se solapan con el P&L, que arranca el día de la apertura",
+     "en_actual": "You pay for the space from the day you sign. These months are a startup cost: they do NOT overlap the P&L, which starts on opening day",
+     "de": "GN c0094 (RESTP 0. Supuestos!C54 / PANP 0. Supuestos!C54)",
+     "donde": [
+      "BARP · 0. Supuestos!C54"
+     ]
+    },
+    {
+     "id": "c0095",
+     "es": "Imprevistos sobre las partidas de OBRA del bloque de local (%)",
+     "en_actual": "Contingency on the BUILD-OUT lines of the space block (%)",
+     "de": "GN c0095 (RESTP 0. Supuestos!A55 / PANP 0. Supuestos!A55)",
+     "donde": [
+      "BARP · 0. Supuestos!A55"
+     ]
+    },
+    {
+     "id": "c0096",
+     "es": "Colchón sobre la partida de obra y acondicionamiento. Un banco no financia una reforma sin él",
+     "en_actual": "Cushion on the build-out and fit-out line. A lender will not finance a renovation without it",
+     "de": "GN c0096 (RESTP 0. Supuestos!C55 / PANP 0. Supuestos!C55)",
+     "donde": [
+      "BARP · 0. Supuestos!C55"
+     ]
+    },
+    {
+     "id": "c0099",
+     "es": "En barra y sala se cobra al contado (0 días). Súbelo si trabajas con plataformas de reserva o de reparto, que liquidan a D+1/D+30",
+     "en_actual": "At 1 day, card settlements reach your bank the next business day. Raise it if you work with reservation or delivery platforms, which usually pay out between the next day and 30 days later",
+     "de": "GREST c0099 (RESTP 0. Supuestos!C58)",
+     "donde": [
+      "BARP · 0. Supuestos!C58"
+     ]
+    },
+    {
+     "id": "c0118",
+     "es": "El convenio PROVINCIAL de hostelería, no el SMI, es el suelo real del sector: cópialo de la tabla salarial de tu provincia. Con 0 el semáforo compara sólo contra el SMI",
+     "en_actual": "Your STATE or LOCAL minimum wage can be higher than the federal one: enter it here as an annual full-time figure (hourly rate × 2,080 hours). The higher of the two applies. Leave it empty or at 0 and the traffic light compares only against the federal minimum",
+     "de": "GCAF c0904 (CAFP 0. Supuestos!C68)",
+     "donde": [
+      "BARP · 0. Supuestos!C68"
+     ]
+    },
+    {
+     "id": "c0145",
+     "es": "SL unipersonal express 3-5 días",
+     "en_actual": "Articles of organization (state filing fee), registered agent and attorney time for the operating agreement. Fees vary by state",
+     "de": "GCAF c0907 (CAFP Inversión Inicial!D7)",
+     "donde": [
+      "BARP · Inversión Inicial!D7"
+     ]
+    },
+    {
+     "id": "c0208",
+     "es": "Cubiertos/día (media)",
+     "en_actual": "Covers per day (average)",
+     "de": "GREST c0237 (RESTP 2. P&L 3 Años!A7)",
+     "donde": [
+      "BARP · PyG 3 Años!A6"
+     ]
+    },
+    {
+     "id": "c0229",
+     "es": "Alquiler del local",
+     "en_actual": "Rent",
+     "de": "GN c0257 (RESTP 2. P&L 3 Años!A23 / PANP PyG 3 Años!A22)",
+     "donde": [
+      "BARP · PyG 3 Años!A22"
+     ]
+    },
+    {
+     "id": "c0230",
+     "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. La renta de los meses de obra, que es anterior a la apertura, está en la hoja de Inversión y NO se cuenta dos veces",
+     "en_actual": "The monthly amount is on the \"0. Assumptions\" tab; here it is multiplied by twelve. Rent for the build-out months, which comes before opening, is on the Startup Costs tab and is NOT counted twice",
+     "de": "GN c0258 (RESTP 2. P&L 3 Años!F23 / PANP PyG 3 Años!F22)",
+     "donde": [
+      "BARP · PyG 3 Años!F22"
+     ]
+    },
+    {
+     "id": "c0234",
+     "es": "Luz y gas van al 21 %; la factura del agua, al 10 %. El libro aplica a toda esta partida el tipo de la columna de al lado (21 %): si el agua pesa mucho en tu local, sepárala en su línea",
+     "en_actual": "Enter the monthly bills excl. sales tax. The workbook applies a single tax treatment to this whole line, the one in the column next to it; if one utility is taxed differently in your area, give it its own line",
+     "de": "GN c0262 (RESTP 2. P&L 3 Años!F25 / PANP PyG 3 Años!F24)",
+     "donde": [
+      "BARP · PyG 3 Años!F24"
+     ]
+    },
+    {
+     "id": "c0279",
+     "es": "Alquiler / Ventas",
+     "en_actual": "Rent / Sales",
+     "de": "GN c0312 (RESTP 2. P&L 3 Años!A57 / RESTP Instrucciones!A19)",
+     "donde": [
+      "BARP · PyG 3 Años!A54",
+      "BARP · Instrucciones!A20"
+     ]
+    },
+    {
+     "id": "c0294",
+     "es": "Coste variable por cubierto",
+     "en_actual": "Variable cost per cover",
+     "de": "GREST c0326 (RESTP 3. Punto Equilibrio!A10)",
+     "donde": [
+      "BARP · Punto Equilibrio!A9"
+     ]
+    },
+    {
+     "id": "c0296",
+     "es": "Margen de contribución por cubierto",
+     "en_actual": "Contribution margin per cover",
+     "de": "GREST c0328 (RESTP 3. Punto Equilibrio!A11)",
+     "donde": [
+      "BARP · Punto Equilibrio!A10"
+     ]
+    },
+    {
+     "id": "c0302",
+     "es": "Cubiertos necesarios al año",
+     "en_actual": "Covers needed per year",
+     "de": "GREST c0334 (RESTP 3. Punto Equilibrio!A15)",
+     "donde": [
+      "BARP · Punto Equilibrio!A14"
+     ]
+    },
+    {
+     "id": "c0303",
+     "es": "Cubiertos necesarios al día",
+     "en_actual": "Covers needed per day",
+     "de": "GREST c0335 (RESTP 3. Punto Equilibrio!A16)",
+     "donde": [
+      "BARP · Punto Equilibrio!A15"
+     ]
+    },
+    {
+     "id": "c0308",
+     "es": "Cubiertos necesarios al año (caja)",
+     "en_actual": "Covers needed per year (cash)",
+     "de": "GREST c0340 (RESTP 3. Punto Equilibrio!A20)",
+     "donde": [
+      "BARP · Punto Equilibrio!A19"
+     ]
+    },
+    {
+     "id": "c0309",
+     "es": "Cubiertos necesarios al día (caja)",
+     "en_actual": "Covers needed per day (cash)",
+     "de": "GREST c0341 (RESTP 3. Punto Equilibrio!A21)",
+     "donde": [
+      "BARP · Punto Equilibrio!A20"
+     ]
+    },
+    {
+     "id": "c0312",
+     "es": "Cubiertos/día previstos en el plan",
+     "en_actual": "Covers per day forecast in the plan",
+     "de": "GREST c0344 (RESTP 3. Punto Equilibrio!A24)",
+     "donde": [
+      "BARP · Punto Equilibrio!A23"
+     ]
+    },
+    {
+     "id": "c0315",
+     "es": "Rotaciones al día que da el local como máximo",
+     "en_actual": "Maximum seat turns per day the space allows",
+     "de": "GREST c0347 (RESTP 3. Punto Equilibrio!A26)",
+     "donde": [
+      "BARP · Punto Equilibrio!A25"
+     ]
+    },
+    {
+     "id": "c0316",
+     "es": "Servicios completos por plaza y día que puedes llegar a hacer con tu horario. Es el techo físico del local, no un objetivo",
+     "en_actual": "Full table services per seat per day that your opening hours allow. It is the physical ceiling of the space, not a target",
+     "de": "GREST c0348 (RESTP 3. Punto Equilibrio!E26)",
+     "donde": [
+      "BARP · Punto Equilibrio!E25"
+     ]
+    },
+    {
+     "id": "c0317",
+     "es": "Rotaciones al día que exige el equilibrio de caja",
+     "en_actual": "Seat turns per day that the cash break-even requires",
+     "de": "GREST c0349 (RESTP 3. Punto Equilibrio!A27)",
+     "donde": [
+      "BARP · Punto Equilibrio!A26"
+     ]
+    },
+    {
+     "id": "c0318",
+     "es": "Cubiertos de equilibrio entre las plazas que declara la hoja de Supuestos. Por encima del techo de arriba, el punto de equilibrio está fuera del alcance del local",
+     "en_actual": "Break-even covers spread across the seats declared on the \"0. Assumptions\" tab. If it is above the ceiling in the row above, the break-even is out of reach for the space",
+     "de": "GREST c0350 (RESTP 3. Punto Equilibrio!E27)",
+     "donde": [
+      "BARP · Punto Equilibrio!E26"
+     ]
+    },
+    {
+     "id": "c0321",
+     "es": "Cubiertos/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por cubierto (filas). En verde, los que están por debajo de los cubiertos que prevé el plan.",
+     "en_actual": "Covers per day needed to cover costs for each average check (columns) and each variable cost per cover (rows). Green cells are below the covers per day the plan forecasts.",
+     "de": "GREST c0353 (RESTP 3. Punto Equilibrio!A32)",
+     "donde": [
+      "BARP · Punto Equilibrio!A31"
+     ]
+    },
+    {
+     "id": "c0322",
+     "es": "Cubiertos/día necesarios: ticket medio sin IVA (columnas) × coste variable por cubierto (filas)",
+     "en_actual": "Covers per day needed: average check excl. sales tax (columns) × variable cost per cover (rows)",
+     "de": "GREST c0354 (RESTP 3. Punto Equilibrio!A34)",
+     "donde": [
+      "BARP · Punto Equilibrio!A33"
+     ]
+    },
+    {
+     "id": "c0325",
+     "es": "Pesimista / Realista / Optimista — Año 1",
+     "en_actual": "Pessimistic / Base / Optimistic — Year 1",
+     "de": "GCAF c0979 (CAFP Escenarios!A2)",
+     "donde": [
+      "BARP · Escenarios!A2"
+     ]
+    },
+    {
+     "id": "c0330",
+     "es": "Cubiertos/día",
+     "en_actual": "Covers per day",
+     "de": "GREST c0361 (RESTP 4. Escenarios!A6)",
+     "donde": [
+      "BARP · Escenarios!A5"
+     ]
+    },
+    {
+     "id": "c0335",
+     "es": "Cubiertos/día para el equilibrio",
+     "en_actual": "Covers per day to break even",
+     "de": "GREST c0366 (RESTP 4. Escenarios!A22)",
+     "donde": [
+      "BARP · Escenarios!A21"
+     ]
+    },
+    {
+     "id": "c0338",
+     "es": "Cubiertos al año por jornada equivalente",
+     "en_actual": "Covers per year per full-time equivalent",
+     "de": "GREST c0369 (RESTP 4. Escenarios!A25)",
+     "donde": [
+      "BARP · Escenarios!A24"
+     ]
+    },
+    {
+     "id": "c0339",
+     "es": "Cubiertos que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+     "en_actual": "Covers each full-time employee in the \"5. Staffing\" tab would have to serve. In the optimistic scenario it tells you whether you need to hire",
+     "de": "GREST c0370 (RESTP 4. Escenarios!E25)",
+     "donde": [
+      "BARP · Escenarios!E24"
+     ]
+    },
+    {
+     "id": "c0344",
+     "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los cubiertos, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+     "en_actual": "The \"Base\" column reads its three inputs from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: the only things that change are covers, average check and days. FIXED COSTS are the same in all three: miscellaneous and contingency, which is a percentage of sales, sits at the top with the variable costs and each scenario carries its own.",
+     "de": "GREST c0375 (RESTP 4. Escenarios!A29)",
+     "donde": [
+      "BARP · Escenarios!A28"
+     ]
+    },
+    {
+     "id": "c0369",
+     "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) y del descanso semanal del equipo",
+     "en_actual": "Covers vacation, paid time off and the weekly day off for the team",
+     "de": "GCAF c0990 (CAFP Personal!J10)",
+     "donde": [
+      "BARP · Personal!J11"
+     ]
+    },
+    {
+     "id": "c0386",
+     "es": "Horas de producción al día ANTES de abrir",
+     "en_actual": "Production hours per day BEFORE opening",
+     "de": "GPAN c0990 (PANP Personal!A22)",
+     "donde": [
+      "BARP · Personal!A23"
+     ]
+    },
+    {
+     "id": "c0388",
+     "es": "Personas en el turno de producción",
+     "en_actual": "People on the production shift",
+     "de": "GPAN c0992 (PANP Personal!A23)",
+     "donde": [
+      "BARP · Personal!A24"
+     ]
+    },
+    {
+     "id": "c0402",
+     "es": "1. «0. Supuestos» es la hoja de mando: cubiertos, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+     "en_actual": "1. \"0. Assumptions\" is the control sheet: covers per day, average check excl. sales tax, operating days, food and beverage mix, cost of goods sold, rent, financing and taxes.",
+     "de": "GREST c0430 (RESTP Instrucciones!A5)",
+     "donde": [
+      "BARP · Instrucciones!A5"
+     ]
+    },
+    {
+     "id": "c0404",
+     "es": "3. En «Punto Equilibrio» sólo se teclea el techo de rotaciones que da tu local; todo lo demás se deriva de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+     "en_actual": "3. On \"Break-Even\" you only type the seat-turn ceiling your space allows; everything else derives from the rest. The other three tabs also have green cells you can change: the pessimistic and optimistic scenarios on \"Scenarios\", the seasonality and the launch ramp-up on \"12-Month Cash Flow\", and the other financing sources on \"Financing\" (rows 8-11 count as sources but are not amortized: Your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+     "de": "GCAF c0994 (CAFP Instrucciones!A7)",
+     "donde": [
+      "BARP · Instrucciones!A7"
+     ]
+    },
+    {
+     "id": "c0420",
+     "es": "Cubiertos/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+     "en_actual": "Covers per day for the ACCOUNTING break-even (depreciation included)",
+     "de": "GREST c0447 (RESTP Instrucciones!A29)",
+     "donde": [
+      "BARP · Instrucciones!A30"
+     ]
+    },
+    {
+     "id": "c0691",
+     "es": "FASE 1: CONSTITUCIÓN Y TRÁMITES LEGALES",
+     "en_actual": "PHASE 1: BUSINESS SETUP & LEGAL STEPS",
+     "de": "GCAF c1129 (CAFC F1 - Constitución!A2)",
+     "donde": [
+      "BARC · F1 - Constitución!A2"
+     ]
+    },
+    {
+     "id": "c0700",
+     "es": "Constitución SL ante notario",
+     "en_actual": "File articles of organization with your Secretary of State",
+     "de": "GCAF c1132 (CAFC F1 - Constitución!B6)",
+     "donde": [
+      "BARC · F1 - Constitución!B6"
+     ]
+    },
+    {
+     "id": "c0701",
+     "es": "Notario",
+     "en_actual": "Attorney",
+     "de": "GN c0691 (RESTC Checklist Apertura!C8 / PANC F1!C6)",
+     "donde": [
+      "BARC · F1 - Constitución!C6"
+     ]
+    },
+    {
+     "id": "c0704",
+     "es": "Inscripción en Registro Mercantil",
+     "en_actual": "Appoint a registered agent and sign an operating agreement",
+     "de": "GCAF c1135 (CAFC F1 - Constitución!B7)",
+     "donde": [
+      "BARC · F1 - Constitución!B7"
+     ]
+    },
+    {
+     "id": "c0706",
+     "es": "3-7 días",
+     "en_actual": "1-2 weeks",
+     "de": "GCAF c1136 (CAFC F1 - Constitución!D7)",
+     "donde": [
+      "BARC · F1 - Constitución!D7"
+     ]
+    },
+    {
+     "id": "c0708",
+     "es": "Alta Hacienda: modelo 036/037",
+     "en_actual": "Get your EIN (IRS) and register for state sales tax (seller's permit)",
+     "de": "GFT c0677 (FTC F1 - Constitución!B7)",
+     "donde": [
+      "BARC · F1 - Constitución!B8"
+     ]
+    },
+    {
+     "id": "c0713",
+     "es": "Apertura cuenta bancaria empresa",
+     "en_actual": "Open a business bank account",
+     "de": "GCAF c1141 (CAFC F1 - Constitución!B10)",
+     "donde": [
+      "BARC · F1 - Constitución!B10"
+     ]
+    },
+    {
+     "id": "c0716",
+     "es": "Obtener certificado digital",
+     "en_actual": "Get your city or county business license",
+     "de": "GCAF c1143 (CAFC F1 - Constitución!B11)",
+     "donde": [
+      "BARC · F1 - Constitución!B11"
+     ]
+    },
+    {
+     "id": "c0720",
+     "es": "Sanidad",
+     "en_actual": "Health department",
+     "de": "GCAF c1145 (CAFC F1 - Constitución!C12)",
+     "donde": [
+      "BARC · F1 - Constitución!C12"
+     ]
+    },
+    {
+     "id": "c0721",
+     "es": "El Registro General Sanitario estatal NO aplica al minorista que sirve al consumidor final (art. 2.2 del RD 191/2011): el que te toca es el autonómico",
+     "en_actual": "Most health departments want a plan review of your layout and equipment BEFORE you build out; a restaurant gets a food establishment permit and an inspection before opening. UK: register your food business with the council at least 28 days before you start (free) and expect a Food Hygiene Rating (0-5) after inspection in England, Wales and Northern Ireland; Scotland uses FHIS (Pass / Improvement Required)",
+     "de": "GREST c0730 (RESTC Checklist Apertura!F21)",
+     "donde": [
+      "BARC · F1 - Constitución!E12"
+     ]
+    },
+    {
+     "id": "c0722",
+     "es": "Registro de marca (opcional)",
+     "en_actual": "Trademark registration (optional)",
+     "de": "GCAF c1147 (CAFC F1 - Constitución!B13)",
+     "donde": [
+      "BARC · F1 - Constitución!B13"
+     ]
+    },
+    {
+     "id": "c0723",
+     "es": "OEPM",
+     "en_actual": "USPTO",
+     "de": "GCAF c1148 (CAFC F1 - Constitución!C13)",
+     "donde": [
+      "BARC · F1 - Constitución!C13"
+     ]
+    },
+    {
+     "id": "c0724",
+     "es": "4-6 meses",
+     "en_actual": "Several months",
+     "de": "GCAF c1149 (CAFC F1 - Constitución!D13)",
+     "donde": [
+      "BARC · F1 - Constitución!D13"
+     ]
+    },
+    {
+     "id": "c0728",
+     "es": "Art. 30 del RGPD y art. 31 de la LOPDGDD: lo pide la AEPD en la primera inspección. Incluye clientes, personal y proveedores",
+     "en_actual": "If you text customers you need their TCPA consent first. Keep a short record of what data you collect, why and where it is stored; banks and payment processors may ask for it",
+     "de": "GREST c0828 (RESTC Checklist Apertura!F61)",
+     "donde": [
+      "BARC · F1 - Constitución!E14"
+     ]
+    },
+    {
+     "id": "c0729",
+     "es": "Adaptar el TPV y la facturación al sistema Veri*factu / factura electrónica",
+     "en_actual": "Set up your POS to collect and report sales tax by location",
+     "de": "GN c0835 (RESTC Checklist Apertura!B65 / PANC F1!B15)",
+     "donde": [
+      "BARC · F1 - Constitución!B15"
+     ]
+    },
+    {
+     "id": "c0736",
+     "es": "Búsqueda y selección de local",
+     "en_actual": "Search for and select a location",
+     "de": "GCAF c1156 (CAFC F2 - Local!B5)",
+     "donde": [
+      "BARC · F2 - Local!B5"
+     ]
+    },
+    {
+     "id": "c0739",
+     "es": "Negociación contrato alquiler",
+     "en_actual": "Negotiate the commercial lease",
+     "de": "GCAF c1158 (CAFC F2 - Local!B6)",
+     "donde": [
+      "BARC · F2 - Local!B6"
+     ]
+    },
+    {
+     "id": "c0740",
+     "es": "Titular/Abogado",
+     "en_actual": "Owner / Attorney",
+     "de": "GCAF c1159 (CAFC F2 - Local!C6)",
+     "donde": [
+      "BARC · F2 - Local!C6"
+     ]
+    },
+    {
+     "id": "c0758",
+     "es": "Seguro multirriesgo del local",
+     "en_actual": "Property insurance or business owner's policy (BOP)",
+     "de": "GCAF c1175 (CAFC F2 - Local!B13)",
+     "donde": [
+      "BARC · F2 - Local!B12"
+     ]
+    },
+    {
+     "id": "c0761",
+     "es": "Técnico",
+     "en_actual": "Architect / engineer",
+     "de": "GREST c0722 (RESTC Checklist Apertura!C19)",
+     "donde": [
+      "BARC · F2 - Local!C13"
+     ]
+    },
+    {
+     "id": "c0764",
+     "es": "El modelo y el texto del cartel los aprueba tu Comunidad Autónoma",
+     "en_actual": "Your health department sets what must be displayed (for example a consumer advisory and allergen notice, or ingredient and allergen labels), and the federal and state labor law posters go in a common area. If you serve alcohol, your state liquor license and its posted notices apply: check with your state alcohol agency",
+     "de": "GN c0806 (RESTC Checklist Apertura!F52 / PANC F2!E13)",
+     "donde": [
+      "BARC · F2 - Local!E14"
+     ]
+    },
+    {
+     "id": "c0765",
+     "es": "Contrato con gestor autorizado de residuos",
+     "en_actual": "Contract with a licensed waste / grease hauler",
+     "de": "GCAF c1178 (CAFC F2 - Local!B15)",
+     "donde": [
+      "BARC · F2 - Local!B15"
+     ]
+    },
+    {
+     "id": "c0770",
+     "es": "Empresa inscrita en el ROESB; el certificado forma parte del plan APPCC",
+     "en_actual": "Part of your HACCP-based food safety plan; keep the service reports for inspections",
+     "de": "GREST c0813 (RESTC Checklist Apertura!F55)",
+     "donde": [
+      "BARC · F2 - Local!E16"
+     ]
+    },
+    {
+     "id": "c0771",
+     "es": "Cartel y contrato de videovigilancia con la empresa de seguridad",
+     "en_actual": "Security camera signage and contract with the security company",
+     "de": "GN c0831 (RESTC Checklist Apertura!B63 / PANC F2!B16)",
+     "donde": [
+      "BARC · F2 - Local!B17"
+     ]
+    },
+    {
+     "id": "c0772",
+     "es": "Con la obra",
+     "en_actual": "With the build-out",
+     "de": "GN c0819 (RESTC Checklist Apertura!D58 / RESTC Checklist Apertura!D63)",
+     "donde": [
+      "BARC · F2 - Local!D17"
+     ]
+    },
+    {
+     "id": "c0773",
+     "es": "Cartel homologado en zona visible, contrato de encargado de tratamiento y plazo máximo de conservación de 30 días",
+     "en_actual": "Post notices where your state requires them; check the rules on audio recording and keep footage only as long as you need it",
+     "de": "GN c0832 (RESTC Checklist Apertura!F63 / PANC F2!E16)",
+     "donde": [
+      "BARC · F2 - Local!E17"
+     ]
+    },
+    {
+     "id": "c0775",
+     "es": "FASE 3: OBRA Y EQUIPAMIENTO",
+     "en_actual": "PHASE 3: BUILD-OUT & EQUIPMENT",
+     "de": "GCAF c1184 (CAFC F3 - Equipamiento!A2)",
+     "donde": [
+      "BARC · F3 - Equipamiento!A2"
+     ]
+    },
+    {
+     "id": "c0779",
+     "es": "Obra civil: suelos, paredes, techos",
+     "en_actual": "Build-out: floors, walls, ceilings",
+     "de": "GCAF c1187 (CAFC F3 - Equipamiento!B6)",
+     "donde": [
+      "BARC · F3 - Equipamiento!B6"
+     ]
+    },
+    {
+     "id": "c0780",
+     "es": "Constructor",
+     "en_actual": "Contractor",
+     "de": "GCAF c1188 (CAFC F3 - Equipamiento!C6)",
+     "donde": [
+      "BARC · F3 - Equipamiento!C6"
+     ]
+    },
+    {
+     "id": "c0781",
+     "es": "4-8 semanas",
+     "en_actual": "4-8 weeks",
+     "de": "GREST c0740 (RESTC Checklist Apertura!D25)",
+     "donde": [
+      "BARC · F3 - Equipamiento!D6"
+     ]
+    },
+    {
+     "id": "c0784",
+     "es": "Electricista",
+     "en_actual": "Electrician",
+     "de": "GCAF c1192 (CAFC F3 - Equipamiento!C7)",
+     "donde": [
+      "BARC · F3 - Equipamiento!C7"
+     ]
+    },
+    {
+     "id": "c0790",
+     "es": "Fontanero",
+     "en_actual": "Plumber",
+     "de": "GCAF c1195 (CAFC F3 - Equipamiento!C8)",
+     "donde": [
+      "BARC · F3 - Equipamiento!C9"
+     ]
+    },
+    {
+     "id": "c0803",
+     "es": "Carpintero",
+     "en_actual": "Carpenter",
+     "de": "GPAN c1211 (PANC F3!C14)",
+     "donde": [
+      "BARC · F3 - Equipamiento!C14"
+     ]
+    },
+    {
+     "id": "c0804",
+     "es": "3-4 semanas",
+     "en_actual": "3-4 weeks",
+     "de": "GCAF c1213 (CAFC F3 - Equipamiento!D16)",
+     "donde": [
+      "BARC · F3 - Equipamiento!D14"
+     ]
+    },
+    {
+     "id": "c0812",
+     "es": "Interiorista",
+     "en_actual": "Interior designer",
+     "de": "GCAF c1220 (CAFC F3 - Equipamiento!C19)",
+     "donde": [
+      "BARC · F3 - Equipamiento!C17"
+     ]
+    },
+    {
+     "id": "c0816",
+     "es": "Definir organigrama y turnos",
+     "en_actual": "Define the org chart and shifts",
+     "de": "GCAF c1222 (CAFC F4 - Personal!B5)",
+     "donde": [
+      "BARC · F4 - Personal!B5"
+     ]
+    },
+    {
+     "id": "c0820",
+     "es": "Selección y entrevistas",
+     "en_actual": "Screening and interviews",
+     "de": "GREST c0769 (RESTC Checklist Apertura!B35)",
+     "donde": [
+      "BARC · F4 - Personal!B7"
+     ]
+    },
+    {
+     "id": "c0822",
+     "es": "Contratos de trabajo",
+     "en_actual": "Employment paperwork: offer letters, I-9 and W-4",
+     "de": "GREST c0771 (RESTC Checklist Apertura!B36)",
+     "donde": [
+      "BARC · F4 - Personal!B8"
+     ]
+    },
+    {
+     "id": "c0825",
+     "es": "Antes del alta",
+     "en_actual": "Per state deadline",
+     "de": "GCAF c1231 (CAFC F4 - Personal!D9)",
+     "donde": [
+      "BARC · F4 - Personal!D9"
+     ]
+    },
+    {
+     "id": "c0826",
+     "es": "Mínimo 1 día antes de empezar",
+     "en_actual": "Check your state's deadline; set up payroll withholding before the first paycheck",
+     "de": "GCAF c1232 (CAFC F4 - Personal!E9)",
+     "donde": [
+      "BARC · F4 - Personal!E9"
+     ]
+    },
+    {
+     "id": "c0828",
+     "es": "El «carnet de manipulador» está derogado (RD 109/2010): la formación la acredita la EMPRESA y se documenta en el plan APPCC",
+     "en_actual": "Food handler card rules vary by state and county, and the person in charge usually needs a Certified Food Protection Manager certificate (for example ServSafe). Keep copies on file and document the training in your HACCP-based food safety plan",
+     "de": "GREST c0779 (RESTC Checklist Apertura!F39)",
+     "donde": [
+      "BARC · F4 - Personal!E10"
+     ]
+    },
+    {
+     "id": "c0831",
+     "es": "El plan de prevención es obligatorio; el proveedor externo, no: con menos de 25 trabajadores y un solo centro el titular puede asumir la actividad preventiva (art. 30.5 de la Ley 31/1995 y art. 11 del RD 39/1997)",
+     "en_actual": "Cover the basics: training on hot equipment, slips and burns, a first-aid kit and workers' compensation insurance (required in almost every state)",
+     "de": "GCAF c1235 (CAFC F4 - Personal!E11)",
+     "donde": [
+      "BARC · F4 - Personal!E11"
+     ]
+    },
+    {
+     "id": "c0841",
+     "es": "Art. 34.9 del Estatuto de los Trabajadores; se conserva cuatro años",
+     "en_actual": "Required by the FLSA (DOL); keep payroll and time records for the period that federal and state rules require",
+     "de": "GREST c0809 (RESTC Checklist Apertura!F53)",
+     "donde": [
+      "BARC · F4 - Personal!E15"
+     ]
+    },
+    {
+     "id": "c0849",
+     "es": "Ficha Google My Business (CRÍTICO)",
+     "en_actual": "Google Business Profile (CRITICAL)",
+     "de": "GCAF c1249 (CAFC F5 - Marketing!B7)",
+     "donde": [
+      "BARC · F5 - Marketing!B6"
+     ]
+    },
+    {
+     "id": "c0851",
+     "es": "Perfiles RRSS (Instagram + TikTok)",
+     "en_actual": "Social media profiles (Instagram + TikTok)",
+     "de": "GFT c0809 (FTC F5 - Marketing!B7)",
+     "donde": [
+      "BARC · F5 - Marketing!B7"
+     ]
+    },
+    {
+     "id": "c0856",
+     "es": "Sesión fotos profesional",
+     "en_actual": "Professional photo shoot",
+     "de": "GCAF c1253 (CAFC F5 - Marketing!B9)",
+     "donde": [
+      "BARC · F5 - Marketing!B9"
+     ]
+    },
+    {
+     "id": "c0874",
+     "es": "Licencia de derechos de autor por la música ambiental (SGAE/AGEDI-AIE)",
+     "en_actual": "ASCAP / BMI / SESAC music licenses if you play music in the shop",
+     "de": "GPAN c1256 (PANC F5!B14)",
+     "donde": [
+      "BARC · F5 - Marketing!B17"
+     ]
+    },
+    {
+     "id": "c0877",
+     "es": "TheFork, WhatsApp y newsletter tratan datos: cada canal necesita su información previa",
+     "en_actual": "Resy / OpenTable, SMS and newsletters collect personal data: each channel needs its own notice, and texting customers requires TCPA consent",
+     "de": "GCAF c1271 (CAFC F5 - Marketing!E18)",
+     "donde": [
+      "BARC · F5 - Marketing!E18"
+     ]
+    },
+    {
+     "id": "c0901",
+     "es": "Mes 2-3",
+     "en_actual": "Month 2-3",
+     "de": "GCAF c1284 (CAFC F6 - 90 Días!D11)",
+     "donde": [
+      "BARC · F6 - 90 Días!D12"
+     ]
+    },
+    {
+     "id": "c0903",
+     "es": "Analizar competencia local",
+     "en_actual": "Analyze local competition",
+     "de": "GCAF c1286 (CAFC F6 - 90 Días!B12)",
+     "donde": [
+      "BARC · F6 - 90 Días!B13"
+     ]
+    },
+    {
+     "id": "c0905",
+     "es": "Primer cierre contable trimestral",
+     "en_actual": "First quarter close and first sales tax return",
+     "de": "GCAF c1288 (CAFC F6 - 90 Días!B13)",
+     "donde": [
+      "BARC · F6 - 90 Días!B14"
+     ]
+    }
+   ]
+  }
+ }
+}
