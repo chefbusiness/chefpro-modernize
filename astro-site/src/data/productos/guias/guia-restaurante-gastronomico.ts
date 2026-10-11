@@ -15,6 +15,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-gastro-hero.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'Solo el 15% de los restaurantes gastronómicos supera los 3 años — los que planifican bien, lo logran',
     titlePre: 'Cómo Montar un ',

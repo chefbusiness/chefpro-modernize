@@ -52,6 +52,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/og-guia-pasteleria-obrador.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'Para quien AÚN no ha abierto: lo que hay que decidir antes de firmar nada',
     titlePre: 'Cómo Montar una ',

@@ -18,6 +18,8 @@ const data: GuiaData = {
     ogImage: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-nikkei-hero.jpg',
   },
 
+  showCompatibleApps: true, // John 11-oct-2026: el carrusel de logos va en todas las landings
+
   hero: {
     badge: 'Cocina nikkei: la fusión peruano-japonesa más deseada del mundo — tendencia premium alcista en España',
     titlePre: 'Cómo Montar un ',
