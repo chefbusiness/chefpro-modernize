@@ -201,13 +201,12 @@ const data: KitExcelData = {
     headingPre: 'Exclusive ',
     headingGold: 'Bonuses',
     subtitle:
-      'Besides the 7 core templates, you get these extra resources — worth $38',
+      'Besides the 7 core templates, you get these extra resources',
     items: [
       {
         icon: 'Clock',
         label: 'BONUS 1',
         title: 'Month-End Inventory Count',
-        value: '$19',
         desc: 'A simplified one-page count for your full month-end inventory. It works out inventory value and flags significant variances against last month. Optimized for printing.',
         image: '/lovable-uploads/ai-gallery/inventario-almacen.jpg',
       },
@@ -215,7 +214,6 @@ const data: KitExcelData = {
         icon: 'Calculator',
         label: 'BONUS 2',
         title: 'Reorder Point & Order Quantity Calculator',
-        value: '$19',
         desc: 'Enter daily usage, lead time and safety stock — it calculates the reorder point and the economic order quantity (EOQ) automatically.',
         image: '/lovable-uploads/ai-gallery/inventario-analisis.jpg',
       },
@@ -319,8 +317,8 @@ const data: KitExcelData = {
       'Food waste log with a dashboard and an action plan',
       'FIFO and expiration dates with a color traffic light',
       'Cost analysis with KPIs: food cost % and cost per cover',
-      'BONUS: Month-End Inventory Count ($19)',
-      'BONUS: Reorder Point & Order Quantity Calculator ($19)',
+      'BONUS: Month-End Inventory Count',
+      'BONUS: Reorder Point & Order Quantity Calculator',
     ],
     ctaLabel: 'YES, I WANT THE INVENTORY KIT — $19',
   },
@@ -344,13 +342,9 @@ const data: KitExcelData = {
   },
 
   pricing: {
-    priceOld: '$59',
     price: '$19',
-    discountBadge: '-67%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 67% off',
-    bonusTotalLabel: 'Total value of the complete kit: $97 — 7 templates ($59) + 2 bonuses ($38)',
-    bonusSaveLine: 'Save $40 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'RESTAURANT INVENTORY KIT PRO — $19',

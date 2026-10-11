@@ -228,13 +228,12 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the startup checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
+      'Besides the business plan, the financial model and the startup checklist, you get these extra resources, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Food Truck Permits & Licenses Guide (US + UK Notes)',
-        value: 'Included in the plan',
         desc: "Section 9 of the plan plus Phase 2 of the checklist: why vending licenses are issued city by city and can't be transferred, how the health department plan review, the mobile food unit permit and the commissary agreement fit together, what the fire marshal and the DMV check, and how event permits work — with notes for the UK. No state forms included: requirements vary by state, county and city.",
         image: '/lovable-uploads/ai-gallery/ftbp-en-truck-park.jpg',
       },
@@ -242,7 +241,6 @@ const data: PlanNegocioData = {
         icon: 'ListChecks',
         label: 'BONUS 2',
         title: 'Food Truck Benchmarks (Reference Table)',
-        value: '$29',
         desc: "The reference table inside the workbook: cost of goods, gross margin, labor and net margin, each with its source or marked \"kit estimate\", and the OK / REVIEW check (commissary and parking included) that tells you where your plan departs from the benchmark. Every threshold is an editable cell.",
         image: '/lovable-uploads/ai-gallery/ftbp-en-owner-plan.jpg',
       },
@@ -279,19 +277,15 @@ const data: PlanNegocioData = {
       '12-month cash flow and a loan schedule with DSCR',
       'Startup checklist: 68 tasks in 6 phases',
       'BONUS: Food Truck Permits & Licenses Guide (included in the plan)',
-      'BONUS: Food Truck Benchmarks ($29)',
+      'BONUS: Food Truck Benchmarks',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },
 
   pricing: {
-    priceOld: '$129',
     price: '$39',
-    discountBadge: '-70%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + Benchmarks bonus ($29)',
-    bonusSaveLine: 'Save $90 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'FOOD TRUCK BUSINESS PLAN — $39',

@@ -544,7 +544,7 @@ const nlPre = (s: string) => '\n' + s;
                   <Icon name={b.icon} class="w-5 h-5 text-[#FFD700]" />
                   <h3 class="text-white font-bold text-base">{b.title}</h3>
                 </div>
-                <p class="text-gray-500 text-xs mb-2">{ui.bonusValuePrefix}{b.value}</p>
+                {b.value && <p class="text-gray-500 text-xs mb-2">{ui.bonusValuePrefix}{b.value}</p>}
                 <p class="text-gray-400 text-sm leading-relaxed">{b.desc}</p>
               </div>
             </div>
@@ -553,7 +553,7 @@ const nlPre = (s: string) => '\n' + s;
       </div>
       <div class="kt-fade">
         <div class="text-center bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8">
-          <p class="text-gray-400 mb-2">{data.pricing.bonusTotalLabel}</p>
+          {data.pricing.bonusTotalLabel && <p class="text-gray-400 mb-2">{data.pricing.bonusTotalLabel}</p>}
           {data.pricing.priceOld && <p class="text-3xl text-gray-500 line-through mb-1">{data.pricing.priceOld}</p>}
           <p class="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">{data.pricing.price}</p>
           {data.pricing.bonusSaveLine && <p class="text-[#FFD700] font-bold text-lg">{data.pricing.bonusSaveLine}</p>}
