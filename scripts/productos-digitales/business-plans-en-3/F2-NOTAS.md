@@ -175,3 +175,73 @@ También en este commit (D63, porque G9 los necesita en el paso 4): `bar-busines
 6. Si una revisión toca FIJOS, POR_CELDA o zonas, hay que volver a extraer en el VPS (`bp3.py extraer_textos`) y a
    preparar en el Mac: los ids de `textos_es.json` pueden moverse y las salidas de los traductores dejan de casar.
 7. El mensaje final de `aplicar_en` dice «4 xlsx» (literal heredado del código común): son 2. Cosmético.
+
+## 8. Cierre de la F2 (11-oct, sesión Claude Code): tandas aplicadas, xlsx + docx EN, gates
+
+**Tandas** (subagentes, validadas por el orquestador; commit `4cfac416`): `textos_en/GBAR-plan.json` (191 claves),
+`GBAR-check.json` (106), `GR.revision.json` (2 correcciones: c0721 nota del plan review con la nota UK, c0874 licencias
+de música «in the bar»), `docx_en_bar_a.json` (32) y `docx_en_bar_b.json` (30). `bp3.py preparar_tandas` aplicó la
+revisión sobre `GR.json`; `bp3.py check_textos --todas`: **las 6 OK** (GM 7 avisos, GR 2, GBAR-plan 1, GBAR-check 6,
+bar_a 0, bar_b 1 — de longitud, revisados).
+
+**Un arreglo en el código común** (`e1bbee35`): `check_textos.RX_DOLAR` leía «{{inversion_total}}, made up of…» como
+«$488,932, m» × 1.000.000 (el número se comía la coma y la «m» de «made» pasaba por sufijo de millones) y G8 daba
+ROJO por un importe inexistente. Ahora el número no termina en coma y el sufijo (K, M, million, thousand) tiene que ser
+palabra entera. Regresión: `check_textos --todas` de FT/CAF (7 OK) y REST/PAN (8 OK), gates G1-G9 de los dos conjuntos
+VERDE y `ensamblar_docx --autotest` 18/18 y 16/16.
+
+**Generación (VPS, `/root/wt-bar`, `e1bbee35`)**:
+
+| Comprobación | Resultado |
+|---|---|
+| `bp3.py aplicar_en --idempotencia` | préstamo **$369,000** en 1 vuelta (= research); textos 622 + 332, fijos 92 + 15, valores 114, **faltan 0**; idempotencia **0 diferencias**; inject_cache 742 / 12 fórmulas, **0 fallos de pycel**; D15 sin fallos; los 5 umbrales del P&L en verde los 3 años |
+| `bp3.py ensamblar_docx --plan bar` | G8 **VERDE** |
+| `bp3.py gates_en` (G1-G9 sobre `dl/bar-business-plan/`) | **TODO VERDE**: G1 742 fórmulas y 73 tareas [11, 13, 13, 12, 14, 10] · G2 1,344 piezas (incluido el gate de cifras ES prohibidas D52) · G3 16 hojas Letter con pie, versión y aviso · G4 226 valores bajo DV · G5 8 rangos de CF · G6 caché = referencia ES recalculada, 0 diferencias · G7 114 valores · G8 docx · G9 `censo-entregables --fail` 0 defectos y `gate-no-latinos` 3 ficheros, 0 caracteres |
+| `bp3.py gates_en --autotest` · `ensamblar_docx --autotest` | **20/20** · **8/8** |
+| 2.ª pasada completa (`aplicar_en --dry-run` + `ensamblar_docx --salida` en `/tmp/bar-regen`) frente a `dl/` | sha256 CANÓNICO (miembros del zip sin las 2 fechas de `core.xml`) **idéntico en los 3 ficheros**; `cifras_caso.json` igual |
+| `resumen_entregables.py` (barrido independiente de los 3 ficheros: celdas, literales de fórmula y párrafos) | 3,429 piezas · **0 cifras ES prohibidas · 0 restos de español · 0 no latinos** |
+
+**Ficheros** (`astro-site/public/dl/bar-business-plan/`, mismo patrón que `restaurant-business-plan/`; `/dl/` no cae
+en ninguna regla de `robots.txt`). sha256 Mac = VPS:
+
+| Fichero | Contenido | sha256 |
+|---|---|---|
+| `bar-business-plan.docx` | 133 párrafos (111 con texto), 10 Heading 1, **7,583 palabras**, US Letter | `ece4f2cbe2cead44…` |
+| `bar-financial-projections.xlsx` | **9 hojas, 742 fórmulas**, 114 celdas del caso US | `fbd3e1d912923aea…` |
+| `bar-opening-checklist.xlsx` | **7 hojas, 73 tareas** (11/13/13/12/14/10), 12 fórmulas | `e077a4821d7595a5…` |
+
+`cifras_caso.json` (`217e04c2…`, la caché del libro EN calibrado; la leen `ensamblar_docx` y la F3) y
+`entregables_bar.json` (`f5055407…`: recuentos, sha256, el caso en texto US y el barrido) quedan en esta carpeta.
+
+**Caso final (leído del libro generado)**: 95 covers × $27.00 sin sales tax ($29.16 con él) × 360 días · bebida 65 %
+(alcohol 90 % de la bebida) · 60 plazas, 1.6 seat turns · ventas **$923,400** / $1,061,910 / $1,168,101 · caja total
+**$488,932** = CAPEX $361,700 + fondo de maniobra $127,232 (licencia de alcohol $15,000, estado sin cupo) · fondos
+propios $120,000 (25 %) + préstamo **$369,000** al 10 % a 10 años, cuota $60,053 · margen bruto 69.7 % · COGS 24.8 % ·
+personal 33.4 % · prime cost 58.2 % · alquiler 8.4 % · EBITDA $171,583 (**18.6 %**) · neto $75,358 (8.2 %) / $145,000
+/ $197,922 · **DSCR 2.44×** (año 1 = mínimo) · equilibrio **81 covers/día** (contable) y **79** (caja), holgura 21 % ·
+saldo mínimo $105,666 (mes 4) · **payback 2.5 años** (2.0 sobre el CAPEX) · 11 personas = 7.00 FTE, cobertura 104 % ·
+seguros $12,000/año · pesimista $603,500 de ventas, −$122,493 de resultado y $15,791 de caja (no se agota) ·
+optimista $1,242,360 y +$322,792.
+
+**Para el revisor (la revisión adversarial que viene)**:
+
+1. **«guests» frente a «covers» en el docx**: 37 «guests» y 16 «covers» (D55 pedía «guests (covers)» la primera vez y
+   luego «covers»). No es un error de cifra, pero conviene mirar la coherencia con el libro, que dice «covers».
+2. **Tabla D19** (`Instructions` 54-69): «$20-$35» de ticket y «1.5-3» seat turns como Kit estimate; filas 67 (reserva
+   operativa $75,000-$100,000, Poster) y 68 (prime cost 60-65 %, Restaurant365) añadidas aquí, fuera de la lista
+   literal de D58. Las fuentes que el docx cita (R Street, Poster, BevSpot, Insureon, Restaurant365) vienen de research
+   delta §4-§5; la SPEC §8.5 pide abrir las que se leyeron como resumen antes de dar por buena una cifra.
+3. **Notas largas fijadas** (`Staffing!A29` ≈ 700 caracteres, `0. Assumptions!C63` con Texas): `capa_altos` ajusta
+   el alto; la vista en Excel/LibreOffice y a 360 px es la última palabra.
+4. **Prime cost 58.2 %** (< 60-65 % full-service) y **EBITDA 18.6 %**: el docx §8 lo explica (la bebida cuesta menos;
+   el pour cost manda). Pesimista con caja positiva al cierre ($15,791) pero resultado −$122,493.
+5. `CALIBRACION_D15` vacía: el caso de research §8 pasa D15 y D56 sin tocar ninguna celda (G7: 0 calibraciones).
+6. Testimonios ES de la ficha (SPEC §8.3) y todo lo de la capa de producto: F3, fuera de esta tanda.
+
+```bash
+# Reproducir (VPS)
+cd /root/wt-bar/scripts/productos-digitales/business-plans-en-3 && PY=/root/venv-guias/bin/python
+$PY bp3.py aplicar_en --idempotencia --json /tmp/bar-real.json && $PY bp3.py ensamblar_docx --plan bar
+$PY bp3.py gates_en && $PY bp3.py gates_en --autotest && $PY bp3.py ensamblar_docx --autotest --dir /tmp/bar-docx-at
+$PY resumen_entregables.py                                   # entregables_bar.json + barrido independiente
+```
