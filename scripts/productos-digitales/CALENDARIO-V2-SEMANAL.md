@@ -274,7 +274,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
     (`emails/broadcast-guia-churreria-lanzamiento-es.html`) · **Bakery EN** 14-nov 14:00Z `68bc8f49` · **Paellero 1.2** 18-nov 08:00Z
     `42ccda21` (`emails/broadcast-plan-negocio-paellero-eventos-v1.2-es.html`). Pruebas de los dos ES enviadas a John.
     Comprobar el resultado: `RemoteTrigger list_runs` del routine o https://claude.ai/code/routines.
-  - **Siguiente hueco libre: ES 23-nov 08:00Z · EN ~~19-nov~~ 24-nov 14:00Z** (el 19-nov lo ocupa el Bar, ver abajo).
+  - **Siguiente hueco libre: ES ~~23-nov~~ 28-nov 08:00Z · EN ~~19-nov~~ 24-nov 14:00Z** (el 19-nov lo ocupa el Bar; el 23-nov, el Parrillero 2.2 del 12-oct).
 
 ### ✅ 2026-10-11 (Claude Code en el Mac + VPS) — **Bar Business Plan Kit (EN, $39) LIVE** (PR #118, merge `efc7f72b`)
 
@@ -377,6 +377,30 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   **18-nov 08:00Z**; el routine `trig_01WdpgX2KtUL9PbTyXHC4dVg` (19-oct) actualizado con el nombre nuevo. Prueba enviada a John.
 - **Deuda anotada**: email post-compra y tarjetas de **chef privado**, **parrillero** y **coctelería** con «DOCX 60+ pp» / «17 CCAA»
   (pendientes de su 2.2); la nota «el Word sigue en la 1.1» es cierta en los 5 de línea A mientras su docx siga en 1.1 (T9).
+
+### ✅ 2026-10-12 (Claude Code en el Mac + VPS) — **Plan de Negocio Parrillero-Asador para Eventos ES 2.2 LIVE** (PR #125, merge `ba24758`)
+
+- John: «seguimos con el Plan Parrillero-Asador a la 2.2, con el mismo método que el catering y el paellero». Carpeta
+  `scripts/productos-digitales/parrillero-2_2/` (F1-camino, F1-research, SPEC, F2-NOTAS, REVISION-FINAL), módulo
+  `planes-v2_0/contenido_plan_negocio_parrillero_asador_eventos/` clonado del paellero. La 1.1 estaba peor que la del paellero:
+  P&L con fórmulas desplazadas (margen bruto −4.496 €), 7 docx en Letter, sin tabla de escalado, «retención 7 %/15 %» (falsa:
+  RIRPF art. 95.6, el 677.9 es actividad empresarial).
+- Caso: 95 eventos × 80 invitados × 25 € (bodas 12×110×42 · empresa 30×70×31 · privados 45×40×25 · fiestas 8×300×10) =
+  190.000 € · neto 7,6 % · préstamo 65.400 € · DSCR mín. 1,51 · equilibrio 81 eventos (caja 76) · holguras de caja 25,1 / 12,6 /
+  11,9 % (años 2-3 contadas con palancas). Excel de 9 hojas, checklist 83, calculadora con escalado/IVA/cancelación (552/552),
+  docx 11 H1 / 8.175 palabras, 126 arreglos de texto en los otros 7 (A4, contrato con fuerza mayor B2C y B2B, manual con
+  «8. Escalado por invitados» y temperaturas de la carne, 93 proveedores «Por verificar»). Mes de versión «octubre 2026» con
+  `par_version.py`/`main_par.py` (parche en proceso, sin tocar `motor.py`).
+- Revisión opus: 0 bloqueantes, 4 MAYOR + 12 MENOR, todos aplicados. **M1: comida testigo en TODOS los eventos** (RD 1086/2020
+  art. 30.8.d, verificado en el BOE: «para eventos, cuando esta sea la actividad principal de la empresa»; el «más de 40
+  personas» es el 30.8.e). **El checklist del Paellero 2.2 LIVE lo decía como condición doble: corregido en el mismo PR**
+  (regenerado; `cifras_caso_es.json` idéntico). El Catering ya estaba bien.
+- Landing, dashboard, changelog, hubs ×7, email post-compra (`verify-purchase.ts` + config) y testimonios (solo Federico Aguirre y
+  Marcos Pérez; Sandra Vera «freelance» como rol, intacta). LIVE: 11/11 parrillero y 11/11 paellero = repo byte a byte; gate de
+  pago 0 fallos en los dos y gate completo LIVE 63 / 823 / 0; carrusel 63/63; Miselup 102/102. ≈ 2,2 M tokens de subagentes.
+- **Correo**: borrador `f8257c43` «Actualización Plan de Negocio Parrillero-Asador 2.2 (ES)», hueco **23-nov 08:00Z**; lo programa
+  el routine `trig_01WAN2WR9EaRUsi4C2WTqYj9` el **24-oct 08:23Z**. Prueba enviada a John. Siguiente hueco ES: 28-nov.
+- **Línea B pendiente**: coctelería y chef privado (mismo método, uno por sesión).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
