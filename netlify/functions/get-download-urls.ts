@@ -781,6 +781,13 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-financiero': '/dl/bakery-business-plan/bakery-financial-projections.xlsx',
     'checklist-apertura': '/dl/bakery-business-plan/bakery-opening-checklist.xlsx',
   },
+  // Tienda EN (2026-10-11): Bar Business Plan Kit. MISMAS claves que plan-negocio-tapas-bar (las del TEMPLATES de
+  // src/pages/BarBusinessPlanDashboard.tsx) → ficheros EN de /dl/bar-business-plan/ (SPEC business-plans-en-3 D50).
+  'bar-business-plan': {
+    'plan-negocio': '/dl/bar-business-plan/bar-business-plan.docx',
+    'plan-financiero': '/dl/bar-business-plan/bar-financial-projections.xlsx',
+    'checklist-apertura': '/dl/bar-business-plan/bar-opening-checklist.xlsx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

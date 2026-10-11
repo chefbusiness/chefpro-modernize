@@ -673,6 +673,29 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-11): Bar Business Plan Kit, primera edición inglesa del contenido 2.2 del plan-negocio-tapas-bar
+  // (SPEC business-plans-en-3 D48-D61: la EN nace en 2.2). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'bar-business-plan': {
+    version: '2.2',
+    updated: '2026-10-11',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-11',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the plan, built from content version 2.2 and adapted to a neighborhood bar with small plates: a 10-section business plan in Word, an Excel financial model with 9 sheets and an opening checklist, set up for the US with notes for the UK.',
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story.',
+          'Food and beverage sales with their own cost each (food cost and pour cost) and the alcohol share of beverage sales; revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect and remits it quarterly (an 8% example rate you replace with your state and local rate, with its own cells for alcohol served on site and to go), with no input tax credit on purchases in the US.',
+          'Payroll with employer payroll taxes, 12 monthly salaries a year (the model\'s pay count, not your payroll frequency), a federal and a state or local minimum wage floor, and a 40-hour workweek. Bartenders, barbacks and servers are budgeted at a full base wage: no tips and no tip credit in the model.',
+          'Startup costs with the bar build, a draft beer system, back-bar coolers, a Type I hood and grease interceptor, and a liquor license line (non-quota state example: in quota states the license costs much more).',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          '73-task opening checklist in 6 phases: business setup (LLC, EIN, seller\'s permit, business license, health permit application), location and licenses (zoning, lease, the liquor license application right after signing, patio and entertainment permits, liquor liability insurance), build-out and equipment, staff (responsible beverage service training included), marketing (distributor accounts and music licenses included) and the first 90 days.',
+          'No currency symbol in the workbooks (you type amounts in your own currency), and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

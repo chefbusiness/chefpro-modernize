@@ -1162,6 +1162,25 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-11): twin of plan-negocio-tapas-bar, independent product.
+  'bar-business-plan': {
+    id: 'bar-business-plan',
+    name: 'Bar Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/bar-business-plan/access',
+    emailSubject: 'Your access to Bar Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Bar Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 73-task opening checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Bar Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections and the 73-task opening checklist:',
+    files: {
+      'plan-negocio': '/dl/bar-business-plan/bar-business-plan.docx',
+      'plan-financiero': '/dl/bar-business-plan/bar-financial-projections.xlsx',
+      'checklist-apertura': '/dl/bar-business-plan/bar-opening-checklist.xlsx',
+    },
+    lang: 'en',
+  },
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',
     name: 'Guía Dark Kitchen',

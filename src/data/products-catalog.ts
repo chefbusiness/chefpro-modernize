@@ -464,11 +464,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-tapas-bar',
     url: '/plan-negocio-tapas-bar',
     price: '€35',
-    name: { es: 'Plan de Negocio: Tapas Bar', en: 'Business Plan: Tapas Bar' },
+    name: { es: 'Plan de Negocio: Tapas Bar', en: 'Bar Business Plan Kit' },
     description: {
       es: 'Gastrobar: plan financiero Excel, DOCX y checklist de apertura.',
-      en: 'Gastrobar: Excel financial plan, DOCX and opening checklist.',
+      en: 'Word business plan, Excel financial projections and opening checklist.',
     },
+    // Tienda EN (11-oct-2026): producto propio, `bar-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/bar-business-plan' },
+    priceByLang: { en: '$39' },
   },
   'plan-catering-tematico-eventos': {
     id: 'plan-catering-tematico-eventos',

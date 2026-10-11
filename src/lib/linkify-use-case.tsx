@@ -51,6 +51,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Coffee Shop Business Plan Kit': '/en/digital-products/coffee-shop-business-plan',
   'Restaurant Business Plan Kit': '/en/digital-products/restaurant-business-plan',
   'Bakery Business Plan Kit': '/en/digital-products/bakery-business-plan',
+  'Bar Business Plan Kit': '/en/digital-products/bar-business-plan',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

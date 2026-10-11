@@ -32,6 +32,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit (EN, $39)' },
   { id: 'restaurant-business-plan', label: 'Restaurant Business Plan Kit (EN, $39)' },
   { id: 'bakery-business-plan', label: 'Bakery Business Plan Kit (EN, $39)' },
+  { id: 'bar-business-plan', label: 'Bar Business Plan Kit (EN, $39)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
   { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },
   { id: 'guia-restaurante-casual', label: 'Guía Restaurante Casual (€65)' },
