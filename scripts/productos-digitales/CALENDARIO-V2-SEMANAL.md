@@ -321,8 +321,10 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **LIVE el 11-oct (17:50 Madrid):** Stripe `plink_1UPOsm4CcdRGidmEPrEMILKX` = `buy.stripe.com/fZuaEQa8AdwGfDF0sR6oo1K` ($39 USD,
   impuesto automático, redirección comprobada con la CLI) + env + mapa de 63 links. Gates LIVE: `--only` 4/4 · completo **63 productos /
   823 entregables / 0 fallos / 0 avisos** · tienda-gate · robots-gate · carrusel 63/63. Sitemap reenviado en GSC. **Tienda EN: 12 productos.**
-  Correo EN: borrador `dc53426b`, lo programa para el **24-nov 14:00Z** el routine **`trig_01RQdZrmsAtKFEUCjWykZQyy`** (25-oct 15:07Z).
-  Siguiente hueco EN: 29-nov 14:00Z.
+  Correo EN: **PROGRAMADO el martes 13-oct 14:00Z** (`dc53426b`; John: fuera de la cola, junto con la 2.0 ES); el routine
+  `trig_01RQdZrmsAtKFEUCjWykZQyy` queda DESACTIVADO. Siguiente hueco EN: 24-nov 14:00Z (vuelve a estar libre).
+- **Correo de la 2.0 ES (John 11-oct): el MARTES 13-oct 08:00Z, fuera de la cola** (el lunes 12 es festivo); programarlo con
+  `resend-broadcast.py --scheduled-at 2026-10-13T08:00:00Z` en cuanto la 2.0 esté LIVE. El 14-oct sale la Guía Pastelería.
 - 🔜 **SIGUIENTE TAREA tras el Catering EN (John, 11-oct: «habrá que solucionar el de español… para que quede conforme a los
   estándares de calidad»): Plan Catering Temático Eventos ES → 2.0.** Reutiliza el motor que sale del EN (molde FT ES con
   eventos/año × €/invitado × invitados/evento, personal fijo + cobertura por evento, calculadora coste → precio con IVA 10 %),
