@@ -166,3 +166,4 @@ Todos, salvo la fecha «septiembre 2026» del motor (aceptada). Los testimonios,
   - Restos sin opciones: VERDE. Prohibidos: 0. Censo 0. No latinos 0.
 - **Pendiente del catering** (fuera del encargo, para decidir): su `0. Supuestos!B11` también conserva el 85,19 % del molde frente al 82/18 de sus líneas de venta, y su Tesorería!O16 cita «el pan común».
 - **sha256** (Mac = VPS en los 22 ficheros de los dos productos): en el informe del commit.
+- **Resuelto después**, por decisión del orquestador: el B11 (82 %) y la O16 del catering se arreglaron por la misma vía (`catering-es-2_0/F2-NOTAS.md` §8). El margen del 56 % del ejemplo de empresa se acepta; la nota dice que el margen objetivo cambia por canal.

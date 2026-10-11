@@ -77,6 +77,9 @@ VOCABULARIO = {
     'de obra y licencias': 'de puesta en marcha (pruebas de menú y degustaciones)',
     'un banco no financia una reforma sin colchón': 'un banco no financia una compra así sin colchón',
     # REVISION-FINAL M1: el Word del pack 2.2 sí cita el payback; frase fija del motor (grupo_a.py:3766)
+    # Ronda del 11-oct (m8 del paellero, también aquí): Tesorería!O16 citaba el pan común del molde
+    'el pan común y las harinas panificables, al superreducido (art. 91.Dos.1.1.º':
+        'los servicios facturados aparte (mobiliario, carpas, decoración), al general (art. 90',
     'El documento Word del pack sigue en la versión 1.1 y no lee esta celda: las cifras válidas son las de este libro':
         'El plan de negocio en Word cita esta cifra; si cambias una celda verde, manda este libro',
 }
@@ -108,6 +111,11 @@ SUPUESTOS = {
         'comuniones y cumpleaños). Es el MISMO dato para la cuenta de resultados, el punto de equilibrio, los '
         'escenarios y las horas de personal',
         'research §3 (35 % particulares / 65 % empresa por número de eventos) [estimado]'),
+    'pct_comida': (
+        None, None, 0.82, None,
+        'Comida (menús, estaciones y coffee breaks) sobre las ventas; el 18 % restante es bebida. Es la suma de las '
+        'líneas de comida del P&L',
+        'research §3 · SPEC D4 (82/18)'),
     'coste_comida': (
         None, None, 0.30, None,
         'Materia prima de la comida sobre las ventas de comida. Las estaciones en directo (sushi, parrilla, tacos) '

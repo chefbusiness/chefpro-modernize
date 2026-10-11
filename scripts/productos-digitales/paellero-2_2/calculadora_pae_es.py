@@ -159,7 +159,7 @@ EJ_NOTAS = OrderedDict([
                       'prima incluye la paella y los entrantes), carpa y mesas alquiladas repercutidas, margen objetivo del 48 % '
                       'y precio con IVA.'),
     ('Comida de empresa con show cooking', 'Empresa: presupuesto «+ IVA», cocina a la vista con el 8 % de suplemento, '
-                                           'margen alto por el show cooking y el servicio a empresa, y tramos de '
+                                           'margen alto por el show cooking y el servicio a empresa (el margen objetivo cambia por canal: 48 % en la boda, 56 % aquí), y tramos de '
                                            'cancelación sobre el anticipo.'),
     ('Fiesta popular de ayuntamiento', '400 raciones en paelleras de 150 cm, menaje '
                                        'desechable y margen bajo por volumen: el precio por ración queda en el '
