@@ -21,17 +21,7 @@
 | plan de negocio docx | 118 párr., 2 tablas, **0 Heading**, ~2.450 palabras | | «España 2026» (p1, p28); inversión 3.500/8.500-12.000/25.000 (p7, p12, p68); «Sin licencia de actividad clasificada» (p13); «ayudantes freelance… 120 €/jornada» (p14, p65); mercado 3.200 M€ / 12-14 % / 38 % sin fuente (p30); «10 competidores reales» (t0, nombres sin verificar); ingresos 215-245 K, neto 47-62 K «margen 22-27 %» (p69-p70, el xlsx dice 51 %); «Break-even 18-22 eventos» (p71); «6 hojas» (p67); «88 verificados» (p92); mise en place D-1 sin sitio (p50) |
 | 6 docx restantes | A4, docProps 2013-12-23 «AI Chef Pro» | ver §6 | |
 
-**Contenido que vale la pena llevar a la 2.2** (fuente de las pistas de redacción y del módulo):
-- **Concepto**: paella y arroces cocinados **en directo** en el evento (gas y leña), show cooking con narrativa, 12 arroces de carta, modelo híbrido sin local.
-- **Mezcla**: `Mix B2C-B2B` A5:F13 — 4 tipos B2C (57 eventos) y 5 B2B (90) con pax, ticket y temporada → mezcla de eventos del docx §2-3 y días de cobro.
-- **Precio y raciones**: carta (12 arroces, food cost 7,60-16,50 €/ración, PVP 22-48 €/ración) y experiencias (12-55 €/pax).
-  ⚠️ Chocan con la calculadora 1.x (17-25 €/pax) y con los tickets del P&L (≈ 20-25 €/pax): **el research fija el precio medio** y los tres ficheros quedan dentro de su rango.
-- **Escalado**: tabla 1 del manual 1.2 (8 diámetros → raciones, arroz, caldo, quemador); tabla 2 (50/100/200 invitados → paelleras y equipo: 1 paellero hasta ~80, + ayudante, 2.º paellero desde ~150).
-- **Política comercial (contratos 1.2)**:
-  - B2C: **30 % de anticipo + 70 % el día del evento**; cancelación del cliente 30 / 50 / 75 / 100 % del total (> 60 días / 60-30 / < 30 / 72 h), simétrica si cancela el paellero.
-  - B2B: 30 % + 70 % a 30 días de factura; retiene 0 / 30 / 60 % del anticipo (+ 200 € de gestión) y 100 % a < 15 días; recargo de 0,95 €/km fuera del radio.
-- **Estacionalidad** (`P&L Año 1` fila 7): 2,1 · 2,1 · 5,5 · 6,7 · 12,2 · 14,7 · 13,5 · 8,9 · 13,5 · 11,0 · 4,2 · 5,5 % → `ESTACIONALIDAD` (la forma; el research puede afinarla).
-- **Riesgos** (t1, 7 filas) y **operativa D-30 → D+15** (p45-p63) → ranuras de §6 y §9 del docx.
+**Contenido que vale la pena llevar a la 2.2** (fuente de las pistas de redacción y del módulo): **Concepto**: paella y arroces cocinados **en directo** en el evento (gas y leña), show cooking con narrativa, 12 arroces de carta, modelo híbrido sin local · **Mezcla**: `Mix B2C-B2B` A5:F13 — 4 tipos B2C (57 eventos) y 5 B2B (90) con pax, ticket y temporada → mezcla de eventos del docx §2-3 y días de cobro · **Precio y raciones**: carta (12 arroces, food cost 7,60-16,50 €/ración, PVP 22-48 €/ración) y experiencias (12-55 €/pax) ⚠️ Chocan con la calculadora 1.x (17-25 €/pax) y con los tickets del P&L (≈ 20-25 €/pax): **el research fija el precio medio** y los tres ficheros quedan dentro de su rango. · **Escalado**: tabla 1 del manual 1.2 (8 diámetros → raciones, arroz, caldo, quemador); tabla 2 (50/100/200 invitados → paelleras y equipo: 1 paellero hasta ~80, + ayudante, 2.º paellero desde ~150) · **Política comercial (contratos 1.2)**: B2C: **30 % de anticipo + 70 % el día del evento**; cancelación del cliente 30 / 50 / 75 / 100 % del total (> 60 días / 60-30 / < 30 / 72 h), simétrica si cancela el paellero; B2B: 30 % + 70 % a 30 días de factura; retiene 0 / 30 / 60 % del anticipo (+ 200 € de gestión) y 100 % a < 15 días; recargo de 0,95 €/km fuera del radio · **Estacionalidad** (`P&L Año 1` fila 7): 2,1 · 2,1 · 5,5 · 6,7 · 12,2 · 14,7 · 13,5 · 8,9 · 13,5 · 11,0 · 4,2 · 5,5 % → `ESTACIONALIDAD` (la forma; el research puede afinarla) · **Riesgos** (t1, 7 filas) y **operativa D-30 → D+15** (p45-p63) → ranuras de §6 y §9 del docx.
 
 **Se conserva de la 1.2 (no se toca salvo los parches de §6)**: manual técnico ampliado (4.437 palabras, 14 H1, 10 tablas, alioli con ovoproducto p151); catálogo con capacidades alineadas al manual; contratos 1.2 (IVA 10 % en B2B p49, cancelación B2C escalonada y simétrica, fuero del consumidor p39); **anexo legal autonómico** (docx p93-p110, nombres de planes revisados en la 1.2) → se trasplanta al docx 2.2; pestaña «88 proveedores» (firma P2: no renombrar).
 
@@ -49,13 +39,7 @@
 | `arreglos_d9.py` | **copia**, lista nueva (§6), partiendo de los ficheros de `2d6cac44` | repetible e idempotente, como el del catering |
 | `regresion5.py` | no hace falta (no se toca `grupo_a`); correrlo una vez cuesta 0,02 M | guarda barata |
 
-**Decisiones de modelo para el research/SPEC** (no son cifras):
-- **Forma jurídica SL unipersonal**: el motor calcula IS 15/25 % + BIN, no IRPF. Nota en Supuestos, checklist F1 y docx: «si arrancas como autónomo, el resultado tributa en IRPF».
-- **Cocina de apoyo autorizada** (`alquiler_mes` = cuota de **cocina compartida por horas u obrador**, con almacén de paelleras y bombonas): la mise en place de la 1.x se hacía «en domicilio».
-- **Personal**: plantilla en las **4 filas** del molde: dueño-paellero · ayudante fijo · bolsa de ayudantes **fijos discontinuos** · 2.º paellero fijo discontinuo. `COBERTURA` = horas por evento × personas a la vez.
-- **Canales**: `pct_delivery` = **paella para recoger, sin servicio**, ≥ 5 % con comisión > 0 (la demo §2.11.9 falla con 0). Bebida pequeña, nunca 0 sin probar las demos.
-- **Cobro**: días de cobro = mezcla (B2C 0 días, B2B 30). El anticipo del 30 % no se modela: nota en Tesorería.
-- **Crecimiento**: el de los años 2-3 cae en **invitados por evento** con los mismos eventos. El docx lo dice así (M2).
+**Decisiones de modelo para el research/SPEC** (no son cifras): **Forma jurídica SL unipersonal**: el motor calcula IS 15/25 % + BIN, no IRPF. Nota en Supuestos, checklist F1 y docx: «si arrancas como autónomo, el resultado tributa en IRPF» · **Cocina de apoyo autorizada** (`alquiler_mes` = cuota de **cocina compartida por horas u obrador**, con almacén de paelleras y bombonas): la mise en place de la 1.x se hacía «en domicilio» · **Personal**: plantilla en las **4 filas** del molde: dueño-paellero · ayudante fijo · bolsa de ayudantes **fijos discontinuos** · 2.º paellero fijo discontinuo. `COBERTURA` = horas por evento × personas a la vez · **Canales**: `pct_delivery` = **paella para recoger, sin servicio**, ≥ 5 % con comisión > 0 (la demo §2.11.9 falla con 0). Bebida pequeña, nunca 0 sin probar las demos · **Cobro**: días de cobro = mezcla (B2C 0 días, B2B 30). El anticipo del 30 % no se modela: nota en Tesorería · **Crecimiento**: el de los años 2-3 cae en **invitados por evento** con los mismos eventos. El docx lo dice así (M2).
 
 ## 3. Checklist: 104 hitos en 1 hoja → molde de 6 hojas del FT ES (83 tareas, 12/16/14/10/16/15)
 
@@ -77,66 +61,15 @@ Columnas del FT: `OK · TRÁMITE / ACCIÓN · RESPONSABLE · PLAZO · NOTAS`; DV
 - **Reescritura**, no arreglo: el 1.2 tiene 0 encabezados, ~2.450 palabras y cifras de un modelo que desaparece. Molde FT ES: 131 párrafos, 10 H1, ~61 ranuras de texto, **A4**, autor `AI Chef Pro`, todas las cifras por token.
 - **Gemela = Catering ES 2.2** (`catering-es-2_0/textos/cat_es_{a,b}.json`): mismas ranuras, en español y del mismo oficio (eventos, B2C + B2B, sin local). Sustituye a la gemela EN, que el paellero no tiene. Redacción con 2 Sonnet en paralelo (`pae_es_a` §1-5, `pae_es_b` §6-10).
 
-Fuentes por ranura:
-
-| Ranura | Fuente |
-|---|---|
-| Argumento y longitud | la gemela del catering |
-| §1-2 concepto y modelo | docx 1.2 p6-p27, sin cifras |
-| §3 mercado | research (DataForSEO y fuentes citadas). Fuera 3.200 M€, 12-14 % y 38 % |
-| §4 competencia | por categorías, salvo que el research verifique nombres. Fuera la tabla t0 |
-| §5 marketing | p38-p43 |
-| §6 operaciones | p45-p63 + manual (raciones, paelleras y equipo por invitados) |
-| §7 personal | fijos discontinuos (catering p43/p64/p90) |
-| §8 finanzas | tokens + lecciones M2/M3 (crecimiento en invitados; holgura del año de carencia y del año 2) |
-| §9 riesgos | t1 + marco legal verificado (§3) |
-| §10 conclusiones | tokens |
-| Política comercial | contratos 1.2: B2C 30 % + 70 %, 30/50/75/100 %; B2B 30/70, 0/30/60/100 % |
-
-- **Anexos** tras la ranura 131, bajo un H1 «Anexos» (gate: **11 H1**):
-  - A, fuego al aire libre por CCAA: p93-p110 de la 1.2, trasplantados tal cual (ya revisados).
-  - B, correo a wedding planners: p111-p117 con `[precio por invitado]` en lugar de «35 €» y sin «calendario 2026».
+- **Fuentes por ranura**: Argumento y longitud: la gemela del catering · §1-2 concepto y modelo: docx 1.2 p6-p27, sin cifras · §3 mercado: research (DataForSEO y fuentes citadas). Fuera 3.200 M€, 12-14 % y 38 % · §4 competencia: por categorías, salvo que el research verifique nombres. Fuera la tabla t0 · §5 marketing: p38-p43 · §6 operaciones: p45-p63 + manual (raciones, paelleras y equipo por invitados) · §7 personal: fijos discontinuos (catering p43/p64/p90) · §8 finanzas: tokens + lecciones M2/M3 (crecimiento en invitados; holgura del año de carencia y del año 2) · §9 riesgos: t1 + marco legal verificado (§3) · §10 conclusiones: tokens · Política comercial: contratos 1.2: B2C 30 % + 70 %, 30/50/75/100 %; B2B 30/70, 0/30/60/100 %.
+- **Anexos** tras la ranura 131, bajo un H1 «Anexos» (gate: **11 H1**): A, fuego al aire libre por CCAA: p93-p110 de la 1.2, trasplantados tal cual (ya revisados); B, correo a wedding planners: p111-p117 con `[precio por invitado]` en lugar de «35 €» y sin «calendario 2026».
 - **Gates**: 11 H1, A4, ≥ 6.000 palabras, 0 tokens sin resolver, cifras = caché, 0 no latinos, 0 prohibidas. Prohibido: «freelance», «validad», «España 2026», «carnet», «tarifa plana», «solopreneur», «sin licencia», cifras 1.x (3.790, 9.670, 23.110, 3.500, 8.500, 12.000, 214.950, 215.000, 245.000, 109.822, 47.000, 62.000, 10,18, «18-22 eventos», 51 %, 55 %, 80 €/mes, 120 €/jornada). «food truck» solo en el título de la guía.
 
 ## 5. Calculadora ES: fork de `calculadora_cat_es.py` (hojas `Calculadora` · `Ejemplos` · `Instrucciones`, firma calc-beta)
 
-**Entradas**
-- Canal: Particular / Empresa.
-- Invitados.
-- Tipo de arroz: lista de los 12 de la carta. Coste de materia prima por ración por búsqueda en una tabla al pie de `Ejemplos`, con los food cost de la carta (7,60-16,50 €).
-- Diámetro de paellera: lista del manual (50-150 cm). Da las raciones por paellera, por el número bajo del rango (tabla 1).
-- Gramos de arroz por ración (100).
-- Coste de gas por paellera y servicio [estimación del kit].
-- Ayudantes y horas por persona, a €/h bruto × (1 + SS 33 %).
-- Menaje y desechables por ración: 0 si los pone el cliente; sustituye al −6 %.
-- Alquileres repercutidos (carpa si llueve); sustituye al +4 %.
-- Km de ida.
-- Margen bruto objetivo.
-- Suplemento de show cooking en %, 8 % por defecto (el de la 1.x).
-
-**Salidas**
-- **Logística**:
-  - nº de paelleras = REDONDEAR.MAS(invitados / raciones);
-  - **paelleros = REDONDEAR.MAS(paelleras / 3)** (manual p112);
-  - **kg de arroz**, litros de caldo y gas.
-- **Precio**:
-  - coste directo;
-  - **precio por invitado sin IVA** (redondeo a 0,50 €) y **con IVA**;
-  - desplazamiento = km × 2 × **0,95 €/km**, línea aparte sin margen (la tarifa del contrato B2B);
-  - subtotal, IVA 10 %, total.
-- **Cobro**:
-  - **anticipo 30 %** y resto (B2C el día; B2B a 30 días);
-  - **importe retenido por tramo de cancelación** de cada canal (contratos 1.2);
-  - **margen calculado**.
-- La propina va fuera del total, como nota.
-
-**Ejemplos, por las mismas fórmulas** (sustituyen a los «10 ejemplos validados»):
-- cumpleaños particular, 30 invitados, valenciana;
-- boda con wedding planner, 110 invitados, marisco + show cooking;
-- fiesta de un ayuntamiento, 220 invitados, 2 paelleros.
-
-**Autotest pycel** frente al espejo Python (± 0,01 €) y DV en las entradas de texto.
-
+**Entradas**: Canal: Particular / Empresa · Invitados · Tipo de arroz: lista de los 12 de la carta. Coste de materia prima por ración por búsqueda en una tabla al pie de `Ejemplos`, con los food cost de la carta (7,60-16,50 €) · Diámetro de paellera: lista del manual (50-150 cm). Da las raciones por paellera, por el número bajo del rango (tabla 1) · Gramos de arroz por ración (100) · Coste de gas por paellera y servicio [estimación del kit] · Ayudantes y horas por persona, a €/h bruto × (1 + SS 33 %) · Menaje y desechables por ración: 0 si los pone el cliente; sustituye al −6 % · Alquileres repercutidos (carpa si llueve); sustituye al +4 % · Km de ida · Margen bruto objetivo · Suplemento de show cooking en %, 8 % por defecto (el de la 1.x).
+**Salidas**: **Logística**: nº de paelleras = REDONDEAR.MAS(invitados / raciones); **paelleros = REDONDEAR.MAS(paelleras / 3)** (manual p112); **kg de arroz**, litros de caldo y gas · **Precio**: coste directo; **precio por invitado sin IVA** (redondeo a 0,50 €) y **con IVA**; desplazamiento = km × 2 × **0,95 €/km**, línea aparte sin margen (la tarifa del contrato B2B); subtotal, IVA 10 %, total · **Cobro**: **anticipo 30 %** y resto (B2C el día; B2B a 30 días); **importe retenido por tramo de cancelación** de cada canal (contratos 1.2); **margen calculado** · La propina va fuera del total, como nota.
+**Ejemplos, por las mismas fórmulas** (sustituyen a los «10 ejemplos validados»): cumpleaños particular, 30 invitados, valenciana · boda con wedding planner, 110 invitados, marisco + show cooking · fiesta de un ayuntamiento, 220 invitados, 2 paelleros. **Autotest pycel** frente al espejo Python (± 0,01 €) y DV en las entradas de texto.
 ## 6. Los otros 7 ficheros: solo lo que contradice el modelo nuevo (`arreglos_d9.py`)
 
 | Fichero | Dónde | Corrección |
@@ -178,20 +111,9 @@ Si el research fija un precio medio por invitado fuera de los rangos de la carta
 **Capa comercial, no se toca sin John** (precio tachado `€165`, testimonios). Pero **Marc Esteve** (`:65` reseña JSON-LD y `:163`), «Empecé con 4.200 EUR siguiendo el escenario mínimo viable», cita un escenario que la 2.2 **elimina**: decisión de John, como la de Yuki en el catering.
 
 **Dashboard** `src/pages/PlanNegocioPaelleroEventosDashboard.tsx` (isla `PlanNegocioPaelleroEventosLibraryIsland.tsx`): `desc` de las líneas **19** (60+ páginas, España 2026, 10 competidores), **26** (3.500-25.000, break-even 18-22), **33** (10 ejemplos validados), **54** (RGSEAA, 104 hitos), **61** (escandallo) y **89** (30-75K). `src/components/plan-negocio-paellero-eventos/*` solo lo usa la SPA `src/pages/PlanNegocioPaelleroEventos.tsx`, que no se construye: **no tocar** (la 1.2 lo tocó; da igual).
-
 **Changelog** `src/data/productos-changelog.ts:1569-1571`: `version '2.2'`, `updated`, y entrada 2.2 honesta arriba de la 1.2 (motor nuevo: personal, IVA/IS, préstamo, tesorería, 9 hojas, calculadora con IVA, checklist de 83).
-
 **Hubs**: descripción con «60+» + 1.ª viñeta «DOCX 60+» + 2.ª viñeta «validado». La 3.ª (anexo de fuego, 8 CCAA) es verdad y se queda.
-
-| Hub | Líneas |
-|---|---|
-| ES `ProductosDigitalesHubPage.astro` | 596 · 598 · 599 |
-| EN `DigitalProductsHubPage.astro` | 558 · 560 · 561 |
-| DE | 517 · 519 · 520 |
-| FR | 518 · 520 · 521 |
-| IT | 518 · 520 · 521 |
-| NL | 515 · 517 · 518 |
-| PT | 517 · 519 · 520 |
+Líneas (descripción · viñeta 1 · viñeta 2): ES `ProductosDigitalesHubPage.astro` 596/598/599 — EN `DigitalProductsHubPage.astro` 558/560/561 — DE 517/519/520 — FR 518/520/521 — IT 518/520/521 — NL 515/517/518 — PT 517/519/520.
 
 **No se tocan**: `get-download-urls.ts:961+` (mismos 11 nombres de fichero), `product-prices.ts:60`, `llms-full.txt:126` (solo enlaza), `products-catalog.ts:499` (sin cifras) y los 15 posts con banner (sin cifras).
 
