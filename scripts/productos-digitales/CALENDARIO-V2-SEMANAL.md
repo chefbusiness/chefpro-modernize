@@ -274,7 +274,27 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
     (`emails/broadcast-guia-churreria-lanzamiento-es.html`) · **Bakery EN** 14-nov 14:00Z `68bc8f49` · **Paellero 1.2** 18-nov 08:00Z
     `42ccda21` (`emails/broadcast-plan-negocio-paellero-eventos-v1.2-es.html`). Pruebas de los dos ES enviadas a John.
     Comprobar el resultado: `RemoteTrigger list_runs` del routine o https://claude.ai/code/routines.
-  - **Siguiente hueco libre: ES 23-nov 08:00Z · EN 19-nov 14:00Z.**
+  - **Siguiente hueco libre: ES 23-nov 08:00Z · EN ~~19-nov~~ 24-nov 14:00Z** (el 19-nov lo ocupa el Bar, ver abajo).
+
+### ✅ 2026-10-11 (Claude Code en el Mac + VPS) — **Bar Business Plan Kit (EN, $39) LIVE** (PR #118, merge `efc7f72b`)
+
+- **Producto 11 de la tienda inglesa** y quinto business plan: duplicado del ES `plan-negocio-tapas-bar` (gemelo estructural de la
+  cafetería, así que reutiliza el código de BP FT/CAF con contenido del Restaurant) y adaptado a EE. UU. con notas UK. Entregables:
+  plan en Word (10 secciones, ~7.800 palabras), Excel financiero (9 hojas, 742 fórmulas) y checklist de apertura (73 tareas, licencia
+  de alcohol como camino crítico). Caso: ventas $923,400 · préstamo $369,000 · DSCR 2,44 · payback 2,5 años · equilibrio 81 cubiertos.
+  Código en `scripts/productos-digitales/business-plans-en-3/`; revisión adversarial (1 Opus, 0 bloqueantes, 7 MAYOR + 17 MENOR
+  arreglados por la vía de texto) en `REVISION-FINAL.md`. ≈ 2,2 M tokens de subagentes (techo M = 5 M).
+- **Stripe:** `plink_1UPLlb4CcdRGidmEYaeOXn3r` = `https://buy.stripe.com/bJe00c3KccsCcrt0sR6oo1J`, $39 USD pago único, impuesto
+  automático, redirección a `/en/digital-products/bar-business-plan/access?session_id=…` (verificado con la CLI en live). Env
+  `VITE_STRIPE_PAYMENT_LINK_BAR_BUSINESS_PLAN` (builds, all) + `netlify/shared/payment-links.ts` (62 enlaces).
+- **Verificado LIVE:** `gate-flujo-postpago.py --only bar-business-plan` 3/3 entregables, 0 fallos, 0 avisos, 3 puertas cripto ·
+  `tienda-gate.py --base https://aichef.pro` verde · `robots-gate.py --live` verde · sitemap + `llms.txt` + `llms-full.txt` con la
+  URL · enlazada desde el hub EN, los otros 10 productos EN y el Restaurant Kit (que suelta la keyword «bar business plan») ·
+  hreflang recíproco con `plan-negocio-tapas-bar` · sitemap reenviado en GSC.
+- **Correo de lanzamiento EN:** borrador `813229ae` (`emails/broadcast-bar-business-plan-lanzamiento-en.html`, prueba enviada a
+  John); lo programa para el **19-nov 14:00Z** el routine **`trig_01W3wg4wmuaSrGazNW6mep1u`** (20-oct 15:07Z). Comprobar su `list_runs`.
+- **Además hoy (PR #117):** fuera el precio tachado y los «valores» de bonus de toda la tienda EN (FTC 16 CFR 233.1). Los correos EN
+  ya programados que dicen «launch/regular price» se quedan así (John: «déjalo así… para no retrasar trabajo»).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
@@ -342,7 +362,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 
 10-oct eBook (`b2c99916`) · 15-oct HACCP (`9b7f8f57`) · 20-oct Staff (`7b520469`) · 25-oct Financial (`3d49a8d7`) · 30-oct
 Food Truck Business Plan (`f52308c0`) · **4-nov Coffee Shop (programar desde el 5-oct) · 9-nov Restaurant (desde el 10-oct) ·
-14-nov Bakery (desde el 15-oct)**. Siguiente hueco EN: 19-nov. → **11-oct: Coffee Shop y Restaurant PROGRAMADOS; Bakery en borrador, lo programa el routine del 19-oct (ver entrada 11-oct).**
+14-nov Bakery (desde el 15-oct)**. Siguiente hueco EN: 19-nov. → **11-oct: Coffee Shop y Restaurant PROGRAMADOS; Bakery en borrador, lo programa el routine del 19-oct; el 19-nov es del Bar (routine del 20-oct); siguiente EN 24-nov (ver entradas 11-oct).**
 
 ## 2. Calendario (semana = lunes a domingo; 1 producto, máx. 2)
 
