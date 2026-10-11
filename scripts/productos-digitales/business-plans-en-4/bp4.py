@@ -18,6 +18,7 @@ paso 1 de Catering Business Plan Kit). Copia de `../business-plans-en-3/bp3.py` 
     python3 bp4.py ensamblar_docx --plan cat      # docx EN (tras la tanda 2)
     python3 bp4.py gates_en [--dir …] [--parcial --solo G1,G3,…] · gates_en --autotest
     python3 bp4.py calculadora [--autotest]       # catering-pricing-calculator.xlsx (D76) + autotest pycel
+    python3 bp4.py barrido                        # barrido independiente de los 4 entregables → entregables_cat.json
 """
 import json
 import os
@@ -28,7 +29,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.join(os.path.dirname(AQUI), 'business-plans-en')
 SCRIPTS = ('mapas', 'extraer_textos', 'extraer_docx', 'preparar_tandas', 'check_textos', 'aplicar_en', 'gates_en',
            'ensamblar_docx')
-PROPIOS = ('verificar', 'calculadora', 'fuente')
+PROPIOS = ('verificar', 'calculadora', 'fuente', 'barrido')
 
 
 def verificar():
@@ -86,8 +87,9 @@ if __name__ == '__main__':
     nombre = sys.argv[1]
     if nombre == 'verificar':
         sys.exit(verificar())
-    if nombre in ('calculadora', 'fuente'):
-        ruta = os.path.join(AQUI, {'calculadora': 'calculadora_cat.py', 'fuente': 'fuente_cat.py'}[nombre])
+    if nombre in ('calculadora', 'fuente', 'barrido'):
+        ruta = os.path.join(AQUI, {'calculadora': 'calculadora_cat.py', 'fuente': 'fuente_cat.py',
+                                   'barrido': 'barrido_cat.py'}[nombre])
     else:
         ruta = os.path.join(BASE, nombre + '.py')
     sys.argv = [ruta] + sys.argv[2:]

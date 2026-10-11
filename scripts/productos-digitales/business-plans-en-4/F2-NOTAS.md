@@ -148,3 +148,41 @@ VPS: `/dev/null` es un fichero normal (redirigir a `/tmp/*.txt`); copiar del Mac
    FT tenía lo mismo); la nota E23 de Scenarios lo matiza (el personal de eventos baja con los eventos).
 4. Tabla D19: 6 de 14 filas son «Kit estimate» (fuentes «resumen» de research). Si se rehace la extracción, los ids de
    `textos_es.json` pueden moverse y las salidas de los redactores dejan de casar.
+
+## 8. Cierre de la F2 (11-oct, sesión Claude Code): xlsx + docx EN, gates
+
+Tandas del paso 2 en `ead0a230` / `30d236dd` (`check_textos --todas` OK). Paso 3 en el VPS sobre `30d236dd`:
+`aplicar_en --idempotencia` → préstamo **$146,000** en 1 vuelta, textos 564 + 318, faltan 0, **0 diferencias** entre
+dos construcciones, inject_cache 722 / 12 fórmulas y **0 fallos de pycel**, D15 sin fallos; `ensamblar_docx --plan cat`
+→ G8 VERDE. `catering-business-plan` dado de alta en `PRODUCTOS_LETTER` (`censo-entregables.py`) y `EXCLUIDOS`
+(`postprocess-transversal.py`).
+
+**Caso final** (`cifras_caso.json`, 114 tokens): 180 eventos × 60 invitados × $60.00 sin sales tax ($64.80 con él) →
+ventas **$648,000** / $745,200 / $819,720 ($3,600 por evento) · CAPEX $107,200 + fondo de maniobra $78,253 =
+**$185,453** · fondos propios $40,000 (22 %) + préstamo $146,000 al 10 % a 7 años (cuota $29,989) · margen bruto 60.6 % ·
+mercancía 29.4 % · personal 34.4 % · comisaria 4.6 % · EBITDA $94,276 (**14.5 %**) · neto $48,466 (7.5 %) / $87,798 /
+$116,937 · equilibrio **151 eventos/año** (contable y de caja), holgura 20 % · **DSCR 2.60×** · saldo mínimo $50,545
+(mes 4) · payback 1.9 años (1.3 sobre el CAPEX) · 11 personas = 4.59 FTE, cobertura 99 % · seguros $6,000 · pesimista
+$400,950, −$85,091 y caja −$7,173 (el docx §8 lo dice: «in a weak year, cash can run out») · optimista $965,250 y
++$256,875. Los 5 umbrales del P&L en verde los 3 años.
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp4.py gates_en` (G1-G9 sobre `dl/catering-business-plan/`) | **TODO VERDE** (G2 incluye vocabulario D72 y cifras prohibidas; G9 = censo-entregables + no latinos) |
+| `bp4.py gates_en --autotest` · `ensamblar_docx --autotest` · `calculadora --autotest` | **20/20** · **8/8** · VERDE (136 comprobaciones) |
+| `barrido_cat.py` (independiente: celdas, literales de fórmula, DV, docProps, párrafos y tablas) | 1,557 piezas · **0** vocabulario D72 / cifras prohibidas · 0 español · 0 no latinos (`entregables_cat.json`) |
+| `censo-entregables --fail --letter --only catering-business-plan` · `gate-no-latinos --only` | 4 ficheros, 802 fórmulas, **0 defectos** · 0 caracteres |
+| Regresión §2 (FT/CAF, REST/PAN, BAR) | TODO VERDE · 20/20 · 18/18 · 16/16 · 8/8 · `check_textos` OK |
+
+| Entregable (`astro-site/public/dl/catering-business-plan/`) | Contenido | sha256 (Mac = VPS) |
+|---|---|---|
+| `catering-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 6,507 palabras, Letter | `1689a0dbdfe19f8b…` |
+| `catering-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US calibrado | `c22fb993343373ce…` |
+| `catering-pricing-calculator.xlsx` | 3 hojas, 68 fórmulas | `765ea87e9c981660…` |
+| `catering-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `abea9e278eaafaff…` |
+
+**Para la revisión final (una pasada opus)**: (1) leer el checklist entero: las 272 celdas se escribieron sobre ranuras
+del food truck; (2) recalcular a mano 3 cifras (ventas = 180 × 60 × 60, equilibrio 151, DSCR) y abrir 3 fuentes legales
+del §9 (eldoradocounty.ca.gov, tax.ny.gov TB-ST-320, IRS Rev. Rul. 2012-18); (3) D19: 6 filas «Kit estimate»;
+(4) desviaciones §4 (pestaña de 31 caracteres, umbral 60 %, calibración); (5) notas largas de `Staffing!A24` y
+`Cash Flow!O5`: alto de fila en Excel / LibreOffice y a 360 px; (6) «guests» frente a «clients» en el docx.
