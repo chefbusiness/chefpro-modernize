@@ -190,17 +190,10 @@ const apps = [
   { name: 'Google', src: '/logos/google.png' },
   { name: 'Perplexity', src: '/logos/perplexity.png' },
 ];
-// Fuera del ES, el carrusel enseña SOLO lo que entrega el kit (revisión final M2, 4-oct-2026): Microsoft Excel y
-// Microsoft Word, sin Google Sheets ni PDF (D25: no hay test en Sheets y el kit no trae ningún PDF). Con 2 logos
-// se repiten ×16 para que la mitad del carril (scroll-left = −50 %) siga siendo más ancha que la pantalla.
-// La rama ES no cambia: sus 10 landings salen byte a byte iguales.
-const appsEntregados = [
-  { name: 'Microsoft Excel', src: '/logos/excel.png' },
-  { name: 'Microsoft Word', src: '/logos/word.png' },
-];
-const appsRepeated = lang === 'es'
-  ? [...apps, ...apps, ...apps, ...apps]
-  : Array.from({ length: 16 }, () => appsEntregados).flat();
+// Mismo carrusel en todos los idiomas, igual que el resto de plantillas (KitExcel, Guía, Tareas…). El 4-oct-2026 la rama
+// no-ES enseñaba solo Excel y Word (revisión M2) y John lo vio como un error de la landing (11-oct): el carrusel es de la
+// plantilla común; lo que entrega cada kit lo dicen data.compatSubtitle y why.compatPills.
+const appsRepeated = [...apps, ...apps, ...apps, ...apps];
 
 // ---- FreeToolsSection (8 herramientas; título/desc/ruta por idioma en el diccionario de la tienda,
 //      el mismo que KitExcel — el ES es VERBATIM el de components/ebook/FreeToolsSection.tsx) ----
