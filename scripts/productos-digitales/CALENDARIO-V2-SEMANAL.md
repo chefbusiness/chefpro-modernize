@@ -287,7 +287,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
 - **Stripe:** `plink_1UPLlb4CcdRGidmEYaeOXn3r` = `https://buy.stripe.com/bJe00c3KccsCcrt0sR6oo1J`, $39 USD pago único, impuesto
   automático, redirección a `/en/digital-products/bar-business-plan/access?session_id=…` (verificado con la CLI en live). Env
   `VITE_STRIPE_PAYMENT_LINK_BAR_BUSINESS_PLAN` (builds, all) + `netlify/shared/payment-links.ts` (62 enlaces).
-- **Verificado LIVE:** `gate-flujo-postpago.py --only bar-business-plan` 3/3 entregables, 0 fallos, 0 avisos, 3 puertas cripto ·
+- **Verificado LIVE:** `gate-flujo-postpago.py --only bar-business-plan` 3/3 entregables, 0 fallos, 0 avisos, 3 puertas cripto · gate completo (el PR tocó functions compartidas) **62 productos / 819 entregables / 0 fallos / 0 avisos** ·
   `tienda-gate.py --base https://aichef.pro` verde · `robots-gate.py --live` verde · sitemap + `llms.txt` + `llms-full.txt` con la
   URL · enlazada desde el hub EN, los otros 10 productos EN y el Restaurant Kit (que suelta la keyword «bar business plan») ·
   hreflang recíproco con `plan-negocio-tapas-bar` · sitemap reenviado en GSC.
