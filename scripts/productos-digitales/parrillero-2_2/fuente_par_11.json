@@ -1,0 +1,829 @@
+{
+ "origen": "astro-site/public/dl/plan-negocio-parrillero-asador-eventos/plan-de-negocio-parrillero-asador-eventos.docx @ e7dfc1d8 (1.1)",
+ "parrafos": [
+  {
+   "i": 0,
+   "texto": "ChefBusiness · Plan de Negocio & Kit Parrillero / Asador para Eventos"
+  },
+  {
+   "i": 1,
+   "texto": "Plan de Negocio · Parrillero / Asador para Eventos"
+  },
+  {
+   "i": 2,
+   "texto": "Plan completo para profesionales de la parrilla que quieren montar un servicio premium itinerante en España. Modelo híbrido B2C particular + B2B planner / hotel / empresa, sin local físico, con setup móvil escalable. Validado contra mercado real España 2026."
+  },
+  {
+   "i": 4,
+   "texto": "Resumen ejecutivo"
+  },
+  {
+   "i": 5,
+   "texto": "Este plan documenta cómo convertir el dominio profesional de la parrilla en un negocio itinerante premium en España. El producto es un servicio B2C+B2B en el que un parrillero profesional (argentino, uruguayo, colombiano, español castellano o emprendedor con experiencia en parrilla) ofrece asado y parrilla en directo en eventos privados (bodas, cumpleaños, bautizos, comuniones) y profesionales (wedding planners, agencias de eventos, hoteles, empresas, restaurantes en performance show cooking)."
+  },
+  {
+   "i": 6,
+   "texto": "El mercado español tiene una dualidad terminológica clara: el comprador final lo busca como 'parrillero a domicilio'; el cliente B2B (wedding planner, agencia) lo contrata como 'parrilla argentina para eventos' o 'asador para bodas'. Nuestra propuesta cubre ambos universos con un naming claro y un servicio diferenciado por concepto temático."
+  },
+  {
+   "i": 7,
+   "texto": "La inversión inicial mínima viable es de 3.500-5.000 € (parrilla GGM KGE1200 + brasero + cuchillería + indumentaria EPI). El break-even se alcanza alrededor de los 8-10 eventos confirmados. La proyección a 3 años apunta a una facturación anual de 240.000 € con margen neto del 25-30 % en escenario estándar (sin food truck)."
+  },
+  {
+   "i": 8,
+   "texto": "1. Análisis del mercado español 2026"
+  },
+  {
+   "i": 9,
+   "texto": "1.1 Tamaño y dinámica"
+  },
+  {
+   "i": 10,
+   "texto": "El sector de catering eventos en España movió aproximadamente 1.800-2.100 millones de euros en 2025, con un crecimiento sostenido del 6-8 % anual post-pandemia. El subsector de parrilla y asado en eventos representa un nicho de 80-120 millones de euros donde dominan operadores B2C masivos (Pasión Llanera, Brasas y Sabores), parrilleros argentinos premium (Vaquero, Filo, La Parrilla del Gordo) y catering generalistas que añaden el servicio sin especialización."
+  },
+  {
+   "i": 11,
+   "texto": "Las bodas mantienen el pico de demanda con 165.000 enlaces civiles estimados en España 2026 y un ticket medio de 200-350 €/invitado en Madrid premium. El segmento corporativo (team building, cenas empresa, eventos corporate) crece a doble dígito gracias al regreso de presencialidad post-COVID."
+  },
+  {
+   "i": 12,
+   "texto": "1.2 Competencia directa benchmark"
+  },
+  {
+   "i": 13,
+   "texto": "Análisis de 10 competidores reales activos en España (validado abril 2026):"
+  },
+  {
+   "i": 14,
+   "texto": "Conclusión competitiva clave: ningún operador combina (a) servicio premium B2B + B2C sin food truck, (b) carta multi-concepto (argentino + BBQ + mediterráneo + criollo), (c) marketing dual al cliente final + wedding planner. Existe hueco para un parrillero itinerante posicionado explícitamente como 'profesional B2B premium para eventos de toda España' frente al actual 'catering doméstico' o 'argentino genérico'."
+  },
+  {
+   "i": 15,
+   "texto": "1.3 Tendencias 2026"
+  },
+  {
+   "i": 16,
+   "texto": "Crecimiento de la categoría 'show cooking' como upsell premium en bodas y eventos corporativos."
+  },
+  {
+   "i": 17,
+   "texto": "Demanda creciente del concepto 'fuego en directo' para experiencias gastronómicas en restaurantes (jornadas temáticas, performance)."
+  },
+  {
+   "i": 18,
+   "texto": "Boom del BBQ low & slow en zonas urbanas (Madrid, Barcelona) por influencia americana y series gastronómicas."
+  },
+  {
+   "i": 19,
+   "texto": "Bodas más pequeñas (40-80 pax) en finca rural con presupuesto medio-alto — encaja perfectamente con servicio parrillero itinerante."
+  },
+  {
+   "i": 20,
+   "texto": "Endurecimiento normativo del fuego al aire libre por cambio climático — wedding planners buscan parrilleros que sepan navegar autorizaciones CCAA."
+  },
+  {
+   "i": 21,
+   "texto": "2. Cliente objetivo y propuesta de valor"
+  },
+  {
+   "i": 22,
+   "texto": "2.1 Perfil del cliente B2C particular"
+  },
+  {
+   "i": 23,
+   "texto": "Familia o particular organizador de evento privado (boda íntima, cumpleaños, bautizo, comunión)."
+  },
+  {
+   "i": 24,
+   "texto": "Edad: 30-55 años principalmente, decisor económico claro."
+  },
+  {
+   "i": 25,
+   "texto": "Renta media-alta, dispuesto a pagar por experiencia diferenciada."
+  },
+  {
+   "i": 26,
+   "texto": "Suele tener finca/chalet propio o alquilado con espacio para fuego."
+  },
+  {
+   "i": 27,
+   "texto": "Busca un servicio 'llave en mano' donde el parrillero llegue, monte, sirva y se vaya."
+  },
+  {
+   "i": 28,
+   "texto": "2.2 Perfil del cliente B2B"
+  },
+  {
+   "i": 29,
+   "texto": "Wedding planner zona Madrid / Barcelona / Costa / Baleares con cartera 20-80 bodas/año."
+  },
+  {
+   "i": 30,
+   "texto": "Agencias de eventos corporativos especializadas en team building y celebraciones empresa."
+  },
+  {
+   "i": 31,
+   "texto": "Hoteles 4-5* con departamento de eventos propio que necesita externalizar fuego al aire libre."
+  },
+  {
+   "i": 32,
+   "texto": "Empresas pyme/startup que organizan retiros, kick-offs, kick-out y eventos premium internos."
+  },
+  {
+   "i": 33,
+   "texto": "Restaurantes que quieren incorporar jornadas temáticas o performance show cooking en directo."
+  },
+  {
+   "i": 34,
+   "texto": "2.3 Propuesta de valor"
+  },
+  {
+   "i": 35,
+   "texto": "Un parrillero profesional itinerante que llega al evento con todo lo necesario (parrilla, equipamiento, carbón, carne, equipo) y entrega un servicio premium con calidad técnica de restaurante asador, sin que el cliente tenga que coordinar nada. Tres argumentos de venta principales:"
+  },
+  {
+   "i": 36,
+   "texto": "Calidad técnica certificada (sondas de temperatura interna, plan APPCC, EPI certificado, seguro RC)."
+  },
+  {
+   "i": 37,
+   "texto": "Catálogo multi-concepto: argentino tradicional, asador a la cruz, BBQ texano, mediterráneo, criollo, llanero — un mismo proveedor para distintas experiencias."
+  },
+  {
+   "i": 38,
+   "texto": "Cumplimiento legal completo (autorizaciones CCAA fuego, IVA 10 % catering, factura profesional, retención IRPF)."
+  },
+  {
+   "i": 39,
+   "texto": "3. Modelo de negocio"
+  },
+  {
+   "i": 40,
+   "texto": "3.1 Mix de ingresos objetivo"
+  },
+  {
+   "i": 41,
+   "texto": "3.2 Catálogo de servicios"
+  },
+  {
+   "i": 42,
+   "texto": "El catálogo se estructura en 10 experiencias temáticas (ver entregable específico) que combinas según el cliente y el evento. Cada experiencia tiene su menú, equipamiento mínimo y ticket de servicio. El parrillero puede dominar 1-3 experiencias en profundidad y ofrecer las restantes como adaptaciones del concepto principal."
+  },
+  {
+   "i": 43,
+   "texto": "3.3 Dimensionado anual de actividad"
+  },
+  {
+   "i": 44,
+   "texto": "4. Marketing y captación de clientes"
+  },
+  {
+   "i": 45,
+   "texto": "4.1 Doble embudo B2C + B2B"
+  },
+  {
+   "i": 46,
+   "texto": "Tu marketing debe abordar dos canales en paralelo. El B2C local capta particulares vía SEO local + Google Ads + RRSS orgánicas. El B2B premium se gana con outreach manual a wedding planners + presencia en directorios profesionales + contenido editorial de calidad."
+  },
+  {
+   "i": 47,
+   "texto": "4.2 Plan B2C — captación particular"
+  },
+  {
+   "i": 48,
+   "texto": "Web propia one-page con casos de éxito (5-8 bodas reales con fotografía profesional)."
+  },
+  {
+   "i": 49,
+   "texto": "Perfil Google Business optimizado con reseñas (objetivo 30+ reseñas año 1)."
+  },
+  {
+   "i": 50,
+   "texto": "SEO local 'parrillero a domicilio Madrid' (o tu ciudad) + 'asador para eventos [tu ciudad]'."
+  },
+  {
+   "i": 51,
+   "texto": "Google Ads con palabra clave 'asado para bodas' + retargeting Meta Ads."
+  },
+  {
+   "i": 52,
+   "texto": "Instagram + TikTok con reels de parrilla en directo (objetivo 20K seguidores año 1)."
+  },
+  {
+   "i": 53,
+   "texto": "Pinterest tableros 'parrilla bodas finca' + 'asador para cumpleaños'."
+  },
+  {
+   "i": 54,
+   "texto": "Programa referidos 10 % descuento al cliente que recomiende a otro."
+  },
+  {
+   "i": 55,
+   "texto": "4.3 Plan B2B — captación profesional"
+  },
+  {
+   "i": 56,
+   "texto": "Listado 30 wedding planners zona Madrid + 15 Barcelona + 10 Costa del Sol/Baleares."
+  },
+  {
+   "i": 57,
+   "texto": "Outreach por email + LinkedIn personalizado: 3 emails distanciados + 1 llamada de seguimiento."
+  },
+  {
+   "i": 58,
+   "texto": "Cata demostrativa gratuita para 1-2 planners clave (piloto convertible en caso de éxito)."
+  },
+  {
+   "i": 59,
+   "texto": "Alta en directorios profesionales: Bodas.net, Zankyou, GuiaCatering, Eventoplus."
+  },
+  {
+   "i": 60,
+   "texto": "Networking presencial en HIP Madrid (feria) + BBC Barcelona (foro)."
+  },
+  {
+   "i": 61,
+   "texto": "Contenido editorial mensual en LinkedIn (3 posts/semana) sobre tendencias parrilla en eventos."
+  },
+  {
+   "i": 62,
+   "texto": "Anuncio en revistas profesionales sectoriales (Bodas Magazine, Anuncia, Caterdata)."
+  },
+  {
+   "i": 63,
+   "texto": "4.4 Posicionamiento y branding"
+  },
+  {
+   "i": 64,
+   "texto": "Marca personal del parrillero (nombre + apellido) o nombre fantasía profesional."
+  },
+  {
+   "i": 65,
+   "texto": "Identidad visual: paleta cálida (cobre, dorado, marrón cuero), tipografía elegante seria."
+  },
+  {
+   "i": 66,
+   "texto": "Foto profesional de marca personal (parrillero con setup, no fotos posadas)."
+  },
+  {
+   "i": 67,
+   "texto": "Reportaje fotográfico de cada evento (consentimiento) → portfolio actualizado mensualmente."
+  },
+  {
+   "i": 68,
+   "texto": "Vídeo short 60 s del primer servicio (RRSS y web) — objetivo viralizar."
+  },
+  {
+   "i": 69,
+   "texto": "5. Operaciones y procesos"
+  },
+  {
+   "i": 70,
+   "texto": "5.1 Flujo operativo de un evento"
+  },
+  {
+   "i": 71,
+   "texto": "5.2 Equipo y subcontratación"
+  },
+  {
+   "i": 72,
+   "texto": "Año 1: parrillero solo + 1 ayudante freelance por evento (estudiante hostelería, 80-120 €/jornada)."
+  },
+  {
+   "i": 73,
+   "texto": "Año 2: parrillero + ayudante fijo a media jornada + 2-3 ayudantes freelance por evento >50 pax."
+  },
+  {
+   "i": 74,
+   "texto": "Año 3: equipo de 2 parrilleros + 1 jefe ayudantes + freelance pool."
+  },
+  {
+   "i": 75,
+   "texto": "Subcontrata camareros profesionales para eventos >80 pax (no tu rol)."
+  },
+  {
+   "i": 76,
+   "texto": "Subcontrata fotografía profesional para 4-6 eventos al año (cartera, no en cada uno)."
+  },
+  {
+   "i": 77,
+   "texto": "5.3 Gestión de la operación"
+  },
+  {
+   "i": 78,
+   "texto": "Software CRM básico para gestionar leads y conversión (Pipedrive, HubSpot Free)."
+  },
+  {
+   "i": 79,
+   "texto": "Software facturación profesional (Quipu, Holded, Anfix) — desde el día 1."
+  },
+  {
+   "i": 80,
+   "texto": "Plan APPCC documentado en hojas digitales (registro temperaturas, alérgenos, mermas)."
+  },
+  {
+   "i": 81,
+   "texto": "Calendario digital con sincronización automática (Calendly, Google Calendar)."
+  },
+  {
+   "i": 82,
+   "texto": "Inventario digital del equipamiento con fotos y SKU (Google Drive estructurado)."
+  },
+  {
+   "i": 83,
+   "texto": "6. Marco legal y fiscal"
+  },
+  {
+   "i": 84,
+   "texto": "6.1 Forma jurídica"
+  },
+  {
+   "i": 85,
+   "texto": "Para arrancar, autónomo en estimación directa simplificada (no caben módulos para esta actividad mixta). Cuando la facturación supere los 40-50K €, valorar SL si hay socio o vehículo dedicado al servicio. El IVA aplicable es el reducido del 10 % (catering / hostelería). La retención IRPF en facturas B2B es del 7 % el primer año (autónomo novel) y del 15 % en adelante."
+  },
+  {
+   "i": 86,
+   "texto": "6.2 Permisos y carnés obligatorios"
+  },
+  {
+   "i": 87,
+   "texto": "Alta autónomo Seguridad Social (con tarifa plana 80 €/mes los primeros 12 meses)."
+  },
+  {
+   "i": 88,
+   "texto": "Alta IAE 677.9 'Servicios prestados fuera de establecimiento' (cuota 0 si facturación <1M €)."
+  },
+  {
+   "i": 89,
+   "texto": "CNAE 56.21 'Provisión de comidas preparadas para eventos'."
+  },
+  {
+   "i": 90,
+   "texto": "Carnet de manipulador de alimentos (Reglamento CE 852/2004) — todo el equipo."
+  },
+  {
+   "i": 91,
+   "texto": "Plan APPCC adaptado a actividad itinerante (asesor APPCC, 250-450 €)."
+  },
+  {
+   "i": 92,
+   "texto": "Seguro RC profesional eventos catering (300.000-600.000 € cobertura, 200-450 €/año)."
+  },
+  {
+   "i": 93,
+   "texto": "Autorización municipal de venta ambulante o autorización puntual por evento."
+  },
+  {
+   "i": 94,
+   "texto": "6.3 Normativa de fuego al aire libre por CCAA"
+  },
+  {
+   "i": 95,
+   "texto": "Crítico operativamente: la regulación del uso del fuego al aire libre varía drásticamente entre comunidades autónomas. Resumen orientativo (verificar con autoridad competente antes de cada evento):"
+  },
+  {
+   "i": 96,
+   "texto": "Cataluña: prohibido fuego en terreno forestal del 15-mar al 15-oct sin autorización Generalitat. Decretos sequía endurecen 2024-2026."
+  },
+  {
+   "i": 97,
+   "texto": "Madrid: ordenanza 4/2021. Eventos en finca privada con licencia OK. Forestal igual a Cataluña en alerta."
+  },
+  {
+   "i": 98,
+   "texto": "Baleares: decretos restrictivos verano + autorización Conselleria Medi Ambient. Bodas finca rural mallorquina/ibicenca crítico."
+  },
+  {
+   "i": 99,
+   "texto": "Andalucía: Plan INFOCA prohibición fuego forestal 1 jun-15 oct. Eventos finca con licencia organizador OK."
+  },
+  {
+   "i": 100,
+   "texto": "Resto CCAA: consulta el plan correspondiente (PATRICOVA Valencia, PLADIGA Galicia, INFOCYL Castilla y León) antes de eventos en zona forestal."
+  },
+  {
+   "i": 101,
+   "texto": "7. Plan financiero — resumen"
+  },
+  {
+   "i": 102,
+   "texto": "El plan financiero detallado vive en el Excel adjunto. Aquí va el resumen ejecutivo de los principales números de los 3 primeros años:"
+  },
+  {
+   "i": 103,
+   "texto": "8. Estacionalidad y gestión de cashflow"
+  },
+  {
+   "i": 104,
+   "texto": "El parrillero itinerante tiene una estacionalidad agresiva: mayo-septiembre + diciembre concentran el 65-75 % de la facturación anual. Esto exige un plan de cashflow disciplinado para cubrir los meses valle (enero-abril, agosto, noviembre)."
+  },
+  {
+   "i": 105,
+   "texto": "Reserva mínimo 3 meses de gastos fijos en cuenta separada antes del primer mes valle."
+  },
+  {
+   "i": 106,
+   "texto": "Cobra anticipos: 30 % a la firma del contrato + 40 % 7 días antes + 30 % post-evento."
+  },
+  {
+   "i": 107,
+   "texto": "En meses valle (enero-marzo) intensifica captación B2B para asegurar agenda alta temporada."
+  },
+  {
+   "i": 108,
+   "texto": "Aprovecha el valle para mantenimiento equipamiento, formación adicional, contenido marketing."
+  },
+  {
+   "i": 109,
+   "texto": "Cierra acuerdos de cenas empresa Navidad antes de septiembre — diciembre se llena rápido."
+  },
+  {
+   "i": 110,
+   "texto": "9. Riesgos y mitigación"
+  },
+  {
+   "i": 111,
+   "texto": "10. Roadmap de crecimiento — 3 años"
+  },
+  {
+   "i": 112,
+   "texto": "Año 1 — validación y reputación"
+  },
+  {
+   "i": 113,
+   "texto": "Inversión 5.000 € · objetivo 24 eventos · 57.000 € facturación."
+  },
+  {
+   "i": 114,
+   "texto": "Cierre primer wedding planner referido + 30 reseñas Google."
+  },
+  {
+   "i": 115,
+   "texto": "Construcción portfolio fotográfico de 5-8 casos de éxito."
+  },
+  {
+   "i": 116,
+   "texto": "Ajuste de pricing y propuesta tras 6 meses de operación."
+  },
+  {
+   "i": 117,
+   "texto": "Año 2 — escalado B2B y consolidación"
+  },
+  {
+   "i": 118,
+   "texto": "Inversión adicional 3.000 € en ahumador + asador a la cruz + furgo adaptada."
+  },
+  {
+   "i": 119,
+   "texto": "Objetivo 52 eventos · 130.000 € facturación · 3 wedding planners recurrentes."
+  },
+  {
+   "i": 120,
+   "texto": "Contratación ayudante a media jornada + pool freelance estable."
+  },
+  {
+   "i": 121,
+   "texto": "Apertura concepto BBQ texano para diferenciación premium urbano."
+  },
+  {
+   "i": 122,
+   "texto": "Año 3 — diversificación y food truck"
+  },
+  {
+   "i": 123,
+   "texto": "Inversión 25.000-50.000 € en food truck especializado o remolque dedicado."
+  },
+  {
+   "i": 124,
+   "texto": "Objetivo 89 servicios + apertura canal mercados gastronómicos / festivales."
+  },
+  {
+   "i": 125,
+   "texto": "Equipo: 2 parrilleros + ayudante fijo + freelance pool."
+  },
+  {
+   "i": 126,
+   "texto": "Facturación 237.000 € + canal recurrente food truck = 320-360 K € total."
+  },
+  {
+   "i": 127,
+   "texto": "11. Conclusión"
+  },
+  {
+   "i": 128,
+   "texto": "El parrillero itinerante para eventos es una de las pocas oportunidades actuales en hostelería que combina baja barrera de entrada (3.500-5.000 €), márgenes brutos altos (55-60 %), demanda creciente verificada y nicho premium poco saturado. La clave del éxito está en posicionarse como profesional multi-concepto B2B+B2C (no como catering doméstico ni como argentino genérico), invertir en branding desde el día 1, dominar la técnica con respaldo APPCC certificado y construir relaciones recurrentes con 3-5 wedding planners y agencias de eventos."
+  },
+  {
+   "i": 129,
+   "texto": "El Plan + Kit que acabas de adquirir te ahorra entre 60 y 100 horas de investigación, te entrega plantillas legales, calculadoras financieras, catálogo de proveedores con SKU y precios reales, y el blueprint completo para operar profesionalmente desde el primer evento. La ejecución es tuya — los entregables son tu pista de despegue."
+  }
+ ],
+ "tablas": [
+  [
+   [
+    "Empresa",
+    "Naming",
+    "€/pax",
+    "Mín. pax",
+    "Cobertura"
+   ],
+   [
+    "Vaquero Catering",
+    "Parrillero gaucho",
+    "28-60",
+    "10",
+    "Madrid"
+   ],
+   [
+    "Brasas y Sabores",
+    "Parrillero a domicilio + asador criollo",
+    "39",
+    "20",
+    "Madrid"
+   ],
+   [
+    "Pasión Llanera",
+    "Asado al barril",
+    "31-41",
+    "30",
+    "106 ciudades ES"
+   ],
+   [
+    "La Parrilla del Gordo Argentino",
+    "Asados argentinos",
+    "n/d",
+    "n/d",
+    "Madrid + 5 ciudades"
+   ],
+   [
+    "Filo Catering",
+    "Catering parrilla argentina",
+    "n/d",
+    "n/d",
+    "Madrid"
+   ],
+   [
+    "2Party",
+    "Parrilleros profesionales",
+    "n/d",
+    "20",
+    "Madrid"
+   ],
+   [
+    "Eventones",
+    "Catering parrilla argentina",
+    "n/d",
+    "n/d",
+    "Madrid"
+   ],
+   [
+    "Moka Catering",
+    "Parrilladas + estaca + ternero entero",
+    "n/d",
+    "400",
+    "Nacional"
+   ],
+   [
+    "Ángel Lezcano Hazas",
+    "Parrilladas tradición vasca",
+    "n/d",
+    "50-4000",
+    "Norte España"
+   ],
+   [
+    "ALEX'S Slow Smoked BBQ",
+    "BBQ texano nicho",
+    "n/d",
+    "n/d",
+    "España"
+   ]
+  ],
+  [
+   [
+    "Canal",
+    "% facturación año 1",
+    "% año 2",
+    "% año 3"
+   ],
+   [
+    "B2C particular (bodas, cumpleaños, bautizos)",
+    "40%",
+    "35%",
+    "30%"
+   ],
+   [
+    "B2B wedding planners + agencias",
+    "45%",
+    "50%",
+    "52%"
+   ],
+   [
+    "B2B hoteles + empresas",
+    "10%",
+    "10%",
+    "12%"
+   ],
+   [
+    "Show cooking restaurantes (fee/jornada)",
+    "5%",
+    "5%",
+    "6%"
+   ],
+   [
+    "Total",
+    "100%",
+    "100%",
+    "100%"
+   ]
+  ],
+  [
+   [
+    "Concepto",
+    "Año 1",
+    "Año 2",
+    "Año 3"
+   ],
+   [
+    "Eventos B2C particulares",
+    "12",
+    "22",
+    "35"
+   ],
+   [
+    "Eventos B2B planners/hoteles",
+    "8",
+    "18",
+    "30"
+   ],
+   [
+    "Show cooking jornadas restaurante",
+    "4",
+    "12",
+    "24"
+   ],
+   [
+    "Total servicios anuales",
+    "24",
+    "52",
+    "89"
+   ],
+   [
+    "Días operativos directos",
+    "24",
+    "52",
+    "89"
+   ],
+   [
+    "Días preparación + comercial",
+    "60",
+    "90",
+    "130"
+   ]
+  ],
+  [
+   [
+    "Fase",
+    "Acción",
+    "Tiempo"
+   ],
+   [
+    "Día -14",
+    "Confirmación pedido + visita venue + autorizaciones",
+    "1-2 h"
+   ],
+   [
+    "Día -7",
+    "Confirmación nº invitados final + alérgenos",
+    "30 min"
+   ],
+   [
+    "Día -3",
+    "Aprovisionamiento carne + carbón + acompañamientos",
+    "3-4 h"
+   ],
+   [
+    "Día -1",
+    "Mise en place: marinados, salmueras, cortes preparación",
+    "4-6 h"
+   ],
+   [
+    "Día evento (mañana)",
+    "Salida 3 h antes del evento + montaje 90-120 min",
+    "3-4 h"
+   ],
+   [
+    "Día evento (servicio)",
+    "Encendido brasas + cocción + servicio + presentación",
+    "3-5 h"
+   ],
+   [
+    "Día evento (cierre)",
+    "Desmontaje + limpieza + retirada residuos",
+    "60-90 min"
+   ],
+   [
+    "Día +1",
+    "Email agradecimiento cliente + envío fotos",
+    "30 min"
+   ],
+   [
+    "Día +3",
+    "Solicitud reseña Google + permiso uso fotos",
+    "15 min"
+   ],
+   [
+    "Día +7",
+    "Cierre contable evento + análisis margen real vs proyectado",
+    "30 min"
+   ]
+  ],
+  [
+   [
+    "Línea",
+    "Año 1",
+    "Año 2",
+    "Año 3"
+   ],
+   [
+    "Inversión inicial",
+    "5.000 €",
+    "—",
+    "—"
+   ],
+   [
+    "Ingresos totales",
+    "57.200 €",
+    "130.800 €",
+    "237.000 €"
+   ],
+   [
+    "Margen bruto",
+    "27.000 €",
+    "65.000 €",
+    "115.000 €"
+   ],
+   [
+    "Costes fijos",
+    "4.830 €",
+    "9.870 €",
+    "15.460 €"
+   ],
+   [
+    "EBITDA",
+    "22.170 €",
+    "55.130 €",
+    "99.540 €"
+   ],
+   [
+    "Beneficio antes impuestos",
+    "21.370 €",
+    "53.730 €",
+    "97.140 €"
+   ],
+   [
+    "Margen neto %",
+    "37%",
+    "41%",
+    "41%"
+   ]
+  ],
+  [
+   [
+    "Riesgo",
+    "Mitigación"
+   ],
+   [
+    "Cancelación lluvia evento al aire libre",
+    "Cláusula 'fuerza mayor' contrato + acuerdo cambio fecha. Carpa subcontratada como upsell."
+   ],
+   [
+    "Restricción CCAA fuego en evento",
+    "Investigar 30 días antes + plan B parrilla eléctrica/gas como backup."
+   ],
+   [
+    "Reacción alérgica invitado",
+    "Plan APPCC riguroso + tabla 14 alérgenos + comunicación previa al cliente. Seguro RC."
+   ],
+   [
+    "Avería vehículo el día del evento",
+    "Acuerdo con servicio asistencia profesional + furgo backup en alquiler emergencia."
+   ],
+   [
+    "Parrillero ayudante no se presenta",
+    "Pool de 5-8 ayudantes freelance probados + acuerdo de prioridad pago."
+   ],
+   [
+    "Cliente B2B impaga factura post-evento",
+    "Anticipo 30 % obligatorio + factura con 30 días vencimiento + abogado para casos extremos."
+   ],
+   [
+    "Subida brusca precio carne mayorista",
+    "Acuerdo precios fijos trimestrales con 1-2 carniceros mayoristas + cláusula revisión precio si subida >10 %."
+   ],
+   [
+    "Restricción sanitaria por brote alimentario",
+    "Trazabilidad obligatoria + factura origen carne archivada 3 años + plan APPCC al día."
+   ]
+  ]
+ ]
+}
