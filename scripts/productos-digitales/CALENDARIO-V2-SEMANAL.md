@@ -325,7 +325,7 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   `trig_01RQdZrmsAtKFEUCjWykZQyy` queda DESACTIVADO. Siguiente hueco EN: 24-nov 14:00Z (vuelve a estar libre).
 - **Correo de la 2.0 ES (John 11-oct): el MARTES 13-oct 08:00Z, fuera de la cola** (el lunes 12 es festivo); programarlo con
   `resend-broadcast.py --scheduled-at 2026-10-13T08:00:00Z` en cuanto la 2.0 esté LIVE. El 14-oct sale la Guía Pastelería.
-- 🔜 **SIGUIENTE TAREA tras el Catering EN (John, 11-oct: «habrá que solucionar el de español… para que quede conforme a los
+- ✅ (HECHO el 11-oct, ver entrada «Catering ES 2.2 LIVE») **SIGUIENTE TAREA tras el Catering EN (John, 11-oct: «habrá que solucionar el de español… para que quede conforme a los
   estándares de calidad»): Plan Catering Temático Eventos ES → 2.0.** Reutiliza el motor que sale del EN (molde FT ES con
   eventos/año × €/invitado × invitados/evento, personal fijo + cobertura por evento, calculadora coste → precio con IVA 10 %),
   caso España con cocina comisaria, sueldo del dueño y amortización, docx en las ranuras del FT, checklist 68 tareas desde las
@@ -334,6 +334,28 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   5.500/11.500 en ficha y docx frente a 8.520/21.410/54.440 en el xlsx). Versión 2.0 (cambia el modelo) + correo de
   actualización a la cola ES. Después, proponer a John el mismo motor para el resto de la línea B (paellero, parrillero,
   coctelería, chef privado), uno a uno.
+
+### ✅ 2026-10-11 (Claude Code en el Mac + VPS) — **Plan de Negocio Catering Temático Eventos ES 2.2 LIVE** (PR #123, merge `ea75b3b`)
+
+- Encargo de John: dejar el catering ES «conforme a los estándares de calidad». La 1.x (línea B) no era financiable (margen neto
+  50 %, break-even de 5,5 eventos/año sin cocina, sueldo ni amortización) y la landing prometía «60+ pp.», «break-even 14
+  eventos/mes», «10 ejemplos validados», «110 hitos» e inversiones que no cuadraban con el xlsx.
+- **2.2 sobre el motor ES de línea A** (molde del Food Truck ES v2.2, `planes-v2_0/contenido_plan_catering_tematico_eventos/`;
+  carpeta `scripts/productos-digitales/catering-es-2_0/`, con F1, research España con BOE, SPEC, F2-NOTAS y REVISION-FINAL):
+  Excel de 9 hojas (130 eventos × 65 invitados × 53 € = 447.850 € · neto 8,8 % · préstamo 111.000 € · equilibrio 55
+  invitados/evento ≈ 109 eventos/año · IVA 10 % · cocina central compartida · extras fijos discontinuos), checklist 82 tareas,
+  calculadora por invitado regenerada (autotest 168/168), Word reescrito en 10 secciones (7.565 palabras, A4), 34 arreglos de
+  texto en los otros 7 ficheros (sin «freelance» ni «validado», contrato con no desistimiento, sin carnet de manipulador, A4).
+  Revisión opus: 1 bloqueante (restos del FT) + 6 MAYOR + 15 MENOR, todo aplicado; gate nuevo `gate_restos_ft.py`.
+  `compilar_vocabulario` de `grupo_a` con opción opt-in; regresión de los 5 planes de línea A = 0 diferencias.
+- Landing, dashboard, changelog (2.2), tarjetas de los hubs ES/DE/FR/IT/NL/PT corregidas; capa comercial intacta salvo la
+  frase de Yuki («sushi para amigos y familia», decisión de John). LIVE: 11/11 ficheros = repo byte a byte, gate completo
+  63 / 823 / 0, carrusel 63/63, robots verde. ≈ 1,9 M tokens.
+- **Correo de la 2.2: PROGRAMADO martes 13-oct 08:00Z** (`2b60e0ca`, fuera de la cola por decisión de John; el 14-oct sale la
+  Guía Pastelería). El Catering EN sale ese mismo día a las 14:00Z.
+- **Deuda anotada:** (1) las tarjetas de hub de los otros planes de eventos (parrillero, paellero, chef privado) dicen «DOCX 60+
+  pp» y «17 CCAA»: verificar al pasarles el motor; (2) la panadería publicada dice «Transacciones/día previstos / necesarios»
+  (concordancia); (3) proponer a John el mismo motor para el resto de la línea B, uno a uno.
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
