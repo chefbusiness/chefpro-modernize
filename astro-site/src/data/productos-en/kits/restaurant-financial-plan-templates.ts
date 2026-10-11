@@ -215,13 +215,12 @@ const data: KitExcelData = {
     headingPre: 'Exclusive ',
     headingGold: 'Bonuses',
     subtitle:
-      'Besides the 8 core templates, you get these extra resources — worth $38',
+      'Besides the 8 core templates, you get these extra resources',
     items: [
       {
         icon: 'Shuffle',
         label: 'BONUS 1',
         title: 'What-If Scenario Simulator',
-        value: '$19',
         desc: 'Change the average check, covers per day and food cost and see the impact on profitability instantly. Compare 3 scenarios side by side: pessimistic, base and optimistic.',
         image: '/lovable-uploads/ai-gallery/fin-en-projections.jpg',
       },
@@ -229,7 +228,6 @@ const data: KitExcelData = {
         icon: 'ClipboardList',
         label: 'BONUS 2',
         title: 'Pre-Opening Financial Checklist (54 Tasks)',
-        value: '$19',
         desc: 'The 54 tasks to tick off before opening day, in 7 phases: business formation, financing, licenses and permits, suppliers, insurance, cash management and employer obligations. Each one with a status, an owner and a due date, so the big items don\'t slip through.',
         image: '/lovable-uploads/ai-gallery/fin-en-lender-meeting.jpg',
       },
@@ -266,8 +264,8 @@ const data: KitExcelData = {
       'Monthly P&L budget vs actual with a traffic light',
       'KPI dashboard with editable benchmarks',
       'Lender & investor summary (IRR, NPV, payback, DSCR)',
-      'BONUS: What-If Scenario Simulator ($19)',
-      'BONUS: Pre-Opening Financial Checklist ($19)',
+      'BONUS: What-If Scenario Simulator',
+      'BONUS: Pre-Opening Financial Checklist',
     ],
     ctaLabel: 'YES, I WANT THE FINANCIAL PLAN KIT — $49',
   },
@@ -291,13 +289,9 @@ const data: KitExcelData = {
   },
 
   pricing: {
-    priceOld: '$199',
     price: '$49',
-    discountBadge: '-75%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 75% off',
-    bonusTotalLabel: 'Total value of the complete kit: $237 — 8 templates ($199) + 2 bonuses ($38)',
-    bonusSaveLine: 'Save $150 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   // Etiqueta corta (el ES también abrevia: «KIT PLAN FINANCIERO»): el nombre completo no cabe en la barra móvil.

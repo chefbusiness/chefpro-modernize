@@ -180,13 +180,12 @@ const data: KitExcelData = {
     headingPre: 'Exclusive ',
     headingGold: 'Bonuses',
     subtitle:
-      'Besides the 7 core templates, you get these extra resources — worth $38',
+      'Besides the 7 core templates, you get these extra resources',
     items: [
       {
         icon: 'Megaphone',
         label: 'BONUS 1',
         title: 'Shift Handover Log (Manager Log Book)',
-        value: '$19',
         desc: 'The template that makes sure no shift starts blind. Incidents, VIP reservations, pending tasks, low stock, staff absences, a cash count (opening float, cash counted and cash sales from the POS Z report) and temperatures at handover, the exact moment food safety changes hands.',
         image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-equipo.jpg',
       },
@@ -194,7 +193,6 @@ const data: KitExcelData = {
         icon: 'Calculator',
         label: 'BONUS 2',
         title: 'Restaurant Staffing Calculator',
-        value: '$19',
         desc: 'Works out how many people you need from your covers per service, days open, covers per employee and demand peaks. Stop being overstaffed or understaffed.',
         image: '/lovable-uploads/ai-gallery/staff-en-office-schedule.jpg',
       },
@@ -283,8 +281,8 @@ const data: KitExcelData = {
       'PTO planning with minimum coverage',
       'Performance reviews: 10 competencies, scored 1-5',
       'Employee directory with expiry dates and certificates',
-      'BONUS: Shift Handover Log ($19)',
-      'BONUS: Restaurant Staffing Calculator ($19)',
+      'BONUS: Shift Handover Log',
+      'BONUS: Restaurant Staffing Calculator',
     ],
     ctaLabel: 'YES, I WANT THE SCHEDULING KIT — $19',
   },
@@ -308,13 +306,9 @@ const data: KitExcelData = {
   },
 
   pricing: {
-    priceOld: '$59',
     price: '$19',
-    discountBadge: '-67%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 67% off',
-    bonusTotalLabel: 'Total value of the complete kit: $97 — 7 templates ($59) + 2 bonuses ($38)',
-    bonusSaveLine: 'Save $40 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   // Etiqueta corta (el ES también abrevia: «KIT GESTIÓN PERSONAL»): el nombre completo no cabe en la barra móvil.

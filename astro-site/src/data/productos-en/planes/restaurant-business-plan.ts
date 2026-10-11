@@ -234,13 +234,12 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Besides the business plan, the financial model and the opening checklist, you get these extra resources — worth $29, plus a permits guide drawn from the plan itself',
+      'Besides the business plan, the financial model and the opening checklist, you get these extra resources, plus a permits guide drawn from the plan itself',
     items: [
       {
         icon: 'Map',
         label: 'BONUS 1',
         title: 'Restaurant Permits & Licenses Guide (US + UK Notes, Liquor License Included)',
-        value: 'Included in the plan',
         desc: 'Section 9 of the plan plus Phases 1, 2 and 6 of the checklist: what a full-service restaurant usually needs and in what order — zoning check before you sign, building permits, health department plan review and food establishment permit, hood, fire suppression and fire marshal inspections, certificate of occupancy, and the liquor license (state and local approval, quota states, liquor liability and responsible service) — with notes for the UK. No state forms included: requirements vary by state, county and city.',
         image: '/lovable-uploads/ai-gallery/rbp-en-storefront.jpg',
       },
@@ -248,7 +247,6 @@ const data: PlanNegocioData = {
         icon: 'BarChart3',
         label: 'BONUS 2',
         title: 'US Industry Benchmarks (Sourced)',
-        value: '$29',
         desc: 'The market section of the plan plus the reference table inside the workbook: US ranges for average check, rent, food cost, labor, prime cost, opening investment and the liquor license, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
         image: '/lovable-uploads/ai-gallery/rbp-en-owner-plan.jpg',
       },
@@ -284,19 +282,15 @@ const data: PlanNegocioData = {
       '3 financial scenarios (pessimistic, base, optimistic)',
       'Opening checklist: 64 tasks in 7 phases',
       'BONUS: Restaurant Permits & Licenses Guide (included in the plan)',
-      'BONUS: US Industry Benchmarks ($29)',
+      'BONUS: US Industry Benchmarks',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },
 
   pricing: {
-    priceOld: '$129',
     price: '$39',
-    discountBadge: '-70%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 70% off',
-    bonusTotalLabel: 'Total value: $158 — business plan kit ($129) + US Industry Benchmarks bonus ($29)',
-    bonusSaveLine: 'Save $90 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   stickyLabel: 'RESTAURANT BUSINESS PLAN — $39',

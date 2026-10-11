@@ -42,12 +42,9 @@ const data = {
   },
 
   pricing: {
-    priceOld: '$59',
     price: '$14',
-    discountBadge: '-76%',
-    heroNote: 'Special launch price. Going up soon',
-    buyBoxNote: 'Special launch price — 76% off',
-    bonusSaveLine: 'Save $45 TODAY!',
+    heroNote: 'One-time payment · lifetime access · updates included',
+    buyBoxNote: 'One-time payment · lifetime access · updates included',
   },
 
   mockup: {
@@ -109,8 +106,8 @@ const data = {
   },
 
   bonuses: [
-    { icon: 'BookOpen', label: 'BONUS 1', title: 'Restaurant Prompt Engineering Guide', value: '$29', desc: 'Learn to write your own perfect hospitality prompts from scratch with the AI Chef Pro method. An editable Word document you can customize.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
-    { icon: 'FileText', label: 'BONUS 2', title: 'Templates + Cheat Sheet', value: '$25', desc: 'A spreadsheet with ready-to-use templates and a quick summary of the best hospitality prompts.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
+    { icon: 'BookOpen', label: 'BONUS 1', title: 'Restaurant Prompt Engineering Guide', desc: 'Learn to write your own perfect hospitality prompts from scratch with the AI Chef Pro method. An editable Word document you can customize.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
+    { icon: 'FileText', label: 'BONUS 2', title: 'Templates + Cheat Sheet', desc: 'A spreadsheet with ready-to-use templates and a quick summary of the best hospitality prompts.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
   ],
 
   guarantee: {
@@ -135,8 +132,8 @@ const data = {
 
   ctaItems: [
     'Complete eBook with 300+ prompts for every corner of hospitality',
-    'BONUS 1: Restaurant Prompt Engineering Guide ($29)',
-    'BONUS 2: Downloadable Templates + Cheat Sheet ($25)',
+    'BONUS 1: Restaurant Prompt Engineering Guide',
+    'BONUS 2: Downloadable Templates + Cheat Sheet',
     'Pay once: lifetime access to the online dashboard',
     'Ongoing updates with new prompts at no extra cost',
     '30-day money-back guarantee',
