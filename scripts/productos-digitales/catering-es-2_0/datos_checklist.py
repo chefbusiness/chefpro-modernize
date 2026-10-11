@@ -70,8 +70,8 @@ FASES = [
          'transporte nacional (RD 237/2000)'),
         ('Seguro de responsabilidad civil de explotación y de producto con intoxicación alimentaria', 'Aseguradora',
          'Antes del primer evento',
-         'Mínimo 600.000 €: lo piden las fincas, los hoteles y las empresas grandes. Pide el certificado para '
-         'adjuntarlo a los presupuestos'),
+         'Recomendado: al menos 600.000 €; es lo que suelen pedir las fincas, los hoteles y las empresas grandes. '
+         'Pide el certificado para adjuntarlo a los presupuestos'),
         ('Seguro de la furgoneta para uso comercial', 'Aseguradora', 'Al comprarla',
          'Con la carga y el equipo transportado'),
         ('Seguro de equipos y, si lo quieres, de cancelación por fuerza mayor', 'Aseguradora', 'Semanas 6-8',
@@ -191,8 +191,9 @@ FASES = [
         ('Presupuesto firmado y anticipo del 40 % cobrado', 'Titular', 'Para bloquear la fecha',
          'Particulares: 40 % al firmar y el resto 7 días antes. Empresas: 40/30/30 según el contrato del kit'),
         ('Contrato firmado con la política de cancelación', 'Titular', 'Con el anticipo',
-         'Particulares: más de 21 días, se devuelve el anticipo; 21-7 días, se retiene el 50 %; menos de 7 días, '
-         'el 100 %. Empresas: tramos de 28, 14 y 7 días'),
+         'Particulares: más de 21 días, se devuelve el anticipo; 21-7 días, se retiene el 50 % del anticipo; menos '
+         'de 7 días, el anticipo entero (y con menos de 48 horas, además, el 50 % del total). Empresas: tramos de 28, '
+         '14 y 7 días'),
         ('Menús y alergias confirmados por escrito', 'Coordinador/a de eventos', 'D-14',
          'Número final de invitados con su mínimo facturable'),
         ('Plan B por mal tiempo si el evento es al aire libre', 'Coordinador/a de eventos', 'D-14',

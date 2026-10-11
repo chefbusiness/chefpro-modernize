@@ -32,6 +32,7 @@ REPO = os.path.abspath(os.path.join(AQUI, '..', '..', '..'))
 FT = os.path.join(REPO, 'astro-site', 'public', 'dl', 'plan-negocio-food-truck')
 PLAN_FT, CHECK_FT = 'plan-financiero-food-truck.xlsx', 'checklist-apertura-food-truck.xlsx'
 PLAN, CHECK = 'plan-financiero-catering-tematico-eventos.xlsx', 'checklist-apertura-catering-tematico-eventos.xlsx'
+PID = 'plan-catering-tematico-eventos'
 
 TITULOS_PLAN = {
     ('Inversión Inicial', 'A1'): 'PLAN DE NEGOCIO: CATERING TEMÁTICO DE EVENTOS',
@@ -112,11 +113,18 @@ def _supuestos(wb):
     return escritas
 
 
+def _docprops(wb):
+    """REVISION-FINAL B1: el motor no reescribe `description` ni `keywords` y heredaba los del FT."""
+    wb.properties.description = 'aichef.pro/' + PID
+    wb.properties.keywords = 'plan catering tematico eventos, AI Chef Pro'
+
+
 def plan(salida):
     destino = os.path.join(salida, PLAN)
     shutil.copy2(os.path.join(FT, PLAN_FT), destino)
     wb = openpyxl.load_workbook(destino)
     print('  supuestos escritos:', _supuestos(wb))
+    _docprops(wb)
     for (hoja, coord), texto in TITULOS_PLAN.items():
         wb[hoja][coord] = texto
     ws = wb['Inversión Inicial']
@@ -177,6 +185,11 @@ def checklist(salida):
         ws.cell(r, 3).value = '=COUNTIF(A5:A%d,"✓")' % (4 + len(tareas))
         ws.cell(r, 4).value = 'de'
         ws.cell(r, 5).value = '=COUNTIF(B5:B%d,"?*")-COUNTIF(A5:A%d,"N/A")' % (4 + len(tareas), 4 + len(tareas))
+    # B1: `motor.asegurar_instrucciones` no reescribe la hoja si ya existe: la del FT nombraba su producto
+    ins = wb['Instrucciones']
+    assert 'plan-negocio-food-truck' in str(ins['A3'].value), ins['A3'].value
+    ins['A3'] = 'Este fichero forma parte del producto «%s» de AI Chef Pro.' % PID
+    _docprops(wb)
     wb.save(destino)
     return destino
 

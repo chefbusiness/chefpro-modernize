@@ -153,3 +153,55 @@ cifras por token desde `cifras_caso_es.json`; sin DSCR, payback ni saldos). Lueg
   - D11: correo.
   - La revisión opus final de D12.
   - `gate-flujo-postpago --only plan-catering-tematico-eventos` en preview y en LIVE.
+
+## 7. Ronda de arreglos tras `REVISION-FINAL.md` (11-oct-2026): 1 bloqueante + 6 mayores + 15 menores
+
+**Bloqueante B1 (restos del FT).**
+- `semilla_cat.py` escribe `Instrucciones!A3` del checklist y los docProps `description`/`keywords` de los dos xlsx. El motor no los toca.
+- Después se vuelve a pasar `ciclo.sh`; nada se parchea en `dl/`.
+- Gate nuevo, `gate_restos_ft.py`: busca «food truck», «food-truck» y «plan-negocio-food-truck» en celdas, pestañas, docProps, docx, tablas y cabeceras/pies de los 11. Exige además A4, autor «AI Chef Pro», fecha ≥ 2026 y nada de «python-docx» en los 8 docx. **VERDE.**
+
+**Mayores.**
+- **M1 (contrato B2C p27):** el 60 % restante se paga siete días antes.
+- **M2:** p95/p116 dicen que crecen los invitados por evento (65 → 72,8 → 78,6) con los mismos 130 eventos.
+- **M3:** p97/p111 explican que la holgura del 23,7 % es la del año de carencia. Desde el año 2, equilibrio de caja de 403.673 €: lo cubre el crecimiento con una holgura del 24,3 %, y sin crecer harían falta 118 eventos. Tokens nuevos en `cifras_cat_es.py`: `INVITADOS_EVENTO_A2/A3`, `BE_INGRESOS_CAJA_A2`, `HOLGURA_CAJA_A2`, `BE_EVENTOS_CAJA_A2`.
+- **M4:** formación en lugar del carnet (manual p65, contrato p13).
+- **M5/M6:** landing (l. 80/131/145/250/262), dashboard (l. 19/26/68), changelog 2.2 y correo:
+  - fuera «escandallo» en los 12 conceptos;
+  - el equilibrio, «en invitados por evento y en ingresos; el Word lo traduce a eventos al año»;
+  - «más de 7.000 palabras» (el docx tiene 7.565).
+
+**Menores.**
+- **m1-m6** en el docx: cobros y cancelación precisos, pago a proveedores, millennials/generación Z, ETT, «dotación para 150», estilo y artículos ante %.
+- **m7-m9** en el Excel, por `VOCABULARIO` y notas: enero y agosto; sin pan ni bollería; furgoneta y puesta en marcha en Inversión A23/D22/D23; plantilla 3 + coordinadora + 4 extras en Personal J19; «refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos» también en la calculadora.
+- **m10-m13 en D9**, que ahora parte siempre de los ficheros 1.1 de `ee9c03b1` y es repetible (34 cambios):
+  - contrato: no desistimiento (párrafo nuevo tras p33, art. 103.l TRLGDCU), espacio, seguro de hogar fuera, derechos RGPD;
+  - manual: nómina mensual, alta de la empresa en el IAE;
+  - «6 estaciones + activación previa», guía p14 completa, catálogo «dos o tres»;
+  - **los 7 docx en A4 con docProps 2026**; proveedores a v2.2.
+- **Checklist:** RC «recomendado: al menos 600.000 €» y cancelación «del anticipo».
+- **m14:** sin tocar; aceptado.
+- **m15:** de los testimonios solo cambia Yuki («sushi para amigos y familia», decisión de John) en la landing (×2) y en `testimonials-…ts`. El de Sam Williams no se toca: es capa comercial y queda pendiente de John.
+
+**Cifras.** No cambia ninguna del caso: `cifras_caso_es.json` solo gana los 5 tokens nuevos.
+
+**Gates.**
+- Motor: TODO VERDE, 13/13, idempotencia 0, 82 ítems.
+- Calibración D15: VERDE.
+- Tandas: 0 errores.
+- Docx: 10 H1, A4, 7.565 palabras, 0 tokens sin resolver.
+- Calculadora: 168/168.
+- Censo: 0 defectos. No latinos: 0.
+- Prohibidos en los 11: 0.
+- Restos del FT: VERDE.
+- Regresión de los 5 planes: 0 diferencias.
+- sha256 Mac = VPS en 26 ficheros.
+
+**sha256 de los 4 rehechos:**
+
+| Fichero | sha256 |
+|---|---|
+| Plan financiero | `abd3c9bc…ae88` |
+| Checklist | `05495c3b…0b81` |
+| Calculadora | `bdab5bb1…7199` |
+| Docx | `521ae473…c0c8` |

@@ -11,7 +11,7 @@ export const planCateringTematicoEventosTestimonials = [
   {
     name: 'Yuki Tanaka',
     role: 'Sushi master para eventos premium, Madrid',
-    text: 'El kit me dio el blueprint para escalar de hacer sushi en mi casa a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.',
+    text: 'El kit me dio el blueprint para escalar de hacer sushi para amigos y familia a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.',
     avatar: avatar1,
   },
   {

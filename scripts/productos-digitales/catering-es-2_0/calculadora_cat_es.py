@@ -137,8 +137,8 @@ EJEMPLOS = OrderedDict([
 ])
 EJ_NOTAS = OrderedDict([
     ('Coffee break en oficina', 'Entrega sin servicio: una persona lleva y monta; la empresa paga la factura (sin '
-                                'anticipo). Si en la entrega va alcohol o refrescos con azúcar añadido, esa parte va '
-                                'al 21 % de IVA.'),
+                                'anticipo). Si en la entrega va alcohol o refrescos, zumos y '
+                                'gaseosas con azúcares o edulcorantes añadidos, esa parte va al 21 % de IVA.'),
     ('Cóctel de empresa', 'Cóctel de presentación con dos estaciones en directo; presupuesto «+ IVA» y tramos de '
                           'cancelación de empresa.'),
     ('Boda con estaciones', 'Banquete con tres estaciones temáticas y mobiliario alquilado repercutido; precio con IVA '
@@ -339,7 +339,7 @@ INSTRUCCIONES = [
      'una oferta a consumidores el precio va con los impuestos incluidos.', False),
     ('IVA, PROPINAS Y SERVICIOS APARTE', True),
     ('El catering con servicio va al 10 % de IVA, alcohol incluido (Ley 37/1992, art. 91.Uno.2.2.º). En una '
-     'entrega sin servicio, la comida sigue al 10 % pero el alcohol y los refrescos con azúcar añadido van al 21 %. '
+     'entrega sin servicio, la comida sigue al 10 % pero el alcohol y los refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos van al 21 %. '
      'El menaje, la mantelería y la cristalería que facturas junto con el catering siguen al servicio principal; si '
      'facturas aparte mobiliario, carpas o decoración, esa línea va al 21 %.', False),
     ('La propina voluntaria es decisión del cliente y es del equipo: no entra en el precio ni en el total.', False),

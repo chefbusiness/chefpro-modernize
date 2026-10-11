@@ -84,6 +84,10 @@ MAPA = {
     'BE_INGRESOS': ('Punto Equilibrio', r'^ingresos necesarios al a[ñn]o$', 2, 'eur'),
     'BE_INGRESOS_CAJA': ('Punto Equilibrio', r'^ingresos necesarios al a[ñn]o \(caja\)', 2, 'eur'),
     'HOLGURA_CAJA': ('Punto Equilibrio', r'^holgura sobre el equilibrio de caja', 2, 'pct'),
+    'HOLGURA_CAJA_A2': ('Punto Equilibrio', r'^holgura sobre el equilibrio de caja', 3, 'pct'),
+    'BE_INGRESOS_CAJA_A2': ('Punto Equilibrio', r'^ingresos necesarios al a[ñn]o \(caja\)', 3, 'eur'),
+    'INVITADOS_EVENTO_A2': ('PyG 3 Años', r'^invitados por evento \(media\)', 3, 'dec1'),
+    'INVITADOS_EVENTO_A3': ('PyG 3 Años', r'^invitados por evento \(media\)', 4, 'dec1'),
     'COBERTURA_HORAS': ('Personal', r'^cobertura \(contratadas', 2, 'pct0'),
     'PLANTILLA_PERSONAS': ('Personal', r'^total plantilla', 2, 'int'),
     'ESC_PES_VENTAS': ('Escenarios', r'^ingresos anuales', 2, 'eur'),
@@ -134,6 +138,8 @@ def leer(path):
         crudo['BE_EVENTOS_ANO'] = (crudo['BE_INGRESOS'][0] / ticket_evento, 'int_up')
         crudo['BE_EVENTOS_ANO_CAJA'] = (crudo['BE_INGRESOS_CAJA'][0] / ticket_evento, 'int_up')
         crudo['BE_EVENTOS_MES'] = (crudo['BE_INGRESOS'][0] / ticket_evento / 12, 'dec1')
+        if 'BE_INGRESOS_CAJA_A2' in crudo:   # REVISION-FINAL M3: equilibrio de caja del año 2 sin crecer
+            crudo['BE_EVENTOS_CAJA_A2'] = (crudo['BE_INGRESOS_CAJA_A2'][0] / ticket_evento, 'int_up')
     return crudo, falta
 
 

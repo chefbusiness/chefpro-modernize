@@ -68,6 +68,14 @@ VOCABULARIO = {
     'arranque y aforo': 'arranque y capacidad',
     'suministros mensuales de luz, agua y gas': 'suministros mensuales (gas de las estaciones y consumos propios)',
     'en cada franja': 'en cada evento',
+    # Ronda de arreglos (REVISION-FINAL m8/m9): restos de otros moldes en las frases del motor
+    'el alcohol que sale por delivery y el pan común, si los tienes, mueven': 'el alcohol que sale por drop-off mueve',
+    'los alimentos —bollería y pastelería incluidas—, que son': 'los alimentos, que son',
+    'refrescos o zumos con azúcares añadidos': 'refrescos, zumos y gaseosas con azúcares o edulcorantes añadidos',
+    'imprevistos de obra y acondicionamiento': 'imprevistos de la compra y preparación de la furgoneta',
+    'partidas de obra y acondicionamiento': 'partidas de la furgoneta',
+    'de obra y licencias': 'de puesta en marcha (pruebas de menú y degustaciones)',
+    'un banco no financia una reforma sin colchón': 'un banco no financia una compra así sin colchón',
 }
 
 SUPUESTOS = {
@@ -115,8 +123,9 @@ SUPUESTOS = {
     'pct_delivery': (
         None, None, 0.05, None,
         'Parte de las ventas que se entrega SIN servicio (drop-off: bandejas de coffee break o de almuerzo que se '
-        'dejan en la oficina). Es entrega de bienes: la comida va al 10 % y el alcohol y los refrescos con azúcar '
-        'añadido, al 21 %, y así lo aplica el libro a esta parte',
+        'dejan en la oficina). Es entrega de bienes: la comida va al 10 % y el alcohol y los refrescos, zumos y '
+        'gaseosas con azúcares o edulcorantes añadidos, al 21 % (art. 91.Uno.1.1.º de la Ley 37/1992); el libro lo '
+        'aplica al alcohol de esta parte',
         'SPEC D5 (canal del motor reutilizado como drop-off) · research §3 (coffee break ≈ 4 % de las ventas)'),
     'comision_delivery': (
         None, None, 0.10, None,
@@ -176,7 +185,7 @@ SUPUESTOS = {
         'research §3 [estimado]'),
     'meses_fondo': (
         None, None, 3, None,
-        'Tres meses de costes fijos: cubren un invierno flojo (enero y febrero son los meses más bajos del año) y '
+        'Tres meses de costes fijos: cubren los meses flojos (enero y agosto son los más bajos del año) y '
         'los 30-60 días que tardan en pagar las empresas',
         'molde (mínimo de la familia)'),
     'vida_obra': (
@@ -281,8 +290,8 @@ COBERTURA = {
     'personas_franja': 8,
     'nota_horas': 'Horas por evento y persona: carga, viaje, montaje, servicio, recogida y descarga. La producción en '
                   'la cocina central de los fijos va aparte',
-    'nota_personas': 'Personas trabajando a la vez en un evento medio de 65 invitados: los cuatro fijos y cuatro del '
-                     'equipo de evento. Una boda de 110 pide más: súbelo y la hoja te dice si llega la plantilla',
+    'nota_personas': 'Personas trabajando a la vez en un evento medio de 65 invitados: los tres fijos a jornada '
+                     'completa, la coordinadora y cuatro extras. Una boda de 110 pide más: súbelo y la hoja te dice si llega la plantilla',
 }
 
 ROTACION = {'activa': False}

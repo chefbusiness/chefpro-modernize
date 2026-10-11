@@ -16,14 +16,14 @@ const TEMPLATES = [
     icon: FileText,
     type: '.docx',
     title: 'Plan de Negocio (Word)',
-    desc: 'Plan de negocio en 10 secciones (unas 7.000 palabras, A4): resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción. Sus cifras son las del caso de ejemplo del Excel: si cambias el Excel, manda el Excel.',
+    desc: 'Plan de negocio en 10 secciones (más de 7.000 palabras, A4): resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción. Sus cifras son las del caso de ejemplo del Excel: si cambias el Excel, manda el Excel.',
   },
   {
     key: 'plan-financiero',
     icon: FileSpreadsheet,
     type: '.xlsx',
     title: 'Plan Financiero Excel',
-    desc: '9 hojas: supuestos, inversión inicial, PyG 3 años, punto de equilibrio (invitados por evento y eventos al año), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × invitados por evento × precio por invitado sin IVA; IVA del 10 %, cocina central compartida, sueldo del dueño, amortización y extras fijos discontinuos. Cambia las celdas verdes por tus datos.',
+    desc: '9 hojas: supuestos, inversión inicial, PyG 3 años, punto de equilibrio (en invitados por evento y en ingresos; el plan en Word lo traduce a eventos al año), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × invitados por evento × precio por invitado sin IVA; IVA del 10 %, cocina central compartida, sueldo del dueño, amortización y extras fijos discontinuos. Cambia las celdas verdes por tus datos.',
   },
   {
     key: 'calculadora-pricing',
@@ -65,7 +65,7 @@ const TEMPLATES = [
     icon: Utensils,
     type: '.docx',
     title: 'Carta 12 Menús Cocinas del Mundo',
-    desc: 'Boda multicultural premium 7 estaciones + tasting Asia 7 pasos + mexicano Día de Muertos + italiano trattoria + argentino tradicional + peruano Lima + indio Bollywood + griego/turco + vegano premium + BBQ texano + brunch internacional + mariscada gallega.',
+    desc: 'Boda multicultural premium 6 estaciones + activación previa + tasting Asia 7 pasos + mexicano Día de Muertos + italiano trattoria + argentino tradicional + peruano Lima + indio Bollywood + griego/turco + vegano premium + BBQ texano + brunch internacional + mariscada gallega.',
   },
   {
     key: 'modelos-contrato',

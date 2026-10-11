@@ -52,7 +52,7 @@ const data: PlanNegocioData = {
       {
         author: 'Yuki Tanaka',
         rating: '5',
-        body: 'El kit me dio el blueprint para escalar de hacer sushi en mi casa a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.',
+        body: 'El kit me dio el blueprint para escalar de hacer sushi para amigos y familia a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.',
       },
       {
         author: 'Miguel Hernández',
@@ -77,7 +77,7 @@ const data: PlanNegocioData = {
       },
       {
         q: '¿Cuántos conceptos temáticos cubre?',
-        a: '12 conceptos pre-empaquetados: sushi-bar omakase, tacos al pastor, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional. Cada uno con menú + escandallo + equipamiento + ambientación + operativa.',
+        a: '12 conceptos pre-empaquetados: sushi-bar omakase, tacos al pastor, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional. Cada uno con menú propuesto, equipamiento clave, ambientación, operativa y precio orientativo.',
       },
       {
         q: '¿Cómo cubre la normativa sanitaria del catering?',
@@ -124,11 +124,11 @@ const data: PlanNegocioData = {
     description:
       'El kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España. Modelo dual B2C bodas multiculturales + B2B corporate brand events, con 11 entregables y 96 proveedores especializados en 12 cocinas del mundo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…). Sin obra de cocina propia: el modelo trabaja desde una cocina central compartida y autorizada.',
     checkItems: [
-      'Plan de negocio en Word: 10 secciones (unas 7.000 palabras) con las mismas cifras que el Excel',
+      'Plan de negocio en Word: 10 secciones (más de 7.000 palabras) con las mismas cifras que el Excel',
       'Plan financiero Excel de 9 hojas: eventos × invitados × precio por invitado, PyG 3 años, tesorería y financiación',
       'Plantilla 96 proveedores reales (12 cocinas del mundo + equipamiento + servicios)',
       'Catálogo equipamiento multi-cocina: cuchillería japonesa, horno leña, tandoor, smoker, wok',
-      '12 conceptos temáticos pre-empaquetados con menú + escandallo + ambientación + pricing',
+      '12 conceptos temáticos pre-empaquetados con menú, ambientación, equipamiento y precio orientativo',
       'Carta 12 menús temáticos cocinas del mundo (sushi, mexicano, italiano, argentino, indio…)',
       'Manual técnico APPCC multi-concepto (7 PCC adaptados + cronograma multi-station)',
       'Modelos contrato B2C + B2B corporate (con MSA acuerdo marco anual y confidencialidad)',
@@ -141,15 +141,15 @@ const data: PlanNegocioData = {
     subtitle:
       '11 entregables profesionales, con la fiscalidad y los trámites de España, para montar tu catering temático multi-concepto premium con 12 cocinas del mundo en portafolio.',
     templates: [
-      { icon: 'FileText', title: 'Plan de Negocio en Word (10 Secciones)', desc: 'Resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción: unas 7.000 palabras en A4, con las cifras del Excel. Caso de ejemplo: 130 eventos al año de 65 invitados a 53 € por invitado sin IVA.' },
-      { icon: 'Coins', title: 'Plan Financiero Excel (9 Hojas)', desc: 'Supuestos, inversión inicial, PyG 3 años, punto de equilibrio (en invitados por evento y en eventos al año), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × invitados por evento × precio por invitado sin IVA, con IVA del 10 %, cocina central compartida, sueldo del dueño, amortización, extras fijos discontinuos y estacionalidad de bodas y Navidad de empresa.' },
+      { icon: 'FileText', title: 'Plan de Negocio en Word (10 Secciones)', desc: 'Resumen ejecutivo, concepto, mercado, competencia, marketing y captación, operaciones, equipo, plan financiero, aspectos legales y plan de acción: más de 7.000 palabras en A4, con las cifras del Excel. Caso de ejemplo: 130 eventos al año de 65 invitados a 53 € por invitado sin IVA.' },
+      { icon: 'Coins', title: 'Plan Financiero Excel (9 Hojas)', desc: 'Supuestos, inversión inicial, PyG 3 años, punto de equilibrio (en invitados por evento y en ingresos; el plan en Word lo traduce a eventos al año), escenarios, personal, tesorería 12 meses, financiación con cuadro del préstamo y DSCR, e instrucciones. Ventas = eventos al año × invitados por evento × precio por invitado sin IVA, con IVA del 10 %, cocina central compartida, sueldo del dueño, amortización, extras fijos discontinuos y estacionalidad de bodas y Navidad de empresa.' },
       { icon: 'Calculator', title: 'Calculadora de Precios por Invitado', desc: 'Del escandallo de comida y bebida, el personal del evento con su Seguridad Social, el número de estaciones temáticas en directo, los kilómetros de ida y vuelta y los alquileres, al precio por invitado sin IVA y con IVA (10 %). Particular o empresa, mínimo facturable, anticipo del 40 %, importes por tramo de cancelación y margen bruto calculado; la propina voluntaria queda fuera del total. 3 presupuestos de ejemplo calculados.' },
       { icon: 'Truck', title: 'Plantilla 96 Proveedores · 12 Cocinas', desc: 'Importadores asiáticos (EMB Food, Cominport, Garmiko) + latinos (Imp. Cuesta, CMA, Jasa, Maíz Maya) + italiano (Caputo, Italfoods) + indio (Spice Box, Patak\'s, TRS) + BBQ (ALEXS, Smokefire) + carniceros premium + pescaderías + vegano + equipamiento + plataformas.' },
       { icon: 'Wrench', title: 'Catálogo Equipamiento Multi-cocina', desc: 'Por concepto: cuchillería japonesa sushi (Tojiro, Yoshihiro) + horno leña pizza (Pizza Party, Ooni Pro) + parrilla argentina + trompo pastor + tandoor portátil + smoker offset texano + wok pro (Wokinox) + sous-vide (Anova, Sammic) + vajilla premium.' },
       { icon: 'ShieldCheck', title: 'Checklist de Apertura (82 Tareas)', desc: 'Seis fases: constitución y fiscalidad (IAE 677.9, Veri*factu, IVA al 10 %, RGPD y LSSI) · cocina central autorizada, registro sanitario autonómico, APPCC, seguros RC con intoxicación y permisos · equipamiento y proveedores · personal y formación · marca y captación B2C + B2B · primer evento y primeros 90 días.' },
       { icon: 'LayoutGrid', title: '12 Conceptos Temáticos Pre-empaquetados', desc: 'Sushi-bar omakase + tacos al pastor + trattoria italiana + asado argentino + ceviche peruano + marisquería gallega + tandoor indio + mediterráneo + vegano premium + brasileño rodízio + BBQ texano + brunch internacional. Cada uno con menú + ambientación + equipamiento + operativa.' },
       { icon: 'ScrollText', title: 'Modelos Contrato B2C + B2B Corporate', desc: 'Plantillas legales editables: B2C particular (boda multicultural, cumpleaños temático, aniversarios) + B2B corporate (brand event, embajada, festival gastronómico, planner) con MSA acuerdo marco anual, confidencialidad y propiedad intelectual del menú multi-concepto.' },
-      { icon: 'Utensils', title: 'Carta 12 Menús Cocinas del Mundo', desc: 'Boda multicultural premium 7 estaciones + tasting Asia 7 pasos + mexicano Día de Muertos + italiano trattoria + argentino tradicional + peruano Lima + indio Bollywood + griego/turco + vegano premium + BBQ texano + brunch internacional + mariscada gallega.' },
+      { icon: 'Utensils', title: 'Carta 12 Menús Cocinas del Mundo', desc: 'Boda multicultural premium 6 estaciones + activación previa + tasting Asia 7 pasos + mexicano Día de Muertos + italiano trattoria + argentino tradicional + peruano Lima + indio Bollywood + griego/turco + vegano premium + BBQ texano + brunch internacional + mariscada gallega.' },
       { icon: 'Flame', title: 'Manual Técnico APPCC Multi-concepto', desc: '7 PCC adaptados a multi-cocina simultánea (cadena frío diferenciada, T° servicio por concepto, alérgenos en multi-station) + cronograma evento 80 pax + layout multi-station + coordinación del equipo de eventos por concepto.' },
       { icon: 'BookOpen', title: 'Guía Especialización Progresiva', desc: 'Cómo construir tu portafolio de cocinas del mundo: empieza con 1-2 conceptos, añade 1-2/año validando demanda. Roadmap 12 meses para llegar a 6 conceptos. Top 5 mejores conceptos para empezar + 4 sub-explotados (oportunidad). Modelo escalable, paso a paso.' },
     ],
@@ -159,7 +159,7 @@ const data: PlanNegocioData = {
     subtitle:
       'Sushi masters, taqueros, pizzaiolos, asadores argentinos, chefs ceviche peruano, tandoor masters, plant-based premium y BBQ pitmasters que usaron el plan para montar o escalar su catering temático multi-concepto en España',
     items: [
-      { name: 'Yuki Tanaka', role: 'Sushi master para eventos premium, Madrid', text: 'El kit me dio el blueprint para escalar de hacer sushi en mi casa a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.', avatar: '/avatars/avatar-1.jpg' },
+      { name: 'Yuki Tanaka', role: 'Sushi master para eventos premium, Madrid', text: 'El kit me dio el blueprint para escalar de hacer sushi para amigos y familia a montar 4 estaciones (sushi + ramen + dim sum + bao) en bodas multiculturales premium. Subí ticket de 38 € a 75 €/pax en 8 meses.', avatar: '/avatars/avatar-1.jpg' },
       { name: 'Miguel Hernández', role: 'Taquero pro showcooking, Madrid', text: 'Empecé con tacos al pastor en cumpleaños familiares. Tras el plan añadí cochinita pibil + ceviche peruano + barra mezcal y ahora hago corporate brand events de 80-150 pax con 4 estaciones. La guía de especialización progresiva fue clave.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Giuseppe Romano', role: 'Pizzaiolo móvil + trattoria eventos, Toledo', text: 'Tenía un horno de leña móvil y hacía bodas con sólo pizza. El kit me enseñó a integrar pasta fresca + antipasti + dolci en mi servicio. Ahora ofrezco trattoria completa por 65 €/pax y subí volumen 3x.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Diego Ferreyra', role: 'Asador argentino premium, Madrid', text: 'El plan financiero con multi-concepto me convenció de añadir BBQ texano a mi asado argentino. Ahora cubro bodas y corporate outdoor con 2 conceptos potentes. Margen subió del 48 % al 58 %.', avatar: '/avatars/avatar-4.jpg' },
@@ -247,7 +247,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Cuántos conceptos temáticos cubre el plan?',
-      a: 'El plan documenta 12 conceptos pre-empaquetados (sushi-bar omakase, tacos al pastor + trompo móvil, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional). Cada uno con menú propuesto + escandallo + equipamiento clave + ambientación + operativa específica. La guía de especialización te orienta cómo elegir cuáles dominar primero según tu perfil y zona.',
+      a: 'El plan documenta 12 conceptos pre-empaquetados (sushi-bar omakase, tacos al pastor + trompo móvil, trattoria italiana, asado argentino, ceviche peruano, marisquería gallega, tandoor indio, mediterráneo griego/turco, plant-based premium, brasileño rodízio, BBQ texano slow-smoked, brunch internacional). Cada uno con menú propuesto + equipamiento clave + ambientación + operativa y precio orientativo. La guía de especialización te orienta cómo elegir cuáles dominar primero según tu perfil y zona.',
     },
     {
       q: '¿Qué incluye la plantilla de 96 proveedores?',
@@ -259,7 +259,7 @@ const data: PlanNegocioData = {
     },
     {
       q: '¿Sirve para presentar al banco si necesito financiación?',
-      a: 'Sí. El plan financiero Excel tiene 9 hojas: inversión inicial, PyG previsional a 3 años, punto de equilibrio en invitados por evento y en eventos al año, escenarios pesimista y optimista, personal, tesorería de 12 meses con el IVA trimestral y financiación con recursos propios, préstamo con carencia, cuadro de amortización y DSCR. El plan de negocio en Word cuenta las mismas cifras. Sirve para presentarlo al banco, aunque la aprobación siempre depende de la entidad.',
+      a: 'Sí. El plan financiero Excel tiene 9 hojas: inversión inicial, PyG previsional a 3 años, punto de equilibrio en invitados por evento y en ingresos (el plan en Word lo traduce a eventos al año), escenarios pesimista y optimista, personal, tesorería de 12 meses con el IVA trimestral y financiación con recursos propios, préstamo con carencia, cuadro de amortización y DSCR. El plan de negocio en Word cuenta las mismas cifras. Sirve para presentarlo al banco, aunque la aprobación siempre depende de la entidad.',
     },
     {
       q: '¿Cómo funciona la garantía?',
