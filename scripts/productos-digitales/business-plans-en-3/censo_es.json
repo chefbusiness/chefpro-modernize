@@ -1,11 +1,11 @@
 {
  "meta": {
-  "generado": "2026-10-11T10:58:49Z",
+  "generado": "2026-10-11T11:28:50Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
   "origen": [
    "astro-site/public/dl/plan-negocio-tapas-bar"
   ],
-  "commit": "bfdf4fc7",
+  "commit": "6fedd0e3",
   "nota": "Censo de los 4 xlsx v2.2 PUBLICADOS (plan financiero + checklist × FT/CAF). Los gates de la F2-EN comparan contra este fichero, nunca contra recuentos fijos. formulas_texto = fórmulas con literales de texto (las cubre mapas.FORMULAS_EN o mapas.CLAVES). tokens_docx = celdas de las cifras del docx."
  },
  "libros": {
@@ -12218,6 +12218,13 @@
     "celda": "B62",
     "fmt": "pct0",
     "valor_es": 0.85
+   },
+   "meses_alquiler_previo": {
+    "hoja_es": "0. Supuestos",
+    "hoja_en": "0. Assumptions",
+    "celda": "B54",
+    "fmt": "int",
+    "valor_es": 1
    }
   }
  },

@@ -33,7 +33,7 @@ FIJOS_NUEVOS = OrderedDict([
     ('Ajusta las cifras a tu proyecto. Rangos mercado español actual.',
      'US kit example (2026) — replace with your own quotes.'),
     # D58: cabecera de la tabla D19; D53: la fase 2 del checklist se llama como su pestaña («Location & Licenses»)
-    ('DATOS DE REFERENCIA DEL SECTOR', 'US INDUSTRY BENCHMARKS'),
+    ('DATOS DE REFERENCIA DEL SECTOR', 'US INDUSTRY BENCHMARKS (sourced) AND KIT ESTIMATES'),
     ('FASE 2: LOCAL Y LICENCIAS', 'PHASE 2: LOCATION & LICENSES'),
     # D54: partidas de la inversión, filas 7-24 (rótulos fijados)
     ('Constitución SL + notaría + registro', 'LLC formation + legal'),
@@ -88,19 +88,21 @@ POR_CELDA = OrderedDict([
     # BP2 §4.1: «Hojas de reclamaciones…» es GM con el EN del food truck («Commissary agreement…»): en el bar, los
     # avisos obligatorios (la nota E14, reutilizada del restaurante, ya habla de health department, laborales y alcohol)
     (('BARC', 'F2 - Local', 'B14'), 'Required public notices posted (health permit, liquor license, labor law posters)'),
+    # Revisión final m12 / m13: «2-4 semanas» (GM, 2 celdas) y «Control food cost semanal» (GM), «Jefe cocina» (3)
+    (('BARC', 'F3 - Equipamiento', 'D5'), '1-3 months'),
+    (('BARC', 'F6 - 90 Días', 'B6'), 'Weekly food and pour cost check'),
+    (('BARC', 'F6 - 90 Días', 'C6'), 'Owner + kitchen lead'),
     # D57: nota del tipo del alcohol en sala con el ejemplo de Texas (la de REST no lo tenía)
     (('BARP', '0. Supuestos', 'C63'), 'Same example rate as the rest of on-site sales (8%: state + local). Some states add '
                                       'a tax on drinks served on premises; e.g. Texas: 8.25% mixed beverage sales tax '
                                       '(paid by the customer) + 6.7% gross receipts tax (paid by the bar): put the first '
-                                      'here and add the second to your beverage cost %. The workbook applies this rate '
+                                      'here and add 6.7% × your alcohol share (about 6 points at 90%) to your beverage '
+                                      'cost %. The workbook applies this rate '
                                       'only to the ALCOHOLIC part of beverage sales'),
     # E4 + D38: la nota de Staffing con el FTE ya multiplicado por personas (override c0422 del restaurante) y las
     # propinas, que el libro no modela
     (('BARP', 'Personal', 'A29'), 'The gross pay, employer payroll taxes, monthly cost and annual cost columns are '
-                                  'TOTALS for the row: for a position with two people they include both. FTE is the '
-                                  'share of a full-time week for each person, and it is used to compare pay with the '
-                                  'legal minimum in proportion; the TOTAL row multiplies it by the people in each '
-                                  'position, so it gives the full-time equivalents of the whole team. The payroll tax '
+                                  'TOTALS for the row: for a position with two people they include both. The payroll tax '
                                   'rate and the number of pay periods are in the "0. Assumptions" tab. Tips are not '
                                   'modeled: bartenders, barbacks and servers are budgeted at a base wage of at least '
                                   '$15/h. Federal rules allow a $2.13/h cash wage with a tip credit of up to $5.12 where '
@@ -190,6 +192,19 @@ TOKENS_PROPIOS = OrderedDict([
                      'alcohol share of beverage sales')),
     ('prime_cost_pct', ('pct1', ('deriv', lambda c: c['cogs_pct'] + c['personal_pct']),
                         'prime cost year 1 (cost of goods + labor, % of sales)')),
+    # Revisión final (M1, M2, M4): cifras que el docx cita y que salen del mismo caso
+    ('meses_alquiler_previo', ('int', ('fila', _S, {'bar': 'Meses de alquiler ANTES de abrir (obra y licencias)'}, 'B'),
+                               'months of rent paid before opening (build-out and licenses)')),
+    ('costes_variables_pct', ('pct1', ('deriv', lambda c: 1 - c['margen_bruto_pct']),
+                              'all variable costs year 1 (cost of goods + card fees + disposables + contingency), % of '
+                              'sales')),
+    ('otros_variables_pct', ('pct1', ('deriv', lambda c: 1 - c['margen_bruto_pct'] - c['cogs_pct']),
+                             'card fees + disposables + contingency, % of sales')),
+    ('pesimista_perdida', ('usd', ('deriv', lambda c: -c['pesimista_resultado']),
+                           'pessimistic scenario: pre-tax LOSS as a positive amount')),
+    ('pesimista_perdida_operativa', ('usd', ('deriv', lambda c: -(c['pesimista_resultado'] + c['amortizacion_anual'] +
+                                                                  c['intereses_a1'])),
+                                     'pessimistic scenario: operating loss before depreciation and interest (positive)')),
 ])
 
 

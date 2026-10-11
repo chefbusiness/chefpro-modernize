@@ -113,7 +113,12 @@
   "comida_pct": "food share of sales [pct0]",
   "bebida_pct": "beverage share of sales [pct0]",
   "alcohol_pct": "alcohol share of beverage sales [pct0]",
-  "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales) [pct1]"
+  "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales) [pct1]",
+  "meses_alquiler_previo": "months of rent paid before opening (build-out and licenses) [int]",
+  "costes_variables_pct": "all variable costs year 1 (cost of goods + card fees + disposables + contingency), % of sales [pct1]",
+  "otros_variables_pct": "card fees + disposables + contingency, % of sales [pct1]",
+  "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount [usd]",
+  "pesimista_perdida_operativa": "pessimistic scenario: operating loss before depreciation and interest (positive) [usd]"
  },
  "movimiento_caf": null,
  "notas_del_plan": "Concepto (D51): NEIGHBORHOOD BAR WITH SMALL PLATES — bar de barrio con cócteles, cerveza de grifo y vino y una cocina corta de small plates para compartir; ~65 % de las ventas en bebida ({{bebida_pct}}), 60 plazas ({{aforo}}, 14 en barra) + patio, 7 días de tarde a noche. «Tapas» SOLO como «small plates (tapas-style)» la primera vez; nunca «tapas bar» ni «gastrobar». Volumen diario = «guests (covers)» la primera vez y después «covers»; nunca «customers» para el volumen. Las cifras del docx ES (115.000 €, 100.000-140.000 €, 270.000 €, 320.000 / 370.000, 34 clientes a 18 €, 1,8 servicios, 12.000 € de fondo de maniobra, retorno 18-30 meses) CONTRADICEN al Excel (I1-BAR): no se traducen ni se convierten; cada cifra del caso va con su token {{…}} y las de mercado solo si están en research/SPEC con fuente. Vermú, afterwork, turismo gastronómico y cultura del tapeo españoles → su equivalente US sin cifra (happy hour, neighborhood regulars) o fuera. El cierre (productos) lo escribe el ensamblador",

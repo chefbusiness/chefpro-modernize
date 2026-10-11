@@ -17,11 +17,11 @@
  "c0053": "Cash you and your partners put in. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%). Check the equity share of your plan against what your lender asks for",
  "c0055": "Principal you request from your lender, for example an SBA 7(a) loan through a bank. The \"Financing\" tab checks that sources and uses match the cash need calculated on \"Startup Costs\", and has a cell that calculates the exact amount that balances them",
  "c0061": "Years you pay interest only, before principal repayment begins. A year of interest only can ease the tightest cash period (build-out and the first weeks of trading); ask your lender whether it offers it",
- "c0079": "Build-out, installations, ventilation and decor of a bar with a commercial kitchen. Straight-line depreciation for the books; tax depreciation (MACRS, Section 179) can differ, so ask your CPA",
- "c0081": "Griddle, fryer, oven, refrigeration, draft beer system and bar furniture. Straight-line depreciation over the useful life you enter; tax depreciation (MACRS, Section 179) can differ, so confirm it with your CPA",
- "c0088": "TOTAL capacity of the space: dining room seats, bar stools and patio. Count it on your floor plan rather than copying the example: if your patio is large, capacity rises and the implied seat turns fall. Daily covers ÷ seats gives the implied seat turns in the row below",
+ "c0079": "Build-out, installations, ventilation and decor of a bar with a commercial kitchen, including the draft beer system. Straight-line depreciation for the books; tax depreciation (MACRS, Section 179) can differ, so ask your CPA",
+ "c0081": "Griddle, fryer, oven, refrigeration, the bar build and furniture. Straight-line depreciation over the useful life you enter; tax depreciation (MACRS, Section 179) can differ, so confirm it with your CPA",
+ "c0088": "TOTAL capacity of the space: dining room seats and bar stools; add patio seats only if they are open most of the year. Count it on your floor plan rather than copying the example: counting a year-round patio raises capacity and lowers the implied seat turns. Daily covers ÷ seats gives the implied seat turns in the row below",
  "c0107": "Share of beverage sales that is alcohol. The beverage line of this plan is cocktails, beer and wine, so a neighborhood bar sells mostly alcohol; the rest (soft drinks, water, coffee, non-alcoholic drinks) can be taxed differently. It works together with the sales tax rows for alcohol below",
- "c0148": "Beer & wine licenses start around $3,000; full liquor runs $12,000-$400,000. In quota states you buy an existing license at market price, which costs far more; this row is an example for a state WITHOUT a quota. A license bought from another owner is an intangible asset: ask your CPA. Apply right after signing the lease: it often takes 3-12 months",
+ "c0148": "Beer & wine licenses start around $3,000; full liquor runs $12,000-$400,000. In quota states you buy an existing license at market price, which costs far more; this row is an example for a state WITHOUT a quota. A license bought from another owner is an intangible asset: ask your CPA. Apply right after signing the lease: it often takes 3-12 months. Most states also charge an annual or biennial renewal fee: add it to your fixed costs",
  "c0150": "Architect and MEP drawings plus permit fees, required with a commercial kitchen",
  "c0153": "Flooring, paint, an accessible restroom (ADA) and the work to adapt a second-generation space",
  "c0155": "Electrical service sized for the kitchen and the back bar, plus heating and air conditioning",
@@ -133,7 +133,7 @@
  "c0499": "Pour cost, whole bar",
  "c0500": "18-24% (median just above 20%)",
  "c0501": "BevSpot (bevspot.com)",
- "c0502": "The beverage cost in this example (the \"Beverage cost\" row of \"0. Assumptions\") includes garnish and spillage",
+ "c0502": "The beverage cost in this example (the \"Cost of goods sold on BEVERAGE sales\" row of \"0. Assumptions\") includes garnish and spillage",
  "c0503": "Beer pour cost (median)",
  "c0504": "24%",
  "c0505": "BevSpot (bevspot.com)",
@@ -189,5 +189,5 @@
  "c0555": "Minimum wage floor",
  "c0556": "Federal $7.25/h + your state",
  "c0557": "U.S. Department of Labor (dol.gov)",
- "c0558": "Enter your state's floor on \"0. Assumptions\"; there is no union agreement table to copy"
+ "c0558": "Enter your state's floor on \"0. Assumptions\"; check your state and city rates at dol.gov"
 }

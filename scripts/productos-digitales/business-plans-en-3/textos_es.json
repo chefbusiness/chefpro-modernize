@@ -1,8 +1,8 @@
 {
  "meta": {
-  "generado": "2026-10-11T10:58:49Z",
+  "generado": "2026-10-11T11:28:50Z",
   "script": "scripts/productos-digitales/business-plans-en/extraer_textos.py",
-  "commit": "bfdf4fc7",
+  "commit": "6fedd0e3",
   "libros": {
    "BARP": {
     "es": "plan-financiero-tapas-bar.xlsx",
@@ -16,18 +16,18 @@
    }
   },
   "n_cadenas": 913,
-  "n_traducir": 663,
+  "n_traducir": 662,
   "n_localizar": 128,
-  "n_palabras_subagentes": 8910,
+  "n_palabras_subagentes": 8906,
   "n_apariciones": 1174,
   "grupos": [
    {
     "id": "GM",
     "descripcion": "REUTILIZADAS: idénticas a una cadena común de FT/CAF ya traducida (../business-plans-en/textos_en/GM.json); preparar_tandas escribe su EN con los ids de este conjunto. No van a los traductores",
-    "n_cadenas": 397,
-    "n_palabras": 4228,
+    "n_cadenas": 396,
+    "n_palabras": 4224,
     "n_plan": 342,
-    "n_check": 57,
+    "n_check": 56,
     "n_localizar": 0,
     "n_max_len": 19
    },
@@ -64,16 +64,16 @@
    {
     "id": "GX",
     "descripcion": "NO se traduce: pestañas (mapas.HOJAS_POR_LIBRO), CLAVES, FIJOS, POR_CELDA, versión, pie y docProps",
-    "n_cadenas": 122,
-    "n_palabras": 749,
+    "n_cadenas": 123,
+    "n_palabras": 753,
     "n_plan": 109,
-    "n_check": 22,
+    "n_check": 23,
     "n_localizar": 0,
     "n_max_len": 0,
     "por_tratamiento": {
      "mapa-clave": 2,
      "mapa-hoja": 15,
-     "regenerar": 105
+     "regenerar": 106
     }
    }
   ],
@@ -13941,6 +13941,10 @@
    "es": "2-4 semanas",
    "grupo": "GM",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "planes": [
     "bar"
    ],
@@ -13953,7 +13957,8 @@
      "h": "F3 - Equipamiento",
      "c": "D5",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "BARC",
@@ -14533,38 +14538,6 @@
     "donde": [
      "FTC F6 - 90 Días!D6",
      "CAFC F6 - 90 Días!D5"
-    ]
-   }
-  },
-  {
-   "id": "c0883",
-   "es": "Control food cost semanal",
-   "grupo": "GM",
-   "tratamiento": "traducir",
-   "planes": [
-    "bar"
-   ],
-   "n_apariciones": 1,
-   "palabras": 4,
-   "sha1": "39975f2fe628",
-   "donde": [
-    {
-     "f": "BARC",
-     "h": "F6 - 90 Días",
-     "c": "B6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ],
-   "reuso": {
-    "grupo": "GM",
-    "id": "c0840",
-    "en": "Weekly food cost check",
-    "tratamiento_origen": "traducir",
-    "conjunto": "business-plans-en",
-    "donde": [
-     "FTC F6 - 90 Días!B7",
-     "CAFC F6 - 90 Días!B6"
     ]
    }
   },
@@ -24960,6 +24933,10 @@
    "es": "Jefe cocina",
    "grupo": "GBAR-check",
    "tratamiento": "traducir",
+   "tratamientos": [
+    "traducir",
+    "regenerar"
+   ],
    "planes": [
     "bar"
    ],
@@ -24979,7 +24956,8 @@
      "h": "F6 - 90 Días",
      "c": "C6",
      "t": "celda",
-     "tr": "traducir"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "BARC",
@@ -28055,7 +28033,7 @@
    "es": "DATOS DE REFERENCIA DEL SECTOR",
    "grupo": "GX",
    "tratamiento": "regenerar",
-   "en_mapa": "US INDUSTRY BENCHMARKS",
+   "en_mapa": "US INDUSTRY BENCHMARKS (sourced) AND KIT ESTIMATES",
    "planes": [
     "bar"
    ],
@@ -29162,6 +29140,28 @@
      "t": "hoja",
      "tr": "mapa-hoja",
      "det": "nombre de pestaña"
+    }
+   ]
+  },
+  {
+   "id": "c0883",
+   "es": "Control food cost semanal",
+   "grupo": "GX",
+   "tratamiento": "regenerar",
+   "planes": [
+    "bar"
+   ],
+   "n_apariciones": 1,
+   "palabras": 4,
+   "sha1": "39975f2fe628",
+   "donde": [
+    {
+     "f": "BARC",
+     "h": "F6 - 90 Días",
+     "c": "B6",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },

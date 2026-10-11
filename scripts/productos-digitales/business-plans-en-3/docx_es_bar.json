@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-11T10:54:46+00:00",
+  "generado": "2026-10-11T11:28:51+00:00",
   "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
   "plan": "bar",
   "fichero_es": "astro-site/public/dl/plan-negocio-tapas-bar/plan-de-negocio-tapas-bar.docx",
@@ -206,7 +206,12 @@
    "comida_pct": "food share of sales",
    "bebida_pct": "beverage share of sales",
    "alcohol_pct": "alcohol share of beverage sales",
-   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)"
+   "prime_cost_pct": "prime cost year 1 (cost of goods + labor, % of sales)",
+   "meses_alquiler_previo": "months of rent paid before opening (build-out and licenses)",
+   "costes_variables_pct": "all variable costs year 1 (cost of goods + card fees + disposables + contingency), % of sales",
+   "otros_variables_pct": "card fees + disposables + contingency, % of sales",
+   "pesimista_perdida": "pessimistic scenario: pre-tax LOSS as a positive amount",
+   "pesimista_perdida_operativa": "pessimistic scenario: operating loss before depreciation and interest (positive)"
   },
   "regla": "Un run por párrafo: ensamblar_docx.py sustituye el texto del run y conserva su formato (rPr) y el del párrafo (pPr). Los traductores escriben SOLO los párrafos con traducir=true de su tanda."
  },
