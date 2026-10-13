@@ -558,7 +558,7 @@ def hoja_compra(wb):
                                                'than the total.', wrap=True)
     for k, rot, fx, unidad, nota in (
             ('b_wine', 'Wine (750 ml bottles)', '=ROUNDUP(%s*%s/%s,0)' % (R['d_wine'], up, R['wine_glasses']), 'bottles',
-             'Split red / white / rosé to taste.'),
+             'Split between red, white and sparkling to taste.'),
             ('u_beer', 'Beer (12 oz cans or bottles)', '=ROUNDUP(%s*%s*%s,0)' % (R['d_beer'], R['beer_per'], up), 'units',
              ''),
             ('b_toast', 'Sparkling wine for the toast (750 ml bottles)',
