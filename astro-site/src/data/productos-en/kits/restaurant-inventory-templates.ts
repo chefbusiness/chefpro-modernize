@@ -24,11 +24,11 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_RESTAURANT_INVENTORY_KIT',
 
   seo: {
-    title: 'Restaurant Inventory Kit Pro: 9 Restaurant Inventory Templates for Excel',
+    title: 'Restaurant Inventory Spreadsheet & Par Sheet Templates for Excel',
     description:
       '9 restaurant inventory templates for Excel: par sheet, vendor price comparison, purchase orders, receiving log in °F, food waste log, FIFO and food cost KPIs. One-time $19.',
     keywords:
-      'restaurant inventory templates, restaurant inventory template, restaurant inventory spreadsheet, restaurant inventory sheet, kitchen inventory template, food inventory template, bar inventory template, par sheet restaurant, receiving log template, food waste log template, fifo labels, restaurant order guide template, stock take template, AI Chef Pro',
+      'restaurant inventory templates, restaurant inventory template, restaurant inventory spreadsheet, restaurant inventory sheet, kitchen inventory template, food inventory template, bar inventory template, par sheet restaurant, receiving log template, food waste log template, fifo labels, restaurant order guide template, inventory count sheet, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-inventario.jpg',
   },
 
@@ -130,7 +130,7 @@ const data: KitExcelData = {
     titlePre: 'Restaurant Inventory ',
     titleGold: 'Kit Pro',
     titlePost: ': ',
-    titleSubtitle: '9 Restaurant Inventory Templates for Excel',
+    titleSubtitle: '9 Restaurant & Bar Inventory Sheets for Excel',
     description:
       '9 Excel templates with automatic formulas to manage inventory, vendors, purchase orders, receiving, food waste, FIFO and purchasing cost analysis. Stop losing money.',
     checkItems: [
@@ -151,7 +151,7 @@ const data: KitExcelData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Restaurant Inventory Templates',
+    headingRest: ' Restaurant & Bar Inventory Sheets',
     subtitle:
       'Every template comes with automatic formulas and is built for how restaurants really work. Adjust it to your business and start controlling.',
     // fourCols omitido → grid-cols-2 md:grid-cols-3 (9 tarjetas, como el ES)

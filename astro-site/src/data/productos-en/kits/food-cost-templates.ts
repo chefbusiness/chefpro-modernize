@@ -20,7 +20,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT',
 
   seo: {
-    title: 'Food Cost Kit Pro: 13 Food Cost Templates for Excel | AI Chef Pro',
+    title: 'Food Cost Calculator & Recipe Costing Templates for Excel | AI Chef Pro',
     description:
       '13 food cost templates for Excel: recipe cost cards, plate cost and pour cost calculators, menu pricing for 10 venue types, yield test and price tracker. One-time $19.',
     keywords:
@@ -130,7 +130,7 @@ const data: KitExcelData = {
     // D2: titlePre + titleGold = «Food Cost Kit Pro» EXACTO; la cifra va en titlePost.
     titlePre: '',
     titleGold: 'Food Cost Kit Pro',
-    titlePost: ': 13 Excel Templates to Control Your Food Cost',
+    titlePost: ': Food Cost Calculator & 13 Recipe Costing Templates for Excel',
     description:
       '13 food cost templates for Excel with automatic formulas, preloaded trim-loss rates and a menu pricing calculator. Work out the real cost of every dish and control the costs of your restaurant, bakery, bar, catering business or food truck from day one.',
     checkItems: [
@@ -152,7 +152,7 @@ const data: KitExcelData = {
 
   grid: {
     countGold: '13',
-    headingRest: ' Professional Food Cost Templates',
+    headingRest: ' Food Cost & Recipe Costing Templates',
     subtitle:
       'Every recipe cost card has the columns that matter — ingredient, category, purchase unit, price per unit, quantity, recipe unit, conversion factor, trim loss %, AP quantity and cost — with automatic formulas, preloaded trim-loss rates, a space for the dish photo and a print-ready US Letter layout.',
     fourCols: true,

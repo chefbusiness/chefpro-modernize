@@ -32,7 +32,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_HACCP_KIT',
 
   seo: {
-    title: 'HACCP Food Safety Kit Pro: HACCP Plan Template, Food Safety Logs & Checklists for Excel',
+    title: 'HACCP Plan Template, Temperature Logs & Food Safety Kit for Excel',
     description:
       '21 HACCP & food safety templates for Excel: HACCP plan, temperature and cooling logs, cleaning schedule, allergen matrix. FDA Food Code limits in °F. One-time $19.',
     keywords:
@@ -125,7 +125,7 @@ const data: KitExcelData = {
     titlePre: 'HACCP Food Safety ',
     titleGold: 'Kit Pro',
     titlePost: ': ',
-    titleSubtitle: 'HACCP Plan Template, Food Safety Logs & Checklists for Excel',
+    titleSubtitle: 'HACCP Plan Template, Temperature Logs & Food Safety Checklists for Excel',
     description:
       '19 professional food safety templates + 2 bonuses: temperatures, cooking, cooling, parasite destruction, cleaning, traceability, allergens, a HACCP plan and more. The records a health inspector expects to see, ready to use in your restaurant.',
     checkItems: [
