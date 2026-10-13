@@ -178,6 +178,7 @@ def main():
     ap.add_argument('--terms')
     ap.add_argument('--out')
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--debug', help='id de termino: imprime 5 contextos (60 car. a cada lado)')
     a = ap.parse_args()
     t0 = time.time()
     es, en, prodtext, prodfiles, stats = load_all()
@@ -201,6 +202,20 @@ def main():
         ru, rb = do_vocab(a.vocab, es, prodtext, prodfiles)
         print('TOP 60 unigramas: ' + ', '.join('%s(%d/%d)' % (r[0], r[1], r[2]) for r in ru[:60]))
         print('TOP 40 bigramas: ' + ', '.join('%s(%d/%d)' % (r[0], r[1], r[2]) for r in rb[:40]))
+    if a.debug:
+        terms = json.load(open(a.terms, encoding='utf-8'))
+        t = [x for x in terms if x['id'] == a.debug][0]
+        shown = 0
+        for slug, text in prodtext.items():
+            low = text.casefold()
+            for pat in t['patrones']:
+                for m in compile_pat(pat).finditer(low):
+                    if shown >= 5:
+                        break
+                    c = low[max(0, m.start() - 60):m.end() + 60].replace('\n', ' / ')
+                    print('[%s] ...%s...' % (slug, c))
+                    shown += 1
+        sys.exit(0)
     if a.terms:
         if not a.out:
             ap.error('--terms requiere --out')
