@@ -7,6 +7,11 @@ description: Gotchas, gates y decisiones del blog de aichef.pro (ES, EN y demás
 
 > Movido literalmente desde el `CLAUDE.md` raíz el 2026-10-12 (/doctor) para no cargarlo en cada sesión. Los no negociables siguen resumidos en la raíz, sección «Detalle bajo demanda».
 
+
+### 🔴 Jerga profesional ES → EN (John, 13-oct-2026)
+
+Todo trabajo en otro idioma (producto, landing, hub, blog) consulta y amplía `scripts/productos-digitales/GLOSARIO-JERGA-ES-EN.md`: la jerga del profesional del país manda en tres capas (producto, contenido, SEO de la landing), y la F1 de cada producto lleva su sección «Jerga profesional» con fuente. **Los nombres comerciales, de producto y de marca ya publicados no se cambian**: la keyword va como descriptor, y los calcos se proponen a John caso a caso.
+
 ### ⚠️ El punto 2 tiene matiz: el MODELO se elige por tipo de contenido (John, 2026-08-08)
 
 `bridge.py` sigue siendo la vía por defecto —es mucho más barato— pero **DeepSeek no vale para todo**, y la decisión de qué motor usar es de criterio, no automática. `bridge.py` acepta `--model` con cualquier slug de OpenRouter, así que cambiar de motor es un parámetro.

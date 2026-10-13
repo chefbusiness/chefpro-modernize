@@ -313,6 +313,8 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Préstamos con tilde que el inglés escribe así (Food Cost Kit Pro: plantilla «Café & Brunch
            # Menu Costing», «açaí bowls»). Palabras enteras: la «é»/«í» sueltas siguen vigiladas.
            'Café', 'Cafés', 'café', 'cafés', 'açaí',
+           # «entrée»: préstamo del inglés de carta (FAQ UK/CA/AU del 13-oct: en Australia y en la carta británica es el entrante).
+           'entrée', 'entrées', 'Entrée', 'Entrées',
            # Nombres propios de los testimonios traducidos del ES (Food Cost Kit Pro, 25-sep).
            'María José Pérez', 'Tomás Herrero', 'Tapería El Rincón', 'Lucía Fernández', 'Cóctel & Co',
            'Cafetería Central', 'Kit de Escandallos Pro',

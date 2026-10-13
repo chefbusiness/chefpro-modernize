@@ -86,8 +86,8 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Free templates give you headings to fill in. This kit gives you a plan already written for a food truck, an Excel model with more than 700 linked formulas (change one assumption and the P&L, the cash flow and the financing recalculate), payroll with employer taxes and a minimum wage alert, a calculated break-even and a 68-task startup checklist. The figures in the Word plan are the ones in the Excel model, so the two documents tell the same story.",
   },
   {
-    q: 'Does it work in the UK?',
-    a: "Yes, with notes. Tax rates are editable cells: enter 20% VAT on hot food (most cold takeaway food is zero-rated) and the VAT you can reclaim on purchases and equipment. The plan and the checklist add UK notes: register your food business with the council at least 28 days before you start trading (for a van, the council where it's kept), get a street trading licence or consent from each council where you sell, and expect a food hygiene rating inspection. UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
+    q: "Does it work in the UK, Canada or Australia?",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT on hot food (most cold takeaway food is zero-rated), Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on equipment, and your own minimum wage and employer costs. The UK notes cover council registration 28 days before trading and a street trading licence or consent from each council where you sell. In Canada and Australia, mobile vending permits also come from each city or council, and Australia asks for a certified Food Safety Supervisor. The CDL note is US-only: check licence classes locally.",
   },
   {
     q: 'What currency will I pay in?',

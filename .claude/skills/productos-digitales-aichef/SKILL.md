@@ -8,6 +8,11 @@ description: Reglas operativas de los productos digitales de aichef.pro — pol�
 > Movido literalmente desde el `CLAUDE.md` raíz el 2026-10-12 (/doctor) para no cargarlo en cada sesión. Los no negociables siguen resumidos en la raíz, sección «Detalle bajo demanda».
 > La regla 🔴🔴 PROPORCIONALIDAD del `CLAUDE.md` raíz manda sobre todo lo de esta skill. Complementa la skill agnóstica `digital-product-launch`.
 
+
+### 🔴 Jerga profesional ES → EN (John, 13-oct-2026)
+
+Todo trabajo en otro idioma (producto, landing, hub, blog) consulta y amplía `scripts/productos-digitales/GLOSARIO-JERGA-ES-EN.md`: la jerga del profesional del país manda en tres capas (producto, contenido, SEO de la landing), y la F1 de cada producto lleva su sección «Jerga profesional» con fuente. **Los nombres comerciales, de producto y de marca ya publicados no se cambian**: la keyword va como descriptor, y los calcos se proponen a John caso a caso.
+
 ### Pasarela cripto NOWPayments: en los 48 productos desde el 18-sep-2026 (PR #81)
 
 Segunda puerta «Pagar con cripto» (Stripe sigue siendo la principal). Doc canónico: `PAGOS_CRYPTO_NOWPAYMENTS.md`

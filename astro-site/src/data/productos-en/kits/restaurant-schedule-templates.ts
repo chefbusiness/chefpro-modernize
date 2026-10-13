@@ -5,7 +5,7 @@
 // haccp-templates.ts (ola 1).
 // SPEC: scripts/productos-digitales/staff-kit/SPEC.md (§6 = esta landing).
 //   · D2: nombre «Restaurant Staff Scheduling Kit Pro»; title SEO y H1 = «Restaurant Staff Scheduling
-//     Kit Pro: Restaurant Schedule Template & Staff Rota for Excel». H1 en Forma B como los hermanos EN
+//     Kit Pro: Restaurant Employee Schedule Template for Excel». H1 en Forma B como los hermanos EN
 //     (titlePost «: » + titleSubtitle en bloque): el texto del H1 es exactamente el de D2.
 //   · D5: títulos de las 9 plantillas = los de los xlsx EN (§2.1, dl/restaurant-schedule-templates/).
 //   · D3: $19, pago único. D4: priceOld 49 € → $59; cada bono 9 € → $19. Derivados: bonos $38 ·
@@ -37,11 +37,11 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT',
 
   seo: {
-    title: 'Restaurant Staff Scheduling Kit Pro: Restaurant Schedule Template & Staff Rota for Excel',
+    title: 'Restaurant Staff Scheduling Kit Pro: Employee Schedule Template for Excel + Overtime & Labor Cost',
     description:
       '9 Excel templates to schedule restaurant staff: weekly & monthly schedule with clopening and minor-hour alerts, FLSA overtime tracker, labor cost %, PTO. One-time $19.',
     keywords:
-      'restaurant schedule template, restaurant staff schedule template, restaurant employee schedule template, staff rota template, rota template, shift schedule template excel, server schedule template, restaurant overtime tracker, restaurant labor cost calculator, labor cost percentage restaurant, new hire onboarding checklist restaurant, pto planner template, employee directory template, AI Chef Pro',
+      'restaurant schedule template, restaurant staff schedule template, restaurant employee schedule template, employee schedule template, work schedule template, shift schedule template excel, server schedule template, restaurant overtime tracker, restaurant labor cost calculator, labor cost percentage restaurant, new hire onboarding checklist restaurant, pto planner template, employee directory template, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-staff-scheduling-kit.jpg',
   },
 
@@ -74,8 +74,8 @@ const data: KitExcelData = {
         a: 'Scheduling apps are a monthly subscription, usually per location. This kit is $19, a one-time payment with no subscription. There is no mobile app and no POS or time-clock integration.',
       },
       {
-        q: 'Does it work in the UK?',
-        a: 'Yes. The limits are editable cells: set 11 hours of rest between shifts, keep an eye on the 48-hour average week and enter 5.6 weeks of paid holiday.',
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes. The limits are editable cells: in the UK (your \"rota\") set 11 hours of rest between shifts, watch the 48-hour average week and enter 5.6 weeks of holiday; in Canada, type your province's weekly and daily overtime thresholds; in Australia (your \"roster\"), Award penalty rates aren't calculated, so check Fair Work.",
       },
       {
         q: 'What currency will I pay in?',
@@ -112,7 +112,7 @@ const data: KitExcelData = {
     titlePre: 'Restaurant Staff Scheduling ',
     titleGold: 'Kit Pro',
     titlePost: ': ',
-    titleSubtitle: 'Restaurant Schedule Template & Staff Rota for Excel',
+    titleSubtitle: 'Employee Schedule Template, Overtime Tracker & Labor Cost for Excel',
     description:
       '9 Excel templates with automatic formulas to manage shifts, overtime, labor cost, onboarding, PTO and performance reviews for your restaurant team. Schedule like a pro.',
     checkItems: [
@@ -138,7 +138,7 @@ const data: KitExcelData = {
       'Every template comes with automatic formulas and is built for how restaurants really work. Adjust it to your business and start scheduling.',
     // fourCols omitido → md:grid-cols-3 (9 tarjetas, como el ES)
     templates: [
-      { icon: 'CalendarDays', title: 'Restaurant Schedule Template: Weekly & Monthly Staff Rota', desc: 'Weekly and monthly schedule with the alerts that matter: less than 10 hours between shifts (the "clopening" rule of Fair Workweek laws), shifts over 10 hours, weeks over 40 hours, days off, and minors\' shifts (under 16: no work after 7 PM, 9 PM from June 1 to Labor Day, 29 CFR 570.35; 16-17: state law). You set shift codes and times once.' },
+      { icon: 'CalendarDays', title: 'Employee Schedule Template: Weekly & Monthly Shift Schedule', desc: 'Weekly and monthly schedule with the alerts that matter: less than 10 hours between shifts (the "clopening" rule of Fair Workweek laws), shifts over 10 hours, weeks over 40 hours, days off, and minors\' shifts (under 16: no work after 7 PM, 9 PM from June 1 to Labor Day, 29 CFR 570.35; 16-17: state law). You set shift codes and times once.' },
       { icon: 'Clock', title: 'Overtime Tracker & Time Log (FLSA 40-Hour Week)', desc: 'Time log per employee with overtime by workweek: hours over 40 at 1.5× (both editable), plus an optional daily threshold for states such as California. Unapproved overtime still counts, because it still has to be paid, and an annual overtime budget per person shows who is close to it.' },
       { icon: 'Banknote', title: 'Restaurant Labor Cost Calculator (Payroll & Labor %)', desc: 'Labor cost-to-sales ratio with a traffic light by type of restaurant (fast casual, casual dining, fine dining, catering...). Payroll by pay period (weekly, biweekly, semimonthly or monthly), employer taxes as an editable estimate, and a staffing forecast per service.' },
       { icon: 'UserPlus', title: 'New Hire Onboarding Checklist', desc: '50 tasks in five blocks: hiring paperwork, required training, equipment and access, on-the-job training, and the introductory period. Each one with its deadline in days from the hire date, such as Form I-9 Section 1 by the first day of work.' },
@@ -251,8 +251,8 @@ const data: KitExcelData = {
       a: "Yes. One purchase covers one business with all of its locations, which makes it a good fit for restaurant groups and multi-unit operators. If you are a consultant, you can use the templates with your clients, but you can't hand them copies: each business buys its own.",
     },
     {
-      q: 'Does it work in the UK?',
-      a: 'Yes. The limits live in editable cells, so you set the UK figures once: call it your rota, set the minimum rest between shifts to 11 hours, keep an eye on the 48-hour average week and enter 39 calendar days (5.6 weeks of paid holiday) in the PTO planner. The UK has no legal overtime premium, so set the multiplier to what your contracts say, and put your own employer cost in its cell (employer National Insurance is 15% above £5,000 a year, plus a 3% pension contribution).',
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes. The limits are editable cells. UK: call it your \"rota\", set rest between shifts to 11 hours, watch the 48-hour average week, enter 39 days (5.6 weeks) of paid holiday and set the overtime multiplier to what your contracts say. Canada: overtime thresholds come from your province's employment standards, weekly or daily, and both have a cell. Australia: it's your \"roster\", and the weekend and public holiday penalty rates of your Award aren't calculated, so check Fair Work. Put National Insurance, CPP and EI, or super in the employer cost cell, and track Smart Serve, Serving It Right or RSA expiry dates in the alcohol server column.",
     },
     {
       q: 'What currency will I pay in?',
@@ -296,10 +296,10 @@ const data: KitExcelData = {
     items: [
       { name: 'David Ruiz', role: 'General Manager, casual restaurant (45 covers)', text: 'The shift schedule has changed my life. I used to do it by hand and there were always mistakes with rest periods. Now the alerts for the 12 hours of rest between shifts and for the hours each person is contracted for warn me automatically.', avatar: '/avatars/avatar-1.jpg' },
       { name: 'Carmen Delgado', role: 'HR Director, hospitality group (6 restaurants)', text: 'The onboarding template is amazing. 50 organized tasks: paperwork, HACCP, workplace safety, training, access. Onboarding time dropped from 2 weeks to 4 days in every unit.', avatar: '/avatars/avatar-2.jpg' },
-      { name: 'Francisco Torres', role: 'Owner, 2 restaurants in Madrid', text: "I close the month and in five minutes I know my labor cost: the employer's social security contribution and the overtime premium in my collective agreement are cells I edit myself, and the traffic light uses the threshold for MY type of business, not a generic 30%.", avatar: '/avatars/avatar-3.jpg' },
-      { name: 'Lucía Navarro', role: 'Head Chef, Mediterranean restaurant', text: "The overtime tracker is exactly what I needed. It calculates the cost automatically under our collective agreement and warns me when a cook is close to Spain's legal limit. We've avoided 3 fines.", avatar: '/avatars/avatar-4.jpg' },
+      { name: 'Francisco Torres', role: 'Owner, 2 restaurants in Madrid', text: "I close the month and in five minutes I know my labor cost: the employer's payroll contributions and the overtime premium are cells I edit myself, and the traffic light uses the threshold for MY type of business, not a generic 30%.", avatar: '/avatars/avatar-3.jpg' },
+      { name: 'Lucía Navarro', role: 'Head Chef, Mediterranean restaurant', text: "The overtime tracker is exactly what I needed. It calculates the cost automatically under the overtime rules and warns me when a cook is getting close to the hour limits we set. We've avoided 3 fines.", avatar: '/avatars/avatar-4.jpg' },
       { name: 'Alberto Méndez', role: 'Director of Operations, restaurant chain', text: 'Vacation planning with minimum coverage by position is great. No more Augusts with 3 cooks when we need 6. We plan from January with the full picture.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Marta Jiménez', role: 'Labor consultant specializing in hospitality', text: "I recommend it to all my clients. The templates follow current Spanish labor rules: rest periods, maximum working hours, vacation. It's the best way to prevent fines from Spain's Labor Inspectorate.", avatar: '/avatars/avatar-6.jpg' },
+      { name: 'Marta Jiménez', role: 'Labor consultant specializing in hospitality', text: "I recommend it to all my clients. The templates follow the current overtime rules: rest periods, maximum working hours, vacation. It's the best way to prevent labor fines.", avatar: '/avatars/avatar-6.jpg' },
       { name: 'Roberto Sánchez', role: 'Executive Chef, 5-star hotel (120 employees)', text: 'The performance review with 10 competencies scored 1-5 has made our quarterly reviews professional. The history shows how each team member is really progressing.', avatar: '/avatars/avatar-7.jpg' },
       { name: 'Enrique Vidal', role: 'General Manager, fine-dining restaurant (2 stars)', text: "The staffing calculator was an eye-opener. With the covers of our PEAK day, it told us that service needs 2 extra people, and that we didn't need to add permanent staff. The covers-per-employee ratio explains everything.", avatar: '/avatars/avatar-8.jpg' },
     ],

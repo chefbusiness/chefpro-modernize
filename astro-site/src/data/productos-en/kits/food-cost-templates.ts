@@ -20,7 +20,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT',
 
   seo: {
-    title: 'Food Cost Kit Pro: 13 Food Cost Templates for Excel | AI Chef Pro',
+    title: 'Food Cost Kit Pro: Food Cost Calculator & Recipe Costing Templates for Excel | AI Chef Pro',
     description:
       '13 food cost templates for Excel: recipe cost cards, plate cost and pour cost calculators, menu pricing for 10 venue types, yield test and price tracker. One-time $19.',
     keywords:
@@ -81,6 +81,10 @@ const data: KitExcelData = {
         a: 'It is a set of Excel templates, not software: no app, no POS or supplier integration, no automatic price updates and no labor costing. Menu engineering appears only as a basic step in the 30-day guide.',
       },
       {
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes. Each cost card has a Tax rate cell: 20% for UK VAT or 10% for Australian GST, with prices shown including tax; in Canada you price before GST/HST, as in the US. The units include kg, g, L and ml next to lb, oz and US fl oz, plus imperial pints.",
+      },
+      {
         q: 'What currency will I pay in?',
         a: 'The price is $19 USD. At checkout, Stripe can show the amount in your local currency. The templates have no currency symbol: you type prices in your own currency.',
       },
@@ -130,7 +134,7 @@ const data: KitExcelData = {
     // D2: titlePre + titleGold = «Food Cost Kit Pro» EXACTO; la cifra va en titlePost.
     titlePre: '',
     titleGold: 'Food Cost Kit Pro',
-    titlePost: ': 13 Excel Templates to Control Your Food Cost',
+    titlePost: ': Food Cost Calculator & 13 Recipe Costing Templates for Excel',
     description:
       '13 food cost templates for Excel with automatic formulas, preloaded trim-loss rates and a menu pricing calculator. Work out the real cost of every dish and control the costs of your restaurant, bakery, bar, catering business or food truck from day one.',
     checkItems: [
@@ -152,7 +156,7 @@ const data: KitExcelData = {
 
   grid: {
     countGold: '13',
-    headingRest: ' Professional Food Cost Templates',
+    headingRest: ' Food Cost & Recipe Costing Templates',
     subtitle:
       'Every recipe cost card has the columns that matter — ingredient, category, purchase unit, price per unit, quantity, recipe unit, conversion factor, trim loss %, AP quantity and cost — with automatic formulas, preloaded trim-loss rates, a space for the dish photo and a print-ready US Letter layout.',
     fourCols: true,
@@ -285,6 +289,10 @@ const data: KitExcelData = {
     {
       q: 'What is not included?',
       a: 'It is a set of Excel templates, not software: there is no app, no POS or supplier integration, no automatic price updates, no barcode inventory and no labor costing. The templates are separate files, so a new price is copied into each cost card by hand. Menu engineering appears only as a basic step in the 30-day guide.',
+    },
+    {
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes. Each cost card has a Tax rate cell, 0% by default: enter 20% for UK VAT or 10% for Australian GST and print the price including tax; in Canada you price before GST/HST or PST, as in the US. The unit drop-down has kg, g, L, ml and cl, but pt, qt, gal, cup and fl oz are US measures, so pick \"imp pt\" or work in ml, and type your 700 ml bottle or 330 ml can on the Conversions tab. Every card shows \"GP\", the figure UK kitchens use. And in Australia, as on many British menus, an \"entrée\" is the starter, not the main.",
     },
     {
       q: 'What currency will I pay in?',

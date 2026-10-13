@@ -90,8 +90,8 @@ const FAQS: PlanNegocioFaq[] = [
     a: 'Yes. The green cells are the ones you type — rent, transactions per day, average check, the tax-exempt share, wages and any startup cost line — and more than 700 linked formulas recalculate the rest. To change a calculated cell, use Review → Unprotect Sheet (there is no password). The workbook includes an Instructions tab.',
   },
   {
-    q: 'Does it work in the UK?',
-    a: "Yes, with notes. Tax rates are editable cells: most bread and cold bakery goods sold to take away are zero-rated, while hot food and anything eaten in pays 20% VAT, so set the exempt share and the rate to match your sales, plus the VAT you can reclaim on purchases and on your build-out. The plan and the checklist add UK notes: register your food business with the council at least 28 days before you open, expect a food hygiene rating inspection in your first months, and label the 14 allergens. UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
+    q: "Does it work in the UK, Canada or Australia?",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells, and each sales line has a tax-exempt share: in the UK most cold bakery goods to take away are zero-rated, while hot food and eating in pay 20% VAT. In Canada, enter GST/HST plus any PST; in Australia, 10% GST. Some basic foods are tax-free there too, so set the exempt share with your accountant. Add your own minimum wage and employer costs. The UK notes cover council registration 28 days before opening, the hygiene rating and the 14 allergens; in Australia, also plan for a certified Food Safety Supervisor. Floor area is in sq ft.",
   },
   {
     q: 'What currency will I pay in?',
