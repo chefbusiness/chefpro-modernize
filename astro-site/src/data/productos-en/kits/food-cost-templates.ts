@@ -107,7 +107,7 @@ const data: KitExcelData = {
   images: {
     // hero bg (6) — las MISMAS del ES
     gallery: [
-      '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+      '/lovable-uploads/ai-gallery/tataki-presa-iberica-chimichurri.jpeg',
       '/lovable-uploads/ai-gallery/tartaleta-de-yuzu-y-merengue.jpeg',
       '/lovable-uploads/ai-gallery/cocktail-green-margarita.jpeg',
       '/lovable-uploads/ai-gallery/croqueta-jamon.jpeg',
