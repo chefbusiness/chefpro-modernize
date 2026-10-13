@@ -178,3 +178,48 @@ VPS: `/dev/null` es un fichero normal (redirigir a `/tmp/*.txt`); copiar del Mac
 6. Cifras de mercado solo de research «leída» (check_textos lo comprueba); D19: 2 de 14 filas son «Kit estimate» (ratio
    de bartenders y hielo / mixers por invitado).
 7. Si se rehace la extracción, los ids de `textos_es.json` pueden moverse y las salidas de los redactores dejan de casar.
+
+## 8. Cierre de la F2 (13-oct, sesión Claude Code): xlsx + docx EN, gates
+
+Tandas del paso 2 en `79d396cc` / `1b988c44` / `af6bc855` (`check_textos --todas`: las 6 OK; `GRC-plan.revision.json`
+con 3 correcciones). Paso 3 en el VPS sobre `af6bc855` + el alta de G9:
+- `aplicar_en --idempotencia`: préstamo **$49,000** en 1 vuelta, textos 536 + 318, faltan 0, **0 diferencias** entre dos
+  construcciones, inject_cache 722 / 12 fórmulas y **0 fallos de pycel**, D15 sin fallos.
+- `ensamblar_docx --plan mbar`: G8 VERDE.
+- `mobile-bar-business-plan` dado de alta en `PRODUCTOS_LETTER` (`censo-entregables.py`) y en `EXCLUIDOS`
+  (`postprocess-transversal.py`).
+- Ningún gate saltó por texto: no hubo que tocar los JSON de salida.
+
+**Caso final** (`cifras_caso.json`, 117 tokens, **ninguna cifra distinta del dry-run** del paso 1; sha256 `408554bd…`):
+- 160 eventos × 95 invitados × $14.00 sin sales tax ni alcohol ($15.12 con el impuesto) → ventas **$212,800** /
+  $234,080 / $252,806 ($1,330 por evento, 15,200 invitados).
+- CAPEX $47,530 + fondo de maniobra $29,442 = **$76,972** · fondos propios $28,000 (36 %) + préstamo **$49,000** al 10 % a
+  7 años (cuota $10,065; dentro del tope de $50,000 del SBA Microloan).
+- Margen bruto 69.8 % · mercancía 19.1 % · personal 36.8 % · storage y parking 3.4 % · EBITDA $35,772 (16.8 %) · neto
+  **$18,790 (8.8 %)** / $28,076 / $36,062.
+- Equilibrio **134 eventos/año** contable y 133 de caja, holgura **21 %** · **DSCR 2.93×** · saldo mínimo $26,754 (mes
+  1) · payback 2.2 años (1.5 sobre el CAPEX) · 9 personas = 1.85 FTE, cobertura 131 % · seguros $4,000.
+- Pesimista $130,032, −$32,760 y caja −$2,664 (el docx §8 [99] lo dice: «the cash runs out», con la mediana de 3 eventos
+  del primer año) · optimista $323,400 y +$102,308. Los 5 umbrales del P&L en verde los 3 años.
+
+| Comprobación (VPS) | Resultado |
+|---|---|
+| `bp5.py gates_en` (G1-G9 sobre `dl/mobile-bar-business-plan/`) | **TODO VERDE** (G2 incluye `RX_BAR_NO` y cifras prohibidas; G9 = censo-entregables + no latinos) |
+| `bp5.py gates_en --autotest` · `ensamblar_docx --autotest` · `calculadora --autotest` | **20/20** · **8/8** · VERDE (778 comprobaciones) |
+| `barrido_mbar.py` (celdas, literales de fórmula, DV, docProps, párrafos y tablas) | 2,687 piezas · **0** `RX_BAR_NO` / cifras prohibidas · 0 español · 0 no latinos (`entregables_mbar.json`) |
+| `censo-entregables --fail --letter --only mobile-bar-business-plan` · `gate-no-latinos --only` | 4 ficheros, 1,495 fórmulas, **0 defectos** · 0 caracteres |
+| Regresión §2 (FT/CAF, REST/PAN, BAR, CAT) | TODO VERDE · 20/20 · 18/18 · 16/16 · 8/8 · `check_textos` OK (7 / 8 / 6 / 6) · calculadora del catering VERDE |
+
+| Entregable (`astro-site/public/dl/mobile-bar-business-plan/`) | Contenido | sha256 (Mac = VPS) |
+|---|---|---|
+| `mobile-bar-business-plan.docx` | 131 párrafos (110 con texto), 10 Heading 1, 6,796 palabras, Letter | `aa318346770837e683de829b0b2c7b9248f989fbaae723ac4289c3d1fd6a9350` |
+| `mobile-bar-financial-projections.xlsx` | 9 hojas, 722 fórmulas, caso US calibrado | `0b84389a7bbffea785d103195b00963801426b0904b76d43df3bf1c942907519` |
+| `mobile-bar-pricing-calculator.xlsx` | 5 hojas, 761 fórmulas (sin cambios desde el paso 1) | `507aad22e606e92cb9a4542151e08b475e00734de1baac2f985bd4de96650ac0` |
+| `mobile-bar-startup-checklist.xlsx` | 7 hojas, 68 tareas (11/13/12/10/12/10), 12 fórmulas | `7974a493e87a95fbc1bac82e796d595b36aea40d29b8352bf55a91861022d64a` |
+
+**Para la revisión opus final (D94)**: (1) las 3 capas de jerga contra el glosario §9 y la regla de medidas US;
+(2) leer el checklist entero (275 celdas sobre ranuras del catering y del FT) y la tabla D18 revisada; (3) recalcular a
+mano ventas (160 × 95 × 14 = 212,800), equilibrio 134 y DSCR 2.93; (4) abrir MO 24-01, MT Mobile Bars y CDTFA;
+(5) que el docx no prometa nada que el Excel no haga (la shopping list y las specs están en la calculadora, no en el
+libro); (6) desviaciones §4 (calibración de `B30`, «60 guests», lista blanca de `RX_BAR_NO`, bar fee y mínimo de la
+calculadora).
