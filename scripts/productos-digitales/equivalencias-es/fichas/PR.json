@@ -58,20 +58,15 @@
       "verificado": false
     },
     "licencias_apertura": {
-      "texto": "Desde junio de 2019 cada negocio nuevo o existente debe obtener el Permiso Único, que se solicita en línea a través del Portal Único de Negocios de la OGPe y consolida el permiso de uso, la exclusión categórica, la certificación de prevención de incendios (Bomberos) y la licencia sanitaria. A ello se suman el registro de comerciante en Hacienda (SURI) y, según el caso, la patente municipal; confirma el resto con tu municipio.",
+      "texto": "Desde junio de 2019, todo negocio nuevo o existente en Puerto Rico debe obtener el Permiso Único, con excepciones como las grandes operaciones industriales o institucionales y ciertos negocios en espacios residenciales. Se solicita en línea en el Portal Único de Negocios de la Oficina de Gerencia de Permisos (OGPe) y consolida el permiso de uso, la exclusión categórica, el certificado de prevención de incendios y la licencia sanitaria. Confirma con tu municipio y con Hacienda si necesitas otros registros.",
       "fuentes": [
         {
-          "titulo": "DLA Piper – Permiso Único de Puerto Rico",
+          "titulo": "DLA Piper — Changes to Puerto Rico business permitting process (Permiso Único)",
           "url": "https://www.dlapiper.com/en/insights/publications/2019/07/changes-to-puerto-rico-business-permitting-process",
           "tipo": "secundaria"
-        },
-        {
-          "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",
-          "url": "https://hacienda.pr.gov/publicaciones/determinacion-administrativa-num-19-03",
-          "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "alcohol": {
       "texto": "La licencia de venta de bebidas alcohólicas al detal la suspende o concede el Departamento de Hacienda, y se tramita aparte del Permiso Único; Hacienda la ha suspendido a restaurantes que no transmitían sus ventas por terminal fiscal. Los requisitos por tipo de negocio, los horarios y las restricciones municipales deben confirmarse con Hacienda y tu municipio antes de firmar un alquiler.",

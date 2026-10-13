@@ -38,9 +38,15 @@
       "verificado": true
     },
     "manipulador": {
-      "texto": "No he podido abrir la normativa de ARCSA que fije un carné de manipulador. Lo habitual es que ARCSA y los municipios pidan capacitación en higiene y manipulación de alimentos para dueños y personal, y un certificado médico. Pregunta en tu zona de ARCSA qué cursos reconoce, quién los dicta y qué vigencia tienen, y guarda las constancias del equipo para las inspecciones.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "En el trámite oficial del permiso de funcionamiento de ARCSA, el certificado de capacitación en manipulación de alimentos, otorgado por el SECAP o por ARCSA, se exige a los bares escolares; para restaurantes y cafeterías la página lista el RUC y la categorización del Ministerio de Turismo, sin mencionar ese certificado. Aun así, forma a tu equipo en higiene y guarda las constancias. Pregunta en tu zonal de ARCSA qué cursos reconoce y si te los pedirán en la inspección.",
+      "fuentes": [
+        {
+          "titulo": "gob.ec — Permiso de funcionamiento ARCSA para restaurantes, cafeterías y bares escolares",
+          "url": "https://www.gob.ec/arcsa/tramites/emision-permiso-funcionamiento-establecimientos-servicios-alimentacion-colectiva-restaurantescafeterias-bares-escolares",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "licencias_apertura": {
       "texto": "Los municipios piden para la LUAF (licencia única anual de funcionamiento) el registro de turismo, la patente municipal, el uso de suelo y el permiso de bomberos, además del RUC o RIMPE; la emite el municipio, y el Ministerio de Turismo fija la tasa y el registro. En Quito la figura se llama LUAE. El permiso de ARCSA se tramita aparte. Los requisitos varían por cantón.",

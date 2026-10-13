@@ -5,7 +5,7 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El IVA general es del 21 %, con tipos del 10,5 % y del 27 % para casos concretos. No consta una alícuota especial para restaurantes, así que la restauración tributa normalmente al 21 %; confírmalo con tu contador. A esto se suma Ingresos Brutos, un impuesto provincial sobre la facturación, cuya alícuota fija cada jurisdicción y ronda de media entre el 4 % y el 6 % en comercio y servicios. El IVA de las compras de servicios de restaurante no genera crédito fiscal.",
+      "texto": "El IVA general es del 21 %, con tipos del 10,5 % y del 27 % solo para casos concretos (construcción de vivienda, servicios públicos…). No consta una alícuota especial para restaurantes, así que la restauración tributa normalmente al 21 %; confírmalo con tu contador. A esto se suma Ingresos Brutos, un impuesto provincial sobre la facturación cuya alícuota fija cada jurisdicción y ronda entre el 4 % y el 6 % de media en comercio y servicios. Como comprador, el IVA de servicios de restaurante no genera crédito fiscal.",
       "fuentes": [
         {
           "titulo": "PwC Worldwide Tax Summaries — Argentina, otros impuestos",
@@ -13,18 +13,28 @@
           "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "propina_servicio": {
-      "texto": "No hemos encontrado una ley nacional que fije la propina: es voluntaria por costumbre y a menudo se deja en efectivo o con el pago electrónico. Lo que sí está acotado es el «cubierto» o servicio de mesa: una sentencia de la Cámara Civil y Comercial de La Plata lo declaró ilegal por presentarse como obligatorio y sin informar en qué consiste, con base en el artículo 35 de la Ley de Defensa del Consumidor. Ciudad de Buenos Aires tiene normas propias; consulta la de tu jurisdicción.",
+      "texto": "La propina es voluntaria y de costumbre. Desde la Ley 27.802 (marzo de 2026), el artículo 104 de la Ley de Contrato de Trabajo dice que las propinas no se consideran remuneración aunque sean habituales en la actividad; el antiguo artículo 113 está derogado. El «cubierto» o servicio de mesa presentado como obligatorio y sin explicar fue declarado ilegal por la Cámara Civil y Comercial de La Plata, y la Ciudad de Buenos Aires tiene la Ley 4407 sobre el servicio. Consulta la norma de tu jurisdicción.",
       "fuentes": [
         {
-          "titulo": "La Nación — Declaran ilegal cobrar el servicio de mesa",
+          "titulo": "Argentina.gob.ar — Ley 27.802 de Modernización Laboral (texto original)",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/ley-27802-423680/texto",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "InfoLEG — Ley de Contrato de Trabajo 20.744, texto actualizado (art. 113 derogado)",
+          "url": "https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "La Nación — Declaran ilegal cobrar servicio de mesa en la provincia de Buenos Aires",
           "url": "https://www.lanacion.com.ar/lifestyle/declaran-es-ilegal-cobrar-servicio-mesa-provincia-nid2191226/",
           "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "autoridad_sanitaria": {
       "texto": "La referencia nacional es el Código Alimentario Argentino (CAA), declarado vigente en todo el país por la Ley 18.284 y reglamentado por el Decreto 2126/1971; el capítulo II fija las condiciones de fábricas y comercios de alimentos. Lo publica el Ministerio de Salud con ANMAT. La inspección y la habilitación de tu local las hace el municipio o la provincia, normalmente a través de «bromatología». Consulta con tu municipio cómo exige las buenas prácticas de manufactura (BPM).",
@@ -49,9 +59,15 @@
       "verificado": true
     },
     "licencias_apertura": {
-      "texto": "El permiso central es la «habilitación comercial» del municipio (en la Ciudad de Buenos Aires, a través del Gobierno de la Ciudad). Suele revisar la seguridad del edificio, el rubro gastronómico y el cumplimiento de las normas de bromatología. Para las medidas de seguridad contra incendios y la inscripción impositiva (CUIT ante ARCA, antes AFIP) los requisitos varían según la jurisdicción. Antes de firmar un alquiler, pregunta en tu municipio si el rubro está permitido en esa zona.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "El permiso central es la «habilitación» del local, que otorga el gobierno local. En la Ciudad de Buenos Aires, la Agencia Gubernamental de Control (AGC) autoriza las actividades económicas mediante una «declaración responsable» (hasta 500 m², con inspección posterior) o una «licencia» que exige inspección previa, según la superficie y la actividad. En otras ciudades y provincias los nombres y pasos cambian. Consulta también los requisitos contra incendios y si el rubro gastronómico está permitido en esa zona antes de alquilar.",
+      "fuentes": [
+        {
+          "titulo": "Buenos Aires Ciudad — Habilitaciones y permisos (AGC)",
+          "url": "https://buenosaires.gob.ar/habilitaciones-y-permisos",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "alcohol": {
       "texto": "La venta de bebidas alcohólicas depende de cada jurisdicción: normalmente se incluye en la habilitación del local con el rubro correspondiente y los horarios, la venta nocturna y las restricciones por eventos o elecciones las fijan los municipios y provincias. No hemos podido confirmar con fuente oficial un régimen nacional único, así que consulta con tu municipio qué licencia y qué horarios te corresponden antes de planificar la carta de bebidas.",

@@ -64,15 +64,25 @@
       "verificado": true
     },
     "licencias_apertura": {
-      "texto": "Los permisos suelen incluir licencia de negocio local, registro estatal para el sales tax, permiso sanitario, inspección de bomberos y certificado de ocupación, y un EIN ante el IRS si contratas personal o constituyes una sociedad. Los nombres, requisitos y plazos varían por estado y ciudad; consulta a la oficina de licencias de tu ciudad o condado y al Small Business Development Center local antes de firmar un alquiler.",
+      "texto": "Los permisos varían por estado y ciudad. La SBA indica que los restaurantes se regulan sobre todo a nivel local y que la zonificación la controla cada ciudad. Como ejemplo, en Nueva York necesitas el permiso de establecimiento de servicio de comida del Departamento de Salud, con un gerente supervisor que haya pasado el curso de protección alimentaria, y un Certificate of Occupancy del Departamento de Edificios. Pregunta además por bomberos, rótulos y el registro de sales tax. El EIN lo gestionas con el IRS.",
       "fuentes": [
         {
-          "titulo": "IRS – Obtén un EIN",
+          "titulo": "SBA — Apply for licenses and permits",
+          "url": "https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "NYC Business — Food Service Establishment Permit",
+          "url": "https://nyc-business.nyc.gov/nycbusiness/description/food-service-establishment-permit",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "IRS — Obtén un EIN",
           "url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
           "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "alcohol": {
       "texto": "Cada estado regula las licencias de venta de alcohol a través de su propia autoridad (en California, el Department of Alcoholic Beverage Control; en otros estados, un liquor board o equivalente). Existen licencias de consumo en el local (on-sale) distintas de las de botella cerrada, y las condiciones, cupos y horarios cambian de un estado a otro. Revisa la autoridad de tu estado antes de planificar la carta de bebidas.",

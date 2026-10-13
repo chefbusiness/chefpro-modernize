@@ -21,14 +21,36 @@
       "verificado": true
     },
     "propina_servicio": {
-      "texto": "No hemos encontrado una ley paraguaya que fije el porcentaje de la propina: se considera voluntaria y de costumbre. Si cobras un cargo por servicio, indícalo claramente en la carta y reparte la propina entre el personal. No hemos podido confirmar con fuente oficial la regulación vigente ni su tratamiento laboral; consulta con el Ministerio de Trabajo.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La propina es voluntaria y de costumbre. Según la directora del Trabajo, citada por ABC Color en 2021, no está regulada por el Código del Trabajo y se considera un ingreso no remuneratorio, a diferencia de otros países de la región donde forma parte del salario. No hay un porcentaje legal que aplicar; si cobras un cargo por servicio, indícalo con claridad en la carta. Consulta con el Ministerio de Trabajo si la norma ha cambiado.",
+      "fuentes": [
+        {
+          "titulo": "ABC Color — Propinas para los mozos de locales gastronómicos",
+          "url": "https://www.abc.com.py/nacionales/2021/09/23/propinas-para-los-mozos-de-locales-gastronomicos-una-buena-costumbre/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "La vigilancia sanitaria de alimentos pasó a la DINAVISA (Dirección Nacional de Vigilancia Sanitaria), que es la autoridad que hoy emite el carnet de manipulador; antes esa función la ejercía el INAN. Además, la municipalidad inspecciona tu local. No hemos podido abrir la norma de higiene para confirmar si se exigen buenas prácticas de manufactura o HACCP; consulta con DINAVISA y tu municipio qué plan de higiene te piden.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "El Ministerio de Salud Pública controla los alimentos en sus aspectos higiénico-sanitarios; su portal lo atribuía en 2018 al INAN, y hoy la DINAVISA tiene una Dirección General de Regulación de Alimentos y emite el carnet de manipulador. Las buenas prácticas de manufactura son obligatorias por el Decreto 17.056/97, que pone en vigor el reglamento técnico del Mercosur, y deben aplicarlas todos los establecimientos de alimentos. La municipalidad también inspecciona tu local. No hemos confirmado una norma HACCP para restaurantes.",
+      "fuentes": [
+        {
+          "titulo": "MSPBS — Buenas prácticas de fabricación y manufactura de alimentos son obligatorias",
+          "url": "https://www.mspbs.gov.py/portal/16452/buenas-practicas-de-fabricacion-y-manufactura-de-alimentos-son-obligatorias.html",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DINAVISA — Dirección General de Regulación de Alimentos y Productos Afines",
+          "url": "https://dinavisa.gov.py/direccion-general-de-regulacion-de-alimentos-y-productos-a-fines/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ABC Color — Guía 2026: patente comercial en la Municipalidad de Asunción",
+          "url": "https://www.abc.com.py/nacionales/2026/07/11/guia-2026-patente-comercial-en-la-municipalidad-de-asuncion-paso-a-paso/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "manipulador": {
       "texto": "La DINAVISA creó con la Resolución 457/2025 un curso gratuito de manipulación de alimentos y el carnet correspondiente. Dura dos clases y termina con una evaluación virtual. El artículo 6 de esa resolución establece que el carnet es de adhesión voluntaria y no es un requisito obligatorio para ejercer la actividad. El curso se imparte según demanda, y la inscripción se hace con una nota enviada al correo oficial.",
@@ -42,9 +64,15 @@
       "verificado": true
     },
     "licencias_apertura": {
-      "texto": "Para abrir tendrás que inscribirte en el RUC (registro de contribuyentes) ante la DNIT, obtener la patente comercial y la habilitación en la municipalidad de tu ciudad, y cumplir con la habilitación sanitaria y las medidas contra incendios que pida el Cuerpo de Bomberos. Los requisitos y las tasas los fija cada municipio, así que consulta en tu municipalidad la lista exacta y si el uso del suelo permite un local gastronómico.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "En Asunción necesitas la patente comercial de la Municipalidad, que se obtiene antes de abrir cualquier comercio, industria o servicio. Entre sus requisitos figuran la constancia de RUC de la DNIT, el contrato de alquiler o el título del local, un informe técnico de uso de suelo aprobado y un plano de prevención contra incendios; la municipalidad hace además una inspección física. Otros municipios piden requisitos propios. Consulta también qué habilitación sanitaria exige tu rubro.",
+      "fuentes": [
+        {
+          "titulo": "ABC Color — Guía 2026: patente comercial en la Municipalidad de Asunción",
+          "url": "https://www.abc.com.py/nacionales/2026/07/11/guia-2026-patente-comercial-en-la-municipalidad-de-asuncion-paso-a-paso/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "alcohol": {
       "texto": "La venta de bebidas alcohólicas se autoriza normalmente con la habilitación municipal del local y los horarios y restricciones los fijan las municipalidades. Las bebidas alcohólicas pagan además el Impuesto Selectivo al Consumo. No hemos podido confirmar con fuente oficial el permiso específico ni los horarios; consulta con tu municipalidad qué licencia necesitas antes de planificar la carta de bebidas.",

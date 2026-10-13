@@ -21,20 +21,41 @@
       "verificado": true
     },
     "propina_servicio": {
-      "texto": "La propina es voluntaria y de costumbre: no hay un porcentaje fijo y lo decide el cliente, aunque una guía de precios cita entre el 5 % y el 10 % cuando el servicio ha sido bueno. Cobrar un recargo por servicio sin avisarlo antes se considera mala práctica. Según la prensa, las propinas que reciben los trabajadores dependientes están gravadas desde 1995 (Ley 16.713). No hemos podido confirmar la regulación vigente con fuente oficial; consulta con el Ministerio de Trabajo.",
+      "texto": "La propina es voluntaria y de costumbre: la decide el cliente y no hay un porcentaje fijo. La prensa uruguaya considera inaceptable cobrar el servicio de forma compulsiva, es decir, sin avisar antes al cliente. Las propinas que perciben los trabajadores dependientes están gravadas: el artículo 156 de la Ley 16.713 fija un monto entre tres y veinte Bases Fictas de Contribución, que el Poder Ejecutivo determina según la actividad. Consulta al BPS cómo se aplica a tu local.",
       "fuentes": [
         {
-          "titulo": "El Observador — Sí o no a la propina",
+          "titulo": "El Observador — ¿Sí o no a la propina? Preguntas y respuestas",
           "url": "https://www.elobservador.com.uy/nota/-si-o-no-a-la-propina-preguntas-y-respuestas-sobre-un-tema-controversial-201992164747",
           "tipo": "secundaria"
+        },
+        {
+          "titulo": "IMPO — Ley 16.713, artículo 156 (Propinas)",
+          "url": "https://www.impo.com.uy/bases/leyes/16713-1995/156",
+          "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "La higiene de los locales de comida depende de la Intendencia de tu departamento, que otorga la habilitación (en Montevideo, mediante su servicio de Regulación Alimentaria) y vigila la bromatología, bajo el Reglamento Bromatológico Nacional y con el Ministerio de Salud Pública (MSP) como autoridad nacional. No hemos podido abrir las normas para confirmar si se exige HACCP o buenas prácticas; consulta con la Intendencia tu plan de higiene.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La habilitación bromatológica de un local de comida la otorga la Intendencia de tu departamento; en Montevideo, su Servicio de Regulación Alimentaria. El centro gastronómico no puede funcionar hasta tenerla, y según esa página vale cinco años. La norma de referencia es el Reglamento Bromatológico Nacional (Decreto 315/994), y el Ministerio de Salud Pública autoriza a fabricantes e importadores de alimentos. No hemos podido confirmar si se exige HACCP o buenas prácticas a restaurantes; consulta con tu Intendencia.",
+      "fuentes": [
+        {
+          "titulo": "Intendencia de Montevideo — Habilitación bromatológica de centros gastronómicos",
+          "url": "https://tramites.montevideo.gub.uy/tramites-y-tributos/habilitacion/bromatologica-de-centros-gastronomicos",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "IMPO — Decreto 315/994, Reglamento Bromatológico Nacional",
+          "url": "https://www.impo.com.uy/bases/decretos/315-1994",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "gub.uy — Habilitación y registro de empresas de alimentos (MSP)",
+          "url": "https://www.gub.uy/tramites/habilitacion-registro-empresas-alimentos-cosmeticos-domisanitarios",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "manipulador": {
       "texto": "En Montevideo la capacitación del personal que manipula alimentos es obligatoria y se rige por la Resolución municipal 5152/07, con examen regulado por el Decreto Municipal 27.235. El trámite pide el «carné de salud» vigente. Cada departamento (Canelones, Maldonado, Paysandú…) gestiona su propio «carné de manipulador» con requisitos y vigencia distintos; consulta en tu Intendencia cuál es el procedimiento y cuánto dura.",
@@ -48,9 +69,20 @@
       "verificado": true
     },
     "licencias_apertura": {
-      "texto": "La «habilitación comercial» la da la Intendencia; para alimentos se suma la habilitación bromatológica. Suelen pedirse además el certificado de la Dirección Nacional de Bomberos (medidas contra incendios), el «carné de salud» vigente de los trabajadores y la contribución inmobiliaria al día. Para inscribir la empresa tendrás que registrarte en la DGI (impuestos) y el BPS (seguridad social). Los requisitos exactos varían por departamento, así que consulta la lista de tu Intendencia.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La «habilitación» del local la da la Intendencia de tu departamento y, para comida, se suma la habilitación bromatológica. Como ejemplo, la Intendencia de San José pide entre otros requisitos la viabilidad urbanística aprobada y la certificación de medidas de protección contra incendios (habilitación de Bomberos). En Montevideo, un centro gastronómico no puede funcionar hasta recibir la habilitación bromatológica. Los requisitos varían por departamento: pide la lista a tu Intendencia.",
+      "fuentes": [
+        {
+          "titulo": "gub.uy — Habilitaciones de locales comerciales e industriales (San José)",
+          "url": "https://www.gub.uy/tramites/habilitaciones-locales-comerciales-industriales-san-jose",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Intendencia de Montevideo — Habilitación bromatológica de centros gastronómicos",
+          "url": "https://tramites.montevideo.gub.uy/tramites-y-tributos/habilitacion/bromatologica-de-centros-gastronomicos",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "alcohol": {
       "texto": "La venta de bebidas alcohólicas se autoriza en la habilitación del local y los horarios y restricciones los fija cada Intendencia. En la práctica, el servicio de alcohol en bares y restaurantes se regula con la normativa municipal y las reglas nacionales sobre venta a menores. No hemos podido confirmar los detalles con fuente oficial; consulta con la Intendencia qué permiso y qué horario de venta te corresponden.",

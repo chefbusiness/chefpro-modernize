@@ -69,15 +69,25 @@
       "verificado": true
     },
     "licencias_apertura": {
-      "texto": "Entre los trámites habituales suelen figurar la licencia de uso de suelo, la licencia de funcionamiento municipal, el visto bueno de Protección Civil y el alta en el SAT; ante la COFEPRIS existe el trámite de aviso de funcionamiento de establecimientos de productos y servicios (COFEPRIS-05-018). Los nombres, requisitos y plazos cambian mucho entre municipios y entidades, así que confirma la lista exacta en la ventanilla de tu alcaldía antes de firmar un alquiler.",
+      "texto": "En la Ciudad de México, la guía de la Secretaría de Desarrollo Económico (SEDECO) clasifica los restaurantes como giro de impacto vecinal, que se abre con un permiso tramitado en el sistema SIAPEM; el bajo impacto solo presenta un aviso. Esa guía menciona el Certificado Único de Zonificación de Uso del Suelo, el Visto Bueno de Seguridad y Operación para locales con más de 50 personas y el Programa Interno de Protección Civil. Cada alcaldía y estado tiene sus reglas y el reglamento cambió en 2024: confírmalo en tu municipio.",
       "fuentes": [
         {
-          "titulo": "COFEPRIS – trámites (aviso de funcionamiento COFEPRIS-05-018)",
-          "url": "https://www.gob.mx/cofepris/acciones-y-programas/aviso-de-funcionamiento-de-responsable-sanitario-y-de-modificacion-o-baja",
+          "titulo": "SEDECO CDMX — Apertura de negocios (guía de trámites)",
+          "url": "https://www.sedeco.cdmx.gob.mx/storage/app/media/uploaded-files/Apertura%20de%20Negocios.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "SEDECO CDMX — SIAPEM (avisos y permisos de establecimientos mercantiles)",
+          "url": "https://www.sedeco.cdmx.gob.mx/tramites/sistema-electronico-de-avisos-y-permisos-de-establecimientos-mercantiles-siapem",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ADIP CDMX — Ventanilla Única para Establecimientos Mercantiles (SIAPEM)",
+          "url": "https://adip.cdmx.gob.mx/comunicacion/nota/presentan-ventanilla-unica-para-establecimientos-mercantiles-siapem",
           "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "alcohol": {
       "texto": "La licencia para vender alcohol no es un trámite único nacional: suele depender de cada estado o alcaldía y recibe nombres distintos según el giro (restaurante con venta de bebidas alcohólicas, bar, cantina, venta en botella cerrada). Los horarios, las distancias a escuelas y las restricciones por jornadas electorales cambian de una entidad a otra. Consulta con la autoridad de tu estado o municipio la norma vigente antes de planificar la carta de bebidas.",
