@@ -90,7 +90,8 @@ ENTRADAS = [
      'Used ONLY with the licensed package. In dry hire the host buys the alcohol: it is never in your cost or your '
      'price.'),
     ('cups', 'Cups, straws, napkins and menu signs per guest', MONEDA, 0.55, 'Kit estimate.'),
-    ('ice_lb', 'Ice per guest (lb)', DEC1, 1.5, 'Kit estimate: 1.5 lb per guest is a common planning rule.'),
+    ('ice_lb', 'Ice per guest (lb)', DEC1, 1.5,
+     'Kit estimate: 1.5 lb (0.68 kg) per guest is a common planning rule.'),
     ('ice_price', 'Bagged ice cost per lb', MONEDA, 0.25, 'Kit estimate: use your supplier\'s price.'),
     ('miles', 'Round-trip miles', ENTERO, 40, 'Storage unit → venue → storage unit.'),
     ('per_mile', 'Cost per mile (tow vehicle + trailer)', MONEDA, 0.70,
@@ -123,6 +124,7 @@ SALIDAS = [
     ('drinks', 'Drinks to plan for', ENTERO, '{guests}*({first_hour}+max(0,{hours}-1)*{per_hour})',
      'Guests × (first-hour drinks + following hours × drinks per hour).'),
     ('ice_total', 'Ice to bring (lb)', DEC1, '{guests}*{ice_lb}', ''),
+    ('ice_kg', 'Ice to bring (kg, for metric suppliers)', DEC1, '{ice_total}*0.45359237', '1 lb = 0.454 kg.'),
     ('bt_sug', 'Suggested bartenders for this package (Kit estimate)', ENTERO, 'sugerido',
      'Guests ÷ guests per bartender in the table below, rounded up.'),
     ('c_staff', 'Staff cost (wages + payroll taxes)', MONEDA,
@@ -194,13 +196,14 @@ EJ_NOTAS = OrderedDict([
 MEZCLA = OrderedDict([(FULL_DRY, (0.50, 0.25, 0.25)), (LIMITED_DRY, (0.20, 0.40, 0.40)), (FULL_LIC, (0.50, 0.25, 0.25))])
 COMPRA = [
     ('pours', 'Drinks per 750 ml bottle of spirits (1.5 oz pours)', ENTERO, 16,
-     'A 750 ml bottle holds about 25 oz: about 16 pours of 1.5 oz.'),
-    ('wine_glasses', 'Glasses per 750 ml bottle of wine', ENTERO, 5, 'About 5 glasses of 5 oz.'),
+     'A 750 ml bottle (a "fifth") holds about 25.4 oz: about 16 pours of 1.5 oz (44 ml). A 1.75 L bottle (a '
+     '"handle") holds 7/3 as much.'),
+    ('wine_glasses', 'Glasses per 750 ml bottle of wine', ENTERO, 5, 'About 5 glasses of 5 oz (148 ml).'),
     ('beer_per', 'Beers (12 oz cans or bottles) per beer drink', DEC1, 1, ''),
     ('buffer', 'Safety buffer on every quantity', PCT, 0.10, 'Kit estimate: unopened bottles stay with the host.'),
     ('toast', 'Champagne toast?', '@', 'No', 'Yes or No.'),
     ('toast_pours', 'Toast pours per 750 ml bottle of sparkling wine', ENTERO, 8, 'Kit estimate.'),
-    ('bag_lb', 'Bag of ice (lb)', ENTERO, 10, 'Use the bag size your supplier sells.'),
+    ('bag_lb', 'Bag of ice (lb)', ENTERO, 10, 'Use the bag size your supplier sells (a 10 lb bag is about 4.5 kg).'),
     ('cups_per', 'Cups per drink', DEC1, 1, ''),
     ('napkins_per', 'Napkins per drink', DEC1, 1, ''),
 ]
@@ -208,50 +211,60 @@ LICORES = OrderedDict([('Vodka', 0.30), ('Tequila', 0.20), ('Whiskey / bourbon',
 
 
 # --------------------------------------------------------------------------
-# 3. Signature Cocktail Specs: 10 recetas de la carta ES (ml → oz, paso 0.25 oz). Ingrediente: (nombre, cantidad por
-#    copa, unidad, quién lo compra en dry hire, tamaño del envase, unidad del envase, precio del envase [Kit estimate])
-#    Todo lo que lleva alcohol (bitters incluidos) es del anfitrión en dry hire.
+# 3. Signature Cocktail Specs: 10 recetas de la carta ES (ml → oz, paso 0.25 oz; «(ml)» al lado para UK y Australia).
+#    Ingrediente: (nombre, cantidad por copa, unidad, quién lo compra en dry hire, tamaño del envase en la unidad,
+#    descripción del envase, precio del envase [Kit estimate]). Todo lo que lleva alcohol (bitters incluidos) es del
+#    anfitrión en dry hire. Medidas US (John, 13-oct): oz principales, ml entre paréntesis; botellas de 750 ml («fifth»)
+#    y de 1.75 L («handle»)
 # --------------------------------------------------------------------------
 _B, _H = 'Bar', 'Host'
-_L750, _L1 = 25.4, 33.8                                                # 750 ml y 1 L en oz
+ML_POR_OZ = 29.5735                                                    # 1 US fl oz en ml
+FIFTH, HANDLE = 25.36, 59.17                                           # 750 ml y 1.75 L en oz
+_L750, _L1 = FIFTH, 33.81                                              # 750 ml y 1 L en oz
+_E750, _E1 = 'oz (750 ml bottle)', 'oz (1 L bottle)'
 RECETAS = [
     ('Old Fashioned', 'Rocks glass, one large cube', '', [
-        ('Bourbon', 2, 'oz', _H, _L750, 'oz', 25.0), ('Angostura bitters', 2, 'dash', _H, 120, 'dash', 10.0),
-        ('Sugar cube', 1, 'each', _B, 126, 'each', 4.0), ('Orange peel', 1, 'each', _B, 4, 'each', 1.0)]),
+        ('Bourbon', 2, 'oz', _H, _L750, _E750, 25.0), ('Angostura bitters', 2, 'dash', _H, 120, 'dashes (4 oz bottle)', 10.0),
+        ('Sugar cube', 1, 'each', _B, 126, 'cubes (box)', 4.0), ('Orange peel', 1, 'each', _B, 4, 'peels (1 orange)', 1.0)]),
     ('Negroni', 'Rocks glass, one large cube', '', [
-        ('Gin', 1, 'oz', _H, _L750, 'oz', 25.0), ('Sweet vermouth', 1, 'oz', _H, _L750, 'oz', 18.0),
-        ('Campari', 1, 'oz', _H, _L750, 'oz', 28.0), ('Orange peel', 1, 'each', _B, 4, 'each', 1.0)]),
+        ('Gin', 1, 'oz', _H, _L750, _E750, 25.0), ('Sweet vermouth', 1, 'oz', _H, _L750, _E750, 18.0),
+        ('Campari', 1, 'oz', _H, _L750, _E750, 28.0), ('Orange peel', 1, 'each', _B, 4, 'peels (1 orange)', 1.0)]),
     ('French 75', 'Flute or coupe', '', [
-        ('Gin', 1, 'oz', _H, _L750, 'oz', 25.0), ('Fresh lemon juice', 0.5, 'oz', _B, 32, 'oz', 10.0),
-        ('Simple syrup', 0.5, 'oz', _B, _L1, 'oz', 8.0), ('Sparkling wine (brut)', 2, 'oz', _H, _L750, 'oz', 14.0),
-        ('Lemon twist', 1, 'each', _B, 6, 'each', 0.75)]),
+        ('Gin', 1, 'oz', _H, _L750, _E750, 25.0), ('Fresh lemon juice', 0.5, 'oz', _B, 32, 'oz (32 oz bottle)', 10.0),
+        ('Simple syrup', 0.5, 'oz', _B, _L1, _E1, 8.0), ('Sparkling wine (brut)', 2, 'oz', _H, _L750, _E750, 14.0),
+        ('Lemon twist', 1, 'each', _B, 6, 'twists (1 lemon)', 0.75)]),
     ('Mai Tai', 'Rocks glass or tiki mug, crushed ice', 'Allergen: orgeat is made from almonds (tree nuts)', [
-        ('Aged dark rum', 1, 'oz', _H, _L750, 'oz', 25.0), ('White rum', 1, 'oz', _H, _L750, 'oz', 20.0),
-        ('Orange curacao', 0.5, 'oz', _H, _L750, 'oz', 22.0), ('Orgeat (almond) syrup', 0.5, 'oz', _B, _L750, 'oz', 12.0),
-        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz', 10.0), ('Mint sprig', 1, 'each', _B, 20, 'each', 2.0)]),
+        ('Aged dark rum', 1, 'oz', _H, _L750, _E750, 25.0), ('White rum', 1, 'oz', _H, _L750, _E750, 20.0),
+        ('Orange curacao', 0.5, 'oz', _H, _L750, _E750, 22.0),
+        ('Orgeat (almond) syrup', 0.5, 'oz', _B, _L750, _E750, 12.0),
+        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz (32 oz bottle)', 10.0),
+        ('Mint sprig', 1, 'each', _B, 20, 'sprigs (1 bunch)', 2.0)]),
     ('Pina Colada', 'Hurricane glass', 'Allergen: coconut (cream of coconut)', [
-        ('White rum', 2, 'oz', _H, _L750, 'oz', 20.0), ('Aged rum float', 0.5, 'oz', _H, _L750, 'oz', 25.0),
-        ('Cream of coconut', 2, 'oz', _B, 15, 'oz', 4.0), ('Pineapple juice', 4, 'oz', _B, 46, 'oz', 4.0),
-        ('Pineapple wedge', 1, 'each', _B, 16, 'each', 4.0)]),
+        ('White rum', 2, 'oz', _H, _L750, _E750, 20.0), ('Aged rum float', 0.5, 'oz', _H, _L750, _E750, 25.0),
+        ('Cream of coconut', 2, 'oz', _B, 15, 'oz (15 oz can)', 4.0),
+        ('Pineapple juice', 4, 'oz', _B, 46, 'oz (46 oz can)', 4.0),
+        ('Pineapple wedge', 1, 'each', _B, 16, 'wedges (1 pineapple)', 4.0)]),
     ('Passion Fruit Mojito', 'Collins glass, crushed ice', '', [
-        ('White rum', 1.75, 'oz', _H, _L750, 'oz', 20.0), ('Passion fruit puree', 1, 'oz', _B, 32, 'oz', 15.0),
-        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz', 10.0), ('Simple syrup', 0.5, 'oz', _B, _L1, 'oz', 8.0),
-        ('Mint leaves', 8, 'each', _B, 60, 'each', 2.0), ('Club soda (top)', 2, 'oz', _B, _L1, 'oz', 1.5)]),
+        ('White rum', 1.75, 'oz', _H, _L750, _E750, 20.0),
+        ('Passion fruit puree', 1, 'oz', _B, 32, 'oz (32 oz pack)', 15.0),
+        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz (32 oz bottle)', 10.0), ('Simple syrup', 0.5, 'oz', _B, _L1, _E1, 8.0),
+        ('Mint leaves', 8, 'each', _B, 60, 'leaves (1 bunch)', 2.0), ('Club soda (top)', 2, 'oz', _B, _L1, _E1, 1.5)]),
     ('Aperol Spritz', 'Wine glass', '', [
-        ('Aperol', 2, 'oz', _H, _L750, 'oz', 25.0), ('Prosecco', 3, 'oz', _H, _L750, 'oz', 14.0),
-        ('Club soda', 1, 'oz', _B, _L1, 'oz', 1.5), ('Orange slice', 1, 'each', _B, 8, 'each', 1.0)]),
+        ('Aperol', 2, 'oz', _H, _L750, _E750, 25.0), ('Prosecco', 3, 'oz', _H, _L750, _E750, 14.0),
+        ('Club soda', 1, 'oz', _B, _L1, _E1, 1.5), ('Orange slice', 1, 'each', _B, 8, 'slices (1 orange)', 1.0)]),
     ('Espresso Martini', 'Chilled martini glass or coupe', '', [
-        ('Vodka', 1.75, 'oz', _H, _L750, 'oz', 25.0), ('Coffee liqueur', 0.75, 'oz', _H, _L750, 'oz', 25.0),
-        ('Fresh espresso (cooled)', 1, 'oz', _B, 1, 'oz', 0.5), ('Simple syrup', 0.25, 'oz', _B, _L1, 'oz', 8.0),
-        ('Coffee beans (garnish)', 3, 'each', _B, 300, 'each', 5.0)]),
+        ('Vodka', 1.75, 'oz', _H, _L750, _E750, 25.0), ('Coffee liqueur', 0.75, 'oz', _H, _L750, _E750, 25.0),
+        ('Fresh espresso (cooled)', 1, 'oz', _B, 1, 'oz (1 shot)', 0.5), ('Simple syrup', 0.25, 'oz', _B, _L1, _E1, 8.0),
+        ('Coffee beans (garnish)', 3, 'each', _B, 300, 'beans (bag)', 5.0)]),
     ('Smoked Mezcal Margarita', 'Coupe with a smoked-salt rim', '', [
-        ('Mezcal', 1.75, 'oz', _H, _L750, 'oz', 40.0), ('Triple sec', 0.75, 'oz', _H, _L750, 'oz', 20.0),
-        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz', 10.0), ('Simple syrup', 0.25, 'oz', _B, _L1, 'oz', 8.0),
-        ('Smoked salt (rim)', 1, 'each', _B, 60, 'each', 6.0), ('Lime wedge', 1, 'each', _B, 8, 'each', 0.5)]),
+        ('Mezcal', 1.75, 'oz', _H, _L750, _E750, 40.0), ('Triple sec', 0.75, 'oz', _H, _L750, _E750, 20.0),
+        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz (32 oz bottle)', 10.0), ('Simple syrup', 0.25, 'oz', _B, _L1, _E1, 8.0),
+        ('Smoked salt (rim)', 1, 'each', _B, 60, 'rims (jar)', 6.0), ('Lime wedge', 1, 'each', _B, 8, 'wedges (1 lime)', 0.5)]),
     ('Tropical Mocktail (zero-proof)', 'Hurricane glass, crushed ice', 'Allergen: coconut (cream of coconut)', [
-        ('Pineapple juice', 3, 'oz', _B, 46, 'oz', 4.0), ('Fresh orange juice', 2, 'oz', _B, 52, 'oz', 5.0),
-        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz', 10.0), ('Grenadine', 0.5, 'oz', _B, _L750, 'oz', 8.0),
-        ('Cream of coconut', 0.75, 'oz', _B, 15, 'oz', 4.0), ('Club soda (top)', 2, 'oz', _B, _L1, 'oz', 1.5)]),
+        ('Pineapple juice', 3, 'oz', _B, 46, 'oz (46 oz can)', 4.0),
+        ('Fresh orange juice', 2, 'oz', _B, 52, 'oz (52 oz bottle)', 5.0),
+        ('Fresh lime juice', 0.75, 'oz', _B, 32, 'oz (32 oz bottle)', 10.0), ('Grenadine', 0.5, 'oz', _B, _L750, _E750, 8.0),
+        ('Cream of coconut', 0.75, 'oz', _B, 15, 'oz (15 oz can)', 4.0), ('Club soda (top)', 2, 'oz', _B, _L1, _E1, 1.5)]),
 ]
 ESCALAS = (50, 100, 200)
 
@@ -263,6 +276,7 @@ def calcular(e):
     r = OrderedDict()
     r['drinks'] = e['guests'] * (e['first_hour'] + max(0, e['hours'] - 1) * e['per_hour'])
     r['ice_total'] = e['guests'] * e['ice_lb']
+    r['ice_kg'] = r['ice_total'] * 0.45359237
     r['bt_sug'] = math.ceil(round(e['guests'] / RATIO[e['package']], 9))
     r['c_staff'] = ((e['bartenders'] * e['wage_bt'] + e['barbacks'] * e['wage_bb']) * (e['hours'] + e['extra_hours'])
                     * (1 + e['payroll']))
@@ -300,12 +314,15 @@ def calcular_compra(e, c=None, licores=LICORES, mezcla=MEZCLA):
     r['d_wine'] = drinks * sw
     r['d_beer'] = drinks * sb
     r['b_spirits'] = math.ceil(round(r['d_cocktails'] * up / c['pours'], 9))
+    r['h_spirits'] = math.ceil(round(r['d_cocktails'] * up / (c['pours'] * 7 / 3.0), 9))
     for i, (n, s) in enumerate(licores.items()):
         r['b_lic_%d' % i] = math.ceil(round(r['d_cocktails'] * s * up / c['pours'], 9))
+        r['h_lic_%d' % i] = math.ceil(round(r['d_cocktails'] * s * up / (c['pours'] * 7 / 3.0), 9))
     r['b_wine'] = math.ceil(round(r['d_wine'] * up / c['wine_glasses'], 9))
     r['u_beer'] = math.ceil(round(r['d_beer'] * c['beer_per'] * up, 9))
     r['b_toast'] = math.ceil(round(e['guests'] / c['toast_pours'], 9)) if c['toast'] == 'Yes' else 0
     r['ice_lb'] = e['guests'] * e['ice_lb']
+    r['ice_kg'] = r['ice_lb'] * 0.45359237
     r['ice_bags'] = math.ceil(round(r['ice_lb'] / c['bag_lb'], 9))
     r['cups_n'] = math.ceil(round(drinks * c['cups_per'] * up, 9))
     r['napkins_n'] = math.ceil(round(drinks * c['napkins_per'] * up, 9))
@@ -313,15 +330,31 @@ def calcular_compra(e, c=None, licores=LICORES, mezcla=MEZCLA):
     return r
 
 
+def _ml(cant, u):
+    return round(cant * ML_POR_OZ) if u == 'oz' else '—'
+
+
+def _botellas(cant, u, quien, n, tam):
+    return math.ceil(round(cant * n / tam, 9)) if (u == 'oz' and quien == _H) else '—'
+
+
 def calcular_specs():
-    """Por receta: coste por copa total y de lo que pone el bar; por ingrediente, coste, escalado y envases."""
+    """Por receta: coste por copa total y de lo que pone el bar; por ingrediente, ml, coste, escalado, botellas de 750 ml
+    («fifths») y de 1.75 L («handles») de lo que compra el anfitrión, y envases."""
     out = []
     for nombre, _vaso, _al, ings in RECETAS:
         filas = []
-        for ing, cant, _u, quien, env, _ue, precio in ings:
-            filas.append(OrderedDict([('coste', cant / env * precio), ('x50', cant * 50), ('x100', cant * 100),
-                                      ('x200', cant * 200), ('envases100', math.ceil(round(cant * 100 / env, 9))),
-                                      ('quien', quien)]))
+        for ing, cant, u, quien, env, _ue, precio in ings:
+            x = OrderedDict([('ml', _ml(cant, u)), ('coste', cant / env * precio)])
+            for n in ESCALAS:
+                x['x%d' % n] = cant * n
+            for n in ESCALAS:
+                x['f%d' % n] = _botellas(cant, u, quien, n, FIFTH)
+            for n in ESCALAS:
+                x['h%d' % n] = _botellas(cant, u, quien, n, HANDLE)
+            x['envases100'] = math.ceil(round(cant * 100 / env, 9))
+            x['quien'] = quien
+            filas.append(x)
         tot = sum(f['coste'] for f in filas)
         bar = sum(f['coste'] for f in filas if f['quien'] == _B)
         out.append((nombre, filas, tot, bar))
@@ -536,33 +569,39 @@ def hoja_compra(wb):
     fila += 2
     quien = '=IF(%s=%s,"You (licensed package)","The host (dry hire)")' % (R['package'], T_LICENCIA)
     _f(ws, 'A%d' % fila, 'SHOPPING LIST — ALCOHOL', b=True, fill=GRIS)
-    _f(ws, 'B%d' % fila, 'Quantity', b=True, fill=GRIS)
-    _f(ws, 'C%d' % fila, 'Unit', b=True, fill=GRIS)
-    _f(ws, 'D%d' % fila, quien, b=True, fill=GRIS, wrap=True)
-    _f(ws, 'E%d' % fila, 'Notes', b=True, fill=GRIS)
+    for col, t in zip('BCDE', ('Quantity', 'Unit', 'Or 1.75 L bottles ("handles")', 'Notes')):
+        _f(ws, '%s%d' % (col, fila), t, b=True, fill=GRIS, wrap=True)
     ws.row_dimensions[fila].height = 30
-    filas_compra = OrderedDict()
     fila += 1
-    _f(ws, 'A%d' % fila, 'Spirits, total (750 ml bottles)', b=True)
+    _f(ws, 'A%d' % fila, 'Who buys it')
+    _f(ws, 'B%d' % fila, quien, b=True)
+    ws.merge_cells('B%d:D%d' % (fila, fila))
+    filas_compra = OrderedDict()
+    handle = '(%s*7/3)' % R['pours']
+    fila += 1
+    _f(ws, 'A%d' % fila, 'Spirits, total', b=True)
     _f(ws, 'B%d' % fila, '=ROUNDUP(%s*%s/%s,0)' % (R['d_cocktails'], up, R['pours']), fmt=ENTERO, b=True)
-    _f(ws, 'C%d' % fila, 'bottles')
+    _f(ws, 'C%d' % fila, '750 ml bottles')
+    _f(ws, 'D%d' % fila, '=ROUNDUP(%s*%s/%s,0)' % (R['d_cocktails'], up, handle), fmt=ENTERO, b=True)
     _f(ws, 'E%d' % fila, 'Cocktails & spirits ÷ drinks per bottle, with the buffer.', wrap=True)
     filas_compra['b_spirits'] = fila
+    filas_compra['h_spirits'] = (fila, 'D')
     for i, (n, _s) in enumerate(LICORES.items()):
         fila += 1
         _f(ws, 'A%d' % fila, '   %s' % n)
         _f(ws, 'B%d' % fila, '=ROUNDUP(%s*$B$%d*%s/%s,0)' % (R['d_cocktails'], lic0 + i, up, R['pours']), fmt=ENTERO)
-        _f(ws, 'C%d' % fila, 'bottles')
+        _f(ws, 'C%d' % fila, '750 ml bottles')
+        _f(ws, 'D%d' % fila, '=ROUNDUP(%s*$B$%d*%s/%s,0)' % (R['d_cocktails'], lic0 + i, up, handle), fmt=ENTERO)
         filas_compra['b_lic_%d' % i] = fila
+        filas_compra['h_lic_%d' % i] = (fila, 'D')
     _f(ws, 'E%d' % (filas_compra['b_lic_0']), 'Rounded up type by type, so the split can add up to a little more '
                                                'than the total.', wrap=True)
     for k, rot, fx, unidad, nota in (
-            ('b_wine', 'Wine (750 ml bottles)', '=ROUNDUP(%s*%s/%s,0)' % (R['d_wine'], up, R['wine_glasses']), 'bottles',
+            ('b_wine', 'Wine', '=ROUNDUP(%s*%s/%s,0)' % (R['d_wine'], up, R['wine_glasses']), '750 ml bottles',
              'Split between red, white and sparkling to taste.'),
-            ('u_beer', 'Beer (12 oz cans or bottles)', '=ROUNDUP(%s*%s*%s,0)' % (R['d_beer'], R['beer_per'], up), 'units',
-             ''),
-            ('b_toast', 'Sparkling wine for the toast (750 ml bottles)',
-             '=IF(%s="Yes",ROUNDUP(%s/%s,0),0)' % (R['toast'], R['guests'], R['toast_pours']), 'bottles',
+            ('u_beer', 'Beer', '=ROUNDUP(%s*%s*%s,0)' % (R['d_beer'], R['beer_per'], up), '12 oz cans or bottles', ''),
+            ('b_toast', 'Sparkling wine for the toast',
+             '=IF(%s="Yes",ROUNDUP(%s/%s,0),0)' % (R['toast'], R['guests'], R['toast_pours']), '750 ml bottles',
              'Only if the switch above is Yes.')):
         fila += 1
         _f(ws, 'A%d' % fila, rot)
@@ -578,14 +617,15 @@ def hoja_compra(wb):
     for k, rot, fx, fmt, unidad, nota in (
             ('ice_lb', 'Ice', '=%s*%s' % (R['guests'], g + '$B$%d' % K['ice_lb']), DEC1, 'lb',
              'Commercial bagged ice. Ask your county about ice and garnish rules.'),
-            ('ice_bags', 'Ice, in bags', '=ROUNDUP(B{prev}/%s,0)' % R['bag_lb'], ENTERO, 'bags', ''),
+            ('ice_kg', 'Ice, in kg (for metric suppliers)', '=B{prev}*0.45359237', DEC1, 'kg', '1 lb = 0.454 kg.'),
+            ('ice_bags', 'Ice, in bags', '=ROUNDUP(B{prev2}/%s,0)' % R['bag_lb'], ENTERO, 'bags', ''),
             ('cups_n', 'Cups', '=ROUNDUP(%s*%s*%s,0)' % (R['drinks'], R['cups_per'], up), ENTERO, 'units', ''),
             ('napkins_n', 'Napkins', '=ROUNDUP(%s*%s*%s,0)' % (R['drinks'], R['napkins_per'], up), ENTERO, 'units', ''),
             ('mixer_servings', 'Mixer and garnish servings', '=ROUNDUP(%s*%s,0)' % (R['d_cocktails'], up), ENTERO,
              'servings', 'One per cocktail: see the "%s" tab for each recipe.' % H3)):
         fila += 1
         _f(ws, 'A%d' % fila, rot)
-        _f(ws, 'B%d' % fila, fx.replace('{prev}', str(fila - 1)), fmt=fmt)
+        _f(ws, 'B%d' % fila, fx.replace('{prev2}', str(fila - 2)).replace('{prev}', str(fila - 1)), fmt=fmt)
         _f(ws, 'C%d' % fila, unidad)
         if nota:
             _f(ws, 'E%d' % fila, nota, wrap=True)
@@ -604,66 +644,81 @@ def hoja_compra(wb):
     return ws, filas_compra
 
 
+COLS_SPECS = OrderedDict([('ml', 'C'), ('coste', 'I'), ('x50', 'J'), ('x100', 'K'), ('x200', 'L'), ('f50', 'M'),
+                          ('f100', 'N'), ('f200', 'O'), ('h50', 'P'), ('h100', 'Q'), ('h200', 'R'), ('envases100', 'S')])
+
+
 def hoja_specs(wb):
     ws = wb.create_sheet(H3)
-    anchos = (('A', 34), ('B', 11), ('C', 8), ('D', 12), ('E', 11), ('F', 9), ('G', 11), ('H', 12), ('I', 11),
-              ('J', 11), ('K', 11), ('L', 12))
+    anchos = (('A', 30), ('B', 9), ('C', 7), ('D', 7), ('E', 10), ('F', 9), ('G', 17), ('H', 9), ('I', 9), ('J', 9),
+              ('K', 9), ('L', 9), ('M', 10), ('N', 10), ('O', 10), ('P', 10), ('Q', 10), ('R', 10), ('S', 10))
     for col, w in anchos:
         ws.column_dimensions[col].width = w
     _cabecera(ws, 'SIGNATURE COCKTAIL SPECS — 10 RECIPES, SCALED AND COSTED',
-              'Ten signature cocktails, including one zero-proof mocktail, in US ounces. Type your local price for each '
-              'bottle or pack in the green cells: the cost per drink and the batch quantities for 50, 100 and 200 drinks '
-              'are calculated. In dry hire, everything that contains alcohol (bitters included) goes on the host\'s '
-              'shopping list; you supply mixers, juices, syrups, garnishes and ice. Pack prices are kit estimates.', 'L')
-    cab = ('Ingredient', 'Per drink', 'Unit', 'Who buys (dry hire)', 'Pack size', 'Pack unit', 'Pack price',
-           'Cost per drink', '50 drinks', '100 drinks', '200 drinks', 'Packs for 100 drinks')
+              'Ten signature cocktails, including one zero-proof mocktail, in US ounces (oz) with milliliters in '
+              'parentheses for metric jiggers (UK, Australia). Type your local price for each bottle or pack in the '
+              'green cells: the cost per drink and the quantities for 50, 100 and 200 drinks are calculated, in ounces '
+              'and in 750 ml bottles (a "fifth") or 1.75 L bottles (a "handle"). In dry hire, everything that contains '
+              'alcohol (bitters included) goes on the host\'s shopping list; you supply mixers, juices, syrups, '
+              'garnishes and ice. Pack prices are kit estimates.', 'S')
+    cab = ('Ingredient', 'Per drink', '(ml)', 'Unit', 'Who buys (dry hire)', 'Pack size', 'Pack', 'Pack price',
+           'Cost per drink', '50 drinks', '100 drinks', '200 drinks', '750 ml bottles, 50 drinks',
+           '750 ml bottles, 100 drinks', '750 ml bottles, 200 drinks', '1.75 L bottles, 50 drinks',
+           '1.75 L bottles, 100 drinks', '1.75 L bottles, 200 drinks', 'Packs for 100 drinks')
     fila = 4
-    for col, t in zip('ABCDEFGHIJKL', cab):
+    for col, t in zip('ABCDEFGHIJKLMNOPQRS', cab):
         _f(ws, '%s%d' % (col, fila), t, b=True, fill=GRIS, wrap=True)
-    ws.row_dimensions[fila].height = 30
+    ws.row_dimensions[fila].height = 45
     verdes_dec = []
     filas = []
     for nombre, vaso, alergeno, ings in RECETAS:
         fila += 2
         _f(ws, 'A%d' % fila, nombre.upper(), b=True, fill=GRIS)
         _f(ws, 'B%d' % fila, vaso + ('. ' + alergeno if alergeno else ''), i=True, fill=GRIS)
-        ws.merge_cells('B%d:L%d' % (fila, fila))
+        ws.merge_cells('B%d:S%d' % (fila, fila))
         f0 = fila + 1
         for ing, cant, u, quien, env, ue, precio in ings:
             fila += 1
-            _f(ws, 'A%d' % fila, ing)
-            _f(ws, 'B%d' % fila, cant, fmt='0.00', fill=VERDE, locked=False)
-            _f(ws, 'C%d' % fila, u)
-            _f(ws, 'D%d' % fila, quien)
-            _f(ws, 'E%d' % fila, env, fmt='0.0', fill=VERDE, locked=False)
-            _f(ws, 'F%d' % fila, ue)
-            _f(ws, 'G%d' % fila, precio, fmt=MONEDA, fill=VERDE, locked=False)
-            _f(ws, 'H%d' % fila, '=IF(E%d=0,0,B%d/E%d*G%d)' % (fila, fila, fila, fila), fmt='0.000')
-            for col, n in zip('IJK', ESCALAS):
-                _f(ws, '%s%d' % (col, fila), '=B%d*%d' % (fila, n), fmt='#,##0.00')
-            _f(ws, 'L%d' % fila, '=IF(E%d=0,0,ROUNDUP(B%d*100/E%d,0))' % (fila, fila, fila), fmt=ENTERO)
-            verdes_dec += ['B%d' % fila, 'G%d' % fila]
+            r = fila
+            _f(ws, 'A%d' % r, ing)
+            _f(ws, 'B%d' % r, cant, fmt='0.00', fill=VERDE, locked=False)
+            _f(ws, 'C%d' % r, '=IF(D%d="oz",ROUND(B%d*%s,0),"—")' % (r, r, ML_POR_OZ), fmt=ENTERO)
+            _f(ws, 'D%d' % r, u)
+            _f(ws, 'E%d' % r, quien)
+            _f(ws, 'F%d' % r, env, fmt='0.0', fill=VERDE, locked=False)
+            _f(ws, 'G%d' % r, ue)
+            _f(ws, 'H%d' % r, precio, fmt=MONEDA, fill=VERDE, locked=False)
+            _f(ws, 'I%d' % r, '=IF(F%d=0,0,B%d/F%d*H%d)' % (r, r, r, r), fmt='0.000')
+            for col, n in zip('JKL', ESCALAS):
+                _f(ws, '%s%d' % (col, r), '=B%d*%d' % (r, n), fmt='#,##0.00')
+            for cols, tam in (('MNO', FIFTH), ('PQR', HANDLE)):
+                for col, n in zip(cols, ESCALAS):
+                    _f(ws, '%s%d' % (col, r), '=IF(AND(D%d="oz",E%d="%s"),ROUNDUP(B%d*%d/%s,0),"—")'
+                       % (r, r, _H, r, n, tam), fmt=ENTERO)
+            _f(ws, 'S%d' % r, '=IF(F%d=0,0,ROUNDUP(B%d*100/F%d,0))' % (r, r, r), fmt=ENTERO)
+            verdes_dec += ['B%d' % r, 'H%d' % r]
         f1 = fila
         fila += 1
         _f(ws, 'A%d' % fila, 'Cost per drink, all ingredients', b=True)
-        _f(ws, 'H%d' % fila, '=SUM(H%d:H%d)' % (f0, f1), fmt=MONEDA, b=True)
+        _f(ws, 'I%d' % fila, '=SUM(I%d:I%d)' % (f0, f1), fmt=MONEDA, b=True)
         fila += 1
         _f(ws, 'A%d' % fila, 'Your cost per drink in dry hire (bar-supplied items)', b=True)
-        _f(ws, 'H%d' % fila, '=SUMIF(D%d:D%d,"%s",H%d:H%d)' % (f0, f1, _B, f0, f1), fmt=MONEDA, b=True)
+        _f(ws, 'I%d' % fila, '=SUMIF(E%d:E%d,"%s",I%d:I%d)' % (f0, f1, _B, f0, f1), fmt=MONEDA, b=True)
         filas.append((f0, f1, fila - 1, fila))
-        _dv(ws, 'decimal', ['E%d' % r for r in range(f0, f1 + 1)], f1='0.01', op='greaterThanOrEqual',
+        _dv(ws, 'decimal', ['F%d' % r for r in range(f0, f1 + 1)], f1='0.01', op='greaterThanOrEqual',
             titulo='Invalid pack size', msg='Enter the pack size in the pack unit (greater than 0).')
     _dv(ws, 'decimal', verdes_dec, f1='0', op='greaterThanOrEqual', titulo='Invalid amount',
         msg='Enter a number greater than or equal to 0.')
     fila += 2
-    for t in ('Specs converted from milliliters (30 ml = 1 oz) and rounded to the nearest 0.25 oz. A 750 ml bottle '
-              'holds about 25.4 oz and a 1 liter bottle about 33.8 oz.',
+    for t in ('Specs converted from milliliters (30 ml = 1 oz) and rounded to the nearest 0.25 oz; the (ml) column '
+              'converts back at 1 oz = 29.57 ml. A 750 ml bottle (a "fifth") holds about 25.4 oz, a 1.75 L bottle (a '
+              '"handle") about 59.2 oz and a 1 L bottle about 33.8 oz.',
               'Batching tip: pre-batch the still part of each cocktail (spirits, juice, syrup) and add sparkling wine '
               'or soda at the bar. Always offer at least one zero-proof drink.',
               'Allergens: tell guests that the Mai Tai contains almond (orgeat) and that the Pina Colada and the '
               'mocktail contain coconut. Keep an allergen card at the bar.'):
         _f(ws, 'A%d' % fila, t, wrap=True)
-        ws.merge_cells('A%d:L%d' % (fila, fila))
+        ws.merge_cells('A%d:S%d' % (fila, fila))
         ws.row_dimensions[fila].height = 30
         fila += 1
     ws.freeze_panes = 'B5'
@@ -842,24 +897,29 @@ def autotest(destino):
             continue
         if k.startswith('d_'):
             continue                                                         # intermedias: se comprueban vía botellas
-        c = 'B%d' % filas_compra[k]
+        fc = filas_compra[k]
+        c = ('%s%d' % (fc[1], fc[0])) if isinstance(fc, tuple) else 'B%d' % fc
         n += 1
         _cmp(err, 'compra %s!%s (%s) pycel' % (H2, c, k), xl.evaluate("'%s'!%s" % (H2, c)), v)
         _cmp(err, 'compra %s!%s (%s) caché' % (H2, c, k), wv[H2][c].value, v)
-    # 3) Signature Cocktail Specs (pycel + caché): coste por ingrediente, escalado, envases y totales
+    # 3) Signature Cocktail Specs (pycel + caché): ml, coste, escalado en oz, fifths, handles, envases y totales
     wb_tmp2 = openpyxl.Workbook()
     _ws3, filas_specs = hoja_specs(wb_tmp2)
     for (nombre, filas, tot, bar), (f0, f1, ft, fb) in zip(calcular_specs(), filas_specs):
         for i, x in enumerate(filas):
             r = f0 + i
-            for col, k in (('H', 'coste'), ('I', 'x50'), ('J', 'x100'), ('K', 'x200'), ('L', 'envases100')):
+            for k, col in COLS_SPECS.items():
                 n += 1
-                _cmp(err, 'specs %s %s%d pycel' % (nombre, col, r), xl.evaluate("'%s'!%s%d" % (H3, col, r)), x[k], 1e-6)
-                _cmp(err, 'specs %s %s%d caché' % (nombre, col, r), wv[H3]['%s%d' % (col, r)].value, x[k], 1e-6)
+                for lab, got in (('pycel', xl.evaluate("'%s'!%s%d" % (H3, col, r))), ('caché', wv[H3]['%s%d' % (col, r)].value)):
+                    if isinstance(x[k], str):
+                        if got != x[k]:
+                            err.append('specs %s %s%d %s: %r ≠ %r' % (nombre, col, r, lab, got, x[k]))
+                    else:
+                        _cmp(err, 'specs %s %s%d %s' % (nombre, col, r, lab), got, x[k], 1e-6)
         for fila, v in ((ft, tot), (fb, bar)):
             n += 1
-            _cmp(err, 'specs %s H%d pycel' % (nombre, fila), xl.evaluate("'%s'!H%d" % (H3, fila)), v, 1e-6)
-            _cmp(err, 'specs %s H%d caché' % (nombre, fila), wv[H3]['H%d' % fila].value, v, 1e-6)
+            _cmp(err, 'specs %s I%d pycel' % (nombre, fila), xl.evaluate("'%s'!I%d" % (H3, fila)), v, 1e-6)
+            _cmp(err, 'specs %s I%d caché' % (nombre, fila), wv[H3]['I%d' % fila].value, v, 1e-6)
         if bar > tot + 1e-9 or bar <= 0:
             err.append('specs %s: coste del bar %.3f fuera de (0, total %.3f]' % (nombre, bar, tot))
     # 4) el paquete con licencia en la hoja principal (solo pycel: la caché es la del paquete por defecto)
@@ -875,6 +935,8 @@ def autotest(destino):
     for k in ('b_spirits', 'b_wine', 'u_beer'):
         n += 1
         _cmp(err, 'licencia · compra %s pycel' % k, xl.evaluate("'%s'!B%d" % (H2, filas_compra[k])), compra_lic[k])
+    if xl.evaluate("'%s'!B%d" % (H2, filas_compra['b_spirits'] + 0 - 1)) != 'You (licensed package)':
+        err.append('licencia: la fila «Who buys it» no cambia a «You (licensed package)»')
     # 5) el interruptor del sales tax cambia el resultado
     e = dict(EJEMPLOS['Wedding, 120 guests, 5 hours'])
     if not calcular(dict(e, tax_sc='Yes'))['tax_amt'] > calcular(dict(e, tax_sc='No'))['tax_amt']:

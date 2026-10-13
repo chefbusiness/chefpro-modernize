@@ -21,6 +21,12 @@ URL_MBAR = 'aichef.pro/en/digital-products/mobile-bar-business-plan'
 _I, _S, _P, _R, _N, _E, _ES, _T = ('Inversión Inicial', '0. Supuestos', 'PyG 3 Años', 'Personal', 'Instrucciones',
                                    'Punto Equilibrio', 'Escenarios', 'Tesorería 12 meses')
 GLOSA_DRY_HIRE = '(you supply the alcohol; we bring the bar, the bartenders and everything else)'
+# Medidas (John, 13-oct): sistema US como principal y la métrica entre paréntesis (UK y Australia miden en ml)
+REGLA_UNIDADES = ('MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la '
+                  'métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», '
+                  '«200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en '
+                  'quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad '
+                  'principal')
 
 # ==========================================================================
 # FIJOS (por TEXTO ES del FT: valen en cualquier celda de los 2 libros) y POR_CELDA (solo esa celda)
@@ -86,7 +92,7 @@ POR_CELDA = OrderedDict([
     (('MBP', _S, 'A55'), 'Contingency on the trailer, conversion and fit-out lines (%)'),
     (('MBP', _S, 'A62'), 'ALCOHOL as a share of add-on sales (0% in dry hire: the host buys it)'),
     # Startup Costs filas 7-23 y base de amortización (D87; research §8)
-    (('MBP', _I, 'A7'), 'Bar trailer, used (6x12 cargo / concession or horse trailer)'),
+    (('MBP', _I, 'A7'), 'Bar trailer, used (6 x 12 ft cargo / concession or horse trailer)'),
     (('MBP', _I, 'A8'), 'Trailer conversion (bar top, cabinetry, hand sink, water tanks, LED, electrical)'),
     (('MBP', _I, 'A9'), 'Wrap, signage and bar facade'),
     (('MBP', _I, 'A10'), 'Portable bar for the second crew and indoor venues'),
@@ -278,7 +284,7 @@ _DESC = OrderedDict([
     ('optimista_ticket', 'optimistic scenario: price per guest (alias: usa {{optimista_precio}})'),
     ('pesimista_dias', 'pessimistic scenario: guests per event (alias: usa {{pesimista_invitados}})'),
     ('optimista_dias', 'optimistic scenario: guests per event (alias: usa {{optimista_invitados}})'),
-    ('inv_vehiculo', 'bar trailer, used (6x12 cargo / concession or horse trailer)'),
+    ('inv_vehiculo', 'bar trailer, used (6 x 12 ft cargo / concession or horse trailer)'),
     ('inv_adaptacion', 'trailer conversion (bar top, cabinetry, hand sink, water tanks, LED, electrical)'),
     ('inv_permisos', 'first-year permits and certifications (business license, sales tax permit, TABC / RBS / TIPS)'),
     ('inv_lanzamiento', 'website, photos, launch and first bridal show'),
@@ -406,8 +412,8 @@ DOCX_NOTAS_PLAN = OrderedDict([
              'chef, buffet, plated, drop-off, servers salvo «alcohol server certification»), «freelance», «author '
              'cocktails», «cocktail catering», las cifras del ES de coctelería (40.030, 70.000, «50 eventos/año», «42 '
              '%», «1.400 €/evento»…) y del caso del catering ($648,000, «180 events», «$60 per guest»), «España», '
-             '«ChefBusiness». «cash bar» solo para decir que está prohibida en dry hire. El cierre (productos) lo '
-             'escribe el ensamblador'),
+             '«ChefBusiness». «cash bar» solo para decir que está prohibida en dry hire. ' + REGLA_UNIDADES + '. El '
+             'cierre (productos) lo escribe el ensamblador'),
 ])
 _N9 = OrderedDict([
     (102, 'D92 §9 1/7: DRY HIRE = el modelo legal del kit. Missouri lo dice por escrito (Industry Circular 24-01, '
@@ -522,7 +528,7 @@ _NOTAS_SECCION = OrderedDict([
     (80, '§6 3/5: la operativa de un evento del ES: brief D-21 → visita técnica D-14 → shopping list al anfitrión D-14 '
          '→ mixers, garnish y hielo D-1 → montaje 60-120 min → servicio de 4-5 h con last call → desmontaje; 1 '
          'bartender por 50 invitados con barra completa'),
-    (81, '§6 4/5: hielo, garnish y copas: hielo comercial embolsado (1.5 lb por invitado, Kit estimate), garnish '
+    (81, '§6 4/5: hielo, garnish y copas: hielo comercial embolsado (1.5 lb, 0.68 kg, por invitado: Kit estimate), garnish '
          'cortado según lo que permita el condado; 2 copas por invitado la primera hora + 1 por hora después '
          '(eventplanning.com); mocktail siempre; alérgenos (orgeat, coco)'),
     (82, '§6 5/5: proveedores (mixers, siropes, garnish, hielo, desechables), party rentals y mantenimiento del '
@@ -641,7 +647,7 @@ CELDA_PISTAS = OrderedDict([
                          'exige licencia (docx §9)'),
     (('MBP', _S, 'C63'), 'D85: solo si vendieras alcohol con licencia (0 % en este plan)'),
     # Startup Costs, notas de la columna D (D87; research §4, §8)
-    (('MBP', _I, 'D7'), 'D87: bar trailer usado (6x12 cargo / concession o horse trailer). El vehículo de arrastre es el '
+    (('MBP', _I, 'D7'), 'D87: bar trailer usado (6 x 12 ft, cargo / concession o horse trailer). El vehículo de arrastre es el '
                         'TUYO ($0 en el plan): si no lo tienes, una pickup usada cuesta $10,000-$30,000 (Check Cherry). '
                         'Nunca «truck»: di «tow vehicle» o «pickup»'),
     (('MBP', _I, 'D8'), 'D87: conversión: barra, armarios, lavamanos y depósitos de agua, LED y eléctrico (research: '
@@ -743,7 +749,8 @@ _D19 = OrderedDict([
     (66, 'coste de arranque: barra portátil desde ~$1,000, herramientas $500-$1,500, arranque «lean» $2,000-$7,000; un '
          'remolque convertido suele costar decenas de miles — checkcherry.com'),
     (67, 'seguros: general liability + liquor liability desde $550 al año; por evento desde $275 — insurancecanopy.com'),
-    (68, 'hielo y mixers: 1.5 lb de hielo por invitado; mixers + garnish + hielo ≈ $2.25 por invitado — Kit estimate'),
+    (68, 'hielo y mixers: 1.5 lb (0.68 kg) de hielo por invitado; mixers + garnish + hielo ≈ $2.25 por invitado — Kit '
+         'estimate'),
 ])
 for _f, _p in _D19.items():
     for _col in 'ABCD':
@@ -752,8 +759,8 @@ for _f, _p in _D19.items():
 # Checklist (D91): una pista por FILA de tarea (columnas B tarea · C responsable · D plazo · E nota práctica). Las
 # ranuras del catering que sobreviven (F1-inventario §5) llevan «[sobrevive]»: su propuesta EN vale con ajustes
 _CK = ('D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una '
-       'celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta '
-       'fila: ')
+       'celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; ' +
+       REGLA_UNIDADES + '. Esta fila: ')
 TAREAS_MBAR = OrderedDict([
     ('F1 - Constitución', [
         'estructura: single-member LLC frente a sole proprietor o S corp, con tu contador (ES: autónomo / SL) '
@@ -781,14 +788,15 @@ TAREAS_MBAR = OrderedDict([
         'si solo das servicio; cuidado con entradas, tip jars y recargos), MT (no pre-stock, el anfitrión compra '
         'aparte, solo eventos privados), TX, CA, FL, NY (consultar): «varies by state», pregunta a tu ABC / TABC y '
         'guarda la respuesta',
-        'alquilar el storage unit o garaje para el equipo y el aparcamiento del remolque (ES: almacén de 15-25 m²)',
+        'alquilar el storage unit o garaje para el equipo y el aparcamiento del remolque (ES: almacén de unos 160-270 '
+        'sq ft)',
         'health permit SOLO si el condado lo exige: pregunta al health department si el garnish cortado y el hielo '
         'piden permiso o comisaria; hielo comercial embolsado; lavamanos en el remolque',
         'eventos públicos: en dry hire el permiso lo pide el organizador; con licencia, temporary / special event '
         'permit',
         'requisitos del venue: COI, additional insured, horarios de carga, toma eléctrica, normas de cristal y hielo, '
         'preferred vendor lists',
-        'comprar el bar trailer usado (6x12 cargo / concession o horse trailer) con inspección; el tow vehicle es el '
+        'comprar el bar trailer usado (6 x 12 ft, cargo / concession o horse trailer) con inspección; el tow vehicle es el '
         'tuyo (comprueba su capacidad de arrastre)',
         'remolque: título y registro en el DMV + commercial auto (o uso comercial del vehículo propio) que cubra el '
         'remolque [sobrevive con ajuste]',
@@ -806,9 +814,10 @@ TAREAS_MBAR = OrderedDict([
     ]),
     ('F3 - Equipamiento', [
         'barra portátil (portable bar) para el 2.º equipo y los salones donde no entra el remolque',
-        'proveedor de hielo comercial embolsado + ice bins y coolers de 60 lb; regla de 1.5 lb por invitado (Kit '
-        'estimate) (ES: máquina de hielo → hielo comprado)',
-        'coolers y neveras para mixers y para las bebidas del anfitrión',
+        'proveedor de hielo comercial embolsado + ice bins y coolers de 60 lb (27 kg) o en quarts, nunca en litros; '
+        'regla de 1.5 lb (0.68 kg) por invitado (Kit estimate) (ES: máquina de hielo → hielo comprado)',
+        'coolers y neveras para mixers y para las bebidas del anfitrión (capacidad en quarts, ES: nevera de 200 L ≈ 210 '
+        'quarts)',
         'cristalería (300 piezas + racks) o vasos desechables de calidad según el venue',
         'kit de barra para 4 estaciones: shakers, jiggers, speed rails, strainers, cucharas, abrebotellas, '
         'dispensadores',
@@ -900,6 +909,7 @@ PISTAS_EXTRA = [
     (r'[Cc]omida|[Cc]ocina|[Mm]enú|COMIDA', 'D86: no hay comida: bar packages (bartending, mixers, garnish, hielo) y '
                                             'add-ons; «drink menu» / «signature cocktails»; nunca food, kitchen ni menu '
                                             'a secas (gate)'),
+    (r'm²|m2\b|\bkg\b|\bkm\b|[Ll]itros?\b|\b\d+ ?L\b|\bml\b|°C|ºC', REGLA_UNIDADES),
     (r'[Ee]ventos?|[Bb]odas?', 'Glosario §9: mobile bar, dry hire, bar packages, signature cocktails, weddings, '
                                'corporate events / holiday parties, private parties'),
 ]
@@ -930,7 +940,9 @@ GLOSARIO_MBAR = OrderedDict([
     ('bebidas sin alcohol', 'mocktails · N/A drinks · zero-proof'),
     ('brindis con espumoso', 'champagne service / champagne toast'),
     ('mezcladores, garnish, hielo, vasos', 'mixers · garnishes · ice & coolers · plastic cups, napkins & straws'),
-    ('hielo por invitado', 'ice per guest (1.5 lbs per guest)'),
+    ('hielo por invitado', 'ice per guest (1.5 lbs per guest, 0.68 kg)'),
+    ('medidas (John, 13-oct)', 'US customary first, metric in parentheses: oz / fl oz (ml), lb (kg), quarts / gallons, '
+                               '°F (°C), miles, sq ft (m²); 750 ml bottle = a fifth, 1.75 L = a handle'),
     ('desplazamiento', 'travel fee'),
     ('mínimo de contratación', 'minimum · bar minimum'),
     ('señal / anticipo / fianza', 'deposit'),
@@ -1058,6 +1070,11 @@ _F18_MBAR = ('=IFERROR("At "&TEXT(\'0. Assumptions\'!$B$28,"0%")&" of sales: a c
              'trailer are in row 27)","")')
 
 
+_F13_MBAR = ('=IFERROR("At "&TEXT(\'0. Assumptions\'!$B$13,"0%")&" of BAR PACKAGE sales (mixers, garnishes, ice), not of '
+             'total sales: add-ons have their own line","")')
+_F14_MBAR = '=IFERROR("At "&TEXT(\'0. Assumptions\'!$B$14,"0%")&" of ADD-ON sales","")'
+
+
 def formulas_mbar():
     sys.path.insert(0, BP)
     import formulas_en as F                                                    # noqa: E402
@@ -1067,6 +1084,10 @@ def formulas_mbar():
             out[('MBP', h, c)] = f
     out[('MBP', _S, 'C9')] = _C9_MBAR
     out[('MBP', _P, 'F18')] = _F18_MBAR
+    out[('MBP', _P, 'F13')] = _F13_MBAR
+    out[('MBP', _P, 'F14')] = _F14_MBAR
+    out[('MBP', _T, 'O11')] = out[('MBP', _T, 'O11')].replace('Food and beverage purchases, consumables',
+                                                              'Mixers, garnishes, ice, disposables')
     out[('MBP', _E, 'A26')] = _PE_MBAR
     for c, f in F._inversion('D21', 'D22', 'D23', 'D25', 'D26', 'D28', 'D31', 'D32', 'D33', 24, 26, 31, 32,
                              'used bar trailer, trailer conversion, inverter generator, storage unit fit-out and the '
@@ -1115,6 +1136,7 @@ def completar(M):
     M.CIFRAS_PROHIBIDAS = cifras_prohibidas(M.VALORES_EN)
     M.RX_BAR_NO = RX_BAR_NO
     M.GLOSA_DRY_HIRE = GLOSA_DRY_HIRE
+    M.REGLA_UNIDADES = REGLA_UNIDADES
     glo = OrderedDict(M.GLOSARIO)
     for k in ('cliente/día', 'ticket medio sin IVA', 'PVP con IVA', 'aparcamiento y base del vehículo', 'venta ambulante'):
         glo.pop(k, None)                      # glosario del food truck que no vale aquí

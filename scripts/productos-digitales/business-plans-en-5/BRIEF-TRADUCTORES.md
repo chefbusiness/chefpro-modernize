@@ -34,6 +34,14 @@ else)» en la PRIMERA mención de cada entregable** (libro: la nota `0. Assumpti
 docx: §1 párrafo 40; la calculadora ya la trae); «signature cocktails», nunca «author cocktails»; «W-2 event
 bartenders», nunca «freelance»; «cash bar» solo para decir que está prohibida en dry hire; «BYOB» solo como aclaración.
 
+**Medidas US (John, 13-oct): TODAS en el sistema anglosajón**, con la métrica entre paréntesis para UK y Australia
+(allí los bartenders miden en ml, con jiggers de 25/50 ml). Principales: **oz / fl oz, lb, quarts / gallons, °F, miles,
+sq ft**. Ejemplos: «2 oz (59 ml)», «1.5 lb (0.68 kg) of ice per guest», «41°F (5°C)», «a 200 sq ft (19 m²) storage
+unit», «a 6 x 12 ft trailer». Botellas: **750 ml («a fifth»)** y **1.75 L («a handle»)**. Coolers e ice bins en
+**quarts, gallons o lb**, nunca en litros. Distancias en **miles**. El ES de coctelería mide en ml, kg, m² y litros
+(«almacén de 15-25 m²», «nevera de 200 L», «hielo 50 kg»): conviértelo siempre (≈ 160-270 sq ft, ≈ 210 quarts, ≈ 110 lb).
+Nada de m², kg, km, litros ni °C como unidad principal.
+
 **Qué lees** (y nada más): tu entrada `BP5/tandas/<TANDA>.entrada.json`; `BP5/SPEC-delta.md` (D81-D95, §0);
 `BP5/F1-research-us-delta.md` §1, §4, §5, §6 y §8 (el §9 está en la sección 1 de este brief); `BP5/fuente_es_mbar.json`
 (solo la parte de tu tanda); para el docx, el EN del catering de tus ranuras (`BP4/docx_en_cat_a.json` o `_b.json`)
@@ -116,6 +124,9 @@ docx y en rangos de mercado con fuente; pestañas citadas entre comillas dobles 
 ---
 
 ## 1. Glosario OBLIGATORIO — research §9 completo (copia literal de `F1-research-us-delta.md`)
+
+> Con la regla de **medidas US** de la sección 0 (oz / fl oz, lb, quarts / gallons, °F, miles, sq ft; la métrica entre
+> paréntesis): p. ej. el término 24 se escribe «1.5 lbs per guest (0.68 kg)».
 
 ### §9. Jerga profesional US (glosario OBLIGATORIO de los redactores; instrucción de John, 13-oct)
 
