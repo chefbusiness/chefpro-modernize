@@ -28,7 +28,7 @@
 //     equilibrio 134 eventos/año frente a 160; DSCR mín 2.93×; 9 personas, 4 puestos; seguros $4,000; pesimista
 //     120 × $12.60 × 86 → caja −$2,664 («the cash runs out»). Caso = cuartil alto (Check Cherry): la mediana del primer
 //     año son 3 eventos y se dice. Los 3 presupuestos de ejemplo salen de «3 Example Quotes» de la calculadora (Kit
-//     estimates: $19.00 / $16.50 / $16.00 por invitado). Ninguna cifra del ES.
+//     estimates: $12.50 / $9.50 / $10.50 por invitado tras la ronda de REVISION-FINAL). Ninguna cifra del ES.
 //     Conteos del producto: 10 secciones, más de 6,500 palabras (6,796), 9 hojas, más de 700 fórmulas (722), 68
 //     tareas en 6 fases (11/13/12/10/12/10), 10 recetas de signature cocktails (9 + 1 mocktail).
 //   · FAQ «Does it work in the UK, Canada or Australia?» (John, 13-oct; estilo de la del catering en PR #126),
@@ -74,7 +74,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'How much should I charge per guest for a mobile bar?',
-    a: "Start from your costs. The pricing calculator turns staff hours and wages (with payroll taxes), mixers, garnishes and N/A drinks, cups, ice and mileage into a price per guest that meets your target margin, rounded up to the next 50 cents, and shows its hourly equivalent; then it adds any flat bar fee, specialty bar upcharge, service charge and sales tax, works out the deposit and the balance, and shows the gross margin the quote really leaves. The host's alcohol is never in your price. Its three example quotes, all dry hire and kit estimates: a wedding for 120 guests over 5 hours at $19.00 per guest, a corporate holiday party for 100 guests over 4 hours at $16.50 and a private birthday for 60 guests with a limited bar and a mimosa bar at $16.00. As a market reference, Check Cherry reports a median of $750 per event and about $75-$120 per bartender hour for bartender-only service.",
+    a: "Start from your costs. The pricing calculator turns staff hours and wages (with payroll taxes), mixers, garnishes and N/A drinks, cups, ice and mileage into a price per guest that meets your target margin, rounded up to the next 50 cents, and shows its hourly equivalent; then it adds any flat bar fee, specialty bar upcharge, service charge and sales tax, works out the deposit and the balance, and shows the gross margin the quote really leaves. The host's alcohol is never in your price. Its three example quotes, all dry hire and kit estimates: a wedding for 120 guests over 5 hours at $12.50 per guest plus a flat bar fee, a corporate holiday party for 100 guests over 4 hours at $9.50 and a private birthday for 60 guests with a limited bar at $10.50. As a market reference, Check Cherry reports a median of $750 per event and about $75-$120 per bartender hour for bartender-only service.",
   },
   {
     q: 'How many bartenders do I need per guest?',
@@ -152,11 +152,11 @@ const data: PlanNegocioData = {
   images: {
     // hero bg (6) — las del ES de coctelería sin texto en español + un signature cocktail sin texto.
     gallery: [
+      '/lovable-uploads/ai-gallery/mobile-bar-trailer-wedding.jpg',
+      '/lovable-uploads/ai-gallery/mobile-bar-portable-corporate.jpg',
       '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
       '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-4.jpeg',
       '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-6.jpeg',
-      '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-5.jpeg',
-      '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-3.jpeg',
       '/lovable-uploads/ai-gallery/consultor-bartender-coctel.jpg',
     ],
     // strip del ContentGrid (6): el mismo set en otro orden, como el catering.
@@ -164,13 +164,13 @@ const data: PlanNegocioData = {
       '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-6.jpeg',
       '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
       '/lovable-uploads/ai-gallery/consultor-bartender-coctel.jpg',
+      '/lovable-uploads/ai-gallery/mobile-bar-trailer-wedding.jpg',
       '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-4.jpeg',
-      '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-3.jpeg',
-      '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-5.jpeg',
+      '/lovable-uploads/ai-gallery/mobile-bar-portable-corporate.jpg',
     ],
     whyBg: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-4.jpeg',
     buyBoxBg: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-6.jpeg',
-    ctaBg: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
+    ctaBg: '/lovable-uploads/ai-gallery/mobile-bar-trailer-wedding.jpg',
   },
 
   hero: {
