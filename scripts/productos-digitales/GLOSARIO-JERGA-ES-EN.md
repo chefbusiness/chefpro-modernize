@@ -55,7 +55,7 @@
 ## Bar y eventos (detalle y fuentes: `business-plans-en-5/F1-research-us-delta.md` §9)
 
 coctelería para eventos → **mobile bar** (negocio) · barra móvil (mueble) → **portable bar** · el cliente pone el alcohol
-→ **dry hire** («you supply the alcohol»; «BYOB» solo como aclaración) · cóctel de autor → **signature cocktails**
+→ **dry hire** (glosa SEGÚN QUIÉN LEE: para el cliente del bar, «you supply the alcohol»; en los entregables y la landing, que los lee el OPERADOR, «your client buys the alcohol; you bring the bar, the bartenders and everything else». Lo cazó la revisión final del Mobile Bar, 13-oct; «BYOB» solo como aclaración) · cóctel de autor → **signature cocktails**
 (nunca «author cocktails») · experiencias temáticas → **specialty bars / themed bars** · barra de pago → **cash bar** ·
 jefe de barra → **lead bartender** · ayudante → **barback** · certificado del seguro → **COI / additional insured** ·
 requisitos de la sala → **venue requirements** · temporada alta de bodas → **peak wedding season**.
