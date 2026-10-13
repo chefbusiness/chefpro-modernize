@@ -1,0 +1,5068 @@
+[
+ {
+  "id": "patata",
+  "es": "patata, patatas",
+  "variantes": [
+   {
+    "termino": "papa, papas",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "batata",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR, UY y PY «batata» es el boniato (camote en MX y PE); en Brasil «batata» es la patata.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO US «papa» 165.000/mes vs «patata» 8.100",
+   "SERP «habichuelas» US"
+  ]
+ },
+ {
+  "id": "nata",
+  "es": "nata (para montar, de cocinar)",
+  "variantes": [
+   {
+    "termino": "crema de leche",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "PY",
+     "DO",
+     "PR",
+     "PA",
+     "UY",
+     "CU"
+    ]
+   },
+   {
+    "termino": "crema para batir (montar); crema para cocinar",
+    "paises": [
+     "MX",
+     "US",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "creme de leite (cocinar); chantilly (montar)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "UY"
+  ],
+  "nota": "En MX «crema» a secas es la ácida, no la de montar; en CR «natilla» es crema agria; en BR «nata» es la capa de la leche.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO AR «crema de leche» 22.200 vs «nata» ~0",
+   "CL 22.200 vs 2.400",
+   "MX «crema para batir» 90.500",
+   "SERP US «nata» = crema de mercado hispano"
+  ]
+ },
+ {
+  "id": "zumo",
+  "es": "zumo, zumos",
+  "variantes": [
+   {
+    "termino": "jugo, jugos",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "suco",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En Puerto Rico a la naranja se le dice «china»: «jugo de china».",
+  "confianza": "alta",
+  "evidencia": [
+   "MX «jugo de naranja» 22.200 vs «zumo» no relevante",
+   "US «jugo» 22.200 vs «zumo» 6.600",
+   "DO «jugo» 1.900 vs «zumo» 320"
+  ]
+ },
+ {
+  "id": "melocoton",
+  "es": "melocotón",
+  "variantes": [
+   {
+    "termino": "durazno",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "melocotón",
+    "paises": [
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "pêssego",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Durazno» es la fruta de uso diario fuera del Caribe; «melocotón» aparece sobre todo en latas e importados.",
+  "confianza": "media",
+  "evidencia": [
+   "MX «durazno» 49.500 vs «melocotón» 33.100",
+   "GT 3.600 vs 2.900",
+   "CL «durazno» 8.100",
+   "AR «melocotón» 18.100 > «durazno» 14.800 (recetas de España): en mostrador se dice durazno"
+  ]
+ },
+ {
+  "id": "judias_verdes",
+  "es": "judías verdes",
+  "variantes": [
+   {
+    "termino": "ejotes",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "US"
+    ]
+   },
+   {
+    "termino": "vainitas",
+    "paises": [
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "PA",
+     "DO"
+    ]
+   },
+   {
+    "termino": "habichuelas (tiernas)",
+    "paises": [
+     "CO",
+     "CU",
+     "PR",
+     "DO"
+    ]
+   },
+   {
+    "termino": "chauchas",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "porotos verdes",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "vainicas",
+    "paises": [
+     "CR"
+    ]
+   },
+   {
+    "termino": "vagem",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Habichuelas» en DO/PR sin apellido son las alubias; para la verde se añade «tiernas» o «verdes».",
+  "confianza": "media",
+  "evidencia": [
+   "MX «ejotes» 40.500 vs «judías verdes» 8.100",
+   "AR «chauchas» 18.100",
+   "CL «porotos verdes» 6.600",
+   "PE «vainitas» 1.900",
+   "VE «vainitas» 1.300",
+   "CO «habichuelas» 3.600"
+  ]
+ },
+ {
+  "id": "guisantes",
+  "es": "guisantes",
+  "variantes": [
+   {
+    "termino": "chícharos",
+    "paises": [
+     "MX",
+     "US",
+     "CU",
+     "GT",
+     "HN",
+     "SV",
+     "NI"
+    ]
+   },
+   {
+    "termino": "arvejas, arveja",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "CR"
+    ]
+   },
+   {
+    "termino": "ervilha",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "DO",
+   "PR",
+   "PA"
+  ],
+  "nota": "En PR y DO los «gandules» son guandú, no guisantes. En CU «chícharo» también es legumbre seca (split pea).",
+  "confianza": "media",
+  "evidencia": [
+   "MX «chícharos» 12.100 vs «guisantes» 8.100",
+   "AR «arvejas» 12.100",
+   "CO «arveja» 14.800 vs «guisantes» 3.600",
+   "US «chícharos» 9.900 / «arvejas» 8.100",
+   "DO «guisantes» 590 vs «chícharos» 320"
+  ]
+ },
+ {
+  "id": "gambas",
+  "es": "gambas, langostinos",
+  "variantes": [
+   {
+    "termino": "camarones",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "langostinos",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "camarão (pequeno); pitu / camarão-rosa (grande)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En PE «camarón» es el de río; el marino grande es «langostino». En AR/UY «gambas» se ve en cartas de cocina española.",
+  "confianza": "media"
+ },
+ {
+  "id": "fresa",
+  "es": "fresa, fresón",
+  "variantes": [
+   {
+    "termino": "frutilla",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "morango",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "US"
+  ],
+  "nota": "«Fresón» (fresa grande de España) no se usa: es solo «fresa» o «frutilla».",
+  "confianza": "alta",
+  "evidencia": [
+   "MX «fresa» 135.000",
+   "CO «fresa» 27.100 vs «frutilla» ~0",
+   "AR «frutilla» 18.100 vs «fresa» 14.800",
+   "CL «frutilla» 14.800 vs «fresa» 9.900",
+   "BO 2.900 / 2.900"
+  ]
+ },
+ {
+  "id": "aguacate",
+  "es": "aguacate",
+  "variantes": [
+   {
+    "termino": "palta",
+    "paises": [
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "abacate",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PY",
+   "US"
+  ],
+  "nota": "En CL y AR «aguacate» se entiende, pero la carta y el mercado dicen «palta».",
+  "confianza": "alta",
+  "evidencia": [
+   "CL «palta» 14.800 vs «aguacate» 4.400",
+   "PE «palta» 18.100 vs 5.400",
+   "AR «palta» 18.100 vs «aguacate» 9.900",
+   "CO «aguacate» 14.800 vs «palta» 2.400",
+   "VE «aguacate» 5.400 vs «palta» 1.000",
+   "PY «aguacate» 2.400 vs «palta» 720",
+   "BO «palta» 1.900 vs 1.300"
+  ]
+ },
+ {
+  "id": "maiz",
+  "es": "maíz",
+  "variantes": [
+   {
+    "termino": "elote (mazorca tierna); maíz",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "US"
+    ]
+   },
+   {
+    "termino": "choclo",
+    "paises": [
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "mazorca, maíz tierno",
+    "paises": [
+     "CO",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "jojoto",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "milho verde",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El grano seco, la harina y el aceite son «maíz» en todas partes; la diferencia es la mazorca tierna.",
+  "confianza": "media",
+  "evidencia": [
+   "MX «elote» 110.000",
+   "CL/AR/PE «choclo» 8.100–12.100",
+   "CO «mazorca» 12.100"
+  ]
+ },
+ {
+  "id": "pimiento",
+  "es": "pimiento, pimientos",
+  "variantes": [
+   {
+    "termino": "morrón, pimiento morrón",
+    "paises": [
+     "MX",
+     "AR",
+     "UY",
+     "US"
+    ]
+   },
+   {
+    "termino": "pimentón",
+    "paises": [
+     "CO",
+     "VE",
+     "CL",
+     "BO",
+     "PA"
+    ]
+   },
+   {
+    "termino": "chile dulce (GT: chile pimiento)",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "ají dulce / ají morrón",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "locote",
+    "paises": [
+     "PY"
+    ]
+   },
+   {
+    "termino": "pimentão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "PR",
+   "EC",
+   "PE"
+  ],
+  "nota": "Falso amigo grave: «pimentón» en CO, VE y CL es el pimiento; el pimentón de España (polvo) se pide como «paprika».",
+  "confianza": "media",
+  "evidencia": [
+   "PE «pimiento» 5.400 vs «ají» 6.600 (picante)",
+   "VE «pimentón» 2.900 vs «pimiento» 390",
+   "UY «morrón» 1.600 vs «pimiento» 210",
+   "GT «chile pimiento» 1.900 vs «pimiento» 480"
+  ]
+ },
+ {
+  "id": "cacahuete",
+  "es": "cacahuete",
+  "variantes": [
+   {
+    "termino": "cacahuate",
+    "paises": [
+     "MX",
+     "US"
+    ]
+   },
+   {
+    "termino": "maní",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "amendoim",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Para alérgenos en carta, «maní» y «cacahuate» son lo mismo que cacahuete.",
+  "confianza": "alta",
+  "evidencia": [
+   "MX «cacahuate» 49.500",
+   "CO «maní» 3.600",
+   "UY «cacahuete» 210 vs «maní» 140 (ambos bajos)",
+   "DO «cacahuete» 170"
+  ]
+ },
+ {
+  "id": "alubias",
+  "es": "alubias, judías (secas)",
+  "variantes": [
+   {
+    "termino": "frijoles",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "CO",
+     "US"
+    ]
+   },
+   {
+    "termino": "porotos",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "habichuelas",
+    "paises": [
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "caraotas",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "fréjol, frejoles",
+    "paises": [
+     "EC",
+     "PE"
+    ]
+   },
+   {
+    "termino": "feijão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR y MX «alubia» es la blanca; «frijoles» de MX son los negros o pintos. «Habichuelas» en DO/PR son secas o guisadas.",
+  "confianza": "media",
+  "evidencia": [
+   "CO «frijoles» 14.800",
+   "VE «caraotas» 3.600 vs «frijoles» 1.900",
+   "DO «habichuelas» 1.000",
+   "AR «porotos» 9.900",
+   "CL «poroto» 14.800",
+   "US «frijoles» 49.500"
+  ]
+ },
+ {
+  "id": "champinon",
+  "es": "champiñón",
+  "variantes": [
+   {
+    "termino": "hongos",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "cogumelo (champignon)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En MX «hongos» es la palabra general y «setas» casi no se usa; «champiñón» se entiende siempre.",
+  "confianza": "media"
+ },
+ {
+  "id": "calabacin",
+  "es": "calabacín",
+  "variantes": [
+   {
+    "termino": "calabacita",
+    "paises": [
+     "MX",
+     "US"
+    ]
+   },
+   {
+    "termino": "zapallito, zapallo italiano",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PE",
+     "BO",
+     "PY"
+    ]
+   },
+   {
+    "termino": "zucchini, zuquini",
+    "paises": [
+     "CO",
+     "EC",
+     "CR",
+     "PA",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "DO"
+    ]
+   },
+   {
+    "termino": "abobrinha",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "VE",
+   "CU",
+   "PR"
+  ],
+  "nota": "Falso amigo: «calabaza» en MX es la grande; el calabacín es la «calabacita». En AR «zapallito» es el redondo.",
+  "confianza": "media"
+ },
+ {
+  "id": "calabaza",
+  "es": "calabaza",
+  "variantes": [
+   {
+    "termino": "zapallo",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "PE",
+     "BO",
+     "EC",
+     "PA"
+    ]
+   },
+   {
+    "termino": "ahuyama, auyama",
+    "paises": [
+     "CO",
+     "VE",
+     "DO"
+    ]
+   },
+   {
+    "termino": "ayote",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "abóbora (jerimum)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "CU",
+   "PR",
+   "US"
+  ],
+  "nota": "Falso amigo: en AR «calabaza» es otra especie; el calabacín es «zapallito». Bolivia/Perú también «zapallo».",
+  "confianza": "media"
+ },
+ {
+  "id": "bollería",
+  "es": "bollería",
+  "variantes": [
+   {
+    "termino": "pan dulce",
+    "paises": [
+     "MX",
+     "US",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "PE",
+     "BO",
+     "EC",
+     "VE",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "facturas",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "pastelería, pasteles",
+    "paises": [
+     "CO",
+     "CL",
+     "CU"
+    ]
+   },
+   {
+    "termino": "pães doces e folhados",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR «facturas» son medialunas, vigilantes, etc.; en MX «pan dulce» incluye conchas y orejas.",
+  "confianza": "media",
+  "evidencia": [
+   "AR «facturas» 49.500",
+   "MX «bolillo» 33.100 (pan salado)"
+  ]
+ },
+ {
+  "id": "bizcocho",
+  "es": "bizcocho",
+  "variantes": [
+   {
+    "termino": "bizcochuelo",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "queque, keke",
+    "paises": [
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "ponqué, panqué",
+    "paises": [
+     "MX",
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "bolo (fofo)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "DO",
+   "PR",
+   "US"
+  ],
+  "nota": "En CU, DO y PR «bizcocho» es cualquier pastel/tarta de cumpleaños, no solo el bizcocho esponjoso.",
+  "confianza": "media"
+ },
+ {
+  "id": "tarta",
+  "es": "tarta, tartas",
+  "variantes": [
+   {
+    "termino": "pastel",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "US"
+    ]
+   },
+   {
+    "termino": "torta",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "bizcocho",
+    "paises": [
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "torta / bolo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falsos amigos: «tarta» en AR es la salada (de verdura); «torta» en MX es un bocadillo; «pastel» en CL es un pastel salado.",
+  "confianza": "alta",
+  "evidencia": [
+   "CO «torta» 27.100 vs «pastel» 14.800",
+   "AR «torta» 40.500",
+   "CL «torta» 33.100 vs «pastel» 8.100",
+   "MX «torta» 110.000 (bocadillo)",
+   "SERP CO «pastel»: recetas de pasteles de cumpleaños"
+  ]
+ },
+ {
+  "id": "magdalena",
+  "es": "magdalena",
+  "variantes": [
+   {
+    "termino": "muffin, cupcake",
+    "paises": [
+     "US",
+     "MX"
+    ]
+   },
+   {
+    "termino": "madalena (muffin)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "La magdalena de limón estilo España se entiende, pero en carta US/MX venden «muffin» o «cupcake».",
+  "confianza": "media"
+ },
+ {
+  "id": "nata_montada",
+  "es": "nata (montada, líquida)",
+  "variantes": [
+   {
+    "termino": "crema batida",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "crema chantilly",
+    "paises": [
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "chantilly",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Sin montar: crema de leche o crema para batir (ver «nata»). «Chantilly» lleva azúcar y vainilla.",
+  "confianza": "media"
+ },
+ {
+  "id": "azucar_glas",
+  "es": "azúcar glas",
+  "variantes": [
+   {
+    "termino": "azúcar glass",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "US"
+    ]
+   },
+   {
+    "termino": "azúcar impalpable",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "PE",
+     "BO",
+     "EC"
+    ]
+   },
+   {
+    "termino": "azúcar en polvo",
+    "paises": [
+     "VE",
+     "DO",
+     "PR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "azúcar pulverizada",
+    "paises": [
+     "CO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "azúcar flor",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "açúcar de confeiteiro",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Azúcar en polvo» puede ser azúcar granulada molida o glas: en recetas especificar con almidón.",
+  "confianza": "media"
+ },
+ {
+  "id": "azucar_moreno",
+  "es": "azúcar moreno",
+  "variantes": [
+   {
+    "termino": "azúcar morena",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "azúcar rubia",
+    "paises": [
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "PY"
+    ]
+   },
+   {
+    "termino": "azúcar mascabo / mascabada",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "MX"
+    ]
+   },
+   {
+    "termino": "açúcar mascavo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Ojo: panela, piloncillo, chancaca y papelón son azúcar de caña sin refinar, de otro sabor y humedad.",
+  "confianza": "media"
+ },
+ {
+  "id": "harina_fuerza",
+  "es": "harina de fuerza",
+  "variantes": [
+   {
+    "termino": "harina para pan",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "harina panadera",
+    "paises": [
+     "PE",
+     "BO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "harina 0000 (fuerte); 000",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "farinha de trigo para pão (alta proteína)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR la 0000 es la más fuerte (pastelería fina) y la 000 la de uso general; no es la escala española.",
+  "confianza": "media"
+ },
+ {
+  "id": "levadura_prensada",
+  "es": "levadura fresca / prensada",
+  "variantes": [
+   {
+    "termino": "levadura fresca",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "fermento biológico fresco",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Prensada» casi no se usa; se pide «levadura fresca».",
+  "confianza": "alta"
+ },
+ {
+  "id": "levadura_quimica",
+  "es": "levadura química",
+  "variantes": [
+   {
+    "termino": "polvo de hornear",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "fermento químico em pó",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "No es bicarbonato: lleva ácido y almidón. En ES «levadura en polvo» o «Royal» según el país.",
+  "confianza": "alta"
+ },
+ {
+  "id": "mantequilla",
+  "es": "mantequilla",
+  "variantes": [
+   {
+    "termino": "manteca",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "manteiga",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "US"
+  ],
+  "nota": "Falso amigo: «manteca» en MX, CU o VE es grasa de cerdo; en AR/UY/PY es la mantequilla.",
+  "confianza": "alta",
+  "evidencia": [
+   "SERP general sin volumen específico"
+  ]
+ },
+ {
+  "id": "chocolate_taza",
+  "es": "chocolate a la taza",
+  "variantes": [
+   {
+    "termino": "chocolate caliente",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "chocolate quente cremoso",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El espeso estilo España se pide «chocolate espeso» o «a la española»; «chocolate de mesa» es la tableta de MX.",
+  "confianza": "media"
+ },
+ {
+  "id": "churro",
+  "es": "churros, porras",
+  "variantes": [
+   {
+    "termino": "churros",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En LatAm suelen ir rellenos (cajeta, dulce de leche, manjar). «Porras» no se usa.",
+  "confianza": "media"
+ },
+ {
+  "id": "napolitana",
+  "es": "napolitana",
+  "variantes": [
+   {
+    "termino": "pan de chocolate",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "medialuna / factura de chocolate",
+    "paises": [
+     "AR",
+     "PY"
+    ]
+   },
+   {
+    "termino": "pão de chocolate (folhado)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "UY"
+  ],
+  "nota": "Falso amigo: en AR «napolitana» es la milanesa o pizza napolitana; en UY es un hojaldre dulce.",
+  "confianza": "media"
+ },
+ {
+  "id": "rebozado",
+  "es": "rebozado, empanado",
+  "variantes": [
+   {
+    "termino": "empanizado",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "US"
+    ]
+   },
+   {
+    "termino": "apanado",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "empanado / rebozado",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "PR"
+    ]
+   },
+   {
+    "termino": "empanado / à milanesa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «capeado» es rebozado en huevo/tempura; «empanizado» lleva pan rallado.",
+  "confianza": "media"
+ },
+ {
+  "id": "carne_picada",
+  "es": "carne picada",
+  "variantes": [
+   {
+    "termino": "carne molida",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "carne moída",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "AR",
+   "UY"
+  ],
+  "nota": "En MX «picadillo» es el guisado de carne molida con verduras.",
+  "confianza": "alta",
+  "evidencia": [
+   "SERP general"
+  ]
+ },
+ {
+  "id": "ternera",
+  "es": "ternera",
+  "variantes": [
+   {
+    "termino": "res, carne de res",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "carne de vaca / vacuna",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "vacuno",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "carne bovina; vitela (ternera joven)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En LatAm «ternera» es el animal joven (veal), no la carne de vaca; no pedirla para guisos de res.",
+  "confianza": "media"
+ },
+ {
+  "id": "cerdo",
+  "es": "cerdo",
+  "variantes": [
+   {
+    "termino": "puerco",
+    "paises": [
+     "MX",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "chancho",
+    "paises": [
+     "CL",
+     "PE",
+     "BO",
+     "EC"
+    ]
+   },
+   {
+    "termino": "porco",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CO",
+   "VE",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En carta «cerdo» se entiende siempre; «puerco» y «chancho» son habituales en mercado y conversación.",
+  "confianza": "media"
+ },
+ {
+  "id": "solomillo",
+  "es": "solomillo",
+  "variantes": [
+   {
+    "termino": "filete (de res)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "lomo fino",
+    "paises": [
+     "CO",
+     "PE",
+     "BO",
+     "EC",
+     "VE"
+    ]
+   },
+   {
+    "termino": "lomo",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL"
+    ]
+   },
+   {
+    "termino": "filé mignon (vaca); lombo (cerdo)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El solomillo de cerdo español es «lomo» o «filete de cerdo». Cuidado: «lomo» en AR/UY es el filete de res.",
+  "confianza": "media"
+ },
+ {
+  "id": "panceta",
+  "es": "panceta, bacon",
+  "variantes": [
+   {
+    "termino": "tocino",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PE",
+     "EC",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "tocineta",
+    "paises": [
+     "CO",
+     "VE",
+     "PR"
+    ]
+   },
+   {
+    "termino": "bacon (defumado); barriga de porco",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "AR",
+   "UY",
+   "PY",
+   "CL"
+  ],
+  "nota": "Falso amigo: «tocino» en ES es solo grasa dorsal; en LatAm es el bacon. «Bondiola» es la paleta de cerdo en AR.",
+  "confianza": "alta",
+  "evidencia": [
+   "AR «bondiola» 33.100/mes"
+  ]
+ },
+ {
+  "id": "jamon_serrano",
+  "es": "jamón serrano",
+  "variantes": [
+   {
+    "termino": "jamón crudo",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "presunto cru / presunto serrano",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "PY",
+   "US"
+  ],
+  "nota": "En AR/UY «jamón crudo» no implica curado serrano; «jamón» a secas es el cocido.",
+  "confianza": "media"
+ },
+ {
+  "id": "jamon_york",
+  "es": "jamón York",
+  "variantes": [
+   {
+    "termino": "jamón cocido",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "CO",
+     "VE",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "jamón de pierna / jamón",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "US"
+    ]
+   },
+   {
+    "termino": "presunto cozido",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El «jamón York» como nombre solo se entiende en mercado con carta española.",
+  "confianza": "media"
+ },
+ {
+  "id": "embutido",
+  "es": "embutidos",
+  "variantes": [
+   {
+    "termino": "carnes frías",
+    "paises": [
+     "MX",
+     "US"
+    ]
+   },
+   {
+    "termino": "fiambres",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "frios e embutidos",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL"
+  ],
+  "nota": "Falso amigo: en GT «fiambre» es el plato frío de Todos los Santos; en AR es el embutido cocido.",
+  "confianza": "media"
+ },
+ {
+  "id": "bocadillo",
+  "es": "bocadillo",
+  "variantes": [
+   {
+    "termino": "torta",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "sándwich, sánduche",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "sanduíche / pão com",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en CO y VE «bocadillo» es un dulce de guayaba; en MX «torta» es el bocadillo.",
+  "confianza": "alta",
+  "evidencia": [
+   "MX «torta» 110.000 / «torta de jamón» 5.400 vs «bocadillo» 2.400",
+   "CL «sándwich» 880 vs «bocadillo» 590"
+  ]
+ },
+ {
+  "id": "tortilla_patata",
+  "es": "tortilla de patata(s), tortilla española",
+  "variantes": [
+   {
+    "termino": "tortilla española",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "tortilla de papa(s)",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "tortilha espanhola",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Tortilla» sola en MX y CAm es el disco de maíz; la de patata siempre lleva «española».",
+  "confianza": "media"
+ },
+ {
+  "id": "tapa_pincho",
+  "es": "pincho, pinchos",
+  "variantes": [
+   {
+    "termino": "botana",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "boquitas, bocas",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "pasabocas",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "pasapalos",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "piqueo",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "picada / copetín",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "BO"
+    ]
+   },
+   {
+    "termino": "petisco / tira-gosto",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "EC",
+   "US"
+  ],
+  "nota": "Falso amigo: «pincho» en MX o CO es un brochette. «Tapas» a secas se entiende solo en cartas españolas.",
+  "confianza": "media",
+  "evidencia": [
+   "CO «pasabocas» 8.100 vs «tapas» 4.400",
+   "PR «pinchos» 3.600 (brochetas)"
+  ]
+ },
+ {
+  "id": "pimenton",
+  "es": "pimentón",
+  "variantes": [
+   {
+    "termino": "paprika",
+    "paises": [
+     "CO",
+     "VE",
+     "CL",
+     "PE",
+     "US"
+    ]
+   },
+   {
+    "termino": "páprica",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "EC",
+   "BO",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "Falso amigo grave: «pimentón» en CO, VE y CL es el pimiento (hortaliza); el polvo se pide «paprika».",
+  "confianza": "media"
+ },
+ {
+  "id": "aceite_girasol",
+  "es": "aceite de girasol",
+  "variantes": [
+   {
+    "termino": "aceite de maravilla",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "óleo de girassol",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En MX conviven «aceite vegetal» y «de canola», más corrientes que el de girasol.",
+  "confianza": "media"
+ },
+ {
+  "id": "legumbres",
+  "es": "legumbres",
+  "variantes": [
+   {
+    "termino": "menestras",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "granos",
+    "paises": [
+     "CO",
+     "VE",
+     "DO",
+     "PR",
+     "CU"
+    ]
+   },
+   {
+    "termino": "leguminosas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "EC",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "«Menestra» en PE son lentejas, frijoles, pallares; en ES «menestra» es un plato de verduras.",
+  "confianza": "media"
+ },
+ {
+  "id": "marisco",
+  "es": "marisco, mariscos",
+  "variantes": [
+   {
+    "termino": "frutos de mar",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "frutos do mar",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "PY",
+   "US"
+  ],
+  "nota": "En LatAm «mariscos» incluye a menudo pescado y ceviche; en ES excluye al pescado.",
+  "confianza": "media"
+ },
+ {
+  "id": "mejillones",
+  "es": "mejillones",
+  "variantes": [
+   {
+    "termino": "choritos",
+    "paises": [
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "mexilhões",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "BO",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En CL «choritos» son mejillones; «mejillón» se ve en menús para turistas.",
+  "confianza": "alta"
+ },
+ {
+  "id": "requeson",
+  "es": "requesón",
+  "variantes": [
+   {
+    "termino": "ricota",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC"
+    ]
+   },
+   {
+    "termino": "ricota",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "US"
+  ],
+  "nota": "En BR «requeijão» es un queso cremoso para untar, no el requesón.",
+  "confianza": "media"
+ },
+ {
+  "id": "cafe_cortado",
+  "es": "café cortado",
+  "variantes": [
+   {
+    "termino": "cortadito",
+    "paises": [
+     "CU",
+     "PR"
+    ]
+   },
+   {
+    "termino": "pintado / perico",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "marrón",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "pingado",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "DO",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En AR/UY/CL «cortado» es exactamente el de España; en DO se pide «café con leche» o «cortadito».",
+  "confianza": "media"
+ },
+ {
+  "id": "refresco",
+  "es": "refrescos",
+  "variantes": [
+   {
+    "termino": "refresco",
+    "paises": [
+     "MX",
+     "CU",
+     "DO",
+     "PR",
+     "VE",
+     "UY",
+     "PA"
+    ]
+   },
+   {
+    "termino": "gaseosa",
+    "paises": [
+     "CO",
+     "EC",
+     "PE",
+     "BO",
+     "AR",
+     "PY",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "bebida",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "soda",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "refrigerante",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "UY",
+   "PA"
+  ],
+  "nota": "Falso amigo: en CAm «refresco» puede ser un agua de frutas; en CL «bebida» es la gaseosa.",
+  "confianza": "media"
+ },
+ {
+  "id": "cana_cerveza",
+  "es": "caña",
+  "variantes": [
+   {
+    "termino": "cerveza de barril",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "chopp / schop",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "BO",
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "chope",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «tarro» es la jarra grande; en CL se escribe «schop». «Caña» como medida no existe.",
+  "confianza": "media"
+ },
+ {
+  "id": "cerveza_botellin",
+  "es": "botellín",
+  "variantes": [
+   {
+    "termino": "cerveza en botella (330–355 ml)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "porrón / botellita",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "tercio",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "garrafinha / long neck",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Porrón» en ES es otra cosa (jarra con pitorro). En MX hay «caguama» (940 ml) y «cuartito».",
+  "confianza": "media"
+ },
+ {
+  "id": "cubata",
+  "es": "cubata, combinado",
+  "variantes": [
+   {
+    "termino": "trago",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "bebida preparada, jaibol",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "US"
+    ]
+   },
+   {
+    "termino": "combinado",
+    "paises": [
+     "CL",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "drink / destilado com refrigerante",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Cubata» no se entiende fuera de ES; pedir por nombre (ron cola, whisky cola).",
+  "confianza": "media"
+ },
+ {
+  "id": "chupito",
+  "es": "chupito",
+  "variantes": [
+   {
+    "termino": "shot",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "caballito",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "dose / shot",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «caballito» es el vasito de tequila o mezcal.",
+  "confianza": "media"
+ },
+ {
+  "id": "roscon",
+  "es": "roscón de Reyes",
+  "variantes": [
+   {
+    "termino": "rosca de Reyes",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "bolo-rei",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX el 6 de enero se esconde un muñequito; quien lo recibe paga los tamales del 2 de febrero.",
+  "confianza": "media"
+ },
+ {
+  "id": "cava",
+  "es": "cava",
+  "variantes": [
+   {
+    "termino": "espumante",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "BO",
+     "PE"
+    ]
+   },
+   {
+    "termino": "vino espumoso",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "champán / champaña",
+    "paises": [
+     "CU",
+     "DO",
+     "PR",
+     "VE"
+    ]
+   },
+   {
+    "termino": "espumante",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en MX «cava» es la bodega de vinos; «champaña» solo es legalmente de Champagne.",
+  "confianza": "media"
+ },
+ {
+  "id": "torrijas",
+  "es": "torrijas",
+  "variantes": [
+   {
+    "termino": "tostadas francesas",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "torrejas",
+    "paises": [
+     "CO",
+     "VE",
+     "CU",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "capirotada (similar)",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "rabanada",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "La capirotada de MX es un pudín de cuaresma con queso y piloncillo, no torrijas.",
+  "confianza": "media"
+ },
+ {
+  "id": "tostada",
+  "es": "tostada (de desayuno)",
+  "variantes": [
+   {
+    "termino": "pan tostado",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "VE",
+     "EC",
+     "DO",
+     "US"
+    ]
+   },
+   {
+    "termino": "torrada",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "AR",
+   "UY",
+   "PY",
+   "CL",
+   "PE",
+   "BO",
+   "CU",
+   "PR"
+  ],
+  "nota": "Falso amigo grave: en MX, CAm y PE «tostada» es una tortilla frita con ingredientes encima.",
+  "confianza": "alta",
+  "evidencia": [
+   "MX «tostada» 49.500 (tortilla frita)",
+   "CL «tostada» 1.600"
+  ]
+ },
+ {
+  "id": "comanda",
+  "es": "comanda",
+  "variantes": [
+   {
+    "termino": "orden, ticket",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "comanda",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX y CO «comanda» es el papel o ticket de cocina; en US se dice «orden» o «ticket».",
+  "confianza": "media",
+  "evidencia": [
+   "MX «comanda» 1.900/mes",
+   "AR 480"
+  ]
+ },
+ {
+  "id": "cuenta",
+  "es": "la cuenta",
+  "variantes": [
+   {
+    "termino": "adición",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "a conta",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En AR «la adición» es la cuenta del restaurante; en MX del norte se oye «el cheque».",
+  "confianza": "alta",
+  "evidencia": [
+   "AR «adición» 1.000 vs «la cuenta» 390",
+   "CO «adición» 2.400 vs «la cuenta» 320",
+   "CL «cuenta» 18.100"
+  ]
+ },
+ {
+  "id": "propina",
+  "es": "propina",
+  "variantes": [
+   {
+    "termino": "gorjeta",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En BR el 10 % ya suele ir como «taxa de serviço» en la cuenta. En US «tip» es el término habitual.",
+  "confianza": "alta",
+  "evidencia": [
+   "MX «propina» 9.900",
+   "CO 1.600",
+   "AR 1.600",
+   "US «tip» 135.000"
+  ]
+ },
+ {
+  "id": "menu_dia",
+  "es": "menú del día",
+  "variantes": [
+   {
+    "termino": "comida corrida",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "almuerzo / menú ejecutivo",
+    "paises": [
+     "CO",
+     "EC",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "VE",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "menú",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "plato del día / especial del día",
+    "paises": [
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "prato feito (PF) / executivo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Menú» en MX es la carta, no el precio fijo. En CO el «corrientazo» es el almuerzo económico.",
+  "confianza": "media"
+ },
+ {
+  "id": "carta",
+  "es": "carta",
+  "variantes": [
+   {
+    "termino": "menú",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "carta",
+    "paises": [
+     "CL",
+     "PE",
+     "AR",
+     "UY",
+     "BO",
+     "EC",
+     "PY"
+    ]
+   },
+   {
+    "termino": "cardápio",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Menú» en MX/US es la lista de platos; «carta» en MX suele ser la lista de vinos.",
+  "confianza": "media"
+ },
+ {
+  "id": "racion",
+  "es": "ración",
+  "variantes": [
+   {
+    "termino": "orden",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "porción",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "BO",
+     "PE",
+     "EC",
+     "CO"
+    ]
+   },
+   {
+    "termino": "porção",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "En MX se pide «una orden de tacos»; «ración» suena a cuartel o comedor popular.",
+  "confianza": "media"
+ },
+ {
+  "id": "tapeo",
+  "es": "tapeo, tapas",
+  "variantes": [
+   {
+    "termino": "botanear / botanas",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "boquitas",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "pasabocas / pasapalos",
+    "paises": [
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "piqueo",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "picada / picoteo",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "BO"
+    ]
+   },
+   {
+    "termino": "petiscar / happy hour",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "EC",
+   "US"
+  ],
+  "nota": "«Tapas» a secas se entiende en cartas españolas y barrios con bares estilo ES.",
+  "confianza": "media"
+ },
+ {
+  "id": "barra",
+  "es": "barra",
+  "variantes": [
+   {
+    "termino": "balcão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "«Barra libre» = open bar en todas partes. En AR/CL el mostrador del kiosco es «mostrador».",
+  "confianza": "alta"
+ },
+ {
+  "id": "terraza",
+  "es": "terraza",
+  "variantes": [
+   {
+    "termino": "patio",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "varanda / área externa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En US «patio» es la terraza del restaurante; en AR a las mesas fuera se les dice también «vereda».",
+  "confianza": "media"
+ },
+ {
+  "id": "velador",
+  "es": "velador",
+  "variantes": [
+   {
+    "termino": "mesa de terraza / mesa exterior",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "mesa externa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: «velador» en AR, CL o MX es mesita de noche o vigilante nocturno.",
+  "confianza": "alta"
+ },
+ {
+  "id": "entrante",
+  "es": "entrantes",
+  "variantes": [
+   {
+    "termino": "entradas",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "entradas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En US «entrée» es el plato principal, no la entrada (contrario a ES).",
+  "confianza": "alta"
+ },
+ {
+  "id": "primer_plato",
+  "es": "primer plato",
+  "variantes": [
+   {
+    "termino": "entrada",
+    "paises": [
+     "CL",
+     "PE",
+     "AR",
+     "UY",
+     "PY",
+     "BO",
+     "EC",
+     "CO",
+     "VE",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "sopa / primer tiempo",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "entrada",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "US"
+  ],
+  "nota": "En MX la comida tradicional abre con «sopa»; «primer tiempo» se usa en restaurantes con menú.",
+  "confianza": "media"
+ },
+ {
+  "id": "segundo_plato",
+  "es": "segundo plato",
+  "variantes": [
+   {
+    "termino": "plato fuerte",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "plato principal",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "plato de fondo",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "segundo",
+    "paises": [
+     "PE",
+     "EC",
+     "BO"
+    ]
+   },
+   {
+    "termino": "prato principal",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En PE y EC el «segundo» es el plato fuerte tras la sopa.",
+  "confianza": "alta"
+ },
+ {
+  "id": "para_llevar",
+  "es": "para llevar",
+  "variantes": [
+   {
+    "termino": "para viagem",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En US se usa también «to go»; en AR y CL, «take away» en cadenas.",
+  "confianza": "alta"
+ },
+ {
+  "id": "a_domicilio",
+  "es": "a domicilio",
+  "variantes": [
+   {
+    "termino": "a domicilio",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "EC"
+    ]
+   },
+   {
+    "termino": "domicilios",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "delivery",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "VE",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "entrega / delivery",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CO «un domicilio» es el pedido y el domiciliario quien lo lleva.",
+  "confianza": "media"
+ },
+ {
+  "id": "sala_comedor",
+  "es": "sala",
+  "variantes": [
+   {
+    "termino": "salón",
+    "paises": [
+     "MX",
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "CO",
+     "VE",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "comedor",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "US"
+    ]
+   },
+   {
+    "termino": "salão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En ES «sala» designa el espacio y al personal de servicio; en LatAm «salón» o «comedor».",
+  "confianza": "media"
+ },
+ {
+  "id": "camarera_pisos",
+  "es": "camarera de pisos",
+  "variantes": [
+   {
+    "termino": "camarista",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "mucama",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "VE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "camarera de piso(s)",
+    "paises": [
+     "CL",
+     "PE",
+     "CO",
+     "EC",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "camareira",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: «camarera» sin más es la que sirve en sala. En US «housekeeper» o «ama de llaves».",
+  "confianza": "media"
+ },
+ {
+  "id": "turno_partido",
+  "es": "turno partido",
+  "variantes": [
+   {
+    "termino": "turno cortado, horario cortado",
+    "paises": [
+     "MX",
+     "AR",
+     "UY",
+     "PY",
+     "CO",
+     "PE",
+     "CL",
+     "BO",
+     "EC",
+     "VE"
+    ]
+   },
+   {
+    "termino": "split shift",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "turno dividido / intervalo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR"
+  ],
+  "nota": "En MX, «turno» puede ser el tramo (matutino/vespertino), no el horario con pausa.",
+  "confianza": "media"
+ },
+ {
+  "id": "fregadero",
+  "es": "fregadero",
+  "variantes": [
+   {
+    "termino": "fregadero",
+    "paises": [
+     "VE",
+     "EC",
+     "CU",
+     "DO",
+     "PR",
+     "PA",
+     "US"
+    ]
+   },
+   {
+    "termino": "tarja",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "pileta",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "pila",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "lavaplatos",
+    "paises": [
+     "CL",
+     "CO"
+    ]
+   },
+   {
+    "termino": "lavadero",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "pia",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX"
+  ],
+  "nota": "Falso amigo: en CL y CO «lavaplatos» también es el lavavajillas (máquina) o la persona que friega.",
+  "confianza": "media"
+ },
+ {
+  "id": "cafeteria",
+  "es": "cafetería",
+  "variantes": [
+   {
+    "termino": "confitería, café",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "cafeteria / café",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "PY",
+   "US"
+  ],
+  "nota": "En AR «confitería» es el local con pastelería; en US el local de café es «coffee shop» o «cafecito».",
+  "confianza": "alta"
+ },
+ {
+  "id": "bar_copas",
+  "es": "bar de copas",
+  "variantes": [
+   {
+    "termino": "bar de tragos",
+    "paises": [
+     "CO",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "bar / coctelería",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "bar de drinks / balada",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «cantina» es el bar tradicional y «antro» la discoteca; en AR «boliche» es la discoteca.",
+  "confianza": "media"
+ },
+ {
+  "id": "chiringuito",
+  "es": "chiringuito",
+  "variantes": [
+   {
+    "termino": "palapa",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "parador",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "chinchorro",
+    "paises": [
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "quiosco / kiosko",
+    "paises": [
+     "CO",
+     "VE",
+     "CL",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "EC"
+    ]
+   },
+   {
+    "termino": "quiosque de praia / barraca",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "PE",
+   "US",
+   "BO",
+   "PY"
+  ],
+  "nota": "Se conoce el término chiringuito en MX (5.400/mes) pero el local de playa se pide «palapa».",
+  "confianza": "media",
+  "evidencia": [
+   "MX «chiringuito» 5.400/mes",
+   "PR «kiosko» 480"
+  ]
+ },
+ {
+  "id": "asador",
+  "es": "asador",
+  "variantes": [
+   {
+    "termino": "parrilla",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "VE",
+     "EC",
+     "CU",
+     "DO",
+     "PA",
+     "CR",
+     "BO"
+    ]
+   },
+   {
+    "termino": "asadero",
+    "paises": [
+     "MX",
+     "CO",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "US"
+    ]
+   },
+   {
+    "termino": "lechonera (cerdo)",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "churrascaria",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR «parrilla» es el local y también el aparato; en CO «asadero» suele vender pollo.",
+  "confianza": "media",
+  "evidencia": [
+   "AR «parrilla» 110.000",
+   "PY «parrilla» 1.900",
+   "CO «asadero» como local de carnes"
+  ]
+ },
+ {
+  "id": "polleria",
+  "es": "pollería",
+  "variantes": [
+   {
+    "termino": "rosticería / rotisería",
+    "paises": [
+     "MX",
+     "AR",
+     "UY",
+     "PY",
+     "CL"
+    ]
+   },
+   {
+    "termino": "asadero de pollo",
+    "paises": [
+     "CO",
+     "VE",
+     "PA"
+    ]
+   },
+   {
+    "termino": "pollería (pollo a la brasa)",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "casa de aves / frango assado",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "CU",
+   "DO",
+   "PR",
+   "EC",
+   "BO",
+   "US"
+  ],
+  "nota": "En ES la pollería vende pollo crudo; en PE es un restaurante de pollo a la brasa.",
+  "confianza": "media"
+ },
+ {
+  "id": "pasteleria",
+  "es": "pastelería",
+  "variantes": [
+   {
+    "termino": "confeitaria",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "Falso amigo: «pastel» es tarta en MX pero pastel salado en CL.",
+  "confianza": "alta",
+  "evidencia": [
+   "CL «pastelería» 22.200",
+   "AR 14.800",
+   "CO 8.100"
+  ]
+ },
+ {
+  "id": "bodega",
+  "es": "bodega",
+  "variantes": [
+   {
+    "termino": "viña",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "vinícola",
+    "paises": [
+     "MX",
+     "CO",
+     "VE",
+     "EC",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "vinícola / adega",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "AR",
+   "UY",
+   "PY",
+   "BO",
+   "PE",
+   "MX"
+  ],
+  "nota": "Falso amigo: «bodega» es tienda de barrio en PR, DO, CU, PE y NY; en CO y MX también almacén.",
+  "confianza": "media"
+ },
+ {
+  "id": "vinoteca",
+  "es": "vinoteca",
+  "variantes": [
+   {
+    "termino": "vinoteca, cava",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "adega / enoteca",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En US también «wine bar» o «wine shop». En MX «cava» es la bodega doméstica de vinos.",
+  "confianza": "media"
+ },
+ {
+  "id": "catering",
+  "es": "catering",
+  "variantes": [
+   {
+    "termino": "banquetería",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "buffet de eventos / catering",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "US"
+  ],
+  "nota": "Los profesionales dicen «catering»; «banquetes» en MX es el servicio de salón.",
+  "confianza": "media"
+ },
+ {
+  "id": "banquetes",
+  "es": "banquetes",
+  "variantes": [
+   {
+    "termino": "banquetes",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "US"
+    ]
+   },
+   {
+    "termino": "banquetería",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "banquetes / buffet de festas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "confianza": "media"
+ },
+ {
+  "id": "traspaso_negocio",
+  "es": "traspaso de negocio",
+  "variantes": [
+   {
+    "termino": "traspaso",
+    "paises": [
+     "MX",
+     "PE",
+     "VE",
+     "EC",
+     "DO",
+     "PR",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU"
+    ]
+   },
+   {
+    "termino": "fondo de comercio / llave",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "venta de establecimiento de comercio",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "cesión / venta de negocio",
+    "paises": [
+     "CL",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "passa-se o ponto / trespasse",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Términos jurídicos distintos por país: pedir asesoría local. En AR «llave» es el valor del local.",
+  "confianza": "media"
+ },
+ {
+  "id": "hosteleria",
+  "es": "hostelería",
+  "variantes": [
+   {
+    "termino": "gastronomía",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "industria restaurantera",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "hospitalidad",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "hotelaria e gastronomia",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Hostelería» se entiende pero casi no se usa. «Hotelería» es solo el alojamiento.",
+  "confianza": "media"
+ },
+ {
+  "id": "restauracion",
+  "es": "restauración",
+  "variantes": [
+   {
+    "termino": "gastronomía",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "industria restaurantera",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "restaurantes / servicio de alimentos",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "restauração / alimentação fora do lar",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: «restauración» en LatAm se entiende como restaurar (arte, edificios); el sector se llama gastronomía.",
+  "confianza": "media"
+ },
+ {
+  "id": "hostelero",
+  "es": "hostelero",
+  "variantes": [
+   {
+    "termino": "restaurantero",
+    "paises": [
+     "MX",
+     "US",
+     "GT"
+    ]
+   },
+   {
+    "termino": "empresario gastronómico",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "dueño de restaurante / bar",
+    "paises": [
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "empresário do setor de alimentação",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: «hostelero» no se usa fuera de ES; «gastronómico» como sustantivo es de AR.",
+  "confianza": "media"
+ },
+ {
+  "id": "abrir_negocio",
+  "es": "montar un negocio",
+  "variantes": [
+   {
+    "termino": "poner un negocio",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "armar un negocio",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "abrir / montar un negocio",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "abrir um negócio",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CL se habla de «emprender»; en CO y VE «montar» es muy natural.",
+  "confianza": "media"
+ },
+ {
+  "id": "plan_negocio",
+  "es": "plan de negocio",
+  "variantes": [
+   {
+    "termino": "plan de negocios",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "plano de negócios",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El plural «plan de negocios» es el habitual en LatAm.",
+  "confianza": "alta"
+ },
+ {
+  "id": "tercio",
+  "es": "tercio",
+  "variantes": [
+   {
+    "termino": "botella de 330 ml / botellita",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "tercio",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "garrafinha de 330 ml",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en ES «tercio» es 33 cl. En AR «porrón»; en MX «caguama» (940 ml) y «cuartito».",
+  "confianza": "media"
+ },
+ {
+  "id": "garrafa",
+  "es": "garrafa",
+  "variantes": [
+   {
+    "termino": "garrafón",
+    "paises": [
+     "MX",
+     "US",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR"
+    ]
+   },
+   {
+    "termino": "bidón",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC"
+    ]
+   },
+   {
+    "termino": "botellón",
+    "paises": [
+     "CO",
+     "VE",
+     "PA",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "garrafão / galão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en AR, UY y BO «garrafa» es la bombona de gas; el agua va en «bidón».",
+  "confianza": "media"
+ },
+ {
+  "id": "bombona",
+  "es": "bombona",
+  "variantes": [
+   {
+    "termino": "tanque de gas / cilindro",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "PR",
+     "US",
+     "EC",
+     "CU"
+    ]
+   },
+   {
+    "termino": "garrafa",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "balón de gas",
+    "paises": [
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "pipeta",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "bombona",
+    "paises": [
+     "VE",
+     "DO"
+    ]
+   },
+   {
+    "termino": "botijão de gás",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR la «garrafa» es la de 10 kg y «bombona» casi no se usa.",
+  "confianza": "media"
+ },
+ {
+  "id": "barrica",
+  "es": "barrica",
+  "variantes": [
+   {
+    "termino": "barrica",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "Para cerveza se dice «barril»; «tonel» es una barrica muy grande.",
+  "confianza": "alta"
+ },
+ {
+  "id": "cubitera",
+  "es": "cubitera",
+  "variantes": [
+   {
+    "termino": "hielera",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "frapera",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL"
+    ]
+   },
+   {
+    "termino": "balde de gelo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "La bandeja de cubitos se llama «cubetera» o «charola para hielo»; «cubitera» es el cubo.",
+  "confianza": "media"
+ },
+ {
+  "id": "envase",
+  "es": "envase",
+  "variantes": [
+   {
+    "termino": "empaque",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "US"
+    ]
+   },
+   {
+    "termino": "embalagem",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX, «empaque» es el material de embalaje y «envase» el recipiente.",
+  "confianza": "media"
+ },
+ {
+  "id": "tupper",
+  "es": "táper",
+  "variantes": [
+   {
+    "termino": "táper",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "EC",
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "recipiente / contenedor",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "pote / tupperware",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR «vianda» es el táper con la comida del día.",
+  "confianza": "media"
+ },
+ {
+  "id": "pajita",
+  "es": "pajita",
+  "variantes": [
+   {
+    "termino": "popote",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "pajilla",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "CU"
+    ]
+   },
+   {
+    "termino": "pitillo",
+    "paises": [
+     "CO",
+     "EC",
+     "VE"
+    ]
+   },
+   {
+    "termino": "sorbete",
+    "paises": [
+     "AR",
+     "PE",
+     "BO",
+     "PA"
+    ]
+   },
+   {
+    "termino": "sorbeto",
+    "paises": [
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "canudo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CL",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En US se oye «straw»; «bombilla» en AR/UY/PY es la caña del mate, no la pajita.",
+  "confianza": "media"
+ },
+ {
+  "id": "desechable",
+  "es": "desechable",
+  "variantes": [
+   {
+    "termino": "descartable",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "PE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "descartável",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "CL",
+   "US"
+  ],
+  "confianza": "alta"
+ },
+ {
+  "id": "pase_cocina",
+  "es": "pase",
+  "variantes": [
+   {
+    "termino": "ventanilla / ventana",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "pass / expo",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "passe",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En brigadas de EE. UU. «expo» es quien canta el pase.",
+  "confianza": "media"
+ }
+]
