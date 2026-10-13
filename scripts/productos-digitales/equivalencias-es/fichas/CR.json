@@ -5,43 +5,63 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El Impuesto al Valor Agregado (IVA) general es del 13 %, vigente desde la Ley 9635 de 2019 y aplicable a la venta de comidas y bebidas en restaurantes. No hemos podido abrir la página de Hacienda para confirmar la tabla actual de tarifas reducidas, así que revísala allí. El cargo de servicio del 10 % se calcula sobre el consumo antes del IVA y los precios de carta suelen incluir ambos al final.",
+      "texto": "El IVA general es del 13 % y rige desde el 1 de julio de 2019, cuando sustituyó al impuesto general sobre las ventas; se aplica a la venta de comida y bebida en restaurantes. Existen tarifas reducidas (1 %, 2 % o 4 %) para otros bienes y servicios, como la canasta básica, medicinas o salud privada. El cargo de servicio del 10 % se calcula sobre la cuenta sin incluir el impuesto. Confirma con tu contador la forma de rotular el precio de carta.",
       "fuentes": [
         {
-          "titulo": "Ministerio de Hacienda de Costa Rica",
-          "url": "https://www.hacienda.go.cr/"
+          "titulo": "PwC Worldwide Tax Summaries – Costa Rica, otros impuestos (IVA 13 %)",
+          "url": "https://taxsummaries.pwc.com/costa-rica/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Ley 9116, art. 1: «Servicio 10 %» calculado sin el impuesto de ventas (Poder Judicial)",
+          "url": "https://salasegunda.poder-judicial.go.cr/images/documentos/revistas/revista10/11-ley_empleo_saloneros.pdf",
+          "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "propina_servicio": {
-      "texto": "La Ley 4946 reconoce a los trabajadores de restaurantes y bares el derecho a un 10 % del consumo por atender en mesa, que debe aparecer como «servicio 10 %». La reforma de la Ley 9116 lo convirtió en un cobro obligatorio y separado que no forma parte del salario. No aplica a comida para llevar. Cualquier monto adicional es propina voluntaria del cliente.",
+      "texto": "La Ley 9116, que reformó la Ley 4946, obliga en restaurantes, bares y sodas con servicio en mesa a cobrar un 10 % adicional sobre la cuenta, sin incluir el impuesto, indicado por separado como «Servicio 10 %». Es de los saloneros y meseros: el patrono no puede quedárselo ni descontarle gastos, debe entregarlo en una semana (efectivo) o un mes (tarjeta), y no forma parte del salario. La propina voluntaria es aparte y nunca va en la factura.",
       "fuentes": [
         {
-          "titulo": "Ley 4946, texto (Justia Costa Rica)",
-          "url": "http://costa-rica.justia.com/nacionales/leyes/ley-4946/gdoc/"
+          "titulo": "Ley 9116 para proteger el empleo de los saloneros y meseros (Poder Judicial)",
+          "url": "https://salasegunda.poder-judicial.go.cr/images/documentos/revistas/revista10/11-ley_empleo_saloneros.pdf",
+          "tipo": "oficial"
         }
       ],
       "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "La autoridad es el Ministerio de Salud, que concede el permiso sanitario de funcionamiento a los establecimientos de comida y sus áreas rectoras de salud los inspeccionan. No pudimos abrir la web del Ministerio, así que no confirmamos el reglamento técnico de buenas prácticas ni si se pide HACCP. Consulta tu área rectora de salud.",
+      "texto": "La autoridad sanitaria es el Ministerio de Salud, que otorga el permiso sanitario de funcionamiento bajo el Decreto 43432-S, firmado el 9 de marzo de 2022. Ese decreto permite presentar una declaración jurada, de modo que la inspección se hace después. Hay reformas posteriores, por lo que debes comprobar la versión vigente. No hemos confirmado qué norma técnica de higiene aplica a restaurantes ni si se exige HACCP; consúltalo en tu área rectora de salud.",
       "fuentes": [
         {
-          "titulo": "Ministerio de Salud de Costa Rica",
-          "url": "https://www.ministeriodesalud.go.cr/"
+          "titulo": "El Mundo CR – Firman decreto que facilita permisos sanitarios (Decreto 43432-S)",
+          "url": "https://elmundo.cr/costa-rica/firman-decreto-que-facilita-permisos-sanitarios-en-un-dia/",
+          "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "manipulador": {
-      "texto": "Se exige el carné de manipulación de alimentos, que se obtiene tras un curso en centros autorizados por el Ministerio de Salud o el INA. Se renueva cada cierto tiempo, pero no confirmamos la vigencia actual; consúltala en tu área rectora de salud antes de contratar al personal.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "Desde el 6 de junio de 2025 rige el carné digital de manipulación de alimentos, que regula el Ministerio de Salud. Solo lo obtienen quienes aprueban el curso del INA o de una institución con acreditación formal. Hubo un periodo de transición en el que no se podía sancionar a un trabajador por no tenerlo si estaba regularizándolo o tenía un carné físico válido. No hemos confirmado la vigencia actual; consúltala en tu área rectora de salud.",
+      "fuentes": [
+        {
+          "titulo": "Observador CR – Nuevo carné digital de manipulación de alimentos rige en Costa Rica",
+          "url": "https://observador.cr/nuevo-carne-digital-de-manipulacion-de-alimentos-rige-en-costa-rica/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "licencias_apertura": {
-      "texto": "Los permisos típicos son: inscripción en el Registro Nacional y en Tributación, permiso sanitario de funcionamiento del Ministerio de Salud, patente comercial de la municipalidad, uso de suelo, póliza de riesgos del trabajo con el INS y revisión del Cuerpo de Bomberos. La patente municipal fija el tipo de actividad y, en bares, la licencia de licores.",
-      "fuentes": [],
+      "texto": "Los permisos típicos son: inscripción tributaria en Hacienda, permiso sanitario de funcionamiento del Ministerio de Salud (Decreto 43432-S), patente comercial de la municipalidad, uso de suelo, póliza de riesgos del trabajo con el INS y revisión del Cuerpo de Bomberos. Solo hemos podido confirmar con fuente abierta el permiso sanitario; valida el resto con tu municipalidad. Si vendes licor, pregunta por su licencia específica.",
+      "fuentes": [
+        {
+          "titulo": "El Mundo CR – Firman decreto que facilita permisos sanitarios (Decreto 43432-S)",
+          "url": "https://elmundo.cr/costa-rica/firman-decreto-que-facilita-permisos-sanitarios-en-un-dia/",
+          "tipo": "secundaria"
+        }
+      ],
       "verificado": false
     },
     "alcohol": {
@@ -60,14 +80,25 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 48 horas semanales según el Código de Trabajo. La prestación obligatoria distintiva es el aguinaldo, un doceavo de los salarios del año pagadero en diciembre; también hay vacaciones y cesantía. La seguridad social la gestiona la Caja Costarricense de Seguro Social (CCSS), que cubre salud y pensiones. Confirma los datos en el MTSS.",
+      "texto": "La jornada ordinaria diurna tiene un tope de 48 horas semanales (art. 136 del Código de Trabajo); puede pactarse hasta en diez horas diarias sin pasar de las 48. El aguinaldo es un doceavo de los salarios devengados entre el 1 de diciembre y el 30 de noviembre, con pago a más tardar el 20 de diciembre. La seguridad social, que gestiona la CCSS, supone en 2026 un 26,83 % del empleador y un 10,83 % del trabajador según PwC.",
       "fuentes": [
         {
-          "titulo": "MTSS Costa Rica",
-          "url": "https://www.mtss.go.cr/"
+          "titulo": "MTSS – Comunicado sobre el aguinaldo (plazo 20 de diciembre)",
+          "url": "https://www.mtss.go.cr/prensa/comunicados/2022/diciembre/cp_049_2022.html",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Delfino.cr – La jornada en el contrato de trabajo (art. 136)",
+          "url": "https://delfino.cr/2024/08/la-jornada-en-el-contrato-de-trabajo-y-sus-excepciones",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Costa Rica, seguridad social",
+          "url": "https://taxsummaries.pwc.com/costa-rica/corporate/other-taxes",
+          "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "Costa Rica usa mayoritariamente el sistema métrico: kilos, gramos y litros se usan en el mercado. La libra aparece sobre todo en la carne en pulperías y el galón es más raro. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Para vender, la norma metrológica pide etiquetar en unidades métricas; la libra es una referencia popular en el campo.",

@@ -5,32 +5,39 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El Impuesto al Valor Agregado (IVA) tiene un tipo único del 15 %, establecido por la Ley de Concertación Tributaria (Ley 822). Los restaurantes lo aplican a la venta de comida y bebida; además existe un impuesto selectivo de consumo sobre alcohol y tabaco. No pudimos abrir la página de la DGI: el sitio rechazó la petición, así que confirma el tipo allí.",
+      "texto": "El IVA tiene un tipo único del 15 % y grava la venta de bienes y la prestación de servicios, por lo que se aplica a la comida y la bebida de tu carta. Además existe un impuesto selectivo de consumo (ISC) sobre las bebidas alcohólicas y el tabaco. Si tu plantilla trae el IVA español del 10 %, sustitúyelo por el 15 % y confirma con tu contador si los precios de carta llevan el impuesto incluido.",
       "fuentes": [
         {
-          "titulo": "DGI Nicaragua",
-          "url": "https://www.dgi.gob.ni/"
+          "titulo": "PwC Worldwide Tax Summaries – Nicaragua, otros impuestos (IVA 15 %, ISC)",
+          "url": "https://taxsummaries.pwc.com/nicaragua/corporate/other-taxes",
+          "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "propina_servicio": {
-      "texto": "La propina es voluntaria y de costumbre, en torno al 10 % de la cuenta, y se entrega al camarero. Algunos restaurantes añaden el 10 % como servicio en la factura. No hemos confirmado una norma que lo haga obligatorio; consulta con el Ministerio del Trabajo y con la DGI si cobras servicio.",
+      "texto": "La propina es voluntaria y de costumbre, en torno al 10 % de la cuenta, y se entrega al camarero. Algunos restaurantes añaden el 10 % como servicio en la factura. No hemos encontrado una fuente abierta que fije un cargo de servicio obligatorio ni su tratamiento fiscal; consulta con el Ministerio del Trabajo y con la DGI antes de cobrarlo en factura.",
       "fuentes": [],
       "verificado": false
     },
     "autoridad_sanitaria": {
-      "texto": "La autoridad es el Ministerio de Salud (MINSA), que inspecciona los establecimientos y emite la licencia sanitaria. No confirmamos la norma técnica de buenas prácticas ni si se exige HACCP; consulta con el centro de salud de tu municipio antes de abrir.",
-      "fuentes": [],
+      "texto": "La autoridad sanitaria es el Ministerio de Salud (MINSA), que actúa a través de los SILAIS (sistemas locales de atención integral en salud). Su licencia sanitaria para establecimientos de alimentos exige cumplir las Buenas Prácticas de Manufactura del reglamento técnico centroamericano, pero el folleto que pudimos abrir se refiere a plantas procesadoras. Para un restaurante, pregunta en tu SILAIS qué licencia o permiso te piden y si exigen HACCP.",
+      "fuentes": [
+        {
+          "titulo": "MINSA Nicaragua – Requisitos de la Licencia Sanitaria (folleto)",
+          "url": "https://www.minsa.gob.ni/sites/default/files/2022-10/BROCHUR%20LICENCIA%20Y%20REGISTRO.pdf",
+          "tipo": "oficial"
+        }
+      ],
       "verificado": false
     },
     "manipulador": {
-      "texto": "Se exige el carné de manipulador de alimentos o carné de salud, emitido por el MINSA tras un examen médico y una charla de inocuidad. La vigencia y los requisitos concretos cambian; confirma en tu centro de salud antes de contratar al personal.",
+      "texto": "Se suele exigir el carné de manipulador de alimentos o de salud, que se tramita en los centros de salud del MINSA. No hemos podido abrir una fuente oficial que confirme el nombre exacto del documento, la charla o examen que piden, ni su vigencia. Pregunta en tu centro de salud o SILAIS qué requisitos piden hoy y qué revisan en una inspección antes de contratar al personal.",
       "fuentes": [],
       "verificado": false
     },
     "licencias_apertura": {
-      "texto": "Los permisos típicos son: inscripción en el Registro Mercantil, número RUC de la DGI, matrícula de la alcaldía, licencia sanitaria del MINSA, permiso de la Dirección de Defensa Civil o Bomberos y uso de suelo. La alcaldía fija las tasas y el procedimiento de la matrícula.",
+      "texto": "Los pasos habituales son: constituir el negocio y registrarlo en el Registro Mercantil, obtener el número RUC en la DGI, la matrícula municipal de la alcaldía, el permiso o licencia sanitaria del MINSA, la revisión de Bomberos y el uso de suelo. No hemos podido confirmar en una fuente abierta el nombre exacto ni el orden de cada trámite; valida cada paso con tu alcaldía y tu SILAIS.",
       "fuentes": [],
       "verificado": false
     },
@@ -50,9 +57,25 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 48 horas semanales según el Código del Trabajo. La prestación distintiva es el décimo tercer mes (diciembre) además de vacaciones e indemnización por antigüedad. La seguridad social la administra el Instituto Nicaragüense de Seguridad Social (INSS). Verifica los datos en el Ministerio del Trabajo.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 48 semanales (art. 51 del Código del Trabajo). El décimo tercer mes equivale a un mes adicional de salario y se paga en los primeros diez días de diciembre, o proporcional si hay menos de un año. Las vacaciones son 15 días por cada seis meses de servicio. La seguridad social es el INSS; en PwC figura una cuota del 7 % al trabajador y del 21,5 % al 22,5 % al empleador.",
+      "fuentes": [
+        {
+          "titulo": "Código del Trabajo de Nicaragua (Ley 185), arts. 51 y 76 – Justia",
+          "url": "https://nicaragua.justia.com/nacionales/codigos/codigo-del-trabajo-oct-30-1996/gdoc/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Ley 117, Ley de Salario por Décimo Tercer Mes – Justia",
+          "url": "http://nicaragua.justia.com/nacionales/leyes/ley-de-salario-por-decimo-tercer-mes-jan-16-1991/gdoc/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Nicaragua, seguridad social (INSS)",
+          "url": "https://taxsummaries.pwc.com/nicaragua/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "En los mercados se compra por libra y los granos por quintal (100 libras); los líquidos por galón y las bebidas por botella o litro. La arroba (25 libras) aún aparece en zonas rurales. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. En la cocina se mezcla métrico e imperial.",

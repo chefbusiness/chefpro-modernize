@@ -5,38 +5,62 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El ITBMS (Impuesto de Transferencia de Bienes Corporales Muebles y la Prestación de Servicios) general es del 7 %. La DGI indica un 10 % para la importación y venta de bebidas alcohólicas y para el alojamiento, y un 15 % para el tabaco. La página no menciona restaurantes: aplica el 7 % a la comida y confirma con la DGI el tipo de las bebidas alcohólicas. Está exento el pequeño contribuyente que factura menos de 36 000 B/ al año.",
+      "texto": "El ITBMS general es del 7 %; según PwC, la tasa sube al 10 % para las bebidas alcohólicas y el alojamiento, y al 15 % para el tabaco. Un análisis publicado en La Prensa sostiene que en un restaurante que vende alcohol el impuesto se calcula sobre el total de la factura (Decreto Ejecutivo 84/2005) y que el 10 % se refiere al alcohol vendido en envase cerrado, no al servido en mesa. Confirma con la DGI cómo facturar tus bebidas.",
       "fuentes": [
         {
-          "titulo": "DGI Panamá, ITBMS",
-          "url": "http://dgi.mef.gob.pa/itbms/Itbms"
+          "titulo": "PwC Worldwide Tax Summaries – Panamá, otros impuestos (ITBMS)",
+          "url": "https://taxsummaries.pwc.com/panama/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "La Prensa – Tome nota de estos datos tributarios (ITBMS en restaurantes)",
+          "url": "https://www.prensa.com/opinion/tome-nota-de-estos-datos-tributarios/",
+          "tipo": "secundaria"
         }
       ],
-      "verificado": true
+      "verificado": false
     },
     "propina_servicio": {
-      "texto": "La propina es voluntaria y de costumbre, habitualmente el 10 % de la cuenta, y muchos restaurantes la añaden como línea aparte. No hemos confirmado una norma que la haga obligatoria. Si cobras servicio, consulta con la DGI cómo debe facturarse.",
+      "texto": "La propina es voluntaria y de costumbre, habitualmente el 10 % de la cuenta, y muchos restaurantes la añaden como línea aparte. No hemos encontrado una fuente abierta que fije un cargo de servicio obligatorio ni cómo se trata en el ITBMS. Si cobras servicio en la factura, consulta con la DGI y con el Ministerio de Trabajo antes de hacerlo y de contarlo en tu plan como ingreso.",
       "fuentes": [],
       "verificado": false
     },
     "autoridad_sanitaria": {
-      "texto": "La autoridad es el Ministerio de Salud (MINSA), a través de la Dirección Nacional de Control de Alimentos y Vigilancia Veterinaria. Controla la inocuidad en restaurantes y emite el permiso sanitario. No confirmamos el reglamento técnico de buenas prácticas ni si se pide HACCP; consulta con la regional de salud.",
+      "texto": "La autoridad es el Ministerio de Salud (MINSA), que realiza operativos en restaurantes y cierra los que no tienen sus permisos ni el carné de salud del personal, según la prensa. El director regional del MINSA recordó que un restaurante debe ofrecer comida como oferta principal y cumplir una serie de normas sanitarias. No hemos confirmado el reglamento técnico concreto ni si se exige HACCP; consulta con tu regional de salud.",
       "fuentes": [
         {
-          "titulo": "Ministerio de Salud de Panamá",
-          "url": "https://www.minsa.gob.pa/"
+          "titulo": "La Estrella de Panamá – Minsa y FTC cierran restaurantes sin permisos ni carnet de salud",
+          "url": "https://www.laestrella.com.pa/panama/nacional/minsa-ftc-cierran-restaurantes-cafeterias-locales-contar-permisos-carnet-salud-KJLE440578",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "TVN – Minsa exige normas a bares que piden operar como restaurantes",
+          "url": "https://www.tvn-2.com/nacionales/denuncian-supuestos-abusos-operativos-restaurantes-video_1_1111323.html",
+          "tipo": "secundaria"
         }
       ],
       "verificado": false
     },
     "manipulador": {
-      "texto": "El personal que manipula alimentos debe tener el carné de manipulador o carné de salud, tras un curso de inocuidad y un examen médico impartidos por el MINSA o por entidades autorizadas. La vigencia varía; confirma los requisitos con tu regional de salud antes de contratar.",
-      "fuentes": [],
+      "texto": "El MINSA, a través de su Dirección Regional de Salud, emite dos documentos: el carné blanco, que exige exámenes médicos (heces, orina, laboratorio), y el carné verde, que acredita las charlas de manipuladores de alimentos y se tramita con el blanco vigente. Los requisitos han cambiado con los años y no hemos confirmado la vigencia actual; consulta con tu regional de salud antes de contratar.",
+      "fuentes": [
+        {
+          "titulo": "Telemetro – Carné verde de manipuladores de alimentos: dónde retirarlo",
+          "url": "https://www.telemetro.com/nacionales/carne-verde-manipuladores-alimentos-minsa-anuncia-donde-retirarlo-n5908917",
+          "tipo": "secundaria"
+        }
+      ],
       "verificado": false
     },
     "licencias_apertura": {
-      "texto": "Los permisos típicos son: inscripción en el Registro Público, Aviso de Operación (gestionado en Panamá Emprende, que sustituye a la antigua licencia comercial), permiso sanitario del MINSA, uso de suelo y revisión del Cuerpo de Bomberos. Para la municipalidad y los tipos de negocio, consulta la ventanilla única.",
-      "fuentes": [],
+      "texto": "El trámite clave es el Aviso de Operación del Ministerio de Comercio e Industrias (MICI); un bar que quiera funcionar como restaurante debe pedir el cambio del aviso y cumplir requisitos del MINSA. Además hacen falta el permiso o aval sanitario del MINSA y los carnés del personal. No hemos podido abrir la web de Panamá Emprende ni confirmar uso de suelo, Bomberos ni la ventanilla municipal; valida cada trámite con el MICI y la municipalidad.",
+      "fuentes": [
+        {
+          "titulo": "TVN – Minsa y cambio del aviso de operación del MICI para restaurantes",
+          "url": "https://www.tvn-2.com/nacionales/denuncian-supuestos-abusos-operativos-restaurantes-video_1_1111323.html",
+          "tipo": "secundaria"
+        }
+      ],
       "verificado": false
     },
     "alcohol": {
@@ -55,14 +79,25 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 48 horas semanales según el Código de Trabajo. La prestación distintiva es el décimo tercer mes, que se paga en tres partidas a lo largo del año (abril, agosto y diciembre). La seguridad social corresponde a la Caja de Seguro Social (CSS). Verifica los datos en el MITRADEL.",
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y hasta 48 semanales. El décimo tercer mes se paga en tres partidas: 15 de abril, 15 de agosto y 15 de diciembre, cada una equivale a lo devengado en el cuatrimestre dividido entre 12 (Decreto de Gabinete 221 de 1971). La seguridad social es la Caja de Seguro Social: según PwC, el trabajador aporta un 9,75 % y el empleador un 12,25 % sobre el salario.",
       "fuentes": [
         {
-          "titulo": "MITRADEL",
-          "url": "https://www.mitradel.gob.pa/"
+          "titulo": "Embajada de España en Panamá – Trabajar en Panamá (jornada)",
+          "url": "https://exteriores.gob.es/Embajadas/panama/es/ViajarA/Paginas/Trabajar-en-Panam%c3%a1.aspx",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Softland Panamá – Décimo tercer mes y Decreto de Gabinete 221 de 1971",
+          "url": "https://softland.com/pa/?p=21245",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Panamá, seguridad social",
+          "url": "https://taxsummaries.pwc.com/panama/corporate/other-taxes",
+          "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "En el mercado se compra por libra para carne, queso y verduras, y por galón para líquidos; las bebidas se piden por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. El quintal también se usa para sacos de granos. En supermercados modernos aparecen precios en kilos y en libras a la vez.",

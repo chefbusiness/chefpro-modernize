@@ -27,19 +27,31 @@
       "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "La autoridad es el Ministerio de Salud Pública, a través de la DIGEMAPS (Dirección General de Medicamentos, Alimentos y Productos Sanitarios), bajo la Ley General de Salud 42-01 y el Reglamento 528-01 sobre control de riesgos en alimentos y bebidas. No he podido abrir una guía oficial que detalle el permiso exacto para restaurantes ni si exigen HACCP o buenas prácticas de manufactura. Consulta con la DIGEMAPS o con la dirección provincial de salud qué programa de higiene presentar.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La autoridad es el Ministerio de Salud Pública. Según una guía de un despacho de abogados, el permiso especial para operar de comedores y restaurantes lo gestiona el Departamento de Registro Sanitario de la DIGEMAPS, y pide un certificado de Buenas Prácticas de Manufactura vigente y el pago de tasas. No hemos confirmado si exigen HACCP ni la norma técnica concreta; consulta con la DIGEMAPS o con la dirección provincial de salud.",
+      "fuentes": [
+        {
+          "titulo": "Carlos Felipe Law Firm – Abrir comedor o restaurante pequeño",
+          "url": "https://fc-abogados.com/abrir-comedor-o-restaurantes-pequenos/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "manipulador": {
-      "texto": "No he podido confirmar con una fuente abierta que exista un carné nacional obligatorio de manipulador de alimentos en República Dominicana, ni qué entidad lo emitiría y con qué vigencia. En la práctica, muchos locales piden a su personal una evaluación médica y una capacitación en higiene alimentaria. Antes de contratar, pregunta en la dirección provincial de salud o en la DIGEMAPS qué documentos de tu personal van a revisar en una inspección.",
+      "texto": "No hemos podido confirmar con una fuente abierta que exista un carné nacional obligatorio de manipulador de alimentos en República Dominicana, ni qué entidad lo emitiría y con qué vigencia. En la práctica, muchos locales piden a su personal una evaluación médica y una capacitación en higiene alimentaria. Antes de contratar, pregunta en la dirección provincial de salud o en la DIGEMAPS qué documentos de tu personal van a revisar en una inspección.",
       "fuentes": [],
       "verificado": false
     },
     "licencias_apertura": {
-      "texto": "Para abrir un restaurante suele hacer falta constituir la empresa y registrarla en el Registro Mercantil de la cámara de comercio de tu provincia, obtener el RNC en la DGII, el permiso sanitario del Ministerio de Salud Pública, el permiso de uso de suelo y de la alcaldía (ayuntamiento) y el visto bueno del cuerpo de bomberos. No he confirmado la lista exacta en fuente oficial, así que valida cada trámite con tu ayuntamiento.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "Según una guía de abogados, los pasos son: registrar el nombre comercial en la ONAPI, depositar los documentos de la empresa en la Cámara de Comercio y Producción (Ley 479-08), obtener el RNC en la DGII, inscribir a la empresa como empleadora en la TSS y tramitar el permiso sanitario en la DIGEMAPS. Uso de suelo, ayuntamiento y bomberos no los hemos confirmado; valida cada trámite con tu ayuntamiento.",
+      "fuentes": [
+        {
+          "titulo": "Carlos Felipe Law Firm – Abrir comedor o restaurante pequeño",
+          "url": "https://fc-abogados.com/abrir-comedor-o-restaurantes-pequenos/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "alcohol": {
       "texto": "No he podido confirmar con fuente abierta el permiso exacto para vender alcohol en República Dominicana, ni qué restricciones horarias o de ley seca se aplican de forma general. Lo habitual es que dependa de la alcaldía y de la normativa sanitaria y de espectáculos. Pregunta en tu ayuntamiento si necesitas un permiso específico para servir bebidas alcohólicas y confirma los horarios de cierre permitidos en tu municipio antes de planificar el turno de noche.",
@@ -69,7 +81,7 @@
       "verificado": true
     },
     "unidades_mercado": {
-      "texto": "En compras se mezclan kilos con libras: la «libra» se usa de cara al consumidor y el «quintal» equivale a 100 libras. El «galón» se usa para aceite, agua y combustible; no he podido confirmar si el galón dominicano coincide con el estadounidense de 3,785 litros, así que pregunta al proveedor y pésalo una vez. En barras se usan onzas. Las botellas, cajas y fundas completan los formatos de compra. La temperatura se expresa en °C.",
+      "texto": "Al comprar se mezclan kilos y libras: la «libra» (453,6 g) se usa de cara al consumidor, y el «quintal» son 100 libras (45,36 kg). Para líquidos como aceite se habla de «galón», y para el alcohol en barra se usan onzas. No hemos podido confirmar con una fuente abierta qué litros tiene el galón comercial dominicano; el estadounidense mide 3,785 L, así que pide la ficha al proveedor y comprueba el envase una vez. La temperatura se expresa en °C.",
       "fuentes": [],
       "verificado": false
     },
