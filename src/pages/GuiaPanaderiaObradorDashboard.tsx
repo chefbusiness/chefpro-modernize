@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   BookOpen, FileText, Calculator, ClipboardList,
   Scale, Users, BarChart3, Calendar,
   ShieldCheck, Wrench, Wind, FlaskConical,
@@ -53,6 +53,12 @@ const SECTIONS = [
       { key: 'manual-operaciones', icon: BookOpen, title: 'Manual del Obrador (Operaciones)', desc: 'Masa madre, recetario maestro (baguette, hogaza, croissant), planes limpieza, trazabilidad.', ext: '.docx' },
     ],
   },
+  {
+    title: 'Bonus Internacional',
+    templates: [
+      { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.', ext: '.docx' },
+    ],
+  },
 ];
 
 export default function GuiaPanaderiaObradorDashboard() {
@@ -90,7 +96,7 @@ export default function GuiaPanaderiaObradorDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="guia-panaderia-obrador" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 19 herramientas listas para descargar.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 19 herramientas + la Guía de Equivalencias, listas para descargar.</p>
         </section>
 
         {SECTIONS.map((section) => (

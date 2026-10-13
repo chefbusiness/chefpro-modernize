@@ -18,6 +18,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'lista-precios': '/dl/kit-escandallos/13-lista-precios-ingredientes.xlsx',
     'bonus-mermas': '/dl/kit-escandallos/BONUS-mermas-inventario.xlsx',
     'bonus-guia': '/dl/kit-escandallos/BONUS-guia-food-cost-30-dias.pdf',
+    'guia-equivalencias': '/dl/kit-escandallos/guia-equivalencias-kit-escandallos.docx',
   },
   // Tienda EN (2026-09-24): Food Cost Kit Pro. MISMAS claves que kit-escandallos (las del
   // TEMPLATES de src/pages/FoodCostKitDashboard.tsx) → ficheros EN de /dl/food-cost-templates/.
@@ -70,6 +71,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'termometros': '/dl/pack-appcc/19-verificacion-termometros.xlsx',
     'bonus-formacion': '/dl/pack-appcc/BONUS-01-registro-formacion.xlsx',
     'bonus-protocolo': '/dl/pack-appcc/BONUS-02-protocolo-alerta-alimentaria.xlsx',
+    'guia-equivalencias': '/dl/pack-appcc/guia-equivalencias-pack-appcc.docx',
   },
   // Tienda EN (2026-10-03): HACCP Food Safety Kit Pro. MISMAS claves que pack-appcc (las del
   // TEMPLATES de src/pages/HaccpKitDashboard.tsx) → ficheros EN de /dl/haccp-templates/ (SPEC haccp-kit §2.1).
@@ -109,6 +111,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas/guia-equivalencias-kit-tareas.docx',
   },
   'kit-tareas-cafeteria': {
     'apertura-cierre': '/dl/kit-tareas-cafeteria/01-apertura-cierre.xlsx',
@@ -124,6 +127,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-cafeteria/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-cafeteria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-cafeteria/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-cafeteria/guia-equivalencias-kit-tareas-cafeteria.docx',
   },
   'kit-tareas-pizzeria': {
     'apertura-cierre': '/dl/kit-tareas-pizzeria/01-apertura-cierre.xlsx',
@@ -139,6 +143,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-pizzeria/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-pizzeria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-pizzeria/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-pizzeria/guia-equivalencias-kit-tareas-pizzeria.docx',
   },
   'kit-tareas-hamburgueseria': {
     'apertura-cierre': '/dl/kit-tareas-hamburgueseria/01-apertura-cierre.xlsx',
@@ -154,6 +159,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-hamburgueseria/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-hamburgueseria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-hamburgueseria/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-hamburgueseria/guia-equivalencias-kit-tareas-hamburgueseria.docx',
   },
   'kit-tareas-dark-kitchen': {
     'apertura-cierre': '/dl/kit-tareas-dark-kitchen/01-apertura-cierre.xlsx',
@@ -167,6 +173,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-dark-kitchen/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-dark-kitchen/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-dark-kitchen/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-dark-kitchen/guia-equivalencias-kit-tareas-dark-kitchen.docx',
   },
   'kit-tareas-pasteleria': {
     'apertura-cierre': '/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx',
@@ -185,6 +192,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'temperaturas': '/dl/kit-tareas-pasteleria/13-registro-temperaturas-recepcion.xlsx',
     'bonus-briefing': '/dl/kit-tareas-pasteleria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-pasteleria/guia-equivalencias-kit-tareas-pasteleria.docx',
   },
   'kit-tareas-bar': {
     'apertura-cierre': '/dl/kit-tareas-bar/01-apertura-cierre.xlsx',
@@ -198,6 +206,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-bar/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-bar/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-bar/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-bar/guia-equivalencias-kit-tareas-bar.docx',
   },
   'kit-tareas-catering': {
     'apertura-cierre': '/dl/kit-tareas-catering/01-apertura-cierre.xlsx',
@@ -214,6 +223,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx',
     'bonus-briefing': '/dl/kit-tareas-catering/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-catering/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-catering/guia-equivalencias-kit-tareas-catering.docx',
   },
   'kit-tareas-hotel': {
     'fb-buffet-desayuno': '/dl/kit-tareas-hotel/01-fb-buffet-desayuno.xlsx',
@@ -235,6 +245,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-hotel/19-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-hotel/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-hotel/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-hotel/guia-equivalencias-kit-tareas-hotel.docx',
   },
   'kit-tareas-heladeria': {
     'apertura-cierre': '/dl/kit-tareas-heladeria/01-apertura-cierre.xlsx',
@@ -248,6 +259,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-heladeria/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-heladeria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-heladeria/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-heladeria/guia-equivalencias-kit-tareas-heladeria.docx',
   },
   'kit-tareas-chocolateria': {
     'apertura-cierre': '/dl/kit-tareas-chocolateria/01-apertura-cierre.xlsx',
@@ -261,6 +273,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-chocolateria/09-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-chocolateria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-chocolateria/BONUS-02-calendario-anual-tareas.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-chocolateria/guia-equivalencias-kit-tareas-chocolateria.docx',
   },
   'kit-tareas-restaurante-creativo': {
     'apertura-cierre': '/dl/kit-tareas-restaurante-creativo/01-apertura-cierre.xlsx',
@@ -276,6 +289,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'apertura-caja': '/dl/kit-tareas-restaurante-creativo/11-apertura-cierre-caja.xlsx',
     'bonus-briefing': '/dl/kit-tareas-restaurante-creativo/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-restaurante-creativo/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-restaurante-creativo/guia-equivalencias-kit-tareas-restaurante-creativo.docx',
   },
   'kit-tareas-chef-privado': {
     'ficha-cliente': '/dl/kit-tareas-chef-privado/01-ficha-cliente-consulta.xlsx',
@@ -287,6 +301,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'admin': '/dl/kit-tareas-chef-privado/07-administracion-autonomo.xlsx',
     'bonus-briefing': '/dl/kit-tareas-chef-privado/BONUS-01-briefing-pre-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-chef-privado/guia-equivalencias-kit-tareas-chef-privado.docx',
   },
   'kit-gestion-personal': {
     'cuadrante': '/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx',
@@ -298,6 +313,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'directorio': '/dl/kit-gestion-personal/07-directorio-plantilla.xlsx',
     'bonus-briefing': '/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx',
     'bonus-calculadora': '/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx',
+    'guia-equivalencias': '/dl/kit-gestion-personal/guia-equivalencias-kit-gestion-personal.docx',
   },
   // Tienda EN (2026-10-03): Restaurant Staff Scheduling Kit Pro. MISMAS claves que kit-gestion-personal
   // (las del TEMPLATES de src/pages/RestaurantScheduleKitDashboard.tsx) → ficheros EN de
@@ -324,6 +340,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'costes': '/dl/kit-inventario/07-analisis-costes-compras.xlsx',
     'bonus-inventario-rapido': '/dl/kit-inventario/BONUS-08-inventario-rapido-mensual.xlsx',
     'bonus-calculadora': '/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx',
+    'guia-equivalencias': '/dl/kit-inventario/guia-equivalencias-kit-inventario.docx',
   },
   // Tienda EN (2026-09-25): Restaurant Inventory Kit Pro. MISMAS claves que kit-inventario (las del
   // TEMPLATES de src/pages/RestaurantInventoryKitDashboard.tsx) → ficheros EN de /dl/restaurant-inventory-templates/.
@@ -345,6 +362,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-legal': '/dl/guia-dark-kitchen/checklist-apertura-legal.xlsx',
     'checklist-equipamiento': '/dl/guia-dark-kitchen/checklist-equipamiento-obra.xlsx',
     'calculadora': '/dl/guia-dark-kitchen/calculadora-viabilidad-dark-kitchen.xlsx',
+    'guia-equivalencias': '/dl/guia-dark-kitchen/guia-equivalencias-guia-dark-kitchen.docx',
   },
   'guia-restaurante-gastronomico': {
     'guia-pdf': '/dl/guia-restaurante-gastronomico/guia-restaurante-gastronomico.pdf',
@@ -369,6 +387,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-restaurante-gastronomico/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-restaurante-gastronomico/business-plan-modelo.docx',
     'manual-sala': '/dl/guia-restaurante-gastronomico/manual-servicio-sala.docx',
+    'guia-equivalencias': '/dl/guia-restaurante-gastronomico/guia-equivalencias-guia-restaurante-gastronomico.docx',
   },
   'guia-food-cost-ingenieria-menu': {
     'guia-pdf': '/dl/guia-food-cost-ingenieria-menu/guia-food-cost-ingenieria-menu.pdf',
@@ -383,6 +402,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'carta-bebidas': '/dl/guia-food-cost-ingenieria-menu/carta-de-bebidas-beverage-cost.xlsx',
     'cuadro-prime-cost': '/dl/guia-food-cost-ingenieria-menu/cuadro-de-mando-prime-cost.xlsx',
     'plan-90-dias': '/dl/guia-food-cost-ingenieria-menu/plan-accion-90-dias.xlsx',
+    'guia-equivalencias': '/dl/guia-food-cost-ingenieria-menu/guia-equivalencias-guia-food-cost-ingenieria-menu.docx',
   },
   'manual-manager-restaurante': {
     'manual-pdf': '/dl/manual-manager-restaurante/manual-manager-restaurante.pdf',
@@ -396,6 +416,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calendario-legal': '/dl/manual-manager-restaurante/calendario-cumplimiento-legal.xlsx',
     'reuniones-plan-90': '/dl/manual-manager-restaurante/reuniones-acuerdos-plan-90-dias.xlsx',
     'auditoria-servicio': '/dl/manual-manager-restaurante/auditoria-interna-servicio.xlsx',
+    'guia-equivalencias': '/dl/manual-manager-restaurante/guia-equivalencias-manual-manager-restaurante.docx',
   },
   'manual-chef-ejecutivo': {
     'manual-pdf': '/dl/manual-chef-ejecutivo/manual-chef-ejecutivo.pdf',
@@ -409,6 +430,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'desarrollo-carta': '/dl/manual-chef-ejecutivo/desarrollo-carta-control-calidad.xlsx',
     'banquetes-testigo': '/dl/manual-chef-ejecutivo/banquetes-comidas-testigo.xlsx',
     'auditoria-cocina': '/dl/manual-chef-ejecutivo/auditoria-interna-cocina.xlsx',
+    'guia-equivalencias': '/dl/manual-chef-ejecutivo/guia-equivalencias-manual-chef-ejecutivo.docx',
   },
   'guia-pasteleria-obrador': {
     'guia-pdf': '/dl/guia-pasteleria-obrador/guia-pasteleria-obrador.pdf',
@@ -424,6 +446,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-legal': '/dl/guia-pasteleria-obrador/checklist-legal-y-licencias.xlsx',
     'checklist-equipamiento': '/dl/guia-pasteleria-obrador/checklist-equipamiento-y-proveedores.xlsx',
     'turnos-personal': '/dl/guia-pasteleria-obrador/plantilla-turnos-y-coste-personal.xlsx',
+    'guia-equivalencias': '/dl/guia-pasteleria-obrador/guia-equivalencias-guia-pasteleria-obrador.docx',
   },
   'guia-chocolateria-obrador': {
     'guia-pdf': '/dl/guia-chocolateria-obrador/guia-chocolateria-obrador.pdf',
@@ -440,6 +463,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-financiero': '/dl/guia-chocolateria-obrador/plan-financiero-3-anos-chocolateria.xlsx',
     'checklist-legal': '/dl/guia-chocolateria-obrador/checklist-legal-licencias-y-cacao.xlsx',
     'checklist-equipamiento': '/dl/guia-chocolateria-obrador/checklist-equipamiento-y-proveedores-cacao.xlsx',
+    'guia-equivalencias': '/dl/guia-chocolateria-obrador/guia-equivalencias-guia-chocolateria-obrador.docx',
   },
   'guia-churreria-chocolateria': {
     'guia-pdf': '/dl/guia-churreria-chocolateria/guia-churreria-chocolateria.pdf',
@@ -455,6 +479,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-financiero': '/dl/guia-churreria-chocolateria/plan-financiero-3-anos-churreria.xlsx',
     'checklist-legal': '/dl/guia-churreria-chocolateria/checklist-legal-fritura-y-licencias.xlsx',
     'turnos-madrugada': '/dl/guia-churreria-chocolateria/turnos-plantilla-y-madrugada.xlsx',
+    'guia-equivalencias': '/dl/guia-churreria-chocolateria/guia-equivalencias-guia-churreria-chocolateria.docx',
   },
   'guia-restaurante-casual': {
     'guia-pdf': '/dl/guia-restaurante-casual/guia-restaurante-casual.pdf',
@@ -476,6 +501,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-restaurante-casual/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-restaurante-casual/business-plan-modelo.docx',
     'manual-operaciones': '/dl/guia-restaurante-casual/manual-operaciones.docx',
+    'guia-equivalencias': '/dl/guia-restaurante-casual/guia-equivalencias-guia-restaurante-casual.docx',
   },
   'guia-restaurante-mexicano': {
     'guia-pdf': '/dl/guia-restaurante-mexicano/guia-restaurante-mexicano.pdf',
@@ -497,6 +523,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-restaurante-mexicano/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-restaurante-mexicano/business-plan-modelo.docx',
     'manual-operaciones': '/dl/guia-restaurante-mexicano/manual-operaciones-mexicano.docx',
+    'guia-equivalencias': '/dl/guia-restaurante-mexicano/guia-equivalencias-guia-restaurante-mexicano.docx',
   },
   'guia-restaurante-peruano': {
     'guia-pdf': '/dl/guia-restaurante-peruano/guia-restaurante-peruano.pdf',
@@ -518,6 +545,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-restaurante-peruano/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-restaurante-peruano/business-plan-modelo.docx',
     'manual-operaciones': '/dl/guia-restaurante-peruano/manual-operaciones-peruano.docx',
+    'guia-equivalencias': '/dl/guia-restaurante-peruano/guia-equivalencias-guia-restaurante-peruano.docx',
   },
   'guia-restaurante-japones': {
     'guia-pdf': '/dl/guia-restaurante-japones/guia-restaurante-japones.pdf',
@@ -539,6 +567,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-restaurante-japones/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-restaurante-japones/business-plan-modelo.docx',
     'manual-operaciones': '/dl/guia-restaurante-japones/manual-operaciones-japones.docx',
+    'guia-equivalencias': '/dl/guia-restaurante-japones/guia-equivalencias-guia-restaurante-japones.docx',
   },
   'guia-restaurante-nikkei': {
     'guia-pdf': '/dl/guia-restaurante-nikkei/guia-restaurante-nikkei.pdf',
@@ -560,6 +589,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-restaurante-nikkei/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-restaurante-nikkei/business-plan-modelo.docx',
     'manual-operaciones': '/dl/guia-restaurante-nikkei/manual-operaciones-nikkei.docx',
+    'guia-equivalencias': '/dl/guia-restaurante-nikkei/guia-equivalencias-guia-restaurante-nikkei.docx',
   },
   'mega-pack-tareas': {
     // Restaurante Casual
@@ -730,6 +760,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'kit-tareas-chef-privado__admin': '/dl/kit-tareas-chef-privado/07-administracion-autonomo.xlsx',
     'kit-tareas-chef-privado__bonus-briefing': '/dl/kit-tareas-chef-privado/BONUS-01-briefing-pre-servicio.xlsx',
     'kit-tareas-chef-privado__bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
+    'guia-equivalencias': '/dl/mega-pack-tareas/guia-equivalencias-mega-pack-tareas.docx',
   },
   'kit-plan-financiero': {
     'plan-previsional': '/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx',
@@ -742,6 +773,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'viabilidad': '/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx',
     'bonus-simulador': '/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx',
     'bonus-checklist': '/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx',
+    'guia-equivalencias': '/dl/kit-plan-financiero/guia-equivalencias-kit-plan-financiero.docx',
   },
   // Tienda EN (2026-10-03): Restaurant Financial Plan Kit Pro. MISMAS claves que kit-plan-financiero
   // (las del TEMPLATES de src/pages/RestaurantFinancialPlanKitDashboard.tsx) → ficheros EN de
@@ -831,6 +863,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-sushi-bar/09-plantilla-personalizable.xlsx',
     'bonus-briefing': '/dl/kit-tareas-sushi-bar/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-sushi-bar/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-sushi-bar/guia-equivalencias-kit-tareas-sushi-bar.docx',
   },
   'kit-tareas-taqueria': {
     'apertura-cierre': '/dl/kit-tareas-taqueria/01-apertura-cierre-taqueria.xlsx',
@@ -844,6 +877,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-taqueria/09-plantilla-personalizable.xlsx',
     'bonus-briefing': '/dl/kit-tareas-taqueria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-taqueria/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-taqueria/guia-equivalencias-kit-tareas-taqueria.docx',
   },
   'kit-tareas-asador': {
     'apertura-cierre': '/dl/kit-tareas-asador/01-apertura-cierre-asador.xlsx',
@@ -857,6 +891,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-asador/09-plantilla-personalizable.xlsx',
     'bonus-briefing': '/dl/kit-tareas-asador/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-asador/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-asador/guia-equivalencias-kit-tareas-asador.docx',
   },
   'kit-tareas-marisqueria': {
     'apertura-cierre': '/dl/kit-tareas-marisqueria/01-apertura-cierre-marisqueria.xlsx',
@@ -870,6 +905,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-marisqueria/09-plantilla-personalizable.xlsx',
     'bonus-briefing': '/dl/kit-tareas-marisqueria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-marisqueria/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-marisqueria/guia-equivalencias-kit-tareas-marisqueria.docx',
   },
   'kit-tareas-tapas-bar': {
     'apertura-cierre': '/dl/kit-tareas-tapas-bar/01-apertura-cierre-tapas-bar.xlsx',
@@ -883,6 +919,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-tapas-bar/09-plantilla-personalizable.xlsx',
     'bonus-briefing': '/dl/kit-tareas-tapas-bar/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-tapas-bar/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-tapas-bar/guia-equivalencias-kit-tareas-tapas-bar.docx',
   },
   'kit-tareas-food-truck': {
     'setup-teardown': '/dl/kit-tareas-food-truck/01-setup-teardown-food-truck.xlsx',
@@ -896,6 +933,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-food-truck/09-plantilla-personalizable.xlsx',
     'bonus-briefing-pre-evento': '/dl/kit-tareas-food-truck/BONUS-01-briefing-pre-evento.xlsx',
     'bonus-calendario-anual': '/dl/kit-tareas-food-truck/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-food-truck/guia-equivalencias-kit-tareas-food-truck.docx',
   },
   'kit-tareas-panaderia': {
     'apertura-cierre': '/dl/kit-tareas-panaderia/01-apertura-cierre-panaderia.xlsx',
@@ -909,6 +947,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plantilla-personalizable': '/dl/kit-tareas-panaderia/09-plantilla-personalizable.xlsx',
     'bonus-briefing-produccion': '/dl/kit-tareas-panaderia/BONUS-01-briefing-produccion.xlsx',
     'bonus-calendario-anual': '/dl/kit-tareas-panaderia/BONUS-02-calendario-anual.xlsx',
+    'guia-equivalencias': '/dl/kit-tareas-panaderia/guia-equivalencias-kit-tareas-panaderia.docx',
   },
   'guia-panaderia-obrador': {
     'guia-pdf': '/dl/guia-panaderia-obrador/guia-panaderia-obrador.pdf',
@@ -930,31 +969,37 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-marketing': '/dl/guia-panaderia-obrador/checklist-marketing-preapertura.xlsx',
     'business-plan': '/dl/guia-panaderia-obrador/business-plan-modelo.docx',
     'manual-operaciones': '/dl/guia-panaderia-obrador/manual-operaciones.docx',
+    'guia-equivalencias': '/dl/guia-panaderia-obrador/guia-equivalencias-guia-panaderia-obrador.docx',
   },
   'plan-negocio-bar-restaurante': {
     'plan-financiero': '/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx',
     'plan-negocio': '/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx',
     'checklist-apertura': '/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-bar-restaurante/guia-equivalencias-plan-negocio-bar-restaurante.docx',
   },
   'plan-negocio-tapas-bar': {
     'plan-negocio': '/dl/plan-negocio-tapas-bar/plan-de-negocio-tapas-bar.docx',
     'plan-financiero': '/dl/plan-negocio-tapas-bar/plan-financiero-tapas-bar.xlsx',
     'checklist-apertura': '/dl/plan-negocio-tapas-bar/checklist-apertura-tapas-bar.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-tapas-bar/guia-equivalencias-plan-negocio-tapas-bar.docx',
   },
   'plan-negocio-cafeteria': {
     'plan-financiero': '/dl/plan-negocio-cafeteria/plan-financiero-cafeteria-brunch.xlsx',
     'plan-negocio': '/dl/plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx',
     'checklist-apertura': '/dl/plan-negocio-cafeteria/checklist-apertura-cafeteria-brunch.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-cafeteria/guia-equivalencias-plan-negocio-cafeteria.docx',
   },
   'plan-negocio-panaderia': {
     'plan-financiero': '/dl/plan-negocio-panaderia/plan-financiero-panaderia.xlsx',
     'plan-negocio': '/dl/plan-negocio-panaderia/plan-de-negocio-panaderia.docx',
     'checklist-apertura': '/dl/plan-negocio-panaderia/checklist-apertura-panaderia.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-panaderia/guia-equivalencias-plan-negocio-panaderia.docx',
   },
   'plan-negocio-food-truck': {
     'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
     'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',
     'checklist-apertura': '/dl/plan-negocio-food-truck/checklist-apertura-food-truck.xlsx',
+    'guia-equivalencias': '/dl/plan-negocio-food-truck/guia-equivalencias-plan-negocio-food-truck.docx',
   },
   'plan-negocio-cocteleria-eventos': {
     'plan-negocio': '/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx',
@@ -966,6 +1011,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'carta-cocktails': '/dl/plan-negocio-cocteleria-eventos/carta-15-cocktails-tematicos.docx',
     'modelo-contrato': '/dl/plan-negocio-cocteleria-eventos/modelo-contrato-cocteleria-eventos.docx',
     'experiencias-tematicas': '/dl/plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx',
+    'guia-equivalencias': '/dl/plan-negocio-cocteleria-eventos/guia-equivalencias-plan-negocio-cocteleria-eventos.docx',
   },
   'plan-negocio-parrillero-asador-eventos': {
     'plan-negocio': '/dl/plan-negocio-parrillero-asador-eventos/plan-de-negocio-parrillero-asador-eventos.docx',
@@ -979,6 +1025,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'experiencias-tematicas': '/dl/plan-negocio-parrillero-asador-eventos/10-experiencias-tematicas-eventos.docx',
     'manual-tecnico': '/dl/plan-negocio-parrillero-asador-eventos/manual-tecnico-parrillero-profesional.docx',
     'guia-sistemas': '/dl/plan-negocio-parrillero-asador-eventos/guia-tipos-parrilla-roadmap-food-truck.docx',
+    'guia-equivalencias': '/dl/plan-negocio-parrillero-asador-eventos/guia-equivalencias-plan-negocio-parrillero-asador-eventos.docx',
   },
   'plan-negocio-paellero-eventos': {
     'plan-negocio': '/dl/plan-negocio-paellero-eventos/plan-de-negocio-paellero-eventos.docx',
@@ -992,6 +1039,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'experiencias-tematicas': '/dl/plan-negocio-paellero-eventos/10-experiencias-tematicas-paellero.docx',
     'manual-tecnico': '/dl/plan-negocio-paellero-eventos/manual-tecnico-paellero-profesional.docx',
     'guia-sistemas': '/dl/plan-negocio-paellero-eventos/guia-tipos-paellero-roadmap-food-truck.docx',
+    'guia-equivalencias': '/dl/plan-negocio-paellero-eventos/guia-equivalencias-plan-negocio-paellero-eventos.docx',
   },
   'plan-chef-privado-showcooking-eventos': {
     'plan-negocio': '/dl/plan-chef-privado-showcooking-eventos/plan-de-negocio-chef-privado-showcooking.docx',
@@ -1005,6 +1053,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'experiencias-tematicas': '/dl/plan-chef-privado-showcooking-eventos/10-experiencias-tematicas-chef-privado-showcooking.docx',
     'manual-tecnico': '/dl/plan-chef-privado-showcooking-eventos/manual-tecnico-servicio-domicilio-appcc.docx',
     'guia-sistemas': '/dl/plan-chef-privado-showcooking-eventos/guia-sistemas-chef-privado-personal-chef-caterer.docx',
+    'guia-equivalencias': '/dl/plan-chef-privado-showcooking-eventos/guia-equivalencias-plan-chef-privado-showcooking-eventos.docx',
   },
   'plan-catering-tematico-eventos': {
     'plan-negocio': '/dl/plan-catering-tematico-eventos/plan-de-negocio-catering-tematico-eventos.docx',
@@ -1018,6 +1067,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'modelos-contrato': '/dl/plan-catering-tematico-eventos/modelos-contrato-catering-tematico-b2c-b2b.docx',
     'manual-tecnico': '/dl/plan-catering-tematico-eventos/manual-tecnico-multi-cocina-appcc-catering.docx',
     'guia-especializacion': '/dl/plan-catering-tematico-eventos/guia-especializacion-catering-tematico-multi-concepto.docx',
+    'guia-equivalencias': '/dl/plan-catering-tematico-eventos/guia-equivalencias-plan-catering-tematico-eventos.docx',
   },
 };
 
@@ -1058,6 +1108,7 @@ export const handler: Handler = async (event) => {
           ebook: process.env.PDF_EBOOK_URL || null,
           bonus1: process.env.PDF_BONUS1_URL || null,
           bonus23: process.env.PDF_BONUS23_URL || null,
+          'guia-equivalencias': '/dl/pro-prompts-ebook/guia-equivalencias-pro-prompts-ebook.docx',
         }),
       };
     }

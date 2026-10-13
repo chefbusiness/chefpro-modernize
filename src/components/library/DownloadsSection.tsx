@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { BookOpen, FileText, Download, Loader2 } from 'lucide-react';
+import { BookOpen, FileText, Download, Loader2, Globe } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 
 interface DownloadUrls {
   ebook?: string;
   bonus1?: string;
   bonus23?: string;
+  'guia-equivalencias'?: string;
 }
 
 export default function DownloadsSection() {
@@ -47,6 +48,13 @@ export default function DownloadsSection() {
       url: urls.bonus23,
       format: 'Excel',
     },
+    {
+      icon: Globe,
+      title: 'Guía de Equivalencias para tu país',
+      desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.',
+      url: urls['guia-equivalencias'],
+      format: 'Word',
+    },
   ];
 
   return (
@@ -55,7 +63,7 @@ export default function DownloadsSection() {
         <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-4">
           Tus descargas
         </p>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {cards.map((card) => {
             const Icon = card.icon;
             return (

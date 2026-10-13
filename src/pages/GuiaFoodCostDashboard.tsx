@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   BookOpen, FileText, Calculator, BarChart3,
   Scale, Wine, Truck, Target, CalendarRange,
   GraduationCap, Star,
@@ -38,6 +38,12 @@ const SECTIONS = [
     templates: [
       { key: 'bonus-pdf', icon: GraduationCap, title: '12 Ejercicios Resueltos (PDF)', desc: 'Enunciado con datos, resolución paso a paso, tabla y lectura del resultado.', ext: '.pdf' },
       { key: 'bonus-docx', icon: FileText, title: '12 Ejercicios Resueltos (DOCX Editable)', desc: 'Mismo bonus en formato editable para trabajarlo con tu equipo.', ext: '.docx' },
+    ],
+  },
+  {
+    title: 'Bonus Internacional',
+    templates: [
+      { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.', ext: '.docx' },
     ],
   },
 ];
@@ -77,7 +83,7 @@ export default function GuiaFoodCostDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="guia-food-cost-ingenieria-menu" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 8 herramientas Excel + el bonus de ejercicios, listos para descargar.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 8 herramientas Excel + el bonus de ejercicios + la Guía de Equivalencias, listos para descargar.</p>
         </section>
 
         {SECTIONS.map((section) => (

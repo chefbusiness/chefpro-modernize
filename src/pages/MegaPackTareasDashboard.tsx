@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Download, Loader2, FileSpreadsheet, ArrowLeft, Package, ChevronDown } from 'lucide-react';
+import { Download, Loader2, FileSpreadsheet, ArrowLeft, Package, ChevronDown, Globe } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
@@ -275,10 +275,25 @@ export default function MegaPackTareasDashboard() {
                 </div>
               );
             })}
+            {/* Bonus común (fuera de los kits): Guía de Equivalencias para tu país */}
+            <div className="bg-white/5 border border-emerald-500/30 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div className="flex items-start gap-3">
+                <Globe className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-white font-semibold text-sm">Bonus: Guía de Equivalencias para tu país <span className="text-gray-500 text-xs font-normal">.docx</span></p>
+                  <p className="text-gray-400 text-sm mt-0.5">Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.</p>
+                </div>
+              </div>
+              {loading ? <Loader2 className="w-4 h-4 text-gray-500 animate-spin" /> : files['guia-equivalencias'] ? (
+                <a href={files['guia-equivalencias']} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1 border border-emerald-500/50 text-emerald-400 rounded-md text-xs font-semibold hover:bg-emerald-500/10 transition-colors flex-shrink-0">
+                  <Download className="w-3 h-3" />docx
+                </a>
+              ) : <span className="text-gray-600 text-xs">—</span>}
+            </div>
           </div>
           <div className="max-w-4xl mx-auto mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
             <p className="text-white font-semibold mb-1">Compatibles con Excel, Google Sheets, LibreOffice, Numbers + Imprimible A4</p>
-            <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y ábrelos con tu programa favorito.</p>
+            <p className="text-gray-400 text-sm">Descarga los archivos y ábrelos con tu programa favorito.</p>
           </div>
         </section>
         <ProductChangelog productId="mega-pack-tareas" />
