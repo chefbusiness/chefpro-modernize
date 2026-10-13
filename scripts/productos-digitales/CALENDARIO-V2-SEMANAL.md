@@ -425,6 +425,11 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   CLI de Stripe → env `VITE_STRIPE_PAYMENT_LINK_MOBILE_BAR_BUSINESS_PLAN` (builds) → `sync-payment-links.py` → PR fuera de draft + merge →
   gates LIVE → GSC → correo EN 24-nov (borrador + routine el 25-oct; plantilla `broadcast-mobile-bar-business-plan-lanzamiento-en.html`).
   Después: añadirle el bonus común «US · UK · Canada · Australia Hospitality Equivalents Guide» (rama `feat/en-equivalents-guide`).
+- **LIVE el 13-oct (merge `90f6a351` del #128).** Stripe `plink_1UQ1Ke4CcdRGidmEQZ5Tkw9S` (`buy.stripe.com/cNicMY2G878i4Z17Vj6oo1L`, $39 USD,
+  impuesto automático, redirección comprobada con la CLI) + env + mapa de 64 links. Gates LIVE: `--only` 0 fallos · completo **64 productos /
+  827 entregables / 0** · tienda · robots · carrusel 64/64. Sitemap reenviado. **Tienda EN: 13 productos.** Correo EN 24-nov 14:00Z: borrador
+  `704556eb` + routine `trig_01HXbLtxV9NLEcnZT5tW26hF` (25-oct 15:07Z). **Siguiente hueco EN: 29-nov.** Bonus de equivalencias en los 13 (PR #129).
+  Handoff: `SESSION_HANDOFF_2026-10-13-tienda-en.md`.
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
