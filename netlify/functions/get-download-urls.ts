@@ -817,6 +817,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-financiero': '/dl/mobile-bar-business-plan/mobile-bar-financial-projections.xlsx',
     'calculadora-pricing': '/dl/mobile-bar-business-plan/mobile-bar-pricing-calculator.xlsx',
     'checklist-apertura': '/dl/mobile-bar-business-plan/mobile-bar-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
