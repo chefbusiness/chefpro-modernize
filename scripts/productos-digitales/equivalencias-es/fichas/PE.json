@@ -21,31 +21,67 @@
       "verificado": true
     },
     "propina_servicio": {
-      "texto": "Existe el «recargo al consumo», un cargo de hasta el 10 % sobre la cuenta que algunos restaurantes aplican para repartir entre el personal; su origen se cita en la Ley 14701, aunque su regulación actual es poco clara. Si lo cobras, anúncialo con claridad en la carta y en el exterior del local, junto con la lista de precios que Indecopi exige. Consulta a Indecopi o a tu asesor antes de aplicarlo.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "El «recargo al consumo» no es una propina voluntaria: es un cargo que el restaurante puede acordar con sus trabajadores, regulado desde 1992, de hasta el 13 % del valor del servicio. Si lo aplicas, el cliente debe pagarlo, el fondo se reparte entre todos los trabajadores y no es remunerativo. La propina, en cambio, es voluntaria y suele ir a quien atendió. Anuncia el recargo con claridad en la carta y en el exterior del local.",
+      "fuentes": [
+        {
+          "titulo": "Gestión — Recargo por consumo: ¿es legal cobrarlo y además solicitar propina? (2024)",
+          "url": "https://gestion.pe/tu-dinero/recargo-por-consumo-es-legal-cobrarlo-en-un-establecimiento-y-ademas-solicitar-propina-pagos-boletas-electronicas-noticia/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Perú Retail — Propuesta legislativa contra las propinas ocultas en hoteles y restaurantes",
+          "url": "https://www.peru-retail.com/propuesta-legislativa-busca-acabar-con-las-propinas-ocultas-en-hoteles-y-restaurantes-peruanos/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "La referencia es la Norma Sanitaria para Restaurantes y Servicios Afines (NTS N.° 142-MINSA/2018/DIGESA, aprobada por la RM 822-2018/MINSA). Es un marco de buenas prácticas e higiene, no el HACCP español. La vigilancia sanitaria la ejercen la autoridad de salud (DIGESA a nivel nacional y las direcciones regionales) y las municipalidades. Pregunta en tu municipalidad distrital qué te pedirán en la inspección y cómo documentar tu plan de higiene.",
+      "texto": "La referencia es la Norma Sanitaria para Restaurantes y Servicios Afines (NTS N.° 142-MINSA/2018/DIGESA, aprobada por la RM 822-2018/MINSA). Exige aplicar los Principios Generales de Higiene, sustentados en programas de Buenas Prácticas de Manipulación y de Higiene y Saneamiento, no el HACCP español. Según DIGESA, la vigilancia sanitaria es competencia de la municipalidad, que puede emitir la certificación sanitaria de PGH con vigencia de un año.",
       "fuentes": [
         {
-          "titulo": "LP Derecho — Indecopi y la exigencia del carné de sanidad (cita la RM 822-2018/MINSA)",
-          "url": "https://lpderecho.pe/indecopi-declara-ilegal-exigencia-portar-carne-sanidad-municipal-manipular-alimentos-resolucion-0247-2025-sel-indecopi/",
-          "tipo": "secundaria"
+          "titulo": "DIGESA — Aprueban norma sanitaria para restaurantes y servicios afines (2018)",
+          "url": "https://www.digesa.minsa.gob.pe/noticias/setiembre2018/nota53.asp",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DIGESA — Norma sanitaria para restaurantes (presentación, certificación sanitaria de PGH)",
+          "url": "https://www.digesa.minsa.gob.pe/Orientacion/NORMA_SANITARIA_RESTAURANTES_SERVICIOS_AFINES_TIEMPOS_COVID-19.pdf",
+          "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "manipulador": {
-      "texto": "El «carné de sanidad» lo emiten muchas municipalidades (suele costar poco y vencer a los seis meses o al año), y todavía se fiscaliza. Pero Indecopi ha declarado ilegal que una municipalidad lo exija como condición para trabajar, y la norma sanitaria sí pide que el personal esté capacitado en manipulación de alimentos. Lo prudente: capacita a tu equipo, guarda los registros y pregunta a tu municipalidad si te lo reclamará.",
+      "texto": "No necesitas un «carné de sanidad» para trabajar: el artículo 13 de la Ley General de Salud prohíbe exigirlo como condición para una actividad económica, e Indecopi declaró ilegal esa exigencia municipal (Resolución 0247-2025/SEL-INDECOPI) y los exámenes médicos periódicos de la norma sanitaria (Resolución 0555-2022/CEB). La municipalidad solo puede emitirlo si el interesado lo pide. Sí debes cautelar que nadie con síntomas manipule alimentos y capacitar al personal; la norma incluye un apartado de capacitación sanitaria.",
       "fuentes": [
         {
-          "titulo": "LP Derecho — Indecopi declara ilegal exigir el carné de sanidad municipal",
-          "url": "https://lpderecho.pe/indecopi-declara-ilegal-exigencia-portar-carne-sanidad-municipal-manipular-alimentos-resolucion-0247-2025-sel-indecopi/",
+          "titulo": "El Peruano — Resolución 0247-2025/SEL-INDECOPI (carné de sanidad, Piura)",
+          "url": "https://busquedas.elperuano.pe/dispositivo/NL/2426569-1",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "El Peruano — Resolución 0555-2022/CEB-INDECOPI (inciso 6.3.1 de la NTS 142)",
+          "url": "https://busquedas.elperuano.pe/dispositivo/NL/2194919-1",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "El Peruano — RM 811-2023/MINSA (nuevo inciso 6.3.1 de la NTS 142)",
+          "url": "https://busquedas.elperuano.pe/dispositivo/NL/2209358-1",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DIGESA — Norma sanitaria para restaurantes (6.3.4 Capacitación sanitaria)",
+          "url": "https://www.digesa.minsa.gob.pe/Orientacion/NORMA_SANITARIA_RESTAURANTES_SERVICIOS_AFINES_TIEMPOS_COVID-19.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Andina — Indecopi: exigir el carné de sanidad es una barrera burocrática",
+          "url": "https://andina.pe/ingles/noticia-indecopi-considera-exigencia-del-carne-sanidad-es-una-barrera-burocratica-292797.aspx",
           "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "licencias_apertura": {
       "texto": "La licencia de funcionamiento la da la municipalidad distrital del local y se rige por el TUO de la Ley 28976. La seguridad se acredita con la ITSE (Inspección Técnica de Seguridad en Edificaciones, DS 002-2018-PCM): en riesgo bajo o medio la licencia sale primero y la inspección llega después; en riesgo alto o muy alto, antes. El certificado de ITSE dura dos años. Tu municipalidad fija el nivel de riesgo y la tasa en su TUPA.",
@@ -69,20 +105,25 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada máxima es de 8 horas diarias o 48 semanales. En el régimen general hay dos gratificaciones al año (julio y diciembre), cada una de un sueldo más una bonificación del 9 %, la CTS (compensación por tiempo de servicios, depositada en mayo y noviembre), 30 días de vacaciones y EsSalud. La Ley 32353 reduce beneficios para micro y pequeña empresa (por ejemplo, 15 días de vacaciones); verifícalo con REMYPE y tu asesor.",
+      "texto": "La jornada ordinaria máxima es de 8 horas diarias o 48 semanales (Constitución, artículo 25). En el régimen general hay dos gratificaciones al año, en julio y diciembre, de un sueldo cada una más un 9 % por EsSalud; la CTS (compensación por tiempo de servicios) se deposita en mayo y noviembre; y las vacaciones son de 30 días. En el régimen MYPE (Ley 32353) las vacaciones son de 15 días y la microempresa no paga CTS ni gratificaciones; la pequeña sí. Confirma tu categoría en REMYPE.",
       "fuentes": [
         {
-          "titulo": "La Cámara — Derechos laborales en Perú",
+          "titulo": "Constitución Política del Perú (texto del Poder Judicial) — artículo 25",
+          "url": "https://anc.pj.gob.pe/contenido/normas/cpdp1993.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "La Cámara — Derechos laborales: gratificaciones, CTS y vacaciones",
           "url": "https://lacamara.pe/derechos-laborales-en-peru-beneficios-que-debes-recibir-si-trabajas-formalmente/?print=pdf",
           "tipo": "secundaria"
         },
         {
-          "titulo": "Misha — Régimen laboral de la MYPE, Ley 32353",
-          "url": "https://misha.pe/laboral/regimen-laboral-mype-peru/",
+          "titulo": "BYB Consultores — Cambios clave de la Ley 32353 (comparativo laboral MYPE)",
+          "url": "https://bybconsultores.pe/impuesto-a-la-renta/mype-tributario/cambios-clave-de-la-ley-32353-ley-mype-2025-comparativo-legal-con-el-regimen-anterior/",
           "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "En el comercio se usa sobre todo el kilo, pero las unidades tradicionales siguen apareciendo: la «libra» equivale a unos 460 g (no los 453,6 g anglosajones), la «arroba» son 25 libras, es decir, unos 11,5 kg, y el «quintal» son 100 libras, unos 46 kg. También se compra por «docena», «ciento», «saco», «jaba» y «caja». Las temperaturas se dan en °C. Confirma con tu proveedor cuál usa en su lista.",

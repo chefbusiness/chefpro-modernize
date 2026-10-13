@@ -27,26 +27,36 @@
       "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "Las SEREMI de Salud (secretarías regionales ministeriales) otorgan la autorización sanitaria tras evaluar cocina, agua potable, cadena de frío, residuos, ventilación e higiene. La norma de referencia es el Reglamento Sanitario de los Alimentos (DS 977 de 1996), que exige buenas prácticas de manufactura, no el HACCP español. Revisa los requisitos antes de construir o reformar el local y confirma con la SEREMI de tu región.",
+      "texto": "La autoridad sanitaria regional, la SEREMI de Salud, autoriza y fiscaliza los locales bajo el Reglamento Sanitario de los Alimentos (DS 977 de 1996). Su artículo 6 exige autorización sanitaria para instalar y hacer funcionar cualquier establecimiento de alimentos, y el 9 la condiciona a una inspección previa. Exige Buenas Prácticas de Fabricación y, a los establecimientos que determine la autoridad, HACCP; no el APPCC español en general. Confirma los requisitos con tu SEREMI antes de reformar el local.",
       "fuentes": [
         {
-          "titulo": "Lofwork — Cómo abrir un restaurante en Chile",
+          "titulo": "BCN LeyChile — Decreto 977/1996, Reglamento Sanitario de los Alimentos (copia del texto oficial)",
+          "url": "https://www.vicaviged.usach.cl/sites/default/files/2024-05/DTO-977_13-MAY-1997_compressed.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Lofwork — Abrir un restaurante en Chile",
           "url": "https://www.lofwork.cl/abrir-un-restaurante-en-chile/",
           "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "manipulador": {
-      "texto": "No he podido confirmar un carné nacional único y obligatorio. En la práctica circulan cursos de «manipulación de alimentos», algunos gratuitos de las SEREMI y otros de pago en centros acreditados, y se citan vigencias de unos dos años, aunque las fuentes difieren. Lo prudente es formar y certificar a tu equipo y guardar los comprobantes. Pregunta en la SEREMI de tu región qué documento revisan en la inspección.",
+      "texto": "No hay un carné nacional único: el artículo 52 del Reglamento Sanitario de los Alimentos hace responsable a la dirección del establecimiento de que todo el personal que manipule alimentos reciba instrucción adecuada y continua en higiene, y de conservar registros de programas, calendario, listas de asistencia y evaluaciones. Los cursos de «manipulación de alimentos», algunos gratuitos de las SEREMI, sirven para cumplirlo. Guarda los comprobantes y pregunta a tu SEREMI qué revisan en la inspección.",
       "fuentes": [
         {
-          "titulo": "Minsal — Seremi de Salud Los Ríos, taller de manipulación de alimentos",
+          "titulo": "BCN LeyChile — Decreto 977/1996, artículo 52 (copia del texto oficial)",
+          "url": "https://www.vicaviged.usach.cl/sites/default/files/2024-05/DTO-977_13-MAY-1997_compressed.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Minsal — SEREMI de Salud Los Ríos: taller de manipulación de alimentos",
           "url": "https://www.minsal.cl/seremi-de-salud-los-rios-realizo-taller-de-manipulacion-de-alimentos-para-mas-de-120-personas-en-la-union/",
           "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "licencias_apertura": {
       "texto": "El orden habitual es: iniciar actividades en el SII (el giro de restaurantes es el código 561000), comprobar que el uso de suelo permite la actividad, obtener la patente comercial municipal para esa dirección y ese giro, y tramitar la autorización sanitaria de la SEREMI de Salud. Si vendes alcohol, necesitas además una patente de alcoholes. El orden exacto entre patente y autorización sanitaria varía, así que confírmalo con tu municipalidad.",
@@ -92,20 +102,25 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La Ley 21.561 reduce la jornada semanal máxima por etapas: 44 horas desde el 26 de abril de 2024, 42 horas desde el 26 de abril de 2026 y 40 horas desde el 26 de abril de 2028. Además de las cotizaciones (AFP, salud en Fonasa o Isapre y seguro de cesantía), existe la gratificación legal, que puede pagarse como el 25 % de la remuneración con tope anual. Confirma con la Dirección del Trabajo cómo te aplica.",
+      "texto": "La Ley 21.561 reduce la jornada semanal máxima por etapas: 44 horas desde el 26 de abril de 2024, 42 desde el 26 de abril de 2026 y 40 desde el 26 de abril de 2028. Además de las cotizaciones de pensión y salud y del seguro de cesantía, existe la gratificación legal: puedes pagar el 25 % de lo devengado en remuneraciones mensuales, con tope de 4,75 ingresos mínimos mensuales por trabajador (artículo 50 del Código del Trabajo). Confirma con la Dirección del Trabajo.",
       "fuentes": [
         {
-          "titulo": "Ministerio del Trabajo — Ley 40 horas, calendario",
-          "url": "https://www.mintrab.gob.cl/mesa-de-reactivacion-laboral-2/",
+          "titulo": "Dirección del Trabajo — Dictamen sobre la Ley 21.561 (reducción gradual de jornada)",
+          "url": "https://dt.gob.cl/legislacion/1624/articles-127285_recurso_pdf.pdf",
           "tipo": "oficial"
         },
         {
-          "titulo": "PwC Worldwide Tax Summaries — Chile, otros impuestos (seguridad social)",
-          "url": "https://taxsummaries.pwc.com/chile/corporate/other-taxes",
+          "titulo": "Dirección del Trabajo — Dictamen sobre la gratificación legal (artículos 47 a 50 del Código del Trabajo)",
+          "url": "https://dt.gob.cl/legislacion/1624/w3-article-62430.html",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Chile, individual: other taxes (seguridad social y seguro de cesantía)",
+          "url": "https://taxsummaries.pwc.com/chile/individual/other-taxes",
           "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "Chile usa el sistema métrico: se compra por kilo, litro, caja, saco, bandeja y unidad, y las temperaturas van en °C. En la carta, las bebidas se venden por «copa», «jarra» o «botella», y la cerveza, por «schop» (un vaso de cerveza de barril) o botellín. No hay unidades tradicionales relevantes en hostelería, pero pregunta a tu proveedor el formato exacto del envase, que cambia entre mayoristas.",
