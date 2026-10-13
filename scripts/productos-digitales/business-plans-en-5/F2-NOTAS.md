@@ -223,3 +223,55 @@ mano ventas (160 × 95 × 14 = 212,800), equilibrio 134 y DSCR 2.93; (4) abrir M
 (5) que el docx no prometa nada que el Excel no haga (la shopping list y las specs están en la calculadora, no en el
 libro); (6) desviaciones §4 (calibración de `B30`, «60 guests», lista blanca de `RX_BAR_NO`, bar fee y mínimo de la
 calculadora).
+
+## 9. Ronda de arreglos tras `REVISION-FINAL.md` (13-oct, sesión Claude Code): todo por la vía de TEXTO (y M8 por fórmula)
+
+Informe copiado a `REVISION-FINAL.md`, con la tabla de dónde vive cada arreglo al final. Aplicados el BLOQUEANTE, los 10
+MAYOR y los 16 MENOR **sin tocar ninguna cifra del caso ni ninguna fórmula del libro**. Decisiones del coordinador: M1, la
+glosa del operador «(your client buys the alcohol; you bring the bar, the bartenders and everything else)», y la de la
+landing sigue como en SPEC §0; B1 y M10, fuera el «agente» y la gratuity como salida segura; M8, por fórmula; M9,
+ejemplos dentro de los rangos de mercado; M2 y M3, filas reordenadas sin cambiar el número de tareas por fase.
+
+**Las 3 cotizaciones** (antes → después; subtotal sin service charge ni impuesto; Check Cherry: mediana $750 por evento,
+$1,063 para 101-150 invitados con el top 10 % por encima de $2,000, $700 para 51-100):
+
+| Ejemplo | Cambios de entrada (Kit estimates) | Subtotal | Total | Margen |
+|---|---|---|---|---|
+| Boda, 120 inv., 5 h | barbacks 1 → 0 · bar fee 250 → 150 · margen 55 → 40 % · service charge 15 → 10 % | 2,530.00 → **1,650.00** | 3,142.26 → **1,960.20** | 55.1 → 40.1 % |
+| Holiday party, 100 inv., 4 h | barbacks 1 → 0 · montaje 3 → 2.5 h · margen 55 → 35 % | 1,650.00 → **950.00** | 1,782.00 → **1,026.00** | 55.5 → 37.9 % |
+| Cumpleaños, 60 inv., 4 h | margen 55 → 35 % (y M8: con «No» ya no hay impuesto) | 960.00 → **630.00** | 1,036.80 → **630.00** | 61.0 → 43.2 % |
+
+La hoja principal no cambia (95 invitados, $1,377.50: el caso, en el cuartil alto, que ahora dice la nota del precio).
+
+**Desviaciones de la letra del informe:**
+1. Las métricas de superficie van como «sq m», no «m²»: el detector común `restos_espanol` rechaza «m²» (D14) y no se
+   toca código común; `REGLA_UNIDADES` lo dice.
+2. docx [97]: en vez de escribir «133.03» (cifra del caso sin token) dice que el libro muestra la cifra exacta y que el
+   plan la redondea a eventos enteros. docx [86]: el tercio variable va sin los $24,024 (cifra sin token).
+3. «$» solo en las cifras de mercado con fuente de las notas del libro (Check Cherry en `D7`, insurancecanopy en `C27`);
+   los Kit estimates del caso siguen sin símbolo (D8).
+4. «$10,000 to $30,000» chocaba con un importe del caso del catering: `datos_mbar.cifras_prohibidas()` ya no veta los
+   importes ≥ 10,000 que cita la research del bar móvil (`_importes_research`), solo los del catering y el FT que no estén
+   ahí.
+5. P2!E7 dice «a licensed commissary» (no «commercial kitchen»: «kitchen» está en `RX_BAR_NO`) y P4!E10 «bartender or
+   alcohol server permit» («server» suelto también lo está).
+6. Incidencia de git: el commit F3 `541eb6f3` del otro agente se llevó mis JSON a medio editar, y el revert `bae84001`
+   los devolvió a su estado anterior. Mis versiones completas quedaron en `b4fc2dc4` y `368bcdb2`, y están verificadas con
+   `check_textos` y con los marcadores de cada arreglo.
+7. Para la F3: la landing cita las cotizaciones de ejemplo ($19.00 / $16.50 / $16.00 por invitado). Ahora son **$12.50 /
+   $9.50 / $10.50** (subtotales $1,650 / $950 / $630).
+
+**Regeneración y gates (VPS, sobre `368bcdb2`)**: re-extracción (mismos 959 ids; GM 312, GX 165 al fijar `A2` y `A40`)
+y `preparar_tandas` (GRC-plan.revision.json, 6 correcciones) → `check_textos --todas`: las 6 OK. `aplicar_en
+--idempotencia`: préstamo $49,000 en 1 vuelta, 0 diferencias, 0 fallos de pycel, D15 sin fallos, **`cifras_caso.json` sin
+ninguna cifra distinta**. `ensamblar_docx --plan mbar` G8 VERDE (6,912 palabras). Calculadora regenerada: autotest VERDE
+(778). `gates_en` G1-G9 **TODO VERDE** · `--autotest` 20/20 · `ensamblar_docx --autotest` 8/8 · `barrido_mbar` 2,687
+piezas, 0 fallos · `censo --letter` 0 defectos · `gate-no-latinos` 0 · regresión FT/CAF, REST/PAN, BAR y CAT en verde
+(20/20 · 18/18 · 16/16 · 8/8 · `check_textos` 7 / 8 / 6 / 6 OK · calculadora del catering VERDE).
+
+| Entregable | sha256 (Mac = VPS) |
+|---|---|
+| `mobile-bar-business-plan.docx` | `803a3886edb97647873db9b037376cffa610f0ddc53bc2a7d51dec7e514a88af` |
+| `mobile-bar-financial-projections.xlsx` | `15171a23a8a3a83e58dcbac9d858a3508128ea2bf27557cc9df7b97c19e917de` |
+| `mobile-bar-pricing-calculator.xlsx` | `3067d7054d5f8edd41a0e55b85aa6b7aa0d8ca57c7b93773b8024d15016d4c4c` |
+| `mobile-bar-startup-checklist.xlsx` | `8cea45dd04d69bf21773ce526376637a96f134c2afe62f0aaba7465d78d30ff0` |
