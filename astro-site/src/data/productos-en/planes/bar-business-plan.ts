@@ -88,8 +88,8 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Yes. The green cells are the ones you type — rent, guests per day, average check, the food and beverage mix, food cost and pour cost, wages and any startup cost line — and more than 700 linked formulas recalculate the rest. Tips aren't modeled: bartenders, barbacks and servers are budgeted at a full base wage, which keeps the plan on the safe side. To change a calculated cell, use Review → Unprotect Sheet (there is no password). The workbook includes an Instructions tab.",
   },
   {
-    q: 'Does it work in the UK?',
-    a: "Yes, with notes. Tax rates are editable cells: enter 20% VAT on your sales and the VAT you can reclaim on purchases and on your build-out. The plan adds UK notes: to sell alcohol you need a premises licence plus a personal licence under the Licensing Act 2003 (England and Wales; Scotland and Northern Ireland have their own licensing laws), you register your food business with the council 28 days before you open, you receive a Food Hygiene Rating, and you must be able to declare the 14 allergens. UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
+    q: "Does it work in the UK, Canada or Australia?",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type the average check without it. The UK notes cover the premises and personal licences (England and Wales), council food registration and the 14 allergens. In Canada, liquor licences are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, a state liquor licence and RSA for staff who serve. Check with your council, province or state.",
   },
   {
     q: 'What currency will I pay in?',

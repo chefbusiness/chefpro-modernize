@@ -74,8 +74,8 @@ const data: KitExcelData = {
         a: 'Scheduling apps are a monthly subscription, usually per location. This kit is $19, a one-time payment with no subscription. There is no mobile app and no POS or time-clock integration.',
       },
       {
-        q: 'Does it work in the UK?',
-        a: 'Yes. The limits are editable cells: set 11 hours of rest between shifts, keep an eye on the 48-hour average week and enter 5.6 weeks of paid holiday.',
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes. The limits are editable cells: in the UK (your \"rota\") set 11 hours of rest between shifts, watch the 48-hour average week and enter 5.6 weeks of holiday; in Canada, type your province's weekly and daily overtime thresholds; in Australia (your \"roster\"), Award penalty rates aren't calculated, so check Fair Work.",
       },
       {
         q: 'What currency will I pay in?',
@@ -251,8 +251,8 @@ const data: KitExcelData = {
       a: "Yes. One purchase covers one business with all of its locations, which makes it a good fit for restaurant groups and multi-unit operators. If you are a consultant, you can use the templates with your clients, but you can't hand them copies: each business buys its own.",
     },
     {
-      q: 'Does it work in the UK?',
-      a: 'Yes. The limits live in editable cells, so you set the UK figures once: call it your rota, set the minimum rest between shifts to 11 hours, keep an eye on the 48-hour average week and enter 39 calendar days (5.6 weeks of paid holiday) in the PTO planner. The UK has no legal overtime premium, so set the multiplier to what your contracts say, and put your own employer cost in its cell (employer National Insurance is 15% above £5,000 a year, plus a 3% pension contribution).',
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes. The limits are editable cells. UK: call it your \"rota\", set rest between shifts to 11 hours, watch the 48-hour average week, enter 39 days (5.6 weeks) of paid holiday and set the overtime multiplier to what your contracts say. Canada: overtime thresholds come from your province's employment standards, weekly or daily, and both have a cell. Australia: it's your \"roster\", and the weekend and public holiday penalty rates of your Award aren't calculated, so check Fair Work. Put National Insurance, CPP and EI, or super in the employer cost cell, and track Smart Serve, Serving It Right or RSA expiry dates in the alcohol server column.",
     },
     {
       q: 'What currency will I pay in?',

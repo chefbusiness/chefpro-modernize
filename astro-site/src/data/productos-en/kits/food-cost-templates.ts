@@ -81,6 +81,10 @@ const data: KitExcelData = {
         a: 'It is a set of Excel templates, not software: no app, no POS or supplier integration, no automatic price updates and no labor costing. Menu engineering appears only as a basic step in the 30-day guide.',
       },
       {
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes. Each cost card has a Tax rate cell: 20% for UK VAT or 10% for Australian GST, with prices shown including tax; in Canada you price before GST/HST, as in the US. The units include kg, g, L and ml next to lb, oz and US fl oz, plus imperial pints.",
+      },
+      {
         q: 'What currency will I pay in?',
         a: 'The price is $19 USD. At checkout, Stripe can show the amount in your local currency. The templates have no currency symbol: you type prices in your own currency.',
       },
@@ -285,6 +289,10 @@ const data: KitExcelData = {
     {
       q: 'What is not included?',
       a: 'It is a set of Excel templates, not software: there is no app, no POS or supplier integration, no automatic price updates, no barcode inventory and no labor costing. The templates are separate files, so a new price is copied into each cost card by hand. Menu engineering appears only as a basic step in the 30-day guide.',
+    },
+    {
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes. Each cost card has a Tax rate cell, 0% by default: enter 20% for UK VAT or 10% for Australian GST and print the price including tax; in Canada you price before GST/HST or PST, as in the US. The unit drop-down has kg, g, L, ml and cl, but pt, qt, gal, cup and fl oz are US measures, so pick \"imp pt\" or work in ml, and type your 700 ml bottle or 330 ml can on the Conversions tab. Every card shows \"GP\", the figure UK kitchens use. And in Australia, as on many British menus, an \"entrée\" is the starter, not the main.",
     },
     {
       q: 'What currency will I pay in?',

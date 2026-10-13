@@ -89,6 +89,10 @@ const data: KitExcelData = {
         a: 'Inventory software is a monthly subscription. This kit is $19, a one-time payment with no subscription, and you can customize everything. There is no app, no POS integration and no barcode scanning.',
       },
       {
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes. Prices have no currency symbol, the unit list has kg and L next to lb and gal, and the purchase order's tax table starts at 0%: type UK VAT, Canadian GST/HST plus any PST, or 10% Australian GST. The receiving log checks temperatures in °F against FDA limits, so compare them with your local rules.",
+      },
+      {
         q: 'What currency will I pay in?',
         a: 'The price is $19 USD. At checkout, Stripe can show the amount in your local currency. The templates have no currency symbol: you type prices in your own currency.',
       },
@@ -285,6 +289,10 @@ const data: KitExcelData = {
     {
       q: 'How is it different from inventory software?',
       a: 'Inventory software is a monthly subscription, usually per location. This kit is $19, a one-time payment with no subscription, and you can customize 100% of it. What it is not: there is no app, no POS integration, no barcode scanning and no automatic price updates.',
+    },
+    {
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes. Prices have no currency symbol, and the unit drop-down has kg and L next to lb, oz, gal and qt. Taxes live in an editable table on the purchase order's Tax Rates tab, 0% by default: type UK VAT (0, 5 or 20%), Canadian GST/HST plus any PST, or 10% Australian GST, and keep the tax you claim back out of your food cost. The vendor list has a Tax ID column for your VAT number, business number or ABN. The receiving log, though, checks temperatures in °F against FDA Food Code limits, so compare them with your local rules (FSA, your provincial health authority or FSANZ).",
     },
     {
       q: 'What currency will I pay in?',

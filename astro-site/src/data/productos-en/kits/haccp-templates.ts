@@ -89,8 +89,8 @@ const data: KitExcelData = {
         a: 'Usually the HACCP plan, the hazard analysis, the prerequisite programs, the monitoring and corrective action records, and the verification records. The kit has a template for each.',
       },
       {
-        q: 'Does it work in the UK?',
-        a: 'Yes. The instructions add UK notes where the rules differ (hot holding at 63 °C, cooling below 8 °C within 90 minutes, 48 hours off work after symptoms stop), and the allergen matrix keeps all 14 UK allergens.',
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes, with notes. The limits are FDA Food Code values in °F, written into the formulas. The instructions add UK notes (hot holding at 63 °C, cooling below 8 °C within 90 minutes) and the matrix keeps the 14 UK allergens. In Canada and Australia, check your provincial health rules or the FSANZ Food Standards Code.",
       },
       {
         q: 'What currency will I pay in?',
@@ -286,8 +286,8 @@ const data: KitExcelData = {
       a: 'There is no single official list, but a HACCP manual usually holds five kinds of documents: the HACCP plan, the hazard analysis, the prerequisite programs (cleaning, pest control, receiving, training, allergens), the monitoring and corrective action records, and the verification records (thermometer calibration, self-inspections). This kit gives you a template for each of them.',
     },
     {
-      q: 'Does it work in the UK?',
-      a: 'Yes. The limits follow the FDA Food Code in °F, and the instructions add a UK note where the rules differ: hot holding at 63 °C or above, cooling below 8 °C within 90 minutes (FSA Safer Food Better Business), 48 hours off work after symptoms stop, and the Food Hygiene Rating Scheme in the inspection checklist. The allergen matrix and the allergen chart keep all 14 UK allergens. In the UK, every food business needs procedures based on HACCP principles, and you can use this kit alongside Safer Food Better Business.',
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes, with notes. The OK/ALERT limits are FDA Food Code values in °F, fixed in the formulas, so compare them with your local rules. UK: the instructions add notes where the rules differ (hot holding at 63 °C, cooling below 8 °C within 90 minutes, 48 hours off work after symptoms stop), the allergen matrix keeps all 14 UK allergens, and it works alongside Safer Food Better Business. Canada: rules come from your province and your public health inspector; compare Health Canada's priority allergens with the matrix. Australia: check the FSANZ Food Standards Code, which also asks food service businesses for a certified Food Safety Supervisor.",
     },
     {
       q: 'What currency will I pay in?',
