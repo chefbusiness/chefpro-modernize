@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { BookOpen, FileText, Download, Loader2 } from 'lucide-react';
+import { BookOpen, FileText, Download, Loader2, Globe } from 'lucide-react';
 import TopBar from '@/components/library/TopBar';
 import FloatingGallery from '@/components/library/FloatingGallery';
 import CompatibilityBanner from '@/components/library/CompatibilityBanner';
@@ -52,6 +52,13 @@ const DOWNLOADS = [
     title: 'Bonus 2: Templates + Cheat Sheet',
     desc: 'Ready-to-use templates and a quick summary of the best prompts.',
     format: 'Excel',
+  },
+  {
+    key: 'equivalents-guide',
+    icon: Globe,
+    title: 'US · UK · Canada · Australia Equivalents Guide',
+    desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+    format: 'Word',
   },
 ];
 

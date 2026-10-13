@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft, Calculator,
+  Download, Loader2, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft, Calculator, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -47,6 +47,13 @@ const TEMPLATES = [
     type: '.xlsx',
     title: 'Mobile Bar Startup Checklist (68 Tasks)',
     desc: "68 tasks in 6 phases: business setup (LLC, EIN, seller's permit, business license, dry hire service agreement), trailer and permits (your state's alcohol rules, county health department, DMV, liquor liability), equipment, staff, marketing and your first 90 days.",
+  },
+  {
+    key: 'equivalents-guide',
+    icon: Globe,
+    type: '.docx',
+    title: "US · UK · Canada · Australia Equivalents Guide",
+    desc: "Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.",
   },
 ];
 
@@ -118,7 +125,7 @@ export default function MobileBarBusinessPlanDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              4 Files · Direct Download
+              5 Files · Direct Download
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">

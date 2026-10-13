@@ -87,7 +87,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT on hot food (most cold takeaway food is zero-rated), Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on equipment, and your own minimum wage and employer costs. The UK notes cover council registration 28 days before trading and a street trading licence or consent from each council where you sell. In Canada and Australia, mobile vending permits also come from each city or council, and Australia asks for a certified Food Safety Supervisor. The CDL note is US-only: check licence classes locally.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT on hot food (most cold takeaway food is zero-rated), Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on equipment, and your own minimum wage and employer costs. The UK notes cover council registration 28 days before trading and a street trading licence or consent from each council where you sell. In Canada and Australia, mobile vending permits also come from each city or council, and Australia asks for a certified Food Safety Supervisor. The CDL note is US-only: check licence classes locally. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -248,6 +248,13 @@ const data: PlanNegocioData = {
         desc: "The reference table inside the workbook: cost of goods, gross margin, labor and net margin, each with its source or marked \"kit estimate\", and the OK / REVIEW check (commissary and parking included) that tells you where your plan departs from the benchmark. Every threshold is an editable cell.",
         image: '/lovable-uploads/ai-gallery/ftbp-en-owner-plan.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
+      },
     ],
   },
 
@@ -282,6 +289,7 @@ const data: PlanNegocioData = {
       'Startup checklist: 68 tasks in 6 phases',
       'BONUS: Food Truck Permits & Licenses Guide (included in the plan)',
       'BONUS: Food Truck Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },

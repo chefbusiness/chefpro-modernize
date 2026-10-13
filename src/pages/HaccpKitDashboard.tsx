@@ -4,7 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   Thermometer, SprayCan, ClipboardCheck, Truck, Bug,
   AlertTriangle, Droplets, ShieldCheck, UserCheck, GraduationCap,
-  Flame, Snowflake, Fish, Gauge,
+  Flame, Snowflake, Fish, Gauge, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -42,6 +42,7 @@ const TEMPLATES = [
   { key: 'termometros', icon: Gauge, title: 'Thermometer Calibration Log', desc: 'Monthly probe check at the ice point or the boiling point, corrected for altitude.' },
   { key: 'bonus-formacion', icon: GraduationCap, title: 'BONUS: Food Safety Training Log', desc: "Your team's food safety training and renewal dates." },
   { key: 'bonus-protocolo', icon: AlertTriangle, title: 'BONUS: Food Recall & Foodborne Illness Response Plan', desc: 'A printable poster with the 7 steps to follow in a recall or a suspected foodborne illness.' },
+  { key: 'equivalents-guide', icon: Globe, title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.' },
 ];
 
 export default function HaccpKitDashboard() {
@@ -107,7 +108,7 @@ export default function HaccpKitDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              19 Templates + 2 Bonuses · Direct Download
+              19 Templates + 3 Bonuses · Direct Download
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -131,7 +132,7 @@ export default function HaccpKitDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">.xlsx</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'equivalents-guide' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>

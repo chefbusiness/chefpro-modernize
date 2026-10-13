@@ -106,7 +106,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: 'Does it work in the UK, Canada or Australia?',
-    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type your price per guest without it. The cocktail specs give ounces with milliliters for metric jiggers and the ice comes in lb with kg alongside; the calculator counts miles, so type kilometers and your cost per km instead, and storage sizes are in sq ft. The plan's UK notes cover the personal licence, Temporary Event Notices and working under a venue's premises licence. In Canada, liquor rules are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, check your state liquor rules and RSA. Ask your council, province or state before you sell a package.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type your price per guest without it. The cocktail specs give ounces with milliliters for metric jiggers and the ice comes in lb with kg alongside; the calculator counts miles, so type kilometers and your cost per km instead, and storage sizes are in sq ft. The plan's UK notes cover the personal licence, Temporary Event Notices and working under a venue's premises licence. In Canada, liquor rules are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, check your state liquor rules and RSA. Ask your council, province or state before you sell a package. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -265,6 +265,13 @@ const data: PlanNegocioData = {
         desc: 'The reference table inside the workbook: price per event, by guest count and by event length, bartender-only rates, deposit and travel fee, seasonality, the real first year of a new mobile bar, drinks per guest, bartender ratio and wages, marketplace commission, startup costs, insurance, and ice, mixers and garnish per guest, each with its source or marked "kit estimate" when there isn\'t one — plus five OK / REVIEW checks on your P&L against editable thresholds.',
         image: '/lovable-uploads/ai-gallery/consultor-bartender-coctel.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
+      },
     ],
   },
 
@@ -299,6 +306,7 @@ const data: PlanNegocioData = {
       'Startup checklist: 68 tasks in 6 phases',
       'BONUS: Mobile Bar Insurance, Permits & Venue Requirements Guide (included in the plan)',
       'BONUS: US Mobile Bar Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },

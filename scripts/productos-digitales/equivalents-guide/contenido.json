@@ -1,0 +1,1878 @@
+{
+ "meta": {
+  "kicker": "BONUS GUIDE",
+  "title": "US · UK · Canada · Australia Hospitality Equivalents Guide",
+  "subtitle": "Use any AI Chef Pro kit in the US, UK, Canada and Australia",
+  "bonus_line": "Bonus included with every English edition",
+  "date_line": "Updated October 2026",
+  "footer": "US · UK · Canada · Australia Hospitality Equivalents Guide · aichef.pro",
+  "core_title": "US · UK · Canada · Australia Hospitality Equivalents Guide",
+  "core_subject": "Bonus guide for the AI Chef Pro English kits and business plans: menu terms, tax, food safety, labor, alcohol, business setup and units in the US, UK, Canada and Australia",
+  "core_keywords": "hospitality equivalents, restaurant terms US UK Canada Australia, VAT GST sales tax restaurant, food safety temperatures, allergens list, overtime rules, liquor license, unit conversions, AI Chef Pro",
+  "legal_title": "LEGAL NOTICE",
+  "legal": "This guide was prepared by [John Guerrero](https://johnguerrero.es) for AI Chef Pro as a practical reference for restaurant, bar, cafe, bakery, catering and food truck operators. It is not legal, tax, employment or food safety advice. Rules change and they vary by state, province, territory, county, city and council: before you print a menu, sign a contract, run payroll or open your doors, check every figure with the official source listed in section 10, your accountant or your local authority. The legal figures in this guide were checked against official government sources in October 2026.",
+  "copyright": "© 2026 AI Chef Pro — aichef.pro",
+  "contents_note": "How to read the tables: the first column says what the thing is; the next four columns give the word or the rule in the US, the UK, Canada and Australia. Local words appear in quotation marks."
+ },
+ "sections": [
+  {
+   "h1": "1. How to Use This Guide with Your Kit",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "Every AI Chef Pro English edition is written in US English with US defaults: prices in dollars, sales tax added on top of the menu price, temperatures in °F, weights in pounds and ounces, and overtime after 40 hours a week. That is the starting point, not a limit. The numbers that change from one country to another live in editable input cells (usually the green ones), so a restaurant owner in Manchester, Toronto or Melbourne can make the kit their own in a few minutes."
+    },
+    {
+     "t": "p",
+     "x": "This guide tells you **what to type in those cells** and **which words your team will use instead**. Work through it in this order: money and tax first, then wages and employer costs, then units and temperatures, and finally the labels you want to rename."
+    },
+    {
+     "t": "h2",
+     "x": "The cells to change, country by country"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Input cell in the kit",
+      "US (default)",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Currency",
+       "US dollars",
+       "Pounds sterling",
+       "Canadian dollars",
+       "Australian dollars"
+      ],
+      [
+       "Tax rate on sales",
+       "Your state + local sales tax rate (0% if you only want pre-tax figures)",
+       "20% VAT standard rate; most cold takeaway food is zero-rated (not soft drinks, confectionery or crisps)",
+       "5% GST, or your province's single HST rate; add PST or QST where it applies",
+       "10% GST"
+      ],
+      [
+       "Do menu prices include tax?",
+       "No: tax is added on the bill",
+       "Yes: displayed prices must include VAT",
+       "Usually no: tax is added on the bill",
+       "Yes: prices include GST"
+      ],
+      [
+       "Tax you get back on purchases",
+       "None: sales tax you pay on supplies is a cost",
+       "VAT you reclaim, if you are “VAT-registered”",
+       "“Input tax credits” for GST/HST, if registered",
+       "“GST credits”, if registered for GST"
+      ],
+      [
+       "Wages",
+       "Federal, state or local minimum wage, whichever is higher",
+       "“National Minimum Wage” or “National Living Wage” for the worker's age",
+       "Your province's minimum wage",
+       "The minimum rate in your Award (e.g. the Hospitality Award), plus the 25% “casual loading” for casual staff"
+      ],
+      [
+       "Employer cost on top of wages",
+       "Social Security 6.2% + Medicare 1.45% + FUTA/SUTA + workers' comp",
+       "Employer “National Insurance” + workplace pension + employers' liability insurance",
+       "CPP (QPP in Quebec) + EI at 1.4 times the employee premium + workers' compensation",
+       "“Superannuation guarantee” + workers' compensation"
+      ],
+      [
+       "Overtime rule",
+       "Over 40 hours a week at 1.5×",
+       "No legal overtime premium: use what your contracts say",
+       "Provincial: e.g. Ontario after 44 hours a week; British Columbia after 8 hours a day or 40 a week",
+       "Award overtime and “penalty rates” (evenings, weekends, public holidays)"
+      ],
+      [
+       "Units",
+       "lb, oz, fl oz, qt, gal; °F",
+       "Metric (g, kg, ml, L); °C; imperial pint for beer",
+       "Metric (g, kg, ml, L); °C",
+       "Metric (g, kg, ml, L); °C"
+      ],
+      [
+       "Floor area and distance",
+       "sq ft; miles",
+       "m² or sq ft; miles",
+       "m² or sq ft; km",
+       "m²; km"
+      ]
+     ],
+     "widths": [
+      1.25,
+      1.27,
+      1.27,
+      1.27,
+      1.27
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Kit-by-kit pointers"
+    },
+    {
+     "t": "table2",
+     "head": [
+      "Kit",
+      "What to adjust outside the US"
+     ],
+     "rows": [
+      [
+       "Food Cost Kit",
+       "Each cost card has a Tax rate cell (0% by default). Enter 20% for UK VAT or 10% for Australian GST and print the price including tax; in Canada, price before tax as in the US. The unit drop-down has kg, g, L, ml and cl; pt, qt, gal, cup and fl oz are US measures, so pick “imp pt” or work in ml. Every card also shows GP %, the figure UK kitchens use. In Canada, cost draft beer in “imp pt” or ml."
+      ],
+      [
+       "HACCP Food Safety Kit",
+       "The OK/ALERT limits are FDA Food Code values in °F, fixed in the formulas. Compare them with section 5 of this guide; the instructions add UK notes, and the allergen matrix keeps the 14 UK allergens."
+      ],
+      [
+       "Restaurant Inventory Kit",
+       "Prices carry no currency symbol. Type your tax rates on the purchase order's Tax Rates tab (0% by default) and keep reclaimable tax out of food cost. The vendor list has a Tax ID column for a VAT number, business number or ABN. The receiving log checks °F temperatures against FDA limits."
+      ],
+      [
+       "Staff Scheduling Kit",
+       "Type 11 in the rest-between-shifts cell (UK), your province's weekly or daily overtime threshold (Canada) and 39 calendar days (5.6 weeks) in the PTO cell (UK). The kit flags weekly hours; it does not average the UK 48-hour week over 17 weeks, so track that separately. Put National Insurance, CPP and EI, or super in the employer cost cell. Australian Award penalty rates are not calculated: check Fair Work."
+      ],
+      [
+       "Restaurant Financial Plan Kit",
+       "Sales tax, reclaimable tax and corporation tax are editable cells. The cash flow pays sales tax quarterly: move that row if you file monthly or yearly. Floor area is in sq ft (section 9 converts it)."
+      ],
+      [
+       "Business plan kits",
+       "Tax rates and wages are editable cells, and each plan has UK notes. In the UK and Australia, type the average check without tax. The catering calculator counts miles: type kilometers and your cost per km instead of the IRS mileage rate. Outside the US, put business rates (UK) or outgoings (Australia) in the NNN/CAM line."
+      ],
+      [
+       "AI prompts eBook",
+       "Add one line to any prompt, such as “Use British English, metric units and prices including VAT” (or GST for Australia, GST/HST for Canada)."
+      ]
+     ],
+     "widths": [
+      1.6,
+      4.73
+     ]
+    },
+    {
+     "t": "note",
+     "x": "**Golden rule.** The legal figures in this guide are a reference, checked against official sources in October 2026. Rules change and many are set locally. Before you act on a number, open the link in section 10 or ask your accountant, your health inspector or your licensing office."
+    },
+    {
+     "t": "p",
+     "x": "**Renaming labels.** You can rename column headings and printed titles so they sound like your team (“rota”, “roster”, “stocktake”). Do not rename the values inside drop-down lists, such as units or categories: formulas look them up by their exact text."
+    }
+   ]
+  },
+  {
+   "h1": "2. Kitchen & Menu Terms",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "The kits use the US word. If your guests and your team say it differently, this is the word to use on your menu, your prep lists and your rota."
+    },
+    {
+     "t": "table",
+     "head": [
+      "What it is",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "First course",
+       "“appetizer”",
+       "“starter”",
+       "“appetizer”",
+       "“entrée”"
+      ],
+      [
+       "Main course",
+       "“entrée” or “main course”",
+       "“main” or “main course”",
+       "“main course” (“entrée” also heard)",
+       "“main”"
+      ],
+      [
+       "Fried potato strips",
+       "“fries” / “French fries”",
+       "“chips”",
+       "“fries”",
+       "“chips” / “hot chips”"
+      ],
+      [
+       "Thin packet potato snack",
+       "“chips”",
+       "“crisps”",
+       "“chips”",
+       "“chips”"
+      ],
+      [
+       "Eggplant",
+       "“eggplant”",
+       "“aubergine”",
+       "“eggplant”",
+       "“eggplant”"
+      ],
+      [
+       "Zucchini",
+       "“zucchini”",
+       "“courgette”",
+       "“zucchini”",
+       "“zucchini”"
+      ],
+      [
+       "Fresh leaves of the coriander plant",
+       "“cilantro”",
+       "“coriander”",
+       "“cilantro” or “coriander”",
+       "“coriander”"
+      ],
+      [
+       "Green onion",
+       "“scallion” / “green onion”",
+       "“spring onion”",
+       "“green onion”",
+       "“spring onion” (“shallots” in NSW)"
+      ],
+      [
+       "Peppery salad leaf",
+       "“arugula”",
+       "“rocket”",
+       "“arugula”",
+       "“rocket”"
+      ],
+      [
+       "Shrimp",
+       "“shrimp”",
+       "“prawns”",
+       "“shrimp”",
+       "“prawns”"
+      ],
+      [
+       "Ground beef",
+       "“ground beef”",
+       "“beef mince”",
+       "“ground beef”",
+       "“beef mince”"
+      ],
+      [
+       "All-purpose flour",
+       "“all-purpose flour”",
+       "“plain flour”",
+       "“all-purpose flour”",
+       "“plain flour”"
+      ],
+      [
+       "Powdered sugar",
+       "“powdered” / “confectioners' sugar”",
+       "“icing sugar”",
+       "“icing sugar”",
+       "“icing sugar”"
+      ],
+      [
+       "Superfine sugar",
+       "“superfine sugar”",
+       "“caster sugar”",
+       "“superfine sugar”",
+       "“caster sugar”"
+      ],
+      [
+       "Cream for whipping",
+       "“heavy cream”",
+       "“double cream” or “whipping cream”",
+       "“whipping cream”",
+       "“thickened cream” or “pure cream”"
+      ],
+      [
+       "Sweet baked cookie",
+       "“cookie”",
+       "“biscuit”",
+       "“cookie”",
+       "“biscuit”"
+      ],
+      [
+       "Food to take away",
+       "“takeout” / “to go”",
+       "“takeaway”",
+       "“takeout”",
+       "“takeaway”"
+      ],
+      [
+       "What the guest pays at the end",
+       "“check”",
+       "“bill”",
+       "“bill” (“check” also heard)",
+       "“bill”"
+      ],
+      [
+       "Person who serves tables",
+       "“server”",
+       "“waiter” / “waiting staff”",
+       "“server”",
+       "“waiter” / “wait staff”"
+      ],
+      [
+       "Cook on a station",
+       "“line cook”",
+       "“chef de partie” / “commis chef”",
+       "“line cook”",
+       "“chef de partie” / “cook”"
+      ],
+      [
+       "Person who washes up",
+       "“dishwasher”",
+       "“kitchen porter” (KP)",
+       "“dishwasher”",
+       "“kitchen hand”"
+      ],
+      [
+       "Beer from the tap",
+       "“draft beer”",
+       "“draught beer”",
+       "“draft beer”",
+       "“tap beer” / “draught”"
+      ],
+      [
+       "Shop that sells bottles to take home",
+       "“liquor store”",
+       "“off-licence”",
+       "“liquor store”",
+       "“bottle shop”"
+      ],
+      [
+       "Customer toilets",
+       "“restroom”",
+       "“toilets”",
+       "“washroom”",
+       "“toilets”"
+      ],
+      [
+       "Plastic film for wrapping food",
+       "“plastic wrap”",
+       "“cling film”",
+       "“plastic wrap”",
+       "“cling wrap”"
+      ],
+      [
+       "Flat oven tray",
+       "“sheet pan”",
+       "“baking tray”",
+       "“baking sheet”",
+       "“baking tray”"
+      ],
+      [
+       "Walk-in cold store",
+       "“walk-in cooler”",
+       "“walk-in fridge” / “cold room”",
+       "“walk-in cooler”",
+       "“cool room”"
+      ]
+     ],
+     "widths": [
+      1.3,
+      1.26,
+      1.26,
+      1.26,
+      1.25
+     ]
+    },
+    {
+     "t": "note",
+     "x": "**The entrée trap.** On a US menu, the entrée is the main course. In Australia, and on many British menus that use French terms, the entrée is the starter. If a kit says “Appetizer / Entrée” and you trade in Australia, relabel it “Entrée / Main” before you print anything, or guests will expect a full plate."
+    },
+    {
+     "t": "p",
+     "x": "**Same everywhere.** “Back of house” (BOH: kitchen, dish area, storage) and “front of house” (FOH: dining room, bar, host stand) are understood in all four countries, and so are “covers” for guests served, “mise en place” and “prep list”. US kitchen slang such as “86” (sold out) travels less well: explain it to new staff."
+    }
+   ]
+  },
+  {
+   "h1": "3. Management & Finance Terms",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "Back-office words change more than kitchen words. The table below covers the ones that appear in the kits' tabs, reports and instructions."
+    },
+    {
+     "t": "table",
+     "head": [
+      "What it is",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Kitchen margin metric",
+       "“food cost %” (food cost ÷ food sales)",
+       "“GP %” (gross profit = 100% − food cost %, on sales without VAT)",
+       "“food cost %”",
+       "“food cost %”; “GP %” also common"
+      ],
+      [
+       "Weekly staff plan",
+       "“schedule”",
+       "“rota”",
+       "“schedule”",
+       "“roster”"
+      ],
+      [
+       "Counting what is on the shelves",
+       "“inventory count”",
+       "“stocktake”",
+       "“inventory count”",
+       "“stocktake”"
+      ],
+      [
+       "Goods on hand",
+       "“inventory”",
+       "“stock”",
+       "“inventory”",
+       "“stock”"
+      ],
+      [
+       "Minimum quantity to keep",
+       "“par level”",
+       "“par level” / “minimum stock level”",
+       "“par level”",
+       "“par level”"
+      ],
+      [
+       "Profit report",
+       "“P&L” / “income statement”",
+       "“P&L” / “profit and loss account”",
+       "“income statement” / “P&L”",
+       "“profit and loss statement” (“P&L”)"
+      ],
+      [
+       "Paying staff and withholding tax",
+       "“payroll”",
+       "“payroll”, run through “PAYE”",
+       "“payroll” (“source deductions”)",
+       "“payroll” (“PAYG withholding”)"
+      ],
+      [
+       "Tax on sales",
+       "“sales tax”",
+       "“VAT”",
+       "“GST”, “HST”, “PST”, “QST”",
+       "“GST”"
+      ],
+      [
+       "Business tax number",
+       "“EIN”",
+       "“UTR” (Unique Taxpayer Reference) from HMRC; a “VAT number” once VAT-registered; a company number for a Ltd",
+       "“business number” (BN)",
+       "“ABN” (and an ACN for a company)"
+      ],
+      [
+       "Printed menu price",
+       "Before tax",
+       "Including VAT",
+       "Before tax",
+       "Including GST"
+      ],
+      [
+       "Average sale per guest",
+       "“average check”",
+       "“average spend” / “spend per head”",
+       "“average check”",
+       "“average spend”"
+      ],
+      [
+       "Company that sells you food",
+       "“vendor” / “purveyor”",
+       "“supplier”",
+       "“supplier” / “vendor”",
+       "“supplier”"
+      ],
+      [
+       "Paper that comes with a delivery",
+       "“packing slip” / “invoice”",
+       "“delivery note”",
+       "“packing slip”",
+       "“delivery docket”"
+      ],
+      [
+       "Costs on top of base rent",
+       "“NNN” / “CAM charges” (property tax, insurance, common areas)",
+       "“service charge”, plus “business rates” billed by the council (relief may be available)",
+       "“additional rent” or “TMI” (taxes, maintenance, insurance)",
+       "“outgoings” (council rates, land tax, building costs)"
+      ]
+     ],
+     "widths": [
+      1.3,
+      1.26,
+      1.26,
+      1.26,
+      1.25
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Food cost % and GP % are two sides of one number"
+    },
+    {
+     "t": "p",
+     "x": "US and Canadian operators watch food cost %: what the plate costs as a share of the price. British operators talk about GP % (gross profit): what is left after the food cost. They always add up to 100%. A 30% food cost is a 70% GP."
+    },
+    {
+     "t": "p",
+     "x": "The trap is tax. Always calculate either figure on the price **without** tax. In the UK and Australia the printed price includes tax, so take it out first:"
+    },
+    {
+     "t": "bullets",
+     "x": [
+      "**Net price** = printed price ÷ (1 + tax rate). Example, UK: a dish printed at 12.00 with 20% VAT has a net price of 12.00 ÷ 1.20 = 10.00.",
+      "**Food cost %** = plate cost ÷ net price. If the plate costs 3.00, food cost is 3.00 ÷ 10.00 = 30%, and **GP %** = 100% − 30% = 70%.",
+      "If you used the printed 12.00 by mistake, food cost would look like 25% and GP like 75%: five points better than reality.",
+      "Australia: GST is one-eleventh of a GST-inclusive price. A dish printed at 22.00 carries 2.00 of GST and a net price of 20.00.",
+      "US and Canada: the menu price is already net of tax, so use it as it is. Tips never count as sales."
+     ]
+    },
+    {
+     "t": "p",
+     "x": "In the Food Cost Kit, set the Tax rate cell and the kit does this for you; in the business plans, type the average check without tax."
+    }
+   ]
+  },
+  {
+   "h1": "4. Money & Tax",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "Consumption tax is where the four countries differ most, and where a kit set up with the wrong logic will mislead you. This section explains the structure. It deliberately gives no provincial, state or local rates: they change, and the official calculators in section 10 are always current."
+    },
+    {
+     "t": "table",
+     "head": [
+      "Topic",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Name of the tax",
+       "“Sales tax”",
+       "“VAT” (value added tax)",
+       "“GST” (federal) or “HST” (harmonized); some provinces add “PST”, and Quebec has the “QST”",
+       "“GST” (goods and services tax)"
+      ],
+      [
+       "Who sets the rate",
+       "Each state, plus counties and cities; there is no national sales tax",
+       "National: 20% standard, 5% reduced, 0% zero rate",
+       "Federal GST is 5%; participating provinces charge one combined HST rate instead; others may add their own provincial tax",
+       "National: 10% on most goods and services"
+      ],
+      [
+       "Restaurant and bar sales",
+       "Usually taxed at the combined state and local rate; some states and cities add a meals tax: check",
+       "Standard rate for food and drink consumed on the premises and for hot takeaway food; most cold takeaway food is zero-rated (not soft drinks, confectionery or crisps)",
+       "GST/HST applies; how provincial tax treats restaurant meals depends on the province: check",
+       "GST applies to restaurant meals"
+      ],
+      [
+       "Menu price display",
+       "Before tax; tax added on the bill",
+       "Prices must include VAT, and any extra or minimum charge must be shown as clearly as the food prices",
+       "Usually before tax; tax added on the bill",
+       "Prices include GST"
+      ],
+      [
+       "Getting registered",
+       "“Sales tax permit” (seller's permit) from your state",
+       "Register for VAT once you meet the threshold: check gov.uk for the current figure",
+       "Open a GST/HST account under your business number: check the small-supplier rules with the CRA",
+       "Register for GST once your GST turnover reaches the threshold: check business.gov.au"
+      ],
+      [
+       "Tax on your own purchases",
+       "A cost of doing business; resale rules vary by state",
+       "Reclaim input VAT on your VAT return",
+       "Claim “input tax credits”",
+       "Claim “GST credits”"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Tips and service charges"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Topic",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "What counts as a tip",
+       "A payment is a tip only if the guest chooses to pay it and decides the amount",
+       "Tips, gratuities and service charges are all covered by the tips law",
+       "Ontario example: an employer-imposed service charge counts as a tip if a reasonable person would expect staff to receive it",
+       "Tipping is optional"
+      ],
+      [
+       "Mandatory service charge",
+       "Not a tip: when paid to staff it is treated as wages",
+       "Must be passed to workers in full, like tips",
+       "Treated like tips under Ontario's rules; check your province",
+       "Check the ACCC price-display rules before adding any surcharge"
+      ],
+      [
+       "What the employer must do",
+       "Report tips and treat service charges as wages (IRS)",
+       "Pass on all tips without deductions other than tax, by the end of the following month, with a written tipping policy (law in force since October 1, 2024); pooled tips are often shared through a “tronc” run by a “troncmaster”",
+       "Ontario: no withholding or deductions from tips; tip pooling allowed; owners share only if they regularly do the same work",
+       "No tip calculation in the kits: keep tips out of sales"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "p",
+     "x": "**In the kits:** keep tips and gratuities out of sales and out of food cost in every country. A mandatory service charge is revenue that you then pay out as wages (US) or pass on to staff (UK)."
+    }
+   ]
+  },
+  {
+   "h1": "5. Food Safety",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "The HACCP and inventory kits apply FDA Food Code limits in °F. The principles (cold food cold, hot food hot, cook and cool on time, know your allergens) are the same everywhere; the numbers and the inspectors are not."
+    },
+    {
+     "t": "h2",
+     "x": "Who makes the rules and who inspects"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Topic",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Rules",
+       "FDA Food Code (a model code), adopted, often with changes and in different editions, by most states; local health departments enforce it",
+       "Food hygiene law enforced by the council's environmental health officers (EHOs); Food Standards Agency guidance and “Safer Food, Better Business” packs",
+       "Provincial and territorial food premises rules; the CFIA covers federal food trade",
+       "FSANZ Food Standards Code, chapter 3 (Standards 3.2.2 and 3.2.2A), enforced by states, territories and local councils"
+      ],
+      [
+       "Who inspects a restaurant",
+       "State, county or city health department",
+       "Your local council",
+       "Provincial governments, municipalities and regional health authorities",
+       "Local council or state food authority"
+      ],
+      [
+       "Before you open",
+       "Health permit, often with plan review: check your health department",
+       "Register with your council at least 28 days before trading",
+       "Permit or approval from your local public health unit: check your province",
+       "Register or notify your local council: check your state"
+      ],
+      [
+       "Public hygiene rating",
+       "Varies by city or county",
+       "“Food Hygiene Rating Scheme” 0 to 5 in England, Wales and Northern Ireland; in Scotland, “Pass” or “Improvement Required” (FHIS)",
+       "Many health units publish inspection results: check yours",
+       "Some states and councils run rating schemes: check yours"
+      ],
+      [
+       "Who must be trained",
+       "The person in charge must be a Certified Food Protection Manager (Food Code 2-102.12); food handler cards in some states",
+       "Staff trained in food hygiene for their job: check FSA guidance",
+       "Food handler certification rules are provincial: check",
+       "Category one and two businesses must appoint a certified Food Safety Supervisor (Standard 3.2.2A, since December 2023); repeat the course every 5 years"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Key temperatures"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Control point",
+      "US (FDA Food Code)",
+      "UK (FSA)",
+      "Canada (Health Canada)",
+      "Australia (FSANZ)"
+     ],
+     "rows": [
+      [
+       "Cold holding",
+       "41 °F (5 °C) or below",
+       "8 °C (46 °F) or below: the law in England, Wales and Northern Ireland, recommended in Scotland; set fridges at 5 °C or below",
+       "Fridge at 4 °C (40 °F) or below; check your province's rule",
+       "5 °C (41 °F) or below"
+      ],
+      [
+       "Hot holding",
+       "135 °F (57 °C) or above",
+       "63 °C (145 °F) or above; below 63 °C for up to 2 hours, then cool or discard",
+       "60 °C (140 °F) or above",
+       "60 °C (140 °F) or above"
+      ],
+      [
+       "Cooking (core)",
+       "165 °F (74 °C) poultry and stuffed foods; 155 °F (68 °C) for 17 seconds ground meat; 145 °F (63 °C) for 15 seconds fish and whole cuts",
+       "Standard advice: 70 °C (158 °F) for 2 minutes, or equivalents such as 75 °C for 30 seconds or 80 °C for 6 seconds",
+       "Poultry pieces 74 °C (165 °F); whole poultry 82 °C (180 °F); ground beef and pork 71 °C (160 °F); fish 70 °C (158 °F)",
+       "Guidance: 75 °C (167 °F) for poultry and minced or rolled meats; not a fixed legal limit: check your state food authority"
+      ],
+      [
+       "Cooling cooked food",
+       "135 °F to 70 °F (57 °C to 21 °C) within 2 hours, and to 41 °F (5 °C) within 6 hours in total",
+       "Cool as quickly as possible to 8 °C or below. The FSA's SFBB “Chilling down hot food” method sets no fixed time; many councils use 90 minutes as the target, and so do the HACCP kit's UK notes",
+       "Check your province's rule",
+       "60 °C to 21 °C within 2 hours, then 21 °C to 5 °C within a further 4 hours"
+      ],
+      [
+       "Reheating for hot holding",
+       "165 °F (74 °C) for 15 seconds",
+       "Steaming hot all the way through; reheat only once",
+       "Leftovers to 74 °C (165 °F)",
+       "Heat quickly to 60 °C or hotter"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "p",
+     "x": "Canadian figures come from Health Canada's general food safety advice; the binding limits for a restaurant are in your provincial food premises regulation. Convert any other temperature with the formulas in section 9."
+    },
+    {
+     "t": "h2",
+     "x": "Allergens you must declare"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Allergen",
+      "US: 9 major allergens",
+      "UK: 14 allergens",
+      "Canada: 11 priority allergens",
+      "Australia: mandatory declarations"
+     ],
+     "rows": [
+      [
+       "Milk",
+       "Yes",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Eggs",
+       "Yes",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Fish",
+       "Yes",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Crustaceans",
+       "Yes (crustacean shellfish)",
+       "Yes",
+       "Yes (with molluscs, one group)",
+       "Yes"
+      ],
+      [
+       "Molluscs",
+       "No",
+       "Yes",
+       "Yes (with crustaceans)",
+       "Yes"
+      ],
+      [
+       "Peanuts",
+       "Yes",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Tree nuts",
+       "Yes",
+       "Yes",
+       "Yes",
+       "Yes, each nut by name"
+      ],
+      [
+       "Wheat",
+       "Yes",
+       "Yes (as a cereal containing gluten)",
+       "Yes (wheat and triticale)",
+       "Yes"
+      ],
+      [
+       "Barley, oats, rye (gluten)",
+       "No",
+       "Yes",
+       "Gluten sources must be declared",
+       "Yes, if they contain gluten"
+      ],
+      [
+       "Soy",
+       "Yes",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Sesame",
+       "Yes (since January 1, 2023)",
+       "Yes",
+       "Yes",
+       "Yes"
+      ],
+      [
+       "Mustard",
+       "No",
+       "Yes",
+       "Yes",
+       "No"
+      ],
+      [
+       "Celery",
+       "No",
+       "Yes",
+       "No",
+       "No"
+      ],
+      [
+       "Lupin",
+       "No",
+       "Yes",
+       "No",
+       "Yes"
+      ],
+      [
+       "Sulphites / sulfites",
+       "No",
+       "Yes (above 10 parts per million)",
+       "Yes",
+       "Yes (added at 10 mg/kg or more)"
+      ]
+     ],
+     "widths": [
+      1.3,
+      1.26,
+      1.26,
+      1.26,
+      1.25
+     ]
+    },
+    {
+     "t": "bullets",
+     "x": [
+      "**UK:** for food that is not prepacked, you can give allergen information in any form (menu, chalkboard, information pack) or orally, with a clearly visible notice telling guests how to ask. Food prepacked on your premises for direct sale needs a label with the full ingredients list, allergens emphasized.",
+      "**Australia:** where food is unpackaged, allergen information must be displayed with the food or provided on request.",
+      "**US and Canada:** the lists above are labeling rules for packaged food; ask your health department or province what a restaurant must tell guests. The HACCP kit's matrix already holds all 14 UK allergens, which covers every country's list except Australia's rule to name each tree nut and each gluten cereal (wheat, barley, oats, rye) separately."
+     ]
+    }
+   ]
+  },
+  {
+   "h1": "6. Staff & Labor",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "The Staff Scheduling Kit and every business plan carry wages, employer costs and overtime as editable cells. This is what to put in them. Minimum wages, payroll tax thresholds and contribution rates that change every year are not printed here: section 10 tells you where to find the current figures."
+    },
+    {
+     "t": "table",
+     "head": [
+      "Topic",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Main framework",
+       "Fair Labor Standards Act (FLSA) plus state and local law",
+       "Working Time Regulations, minimum wage law and the employment contract",
+       "Each province's employment standards act (a few federal sectors aside)",
+       "Fair Work Act: National Employment Standards (NES) plus the industry “Award”"
+      ],
+      [
+       "Overtime",
+       "Over 40 hours in a workweek at no less than 1.5× the regular rate; no federal daily overtime or weekend premium",
+       "No legal right to extra pay for overtime, but average pay for all hours worked must stay at or above the minimum wage",
+       "Ontario: after 44 hours a week at 1.5×. British Columbia: 1.5× after 8 hours a day or 40 a week, 2× after 12 hours in a day",
+       "Hospitality Award: 150% for the first 2 hours Monday to Friday, then 200%; 200% from midnight Friday to midnight Sunday"
+      ],
+      [
+       "Weekly hours limit",
+       "No limit for workers aged 16 and over",
+       "48 hours a week on average over 17 weeks, unless the worker opts out",
+       "Provincial rules: check",
+       "Full-time is 38 ordinary hours a week under the Award"
+      ],
+      [
+       "Rest",
+       "Federal law does not require meal or rest breaks; some states do: check",
+       "11 hours between working days; 24 hours a week (or 48 a fortnight); a 20-minute break after 6 hours",
+       "Provincial rules: check",
+       "Set by the Award: check"
+      ],
+      [
+       "Weekend, evening and holiday pay",
+       "Not required by the FLSA",
+       "Only if the contract says so",
+       "Public holiday pay is provincial: check",
+       "“Penalty rates” in the Award for weekday evenings (7 pm to 7 am), weekends and public holidays"
+      ],
+      [
+       "Paid holidays",
+       "Not required by the FLSA: set by company policy (“PTO”) and some state or city laws",
+       "5.6 weeks a year (“holiday”), capped at 28 days; irregular-hours staff build it up on the hours they work",
+       "Provincial (“vacation”): check",
+       "4 weeks of annual leave a year for full-time and part-time staff; casuals get no annual leave and earn a 25% “casual loading” instead (Hospitality Award, clause 11.1)"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Employer costs on top of wages"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Cost",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Pension or social security",
+       "Social Security 6.2% employer share (up to the annual wage base) + Medicare 1.45%",
+       "“Automatic enrolment”: enroll eligible staff in a workplace pension and pay an employer contribution (check the minimum on gov.uk)",
+       "Canada Pension Plan contributions (QPP in Quebec), matched by the employer",
+       "“Superannuation guarantee” paid into each eligible employee's super fund: check the current rate with the ATO"
+      ],
+      [
+       "Unemployment or employment insurance",
+       "FUTA: 6.0% on the first 7,000 dollars of each employee's wages, reduced to 0.6% with the full credit for state unemployment tax (SUTA); more in a “credit reduction state”: check IRS Topic 759",
+       "Included in National Insurance",
+       "Employment Insurance: the employer pays 1.4 times the premium deducted from the employee",
+       "None separate"
+      ],
+      [
+       "Payroll tax",
+       "Covered by the lines above",
+       "Employer “Class 1 National Insurance”: check the current rate and thresholds on gov.uk",
+       "Provincial employer health taxes in some provinces: check",
+       "State payroll tax above a state threshold: check your state revenue office"
+      ],
+      [
+       "Injury cover",
+       "Workers' compensation insurance (state rules)",
+       "Employers' liability insurance from your first employee, at least 5 million pounds of cover",
+       "Provincial workers' compensation board",
+       "Workers' compensation insurance (state scheme)"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "p",
+     "x": "**How to fill the kit:** add up the employer percentages that apply to you and enter the total in the employer cost cell. Where a cost is a fixed amount per employee or stops at a wage cap, treat the cell as an estimate and let your payroll provider confirm it."
+    },
+    {
+     "t": "h2",
+     "x": "Minimum wage: where to look, not what to type"
+    },
+    {
+     "t": "bullets",
+     "x": [
+      "**US:** federal, state and sometimes city minimum wages all apply, and the employee gets the highest. Tipped-wage rules also vary by state. Check the Department of Labor's state table.",
+      "**UK:** the rate depends on the worker's age band and changes every April. Check the National Minimum Wage rates page on gov.uk.",
+      "**Canada:** each province and territory sets its own rate. Check your province's employment standards office.",
+      "**Australia:** the minimum for a cook, server or kitchen hand is the rate for their classification in the Hospitality Industry (General) Award, updated every July 1. Check the Fair Work Ombudsman."
+     ]
+    }
+   ]
+  },
+  {
+   "h1": "7. Alcohol",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "Alcohol is licensed locally in every country, so this section names the system and the certificates, not the fees. The bar, restaurant, catering and mobile bar plans treat the liquor license as a budget line you confirm locally."
+    },
+    {
+     "t": "table",
+     "head": [
+      "Topic",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "License to sell",
+       "State liquor license from the state alcoholic beverage control agency, plus local approvals",
+       "England and Wales: a “premises licence” from the council, and every sale authorized by a “personal licence” holder; the “designated premises supervisor” (DPS) must hold one. Scotland and Northern Ireland have their own systems",
+       "Provincial “liquor licence”: e.g. AGCO in Ontario, LCRB in British Columbia, AGLC in Alberta",
+       "State or territory “liquor licence”: e.g. Liquor & Gaming NSW"
+      ],
+      [
+       "Server training",
+       "Set by each state. California: RBS certification for on-premises servers and managers within 60 days of hire, valid 3 years. Texas: TABC seller-server certification is not required by state law but gives the employer “safe harbor” protection; valid 2 years. TIPS and ServSafe Alcohol are widely used programs",
+       "“Personal licence” holders need an accredited qualification such as the Award for Personal Licence Holders (APLH) Level 2 and must be 18 or over",
+       "Ontario: everyone who sells, serves or delivers liquor needs an AGCO-approved certificate (“Smart Serve”). British Columbia: “Serving It Right” for licensees, managers and staff of licensed establishments. Alberta: “ProServe”, check AGLC",
+       "“RSA” (Responsible Service of Alcohol). In NSW it is mandatory for anyone who sells, serves or supplies alcohol, with a competency card; other states run their own RSA rules"
+      ],
+      [
+       "One-off events",
+       "Special or temporary event permits from the state agency; names and rules vary",
+       "England and Wales: “Temporary Event Notice” (TEN): fewer than 500 people at any time, up to 168 hours, at least 10 clear working days' notice (a late TEN 5); 5 a year, or 50 with a “personal licence”. Scotland and Northern Ireland: check your licensing board",
+       "Ontario: “Special Occasion Permit” (no-sale or sale) through the iAGCO portal. British Columbia: “Special Event Permit”",
+       "NSW: a “limited licence” to sell or supply alcohol at a venue without a “liquor licence”; other states: check"
+      ],
+      [
+       "Standard pour and drink",
+       "No federal pour size. A US standard drink holds 14 g of alcohol: 12 fl oz of 5% beer, 5 fl oz of 12% wine or 1.5 fl oz of 40% spirits",
+       "Gin, rum, vodka and whisky for drinking on the premises only in 25 ml or 35 ml (or multiples); wine by the glass in 125 ml and 175 ml (or multiples); quantities on display",
+       "One standard drink: 341 ml of 5% beer, 142 ml of 12% wine or 43 ml (1.5 oz) of 40% spirits. Pour sizes: check your province",
+       "Check the national standard drinks guide (health.gov.au) and your state rules"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "note",
+     "x": "**Bars and mobile bars that serve the host's alcohol.** Whether you need a license when the client buys the alcohol and you bring the bar, the bartenders and everything else depends on the state or province, and any charge for drinks (a cash bar, drink tickets, a ticket that includes drinks) usually counts as a sale. Check with your licensing authority before you quote the event."
+    },
+    {
+     "t": "p",
+     "x": "**In the kits:** the Staff Scheduling Kit has a column to track alcohol server certificates and their expiry dates (TIPS, TABC, RBS, Smart Serve, Serving It Right or RSA), and the bar and catering plans keep the license and permit costs as editable lines."
+    }
+   ]
+  },
+  {
+   "h1": "8. Business Setup",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "The business plans assume a US LLC or sole proprietor with an EIN. These are the nearest equivalents elsewhere. Choose the structure with an accountant: liability, tax and the cost of running each form are different."
+    },
+    {
+     "t": "table",
+     "head": [
+      "Topic",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Trading on your own",
+       "“Sole proprietorship”: automatic when you start trading; you are personally liable",
+       "“Sole trader”: register for Self Assessment with HMRC once your earnings pass the set level",
+       "“Sole proprietorship”: you need a business number only when you open program accounts (GST/HST, payroll)",
+       "“Sole trader” with an ABN"
+      ],
+      [
+       "Limited company",
+       "“LLC”: registered with the state, usually through the Secretary of State; or a corporation",
+       "“Limited company” (Ltd): register with Companies House before trading",
+       "“Corporation”, federal or provincial; federal incorporation issues a business number automatically",
+       "“Company” (“Pty Ltd”) registered with ASIC, which issues a 9-digit Australian Company Number (ACN)"
+      ],
+      [
+       "Business tax number",
+       "EIN from the IRS, free; needed if you hire staff, form a partnership or corporation, or pay certain taxes",
+       "“UTR” from HMRC when you register for Self Assessment or set up a limited company; VAT number once VAT-registered; PAYE reference once you employ staff",
+       "Business number (BN) from the CRA",
+       "ABN: an 11-digit number, free from the Australian Business Register"
+      ],
+      [
+       "Sales tax registration",
+       "State sales tax permit",
+       "VAT registration (threshold on gov.uk)",
+       "GST/HST account under the BN",
+       "GST registration (threshold on business.gov.au)"
+      ],
+      [
+       "Becoming an employer",
+       "Register with your state for unemployment tax and withholding; workers' comp",
+       "Register as an employer with HMRC and set up PAYE; employers' liability insurance; workplace pension",
+       "Payroll account with the CRA; provincial workers' compensation",
+       "PAYG withholding registration with the ATO; super; workers' compensation"
+      ],
+      [
+       "Food business",
+       "Health permit from the state or local health department",
+       "Register with the council at least 28 days before trading",
+       "Permit or approval from the local public health unit",
+       "Register or notify the local council"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "p",
+     "x": "**In the kits:** the opening checklists list US steps in order. Keep the order (structure, tax number, sales tax registration, food permit, alcohol, employer registration, insurance) and swap each US step for the line in this table."
+    }
+   ]
+  },
+  {
+   "h1": "9. Units Cheat Sheet",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "The kits accept metric units next to US ones, but a few traps catch everyone: an ounce of weight is not a fluid ounce, and US pints and gallons are smaller than imperial ones. The factors below come from NIST Handbook 44, Appendix C, rounded where needed."
+    },
+    {
+     "t": "h2",
+     "x": "Formulas"
+    },
+    {
+     "t": "bullets",
+     "x": [
+      "**Temperature:** °C = (°F − 32) × 5 ÷ 9 · °F = °C × 9 ÷ 5 + 32",
+      "**Weight:** 1 oz = 28.349523125 g · 1 lb = 16 oz = 453.59237 g = 0.45359237 kg · 1 kg = 2.2046 lb",
+      "**US volume:** 1 US fl oz = 29.5735 ml · 1 cup = 8 fl oz (about 237 ml) · 1 US pint = 16 fl oz (473 ml) · 1 US gallon = 128 fl oz = 3.785411784 L",
+      "**Imperial volume (UK):** 1 imperial gallon = 160 imperial fl oz (4.546 L) · 1 imperial pint = 20 imperial fl oz (568 ml) · 1 imperial fl oz = 28.41 ml",
+      "**Spoons:** 1 US tablespoon = 3 teaspoons (half a US fl oz, 14.79 ml) · 1 teaspoon about 5 ml. An Australian tablespoon is 20 ml (4 teaspoons) and an Australian metric cup is 250 ml: the kit's “tbsp” and “cup” are US measures, so type Australian measures in ml.",
+      "**Area:** 1 sq ft = 0.09290304 m² · 1 m² = 10.764 sq ft · **Distance:** 1 mile = 1.609344 km · 1 km = 0.6214 mile"
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Which units each country uses"
+    },
+    {
+     "t": "table",
+     "head": [
+      "Measure",
+      "US",
+      "UK",
+      "Canada",
+      "Australia"
+     ],
+     "rows": [
+      [
+       "Kitchen weights",
+       "lb, oz",
+       "g, kg",
+       "g, kg (many suppliers still quote lb)",
+       "g, kg"
+      ],
+      [
+       "Kitchen liquids",
+       "fl oz, cup, qt, gal",
+       "ml, L",
+       "ml, L",
+       "ml, L"
+      ],
+      [
+       "Temperature",
+       "°F",
+       "°C",
+       "°C for food safety; ovens and many recipes still in °F",
+       "°C"
+      ],
+      [
+       "Draft beer",
+       "Usually a 16 fl oz US pint (473 ml)",
+       "Imperial pint (568 ml) and half pint",
+       "Imperial pint (568 ml, 20 imperial fl oz), imperial fl oz or ml; draft beer cannot be sold by the 16 fl oz US pint (Measurement Canada)",
+       "Glass names and sizes vary by state"
+      ],
+      [
+       "Spirits",
+       "Bottles in ml (750 ml = 25.4 US fl oz); pours in fl oz",
+       "25 ml or 35 ml measures (see section 7); 70 cl bottles common",
+       "Bottles in ml; pours in oz or ml",
+       "Bottles and pours in ml"
+      ],
+      [
+       "Floor area",
+       "sq ft",
+       "m² (sq ft in many property listings)",
+       "sq ft and m²",
+       "m²"
+      ],
+      [
+       "Distance",
+       "miles",
+       "miles",
+       "km",
+       "km"
+      ]
+     ],
+     "widths": [
+      1.15,
+      1.25,
+      1.33,
+      1.33,
+      1.27
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Quick temperature table"
+    },
+    {
+     "t": "table3",
+     "head": [
+      "°F",
+      "°C",
+      "Where you will see it"
+     ],
+     "rows": [
+      [
+       "0",
+       "−17.8",
+       "Freezer: Health Canada advises −18 °C (0 °F) or lower"
+      ],
+      [
+       "32",
+       "0",
+       "Water freezes"
+      ],
+      [
+       "40",
+       "4.4",
+       "Canada: fridge at 4 °C (40 °F) or below"
+      ],
+      [
+       "41",
+       "5.0",
+       "US cold holding; Australia 5 °C"
+      ],
+      [
+       "46.4",
+       "8.0",
+       "UK chilled food limit (8 °C)"
+      ],
+      [
+       "70",
+       "21.1",
+       "Cooling checkpoint (US 70 °F, Australia 21 °C)"
+      ],
+      [
+       "135",
+       "57.2",
+       "US hot holding"
+      ],
+      [
+       "140",
+       "60.0",
+       "Hot holding in Canada and Australia"
+      ],
+      [
+       "145",
+       "62.8",
+       "US: fish and whole cuts, 15 seconds"
+      ],
+      [
+       "145.4",
+       "63.0",
+       "UK hot holding"
+      ],
+      [
+       "155",
+       "68.3",
+       "US: ground meat, 17 seconds"
+      ],
+      [
+       "158",
+       "70.0",
+       "UK standard cooking advice (2 minutes); Canada: fish"
+      ],
+      [
+       "160",
+       "71.1",
+       "Canada: ground beef and pork"
+      ],
+      [
+       "165",
+       "73.9",
+       "US: poultry and reheating; Canada: poultry pieces and leftovers"
+      ],
+      [
+       "167",
+       "75.0",
+       "UK: 75 °C for 30 seconds"
+      ],
+      [
+       "176",
+       "80.0",
+       "UK: 80 °C for 6 seconds"
+      ],
+      [
+       "212",
+       "100.0",
+       "Water boils at sea level"
+      ],
+      [
+       "350",
+       "176.7",
+       "Moderate oven"
+      ]
+     ],
+     "widths": [
+      0.9,
+      0.9,
+      4.53
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Quick weight, volume and area table"
+    },
+    {
+     "t": "table3",
+     "head": [
+      "US or imperial",
+      "Metric",
+      "Note"
+     ],
+     "rows": [
+      [
+       "1 oz",
+       "28.35 g",
+       "Weight ounce"
+      ],
+      [
+       "4 oz",
+       "113.4 g",
+       "Quarter pound"
+      ],
+      [
+       "1 lb",
+       "453.6 g",
+       "16 oz"
+      ],
+      [
+       "5 lb",
+       "2.268 kg",
+       ""
+      ],
+      [
+       "50 lb",
+       "22.68 kg",
+       ""
+      ],
+      [
+       "1 US fl oz",
+       "29.57 ml",
+       "Volume, not weight"
+      ],
+      [
+       "1.5 US fl oz",
+       "44.4 ml",
+       "US standard spirits pour"
+      ],
+      [
+       "1 cup",
+       "237 ml",
+       "8 US fl oz"
+      ],
+      [
+       "1 US pint",
+       "473 ml",
+       "16 US fl oz"
+      ],
+      [
+       "1 imperial pint",
+       "568 ml",
+       "20 imperial fl oz"
+      ],
+      [
+       "1 US quart",
+       "946 ml",
+       "32 US fl oz"
+      ],
+      [
+       "1 US gallon",
+       "3.785 L",
+       "128 US fl oz"
+      ],
+      [
+       "1 imperial gallon",
+       "4.546 L",
+       "About 20% larger than a US gallon"
+      ],
+      [
+       "750 ml bottle",
+       "25.4 US fl oz",
+       "Wine and spirits"
+      ],
+      [
+       "1 L",
+       "33.8 US fl oz",
+       "35.2 imperial fl oz"
+      ],
+      [
+       "100 sq ft",
+       "9.29 m²",
+       ""
+      ],
+      [
+       "1,000 sq ft",
+       "92.9 m²",
+       ""
+      ],
+      [
+       "2,500 sq ft",
+       "232.3 m²",
+       ""
+      ]
+     ],
+     "widths": [
+      1.6,
+      1.4,
+      3.33
+     ]
+    }
+   ]
+  },
+  {
+   "h1": "10. Where to Check",
+   "blocks": [
+    {
+     "t": "p",
+     "x": "These are the official pages behind this guide, checked in October 2026, and the places to look up the figures that change every year (minimum wages, thresholds, contribution rates). Go back to them before you rely on a number: the page is always more current than any printed guide."
+    },
+    {
+     "t": "h2",
+     "x": "United States"
+    },
+    {
+     "t": "links",
+     "x": [
+      [
+       "FDA Food Code 2022",
+       "https://www.fda.gov/food/fda-food-code/food-code-2022"
+      ],
+      [
+       "FDA: the 9 major food allergens",
+       "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies"
+      ],
+      [
+       "Department of Labor: overtime (FLSA)",
+       "https://www.dol.gov/agencies/whd/overtime"
+      ],
+      [
+       "Department of Labor: state minimum wages",
+       "https://www.dol.gov/agencies/whd/minimum-wage/state"
+      ],
+      [
+       "IRS Topic 751: Social Security and Medicare",
+       "https://www.irs.gov/taxtopics/tc751"
+      ],
+      [
+       "IRS Topic 759: federal unemployment tax (FUTA)",
+       "https://www.irs.gov/taxtopics/tc759"
+      ],
+      [
+       "IRS: tips and service charges",
+       "https://www.irs.gov/businesses/small-businesses-self-employed/tip-recordkeeping-and-reporting"
+      ],
+      [
+       "IRS: get an EIN",
+       "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number"
+      ],
+      [
+       "SBA: choose a business structure",
+       "https://www.sba.gov/business-guide/launch-your-business/choose-business-structure"
+      ],
+      [
+       "SBA: pay taxes",
+       "https://www.sba.gov/business-guide/manage-your-business/pay-taxes"
+      ],
+      [
+       "NIAAA: what is a standard drink",
+       "https://www.niaaa.nih.gov/alcohols-effects-health/what-standard-drink"
+      ],
+      [
+       "California ABC: Responsible Beverage Service training",
+       "https://www.abc.ca.gov/education/rbs/"
+      ],
+      [
+       "Texas TABC: certification FAQs",
+       "https://www.tabc.texas.gov/faqs/tabc-certification-faqs/"
+      ],
+      [
+       "NIST Handbook 44, Appendix C: units and conversions",
+       "https://www.nist.gov/document/2026-nist-handbook-44-appendix-c"
+      ]
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "United Kingdom"
+    },
+    {
+     "t": "links",
+     "x": [
+      [
+       "VAT rates",
+       "https://www.gov.uk/vat-rates"
+      ],
+      [
+       "VAT Notice 701/14: food products (drinks, confectionery, crisps)",
+       "https://www.gov.uk/guidance/food-products-and-vat-notice-70114"
+      ],
+      [
+       "VAT Notice 709/1: catering and takeaway food",
+       "https://www.gov.uk/guidance/catering-takeaway-food-and-vat-notice-7091"
+      ],
+      [
+       "Register for VAT",
+       "https://www.gov.uk/register-for-vat"
+      ],
+      [
+       "Find your UTR number",
+       "https://www.gov.uk/find-utr-number"
+      ],
+      [
+       "Introduction to business rates",
+       "https://www.gov.uk/introduction-to-business-rates"
+      ],
+      [
+       "Price Marking (Food and Drink Services) Order 2003",
+       "https://www.legislation.gov.uk/uksi/2003/2253/made"
+      ],
+      [
+       "Code of practice on the fair distribution of tips",
+       "https://www.gov.uk/government/publications/distributing-tips-fairly-statutory-code-of-practice/code-of-practice-on-fair-and-transparent-distribution-of-tips-html-version"
+      ],
+      [
+       "Register a food business",
+       "https://www.gov.uk/food-business-registration"
+      ],
+      [
+       "Food hygiene for businesses: chilling",
+       "https://www.gov.uk/food-hygiene-businesses/chilling-and-freezing"
+      ],
+      [
+       "Food hygiene for businesses: cooking",
+       "https://www.gov.uk/food-hygiene-businesses/cooking"
+      ],
+      [
+       "Safer Food, Better Business for caterers (FSA)",
+       "https://www.gov.uk/government/publications/safer-food-better-business-for-caterers"
+      ],
+      [
+       "Council example, cooling target (Torbay)",
+       "https://www.torbay.gov.uk/business/food-safety/controlling-food-temperatures/"
+      ],
+      [
+       "Allergen guidance for food businesses",
+       "https://www.gov.uk/government/publications/allergen-guidance-for-food-businesses/allergen-guidance-for-food-businesses"
+      ],
+      [
+       "Food hygiene ratings",
+       "https://ratings.food.gov.uk/"
+      ],
+      [
+       "Food Hygiene Information Scheme (Scotland)",
+       "https://www.foodstandards.gov.scot/business-guidance/running-a-food-business/hygiene-ratings-and-awards/food-hygiene-information-scheme-business-guidance"
+      ],
+      [
+       "Maximum weekly working hours",
+       "https://www.gov.uk/maximum-weekly-working-hours"
+      ],
+      [
+       "Overtime: your rights",
+       "https://www.gov.uk/overtime-your-rights"
+      ],
+      [
+       "Rest breaks at work",
+       "https://www.gov.uk/rest-breaks-work"
+      ],
+      [
+       "Holiday entitlement",
+       "https://www.gov.uk/holiday-entitlement-rights"
+      ],
+      [
+       "National Minimum Wage rates",
+       "https://www.gov.uk/national-minimum-wage-rates"
+      ],
+      [
+       "Rates and thresholds for employers",
+       "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027"
+      ],
+      [
+       "Employing staff",
+       "https://www.gov.uk/employing-staff"
+      ],
+      [
+       "Workplace pensions for employers",
+       "https://www.gov.uk/workplace-pensions-employers"
+      ],
+      [
+       "Employers' liability insurance",
+       "https://www.gov.uk/employers-liability-insurance"
+      ],
+      [
+       "Alcohol licensing",
+       "https://www.gov.uk/guidance/alcohol-licensing"
+      ],
+      [
+       "Personal licence to sell alcohol",
+       "https://www.gov.uk/personal-licence-to-sell-alcohol"
+      ],
+      [
+       "Temporary Event Notice",
+       "https://www.gov.uk/temporary-events-notice"
+      ],
+      [
+       "Weights and Measures (Intoxicating Liquor) Order 1988",
+       "https://www.legislation.gov.uk/uksi/1988/2039"
+      ],
+      [
+       "Set up a business",
+       "https://www.gov.uk/set-up-business"
+      ],
+      [
+       "Set up a limited company",
+       "https://www.gov.uk/limited-company-formation"
+      ]
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Canada"
+    },
+    {
+     "t": "links",
+     "x": [
+      [
+       "CRA: which GST/HST rate to charge",
+       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html"
+      ],
+      [
+       "CRA: business number",
+       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html"
+      ],
+      [
+       "CRA: Employment Insurance premiums",
+       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei.html"
+      ],
+      [
+       "CRA: Canada Pension Plan contributions",
+       "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp.html"
+      ],
+      [
+       "Health Canada: priority food allergens",
+       "https://www.canada.ca/en/health-canada/services/food-allergies-intolerances/food-allergies.html"
+      ],
+      [
+       "Health Canada: safe internal cooking temperatures",
+       "https://www.canada.ca/en/health-canada/services/general-food-safety-tips/safe-internal-cooking-temperatures.html"
+      ],
+      [
+       "Health Canada: food safety and you",
+       "https://www.canada.ca/en/health-canada/services/general-food-safety-tips/food-safety-you.html"
+      ],
+      [
+       "CFIA: who inspects restaurants",
+       "https://inspection.canada.ca/food-safety-for-consumers/where-to-report-a-complaint/restaurants-and-food-services/eng/1323139279504/1323140830752"
+      ],
+      [
+       "Ontario: overtime pay",
+       "https://www.ontario.ca/document/your-guide-employment-standards-act-0/overtime-pay"
+      ],
+      [
+       "Ontario: tips and other gratuities",
+       "https://www.ontario.ca/document/your-guide-employment-standards-act-0/tips-and-other-gratuities"
+      ],
+      [
+       "British Columbia: overtime pay",
+       "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/hours/overtime-pay"
+      ],
+      [
+       "AGCO (Ontario): liquor sale and service training",
+       "https://www.agco.ca/en/alcohol/guides/chapter-2-features-requirements-under-new-llca-legislative-framework"
+      ],
+      [
+       "AGCO (Ontario): Special Occasion Permit for a private event",
+       "https://www.agco.ca/en/alcohol/apply-sell-or-serve-alcohol-private-event"
+      ],
+      [
+       "British Columbia: who needs Serving It Right",
+       "https://www.responsibleservicebc.gov.bc.ca/who-needs-serving-it-right"
+      ],
+      [
+       "British Columbia: liquor licensing FAQ and Special Event Permits",
+       "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/liquor-licence-permits/liquor-resources-information/lcrb-faq"
+      ],
+      [
+       "AGLC (Alberta)",
+       "https://aglc.ca/"
+      ],
+      [
+       "Health Canada: standard drinks",
+       "https://www.canada.ca/en/health-canada/services/substance-use/alcohol/low-risk-alcohol-drinking-guidelines.html"
+      ],
+      [
+       "Measurement Canada: selling draft beer",
+       "https://ised-isde.canada.ca/site/measurement-canada/en/node/614"
+      ]
+     ]
+    },
+    {
+     "t": "h2",
+     "x": "Australia"
+    },
+    {
+     "t": "links",
+     "x": [
+      [
+       "Register for GST",
+       "https://business.gov.au/registrations/register-for-taxes/register-for-goods-and-services-tax-gst"
+      ],
+      [
+       "Register for an ABN",
+       "https://business.gov.au/registrations/register-for-an-australian-business-number-abn"
+      ],
+      [
+       "Register a company",
+       "https://business.gov.au/registrations/register-a-company"
+      ],
+      [
+       "Employees' pay, leave and entitlements",
+       "https://business.gov.au/people/employees/employees-pay-leave-and-entitlements"
+      ],
+      [
+       "FSANZ: keeping food at the right temperature",
+       "https://www.foodstandards.gov.au/business/food-safety/keeping-food-at-the-right-temperature"
+      ],
+      [
+       "FSANZ: cooling and reheating food",
+       "https://www.foodstandards.gov.au/business/food-safety/cooling-and-reheating-food"
+      ],
+      [
+       "healthdirect: food safety and cooking temperatures",
+       "https://www.healthdirect.gov.au/food-safety"
+      ],
+      [
+       "FSANZ: Food Safety Supervisor",
+       "https://www.foodstandards.gov.au/business/food-safety/food-safety-supervisor"
+      ],
+      [
+       "FSANZ: allergen labelling",
+       "https://www.foodstandards.gov.au/consumer/labelling/allergen-labelling"
+      ],
+      [
+       "Fair Work: Hospitality Industry (General) Award 2020",
+       "https://awards.fairwork.gov.au/MA000009.html"
+      ],
+      [
+       "ATO: super guarantee",
+       "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee"
+      ],
+      [
+       "Liquor & Gaming NSW: RSA training",
+       "https://www.nsw.gov.au/business-and-economy/liquor-and-gaming/training/rsa"
+      ],
+      [
+       "Liquor & Gaming NSW: limited licence",
+       "https://www.nsw.gov.au/business-and-economy/liquor-and-gaming/liquor-licensing/licence-types/limited"
+      ],
+      [
+       "Department of Health: standard drinks guide",
+       "https://www.health.gov.au/topics/alcohol/about-alcohol/standard-drinks-guide"
+      ]
+     ]
+    },
+    {
+     "t": "note",
+     "x": "**Not legal, tax or employment advice.** This guide helps you adapt an AI Chef Pro kit to your country. It does not replace the law, your accountant, your payroll provider, your health inspector or your licensing office. If you spot a rule that has changed, write to [info@aichef.pro](mailto:info@aichef.pro) and we will update the guide for every buyer. More kits and business plans: [aichef.pro/en/digital-products](https://aichef.pro/en/digital-products)"
+    }
+   ]
+  }
+ ]
+}

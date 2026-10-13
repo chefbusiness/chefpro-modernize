@@ -94,7 +94,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian menu prices include tax, so type the average check without it. The UK notes cover council food registration 28 days before opening, the hygiene rating and the premises and personal licences for alcohol. In Canada, liquor licences are provincial and servers need training such as Smart Serve or Serving It Right; in Australia, a state liquor licence and RSA for staff who serve. Check with your council, province or state.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian menu prices include tax, so type the average check without it. The UK notes cover council food registration 28 days before opening, the hygiene rating and the premises and personal licences for alcohol. In Canada, liquor licences are provincial and servers need training such as Smart Serve or Serving It Right; in Australia, a state liquor licence and RSA for staff who serve. Check with your council, province or state. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -254,6 +254,13 @@ const data: PlanNegocioData = {
         desc: 'The market section of the plan plus the reference table inside the workbook: US ranges for average check, rent, food cost, labor, prime cost, opening investment and the liquor license, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
         image: '/lovable-uploads/ai-gallery/rbp-en-owner-plan.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
+      },
     ],
   },
 
@@ -287,6 +294,7 @@ const data: PlanNegocioData = {
       'Opening checklist: 64 tasks in 7 phases',
       'BONUS: Restaurant Permits & Licenses Guide (included in the plan)',
       'BONUS: US Industry Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },

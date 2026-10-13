@@ -43,7 +43,7 @@ const data: KitExcelData = {
   schema: {
     productName: 'HACCP Food Safety Kit Pro',
     productDescription:
-      '19 HACCP and food safety templates for Excel plus 2 bonuses: HACCP plan with hazard analysis, temperature, receiving, cooking and cooling logs, cleaning schedule, allergen matrix and a health inspection self-checklist, with FDA Food Code 2022 limits in °F.',
+      '19 HACCP and food safety templates for Excel plus 3 bonuses: HACCP plan with hazard analysis, temperature, receiving, cooking and cooling logs, cleaning schedule, allergen matrix and a health inspection self-checklist, with FDA Food Code 2022 limits in °F.',
     price: '19.00',
     priceValidUntil: '2026-12-31',
     // FAQPage schema: versiones CORTAS de las FAQ on-page (mismo patrón que el ES y los kits EN hermanos).
@@ -90,7 +90,7 @@ const data: KitExcelData = {
       },
       {
         q: "Does it work in the UK, Canada or Australia?",
-        a: "Yes, with notes. The limits are FDA Food Code values in °F, written into the formulas. The instructions add UK notes (hot holding at 63 °C, cooling below 8 °C within 90 minutes) and the matrix keeps the 14 UK allergens. In Canada and Australia, check your provincial health rules or the FSANZ Food Standards Code.",
+        a: "Yes, with notes. The limits are FDA Food Code values in °F, written into the formulas. The instructions add UK notes (hot holding at 63 °C, cooling below 8 °C within 90 minutes) and the matrix keeps the 14 UK allergens. In Canada and Australia, check your provincial health rules or the FSANZ Food Standards Code. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
       },
       {
         q: 'What currency will I pay in?',
@@ -127,7 +127,7 @@ const data: KitExcelData = {
     titlePost: ': ',
     titleSubtitle: 'HACCP Plan Template, Temperature Logs & Food Safety Checklists for Excel',
     description:
-      '19 professional food safety templates + 2 bonuses: temperatures, cooking, cooling, parasite destruction, cleaning, traceability, allergens, a HACCP plan and more. The records a health inspector expects to see, ready to use in your restaurant.',
+      '19 professional food safety templates + 3 bonuses: temperatures, cooking, cooling, parasite destruction, cleaning, traceability, allergens, a HACCP plan and more. The records a health inspector expects to see, ready to use in your restaurant.',
     checkItems: [
       '19 templates with an automatic color traffic light on the measurement logs; plans, checklists and posters ready to print',
       'Allergen matrix with the US Big 9 and all 14 UK allergens',
@@ -141,7 +141,7 @@ const data: KitExcelData = {
   compatApps: {
     titleHtml: 'Works with <span class="text-[#FFD700]">Excel</span>, Google Sheets and LibreOffice',
     subtitleHtml:
-      'Download, customize and print. Works with Excel, Google Sheets, LibreOffice and Apple Numbers: all 21 files are .xlsx and print on US Letter straight from the sheet',
+      'Download, customize and print. Works with Excel, Google Sheets, LibreOffice and Apple Numbers: all 21 templates are .xlsx and print on US Letter straight from the sheet',
   },
 
   grid: {
@@ -224,6 +224,13 @@ const data: KitExcelData = {
         desc: 'A printable poster with the 7 steps to follow in a recall or a suspected foodborne illness, plus emergency contacts for the US and the UK. Identify → Isolate → Notify → Document → Communicate → Verify → Record.',
         image: '/lovable-uploads/ai-gallery/use-case-task-appcc-fridge.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
+      },
     ],
   },
 
@@ -287,7 +294,7 @@ const data: KitExcelData = {
     },
     {
       q: "Does it work in the UK, Canada or Australia?",
-      a: "Yes, with notes. The OK/ALERT limits are FDA Food Code values in °F, fixed in the formulas, so compare them with your local rules. UK: the instructions add notes where the rules differ (hot holding at 63 °C, cooling below 8 °C within 90 minutes, 48 hours off work after symptoms stop), the allergen matrix keeps all 14 UK allergens, and it works alongside Safer Food Better Business. Canada: rules come from your province and your public health inspector; compare Health Canada's priority allergens with the matrix. Australia: check the FSANZ Food Standards Code, which also asks food service businesses for a certified Food Safety Supervisor.",
+      a: "Yes, with notes. The OK/ALERT limits are FDA Food Code values in °F, fixed in the formulas, so compare them with your local rules. UK: the instructions add notes where the rules differ (hot holding at 63 °C, cooling below 8 °C within 90 minutes, 48 hours off work after symptoms stop), the allergen matrix keeps all 14 UK allergens, and it works alongside Safer Food Better Business. Canada: rules come from your province and your public health inspector; compare Health Canada's priority allergens with the matrix. Australia: check the FSANZ Food Standards Code, which also asks food service businesses for a certified Food Safety Supervisor. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
     },
     {
       q: 'What currency will I pay in?',
@@ -308,6 +315,7 @@ const data: KitExcelData = {
       '25-point health inspection self-checklist',
       'BONUS: Food Safety Training Log',
       'BONUS: Food Recall & Foodborne Illness Response Plan',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
       '30-day money-back guarantee',
     ],
     ctaLabel: 'YES, I WANT THE HACCP KIT — $19',

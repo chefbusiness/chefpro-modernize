@@ -4,7 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   UtensilsCrossed, Wine, CakeSlice, Truck, Coffee,
   BarChart3, Calculator, TrendingDown, ClipboardList, ChefHat, PartyPopper, BookOpen,
-  Scale, ReceiptText,
+  Scale, ReceiptText, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -36,6 +36,7 @@ const TEMPLATES = [
   { key: 'lista-precios', icon: ReceiptText, title: 'Ingredient Price Tracker', desc: 'Your supplier prices in one sheet, with an alert when an ingredient goes up.' },
   { key: 'bonus-mermas', icon: TrendingDown, title: 'BONUS: Actual vs Theoretical Food Cost (Inventory & Waste)', desc: 'Inventory and waste control that compares actual and theoretical usage.' },
   { key: 'bonus-guia', icon: BookOpen, title: 'BONUS: How to Reduce Food Cost in 30 Days', desc: 'A step-by-step PDF guide (23 pages) to bring your food cost down in a month.' },
+  { key: 'equivalents-guide', icon: Globe, title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.' },
 ];
 
 export default function FoodCostKitDashboard() {
@@ -101,7 +102,7 @@ export default function FoodCostKitDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              13 Templates + 2 Bonuses · Direct Download
+              13 Templates + 3 Bonuses · Direct Download
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -125,7 +126,7 @@ export default function FoodCostKitDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'bonus-guia' ? '.pdf' : '.xlsx'}</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'bonus-guia' ? '.pdf' : tpl.key === 'equivalents-guide' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>

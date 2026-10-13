@@ -93,7 +93,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type the average check without it. The UK notes cover the premises and personal licences (England and Wales), council food registration and the 14 allergens. In Canada, liquor licences are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, a state liquor licence and RSA for staff who serve. Check with your council, province or state.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. UK and Australian prices include tax, so type the average check without it. The UK notes cover the premises and personal licences (England and Wales), council food registration and the 14 allergens. In Canada, liquor licences are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, a state liquor licence and RSA for staff who serve. Check with your council, province or state. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -252,6 +252,13 @@ const data: PlanNegocioData = {
         desc: 'The market section of the plan plus the reference table inside the workbook: pour cost for the whole bar and for beer, spirits and wine, food cost, labor, rent, prime cost, startup costs for a leased bar, the liquor license, liquor liability insurance and the operating cash reserve, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
         image: '/lovable-uploads/ai-gallery/tareas-bar-stock.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
+      },
     ],
   },
 
@@ -285,6 +292,7 @@ const data: PlanNegocioData = {
       'Opening checklist: 73 tasks in 6 phases',
       'BONUS: Bar Licensing & Liquor License Guide (included in the plan)',
       'BONUS: US Bar Industry Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },
