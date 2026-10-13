@@ -1,0 +1,5 @@
+{
+ "c0032": "Card fees on total sales. Hosts and planners mostly pay by card, with some ACH or check from companies, which lowers the cost. The example (2.5%) is a blended rate: a percentage plus a per-transaction fee, which weighs more on small deposits. Check your processor's statement and enter your effective rate (Kit estimate).",
+ "c0364": "Hours of work that one event needs: shopping, packing, loading, transport, setup, service, breakdown and cleanup. Serving is only part of it. Hours × people × events per year sets the event staff cost.",
+ "c0466": "A revenue line that pays for no mixers, garnishes or ice shows a margin that does not exist."
+}
