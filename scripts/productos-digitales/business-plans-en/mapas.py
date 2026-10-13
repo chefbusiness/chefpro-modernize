@@ -1215,8 +1215,15 @@ elif CONJUNTO == 'cat':
     _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-4'))
     import mapas_cat as _cat                                                       # noqa: E402
     _cat.instalar(_sys.modules[__name__])
+elif CONJUNTO == 'mbar':
+    # Mobile Bar Business Plan Kit (F2 de business-plans-en-5, 13-oct-2026): fuente ES = food truck ES, diccionario por
+    # celda = EN publicado del CATERING, motor de eventos (D86), datos en business-plans-en-5/
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(os.path.dirname(AQUI), 'business-plans-en-5'))
+    import mapas_mbar as _mbar                                                     # noqa: E402
+    _mbar.instalar(_sys.modules[__name__])
 elif CONJUNTO != 'ftcaf':
-    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat)' % CONJUNTO)
+    raise SystemExit('BP_CONJUNTO desconocido: %r (ftcaf | restpan | bar | cat | mbar)' % CONJUNTO)
 
 
 if __name__ == '__main__':
