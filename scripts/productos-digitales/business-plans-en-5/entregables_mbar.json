@@ -1,0 +1,45 @@
+{
+ "carpeta": "astro-site/public/dl/mobile-bar-business-plan",
+ "piezas": 2687,
+ "fallos": 0,
+ "ficheros": {
+  "mobile-bar-business-plan.docx": {
+   "parrafos": 131,
+   "con_texto": 110,
+   "heading1": 10,
+   "palabras": 6912,
+   "piezas": 116,
+   "sha256": "803a3886edb97647873db9b037376cffa610f0ddc53bc2a7d51dec7e514a88af",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "mobile-bar-financial-projections.xlsx": {
+   "hojas": 9,
+   "formulas": 722,
+   "piezas": 818,
+   "sha256": "15171a23a8a3a83e58dcbac9d858a3508128ea2bf27557cc9df7b97c19e917de",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "mobile-bar-pricing-calculator.xlsx": {
+   "hojas": 5,
+   "formulas": 761,
+   "piezas": 1318,
+   "sha256": "3067d7054d5f8edd41a0e55b85aa6b7aa0d8ca57c7b93773b8024d15016d4c4c",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  },
+  "mobile-bar-startup-checklist.xlsx": {
+   "hojas": 7,
+   "formulas": 12,
+   "piezas": 435,
+   "sha256": "8cea45dd04d69bf21773ce526376637a96f134c2afe62f0aaba7465d78d30ff0",
+   "prohibido": 0,
+   "espanol": 0,
+   "no_latinos": 0
+  }
+ }
+}

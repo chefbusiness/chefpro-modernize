@@ -80,6 +80,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Yes, with your own numbers. The green cells set the food and beverage mix, the alcohol share, the cost of each, the average check, guests per day and every startup cost line, so a wine bar, a cocktail bar or a sports bar fits the same model. The written plan describes a neighborhood bar with small plates, so you'll adapt the concept, menu and marketing text. It isn't built for a nightclub (door staff, DJ and capacity drive that model) or for a brewery that brews its own beer (that needs its own federal and state permits).",
   },
   {
+    q: 'Does it work for a mobile bar or a bartending service?',
+    a: "It's built for a bar with its own premises, its own liquor license and a kitchen. If you'll take the bar to weddings, corporate events and private parties instead — a bar trailer or a portable bar, with the host buying the alcohol (dry hire) — our Mobile Bar Business Plan Kit is written for that: no storefront and no alcohol inventory, a storage unit for the trailer, a break-even in events per year, W-2 event bartenders, the dry hire rules state by state and a pricing calculator from cost per guest to quote.",
+  },
+  {
     q: 'Can I present this plan to a lender, a landlord or investors?',
     a: "Yes. It follows the format lenders usually ask for: a written plan, a 3-year P&L, break-even, three scenarios, a 12-month cash flow, sources and uses of funds and a loan schedule with the debt service coverage ratio (DSCR), checked against 1.25×, a common lender target. The loan schedule and the DSCR cover your main loan (bank or SBA 7(a)), the one you enter in the assumptions; the financing sheet also lists an SBA Microloan (up to $50,000, through nonprofit intermediaries), investors or partners and local grants as sources of funds, without amortizing them. It's a lender-ready format, not a guarantee of approval, and a planning tool, not financial, tax or legal advice.",
   },
@@ -307,6 +311,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/food-truck-business-plan', label: 'Food Truck Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/catering-business-plan', label: 'Catering Business Plan Kit' },
+    { href: '/en/digital-products/mobile-bar-business-plan', label: 'Mobile Bar Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.2 · October 2026',

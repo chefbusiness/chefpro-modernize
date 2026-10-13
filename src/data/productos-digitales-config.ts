@@ -1201,6 +1201,26 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-13): twin of plan-negocio-cocteleria-eventos, independent product.
+  'mobile-bar-business-plan': {
+    id: 'mobile-bar-business-plan',
+    name: 'Mobile Bar Business Plan Kit',
+    priceLabel: '$39',
+    accessPath: '/en/digital-products/mobile-bar-business-plan/access',
+    emailSubject: 'Your access to Mobile Bar Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Mobile Bar Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a shopping list for the host and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    emailTitleResend: 'Access your Mobile Bar Business Plan Kit',
+    emailBodyResend: 'Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a shopping list for the host and the 68-task startup checklist:',
+    files: {
+      'plan-negocio': '/dl/mobile-bar-business-plan/mobile-bar-business-plan.docx',
+      'plan-financiero': '/dl/mobile-bar-business-plan/mobile-bar-financial-projections.xlsx',
+      'calculadora-pricing': '/dl/mobile-bar-business-plan/mobile-bar-pricing-calculator.xlsx',
+      'checklist-apertura': '/dl/mobile-bar-business-plan/mobile-bar-startup-checklist.xlsx',
+    },
+    lang: 'en',
+  },
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',
     name: 'Guía Dark Kitchen',

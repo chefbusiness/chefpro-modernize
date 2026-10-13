@@ -520,11 +520,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'plan-negocio-cocteleria-eventos',
     url: '/plan-negocio-cocteleria-eventos',
     price: '€55',
-    name: { es: 'Plan de Negocio: Coctelería de Eventos', en: 'Business Plan: Event Bartending' },
+    name: { es: 'Plan de Negocio: Coctelería de Eventos', en: 'Mobile Bar Business Plan Kit' },
     description: {
       es: 'Barra móvil y coctelería para eventos, con 9 entregables.',
-      en: 'Mobile bar and event cocktails, with 9 deliverables.',
+      en: 'Word business plan, Excel financial projections, pricing calculator and startup checklist.',
     },
+    // Tienda EN (13-oct-2026): producto propio, `mobile-bar-business-plan`, $39 USD.
+    urlByLang: { en: '/en/digital-products/mobile-bar-business-plan' },
+    priceByLang: { en: '$39' },
   },
   // ── Kits de tareas recurrentes por concepto ─────────────────────────────
   'kit-tareas-food-truck': {

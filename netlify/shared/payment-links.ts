@@ -49,6 +49,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'manual-chef-ejecutivo': 'https://buy.stripe.com/5kQ9AMcgIeAK1MPfnL6oo1q',
   'manual-manager-restaurante': 'https://buy.stripe.com/3cIcMY1C4csC635ejH6oo1p',
   'mega-pack-tareas': 'https://buy.stripe.com/6oU5kwdkM78i3UXb7v6oo0K',
+  'mobile-bar-business-plan': 'https://buy.stripe.com/cNicMY2G878i4Z17Vj6oo1L',
   'pack-appcc': 'https://buy.stripe.com/3cI28kbcE9gqezB0sR6oo02',
   'plan-catering-tematico-eventos': 'https://buy.stripe.com/dRm9AMa8A78i6352AZ6oo1d',
   'plan-chef-privado-showcooking-eventos': 'https://buy.stripe.com/aFadR24OgcsCezBa3r6oo1c',
