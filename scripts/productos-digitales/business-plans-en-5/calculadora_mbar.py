@@ -479,7 +479,7 @@ def hoja_compra(wb):
         _f(ws, 'A%d' % fila, rot)
         _f(ws, 'B%d' % fila, '=' + src, fmt=fmt)
         R[k] = '$B$%d' % fila
-    ws.merge_cells('B%d:D%d' % (R['package'][3:], R['package'][3:]))
+    ws.merge_cells('B%d:D%d' % (int(R['package'][3:]), int(R['package'][3:])))
     fila += 2
     _f(ws, 'A%d' % fila, 'DRINK MIX BY PACKAGE (share of drinks; Kit estimate — edit)', b=True, fill=GRIS)
     for col, t in zip('BCD', ('Cocktails & spirits', 'Wine', 'Beer')):
