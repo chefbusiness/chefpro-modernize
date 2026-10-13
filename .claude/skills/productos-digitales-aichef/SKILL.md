@@ -91,3 +91,18 @@ de cada uno es el `scheduled_at` más tardío que haya en Resend + 5 días, a la
 `scripts/productos-digitales/emails/resend-broadcast.py` (prueba a John con `--test`, luego `--scheduled-at`). El slot
 se anota en el handoff y en `CALENDARIO-V2-SEMANAL.md`. Detalle: skill local `resend-aichef` y memoria
 `feedback_correo-por-cada-producto-actualizado-o-nuevo`.
+
+### Guía de Equivalencias ES ↔ Hispanoamérica: todo producto ES nace con la suya (13-oct-2026, PR #130)
+
+Cada producto ES lleva un bonus docx propio, «Guía de Equivalencias para tu país», con los términos de España que usa
+ESE producto dichos país por país (21 países) y una ficha de una página por país (impuestos, sanidad, laboral,
+licencias, unidades…). Todo vive en `scripts/productos-digitales/equivalencias-es/` (`PLAN.md`, SPECs, `fichas/`,
+`glosario/`, `terminos.json`, `textos.json`); la vista legible del glosario es `GLOSARIO-JERGA-ES-LATAM.md`.
+
+**Producto ES nuevo o actualizado (F3), en este orden:**
+1. `python3 scripts/productos-digitales/equivalencias-es/censo-terminos-es.py --terms scripts/productos-digitales/equivalencias-es/terminos.json --out scripts/productos-digitales/equivalencias-es/datos/matriz.json` (≈80 s; el registro sale de `PRODUCT_FILES`, así que el producto tiene que estar ya en `get-download-urls.ts`). El gate del script exige el número de productos ES: súbelo.
+2. `build_guia_es.py --only <slug>` y `--check --only <slug>` (en el VPS si son muchos).
+3. Cablear como los 51: clave `guia-equivalencias` en `PRODUCT_FILES`, tarjeta literal en el dashboard (Globe, `.docx`), BONUS en la ficha de la landing (imagen `es-guia-equivalencias.jpg`, `€15`) y la FAQ «¿Sirve en México, Colombia, Argentina…?» con sus ejemplos (plantilla en `textos.json`, ejemplos en `datos/integracion.json`).
+4. Si el producto usa un término de España que no está en `terminos.json` y cambia en América, añádelo con sus variantes en los 21 países (`SPEC-GLOSARIO.md`).
+
+Las fichas caducan: revisión anual en enero (salarios mínimos, tipos, reformas laborales en curso en MX, CL, CO y BR).
