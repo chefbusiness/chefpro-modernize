@@ -37,7 +37,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_STAFF_SCHEDULING_KIT',
 
   seo: {
-    title: 'Restaurant Employee Schedule Template for Excel + Overtime & Labor Cost',
+    title: 'Restaurant Staff Scheduling Kit Pro: Employee Schedule Template for Excel + Overtime & Labor Cost',
     description:
       '9 Excel templates to schedule restaurant staff: weekly & monthly schedule with clopening and minor-hour alerts, FLSA overtime tracker, labor cost %, PTO. One-time $19.',
     keywords:

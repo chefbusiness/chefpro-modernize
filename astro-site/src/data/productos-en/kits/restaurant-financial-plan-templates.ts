@@ -103,7 +103,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_FINANCIAL_PLAN_KIT',
 
   seo: {
-    title: 'Restaurant P&L Template & Financial Projections | Financial Plan Kit Pro',
+    title: 'Restaurant Financial Plan Kit Pro: Restaurant P&L Template & Financial Projections for Excel',
     description:
       '10 Excel templates for restaurant financial planning: P&L template budget vs actual, 3- and 5-year projections, break-even, cash flow, startup costs, KPIs and a lender summary with IRR, NPV and DSCR. $49',
     keywords:

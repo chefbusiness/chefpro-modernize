@@ -24,7 +24,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_RESTAURANT_INVENTORY_KIT',
 
   seo: {
-    title: 'Restaurant Inventory Spreadsheet & Par Sheet Templates for Excel',
+    title: 'Restaurant Inventory Kit Pro: Inventory Spreadsheet & Par Sheet Templates for Excel',
     description:
       '9 restaurant inventory templates for Excel: par sheet, vendor price comparison, purchase orders, receiving log in °F, food waste log, FIFO and food cost KPIs. One-time $19.',
     keywords:

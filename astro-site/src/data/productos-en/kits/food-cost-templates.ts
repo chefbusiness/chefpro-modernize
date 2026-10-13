@@ -20,7 +20,7 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_FOOD_COST_KIT',
 
   seo: {
-    title: 'Food Cost Calculator & Recipe Costing Templates for Excel | AI Chef Pro',
+    title: 'Food Cost Kit Pro: Food Cost Calculator & Recipe Costing Templates for Excel | AI Chef Pro',
     description:
       '13 food cost templates for Excel: recipe cost cards, plate cost and pour cost calculators, menu pricing for 10 venue types, yield test and price tracker. One-time $19.',
     keywords:
