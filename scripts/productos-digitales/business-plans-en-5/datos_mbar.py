@@ -123,7 +123,7 @@ POR_CELDA = OrderedDict([
     (('MBP', _P, 'A32'), 'Phone and internet'),
     (('MBP', _P, 'A33'), 'Equipment repair and breakage'),
     (('MBP', _P, 'A34'), 'Staff training and server certifications (TIPS / TABC / RBS)'),
-    (('MBP', _P, 'A35'), 'Tastings and menu consultations for prospects'),
+    (('MBP', _P, 'A35'), 'Tastings and cocktail menu consultations for prospects'),
     (('MBP', _P, 'A52'), 'Cost of goods sold (bar packages + add-ons)'),
     (('MBP', _P, 'A55'), 'Storage & parking / Sales'),
     (('MBP', _N, 'A20'), 'Storage & parking / Sales'),

@@ -7,94 +7,95 @@
  "pistas": {
   "P01": "Celda a celda: escribe SOLO el texto de ESTA celda (una tabla o una tarea): mira su pista propia",
   "P02": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
-  "P03": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 1/11: estructura: single-member LLC frente a sole proprietor o S corp, con tu contador (ES: autónomo / SL) [sobrevive]",
+  "P03": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 1/11: estructura: single-member LLC frente a sole proprietor o S corp, con tu contador (ES: autónomo / SL) [sobrevive]",
   "P04": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
-  "P05": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 2/11: EIN gratis en el IRS + alta estatal de nóminas y desempleo (vas a tener bartenders W-2) [sobrevive]",
+  "P05": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 2/11: EIN gratis en el IRS + alta estatal de nóminas y desempleo (vas a tener bartenders W-2) [sobrevive]",
   "P06": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
-  "P07": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 3/11: registrar la LLC en el Secretary of State + registered agent + operating agreement [sobrevive]",
+  "P07": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 3/11: registrar la LLC en el Secretary of State + registered agent + operating agreement [sobrevive]",
   "P08": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»",
   "P09": "D84/D87: el bar trailer (remolque-barra convertido) que arrastra el vehículo del dueño («tow vehicle»); nunca «truck» (gate)",
   "P10": "D84: bar móvil en el evento del cliente; sin ventanilla, festivales, mercados ni venta ambulante (gate)",
   "P11": "D87: «inverter generator and power»",
   "P12": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
-  "P13": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 4/11: cuenta bancaria del negocio y finanzas separadas [sobrevive]",
-  "P14": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 5/11: sales tax permit / seller's permit del estado: en algunos estados el servicio de barra tributa (California: cdtfa.ca.gov) [sobrevive con ajuste]",
-  "P15": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 6/11: business license de la ciudad o el condado (+ DBA si usas nombre comercial) [sobrevive]",
-  "P16": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 7/11: contador / bookkeeper y estimated taxes trimestrales [sobrevive]",
-  "P17": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 8/11: software de reservas y CRM para bares móviles: propuestas, contratos con firma electrónica, depósitos y saldos (ES: CRM) [sobrevive con ajuste]",
-  "P18": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 9/11: service agreement / event contract con abogado y cláusulas de DRY HIRE: el anfitrión compra y es dueño del alcohol, lo que sobra es suyo, sin cash bar ni tickets de copa ni entrada con bebida, gratuity pactada por escrito, depósito del 30 %, cancelación por tramos, variación de invitados, toma eléctrica, uso de fotos [sobrevive con ajuste]",
-  "P19": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 10/11: elegir el modelo legal: DRY HIRE por defecto ((you supply the alcohol; we bring the bar, the bartenders and everything else), glosa en esta primera mención del checklist) o full-service con licencia (socio licenciatario, licencia propia ligada a un local o permiso por evento): decide la fase 2",
+  "P13": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 4/11: cuenta bancaria del negocio y finanzas separadas [sobrevive]",
+  "P14": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 5/11: sales tax permit / seller's permit del estado: en algunos estados el servicio de barra tributa (California: cdtfa.ca.gov) [sobrevive con ajuste]",
+  "P15": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 6/11: business license de la ciudad o el condado (+ DBA si usas nombre comercial) [sobrevive]",
+  "P16": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 7/11: contador / bookkeeper y estimated taxes trimestrales [sobrevive]",
+  "P17": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 8/11: software de reservas y CRM para bares móviles: propuestas, contratos con firma electrónica, depósitos y saldos (ES: CRM) [sobrevive con ajuste]",
+  "P18": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 9/11: service agreement / event contract con abogado y cláusulas de DRY HIRE: el anfitrión compra y es dueño del alcohol, lo que sobra es suyo, sin cash bar ni tickets de copa ni entrada con bebida, gratuity pactada por escrito, depósito del 30 %, cancelación por tramos, variación de invitados, toma eléctrica, uso de fotos [sobrevive con ajuste]",
+  "P19": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 10/11: elegir el modelo legal: DRY HIRE por defecto ((you supply the alcohol; we bring the bar, the bartenders and everything else), glosa en esta primera mención del checklist) o full-service con licencia (socio licenciatario, licencia propia ligada a un local o permiso por evento): decide la fase 2",
   "P20": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
   "P21": "D86: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
   "P22": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
-  "P23": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 1, tarea 11/11: marca: búsqueda y registro en la USPTO (ES: OEPM) y dominio web",
+  "P23": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 1, tarea 11/11: marca: búsqueda y registro en la USPTO (ES: OEPM) y dominio web",
   "P24": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
-  "P25": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 1/13: reglas de alcohol de TU estado para un servicio SOLO de bartending: MO (Circular 24-01: sin licencia estatal si solo das servicio; cuidado con entradas, tip jars y recargos), MT (no pre-stock, el anfitrión compra aparte, solo eventos privados), TX, CA, FL, NY (consultar): «varies by state», pregunta a tu ABC / TABC y guarda la respuesta",
+  "P25": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 1/13: reglas de alcohol de TU estado para un servicio SOLO de bartending: MO (Circular 24-01: sin licencia estatal si solo das servicio; cuidado con entradas, tip jars y recargos), MT (no pre-stock, el anfitrión compra aparte, solo eventos privados), TX, CA, FL, NY (consultar): «varies by state», pregunta a tu ABC / TABC y guarda la respuesta",
   "P26": "D86: no hay comida: bar packages (bartending, mixers, garnish, hielo) y add-ons; «drink menu» / «signature cocktails»; nunca food, kitchen ni menu a secas (gate)",
-  "P27": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 2/13: alquilar el storage unit o garaje para el equipo y el aparcamiento del remolque (ES: almacén de 15-25 m²)",
-  "P28": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 3/13: health permit SOLO si el condado lo exige: pregunta al health department si el garnish cortado y el hielo piden permiso o comisaria; hielo comercial embolsado; lavamanos en el remolque",
-  "P29": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 4/13: eventos públicos: en dry hire el permiso lo pide el organizador; con licencia, temporary / special event permit",
-  "P30": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 5/13: requisitos del venue: COI, additional insured, horarios de carga, toma eléctrica, normas de cristal y hielo, preferred vendor lists",
-  "P31": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 6/13: comprar el bar trailer usado (6x12 cargo / concession o horse trailer) con inspección; el tow vehicle es el tuyo (comprueba su capacidad de arrastre)",
-  "P32": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 7/13: remolque: título y registro en el DMV + commercial auto (o uso comercial del vehículo propio) que cubra el remolque [sobrevive con ajuste]",
-  "P33": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 8/13: conversión del remolque: barra, armarios, lavamanos y depósitos de agua, LED, eléctrico y wrap [sobrevive con ajuste]",
-  "P34": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 9/13: general liability; COI y «additional insured» que piden los venues [sobrevive]",
-  "P35": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 10/13: liquor liability aparte (la general liability suele excluir el alcohol): en la práctica, obligatoria para entrar en los venues [sobrevive]",
+  "P27": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 2/13: alquilar el storage unit o garaje para el equipo y el aparcamiento del remolque (ES: almacén de unos 160-270 sq ft)",
+  "P28": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 3/13: health permit SOLO si el condado lo exige: pregunta al health department si el garnish cortado y el hielo piden permiso o comisaria; hielo comercial embolsado; lavamanos en el remolque",
+  "P29": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 4/13: eventos públicos: en dry hire el permiso lo pide el organizador; con licencia, temporary / special event permit",
+  "P30": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 5/13: requisitos del venue: COI, additional insured, horarios de carga, toma eléctrica, normas de cristal y hielo, preferred vendor lists",
+  "P31": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 6/13: comprar el bar trailer usado (6 x 12 ft, cargo / concession o horse trailer) con inspección; el tow vehicle es el tuyo (comprueba su capacidad de arrastre)",
+  "P32": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 7/13: remolque: título y registro en el DMV + commercial auto (o uso comercial del vehículo propio) que cubra el remolque [sobrevive con ajuste]",
+  "P33": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 8/13: conversión del remolque: barra, armarios, lavamanos y depósitos de agua, LED, eléctrico y wrap [sobrevive con ajuste]",
+  "P34": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 9/13: general liability; COI y «additional insured» que piden los venues [sobrevive]",
+  "P35": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 10/13: liquor liability aparte (la general liability suele excluir el alcohol): en la práctica, obligatoria para entrar en los venues [sobrevive]",
   "P36": "D14: litros → galones (exacto + «check your county»); 3.500 kg → regla CDL (GVWR ≥ 26,001 lb)",
-  "P37": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 11/13: workers' comp (obligatorio con empleados en casi todos los estados) [sobrevive]",
-  "P38": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 12/13: inland marine / equipment floater para la barra portátil, la cristalería y el equipo en tránsito (ES: multirriesgo y transporte)",
-  "P39": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 2, tarea 13/13: solo si vas a full-service: el permiso de caterer de tu estado (TX Caterer's Permit ligado al Mixed Beverage Permit; CA Type 58 solo licenciatarios on-sale; FL 13CT; NY Caterer's Alcohol Permit por evento) o un socio con licencia; si no, márcala como «not applicable»",
-  "P40": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 1/12: barra portátil (portable bar) para el 2.º equipo y los salones donde no entra el remolque",
-  "P41": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 2/12: proveedor de hielo comercial embolsado + ice bins y coolers de 60 lb; regla de 1.5 lb por invitado (Kit estimate) (ES: máquina de hielo → hielo comprado)",
-  "P42": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 3/12: coolers y neveras para mixers y para las bebidas del anfitrión",
-  "P43": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 4/12: cristalería (300 piezas + racks) o vasos desechables de calidad según el venue",
-  "P44": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 5/12: kit de barra para 4 estaciones: shakers, jiggers, speed rails, strainers, cucharas, abrebotellas, dispensadores",
-  "P45": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 6/12: props y carta impresa de los specialty bars (mimosa bar, espresso martini bar…): el diferencial (ES: decoración temática)",
-  "P46": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 7/12: iluminación LED y generador inverter: prueba de carga con todo encendido",
-  "P47": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 8/12: acuerdo con una empresa de party rentals (cristalería extra, mesas, mantelería) con tarifa pactada [sobrevive]",
-  "P48": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 9/12: proveedores de mixers, siropes y garnish (restaurant supply o club store) y cuentas abiertas",
-  "P49": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 10/12: desechables: vasos, pajitas, servilletas, posavasos y carteles de la carta",
-  "P50": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 11/12: inventario y etiquetado de TODO el equipo + checklist de carga del remolque",
-  "P51": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 3, tarea 12/12: ensayo completo de un evento (dry run) con el equipo: montaje, servicio y desmontaje cronometrados [sobrevive]",
-  "P52": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 1/10: plan de personal por evento: 1 bartender por 50 invitados con barra completa, 1 por 75 con cerveza y vino, barback en eventos grandes (Kit estimate) [sobrevive con ajuste]",
-  "P53": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 2/10: pool de event bartenders y barbacks en nómina W-2 (no 1099 ni «freelance»: FLSA; California AB5) [sobrevive]",
-  "P54": "Glosario §9: mobile bar, dry hire, bar packages, signature cocktails, weddings, corporate events / holiday parties, private parties",
-  "P55": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 3/10: offer letters, I-9 y W-4; salario mínimo estatal [sobrevive]",
-  "P56": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
-  "P57": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
-  "P58": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 4/10: new-hire reporting al estado [sobrevive]",
-  "P59": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 5/10: proveedor de nóminas y workers' comp en marcha [sobrevive]",
-  "P60": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 6/10: edad mínima para servir alcohol en TU estado y food handler card SOLO si el estado o el condado la exige para manipular hielo y garnish",
-  "P61": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 7/10: alcohol server certification de todos los bartenders (TABC en TX, RBS en CA, TIPS / ServSafe Alcohol): la piden venues y aseguradoras [sobrevive]",
-  "P62": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 8/10: OSHA basics: cortes de cristal, cargas, conducción con remolque [sobrevive con ajuste]",
-  "P63": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 9/10: servicio responsable: comprobar el ID, negarse a servir a menores y a invitados ebrios, last call, protocolo de incidentes (ES: formación)",
-  "P64": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 4, tarea 10/10: política de propinas y service charge: las propinas son del personal (FLSA); el service charge es salario (IRS Rev. Rul. 2012-18); tip jar solo donde el estado no lo trate como venta (MO) [sobrevive con ajuste]",
-  "P65": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
-  "P66": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 1/12: marca, logo, carta de signature cocktails y fotos profesionales del remolque montado [sobrevive con ajuste]",
-  "P67": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
-  "P68": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 2/12: web con paquetes, precios «desde» por invitado y formulario de presupuesto [sobrevive]",
-  "P69": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 3/12: Google Business Profile y reseñas [sobrevive]",
-  "P70": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 4/12: perfiles en The Knot, WeddingWire y Zola (ES: Bodas.net / Zankyou) [sobrevive con ajuste]",
-  "P71": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 5/12: gig marketplaces: GigSalad (5 % / 2.5 % por reserva confirmada), The Bash, Thumbtack (pago por lead)",
-  "P72": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 6/12: prospección B2B: event planners, office managers y HR para holiday parties y eventos de empresa [sobrevive]",
-  "P73": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 7/12: acuerdos con venues, wedding planners, fotógrafos y DJs (preferred vendor lists, cross-promo) [sobrevive]",
-  "P74": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 8/12: política de degustaciones y consultas de carta para parejas y planners [sobrevive]",
-  "P75": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 9/12: Instagram, Pinterest y reels con eventos reales [sobrevive]",
-  "P76": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 10/12: plantilla de presupuesto con la calculadora del kit y seguimiento en el CRM [sobrevive]",
-  "P77": "Research §5: ASCAP / BMI / SESAC si se pone música",
-  "P78": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 11/12: programa de referidos y reseñas después de cada evento [sobrevive]",
-  "P79": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 5, tarea 12/12: bridal show local + showcase / tasting para planners y venues; los 3 primeros eventos piloto para el portfolio [sobrevive con ajuste]",
-  "P80": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 1/10: briefing con el cliente D-21: invitados, horas, paquete, specialty bar, venue, restricciones [sobrevive]",
-  "P81": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 2/10: visita o llamada técnica al venue D-14: acceso del remolque, toma eléctrica, agua, normas del venue [sobrevive con ajuste]",
-  "P82": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 3/10: shopping list al anfitrión en D-14 (la saca la calculadora del kit: botellas por categoría, cerveza, vino, hielo) y compra de mixers, garnish y hielo en D-1",
-  "P83": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 4/10: checklist de carga y transporte del remolque (enganche, luces, sujeción de la cristalería) [sobrevive con ajuste]",
-  "P84": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 5/10: montaje 60-120 min antes, servicio y last call [sobrevive con ajuste]",
-  "P85": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 6/10: desmontaje y recuento de cristalería; el alcohol que sobra se queda con el anfitrión; devolución de alquileres [sobrevive con ajuste]",
-  "P86": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 7/10: factura del saldo antes del evento y control de depósitos; gratuity pactada en la factura [sobrevive con ajuste]",
-  "P87": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 8/10: pedir reseña y fotos a las 48 h; seguimiento en el CRM [sobrevive]",
-  "P88": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
-  "P89": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 9/10: revisión mensual del coste por invitado, las horas de personal y los desechables frente a la calculadora [sobrevive con ajuste]",
-  "P90": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9. Esta fila: fase 6, tarea 10/10: revisión a los 90 días: precios por invitado, mínimos, paquetes y specialty bars; formación continua y ferias del sector (Bar Convent Brooklyn, Tales of the Cocktail; sin cifras) [sobrevive con ajuste]"
+  "P37": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 11/13: workers' comp (obligatorio con empleados en casi todos los estados) [sobrevive]",
+  "P38": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 12/13: inland marine / equipment floater para la barra portátil, la cristalería y el equipo en tránsito (ES: multirriesgo y transporte)",
+  "P39": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 2, tarea 13/13: solo si vas a full-service: el permiso de caterer de tu estado (TX Caterer's Permit ligado al Mixed Beverage Permit; CA Type 58 solo licenciatarios on-sale; FL 13CT; NY Caterer's Alcohol Permit por evento) o un socio con licencia; si no, márcala como «not applicable»",
+  "P40": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 1/12: barra portátil (portable bar) para el 2.º equipo y los salones donde no entra el remolque",
+  "P41": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 2/12: proveedor de hielo comercial embolsado + ice bins y coolers de 60 lb (27 kg) o en quarts, nunca en litros; regla de 1.5 lb (0.68 kg) por invitado (Kit estimate) (ES: máquina de hielo → hielo comprado)",
+  "P42": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 3/12: coolers y neveras para mixers y para las bebidas del anfitrión (capacidad en quarts, ES: nevera de 200 L ≈ 210 quarts)",
+  "P43": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 4/12: cristalería (300 piezas + racks) o vasos desechables de calidad según el venue",
+  "P44": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 5/12: kit de barra para 4 estaciones: shakers, jiggers, speed rails, strainers, cucharas, abrebotellas, dispensadores",
+  "P45": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 6/12: props y carta impresa de los specialty bars (mimosa bar, espresso martini bar…): el diferencial (ES: decoración temática)",
+  "P46": "MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal",
+  "P47": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 7/12: iluminación LED y generador inverter: prueba de carga con todo encendido",
+  "P48": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 8/12: acuerdo con una empresa de party rentals (cristalería extra, mesas, mantelería) con tarifa pactada [sobrevive]",
+  "P49": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 9/12: proveedores de mixers, siropes y garnish (restaurant supply o club store) y cuentas abiertas",
+  "P50": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 10/12: desechables: vasos, pajitas, servilletas, posavasos y carteles de la carta",
+  "P51": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 11/12: inventario y etiquetado de TODO el equipo + checklist de carga del remolque",
+  "P52": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 3, tarea 12/12: ensayo completo de un evento (dry run) con el equipo: montaje, servicio y desmontaje cronometrados [sobrevive]",
+  "P53": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 1/10: plan de personal por evento: 1 bartender por 50 invitados con barra completa, 1 por 75 con cerveza y vino, barback en eventos grandes (Kit estimate) [sobrevive con ajuste]",
+  "P54": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 2/10: pool de event bartenders y barbacks en nómina W-2 (no 1099 ni «freelance»: FLSA; California AB5) [sobrevive]",
+  "P55": "Glosario §9: mobile bar, dry hire, bar packages, signature cocktails, weddings, corporate events / holiday parties, private parties",
+  "P56": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 3/10: offer letters, I-9 y W-4; salario mínimo estatal [sobrevive]",
+  "P57": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P58": "Research §5: Certified Food Protection Manager + food handler cards; 9 alérgenos US (sésamo desde 2023; UK 14)",
+  "P59": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 4/10: new-hire reporting al estado [sobrevive]",
+  "P60": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 5/10: proveedor de nóminas y workers' comp en marcha [sobrevive]",
+  "P61": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 6/10: edad mínima para servir alcohol en TU estado y food handler card SOLO si el estado o el condado la exige para manipular hielo y garnish",
+  "P62": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 7/10: alcohol server certification de todos los bartenders (TABC en TX, RBS en CA, TIPS / ServSafe Alcohol): la piden venues y aseguradoras [sobrevive]",
+  "P63": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 8/10: OSHA basics: cortes de cristal, cargas, conducción con remolque [sobrevive con ajuste]",
+  "P64": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 9/10: servicio responsable: comprobar el ID, negarse a servir a menores y a invitados ebrios, last call, protocolo de incidentes (ES: formación)",
+  "P65": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 4, tarea 10/10: política de propinas y service charge: las propinas son del personal (FLSA); el service charge es salario (IRS Rev. Rul. 2012-18); tip jar solo donde el estado no lo trate como venta (MO) [sobrevive con ajuste]",
+  "P66": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P67": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 1/12: marca, logo, carta de signature cocktails y fotos profesionales del remolque montado [sobrevive con ajuste]",
+  "P68": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P69": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 2/12: web con paquetes, precios «desde» por invitado y formulario de presupuesto [sobrevive]",
+  "P70": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 3/12: Google Business Profile y reseñas [sobrevive]",
+  "P71": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 4/12: perfiles en The Knot, WeddingWire y Zola (ES: Bodas.net / Zankyou) [sobrevive con ajuste]",
+  "P72": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 5/12: gig marketplaces: GigSalad (5 % / 2.5 % por reserva confirmada), The Bash, Thumbtack (pago por lead)",
+  "P73": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 6/12: prospección B2B: event planners, office managers y HR para holiday parties y eventos de empresa [sobrevive]",
+  "P74": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 7/12: acuerdos con venues, wedding planners, fotógrafos y DJs (preferred vendor lists, cross-promo) [sobrevive]",
+  "P75": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 8/12: política de degustaciones y consultas de carta para parejas y planners [sobrevive]",
+  "P76": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 9/12: Instagram, Pinterest y reels con eventos reales [sobrevive]",
+  "P77": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 10/12: plantilla de presupuesto con la calculadora del kit y seguimiento en el CRM [sobrevive]",
+  "P78": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P79": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 11/12: programa de referidos y reseñas después de cada evento [sobrevive]",
+  "P80": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 5, tarea 12/12: bridal show local + showcase / tasting para planners y venues; los 3 primeros eventos piloto para el portfolio [sobrevive con ajuste]",
+  "P81": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 1/10: briefing con el cliente D-21: invitados, horas, paquete, specialty bar, venue, restricciones [sobrevive]",
+  "P82": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 2/10: visita o llamada técnica al venue D-14: acceso del remolque, toma eléctrica, agua, normas del venue [sobrevive con ajuste]",
+  "P83": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 3/10: shopping list al anfitrión en D-14 (la saca la calculadora del kit: botellas por categoría, cerveza, vino, hielo) y compra de mixers, garnish y hielo en D-1",
+  "P84": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 4/10: checklist de carga y transporte del remolque (enganche, luces, sujeción de la cristalería) [sobrevive con ajuste]",
+  "P85": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 5/10: montaje 60-120 min antes, servicio y last call [sobrevive con ajuste]",
+  "P86": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 6/10: desmontaje y recuento de cristalería; el alcohol que sobra se queda con el anfitrión; devolución de alquileres [sobrevive con ajuste]",
+  "P87": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 7/10: factura del saldo antes del evento y control de depósitos; gratuity pactada en la factura [sobrevive con ajuste]",
+  "P88": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 8/10: pedir reseña y fotos a las 48 h; seguimiento en el CRM [sobrevive]",
+  "P89": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P90": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 9/10: revisión mensual del coste por invitado, las horas de personal y los desechables frente a la calculadora [sobrevive con ajuste]",
+  "P91": "D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C responsable · D plazo · E nota práctica, una celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», «200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad principal. Esta fila: fase 6, tarea 10/10: revisión a los 90 días: precios por invitado, mínimos, paquetes y specialty bars; formación continua y ferias del sector (Bar Convent Brooklyn, Tales of the Cocktail; sin cifras) [sobrevive con ajuste]"
  },
  "glosario": {
   "cuenta de resultados": "P&L / profit and loss statement",
@@ -248,7 +249,8 @@
   "bebidas sin alcohol": "mocktails · N/A drinks · zero-proof",
   "brindis con espumoso": "champagne service / champagne toast",
   "mezcladores, garnish, hielo, vasos": "mixers · garnishes · ice & coolers · plastic cups, napkins & straws",
-  "hielo por invitado": "ice per guest (1.5 lbs per guest)",
+  "hielo por invitado": "ice per guest (1.5 lbs per guest, 0.68 kg)",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: oz / fl oz (ml), lb (kg), quarts / gallons, °F (°C), miles, sq ft (m²); 750 ml bottle = a fifth, 1.75 L = a handle",
   "desplazamiento": "travel fee",
   "mínimo de contratación": "minimum · bar minimum",
   "señal / anticipo / fianza": "deposit",
@@ -2277,6 +2279,7 @@
    "propuesta_de": "GCAT-check c0795 (CATC F3 - Equipamiento!E10)",
    "pistas": [
     "P01",
+    "P46",
     "P45"
    ]
   },
@@ -2292,7 +2295,7 @@
    "propuesta_de": "GCAT-check c0796 (CATC F3 - Equipamiento!B11)",
    "pistas": [
     "P01",
-    "P46"
+    "P47"
    ]
   },
   {
@@ -2307,7 +2310,7 @@
    "propuesta_de": "GCAT-check c0797 (CATC F3 - Equipamiento!C11)",
    "pistas": [
     "P01",
-    "P46"
+    "P47"
    ]
   },
   {
@@ -2322,7 +2325,7 @@
    "propuesta_de": "GCAT-check c0798 (CATC F3 - Equipamiento!D11)",
    "pistas": [
     "P01",
-    "P46"
+    "P47"
    ]
   },
   {
@@ -2337,7 +2340,7 @@
    "propuesta_de": "GCAT-check c0799 (CATC F3 - Equipamiento!E11)",
    "pistas": [
     "P01",
-    "P46"
+    "P47"
    ]
   },
   {
@@ -2353,7 +2356,7 @@
    "pistas": [
     "P01",
     "P22",
-    "P47"
+    "P48"
    ]
   },
   {
@@ -2368,7 +2371,7 @@
    "propuesta_de": "GCAT-check c0801 (CATC F3 - Equipamiento!C12)",
    "pistas": [
     "P01",
-    "P47"
+    "P48"
    ]
   },
   {
@@ -2383,7 +2386,7 @@
    "propuesta_de": "GCAT-check c0802 (CATC F3 - Equipamiento!D12)",
    "pistas": [
     "P01",
-    "P47"
+    "P48"
    ]
   },
   {
@@ -2399,7 +2402,7 @@
    "pistas": [
     "P01",
     "P22",
-    "P47"
+    "P48"
    ]
   },
   {
@@ -2415,7 +2418,7 @@
    "pistas": [
     "P01",
     "P26",
-    "P48"
+    "P49"
    ]
   },
   {
@@ -2430,7 +2433,7 @@
    "propuesta_de": "GCAT-check c0805 (CATC F3 - Equipamiento!C13)",
    "pistas": [
     "P01",
-    "P48"
+    "P49"
    ]
   },
   {
@@ -2445,7 +2448,7 @@
    "propuesta_de": "GCAT-check c0806 (CATC F3 - Equipamiento!D13)",
    "pistas": [
     "P01",
-    "P48"
+    "P49"
    ]
   },
   {
@@ -2460,7 +2463,7 @@
    "propuesta_de": "GCAT-check c0807 (CATC F3 - Equipamiento!E13)",
    "pistas": [
     "P01",
-    "P48"
+    "P49"
    ]
   },
   {
@@ -2475,7 +2478,7 @@
    "propuesta_de": "GCAT-check c0808 (CATC F3 - Equipamiento!B14)",
    "pistas": [
     "P01",
-    "P49"
+    "P50"
    ]
   },
   {
@@ -2490,7 +2493,7 @@
    "propuesta_de": "GCAT-check c0809 (CATC F3 - Equipamiento!C14)",
    "pistas": [
     "P01",
-    "P49"
+    "P50"
    ]
   },
   {
@@ -2505,7 +2508,7 @@
    "propuesta_de": "GCAT-check c0810 (CATC F3 - Equipamiento!D14)",
    "pistas": [
     "P01",
-    "P49"
+    "P50"
    ]
   },
   {
@@ -2521,7 +2524,7 @@
    "pistas": [
     "P01",
     "P02",
-    "P49"
+    "P50"
    ]
   },
   {
@@ -2537,7 +2540,7 @@
    "pistas": [
     "P01",
     "P09",
-    "P50"
+    "P51"
    ]
   },
   {
@@ -2552,7 +2555,7 @@
    "propuesta_de": "GCAT-check c0813 (CATC F3 - Equipamiento!C15)",
    "pistas": [
     "P01",
-    "P50"
+    "P51"
    ]
   },
   {
@@ -2567,7 +2570,7 @@
    "propuesta_de": "GCAT-check c0814 (CATC F3 - Equipamiento!D15)",
    "pistas": [
     "P01",
-    "P50"
+    "P51"
    ]
   },
   {
@@ -2582,7 +2585,7 @@
    "propuesta_de": "GCAT-check c0815 (CATC F3 - Equipamiento!E15)",
    "pistas": [
     "P01",
-    "P50"
+    "P51"
    ]
   },
   {
@@ -2597,7 +2600,7 @@
    "propuesta_de": "GCAT-check c0816 (CATC F3 - Equipamiento!B16)",
    "pistas": [
     "P01",
-    "P51"
+    "P52"
    ]
   },
   {
@@ -2612,7 +2615,7 @@
    "propuesta_de": "GCAT-check c0817 (CATC F3 - Equipamiento!C16)",
    "pistas": [
     "P01",
-    "P51"
+    "P52"
    ]
   },
   {
@@ -2627,7 +2630,7 @@
    "propuesta_de": "GCAT-check c0818 (CATC F3 - Equipamiento!D16)",
    "pistas": [
     "P01",
-    "P51"
+    "P52"
    ]
   },
   {
@@ -2642,7 +2645,7 @@
    "propuesta_de": "GCAT-check c0819 (CATC F3 - Equipamiento!E16)",
    "pistas": [
     "P01",
-    "P51"
+    "P52"
    ]
   },
   {
@@ -2657,7 +2660,7 @@
    "propuesta_de": "GCAT-check c0822 (CATC F4 - Personal!B5)",
    "pistas": [
     "P01",
-    "P52"
+    "P53"
    ]
   },
   {
@@ -2672,7 +2675,7 @@
    "propuesta_de": "GCAT-check c0823 (CATC F4 - Personal!C5)",
    "pistas": [
     "P01",
-    "P52"
+    "P53"
    ]
   },
   {
@@ -2687,7 +2690,7 @@
    "propuesta_de": "GCAT-check c0824 (CATC F4 - Personal!D5)",
    "pistas": [
     "P01",
-    "P52"
+    "P53"
    ]
   },
   {
@@ -2702,7 +2705,7 @@
    "propuesta_de": "GCAT-check c0825 (CATC F4 - Personal!E5)",
    "pistas": [
     "P01",
-    "P52"
+    "P53"
    ]
   },
   {
@@ -2717,7 +2720,7 @@
    "propuesta_de": "GCAT-check c0826 (CATC F4 - Personal!B6)",
    "pistas": [
     "P01",
-    "P53"
+    "P54"
    ]
   },
   {
@@ -2734,7 +2737,7 @@
     "P01",
     "P02",
     "P04",
-    "P53"
+    "P54"
    ]
   },
   {
@@ -2749,7 +2752,7 @@
    "propuesta_de": "GCAT-check c0828 (CATC F4 - Personal!D6)",
    "pistas": [
     "P01",
-    "P53"
+    "P54"
    ]
   },
   {
@@ -2764,8 +2767,8 @@
    "propuesta_de": "GCAT-check c0829 (CATC F4 - Personal!E6)",
    "pistas": [
     "P01",
-    "P54",
-    "P53"
+    "P55",
+    "P54"
    ]
   },
   {
@@ -2780,7 +2783,7 @@
    "propuesta_de": "GCAT-check c0830 (CATC F4 - Personal!B7)",
    "pistas": [
     "P01",
-    "P55"
+    "P56"
    ]
   },
   {
@@ -2795,7 +2798,7 @@
    "propuesta_de": "GCAT-check c0831 (CATC F4 - Personal!C7)",
    "pistas": [
     "P01",
-    "P55"
+    "P56"
    ]
   },
   {
@@ -2810,7 +2813,7 @@
    "propuesta_de": "GCAT-check c0832 (CATC F4 - Personal!D7)",
    "pistas": [
     "P01",
-    "P55"
+    "P56"
    ]
   },
   {
@@ -2826,9 +2829,9 @@
    "pistas": [
     "P01",
     "P02",
-    "P56",
     "P57",
-    "P55"
+    "P58",
+    "P56"
    ]
   },
   {
@@ -2844,7 +2847,7 @@
    "pistas": [
     "P01",
     "P02",
-    "P58"
+    "P59"
    ]
   },
   {
@@ -2859,7 +2862,7 @@
    "propuesta_de": "GCAT-check c0835 (CATC F4 - Personal!C8)",
    "pistas": [
     "P01",
-    "P58"
+    "P59"
    ]
   },
   {
@@ -2874,7 +2877,7 @@
    "propuesta_de": "GCAT-check c0836 (CATC F4 - Personal!D8)",
    "pistas": [
     "P01",
-    "P58"
+    "P59"
    ]
   },
   {
@@ -2890,7 +2893,7 @@
    "pistas": [
     "P01",
     "P09",
-    "P58"
+    "P59"
    ]
   },
   {
@@ -2906,7 +2909,7 @@
    "pistas": [
     "P01",
     "P09",
-    "P59"
+    "P60"
    ]
   },
   {
@@ -2921,7 +2924,7 @@
    "propuesta_de": "GCAT-check c0839 (CATC F4 - Personal!C9)",
    "pistas": [
     "P01",
-    "P59"
+    "P60"
    ]
   },
   {
@@ -2936,7 +2939,7 @@
    "propuesta_de": "GCAT-check c0840 (CATC F4 - Personal!D9)",
    "pistas": [
     "P01",
-    "P59"
+    "P60"
    ]
   },
   {
@@ -2951,7 +2954,7 @@
    "propuesta_de": "GCAT-check c0841 (CATC F4 - Personal!E9)",
    "pistas": [
     "P01",
-    "P59"
+    "P60"
    ]
   },
   {
@@ -2967,7 +2970,7 @@
    "pistas": [
     "P01",
     "P02",
-    "P60"
+    "P61"
    ]
   },
   {
@@ -2982,7 +2985,7 @@
    "propuesta_de": "GCAT-check c0843 (CATC F4 - Personal!C10)",
    "pistas": [
     "P01",
-    "P60"
+    "P61"
    ]
   },
   {
@@ -2997,7 +3000,7 @@
    "propuesta_de": "GCAT-check c0844 (CATC F4 - Personal!D10)",
    "pistas": [
     "P01",
-    "P60"
+    "P61"
    ]
   },
   {
@@ -3013,7 +3016,7 @@
    "pistas": [
     "P01",
     "P11",
-    "P60"
+    "P61"
    ]
   },
   {
@@ -3028,8 +3031,8 @@
    "propuesta_de": "GCAT-check c0846 (CATC F4 - Personal!B11)",
    "pistas": [
     "P01",
-    "P57",
-    "P61"
+    "P58",
+    "P62"
    ]
   },
   {
@@ -3044,7 +3047,7 @@
    "propuesta_de": "GCAT-check c0847 (CATC F4 - Personal!C11)",
    "pistas": [
     "P01",
-    "P61"
+    "P62"
    ]
   },
   {
@@ -3059,7 +3062,7 @@
    "propuesta_de": "GCAT-check c0848 (CATC F4 - Personal!D11)",
    "pistas": [
     "P01",
-    "P61"
+    "P62"
    ]
   },
   {
@@ -3074,9 +3077,9 @@
    "propuesta_de": "GCAT-check c0849 (CATC F4 - Personal!E11)",
    "pistas": [
     "P01",
-    "P57",
+    "P58",
     "P09",
-    "P61"
+    "P62"
    ]
   },
   {
@@ -3091,7 +3094,7 @@
    "propuesta_de": "GCAT-check c0850 (CATC F4 - Personal!B12)",
    "pistas": [
     "P01",
-    "P62"
+    "P63"
    ]
   },
   {
@@ -3106,7 +3109,7 @@
    "propuesta_de": "GCAT-check c0851 (CATC F4 - Personal!C12)",
    "pistas": [
     "P01",
-    "P62"
+    "P63"
    ]
   },
   {
@@ -3121,7 +3124,7 @@
    "propuesta_de": "GCAT-check c0852 (CATC F4 - Personal!D12)",
    "pistas": [
     "P01",
-    "P62"
+    "P63"
    ]
   },
   {
@@ -3136,7 +3139,7 @@
    "propuesta_de": "GCAT-check c0853 (CATC F4 - Personal!E12)",
    "pistas": [
     "P01",
-    "P62"
+    "P63"
    ]
   },
   {
@@ -3151,7 +3154,7 @@
    "propuesta_de": "GCAT-check c0854 (CATC F4 - Personal!B13)",
    "pistas": [
     "P01",
-    "P63"
+    "P64"
    ]
   },
   {
@@ -3168,7 +3171,7 @@
     "P01",
     "P02",
     "P04",
-    "P63"
+    "P64"
    ]
   },
   {
@@ -3183,7 +3186,7 @@
    "propuesta_de": "GCAT-check c0856 (CATC F4 - Personal!D13)",
    "pistas": [
     "P01",
-    "P63"
+    "P64"
    ]
   },
   {
@@ -3200,7 +3203,7 @@
     "P01",
     "P02",
     "P12",
-    "P63"
+    "P64"
    ]
   },
   {
@@ -3215,7 +3218,7 @@
    "propuesta_de": "GCAT-check c0858 (CATC F4 - Personal!B14)",
    "pistas": [
     "P01",
-    "P64"
+    "P65"
    ]
   },
   {
@@ -3232,7 +3235,7 @@
     "P01",
     "P02",
     "P04",
-    "P64"
+    "P65"
    ]
   },
   {
@@ -3247,7 +3250,7 @@
    "propuesta_de": "GCAT-check c0860 (CATC F4 - Personal!D14)",
    "pistas": [
     "P01",
-    "P64"
+    "P65"
    ]
   },
   {
@@ -3262,7 +3265,7 @@
    "propuesta_de": "GCAT-check c0861 (CATC F4 - Personal!E14)",
    "pistas": [
     "P01",
-    "P64"
+    "P65"
    ]
   },
   {
@@ -3277,8 +3280,8 @@
    "propuesta_de": "GCAT-check c0864 (CATC F5 - Marketing!B5)",
    "pistas": [
     "P01",
-    "P65",
-    "P66"
+    "P66",
+    "P67"
    ]
   },
   {
@@ -3293,7 +3296,7 @@
    "propuesta_de": "GCAT-check c0865 (CATC F5 - Marketing!C5)",
    "pistas": [
     "P01",
-    "P66"
+    "P67"
    ]
   },
   {
@@ -3308,7 +3311,7 @@
    "propuesta_de": "GCAT-check c0866 (CATC F5 - Marketing!D5)",
    "pistas": [
     "P01",
-    "P66"
+    "P67"
    ]
   },
   {
@@ -3323,7 +3326,7 @@
    "propuesta_de": "GCAT-check c0867 (CATC F5 - Marketing!E5)",
    "pistas": [
     "P01",
-    "P66"
+    "P67"
    ]
   },
   {
@@ -3338,8 +3341,8 @@
    "propuesta_de": "GCAT-check c0868 (CATC F5 - Marketing!B6)",
    "pistas": [
     "P01",
-    "P67",
-    "P68"
+    "P68",
+    "P69"
    ]
   },
   {
@@ -3354,7 +3357,7 @@
    "propuesta_de": "GCAT-check c0869 (CATC F5 - Marketing!C6)",
    "pistas": [
     "P01",
-    "P68"
+    "P69"
    ]
   },
   {
@@ -3369,7 +3372,7 @@
    "propuesta_de": "GCAT-check c0870 (CATC F5 - Marketing!D6)",
    "pistas": [
     "P01",
-    "P68"
+    "P69"
    ]
   },
   {
@@ -3385,7 +3388,7 @@
    "pistas": [
     "P01",
     "P09",
-    "P68"
+    "P69"
    ]
   },
   {
@@ -3400,8 +3403,8 @@
    "propuesta_de": "GCAT-check c0872 (CATC F5 - Marketing!B7)",
    "pistas": [
     "P01",
-    "P67",
-    "P69"
+    "P68",
+    "P70"
    ]
   },
   {
@@ -3416,7 +3419,7 @@
    "propuesta_de": "GCAT-check c0873 (CATC F5 - Marketing!C7)",
    "pistas": [
     "P01",
-    "P69"
+    "P70"
    ]
   },
   {
@@ -3431,7 +3434,7 @@
    "propuesta_de": "GCAT-check c0874 (CATC F5 - Marketing!D7)",
    "pistas": [
     "P01",
-    "P69"
+    "P70"
    ]
   },
   {
@@ -3447,7 +3450,7 @@
    "pistas": [
     "P01",
     "P26",
-    "P69"
+    "P70"
    ]
   },
   {
@@ -3462,7 +3465,7 @@
    "propuesta_de": "GCAT-check c0876 (CATC F5 - Marketing!B8)",
    "pistas": [
     "P01",
-    "P70"
+    "P71"
    ]
   },
   {
@@ -3477,7 +3480,7 @@
    "propuesta_de": "GCAT-check c0877 (CATC F5 - Marketing!C8)",
    "pistas": [
     "P01",
-    "P70"
+    "P71"
    ]
   },
   {
@@ -3492,7 +3495,7 @@
    "propuesta_de": "GCAT-check c0878 (CATC F5 - Marketing!D8)",
    "pistas": [
     "P01",
-    "P70"
+    "P71"
    ]
   },
   {
@@ -3507,7 +3510,7 @@
    "propuesta_de": "GCAT-check c0879 (CATC F5 - Marketing!E8)",
    "pistas": [
     "P01",
-    "P70"
+    "P71"
    ]
   },
   {
@@ -3522,7 +3525,7 @@
    "propuesta_de": "GCAT-check c0880 (CATC F5 - Marketing!B9)",
    "pistas": [
     "P01",
-    "P71"
+    "P72"
    ]
   },
   {
@@ -3537,7 +3540,7 @@
    "propuesta_de": "GCAT-check c0881 (CATC F5 - Marketing!C9)",
    "pistas": [
     "P01",
-    "P71"
+    "P72"
    ]
   },
   {
@@ -3552,7 +3555,7 @@
    "propuesta_de": "GCAT-check c0882 (CATC F5 - Marketing!D9)",
    "pistas": [
     "P01",
-    "P71"
+    "P72"
    ]
   },
   {
@@ -3568,7 +3571,7 @@
    "pistas": [
     "P01",
     "P26",
-    "P71"
+    "P72"
    ]
   },
   {
@@ -3584,8 +3587,8 @@
    "pistas": [
     "P01",
     "P10",
-    "P54",
-    "P72"
+    "P55",
+    "P73"
    ]
   },
   {
@@ -3600,7 +3603,7 @@
    "propuesta_de": "GCAT-check c0885 (CATC F5 - Marketing!C10)",
    "pistas": [
     "P01",
-    "P72"
+    "P73"
    ]
   },
   {
@@ -3615,7 +3618,7 @@
    "propuesta_de": "GCAT-check c0886 (CATC F5 - Marketing!D10)",
    "pistas": [
     "P01",
-    "P72"
+    "P73"
    ]
   },
   {
@@ -3631,7 +3634,7 @@
    "pistas": [
     "P01",
     "P10",
-    "P72"
+    "P73"
    ]
   },
   {
@@ -3647,7 +3650,7 @@
    "pistas": [
     "P01",
     "P09",
-    "P73"
+    "P74"
    ]
   },
   {
@@ -3662,7 +3665,7 @@
    "propuesta_de": "GCAT-check c0889 (CATC F5 - Marketing!C11)",
    "pistas": [
     "P01",
-    "P73"
+    "P74"
    ]
   },
   {
@@ -3677,7 +3680,7 @@
    "propuesta_de": "GCAT-check c0890 (CATC F5 - Marketing!D11)",
    "pistas": [
     "P01",
-    "P73"
+    "P74"
    ]
   },
   {
@@ -3692,7 +3695,7 @@
    "propuesta_de": "GCAT-check c0891 (CATC F5 - Marketing!E11)",
    "pistas": [
     "P01",
-    "P73"
+    "P74"
    ]
   },
   {
@@ -3707,7 +3710,7 @@
    "propuesta_de": "GCAT-check c0892 (CATC F5 - Marketing!B12)",
    "pistas": [
     "P01",
-    "P74"
+    "P75"
    ]
   },
   {
@@ -3722,7 +3725,7 @@
    "propuesta_de": "GCAT-check c0893 (CATC F5 - Marketing!C12)",
    "pistas": [
     "P01",
-    "P74"
+    "P75"
    ]
   },
   {
@@ -3737,7 +3740,7 @@
    "propuesta_de": "GCAT-check c0894 (CATC F5 - Marketing!D12)",
    "pistas": [
     "P01",
-    "P74"
+    "P75"
    ]
   },
   {
@@ -3752,7 +3755,7 @@
    "propuesta_de": "GCAT-check c0895 (CATC F5 - Marketing!E12)",
    "pistas": [
     "P01",
-    "P74"
+    "P75"
    ]
   },
   {
@@ -3767,8 +3770,8 @@
    "propuesta_de": "GCAT-check c0896 (CATC F5 - Marketing!B13)",
    "pistas": [
     "P01",
-    "P54",
-    "P75"
+    "P55",
+    "P76"
    ]
   },
   {
@@ -3783,7 +3786,7 @@
    "propuesta_de": "GCAT-check c0897 (CATC F5 - Marketing!C13)",
    "pistas": [
     "P01",
-    "P75"
+    "P76"
    ]
   },
   {
@@ -3798,7 +3801,7 @@
    "propuesta_de": "GCAT-check c0898 (CATC F5 - Marketing!D13)",
    "pistas": [
     "P01",
-    "P75"
+    "P76"
    ]
   },
   {
@@ -3813,7 +3816,7 @@
    "propuesta_de": "GCAT-check c0899 (CATC F5 - Marketing!E13)",
    "pistas": [
     "P01",
-    "P75"
+    "P76"
    ]
   },
   {
@@ -3828,7 +3831,7 @@
    "propuesta_de": "GCAT-check c0900 (CATC F5 - Marketing!B14)",
    "pistas": [
     "P01",
-    "P76"
+    "P77"
    ]
   },
   {
@@ -3843,7 +3846,7 @@
    "propuesta_de": "GCAT-check c0901 (CATC F5 - Marketing!C14)",
    "pistas": [
     "P01",
-    "P76"
+    "P77"
    ]
   },
   {
@@ -3858,7 +3861,7 @@
    "propuesta_de": "GCAT-check c0902 (CATC F5 - Marketing!D14)",
    "pistas": [
     "P01",
-    "P76"
+    "P77"
    ]
   },
   {
@@ -3874,7 +3877,7 @@
    "pistas": [
     "P01",
     "P26",
-    "P76"
+    "P77"
    ]
   },
   {
@@ -3890,9 +3893,9 @@
    "pistas": [
     "P01",
     "P02",
-    "P77",
+    "P78",
     "P10",
-    "P78"
+    "P79"
    ]
   },
   {
@@ -3907,7 +3910,7 @@
    "propuesta_de": "GCAT-check c0905 (CATC F5 - Marketing!C15)",
    "pistas": [
     "P01",
-    "P78"
+    "P79"
    ]
   },
   {
@@ -3922,8 +3925,8 @@
    "propuesta_de": "GCAT-check c0906 (CATC F5 - Marketing!D15)",
    "pistas": [
     "P01",
-    "P77",
-    "P78"
+    "P78",
+    "P79"
    ]
   },
   {
@@ -3939,7 +3942,7 @@
    "pistas": [
     "P01",
     "P10",
-    "P78"
+    "P79"
    ]
   },
   {
@@ -3954,7 +3957,7 @@
    "propuesta_de": "GCAT-check c0908 (CATC F5 - Marketing!B16)",
    "pistas": [
     "P01",
-    "P79"
+    "P80"
    ]
   },
   {
@@ -3969,7 +3972,7 @@
    "propuesta_de": "GCAT-check c0909 (CATC F5 - Marketing!C16)",
    "pistas": [
     "P01",
-    "P79"
+    "P80"
    ]
   },
   {
@@ -3984,7 +3987,7 @@
    "propuesta_de": "GCAT-check c0910 (CATC F5 - Marketing!D16)",
    "pistas": [
     "P01",
-    "P79"
+    "P80"
    ]
   },
   {
@@ -3999,7 +4002,7 @@
    "propuesta_de": "GCAT-check c0911 (CATC F5 - Marketing!E16)",
    "pistas": [
     "P01",
-    "P79"
+    "P80"
    ]
   },
   {
@@ -4014,7 +4017,7 @@
    "propuesta_de": "GCAT-check c0914 (CATC F6 - 90 Días!B5)",
    "pistas": [
     "P01",
-    "P80"
+    "P81"
    ]
   },
   {
@@ -4029,7 +4032,7 @@
    "propuesta_de": "GCAT-check c0915 (CATC F6 - 90 Días!C5)",
    "pistas": [
     "P01",
-    "P80"
+    "P81"
    ]
   },
   {
@@ -4044,7 +4047,7 @@
    "propuesta_de": "GCAT-check c0916 (CATC F6 - 90 Días!D5)",
    "pistas": [
     "P01",
-    "P80"
+    "P81"
    ]
   },
   {
@@ -4059,7 +4062,7 @@
    "propuesta_de": "GCAT-check c0917 (CATC F6 - 90 Días!E5)",
    "pistas": [
     "P01",
-    "P80"
+    "P81"
    ]
   },
   {
@@ -4074,7 +4077,7 @@
    "propuesta_de": "GCAT-check c0918 (CATC F6 - 90 Días!B6)",
    "pistas": [
     "P01",
-    "P81"
+    "P82"
    ]
   },
   {
@@ -4089,7 +4092,7 @@
    "propuesta_de": "GCAT-check c0919 (CATC F6 - 90 Días!C6)",
    "pistas": [
     "P01",
-    "P81"
+    "P82"
    ]
   },
   {
@@ -4104,7 +4107,7 @@
    "propuesta_de": "GCAT-check c0920 (CATC F6 - 90 Días!D6)",
    "pistas": [
     "P01",
-    "P81"
+    "P82"
    ]
   },
   {
@@ -4119,7 +4122,7 @@
    "propuesta_de": "GCAT-check c0921 (CATC F6 - 90 Días!E6)",
    "pistas": [
     "P01",
-    "P81"
+    "P82"
    ]
   },
   {
@@ -4134,7 +4137,7 @@
    "propuesta_de": "GCAT-check c0922 (CATC F6 - 90 Días!B7)",
    "pistas": [
     "P01",
-    "P82"
+    "P83"
    ]
   },
   {
@@ -4149,7 +4152,7 @@
    "propuesta_de": "GCAT-check c0923 (CATC F6 - 90 Días!C7)",
    "pistas": [
     "P01",
-    "P82"
+    "P83"
    ]
   },
   {
@@ -4164,7 +4167,7 @@
    "propuesta_de": "GCAT-check c0924 (CATC F6 - 90 Días!D7)",
    "pistas": [
     "P01",
-    "P82"
+    "P83"
    ]
   },
   {
@@ -4179,7 +4182,7 @@
    "propuesta_de": "GCAT-check c0925 (CATC F6 - 90 Días!E7)",
    "pistas": [
     "P01",
-    "P82"
+    "P83"
    ]
   },
   {
@@ -4194,7 +4197,7 @@
    "propuesta_de": "GCAT-check c0926 (CATC F6 - 90 Días!B8)",
    "pistas": [
     "P01",
-    "P83"
+    "P84"
    ]
   },
   {
@@ -4209,7 +4212,7 @@
    "propuesta_de": "GCAT-check c0927 (CATC F6 - 90 Días!C8)",
    "pistas": [
     "P01",
-    "P83"
+    "P84"
    ]
   },
   {
@@ -4224,7 +4227,7 @@
    "propuesta_de": "GCAT-check c0928 (CATC F6 - 90 Días!D8)",
    "pistas": [
     "P01",
-    "P83"
+    "P84"
    ]
   },
   {
@@ -4239,7 +4242,7 @@
    "propuesta_de": "GCAT-check c0929 (CATC F6 - 90 Días!E8)",
    "pistas": [
     "P01",
-    "P83"
+    "P84"
    ]
   },
   {
@@ -4254,7 +4257,7 @@
    "propuesta_de": "GCAT-check c0930 (CATC F6 - 90 Días!B9)",
    "pistas": [
     "P01",
-    "P84"
+    "P85"
    ]
   },
   {
@@ -4269,7 +4272,7 @@
    "propuesta_de": "GCAT-check c0931 (CATC F6 - 90 Días!C9)",
    "pistas": [
     "P01",
-    "P84"
+    "P85"
    ]
   },
   {
@@ -4284,7 +4287,7 @@
    "propuesta_de": "GCAT-check c0932 (CATC F6 - 90 Días!D9)",
    "pistas": [
     "P01",
-    "P84"
+    "P85"
    ]
   },
   {
@@ -4299,7 +4302,7 @@
    "propuesta_de": "GCAT-check c0933 (CATC F6 - 90 Días!E9)",
    "pistas": [
     "P01",
-    "P84"
+    "P85"
    ]
   },
   {
@@ -4316,7 +4319,7 @@
     "P01",
     "P20",
     "P21",
-    "P85"
+    "P86"
    ]
   },
   {
@@ -4331,7 +4334,7 @@
    "propuesta_de": "GCAT-check c0935 (CATC F6 - 90 Días!C10)",
    "pistas": [
     "P01",
-    "P85"
+    "P86"
    ]
   },
   {
@@ -4346,7 +4349,7 @@
    "propuesta_de": "GCAT-check c0936 (CATC F6 - 90 Días!D10)",
    "pistas": [
     "P01",
-    "P85"
+    "P86"
    ]
   },
   {
@@ -4361,7 +4364,7 @@
    "propuesta_de": "GCAT-check c0937 (CATC F6 - 90 Días!E10)",
    "pistas": [
     "P01",
-    "P85"
+    "P86"
    ]
   },
   {
@@ -4377,8 +4380,8 @@
    "pistas": [
     "P01",
     "P10",
-    "P54",
-    "P86"
+    "P55",
+    "P87"
    ]
   },
   {
@@ -4393,7 +4396,7 @@
    "propuesta_de": "GCAT-check c0939 (CATC F6 - 90 Días!C11)",
    "pistas": [
     "P01",
-    "P86"
+    "P87"
    ]
   },
   {
@@ -4408,7 +4411,7 @@
    "propuesta_de": "GCAT-check c0940 (CATC F6 - 90 Días!D11)",
    "pistas": [
     "P01",
-    "P86"
+    "P87"
    ]
   },
   {
@@ -4424,7 +4427,7 @@
    "pistas": [
     "P01",
     "P10",
-    "P86"
+    "P87"
    ]
   },
   {
@@ -4439,7 +4442,7 @@
    "propuesta_de": "GCAT-check c0942 (CATC F6 - 90 Días!B12)",
    "pistas": [
     "P01",
-    "P87"
+    "P88"
    ]
   },
   {
@@ -4454,7 +4457,7 @@
    "propuesta_de": "GCAT-check c0943 (CATC F6 - 90 Días!C12)",
    "pistas": [
     "P01",
-    "P87"
+    "P88"
    ]
   },
   {
@@ -4469,7 +4472,7 @@
    "propuesta_de": "GCAT-check c0944 (CATC F6 - 90 Días!D12)",
    "pistas": [
     "P01",
-    "P87"
+    "P88"
    ]
   },
   {
@@ -4484,7 +4487,7 @@
    "propuesta_de": "GCAT-check c0945 (CATC F6 - 90 Días!E12)",
    "pistas": [
     "P01",
-    "P87"
+    "P88"
    ]
   },
   {
@@ -4499,8 +4502,8 @@
    "propuesta_de": "GCAT-check c0946 (CATC F6 - 90 Días!B13)",
    "pistas": [
     "P01",
-    "P88",
-    "P89"
+    "P89",
+    "P90"
    ]
   },
   {
@@ -4517,7 +4520,7 @@
     "P01",
     "P02",
     "P04",
-    "P89"
+    "P90"
    ]
   },
   {
@@ -4532,7 +4535,7 @@
    "propuesta_de": "GCAT-check c0948 (CATC F6 - 90 Días!D13)",
    "pistas": [
     "P01",
-    "P89"
+    "P90"
    ]
   },
   {
@@ -4547,7 +4550,7 @@
    "propuesta_de": "GCAT-check c0949 (CATC F6 - 90 Días!E13)",
    "pistas": [
     "P01",
-    "P89"
+    "P90"
    ]
   },
   {
@@ -4562,7 +4565,7 @@
    "propuesta_de": "GCAT-check c0950 (CATC F6 - 90 Días!B14)",
    "pistas": [
     "P01",
-    "P90"
+    "P91"
    ]
   },
   {
@@ -4577,7 +4580,7 @@
    "propuesta_de": "GCAT-check c0951 (CATC F6 - 90 Días!C14)",
    "pistas": [
     "P01",
-    "P90"
+    "P91"
    ]
   },
   {
@@ -4592,7 +4595,7 @@
    "propuesta_de": "GCAT-check c0952 (CATC F6 - 90 Días!D14)",
    "pistas": [
     "P01",
-    "P90"
+    "P91"
    ]
   },
   {
@@ -4608,7 +4611,7 @@
    "pistas": [
     "P01",
     "P09",
-    "P90"
+    "P91"
    ]
   },
   {

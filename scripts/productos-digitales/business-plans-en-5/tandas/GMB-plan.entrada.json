@@ -54,7 +54,7 @@
   "P47": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
   "P48": "Research §5: ASCAP / BMI / SESAC si se pone música",
   "P49": "D84/D85: alcohol 0 %: en dry hire el anfitrión compra el alcohol y es suyo; vender alcohol exige licencia (docx §9)",
-  "P50": "D87: bar trailer usado (6x12 cargo / concession o horse trailer). El vehículo de arrastre es el TUYO ($0 en el plan): si no lo tienes, una pickup usada cuesta $10,000-$30,000 (Check Cherry). Nunca «truck»: di «tow vehicle» o «pickup»",
+  "P50": "D87: bar trailer usado (6 x 12 ft, cargo / concession o horse trailer). El vehículo de arrastre es el TUYO ($0 en el plan): si no lo tienes, una pickup usada cuesta $10,000-$30,000 (Check Cherry). Nunca «truck»: di «tow vehicle» o «pickup»",
   "P51": "D87: conversión: barra, armarios, lavamanos y depósitos de agua, LED y eléctrico (research: $5,000-$15,000 una conversión básica)",
   "P52": "D87: wrap, rotulación y fachada de la barra del remolque",
   "P53": "D87: barra portátil para el 2.º equipo y los salones donde no entra el remolque (Check Cherry: desde ~$1,000)",
@@ -108,7 +108,7 @@
   "P101": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: comisión de marketplace: GigSalad 5 % (plan gratis) / 2.5 % (de pago) sobre la reserva confirmada, nada por lead — gigsalad.com",
   "P102": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: coste de arranque: barra portátil desde ~$1,000, herramientas $500-$1,500, arranque «lean» $2,000-$7,000; un remolque convertido suele costar decenas de miles — checkcherry.com",
   "P103": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: seguros: general liability + liquor liability desde $550 al año; por evento desde $275 — insurancecanopy.com",
-  "P104": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: hielo y mixers: 1.5 lb de hielo por invitado; mixers + garnish + hielo ≈ $2.25 por invitado — Kit estimate",
+  "P104": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: hielo y mixers: 1.5 lb (0.68 kg) de hielo por invitado; mixers + garnish + hielo ≈ $2.25 por invitado — Kit estimate",
   "P105": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»"
  },
  "glosario": {
@@ -263,7 +263,8 @@
   "bebidas sin alcohol": "mocktails · N/A drinks · zero-proof",
   "brindis con espumoso": "champagne service / champagne toast",
   "mezcladores, garnish, hielo, vasos": "mixers · garnishes · ice & coolers · plastic cups, napkins & straws",
-  "hielo por invitado": "ice per guest (1.5 lbs per guest)",
+  "hielo por invitado": "ice per guest (1.5 lbs per guest, 0.68 kg)",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: oz / fl oz (ml), lb (kg), quarts / gallons, °F (°C), miles, sq ft (m²); 750 ml bottle = a fifth, 1.75 L = a handle",
   "desplazamiento": "travel fee",
   "mínimo de contratación": "minimum · bar minimum",
   "señal / anticipo / fianza": "deposit",

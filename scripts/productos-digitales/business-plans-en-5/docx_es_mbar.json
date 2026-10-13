@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-13T07:00:28+00:00",
+  "generado": "2026-10-13T07:19:16+00:00",
   "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
   "plan": "mbar",
   "fichero_es": "astro-site/public/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx",
@@ -185,7 +185,7 @@
    "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
    "inv_lanzamiento": "website, photos, launch and first bridal show",
    "inv_stock": "opening inventory (mixers, syrups, garnishes, cups, napkins; no alcohol)",
-   "inv_vehiculo": "bar trailer, used (6x12 cargo / concession or horse trailer)",
+   "inv_vehiculo": "bar trailer, used (6 x 12 ft cargo / concession or horse trailer)",
    "inv_adaptacion": "trailer conversion (bar top, cabinetry, hand sink, water tanks, LED, electrical)",
    "inv_permisos": "first-year permits and certifications (business license, sales tax permit, TABC / RBS / TIPS)",
    "eventos_a1": "events per year, year 1",
@@ -1497,7 +1497,7 @@
    "traducir": true,
    "tanda": "mbar_b",
    "palabras": 117,
-   "nota": "§6 4/5: hielo, garnish y copas: hielo comercial embolsado (1.5 lb por invitado, Kit estimate), garnish cortado según lo que permita el condado; 2 copas por invitado la primera hora + 1 por hora después (eventplanning.com); mocktail siempre; alérgenos (orgeat, coco)"
+   "nota": "§6 4/5: hielo, garnish y copas: hielo comercial embolsado (1.5 lb, 0.68 kg, por invitado: Kit estimate), garnish cortado según lo que permita el condado; 2 copas por invitado la primera hora + 1 por hora después (eventplanning.com); mocktail siempre; alérgenos (orgeat, coco)"
   },
   "82": {
    "estilo": "Normal",
