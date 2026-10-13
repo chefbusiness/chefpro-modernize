@@ -81,8 +81,8 @@ const FAQS: KitExcelFaq[] = [
     a: "One purchase covers one business, with all of its locations, which makes it a good fit for restaurant groups and multi-unit operators. If you are a consultant or an investor, you can use the templates with the projects you advise, but you can't hand them copies: each business buys its own.",
   },
   {
-    q: 'Does it work in the UK?',
-    a: 'Yes. Tax rates are editable cells, so you enter the UK figures once: 20% VAT on sales (eat-in and hot food; most cold takeaway food is zero-rated), the VAT you can reclaim on purchases and on your capex, and your corporation tax rate (19% to 25%) in the Lender & Investor Summary. The notes in the templates point out where the UK differs, such as VAT returns due 1 month and 7 days after the quarter and PAYE paid on the 22nd.',
+    q: "Does it work in the UK, Canada or Australia?",
+    a: "Yes. Tax rates are editable cells, so you enter your country's figures once. UK: 20% VAT on sales, the VAT you reclaim on purchases and capex, and your corporation tax rate in the Lender & Investor Summary; the notes flag UK differences such as VAT return dates and PAYE. Canada: enter GST/HST, plus PST if your province charges it, and the GST/HST you claim back as recoverable tax. Australia: 10% GST on sales, with GST credits on purchases. The cash flow pays sales tax quarterly, so adjust that row if you file monthly or yearly, and floor area is in sq ft. Confirm the rates with your accountant.",
   },
   {
     q: 'What currency will I pay in?',

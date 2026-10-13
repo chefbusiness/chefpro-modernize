@@ -74,8 +74,8 @@ const FAQS: PlanNegocioFaq[] = [
     a: 'Yes. The green cells are the ones you type — rent, customers per day, average check, wages and any startup cost line — and more than 700 linked formulas recalculate the rest. To change a calculated cell, use Review → Unprotect Sheet (there is no password). The workbook includes an Instructions tab.',
   },
   {
-    q: 'Does it work in the UK?',
-    a: "Yes, with notes. Tax rates are editable cells: enter 20% VAT on eat-in sales and hot food (most cold takeaway food is zero-rated) and the VAT you can reclaim on purchases and on your build-out. The plan and the checklist add UK notes: register your food business with the council at least 28 days before you open, and expect a food hygiene rating inspection in your first months. UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
+    q: "Does it work in the UK, Canada or Australia?",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. Each sales line has its own rate: in the UK, eat-in sales and hot food pay 20% VAT, while most cold takeaway food is zero-rated. The UK notes cover council registration 28 days before opening and the hygiene rating. In Canada, health permits and inspections are provincial or municipal; in Australia, a café also needs a certified Food Safety Supervisor. Check with your council, province or state.",
   },
   {
     q: 'What currency will I pay in?',

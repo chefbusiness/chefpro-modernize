@@ -24,11 +24,11 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_RESTAURANT_INVENTORY_KIT',
 
   seo: {
-    title: 'Restaurant Inventory Kit Pro: 9 Restaurant Inventory Templates for Excel',
+    title: 'Restaurant Inventory Kit Pro: Inventory Spreadsheet & Par Sheet Templates for Excel',
     description:
       '9 restaurant inventory templates for Excel: par sheet, vendor price comparison, purchase orders, receiving log in °F, food waste log, FIFO and food cost KPIs. One-time $19.',
     keywords:
-      'restaurant inventory templates, restaurant inventory template, restaurant inventory spreadsheet, restaurant inventory sheet, kitchen inventory template, food inventory template, bar inventory template, par sheet restaurant, receiving log template, food waste log template, fifo labels, restaurant order guide template, stock take template, AI Chef Pro',
+      'restaurant inventory templates, restaurant inventory template, restaurant inventory spreadsheet, restaurant inventory sheet, kitchen inventory template, food inventory template, bar inventory template, par sheet restaurant, receiving log template, food waste log template, fifo labels, restaurant order guide template, inventory count sheet, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-inventario.jpg',
   },
 
@@ -89,6 +89,10 @@ const data: KitExcelData = {
         a: 'Inventory software is a monthly subscription. This kit is $19, a one-time payment with no subscription, and you can customize everything. There is no app, no POS integration and no barcode scanning.',
       },
       {
+        q: "Does it work in the UK, Canada or Australia?",
+        a: "Yes. Prices have no currency symbol, the unit list has kg and L next to lb and gal, and the purchase order's tax table starts at 0%: type UK VAT, Canadian GST/HST plus any PST, or 10% Australian GST. The receiving log checks temperatures in °F against FDA limits, so compare them with your local rules.",
+      },
+      {
         q: 'What currency will I pay in?',
         a: 'The price is $19 USD. At checkout, Stripe can show the amount in your local currency. The templates have no currency symbol: you type prices in your own currency.',
       },
@@ -130,7 +134,7 @@ const data: KitExcelData = {
     titlePre: 'Restaurant Inventory ',
     titleGold: 'Kit Pro',
     titlePost: ': ',
-    titleSubtitle: '9 Restaurant Inventory Templates for Excel',
+    titleSubtitle: '9 Restaurant & Bar Inventory Sheets for Excel',
     description:
       '9 Excel templates with automatic formulas to manage inventory, vendors, purchase orders, receiving, food waste, FIFO and purchasing cost analysis. Stop losing money.',
     checkItems: [
@@ -151,7 +155,7 @@ const data: KitExcelData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Restaurant Inventory Templates',
+    headingRest: ' Restaurant & Bar Inventory Sheets',
     subtitle:
       'Every template comes with automatic formulas and is built for how restaurants really work. Adjust it to your business and start controlling.',
     // fourCols omitido → grid-cols-2 md:grid-cols-3 (9 tarjetas, como el ES)
@@ -285,6 +289,10 @@ const data: KitExcelData = {
     {
       q: 'How is it different from inventory software?',
       a: 'Inventory software is a monthly subscription, usually per location. This kit is $19, a one-time payment with no subscription, and you can customize 100% of it. What it is not: there is no app, no POS integration, no barcode scanning and no automatic price updates.',
+    },
+    {
+      q: "Does it work in the UK, Canada or Australia?",
+      a: "Yes. Prices have no currency symbol, and the unit drop-down has kg and L next to lb, oz, gal and qt. Taxes live in an editable table on the purchase order's Tax Rates tab, 0% by default: type UK VAT (0, 5 or 20%), Canadian GST/HST plus any PST, or 10% Australian GST, and keep the tax you claim back out of your food cost. The vendor list has a Tax ID column for your VAT number, business number or ABN. The receiving log, though, checks temperatures in °F against FDA Food Code limits, so compare them with your local rules (FSA, your provincial health authority or FSANZ).",
     },
     {
       q: 'What currency will I pay in?',

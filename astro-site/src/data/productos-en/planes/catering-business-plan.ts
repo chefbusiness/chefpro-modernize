@@ -110,8 +110,8 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Yes. The green cells are the ones you type — events per year, price per guest, guests per event, food cost, the corporate marketplace share, commissary rent, wages and any startup cost line — and more than 700 linked formulas recalculate the rest. Client deposits aren't modeled, which keeps the cash flow on the cautious side. To change a calculated cell, use Review → Unprotect Sheet (there is no password). The workbook and the calculator each include an Instructions tab.",
   },
   {
-    q: 'Does it work in the UK?',
-    a: "Yes, with notes. Tax rates are editable cells: enter 20% VAT, which applies to catering for events and functions such as wedding receptions (HMRC VAT Notice 709/1), and the VAT you can reclaim on purchases and equipment. The plan adds UK notes: register your food business with the local council at least 28 days before you start trading, expect a Food Hygiene Rating, be ready to declare the 14 allergens, and use a Temporary Event Notice (£21) if you serve alcohol at an event without a premises licence. UK minimum wage and employer National Insurance aren't preloaded: enter the current figures from gov.uk.",
+    q: "Does it work in the UK, Canada or Australia?",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. In the UK, event catering pays 20% VAT, and the notes cover council registration 28 days before trading and Temporary Event Notices for alcohol. In Canada, event liquor permits are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, check your state liquor rules and RSA. The pricing calculator counts miles: type kilometres and your cost per km instead of the IRS rate.",
   },
   {
     q: 'What currency will I pay in?',
