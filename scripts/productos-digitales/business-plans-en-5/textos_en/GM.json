@@ -1,6 +1,5 @@
 {
  "c0002": "ASSUMPTIONS — the RATES and DRIVERS of the model are typed here",
- "c0003": "Change the GREEN cells: the rest of the workbook recalculates on its own. Expense items are typed on their own tab (also in green) and are not repeated here. Amounts are in your currency.",
  "c0004": "BUSINESS ACTIVITY",
  "c0011": "Volume growth in year 2",
  "c0013": "Volume growth in year 3",

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-13T07:19:16+00:00",
+  "generado": "2026-10-13T07:54:28+00:00",
   "script": "scripts/productos-digitales/business-plans-en/extraer_docx.py",
   "plan": "mbar",
   "fichero_es": "astro-site/public/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx",
@@ -185,7 +185,7 @@
    "pesimista_caja": "pessimistic scenario: estimated year-1 closing cash (negative = cash runs out)",
    "inv_lanzamiento": "website, photos, launch and first bridal show",
    "inv_stock": "opening inventory (mixers, syrups, garnishes, cups, napkins; no alcohol)",
-   "inv_vehiculo": "bar trailer, used (6 x 12 ft cargo / concession or horse trailer)",
+   "inv_vehiculo": "bar trailer, used (6 x 12 ft (1.8 x 3.7 m) cargo / concession or horse trailer)",
    "inv_adaptacion": "trailer conversion (bar top, cabinetry, hand sink, water tanks, LED, electrical)",
    "inv_permisos": "first-year permits and certifications (business license, sales tax permit, TABC / RBS / TIPS)",
    "eventos_a1": "events per year, year 1",
@@ -784,7 +784,7 @@
    "traducir": true,
    "tanda": "mbar_a",
    "palabras": 128,
-   "nota": "§1 2/5: el concepto (D84): mobile bar & bartending service en DRY HIRE — PRIMERA mención con la glosa «(you supply the alcohol; we bring the bar, the bartenders and everything else)»; remolque-barra convertido + barra portátil para el 2.º equipo; bartenders W-2 certificados, signature cocktails, mixers / garnish / hielo / vasos incluidos, setup & breakdown y una shopping list para el anfitrión"
+   "nota": "§1 2/5: el concepto (D84): mobile bar & bartending service en DRY HIRE — PRIMERA mención con la glosa «(your client buys the alcohol; you bring the bar, the bartenders and everything else)»; remolque-barra convertido + barra portátil para el 2.º equipo; bartenders W-2 certificados, signature cocktails, mixers / garnish / hielo / vasos incluidos, setup & breakdown y una shopping list para el anfitrión"
   },
   "41": {
    "estilo": "Normal",
@@ -1654,7 +1654,7 @@
    "traducir": true,
    "tanda": "mbar_b",
    "palabras": 107,
-   "nota": "§7 6/6: service charge frente a propina (IRS Rev. Rul. 2012-18); las propinas son del personal (FLSA); tip jar solo donde el estado no lo trate como venta (MO)"
+   "nota": "§7 6/6: service charge frente a propina (IRS Rev. Rul. 2012-18); las propinas son del personal (FLSA); en algunos estados (MO 24-01) las propinas y las gratuities pueden contar como venta: consultar al ABC antes de poner un tip jar o una línea de gratuity (M10 de REVISION-FINAL)"
   },
   "91": {
    "estilo": "Heading 1",
@@ -1860,7 +1860,7 @@
    "traducir": true,
    "tanda": "mbar_b",
    "palabras": 88,
-   "nota": "D92 §9 1/7: DRY HIRE = el modelo legal del kit. Missouri lo dice por escrito (Industry Circular 24-01, atc.dps.mo.gov: «There is no requirement that a person, who solely provides bartending services, must get a state liquor license») y avisa de que las entradas, propinas / gratuities / donativos y los recargos sobre el alcohol pueden ser «venta». Condiciones: el anfitrión compra y es dueño del alcohol; si lo compras tú, solo como su agente, autorizado por escrito, a coste con ticket y sin margen; lo que sobra es suyo; sin cash bar, tickets de copa ni entrada que incluya bebida; factura con el servicio separado de los reembolsos"
+   "nota": "D92 §9 1/7: DRY HIRE = el modelo legal del kit. Missouri lo dice por escrito (Industry Circular 24-01, atc.dps.mo.gov: «There is no requirement that a person, who solely provides bartending services, must get a state liquor license») y avisa de que las entradas, propinas / gratuities / donativos y los recargos sobre el alcohol pueden ser «venta». Condiciones: el anfitrión compra y es dueño del alcohol y lo que sobra es suyo; NO compres tú el alcohol para que te lo reembolse (en MO el dinero por el alcohol o su entrega puede ser venta, y MT exige que lo compre el anfitrión aparte); sin cash bar, tickets de copa ni entrada que incluya bebida (B1 de REVISION-FINAL)"
   },
   "103": {
    "estilo": "Normal",
