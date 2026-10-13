@@ -722,6 +722,32 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-13): Mobile Bar Business Plan Kit, edición inglesa (contenido 2.2) del plan-negocio-cocteleria-
+  // eventos con otro concepto (SPEC business-plans-en-5 D81-D95: dry hire mobile bar + calculadora de precios).
+  // Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'mobile-bar-business-plan': {
+    version: '2.2',
+    updated: '2026-10-13',
+    entries: [
+      {
+        version: '2.2',
+        date: '2026-10-13',
+        title: 'First English edition',
+        changes: [
+          "First English edition of the plan, built from content version 2.2 for a dry hire mobile bar (the host buys the alcohol; the bar brings the bartenders, mixers, garnishes, ice and cups) with a converted bar trailer and a portable bar: a 10-section business plan in Word, an Excel financial model with 9 sheets, a pricing calculator and a startup checklist, set up for the US with notes for the UK.",
+          'The figures in the Word plan are the ones in the example Excel model, so the two documents tell the same story, and the plan says plainly that the example sits in the upper quarter of the market.',
+          'The model runs on events per year, average price per guest (excluding sales tax and alcohol) and average guests per event, with the break-even measured in events per year. Gig marketplace bookings carry their own fee, and client deposits are not counted, which keeps the cash flow on the cautious side.',
+          'Revenue and costs excluding sales tax in the P&L, and a 12-month cash flow that includes the sales tax you collect on the whole invoice and remits it quarterly (an 8% example rate you replace with your state and local rate).',
+          'Payroll with four roles — owner and lead bartender, a part-time second-crew lead bartender, hourly event bartenders and barbacks, all on W-2 payroll — employer payroll taxes, a federal and a state or local minimum wage floor, and a check of the event hours you need against the hours you hire.',
+          'Startup costs with a used bar trailer and its conversion, wrap and bar facade, a portable bar, an inverter generator, glassware and coolers, permits and server certifications, plus a storage unit with trailer parking: no alcohol inventory and no storefront.',
+          'Financing sheet with owner equity and your main loan (bank or SBA 7(a)), amortized with no interest-only period by default and the DSCR checked against a 1.25× target; an SBA Microloan, investors and local grants are listed as other sources of funds, without amortization.',
+          "New pricing calculator: three bar packages (full and limited bar in dry hire, and a licensed full bar), from staff hours, mixers, garnish, ice, cups and mileage to a price per guest and a quote with service charge, sales tax, deposit and balance, with the gross margin calculated and the voluntary gratuity kept off the price; a drinks and shopping list for the host, 10 signature cocktail specs in oz (with ml) and three example quotes.",
+          "68-task startup checklist in 6 phases: business setup (LLC, EIN, seller's permit, business license, dry hire service agreement), trailer and permits (your state's alcohol rules in writing, county health department, venue requirements, DMV, general and liquor liability, workers' comp), equipment, staff (W-2 bartenders and barbacks, alcohol server certification), marketing and the first 90 days.",
+          'No currency symbol in the workbooks (you type amounts in your own currency), and every sheet set up to print on US Letter paper.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

@@ -331,7 +331,9 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Plan Kit (4-oct, segunda tanda) traducen los de Bar-Restaurante y Panadería: los MISMOS 5 nombres.
            'María López', 'Carlos Méndez', 'Laura Fernández', 'Ana García', 'Pedro Gutiérrez',
            # Ídem, Catering Business Plan Kit (11-oct): testimonios del Plan Catering Temático traducidos.
-           'Miguel Hernández']
+           'Miguel Hernández',
+           # Ídem, Mobile Bar Business Plan Kit (13-oct): testimonios del Plan Coctelería de Eventos traducidos.
+           'Laura Manchón', 'María Pino']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

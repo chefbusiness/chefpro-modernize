@@ -61,6 +61,26 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Mobile Bar Business Plan Kit (13-oct-2026, quinta tanda de planes EN): el más nuevo → 1; Catering, Bar, Restaurant,
+  // Bakery, Food Truck y Coffee Shop pasan a 2-7. Sustituye a la tarjeta vieja «Business Plan: Event Bartending / Mobile
+  // Bar», que describía el kit español (9 entregables, 96 proveedores, 71 trámites en España). Imagen: la portada sin
+  // texto del ES de coctelería (plan-cocteleria-eventos-hero: barra portátil en un evento), la que llevaba esa tarjeta.
+  {
+    name: 'Mobile Bar Business Plan Kit',
+    slug: '/plan-negocio-cocteleria-eventos',
+    description: 'Mobile bar business plan template for a dry hire mobile bartending company: a 10-section Word plan, Excel financial projections with startup costs, 3-year P&L, break-even in events per year, cash flow and loan schedule, a per-guest pricing calculator with a shopping list for the host and a 68-task startup checklist.',
+    features: [
+      '10-section business plan in Word',
+      'Pricing calculator: cost per guest to quote + shopping list',
+      'Break-even in events per year, loan schedule and DSCR',
+      "68 tasks: your state's alcohol rules, liquor liability, trailer",
+    ],
+    iconName: 'Martini',
+    image: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'costs', 'bar', 'events', 'mobile-catering', 'business-plan'],
+  },
   // Catering Business Plan Kit (11-oct-2026, cuarta tanda de planes EN): el más nuevo → 1; Bar, Restaurant, Bakery,
   // Food Truck y Coffee Shop pasan a 2-6. Sustituye a la tarjeta vieja «Business Plan: Themed Catering & Kit for Events»,
   // que describía el kit español (11 entregables, 96 proveedores, multi-concepto en España). Imagen: foto sin texto del
@@ -519,22 +539,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['pdf', 'guides', 'dark-kitchen'],
-  },
-  {
-    name: 'Business Plan: Event Bartending / Mobile Bar',
-    slug: '/plan-negocio-cocteleria-eventos',
-    description: 'Complete professional kit for launching your mobile cocktail bar business in Spain: 10-section DOCX + Excel Financial Plan + Pricing Calculator + 96 suppliers + Equipment catalog + 15 cocktails + 10 experiences + Contract template + Checklist of 71 procedures.',
-    features: [
-      '9 professional deliverables (~6,600 words)',
-      'Excel Financial Plan with event seasonality',
-      'Per-event Pricing Calculator + 96 suppliers',
-      '15 themed cocktails + 10 premium experiences',
-    ],
-    iconName: 'Wine',
-    image: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['business-plan', 'cocktails', 'events', 'mobile-catering'],
   },
   {
     name: 'Business Plan: Grill Catering for Events',

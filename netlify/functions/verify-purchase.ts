@@ -391,6 +391,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-13): gemelo de plan-negocio-cocteleria-eventos, producto independiente con su propio acceso
+  // (mismo patrón que catering-business-plan).
+  'mobile-bar-business-plan': {
+    accessPath: '/en/digital-products/mobile-bar-business-plan/access',
+    emailSubject: 'Your access to Mobile Bar Business Plan Kit',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>Mobile Bar Business Plan Kit</strong> is ready. Click the button to open your dashboard and download the 10-section Word business plan, the Excel financial projections, the pricing calculator with a shopping list for the host and the 68-task startup checklist:',
+    emailCta: 'Access my business plan',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',
