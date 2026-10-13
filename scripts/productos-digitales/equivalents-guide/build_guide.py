@@ -58,8 +58,20 @@ def run(p, text, font=None, size=None, color=None, bold=None, italic=None):
     return r
 
 
+LINK = re.compile(r'\[([^\]]+)\]\(((?:https?|mailto):[^)]+)\)')
+
+
 def rich(p, text, size=None, color=None):
-    """Texto con **negrita** en línea."""
+    """Texto con **negrita** y [enlaces](url) en línea (los enlaces van fuera de la negrita)."""
+    pos = 0
+    for m in LINK.finditer(text):
+        _bold(p, text[pos:m.start()], size, color)
+        hyperlink(p, m.group(1), m.group(2), size=size)
+        pos = m.end()
+    _bold(p, text[pos:], size, color)
+
+
+def _bold(p, text, size, color):
     for i, part in enumerate(re.split(r'\*\*', text)):
         if part:
             run(p, part, size=size, color=color, bold=True if i % 2 else None)
@@ -313,7 +325,7 @@ def build():
     p = para(doc, align=WD_ALIGN_PARAGRAPH.CENTER)
     run(p, meta['legal_title'], 'Georgia', 14, INK, True)
     p = para(doc, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-    run(p, meta['legal'], size=9, color=GRAY)
+    rich(p, meta['legal'], size=9, color=GRAY)
     p = para(doc, align=WD_ALIGN_PARAGRAPH.CENTER, after=18)
     run(p, meta['copyright'], 'Calibri', 9, GOLD, False)
     p = para(doc, align=WD_ALIGN_PARAGRAPH.CENTER, before=12)
@@ -413,6 +425,13 @@ def check():
     m = EXTRA_ES.search(limpio)
     if m:
         errors.append('palabra española %r: %r' % (m.group(0), limpio[max(0, m.start() - 40):m.end() + 40]))
+    if '](' in txt_all or '**' in txt_all:
+        errors.append('marcado sin convertir ([..](..) o **)')
+    targets = [r.target_ref for r in d.part.rels.values() if r.reltype.endswith('/hyperlink')]
+    for must in ('https://johnguerrero.es', 'mailto:info@aichef.pro', 'https://aichef.pro/en/digital-products'):
+        if must not in targets:
+            errors.append('falta el enlace ' + must)
+    print('hiperenlaces:', len(targets))
     if '€' in txt_all:
         errors.append('símbolo €')
     if '£' in txt_all:

@@ -99,14 +99,40 @@
 
 ## Dejado como «check…» (no confirmado en fuente oficial abierta)
 
-- UK: tiempo de enfriamiento (los 90 min de las notas del HACCP Kit no salen en gov.uk; el docx dice «cool as quickly as
-  possible to 8 °C» + método SFBB). Formación legal del personal (se remite a la FSA).
+- UK: tiempo de enfriamiento — resuelto en la ronda de arreglos: el SFBB no da cifra; el docx cita los 90 min como objetivo
+  de muchos councils (Torbay). Formación legal del personal (se remite a la FSA).
 - Canadá: límites vinculantes de frío, caliente y enfriamiento (provinciales; se dan los de Health Canada como consejo
   general); PST sobre comidas de restaurante por provincia; umbral de small supplier; certificación de food handler;
   tamaños de servicio de alcohol; impuestos provinciales de salud del empleador.
-- Australia: temperatura de cocción; standard drink y medida de barra; tipo del super; umbral del payroll tax estatal;
+- Australia: (cocción resuelta con healthdirect, como orientación) standard drink y medida de barra; tipo del super; umbral del payroll tax estatal;
   propinas y recargos (ACCC).
 - EE. UU.: meals tax estatal o municipal; tarjetas de food handler por estado; permisos de evento por estado.
+
+## Ronda de arreglos tras la revisión adversarial (13-oct, `REVISION-EQUIVALENTS.md`: 4 MAYOR + 13 MENOR aplicados)
+
+| Dato nuevo del docx | URL abierta |
+|---|---|
+| M1 · Canadá: cerveza de barril solo por pinta imperial (568 ml, 20 fl oz imperiales), fl oz imperial o ml; prohibida la pinta US de 16 oz; «pint» no describe un vaso (norma federal) | https://ised-isde.canada.ca/site/measurement-canada/en/node/614 |
+| M2 · Australia: casual loading del 25 % (Hospitality Award, cl. 11.1) | https://awards.fairwork.gov.au/MA000009.html (HTML ya descargado, cl. 11.1 leída) |
+| M3 · UK: business rates en casi todo local no doméstico (pubs incluidos), factura del council, posibles reliefs | https://www.gov.uk/introduction-to-business-rates |
+| M3 · NNN/CAM, additional rent/TMI, outgoings | jerga de arrendamiento (como el glosario); en los planes, `0. Assumptions!C24` |
+| M4 · Cuchara australiana 20 ml (4 tsp), taza métrica australiana 250 ml; NA, NZ y UK 15 ml | uso culinario, no dato legal: tabla de conversiones de Penguin Australia, https://cdn2.penguin.com.au/content/resources/bake-with-brooki-conversions-page.pdf (PDF leído). Tbsp US = 1/2 fl oz = 14,79 ml (NIST HB44 App. C) |
+| m1 · UK, enfriamiento: el método SFBB «Chilling down hot food» de la FSA NO da tiempo (PDF leído entero: «as quickly as possible»); el council de Torbay: «aim to cool foods to below 8°C within 90 minutes» | https://assets.publishing.service.gov.uk/media/69c52dac471d520038d0f6c1/fsa-sfbb-chinese-cuisine-chilling_1.pdf · pack: https://www.gov.uk/government/publications/safer-food-better-business-for-caterers · https://www.torbay.gov.uk/business/food-safety/controlling-food-temperatures/ |
+| m4 · UTR de 10 dígitos al registrarse en Self Assessment o crear una Ltd | https://www.gov.uk/find-utr-number |
+| m6 · FUTA: «credit reduction state» → crédito reducido y más FUTA | https://www.irs.gov/taxtopics/tc759 |
+| m7 · Siempre al tipo estándar: confitería (salvo pasteles y algunas galletas), patatas fritas de bolsa y snacks salados, bebidas (refrescos) — VAT Notice 701/14 §2.2, 3.6-3.8 | https://www.gov.uk/guidance/food-products-and-vat-notice-70114 |
+| m8 · Australia: aves y carnes picadas o enrolladas a ≥ 75 °C (orientación, no límite legal) | https://www.healthdirect.gov.au/food-safety |
+| m10 · UK: vacaciones con tope de 28 días; horas irregulares acumulan según las horas trabajadas | https://www.gov.uk/holiday-entitlement-rights |
+| m13 · CPP: la empresa aporta lo mismo que deduce (ya estaba en FUENTES; ahora también en §10) | https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp.html |
+
+Sin fuente propia (jerga, no dato legal): «tronc»/«troncmaster», «average spend»/«spend per head», «shallots» en NSW,
+°F en hornos canadienses y lb en proveedores canadienses (propuestas del revisor).
+
+## Mantenimiento
+
+- `https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027` caduca con el año fiscal (abril de 2027):
+  sustituirla por la del año siguiente en `contenido.json` §10 y regenerar.
+- Revisar cada octubre: Food Code (nueva edición), lista de alérgenos, tips code UK, TEN, Award (cl. 11.1, 28.4, 29).
 
 ## Vocabulario (secciones 2 y 3) y punteros por kit
 
