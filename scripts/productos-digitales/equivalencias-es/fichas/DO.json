@@ -1,0 +1,104 @@
+{
+  "codigo": "DO",
+  "pais": "República Dominicana",
+  "moneda": "peso dominicano (DOP)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El impuesto que grava la venta en restaurantes es el ITBIS (impuesto sobre transferencias de bienes industrializados y servicios), con tipo general del 18 %. Además existe el ISC (impuesto selectivo al consumo), que recae sobre las bebidas alcohólicas con un 10 % del precio de venta al público y lo pagan sobre todo importadores y fabricantes. Si tu plantilla trae el IVA español del 10 %, sustitúyelo por el 18 % de ITBIS. Comprueba con tu contador si tu carta lleva el impuesto incluido.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — República Dominicana, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/dominican-republic/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina legal es del 10 % y se añade a la cuenta del cliente en restaurantes, bares, cafés y hoteles donde se consume en el local; la base es el artículo 228 del Código de Trabajo (Ley 16-92). Ese dinero no es ingreso del negocio: se reparte íntegramente entre los trabajadores que prestaron el servicio. Según Proconsumidor no se cobra en pedidos para llevar o a domicilio, aunque hay un proyecto de reforma laboral en discusión; revisa su estado antes de fijar tu política de cobro.",
+      "fuentes": [
+        {
+          "titulo": "El Nuevo Diario — Derecho a la propina en la República Dominicana",
+          "url": "https://elnuevodiario.com.do/derecho-a-la-propina-en-la-republica-dominicana/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud Pública, a través de la DIGEMAPS (Dirección General de Medicamentos, Alimentos y Productos Sanitarios), bajo la Ley General de Salud 42-01 y el Reglamento 528-01 sobre control de riesgos en alimentos y bebidas. No he podido abrir una guía oficial que detalle el permiso exacto para restaurantes ni si exigen HACCP o buenas prácticas de manufactura. Consulta con la DIGEMAPS o con la dirección provincial de salud qué programa de higiene presentar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "No he podido confirmar con una fuente abierta que exista un carné nacional obligatorio de manipulador de alimentos en República Dominicana, ni qué entidad lo emitiría y con qué vigencia. En la práctica, muchos locales piden a su personal una evaluación médica y una capacitación en higiene alimentaria. Antes de contratar, pregunta en la dirección provincial de salud o en la DIGEMAPS qué documentos de tu personal van a revisar en una inspección.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Para abrir un restaurante suele hacer falta constituir la empresa y registrarla en el Registro Mercantil de la cámara de comercio de tu provincia, obtener el RNC en la DGII, el permiso sanitario del Ministerio de Salud Pública, el permiso de uso de suelo y de la alcaldía (ayuntamiento) y el visto bueno del cuerpo de bomberos. No he confirmado la lista exacta en fuente oficial, así que valida cada trámite con tu ayuntamiento.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "No he podido confirmar con fuente abierta el permiso exacto para vender alcohol en República Dominicana, ni qué restricciones horarias o de ley seca se aplican de forma general. Lo habitual es que dependa de la alcaldía y de la normativa sanitaria y de espectáculos. Pregunta en tu ayuntamiento si necesitas un permiso específico para servir bebidas alcohólicas y confirma los horarios de cierre permitidos en tu municipio antes de planificar el turno de noche.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "La DGII reconoce como personas jurídicas, bajo la Ley 479-08 modificada por la Ley 31-11, la sociedad anónima (SA), la sociedad anónima simplificada (SAS), la sociedad de responsabilidad limitada (SRL) y la empresa individual de responsabilidad limitada (EIRL). Para negocios pequeños existe además el RST, Régimen Simplificado de Tributación, con modalidad por ingresos o por compras y topes que se actualizan; no he podido leer sus condiciones, confírmalas en la DGII.",
+      "fuentes": [
+        {
+          "titulo": "DGII — Personas jurídicas",
+          "url": "https://dgii.gov.do/contribuyentesRegistrados/personasJuridicas",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada ordinaria máxima es de 44 horas semanales y 8 diarias (artículo 147 del Código de Trabajo); lo que exceda se paga como hora extra con recargo. Existe la regalía pascual, equivalente a la doceava parte del salario ordinario del año, que se paga antes del 20 de diciembre. Las vacaciones son de 14 días tras un año de servicio. La seguridad social se gestiona mediante la TSS (Tesorería de la Seguridad Social).",
+      "fuentes": [
+        {
+          "titulo": "Siempre al Día — Código de Trabajo Dominicano: guía para contadores",
+          "url": "https://siemprealdia.co/republica-dominicana/derecho-laboral/codigo-de-trabajo-dominicano-guia-para-contadores/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "En compras se mezclan kilos con libras: la «libra» se usa de cara al consumidor y el «quintal» equivale a 100 libras. El «galón» se usa para aceite, agua y combustible; no he podido confirmar si el galón dominicano coincide con el estadounidense de 3,785 litros, así que pregunta al proveedor y pésalo una vez. En barras se usan onzas. Las botellas, cajas y fundas completan los formatos de compra. La temperatura se expresa en °C.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "Las apps de reparto habituales son PedidosYa y Uber Eats, con propuestas locales de menor tamaño. En el local conviven el efectivo, la tarjeta de crédito y débito y las transferencias bancarias entre cuentas locales, que muchos clientes hacen desde la app del banco. Las propinas digitales no sustituyen la propina legal en consumo en sala. Antes de elegir plataforma, pregunta a otros restaurantes de tu zona qué comisión real les cobran y qué cobertura de reparto ofrecen.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Los apoyos son de ámbito público y su oferta cambia con frecuencia: el Ministerio de Industria, Comercio y Mipymes (MICM) concentra programas para micro, pequeñas y medianas empresas, y existen líneas de financiación y capacitación como Promipyme y la Banca Solidaria. No he podido abrir una página oficial que confirme los programas vigentes, así que revisa en el MICM qué convocatorias están abiertas antes de contar con ellos en tu plan.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos más comunes son el «comedor» o «fonda» de comida criolla (plato del día con arroz, habichuelas y carne, equivalente al bar de menú del día), el «colmado» (tienda de barrio con bebidas y picoteo, cercano al bar-tienda español), el «chimi» o carrito de chimichurri (hamburguesa dominicana callejera), la «pica pollo» (pollería frita rápida), la cafetería y el «comedor» de almuerzo ejecutivo, y el restaurante de mariscos del malecón.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA español por el ITBIS del 18 % en la casilla de parámetros fiscales. Añade la propina legal del 10 % como cargo aparte, no como ingreso de la empresa. Cambia el convenio de hostelería por el Código de Trabajo dominicano y suma la regalía pascual a la partida de personal. Los costes de seguridad social los gestiona la TSS. El plan APPCC se presenta como programa de higiene ante el Ministerio de Salud Pública.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«colmado» no es una tienda de ultramarinos sino el colmado de barrio con bebidas, hielo y comida rápida",
+    "«chimi» es una hamburguesa callejera dominicana, no una salsa",
+    "«guagua» es el autobús, no un niño pequeño",
+    "«funda» es una bolsa de plástico",
+    "«habichuelas» son las alubias o judías cocidas, base de la «bandera»"
+  ]
+}

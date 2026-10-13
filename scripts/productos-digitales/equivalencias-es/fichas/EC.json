@@ -1,0 +1,128 @@
+{
+  "codigo": "EC",
+  "pais": "Ecuador",
+  "moneda": "dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA en Ecuador se aplica con tarifa general del 15 % (tarifas del 15 % o 0 %, listadas por ley), vigente desde abril de 2024. Grava la restauración con el tipo general; no he podido confirmar si hay reducciones temporales para turismo, así que consulta al SRI antes de aplicarlas. Cambia en tu plantilla el IVA español del 10 % por el 15 %. Verifica en el SRI si tu carta debe mostrar el precio con IVA incluido.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Ecuador, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/ecuador/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "Existe un 10 % adicional sobre los consumos, creado por decreto en 1971, que actúa como regulador de las propinas de los trabajadores de hoteles, bares y restaurantes de lujo, primera y segunda categoría. Debe desglosarse en la factura y se reparte a los trabajadores bajo el Código del Trabajo. Confirma con el Ministerio de Turismo si tu categoría actual está sujeta, porque la clasificación de establecimientos cambió.",
+      "fuentes": [
+        {
+          "titulo": "Derecho Ecuador — Registro Oficial 5 de junio de 2006 (acuerdo sobre el 10 % adicional)",
+          "url": "https://derechoecuador.com/registro-oficial-5-de-junio-del-2006-suplemento/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es ARCSA (Agencia Nacional de Regulación, Control y Vigilancia Sanitaria), que emite el permiso de funcionamiento de los establecimientos de alimentos bajo la Ley Orgánica de Salud. Operar sin permiso conlleva una multa de 3 a 5 salarios básicos y el incumplimiento de condiciones higiénicas una multa mayor, además de posible clausura. ARCSA evalúa el cumplimiento de buenas prácticas de manufactura (BPM), no HACCP; confirma la guía vigente.",
+      "fuentes": [
+        {
+          "titulo": "El Diario — ARCSA móvil y controles (abril 2026)",
+          "url": "https://www.eldiario.ec/ecuador/la-denuncia-ciudadana-a-traves-de-arcsa-movil-representa-el-40-de-nuestros-controles-dice-la-coordinadora-de-la-zona-4-de-la-entidad-03042026/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "No he podido abrir la normativa de ARCSA que fije un carné de manipulador. Lo habitual es que ARCSA y los municipios pidan capacitación en higiene y manipulación de alimentos para dueños y personal, y un certificado médico. Pregunta en tu zona de ARCSA qué cursos reconoce, quién los dicta y qué vigencia tienen, y guarda las constancias del equipo para las inspecciones.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los municipios piden para la LUAF (licencia única anual de funcionamiento) el registro de turismo, la patente municipal, el uso de suelo y el permiso de bomberos, además del RUC o RIMPE; la emite el municipio, y el Ministerio de Turismo fija la tasa y el registro. En Quito la figura se llama LUAE. El permiso de ARCSA se tramita aparte. Los requisitos varían por cantón.",
+      "fuentes": [
+        {
+          "titulo": "Gob.ec — Licencia única anual de funcionamiento turismo (GAD Milagro)",
+          "url": "https://www.gob.ec/gadmm/tramites/obtencion-licencia-unica-anual-funcionamiento-turismo",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "No he podido confirmar con fuente abierta el permiso exacto para vender alcohol en Ecuador. Normalmente depende del municipio y del Ministerio de Turismo según el tipo de establecimiento, con restricciones de horario y venta en fechas de elecciones, que se anuncian oficialmente. Consulta en tu municipio si tu licencia de funcionamiento cubre la venta de bebidas alcohólicas o requiere un permiso específico.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Para un pequeño negocio se usan la compañía de responsabilidad limitada, la S.A.S. y la persona natural con RUC. Como régimen simplificado existe el RIMPE, con dos categorías: «negocios populares» (ingresos anuales de hasta 20.000 dólares, con renta según tramos) y «emprendedores»; los límites se actualizan. Un restaurante pequeño suele encajar en RIMPE; confirma tus topes y obligaciones en el SRI.",
+      "fuentes": [
+        {
+          "titulo": "Siigo Ecuador — RIMPE: emprendedores y negocios populares",
+          "url": "https://www.siigo.com/ec/blog/obligaciones-fiscales/rimpe-emprendedores-negocios-populares/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada máxima es de 8 horas diarias y 40 semanales (artículo 47 del Código del Trabajo). Hay décimo tercer sueldo (un doceavo de lo ganado en el año, pagadero hasta el 24 de diciembre), décimo cuarto sueldo (un salario básico unificado, a pagar en marzo en la Costa o agosto en la Sierra), fondos de reserva desde el mes 13 y afiliación al IESS desde el primer día.",
+      "fuentes": [
+        {
+          "titulo": "HacEcuentas — Décimos y fondos de reserva Ecuador 2026",
+          "url": "https://hacecuentas.com/ec/trabajo/decimos-y-fondos-de-reserva",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Cazvid — Cómo contratar personal en Ecuador",
+          "url": "https://cazvid.com/es/blog/como-contratar-personal-en-ecuador-guia-legal",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Se compra por libra, kilo y quintal; la libra tradicional ecuatoriana ronda los 460 gramos (la arroba son 25 libras, unos 11,5 kg, y el quintal 100 libras, unos 46 kg), distinta de la libra de 500 g colombiana, y el comercio puede usar la libra anglosajona. El galón se usa para combustible. El dólar es la moneda. Pesa siempre en kilos y fija la libra con tu proveedor para evitar diferencias de costes.",
+      "fuentes": [
+        {
+          "titulo": "Store norske leksikon — Mynt, mål og vekt i Ecuador",
+          "url": "https://snl.no/mynt,_m%C3%A5l_og_vekt_i_Ecuador",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "En reparto operan PedidosYa y Rappi; Uber Eats ha cambiado su presencia, así que no la des por hecha. Se usan efectivo, tarjetas, transferencias bancarias y la billetera DeUna con códigos QR. Como la economía está dolarizada, los precios van en dólares y se evitan conversiones. Pregunta a otros locales de tu ciudad qué comisión real cobran las plataformas y qué zonas cubren, antes de decidir con cuál operar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre las opciones públicas están la Corporación Financiera Nacional (CFN B.P.) y BanEcuador, que ofrecen crédito a pymes y emprendedores, y las ventanillas de emprendimiento del Ministerio de Producción. No he podido abrir sus páginas oficiales para confirmar líneas y condiciones vigentes. Consulta los productos activos antes de incluirlos en tu plan, y no des por hecho que la financiación estará disponible en tu cantón.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos habituales: la «picantería» (comida tradicional de la Sierra, equivalente al mesón), la «hueca» (local pequeño y popular con comida casera), la «cevichería» costera, el «chifa» (restaurante de comida china adaptada, muy extendido), el salón de comidas y el «restaurante de almuerzos» con menú del día, o «almuerzo ejecutivo». Los «encebollados» se sirven sobre todo por la mañana en la costa.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el 15 % en la casilla de parámetros fiscales. Añade el 10 % adicional sobre consumos como cargo aparte si tu categoría lo exige. Sustituye el convenio de hostelería por el Código del Trabajo e incluye los décimos tercero y cuarto y los fondos de reserva en la partida de personal. Presenta el plan APPCC como programa de BPM conforme a ARCSA. Pon precios en dólares y usa la libra de unos 460 g.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«chifa» es un restaurante de comida china adaptada, no una persona",
+    "«encebollado» es una sopa de pescado con cebolla, típica de la costa",
+    "«ñaño» es hermano o amigo cercano",
+    "«chuchaqui» es la resaca",
+    "«hueca» es un local popular de comida casera, no un agujero",
+    "«libra» ronda los 460 g, no 500 g"
+  ]
+}
