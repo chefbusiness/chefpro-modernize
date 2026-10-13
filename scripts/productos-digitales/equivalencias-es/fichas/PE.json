@@ -1,0 +1,129 @@
+{
+  "codigo": "PE",
+  "pais": "Perú",
+  "moneda": "sol peruano (PEN)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "La restauración paga el IGV, con tipo general del 18 % (que incluye el Impuesto de Promoción Municipal, IPM). Si eres micro o pequeña empresa (MYPE) y los restaurantes, hoteles o alojamientos suponen al menos el 70 % de tus ingresos, tienes un IGV reducido: 8 % en 2026 y 12 % en 2027, más el IPM. Hay topes de ventas y exclusiones para empresas vinculadas. Confirma el tipo exacto en SUNAT antes de fijar precios.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Perú, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/peru/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "La Cámara — Reducción del IGV a 8 % para restaurantes, hoteles y alojamientos",
+          "url": "https://lacamara.pe/reduccion-de-igv-a-8-para-restaurantes-hoteles-y-alojamientos-todo-lo-que-hay-que-saber/?print=pdf",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "Existe el «recargo al consumo», un cargo de hasta el 10 % sobre la cuenta que algunos restaurantes aplican para repartir entre el personal; su origen se cita en la Ley 14701, aunque su regulación actual es poco clara. Si lo cobras, anúncialo con claridad en la carta y en el exterior del local, junto con la lista de precios que Indecopi exige. Consulta a Indecopi o a tu asesor antes de aplicarlo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La referencia es la Norma Sanitaria para Restaurantes y Servicios Afines (NTS N.° 142-MINSA/2018/DIGESA, aprobada por la RM 822-2018/MINSA). Es un marco de buenas prácticas e higiene, no el HACCP español. La vigilancia sanitaria la ejercen la autoridad de salud (DIGESA a nivel nacional y las direcciones regionales) y las municipalidades. Pregunta en tu municipalidad distrital qué te pedirán en la inspección y cómo documentar tu plan de higiene.",
+      "fuentes": [
+        {
+          "titulo": "LP Derecho — Indecopi y la exigencia del carné de sanidad (cita la RM 822-2018/MINSA)",
+          "url": "https://lpderecho.pe/indecopi-declara-ilegal-exigencia-portar-carne-sanidad-municipal-manipular-alimentos-resolucion-0247-2025-sel-indecopi/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "El «carné de sanidad» lo emiten muchas municipalidades (suele costar poco y vencer a los seis meses o al año), y todavía se fiscaliza. Pero Indecopi ha declarado ilegal que una municipalidad lo exija como condición para trabajar, y la norma sanitaria sí pide que el personal esté capacitado en manipulación de alimentos. Lo prudente: capacita a tu equipo, guarda los registros y pregunta a tu municipalidad si te lo reclamará.",
+      "fuentes": [
+        {
+          "titulo": "LP Derecho — Indecopi declara ilegal exigir el carné de sanidad municipal",
+          "url": "https://lpderecho.pe/indecopi-declara-ilegal-exigencia-portar-carne-sanidad-municipal-manipular-alimentos-resolucion-0247-2025-sel-indecopi/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "La licencia de funcionamiento la da la municipalidad distrital del local y se rige por el TUO de la Ley 28976. La seguridad se acredita con la ITSE (Inspección Técnica de Seguridad en Edificaciones, DS 002-2018-PCM): en riesgo bajo o medio la licencia sale primero y la inspección llega después; en riesgo alto o muy alto, antes. El certificado de ITSE dura dos años. Tu municipalidad fija el nivel de riesgo y la tasa en su TUPA.",
+      "fuentes": [
+        {
+          "titulo": "Perú Gestiona — Licencia de funcionamiento 2026",
+          "url": "https://perugestiona.pe/?p=589",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "La venta de alcohol se rige por la Ley 28681 y su reglamento. La licencia de funcionamiento la da el distrito, pero los horarios de venta los fija la municipalidad provincial, y Indecopi ha anulado restricciones horarias impuestas por distritos sin competencia. Antes de abrir, consulta la ordenanza provincial de tu ciudad y asegúrate de que tu licencia incluya la venta de bebidas alcohólicas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Las formas habituales son la persona natural con negocio, la E.I.R.L. (empresa individual de responsabilidad limitada) y la S.A.C. (sociedad anónima cerrada). Todas se inscriben en el RUC de SUNAT. Como equivalente al autónomo hay cuatro regímenes: Nuevo RUS (NRUS), Régimen Especial de Renta (RER), Régimen MYPE Tributario y Régimen General. Los topes cambian cada año, así que revísalos en SUNAT o con un contador antes de elegir.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada máxima es de 8 horas diarias o 48 semanales. En el régimen general hay dos gratificaciones al año (julio y diciembre), cada una de un sueldo más una bonificación del 9 %, la CTS (compensación por tiempo de servicios, depositada en mayo y noviembre), 30 días de vacaciones y EsSalud. La Ley 32353 reduce beneficios para micro y pequeña empresa (por ejemplo, 15 días de vacaciones); verifícalo con REMYPE y tu asesor.",
+      "fuentes": [
+        {
+          "titulo": "La Cámara — Derechos laborales en Perú",
+          "url": "https://lacamara.pe/derechos-laborales-en-peru-beneficios-que-debes-recibir-si-trabajas-formalmente/?print=pdf",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Misha — Régimen laboral de la MYPE, Ley 32353",
+          "url": "https://misha.pe/laboral/regimen-laboral-mype-peru/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "En el comercio se usa sobre todo el kilo, pero las unidades tradicionales siguen apareciendo: la «libra» equivale a unos 460 g (no los 453,6 g anglosajones), la «arroba» son 25 libras, es decir, unos 11,5 kg, y el «quintal» son 100 libras, unos 46 kg. También se compra por «docena», «ciento», «saco», «jaba» y «caja». Las temperaturas se dan en °C. Confirma con tu proveedor cuál usa en su lista.",
+      "fuentes": [
+        {
+          "titulo": "Wikipedia — Peruvian units of measurement",
+          "url": "https://en.wikipedia.org/wiki/Peruvian_units_of_measurement",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "En reparto dominan Rappi y PedidosYa; comprueba cuáles operan en tu ciudad y la comisión real de cada una. Se paga con efectivo, tarjetas (POS) y, de forma masiva incluso en negocios pequeños, con las billeteras Yape y Plin mediante QR o número de celular. Acepta Yape o Plin desde el principio, porque muchos clientes ya no llevan efectivo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "El Ministerio de la Producción (PRODUCE) agrupa programas de formalización y apoyo a la empresa, como Tu Empresa, y financia innovación a través de Innóvate Perú. COFIDE, el banco de desarrollo, canaliza fondos de garantía y crédito para MYPE, como el Fondo CRECER. Las convocatorias abren y cierran, y algunos programas nacieron por el COVID, así que comprueba en sus portales cuáles siguen vigentes antes de contarlos en tu plan.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: la «cevichería» o «cebichería» (pescado y marisco crudo marinado, abre sobre todo de día), la «picantería» (cocina criolla de Arequipa y regiones), el «chifa» (cocina chino-peruana), la «pollería» (pollo a la brasa), la «anticuchería» (brochetas de corazón), el «huarique» (local pequeño y popular de comida casera) y el restaurante de «menú» (almuerzo de entrada, segundo y bebida a precio fijo, equivalente al menú del día). El «chifa» es un género propio, no un restaurante chino.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA del 10 % por el IGV: 18 %, o el tipo reducido MYPE si cumples los requisitos, más el IPM, y decide cómo tratarás el recargo al consumo. Cambia el convenio de hostelería por el régimen laboral que te corresponda, con gratificaciones y CTS en el coste de personal. Presenta el APPCC como plan de higiene conforme a la Norma Sanitaria para Restaurantes. Usa la libra de 460 g al convertir recetas.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«palta» es el aguacate",
+    "«choclo» es una mazorca de maíz tierno de grano grande",
+    "«ají» es el chile o guindilla, y hay muchas variedades (amarillo, panca, rocoto)",
+    "«menú» es el almuerzo económico de precio fijo, no la carta",
+    "«chifa» es la cocina chino-peruana, no un restaurante chino",
+    "«causa» es un plato frío de papa amarilla, no una causa judicial",
+    "«mozo» es el camarero",
+    "«anticucho» es una brocheta de corazón de res"
+  ]
+}

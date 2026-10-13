@@ -1,0 +1,161 @@
+{
+  "codigo": "CL",
+  "pais": "Chile",
+  "moneda": "peso chileno (CLP)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "La restauración paga el IVA general del 19 %, con el sistema de débito y crédito fiscal mensual: puedes descontar el IVA de tus compras. Sobre las bebidas alcohólicas y algunas bebidas azucaradas hay además un impuesto adicional, con tipos entre el 10 % y el 50 % según el producto. Si usas una plantilla española con IVA del 10 %, cambia ese parámetro por el 19 % y revisa el impuesto adicional si vendes alcohol.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Chile, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/chile/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina del 10 % es voluntaria: en locales con atención de garzones (restaurantes, bares, cafés) debes preguntar a todos los clientes si quieren añadirla, sugiriendo al menos el 10 %, y la sugerencia debe aparecer desagregada en la cuenta, nunca incluida en el total. Es un beneficio adicional para los trabajadores, no parte de su sueldo: ellos deciden cómo repartirla y tú no puedes retener parte ni intervenir.",
+      "fuentes": [
+        {
+          "titulo": "SERNAC — Propina del 10 % en restaurantes",
+          "url": "https://www.sernac.cl/604/w3-article-81623.html",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "Las SEREMI de Salud (secretarías regionales ministeriales) otorgan la autorización sanitaria tras evaluar cocina, agua potable, cadena de frío, residuos, ventilación e higiene. La norma de referencia es el Reglamento Sanitario de los Alimentos (DS 977 de 1996), que exige buenas prácticas de manufactura, no el HACCP español. Revisa los requisitos antes de construir o reformar el local y confirma con la SEREMI de tu región.",
+      "fuentes": [
+        {
+          "titulo": "Lofwork — Cómo abrir un restaurante en Chile",
+          "url": "https://www.lofwork.cl/abrir-un-restaurante-en-chile/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "No he podido confirmar un carné nacional único y obligatorio. En la práctica circulan cursos de «manipulación de alimentos», algunos gratuitos de las SEREMI y otros de pago en centros acreditados, y se citan vigencias de unos dos años, aunque las fuentes difieren. Lo prudente es formar y certificar a tu equipo y guardar los comprobantes. Pregunta en la SEREMI de tu región qué documento revisan en la inspección.",
+      "fuentes": [
+        {
+          "titulo": "Minsal — Seremi de Salud Los Ríos, taller de manipulación de alimentos",
+          "url": "https://www.minsal.cl/seremi-de-salud-los-rios-realizo-taller-de-manipulacion-de-alimentos-para-mas-de-120-personas-en-la-union/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "El orden habitual es: iniciar actividades en el SII (el giro de restaurantes es el código 561000), comprobar que el uso de suelo permite la actividad, obtener la patente comercial municipal para esa dirección y ese giro, y tramitar la autorización sanitaria de la SEREMI de Salud. Si vendes alcohol, necesitas además una patente de alcoholes. El orden exacto entre patente y autorización sanitaria varía, así que confírmalo con tu municipalidad.",
+      "fuentes": [
+        {
+          "titulo": "Lofwork — Cómo abrir un restaurante en Chile",
+          "url": "https://www.lofwork.cl/abrir-un-restaurante-en-chile/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "La patente de alcoholes la otorga la municipalidad y se rige por la Ley 19.925, que distingue categorías por letra: los restaurantes diurnos y nocturnos con venta de alimentos forman una categoría propia, distinta de botillerías o bares, que son limitadas por comuna. Hay cupos, restricciones de ubicación y de horario. Consulta en tu municipalidad qué categoría necesitas y si hay cupo antes de firmar el arriendo.",
+      "fuentes": [
+        {
+          "titulo": "ACHM — Ley 19.925 sobre alcoholes",
+          "url": "https://www.achm.cl/uploads/docs/ley-19-925-alcoholes-a3f83ee7.pdf",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Lofwork — Cómo abrir un restaurante en Chile",
+          "url": "https://www.lofwork.cl/abrir-un-restaurante-en-chile/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Para un restaurante con socios o inversión suele convenir una S.p.A. (sociedad por acciones); también existen la persona natural y la E.I.R.L. Todas inician actividades en el SII. Como equivalente al régimen simplificado está el Régimen Pro Pyme, con dos variantes (14 D3, general, y 14 D8, transparente), con límites de ingresos en UF. Confirma tu encaje y los plazos para cambiar de régimen en el SII o con un contador.",
+      "fuentes": [
+        {
+          "titulo": "Lofwork — Cómo abrir un restaurante en Chile",
+          "url": "https://www.lofwork.cl/abrir-un-restaurante-en-chile/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "SII — Declaración jurada del régimen Pro Pyme",
+          "url": "https://www.sii.cl/preguntas_frecuentes/ddjj/001_135_8928.htm",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La Ley 21.561 reduce la jornada semanal máxima por etapas: 44 horas desde el 26 de abril de 2024, 42 horas desde el 26 de abril de 2026 y 40 horas desde el 26 de abril de 2028. Además de las cotizaciones (AFP, salud en Fonasa o Isapre y seguro de cesantía), existe la gratificación legal, que puede pagarse como el 25 % de la remuneración con tope anual. Confirma con la Dirección del Trabajo cómo te aplica.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio del Trabajo — Ley 40 horas, calendario",
+          "url": "https://www.mintrab.gob.cl/mesa-de-reactivacion-laboral-2/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Chile, otros impuestos (seguridad social)",
+          "url": "https://taxsummaries.pwc.com/chile/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "Chile usa el sistema métrico: se compra por kilo, litro, caja, saco, bandeja y unidad, y las temperaturas van en °C. En la carta, las bebidas se venden por «copa», «jarra» o «botella», y la cerveza, por «schop» (un vaso de cerveza de barril) o botellín. No hay unidades tradicionales relevantes en hostelería, pero pregunta a tu proveedor el formato exacto del envase, que cambia entre mayoristas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto operan Uber Eats, PedidosYa y Rappi; comprueba cuáles llegan a tu comuna y su comisión real. Se paga con tarjetas de débito y crédito (Redcompra, Transbank), transferencia bancaria y billeteras como Mercado Pago o Mach, además del efectivo. Pregunta a tu proveedor de terminal de pago por la comisión por tarjeta y calcula ese coste en tus precios.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Sercotec, agencia de fomento productivo para micro y pequeñas empresas, ofrece fondos concursables como Capital Semilla Emprende (para formalizar y entrar al mercado) y Crece (inversión para un negocio ya existente). CORFO, institución pública de fomento, ofrece programas, créditos y garantías para emprendedores y pymes. FOSIS ofrece microcrédito y el programa Emprendamos. Las convocatorias abren y cierran, así que consulta fechas y requisitos en sus portales.",
+      "fuentes": [
+        {
+          "titulo": "Sercotec",
+          "url": "https://www.sercotec.cl",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "CORFO",
+          "url": "https://www.corfo.gob.cl/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "FOSIS",
+          "url": "https://www.fosis.gob.cl/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: la «picada» (local popular de comida abundante y barata, a menudo con platos para compartir), la «fuente de soda» (cafetería con sándwiches, completos y bebidas), la «schopería» (cervecería de barril), la «sanguchería», el «restobar», la «cocinería» (comida casera tradicional) y el «quincho» (parrilla para eventos). La «picada» no es un picoteo, sino un restaurante sencillo y de confianza.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el 19 % y añade el impuesto adicional si vendes alcohol. Sustituye el convenio de hostelería por el Código del Trabajo, con jornada de 42 horas desde abril de 2026, gratificación legal y cotizaciones. Presenta el APPCC como programa de buenas prácticas ante la SEREMI de Salud. Recuerda que la propina del 10 % es voluntaria y pertenece a los trabajadores, no a la caja del local.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«once» es una comida ligera de la tarde con té o café, no el número 11",
+    "«completo» es un hot dog con palta, tomate y mayonesa",
+    "«palta» es el aguacate",
+    "«choclo» es el maíz tierno (pastel de choclo, humitas)",
+    "«porotos» son las alubias o judías",
+    "«garzón» es el camarero",
+    "«guagua» es un bebé, no un autobús"
+  ]
+}
