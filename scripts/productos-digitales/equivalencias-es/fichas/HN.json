@@ -5,33 +5,67 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El Impuesto Sobre Ventas (ISV) se aplica a la venta de bienes y servicios; en la práctica el tipo general es del 15 % y la prensa y consultoras citan un 18 % selectivo para alcohol y tabaco, pero no pudimos confirmarlo con la ley. La página oficial de la SAR confirma, además, un Impuesto de Producción y Consumo específico sobre bebidas alcohólicas, cigarrillos y gaseosas (5,19 % según el Acuerdo 218-2024). Pide a la SAR la tabla vigente por producto.",
+      "texto": "El Impuesto Sobre Ventas (ISV) general es del 15 % y se aplica a la mayoría de bienes y servicios; PwC no recoge un tipo especial para restaurantes. La venta de bebidas alcohólicas y de tabaco tributa al 18 %. Además existe un Impuesto de Producción y Consumo sobre cigarrillos, gaseosas y bebidas alcohólicas, ajustado al 5,19 % en 2024 según la SAR. Confirma con la SAR cómo se combinan estos tipos en tu carta.",
       "fuentes": [
         {
-          "titulo": "SAR Honduras, Impuesto Sobre Ventas",
-          "url": "https://www.sar.gob.hn/impuesto-sobre-ventas-isv/"
+          "titulo": "PwC Worldwide Tax Summaries — Honduras, otros impuestos (ISV 15 % y 18 %)",
+          "url": "https://taxsummaries.pwc.com/honduras/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "SAR Honduras — Impuesto Sobre Ventas (ajuste al 5,19 % del Impuesto de Producción y Consumo)",
+          "url": "https://www.sar.gob.hn/impuesto-sobre-ventas-isv/",
+          "tipo": "oficial"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "propina_servicio": {
-      "texto": "La propina es voluntaria y de costumbre, habitualmente alrededor del 10 % de la cuenta, y se paga en efectivo al camarero en la mayoría de locales. No hemos confirmado un cargo por servicio obligatorio. Si el restaurante lo incluye en la factura, su tratamiento tributario y laboral debe consultarse con la SAR o con un contador local.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La propina es voluntaria. El reglamento de la Ley de Protección al Consumidor (art. 78.4, 2022) consideró práctica abusiva añadirla a la factura, pero en agosto de 2023 la Secretaría de Desarrollo Económico y la asociación de restaurantes acordaron mantenerla como opción para el cliente, también en factura manual y electrónica. No hemos hallado un porcentaje oficial. Confirma en la Dirección de Protección al Consumidor cómo debe figurar hoy en tu factura.",
+      "fuentes": [
+        {
+          "titulo": "El Heraldo — El pago de la propina en Honduras será opcional",
+          "url": "https://www.elheraldo.hn/economia/pago-propina-honduras-sera-opcional-GF14882037",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Bloomberg Línea — Prohibición de propina en el nuevo reglamento (Honduras)",
+          "url": "https://www.bloomberglinea.com/2022/06/17/prohibicion-de-propina-en-nuevo-reglamento-preocupa-a-hoteles-y-restaurantes-de-honduras/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
     },
     "autoridad_sanitaria": {
-      "texto": "La autoridad es la Agencia de Regulación Sanitaria (ARSA), que otorga la licencia sanitaria y vigila la inocuidad de alimentos en establecimientos; las regiones sanitarias de la Secretaría de Salud inspeccionan localmente. No confirmamos el reglamento exacto de buenas prácticas ni si se exige HACCP; consulta a ARSA antes de diseñar tus procedimientos.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La Agencia de Regulación Sanitaria (ARSA) otorga las licencias sanitarias de los establecimientos de alimentos y bebidas. Rige el Reglamento para el Control Sanitario de Alimentos y Bebidas, en vigor desde el 13 de agosto de 2024, que pide instalaciones higiénicas (suelos impermeables, paredes lavables, control de plagas). No hemos confirmado que exija HACCP: consulta a ARSA si te piden un plan documentado de buenas prácticas antes de diseñar tus procedimientos.",
+      "fuentes": [
+        {
+          "titulo": "García Bodán — New health regulation for food and beverages in Honduras",
+          "url": "https://garciabodan.com/en/new-health-regulation-for-food-and-beverages-in-honduras/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "ARSA — Trámites de Alimentos y Bebidas",
+          "url": "https://arsa.gob.hn/alimentos-y-bebidas/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "manipulador": {
-      "texto": "Para manipular alimentos se pide el carné de manipulador, normalmente tras un examen médico y un curso de inocuidad que dan las unidades de salud o centros autorizados. La renovación y la vigencia varían por municipio y región sanitaria; confirma los requisitos con el centro de salud de tu zona.",
+      "texto": "No hemos confirmado una norma ni un emisor concretos del carné de manipulador. En la práctica se suele pedir formación en manipulación de alimentos y control médico del personal, pero los requisitos y su vigencia varían. Pregunta a ARSA o a la región sanitaria de tu zona qué documento exigen y cada cuánto se renueva antes de contratar.",
       "fuentes": [],
       "verificado": false
     },
     "licencias_apertura": {
-      "texto": "Los permisos típicos son: inscripción del comerciante o sociedad en la Cámara de Comercio, RTN en la SAR, permiso de operación municipal de la alcaldía, licencia sanitaria de ARSA, uso de suelo y revisión del Cuerpo de Bomberos. Cada alcaldía tiene su propio procedimiento; pregunta cuál es el orden en tu municipio.",
-      "fuentes": [],
+      "texto": "Según El Heraldo (2023), en Tegucigalpa un restaurante pide: constancia de compatibilidad de uso de suelo, licencia sanitaria de ARSA, licencia ambiental (UGA), certificación de bomberos, inscripción de la empresa en la alcaldía (RTN, escritura, solvencia, clave catastral), inspección del local y permiso de operación. Cada alcaldía tiene su procedimiento y cambia con el tiempo: confirma el orden en la tuya.",
+      "fuentes": [
+        {
+          "titulo": "El Heraldo — Requisitos para abrir un restaurante en la capital",
+          "url": "https://www.elheraldo.hn/tegucigalpa/requisitos-abrir-restaurante-capital-honduras-documentos-alcaldia-GN12687331",
+          "tipo": "secundaria"
+        }
+      ],
       "verificado": false
     },
     "alcohol": {
@@ -50,9 +84,25 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 44 horas semanales según el Código de Trabajo, con reducciones por mutuo acuerdo. Las prestaciones que difieren de España son el décimo tercer mes (en diciembre) y el décimo cuarto mes (entre junio y julio), además de la indemnización. La seguridad social la gestiona el Instituto Hondureño de Seguridad Social (IHSS). Verifica los datos en la Secretaría de Trabajo.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 44 semanales, pagadas como 48 (Código del Trabajo, art. 322). Los pagos extra son el décimo tercer mes (aguinaldo) y el décimo cuarto mes, que el Decreto 135-94 fija en junio con las mismas condiciones del aguinaldo. El IHSS (Instituto Hondureño de Seguridad Social) afilia a los trabajadores. Confirma con la Secretaría de Trabajo las fechas del aguinaldo antes de contratar.",
+      "fuentes": [
+        {
+          "titulo": "STSS — Código del Trabajo y sus reformas (art. 322)",
+          "url": "https://www.trabajo.gob.hn/wp-content/uploads/2022/09/Codigo-del-Trabajo-y-sus-Reformas.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "STSS — Acuerdo 02-95, Reglamento del Décimo Cuarto Mes (Decreto 135-94)",
+          "url": "https://www.trabajo.gob.hn/wp-content/uploads/2016/07/Acuerdo-02-95-Reglamento-del-Decimo-Cuarto-Mes-de-Salario-en-Concepto-de-Compensacion-Social.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "IHSS — Requisitos para afiliación",
+          "url": "https://www.ihss.hn/requisitos-para-afiliacion/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "En los mercados se compra por libra y los granos o el café por quintal (100 libras); los líquidos se piden por galón y las bebidas por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El sistema métrico se usa en la empresa formal, pero libras y galones siguen siendo las unidades del mercado.",

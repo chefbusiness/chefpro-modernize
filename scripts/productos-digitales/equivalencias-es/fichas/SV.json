@@ -5,33 +5,51 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El IVA (Impuesto a la Transferencia de Bienes Muebles y a la Prestación de Servicios) es del 13 % y se aplica a la venta de comida y bebida en restaurantes. Hay impuestos selectivos al alcohol y tabaco, según la legislación. No pudimos confirmar el tipo en la página del Ministerio de Hacienda; abre allí la tabla vigente. Los precios de carta suelen publicarse con el IVA incluido.",
+      "texto": "El IVA (Impuesto a la Transferencia de Bienes Muebles y a la Prestación de Servicios) es del 13 % y grava los servicios prestados en el país; PwC no incluye la restauración entre los servicios exentos, así que la comida y la bebida de restaurante tributan. La declaración es mensual. Confirma con tu contador si los precios de carta deben mostrarse con IVA incluido y si tu bebida alcohólica o tabaco lleva impuestos específicos.",
       "fuentes": [
         {
-          "titulo": "Ministerio de Hacienda de El Salvador",
-          "url": "https://www.mh.gob.sv/"
+          "titulo": "PwC Worldwide Tax Summaries — El Salvador, otros impuestos (IVA 13 %)",
+          "url": "https://taxsummaries.pwc.com/el-salvador/corporate/other-taxes",
+          "tipo": "secundaria"
         }
       ],
-      "verificado": false
+      "verificado": true
     },
     "propina_servicio": {
-      "texto": "La propina es voluntaria y de costumbre, alrededor del 10 % de la cuenta; muchos restaurantes la añaden como línea separada en la factura, pero el cliente decide. No hemos confirmado un cargo por servicio obligatorio. Si el negocio lo cobra, comprueba con el Ministerio de Hacienda cómo se factura.",
+      "texto": "No hemos hallado una norma que obligue a cobrar propina ni que fije su porcentaje; en la práctica es una costumbre voluntaria, con una sugerencia habitual del 10 % que algunos locales añaden como línea separada de la cuenta. Antes de incluirla en la factura, consulta a la Defensoría del Consumidor y al Ministerio de Hacienda cómo debe facturarse y si el cliente puede rechazarla.",
       "fuentes": [],
       "verificado": false
     },
     "autoridad_sanitaria": {
-      "texto": "La autoridad es el Ministerio de Salud (MINSAL), que concede el permiso de funcionamiento a establecimientos que preparan alimentos y los inspecciona. No confirmamos el reglamento técnico de buenas prácticas ni si se exige HACCP; el sitio del MINSAL no era accesible desde aquí. Consulta con la unidad de salud local antes de abrir.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La autoridad es el Ministerio de Salud (MINSAL). El Código de Salud (art. 86) le encomienda supervisar las normas sobre alimentos y autorizar la instalación y el funcionamiento de los establecimientos que cumplan los requisitos. La referencia es la Norma Técnica de Alimentos (Acuerdo 150 de 2013, con reformas), que habla de «autorización sanitaria de funcionamiento». No hemos confirmado si exige HACCP ni la versión vigente: pregunta a tu unidad de salud antes de abrir.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Salud — Reforma a la Norma Técnica de Alimentos (cita arts. 83 y 86 del Código de Salud y el Acuerdo 150)",
+          "url": "https://www.jurisprudencia.gob.sv/DocumentosBoveda/R/2/2010-2019/2013/02/D82A0.HTML",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "manipulador": {
-      "texto": "Se pide el carné de manipulador de alimentos, que se obtiene tras un examen médico y una capacitación impartida por las unidades de salud del MINSAL. La vigencia varía según la unidad de salud; consúltala en la que te corresponda antes de contratar al personal y de abrir el local.",
+      "texto": "Se suele pedir un certificado de salud o formación en manipulación de alimentos al personal, pero no hemos confirmado la norma, el emisor ni la vigencia. Consulta en la unidad de salud del MINSAL que te corresponda qué documento exigen y cada cuánto se renueva antes de contratar al personal y de abrir el local.",
       "fuentes": [],
       "verificado": false
     },
     "licencias_apertura": {
-      "texto": "Los permisos típicos son: matrícula de comercio del Centro Nacional de Registros, NIT y NRC de Hacienda, permiso de funcionamiento de MINSAL, licencia municipal de la alcaldía, uso de suelo y revisión del Cuerpo de Bomberos. La inscripción de empresas se hace en el Centro Nacional de Registros.",
-      "fuentes": [],
+      "texto": "El permiso sanitario lo concede el MINSAL (Código de Salud, art. 86). Lo habitual es sumar la matrícula de comercio del Centro Nacional de Registros, el NIT y el NRC de Hacienda, la licencia municipal con uso de suelo y la revisión del Cuerpo de Bomberos, además de inscribirte en el ISSS al contratar. Estos trámites no los hemos podido confirmar con fuente abierta: pregunta en tu alcaldía el orden y los requisitos.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Salud — Norma Técnica de Alimentos (arts. 83 y 86 Código de Salud)",
+          "url": "https://www.jurisprudencia.gob.sv/DocumentosBoveda/R/2/2010-2019/2013/02/D82A0.HTML",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ISSS — Inscripción de patrono",
+          "url": "https://www.isss.gob.sv/servicios/inscripcion-de-patrono-persona-natural/",
+          "tipo": "oficial"
+        }
+      ],
       "verificado": false
     },
     "alcohol": {
@@ -50,9 +68,30 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 44 horas semanales según el Código de Trabajo. El aguinaldo es una prestación obligatoria en diciembre, proporcional a la antigüedad. La seguridad social corresponde al Instituto Salvadoreño del Seguro Social (ISSS) y las pensiones a las AFP. Verifica los datos en el Ministerio de Trabajo antes de contratar.",
-      "fuentes": [],
-      "verificado": false
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 44 semanales (Código de Trabajo, art. 161). El aguinaldo es obligatorio desde el año de servicio: mínimo de 15 días de salario (1 a menos de 3 años), 19 (3 a menos de 10) o 21 (10 o más), según el art. 198. El MTPS indica que ahora se puede pagar del 20 de octubre al 20 de diciembre. Debes inscribirte en el ISSS al contratar a tu primer trabajador; consulta a tu contador las cotizaciones de pensiones (AFP).",
+      "fuentes": [
+        {
+          "titulo": "MTPS — ¿Cuántas horas debo trabajar al día? (art. 161)",
+          "url": "https://www.mtps.gob.sv/2020/10/26/cuantas-horas-debo-trabajar-al-dia/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "MTPS — Orientación sobre el pago del aguinaldo (art. 198)",
+          "url": "https://www.mtps.gob.sv/2025/12/23/mtps-orienta-a-ciudadanos-sobre-el-pago-del-aguinaldo/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "MTPS — Entrega anticipada de aguinaldo: ventana 20 oct–20 dic",
+          "url": "https://www.mtps.gob.sv/2025/10/27/entrega-anticipada-de-aguinaldo-es-opcional-de-empresarios/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ISSS — Inscripción de patrono",
+          "url": "https://www.isss.gob.sv/servicios/inscripcion-de-patrono-persona-natural/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
     },
     "unidades_mercado": {
       "texto": "En los mercados se compra por libra y los granos por quintal (100 libras) y los líquidos por galón; las bebidas se piden por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El dólar es la moneda de curso legal; los precios de mercado se anuncian en dólares y centavos.",
