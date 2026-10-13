@@ -121,7 +121,7 @@ DOCX_ENCABEZADOS = OrderedDict([('mbar', [37, 44, 51, 59, 67, 76, 83, 91, 100, 1
 DOCX_INDICE = OrderedDict([('mbar', list(range(24, 34)))])
 DOCX_ULTIMO_9 = OrderedDict([('mbar', '108')])
 DOCX_TANDAS = OrderedDict([('mbar_a', ('mbar', [1, 2, 3, 4, 5])), ('mbar_b', ('mbar', [6, 7, 8, 9, 10]))])
-PRESTAMO_SEMILLA = OrderedDict([('mbar', 50000)])                   # research §8: ≈ $50,000 (CALIBRAR)
+PRESTAMO_SEMILLA = OrderedDict([('mbar', 49000)])                   # punto fijo del dry-run (research §8: ≈ $50,000)
 
 AUTOTEST = OrderedDict([
     ('P1', 'MBP'), ('P2', 'MBP'), ('C1', 'MBC'), ('C2', 'MBC'),
