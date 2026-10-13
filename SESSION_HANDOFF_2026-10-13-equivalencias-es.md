@@ -53,15 +53,26 @@ salgas corriendo a picar código») y luego **solo con agentes sonnet** (John: �
   - «Servicio 10 %» obligatorio en Costa Rica (Ley 9116);
   - rebaja de IVA en Uruguay con pago electrónico (Decreto 235/026).
 
+## Estado final (LIVE)
+
+- **PR #130 fusionada** (merge `404ec3e9`). Preview: guías 200, FAQ en el JSON-LD y bonus en las landings.
+- **Gate LIVE:** `gate-flujo-postpago.py` → **64 productos, 891 entregables (840 + 51 guías), 0 fallos, 0 avisos**;
+  `tienda-gate.py` en verde. Muestras curl en producción: 3 landings con bonus y docx 200.
+- **John vio las 2 guías de muestra en Word** (Kit de Tareas Bar y Guía Food Cost): «espectaculares… va a ser muy útil».
+- **Correo PROGRAMADO:** Resend `70415899-ca9a-4f6d-a109-91637c607c01`, «Tus productos ahora hablan tu país», segmento
+  AI Chef Pro ES, **16-oct 08:00Z**. La prueba llegó a john@chefbusiness.co (`01a1353a…`).
+- Worktrees (`wt-equiv-es` en el Mac y `/root/wt-equiv-es` en el VPS) borrados; rama `feat/equivalencias-es` eliminada.
+
 ## Pendiente / siguiente
 
-- [ ] Gates contra el preview y LIVE: `gate-flujo-postpago.py`, `tienda-gate.py`, curl de 3 guías y de la FAQ en el
-      JSON-LD. Después, merge.
-- [ ] Correo: dry-run, prueba a John y `--scheduled-at 2026-10-16T08:00:00Z` (cuando la imagen esté LIVE).
-- [ ] F4 (con datos y con visto bueno de John): descriptores LatAm en titles y metas donde haya brecha grande
-      (APPCC → HACCP/BPM, escandallo → receta estándar), tras mirar la SERP.
-- [ ] F4 confirmada por John: la misma capa por producto para los 13 EN.
+- [ ] F4 (con datos y con el visto bueno de John): descriptores LatAm en titles y metas donde haya brecha grande
+      (APPCC → HACCP/BPM, escandallo → receta estándar), tras mirar la SERP. Los nombres de producto no se tocan.
+- [ ] F4 confirmada por John: la misma capa por producto para los 13 EN (mismo generador, columnas US · UK · CA · AU).
 - [ ] Revisión anual de las fichas: enero 2027.
+- [ ] Campos que siguen «Orientativo»: 25 de 120 prioritarios. Los más flojos: Panamá (impuesto, propina, sanidad,
+      manipulador, licencias), Bolivia, Nicaragua y El Salvador. Se mejoran en la revisión de enero o si entra una
+      venta de esos países.
+- [ ] RD: litraje real del «galón» comercial dominicano; si John lo sabe, va a `fichas/DO.json` → `unidades_mercado`.
 - [ ] Gates con fallos previos, ajenos a este cambio: `paginas-gate.py` (29 FALLA) y `nombre-gate.py` (44/49).
 
 ## Coste

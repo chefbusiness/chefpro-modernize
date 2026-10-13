@@ -644,5 +644,5 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 
 - **13-oct (sesión Claude Code) — Guía de Equivalencias ES ↔ Hispanoamérica en los 51 productos ES (PR #130).** Correo
   `emails/broadcast-guia-equivalencias-es.html` el **jueves 16-oct 08:00Z** (10:00 Madrid), fuera de la cola de 5 días
-  por decisión de John («Jueves 16-oct»), entre la Guía Pastelería (14-oct) y el Kit Pastelería 2.1 (19-oct). La cola
+  por decisión de John («Jueves 16-oct»), entre la Guía Pastelería (14-oct) y el Kit Pastelería 2.1 (19-oct). ✅ **PROGRAMADO** el 13-oct (`70415899-ca9a-4f6d-a109-91637c607c01`, prueba a John enviada). La cola
   de producto ES no se mueve: siguiente hueco **28-nov 08:00Z**. **Revisión anual de las fichas de país: enero 2027.**
