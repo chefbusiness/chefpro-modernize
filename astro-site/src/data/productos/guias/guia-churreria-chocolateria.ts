@@ -72,7 +72,7 @@ const data: GuiaData = {
     price: '65 EUR',
     heroNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
     buyBoxNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
-    bonusTotalLabel: 'Incluido en el precio: la guía, las 8 herramientas Excel y los dos bonus',
+    bonusTotalLabel: 'Incluido en el precio: la guía, las 8 herramientas Excel y los tres bonus',
   },
 
   images: {
@@ -91,7 +91,7 @@ const data: GuiaData = {
 
   grid: {
     countGold: '17',
-    headingRest: ' Capítulos + 8 Plantillas + 2 Bonus',
+    headingRest: ' Capítulos + 8 Plantillas + 3 Bonus',
     subtitle: 'Criterio y decisión, no teoría. Cada capítulo se apoya en una de las ocho herramientas Excel del pack y sus tablas salen de las celdas de esos ficheros, no de ejemplos inventados: el caso es «El Molinete», una churrería-chocolatería modelada, sin ciudad ni dueños. Cierra un anexo normativo con fecha de corte, para que sepas qué estaba vigente el día que se escribió y qué fechas ya sabemos que se mueven. Escrito por un chef y consultor gastronómico que lleva desde 2010 acompañando aperturas.',
     chapters: [
       { icon: 'Layers', num: '01', title: 'Qué Negocio Estás Montando: Seis Formatos y Cuál te Toca', desc: 'Las seis formas de montar una churrería-chocolatería comparadas por inversión, metros y régimen de apertura, por qué la bombonería es otro negocio con su propia guía, el mapa de problema a capítulo y a herramienta, y el glosario con las equivalencias de Hispanoamérica.' },
@@ -137,7 +137,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía en PDF y DOCX, recibes estas 10 piezas: las 8 herramientas Excel con fórmulas vivas y los dos bonus',
+    subtitle: 'Además de la guía en PDF y DOCX, recibes estas 11 piezas: las 8 herramientas Excel con fórmulas vivas y los tres bonus',
     // layout 'single' (rejilla única de 3 columnas con todas las tarjetas del mismo ancho):
     // el 'split' está pensado para 5 ítems (3+2) y con 10 dejaría 3 anchas y 7 estrechas.
     layout: 'single',
@@ -222,6 +222,14 @@ const data: GuiaData = {
         desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: sala o sólo despacho, traspaso u obra nueva, gas o eléctrico, mix propio o preparado comercial, ración, docena o kilo, abrir antes de las ocho, qué haces en verano, o franquicia o por tu cuenta. En PDF y en DOCX editable (21 páginas).',
         image: '/lovable-uploads/ai-gallery/guia-churreria-4.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: 'Incluido en el pack',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
+      },
     ],
   },
 
@@ -250,7 +258,7 @@ const data: GuiaData = {
     { q: 'Tengo una cafetería y quiero meter churros. ¿Me sirve?', a: 'Te sirve el capítulo de lo que cambia al meter una freidora en un local que no la tenía: humos, potencia, aceite y alérgenos. El negocio de cafetería lo cubren su plan de negocio y su kit; esta guía es para quien monta una churrería-chocolatería.' },
     { q: '¿Franquicia o por mi cuenta?', a: 'Hay un capítulo entero con lo que publican las enseñas, de unos pocos miles de euros a más de cien mil de inversión, con canon y royalty, como orden de magnitud y con su fecha, sin recomendar marca. Una de ellas publica un canon de entrada de 12.000 €: la guía cuesta el 0,54 % de ese canon, y con ella llegas a esa conversación sabiendo qué preguntar.' },
     { q: '¿Los Excel funcionan en Google Sheets y en Numbers?', a: 'Sí. Y conviene decir por qué, porque la razón que se suele dar es falsa: no es que hayamos recortado funciones para que Sheets las entienda, porque Sheets las entiende perfectamente. Es una convención interna de la casa: no usamos funciones volátiles ni funciones que compliquen el recalculado, no hay ni una referencia de una fórmula a otro fichero, y no hay constantes escondidas dentro de las fórmulas —todos los parámetros viven en celda verde, con su valor por defecto declarado—. El efecto secundario es que lo que ves en Excel se recalcula igual en Google Sheets, en LibreOffice y en Numbers, y como los libros guardan dentro los valores ya calculados, también se leen bien en el móvil.' },
-    { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera —coste de apertura, capacidad de la línea, escandallo, punto de equilibrio, temporada y tesorería son casillas editables— y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención. El bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio: escríbenos a info@aichef.pro y te decimos qué cambia y qué cuesta. Sobre la normativa: es pago único con actualizaciones incluidas, entras a tu dashboard y descargas la versión nueva sin pagar nada más. Los parámetros legales viven en celda editable con su nota y su fecha, y el anexo cierra con la fecha de corte y las cuestiones que ya sabemos que se mueven: la acrilamida en revisión, el convenio, el registro horario y la facturación verificable.' },
+    { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera —coste de apertura, capacidad de la línea, escandallo, punto de equilibrio, temporada y tesorería son casillas editables— y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención. El bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio: escríbenos a info@aichef.pro y te decimos qué cambia y qué cuesta. Sobre la normativa: es pago único con actualizaciones incluidas, entras a tu dashboard y descargas la versión nueva sin pagar nada más. Los parámetros legales viven en celda editable con su nota y su fecha, y el anexo cierra con la fecha de corte y las cuestiones que ya sabemos que se mueven: la acrilamida en revisión, el convenio, el registro horario y la facturación verificable. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia.' },
   ],
 
   cta: {
@@ -264,6 +272,7 @@ const data: GuiaData = {
       'Escandallo del churro y de la porra con el aceite absorbido y los dos márgenes',
       'Aceite de fritura, temporada y ferias, y plan financiero a 3 años',
       'Bonus: business plan modelo relleno (DOCX) y 12 decisiones de apertura resueltas (21 páginas)',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -310,7 +319,7 @@ const data: GuiaData = {
       { q: 'Tengo una cafetería y quiero meter churros. ¿Me sirve?', a: 'Te sirve el capítulo de lo que cambia al meter una freidora en un local que no la tenía: humos, potencia, aceite y alérgenos. El negocio de cafetería lo cubren su plan de negocio y su kit.' },
       { q: '¿Franquicia o por mi cuenta?', a: 'Hay un capítulo con lo que publican las enseñas, de unos pocos miles de euros a más de cien mil de inversión, con canon y royalty, como orden de magnitud y con su fecha, sin recomendar marca.' },
       { q: '¿Los Excel funcionan en Google Sheets y en Numbers?', a: 'Sí, y no porque hayamos recortado funciones: Sheets las entiende perfectamente. Es una convención interna de la casa: no usamos funciones volátiles, no hay ni una referencia de una fórmula a otro fichero y no hay constantes escondidas dentro de las fórmulas, porque todos los parámetros viven en celda verde con su valor por defecto declarado.' },
-      { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español. La estructura económica viaja entera en casillas editables; el bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio en info@aichef.pro. Es pago único con actualizaciones incluidas y el anexo cierra con la fecha de corte y las cuestiones que ya sabemos que se mueven.' },
+      { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español. La estructura económica viaja entera en casillas editables; el bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio en info@aichef.pro. Es pago único con actualizaciones incluidas y el anexo cierra con la fecha de corte y las cuestiones que ya sabemos que se mueven. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

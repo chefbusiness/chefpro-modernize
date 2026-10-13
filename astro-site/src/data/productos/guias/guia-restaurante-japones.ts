@@ -42,7 +42,7 @@ const data: GuiaData = {
     discountBadge: '-64%',
     heroNote: 'Precio de lanzamiento — ahorra 115 EUR',
     buyBoxNote: 'Precio de lanzamiento — ahorra 115 EUR',
-    bonusTotalLabel: 'Valor total: guía + 5 bonus',
+    bonusTotalLabel: 'Valor total: guía + 6 bonus',
     bonusSaveLine: 'Ahorra 115 EUR HOY',
   },
 
@@ -118,7 +118,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía PDF + DOCX, recibes estos 5 recursos — valorados en 160 EUR',
+    subtitle: 'Además de la guía PDF + DOCX, recibes estos 6 recursos — valorados en 175 EUR',
     layout: 'split',
     items: [
       { icon: 'FileText', label: 'BONUS 1', title: 'Business Plan Modelo para Bancos', value: '49 EUR', desc: 'Plantilla rellenable con estructura profesional para presentar a bancos e inversores. Incluye sección específica de cocina japonesa premium y proveedores.', image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg' },
@@ -126,6 +126,7 @@ const data: GuiaData = {
       { icon: 'ClipboardCheck', label: 'BONUS 3', title: 'Checklist Equipamiento Cocina Japonesa', value: '29 EUR', desc: '36 ítems específicos: suihanki, vitrina refrigerada sashimi, ramen cooker, robata binchotan, cuchillos yanagiba/deba/usuba.', image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-cocina.jpg' },
       { icon: 'CalendarRange', label: 'BONUS 4', title: 'Cronograma de Apertura Gantt 12 Meses', value: '24 EUR', desc: 'Fases específicas para japonés: búsqueda del itamae, contacto proveedores pescado sashimi-grade, formación, soft opening.', image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-barra.jpg' },
       { icon: 'PieChart', label: 'BONUS 5', title: 'Escandallos: 15 Recetas Base Japonesas', value: '19 EUR', desc: 'Fichas técnicas con food cost real: sashimi moriawase, nigiri, ramen tonkotsu, gyoza, yakitori wagyu, tempura, katsu.', image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-plato.jpg' },
+      { icon: 'Globe', label: 'BONUS 6', title: 'Guía de Equivalencias para tu país', value: '15 EUR', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
     ],
   },
 
@@ -145,6 +146,7 @@ const data: GuiaData = {
     { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Las 8 plantillas incluyen fórmulas automáticas: plan financiero, escandallos de 15 platos japoneses (sashimi, ramen, nigiri, yakitori wagyu), menú engineering con coctelería de sake/whisky, cash flow y más.' },
     { q: '¿El DOCX es editable?', a: 'Sí. Recibes dos versiones: el PDF editorial con diseño profesional para leer y consultar, y el DOCX editable para personalizar, añadir notas y presentar a socios o inversores.' },
     { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho con el contenido, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.' },
+    { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Restaurante Japonés» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «gambas» es «camarones» en México y «langostinos» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
   ],
 
   cta: {
@@ -157,6 +159,7 @@ const data: GuiaData = {
       'Business Plan modelo para bancos',
       'Manual de operaciones japonés',
       'Escandallos de 15 recetas base japonesas',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -188,6 +191,7 @@ const data: GuiaData = {
       { q: '¿Cuánto cuesta montar un restaurante japonés en España?', a: 'Entre 250.000€ y 500.000€ para 60 plazas. El equipamiento japonés específico (suihanki, vitrina sashimi, robata, teppanyaki, cuchillos japoneses) y el itamae cualificado suponen la mayor parte del coste, pero los márgenes en sake y whisky japonés (75-85%) lo compensan.' },
       { q: '¿Qué normativa debo cumplir para sushi y sashimi?', a: 'El RD 1021/2022, art. 8.1 (que derogó el RD 1420/2006) OBLIGA a congelar preventivamente todo pescado para consumo crudo a -20°C durante mínimo 24 horas en todo el producto, o -35°C durante 15 horas (anisakis). La guía incluye el PCC completo, el checklist y el protocolo de trazabilidad.' },
       { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Plan financiero a 3 años, escandallos de 15 platos japoneses, menú engineering con coctelería de sake y whisky, cash flow y break-even.' },
+      { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Restaurante Japonés» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «gambas» es «camarones» en México y «langostinos» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

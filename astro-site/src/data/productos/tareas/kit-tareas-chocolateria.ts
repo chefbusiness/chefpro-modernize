@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate | AI Chef Pro',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción (templado, moldeado, bombones), apertura/cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
+      '9 plantillas + 3 bonus (12 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción (templado, moldeado, bombones), apertura/cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist chocolatería, tareas chocolatero, checklist apertura chocolatería, tareas producción chocolate, control stock chocolatería, plantilla tareas obrador chocolate, checklist cierre chocolatería, inventario chocolatería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-chocolateria.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción, apertura y cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada.',
+      '9 plantillas + 3 bonus (12 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción, apertura y cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -62,6 +62,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Chocolatería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Chocolatería / Obrador de Chocolate',
   },
@@ -86,7 +90,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Chocolatería / Obrador de Chocolate — Checklists por Turno, Zona y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 338 tareas de chocolatería artesanal ya escritas: producción, apertura/cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 338 tareas de chocolatería artesanal ya escritas: producción, apertura/cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción: templado, moldeado, bombones, tabletas, envasado',
       'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones y báscula de mostrador',
@@ -102,7 +106,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '338 tareas de chocolatería artesanal ya escritas y repartidas por turno, zona y perfil. Ajusta a tu obrador, imprime y delega.',
     templates: [
@@ -208,7 +212,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €18',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €33',
     items: [
       {
         icon: 'Megaphone',
@@ -225,6 +229,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: 'Calendario mensual de 12 meses con las fechas señaladas dentro de cada mes (Navidad, San Valentín, Pascua, Día de la Madre, comuniones, ferias…) y su preparación con antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-chocolateria-vitrina.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -267,11 +279,15 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Chocolatería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 3 bonus (12 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: vitrina, mostrador, obrador, limpieza',
       'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
@@ -282,6 +298,7 @@ const data: KitTareasData = {
       'Eventos y temporada: Navidad, San Valentín, Pascua, fechas clave',
       'BONUS: Briefing Diario de Chocolatería (€9)',
       'BONUS: Calendario Anual de Chocolatería (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

@@ -40,7 +40,7 @@ const data: GuiaData = {
     discountBadge: '-61%',
     heroNote: 'Precio de lanzamiento — ahorra 135 EUR',
     buyBoxNote: 'Precio de lanzamiento — ahorra 135 EUR',
-    bonusTotalLabel: 'Valor total: guía + 5 bonus',
+    bonusTotalLabel: 'Valor total: guía + 6 bonus',
     bonusSaveLine: 'Ahorra 135 EUR HOY',
   },
 
@@ -118,7 +118,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía PDF + DOCX, recibes estos 5 recursos — valorados en 160 EUR',
+    subtitle: 'Además de la guía PDF + DOCX, recibes estos 6 recursos — valorados en 175 EUR',
     layout: 'split',
     items: [
       { icon: 'FileText', label: 'BONUS 1', title: 'Business Plan Modelo para Bancos', value: '49 EUR', desc: 'Plantilla rellenable con estructura profesional para presentar a bancos e inversores. Incluye resumen ejecutivo, proyecciones financieras a 3 años y análisis de mercado.', image: '/lovable-uploads/ai-gallery/guia-gastro-hero.jpg' },
@@ -126,6 +126,7 @@ const data: GuiaData = {
       { icon: 'ClipboardCheck', label: 'BONUS 3', title: 'Checklist Inspección Michelin/Repsol', value: '29 EUR', desc: '45 ítems que buscan los inspectores: desde la calidad del producto hasta la coherencia del menú, el servicio, la vajilla y la experiencia global del comensal.', image: '/lovable-uploads/ai-gallery/guia-gastro-plato.jpg' },
       { icon: 'CalendarRange', label: 'BONUS 4', title: 'Cronograma de Apertura Gantt 18 Meses', value: '24 EUR', desc: 'Todas las fases y dependencias: desde la búsqueda de local hasta la inauguración. Hitos, responsables y fechas límite en formato visual Gantt.', image: '/lovable-uploads/ai-gallery/guia-gastro-cocina.jpg' },
       { icon: 'PieChart', label: 'BONUS 5', title: 'Calculadora Menú Engineering', value: '19 EUR', desc: 'Matrix automática Stars/Plowhorses/Puzzles/Dogs. Introduce tus platos, food cost y ventas, y obtén recomendaciones de pricing y carta al instante.', image: '/lovable-uploads/ai-gallery/guia-gastro-bodega.jpg' },
+      { icon: 'Globe', label: 'BONUS 6', title: 'Guía de Equivalencias para tu país', value: '15 EUR', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
     ],
   },
 
@@ -144,6 +145,7 @@ const data: GuiaData = {
     { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Las 10 plantillas Excel incluyen fórmulas automáticas: plan financiero con P&L y break-even, escandallos por plato, calculadora de menú engineering (matrix Stars/Plowhorses/Puzzles/Dogs), cronograma Gantt y más.' },
     { q: '¿El DOCX es editable?', a: 'Sí. Recibes dos versiones: el PDF editorial con diseño profesional para leer y consultar, y el DOCX editable para personalizar, añadir notas, adaptar a tu proyecto y presentar a socios o inversores.' },
     { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho con el contenido, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.' },
+    { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Restaurante Gastronómico» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
   ],
 
   cta: {
@@ -156,6 +158,7 @@ const data: GuiaData = {
       'Business Plan modelo para bancos',
       'Manual de servicio de sala',
       'Checklist preparación Michelin/Repsol',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 85 EUR',
   },
@@ -188,6 +191,7 @@ const data: GuiaData = {
       { q: '¿Cuánto cuesta montar un restaurante gastronómico?', a: 'Entre 500.000€ y 900.000€ para 65 plazas de nivel medio-alto en capital de provincia española. La guía desglosa cada partida.' },
       { q: '¿Incluye información sobre cómo aspirar a Estrella Michelin?', a: "Sí. Los capítulos 17-19 cubren Michelin, Sol Repsol y The World's 50 Best con criterios, proceso de inspección y estrategia." },
       { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Plan financiero a 3 años, escandallos, menu engineering, cash flow, break-even y más. Todo con fórmulas encadenadas.' },
+      { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Restaurante Gastronómico» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

@@ -96,7 +96,7 @@ const data: GuiaData = {
     price: '65 EUR',
     heroNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
     buyBoxNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
-    bonusTotalLabel: 'Incluido en el precio: la guía, las 9 herramientas Excel y los dos bonus',
+    bonusTotalLabel: 'Incluido en el precio: la guía, las 9 herramientas Excel y los tres bonus',
   },
 
   images: {
@@ -115,7 +115,7 @@ const data: GuiaData = {
 
   grid: {
     countGold: '20',
-    headingRest: ' Capítulos + 9 Plantillas + 2 Bonus',
+    headingRest: ' Capítulos + 9 Plantillas + 3 Bonus',
     subtitle: 'Criterio y decisión, no teoría. Cada capítulo se apoya en una de las nueve herramientas Excel del pack y sus tablas salen de las celdas de esos ficheros, no de ejemplos inventados. Cierra un anexo normativo con fecha de corte, para que sepas qué estaba vigente el día que se escribió y qué fechas ya sabemos que se mueven. Escrito por un chef y consultor gastronómico que lleva desde 2010 acompañando aperturas.',
     chapters: [
       { icon: 'Layers', num: '01', title: 'Qué Negocio Estás Montando: las Doce Variantes y Cuál te Toca', desc: 'Las doce formas de vender chocolate comparadas por inversión, metros y personal, por qué la chocolatería de taza y churros es otro negocio, el mapa de problema a capítulo y a herramienta, y el glosario con sus equivalencias de Hispanoamérica.' },
@@ -164,7 +164,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía en PDF y DOCX, recibes estas 11 piezas: las 9 herramientas Excel con fórmulas vivas y los dos bonus',
+    subtitle: 'Además de la guía en PDF y DOCX, recibes estas 12 piezas: las 9 herramientas Excel con fórmulas vivas y los tres bonus',
     // layout 'single' (una sola rejilla de 3 columnas, todas las tarjetas del mismo
     // ancho) y no 'split': el split de la línea reparte slice(0,3) en una rejilla
     // max-w-5xl y slice(3) en OTRA de 2 columnas y max-w-3xl — está pensado para 5
@@ -260,6 +260,14 @@ const data: GuiaData = {
         desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: bombonería o bean-to-bar, comprar la atemperadora continua o empezar con la de sobremesa, abrir con quince referencias o con veintiocho, vender la caja o la unidad, parar el obrador en agosto o no, o empezar en casa dentro de la legalidad. En PDF y en DOCX editable (34 páginas).',
         image: '/lovable-uploads/ai-gallery/guia-chocolateria-4.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: 'Incluido en el pack',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
+      },
     ],
   },
 
@@ -290,7 +298,7 @@ const data: GuiaData = {
     { q: '¿Sustituye al proyecto técnico o a la gestión de licencias?', a: 'No, y hay que decirlo arriba. Eso lo firma un técnico y no hay atajo. Aquí tampoco vas a encontrar un precio de proyecto: ninguna de las ingenierías que revisamos publica su tarifa, y preferimos dejar el hueco a rellenarlo con un número inventado. Lo que hace la guía es que llegues a esa reunión sabiendo qué pedir, qué preguntar y qué te van a cobrar, que sepas qué parte del expediente depende de ti y cuál del técnico, y que no hayas firmado un alquiler antes de saberlo.' },
     { q: 'Mi ayuntamiento es distinto. ¿Me sirve igual?', a: 'Es la primera objeción que pone cualquier técnico, y tiene razón: no existe ninguna guía que dé la ordenanza de los más de ocho mil municipios que hay en España, y ésta tampoco la da. No hemos abierto ninguna ordenanza municipal, y por eso no verás aquí escrito «en tu ciudad el trámite es tal». Lo que sí da es el marco estatal y europeo verificado con su norma, su artículo y su enlace, más la lista exacta de qué preguntar en tu ayuntamiento y en qué orden. Y un dato estatal que cambia la conversación: el artículo 3.1 de la Ley 12/2012 impide a las administraciones exigir licencia previa de instalación, de funcionamiento o de actividad hasta 750 m², y su anexo incluye expresamente el epígrafe del comercio al por menor de bombones y caramelos. Prometer más que eso sería mentirte.' },
     { q: '¿Los Excel funcionan en Google Sheets y en Numbers?', a: 'Sí. Y conviene decir por qué, porque la razón que se suele dar es falsa: no es que hayamos recortado funciones para que Sheets las entienda, porque Sheets las entiende perfectamente. Es una convención interna de la casa: no usamos funciones volátiles ni funciones que compliquen el recalculado, no hay ni una referencia de una fórmula a otro fichero, y no hay constantes escondidas dentro de las fórmulas —todos los parámetros viven en celda verde, con su valor por defecto declarado—. El efecto secundario es que lo que ves en Excel se recalcula igual en Google Sheets, en LibreOffice y en Numbers, y como los libros guardan dentro los valores ya calculados, también se leen bien en el móvil y en visores que no recalculan.' },
-    { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera —coste de apertura, capacidad de obrador, sensibilidad al cacao, escandallo, punto muerto, campañas y tesorería son casillas editables— y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención. El bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio: escríbenos a info@aichef.pro y te decimos qué cambia y qué cuesta. Sobre la normativa: es pago único con actualizaciones incluidas, entras a tu dashboard y descargas la versión nueva sin pagar nada más. Los parámetros legales viven en celda editable con su nota y su fecha, la guía cierra con un anexo normativo con fecha de corte, y las fechas que ya sabemos que se mueven están escritas: el reglamento de deforestación el 30 de diciembre de 2026, el salario mínimo y el convenio a final de 2026, la facturación verificable en enero y julio de 2027 y la obligación del envase reutilizable en enero de 2027.' },
+    { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera —coste de apertura, capacidad de obrador, sensibilidad al cacao, escandallo, punto muerto, campañas y tesorería son casillas editables— y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención. El bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio: escríbenos a info@aichef.pro y te decimos qué cambia y qué cuesta. Sobre la normativa: es pago único con actualizaciones incluidas, entras a tu dashboard y descargas la versión nueva sin pagar nada más. Los parámetros legales viven en celda editable con su nota y su fecha, la guía cierra con un anexo normativo con fecha de corte, y las fechas que ya sabemos que se mueven están escritas: el reglamento de deforestación el 30 de diciembre de 2026, el salario mínimo y el convenio a final de 2026, la facturación verificable en enero y julio de 2027 y la obligación del envase reutilizable en enero de 2027. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia.' },
   ],
 
   cta: {
@@ -304,6 +312,7 @@ const data: GuiaData = {
       'Denominaciones legales del cacao y escandallo por molde con la merma de templado dentro',
       'Sensibilidad al precio del cacao, campañas y valle del año, y plan financiero a 3 años',
       'Bonus: business plan modelo relleno y 12 decisiones de apertura resueltas (34 páginas)',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -353,7 +362,7 @@ const data: GuiaData = {
       { q: '¿Sustituye al proyecto técnico o a la gestión de licencias?', a: 'No, y hay que decirlo arriba: eso lo firma un técnico y no hay atajo. Tampoco encontrarás aquí un precio de proyecto, porque ninguna de las ingenierías que revisamos publica su tarifa y preferimos dejar el hueco antes que rellenarlo con un número inventado. Lo que hace la guía es que llegues a esa reunión sabiendo qué pedir, qué preguntar y qué parte del expediente depende de ti, y que no hayas firmado un alquiler antes de saberlo.' },
       { q: 'Mi ayuntamiento es distinto. ¿Me sirve igual?', a: 'No existe ninguna guía que dé la ordenanza de los más de ocho mil municipios que hay en España, y ésta tampoco la da: no hemos abierto ninguna ordenanza municipal. Lo que sí da es el marco estatal y europeo verificado con su norma, su artículo y su enlace, más la lista exacta de qué preguntar en tu ayuntamiento y en qué orden. Y un dato estatal que cambia la conversación: el artículo 3.1 de la Ley 12/2012 impide a las administraciones exigir licencia previa de instalación, de funcionamiento o de actividad hasta 750 m², y su anexo incluye el epígrafe del comercio al por menor de bombones y caramelos.' },
       { q: '¿Los Excel funcionan en Google Sheets y en Numbers?', a: 'Sí, y no porque hayamos recortado funciones: Sheets las entiende perfectamente. Es una convención interna de la casa: no usamos funciones volátiles, no hay ni una referencia de una fórmula a otro fichero y no hay constantes escondidas dentro de las fórmulas, porque todos los parámetros viven en celda verde con su valor por defecto declarado. El efecto secundario es que lo que ves en Excel se recalcula igual en Google Sheets, en LibreOffice y en Numbers, y como los libros guardan dentro los valores ya calculados también se leen bien en el móvil.' },
-      { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera en casillas editables y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención; el bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio en info@aichef.pro. Sobre la normativa: es pago único con actualizaciones incluidas, los parámetros legales viven en celda editable con su nota y su fecha, y las fechas que ya sabemos que se mueven están escritas — el reglamento de deforestación el 30 de diciembre de 2026 y la obligación del envase reutilizable en enero de 2027.' },
+      { q: '¿Sirve si voy a abrir fuera de España, y qué pasa cuando cambie la normativa?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera en casillas editables y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención; el bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio en info@aichef.pro. Sobre la normativa: es pago único con actualizaciones incluidas, los parámetros legales viven en celda editable con su nota y su fecha, y las fechas que ya sabemos que se mueven están escritas — el reglamento de deforestación el 30 de diciembre de 2026 y la obligación del envase reutilizable en enero de 2027. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

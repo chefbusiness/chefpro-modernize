@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Cafetería / Brunch | AI Chef Pro',
     description:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para cafetería y brunch con las tareas más habituales ya escritas — apertura, cierre, barista, vitrina, caja, brunch, manager, perfiles, eventos. Imprime, delega y firma. Solo €12.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para cafetería y brunch con las tareas más habituales ya escritas — apertura, cierre, barista, vitrina, caja, brunch, manager, perfiles, eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist cafetería, tareas barista, checklist apertura cafetería, lista tareas brunch, checklist manager cafetería, tareas recurrentes hostelería, vitrina pastelería checklist, plantilla tareas cafetería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-cafeteria.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Cafetería / Brunch',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para cafetería y brunch con 500 tareas ya escritas — apertura, cierre, barista, vitrina de pastelería, arqueo de caja, brunch dominical, manager, perfiles, eventos y festivos.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para cafetería y brunch con 500 tareas ya escritas — apertura, cierre, barista, vitrina de pastelería, arqueo de caja, brunch dominical, manager, perfiles, eventos y festivos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -70,6 +70,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Cafetería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «bollería» es «pan dulce» en México y «pastelería» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Cafetería / Brunch',
   },
@@ -108,7 +112,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Cafetería / Brunch — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 500 tareas de cafetería y brunch ya escritas: apertura, cierre, negocio, caja, barista, vitrina, manager, perfiles, brunch y eventos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 500 tareas de cafetería y brunch ya escritas: apertura, cierre, negocio, caja, barista, vitrina, manager, perfiles, brunch y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre por área (cocina, sala, barra café)',
       'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
@@ -124,7 +128,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '500 tareas de cafetería y brunch ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
@@ -230,7 +234,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -247,6 +251,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '22 fechas clave de hostelería (San Valentín, Día del Padre, comuniones, Semana Santa, 15 de agosto, terraza, Todos los Santos, Navidad, puente de diciembre) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-cafeteria-terraza.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -289,11 +301,15 @@ const data: KitTareasData = {
       q: '¿Incluye tareas para brunch y eventos?',
       a: 'Sí. Hay checklists específicos para brunch dominical, eventos especiales (pop-ups, catas), San Valentín, Navidad/Nochevieja, apertura y cierre de temporada de terraza.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Cafetería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «bollería» es «pan dulce» en México y «pastelería» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
-    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 3 bonus (12 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: barra, sala, terraza, cocina',
       'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
@@ -304,6 +320,7 @@ const data: KitTareasData = {
       'Eventos y festivos: brunch especial, pop-ups, terraza',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

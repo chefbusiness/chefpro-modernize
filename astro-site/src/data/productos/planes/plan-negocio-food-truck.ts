@@ -81,6 +81,10 @@ const data: PlanNegocioData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Food Truck» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «paga extra» es «aguinaldo» en México y «prima de servicios» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Plan de Negocio: Food Truck',
   },
@@ -183,7 +187,7 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Además del plan financiero y el checklist de apertura, accedes a estos recursos extra — valorados en €38',
+      'Además del plan financiero y el checklist de apertura, accedes a estos recursos extra — valorados en €53',
     items: [
       {
         icon: 'Map',
@@ -200,6 +204,14 @@ const data: PlanNegocioData = {
         value: '€19',
         desc: 'Tabla de referencia del sector dentro del libro: food cost de comida 28-33 %, de bebida 22-28 %, packaging 3-5 %, personal 25-32 %, margen bruto > 62 %, ticket 10-15 €, 40-80 clientes por servicio y 4-6 días operativos por semana, cada dato con su fuente y con una nota que dice dónde se aparta tu plan.',
         image: '/lovable-uploads/ai-gallery/plan-food-truck-cola.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -244,6 +256,10 @@ const data: PlanNegocioData = {
       q: '¿Cómo funciona la garantía?',
       a: '30 días. Si el plan de negocio no cumple tus expectativas, te devolvemos el 100 % de tu dinero. Sin preguntas, sin complicaciones. Queremos que montes tu food truck con total confianza.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Food Truck» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «paga extra» es «aguinaldo» en México y «prima de servicios» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -260,6 +276,7 @@ const data: PlanNegocioData = {
       'Equipamiento cocina móvil + ratios street food',
       'BONUS: Guía permisos por CCAA (€19)',
       'BONUS: Ratios referencia street food 2026 (€19)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €29',
   },

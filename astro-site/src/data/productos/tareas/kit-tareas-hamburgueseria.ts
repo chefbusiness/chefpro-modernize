@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería | AI Chef Pro',
     description:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para hamburguesería con las tareas más habituales ya escritas — plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos. Imprime, delega y firma. Solo €12.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para hamburguesería con las tareas más habituales ya escritas — plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist hamburguesería, tareas apertura hamburguesería, checklist smash burger, tareas parrillero, checklist delivery hamburguesería, lista tareas hamburguesería, plantilla tareas hamburguesería, control plancha grill, freidora checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-hamburgueseria.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para hamburguesería con 346 tareas ya escritas — plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para hamburguesería con 346 tareas ya escritas — plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -70,6 +70,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Hamburguesería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Hamburguesería',
   },
@@ -102,7 +106,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Hamburguesería — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 346 tareas de tu hamburguesería ya escritas: plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 346 tareas de tu hamburguesería ya escritas: plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: plancha/grill, freidora, línea de montaje, sala, barra',
       'Control de plancha y grill: temperatura, limpieza, punto de carne (rare a well done)',
@@ -117,7 +121,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '346 tareas de hamburguesería ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
@@ -224,7 +228,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+      'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -241,6 +245,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '22 fechas clave de hostelería (San Valentín, Semana Santa, fútbol, Día del Padre, comuniones y bautizos, 15 de agosto, Todos los Santos, puente de diciembre, Navidad) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-burger-mesa.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -283,12 +295,16 @@ const data: KitTareasData = {
       q: '¿Incluye tareas de delivery y packaging de burger?',
       a: 'Sí. Las tareas cubren packaging correcto de burger (que no se desmonte), control de tiempos de entrega, gestión de riders, etiquetado, preparación de pedidos y cierre de plataformas de delivery.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Hamburguesería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
     subtitle:
-      '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
+      '9 plantillas + 3 bonus (12 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: plancha, freidora, línea, sala, barra',
       'Tareas del parrillero: smash burger, punto de carne, grill',
@@ -298,6 +314,7 @@ const data: KitTareasData = {
       'Delivery y take-away: packaging burger, riders, tiempos',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

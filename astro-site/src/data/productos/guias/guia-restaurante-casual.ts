@@ -42,7 +42,7 @@ const data: GuiaData = {
     discountBadge: '-64%',
     heroNote: 'Precio de lanzamiento — ahorra 115 EUR',
     buyBoxNote: 'Precio de lanzamiento — ahorra 115 EUR',
-    bonusTotalLabel: 'Valor total: guía + 5 bonus',
+    bonusTotalLabel: 'Valor total: guía + 6 bonus',
     bonusSaveLine: 'Ahorra 115 EUR HOY',
   },
 
@@ -118,7 +118,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía PDF + DOCX, recibes estos 5 recursos — valorados en 160 EUR',
+    subtitle: 'Además de la guía PDF + DOCX, recibes estos 6 recursos — valorados en 175 EUR',
     layout: 'split',
     items: [
       { icon: 'FileText', label: 'BONUS 1', title: 'Business Plan Modelo para Bancos', value: '49 EUR', desc: 'Plantilla rellenable con estructura profesional para presentar a bancos e inversores. Resumen ejecutivo, proyecciones financieras a 3 años y análisis de mercado.', image: '/lovable-uploads/ai-gallery/guia-casual-hero.jpg' },
@@ -126,6 +126,7 @@ const data: GuiaData = {
       { icon: 'ClipboardCheck', label: 'BONUS 3', title: 'Checklist Diseño Sala + Terraza', value: '29 EUR', desc: '29 ítems: distribución, mobiliario, iluminación regulable, acústica, decoración, terraza completa con sombrillas, estufas y macetas.', image: '/lovable-uploads/ai-gallery/guia-casual-terraza.jpg' },
       { icon: 'CalendarRange', label: 'BONUS 4', title: 'Cronograma de Apertura Gantt 12 Meses', value: '24 EUR', desc: 'Todas las fases: planificación, local, licencias, obra, equipamiento, equipo, marketing, soft opening e inauguración.', image: '/lovable-uploads/ai-gallery/guia-casual-cocina.jpg' },
       { icon: 'PieChart', label: 'BONUS 5', title: 'Calculadora Menú Engineering + Menú del Día', value: '19 EUR', desc: 'Matrix automática Stars/Plowhorses/Puzzles/Dogs + simulador de menú del día con food cost controlado.', image: '/lovable-uploads/ai-gallery/guia-casual-plato.jpg' },
+      { icon: 'Globe', label: 'BONUS 6', title: 'Guía de Equivalencias para tu país', value: '15 EUR', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
     ],
   },
 
@@ -144,6 +145,7 @@ const data: GuiaData = {
     { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Las 8 plantillas Excel incluyen fórmulas automáticas: plan financiero con P&L y break-even, escandallos por plato, calculadora de menú engineering y menú del día, cronograma Gantt y más.' },
     { q: '¿El DOCX es editable?', a: 'Sí. Recibes dos versiones: el PDF editorial con diseño profesional para leer y consultar, y el DOCX editable para personalizar, añadir notas, adaptar a tu proyecto y presentar a socios o inversores.' },
     { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho con el contenido, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.' },
+    { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Restaurante Casual» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «cuadrante» es «rol de turnos» en México y «cuadro de turnos» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
   ],
 
   cta: {
@@ -156,6 +158,7 @@ const data: GuiaData = {
       'Business Plan modelo para bancos',
       'Manual de operaciones completo',
       'Capítulos exclusivos: delivery, terraza, menú del día',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -187,6 +190,7 @@ const data: GuiaData = {
       { q: '¿Cuánto cuesta montar un restaurante casual?', a: 'Entre 150.000€ y 350.000€ para 80 plazas dependiendo de ubicación y acabados. La guía desglosa cada partida con costes reales.' },
       { q: '¿Incluye capítulos sobre delivery y terraza?', a: 'Sí. Los capítulos 17 y 18 cubren delivery (plataformas, packaging, menú optimizado) y terraza (licencias, rentabilidad, mobiliario).' },
       { q: '¿Las plantillas Excel incluyen fórmulas?', a: 'Sí. Plan financiero a 3 años, escandallos, menú engineering, cash flow, break-even y calculadora de menú del día. Todo con fórmulas.' },
+      { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Restaurante Casual» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «cuadrante» es «rol de turnos» en México y «cuadro de turnos» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

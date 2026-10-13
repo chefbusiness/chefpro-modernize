@@ -85,6 +85,10 @@ const data: PlanNegocioData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Cafetería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «bollería» es «pan dulce» en México y «facturas» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Plan de Negocio: Cafetería / Brunch',
   },
@@ -187,7 +191,7 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Además del plan financiero y el checklist de apertura, accedes a estos recursos extra — valorados en €38',
+      'Además del plan financiero y el checklist de apertura, accedes a estos recursos extra — valorados en €53',
     items: [
       {
         icon: 'Users',
@@ -204,6 +208,14 @@ const data: PlanNegocioData = {
         value: '€19',
         desc: 'Datos actualizados del sector: food cost café 25-30 %, ticket medio €8-12, margen bruto >65 % y rotación por franja horaria (mañana / mediodía / tarde).',
         image: '/lovable-uploads/ai-gallery/plan-cafeteria-latte.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -248,6 +260,10 @@ const data: PlanNegocioData = {
       q: '¿Cómo funciona la garantía?',
       a: '30 días. Si el plan de negocio no cumple tus expectativas, te devolvemos el 100 % de tu dinero. Sin preguntas, sin complicaciones. Queremos que abras tu cafetería con total confianza.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Cafetería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «bollería» es «pan dulce» en México y «facturas» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -264,6 +280,7 @@ const data: PlanNegocioData = {
       'Equipamiento específico cafetería + ratios sectoriales',
       'BONUS: Cuadro Personal con Seg. Social (€19)',
       'BONUS: Ratios Referencia Cafetería 2026 (€19)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €29',
   },

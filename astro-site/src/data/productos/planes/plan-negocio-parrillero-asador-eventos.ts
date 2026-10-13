@@ -87,6 +87,10 @@ const data: PlanNegocioData = {
         q: '¿Cómo funciona la garantía?',
         a: '30 días de devolución completa sin preguntas. Los 11 entregables son tuyos para siempre + actualizaciones gratuitas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Parrillero / Asador Eventos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «asador» es «asadero» en México y «parrilla» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Plan de Negocio Parrillero / Asador Eventos',
   },
@@ -194,7 +198,7 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Además del plan financiero y los 9 entregables principales, accedes a estos recursos diferenciales — valorados en €89',
+      'Además del plan financiero y los 9 entregables principales, accedes a estos recursos diferenciales — valorados en €104',
     items: [
       {
         icon: 'Flame',
@@ -211,6 +215,14 @@ const data: PlanNegocioData = {
         value: '€49',
         desc: 'Comparativa parrilla argentina, asador a la cruz, BBQ pit, caja china peruana, barril llanero, modular inox, brasero y lift-grill. + Roadmap food truck especializado en parrilla: inversión 30-75K EUR y regulación de venta ambulante en 8 CCAA.',
         image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-5.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -259,6 +271,10 @@ const data: PlanNegocioData = {
       q: '¿Cómo funciona la garantía?',
       a: '30 días de devolución completa. Si el plan no cumple tus expectativas, te devolvemos el 100 % del importe sin preguntas. Los 11 entregables son tuyos para siempre + actualizaciones gratuitas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Parrillero / Asador Eventos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «asador» es «asadero» en México y «parrilla» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -273,6 +289,7 @@ const data: PlanNegocioData = {
       'Manual técnico parrillero + Carta 12 cortes + 10 experiencias temáticas',
       'Modelos contrato B2C + B2B + Guía 8 sistemas + roadmap food truck',
       'Checklist de apertura de 83 tareas + anexo del fuego al aire libre',
+      'BONUS: Guía de Equivalencias para tu país',
       'Acceso de por vida + 30 días de garantía de devolución',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €45',

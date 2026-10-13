@@ -78,6 +78,112 @@
       "boda",
       "banquetes",
       "eventos"
+    ],
+    [
+      "camarero",
+      "camareros",
+      "camarera",
+      "mesero",
+      "meseros",
+      "mesera",
+      "mozo",
+      "mozos",
+      "moza",
+      "garzon",
+      "garzones",
+      "mesonero",
+      "salonero"
+    ],
+    [
+      "albaran",
+      "albaranes",
+      "remito",
+      "remitos",
+      "remision",
+      "remisiones"
+    ],
+    [
+      "nevera",
+      "neveras",
+      "refrigerador",
+      "refrigeradores",
+      "heladera",
+      "heladeras",
+      "frigorifico",
+      "frigorificos"
+    ],
+    [
+      "almacen",
+      "bodega",
+      "deposito",
+      "despensa",
+      "economato"
+    ],
+    [
+      "gamba",
+      "gambas",
+      "camaron",
+      "camarones",
+      "langostino",
+      "langostinos"
+    ],
+    [
+      "racion",
+      "raciones",
+      "porcion",
+      "porciones"
+    ],
+    [
+      "tarta",
+      "tartas",
+      "pastel",
+      "pasteles",
+      "torta",
+      "tortas"
+    ],
+    [
+      "maiz",
+      "elote",
+      "elotes",
+      "choclo",
+      "mazorca"
+    ],
+    [
+      "cacahuete",
+      "cacahuetes",
+      "cacahuate",
+      "cacahuates",
+      "mani"
+    ],
+    [
+      "patata",
+      "patatas",
+      "papa",
+      "papas"
+    ],
+    [
+      "aguacate",
+      "aguacates",
+      "palta",
+      "paltas"
+    ],
+    [
+      "zumo",
+      "zumos",
+      "jugo",
+      "jugos"
+    ],
+    [
+      "tesoreria",
+      "liquidez",
+      "flujo"
+    ],
+    [
+      "turno",
+      "turnos",
+      "grilla",
+      "cuadrante",
+      "cuadrantes"
     ]
   ],
   "_doc_frases": "Sinónimos de VARIAS palabras: se expanden sobre la consulta entera ANTES de trocear. También resuelven las grafías pegadas ('foodcost', 'foodtruck'), que de otro modo no prefijan ninguna palabra del índice y devuelven 0.",
@@ -97,18 +203,34 @@
     [
       "foodtruck",
       "food truck"
+    ],
+    [
+      "camara frigorifica",
+      "cuarto frio"
+    ],
+    [
+      "bolleria",
+      "pan dulce"
     ]
   ],
   "_doc_alias": "Términos EXTRA que se añaden al data-search de un producto concreto (clave = slug). Sirven para dos cosas: vocabulario de Hispanoamérica y palabras que el visitante teclea pero que no aparecen literalmente en la ficha ('stock' para el kit de inventario, 'rentabilidad' para la Guía Food Cost). Sin esto, un grupo de sinónimos correcto NO puede disparar: el término no está en ningún índice.",
   "alias": {
-    "/kit-inventario": "stock stocks existencias almacen rotacion",
-    "/kit-gestion-personal": "nominas planillas costes de personal",
-    "/guia-food-cost-ingenieria-menu": "rentabilidad margenes beneficio precios de carta",
+    "/kit-inventario": "stock stocks existencias almacen rotacion albaran remito remision nevera refrigerador heladera bodega deposito despensa",
+    "/kit-gestion-personal": "nominas planillas costes de personal turnos grilla",
+    "/guia-food-cost-ingenieria-menu": "rentabilidad margenes beneficio precios de carta papa papas patata porcion",
     "/kit-escandallos": "rentabilidad margenes precios de carta",
-    "/kit-plan-financiero": "rentabilidad margenes beneficio tesoreria",
+    "/kit-plan-financiero": "rentabilidad margenes beneficio tesoreria liquidez flujo de caja",
     "/manual-chef-ejecutivo": "jefe de cocina chef de cocina sous chef receta estandar partidas estaciones mise en place",
     "/guia-pasteleria-obrador": "abrir montar una pasteleria obrador reposteria pasteleria en casa cake design tartas por encargo vitrina licencia maquinaria traspaso",
     "/guia-chocolateria-obrador": "abrir montar una chocolateria bomboneria obrador de chocolate cacao cobertura bombones tabletas templado atemperadora bean to bar licencia traspaso taller de chocolate",
-    "/guia-churreria-chocolateria": "abrir montar poner una churreria churros porras tejeringos calentitos chocolate a la taza chocolate caliente freidora dosificadora churrera feria caseta puesto franquicia traspaso licencia"
+    "/guia-churreria-chocolateria": "abrir montar poner una churreria churros porras tejeringos calentitos chocolate a la taza chocolate caliente freidora dosificadora churrera feria caseta puesto franquicia traspaso licencia",
+    "/kit-tareas": "mesero mozo garzon mesonero salonero camarera",
+    "/pack-appcc": "nevera refrigerador heladera frigorifico camara frigorifica cuarto frio cacahuate mani",
+    "/kit-tareas-marisqueria": "camarones langostinos gambas",
+    "/kit-tareas-tapas-bar": "raciones porciones",
+    "/guia-restaurante-mexicano": "elote elotes choclo mazorca cacahuate",
+    "/guia-restaurante-peruano": "palta paltas choclo",
+    "/kit-tareas-pasteleria": "torta pastel pasteles bolleria pan dulce",
+    "/plan-negocio-cocteleria-eventos": "jugo jugos zumo"
   }
 }

@@ -13,14 +13,14 @@ const data: KitTareasData = {
 
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal | AI Chef Pro',
-    description: 'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para heladería artesanal con las tareas más habituales ya escritas — producción, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
+    description: 'Kit de 9 plantillas + 3 bonus (12 ficheros): checklists operativos para heladería artesanal con las tareas más habituales ya escritas — producción, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
     keywords: 'checklist heladería, tareas heladero, checklist apertura heladería, tareas producción helados, control stock heladería, plantilla tareas vitrina, checklist cierre heladería, inventario heladería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-heladeria.jpg',
   },
 
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal',
-    productDescription: '9 plantillas + 2 bonus (11 ficheros): checklists operativos para heladería artesanal con 298 tareas ya escritas — producción, vitrina, servicio, gestión y temporada.',
+    productDescription: '9 plantillas + 3 bonus (12 ficheros): checklists operativos para heladería artesanal con 298 tareas ya escritas — producción, vitrina, servicio, gestión y temporada.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -58,6 +58,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Heladería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Heladería Artesanal',
   },
@@ -81,7 +85,7 @@ const data: KitTareasData = {
     titlePre: 'Kit de Tareas ',
     titleGold: 'Recurrentes',
     subtitleLine: 'Heladería Artesanal — Checklists por Turno, Zona y Perfil',
-    description: '9 plantillas + 2 bonus (11 ficheros) en Excel con 298 tareas de heladería artesanal ya escritas: producción, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
+    description: '9 plantillas + 3 bonus (12 ficheros) en Excel con 298 tareas de heladería artesanal ya escritas: producción, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción: pasteurización, maduración, mantecación, envasado',
       'Servicio: vitrina, toppings, salsas, mostrador',
@@ -96,7 +100,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle: '298 tareas de heladería artesanal ya escritas y repartidas por turno, zona y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
       {
@@ -199,7 +203,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €18',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €33',
     items: [
       {
         icon: 'Megaphone',
@@ -216,6 +220,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: 'Calendario mensual con los 12 meses del año y las fechas señaladas de heladería ya colocadas en cada mes (Día de la Madre, comuniones, San Juan, verano, 15 de agosto, Navidad y más) con la acción clave de cada fecha.',
         image: '/lovable-uploads/ai-gallery/tareas-heladeria-vitrina.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -258,11 +270,15 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Heladería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '9 plantillas + 2 bonus (11 ficheros) para heladería por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 3 bonus (12 ficheros) para heladería por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: vitrina, toppings, caja, limpieza',
       'Partidas de producción: pasteurización, mantecación, envasado',
@@ -272,6 +288,7 @@ const data: KitTareasData = {
       'Eventos y temporada: carta estacional, catering, fechas clave',
       'BONUS: Briefing Diario de Heladería (€9)',
       'BONUS: Calendario Anual de Heladería (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

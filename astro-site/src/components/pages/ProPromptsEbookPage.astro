@@ -98,6 +98,7 @@ const faqSchema = {
     { '@type': 'Question', name: '¿Recibiré actualizaciones?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. Todas las actualizaciones futuras son gratuitas. A medida que AI Chef Pro lance nuevos agentes IA, el eBook se actualiza y tú los recibes automáticamente.' } },
     { '@type': 'Question', name: '¿Cómo funciona la garantía?', acceptedAnswer: { '@type': 'Answer', text: 'Tienes 30 días completos para probarlo. Si no estás satisfecho por cualquier motivo, te devolvemos el 100% sin hacer ninguna pregunta.' } },
     { '@type': 'Question', name: '¿Necesito experiencia previa con IA?', acceptedAnswer: { '@type': 'Answer', text: 'Para nada. Los prompts están listos para copiar y pegar. Resultados profesionales desde el primer día, independientemente de tu nivel.' } },
+    { '@type': 'Question', name: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Pro Prompts Library» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' } },
   ],
 };
 
@@ -206,6 +207,7 @@ const compatPills = [
 const bonuses = [
   { icon: 'BookOpen', label: 'BONUS 1', title: 'Guía de Prompt Engineering Gastronómico', value: '€27', desc: 'Aprende a crear tus propios prompts gastronómicos perfectos desde cero con el método AI Chef Pro. Documento Word editable para personalizar.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
   { icon: 'FileText', label: 'BONUS 2', title: 'Plantillas + Cheat Sheet', value: '€23', desc: 'Hoja de cálculo con plantillas listas para usar y un resumen rápido de los mejores prompts para hostelería.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
+  { icon: 'Globe', label: 'BONUS 3', title: 'Guía de Equivalencias para tu país', value: '€15', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
 ];
 
 // ---- FreeToolsSection (constante; 8 herramientas) ----
@@ -235,6 +237,7 @@ const faqs = [
   { q: '¿Recibiré actualizaciones?', a: 'Sí. Todas las actualizaciones futuras son gratuitas. A medida que AI Chef Pro lance nuevos agentes IA, el eBook se actualiza y tú los recibes automáticamente.' },
   { q: '¿Cómo funciona la garantía?', a: 'Tienes 30 días completos para probarlo. Si no estás satisfecho por cualquier motivo, te devolvemos el 100% sin hacer ninguna pregunta.' },
   { q: '¿Necesito experiencia previa con IA?', a: 'Para nada. Los prompts están listos para copiar y pegar. Resultados profesionales desde el primer día, independientemente de tu nivel.' },
+  { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Pro Prompts Library» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
 ];
 
 // ---- CtaFinal ----
@@ -242,6 +245,7 @@ const ctaItems = [
   'eBook completo con 300+ prompts para toda la hostelería',
   'BONUS 1: Guía de Prompt Engineering Gastronómico (€27)',
   'BONUS 2: Plantillas + Cheat Sheet descargable (€23)',
+  'BONUS 3: Guía de Equivalencias para tu país (€15)',
   'Paga una vez — acceso de por vida al dashboard online',
   'Actualizaciones continuas con nuevos prompts sin coste extra',
   'Garantía de devolución 30 días',

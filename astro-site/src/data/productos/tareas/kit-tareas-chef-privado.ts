@@ -63,6 +63,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Chef Privado» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «nevera» es «refrigerador» en México y «heladera» en Argentina; «ración» es «orden» en México y «porción» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Chef Privado / Personal Chef',
   },
@@ -199,7 +203,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 7 plantillas principales, recibirás estos recursos adicionales — valorados en €18',
+      'Además de las 7 plantillas principales, recibirás estos recursos adicionales — valorados en €33',
     items: [
       {
         icon: 'Megaphone',
@@ -216,6 +220,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '12 meses con picos de demanda (San Valentín, verano en costa, Navidad), tipos de servicio por temporada y estrategia de marketing. El mapa de tu año como chef privado.',
         image: '/lovable-uploads/ai-gallery/tareas-chef-privado-cliente.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -258,6 +270,10 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Chef Privado» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «nevera» es «refrigerador» en México y «heladera» en Argentina; «ración» es «orden» en México y «porción» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -273,6 +289,7 @@ const data: KitTareasData = {
       'Seguimiento y fidelización de clientes',
       'BONUS: Briefing Pre-Servicio (€9)',
       'BONUS: Calendario Anual de Demanda (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €18',
   },
