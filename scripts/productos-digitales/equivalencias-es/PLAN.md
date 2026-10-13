@@ -170,7 +170,7 @@ en la carpeta `dl/` del propio producto, como un entregable más.
    - el docx abre (python-docx + LibreOffice);
    - el glosario del producto no está vacío y solo contiene términos presentes en el producto;
    - enlaces.
-3. **Una revisión adversarial opus** sobre los datos legales y fiscales de las fichas y 3 docx de muestra de tipos
+3. **Una revisión adversarial sonnet** sobre los datos legales y fiscales de las fichas y 3 docx de muestra de tipos
    distintos. Commit.
 4. **Pausa para John:** le paso 2 docx de muestra (un kit de tareas y una guía) antes de cablear nada.
 
@@ -229,4 +229,11 @@ revisado por sonnet.
   - `tienda-gate.py`;
   - descarga 200 de 3 guías de tipos distintos;
   - la FAQ visible y en el JSON-LD de 3 landings.
-- Una revisión opus final, sin rondas encadenadas.
+- Una revisión sonnet final, sin rondas encadenadas.
+
+## Modelos (John, 13-oct-2026)
+
+«Usa tus agentes tuyos, sonnet y haiku, para desarrollar este proyecto.» En todo el proyecto, **ningún agente opus**:
+- **sonnet:** research de fichas, glosario, implementación de scripts, revisión adversarial.
+- **haiku:** tareas triviales y mecánicas (validar JSON, recuentos, ediciones de patrón fijo).
+- **Main loop:** orquesta, decide y verifica lo crítico.
