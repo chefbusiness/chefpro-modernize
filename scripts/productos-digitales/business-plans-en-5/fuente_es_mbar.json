@@ -1,0 +1,2272 @@
+{
+ "meta": {
+  "generado": "2026-10-13T07:00:48+00:00",
+  "script": "scripts/productos-digitales/business-plans-en-5/fuente_mbar.py",
+  "uso": "CONTENIDO de bar móvil para los redactores (D86, D91, D92). NO se traduce tal cual: se condensa y se adapta a EE. UU. con research (F1-research-us-delta.md §1, §5, §6, §8 y el glosario §9). Las CIFRAS del ES NO se usan (D93: 40.030, 70.000, 50 eventos/año, 1.400 €/evento, 42 %…): las del caso salen del libro EN (tokens). Fuera: tareas marcadas SOLO_ES, «España», «ChefBusiness», proveedores y directorios españoles (Bodas.net, Zankyou, CateringClick, GGM, Makro…), normativa española, importes en €, «freelance» (en US: W-2) y las erratas del ES. Recetas: ml → oz (30 ml = 1 oz) con paso de 0.25 oz; el escalado del ES está a la mitad (no lo copies)",
+  "fuentes": {
+   "astro-site/public/dl/plan-negocio-cocteleria-eventos/checklist-apertura-cocteleria-eventos.xlsx": "53cf87adecf9451261f695a39e56a8ab10954668f2ded31174f7e32c64e22bb7",
+   "astro-site/public/dl/plan-negocio-cocteleria-eventos/plan-de-negocio-cocteleria-eventos.docx": "87709d1627add1cd0e1b2118f7d6365a3c16c133048f65fed6127d24521e3e3d",
+   "astro-site/public/dl/plan-negocio-cocteleria-eventos/carta-15-cocktails-tematicos.docx": "17ab5a50133a074b9be55f1d83173b96c195995d6c0cacf5dcbf9d12e9a928ff",
+   "astro-site/public/dl/plan-negocio-cocteleria-eventos/catalogo-10-experiencias-tematicas.docx": "5ef63e984a9d39a851942ab2d51c49a7f79100cb5c7670cc75f698166f5ad5c3",
+   "astro-site/public/dl/plan-negocio-cocteleria-eventos/modelo-contrato-cocteleria-eventos.docx": "edf23700eaa2ebea6fd11fdccec880914c48456cc5f2e85f163e5a49eeb71fca"
+  }
+ },
+ "checklist_es": {
+  "F1 - Constitucion": {
+   "titulo": "FASE 1: CONSTITUCION Y TRAMITES LEGALES",
+   "fase_en_sugerida": "P1 Business Setup (+ P2 modelo legal / P4 manipulador)",
+   "tareas": [
+    {
+     "fila": 5,
+     "tarea": "Decidir forma juridica: autonomo o SL",
+     "responsable": "Gestor",
+     "plazo": "Semana 1",
+     "nota": "Autonomo recomendado al inicio (<40K EUR/ano)"
+    },
+    {
+     "fila": 6,
+     "tarea": "Alta autonomo en Hacienda (036/037)",
+     "responsable": "Gestor",
+     "plazo": "1 dia",
+     "nota": "Epigrafe IAE 673.2 servicios bar especiales o 677.9 otros servicios alimentacion"
+    },
+    {
+     "fila": 7,
+     "tarea": "Alta autonomo en Seguridad Social (RETA)",
+     "responsable": "Gestor",
+     "plazo": "1 dia",
+     "nota": "Tarifa plana 80 EUR/mes primer ano (2026)",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 8,
+     "tarea": "Constituir SL si facturacion >40K (Ley Crea y Crece)",
+     "responsable": "Notario/Gestor",
+     "plazo": "1-3 semanas",
+     "nota": "Capital minimo 1 EUR, mas proteccion patrimonial",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 9,
+     "tarea": "Apertura cuenta bancaria empresa o autonomo",
+     "responsable": "Titular",
+     "plazo": "1-3 dias",
+     "nota": "Separar finanzas profesionales"
+    },
+    {
+     "fila": 10,
+     "tarea": "Obtener certificado digital",
+     "responsable": "FNMT",
+     "plazo": "1-3 dias",
+     "nota": "Imprescindible para tramites Hacienda/SS/AEAT",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 11,
+     "tarea": "Permiso autonomico venta alcohol",
+     "responsable": "CCAA",
+     "plazo": "1-2 semanas",
+     "nota": "Madrid: Decreto 184/1998. Cataluna: Llei 20/1985"
+    },
+    {
+     "fila": 12,
+     "tarea": "Carnet manipulador alimentos (todos los bartenders)",
+     "responsable": "Online",
+     "plazo": "4-8h",
+     "nota": "Curso gratuito online, validez indefinida"
+    },
+    {
+     "fila": 13,
+     "tarea": "Registro como prestador servicios eventos (si aplica)",
+     "responsable": "CCAA",
+     "plazo": "Variable",
+     "nota": "Algunas CCAA exigen registro autonomico",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 14,
+     "tarea": "Registro de marca (recomendado)",
+     "responsable": "OEPM",
+     "plazo": "4-6 meses",
+     "nota": "Proteger nombre comercial es clave en eventos"
+    }
+   ]
+  },
+  "F2 - Seguros": {
+   "titulo": "FASE 2: SEGUROS Y COBERTURA LEGAL",
+   "fase_en_sugerida": "P2 Trailer & Permits (seguros) (+ P4 OSHA / P5 privacy policy)",
+   "tareas": [
+    {
+     "fila": 5,
+     "tarea": "Contratar seguro RC 600.000 EUR (OBLIGATORIO)",
+     "responsable": "Aseguradora",
+     "plazo": "1-2 dias",
+     "nota": "Sin esto no entras a ningun hotel/salon. AXA, Mapfre, Reale, Allianz especializadas"
+    },
+    {
+     "fila": 6,
+     "tarea": "Seguro multirriesgo equipo profesional",
+     "responsable": "Aseguradora",
+     "plazo": "1-2 dias",
+     "nota": "Cubre rotura, robo, danos en transporte de barra y equipo"
+    },
+    {
+     "fila": 7,
+     "tarea": "Seguro de transporte de mercancia",
+     "responsable": "Aseguradora",
+     "plazo": "1 dia",
+     "nota": "Si el vehiculo lleva alcohol y equipo profesional"
+    },
+    {
+     "fila": 8,
+     "tarea": "Seguro proteccion juridica (recomendado)",
+     "responsable": "Aseguradora",
+     "plazo": "1 dia",
+     "nota": "Para incidencias con clientes o personal freelance",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 9,
+     "tarea": "Seguro vehiculo: ampliar a uso profesional",
+     "responsable": "Aseguradora",
+     "plazo": "1 dia",
+     "nota": "El uso profesional cambia el riesgo, comunicar a la compania"
+    },
+    {
+     "fila": 10,
+     "tarea": "Plan de prevencion riesgos laborales (PRL)",
+     "responsable": "SPA externo",
+     "plazo": "1-2 semanas",
+     "nota": "Servicio Prevencion Ajeno, especifico para eventos itinerantes"
+    },
+    {
+     "fila": 11,
+     "tarea": "Politica de proteccion de datos (RGPD)",
+     "responsable": "Asesor/Tu mismo",
+     "plazo": "1 semana",
+     "nota": "CRM con datos de clientes, parejas de boda, contactos",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 12,
+     "tarea": "Aviso legal + politica privacidad en web",
+     "responsable": "Tu mismo",
+     "plazo": "1 dia",
+     "nota": "Descargable de plantillas o usar generador online"
+    }
+   ]
+  },
+  "F3 - Equipamiento": {
+   "titulo": "FASE 3: EQUIPAMIENTO Y VEHICULO",
+   "fase_en_sugerida": "P3 Equipment (+ P2 remolque y DMV / P4 uniformes)",
+   "tareas": [
+    {
+     "fila": 5,
+     "tarea": "Comprar barra movil profesional (GGM MCSH o similar)",
+     "responsable": "Titular",
+     "plazo": "5-6 semanas",
+     "nota": "GGM Gastro 2.880 EUR bruto. Alternativas: Mewindo, Station Deus, Flexbar, IntegralBar"
+    },
+    {
+     "fila": 6,
+     "tarea": "Comprar maquina de hielo portatil 40-60kg/dia",
+     "responsable": "Titular",
+     "plazo": "1-2 semanas",
+     "nota": "Brema, Manitowoc, Hoshizaki. Imprescindible"
+    },
+    {
+     "fila": 7,
+     "tarea": "Comprar nevera bar adicional 200L",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Para botellas y mixers extra que no caben en barra"
+    },
+    {
+     "fila": 8,
+     "tarea": "Comprar cristaleria profesional (300-500 unidades)",
+     "responsable": "Titular",
+     "plazo": "2-3 semanas",
+     "nota": "Copas cocktail, vasos collins, old fashioned, shots, balones GT"
+    },
+    {
+     "fila": 9,
+     "tarea": "Comprar set herramientas coctelero",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Cocteleras, jiggers, mixing glass, strainer, cucharas"
+    },
+    {
+     "fila": 10,
+     "tarea": "Comprar decoracion modular tematica",
+     "responsable": "Titular",
+     "plazo": "2-4 semanas",
+     "nota": "Set Speakeasy + Tropical + Gin Lounge minimo"
+    },
+    {
+     "fila": 11,
+     "tarea": "Comprar iluminacion LED escenica",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Foco bar, ambiente, branding luminoso"
+    },
+    {
+     "fila": 12,
+     "tarea": "Comprar uniformes profesionales (2-3 sets)",
+     "responsable": "Titular",
+     "plazo": "1-2 semanas",
+     "nota": "Coordinados con la marca"
+    },
+    {
+     "fila": 13,
+     "tarea": "Comprar vehiculo segunda mano adaptado",
+     "responsable": "Titular",
+     "plazo": "2-4 semanas",
+     "nota": "Iveco Daily, Fiat Ducato, Renault Master 5-8 anos"
+    },
+    {
+     "fila": 14,
+     "tarea": "Acondicionar vehiculo (estanterias, sujecion)",
+     "responsable": "Carrocero",
+     "plazo": "1-2 semanas",
+     "nota": "Sistema de carga seguro para barra y cristaleria"
+    },
+    {
+     "fila": 15,
+     "tarea": "Pasar ITV vehiculo + cambio uso a profesional",
+     "responsable": "ITV/Trafico",
+     "plazo": "1 semana",
+     "nota": "Notificar uso comercial al seguro y a Trafico"
+    },
+    {
+     "fila": 16,
+     "tarea": "Comprar stock inicial bebidas (multi-destilado)",
+     "responsable": "Titular",
+     "plazo": "2-3 semanas",
+     "nota": "Coalimentaria, Makro, distribuidores especializados"
+    },
+    {
+     "fila": 17,
+     "tarea": "Comprar consumibles primeros eventos",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Pajitas eco, posavasos, servilletas, hielo extra"
+    },
+    {
+     "fila": 18,
+     "tarea": "Inventariar y etiquetar TODO el equipamiento",
+     "responsable": "Titular",
+     "plazo": "3 dias",
+     "nota": "Imprescindible para gestion stock entre eventos"
+    }
+   ]
+  },
+  "F4 - Marca": {
+   "titulo": "FASE 4: MARCA, WEB Y CONTENIDO",
+   "fase_en_sugerida": "P5 Marketing (+ P1 contrato y CRM)",
+   "tareas": [
+    {
+     "fila": 5,
+     "tarea": "Crear identidad visual (logo, paleta, tipografia)",
+     "responsable": "Disenador",
+     "plazo": "2-3 semanas",
+     "nota": "Estilo coherente: premium, joven, sofisticado"
+    },
+    {
+     "fila": 6,
+     "tarea": "Reservar dominio .com / .es / .pro",
+     "responsable": "Titular",
+     "plazo": "1 dia",
+     "nota": "Cocteleria + nombre o nombre coctelero"
+    },
+    {
+     "fila": 7,
+     "tarea": "Web profesional one-page con galeria",
+     "responsable": "Web designer",
+     "plazo": "2-3 semanas",
+     "nota": "Hero impactante, galeria eventos, formulario presupuesto"
+    },
+    {
+     "fila": 8,
+     "tarea": "Crear cuenta Instagram profesional",
+     "responsable": "Titular",
+     "plazo": "1 dia",
+     "nota": "Perfil business, link a web, bio clara con servicios"
+    },
+    {
+     "fila": 9,
+     "tarea": "Crear cuenta Pinterest (alta conversion bodas)",
+     "responsable": "Titular",
+     "plazo": "1 dia",
+     "nota": "Boards por tematica: Speakeasy, Gin, Tropical, etc."
+    },
+    {
+     "fila": 10,
+     "tarea": "Crear ficha Google Business Profile",
+     "responsable": "Titular",
+     "plazo": "1-3 dias",
+     "nota": "Categoria: Servicio cocteleria. Imprescindible para SEO local"
+    },
+    {
+     "fila": 11,
+     "tarea": "Sesion fotos profesional showcase (10-15 fotos)",
+     "responsable": "Fotografo",
+     "plazo": "1 dia",
+     "nota": "Setups de barra, cocteles, ambiente, fundador en accion"
+    },
+    {
+     "fila": 12,
+     "tarea": "Crear catalogo digital de servicios (PDF)",
+     "responsable": "Disenador/Tu",
+     "plazo": "1 semana",
+     "nota": "Para enviar a wedding planners y leads cualificados"
+    },
+    {
+     "fila": 13,
+     "tarea": "Crear plantillas de presupuesto y contrato",
+     "responsable": "Tu mismo",
+     "plazo": "1 semana",
+     "nota": "Modelo replicable con campos variables"
+    },
+    {
+     "fila": 14,
+     "tarea": "Configurar CRM ligero (HubSpot Free, Notion)",
+     "responsable": "Tu mismo",
+     "plazo": "2-3 dias",
+     "nota": "Tracking de leads, eventos, cumpleanos, repeticiones"
+    },
+    {
+     "fila": 15,
+     "tarea": "Configurar facturacion electronica (Holded, Quaderno)",
+     "responsable": "Tu mismo",
+     "plazo": "1 dia",
+     "nota": "Cumple obligacion factura electronica 2026",
+     "marca": "SOLO_ES (fuera)"
+    },
+    {
+     "fila": 16,
+     "tarea": "Crear plan de contenidos RRSS (3 meses)",
+     "responsable": "Tu mismo",
+     "plazo": "1 semana",
+     "nota": "Reels semanales, posts behind-the-scenes, eventos reales"
+    }
+   ]
+  },
+  "F5 - Captacion": {
+   "titulo": "FASE 5: CAPTACION COMERCIAL",
+   "fase_en_sugerida": "P5 Marketing (+ P6 eventos piloto)",
+   "tareas": [
+    {
+     "fila": 5,
+     "tarea": "Crear perfil Premium en Bodas.net",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Plan Premium 600-900 EUR/ano, ROI alto en bodas"
+    },
+    {
+     "fila": 6,
+     "tarea": "Crear perfil en Zankyou (segundo player)",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Complementa Bodas.net, alcance distinto"
+    },
+    {
+     "fila": 7,
+     "tarea": "Identificar 30-40 wedding planners locales",
+     "responsable": "Titular",
+     "plazo": "1 semana",
+     "nota": "Investigacion en Instagram + Google + Bodas.net"
+    },
+    {
+     "fila": 8,
+     "tarea": "Enviar email + presentacion a TODOS los WP",
+     "responsable": "Titular",
+     "plazo": "2 semanas",
+     "nota": "Email personalizado con catalogo PDF + propuesta comision 10-15%"
+    },
+    {
+     "fila": 9,
+     "tarea": "Organizar evento showcase para WP locales",
+     "responsable": "Titular",
+     "plazo": "1 mes",
+     "nota": "Tasting privado para 15-20 WP, gratis. ROI altisimo"
+    },
+    {
+     "fila": 10,
+     "tarea": "Acuerdos preferentes con 3-5 hoteles boutique",
+     "responsable": "Titular",
+     "plazo": "1-2 meses",
+     "nota": "Hoteles con eventos suelen tener proveedor recomendado"
+    },
+    {
+     "fila": 11,
+     "tarea": "Acuerdos con 3-5 salones / fincas eventos",
+     "responsable": "Titular",
+     "plazo": "1-2 meses",
+     "nota": "Mismo modelo, comision o cesion espacio"
+    },
+    {
+     "fila": 12,
+     "tarea": "Alianza con fotografo de bodas (cross-promo)",
+     "responsable": "Titular",
+     "plazo": "1 mes",
+     "nota": "Tu le mencionas, el te menciona. Win-win sin coste"
+    },
+    {
+     "fila": 13,
+     "tarea": "Alianza con DJ / animacion eventos",
+     "responsable": "Titular",
+     "plazo": "1 mes",
+     "nota": "Pack conjunto: barra + DJ con descuento"
+    },
+    {
+     "fila": 14,
+     "tarea": "Lanzar campana ads Instagram (1 mes test)",
+     "responsable": "Titular",
+     "plazo": "1 dia",
+     "nota": "Presupuesto inicial 200-300 EUR, audiencia bodas + zona"
+    },
+    {
+     "fila": 15,
+     "tarea": "Configurar Google Ads (palabras clave bodas)",
+     "responsable": "Titular",
+     "plazo": "1 dia",
+     "nota": "Coctelero bodas + ciudad. CPC 1-2 EUR habitual"
+    },
+    {
+     "fila": 16,
+     "tarea": "Inscribirse en directorio CateringClick",
+     "responsable": "Titular",
+     "plazo": "1 dia",
+     "nota": "Plataforma B2B con leads cualificados"
+    },
+    {
+     "fila": 17,
+     "tarea": "Conseguir primeros 3 eventos pilotos (puede ser bajo coste)",
+     "responsable": "Titular",
+     "plazo": "1-2 meses",
+     "nota": "Para portfolio, fotos profesionales y testimonios"
+    }
+   ]
+  },
+  "F6 - Operativa": {
+   "titulo": "FASE 6: OPERATIVA Y SEGUIMIENTO 90 DIAS",
+   "fase_en_sugerida": "P6 First 90 Days (+ P1 cláusula de fotos / P4 formación)",
+   "tareas": [
+    {
+     "fila": 5,
+     "tarea": "Crear protocolo standard pre-evento (brief cliente)",
+     "responsable": "Tu mismo",
+     "plazo": "1 dia",
+     "nota": "Cuestionario: invitados, tematica, horarios, espacio, restricciones"
+    },
+    {
+     "fila": 6,
+     "tarea": "Crear checklist mise en place pre-evento",
+     "responsable": "Tu mismo",
+     "plazo": "1 dia",
+     "nota": "Lista de verificacion 24h antes: stock, hielo, garnish, vehiculo"
+    },
+    {
+     "fila": 7,
+     "tarea": "Crear checklist montaje en evento (1-2h previas)",
+     "responsable": "Tu mismo",
+     "plazo": "1 dia",
+     "nota": "Llegada, descarga, montaje, prueba luces, briefing personal"
+    },
+    {
+     "fila": 8,
+     "tarea": "Crear checklist desmontaje + factura post-evento",
+     "responsable": "Tu mismo",
+     "plazo": "1 dia",
+     "nota": "Limpieza, recuento cristaleria, foto final, envio factura 24h"
+    },
+    {
+     "fila": 9,
+     "tarea": "Solicitar resena Google y testimonio post-evento",
+     "responsable": "Tu mismo",
+     "plazo": "Mes 1",
+     "nota": "Email automatizado a las 48h del evento"
+    },
+    {
+     "fila": 10,
+     "tarea": "Pedir derechos de imagen al cliente para portfolio",
+     "responsable": "Tu mismo",
+     "plazo": "Pre-evento",
+     "nota": "Clausula en contrato: uso fotos del evento en RRSS"
+    },
+    {
+     "fila": 11,
+     "tarea": "Revision financiera mensual (P&L real vs plan)",
+     "responsable": "Tu mismo + Gestor",
+     "plazo": "Mensual",
+     "nota": "Detectar desviaciones >15% temprano"
+    },
+    {
+     "fila": 12,
+     "tarea": "Revision pricing trimestral",
+     "responsable": "Tu mismo",
+     "plazo": "Trimestral",
+     "nota": "Ajustar tarifas segun demanda real y feedback clientes"
+    },
+    {
+     "fila": 13,
+     "tarea": "Stock control y reposicion mensual",
+     "responsable": "Tu mismo",
+     "plazo": "Mensual",
+     "nota": "Inventario fisico + pedido proveedores"
+    },
+    {
+     "fila": 14,
+     "tarea": "Mantenimiento vehiculo + ITV anual",
+     "responsable": "Mecanico",
+     "plazo": "Anual",
+     "nota": "Critico, sin vehiculo no hay negocio"
+    },
+    {
+     "fila": 15,
+     "tarea": "Mantenimiento equipamiento (limpieza profunda)",
+     "responsable": "Tu mismo",
+     "plazo": "Bimestral",
+     "nota": "Barra, maquina hielo, cristaleria revisar fugas/marcas"
+    },
+    {
+     "fila": 16,
+     "tarea": "Reactivar contactos wedding planners cada 2 meses",
+     "responsable": "Tu mismo",
+     "plazo": "Bimestral",
+     "nota": "Email recordatorio, novedades, casos de exito"
+    },
+    {
+     "fila": 17,
+     "tarea": "Asistir a feria sectorial (BCB Berlin, BCB Espana, BarShow)",
+     "responsable": "Titular",
+     "plazo": "Anual",
+     "nota": "Networking + tendencias + nuevos productos"
+    },
+    {
+     "fila": 18,
+     "tarea": "Formacion continua en mixologia (curso/ano)",
+     "responsable": "Titular",
+     "plazo": "Anual",
+     "nota": "Mantener nivel premium del bartender principal"
+    }
+   ]
+  }
+ },
+ "plan_docx_es": {
+  "parrafos": [
+   {
+    "i": 6,
+    "estilo": "Normal",
+    "texto": "PLAN DE NEGOCIO"
+   },
+   {
+    "i": 7,
+    "estilo": "Normal",
+    "texto": "Cocteleria de Eventos"
+   },
+   {
+    "i": 8,
+    "estilo": "Normal",
+    "texto": "Barra Movil"
+   },
+   {
+    "i": 10,
+    "estilo": "Normal",
+    "texto": "Plan financiero, analisis de mercado,\ncatalogo de equipamiento, calculadora de pricing,\n10 experiencias tematicas y checklist de apertura\npara montar tu empresa de cocteleria itinerante en Espana"
+   },
+   {
+    "i": 14,
+    "estilo": "Normal",
+    "texto": "Linea: Hosteleria Itinerante / Gastro Movil"
+   },
+   {
+    "i": 17,
+    "estilo": "Normal",
+    "texto": "ChefBusiness Consultoria Gastronomica"
+   },
+   {
+    "i": 18,
+    "estilo": "Normal",
+    "texto": "chefbusiness.co"
+   },
+   {
+    "i": 19,
+    "estilo": "Normal",
+    "texto": "Espana, 2026"
+   },
+   {
+    "i": 21,
+    "estilo": "Normal",
+    "texto": "AVISO LEGAL"
+   },
+   {
+    "i": 22,
+    "estilo": "Normal",
+    "texto": "Este documento ha sido elaborado por ChefBusiness Consultoria Gastronomica con fines informativos y orientativos. Las cifras, proyecciones y datos incluidos se basan en fuentes publicas del mercado espanol y en la experiencia profesional de mas de 29 anos en el sector. Los resultados reales pueden variar significativamente en funcion de la ubicacion, la red de contactos, la calidad del bartender, las condiciones del mercado y otros factores. Este plan de negocio no constituye asesoramiento financiero, legal ni fiscal. Recomendamos consultar con profesionales especializados antes de tomar decisiones de inversion. ChefBusiness no se responsabiliza de las decisiones tomadas en base a este documento."
+   },
+   {
+    "i": 23,
+    "estilo": "Normal",
+    "texto": "© 2026 ChefBusiness Consultoria Gastronomica - chefbusiness.co"
+   },
+   {
+    "i": 25,
+    "estilo": "Normal",
+    "texto": "INDICE"
+   },
+   {
+    "i": 27,
+    "estilo": "Normal",
+    "texto": "1.  Resumen Ejecutivo"
+   },
+   {
+    "i": 28,
+    "estilo": "Normal",
+    "texto": "2.  Concepto y Propuesta de Valor"
+   },
+   {
+    "i": 29,
+    "estilo": "Normal",
+    "texto": "3.  Analisis de Mercado"
+   },
+   {
+    "i": 30,
+    "estilo": "Normal",
+    "texto": "4.  Analisis Competitivo"
+   },
+   {
+    "i": 31,
+    "estilo": "Normal",
+    "texto": "5.  Plan de Marketing y Captacion"
+   },
+   {
+    "i": 32,
+    "estilo": "Normal",
+    "texto": "6.  Plan de Operaciones"
+   },
+   {
+    "i": 33,
+    "estilo": "Normal",
+    "texto": "7.  Estructura Organizativa y Recursos Humanos"
+   },
+   {
+    "i": 34,
+    "estilo": "Normal",
+    "texto": "8.  Plan Financiero"
+   },
+   {
+    "i": 35,
+    "estilo": "Normal",
+    "texto": "9.  Aspectos Legales y Licencias"
+   },
+   {
+    "i": 36,
+    "estilo": "Normal",
+    "texto": "10.  Conclusiones y Plan de Accion"
+   },
+   {
+    "i": 38,
+    "estilo": "Normal",
+    "texto": "Anexos: Plan Financiero Excel + Checklist Apertura Excel + Catalogo Equipamiento PDF + Calculadora Pricing Excel + Carta 15 Cocktails Tematicos DOCX + Modelo Contrato DOCX + Catalogo 10 Experiencias Tematicas PDF"
+   },
+   {
+    "i": 40,
+    "estilo": "Heading 1",
+    "texto": "1. Resumen Ejecutivo"
+   },
+   {
+    "i": 42,
+    "estilo": "Normal",
+    "texto": "El mercado español de eventos privados y corporativos atraviesa en 2026 una fase de expansión sostenida, impulsado por la recuperación total del sector tras la pandemia y una demanda creciente de experiencias diferenciadas que van más allá del servicio tradicional de barra. Las celebraciones privadas, especialmente bodas y eventos familiares, han elevado sus estándares de calidad, mientras que las empresas demandan propuestas de team building y eventos corporativos que generen impacto en sus equipos. Este contexto crea un vacío de oferta profesional en el segmento de coctelería móvil de calidad, donde la mayoría de operadores actuales ofrecen servicios básicos sin propuesta experiencial diferenciada."
+   },
+   {
+    "i": 43,
+    "estilo": "Normal",
+    "texto": "La empresa propuesta opera como proveedor itinerante de coctelería premium, desplazando barra móvil profesional, equipamiento y personal cualificado al lugar designado por el cliente. El modelo elimina la necesidad de local, traspaso o obra civil, reduciendo drásticamente la inversión inicial respecto a un bar fijo. La propuesta de valor se centra en experiencias temáticas especializadas, desde conceptos Speakeasy años 20 hasta mixología molecular, gin lounge tropical o catas de whisky y champán, permitiendo a wedding planners, agencias de eventos y hoteles ofrecer un servicio diferenciador que eleva el nivel de sus celebraciones."
+   },
+   {
+    "i": 44,
+    "estilo": "Normal",
+    "texto": "La inversión inicial se estima entre 18.000 y 35.000 euros, distribuidos en barra móvil profesional, equipamiento de cristalería y herramientas, refrigeración portátil, vehículo de transporte adaptado e inversión en marca y captación inicial. Esta cifra representa entre cuatro y siete veces menos que la erforderida para abrir un bar tradicional con licencia de actividad clasificada, eliminando además el riesgo de traspaso fallido o local inadecuado."
+   },
+   {
+    "i": 45,
+    "estilo": "Normal",
+    "texto": "Las proyecciones financieras para el primer año de actividad contemplan una facturación entre 65.000 y 90.000 euros, con un punto de equilibrio alcanzado entre los meses seis y nueve de operación. El modelo se basa en la celebración de entre 50 y 80 eventos anuales en fase de madurez, con ticket medio entre 800 y 3.500 euros según número de asistentes y duración del servicio. La estacionalidad del sector concentra entre el 60 y 70 por ciento de la facturación en el período de mayo a septiembre, dedicado principalmente a bodas, más el mes de diciembre orientado a eventos corporativos y celebraciones de empresa."
+   },
+   {
+    "i": 46,
+    "estilo": "Normal",
+    "texto": "El momento actual presenta barreras de entrada significativamente inferiores a las de hace cinco años, cuando la competencia por locales en zonas prime resultaba prohibitiva. La demanda de servicios de coctelería móvil profesional supera claramente la oferta disponible en la mayoría de mercados provinciales españoles, donde operadores como Coctelería para Eventos, Gades Fusion, Movingdrinks o Bars7t Barcelona han demostrado la viabilidad del modelo en sus respectivos territorios. El emprendedores con experiencia en hostelería y contactos en el sector de eventos dispone de una oportunidad concreta para capturar cuota de mercado mediante una inversión controlada y un modelo de costes variables que permite escalar sin estructura fija."
+   },
+   {
+    "i": 47,
+    "estilo": "Heading 1",
+    "texto": "2. Concepto y Propuesta de Valor"
+   },
+   {
+    "i": 49,
+    "estilo": "Normal",
+    "texto": "El concepto de negocio se define como una empresa de servicios de cóctelera itinerante que opera mediante una barra móvil profesional montada directamente en el establecimiento del cliente. A diferencia de un bar fijo tradicional, este modelo elimina la necesidad de local comercial, traspaso o obra civil, reduciendo drásticamente la barrera de entrada y el riesgo operativo. El fundador monta el negocio con una inversión inicial de entre 18.000 y 35.000 euros, que incluye la barra móvil profesional con iluminación LED, equipamiento de cristalería y herramientas de bartender, sistema de refrigeración portátil y un vehículo adaptado para el transporte. Esta estructura permite ofrecer un servicio premium sin los costes fijos de un bar convencional."
+   },
+   {
+    "i": 50,
+    "estilo": "Normal",
+    "texto": "Los tipos de eventos cubiertos responden a una segmentación clara. Las bodas representan el segmento principal durante la temporada alta de mayo a septiembre, con una demanda concentrada que genera entre el 60 y el 70 por ciento de la facturación anual. Los eventos corporativos, concentrados principalmente en diciembre para celebraciones de fin de año, lanzamientos de producto y team buildings, constituyen el segundo pilar de ingresos. Completan la oferta los aniversarios y cumpleaños premium, las inauguraciones comerciales, las despedidas de soltero y los eventos privados en hoteles y salones que carecen de barra propia. Esta diversificación permite suavizar la estacionalidad extrema del sector."
+   },
+   {
+    "i": 51,
+    "estilo": "Normal",
+    "texto": "Los diferenciadores del servicio se articulan en torno a diez experiencias temáticas exclusivas que elevan la propuesta más allá del simple servicio de barra. La oferta incluye Speakeasy años 20 para eventos con estética de prohibción, Mixología Molecular para experiencias innovadoras, Gin Lounge especializado en destilados premium, Tropical/Tiki para celebraciones caribeñas, Vintage Bourbon para catas de whiskey americano, Mediterranean Sunset con inspiración costera española, Latin/Caribbean con ritmos tropicales, Whisky Tasting con selección de single malts, Champagne Bar para momentos de alta gama y Signature Personalizada diseñada a medida del cliente. Cada experiencia incluye carta de cócteles personalizada, garnish específico y presentación adaptada al concepto."
+   },
+   {
+    "i": 52,
+    "estilo": "Normal",
+    "texto": "La propuesta de valor se centra en la eliminación total de complejidad para el cliente. El organizador del evento no necesita preocuparse por la adquisición de licencias temporales de venta de alcohol, la contratación de personal especializado, el aprovisionamiento de cristalería y hielo, ni la logística de montaje y desmontaje. El servicio es integral: la empresa aporta barra móvil de diseño con iluminación LED, bartender profesional de alto nivel, todos los elementos necesarios para el servicio y una experiencia memorables que funciona como elemento diferenciador del evento. El posicionamiento se sitúa en el segmento premium-medio, ofreciendo una relación calidad-precio claramente superior a un servicio de barra convencional pero accesible para eventos de entre 50 y 200 invitados con presupuestos de 800 a 3.500 euros por evento."
+   },
+   {
+    "i": 53,
+    "estilo": "Normal",
+    "texto": "El modelo de captación se fundamenta en relaciones B2B intensivas con wedding planners, agencias de eventos, hoteles, salones de celebraciones y empresas organizadoras de eventos corporativos. La estrategia de precios permite diferentes modalidades: bartender por hora desde 169 euros más IVA, precio por persona y hora entre 12 y 18 euros, eventos integrales desde 450 euros para eventos básicos hasta tarifas premium de partir de 600 euros en mercados de alta gama como Madrid y Barcelona. Este esquema garantiza márgenes operativos sólidos dado el bajo coste estructural del modelo compared to un bar fijo tradicional."
+   },
+   {
+    "i": 54,
+    "estilo": "Heading 1",
+    "texto": "3. Analisis de Mercado"
+   },
+   {
+    "i": 56,
+    "estilo": "Normal",
+    "texto": "El mercado español de eventos y celebraciones constituye un sector con indicadores de demanda sólidos y crecientes, posicionando la cócteleria móvil como un segmento de alto potencial dentro de la hostelería profesional. Según datos del INE y el Wedding Report de Bodas.net, España registra anualmente entre 170.000 y 180.000 enlacesmatrimoniales, con un gasto medio por boda comprendido entre 22.000 y 30.000 euros. De esta cantidad, entre el 8% y 12% se destina específicamente a bebida y barra libre, lo que representa un segmento de mercado de aproximadamente 300 a 640 millones de euros anuales exclusivamente en el canal nupcial. Esta cifra resulta relevante porque el modelo de barra móvil elimina las barreras de entrada propias de un bar fijo: sin traspaso, sin obra civil, sin licencia de actividad clasificada, reduciendo la inversión inicial a un rango de 18.000 a 35.000 euros frente a los 120.000 a 300.000 euros que requiere un establecimiento tradicional."
+   },
+   {
+    "i": 57,
+    "estilo": "Normal",
+    "texto": "El segmento de eventos corporativos complementa significativamente la demanda. La Asociación Española de Empresas Organizadoras de Eventos documenta un crecimiento sostenido del 15% interanual en la contratación de servicios de hostelería para celebraciones corporativas, team buildings y presentaciones de producto. Este canal presenta un perfil de cliente B2B con mayor capacidad de gasto y periodicidad de contratación predecible, especialmente concentrado en los meses de diciembre y junio-julio. La combinación de ambos segmentos, nupcial y corporativo, permite al operador de barra móvil diversificar su cartera de clientes y reducir la dependencia de una única fuente de ingresos."
+   },
+   {
+    "i": 58,
+    "estilo": "Normal",
+    "texto": "La evolución del consumidor hacia experiencias diferenciales marca otra tendencia estructural favorable para este modelo de negocio. El cliente final, ya sea la pareja organizador de su boda o el departamento de comunicación de una empresa, demanda activamente propuestas de mixología premium, cócteles signature personalizados y formatos de barra que aporten espectáculo y memorabilidad al evento. Las tendencias de 2026 consolidan la mixología de autor, las experiencias inmersivas temáticas (Speakeasy años 20, Tiki tropical, Gin Lounge, cócteles moleculares), la sostenibilidad en la selección de productos y la creciente demanda de opciones sin alcohol como mocktails y distillados zero. Estas preferencias justifican un posicionamiento de valor añadido que permite practicar tarifas superiores al mercado tradicional de barras de bar."
+   },
+   {
+    "i": 59,
+    "estilo": "Normal",
+    "texto": "La estacionalidad del sector requiere una planificación operativa rigurosa. El período de mayo a septiembre concentra aproximadamente el 55% de la facturación anual, impulsado por la temporada alta de bodas y celebraciones al aire libre. Diciembre representa un 15% adicional, vinculado a eventos corporativos y fiestas de empresa. El 30% restante se distribuye entre el resto del año, con picos en Semana Santa y eventos concretos. Esta concentración temporal implica que el operador debe dimensionar su capacidad de atención simultánea y gestionar una cartera de bartenders freelance disponible en momentos de máxima demanda."
+   },
+   {
+    "i": 60,
+    "estilo": "Normal",
+    "texto": "Desde el punto de vista geográfico, Madrid, Cataluña, Andalucía, Comunidad Valenciana y Baleares concentran la mayor densidad de eventos y, por tanto, el mercado objetivo prioritario. Las capitales provinciales y las zonas costeras con alta concentración de hoteles, salones de celebraciones y wedding planners profesionales ofrecen las condiciones óptimas para la captación de clientes B2B, que representan el canal de ventas más eficiente para un modelo de barra móvil. La relación con agencias de eventos, hoteles sin barra propia y empresas organizadoras de celebraciones constituye el pilar fundamental de la estrategia comercial, frente al cliente final individual cuya captación resulta más costosa y menos recurrente."
+   },
+   {
+    "i": 61,
+    "estilo": "Heading 1",
+    "texto": "4. Analisis Competitivo"
+   },
+   {
+    "i": 63,
+    "estilo": "Normal",
+    "texto": "El sector de la coctelería móvil en España presenta una fragmentación notable con competidores establecidos que dominan nichos específicos, mientras que el mercado permanece altamente atomizado con numerosos operadores locales de pequeña escala."
+   },
+   {
+    "i": 64,
+    "estilo": "Normal",
+    "texto": "Competidores directos consolidados"
+   },
+   {
+    "i": 65,
+    "estilo": "Normal",
+    "texto": "Coctelería para Eventos (cocteleriaparaeventos.com) constituye el referente histórico del sector con más de dos décadas de trayectoria, habiendo capitalizado la expansión del mercado nupcial español desde principios de los 2000. Su posicionamiento abarca todo el territorio nacional con una red de bartenders asociados que permite cubrir eventos simultáneos, aunque su modelo mass market diluye la propuesta de valor premium. Gades Fusion opera desde Madrid e Ibiza con fuerte presencia en el segmento de eventos de alto poder adquisitivo, habiendo desarrollado alianzas estratégicas con hoteles de cadena y wedding planners de primer nivel. Bars7t Barcelona, activa desde 2010, domina el mercado catalán con un posicionamiento premium orientado a eventos corporativos y celebraciones privadas, habiendo construido una reputación basada en la consistencia de servicio y la profesionalización de su equipo. Bartending Lab, capitaneado por Gonzalo Bedoya, representa el modelo de bartender-star con fuerte componente de marca personal y presencia en medios especializados. Tragolandia Barra Móvil se ha posicionado en Barcelona como opción premium con equipamiento diferenciado y propuestas experienciales. Movingdrinks cubre el mercado madrileño con un modelo operativo ágil, mientras que The Bar España y Raingin representan operadores emergentes que compiten en el segmento medio-bajo mediante precios agresivos."
+   },
+   {
+    "i": 66,
+    "estilo": "Normal",
+    "texto": "Competidores indirectos"
+   },
+   {
+    "i": 67,
+    "estilo": "Normal",
+    "texto": "Los catering tradicionales representan la amenaza competitiva más relevante en el segmento corporativo, donde muchas empresas contratan servicio de bebida dentro del paquete integral de restauración, reduciendo las posibilidades de venta cruzada. Los bares fijos que ofrecen servicio externo capturan eventos de pequeño formato donde el cliente prioriza proximidad geográfica sobre especialización. Los propios espacios de eventos (salones de bodas, hoteles, fincas) incorporan cada vez más barra interna como servicio incluido, canibalizando demanda potencial."
+   },
+   {
+    "i": 68,
+    "estilo": "Normal",
+    "texto": "Análisis DAFO"
+   },
+   {
+    "i": 69,
+    "estilo": "Normal",
+    "texto": "Las debilidades principales radican en la ausencia de track record comercial para una marca de nueva creación, lo que dificulta la captación de primeros clientes en un sector donde la confianza determina la contratación. La dependencia extrema del calendario festivo concentra el 60-70% de facturación entre mayo y septiembre, generando vulnerabilidad operativa durante el invierno. La sensibilidad a cancelaciones por causas meteorológicas o decisiones de última hora del cliente implica riesgo de ingresos no recuperables."
+   },
+   {
+    "i": 70,
+    "estilo": "Normal",
+    "texto": "Las fortalezas residen en la especialización en experiencias temáticas diferenciadas (Speakeasy, Mixología Molecular, Gin Lounge, Tropical Tiki), la agilidad operativa al evitar inversiones en local fijo, y el bajo CapEx que permite flexibilidad financiera. La posibilidad de ofrecer servicios premium en Madrid y Barcelona desde 600 euros por evento posiciona la oferta en un segmento competitivo."
+   },
+   {
+    "i": 71,
+    "estilo": "Normal",
+    "texto": "Las oportunidades incluyen el gap de oferta temática profesional en España, donde la mayoría de operadores ofrecen barra estándar sin diferenciación experiencial. El crecimiento sostenido del mercado de eventos corporativos post-pandemia genera demanda de propuestas innovadoras. Las alianzas con wedding planners constituyen el canal de captación más eficiente, dado que estas profesionales gestionan decisiones de bebida para múltiples clientes anuales."
+   },
+   {
+    "i": 72,
+    "estilo": "Normal",
+    "texto": "Las amenazas principales comprenden la estacionalidad agresiva que limita la utilización del activo durante seis meses anuales, el intrusismo de bartenders informales que operan sin estructura empresarial ni seguros, y la competencia creciente de bares fijos que diversifican hacia servicio externo para compensar márgenes de local."
+   },
+   {
+    "i": 73,
+    "estilo": "Normal",
+    "texto": "Cinco Fuerzas de Porter"
+   },
+   {
+    "i": 74,
+    "estilo": "Normal",
+    "texto": "El poder de negociación de clientes es alto dado el elevado número de proveedores y la facilidad de comparación de presupuestos. El poder de negociación de proveedores es bajo al tratarse de equipamiento estandarizado y bartender freelance sin restricciones contractuales. La amenaza de nuevos entrantes es elevada por las bajas barreras de entrada (inversión moderada, regulación accesible), aunque las barreras de éxito son altas (requiere red de contactos, reputación acumulada y calidad consistente del bartender). La amenaza de sustitutos es moderada mediante caterings tradicionales y barras internas de espacios. La rivalidad competitiva es intensa en el segmento medio, pero se reduce en el premium donde la diferenciación temática protege el posicionamiento."
+   },
+   {
+    "i": 75,
+    "estilo": "Normal",
+    "texto": "Factores críticos de éxito"
+   },
+   {
+    "i": 76,
+    "estilo": "Normal",
+    "texto": "La marca personal del bartender constituye el activo principal para una empresa de coctelería móvil, siendo el elemento diferenciador que justifica el precio frente a competidores genéricos. La presencia activa en redes sociales con contenido de eventos ejecutados genera prueba social imprescindible para captación de clientes. Las alianzas estables con wedding planners determinan el flujo de negocio recurrente, siendo el canal B2B con mayor ratio de conversión. La consistencia en calidad de servicio y experiencia del cliente resulta no negociable en un sector donde cada evento es visible ante la red profesional del organizador."
+   },
+   {
+    "i": 77,
+    "estilo": "Heading 1",
+    "texto": "5. Plan de Marketing y Captacion"
+   },
+   {
+    "i": 79,
+    "estilo": "Normal",
+    "texto": "Posicionamiento y Propuesta de Valor"
+   },
+   {
+    "i": 80,
+    "estilo": "Normal",
+    "texto": "El mercado español de coctelería para eventos en 2026 presenta una oportunidad clara: los clientes demandan experiencias memorables pero con presupuestos ajustados respecto a años anteriores. La propuesta de valor se centra en un posicionamiento premium-accesible, donde el cliente percibe exclusividad y profesionalidad sin el coste de un bar fijo. El mensaje diferenciador debe enfatizar la personalización total del servicio, la calidad del producto y la experiencia inmersiva que solo una barra móvil profesional puede ofrecer. Este posicionamiento permite competir tanto en el segmento de bodas de nivel medio-alto como en corporativos que buscan impacto visual sin despliegues excesivos."
+   },
+   {
+    "i": 81,
+    "estilo": "Normal",
+    "texto": "Identidad Visual y Presencia Digital"
+   },
+   {
+    "i": 82,
+    "estilo": "Normal",
+    "texto": "La identidad visual constituye el primer contacto con el cliente y debe transmitir profesionalidad inmediata. Se recomienda inversión inicial de 1.500-2.500 EUR en branding completo: logo profesional, paleta de colores coherente con el segmento premium (negros, dorados, verdes oscuros o tonos tierra según especialización), tipografía elegante y fotografía de alta calidad. La presencia digital es obligatoria y no negociable. La web propia debe incluir galería de eventos real, testimonios verificados,-desglose de servicios con precios orientativos y formulario de contacto funcional. Las redes sociales requieren estrategia específica: Instagram como canal principal con un post diario y reels semanales mostrando preparación de cócteles, ambiente de eventos y testimonios de clientes. Pinterest funciona como herramienta de captación en el segmento nupcial, donde las parejas buscan inspiración. Google Business Profile optimizado es crítico para búsquedas locales, mientras que perfiles en Bodas.net y Zankyou generan visibilidad directa en el canal de planificación de bodas."
+   },
+   {
+    "i": 83,
+    "estilo": "Normal",
+    "texto": "Estrategia de Captación B2B: Prioridad Absoluta"
+   },
+   {
+    "i": 84,
+    "estilo": "Normal",
+    "texto": "La captación B2B representa el 70-80% del volumen de negocio en empresas de barra móvil consolidadas. Las alianzas con wedding planners constituyen el canal prioritario: se ofrece comisión del 10-15% sobre el evento cerrado, con condiciones claras y pago tras celebración. Este modelo requiere presentar propuesta comercial personalizada, ofrecer tasting gratuito para que conozcan el producto y mantener comunicación regular durante temporada alta. Los salones de bodas y hoteles requieren acuerdos preferentes mediante los cuales el espacio deriva clientes a cambio de comisión o acuerdo de precio fijo. La estrategia de espacios singulares incluye ofrecer degustación gratuita de cóctelesignature al responsable de eventos, demostrando capacidad técnica y creatividad. Los catering empresariales y agencias de eventos B2B complementan el canal con contratos recurrentes para seminarios, presentaciones de producto y eventos de equipo."
+   },
+   {
+    "i": 85,
+    "estilo": "Normal",
+    "texto": "Marketing de Lanzamiento y Generación de Demanda"
+   },
+   {
+    "i": 86,
+    "estilo": "Normal",
+    "texto": "El lanzamiento requiere inversión controlada pero de alto impacto. Se recomienda organizar evento showcase dirigido a wedding planners locales, ofreciendo experiencia completa de servicio con cócteles de presentación, documentación comercial y networking. La colaboración con fotógrafo de bodas para portfolio inicial tiene doble beneficio: imágenes profesionales para materiales de marketing y relación con profesional clave del ecosistema nupcial. La prensa local y blogs de eventos de zona generan cobertura gratuita valiosa durante el primer año. El presupuesto marketing debe representar 8-12% de la facturación durante el primer año (priorizando acciones B2B sobre publicidad digital), reduciéndose a 4-6% en madurez cuando la cartera de clientes recurrentes genera derivaciones orgánicas."
+   },
+   {
+    "i": 87,
+    "estilo": "Normal",
+    "texto": "Política Comercial y Métricas de Control"
+   },
+   {
+    "i": 88,
+    "estilo": "Normal",
+    "texto": "La política de precios debe ser parcialmente pública, mostrando rangos orientativos en web (evento básico desde 450 EUR, estándar 600-900 EUR, premium desde 1.200 EUR) mientras se ofrece presupuesto personalizado según requisitos específicos. Los indicadores clave de rendimiento incluyen: leads mensuales captados, tasa de conversión de lead a evento cerrado (objetivo 25-35%), ticket medio por evento y Net Promoter Score post-evento para generar referidos. El seguimiento mensual de estos KPIs permite ajustar inversión en canales de captación según rentabilidad real de cada fuente."
+   },
+   {
+    "i": 89,
+    "estilo": "Heading 1",
+    "texto": "6. Plan de Operaciones"
+   },
+   {
+    "i": 91,
+    "estilo": "Normal",
+    "texto": "La operativa de una empresa de coctelería itinerante difiere radicalmente de un bar fijo. Al no existir local de hostelería, la infraestructura se reduce a un almacén de entre 15 y 25 metros cuadrados, típicamente un garaje o trastero adaptado, donde se guarda el equipmentaje, la cristalería y el stock seco. Este espacio debe cumplir requisitos básicos de temperatura y seguridad para almacenar destilados de alta gama, por lo que recomiendo instalar estanterías industriales, un sistema de climatización básico y medidas antiincendios. El alquiler de este tipo de espacio en ciudades medias españolas oscila entre 150 y 300 euros mensuales, dependiendo de ubicación y accesibilidad para carga y descarga."
+   },
+   {
+    "i": 92,
+    "estilo": "Normal",
+    "texto": "El equipamiento principal es la barra móvil profesional, inversión que oscila entre 2.400 y 4.500 euros dependiendo del modelo elegido. La referencia top en calidad-precio del mercado español es la GGM Gastro MCSH, con un coste neto de 2.420 euros que asciende a 2.880 euros IVA incluido, incluyendo nevera bar integrada, encimera de cristal templado y sistema de iluminación LED. Alternativas válidas son la Mewindo Drinkbox Evolution o la Station Deus 120 italiana, aunque su precio supera los 3.500 euros. A esto hay que añadir un set de cristalería profesional compuesto por 300 a 500 unidades entre copas de cóctel, vasos de diferentes capacidades y copas de champagne, con un desembolso inicial de 800 a 1.200 euros en proveedores como Crisal o Chef and Sommelier. Las herramientas de bartending (cocteleras, jiggers, mixing glass, strainers, cucharas batidoras) representan otros 400 a 600 euros."
+   },
+   {
+    "i": 93,
+    "estilo": "Normal",
+    "texto": "El vehículo de transporte constituye otro activo operativo fundamental. Una furgoneta adaptada tipo Iveco Daily o Fiat Ducato de segunda mano, con sistema de carga seguro y modificaciones para transportar la barra desmontada, hielo y cristalería, tiene un coste de adquisición entre 8.000 y 15.000 euros. Debo señalar que este gasto puede financiarse parcialmente a través de leasing operativo, con cuotas mensuales de 250 a 400 euros que se integran en la estructura de costes variables."
+   },
+   {
+    "i": 94,
+    "estilo": "Normal",
+    "texto": "Los procesos operativos por evento siguen una secuencia sistemática que garantiza consistencia y profesionalidad. Tras la confirmación del cliente, se realiza un briefing inicial donde se define la carta de cócteles personalizada, el número de invitados, horarios de servicio y características del espacio disponible. El día anterior al evento se ejecuta la preparación o mise en place: corte de garnishes, preparación de jarabes y bitters caseros, hielo y stock de bebidas. El montaje en lokasi del cliente requiere entre 60 y 120 minutos antes del inicio del servicio, dependiendo de la complejidad de la barra y la temática contratada. Durante el evento, el ratio operativo estándar es de un bartender profesional por cada 50 invitados, con una duración típica de servicio de 3 a 6 horas. El desmontaje y limpieza posterior ocupa aproximadamente 45 minutos."
+   },
+   {
+    "i": 95,
+    "estilo": "Normal",
+    "texto": "La gestión de proveedores requiere establecer relaciones con distribuidores especializados. Para destilados y licores premium, Coalimentaria y otros mayoristas del sector ofrecen condiciones de pago a 30 días con descuentos por volumen del 8 al 15 por ciento. Los mixers, refrescos y zumos se gestionan a través de Makro o similares, con compras recurrentes que permiten negociar tarifas personalizadas. El hielo se adquiere localmente en cada evento para garantizar frescura, con un coste medio de 15 a 25 euros por evento."
+   },
+   {
+    "i": 96,
+    "estilo": "Normal",
+    "texto": "El modelo de personal se basa en el fundador como bartender principal más una red de profesionales freelance bajo demanda. Esta estructura evita costes fijos de plantilla y permite escalar la capacidad operativa en temporada alta. El coste de un bartender freelance oscila entre 80 y 120 euros por evento de 5 horas, más desplazamientos. La gestión de esta red requiere un sistema de disponibilidad actualizado y protocolos de formación sobre los cócteles de la carta de cada evento."
+   },
+   {
+    "i": 97,
+    "estilo": "Normal",
+    "texto": "Finalmente, la tecnología de gestión se limita a herramientas ligeras: un CRM básico como HubSpot Free para seguimiento de leads y eventos, facturación electrónica obligatoria desde 2024, y un sistema de calendario compartido. La inversión en software no supera los 50 euros mensuales si se aprovechan las opciones freemium disponibles. Este enfoque tecnológico minimalista es coherente con la naturaleza del negocio, donde el activo diferenciador es la experiencia del bartender y la calidad del servicio, no la complejidad operativa."
+   },
+   {
+    "i": 98,
+    "estilo": "Heading 1",
+    "texto": "7. Estructura Organizativa y Recursos Humanos"
+   },
+   {
+    "i": 100,
+    "estilo": "Normal",
+    "texto": "El modelo organizativo de una empresa de coctelería de eventos itinerante difiere radicalmente del de un bar fijo, y esta diferencia condiciona toda la estructura de recursos humanos. Al no existir un local permanente con horario continuado, no se requiere plantilla fija sino una red de profesionales freelance especializados que se activan por evento, siendo el fundador el activo principal del negocio."
+   },
+   {
+    "i": 101,
+    "estilo": "Normal",
+    "texto": "El fundador asume un doble rol que resulta determinante para la viabilidad del proyecto en sus primeros años. Por un lado, actúa como bartender principal en los eventos, especialmente en aquellos de alto valor como celebraciones premium en Madrid o Barcelona donde el cliente valora la marca personal del coctelero. Por otro lado, gestiona toda la vertiente comercial: captación de clientes, negociación con wedding planners y agencias de eventos, coordinación logística de cada servicio y seguimiento post-evento. Esta convergencia de funciones permite reducir costes fijos pero exige una dedicación horaria elevada que limita la capacidad de crecimiento orgánico sin incorporar estructura."
+   },
+   {
+    "i": 102,
+    "estilo": "Normal",
+    "texto": "La red de bartenders freelance constituye el segundo pilar del organigrama. Se recomienda mantener una cartera de entre cinco y ocho profesionales de confianza con los que haber trabajado previamente o que cuenten con referencias verificables del sector. El perfil óptimo combina formación en mixología, experiencia en eventos de cierta envergadura y disponibilidad para aceptar servicios con preaviso de entre una semana y quince días. La retribución estándar en el mercado español para 2026 se sitúa entre dieciocho y veinticinco euros brutos por hora en eventos premium, o entre ciento cincuenta y doscientos cincuenta euros por servicio completo de cuatro a seis horas. El pago se formaliza mediante factura de autónomo del propio bartender, lo que elimina la obligación de cotizar a la Seguridad Social desde la empresa contratante, aunque exige verificar que el profesional esté dado de alta y al corriente de sus obligaciones fiscales."
+   },
+   {
+    "i": 103,
+    "estilo": "Normal",
+    "texto": "Para eventos de más de cien invitados resulta imprescindible incorporar al menos un ayudante o runner que gestione el aprovisionamiento de hielo, reposición de botellas, limpieza de cristalería durante el servicio y apoyo logístico general. En eventos de más de ciento cincuenta asistentes puede ser necesario un segundo ayudante. Su coste oscila entre doce y dieciocho euros brutos por hora, y al tratarse de una relación laboral ocasional, la empresa debe formalizar un contrato eventual y cotizar a la Seguridad Social proporcionalmente, o bien integrarlos en la red de freelance si disponen de alta como autónomos."
+   },
+   {
+    "i": 104,
+    "estilo": "Normal",
+    "texto": "Respecto al marco legal, la opción mayoritaria en este tipo de empresas es el alta en régimen de autónomo, con una cuota mensual de doscientos treinta a trescientos euros en 2026 para los primeros años gracias a la tarifa plana reducida. Cuando la facturación supera los cuarenta mil euros anuales de forma sostenida, resulta recomendable valorar la constitución de una sociedad limitada unipersonal, lo que aporta mayor credibilidad ante clientes corporativos y permite desglosar el IVA de las inversiones en equipamiento."
+   },
+   {
+    "i": 105,
+    "estilo": "Normal",
+    "texto": "La formación continua constituye un elemento diferenciador en un mercado donde las tendencias en coctelería evolucionan rápidamente. Se recomienda realizar al menos un curso especializado anual en instituciones como la Escuela de Coctelería de Madrid, Bartending Lab o programas del IES Técnico de Hostelería. La asistencia a ferias internacionales como el Bar Convent de Berlín o Barcelona Cocktail Art Week permite mantenerse actualizado y establecer contactos con proveedores de premium spirits que posteriormente se convierten en aliados comerciales."
+   },
+   {
+    "i": 106,
+    "estilo": "Normal",
+    "texto": "El plan de prevención de riesgos laborales debe contemplar las especificidades del trabajo itinerante: manipulación de cargas al cargar y descargar el equipamiento en el vehículo, montaje de estructuras en espacios con limitaciones de acceso, riesgo de cortes con cristalería, exposición prolongada al frío de los refrigeradores portátiles y desplazamientos nocturnos tras eventos. Se recomienda elaborar un documento específico de evaluación de riesgos y proporcionar a todos los profesionales equipos de protección individual adecuados."
+   },
+   {
+    "i": 107,
+    "estilo": "Normal",
+    "texto": "Finalmente, la política de incentivos para fidelizar a los bartenders freelance más competitivos incluye prioridad en la asignación de eventos de mayor rentabilidad, mejora progresiva de la tarifa por evento a partir del quinto servicio anual contratado, y acceso a formaciones pagadas por la empresa como recompensa al compromiso. Esta estrategia resulta clave para retener talento en un sector donde la rotación de profesionales es elevada y donde la calidad del servicio depende directamente de la consistencia del equipo."
+   },
+   {
+    "i": 108,
+    "estilo": "Heading 1",
+    "texto": "8. Plan Financiero"
+   },
+   {
+    "i": 110,
+    "estilo": "Normal",
+    "texto": "La inversión inicial para una empresa de cócteleria de eventos con barra móvil se sitúa entre 18.000 y 35.000 euros, significativamente inferior a la apertura de un bar tradicional donde los costes de traspaso, obra y licencia pueden superar los 120.000 euros. El mayor desembolso corresponde al vehículo adaptado, que representa entre 8.000 y 15.000 euros si se opta por una furgoneta de segunda mano correctamente habilitada para transporte de equipamiento. La barra móvil profesional, como la referencia GGM Gastro MCSH con un coste neto de 2.420 euros, constituye el activo diferenciador principal y debe presupuestarse entre 2.500 y 5.000 euros incluyendo personalización y elementos de branding. El inventario inicial de cristalería premium, herramientas de bartender y coctelería oscila entre 1.500 y 2.500 euros, mientras que la refrigeración portátil y máquina de hielo profesional añaden entre 1.000 y 1.800 euros. El stock inicial de bebidas premium, imprescindible para posicionar el servicio en el segmento medio-alto del mercado, requiere una inversión de 3.000 a 5.000 euros. Finalmente, los gastos de constitución empresarial, licencia de venta de alcohol, seguro de responsabilidad civil obligatorio y curso de manipulador de alimentos suman entre 1.500 y 2.500 euros, mientras que la creación de marca, web profesional y branding inicial oscila entre 1.500 y 3.000 euros."
+   },
+   {
+    "i": 111,
+    "estilo": "Normal",
+    "texto": "La cuenta de resultados previsional a tres años refleja una curva de crecimiento agresiva pero realista para el sector. El primer año se proyecta una facturación de 65.000 a 90.000 euros, equivalente a 40-50 eventos con un ticket medio de aproximadamente 1.500 euros. El segundo año, con una cartera consolidada de wedding planners, agencias de eventos y hoteles, la facturación debería situarse entre 110.000 y 150.000 euros con 60-80 eventos. El tercer año, alcanzando madurez operativa y capacidad de captación directa, los ingresos previsionales ascienden a 160.000-220.000 euros con 90-120 eventos. Esta progresión es coherente con el ciclo de maduración de las empresas de eventos en España, donde los primeros 18 meses se destinan fundamentalmente a construcción de reputación y red comercial."
+   },
+   {
+    "i": 112,
+    "estilo": "Normal",
+    "texto": "La estructura de costes variables por evento presenta la siguiente composición: materia prima (bebidas, mixers, garnish, hielo) representa entre el 18% y 25% de la facturación del servicio, mientras que el coste de personal freelance/bartenders adicionales se sitúa entre el 25% y 35%. Los costes de transporte y combustible oscilan entre el 4% y 6% de la facturación, dependiendo de la distribución geográfica de los eventos. El gasto en marketing, crítico en el primer año para dar a conocer el servicio, representa entre el 8% y 12% de la facturación, reduciéndose al 4-6% en años posteriores gracias a la recomendación boca a boca y las contrataciones recurrentes. Las amortizaciones del equipamiento y vehículo, calculadas según vida útil fiscal, representan entre el 5% y 8% de los ingresos. Finalmente, la cuota de autónomo y gestoríasupone entre el 5% y 8% de la facturación."
+   },
+   {
+    "i": 113,
+    "estilo": "Normal",
+    "texto": "El margen bruto por evento se sitúa entre el 40% y 55%, muy superior al 25-35% que obtiene un bar tradicional debido a la ausencia de costes fijos de local, personal estructural y consumos generales. Esta estructura de márgenes permite absorber la estacionalidad del sector, donde los meses de mayo a septiembre concentran el 60-70% de la facturación por la temporada de bodas, complemented by el pico de diciembre en eventos corporativos. El punto de equilibrio se alcanza con 30-40 eventos anuales, considerando un ticket medio de 1.400 euros, lo que implica que el negocio es viable desde el primer año siempre que se alcance la ocupación mínima prevista."
+   },
+   {
+    "i": 114,
+    "estilo": "Normal",
+    "texto": "Los escenarios de planificación financiera para el primer año son los siguientes: en el escenario pesimista con 35 eventos y facturación de 52.500 euros, el resultado operativo sería positivo aunque reducido. El escenario realista con 50 eventos y facturación de 75.000 euros generaría un resultado bruto de explotación de aproximadamente 25.000-30.000 euros tras cubrir costes variables y fijos. El escenario optimista con 75 eventos y facturación de 112.500 euros permitiría alcanzar resultados de 45.000-50.000 euros, acelerando significativamente la amortización de la inversión inicial."
+   },
+   {
+    "i": 115,
+    "estilo": "Normal",
+    "texto": "Las necesidades de financiación externa son modestas gracias al bajo volumen de inversión requerido. Un emprendedor con capacidad de aporte propio del 60-70% (12.000-24.000 euros) cubriría la inversión inicial sin necesidad de financiación ajena. No obstante, para quienes requieran capital circulante adicional durante los meses de menor actividad (enero-abril), los préstamos ICO para emprendedores o los microcréditos de entidades especializadas (5.000-15.000 euros) ofrecen condiciones favorables con tipos de interés inferiores al 6% anual. El retorno de la inversión se sitúa entre 18 y 30 meses en el escenario realista, inferior al estándar de 36-48 meses de un bar tradicional, lo que convierte a la cócteleria de eventos con barra móvil en una de las opciones de menor riesgo y mayor velocidad de recuperación dentro del sector de hostelería española."
+   },
+   {
+    "i": 116,
+    "estilo": "Heading 1",
+    "texto": "9. Aspectos Legales y Licencias"
+   },
+   {
+    "i": 118,
+    "estilo": "Normal",
+    "texto": "La empresa de coctelería itinerante opera sin local de hostelería fijo, lo que elimina la necesidad de licencia de actividad clasificada y simplifica notablemente el marco regulatorio. Sin embargo, existen obligaciones específicas que deben cumplirse para ejercer legalmente la actividad de servicio de bebidas alcohólicas en eventos."
+   },
+   {
+    "i": 119,
+    "estilo": "Normal",
+    "texto": "La forma jurídica recomendada para iniciar la actividad es el autónomo profesional, dado que la inversión inicial moderada (18.000-35.000 EUR) no justifica la constitución de sociedad limitada desde el primer día. El Régimen Especial de Trabajadores Autónomos (RETA) permite en 2026 la cuota reducida de 80 EUR mensuales durante el primer año para nuevos autónomas, con posibilidad de tarifa plana de 60 EUR mensuales los meses 13 a 24 si los ingresos no superan el salario mínimo interprofesional. Cuando la facturación anual supere los 40.000-60.000 EUR, conviene valorar la constitución de SL unipersonal: la Ley Crea y Crece de 2022 permite constituirla con capital social de tan solo 1 euro, aunque el registro mercantil exige un depósito de 3.000 EUR que puede realizarse en plazo de cinco años."
+   },
+   {
+    "i": 120,
+    "estilo": "Normal",
+    "texto": "El alta en Hacienda se formaliza mediante el modelo 036 o 037, seleccionando el epígrafe del Impuesto sobre Actividades Económicas correspondiente. El código 673.2 (servicios de bar especiales) resulta el más adecuado para este tipo de actividad itinerante, aunque algunos asesores recomiendan el 677.9 (otros servicios de alimentación) cuando la oferta incluye elaboración de alimentos además de bebidas. La declaración censal debe incluir también el alta en el Registro de Operadores Intracomunitarios si se prevén operaciones con países de la Unión Europea."
+   },
+   {
+    "i": 121,
+    "estilo": "Normal",
+    "texto": "El permiso para venta y servicio de bebidas alcohólicas constituye el requisito más complejo por su variabilidad según la comunidad autónoma. La Ley Reguladora de las Bebidas Alcohólicas establece el marco estatal, pero cada comunidad autónoma desarrolla normativa específica. En la Comunidad de Madrid, el Decreto 184/1998 regula esta actividad y exige comunicación previa al ayuntamiento del municipio donde se realice el evento. En Cataluña, la Ley 20/1985 establece requisitos adicionales y un impuesto sobre bebidas alcohólicas. La empresa debe verificar los requisitos específicos de cada autonomía donde opere, ya que las sanciones por incumplimiento pueden alcanzar hasta 600.000 EUR en casos graves."
+   },
+   {
+    "i": 122,
+    "estilo": "Normal",
+    "texto": "Las autorizaciones temporales por evento dependen del tipo de espacio. En espacios privados (hoteles, salones de celebraciones, fincas rurales), basta con que el establecimiento cliente disponga de su propia licencia de apertura y que la empresa de coctelería presente el alta en Hacienda y el seguro de responsabilidad civil. En espacios públicos (plazas, calles, playas), es obligatorio obtener autorización municipal específica, con tasas que oscilan entre 50 y 200 EUR por día según el municipio, además de licencia de ocupación de vía pública."
+   },
+   {
+    "i": 123,
+    "estilo": "Normal",
+    "texto": "El certificado de manipulador de alimentos resulta obligatorio para todo el personal que intervenga en la preparación y servicio de bebidas. Desde 2010, este certificado tiene validez indefinida y puede obtenerse gratuitamente mediante cursos online de cuatro a ocho horas de duración homologados por la comunidad autónoma correspondiente."
+   },
+   {
+    "i": 124,
+    "estilo": "Normal",
+    "texto": "El seguro de responsabilidad civil profesional es absolutamente imprescindible y constituye requisito indispensable para trabajar con agencias de eventos y wedding planners seria. Las coberturas recomendadas oscilan entre 300.000 y 600.000 EUR, con primas anuales de 350 a 700 EUR dependiendo de la cobertura elegida y el historial de siniestralidad. Adicionalmente, conviene contratar seguro de transporte para la mercancía (bebidas, cristalería, equipamiento) y seguro de protección jurídica ante posibles reclamaciones. El vehículo de empresa debe estar dado de alta en el régimen de flota o incluir cobertura específica para uso profesional."
+   },
+   {
+    "i": 125,
+    "estilo": "Normal",
+    "texto": "El cumplimiento del Reglamento General de Protección de Datos (RGPD) exige registrar la actividad de tratamiento en la Agencia Española de Protección de Datos, especialmente si se utiliza un CRM para gestionar clientes y proveedores. La prevención de riesgos laborales, aunque de aplicación general, presenta particularidades en eventos itinerantes: desplazamiento de equipos pesados, trabajo en espacios no adaptados y manipulación de cristales requieren evaluación específica y equipamiento de protección individual adecuado."
+   },
+   {
+    "i": 126,
+    "estilo": "Normal",
+    "texto": "Los plazos de puesta en marcha son breves: el alta de autónomo se tramita en un día laborable, el alta en Hacienda en 48 horas, la contratación del seguro de RC en 24-48 horas y el curso de manipulador de alimentos entre cuatro y ocho horas online. En una semana puede estar operativa la totalidad de requisitos legales básicos."
+   },
+   {
+    "i": 127,
+    "estilo": "Heading 1",
+    "texto": "10. Conclusiones y Plan de Accion"
+   },
+   {
+    "i": 129,
+    "estilo": "Normal",
+    "texto": "La oportunidad de mercado en España para una empresa de cóctelería de eventos con barra móvil es clara y fundamentada en datos verificables. El sector de eventos privados y corporativos en España mueve más de 4.500 millones de euros anuales, con un crecimiento sostenido del 8% en bodas y celebraciones post-pandemia. El segmento de barra móvil profesional representa actualmente menos del 3% de ese mercado, lo que configura un gap de oferta significativo donde la experiencia del bartender y la propuesta temática diferenciadora pueden capturar un premium del 40-60% sobre servicios de barra convencionales. La barrera de entrada es objetivamente baja: frente a los 120.000-250.000 euros que requiere un bar fijo con traspaso y obra, esta empresa opera con 18.000-35.000 euros de inversión inicial, sin licencia de actividad clasificada y con permisos puntuales por evento, lo que reduce drásticamente el riesgo operativo y el tiempo de puesta en marcha a semanas en lugar de meses."
+   },
+   {
+    "i": 130,
+    "estilo": "Normal",
+    "texto": "Los riesgos principales requieren gestión activa desde el día uno. La estacionalidad agresiva concentra el 60-70% de la facturación entre mayo-septiembre y diciembre, dejando huecos de tres a cuatro meses con ingresos mínimos que deben financiarse con fondo de maniobra. La dependencia de wedding planners como canal principal de captación puede limitar el crecimiento si no se diversifica, por lo que la cartera debe equilibrarse con clientes corporativos y directos. La calidad del bartender es el activo crítico del negocio: un solo profesional con mala ejecución puede destruir la reputación en un sector donde el boca a boca genera el 70% de las oportunidades. Las cancelaciones de última hora, habituales en eventos privados, exigen contratos con anticipo del 30-50% y política de cancelación clara. La mitigación pasa por construir una red de tres a cuatro bartenders freelance de confianza como backup, mantener reservas financieras para la baja temporada y cultivar una reputación impecable desde el primer evento."
+   },
+   {
+    "i": 131,
+    "estilo": "Normal",
+    "texto": "Las fortalezas del proyecto son tangibles y defensables. El CapEx bajo permite alcanzar el punto de equilibrio en seis a ocho eventos, frente a los 18-24 meses de un bar tradicional. La escalabilidad es real: una segunda barra móvil permite ejecutar dos eventos simultáneos a partir del año dos, multiplicando capacidad sin multiplicar estructura. La propuesta de valor basada en experiencias temáticas (Speakeasy, Mixología Molecular, Gin Lounge, Tiki) captura segmentos de cliente con alto poder adquisitivo dispuesto a pagar 600-800 euros por evento premium en Madrid o Barcelona, frente a los 450 euros de barra libre estándar."
+   },
+   {
+    "i": 132,
+    "estilo": "Normal",
+    "texto": "La hoja de implementación mes a mes es realista y progresiva. El Mes 1 se dedica a estructura legal y operativa: alta en autónomo, registro de marca, página web profesional, seguro de responsabilidad civil obligatorio, curso de manipulador de alimentos y diseño del primer brief de carta de cócteles. El Mes 2 concentra la inversión en equipamiento: barra móvil GGM Gastro MCSH por 2.420 euros o equivalente, Mewindo Drinkbox, Station Deus 120, cristalería, herramientas de bartender y refrigeración portátil, junto con la adaptación del vehículo de transporte y primer stock de licor. El Mes 3 ejecuta la captación comercial: alianzas con cinco wedding planners locales mediante propuesta de valor diferenciada, evento showcase gratuito para captar primeros leads y ejecución de dos a tres eventos piloto para ajustar operativa. Los Meses 4-6 constituyen la rampa comercial activa con objetivo de tres a cinco eventos mensuales, refinamiento de carta y experiencias temáticas, primeras reseñas y testimonios de clientes. Los Meses 7-12 escalan a cinco a ocho eventos por mes en temporada alta, contratación de dos a tres bartenders freelance recurrentes y consecución del primer evento corporativo grande con empresa del Ibex 35 o similar."
+   },
+   {
+    "i": 133,
+    "estilo": "Normal",
+    "texto": "Los KPIs de seguimiento mensual deben controlarse con rigor: leads recibidos, tasa de cierre (objetivo 35-40%), eventos ejecutados, ticket medio real versus presupuestado, margen bruto por evento (objetivo 45-55%), NPS de clientes, distribución de leads por canal (wedding planners versus directos) y tipología de temática más vendida para ajustar oferta. La visión a tres-cinco años contempla la posibilidad de equipo propio con dos barras móviles operando en paralelo, especialización en eventos corporativos premium con contratos anuales y modelo de franquicia validado para expansión nacional. La recomendación final es inequívoca: empezar ahora mismo. La temporada alta de bodas comienza en mayo y captar wedding planners requiere tres a seis meses de cultivo previo para entrar en sus carteras de proveedores de 2026. Cada mes de retraso es un evento perdido en la ventana de máxima rentabilidad."
+   },
+   {
+    "i": 139,
+    "estilo": "Normal",
+    "texto": "ChefBusiness"
+   },
+   {
+    "i": 140,
+    "estilo": "Normal",
+    "texto": "Consultoria Gastronomica"
+   },
+   {
+    "i": 142,
+    "estilo": "Normal",
+    "texto": "Mas de 29 anos transformando negocios gastronomicos.\nDiagnostico, consultoria integral, mentoria y apertura de restaurantes y servicios itinerantes.\n\nchefbusiness.co\ninfo@chefbusiness.co"
+   },
+   {
+    "i": 144,
+    "estilo": "Normal",
+    "texto": "Complementa este plan con nuestros productos digitales:"
+   },
+   {
+    "i": 145,
+    "estilo": "Normal",
+    "texto": "-> Kit de Tareas: Bar / Cocktails - 12 EUR"
+   },
+   {
+    "i": 146,
+    "estilo": "Normal",
+    "texto": "-> Kit de Tareas: Catering / Eventos - 12 EUR"
+   },
+   {
+    "i": 147,
+    "estilo": "Normal",
+    "texto": "-> Kit de Escandallos Pro - 12 EUR"
+   },
+   {
+    "i": 148,
+    "estilo": "Normal",
+    "texto": "-> Gastro Pro Prompts eBook (300+ prompts IA) - 9 EUR"
+   },
+   {
+    "i": 149,
+    "estilo": "Normal",
+    "texto": "\nchefbusiness.co/productos-digitales/"
+   }
+  ],
+  "tablas": []
+ },
+ "carta_15_cocteles": {
+  "recetas": [
+   {
+    "nombre": "OLD FASHIONED",
+    "ficha": [
+     "Tematica: Speakeasy    |    Glaseria: Vaso Old Fashioned (Rocks 30cl)",
+     "Origen: New York, decada de 1880. El primer cocktail bautizado como tal en la historia.",
+     "Disolver el azucar con el bitter y unas gotas de agua en el vaso. Anadir el bourbon. Remover bien con cuchara mezcladora. Anadir el cubo de hielo grande. Flamear el twist de naranja sobre el cocktail liberando los aceites esenciales. Decorar.",
+     "En eventos: pre-montar la mezcla azucar+bitter+agua en bottles de servicio para acelerar tiempo. Servir el cubo de hielo desde nevera independiente para que dure mas.",
+     "50 invitados (100 cocktails): Bourbon: 3L | Bitter: 100 golpes (1 botella) | Azucar: 50 terrones | Naranjas: 4 unidades",
+     "100 invitados (200 cocktails): Bourbon: 6L | Bitter: 200 golpes (2 botellas) | Azucar: 100 terrones | Naranjas: 8 unidades",
+     "200 invitados (400 cocktails): Bourbon: 12L | Bitter: 400 golpes (4 botellas) | Azucar: 200 terrones | Naranjas: 16 unidades"
+    ],
+    "ingredientes_ml": [
+     "Whisky bourbon (Woodford Reserve, Buffalo Trace) | 60 ml",
+     "Terron de azucar moreno | 1 ud",
+     "Bitter Angostura | 2 golpes",
+     "Agua | unas gotas",
+     "Hielo cubo grande | 1 cubo 5x5cm",
+     "Twist de piel de naranja flameada | 1 ud"
+    ]
+   },
+   {
+    "nombre": "SAZERAC",
+    "ficha": [
+     "Tematica: Speakeasy    |    Glaseria: Vaso Old Fashioned previamente enfriado",
+     "Origen: New Orleans, mediados del s. XIX. Considerado el cocktail oficial de la ciudad desde 2008.",
+     "Enfriar el vaso con hielo. En vaso mezclador aparte, machacar azucar con bitter, anadir rye y remover con hielo. Vaciar el vaso enfriado y enjuagarlo con absenta (girar y desechar el exceso). Colar la mezcla en el vaso. Decorar con twist de limon (sin echar el twist al vaso, solo expresar y descartar).",
+     "El rinse de absenta es la firma de este cocktail. Si no tienes absenta, sustituir por Pernod o anis francés. Eventos premium: usar Sazerac Rye original como diferenciador.",
+     "50 invitados (100 cocktails): Rye: 3L | Peychaud: 150 golpes | Absenta: 250ml | Limones: 3",
+     "100 invitados (200 cocktails): Rye: 6L | Peychaud: 300 golpes (1 botella) | Absenta: 500ml | Limones: 6",
+     "200 invitados (400 cocktails): Rye: 12L | Peychaud: 600 golpes (2 botellas) | Absenta: 1L | Limones: 12"
+    ],
+    "ingredientes_ml": [
+     "Rye whiskey (Sazerac, Rittenhouse) | 60 ml",
+     "Cubo de azucar | 1 ud",
+     "Peychaud Bitters | 3 golpes",
+     "Absenta para enjuagar el vaso | 5 ml",
+     "Twist de piel de limon | 1 ud"
+    ]
+   },
+   {
+    "nombre": "NEGRONI",
+    "ficha": [
+     "Tematica: Speakeasy / Italian classic    |    Glaseria: Vaso Old Fashioned",
+     "Origen: Florencia, 1919. Atribuido al Conde Camillo Negroni.",
+     "Anadir los tres ingredientes en partes iguales sobre el cubo grande de hielo en el vaso. Remover con cuchara mezcladora 8-10 segundos. Decorar con twist de naranja expresada sobre el cocktail.",
+     "Cocktail ultra-rapido de preparar (perfecto para volumen alto en eventos). Pre-batchear en botellas 3:3:3 te permite servir 100 negronis en 30 minutos. Variantes: Boulevardier (cambiar gin por bourbon), White Negroni (Lillet + gin + Suze).",
+     "50 invitados (100 cocktails): Gin: 1.5L | Vermouth rosso: 1.5L | Campari: 1.5L | Naranjas: 4",
+     "100 invitados (200 cocktails): Gin: 3L | Vermouth: 3L | Campari: 3L | Naranjas: 8",
+     "200 invitados (400 cocktails): Gin: 6L | Vermouth: 6L | Campari: 6L | Naranjas: 16"
+    ],
+    "ingredientes_ml": [
+     "Gin London Dry (Beefeater, Tanqueray) | 30 ml",
+     "Vermouth rosso (Carpano Antica, Cinzano 1757) | 30 ml",
+     "Campari | 30 ml",
+     "Hielo cubo grande | 1 cubo 5x5cm",
+     "Twist de piel de naranja | 1 ud"
+    ]
+   },
+   {
+    "nombre": "GIN TONIC PREMIUM CON BOTANICOS",
+    "ficha": [
+     "Tematica: Gin Lounge    |    Glaseria: Copa balon (Riedel o Schott Zwiesel) 70cl",
+     "Origen: Reinventado en Espana en los anos 2000s, hoy senal de identidad de la cocteleria patria.",
+     "Llenar la copa con hielo (criticol mucho hielo y muy seco para evitar diluir). Verter el gin sobre el hielo. Maridar la tonica deslizandola por una cuchara para no perder gas. Anadir botanicos especificos. NO remover (preservar burbuja).",
+     "Para eventos premium ofrecer 2-3 ginebras + 2-3 tonicas para que cada invitado elija. La presentacion (copa balon enorme + hielo enorme + botanico fresco) genera fotografia automatica de invitados.",
+     "50 invitados (100 cocktails): Gin (3 variedades): 2.5L | Tonica Fever-Tree: 50 botellas | Hielo: 25kg cubos grandes | Botanicos: kit completo",
+     "100 invitados (200 cocktails): Gin: 5L | Tonica: 100 botellas | Hielo: 50kg | Botanicos: kit doble",
+     "200 invitados (400 cocktails): Gin: 10L | Tonica: 200 botellas | Hielo: 100kg | Botanicos: kit triple"
+    ],
+    "ingredientes_ml": [
+     "Gin premium (Hendrick's, Monkey 47, Gin Mare, Bombay Sapphire) | 50 ml",
+     "Tonica premium Fever-Tree Indian o Mediterranean | 200 ml",
+     "Hielo cubo grande | 4-5 cubos llenando la copa",
+     "Botanicos segun gin: pepino+rosa (Hendrick's) | bayas rosa+enebro (Monkey 47) | romero+aceitunas (Gin Mare) | a juicio"
+    ]
+   },
+   {
+    "nombre": "FRENCH 75",
+    "ficha": [
+     "Tematica: Gin Lounge / Champagne Bar    |    Glaseria: Copa flute o coupe",
+     "Origen: Paris, Bar Hemingway del Hotel Ritz, durante la I Guerra Mundial. Bautizado por la potencia del canon frances de 75mm.",
+     "En coctelera con hielo, batir gin + zumo de limon + sirup durante 8 segundos. Doble colado en copa flute. Completar con champagne frio. Decorar con twist de limon.",
+     "El cocktail mas elegante para bodas. Pre-batchear (sin champagne) en botellas y completar con cava al servir. Cada flute consume 60ml de cava: una botella 75cl rinde 12 cocktails.",
+     "50 invitados (100 cocktails): Gin: 1.5L | Limon: 750ml zumo (15 limones) | Sirup: 750ml | Cava: 4 botellas",
+     "100 invitados (200 cocktails): Gin: 3L | Limon: 1.5L (30 limones) | Sirup: 1.5L | Cava: 8 botellas",
+     "200 invitados (400 cocktails): Gin: 6L | Limon: 3L (60 limones) | Sirup: 3L | Cava: 16 botellas"
+    ],
+    "ingredientes_ml": [
+     "Gin London Dry (Beefeater, Tanqueray) | 30 ml",
+     "Zumo de limon recien exprimido | 15 ml",
+     "Sirup simple (1:1 azucar:agua) | 15 ml",
+     "Champagne o cava brut | 60 ml",
+     "Twist de piel de limon | 1 ud"
+    ]
+   },
+   {
+    "nombre": "BRAMBLE",
+    "ficha": [
+     "Tematica: Gin Lounge / Berry signature    |    Glaseria: Vaso Old Fashioned o copa highball",
+     "Origen: Londres, 1984. Creado por Dick Bradsell en Fred's Club.",
+     "En coctelera con hielo, batir gin + limon + sirup 8 segundos. Colar sobre vaso con hielo picado. Verter creme de mure por encima creando efecto degradado purpura. Decorar con mora fresca y gajo de limon.",
+     "Cocktail visualmente espectacular gracias al degradado. Imprescindible hielo picado (no cubos): si no tienes maquina, usar bolsa de hielo y mazo. Imprescindible decorar con mora fresca para foto.",
+     "50 invitados (100 cocktails): Gin: 2.5L | Limon: 1.25L (25 limones) | Sirup: 750ml | Creme mure: 750ml | Moras: 50 ud | Limones decoracion: 7",
+     "100 invitados (200 cocktails): Gin: 5L | Limon: 2.5L (50 limones) | Sirup: 1.5L | Creme mure: 1.5L | Moras: 100 ud",
+     "200 invitados (400 cocktails): Gin: 10L | Limon: 5L (100 limones) | Sirup: 3L | Creme mure: 3L | Moras: 200 ud"
+    ],
+    "ingredientes_ml": [
+     "Gin London Dry | 50 ml",
+     "Zumo de limon recien exprimido | 25 ml",
+     "Sirup simple | 15 ml",
+     "Creme de mure (licor de mora) | 15 ml",
+     "Hielo picado (crushed ice) | llenar el vaso",
+     "Mora fresca + gajo limon | 1 + 1 ud"
+    ]
+   },
+   {
+    "nombre": "MAI TAI",
+    "ficha": [
+     "Tematica: Tropical / Tiki    |    Glaseria: Vaso Old Fashioned o tiki mug",
+     "Origen: Oakland, California, 1944. Creado por Trader Vic Bergeron.",
+     "En coctelera con hielo, batir todos los liquidos 10 segundos. Colar sobre vaso con hielo picado. Decorar con ramillete generoso de hierbabuena, lima y cereza marrasquino. Servir con pajita.",
+     "El orgeat es el ingrediente clave que distingue Mai Tai bueno de mediocre. Si no encuentras, usa Monin orgeat o haz casero (no es lo mismo pero salva). Servir SIEMPRE con pajita para mezclar el degradado.",
+     "50 invitados (100 cocktails): Ron oscuro: 1.5L | Ron blanco: 1.5L | Curacao: 750ml | Orgeat: 750ml | Limas: 25 (1.25L zumo) | Hierbabuena: 5 manojos",
+     "100 invitados (200 cocktails): Ron oscuro: 3L | Ron blanco: 3L | Curacao: 1.5L | Orgeat: 1.5L | Limas: 50",
+     "200 invitados (400 cocktails): Ron oscuro: 6L | Ron blanco: 6L | Curacao: 3L | Orgeat: 3L | Limas: 100"
+    ],
+    "ingredientes_ml": [
+     "Ron oscuro Jamaica (Appleton 12, Plantation Original Dark) | 30 ml",
+     "Ron blanco Martinica (Clement, La Mauny) | 30 ml",
+     "Curacao naranja | 15 ml",
+     "Sirup de orgeat (almendras) | 15 ml",
+     "Zumo de lima recien exprimido | 25 ml",
+     "Hielo picado | llenar vaso",
+     "Hierbabuena fresca + gajo de lima + cereza marrasquino | guarnicion"
+    ]
+   },
+   {
+    "nombre": "PINA COLADA PREMIUM",
+    "ficha": [
+     "Tematica: Tropical / Beach    |    Glaseria: Copa hurricane o coco vaciado",
+     "Origen: Puerto Rico, 1954. Creado en el Caribe Hilton de San Juan.",
+     "En batidora de vaso anadir todos los liquidos + hielo. Batir 10-15 segundos hasta cremoso. Verter en copa hurricane. Flotar el ron anejo por encima (opcional, version premium). Decorar con trozo de pina y cereza.",
+     "Para bodas en exterior, este es el cocktail #1 demandado. Pre-batchear el mix sin alcohol y solo anadir ron + hielo en el momento. Servir en coco vaciado eleva el ticket percibido x2.",
+     "50 invitados (100 cocktails): Ron blanco: 3L | Ron anejo: 750ml | Crema coco: 3L | Pina natural: 6L (15 pinas) | Hielo: 30kg",
+     "100 invitados (200 cocktails): Ron blanco: 6L | Ron anejo: 1.5L | Crema coco: 6L | Pina: 12L (30 pinas)",
+     "200 invitados (400 cocktails): Ron blanco: 12L | Ron anejo: 3L | Crema coco: 12L | Pina: 24L (60 pinas)"
+    ],
+    "ingredientes_ml": [
+     "Ron blanco Puerto Rico (Bacardi Carta Blanca) | 60 ml",
+     "Ron anejo (Plantation Original Dark, opcional flotado) | 15 ml",
+     "Crema de coco Lopez | 60 ml",
+     "Zumo de pina natural | 120 ml",
+     "Hielo en cubos | medio vaso de batido",
+     "Trozo pina + cereza marrasquino | guarnicion"
+    ]
+   },
+   {
+    "nombre": "MOJITO DE FRUTA DE LA PASION",
+    "ficha": [
+     "Tematica: Tropical / Latin signature    |    Glaseria: Vaso highball / Collins (35cl)",
+     "Origen: Reinterpretacion contemporanea del clasico cubano del s. XIX.",
+     "En vaso highball, anadir hierbabuena + sirup + zumo lima. Macerar suavemente con muddler (sin destrozar la menta, solo liberar aceites). Anadir pulpa de maracuya y ron. Llenar con hielo picado. Completar con soda. Remover suavemente. Decorar con media fruta de la pasion encima del hielo y ramillete hierbabuena.",
+     "Cocktail con WOW factor visual. La pulpa de maracuya se compra congelada en mayoristas asiaticos (mas barato que fresca y misma calidad). Usar pulpa con semillas para textura caracteristica.",
+     "50 invitados (100 cocktails): Ron: 2.5L | Maracuyas: 25 frutas | Limas: 25 | Sirup: 750ml | Hierbabuena: 10 manojos | Soda: 12 botellas 1L",
+     "100 invitados (200 cocktails): Ron: 5L | Maracuyas: 50 | Limas: 50 | Sirup: 1.5L | Hierbabuena: 20 manojos",
+     "200 invitados (400 cocktails): Ron: 10L | Maracuyas: 100 | Limas: 100 | Sirup: 3L | Hierbabuena: 40 manojos"
+    ],
+    "ingredientes_ml": [
+     "Ron blanco cubano (Havana Club 3) | 50 ml",
+     "Pulpa fresca de fruta de la pasion | 30 ml (1/2 fruta)",
+     "Zumo de lima recien exprimido | 20 ml",
+     "Sirup simple | 15 ml",
+     "Hojas de hierbabuena fresca | 8-10 ud",
+     "Soda club | completar",
+     "Hielo picado | llenar vaso",
+     "Media fruta de la pasion + hierbabuena | guarnicion"
+    ]
+   },
+   {
+    "nombre": "APEROL SPRITZ",
+    "ficha": [
+     "Tematica: Mediterranean Sunset    |    Glaseria: Copa balon o copa de vino blanco",
+     "Origen: Veneto, Italia, anos 1950. Hoy uno de los cocktails mas vendidos del mundo.",
+     "Llenar copa con hielo. Verter Aperol, despues prosecco, despues soda (orden 3-2-1). Remover suavemente UNA vez. Decorar con rodaja de naranja exprimida sobre la copa y aceituna verde en pincho.",
+     "El cocktail #1 de bodas y eventos veraniegos. Ultra-rapido y visualmente perfecto (color naranja brillante). Pre-batch del Aperol en botellas dosificadoras acelera mucho.",
+     "50 invitados (100 cocktails): Aperol: 3L | Prosecco: 6 botellas | Soda: 3 botellas 1.5L | Naranjas: 7 unidades | Aceitunas: 50 ud",
+     "100 invitados (200 cocktails): Aperol: 6L | Prosecco: 12 botellas | Soda: 6L | Naranjas: 14",
+     "200 invitados (400 cocktails): Aperol: 12L | Prosecco: 24 botellas | Soda: 12L | Naranjas: 28"
+    ],
+    "ingredientes_ml": [
+     "Aperol | 60 ml",
+     "Prosecco DOC frio | 90 ml",
+     "Soda club | 30 ml",
+     "Hielo cubo grande | 3-4 cubos",
+     "Rodaja de naranja | 1 ud",
+     "Aceituna verde grande (opcional Veneto-style) | 1 ud"
+    ]
+   },
+   {
+    "nombre": "HUGO",
+    "ficha": [
+     "Tematica: Mediterranean Sunset / Floral    |    Glaseria: Copa balon o copa de vino blanco",
+     "Origen: Tirol del Sur, Italia, 2005. Creado por el bartender Roland Gruber.",
+     "Llenar copa con hielo. Anadir sirup de sauco. Anadir prosecco lentamente. Anadir soda. Decorar con generoso ramillete de hierbabuena suavemente palmeado y rodaja de lima.",
+     "Alternativa floral al Aperol Spritz. Muy demandado por publico femenino y bodas. La hierbabuena PALMEADA (no machacada) libera aroma sin amargor.",
+     "50 invitados (100 cocktails): Sirup sauco: 1L | Prosecco: 8 botellas | Soda: 3L | Hierbabuena: 8 manojos | Limas: 5",
+     "100 invitados (200 cocktails): Sirup sauco: 2L | Prosecco: 16 botellas | Soda: 6L | Hierbabuena: 16 manojos",
+     "200 invitados (400 cocktails): Sirup sauco: 4L | Prosecco: 32 botellas | Soda: 12L | Hierbabuena: 32 manojos"
+    ],
+    "ingredientes_ml": [
+     "Sirup de flor de sauco (St-Germain o Monin Elderflower) | 20 ml",
+     "Prosecco DOC frio | 120 ml",
+     "Soda club | 30 ml",
+     "Hielo cubo | 3-4 cubos",
+     "Hojas de hierbabuena fresca | 6-8 ud",
+     "Rodaja de lima | 1 ud"
+    ]
+   },
+   {
+    "nombre": "VERMOUTH & TONIC CON CITRICOS",
+    "ficha": [
+     "Tematica: Mediterranean Sunset / Vermut bar    |    Glaseria: Copa balon",
+     "Origen: Reinterpretacion moderna del aperitivo italiano clasico.",
+     "Llenar copa con hielo. Anadir vermouth rosso. Completar con tonica deslizandola por cuchara. Quemar suavemente la rama de romero con soplete o mechero (libera aroma). Decorar con twist de naranja, romero y aceituna en pincho.",
+     "El cocktail aperitivo de moda en Madrid 2025-26. La rama de romero soplete genera teatro y aroma envolvente. Para Valencia o Madrid centro, ofrecer ademas opcion vermouth blanco con citricos.",
+     "50 invitados (100 cocktails): Vermouth: 3L | Tonica: 6L (Fever-Tree caja 24x200ml) | Naranjas: 5 | Romero: 5 ramos | Aceitunas: 50",
+     "100 invitados (200 cocktails): Vermouth: 6L | Tonica: 12L (50 botellas 200ml)",
+     "200 invitados (400 cocktails): Vermouth: 12L | Tonica: 24L (100 botellas 200ml)"
+    ],
+    "ingredientes_ml": [
+     "Vermouth rosso premium (Carpano Antica, Cocchi Storico) | 60 ml",
+     "Tonica premium (Fever-Tree Mediterranean) | 120 ml",
+     "Hielo cubo grande | 3-4 cubos",
+     "Twist de piel de naranja + rama de romero | guarnicion",
+     "Aceituna verde grande | 1 ud"
+    ]
+   },
+   {
+    "nombre": "ESPRESSO MARTINI",
+    "ficha": [
+     "Tematica: Premium / Despues de cena / Corporativo    |    Glaseria: Copa Martini fria",
+     "Origen: Londres, 1983. Creado por Dick Bradsell. Recuperado en 2020s como signature de bodas y empresas.",
+     "En coctelera con hielo abundante, anadir vodka + licor cafe + espresso + sirup. Batir VIGOROSAMENTE durante 12-15 segundos (clave para crear espuma cremosa). Doble colado en copa Martini fria. Decorar con 3 granos de cafe formando triangulo.",
+     "Cocktail FOTOGENIC y muy demandado en eventos corporativos. Necesitas maquina espresso o pre-extraer cafe en termo. La espuma cremosa solo sale con shake muy energico. Servir en mitad de evento como \"segundo aire\" para invitados.",
+     "50 invitados (100 cocktails): Vodka: 2.5L | Kahlua: 1L | Espresso: 1.5L (50 cafes) | Sirup: 250ml | Cafe en grano: 150 granos",
+     "100 invitados (200 cocktails): Vodka: 5L | Kahlua: 2L | Espresso: 3L (100 cafes) | Sirup: 500ml",
+     "200 invitados (400 cocktails): Vodka: 10L | Kahlua: 4L | Espresso: 6L (200 cafes) | Sirup: 1L"
+    ],
+    "ingredientes_ml": [
+     "Vodka premium (Belvedere, Grey Goose) | 50 ml",
+     "Licor de cafe (Kahlua, Mr Black) | 20 ml",
+     "Espresso recien hecho (frio o templado) | 30 ml",
+     "Sirup simple | 5 ml (opcional segun gusto)",
+     "Hielo en cubos | coctelera llena",
+     "3 granos de cafe | decoracion"
+    ]
+   },
+   {
+    "nombre": "MARGARITA SMOKED (mezcal)",
+    "ficha": [
+     "Tematica: Smoke / Latin premium / Signature    |    Glaseria: Copa Margarita o coupe con borde escarchado de sal ahumada",
+     "Origen: Reinterpretacion del clasico mexicano con mezcal artesanal.",
+     "Escarchar borde de la copa con limon + sal ahumada. En coctelera con hielo, batir mezcal + cointreau + lima + sirup 10 segundos. Doble colado en copa. Decorar con gajo de lima y polvo de chile o pimentón espolvoreado.",
+     "Cocktail signature para diferenciar bartenders artesanales. El mezcal cuesta 35-50% mas que tequila pero el ticket lo justifica. Aroma ahumado del mezcal + sal ahumada = experiencia sensorial unica.",
+     "50 invitados (100 cocktails): Mezcal: 2.5L | Cointreau: 1L | Limas: 25 | Sirup: 500ml | Sal ahumada: 200g | Pimenton: 100g",
+     "100 invitados (200 cocktails): Mezcal: 5L | Cointreau: 2L | Limas: 50 | Sirup: 1L",
+     "200 invitados (400 cocktails): Mezcal: 10L | Cointreau: 4L | Limas: 100 | Sirup: 2L"
+    ],
+    "ingredientes_ml": [
+     "Mezcal joven (Del Maguey VIDA, Montelobos) | 50 ml",
+     "Triple sec (Cointreau) | 20 ml",
+     "Zumo de lima recien exprimido | 25 ml",
+     "Sirup simple | 10 ml",
+     "Sal ahumada para escarchar el borde | al gusto",
+     "Gajo de lima + chile guajillo o pimentón | guarnicion"
+    ]
+   },
+   {
+    "nombre": "MOCKTAIL TROPICAL SIN ALCOHOL (Zero Proof)",
+    "ficha": [
+     "Tematica: Sin alcohol / Inclusivo / Conductor designado    |    Glaseria: Copa hurricane o tiki mug",
+     "Origen: Categoria zero-proof en auge desde 2023. OBLIGATORIA en eventos profesionales.",
+     "En coctelera con hielo, batir todos los zumos + crema coco + sirup 8 segundos. Verter sobre vaso con hielo picado. Completar con soda. Decorar generosamente con hierbabuena, rodaja de pina y cereza para que parezca tan elaborado como un cocktail con alcohol.",
+     "IMPRESCINDIBLE ofrecer al menos 2 mocktails en TODO evento (publico no bebedor, embarazadas, conductor designado, abstemios). Demuestra profesionalidad. Mismo cuidado decorativo que cocktails con alcohol.",
+     "50 invitados (100 cocktails): Pina: 4.5L | Naranja: 3L | Limas: 25 | Granadina: 750ml | Crema coco: 1L | Hielo picado: 30kg",
+     "100 invitados (200 cocktails): Pina: 9L | Naranja: 6L | Limas: 50 | Granadina: 1.5L | Crema coco: 2L",
+     "200 invitados (400 cocktails): Pina: 18L | Naranja: 12L | Limas: 100 | Granadina: 3L | Crema coco: 4L",
+     "• Los precios de carta sugeridos son orientativos para el mercado espanol 2026. Ajusta segun zona (Madrid/BCN admite +20-30%, ciudades pequenas -15%) y nivel del evento.",
+     "• Para eventos de mas de 100 invitados es recomendable limitar la carta a 5-7 cocktails (incluyendo 1 mocktail) para mantener fluidez de servicio.",
+     "• El escalado asume 2 cocktails por invitado en bodas (4-6h servicio). En corporativos cortos (2-3h) puede bajar a 1.5/persona.",
+     "• Pre-batchear cocktails sin parte gaseosa (cava, soda, tonica) en botellas dosificadoras agiliza muchisimo el servicio en eventos grandes.",
+     "• Servir SIEMPRE 1 mocktail visualmente atractivo. Demuestra profesionalidad e inclusion.",
+     "• Verificar siempre alergias (leche en Pina Colada, frutos secos en Mai Tai orgeat). Tener fichas alergenos visibles."
+    ],
+    "ingredientes_ml": [
+     "Zumo de pina natural | 90 ml",
+     "Zumo de naranja recien exprimido | 60 ml",
+     "Zumo de lima recien exprimido | 20 ml",
+     "Sirup de granadina (real, no quimica) | 15 ml",
+     "Crema de coco Lopez | 20 ml",
+     "Soda club | completar",
+     "Hielo picado | llenar vaso",
+     "Hierbabuena + rodaja de pina + cereza | guarnicion"
+    ]
+   }
+  ],
+  "notas": [
+   "• Los precios de carta sugeridos son orientativos para el mercado espanol 2026. Ajusta segun zona (Madrid/BCN admite +20-30%, ciudades pequenas -15%) y nivel del evento.",
+   "• Para eventos de mas de 100 invitados es recomendable limitar la carta a 5-7 cocktails (incluyendo 1 mocktail) para mantener fluidez de servicio.",
+   "• El escalado asume 2 cocktails por invitado en bodas (4-6h servicio). En corporativos cortos (2-3h) puede bajar a 1.5/persona.",
+   "• Pre-batchear cocktails sin parte gaseosa (cava, soda, tonica) en botellas dosificadoras agiliza muchisimo el servicio en eventos grandes.",
+   "• Servir SIEMPRE 1 mocktail visualmente atractivo. Demuestra profesionalidad e inclusion.",
+   "• Verificar siempre alergias (leche en Pina Colada, frutos secos en Mai Tai orgeat). Tener fichas alergenos visibles."
+  ]
+ },
+ "experiencias_10_tematicas": [
+  {
+   "i": 4,
+   "estilo": "Normal",
+   "texto": "10 EXPERIENCIAS TEMATICAS"
+  },
+  {
+   "i": 5,
+   "estilo": "Normal",
+   "texto": "PARA EVENTOS PREMIUM"
+  },
+  {
+   "i": 7,
+   "estilo": "Normal",
+   "texto": "Cada experiencia incluye: ambientacion sensorial,\ncarta sugerida, props, audio, pricing y publico ideal\nListas para presentar a tus clientes"
+  },
+  {
+   "i": 16,
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoria Gastronomica"
+  },
+  {
+   "i": 17,
+   "estilo": "Normal",
+   "texto": "chefbusiness.co"
+  },
+  {
+   "i": 19,
+   "estilo": "Normal",
+   "texto": "1. SPEAKEASY ANOS 20"
+  },
+  {
+   "i": 20,
+   "estilo": "Normal",
+   "texto": "La era dorada de la coctelería clandestina"
+  },
+  {
+   "i": 22,
+   "estilo": "Normal",
+   "texto": "La experiencia Speakeasy Años 20 transporta a los invitados a los speakeasies de la Nueva York de 1920, donde la transgresión se vestía de elegancia. Al cruzar el umbral, la penumbra envuelve el espacio como un terciopelo negro, iluminado apenas por bombillas de tono amber que proyectan sombras danzantes sobre paredes de ladrillo visto y maderas oscuras de caoba. El aroma a whisky añejo, tabaco rubio y un sutil toque de lavanda vintage flota en el aire, mientras una banda de jazz en vivo interpreta melodías swing que invitan a cerrar los ojos y dejarse llevar por el ritmo. Cada detalle ha sido diseñado para despertar los sentidos: la barra de mármol pulido, los vasos de cristal tallado, las composiciones florales secas y el crujir casi imperceptible del suelo de madera bajo los pasos de los invitados, que acceden mediante una contraseña susurrada en la entrada."
+  },
+  {
+   "i": 23,
+   "estilo": "Normal",
+   "texto": "Este concepto está diseñado para eventos corporativos de alto nivel, celebraciones privadas, presentaciones de producto y experiencias VIP donde la exclusividad es el elemento diferenciador. El público objetivo incluye profesionales del sector empresarial que buscan differentiates sus eventos, parejas que desean una boda con personalidad propia y marcas de lujo que quieren crear un impacto emocional en sus clientes. Es especialmente atractivo para grupos de entre 30 y 150 asistentes que valoran la narrativa experiential sobre lo meramente convencional."
+  },
+  {
+   "i": 24,
+   "estilo": "Normal",
+   "texto": "Desde una perspectiva de negocio, ofrecer la experiencia Speakeasy representa una oportunidad de premiumización evidente. Los cócteles clásicos como el Old Fashioned, el Sazerac, el Manhattan o el Negroni, acompañados de una carta de whiskies premium, justifican un ticket medio superior al de una barra convencional. Además, la experiencia genera contenido visual instagramble de alto valor, amplificando el alcance orgánico del evento sin inversión adicional en marketing. En un mercado donde el cliente hostelero busca diferenciación constante, este concepto responde a la demanda de experiencias memorables que van más allá del simple consumo: ofrece narrativa, nostalgia sofisticada y un storytelling que los invitados recordarán y compartirán, generando valor real para la marca organizadora."
+  },
+  {
+   "i": 25,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Old Fashioned | Sazerac | Manhattan | Negroni | Whisky Sour"
+  },
+  {
+   "i": 26,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Lamparas vintage Tiffany, terciopelo borgona, cristaleria Old Fashioned y Coupe, fonografo, carteles Ley Seca repro, cigarras (sin uso), cubo hielo retro plateado, fajines elegantes para bartenders."
+  },
+  {
+   "i": 27,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Jazz anos 20 Louis Armstrong / Duke Ellington / Bessie Smith en vinyl o lista Spotify dedicada."
+  },
+  {
+   "i": 28,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Calida tenue, ambar y dorado. Foco directo a la barra, resto en penumbra teatral."
+  },
+  {
+   "i": 29,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +30% sobre paquete estandar — premium."
+  },
+  {
+   "i": 30,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas vintage, corporativos elegantes (consultoras, abogados), aniversarios alta gama, lanzamientos de marca."
+  },
+  {
+   "i": 32,
+   "estilo": "Normal",
+   "texto": "2. GIN LOUNGE"
+  },
+  {
+   "i": 33,
+   "estilo": "Normal",
+   "texto": "El templo botanico de la mixologia espanola"
+  },
+  {
+   "i": 35,
+   "estilo": "Normal",
+   "texto": "La experiencia GIN LOUNGE redefine el ritual mediterráneo del gin tonic transformándolo en una propuesta inmersiva donde cada sentido participa. Al cruzar el espacio, el aroma de enebro, cilantro y piel de pomelo flota en el aire mientras una iluminación cálida de tonos ambarinos y dorados crea una atmósfera intimista que invita a la conversación. El sonido jazz instrumental de fondo punctuated por el tintineo del hielo y las copas genera un ritmo pausado, casi ceremonial. Tras la barra de mármol negro, hileras de botellas de cristal revelan etiquetas de ginebras artesanales de pequeños destilados españoles, mientras manojos de romero, lavanda, salvia y cáscara de limón descansan en vasos de cristal frente al invitado, convirtiendo los botanicals en protagonistas visuales de una propuesta que appeals tanto alnovato como al connoisseur."
+  },
+  {
+   "i": 36,
+   "estilo": "Normal",
+   "texto": "Este formato resulta ideal para eventos corporativos de cierre de ejercicio, celebraciones de aniversarios empresariales, presentaciones de producto en el sector lujo o reuniones ejecutivas que buscan diferenciarse del habitual cótel de empresa. El público objetivo incluye directivos, profesionales del sector financiero, empresarios del mundo inmobiliario y clientes de marcas premium que valoran la exclusividad y buscan experiencias memorables que hablen de su estatus. La propuesta también captive a grupos de amigos con alto poder adquisitivo que celebrán ocasiones especiales y buscan entornos sofisticados donde cada detalle esté curado."
+  },
+  {
+   "i": 37,
+   "estilo": "Normal",
+   "texto": "Desde la perspectiva de rentabilidad, GIN LOUNGE representa una oportunidad de incrementar ticket medio significativamente. La carta de ocho a diez ginebras de autor con precios premium, el formato de copa balón con cubo grande que invita a compartir tiempo extendido, y la explicación personalizada del bartender transforman cada consumición en una experiencia de valor percibido elevado. Los huéspedes no compran simplemente una bebida, invierten en una narrativa sensorial exclusiva que compartiran en sus redes sociales, generando publicidad orgánica de alto valor para la marca organizadora. En un mercado donde la diferenciación determina el éxito, esta propuesta posiciona al organizador como referente de innovación en experiencias gastronómicas corporativas."
+  },
+  {
+   "i": 38,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Gin Tonic Premium 6 variedades | French 75 | Bramble | Negroni con gin sloe | Tom Collins"
+  },
+  {
+   "i": 39,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Copas balon Spiegelau o Schott Zwiesel, cubos hielo cristalinos, bandejas con botanicos frescos (cardamomo, romero, pepino, rosa, enebro, baya rosa), pinzas pro, botellas tonicas Fever-Tree premium expuestas."
+  },
+  {
+   "i": 40,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Lounge electronica chill (Bonobo, Tycho, ODESZA) o jazz contemporaneo (Norah Jones, Diana Krall)."
+  },
+  {
+   "i": 41,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Cristalina con tono frio elegante. Iluminacion focal a las copas para foto."
+  },
+  {
+   "i": 42,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +25% — alta percepcion premium especialmente en Espana."
+  },
+  {
+   "i": 43,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas modernas, aperitivos corporativos, eventos prensa, presentaciones de producto premium, eventos en hoteles 4-5 estrellas."
+  },
+  {
+   "i": 45,
+   "estilo": "Normal",
+   "texto": "3. TROPICAL TIKI"
+  },
+  {
+   "i": 46,
+   "estilo": "Normal",
+   "texto": "Caribe, Polinesia y bossanova en tu evento"
+  },
+  {
+   "i": 48,
+   "estilo": "Normal",
+   "texto": "TROPICAL TIKI: Una experiencia que transporta a los sentidos directamente a los clubes polynesios de los años cincuenta, donde la magia de Trader Vic cobraba vida en cada copa servida. La visión cromática explode en tonos turquesa, coral y verde tropical, mientras las antorchas de flameo sutil proyectan sombras danzantes sobre estructuras de bambú y techos de hoja de plátano que evocan una isla remota. El aroma a frutas exóticas madura, combinados con notas ahumadas sutiles y la fragancia dulce del ron añejo flotan en el aire creando una atmósfera envolvente. Los tiki mugs de cerámica artesanal, tallados con rostros ancestrales, llegan a las manos de los invitados cargados de cócteles vibrantes donde el ron se fusiona con maracuyá, mango y coco, decorados con paraguas de papel y rodajas de piña caramelizada que invitan a la fotografía instantánea."
+  },
+  {
+   "i": 49,
+   "estilo": "Normal",
+   "texto": "Este concepto está diseñado para eventos al aire libre durante la temporada estival, bodas con temática tropical, presentaciones de marca en jardines privados, celebraciones corporativas de verano y fiestas privadas que buscan diferenciarse de lo convencional. El público objetivo incluye empresas que desean agradecer a sus equipos con experiencias memorables, parejas que buscan una boda diferente y organizadores de eventos que entienden que la presentación del cócteles es parte integral de la experiencia guest journey."
+  },
+  {
+   "i": 50,
+   "estilo": "Normal",
+   "texto": "La justificación comercial de TROPICAL TIKI radica en su capacidad única de generar diferenciación visual en un mercado saturado de opciones genéricas. Los cócteles con múltiples rones premium, servidos en cerámica artesanal con presentación teatral, elevan el percibido de valor del evento completo. Los invitados no solo consumen una bebida, sino que participan de una narrativa sensorial que genera contenido shareable naturalmente, amplificando el alcance orgánico de la marca organizadora. En un contexto donde la experiencia supera al producto como factor de decisión, TROPICAL TIKI representa una inversión en memorabilidad que se traduce en clientela recurrente y recomendaciones cualificadas."
+  },
+  {
+   "i": 51,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Mai Tai | Pina Colada | Mojito de fruta de la pasion | Daiquiri | Zombie"
+  },
+  {
+   "i": 52,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Tiki mugs ceramica, sombrillas papel, paja natural, cocoteros pequenos, frutas exoticas (pina, coco, mango), pajitas bambu, antorchas LED (no fuego real por seguridad), cinturones grasshopper para bartenders."
+  },
+  {
+   "i": 53,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Bossa nova clasica (Stan Getz, Joao Gilberto) y polinesias hawaianas (Don Ho, exotica de Martin Denny)."
+  },
+  {
+   "i": 54,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Calida ambar con tonos coral y verde tropical. Antorchas LED y cuerda de luces."
+  },
+  {
+   "i": 55,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +15% sobre estandar — popular volumen alto."
+  },
+  {
+   "i": 56,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas en playa o piscina, despedidas de soltero/a, fiestas verano corporativas, after-work, festivales."
+  },
+  {
+   "i": 58,
+   "estilo": "Normal",
+   "texto": "4. MIXOLOGIA MOLECULAR"
+  },
+  {
+   "i": 59,
+   "estilo": "Normal",
+   "texto": "Ciencia, espuma, humo y nitrogeno liquido"
+  },
+  {
+   "i": 61,
+   "estilo": "Normal",
+   "texto": "La experiencia de Mixología Molecular transporta a los invitados a un laboratorio gastronómico donde la ciencia se convierte en espectáculo. La penumbra del espacio se ilumina con luces LED de tonos cobaltos y violetas que reflejan en las superficies de acero inoxidable, mientras una niebla sutil de nitrógeno líquido crea un escenario etéreo que parece desafiar las leyes de la física. El sonido ambiente mezcla jazz lounge con matices electrónicos, creando una banda sonora hipnótica que acompaña el murmullo de los sifones y el chisporroteo de los elementos criogénicos. En el aire flotan aromas complejos que combinan notas cítricas con matices ahumados, resultado de las infusiones sous vide que liberan esencias imposibles de percibir en una coctelería convencional."
+  },
+  {
+   "i": 62,
+   "estilo": "Normal",
+   "texto": "Este formato está diseñado para eventos corporativos de alto nivel, presentaciones de producto, celebraciones privadas con presupuestos superiores a los tres mil euros y convenciones de empresas del sector luxury que buscan diferenciarse de lo ordinario. El público objetivo incluye directivos, inversores, famosos y clientes VIP que esperan vivir momentos memorables y están dispuestos a pagar por ellos."
+  },
+  {
+   "i": 63,
+   "estilo": "Normal",
+   "texto": "La Mixología Molecular representa una oportunidad de diferenciación competitiva en un mercado saturado de ofertas genéricas. Los eventos que incorporan este show generan un factor viral extraordinario, ya que los invitados comparten activamente la experiencia en sus redes sociales, multiplicando el alcance de marca sin coste adicional. El ticket premium que permite esta tecnología se justifica por sí mismo cuando el retorno se mide en exposición mediática, satisfacción del cliente y la percepción de exclusividad que solo la innovación genuina puede ofrecer."
+  },
+  {
+   "i": 64,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Esferas de mojito | Negroni con humo de cedro | Espuma de Pina Colada | Hielo de nitrogeno con mezcal | Bloody Mary deconstruido"
+  },
+  {
+   "i": 65,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Sifones whip, alginato sodico, cloruro calcico, soplete, campana de cristal para humo, termos de nitrogeno, jeringas, cubitos disenados, balanza precision, tubos ensayo elegantes."
+  },
+  {
+   "i": 66,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Electronica futurista (Aphex Twin chill, Boards of Canada, Floating Points) o silencio teatral en momentos clave."
+  },
+  {
+   "i": 67,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Frio y dramatico. LED azul/violeta. Foco directo al show del bartender."
+  },
+  {
+   "i": 68,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +50-70% sobre estandar — premium maximo."
+  },
+  {
+   "i": 69,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Eventos high-end de marcas de lujo, lanzamientos premium, aniversarios empresariales grandes, restaurantes Michelin, bodas pijas Madrid/BCN."
+  },
+  {
+   "i": 71,
+   "estilo": "Normal",
+   "texto": "5. VINTAGE BOURBON BAR"
+  },
+  {
+   "i": 72,
+   "estilo": "Normal",
+   "texto": "Madera, cuero y barricas de Kentucky"
+  },
+  {
+   "i": 74,
+   "estilo": "Normal",
+   "texto": "La experiencia Vintage Bourbon Bar transporta a los invitados a un bar de Kentucky en los años cincuenta, donde la madera de nogal oscuro viste cada superficie y el cuero gastado de los taburetes de bar cuenta historias de décadas. La luz tenue de lámparas de latón crea sombras cálidas que bailan sobre las cabezas de toro disecadas que vigilan la sala desde sus marcos dorados, mientras banderines descoloridos de antiguas carreras de caballos cuelgan del techo de listones de madera, meciéndose suavemente con el aire acondicionado. El aroma ahumado del bourbon reposado en barricas de roble americano se mezcla con notas sutiles de vainilla y caramelo, mientras el sonido del jazz instrumental y el murmullo de conversaciones en inglés antiguo completan una atmósfera que respira autenticidad y refinamiento decadente."
+  },
+  {
+   "i": 75,
+   "estilo": "Normal",
+   "texto": "Este concepto está diseñado para eventos corporativos de alto nivel, cenas de empresa, celebraciones de cierre de ejercicio y experiencias VIP para públicos masculinos sofisticados entre treinta y cinco y sesenta años, profesionales del sector empresarial, directivo o emprendedor que valoran la exclusividad y buscan diferenciarse de eventos convencionales. La cata guiada de bourbon y rye, conducida por un experto que desglosa notas de cata, orígenes y procesos de destilación, convierte cualquier reunión en una experiencia memorable y diferenciadora."
+  },
+  {
+   "i": 76,
+   "estilo": "Normal",
+   "texto": "Vender la experiencia Vintage Bourbon Bar significa ofrecer un diferenciador competitivo claro en un mercado de eventos donde la mayoría opta por formatos genéricos. El valor percibido de una cata premium con selección de bourbons de edición limitada, la ambientación inmersiva y el carácter exclusivo del concepto justifican un precio premium que incrementa el ticket medio por cliente y genera recomendaciones boca a boca. En un contexto donde las empresas buscan constantemente actividades que refuercen vínculos con clientes clave y equipos directivos, esta experiencia representa una inversión en percepción de marca que se traduce en relaciones comerciales más sólidas y duraderas."
+  },
+  {
+   "i": 77,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Old Fashioned | Manhattan | Mint Julep | Boulevardier | Whisky Sour"
+  },
+  {
+   "i": 78,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Vasos rocks gruesos, barricas pequenas decorativas, carta cuero, cigarros (sin uso, decorativos), cabezas de toro, banderines Kentucky, vasos shot mini para cata, mantel de cuero para mesa cata."
+  },
+  {
+   "i": 79,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Country americano (Johnny Cash, Willie Nelson) y blues (BB King, John Lee Hooker)."
+  },
+  {
+   "i": 80,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Ambar profunda, anaranjada. Sensacion de penumbra acogedora."
+  },
+  {
+   "i": 81,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +30% sobre estandar — premium con cata incluida."
+  },
+  {
+   "i": 82,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Eventos corporativos masculinos, despedidas de soltero, bodas con tematica americana, after-works abogados/finanzas, eventos navidad empresas."
+  },
+  {
+   "i": 84,
+   "estilo": "Normal",
+   "texto": "6. MEDITERRANEAN SUNSET"
+  },
+  {
+   "i": 85,
+   "estilo": "Normal",
+   "texto": "Aperol, prosecco y atardeceres del Mediterraneo"
+  },
+  {
+   "i": 87,
+   "estilo": "Normal",
+   "texto": "La experiencia Mediterranean Sunset transforma cualquier espacio exterior en un rincón de la costa italiana durante las últimas horas de luz del día. La visión del sol descendiendo sobre el mar se funde con un escenario donde tonos cálidos dominate la escena, combinando la luz dorada del atardecer con una decoración de plantas aromáticas como lavanda, romero y citronela que perfuman suavemente el aire. El sonido de conversaciones alegres y música italiana de estilo lounge crea una banda sonora sofisticada pero relajada, mientras el aroma fresco de limón, naranja amarga y aceitunas de oliva acompaña cada copa que se sirve, despertando el apetito y anticipando el placer de los sabores mediterráneos."
+  },
+  {
+   "i": 88,
+   "estilo": "Normal",
+   "texto": "Este concepto está diseñado para eventos de aperitivo al atardecer, cócteles pre-boda, celebraciones corporativas en terraza y recepciones de boda en la Costa del Sol durante los meses de mayo a septiembre. El público objetivo incluye parejas que buscan una experiencia distinguida para sus celebraciones nupciales, empresas que desean impresionar a sus clientes con propuestas memorables, y organizadores de eventos que necesitan una propuesta diferenciada que conecte con la esencia del verano español."
+  },
+  {
+   "i": 89,
+   "estilo": "Normal",
+   "texto": "La razón para elegir Mediterranean Sunset radica en su capacidad de crear un momento único y fotografiable que los invitados recordarán y compartirán. La combinación de bebidas icónicas como el Aperol Spritz, el cóctel Hugo y variaciones de vermouth con tónica, presentadas con decoración de citrus y hojas de menta, genera un elemento diferenciador que eleva el prestigio del evento. En un mercado donde la experiencia del cliente lo es todo, esta propuesta sensorial cohesiva y visualmente impactante justifica una inversión superior, posicionando al organizador como un proveedor de momentos extraordinarios que trascienden lo meramente funcional."
+  },
+  {
+   "i": 90,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Aperol Spritz | Hugo | Vermouth & Tonic | Bellini | Garibaldi"
+  },
+  {
+   "i": 91,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Copas balon transparentes, mesas con manteles lino blanco/beige, plantas en macetas (limonero, romero), bandejas con aceitunas verdes/cervezas, jarras de cristal con limones flotando, cojines de lino para silla."
+  },
+  {
+   "i": 92,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Italiano clasico chill (Vinicio Capossela, Paolo Conte) y bossa nova mediterranea."
+  },
+  {
+   "i": 93,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Luz natural prolongada, despues calida ambar. Velas LED en mesas."
+  },
+  {
+   "i": 94,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: Estandar +10% — accesible volumen alto."
+  },
+  {
+   "i": 95,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas exterior verano, aperitivos corporativos, lanzamientos turismo, eventos en jardin, fiestas de empresa al aire libre."
+  },
+  {
+   "i": 97,
+   "estilo": "Normal",
+   "texto": "7. LATIN CARIBBEAN"
+  },
+  {
+   "i": 98,
+   "estilo": "Normal",
+   "texto": "Ron, salsa, mojitos y sabor latino"
+  },
+  {
+   "i": 100,
+   "estilo": "Normal",
+   "texto": "La experiencia LATIN CARIBBEAN Transporta a los invitados directamente a una terraza habanera al atardecer, donde el aire se impregna del aroma fresco de la hierbabuena recién cortada, la acidez vibrante de la lima tropical y las notas añejas del ron oscuro que reposa en barricas de roble. La vista se llena de colores tierra y cobalt, de vasos condensationados que brillan bajo luces cálidas, mientras el sonido del jazz latino y los ritmos de conga invitan al movimiento. Cadacocktail se sirve con show flair: el bartender maneja las botellas con maestría, haciendo girar el ron Havana Club mientras la audiencia observa expectante, convirtiendo la preparación en un espectáculotanvisual como el propio trago."
+  },
+  {
+   "i": 101,
+   "estilo": "Normal",
+   "texto": "Esta experiencia está diseñada para eventos corporativos que buscan romper formalidades, celebraciones de empresa con espíritu festivo, fiestas de incentivos y eventos privados donde el objetivo es crear memorabilidad. El público ideal son equipos de trabajo que desean celebrar logros, grupos de amigos que buscan una fiesta sofisticada pero con alma latina, y marcas que quieren posicionar sus eventos como experiencias premium y diferenciadas."
+  },
+  {
+   "i": 102,
+   "estilo": "Normal",
+   "texto": "LATIN CARIBBEAN no solo vende cócteles, vende una narrativa emocional que los invitados recordarán y compartirán en redes sociales, multiplicando el alcance de tu marca. En un mercado donde la competencia por la atención del cliente es feroz, ofrecer una experiencia temática cohesiva y sensorialmente rica justifica un precio premium, genera repetición de negocio y convierte a tus eventos en referencias obligadas en el sector de la hostelería española."
+  },
+  {
+   "i": 103,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Mojito clasico | Daiquiri | Cuba Libre | El Floridita | Pina Colada"
+  },
+  {
+   "i": 104,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Vasos collins altos, manojos de hierbabuena fresca expuestos, limas verdes en montones, banderas cubanas/caribenas (decorativas), pajitas plastico colores, pizarra carta tipo bar habanero."
+  },
+  {
+   "i": 105,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Salsa cubana (Buena Vista Social Club, Celia Cruz, Compay Segundo) y reggaeton suave en momentos finales."
+  },
+  {
+   "i": 106,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Calida intensa, amarillo-ambar tipo bar habanero. Cuerda luces colores en zona barra."
+  },
+  {
+   "i": 107,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: Estandar — alto volumen, ticket medio."
+  },
+  {
+   "i": 108,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas tematicas, fiestas privadas grandes, despedidas, aniversarios, eventos verano informales, fiestas latinoamericanas."
+  },
+  {
+   "i": 110,
+   "estilo": "Normal",
+   "texto": "8. WHISKY TASTING"
+  },
+  {
+   "i": 111,
+   "estilo": "Normal",
+   "texto": "Cata guiada de whiskies del mundo"
+  },
+  {
+   "i": 113,
+   "estilo": "Normal",
+   "texto": "La sala se ilmina con una luz cálida y envolvente, propia de las destilerías centenarias, mientras una melodía de jazz suave y antiguos fonógrafos crea el ritmo silencioso de la noche. El aroma a madera de roble, turba y cereal tostado impregna el ambiente, preparando los sentidos para un viaje que trasciende la simple degustación. Sobre la barra de caoba, seis copas de cristal fino brillan como pequeñas joyas, cada una esperando revelar los secretos de distillados que han madurado durante décadas en barricas olvidadas por el tiempo."
+  },
+  {
+   "i": 114,
+   "estilo": "Normal",
+   "texto": "Esta experiencia está diseñada para eventos corporativos de alto nivel, cenas de empresa ejecutivas, celebraciones de cierre de ejercicio y reuniones exclusivass donde los anfitriones buscan ofrecer a sus invitados una propuesta diferenciadora y sofisticada. El público objetivo incluye directivos, inversores, clientes VIP y equipos de trabajo que merecen ser sorprendidos con actividades que trasciendan lo convencional, creando recuerdos memorables que fortalezcan vínculos profesionales y personales."
+  },
+  {
+   "i": 115,
+   "estilo": "Normal",
+   "texto": "Desde la perspectiva del retorno de inversión en experiencias, el Whisky Tasting representa una oportunidad excepcional para posicionar una marca como aliada del lujo discreto y el refinement. Los asistentes valoran enormemente este tipo de propuestas porque aprenden, Degustan y se conectan con otros en un entorno que Stimula conversación y networking de calidad. La combinación educativa del maridaje con chocolate negro, queso azul, dátiles y almendras eleva la experiencia a un nivel gastronómico completo, convirtiendo cada sorbo en una lección de cultura y placer que sus invitados recordarán mucho después de que el evento haya terminado."
+  },
+  {
+   "i": 116,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Cata 4 whiskies (Speyside, Islay, Highland, Japones) | Old Fashioned | Whisky Sour | Manhattan | Penicillin"
+  },
+  {
+   "i": 117,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Copas tulipa para cata (Glencairn), bandejas pizarra con maridaje, fichas tecnicas impresas premium, decantadores cristal, botellas whisky alineadas en estanteria temporal."
+  },
+  {
+   "i": 118,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Jazz suave (Ella Fitzgerald, Chet Baker) o silencio para concentracion en cata."
+  },
+  {
+   "i": 119,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Calida concentrada en mesa cata. Resto del espacio neutro."
+  },
+  {
+   "i": 120,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +50% sobre estandar — incluye horas formacion bartender."
+  },
+  {
+   "i": 121,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Corporativos premium (consultoras, finanzas, abogados), aniversarios alta gama, lanzamientos producto premium, regalos VIP."
+  },
+  {
+   "i": 123,
+   "estilo": "Normal",
+   "texto": "9. CHAMPAGNE BAR"
+  },
+  {
+   "i": 124,
+   "estilo": "Normal",
+   "texto": "Burbujas, glamour y celebracion pura"
+  },
+  {
+   "i": 126,
+   "estilo": "Normal",
+   "texto": "La experiencia Champagne Bar se despliega como un santuario de elegancia en el corazón de cualquier evento. La iluminación cálida y difusa crea un atmosphere íntimo donde las copas de cristal tallado reflejan destellos dorados, mientras que el sonido sutil de conversaciones sofisticadas y jazz suave envuelve el espacio. El aroma delicado a levadura y brioche flota en el aire, evocando las caves francesas donde madura el champagne más exclusivo. Una barra de mármol negro o latón pulido serve como escenario central, donde las botellas reposan en cubiteras de plata mostrando etiquetas de maisons reconocidas. El servicio se realiza en flute de cristal fino o en coupe histórica, dependiendo del carácter del evento, con una presentación ceremoniosa que eleva cada copa a momento memorable."
+  },
+  {
+   "i": 127,
+   "estilo": "Normal",
+   "texto": "Este concepto está diseñado para bodas de alta gama donde los novios buscan diferenciación, lanzamientos exclusivos de marcas de lujo, eventos de prensa del sector moda y experiencias VIP que requieren un entorno selecto. El público objetivo valora la exclusividad, la calidad premium y los detalles que convierten un evento en experiencia irrepetible."
+  },
+  {
+   "i": 128,
+   "estilo": "Normal",
+   "texto": "Desde la perspectiva de rentabilidad, ofrecer un Champagne Bar permite incrementar significativamente el ticket medio por invitado mientras se diferencia claramente de la competencia. La carta complementaria de cócteles con champagne expande las opciones de consumo sin perder la coherencia premium del concepto, generando mayor facturación por cubierto y posicionando al organizador como proveedor de experiencias memorables que los clientes recuerdan y comparten, generando valor de marca a largo plazo."
+  },
+  {
+   "i": 129,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: Cata 3 champagnes (Brut, Rose, Vintage) | French 75 | Mimosa premium (con zumo recien exprimido) | Bellini | Kir Royale"
+  },
+  {
+   "i": 130,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Copas flute o coupe Schott Zwiesel, cubitos cristalinos perfectos, bandejas plata o dorado, ficha cata cada champagne, mantelitos blanco lino, perlas decorativas, flores blancas naturales."
+  },
+  {
+   "i": 131,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: Jazz suave parisino (Edith Piaf, Carla Bruni) o swing romantico (Frank Sinatra, Tony Bennett)."
+  },
+  {
+   "i": 132,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Cristalina con dorado. Velas decorativas LED. Foco a las copas."
+  },
+  {
+   "i": 133,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +40-60% sobre estandar — alto coste materia prima (champagne real)."
+  },
+  {
+   "i": 134,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas alta gama, eventos prensa moda/lujo, lanzamientos productos premium, aniversarios bodas plata/oro, presentaciones marcas lujo."
+  },
+  {
+   "i": 136,
+   "estilo": "Normal",
+   "texto": "10. SIGNATURE PERSONALIZABLE"
+  },
+  {
+   "i": 137,
+   "estilo": "Normal",
+   "texto": "Tu marca, tu carta, tu experiencia unica"
+  },
+  {
+   "i": 139,
+   "estilo": "Normal",
+   "texto": "La experiencia más premium y personal. Imagina una barra de bar donde cada detalle ha sido pensado para tu evento: las botellas de licor lucen el logotipo del cliente grabadas en vidrio, los vasos de cristal fino descansan sobre una carta impresa en papel premium con diseño exclusivo que reproduce la paleta de colores de la marca o la temática de la celebración. El bartender, vestido con el estilismo que tú elijas, presenta cada bebida con una narrativa personalizada, explicando los ingredientes que evocan la historia que quieres contar. El aroma a cítricos frescos y hierbitas aromáticas perfuma el ambiente mientras una banda sonora subtle acompaña la experiencia sin competir con las conversaciones. Esta propuesta está diseñada para weddings donde los novios desean que su amor se refleje en cada detalle, para eventos corporativos que buscan impresionar a clientes VIP, para celebraciones de anniversario o lanzamientos de producto donde la diferenciación es obligatoria. El valor diferenciador radica en que cada invitado no solo bebe un cóctel, sino que vive un momento diseñado especificamente para él: el nombre del trago lleva el nombre de los novios, el nombre de la empresa o el producto estrella de la campaña. Es una experiencia que se documenta, se comparte en redes sociales, se recuerda. En un mercado donde todos ofrecen cócteles, tú ofreces una historia tangible que justifica el incremento de precio porque genera valor percibido, diferenciación real y un recuerdo emocional que perdura mucho después de que el último vaso haya sido vaciado."
+  },
+  {
+   "i": 140,
+   "estilo": "Normal",
+   "texto": "CARTA SUGERIDA: 3-5 cocteles signature creados a medida | Reinterpretacion clasicos del cliente | Mocktail signature inclusivo"
+  },
+  {
+   "i": 141,
+   "estilo": "Normal",
+   "texto": "PROPS Y MOBILIARIO: Botellas y vasos con vinilos branding del cliente, posavasos branded, servilletas branded, carta impresa diseno propio del cliente, foto profesional para entregar al cliente post-evento."
+  },
+  {
+   "i": 142,
+   "estilo": "Normal",
+   "texto": "AUDIO/AMBIENTE SONORO: A juicio del cliente o curado por el bartender segun publico."
+  },
+  {
+   "i": 143,
+   "estilo": "Normal",
+   "texto": "ILUMINACION: Personalizada segun marca/colores corporativos del cliente."
+  },
+  {
+   "i": 144,
+   "estilo": "Normal",
+   "texto": "PRICING SUGERIDO: +60-100% sobre estandar — incluye horas de diseno + branding fisico."
+  },
+  {
+   "i": 145,
+   "estilo": "Normal",
+   "texto": "PUBLICO IDEAL: Bodas premium (novios buscan diferenciacion absoluta), lanzamientos de producto, aniversarios empresa importantes, eventos prensa exclusivos, regalos VIP corporativos."
+  },
+  {
+   "i": 153,
+   "estilo": "Normal",
+   "texto": "ChefBusiness"
+  },
+  {
+   "i": 154,
+   "estilo": "Normal",
+   "texto": "Consultoria Gastronomica"
+  },
+  {
+   "i": 155,
+   "estilo": "Normal",
+   "texto": "chefbusiness.co"
+  }
+ ],
+ "contrato_es": [
+  {
+   "i": 4,
+   "estilo": "Normal",
+   "texto": "CONTRATO DE PRESTACION"
+  },
+  {
+   "i": 5,
+   "estilo": "Normal",
+   "texto": "DE SERVICIOS DE COCTELERIA"
+  },
+  {
+   "i": 6,
+   "estilo": "Normal",
+   "texto": "PARA EVENTO"
+  },
+  {
+   "i": 9,
+   "estilo": "Normal",
+   "texto": "Plantilla editable — Adapta a tu marca y caso concreto"
+  },
+  {
+   "i": 18,
+   "estilo": "Normal",
+   "texto": "ChefBusiness Consultoria Gastronomica"
+  },
+  {
+   "i": 19,
+   "estilo": "Normal",
+   "texto": "chefbusiness.co"
+  },
+  {
+   "i": 21,
+   "estilo": "Normal",
+   "texto": "AVISO LEGAL"
+  },
+  {
+   "i": 22,
+   "estilo": "Normal",
+   "texto": "Este modelo de contrato ha sido elaborado por ChefBusiness Consultoria Gastronomica con fines orientativos para empresas de cocteleria de eventos en Espana. Las clausulas reflejan practicas habituales del sector y principios generales de la legislacion espanola. NO constituye asesoramiento juridico. Antes de utilizarlo en tu negocio, recomendamos su revision por un abogado o asesor legal de tu confianza, especialmente si vas a trabajar con clientes corporativos o eventos de gran volumen. ChefBusiness no se responsabiliza de los resultados derivados del uso de esta plantilla."
+  },
+  {
+   "i": 24,
+   "estilo": "Heading 1",
+   "texto": "CONTRATO DE PRESTACION DE SERVICIOS DE COCTELERIA PARA EVENTO"
+  },
+  {
+   "i": 25,
+   "estilo": "Normal",
+   "texto": "En __________________________, a ____ de _______________ de 20____."
+  },
+  {
+   "i": 26,
+   "estilo": "Heading 2",
+   "texto": "REUNIDOS"
+  },
+  {
+   "i": 27,
+   "estilo": "Normal",
+   "texto": "De una parte, [NOMBRE DEL PROFESIONAL O EMPRESA], con domicilio en _________________________________________ y NIF/CIF ____________________, en adelante \"EL PRESTADOR\"."
+  },
+  {
+   "i": 28,
+   "estilo": "Normal",
+   "texto": "De otra parte, [NOMBRE DEL CLIENTE], con domicilio en _________________________________________ y NIF/CIF ____________________, en adelante \"EL CLIENTE\"."
+  },
+  {
+   "i": 29,
+   "estilo": "Normal",
+   "texto": "Ambas partes se reconocen mutuamente capacidad legal suficiente para suscribir el presente contrato y, a tal efecto,"
+  },
+  {
+   "i": 30,
+   "estilo": "Heading 2",
+   "texto": "EXPONEN"
+  },
+  {
+   "i": 31,
+   "estilo": "Normal",
+   "texto": "I. Que EL PRESTADOR es un profesional dedicado a la prestacion de servicios de cocteleria para eventos, disponiendo del equipamiento, personal cualificado y seguros necesarios para la correcta ejecucion del servicio."
+  },
+  {
+   "i": 32,
+   "estilo": "Normal",
+   "texto": "II. Que EL CLIENTE desea contratar los servicios de cocteleria del PRESTADOR para un evento de su organizacion, en las condiciones que se detallan en las clausulas siguientes."
+  },
+  {
+   "i": 33,
+   "estilo": "Normal",
+   "texto": "III. Que ambas partes han acordado los terminos del presente contrato y los plasman en las siguientes"
+  },
+  {
+   "i": 34,
+   "estilo": "Heading 2",
+   "texto": "CLAUSULAS"
+  },
+  {
+   "i": 35,
+   "estilo": "Normal",
+   "texto": "PRIMERA — OBJETO DEL CONTRATO"
+  },
+  {
+   "i": 36,
+   "estilo": "Normal",
+   "texto": "EL PRESTADOR se obliga a prestar al CLIENTE el servicio de cocteleria descrito a continuacion:\n\n  - Tipo de evento: ____________________________________ (boda, corporativo, cumpleanos, etc.)\n  - Fecha del evento: __________________________________\n  - Hora de inicio del servicio: __________ Hora fin: __________\n  - Duracion total del servicio: ____ horas\n  - Lugar del evento: __________________________________________________________\n  - Numero estimado de invitados: ____________\n  - Tematica acordada: ________________________ (Speakeasy, Tropical, Gin Lounge, etc.)\n  - Carta de cocteles acordada: se adjunta como Anexo I al presente contrato.\n\nEl servicio incluye: barra movil profesional, cristaleria, herramientas de coctelería, hielo, garnish, ingredientes y bebidas segun carta acordada, montaje y desmontaje, y personal de servicio (1 bartender principal + ____ bartenders/runners adicionales segun lo acordado)."
+  },
+  {
+   "i": 37,
+   "estilo": "Normal",
+   "texto": "SEGUNDA — PRECIO Y FORMA DE PAGO"
+  },
+  {
+   "i": 38,
+   "estilo": "Normal",
+   "texto": "El precio total del servicio asciende a ________________ EUR (___________ EUR) mas el IVA aplicable (21%), lo que totaliza ________________ EUR (___________ EUR).\n\nForma de pago:\n\n  - Anticipo del 30% (o el porcentaje acordado) a la firma del presente contrato: ____________ EUR.\n    Este anticipo confirma la reserva de fecha y NO es reembolsable salvo causa imputable al PRESTADOR.\n  - 50% adicional 7 dias antes del evento: ____________ EUR.\n  - 20% restante en las 24 horas siguientes a la finalizacion del evento: ____________ EUR.\n\nForma de pago: transferencia bancaria al numero de cuenta IBAN ________________________________________ o, en su caso, mediante Bizum al numero ____________________.\n\nEL PRESTADOR emitira factura electronica conforme a la normativa vigente."
+  },
+  {
+   "i": 39,
+   "estilo": "Normal",
+   "texto": "TERCERA — OBLIGACIONES DEL PRESTADOR"
+  },
+  {
+   "i": 40,
+   "estilo": "Normal",
+   "texto": "EL PRESTADOR se compromete a:\n\n  a) Llegar al lugar del evento con al menos 1 hora 30 minutos de antelacion para montaje.\n  b) Aportar la barra movil, cristaleria, herramientas, hielo, ingredientes y todo el material necesario.\n  c) Disponer del personal cualificado acordado, con formacion en manipulacion de alimentos.\n  d) Tener vigente seguro de Responsabilidad Civil con cobertura minima de 600.000 EUR.\n  e) Cumplir con la legislacion de venta y servicio de bebidas alcoholicas vigente, incluyendo el respeto a      la edad legal para el consumo (no servir a menores de 18 anos).\n  f) Recoger todo el material al finalizar el servicio y dejar el espacio limpio.\n  g) Respetar los horarios pactados y cualquier indicacion razonable del CLIENTE u organizador del evento."
+  },
+  {
+   "i": 41,
+   "estilo": "Normal",
+   "texto": "CUARTA — OBLIGACIONES DEL CLIENTE"
+  },
+  {
+   "i": 42,
+   "estilo": "Normal",
+   "texto": "EL CLIENTE se compromete a:\n\n  a) Facilitar el acceso al lugar del evento con tiempo suficiente para el montaje (minimo 1h 30min antes).\n  b) Proporcionar punto de toma electrica (220V) cercano a la ubicacion de la barra.\n  c) Asegurar que el espacio dispone de las licencias y permisos correspondientes (ej.: licencia de actividad      del local, autorizaciones municipales si el evento es en espacio publico).\n  d) Comunicar el numero final de invitados con al menos 7 dias de antelacion.\n  e) Realizar los pagos en los plazos pactados en la Clausula Segunda.\n  f) No interferir en la prestacion del servicio mas alla de las indicaciones razonables al PRESTADOR.\n  g) Asumir el coste adicional de cualquier consumicion o servicio no contemplado en este contrato y      solicitado durante el evento (extras de tiempo, bebidas adicionales, etc.)."
+  },
+  {
+   "i": 43,
+   "estilo": "Normal",
+   "texto": "QUINTA — VARIACIONES SOBRE EL NUMERO DE INVITADOS"
+  },
+  {
+   "i": 44,
+   "estilo": "Normal",
+   "texto": "El precio acordado se fundamenta en el numero estimado de invitados. Las variaciones se gestionaran asi:\n\n  - Si el numero final supera en mas del 10% el estimado, se facturara el coste adicional proporcional,     pagadero en las 24 horas posteriores al evento.\n  - Si el numero final es inferior al estimado, NO se aplicara descuento (los costes fijos del servicio     estan dimensionados para el numero acordado).\n\nEl CLIENTE se compromete a comunicar el numero final de invitados con al menos 7 dias de antelacion."
+  },
+  {
+   "i": 45,
+   "estilo": "Normal",
+   "texto": "SEXTA — CANCELACION"
+  },
+  {
+   "i": 46,
+   "estilo": "Normal",
+   "texto": "La cancelacion del evento por parte del CLIENTE conlleva las siguientes consecuencias economicas:\n\n  - Cancelacion con mas de 60 dias de antelacion: EL PRESTADOR retiene el 100% del anticipo del 30%.\n  - Cancelacion entre 30 y 60 dias de antelacion: EL CLIENTE abona el 50% del precio total del servicio.\n  - Cancelacion con menos de 30 dias de antelacion: EL CLIENTE abona el 100% del precio total.\n  - Cancelacion el mismo dia del evento o no presentacion del CLIENTE: EL CLIENTE abona el 100% mas los gastos     extraordinarios incurridos por el PRESTADOR.\n\nLa cancelacion por parte del PRESTADOR sin causa justificada conllevara la devolucion integra del anticipo y el pago al CLIENTE de una indemnizacion del 20% del precio total del servicio."
+  },
+  {
+   "i": 47,
+   "estilo": "Normal",
+   "texto": "SEPTIMA — FUERZA MAYOR"
+  },
+  {
+   "i": 48,
+   "estilo": "Normal",
+   "texto": "Ninguna de las partes sera responsable del incumplimiento de las obligaciones derivadas del presente contrato cuando este se deba a causas de fuerza mayor o caso fortuito (catastrofes naturales, declaracion oficial de alarma sanitaria, decretos gubernamentales que prohiban la celebracion del evento, etc.).\n\nEn caso de fuerza mayor, las partes pactaran de buena fe la posposicion del evento sin aplicacion de penalizaciones por cancelacion. Si la posposicion no es posible, el PRESTADOR devolvera el anticipo recibido menos los gastos efectivamente incurridos hasta la fecha (ej.: stock perecedero ya adquirido)."
+  },
+  {
+   "i": 49,
+   "estilo": "Normal",
+   "texto": "OCTAVA — RESPONSABILIDAD CIVIL Y DANOS"
+  },
+  {
+   "i": 50,
+   "estilo": "Normal",
+   "texto": "EL PRESTADOR cuenta con seguro de Responsabilidad Civil con cobertura de 600.000 EUR para danos a terceros y al espacio.\n\nCualquier dano causado por el CLIENTE o sus invitados al equipo del PRESTADOR (rotura de cristaleria por encima del 5% normal, danos a la barra movil, sustraccion de material) sera repercutido al CLIENTE al precio de reposicion.\n\nEL PRESTADOR no se responsabiliza de los actos de los invitados que excedan el normal disfrute del servicio (intoxicaciones por consumo desmedido, comportamientos disruptivos, etc.). EL PRESTADOR podra negarse a servir a invitados en estado de embriaguez evidente o a menores de edad, sin que esto implique incumplimiento del contrato."
+  },
+  {
+   "i": 51,
+   "estilo": "Normal",
+   "texto": "NOVENA — DERECHOS DE IMAGEN Y PROMOCION"
+  },
+  {
+   "i": 52,
+   "estilo": "Normal",
+   "texto": "EL CLIENTE autoriza al PRESTADOR a realizar fotografias y videos del montaje, ambiente y servicio durante el evento, sin captar primeros planos identificables de los invitados.\n\nEL PRESTADOR podra utilizar dicho material en su web, redes sociales y portfolio profesional, salvo que el CLIENTE indique expresamente lo contrario marcando la siguiente casilla:\n\n  ☐  El CLIENTE NO autoriza el uso del material grafico del evento para fines promocionales del PRESTADOR.\n\nEn cualquier caso, el PRESTADOR se compromete a respetar el RGPD y a no identificar nominalmente al CLIENTE ni a sus invitados en publicaciones publicas sin consentimiento expreso."
+  },
+  {
+   "i": 53,
+   "estilo": "Normal",
+   "texto": "DECIMA — PROTECCION DE DATOS (RGPD)"
+  },
+  {
+   "i": 54,
+   "estilo": "Normal",
+   "texto": "Los datos personales facilitados por el CLIENTE seran tratados por EL PRESTADOR con la finalidad de gestionar la prestacion del servicio contratado y cumplir con las obligaciones legales (facturacion, conservacion fiscal). La base legitimadora del tratamiento es la ejecucion del presente contrato.\n\nLos datos seran conservados durante el tiempo necesario para cumplir con las obligaciones legales y fiscales (minimo 6 anos para fines fiscales).\n\nEL CLIENTE puede ejercer sus derechos de acceso, rectificacion, supresion, oposicion, limitacion y portabilidad enviando un email a ____________________________ con copia de su DNI."
+  },
+  {
+   "i": 55,
+   "estilo": "Normal",
+   "texto": "DECIMOPRIMERA — JURISDICCION Y LEY APLICABLE"
+  },
+  {
+   "i": 56,
+   "estilo": "Normal",
+   "texto": "El presente contrato se rige por la legislacion espanola. Para la resolucion de cualquier conflicto derivado de su interpretacion o ejecucion, las partes se someten expresamente a los Juzgados y Tribunales de _____________________________ (ciudad acordada o domicilio del PRESTADOR), con renuncia a cualquier otro fuero que pudiera corresponderles."
+  },
+  {
+   "i": 57,
+   "estilo": "Normal",
+   "texto": "Y en prueba de conformidad con todo lo anterior, ambas partes firman el presente contrato por duplicado, en el lugar y fecha indicados al inicio."
+  },
+  {
+   "i": 61,
+   "estilo": "Heading 1",
+   "texto": "ANEXO I — CARTA DE COCTELES ACORDADA"
+  },
+  {
+   "i": 62,
+   "estilo": "Normal",
+   "texto": "Espacio para detallar la carta concreta acordada con el cliente. Si has comprado el Plan de Negocio: Cocteleria de Eventos / Barra Movil de ChefBusiness, encontraras 15 cocteles tematicos completos en el archivo 'carta-15-cocktails-tematicos-cocteleria-eventos.docx'. Selecciona los que apliquen y pegalos aqui adaptados al evento."
+  },
+  {
+   "i": 68,
+   "estilo": "Normal",
+   "texto": "ChefBusiness — chefbusiness.co"
+  },
+  {
+   "i": 69,
+   "estilo": "Normal",
+   "texto": "Plantilla del producto: Plan de Negocio Cocteleria de Eventos / Barra Movil"
+  }
+ ]
+}
