@@ -81,10 +81,9 @@ def carta():
     """Las 15 recetas: nombre, temática, cristalería e ingredientes en ml (tabla k = receta k)."""
     p, pars, tablas = parrafos(CARTA)
     recetas, actual = [], None
-    for x in pars:
+    for k, x in enumerate(pars):
         t = x['texto'].strip()
-        if t.isupper() and 3 < len(t) < 60 and not t.startswith(('INGREDIENTES', 'PREPARACION', 'CONSEJO', 'ESCALADO',
-                                                                  'CARTA', 'INDICE', 'NOTAS', 'TEMATICA', '15 ')):
+        if k + 1 < len(pars) and pars[k + 1]['texto'].strip().startswith('Tematica:'):
             actual = OrderedDict([('nombre', t), ('ficha', []), ('ingredientes_ml', None)])
             recetas.append(actual)
         elif actual is not None and (t.startswith(('Tematica', 'Origen', 'Coste')) or len(t) > 60):
