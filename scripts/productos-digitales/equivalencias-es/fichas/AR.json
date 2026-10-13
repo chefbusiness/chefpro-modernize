@@ -1,0 +1,117 @@
+{
+  "codigo": "AR",
+  "pais": "Argentina",
+  "moneda": "peso argentino (ARS)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA general es del 21 %, con tipos del 10,5 % y del 27 % para casos concretos. No consta una alícuota especial para restaurantes, así que la restauración tributa normalmente al 21 %; confírmalo con tu contador. A esto se suma Ingresos Brutos, un impuesto provincial sobre la facturación, cuya alícuota fija cada jurisdicción y ronda de media entre el 4 % y el 6 % en comercio y servicios. El IVA de las compras de servicios de restaurante no genera crédito fiscal.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Argentina, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/argentina/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "No hemos encontrado una ley nacional que fije la propina: es voluntaria por costumbre y a menudo se deja en efectivo o con el pago electrónico. Lo que sí está acotado es el «cubierto» o servicio de mesa: una sentencia de la Cámara Civil y Comercial de La Plata lo declaró ilegal por presentarse como obligatorio y sin informar en qué consiste, con base en el artículo 35 de la Ley de Defensa del Consumidor. Ciudad de Buenos Aires tiene normas propias; consulta la de tu jurisdicción.",
+      "fuentes": [
+        {
+          "titulo": "La Nación — Declaran ilegal cobrar el servicio de mesa",
+          "url": "https://www.lanacion.com.ar/lifestyle/declaran-es-ilegal-cobrar-servicio-mesa-provincia-nid2191226/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La referencia nacional es el Código Alimentario Argentino (CAA), declarado vigente en todo el país por la Ley 18.284 y reglamentado por el Decreto 2126/1971; el capítulo II fija las condiciones de fábricas y comercios de alimentos. Lo publica el Ministerio de Salud con ANMAT. La inspección y la habilitación de tu local las hace el municipio o la provincia, normalmente a través de «bromatología». Consulta con tu municipio cómo exige las buenas prácticas de manufactura (BPM).",
+      "fuentes": [
+        {
+          "titulo": "ANMAT — Código Alimentario Argentino",
+          "url": "https://www.argentina.gob.ar/anmat/codigoalimentario",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "El «carnet de manipulador de alimentos» es obligatorio para cualquier persona que esté o pueda estar en contacto con alimentos en establecimientos que los elaboran, almacenan, transportan o venden. Lo emite la autoridad sanitaria de cada jurisdicción (provincia o municipio), vale en todo el país y tiene una vigencia de tres años. El artículo 21 del CAA lo regula y el empleador debe facilitar que el trabajador lo obtenga.",
+      "fuentes": [
+        {
+          "titulo": "Presidencia de la Nación — Capacitación de manipuladores de alimentos, modificación del artículo 21 del CAA",
+          "url": "https://www.argentina.gob.ar/noticias/capacitacion-manipuladores-de-alimentos-modificacion-del-articulo-21-del-caa",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "El permiso central es la «habilitación comercial» del municipio (en la Ciudad de Buenos Aires, a través del Gobierno de la Ciudad). Suele revisar la seguridad del edificio, el rubro gastronómico y el cumplimiento de las normas de bromatología. Para las medidas de seguridad contra incendios y la inscripción impositiva (CUIT ante ARCA, antes AFIP) los requisitos varían según la jurisdicción. Antes de firmar un alquiler, pregunta en tu municipio si el rubro está permitido en esa zona.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas depende de cada jurisdicción: normalmente se incluye en la habilitación del local con el rubro correspondiente y los horarios, la venta nocturna y las restricciones por eventos o elecciones las fijan los municipios y provincias. No hemos podido confirmar con fuente oficial un régimen nacional único, así que consulta con tu municipio qué licencia y qué horarios te corresponden antes de planificar la carta de bebidas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Un negocio pequeño suele operar como persona humana en el Monotributo, que unifica en una cuota mensual el impuesto integrado, los aportes jubilatorios y la obra social, con categorías de la A a la K según facturación, superficie y energía. Si creces o buscas socios, las opciones habituales son la S.R.L. y la S.A.S. (sociedad por acciones simplificada); una sociedad normalmente tributa en el régimen general, no en el Monotributo. Confirma con tu contador.",
+      "fuentes": [
+        {
+          "titulo": "iProfesional — Cómo sacar el Monotributo y categorías vigentes",
+          "url": "https://www.iprofesional.com/impuestos/445814-arca-ex-afip-paso-a-paso-como-sacar-el-monotributo-y-cuales-son-las-categorias-vigentes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La Ley de Contrato de Trabajo fija la jornada máxima en 8 horas diarias o 48 semanales, con descanso semanal mínimo de 35 horas. Se paga el «aguinaldo» (SAC), equivalente a un sueldo anual en dos cuotas, junio y diciembre. Las vacaciones van de 14 a 35 días según antigüedad. El empleador cubre la ART (riesgos del trabajo). El sector gastronómico tiene un convenio colectivo propio con UTHGRA; consulta sus escalas vigentes.",
+      "fuentes": [
+        {
+          "titulo": "Develop Argentina — Leyes laborales básicas para empresas 2026",
+          "url": "https://developargentina.com/blog/leyes-laborales-argentina-basico-empresas-2026",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Rige el sistema métrico: se compra por kilo, medio kilo y gramo, y la temperatura se da en °C. En panadería, huevos y fruta es habitual la «docena» y la «media docena». La soda se sirve en «sifón» (botella con válvula) y la cerveza en «porrón», una botella pequeña. Las carnes se piden por corte y por kilo, y en las parrillas la «parrillada» se factura por persona o por peso.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto dominan PedidosYa y Rappi. Los medios de pago más usados incluyen efectivo, tarjetas, transferencias bancarias y, muy extendido incluso en locales pequeños, el código QR de Mercado Pago. Comprueba qué billeteras aceptan tus clientes y cuánta comisión cobra cada plataforma antes de dar de alta la carta, porque cambian con frecuencia.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "El Estado ofrece líneas para pymes a través del Ministerio de Economía, del Banco de la Nación Argentina y del BICE, pero los programas y las convocatorias cambian con cada gobierno y no hemos podido confirmar cuáles siguen vigentes. Consulta en argentina.gob.ar el apartado de pymes y en las cámaras gastronómicas de tu zona antes de incluir ayudas en el plan de negocio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: la «parrilla» (asador de carne, equivalente al asador español), el «bodegón» (comida casera abundante y barata), la «cantina» (cocina italo-argentina), la «rotisería» (comida para llevar), la «pizzería al molde», la «confitería» (café con pastelería, similar a la cafetería), el café de especialidad y el «tenedor libre» (buffet de precio fijo).",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA del 10 % por el 21 % y añade una línea para Ingresos Brutos provincial. Sustituye el convenio de hostelería español por el CCT del sector gastronómico y la Ley de Contrato de Trabajo, e incluye el aguinaldo (SAC) en junio y diciembre. Presenta el plan APPCC como programa de BPM acorde al CAA. Si hay inflación alta, actualiza los costes más a menudo que en la plantilla.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«factura» es también una pieza de bollería (medialunas, vigilantes); la factura de compra es el comprobante",
+    "«manteca» es mantequilla, no grasa de cerdo",
+    "«crema» es nata",
+    "«frutilla» es fresa y «durazno» es melocotón",
+    "«choclo» es maíz tierno y «morrón» es pimiento",
+    "«mozo» es camarero, «heladera» es nevera y «birra» es cerveza"
+  ]
+}

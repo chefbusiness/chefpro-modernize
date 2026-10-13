@@ -1,0 +1,116 @@
+{
+  "codigo": "UY",
+  "pais": "Uruguay",
+  "moneda": "peso uruguayo (UYU)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA tiene una tasa básica del 22 % y una mínima del 10 % (alimentos, servicios de hotel, salud). Los servicios gastronómicos de restaurantes, bares, cantinas y cafeterías tienen una rebaja de 9 puntos porcentuales del IVA cuando los paga con tarjeta de crédito, débito o dinero electrónico una persona física. Según la DGI, rige desde el 1 de octubre de 2026 por el Decreto 235/026; comprueba su vigencia, porque se renueva periódicamente.",
+      "fuentes": [
+        {
+          "titulo": "DGI — Reducción de 9 puntos de IVA en determinados servicios",
+          "url": "https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/reduccion-9-puntos-iva-determinados-servicios-siempre-sean-abonados",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Uruguay, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/uruguay/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre: no hay un porcentaje fijo y lo decide el cliente, aunque una guía de precios cita entre el 5 % y el 10 % cuando el servicio ha sido bueno. Cobrar un recargo por servicio sin avisarlo antes se considera mala práctica. Según la prensa, las propinas que reciben los trabajadores dependientes están gravadas desde 1995 (Ley 16.713). No hemos podido confirmar la regulación vigente con fuente oficial; consulta con el Ministerio de Trabajo.",
+      "fuentes": [
+        {
+          "titulo": "El Observador — Sí o no a la propina",
+          "url": "https://www.elobservador.com.uy/nota/-si-o-no-a-la-propina-preguntas-y-respuestas-sobre-un-tema-controversial-201992164747",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La higiene de los locales de comida depende de la Intendencia de tu departamento, que otorga la habilitación (en Montevideo, mediante su servicio de Regulación Alimentaria) y vigila la bromatología, bajo el Reglamento Bromatológico Nacional y con el Ministerio de Salud Pública (MSP) como autoridad nacional. No hemos podido abrir las normas para confirmar si se exige HACCP o buenas prácticas; consulta con la Intendencia tu plan de higiene.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "En Montevideo la capacitación del personal que manipula alimentos es obligatoria y se rige por la Resolución municipal 5152/07, con examen regulado por el Decreto Municipal 27.235. El trámite pide el «carné de salud» vigente. Cada departamento (Canelones, Maldonado, Paysandú…) gestiona su propio «carné de manipulador» con requisitos y vigencia distintos; consulta en tu Intendencia cuál es el procedimiento y cuánto dura.",
+      "fuentes": [
+        {
+          "titulo": "gub.uy — Curso de manipulador de alimentos, nivel operario",
+          "url": "https://www.gub.uy/tramites/curso-manipulador-alimentos-nivel-operario",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "La «habilitación comercial» la da la Intendencia; para alimentos se suma la habilitación bromatológica. Suelen pedirse además el certificado de la Dirección Nacional de Bomberos (medidas contra incendios), el «carné de salud» vigente de los trabajadores y la contribución inmobiliaria al día. Para inscribir la empresa tendrás que registrarte en la DGI (impuestos) y el BPS (seguridad social). Los requisitos exactos varían por departamento, así que consulta la lista de tu Intendencia.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas se autoriza en la habilitación del local y los horarios y restricciones los fija cada Intendencia. En la práctica, el servicio de alcohol en bares y restaurantes se regula con la normativa municipal y las reglas nacionales sobre venta a menores. No hemos podido confirmar los detalles con fuente oficial; consulta con la Intendencia qué permiso y qué horario de venta te corresponden.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Las formas habituales son la empresa unipersonal, la S.R.L. y la S.A.S. (sociedad por acciones simplificada). Para negocios muy pequeños existe el Monotributo y, para pequeñas empresas, el régimen del literal E del IRAE, ambos con topes de facturación que cambian cada año. Todo negocio se registra ante la DGI y el BPS. No hemos podido confirmar los requisitos con fuente oficial; consulta con un contador o con BPS qué régimen te corresponde.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada tiene doble límite: 8 horas al día y 44 horas semanales en comercio o 48 en industria, según el Ministerio de Trabajo; confirma cuál encaja con tu actividad de hostelería. El «aguinaldo» (Ley 12.840) equivale a un doceavo de lo cobrado en los 12 meses anteriores, se paga en dos mitades, junio y diciembre. Consulta con el Ministerio de Trabajo los Consejos de Salarios del sector y el salario vacacional.",
+      "fuentes": [
+        {
+          "titulo": "MTSS — Horario de trabajo",
+          "url": "https://www.gub.uy/ministerio-trabajo-seguridad-social/institucional/derecho-laboral-uruguayo/horario-trabajo",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Bloomberg Línea — Cómo calcular el aguinaldo de diciembre en Uruguay",
+          "url": "https://www.bloomberglinea.com/latinoamerica/uruguay/como-calcular-el-aguinaldo-de-diciembre-y-cuando-se-paga-en-uruguay/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Rige el sistema métrico: se compra por kilo, medio kilo y gramo, y la temperatura se da en °C. En panadería, huevos y fruta es habitual la «docena» y la «media docena». Las carnes se piden por corte y por kilo, y la «parrillada» (carne asada variada) se sirve por persona. En bebidas, el vino y la cerveza se venden por botella, y la caña o el «medio y medio» se piden por vaso.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto dominan PedidosYa (de origen uruguayo) y Rappi. Los medios de pago más extendidos son el efectivo, las tarjetas de débito y crédito, las transferencias y las billeteras como Mercado Pago. El pago electrónico conviene al cliente por la rebaja de IVA en gastronomía, así que acepta tarjeta aunque sea un local pequeño. Comprueba la comisión de cada plataforma antes de dar de alta tu carta.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "El Estado apoya a emprendedores y pymes a través de agencias como ANDE (Agencia Nacional de Desarrollo) y del Ministerio de Industria, con fondos concursables y garantías de crédito, además del Banco República (BROU). Las convocatorias abren y cierran durante el año y no hemos podido confirmar cuáles siguen vigentes, así que consulta los portales oficiales antes de incluirlas en tu plan de negocio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: la «parrillada» o «parrilla» (asador de carne), la «chivitería» (local especializado en el «chivito», un sándwich de carne), el «bar» (cafetería con minutas y sándwiches), el «boliche» (bar de barrio), la pizzería con «fainá» (torta de garbanzo) y la rotisería de comida para llevar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA del 10 % por el 22 % de tasa básica y añade un parámetro para la rebaja de 9 puntos cuando el cliente paga con tarjeta, según su vigencia. Sustituye el convenio de hostelería español por la normativa laboral uruguaya y los Consejos de Salarios, e incluye el aguinaldo en junio y diciembre. Presenta el plan de higiene ante la Intendencia, que habilita el local.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«chivito» es un sándwich de carne, no un cabrito",
+    "«pancho» es un perrito caliente",
+    "«frutilla» es fresa",
+    "«manteca» es mantequilla",
+    "«morrón» es pimiento",
+    "«boliche» es un bar de barrio",
+    "«medio y medio» es una mezcla de vino espumoso y vino blanco"
+  ]
+}
