@@ -902,6 +902,11 @@ def autotest(destino):
         n += 1
         _cmp(err, 'compra %s!%s (%s) pycel' % (H2, c, k), xl.evaluate("'%s'!%s" % (H2, c)), v)
         _cmp(err, 'compra %s!%s (%s) caché' % (H2, c, k), wv[H2][c].value, v)
+    quien_c = 'B%d' % (filas_compra['b_spirits'] - 1)                       # fila «Who buys it»
+    for lab, got in (('pycel', xl.evaluate("'%s'!%s" % (H2, quien_c))), ('caché', wv[H2][quien_c].value)):
+        n += 1
+        if got != 'The host (dry hire)':
+            err.append('compra %s!%s (quién compra) %s: %r' % (H2, quien_c, lab, got))
     # 3) Signature Cocktail Specs (pycel + caché): ml, coste, escalado en oz, fifths, handles, envases y totales
     wb_tmp2 = openpyxl.Workbook()
     _ws3, filas_specs = hoja_specs(wb_tmp2)
@@ -935,7 +940,7 @@ def autotest(destino):
     for k in ('b_spirits', 'b_wine', 'u_beer'):
         n += 1
         _cmp(err, 'licencia · compra %s pycel' % k, xl.evaluate("'%s'!B%d" % (H2, filas_compra[k])), compra_lic[k])
-    if xl.evaluate("'%s'!B%d" % (H2, filas_compra['b_spirits'] + 0 - 1)) != 'You (licensed package)':
+    if xl.evaluate("'%s'!%s" % (H2, quien_c)) != 'You (licensed package)':
         err.append('licencia: la fila «Who buys it» no cambia a «You (licensed package)»')
     # 5) el interruptor del sales tax cambia el resultado
     e = dict(EJEMPLOS['Wedding, 120 guests, 5 hours'])
