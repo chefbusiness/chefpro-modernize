@@ -1315,6 +1315,13 @@ export default async (request: Request) => {
   });
 };
 
+// Only the routes this function can serve (the keys of OG_DATA). Netlify
+// compiles each path to `^<path>/?$`, so the single trailing slash that the
+// handler strips (`pathname.replace(/\/$/, '') || '/'`) already matches.
+// Adding `path + '/'` would compile to `^<path>//?$` (a second slash), which
+// the lookup does not accept. The extractor imports this module and serializes
+// `config`, so the deployed list stays the keys of OG_DATA. `netlify.toml`
+// does not declare this function.
 export const config = {
-  path: "/*",
+  path: Object.keys(OG_DATA),
 };
