@@ -1029,8 +1029,13 @@ def valores_mbar(M):
 
 
 # Calibración D15 (SPEC D85): holgura ≥ 15 %; si no, B4 de 10 en 10 hasta 180; si la caja mínima ≤ 0 por la rampa,
-# B35 3 → 4 antes de tocar el precio. La rellena el dry-run del paso 1 (F2-NOTAS §3); cada celda, citada allí (G7)
-CALIBRACION_D15 = OrderedDict()
+# B35 3 → 4 antes de tocar el precio. Dry-run del paso 1 con research §8 tal cual: D15 VERDE sin tocar B4 ni B35
+# (holgura 20.3 %, DSCR mín 2.77, saldo mín > 0, cobertura 131 %), pero el punto fijo del préstamo daba $52,000, por
+# encima del tope de $50,000 del SBA Microloan en el que D85 encaja el caso. Cada celda, citada en F2-NOTAS §3 (G7)
+CALIBRACION_D15 = OrderedDict([
+    (('MBP', _S, 'B30'), (28000, 'D85: fondos propios 26,000 → 28,000 para que el préstamo (punto fijo) quede en '
+                                 '$50,000 = tope del SBA Microloan; D15 ya estaba en verde')),
+])
 
 
 # ==========================================================================
