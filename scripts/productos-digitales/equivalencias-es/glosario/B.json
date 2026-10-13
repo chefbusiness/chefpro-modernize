@@ -1,0 +1,5807 @@
+[
+ {
+  "id": "camarero",
+  "es": "camarero, camarera",
+  "variantes": [
+   {
+    "termino": "mesero, mesera",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "PA",
+     "CO",
+     "EC",
+     "DO",
+     "PR",
+     "US",
+     "BO"
+    ]
+   },
+   {
+    "termino": "salonero, salonera",
+    "paises": [
+     "CR"
+    ]
+   },
+   {
+    "termino": "mesonero, mesonera",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "mozo, moza",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "PE"
+    ]
+   },
+   {
+    "termino": "garzón, garzona",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "garçom",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "En EE. UU. el personal bilingüe también dice «server». En BO conviven «mesero» y «garzón».",
+  "confianza": "media",
+  "evidencia": [
+   "Conocimiento propio; sin dato DataForSEO"
+  ]
+ },
+ {
+  "id": "jefe_partida",
+  "es": "jefe de partida",
+  "variantes": [
+   {
+    "termino": "jefe de línea, líder de línea",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "jefe de sector, cocinero de sector",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "chefe de partida",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "UY",
+   "PY"
+  ],
+  "nota": "«Chef de partie» es la forma de hotel y alta cocina en toda la región; en EE. UU. el equivalente es el «line cook lead».",
+  "confianza": "media"
+ },
+ {
+  "id": "ayudante_cocina",
+  "es": "ayudante de cocina",
+  "variantes": [
+   {
+    "termino": "auxiliar de cocina",
+    "paises": [
+     "CO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "ayudante de cocina; prep cook (cocinero de preparación)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "ajudante de cozinha, auxiliar de cozinha",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En CL conviven «ayudante» y «auxiliar»; en CO se oye casi solo «auxiliar de cocina».",
+  "confianza": "media"
+ },
+ {
+  "id": "pinche",
+  "es": "pinche",
+  "variantes": [
+   {
+    "termino": "ayudante de cocina, auxiliar de cocina",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "ayudante de cocina; prep cook",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "ajudante de cozinha",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "En México «pinche» es un insulto suave («pinche trabajo»): no lo uses en ofertas ni en la carta; en Cuba sí es el ayudante de cocina.",
+  "confianza": "media"
+ },
+ {
+  "id": "friegaplatos",
+  "es": "friegaplatos",
+  "variantes": [
+   {
+    "termino": "lavaplatos",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "bachero, lavacopas",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "lavador de pratos, auxiliar de limpeza",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "En CO y PE «lavaplatos» es también la pileta; en MX la pileta es «tarja» o «lavatrastes». En EE. UU. se mezcla con «dishwasher».",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO AR «bachero» 2.400/mes vs «friegaplatos» 10",
+   "MX «lavaplatos» 3.600 vs «friegaplatos» 20",
+   "US «lavaplatos» 3.600 vs «friegaplatos» 50",
+   "CL «lavaplatos» 33.100 vs «friegaplatos» 10"
+  ]
+ },
+ {
+  "id": "encargado",
+  "es": "encargado, encargada",
+  "variantes": [
+   {
+    "termino": "administrador, administradora",
+    "paises": [
+     "CO",
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "gerente; manager (en inglés)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "gerente, encarregado",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "EC",
+   "BO",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En CL y PE el «administrador» o «jefe de local» manda el turno; en EE. UU. se dice «manager» o «supervisor».",
+  "confianza": "media"
+ },
+ {
+  "id": "maitre",
+  "es": "maître",
+  "variantes": [
+   {
+    "termino": "capitán de meseros, maître",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "maître d'; host, hostess (Spanglish)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "maître, maitre",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX y Centroamérica el «capitán de meseros» cumple esa función en restaurantes de gama media.",
+  "confianza": "media"
+ },
+ {
+  "id": "jefe_sala",
+  "es": "jefe de sala",
+  "variantes": [
+   {
+    "termino": "jefe de salón, encargado de salón",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "capitán de meseros, gerente de piso",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "gerente de piso; floor manager",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "chefe de sala, maître",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL"
+  ],
+  "nota": "«Jefe de sala» se entiende en la región andina y Chile; en el Río de la Plata dicen «salón».",
+  "confianza": "media"
+ },
+ {
+  "id": "sous_chef",
+  "es": "segundo de cocina, sous chef",
+  "variantes": [
+   {
+    "termino": "subchefe",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "«Sous chef» es universal en cocina profesional; «segundo de cocina» se oye más en AR, PE y CO.",
+  "confianza": "alta"
+ },
+ {
+  "id": "jefe_cocina",
+  "es": "jefe de cocina",
+  "variantes": [
+   {
+    "termino": "chef, chef ejecutivo",
+    "paises": [
+     "MX",
+     "CO",
+     "US"
+    ]
+   },
+   {
+    "termino": "chefe de cozinha",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "«Chef» a secas ya es el jefe de cocina en todas partes; «chef ejecutivo» en hoteles.",
+  "confianza": "alta"
+ },
+ {
+  "id": "barman",
+  "es": "barman, bartender",
+  "variantes": [
+   {
+    "termino": "bartender",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "PR",
+     "US",
+     "DO"
+    ]
+   },
+   {
+    "termino": "barman",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL"
+    ]
+   },
+   {
+    "termino": "cantinero",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "bartender, barman",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Cantinero» sigue vivo en MX, DO y PR para el que sirve en barra tradicional; «barista» es café.",
+  "confianza": "media"
+ },
+ {
+  "id": "repartidor",
+  "es": "repartidor",
+  "variantes": [
+   {
+    "termino": "domiciliario, domiciliaria",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "motorizado",
+    "paises": [
+     "VE",
+     "PE",
+     "EC",
+     "BO"
+    ]
+   },
+   {
+    "termino": "cadete, repartidor",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "entregador",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CL",
+   "US"
+  ],
+  "nota": "En PE y BO también se oye «delivery» a secas.",
+  "confianza": "media",
+  "evidencia": [
+   "Conocimiento propio"
+  ]
+ },
+ {
+  "id": "pastelero",
+  "es": "pastelero",
+  "variantes": [
+   {
+    "termino": "repostero, repostera",
+    "paises": [
+     "CO",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "confeiteiro",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "«Repostero» se entiende en todo el continente; en EE. UU. se usa también «panadero» para el de pan.",
+  "confianza": "alta"
+ },
+ {
+  "id": "parrillero",
+  "es": "parrillero",
+  "variantes": [
+   {
+    "termino": "asador, parrillero",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI"
+    ]
+   },
+   {
+    "termino": "parrillero; grill cook",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "churrasqueiro, grelhador",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX y Centroamérica «asador» es el que hace carne asada; «parrillero» domina en el Cono Sur.",
+  "confianza": "media"
+ },
+ {
+  "id": "escandallo",
+  "es": "escandallo",
+  "variantes": [
+   {
+    "termino": "costeo de recetas, receta estándar",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "receta estándar, ficha técnica de costos",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "ficha técnica (de costos)",
+    "paises": [
+     "CU",
+     "EC",
+     "PE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "escandallo",
+    "paises": [
+     "AR",
+     "CL",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "ficha técnica de custo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Escandallo» sobrevive en AR y CL (escuelas y chefs), pero cada vez más se busca «costeo de recetas». En MX, «escandallo» lo busca gente que lee contenido español.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «costeo de recetas» 390 vs «escandallo» 210 vs «receta estándar» 140",
+   "AR «escandallo» 140 vs «costeo de recetas» 10",
+   "CL 210 vs 10",
+   "CO «escandallo» 90 vs «receta estándar» 30",
+   "PE 50 vs 30"
+  ]
+ },
+ {
+  "id": "merma",
+  "es": "merma",
+  "variantes": [
+   {
+    "termino": "desperdicio, merma",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "perda, quebra",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En CO conviven «desperdicio» y «merma»; en EE. UU. el personal hispano dice «waste» a veces.",
+  "confianza": "alta"
+ },
+ {
+  "id": "ticket_medio",
+  "es": "ticket medio",
+  "variantes": [
+   {
+    "termino": "ticket promedio",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "cheque promedio",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "ticket promedio; average check",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "ticket médio",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX restaurantero también se dice «cheque promedio»; «ticket medio» casi no se usa fuera de España.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «ticket promedio» 720 vs «ticket medio» 20 vs «cheque promedio» 50",
+   "CO 480 vs 20",
+   "AR 110 vs 10"
+  ]
+ },
+ {
+  "id": "cierre_caja",
+  "es": "arqueo / cierre de caja",
+  "variantes": [
+   {
+    "termino": "corte de caja",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "cuadre de caja",
+    "paises": [
+     "CO",
+     "VE",
+     "DO",
+     "PR",
+     "CU"
+    ]
+   },
+   {
+    "termino": "cuadratura de caja",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "cierre de caja, arqueo de caja",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "EC",
+     "PE",
+     "BO",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "fechamento de caixa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Arqueo» es el conteo del efectivo; el «corte» mexicano incluye además el reporte de ventas del turno.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «arqueo de caja» 2.900, «corte de caja» 1.600, «cierre de caja» 140, «cuadre» 40",
+   "CO «arqueo» 1.000, «cuadre» 260, «cierre» 210",
+   "AR «arqueo» 1.300, «cierre» 170"
+  ]
+ },
+ {
+  "id": "cuadrante",
+  "es": "cuadrante",
+  "variantes": [
+   {
+    "termino": "rol de turnos",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "PE",
+     "BO",
+     "DO",
+     "EC"
+    ]
+   },
+   {
+    "termino": "cuadro de turnos, programación de turnos",
+    "paises": [
+     "CO",
+     "VE",
+     "CU",
+     "PR"
+    ]
+   },
+   {
+    "termino": "planilla de turnos, turnos",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "grilla de horarios",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "schedule, horario",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "escala de turnos",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Fuera de España «cuadrante» suena a geometría (MX 8.100/mes son búsquedas escolares): usa «rol de turnos» o «horario».",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «rol de turnos» 260 vs «cuadrante de turnos» 10; «cuadrante» 8.100 = matemáticas"
+  ]
+ },
+ {
+  "id": "prevision_ventas",
+  "es": "previsión de ventas",
+  "variantes": [
+   {
+    "termino": "pronóstico de ventas",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "US"
+    ]
+   },
+   {
+    "termino": "proyección de ventas",
+    "paises": [
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "CU"
+    ]
+   },
+   {
+    "termino": "previsão de vendas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Previsión» solo se entiende bien; «forecast» lo usan los gerentes de cadenas en toda la región.",
+  "confianza": "media"
+ },
+ {
+  "id": "punto_equilibrio",
+  "es": "punto de equilibrio",
+  "variantes": [
+   {
+    "termino": "ponto de equilíbrio",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En EE. UU. el personal de gestión dice también «break-even».",
+  "confianza": "alta"
+ },
+ {
+  "id": "margen_bruto",
+  "es": "margen bruto",
+  "variantes": [
+   {
+    "termino": "margem bruta",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En MX se usa también «utilidad bruta» para el importe; «margen» es el porcentaje.",
+  "confianza": "alta"
+ },
+ {
+  "id": "beneficio",
+  "es": "beneficio",
+  "variantes": [
+   {
+    "termino": "utilidad, ganancia",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "ganancia, resultado",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CU"
+    ]
+   },
+   {
+    "termino": "lucro",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Utilidad» es el término contable; «ganancia» es el coloquial. «Beneficio» se entiende pero suena a España.",
+  "confianza": "alta"
+ },
+ {
+  "id": "cuenta_resultados",
+  "es": "cuenta de resultados",
+  "variantes": [
+   {
+    "termino": "estado de resultados",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "estado de pérdidas y ganancias, P&L",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "DRE (demonstração do resultado)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«P&L» o «PyG» se oye en cadenas de toda la región; en AR a veces «cuadro de resultados».",
+  "confianza": "alta"
+ },
+ {
+  "id": "food_cost",
+  "es": "food cost",
+  "variantes": [
+   {
+    "termino": "food cost, costo de alimentos",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "food cost, costo de ventas (CMV)",
+    "paises": [
+     "CO",
+     "EC",
+     "PE",
+     "BO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "food cost, costo de mercadería (CMV)",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "CMV, food cost",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El anglicismo «food cost» es universal en restauración; en contabilidad se dice «costo de ventas» o «CMV».",
+  "confianza": "media"
+ },
+ {
+  "id": "coste",
+  "es": "coste, costes",
+  "variantes": [
+   {
+    "termino": "costo, costos",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "custo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Coste» solo se usa en España; en todo el continente se escribe «costo».",
+  "confianza": "alta"
+ },
+ {
+  "id": "gastos_fijos",
+  "es": "gastos fijos",
+  "variantes": [
+   {
+    "termino": "custos fixos, despesas fixas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En LatAm «costos fijos» es igual de habitual que «gastos fijos»; ambas valen.",
+  "confianza": "alta"
+ },
+ {
+  "id": "tesoreria",
+  "es": "tesorería",
+  "variantes": [
+   {
+    "termino": "flujo de efectivo",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI"
+    ]
+   },
+   {
+    "termino": "flujo de caja",
+    "paises": [
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "fluxo de caixa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Tesorería» se entiende como área financiera; lo que se mide en un negocio pequeño es el «flujo de caja/efectivo».",
+  "confianza": "media"
+ },
+ {
+  "id": "factura",
+  "es": "factura",
+  "variantes": [
+   {
+    "termino": "nota fiscal (NF-e)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En CL, PE y BO la «boleta» es el comprobante al consumidor y la «factura» el de empresa; en MX es el CFDI.",
+  "confianza": "alta"
+ },
+ {
+  "id": "albaran",
+  "es": "albarán",
+  "variantes": [
+   {
+    "termino": "nota de remisión, remisión",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "PA",
+     "CO",
+     "PY",
+     "CU"
+    ]
+   },
+   {
+    "termino": "remito",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "guía de remisión",
+    "paises": [
+     "PE",
+     "EC"
+    ]
+   },
+   {
+    "termino": "guía de despacho",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "nota de entrega",
+    "paises": [
+     "VE",
+     "BO",
+     "CR",
+     "PR"
+    ]
+   },
+   {
+    "termino": "conduce",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "delivery receipt; remisión",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "romaneio, nota de entrega",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Albarán» solo se entiende en España; el documento que acompaña la mercancía tiene nombre propio en cada país.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «nota de remisión» 33.100 vs «albarán» 1.600",
+   "AR «remito» 6.600 vs «albarán» 590",
+   "PE «guía de remisión» 1.600 vs «albarán» 390"
+  ]
+ },
+ {
+  "id": "stock",
+  "es": "stock, existencias",
+  "variantes": [
+   {
+    "termino": "inventario, existencias",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "stock",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "estoque",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Stock» se usa en AR, CL y PE; «inventario» es la palabra segura en todos lados.",
+  "confianza": "media"
+ },
+ {
+  "id": "pedido_proveedor",
+  "es": "pedido a proveedor",
+  "variantes": [
+   {
+    "termino": "orden de compra",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "pedido a proveedor, nota de pedido",
+    "paises": [
+     "CU",
+     "DO",
+     "PR",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "pedido de compra",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Orden de compra» es el documento formal; en el día a día la cocina dice «el pedido».",
+  "confianza": "media"
+ },
+ {
+  "id": "tpv",
+  "es": "TPV",
+  "variantes": [
+   {
+    "termino": "POS, sistema de punto de venta",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "PDV, sistema de frente de caixa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«TPV» es sigla española. En MX «TPV» (terminal punto de venta) es la terminal bancaria; el sistema se llama «POS». En AR/UY «punto de venta» es el sistema.",
+  "confianza": "alta"
+ },
+ {
+  "id": "datafono",
+  "es": "datáfono",
+  "variantes": [
+   {
+    "termino": "datáfono",
+    "paises": [
+     "CO",
+     "EC",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "terminal bancaria, terminal punto de venta (TPV)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI"
+    ]
+   },
+   {
+    "termino": "punto de venta",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "posnet, terminal de tarjetas",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "POS, terminal de tarjetas",
+    "paises": [
+     "PE",
+     "CL",
+     "BO",
+     "DO",
+     "PR",
+     "CU",
+     "US"
+    ]
+   },
+   {
+    "termino": "maquininha (de cartão)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CL el aparato lo da Transbank y se llama «máquina» o «Redcompra»; en VE «punto de venta» es el aparato, no el sistema.",
+  "confianza": "media"
+ },
+ {
+  "id": "fondo_caja",
+  "es": "fondo de caja",
+  "variantes": [
+   {
+    "termino": "fondo de caja, fondo fijo",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "VE",
+     "EC",
+     "BO"
+    ]
+   },
+   {
+    "termino": "base de caja, base",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "sencillo, cambio",
+    "paises": [
+     "PE",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "starting bank, fondo de caja",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "fundo de caixa, troco",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Caja chica» es el dinero para gastos menudos; no es la base de la caja registradora.",
+  "confianza": "media"
+ },
+ {
+  "id": "amortizacion",
+  "es": "amortización",
+  "variantes": [
+   {
+    "termino": "depreciación (equipos); amortización (deuda)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "depreciação",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En LatAm «amortización» es sobre todo pagar un préstamo; el desgaste de un equipo se llama «depreciación».",
+  "confianza": "alta"
+ },
+ {
+  "id": "subvencion",
+  "es": "subvención",
+  "variantes": [
+   {
+    "termino": "subsidio, apoyo económico",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "fondo concursable, subsidio",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "grant, subsidio",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "subvenção, subsídio",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Los fondos nombran la institución: SERCOTEC (CL), Fondo Emprender/SENA (CO), INADEM antes (MX, ya extinto).",
+  "confianza": "media"
+ },
+ {
+  "id": "nomina",
+  "es": "nómina",
+  "variantes": [
+   {
+    "termino": "nómina",
+    "paises": [
+     "MX",
+     "GT",
+     "NI",
+     "CO",
+     "VE",
+     "DO",
+     "PR",
+     "CU",
+     "US"
+    ]
+   },
+   {
+    "termino": "planilla",
+    "paises": [
+     "PE",
+     "BO",
+     "CR",
+     "PA",
+     "HN",
+     "SV",
+     "PY"
+    ]
+   },
+   {
+    "termino": "rol de pagos",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "liquidación de sueldos, remuneraciones",
+    "paises": [
+     "CL",
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "folha de pagamento",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En PE «planilla» es la nómina oficial (PLAME); «boleta de pago» es el recibo individual. En AR el recibo se llama «recibo de sueldo».",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO PE «boleta de pago» 49.500 vs «planilla» 4.400 vs «nómina» 1.900",
+   "MX «nómina» 40.500, «recibo de nómina» 49.500",
+   "AR «recibo de sueldo» 135.000 vs «nómina» 1.900"
+  ]
+ },
+ {
+  "id": "finiquito",
+  "es": "finiquito",
+  "variantes": [
+   {
+    "termino": "liquidación (final)",
+    "paises": [
+     "CO",
+     "AR",
+     "UY",
+     "PY",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CU",
+     "VE"
+    ]
+   },
+   {
+    "termino": "liquidación de beneficios sociales",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "final paycheck, liquidación",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "rescisão, acerto (TRCT)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "CL",
+   "EC",
+   "BO"
+  ],
+  "nota": "En MX «liquidación» incluye además la indemnización por despido; «finiquito» es el recibo de cierre. En CL «finiquito» es el documento firmado ante notario o la Inspección.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO CL «finiquito» 18.100 = «liquidación de sueldo» 18.100",
+   "MX «finiquito» 22.200",
+   "AR «finiquito» 1.600 vs «liquidación final» 720"
+  ]
+ },
+ {
+  "id": "autonomo",
+  "es": "autónomo",
+  "variantes": [
+   {
+    "termino": "persona física con actividad empresarial (RESICO)",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "monotributista",
+    "paises": [
+     "AR",
+     "UY"
+    ]
+   },
+   {
+    "termino": "persona natural, trabajador independiente",
+    "paises": [
+     "CO",
+     "CL",
+     "PE",
+     "EC",
+     "PA",
+     "VE"
+    ]
+   },
+   {
+    "termino": "trabajador por cuenta propia",
+    "paises": [
+     "CU",
+     "PR"
+    ]
+   },
+   {
+    "termino": "pequeño contribuyente, comerciante individual",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "DO",
+     "PY",
+     "BO"
+    ]
+   },
+   {
+    "termino": "self-employed, trabajador por cuenta propia",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "MEI (microempreendedor individual)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Cada país tiene su régimen simplificado: RESICO (MX), SIMPLE (CO), Pro Pyme (CL), NRUS/RER (PE), RIMPE (EC), RTS (BO), RST (DO), cuota fija (NI).",
+  "confianza": "media",
+  "evidencia": [
+   "Fichas de país (forma_juridica) para los nombres de los regímenes"
+  ]
+ },
+ {
+  "id": "iva",
+  "es": "IVA",
+  "variantes": [
+   {
+    "termino": "ISV (impuesto sobre ventas)",
+    "paises": [
+     "HN"
+    ]
+   },
+   {
+    "termino": "ITBMS",
+    "paises": [
+     "PA"
+    ]
+   },
+   {
+    "termino": "ITBIS",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "IVU",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "IGV",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "impuesto sobre las ventas",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "sales tax (impuesto a las ventas, varía por estado)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "ICMS (mercancía) e ISS (servicios)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "SV",
+   "NI",
+   "CR",
+   "CO",
+   "VE",
+   "EC",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En CO el restaurante paga el impuesto nacional al consumo del 8 % en lugar del IVA. En MX el IVA es del 16 % (8 % en la franja fronteriza).",
+  "confianza": "alta",
+  "evidencia": [
+   "Fichas MX y BO (IVA 16 % y 13 %)"
+  ]
+ },
+ {
+  "id": "seguridad_social",
+  "es": "Seguridad Social",
+  "variantes": [
+   {
+    "termino": "IMSS",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "IGSS",
+    "paises": [
+     "GT"
+    ]
+   },
+   {
+    "termino": "IHSS",
+    "paises": [
+     "HN"
+    ]
+   },
+   {
+    "termino": "ISSS",
+    "paises": [
+     "SV"
+    ]
+   },
+   {
+    "termino": "INSS",
+    "paises": [
+     "NI"
+    ]
+   },
+   {
+    "termino": "CCSS",
+    "paises": [
+     "CR"
+    ]
+   },
+   {
+    "termino": "CSS (Caja de Seguro Social)",
+    "paises": [
+     "PA"
+    ]
+   },
+   {
+    "termino": "TSS (Tesorería de la Seguridad Social)",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "Seguro Social (FICA)",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "EPS, pensión y ARL (seguridad social integral)",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "IVSS",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "IESS",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "EsSalud",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "Caja Nacional de Salud (CNS) y Gestora Pública",
+    "paises": [
+     "BO"
+    ]
+   },
+   {
+    "termino": "AFP + Fonasa o Isapre",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "ANSES / seguridad social",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "BPS",
+    "paises": [
+     "UY"
+    ]
+   },
+   {
+    "termino": "IPS",
+    "paises": [
+     "PY"
+    ]
+   },
+   {
+    "termino": "Social Security y Medicare (FICA)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "INSS",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "Es institución, no sinónimo: aquí va el organismo al que afilias a tu equipo en cada país.",
+  "confianza": "alta",
+  "evidencia": [
+   "Fichas de país (laboral)"
+  ]
+ },
+ {
+  "id": "convenio_colectivo",
+  "es": "convenio colectivo",
+  "variantes": [
+   {
+    "termino": "contrato colectivo (de trabajo)",
+    "paises": [
+     "MX",
+     "EC",
+     "CL",
+     "HN",
+     "SV",
+     "PY"
+    ]
+   },
+   {
+    "termino": "convención colectiva",
+    "paises": [
+     "CO",
+     "VE",
+     "PE",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "pacto colectivo de condiciones de trabajo",
+    "paises": [
+     "GT",
+     "DO"
+    ]
+   },
+   {
+    "termino": "convenio colectivo de trabajo",
+    "paises": [
+     "AR",
+     "UY",
+     "NI",
+     "BO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "union contract (convenio sindical)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "convenção coletiva",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "AR: hostelería = CCT UTHGRA; UY: Consejo de Salarios, grupo 13 (hoteles, restaurantes y bares).",
+  "confianza": "media"
+ },
+ {
+  "id": "baja_laboral",
+  "es": "baja (laboral)",
+  "variantes": [
+   {
+    "termino": "incapacidad",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "licencia médica",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "DO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "reposo médico",
+    "paises": [
+     "VE",
+     "EC",
+     "PY"
+    ]
+   },
+   {
+    "termino": "descanso médico",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "baja médica",
+    "paises": [
+     "BO"
+    ]
+   },
+   {
+    "termino": "sick leave, incapacidad",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "licença médica, afastamento",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CO y MX la «incapacidad» la certifica la EPS o el IMSS; en CL la «licencia médica» la tramita Compin o la Isapre.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «baja laboral» 260/mes (poca presencia local)"
+  ]
+ },
+ {
+  "id": "alta_trabajador",
+  "es": "alta en la Seguridad Social",
+  "variantes": [
+   {
+    "termino": "alta en el IMSS",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "afiliación a la seguridad social",
+    "paises": [
+     "CO",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "DO",
+     "VE",
+     "BO",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "aviso de entrada al IESS",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "alta en T-Registro (SUNAT/EsSalud)",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "registro de la relación laboral (ARCA)",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "inscripción del contrato (Dirección del Trabajo)",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "inscripción en CCSS / CSS",
+    "paises": [
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "paperwork de nuevo empleado (W-4, I-9)",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "registro em carteira (CTPS), eSocial",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU"
+  ],
+  "nota": "El trámite es de la institución local; en AR el organismo antes era AFIP y hoy es ARCA.",
+  "confianza": "media"
+ },
+ {
+  "id": "contrato_indefinido",
+  "es": "contrato indefinido",
+  "variantes": [
+   {
+    "termino": "contrato por tiempo indeterminado",
+    "paises": [
+     "MX",
+     "AR",
+     "UY",
+     "VE",
+     "BO",
+     "PY"
+    ]
+   },
+   {
+    "termino": "contrato a término indefinido",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "contrato a plazo indeterminado",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "contrato por tiempo indefinido",
+    "paises": [
+     "CR",
+     "PA",
+     "HN",
+     "SV"
+    ]
+   },
+   {
+    "termino": "at-will employment (sin contrato fijo)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "contrato por prazo indeterminado (CLT)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "NI",
+   "CU",
+   "DO",
+   "PR",
+   "EC",
+   "CL"
+  ],
+  "nota": "En CL y EC se llama «contrato indefinido», igual que en España.",
+  "confianza": "media"
+ },
+ {
+  "id": "contrato_temporal",
+  "es": "contrato temporal",
+  "variantes": [
+   {
+    "termino": "contrato por tiempo determinado",
+    "paises": [
+     "MX",
+     "VE",
+     "CR",
+     "PA",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "BO",
+     "PY",
+     "DO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "contrato a término fijo",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "contrato a plazo fijo",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PE",
+     "EC"
+    ]
+   },
+   {
+    "termino": "contrato temporero",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "temporary o seasonal worker",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "contrato por prazo determinado",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR el eventual para temporadas altas es «contrato eventual»; en PE hay «contratos modales».",
+  "confianza": "media"
+ },
+ {
+  "id": "horas_extra",
+  "es": "horas extra",
+  "variantes": [
+   {
+    "termino": "sobretiempo",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "horas suplementarias y extraordinarias",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "overtime, tiempo extra",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "horas extras",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX se oye también «tiempo extra»; en CR «tiempo extraordinario». Recargos: 50 % y 100 % en AR; 25 % + 25 % en CO.",
+  "confianza": "media"
+ },
+ {
+  "id": "gestoria",
+  "es": "gestoría, asesoría",
+  "variantes": [
+   {
+    "termino": "contador (público), despacho contable",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC"
+    ]
+   },
+   {
+    "termino": "estudio contable",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "PE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "contador, oficina contable",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "asesor contable o fiscal",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "accountant, tax preparer",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "contador, escritório contábil",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "La «gestoría» como oficina de trámites es española; en LatAm el tributario va con el contador.",
+  "confianza": "alta"
+ },
+ {
+  "id": "licencia_actividad",
+  "es": "licencia de actividad",
+  "variantes": [
+   {
+    "termino": "licencia de funcionamiento",
+    "paises": [
+     "MX",
+     "HN",
+     "SV",
+     "NI",
+     "BO",
+     "PE",
+     "DO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "habilitación comercial (municipal)",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "patente comercial",
+    "paises": [
+     "CL",
+     "CR",
+     "GT"
+    ]
+   },
+   {
+    "termino": "aviso de operación",
+    "paises": [
+     "PA"
+    ]
+   },
+   {
+    "termino": "LUAF (Licencia Única de Actividades Económicas)",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "registro mercantil + concepto sanitario + uso de suelo",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "licencia de actividades económicas",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "Permiso Único",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "business license + health permit",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "alvará de funcionamento",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX se pide además el aviso de funcionamiento (COFEPRIS). En EC la LUAF se tramita en el municipio.",
+  "confianza": "media"
+ },
+ {
+  "id": "ayuntamiento",
+  "es": "ayuntamiento",
+  "variantes": [
+   {
+    "termino": "alcaldía",
+    "paises": [
+     "CO",
+     "VE",
+     "HN",
+     "SV",
+     "NI",
+     "PA",
+     "BO"
+    ]
+   },
+   {
+    "termino": "municipalidad",
+    "paises": [
+     "AR",
+     "CL",
+     "PE",
+     "CR",
+     "GT",
+     "PY"
+    ]
+   },
+   {
+    "termino": "municipio, ayuntamiento",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "municipio",
+    "paises": [
+     "EC",
+     "PR",
+     "CU"
+    ]
+   },
+   {
+    "termino": "intendencia",
+    "paises": [
+     "UY"
+    ]
+   },
+   {
+    "termino": "city hall, condado",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "prefeitura",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "DO"
+  ],
+  "nota": "En DO «ayuntamiento» es el nombre oficial; en MX «alcaldía» solo son las 16 de la CDMX.",
+  "confianza": "media"
+ },
+ {
+  "id": "comunidad_autonoma",
+  "es": "comunidad autónoma",
+  "variantes": [
+   {
+    "termino": "estado",
+    "paises": [
+     "MX",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "provincia",
+    "paises": [
+     "AR",
+     "EC",
+     "CR",
+     "PA",
+     "CU",
+     "DO"
+    ]
+   },
+   {
+    "termino": "departamento",
+    "paises": [
+     "CO",
+     "UY",
+     "BO",
+     "PY",
+     "GT",
+     "HN",
+     "SV",
+     "NI"
+    ]
+   },
+   {
+    "termino": "región",
+    "paises": [
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "gobierno de Puerto Rico (ELA)",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "estado",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "No existe equivalente exacto: se refiere al nivel de gobierno entre el municipio y el país, con otro nombre en cada sitio.",
+  "confianza": "alta"
+ },
+ {
+  "id": "hacienda",
+  "es": "Hacienda",
+  "variantes": [
+   {
+    "termino": "SAT",
+    "paises": [
+     "MX",
+     "GT"
+    ]
+   },
+   {
+    "termino": "SAR",
+    "paises": [
+     "HN"
+    ]
+   },
+   {
+    "termino": "Ministerio de Hacienda",
+    "paises": [
+     "SV"
+    ]
+   },
+   {
+    "termino": "DGI",
+    "paises": [
+     "NI",
+     "PA",
+     "UY"
+    ]
+   },
+   {
+    "termino": "Hacienda (Ministerio de Hacienda)",
+    "paises": [
+     "CR"
+    ]
+   },
+   {
+    "termino": "ONAT",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "DGII",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "Hacienda (Departamento de Hacienda)",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "DIAN",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "SENIAT",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "SRI",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "SUNAT",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "SIN (Servicio de Impuestos Nacionales)",
+    "paises": [
+     "BO"
+    ]
+   },
+   {
+    "termino": "SII",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "ARCA (antes AFIP)",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "DNIT (antes SET)",
+    "paises": [
+     "PY"
+    ]
+   },
+   {
+    "termino": "IRS",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "Receita Federal",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Es institución, no sinónimo: el organismo tributario de cada país.",
+  "confianza": "alta",
+  "evidencia": [
+   "Fichas de país; AFIP pasó a ARCA en 2024 y SET a DNIT en 2024"
+  ]
+ },
+ {
+  "id": "irpf",
+  "es": "IRPF",
+  "variantes": [
+   {
+    "termino": "ISR (impuesto sobre la renta)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "PA",
+     "DO"
+    ]
+   },
+   {
+    "termino": "impuesto sobre la renta",
+    "paises": [
+     "NI",
+     "CR",
+     "CU"
+    ]
+   },
+   {
+    "termino": "impuesto de renta",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "ISLR",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "impuesto a la renta",
+    "paises": [
+     "EC",
+     "PE"
+    ]
+   },
+   {
+    "termino": "RC-IVA",
+    "paises": [
+     "BO"
+    ]
+   },
+   {
+    "termino": "impuesto único de segunda categoría",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "impuesto a las ganancias",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "IRP",
+    "paises": [
+     "PY"
+    ]
+   },
+   {
+    "termino": "federal income tax withholding",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "contribución sobre ingresos",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "IRRF",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "UY"
+  ],
+  "nota": "La retención sobre el sueldo del empleado: depende del régimen del país; en UY se llama igual, IRPF.",
+  "confianza": "media"
+ },
+ {
+  "id": "impuesto_sociedades",
+  "es": "impuesto de sociedades",
+  "variantes": [
+   {
+    "termino": "ISR (personas morales)",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "impuesto sobre la renta",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "impuesto de renta",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "impuesto a la renta",
+    "paises": [
+     "EC",
+     "PE"
+    ]
+   },
+   {
+    "termino": "impuesto a las ganancias",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "impuesto de primera categoría",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "IRAE",
+    "paises": [
+     "UY"
+    ]
+   },
+   {
+    "termino": "IRE",
+    "paises": [
+     "PY"
+    ]
+   },
+   {
+    "termino": "IUE",
+    "paises": [
+     "BO"
+    ]
+   },
+   {
+    "termino": "ISLR",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "impuesto sobre utilidades",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "corporate income tax",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "IRPJ / CSLL",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CL el régimen Pro Pyme reduce esa tasa para pymes; en PE el régimen MYPE tributario.",
+  "confianza": "media"
+ },
+ {
+  "id": "sociedad_limitada",
+  "es": "sociedad limitada",
+  "variantes": [
+   {
+    "termino": "S. de R.L. de C.V.",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "S.R.L. (sociedad de responsabilidad limitada)",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "CU",
+     "AR",
+     "UY",
+     "PY",
+     "BO",
+     "PE",
+     "VE"
+    ]
+   },
+   {
+    "termino": "S.A.S. o Ltda.",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "SpA o Limitada",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "Cía. Ltda.",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "LLC (limited liability company)",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "Ltda.",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CO y CL la S.A.S./SpA ha desplazado a la sociedad limitada; en MX la más pedida es S.A. de C.V.",
+  "confianza": "media"
+ },
+ {
+  "id": "mutua",
+  "es": "mutua",
+  "variantes": [
+   {
+    "termino": "IMSS (riesgos de trabajo)",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "IGSS",
+    "paises": [
+     "GT"
+    ]
+   },
+   {
+    "termino": "ARL (administradora de riesgos laborales)",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "ART (aseguradora de riesgos del trabajo)",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "mutual (ACHS, IST, Mutual de Seguridad)",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "SCTR / EsSalud",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "IESS (riesgos del trabajo)",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "INS (póliza de riesgos del trabajo)",
+    "paises": [
+     "CR"
+    ]
+   },
+   {
+    "termino": "BSE",
+    "paises": [
+     "UY"
+    ]
+   },
+   {
+    "termino": "IPS",
+    "paises": [
+     "PY"
+    ]
+   },
+   {
+    "termino": "seguro de riesgos laborales (TSS)",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "Fondo del Seguro del Estado",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "workers' compensation insurance",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "seguro de acidente de trabalho (SAT/INSS)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   },
+   {
+    "termino": "seguro de riesgos del trabajo de la seguridad social (ISSS, INSS, CSS, IVSS, CNS...)",
+    "paises": [
+     "HN",
+     "SV",
+     "NI",
+     "PA",
+     "CU",
+     "VE",
+     "BO"
+    ]
+   }
+  ],
+  "igual": [],
+  "nota": "ISSS (SV), INSS (NI), CSS (PA), IVSS (VE) y CNS (BO) cubren el riesgo laboral dentro de la propia seguridad social.",
+  "confianza": "media"
+ },
+ {
+  "id": "prevencion_riesgos",
+  "es": "prevención de riesgos laborales",
+  "variantes": [
+   {
+    "termino": "seguridad e higiene en el trabajo",
+    "paises": [
+     "MX",
+     "AR",
+     "UY",
+     "PY",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "CU",
+     "PR"
+    ]
+   },
+   {
+    "termino": "SST (seguridad y salud en el trabajo)",
+    "paises": [
+     "CO",
+     "PE",
+     "EC",
+     "BO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "prevención de riesgos (prevencionista)",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "OSHA, seguridad en el trabajo",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "segurança do trabalho (SST/NR)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CO el SG-SST es obligatorio para toda empresa; en MX las reglas son NOM de la STPS; en EE. UU., OSHA.",
+  "confianza": "media"
+ },
+ {
+  "id": "cotizacion",
+  "es": "cotización",
+  "variantes": [
+   {
+    "termino": "cuotas obrero-patronales",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "aportes",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "AR",
+     "UY",
+     "PY",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "cotizaciones previsionales",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "payroll taxes (FICA)",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "contribuições previdenciárias",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Se paga a la institución local (IMSS, IGSS, BPS...); en CL «cotización» se mantiene igual que en España.",
+  "confianza": "media"
+ },
+ {
+  "id": "traspaso",
+  "es": "traspaso",
+  "variantes": [
+   {
+    "termino": "traspaso",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "PE",
+     "EC",
+     "VE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "venta del fondo de comercio, llave",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "derecho de llave, traspaso",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "cesión del establecimiento de comercio",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "traspaso (transfer of a business), key money",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "passagem de ponto, luvas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "NI"
+  ],
+  "nota": "En AR «llave» o «fondo de comercio» es el valor del negocio en marcha; en MX «traspaso» se usa tanto en anuncios de local como en venta de negocio.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «traspaso» 3.600/mes",
+   "AR «fondo de comercio» 2.900, «llave de negocio» 140 vs «traspaso de local» 10",
+   "CO «traspaso de local» 10"
+  ]
+ },
+ {
+  "id": "alquiler",
+  "es": "alquiler",
+  "variantes": [
+   {
+    "termino": "renta",
+    "paises": [
+     "MX",
+     "US"
+    ]
+   },
+   {
+    "termino": "arriendo",
+    "paises": [
+     "CO",
+     "EC",
+     "CL"
+    ]
+   },
+   {
+    "termino": "aluguel",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "PE",
+   "BO",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX «renta» es el alquiler; en PR conviven «renta» y «alquiler»; en BO el «anticrético» es una figura propia.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «renta de local» 1.900 vs «alquiler de local» 20",
+   "CO «arriendo de local» 140 vs «alquiler de local» 70"
+  ]
+ },
+ {
+  "id": "fianza",
+  "es": "fianza",
+  "variantes": [
+   {
+    "termino": "depósito (en garantía)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "BO",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "garantía, mes de garantía",
+    "paises": [
+     "CL",
+     "PE"
+    ]
+   },
+   {
+    "termino": "security deposit (depósito de seguridad)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "caução",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX y CO «fianza» es una póliza afianzadora; el dinero que dejas al arrendador es el «depósito». En AR «garantía» es el garante.",
+  "confianza": "media"
+ },
+ {
+  "id": "dni",
+  "es": "DNI",
+  "variantes": [
+   {
+    "termino": "INE (credencial) y CURP",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "DPI",
+    "paises": [
+     "GT"
+    ]
+   },
+   {
+    "termino": "DNI",
+    "paises": [
+     "HN",
+     "PE",
+     "AR"
+    ]
+   },
+   {
+    "termino": "DUI",
+    "paises": [
+     "SV"
+    ]
+   },
+   {
+    "termino": "cédula de identidad",
+    "paises": [
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "VE",
+     "EC",
+     "BO",
+     "CL",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "cédula de ciudadanía",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "carné de identidad",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "REAL ID o licencia de conducir",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "state ID, driver license, SSN (para impuestos)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "RG e CPF",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Es documento, no sinónimo: cada país tiene el suyo. En PE y AR se llama igual (DNI).",
+  "confianza": "alta"
+ },
+ {
+  "id": "appcc",
+  "es": "APPCC",
+  "variantes": [
+   {
+    "termino": "HACCP (plan HACCP)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "BPM / buenas prácticas de manufactura",
+    "paises": [
+     "MX",
+     "CO",
+     "PE",
+     "AR"
+    ]
+   },
+   {
+    "termino": "APPCC / HACCP",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En restaurantes lo obligatorio suele ser las BPM: NOM-251 (MX), Res. 2674 (CO), NTS 142 (PE). HACCP se pide si tienes producción.",
+  "confianza": "alta",
+  "evidencia": [
+   "Fichas MX, CO y PE (autoridad_sanitaria)"
+  ]
+ },
+ {
+  "id": "manipulador_alimentos",
+  "es": "manipulador de alimentos",
+  "variantes": [
+   {
+    "termino": "manipulador de alimentos (carné)",
+    "paises": [
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "CO",
+     "VE",
+     "EC",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "manejo higiénico de alimentos (curso, Distintivo H)",
+    "paises": [
+     "MX"
+    ]
+   },
+   {
+    "termino": "carné de sanidad",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "food handler card",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "manipulador de alimentos",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El documento y quién lo emite varía: en MX la referencia es el curso del Distintivo H; en PE el carné municipal; en EE. UU., el food handler card.",
+  "confianza": "media",
+  "evidencia": [
+   "Fichas MX, PE, US (manipulador)"
+  ]
+ },
+ {
+  "id": "camara_frigorifica",
+  "es": "cámara frigorífica",
+  "variantes": [
+   {
+    "termino": "cámara fría, cuarto frío",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC"
+    ]
+   },
+   {
+    "termino": "cámara frigorífica, cámara de frío",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL",
+     "PE",
+     "BO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "walk-in, cuarto frío",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "câmara fria",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En EE. UU. se dice «el walk-in» (cooler para frío, freezer para congelado).",
+  "confianza": "media"
+ },
+ {
+  "id": "abatidor",
+  "es": "abatidor de temperatura",
+  "variantes": [
+   {
+    "termino": "blast chiller (abatidor)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "abatedor de temperatura",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "Se usa «abatidor de temperatura»; «enfriador rápido» o «chiller» como alternativas.",
+  "confianza": "media"
+ },
+ {
+  "id": "fifo",
+  "es": "FIFO / PEPS",
+  "variantes": [
+   {
+    "termino": "PEPS / FIFO",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "FIFO (first in, first out)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "PEPS / FIFO",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "PEPS = «primeras entradas, primeras salidas»; en cocinas profesionales «FIFO» se dice en toda la región.",
+  "confianza": "alta"
+ },
+ {
+  "id": "caducidad",
+  "es": "fecha de caducidad",
+  "variantes": [
+   {
+    "termino": "fecha de caducidad",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU"
+    ]
+   },
+   {
+    "termino": "fecha de vencimiento",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "fecha de expiración",
+    "paises": [
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "data de validade",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Vence» es lo que dicen la cocina y el etiquetado en la mayoría de países sudamericanos.",
+  "confianza": "alta"
+ },
+ {
+  "id": "consumo_preferente",
+  "es": "consumo preferente",
+  "variantes": [
+   {
+    "termino": "best by (mejor antes de)",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "consumir preferentemente antes de",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En la mayoría de países la etiqueta no distingue «caducidad» y «consumo preferente»; se usa «vence» para ambos.",
+  "confianza": "media"
+ },
+ {
+  "id": "desinfeccion",
+  "es": "DDD",
+  "variantes": [
+   {
+    "termino": "fumigación, sanitización",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "VE",
+     "EC",
+     "BO",
+     "US",
+     "CU"
+    ]
+   },
+   {
+    "termino": "control de plagas",
+    "paises": [
+     "CO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "DDD (desinfección, desratización, desinsectación)",
+    "paises": [
+     "PE",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "dedetização, desinsetização",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Fumigar» es el servicio en MX y Centroamérica; en PE el certificado se llama «certificado DDD».",
+  "confianza": "media"
+ },
+ {
+  "id": "control_plagas",
+  "es": "control de plagas",
+  "variantes": [
+   {
+    "termino": "pest control, exterminador",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "controle de pragas",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX y Centroamérica también se dice «fumigación»; en CO «manejo integrado de plagas (MIP)».",
+  "confianza": "alta"
+ },
+ {
+  "id": "basura",
+  "es": "cubo de basura",
+  "variantes": [
+   {
+    "termino": "bote de basura",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV"
+    ]
+   },
+   {
+    "termino": "basurero",
+    "paises": [
+     "NI",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "tacho de basura",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "PE",
+     "EC",
+     "BO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "caneca",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "zafacón",
+    "paises": [
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "papelera, tobo",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "cesto de basura",
+    "paises": [
+     "CU"
+    ]
+   },
+   {
+    "termino": "trash can, bote de basura",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "lixeira",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Cubo de basura» solo se oye en España; «zafacón» es exclusivo de DO y PR y «caneca» de CO.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «bote de basura» 49.500 vs «cubo de basura» 590",
+   "AR «tacho de basura» 9.900 vs «cubo» 170",
+   "PE «tacho» 14.800",
+   "CO «caneca de basura» 8.100"
+  ]
+ },
+ {
+  "id": "nevera",
+  "es": "nevera, frigorífico, arcón",
+  "variantes": [
+   {
+    "termino": "refrigerador, refri",
+    "paises": [
+     "MX",
+     "CL",
+     "BO",
+     "CU",
+     "US"
+    ]
+   },
+   {
+    "termino": "refrigeradora",
+    "paises": [
+     "PE",
+     "EC",
+     "CR",
+     "GT",
+     "HN",
+     "SV",
+     "NI"
+    ]
+   },
+   {
+    "termino": "heladera",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "nevera",
+    "paises": [
+     "CO",
+     "VE",
+     "DO",
+     "PR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "geladeira",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El «arcón» congelador se llama «freezer» en AR, «congelador horizontal» en MX y «cuarto frío» si es una cámara.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «refrigerador» 301.000 vs «nevera» 8.100",
+   "AR «heladera» 74.000 vs «nevera» 1.000",
+   "CO «nevera» 74.000 vs «refrigerador» 5.400",
+   "CL «refrigerador» 135.000 vs «nevera» 6.600",
+   "PE «refrigeradora» 60.500 (= «refrigerador» en la API)"
+  ]
+ },
+ {
+  "id": "fogon",
+  "es": "fogón",
+  "variantes": [
+   {
+    "termino": "quemador",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "PR",
+     "CL",
+     "PE",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "hornilla",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "CU",
+     "DO"
+    ]
+   },
+   {
+    "termino": "hornalla",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "boca (do fogão)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «fogón» es la cocina rústica de leña; en BR «fogão» es la cocina entera.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO AR «anafe» 27.100, «hornalla» 8.100",
+   "CO «fogón» 720 vs «estufa a gas» 1.900"
+  ]
+ },
+ {
+  "id": "cocina_gas",
+  "es": "cocina de gas",
+  "variantes": [
+   {
+    "termino": "estufa (de gas)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CO",
+     "PA",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "cocina a gas",
+    "paises": [
+     "CR",
+     "CU",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "fogão a gás",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en AR, CL y UY «estufa» es un calefactor. En MX y CO «cocina» no es el aparato.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «estufa de gas» 2.900 vs «cocina de gas» 260",
+   "AR «cocina a gas» 27.100",
+   "CO «estufa a gas» 1.900 vs «cocina a gas» 390"
+  ]
+ },
+ {
+  "id": "encimera",
+  "es": "encimera",
+  "variantes": [
+   {
+    "termino": "mesada",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "mesón",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "CR",
+     "PA",
+     "NI"
+    ]
+   },
+   {
+    "termino": "cubierta, encimera",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV"
+    ]
+   },
+   {
+    "termino": "countertop, mesón de trabajo",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "bancada, bancada de trabalho",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   },
+   {
+    "termino": "mesón, encimera",
+    "paises": [
+     "CU",
+     "DO",
+     "PR"
+    ]
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «mesón» y «encimera» son la cubierta de la cocina; en el Río de la Plata es «mesada» y la pileta, «bacha».",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «encimera» 6.600, «mesón» 4.400, «cubierta de cocina» 3.600, «mesada» 1.300",
+   "AR «mesada» 6.600 vs «encimera» 2.400",
+   "CO «mesón de cocina» 3.600 vs «encimera» 1.300"
+  ]
+ },
+ {
+  "id": "campana_extractora",
+  "es": "campana extractora",
+  "variantes": [
+   {
+    "termino": "campana (extractora)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "coifa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En VE y MX también se dice «extractor»; en la cocina de restaurante se habla de «campana» a secas.",
+  "confianza": "alta"
+ },
+ {
+  "id": "plancha",
+  "es": "plancha",
+  "variantes": [
+   {
+    "termino": "plancha",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "plancha, griddle",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "chapa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX la plancha de la taquería es de acero y el «comal» es el de las tortillas; «plancha» también es la de planchar ropa.",
+  "confianza": "alta"
+ },
+ {
+  "id": "batidora",
+  "es": "batidora",
+  "variantes": [
+   {
+    "termino": "licuadora (de vaso); batidora (de pie)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "minipimer, mixer (de mano); licuadora (de vaso)",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "batedeira (de pé); liquidificador (de copo)",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en España «batidora» es la de mano o vaso; en LatAm «batidora» es la de pie (mixer) y la de vaso es «licuadora».",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «licuadora» 90.500 vs «batidora» 49.500",
+   "AR «minipimer» 33.100, «licuadora» 27.100, «batidora» 14.800"
+  ]
+ },
+ {
+  "id": "lavavajillas",
+  "es": "lavavajillas",
+  "variantes": [
+   {
+    "termino": "lavaplatos, lavaloza",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "lavavajillas",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "lava-louças",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX el jabón se llama «lavatrastes»; «lavaplatos» es la máquina. En CO «lavaplatos» es también la pileta.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «lavatrastes» 6.600 vs «lavaplatos» 3.600",
+   "CL «lavaplatos» 33.100"
+  ]
+ },
+ {
+  "id": "vitrina",
+  "es": "vitrina",
+  "variantes": [
+   {
+    "termino": "vitrina, exhibidor",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA"
+    ]
+   },
+   {
+    "termino": "display case, vitrina refrigerada",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "vitrine, balcão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "En MX «exhibidor» es la vitrina para el producto frío o caliente.",
+  "confianza": "alta"
+ },
+ {
+  "id": "mostrador",
+  "es": "mostrador",
+  "variantes": [
+   {
+    "termino": "mesón (de atención)",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "counter, barra",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "balcão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "«Barra» es el mostrador de bar en toda LatAm.",
+  "confianza": "alta"
+ },
+ {
+  "id": "office",
+  "es": "office",
+  "variantes": [
+   {
+    "termino": "estación de servicio, pantry",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "US"
+    ]
+   },
+   {
+    "termino": "copa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "CU",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY"
+  ],
+  "nota": "Cuidado: en MX y EE. UU. «office» (oficina) es el despacho administrativo, no la zona de apoyo a sala.",
+  "confianza": "media"
+ },
+ {
+  "id": "almacen",
+  "es": "almacén",
+  "variantes": [
+   {
+    "termino": "bodega",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "EC",
+     "BO",
+     "CL",
+     "CO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "almacén",
+    "paises": [
+     "PE",
+     "VE",
+     "DO",
+     "CU"
+    ]
+   },
+   {
+    "termino": "depósito",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "almacén, storage; (bodega en NYC = tienda)",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "almoxarifado, estoque",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Falso amigo: en CL, AR y UY «almacén» es la tienda de barrio; en EE. UU. la «bodega» es una tiendita (NYC).",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «bodega» 74.000 vs «almacén» 27.100",
+   "CL «bodega» 12.100 vs «almacén» 8.100"
+  ]
+ },
+ {
+  "id": "economato",
+  "es": "economato",
+  "variantes": [
+   {
+    "termino": "despensa",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC"
+    ]
+   },
+   {
+    "termino": "bodega o almacén de secos",
+    "paises": [
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "dry storage",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "despensa",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX «despensa» es también la caja de víveres; en la cocina es el cuarto de secos.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO CL «economato» 590 vs «bodega» 12.100"
+  ]
+ },
+ {
+  "id": "vestuario",
+  "es": "vestuario",
+  "variantes": [
+   {
+    "termino": "vestidor(es)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "EC",
+     "PE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "vestier",
+    "paises": [
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "camarín",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "vestuario",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CU"
+    ]
+   },
+   {
+    "termino": "locker room, vestidor",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "vestiário",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En CO «vestier» es el cuarto de cambio del personal.",
+  "confianza": "media"
+ },
+ {
+  "id": "aseos",
+  "es": "aseos",
+  "variantes": [
+   {
+    "termino": "baños",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "servicios higiénicos (SS. HH.), baños",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "banheiros, sanitários",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Sanitarios» se oye en MX y «servicios sanitarios» en CO; «aseos» solo en España.",
+  "confianza": "alta"
+ },
+ {
+  "id": "extintor",
+  "es": "extintor",
+  "variantes": [
+   {
+    "termino": "extintor",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "En EE. UU. se dice «extintor» en español y «fire extinguisher» en el cartel.",
+  "confianza": "alta"
+ },
+ {
+  "id": "salida_humos",
+  "es": "salida de humos",
+  "variantes": [
+   {
+    "termino": "ducto de extracción, chimenea",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "US"
+    ]
+   },
+   {
+    "termino": "conducto de extracción, salida de humos",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "duto de exaustão",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El conducto de la campana al exterior; en AR «conducto» y en el resto «ducto».",
+  "confianza": "media"
+ },
+ {
+  "id": "obrador",
+  "es": "obrador",
+  "variantes": [
+   {
+    "termino": "cocina central, taller de producción",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "commissary, cocina central",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "laboratório, cozinha central",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Obrador» es muy español; en panadería-pastelería se dice «taller» o «laboratorio».",
+  "confianza": "media"
+ },
+ {
+  "id": "estanteria",
+  "es": "estantería",
+  "variantes": [
+   {
+    "termino": "anaquel(es)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "PE"
+    ]
+   },
+   {
+    "termino": "estantería, estantes",
+    "paises": [
+     "CO",
+     "VE",
+     "EC",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "CU",
+     "DO",
+     "PR"
+    ]
+   },
+   {
+    "termino": "shelving, repisas",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "prateleiras, estante",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR y CL «góndola» es el estante de supermercado.",
+  "confianza": "alta"
+ },
+ {
+  "id": "fregona",
+  "es": "fregona",
+  "variantes": [
+   {
+    "termino": "trapeador",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "EC",
+     "PE",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "mopa",
+    "paises": [
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "VE",
+     "CL"
+    ]
+   },
+   {
+    "termino": "trapero",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "lampazo",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "esfregão, mop",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En AR «mopa» es el de flecos secos y «lampazo» el de piso mojado.",
+  "confianza": "alta",
+  "evidencia": [
+   "DataForSEO MX «trapeador» 22.200 vs «fregona» 2.400",
+   "CL «mopa» 5.400, «trapero» 3.600, «lampazo» 1.000",
+   "AR «mopa» 12.100, «lampazo» 6.600"
+  ]
+ },
+ {
+  "id": "bayeta",
+  "es": "bayeta",
+  "variantes": [
+   {
+    "termino": "trapo, paño",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "US"
+    ]
+   },
+   {
+    "termino": "rejilla, trapo de piso",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "paño",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "pano",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX la «jerga» es el trapo del piso; en AR «rejilla» es el trapo de cocina o de piso.",
+  "confianza": "media",
+  "evidencia": [
+   "DataForSEO MX «jerga» 22.200, AR «rejilla» 6.600, «trapo de piso» 2.400"
+  ]
+ },
+ {
+  "id": "paño_cocina",
+  "es": "paño de cocina",
+  "variantes": [
+   {
+    "termino": "paño de cocina, trapo de cocina",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "EC",
+     "PE",
+     "BO",
+     "CL"
+    ]
+   },
+   {
+    "termino": "repasador",
+    "paises": [
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "limpión",
+    "paises": [
+     "CO",
+     "VE"
+    ]
+   },
+   {
+    "termino": "kitchen towel, toalla de cocina",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "pano de prato",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "«Repasador» es muy argentino y uruguayo; «limpión» se oye en CO y VE.",
+  "confianza": "alta"
+ },
+ {
+  "id": "gorro",
+  "es": "gorro",
+  "variantes": [
+   {
+    "termino": "touca",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "CO",
+   "VE",
+   "EC",
+   "PE",
+   "BO",
+   "CL",
+   "AR",
+   "UY",
+   "PY",
+   "US"
+  ],
+  "nota": "La red del pelo es la «cofia» en MX, CO y AR; «toca» es de España.",
+  "confianza": "alta"
+ },
+ {
+  "id": "paga_extra",
+  "es": "paga extra",
+  "variantes": [
+   {
+    "termino": "aguinaldo",
+    "paises": [
+     "MX",
+     "SV",
+     "CR",
+     "BO",
+     "AR",
+     "UY",
+     "PY",
+     "GT"
+    ]
+   },
+   {
+    "termino": "décimo tercer mes (y cuarto)",
+    "paises": [
+     "HN",
+     "NI",
+     "PA",
+     "EC"
+    ]
+   },
+   {
+    "termino": "regalía pascual",
+    "paises": [
+     "DO"
+    ]
+   },
+   {
+    "termino": "bono de Navidad",
+    "paises": [
+     "PR"
+    ]
+   },
+   {
+    "termino": "prima de servicios",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "gratificaciones (julio y diciembre)",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "aguinaldo, utilidades",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "gratificación legal",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "bono o aguinaldo (no obligatorio)",
+    "paises": [
+     "US",
+     "CU"
+    ]
+   },
+   {
+    "termino": "13º salário",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En GT hay aguinaldo y Bono 14; en HN y EC décimo tercero y cuarto; en CO la prima se paga en junio y diciembre.",
+  "confianza": "media"
+ },
+ {
+  "id": "smi",
+  "es": "SMI",
+  "variantes": [
+   {
+    "termino": "salario mínimo",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "VE",
+     "BO",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "SMMLV",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "SMVM",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "ingreso mínimo mensual",
+    "paises": [
+     "CL"
+    ]
+   },
+   {
+    "termino": "RMV",
+    "paises": [
+     "PE"
+    ]
+   },
+   {
+    "termino": "SBU",
+    "paises": [
+     "EC"
+    ]
+   },
+   {
+    "termino": "minimum wage",
+    "paises": [
+     "US",
+     "PR"
+    ]
+   },
+   {
+    "termino": "salário mínimo",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El valor cambia cada año y por región (MX frontera, EE. UU. por estado); consúltalo en el ministerio de trabajo local.",
+  "confianza": "alta"
+ },
+ {
+  "id": "iae",
+  "es": "IAE",
+  "variantes": [
+   {
+    "termino": "ICA (industria y comercio)",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "patente de industria y comercio",
+    "paises": [
+     "VE"
+    ]
+   },
+   {
+    "termino": "patente municipal",
+    "paises": [
+     "CL",
+     "EC",
+     "BO",
+     "CR",
+     "PY",
+     "GT",
+     "DO"
+    ]
+   },
+   {
+    "termino": "ingresos brutos",
+    "paises": [
+     "AR"
+    ]
+   },
+   {
+    "termino": "tributo municipal (según municipio)",
+    "paises": [
+     "MX",
+     "PE",
+     "UY",
+     "HN",
+     "SV",
+     "NI",
+     "PA",
+     "CU",
+     "PR"
+    ]
+   },
+   {
+    "termino": "local business license tax",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "ISS / alvará",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "El IAE español es local y no existe tal cual fuera: cada municipio cobra su patente o impuesto de actividad.",
+  "confianza": "media"
+ },
+ {
+  "id": "recargo_equivalencia",
+  "es": "recargo de equivalencia",
+  "variantes": [
+   {
+    "termino": "no existe (se factura con IVA normal)",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "EC",
+     "PE",
+     "BO",
+     "CL",
+     "AR",
+     "UY",
+     "PY",
+     "US"
+    ]
+   },
+   {
+    "termino": "não existe",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "Es un régimen español para comerciantes minoristas: fuera de España no hay equivalente y se aplica el IVA general.",
+  "confianza": "alta"
+ },
+ {
+  "id": "registro_horario",
+  "es": "registro horario",
+  "variantes": [
+   {
+    "termino": "registro de asistencia",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "CU",
+     "DO",
+     "PR",
+     "EC",
+     "BO",
+     "VE",
+     "PE"
+    ]
+   },
+   {
+    "termino": "control de asistencia (reloj control)",
+    "paises": [
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "control de horario, planilla de horas",
+    "paises": [
+     "CO"
+    ]
+   },
+   {
+    "termino": "timesheet, registro de horas",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "controle de ponto",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En MX se oye «checador»; en AR el «libro de asistencia» es obligatorio para empleadores en algunas provincias.",
+  "confianza": "media"
+ },
+ {
+  "id": "salamandra",
+  "es": "salamandra",
+  "variantes": [
+   {
+    "termino": "gratinador, salamandra de cocina",
+    "paises": [
+     "CO",
+     "CL",
+     "AR",
+     "UY",
+     "PY"
+    ]
+   },
+   {
+    "termino": "salamander, broiler",
+    "paises": [
+     "US"
+    ]
+   },
+   {
+    "termino": "salamandra, gratinador",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [
+   "MX",
+   "GT",
+   "HN",
+   "SV",
+   "NI",
+   "CR",
+   "PA",
+   "CU",
+   "DO",
+   "PR",
+   "VE",
+   "EC",
+   "PE",
+   "BO"
+  ],
+  "nota": "Falso amigo: en AR, UY y CL «salamandra» es sobre todo la estufa de leña; en cocina profesional se dice «gratinador».",
+  "confianza": "media"
+ },
+ {
+  "id": "partida_cocina",
+  "es": "partida (de cocina)",
+  "variantes": [
+   {
+    "termino": "estación",
+    "paises": [
+     "MX",
+     "GT",
+     "HN",
+     "SV",
+     "NI",
+     "CR",
+     "PA",
+     "DO",
+     "PR",
+     "CO",
+     "VE",
+     "US"
+    ]
+   },
+   {
+    "termino": "partida",
+    "paises": [
+     "CU",
+     "EC",
+     "PE",
+     "BO"
+    ]
+   },
+   {
+    "termino": "sector, partida",
+    "paises": [
+     "AR",
+     "UY",
+     "PY",
+     "CL"
+    ]
+   },
+   {
+    "termino": "praça",
+    "paises": [
+     "BR"
+    ],
+    "pt": true
+   }
+  ],
+  "igual": [],
+  "nota": "En EE. UU. se dice «station» o «línea» (line); en AR y CL el «sector» es la partida de cocina.",
+  "confianza": "media"
+ }
+]
