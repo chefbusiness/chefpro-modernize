@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   Package, Users, ShoppingCart, ClipboardCheck, Trash2,
-  RotateCcw, BarChart3, Clock, Calculator,
+  RotateCcw, BarChart3, Clock, Calculator, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -29,6 +29,7 @@ const TEMPLATES = [
   { key: 'costes', icon: BarChart3, title: 'Purchasing Cost Analysis & Food Cost KPIs', desc: 'Spend by category, top 20 items, food cost % and cost per cover.' },
   { key: 'bonus-inventario-rapido', icon: Clock, title: 'BONUS: Month-End Inventory Count', desc: 'A one-page count with automatic valuation and variance against last month.' },
   { key: 'bonus-calculadora', icon: Calculator, title: 'BONUS: Reorder Point & Order Quantity Calculator', desc: 'Reorder point, safety stock and economic order quantity (EOQ).' },
+  { key: 'equivalents-guide', icon: Globe, title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.' },
 ];
 
 export default function RestaurantInventoryKitDashboard() {
@@ -94,7 +95,7 @@ export default function RestaurantInventoryKitDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              7 Templates + 2 Bonuses · Direct Download
+              7 Templates + 3 Bonuses · Direct Download
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -118,7 +119,7 @@ export default function RestaurantInventoryKitDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">.xlsx</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'equivalents-guide' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>

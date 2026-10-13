@@ -37,6 +37,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'lista-precios': '/dl/food-cost-templates/13-ingredient-price-tracker.xlsx',
     'bonus-mermas': '/dl/food-cost-templates/BONUS-actual-vs-theoretical-food-cost.xlsx',
     'bonus-guia': '/dl/food-cost-templates/BONUS-reduce-food-cost-30-days.pdf',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-03): Gastro Pro Prompts eBook. A diferencia de su gemelo ES (rama especial
   // de env vars PDF_*_URL, abajo), sale por este mapa estándar. Claves = las de DOWNLOADS en
@@ -45,6 +46,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'ebook': '/dl/ai-prompts-for-restaurants/gastro-pro-prompts-ebook.pdf',
     'bonus1': '/dl/ai-prompts-for-restaurants/bonus-1-prompt-engineering-guide.docx',
     'bonus23': '/dl/ai-prompts-for-restaurants/bonus-2-3-templates-cheat-sheet.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'pack-appcc': {
     'temp-diario': '/dl/pack-appcc/01-registro-temperaturas-diario.xlsx',
@@ -93,6 +95,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'termometros': '/dl/haccp-templates/19-thermometer-calibration-log.xlsx',
     'bonus-formacion': '/dl/haccp-templates/BONUS-01-food-safety-training-log.xlsx',
     'bonus-protocolo': '/dl/haccp-templates/BONUS-02-food-recall-response-plan.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'kit-tareas': {
     'apertura-cierre': '/dl/kit-tareas/01-apertura-cierre.xlsx',
@@ -309,6 +312,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'directorio': '/dl/restaurant-schedule-templates/07-employee-directory.xlsx',
     'bonus-briefing': '/dl/restaurant-schedule-templates/BONUS-01-shift-handover-log.xlsx',
     'bonus-calculadora': '/dl/restaurant-schedule-templates/BONUS-02-restaurant-staffing-calculator.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'kit-inventario': {
     'stock': '/dl/kit-inventario/01-inventario-stock-diario.xlsx',
@@ -333,6 +337,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'costes': '/dl/restaurant-inventory-templates/07-purchasing-cost-analysis.xlsx',
     'bonus-inventario-rapido': '/dl/restaurant-inventory-templates/BONUS-08-month-end-inventory-count.xlsx',
     'bonus-calculadora': '/dl/restaurant-inventory-templates/BONUS-09-reorder-point-calculator.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'guia-dark-kitchen': {
     'guia-pdf': '/dl/guia-dark-kitchen/guia-como-montar-dark-kitchen.pdf',
@@ -752,6 +757,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'viabilidad': '/dl/restaurant-financial-plan-templates/07-restaurant-loan-proposal-lender-summary.xlsx',
     'bonus-simulador': '/dl/restaurant-financial-plan-templates/BONUS-08-what-if-scenario-simulator.xlsx',
     'bonus-checklist': '/dl/restaurant-financial-plan-templates/BONUS-09-pre-opening-financial-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-04): Food Truck Business Plan Kit. MISMAS claves que plan-negocio-food-truck (las del TEMPLATES de
   // src/pages/FoodTruckBusinessPlanDashboard.tsx) → ficheros EN de /dl/food-truck-business-plan/ (SPEC business-plans-en §2.1, D5).
@@ -759,6 +765,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-negocio': '/dl/food-truck-business-plan/food-truck-business-plan.docx',
     'plan-financiero': '/dl/food-truck-business-plan/food-truck-financial-projections.xlsx',
     'checklist-apertura': '/dl/food-truck-business-plan/food-truck-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-04): Coffee Shop Business Plan Kit. MISMAS claves que plan-negocio-cafeteria (las del TEMPLATES de
   // src/pages/CoffeeShopBusinessPlanDashboard.tsx) → ficheros EN de /dl/coffee-shop-business-plan/ (SPEC business-plans-en §2.1, D5).
@@ -766,6 +773,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-negocio': '/dl/coffee-shop-business-plan/coffee-shop-business-plan.docx',
     'plan-financiero': '/dl/coffee-shop-business-plan/coffee-shop-financial-projections.xlsx',
     'checklist-apertura': '/dl/coffee-shop-business-plan/coffee-shop-opening-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-04): Restaurant Business Plan Kit. MISMAS claves que plan-negocio-bar-restaurante (las del TEMPLATES de
   // src/pages/RestaurantBusinessPlanDashboard.tsx) → ficheros EN de /dl/restaurant-business-plan/ (SPEC business-plans-en-2 D32).
@@ -773,6 +781,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-negocio': '/dl/restaurant-business-plan/restaurant-business-plan.docx',
     'plan-financiero': '/dl/restaurant-business-plan/restaurant-financial-projections.xlsx',
     'checklist-apertura': '/dl/restaurant-business-plan/restaurant-opening-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-04): Bakery Business Plan Kit. MISMAS claves que plan-negocio-panaderia (las del TEMPLATES de
   // src/pages/BakeryBusinessPlanDashboard.tsx) → ficheros EN de /dl/bakery-business-plan/ (SPEC business-plans-en-2 D32).
@@ -780,6 +789,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-negocio': '/dl/bakery-business-plan/bakery-business-plan.docx',
     'plan-financiero': '/dl/bakery-business-plan/bakery-financial-projections.xlsx',
     'checklist-apertura': '/dl/bakery-business-plan/bakery-opening-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-11): Bar Business Plan Kit. MISMAS claves que plan-negocio-tapas-bar (las del TEMPLATES de
   // src/pages/BarBusinessPlanDashboard.tsx) → ficheros EN de /dl/bar-business-plan/ (SPEC business-plans-en-3 D50).
@@ -787,6 +797,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-negocio': '/dl/bar-business-plan/bar-business-plan.docx',
     'plan-financiero': '/dl/bar-business-plan/bar-financial-projections.xlsx',
     'checklist-apertura': '/dl/bar-business-plan/bar-opening-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   // Tienda EN (2026-10-11): Catering Business Plan Kit. MISMAS claves que plan-catering-tematico-eventos (las del
   // TEMPLATES de src/pages/CateringBusinessPlanDashboard.tsx) → los 4 ficheros EN de /dl/catering-business-plan/
@@ -796,6 +807,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-financiero': '/dl/catering-business-plan/catering-financial-projections.xlsx',
     'calculadora-pricing': '/dl/catering-business-plan/catering-pricing-calculator.xlsx',
     'checklist-apertura': '/dl/catering-business-plan/catering-startup-checklist.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',

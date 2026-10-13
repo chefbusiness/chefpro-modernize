@@ -90,7 +90,7 @@ const data: KitExcelData = {
       },
       {
         q: "Does it work in the UK, Canada or Australia?",
-        a: "Yes. Prices have no currency symbol, the unit list has kg and L next to lb and gal, and the purchase order's tax table starts at 0%: type UK VAT, Canadian GST/HST plus any PST, or 10% Australian GST. The receiving log checks temperatures in °F against FDA limits, so compare them with your local rules.",
+        a: "Yes. Prices have no currency symbol, the unit list has kg and L next to lb and gal, and the purchase order's tax table starts at 0%: type UK VAT, Canadian GST/HST plus any PST, or 10% Australian GST. The receiving log checks temperatures in °F against FDA limits, so compare them with your local rules. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
       },
       {
         q: 'What currency will I pay in?',
@@ -221,6 +221,13 @@ const data: KitExcelData = {
         desc: 'Enter daily usage, lead time and safety stock — it calculates the reorder point and the economic order quantity (EOQ) automatically.',
         image: '/lovable-uploads/ai-gallery/inventario-analisis.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+      },
     ],
   },
 
@@ -292,7 +299,7 @@ const data: KitExcelData = {
     },
     {
       q: "Does it work in the UK, Canada or Australia?",
-      a: "Yes. Prices have no currency symbol, and the unit drop-down has kg and L next to lb, oz, gal and qt. Taxes live in an editable table on the purchase order's Tax Rates tab, 0% by default: type UK VAT (0, 5 or 20%), Canadian GST/HST plus any PST, or 10% Australian GST, and keep the tax you claim back out of your food cost. The vendor list has a Tax ID column for your VAT number, business number or ABN. The receiving log, though, checks temperatures in °F against FDA Food Code limits, so compare them with your local rules (FSA, your provincial health authority or FSANZ).",
+      a: "Yes. Prices have no currency symbol, and the unit drop-down has kg and L next to lb, oz, gal and qt. Taxes live in an editable table on the purchase order's Tax Rates tab, 0% by default: type UK VAT (0, 5 or 20%), Canadian GST/HST plus any PST, or 10% Australian GST, and keep the tax you claim back out of your food cost. The vendor list has a Tax ID column for your VAT number, business number or ABN. The receiving log, though, checks temperatures in °F against FDA Food Code limits, so compare them with your local rules (FSA, your provincial health authority or FSANZ). Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
     },
     {
       q: 'What currency will I pay in?',
@@ -327,6 +334,7 @@ const data: KitExcelData = {
       'Cost analysis with KPIs: food cost % and cost per cover',
       'BONUS: Month-End Inventory Count',
       'BONUS: Reorder Point & Order Quantity Calculator',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE INVENTORY KIT — $19',
   },

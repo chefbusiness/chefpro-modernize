@@ -82,7 +82,7 @@ const FAQS: KitExcelFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes. Tax rates are editable cells, so you enter your country's figures once. UK: 20% VAT on sales, the VAT you reclaim on purchases and capex, and your corporation tax rate in the Lender & Investor Summary; the notes flag UK differences such as VAT return dates and PAYE. Canada: enter GST/HST, plus PST if your province charges it, and the GST/HST you claim back as recoverable tax. Australia: 10% GST on sales, with GST credits on purchases. The cash flow pays sales tax quarterly, so adjust that row if you file monthly or yearly, and floor area is in sq ft. Confirm the rates with your accountant.",
+    a: "Yes. Tax rates are editable cells, so you enter your country's figures once. UK: 20% VAT on sales, the VAT you reclaim on purchases and capex, and your corporation tax rate in the Lender & Investor Summary; the notes flag UK differences such as VAT return dates and PAYE. Canada: enter GST/HST, plus PST if your province charges it, and the GST/HST you claim back as recoverable tax. Australia: 10% GST on sales, with GST credits on purchases. The cash flow pays sales tax quarterly, so adjust that row if you file monthly or yearly, and floor area is in sq ft. Confirm the rates with your accountant. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -231,6 +231,13 @@ const data: KitExcelData = {
         desc: 'The 54 tasks to tick off before opening day, in 7 phases: business formation, financing, licenses and permits, suppliers, insurance, cash management and employer obligations. Each one with a status, an owner and a due date, so the big items don\'t slip through.',
         image: '/lovable-uploads/ai-gallery/fin-en-lender-meeting.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/fin-en-hero.jpg',
+      },
     ],
   },
 
@@ -266,6 +273,7 @@ const data: KitExcelData = {
       'Lender & investor summary (IRR, NPV, payback, DSCR)',
       'BONUS: What-If Scenario Simulator',
       'BONUS: Pre-Opening Financial Checklist',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE FINANCIAL PLAN KIT — $49',
   },

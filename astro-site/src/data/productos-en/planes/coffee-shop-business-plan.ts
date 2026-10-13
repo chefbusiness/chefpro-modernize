@@ -75,7 +75,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. Each sales line has its own rate: in the UK, eat-in sales and hot food pay 20% VAT, while most cold takeaway food is zero-rated. The UK notes cover council registration 28 days before opening and the hygiene rating. In Canada, health permits and inspections are provincial or municipal; in Australia, a café also needs a certified Food Safety Supervisor. Check with your council, province or state.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. Each sales line has its own rate: in the UK, eat-in sales and hot food pay 20% VAT, while most cold takeaway food is zero-rated. The UK notes cover council registration 28 days before opening and the hygiene rating. In Canada, health permits and inspections are provincial or municipal; in Australia, a café also needs a certified Food Safety Supervisor. Check with your council, province or state. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -235,6 +235,13 @@ const data: PlanNegocioData = {
         desc: 'The reference table inside the workbook: cost of goods, labor, rent and net margin, each with its source or marked "kit estimate", and the OK / REVIEW check that tells you where your plan departs from the benchmark. Every threshold is an editable cell.',
         image: '/lovable-uploads/ai-gallery/csbp-en-owner-plan.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/csbp-en-hero.jpg',
+      },
     ],
   },
 
@@ -268,6 +275,7 @@ const data: PlanNegocioData = {
       'Opening checklist: 75 tasks in 6 phases',
       'BONUS: Coffee Shop Permits & Licenses Guide (included in the plan)',
       'BONUS: Coffee Shop Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },

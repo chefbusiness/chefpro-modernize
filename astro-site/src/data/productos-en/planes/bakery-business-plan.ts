@@ -91,7 +91,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes, with UK notes. Tax rates and wages are editable cells, and each sales line has a tax-exempt share: in the UK most cold bakery goods to take away are zero-rated, while hot food and eating in pay 20% VAT. In Canada, enter GST/HST plus any PST; in Australia, 10% GST. Some basic foods are tax-free there too, so set the exempt share with your accountant. Add your own minimum wage and employer costs. The UK notes cover council registration 28 days before opening, the hygiene rating and the 14 allergens; in Australia, also plan for a certified Food Safety Supervisor. Floor area is in sq ft.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells, and each sales line has a tax-exempt share: in the UK most cold bakery goods to take away are zero-rated, while hot food and eating in pay 20% VAT. In Canada, enter GST/HST plus any PST; in Australia, 10% GST. Some basic foods are tax-free there too, so set the exempt share with your accountant. Add your own minimum wage and employer costs. The UK notes cover council registration 28 days before opening, the hygiene rating and the 14 allergens; in Australia, also plan for a certified Food Safety Supervisor. Floor area is in sq ft. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -250,6 +250,13 @@ const data: PlanNegocioData = {
         desc: 'The market section of the plan plus the reference table inside the workbook: industry ranges for cost of goods, labor and margin in bakeries, each with its source or marked "kit estimate" when there isn\'t one. Compare them with your own numbers before you talk to a lender.',
         image: '/lovable-uploads/ai-gallery/bbp-en-owner-plan.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/bbp-en-hero.jpg',
+      },
     ],
   },
 
@@ -283,6 +290,7 @@ const data: PlanNegocioData = {
       'Opening checklist: 66 tasks in 6 phases',
       'BONUS: Bakery Permits & Licenses Guide (included in the plan)',
       'BONUS: Bakery Industry Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },

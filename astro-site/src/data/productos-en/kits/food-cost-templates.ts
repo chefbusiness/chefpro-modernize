@@ -82,7 +82,7 @@ const data: KitExcelData = {
       },
       {
         q: "Does it work in the UK, Canada or Australia?",
-        a: "Yes. Each cost card has a Tax rate cell: 20% for UK VAT or 10% for Australian GST, with prices shown including tax; in Canada you price before GST/HST, as in the US. The units include kg, g, L and ml next to lb, oz and US fl oz, plus imperial pints.",
+        a: "Yes. Each cost card has a Tax rate cell: 20% for UK VAT or 10% for Australian GST, with prices shown including tax; in Canada you price before GST/HST, as in the US. The units include kg, g, L and ml next to lb, oz and US fl oz, plus imperial pints. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
       },
       {
         q: 'What currency will I pay in?',
@@ -107,7 +107,7 @@ const data: KitExcelData = {
   images: {
     // hero bg (6) — las MISMAS del ES
     gallery: [
-      '/lovable-uploads/ai-gallery/tataki-presa-iberica-chimichurri.jpeg',
+      '/lovable-uploads/ai-gallery/inventario-hero.jpg',
       '/lovable-uploads/ai-gallery/tartaleta-de-yuzu-y-merengue.jpeg',
       '/lovable-uploads/ai-gallery/cocktail-green-margarita.jpeg',
       '/lovable-uploads/ai-gallery/croqueta-jamon.jpeg',
@@ -225,6 +225,13 @@ const data: KitExcelData = {
         desc: 'Excel template with an incident log for waste (with reasons and corrective actions) and inventory control that compares actual usage with the theoretical usage from what you sold.',
         image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+      },
     ],
   },
 
@@ -292,7 +299,7 @@ const data: KitExcelData = {
     },
     {
       q: "Does it work in the UK, Canada or Australia?",
-      a: "Yes. Each cost card has a Tax rate cell, 0% by default: enter 20% for UK VAT or 10% for Australian GST and print the price including tax; in Canada you price before GST/HST or PST, as in the US. The unit drop-down has kg, g, L, ml and cl, but pt, qt, gal, cup and fl oz are US measures, so pick \"imp pt\" or work in ml, and type your 700 ml bottle or 330 ml can on the Conversions tab. Every card shows \"GP\", the figure UK kitchens use. And in Australia, as on many British menus, an \"entrée\" is the starter, not the main.",
+      a: "Yes. Each cost card has a Tax rate cell, 0% by default: enter 20% for UK VAT or 10% for Australian GST and print the price including tax; in Canada you price before GST/HST or PST, as in the US. The unit drop-down has kg, g, L, ml and cl, but pt, qt, gal, cup and fl oz are US measures, so pick \"imp pt\" or work in ml, and type your 700 ml bottle or 330 ml can on the Conversions tab. Every card shows \"GP\", the figure UK kitchens use. And in Australia, as on many British menus, an \"entrée\" is the starter, not the main. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
     },
     {
       q: 'What currency will I pay in?',
@@ -325,6 +332,7 @@ const data: KitExcelData = {
       "ACTUAL food cost: type the price you charge today and the sheet flags it in red if you're over target",
       'BONUS: "How to Reduce Food Cost in 30 Days" guide',
       'BONUS: Actual vs Theoretical Food Cost (Inventory & Waste)',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
       'Pay once — lifetime access to the online dashboard',
       '30-day money-back guarantee',
     ],

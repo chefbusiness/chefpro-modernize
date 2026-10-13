@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft,
+  Download, Loader2, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -39,6 +39,13 @@ const TEMPLATES = [
     type: '.xlsx',
     title: 'Bakery Opening Checklist (66 Tasks)',
     desc: "66 tasks in 6 phases: business setup (LLC, EIN, seller's permit, business license, the health or agriculture license), location and permits (zoning, lease, building and gas permits, oven ventilation, electrical service), equipment, staff, marketing (wholesale accounts with cafes and restaurants included) and your first 90 days.",
+  },
+  {
+    key: 'equivalents-guide',
+    icon: Globe,
+    type: '.docx',
+    title: "US · UK · Canada · Australia Equivalents Guide",
+    desc: "Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.",
   },
 ];
 
@@ -110,7 +117,7 @@ export default function BakeryBusinessPlanDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              3 Files · Direct Download
+              4 Files · Direct Download
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

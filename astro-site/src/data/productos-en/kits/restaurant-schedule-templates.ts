@@ -75,7 +75,7 @@ const data: KitExcelData = {
       },
       {
         q: "Does it work in the UK, Canada or Australia?",
-        a: "Yes. The limits are editable cells: in the UK (your \"rota\") set 11 hours of rest between shifts, watch the 48-hour average week and enter 5.6 weeks of holiday; in Canada, type your province's weekly and daily overtime thresholds; in Australia (your \"roster\"), Award penalty rates aren't calculated, so check Fair Work.",
+        a: "Yes. The limits are editable cells: in the UK (your \"rota\") set 11 hours of rest between shifts, watch the 48-hour average week and enter 5.6 weeks of holiday; in Canada, type your province's weekly and daily overtime thresholds; in Australia (your \"roster\"), Award penalty rates aren't calculated, so check Fair Work. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
       },
       {
         q: 'What currency will I pay in?',
@@ -196,6 +196,13 @@ const data: KitExcelData = {
         desc: 'Works out how many people you need from your covers per service, days open, covers per employee and demand peaks. Stop being overstaffed or understaffed.',
         image: '/lovable-uploads/ai-gallery/staff-en-office-schedule.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/staff-en-schedule-board.jpg',
+      },
     ],
   },
 
@@ -252,7 +259,7 @@ const data: KitExcelData = {
     },
     {
       q: "Does it work in the UK, Canada or Australia?",
-      a: "Yes. The limits are editable cells. UK: call it your \"rota\", set rest between shifts to 11 hours, watch the 48-hour average week, enter 39 days (5.6 weeks) of paid holiday and set the overtime multiplier to what your contracts say. Canada: overtime thresholds come from your province's employment standards, weekly or daily, and both have a cell. Australia: it's your \"roster\", and the weekend and public holiday penalty rates of your Award aren't calculated, so check Fair Work. Put National Insurance, CPP and EI, or super in the employer cost cell, and track Smart Serve, Serving It Right or RSA expiry dates in the alcohol server column.",
+      a: "Yes. The limits are editable cells. UK: call it your \"rota\", set rest between shifts to 11 hours, watch the 48-hour average week, enter 39 days (5.6 weeks) of paid holiday and set the overtime multiplier to what your contracts say. Canada: overtime thresholds come from your province's employment standards, weekly or daily, and both have a cell. Australia: it's your \"roster\", and the weekend and public holiday penalty rates of your Award aren't calculated, so check Fair Work. Put National Insurance, CPP and EI, or super in the employer cost cell, and track Smart Serve, Serving It Right or RSA expiry dates in the alcohol server column. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
     },
     {
       q: 'What currency will I pay in?',
@@ -283,6 +290,7 @@ const data: KitExcelData = {
       'Employee directory with expiry dates and certificates',
       'BONUS: Shift Handover Log',
       'BONUS: Restaurant Staffing Calculator',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE SCHEDULING KIT — $19',
   },

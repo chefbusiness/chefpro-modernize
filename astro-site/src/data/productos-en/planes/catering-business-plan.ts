@@ -107,7 +107,7 @@ const FAQS: PlanNegocioFaq[] = [
   },
   {
     q: "Does it work in the UK, Canada or Australia?",
-    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. In the UK, event catering pays 20% VAT, and the notes cover council registration 28 days before trading and Temporary Event Notices for alcohol. In Canada, event liquor permits are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, check your state liquor rules and RSA. The pricing calculator counts miles: type kilometres and your cost per km instead of the IRS rate.",
+    a: "Yes, with UK notes. Tax rates and wages are editable cells: enter 20% VAT, Canadian GST/HST plus any PST, or 10% Australian GST, the tax you reclaim on purchases, and your own minimum wage and employer costs. In the UK, event catering pays 20% VAT, and the notes cover council registration 28 days before trading and Temporary Event Notices for alcohol. In Canada, event liquor permits are provincial and servers need Smart Serve, Serving It Right or the local equivalent; in Australia, check your state liquor rules and RSA. The pricing calculator counts miles: type kilometres and your cost per km instead of the IRS rate. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.",
   },
   {
     q: 'What currency will I pay in?',
@@ -266,6 +266,13 @@ const data: PlanNegocioData = {
         desc: 'The reference table inside the workbook: food cost, gross margin, labor, net margin, price per guest for weddings and corporate lunches, marketplace commission, deposits, hourly wages, shared kitchen rates, startup investment, insurance and event staff ratios, each with its source or marked "kit estimate" when there isn\'t one — plus five OK / REVIEW checks on your P&L against editable thresholds.',
         image: '/lovable-uploads/ai-gallery/tareas-catering-equipo.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'US · UK · Canada · Australia Equivalents Guide',
+        desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
+        image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
+      },
     ],
   },
 
@@ -299,6 +306,7 @@ const data: PlanNegocioData = {
       'Startup checklist: 68 tasks in 6 phases',
       'BONUS: Catering Permits & Licenses Guide (included in the plan)',
       'BONUS: US Catering Benchmarks',
+      'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE PLAN — $39',
   },

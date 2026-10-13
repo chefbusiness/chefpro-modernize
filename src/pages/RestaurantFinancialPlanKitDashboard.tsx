@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   TrendingUp, Target, Wallet, Building2, BarChart3,
-  PieChart, FileText, Shuffle, ClipboardList,
+  PieChart, FileText, Shuffle, ClipboardList, Globe,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -31,6 +31,7 @@ const TEMPLATES = [
   { key: 'viabilidad', icon: FileText, title: 'Restaurant Loan Proposal: Lender & Investor Summary', desc: 'IRR, NPV, payback, loan schedule, DSCR and collateral, in a professional format.' },
   { key: 'bonus-simulador', icon: Shuffle, title: 'BONUS: What-If Scenario Simulator', desc: '3 what-if scenarios compared side by side.' },
   { key: 'bonus-checklist', icon: ClipboardList, title: 'BONUS: Pre-Opening Financial Checklist (54 Tasks)', desc: '54 tasks in 7 phases before opening day.' },
+  { key: 'equivalents-guide', icon: Globe, title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.' },
 ];
 
 export default function RestaurantFinancialPlanKitDashboard() {
@@ -96,7 +97,7 @@ export default function RestaurantFinancialPlanKitDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              8 Templates + 2 Bonuses · Direct Download
+              8 Templates + 3 Bonuses · Direct Download
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -120,7 +121,7 @@ export default function RestaurantFinancialPlanKitDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">.xlsx</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'equivalents-guide' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>

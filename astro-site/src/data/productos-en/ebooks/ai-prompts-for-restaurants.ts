@@ -108,6 +108,7 @@ const data = {
   bonuses: [
     { icon: 'BookOpen', label: 'BONUS 1', title: 'Restaurant Prompt Engineering Guide', desc: 'Learn to write your own perfect hospitality prompts from scratch with the AI Chef Pro method. An editable Word document you can customize.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
     { icon: 'FileText', label: 'BONUS 2', title: 'Templates + Cheat Sheet', desc: 'A spreadsheet with ready-to-use templates and a quick summary of the best hospitality prompts.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
+    { icon: 'Globe', label: 'BONUS 3', title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.', image: '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg' },
   ],
 
   guarantee: {
@@ -125,7 +126,7 @@ const data = {
     { q: 'How do I get access after paying?', a: "Right after payment you'll receive an email with your personal, unique access link to the Pro Prompts Library, where you'll find the downloadable eBook and all the bonuses. The link is personal and non-transferable.", aSchema: "Right after payment you'll receive an email with your personal, unique access link to the Pro Prompts Library, where you'll find the downloadable eBook and all the bonuses." },
     { q: 'Does it only work with AI Chef Pro, or with other AIs too?', a: 'The prompts are optimized for AI Chef Pro but work perfectly with ChatGPT, Claude, Perplexity, DeepSeek, Gemini, KIMI and any conversational AI.' },
     { q: 'What format is the eBook?', a: 'A high-quality PDF that works on every device: phone, tablet and computer.' },
-    { q: "Does it work in the UK, Canada or Australia?", a: "Yes. The prompts are written in US English with brackets you fill in, and where the rules differ they already name both sides: the 9 US major allergens or the 14 UK/EU ones, sales tax or VAT, \"grams or ounces\" for weights. Add one line to any prompt, such as \"Use British English, metric units and prices including VAT\" (or 10% GST for Australia, GST/HST for Canada), and the AI adapts menus, costings and copy. Ask for \"starters\" and \"mains\"; in Australia, an \"entrée\" is the starter. For allergens and food safety, check the answer against the FSA, Health Canada or FSANZ rules.", aSchema: "Yes. The prompts are in US English and already name the US and UK/EU allergen rules and sales tax or VAT. Add a line such as \"Use British English, metric units and prices including VAT\" (or GST for Australia and Canada) and the AI adapts menus, costings and copy." },
+    { q: "Does it work in the UK, Canada or Australia?", a: "Yes. The prompts are written in US English with brackets you fill in, and where the rules differ they already name both sides: the 9 US major allergens or the 14 UK/EU ones, sales tax or VAT, \"grams or ounces\" for weights. Add one line to any prompt, such as \"Use British English, metric units and prices including VAT\" (or 10% GST for Australia, GST/HST for Canada), and the AI adapts menus, costings and copy. Ask for \"starters\" and \"mains\"; in Australia, an \"entrée\" is the starter. For allergens and food safety, check the answer against the FSA, Health Canada or FSANZ rules. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side.", aSchema: "Yes. The prompts are in US English and already name the US and UK/EU allergen rules and sales tax or VAT. Add a line such as \"Use British English, metric units and prices including VAT\" (or GST for Australia and Canada) and the AI adapts menus, costings and copy. Every English edition also includes the US · UK · Canada · Australia Equivalents Guide, a bonus with the local terms, taxes, food safety and staff rules side by side." },
     { q: 'Will I get updates?', a: 'Yes. All future updates are free. As AI Chef Pro launches new AI agents, the eBook is updated and you get the new version automatically.' },
     { q: 'How does the guarantee work?', a: "You have a full 30 days to try it. If you're not satisfied for any reason, we'll refund 100%, no questions asked." },
     { q: 'Do I need any prior experience with AI?', a: 'Not at all. The prompts are ready to copy and paste. Professional results from day one, whatever your level.' },
@@ -135,6 +136,7 @@ const data = {
     'Complete eBook with 300+ prompts for every corner of hospitality',
     'BONUS 1: Restaurant Prompt Engineering Guide',
     'BONUS 2: Downloadable Templates + Cheat Sheet',
+    'BONUS 3: US · UK · Canada · Australia Equivalents Guide',
     'Pay once: lifetime access to the online dashboard',
     'Ongoing updates with new prompts at no extra cost',
     '30-day money-back guarantee',
