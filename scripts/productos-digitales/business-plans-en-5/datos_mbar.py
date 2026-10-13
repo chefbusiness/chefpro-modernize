@@ -20,11 +20,13 @@ CAT = os.path.join(os.path.dirname(AQUI), 'business-plans-en-4')
 URL_MBAR = 'aichef.pro/en/digital-products/mobile-bar-business-plan'
 _I, _S, _P, _R, _N, _E, _ES, _T = ('Inversión Inicial', '0. Supuestos', 'PyG 3 Años', 'Personal', 'Instrucciones',
                                    'Punto Equilibrio', 'Escenarios', 'Tesorería 12 meses')
-GLOSA_DRY_HIRE = '(you supply the alcohol; we bring the bar, the bartenders and everything else)'
+# M1 de REVISION-FINAL (decisión del coordinador): la glosa, desde el punto de vista del operador que lee el kit (la de
+# la landing, para el cliente, sigue como en SPEC §0)
+GLOSA_DRY_HIRE = '(your client buys the alcohol; you bring the bar, the bartenders and everything else)'
 # Medidas (John, 13-oct): sistema US como principal y la métrica entre paréntesis (UK y Australia miden en ml)
 REGLA_UNIDADES = ('MEDIDAS US (John, 13-oct): principales oz / fl oz, lb, quarts / gallons, °F, miles y sq ft; la '
                   'métrica entre paréntesis para UK y Australia: «2 oz (59 ml)», «1.5 lb (0.68 kg)», «41°F (5°C)», '
-                  '«200 sq ft (19 m²)»; botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en '
+                  '«200 sq ft (19 sq m)» (el gate común no admite «m²»); botellas de 750 ml («a fifth») y 1.75 L («a handle»); coolers e ice bins en '
                   'quarts, gallons o lb, nunca en litros; distancias en miles; nada de m², kg, km ni °C como unidad '
                   'principal')
 
@@ -66,6 +68,8 @@ FIJOS_NUEVOS = OrderedDict([
     ('Clientes al año por jornada equivalente', 'Guests per year per full-time equivalent'),
     # D87: el canal de «delivery» del FT son los gig marketplaces (B16/B17)
     ('Comisiones de delivery', 'Gig marketplace fees'),
+    # m15 de REVISION-FINAL: no hay «to go» en un bar móvil
+    ('IVA repercutido/soportado general', 'Sales tax rate on alcohol sold (licensed only)'),
     # D87: las dos líneas de venta y su coste (los mismos textos ES salen en el P&L y en Escenarios)
     ('Coste de mercancía — comida', 'Cost of goods — bar packages (mixers, garnishes, ice)'),
     ('Coste de mercancía — bebida', 'Cost of goods — add-ons'),
@@ -92,7 +96,7 @@ POR_CELDA = OrderedDict([
     (('MBP', _S, 'A55'), 'Contingency on the trailer, conversion and fit-out lines (%)'),
     (('MBP', _S, 'A62'), 'ALCOHOL as a share of add-on sales (0% in dry hire: the host buys it)'),
     # Startup Costs filas 7-23 y base de amortización (D87; research §8)
-    (('MBP', _I, 'A7'), 'Bar trailer, used (6 x 12 ft cargo / concession or horse trailer)'),
+    (('MBP', _I, 'A7'), 'Bar trailer, used (6 x 12 ft (1.8 x 3.7 m) cargo / concession or horse trailer)'),
     (('MBP', _I, 'A8'), 'Trailer conversion (bar top, cabinetry, hand sink, water tanks, LED, electrical)'),
     (('MBP', _I, 'A9'), 'Wrap, signage and bar facade'),
     (('MBP', _I, 'A10'), 'Portable bar for the second crew and indoor venues'),
@@ -144,8 +148,12 @@ POR_CELDA = OrderedDict([
                         'example). The 30% deposit is not modeled: it improves real cash.'),
     # notas del motor que el catering ya había reescrito (m2, m4, m11): mismas reglas, con el bar móvil
     (('MBP', _S, 'C20'), 'FICA (Social Security 6.2% + Medicare 1.45%) + federal and state unemployment taxes (FUTA / '
-                         'SUTA) + workers\' comp. The example uses a lean 10% with no benefits; the benchmarks table on '
-                         '"Instructions" gives the bartender wage. Ask your payroll provider and carrier for your rate.'),
+                         'SUTA). Workers\' comp is in the insurance line. The example uses a lean 10% with no benefits; '
+                         'ask your payroll provider for your rate.'),                    # m8 de REVISION-FINAL
+    # m15 de REVISION-FINAL: la moneda (la nota del motor común decía «your currency»)
+    (('MBP', _S, 'A2'), 'Change the GREEN cells: the rest of the workbook recalculates on its own. Expense items are typed '
+                        'on their own tab (also in green) and are not repeated here. Amounts are in US dollars (or your own '
+                        'currency).'),
     (('MBP', _S, 'C39'), 'Example rate: state + local sales tax combined, applied to the whole invoice (bar service, '
                          'add-ons and service charge). Whether bartending services are taxable varies by state: '
                          'California taxes them (cdtfa.ca.gov). UK: 20% VAT on the service.'),
@@ -284,7 +292,7 @@ _DESC = OrderedDict([
     ('optimista_ticket', 'optimistic scenario: price per guest (alias: usa {{optimista_precio}})'),
     ('pesimista_dias', 'pessimistic scenario: guests per event (alias: usa {{pesimista_invitados}})'),
     ('optimista_dias', 'optimistic scenario: guests per event (alias: usa {{optimista_invitados}})'),
-    ('inv_vehiculo', 'bar trailer, used (6 x 12 ft cargo / concession or horse trailer)'),
+    ('inv_vehiculo', 'bar trailer, used (6 x 12 ft (1.8 x 3.7 m) cargo / concession or horse trailer)'),
     ('inv_adaptacion', 'trailer conversion (bar top, cabinetry, hand sink, water tanks, LED, electrical)'),
     ('inv_permisos', 'first-year permits and certifications (business license, sales tax permit, TABC / RBS / TIPS)'),
     ('inv_lanzamiento', 'website, photos, launch and first bridal show'),
@@ -419,9 +427,10 @@ _N9 = OrderedDict([
     (102, 'D92 §9 1/7: DRY HIRE = el modelo legal del kit. Missouri lo dice por escrito (Industry Circular 24-01, '
           'atc.dps.mo.gov: «There is no requirement that a person, who solely provides bartending services, must get a '
           'state liquor license») y avisa de que las entradas, propinas / gratuities / donativos y los recargos sobre '
-          'el alcohol pueden ser «venta». Condiciones: el anfitrión compra y es dueño del alcohol; si lo compras tú, '
-          'solo como su agente, autorizado por escrito, a coste con ticket y sin margen; lo que sobra es suyo; sin '
-          'cash bar, tickets de copa ni entrada que incluya bebida; factura con el servicio separado de los reembolsos'),
+          'el alcohol pueden ser «venta». Condiciones: el anfitrión compra y es dueño del alcohol y lo que sobra es suyo; '
+          'NO compres tú el alcohol para que te lo reembolse (en MO el dinero por el alcohol o su entrega puede ser '
+          'venta, y MT exige que lo compre el anfitrión aparte); sin cash bar, tickets de copa ni entrada que incluya '
+          'bebida (B1 de REVISION-FINAL)'),
     (103, '§9 2/7: Montana (revenue.mt.gov, Mobile Bars fact sheet): el bar móvil «may not pre-stock», el anfitrión '
           'compra el alcohol aparte, solo eventos privados, sin cobrar copas a los invitados. Regla general: «varies by '
           'state»: pregunta a la autoridad de alcohol de tu estado (ABC / TABC…) antes de la primera reserva y guarda '
@@ -544,8 +553,9 @@ _NOTAS_SECCION = OrderedDict([
          'y estatal; sueldo de bartender BLS mayo 2025: media $19.61/h, mediana $16.51/h (incluye propinas)'),
     (89, '§7 5/6: formación: alcohol server certification (TABC, RBS, TIPS / ServSafe Alcohol), servicio responsable '
          '(ID, menores, invitados ebrios, last call), carta y specs de los signature cocktails'),
-    (90, '§7 6/6: service charge frente a propina (IRS Rev. Rul. 2012-18); las propinas son del personal (FLSA); tip '
-         'jar solo donde el estado no lo trate como venta (MO)'),
+    (90, '§7 6/6: service charge frente a propina (IRS Rev. Rul. 2012-18); las propinas son del personal (FLSA); en '
+         'algunos estados (MO 24-01) las propinas y las gratuities pueden contar como venta: consultar al ABC antes de '
+         'poner un tip jar o una línea de gratuity (M10 de REVISION-FINAL)'),
     (93, '§8 1/7: viabilidad: ventas del año 1 {{ventas_a1}}, margen bruto {{margen_bruto_pct}}, EBITDA {{ebitda_a1}} '
          '({{ebitda_pct_a1}}); {{ventas_evento}} por evento frente a la mediana de $750 de Check Cherry: el caso '
          'está en el cuartil alto (remolque, mixers y hielo incluidos, 2 equipos)'),
@@ -762,25 +772,25 @@ _CK = ('D91: escribe una TAREA de un mobile bar en DRY HIRE (B tarea · C respon
        'celda cada vez) con el checklist ES de coctelería (fuente_es_mbar.json) + research §6 y el glosario §9; ' +
        REGLA_UNIDADES + '. Esta fila: ')
 TAREAS_MBAR = OrderedDict([
-    ('F1 - Constitución', [
+    ('F1 - Constitución', [                                  # M2 de REVISION-FINAL: orden de la tramitación real
+        'elegir el modelo legal: DRY HIRE por defecto (' + GLOSA_DRY_HIRE + ', glosa en esta primera mención del '
+        'checklist) o full-service con licencia (socio licenciatario, licencia propia ligada a un local o permiso por '
+        'evento): decide la fase 2',
+        'contador / bookkeeper y estimated taxes trimestrales [sobrevive]',
         'estructura: single-member LLC frente a sole proprietor o S corp, con tu contador (ES: autónomo / SL) '
         '[sobrevive]',
-        'EIN gratis en el IRS + alta estatal de nóminas y desempleo (vas a tener bartenders W-2) [sobrevive]',
         'registrar la LLC en el Secretary of State + registered agent + operating agreement [sobrevive]',
+        'EIN gratis en el IRS para la LLC + alta estatal de nóminas y desempleo (vas a tener bartenders W-2) [sobrevive]',
         'cuenta bancaria del negocio y finanzas separadas [sobrevive]',
         'sales tax permit / seller\'s permit del estado: en algunos estados el servicio de barra tributa (California: '
         'cdtfa.ca.gov) [sobrevive con ajuste]',
         'business license de la ciudad o el condado (+ DBA si usas nombre comercial) [sobrevive]',
-        'contador / bookkeeper y estimated taxes trimestrales [sobrevive]',
         'software de reservas y CRM para bares móviles: propuestas, contratos con firma electrónica, depósitos y saldos '
         '(ES: CRM) [sobrevive con ajuste]',
         'service agreement / event contract con abogado y cláusulas de DRY HIRE: el anfitrión compra y es dueño del '
-        'alcohol, lo que sobra es suyo, sin cash bar ni tickets de copa ni entrada con bebida, gratuity pactada por '
-        'escrito, depósito del 30 %, cancelación por tramos, variación de invitados, toma eléctrica, uso de fotos '
-        '[sobrevive con ajuste]',
-        'elegir el modelo legal: DRY HIRE por defecto (' + GLOSA_DRY_HIRE + ', glosa en esta primera mención del '
-        'checklist) o full-service con licencia (socio licenciatario, licencia propia ligada a un local o permiso por '
-        'evento): decide la fase 2',
+        'alcohol, lo que sobra es suyo, sin cash bar ni tickets de copa ni entrada con bebida, gratuity solo donde el '
+        'estado lo permita (MO 24-01), depósito del 30 %, cancelación por tramos, variación de invitados, toma eléctrica, '
+        'uso de fotos [sobrevive con ajuste]',
         'marca: búsqueda y registro en la USPTO (ES: OEPM) y dominio web',
     ]),
     ('F2 - Vehículo', [
@@ -846,7 +856,8 @@ TAREAS_MBAR = OrderedDict([
         'servicio responsable: comprobar el ID, negarse a servir a menores y a invitados ebrios, last call, protocolo '
         'de incidentes (ES: formación)',
         'política de propinas y service charge: las propinas son del personal (FLSA); el service charge es salario '
-        '(IRS Rev. Rul. 2012-18); tip jar solo donde el estado no lo trate como venta (MO) [sobrevive con ajuste]',
+        '(IRS Rev. Rul. 2012-18); tip jar o línea de gratuity solo donde el estado no lo trate como venta (MO) '
+        '[sobrevive con ajuste]',
     ]),
     ('F5 - Marketing', [
         'marca, logo, carta de signature cocktails y fotos profesionales del remolque montado [sobrevive con ajuste]',
@@ -863,20 +874,21 @@ TAREAS_MBAR = OrderedDict([
         'bridal show local + showcase / tasting para planners y venues; los 3 primeros eventos piloto para el '
         'portfolio [sobrevive con ajuste]',
     ]),
-    ('F6 - 90 Días', [
-        'briefing con el cliente D-21: invitados, horas, paquete, specialty bar, venue, restricciones [sobrevive]',
-        'visita o llamada técnica al venue D-14: acceso del remolque, toma eléctrica, agua, normas del venue '
+    ('F6 - 90 Días', [                                       # M3 de REVISION-FINAL: plazos US y la factura antes del evento
+        'briefing con el cliente 3 semanas antes («3 weeks out»): invitados, horas, paquete, specialty bar, venue, '
+        'restricciones [sobrevive]',
+        'visita o llamada técnica al venue 2 semanas antes: acceso del remolque, toma eléctrica, agua, normas del venue '
         '[sobrevive con ajuste]',
-        'shopping list al anfitrión en D-14 (la saca la calculadora del kit: botellas por categoría, cerveza, vino, '
-        'hielo) y compra de mixers, garnish y hielo en D-1',
+        'shopping list al anfitrión 2 semanas antes (la saca la calculadora del kit: botellas por categoría, cerveza, '
+        'vino, hielo) y compra de mixers, garnish y hielo el día antes («day before»)',
+        'factura del saldo antes del evento y control de depósitos; gratuity solo donde el estado no la trate como venta '
+        '[sobrevive con ajuste]',
         'checklist de carga y transporte del remolque (enganche, luces, sujeción de la cristalería) [sobrevive con '
         'ajuste]',
         'montaje 60-120 min antes, servicio y last call [sobrevive con ajuste]',
         'desmontaje y recuento de cristalería; el alcohol que sobra se queda con el anfitrión; devolución de '
         'alquileres [sobrevive con ajuste]',
-        'factura del saldo antes del evento y control de depósitos; gratuity pactada en la factura [sobrevive con '
-        'ajuste]',
-        'pedir reseña y fotos a las 48 h; seguimiento en el CRM [sobrevive]',
+        'pedir reseña y fotos a los 2 días; seguimiento en el CRM [sobrevive]',
         'revisión mensual del coste por invitado, las horas de personal y los desechables frente a la calculadora '
         '[sobrevive con ajuste]',
         'revisión a los 90 días: precios por invitado, mínimos, paquetes y specialty bars; formación continua y ferias '
@@ -1101,11 +1113,22 @@ def formulas_mbar():
     return out
 
 
+def _importes_research():
+    """Importes en dólares ≥ 10,000 que cita la research del bar móvil (p. ej. la pickup de $10,000-$30,000 de Check
+    Cherry): son datos de mercado de este producto y no se vetan aunque coincidan con un importe del catering o del FT
+    (m15 de REVISION-FINAL: «$10,000 to $30,000» en el docx [79])."""
+    import re as _re
+    p = os.path.join(AQUI, 'F1-research-us-delta.md')
+    t = open(p, encoding='utf-8').read() if os.path.exists(p) else ''
+    return {int(x.replace(',', '')) for x in _re.findall(r'\$\s?(\d{1,3}(?:,\d{3})+)', t) if int(x.replace(',', '')) >= 10000}
+
+
 def cifras_prohibidas(valores):
     """CIFRAS_PROHIBIDAS del conjunto (D93): ES de coctelería (importe y frase) + caso del catering EN + caso del FT EN
     + vocabulario RX_BAR_NO. Fuera las cifras que coinciden con un valor del propio caso (no son prohibidas aquí)."""
     propios = {int(round(x[0])) for x in valores.values() if isinstance(x[0], (int, float))}
     out = [(_num(n), 'cifra del ES de coctelería (D93)', None) for n in CIFRAS_ES if n not in propios]
+    propios |= _importes_research()                     # solo para las listas del catering y del FT
     out += [(rx, motivo, None) for rx, motivo in FRASES_ES]
     out += [(_num(n), 'cifra del caso del catering EN publicado (no se reutiliza)', None)
             for n in _cifras_caso(os.path.join(CAT, 'cifras_caso.json'), 'cat') if n not in propios]

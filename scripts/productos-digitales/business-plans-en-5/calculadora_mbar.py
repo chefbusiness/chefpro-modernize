@@ -109,8 +109,9 @@ ENTRADAS = [
      'Added on top. The part you pay out to staff is wages, not tips (IRS Rev. Rul. 2012-18), with payroll taxes.'),
     ('tax', 'Sales tax rate (state + local)', PCT1, 0.08, 'Kit estimate: use your own state + local rate.'),
     ('tax_sc', 'Does your state tax the bar service and the service charge?', '@', 'Yes',
-     'California taxes a caterer\'s service even when the client supplies the drinks (cdtfa.ca.gov). Rules vary by '
-     'state: check yours.'),
+     'Yes = sales tax on the bar service and the service charge; No = no sales tax on this quote. California taxes a '
+     'caterer\'s charges for serving drinks even when the client supplies them (cdtfa.ca.gov). Rules vary by state: '
+     'check yours.'),
     ('deposit', 'Deposit to book the date (% of total)', PCT, 0.30,
      'A 30% deposit is typical (checkcherry.com); the balance is due before the event.'),
     ('minimum', 'Minimum charge for the bar service (subtotal floor)', MONEDA, 400.0,
@@ -138,14 +139,16 @@ SALIDAS = [
     ('c_guest', 'Direct cost per guest', MONEDA, '{c_total}/{guests}', ''),
     ('price', 'PRICE PER GUEST before service charge and tax', MONEDA,
      'roundup(max(0,{c_total}/(1-{margin}-{commission})-{bar_fee})/{guests}*(1+{upcharge})*2)/2',
-     'Rounded up to the next 0.50. Staff, mixers, ice and cups are inside it; the host\'s alcohol is not.'),
+     'Rounded up to the next 0.50. Staff, mixers, ice and cups are inside it; the host\'s alcohol is not. Market check: '
+     'Check Cherry\'s median is $750 per event ($675 for 4 hours, $700 for 51-100 guests). Well above it, make sure the '
+     'trailer, the inclusions and your reviews justify the price, or lower the target margin.'),
     ('subtotal', 'Bar service subtotal', MONEDA, 'max({price}*{guests}+{bar_fee},{minimum})',
      'Price per guest × guests + flat bar fee, never below the minimum.'),
     ('per_hour_eq', 'Equivalent price per hour of service', MONEDA, '{subtotal}/{hours}',
      'The same quote expressed per hour, for clients who compare hourly rates.'),
     ('sc_amt', 'Service charge', MONEDA, '{subtotal}*{sc}', ''),
-    ('tax_amt', 'Sales tax', MONEDA, '({subtotal}+if({tax_sc}=="Yes",{sc_amt},0))*{tax}',
-     'On the subtotal, plus the service charge if your state taxes it.'),
+    ('tax_amt', 'Sales tax', MONEDA, 'if({tax_sc}=="Yes",({subtotal}+{sc_amt})*{tax},0)',
+     'On the bar service and the service charge if your state taxes them; zero if it does not.'),
     ('total', 'TOTAL TO QUOTE', MONEDA, '{subtotal}+{sc_amt}+{tax_amt}', ''),
     ('dep_amt', 'Deposit to book the date', MONEDA, '{total}*{deposit}', ''),
     ('balance', 'Balance due before the event', MONEDA, '{total}-{dep_amt}', ''),
@@ -161,32 +164,37 @@ T_NOMBRES = "'%s'!$A$%d:$A$%d" % (H1, F_TABLA + 1, F_TABLA + len(RATIO))
 T_RATIOS = "'%s'!$B$%d:$B$%d" % (H1, F_TABLA + 1, F_TABLA + len(RATIO))
 T_LICENCIA = "'%s'!$A$%d" % (H1, F_TABLA + 3)
 
+# M9 de REVISION-FINAL: entradas (Kit estimates) ajustadas para que las 3 cotizaciones caigan en los rangos de Check
+# Cherry (research §5): boda de 120 en el cuartil alto (por debajo del top 10 %, > $2,000), empresa de 100 dentro de la
+# mitad central alta, cumpleaños de 60 cerca de la mediana
 EJEMPLOS = OrderedDict([
     ('Wedding, 120 guests, 5 hours', dict(
-        package=FULL_DRY, guests=120, hours=5, first_hour=2, per_hour=1, bartenders=3, barbacks=1, extra_hours=3.5,
+        package=FULL_DRY, guests=120, hours=5, first_hour=2, per_hour=1, bartenders=3, barbacks=0, extra_hours=3.5,
         wage_bt=20.0, wage_bb=16.0, payroll=0.10, mixers=0.38, alcohol=3.0, cups=0.55, ice_lb=1.5, ice_price=0.25,
-        miles=60, per_mile=0.70, bar_fee=250.0, upcharge=0.0, commission=0.0, margin=0.55, sc=0.15, tax=0.08,
+        miles=60, per_mile=0.70, bar_fee=150.0, upcharge=0.0, commission=0.0, margin=0.40, sc=0.10, tax=0.08,
         tax_sc='Yes', deposit=0.30, minimum=400.0, extra_hour_price=150.0)),
     ('Corporate holiday party, 100 guests, 4 hours', dict(
-        package=FULL_DRY, guests=100, hours=4, first_hour=2, per_hour=1, bartenders=2, barbacks=1, extra_hours=3,
+        package=FULL_DRY, guests=100, hours=4, first_hour=2, per_hour=1, bartenders=2, barbacks=0, extra_hours=2.5,
         wage_bt=20.0, wage_bb=16.0, payroll=0.10, mixers=0.38, alcohol=3.0, cups=0.55, ice_lb=1.5, ice_price=0.25,
-        miles=30, per_mile=0.70, bar_fee=0.0, upcharge=0.0, commission=0.0, margin=0.55, sc=0.0, tax=0.08,
+        miles=30, per_mile=0.70, bar_fee=0.0, upcharge=0.0, commission=0.0, margin=0.35, sc=0.0, tax=0.08,
         tax_sc='Yes', deposit=0.30, minimum=400.0, extra_hour_price=150.0)),
     ('Private birthday, 60 guests, 4 hours', dict(
         package=LIMITED_DRY, guests=60, hours=4, first_hour=2, per_hour=1, bartenders=1, barbacks=0, extra_hours=2.5,
         wage_bt=20.0, wage_bb=16.0, payroll=0.10, mixers=0.38, alcohol=3.0, cups=0.55, ice_lb=1.5, ice_price=0.25,
-        miles=20, per_mile=0.70, bar_fee=0.0, upcharge=0.15, commission=0.05, margin=0.55, sc=0.0, tax=0.08,
+        miles=20, per_mile=0.70, bar_fee=0.0, upcharge=0.15, commission=0.05, margin=0.35, sc=0.0, tax=0.08,
         tax_sc='No', deposit=0.30, minimum=400.0, extra_hour_price=150.0)),
 ])
 EJ_NOTAS = OrderedDict([
-    ('Wedding, 120 guests, 5 hours', 'Dry hire full bar from the trailer: 3 bartenders and a barback, a flat bar fee for '
-                                     'the trailer and a 15% service charge; 30% deposit to book the date.'),
+    ('Wedding, 120 guests, 5 hours', 'Dry hire full bar from the trailer: 3 bartenders, a flat bar fee for the trailer and '
+                                     'a 10% service charge; 30% deposit to book the date. It lands in the upper quarter '
+                                     'of Check Cherry bookings (median $1,063 for 101-150 guests, top 10% above $2,000).'),
     ('Corporate holiday party, 100 guests, 4 hours', 'Dry hire full bar on a weeknight in December, booked directly by '
-                                                     'the company: no service charge, no marketplace fee.'),
+                                                     'the company: no service charge, no marketplace fee. Check Cherry: '
+                                                     '$700 median for 51-100 guests, middle half $550-975.'),
     ('Private birthday, 60 guests, 4 hours', 'Dry hire limited bar (beer, wine and one signature cocktail) with a '
-                                             'mimosa bar upcharge, booked through a marketplace (5% fee); this '
-                                             'example assumes a state that does not tax the service (switch set to '
-                                             'No).'),
+                                             'mimosa bar upcharge, booked through a marketplace (5% fee), in a state '
+                                             'that does not tax bartending service (switch set to No). Check Cherry: '
+                                             '$700 median for 51-100 guests.'),
 ])
 
 
@@ -199,7 +207,7 @@ COMPRA = [
      'A 750 ml bottle (a "fifth") holds about 25.4 oz: about 16 pours of 1.5 oz (44 ml). A 1.75 L bottle (a '
      '"handle") holds 7/3 as much.'),
     ('wine_glasses', 'Glasses per 750 ml bottle of wine', ENTERO, 5, 'About 5 glasses of 5 oz (148 ml).'),
-    ('beer_per', 'Beers (12 oz cans or bottles) per beer drink', DEC1, 1, ''),
+    ('beer_per', 'Beers (12 oz / 355 ml cans or bottles) per beer drink', DEC1, 1, ''),
     ('buffer', 'Safety buffer on every quantity', PCT, 0.10, 'Kit estimate: unopened bottles stay with the host.'),
     ('toast', 'Champagne toast?', '@', 'No', 'Yes or No.'),
     ('toast_pours', 'Toast pours per 750 ml bottle of sparkling wine', ENTERO, 8, 'Kit estimate.'),
@@ -292,7 +300,7 @@ def calcular(e):
     r['subtotal'] = max(r['price'] * e['guests'] + e['bar_fee'], e['minimum'])
     r['per_hour_eq'] = r['subtotal'] / e['hours']
     r['sc_amt'] = r['subtotal'] * e['sc']
-    r['tax_amt'] = (r['subtotal'] + (r['sc_amt'] if e['tax_sc'] == 'Yes' else 0)) * e['tax']
+    r['tax_amt'] = (r['subtotal'] + r['sc_amt']) * e['tax'] if e['tax_sc'] == 'Yes' else 0
     r['total'] = r['subtotal'] + r['sc_amt'] + r['tax_amt']
     r['dep_amt'] = r['total'] * e['deposit']
     r['balance'] = r['total'] - r['dep_amt']
@@ -431,8 +439,8 @@ def hoja_calculadora(wb):
         ws.column_dimensions[col].width = w
     _cabecera(ws, 'MOBILE BAR PRICING CALCULATOR — COST PER GUEST TO QUOTE',
               'Type in the GREEN cells; everything else is calculated. The default model is dry hire ' + GLOSA + ': '
-              'the host buys and owns the alcohol, so it is never in your cost or your price. Amounts are in your '
-              'currency and exclude sales tax unless the row says otherwise. Every default value is a kit estimate: '
+              'the host buys and owns the alcohol, so it is never in your cost or your price. Amounts are in US dollars '
+              '(or your own currency) and exclude sales tax unless the row says otherwise. Every default value is a kit estimate: '
               'replace it with your own numbers.', 'C')
     for col, t in zip('ABC', ('INPUTS', 'Value', 'Notes')):
         _f(ws, '%s4' % col, t, b=True, fill=GRIS)
@@ -599,7 +607,7 @@ def hoja_compra(wb):
     for k, rot, fx, unidad, nota in (
             ('b_wine', 'Wine', '=ROUNDUP(%s*%s/%s,0)' % (R['d_wine'], up, R['wine_glasses']), '750 ml bottles',
              'Split between red, white and sparkling to taste.'),
-            ('u_beer', 'Beer', '=ROUNDUP(%s*%s*%s,0)' % (R['d_beer'], R['beer_per'], up), '12 oz cans or bottles', ''),
+            ('u_beer', 'Beer', '=ROUNDUP(%s*%s*%s,0)' % (R['d_beer'], R['beer_per'], up), '12 oz (355 ml) cans or bottles', ''),
             ('b_toast', 'Sparkling wine for the toast',
              '=IF(%s="Yes",ROUNDUP(%s/%s,0),0)' % (R['toast'], R['guests'], R['toast_pours']), '750 ml bottles',
              'Only if the switch above is Yes.')):
@@ -712,7 +720,8 @@ def hoja_specs(wb):
     fila += 2
     for t in ('Specs converted from milliliters (30 ml = 1 oz) and rounded to the nearest 0.25 oz; the (ml) column '
               'converts back at 1 oz = 29.57 ml. A 750 ml bottle (a "fifth") holds about 25.4 oz, a 1.75 L bottle (a '
-              '"handle") about 59.2 oz and a 1 L bottle about 33.8 oz.',
+              '"handle") about 59.2 oz and a 1 L bottle about 33.8 oz. Handles apply to spirits sold in 1.75 L; '
+              'sparkling wine, vermouth and most liqueurs come in 750 ml or 1 L.',
               'Batching tip: pre-batch the still part of each cocktail (spirits, juice, syrup) and add sparkling wine '
               'or soda at the bar. Always offer at least one zero-proof drink.',
               'Allergens: tell guests that the Mai Tai contains almond (orgeat) and that the Pina Colada and the '
@@ -732,8 +741,9 @@ def hoja_ejemplos(wb):
     for col in 'BCD':
         ws.column_dimensions[col].width = 26
     _cabecera(ws, '3 EXAMPLE QUOTES — calculated with the same formulas as the "%s" tab' % H1,
-              'Kit estimates for illustration only, not market prices: change the inputs in "%s" to price your own '
-              'events. All three are dry hire: the host buys the alcohol.' % H1, 'D')
+              'Kit estimates for illustration, set to land in the market ranges Check Cherry reports (median $750 per '
+              'event, without alcohol or tips): change the inputs in "%s" to price your own events. All three are dry '
+              'hire: the host buys the alcohol.' % H1, 'D')
     _f(ws, 'A4', 'INPUTS', b=True, fill=GRIS)
     for j, nombre in enumerate(EJEMPLOS):
         _f(ws, '%s4' % 'BCD'[j], nombre, b=True, fill=GRIS, wrap=True)
@@ -762,7 +772,7 @@ def hoja_ejemplos(wb):
         _f(ws, 'A%d' % (f + 1 + j), nombre, b=True)
         _f(ws, 'B%d' % (f + 1 + j), nota, wrap=True)
         ws.merge_cells('B%d:D%d' % (f + 1 + j, f + 1 + j))
-        ws.row_dimensions[f + 1 + j].height = 45
+        ws.row_dimensions[f + 1 + j].height = 60
     ws.freeze_panes = 'B5'
     _imprimir(ws, horizontal=True)
     return ws
@@ -781,7 +791,7 @@ INSTRUCCIONES = [
      'package.', False),
     ('3. Set a flat bar fee if you charge one, the specialty bar upcharge, the marketplace fee, your target margin, the '
      'service charge, your sales tax rate and the switch "Does your state tax the bar service and the service '
-     'charge?". The price per guest is the direct cost divided by (1 - target margin - marketplace fee), minus the '
+     'charge?" (No = no sales tax on the quote). The price per guest is the direct cost divided by (1 - target margin - marketplace fee), minus the '
      'flat fee, rounded up to the next 0.50; the subtotal never goes below your minimum.', False),
     ('4. "%s": the drink mix of each package and the bottle math give the host\'s shopping list (spirits split by '
      'type, wine, beer, sparkling wine for the toast) and what the bar brings (ice in bags, cups, napkins, mixer '
@@ -799,8 +809,9 @@ INSTRUCCIONES = [
     ('A mandatory service charge is not a tip: the part you pay out to the staff is wages, with payroll taxes (IRS Rev. '
      'Rul. 2012-18), and the part you keep is revenue. A voluntary gratuity is the client\'s decision and belongs to the '
      'staff: this calculator keeps it out of the price and the total.', False),
-    ('Sales tax: California taxes a caterer\'s service even when the client supplies the drinks (cdtfa.ca.gov), so '
-     'a bartending service is taxable there; other states differ. Set your rate and the switch.',
+    ('Sales tax: California taxes a caterer\'s charges for serving drinks even when the client supplies them '
+     '(cdtfa.ca.gov), so bartending charges are generally taxable there; other states differ. Set your rate and the '
+     'switch.',
      False),
     ('UK: if you are VAT-registered, enter 0.20 as the tax rate. Selling alcohol needs a premises licence or a '
      'Temporary Event Notice: see section 9 of the plan.', False),
