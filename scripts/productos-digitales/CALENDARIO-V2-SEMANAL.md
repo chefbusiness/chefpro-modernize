@@ -415,6 +415,16 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   (dry hire, caso 160 × 95 × $14 = $212,800, préstamo ≈ $50K) y `SPEC-delta.md` (D81-D95). F1 ≈ 0,6 M tokens.
 - **Retomar F2:** implementador opus según `SPEC-delta.md` §3-§6 y el patrón de `business-plans-en-4/F2-NOTAS.md`.
   Correo EN: 24-nov 14:00Z (borrador + routine el 25-oct).
+- **F2 + F3 cerradas el mismo día** (rama `feat/mobile-bar-business-plan-en`, **PR #128 draft**, preview `deploy-preview-128`):
+  4 ficheros en `dl/mobile-bar-business-plan/` (docx, financial projections, pricing calculator con shopping list y 10 cócteles en
+  oz (ml), checklist de 68 tareas). Caso: 160 × 95 × $14 = $212,800 · préstamo $49,000 (SBA Microloan) · DSCR 2.93 · equilibrio
+  134 eventos · pesimista con caja −$2,664. Revisión opus: 1 BLOQUEANTE (cláusula de «agente» sacada de una fuente de FL
+  «AI Generated»), 10 MAYOR, 16 MENOR, todos aplicados (`business-plans-en-5/REVISION-FINAL.md`, `F2-NOTAS` §9); ejemplos de la
+  calculadora llevados a precio de mercado. 2 imágenes propias (remolque-barra en boda, barra portátil) + og.
+  **Cierre al recibir el link** (ficha Stripe dada a John el 13-oct: $39 USD, redirección `/en/digital-products/mobile-bar-business-plan/access?session_id={CHECKOUT_SESSION_ID}`):
+  CLI de Stripe → env `VITE_STRIPE_PAYMENT_LINK_MOBILE_BAR_BUSINESS_PLAN` (builds) → `sync-payment-links.py` → PR fuera de draft + merge →
+  gates LIVE → GSC → correo EN 24-nov (borrador + routine el 25-oct; plantilla `broadcast-mobile-bar-business-plan-lanzamiento-en.html`).
+  Después: añadirle el bonus común «US · UK · Canada · Australia Hospitality Equivalents Guide» (rama `feat/en-equivalents-guide`).
 
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
