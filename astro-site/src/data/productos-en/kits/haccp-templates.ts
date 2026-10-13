@@ -43,7 +43,7 @@ const data: KitExcelData = {
   schema: {
     productName: 'HACCP Food Safety Kit Pro',
     productDescription:
-      '19 HACCP and food safety templates for Excel plus 2 bonuses: HACCP plan with hazard analysis, temperature, receiving, cooking and cooling logs, cleaning schedule, allergen matrix and a health inspection self-checklist, with FDA Food Code 2022 limits in °F.',
+      '19 HACCP and food safety templates for Excel plus 3 bonuses: HACCP plan with hazard analysis, temperature, receiving, cooking and cooling logs, cleaning schedule, allergen matrix and a health inspection self-checklist, with FDA Food Code 2022 limits in °F.',
     price: '19.00',
     priceValidUntil: '2026-12-31',
     // FAQPage schema: versiones CORTAS de las FAQ on-page (mismo patrón que el ES y los kits EN hermanos).
@@ -127,7 +127,7 @@ const data: KitExcelData = {
     titlePost: ': ',
     titleSubtitle: 'HACCP Plan Template, Temperature Logs & Food Safety Checklists for Excel',
     description:
-      '19 professional food safety templates + 2 bonuses: temperatures, cooking, cooling, parasite destruction, cleaning, traceability, allergens, a HACCP plan and more. The records a health inspector expects to see, ready to use in your restaurant.',
+      '19 professional food safety templates + 3 bonuses: temperatures, cooking, cooling, parasite destruction, cleaning, traceability, allergens, a HACCP plan and more. The records a health inspector expects to see, ready to use in your restaurant.',
     checkItems: [
       '19 templates with an automatic color traffic light on the measurement logs; plans, checklists and posters ready to print',
       'Allergen matrix with the US Big 9 and all 14 UK allergens',
@@ -141,7 +141,7 @@ const data: KitExcelData = {
   compatApps: {
     titleHtml: 'Works with <span class="text-[#FFD700]">Excel</span>, Google Sheets and LibreOffice',
     subtitleHtml:
-      'Download, customize and print. Works with Excel, Google Sheets, LibreOffice and Apple Numbers: all 21 files are .xlsx and print on US Letter straight from the sheet',
+      'Download, customize and print. Works with Excel, Google Sheets, LibreOffice and Apple Numbers: all 21 templates are .xlsx and print on US Letter straight from the sheet',
   },
 
   grid: {
@@ -229,7 +229,7 @@ const data: KitExcelData = {
         label: 'BONUS 3',
         title: 'US · UK · Canada · Australia Equivalents Guide',
         desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
-        image: '/lovable-uploads/ai-gallery/haccp-en-sanitizing.jpg',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
       },
     ],
   },

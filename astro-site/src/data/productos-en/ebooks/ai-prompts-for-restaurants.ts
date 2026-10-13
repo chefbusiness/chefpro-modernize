@@ -108,7 +108,7 @@ const data = {
   bonuses: [
     { icon: 'BookOpen', label: 'BONUS 1', title: 'Restaurant Prompt Engineering Guide', desc: 'Learn to write your own perfect hospitality prompts from scratch with the AI Chef Pro method. An editable Word document you can customize.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
     { icon: 'FileText', label: 'BONUS 2', title: 'Templates + Cheat Sheet', desc: 'A spreadsheet with ready-to-use templates and a quick summary of the best hospitality prompts.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
-    { icon: 'Globe', label: 'BONUS 3', title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.', image: '/lovable-uploads/ai-gallery/fin-en-owner-desk.jpg' },
+    { icon: 'Globe', label: 'BONUS 3', title: 'US · UK · Canada · Australia Equivalents Guide', desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.', image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg' },
   ],
 
   guarantee: {

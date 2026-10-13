@@ -240,7 +240,7 @@ const data: PlanNegocioData = {
         label: 'BONUS 3',
         title: 'US · UK · Canada · Australia Equivalents Guide',
         desc: 'Bonus: terms, taxes, food safety, staff rules, alcohol and units for using this kit in the US, UK, Canada and Australia.',
-        image: '/lovable-uploads/ai-gallery/csbp-en-hero.jpg',
+        image: '/lovable-uploads/ai-gallery/en-equivalents-guide.jpg',
       },
     ],
   },
