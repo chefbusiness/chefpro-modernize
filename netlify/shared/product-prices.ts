@@ -50,6 +50,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'manual-chef-ejecutivo': { eur: 65 },
   'manual-manager-restaurante': { eur: 55 },
   'mega-pack-tareas': { eur: 89 },
+  'mobile-bar-business-plan': { usd: 39 },
   'pack-appcc': { eur: 14 },
   'plan-catering-tematico-eventos': { eur: 45 },
   'plan-chef-privado-showcooking-eventos': { eur: 45 },

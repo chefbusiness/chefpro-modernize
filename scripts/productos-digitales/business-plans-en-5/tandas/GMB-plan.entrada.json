@@ -1,0 +1,3106 @@
+{
+ "tanda": "GMB-plan",
+ "salida": "scripts/productos-digitales/business-plans-en-5/textos_en/GMB-plan.json",
+ "formato_salida": "{\"<id>\": \"<texto EN>\", …} con TODOS los ids de \"cadenas\" y nada más",
+ "n_cadenas": 130,
+ "n_palabras": 3241,
+ "pistas": {
+  "P01": "Glosario: clientes/día → «customers per day»; ticket medio → «average check»; PVP con IVA → «menu price incl. sales tax»",
+  "P02": "D18: la EN nace en 2.2: explica el porqué sin historia de versiones",
+  "P03": "D6: pestañas y valores citados entre comillas dobles rectas con su nombre EN (\"0. Assumptions\", \"Staffing\")",
+  "P04": "D86: motor de eventos: «events per year» (B4), «price per guest» (B5), «guests per event» (B6); nunca «customers», «per day» ni «operating days» (gate)",
+  "P05": "D85: caso US = 160 eventos/año × 95 invitados × $14 por invitado (sin sales tax ni alcohol: bar package + add-ons, sin la gratuity voluntaria) = $212,800 (research §8; la calibración D15 puede subir B4); drivers: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar); los años 2-3 crecen en EVENTOS (B7/B8); compara con la capacidad de tus 2 equipos (fila 51)",
+  "P06": "D9-D13 y §4.2: trámite/ley/organismo español → su equivalente US (SPEC §4.2, research §5); nota UK breve SOLO donde la SPEC la pone. Nunca se traduce un modelo, ley u organismo español: se sustituye o se quita",
+  "P07": "D8: sin símbolo de moneda; «(€)» fuera; «€/mes» → «per month»; importes en texto sin símbolo",
+  "P08": "D9: «sin IVA» → «excl. sales tax»; «con IVA» → «incl. sales tax»; P&L sin impuesto, tesorería con lo cobrado",
+  "P09": "D84/D87: el bar trailer (remolque-barra convertido) que arrastra el vehículo del dueño («tow vehicle»); nunca «truck» (gate)",
+  "P10": "D85: caso US = 160 eventos/año × 95 invitados × $14 por invitado (sin sales tax ni alcohol: bar package + add-ons, sin la gratuity voluntaria) = $212,800 (research §8; la calibración D15 puede subir B4); drivers: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar); precio por invitado SIN sales tax y SIN alcohol (en dry hire lo compra el anfitrión) con bartenders, barra, mixers, garnish, hielo y vasos dentro y SIN la gratuity voluntaria; los operadores cotizan por paquete o por hora: la calculadora del kit lo convierte a precio por invitado. PRIMERA mención de «dry hire» de este libro: con la glosa «(your client buys the alcohol; you bring the bar, the bartenders and everything else)»",
+  "P11": "D85: caso US = 160 eventos/año × 95 invitados × $14 por invitado (sin sales tax ni alcohol: bar package + add-ons, sin la gratuity voluntaria) = $212,800 (research §8; la calibración D15 puede subir B4); drivers: B4 = eventos/año, B5 = precio por invitado, B6 = invitados por evento. Las notas describen el MÉTODO: sin cifras del caso (cambian al recalibrar); invitados medios por evento (Check Cherry: evento típico ~80 invitados); la mezcla del ejemplo va de fiestas privadas de 60 a bodas de 120",
+  "P12": "Formato US: punto decimal y coma de miles («0.35 = 35%»)",
+  "P13": "D85: crecimiento de EVENTOS 10 % en el año 2 (limitado por 2 equipos y por los sábados)",
+  "P14": "D86: no hay comida: bar packages (bartending, mixers, garnish, hielo) y add-ons; «drink menu» / «signature cocktails»; nunca food, kitchen ni menu a secas (gate)",
+  "P15": "D85: cuota de BAR PACKAGES (bartending, barra, mixers, garnish, hielo, vasos) 85 %; el resto (fila 12) son add-ons: travel fees, horas extra, cristalería, specialty bars. Es una ENTRADA",
+  "P16": "D85: calculado como el resto: bar packages + add-ons = 100 %",
+  "P17": "D85: coste de los paquetes 19 % = mixers, garnish, hielo y bebidas sin alcohol (Kit estimate ≈ $2.25 por invitado); nunca alcohol en dry hire",
+  "P18": "D85: coste de los add-ons 20 % (Kit estimate: specialty bars, champagne service, cristalería extra alquilada)",
+  "P19": "D85: desechables 4 %: vasos, pajitas, servilletas, posavasos y carta impresa (Kit estimate)",
+  "P20": "D87: gig marketplaces (GigSalad, The Bash, Thumbtack), no apps de delivery",
+  "P21": "D87: cuota de reservas por gig marketplaces (GigSalad, The Bash, Thumbtack): 20 % en el ejemplo",
+  "P22": "D87: comisión 5 %: GigSalad cobra 5 % (gratis) o 2.5 % (de pago) sobre la reserva confirmada y nada por lead (help.gigsalad.com); Thumbtack cobra por lead",
+  "P23": "Glosario: aparcamiento y base del vehículo → «commissary & truck parking»",
+  "P24": "Mercado US (ejemplo): sin ciudades ni mercados españoles; «your area», «your city»",
+  "P25": "Glosario: «storage unit & trailer parking»",
+  "P26": "D87: «inverter generator and power»",
+  "P27": "D87: storage unit o garaje para el equipo + aparcamiento del remolque, por mes; si tu condado exigiera una comisaria para el garnish o el hielo, súmala aquí (Kit estimate: +$300-800)",
+  "P28": "D87: meses de depósito del storage unit",
+  "P29": "D85: luz y agua del storage unit; el combustible del vehículo y del generador va en la fila 27 del P&L",
+  "P30": "D85: $4,000/año = general liability + liquor liability ($600-1,000) + commercial auto con el remolque (≈ $1,800) + workers' comp (≈ $1,000) + equipo ($300); los venues piden COI y additional insured (insurancecanopy.com: GL + liquor desde $550/año)",
+  "P31": "D85: varios 3 % de las ventas: imprevistos de cada evento (hielo extra, mixers de última hora, parking en el venue); es VARIABLE. Combustible, mantenimiento y registro del vehículo y del remolque: fila 27 del P&L",
+  "P32": "D13: banco → «lender»; SBA 7(a) a través del banco; SBA Microloan (hasta $50,000); tipo 10 % «not APR»; aportación propia: «lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%)»; formato «lender-ready», nunca «approval guaranteed»",
+  "P33": "D85: préstamo que calibra el libro (≈ $50,000): cabe en un SBA Microloan (tope $50,000) o un 7(a) pequeño",
+  "P34": "D13/D17: carencia → «interest-only period» (0 por defecto en la EN)",
+  "P35": "D85: 7 años: un remolque convertido y su equipo pierden valor antes que un local",
+  "P36": "D10: «effective income tax rate» 25 % (21 % federal C corp + estatal; pass-through 0 %); bases negativas → «net operating losses carried forward» (federal: hasta el 80 % de la base; el modelo compensa el 100 %)",
+  "P37": "D87: 7 años: el bar trailer, su conversión, el generador y el storage fit-out (lo que se amortiza con el remolque)",
+  "P38": "Glosario: TPV → «POS»; datáfono → «card terminal»; bizum → «mobile wallet / contactless»",
+  "P39": "D87: 5 años: barra portátil, kit de barra, cristalería, coolers, software y tablet",
+  "P40": "D85: DATO INFORMATIVO (no entra en ningún cálculo): el techo de eventos al año que tus barras y tus equipos pueden atender (2 montajes × ~130 días reservables; los sábados son el cuello de botella); compáralo con la fila 4 y con el optimista",
+  "P41": "D84: bar móvil en el evento del cliente; sin ventanilla, festivales, mercados ni venta ambulante (gate)",
+  "P42": "D85: rampa 45 % → 9 meses: el primer año de un bar móvil es lento (Check Cherry: la mediana hace 3 eventos el primer año) y las bodas se reservan con 62 días de mediana",
+  "P43": "D85: 2 meses de storage antes de abrir (construcción del remolque + preventa en bridal shows)",
+  "P44": "D87: imprevistos 10 % sobre remolque, conversión, generador, storage fit-out e inspección",
+  "P45": "Glosario §9: mobile bar, dry hire, bar packages, signature cocktails, weddings, corporate events / holiday parties, private parties",
+  "P46": "D85: cobro medio 1 día: depósito del 30 % al reservar y saldo antes del evento; el libro no modela anticipos (nota de la Tesorería)",
+  "P47": "D9: liquidación trimestral (abril, julio, octubre, enero) = «quarterly filer»; mensual → nota",
+  "P48": "Research §5: ASCAP / BMI / SESAC si se pone música",
+  "P49": "D84/D85: alcohol 0 %: en dry hire el anfitrión compra el alcohol y es suyo; vender alcohol exige licencia (docx §9)",
+  "P50": "D87: bar trailer usado (6 x 12 ft, cargo / concession o horse trailer). El vehículo de arrastre es el TUYO ($0 en el plan): si no lo tienes, una pickup usada cuesta $10,000-$30,000 (Check Cherry). Nunca «truck»: di «tow vehicle» o «pickup»",
+  "P51": "D87: conversión: barra, armarios, lavamanos y depósitos de agua, LED y eléctrico (research: $5,000-$15,000 una conversión básica)",
+  "P52": "D87: wrap, rotulación y fachada de la barra del remolque",
+  "P53": "D87: barra portátil para el 2.º equipo y los salones donde no entra el remolque (Check Cherry: desde ~$1,000)",
+  "P54": "D87: generador inverter silencioso y cableado (research: $800-$3,000)",
+  "P55": "D87: acondicionar el storage unit: estanterías, racks de cristalería, zona de lavado",
+  "P56": "D87: business license, sales tax permit y certificaciones de servidores (TABC / RBS / TIPS) del año 1; varía mucho por estado y ciudad",
+  "P57": "D87: health permit / inspección de la unidad SOLO si tu condado lo exige (hielo, garnish, lavamanos); si no, pon 0",
+  "P58": "D87: software de reservas y CRM (propuestas, contratos, depósitos) + lector de tarjetas + tablet",
+  "P59": "D87: kit de barra para 4 estaciones (shakers, jiggers, speed rails, strainers, ice scoops): se amortiza",
+  "P60": "D87: inventario inicial: mixers, siropes, garnish, vasos y servilletas para los primeros eventos; nunca alcohol en dry hire",
+  "P61": "SPEC §4.2: DoorDash / Uber Eats, Resy / OpenTable, Google Business Profile, Yelp; apps de food trucks (Roaming Hunger, StreetFoodFinder); RRSS → social media",
+  "P62": "D87: web, fotos del remolque montado, altas en The Knot / WeddingWire / Zola / GigSalad, Google Business Profile y el primer bridal show",
+  "P63": "D87: cristalería (300 piezas + racks), coolers, ice bins y dispensadores",
+  "P64": "D87: lo que compras: remolque, conversión, equipo, lanzamiento y constitución; el colchón de caja no es inversión",
+  "P65": "D85: ventas de bar packages: bartending, barra, mixers, garnish, hielo y vasos por invitado (bodas, empresas, fiestas privadas). Sin alcohol: lo compra el anfitrión",
+  "P66": "D85: ventas de add-ons: travel fees, horas extra, cristalería, champagne service, specialty bars",
+  "P67": "D87: comisiones de gig marketplaces (GigSalad, The Bash, Thumbtack) sobre las reservas de ese canal",
+  "P68": "D87: el importe mensual se teclea en \"0. Assumptions\"; aquí × 12: storage unit + aparcamiento del remolque",
+  "P69": "D85: luz y agua del storage unit",
+  "P70": "Glosario: gestor/gestoría → «accountant / bookkeeper»; gestor de residuos → «licensed waste / grease hauler»",
+  "P71": "D85: teléfono e internet (móvil del negocio y datos para el lector de tarjetas en los venues)",
+  "P72": "D85: reparación de equipo y rotura de cristalería (en eventos se rompe cristal: repón cada temporada)",
+  "P73": "D85: certificaciones de servidores del equipo (TIPS / TABC / RBS) y su renovación",
+  "P74": "D85: degustaciones y consultas de carta para parejas y planners (mixers, garnish, tiempo); muchos operadores las descuentan si reservan",
+  "P75": "D88: suelo del margen bruto del motor 65 % (kit benchmark, editable): el margen bruto del libro resta también tarjeta, marketplace y varios",
+  "P76": "D88: techo del coste de mercancía (paquetes + add-ons) 26 % (kit benchmark, editable); los desechables tienen su línea; nunca alcohol en dry hire",
+  "P77": "D88: techo de personal 40 % (kit benchmark, editable), con el sueldo del dueño dentro",
+  "P78": "D88: techo de storage y parking 6 % (kit benchmark, editable): no hay local",
+  "P79": "D12: amortización del inmovilizado → «depreciation» (lineal de libros; MACRS / Section 179 solo en nota); amortización del préstamo → «principal repayment»; cuadro → «amortization schedule»",
+  "P80": "D88: suelo del resultado neto 5 % (kit benchmark, editable)",
+  "P81": "D85: la MISMA plantilla en los tres escenarios; en el pesimista el coste real de event bartenders y barbacks baja con los eventos (pagas horas por evento), así que el resultado real sería algo mejor",
+  "P82": "D87: Owner & Lead Bartender: vende, hace las degustaciones, diseña las cartas y lleva la barra del equipo 1 en cada evento",
+  "P83": "D11: «employer payroll taxes» 10 % (FICA + FUTA/SUTA + workers' comp); 12 pay periods (las extras solo si > 12); suelo = el mayor entre el mínimo federal ($7.25/h × 2,080 h) y el estatal/local; 40 h (FLSA); 50 semanas; propinas no modeladas",
+  "P84": "D87: second-crew lead bartender (part-time W-2): lleva el 2.º equipo los sábados de temporada alta",
+  "P85": "D87: event bartenders por evento, por horas y en W-2; su FTE es una fracción; las propinas voluntarias son suyas (FLSA)",
+  "P86": "D87: barbacks / setup crew por horas y en W-2: carga, hielo, montaje y desmontaje en eventos grandes",
+  "P87": "D85: «0. Assumptions» es la hoja de mando: eventos al año, precio por invitado sin sales tax ni alcohol, invitados por evento",
+  "P88": "D18: tabla «WHY THIS MODEL IS BUILT THIS WAY» (columnas Topic | Common shortcut | This workbook | Why). Col. A = tema de la fila; col. B = el atajo que suelen tomar las plantillas típicas; col. C = lo que hace ESTE libro; col. D = por qué. Sin historia de versiones («v1.1», «antes», «ahora»), sin cifras del caso (cambian al recalcular: describe el método) y sin normativa española",
+  "P89": "D18 (bar móvil): la propuesta es la del Catering EN publicado, que ya describe el MÉTODO del libro para un negocio de eventos; reescribe SOLO lo que hable de comida, cocina, comisaria, furgoneta, catering, buffet, servers o estaciones → bar móvil en dry hire, remolque, storage unit, bartenders y barbacks, mixers, garnish y hielo. Sin cifras del caso",
+  "P90": "Celda a celda: escribe SOLO el texto de ESTA celda (una tabla o una tarea): mira su pista propia",
+  "P91": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: precio por evento (1,334 reservas desde ene-2024, sin alcohol ni propinas): mediana $750, 50 % central $450-$1,275, media $1,173 — checkcherry.com",
+  "P92": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: precio por número de invitados: hasta 50 $575 · 51-100 $700 · 101-150 $1,063 · 151+ $1,438; evento típico ~80 invitados — checkcherry.com",
+  "P93": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: precio por duración: hasta 3 h $575 · 4 h $675 · 5 h $898 · 6+ h $1,275 — checkcherry.com",
+  "P94": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: servicio solo de bartender (dry hire puro): $375 por ~4 h ≈ $75-$120 por hora y bartender — checkcherry.com",
+  "P95": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: depósito y desplazamiento: depósito del 30 % típico; 26 % de las reservas cobran travel fee (mediana 36 millas, gratis hasta ~25) — checkcherry.com",
+  "P96": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: estacionalidad y calendario: octubre ~13 %, mayo 12.4 %, enero 3.8 %; reserva con 62 días de mediana, 85 % de viernes a domingo — checkcherry.com",
+  "P97": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: el primer año real (negocios con 12+ meses): mediana 3 eventos / $1,650; top 10 % ~39 eventos / $35,500 — checkcherry.com",
+  "P98": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: copas por invitado: 2 la primera hora + 1 por hora después — eventplanning.com",
+  "P99": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: ratio de bartenders: 1 por 50 invitados con barra completa; 1 por 75 con cerveza y vino — Kit estimate (la fuente no abrió)",
+  "P100": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: sueldo de bartender (BLS OES 35-3011, mayo 2025): media $19.61/h, mediana $16.51/h (incluye propinas) — bls.gov",
+  "P101": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: comisión de marketplace: GigSalad 5 % (plan gratis) / 2.5 % (de pago) sobre la reserva confirmada, nada por lead — gigsalad.com",
+  "P102": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: coste de arranque: barra portátil desde ~$1,000, herramientas $500-$1,500, arranque «lean» $2,000-$7,000; un remolque convertido suele costar decenas de miles — checkcherry.com",
+  "P103": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: seguros: general liability + liquor liability desde $550 al año; por evento desde $275 — insurancecanopy.com",
+  "P104": "D19/D88: tabla «US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES» (Benchmark | Value | Source | Note). Value en formato US; Source = el DOMINIO de la fuente LEÍDA de research §4-§5, o «Kit estimate» si allí figura como «(resumen)». Esta fila: hielo y mixers: 1.5 lb (0.68 kg) de hielo por invitado; mixers + garnish + hielo ≈ $2.25 por invitado — Kit estimate",
+  "P105": "Glosario: venta ambulante → «mobile vending»; vía pública → «public right-of-way / vending zones»"
+ },
+ "glosario": {
+  "cuenta de resultados": "P&L / profit and loss statement",
+  "P&L previsional": "pro forma P&L",
+  "previsión": "forecast / projection",
+  "punto de equilibrio": "break-even",
+  "tesorería": "cash flow",
+  "inversión inicial": "startup costs / capex",
+  "inversión (CAPEX)": "capex",
+  "amortización (activo)": "depreciation",
+  "amortización (préstamo)": "principal repaid",
+  "cuadro de amortización": "amortization schedule",
+  "carencia": "interest-only period",
+  "préstamo": "loan",
+  "cuota del préstamo": "loan payment",
+  "servicio de la deuda": "debt service",
+  "ventas": "sales",
+  "facturación": "revenue",
+  "ingresos": "revenue",
+  "gastos": "expenses",
+  "coste de mercancía": "cost of goods sold (food cost / beverage cost)",
+  "coste de comida": "food cost",
+  "coste de bebida": "beverage cost",
+  "personal": "labor",
+  "nóminas": "payroll",
+  "cargas sociales de empresa": "employer payroll taxes",
+  "alquiler": "rent (occupancy cost as % of sales)",
+  "suministros": "utilities",
+  "gestoría": "accounting / bookkeeping",
+  "seguros": "insurance",
+  "ratio": "ratio",
+  "TIR": "IRR",
+  "VAN": "NPV",
+  "payback": "payback",
+  "DSCR": "DSCR",
+  "fondo de maniobra": "working capital",
+  "fondos propios": "owner's equity",
+  "banco": "lender",
+  "inversor": "investor",
+  "BAI": "EBT",
+  "EBITDA": "EBITDA",
+  "margen de contribución": "contribution margin",
+  "coste variable": "variable cost",
+  "costes fijos": "fixed costs",
+  "ticket medio": "average check",
+  "cubiertos": "covers",
+  "comedor": "dine-in",
+  "barra": "bar",
+  "sala": "dining room",
+  "terraza": "patio",
+  "TPV": "POS",
+  "datáfono": "card terminal",
+  "IVA (ventas)": "sales tax (US) / VAT (UK)",
+  "IVA soportado": "recoverable tax",
+  "semáforo": "traffic light / status",
+  "desviación": "variance",
+  "presupuesto": "budget",
+  "real": "actual",
+  "umbral de seguridad": "safety threshold",
+  "estacionalidad": "seasonality",
+  "saldo inicial": "opening balance",
+  "saldo final": "ending balance",
+  "cobros": "receipts / cash in",
+  "pagos": "payments / cash out",
+  "flujo neto": "net cash flow",
+  "escenario": "scenario (pessimistic / base / optimistic)",
+  "pestaña": "tab",
+  "hoja": "sheet",
+  "desproteger hoja": "Unprotect Sheet",
+  "puntos porcentuales (p.p.)": "pts",
+  "comisión de plataformas": "delivery platform fees",
+  "materia prima": "raw materials / ingredients",
+  "obra": "build-out",
+  "mobiliario": "FF&E (furniture, fixtures and equipment)",
+  "vida útil": "useful life",
+  "dotación anual": "annual depreciation",
+  "stock inicial": "opening inventory",
+  "imprevistos": "contingency",
+  "traspaso": "key money",
+  "fianza": "security deposit",
+  "benchmark": "benchmark",
+  "consumo (existencias)": "usage",
+  "Óptimo/Límite (nº)": "Target / Limit (no.)",
+  "Objetivo (ratio)": "Target",
+  "Sentido": "Direction",
+  "Benchmark Sector": "Industry Benchmark",
+  "endeudamiento": "debt-to-capital ratio",
+  "flujo libre del proyecto": "project free cash flow (no debt)",
+  "promotor": "owner / founder",
+  "equipo promotor": "founding team",
+  "garantías": "collateral",
+  "fase (checklist)": "phase",
+  "responsable": "owner",
+  "Constitución": "Formation",
+  "Licencias (fase)": "Licenses & Permits",
+  "Tesorería (fase)": "Cash Management",
+  "Personal y obligaciones laborales": "Staff & Employer Obligations",
+  "activo/pasivo corriente": "current assets / current liabilities",
+  "deuda financiera viva": "outstanding debt",
+  "existencias": "inventory",
+  "plan de negocio": "business plan",
+  "gestor/gestoría": "accountant / bookkeeper",
+  "autónomo": "sole proprietor o single-member LLC (el caso: LLC)",
+  "SL": "LLC",
+  "alta en Hacienda": "state tax registration / seller's permit",
+  "Seguridad Social (empresa)": "employer payroll taxes",
+  "SMI": "minimum wage",
+  "convenio": "state / local minimum wage",
+  "DDD": "pest control",
+  "gestor de residuos": "licensed waste / grease hauler",
+  "carnet de manipulador": "food handler card",
+  "APPCC": "HACCP-based food safety plan",
+  "registro sanitario": "health permit",
+  "Inversión Inicial": "startup costs",
+  "PyG / cuenta de resultados": "P&L",
+  "Financiación": "financing",
+  "Personal (hoja)": "Staffing",
+  "plantilla": "staff / headcount",
+  "jornada": "FTE (full-time equivalent)",
+  "pagas": "pay periods",
+  "Impuesto de Sociedades": "income tax",
+  "bases negativas": "net operating losses (NOL)",
+  "préstamo bancario": "bank loan / SBA loan",
+  "recursos propios": "owner's equity",
+  "m²": "sq ft",
+  "litros": "gallons",
+  "cliente/día → (motor)": "events per year",
+  "ticket medio sin IVA → (motor)": "average price per guest (excl. sales tax and alcohol)",
+  "días de apertura → (motor)": "average guests per event",
+  "aparcamiento y base del vehículo": "storage unit & trailer parking",
+  "empresa de coctelería para eventos": "mobile bar company / business",
+  "servicio de barra (sinónimo)": "mobile bartending service · bar service",
+  "el cliente compra el alcohol": "dry hire (your client buys the alcohol; you bring the bar, the bartenders and everything else) — glosa en la 1.ª mención de cada entregable",
+  "con alcohol incluido y licencia": "full-service / licensed bar (solo como opción)",
+  "lista de la compra para el cliente": "shopping list",
+  "barra móvil (mueble)": "portable bar (≠ «mobile bar», que es el negocio)",
+  "remolque-barra": "bar trailer · converted trailer · horse trailer bar",
+  "vehículo que lo arrastra": "tow vehicle (nunca «truck»: di «pickup»)",
+  "raíl de botellas · cubeta de hielo · lavamanos · depósitos": "speed rail · ice bin · hand sink · fresh / gray water tank",
+  "montaje y desmontaje": "setup & breakdown",
+  "hora extra": "extra hour of service",
+  "precio por invitado": "per person / per guest pricing",
+  "paquetes cerrados": "bar packages",
+  "solo bartender": "bartender-only service",
+  "barra libre pagada por el anfitrión": "open bar / hosted bar",
+  "barra de pago": "cash bar (prohibida en dry hire)",
+  "por consumo": "consumption bar (solo full-service)",
+  "solo cerveza y vino (+1 cóctel)": "limited bar · beer & wine bar",
+  "cóctel de autor / carta de la casa": "signature cocktails · custom cocktail menu (nunca «author cocktails»)",
+  "carta impresa en la barra": "personalized menu / menu sign",
+  "bebidas sin alcohol": "mocktails · N/A drinks · zero-proof",
+  "brindis con espumoso": "champagne service / champagne toast",
+  "mezcladores, garnish, hielo, vasos": "mixers · garnishes · ice & coolers · plastic cups, napkins & straws",
+  "hielo por invitado": "ice per guest (1.5 lbs per guest, 0.68 kg)",
+  "medidas (John, 13-oct)": "US customary first, metric in parentheses: oz / fl oz (ml), lb (kg), quarts / gallons, °F (°C), miles, sq ft (m²); 750 ml bottle = a fifth, 1.75 L = a handle",
+  "desplazamiento": "travel fee",
+  "mínimo de contratación": "minimum · bar minimum",
+  "señal / anticipo / fianza": "deposit",
+  "propina": "gratuity · tip jar (riesgo de «venta» en MO)",
+  "recargo de servicio": "service charge (≠ gratuity: es salario)",
+  "jefe de barra": "lead bartender · Owner & Lead Bartender",
+  "ayudante de barra": "barback",
+  "certificado de servicio responsable": "TABC-certified (TX) · RBS (CA) · TIPS / ServSafe Alcohol (nunca «alcohol handler card»)",
+  "seguro de RC por alcohol": "liquor liability insurance · general liability",
+  "certificado del seguro · asegurado adicional": "COI · additional insured",
+  "requisitos de la sala": "venue requirements",
+  "seguro del anfitrión": "host liquor liability (lo contrata el cliente)",
+  "coste por copa / escandallo": "cost per guest (dry hire) · pour cost (solo full-service)",
+  "última ronda": "last call",
+  "experiencias temáticas": "specialty bars / themed bars (mimosa bar, espresso martini bar…)",
+  "coctelería de autor": "signature / craft cocktails",
+  "bartender freelance": "W-2 event bartender (nunca «freelance»)",
+  "licencia de actividad": "business license + sales tax permit",
+  "autorización puntual": "temporary / special event permit (solo full-service)",
+  "IVA": "sales tax",
+  "wedding planner": "wedding planner / coordinator",
+  "contrato": "service agreement / event contract",
+  "hostelero / sala": "venue",
+  "evento de empresa": "corporate event / holiday party",
+  "temporada alta": "peak wedding season (May-June, Sept-Oct)"
+ },
+ "pestanas_es_en": {
+  "MBP": {
+   "0. Supuestos": "0. Assumptions",
+   "Inversión Inicial": "Startup Costs",
+   "PyG 3 Años": "3-Year P&L",
+   "Punto Equilibrio": "Break-Even",
+   "Escenarios": "Scenarios",
+   "Personal": "Staffing",
+   "Instrucciones": "Instructions",
+   "Tesorería 12 meses": "12-Month Cash Flow",
+   "Financiación": "Financing"
+  },
+  "MBC": {
+   "F1 - Constitución": "Phase 1 - Business Setup",
+   "F2 - Vehículo": "Phase 2 - Trailer & Permits",
+   "F3 - Equipamiento": "Phase 3 - Equipment",
+   "F4 - Personal": "Phase 4 - Staff",
+   "F5 - Marketing": "Phase 5 - Marketing",
+   "F6 - 90 Días": "Phase 6 - First 90 Days",
+   "Instrucciones": "Instructions"
+  }
+ },
+ "claves_es_en": {
+  "Sí": "Yes",
+  "No": "No",
+  "CUMPLE": "OK",
+  "REVISAR": "REVIEW",
+  "Más de 3 años": "Over 3 years",
+  "✓": "✓",
+  "☐": "☐",
+  "N/A": "N/A",
+  "—": "—"
+ },
+ "fijos_en (ya escritos por mapas.py: úsalos con esas mismas palabras cuando los cites)": {
+  "Más plantillas y kits del catálogo en aichef.pro/productos-digitales": "More templates and kits in the catalog at aichef.pro/en/digital-products",
+  "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es": "Designed by John Guerrero — chef and restaurant consultant since 2010, in the kitchen since age 17 · johnguerrero.es",
+  "Para editar una celda que no esté en verde: Revisar → Desproteger hoja (no tiene contraseña).": "To edit a cell that is not green: Review → Unprotect Sheet (there is no password).",
+  "Este fichero forma parte del producto «plan-negocio-food-truck» de AI Chef Pro.": "This file is part of the Mobile Bar Business Plan Kit by AI Chef Pro.",
+  "QUÉ HA CAMBIADO RESPECTO DE LA VERSIÓN 1.1": "WHY THIS MODEL IS BUILT THIS WAY",
+  "v1.1": "Common shortcut",
+  "v2.2": "This workbook",
+  "Por qué": "Why",
+  "Fuente": "Source",
+  "DATOS DE REFERENCIA DEL SECTOR": "US MOBILE BAR BENCHMARKS (sourced) AND KIT ESTIMATES",
+  "Ticket medio SIN IVA (€)": "Average price per guest (excl. sales tax and alcohol; bar package + add-ons)",
+  "PVP equivalente con IVA (calculado)": "Price per guest incl. sales tax (calculated)",
+  "Seguridad Social a cargo de la empresa": "Employer payroll taxes",
+  "Número de pagas anuales": "Monthly pay periods per year (keep 12)",
+  "SMI anual de referencia (€)": "Federal minimum wage, annual full-time",
+  "Suelo salarial anual del convenio provincial (€)": "State / local minimum wage, annual full-time",
+  "Impuesto de Sociedades, nueva creación": "Effective income tax rate (years 1-2)",
+  "Impuesto de Sociedades, tipo general": "Effective income tax rate (from year 3)",
+  "IVA repercutido de restauración": "Sales tax rate on sales",
+  "IVA repercutido/soportado general": "Sales tax rate on alcohol sold (licensed only)",
+  "IVA de la bebida ALCOHÓLICA para consumir en el acto": "Sales tax rate on alcohol served on site",
+  "IVA de la bebida ALCOHÓLICA servida en sala": "Sales tax rate on alcohol served on site",
+  "IVA soportado en compras e inversión": "Recoverable input tax on purchases and capex",
+  "Bases negativas de ejercicios anteriores (€)": "Net operating losses carried forward",
+  "Carencia de principal (años)": "Interest-only period (years)",
+  "DSCR mínimo aceptable": "DSCR limit (minimum acceptable)",
+  "DSCR objetivo (verde)": "DSCR target (green)",
+  "Línea ICO (avalada por el ICO, la concede tu banco)": "Other loan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Préstamo participativo ENISA": "SBA Microloan (not in the schedule or the DSCR — enter your loan in row 7)",
+  "Business angels o socios inversores": "Investors / partners (equity: dilutes, not repaid)",
+  "Subvenciones autonómicas o locales": "Local grants (usually paid after you spend)",
+  "IVA repercutido del mes (memoria)": "Sales tax collected (memo)",
+  "IVA soportado del mes (memoria)": "Recoverable input tax (memo)",
+  "IVA a compensar arrastrado (inversión incluida)": "Carried forward (capex input tax included)",
+  "Resultado de la liquidación trimestral": "Quarterly sales tax return",
+  "Pago del IVA (modelo 303)": "Sales tax remitted (quarterly filer)",
+  "Año (€)": "Year",
+  "Ingresos necesarios al año": "Revenue needed per year",
+  "Ingresos necesarios al año (caja)": "Revenue needed per year (cash)",
+  "Mes 1 (€)": "Month 1",
+  "Mes 2 (€)": "Month 2",
+  "Mes 3 (€)": "Month 3",
+  "Mes 4 (€)": "Month 4",
+  "Mes 5 (€)": "Month 5",
+  "Mes 6 (€)": "Month 6",
+  "Mes 7 (€)": "Month 7",
+  "Mes 8 (€)": "Month 8",
+  "Mes 9 (€)": "Month 9",
+  "Mes 10 (€)": "Month 10",
+  "Mes 11 (€)": "Month 11",
+  "Mes 12 (€)": "Month 12",
+  "CHECKLIST APERTURA — FOOD TRUCK": "MOBILE BAR STARTUP CHECKLIST — DRY-HIRE MOBILE BARTENDING COMPANY",
+  "FASE 2: VEHÍCULO Y PERMISOS": "PHASE 2: TRAILER, LIQUOR RULES, PERMITS & INSURANCE",
+  "INSTRUCCIONES DE USO — Plan financiero Food Truck": "HOW TO USE THIS WORKBOOK — Mobile Bar Financial Projections",
+  "PLAN DE NEGOCIO: FOOD TRUCK": "BUSINESS PLAN: MOBILE BAR & EVENT BARTENDING",
+  "Ajusta las cifras a tu proyecto.": "US kit example (2026) — replace with your own quotes.",
+  "Escenario realista — Food Truck urbano": "Base case — mobile bar (dry hire)",
+  "Break-even — Food Truck": "Break-even — Mobile Bar",
+  "Ticket medio sin IVA": "Average price per guest (excl. sales tax)",
+  "Clientes/día (media del año 1)": "Events per year (year-1 average)",
+  "Clientes/día (media)": "Events per year (average)",
+  "Clientes/día": "Events per year",
+  "Días de apertura al año": "Average guests per event",
+  "Coste variable por cliente": "Variable cost per guest",
+  "Margen de contribución por cliente": "Contribution margin per guest",
+  "Ticket menos coste variable unitario": "Price per guest minus variable cost per guest",
+  "Clientes necesarios al año": "Guests needed per year",
+  "Clientes necesarios al día": "Events needed per year",
+  "Clientes necesarios al año (caja)": "Guests needed per year (cash)",
+  "Clientes necesarios al día (caja)": "Events needed per year (cash)",
+  "Clientes/día previstos en el plan": "Events per year in the plan",
+  "Clientes/día para el equilibrio": "Events per year to break even",
+  "Clientes al año por jornada equivalente": "Guests per year per full-time equivalent",
+  "Comisiones de delivery": "Gig marketplace fees",
+  "Coste de mercancía — comida": "Cost of goods — bar packages (mixers, garnishes, ice)",
+  "Coste de mercancía — bebida": "Cost of goods — add-ons",
+  "Consumibles y envases": "Cups, straws, napkins and bar disposables"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "Clientes servidos al día de media del año. Es el mismo «Clientes/día objetivo (Año 1)» que ya declaraba el fichero v1.1",
+   "donde": [
+    "MBP · 0. Supuestos!C4"
+   ],
+   "fila": "Clientes/día (media del año 1)",
+   "valor_us": 160,
+   "propuesta_en": "Average number of events you cater per year, counting every drop-off, buffet, wedding and party. It is the main volume driver of the whole workbook: the P&L, break-even and scenarios all read it, and years 2 and 3 grow in events. Compare it with the capacity row further down.",
+   "propuesta_de": "GCAT-plan c0006 (CATP 0. Supuestos!C4)",
+   "pistas": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05"
+   ]
+  },
+  {
+   "id": "c0008",
+   "es": "SIN IVA. Es el mismo 12 € que ya usaban Punto Equilibrio y la columna realista de Escenarios (declarar que es SIN IVA no cambia ningún número, sólo aclara qué era). Dentro del rango 10-15 € de la fila «Ticket medio food truck» de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones",
+   "donde": [
+    "MBP · 0. Supuestos!C5"
+   ],
+   "fila": "Ticket medio SIN IVA (€)",
+   "valor_us": 14,
+   "propuesta_en": "EXCL. sales tax, with staffing and the service charge included and the voluntary gratuity left out: the price per guest you quote before tax. Price per guest incl. sales tax = this value × (1 + your sales tax rate). The example sits inside the per-guest range in the benchmarks table on the \"Instructions\" tab (Kit estimate); the Pricing Calculator builds a quote per service style; to bring it here, divide its subtotal plus the service charge you keep by the billable guests (its own price per guest excludes the service charge).",
+   "propuesta_de": "GCAT-plan c0008 (CATP 0. Supuestos!C5)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P03",
+    "P04",
+    "P09",
+    "P10"
+   ]
+  },
+  {
+   "id": "c0010",
+   "es": "El MISMO dato lo usan la cuenta de resultados, el punto de equilibrio y los escenarios. La versión anterior traía TRES calendarios que no coincidían: 25 días de servicio al mes en el punto de equilibrio (300 al año), 5 servicios por semana durante 48 semanas en los escenarios (240 al año) y ninguno declarado en la cuenta de resultados. Se fijan 250 días —5 días de servicio a la semana por 50 semanas activas, dentro de los «4-6 días operativos por semana» que declara este mismo libro— porque son los únicos que reproducen al céntimo la facturación que el propio libro ya publicaba: 45 × 12 × 250 = 135.000 €",
+   "donde": [
+    "MBP · 0. Supuestos!C6"
+   ],
+   "fila": "Días de apertura al año",
+   "valor_us": 95,
+   "propuesta_en": "Average number of guests per event across your whole mix, from drop-off lunches for a few dozen people to weddings of over a hundred. A typical event runs 50-75 guests (Kit estimate). Sales per event = guests × price per guest. One cell for the whole workbook: the P&L, break-even and scenarios all read it, so they always agree.",
+   "propuesta_de": "GCAT-plan c0010 (CATP 0. Supuestos!C6)",
+   "pistas": [
+    "P07",
+    "P02",
+    "P03",
+    "P11"
+   ]
+  },
+  {
+   "id": "c0012",
+   "es": "El fichero v1.1 proyectaba 175.000 € en el año 2 sobre 135.000 € (+29,6 %): se redondea a la baja porque un food truck de un año no tiene todavía rutas ni clientela corporativa consolidadas (mismo criterio conservador que tapas-bar y cafetería)",
+   "donde": [
+    "MBP · 0. Supuestos!C7"
+   ],
+   "fila": "Crecimiento de volumen del año 2",
+   "valor_us": 0.1,
+   "propuesta_en": "Growth in events in year 2 over year 1 (enter 0.15 for 15%). Kept conservative on purpose: in its first year a caterer has few repeat clients and referrals, and weddings are booked months ahead.",
+   "propuesta_de": "GCAT-plan c0012 (CATP 0. Supuestos!C7)",
+   "pistas": [
+    "P07",
+    "P01",
+    "P02",
+    "P12",
+    "P04",
+    "P09",
+    "P13"
+   ]
+  },
+  {
+   "id": "c0018",
+   "es": "Peso de la COMIDA sobre el total de ventas. Es un INPUT: cámbialo aquí y el P&L, la tesorería y el IVA repercutido se recalculan solos",
+   "donde": [
+    "MBP · 0. Supuestos!C11"
+   ],
+   "fila": "Ventas de COMIDA sobre el total",
+   "valor_us": 0.85,
+   "propuesta_en": "Share of FOOD in total sales. It is an INPUT: change it here and the P&L, the cash flow and the sales tax collected recalculate on their own",
+   "propuesta_de": "GM c0018 (CATP 0. Supuestos!C11)",
+   "pistas": [
+    "P06",
+    "P14",
+    "P15"
+   ]
+  },
+  {
+   "id": "c0020",
+   "es": "Se calcula como el resto: comida + bebida = 100 %",
+   "donde": [
+    "MBP · 0. Supuestos!C12"
+   ],
+   "fila": "Ventas de BEBIDA sobre el total",
+   "propuesta_en": "Calculated as the remainder: food + beverage = 100%",
+   "propuesta_de": "GM c0020 (CATP 0. Supuestos!C12)",
+   "pistas": [
+    "P14",
+    "P16"
+   ]
+  },
+  {
+   "id": "c0022",
+   "es": "Coste de mercancía de la comida: dentro del 28-33 % de la fila «Food cost comida» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («depende del concepto: burger 30 %, tacos 25 %, poke 35 %»). Se toma el extremo bajo del rango porque la compra diaria que exige un food truck, sin cámara grande, reduce la merma frente a una cocina fija. Es la palanca más sensible del plan: con el 33 % el resultado del primer año se queda muy justo",
+   "donde": [
+    "MBP · 0. Supuestos!C13"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de COMIDA",
+   "valor_us": 0.19,
+   "propuesta_en": "Cost of goods sold on food sales. The example (30%) sits inside the 28-35% range for caterers in the benchmarks table on the \"Instructions\" tab; the menu matters (a drop-off sandwich lunch runs lower than a carving station). It is the most sensitive lever in the plan: test it at the top of the range before you trust the result.",
+   "propuesta_de": "GCAT-plan c0022 (CATP 0. Supuestos!C13)",
+   "pistas": [
+    "P03",
+    "P09",
+    "P14",
+    "P17"
+   ]
+  },
+  {
+   "id": "c0024",
+   "es": "Bebidas embotelladas y refrescos: extremo bajo del 22-28 % de la fila «Food cost bebidas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones («refrescos y agua embotellada, margen alto»)",
+   "donde": [
+    "MBP · 0. Supuestos!C14"
+   ],
+   "fila": "Coste de mercancía sobre las ventas de BEBIDA",
+   "valor_us": 0.2,
+   "propuesta_en": "Coffee, iced tea, lemonade and soft drinks served with the menu: a high-margin line, set below the food rate. There is no alcohol in this line: the client buys it separately.",
+   "propuesta_de": "GCAT-plan c0024 (CATP 0. Supuestos!C14)",
+   "pistas": [
+    "P03",
+    "P18"
+   ]
+  },
+  {
+   "id": "c0026",
+   "es": "Packaging biodegradable: extremo bajo del 3-5 % de la fila «Coste packaging / ventas» de la tabla DATOS DE REFERENCIA DEL SECTOR de la hoja de Instrucciones. Es una partida realmente cara en un food truck (obligatoria por normativa municipal en muchos casos, como recuerda la fase de equipamiento de tu checklist) y por eso se cita al lado del food cost, no dentro de «varios»",
+   "donde": [
+    "MBP · 0. Supuestos!C15"
+   ],
+   "fila": "Consumibles sobre ventas",
+   "valor_us": 0.04,
+   "propuesta_en": "Disposable plates, cutlery, napkins and containers for drop-off orders, as a % of sales. It sits next to cost of goods sold instead of hiding in miscellaneous. Some cities restrict foam and single-use plastics, so check your local rules.",
+   "propuesta_de": "GCAT-plan c0026 (CATP 0. Supuestos!C15)",
+   "pistas": [
+    "P06",
+    "P03",
+    "P09",
+    "P19"
+   ]
+  },
+  {
+   "id": "c0028",
+   "es": "A CERO por defecto: este negocio vende en el punto de venta móvil, no reparte a domicilio. Súbelo si activas un canal de delivery desde una ubicación fija",
+   "donde": [
+    "MBP · 0. Supuestos!C16"
+   ],
+   "fila": "Ventas por delivery sobre el total",
+   "valor_us": 0.2,
+   "propuesta_en": "Share of your sales that comes through corporate catering marketplaces such as ezCater, rather than from clients who book you directly. Set it to 0 if you only sell direct. The marketplace sends you the order but keeps a commission (next row).",
+   "propuesta_de": "GCAT-plan c0028 (CATP 0. Supuestos!C16)",
+   "pistas": [
+    "P20",
+    "P21"
+   ]
+  },
+  {
+   "id": "c0030",
+   "es": "Sin uso mientras pct_delivery esté a 0: rango habitual de comisión de plataforma si algún día operas desde una ubicación fija con reparto",
+   "donde": [
+    "MBP · 0. Supuestos!C17"
+   ],
+   "fila": "Comisión de la plataforma de delivery",
+   "valor_us": 0.05,
+   "propuesta_en": "Commission the marketplace keeps on those sales. ezCater charges about 15% on food and delivery (Kit estimate); fees change, so check the current schedule when you sign up. Not used while the marketplace share is 0%.",
+   "propuesta_de": "GCAT-plan c0030 (CATP 0. Supuestos!C17)",
+   "pistas": [
+    "P20",
+    "P22"
+   ]
+  },
+  {
+   "id": "c0042",
+   "es": "ESTE NEGOCIO NO PAGA RENTA DE LOCAL: esta celda es el coste mensual del aparcamiento o la nave en la que el vehículo pernocta y se prepara cada jornada, y de ella salen también la fianza y los meses previos a la apertura. Es un concepto distinto del generador, que va en la celda de suministros. 400 €/mes es lo que cuesta una plaza cubierta con toma de agua y desagüe para un vehículo comercial grande en una ciudad media española: pide presupuesto en tu zona antes de firmar",
+   "donde": [
+    "MBP · 0. Supuestos!C24"
+   ],
+   "fila": "Alquiler mensual del local (€)",
+   "valor_us": 600,
+   "propuesta_en": "Monthly cost of your commissary kitchen (hours + storage) and the van's parking spot: one cell for everything you pay the kitchen. The deposit and the months before opening are calculated from it. Shared kitchens charge roughly 15-45 per hour (The Food Corridor, 2023 Shared Kitchen Operator Survey): multiply by your prep hours and add storage and parking. A permitted commissary is required: catering from a home kitchen is not allowed, and cottage food rules do not cover it. Get quotes in your area before you sign.",
+   "propuesta_de": "GCAT-plan c0042 (CATP 0. Supuestos!C24)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P23",
+    "P02",
+    "P24",
+    "P09",
+    "P25",
+    "P26",
+    "P27"
+   ]
+  },
+  {
+   "id": "c0044",
+   "es": "Dos meses de fianza por la plaza o la nave, menos que los tres habituales de un local comercial",
+   "donde": [
+    "MBP · 0. Supuestos!C25"
+   ],
+   "fila": "Fianza del aparcamiento (meses)",
+   "valor_us": 1,
+   "propuesta_en": "Months of deposit on the commissary agreement. Many shared kitchens ask for one month up front: far less than the deposit on a commercial lease. Negotiate it in the written agreement.",
+   "propuesta_de": "GCAT-plan c0044 (CATP 0. Supuestos!C25)",
+   "pistas": [
+    "P06",
+    "P23",
+    "P28"
+   ]
+  },
+  {
+   "id": "c0046",
+   "es": "Combustible del generador eléctrico y mantenimiento de las tomas de agua y de vertido. Es el mismo concepto que la versión anterior llamaba «Generador (combustible/alquiler)» dentro de los costes fijos: ahora vive en una celda, para poder cambiarlo en un solo sitio y que el resto del libro se entere",
+   "donde": [
+    "MBP · 0. Supuestos!C26"
+   ],
+   "fila": "Suministros mensuales de luz, agua y gas (€)",
+   "valor_us": 100,
+   "propuesta_en": "Fuel for the generator and the portable burners, plus water and utility costs that the commissary fee does not cover. It is the one cell for this cost, so you change it in one place and the rest of the workbook follows.",
+   "propuesta_de": "GCAT-plan c0046 (CATP 0. Supuestos!C26)",
+   "pistas": [
+    "P02",
+    "P03",
+    "P26",
+    "P29"
+   ]
+  },
+  {
+   "id": "c0048",
+   "es": "Responsabilidad civil profesional alimentaria —la fase 1 de tu checklist pide un mínimo de 300.000 € de cobertura— más el seguro del vehículo a todo riesgo. Es la MISMA prima que la versión anterior contaba dos veces, una en la inversión y otra como gasto del año: aquí se cuenta una sola vez, que es como se paga",
+   "donde": [
+    "MBP · 0. Supuestos!C27"
+   ],
+   "fila": "Seguros (€/año)",
+   "valor_us": 4000,
+   "propuesta_en": "General liability (venues and planners often require 1M per occurrence), commercial auto for the van and liquor liability for events where bartenders pour the client's alcohol. Insureon publishes averages for small businesses (see the benchmarks table on the \"Instructions\" tab); the example is a Kit estimate, so get quotes from an insurance agent. It is counted once, as an annual expense, not also in startup costs.",
+   "propuesta_de": "GCAT-plan c0048 (CATP 0. Supuestos!C27)",
+   "pistas": [
+    "P07",
+    "P02",
+    "P09",
+    "P30"
+   ]
+  },
+  {
+   "id": "c0050",
+   "es": "Combustible del vehículo para desplazarse entre ubicaciones más el colchón de gasto corriente no presupuestado. Es un coste VARIABLE: sube y baja con los servicios que se hacen, así que no puede vivir entre los fijos, porque movería el punto de equilibrio sin que se notara. Agrupa dos partidas que la versión anterior tenía sueltas: el combustible, que ya era variable, y los varios e imprevistos, que estaban mal clasificados como fijos",
+   "donde": [
+    "MBP · 0. Supuestos!C28"
+   ],
+   "fila": "Varios e imprevistos sobre ventas",
+   "valor_us": 0.03,
+   "propuesta_en": "Van fuel to drive to venues, plus a cushion for unbudgeted running costs. It is a VARIABLE cost: it rises and falls with the number of events, so it cannot sit among the fixed costs or it would move the break-even without anyone noticing.",
+   "propuesta_de": "GCAT-plan c0050 (CATP 0. Supuestos!C28)",
+   "pistas": [
+    "P06",
+    "P02",
+    "P09",
+    "P31"
+   ]
+  },
+  {
+   "id": "c0055",
+   "es": "Principal solicitado. La hoja de Financiación comprueba que el origen de fondos cuadra con la necesidad de caja de la hoja 1 (25.000 € de recursos propios + 72.000 € de préstamo = 97.000 €). Está por encima de los 73.400 € que sumaba la versión anterior porque el fondo de maniobra pasa a ser de verdad de tres meses, y porque ahora se suman a la necesidad de caja el IVA de la inversión —que hay que adelantar aunque se recupere— y los imprevistos de la puesta en marcha",
+   "donde": [
+    "MBP · 0. Supuestos!C31"
+   ],
+   "fila": "Préstamo bancario solicitado (€)",
+   "valor_us": "CALIBRAR",
+   "propuesta_en": "Principal requested: bank or SBA 7(a). If your loan is an SBA 7(a), this is the cell. It is the only loan that the amortization schedule, the P&L interest and the DSCR use. The \"Financing\" tab checks that the sources of funds match the total cash needed on the \"Startup Costs\" tab (which includes working capital and the van and fit-out contingency): copy the loan suggested there into this cell until the difference reaches zero.",
+   "propuesta_de": "GCAT-plan c0055 (CATP 0. Supuestos!C31)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P32",
+    "P02",
+    "P33"
+   ]
+  },
+  {
+   "id": "c0057",
+   "es": "Tipo nominal anual; un préstamo de menor importe y sin garantía inmobiliaria (el vehículo es la garantía) suele salir algo por encima del de un local: pide oferta a dos entidades y a una línea ICO/ENISA de emprendedores antes de fijarlo",
+   "donde": [
+    "MBP · 0. Supuestos!C32"
+   ],
+   "fila": "Tipo de interés nominal anual",
+   "valor_us": 0.1,
+   "propuesta_en": "Nominal annual rate (not APR). The example (10%) is the kit's assumption for an SBA 7(a) loan. A smaller loan with a used van and kitchen equipment as collateral often prices above a storefront loan: ask two lenders for quotes, and ask about SBA-guaranteed loans, before you set it.",
+   "propuesta_de": "GCAT-plan c0057 (CATP 0. Supuestos!C32)",
+   "pistas": [
+    "P06",
+    "P32",
+    "P02",
+    "P09"
+   ]
+  },
+  {
+   "id": "c0059",
+   "es": "Años totales, carencia incluida. Un vehículo se amortiza más rápido que unas obras de local, así que el plazo también es más corto",
+   "donde": [
+    "MBP · 0. Supuestos!C33"
+   ],
+   "fila": "Plazo del préstamo (años)",
+   "valor_us": 7,
+   "propuesta_en": "Total years, interest-only period included. A van and kitchen equipment lose value faster than a storefront build-out, so the term is shorter. SBA 7(a) allows up to 10 years for equipment and working capital.",
+   "propuesta_de": "GCAT-plan c0059 (CATP 0. Supuestos!C33)",
+   "pistas": [
+    "P06",
+    "P34",
+    "P09",
+    "P35"
+   ]
+  },
+  {
+   "id": "c0079",
+   "es": "Vehículo, adaptación y rotulación, instalación de gas, depósito de aguas y proyecto técnico: todo lo que va montado en el vehículo se amortiza con él. Ocho años son el 12,5 % anual, por debajo del coeficiente lineal máximo del 16 % que la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades fija para los elementos de transporte. Confírmalo con tu asesor",
+   "donde": [
+    "MBP · 0. Supuestos!C44"
+   ],
+   "fila": "Vida útil de obra e instalaciones (años)",
+   "valor_us": 7,
+   "propuesta_en": "The refrigerated van, its upfit (racks, shelving, wrap) and its refrigeration unit: everything mounted on the van is depreciated with it. Straight-line book depreciation; tax methods such as MACRS or Section 179 are separate, so confirm with your accountant.",
+   "propuesta_de": "GCAT-plan c0079 (CATP 0. Supuestos!C44)",
+   "pistas": [
+    "P06",
+    "P36",
+    "P12",
+    "P09",
+    "P26",
+    "P37"
+   ]
+  },
+  {
+   "id": "c0081",
+   "es": "Equipamiento de cocina, generador, TPV, menaje y toldo. El uso es más intenso que en una cocina fija por el montaje y el desmontaje diarios, pero el coeficiente lineal máximo de la tabla del art. 12.1 de la Ley del Impuesto sobre Sociedades es del 12 % para maquinaria y del 10 % para mobiliario: por debajo de 9-10 años el exceso no sería deducible. Confírmalo con tu asesor",
+   "donde": [
+    "MBP · 0. Supuestos!C45"
+   ],
+   "fila": "Vida útil de maquinaria y mobiliario (años)",
+   "valor_us": 5,
+   "propuesta_en": "Kitchen and refrigeration equipment, portable cooking and power, POS, smallwares and serving ware. Loading and unloading at every event wears them faster than a fixed kitchen, so a short life is prudent. Straight-line book depreciation; MACRS or Section 179 are tax treatments: confirm with your accountant.",
+   "propuesta_de": "GCAT-plan c0081 (CATP 0. Supuestos!C45)",
+   "pistas": [
+    "P06",
+    "P36",
+    "P38",
+    "P26",
+    "P14",
+    "P39"
+   ]
+  },
+  {
+   "id": "c0087",
+   "es": "DATO INFORMATIVO: no entra en ningún cálculo de este libro. Son las cuatro mesas altas plegables de cuatro posiciones que presupuesta la partida «Toldo, mobiliario exterior plegable» de la hoja de inversión. Un food truck no tiene aforo legal ni plazas sentadas, así que aquí no se calcula ninguna rotación por plaza: el techo real de este negocio son los clientes por servicio, que la tabla de referencias de este mismo libro sitúa en 40-80, y quien manda sobre el volumen es la celda «Clientes/día» de arriba",
+   "donde": [
+    "MBP · 0. Supuestos!C51"
+   ],
+   "fila": "Plazas de pie y mesas altas junto al vehículo",
+   "valor_us": 260,
+   "propuesta_en": "INFORMATION ONLY: it does not enter any calculation in this workbook. It is your estimate of the most events a year your kitchen hours and crew can handle. Compare it with the events per year you plan and with the optimistic scenario: if the plan goes above it, you need more commissary hours or more staff. Volume itself is driven by the \"Events per year\" cell above.",
+   "propuesta_de": "GCAT-plan c0087 (CATP 0. Supuestos!C51)",
+   "pistas": [
+    "P01",
+    "P03",
+    "P04",
+    "P09",
+    "P40"
+   ]
+  },
+  {
+   "id": "c0089",
+   "es": "Un food truck que arranca no factura desde el primer día lo mismo que a los seis meses: hay que probar ubicaciones, entrar en los mercados y que la gente te conozca. Con 100 % se elimina la rampa y el año 1 se proyecta a velocidad de crucero",
+   "donde": [
+    "MBP · 0. Supuestos!C52"
+   ],
+   "fila": "Actividad del mes 1 sobre la de crucero",
+   "valor_us": 0.45,
+   "propuesta_en": "A new caterer does not book in month one what it books in month eight: weddings are reserved months ahead and corporate clients want to try you first. Events per year above is the year-1 AVERAGE: the ramp only spreads year 1's sales across the months (slower start, stronger finish) and keeps the annual total. At 100% there is no ramp.",
+   "propuesta_de": "GCAT-plan c0089 (CATP 0. Supuestos!C52)",
+   "pistas": [
+    "P09",
+    "P41",
+    "P42"
+   ]
+  },
+  {
+   "id": "c0093",
+   "es": "La adaptación del vehículo dura 4-8 semanas según la fase 2 de tu propio checklist: son dos meses de aparcamiento y base que se pagan antes de facturar el primer euro, así que forman parte de la inversión y no de la cuenta de resultados",
+   "donde": [
+    "MBP · 0. Supuestos!C54"
+   ],
+   "fila": "Meses de alquiler del aparcamiento ANTES de abrir",
+   "valor_us": 2,
+   "propuesta_en": "Getting the commissary agreement, the catering permit and the van ready takes weeks (see Phase 2 of your checklist), so you pay commissary rent before your first event. It belongs in startup costs, not in the P&L.",
+   "propuesta_de": "GCAT-plan c0093 (CATP 0. Supuestos!C54)",
+   "pistas": [
+    "P07",
+    "P23",
+    "P02",
+    "P09",
+    "P25",
+    "P43"
+   ]
+  },
+  {
+   "id": "c0095",
+   "es": "Se conserva el mismo 8 % que la versión anterior tenía escrito a mano en su fila de imprevistos, ahora calculado por fórmula sobre las partidas de compra y adaptación del vehículo: si cambias el precio del vehículo, los imprevistos se recalculan solos. La nota de esa fila, en la hoja de Inversión, enumera exactamente qué partidas entran",
+   "donde": [
+    "MBP · 0. Supuestos!C55"
+   ],
+   "fila": "Imprevistos sobre las partidas de compra y adaptación del vehículo (%)",
+   "valor_us": 0.1,
+   "propuesta_en": "Calculated by formula on the van, upfit and fit-out lines: if you change the van price, the contingency recalculates on its own. The note on that row of the \"Startup Costs\" tab lists exactly which lines are included.",
+   "propuesta_de": "GCAT-plan c0095 (CATP 0. Supuestos!C55)",
+   "pistas": [
+    "P02",
+    "P09",
+    "P44"
+   ]
+  },
+  {
+   "id": "c0098",
+   "es": "En la ventanilla se cobra al contado (0 días). Súbelo si trabajas con organizadores de eventos o con clientes de catering que pagan a 15 o 30 días, o con plataformas que liquidan más tarde",
+   "donde": [
+    "MBP · 0. Supuestos!C58"
+   ],
+   "fila": "Días medios de cobro",
+   "valor_us": 1,
+   "propuesta_en": "Average days between the event and the money in your bank. Weddings are usually prepaid and many companies pay at 30 days, so the example sits in between. Raise it if clients or marketplaces pay later. The workbook does not model deposits (25-50% at signing is common: Kit estimate): they improve your real cash flow.",
+   "propuesta_de": "GCAT-plan c0098 (CATP 0. Supuestos!C58)",
+   "pistas": [
+    "P01",
+    "P04",
+    "P41",
+    "P45",
+    "P46"
+   ]
+  },
+  {
+   "id": "c0106",
+   "es": "Bebida ALCOHÓLICA sobre el total de bebida: casi nula — la línea de bebida de este plan es refrescos, agua y zumos, como describe la fila «Food cost bebidas» de la tabla de referencias («refrescos y agua embotellada»); sólo alguna cerveza envasada ocasional en festivales de música. El resto va al IVA reducido de hostelería. Este mismo peso reparte el IVA que SOPORTAS al comprar la bebida (la parte alcohólica al tipo general y el resto al reducido): si tu proveedor te factura al 21 % los refrescos y zumos con azúcares o edulcorantes añadidos —que es lo que manda el art. 91.Uno.1.1.º de la Ley 37/1992—, soportarás algo más de IVA del que estima el libro; lo recuperas igual con el modelo 303",
+   "donde": [
+    "MBP · 0. Supuestos!C62"
+   ],
+   "fila": "Bebida ALCOHÓLICA sobre el total de bebida",
+   "valor_us": 0,
+   "propuesta_en": "ZERO by default: the client buys the alcohol and certified bartenders serve it, so you sell none. Selling alcohol requires a liquor license (and, in some states, an event-by-event caterer's permit): check your state before adding it. Keep liquor liability coverage whenever bartenders pour at your events.",
+   "propuesta_de": "GCAT-plan c0106 (CATP 0. Supuestos!C62)",
+   "pistas": [
+    "P06",
+    "P47",
+    "P02",
+    "P03",
+    "P48",
+    "P41",
+    "P49"
+   ]
+  },
+  {
+   "id": "c0144",
+   "es": "Furgoneta adaptada o remolque. Segunda mano desde 15K",
+   "donde": [
+    "MBP · Inversión Inicial!D7"
+   ],
+   "fila": "Vehículo food truck (nuevo o segunda mano)",
+   "valor_us": 9000,
+   "propuesta_en": "A used refrigerated cargo van. Prices vary widely with size, mileage and condition, so get several quotes. A Transit-size van does not need a CDL (that starts at 26,001 lb GVWR).",
+   "propuesta_de": "GCAT-plan c0144 (CATP Inversión Inicial!D7)",
+   "pistas": [
+    "P09",
+    "P50"
+   ]
+  },
+  {
+   "id": "c0147",
+   "es": "Ventanilla servicio, mostrador, rotulación integral",
+   "donde": [
+    "MBP · Inversión Inicial!D8"
+   ],
+   "fila": "Adaptación y rotulación vehículo",
+   "valor_us": 12000,
+   "propuesta_en": "Racks, shelving, tie-downs for hot boxes and carriers, and the vehicle wrap.",
+   "propuesta_de": "GCAT-plan c0147 (CATP Inversión Inicial!D8)",
+   "pistas": [
+    "P41",
+    "P51"
+   ]
+  },
+  {
+   "id": "c0149",
+   "es": "Plancha, freidora, campaña, nevera, fregadero",
+   "donde": [
+    "MBP · Inversión Inicial!D9"
+   ],
+   "fila": "Equipamiento cocina móvil",
+   "valor_us": 2500,
+   "propuesta_en": "Ovens, range, reach-in refrigeration, prep tables and sinks that you own. If your commissary supplies its own equipment, lower this line.",
+   "propuesta_de": "GCAT-plan c0149 (CATP Inversión Inicial!D9)",
+   "pistas": [
+    "P52"
+   ]
+  },
+  {
+   "id": "c0151",
+   "es": "Generador insonorizado o kit conexión a red",
+   "donde": [
+    "MBP · Inversión Inicial!D10"
+   ],
+   "fila": "Generador eléctrico o conexión",
+   "valor_us": 2000,
+   "propuesta_en": "Induction units and burners for stations, plus a quiet generator or battery power for venues without hookups.",
+   "propuesta_de": "GCAT-plan c0151 (CATP Inversión Inicial!D10)",
+   "pistas": [
+    "P26",
+    "P53"
+   ]
+  },
+  {
+   "id": "c0153",
+   "es": "Certificación gas obligatoria, revisión anual",
+   "donde": [
+    "MBP · Inversión Inicial!D11"
+   ],
+   "fila": "Instalación gas (si aplica)",
+   "valor_us": 1800,
+   "propuesta_en": "Refrigeration unit for the cargo area, installed, to hold cold food at 41°F or below in transit.",
+   "propuesta_de": "GCAT-plan c0153 (CATP Inversión Inicial!D11)",
+   "pistas": [
+    "P26",
+    "P54"
+   ]
+  },
+  {
+   "id": "c0155",
+   "es": "Depósito de agua limpia y de aguas residuales del vehículo: es el equipo que exige el proyecto técnico sanitario para servir comida fuera de un local con acometida",
+   "donde": [
+    "MBP · Inversión Inicial!D12"
+   ],
+   "fila": "Depósito de agua + aguas residuales",
+   "valor_us": 1000,
+   "propuesta_en": "Shelving, lockers and labeled bins for your dry and cold storage inside the commissary. Ask the kitchen what it already provides before you budget this line.",
+   "propuesta_de": "GCAT-plan c0155 (CATP Inversión Inicial!D12)",
+   "pistas": [
+    "P09",
+    "P14",
+    "P55"
+   ]
+  },
+  {
+   "id": "c0160",
+   "es": "Varía mucho por municipio y comunidad autónoma: pide el importe en el tuyo antes de cerrar el presupuesto",
+   "donde": [
+    "MBP · Inversión Inicial!D14"
+   ],
+   "fila": "Licencias y permisos (promedio)",
+   "valor_us": 1000,
+   "propuesta_en": "Varies a lot by city and county: get the amounts for yours before you close the budget. Expect the catering or health permit, the business license and the van inspection; temporary food event permits are charged per event on top.",
+   "propuesta_de": "GCAT-plan c0160 (CATP Inversión Inicial!D14)",
+   "pistas": [
+    "P06",
+    "P02",
+    "P56"
+   ]
+  },
+  {
+   "id": "c0162",
+   "es": "Obligatorio para la actividad alimentaria móvil: planos de instalación, flujos y depósitos de agua",
+   "donde": [
+    "MBP · Inversión Inicial!D15"
+   ],
+   "fila": "Proyecto técnico sanitario",
+   "valor_us": 500,
+   "propuesta_en": "Many counties review a caterer's written operating procedures before issuing the permit and charge a plan review fee (one California county does: eldoradocounty.ca.gov). If you lease your own kitchen, expect a full plan review with layout drawings, which costs more.",
+   "propuesta_de": "GCAT-plan c0162 (CATP Inversión Inicial!D15)",
+   "pistas": [
+    "P57"
+   ]
+  },
+  {
+   "id": "c0164",
+   "es": "TPV tablet + datáfono 4G para cobros",
+   "donde": [
+    "MBP · Inversión Inicial!D16"
+   ],
+   "fila": "TPV móvil + datáfono",
+   "valor_us": 800,
+   "propuesta_en": "Catering software for quotes, contracts and invoices, plus a card reader to take deposits and final balances.",
+   "propuesta_de": "GCAT-plan c0164 (CATP Inversión Inicial!D16)",
+   "pistas": [
+    "P38",
+    "P58"
+   ]
+  },
+  {
+   "id": "c0166",
+   "es": "Menaje, utensilios y cubertería desechable: es el equipamiento que se amortiza. La primera compra de envases entra aquí sólo como arranque; el packaging de cada día NO se amortiza, va como coste variable en la línea «Consumibles y envases» de la cuenta de resultados, al porcentaje sobre ventas de la hoja de Supuestos",
+   "donde": [
+    "MBP · Inversión Inicial!D17"
+   ],
+   "fila": "Menaje, utensilios, packaging eco",
+   "valor_us": 1200,
+   "propuesta_en": "Hotel pans, sheet pans, utensils and cooking tools: the equipment that gets depreciated. Daily disposables are NOT depreciated: they go in the disposables line of the P&L, at the % of sales set in the \"0. Assumptions\" tab.",
+   "propuesta_de": "GCAT-plan c0166 (CATP Inversión Inicial!D17)",
+   "pistas": [
+    "P03",
+    "P20",
+    "P59"
+   ]
+  },
+  {
+   "id": "c0168",
+   "es": "Género para las primeras dos semanas de servicio. El libro calcula el IVA que adelantas por esta fila al tipo general, aunque los alimentos se compren al 10 % (o al 4 %): son unos euros de más en la caja del arranque, que se recuperan igual con el modelo 303",
+   "donde": [
+    "MBP · Inversión Inicial!D18"
+   ],
+   "fila": "Stock inicial de producto",
+   "valor_us": 1500,
+   "propuesta_en": "Food and supplies for your first events. With 0% recoverable input tax (the US default), any sales tax you pay on this purchase is treated as a cost.",
+   "propuesta_de": "GCAT-plan c0168 (CATP Inversión Inicial!D18)",
+   "pistas": [
+    "P06",
+    "P07",
+    "P47",
+    "P60"
+   ]
+  },
+  {
+   "id": "c0170",
+   "es": "RRSS, web, flyers, ficha Google, evento inaugural",
+   "donde": [
+    "MBP · Inversión Inicial!D19"
+   ],
+   "fila": "Marketing lanzamiento",
+   "valor_us": 5000,
+   "propuesta_en": "Website, event photography, listings on The Knot, WeddingWire and ezCater, Google Business Profile and a launch tasting.",
+   "propuesta_de": "GCAT-plan c0170 (CATP Inversión Inicial!D19)",
+   "pistas": [
+    "P61",
+    "P45",
+    "P62"
+   ]
+  },
+  {
+   "id": "c0172",
+   "es": "Mesas altas plegables, sombrilla, banderolas",
+   "donde": [
+    "MBP · Inversión Inicial!D20"
+   ],
+   "fila": "Toldo, mobiliario exterior plegable",
+   "valor_us": 3500,
+   "propuesta_en": "Chafing dishes, insulated food carriers, platters, serving utensils, linens and signage for buffets and stations.",
+   "propuesta_de": "GCAT-plan c0172 (CATP Inversión Inicial!D20)",
+   "pistas": [
+    "P63"
+   ]
+  },
+  {
+   "id": "c0180",
+   "es": "Es lo que se compra: obra, equipamiento, lanzamiento y gastos de constitución. El colchón de caja no es inversión, es circulante",
+   "donde": [
+    "MBP · Inversión Inicial!D27"
+   ],
+   "fila": "CAPEX (inversión sin el fondo de maniobra)",
+   "propuesta_en": "What you buy: van, upfit, equipment, launch and formation costs. The cash cushion is not an investment: it is working capital",
+   "propuesta_de": "GR c0180 (CATP Inversión Inicial!D27)",
+   "pistas": [
+    "P64"
+   ]
+  },
+  {
+   "id": "c0205",
+   "es": "Producto principal servido en ubicaciones fijas y mercados, más el catering y las celebraciones privadas (la línea «Catering/eventos privados» de la v1.1, que en el fichero original NO llevaba coste de mercancía propio: aquí SÍ lo lleva, con el mismo tipo que la comida de calle)",
+   "donde": [
+    "MBP · PyG 3 Años!F10"
+   ],
+   "fila": "Ventas de comida (calle, mercados y catering privado)",
+   "propuesta_en": "Food sold at your events: corporate drop-offs and buffets, weddings, parties and chef-attended stations. All of it carries cost of goods sold at the same food rate.",
+   "propuesta_de": "GCAT-plan c0205 (CATP PyG 3 Años!F10)",
+   "pistas": [
+    "P02",
+    "P03",
+    "P41",
+    "P14",
+    "P45",
+    "P65"
+   ]
+  },
+  {
+   "id": "c0207",
+   "es": "Bebidas embotelladas de acompañamiento del menú: el food truck no sirve bebida de barra",
+   "donde": [
+    "MBP · PyG 3 Años!F11"
+   ],
+   "fila": "Ventas de bebida (refrescos, agua y zumos embotellados)",
+   "propuesta_en": "Non-alcoholic drinks sold with the menu. The client buys any alcohol, so there is no bar revenue.",
+   "propuesta_de": "GCAT-plan c0207 (CATP PyG 3 Años!F11)",
+   "pistas": [
+    "P09",
+    "P14",
+    "P66"
+   ]
+  },
+  {
+   "id": "c0213",
+   "es": "Sobre las ventas DEL CANAL. Con 0 % de delivery en Supuestos, esta línea vale cero",
+   "donde": [
+    "MBP · PyG 3 Años!F16"
+   ],
+   "fila": "Comisiones de delivery",
+   "propuesta_en": "Applied to the sales of THAT CHANNEL. With 0% corporate catering marketplace sales in Assumptions, this line is zero",
+   "propuesta_de": "GR c0213 (CATP PyG 3 Años!F16)",
+   "pistas": [
+    "P20",
+    "P67"
+   ]
+  },
+  {
+   "id": "c0221",
+   "es": "El importe mensual está en la hoja de Supuestos; aquí se multiplica por doce. Es la plaza de aparcamiento y la base del vehículo (agua, limpieza y vaciado de residuales), no la renta de un local. Los meses previos a la apertura están en la hoja de Inversión y NO se cuentan dos veces",
+   "donde": [
+    "MBP · PyG 3 Años!F22"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "propuesta_en": "The monthly amount is typed in \"0. Assumptions\"; here it is multiplied by twelve. It covers your commissary hours, storage and the van's parking spot, not storefront rent. The months before opening are on the \"Startup Costs\" tab and are NOT counted twice.",
+   "propuesta_de": "GCAT-plan c0221 (CATP PyG 3 Años!F22)",
+   "pistas": [
+    "P23",
+    "P09",
+    "P25",
+    "P68"
+   ]
+  },
+  {
+   "id": "c0225",
+   "es": "Combustible del generador eléctrico, agua limpia y vaciado de residuales en la base del vehículo. Luz y gas van al 21 % y la factura del agua al 10 %: el libro aplica a toda la partida el tipo de la columna de al lado (21 %), así que si el agua pesa mucho en tu caso, sepárala en su propia línea",
+   "donde": [
+    "MBP · PyG 3 Años!F24"
+   ],
+   "fila": "Suministros (luz, agua, gas)",
+   "propuesta_en": "Generator and portable-burner fuel, plus water and utility costs that the commissary fee does not cover.",
+   "propuesta_de": "GCAT-plan c0225 (CATP PyG 3 Años!F24)",
+   "pistas": [
+    "P23",
+    "P09",
+    "P25",
+    "P26",
+    "P69"
+   ]
+  },
+  {
+   "id": "c0235",
+   "es": "Gestor autorizado. El propio checklist ya avisa de que la freidora genera aceite usado que hay que gestionar, pero nunca contrataba el servicio. Pide presupuesto en tu zona",
+   "donde": [
+    "MBP · PyG 3 Años!F32"
+   ],
+   "fila": "Gestión de residuos (orgánico, cartón y aceite usado)",
+   "valor_us": 900,
+   "propuesta_en": "Licensed hauler. Ask the commissary first: many include trash and grease pickup in the fee. If yours does not, get a quote in your area.",
+   "propuesta_de": "GCAT-plan c0235 (CATP PyG 3 Años!F32)",
+   "pistas": [
+    "P06",
+    "P70",
+    "P71"
+   ]
+  },
+  {
+   "id": "c0237",
+   "es": "Empresa inscrita en el ROESB; forma parte del plan APPCC móvil que el checklist ya exige en su fase de personal",
+   "donde": [
+    "MBP · PyG 3 Años!F33"
+   ],
+   "fila": "Desinsectación, desratización y desinfección (DDD)",
+   "valor_us": 1200,
+   "propuesta_en": "A licensed pest control company, usually arranged through the commissary. It is part of the HACCP-based food safety plan your checklist asks for in the staff phase.",
+   "propuesta_de": "GCAT-plan c0237 (CATP PyG 3 Años!F33)",
+   "pistas": [
+    "P06",
+    "P72"
+   ]
+  },
+  {
+   "id": "c0239",
+   "es": "El plan de prevención es obligatorio; el proveedor externo, no (art. 30.5 de la Ley 31/1995). A quién se marca como responsable se corrige en el propio checklist",
+   "donde": [
+    "MBP · PyG 3 Años!F34"
+   ],
+   "fila": "Prevención de riesgos laborales y vigilancia de la salud",
+   "valor_us": 400,
+   "propuesta_en": "Food handler cards and a Certified Food Protection Manager course for you and your team, alcohol server certification (TIPS or TABC) for the bartenders you staff, plus OSHA basics. The required cards vary by state.",
+   "propuesta_de": "GCAT-plan c0239 (CATP PyG 3 Años!F34)",
+   "pistas": [
+    "P06",
+    "P73"
+   ]
+  },
+  {
+   "id": "c0241",
+   "es": "Sólo se paga si el food truck pone música propia en ferias y festivales (distinto de la licencia del organizador, que cubre el recinto y no cada puesto). Presupuesto mínimo por si se usa",
+   "donde": [
+    "MBP · PyG 3 Años!F35"
+   ],
+   "fila": "Derechos de autor por música ambiental (SGAE/AGEDI-AIE)",
+   "valor_us": 1000,
+   "propuesta_en": "Food cost and labor for the tastings you offer wedding and corporate prospects. Many caterers charge a fee and credit it toward the booking: if you do, lower this line.",
+   "propuesta_de": "GCAT-plan c0241 (CATP PyG 3 Años!F35)",
+   "pistas": [
+    "P48",
+    "P09",
+    "P41",
+    "P74"
+   ]
+  },
+  {
+   "id": "c0265",
+   "es": "Suelo del propio libro: la fila «Margen bruto objetivo» (> 62 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones. Más bajo que el de un restaurante por el peso del packaging y del combustible",
+   "donde": [
+    "MBP · PyG 3 Años!F51"
+   ],
+   "fila": "Margen bruto / Ventas",
+   "valor_us": 0.65,
+   "propuesta_en": "Floor set by this workbook: kit benchmark (editable estimate). The workbook's gross margin also subtracts card fees, marketplace commissions and van fuel, so the floor sits below the 65-70% that caterer pricing guides quote on food cost alone.",
+   "propuesta_de": "GCAT-plan c0265 (CATP PyG 3 Años!F51)",
+   "pistas": [
+    "P03",
+    "P75"
+   ]
+  },
+  {
+   "id": "c0268",
+   "es": "Techo mezclado de los food cost que publica la tabla de referencias de este libro (comida 28-33 %, bebida 22-28 %). La ratio de al lado mide sólo la MERCANCÍA: los consumibles y los envases tienen su propia línea en la cuenta de resultados y no entran aquí, así que el caso base se queda holgadamente por debajo del techo",
+   "donde": [
+    "MBP · PyG 3 Años!F53"
+   ],
+   "fila": "Coste de mercancía / Ventas",
+   "valor_us": 0.26,
+   "propuesta_en": "Ceiling for food + beverage cost of goods (disposables have their own line): kit benchmark (editable estimate), based on the 28-35% food cost range for caterers in the benchmarks table.",
+   "propuesta_de": "GCAT-plan c0268 (CATP PyG 3 Años!F53)",
+   "pistas": [
+    "P14",
+    "P76"
+   ]
+  },
+  {
+   "id": "c0270",
+   "es": "Techo del propio libro: la fila «Coste personal sobre ventas» (25-32 %) de la tabla DATOS DE REFERENCIA DEL SECTOR, en la hoja de Instrucciones («menos personal que un restaurante: 2-3 personas»)",
+   "donde": [
+    "MBP · PyG 3 Años!F54"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "valor_us": 0.4,
+   "propuesta_en": "Ceiling: kit benchmark (editable estimate), above the 25-35% labor range that pricing guides report because it includes the owner-chef's own pay.",
+   "propuesta_de": "GCAT-plan c0270 (CATP PyG 3 Años!F54)",
+   "pistas": [
+    "P03",
+    "P77"
+   ]
+  },
+  {
+   "id": "c0272",
+   "es": "No hay referencia de local en este libro (el food truck no paga renta de local): 5 % es un techo prudente para el aparcamiento/base del vehículo, muy por debajo del 8-12 % de un negocio con local fijo (mismo orden que el resto de la familia, adaptado a este molde)",
+   "donde": [
+    "MBP · PyG 3 Años!F55"
+   ],
+   "fila": "Aparcamiento / Ventas",
+   "valor_us": 0.06,
+   "propuesta_en": "There is no storefront rent in this workbook: 8% is a prudent ceiling for the commissary kitchen and van parking, a kit benchmark (editable estimate). A business with its own fixed kitchen carries a much higher occupancy cost.",
+   "propuesta_de": "GCAT-plan c0272 (CATP PyG 3 Años!F55)",
+   "pistas": [
+    "P23",
+    "P09",
+    "P25",
+    "P78"
+   ]
+  },
+  {
+   "id": "c0274",
+   "es": "Derivado del suelo de EBITDA que declara este producto para el año 2 —la fila «EBITDA objetivo (año 2)», 20-30 %, de la tabla de referencias—: descontando amortización, intereses e Impuesto de Sociedades, un EBITDA en la franja baja del rango deja un resultado neto positivo ya en el año 1, aunque ajustado por ser el primer ejercicio",
+   "donde": [
+    "MBP · PyG 3 Años!F56"
+   ],
+   "fila": "Resultado neto / Ventas",
+   "valor_us": 0.05,
+   "propuesta_en": "Floor of 5%: a kit benchmark (editable estimate), a little below the 7-8% average net margin that caterers report (itsacheckmate.com). A new business with a loan to repay starts lower.",
+   "propuesta_de": "GCAT-plan c0274 (CATP PyG 3 Años!F56)",
+   "pistas": [
+    "P06",
+    "P36",
+    "P79",
+    "P03",
+    "P80"
+   ]
+  },
+  {
+   "id": "c0324",
+   "es": "La MISMA plantilla en los tres escenarios. Si en el pesimista se dispara, el ajuste hay que hacerlo en la hoja de Personal, no aquí",
+   "donde": [
+    "MBP · Escenarios!E23"
+   ],
+   "fila": "Coste de personal / Ventas",
+   "propuesta_en": "The SAME staffing in all three scenarios. In the pessimistic case your real event-staff cost falls with the number of events (you pay hours per event), so the real result would be somewhat better than shown. If labor cost still blows up, adjust it in the \"Staffing\" tab, not here",
+   "propuesta_de": "GCAT-plan c0324 (CATP Escenarios!E23)",
+   "pistas": [
+    "P81"
+   ]
+  },
+  {
+   "id": "c0344",
+   "es": "Elabora el producto, conduce el vehículo entre ubicaciones y lleva la gestión, compras y RRSS. Cubre el turno fuerte de los 250 días de servicio al año",
+   "donde": [
+    "MBP · Personal!J5"
+   ],
+   "fila": "Propietario/a — chef, gestión y conducción",
+   "valor_us": {
+    "B": 1,
+    "C": 1.0,
+    "D": 3250
+   },
+   "propuesta_en": "Sells, runs tastings, plans menus and leads the kitchen on event days. Covers the main shift at every event.",
+   "propuesta_de": "GCAT-plan c0344 (CATP Personal!J5)",
+   "pistas": [
+    "P61",
+    "P09",
+    "P82"
+   ]
+  },
+  {
+   "id": "c0346",
+   "es": "Prep, montaje, atención al cliente y desmontaje. A tiempo parcial: un food truck de dos servicios diarios como máximo no necesita una segunda persona a jornada completa. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "MBP · Personal!J6"
+   ],
+   "fila": "Ayudante de cocina y servicio",
+   "valor_us": {
+    "B": 1,
+    "C": 0.25,
+    "D": 867
+   },
+   "propuesta_en": "Leads prep and production in the commissary and runs the line at larger events. Paid at or above the pay floor in proportion to FTE.",
+   "propuesta_de": "GCAT-plan c0346 (CATP Personal!J6)",
+   "pistas": [
+    "P06",
+    "P83",
+    "P01",
+    "P04",
+    "P09",
+    "P84"
+   ]
+  },
+  {
+   "id": "c0348",
+   "es": "Sólo para los picos de afluencia que el propio fichero describe («Festivales = facturación x3-5 en un día»): unas pocas jornadas al mes, no un puesto estable. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "MBP · Personal!J7"
+   ],
+   "fila": "Refuerzo de festivales y eventos grandes",
+   "valor_us": {
+    "B": 5,
+    "C": 0.1,
+    "D": 1560
+   },
+   "propuesta_en": "Servers, bartenders and attendants hired per event and paid hourly as W-2 employees. Their FTE is a fraction because they only work event hours. Treating them as 1099 contractors is a misclassification risk (FLSA; California AB5). Paid at or above the pay floor in proportion to FTE.",
+   "propuesta_de": "GCAT-plan c0348 (CATP Personal!J7)",
+   "pistas": [
+    "P06",
+    "P83",
+    "P03",
+    "P41",
+    "P85"
+   ]
+  },
+  {
+   "id": "c0350",
+   "es": "Cobertura de los 30 días de vacaciones (art. 38 ET) del propietario y del ayudante, y del descanso semanal. Por encima del SMI en proporción a su jornada",
+   "donde": [
+    "MBP · Personal!J8"
+   ],
+   "fila": "Suplencias de vacaciones y descansos",
+   "valor_us": {
+    "B": 2,
+    "C": 0.05,
+    "D": 260
+   },
+   "propuesta_en": "Preps in the commissary, loads the van and drives to venues. Paid at or above the pay floor in proportion to FTE.",
+   "propuesta_de": "GCAT-plan c0350 (CATP Personal!J8)",
+   "pistas": [
+    "P06",
+    "P83",
+    "P86"
+   ]
+  },
+  {
+   "id": "c0379",
+   "es": "1. «0. Supuestos» es la hoja de mando: clientes, ticket sin IVA, días de apertura, mezcla de comida y bebida, coste de mercancía, alquiler, financiación e impuestos.",
+   "donde": [
+    "MBP · Instrucciones!A5"
+   ],
+   "cita_hojas": [
+    {
+     "es": "0. Supuestos",
+     "en": "0. Assumptions"
+    }
+   ],
+   "propuesta_en": "1. \"0. Assumptions\" is the control sheet: events per year, price per guest excl. sales tax, guests per event, food and beverage mix, cost of goods sold, commissary kitchen and van parking, financing and taxes.",
+   "propuesta_de": "GCAT-plan c0379 (CATP Instrucciones!A5)",
+   "pistas": [
+    "P06",
+    "P08",
+    "P01",
+    "P03",
+    "P04",
+    "P14",
+    "P87"
+   ]
+  },
+  {
+   "id": "c0382",
+   "es": "4. Todas las cifras van SIN IVA. Para pasar un PVP a precio sin IVA, divide por el tipo que le corresponda: entre 1,10 en sala (comida y bebida, alcohol incluido: art. 91.Uno.2.2.º de la Ley 37/1992 del IVA) y, cuando se venden para llevar, los alimentos —bollería y pastelería incluidas—, que son productos alimenticios al tipo reducido por el art. 91.Uno.1.1.º; y entre 1,21 el tipo general, que en hostelería sólo alcanza a lo que sale del local como entrega de bienes excluida del reducido: el alcohol y los refrescos o zumos con azúcares añadidos para llevar o a domicilio (la comida para llevar sigue al 10 %); el libro lo aplica al alcohol del canal de delivery. El tipo de cada línea de venta está en la columna «Tipo de IVA de la línea» del P&L y de ahí salen los cobros, el IVA repercutido y el PVP equivalente. El IVA de la inversión se adelanta y se recupera con el modelo 303.",
+   "donde": [
+    "MBP · Instrucciones!A8"
+   ],
+   "propuesta_en": "4. All figures are EXCL. SALES TAX. To turn a quoted price into a price excl. sales tax, divide it by 1 + your sales tax rate (with an 8% rate, divide by 1.08); if an item is taxed at a different rate in your state, use that rate. In many states the whole catering invoice is taxable, including staff and rentals; check yours. The rate of each sales line is in the \"Sales tax rate on the line (%)\" column of the P&L, and from it come the receipts, the sales tax collected and the equivalent price per guest incl. sales tax. With the default 0% recoverable input tax, the sales tax you pay on purchases and startup costs is treated as a cost; in the UK, enter 20% if you are VAT-registered.",
+   "propuesta_de": "GR c0382 (CATP Instrucciones!A8)",
+   "pistas": [
+    "P06",
+    "P08",
+    "P47",
+    "P01",
+    "P03",
+    "P12",
+    "P20",
+    "P14"
+   ]
+  },
+  {
+   "id": "c0419",
+   "es": "Aparcamiento y base del vehículo",
+   "donde": [
+    "MBP · Instrucciones!A39"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Commissary kitchen and van parking",
+   "propuesta_de": "GCAT-plan c0419 (CATP Instrucciones!A39)",
+   "pistas": [
+    "P88",
+    "P23",
+    "P09",
+    "P25",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0421",
+   "es": "400 €/mes (4.800 € al año), más dos meses de fianza y dos meses antes de abrir",
+   "donde": [
+    "MBP · Instrucciones!C39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "propuesta_en": "A monthly commissary cost (hours + storage) and van parking, plus a deposit and rent for the months before opening",
+   "propuesta_de": "GCAT-plan c0421 (CATP Instrucciones!C39)",
+   "pistas": [
+    "P88",
+    "P06",
+    "P07",
+    "P02",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0422",
+   "es": "Un food truck necesita un sitio en el que pernoctar, cargar agua y vaciar residuos. El plan anterior no lo pagaba en ninguna línea, así que el negocio parecía no tener ningún coste de suelo",
+   "donde": [
+    "MBP · Instrucciones!D39"
+   ],
+   "fila": "Aparcamiento y base del vehículo",
+   "por_celda": true,
+   "propuesta_en": "Catering has to be cooked in a permitted kitchen, not at home, so a commissary or shared kitchen is a real recurring cost. Leaving it out makes the business look like it has no occupancy cost.",
+   "propuesta_de": "GCAT-plan c0422 (CATP Instrucciones!D39)",
+   "pistas": [
+    "P88",
+    "P02",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0429",
+   "es": "dos vidas útiles: el vehículo, su adaptación y los imprevistos de la puesta en marcha a 8 años, y el equipamiento y el mobiliario a 10. La cuota del año la calcula la hoja de Inversión",
+   "donde": [
+    "MBP · Instrucciones!C41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "propuesta_en": "Two useful lives: the van with its upfit, and the equipment and serving ware. The Startup Costs tab calculates the annual charge.",
+   "propuesta_de": "GCAT-plan c0429 (CATP Instrucciones!C41)",
+   "pistas": [
+    "P88",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0430",
+   "es": "El vehículo se amortiza más rápido que el equipamiento porque son cosas distintas para Hacienda. Y el fondo de maniobra, el stock y el marketing no se amortizan: no son inmovilizado",
+   "donde": [
+    "MBP · Instrucciones!D41"
+   ],
+   "fila": "Amortización",
+   "por_celda": true,
+   "propuesta_en": "The van and the equipment wear out at different speeds. Working capital, opening inventory and launch marketing are not fixed assets, so they are not depreciated.",
+   "propuesta_de": "GCAT-plan c0430 (CATP Instrucciones!D41)",
+   "pistas": [
+    "P88",
+    "P06",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0431",
+   "es": "Seguro del vehículo y RC",
+   "donde": [
+    "MBP · Instrucciones!A42"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Van insurance and liability",
+   "propuesta_de": "GCAT-plan c0431 (CATP Instrucciones!A42)",
+   "pistas": [
+    "P88",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0435",
+   "es": "Generador",
+   "donde": [
+    "MBP · Instrucciones!A43"
+   ],
+   "por_celda": true,
+   "propuesta_en": "Generator and burner fuel",
+   "propuesta_de": "GCAT-plan c0435 (CATP Instrucciones!A43)",
+   "pistas": [
+    "P88",
+    "P26",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0441",
+   "es": "el mismo 8 %, pero calculado sobre la compra y la adaptación del vehículo",
+   "donde": [
+    "MBP · Instrucciones!C44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "propuesta_en": "A percentage calculated on the van, upfit and fit-out lines",
+   "propuesta_de": "GCAT-plan c0441 (CATP Instrucciones!C44)",
+   "pistas": [
+    "P88",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0442",
+   "es": "Si cambias el precio del vehículo, los imprevistos se recalculan solos en vez de quedarse en la cifra vieja",
+   "donde": [
+    "MBP · Instrucciones!D44"
+   ],
+   "fila": "Imprevistos de la puesta en marcha",
+   "por_celda": true,
+   "propuesta_en": "If you change the van price, the contingency recalculates instead of staying at the old amount.",
+   "propuesta_de": "GCAT-plan c0442 (CATP Instrucciones!D44)",
+   "pistas": [
+    "P88",
+    "P09",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0462",
+   "es": "El combustible sube y baja con los servicios que se hacen: ponerlo entre los fijos falseaba el punto de equilibrio",
+   "donde": [
+    "MBP · Instrucciones!D49"
+   ],
+   "fila": "Combustible y varios",
+   "por_celda": true,
+   "propuesta_en": "Fuel rises and falls with the number of events you cater: putting it among the fixed costs distorts the break-even.",
+   "propuesta_de": "GCAT-plan c0462 (CATP Instrucciones!D49)",
+   "pistas": [
+    "P88",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0465",
+   "es": "sumados a la línea de comida, con el mismo coste de mercancía que el resto (28 %)",
+   "donde": [
+    "MBP · Instrucciones!C50"
+   ],
+   "fila": "Catering y eventos privados",
+   "por_celda": true,
+   "propuesta_en": "Every food sale carries cost of goods sold at the same rate, whatever the service style",
+   "propuesta_de": "GCAT-plan c0465 (CATP Instrucciones!C50)",
+   "pistas": [
+    "P88",
+    "P14",
+    "P89"
+   ]
+  },
+  {
+   "id": "c0476",
+   "es": "Food cost comida",
+   "donde": [
+    "MBP · Instrucciones!A55"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P14",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0477",
+   "es": "28-33 %",
+   "donde": [
+    "MBP · Instrucciones!B55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0478",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0479",
+   "es": "Depende del concepto: burger 30 %, tacos 25 %, poke 35 %. Este plan trabaja con el 28 %, el extremo bajo: si tu carta va al 33 %, el resultado del primer año se queda muy justo",
+   "donde": [
+    "MBP · Instrucciones!D55"
+   ],
+   "fila": "Food cost comida",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P91"
+   ]
+  },
+  {
+   "id": "c0480",
+   "es": "Food cost bebidas",
+   "donde": [
+    "MBP · Instrucciones!A56"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0481",
+   "es": "22-28 %",
+   "donde": [
+    "MBP · Instrucciones!B56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0482",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0483",
+   "es": "Refrescos y agua embotellada, margen alto",
+   "donde": [
+    "MBP · Instrucciones!D56"
+   ],
+   "fila": "Food cost bebidas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P92"
+   ]
+  },
+  {
+   "id": "c0484",
+   "es": "Coste packaging / ventas",
+   "donde": [
+    "MBP · Instrucciones!A57"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0485",
+   "es": "3-5 %",
+   "donde": [
+    "MBP · Instrucciones!B57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0486",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0487",
+   "es": "Packaging eco más caro pero obligatorio en muchos municipios",
+   "donde": [
+    "MBP · Instrucciones!D57"
+   ],
+   "fila": "Coste packaging / ventas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P06",
+    "P93"
+   ]
+  },
+  {
+   "id": "c0488",
+   "es": "Coste personal sobre ventas",
+   "donde": [
+    "MBP · Instrucciones!A58"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0489",
+   "es": "25-32 %",
+   "donde": [
+    "MBP · Instrucciones!B58"
+   ],
+   "fila": "Coste personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0490",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C58"
+   ],
+   "fila": "Coste personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0491",
+   "es": "Menos personal que un restaurante: 2-3 personas",
+   "donde": [
+    "MBP · Instrucciones!D58"
+   ],
+   "fila": "Coste personal sobre ventas",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P94"
+   ]
+  },
+  {
+   "id": "c0492",
+   "es": "Ticket medio food truck",
+   "donde": [
+    "MBP · Instrucciones!A59"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P01",
+    "P04",
+    "P09",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0493",
+   "es": "10-15 €",
+   "donde": [
+    "MBP · Instrucciones!B59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P07",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0494",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0495",
+   "es": "Menú completo: plato + bebida + extra. El de este plan son 12 € SIN IVA, que con el tipo de hostelería salen 13,20 € de PVP",
+   "donde": [
+    "MBP · Instrucciones!D59"
+   ],
+   "fila": "Ticket medio food truck",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P06",
+    "P07",
+    "P08",
+    "P01",
+    "P12",
+    "P14",
+    "P95"
+   ]
+  },
+  {
+   "id": "c0496",
+   "es": "Clientes por servicio",
+   "donde": [
+    "MBP · Instrucciones!A60"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P01",
+    "P04",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0497",
+   "es": "40-80",
+   "donde": [
+    "MBP · Instrucciones!B60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0498",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0499",
+   "es": "Depende de ubicación, evento y día de la semana. Este plan proyecta 45, el extremo bajo del rango, a propósito",
+   "donde": [
+    "MBP · Instrucciones!D60"
+   ],
+   "fila": "Clientes por servicio",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P45",
+    "P96"
+   ]
+  },
+  {
+   "id": "c0500",
+   "es": "Margen bruto objetivo",
+   "donde": [
+    "MBP · Instrucciones!A61"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0501",
+   "es": "> 62 %",
+   "donde": [
+    "MBP · Instrucciones!B61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0502",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0503",
+   "es": "Inferior a un restaurante por el peso del packaging y el combustible",
+   "donde": [
+    "MBP · Instrucciones!D61"
+   ],
+   "fila": "Margen bruto objetivo",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P97"
+   ]
+  },
+  {
+   "id": "c0504",
+   "es": "EBITDA objetivo (año 2)",
+   "donde": [
+    "MBP · Instrucciones!A62"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0505",
+   "es": "20-30 %",
+   "donde": [
+    "MBP · Instrucciones!B62"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0506",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C62"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0507",
+   "es": "Muy rentable si aciertas las ubicaciones. Con los supuestos de partida este plan se queda por debajo del rango: es lo que hay que mejorar subiendo clientes por servicio o ticket",
+   "donde": [
+    "MBP · Instrucciones!D62"
+   ],
+   "fila": "EBITDA objetivo (año 2)",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P01",
+    "P04",
+    "P98"
+   ]
+  },
+  {
+   "id": "c0508",
+   "es": "Retorno de la inversión",
+   "donde": [
+    "MBP · Instrucciones!A63"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0509",
+   "es": "12-24 meses",
+   "donde": [
+    "MBP · Instrucciones!B63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0510",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0511",
+   "es": "Es la referencia del sector. El de ESTE plan lo calcula la hoja de Tesorería y sale más largo: se mide sobre la inversión completa, con el fondo de maniobra dentro —el IVA no cuenta, porque se recupera con el modelo 303— y con el flujo que genera el negocio ANTES de pagar al banco. Esa misma hoja publica debajo el plazo medido sólo sobre lo que se compra, sin el fondo de maniobra, que sale más corto",
+   "donde": [
+    "MBP · Instrucciones!D63"
+   ],
+   "fila": "Retorno de la inversión",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P06",
+    "P47",
+    "P32",
+    "P99"
+   ]
+  },
+  {
+   "id": "c0512",
+   "es": "Días operativos/semana",
+   "donde": [
+    "MBP · Instrucciones!A64"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0513",
+   "es": "4-6",
+   "donde": [
+    "MBP · Instrucciones!B64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0514",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0515",
+   "es": "Mercados, eventos, zona de oficinas, festivales",
+   "donde": [
+    "MBP · Instrucciones!D64"
+   ],
+   "fila": "Días operativos/semana",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P41",
+    "P45",
+    "P100"
+   ]
+  },
+  {
+   "id": "c0516",
+   "es": "Servicios por día",
+   "donde": [
+    "MBP · Instrucciones!A65"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P04",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0517",
+   "es": "1-2",
+   "donde": [
+    "MBP · Instrucciones!B65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0518",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0519",
+   "es": "Comida (12-15 h) y/o cena (19-23 h) según ubicación",
+   "donde": [
+    "MBP · Instrucciones!D65"
+   ],
+   "fila": "Servicios por día",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P14",
+    "P101"
+   ]
+  },
+  {
+   "id": "c0520",
+   "es": "Coste de combustible/mes",
+   "donde": [
+    "MBP · Instrucciones!A66"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0521",
+   "es": "300-500 €",
+   "donde": [
+    "MBP · Instrucciones!B66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P07",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0522",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0523",
+   "es": "Desplazamiento entre ubicaciones. En este plan va dentro del «Varios e imprevistos» de los costes variables",
+   "donde": [
+    "MBP · Instrucciones!D66"
+   ],
+   "fila": "Coste de combustible/mes",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P03",
+    "P102"
+   ]
+  },
+  {
+   "id": "c0524",
+   "es": "Permisos anuales (promedio)",
+   "donde": [
+    "MBP · Instrucciones!A67"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0525",
+   "es": "2.000-5.000 €",
+   "donde": [
+    "MBP · Instrucciones!B67"
+   ],
+   "fila": "Permisos anuales (promedio)",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P07",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0526",
+   "es": "Fichero v1.1",
+   "donde": [
+    "MBP · Instrucciones!C67"
+   ],
+   "fila": "Permisos anuales (promedio)",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0527",
+   "es": "Varía mucho por municipio y comunidad autónoma",
+   "donde": [
+    "MBP · Instrucciones!D67"
+   ],
+   "fila": "Permisos anuales (promedio)",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P06",
+    "P103"
+   ]
+  },
+  {
+   "id": "c0528",
+   "es": "Convenio colectivo aplicable",
+   "donde": [
+    "MBP · Instrucciones!A68"
+   ],
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P06",
+    "P83",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0529",
+   "es": "PROVINCIAL de hostelería o de comercio (según clasificación de la venta ambulante)",
+   "donde": [
+    "MBP · Instrucciones!B68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P105",
+    "P41",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0530",
+   "es": "Fichero v1.1 (fase 4 del checklist)",
+   "donde": [
+    "MBP · Instrucciones!C68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P02",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0531",
+   "es": "No existe una tabla salarial estatal única: copia la tabla que te corresponda en la celda de Supuestos",
+   "donde": [
+    "MBP · Instrucciones!D68"
+   ],
+   "fila": "Convenio colectivo aplicable",
+   "por_celda": true,
+   "pistas": [
+    "P90",
+    "P104"
+   ]
+  },
+  {
+   "id": "c0597",
+   "es": "El mismo cálculo sobre lo que se COMPRA (obra, equipamiento, lanzamiento y constitución), sin el fondo de maniobra: ese dinero no se gasta, se inmoviliza y vuelve al cerrar el negocio. Informativo: el payback que se publica es el de arriba",
+   "donde": [
+    "MBP · Tesorería 12 meses!D32"
+   ],
+   "fila": "Payback sobre el CAPEX, sin fondo de maniobra (años)",
+   "propuesta_en": "The same calculation on what you BUY (van, upfit, equipment, launch and formation costs), without working capital: that money is not spent, it is tied up and comes back when the business closes. For reference only: the payback that matters is the one above",
+   "propuesta_de": "GR c0597 (CATP Tesorería 12 meses!D32)"
+  }
+ ],
+ "revisar_reutilizadas": {
+  "GRC-plan": {
+   "salida": "scripts/productos-digitales/business-plans-en-5/textos_en/GRC-plan.revision.json",
+   "formato_salida": "{\"<id>\": \"<EN corregido>\"} SOLO con las que cambian ({} si ninguna)",
+   "n": 77,
+   "cadenas": [
+    {
+     "id": "c0014",
+     "es": "El fichero v1.1 proyectaba 215.000 € sobre 175.000 € (+22,9 %): igual, redondeado a la baja",
+     "en_actual": "Growth in events in year 3 over year 2, kept conservative for the same reason: repeat corporate clients and planner referrals build up slowly.",
+     "de": "GCAT-plan c0014 (CATP 0. Supuestos!C8)",
+     "donde": [
+      "MBP · 0. Supuestos!C8"
+     ]
+    },
+    {
+     "id": "c0032",
+     "es": "Tarjeta y bizum sobre el total facturado: un food truck urbano cobra en tarjeta/contactless la mayoría de los tickets",
+     "en_actual": "Card and ACH fees on total sales. Many companies pay by ACH or check, which lowers the cost; cards cost more. The example (2.5%) is a blended rate: a percentage plus a per-transaction fee, which weighs more on small invoices. Check your processor's statement and enter your effective rate (Kit estimate).",
+     "de": "GCAT-plan c0032 (CATP 0. Supuestos!C18)",
+     "donde": [
+      "MBP · 0. Supuestos!C18"
+     ]
+    },
+    {
+     "id": "c0053",
+     "es": "Aportación del titular. Con menos, el banco no entra: pide un 25-30 % de fondos propios sobre la necesidad de caja de este plan",
+     "en_actual": "Your own money. Lenders usually expect an owner equity injection (often around 10% for SBA start-ups; many want 20-30%) on the total cash needed in this plan.",
+     "de": "GCAT-plan c0053 (CATP 0. Supuestos!C30)",
+     "donde": [
+      "MBP · 0. Supuestos!C30"
+     ]
+    },
+    {
+     "id": "c0061",
+     "es": "Primer año sólo intereses, que es cuando la caja está más tensa (adaptación del vehículo + primeras semanas de rodaje probando ubicaciones)",
+     "en_actual": "ZERO by default: repayment starts in year 1, so the year-1 DSCR already measures the full loan payment. If you negotiate an interest-only first year, enter it here and read the year-1 DSCR with care.",
+     "de": "GCAT-plan c0061 (CATP 0. Supuestos!C34)",
+     "donde": [
+      "MBP · 0. Supuestos!C34"
+     ]
+    },
+    {
+     "id": "c0063",
+     "es": "Mínimo que exige este mismo libro (Instrucciones): un colchón por debajo de 3 meses no cubre un bache de mal tiempo o de temporada baja de eventos",
+     "en_actual": "The minimum this workbook asks for (see \"Instructions\"): a cushion below 3 months does not cover a slow stretch, such as the off-season for weddings or a corporate client who pays late.",
+     "de": "GCAT-plan c0063 (CATP 0. Supuestos!C35)",
+     "donde": [
+      "MBP · 0. Supuestos!C35"
+     ]
+    },
+    {
+     "id": "c0108",
+     "es": "10 %, igual que el resto de lo que se sirve para consumir en el acto: el art. 91.Uno.2.2.º de la Ley 37/1992 del IVA grava al tipo reducido los servicios de hostelería y «el suministro de comidas y bebidas para consumir en el acto», sin excluir el alcohol, y eso es lo que hace un food truck. Si vendes alcohol envasado PARA LLEVAR no hay consumo en el acto y esa parte va al tipo general: el libro lo aplica sólo a la parte alcohólica que sale por el canal de la celda «Ventas por delivery sobre el total», que en este plan está a cero; súbela si abres ese canal",
+     "en_actual": "Only used if you enter alcohol sales above, which is zero in this plan. Example rate: the same as the rest of the sales (state + local combined). Some states tax alcohol at a different rate or add liquor taxes: if you sell alcohol, enter the rate that applies.",
+     "de": "GCAT-plan c0108 (CATP 0. Supuestos!C63)",
+     "donde": [
+      "MBP · 0. Supuestos!C63"
+     ]
+    },
+    {
+     "id": "c0117",
+     "es": "El convenio PROVINCIAL de hostelería (o el de comercio, según cómo se clasifique la actividad de venta ambulante en tu provincia) es el suelo real del sector: cópialo de la tabla salarial que corresponda. Con 0 el semáforo compara sólo contra el SMI",
+     "en_actual": "Enter the minimum wage of your state or city, annualized for a full-time job (hourly rate × 2,080 hours). The pay floor in the \"Staffing\" tab is the HIGHER of this cell and the federal minimum. With 0 or blank, the traffic light compares only against the federal floor. Check current rates at dol.gov.",
+     "de": "GCAT-plan c0117 (CATP 0. Supuestos!C68)",
+     "donde": [
+      "MBP · 0. Supuestos!C68"
+     ]
+    },
+    {
+     "id": "c0123",
+     "es": "Días fuera de rango",
+     "en_actual": "Value out of range",
+     "de": "GCAT-plan c0123 (CATP 0. Supuestos!B6 B58 B59 / CATP Escenarios!B7 D7)",
+     "donde": [
+      "MBP · 0. Supuestos!B6 B58 B59",
+      "MBP · Escenarios!B7 D7"
+     ]
+    },
+    {
+     "id": "c0124",
+     "es": "Los días van de 1 a 365.",
+     "en_actual": "Enter a whole number from 1 to 365: guests per event or days.",
+     "de": "GCAT-plan c0124 (CATP 0. Supuestos!B6 B58 B59 / CATP Escenarios!B7 D7)",
+     "donde": [
+      "MBP · 0. Supuestos!B6 B58 B59",
+      "MBP · Escenarios!B7 D7"
+     ]
+    },
+    {
+     "id": "c0157",
+     "es": "SL unipersonal exprés. Las tasas y el arancel del Registro Mercantil no llevan IVA, pero los honorarios del notario y de tu gestoría sí (21 %, deducible): el libro deja la fila entera fuera del IVA que hay que adelantar para no inflarlo. Si tu presupuesto es sobre todo de honorarios, cambia el desplegable de la columna «¿Lleva IVA?» a «Sí»",
+     "en_actual": "State filing fees for the articles of organization (Secretary of State) plus any attorney or filing-service fees; a registered agent is also needed. Fees vary a lot by state. The \"Taxable / recoverable tax?\" column is set to No: it only matters if you enter a recoverable input tax rate (for example UK VAT).",
+     "de": "GCAT-plan c0157 (CATP Inversión Inicial!D13)",
+     "donde": [
+      "MBP · Inversión Inicial!D13"
+     ]
+    },
+    {
+     "id": "c0309",
+     "es": "Clientes/día necesarios para cubrir costes según el ticket medio (columnas) y el coste variable por cliente (filas). En verde, los que están por debajo de los clientes que prevé el plan.",
+     "en_actual": "Events per year needed to cover costs for each price per guest (columns, in steps around the plan's price) and each variable cost per guest (rows). Green cells are below the events per year the plan forecasts.",
+     "de": "GCAT-plan c0309 (CATP Punto Equilibrio!A29)",
+     "donde": [
+      "MBP · Punto Equilibrio!A29"
+     ]
+    },
+    {
+     "id": "c0310",
+     "es": "Clientes/día necesarios: ticket medio sin IVA (columnas) × coste variable por cliente (filas)",
+     "en_actual": "Events per year needed: price per guest excl. sales tax (columns) × variable cost per guest (rows)",
+     "de": "GCAT-plan c0310 (CATP Punto Equilibrio!A31)",
+     "donde": [
+      "MBP · Punto Equilibrio!A31"
+     ]
+    },
+    {
+     "id": "c0326",
+     "es": "Clientes que tendría que sacar cada jornada completa del cuadro de Personal. En el optimista dice si hace falta contratar",
+     "en_actual": "Guests each full-time equivalent in the \"Staffing\" table would have to serve in a year. In the optimistic scenario it tells you whether you need to hire",
+     "de": "GCAT-plan c0326 (CATP Escenarios!E24)",
+     "donde": [
+      "MBP · Escenarios!E24"
+     ]
+    },
+    {
+     "id": "c0331",
+     "es": "La columna «Realista» lee sus tres datos de la hoja de Supuestos, así que reproduce EXACTAMENTE el año 1 del P&L. Los otros dos escenarios usan las mismas tasas de coste: lo único que cambia son los clientes, el ticket y los días. Los COSTES FIJOS sí son los mismos en los tres: los varios e imprevistos, que son un porcentaje de las ventas, van arriba con los variables y cada escenario carga los suyos.",
+     "en_actual": "The \"Base\" column reads its three inputs (events per year, price per guest and guests per event) from the \"0. Assumptions\" tab, so it reproduces EXACTLY year 1 of the P&L. The other two scenarios use the same cost rates: only events, price and guests change. FIXED COSTS are the same in all three, while variable costs follow the sales of each scenario.",
+     "de": "GCAT-plan c0331 (CATP Escenarios!A28)",
+     "donde": [
+      "MBP · Escenarios!A28"
+     ]
+    },
+    {
+     "id": "c0360",
+     "es": "Art. 34.1 del Estatuto de los Trabajadores; tu convenio provincial puede fijar menos",
+     "en_actual": "40 hours a week is the FLSA overtime threshold for non-exempt employees; some states add daily overtime rules. Change it if your own full-time week is different",
+     "de": "GCAT-plan c0360 (CATP Personal!J16)",
+     "donde": [
+      "MBP · Personal!J16"
+     ]
+    },
+    {
+     "id": "c0364",
+     "es": "Jornada efectiva completa del día de servicio: carga, desplazamiento, montaje, servicio, recogida y limpieza. El servicio al público es sólo una parte",
+     "en_actual": "Hours of work that one event needs: shopping, prep, loading, transport, setup, service, breakdown and cleanup. Serving is only part of it. Hours × people × events per year sets the event staff cost.",
+     "de": "GCAT-plan c0364 (CATP Personal!J18)",
+     "donde": [
+      "MBP · Personal!J18"
+     ]
+    },
+    {
+     "id": "c0366",
+     "es": "Presencia media a bordo. En los picos de un festival hará falta un segundo par de manos: súbelo aquí y la plantilla se dimensiona sola",
+     "en_actual": "Average number of people working each event. A large wedding needs more hands: raise it here and the staffing sizes itself.",
+     "de": "GCAT-plan c0366 (CATP Personal!J19)",
+     "donde": [
+      "MBP · Personal!J19"
+     ]
+    },
+    {
+     "id": "c0381",
+     "es": "3. Sólo «Punto Equilibrio» se deriva entera de lo anterior. En las otras tres hojas también hay celdas verdes que puedes tocar: el escenario pesimista y el optimista en «Escenarios», la estacionalidad y la rampa de arranque en «Tesorería 12 meses», y las cuatro fuentes alternativas de financiación en «Financiación». Todo lo demás se calcula.",
+     "en_actual": "3. Only \"Break-Even\" is derived entirely from the rest. The other three tabs also have green cells you can edit: the pessimistic and optimistic scenarios in \"Scenarios\", seasonality and the launch ramp-up in \"12-Month Cash Flow\", and the other funding sources in \"Financing\" (rows 8-11 count as sources but are not amortized: your bank or SBA 7(a) loan goes in \"Loan requested\" on \"0. Assumptions\"). Everything else is calculated.",
+     "de": "GCAT-plan c0381 (CATP Instrucciones!A7)",
+     "donde": [
+      "MBP · Instrucciones!A7"
+     ]
+    },
+    {
+     "id": "c0386",
+     "es": "8. El documento Word de este pack es el de la versión 1.1: las cifras válidas son las de este Excel, que es el que se recalcula solo cuando cambias una celda verde.",
+     "en_actual": "8. The Word business plan in this kit uses the same example figures as this workbook. The workbook is the one that recalculates on its own when you change a green cell: if you change one, update the matching figures in the Word document.",
+     "de": "GCAT-plan c0386 (CATP Instrucciones!A12)",
+     "donde": [
+      "MBP · Instrucciones!A12"
+     ]
+    },
+    {
+     "id": "c0397",
+     "es": "Clientes/día para el punto de equilibrio CONTABLE (con la amortización dentro)",
+     "en_actual": "Events per year for the ACCOUNTING break-even (depreciation included)",
+     "de": "GCAT-plan c0397 (CATP Instrucciones!A30)",
+     "donde": [
+      "MBP · Instrucciones!A30"
+     ]
+    },
+    {
+     "id": "c0403",
+     "es": "Coste de personal en la cuenta de resultados",
+     "en_actual": "Labor cost in the P&L",
+     "de": "GCAT-plan c0403 (CATP Instrucciones!A35)",
+     "donde": [
+      "MBP · Instrucciones!A35"
+     ]
+    },
+    {
+     "id": "c0404",
+     "es": "42.000 €",
+     "en_actual": "A typed-in number that does not match the Staffing tab",
+     "de": "GCAT-plan c0404 (CATP Instrucciones!B35)",
+     "donde": [
+      "MBP · Instrucciones!B35"
+     ]
+    },
+    {
+     "id": "c0405",
+     "es": "42.081 €, leídos de la hoja Personal",
+     "en_actual": "Read directly from the Staffing tab",
+     "de": "GCAT-plan c0405 (CATP Instrucciones!C35)",
+     "donde": [
+      "MBP · Instrucciones!C35"
+     ]
+    },
+    {
+     "id": "c0406",
+     "es": "La cuenta de resultados usaba una cifra tecleada a mano que no era la de su propia hoja de Personal, que sumaba 76.566 €. Ahora la lee de ahí: si cambias un sueldo, el plan entero se recalcula",
+     "en_actual": "If you change a salary, the whole plan recalculates, so the P&L and the staffing table can never disagree.",
+     "de": "GCAT-plan c0406 (CATP Instrucciones!D35)",
+     "donde": [
+      "MBP · Instrucciones!D35"
+     ]
+    },
+    {
+     "id": "c0407",
+     "es": "Plantilla",
+     "en_actual": "Staffing",
+     "de": "GCAT-plan c0407 (CATP Instrucciones!A36)",
+     "donde": [
+      "MBP · Instrucciones!A36"
+     ]
+    },
+    {
+     "id": "c0408",
+     "es": "3 puestos / 76.566 € al año",
+     "en_actual": "One line called \"staff\", with no link to event hours or pay floors",
+     "de": "GCAT-plan c0408 (CATP Instrucciones!B36)",
+     "donde": [
+      "MBP · Instrucciones!B36"
+     ]
+    },
+    {
+     "id": "c0409",
+     "es": "4 puestos (1 a jornada completa y 3 parciales) / 42.081 € al año",
+     "en_actual": "Positions with their FTE, sized to the hours your events need, with event staff paid per event",
+     "de": "GCAT-plan c0409 (CATP Instrucciones!C36)",
+     "donde": [
+      "MBP · Instrucciones!C36"
+     ]
+    },
+    {
+     "id": "c0410",
+     "es": "Dimensionada para los 250 días de servicio que hace este plan, con una línea nueva para cubrir vacaciones y descansos. Con la plantilla anterior el personal se comía el 56,7 % de las ventas y el negocio no era viable con sus propios números",
+     "en_actual": "A plan staffed for fewer hours than it sells does not work on its own numbers. This layout makes that gap visible before a lender does.",
+     "de": "GCAT-plan c0410 (CATP Instrucciones!D36)",
+     "donde": [
+      "MBP · Instrucciones!D36"
+     ]
+    },
+    {
+     "id": "c0411",
+     "es": "Días de servicio al año",
+     "en_actual": "Events, guests and price",
+     "de": "GCAT-plan c0411 (CATP Instrucciones!A37)",
+     "donde": [
+      "MBP · Instrucciones!A37"
+     ]
+    },
+    {
+     "id": "c0412",
+     "es": "tres calendarios distintos en el mismo paquete: 300 días en el punto de equilibrio, 240 en los escenarios y ninguno declarado en la cuenta de resultados",
+     "en_actual": "Sales typed as one lump sum, with no link to bookings",
+     "de": "GCAT-plan c0412 (CATP Instrucciones!B37)",
+     "donde": [
+      "MBP · Instrucciones!B37"
+     ]
+    },
+    {
+     "id": "c0413",
+     "es": "250 días, un solo dato para todo el libro",
+     "en_actual": "Revenue = events per year × guests per event × price per guest, one cell each for the whole workbook",
+     "de": "GCAT-plan c0413 (CATP Instrucciones!C37)",
+     "donde": [
+      "MBP · Instrucciones!C37"
+     ]
+    },
+    {
+     "id": "c0414",
+     "es": "Son los días que hacen exacta la facturación que el propio plan ya publicaba: 45 clientes × 12 € × 250 días = 135.000 €. Equivalen a 5 días de servicio por semana durante 50 semanas",
+     "en_actual": "Break-even, scenarios and the P&L read the same three cells, so they always agree, and you can see which lever moves the result: more events, bigger events or a higher price.",
+     "de": "GCAT-plan c0414 (CATP Instrucciones!D37)",
+     "donde": [
+      "MBP · Instrucciones!D37"
+     ]
+    },
+    {
+     "id": "c0415",
+     "es": "Ticket medio",
+     "en_actual": "Price per guest",
+     "de": "GCAT-plan c0415 (CATP Instrucciones!A38)",
+     "donde": [
+      "MBP · Instrucciones!A38"
+     ]
+    },
+    {
+     "id": "c0416",
+     "es": "12 € sin decir si llevaba IVA",
+     "en_actual": "A price with no statement of whether sales tax or service is included",
+     "de": "GCAT-plan c0416 (CATP Instrucciones!B38)",
+     "donde": [
+      "MBP · Instrucciones!B38"
+     ]
+    },
+    {
+     "id": "c0417",
+     "es": "12 € SIN IVA",
+     "en_actual": "Declared EXCL. sales tax, with service included and the voluntary gratuity left out",
+     "de": "GCAT-plan c0417 (CATP Instrucciones!C38)",
+     "donde": [
+      "MBP · Instrucciones!C38"
+     ]
+    },
+    {
+     "id": "c0418",
+     "es": "El número no cambia; lo que cambia es que ahora se declara qué es. Con el IVA de hostelería son 13,20 € de precio de venta al público, dentro del rango 10-15 € que recoge este mismo libro",
+     "en_actual": "Declaring it changes no number: it just says what the number is. Price per guest incl. sales tax = price per guest × (1 + sales tax rate), and the workbook calculates it for you.",
+     "de": "GCAT-plan c0418 (CATP Instrucciones!D38)",
+     "donde": [
+      "MBP · Instrucciones!D38"
+     ]
+    },
+    {
+     "id": "c0420",
+     "es": "no estaba",
+     "en_actual": "Left out: the model shows no cost of space",
+     "de": "GCAT-plan c0420 (CATP Instrucciones!B39)",
+     "donde": [
+      "MBP · Instrucciones!B39"
+     ]
+    },
+    {
+     "id": "c0423",
+     "es": "Fondo de maniobra",
+     "en_actual": "Working capital",
+     "de": "GCAT-plan c0423 (CATP Instrucciones!A40)",
+     "donde": [
+      "MBP · Instrucciones!A40"
+     ]
+    },
+    {
+     "id": "c0424",
+     "es": "6.000 €, etiquetados «3 meses»",
+     "en_actual": "A round number labeled \"3 months\" that does not match the fixed costs",
+     "de": "GCAT-plan c0424 (CATP Instrucciones!B40)",
+     "donde": [
+      "MBP · Instrucciones!B40"
+     ]
+    },
+    {
+     "id": "c0425",
+     "es": "18.053 €: tres meses de costes fijos de caja, calculados por fórmula",
+     "en_actual": "Three months of cash fixed costs, calculated by formula",
+     "de": "GCAT-plan c0425 (CATP Instrucciones!C40)",
+     "donde": [
+      "MBP · Instrucciones!C40"
+     ]
+    },
+    {
+     "id": "c0426",
+     "es": "Los 6.000 € daban para 1,1 meses, no para 3. Es el colchón que evita cerrar por una racha de mal tiempo o un mes flojo de eventos",
+     "en_actual": "A round number often covers far less than the label says. This cushion is what keeps you open through a slow month between wedding seasons.",
+     "de": "GCAT-plan c0426 (CATP Instrucciones!D40)",
+     "donde": [
+      "MBP · Instrucciones!D40"
+     ]
+    },
+    {
+     "id": "c0427",
+     "es": "Amortización",
+     "en_actual": "Depreciation",
+     "de": "GCAT-plan c0427 (CATP Instrucciones!A41)",
+     "donde": [
+      "MBP · Instrucciones!A41"
+     ]
+    },
+    {
+     "id": "c0428",
+     "es": "10.343 € al año, a 7 años planos sobre todo, incluido lo que no es inmovilizado",
+     "en_actual": "One useful life for everything, including items that are not fixed assets",
+     "de": "GCAT-plan c0428 (CATP Instrucciones!B41)",
+     "donde": [
+      "MBP · Instrucciones!B41"
+     ]
+    },
+    {
+     "id": "c0432",
+     "es": "2.500 € en la inversión Y 2.500 € al año en los gastos: la misma prima contada dos veces",
+     "en_actual": "Counted twice: once in startup costs and again as an annual expense",
+     "de": "GCAT-plan c0432 (CATP Instrucciones!B42)",
+     "donde": [
+      "MBP · Instrucciones!B42"
+     ]
+    },
+    {
+     "id": "c0433",
+     "es": "2.500 € al año, una sola vez",
+     "en_actual": "Counted once, as an annual expense",
+     "de": "GCAT-plan c0433 (CATP Instrucciones!C42)",
+     "donde": [
+      "MBP · Instrucciones!C42"
+     ]
+    },
+    {
+     "id": "c0434",
+     "es": "Contarla en los dos sitios inflaba la inversión, el IVA a adelantar y el dinero que hay que pedir al banco",
+     "en_actual": "Counting a premium in both places inflates the startup costs, the cash you need to raise and the loan you ask for.",
+     "de": "GCAT-plan c0434 (CATP Instrucciones!D42)",
+     "donde": [
+      "MBP · Instrucciones!D42"
+     ]
+    },
+    {
+     "id": "c0436",
+     "es": "2.400 € al año como línea suelta, además de los suministros",
+     "en_actual": "A separate line, on top of utilities",
+     "de": "GCAT-plan c0436 (CATP Instrucciones!B43)",
+     "donde": [
+      "MBP · Instrucciones!B43"
+     ]
+    },
+    {
+     "id": "c0437",
+     "es": "2.400 € al año dentro de la celda de suministros",
+     "en_actual": "Included in the utilities cell",
+     "de": "GCAT-plan c0437 (CATP Instrucciones!C43)",
+     "donde": [
+      "MBP · Instrucciones!C43"
+     ]
+    },
+    {
+     "id": "c0438",
+     "es": "Era el mismo gasto escrito en dos sitios. Ahora se cambia en uno solo y el resto del libro se entera",
+     "en_actual": "Writing it in two places counts it twice: here it lives in one cell and the rest of the workbook follows.",
+     "de": "GCAT-plan c0438 (CATP Instrucciones!D43)",
+     "donde": [
+      "MBP · Instrucciones!D43"
+     ]
+    },
+    {
+     "id": "c0439",
+     "es": "Imprevistos de la puesta en marcha",
+     "en_actual": "Startup contingency",
+     "de": "GCAT-plan c0439 (CATP Instrucciones!A44)",
+     "donde": [
+      "MBP · Instrucciones!A44"
+     ]
+    },
+    {
+     "id": "c0440",
+     "es": "5.500 € escritos a mano (un 8 % del total)",
+     "en_actual": "A lump sum typed by hand",
+     "de": "GCAT-plan c0440 (CATP Instrucciones!B44)",
+     "donde": [
+      "MBP · Instrucciones!B44"
+     ]
+    },
+    {
+     "id": "c0443",
+     "es": "Impuesto de Sociedades",
+     "en_actual": "Income tax",
+     "de": "GCAT-plan c0443 (CATP Instrucciones!A45)",
+     "donde": [
+      "MBP · Instrucciones!A45"
+     ]
+    },
+    {
+     "id": "c0444",
+     "es": "25 % los tres años, sin compensar pérdidas",
+     "en_actual": "A flat rate every year, with no offset for losses",
+     "de": "GCAT-plan c0444 (CATP Instrucciones!B45)",
+     "donde": [
+      "MBP · Instrucciones!B45"
+     ]
+    },
+    {
+     "id": "c0445",
+     "es": "15 % los dos primeros ejercicios con beneficio, compensando las pérdidas anteriores",
+     "en_actual": "One effective rate for years 1-2 and another from year 3, offsetting net operating losses carried forward",
+     "de": "GCAT-plan c0445 (CATP Instrucciones!C45)",
+     "donde": [
+      "MBP · Instrucciones!C45"
+     ]
+    },
+    {
+     "id": "c0446",
+     "es": "Es el tipo que la ley reserva a las empresas de nueva creación, y las pérdidas de un año se restan del beneficio de los siguientes",
+     "en_actual": "A loss in one year reduces taxable profit in later years. The model offsets losses fully as a simplification (federal rules cap the offset at 80% of taxable income). If you operate as a pass-through (sole proprietorship or LLC), set the rate to 0 and budget your personal tax separately.",
+     "de": "GCAT-plan c0446 (CATP Instrucciones!D45)",
+     "donde": [
+      "MBP · Instrucciones!D45"
+     ]
+    },
+    {
+     "id": "c0447",
+     "es": "Cuota del préstamo",
+     "en_actual": "Loan payment",
+     "de": "GCAT-plan c0447 (CATP Instrucciones!A46)",
+     "donde": [
+      "MBP · Instrucciones!A46"
+     ]
+    },
+    {
+     "id": "c0448",
+     "es": "la cuota entera restaba en el resultado",
+     "en_actual": "The full payment deducted in the P&L",
+     "de": "GCAT-plan c0448 (CATP Instrucciones!B46)",
+     "donde": [
+      "MBP · Instrucciones!B46"
+     ]
+    },
+    {
+     "id": "c0449",
+     "es": "sólo los intereses en el resultado; la devolución del principal, en la tesorería",
+     "en_actual": "Only interest in the P&L; principal repaid in the cash flow",
+     "de": "GCAT-plan c0449 (CATP Instrucciones!C46)",
+     "donde": [
+      "MBP · Instrucciones!C46"
+     ]
+    },
+    {
+     "id": "c0450",
+     "es": "Meter la cuota completa antes del resultado convierte la cuenta de resultados en un flujo de caja y el banco lo ve al instante",
+     "en_actual": "Putting the full payment above the line turns the P&L into a cash flow, and a lender spots it immediately.",
+     "de": "GCAT-plan c0450 (CATP Instrucciones!D46)",
+     "donde": [
+      "MBP · Instrucciones!D46"
+     ]
+    },
+    {
+     "id": "c0451",
+     "es": "Plan de financiación",
+     "en_actual": "Financing plan",
+     "de": "GCAT-plan c0451 (CATP Instrucciones!A47)",
+     "donde": [
+      "MBP · Instrucciones!A47"
+     ]
+    },
+    {
+     "id": "c0452",
+     "es": "no existía",
+     "en_actual": "None",
+     "de": "GCAT-plan c0452 (CATP Instrucciones!B47)",
+     "donde": [
+      "MBP · Instrucciones!B47"
+     ]
+    },
+    {
+     "id": "c0453",
+     "es": "hoja nueva: de dónde sale el dinero, a qué se destina y el cuadro de amortización del préstamo año a año",
+     "en_actual": "A dedicated tab: where the money comes from, what it pays for and the amortization schedule year by year",
+     "de": "GCAT-plan c0453 (CATP Instrucciones!C47)",
+     "donde": [
+      "MBP · Instrucciones!C47"
+     ]
+    },
+    {
+     "id": "c0454",
+     "es": "Es la hoja que pide el banco junto con la cuenta de resultados, y la que avisa si el dinero que se aporta no llega a lo que hace falta",
+     "en_actual": "It is the sheet a lender asks for next to the P&L, and it warns you when the money you put in falls short of what you need.",
+     "de": "GCAT-plan c0454 (CATP Instrucciones!D47)",
+     "donde": [
+      "MBP · Instrucciones!D47"
+     ]
+    },
+    {
+     "id": "c0455",
+     "es": "Tesorería mes a mes",
+     "en_actual": "Month-by-month cash flow",
+     "de": "GCAT-plan c0455 (CATP Instrucciones!A48)",
+     "donde": [
+      "MBP · Instrucciones!A48"
+     ]
+    },
+    {
+     "id": "c0456",
+     "es": "no existía",
+     "en_actual": "None",
+     "de": "GCAT-plan c0456 (CATP Instrucciones!B48)",
+     "donde": [
+      "MBP · Instrucciones!B48"
+     ]
+    },
+    {
+     "id": "c0457",
+     "es": "hoja nueva de 12 meses: cobros, pagos, IVA trimestral y saldo acumulado",
+     "en_actual": "A 12-month tab: cash in, cash out, quarterly sales tax and the cumulative balance",
+     "de": "GCAT-plan c0457 (CATP Instrucciones!C48)",
+     "donde": [
+      "MBP · Instrucciones!C48"
+     ]
+    },
+    {
+     "id": "c0458",
+     "es": "Responde a la única pregunta que decide una operación bancaria: en qué mes se queda el negocio sin caja",
+     "en_actual": "It answers the one question that decides a loan: in which month does the business run out of cash?",
+     "de": "GCAT-plan c0458 (CATP Instrucciones!D48)",
+     "donde": [
+      "MBP · Instrucciones!D48"
+     ]
+    },
+    {
+     "id": "c0459",
+     "es": "Combustible y varios",
+     "en_actual": "Fuel and miscellaneous",
+     "de": "GCAT-plan c0459 (CATP Instrucciones!A49)",
+     "donde": [
+      "MBP · Instrucciones!A49"
+     ]
+    },
+    {
+     "id": "c0460",
+     "es": "4.800 € de combustible sueltos + 2.000 € de varios metidos entre los costes fijos",
+     "en_actual": "Fuel and a miscellaneous line typed in among the fixed costs",
+     "de": "GCAT-plan c0460 (CATP Instrucciones!B49)",
+     "donde": [
+      "MBP · Instrucciones!B49"
+     ]
+    },
+    {
+     "id": "c0461",
+     "es": "un solo 5 % sobre las ventas, tratado como coste variable",
+     "en_actual": "One percentage of sales, treated as a variable cost",
+     "de": "GCAT-plan c0461 (CATP Instrucciones!C49)",
+     "donde": [
+      "MBP · Instrucciones!C49"
+     ]
+    },
+    {
+     "id": "c0463",
+     "es": "Catering y eventos privados",
+     "en_actual": "Cost of goods on all sales",
+     "de": "GCAT-plan c0463 (CATP Instrucciones!A50)",
+     "donde": [
+      "MBP · Instrucciones!A50"
+     ]
+    },
+    {
+     "id": "c0464",
+     "es": "10.000 € de ingresos sin ningún coste de materia prima imputado",
+     "en_actual": "Revenue with no cost of goods sold attached",
+     "de": "GCAT-plan c0464 (CATP Instrucciones!B50)",
+     "donde": [
+      "MBP · Instrucciones!B50"
+     ]
+    },
+    {
+     "id": "c0466",
+     "es": "Una línea de ingresos que no paga género da un margen que no existe",
+     "en_actual": "A revenue line that pays for no ingredients shows a margin that does not exist.",
+     "de": "GCAT-plan c0466 (CATP Instrucciones!D50)",
+     "donde": [
+      "MBP · Instrucciones!D50"
+     ]
+    },
+    {
+     "id": "c0467",
+     "es": "Sueldos y SMI",
+     "en_actual": "Wages and minimum wage",
+     "de": "GCAT-plan c0467 (CATP Instrucciones!A51)",
+     "donde": [
+      "MBP · Instrucciones!A51"
+     ]
+    },
+    {
+     "id": "c0468",
+     "es": "sueldos sin comparar con ningún suelo legal",
+     "en_actual": "Wages never compared with any legal floor",
+     "de": "GCAT-plan c0468 (CATP Instrucciones!B51)",
+     "donde": [
+      "MBP · Instrucciones!B51"
+     ]
+    },
+    {
+     "id": "c0469",
+     "es": "ninguna fila por debajo del SMI en proporción a su jornada, y una celda para el convenio de tu provincia",
+     "en_actual": "No row below the pay floor in proportion to its FTE, and a cell for your state or local minimum wage",
+     "de": "GCAT-plan c0469 (CATP Instrucciones!C51)",
+     "donde": [
+      "MBP · Instrucciones!C51"
+     ]
+    },
+    {
+     "id": "c0470",
+     "es": "El convenio provincial de hostelería manda sobre el SMI: cópialo en la hoja de Supuestos y el semáforo te avisa si algún sueldo se queda corto",
+     "en_actual": "State and local minimums are often higher than the federal one: enter yours in \"0. Assumptions\" and the traffic light warns you when a wage falls short.",
+     "de": "GCAT-plan c0470 (CATP Instrucciones!D51)",
+     "donde": [
+      "MBP · Instrucciones!D51"
+     ]
+    }
+   ]
+  }
+ }
+}

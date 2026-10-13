@@ -809,6 +809,15 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/catering-business-plan/catering-startup-checklist.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-13): Mobile Bar Business Plan Kit. MISMAS claves que plan-negocio-cocteleria-eventos (las del
+  // TEMPLATES de src/pages/MobileBarBusinessPlanDashboard.tsx) → los 4 ficheros EN de /dl/mobile-bar-business-plan/
+  // (SPEC business-plans-en-5 D83).
+  'mobile-bar-business-plan': {
+    'plan-negocio': '/dl/mobile-bar-business-plan/mobile-bar-business-plan.docx',
+    'plan-financiero': '/dl/mobile-bar-business-plan/mobile-bar-financial-projections.xlsx',
+    'calculadora-pricing': '/dl/mobile-bar-business-plan/mobile-bar-pricing-calculator.xlsx',
+    'checklist-apertura': '/dl/mobile-bar-business-plan/mobile-bar-startup-checklist.xlsx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

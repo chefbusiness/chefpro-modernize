@@ -86,6 +86,10 @@ const FAQS: PlanNegocioFaq[] = [
     a: "Serving it and selling it are different things. To sell alcohol, a caterer usually needs an on-premises license plus a caterer's permit — for example the Caterer's Permit in Texas or the Type 58 license in California — often with an authorization for each event. The common model, and the one in this kit, is simpler: the client buys the alcohol, and bartenders certified in your state (through TIPS, ServSafe Alcohol or TABC, for example) serve it under your liquor liability insurance. The checklist includes both the certification and the coverage. Check your state's rules and the venue's before you offer it.",
   },
   {
+    q: 'Does it work for a mobile bar?',
+    a: "It's built for a caterer that serves food, with alcohol only through the client and certified bartenders. If you're starting a mobile bar instead — a bar trailer or a portable bar, bartenders, mixers, garnish and ice, with the host buying the alcohol (dry hire) — our Mobile Bar Business Plan Kit is written for that: a storage unit with trailer parking instead of a commissary kitchen, W-2 event bartenders and barbacks, the dry hire rules state by state and a pricing calculator that turns your cost per guest into a quote and a shopping list for the host.",
+  },
+  {
     q: 'How much does a catering business make? Is catering profitable?',
     a: "It can be, but margins are thin: ItsaCheckmate reports an average net margin of 7-8% for caterers, and Galley Solutions puts food cost at 28-35% of the menu price. In the kit's example — 180 events a year with 60 guests at $60.00 per guest (excl. sales tax, service included) — year-1 sales are $648,000 and net income is $48,466, a 7.5% net margin, after paying the owner a salary as executive chef. That's an example, not a promise: the 3-year P&L recalculates from your numbers, checks five ratios against editable kit benchmarks, and the pessimistic scenario shows what a weak year does to your cash.",
   },
@@ -333,6 +337,7 @@ const data: PlanNegocioData = {
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/bakery-business-plan', label: 'Bakery Business Plan Kit' },
     { href: '/en/digital-products/coffee-shop-business-plan', label: 'Coffee Shop Business Plan Kit' },
+    { href: '/en/digital-products/mobile-bar-business-plan', label: 'Mobile Bar Business Plan Kit' },
     { href: 'mailto:info@aichef.pro', label: 'Contact' },
   ],
   updateNote: 'Version 2.2 · October 2026',
