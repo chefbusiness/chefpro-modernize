@@ -110,6 +110,10 @@ const data: KitExcelData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100 % reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit Plan Financiero» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «beneficio» es «utilidad» en México y «ganancia» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit Plan Financiero para Restaurantes',
   },
@@ -205,7 +209,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 8 plantillas principales, recibes estos recursos adicionales — valorados en 28 EUR',
+      'Además de las 8 plantillas principales, recibes estos recursos adicionales — valorados en 43 EUR',
     items: [
       {
         icon: 'Shuffle',
@@ -222,6 +226,14 @@ const data: KitExcelData = {
         value: '14 EUR',
         desc: '54 ítems agrupados en 7 fases: constitución, financiación, licencias, proveedores, seguros, tesorería y obligaciones laborales. Con estado, responsable y fecha límite para no olvidar nada.',
         image: '/lovable-uploads/ai-gallery/plan-financiero-reunion.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '15 EUR',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -269,6 +281,10 @@ const data: KitExcelData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100 % reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit Plan Financiero» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «beneficio» es «utilidad» en México y «ganancia» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -285,6 +301,7 @@ const data: KitExcelData = {
       'Informe de viabilidad listo para bancos (TIR, VAN, payback)',
       'BONUS: Simulador de Escenarios What-If (14 EUR)',
       'BONUS: Checklist Pre-Apertura Financiero (14 EUR)',
+      'BONUS: Guía de Equivalencias para tu país (15 EUR)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT FINANCIERO — 39 EUR',
   },

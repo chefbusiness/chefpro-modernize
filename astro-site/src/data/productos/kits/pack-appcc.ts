@@ -83,6 +83,10 @@ const data: KitExcelData = {
         q: '¿Para qué tipo de establecimiento sirven?',
         a: 'Para cualquier negocio de hostelería: restaurantes, bares, cafeterías, hoteles, catering, obradores, food trucks, comedores colectivos.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Pack APPCC» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «albarán» es «nota de remisión» en México y «remito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Pack Plantillas APPCC',
   },
@@ -110,7 +114,7 @@ const data: KitExcelData = {
     // Forma B: subtítulo en bloque, SIN titlePost
     titleSubtitle: 'Pasa la Inspección de Sanidad con Nota',
     description:
-      '19 registros profesionales de seguridad alimentaria + 2 bonus: temperatura, cocción, enfriamiento, anisakis, limpieza, trazabilidad, alérgenos, HACCP y más. Todo lo que exige la normativa APPCC, listo para usar en tu restaurante.',
+      '19 registros profesionales de seguridad alimentaria + 3 bonus: temperatura, cocción, enfriamiento, anisakis, limpieza, trazabilidad, alérgenos, HACCP y más. Todo lo que exige la normativa APPCC, listo para usar en tu restaurante.',
     checkItems: [
       '19 registros con alertas automáticas con semáforo en los registros de medición; planes, checklists y carteles listos para imprimir',
       'Matriz de alérgenos con los 14 obligatorios',
@@ -180,7 +184,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 19 plantillas, recibirás estos recursos adicionales — valorados en €16',
+      'Además de las 19 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'GraduationCap',
@@ -197,6 +201,14 @@ const data: KitExcelData = {
         value: '€7',
         desc: 'Cartel imprimible con los 7 pasos a seguir ante una alerta alimentaria + teléfonos de emergencia. Identificar → Aislar → Notificar → Documentar → Comunicar → Verificar → Registrar.',
         image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -242,6 +254,10 @@ const data: KitExcelData = {
       q: '¿Para qué tipo de establecimiento sirven?',
       a: 'Para cualquier negocio de hostelería: restaurantes, bares, cafeterías, hoteles, catering, obradores, food trucks, comedores colectivos. La normativa APPCC es obligatoria para todos.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Pack APPCC» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «albarán» es «nota de remisión» en México y «remito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -256,6 +272,7 @@ const data: KitExcelData = {
       'Guía de los 25 puntos que revisa el inspector',
       'BONUS: Registro de Formación del Personal (€9)',
       'BONUS: Protocolo de Alerta Alimentaria (€7)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
       'Garantía de devolución 30 días',
     ],
     ctaLabel: 'SÍ, QUIERO EL PACK APPCC — €14',

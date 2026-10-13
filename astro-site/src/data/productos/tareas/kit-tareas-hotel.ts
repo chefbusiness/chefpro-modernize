@@ -66,6 +66,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Hotel» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «bollería» es «pan dulce» en México y «facturas» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Hotel F&B / Buffet',
   },
@@ -254,7 +258,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de los 17 ficheros operativos, recibirás estos recursos adicionales — valorados en €18',
+    subtitle: 'Además de los 17 ficheros operativos, recibirás estos recursos adicionales — valorados en €33',
     items: [
       {
         icon: 'Megaphone',
@@ -271,6 +275,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '24 fechas clave para F&B en hoteles: temporadas alta/baja, festividades (Día del Padre, comuniones, puentes de Todos los Santos y de la Constitución) y congresos. Con antelación de preparación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-hotel-banquete.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -313,6 +325,10 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Hotel» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «bollería» es «pan dulce» en México y «facturas» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -329,6 +345,7 @@ const data: KitTareasData = {
       'Spa / Wellness: apertura, cierre, cabinas, vestuarios',
       'Apertura y cierre de negocio + arqueo de caja con recuento por denominaciones',
       'BONUS: Briefing Diario F&B (€9) + Calendario Anual Hotelero (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT COMPLETO — €18,50',
   },

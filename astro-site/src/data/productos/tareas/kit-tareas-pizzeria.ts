@@ -14,7 +14,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Pizzería | AI Chef Pro',
     description:
-      'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para pizzería con las tareas más habituales ya escritas — horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega y firma. Solo €12.',
+      'Kit de 9 plantillas + 3 bonus (12 ficheros): checklists operativos para pizzería con las tareas más habituales ya escritas — horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist pizzería, tareas apertura pizzería, checklist horno pizza, tareas pizzero, checklist delivery pizzería, lista tareas pizzería, plantilla tareas pizzería, control horno pizza, masa napolitana checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-pizzeria.jpg',
@@ -23,7 +23,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Pizzería',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para pizzería con 373 tareas ya escritas — horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para pizzería con 373 tareas ya escritas — horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -69,6 +69,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Pizzería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Pizzería',
   },
@@ -101,7 +105,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Pizzería — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 373 tareas de pizzería ya escritas: horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 373 tareas de pizzería ya escritas: horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: horno, línea de montaje, sala, barra',
       'Control de horno de leña/piedra: temperatura 400-450 °C, limpieza, encendido',
@@ -116,7 +120,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '373 tareas de pizzería ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
@@ -222,7 +226,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -239,6 +243,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '22 fechas clave de hostelería (San Valentín, Semana Santa, Noche de Fútbol, terraza, Día del Padre, comuniones, 15 de agosto, Todos los Santos, Navidad y puente de diciembre) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-pizzeria-mesa.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -281,11 +293,15 @@ const data: KitTareasData = {
       q: '¿Incluye tareas de fermentación y masa napolitana?',
       a: 'Sí. Las tareas del pizzero incluyen fermentación lenta de masa (24-72h), control de temperatura de masa madre, estirado a mano, control del patrón leopardo en la cocción y gestión del banco de masas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Pizzería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
-    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 3 bonus (12 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: horno, línea, sala, barra',
       'Tareas del pizzero: fermentación, estirado, cocción 60-90s',
@@ -295,6 +311,7 @@ const data: KitTareasData = {
       'Delivery y take-away: packaging, riders, tiempos',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos | AI Chef Pro',
     description:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura/cierre de negocio, cobros y facturación por evento, montaje, servicio, desmontaje. Bodas, corporativos, cocktails. Solo €12.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura/cierre de negocio, cobros y facturación por evento, montaje, servicio, desmontaje. Bodas, corporativos, cocktails. Solo €12.',
     keywords:
       'checklist catering, tareas evento, checklist montaje evento, tareas catering bodas, control logística catering, plantilla tareas evento, checklist desmontaje, inventario catering, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-catering.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura y cierre de negocio, cobros y facturación por evento (anticipos, liquidación y saldos), montaje, servicio, desmontaje y post-evento.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura y cierre de negocio, cobros y facturación por evento (anticipos, liquidación y saldos), montaje, servicio, desmontaje y post-evento.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -62,6 +62,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Catering» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Catering / Eventos',
   },
@@ -86,7 +90,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Catering / Eventos — Del Obrador al Venue',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 347 tareas de catering y eventos ya escritas: producción off-site, transporte, apertura/cierre de negocio, cobros y facturación por evento, montaje, servicio, desmontaje y post-evento. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 347 tareas de catering y eventos ya escritas: producción off-site, transporte, apertura/cierre de negocio, cobros y facturación por evento, montaje, servicio, desmontaje y post-evento. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción off-site: mise en place, elaboraciones, empaquetado',
       'Transporte y logística: cadena de frío, carga, descarga',
@@ -102,7 +106,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '347 tareas de catering y eventos ya escritas y repartidas por fase, zona y perfil. Ajusta a tu operación, imprime y delega.',
     templates: [
@@ -209,7 +213,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+      'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -226,6 +230,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '22 fechas clave para catering (bodas, corporativos, Navidad, comuniones, Día del Padre, puente de diciembre) con antelación de preparación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-catering-montaje.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -268,12 +280,16 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Catering» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Improvisar en Cada Evento',
     subtitle:
-      '9 plantillas + 2 bonus (11 ficheros) para catering por menos de lo que cuesta una hora de consultoría.',
+      '9 plantillas + 3 bonus (12 ficheros) para catering por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Producción off-site: planificación, mise en place, empaquetado',
       'Transporte: cadena de frío, carga, descarga, APPCC',
@@ -284,6 +300,7 @@ const data: KitTareasData = {
       'Tipos de evento: bodas, corporativos, cocktails, outdoor',
       'BONUS: Briefing Pre-Evento (€7)',
       'BONUS: Calendario Anual Temporada Alta (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

@@ -15,6 +15,7 @@ import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
+// Descargas (incl. la tarjeta 'guia-equivalencias') en DownloadsSection; ver get-download-urls.ts.
 export default function ProPromptsLibrary() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedPromptId, setSelectedPromptId] = useState<number | null>(null);

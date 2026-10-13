@@ -87,6 +87,10 @@ const data: PlanNegocioData = {
         q: '¿Cómo funciona la garantía?',
         a: '30 días de devolución completa sin preguntas. Los 11 entregables son tuyos para siempre + actualizaciones gratuitas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio para Catering & Kit Temático para Eventos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Plan de Negocio Catering Temático Eventos',
   },
@@ -196,7 +200,7 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Además del plan financiero y los 9 entregables principales, accedes a estos recursos diferenciales — valorados en €114',
+      'Además del plan financiero y los 9 entregables principales, accedes a estos recursos diferenciales — valorados en €129',
     items: [
       {
         icon: 'LayoutGrid',
@@ -213,6 +217,14 @@ const data: PlanNegocioData = {
         value: '€49',
         desc: 'Hoja de ruta para construir tu portafolio de cocinas del mundo de manera escalable: empieza con 1-2 conceptos dominados, añade 1-2/año validando demanda. Top 5 mejores conceptos para empezar (pizza, tacos, sushi, asado argentino, vegano) + 4 sub-explotados con oportunidad (tandoor, turco, vegano tematizado, KBBQ coreano) + roadmap 12 meses para llegar a 6 conceptos en producción.',
         image: '/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-5.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -265,6 +277,10 @@ const data: PlanNegocioData = {
       q: '¿Cómo funciona la garantía?',
       a: '30 días de devolución completa. Si el plan no cumple tus expectativas, te devolvemos el 100 % del importe sin preguntas. Los 11 entregables son tuyos para siempre + actualizaciones gratuitas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio para Catering & Kit Temático para Eventos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -280,6 +296,7 @@ const data: PlanNegocioData = {
       'Manual técnico APPCC multi-concepto + Modelos contrato B2C + B2B corporate (con MSA)',
       'Guía especialización progresiva — escalar de 1 a 6+ conceptos en portafolio',
       'Checklist de apertura: 82 tareas en 6 fases, con los trámites españoles',
+      'BONUS: Guía de Equivalencias para tu país',
       'Acceso de por vida + 30 días garantía devolución',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €45',

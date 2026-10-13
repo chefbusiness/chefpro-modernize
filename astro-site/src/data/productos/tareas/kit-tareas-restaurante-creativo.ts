@@ -19,7 +19,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor | AI Chef Pro',
     description:
-      '11 plantillas + 2 bonus (13 ficheros): checklists operativos para restaurante creativo y de autor con 477 tareas ya escritas — I+D, menú degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja, eventos. Imprime, delega y firma. Solo €12.',
+      '11 plantillas + 3 bonus (14 ficheros): checklists operativos para restaurante creativo y de autor con 477 tareas ya escritas — I+D, menú degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja, eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist restaurante creativo, tareas restaurante de autor, checklist menú degustación, mise en place fine dining, checklist sumiller, tareas brigada cocina creativa, plantilla tareas chef ejecutivo, checklist I+D cocina, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-restaurante-creativo.jpg',
@@ -28,7 +28,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor',
     productDescription:
-      '11 plantillas + 2 bonus (13 ficheros): checklists operativos para restaurante creativo con 477 tareas ya escritas — I+D, menú degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja y eventos.',
+      '11 plantillas + 3 bonus (14 ficheros): checklists operativos para restaurante creativo con 477 tareas ya escritas — I+D, menú degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -66,6 +66,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Restaurante Creativo» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Restaurante Creativo / De Autor',
   },
@@ -90,7 +94,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Restaurante Creativo / De Autor — Checklists por Turno, Partida y Perfil',
     description:
-      '11 plantillas + 2 bonus (13 ficheros) en Excel con 477 tareas de restaurante creativo ya escritas: I+D, mise en place degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja, eventos y más. Imprime, delega al equipo, firma y archiva.',
+      '11 plantillas + 3 bonus (14 ficheros) en Excel con 477 tareas de restaurante creativo ya escritas: I+D, mise en place degustación, brigada creativa, sumiller, apertura y cierre de negocio, arqueo de caja, eventos y más. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'I+D y desarrollo de menú: fichas técnicas, pruebas, evolución de platos',
       'Menú degustación: mise en place, timing de pases, servicio de sala',
@@ -106,7 +110,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '11',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (13 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (14 ficheros)',
     subtitle:
       '477 tareas de restaurante creativo o de autor ya escritas y repartidas por turno, partida y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
@@ -223,7 +227,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 11 plantillas, recibirás estos recursos adicionales — valorados en €18',
+    subtitle: 'Además de las 11 plantillas, recibirás estos recursos adicionales — valorados en €33',
     items: [
       {
         icon: 'Megaphone',
@@ -240,6 +244,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: 'Calendario mensual (12 meses) con las fechas clave de cada uno: cambios estacionales de carta, eventos gastronomicos (guias, premios), temporadas de producto premium, jornadas tematicas y pop-ups.',
         image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-chefstable.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -282,11 +294,15 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Restaurante Creativo» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '11 plantillas + 2 bonus (13 ficheros) por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '11 plantillas + 3 bonus (14 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: cocina, pass, sala, bodega',
       'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
@@ -299,6 +315,7 @@ const data: KitTareasData = {
       'Fotografía y storytelling: sesión de fotos, contenido RRSS',
       'BONUS: Briefing Diario de Servicio (€9)',
       'BONUS: Calendario Anual de Eventos y Carta (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

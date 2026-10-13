@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft,
   Calculator, Truck, Wrench, GlassWater, ScrollText, Sparkles,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
@@ -74,6 +74,13 @@ const TEMPLATES = [
     title: '10 Experiencias Temáticas Premium',
     desc: 'Speakeasy Años 20, Gin Lounge, Tropical Tiki, Mixología Molecular, Bourbon Tasting, Mediterranean, Latin, Whisky, Champagne y Signature. Listas para vender en eventos.',
   },
+  {
+    key: 'guia-equivalencias',
+    icon: Globe,
+    type: '.docx',
+    title: 'Guía de Equivalencias para tu país',
+    desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.',
+  },
 ];
 
 export default function PlanNegocioCocteleriaEventosDashboard() {
@@ -111,11 +118,11 @@ export default function PlanNegocioCocteleriaEventosDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-cocteleria-eventos" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 9 entregables para montar tu empresa de coctelería itinerante con barra móvil en España 2026.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 10 entregables para montar tu empresa de coctelería itinerante con barra móvil en España 2026.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">9 Entregables · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">10 Entregables · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;

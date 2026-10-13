@@ -80,6 +80,10 @@ const data: KitExcelData = {
         q: '¿Hay garantia de devolucion?',
         a: '30 dias de garantia completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Inventario» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «albarán» es «nota de remisión» en México y «remito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit Control de Inventario y Compras',
   },
@@ -174,7 +178,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Ademas de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 18 EUR',
+      'Ademas de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 33 EUR',
     items: [
       {
         icon: 'Clock',
@@ -191,6 +195,14 @@ const data: KitExcelData = {
         value: '9 EUR',
         desc: 'Introduce consumo diario, tiempo de entrega y stock de seguridad — calcula automaticamente el punto optimo de reposicion y la cantidad economica de pedido (EOQ).',
         image: '/lovable-uploads/ai-gallery/inventario-analisis.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '15 EUR',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -238,6 +250,10 @@ const data: KitExcelData = {
       q: '¿Hay garantia de devolucion?',
       a: '30 dias de garantia completa. Si no estas satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Inventario» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «albarán» es «nota de remisión» en México y «remito» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -254,6 +270,7 @@ const data: KitExcelData = {
       'Analisis de costes con KPIs: food cost %, coste/cubierto',
       'BONUS: Inventario Rapido Mensual (9 EUR)',
       'BONUS: Calculadora Punto de Pedido (9 EUR)',
+      'BONUS: Guía de Equivalencias para tu país (15 EUR)',
     ],
     ctaLabel: 'SI, QUIERO EL KIT DE INVENTARIO — 14 EUR',
   },

@@ -51,7 +51,7 @@ const data: GuiaData = {
     price: '55 EUR',
     heroNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
     buyBoxNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
-    bonusTotalLabel: 'Incluido en el precio: la guía, las 8 herramientas Excel y el bonus de ejercicios',
+    bonusTotalLabel: 'Incluido en el precio: la guía, las 8 herramientas Excel y los dos bonus: ejercicios resueltos y la Guía de Equivalencias para tu país',
   },
 
   images: {
@@ -119,7 +119,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía PDF + DOCX, recibes 8 herramientas Excel con fórmulas vivas y el bonus de ejercicios resueltos',
+    subtitle: 'Además de la guía PDF + DOCX, recibes 8 herramientas Excel con fórmulas vivas y dos bonus: los ejercicios resueltos y la Guía de Equivalencias para tu país',
     layout: 'single',
     items: [
       { icon: 'FileSpreadsheet', label: 'HERRAMIENTA 1', title: 'Ficha de Escandallo Base', value: 'Incluido en el pack', desc: 'Veinte líneas de ingredientes con merma, cantidad bruta calculada, coste por ración y precio de venta objetivo con y sin IVA. El punto de partida de todo lo demás.', image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg' },
@@ -130,7 +130,8 @@ const data: GuiaData = {
       { icon: 'Wine', label: 'HERRAMIENTA 6', title: 'Carta de Bebidas y Beverage Cost', value: 'Incluido en el pack', desc: 'Vinos por copa y botella, barriles y botellines, destilados y cócteles con sus ingredientes. Coste, margen y beverage cost ponderado por categoría.', image: '/lovable-uploads/ai-gallery/guia-foodcost-bodega.jpg' },
       { icon: 'Target', label: 'HERRAMIENTA 7', title: 'Cuadro de Mando Prime Cost', value: 'Incluido en el pack', desc: 'Doce meses de food cost y coste de personal con seguridad social, prime cost mensual, semáforo frente a tu objetivo y gráfico de evolución.', image: '/lovable-uploads/ai-gallery/guia-foodcost-equipo.jpg' },
       { icon: 'CalendarRange', label: 'HERRAMIENTA 8', title: 'Plan de Acción 90 Días', value: 'Incluido en el pack', desc: 'Veinte decisiones con responsable, fecha e impacto estimado, calendario de trece semanas y KPI de seguimiento comparados con el mes cero.', image: '/lovable-uploads/ai-gallery/guia-foodcost-equipo.jpg' },
-      { icon: 'GraduationCap', label: 'BONUS', title: '12 Ejercicios Resueltos', value: 'Incluido en el pack', desc: 'Doce casos con enunciado, datos, resolución paso a paso, tabla y lectura del resultado: merma, IVA por canal, los cuatro métodos de precio, discrepancias entre matrices, delivery, copa contra botella y prime cost.', image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg' },
+      { icon: 'GraduationCap', label: 'BONUS 1', title: '12 Ejercicios Resueltos', value: 'Incluido en el pack', desc: 'Doce casos con enunciado, datos, resolución paso a paso, tabla y lectura del resultado: merma, IVA por canal, los cuatro métodos de precio, discrepancias entre matrices, delivery, copa contra botella y prime cost.', image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg' },
+      { icon: 'Globe', label: 'BONUS 2', title: 'Guía de Equivalencias para tu país', value: 'Incluido en el pack', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
     ],
   },
 
@@ -144,7 +145,7 @@ const data: GuiaData = {
 
   faqs: [
     { q: '¿Necesito el Kit de Escandallos si compro esta guía?', a: 'No, pero se complementan. El Kit son 13 plantillas para escandallar por formato de negocio; la Guía es el método y la decisión: qué precio poner, qué método usar y qué hacer con cada plato. La Guía incluye una ficha de escandallo base y un test de rendimiento para que puedas trabajar sin el Kit; si tienes los dos, solo se solapan esas dos herramientas básicas (el Kit también trae ficha estándar y test de rendimiento) y todo lo demás es distinto.' },
-    { q: '¿Sirve fuera de España?', a: 'Sí, con un matiz que conviene decir claro: el bloque fiscal está escrito con la normativa española y sus artículos citados. Los tipos de IVA, las comisiones de plataforma y los objetivos viven en casillas editables de los Excel, así que sustituyes los valores por los de tu país y todo se recalcula. El vocabulario incluye las equivalencias de Hispanoamérica (escandallo/costeo de recetas, coste/costo, carta/menú) y los ejemplos de delivery mencionan también las plataformas de México, Argentina, Uruguay y Panamá.' },
+    { q: '¿Sirve fuera de España?', a: 'Sí, con un matiz que conviene decir claro: el bloque fiscal está escrito con la normativa española y sus artículos citados. Los tipos de IVA, las comisiones de plataforma y los objetivos viven en casillas editables de los Excel, así que sustituyes los valores por los de tu país y todo se recalcula. El vocabulario incluye las equivalencias de Hispanoamérica (escandallo/costeo de recetas, coste/costo, carta/menú) y los ejemplos de delivery mencionan también las plataformas de México, Argentina, Uruguay y Panamá. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «ración» es «orden» en México y «porción» en Colombia.' },
     { q: '¿Con qué programas funcionan las herramientas Excel?', a: 'Con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Los libros están construidos a propósito sin funciones que rompen la compatibilidad entre programas, y traen los valores calculados guardados dentro del fichero, así que también se ven bien en el móvil y en visores que no recalculan.' },
     { q: '¿Cómo afecta el IVA al cálculo del food cost?', a: 'Más de lo que parece, y es el hueco que casi ninguna fuente gratuita cubre. El food cost se calcula sobre la venta neta (la base imponible), no sobre el precio de la carta, y con el coste neto de IVA soportado, porque ese IVA de compra se deduce: es tesorería, no coste. Calcularlo sobre el precio con IVA infla o desinfla el porcentaje según el canal y te lleva a subir el plato equivocado.' },
     { q: '¿Las bebidas alcohólicas llevan el 21% en un restaurante?', a: 'No cuando se sirven en sala: el servicio de hostelería para consumir en el acto va al 10%, alcohol incluido (art. 91.Uno.2.2.º de la Ley 37/1992). El 21% aparece cuando no hay servicio: una bebida alcohólica vendida para llevar o por delivery es una entrega de bienes y sale del tipo reducido. La guía trae la matriz completa por canal y tipo de producto, y en los Excel vive en casillas editables.' },
@@ -167,6 +168,7 @@ const data: GuiaData = {
       'Simulador de sala, para llevar y delivery con IVA y comisiones',
       'Cuadro de mando de prime cost y plan de acción de 90 días',
       'Bonus: 12 ejercicios resueltos (32 páginas)',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 55 EUR',
   },
@@ -199,7 +201,7 @@ const data: GuiaData = {
     priceValidUntil: '2026-12-31',
     faqs: [
       { q: '¿Necesito el Kit de Escandallos si compro esta guía?', a: 'No. El Kit son plantillas para escandallar; la Guía es el método y la decisión, e incluye su propia ficha de escandallo base y su test de rendimiento. Si tienes los dos, solo se solapan esas dos herramientas básicas.' },
-      { q: '¿Sirve fuera de España?', a: 'Sí. El bloque fiscal está escrito con normativa española citada, pero los tipos de IVA, comisiones y objetivos viven en casillas editables de los Excel para adaptarlos a cualquier país.' },
+      { q: '¿Sirve fuera de España?', a: 'Sí. El bloque fiscal está escrito con normativa española citada, pero los tipos de IVA, comisiones y objetivos viven en casillas editables de los Excel para adaptarlos a cualquier país. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «ración» es «orden» en México y «porción» en Colombia.' },
       { q: '¿Con qué programas funcionan las herramientas Excel?', a: 'Con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Están construidas sin funciones que rompan la compatibilidad y traen los valores calculados guardados en el fichero.' },
       { q: '¿Cómo afecta el IVA al cálculo del food cost?', a: 'El food cost se calcula sobre la venta neta (base imponible) y con el coste neto de IVA soportado. El tipo cambia según vendas en sala, para llevar o por delivery; la guía trae la matriz por canal y producto.' },
       { q: '¿Cómo calculo el food cost de un plato vendido por delivery?', a: 'Sumando al coste del plato el packaging por pedido y dividiendo entre el precio menos la comisión de la plataforma. El simulador multicanal lo calcula por plato y dice si el precio necesario cabe bajo el techo de la app.' },

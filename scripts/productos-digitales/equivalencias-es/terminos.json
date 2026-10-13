@@ -1,0 +1,2126 @@
+[
+ {
+  "id": "patata",
+  "es": "patata, patatas",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "patatas?"
+  ],
+  "comun": true,
+  "nota": "Papa en toda Latinoamérica"
+ },
+ {
+  "id": "nata",
+  "es": "nata (para montar, de cocinar)",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "nata(?! montada| para montar| l[ií]quida| para cocinar)"
+  ],
+  "comun": true,
+  "nota": "Crema de leche / crema para batir"
+ },
+ {
+  "id": "zumo",
+  "es": "zumo, zumos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "zum(?:o|os)"
+  ],
+  "comun": true,
+  "nota": "Jugo"
+ },
+ {
+  "id": "melocoton",
+  "es": "melocotón",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "melocot[oó]n(?:es)?"
+  ],
+  "comun": true,
+  "nota": "Durazno"
+ },
+ {
+  "id": "judias_verdes",
+  "es": "judías verdes",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "jud[ií]as? verdes?"
+  ],
+  "comun": true,
+  "nota": "Ejotes, vainitas, chauchas, porotos verdes"
+ },
+ {
+  "id": "guisantes",
+  "es": "guisantes",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "guisantes?"
+  ],
+  "comun": true,
+  "nota": "Arvejas, chícharos, petit pois"
+ },
+ {
+  "id": "gambas",
+  "es": "gambas, langostinos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "gambas?",
+   "langostinos?"
+  ],
+  "comun": true,
+  "nota": "Camarones"
+ },
+ {
+  "id": "fresa",
+  "es": "fresa, fresón",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "fresas?",
+   "fres[oó]n(?:es)?"
+  ],
+  "comun": true,
+  "nota": "Frutilla (Cono Sur) vs fresa (México)"
+ },
+ {
+  "id": "aguacate",
+  "es": "aguacate",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "aguacates?"
+  ],
+  "comun": true,
+  "nota": "Palta (Cono Sur, Perú)"
+ },
+ {
+  "id": "maiz",
+  "es": "maíz",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "ma[ií]z"
+  ],
+  "comun": true,
+  "nota": "Choclo, elote, mazorca"
+ },
+ {
+  "id": "pimiento",
+  "es": "pimiento, pimientos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "pimientos?"
+  ],
+  "comun": true,
+  "nota": "Ají, morrón, chile, locoto"
+ },
+ {
+  "id": "cacahuete",
+  "es": "cacahuete",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "cacahuet(?:e|es)",
+   "cacahuates?"
+  ],
+  "comun": true,
+  "nota": "Maní, cacahuate"
+ },
+ {
+  "id": "alubias",
+  "es": "alubias, judías (secas)",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "alubias?"
+  ],
+  "comun": true,
+  "nota": "Frijoles, porotos, caraotas, habichuelas"
+ },
+ {
+  "id": "champinon",
+  "es": "champiñón",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "champi[ñn]on(?:es)?"
+  ],
+  "comun": true,
+  "nota": "Hongo (Perú, Chile)"
+ },
+ {
+  "id": "calabacin",
+  "es": "calabacín",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "calabac[ií]n(?:es)?"
+  ],
+  "comun": true,
+  "nota": "Zapallito italiano, zucchini, calabacita"
+ },
+ {
+  "id": "calabaza",
+  "es": "calabaza",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "calabazas?"
+  ],
+  "comun": false,
+  "nota": "Zapallo, ahuyama, auyama"
+ },
+ {
+  "id": "bollería",
+  "es": "bollería",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "boller[ií]a"
+  ],
+  "comun": false,
+  "nota": "Facturas (AR), pan dulce (MX), pastelería salada y dulce de desayuno"
+ },
+ {
+  "id": "bizcocho",
+  "es": "bizcocho",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "bizcochos?"
+  ],
+  "comun": false,
+  "nota": "Queque, ponqué, bizcochuelo, pan de pasas"
+ },
+ {
+  "id": "tarta",
+  "es": "tarta, tartas",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "tartas?"
+  ],
+  "comun": false,
+  "nota": "Pastel (MX), torta (AR, CO, CL, PE)"
+ },
+ {
+  "id": "magdalena",
+  "es": "magdalena",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "magdalenas?"
+  ],
+  "comun": false,
+  "nota": "Muffin, queque, panquecito"
+ },
+ {
+  "id": "nata_montada",
+  "es": "nata (montada, líquida)",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "nata montada",
+   "nata para montar",
+   "nata l[ií]quida",
+   "nata para cocinar"
+  ],
+  "comun": false,
+  "nota": "Crema de leche, crema para batir, crema chantilly (MX/AR)"
+ },
+ {
+  "id": "azucar_glas",
+  "es": "azúcar glas",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "az[uú]car (?:glas|glass?)"
+  ],
+  "comun": false,
+  "nota": "Azúcar impalpable (AR), azúcar glass (MX), azúcar en polvo"
+ },
+ {
+  "id": "azucar_moreno",
+  "es": "azúcar moreno",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "az[uú]car moreno"
+  ],
+  "comun": false,
+  "nota": "Azúcar rubia/morena/mascabado/panela"
+ },
+ {
+  "id": "harina_fuerza",
+  "es": "harina de fuerza",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "harinas? de fuerza"
+  ],
+  "comun": false,
+  "nota": "Harina panadera, harina 000/0000"
+ },
+ {
+  "id": "levadura_prensada",
+  "es": "levadura fresca / prensada",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "levadura (?:fresca|prensada)"
+  ],
+  "comun": false,
+  "nota": "Levadura fresca; en LatAm se usa más la seca"
+ },
+ {
+  "id": "levadura_quimica",
+  "es": "levadura química",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "levadura qu[ií]mica"
+  ],
+  "comun": false,
+  "nota": "Polvo de hornear, impulsor (AR), polvo para hornear"
+ },
+ {
+  "id": "mantequilla",
+  "es": "mantequilla",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "mantequilla"
+  ],
+  "comun": false,
+  "nota": "Manteca (AR, UY), mantequilla (MX/CO)"
+ },
+ {
+  "id": "chocolate_taza",
+  "es": "chocolate a la taza",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "chocolate a la taza"
+  ],
+  "comun": false,
+  "nota": "Chocolate caliente / espeso; no equivalente"
+ },
+ {
+  "id": "churro",
+  "es": "churros, porras",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "churros?",
+   "porras?"
+  ],
+  "comun": false,
+  "nota": "Tejeringo, calentitos, jeringos"
+ },
+ {
+  "id": "napolitana",
+  "es": "napolitana",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "napolitanas?"
+  ],
+  "comun": false,
+  "nota": "Pain au chocolat; en AR/MX otra cosa"
+ },
+ {
+  "id": "rebozado",
+  "es": "rebozado, empanado",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "rebozad[oa]s?",
+   "empanad[oa]s?"
+  ],
+  "comun": false,
+  "nota": "Empanizado, apanado, empanado, milanesa"
+ },
+ {
+  "id": "carne_picada",
+  "es": "carne picada",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "carne picada"
+  ],
+  "comun": false,
+  "nota": "Carne molida (LatAm)"
+ },
+ {
+  "id": "ternera",
+  "es": "ternera",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "ternera"
+  ],
+  "comun": false,
+  "nota": "Res (MX), vaca/vacuno (AR), novillo"
+ },
+ {
+  "id": "cerdo",
+  "es": "cerdo",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "cerdo"
+  ],
+  "comun": false,
+  "nota": "Chancho (PE, CL), puerco (MX), cochino (VE)"
+ },
+ {
+  "id": "solomillo",
+  "es": "solomillo",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "solomillos?"
+  ],
+  "comun": false,
+  "nota": "Lomo fino (AR/CL), filete mignon, filete"
+ },
+ {
+  "id": "panceta",
+  "es": "panceta, bacon",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "panceta",
+   "bacon",
+   "beicon"
+  ],
+  "comun": false,
+  "nota": "Tocineta (CO), tocino (MX), panceta (AR)"
+ },
+ {
+  "id": "jamon_serrano",
+  "es": "jamón serrano",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "jam[oó]n (?:serrano|ib[eé]rico)"
+  ],
+  "comun": false,
+  "nota": "Jamón crudo / curado"
+ },
+ {
+  "id": "jamon_york",
+  "es": "jamón York",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "jam[oó]n (?:york|cocido|de york)"
+  ],
+  "comun": false,
+  "nota": "Jamón cocido, jamón de pierna"
+ },
+ {
+  "id": "embutido",
+  "es": "embutidos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "embutidos?"
+  ],
+  "comun": false,
+  "nota": "Fiambres (AR/UY), cecinas (CL), carnes frías (MX)"
+ },
+ {
+  "id": "bocadillo",
+  "es": "bocadillo",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "bocadillos?"
+  ],
+  "comun": false,
+  "nota": "Sándwich, torta (MX), pan con (PE), emparedado"
+ },
+ {
+  "id": "tortilla_patata",
+  "es": "tortilla de patata(s), tortilla española",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "tortilla de patatas?",
+   "tortilla espa[ñn]ola"
+  ],
+  "comun": true,
+  "nota": "Tortilla española; no confundir con tortilla mexicana"
+ },
+ {
+  "id": "tapa_pincho",
+  "es": "pincho, pinchos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "pinchos?",
+   "pintxos?"
+  ],
+  "comun": false,
+  "nota": "Montadito, brocheta, botana"
+ },
+ {
+  "id": "pimenton",
+  "es": "pimentón",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "piment[oó]n"
+  ],
+  "comun": false,
+  "nota": "Páprika, ají molido, chile en polvo"
+ },
+ {
+  "id": "aceite_girasol",
+  "es": "aceite de girasol",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "aceite de girasol"
+  ],
+  "comun": false,
+  "nota": "Aceite de maravilla (CL), girasol"
+ },
+ {
+  "id": "legumbres",
+  "es": "legumbres",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "legumbres?"
+  ],
+  "comun": false,
+  "nota": "Menestras (PE/EC), granos"
+ },
+ {
+  "id": "marisco",
+  "es": "marisco, mariscos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "mariscos?"
+  ],
+  "comun": false,
+  "nota": "Mariscos (LatAm), frutos de mar (CL)"
+ },
+ {
+  "id": "mejillones",
+  "es": "mejillones",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "mejillones?"
+  ],
+  "comun": false,
+  "nota": "Choritos (CL, PE), moluscos"
+ },
+ {
+  "id": "requeson",
+  "es": "requesón",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "reques[oó]n"
+  ],
+  "comun": true,
+  "nota": "Ricota, ricotta, cottage"
+ },
+ {
+  "id": "cafe_cortado",
+  "es": "café cortado",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "cortados?"
+  ],
+  "comun": false,
+  "nota": "Café con un poco de leche"
+ },
+ {
+  "id": "refresco",
+  "es": "refrescos",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "refrescos?"
+  ],
+  "comun": false,
+  "nota": "Gaseosa (CO, AR), soda (CR), refresco (MX), bebida"
+ },
+ {
+  "id": "cana_cerveza",
+  "es": "caña",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "ca[ñn]as?"
+  ],
+  "comun": false,
+  "nota": "Cerveza de barril pequeña; chop (CL), cañita"
+ },
+ {
+  "id": "cerveza_botellin",
+  "es": "botellín",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "botell[ií]n(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Botellita, cervecita; botella pequeña"
+ },
+ {
+  "id": "cubata",
+  "es": "cubata, combinado",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "cubatas?",
+   "combinados?"
+  ],
+  "comun": false,
+  "nota": "Trago largo, coctel, drink"
+ },
+ {
+  "id": "chupito",
+  "es": "chupito",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "chupitos?"
+  ],
+  "comun": false,
+  "nota": "Shot, caballito (MX), trago corto"
+ },
+ {
+  "id": "camarero",
+  "es": "camarero, camarera",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "camarer[oa]s?"
+  ],
+  "comun": true,
+  "nota": "Mesero (MX/CO/PE), mozo (AR/UY/PE/CL), mesonero (VE), garzón (CL), salonero (CR)"
+ },
+ {
+  "id": "jefe_partida",
+  "es": "jefe de partida",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "jefes? de partida"
+  ],
+  "comun": false,
+  "nota": "Chef de partie, jefe de línea"
+ },
+ {
+  "id": "ayudante_cocina",
+  "es": "ayudante de cocina",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "ayudantes? de cocina"
+  ],
+  "comun": false,
+  "nota": "Auxiliar de cocina, cocinero ayudante, pinche"
+ },
+ {
+  "id": "pinche",
+  "es": "pinche",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "pinches?"
+  ],
+  "comun": false,
+  "nota": "Ayudante de cocina; no usado en LatAm (en MX es otra cosa)"
+ },
+ {
+  "id": "friegaplatos",
+  "es": "friegaplatos",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "friegaplatos",
+   "fregaplatos",
+   "fregador(?:es|a)?"
+  ],
+  "comun": false,
+  "nota": "Lavaplatos (persona), steward, platero, pocero"
+ },
+ {
+  "id": "encargado",
+  "es": "encargado, encargada",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "encargad[oa]s?"
+  ],
+  "comun": false,
+  "nota": "Gerente, administrador (MX), capitán"
+ },
+ {
+  "id": "maitre",
+  "es": "maître",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "ma[iî]tre",
+   "metre"
+  ],
+  "comun": false,
+  "nota": "Jefe de sala, capitán de meseros"
+ },
+ {
+  "id": "jefe_sala",
+  "es": "jefe de sala",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "jefes? de sala"
+  ],
+  "comun": false,
+  "nota": "Capitán de meseros, maître"
+ },
+ {
+  "id": "sous_chef",
+  "es": "segundo de cocina, sous chef",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "segundos? de cocina",
+   "sous[- ]chef"
+  ],
+  "comun": false,
+  "nota": "Segundo de cocina"
+ },
+ {
+  "id": "jefe_cocina",
+  "es": "jefe de cocina",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "jefes? de cocina"
+  ],
+  "comun": false,
+  "nota": "Chef ejecutivo, chef de cocina"
+ },
+ {
+  "id": "barman",
+  "es": "barman, bartender",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "barman",
+   "barmans?",
+   "bartenders?"
+  ],
+  "comun": false,
+  "nota": "Cantinero (MX), barista (CO, otra cosa), tragueros"
+ },
+ {
+  "id": "repartidor",
+  "es": "repartidor",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "repartidor(?:es|a)?"
+  ],
+  "comun": false,
+  "nota": "Delivery, motorizado (VE/PE), domiciliario (CO)"
+ },
+ {
+  "id": "pastelero",
+  "es": "pastelero",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "pasteler[oa]s?"
+  ],
+  "comun": false,
+  "nota": "Repostero (MX, AR), pastelero (CL, PE)"
+ },
+ {
+  "id": "parrillero",
+  "es": "parrillero",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "parrillero"
+  ],
+  "comun": false,
+  "nota": "Asador, asador/parrillero, asador (AR parrillero)"
+ },
+ {
+  "id": "comanda",
+  "es": "comanda",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "comandas?"
+  ],
+  "comun": true,
+  "nota": "Orden, pedido (MX), ticket de cocina, comanda (AR)"
+ },
+ {
+  "id": "cuenta",
+  "es": "la cuenta",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "pedir la cuenta",
+   "la cuenta de (?:la )?mesa",
+   "cuentas? de mesa",
+   "cobrar la cuenta",
+   "traer la cuenta",
+   "dividir la cuenta",
+   "pre-?cuentas?",
+   "cuenta del cliente"
+  ],
+  "comun": true,
+  "nota": "Cheque (MX), adición (AR/UY), nota (MX), la cuenta, bill"
+ },
+ {
+  "id": "propina",
+  "es": "propina",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "propinas?"
+  ],
+  "comun": true,
+  "nota": "Propina; en AR/UY/CL sugerida 10%; gratificación"
+ },
+ {
+  "id": "menu_dia",
+  "es": "menú del día",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "men[uú]s? del d[ií]a"
+  ],
+  "comun": false,
+  "nota": "Almuerzo ejecutivo (PE/CO), corrida (MX), plato del día, menú ejecutivo"
+ },
+ {
+  "id": "carta",
+  "es": "carta",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "carta de vinos",
+   "la carta",
+   "cartas?"
+  ],
+  "comun": false,
+  "nota": "Menú (MX/CO), carta (ES/AR)"
+ },
+ {
+  "id": "racion",
+  "es": "ración",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "raci[oó]n(?:es)?",
+   "medias? raci[oó]n(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Porción, orden (MX), plato"
+ },
+ {
+  "id": "tapeo",
+  "es": "tapeo, tapas",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "tapeo",
+   "tapas"
+  ],
+  "comun": false,
+  "nota": "Botana (MX), picada (AR/UY), pasapalos (VE), piqueo (PE), boquitas (CR)"
+ },
+ {
+  "id": "barra",
+  "es": "barra",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "barra"
+  ],
+  "comun": false,
+  "nota": "Barra; en MX \"barra\" ok; AR \"barra\" ok; mostrador"
+ },
+ {
+  "id": "terraza",
+  "es": "terraza",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "terrazas?"
+  ],
+  "comun": false,
+  "nota": "Terraza, patio, vereda (CL/AR), exterior"
+ },
+ {
+  "id": "velador",
+  "es": "velador",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "veladores?"
+  ],
+  "comun": false,
+  "nota": "Mesa de terraza (ES); en MX lámpara de noche"
+ },
+ {
+  "id": "entrante",
+  "es": "entrantes",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "entrantes?"
+  ],
+  "comun": false,
+  "nota": "Entrada (MX/AR), primer tiempo, antojito"
+ },
+ {
+  "id": "primer_plato",
+  "es": "primer plato",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "primer(?:os)? platos?"
+  ],
+  "comun": false,
+  "nota": "Entrada (CO), primer tiempo"
+ },
+ {
+  "id": "segundo_plato",
+  "es": "segundo plato",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "segundos? platos?"
+  ],
+  "comun": false,
+  "nota": "Plato principal/fuerte (MX), plato de fondo (CL), principal"
+ },
+ {
+  "id": "para_llevar",
+  "es": "para llevar",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "para llevar"
+  ],
+  "comun": false,
+  "nota": "Para llevar, para llevar (MX), takeaway, delivery, take out"
+ },
+ {
+  "id": "a_domicilio",
+  "es": "a domicilio",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "a domicilio"
+  ],
+  "comun": false,
+  "nota": "Delivery, a domicilio, domicilios (CO)"
+ },
+ {
+  "id": "sala_comedor",
+  "es": "sala",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "(?<!jefe de )(?<!jefes de )(?<!equipo de )(?<!plano de )(?<!personal de )(?<!camarero de )(?<!camarera de )sala(?! de (?:espera|despiece|estar|reuniones))"
+  ],
+  "comun": false,
+  "nota": "Comedor, salón (MX/AR), piso, área de comensales"
+ },
+ {
+  "id": "camarera_pisos",
+  "es": "camarera de pisos",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "camareras? de pisos?"
+  ],
+  "comun": false,
+  "nota": "Camarista (MX), mucama (AR), housekeeper"
+ },
+ {
+  "id": "turno_partido",
+  "es": "turno partido",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "turnos? partidos?"
+  ],
+  "comun": false,
+  "nota": "Doble turno, turno cortado"
+ },
+ {
+  "id": "fregadero",
+  "es": "fregadero",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "fregaderos?"
+  ],
+  "comun": false,
+  "nota": "Pileta (AR), lavadero, tarja (MX), lavaplatos (CO)"
+ },
+ {
+  "id": "escandallo",
+  "es": "escandallo",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "escandallos?"
+  ],
+  "comun": true,
+  "nota": "Costeo de recetas (LatAm), costo de receta, ficha de costos"
+ },
+ {
+  "id": "merma",
+  "es": "merma",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "mermas?"
+  ],
+  "comun": true,
+  "nota": "Merma; en LatAm también desperdicio, pérdida, rendimiento"
+ },
+ {
+  "id": "ticket_medio",
+  "es": "ticket medio",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "ticket medio"
+  ],
+  "comun": true,
+  "nota": "Ticket promedio, consumo promedio, cheque promedio (MX)"
+ },
+ {
+  "id": "cierre_caja",
+  "es": "arqueo / cierre de caja",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "arqueos? de caja",
+   "cortes? de caja",
+   "cierres? de caja",
+   "cierre z"
+  ],
+  "comun": true,
+  "nota": "Corte Z, cierre diario"
+ },
+ {
+  "id": "cuadrante",
+  "es": "cuadrante",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "cuadrantes?"
+  ],
+  "comun": true,
+  "nota": "Rol de turnos (MX), horarios, planilla de turnos (CL), turnero (AR)"
+ },
+ {
+  "id": "prevision_ventas",
+  "es": "previsión de ventas",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "previsi[oó]n(?:es)? de ventas?",
+   "previsi[oó]n de demanda"
+  ],
+  "comun": false,
+  "nota": "Pronóstico (MX), proyección de ventas"
+ },
+ {
+  "id": "punto_equilibrio",
+  "es": "punto de equilibrio",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "punto de equilibrio"
+  ],
+  "comun": false,
+  "nota": "Punto de equilibrio, umbral de rentabilidad"
+ },
+ {
+  "id": "margen_bruto",
+  "es": "margen bruto",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "margen bruto"
+  ],
+  "comun": false,
+  "nota": "Utilidad bruta (MX), margen de contribución"
+ },
+ {
+  "id": "beneficio",
+  "es": "beneficio",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "beneficios?"
+  ],
+  "comun": false,
+  "nota": "Utilidad (MX/CO), ganancia, resultado"
+ },
+ {
+  "id": "cuenta_resultados",
+  "es": "cuenta de resultados",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "cuentas? de resultados"
+  ],
+  "comun": false,
+  "nota": "Estado de resultados (LatAm), P&L, estado de pérdidas y ganancias"
+ },
+ {
+  "id": "food_cost",
+  "es": "food cost",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "food ?cost"
+  ],
+  "comun": false,
+  "nota": "Costo de alimentos, costo de materia prima, costo de venta"
+ },
+ {
+  "id": "coste",
+  "es": "coste, costes",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "costes?"
+  ],
+  "comun": false,
+  "nota": "Costo, costos en toda Latinoamérica"
+ },
+ {
+  "id": "gastos_fijos",
+  "es": "gastos fijos",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "gastos fijos"
+  ],
+  "comun": false,
+  "nota": "Costos fijos"
+ },
+ {
+  "id": "tesoreria",
+  "es": "tesorería",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "tesorer[ií]a"
+  ],
+  "comun": false,
+  "nota": "Flujo de caja, liquidez"
+ },
+ {
+  "id": "factura",
+  "es": "factura",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "facturas?"
+  ],
+  "comun": false,
+  "nota": "Factura, boleta (CL/PE), comprobante"
+ },
+ {
+  "id": "albaran",
+  "es": "albarán",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "albar[aá]n(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Remito (AR/UY), guía de despacho (CL), nota de entrega, remisión (CO/MX)"
+ },
+ {
+  "id": "stock",
+  "es": "stock, existencias",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "stock",
+   "existencias"
+  ],
+  "comun": false,
+  "nota": "Inventario (LatAm), existencias (MX), stock (AR/CL)"
+ },
+ {
+  "id": "pedido_proveedor",
+  "es": "pedido a proveedor",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "pedidos? a proveedor(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Orden de compra, requisición (MX), nota de pedido"
+ },
+ {
+  "id": "tpv",
+  "es": "TPV",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "tpv"
+  ],
+  "comun": false,
+  "nota": "Punto de venta (POS), terminal punto de venta, caja registradora"
+ },
+ {
+  "id": "datafono",
+  "es": "datáfono",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "dat[aá]fonos?"
+  ],
+  "comun": false,
+  "nota": "Terminal de tarjeta (POS), POS, terminal bancaria, lector de tarjetas"
+ },
+ {
+  "id": "fondo_caja",
+  "es": "fondo de caja",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "fondo de caja"
+  ],
+  "comun": false,
+  "nota": "Caja chica, base de caja"
+ },
+ {
+  "id": "amortizacion",
+  "es": "amortización",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "amortizaci[oó]n(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Depreciación"
+ },
+ {
+  "id": "subvencion",
+  "es": "subvención",
+  "tema": "gestion_finanzas",
+  "patrones": [
+   "subvenci[oó]n(?:es)?",
+   "subvencionad[oa]s?"
+  ],
+  "comun": false,
+  "nota": "Subsidio, apoyo, incentivo"
+ },
+ {
+  "id": "nomina",
+  "es": "nómina",
+  "tema": "laboral_legal",
+  "patrones": [
+   "n[oó]minas?"
+  ],
+  "comun": true,
+  "nota": "Planilla (PE/CL/AR/BO), nómina (MX/CO/ES), payroll"
+ },
+ {
+  "id": "finiquito",
+  "es": "finiquito",
+  "tema": "laboral_legal",
+  "patrones": [
+   "finiquitos?"
+  ],
+  "comun": true,
+  "nota": "Liquidación (LatAm), liquidación final, finiquito (MX)"
+ },
+ {
+  "id": "autonomo",
+  "es": "autónomo",
+  "tema": "laboral_legal",
+  "patrones": [
+   "aut[oó]nomos?"
+  ],
+  "comun": true,
+  "nota": "Trabajador independiente, cuentapropista, monotributista (AR), RIF/RESICO (MX)"
+ },
+ {
+  "id": "iva",
+  "es": "IVA",
+  "tema": "laboral_legal",
+  "patrones": [
+   "iva"
+  ],
+  "comun": false,
+  "nota": "IGV (PE), ITBMS (PA), ITBIS (DO), IVA (MX/AR/CO/CL/UY); sales tax (EE.UU.)"
+ },
+ {
+  "id": "seguridad_social",
+  "es": "Seguridad Social",
+  "tema": "laboral_legal",
+  "patrones": [
+   "seguridad social"
+  ],
+  "comun": false,
+  "nota": "IMSS (MX), AFP/ISAPRE (CL), ANSES (AR), EsSalud (PE), EPS/pensión (CO)"
+ },
+ {
+  "id": "convenio_colectivo",
+  "es": "convenio colectivo",
+  "tema": "laboral_legal",
+  "patrones": [
+   "convenios? colectivos?"
+  ],
+  "comun": false,
+  "nota": "Contrato colectivo (MX), CCT (AR), contrato sindical"
+ },
+ {
+  "id": "baja_laboral",
+  "es": "baja (laboral)",
+  "tema": "laboral_legal",
+  "patrones": [
+   "bajas? (?:laborales?|m[eé]dicas?|por enfermedad)"
+  ],
+  "comun": false,
+  "nota": "Licencia médica (CL/AR), incapacidad (MX/CO), descanso médico (PE)"
+ },
+ {
+  "id": "alta_trabajador",
+  "es": "alta en la Seguridad Social",
+  "tema": "laboral_legal",
+  "patrones": [
+   "alta (?:en|de) (?:la )?seguridad social",
+   "dar de alta"
+  ],
+  "comun": false,
+  "nota": "Afiliación, registro, inscripción"
+ },
+ {
+  "id": "contrato_indefinido",
+  "es": "contrato indefinido",
+  "tema": "laboral_legal",
+  "patrones": [
+   "contratos? indefinidos?"
+  ],
+  "comun": false,
+  "nota": "Contrato por tiempo indeterminado (MX), planta (AR/CL)"
+ },
+ {
+  "id": "contrato_temporal",
+  "es": "contrato temporal",
+  "tema": "laboral_legal",
+  "patrones": [
+   "contratos? temporal(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Contrato eventual (MX), a plazo fijo (CL/AR)"
+ },
+ {
+  "id": "horas_extra",
+  "es": "horas extra",
+  "tema": "laboral_legal",
+  "patrones": [
+   "horas extras?"
+  ],
+  "comun": false,
+  "nota": "Horas extras, tiempo extra, sobretiempo (PE/DO)"
+ },
+ {
+  "id": "gestoria",
+  "es": "gestoría, asesoría",
+  "tema": "laboral_legal",
+  "patrones": [
+   "gestor[ií]as?",
+   "asesor[ií]a (?:fiscal|laboral|contable)"
+  ],
+  "comun": false,
+  "nota": "Contador, estudio contable (AR), despacho contable, asesoría (MX)"
+ },
+ {
+  "id": "licencia_actividad",
+  "es": "licencia de actividad",
+  "tema": "laboral_legal",
+  "patrones": [
+   "licencias? de (?:actividad|apertura|obra)"
+  ],
+  "comun": false,
+  "nota": "Patente comercial (CL/CR), habilitación comercial (AR), licencia de funcionamiento (MX/PE), permiso de operación"
+ },
+ {
+  "id": "ayuntamiento",
+  "es": "ayuntamiento",
+  "tema": "laboral_legal",
+  "patrones": [
+   "ayuntamientos?"
+  ],
+  "comun": false,
+  "nota": "Municipalidad (AR/CL/PE), alcaldía (MX/CO), municipio, delegación"
+ },
+ {
+  "id": "comunidad_autonoma",
+  "es": "comunidad autónoma",
+  "tema": "laboral_legal",
+  "patrones": [
+   "comunidad(?:es)? aut[oó]nomas?"
+  ],
+  "comun": false,
+  "nota": "Estado (MX), provincia (AR), departamento, región"
+ },
+ {
+  "id": "hacienda",
+  "es": "Hacienda",
+  "tema": "laboral_legal",
+  "patrones": [
+   "hacienda"
+  ],
+  "comun": false,
+  "nota": "SAT (MX), AFIP/ARCA (AR), SII (CL), SUNAT (PE), DIAN (CO), IRS (EE.UU.)"
+ },
+ {
+  "id": "irpf",
+  "es": "IRPF",
+  "tema": "laboral_legal",
+  "patrones": [
+   "irpf"
+  ],
+  "comun": false,
+  "nota": "ISR (MX), Ganancias (AR), impuesto a la renta"
+ },
+ {
+  "id": "impuesto_sociedades",
+  "es": "impuesto de sociedades",
+  "tema": "laboral_legal",
+  "patrones": [
+   "impuesto (?:de|sobre) sociedades"
+  ],
+  "comun": false,
+  "nota": "Impuesto sobre la renta de empresas"
+ },
+ {
+  "id": "sociedad_limitada",
+  "es": "sociedad limitada",
+  "tema": "laboral_legal",
+  "patrones": [
+   "sociedad(?:es)? limitadas?"
+  ],
+  "comun": false,
+  "nota": "S.A. de C.V. (MX), SRL (AR), SAS (CO), SpA (CL)"
+ },
+ {
+  "id": "mutua",
+  "es": "mutua",
+  "tema": "laboral_legal",
+  "patrones": [
+   "mutuas?"
+  ],
+  "comun": false,
+  "nota": "ARL (CO), ART (AR), seguro de riesgos laborales"
+ },
+ {
+  "id": "prevencion_riesgos",
+  "es": "prevención de riesgos laborales",
+  "tema": "laboral_legal",
+  "patrones": [
+   "prevenci[oó]n de riesgos laborales"
+  ],
+  "comun": false,
+  "nota": "Seguridad e higiene (AR/MX), SST (CO/PE), seguridad y salud"
+ },
+ {
+  "id": "cotizacion",
+  "es": "cotización",
+  "tema": "laboral_legal",
+  "patrones": [
+   "cotizaci[oó]n(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Aporte, cotizaciones previsionales (CL), contribución"
+ },
+ {
+  "id": "traspaso",
+  "es": "traspaso",
+  "tema": "laboral_legal",
+  "patrones": [
+   "traspasos?"
+  ],
+  "comun": false,
+  "nota": "Cesión de negocio, \"pase\" de local (AR \"llave\"), venta de fondo de comercio"
+ },
+ {
+  "id": "alquiler",
+  "es": "alquiler",
+  "tema": "laboral_legal",
+  "patrones": [
+   "alquileres?"
+  ],
+  "comun": false,
+  "nota": "Renta (MX), arriendo (CO/CL/PE/EC), alquiler (AR/UY/PE)"
+ },
+ {
+  "id": "fianza",
+  "es": "fianza",
+  "tema": "laboral_legal",
+  "patrones": [
+   "fianzas?"
+  ],
+  "comun": false,
+  "nota": "Depósito, garantía (AR/MX)"
+ },
+ {
+  "id": "dni",
+  "es": "DNI",
+  "tema": "laboral_legal",
+  "patrones": [
+   "dni",
+   "nif",
+   "cif"
+  ],
+  "comun": false,
+  "nota": "CURP/RFC (MX), CUIT (AR), RUT (CL), cédula (CO), DNI/RUC (PE)"
+ },
+ {
+  "id": "appcc",
+  "es": "APPCC",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "appcc"
+  ],
+  "comun": false,
+  "nota": "HACCP, análisis de riesgos y puntos críticos de control"
+ },
+ {
+  "id": "manipulador_alimentos",
+  "es": "manipulador de alimentos",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "manipulador(?:es|a|as)? de alimentos",
+   "carn[eé]t? de manipulador"
+  ],
+  "comun": false,
+  "nota": "Manipulador de alimentos; carné/curso de manipulación (AR carnet de manipulador, MX tarjeta de salud)"
+ },
+ {
+  "id": "camara_frigorifica",
+  "es": "cámara frigorífica",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "c[aá]maras? frigor[ií]ficas?",
+   "c[aá]maras? de fr[ií]o",
+   "c[aá]maras? de congelaci[oó]n",
+   "c[aá]maras? de refrigeraci[oó]n",
+   "c[aá]maras? congeladoras?"
+  ],
+  "comun": false,
+  "nota": "Cámara de refrigeración, cuarto frío, walk-in"
+ },
+ {
+  "id": "abatidor",
+  "es": "abatidor de temperatura",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "abatidor(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Enfriador rápido, blast chiller"
+ },
+ {
+  "id": "fifo",
+  "es": "FIFO / PEPS",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "fifo",
+   "peps",
+   "fefo"
+  ],
+  "comun": false,
+  "nota": "PEPS (primeras entradas primeras salidas)"
+ },
+ {
+  "id": "caducidad",
+  "es": "fecha de caducidad",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "caducidad(?:es)?",
+   "fechas? de caducidad"
+  ],
+  "comun": false,
+  "nota": "Fecha de vencimiento (LatAm), vencimiento, expiración"
+ },
+ {
+  "id": "consumo_preferente",
+  "es": "consumo preferente",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "consumo preferente"
+  ],
+  "comun": false,
+  "nota": "Mejor antes de, consumir preferentemente antes de"
+ },
+ {
+  "id": "desinfeccion",
+  "es": "DDD",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "ddd",
+   "desratizaci[oó]n",
+   "desinsectaci[oó]n"
+  ],
+  "comun": false,
+  "nota": "Control de plagas, fumigación"
+ },
+ {
+  "id": "control_plagas",
+  "es": "control de plagas",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "control de plagas"
+  ],
+  "comun": false,
+  "nota": "Fumigación"
+ },
+ {
+  "id": "basura",
+  "es": "cubo de basura",
+  "tema": "sanidad_higiene",
+  "patrones": [
+   "cubos? de (?:la )?basura",
+   "cubos? de residuos",
+   "cubos? de reciclaje"
+  ],
+  "comun": false,
+  "nota": "Basura; cubo (ES) = bote (MX), tacho (AR/CL/PE), caneca (CO)"
+ },
+ {
+  "id": "nevera",
+  "es": "nevera, frigorífico, arcón",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "neveras?",
+   "frigor[ií]ficos?",
+   "arcones? (?:congeladores?|frigor[ií]ficos?)"
+  ],
+  "comun": false,
+  "nota": "Heladera (AR/UY), refrigerador (MX), refri, nevera (CO/VE), frigobar"
+ },
+ {
+  "id": "fogon",
+  "es": "fogón",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "fogon(?:es)?",
+   "fogón(?:es)?",
+   "quemadores?"
+  ],
+  "comun": false,
+  "nota": "Hornalla (AR), hornilla, estufa (MX), quemador"
+ },
+ {
+  "id": "cocina_gas",
+  "es": "cocina de gas",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "cocinas? de gas"
+  ],
+  "comun": false,
+  "nota": "Cocina (ES) = estufa (MX), hornalla/cocina (AR)"
+ },
+ {
+  "id": "encimera",
+  "es": "encimera",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "encimeras?"
+  ],
+  "comun": false,
+  "nota": "Mesada (AR), meson (CO), mesón (VE/CL), tope, mesa de trabajo"
+ },
+ {
+  "id": "campana_extractora",
+  "es": "campana extractora",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "campanas? extractoras?"
+  ],
+  "comun": false,
+  "nota": "Campana de extracción, extractor, campana de humos"
+ },
+ {
+  "id": "plancha",
+  "es": "plancha",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "planchas?"
+  ],
+  "comun": false,
+  "nota": "Plancha; en MX comal, plancha, plancha asadora"
+ },
+ {
+  "id": "batidora",
+  "es": "batidora",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "batidoras?"
+  ],
+  "comun": false,
+  "nota": "Mezcladora (MX), batidora, amasadora, licuadora"
+ },
+ {
+  "id": "lavavajillas",
+  "es": "lavavajillas",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "lavavajillas"
+  ],
+  "comun": false,
+  "nota": "Lavaplatos (máquina) en LatAm; lavavajillas (ES/AR)"
+ },
+ {
+  "id": "vitrina",
+  "es": "vitrina",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "vitrinas?"
+  ],
+  "comun": false,
+  "nota": "Exhibidor, vitrina exhibidora, mostrador refrigerado"
+ },
+ {
+  "id": "mostrador",
+  "es": "mostrador",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "mostradores?"
+  ],
+  "comun": false,
+  "nota": "Mostrador, barra, counter"
+ },
+ {
+  "id": "office",
+  "es": "office",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "office"
+  ],
+  "comun": false,
+  "nota": "Antecocina, cuarto de servicio, área de servicio"
+ },
+ {
+  "id": "almacen",
+  "es": "almacén",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "almac[eé]n(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Bodega (MX/CL/CO), depósito (AR), economato"
+ },
+ {
+  "id": "economato",
+  "es": "economato",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "economato"
+  ],
+  "comun": false,
+  "nota": "Bodega, despensa, almacén de insumos"
+ },
+ {
+  "id": "vestuario",
+  "es": "vestuario",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "vestuarios?"
+  ],
+  "comun": false,
+  "nota": "Vestidor (MX), camarines (CL), vestuario"
+ },
+ {
+  "id": "aseos",
+  "es": "aseos",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "aseos?"
+  ],
+  "comun": false,
+  "nota": "Baños, sanitarios (MX), servicios, toilette (AR), servicios higiénicos (PE)"
+ },
+ {
+  "id": "extintor",
+  "es": "extintor",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "extintores?"
+  ],
+  "comun": false,
+  "nota": "Extintor, matafuegos (AR/UY)"
+ },
+ {
+  "id": "salida_humos",
+  "es": "salida de humos",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "salidas? de humos?"
+  ],
+  "comun": false,
+  "nota": "Ducto de extracción, chimenea, extracción"
+ },
+ {
+  "id": "obrador",
+  "es": "obrador",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "obrador(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Taller, laboratorio (AR/UY/CL), planta de producción, cocina central, cocina de producción"
+ },
+ {
+  "id": "estanteria",
+  "es": "estantería",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "estanter[ií]as?"
+  ],
+  "comun": false,
+  "nota": "Estante, repisa (MX), anaquel (MX/PE), góndola"
+ },
+ {
+  "id": "fregona",
+  "es": "fregona",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "fregonas?"
+  ],
+  "comun": false,
+  "nota": "Trapeador (MX), mopa, lampazo (PE), trapo de piso (AR)"
+ },
+ {
+  "id": "bayeta",
+  "es": "bayeta",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "bayetas?"
+  ],
+  "comun": false,
+  "nota": "Paño, trapo, repasador (AR), rejilla (AR), franela (MX/VE)"
+ },
+ {
+  "id": "paño_cocina",
+  "es": "paño de cocina",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "pa[ñn]os? de cocina"
+  ],
+  "comun": false,
+  "nota": "Repasador (AR/UY), trapo de cocina, jerga (MX)"
+ },
+ {
+  "id": "gorro",
+  "es": "gorro",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "gorros?"
+  ],
+  "comun": false,
+  "nota": "Cofia, gorro de cocina, redecilla"
+ },
+ {
+  "id": "cafeteria",
+  "es": "cafetería",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "cafeter[ií]as?"
+  ],
+  "comun": false,
+  "nota": "Cafetería; en CO \"café\", en AR \"confitería\""
+ },
+ {
+  "id": "bar_copas",
+  "es": "bar de copas",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "bar(?:es)? de copas"
+  ],
+  "comun": false,
+  "nota": "Bar, antro/cantina (MX), boliche (AR), discoteca"
+ },
+ {
+  "id": "chiringuito",
+  "es": "chiringuito",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "chiringuitos?"
+  ],
+  "comun": false,
+  "nota": "Paradero de playa, bar de playa, parador (AR/UY), kiosco"
+ },
+ {
+  "id": "asador",
+  "es": "asador",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "asador(?:es)?"
+  ],
+  "comun": false,
+  "nota": "Parrilla (AR/UY), asadero (CO/MX/PE), churrasquería"
+ },
+ {
+  "id": "polleria",
+  "es": "pollería",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "poller[ií]as?"
+  ],
+  "comun": false,
+  "nota": "Pollería (PE), rosticería (MX), asadero de pollo (CO), pollería"
+ },
+ {
+  "id": "pasteleria",
+  "es": "pastelería",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "pasteler[ií]as?"
+  ],
+  "comun": false,
+  "nota": "Repostería (MX/AR), pastelería (CL, PE), dulcería (MX)"
+ },
+ {
+  "id": "bodega",
+  "es": "bodega",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "bodegas?"
+  ],
+  "comun": false,
+  "nota": "Bodega (ES) = vinoteca/bodega; en LatAm también almacén"
+ },
+ {
+  "id": "vinoteca",
+  "es": "vinoteca",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "vinotecas?"
+  ],
+  "comun": false,
+  "nota": "Vinoteca"
+ },
+ {
+  "id": "catering",
+  "es": "catering",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "catering"
+  ],
+  "comun": false,
+  "nota": "Banquetes (MX), servicio de eventos, banquetería (AR/CL), alimentación por contrato"
+ },
+ {
+  "id": "banquetes",
+  "es": "banquetes",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "banquetes?"
+  ],
+  "comun": false,
+  "nota": "Banquetería, catering"
+ },
+ {
+  "id": "traspaso_negocio",
+  "es": "traspaso de negocio",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "traspasos? de(?:l)? (?:negocio|local)"
+  ],
+  "comun": false,
+  "nota": "Venta de llave, venta de negocio"
+ },
+ {
+  "id": "hosteleria",
+  "es": "hostelería",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "hosteler[ií]as?"
+  ],
+  "comun": false,
+  "nota": "Gastronomía y hotelería, restauración (ES), industria de la hospitalidad, servicio de alimentos y bebidas"
+ },
+ {
+  "id": "restauracion",
+  "es": "restauración",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "restauraci[oó]n"
+  ],
+  "comun": false,
+  "nota": "Gastronomía, servicio de comidas, restaurantería"
+ },
+ {
+  "id": "hostelero",
+  "es": "hostelero",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "hosteler[oa]s?"
+  ],
+  "comun": false,
+  "nota": "Restaurantero (MX), gastronómico, empresario gastronómico"
+ },
+ {
+  "id": "abrir_negocio",
+  "es": "montar un negocio",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "montar (?:un|el|tu) (?:negocio|local|restaurante|bar|obrador|pastel)"
+  ],
+  "comun": false,
+  "nota": "Poner un negocio (MX), abrir un local"
+ },
+ {
+  "id": "plan_negocio",
+  "es": "plan de negocio",
+  "tema": "conceptos_negocio",
+  "patrones": [
+   "planes? de negocio"
+  ],
+  "comun": false,
+  "nota": "Plan de negocios (LatAm)"
+ },
+ {
+  "id": "tercio",
+  "es": "tercio",
+  "tema": "medidas_envases",
+  "patrones": [
+   "tercios?"
+  ],
+  "comun": false,
+  "nota": "Botella de cerveza 33 cl; \"tercio\" en AR=1/3 de litro; cerveza de 330 ml"
+ },
+ {
+  "id": "garrafa",
+  "es": "garrafa",
+  "tema": "medidas_envases",
+  "patrones": [
+   "garrafas?"
+  ],
+  "comun": false,
+  "nota": "Garrafón (MX), bidón (AR), garrafa (AR=bombona de gas)"
+ },
+ {
+  "id": "bombona",
+  "es": "bombona",
+  "tema": "medidas_envases",
+  "patrones": [
+   "bombonas?"
+  ],
+  "comun": false,
+  "nota": "Tanque de gas (MX/AR), cilindro, garrafa (AR), pipa"
+ },
+ {
+  "id": "barrica",
+  "es": "barrica",
+  "tema": "medidas_envases",
+  "patrones": [
+   "barricas?"
+  ],
+  "comun": false,
+  "nota": "Barrica"
+ },
+ {
+  "id": "cubitera",
+  "es": "cubitera",
+  "tema": "medidas_envases",
+  "patrones": [
+   "cubiteras?"
+  ],
+  "comun": false,
+  "nota": "Hielera, balde de hielo"
+ },
+ {
+  "id": "envase",
+  "es": "envase",
+  "tema": "medidas_envases",
+  "patrones": [
+   "envases?"
+  ],
+  "comun": false,
+  "nota": "Empaque (MX), empaque, packaging"
+ },
+ {
+  "id": "tupper",
+  "es": "táper",
+  "tema": "medidas_envases",
+  "patrones": [
+   "t[aá]pers?",
+   "tupper(?:s|ware)?"
+  ],
+  "comun": false,
+  "nota": "Recipiente (MX), tupper, táper"
+ },
+ {
+  "id": "pajita",
+  "es": "pajita",
+  "tema": "medidas_envases",
+  "patrones": [
+   "pajitas?"
+  ],
+  "comun": false,
+  "nota": "Popote (MX), sorbete (CO/CL/PE), pitillo (CO), bombilla (AR/UY), cañita"
+ },
+ {
+  "id": "desechable",
+  "es": "desechable",
+  "tema": "medidas_envases",
+  "patrones": [
+   "desechables?"
+  ],
+  "comun": false,
+  "nota": "Descartable (AR/UY), desechable"
+ },
+ {
+  "id": "roscon",
+  "es": "roscón de Reyes",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "rosc[oó]n(?:es)?( de reyes)?"
+  ],
+  "comun": false,
+  "nota": "Rosca de Reyes (MX), rosca de Pascua (AR)"
+ },
+ {
+  "id": "cava",
+  "es": "cava",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "cavas?"
+  ],
+  "comun": false,
+  "nota": "Espumoso, espumante (AR/CL), champaña/champán"
+ },
+ {
+  "id": "torrijas",
+  "es": "torrijas",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "torrijas?"
+  ],
+  "comun": false,
+  "nota": "Torrejas, pan francés, French toast"
+ },
+ {
+  "id": "tostada",
+  "es": "tostada (de desayuno)",
+  "tema": "cocina_ingredientes",
+  "patrones": [
+   "tostadas?"
+  ],
+  "comun": false,
+  "nota": "Falso amigo: en México es tortilla frita; en ES pan tostado con topping (pan tostado)"
+ },
+ {
+  "id": "paga_extra",
+  "es": "paga extra",
+  "tema": "laboral_legal",
+  "patrones": [
+   "pagas? extras?",
+   "pagas? extraordinarias?"
+  ],
+  "comun": false,
+  "nota": "Aguinaldo (MX/AR/PA), prima (CO), gratificación (PE/CL), décimo tercer sueldo (EC), gratificaciones"
+ },
+ {
+  "id": "smi",
+  "es": "SMI",
+  "tema": "laboral_legal",
+  "patrones": [
+   "smi",
+   "salario m[ií]nimo interprofesional"
+  ],
+  "comun": false,
+  "nota": "Salario mínimo (MX/CO/PE/CL), SMVM (AR), sueldo básico (EC)"
+ },
+ {
+  "id": "iae",
+  "es": "IAE",
+  "tema": "laboral_legal",
+  "patrones": [
+   "iae",
+   "impuesto de actividades econ[oó]micas"
+  ],
+  "comun": false,
+  "nota": "Patente municipal (CL/CR), ICA (CO), giro comercial / licencia de funcionamiento (MX)"
+ },
+ {
+  "id": "recargo_equivalencia",
+  "es": "recargo de equivalencia",
+  "tema": "laboral_legal",
+  "patrones": [
+   "recargo de equivalencia"
+  ],
+  "comun": true,
+  "nota": "Régimen simplificado de IVA para comerciantes minoristas; sin equivalente directo"
+ },
+ {
+  "id": "registro_horario",
+  "es": "registro horario",
+  "tema": "laboral_legal",
+  "patrones": [
+   "registro horario",
+   "registro de jornada"
+  ],
+  "comun": false,
+  "nota": "Control de asistencia, reloj checador (MX), marcación (CL/PE)"
+ },
+ {
+  "id": "salamandra",
+  "es": "salamandra",
+  "tema": "local_equipamiento",
+  "patrones": [
+   "salamandras?"
+  ],
+  "comun": false,
+  "nota": "Gratinador, salamandra (AR), horno gratinador"
+ },
+ {
+  "id": "pase_cocina",
+  "es": "pase",
+  "tema": "sala_bar_servicio",
+  "patrones": [
+   "pase de cocina",
+   "el pase"
+  ],
+  "comun": false,
+  "nota": "Pase, mesa de pase, mesa de salida de platos, línea de emplatado"
+ },
+ {
+  "id": "partida_cocina",
+  "es": "partida (de cocina)",
+  "tema": "puestos_oficios",
+  "patrones": [
+   "partidas? de cocina",
+   "partida fr[ií]a",
+   "partida caliente"
+  ],
+  "comun": false,
+  "nota": "Estación (MX/AR), línea, sección"
+ }
+]

@@ -641,3 +641,8 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Mega-pack: ¿se amplía con los 6 kits CB? · Licencia del kit de inventario · Webhook Stripe / `PURCHASE_VALIDATION` strict · Marca CB en 7 productos
   (deliberada) · Nombre del enlace «Kit Gestión Personal» vs página «Kit Gestión de Personal y Turnos».
 - **Pasarela cripto (NOWPayments)**: piloto + rediseño UX (6-sep) y **réplica a los 48 productos el 18/19-sep (PR #81)** con `CRYPTO_PRODUCTS=all` y `CRYPTO_PRODUCTS_EXCLUDE=pro-prompts-ebook`; handoff `SESSION_HANDOFF_2026-09-18-cripto-replica-48.md`. **El pago real de prueba sigue pendiente de John** (12 €, USDT-TRC20): sin él, la entrega con IPN real no está verificada. Pendientes de John: sección legal de compra digital en `/terminos`, botón «Continuar al pago» deshabilitado o no, moneda de liquidación, copy del hub.
+
+- **13-oct (sesión Claude Code) — Guía de Equivalencias ES ↔ Hispanoamérica en los 51 productos ES (PR #130).** Correo
+  `emails/broadcast-guia-equivalencias-es.html` el **jueves 16-oct 08:00Z** (10:00 Madrid), fuera de la cola de 5 días
+  por decisión de John («Jueves 16-oct»), entre la Guía Pastelería (14-oct) y el Kit Pastelería 2.1 (19-oct). La cola
+  de producto ES no se mueve: siguiente hueco **28-nov 08:00Z**. **Revisión anual de las fichas de país: enero 2027.**

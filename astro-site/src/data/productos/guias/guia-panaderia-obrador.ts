@@ -47,7 +47,7 @@ const data: GuiaData = {
     discountBadge: '-64%',
     heroNote: 'Precio de lanzamiento — ahorra 115 EUR',
     buyBoxNote: 'Precio de lanzamiento — ahorra 115 EUR',
-    bonusTotalLabel: 'Valor total: guía + 5 bonus',
+    bonusTotalLabel: 'Valor total: guía + 6 bonus',
     bonusSaveLine: 'Ahorra 115 EUR HOY',
   },
 
@@ -123,7 +123,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía PDF + DOCX, recibes estos 5 recursos — valorados en 160 EUR',
+    subtitle: 'Además de la guía PDF + DOCX, recibes estos 6 recursos — valorados en 175 EUR',
     layout: 'split',
     items: [
       { icon: 'FileText', label: 'BONUS 1', title: 'Business Plan Modelo para Bancos', value: '49 EUR', desc: 'Plantilla rellenable con estructura profesional para presentar a bancos. Resumen ejecutivo, proyecciones financieras a 3 años específicas panadería, análisis de mercado con datos sector 2026.', image: '/lovable-uploads/ai-gallery/guia-panaderia-hero.jpg' },
@@ -131,6 +131,7 @@ const data: GuiaData = {
       { icon: 'FlaskConical', label: 'BONUS 3', title: 'Plan de Fermentación + Escandallos Harina', value: '29 EUR', desc: 'Excel completo con tiempos, hidrataciones, masa madre %, plegados para 15 tipos de pan. Calculadora de escandallos por harina T55/T65/T80/T110/espelta/centeno/sin gluten.', image: '/lovable-uploads/ai-gallery/guia-panaderia-2.jpg' },
       { icon: 'Wind', label: 'BONUS 4', title: 'Checklist Salida de Humos + Licencia Clasificada', value: '24 EUR', desc: 'Killer #1 de aperturas frustradas. 28 ítems pre-alquiler + proyecto técnico + licencia municipal + ejecución. Ahorra 4-6 meses de retraso.', image: '/lovable-uploads/ai-gallery/guia-panaderia-4.jpg' },
       { icon: 'FileSpreadsheet', label: 'BONUS 5', title: 'Calculadora CAPEX + Cronograma Gantt', value: '19 EUR', desc: 'Desglose inversión 120K-200K€ por categoría (obrador + tienda + licencias + maniobra) + cronograma Gantt 6 meses con fases críticas (proyecto humos → licencia → equipamiento).', image: '/lovable-uploads/ai-gallery/guia-panaderia-1.jpg' },
+      { icon: 'Globe', label: 'BONUS 6', title: 'Guía de Equivalencias para tu país', value: '15 EUR', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
     ],
   },
 
@@ -151,6 +152,7 @@ const data: GuiaData = {
     { q: '¿Cubre línea sin gluten certificada?', a: 'Sí. El capítulo 6 (APPCC y alérgenos cruzados) y el checklist APPCC obrador detallan los requisitos para ofrecer línea sin gluten con certificación FACE (Espiga Barrada): separación física del obrador, utensilios exclusivos, etiquetado y procedimientos.' },
     { q: '¿El DOCX es editable?', a: 'Sí. Recibes dos versiones: el PDF editorial profesional para leer y consultar, y el DOCX editable para personalizar, añadir notas, adaptar a tu proyecto concreto y presentar a socios o inversores.' },
     { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho con el contenido, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.' },
+    { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Panadería con Obrador» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «bollería» es «pan dulce» en México y «facturas» en Argentina; «salida de humos» es «ducto de extracción» en México y «conducto de extracción» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
   ],
 
   cta: {
@@ -163,6 +165,7 @@ const data: GuiaData = {
       'Business Plan modelo para bancos',
       'Manual del obrador con recetario maestro masa madre',
       'Capítulos exclusivos: salida de humos, alérgenos cruzados, B2B Horeca, cero residuos',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -194,6 +197,7 @@ const data: GuiaData = {
       { q: '¿Cuánto cuesta montar una panadería con obrador en España?', a: 'Entre 120.000€ y 200.000€ para 60-90 m² con obrador propio. La guía desglosa cada partida con costes reales del mercado español 2026 e incluye calculadora CAPEX en Excel.' },
       { q: '¿Incluye recetario de masa madre?', a: 'Sí. Manual del obrador con recetario técnico: baguette tradition, hogaza T80 masa madre, croissant clásico, brioche, panettone. Incluye refrescos diarios masa madre líquida y sólida.' },
       { q: '¿Cubre la salida de humos y licencia clasificada?', a: 'Sí. Capítulo 5 + checklist específico de 28 ítems con todos los pasos: verificación pre-alquiler, proyecto técnico, licencia municipal y ejecución. Killer #1 de aperturas frustradas.' },
+      { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Panadería con Obrador» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «bollería» es «pan dulce» en México y «facturas» en Argentina; «salida de humos» es «ducto de extracción» en México y «conducto de extracción» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

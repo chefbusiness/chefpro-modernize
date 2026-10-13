@@ -1,0 +1,134 @@
+{
+  "codigo": "PA",
+  "pais": "Panamá",
+  "moneda": "balboa (PAB), a la par con el dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El ITBMS general es del 7 %; según PwC, la tasa sube al 10 % para las bebidas alcohólicas y el alojamiento, y al 15 % para el tabaco. Un análisis publicado en La Prensa sostiene que en un restaurante que vende alcohol el impuesto se calcula sobre el total de la factura (Decreto Ejecutivo 84/2005) y que el 10 % se refiere al alcohol vendido en envase cerrado, no al servido en mesa. Confirma con la DGI cómo facturar tus bebidas.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Panamá, otros impuestos (ITBMS)",
+          "url": "https://taxsummaries.pwc.com/panama/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "La Prensa – Tome nota de estos datos tributarios (ITBMS en restaurantes)",
+          "url": "https://www.prensa.com/opinion/tome-nota-de-estos-datos-tributarios/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre, habitualmente el 10 % de la cuenta, y muchos restaurantes la añaden como línea aparte. No hemos encontrado una fuente abierta que fije un cargo de servicio obligatorio ni cómo se trata en el ITBMS. Si cobras servicio en la factura, consulta con la DGI y con el Ministerio de Trabajo antes de hacerlo y de contarlo en tu plan como ingreso.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud (MINSA), que realiza operativos en restaurantes y cierra los que no tienen sus permisos ni el carné de salud del personal, según la prensa. El director regional del MINSA recordó que un restaurante debe ofrecer comida como oferta principal y cumplir una serie de normas sanitarias. No hemos confirmado el reglamento técnico concreto ni si se exige HACCP; consulta con tu regional de salud.",
+      "fuentes": [
+        {
+          "titulo": "La Estrella de Panamá – Minsa y FTC cierran restaurantes sin permisos ni carnet de salud",
+          "url": "https://www.laestrella.com.pa/panama/nacional/minsa-ftc-cierran-restaurantes-cafeterias-locales-contar-permisos-carnet-salud-KJLE440578",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "TVN – Minsa exige normas a bares que piden operar como restaurantes",
+          "url": "https://www.tvn-2.com/nacionales/denuncian-supuestos-abusos-operativos-restaurantes-video_1_1111323.html",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "El MINSA, a través de su Dirección Regional de Salud, emite dos documentos: el carné blanco, que exige exámenes médicos (heces, orina, laboratorio), y el carné verde, que acredita las charlas de manipuladores de alimentos y se tramita con el blanco vigente. Los requisitos han cambiado con los años y no hemos confirmado la vigencia actual; consulta con tu regional de salud antes de contratar.",
+      "fuentes": [
+        {
+          "titulo": "Telemetro – Carné verde de manipuladores de alimentos: dónde retirarlo",
+          "url": "https://www.telemetro.com/nacionales/carne-verde-manipuladores-alimentos-minsa-anuncia-donde-retirarlo-n5908917",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "El trámite clave es el Aviso de Operación del Ministerio de Comercio e Industrias (MICI); un bar que quiera funcionar como restaurante debe pedir el cambio del aviso y cumplir requisitos del MINSA. Además hacen falta el permiso o aval sanitario del MINSA y los carnés del personal. No hemos podido abrir la web de Panamá Emprende ni confirmar uso de suelo, Bomberos ni la ventanilla municipal; valida cada trámite con el MICI y la municipalidad.",
+      "fuentes": [
+        {
+          "titulo": "TVN – Minsa y cambio del aviso de operación del MICI para restaurantes",
+          "url": "https://www.tvn-2.com/nacionales/denuncian-supuestos-abusos-operativos-restaurantes-video_1_1111323.html",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas exige autorización específica, normalmente un permiso adicional vinculado al Aviso de Operación y la autoridad de la actividad, con restricciones de horario y zonas. No hemos confirmado las normas exactas, así que pregunta a la ventanilla única o a la municipalidad.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es la persona natural con Aviso de Operación o la sociedad anónima; las sociedades de responsabilidad limitada también se usan. No hemos podido confirmar la existencia de un régimen simplificado equivalente al autónomo. Consulta a la DGI y a Panamá Emprende antes de decidir.",
+      "fuentes": [
+        {
+          "titulo": "DGI Panamá",
+          "url": "http://dgi.mef.gob.pa/itbms/Itbms"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y hasta 48 semanales. El décimo tercer mes se paga en tres partidas: 15 de abril, 15 de agosto y 15 de diciembre, cada una equivale a lo devengado en el cuatrimestre dividido entre 12 (Decreto de Gabinete 221 de 1971). La seguridad social es la Caja de Seguro Social; las cuotas de trabajador y empleador han cambiado con la reforma reciente, así que confírmalas en la CSS.",
+      "fuentes": [
+        {
+          "titulo": "Embajada de España en Panamá – Trabajar en Panamá (jornada)",
+          "url": "https://exteriores.gob.es/Embajadas/panama/es/ViajarA/Paginas/Trabajar-en-Panam%c3%a1.aspx",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Softland Panamá – Décimo tercer mes y Decreto de Gabinete 221 de 1971",
+          "url": "https://softland.com/pa/?p=21245",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Panamá, seguridad social",
+          "url": "https://taxsummaries.pwc.com/panama/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "En el mercado se compra por libra para carne, queso y verduras, y por galón para líquidos; las bebidas se piden por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. El quintal también se usa para sacos de granos. En supermercados modernos aparecen precios en kilos y en libras a la vez.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El balboa existe solo como moneda acuñada y circula junto con el dólar estadounidense, que es el papel moneda. El efectivo domina en negocios pequeños, y se usan tarjetas y Yappy, la app de pagos entre bancos. En delivery operan PedidosYa, Rappi y Uber Eats.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Los apoyos públicos incluyen la Autoridad de la Micro, Pequeña y Mediana Empresa (AMPYME) y la plataforma Panamá Emprende. Comprueba en cada web qué programas siguen vigentes, y sus requisitos, antes de contar con financiación o asesoría pública, y pide siempre confirmación escrita de las condiciones.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos habituales son la «fonda» (casa de comidas con plato del día), el comedor, la cafetería, la marisquería y el puesto de comida callejera junto a la costa. La «fonda» equivale al bar de menú español, y los «quioscos» venden fritos y bebidas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el 7 % del ITBMS, y confirma con la DGI cómo se aplica el tipo del 10 % a las bebidas alcohólicas de tu carta. Sustituye el APPCC por el permiso sanitario del MINSA. Añade el décimo tercer mes, en tres partidas, y la cotización de la CSS al coste de personal. Usa el dólar como moneda y las compras en libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«fonda» es una casa de comidas, no un lugar de alojamiento",
+    "«chuleta» en Panamá es un corte de cerdo frito; no la chuleta española de ternera",
+    "«tamal» panameño se envuelve en hoja de plátano y lleva pollo o cerdo",
+    "«chicha» es una bebida refrescante de frutas, no solo alcohol"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+ "kit-escandallos": {
+  "producto": "Kit de Escandallos",
+  "ejemplos": "«ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia"
+ },
+ "pack-appcc": {
+  "producto": "Pack APPCC",
+  "ejemplos": "«almacén» es «bodega» en México y «depósito» en Argentina; «albarán» es «nota de remisión» en México y «remito» en Argentina"
+ },
+ "kit-tareas": {
+  "producto": "Kit de Tareas",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina"
+ },
+ "kit-tareas-cafeteria": {
+  "producto": "Kit de Tareas Cafetería",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «bollería» es «pan dulce» en México y «pastelería» en Colombia"
+ },
+ "kit-tareas-pizzeria": {
+  "producto": "Kit de Tareas Pizzería",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina"
+ },
+ "kit-tareas-hamburgueseria": {
+  "producto": "Kit de Tareas Hamburguesería",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina"
+ },
+ "kit-tareas-dark-kitchen": {
+  "producto": "Kit de Tareas Dark Kitchen",
+  "ejemplos": "«almacén» es «bodega» en México y «depósito» en Argentina; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina"
+ },
+ "kit-tareas-pasteleria": {
+  "producto": "Kit de Tareas Pastelería",
+  "ejemplos": "«tarta» es «pastel» en México y «torta» en Argentina; «bollería» es «pan dulce» en México y «pastelería» en Colombia"
+ },
+ "kit-tareas-bar": {
+  "producto": "Kit de Tareas Bar",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia"
+ },
+ "kit-tareas-catering": {
+  "producto": "Kit de Tareas Catering",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia"
+ },
+ "kit-tareas-hotel": {
+  "producto": "Kit de Tareas Hotel",
+  "ejemplos": "«bollería» es «pan dulce» en México y «facturas» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia"
+ },
+ "kit-tareas-heladeria": {
+  "producto": "Kit de Tareas Heladería",
+  "ejemplos": "«almacén» es «bodega» en México y «depósito» en Argentina; «tarta» es «pastel» en México y «torta» en Colombia"
+ },
+ "kit-tareas-chocolateria": {
+  "producto": "Kit de Tareas Chocolatería",
+  "ejemplos": "«almacén» es «bodega» en México y «depósito» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia"
+ },
+ "kit-tareas-restaurante-creativo": {
+  "producto": "Kit de Tareas Restaurante Creativo",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia"
+ },
+ "kit-tareas-chef-privado": {
+  "producto": "Kit de Tareas Chef Privado",
+  "ejemplos": "«nevera» es «refrigerador» en México y «heladera» en Argentina; «ración» es «orden» en México y «porción» en Colombia"
+ },
+ "kit-gestion-personal": {
+  "producto": "Kit de Gestión de Personal",
+  "ejemplos": "«cuadrante» es «rol de turnos» en México y «grilla de horarios» en Argentina; «cotización» es «cuotas obrero-patronales» en México y «aportes» en Colombia"
+ },
+ "kit-inventario": {
+  "producto": "Kit de Inventario",
+  "ejemplos": "«almacén» es «bodega» en México y «depósito» en Argentina; «albarán» es «nota de remisión» en México y «remito» en Argentina"
+ },
+ "guia-dark-kitchen": {
+  "producto": "Guía Dark Kitchen",
+  "ejemplos": "«escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «beneficio» es «utilidad» en México y «ganancia» en Argentina"
+ },
+ "guia-restaurante-gastronomico": {
+  "producto": "Guía Restaurante Gastronómico",
+  "ejemplos": "«tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "guia-food-cost-ingenieria-menu": {
+  "producto": "Guía Food Cost + Ingeniería de Menú",
+  "ejemplos": "«escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «ración» es «orden» en México y «porción» en Colombia"
+ },
+ "manual-manager-restaurante": {
+  "producto": "Manual del Manager de Restaurante",
+  "ejemplos": "«cuadrante» es «rol de turnos» en México y «grilla de horarios» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "manual-chef-ejecutivo": {
+  "producto": "Manual del Chef Ejecutivo",
+  "ejemplos": "«ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia"
+ },
+ "guia-pasteleria-obrador": {
+  "producto": "Cómo Montar una Pastelería",
+  "ejemplos": "«tarta» es «pastel» en México y «torta» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia"
+ },
+ "guia-chocolateria-obrador": {
+  "producto": "Cómo Montar una Chocolatería Boutique & Atelier",
+  "ejemplos": "«escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia"
+ },
+ "guia-churreria-chocolateria": {
+  "producto": "Cómo Montar una Churrería-Chocolatería",
+  "ejemplos": "«ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia"
+ },
+ "guia-restaurante-casual": {
+  "producto": "Guía Restaurante Casual",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «cuadrante» es «rol de turnos» en México y «cuadro de turnos» en Colombia"
+ },
+ "guia-restaurante-mexicano": {
+  "producto": "Guía Restaurante Mexicano",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «cuadrante» es «rol de turnos» en México y «cuadro de turnos» en Colombia"
+ },
+ "guia-restaurante-peruano": {
+  "producto": "Guía Restaurante Peruano",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «cuadrante» es «rol de turnos» en México y «cuadro de turnos» en Colombia"
+ },
+ "guia-restaurante-japones": {
+  "producto": "Guía Restaurante Japonés",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «gambas» es «camarones» en México y «langostinos» en Argentina"
+ },
+ "guia-restaurante-nikkei": {
+  "producto": "Guía Restaurante Nikkei",
+  "ejemplos": "«gambas» es «camarones» en México y «langostinos» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "mega-pack-tareas": {
+  "producto": "Mega Pack Tareas",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «almacén» es «bodega» en México y «depósito» en Argentina"
+ },
+ "kit-plan-financiero": {
+  "producto": "Kit Plan Financiero",
+  "ejemplos": "«tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «beneficio» es «utilidad» en México y «ganancia» en Argentina"
+ },
+ "kit-tareas-sushi-bar": {
+  "producto": "Kit de Tareas Sushi Bar",
+  "ejemplos": "«camarero» es «mesero» en México y «mozo» en Argentina; «gambas» es «camarones» en México y «langostinos» en Argentina"
+ },
+ "kit-tareas-taqueria": {
+  "producto": "Kit de Tareas Taquería Mexicana",
+  "ejemplos": "«almacén» es «bodega» en México y «depósito» en Argentina; «cacahuete» es «cacahuate» en México y «maní» en Colombia"
+ },
+ "kit-tareas-asador": {
+  "producto": "Kit de Tareas Asador",
+  "ejemplos": "«asador» es «asadero» en México y «parrilla» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "kit-tareas-marisqueria": {
+  "producto": "Kit de Tareas Marisquería",
+  "ejemplos": "«gambas» es «camarones» en México y «langostinos» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "kit-tareas-tapas-bar": {
+  "producto": "Kit de Tareas Tapas Bar",
+  "ejemplos": "«ración» es «orden» en México y «porción» en Argentina; «pimiento» es «morrón» en México y «pimentón» en Colombia"
+ },
+ "kit-tareas-food-truck": {
+  "producto": "Kit de Tareas Food Truck",
+  "ejemplos": "«nevera» es «refrigerador» en México y «heladera» en Argentina; «bocadillo» es «torta» en México y «sándwich» en Colombia"
+ },
+ "kit-tareas-panaderia": {
+  "producto": "Kit de Tareas Panadería",
+  "ejemplos": "«bollería» es «pan dulce» en México y «facturas» en Argentina; «rebozado» es «empanizado» en México y «apanado» en Colombia"
+ },
+ "guia-panaderia-obrador": {
+  "producto": "Guía Panadería con Obrador",
+  "ejemplos": "«bollería» es «pan dulce» en México y «facturas» en Argentina; «salida de humos» es «ducto de extracción» en México y «conducto de extracción» en Argentina"
+ },
+ "plan-negocio-bar-restaurante": {
+  "producto": "Plan de Negocio Bar-Restaurante",
+  "ejemplos": "«tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "plan-negocio-tapas-bar": {
+  "producto": "Plan de Negocio Tapas Bar",
+  "ejemplos": "«ración» es «orden» en México y «porción» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia"
+ },
+ "plan-negocio-cafeteria": {
+  "producto": "Plan de Negocio Cafetería",
+  "ejemplos": "«bollería» es «pan dulce» en México y «facturas» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia"
+ },
+ "plan-negocio-panaderia": {
+  "producto": "Plan de Negocio Panadería",
+  "ejemplos": "«bollería» es «pan dulce» en México y «facturas» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia"
+ },
+ "plan-negocio-food-truck": {
+  "producto": "Plan de Negocio Food Truck",
+  "ejemplos": "«tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «paga extra» es «aguinaldo» en México y «prima de servicios» en Colombia"
+ },
+ "plan-negocio-cocteleria-eventos": {
+  "producto": "Plan de Negocio Coctelería de Eventos",
+  "ejemplos": "«pajita» es «popote» en México y «sorbete» en Argentina; «nevera» es «refrigerador» en México y «heladera» en Argentina"
+ },
+ "plan-negocio-parrillero-asador-eventos": {
+  "producto": "Plan de Negocio Parrillero / Asador Eventos",
+  "ejemplos": "«asador» es «asadero» en México y «parrilla» en Argentina; «tesorería» es «flujo de efectivo» en México y «flujo de caja» en Colombia"
+ },
+ "plan-negocio-paellero-eventos": {
+  "producto": "Plan de Negocio Paellero / Paella Eventos",
+  "ejemplos": "«ración» es «orden» en México y «porción» en Argentina; «fogón» es «quemador» en México y «hornilla» en Colombia"
+ },
+ "plan-chef-privado-showcooking-eventos": {
+  "producto": "Plan de Negocio Chef Privado / Showcooking a Domicilio",
+  "ejemplos": "«tarta» es «pastel» en México y «torta» en Argentina; «nevera» es «refrigerador» en México y «heladera» en Argentina"
+ },
+ "plan-catering-tematico-eventos": {
+  "producto": "Plan de Negocio para Catering & Kit Temático para Eventos",
+  "ejemplos": "«tesorería» es «flujo de efectivo» en México y «flujo de caja» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina"
+ },
+ "pro-prompts-ebook": {
+  "producto": "Pro Prompts Library",
+  "ejemplos": "«escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina"
+ }
+}

@@ -1,0 +1,124 @@
+{
+  "como_usar": "Los productos de AI Chef Pro se construyeron sobre el marco profesional de España a propósito: da rigor, método y una base probada. Esta guía los traslada a tu país. Empieza por la leyenda de códigos de país de esta misma página y localiza el tuyo. En la sección 1 verás cómo se dicen en tu país las palabras que usa tu producto: puestos, utensilios y conceptos de gestión. En la sección 4 tienes una ficha de una página con impuestos, normas sanitarias, aspectos laborales y licencias de apertura. Después, abre tus archivos de Excel y cambia los parámetros en las celdas verdes, que es como marcamos en nuestros kits las celdas editables: tipo de impuesto, costes laborales, moneda y unidades. Con eso, la plantilla habla tu idioma y trabaja con tus números. No necesitas rehacer nada ni empezar de cero: la técnica de cocina y la gestión funcionan igual en Quito que en Madrid. Adapta, prueba y ajusta con calma.",
+  "aviso": "Los datos de esta guía se consultaron en octubre de 2026 en fuentes oficiales o fiables, que figuran en la ficha de cada país. Las normas cambian con el tiempo. Lo marcado como «Orientativo» debes confirmarlo con la autoridad local antes de actuar. Esta guía es una orientación práctica para tu negocio y no constituye asesoría legal ni fiscal. Ante una decisión importante, consulta con un profesional de tu país.",
+  "nota_tipo": {
+    "kit_tareas": "Tu kit de tareas está pensado con los puestos, los equipos y las tareas de limpieza y seguridad alimentaria tal como se nombran en España. En tu país muchas palabras cambian: el mismo puesto o la misma tarea puede llamarse de otra forma. Renombra las columnas y las tareas con tus términos locales y deja que tu equipo reconozca cada línea a la primera. Revisa también los controles de higiene: alinéalos con la norma sanitaria de tu país, que encontrarás en tu ficha de la sección 4. La tabla siguiente te muestra los términos de tu kit y sus equivalentes.",
+    "kit_excel": "Tu kit de Excel funciona con parámetros que debes ajustar a tu país: tasa de impuesto, costes de seguridad social, moneda y unidades. Cámbialos en las celdas verdes y todo el libro recalcula. Las recetas están en g, kg y l; si en tu mercado compras por libra u otra unidad local, conviértela con la tabla de la sección 3. Renombra también los encabezados con las palabras que usa tu equipo. La tabla siguiente recoge los términos del kit y cómo se dicen en tu país.",
+    "plan_negocio": "Tu plan de negocio nombra impuestos, costes laborales, forma jurídica, licencias y financiación tal como funcionan en España. Antes de enseñárselo a un banco o a un inversor, sustituye esos datos por los de la ficha de tu país (sección 4). Cambia también los precios en euros por los de tu moneda y revisa las cifras del Excel en las celdas verdes. Así tu plan habla el idioma de quien lo va a leer. La tabla siguiente te ayuda con el vocabulario del documento.",
+    "guia_manual": "Tu guía o manual cita normas españolas como referencia de rigor. En tu país existe una autoridad y una norma equivalentes: búscalas en la ficha de la sección 4 y úsalas como base cuando apliques lo aprendido. Las técnicas de cocina y los métodos de gestión funcionan igual en cualquier lugar; lo que cambia es el marco legal y parte del vocabulario. La tabla siguiente muestra las palabras del producto y sus equivalentes en tu país, para que leas y apliques cada capítulo con naturalidad.",
+    "ebook": "Tu eBook de prompts funciona en cualquier país, pero conviene pedirle al agente que responda con tu vocabulario. Añade una frase al final del prompt, por ejemplo: «responde con el vocabulario profesional de México». Después usa el glosario de esta guía para ajustar los resultados: cambia los términos que no se usan en tu zona y revisa impuestos, unidades y normas con la ficha de tu país. La tabla siguiente reúne las palabras clave que te encontrarás y cómo se dicen en cada lugar."
+  },
+  "temas": {
+    "cocina_ingredientes": "Cocina e ingredientes",
+    "puestos_oficios": "Puestos y oficios",
+    "sala_bar_servicio": "Sala, bar y servicio",
+    "gestion_finanzas": "Gestión y finanzas",
+    "laboral_legal": "Laboral y legal",
+    "sanidad_higiene": "Sanidad e higiene",
+    "local_equipamiento": "Local y equipamiento",
+    "conceptos_negocio": "Conceptos de negocio",
+    "medidas_envases": "Medidas y envases"
+  },
+  "campos": {
+    "impuesto_consumo": "Impuesto al consumo",
+    "propina_servicio": "Propina y servicio",
+    "autoridad_sanitaria": "Autoridad sanitaria",
+    "manipulador": "Manipulación de alimentos",
+    "licencias_apertura": "Licencias de apertura",
+    "alcohol": "Venta de alcohol",
+    "forma_juridica": "Forma jurídica",
+    "laboral": "Aspectos laborales",
+    "unidades_mercado": "Unidades del mercado",
+    "pagos_delivery": "Pagos y delivery",
+    "apoyos_emprendimiento": "Apoyos al emprendimiento",
+    "tipos_local": "Tipos de local",
+    "adaptar_productos": "Cómo adaptar tus productos"
+  },
+  "medidas_intro": "Todo el mundo hispanohablante cocina en sistema métrico, pero a la hora de comprar se usan unidades locales: libras, arrobas, galones y onzas, y los grados Fahrenheit en EE. UU. y Puerto Rico. Esta tabla reúne las conversiones estándar, las que valen en cualquier país. Los valores de las unidades de mercado locales, que cambian de un país a otro, los encontrarás en la ficha de cada uno, en la sección 4.",
+  "conversiones": {
+    "head": [
+      "Unidad",
+      "Equivale a",
+      "Dónde la verás"
+    ],
+    "rows": [
+      [
+        "Libra (lb)",
+        "453,6 g",
+        "EE. UU., Puerto Rico; mercados de Centroamérica y el Caribe"
+      ],
+      [
+        "Onza (oz)",
+        "28,35 g",
+        "EE. UU., Puerto Rico; envases importados"
+      ],
+      [
+        "Onza líquida US (fl oz)",
+        "29,57 ml",
+        "EE. UU., Puerto Rico; bebidas y envases importados"
+      ],
+      [
+        "Taza US",
+        "236,6 ml",
+        "Recetas estadounidenses y libros de cocina importados"
+      ],
+      [
+        "Cucharada US",
+        "14,8 ml",
+        "Recetas estadounidenses y libros de cocina importados"
+      ],
+      [
+        "Cucharadita US",
+        "4,9 ml",
+        "Recetas estadounidenses y libros de cocina importados"
+      ],
+      [
+        "Cuarto US (qt)",
+        "946 ml",
+        "EE. UU., Puerto Rico"
+      ],
+      [
+        "Galón US",
+        "3,785 l",
+        "EE. UU., Puerto Rico; aceites y lácteos en algunos mercados"
+      ],
+      [
+        "°F a °C",
+        "(°F − 32) × 5/9",
+        "EE. UU., Puerto Rico; hornos y cámaras importados"
+      ],
+      [
+        "Pie cuadrado",
+        "0,0929 m²",
+        "EE. UU., Puerto Rico; alquileres de locales"
+      ],
+      [
+        "Arroba, quintal y otras unidades locales",
+        "Varían según el país",
+        "Mira la ficha de tu país en la sección 4"
+      ]
+    ]
+  },
+  "cta": {
+    "titulo": "¿Prefieres que lo adaptemos por ti?",
+    "texto": "Si prefieres que adaptemos tu producto a la normativa de tu país, escríbenos a [info@aichef.pro](mailto:info@aichef.pro). Revisamos tus plantillas de Excel y documentos, impuestos, costes laborales y vocabulario, y te las entregamos listas para usar. Y si quieres seguir ampliando tu caja de herramientas, tienes más productos para la hostelería de tu país en [aichef.pro/productos-digitales](https://aichef.pro/productos-digitales). Cuéntanos tu país y tu tipo de negocio, y te explicamos qué habría que ajustar y en cuánto tiempo. Gracias por confiar en nosotros. Un abrazo, [John Guerrero](https://johnguerrero.es), consultor gastronómico con 29 años en alta hostelería y 15 en consultoría."
+  },
+  "bonus_landing": {
+    "title": "Guía de Equivalencias para tu país",
+    "value": "€15",
+    "desc": "Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades."
+  },
+  "dashboard_card": {
+    "title": "Guía de Equivalencias para tu país",
+    "desc": "Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto."
+  },
+  "faq_landing": {
+    "q": "¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?",
+    "a_plantilla": "Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con {producto} recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, {ejemplos}. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro."
+  },
+  "email": {
+    "asunto": "Tus productos ahora hablan tu país",
+    "preheader": "Guía de Equivalencias para tu país, incluida sin coste en los 51 productos.",
+    "cuerpo": "Hola, colegas:\n\nLa mayoría de quienes nos leen trabajan fuera de España, y nuestros productos están hechos con el marco profesional español. Desde hoy, los 51 productos digitales de AI Chef Pro incluyen, sin coste, su propia Guía de Equivalencias para tu país.\n\nCubre 20 países. Verás, por ejemplo, que el camarero de España es el mesero de México, el mozo de Argentina y el garzón de Chile, o que el «escandallo» se llama «costeo de recetas» o «receta estándar» en México. Además, cada país tiene una ficha de una página con impuestos, normas sanitarias, aspectos laborales, licencias de apertura y unidades de medida.\n\nSi ya compraste un producto, la encuentras en la página de descargas de tu producto, con el mismo enlace de acceso de siempre. No tienes que hacer nada más.\n\nY si prefieres que adaptemos tus plantillas a la normativa de tu país, también lo hacemos como servicio: responde a este correo o escribe a info@aichef.pro.\n\nUn abrazo,\nJohn Guerrero"
+  }
+}

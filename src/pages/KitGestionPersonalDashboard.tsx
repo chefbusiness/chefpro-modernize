@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   CalendarDays, Clock, Euro, UserPlus, Palmtree,
   Star, Users, Megaphone, Calculator,
 } from 'lucide-react';
@@ -21,6 +21,7 @@ const TEMPLATES = [
   { key: 'directorio', icon: Users, title: 'Directorio de Plantilla', desc: 'Base de datos, convenio, vencimientos de contrato y carnets.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Cambio de Turno', desc: 'Traspaso entre turnos + arqueo de caja con lectura Z y temperaturas al relevo (APPCC).' },
   { key: 'bonus-calculadora', icon: Calculator, title: 'BONUS: Calculadora Plantilla Óptima', desc: 'Cuántos empleados necesitas según tus covers y días de apertura.' },
+  { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.' },
 ];
 
 export default function KitGestionPersonalDashboard() {
@@ -62,7 +63,7 @@ export default function KitGestionPersonalDashboard() {
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">7 Plantillas + 2 Bonus · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">7 Plantillas + 3 Bonus · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;
@@ -72,7 +73,7 @@ export default function KitGestionPersonalDashboard() {
                   <div key={tpl.key} className={`rounded-xl p-5 transition-all ${isPrimary ? 'bg-white/5 border-2 border-[#FFD700]/50' : 'bg-white/5 border border-white/10 hover:border-[#FFD700]/30'}`}>
                     <div className="flex items-start gap-3 mb-3">
                       <div className="w-10 h-10 rounded-lg bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0"><Icon className="w-5 h-5 text-[#FFD700]" /></div>
-                      <div><h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3><p className="text-gray-500 text-xs mt-0.5">.xlsx</p></div>
+                      <div><h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3><p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'guia-equivalencias' ? '.docx' : '.xlsx'}</p></div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>
                     {loading ? <Loader2 className="w-5 h-5 text-gray-500 animate-spin" /> : url ? (
@@ -86,7 +87,7 @@ export default function KitGestionPersonalDashboard() {
             </div>
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">Compatibles con Excel, Google Sheets, LibreOffice, Numbers + Imprimible A4</p>
-              <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y ábrelos con tu programa favorito.</p>
+              <p className="text-gray-400 text-sm">Descarga los archivos y ábrelos con tu programa favorito.</p>
             </div>
           </div>
         </section>

@@ -1,0 +1,121 @@
+{
+  "codigo": "VE",
+  "pais": "Venezuela",
+  "moneda": "bolívar digital (VES); el dólar estadounidense circula ampliamente en precios y pagos",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA general es del 16 %; la ley permite fijar el tipo cada año entre el 8 % y el 16,5 %, así que confirma el vigente en el SENIAT. Además existe el IGTF (impuesto a las grandes transacciones financieras), del 3 % sobre ciertos pagos en divisas o criptoactivos, que ha cambiado de alcance varias veces; revisa si tu local queda obligado a cobrarlo. En la carta conviene indicar si los precios incluyen IVA y cómo se convierten dólares y bolívares.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Venezuela, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/venezuela/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "En Venezuela no hemos encontrado una norma que fije un porcentaje obligatorio de servicio; la costumbre es cobrar un 10 % sobre el consumo. Si lo cobras, la Sala Social del TSJ ha reiterado que ese 10 % y las propinas habituales forman parte del salario del trabajador, con efecto en utilidades, vacaciones y prestaciones. Indica claramente en la carta que lo cobras, lleva un registro de su reparto y consulta con un laboralista cómo contabilizarlo.",
+      "fuentes": [
+        {
+          "titulo": "Acceso a la Justicia — La propina como componente del salario (TSJ, Sala Social, sentencia 40 de 2020)",
+          "url": "https://accesoalajusticia.org/la-propina-como-componente-del-salario/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "Según el Reglamento General de Alimentos (Gaceta Oficial 25.864, de enero de 1959), corresponde al ministerio de salud (entonces Sanidad y Asistencia Social) todo lo relacionado con la higiene de la alimentación: determinar las condiciones sanitarias de la venta y el consumo de alimentos y fiscalizar su cumplimiento. No hemos podido confirmar el nombre exacto del permiso para restaurantes ni si se exige HACCP o buenas prácticas; pregunta en la dirección de salud de tu estado.",
+      "fuentes": [
+        {
+          "titulo": "Justia Venezuela — Reglamento General de Alimentos (Gaceta Oficial 25.864 del 16-1-1959)",
+          "url": "https://venezuela.justia.com/federales/reglamentos/reglamento-general-de-alimentos/gdoc",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "No hemos podido confirmar con fuente abierta el nombre ni el emisor del carné o certificado de manipulador de alimentos en Venezuela. En la práctica, las autoridades sanitarias suelen pedir un certificado de salud al personal que manipula alimentos y, a veces, una charla de higiene. Pregunta en la dirección de salud de tu municipio qué documentos exigen, con qué vigencia y dónde se tramitan antes de contratar al equipo de cocina y sala.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los pasos habituales son: constituir la empresa en el Registro Mercantil, obtener el RIF en el SENIAT, solicitar la licencia de actividades económicas en la alcaldía de tu municipio, y reunir la conformidad de uso, el permiso de bomberos y el permiso sanitario. Una sentencia de 2013 sobre Chacao muestra que la alcaldía puede pedirte esos documentos, además del contrato de alquiler o la propiedad del local. Los requisitos cambian por municipio y no hemos verificado listas oficiales: consulta tu alcaldía.",
+      "fuentes": [
+        {
+          "titulo": "vLex Venezuela — Sentencia del Juzgado Superior Segundo Civil y Contencioso Administrativo de Caracas (15-7-2013), documentos exigidos por la alcaldía de Chacao",
+          "url": "https://vlexvenezuela.com/vid/dianamen-direccia-administracia-alcalda-450376146",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "No hemos podido confirmar con fuente abierta el permiso exacto para vender alcohol en Venezuela. Normalmente depende de la alcaldía y de la normativa fiscal sobre licores, y hay restricciones de venta en fechas concretas, como elecciones, que se anuncian oficialmente. Consulta en la alcaldía de tu municipio si tu licencia de actividad económica cubre la venta de bebidas alcohólicas o si necesitas un permiso aparte.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Las formas habituales para un pequeño negocio son la compañía anónima (C.A.) y la sociedad de responsabilidad limitada (S.R.L.), ambas inscritas en el Registro Mercantil, y el comerciante individual con su firma personal. No hemos podido verificar en fuente abierta la existencia de un régimen simplificado equivalente al autónomo español, ni sus condiciones. Consulta con un contador o con el SENIAT qué régimen te corresponde antes de decidir la estructura.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna máxima es de 8 horas diarias y 40 semanales (LOTTT, artículo 173). Las utilidades son, como mínimo, 30 días de salario y, como máximo, cuatro meses (artículo 131). Al disfrutar las vacaciones se paga además un bono vacacional de mínimo 15 días de salario, más un día por año de servicio hasta 30 (artículo 192). Existen prestaciones sociales y cotizaciones al IVSS (el empleador aporta entre el 9 % y el 11 % según el riesgo de la empresa). Confirma los topes vigentes con un laboralista.",
+      "fuentes": [
+        {
+          "titulo": "Clyde & Co — Working hours regime in Venezuela (LOTTT, art. 173)",
+          "url": "https://www.clydeco.com/es/insights/2026/03/working-hours-regime-in-venezuela-legal-analysis-o",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Obando, Actualidad Contable FACES (ULA) — Aspectos empresariales en la nueva LOTTT (arts. 131 y 192)",
+          "url": "https://biblat.unam.mx/hevila/ActualidadcontableFACES/2014/vol17/no29/6.pdf",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Venezuela, individual: other taxes (seguridad social)",
+          "url": "https://taxsummaries.pwc.com/venezuela/individual/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "La compra y venta se hace en kilos y litros del sistema métrico; la «libra» aparece en el habla coloquial y en algunas carnicerías, pero no hemos podido confirmar su valor exacto, así que pesa siempre en kilos. Las botellas y cajas se compran por unidades de 750 ml y 12 unidades. Para recetas importadas, convierte onzas y libras a gramos. La temperatura se da en °C. Evita pagar por «arroba» sin confirmar el peso en kilos.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto operan Yummy y PedidosYa. Entre los medios de pago, el pago móvil (transferencia interbancaria inmediata en bolívares) es muy usado, igual que Zelle, el efectivo en divisas y las tarjetas; Cashea es una app de compras a cuotas para clientes. Los precios se publican a menudo en dólares y se cobran en bolívares a la tasa del día. Decide cómo mostrar el precio y con qué tasa convertirás, y deja esa política visible en caja.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "No hemos podido verificar con una fuente abierta programas públicos vigentes de apoyo a emprendedores en Venezuela, ni su operatividad actual. Existen instituciones estatales de fomento de la pequeña y mediana empresa y la banca privada ofrece algunos créditos, pero su disponibilidad cambia mucho. Antes de contar con financiación pública en tu plan de negocio, consulta directamente con tu banco y con los organismos competentes, y planifica con capital propio como base.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos habituales: la «arepera» (arepas rellenas, equivalente al bocadillería española), la «fuente de soda» (mostrador de helados, batidos y comida rápida), la «panadería» venezolana (con charcutería y almuerzo), la «tasca» (bar de tapas y cerveza), la «pollera» o «pollo en brasas», el «carrito» de perros calientes y el restaurante de comida criolla con «pabellón». Los «pasapalos» sirven de picoteo y aperitivo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA español por el 16 % en la casilla de parámetros fiscales y confirma el tipo vigente. Decide la moneda base de la carta (bolívares, dólares o ambas) y la tasa de conversión, y no la mezcles dentro de una misma fórmula. Reemplaza el convenio de hostelería por la LOTTT y suma utilidades y bono vacacional a la partida de personal. Presenta el plan APPCC como programa de higiene ante la autoridad sanitaria local.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«pasapalos» son las tapas o aperitivos",
+    "«cambur» es el plátano (la banana), mientras que «plátano» es el plátano macho para cocinar",
+    "«caraota» es la alubia o judía negra",
+    "«cachapa» es una tortita de maíz tierno, no una torta",
+    "«tequeño» es un bastón de queso envuelto en masa y frito",
+    "«pana» es un amigo, no una tela"
+  ]
+}

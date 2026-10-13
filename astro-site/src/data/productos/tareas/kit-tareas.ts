@@ -23,7 +23,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Restaurante | AI Chef Pro',
     description:
-      'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para restaurante casual con las tareas más habituales ya escritas — apertura, cierre, caja, partidas, manager, perfiles, eventos. Imprime, delega y firma. Solo €14.',
+      'Kit de 9 plantillas + 3 bonus (12 ficheros): checklists operativos para restaurante casual con las tareas más habituales ya escritas — apertura, cierre, caja, partidas, manager, perfiles, eventos. Imprime, delega y firma. Solo €14.',
     keywords:
       'checklist restaurante, tareas apertura restaurante, checklist cierre cocina, lista tareas cocina, checklist manager restaurante, tareas recurrentes hostelería, mise en place checklist, plantilla tareas restaurante, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas.jpg',
@@ -32,7 +32,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes Pro — Checklists Operativos para Restaurante',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para restaurante casual con 491 tareas ya escritas — apertura, cierre, caja, partidas de cocina, manager, perfiles profesionales, eventos y festivos.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para restaurante casual con 491 tareas ya escritas — apertura, cierre, caja, partidas de cocina, manager, perfiles profesionales, eventos y festivos.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -78,6 +78,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes',
   },
@@ -113,7 +117,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Restaurante Casual — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 491 tareas de restaurante ya escritas: apertura, cierre, negocio, caja, partidas de cocina, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 491 tareas de restaurante ya escritas: apertura, cierre, negocio, caja, partidas de cocina, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre por área (cocina, sala, barra)',
       'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
@@ -129,7 +133,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '491 tareas de restaurante casual ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
@@ -235,7 +239,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -252,6 +256,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '22 fechas clave de hostelería (San Valentín, Día del Padre, comuniones, Semana Santa, terraza, Navidad, puente de diciembre) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -294,11 +306,15 @@ const data: KitTareasData = {
       q: '¿Incluye tareas para eventos y festivos?',
       a: 'Sí. Hay checklists específicos para eventos privados (48h antes → post-evento), San Valentín, Navidad/Nochevieja, apertura y cierre de temporada de terraza.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
-    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 3 bonus (12 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: cocina, sala, barra',
       'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
@@ -309,6 +325,7 @@ const data: KitTareasData = {
       'Eventos y festivos: San Valentín, Navidad, terraza',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €14',
   },

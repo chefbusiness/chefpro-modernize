@@ -67,6 +67,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Taquería Mexicana» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «cacahuete» es «cacahuate» en México y «maní» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Taquería Mexicana',
   },
@@ -213,7 +217,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de los 9 checklists principales, recibirás estos recursos adicionales — valorados en €34',
+      'Además de los 9 checklists principales, recibirás estos recursos adicionales — valorados en €49',
     items: [
       {
         icon: 'Megaphone',
@@ -230,6 +234,14 @@ const data: KitTareasData = {
         value: '€19',
         desc: '12 meses con temporadas y producto, festividades mexicanas (Candelaria, chiles en nogada, Día de Muertos, posadas) y campañas españolas de terraza y Navidad, mantenimientos de equipo y formación del equipo.',
         image: '/lovable-uploads/ai-gallery/tareas-taqueria-trompo.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -272,12 +284,16 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas y sin complicaciones.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Taquería Mexicana» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «cacahuete» es «cacahuate» en México y «maní» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Tu Taquería a Estándar Sanidad — En 11 Checklists',
     subtitle:
-      '9 checklists + 2 bonus que organizan las áreas críticas de tu taquería: trompo, nixtamal y tortillería, barra de salsas, alérgenos, perfiles. Por menos de lo que cuesta una taquiza para 10 personas.',
+      '9 checklists + 3 bonus que organizan las áreas críticas de tu taquería: trompo, nixtamal y tortillería, barra de salsas, alérgenos, perfiles. Por menos de lo que cuesta una taquiza para 10 personas.',
     items: [
       'Apertura y cierre completo de trompo, barra de salsas y tortillería',
       'Trompo al pastor: marinado, montaje, sonda y rendimiento en tacos por kilo',
@@ -287,6 +303,7 @@ const data: KitTareasData = {
       'Calendario anual de tareas: festividades mexicanas y campañas españolas',
       'BONUS: Briefing de Servicio (€15)',
       'BONUS: Calendario Anual de Tareas (€19)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS TAQUERÍA MEXICANA — €14',
   },

@@ -1,0 +1,128 @@
+{
+  "codigo": "SV",
+  "pais": "El Salvador",
+  "moneda": "dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA (Impuesto a la Transferencia de Bienes Muebles y a la Prestación de Servicios) es del 13 % y grava los servicios prestados en el país; PwC no incluye la restauración entre los servicios exentos, así que la comida y la bebida de restaurante tributan. La declaración es mensual. Confirma con tu contador si los precios de carta deben mostrarse con IVA incluido y si tu bebida alcohólica o tabaco lleva impuestos específicos.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — El Salvador, otros impuestos (IVA 13 %)",
+          "url": "https://taxsummaries.pwc.com/el-salvador/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "No hemos hallado una norma que obligue a cobrar propina ni que fije su porcentaje; en la práctica es una costumbre voluntaria, con una sugerencia habitual del 10 % que algunos locales añaden como línea separada de la cuenta. Antes de incluirla en la factura, consulta a la Defensoría del Consumidor y al Ministerio de Hacienda cómo debe facturarse y si el cliente puede rechazarla.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud (MINSAL). El Código de Salud (art. 86) le encomienda supervisar las normas sobre alimentos y autorizar la instalación y el funcionamiento de los establecimientos que cumplan los requisitos. La referencia es la Norma Técnica de Alimentos (Acuerdo 150 de 2013, con reformas), que habla de «autorización sanitaria de funcionamiento». No hemos confirmado si exige HACCP ni la versión vigente: pregunta a tu unidad de salud antes de abrir.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Salud — Reforma a la Norma Técnica de Alimentos (cita arts. 83 y 86 del Código de Salud y el Acuerdo 150)",
+          "url": "https://www.jurisprudencia.gob.sv/DocumentosBoveda/R/2/2010-2019/2013/02/D82A0.HTML",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "Se suele pedir un certificado de salud o formación en manipulación de alimentos al personal, pero no hemos confirmado la norma, el emisor ni la vigencia. Consulta en la unidad de salud del MINSAL que te corresponda qué documento exigen y cada cuánto se renueva antes de contratar al personal y de abrir el local.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "El permiso sanitario lo concede el MINSAL (Código de Salud, art. 86). Lo habitual es sumar la matrícula de comercio del Centro Nacional de Registros, el NIT y el NRC de Hacienda, la licencia municipal con uso de suelo y la revisión del Cuerpo de Bomberos, además de inscribirte en el ISSS al contratar. Estos trámites no los hemos podido confirmar con fuente abierta: pregunta en tu alcaldía el orden y los requisitos.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Salud — Norma Técnica de Alimentos (arts. 83 y 86 Código de Salud)",
+          "url": "https://www.jurisprudencia.gob.sv/DocumentosBoveda/R/2/2010-2019/2013/02/D82A0.HTML",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ISSS — Inscripción de patrono",
+          "url": "https://www.isss.gob.sv/servicios/inscripcion-de-patrono-persona-natural/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de alcohol requiere permiso o licencia, otorgado en gran parte por la alcaldía, y hay restricciones de horario y zonas. La ley seca se aplica en procesos electorales. No confirmamos la norma exacta, así que pregunta en tu municipio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es el comerciante individual o la sociedad anónima de capital variable (S.A. de C.V.). No hemos podido confirmar un régimen simplificado equivalente al autónomo español ni sus topes, porque no pudimos abrir los datos de Hacienda. Consulta a tu contador y al Ministerio de Hacienda qué obligaciones simplificadas existen para negocios que facturan poco antes de decidir la forma de tu negocio.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Hacienda de El Salvador",
+          "url": "https://www.mh.gob.sv/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 44 semanales (Código de Trabajo, art. 161). El aguinaldo es obligatorio desde el año de servicio: mínimo de 15 días de salario (1 a menos de 3 años), 19 (3 a menos de 10) o 21 (10 o más), según el art. 198. El MTPS indica que ahora se puede pagar del 20 de octubre al 20 de diciembre. Debes inscribirte en el ISSS al contratar a tu primer trabajador; consulta a tu contador las cotizaciones de pensiones (AFP).",
+      "fuentes": [
+        {
+          "titulo": "MTPS — ¿Cuántas horas debo trabajar al día? (art. 161)",
+          "url": "https://www.mtps.gob.sv/2020/10/26/cuantas-horas-debo-trabajar-al-dia/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "MTPS — Orientación sobre el pago del aguinaldo (art. 198)",
+          "url": "https://www.mtps.gob.sv/2025/12/23/mtps-orienta-a-ciudadanos-sobre-el-pago-del-aguinaldo/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "MTPS — Entrega anticipada de aguinaldo: ventana 20 oct–20 dic",
+          "url": "https://www.mtps.gob.sv/2025/10/27/entrega-anticipada-de-aguinaldo-es-opcional-de-empresarios/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ISSS — Inscripción de patrono",
+          "url": "https://www.isss.gob.sv/servicios/inscripcion-de-patrono-persona-natural/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "En los mercados se compra por libra y los granos por quintal (100 libras) y los líquidos por galón; las bebidas se piden por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El dólar es la moneda de curso legal; los precios de mercado se anuncian en dólares y centavos.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El dólar estadounidense es la moneda de curso legal. Tras la reforma de la Ley Bitcoin de enero de 2025, aceptar bitcoin es voluntario; según las fuentes de prensa encontradas, el bitcoin dejó de ser de aceptación obligatoria. Cobran con tarjeta y efectivo; el delivery lo ofrecen Pedidos Ya y Uber Eats en San Salvador y repartos propios.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre los apoyos públicos están la Comisión Nacional de la Micro y Pequeña Empresa (CONAMYPE) y el Banco de Desarrollo de El Salvador (BANDESAL). Comprueba en cada web qué líneas están vigentes y sus requisitos antes de contar con financiación pública.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "El formato más característico es la pupusería, que vende pupusas (tortilla de maíz o arroz rellena de queso, frijol o chicharrón) con curtido; también hay el comedor, el «comedor» de mediodía y la pollería. En la calle abundan los puestos de comida, y la cafetería es parecida a la española.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español por el 13 % en la casilla de parámetros. Sustituye el APPCC por el permiso de funcionamiento del MINSAL y buenas prácticas. Añade el aguinaldo al coste de personal y cambia la Seguridad Social por el ISSS y las AFP. La moneda es el dólar, así que no hay que convertir ni cambiar de formato monetario. Convierte compras a libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«pupusa» es un plato salvadoreño de masa de maíz rellena, no un alimento ni insulto en España",
+    "«chucho» es un perro callejero, no un cerdo",
+    "«curtido» es un encurtido de repollo y zanahoria, no un adjetivo",
+    "«tamal» salvadoreño se envuelve en hoja de plátano y se rellena de pollo o cerdo, distinto del tamal mexicano"
+  ]
+}

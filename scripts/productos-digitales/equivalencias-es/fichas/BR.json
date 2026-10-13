@@ -1,0 +1,133 @@
+{
+  "codigo": "BR",
+  "pais": "Brasil",
+  "moneda": "real brasileño (BRL)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "Brasil no tiene un IVA único todavía: conviven el ICMS (estatal, sobre mercancías, con tipos internos entre el 17 % y el 20 %), el ISS (municipal, sobre servicios, entre el 2 % y el 5 %) y PIS/COFINS federales. La reforma tributaria sustituye estos impuestos por el IBS y la CBS; 2026 es año piloto. Para bares y restaurantes, la Ley Complementaria 214/2025 prevé una reducción del 40 % en las tasas del IBS y la CBS, que no incluye las bebidas alcohólicas.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Brasil, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/brazil/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Lei Complementar 214/2025 — régimen específico de bares y restaurantes",
+          "url": "https://modeloinicial.com.br/lei/LCP-214-2025/bares-restaurantes-@__I_V_VII_I",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La «gorjeta» (propina) es opcional a criterio del cliente, y la ley no fija un 10 %: esa cifra es costumbre. La Lei 13.419/2017 modificó la CLT para que la «taxa de serviço» que cobra el local se trate como gorjeta, no como ingreso del empleador, y se reparta entre los empleados según el convenio colectivo o, si no lo hay, una asamblea. La empresa puede retener hasta el 20 % si está en el Simples Nacional, o hasta el 33 % en otro caso.",
+      "fuentes": [
+        {
+          "titulo": "Grupo GEN — As gorjetas e as alterações da Lei 13.419/17",
+          "url": "https://blog.grupogen.com.br/juridico/2017/08/31/as-gorjetas-e-as-alteracoes-promovidas-pela-lei-no-13-41917/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La norma de referencia es la RDC 216/2004 de la ANVISA (Agencia Nacional de Vigilancia Sanitaria), el Reglamento Técnico de Buenas Prácticas para servicios de alimentación. Exige un Manual de Buenas Prácticas y POP (procedimientos operativos estandarizados) accesibles a la autoridad sanitaria. La «Vigilância Sanitária» de estados y municipios puede ampliarla e inspecciona tu local. No es HACCP español, sino un sistema de buenas prácticas.",
+      "fuentes": [
+        {
+          "titulo": "ANVISA — RDC 216/2004 (FAOLEX)",
+          "url": "https://faolex.fao.org/docs/pdf/bra181030.pdf",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "No hay un carné nacional único: la RDC 216/2004 exige que el responsable de las actividades de manipulación (el propietario o un empleado designado) haga un «curso de capacitação» con contaminantes alimentarios, enfermedades transmitidas por alimentos, manipulación higiénica y buenas prácticas, y que el control de salud de los manipuladores quede registrado. El local debe conservar los registros de capacitación. Consulta en tu Vigilância Sanitária local dónde hacerlo.",
+      "fuentes": [
+        {
+          "titulo": "ANVISA — RDC 216/2004 (FAOLEX)",
+          "url": "https://faolex.fao.org/docs/pdf/bra181030.pdf",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos habituales son el CNPJ (registro de empresa ante la Receita Federal), el «alvará de funcionamento» de la «prefeitura» (ayuntamiento), la «licença sanitária» de la Vigilância Sanitária local y el AVCB, el certificado del Corpo de Bombeiros que acredita la seguridad contra incendios. Se suelen pedir el Manual de Buenas Prácticas, los POP y el contrato de alquiler. Cada municipio añade sus propios requisitos, así que confirma la lista en tu prefeitura.",
+      "fuentes": [
+        {
+          "titulo": "Saipos — Licencias para abrir un restaurante",
+          "url": "https://saipos.com/sistema/restaurante/montar-restaurante/licencas-para-abrir-um-restaurante",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas se autoriza normalmente dentro del «alvará» municipal del local y los horarios y restricciones los fijan los municipios.  No hemos podido confirmar con fuente oficial otras restricciones ni licencias específicas; consulta con tu prefeitura qué rubro y qué horarios te corresponden antes de planificar la carta de bebidas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Los formatos habituales son el MEI (microemprendedor individual, con un tope de facturación anual bajo), la «Sociedade Limitada» (LTDA) y la SLU (sociedad limitada unipersonal), que sustituyó a la antigua EIRELI. El «Simples Nacional» es un régimen unificado de impuestos para microempresas y pequeñas empresas. Un restaurante puede ser MEI si su actividad figura en la lista oficial y no supera el tope. Confírmalo con un contador.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La CLT fija la jornada en 8 horas diarias y 44 semanales; el tiempo extra se paga con al menos un 50 % de recargo. Se pagan el «13º salário» en dos cuotas, las vacaciones de 30 días con un tercio adicional, el FGTS (8 % del salario depositado por el empleador) y el INSS de seguridad social. Hay una PEC pendiente en el Senado que bajaría la jornada a 40 horas y acabaría con la escala 6x1; no está en vigor.",
+      "fuentes": [
+        {
+          "titulo": "Razonet — CLT: direitos e como funciona",
+          "url": "https://razonet.com.br/contabilidade-digital/clt-o-que-e-quais-os-direitos-e-como-funciona-na-pratica",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "DGABC — CCJ do Senado aprova fim da escala 6x1",
+          "url": "https://www.dgabc.com.br/Noticia/4344717/ccj-do-senado-aprova-fim-da-escala-6x1-e-pec-segue-para-plenario",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Rige el sistema métrico: se compra por «quilo» y gramo, y la temperatura se da en °C. Los huevos y la fruta se venden por «dúzia» (docena), y es muy típico el «restaurante por quilo», donde el cliente se sirve y paga por el peso del plato. Las bebidas se piden por «lata», «long neck» (botella de cerveza de 355 ml) o «garrafa». Los cortes de carne en la «churrascaria» se sirven al estilo «rodízio».",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto domina iFood; 99Food (de DiDi, relanzado en 2025) y Keeta (de Meituan, activa en São Paulo) compiten por cuota. Rappi no ha logrado superar a iFood entre restaurantes. El pago estrella es el Pix (transferencia instantánea con QR), además de tarjetas y vales de comida («vale-refeição» y «vale-alimentação»). Comprueba la comisión de cada plataforma antes de dar de alta tu carta.",
+      "fuentes": [
+        {
+          "titulo": "InvestNews — 99Food e Keeta avançam sobre o iFood",
+          "url": "https://investnews.com.br/negocios/99food-e-keeta-avancam-sobre-o-ifood-na-guerra-do-delivery/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "El SEBRAE (Servicio Brasileño de Apoyo a las Micro y Pequeñas Empresas) ofrece formación y asesoría a emprendedores, y el BNDES (banco de desarrollo) canaliza créditos para pymes a través de otros bancos. Las líneas y las condiciones cambian con frecuencia y no hemos podido confirmar cuáles siguen vigentes. Consulta sus portales oficiales y la sede del SEBRAE de tu estado antes de incluir financiación en el plan.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: el «restaurante por quilo» (buffet de pago por peso), la «lanchonete» (cafetería de sándwiches y zumos), el «boteco» (bar de barrio con tapas), la «churrascaria» (asador con servicio «rodízio»), la «padaria» (panadería con cafetería y desayunos) y el «PF» o «prato feito» (menú del día con arroz, frijoles, carne y guarnición).",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA del 10 % por los impuestos brasileños (ICMS o ISS, PIS/COFINS) y, desde la reforma, IBS y CBS con la reducción del 40 % prevista. Cambia el convenio de hostelería por la CLT, con 13º salario, vacaciones con un tercio, FGTS e INSS. Presenta el plan APPCC como Manual de Buenas Prácticas conforme a la RDC 216/2004. Trata la «taxa de serviço» como gorjeta repartida entre los empleados.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«propina» en portugués significa soborno, no propina (la propina es «gorjeta»)",
+    "«batata» es patata; el boniato es «batata-doce»",
+    "«polvo» es pulpo",
+    "«presunto» es jamón cocido",
+    "«talher» es el cubierto y «garçom» es el camarero",
+    "«taxa de serviço» no es una tasa pública sino el cargo del local por el servicio"
+  ]
+}

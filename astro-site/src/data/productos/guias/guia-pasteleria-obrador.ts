@@ -77,7 +77,7 @@ const data: GuiaData = {
     price: '65 EUR',
     heroNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
     buyBoxNote: 'Pago único · acceso vitalicio · actualizaciones incluidas',
-    bonusTotalLabel: 'Incluido en el precio: la guía, las 8 herramientas Excel y los dos bonus',
+    bonusTotalLabel: 'Incluido en el precio: la guía, las 8 herramientas Excel y los tres bonus',
   },
 
   images: {
@@ -96,7 +96,7 @@ const data: GuiaData = {
 
   grid: {
     countGold: '20',
-    headingRest: ' Capítulos + 8 Plantillas + 2 Bonus',
+    headingRest: ' Capítulos + 8 Plantillas + 3 Bonus',
     subtitle: 'Criterio y decisión, no teoría. Cada capítulo se apoya en una de las ocho herramientas Excel del pack y sus tablas salen de las celdas de esos ficheros, no de ejemplos inventados. Cierra un anexo normativo con fecha de corte, para que sepas qué estaba vigente el día que se escribió y qué fechas ya sabemos que se mueven. Escrito por un chef y consultor gastronómico que lleva desde 2010 acompañando aperturas.',
     chapters: [
       { icon: 'Layers', num: '01', title: 'Qué Negocio Estás Montando: las 11 Variantes y Cuál te Toca', desc: 'Las once formas de vender pastelería comparadas por inversión, metros y personal, el mapa de problema a capítulo y a herramienta, qué es cross-sell y qué no vas a encontrar aquí, y el glosario con sus equivalencias de Hispanoamérica.' },
@@ -145,7 +145,7 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía en PDF y DOCX, recibes estas 10 piezas: las 8 herramientas Excel con fórmulas vivas y los dos bonus',
+    subtitle: 'Además de la guía en PDF y DOCX, recibes estas 11 piezas: las 8 herramientas Excel con fórmulas vivas y los tres bonus',
     // layout 'single' (una sola rejilla de 3 columnas, todas las tarjetas del mismo
     // ancho) y no 'split': el split de la línea reparte slice(0,3) en una rejilla
     // max-w-5xl y slice(3) en OTRA de 2 columnas y max-w-3xl — está pensado para 5
@@ -233,6 +233,14 @@ const data: GuiaData = {
         desc: 'Doce decisiones reales con su contexto, sus opciones, el criterio, la celda del Excel que la resuelve y la norma con su fecha cuando la hay: local con obrador o obrador aparte, comprar el abatidor o esperar, abrir con veinte referencias o con cuarenta, empezar en casa dentro de la legalidad, o el primer contrato con otro comercio. En PDF y en DOCX editable (37 páginas).',
         image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
       },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: 'Incluido en el pack',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
+      },
     ],
   },
 
@@ -258,7 +266,7 @@ const data: GuiaData = {
     { q: '¿Necesito el Pack de Plantillas APPCC si compro esta guía?', a: 'Son cosas distintas y se notan en el momento en que las usas. La guía te da el criterio y el checklist de puesta en marcha: qué tienes que tener preparado el día que venga la inspección. El Pack te da los registros que hay que rellenar y firmar cada día a partir de entonces. La guía no construye ni un registro de autocontrol a propósito, para que no pagues dos veces por lo mismo.' },
     { q: '¿Y el Kit de Escandallos?', a: 'El Kit trae el escandallo unitario de tres elaboraciones de pastelería. La guía trae la carta de apertura completa de treinta referencias con el coste de la hora de obrador imputado, que es lo que decide tu precio de verdad cuando el trabajo pesa más que la materia prima. Las tres primeras coinciden a propósito, para que no veas dos costes distintos del mismo croissant.' },
     { q: '¿Los Excel funcionan en Google Sheets y en Numbers?', a: 'Sí. No usamos fórmulas volátiles ni funciones que dependan del motor de cálculo, y no hay referencias entre libros: lo que ves en Excel se recalcula igual en Google Sheets, en LibreOffice y en Numbers. Todos los parámetros van en celda verde, sin constantes escondidas dentro de las fórmulas, y los libros guardan dentro los valores ya calculados, así que también se leen bien en el móvil y en visores que no recalculan.' },
-    { q: '¿Sirve si voy a abrir fuera de España?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera —coste de apertura, capacidad de obrador, escandallo, punto muerto, campañas y tesorería son casillas editables— y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención. El bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio: escríbenos a info@aichef.pro y te decimos qué cambia y qué cuesta.' },
+    { q: '¿Sirve si voy a abrir fuera de España?', a: 'El marco legal explicado es el español, y lo decimos en la primera pantalla. La estructura económica viaja entera —coste de apertura, capacidad de obrador, escandallo, punto muerto, campañas y tesorería son casillas editables— y el vocabulario lleva su equivalencia de Hispanoamérica en la primera mención. El bloque sanitario y de licencias hay que adaptarlo a tu país, y esa adaptación te la ofrecemos como servicio: escríbenos a info@aichef.pro y te decimos qué cambia y qué cuesta. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «tarta» es «pastel» en México y «torta» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia.' },
     { q: '¿Qué pasa cuando cambie la normativa?', a: 'Pago único con actualizaciones incluidas: entras a tu dashboard y descargas la versión nueva sin pagar nada. Además, los parámetros legales viven en celda editable con su nota y su fecha, la guía cierra con un anexo normativo con fecha de corte y hay un apartado que enseña a comprobar la vigencia de una norma en un minuto. Y las fechas que ya sabemos que se mueven están escritas: el salario mínimo y el convenio caducan a final de 2026, y el plazo transitorio de Madrid vence en marzo de 2027.' },
     { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho con el contenido, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.' },
   ],
@@ -274,6 +282,7 @@ const data: GuiaData = {
       'Licencias y registro sanitario en árbol de decisión, con cronograma y ruta crítica',
       'Carta de apertura de 30 referencias con la hora de obrador imputada, y plan financiero a 3 años',
       'Bonus: business plan modelo relleno y 12 decisiones de apertura resueltas (37 páginas)',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 65 EUR',
   },
@@ -309,7 +318,7 @@ const data: GuiaData = {
     faqs: [
       { q: '¿En qué se diferencia del Kit de Tareas Pastelería de 12 €?', a: 'El Kit te dice qué hacer cada día cuando ya has abierto: producción, encargos, alérgenos de vitrina y temperaturas. Esta guía es todo lo que hay que decidir antes de abrir: el local, la inversión, el papeleo, la carta y los números.' },
       { q: '¿Sustituye al proyecto técnico o a la gestión de licencias?', a: 'No. El proyecto técnico de un obrador y la tramitación de la licencia los firma un técnico, y la guía dice lo que cuestan. Lo que hace es que llegues a esa reunión sabiendo qué pedir, qué preguntar y qué te van a cobrar, y que no firmes un alquiler antes.' },
-      { q: '¿Sirve si voy a abrir fuera de España?', a: 'El marco legal explicado es el español. La estructura económica viaja entera en casillas editables y el vocabulario lleva su equivalencia de Hispanoamérica; el bloque sanitario y de licencias hay que adaptarlo, y esa adaptación la ofrecemos como servicio.' },
+      { q: '¿Sirve si voy a abrir fuera de España?', a: 'El marco legal explicado es el español. La estructura económica viaja entera en casillas editables y el vocabulario lleva su equivalencia de Hispanoamérica; el bloque sanitario y de licencias hay que adaptarlo, y esa adaptación la ofrecemos como servicio. Incluye la Guía de Equivalencias para tu país (20 países), con el vocabulario de este producto país por país; por ejemplo, «tarta» es «pastel» en México y «torta» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

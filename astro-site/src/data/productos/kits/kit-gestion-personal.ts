@@ -90,6 +90,10 @@ const data: KitExcelData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Gestión de Personal» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «cuadrante» es «rol de turnos» en México y «grilla de horarios» en Argentina; «cotización» es «cuotas obrero-patronales» en México y «aportes» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit Gestión de Personal y Turnos',
   },
@@ -188,7 +192,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 18 EUR',
+      'Además de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 33 EUR',
     items: [
       {
         icon: 'Megaphone',
@@ -205,6 +209,14 @@ const data: KitExcelData = {
         value: '9 EUR',
         desc: 'Calcula cuántos empleados necesitas según tus covers por servicio, días de apertura, ratio empleado/cubierto y picos de demanda. Deja de tener plantilla de más o de menos.',
         image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-oficina.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '15 EUR',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -254,6 +266,10 @@ const data: KitExcelData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Gestión de Personal» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «cuadrante» es «rol de turnos» en México y «grilla de horarios» en Argentina; «cotización» es «cuotas obrero-patronales» en México y «aportes» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -270,6 +286,7 @@ const data: KitExcelData = {
       'Directorio de plantilla con vencimientos y carnets',
       'BONUS: Briefing Cambio de Turno (9 EUR)',
       'BONUS: Calculadora Plantilla Óptima (9 EUR)',
+      'BONUS: Guía de Equivalencias para tu país (15 EUR)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE GESTIÓN — 14 EUR',
   },

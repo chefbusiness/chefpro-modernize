@@ -14,7 +14,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails | AI Chef Pro',
     description:
-      'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para bar y cocktail bar con las tareas más habituales ya escritas — apertura, cierre, coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos. Imprime, delega y firma. Solo €12.',
+      'Kit de 9 plantillas + 3 bonus (12 ficheros): checklists operativos para bar y cocktail bar con las tareas más habituales ya escritas — apertura, cierre, coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist bar, tareas bartender, checklist apertura bar, tareas coctelería, control stock bar, plantilla tareas barra, checklist cierre bar, inventario bar, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-bar.jpg',
@@ -23,7 +23,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para bar y cocktail bar con 342 tareas ya escritas — apertura, cierre, negocio, caja, coctelería, cerveza de grifo, vinos por copa, terraza, inventario y eventos.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos para bar y cocktail bar con 342 tareas ya escritas — apertura, cierre, negocio, caja, coctelería, cerveza de grifo, vinos por copa, terraza, inventario y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -61,6 +61,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Bar» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Bar / Cocktails',
   },
@@ -93,7 +97,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Bar / Cocktails — Checklists por Turno, Zona y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 342 tareas de bar ya escritas: apertura, cierre, negocio, caja, partidas de barra, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 342 tareas de bar ya escritas: apertura, cierre, negocio, caja, partidas de barra, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: barra, coctelería, terraza, bodega',
       'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
@@ -109,7 +113,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '342 tareas de bar y cocktail bar ya escritas y repartidas por turno, zona y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
@@ -215,7 +219,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -232,6 +236,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '23 fechas clave para bares (Nochevieja, Halloween, St. Patrick, Negroni Week, Carnaval, 15 de agosto, puente de diciembre) con preparación especial y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-bar-terraza.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -274,11 +286,15 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Bar» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «camarero» es «mesero» en México y «mozo» en Argentina; «arqueo / cierre de caja» es «corte de caja» en México y «cuadre de caja» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '9 plantillas + 2 bonus (11 ficheros) para bar por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 3 bonus (12 ficheros) para bar por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: barra, coctelería, terraza',
       'Partidas: spirits, batches, cerveza grifo, vinos, café',
@@ -288,6 +304,7 @@ const data: KitTareasData = {
       'Eventos: Nochevieja, Halloween, after-work, catas',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Fechas Clave (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },

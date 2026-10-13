@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   BookOpen, FileText, ClipboardList, Wrench, Calculator,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
@@ -16,6 +16,7 @@ const TEMPLATES = [
   { key: 'checklist-legal', icon: ClipboardList, title: 'Checklist de Apertura Legal', desc: '35 trámites con estado, responsable y fecha límite.' },
   { key: 'checklist-equipamiento', icon: Wrench, title: 'Checklist de Equipamiento y Obra', desc: '40 ítems con presupuesto real vs estimado.' },
   { key: 'calculadora', icon: Calculator, title: 'Calculadora de Viabilidad Financiera', desc: 'Inversión, P&L mensual y punto de equilibrio.' },
+  { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.' },
 ];
 
 export default function GuiaDarkKitchenDashboard() {
@@ -53,11 +54,11 @@ export default function GuiaDarkKitchenDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="guia-dark-kitchen" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 3 herramientas Excel listas para descargar.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 3 herramientas Excel + la Guía de Equivalencias, listas para descargar.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">Guía PDF + DOCX + 3 Excel · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">Guía PDF + DOCX + 3 Excel + Bonus · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;
@@ -67,7 +68,7 @@ export default function GuiaDarkKitchenDashboard() {
                   <div key={tpl.key} className={`rounded-xl p-5 transition-all ${isPrimary ? 'bg-white/5 border-2 border-[#FFD700]/50' : 'bg-white/5 border border-white/10 hover:border-[#FFD700]/30'}`}>
                     <div className="flex items-start gap-3 mb-3">
                       <div className="w-10 h-10 rounded-lg bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0"><Icon className="w-5 h-5 text-[#FFD700]" /></div>
-                      <div><h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3><p className="text-gray-500 text-xs mt-0.5">{i < 2 ? (i === 0 ? '.pdf' : '.docx') : '.xlsx'}</p></div>
+                      <div><h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3><p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'guia-equivalencias' ? '.docx' : i < 2 ? (i === 0 ? '.pdf' : '.docx') : '.xlsx'}</p></div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>
                     {loading ? <Loader2 className="w-5 h-5 text-gray-500 animate-spin" /> : url ? (

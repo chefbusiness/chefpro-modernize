@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   UtensilsCrossed, Wine, CakeSlice, Truck, Coffee,
   BarChart3, Calculator, TrendingDown, ClipboardList, ChefHat, PartyPopper, BookOpen,
   Scale, ReceiptText,
@@ -29,6 +29,7 @@ const TEMPLATES = [
   { key: 'lista-precios', icon: ReceiptText, title: 'Lista de Precios de Ingredientes', desc: 'Precios de tus proveedores en una sola hoja, con alerta cuando un ingrediente sube.' },
   { key: 'bonus-mermas', icon: TrendingDown, title: 'BONUS: Mermas + Inventario', desc: 'Plantilla avanzada de control de mermas con inventario integrado.' },
   { key: 'bonus-guia', icon: BookOpen, title: 'BONUS: Guía Food Cost en 30 Días', desc: 'Guía paso a paso en PDF para bajar tu food cost 3-7 puntos en un mes.' },
+  { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.' },
 ];
 
 export default function KitEscandallosDashboard() {
@@ -85,7 +86,7 @@ export default function KitEscandallosDashboard() {
             <ProductVersionBadge productId="kit-escandallos" />
           </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Tus 13 plantillas + 2 bonus, listas para descargar.
+            Tus 13 plantillas + 3 bonus, listas para descargar.
             Acceso de por vida — incluye futuras actualizaciones.
           </p>
         </section>
@@ -94,7 +95,7 @@ export default function KitEscandallosDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              13 Plantillas + 2 Bonus · Descarga Directa
+              13 Plantillas + 3 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -118,7 +119,7 @@ export default function KitEscandallosDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'bonus-guia' ? '.pdf' : '.xlsx'}</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'bonus-guia' ? '.pdf' : tpl.key === 'guia-equivalencias' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>
@@ -153,7 +154,7 @@ export default function KitEscandallosDashboard() {
                 Compatibles con Excel, Google Sheets, LibreOffice y Numbers
               </p>
               <p className="text-gray-400 text-sm">
-                Descarga los archivos .xlsx y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.
+                Descarga los archivos y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.
               </p>
             </div>
           </div>

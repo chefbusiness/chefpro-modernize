@@ -91,6 +91,10 @@ const data: PlanNegocioData = {
         q: '¿Cómo funciona la garantía?',
         a: '30 días de devolución completa sin preguntas. Los 11 entregables son tuyos para siempre + actualizaciones gratuitas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Chef Privado / Showcooking a Domicilio» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tarta» es «pastel» en México y «torta» en Argentina; «nevera» es «refrigerador» en México y «heladera» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Plan de Negocio Chef Privado / Showcooking',
   },
@@ -198,7 +202,7 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Además del plan financiero y los 9 entregables principales, accedes a estos recursos diferenciales — valorados en €89',
+      'Además del plan financiero y los 9 entregables principales, accedes a estos recursos diferenciales — valorados en €104',
     items: [
       {
         icon: 'Flame',
@@ -215,6 +219,14 @@ const data: PlanNegocioData = {
         value: '€49',
         desc: 'Comparativa estratégica de las 3 figuras del segmento: definición y modelo de cada una, ticket medio, ICP, margen neto, inversión inicial, plantilla. + Cuándo elegir cada figura, modelos híbridos válidos y riesgo de confundirlas al posicionarte. Empieza siempre por chef privado y pivota cuando proceda — la guía te dice exactamente cuándo.',
         image: '/lovable-uploads/ai-gallery/plan-chef-privado-showcooking-5.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -263,6 +275,10 @@ const data: PlanNegocioData = {
       q: '¿Cómo funciona la garantía?',
       a: '30 días de devolución completa. Si el plan no cumple tus expectativas, te devolvemos el 100 % del importe sin preguntas. Los 11 entregables son tuyos para siempre + actualizaciones gratuitas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Chef Privado / Showcooking a Domicilio» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tarta» es «pastel» en México y «torta» en Argentina; «nevera» es «refrigerador» en México y «heladera» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -277,6 +293,7 @@ const data: PlanNegocioData = {
       'Manual técnico APPCC móvil + Carta 12 menús temáticos + 10 experiencias',
       'Modelos contrato B2C + B2B + Guía sistemas Chef Privado vs Personal Chef vs Caterer',
       'Checklist apertura 6 fases + anexo regulación CCAA catering itinerante',
+      'BONUS: Guía de Equivalencias para tu país',
       'Acceso de por vida + 30 días de garantía de devolución',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €45',

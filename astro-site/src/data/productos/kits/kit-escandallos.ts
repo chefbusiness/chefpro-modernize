@@ -79,6 +79,10 @@ const data: KitExcelData = {
         q: '¿Hay garantía de devolución?',
         a: 'Sí. 30 días de garantía completa. Si las plantillas no te ayudan a controlar tu food cost, te devolvemos el 100% sin hacer ninguna pregunta.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Escandallos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Escandallos Pro',
   },
@@ -186,7 +190,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 13 plantillas, recibirás estos recursos adicionales — valorados en €46',
+      'Además de las 13 plantillas, recibirás estos recursos adicionales — valorados en €61',
     items: [
       {
         icon: 'BookOpen',
@@ -203,6 +207,14 @@ const data: KitExcelData = {
         value: '€19',
         desc: 'Plantilla Excel con registro diario de mermas (con motivos y acciones correctivas) y control de inventario con consumo real vs teórico.',
         image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -252,6 +264,10 @@ const data: KitExcelData = {
       q: '¿Hay garantía de devolución?',
       a: 'Sí. 30 días de garantía completa. Si las plantillas no te ayudan a controlar tu food cost, te devolvemos el 100% sin hacer ninguna pregunta.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Escandallos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «ración» es «orden» en México y «porción» en Argentina; «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -266,6 +282,7 @@ const data: KitExcelData = {
       'Food cost REAL: escribe el PVP que cobras hoy y la hoja te avisa en rojo si te pasas del objetivo',
       'BONUS: Guía "Controla tu Food Cost en 30 Días" (€27)',
       'BONUS: Checklist de Mermas + Inventario (€19)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
       'Paga una vez — acceso de por vida al dashboard online',
       'Garantía de devolución 30 días',
     ],
@@ -295,7 +312,7 @@ const data: KitExcelData = {
     discountBadge: '-75%',
     heroNote: 'Precio especial de lanzamiento. Sube pronto',
     buyBoxNote: 'Precio especial de lanzamiento — 75% de descuento',
-    bonusTotalLabel: 'Valor total del kit completo: €95 — 13 plantillas (€49) + 2 bonos (€46)',
+    bonusTotalLabel: 'Valor total del kit completo: €110 — 13 plantillas (€49) + 3 bonos (€61)',
     bonusSaveLine: '¡Ahorra €37 HOY!',
   },
 

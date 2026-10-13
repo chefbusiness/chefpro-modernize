@@ -1,0 +1,137 @@
+{
+  "codigo": "CR",
+  "pais": "Costa Rica",
+  "moneda": "colón costarricense (CRC)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA general es del 13 % y rige desde el 1 de julio de 2019, cuando sustituyó al impuesto general sobre las ventas; se aplica a la venta de comida y bebida en restaurantes. Existen tarifas reducidas (1 %, 2 % o 4 %) para otros bienes y servicios, como la canasta básica, medicinas o salud privada. El cargo de servicio del 10 % se calcula sobre la cuenta sin incluir el impuesto. Confirma con tu contador la forma de rotular el precio de carta.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Costa Rica, otros impuestos (IVA 13 %)",
+          "url": "https://taxsummaries.pwc.com/costa-rica/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Ley 9116, art. 1: «Servicio 10 %» calculado sin el impuesto de ventas (Poder Judicial)",
+          "url": "https://salasegunda.poder-judicial.go.cr/images/documentos/revistas/revista10/11-ley_empleo_saloneros.pdf",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La Ley 9116, que reformó la Ley 4946, obliga en restaurantes, bares y sodas con servicio en mesa a cobrar un 10 % adicional sobre la cuenta, sin incluir el impuesto, indicado por separado como «Servicio 10 %». Es de los saloneros y meseros: el patrono no puede quedárselo ni descontarle gastos, debe entregarlo en una semana (efectivo) o un mes (tarjeta), y no forma parte del salario. La propina voluntaria es aparte y nunca va en la factura.",
+      "fuentes": [
+        {
+          "titulo": "Ley 9116 para proteger el empleo de los saloneros y meseros (Poder Judicial)",
+          "url": "https://salasegunda.poder-judicial.go.cr/images/documentos/revistas/revista10/11-ley_empleo_saloneros.pdf",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad sanitaria es el Ministerio de Salud, que otorga el permiso sanitario de funcionamiento bajo el Decreto 43432-S, firmado el 9 de marzo de 2022. Ese decreto permite presentar una declaración jurada, de modo que la inspección se hace después. Hay reformas posteriores, por lo que debes comprobar la versión vigente. No hemos confirmado qué norma técnica de higiene aplica a restaurantes ni si se exige HACCP; consúltalo en tu área rectora de salud.",
+      "fuentes": [
+        {
+          "titulo": "El Mundo CR – Firman decreto que facilita permisos sanitarios (Decreto 43432-S)",
+          "url": "https://elmundo.cr/costa-rica/firman-decreto-que-facilita-permisos-sanitarios-en-un-dia/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "Desde el 6 de junio de 2025 rige el carné digital de manipulación de alimentos, que regula el Ministerio de Salud. Solo lo obtienen quienes aprueban el curso del INA o de una institución con acreditación formal. Hubo un periodo de transición en el que no se podía sancionar a un trabajador por no tenerlo si estaba regularizándolo o tenía un carné físico válido. No hemos confirmado la vigencia actual; consúltala en tu área rectora de salud.",
+      "fuentes": [
+        {
+          "titulo": "Observador CR – Nuevo carné digital de manipulación de alimentos rige en Costa Rica",
+          "url": "https://observador.cr/nuevo-carne-digital-de-manipulacion-de-alimentos-rige-en-costa-rica/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: inscripción tributaria en Hacienda, permiso sanitario de funcionamiento del Ministerio de Salud (Decreto 43432-S), patente comercial de la municipalidad, uso de suelo, póliza de riesgos del trabajo con el INS y revisión del Cuerpo de Bomberos. Solo hemos podido confirmar con fuente abierta el permiso sanitario; valida el resto con tu municipalidad. Si vendes licor, pregunta por su licencia específica.",
+      "fuentes": [
+        {
+          "titulo": "El Mundo CR – Firman decreto que facilita permisos sanitarios (Decreto 43432-S)",
+          "url": "https://elmundo.cr/costa-rica/firman-decreto-que-facilita-permisos-sanitarios-en-un-dia/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "Las bebidas alcohólicas se rigen por la ley nacional de regulación y comercialización de bebidas con contenido alcohólico, cuya licencia de licores concede la municipalidad según el tipo de local. Hay restricciones de horario, de distancia a centros educativos y de ley seca. No hemos abierto el texto, así que consulta tu municipalidad.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es la persona física con actividad lucrativa o la sociedad de responsabilidad limitada (S.R.L.); la sociedad anónima también se usa. Para negocios pequeños existe el régimen de tributación simplificada de Hacienda, equivalente al autónomo en módulos, con topes de ingresos por actividad que debes confirmar en Tributación.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Hacienda de Costa Rica",
+          "url": "https://www.hacienda.go.cr/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada ordinaria diurna tiene un tope de 48 horas semanales (art. 136 del Código de Trabajo); puede pactarse hasta en diez horas diarias sin pasar de las 48. El aguinaldo es un doceavo de los salarios devengados entre el 1 de diciembre y el 30 de noviembre, con pago a más tardar el 20 de diciembre. La seguridad social, que gestiona la CCSS, supone en 2026 un 26,83 % del empleador y un 10,83 % del trabajador según PwC.",
+      "fuentes": [
+        {
+          "titulo": "MTSS – Comunicado sobre el aguinaldo (plazo 20 de diciembre)",
+          "url": "https://www.mtss.go.cr/prensa/comunicados/2022/diciembre/cp_049_2022.html",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Delfino.cr – La jornada en el contrato de trabajo (art. 136)",
+          "url": "https://delfino.cr/2024/08/la-jornada-en-el-contrato-de-trabajo-y-sus-excepciones",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries – Costa Rica, seguridad social",
+          "url": "https://taxsummaries.pwc.com/costa-rica/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Costa Rica usa mayoritariamente el sistema métrico: kilos, gramos y litros se usan en el mercado. La libra aparece sobre todo en la carne en pulperías y el galón es más raro. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Para vender, la norma metrológica pide etiquetar en unidades métricas; la libra es una referencia popular en el campo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "El SINPE Móvil, la transferencia instantánea por número de teléfono del Banco Central, es muy habitual en todos los negocios. También se aceptan tarjetas y efectivo en colones, y en zonas turísticas dólares. En delivery operan Uber Eats, Rappi y Pedidos Ya, además de repartos propios por WhatsApp.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre los apoyos públicos están el Sistema de Banca para el Desarrollo (SBD), el programa PYME del MEIC y la formación del INA. Comprueba en cada web qué programas siguen vigentes, y sus requisitos de acceso, antes de planificar financiación con ayuda estatal.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "La «soda» es el comedor popular costarricense de comida casera con precios bajos; ofrece el «casado» (plato con arroz, frijoles, ensalada y proteína a elegir). También hay restaurantes de cadena y marisquerías. La «soda» equivale al bar de menú español y la «pulpería» es una tienda de barrio con comida y bebida.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el 13 % y añade una columna para el servicio del 10 %, que no se suma al IVA. Sustituye el APPCC por el permiso sanitario del Ministerio de Salud. Incluye aguinaldo, cesantía y cotización de la CCSS en el coste de personal. Considera el SINPE Móvil como medio de cobro y cambia la moneda al colón.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«casado» es un plato del día de arroz, frijoles y carne, no una persona que se ha casado",
+    "«soda» es un comedor económico, no una bebida gaseosa",
+    "«refresco» es una bebida natural de frutas, no una gaseosa",
+    "«gallo pinto» es arroz con frijoles; el «gallo» también puede ser una tortilla rellena",
+    "«tico» o «tica» es costarricense, un gentilicio coloquial",
+    "«mae» es un vocativo coloquial parecido a «tío»"
+  ]
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, FileText, ClipboardCheck, ArrowLeft,
   Calculator, Truck, Wrench, Beef, ScrollText, Sparkles, Flame, Tent,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
@@ -88,6 +88,13 @@ const TEMPLATES = [
     title: 'Guía 8 Sistemas + Roadmap Food Truck',
     desc: 'Comparativa parrilla argentina, asador cruz, BBQ pit, caja china, barril llanero, modular inox, brasero, lift-grill. + Roadmap food truck especializado: inversión 30-75K EUR, regulación 8 CCAA.',
   },
+  {
+    key: 'guia-equivalencias',
+    icon: Globe,
+    type: '.docx',
+    title: 'Guía de Equivalencias para tu país',
+    desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.',
+  },
 ];
 
 export default function PlanNegocioParrilleroAsadorEventosDashboard() {
@@ -125,11 +132,11 @@ export default function PlanNegocioParrilleroAsadorEventosDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="plan-negocio-parrillero-asador-eventos" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 11 entregables para montar tu servicio premium itinerante de parrilla y asado en España.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu kit profesional listo para descargar: 12 entregables para montar tu servicio premium itinerante de parrilla y asado en España.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">11 Entregables · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">12 Entregables · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;

@@ -13,9 +13,9 @@ const data: KitTareasData = {
 
   seo: {
     title:
-      'Kit de Tareas Recurrentes — 13 Checklists Operativos + 2 Bonus para Pastelería / Obrador | AI Chef Pro',
+      'Kit de Tareas Recurrentes — 13 Checklists Operativos + 3 Bonus para Pastelería / Obrador | AI Chef Pro',
     description:
-      '13 plantillas + 2 bonus para pastelería y obrador: 9 checklists pre-rellenados con las tareas reales de un obrador (masas, fermentación, cremas, vitrina) y 4 registros listos para rellenar: producción y mermas, encargos, alérgenos de vitrina (14 UE) y temperaturas. Imprime, delega y firma. Solo €12.',
+      '13 plantillas + 3 bonus para pastelería y obrador: 9 checklists pre-rellenados con las tareas reales de un obrador (masas, fermentación, cremas, vitrina) y 4 registros listos para rellenar: producción y mermas, encargos, alérgenos de vitrina (14 UE) y temperaturas. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist pastelería, tareas obrador, checklist apertura pastelería, tareas pastelero, control producción pastelería, plantilla tareas obrador, checklist vitrina pastelería, fermentación croissant checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-pasteleria.jpg',
@@ -23,9 +23,9 @@ const data: KitTareasData = {
 
   schema: {
     productName:
-      'Kit de Tareas Recurrentes — 13 Checklists Operativos + 2 Bonus para Pastelería / Obrador',
+      'Kit de Tareas Recurrentes — 13 Checklists Operativos + 3 Bonus para Pastelería / Obrador',
     productDescription:
-      '13 plantillas + 2 bonus para pastelería y obrador: 9 checklists pre-rellenados con las tareas reales de un obrador (masas, fermentación, cremas, decoración, vitrina) y 4 registros listos para rellenar: producción y mermas, encargos, alérgenos de vitrina (14 UE) y temperaturas.',
+      '13 plantillas + 3 bonus para pastelería y obrador: 9 checklists pre-rellenados con las tareas reales de un obrador (masas, fermentación, cremas, decoración, vitrina) y 4 registros listos para rellenar: producción y mermas, encargos, alérgenos de vitrina (14 UE) y temperaturas.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     // = faqs on-page, mismo texto y orden (Google exige que el FAQPage sea visible tal cual)
@@ -44,7 +44,7 @@ const data: KitTareasData = {
       },
       {
         q: '¿Qué incluye la versión 2.0?',
-        a: 'La versión 2.0 amplía el kit a 13 checklists operativos + 2 bonus. Se suman cuatro plantillas nuevas: el plan de producción semanal con control de mermas en porcentaje y en euros, el control de encargos (ficha imprimible, registro mensual y agenda de entregas), la matriz de alérgenos de vitrina con los 14 de declaración obligatoria (con carta, cartel y etiquetas) y el registro de temperaturas con recepción de mercancía y etiquetas de elaborado. Además, la apertura y el cierre del negocio se han reescrito para una pastelería con tienda y todas las plantillas llevan la impresión A4 ya configurada.',
+        a: 'La versión 2.0 amplía el kit a 13 checklists operativos + 3 bonus. Se suman cuatro plantillas nuevas: el plan de producción semanal con control de mermas en porcentaje y en euros, el control de encargos (ficha imprimible, registro mensual y agenda de entregas), la matriz de alérgenos de vitrina con los 14 de declaración obligatoria (con carta, cartel y etiquetas) y el registro de temperaturas con recepción de mercancía y etiquetas de elaborado. Además, la apertura y el cierre del negocio se han reescrito para una pastelería con tienda y todas las plantillas llevan la impresión A4 ya configurada.',
       },
       {
         q: '¿En qué se diferencia de Trail u otros sistemas?',
@@ -57,6 +57,10 @@ const data: KitTareasData = {
       {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
+      },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Pastelería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tarta» es «pastel» en México y «torta» en Argentina; «bollería» es «pan dulce» en México y «pastelería» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
       },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Pastelería / Obrador',
@@ -224,7 +228,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 13 plantillas del kit, recibirás estos dos recursos adicionales — valorados en €16',
+      'Además de las 13 plantillas del kit, recibirás estos tres recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -241,6 +245,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '17 fechas clave de pastelería (Reyes, San Valentín, Día de la Madre, Navidad) con producción especial y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-pasteleria-vitrina.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -273,7 +285,7 @@ const data: KitTareasData = {
     },
     {
       q: '¿Qué incluye la versión 2.0?',
-      a: 'La versión 2.0 amplía el kit a 13 checklists operativos + 2 bonus. Se suman cuatro plantillas nuevas: el plan de producción semanal con control de mermas en porcentaje y en euros, el control de encargos (ficha imprimible, registro mensual y agenda de entregas), la matriz de alérgenos de vitrina con los 14 de declaración obligatoria (con carta, cartel y etiquetas) y el registro de temperaturas con recepción de mercancía y etiquetas de elaborado. Además, la apertura y el cierre del negocio se han reescrito para una pastelería con tienda y todas las plantillas llevan la impresión A4 ya configurada.',
+      a: 'La versión 2.0 amplía el kit a 13 checklists operativos + 3 bonus. Se suman cuatro plantillas nuevas: el plan de producción semanal con control de mermas en porcentaje y en euros, el control de encargos (ficha imprimible, registro mensual y agenda de entregas), la matriz de alérgenos de vitrina con los 14 de declaración obligatoria (con carta, cartel y etiquetas) y el registro de temperaturas con recepción de mercancía y etiquetas de elaborado. Además, la apertura y el cierre del negocio se han reescrito para una pastelería con tienda y todas las plantillas llevan la impresión A4 ya configurada.',
     },
     {
       q: '¿En qué se diferencia de Trail u otros sistemas?',
@@ -287,12 +299,16 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Pastelería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «tarta» es «pastel» en México y «torta» en Argentina; «bollería» es «pan dulce» en México y «pastelería» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
     subtitle:
-      '13 checklists operativos + 2 bonus para pastelería por menos de lo que cuesta una hora de consultoría.',
+      '13 checklists operativos + 3 bonus para pastelería por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre del obrador y de la tienda',
       'Partidas: masas, fermentación, cremas, mousse, decoración',
@@ -306,6 +322,7 @@ const data: KitTareasData = {
       'Registro de temperaturas y recepción de mercancía',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },
@@ -380,7 +397,7 @@ const data: KitTareasData = {
     price: '€12',
     heroNote: 'Pago único · acceso de por vida · actualizaciones incluidas',
     buyBoxNote: 'Pago único. Sin suscripción: descarga, imprime y úsalo en tu obrador desde hoy',
-    bonusTotalLabel: 'Kit completo: 13 plantillas + 2 bonus',
+    bonusTotalLabel: 'Kit completo: 13 plantillas + 3 bonus',
   },
 
   footerLinks: [

@@ -1,0 +1,206 @@
+{
+ "kit-escandallos": {
+  "archivos": 14,
+  "caracteres": 125556
+ },
+ "pack-appcc": {
+  "archivos": 21,
+  "caracteres": 117742
+ },
+ "kit-tareas": {
+  "archivos": 11,
+  "caracteres": 80906
+ },
+ "kit-tareas-cafeteria": {
+  "archivos": 11,
+  "caracteres": 83216
+ },
+ "kit-tareas-pizzeria": {
+  "archivos": 11,
+  "caracteres": 70521
+ },
+ "kit-tareas-hamburgueseria": {
+  "archivos": 11,
+  "caracteres": 69197
+ },
+ "kit-tareas-dark-kitchen": {
+  "archivos": 11,
+  "caracteres": 70828
+ },
+ "kit-tareas-pasteleria": {
+  "archivos": 15,
+  "caracteres": 91488
+ },
+ "kit-tareas-bar": {
+  "archivos": 11,
+  "caracteres": 72179
+ },
+ "kit-tareas-catering": {
+  "archivos": 11,
+  "caracteres": 56755
+ },
+ "kit-tareas-hotel": {
+  "archivos": 19,
+  "caracteres": 88938
+ },
+ "kit-tareas-heladeria": {
+  "archivos": 11,
+  "caracteres": 50553
+ },
+ "kit-tareas-chocolateria": {
+  "archivos": 11,
+  "caracteres": 53979
+ },
+ "kit-tareas-restaurante-creativo": {
+  "archivos": 13,
+  "caracteres": 68620
+ },
+ "kit-tareas-chef-privado": {
+  "archivos": 9,
+  "caracteres": 21540
+ },
+ "kit-gestion-personal": {
+  "archivos": 9,
+  "caracteres": 54381
+ },
+ "kit-inventario": {
+  "archivos": 9,
+  "caracteres": 57670
+ },
+ "guia-dark-kitchen": {
+  "archivos": 4,
+  "caracteres": 54866
+ },
+ "guia-restaurante-gastronomico": {
+  "archivos": 21,
+  "caracteres": 119997
+ },
+ "guia-food-cost-ingenieria-menu": {
+  "archivos": 10,
+  "caracteres": 393175
+ },
+ "manual-manager-restaurante": {
+  "archivos": 9,
+  "caracteres": 405708
+ },
+ "manual-chef-ejecutivo": {
+  "archivos": 9,
+  "caracteres": 504191
+ },
+ "guia-pasteleria-obrador": {
+  "archivos": 11,
+  "caracteres": 691940
+ },
+ "guia-chocolateria-obrador": {
+  "archivos": 12,
+  "caracteres": 876795
+ },
+ "guia-churreria-chocolateria": {
+  "archivos": 11,
+  "caracteres": 643946
+ },
+ "guia-restaurante-casual": {
+  "archivos": 18,
+  "caracteres": 48879
+ },
+ "guia-restaurante-mexicano": {
+  "archivos": 18,
+  "caracteres": 66555
+ },
+ "guia-restaurante-peruano": {
+  "archivos": 18,
+  "caracteres": 72565
+ },
+ "guia-restaurante-japones": {
+  "archivos": 18,
+  "caracteres": 85304
+ },
+ "guia-restaurante-nikkei": {
+  "archivos": 18,
+  "caracteres": 92493
+ },
+ "mega-pack-tareas": {
+  "archivos": 155,
+  "caracteres": 878732
+ },
+ "kit-plan-financiero": {
+  "archivos": 10,
+  "caracteres": 50095
+ },
+ "kit-tareas-sushi-bar": {
+  "archivos": 11,
+  "caracteres": 33855
+ },
+ "kit-tareas-taqueria": {
+  "archivos": 11,
+  "caracteres": 64682
+ },
+ "kit-tareas-asador": {
+  "archivos": 11,
+  "caracteres": 35322
+ },
+ "kit-tareas-marisqueria": {
+  "archivos": 11,
+  "caracteres": 18296
+ },
+ "kit-tareas-tapas-bar": {
+  "archivos": 11,
+  "caracteres": 16421
+ },
+ "kit-tareas-food-truck": {
+  "archivos": 11,
+  "caracteres": 15795
+ },
+ "kit-tareas-panaderia": {
+  "archivos": 11,
+  "caracteres": 15480
+ },
+ "guia-panaderia-obrador": {
+  "archivos": 18,
+  "caracteres": 64458
+ },
+ "plan-negocio-bar-restaurante": {
+  "archivos": 3,
+  "caracteres": 97147
+ },
+ "plan-negocio-tapas-bar": {
+  "archivos": 3,
+  "caracteres": 103615
+ },
+ "plan-negocio-cafeteria": {
+  "archivos": 3,
+  "caracteres": 99881
+ },
+ "plan-negocio-panaderia": {
+  "archivos": 3,
+  "caracteres": 103512
+ },
+ "plan-negocio-food-truck": {
+  "archivos": 3,
+  "caracteres": 107606
+ },
+ "plan-negocio-cocteleria-eventos": {
+  "archivos": 9,
+  "caracteres": 158323
+ },
+ "plan-negocio-parrillero-asador-eventos": {
+  "archivos": 11,
+  "caracteres": 207815
+ },
+ "plan-negocio-paellero-eventos": {
+  "archivos": 11,
+  "caracteres": 187803
+ },
+ "plan-chef-privado-showcooking-eventos": {
+  "archivos": 11,
+  "caracteres": 93511
+ },
+ "plan-catering-tematico-eventos": {
+  "archivos": 11,
+  "caracteres": 174793
+ },
+ "pro-prompts-ebook": {
+  "archivos": 2,
+  "caracteres": 16139
+ }
+}

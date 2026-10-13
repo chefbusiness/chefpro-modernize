@@ -77,6 +77,8 @@ ACCOUNT = os.environ.get('AICP_NETLIFY_ACCOUNT', 'chebfusiness')
 EBOOK_ENV = ('PDF_EBOOK_URL', 'PDF_BONUS1_URL', 'PDF_BONUS23_URL')
 # Tarjetas de src/components/library/DownloadsSection.tsx (claves fijas del JSON).
 EBOOK_CARDS = ('ebook', 'bonus1', 'bonus23')
+# Cuarta tarjeta (bonus Guia de Equivalencias): ruta estatica en la rama del ebook, no env var.
+EBOOK_STATIC = {'guia-equivalencias': '/dl/pro-prompts-ebook/guia-equivalencias-pro-prompts-ebook.docx'}
 
 
 def ebook_env_urls():
@@ -508,6 +510,8 @@ def parse_dashboard_keys(component):
         for m in re.finditer(r"\{\s*id:\s*'([^']+)'.*?templates:\s*\[(.*?)\]\s*\}", src, re.S):
             kit = m.group(1)
             keys += [f"{kit}__{k}" for k in re.findall(r"\bkey:\s*'([^']+)'", m.group(2))]
+        # Tarjetas sueltas fuera de los kits (bonus Guia de Equivalencias): files['clave'] literal.
+        keys += re.findall(r"files\['([^']+)'\]", src)
         return keys
     return re.findall(r"\bkey:\s*'([^']+)'", src)
 
@@ -614,6 +618,7 @@ def main():
         if pid == 'pro-prompts-ebook':
             # Rama especial de get-download-urls.ts: 3 env vars en lugar de PRODUCT_FILES.
             pf = dict(pf or {})
+            pf.update(EBOOK_STATIC)
             if args.offline:
                 row['warns'].append('descargas por env var: SIN VERIFICAR en modo --offline (correr sin --offline)')
             else:

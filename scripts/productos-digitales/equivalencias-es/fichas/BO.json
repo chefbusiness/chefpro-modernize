@@ -1,0 +1,154 @@
+{
+  "codigo": "BO",
+  "pais": "Bolivia",
+  "moneda": "boliviano (BOB)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA general es del 13 % y, hoy, está incluido en el precio de la factura («por dentro»), lo que equivale a cerca del 14,94 % sobre el precio neto. Además pagas el Impuesto a las Transacciones (IT), un 3 % mensual sobre los ingresos brutos, que no es descontable como el IVA, aunque el IUE anual se acredita contra él. La Ley 1733 prevé pasar al IVA «por fuera», pero a octubre de 2026 no consta decreto que lo active.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Bolivia, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/bolivia/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Bolivia, impuesto sobre sociedades",
+          "url": "https://taxsummaries.pwc.com/bolivia/corporate/taxes-on-corporate-income",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "LookupTax — Bolivia VAT (IVA) guidelines",
+          "url": "https://lookuptax.com/docs/country/bolivia-vat-guidelines-indirect-tax",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "No hemos encontrado un cargo por servicio obligatorio regulado por ley en la restauración boliviana: lo habitual es que la propina sea voluntaria y en efectivo. Si quieres añadir un porcentaje a la cuenta, indícalo de forma clara en la carta y consulta con tu asesor cómo tratarlo en la factura y en el reparto del personal, porque no hemos podido confirmarlo con una fuente oficial.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "El SENASAG (Servicio Nacional de Sanidad Agropecuaria e Inocuidad Alimentaria, creado por la Ley 2061 de 2000) administra la inocuidad alimentaria en los tramos productivos y de procesamiento del sector agropecuario. Para un restaurante, la inspección que te toca depende de tu alcaldía y del servicio de salud de tu departamento (SEDES); no hemos podido confirmar la norma específica. Presenta tu APPCC como plan de buenas prácticas e higiene y pregunta en tu alcaldía.",
+      "fuentes": [
+        {
+          "titulo": "FAOLEX — Resolución Administrativa 106/2006 del SENASAG (cita la Ley 2061 y el DS 25729)",
+          "url": "https://faolex.fao.org/docs/pdf/bol222764.pdf",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "No hemos encontrado una norma nacional única sobre el carné del manipulador. Lo que sí consta es que, en municipios como Tarija, la lista de requisitos para la licencia de un restaurante incluye el «carnet sanitario» emitido por el SEDES (servicio departamental de salud), según una publicación de 2017. Pregunta en tu alcaldía y en el SEDES de tu departamento qué documento piden, dónde se tramita y cada cuánto se renueva; mientras tanto, forma a tu equipo en higiene.",
+      "fuentes": [
+        {
+          "titulo": "Verdad con Tinta — La burocracia gastronómica en Tarija (2017)",
+          "url": "https://verdadcontinta.com/2017/10/13/la-burocracia-gastronomica-en-tarija",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "El permiso principal es la licencia de funcionamiento del gobierno autónomo municipal de tu ciudad; en La Paz se tramita por la plataforma iGob 24/7 y el simple inicio del trámite no te autoriza a abrir. Para operar necesitas matrícula de comercio en Fundempresa y NIT en el Servicio de Impuestos Nacionales, que te habilita a facturar. En Tarija, además, la licencia de restaurantes pidió el carnet sanitario del SEDES y la licencia ambiental (2017). Los requisitos varían por municipio.",
+      "fuentes": [
+        {
+          "titulo": "Alcaldía de La Paz — Licencia de funcionamiento con inspección",
+          "url": "https://lapaz.bo/wp-content/uploads/2025/01/3-Licencia-de-funcionamiento-con-inspeccion.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "YoFacturo — Cómo abrir empresa en Fundempresa (matrícula de comercio y NIT)",
+          "url": "https://yo-facturo.com/blog/como-abrir-empresa-fundempresa-bolivia/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Verdad con Tinta — La burocracia gastronómica en Tarija (2017)",
+          "url": "https://verdadcontinta.com/2017/10/13/la-burocracia-gastronomica-en-tarija",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas la regulan los gobiernos municipales: tu licencia de funcionamiento debe incluir expresamente esa actividad y los horarios los fija cada alcaldía. Además, en elecciones y otras fechas la autoridad suele decretar «ley seca» y prohibir la venta durante unos días. No hemos podido confirmar una norma nacional con fuente abierta, así que consulta la ordenanza de tu municipio antes de abrir.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Para un negocio pequeño lo habitual es la empresa unipersonal o la S.R.L. (sociedad de responsabilidad limitada), inscritas en Fundempresa. Como equivalente al autónomo existe el Régimen Tributario Simplificado (RTS), pensado para pequeños comerciantes, artesanos y vivanderos con límites de capital y de actividad; una S.R.L. normalmente queda en el régimen general. Si excedes los límites, el SIN te cambia de régimen. Verifica los topes vigentes en el SIN.",
+      "fuentes": [
+        {
+          "titulo": "Yo Facturo — Cómo inscribirse en el RTS en Bolivia",
+          "url": "https://yo-facturo.com/blog/como-inscribirse-rts-bolivia/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada máxima es de 8 horas diarias y 48 semanales (artículo 46 de la Ley General del Trabajo). El aguinaldo equivale a un sueldo y se paga antes de fin de diciembre. Existe además el «segundo aguinaldo Esfuerzo por Bolivia», solo en los años en que el PIB crece más del 4,5 %; el Gobierno confirma en octubre o noviembre si corresponde. Los empleadores aportan a la Gestora Pública para las pensiones. Pregunta a tu asesor qué cobertura de salud te corresponde.",
+      "fuentes": [
+        {
+          "titulo": "Lexivox — Decreto Supremo 5168 (cita el art. 46 de la Ley General del Trabajo)",
+          "url": "https://www.lexivox.org/norms/BO-DS-N5168.xhtml",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Ferrere — Confirmación del no pago del segundo aguinaldo «Esfuerzo por Bolivia» (condición PIB > 4,5 %)",
+          "url": "https://www.ferrere.com/en/news/gobierno-boliviano-anuncia-que-no-habra-doble-aguinaldo/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Deel — Beneficios sociales en Bolivia (aguinaldo y Gestora Pública)",
+          "url": "https://www.deel.com/es/blog/tabla-beneficios-sociales-bolivia/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "En mercados y con proveedores tradicionales se usa la «libra», cuyo valor suele rondar los 460 g (no los 453,6 g anglosajones), la «arroba», de unos 11,5 kg, y el «quintal», que varía: unos 46 kg en el uso tradicional y 100 kg en algunas fuentes. No hemos podido confirmar estos valores para Bolivia, así que pregunta al proveedor su equivalencia exacta antes de convertir recetas. Las temperaturas se dan en °C.",
+      "fuentes": [
+        {
+          "titulo": "Wikipedia — Bolivian units of measurement",
+          "url": "https://en.wikipedia.org/wiki/Bolivian_units_of_measurement",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto se usan PedidosYa y Yaigo, además de pedidos directos por WhatsApp. Se paga sobre todo en efectivo, y el QR Simple, interoperable entre los bancos, está muy extendido incluso en puestos y negocios pequeños. Acepta QR y efectivo desde el primer día, y comprueba qué apps operan en tu ciudad y la comisión real de cada una antes de dar de alta tu carta.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "El Banco de Desarrollo Productivo (BDP) es la entidad pública que ofrece crédito a micro y pequeñas empresas productivas y de servicios. Existen además programas de gobiernos municipales y departamentales y de cámaras de comercio, que cambian con cada gestión. No hemos podido confirmar convocatorias vigentes con fuente oficial, así que consulta los portales del BDP y de tu alcaldía antes de incluirlas en tu plan de negocio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: la «pensión» (comida casera por menú diario, a veces por abono mensual), la «salteñería» (local de salteñas, de mañana), el «comedor popular» (almuerzo económico), la «churrasquería» (parrilla de carne), la «pollería» y el «restaurante» de menú. El «almuerzo» boliviano es la comida fuerte del mediodía, con sopa, segundo y a veces postre, y equivale al menú del día español.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA del 10 % por el IVA del 13 % incluido en el precio, y suma el IT del 3 % sobre ingresos como coste aparte. Cambia el convenio de hostelería por la Ley General del Trabajo, e incluye aguinaldo y la posibilidad del segundo aguinaldo en tu coste de personal. Presenta el APPCC como plan de buenas prácticas ante la autoridad de salud que te inspeccione. Usa el NIT en lugar del CIF.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«salteña» es una empanada horneada y jugosa, no algo de la ciudad argentina de Salta",
+    "«api» es una bebida caliente espesa de maíz morado, no una API",
+    "«anticucho» es una brocheta de corazón de res",
+    "«chicharrón» es un plato principal de cerdo frito con mote y papa, no un snack",
+    "«almuerzo» es la comida principal del día, no un tentempié",
+    "«pensión» es un comedor casero, no un hospedaje",
+    "«mocochinchi» es una bebida de durazno deshidratado"
+  ]
+}

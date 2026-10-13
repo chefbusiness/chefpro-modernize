@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   Thermometer, SprayCan, ClipboardCheck, Truck, Bug,
   AlertTriangle, Droplets, ShieldCheck, UserCheck, GraduationCap,
   Flame, Snowflake, Fish, Gauge,
@@ -35,6 +35,7 @@ const TEMPLATES = [
   { key: 'termometros', icon: Gauge, title: 'Verificación de Termómetros', desc: 'Comprobación mensual de sondas con hielo fundente o ebullición.' },
   { key: 'bonus-formacion', icon: GraduationCap, title: 'BONUS: Registro Formación', desc: 'Formación del personal en seguridad alimentaria.' },
   { key: 'bonus-protocolo', icon: AlertTriangle, title: 'BONUS: Protocolo Alerta', desc: 'Cartel imprimible con los 7 pasos ante alerta alimentaria.' },
+  { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.' },
 ];
 
 export default function PackAppccDashboard() {
@@ -100,7 +101,7 @@ export default function PackAppccDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              19 Registros + 2 Bonus · Descarga Directa
+              19 Registros + 3 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -124,7 +125,7 @@ export default function PackAppccDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">.xlsx</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'guia-equivalencias' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>
@@ -159,7 +160,7 @@ export default function PackAppccDashboard() {
                 Compatibles con Excel, Google Sheets, LibreOffice y Numbers · listos para imprimir en A4 desde la propia hoja
               </p>
               <p className="text-gray-400 text-sm">
-                Descarga los archivos .xlsx y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.
+                Descarga los archivos y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.
               </p>
             </div>
           </div>

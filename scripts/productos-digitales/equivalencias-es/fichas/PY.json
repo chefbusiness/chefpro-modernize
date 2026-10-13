@@ -1,0 +1,142 @@
+{
+  "codigo": "PY",
+  "pais": "Paraguay",
+  "moneda": "guaraní (PYG)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA general es del 10 % y existe un tipo reducido del 5 % solo para listas cerradas: alimentos básicos de la canasta familiar, medicamentos, productos agropecuarios y alquiler de vivienda. Un restaurante aplica normalmente el 10 %. Los contribuyentes del RESIMPLE (régimen de pequeños unipersonales) no son contribuyentes del IVA. Las bebidas alcohólicas pagan además el Impuesto Selectivo al Consumo. Si usas una plantilla española con IVA del 10 %, el parámetro coincide.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Paraguay, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/paraguay/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Ferrere — Ley 6380 de modernización del sistema tributario",
+          "url": "https://www.ferrere.com/en/news/paraguay-promulgan-ley-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre. Según la directora del Trabajo, citada por ABC Color en 2021, no está regulada por el Código del Trabajo y se considera un ingreso no remuneratorio, a diferencia de otros países de la región donde forma parte del salario. No hay un porcentaje legal que aplicar; si cobras un cargo por servicio, indícalo con claridad en la carta. Consulta con el Ministerio de Trabajo si la norma ha cambiado.",
+      "fuentes": [
+        {
+          "titulo": "ABC Color — Propinas para los mozos de locales gastronómicos",
+          "url": "https://www.abc.com.py/nacionales/2021/09/23/propinas-para-los-mozos-de-locales-gastronomicos-una-buena-costumbre/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "El Ministerio de Salud Pública controla los alimentos en sus aspectos higiénico-sanitarios; su portal lo atribuía en 2018 al INAN, y hoy la DINAVISA tiene una Dirección General de Regulación de Alimentos y emite el carnet de manipulador. Las buenas prácticas de manufactura son obligatorias por el Decreto 17.056/97, que pone en vigor el reglamento técnico del Mercosur, y deben aplicarlas todos los establecimientos de alimentos. La municipalidad también inspecciona tu local. No hemos confirmado una norma HACCP para restaurantes.",
+      "fuentes": [
+        {
+          "titulo": "MSPBS — Buenas prácticas de fabricación y manufactura de alimentos son obligatorias",
+          "url": "https://www.mspbs.gov.py/portal/16452/buenas-practicas-de-fabricacion-y-manufactura-de-alimentos-son-obligatorias.html",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DINAVISA — Dirección General de Regulación de Alimentos y Productos Afines",
+          "url": "https://dinavisa.gov.py/direccion-general-de-regulacion-de-alimentos-y-productos-a-fines/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "ABC Color — Guía 2026: patente comercial en la Municipalidad de Asunción",
+          "url": "https://www.abc.com.py/nacionales/2026/07/11/guia-2026-patente-comercial-en-la-municipalidad-de-asuncion-paso-a-paso/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "La DINAVISA creó con la Resolución 457/2025 un curso gratuito de manipulación de alimentos y el carnet correspondiente. Dura dos clases y termina con una evaluación virtual. El artículo 6 de esa resolución establece que el carnet es de adhesión voluntaria y no es un requisito obligatorio para ejercer la actividad. El curso se imparte según demanda, y la inscripción se hace con una nota enviada al correo oficial.",
+      "fuentes": [
+        {
+          "titulo": "DINAVISA — Comunicado DGRAPA 076 (curso de manipulación de alimentos)",
+          "url": "https://dinavisa.gov.py/wp-content/uploads/2025/12/COMUNICADO-DGRAPA-076.pdf",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "En Asunción necesitas la patente comercial de la Municipalidad, que se obtiene antes de abrir cualquier comercio, industria o servicio. Entre sus requisitos figuran la constancia de RUC de la DNIT, el contrato de alquiler o el título del local, un informe técnico de uso de suelo aprobado y un plano de prevención contra incendios; la municipalidad hace además una inspección física. Otros municipios piden requisitos propios. Consulta también qué habilitación sanitaria exige tu rubro.",
+      "fuentes": [
+        {
+          "titulo": "ABC Color — Guía 2026: patente comercial en la Municipalidad de Asunción",
+          "url": "https://www.abc.com.py/nacionales/2026/07/11/guia-2026-patente-comercial-en-la-municipalidad-de-asuncion-paso-a-paso/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas se autoriza normalmente con la habilitación municipal del local y los horarios y restricciones los fijan las municipalidades. Las bebidas alcohólicas pagan además el Impuesto Selectivo al Consumo. No hemos podido confirmar con fuente oficial el permiso específico ni los horarios; consulta con tu municipalidad qué licencia necesitas antes de planificar la carta de bebidas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Las formas habituales son la sociedad anónima, la S.R.L. y la EAS (Empresa por Acciones Simplificada); consulta con un escribano cuál te conviene. En impuestos, la Ley 6380 de 2019 creó el IRE, con una tasa general del 10 % sobre la renta neta, y dos regímenes para unipersonales: el RESIMPLE para los más pequeños, que no pagan IVA y emiten boletas de venta, y el IRE Simple para facturaciones medias.",
+      "fuentes": [
+        {
+          "titulo": "Ferrere — Ley 6380 de modernización del sistema tributario",
+          "url": "https://www.ferrere.com/en/news/paraguay-promulgan-ley-de-modernizacion-y-simplificacion-del-sistema-tributario-nacional/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "El Código del Trabajo (Ley 213/93) fija la jornada diurna en 8 horas diarias o 48 semanales, y la nocturna en 7 horas o 42 semanales. El «aguinaldo» (artículo 243) equivale a un doceavo de las remuneraciones del año y se paga antes del 31 de diciembre. La seguridad social va al IPS: aportan el 9 % el trabajador y el 16,5 % el empleador en comercio. Consulta los detalles con el Ministerio de Trabajo.",
+      "fuentes": [
+        {
+          "titulo": "Código del Trabajo, Ley 213/93 (texto consolidado)",
+          "url": "https://humanidades.uni.edu.py/wp-content/uploads/2016/07/Ley-213-93-Código-Laboral.pdf",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Paraguay, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/paraguay/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Rige el sistema métrico: se compra por kilo, medio kilo y gramo, y la temperatura se da en °C. Confirma con tu proveedor si usa medidas tradicionales y su equivalencia exacta, porque no hemos podido verificar la «arroba» y no conviene usarla como valor fijo. En panadería y fruta es habitual la «docena», y la mandioca se vende por kilo o por «atado».",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "En reparto operan PedidosYa y Monchis. Los medios de pago más extendidos incluyen el efectivo, las tarjetas, las transferencias, los códigos QR y las billeteras móviles como Tigo Money. Es habitual que la carta esté en español, aunque algunos locales usan platos y nombres en guaraní. Comprueba la comisión de cada plataforma y las billeteras que aceptan tus clientes antes de dar de alta la carta.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Hay créditos para mipymes a través de la Agencia Financiera de Desarrollo (AFD) y de bancos públicos, y programas de formalización de empresas por parte del Ministerio de Industria y Comercio. Las líneas y las convocatorias cambian y no hemos podido confirmar cuáles siguen vigentes. Consulta los portales oficiales antes de incluir ayudas en tu plan de negocio, y confirma requisitos con tu banco.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: la «lomitería» (local de sándwiches de lomito y hamburguesas, parecido al bar de bocadillos), el «copetín» (bar con comida rápida y tragos), la «chipería» (venta de chipa, el pan de queso y almidón de mandioca), la parrilla, la cafetería y la «cocina económica» de almuerzos baratos.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Mantén el IVA al 10 % y añade el 5 % solo para los productos de lista reducida. Sustituye el convenio de hostelería español por el Código del Trabajo (jornada de 48 horas) e incluye el aguinaldo antes del 31 de diciembre y el aporte al IPS. Si trabajas con un carnet de manipulador, recuerda que es voluntario; el plan de higiene se presenta ante DINAVISA y tu municipalidad.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«chipa» es un pan de queso y mandioca, no una tarta",
+    "«mandioca» es la yuca",
+    "«sopa paraguaya» es un pastel salado de maíz y queso, no una sopa",
+    "«lomito» es un sándwich de lomo, no solo el corte de carne",
+    "«copetín» es un trago o un bar de barrio con comida rápida"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "codigo": "US",
+  "pais": "Estados Unidos (para hispanohablantes)",
+  "moneda": "dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "No existe IVA federal: cada estado, y a menudo condado o ciudad, aplica su propio sales tax. Ejemplos: en Texas, el Contralor fija un 6,25 % estatal más hasta un 2 % local (máximo combinado del 8,25 %) y la comida de restaurante tributa; en Florida, la comida preparada en restaurante tributa, con tipo estatal del 6 % más el recargo discrecional de cada condado. El precio de carta se publica sin impuesto, que se suma en el ticket. Consulta el Department of Revenue de tu estado.",
+      "fuentes": [
+        {
+          "titulo": "Texas Comptroller – Sales and Use Tax",
+          "url": "https://comptroller.texas.gov/taxes/sales/",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DDH Tax – Texas: qué tributa en restaurantes",
+          "url": "https://www.ddhtax.com/2025/02/04/texas-sales-tax-restaurants-whats-taxable/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Florida Department of Revenue – Sales and Use Tax",
+          "url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Florida Sales Tax – restaurantes y comida preparada",
+          "url": "https://www.floridasalestax.com/florida-tax-law-blog/2026/april/fl-sales-tax-restaurants-what-every-owner-needs-/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina se calcula aparte y lo habitual es dejar entre el 18 % y el 20 % del subtotal en servicio de mesa. Con el tip credit federal, el empleador puede pagar un salario en efectivo inferior al mínimo si con las propinas se alcanza el mínimo federal; si no, debe cubrir la diferencia. Algunos estados exigen un salario en efectivo mayor o prohíben el tip credit: consulta el Departamento del Trabajo de tu estado.",
+      "fuentes": [
+        {
+          "titulo": "DOL – Fact Sheet 15: empleados con propinas (FLSA)",
+          "url": "https://www.dol.gov/agencies/whd/fact-sheets/15-tipped-employees-flsa",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La inspección corresponde a la autoridad de salud de tu jurisdicción (estado, condado o ciudad). La referencia técnica es el Food Code de la FDA, un modelo que cada jurisdicción usa para desarrollar o actualizar sus propias reglas; la FDA indica que la edición completa más reciente es la de 2026. Es el equivalente funcional del APPCC español, con temperaturas en °F y control de tiempo y temperatura. Comprueba qué edición aplica tu jurisdicción.",
+      "fuentes": [
+        {
+          "titulo": "FDA – Food Code",
+          "url": "https://www.fda.gov/food/retail-food-protection/fda-food-code",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "Hay dos niveles. El food handler card o curso de manipulador para empleados: en Texas, DSHS exige que todo empleado de alimentos complete un curso acreditado (DSHS o ANSI) en los 30 días siguientes a su contratación, con validez de 2 años si la tarjeta no indica otra fecha. El nivel de gerente, Certified Food Manager (CFM/CFPM, p. ej. ServSafe Manager), exime en Texas del curso de handler. Los requisitos cambian por estado y condado; consulta tu health department.",
+      "fuentes": [
+        {
+          "titulo": "Texas DSHS – preguntas frecuentes de food handler",
+          "url": "https://www.dshs.texas.gov/food-handlers/faq.aspx",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos varían por estado y ciudad. La SBA indica que los restaurantes se regulan sobre todo a nivel local y que la zonificación la controla cada ciudad. Como ejemplo, en Nueva York necesitas el permiso de establecimiento de servicio de comida del Departamento de Salud, con un gerente supervisor que haya pasado el curso de protección alimentaria, y un Certificate of Occupancy del Departamento de Edificios. Pregunta además por bomberos, rótulos y el registro de sales tax. El EIN lo gestionas con el IRS.",
+      "fuentes": [
+        {
+          "titulo": "SBA — Apply for licenses and permits",
+          "url": "https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "NYC Business — Food Service Establishment Permit",
+          "url": "https://nyc-business.nyc.gov/nycbusiness/description/food-service-establishment-permit",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "IRS — Obtén un EIN",
+          "url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "Cada estado regula las licencias de venta de alcohol a través de su propia autoridad (en California, el Department of Alcoholic Beverage Control; en otros estados, un liquor board o equivalente). Existen licencias de consumo en el local (on-sale) distintas de las de botella cerrada, y las condiciones, cupos y horarios cambian de un estado a otro. Revisa la autoridad de tu estado antes de planificar la carta de bebidas.",
+      "fuentes": [
+        {
+          "titulo": "California Senate – Department of Alcoholic Beverage Control: antecedentes",
+          "url": "https://sgov.senate.ca.gov/sites/sgov.senate.ca.gov/files/department_of_alcoholic_beverage_control_background.pdf",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "forma_juridica": {
+      "texto": "Las formas habituales son la sole proprietorship (dueño único), la LLC y la corporación (S-Corp o C-Corp). Para LLC y corporaciones, el IRS recomienda constituir primero la entidad en tu estado y luego pedir el EIN. El EIN es gratuito y, en general, lo necesitas para contratar empleados, operar una sociedad o pagar sales and excise taxes. Consulta con un contador cómo tributa cada forma.",
+      "fuentes": [
+        {
+          "titulo": "IRS – Obtén un EIN",
+          "url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "laboral": {
+      "texto": "La ley federal FLSA exige pagar las horas trabajadas por encima de 40 en una semana laboral al menos a una vez y media la tarifa normal, a los empleados cubiertos que no están exentos; no fija un máximo de horas para mayores de 16 años. Muchos estados añaden reglas propias sobre salario mínimo, descansos y tip credit, y rige la más favorable al empleado. Consulta las prestaciones y los seguros obligatorios en el Departamento del Trabajo de tu estado.",
+      "fuentes": [
+        {
+          "titulo": "DOL – horas extra (FLSA)",
+          "url": "https://www.dol.gov/agencies/whd/overtime",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DOL – Fact Sheet 15 (reglas estatales más favorables)",
+          "url": "https://www.dol.gov/agencies/whd/fact-sheets/15-tipped-employees-flsa",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "Se usan libra (lb, 453,6 g), onza (oz, 28,35 g), onza líquida (fl oz, 29,57 mL), pinta, cuarto (quart, 0,946 L) y galón (3,785 L). La temperatura es en °F: 41 °F equivalen a unos 5 °C y 165 °F a unos 74 °C. Se compra por «case» (caja) o «flat». Los restaurantes piden la carne por lb y los vinos por botella de 750 mL.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "Dominan DoorDash, Uber Eats y Grubhub. Para pagar se usan tarjeta, efectivo, Apple Pay, Google Pay y, entre la comunidad hispana, también Zelle y Venmo. Las comisiones de las apps son altas, así que incluye su coste en el cálculo del precio de cada plato y, si puedes, ofrece un menú de delivery con márgenes propios.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "apoyos_emprendimiento": {
+      "texto": "La agencia federal SBA ofrece préstamos 7(a) y microcréditos, con topes que cambian; en su portal encontrarás también la asesoría y los recursos locales para emprendedores. Los programas estatales y municipales cambian cada año: comprueba la convocatoria vigente en la web oficial de tu estado o ciudad.",
+      "fuentes": [
+        {
+          "titulo": "SBA – préstamos 7(a)",
+          "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "SBA – microcréditos",
+          "url": "https://www.sba.gov/funding-programs/loans/microloans",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "tipos_local": {
+      "texto": "«Diner» (cafetería de desayunos todo el día), «deli» (fiambrería con bocadillos), «food truck» (camión de comida), «taquería», «cantina», «bar & grill», «fast casual» (tipo Chipotle), «ghost kitchen» (cocina solo para delivery) y «steakhouse». La «cafeteria» de la escuela es el comedor escolar; el «take-out» es para llevar.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA del 10 % por el sales tax de tu estado y ciudad (se añade al precio de carta). Convierte kilos, litros y °C a lb, galones y °F. Cambia el convenio de hostelería por la FLSA y las leyes de tu estado. Presenta el APPCC con el Food Code de la FDA. Añade el tip credit (si tu estado lo permite) y las comisiones de DoorDash y Uber Eats.",
+      "fuentes": [
+        {
+          "titulo": "FDA – Food Code",
+          "url": "https://www.fda.gov/food/retail-food-protection/fda-food-code",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DOL – Fact Sheet 15",
+          "url": "https://www.dol.gov/agencies/whd/fact-sheets/15-tipped-employees-flsa",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "DOL – horas extra (FLSA)",
+          "url": "https://www.dol.gov/agencies/whd/overtime",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    }
+  },
+  "trampas": [
+    "«Lavaplatos» es la persona que friega los platos (dishwasher), no solo la máquina.",
+    "«Mesero» (waiter) y «garrotero» (busser, quien recoge mesas) son los términos habituales entre el personal hispano.",
+    "«Cocinero de línea» es el line cook; «el walk-in» es la cámara frigorífica y «el cooler» la nevera.",
+    "«La parrilla» es el grill de la cocina, y «el hood» es la campana extractora.",
+    "«Cuarto» no es habitación sino quart (0.946 L); «pinta» es medio quart.",
+    "«Flat» o «case» son cajas de producto; «tip» es la propina, no una sugerencia."
+  ]
+}

@@ -67,6 +67,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Marisquería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «gambas» es «camarones» en México y «langostinos» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Marisquería con Vivero y APPCC',
   },
@@ -213,7 +217,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de los 9 checklists principales, recibirás estos recursos adicionales — valorados en €34',
+      'Además de los 9 checklists principales, recibirás estos recursos adicionales — valorados en €49',
     items: [
       {
         icon: 'Megaphone',
@@ -230,6 +234,14 @@ const data: KitTareasData = {
         value: '€19',
         desc: '12 meses con temporadas de pesca de España (gamba roja, percebes, centollo, bogavante), vedas oficiales por especie, festivos navideños, mantenimientos del vivero, formación del equipo y cierres por vacaciones.',
         image: '/lovable-uploads/ai-gallery/tareas-marisqueria-expositor.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -272,12 +284,16 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas y sin complicaciones.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Marisquería» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «gambas» es «camarones» en México y «langostinos» en Argentina; «camarero» es «mesero» en México y «mozo» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Tu Marisquería a Estándar Profesional — En 11 Checklists',
     subtitle:
-      '9 checklists + 2 bonus que organizan las áreas críticas de tu marisquería: vivero, expositor, trazabilidad APPCC, lonjas, perfiles. Por menos de lo que cuesta una buena mariscada.',
+      '9 checklists + 3 bonus que organizan las áreas críticas de tu marisquería: vivero, expositor, trazabilidad APPCC, lonjas, perfiles. Por menos de lo que cuesta una buena mariscada.',
     items: [
       'Apertura y cierre completo de vivero, expositor, cámaras y sala',
       'Protocolo del vivero: oxígeno, salinidad, temperatura, mortalidad',
@@ -287,6 +303,7 @@ const data: KitTareasData = {
       'Calendario anual con temporadas de pesca y vedas oficiales',
       'BONUS: Briefing de Servicio (€15)',
       'BONUS: Calendario Anual de Tareas (€19)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS MARISQUERÍA — €14',
   },

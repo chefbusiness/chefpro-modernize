@@ -85,6 +85,10 @@ const data: PlanNegocioData = {
         q: '¿Cómo funciona la garantía?',
         a: '30 días de devolución completa. Si el plan no cumple tus expectativas, te devolvemos el 100 % del importe. Los 9 entregables son tuyos para siempre + actualizaciones gratuitas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Coctelería de Eventos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «pajita» es «popote» en México y «sorbete» en Argentina; «nevera» es «refrigerador» en México y «heladera» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Plan de Negocio Coctelería de Eventos',
   },
@@ -188,7 +192,7 @@ const data: PlanNegocioData = {
 
   bonus: {
     subtitle:
-      'Además del plan financiero y los 7 entregables principales, accedes a estos recursos extra — valorados en €68',
+      'Además del plan financiero y los 7 entregables principales, accedes a estos recursos extra — valorados en €83',
     items: [
       {
         icon: 'ScrollText',
@@ -205,6 +209,14 @@ const data: PlanNegocioData = {
         value: '€39',
         desc: 'Speakeasy Años 20, Gin Lounge, Tropical Tiki, Mixología Molecular, Bourbon Tasting, Mediterranean, Latin, Whisky, Champagne y Signature. Cada una lista para vender en eventos con su carta de cocktails y briefing operativo.',
         image: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-5.jpeg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -249,6 +261,10 @@ const data: PlanNegocioData = {
       q: '¿Cómo funciona la garantía?',
       a: '30 días de devolución completa. Si el plan no cumple tus expectativas, te devolvemos el 100 % del importe sin preguntas. Los 9 entregables son tuyos para siempre + actualizaciones gratuitas.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Plan de Negocio Coctelería de Eventos» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «pajita» es «popote» en México y «sorbete» en Argentina; «nevera» es «refrigerador» en México y «heladera» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
@@ -262,6 +278,7 @@ const data: PlanNegocioData = {
       'Catálogo equipamiento (GGM/Mewindo/Deus) + 15 cocktails',
       'Modelo de contrato profesional + 10 experiencias premium',
       'Checklist 71 trámites adaptado al modelo itinerante',
+      'BONUS: Guía de Equivalencias para tu país',
       'Acceso de por vida + 30 días de garantía de devolución',
     ],
     ctaLabel: 'SÍ, QUIERO EL PLAN — €55',

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  Download, Loader2, Globe, FileSpreadsheet, ArrowLeft,
   DoorOpen, Coffee, ClipboardList, Users,
   CalendarDays, PartyPopper, FileEdit, Megaphone, Calendar, Building2, Wallet,
 } from 'lucide-react';
@@ -24,6 +24,7 @@ const TEMPLATES = [
   { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Servicio', desc: 'Plantilla de briefing pre-servicio.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '17 fechas clave de hostelería.' },
+  { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.' },
 ];
 
 export default function KitTareasCafeteriaDashboard() {
@@ -88,7 +89,7 @@ export default function KitTareasCafeteriaDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              7 Checklists + 2 Bonus · Descarga Directa
+              7 Checklists + 3 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -112,7 +113,7 @@ export default function KitTareasCafeteriaDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">.xlsx</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'guia-equivalencias' ? '.docx' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>
@@ -147,7 +148,7 @@ export default function KitTareasCafeteriaDashboard() {
                 Compatibles con Excel, Google Sheets, LibreOffice, Numbers + Imprimible A4
               </p>
               <p className="text-gray-400 text-sm">
-                Descarga los archivos .xlsx y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.
+                Descarga los archivos y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.
               </p>
             </div>
           </div>

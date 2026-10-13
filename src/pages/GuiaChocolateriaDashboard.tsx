@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import {
-  Download, Loader2, ArrowLeft,
+  Download, Loader2, Globe, ArrowLeft,
   BookOpen, FileText, Building2, Banknote,
   Coins, Calculator, Timer, CalendarRange,
   TrendingUp, ClipboardCheck, Wrench,
@@ -46,6 +46,12 @@ const SECTIONS = [
       { key: 'bonus-decisiones-docx', icon: FileText, title: '12 Decisiones de Apertura Resueltas (DOCX Editable)', desc: 'Mismo bonus en formato editable para trabajarlo con tu socio, tu gestor o tu técnico.', ext: '.docx' },
     ],
   },
+  {
+    title: 'Bonus Internacional',
+    templates: [
+      { key: 'guia-equivalencias', icon: Globe, title: 'Guía de Equivalencias para tu país', desc: 'Vocabulario, impuestos, sanidad, normas laborales y unidades de 20 países para adaptar tu producto.', ext: '.docx' },
+    ],
+  },
 ];
 
 export default function GuiaChocolateriaDashboard() {
@@ -83,7 +89,7 @@ export default function GuiaChocolateriaDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="guia-chocolateria-obrador" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 9 libros de Excel + los dos bonus, listos para descargar.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 9 libros de Excel + los dos bonus + la Guía de Equivalencias, listos para descargar.</p>
         </section>
 
         {SECTIONS.map((section) => (

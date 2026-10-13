@@ -1,0 +1,139 @@
+{
+  "codigo": "HN",
+  "pais": "Honduras",
+  "moneda": "lempira (HNL)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El Impuesto Sobre Ventas (ISV) general es del 15 % y se aplica a la mayoría de bienes y servicios; PwC no recoge un tipo especial para restaurantes. La venta de bebidas alcohólicas y de tabaco tributa al 18 %. Además existe un Impuesto de Producción y Consumo sobre cigarrillos, gaseosas y bebidas alcohólicas, ajustado al 5,19 % en 2024 según la SAR. Confirma con la SAR cómo se combinan estos tipos en tu carta.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Honduras, otros impuestos (ISV 15 % y 18 %)",
+          "url": "https://taxsummaries.pwc.com/honduras/corporate/other-taxes",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "SAR Honduras — Impuesto Sobre Ventas (ajuste al 5,19 % del Impuesto de Producción y Consumo)",
+          "url": "https://www.sar.gob.hn/impuesto-sobre-ventas-isv/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria. El reglamento de la Ley de Protección al Consumidor (art. 78.4, 2022) consideró práctica abusiva añadirla a la factura, pero en agosto de 2023 la Secretaría de Desarrollo Económico y la asociación de restaurantes acordaron mantenerla como opción para el cliente, también en factura manual y electrónica. No hemos hallado un porcentaje oficial. Confirma en la Dirección de Protección al Consumidor cómo debe figurar hoy en tu factura.",
+      "fuentes": [
+        {
+          "titulo": "El Heraldo — El pago de la propina en Honduras será opcional",
+          "url": "https://www.elheraldo.hn/economia/pago-propina-honduras-sera-opcional-GF14882037",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Bloomberg Línea — Prohibición de propina en el nuevo reglamento (Honduras)",
+          "url": "https://www.bloomberglinea.com/2022/06/17/prohibicion-de-propina-en-nuevo-reglamento-preocupa-a-hoteles-y-restaurantes-de-honduras/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La Agencia de Regulación Sanitaria (ARSA) otorga las licencias sanitarias de los establecimientos de alimentos y bebidas. Rige el Reglamento para el Control Sanitario de Alimentos y Bebidas, en vigor desde el 13 de agosto de 2024, que pide instalaciones higiénicas (suelos impermeables, paredes lavables, control de plagas). No hemos confirmado que exija HACCP: consulta a ARSA si te piden un plan documentado de buenas prácticas antes de diseñar tus procedimientos.",
+      "fuentes": [
+        {
+          "titulo": "García Bodán — New health regulation for food and beverages in Honduras",
+          "url": "https://garciabodan.com/en/new-health-regulation-for-food-and-beverages-in-honduras/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "ARSA — Trámites de Alimentos y Bebidas",
+          "url": "https://arsa.gob.hn/alimentos-y-bebidas/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "No hemos confirmado una norma ni un emisor concretos del carné de manipulador. En la práctica se suele pedir formación en manipulación de alimentos y control médico del personal, pero los requisitos y su vigencia varían. Pregunta a ARSA o a la región sanitaria de tu zona qué documento exigen y cada cuánto se renueva antes de contratar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Según El Heraldo (2023), en Tegucigalpa un restaurante pide: constancia de compatibilidad de uso de suelo, licencia sanitaria de ARSA, licencia ambiental (UGA), certificación de bomberos, inscripción de la empresa en la alcaldía (RTN, escritura, solvencia, clave catastral), inspección del local y permiso de operación. Cada alcaldía tiene su procedimiento y cambia con el tiempo: confirma el orden en la tuya.",
+      "fuentes": [
+        {
+          "titulo": "El Heraldo — Requisitos para abrir un restaurante en la capital",
+          "url": "https://www.elheraldo.hn/tegucigalpa/requisitos-abrir-restaurante-capital-honduras-documentos-alcaldia-GN12687331",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas se autoriza en el permiso de operación municipal, con licencia o permiso específico de la alcaldía, y están reguladas por horarios y zonas. Las restricciones concretas dependen del municipio y del reglamento de ARSA; no hemos confirmado una ley nacional única, así que consulta a tu alcaldía.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es el comerciante individual o la sociedad mercantil (S. de R.L. o S.A.). Existe un régimen simplificado de pequeños contribuyentes, pero no hemos podido confirmar con la SAR su alcance ni sus topes para restaurantes. Consulta a la SAR antes de decidir si te conviene la forma societaria o el régimen simplificado.",
+      "fuentes": [
+        {
+          "titulo": "SAR Honduras",
+          "url": "https://www.sar.gob.hn/impuesto-sobre-ventas-isv/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 44 semanales, pagadas como 48 (Código del Trabajo, art. 322). Los pagos extra son el décimo tercer mes (aguinaldo) y el décimo cuarto mes, que el Decreto 135-94 fija en junio con las mismas condiciones del aguinaldo. El IHSS (Instituto Hondureño de Seguridad Social) afilia a los trabajadores. Confirma con la Secretaría de Trabajo las fechas del aguinaldo antes de contratar.",
+      "fuentes": [
+        {
+          "titulo": "STSS — Código del Trabajo y sus reformas (art. 322)",
+          "url": "https://www.trabajo.gob.hn/wp-content/uploads/2022/09/Codigo-del-Trabajo-y-sus-Reformas.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "STSS — Acuerdo 02-95, Reglamento del Décimo Cuarto Mes (Decreto 135-94)",
+          "url": "https://www.trabajo.gob.hn/wp-content/uploads/2016/07/Acuerdo-02-95-Reglamento-del-Decimo-Cuarto-Mes-de-Salario-en-Concepto-de-Compensacion-Social.pdf",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "IHSS — Requisitos para afiliación",
+          "url": "https://www.ihss.hn/requisitos-para-afiliacion/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "En los mercados se compra por libra y los granos o el café por quintal (100 libras); los líquidos se piden por galón y las bebidas por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El sistema métrico se usa en la empresa formal, pero libras y galones siguen siendo las unidades del mercado.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El efectivo es el medio dominante en negocios pequeños; las tarjetas y las transferencias bancarias se usan más en las ciudades. En delivery operan Pedidos Ya y Uber Eats en Tegucigalpa y San Pedro Sula, y muchos locales reparten por WhatsApp.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre los apoyos públicos están el Banco Hondureño para la Producción y la Vivienda (BANHPROVI) y los programas de Servicio de Apoyo a la Micro, Pequeña y Mediana Empresa de la Secretaría de Desarrollo Económico. Verifica en cada web qué líneas están vigentes y cuáles son los requisitos antes de tomar una decisión financiera.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos habituales son el «comedor» (casa de comidas con plato del día), el «baleadero» (puesto de baleadas, tortilla de harina rellena), el «asadero», la pollería y la cafetería. La «comida corrida» es el menú del día y la «fonda» o «comedor» es una casa de comidas familiar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español por el ISV del 15 % en la casilla de parámetros y revisa el tipo aplicable a las bebidas alcohólicas con la SAR. Sustituye el APPCC por la licencia sanitaria de ARSA y buenas prácticas. Añade el décimo tercer y el décimo cuarto mes al coste de personal y la cotización del IHSS. Ajusta las compras a libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«baleada» es una tortilla de harina rellena de frijoles, no una bala",
+    "«pupusa» es salvadoreña; en Honduras lo típico es la «baleada»",
+    "«catracho» es el gentilicio coloquial de hondureño, no un insulto",
+    "«refresco» es una bebida fría de frutas o una gaseosa, no solo una gaseosa"
+  ]
+}

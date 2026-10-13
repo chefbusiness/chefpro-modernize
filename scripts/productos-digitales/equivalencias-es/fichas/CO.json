@@ -1,0 +1,176 @@
+{
+  "codigo": "CO",
+  "pais": "Colombia",
+  "moneda": "peso colombiano (COP)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "La restauración no paga IVA sino el impuesto nacional al consumo, del 8 % sobre «restaurantes y cafeterías»; lo recaudas del cliente, no lo puedes descontar como el IVA y para la renta cuenta como mayor coste. El IVA general en Colombia es del 19 %, con tipos del 5 % y 0 % para algunos bienes. Si usas una plantilla española con IVA del 10 %, cambia ese parámetro por el 8 % de impoconsumo. Verifica con tu contador si algún régimen te exime.",
+      "fuentes": [
+        {
+          "titulo": "PwC Worldwide Tax Summaries — Colombia, otros impuestos",
+          "url": "https://taxsummaries.pwc.com/colombia/corporate/other-taxes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria por ley: la Ley 1935 de 2018 dice que el establecimiento puede sugerirla, pero su aceptación depende del consumidor, que tiene derecho a no pagarla o a cambiar su valor. Si se sugiere e incluye en la factura, no puede superar el 10 % del valor del servicio. Debes informar con claridad su carácter voluntario y los dueños y administradores no pueden intervenir en su reparto.",
+      "fuentes": [
+        {
+          "titulo": "Función Pública — Ley 1935 de 2018",
+          "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=87873",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "Los restaurantes se rigen por la Ley 9 de 1979 (Código Sanitario Nacional) y la Resolución 2674 de 2013 del Ministerio de Salud, que fija las buenas prácticas de manufactura (BPM), no el HACCP español. La vigilancia la hace la secretaría de salud de tu ciudad o departamento, con inspecciones y concepto sanitario; el INVIMA actúa a nivel nacional. Debes tener un plan de saneamiento con limpieza y desinfección, manejo de residuos y control de plagas.",
+      "fuentes": [
+        {
+          "titulo": "Alcaldía de Bogotá — ¿Qué se debe tener si voy a tener un restaurante?",
+          "url": "https://bogota.gov.co/mi-ciudad/salud/que-se-debe-tener-si-voy-tener-un-restaurante-en-bogota-este-2025",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "manipulador": {
+      "texto": "No hay un único carné nacional: la norma exige que el personal manipulador tenga una certificación médica que acredite su aptitud para manipular alimentos y que el establecimiento mantenga un plan de capacitación continuo y permanente, con metodología, duración, docentes, cronograma y temas. Esa capacitación suele darla un curso de manipulación de alimentos de la secretaría de salud o de una entidad autorizada. Guarda los registros para las inspecciones.",
+      "fuentes": [
+        {
+          "titulo": "Alcaldía de Bogotá — Requisitos sanitarios para un restaurante",
+          "url": "https://bogota.gov.co/mi-ciudad/salud/que-se-debe-tener-si-voy-tener-un-restaurante-en-bogota-este-2025",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "licencias_apertura": {
+      "texto": "En Bogotá los requisitos son: registro mercantil en la Cámara de Comercio, uso del suelo, concepto sanitario, carta de apertura y concepto de bomberos; la Ley 1801 de 2016 (Código de Policía), artículo 87, exige además comunicar la apertura a la Policía. Para poner música debes tener el certificado de Sayco y Acinpro, o el de «no usuario». Obtén también el RUT en la DIAN y revisa tu ciudad, porque el trámite varía.",
+      "fuentes": [
+        {
+          "titulo": "Alcaldía de Bogotá — Documentos y trámites para establecimientos de comercio",
+          "url": "https://bogota.gov.co/mi-ciudad/gobierno/documentos-y-tramites-para-establecimientos-de-comercio-en-bogota",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Gerencie — Requisitos que debe cumplir un establecimiento de comercio",
+          "url": "https://www.gerencie.com/requisitos-que-un-establecimiento-de-comercio-debe-cumplir-para-poder-abrir-al-publico.html",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "alcohol": {
+      "texto": "La venta de licor exige una licencia que otorga la entidad municipal o distrital, una vez cumplidos los requisitos generales del establecimiento. Si quieres operar fuera del horario estándar necesitas además un permiso de horario extendido que se pide en la alcaldía. Los horarios y restricciones los fija cada municipio, y existen «leyes secas» locales en elecciones y festivos concretos. Confirma con tu alcaldía qué se aplica en tu ciudad.",
+      "fuentes": [
+        {
+          "titulo": "Siigo — Permisos para abrir un bar en Colombia",
+          "url": "https://www.siigo.com/blog/emprendimiento/permisos-para-abrir-bar-colombia/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "forma_juridica": {
+      "texto": "La forma más habitual es la S.A.S. (sociedad por acciones simplificada, Ley 1258 de 2008), que se constituye por documento privado y se inscribe en la Cámara de Comercio; también hay persona natural. Como régimen fiscal simplificado está el Régimen Simple de Tributación (SIMPLE) ante la DIAN, alternativo al régimen ordinario, que unifica varios impuestos. La actividad de restaurante tiene un tratamiento propio con el impoconsumo; confirma tu caso con un contador.",
+      "fuentes": [
+        {
+          "titulo": "Función Pública — Ley 1258 de 2008",
+          "url": "https://www1.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=34130",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Siigo — Cómo abrir un restaurante en Colombia",
+          "url": "https://www.siigo.com/blog/emprendimiento/como-abrir-un-restaurante-en-colombia/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "laboral": {
+      "texto": "La jornada máxima es de 42 horas semanales desde el 15 de julio de 2026, tras la reducción gradual de la Ley 2101 de 2021 (47 h en 2023, 46 h en 2024, 44 h en 2025), sin bajar salario ni prestaciones. Hay prima de servicios (15 días por semestre aproximadamente), cesantías (un mes por año) con intereses del 12 % anual, vacaciones, y afiliación a EPS, pensión, ARL y caja de compensación.",
+      "fuentes": [
+        {
+          "titulo": "Vanguardia — Desde el 16 de julio de 2026 la jornada será de 42 horas",
+          "url": "https://www.vanguardia.com/colombia/2026/07/02/desde-el-16-de-julio-la-jornada-laboral-en-colombia-sera-de-42-horas-asi-queda-la-reduccion/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "El Heraldo — Reducción de la jornada laboral",
+          "url": "https://www.elheraldo.co/economia/esto-lo-que-debe-saber-sobre-la-reduccion-de-la-jornada-laboral-970693",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Tiendanube — Prestaciones sociales en Colombia",
+          "url": "https://www.tiendanube.com/co/blog/prestaciones-sociales/",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "unidades_mercado": {
+      "texto": "En plazas de mercado y proveedores la «libra» equivale a 500 gramos (medio kilo, no los 453,6 g anglosajones), la «arroba» son 25 libras, es decir 12,5 kg, y el «quintal» son 100 libras (50 kg). La «onza» tradicional son 31,25 g. También se compra por «botella», «caneca», «garrafa» (envase grande de agua o aceite), «bulto» y «paca». Las temperaturas se dan en °C.",
+      "fuentes": [
+        {
+          "titulo": "Store norske leksikon — Mynt, mål og vekt i Colombia",
+          "url": "https://snl.no/Mynt,_m%C3%A5l_og_vekt_i_Colombia",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Wikipedia — Colombian units of measurement",
+          "url": "https://en.wikipedia.org/wiki/Colombian_units_of_measurement",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "En reparto dominan Rappi y DiDi Food; iFood tuvo presencia pero comprueba si sigue activo en tu ciudad. Los medios de pago incluyen efectivo, tarjetas, transferencias PSE y las billeteras Nequi y Daviplata, muy extendidas incluso en negocios pequeños. Bre-B, el sistema de pagos inmediatos del Banco de la República, se está implantando para pagar por QR o llave. Confirma qué billeteras aceptan tus clientes y la comisión real de cada plataforma antes de dar de alta tu carta.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "El Fondo Emprender del SENA entrega capital semilla a emprendimientos nuevos mediante convocatorias públicas, con líneas como Crear y Crecer; iNNpulsa Colombia es la agencia de innovación y emprendimiento del Gobierno, y Bancóldex es el banco de desarrollo empresarial que canaliza líneas de crédito para pymes. Las convocatorias abren y cierran durante el año, así que consulta fechas y requisitos en sus portales antes de incluirlos en tu plan de negocio.",
+      "fuentes": [
+        {
+          "titulo": "Fondo Emprender (SENA)",
+          "url": "https://www.fondoemprender.com",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Bancóldex",
+          "url": "https://www.bancoldex.com",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "iNNpulsa Colombia",
+          "url": "https://innpulsacolombia.com",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "tipos_local": {
+      "texto": "Formatos típicos: el «corrientazo» o almuerzo ejecutivo (menú del día con sopa, bandeja y jugo), el «asadero» (pollo o carne a la brasa), la «fritanga» (fritos y embutidos de barrio), el «piqueteadero» (picada para compartir), la panadería-cafetería (equivalente a la cafetería española), la «cevichería» costera y la «tienda» de barrio que sirve desayunos y bebidas. Para el cliente, un «corrientazo» no es comida barata de baja calidad sino un menú diario fijo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el impuesto al consumo del 8 % y explica que no es descontable. Reemplaza el convenio de hostelería por el Código Sustantivo del Trabajo, con jornada de 42 horas, prima, cesantías e intereses. Presenta el plan APPCC como programa de BPM conforme a la Resolución 2674 de 2013. Quita el IVA a la propina, que es voluntaria, y usa la libra de 500 g al convertir recetas de proveedores.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«tinto» es un café negro solo, no un vino tinto",
+    "«aromática» es una infusión de hierbas",
+    "«onces» es la merienda o media tarde",
+    "«mecato» son los snacks o golosinas",
+    "«corrientazo» es el menú del día, no una comida corriente de mala calidad",
+    "«libra» son 500 g, no 453,6 g"
+  ]
+}

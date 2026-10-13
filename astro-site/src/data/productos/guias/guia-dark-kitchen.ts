@@ -46,7 +46,7 @@ const data: GuiaData = {
     discountBadge: '-73%',
     heroNote: 'Precio especial de lanzamiento. Sube pronto',
     buyBoxNote: 'Precio especial de lanzamiento — 71% de descuento',
-    bonusTotalLabel: 'Valor total: guía + 3 bonus',
+    bonusTotalLabel: 'Valor total: guía + 4 bonus',
     bonusSaveLine: 'Ahorra 66 EUR HOY',
   },
 
@@ -114,12 +114,13 @@ const data: GuiaData = {
   },
 
   bonus: {
-    subtitle: 'Además de la guía PDF + DOCX, recibes estos 3 recursos Excel — valorados en 47 EUR',
+    subtitle: 'Además de la guía PDF + DOCX, recibes estos 4 recursos — valorados en 62 EUR',
     layout: 'single',
     items: [
       { icon: 'ClipboardList', label: 'BONUS 1', title: 'Checklist de Apertura Legal', value: '24 EUR', desc: '35 trámites organizados por categoría: constitución, licencias municipales, sanidad, seguros, Hacienda, protección de datos y APPCC. Con estado, responsable y fecha límite.', image: '/lovable-uploads/ai-gallery/guia-dk-tablets.jpg' },
       { icon: 'Wrench', label: 'BONUS 2', title: 'Checklist de Equipamiento y Obra', value: '24 EUR', desc: '40 ítems con presupuesto real: obra civil, instalaciones, cocina caliente, cocina fría, almacenamiento, expedición y tecnología. Presupuesto vs real con % de desviación.', image: '/lovable-uploads/ai-gallery/guia-dk-cocina.jpg' },
       { icon: 'Calculator', label: 'BONUS 3', title: 'Calculadora de Viabilidad Financiera', value: '19 EUR', desc: 'Inversión inicial, P&L mensual con comisiones de plataformas y punto de equilibrio automático con 3 escenarios (pesimista, realista, optimista).', image: '/lovable-uploads/ai-gallery/guia-dk-plano.jpg' },
+      { icon: 'Globe', label: 'BONUS 4', title: 'Guía de Equivalencias para tu país', value: '15 EUR', desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.', image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg' },
     ],
   },
 
@@ -138,6 +139,7 @@ const data: GuiaData = {
     { q: '¿Sirve si ya tengo un restaurante y quiero expandir a delivery?', a: 'Especialmente para eso. El capítulo 3 explica los modelos de negocio: marca propia, multi-marca desde tu cocina existente, o cocina satélite. Muchos restaurantes usan dark kitchens como extensión.' },
     { q: '¿Cuánto cuesta montar una dark kitchen?', a: 'Entre 30.000€ y 80.000€ dependiendo de la ubicación, equipamiento y número de marcas. La guía desglosa cada partida con costes reales del mercado español en el capítulo 4 y el checklist de equipamiento.' },
     { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.' },
+    { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Dark Kitchen» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «beneficio» es «utilidad» en México y «ganancia» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
   ],
 
   cta: {
@@ -150,6 +152,7 @@ const data: GuiaData = {
       'Checklist de equipamiento y obra (40 ítems con costes)',
       'Calculadora de viabilidad financiera (3 escenarios)',
       'Infografías: layout de cocina + timeline 90 días',
+      'BONUS: Guía de Equivalencias para tu país',
     ],
     ctaLabel: 'SÍ, QUIERO LA GUÍA — 24 EUR',
   },
@@ -181,6 +184,7 @@ const data: GuiaData = {
       { q: '¿Cuánto cuesta montar una dark kitchen?', a: 'Entre 30.000€ y 80.000€ dependiendo de ubicación, equipamiento y número de marcas. La guía desglosa cada partida.' },
       { q: '¿Incluye los requisitos legales actualizados?', a: 'Sí. Licencias, APPCC, registro sanitario, seguros, normativa plásticos 2026. Actualizada para España.' },
       { q: '¿El DOCX es editable?', a: 'Sí. Recibes PDF editorial + DOCX editable para personalizar y presentar a socios o bancos.' },
+      { q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?', a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Guía Dark Kitchen» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «escandallo» es «costeo de recetas» en México y «receta estándar» en Colombia; «beneficio» es «utilidad» en México y «ganancia» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.' },
     ],
     breadcrumb: [
       { name: 'AI Chef Pro', item: 'https://aichef.pro' },

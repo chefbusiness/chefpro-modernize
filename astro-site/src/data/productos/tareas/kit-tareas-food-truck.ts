@@ -70,6 +70,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días. Si no estás satisfecho, devolución 100% sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Food Truck» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «nevera» es «refrigerador» en México y «heladera» en Argentina; «bocadillo» es «torta» en México y «sándwich» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Food Truck',
   },
@@ -216,7 +220,7 @@ const data: KitTareasData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de los 9 checklists principales, recibirás estos recursos adicionales — valorados en €38',
+      'Además de los 9 checklists principales, recibirás estos recursos adicionales — valorados en €53',
     items: [
       {
         icon: 'Calendar',
@@ -233,6 +237,14 @@ const data: KitTareasData = {
         value: '€19',
         desc: 'Planificación anual con eventos por mes, menú sugerido por temporada, mantenimiento programado del vehículo y generador, y acciones de marketing por estación. Año completo bajo control.',
         image: '/lovable-uploads/ai-gallery/use-case-food-truck-grill.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -275,14 +287,18 @@ const data: KitTareasData = {
       q: '¿Hay garantía de devolución?',
       a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas y sin complicaciones.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Food Truck» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «nevera» es «refrigerador» en México y «heladera» en Argentina; «bocadillo» es «torta» en México y «sándwich» en Colombia. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Es Hora de Organizar las Operaciones de tu Food Truck',
     subtitle:
-      '9 checklists + 2 bonus que organizan las áreas críticas de tu food truck o cocina móvil: setup, teardown, vehículo, APPCC móvil, permisos, eventos y perfiles. No dejes pasar esta oportunidad.',
+      '9 checklists + 3 bonus que organizan las áreas críticas de tu food truck o cocina móvil: setup, teardown, vehículo, APPCC móvil, permisos, eventos y perfiles. No dejes pasar esta oportunidad.',
     items: [
-      '9 checklists operativos + 2 bonus',
+      '9 checklists operativos + 3 bonus',
       'Setup y teardown completos del food truck',
       'Operaciones móviles, vehículo, generador, gas y agua',
       'APPCC seguridad alimentaria móvil obligatorio',
@@ -290,6 +306,7 @@ const data: KitTareasData = {
       'Tareas por perfil: chef, ayudante, cajero, conductor',
       'BONUS: Briefing Pre-Evento (€19)',
       'BONUS: Calendario Anual de Tareas (€19)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS FOOD TRUCK — €12',
   },

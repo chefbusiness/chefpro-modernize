@@ -18,7 +18,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen | AI Chef Pro',
     description:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos pre-rellenados para dark kitchen multi-marca — estaciones de producción, empaquetado, plataformas (Glovo, Uber Eats, Just Eat), riders, perfiles y eventos. Solo €12.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos pre-rellenados para dark kitchen multi-marca — estaciones de producción, empaquetado, plataformas (Glovo, Uber Eats, Just Eat), riders, perfiles y eventos. Solo €12.',
     keywords:
       'checklist dark kitchen, tareas dark kitchen, checklist ghost kitchen, checklist cocina fantasma, tareas cocina virtual, dark kitchen multi-marca, gestión plataformas delivery, empaquetado dark kitchen, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-dark-kitchen.jpg',
@@ -27,7 +27,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Dark Kitchen',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos pre-rellenados para dark kitchen multi-marca con 331 tareas ya escritas — estaciones de producción, empaquetado, plataformas delivery, riders, perfiles y eventos.',
+      '9 plantillas + 3 bonus (12 ficheros): checklists operativos pre-rellenados para dark kitchen multi-marca con 331 tareas ya escritas — estaciones de producción, empaquetado, plataformas delivery, riders, perfiles y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -73,6 +73,10 @@ const data: KitTareasData = {
         q: '¿Hay garantía de devolución?',
         a: '30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas.',
       },
+      {
+        q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+        a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Dark Kitchen» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+      },
     ],
     breadcrumbName: 'Kit de Tareas Recurrentes: Dark Kitchen',
   },
@@ -100,7 +104,7 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Dark Kitchen — Checklists Operativos Multi-Marca por Turno, Área y Perfil',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 331 tareas de dark kitchen ya escritas: estaciones de producción multi-marca, empaquetado y expedición, gestión de plataformas (Glovo, Uber Eats, Just Eat), riders, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 3 bonus (12 ficheros) en Excel con 331 tareas de dark kitchen ya escritas: estaciones de producción multi-marca, empaquetado y expedición, gestión de plataformas (Glovo, Uber Eats, Just Eat), riders, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: estaciones de producción multi-marca, empaquetado, expedición',
       'Gestión de plataformas: activar/pausar marcas en Glovo, Uber Eats, Just Eat, tiempos <12 min',
@@ -115,7 +119,7 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    headingRest: ' Plantillas de Tareas Operativas + 3 Bonus (12 ficheros)',
     subtitle:
       '331 tareas de dark kitchen multi-marca ya escritas y repartidas por turno, estación y perfil. Ajusta a tus marcas, imprime y delega.',
     templates: [
@@ -222,7 +226,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+    subtitle: 'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €31',
     items: [
       {
         icon: 'Megaphone',
@@ -239,6 +243,14 @@ const data: KitTareasData = {
         value: '€9',
         desc: '22 fechas clave de hostelería (San Valentín, Día del Padre, comuniones, Semana Santa, Black Friday, Todos los Santos, Navidad, días de pico delivery) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-dk-tablets.jpg',
+      },
+      {
+        icon: 'Globe',
+        label: 'BONUS 3',
+        title: 'Guía de Equivalencias para tu país',
+        value: '€15',
+        desc: 'Los términos de tu producto dichos país por país en 20 países, más una ficha de una página por país con impuestos, sanidad, normas laborales, licencias y unidades.',
+        image: '/lovable-uploads/ai-gallery/es-guia-equivalencias.jpg',
       },
     ],
   },
@@ -281,12 +293,16 @@ const data: KitTareasData = {
       q: '¿Incluye tareas de coordinación con riders?',
       a: 'Sí. Las tareas cubren gestión de zona de recogida, tiempos de espera por plataforma, protocolo de entrega, gestión de picos de demanda y comunicación con riders en hora punta.',
     },
+    {
+      q: '¿Sirve en México, Colombia, Argentina y el resto de Latinoamérica?',
+      a: 'Sí. Su contenido parte del marco profesional de España, que aporta rigor, y se adapta con facilidad. Con «Kit de Tareas Dark Kitchen» recibes la Guía de Equivalencias para tu país, con 20 países: vocabulario, impuestos, normas sanitarias, aspectos laborales, licencias y unidades. Por ejemplo, «almacén» es «bodega» en México y «depósito» en Argentina; «jefe de sala» es «capitán de meseros» en México y «jefe de salón» en Argentina. Si prefieres que lo adaptemos a la normativa de tu país, también lo hacemos como servicio: escríbenos a info@aichef.pro.',
+    },
   ],
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
     subtitle:
-      '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
+      '9 plantillas + 3 bonus (12 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: estaciones producción, empaquetado, expedición',
       'Gestión de plataformas: Glovo, Uber Eats, Just Eat, activar/pausar marcas',
@@ -296,6 +312,7 @@ const data: KitTareasData = {
       'Coordinación de riders: zona recogida, tiempos, picos de demanda',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
+      'BONUS: Guía de Equivalencias para tu país (€15)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT DE TAREAS — €12',
   },
