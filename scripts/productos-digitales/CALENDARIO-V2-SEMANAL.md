@@ -402,6 +402,20 @@ F3 mergeada (**PR #85 → `4f214a0`, LIVE 15:38 UTC**), gates LIVE 50/722/0 y Mi
   el routine `trig_01WAN2WR9EaRUsi4C2WTqYj9` el **24-oct 08:23Z**. Prueba enviada a John. Siguiente hueco ES: 28-nov.
 - **Línea B pendiente**: coctelería y chef privado (mismo método, uno por sesión).
 
+### ▶️ 2026-10-13 (Claude Code en el Mac + VPS) — **Mobile Bar Business Plan Kit (EN, $39)** — F1 CERRADA
+
+- Elegido por demanda US (DataForSEO, 13-oct): mobile bar business 480 · how to start a mobile bar/bartending business
+  210+210 · mobile bar business plan 210 (90 → 210) · dry hire mobile bar 390 · mobile bar license 320, todo LOW. Descartados
+  hoy: checklists (la SERP de «kitchen cleaning checklist» es de limpieza doméstica) y las guías L (cola en
+  `project_english_expansion`). John (13-oct): «al final los traduciremos todos; ahora, los que más tracción tienen».
+- **Regla nueva de John (13-oct): jerga profesional US en las 3 capas** (producto, contenido, SEO de la landing). El research
+  §9 lleva el glosario (38 términos con fuente) y los términos de la landing con volumen.
+- Rama `feat/mobile-bar-business-plan-en` (worktree `scratchpad/wt-mbar`), carpeta `business-plans-en-5/`:
+  `F1-inventario-delta.md` (diccionario por celda = EN del CATERING, −37 % de cadenas a redactar), `F1-research-us-delta.md`
+  (dry hire, caso 160 × 95 × $14 = $212,800, préstamo ≈ $50K) y `SPEC-delta.md` (D81-D95). F1 ≈ 0,6 M tokens.
+- **Retomar F2:** implementador opus según `SPEC-delta.md` §3-§6 y el patrón de `business-plans-en-4/F2-NOTAS.md`.
+  Correo EN: 24-nov 14:00Z (borrador + routine el 25-oct).
+
 ### ⚠️ Deuda nueva detectada, para meter en la cola
 
 **Del research de la Taquería (20-sep-2026, `kit-tareas-taqueria/01-research-taqueria-mexicana.md`):**
