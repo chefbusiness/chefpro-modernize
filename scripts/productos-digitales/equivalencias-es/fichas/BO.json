@@ -26,12 +26,12 @@
       "verificado": true
     },
     "propina_servicio": {
-      "texto": "No he encontrado un cargo por servicio obligatorio regulado por ley en la restauración boliviana: lo habitual es que la propina sea voluntaria y en efectivo. Si quieres añadir un porcentaje a la cuenta, indícalo de forma clara en la carta y consulta con tu asesor cómo tratarlo en la factura y en el reparto del personal, porque no he podido confirmarlo con una fuente oficial.",
+      "texto": "No hemos encontrado un cargo por servicio obligatorio regulado por ley en la restauración boliviana: lo habitual es que la propina sea voluntaria y en efectivo. Si quieres añadir un porcentaje a la cuenta, indícalo de forma clara en la carta y consulta con tu asesor cómo tratarlo en la factura y en el reparto del personal, porque no hemos podido confirmarlo con una fuente oficial.",
       "fuentes": [],
       "verificado": false
     },
     "autoridad_sanitaria": {
-      "texto": "El SENASAG (Servicio Nacional de Sanidad Agropecuaria e Inocuidad Alimentaria, creado por la Ley 2061 de 2000) administra la inocuidad alimentaria en los tramos productivos y de procesamiento del sector agropecuario. Para un restaurante, la inspección que te toca depende de tu alcaldía y del servicio de salud de tu departamento (SEDES); no he podido confirmar la norma específica. Presenta tu APPCC como plan de buenas prácticas e higiene y pregunta en tu alcaldía.",
+      "texto": "El SENASAG (Servicio Nacional de Sanidad Agropecuaria e Inocuidad Alimentaria, creado por la Ley 2061 de 2000) administra la inocuidad alimentaria en los tramos productivos y de procesamiento del sector agropecuario. Para un restaurante, la inspección que te toca depende de tu alcaldía y del servicio de salud de tu departamento (SEDES); no hemos podido confirmar la norma específica. Presenta tu APPCC como plan de buenas prácticas e higiene y pregunta en tu alcaldía.",
       "fuentes": [
         {
           "titulo": "FAOLEX — Resolución Administrativa 106/2006 del SENASAG (cita la Ley 2061 y el DS 25729)",
@@ -42,7 +42,7 @@
       "verificado": false
     },
     "manipulador": {
-      "texto": "No he encontrado una norma nacional única sobre el carné del manipulador. Lo que sí consta es que, en municipios como Tarija, la lista de requisitos para la licencia de un restaurante incluye el «carnet sanitario» emitido por el SEDES (servicio departamental de salud), según una publicación de 2017. Pregunta en tu alcaldía y en el SEDES de tu departamento qué documento piden, dónde se tramita y cada cuánto se renueva; mientras tanto, forma a tu equipo en higiene.",
+      "texto": "No hemos encontrado una norma nacional única sobre el carné del manipulador. Lo que sí consta es que, en municipios como Tarija, la lista de requisitos para la licencia de un restaurante incluye el «carnet sanitario» emitido por el SEDES (servicio departamental de salud), según una publicación de 2017. Pregunta en tu alcaldía y en el SEDES de tu departamento qué documento piden, dónde se tramita y cada cuánto se renueva; mientras tanto, forma a tu equipo en higiene.",
       "fuentes": [
         {
           "titulo": "Verdad con Tinta — La burocracia gastronómica en Tarija (2017)",
@@ -74,7 +74,7 @@
       "verificado": true
     },
     "alcohol": {
-      "texto": "La venta de bebidas alcohólicas la regulan los gobiernos municipales: tu licencia de funcionamiento debe incluir expresamente esa actividad y los horarios los fija cada alcaldía. Además, en elecciones y otras fechas la autoridad suele decretar «ley seca» y prohibir la venta durante unos días. No he podido confirmar una norma nacional con fuente abierta, así que consulta la ordenanza de tu municipio antes de abrir.",
+      "texto": "La venta de bebidas alcohólicas la regulan los gobiernos municipales: tu licencia de funcionamiento debe incluir expresamente esa actividad y los horarios los fija cada alcaldía. Además, en elecciones y otras fechas la autoridad suele decretar «ley seca» y prohibir la venta durante unos días. No hemos podido confirmar una norma nacional con fuente abierta, así que consulta la ordenanza de tu municipio antes de abrir.",
       "fuentes": [],
       "verificado": false
     },
@@ -111,7 +111,7 @@
       "verificado": true
     },
     "unidades_mercado": {
-      "texto": "En mercados y con proveedores tradicionales se usa la «libra», cuyo valor suele rondar los 460 g (no los 453,6 g anglosajones), la «arroba», de unos 11,5 kg, y el «quintal», que varía: unos 46 kg en el uso tradicional y 100 kg en algunas fuentes. No he podido confirmar estos valores para Bolivia, así que pregunta al proveedor su equivalencia exacta antes de convertir recetas. Las temperaturas se dan en °C.",
+      "texto": "En mercados y con proveedores tradicionales se usa la «libra», cuyo valor suele rondar los 460 g (no los 453,6 g anglosajones), la «arroba», de unos 11,5 kg, y el «quintal», que varía: unos 46 kg en el uso tradicional y 100 kg en algunas fuentes. No hemos podido confirmar estos valores para Bolivia, así que pregunta al proveedor su equivalencia exacta antes de convertir recetas. Las temperaturas se dan en °C.",
       "fuentes": [
         {
           "titulo": "Wikipedia — Bolivian units of measurement",
@@ -127,7 +127,7 @@
       "verificado": false
     },
     "apoyos_emprendimiento": {
-      "texto": "El Banco de Desarrollo Productivo (BDP) es la entidad pública que ofrece crédito a micro y pequeñas empresas productivas y de servicios. Existen además programas de gobiernos municipales y departamentales y de cámaras de comercio, que cambian con cada gestión. No he podido confirmar convocatorias vigentes con fuente oficial, así que consulta los portales del BDP y de tu alcaldía antes de incluirlas en tu plan de negocio.",
+      "texto": "El Banco de Desarrollo Productivo (BDP) es la entidad pública que ofrece crédito a micro y pequeñas empresas productivas y de servicios. Existen además programas de gobiernos municipales y departamentales y de cámaras de comercio, que cambian con cada gestión. No hemos podido confirmar convocatorias vigentes con fuente oficial, así que consulta los portales del BDP y de tu alcaldía antes de incluirlas en tu plan de negocio.",
       "fuentes": [],
       "verificado": false
     },

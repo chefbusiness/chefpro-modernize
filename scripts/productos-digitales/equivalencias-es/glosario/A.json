@@ -62,7 +62,6 @@
      "DO",
      "PR",
      "PA",
-     "UY",
      "CU"
     ]
    },
@@ -87,7 +86,6 @@
    }
   ],
   "igual": [
-   "CU",
    "UY"
   ],
   "nota": "En MX «crema» a secas es la ácida, no la de montar; en CR «natilla» es crema agria; en BR «nata» es la capa de la leche.",
@@ -228,8 +226,7 @@
     "paises": [
      "CO",
      "CU",
-     "PR",
-     "DO"
+     "PR"
     ]
    },
    {
@@ -409,7 +406,6 @@
    "VE",
    "EC",
    "PE",
-   "BO",
    "US"
   ],
   "nota": "«Fresón» (fresa grande de España) no se usa: es solo «fresa» o «frutilla».",
@@ -459,7 +455,6 @@
    "CO",
    "VE",
    "EC",
-   "PY",
    "US"
   ],
   "nota": "En CL y AR «aguacate» se entiende, pero la carta y el mercado dicen «palta».",
@@ -647,7 +642,7 @@
    }
   ],
   "igual": [],
-  "nota": "Para alérgenos en carta, «maní» y «cacahuate» son lo mismo que cacahuete.",
+  "nota": "En EE. UU. conviven «cacahuate» y «maní». En alérgenos de carta, ambos equivalen a cacahuete.",
   "confianza": "alta",
   "evidencia": [
    "MX «cacahuate» 49.500",
@@ -765,7 +760,7 @@
    "PY",
    "US"
   ],
-  "nota": "En MX «hongos» es la palabra general y «setas» casi no se usa; «champiñón» se entiende siempre.",
+  "nota": "En MX conviven «champiñón» (el blanco de cultivo) y «hongos» (término general); «setas» casi no se usa.",
   "confianza": "media"
  },
  {
@@ -1214,9 +1209,7 @@
     "paises": [
      "CL",
      "PE",
-     "BO",
-     "EC",
-     "PY"
+     "BO"
     ]
    },
    {
@@ -1237,7 +1230,7 @@
    }
   ],
   "igual": [],
-  "nota": "Ojo: panela, piloncillo, chancaca y papelón son azúcar de caña sin refinar, de otro sabor y humedad.",
+  "nota": "En MX conviven «morena» y «mascabado». Panela, piloncillo, chancaca y papelón son azúcar de caña sin refinar, de otro sabor.",
   "confianza": "media"
  },
  {
@@ -2454,18 +2447,6 @@
   "es": "refrescos",
   "variantes": [
    {
-    "termino": "refresco",
-    "paises": [
-     "MX",
-     "CU",
-     "DO",
-     "PR",
-     "VE",
-     "UY",
-     "PA"
-    ]
-   },
-   {
     "termino": "gaseosa",
     "paises": [
      "CO",
@@ -2982,7 +2963,7 @@
    "PY",
    "US"
   ],
-  "nota": "En AR «la adición» es la cuenta del restaurante; en MX del norte se oye «el cheque».",
+  "nota": "En AR conviven «la cuenta» y «la adición»; en el norte de MX se oye «el cheque».",
   "confianza": "alta",
   "evidencia": [
    "AR «adición» 1.000 vs «la cuenta» 390",
@@ -3805,7 +3786,7 @@
   "igual": [
    "MX"
   ],
-  "nota": "Falso amigo: en CL y CO «lavaplatos» también es el lavavajillas (máquina) o la persona que friega.",
+  "nota": "En MX conviven «tarja» (la más usual) y «fregadero». En CL y CO «lavaplatos» es también la máquina o quien friega.",
   "confianza": "media"
  },
  {
@@ -4149,8 +4130,7 @@
    "UY",
    "PY",
    "BO",
-   "PE",
-   "MX"
+   "PE"
   ],
   "nota": "Falso amigo: «bodega» es tienda de barrio en PR, DO, CU, PE y NY; en CO y MX también almacén.",
   "confianza": "media"
@@ -4802,7 +4782,6 @@
      "EC",
      "PE",
      "BO",
-     "CL",
      "US"
     ]
    },

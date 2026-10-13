@@ -5,7 +5,7 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "Puerto Rico cobra el IVU (Impuesto sobre Ventas y Uso), con tasa general combinada estatal y municipal del 11.5 %. Desde el 1 de octubre de 2019, la Ley 257-2018 baja al 7 % la tasa de los alimentos preparados vendidos por restaurantes que cumplan los requisitos de Hacienda (entre ellos, terminal fiscal conectada) y reciban el certificado «Negocio Autorizado», que se exhibe en la puerta de entrada. La tasa del 7 % no aplica a las bebidas alcohólicas. Gestiónalo en SURI.",
+      "texto": "Puerto Rico cobra el IVU (Impuesto sobre Ventas y Uso), con tasa general combinada estatal y municipal del 11,5 %. Desde el 1 de octubre de 2019, la Ley 257-2018 baja al 7 % la tasa de los alimentos preparados vendidos por restaurantes que cumplan los requisitos de Hacienda (entre ellos, terminal fiscal conectada) y reciban el certificado «Negocio Autorizado», que se exhibe en la puerta de entrada. La tasa del 7 % no aplica a las bebidas alcohólicas. Gestiónalo en SURI.",
       "fuentes": [
         {
           "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",
@@ -112,7 +112,7 @@
       "verificado": false
     },
     "unidades_mercado": {
-      "texto": "Se compra por libra (lb, 453.6 g), onza (oz, 28.35 g) y galón (3.785 L), y las temperaturas en la cocina se miden en °F (41 °F son unos 5 °C y 135 °F unos 57 °C). Las distancias van en millas, aunque la gasolina se vende por litro, una rareza local. Las cajas y latas siguen medidas de EE. UU.: «case», «quintal» (100 lb) y «fl oz».",
+      "texto": "Se compra por libra (lb, 453,6 g), onza (oz, 28,35 g) y galón (3,785 L), y las temperaturas en la cocina se miden en °F (41 °F son unos 5 °C y 135 °F unos 57 °C). Las distancias van en millas, aunque la gasolina se vende por litro, una rareza local. Las cajas y latas siguen medidas de EE. UU.: «case», «quintal» (100 lb) y «fl oz».",
       "fuentes": [],
       "verificado": true
     },
@@ -122,7 +122,7 @@
       "verificado": true
     },
     "apoyos_emprendimiento": {
-      "texto": "Hay apoyo federal de la SBA (préstamos 7(a) de hasta 5 millones de dólares y microcréditos de hasta 50.000 dólares); consulta en su portal cómo acceder desde Puerto Rico y qué centros de asesoría locales existen. A nivel local pueden existir programas del Departamento de Desarrollo Económico y Comercio y de cooperativas, pero cambian de nombre y requisitos con frecuencia: verifica que cada convocatoria esté vigente.",
+      "texto": "Hay apoyo federal de la SBA (préstamos 7(a) y microcréditos); consulta en su portal cómo acceder desde Puerto Rico y qué centros de asesoría locales existen. A nivel local pueden existir programas del Departamento de Desarrollo Económico y Comercio y de cooperativas, pero cambian de nombre y requisitos con frecuencia: verifica que cada convocatoria esté vigente.",
       "fuentes": [
         {
           "titulo": "SBA – préstamos 7(a)",
@@ -143,7 +143,7 @@
       "verificado": true
     },
     "adaptar_productos": {
-      "texto": "Sustituye el IVA del 10 % por el IVU del 11.5 % (o el 7 % en alimentos preparados si tienes el certificado «Negocio Autorizado»). Convierte kilos, litros y °C a lb, galones y °F en las casillas de parámetros. Cambia el convenio de hostelería por las leyes laborales de Puerto Rico y federales, e incluye el bono de Navidad. Presenta el APPCC como plan de seguridad alimentaria acorde a lo que exija Salud. Añade la comisión de Uber Eats y DoorDash.",
+      "texto": "Sustituye el IVA del 10 % por el IVU del 11,5 % (o el 7 % en alimentos preparados si tienes el certificado «Negocio Autorizado»). Convierte kilos, litros y °C a lb, galones y °F en las casillas de parámetros. Cambia el convenio de hostelería por las leyes laborales de Puerto Rico y federales, e incluye el bono de Navidad. Presenta el APPCC como plan de seguridad alimentaria acorde a lo que exija Salud. Añade la comisión de Uber Eats y DoorDash.",
       "fuentes": [
         {
           "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",

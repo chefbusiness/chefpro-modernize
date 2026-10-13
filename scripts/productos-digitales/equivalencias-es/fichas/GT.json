@@ -85,7 +85,7 @@
       "verificado": false
     },
     "forma_juridica": {
-      "texto": "Lo habitual es el comerciante individual con patente de comercio o la sociedad anónima; también hay sociedades de responsabilidad limitada. Para negocios pequeños existe el Régimen de Pequeño Contribuyente del IVA (5 %), que reemplaza al autónomo español en la práctica, y el ISR puede tributarse por régimen opcional simplificado o sobre utilidades según tus ingresos. Confirma el tope vigente con la SAT.",
+      "texto": "Lo habitual es el comerciante individual con patente de comercio o la sociedad anónima; también hay sociedades de responsabilidad limitada. Para negocios pequeños existe el régimen de pequeño contribuyente del IVA, con un tipo reducido y facturación propia, que cumple en la práctica el papel del autónomo español. En el ISR puedes tributar por el régimen opcional simplificado o sobre utilidades, según tus ingresos. Confirma el tipo y el tope vigentes con la SAT y tu contador.",
       "fuentes": [
         {
           "titulo": "SAT Guatemala",
@@ -95,7 +95,7 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 45 horas efectivas a la semana, pagadas como 48; en empresas con menos de diez trabajadores son 48 horas (Código de Trabajo, art. 116). Son obligatorias dos pagas anuales: el aguinaldo (Decreto 76-78) y el Bono 14 (Decreto 42-92), equivalente a un sueldo ordinario y pagadero en la primera quincena de julio. Todo patrono debe inscribirse en el IGSS e inscribir a sus trabajadores.",
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y 45 horas efectivas a la semana, pagadas como 48; en empresas con menos de diez trabajadores son 48 horas (Código de Trabajo, art. 116); la Constitución (art. 102) habla de 44 horas semanales, así que confírmalo con el MINTRAB. Son obligatorias dos pagas anuales: el aguinaldo (Decreto 76-78) y el Bono 14 (Decreto 42-92), equivalente a un sueldo ordinario y pagadero en la primera quincena de julio. Afilia a tus trabajadores al IGSS.",
       "fuentes": [
         {
           "titulo": "MINTRAB — Código de Trabajo (art. 116)",
@@ -131,12 +131,12 @@
       "verificado": false
     },
     "tipos_local": {
-      "texto": "Los formatos habituales son el comedor (casa de comidas con menú del día, parecido al bar de menú español), la cafetería, la pollería o el pollo frito de cadena, la churrasquería y la pupusería, más presente en la costa. La «tienda de barrio» suele vender también comida preparada y bebidas. El «comedor» de mediodía es el equivalente más próximo a un restaurante de menú.",
+      "texto": "Los formatos habituales son el comedor (casa de comidas con menú del día, parecido al bar de menú español), la cafetería, la pollería o el pollo frito de cadena, la churrasquería y la pupusería, de influencia salvadoreña. La «tienda de barrio» suele vender también comida preparada y bebidas. El «comedor» de mediodía es el equivalente más próximo a un restaurante de menú.",
       "fuentes": [],
       "verificado": false
     },
     "adaptar_productos": {
-      "texto": "Cambia el IVA del 10 % español por el 12 % en la casilla de parámetros, o por el 5 % si tributas como pequeño contribuyente. Sustituye el APPCC por un plan de buenas prácticas y licencia sanitaria del MSPAS. Añade el aguinaldo y el Bono 14 al coste de personal y cámbialo por la cotización del IGSS. Convierte las unidades de compra a libras y galones donde tu proveedor las use.",
+      "texto": "Cambia el IVA del 10 % español por el 12 % en la casilla de parámetros, o por el tipo reducido del pequeño contribuyente si lo eres (confírmalo en la SAT). Sustituye el APPCC por un plan de buenas prácticas y licencia sanitaria del MSPAS. Añade el aguinaldo y el Bono 14 al coste de personal y cámbialo por la cotización del IGSS. Convierte las unidades de compra a libras y galones donde tu proveedor las use.",
       "fuentes": [],
       "verificado": false
     }
@@ -144,7 +144,7 @@
   "trampas": [
     "«chucho» es un perro callejero, no un cerdo",
     "«pupusa» es un plato salvadoreño; en Guatemala se conoce poco fuera de las zonas de influencia salvadoreña",
-    "«refresco» es una bebida fría de fruta o gaseosa, no sólo gaseosa",
+    "«refresco» es una bebida fría de fruta o gaseosa, no solo gaseosa",
     "«caldo» es un guiso espeso (p. ej. «caldo de res») y no un caldo ligero"
   ]
 }

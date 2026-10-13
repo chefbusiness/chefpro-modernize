@@ -5,7 +5,7 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "El IVA en Ecuador se aplica con tarifa general del 15 % (tarifas del 15 % o 0 %, listadas por ley), vigente desde abril de 2024. Grava la restauración con el tipo general; no he podido confirmar si hay reducciones temporales para turismo, así que consulta al SRI antes de aplicarlas. Cambia en tu plantilla el IVA español del 10 % por el 15 %. Verifica en el SRI si tu carta debe mostrar el precio con IVA incluido.",
+      "texto": "El IVA en Ecuador se aplica con tarifa general del 15 % (tarifas del 15 % o 0 %, listadas por ley), vigente desde abril de 2024. Grava la restauración con el tipo general; no hemos podido confirmar si hay reducciones temporales para turismo, así que consulta al SRI antes de aplicarlas. Cambia en tu plantilla el IVA español del 10 % por el 15 %. Verifica en el SRI si tu carta debe mostrar el precio con IVA incluido.",
       "fuentes": [
         {
           "titulo": "PwC Worldwide Tax Summaries — Ecuador, otros impuestos",
@@ -60,12 +60,12 @@
       "verificado": true
     },
     "alcohol": {
-      "texto": "No he podido confirmar con fuente abierta el permiso exacto para vender alcohol en Ecuador. Normalmente depende del municipio y del Ministerio de Turismo según el tipo de establecimiento, con restricciones de horario y venta en fechas de elecciones, que se anuncian oficialmente. Consulta en tu municipio si tu licencia de funcionamiento cubre la venta de bebidas alcohólicas o requiere un permiso específico.",
+      "texto": "No hemos podido confirmar con fuente abierta el permiso exacto para vender alcohol en Ecuador. Normalmente depende del municipio y del Ministerio de Turismo según el tipo de establecimiento, con restricciones de horario y venta en fechas de elecciones, que se anuncian oficialmente. Consulta en tu municipio si tu licencia de funcionamiento cubre la venta de bebidas alcohólicas o requiere un permiso específico.",
       "fuentes": [],
       "verificado": false
     },
     "forma_juridica": {
-      "texto": "Para un pequeño negocio se usan la compañía de responsabilidad limitada, la S.A.S. y la persona natural con RUC. Como régimen simplificado existe el RIMPE, con dos categorías: «negocios populares» (ingresos anuales de hasta 20.000 dólares, con renta según tramos) y «emprendedores»; los límites se actualizan. Un restaurante pequeño suele encajar en RIMPE; confirma tus topes y obligaciones en el SRI.",
+      "texto": "Para un pequeño negocio se usan la compañía de responsabilidad limitada, la S.A.S. y la persona natural con RUC. Como régimen simplificado existe el RIMPE, con categorías según ingresos («negocios populares» y «emprendedores») cuyos topes y reglas se actualizan con las reformas tributarias. Un restaurante pequeño suele encajar en RIMPE; confirma tu categoría, tus topes y tus obligaciones en el SRI antes de decidir.",
       "fuentes": [
         {
           "titulo": "Siigo Ecuador — RIMPE: emprendedores y negocios populares",
@@ -108,7 +108,7 @@
       "verificado": false
     },
     "apoyos_emprendimiento": {
-      "texto": "Entre las opciones públicas están la Corporación Financiera Nacional (CFN B.P.) y BanEcuador, que ofrecen crédito a pymes y emprendedores, y las ventanillas de emprendimiento del Ministerio de Producción. No he podido abrir sus páginas oficiales para confirmar líneas y condiciones vigentes. Consulta los productos activos antes de incluirlos en tu plan, y no des por hecho que la financiación estará disponible en tu cantón.",
+      "texto": "Entre las opciones públicas están la Corporación Financiera Nacional (CFN B.P.) y BanEcuador, que ofrecen crédito a pymes y emprendedores, y las ventanillas de emprendimiento del Ministerio de Producción. No hemos podido abrir sus páginas oficiales para confirmar líneas y condiciones vigentes. Consulta los productos activos antes de incluirlos en tu plan, y no des por hecho que la financiación estará disponible en tu cantón.",
       "fuentes": [],
       "verificado": false
     },

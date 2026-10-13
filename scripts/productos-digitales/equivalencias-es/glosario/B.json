@@ -44,7 +44,8 @@
    {
     "termino": "garzón, garzona",
     "paises": [
-     "CL"
+     "CL",
+     "BO"
     ]
    },
    {
@@ -1816,7 +1817,6 @@
     "termino": "nómina",
     "paises": [
      "MX",
-     "GT",
      "NI",
      "CO",
      "VE",
@@ -1835,7 +1835,8 @@
      "PA",
      "HN",
      "SV",
-     "PY"
+     "PY",
+     "GT"
     ]
    },
    {
@@ -1989,7 +1990,7 @@
    }
   ],
   "igual": [],
-  "nota": "Cada país tiene su régimen simplificado: RESICO (MX), SIMPLE (CO), Pro Pyme (CL), NRUS/RER (PE), RIMPE (EC), RTS (BO), RST (DO), cuota fija (NI).",
+  "nota": "Cada país tiene su régimen simplificado: RESICO (MX), SIMPLE (CO), Pro Pyme (CL), NRUS/RER (PE), RIMPE (EC), RTS (BO), RST (DO), RESIMPLE (PY), cuota fija (NI).",
   "confianza": "media",
   "evidencia": [
    "Fichas de país (forma_juridica) para los nombres de los regímenes"
@@ -3762,7 +3763,7 @@
   "es": "manipulador de alimentos",
   "variantes": [
    {
-    "termino": "manipulador de alimentos (carné)",
+    "termino": "manipulador de alimentos (carné o curso de manipulación)",
     "paises": [
      "GT",
      "HN",
@@ -3789,7 +3790,7 @@
     ]
    },
    {
-    "termino": "carné de sanidad",
+    "termino": "manipulador de alimentos (capacitación sanitaria)",
     "paises": [
      "PE"
     ]
@@ -3810,7 +3811,7 @@
    }
   ],
   "igual": [],
-  "nota": "El documento y quién lo emite varía: en MX la referencia es el curso del Distintivo H; en PE el carné municipal; en EE. UU., el food handler card.",
+  "nota": "El documento varía: en MX, el curso del Distintivo H; en PE el carné de sanidad ya no es exigible; en EE. UU., el food handler card.",
   "confianza": "media",
   "evidencia": [
    "Fichas MX, PE, US (manipulador)"
@@ -3963,13 +3964,12 @@
     "termino": "fecha de caducidad",
     "paises": [
      "MX",
-     "GT",
      "HN",
      "SV",
      "NI",
      "CR",
-     "PA",
-     "CU"
+     "CU",
+     "EC"
     ]
    },
    {
@@ -3977,13 +3977,14 @@
     "paises": [
      "CO",
      "VE",
-     "EC",
      "PE",
      "BO",
      "CL",
      "AR",
      "UY",
-     "PY"
+     "PY",
+     "GT",
+     "PA"
     ]
    },
    {

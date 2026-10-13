@@ -86,11 +86,16 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La Ley de Contrato de Trabajo fija la jornada máxima en 8 horas diarias o 48 semanales, con descanso semanal mínimo de 35 horas. Se paga el «aguinaldo» (SAC), equivalente a un sueldo anual en dos cuotas, junio y diciembre. Las vacaciones van de 14 a 35 días según antigüedad. El empleador cubre la ART (riesgos del trabajo). El sector gastronómico tiene un convenio colectivo propio con UTHGRA; consulta sus escalas vigentes.",
+      "texto": "La Ley de Contrato de Trabajo fija la jornada máxima en 8 horas diarias o 48 semanales. La reforma de la Ley 27.802 (B. O. 6-3-2026) permite pactar bancos de horas y deja el «aguinaldo» (SAC) fuera de la base de la indemnización. El SAC sigue siendo un sueldo anual en dos cuotas, junio y diciembre. Las vacaciones (14 a 35 días según antigüedad) pueden fraccionarse en bloques de al menos 7 días. El convenio gastronómico es de UTHGRA. Confirma con tu contador qué parte de la reforma está vigente.",
       "fuentes": [
         {
           "titulo": "Develop Argentina — Leyes laborales básicas para empresas 2026",
           "url": "https://developargentina.com/blog/leyes-laborales-argentina-basico-empresas-2026",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "EY Argentina — Promulgación de la Ley 27.802 de Modernización Laboral",
+          "url": "https://www.ey.com/es_ar/technical/tax/tax-alerts-argentina/promulgacion-ley-27802-modernizacion-laboral",
           "tipo": "secundaria"
         }
       ],

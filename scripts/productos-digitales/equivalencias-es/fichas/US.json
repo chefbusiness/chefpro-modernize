@@ -5,7 +5,7 @@
   "consultado": "2026-10",
   "campos": {
     "impuesto_consumo": {
-      "texto": "No existe IVA federal: cada estado, y a menudo condado o ciudad, aplica su propio sales tax. Ejemplos: en Texas, el Contralor fija un 6.25 % estatal más hasta un 2 % local (máximo combinado del 8.25 %) y la comida de restaurante tributa; en Florida, la comida preparada en restaurante tributa, con tipo estatal del 6 % más el recargo discrecional de cada condado. El precio de carta se publica sin impuesto, que se suma en el ticket. Consulta el Department of Revenue de tu estado.",
+      "texto": "No existe IVA federal: cada estado, y a menudo condado o ciudad, aplica su propio sales tax. Ejemplos: en Texas, el Contralor fija un 6,25 % estatal más hasta un 2 % local (máximo combinado del 8,25 %) y la comida de restaurante tributa; en Florida, la comida preparada en restaurante tributa, con tipo estatal del 6 % más el recargo discrecional de cada condado. El precio de carta se publica sin impuesto, que se suma en el ticket. Consulta el Department of Revenue de tu estado.",
       "fuentes": [
         {
           "titulo": "Texas Comptroller – Sales and Use Tax",
@@ -31,7 +31,7 @@
       "verificado": true
     },
     "propina_servicio": {
-      "texto": "La propina se calcula aparte y lo habitual es dejar entre el 18 % y el 20 % del subtotal en servicio de mesa. Con el tip credit federal, el empleador puede pagar un salario en efectivo de 2.13 dólares por hora si con las propinas se alcanza el mínimo federal de 7.25; si no, debe cubrir la diferencia. Algunos estados exigen un salario en efectivo mayor o prohíben el tip credit: consulta el Departamento del Trabajo de tu estado.",
+      "texto": "La propina se calcula aparte y lo habitual es dejar entre el 18 % y el 20 % del subtotal en servicio de mesa. Con el tip credit federal, el empleador puede pagar un salario en efectivo inferior al mínimo si con las propinas se alcanza el mínimo federal; si no, debe cubrir la diferencia. Algunos estados exigen un salario en efectivo mayor o prohíben el tip credit: consulta el Departamento del Trabajo de tu estado.",
       "fuentes": [
         {
           "titulo": "DOL – Fact Sheet 15: empleados con propinas (FLSA)",
@@ -123,7 +123,7 @@
       "verificado": true
     },
     "unidades_mercado": {
-      "texto": "Se usan libra (lb, 453.6 g), onza (oz, 28.35 g), onza líquida (fl oz, 29.57 mL), pinta, cuarto (quart, 0.946 L) y galón (3.785 L). La temperatura es en °F: 41 °F equivalen a unos 5 °C y 165 °F a unos 74 °C. Se compra por «case» (caja) o «flat». Los restaurantes piden la carne por lb y los vinos por botella de 750 mL.",
+      "texto": "Se usan libra (lb, 453,6 g), onza (oz, 28,35 g), onza líquida (fl oz, 29,57 mL), pinta, cuarto (quart, 0,946 L) y galón (3,785 L). La temperatura es en °F: 41 °F equivalen a unos 5 °C y 165 °F a unos 74 °C. Se compra por «case» (caja) o «flat». Los restaurantes piden la carne por lb y los vinos por botella de 750 mL.",
       "fuentes": [],
       "verificado": true
     },
@@ -133,7 +133,7 @@
       "verificado": true
     },
     "apoyos_emprendimiento": {
-      "texto": "La agencia federal SBA ofrece préstamos 7(a) de hasta 5 millones de dólares y microcréditos de hasta 50.000 dólares; en su portal encontrarás también la asesoría y los recursos locales para emprendedores. Los programas estatales y municipales cambian cada año: comprueba la convocatoria vigente en la web oficial de tu estado o ciudad.",
+      "texto": "La agencia federal SBA ofrece préstamos 7(a) y microcréditos, con topes que cambian; en su portal encontrarás también la asesoría y los recursos locales para emprendedores. Los programas estatales y municipales cambian cada año: comprueba la convocatoria vigente en la web oficial de tu estado o ciudad.",
       "fuentes": [
         {
           "titulo": "SBA – préstamos 7(a)",

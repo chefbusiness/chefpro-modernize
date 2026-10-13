@@ -54,12 +54,12 @@
       "verificado": true
     },
     "alcohol": {
-      "texto": "No he podido confirmar con fuente abierta el permiso exacto para vender alcohol en República Dominicana, ni qué restricciones horarias o de ley seca se aplican de forma general. Lo habitual es que dependa de la alcaldía y de la normativa sanitaria y de espectáculos. Pregunta en tu ayuntamiento si necesitas un permiso específico para servir bebidas alcohólicas y confirma los horarios de cierre permitidos en tu municipio antes de planificar el turno de noche.",
+      "texto": "No hemos podido confirmar con fuente abierta el permiso exacto para vender alcohol en República Dominicana, ni qué restricciones horarias o de ley seca se aplican de forma general. Lo habitual es que dependa de la alcaldía y de la normativa sanitaria y de espectáculos. Pregunta en tu ayuntamiento si necesitas un permiso específico para servir bebidas alcohólicas y confirma los horarios de cierre permitidos en tu municipio antes de planificar el turno de noche.",
       "fuentes": [],
       "verificado": false
     },
     "forma_juridica": {
-      "texto": "La DGII reconoce como personas jurídicas, bajo la Ley 479-08 modificada por la Ley 31-11, la sociedad anónima (SA), la sociedad anónima simplificada (SAS), la sociedad de responsabilidad limitada (SRL) y la empresa individual de responsabilidad limitada (EIRL). Para negocios pequeños existe además el RST, Régimen Simplificado de Tributación, con modalidad por ingresos o por compras y topes que se actualizan; no he podido leer sus condiciones, confírmalas en la DGII.",
+      "texto": "La DGII reconoce como personas jurídicas, bajo la Ley 479-08 modificada por la Ley 31-11, la sociedad anónima (SA), la sociedad anónima simplificada (SAS), la sociedad de responsabilidad limitada (SRL) y la empresa individual de responsabilidad limitada (EIRL). Para negocios pequeños existe además el RST, Régimen Simplificado de Tributación, con modalidad por ingresos o por compras y topes que se actualizan; no hemos podido leer sus condiciones, confírmalas en la DGII.",
       "fuentes": [
         {
           "titulo": "DGII — Personas jurídicas",
@@ -91,7 +91,7 @@
       "verificado": false
     },
     "apoyos_emprendimiento": {
-      "texto": "Los apoyos son de ámbito público y su oferta cambia con frecuencia: el Ministerio de Industria, Comercio y Mipymes (MICM) concentra programas para micro, pequeñas y medianas empresas, y existen líneas de financiación y capacitación como Promipyme y la Banca Solidaria. No he podido abrir una página oficial que confirme los programas vigentes, así que revisa en el MICM qué convocatorias están abiertas antes de contar con ellos en tu plan.",
+      "texto": "Los apoyos son de ámbito público y su oferta cambia con frecuencia: el Ministerio de Industria, Comercio y Mipymes (MICM) concentra programas para micro, pequeñas y medianas empresas, y existen líneas de financiación y capacitación como Promipyme y la Banca Solidaria. No hemos podido abrir una página oficial que confirme los programas vigentes, así que revisa en el MICM qué convocatorias están abiertas antes de contar con ellos en tu plan.",
       "fuentes": [],
       "verificado": false
     },

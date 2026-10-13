@@ -79,7 +79,7 @@
       "verificado": false
     },
     "laboral": {
-      "texto": "La jornada diurna ordinaria es de 8 horas diarias y hasta 48 semanales. El décimo tercer mes se paga en tres partidas: 15 de abril, 15 de agosto y 15 de diciembre, cada una equivale a lo devengado en el cuatrimestre dividido entre 12 (Decreto de Gabinete 221 de 1971). La seguridad social es la Caja de Seguro Social: según PwC, el trabajador aporta un 9,75 % y el empleador un 12,25 % sobre el salario.",
+      "texto": "La jornada diurna ordinaria es de 8 horas diarias y hasta 48 semanales. El décimo tercer mes se paga en tres partidas: 15 de abril, 15 de agosto y 15 de diciembre, cada una equivale a lo devengado en el cuatrimestre dividido entre 12 (Decreto de Gabinete 221 de 1971). La seguridad social es la Caja de Seguro Social; las cuotas de trabajador y empleador han cambiado con la reforma reciente, así que confírmalas en la CSS.",
       "fuentes": [
         {
           "titulo": "Embajada de España en Panamá – Trabajar en Panamá (jornada)",
@@ -120,7 +120,7 @@
       "verificado": false
     },
     "adaptar_productos": {
-      "texto": "Cambia el IVA español del 10 % por el 7 % del ITBMS, y usa el 10 % para las bebidas alcohólicas, confirmándolo con la DGI. Sustituye el APPCC por el permiso sanitario del MINSA. Añade el décimo tercer mes, en tres partidas, y la cotización de la CSS al coste de personal. Usa el dólar como moneda y las compras en libras y galones.",
+      "texto": "Cambia el IVA español del 10 % por el 7 % del ITBMS, y confirma con la DGI cómo se aplica el tipo del 10 % a las bebidas alcohólicas de tu carta. Sustituye el APPCC por el permiso sanitario del MINSA. Añade el décimo tercer mes, en tres partidas, y la cotización de la CSS al coste de personal. Usa el dólar como moneda y las compras en libras y galones.",
       "fuentes": [],
       "verificado": false
     }

@@ -110,7 +110,7 @@
       "verificado": true
     },
     "pagos_delivery": {
-      "texto": "El efectivo es el medio dominante en negocios pequeños; las tarjetas y las transferencias bancarias se usan más en las ciudades. En delivery operan Pedidos Ya y Uber Eats en Tegucigalpa y San Pedro Sula, y muchos locales reparten por WhatsApp. La Agencia de Regulación aún no limita estas plataformas.",
+      "texto": "El efectivo es el medio dominante en negocios pequeños; las tarjetas y las transferencias bancarias se usan más en las ciudades. En delivery operan Pedidos Ya y Uber Eats en Tegucigalpa y San Pedro Sula, y muchos locales reparten por WhatsApp.",
       "fuentes": [],
       "verificado": false
     },
@@ -120,7 +120,7 @@
       "verificado": false
     },
     "tipos_local": {
-      "texto": "Los formatos habituales son la comedor o «comedor» (casa de comidas con plato del día), el «baleadero» (puesto de baleadas, tortilla de harina rellena), el «asadero», la pollería y la cafetería. La «comida corrida» es el menú del día y la «fonda» o «comedor» es una casa de comidas familiar.",
+      "texto": "Los formatos habituales son el «comedor» (casa de comidas con plato del día), el «baleadero» (puesto de baleadas, tortilla de harina rellena), el «asadero», la pollería y la cafetería. La «comida corrida» es el menú del día y la «fonda» o «comedor» es una casa de comidas familiar.",
       "fuentes": [],
       "verificado": false
     },
@@ -134,6 +134,6 @@
     "«baleada» es una tortilla de harina rellena de frijoles, no una bala",
     "«pupusa» es salvadoreña; en Honduras lo típico es la «baleada»",
     "«catracho» es el gentilicio coloquial de hondureño, no un insulto",
-    "«refresco» es una bebida fría de frutas o una gaseosa, no sólo una gaseosa"
+    "«refresco» es una bebida fría de frutas o una gaseosa, no solo una gaseosa"
   ]
 }

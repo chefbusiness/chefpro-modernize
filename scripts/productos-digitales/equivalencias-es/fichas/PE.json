@@ -95,7 +95,7 @@
       "verificado": true
     },
     "alcohol": {
-      "texto": "La venta de alcohol se rige por la Ley 28681 y su reglamento. La licencia de funcionamiento la da el distrito, pero los horarios de venta los fija la municipalidad provincial, y Indecopi ha anulado restricciones horarias impuestas por distritos sin competencia. Antes de abrir, consulta la ordenanza provincial de tu ciudad y asegúrate de que tu licencia incluya la venta de bebidas alcohólicas.",
+      "texto": "La venta de alcohol se rige por una ley nacional y su reglamento. La licencia de funcionamiento la da el distrito, pero los horarios de venta los fija la municipalidad provincial, y Indecopi ha anulado restricciones horarias impuestas por distritos sin competencia. Antes de abrir, consulta la ordenanza provincial de tu ciudad y asegúrate de que tu licencia incluya la venta de bebidas alcohólicas.",
       "fuentes": [],
       "verificado": false
     },
@@ -142,7 +142,7 @@
       "verificado": false
     },
     "apoyos_emprendimiento": {
-      "texto": "El Ministerio de la Producción (PRODUCE) agrupa programas de formalización y apoyo a la empresa, como Tu Empresa, y financia innovación a través de Innóvate Perú. COFIDE, el banco de desarrollo, canaliza fondos de garantía y crédito para MYPE, como el Fondo CRECER. Las convocatorias abren y cierran, y algunos programas nacieron por el COVID, así que comprueba en sus portales cuáles siguen vigentes antes de contarlos en tu plan.",
+      "texto": "El Ministerio de la Producción (PRODUCE) agrupa programas de formalización y apoyo a la empresa, como Tu Empresa, y financia innovación a través de ProInnóvate (antes Innóvate Perú). COFIDE, el banco de desarrollo, canaliza fondos de garantía y crédito para MYPE, como el Fondo CRECER. Las convocatorias abren y cierran, y algunos programas nacieron por el COVID, así que comprueba en sus portales cuáles siguen vigentes antes de contarlos en tu plan.",
       "fuentes": [],
       "verificado": false
     },
