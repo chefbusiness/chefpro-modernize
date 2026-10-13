@@ -1,0 +1,175 @@
+{
+  "codigo": "PR",
+  "pais": "Puerto Rico",
+  "moneda": "dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "Puerto Rico cobra el IVU (Impuesto sobre Ventas y Uso), con tasa general combinada estatal y municipal del 11.5 %. Desde el 1 de octubre de 2019, la Ley 257-2018 baja al 7 % la tasa de los alimentos preparados vendidos por restaurantes que cumplan los requisitos de Hacienda (entre ellos, terminal fiscal conectada) y reciban el certificado «Negocio Autorizado», que se exhibe en la puerta de entrada. La tasa del 7 % no aplica a las bebidas alcohólicas. Gestiónalo en SURI.",
+      "fuentes": [
+        {
+          "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",
+          "url": "https://hacienda.pr.gov/publicaciones/determinacion-administrativa-num-19-03",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Hacienda PR – IVU",
+          "url": "https://hacienda.pr.gov/impuesto-sobre-ventas-y-uso-ivu",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Hacienda PR – reducción del IVU en alimentos preparados (Ley 257-2018)",
+          "url": "https://hacienda.pr.gov/sobre-hacienda/sala-de-prensa-virtual/comunicados-de-prensa/departamento-de-hacienda-inicia-procesos-para-reduccion-del-ivu-los-alimentos-preparados-7",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina es opcional y voluntaria, según el DACO (Departamento de Asuntos del Consumidor), que también advirtió de que algunas terminales de cobro calculan la propina sugerida sobre el total con IVU; puedes ajustar el monto tú mismo. En la práctica se dejan entre el 15 % y el 20 %. Si piensas cobrar un cargo por servicio o repartir propinas, consulta con el Departamento del Trabajo cómo debe tratarse y declararse.",
+      "fuentes": [
+        {
+          "titulo": "Metro PR – propinas en restaurantes (DACO)",
+          "url": "https://www.metro.pr/noticias/2017/04/07/mucho-ojo-propinas-restaurantes",
+          "tipo": "secundaria"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "El Departamento de Salud de Puerto Rico es la autoridad sanitaria de los establecimientos de comida y otorga la licencia sanitaria, que desde 2019 se integra en el Permiso Único. Como referencia técnica se usa el modelo del Food Code de la FDA, equivalente práctico del APPCC español, con control de tiempo y temperatura. Confirma con Salud qué reglamento y qué edición del Food Code se aplican hoy a tu local.",
+      "fuentes": [
+        {
+          "titulo": "DLA Piper – Permiso Único de Puerto Rico",
+          "url": "https://www.dlapiper.com/en/insights/publications/2019/07/changes-to-puerto-rico-business-permitting-process",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "FDA – Food Code (modelo para que las jurisdicciones desarrollen sus reglas)",
+          "url": "https://www.fda.gov/food/retail-food-protection/fda-food-code",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "El requisito exacto de certificación para empleados y gerentes de alimentos en Puerto Rico depende del Departamento de Salud, y no hemos podido confirmarlo en una fuente oficial. Existen certificaciones de gerente de protección de alimentos reconocidas en Estados Unidos, como ServSafe, y el certificado de salud del personal es otro trámite aparte. Antes de pagar un curso, pregunta a Salud qué certificados acepta y con qué vigencia.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Desde junio de 2019 cada negocio nuevo o existente debe obtener el Permiso Único, que se solicita en línea a través del Portal Único de Negocios de la OGPe y consolida el permiso de uso, la exclusión categórica, la certificación de prevención de incendios (Bomberos) y la licencia sanitaria. A ello se suman el registro de comerciante en Hacienda (SURI) y, según el caso, la patente municipal; confirma el resto con tu municipio.",
+      "fuentes": [
+        {
+          "titulo": "DLA Piper – Permiso Único de Puerto Rico",
+          "url": "https://www.dlapiper.com/en/insights/publications/2019/07/changes-to-puerto-rico-business-permitting-process",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",
+          "url": "https://hacienda.pr.gov/publicaciones/determinacion-administrativa-num-19-03",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La licencia de venta de bebidas alcohólicas al detal la suspende o concede el Departamento de Hacienda, y se tramita aparte del Permiso Único; Hacienda la ha suspendido a restaurantes que no transmitían sus ventas por terminal fiscal. Los requisitos por tipo de negocio, los horarios y las restricciones municipales deben confirmarse con Hacienda y tu municipio antes de firmar un alquiler.",
+      "fuentes": [
+        {
+          "titulo": "Hacienda PR – suspensión de licencia de bebidas alcohólicas al detal (2019)",
+          "url": "https://hacienda.pr.gov/node/4332",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Las formas habituales son la corporación, la LLC (compañía de responsabilidad limitada) y el dueño único (sole proprietorship); consulta con un abogado o con el Departamento de Estado cuál te conviene y cómo inscribirla. Necesitas un EIN federal, gratuito, que gestiona el IRS y está disponible para organizaciones formadas en territorios de EE. UU., y el Certificado de Registro de Comerciante en Hacienda para cobrar IVU.",
+      "fuentes": [
+        {
+          "titulo": "IRS – Obtén un EIN",
+          "url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",
+          "url": "https://hacienda.pr.gov/publicaciones/determinacion-administrativa-num-19-03",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "laboral": {
+      "texto": "La Ley 148-1969 regula el bono de Navidad para empleados de empresas privadas: el patrono debe pagarlo entre el 15 de noviembre y el 15 de diciembre, y puede pedir exención al Departamento del Trabajo si tuvo pérdidas o ganancias insuficientes. El porcentaje y las horas mínimas han cambiado por enmiendas, así que confírmalos con el Departamento del Trabajo. Para jornada, horas extra, seguro por accidentes de trabajo y propinas, consulta también las leyes locales y la ley federal FLSA.",
+      "fuentes": [
+        {
+          "titulo": "Metro PR – Bono de Navidad: plazos y exención (DTRH)",
+          "url": "https://www.metro.pr/noticias/2025/11/14/comienza-el-periodo-para-pagar-el-bono-de-navidad-trabajo-advierte-a-patronos-sobre-requisitos-y-plazos/",
+          "tipo": "secundaria"
+        },
+        {
+          "titulo": "Departamento del Trabajo PR",
+          "url": "https://www.trabajo.pr.gov/",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "Se compra por libra (lb, 453.6 g), onza (oz, 28.35 g) y galón (3.785 L), y las temperaturas en la cocina se miden en °F (41 °F son unos 5 °C y 135 °F unos 57 °C). Las distancias van en millas, aunque la gasolina se vende por litro, una rareza local. Las cajas y latas siguen medidas de EE. UU.: «case», «quintal» (100 lb) y «fl oz».",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "Dominan Uber Eats y DoorDash. Para pagar, además de efectivo y tarjeta, se usa mucho ATH Móvil, el pago por móvil de Evertec, con QR y enlace de cobro. Muchos negocios aceptan también Apple Pay y Zelle. Si vendes a través de las apps, calcula la comisión en tu escandallo.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Hay apoyo federal de la SBA (préstamos 7(a) de hasta 5 millones de dólares y microcréditos de hasta 50.000 dólares); consulta en su portal cómo acceder desde Puerto Rico y qué centros de asesoría locales existen. A nivel local pueden existir programas del Departamento de Desarrollo Económico y Comercio y de cooperativas, pero cambian de nombre y requisitos con frecuencia: verifica que cada convocatoria esté vigente.",
+      "fuentes": [
+        {
+          "titulo": "SBA – préstamos 7(a)",
+          "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "SBA – microcréditos",
+          "url": "https://www.sba.gov/funding-programs/loans/microloans",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": true
+    },
+    "tipos_local": {
+      "texto": "«Fonda» o «cafetería» (comida criolla casera, tipo bar de menú), «kiosko» (puestos de fritura en carretera), «lechonera» (cerdo asado), «chinchorro» (barra rústica), «panadería» (con desayunos), «food truck» y «restaurante». El «bar» y el «pub» son como en España. Los comedores escolares se llaman «cafetería».",
+      "fuentes": [],
+      "verificado": true
+    },
+    "adaptar_productos": {
+      "texto": "Sustituye el IVA del 10 % por el IVU del 11.5 % (o el 7 % en alimentos preparados si tienes el certificado «Negocio Autorizado»). Convierte kilos, litros y °C a lb, galones y °F en las casillas de parámetros. Cambia el convenio de hostelería por las leyes laborales de Puerto Rico y federales, e incluye el bono de Navidad. Presenta el APPCC como plan de seguridad alimentaria acorde a lo que exija Salud. Añade la comisión de Uber Eats y DoorDash.",
+      "fuentes": [
+        {
+          "titulo": "Hacienda PR – Determinación Administrativa 19-03 (tasa reducida 7 %)",
+          "url": "https://hacienda.pr.gov/publicaciones/determinacion-administrativa-num-19-03",
+          "tipo": "oficial"
+        },
+        {
+          "titulo": "Hacienda PR – IVU",
+          "url": "https://hacienda.pr.gov/impuesto-sobre-ventas-y-uso-ivu",
+          "tipo": "oficial"
+        }
+      ],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«Cafetería» puede ser un comedor casero o escolar, no una cafetería de café y bollería.",
+    "«Chinchorro» es un bar rústico de carretera, no un chinchorro de playa.",
+    "«Habichuelas» son las judías o alubias; «gandules» son guisantes de paloma.",
+    "«Pastelillo» es una empanadilla frita; «pastel» es una masa de plátano envuelta en hoja.",
+    "«Lechón» es cerdo entero asado; «mofongo» es plátano frito majado, no un plato de pescado.",
+    "«China» es la naranja; «guagua» es el autobús; «zumo» casi no se usa, se dice «jugo»."
+  ]
+}
