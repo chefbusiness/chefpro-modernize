@@ -1,0 +1,89 @@
+{
+  "codigo": "GT",
+  "pais": "Guatemala",
+  "moneda": "quetzal (GTQ)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA general es del 12 % y se aplica a la venta de comidas y bebidas en restaurantes. Los pequeños contribuyentes pagan un 5 % sobre sus ventas brutas, sin generar crédito fiscal a sus clientes; el tope de ingresos para ese régimen cambia y debes confirmarlo en la SAT. Los precios de carta se muestran normalmente con el IVA incluido. No pudimos abrir la página oficial de la SAT, así que consulta las tasas vigentes allí.",
+      "fuentes": [
+        {
+          "titulo": "SAT Guatemala",
+          "url": "https://www.sat.gob.gt/"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre, habitualmente en torno al 10 % de la cuenta; muchos restaurantes la sugieren en la factura, pero el cliente decide. No existe un cargo por servicio obligatorio equivalente al de Costa Rica. Cuando la propina se incluye en la factura, su tratamiento fiscal y laboral debe confirmarse con la SAT o con tu contador, porque la regla ha cambiado con los años.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud Pública y Asistencia Social (MSPAS), a través de las áreas de salud y del Departamento de Regulación y Control de Alimentos. La licencia sanitaria de establecimientos de comida se tramita allí. La norma de referencia en la práctica son las buenas prácticas de manufactura y la inocuidad de alimentos de MSPAS; no confirmamos el número de reglamento, así que consúltalo con el área de salud local.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "Se pide el carné de manipulación de alimentos (a veces llamado tarjeta de salud) para el personal que toca comida. Lo emiten las áreas de salud del MSPAS tras un examen médico y una charla o curso de inocuidad. La vigencia y los requisitos exactos varían según el área; consúltalos en tu centro de salud antes de contratar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: inscripción en el Registro Mercantil (patente de comercio de empresa y de sociedad si eres sociedad), inscripción en la SAT con RTU, licencia sanitaria del MSPAS, licencia o autorización municipal de funcionamiento y uso de suelo, y revisión de bomberos o CONRED en locales con aforo. Los trámites cambian por municipio; confirma el orden con la municipalidad.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas exige licencia municipal, que otorga cada municipalidad según su reglamento, además del registro sanitario cuando corresponde. Hay restricciones de horario y zonas, y la llamada ley seca en fechas electorales. Los detalles son locales: pregunta en la municipalidad donde abrirás.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es el comerciante individual con patente de comercio o la sociedad anónima; también hay sociedades de responsabilidad limitada. Para negocios pequeños existe el Régimen de Pequeño Contribuyente del IVA (5 %), que reemplaza al autónomo español en la práctica, y el ISR puede tributarse por régimen opcional simplificado o sobre utilidades según tus ingresos. Confirma el tope vigente con la SAT.",
+      "fuentes": [
+        {
+          "titulo": "SAT Guatemala",
+          "url": "https://www.sat.gob.gt/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria suele ser de 44 horas semanales según el Código de Trabajo. Existen prestaciones obligatorias que en España no se conocen igual: el aguinaldo (un sueldo adicional en diciembre) y el Bono 14 (otro sueldo en julio), además de vacaciones e indemnización. La seguridad social la gestiona el IGSS. Verifica los datos en el Ministerio de Trabajo antes de contratar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "Al comprar en mercados y proveedores se usa sobre todo la libra, y para sacos de granos o café el quintal, que son 100 libras. Los líquidos se piden por galón y las bebidas por botella o litro. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El peso en cocina se escribe a menudo en libras; el sistema métrico convive con ellas.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El efectivo domina en los locales pequeños y las tarjetas se aceptan en establecimientos medianos y grandes. Las transferencias entre bancos y las apps bancarias son comunes. En delivery operan Pedidos Ya y Uber Eats en las zonas urbanas, junto con repartos propios por WhatsApp.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Para emprender conviene mirar el Viceministerio de Desarrollo de la Micro, Pequeña y Mediana Empresa del Ministerio de Economía (MINECO) y los programas de la banca de desarrollo y de cooperativas. No confirmamos programas vigentes concretos; consulta la web del MINECO y de la Superintendencia de Bancos antes de planificar financiación con apoyo público.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos habituales son el comedor (casa de comidas con menú del día, parecido al bar de menú español), la cafetería, la pollería o el pollo frito de cadena, la churrasquería y la pupusería, más presente en la costa. La «tienda de barrio» suele vender también comida preparada y bebidas. El «comedor» de mediodía es el equivalente más próximo a un restaurante de menú.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA del 10 % español por el 12 % en la casilla de parámetros, o por el 5 % si tributas como pequeño contribuyente. Sustituye el APPCC por un plan de buenas prácticas y licencia sanitaria del MSPAS. Añade el aguinaldo y el Bono 14 al coste de personal y cámbialo por la cotización del IGSS. Convierte las unidades de compra a libras y galones donde tu proveedor las use.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«chucho» es un perro callejero, no un cerdo",
+    "«pupusa» es un plato salvadoreño; en Guatemala se conoce poco fuera de las zonas de influencia salvadoreña",
+    "«refresco» es una bebida fría de fruta o gaseosa, no sólo gaseosa",
+    "«caldo» es un guiso espeso (p. ej. «caldo de res») y no un caldo ligero"
+  ]
+}

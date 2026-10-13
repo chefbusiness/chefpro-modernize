@@ -1,0 +1,89 @@
+{
+  "codigo": "HN",
+  "pais": "Honduras",
+  "moneda": "lempira (HNL)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El Impuesto Sobre Ventas (ISV) se aplica a la venta de bienes y servicios; en la práctica el tipo general es del 15 % y la prensa y consultoras citan un 18 % selectivo para alcohol y tabaco, pero no pudimos confirmarlo con la ley. La página oficial de la SAR confirma, además, un Impuesto de Producción y Consumo específico sobre bebidas alcohólicas, cigarrillos y gaseosas (5,19 % según el Acuerdo 218-2024). Pide a la SAR la tabla vigente por producto.",
+      "fuentes": [
+        {
+          "titulo": "SAR Honduras, Impuesto Sobre Ventas",
+          "url": "https://www.sar.gob.hn/impuesto-sobre-ventas-isv/"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre, habitualmente alrededor del 10 % de la cuenta, y se paga en efectivo al camarero en la mayoría de locales. No hemos confirmado un cargo por servicio obligatorio. Si el restaurante lo incluye en la factura, su tratamiento tributario y laboral debe consultarse con la SAR o con un contador local.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es la Agencia de Regulación Sanitaria (ARSA), que otorga la licencia sanitaria y vigila la inocuidad de alimentos en establecimientos; las regiones sanitarias de la Secretaría de Salud inspeccionan localmente. No confirmamos el reglamento exacto de buenas prácticas ni si se exige HACCP; consulta a ARSA antes de diseñar tus procedimientos.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "Para manipular alimentos se pide el carné de manipulador, normalmente tras un examen médico y un curso de inocuidad que dan las unidades de salud o centros autorizados. La renovación y la vigencia varían por municipio y región sanitaria; confirma los requisitos con el centro de salud de tu zona.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: inscripción del comerciante o sociedad en la Cámara de Comercio, RTN en la SAR, permiso de operación municipal de la alcaldía, licencia sanitaria de ARSA, uso de suelo y revisión del Cuerpo de Bomberos. Cada alcaldía tiene su propio procedimiento; pregunta cuál es el orden en tu municipio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas se autoriza en el permiso de operación municipal, con licencia o permiso específico de la alcaldía, y están reguladas por horarios y zonas. Las restricciones concretas dependen del municipio y del reglamento de ARSA; no hemos confirmado una ley nacional única, así que consulta a tu alcaldía.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es el comerciante individual o la sociedad mercantil (S. de R.L. o S.A.). Existe un régimen simplificado de pequeños contribuyentes, pero no hemos podido confirmar con la SAR su alcance ni sus topes para restaurantes. Consulta a la SAR antes de decidir si te conviene la forma societaria o el régimen simplificado.",
+      "fuentes": [
+        {
+          "titulo": "SAR Honduras",
+          "url": "https://www.sar.gob.hn/impuesto-sobre-ventas-isv/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 44 horas semanales según el Código de Trabajo, con reducciones por mutuo acuerdo. Las prestaciones que difieren de España son el décimo tercer mes (en diciembre) y el décimo cuarto mes (entre junio y julio), además de la indemnización. La seguridad social la gestiona el Instituto Hondureño de Seguridad Social (IHSS). Verifica los datos en la Secretaría de Trabajo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "En los mercados se compra por libra y los granos o el café por quintal (100 libras); los líquidos se piden por galón y las bebidas por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El sistema métrico se usa en la empresa formal, pero libras y galones siguen siendo las unidades del mercado.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El efectivo es el medio dominante en negocios pequeños; las tarjetas y las transferencias bancarias se usan más en las ciudades. En delivery operan Pedidos Ya y Uber Eats en Tegucigalpa y San Pedro Sula, y muchos locales reparten por WhatsApp. La Agencia de Regulación aún no limita estas plataformas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre los apoyos públicos están el Banco Hondureño para la Producción y la Vivienda (BANHPROVI) y los programas de Servicio de Apoyo a la Micro, Pequeña y Mediana Empresa de la Secretaría de Desarrollo Económico. Verifica en cada web qué líneas están vigentes y cuáles son los requisitos antes de tomar una decisión financiera.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos habituales son la comedor o «comedor» (casa de comidas con plato del día), el «baleadero» (puesto de baleadas, tortilla de harina rellena), el «asadero», la pollería y la cafetería. La «comida corrida» es el menú del día y la «fonda» o «comedor» es una casa de comidas familiar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español por el ISV del 15 % en la casilla de parámetros y revisa el tipo aplicable a las bebidas alcohólicas con la SAR. Sustituye el APPCC por la licencia sanitaria de ARSA y buenas prácticas. Añade el décimo tercer y el décimo cuarto mes al coste de personal y la cotización del IHSS. Ajusta las compras a libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«baleada» es una tortilla de harina rellena de frijoles, no una bala",
+    "«pupusa» es salvadoreña; en Honduras lo típico es la «baleada»",
+    "«catracho» es el gentilicio coloquial de hondureño, no un insulto",
+    "«refresco» es una bebida fría de frutas o una gaseosa, no sólo una gaseosa"
+  ]
+}

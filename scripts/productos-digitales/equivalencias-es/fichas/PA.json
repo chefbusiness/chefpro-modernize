@@ -1,0 +1,99 @@
+{
+  "codigo": "PA",
+  "pais": "Panamá",
+  "moneda": "balboa (PAB), a la par con el dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El ITBMS (Impuesto de Transferencia de Bienes Corporales Muebles y la Prestación de Servicios) general es del 7 %. La DGI indica un 10 % para la importación y venta de bebidas alcohólicas y para el alojamiento, y un 15 % para el tabaco. La página no menciona restaurantes: aplica el 7 % a la comida y confirma con la DGI el tipo de las bebidas alcohólicas. Está exento el pequeño contribuyente que factura menos de 36 000 B/ al año.",
+      "fuentes": [
+        {
+          "titulo": "DGI Panamá, ITBMS",
+          "url": "http://dgi.mef.gob.pa/itbms/Itbms"
+        }
+      ],
+      "verificado": true
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre, habitualmente el 10 % de la cuenta, y muchos restaurantes la añaden como línea aparte. No hemos confirmado una norma que la haga obligatoria. Si cobras servicio, consulta con la DGI cómo debe facturarse.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud (MINSA), a través de la Dirección Nacional de Control de Alimentos y Vigilancia Veterinaria. Controla la inocuidad en restaurantes y emite el permiso sanitario. No confirmamos el reglamento técnico de buenas prácticas ni si se pide HACCP; consulta con la regional de salud.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Salud de Panamá",
+          "url": "https://www.minsa.gob.pa/"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "El personal que manipula alimentos debe tener el carné de manipulador o carné de salud, tras un curso de inocuidad y un examen médico impartidos por el MINSA o por entidades autorizadas. La vigencia varía; confirma los requisitos con tu regional de salud antes de contratar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: inscripción en el Registro Público, Aviso de Operación (gestionado en Panamá Emprende, que sustituye a la antigua licencia comercial), permiso sanitario del MINSA, uso de suelo y revisión del Cuerpo de Bomberos. Para la municipalidad y los tipos de negocio, consulta la ventanilla única.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas exige autorización específica, normalmente un permiso adicional vinculado al Aviso de Operación y la autoridad de la actividad, con restricciones de horario y zonas. No hemos confirmado las normas exactas, así que pregunta a la ventanilla única o a la municipalidad.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es la persona natural con Aviso de Operación o la sociedad anónima; las sociedades de responsabilidad limitada también se usan. No hemos podido confirmar la existencia de un régimen simplificado equivalente al autónomo. Consulta a la DGI y a Panamá Emprende antes de decidir.",
+      "fuentes": [
+        {
+          "titulo": "DGI Panamá",
+          "url": "http://dgi.mef.gob.pa/itbms/Itbms"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 48 horas semanales según el Código de Trabajo. La prestación distintiva es el décimo tercer mes, que se paga en tres partidas a lo largo del año (abril, agosto y diciembre). La seguridad social corresponde a la Caja de Seguro Social (CSS). Verifica los datos en el MITRADEL.",
+      "fuentes": [
+        {
+          "titulo": "MITRADEL",
+          "url": "https://www.mitradel.gob.pa/"
+        }
+      ],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "En el mercado se compra por libra para carne, queso y verduras, y por galón para líquidos; las bebidas se piden por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. El quintal también se usa para sacos de granos. En supermercados modernos aparecen precios en kilos y en libras a la vez.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El balboa existe solo como moneda acuñada y circula junto con el dólar estadounidense, que es el papel moneda. El efectivo domina en negocios pequeños, y se usan tarjetas y Yappy, la app de pagos entre bancos. En delivery operan PedidosYa, Rappi y Uber Eats.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Los apoyos públicos incluyen la Autoridad de la Micro, Pequeña y Mediana Empresa (AMPYME) y la plataforma Panamá Emprende. Comprueba en cada web qué programas siguen vigentes, y sus requisitos, antes de contar con financiación o asesoría pública, y pide siempre confirmación escrita de las condiciones.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos habituales son la «fonda» (casa de comidas con plato del día), el comedor, la cafetería, la marisquería y el puesto de comida callejera junto a la costa. La «fonda» equivale al bar de menú español, y los «quioscos» venden fritos y bebidas.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el 7 % del ITBMS, y usa el 10 % para las bebidas alcohólicas, confirmándolo con la DGI. Sustituye el APPCC por el permiso sanitario del MINSA. Añade el décimo tercer mes, en tres partidas, y la cotización de la CSS al coste de personal. Usa el dólar como moneda y las compras en libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«fonda» es una casa de comidas, no un lugar de alojamiento",
+    "«chuleta» en Panamá es un corte de cerdo frito; no la chuleta española de ternera",
+    "«tamal» panameño se envuelve en hoja de plátano y lleva pollo o cerdo",
+    "«chicha» es una bebida refrescante de frutas, no solo alcohol"
+  ]
+}

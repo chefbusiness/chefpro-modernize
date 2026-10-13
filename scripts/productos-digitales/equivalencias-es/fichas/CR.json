@@ -1,0 +1,106 @@
+{
+  "codigo": "CR",
+  "pais": "Costa Rica",
+  "moneda": "colón costarricense (CRC)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El Impuesto al Valor Agregado (IVA) general es del 13 %, vigente desde la Ley 9635 de 2019 y aplicable a la venta de comidas y bebidas en restaurantes. No hemos podido abrir la página de Hacienda para confirmar la tabla actual de tarifas reducidas, así que revísala allí. El cargo de servicio del 10 % se calcula sobre el consumo antes del IVA y los precios de carta suelen incluir ambos al final.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Hacienda de Costa Rica",
+          "url": "https://www.hacienda.go.cr/"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "La Ley 4946 reconoce a los trabajadores de restaurantes y bares el derecho a un 10 % del consumo por atender en mesa, que debe aparecer como «servicio 10 %». La reforma de la Ley 9116 lo convirtió en un cobro obligatorio y separado que no forma parte del salario. No aplica a comida para llevar. Cualquier monto adicional es propina voluntaria del cliente.",
+      "fuentes": [
+        {
+          "titulo": "Ley 4946, texto (Justia Costa Rica)",
+          "url": "http://costa-rica.justia.com/nacionales/leyes/ley-4946/gdoc/"
+        }
+      ],
+      "verificado": true
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud, que concede el permiso sanitario de funcionamiento a los establecimientos de comida y sus áreas rectoras de salud los inspeccionan. No pudimos abrir la web del Ministerio, así que no confirmamos el reglamento técnico de buenas prácticas ni si se pide HACCP. Consulta tu área rectora de salud.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Salud de Costa Rica",
+          "url": "https://www.ministeriodesalud.go.cr/"
+        }
+      ],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "Se exige el carné de manipulación de alimentos, que se obtiene tras un curso en centros autorizados por el Ministerio de Salud o el INA. Se renueva cada cierto tiempo, pero no confirmamos la vigencia actual; consúltala en tu área rectora de salud antes de contratar al personal.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: inscripción en el Registro Nacional y en Tributación, permiso sanitario de funcionamiento del Ministerio de Salud, patente comercial de la municipalidad, uso de suelo, póliza de riesgos del trabajo con el INS y revisión del Cuerpo de Bomberos. La patente municipal fija el tipo de actividad y, en bares, la licencia de licores.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "Las bebidas alcohólicas se rigen por la Ley 9047 de regulación y comercialización de bebidas con contenido alcohólico, cuya licencia de licores concede la municipalidad según el tipo de local. Hay restricciones de horario, de distancia a centros educativos y de ley seca. No hemos abierto el texto, así que consulta tu municipalidad.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es la persona física con actividad lucrativa o la sociedad de responsabilidad limitada (S.R.L.); la sociedad anónima también se usa. Para negocios pequeños existe el régimen de tributación simplificada de Hacienda, equivalente al autónomo en módulos, con topes de ingresos por actividad que debes confirmar en Tributación.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Hacienda de Costa Rica",
+          "url": "https://www.hacienda.go.cr/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 48 horas semanales según el Código de Trabajo. La prestación obligatoria distintiva es el aguinaldo, un doceavo de los salarios del año pagadero en diciembre; también hay vacaciones y cesantía. La seguridad social la gestiona la Caja Costarricense de Seguro Social (CCSS), que cubre salud y pensiones. Confirma los datos en el MTSS.",
+      "fuentes": [
+        {
+          "titulo": "MTSS Costa Rica",
+          "url": "https://www.mtss.go.cr/"
+        }
+      ],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "Costa Rica usa mayoritariamente el sistema métrico: kilos, gramos y litros se usan en el mercado. La libra aparece sobre todo en la carne en pulperías y el galón es más raro. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Para vender, la norma metrológica pide etiquetar en unidades métricas; la libra es una referencia popular en el campo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "pagos_delivery": {
+      "texto": "El SINPE Móvil, la transferencia instantánea por número de teléfono del Banco Central, es muy habitual en todos los negocios. También se aceptan tarjetas y efectivo en colones, y en zonas turísticas dólares. En delivery operan Uber Eats, Rappi y Pedidos Ya, además de repartos propios por WhatsApp.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre los apoyos públicos están el Sistema de Banca para el Desarrollo (SBD), el programa PYME del MEIC y la formación del INA. Comprueba en cada web qué programas siguen vigentes, y sus requisitos de acceso, antes de planificar financiación con ayuda estatal.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "La «soda» es el comedor popular costarricense de comida casera con precios bajos; ofrece el «casado» (plato con arroz, frijoles, ensalada y proteína a elegir). También hay restaurantes de cadena y marisquerías. La «soda» equivale al bar de menú español y la «pulpería» es una tienda de barrio con comida y bebida.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español del 10 % por el 13 % y añade una columna para el servicio del 10 %, que no se suma al IVA. Sustituye el APPCC por el permiso sanitario del Ministerio de Salud. Incluye aguinaldo, cesantía y cotización de la CCSS en el coste de personal. Considera el SINPE Móvil como medio de cobro y cambia la moneda al colón.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«casado» es un plato del día de arroz, frijoles y carne, no una persona que se ha casado",
+    "«soda» es un comedor económico, no una bebida gaseosa",
+    "«refresco» es una bebida natural de frutas, no una gaseosa",
+    "«gallo pinto» es arroz con frijoles; el «gallo» también puede ser una tortilla rellena",
+    "«tico» o «tica» es costarricense, un gentilicio coloquial",
+    "«mae» es un vocativo coloquial parecido a «tío»"
+  ]
+}

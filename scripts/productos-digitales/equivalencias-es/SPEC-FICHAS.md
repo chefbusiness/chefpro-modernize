@@ -22,7 +22,7 @@ CL, AR, UY, PY, BR, US). UTF-8, válido (`python3 -m json.tool` sin error).
   "moneda": "peso mexicano (MXN)",
   "consultado": "2026-10",
   "campos": {
-    "impuesto_consumo":      {"texto": "…", "fuentes": [{"titulo": "…", "url": "https://…"}], "verificado": true},
+    "impuesto_consumo":      {"texto": "…", "fuentes": [{"titulo": "…", "url": "https://…", "tipo": "oficial"}], "verificado": true},
     "propina_servicio":      {…},
     "autoridad_sanitaria":   {…},
     "manipulador":           {…},
@@ -64,7 +64,14 @@ CL, AR, UY, PY, BR, US). UTF-8, válido (`python3 -m json.tool` sin error).
 1. **Fuentes oficiales para todo lo legal/fiscal/sanitario/laboral** (portal del gobierno, autoridad tributaria,
    ministerio, diario oficial, legislación consolidada). Abre de verdad la página (WebFetch) antes de citarla. Las de
    `pagos_delivery`, `tipos_local` y `trampas` pueden no llevar fuente (`"fuentes": []`).
-2. Si un dato legal no se puede confirmar con fuente oficial abierta: redáctalo prudente («consulta con…») y pon
+1bis. **Si el portal oficial no abre** (403, DNS, solo portada; pasa a menudo con SAT, Hacienda, ministerios
+   centroamericanos), vale una **fuente secundaria fiable que afirme el dato de forma explícita**, abierta de verdad:
+   PwC Worldwide Tax Summaries (taxsummaries.pwc.com), guías fiscales de KPMG/EY/Deloitte, OIT NATLEX/NORMLEX (laboral),
+   FAO FAOLEX (normas sanitarias), Country Commercial Guides de trade.gov (licencias y apertura), SICE/OEA, gacetas o
+   compilaciones legislativas, despachos o cámaras de comercio reconocidos. Cada fuente lleva `"tipo": "oficial"` o
+   `"tipo": "secundaria"`: `{"titulo": "…", "url": "https://…", "tipo": "secundaria"}`. Con una secundaria explícita,
+   `"verificado": true`. Prueba primero la oficial; usa la secundaria solo si la oficial falla.
+2. Si un dato legal no se puede confirmar con fuente oficial ni secundaria abierta: redáctalo prudente («consulta con…») y pon
    `"verificado": false`. **Nunca inventes una norma, un número de ley ni un porcentaje.**
 3. **Nada de importes en moneda local que caducan** (salario mínimo, tasas municipales, multas). Sí porcentajes y
    nombres, con fecha si están en transición (p. ej. reducción de jornada por etapas).

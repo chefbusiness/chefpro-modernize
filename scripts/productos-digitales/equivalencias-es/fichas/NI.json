@@ -1,0 +1,89 @@
+{
+  "codigo": "NI",
+  "pais": "Nicaragua",
+  "moneda": "córdoba (NIO)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El Impuesto al Valor Agregado (IVA) tiene un tipo único del 15 %, establecido por la Ley de Concertación Tributaria (Ley 822). Los restaurantes lo aplican a la venta de comida y bebida; además existe un impuesto selectivo de consumo sobre alcohol y tabaco. No pudimos abrir la página de la DGI: el sitio rechazó la petición, así que confirma el tipo allí.",
+      "fuentes": [
+        {
+          "titulo": "DGI Nicaragua",
+          "url": "https://www.dgi.gob.ni/"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre, en torno al 10 % de la cuenta, y se entrega al camarero. Algunos restaurantes añaden el 10 % como servicio en la factura. No hemos confirmado una norma que lo haga obligatorio; consulta con el Ministerio del Trabajo y con la DGI si cobras servicio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud (MINSA), que inspecciona los establecimientos y emite la licencia sanitaria. No confirmamos la norma técnica de buenas prácticas ni si se exige HACCP; consulta con el centro de salud de tu municipio antes de abrir.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "Se exige el carné de manipulador de alimentos o carné de salud, emitido por el MINSA tras un examen médico y una charla de inocuidad. La vigencia y los requisitos concretos cambian; confirma en tu centro de salud antes de contratar al personal.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: inscripción en el Registro Mercantil, número RUC de la DGI, matrícula de la alcaldía, licencia sanitaria del MINSA, permiso de la Dirección de Defensa Civil o Bomberos y uso de suelo. La alcaldía fija las tasas y el procedimiento de la matrícula.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de bebidas alcohólicas exige licencia de la alcaldía, con restricciones de horario y zonas, y la Policía Nacional participa en el control. No hemos confirmado una norma única ni los requisitos vigentes; consulta con tu alcaldía qué categorías de licencia existen y cuánto tarda.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es la persona natural comerciante o la sociedad anónima o de responsabilidad limitada. Para negocios pequeños existe el régimen de cuota fija de la DGI, que sustituye el pago mensual de IVA e IR por una cuota única y se reserva a personas naturales con ingresos y activos limitados. Los topes y su compatibilidad con restaurantes deben confirmarse en la DGI.",
+      "fuentes": [
+        {
+          "titulo": "DGI Nicaragua",
+          "url": "https://www.dgi.gob.ni/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 48 horas semanales según el Código del Trabajo. La prestación distintiva es el décimo tercer mes (diciembre) además de vacaciones e indemnización por antigüedad. La seguridad social la administra el Instituto Nicaragüense de Seguridad Social (INSS). Verifica los datos en el Ministerio del Trabajo.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "En los mercados se compra por libra y los granos por quintal (100 libras); los líquidos por galón y las bebidas por botella o litro. La arroba (25 libras) aún aparece en zonas rurales. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. En la cocina se mezcla métrico e imperial.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El efectivo en córdobas y dólares es dominante; los dólares se aceptan en muchos negocios urbanos. Las tarjetas se usan en locales medianos y grandes y las transferencias entre bancos son comunes. En delivery operan Pedidos Ya y repartos propios por WhatsApp en Managua.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Los programas públicos incluyen el Ministerio de Economía Familiar, Comunitaria, Cooperativa y Asociativa (MEFCCA) y los programas de microcrédito del Estado como Usura Cero. Comprueba en cada entidad qué programas siguen vigentes y quién puede acceder antes de contar con ellos.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "Los formatos habituales son la fritanga (puesto callejero de carne asada con gallo pinto, tajadas y queso frito), el comedor con plato del día, la pollería y la cafetería. La «fritanga» es el equivalente más cercano a una parrilla de bajo coste con servicio rápido; el «comedor» equivale al bar de menú.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español por el 15 % en la casilla de parámetros, y revisa el selectivo si vendes alcohol. Sustituye el APPCC por la licencia sanitaria del MINSA y buenas prácticas. Añade el décimo tercer mes al coste de personal y cambia la cotización por la del INSS. Ajusta la jornada a 48 horas y las compras a libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«fritanga» es un puesto de carne asada con acompañamientos, no una fritura en general",
+    "«gallo pinto» es arroz y frijoles fritos, no un animal ni una pintura",
+    "«nica» es el gentilicio coloquial de nicaragüense, no un insulto",
+    "«refresco» o «fresco» es una bebida fría de fruta o cereal (p. ej. «fresco de cacao»)"
+  ]
+}

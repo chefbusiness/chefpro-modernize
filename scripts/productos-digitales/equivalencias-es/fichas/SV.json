@@ -1,0 +1,89 @@
+{
+  "codigo": "SV",
+  "pais": "El Salvador",
+  "moneda": "dólar estadounidense (USD)",
+  "consultado": "2026-10",
+  "campos": {
+    "impuesto_consumo": {
+      "texto": "El IVA (Impuesto a la Transferencia de Bienes Muebles y a la Prestación de Servicios) es del 13 % y se aplica a la venta de comida y bebida en restaurantes. Hay impuestos selectivos al alcohol y tabaco, según la legislación. No pudimos confirmar el tipo en la página del Ministerio de Hacienda; abre allí la tabla vigente. Los precios de carta suelen publicarse con el IVA incluido.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Hacienda de El Salvador",
+          "url": "https://www.mh.gob.sv/"
+        }
+      ],
+      "verificado": false
+    },
+    "propina_servicio": {
+      "texto": "La propina es voluntaria y de costumbre, alrededor del 10 % de la cuenta; muchos restaurantes la añaden como línea separada en la factura, pero el cliente decide. No hemos confirmado un cargo por servicio obligatorio. Si el negocio lo cobra, comprueba con el Ministerio de Hacienda cómo se factura.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "autoridad_sanitaria": {
+      "texto": "La autoridad es el Ministerio de Salud (MINSAL), que concede el permiso de funcionamiento a establecimientos que preparan alimentos y los inspecciona. No confirmamos el reglamento técnico de buenas prácticas ni si se exige HACCP; el sitio del MINSAL no era accesible desde aquí. Consulta con la unidad de salud local antes de abrir.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "manipulador": {
+      "texto": "Se pide el carné de manipulador de alimentos, que se obtiene tras un examen médico y una capacitación impartida por las unidades de salud del MINSAL. La vigencia varía según la unidad de salud; consúltala en la que te corresponda antes de contratar al personal y de abrir el local.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "licencias_apertura": {
+      "texto": "Los permisos típicos son: matrícula de comercio del Centro Nacional de Registros, NIT y NRC de Hacienda, permiso de funcionamiento de MINSAL, licencia municipal de la alcaldía, uso de suelo y revisión del Cuerpo de Bomberos. La inscripción de empresas se hace en el Centro Nacional de Registros.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "alcohol": {
+      "texto": "La venta de alcohol requiere permiso o licencia, otorgado en gran parte por la alcaldía, y hay restricciones de horario y zonas. La ley seca se aplica en procesos electorales. No confirmamos la norma exacta, así que pregunta en tu municipio.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "forma_juridica": {
+      "texto": "Lo habitual es el comerciante individual o la sociedad anónima de capital variable (S.A. de C.V.). Para negocios pequeños hay un régimen especial de pequeño contribuyente, y los contribuyentes que facturan poco pueden acogerse a obligaciones simplificadas. No pudimos abrir los datos de Hacienda: consulta ahí los topes vigentes.",
+      "fuentes": [
+        {
+          "titulo": "Ministerio de Hacienda de El Salvador",
+          "url": "https://www.mh.gob.sv/"
+        }
+      ],
+      "verificado": false
+    },
+    "laboral": {
+      "texto": "La jornada diurna ordinaria es de 44 horas semanales según el Código de Trabajo. El aguinaldo es una prestación obligatoria en diciembre, proporcional a la antigüedad. La seguridad social corresponde al Instituto Salvadoreño del Seguro Social (ISSS) y las pensiones a las AFP. Verifica los datos en el Ministerio de Trabajo antes de contratar.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "unidades_mercado": {
+      "texto": "En los mercados se compra por libra y los granos por quintal (100 libras) y los líquidos por galón; las bebidas se piden por botella. Una libra equivale a 453,6 g y un galón estadounidense a 3,785 L. Un quintal son unos 45,36 kg. El dólar es la moneda de curso legal; los precios de mercado se anuncian en dólares y centavos.",
+      "fuentes": [],
+      "verificado": true
+    },
+    "pagos_delivery": {
+      "texto": "El dólar estadounidense es la moneda de curso legal. Tras la reforma de la Ley Bitcoin de enero de 2025, aceptar bitcoin es voluntario; según las fuentes de prensa encontradas, el bitcoin dejó de ser de aceptación obligatoria. Cobran con tarjeta y efectivo; el delivery lo ofrecen Pedidos Ya y Uber Eats en San Salvador y repartos propios.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "apoyos_emprendimiento": {
+      "texto": "Entre los apoyos públicos están la Comisión Nacional de la Micro y Pequeña Empresa (CONAMYPE) y el Banco de Desarrollo de El Salvador (BANDESAL). Comprueba en cada web qué líneas están vigentes y sus requisitos antes de contar con financiación pública.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "tipos_local": {
+      "texto": "El formato más característico es la pupusería, que vende pupusas (tortilla de maíz o arroz rellena de queso, frijol o chicharrón) con curtido; también hay el comedor, el «comedor» de mediodía y la pollería. En la calle abundan los puestos de comida, y la cafetería es parecida a la española.",
+      "fuentes": [],
+      "verificado": false
+    },
+    "adaptar_productos": {
+      "texto": "Cambia el IVA español por el 13 % en la casilla de parámetros. Sustituye el APPCC por el permiso de funcionamiento del MINSAL y buenas prácticas. Añade el aguinaldo al coste de personal y cambia la Seguridad Social por el ISSS y las AFP. La moneda es el dólar, así que no hay que convertir ni cambiar de formato monetario. Convierte compras a libras y galones.",
+      "fuentes": [],
+      "verificado": false
+    }
+  },
+  "trampas": [
+    "«pupusa» es un plato salvadoreño de masa de maíz rellena, no un alimento ni insulto en España",
+    "«chucho» es un perro callejero, no un cerdo",
+    "«curtido» es un encurtido de repollo y zanahoria, no un adjetivo",
+    "«tamal» salvadoreño se envuelve en hoja de plátano y se rellena de pollo o cerdo, distinto del tamal mexicano"
+  ]
+}
