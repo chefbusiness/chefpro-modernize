@@ -7,3 +7,6 @@
 |---|---|---|---|
 | 15 | «de los 16 platos viables… los otros 8» | carta de 20 platos: 16 viables en sala, 12 en delivery, 8 fuera | T08 (15-oct) |
 | 16 | 21,6 % «por debajo del objetivo del 20 %» | combinados 21,6 %, justo **por encima** del objetivo; cócteles 19,7 %, justo por debajo | T08 (15-oct) |
+| 13 | «3 + otros 3» platos sin lecturas discrepantes | solo 3 (lo dice su propia tabla) | T07 (15-oct) |
+| 14 | el objetivo del 30 % «por debajo» del rango 28-32 % | el 30 % está **dentro** del rango | T07 (15-oct) |
+| 6 | el boniato «sin merma» con 0,22 kg bruto | su tabla le da un 18 % de merma: se compra entero y se pela en cocina | T03 (15-oct) |
