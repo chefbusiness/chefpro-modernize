@@ -388,7 +388,7 @@ def cifras_es(bloques, fiscal_tanda):
             if tag in ('eur', 'otra') and (
                     (celda and (RX_CTX_UNIDAD.search(ctx_ud[0]) or
                                 RX_CTX_UNIDAD_FILA.search(ctx_ud[1]))) or
-                    (not celda and RX_CTX_UNIDAD.search(txt[max(0, a - 45):b + 25]))):
+                    (not celda and RX_CTX_UNIDAD.search(txt[max(0, a - 120):b + 60]))):  # la frase: «el kilo limpio … es de 28,84 €»
                 occ.append((v, 'exenta', linea, ctx)); continue
             if tag == 'otra':
                 if v == v.to_integral_value() and v <= 12:

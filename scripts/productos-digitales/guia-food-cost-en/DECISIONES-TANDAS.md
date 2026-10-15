@@ -41,3 +41,10 @@
 - Hojas citadas: "Data" (menu-engineering-matrix), "Cost Card" (recipe-cost-card), "Inputs" y "Monthly" (prime-cost-dashboard), "Tracking KPIs" (90-day-action-plan). Familias: Starters / Mains / Desserts. Meses y lecturas: «Above target» / «On target».
 - Informes españoles (CaixaBankLab, qamarero) quitados: rangos de food cost (25-35%, por formato) y estructura de costes (labor 30-35, rent 5-10, overhead 13-20, EBITDA 10-13) quedan como «commonly cited» / «reference ranges the pack works with», sin fuente. Un ⟦ADAPT⟧ en cap. 1 sobre la banda EBITDA 10-13% para la pasada Opus.
 - Gate: T01 sale ERROR [j-cifras] por el «21» del título ES del cap. 4 (tipo español eliminado, D7): correr con `--fiscal` (OK) o ignorar.
+
+## T03 (cap. 5-6, sonnet, 15-oct)
+
+- **Títulos**: cap. 5 «From AP to EP: Trim Loss, Yield and the Test That Replaces the Chart» · cap. 6 «The Recipe Cost Card That Holds Up to an Audit». Hojas: "Yield Test", "Cooking Loss Test", "My Trim Loss Table", "Cost Card"; Q-factor, trim loss / cooking loss / waste, AP weight / EP weight, "Food Cost Kit Pro".
+- **Conversiones**: 31.50 kg = 69.45 lb · 19.07 kg = 42.04 lb · lubina 1.2 kg = 2.65 lb ($6.76/lb; $13.08/lb limpio sin aprovechar = $28.84/kg; $12.53/lb aprovechando = $27.63/kg) · sobrecoste $12.73/kg = $5.77/lb · 180 g = 6.35 oz · ración de solomillo 0.22 kg = 0.49 lb = 7.76 oz → bruto 0.25 kg = 0.55 lb = 8.82 oz (mal calculado 8.69 oz). Precios/lb: 15.80→$7.17, 11.50→$5.22, 8.90→$4.04, 1.60→$0.73, 0.95→$0.43, 12.00→$5.44, 6.00→$2.72. Líquidos de la ficha (nata, PX, caldo, aceite) se quedan en L.
+- **Ficha**: dinero de línea idéntico al ES; fila «IVA» = "Tax rate (%)" con 10% ilustrativo (el xlsx arranca en 0%, las filas "WITH tax" igualan al pre-tax); se dejan los precios/kg en una frase para lectores UK/AU (el gate exige las cifras).
+- **Corregido**: el ES decía que el boniato tenía merma nula con bruto 0.22 kg; la tabla dice 18% (neto 0.18 → bruto 0.22): el EN lo explica como pelado en cocina.
