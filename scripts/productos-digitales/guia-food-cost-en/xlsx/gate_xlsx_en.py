@@ -300,7 +300,13 @@ def paquete(ruta_es, ruta_en, hojas, errores, avisos):
     if na != nb:
         errores.append('partes del paquete distintas: %s' % sorted(set(na) ^ set(nb)))
     graficos = [n for n in na if n.startswith('xl/charts/')]
+    import xml.etree.ElementTree as ET
     for n in nb:
+        if n.endswith('.xml') or n.endswith('.rels'):
+            try:
+                ET.fromstring(zb.read(n))
+            except ET.ParseError as e:
+                errores.append('%s: XML mal formado (%s)' % (n, e))
         x = zb.read(n).decode('utf-8', 'replace')
         crudo = html.unescape(x)
         if RX_MONEDA.search(crudo):
@@ -444,6 +450,9 @@ def cache(ruta_en, wen_titles, v_en, errores):
     con, vacias = 0, []
     for (h, ref), v in v_en.items():
         c = wd[h][ref].value
+        if hasattr(c, 'year'):                       # celda con formato de fecha: openpyxl da datetime
+            from openpyxl.utils.datetime import to_excel
+            c = to_excel(c)
         if v in (None, ''):
             continue
         if c is None:

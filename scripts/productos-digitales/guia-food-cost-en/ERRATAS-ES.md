@@ -17,3 +17,5 @@
 | Bonus ej. 1 | «multiplica el neto por la merma y tómalo como bruto» (daría 0,03) | el error a evitar es SUMAR la merma al neto (subestima: 3,89 frente a 3,95); lo correcto es neto ÷ rendimiento | B01 (15-oct) |
 | Bonus ej. 2 | 12,73 €/kg como sobrecoste «sin aprovechar el subproducto» | 12,73 = coste neto CON subproducto (27,63) − compra (14,90); sin subproducto son 13,94 €/kg | B01 (15-oct) |
 | Bonus ej. 4 | 25,30 € «también por encima del precio actual» (32,70 €) | está **por debajo** | B01 (15-oct) |
+| Simulador (xlsx) | nota del «Resumen»: ningún plato es viable en delivery | 12 de 20 lo son | xlsx EN (15-oct) |
+| Precio objetivo (xlsx) | Instrucciones: precio por factor del chuletón 47 | 49,33 | xlsx EN (15-oct) |

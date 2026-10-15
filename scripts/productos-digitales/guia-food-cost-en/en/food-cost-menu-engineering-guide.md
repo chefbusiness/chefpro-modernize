@@ -398,7 +398,7 @@ The procedure is three weighings of the same piece:
 
 Three measurements of the same piece, on the same day, written into the "Yield Test" sheet of yield-and-trim-loss.xlsx. Across the 10 products measured in that sheet, the total AP weight purchased was 69.45 lb and the total cleaned weight obtained was 42.04 lb, which gives a weighted average yield of 60.5% and a weighted average trim loss of 39.5%. The total purchase cost of those tests was $237.35.
 
-Out of those numbers comes the figure that goes onto the recipe cost card: the Q-factor. It's the inverse of the yield, and its job is to turn the net quantity you need for one portion into the gross quantity you have to buy. If whole sea bass yields 51.7%, its Q-factor is 1 divided by 0.517. That number, which the sheet calculates automatically, is what multiplies the EP weight in the recipe to give you the purchase weight. Without it, every recipe cost card understates the quantity that really leaves the walk-in.
+Out of those numbers comes the figure that goes onto the recipe cost card: the AP/EP factor. It's the inverse of the yield (1 ÷ yield), and its job is to turn the net quantity you need for one portion into the gross quantity you have to buy. If whole sea bass yields 51.7%, its AP/EP factor (1 ÷ yield) is 1 divided by 0.517. That number, which the sheet calculates automatically, is what multiplies the EP weight in the recipe to give you the purchase weight. Without it, every recipe cost card understates the quantity that really leaves the walk-in.
 
 The net cost per clean pound of sea bass, without using the byproduct, is $13.08 ($28.84 per kg), and once you use the byproduct the gap between the AP price and the cost of a clean pound is $5.77 per lb. That gap is what disappears from your margin when recipe costing is done on the AP purchase price instead of on the cost of the clean pound. Artichoke, with a yield of 38.0%, and mussels in the shell, with a yield of 20.0%, show in the table below just how far the purchase price and the real cost in use can sit from each other.
 
@@ -414,7 +414,7 @@ The rule for recording use value is the cost of what it replaces, not the sellin
 
 The "My Trim Loss Table" sheet of yield-and-trim-loss.xlsx shows where your measuring stands today: 6 categories already have your own measurement and 6 categories still use the reference chart. The goal isn't to measure every category at once, but to swap the reference for your own number each time you place an order that matters, until the reference chart is just a leftover backstop and no longer the main source for your recipe costing.
 
-### The Cost of the Clean Pound and the Q-Factor
+### The Cost of the Clean Pound and the AP/EP Factor
 
 Trim loss isn't an industry percentage: it's the result of your supplier, your purchase size and the hands of whoever does the cleaning. Two kitchens that receive the same whole sea bass on the same Tuesday can get different yields because one fillets it by machine and the other by knife, because one buys larger fish and the other works with smaller ones, or simply because the cook doing the breakdown has ten years behind him and the one next door has ten weeks. A trim loss chart copied from the internet reflects an average of conditions that aren't yours, and applying it in your recipe costing means accepting a starting error that compounds on every card.
 
@@ -424,7 +424,7 @@ The "Yield Test" sheet of yield-and-trim-loss.xlsx records the results for 10 pr
 
 Whole sea bass is the case that best illustrates the jump between purchase price and real cost. Its yield in the test is 51.7%: of every pound that comes through the back door, a little over half reaches the plate. With no byproduct used, the net cost per clean pound of sea bass is $13.08. Using the heads and bones for a stock that replaces something you would have bought, that cost drops to $12.53 per lb ($27.63 per kg). The difference between the AP price per pound and the net cost of the clean pound is $5.77: that's the extra cost that disappears from the card when you work with the purchase price instead of the real cost.
 
-The number that travels to the recipe cost card is the Q-factor, the inverse of the yield. If the yield is 51.7%, the Q-factor is 1 divided by 0.517. That factor converts the net quantity the recipe asks for into the gross quantity you have to buy: if the portion needs 6.35 oz (180 g) of cleaned product, you multiply by the factor and get the weight you'll see on the delivery invoice. Skip that step and your recipe costing understates the cost of every plate, systematically.
+The number that travels to the recipe cost card is the AP/EP factor, the inverse of the yield (1 ÷ yield). If the yield is 51.7%, the AP/EP factor is 1 divided by 0.517. That factor converts the net quantity the recipe asks for into the gross quantity you have to buy: if the portion needs 6.35 oz (180 g) of cleaned product, you multiply by the factor and get the weight you'll see on the delivery invoice. Skip that step and your recipe costing understates the cost of every plate, systematically.
 
 The decision to use the byproduct deserves a clear rule: shrimp heads, sea bass bones or the outer leaves of an artichoke only pay off if the use value you assign to them is real. Real use value means that stock, that broth or that garnish replaces something you would otherwise buy. If the fish stock is made from the bones but the kitchen also buys packaged fish stock because the volume falls short, the saving is partial and has to be calculated that way. The shrimp heads, for example, generate a saving of $1.43 in the test: that figure is only valid if the bisque or the oil made from them replaces a real purchase, not if it gets made because "we don't throw anything away" and ends up in the bin anyway.
 
@@ -442,7 +442,7 @@ How often you review depends on how much the product varies. A seasonal vegetabl
 
 **Ten Yield Tests With Their Clean-Pound Cost (yield-and-trim-loss.xlsx, "Yield Test" sheet)**
 
-| Product | AP weight (lb) | AP price/lb ($) | Clean weight (lb) | Yield (%) | Trim loss (%) | Q-factor | Net cost, byproduct not used ($/lb) | Net cost, byproduct used ($/lb) |
+| Product | AP weight (lb) | AP price/lb ($) | Clean weight (lb) | Yield (%) | Trim loss (%) | AP/EP factor (1 ÷ yield) | Net cost, byproduct not used ($/lb) | Net cost, byproduct used ($/lb) |
 |---|---|---|---|---|---|---|---|---|
 | Whole sea bass (2.65 lb) | 2.65 | $6.76 | 1.37 | 51.7% | 48.3% | 1.94 | $13.08 | $12.53 |
 | Whole hake | 5.29 | $5.35 | 2.87 | 54.2% | 45.8% | 1.85 | $9.88 | $9.40 |
@@ -1638,7 +1638,7 @@ The quarter's indicators, in the table that follows, show the starting point and
 
 **The Whole Example Menu, Dish by Dish (`menu-engineering-matrix.xlsx`, "Data" sheet)**
 
-| Dish | Family | Units Sold | Plate Cost ($) | Menu Price Pre-Tax ($) | CM ($) | Food Cost (%) | Menu Price With 10% Illustrative Sales Tax ($) |
+| Dish | Category | Units Sold | Plate Cost ($) | Menu Price Pre-Tax ($) | CM ($) | Food Cost (%) | Menu Price With 10% Illustrative Sales Tax ($) |
 |---|---|---|---|---|---|---|---|
 | Iberico ham croquettes (6 pcs) | Starters | 420 | $2.10 | $8.60 | $6.50 | 24.4% | $9.46 |
 | Heirloom tomato salad with tuna belly and scallions | Starters | 310 | $3.60 | $11.80 | $8.20 | 30.5% | $12.98 |
