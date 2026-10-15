@@ -80,3 +80,9 @@
 - **Decisiones del plan** ("Decisions"): Reformulate 1/$900 · Reprice 1/$210 · Redesign 2/$400 · Remove 3/$290 · Review 2/$300 · Negotiate 1/$260; total $2,360. Los «2 de negociación/$300» del ES se dicen «2 supplier review decisions, $300» (la hoja los pone en Review).
 - Platos de "By Dish" nuevos: Local cheese board · Confit artichokes with ham · Roasted tomato soup with basil · Free-range roast chicken with potatoes · Seasonal vegetable lasagna. Columnas: Plate Cost ($) · Current/Chosen Menu Price Pre-Tax ($) · Status vs. Target (On target / Above target).
 - Fuentes: CaixaBankLab → «a 2026 European industry study» (30-35% / 15-25%); INE y MAPA/Mercasa (y su cifra «34 productos») generalizados a «published price indexes» y «wholesale market quotes», sin nombrar fuente.
+
+## T10 (cap. 19, sonnet, 15-oct)
+
+- **Título**: «The Full Case: One Entire Menu, Start to Finish» (T01). Códigos de plato en "Decisions" pasan de E/P/D a **S/M/D** (S3 garlic shrimp, M5 ribeye, S5 cheese board, M8 lasagna, D4 fruit, M6 sea bass); el xlsx EN debe usarlos. Cabeceras: Dish · Family · Units Sold · Plate Cost ($) · Menu Price Pre-Tax ($) · CM ($) · Food Cost (%) · Menu Price With 10% Illustrative Sales Tax ($); hoja del simulador = "Menu".
+- Herramientas de origen en "Decisions": Multi-method matrix · Multichannel simulator · Yield test · Beverage menu · Prime cost dashboard; estado «Pending»; impacto «Estimated Impact ($/Month)». KPI "Average check pre-tax ($)", "Contribution margin per cover ($)".
+- El ES contradecía su tabla en la diferencia de -13,54 € ("pide subir más de lo que baja"): EN dice solo que, sumados los 20 platos, los precios elegidos quedan $13.54 por debajo de los actuales. Rangos 25-35% / 30% / estructura de costes / EBITDA 10-13%: «commonly cited», sin fuente.

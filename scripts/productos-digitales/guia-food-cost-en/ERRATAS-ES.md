@@ -13,3 +13,4 @@
 | 18 | «subida media sobre el PVP actual, -5,1 %» | «variación media … -5,1 % (negativa: la carta en conjunto ya está por encima de su precio objetivo)» | T09 (15-oct) |
 | 18 | «2 decisiones de negociación, impacto 300 €» | la tabla: Negociar = 1 decisión (260 €); Revisar = 2 (300 €) | T09 (15-oct) |
 | 17 | el epígrafe «Packaging y etiquetado» repite el costeo por lote (bloques solapados del pipeline) | contenido propio de packaging/etiquetado o fusionar | T09 (15-oct) |
+| 19 | «-13,54 €: la carta pide subir más de lo que baja» | lo contrario: los precios elegidos suman 13,54 € MENOS que los actuales (coherente con el -5,1 % del cap. 18) | T10 (15-oct) |
