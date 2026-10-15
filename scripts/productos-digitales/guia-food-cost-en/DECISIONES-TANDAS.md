@@ -91,3 +91,9 @@
 
 - **Cierre**: encabezado «## About the Author and Terms of Use». Línea de versión (negrita): «**Version 1.0 · October 2026 · aichef.pro/en/digital-products/food-cost-menu-engineering-guide · info@aichef.pro**». Bio: «CEO of AI Chef Pro» (sin ChefBusiness Group), johnguerrero.es; aviso en cursiva: no tax, legal or accounting advice; tasas ilustrativas en celdas editables; "check with your accountant or tax advisor".
 - Cap. 20: software $1,100/año por local «before sales tax»; hojas "90-Day Calendar" y "Decisions"; bloques Measure / Cost and Classify / Apply Decisions / Measure the Effect / Review.
+
+## B01 (bonus: portada, índice y ej. 1-4, sonnet, 15-oct)
+
+- **Títulos EN de los 12 ejercicios** (reutilizar tal cual): 1 Gross Quantity and Cost With Trim Loss · 2 Yield Test With Byproducts · 3 Actual Food Cost for a Month · 4 The Same Dish Through the Four Methods · 5 Tax on a Drink, Channel by Channel · 6 Classifying a Category With Kasavana & Smith · 7 The Same Group Under Miller and Pavesic · 8 Goal Value for Two Dishes · 9 Third-Party Delivery Repricing With Packaging and a Price Ceiling · 10 Glass or Bottle · 11 A Month's Prime Cost and Its Traffic Light · 12 Prix Fixe Menu: The Mix Decides the Margin. Subsecciones: «The Problem and the Data» / «The Solution, Step by Step» / «How to Read the Result»; «Familia» → category.
+- Portada: bonus «Bonus of the "Food Cost + Menu Engineering Guide" Pack»; línea de versión D5 sin correo. Tablas del bonus con cabeceras Title Case y unidad en la celda cuando mezclan lb y L.
+- Ej. 2 en lb/$ por lb (kg entre paréntesis en texto): sobrecoste $6.32/lb ($13.94/kg) sin aprovechar y $5.77/lb ($12.73/kg) aprovechando (el ES decía 12,73 «sin aprovechar»: erróneo). Compra lubina $17.88; ahorro gamba $0.65/lb ($1.43/kg).

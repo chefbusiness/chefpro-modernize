@@ -14,3 +14,6 @@
 | 18 | «2 decisiones de negociación, impacto 300 €» | la tabla: Negociar = 1 decisión (260 €); Revisar = 2 (300 €) | T09 (15-oct) |
 | 17 | el epígrafe «Packaging y etiquetado» repite el costeo por lote (bloques solapados del pipeline) | contenido propio de packaging/etiquetado o fusionar | T09 (15-oct) |
 | 19 | «-13,54 €: la carta pide subir más de lo que baja» | lo contrario: los precios elegidos suman 13,54 € MENOS que los actuales (coherente con el -5,1 % del cap. 18) | T10 (15-oct) |
+| Bonus ej. 1 | «multiplica el neto por la merma y tómalo como bruto» (daría 0,03) | el error a evitar es SUMAR la merma al neto (subestima: 3,89 frente a 3,95); lo correcto es neto ÷ rendimiento | B01 (15-oct) |
+| Bonus ej. 2 | 12,73 €/kg como sobrecoste «sin aprovechar el subproducto» | 12,73 = coste neto CON subproducto (27,63) − compra (14,90); sin subproducto son 13,94 €/kg | B01 (15-oct) |
+| Bonus ej. 4 | 25,30 € «también por encima del precio actual» (32,70 €) | está **por debajo** | B01 (15-oct) |
