@@ -43,7 +43,7 @@ sys.path.insert(0, str(AQUI.parent / 'guias-v2_0'))
 import documentos as D  # noqa: E402  — importarlo sólo define funciones y constantes
 
 TANDAS = ['T%02d' % i for i in range(1, 12)] + ['B01', 'B02', 'B03']
-TANDAS_FISCALES = {'T02', 'T08', 'B02'}          # SPEC §4: readaptación fiscal (D7)
+TANDAS_FISCALES = {'T02', 'T08', 'B02', 'T01', 'B01'}  # SPEC §4: readaptación fiscal (D7); T01 y B01 llevan el índice con los títulos fiscales
 ORFANOS_ES = {'plan-financiero-3-anos'}           # D11: fichero ES citado una vez, sin EN
 
 # --------------------------------------------------------------------------
