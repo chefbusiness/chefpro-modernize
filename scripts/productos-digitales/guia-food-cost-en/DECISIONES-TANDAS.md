@@ -86,3 +86,8 @@
 - **Título**: «The Full Case: One Entire Menu, Start to Finish» (T01). Códigos de plato en "Decisions" pasan de E/P/D a **S/M/D** (S3 garlic shrimp, M5 ribeye, S5 cheese board, M8 lasagna, D4 fruit, M6 sea bass); el xlsx EN debe usarlos. Cabeceras: Dish · Family · Units Sold · Plate Cost ($) · Menu Price Pre-Tax ($) · CM ($) · Food Cost (%) · Menu Price With 10% Illustrative Sales Tax ($); hoja del simulador = "Menu".
 - Herramientas de origen en "Decisions": Multi-method matrix · Multichannel simulator · Yield test · Beverage menu · Prime cost dashboard; estado «Pending»; impacto «Estimated Impact ($/Month)». KPI "Average check pre-tax ($)", "Contribution margin per cover ($)".
 - El ES contradecía su tabla en la diferencia de -13,54 € ("pide subir más de lo que baja"): EN dice solo que, sumados los 20 platos, los precios elegidos quedan $13.54 por debajo de los actuales. Rangos 25-35% / 30% / estructura de costes / EBITDA 10-13%: «commonly cited», sin fuente.
+
+## T11 (cap. 20 + cierre, sonnet, 15-oct)
+
+- **Cierre**: encabezado «## About the Author and Terms of Use». Línea de versión (negrita): «**Version 1.0 · October 2026 · aichef.pro/en/digital-products/food-cost-menu-engineering-guide · info@aichef.pro**». Bio: «CEO of AI Chef Pro» (sin ChefBusiness Group), johnguerrero.es; aviso en cursiva: no tax, legal or accounting advice; tasas ilustrativas en celdas editables; "check with your accountant or tax advisor".
+- Cap. 20: software $1,100/año por local «before sales tax»; hojas "90-Day Calendar" y "Decisions"; bloques Measure / Cost and Classify / Apply Decisions / Measure the Effect / Review.
