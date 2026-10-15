@@ -125,7 +125,7 @@ def comprobar(md_text, docx_path, pdf_path):
     if 'Page 1' not in primera or 'Página' in txt_pdf:
         fallos.append('el pie del PDF no dice «Page N»')
     for n, pagina in enumerate(doc, 1):
-        errs, _ = G.residuo(pagina.get_text())
+        errs, _ = G.residuo(re.sub(r'\s+', ' ', pagina.get_text()))  # celdas partidas en líneas: «Ribera del\nDuero»
         if errs:
             fallos.append('PDF pág. %d: %s' % (n, errs[0]))
     doc.close()
