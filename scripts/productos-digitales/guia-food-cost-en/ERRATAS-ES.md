@@ -10,3 +10,6 @@
 | 13 | «3 + otros 3» platos sin lecturas discrepantes | solo 3 (lo dice su propia tabla) | T07 (15-oct) |
 | 14 | el objetivo del 30 % «por debajo» del rango 28-32 % | el 30 % está **dentro** del rango | T07 (15-oct) |
 | 6 | el boniato «sin merma» con 0,22 kg bruto | su tabla le da un 18 % de merma: se compra entero y se pela en cocina | T03 (15-oct) |
+| 18 | «subida media sobre el PVP actual, -5,1 %» | «variación media … -5,1 % (negativa: la carta en conjunto ya está por encima de su precio objetivo)» | T09 (15-oct) |
+| 18 | «2 decisiones de negociación, impacto 300 €» | la tabla: Negociar = 1 decisión (260 €); Revisar = 2 (300 €) | T09 (15-oct) |
+| 17 | el epígrafe «Packaging y etiquetado» repite el costeo por lote (bloques solapados del pipeline) | contenido propio de packaging/etiquetado o fusionar | T09 (15-oct) |

@@ -73,3 +73,10 @@
 - **Prix fixe**: $13.18 pre-tax = $14.50 con 10% ilustrativo; coste medio $5.63 / A $5.93 / B $5.35; food cost 42.7 / 45.0 / 40.6%; margen $7.55 / $7.25 / $7.83 → $754.93 / $725.18 / $782.93 por 100 menús; fijo $0.55 (table bread, coffee, included drink); objetivo 30%. Cursos: First courses / Main courses / Desserts.
 - **Discrepancia** (20 platos): 0 fuera = 3 (15.0%), 1 = 4, 2 = 1 (5.0%), 3 = 4, 4 = 8 (40.0%). Chuletón = «Dry-aged bone-in ribeye (17.64 oz)»; CM ponderado $8.16. El ES decía «3 + otros 3» con cero lecturas fuera: la tabla solo da 3, corregido.
 - Fuentes: qamarero → «commonly cited 28-32%»; Cucinovo (28-40% hotel/buffet) se mantiene; LeBruto/Quain/Ashley 1995 intacto («Operators bank dollars, not percentages»).
+
+## T09 (cap. 17-18, sonnet, 15-oct)
+
+- **Títulos**: cap. 17 «Batch Costing for Commissary Kitchens and Pastry» · cap. 18 «When Your Supplier Raises Prices: The Re-Costing Protocol». Tabla de cocción (hoja "Cooking Loss Test") en lb: 0.55/0.44 · 3.31/2.38 · 0.44/0.40 · 0.66/0.49 · 2.20/1.52 lb; $/lb crudo→cocinado 8.14→10.44 · 2.45→3.40 (pollo) · 6.76→7.68 · 7.48→10.12 · 1.00→1.45. Técnicas: Flat-top / Oven / Confit / Charcoal. Fórmulas de obrador en gramos (2,000 g vs 1,000 g).
+- **Decisiones del plan** ("Decisions"): Reformulate 1/$900 · Reprice 1/$210 · Redesign 2/$400 · Remove 3/$290 · Review 2/$300 · Negotiate 1/$260; total $2,360. Los «2 de negociación/$300» del ES se dicen «2 supplier review decisions, $300» (la hoja los pone en Review).
+- Platos de "By Dish" nuevos: Local cheese board · Confit artichokes with ham · Roasted tomato soup with basil · Free-range roast chicken with potatoes · Seasonal vegetable lasagna. Columnas: Plate Cost ($) · Current/Chosen Menu Price Pre-Tax ($) · Status vs. Target (On target / Above target).
+- Fuentes: CaixaBankLab → «a 2026 European industry study» (30-35% / 15-25%); INE y MAPA/Mercasa (y su cifra «34 productos») generalizados a «published price indexes» y «wholesale market quotes», sin nombrar fuente.
