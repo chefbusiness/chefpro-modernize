@@ -19,3 +19,12 @@
 | Bonus ej. 4 | 25,30 € «también por encima del precio actual» (32,70 €) | está **por debajo** | B01 (15-oct) |
 | Simulador (xlsx) | nota del «Resumen»: ningún plato es viable en delivery | 12 de 20 lo son | xlsx EN (15-oct) |
 | Precio objetivo (xlsx) | Instrucciones: precio por factor del chuletón 47 | 49,33 | xlsx EN (15-oct) |
+| 10 | «266,90 € = precios elegidos» | son los precios actuales; los elegidos suman 253,36 € | revisión final (15-oct) |
+| 17 | «8,01 € / 36,7 % de los 6 platos de margen» | son de los 20 platos | revisión final (15-oct) |
+| 6 | «columna de fecha» en «Mi Tabla de Mermas» | no existe | revisión final (15-oct) |
+| 18 | el pie de tabla contradice el texto | alinear con la tabla | revisión final (15-oct) |
+| Bonus ej. 8 | sin resolver y con el objetivo mal descrito | resolverlo (croquetas 916,77 y gambas 301,50 frente a 503,30) | revisión final (15-oct) |
+| 13 | Goal Value con «dos variables» | revisar la definición | revisión final (15-oct) |
+| 7 | manda sacar 10 artículos de la hoja «Mensual», que solo tiene totales | citar la hoja correcta | revisión final (15-oct) |
+| 19 | rendimiento del 60,5 % atribuido a la ficha | citar su origen correcto | revisión final (15-oct) |
+| Varios (xlsx) | redondeos: el texto dice 3,39 / 3,06 / 26,2 % / 5,15 y el Excel muestra 3,40 / 3,07 / 26,3 % / 5,16 | `ROUND(…,2)` en Prix Fixe E28/G28, Vinos P8, Test de Rendimiento E29, o ajustar el texto ES y EN a la vez | revisión final (15-oct) |
