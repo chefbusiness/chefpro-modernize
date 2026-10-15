@@ -2,7 +2,7 @@
 title: "AI Menu Engineering Software: How Artificial Intelligence Optimizes Restaurant Menus"
 description: "Your restaurant is bustling. Every table is full, the kitchen is humming, and guests seem happy. Yet at the end of the month, your profit margins are…"
 pubDate: 2026-03-10
-modDate: 2026-09-05
+modDate: 2026-10-15
 category: ai-chef-pro
 lang: en
 wpId: 3241
@@ -33,7 +33,7 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p>Dogs are the underperformers—items that neither sell well nor make money. These dishes tie up inventory space, complicate kitchen operations, and distract from your stars. Unless they serve a specific strategic purpose (like attracting a niche dietary group), dogs should be candidates for removal.</p>
 <p><strong>Action:</strong> Consider elimination, or if retention is necessary, reimagine the dish with different ingredients or preparation methods.</p>
 <p></p>
-<h2>The AI Revolution in Menu Engineering</h2>
+<p>Kasavana &amp; Smith is only one way to read the matrix. If you want to run it yourself and compare it with Miller, Pavesic and Goal Value on the same menu, the <a href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide">Food Cost + Menu Engineering Guide</a> does exactly that, with Excel tools that show where the four methods disagree.</p><h2>The AI Revolution in Menu Engineering</h2>
 <p>While traditional menu engineering provides valuable insights, it&#8217;s often retrospective and labor-intensive. You might analyze last quarter&#8217;s data to make decisions for next month—a delay that can cost thousands in missed opportunities. This is where AI menu engineering software transforms the game.</p>
 <p>AI-powered menu engineering doesn&#8217;t just analyze historical data—it predicts future trends, suggests real-time adjustments, and continuously optimizes your menu based on multiple variables including seasonality, ingredient costs, customer preferences, and competitive positioning.</p>
 <h3>How AI Chef Pro Automates Menu Engineering</h3>
@@ -62,7 +62,7 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p><strong>The Changes:</strong> The restaurant eliminated 18 underperforming dishes, expanded the fish taco section with three variations, and introduced dynamic pricing that adjusted based on daily market fish prices.</p>
 <p><strong>The Results:</strong> Menu size reduced by 35%, kitchen efficiency improved, food waste dropped by 30%, and profit margins increased from 6% to 11%.</p>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Staff Scheduling Kit Pro</h3><p class="mt-2 text-muted-foreground">Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.</p><a href="/en/digital-products/restaurant-schedule-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-menu-engineering-software" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Staff Scheduling Kit Pro for $19</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost + Menu Engineering Guide</h3><p class="mt-2 text-muted-foreground">Recipe costing, menu pricing and menu engineering: 20 chapters, 8 Excel tools and 12 solved exercises.</p><a href="/en/digital-products/food-cost-menu-engineering-guide?utm_source=blog&amp;utm_medium=banner&amp;utm_content=ai-menu-engineering-software" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost + Menu Engineering Guide for $59</a></aside>
 
 <h3>Case Study 3: Urban Vegan Kitchen &#8211; Austin, TX</h3>
 <p>This plant-based restaurant struggled with customer perception that vegan food should be inexpensive, leading to underpriced menu items and poor margins.</p>

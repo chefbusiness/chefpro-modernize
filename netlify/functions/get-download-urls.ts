@@ -851,6 +851,24 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'checklist-apertura': '/dl/mobile-bar-business-plan/mobile-bar-startup-checklist.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide. MISMAS claves que guia-food-cost-ingenieria-menu (las de
+  // SECTIONS de src/pages/FoodCostMenuEngineeringGuideDashboard.tsx) → los 12 ficheros EN de
+  // /dl/food-cost-menu-engineering-guide/ (SPEC guia-food-cost-en §2), y el bonus común de equivalencias EN.
+  'food-cost-menu-engineering-guide': {
+    'guia-pdf': '/dl/food-cost-menu-engineering-guide/food-cost-menu-engineering-guide.pdf',
+    'guia-docx': '/dl/food-cost-menu-engineering-guide/food-cost-menu-engineering-guide.docx',
+    'bonus-pdf': '/dl/food-cost-menu-engineering-guide/BONUS-solved-exercises.pdf',
+    'bonus-docx': '/dl/food-cost-menu-engineering-guide/BONUS-solved-exercises.docx',
+    'ficha-escandallo': '/dl/food-cost-menu-engineering-guide/recipe-cost-card.xlsx',
+    'rendimiento-mermas': '/dl/food-cost-menu-engineering-guide/yield-and-trim-loss.xlsx',
+    'precio-objetivo': '/dl/food-cost-menu-engineering-guide/menu-pricing-calculator.xlsx',
+    'matriz-multimetodo': '/dl/food-cost-menu-engineering-guide/menu-engineering-matrix.xlsx',
+    'simulador-multicanal': '/dl/food-cost-menu-engineering-guide/multichannel-repricing-simulator.xlsx',
+    'carta-bebidas': '/dl/food-cost-menu-engineering-guide/beverage-cost-menu.xlsx',
+    'cuadro-prime-cost': '/dl/food-cost-menu-engineering-guide/prime-cost-dashboard.xlsx',
+    'plan-90-dias': '/dl/food-cost-menu-engineering-guide/90-day-action-plan.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

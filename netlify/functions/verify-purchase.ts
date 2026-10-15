@@ -401,6 +401,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my business plan',
     lang: 'en',
   },
+  // Tienda EN (2026-10-15): gemelo de guia-food-cost-ingenieria-menu, producto independiente con su propio acceso
+  // (mismo patrón que mobile-bar-business-plan).
+  'food-cost-menu-engineering-guide': {
+    accessPath: '/en/digital-products/food-cost-menu-engineering-guide/access',
+    emailSubject: 'Your access to the Food Cost + Menu Engineering Guide',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to the <strong>Food Cost + Menu Engineering Guide</strong> is ready. Click the button to open your dashboard and download the guide in PDF + DOCX, the 8 Excel tools, the 12 solved exercises and the Equivalents Guide:',
+    emailCta: 'Access my guide',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

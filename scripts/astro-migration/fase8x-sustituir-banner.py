@@ -94,7 +94,11 @@ CONFIG_DIR = Path(__file__).resolve().parent / 'fase8x-config'
 BASE_URL = 'https://aichef.pro'
 
 RX_ASIDE = re.compile(r'<aside class="not-prose[^"]*">.*?utm_medium=banner.*?</aside>', re.S)
-RX_SLUG = re.compile(r'href="/([a-z0-9-]+)\?utm_source=blog')
+# Slug del banner = ÚLTIMO segmento de la landing. ES: /kit-escandallos?utm… → kit-escandallos (como siempre).
+# Tiendas de otro idioma (15-oct-2026, Food Cost + Menu Engineering Guide en el blog EN): la landing va anidada,
+# /en/digital-products/food-cost-templates?utm… → food-cost-templates. El grupo opcional no casa con un slug ES
+# (exige «xx/segmento/» delante), así que en el corpus ES el resultado es byte a byte el de antes.
+RX_SLUG = re.compile(r'href="/(?:[a-z]{2}/[a-z0-9-]+/)?([a-z0-9-]+)\?utm_source=blog')
 RX_MD_H2 = re.compile(r'^## ', re.M)
 RX_HTML_H2 = re.compile(r'<h2\b')
 RX_HTML_H3 = re.compile(r'<h3\b')

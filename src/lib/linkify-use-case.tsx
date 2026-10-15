@@ -54,6 +54,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Bar Business Plan Kit': '/en/digital-products/bar-business-plan',
   'Catering Business Plan Kit': '/en/digital-products/catering-business-plan',
   'Mobile Bar Business Plan Kit': '/en/digital-products/mobile-bar-business-plan',
+  'Food Cost + Menu Engineering Guide': '/en/digital-products/food-cost-menu-engineering-guide',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

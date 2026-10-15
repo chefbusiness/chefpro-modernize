@@ -1,0 +1,61 @@
+{
+  "producto": "guia-food-cost-ingenieria-menu",
+  "fecha": "2026-10-15",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Food Cost + Menu Engineering Guide (SPEC guia-food-cost-en D3, 15-oct-2026). El id es el del CATÁLOGO",
+    "(products-catalog.ts), que con urlByLang.en pinta la landing EN /en/digital-products/food-cost-menu-engineering-guide y $59.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto guia-food-cost-ingenieria-menu --config scripts/astro-migration/fase8x-config/guia-food-cost-ingenieria-menu-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Víctimas: en el corpus EN las víctimas son SLUGS EN de la landing (último segmento de la URL del banner).",
+    "Se sacrifica sobre todo el Staff Scheduling Kit (el banner más repetido en estos posts); nunca el Food Cost Kit Pro,",
+    "que es el gemelo de intención 'templates' y convive con la guía (intención 'method')."
+  ],
+  "nunca": [
+    "food-cost-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 6,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "ai-menu-engineering-software": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 2,
+      "parrafo": "Kasavana &amp; Smith is only one way to read the matrix. If you want to run it yourself and compare it with Miller, Pavesic and Goal Value on the same menu, the {ENLACE} does exactly that, with Excel tools that show where the four methods disagree."
+    },
+    "menu-engineering-software-complete-guide": {
+      "accion": "SUSTITUIR",
+      "victima": "ai-prompts-for-restaurants",
+      "ancla_n": 2,
+      "parrafo": "Software automates the analysis, but the judgment behind it is still yours. If you want to learn the method first, the {ENLACE} walks through recipe costing, menu pricing and four menu engineering methods with Excel tools you can run before you pay for a subscription."
+    },
+    "ai-menu-pricing-strategy": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 2,
+      "parrafo": "Before any algorithm sets a price, the plate cost has to be right. The {ENLACE} covers the four classic ways to price a dish (cost factor, target dollar margin, market price and perceived value) and shows where each one breaks."
+    },
+    "restaurant-menu-pricing-strategy-ai": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 2,
+      "parrafo": "Much of that lost profit starts with a food cost percentage calculated on the wrong number. The {ENLACE} shows how to calculate food cost on the pre-tax price, price each dish with the method that fits it and check the whole menu with menu engineering."
+    },
+    "recipe-cost-calculator-pricing-guide": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 5,
+      "parrafo": "Once every dish has its cost, the next questions are the price and what to do with the dishes that don't pay their way. The {ENLACE} takes your plate costs through four pricing methods and four menu engineering methods, dish by dish."
+    },
+    "bar-profit-margins-beverage-costing": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 4,
+      "parrafo": "If your bar shares a P&amp;L with a kitchen, the {ENLACE} treats beverage cost as a P&amp;L of its own, with the glass-versus-bottle math, cocktails costed ingredient by ingredient and targets by category, right next to food cost and prime cost."
+    }
+  }
+}

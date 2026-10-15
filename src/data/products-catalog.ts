@@ -351,11 +351,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'guia-food-cost-ingenieria-menu',
     url: '/guia-food-cost-ingenieria-menu',
     price: '€55',
-    name: { es: 'Guía Food Cost + Ingeniería de Menú', en: 'Guide: Food Cost + Menu Engineering' },
+    name: { es: 'Guía Food Cost + Ingeniería de Menú', en: 'Food Cost + Menu Engineering Guide' },
     description: {
       es: 'Escandallo, precios y rentabilidad de la carta: 20 capítulos y 8 Excel.',
-      en: 'Recipe costing, pricing and menu profitability: 20 chapters and 8 Excel tools.',
+      en: 'Recipe costing, menu pricing and menu engineering: 20 chapters, 8 Excel tools and 12 solved exercises.',
     },
+    // Tienda EN (15-oct-2026): producto propio, `food-cost-menu-engineering-guide`, $59 USD.
+    urlByLang: { en: '/en/digital-products/food-cost-menu-engineering-guide' },
+    priceByLang: { en: '$59' },
   },
   'manual-manager-restaurante': {
     id: 'manual-manager-restaurante',

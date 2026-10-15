@@ -78,7 +78,7 @@ const data: KitExcelData = {
       },
       {
         q: 'What is not included?',
-        a: 'It is a set of Excel templates, not software: no app, no POS or supplier integration, no automatic price updates and no labor costing. Menu engineering appears only as a basic step in the 30-day guide.',
+        a: 'It is a set of Excel templates, not software: no app, no POS or supplier integration, no automatic price updates and no labor costing. Menu engineering appears only as a basic step in the 30-day guide; the full method is in the Food Cost + Menu Engineering Guide.',
       },
       {
         q: "Does it work in the UK, Canada or Australia?",
@@ -295,7 +295,13 @@ const data: KitExcelData = {
     },
     {
       q: 'What is not included?',
-      a: 'It is a set of Excel templates, not software: there is no app, no POS or supplier integration, no automatic price updates, no barcode inventory and no labor costing. The templates are separate files, so a new price is copied into each cost card by hand. Menu engineering appears only as a basic step in the 30-day guide.',
+      a: 'It is a set of Excel templates, not software: there is no app, no POS or supplier integration, no automatic price updates, no barcode inventory and no labor costing. The templates are separate files, so a new price is copied into each cost card by hand. Menu engineering appears only as a basic step in the 30-day guide; the full method is in the Food Cost + Menu Engineering Guide.',
+    },
+    {
+      // Interenlazado kit ↔ guía (SPEC guia-food-cost-en D3, 15-oct-2026): el kit es la intención «calculator /
+      // templates»; la guía, la del método («menu pricing», «menu engineering»). El enlace va en el pie.
+      q: 'What is the difference between this kit and the Food Cost + Menu Engineering Guide?',
+      a: 'The kit is the toolbox: 13 templates to cost your recipes and keep food cost under control day to day. The Food Cost + Menu Engineering Guide is the method: 20 chapters on how to price your menu, run menu engineering with four methods and decide what to do with each dish, with 8 Excel tools of its own. They work together; if you have both, only the recipe cost card and the yield test overlap.',
     },
     {
       q: "Does it work in the UK, Canada or Australia?",
@@ -371,6 +377,7 @@ const data: KitExcelData = {
   footerLinks: [
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
+    { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },

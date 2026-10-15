@@ -18,6 +18,14 @@
 // El resto (Hero rojo, ContentGrid con num + lg:grid-cols-4, WhySection SIN subtítulo
 // ni pills, AuthorSection label "Autor" + 3 chips, Guarantee 3 stats fijas) es idéntico
 // en DOM para los 8: sólo cambia el copy que llega por `data`.
+//
+// IDIOMA (2026-10-15, tienda internacional EN; mismo patrón que las líneas Kits y Planes): este
+// mismo tipo sirve para las fichas de otras tiendas (astro-site/src/data/productos-<lang>/guias/
+// <slug>.ts) y la plantilla recibe `lang`. Los precios de display (`pricing.*`, `hero.ctaLabel`,
+// `stickyLabel`…) llevan su símbolo tal cual ("$59"); la moneda del JSON-LD la pone la plantilla
+// desde TIENDAS[lang].moneda (src/lib/tienda.ts). Las «constantes de línea» de arriba son el ES:
+// en otro idioma salen del diccionario de la tienda (astro-site/src/i18n/tienda/<lang>.json) y de
+// UI_GUIA en la plantilla, no de aquí.
 
 export interface GuiaData {
   /** Slug de la ruta SIN barra. Ej: 'guia-restaurante-gastronomico'. Canonical = SITE/slug. */
@@ -38,6 +46,11 @@ export interface GuiaData {
 
   /** Sólo guia-dark-kitchen = true. Default false. */
   showCompatibleApps?: boolean;
+
+  /** Opcional (2026-10-15). Sustituye el subtítulo constante del CompatibleAppsMarquee («Plantillas
+   *  Excel optimizadas para imprimir en A4…» / su versión EN) cuando el producto no cumple esa
+   *  frase. Las fichas ES no lo usan. */
+  compatSubtitle?: string;
 
   hero: {
     /** Badge ROJO (danger) del hero. */
