@@ -23,7 +23,7 @@ const SECTIONS = [
   {
     title: 'Main Guide',
     templates: [
-      { key: 'guia-pdf', icon: BookOpen, title: 'Complete Guide (PDF)', desc: '20 chapters, 94 pages, with tables built from the Excel tools.', ext: '.pdf' },
+      { key: 'guia-pdf', icon: BookOpen, title: 'Complete Guide (PDF)', desc: '20 chapters, 95 pages, with tables built from the Excel tools.', ext: '.pdf' },
       { key: 'guia-docx', icon: FileText, title: 'Complete Guide (Editable DOCX)', desc: 'The same content in an editable format to annotate and adapt.', ext: '.docx' },
     ],
   },
@@ -43,7 +43,7 @@ const SECTIONS = [
   {
     title: 'Bonus (2)',
     templates: [
-      { key: 'bonus-pdf', icon: GraduationCap, title: '12 Solved Exercises (PDF)', desc: 'The problem with its data, a step-by-step solution, a table and what the result means. 31 pages.', ext: '.pdf' },
+      { key: 'bonus-pdf', icon: GraduationCap, title: '12 Solved Exercises (PDF)', desc: 'The problem with its data, a step-by-step solution, a table and what the result means. 32 pages.', ext: '.pdf' },
       { key: 'bonus-docx', icon: FileText, title: '12 Solved Exercises (Editable DOCX)', desc: 'The same bonus in an editable format to work through with your team.', ext: '.docx' },
     ],
   },

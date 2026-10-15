@@ -109,7 +109,7 @@ const data: GuiaData = {
   seo: {
     title: 'Food Cost + Menu Engineering Guide: Menu Pricing & Food Cost % | AI Chef Pro',
     description:
-      'Menu pricing, how to calculate food cost and menu engineering, step by step: a 94-page guide, 8 Excel workbooks with live formulas and 12 solved exercises. $59.',
+      'Menu pricing, how to calculate food cost and menu engineering, step by step: a 95-page guide, 8 Excel workbooks with live formulas and 12 solved exercises. $59.',
     keywords:
       'menu pricing, restaurant menu pricing, how to calculate food cost, food cost percentage, menu engineering, menu engineering matrix, plate cost, recipe costing, recipe cost card, prime cost restaurant, beverage cost, pour cost, kasavana smith, food cost guide, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-guia-food-cost-ingenieria-menu.jpg',
@@ -125,11 +125,11 @@ const data: GuiaData = {
     description:
       'The Food Cost Kit Pro tells you what each dish costs. This guide tells you what to do with that number: what to rework, reprice, redesign or remove, dish by dish, with the math in front of you.',
     checkItems: [
-      'Complete guide in PDF + editable DOCX (20 chapters, 94 pages)',
+      'Complete guide in PDF + editable DOCX (20 chapters, 95 pages)',
       '8 Excel tools with live formulas: recipe cost card, yield and trim loss, menu pricing, menu engineering matrix, third-party delivery, beverage cost, prime cost and a 90-day plan',
       'Four menu engineering methods on the same menu, and a sheet that shows where they disagree',
       'Sales tax, VAT and GST by channel (dine-in, takeout and delivery) built into the math, for the US, UK, Canada and Australia',
-      'Bonus: 12 solved exercises, step by step (31 pages)',
+      'Bonus: 12 solved exercises, step by step (32 pages)',
     ],
     ctaLabel: 'BUY THE GUIDE — $59',
     avatarAltPrefix: 'Professional',
@@ -243,12 +243,12 @@ const data: GuiaData = {
     heading: 'Stop Pricing Your Menu by Gut Feel',
     subtitle: 'The method, the tools and the exercises to decide your menu with the numbers in front of you.',
     items: [
-      'Complete guide in PDF + DOCX (20 chapters, 94 pages)',
+      'Complete guide in PDF + DOCX (20 chapters, 95 pages)',
       '8 Excel tools with live formulas',
       'Four menu engineering methods and the sheet that shows where they disagree',
       'Dine-in, takeout and third-party delivery simulator with tax and commissions',
       'Prime cost dashboard and a 90-day action plan',
-      'Bonus: 12 solved exercises (31 pages)',
+      'Bonus: 12 solved exercises (32 pages)',
       'BONUS: US · UK · Canada · Australia Equivalents Guide',
     ],
     ctaLabel: 'YES, I WANT THE GUIDE — $59',
