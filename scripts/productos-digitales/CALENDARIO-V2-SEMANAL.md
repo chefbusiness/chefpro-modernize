@@ -646,3 +646,14 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   `emails/broadcast-guia-equivalencias-es.html` el **jueves 16-oct 08:00Z** (10:00 Madrid), fuera de la cola de 5 días
   por decisión de John («Jueves 16-oct»), entre la Guía Pastelería (14-oct) y el Kit Pastelería 2.1 (19-oct). ✅ **PROGRAMADO** el 13-oct (`70415899-ca9a-4f6d-a109-91637c607c01`, prueba a John enviada). La cola
   de producto ES no se mueve: siguiente hueco **28-nov 08:00Z**. **Revisión anual de las fichas de país: enero 2027.**
+
+### ▶️ 2026-10-15 (Claude Code en el Mac + VPS) — **Food Cost + Menu Engineering Guide (EN, $59)** — LIVE
+- Primera GUÍA de la tienda EN, duplicada de la Guía Food Cost ES (55 €). Elegida en vez de «how to open a restaurant» porque
+  la guía Casual ES es v1 (2.917 palabras, PDF de relleno). Método y trazabilidad en `scripts/productos-digitales/guia-food-cost-en/`.
+- **LIVE el 15-oct (merge `71eb5f16` del #131).** Stripe `plink_1UQo1e4CcdRGidmEGfzJgiN8` (`buy.stripe.com/8x26oA3Kc78ibnpa3r6oo1N`,
+  **$59 USD**, impuesto automático, redirección comprobada con la CLI; el primer link salió en EUR y quedó desactivado) + env
+  `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_MENU_ENGINEERING_GUIDE` + mapa de 65 links. Gates LIVE: `--only` 0 fallos · completo
+  **65 productos / 904 entregables / 0** · tienda · robots · ES byte a byte 28/29 (preview). Sitemap reenviado. **Tienda EN: 14 productos.**
+- Correo EN **29-nov 14:00Z**: borrador `9848e616-82b2-4530-af65-70593ecc63fd` («Lanzamiento Food Cost + Menu Engineering Guide (EN) — 29-nov»,
+  prueba a John enviada) + routine `trig_01KYPEeGdcVJbsnb8qCXbFrV` (30-oct 15:07Z). Plantilla
+  `broadcast-food-cost-menu-engineering-guide-lanzamiento-en.html`. **Siguiente hueco EN: 4-dic 14:00Z.**

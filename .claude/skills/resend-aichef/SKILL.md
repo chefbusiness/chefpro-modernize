@@ -50,6 +50,7 @@ python3 scripts/productos-digitales/emails/resend-broadcast.py \
 ```
 
 `POST /broadcasts` admite `segment_id`, `send: true` y `scheduled_at` (ISO 8601 o «in 1 hour»).
+**Hueco a más de 30 días** (Resend no programa más allá): `--borrador` (mismas guardas) crea el broadcast en draft y una routine de un solo disparo lo programa a ≤ 30 días (molde: `trig_01KYPEeGdcVJbsnb8qCXbFrV`, prompt con «NUNCA send-broadcast sin scheduledAt»).
 El script aborta si quedan tokens `__PAGINAS__`, si falta el bloque de baja, si algún enlace o
 imagen `https://aichef.pro/…` no responde 200, o si la hora está en el pasado.
 

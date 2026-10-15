@@ -1,15 +1,16 @@
 # Handoff — 15-oct-2026 (sesión Claude Code) — Food Cost + Menu Engineering Guide (EN), producto 14 de la tienda EN
 
-## 0. Lo primero al retomar
-1. **Falta solo el Payment Link de Stripe (John)**: precio propuesto **$59** (la guía ES está a **55 €**, no a 65).
-   Env var `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_MENU_ENGINEERING_GUIDE` (scope builds) + `sync-payment-links.py`.
-   Mientras no exista, el CTA cae a `#comprar` y `gate-flujo-postpago` marca 2-3 fallos esperados.
-2. Con el link: redeploy del preview → `gate-flujo-postpago.py --base https://deploy-preview-131--aichefpro.netlify.app --only food-cost-menu-engineering-guide --crypto-products all --crypto-exclude pro-prompts-ebook`
-   → merge del **PR #131** → el mismo gate LIVE (sin `--base`) → GSC: reenviar sitemap → correo EN.
-3. **Correo EN**: hueco **29-nov 14:00Z** (cola EN). Borrador + routine como el Mobile Bar (skill `resend-aichef`); no
-   programar antes de que la landing y los /dl respondan 200 en producción.
+## 0. Estado final: LIVE (15-oct, merge `71eb5f16` del PR #131) · Tienda EN: 14 productos
+- Stripe `plink_1UQo1e4CcdRGidmEGfzJgiN8` (`buy.stripe.com/8x26oA3Kc78ibnpa3r6oo1N`), **$59 USD**, impuesto automático, redirección a
+  `/access` comprobada con la CLI (`--live`). El primer link salió en **EUR** (`plink_1UQkH8…`, desactivado): en los paquetes Stripe EN
+  avisar de cambiar la moneda. Env `VITE_STRIPE_PAYMENT_LINK_FOOD_COST_MENU_ENGINEERING_GUIDE` (builds, all) + mapa de 65 links.
+- Gates LIVE: `gate-flujo-postpago --only` 0 fallos / 0 avisos · completo **65 productos / 904 entregables / 0** · `tienda-gate` · `robots-gate`.
+  ES byte a byte 28/29 contra el preview. Sitemap reenviado en GSC.
+- **Correo EN 29-nov 14:00Z**: borrador `9848e616-82b2-4530-af65-70593ecc63fd` (prueba a John enviada) + routine
+  `trig_01KYPEeGdcVJbsnb8qCXbFrV` (30-oct 15:07Z) → **al retomar después del 30-oct, mirar su `list_runs`**. Siguiente hueco EN: **4-dic 14:00Z**.
+- `resend-broadcast.py` gana `--borrador` (crea el draft con las mismas guardas, para huecos a más de 30 días).
 
-## 1. Qué se hizo (rama `feat/food-cost-guide-en`, PR #131 en borrador)
+## 1. Qué se hizo (PR #131, mergeado)
 | Pieza | Estado |
 |---|---|
 | Guía EN (20 caps.) | `food-cost-menu-engineering-guide.docx/.pdf` · 95 págs. · 45.265 palabras · docx = md palabra a palabra |

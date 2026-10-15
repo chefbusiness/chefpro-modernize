@@ -127,6 +127,8 @@ def main():
     ap.add_argument('--scheduled-at', default=None, help='ISO 8601 UTC, p. ej. 2026-09-04T08:00:00Z')
     ap.add_argument('--test', default=None, help='email de prueba (envío transaccional, no programa)')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--borrador', action='store_true',
+                    help='crea el broadcast SIN enviarlo ni programarlo (hueco a más de 30 días: lo programa una routine)')
     a = ap.parse_args()
 
     html = open(a.html, encoding='utf-8').read()
@@ -154,6 +156,19 @@ def main():
         print('prueba →', st, r.get('id') or r)
         return
 
+    if a.borrador:
+        body = {'segment_id': a.segment, 'from': a.from_addr, 'reply_to': REPLY_TO, 'subject': a.subject,
+                'html': html}
+        if a.name:
+            body['name'] = a.name
+        st, r = http('POST', '/broadcasts', key, body)
+        print('borrador →', st, json.dumps(r, ensure_ascii=False))
+        if st not in (200, 201):
+            sys.exit(1)
+        st2, r2 = http('GET', '/broadcasts/' + r.get('id'), key)
+        print('estado →', st2, {k: r2.get(k) for k in ('id', 'name', 'status', 'scheduled_at', 'segment_id')})
+        print('Recuerda: una routine tiene que programarlo (send + scheduled_at) a ≤ 30 días del hueco.')
+        return
     if not a.scheduled_at:
         sys.exit('sin --scheduled-at no se programa nada (usa --dry-run o --test)')
     body = {'segment_id': a.segment, 'from': a.from_addr, 'reply_to': REPLY_TO, 'subject': a.subject,
