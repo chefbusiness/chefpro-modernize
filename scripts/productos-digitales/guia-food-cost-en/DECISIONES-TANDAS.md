@@ -24,3 +24,12 @@
   (limpieza y menaje).
 - **Para el xlsx**: guardar cantidades y precios **sin redondear** (conversión exacta) para que los importes de línea
   sean idénticos a los del ES; el texto avisa de que multiplicar a mano las cifras redondeadas puede variar céntimos.
+
+## T08 (cap. 15-16, opus, 15-oct)
+
+- **Títulos**: cap. 15 «Multichannel: Dine-In, Takeout and Third-Party Delivery» · cap. 16 «Beverage Cost: The Bar as a P&L of Its Own». Canales: Dine-in / Takeout / Third-party delivery. «Parámetros» → "Inputs", «Resumen» → "Summary", «Resumen Bodega» → "Beverage Summary".
+- **Croquetas**: «the croquettes» (coste $2.10, carta $8.60): 24.4% dine-in, 46.5% delivery, precio necesario **$10.00 pre-tax**, techo **$11.60**. Packaging $1.75/pedido ÷ 2.5 = $0.70; comisión 30%; objetivos 30/30/40%. Carta de **20 platos**: 16 viables en sala, 12 en delivery, 8 fuera (el ES decía «de los 16… los otros 8»: corregido).
+- **Comisiones de plataforma**: sin Glovo/Uber/Just Eat/Deliveroo ni fuente qamarero ni «+ IVA». La tabla de 4 filas pasa a **tipos de contrato** como «working examples» del guide: Zone-priced plan (15-35%, ~$39/mes) · Tiered plan (30/25/15-20%) · Marketplace listing (13% / 25-35% / $0.30 por pedido) · Volume plan (30%, 25% desde 500 pedidos/mes, $50/mes). **El xlsx EN ("Inputs") debe llevar esas mismas 4 filas**. Apps citadas: US DoorDash, Uber Eats, Grubhub; UK Deliveroo, Just Eat.
+- **Bebidas**: «bodega» → «the bar». Estudio CaixaBankLab/elBulli → «a 2026 European industry study» (28% / 34.5%, mix 70/30); qamarero → «another industry source»; getbackbar.com y purimax.com se mantienen. «Combinados» → **spirits and highballs (21.6%)**, cócteles 19.7% (el ES decía que 21.6% estaba bajo el 20%: corregido).
+- **Unidades (D8)**: barril «30 L keg» (7.93 gal; 120 pours de 8.45 fl oz / 60 de 16.91 fl oz); tercio y lata «330 ml, 11.16 fl oz»; agua «500 ml, 16.91 fl oz»; zumo de naranja **$0.64 por lb, 1.81 servings por lb**, $0.35 por servicio. Copa: 750 ml ÷ 5 = 150 ml = 5.07 fl oz; pour US 1.5 fl oz; UK 25/35 ml destilado, 125/175 ml vino.
+- **Vinos**: House red (young Tempranillo) · Rioja Crianza · Ribera del Duero Roble · Rueda Verdejo · Rias Baixas Albariño (sin tilde en Rias) · Cava Brut Nature · Navarra Rosé · Pedro Ximénez dessert wine.
