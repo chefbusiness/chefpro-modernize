@@ -1413,6 +1413,9 @@ def cierre(guia):
 # --------------------------------------------------------------------------
 GOLD = '#B8860B'
 DARK = '#1A1A1A'
+# Rótulo del número de página en el pie del PDF. Las ediciones en otro idioma lo cambian
+# antes de maquetar (guia-food-cost-en/render_en.py pone 'Page'); en ES no cambia nada.
+ETIQUETA_PAGINA = 'Página'
 
 # RT-18 (2026-08-29) — DEJADO POR ESCRITO, que es lo que faltaba: las fuentes
 # del PDF son las Type-1 base de reportlab (Helvetica, Helvetica-Bold,
@@ -1773,7 +1776,7 @@ def construir_pdf(bloques, salida_pdf, meta):
         canv.setFont('Helvetica', 8)
         canv.setFillColor(colors.HexColor('#888888'))
         canv.drawString(2 * cm, alto - 1.3 * cm, meta['cabecera'])
-        canv.drawRightString(ancho - 2 * cm, 1.2 * cm, f'Página {doc_.page}')
+        canv.drawRightString(ancho - 2 * cm, 1.2 * cm, f'{ETIQUETA_PAGINA} {doc_.page}')
         canv.drawString(2 * cm, 1.2 * cm, meta['pie'])
         canv.setStrokeColor(colors.HexColor('#DDDDDD'))
         canv.line(2 * cm, alto - 1.5 * cm, ancho - 2 * cm, alto - 1.5 * cm)
