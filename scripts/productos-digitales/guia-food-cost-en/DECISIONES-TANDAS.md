@@ -104,3 +104,9 @@
 - **Tabla ej. 5** (8 vinos × 6 col.): Wine · Bottle Menu Price Pre-Tax · Illustrative Sales Tax (10%) · Guest Pays With Tax, Any Channel (cifras del ES con 10%: 14.96…30.03) · Delivery App Commission (30%) · You Keep on Delivery, Pre-Tax (9.52 · 13.37 · 15.26 · 10.15 · 15.89 · 12.74 · 8.89 · 19.11). La columna del 21% español desaparece (avisos j-cifras-fiscal intencionados).
 - **UK/AU sin símbolo**: botella UK impresa 16.32 (÷1.20 = 13.60); lata de cola UK 2.76 → neto 2.30 en sala y para llevar (refrescos fuera del tipo cero; coste 0.55 = 23.9%; tratarla como zero-rated da 19.9% y 0.46 de VAT ajeno). AU: 14.96 lleva 1.36 de GST (1/11), neto 13.60. Matriz del simulador: US/CA 0%, UK 20% (0% solo en comida fría zero-rated), AU 10%.
 - **Ej. 6-7**: nombres de plato de T07 (pollo = «Free-range roast chicken with potatoes»; ojo, la tabla de T06 dice «Roast free-range chicken…»: unificar en la revisión). Columna «Readings Off» (T07); diagnósticos en «dollar margin».
+
+## B03 (bonus ej. 8-12 + cierre, sonnet, 15-oct)
+
+- Ej. 9: comisión 30% «inside the 15% to 35% range commonly cited» (qamarero/Glovo/IVA quitados; envase $1.35-2.15, descuentos 20-30%, +2 puntos intactos, sin fuente). Hojas "Menu" y "Summary" del simulador; «Viable?» Yes / No: exclude or rework. Ej. 10: copa 150 ml = 5.07 fl oz; 8 vinos de T08; rangos de getbackbar.com/purimax.com como «US industry aggregate».
+- Ej. 11: SS 33% = «employer payroll taxes and benefits» (modelo, sustituible); CaixaBankLab → «a 2026 European industry study»; Toast intacto. Ej. 12: $13.18 pre-tax = $14.50 con 10% ilustrativo; margen mes con márgenes sin redondear (nota de céntimos). Cierre = T11 literal.
+- Fuente ES inconsistente solo por redondeo: ej. 11 feb (32.5+35.6=68.1 vs 68.0) y jul (62.3 vs 62.2); ej. 10 PX (11.52 de coste/botella vs margen 15.80). Aviso de gate [d-aviso] l.228 = «Spain» del cierre T11, intencionado.
