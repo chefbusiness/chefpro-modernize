@@ -30,10 +30,11 @@ MODOS
     marcado con el atributo data-lang-es, p. ej. «¿Hablas español?»); sin caracteres no
     latinos (CJK, cirílico, hangul, árabe, hebreo, tailandés). Gate y dashboard: noindex.
 
-  --es-identico --base <preview> — las 15 landings ES de las plantillas con `lang`: las 5 de
+  --es-identico --base <preview> — las 29 landings ES de las plantillas con `lang`: las 5 de
     KitExcel (/kit-escandallos, /pack-appcc, /kit-inventario, /kit-gestion-personal,
-    /kit-plan-financiero) y las 10 de PlanNegocio (/plan-negocio-*, /plan-chef-privado-*,
-    /plan-catering-*; desde el 4-oct-2026) del preview contra https://aichef.pro, normalizando los hashes
+    /kit-plan-financiero), las 10 de PlanNegocio (/plan-negocio-*, /plan-chef-privado-*,
+    /plan-catering-*; desde el 4-oct-2026) y las 14 de GuiaLandingPage (/guia-*, /manual-*; desde el
+    15-oct-2026) del preview contra https://aichef.pro, normalizando los hashes
     de /_astro/*.js|css, el id de scope de Astro (data-astro-cid-*) y el host del preview.
     Sale 1 ante cualquier diferencia y enseña el contexto de la primera.
     --esperadas <ruta>[,<ruta>] (p. ej. /kit-escandallos en un PR que cambia ese producto):
@@ -76,7 +77,14 @@ PLANES_ES = ['/plan-negocio-bar-restaurante', '/plan-negocio-tapas-bar', '/plan-
              '/plan-negocio-panaderia', '/plan-negocio-food-truck', '/plan-negocio-cocteleria-eventos',
              '/plan-negocio-parrillero-asador-eventos', '/plan-negocio-paellero-eventos',
              '/plan-chef-privado-showcooking-eventos', '/plan-catering-tematico-eventos']
-LANDINGS_ES = KITEXCEL_ES + PLANES_ES
+# GuiaLandingPage recibe `lang` desde el 15-oct-2026 (Food Cost + Menu Engineering Guide EN): sus 14
+# landings ES (12 guías + 2 manuales) tienen que seguir byte a byte iguales, igual que las de arriba.
+GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia-dark-kitchen',
+            '/guia-food-cost-ingenieria-menu', '/guia-panaderia-obrador', '/guia-pasteleria-obrador',
+            '/guia-restaurante-casual', '/guia-restaurante-gastronomico', '/guia-restaurante-japones',
+            '/guia-restaurante-mexicano', '/guia-restaurante-nikkei', '/guia-restaurante-peruano',
+            '/manual-chef-ejecutivo', '/manual-manager-restaurante']
+LANDINGS_ES = KITEXCEL_ES + PLANES_ES + GUIAS_ES
 
 errores: list[str] = []
 
@@ -538,7 +546,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
     ap.add_argument('--base', help='URL del deploy a comprobar (preview o producción)')
     ap.add_argument('--es-identico', action='store_true',
-                    help='compara las 15 landings ES (5 KitExcel + 10 PlanNegocio) del --base contra producción')
+                    help='compara las 29 landings ES (5 KitExcel + 10 PlanNegocio + 14 Guía) del --base contra producción')
     ap.add_argument('--esperadas', default='',
                     help='con --es-identico: rutas (separadas por comas, p. ej. /kit-escandallos) '
                          'cuyo cambio es el del PR; imprime su diff de texto en vez de fallar')

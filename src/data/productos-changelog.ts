@@ -748,6 +748,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-15): Food Cost + Menu Engineering Guide, edición inglesa (contenido 1.0) de la
+  // guia-food-cost-ingenieria-menu (SPEC guia-food-cost-en). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'food-cost-menu-engineering-guide': {
+    version: '1.0',
+    updated: '2026-10-15',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-15',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the guide, set up for the US with notes for the UK, Canada and Australia: 20 chapters in PDF and editable DOCX to cost recipes, price the menu and decide what to do with every dish.',
+          '8 Excel tools with live formulas: recipe cost card, yield and trim loss, menu pricing calculator, menu engineering matrix, multichannel repricing simulator, beverage menu and beverage cost, prime cost dashboard and a 90-day action plan.',
+          'Tax rates live in editable cells and ship at 0%, because US menu prices are pre-tax: enter 20% for UK VAT or 10% for Australian GST to see the printed price including tax. The guide explains when the tax on your purchases is a cost and when you reclaim it.',
+          'Examples in US units (lb, oz, fl oz), with bottles in milliliters as on the label; no currency symbol in the workbooks, so you type amounts in your own currency, and every sheet set up to print on US Letter paper.',
+          'Bonus: 12 solved exercises step by step, with the same example dishes as the tools, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

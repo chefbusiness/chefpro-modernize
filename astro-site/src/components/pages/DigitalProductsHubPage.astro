@@ -61,6 +61,26 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Food Cost + Menu Engineering Guide (15-oct-2026, primera guía EN): el más nuevo → 1; Mobile Bar, Catering, Bar,
+  // Restaurant, Bakery, Food Truck y Coffee Shop pasan a 2-8. Es la MISMA tarjeta que ya estaba como «Coming soon in
+  // English» (más abajo, entre los manuales): se sube y su copy pasa a describir la edición EN (impuesto por canal para
+  // EE. UU., Reino Unido, Canadá y Australia, no «VAT by channel» a secas). Imagen: la del hero ES, sin texto.
+  {
+    name: 'Food Cost + Menu Engineering Guide',
+    slug: '/guia-food-cost-ingenieria-menu',
+    description: 'How to calculate food cost, price your menu and run menu engineering in a restaurant that is already open: sales tax, VAT and GST by channel, third-party delivery, drinks and prime cost. 20 chapters + 8 Excel tools with live formulas.',
+    features: [
+      '20 chapters + 8 Excel tools',
+      '4 cross-checked menu engineering methods',
+      'Sales tax, VAT and GST by channel (US, UK, CA, AU)',
+      'Bonus: 12 solved exercises',
+    ],
+    iconName: 'Calculator',
+    image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
+  },
   // Mobile Bar Business Plan Kit (13-oct-2026, quinta tanda de planes EN): el más nuevo → 1; Catering, Bar, Restaurant,
   // Bakery, Food Truck y Coffee Shop pasan a 2-7. Sustituye a la tarjeta vieja «Business Plan: Event Bartending / Mobile
   // Bar», que describía el kit español (9 entregables, 96 proveedores, 71 trámites en España). Imagen: la portada sin
@@ -395,22 +415,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-green-500/20 text-green-400',
     tags: ['pdf', 'excel', 'templates', 'manuals', 'management', 'restaurant', 'bar', 'cafe', 'hotel', 'catering'],
-  },
-  {
-    name: 'Food Cost + Menu Engineering Guide',
-    slug: '/guia-food-cost-ingenieria-menu',
-    description: 'A complete method to cost your recipes, set prices and shape your menu: VAT by channel, delivery, drinks and prime cost. 20 chapters + 8 Excel files with live formulas.',
-    features: [
-      '20 chapters + 8 Excel tools',
-      '4 cross-checked menu engineering methods',
-      'VAT by channel: dine-in, takeout and delivery',
-      'Bonus: 12 solved exercises',
-    ],
-    iconName: 'Calculator',
-    image: '/lovable-uploads/ai-gallery/guia-foodcost-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-green-500/20 text-green-400',
-    tags: ['pdf', 'excel', 'templates', 'guides', 'costs', 'management', 'restaurant', 'bar', 'pastry', 'dark-kitchen', 'hotel', 'catering'],
   },
   {
     name: 'How to Open a Fine-Dining Restaurant',

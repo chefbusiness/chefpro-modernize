@@ -2,7 +2,7 @@
 title: "Bar Profit Margins: Complete Guide to Beverage Costing and Pricing"
 description: "Bars rank among the most profitable concepts in the hospitality industry. While traditional restaurants typically struggle to achieve net profit margins of…"
 pubDate: 2026-03-31
-modDate: 2026-08-31
+modDate: 2026-10-15
 category: ai-in-gastronomy
 lang: en
 wpId: 3325
@@ -156,7 +156,7 @@ faq:
 <p>Beyond individual item calculations, successful bars track overall pour cost weekly using this formula:</p>
 <p><strong>Weekly Pour Cost = (Beginning Inventory + Purchases &#8211; Ending Inventory) ÷ Total Beverage Sales</strong></p>
 <p>This aggregate method reveals patterns over time. A pour cost creeping from 20% to 24% over several weeks signals problems—either in portioning, theft, or pricing—that require immediate attention.</p>
-<h2>Pricing Strategies for Maximum Bar Profitability</h2>
+<p>If your bar shares a P&amp;L with a kitchen, the <a href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide">Food Cost + Menu Engineering Guide</a> treats beverage cost as a P&amp;L of its own, with the glass-versus-bottle math, cocktails costed ingredient by ingredient and targets by category, right next to food cost and prime cost.</p><h2>Pricing Strategies for Maximum Bar Profitability</h2>
 <p>Setting drink prices isn&#8217;t about arbitrarily marking up products—it&#8217;s a strategic decision that balances competitive positioning, target margins, and customer value perception. Here are the primary pricing strategies employed by profitable bars.</p>
 <h3>Cost-Plus Pricing: The Standard 4-5x Markup</h3>
 <p>The most common approach in the bar industry is <strong>cost-plus pricing</strong>, typically applying a 4-5x markup on spirit costs. This method ensures consistent margins across your menu.</p>
@@ -235,7 +235,7 @@ faq:
 <li>Heavy pours to increase tips</li>
 </ul>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Staff Scheduling Kit Pro</h3><p class="mt-2 text-muted-foreground">Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.</p><a href="/en/digital-products/restaurant-schedule-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Staff Scheduling Kit Pro for $19</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost + Menu Engineering Guide</h3><p class="mt-2 text-muted-foreground">Recipe costing, menu pricing and menu engineering: 20 chapters, 8 Excel tools and 12 solved exercises.</p><a href="/en/digital-products/food-cost-menu-engineering-guide?utm_source=blog&amp;utm_medium=banner&amp;utm_content=bar-profit-margins-beverage-costing" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost + Menu Engineering Guide for $59</a></aside>
 
 <h2>Common Margin Killers: What&#8217;s Dragging Down Your Bar&#8217;s Profitability</h2>
 <p>Beyond over-pouring, bars face multiple threats to their profit margins. Identifying and addressing these silent profit killers is essential for maintaining a healthy bottom line.</p>

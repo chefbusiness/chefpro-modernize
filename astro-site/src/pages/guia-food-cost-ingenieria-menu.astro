@@ -2,16 +2,20 @@
 // /guia-food-cost-ingenieria-menu — LÍNEA GUÍAS, producto 45 (2026-09-03).
 // Thin wrapper: pasa el objeto data al template GuiaLandingPage y el SEO a BaseLayout.
 //
-// SOLO ES: producto de fiscalidad española y sin variantes de idioma → locales={['es']}
-// (BaseLayout emite hreflang es + x-default y nada más). Canonical:
-// https://aichef.pro/guia-food-cost-ingenieria-menu. Patrón calcado de
+// hreflang: alternatesFamilia('guia-food-cost-ingenieria-menu') (lib/tienda.ts). Con el gemelo EN vivo
+// (Food Cost + Menu Engineering Guide, /en/digital-products/food-cost-menu-engineering-guide, 15-oct-2026)
+// emite es + en + x-default recíprocos; si EN volviera a vivo:false, devuelve locales ['es'] sin
+// alternates y el HTML sería el de antes (hreflang es + x-default). Patrón = plan-negocio-cocteleria-eventos.astro.
+// Canonical: https://aichef.pro/guia-food-cost-ingenieria-menu. Patrón calcado de
 // guia-restaurante-gastronomico.astro; a diferencia de las 8 guías anteriores, esta
 // landing NACE en Astro (no hay página SPA de la que portarla).
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GuiaLandingPage from '../components/pages/GuiaLandingPage.astro';
 import data from '../data/productos/guias/guia-food-cost-ingenieria-menu';
+import { alternatesFamilia } from '../lib/tienda';
 
 const lang = 'es';
+const hreflang = alternatesFamilia('guia-food-cost-ingenieria-menu');
 
 // DINERO: acceso ESTÁTICO a la env var (nombre EXACTO, mismo fallback que la familia)
 // para que Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se
@@ -31,7 +35,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GUIA_FOOD_COST || '#
   keywords={data.seo.keywords}
   lang={lang}
   basePath={`/${data.slug}`}
-  locales={['es']}
+  locales={hreflang.locales}
+  alternates={hreflang.alternates}
   ogImage={data.seo.ogImage}
 >
   <GuiaLandingPage data={data} stripeLink={stripeLink} />

@@ -2,7 +2,7 @@
 title: "Recipe Cost Calculator: How to Price Every Dish for Maximum Profit"
 description: "The success of any restaurant hinges on one fundamental truth: you cannot manage what you cannot measure. Yet shockingly, most restaurant operators cannot…"
 pubDate: 2026-03-28
-modDate: 2026-08-31
+modDate: 2026-10-15
 category: ai-in-gastronomy
 lang: en
 wpId: 3313
@@ -272,7 +272,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 </table></div>
 <p>With a food cost per portion of $7.32, you can now determine appropriate <a href="https://aichef.pro/en/blog/ai-menu-pricing-strategy">menu pricing</a> based on your target food cost percentage.</p>
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Staff Scheduling Kit Pro</h3><p class="mt-2 text-muted-foreground">Shift schedules, overtime, labor cost, onboarding, PTO and team performance reviews.</p><a href="/en/digital-products/restaurant-schedule-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=recipe-cost-calculator-pricing-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Staff Scheduling Kit Pro for $19</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost + Menu Engineering Guide</h3><p class="mt-2 text-muted-foreground">Recipe costing, menu pricing and menu engineering: 20 chapters, 8 Excel tools and 12 solved exercises.</p><a href="/en/digital-products/food-cost-menu-engineering-guide?utm_source=blog&amp;utm_medium=banner&amp;utm_content=recipe-cost-calculator-pricing-guide" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost + Menu Engineering Guide for $59</a></aside>
 
 <h2>Recipe Cost Calculator Formula</h2>
 <p>Understanding the core formulas enables you to make strategic pricing decisions and analyze menu profitability with confidence.</p>
@@ -360,7 +360,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <li><strong>Perform menu engineering analysis</strong> to optimize profitability across the entire menu</li>
 </ul>
 <p>The AI Chef Member plan provides 10,000 credits per month—enough to cost out your signature dishes and understand the platform&#8217;s value before committing to a premium plan. For professional chefs and restaurant owners serious about profitability, AI Chef Pro represents the most comprehensive and accessible solution available.</p>
-<h2>How to Use Recipe Costing to Set Menu Prices</h2>
+<p>Once every dish has its cost, the next questions are the price and what to do with the dishes that don't pay their way. The <a href="https://aichef.pro/en/digital-products/food-cost-menu-engineering-guide">Food Cost + Menu Engineering Guide</a> takes your plate costs through four pricing methods and four menu engineering methods, dish by dish.</p><h2>How to Use Recipe Costing to Set Menu Prices</h2>
 <p>Knowing your food costs is only half the battle. Applying this knowledge strategically to menu pricing requires understanding industry benchmarks, pricing methodologies, and when to deviate from standard practices.</p>
 <h3>Target Food Cost Percentages by Dish Type</h3>
 <p>Different menu categories have different acceptable food cost ranges based on typical preparation complexity, perceived value, and competitive positioning:</p>
