@@ -83,3 +83,14 @@
   setup and workers' comp (optional in Texas)» (§8-bis P6; nada más sin research). Turnos Semanales A35 (Kit de Tareas, 12 €) → «your daily task checklists».
 - T08: «plan-financiero-3-anos-pasteleria» "Staff": nombres de puesto de la tabla de 6 grupos (F15:F20) iguales que la tabla 2 de
   T08; áreas en el mismo vocabulario (PRODUCTION KITCHEN / FRONT COUNTER / ADMINISTRATION).
+- T06: «Proveedores» (→ "Suppliers") de equipment-and-suppliers-checklist.xlsx TIENE QUE CUADRAR con la tabla del cap. 11
+  (DECISIONES §9 T06): B7:B15 empresa, C7:C15 «What it sells you», D7:D15 URL, en este orden: AUI Fine Foods · Puratos ·
+  BakeMark · Barry Callebaut (Callebaut) · Valrhona · Plugrà (Dairy Farmers of America) · King Arthur Baking · Sysco ·
+  WebstaurantStore; H (pedido mínimo 300) e I (plazo 7) intactos. E7:E15 (PS-87…PS-95) → «Official website, Oct 2026» (fuera
+  ids PS-*); L7:L15 («por qué está en la lista») con los hechos de research §16 [T06] (p. ej. «Headquartered in Gaithersburg,
+  Maryland»; «Chocolate Academy courses in Chicago»; «82% butterfat; find-a-distributor link»; «Tax ID or EIN to open an
+  account»). A3, G16, A26, Instrucciones A10 y Contador C43: «checked October 2026» y SIN «los 22 sin verificar del
+  research»; A27 (Hosply) → «Need more names? Start with each brand's distributor locator (Plugrà, Callebaut, AUI Fine Foods)
+  and ask your broadline sales rep»; A28 = supuestos (pedido mínimo, plazo, condiciones), no condiciones de estas empresas.
+  Contador A47 (comunicación al registro sanitario, licencia, APPCC, formación) → «the food permit, the food safety plan with
+  a CFPM as person in charge, and the training log are counted in permits-and-licenses-checklist.xlsx».

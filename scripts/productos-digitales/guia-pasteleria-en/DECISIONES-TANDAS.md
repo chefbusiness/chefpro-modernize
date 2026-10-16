@@ -389,6 +389,47 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   prueba documental = **sales records** bajo el tope en $ del estado. Etiquetas literales TX/NY/FL de research §2 (CA sin
   frase: PDF no abierto). Remite a **bonus decision 10** para el salto a cocina con licencia.
 ### T06
+- **Proveedores (cap. 11) = hoja "Suppliers" de equipment-and-suppliers-checklist.xlsx, MISMO orden y textos** (B7:D15;
+  pedido mínimo **$300** y plazo **7** días = supuestos del caso intactos; acumulado **$2,700**). Nº · categoría · empresa ·
+  URL · «What it sells you»: 1 specialty pastry ingredients · **AUI Fine Foods** · https://www.auifinefoods.com/ ·
+  «Specialty pastry ingredients, decorations and frozen desserts» · 2 bakery ingredients · **Puratos** ·
+  https://www.puratos.us/ · «Sourdough, improvers, mixes, fillings and chocolate» · 3 bakery ingredients (manufacturer and
+  distributor) · **BakeMark** · https://bakemark.com/ · «Bakery mixes, fillings, icings and glazes» · 4 chocolate ·
+  **Barry Callebaut (Callebaut)** · https://www.callebaut.com/en-US · «Chocolate and couverture» · 5 chocolate · **Valrhona** ·
+  https://valrhona.us/ · «Premium chocolate and training» · 6 butter · **Plugrà (Dairy Farmers of America)** ·
+  https://www.plugra.com/ · «European-style butter, 82% butterfat» · 7 flour · **King Arthur Baking** ·
+  https://www.kingarthurbaking.com/pro · «Bakery flour» · 8 broadline distributor · **Sysco** · https://www.sysco.com/ ·
+  «Broadline foodservice distribution» · 9 packaging · **WebstaurantStore** · https://www.webstaurantstore.com/ ·
+  «Packaging: cake and bakery boxes». Siete categorías. Fuera Sosa, Debic, Elle & Vire, Ylla, Coromina, Cospan (sin
+  respaldo US) y **Hosply** (su párrafo pasa a «empieza por los localizadores de distribuidor de las marcas»). Hechos en
+  research §16 [T06]. «Plugrà» se escribe con acento GRAVE (así la marca; el gate no lo marca).
+- **Mantequilla (cap. 11)**: la cotización UE desaparece → **CME spot, Grade AA, $1.3650/lb (≈ $3.01/kg) el 16-oct-2026,
+  media semanal $1.3110 (+$0.0230)** y **PPI de agosto −32.5 % interanual** (USDA AMS *Dairy Market News*, Vol. 93, Report
+  42). Mantequilla de laminado de referencia = **Plugrà 82 %** (el 84 % de Elle & Vire se va). Cacao: sin cifra, como el ES.
+- **"Training Log" (cap. 10) copiado del libro de permisos ya escrito**: P1 Head Pastry Chef · KITCHEN · «Certified food
+  protection manager (CFPM) exam» · P2 Pastry Cook · «Food handler card + allergen awareness» · P3 Bakery Assistant · «Food
+  handler card» · P4/P5 Counter Associate A/B · COUNTER · «Food handler card + allergens at the counter»; 6 h cada uno
+  (supuesto); 5 con formación, 0 vencidas; **730 días = criterio de la casa** (la tarjeta de CA dura 3 años por ley). Las
+  áreas siguen **KITCHEN / COUNTER** como en ese libro (la regla PRODUCTION KITCHEN / FRONT COUNTER de T08 es de los libros de
+  plantilla y plan financiero): si se quiere un solo vocabulario, cambiar los dos a la vez.
+- **Tabla P5 del cap. 10** = filas C37:J42 del libro de permisos: Owner ×5 y **Attorney or CPA** (timekeeping); plazos 5 · 5
+  · 20 · 10 · 5 · 5; $120 · Get a quote · **$800** · **$240** · Get a quote · Get a quote; «Varies by state?» **Yes** solo en
+  el permiso (los «No» del xlsx se conservan para que sigan siendo 8 «Yes» en P1-P6, T05); el pie aclara que el paso de
+  formación es igual en todas partes y que la tarjeta es regla estatal.
+- **Carnet de manipulador → al revés que en España**: en EE. UU. **sí** hay tarjeta, pero estatal (CA en 30 días, válida 3
+  años, §113948; TX curso acreditado y la ciudad no puede exigir la suya, §438.046(c); NY sin tarjeta estatal, NYC Food
+  Protection Certificate; FL: FDACS/DBPR). Lo federal-modelo: **CFPM como person in charge (2-102.12)** + formación con
+  alergias según funciones (2-103.11(O)). Las demás tandas (B, P, T12) no deben decir «there's no food handler card».
+- **Alérgenos**: vitrina = **aviso escrito de los 9 alérgenos mayores en lo no envasado (3-602.12(C))**, la matriz de vitrina
+  vive en el **HACCP Food Safety Kit Pro**; obrador = **kitchen allergen matrix** de este pack; base de producción = **estudio
+  FDA de limpieza** (wash-rinse-sanitize-air dry), no una sección del Food Code (no inventar una). Envasado en tienda =
+  3-602.11(B). Nota UK en una frase (14 alérgenos, PPDS con ingredientes, oral con aviso). Ley NY nov-2025 sin fecha de vigor.
+- **Sin gluten**: **21 CFR 101.91**, < 20 ppm (= 20 mg/kg) en el alimento; «no gluten / free of gluten / without gluten» con
+  el mismo requisito, si no **misbranded**; el «muy bajo en gluten» (100 mg/kg) del ES no existe en EN. Sellos privados:
+  genéricos, sin nombrar organización.
+- **Hoja de inspección del cap. 10 (8 filas)**: bases US = 8-201.11/Parte 8-3 · 2-102.12 · 2-103.11(O) · 3-602.12(C) ·
+  2-103.11(O) · 3-501.16 y 3-501.14 · **3-501.17** (date marking, en "Egg & TCS Decision") · 3-602.11(B) (cap. 17).
+  Envases: EPS fuera en NY y CA, papel con PFAS añadido fuera en NY y CA, remite al **cap. 19** (T11 debe cuadrar).
 ### T07
 - **Hojas citadas en el cap. 12**: la tabla de las 30 tandas = "Labor Cost per Hour" (traducción fiel de «Coste Hora y Mano de Obra») y la de parámetros = "Settings" (ES «Parámetros»); "Mix and Average Ticket" y "Menu Decision" para la cuenta de subir precios; "Egg & TCS Decision" para el huevo. Si el xlsx final reparte esas dos tablas en otras pestañas, ajustar solo los dos rótulos en negrita antes de las tablas.
 - **Cifras del caso intactas en $**: mano de obra de las 30 tandas **$542.62** · coste de empresa de la cocina **$67,850** (tabla $67,850.15) · **3,782** h productivas (3,782.50) · 1,780 h · 0.85 · **$17.94**/h · mano de obra **63.3%** · food cost objetivo **32%** / margen **68%** · croissant **$1.06** coste total, **$0.82** mano de obra, **$0.40** margen. Ninguna era «con IVA»: no hubo conversión pre-tax. «2,50 jornadas» → **2.50 FTEs** (Head Pastry Chef 1.0 + Pastry Cook 1.0 + Bakery Assistant 0.5).
