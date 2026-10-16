@@ -45,7 +45,7 @@ REPO = AQUI.parents[2]
 sys.path.insert(0, str(AQUI.parent / 'guias-v2_0'))
 import documentos as D  # noqa: E402  — importarlo sólo define funciones y constantes
 
-from split_md import TANDAS as _PLAN, ADAPT, ORFANOS  # noqa: E402
+from split_md import TANDAS as _PLAN, ADAPT, ORFANOS, FILAS_LIBRES  # noqa: E402
 TANDAS = [t for plan in _PLAN.values() for t, _ in plan]
 TANDAS_FISCALES = set(ADAPT)       # SPEC §4: tandas que se readaptan a EE. UU. (cifras ausentes = aviso)
 ORFANOS_ES = set(ORFANOS)          # ficheros ES citados que no tienen EN (SPEC §2)
@@ -505,7 +505,10 @@ def revisar_textos(tanda, es, en, final=False, fiscal=False):
     if len(t_es) != len(t_en):
         E.append((0, 'b-tablas', 'tablas: ES %d · EN %d' % (len(t_es), len(t_en))))
     for k, ((li_es, c_es, _), (li_en, c_en, filas_en)) in enumerate(zip(t_es, t_en), 1):
-        if len(c_es) != len(c_en):
+        if len(c_es) != len(c_en) and (tanda, k) in FILAS_LIBRES:
+            A.append((li_en, 'b-tablas', 'tabla %d: %d filas en EN y %d en ES · excepción declarada: %s'
+                      % (k, len(c_en), len(c_es), FILAS_LIBRES[(tanda, k)])))
+        elif len(c_es) != len(c_en):
             E.append((li_en, 'b-tablas', 'tabla %d: %d filas en EN y %d en ES (ES l.%d)'
                       % (k, len(c_en), len(c_es), li_es)))
         else:

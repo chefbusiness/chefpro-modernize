@@ -51,7 +51,12 @@ def ensamblar(clave):
     h_es, t_es, hr_es, _ = G.estructura(G.parsear_con_lineas(es))
     h_en, t_en, hr_en, _ = G.estructura(G.parsear_con_lineas(doc))
     nivel = lambda hs: [h[0] for h in hs]  # noqa: E731
-    filas = lambda ts: [c for _, c, _ in ts]  # noqa: E731
+    libres, base = set(), 0                  # índice global de las tablas con FILAS_LIBRES (split_md.py)
+    for t in tandas:
+        n_es = len(G.estructura(G.parsear_con_lineas((G.TANDAS_ES / ('%s.md' % t)).read_text(encoding='utf-8')))[1])
+        libres |= {base + k - 1 for (tt, k) in G.FILAS_LIBRES if tt == t}
+        base += n_es
+    filas = lambda ts: [c if i not in libres else len(c[:1]) for i, (_, c, _) in enumerate(ts)]  # noqa: E731
     if nivel(h_es) != nivel(h_en) or filas(t_es) != filas(t_en) or len(hr_es) != len(hr_en):
         print('%s: la estructura del documento ensamblado no es la del ES (títulos %d/%d, '
               'tablas %d/%d, separadores %d/%d)' % (md_en, len(h_en), len(h_es), len(t_en),

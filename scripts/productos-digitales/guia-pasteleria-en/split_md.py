@@ -24,6 +24,8 @@ TANDAS = {
 }
 # Tandas que se readaptan a EE. UU. (todas salvo T07): una cifra del ES ausente en el EN es aviso, no error
 ADAPT = {t for plan in TANDAS.values() for t, _ in plan} - {'T07'}
+# Tablas cuyo nº de filas cambia a propósito: (tanda, nº de tabla dentro de la tanda) → motivo
+FILAS_LIBRES = {('T04', 3): 'los 15 traspasos reales de España pasan a plantilla US: la fila del caso + «tu zona» (sin datos US descargables)'}
 # Ficheros ES citados que no tienen EN (SPEC §2): el texto EN no puede citarlos
 ORFANOS = {'05-pasteleria', 'BONUS-02-calendario-anual-tareas', '04-tareas-perfiles',
            '10-plan-produccion-semanal', '12-control-alergenos-vitrina'}

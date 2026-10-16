@@ -27,3 +27,26 @@
   ovens, Type II for enclosed electric convection, written answer from the building/mechanical department» y «There's a
   route for the duct to the roof»; ítem 12 «liso, lavable e impermeable» → «smooth, durable, easily cleanable; coved
   floor-wall junctions»; ítem 13 sin «separados de los de clientes» (lo fija el plumbing code local).
+- T04: «Ficha de Visita a Local» (→ "Site Visit Checklist") B6:D23: qué se comprueba y cómo, como la tabla del cap. 6 de T04
+  (ítem 1 ruta del ducto propio a cubierta, sin enlazar con aseos/sala; ítem 2 tipo de campana Type I/II por escrito; 4
+  service size amps/voltage/phase; 5 planning/zoning en escrito; 6 landlord + CC&Rs/center rules/association; 17 gas
+  service and piping; 18 use clause, permit contingency, CAM/NNN, personal guarantee, TI). Fuera RITE, CTE, RD 193/2023,
+  RD 919/2006, RD 1021/2022, «Nota simple» y sus comentarios BOE (J6, J7, J14, J21, J22). Veredictos (CF y fórmulas)
+  DESCARTAR / Punto débil / Pendiente / OK → «RULE OUT» / «Weak point» / «Pending» / «OK»; E32 → «RULE OUT THIS SPACE» /
+  «DON'T DECIDE YET» / «GO AHEAD WITH CAUTION» / «GO AHEAD»; respuestas «Sí/No/Por comprobar» → «Yes/No/To check».
+- T04: «Traspaso vs Obra Nueva» (→ "Takeover vs New Build"): A26:A40 con nombres sin tildes del texto (Barcelona, Gracia ·
+  Seville · Almeria · Barcelona, Passeig Maragall…), B26:B40 tipos de negocio EN del texto, H26:H40 «Milanuncios, 2026» /
+  «negociosenventa.es, 2026» (fuera PS-69/PS-70), C25 «Square feet» y F25 «Dollars per square foot» (C26:C30 ya en config
+  ×10.7639). Notas J6 (85 m², 43.000 €, Gràcia) y J8 → sin €/m²: «seeded with the closest listing in size (915 sq ft,
+  43,000)». A47 debe decir que son anuncios ESPAÑOLES llevados 1:1 a dólares y no precios US; A49 (modelos 303/390,
+  Seguridad Social) → «ask for three years of tax returns, P&Ls, sales tax returns and payroll reports». Literales de C22 →
+  «The TAKEOVER comes out ahead» / «The NEW BUILD comes out ahead». Pendiente de la marca ⟦ADAPT⟧ de T04 (¿se quedan?).
+- T04: «Capacidad por Equipo» (→ "Capacity by Equipment"): nombres de equipo y categorías como la tabla del cap. 7
+  (Mixing · Sheeting · Heat · Refrigeration · Freezing · Storefront and display; «Walk-in cooler, 8 m³ (about 283 cu ft)»,
+  «Spiral mixer, 25 kg (55 lb) of dough», «Planetary mixer, 20 qt», «Automatic dough sheeter, up to 16 in wide»).
+- (orquestador, T04) «Traspaso vs Obra Nueva»: filas 27-40 VACIADAS (config `_traspasos`); fila 26 = «The space you're
+  looking at (the modeled case)» · «Pastry and cake shop» · fuente «The seller's listing». A24 → «Your local takeover
+  listings: the case plus fourteen rows for your area». A47/A49 → asking prices, not prices paid; where to find listings
+  (BizBuySell, BizQuest or a local business broker, with the date read); valora por lo que gana el negocio: pide 3 años de
+  tax returns y P&L, el payroll y el contrato de alquiler (sin modelos 303/390 ni Seguridad Social). J6/J8 sin Gràcia ni
+  Barcelona: «Seeded with the case's own takeover (915 sq ft), an ASKING price».

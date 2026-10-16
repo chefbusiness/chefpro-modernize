@@ -303,6 +303,51 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   para convección eléctrica cerrada, ninguna para un horno ligero o UL 710B): en EE. UU. lo ventless SÍ existe.
   «Marcha adelante» → **one-way flow**; «ficha de visita» → "Site Visit Checklist" (18 ítems, 8 **deal-breakers**).
 ### T04
+- **"Site Visit Checklist" (18 ítems, 8 deal-breakers: 1, 2, 4, 5, 6, 9, 17, 18)**: textos EN fijados en la tabla del cap. 6
+  (alineados con PENDIENTES T03: ítem 1 = «There's a route for the hood's own duct up to the roof», ítem 2 = «The hood type
+  the space has (or can take) matches your ovens», 12 con *coved floor-wall junctions*, 13 sin «separado del de clientes»).
+  ES→US: comunidad de propietarios → **landlord + center's CC&Rs or rules / owners' association** (ítem 6); consulta
+  urbanística → **planning/zoning department in writing** («ask whether they issue a zoning verification letter»; ítem 5);
+  potencia → service size in amps/voltage/phase (ítem 4); gas → «gas service and piping can carry your ovens» (ítem 17);
+  contrato → use clause, permit contingency, CAM/NNN, personal guarantee, TI allowance (ítem 18). Veredictos del caso:
+  **OK** ×16 · **Pending** ×2 (17, 18); veredicto global «no decidas todavía» → **“don't decide yet”**.
+- **Campana (cap. 6)**: CTE HS 3 / RITE AE3-AE4 fuera. Equivalente US: IMC 507 (Type I para piso/pizza con grease duct
+  NFPA 96 + supresión que inspecciona el fire marshal; Type II para hornos cerrados; excepciones UL 710B ≤ 5 mg/m³ y horno
+  eléctrico ligero único ≤ 3.7 kW, citadas como «Minnesota Rule 1346.0507») + **los ductos de un Type I son independientes
+  de cualquier otro extractor, normalmente un grease duct por campana** (research §16, extracto: el nº de sección varía por
+  edición). Las distancias de remate (sobre cubierta, a lindes y tomas) **sin cifra**: «set by your adopted mechanical code
+  and NFPA 96; ask the building department». La «confusión que cuesta dinero» del ES pasa a ser **leer las excepciones de
+  campana como propias** (ventless / horno ligero aplicado a un horno de pisos).
+- **Tres preguntas a la ciudad o el condado** (cap. 6): zoning permite *food production use* · qué dispara el uso (change of
+  use, building permit, nuevo certificate of occupancy, **health plan review antes de obra**, Food Code 8-201.11; CA: sin
+  aprobación sanitaria no hay building permit; **NY y FL: licencia de Agricultura** para la pastelería que vende para llevar)
+  · qué pide el building department a la campana y qué dice la noise ordinance. Encaja con P1-P3 de §8-bis.
+- **Traspaso → takeover** («taking over a bakery»; precio = **asking price** «for the business, its equipment and the
+  lease», *key money* solo como aclaración). Cifras del caso intactas: asking $43,000 · rent $1,250/mo · adecuación $25,000 ·
+  obra nueva comparable **$160,900** (= obra + equipo + permisos + marketing, sin fianza, packaging ni working capital: el
+  texto dice «build-out and equipment», no «equipo» solo) · totales $144,250 / $237,700 · diferencia **-$93,450** ·
+  horizonte de 5 años (rent obra nueva $1,200 × 4 meses = $4,800). La renta del traspaso = **≈ $16/sq ft/año** sobre 915 sq ft,
+  y el texto la contrasta con **CBRE Q2 2026 $24.79** (D6: el caso por debajo del mercado, se dice). Mesas de la hoja:
+  «Rent paid before you're selling, takeover / new build».
+- **Los 15 traspasos de la hoja "Takeover vs New Build" son ESPAÑOLES** y se quedan **declarados como muestra española**
+  (Milanuncios / negociosenventa.es, 2026), «carried over one-to-one into dollars like the rest of the case, not US prices»,
+  con la orden de sustituirlos por una docena de anuncios locales. m² → sq ft (85/69/80/63 → **915/743/861/678**) y €/m² →
+  **$/sq ft** (506/1,159/312/286/302 → **47/108/29/27/28**); media pedida **$38,600**; nombres sin tildes (Gracia, Almeria,
+  Seville, Passeig Maragall); la columna «Fuente» PS-69/PS-70 → «Milanuncios, 2026» / «negociosenventa.es, 2026». Lleva
+  **una marca ⟦ADAPT⟧** (choca con «ciudad española → ejemplo US genérico»: no se puede sin inventar cifras ni vaciar
+  celdas que el gate G1 exige): decide el orquestador.
+- **Franquicia (cap. 6)**: nuevo hecho US con fuente: **FDD al menos 14 días antes de firmar o pagar; Items 5-7 costes
+  iniciales y recurrentes, Item 19 financial performance representations, Item 20 sistema y franquiciados, Item 21 tres
+  últimos estados financieros auditados** (FTC, *A Consumer's Guide to Buying a Franchise*, 2020; research §16). Las cifras
+  de inversión del marketing de las enseñas siguen «no auditadas»; las preguntas del ES se conservan («check against its FDD»).
+- **Cap. 7 (frío)**: art. 5 RD 1021/2022 (−18 °C ininterrumpido) → **cooling rule 3-501.14** (135→70 °F en 2 h, → 41 °F en
+  6 h total) como razón US de que un arcón no es un abatidor + **4-205.10** (NSF/ANSI). Tabla art. 4.1 → 3-501.16 (≤ 41 °F)
+  + congelador a 0 °F «in practice»; TCS por pH/aw (1-201.10) remitiendo a "Egg & TCS Decision"; etiqueta de congelación =
+  práctica de la casa + **date marking 3-501.17**; «descongelado» → riesgo de *misleading claim* (FD&C §403(a)), sin afirmar
+  regla federal; no recongelar = **house rule**, no ley. Abatidor $10,037 (example price, +185 °F a −40 °F) junto a
+  WebstaurantStore $5,499 / $21,729; retarder-proofer: case $8,500 vs Doyon $27,937.80 / $33,099.00 (6 semanas).
+  Categorías de "Capacity by Equipment": **Mixing · Sheeting · Heat · Refrigeration · Freezing · Storefront and display**;
+  columna final «Kitchen pieces per day it allows»; 192 piezas abatidas/día (48 × 4) = 480 de obrador al 40 %.
 ### T05
 ### T06
 ### T07
