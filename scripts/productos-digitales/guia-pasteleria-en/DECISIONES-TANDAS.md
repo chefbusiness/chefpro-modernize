@@ -69,9 +69,34 @@ producto ES, el Kit de Tareas ni Hosply.
   Australia)»). Las cifras de caja que cambian por eso (necesidad de caja al arranque, saldos mensuales…) llegan en el
   mapa de §3-bis cuando se recalculen los libros en el VPS; hasta entonces, las tandas T10, T11, P01 y P02 esperan.
 
-### 3-bis. Mapa de cifras recalculadas (lo rellena el orquestador tras recalcular los xlsx EN)
+### 3-bis. Mapa de cifras recalculadas (xlsx EN recalculados en el VPS el 17-oct)
 
-(pendiente)
+**No cambian**: ventas, costes, márgenes, cuenta de resultados de los 3 años, punto de equilibrio, préstamo ($60,000),
+cuota, coste hora, refuerzos de campaña (3,795.51), CAPEX sin IVA ($227,916). Detalle celda a celda:
+`xlsx/CIFRAS-RECALCULADAS.md` y `xlsx/cifras_cambiadas.json`.
+
+| ES (texto) | EN | Nota |
+|---|---|---|
+| PVP medio ponderado con IVA 2,46 € | **$2.26** (average price per item, pre-tax) | |
+| Ticket medio con IVA 6,38 € | **$5.87** before sales tax | el ES «sin IVA» ya era 5,87 |
+| IVA medio de la carta 8,79 % | desaparece | |
+| IVA soportado de la inversión 33.911 € | desaparece (US: sales tax = coste; §3) | |
+| Desembolso total con IVA / necesidad de caja 261.826 € | **$227,916** | = CAPEX pre-tax |
+| Aportación propia / recursos propios 201.826 € | **$167,916** | préstamo $60,000 igual |
+| Nóminas: 6.185,07 €/mes y 12.370,14 € en marzo, julio y diciembre (pagas extra) | **$7,731.34 every month** (12 pagos, mismo anual) | |
+| Coste mensual de la plantilla 4.650,43 € | **$5,813.04** al mes | anual igual |
+| SMI 17.094 €/año | **$15,080/year** (federal/Texas, $7.25 × 2,080 h) | |
+| Costes fijos de explotación con IVA 6.954,65 €/mes | **$6,185.00**/month (pre-tax) | |
+| Cobros de ventas año 1 con IVA 304.485 € | **$279,877** | |
+| Flujo de caja del año 1: 33.097 € | **$25,696** | sin la devolución del IVA |
+| Saldo de caja mínimo del año 61.037 € | **$61,346** | |
+| Saldo de caja al mes 12: 95.213 € | **$87,811** | |
+| Saldos mensuales | ver CIFRAS-RECALCULADAS.md (fila «SALDO ACUMULADO DE CAJA») | |
+| Precios de campaña con IVA: rosca 16,50 · macarons 2,10 · tarta choc. 3,60 · torrijas 2,40 · nata y fresas 3,50 · buñuelos 1,60 € | **$15.00 · $1.91 · $3.27 · $2.18 · $3.18 · $1.45** | ÷ 1,10 |
+| Precios de familia con IVA: bollería 1,60 · individual 3,60 · tartas 3,60 · pan 1,20 · temporada 16,50 € | **$1.45 · $3.27 · $3.27 · $1.15 · $15.00** | |
+| Equipos UNOX y SMEG con IVA 3.354,12 € y 2.513,41 € | **$2,772.00 y $2,077.20** | ÷ 1,21 |
+| Superficies y ratios | DECISIONES §7 | |
+
 
 ## 4. Carta: nombres EN de las 30 referencias (SPEC D14)
 
@@ -110,7 +135,8 @@ Assistant** · Dependiente Vitrina → **Counter Associate** (dos personas: Coun
 Tabla de 6 grupos → tabla de sueldos por puesto (mismas 6 filas, mismo orden; claves IDÉNTICAS en texto y xlsx):
 1 Técnicos y titulados superiores → **Office and administration (degree-level)** · 2 Dirección, jefes y encargados →
 **Management and supervisors** · 3 Personal especialista → **Skilled specialists** · 4 Personal cualificado →
-**Qualified staff** · 5 Personal de apoyo → **Support staff** · 6 Servicios auxiliares → **Auxiliary services**.
+**Qualified staff** · 5 Personal de apoyo → **Support staff** · 6 Personal de ayuda en servicios auxiliares → **Auxiliary
+services**. «Grupo N» → **Group N** · «Grupo de convenio» → **Pay grade** (en EE. UU. no hay convenio: «pay grade» del ejemplo).
 Sueldo mensual EN = ES × 15/12 (12 pagos, anual idéntico): grupo 1 $2,167.35 · 2 $1,784.86 · 3 $1,721.14 · 4 $1,561.78 ·
 5 y 6 $1,490.53 al mes; anual $26,008.20 · $21,418.35 · $20,653.65 · $18,741.30 · $17,886.30. **Por hora** (anual ÷ 2,080):
 $12.50 · $10.30 · $9.93 · $9.01 · $8.60. Comparación honesta (research §5): mediana BLS 2025 de *bakers* **$17.86/h**,
