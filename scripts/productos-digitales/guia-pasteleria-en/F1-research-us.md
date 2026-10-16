@@ -652,3 +652,6 @@ Colliers, DoorDash, WebstaurantStore ×7, Experian, Homebase/Nory, Allergic Livi
 
 ## 16. Hechos añadidos en F2 (cada traductor que verifique un hecho nuevo lo añade aquí: hecho · fuente oficial · fecha)
 
+- **[T02]** *Frozen cakes, pies, and other pastries manufacturing* (NAICS **311813**), privado, EE. UU., media anual: **2024 = 309 establecimientos · 13,541 empleos** (salario medio $59,490); **2018 = 236 · 12,619** → +31 % establecimientos, +7 % empleo en seis años. Estados 2024: CA 38 / 1,265 · TX 18 / 688 · NY 22 / 721 · FL 24 / 270 · BLS QCEW open data https://data.bls.gov/cew/data/api/2024/a/industry/311813.csv y https://data.bls.gov/cew/data/api/2018/a/industry/311813.csv (descargados y leídos 17-oct-2026) · [OF]. Mide plantas y empleo, **no ventas**: se usa como dirección, nunca como tamaño de mercado.
+- **[T02]** *Retail bakeries* (NAICS **311811**), privado, EE. UU., **2018 = 7,787 establecimientos · 86,819 empleos** (TX 428 / 5,258) → frente a 2024 (§6: 9,473 · 104,527) = **+22 % establecimientos, +20 % empleo** · https://data.bls.gov/cew/data/api/2018/a/industry/311811.csv (descargado y leído 17-oct-2026) · [OF].
+- **[T02]** Gasto en *bakery products* por quintil de renta (BLS CE): **no verificado** (download.bls.gov devolvió 403 al pedir la tabla de códigos); el párrafo de renta del cap. 2 va sin cifra.

@@ -213,6 +213,39 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   lista blanca antes de T02/T09; (2) citar `05-bakery-cake-pricing.xlsx` da ERROR g-ficheros (no está en la columna EN
   de SPEC §2, aunque D14 lo pide): nómbralo sin extensión o que se añada al mapa.
 ### T02
+- **Precio medio ponderado pre-tax = $2.26** (Σ mix × PVP ÷ (1+IVA) de `datos_ejemplo.CARTA` = 2.2572; el ES da 2,46 € con
+  IVA, factor medio 1.0879). Ticket **$5.87 before sales tax** = 2.2572 × 2.6; no escribas «$2.26 × 2.6» (da 5.88). Los
+  6,38 € desaparecen. Cifras del caso usadas: ventas anuales $322,198 · día medio $1,074 · enero $35,979 (11.2%, por la
+  Rosca de Reyes) · agosto $17,452 (5.4%; el caso cierra dos semanas en agosto, dato de la columna F del xlsx) · margen de
+  contribución medio $1.07 · food cost de ingredientes 17.6% / **served food cost** 20.3%.
+- **"Menu Decision"**: veredictos Mantener → **Keep** · Revisar precio → **Review price** · Retirar → **Drop** (27 / 1 / 2);
+  semáforo de surtido → **menu traffic light**; margen ponderado → **weighted margin**. Familias en tablas y texto:
+  Viennoiserie · Individual pastries · Cakes and entremets · Breads · Seasonal. T6 se escribe «Strawberries & cream cake»
+  (forma de §4; §6 la escribe con guiones).
+- **"Share of the Year", columna E** (campañas por mes; el generador une con «, »): January «Día de Reyes (Three Kings Day)»
+  · February «Valentine's Day» · March «-» · April «Easter (Holy Week)» · May «Mother's Day, First Communions and
+  graduations» · November «All Saints' Day and Día de los Muertos» · el resto «-». Thanksgiving y Christmas solo en el
+  texto (nov. 1.08, dic. 1.24). **Para el xlsx**: la columna F («Por qué ese coeficiente») de marzo y mayo hay que
+  reescribirla (marzo ya no tiene Día del Padre; mayo = Mother's Day + comuniones y graduaciones).
+- **Datos US del cap. 2** (reutilizables; los nuevos, en research §16): CE *bakery products* $539 por hogar 2024 ($574
+  2023 · $497 2022) · *food away from home* $3,945 · QCEW 311813 *frozen cakes, pies and other pastries manufacturing*
+  236 → **309 plantas (+31%)** y 12,619 → 13,541 empleos (+7%) 2018-2024 · QCEW 311811 7,787 → 9,473 establecimientos
+  (+22%) y 86,819 → 104,527 empleos (+20%). Sin cifra oficial de cuota del canal especializado ni de ticket medio de
+  bakery US: se dice así. La columna «Id del research» de la tabla de fuentes pasa a **«Source»** (organismo y año).
+- **«Elaboración propia»** → “baked here every morning” / “made from scratch in our kitchen”: no es término legal
+  definido; rige la prohibición general de etiquetado falso o engañoso (FD&C Act §403(a)). El cap. 2 remite al **cap. 17**
+  para el detalle: T10 debe cubrirlo allí con esa línea.
+- **Pan**: el ES «otro real decreto de calidad + otro tipo de IVA» pasa a: el pan **no** cambia el sales tax (para llevar,
+  exento igual que la bollería en los 4 estados; lo que grava es CÓMO se vende, cap. 19) y lo que sí trae es la **etiqueta
+  completa del pan que embolsas tú** (Food Code 3-602.11: nombre, ingredientes por peso, cantidad neta, nombre y dirección,
+  alérgenos mayores), remitida al anexo. T11 y T12 tienen que cuadrar con esto.
+- **Hofmann** (Barcelona: croissant de mascarpone ≈ 3,000 uds./semana ≈ 30% de las ventas, The New Barcelona Post,
+  febrero de 2026) se conserva como ejemplo europeo declarado, no como dato US. La tendencia del roscón (prensa de Madrid)
+  → temporada de *king cake* (Epiphany → Mardi Gras) + búsquedas US 90,500/mes «rosca de reyes» y 110,000 «king cake»
+  (DataForSEO, oct. 2026); tamaños pequeños y versiones sin gluten/lactosa, solo como prueba y sin cifra.
+- Al lado del 17.6%/20.3% del caso va el contraste US «third-party estimates put a typical US bakery's food cost at 28% to
+  35% of sales (Toast)», y el pie de la tabla de la carta pide comparar precios con las bakeries de alrededor (no hay dato
+  US de precios en el research).
 ### T03
 ### T04
 ### T05
