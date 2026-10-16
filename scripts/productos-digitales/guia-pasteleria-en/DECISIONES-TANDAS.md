@@ -154,6 +154,38 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
 ## 9. Decisiones de cada tanda (añádelas bajo tu tanda)
 
 ### T01
+- **Las once variantes = las 10 filas de "Format Variant" + una undécima sin fila**: *commissary / shared kitchen*
+  (alquiler de horas en cocina con licencia: WebstaurantStore $250-$750/mes, $1,000-$1,250 en Manhattan o Los Angeles,
+  research §2). En el ES el undécimo era PS-10, que no existe. Nombres EN de las filas (úsalos igual): Mid-size pastry
+  shop (the case) · Home-based bakery under cottage food · Closed-door production kitchen · Storefront with a counter but
+  no kitchen of its own · Bakery-café · Small bake-off shop · Large or prime-location shop · Bakery franchise · Wholesale
+  production kitchen for restaurants and cafés · Ventless pastry shop (no Type I hood). Cifras del caso intactas en $.
+- **Rangos «publicados» de "Format Variant"**: fuera los españoles. US (research §12.1, [DÉBIL], rotulados «third-party
+  estimates»): Zenind 2026 casera $15,000-$25,000 · online $20,000-$40,000 · small retail $50,000-$100,000+ ·
+  production $75,000-$150,000+; Toast $10,000-$50,000; restaurante con sala mediana $375,500 ($175,000-$750,000+,
+  RestaurantOwner.com vía DoorDash). En la tabla de T01 solo llevan rango 3 filas (caso → 50,000/100,000+, casa →
+  15,000/25,000, producción → 75,000/150,000+); las otras 7 en blanco. **El xlsx (K15:L24) tiene que cuadrar**: marca
+  ⟦ADAPT⟧ en el pie de la tabla de T01 hasta que el orquestador lo alinee. T03 (cap. 4) usa estas mismas cifras.
+- La columna «Id del research» (PS-xx) pasa a **«Main permit (ch. 9)»** en la tabla de la guía; los ids PS-*/PA-* no
+  salen nunca en EN.
+- Presentación del caso fijada en el cap. 1: «a European-style pastry shop with Spanish and Mexican holiday specialties,
+  with its own production kitchen and a front counter, in an unnamed mid-size city in Texas. It's a modeled case, not an
+  industry average.» Ya dice que sus sueldos ($8.60-$12.50/h) superan los $7.25 federales pero quedan por debajo del
+  mínimo de CA, NY y FL, y remite al cap. 13. Nunca se nombra «La Clara» en el texto (el ES tampoco lo hace).
+- Glosario US · UK · CA · AU del cap. 1 (de la Equivalents Guide): to go (takeaway) · schedule (rota / roster) ·
+  inventory (stock) · average ticket (average spend) · sales tax (VAT / GST-HST / GST, incluido en carta en UK y AU) ·
+  walk-in cooler (cold room / cool room) · sheet pan (baking tray) · powdered sugar (icing sugar) · superfine (caster) ·
+  all-purpose flour (plain flour) · heavy cream (double/whipping · whipping · thickened). Palabra peligrosa: **biscuit**.
+  Falso amigo de mercado: retail bakeries NAICS 311811 = **9,473** establecimientos (BLS QCEW 2024) frente a baked goods
+  retailers NAICS 445291 = **2,605**: T02 usa las mismas cifras.
+- Ventas cruzadas con estos nombres exactos: HACCP Food Safety Kit Pro (registros de temperatura y limpieza, matriz de
+  alérgenos) · Food Cost Kit Pro (ya trae el butter croissant, los raspberry macarons y el 70% dark chocolate cake) ·
+  Food Cost + Menu Engineering Guide · Bakery Business Plan Kit. Frase-frontera: «once you're open, your checklists and
+  logs tell you what to do each day; this guide is everything you have to decide before.»
+- **Avisos del gate para las demás tandas**: (1) «Día», «turrón», «buñuelos» dan ERROR d-espanol (no están en
+  `PRESTAMOS`): escribe «Three Kings Day», «Day of the Dead», «almond nougat (turron)…» o que el orquestador amplíe la
+  lista blanca antes de T02/T09; (2) citar `05-bakery-cake-pricing.xlsx` da ERROR g-ficheros (no está en la columna EN
+  de SPEC §2, aunque D14 lo pide): nómbralo sin extensión o que se añada al mapa.
 ### T02
 ### T03
 ### T04

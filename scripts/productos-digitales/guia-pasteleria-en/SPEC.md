@@ -49,6 +49,7 @@
 | guia-pasteleria-obrador.docx/.pdf | **how-to-open-a-pastry-shop.docx/.pdf** | — |
 | BONUS-12-decisiones-de-apertura.docx/.pdf | **BONUS-12-opening-decisions.docx/.pdf** | — |
 | business-plan-modelo-pasteleria.docx | **sample-business-plan-pastry-shop.docx** | — |
+| 05-pasteleria.xlsx (Kit de Escandallos ES; solo se cita) | **05-bakery-cake-pricing.xlsx** (Food Cost Kit Pro EN) | Croissants · Macarons · Chocolate Cake |
 
 Ficheros ES citados sin EN (`ORFANOS` en `split_md.py`): `05-pasteleria` (→ texto «Food Cost Kit Pro, 05-bakery-cake-pricing.xlsx»), `BONUS-02-calendario-anual-tareas`, los `kit-tareas-pasteleria/*.xlsx` (D17).
 

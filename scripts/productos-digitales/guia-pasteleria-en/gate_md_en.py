@@ -66,7 +66,8 @@ PRESTAMOS = {
     'génoise', 'sablé', 'brisée', 'sucrée', 'feuilleté', 'crémeux', 'détrempe',
     'bacardí', 'kahlúa', 'pâtisserie', 'pâtisseries', 'pâte', 'pâtissier', 'pâtissiers', 'crêpe',
     'crêpes', 'éclairs', 'glaçage', 'ensaïmada', 'ensaïmadas', 'quinceañera', 'quinceañeras', 'piñata',
-    'piñatas', 'crème', 'brûlée', 'opéra', 'chantilly', 'pâtes', 'choux', 'financier', 'dacquoise'}
+    'piñatas', 'crème', 'brûlée', 'opéra', 'chantilly', 'pâtes', 'choux', 'financier', 'dacquoise',
+    'día', 'turrón', 'turrones', 'buñuelo', 'buñuelos'}   # nombres fijados en DECISIONES §4 y §6
 # (el plural en -s de cualquiera de ellas también vale: «canapés», «pâtés», «éclairs»)
 # Nombres de producto españoles que un menú de EE. UU. puede conservar: aviso, no error
 NOMBRES_PRODUCTO = {'jamón', 'ibérico', 'ibérica', 'ibéricos', 'ibéricas', 'manchego'}
@@ -95,7 +96,8 @@ RX_PERMITIDAS = re.compile(
     r"las vegas|el paso|santa fe|pedro ximénez|chili con carne|pico de gallo|dulce de leche|"
     r"tres leches|crème de la crème|crème de|fleur de sel|en route|en papillote|sous vide|"
     r"al dente|al pastor|al fresco|chef de partie|chef de cuisine|garde manger|pan de|"
-    r"pâte de|vin de|eau de|del monte|y-axis|x-axis|\bx and y\b)", re.I)
+    r"pâte de|vin de|eau de|del monte|y-axis|x-axis|\bx and y\b|día de los muertos|día de reyes|"
+    r"día de las madres|rosca de reyes|huesos de santo|mona de pascua|buñuelos de viento|pan de muerto)", re.I)
 RX_LETRAS = re.compile(r'[^\W\d_]+')
 RX_MARCA = re.compile(r'⟦[^⟧\n]*⟧?')
 
