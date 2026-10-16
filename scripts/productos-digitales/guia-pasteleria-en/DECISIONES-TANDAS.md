@@ -476,6 +476,41 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   DOL de mínimos por estado (July 1, 2026), FloridaCommerce, CA Labor Commissioner (pausas), DOL Fact Sheets #21 y #43,
   OSHA On-Site Consultation y TDI (non-subscribers), porque el cap. 13-14 remite al anexo para comprobarlos.
 ### T09
+- **Nombres de campaña en tablas y texto** (filas de "Share of the Year", "Peak Capacity vs Demand" y "Extra Staff and
+  Cash", iguales en los tres): Día de Reyes (Three Kings Day) · Valentine's Day · Mother's Day · Easter (Holy Week) · First
+  Communions and graduations · All Saints' Day and Día de los Muertos · fila total **TOTAL FOR THE SIX CAMPAIGNS**. En prosa,
+  «the Three Kings Day campaign». La nota de la primera tabla dice que la fila Mother's Day cubre **Día de las Madres (May 10)
+  y US Mother's Day (2nd Sunday in May)**. Thanksgiving y Christmas: «not campaigns in this model… monthly curve (Nov 1.08,
+  Dec 1.24, chapter 2)»; si pesan más, el lector los pone en lugar de la campaña que menos pese.
+- **Cifras del cap. 15 intactas en $**: $22,479 (7.0%) · incremental $21,270 · 2,856 / 1,200 / 1,656 / 47.4 h / 4 personas ·
+  refuerzo **$3,795.51 = 284 h × $13.36** (coste de empresa por hora del refuerzo = el del Bakery Assistant, Group 5; el
+  texto lo dice) · tesorería parada **$3,856.99** · días parados = semanas de antelación × 7 + días de campaña (Reyes 6 sem →
+  **47**; comuniones y graduaciones 5 sem → **55**). La antelación de compra es la columna de semanas de "6-Peak Calendar".
+  Cabeceras: «Factor over a normal day» · «Kitchen hours it would take» · «Can you handle it?» · «Days the cash sits idle» ·
+  «Incremental result ($)». «Sin IVA» → «before sales tax».
+- **Datos españoles del roscón fuera** (Infobae/ASEMAC 30 M, Asempas 2.9 M, 57 % relleno, El Corte Inglés 850,000, Viena
+  Capellanes 72,000, supermercado a 9 €): sustituidos por king cake season (Epiphany → Mardi Gras) + búsquedas US 90,500
+  «rosca de reyes» / 110,000 «king cake» (DataForSEO, oct. 2026) y por NRF 2026 (Valentine's **$29.1 bn**, Mother's Day **$38
+  bn**) contra el 0.3 % / 0.4 % del caso. **Matias** (Mallorca, «chapters 13 and 14») se queda como ejemplo europeo declarado
+  en el cap. 15 (ensaïmadas, turrón) y en el 16 (95 % directa / 5 % a crédito a 30-60 días = origen del 5 % wholesale).
+- **Canales del 3-year plan** (cap. 16; T10 debe usar los mismos): **Counter · Custom orders · Wholesale (local cafés and
+  restaurants) · Online and shipping · TOTAL**; columnas «Cruising-year sales ($)» · «Share of sales (%)» · «Gross margin (%)»
+  · «Cost to serve (%)» · «Contribution margin (%)» · «Contribution margin ($)» · «Days to collect».
+- **Corrección de una frase del ES** (contradecía su propia tabla): el ES dice que el mostrador «arrastra un coste de servir
+  mayor», pero la tabla le da **0 %** (encargos 2 %). EN: la merma de vitrina ya está en su margen bruto menor (68 % vs 70 %,
+  nota J7 del xlsx: «contra pedido, merma cero») y vitrina y personal son fijos; en contribución quedan **iguales, 68 %**.
+- **Señal (deposit)**: el ES decía que el % de anticipo es «una celda editable» del libro; **no existe tal celda** (solo la nota
+  J7 de «Canales y Punto Muerto»: «Anticipo del 30 % al reservar (supuesto)»). EN: «The modeled case assumes a 30% deposit at
+  booking (it's noted on the custom-orders row of the "Channels and Break-Even" sheet)… Many US bakeries that publish their
+  policies ask 50% to hold the date, often non-refundable; that's common practice, not law» + «check your state's consumer
+  rules on non-refundable deposits». Antelación 2-3 semanas / 1-2 meses personalizada, rush fee, corte de cancelación 7-14
+  días: «common practice, not law» (research §8, [DÉBIL]). Título de sección: **«Deposits and Down Payments»**.
+- **Alérgenos en el encargo (cap. 16)**: la hoja de pedido recoge alergias del cliente + aviso escrito de los mayores
+  alérgenos (Food Code 2022 **3-602.12(C)**, 9 con el sésamo desde 2023, «your inspector enforces your state's adopted
+  edition»); lo que se encaja antes y se vende hecho = packaged → etiqueta completa **3-602.11(B)**; «gluten-free» = < 20 ppm
+  (**21 CFR 101.91**). Bonus decisión 6 (encargo de comunión sin histórico) debe cuadrar con esto y con la señal.
+- **Kit de Tareas** (2 menciones) → «your annual task calendar and your daily task checklists» / «belong with your daily
+  task checklists». Menores en el refuerzo de campaña: < 16 no hornean, < 18 sin amasadoras ni laminadora (remite al cap. 14).
 ### T10
 ### T11
 ### T12

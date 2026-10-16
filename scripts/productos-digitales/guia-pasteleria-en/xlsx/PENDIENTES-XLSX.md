@@ -94,3 +94,25 @@
   and ask your broadline sales rep»; A28 = supuestos (pedido mínimo, plazo, condiciones), no condiciones de estas empresas.
   Contador A47 (comunicación al registro sanitario, licencia, APPCC, formación) → «the food permit, the food safety plan with
   a CFPM as person in charge, and the training log are counted in permits-and-licenses-checklist.xlsx».
+- T09: «estacionalidad-y-picos» (→ seasonal-peaks-planner.xlsx): nombres de campaña en "6-Peak Calendar" B6:B11, "Share of
+  the Year" A24:A29 y E, "Peak Capacity vs Demand" A6:A11 y "Extra Staff and Cash" A6:A11 IGUALES que el cap. 15 (Día de
+  Reyes (Three Kings Day) · Valentine's Day · Mother's Day · Easter (Holy Week) · First Communions and graduations · All
+  Saints' Day and Día de los Muertos). "6-Peak Calendar": C8 «19 de marzo y primer domingo de mayo» → «Día de las Madres
+  (May 10) and US Mother's Day (2nd Sunday in May)», D8 = 5; C6 «January 2-6», C11 «October 30 – November 1»; F6:F11
+  productos estrella con los nombres de DECISIONES §4. Notas R6 (PS-35, 30 millones de roscones en España) → king cake
+  season + búsquedas US 90,500/110,000 (sin PS-*); R8 («Dos fechas… el kit las separa») → una sola fecha operativa (Día de las
+  Madres + US Mother's Day, tarta con dedicatoria por encargo), sin «kit»; R10 y las notas gemelas «MESETA… 11-control-
+  encargos.xlsx del kit (R2)» (también kitchen-capacity-and-site "Bottleneck" J22 y staff-schedule "Hiring Plan" K20) →
+  «deposit, delivery calendar and cancellation risk (chapter 16)», sin fichero del kit. "Extra Staff and Cash" R6 («almendra,
+  naranja confitada y agua de azahar en noviembre; roscón relleno 4 °C y 24 h») → °F (39 °F) y sin regla española; A18
+  (Kit de Tareas 12 €, BONUS-02, 06-eventos-festivos, 10-plan-produccion-semanal) → «your annual task calendar and daily
+  task checklists»; E5 «Coste hora de empresa» = employer cost per hour (payroll taxes, workers' comp and benefits).
+  Instrucciones A10 («bruto de convenio más Seguridad Social») → «base pay plus payroll taxes, workers' comp and benefits»;
+  A16 y Calendario A3 (Kit de Tareas) → sin kit; A23 «en enero… para Reyes, seis semanas antes, a finales de noviembre»
+  se puede quedar (late November).
+- T09: «plan-financiero-3-anos-pasteleria» "Channels and Break-Even": A6:A9 = Counter · Custom orders · Wholesale (local
+  cafés and restaurants) · Online and shipping (como la tabla del cap. 16). **J7** («Anticipo del 30 % al reservar
+  (supuesto)…») → «30% deposit at booking (assumption): it turns a cancellation into a nuisance instead of a loss. Many US
+  bakeries ask 50%, often non-refundable: common practice, not law. Better margin because it's made to order with zero
+  display waste.» El texto del cap. 16 cita esa nota (no hay celda editable de la señal). A31 (95/5 de una pastelería
+  española, TPV) → «a published Spanish case… your POS data».
