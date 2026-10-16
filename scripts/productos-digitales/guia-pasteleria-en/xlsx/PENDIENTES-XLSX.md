@@ -116,3 +116,27 @@
   bakeries ask 50%, often non-refundable: common practice, not law. Better margin because it's made to order with zero
   display waste.» El texto del cap. 16 cita esa nota (no hay celda editable de la señal). A31 (95/5 de una pastelería
   española, TPV) → «a published Spanish case… your POS data».
+- T10: «plan-financiero-3-anos-pasteleria» "3-Year P&L": rótulos A11:A43 como la tabla del cap. 18 (DECISIONES §9 T10):
+  A19 «Staff (wages plus payroll taxes, workers' comp and benefits)», A20 «Owner's pay (before your own self-employment and
+  income tax)», A36 «PRE-TAX PROFIT», A43 «NET PROFIT», A11 «TOTAL REVENUE (before sales tax)». Filas 34-35 (IVA soportado,
+  ya a 0) → «Input VAT/GST on variable costs (UK, Canada, Australia; $0 in the US)» y «… on fixed costs …»; G35 sin modelo
+  303. Bloque de impuesto A37:A42 → «Net operating losses at the start of the year» · «Taxable income (after losses)» ·
+  «Years with a profit (running count)» · «Income tax rate (illustrative)» · «Income tax» · «Net operating losses at year
+  end»; G37 (art. 26 LIS) → NOL en genérico; G40 (15 % de nueva creación, IRPF) → «Illustrative: 15% for the first two
+  years with a profit, 25% after. By default a single-member LLC is reported on its owner's return and a multi-member LLC
+  is classified as a partnership (IRS): ask your CPA». Notas a reescribir sin España: G13 (modelo 303), G21/G22/G24/G25
+  (IVA, Verifactu), G23 (Ley 37/1992, CCAA → «Assumption. Ask your insurance agent what your landlord and lender require»),
+  G28 (inspección de gas cada 5 años → «Assumption»), A54 («SIN IVA» → before sales tax).
+- T10: "Scenarios": A15 «Income tax (the workbook's illustrative rate)» y su nota E15 sin «entidad de nueva creación».
+  "Break-Even" A13 «Loan principal repaid this year (cash out)» (el texto cita sus valores 3,808 · 7,979 · 8,488).
+- T10: "Channels and Break-Even" A24:A28 (aviso del art. 3 del RD 1021/2022) → bloque de la línea FDA: título «THE FDA LINE:
+  WHEN WHOLESALE CHANGES YOUR REGISTRATION»; A25 «Wholesale share of food sales, by value (%)»; A26/B26 «Our cautious
+  working line (the legal line is 50%: 21 CFR 1.227)» = 25 %; B27 literal «Retail: below the working line; run the three
+  checks in permits-and-licenses-checklist.xlsx»; J26 y A28 sin 500 kg, «marginal, localizado y restringido» ni declaración
+  responsable → «only sales to businesses you don't own count; measured by value over the year»; A31 → 95/5 = ejemplo español
+  declarado (lo dice también T09). Rótulos de columna como la tabla del cap. 17 (Days to collect, Cost to serve…).
+- T10: «carta-de-apertura-y-escandallo» "Egg & TCS Decision": columnas y valores como la tabla 2 del cap. 17 (Egg route:
+  Cooked through · Pasteurized egg product · No egg · Shelf-stable; «Shelf-stable at room temperature?» Yes/No; «Holding
+  temperature (°F)» = 41; el 24 h → «Date-mark if held over (hours)» con «N/A»; «Refrigerated case» / «Room-temperature
+  case»). Las cabeceras «Techo del art. 4.1 fila 9» y «Techo del art. 9.3» (G, H) → «Food Code cold-holding limit (°F),
+  3-501.16»; las dos salen 41.

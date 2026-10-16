@@ -512,6 +512,50 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
 - **Kit de Tareas** (2 menciones) → «your annual task calendar and your daily task checklists» / «belong with your daily
   task checklists». Menores en el refuerzo de campaña: < 16 no hornean, < 18 sin amasadoras ni laminadora (remite al cap. 14).
 ### T10
+- **Canales (cap. 17, "Channels and Break-Even")**: filas **Counter · Custom orders · Wholesale (local cafés and restaurants) ·
+  Online and shipping · TOTAL**; columnas Steady-state year sales ($) · Share of sales (%) · Gross margin (%) · Cost to serve
+  (%) · Platform fee (%) · Contribution margin (%) · **Days to collect**. Cifras intactas: 2.25 días ponderados · 66.5 %
+  contribución · 1.5 % servir+cobrar+comisión · online 51 %. El 95/5 (a crédito a 30-60 días) queda como **ejemplo europeo
+  declarado** de Matias (prensa española, 21-nov-2025). DoorDash 15/25/30 % (pickup 6 %) en el pie y en la sección online.
+- **Mayorista en el cap. 17** = mismo marco que T05, sin afirmar más: solo el 50 % FDA decide el registro; el caso = **5 % por
+  valor** (el 4,1 % «en kilos» se cita pero se dice que el test de la FDA cuenta dólares, no peso); línea prudente 25 %;
+  cocina con licencia salvo las excepciones cottage (cap. 9); registro de cuentas + resale certificates (CPA); «un hotel o
+  una cadena puede inclinar la línea»; FL → FDACS Wholesale/Manufactured. **Online**: «generally still a retail food
+  establishment» (1.227); lo envasado antes = etiqueta completa 3-602.11(B); lo encajado al pedido = al menos el aviso de
+  alérgenos 3-602.12(C) y «pregunta a tu health department» (sin afirmar cuál aplica); «no encontramos regla US que exija la
+  información antes del pago, como la UE». **La línea de T02 (FD&C §403(a), "baked fresh daily" en producto descongelado)
+  está en esta sección**: la promesa del cap. 2 queda cumplida.
+- **Envases del envío (cap. 17 → cap. 19)**: el RD 1055/2022 («envasador») pasa a «packaging rules are state rules»: NY y CA
+  prohíben envases de espuma y envases de papel con PFAS añadido; FL reserva al estado el poliestireno. **T11 tiene que
+  cuadrar.** Envío interestatal: solo hechos cottage (NY nada fuera del estado; TX online solo si entregas tú, un empleado o
+  alguien del hogar); con cocina con licencia, «check with your health department» (sin regla inventada).
+- **Tabla "Egg & TCS Decision" en EN** (cap. 17; el xlsx debe usar lo mismo): columnas Ref · Item · **Egg route** ·
+  **Shelf-stable at room temperature?** · **Holding temperature (°F)** · **Date-mark if held over (hours)** · **Where it goes
+  at the counter**. Valores: 70/2 → **Cooked through** · ovoproducto → **Pasteurized egg product** · sin huevo → **No egg** ·
+  estable a ambiente → **Shelf-stable**; 4 °C y 8 °C → **41** (todas: Food Code 3-501.16, config D15); el 24 h del art. 9.3
+  pasa a ser el **disparador del date marking** (3-501.17: > 24 h, máx. 7 días); «No aplica» → **N/A**; vitrinas →
+  **Refrigerated case / Room-temperature case**. 15 refrigeradas (cuadra con T06). Ítems ⚑ con descriptor (primera vez).
+- **P&L del cap. 18** (rótulos que el xlsx "3-Year P&L" debe repetir): TOTAL REVENUE (before sales tax) · Pastry,
+  viennoiserie and cake sales · Bread sales · Cost of sales (ingredients, packaging and waste) · TOTAL VARIABLE COSTS ·
+  GROSS MARGIN · **Staff (wages plus payroll taxes, workers' comp and benefits)** · **Owner's pay (before your own
+  self-employment and income tax)** · Rent · Utilities (electricity, gas and water) · Insurance (general liability and
+  property) · Accounting and bookkeeping · Software, POS and payment processing · Phone and internet · Cleaning and supplies
+  · Equipment maintenance · Advertising and social media · Other overhead · Depreciation · Loan interest · TOTAL FIXED COSTS
+  · **PRE-TAX PROFIT** · **NET PROFIT** · «Income tax (the workbook's illustrative rate)». Todas las cifras idénticas al ES.
+- **La «memoria de IVA soportado» desaparece** y su tabla (misma forma, 2 filas × 3 años) pasa a «Two lines where the P&L
+  and your cash disagree»: **Depreciation $16,090 ×3** y **Loan principal repaid $3,808 · $7,979 · $8,488** (hoja
+  "Break-Even" fila 13, sin cambio en EN: préstamo $60,000, 6 meses de solo intereses). El pie dice que las dos filas VAT/GST
+  del libro valen $0 en EE. UU. P01/P02 pueden reutilizar estas cifras.
+- **Impuestos del dueño y de la sociedad** (hechos nuevos, research §16 [T10]): income tax del libro = tipos **ilustrativos
+  15 % (dos primeros años con beneficio) y 25 % después**, «ask your CPA»; IRS: **LLC de un socio = disregarded, va en la
+  declaración del dueño; varios socios = partnership; Form 8832 para tributar como corporation**; **self-employment tax
+  15.3 % (12.4 % Social Security + 2.9 % Medicare)** para el sole proprietor sobre sus net earnings. Sin «autónomos»: el
+  sueldo del dueño es bruto, antes de sus impuestos.
+- **Fuentes ES conservadas como ejemplo europeo**: Matias/Mallorca (8-12 % neto, 47 empleados, turrón 40 %) y el par
+  5,000 → 7,200 «de una guía española (12-jul-2026)», **sin nombre** («Pasteleria» da ERROR en el gate) **y sin moneda**
+  («in its own currency»). Contraste US añadido: Toast food cost 28-35 % → margen bruto 65-72 % (el 68 % cae dentro) y neto
+  típico 3-5 % del sector alimentario. Temperatura escrita «41 °F» con espacio (como T04-T06; T07 la escribió sin espacio:
+  **unificar en el ensamblado**).
 ### T11
 ### T12
 ### B01
