@@ -140,3 +140,26 @@
   temperature (°F)» = 41; el 24 h → «Date-mark if held over (hours)» con «N/A»; «Refrigerated case» / «Room-temperature
   case»). Las cabeceras «Techo del art. 4.1 fila 9» y «Techo del art. 9.3» (G, H) → «Food Code cold-holding limit (°F),
   3-501.16»; las dos salen 41.
+- T11: startup-cost-calculator "VAT-GST & Cash": lee el impuesto de "Startup Costs by Block", que usa el tipo de "Settings"
+  (B13 «Sales tax rate on purchases», T03). Con 8.25 % tecleado, sus filas por bloque y el desembolso (A21:A26) están BIEN
+  para EE. UU. (es caja que sale), pero el bloque A15:A18 «Cuándo vuelve ese IVA» lo trataría como recuperable: A15 → «When
+  it comes back (UK, Canada and Australia only; US sales tax on purchases is a cost and never comes back)»; E18 (Hacienda,
+  régimen general, registro de devolución mensual) → «A VAT/GST-registered business usually offsets it on its returns at the
+  pace it collects tax, not on a fixed date; ask your accountant»; A3 → «In the US, sales tax on what you buy is a cost; this
+  sheet's recovery rows are for VAT/GST». Cabeceras B5:D5 = las de CAPEX K5:M5 (texto compartido): «Pre-tax cost» · «Tax
+  paid» · «Total with tax», coherentes con la tabla del cap. 19 («Sales tax at 8.25%» / «Cash out with sales tax»).
+- T11: 3-year-financial-plan "Startup Investment" + "12-Month Cash Flow": el tipo de impuesto de cada línea de "Startup
+  Investment" alimenta la fila 19 («VAT to carry forward, investment included») y se compensa desde el mes 4 → si un lector US
+  teclea ahí su sales tax, el libro se lo «devuelve». Nota en la columna de tipo: «VAT/GST you recover (UK, Canada, Australia).
+  In the US, add your sales tax to each line's amount instead and leave this at 0%». "12-Month Cash Flow": A10 «Sales
+  collected (VAT/GST included where it applies; $0 of tax in the US)», A12/A13 «(VAT/GST included)», A14 «Payroll (wages plus
+  payroll taxes, workers' comp and benefits)», O14 (15 pagas, meses dobles) → «12 equal payrolls: no extra-pay months»,
+  filas 17-21 «VAT/GST memo (UK, Canada, Australia; $0 in the US)», A21 «VAT/GST payment on your return» (fuera modelo 303),
+  O21 sin enero/303, A31 «Startup investment to pay back (before tax)», A34 sin Impuesto de Sociedades («income tax isn't in
+  this table»).
+- T11: 3-year-financial-plan "Financing": A8 (ICO, ENISA, subvenciones) → «Other sources (SBA Microloan, equipment financing,
+  CDFI, grants, partners)»; H8 → «Zero by default»; H6 (25-30 % de fondos propios) → «Ask your lender how much of your own
+  money it expects to see» (sin cifra); H11 → «Startup costs plus any VAT/GST you front (outside the US); in the US, put
+  sales tax inside the cost lines»; A3 «sistema francés» → «level-payment (amortizing) loan, monthly schedule»; H116 y A23
+  sin «Impuesto de Sociedades» → «the workbook's illustrative income tax». El texto cita: $936.57 · 84 meses · 6 de solo
+  intereses · DSCR 3.24 mínimo.

@@ -557,6 +557,48 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   típico 3-5 % del sector alimentario. Temperatura escrita «41 °F» con espacio (como T04-T06; T07 la escribió sin espacio:
   **unificar en el ensamblado**).
 ### T11
+- **Títulos del cap. 19**: Financing and Debt Service · Sales Tax Follows How You Sell, Not What You Sell · Your Sales Tax
+  Permit and the POS You Buy Today · Packaging: the Cake Box, Foam and PFAS, State by State · Food Waste: What the Rules Ask
+  of a Small Shop, Exactly. El índice de T01 (cap. 19) no nombra el desperdicio: si se quiere, añadir «and what to do with
+  what doesn't sell» (opcional; no lo toqué).
+- **Préstamo (cifras intactas, hoja "Financing")**: $60,000 al 6.2 % (**supuesto del caso, no un tipo de mercado**), cuota
+  **$936.57**, **84 pagos con los 6 primeros solo intereses**, intereses año 1 **$3,671.10**, DSCR mínimo **3.24** (año 1).
+  Tabla: Year · Interest ($) · Principal repaid ($) · Total payment ($) · **Cash flow available for debt service ($)** · **Debt
+  service coverage ratio (DSCR)**. Fuentes US (research §10.1): **SBA 7(a)** hasta $5 M (SBA Express $500,000), plazo ≤ 10
+  años equipo/circulante; **SBA Microloan** ≤ $50,000 (media ≈ $13,000; no para deuda ni inmuebles) → los $60,000 del caso
+  = **7(a) o préstamo bancario convencional**; equipment financing/leasing y CDFIs sin cifras. «SBA-backed loan» como T03.
+  P01/P02 y bonus usan lo mismo; nunca un % de fondos propios exigido (el 25-30 % del ES no está verificado en EE. UU.).
+- **Caja de arranque (§3-bis)**: necesidad **$227,916** = préstamo $60,000 + **$167,916** propios; el working capital
+  **$62,115** es el saldo con el que abres; mínimo **$61,346 en el mes 3**; mes 12 **$87,811**; flujo año 1 **$25,696**;
+  nóminas **$7,731.34 todos los meses**. Sales tax del CAPEX: $161,480 → **≈ $13,322 al 8.25 %** → $241,238, «for
+  illustration, not added to the case». La tabla por bloques del cap. 19 = **mismas cifras que la de T03** pero citada como
+  hoja "VAT-GST & Cash" «with 8.25% typed into "Settings"»; su pie dice que las filas de recuperación son solo UK/CA/AU.
+  Reserva de 3-6 meses de costes = «industry guides (Toast, for coffee shops; a third-party estimate)».
+- **Sales tax (cap. 19)**: frase fija «Sales tax isn't set by product family: it follows how you sell»; regla de los cuatro
+  estados con sus fuentes (CDTFA Reg. 1603 · NY TB-ST-283 / TB-ST-806 · TX 34 TAC §3.293 · FL TIP 10A01-22). **Ojo**: en
+  Texas el disparador NO es la mesa sino **el plato o los cubiertos del vendedor**; no escribir «taxable at your tables in all
+  four» sin esa salvedad. NY TB-ST-806 = «restaurant-type business, which a bakery-café with tables may be» (no afirmar que
+  lo sea). El caso (mostrador sin mesas, Texas) = ventas de mostrador exentas, capa de impuesto a cero. Sin IVA medio de carta.
+- **Verifactu → permiso y TPV**: «sales tax permit (also called a seller's permit)» en la fase **P2** del libro de permisos;
+  «the state sets your filing schedule when it registers you» (sin frecuencias); el **POS que distingue to-go / for-here y lo
+  reporta por separado** (FL: tecla o caja aparte; CA 80/80: contabilidad separada); aviso: tipos locales (TX hasta +2 %) y la
+  reescritura propuesta de la **Rule 12A-1.011** de Florida «we couldn't confirm had taken effect».
+- **Envases (cuadra con T06 y T10)**: confirmación ESCRITA del proveedor de que papel y cartón no llevan PFAS añadido (NY
+  31-dic-2022; CA 1-ene-2023, AB 1200, ≥ 100 ppm de flúor orgánico total), una vez por producto y archivada; EPS: NY
+  1-ene-2022, CA (CalRecycle 4-abr-2025 por no llegar al 25 % de SB 54; AG 2-dic-2025, hasta $50,000/día); FL: el poliestireno
+  lo regula el estado (ordenanzas anteriores a 2016 exceptuadas); TX: «we found no statewide ban»; etiqueta de lo envasado en
+  tienda 3-602.11(B) + ley de alérgenos de NY (firmada 12-nov-2025, **vigencia sin confirmar**: «ask your inspector»).
+- **Desperdicio (sustituye la Ley 1/2025)**, hechos nuevos en research §16 [T11]: **SB 1383** (CalRecycle) solo para grandes
+  generadores (supermercados > 10,000 sq ft, restaurantes > 5,000 sq ft o 250+ asientos, hoteles 200+ habitaciones, mayoristas
+  y distribuidores): donar el máximo, acuerdos escritos, registros → el caso (969 sq ft, sin mesas) no entra por tamaño; **AB
+  1826** reciclaje de orgánicos (umbral bajado a 2 yd³ de residuos en sept. 2020) → «ask your hauler»; **Bill Emerson Act**
+  (42 U.S.C. §1791, enmienda 5-ene-2023: también donación directa; restaurantes, caterers y retail grocers en la lista):
+  protege al donante salvo negligencia grave o dolo; no deroga las normas sanitarias. Rebaja = **day-old rack con su cartel y
+  su tecla en el POS**; NO hay «regla de los 30 días» en EN. **B03 (decisión 12)** debe cuadrar con esto.
+- **T12 (anexo) debe listar** las fuentes que el cap. 19 manda al anexo: CDTFA Reg. 1603 · NY TB-ST-283, TB-ST-806 ·
+  Texas Comptroller (34 TAC §3.293; pubs. 94-117 y 96-280, y comptroller.texas.gov/taxes/sales/) · FL DOR TIP 10A01-22 · SBA
+  loans y microloans · NYSDEC (foam, PFAS) · CA AG (EPS) · FL Stat. §500.90 · CalRecycle (SB 1383 donors; AB 1826) ·
+  42 U.S.C. §1791 (LII).
 ### T12
 ### B01
 ### B02
