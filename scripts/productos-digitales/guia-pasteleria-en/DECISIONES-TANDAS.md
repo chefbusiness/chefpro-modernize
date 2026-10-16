@@ -63,8 +63,8 @@ producto ES, el Kit de Tareas ni Hosply.
   anótalo en §9).
 - CAPEX: ES «227.916 € sin IVA · IVA soportado 33.911 € · desembolso 261.826 €» → EN **$227,916 before sales tax**. Sales
   tax pagado en equipo y obra = **coste** en EE. UU. (no se recupera); la base gravada del ejemplo es **$161,481**
-  (= 33.911 ÷ 0,21): a un tipo combinado del 8.25 % (el máximo de Texas, si el research lo confirma) serían ≈ **$13,322**
-  más. Así se dice; no se suma al caso.
+  (= 33.911 ÷ 0,21): a un tipo combinado del 8.25 % serían ≈ **$13,322** más (T03 verifica en comptroller.texas.gov que 6.25 % estatal +
+  hasta 2 % local = 8.25 % máximo y lo añade a `F1-research-us.md` §16). Así se dice; no se suma al caso.
 - Tesorería: el adelanto y la devolución del IVA desaparecen en EE. UU. (las hojas pasan a «VAT/GST & Cash (UK, Canada,
   Australia)»). Las cifras de caja que cambian por eso (necesidad de caja al arranque, saldos mensuales…) llegan en el
   mapa de §3-bis cuando se recalculen los libros en el VPS; hasta entonces, las tandas T10, T11, P01 y P02 esperan.
@@ -75,11 +75,52 @@ producto ES, el Kit de Tareas ni Hosply.
 
 ## 4. Carta: nombres EN de las 30 referencias (SPEC D14)
 
-(pendiente del research §13)
+Receta, gramos, costes y precios intactos (precio pre-tax, §3). Los marcados ⚑ llevan el nombre español en cursiva y el
+descriptor inglés entre paréntesis **la primera vez** en cada capítulo; después, solo el nombre. Nota única en el cap. 3:
+«Your shop will swap seasonal items for local ones (king cake, pan de muerto, Thanksgiving pies); the costing method is
+the same.»
+
+| id | ES | EN | id | ES | EN |
+|---|---|---|---|---|---|
+| B1 | Croissant de mantequilla | Butter croissant | T3 | Tarta de manzana | Apple tart (nunca «apple pie») |
+| B2 | Pain au chocolat | Pain au chocolat (chocolate croissant) | T4 | Tarta de zanahoria | Carrot cake |
+| B3 | Napolitana de crema | Custard napolitana (cream-filled laminated pastry) ⚑ | T5 | Tarta Sacher | Sachertorte |
+| B4 | Palmera de hojaldre | Palmier | T6 | Tarta de nata y fresas | Strawberries & cream cake (nunca «strawberry shortcake») |
+| B5 | Caracola de pasas | Raisin snail (pain aux raisins) | PA1 | Barra | Baguette |
+| B6 | Ensaimada | *Ensaïmada* (Mallorcan spiral pastry) ⚑ | PA2 | Chapata | Ciabatta |
+| PI1 | Milhojas | Napoleon (mille-feuille) | PA3 | Hogaza de masa madre | Sourdough boule |
+| PI2 | Éclair | Éclair | PA4 | Pan de molde | Sandwich loaf (pullman) |
+| PI3 | Macarons de frambuesa | Raspberry macarons | TP1 | Roscón de Reyes | Rosca de Reyes (Three Kings bread) |
+| PI4 | Tartaleta de frutas | Fruit tart | TP2 | Torrijas | *Torrijas* (Spanish Easter French toast) ⚑ |
+| PI5 | Lionesa o profiterol | Cream puff (profiterole) | TP3 | Buñuelos de viento | *Buñuelos de viento* (Spanish cream-filled fritters) ⚑ — nunca «buñuelos» a secas (en US es el disco frito mexicano) |
+| PI6 | Entremet individual | Individual entremet (mousse cake) | TP4 | Huesos de santo | *Huesos de santo* (marzipan "saints' bones") ⚑ |
+| T1 | Tarta de chocolate 70 % | 70% dark chocolate cake | TP5 | Panellets | *Panellets* (almond and pine-nut cookies) ⚑ |
+| T2 | Tarta de queso | Cheesecake | TP6 | Polvorón o mantecado | Polvorones (Spanish shortbread) |
+| — | — | — | TP7 | Turrón de almendra | Almond turrón (nougat) |
+| — | — | — | TP8 | Mona de Pascua | *Mona de Pascua* (Catalan Easter cake) ⚑ |
+
+Familias: Bollería → **Viennoiserie** · Pastelería individual → **Individual pastries** · Tartas y entremets → **Cakes and
+entremets** · Panes de acompañamiento → **Breads** · Temporada → **Seasonal**.
 
 ## 5. Perfiles del equipo y tabla de sueldos (SPEC D12)
 
-(pendiente del research §5)
+Perfiles (`PERFILES_KIT`): Jefe Pastelero → **Head Pastry Chef** · Pastelero → **Pastry Cook** · Ayudante → **Bakery
+Assistant** · Dependiente Vitrina → **Counter Associate** (dos personas: Counter Associate A y B). «Oficial» no existe.
+
+Tabla de 6 grupos → tabla de sueldos por puesto (mismas 6 filas, mismo orden; claves IDÉNTICAS en texto y xlsx):
+1 Técnicos y titulados superiores → **Office and administration (degree-level)** · 2 Dirección, jefes y encargados →
+**Management and supervisors** · 3 Personal especialista → **Skilled specialists** · 4 Personal cualificado →
+**Qualified staff** · 5 Personal de apoyo → **Support staff** · 6 Servicios auxiliares → **Auxiliary services**.
+Sueldo mensual EN = ES × 15/12 (12 pagos, anual idéntico): grupo 1 $2,167.35 · 2 $1,784.86 · 3 $1,721.14 · 4 $1,561.78 ·
+5 y 6 $1,490.53 al mes; anual $26,008.20 · $21,418.35 · $20,653.65 · $18,741.30 · $17,886.30. **Por hora** (anual ÷ 2,080):
+$12.50 · $10.30 · $9.93 · $9.01 · $8.60. Comparación honesta (research §5): mediana BLS 2025 de *bakers* **$17.86/h**,
+*fast food and counter workers* $15.00/h; mínimos 2026: TX $7.25 (federal) · CA $16.90 · NY $17.00/$16.00 · FL $14.00
+(«check FloridaCommerce for the current rate»). En CA, NY y FL el sueldo del ejemplo sería ilegal: dilo y pide sus cifras.
+Cargas: el 33 % del ejemplo = «payroll taxes, workers' comp and benefits»; lo obligatorio ronda el **10 %** (FICA 7.65 %
++ FUTA 0.6 % + SUTA + workers' comp, research §5.2); el resto depende de si ofreces seguro médico y vacaciones pagadas.
+Mínimo del modelo: $7.25 × 2,080 = **$15,080/año** ($1,256.67/mes); la tabla lo supera.
+Horas: 1,780 h/año = «annual hours actually worked (after paid time off and holidays)»; productivas 85 %.
+Menores (research §5.1): < 16 no hornean ni trabajan antes de las 7:00; < 18 no manejan amasadoras ni laminadoras (HO 11).
 
 ## 6. Seis picos (SPEC D13)
 
