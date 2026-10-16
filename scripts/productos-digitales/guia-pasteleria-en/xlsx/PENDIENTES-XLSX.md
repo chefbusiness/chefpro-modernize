@@ -69,3 +69,17 @@
   como «1» y «0.5»; formato **0.00** (el texto dice 0.74 y 0.46 kg per usable sq ft a week). B6 = 129.17 → formato entero (129).
 - T05: «Suministro a Otros Minoristas» (→ "Selling Wholesale"): el radio (verde 50) y las distancias de las cuentas son
   **km del ES bajo un rótulo en millas**: convertir (× 0.621371 → 31 mi) o reescribir el semilla; el texto no da cifra.
+- T08: «plantilla-turnos-y-coste-personal» (→ staff-schedule-and-labor-cost.xlsx): áreas **OBRADOR → «PRODUCTION KITCHEN»**,
+  **COMERCIO → «FRONT COUNTER»**, ADMINISTRACIÓN → «ADMINISTRATION» en los valores (Turnos Semanales C11:C15, Parámetros E8:E13)
+  **y** en los literales de fórmula E17:K18 (SUMIF), o la cobertura se rompe; A17/A18 → «PRODUCTION KITCHEN hours per day» /
+  «FRONT COUNTER hours per day»; A19 «Counter coverage» con «Covered» / «Closed» / «NOBODY»; turnos D11:D15 «Early bake
+  (04:30-12:30)» · «Early bake (05:00-13:00)» · «Morning (07:00-11:00)» · «Morning (08:00-12:00)» · «Afternoon (16:30-20:30)»;
+  días L M X J V S D → Mon…Sun. "Hours and Cost": D6 «Pay grade», L6 **«Employer cost per hour worked»**, N6 «Minimum wage check»
+  con N7:N11 «Below the annual minimum wage»; A3/A32 (33 % = «payroll taxes, workers' comp and benefits», no «quince pagas y
+  Seguridad Social»); Parámetros A6 y comentarios C8:C13 (convenio de Madrid/BOCM) → «The modeled case's wage table: an example,
+  not a legal schedule. Replace it with what you'll pay; check federal, state and city minimum wage» ; G8:G13 (plus de
+  nocturnidad) → «Base pay, before overtime. Federal law has no night or weekend premium; check your state.»; F8:F13 puestos como la
+  tabla 2 de T08. Plan de Contratación K7:K11 (alta en la Seguridad Social) → «Before the first shift: Form I-9, payroll
+  setup and workers' comp (optional in Texas)» (§8-bis P6; nada más sin research). Turnos Semanales A35 (Kit de Tareas, 12 €) → «your daily task checklists».
+- T08: «plan-financiero-3-anos-pasteleria» "Staff": nombres de puesto de la tabla de 6 grupos (F15:F20) iguales que la tabla 2 de
+  T08; áreas en el mismo vocabulario (PRODUCTION KITCHEN / FRONT COUNTER / ADMINISTRATION).

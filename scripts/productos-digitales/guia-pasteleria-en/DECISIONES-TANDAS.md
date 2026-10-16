@@ -397,6 +397,43 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
 - **Huevo (sustituye art. 9 RD 1021/2022)**: tres vías = cocer del todo / servir con huevo crudo o poco cocido (consumer advisory, no es tu vía) / ovoproducto pasteurizado para lo que no pasa por calor; sin cifras de cocción (el research no las trae; el ES daba 70 °C/63 °C). Consecuencias con el research §3: TCS por pH y aw (1-201.10), ≤ 41°F (3-501.16), date marking si > 24 h, máximo 7 días con el día de elaboración = día 1 (3-501.17). Las «dos salidas» de la hoja = **legal limit** (41°F + 7 días) y **declared shelf life** (tu food safety plan). Escrito «41°F» sin espacio. Si la hoja "Egg & TCS Decision" ya emitida usa otros literales, alinear.
 - **Ventas cruzadas**: «Guía Food Cost y de Ingeniería de Menú» → Food Cost + Menu Engineering Guide; «Kit de Escandallos» → Food Cost Kit Pro ("unit costing of three pastry preparations").
 ### T08
+- **Áreas del equipo** (valores de columna y literales de fórmula `SUMIF`, IGUAL en texto y xlsx): OBRADOR → **PRODUCTION
+  KITCHEN** · COMERCIO y DESPACHO → **FRONT COUNTER** · ADMINISTRACIÓN → **ADMINISTRATION** (mayúsculas como en el ES).
+  Filas de la cobertura: «PRODUCTION KITCHEN hours per day» · «FRONT COUNTER hours per day» · «Counter coverage» con
+  **Covered / Closed** (y «SIN NADIE» → **NOBODY**). Turnos: Madrugada → **Early bake** · Mañana → **Morning** · Tarde →
+  **Afternoon**, horas del caso intactas (04:30-12:30…). «TOTAL de la plantilla» → **TOTAL for the team**. «Grupo de
+  convenio» = **Pay grade**; tabla de 6 = columnas Group · Name · Monthly pay ($) · Annual pay ($) · Functional areas · Roles
+  the table lists (puestos: head of the production kitchen · lead production baker, section lead, head counter associate ·
+  production baker, lead packer, counter associate, delivery driver · production assistant, finisher, counter assistant ·
+  general laborer, cleaner, stock clerk).
+- **«Coste por hora» de "Hours and Cost"** = **«Employer cost per hour worked ($)»** = coste de empresa ÷ (1,780 h × FTE):
+  $16.00 · $15.43 · $13.36 · $14.00 · $14.00. No confundir con el **sueldo por hora** (anual ÷ 2,080: $12.50…$8.60) ni con
+  los $17.94 de T07. Totales del caso: brutos **$69,756.45** · cargas **$23,019.63** · coste anual **$92,776.08** · al mes
+  **$7,731.34**; «jornadas equivalentes» → **FTEs** (3.5); 140 h/semana; 0 días sin nadie en el mostrador.
+- **Cap. 13, mínimos y mercado**: la tabla del caso se presenta como ejemplo, nunca como dato del sector; supera los $7.25
+  federales/Texas y sería **ilegal** en CA ($16.90), NY ($17.00/$16.00) y FL. **Florida se escribe «$14.00 … until
+  September 29, 2026 (… check FloridaCommerce for the current one)»**. Contraste BLS May 2025: bakers $17.86 · fast food
+  and counter workers $15.00 (sec. 2) · supervisors $21.19 · chefs and head cooks $30.03 (sec. 4, «falta de personal»).
+- **El 33 % en EE. UU.**: FICA 7.65 % + FUTA 0.6 % (6.0 % sobre $7,000 con crédito) + SUTA (ejemplo CA 3.4 % + ETT 0.1 %
+  sobre $7,000) + workers' comp ≈ **10 %**; el resto, beneficios (seguro médico, PTO). **Texas: workers' comp opcional**
+  para el empleador privado (*non-subscriber*: lo comunica al estado y reporta lesiones de > 1 día de baja; TDI, research
+  §16); el caso lo mantiene dentro del 33 %. Esta cifra de Texas vale para P01/P02 y B02 si hablan de cargas.
+- **Cap. 14, jornada**: FLSA = registro de horas por día y total semanal; payroll records **3 años**, registros de tiempo
+  **2 años**; **cualquier método** («Employers may use any timekeeping method they choose… complete and accurate», DOL
+  Fact Sheet #21): sustituye el «papel o una hoja de cálculo valen» del art. 34.9 ET. Overtime > 40 h/semana a 1.5×, sin
+  overtime diario federal. El «aviso sin fecha» de la reforma española → reglas estatales (pausas de CA: 30 min si > 5 h,
+  10 min por cada 4 h, penalización 1 h) + predictive scheduling (SF, LA, Chicago, Seattle, Philadelphia, NYC; Oregón
+  estatal; casi siempre con umbral de tamaño).
+- **Prevención → «Workplace Safety… and the Rules for Minors»**: preguntas al *workers' comp carrier or insurer* y al
+  **OSHA On-Site Consultation Program** (gratis, confidencial, separado de la inspección; research §16); sin límites de
+  exposición ni normas citadas. El 4.º riesgo (turnos de noche) pasa a **menores**: < 16 no hornean ni antes de las 7:00
+  (14-15: 7:00-19:00, 21:00 de junio a Labor Day); < 18 nada de amasadoras/laminadoras/máquinas de galletas eléctricas (HO
+  11, Fact Sheet #43) → **el early bake shift es solo de adultos**.
+- **Matías (Pomar)** se queda como **ejemplo europeo declarado** («Matias», sin tilde ni marca: «Pastelerías» da ERROR en el
+  gate): 47 empleados, 10 familia, entrevista en prensa española 21-nov-2025. «Kit de Tareas Pastelería» → **«your daily
+  task checklists»**; «firmar el contrato» → **«make a job offer / your first hire»**. **T12 (anexo)** debe listar: tabla
+  DOL de mínimos por estado (July 1, 2026), FloridaCommerce, CA Labor Commissioner (pausas), DOL Fact Sheets #21 y #43,
+  OSHA On-Site Consultation y TDI (non-subscribers), porque el cap. 13-14 remite al anexo para comprobarlos.
 ### T09
 ### T10
 ### T11
