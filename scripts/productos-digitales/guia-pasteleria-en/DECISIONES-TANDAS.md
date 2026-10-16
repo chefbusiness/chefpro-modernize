@@ -349,6 +349,45 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   Categorías de "Capacity by Equipment": **Mixing · Sheeting · Heat · Refrigeration · Freezing · Storefront and display**;
   columna final «Kitchen pieces per day it allows»; 192 piezas abatidas/día (48 × 4) = 480 de obrador al 40 %.
 ### T05
+- **UNOX XB693 y SMEG ALFA420E1HDS → genéricos** (decisión que T03 dejó a T05): unox.com/us_us lista precios «taxes
+  excluded» y modelos a 480 V 3~, pero no Bakerlux ni XB693 en la parte visible; XB693 se vende fuera a 380-415 V 3~ y
+  SMEG da 400 V 3N~ (opción 230 V) sin ficha US (research §16). Nombres: **«Convection oven, 6 trays»** y **«Convection
+  oven, 4 trays»** (sin marca), Source «Example price», $2,772.00 / $2,077.20. **T03 tiene que alinearse**: filas 60-61 de
+  su tabla («— UNOX XB693 Bakerlux», «— SMEG ALFA420E1HDS») y su pie («check that the model is sold in the US in your
+  voltage» → sobra). Ídem el CAPEX xlsx (PENDIENTES).
+- **Tabla del cap. 8 ("Equipment")**: columnas Line item · Brand · Model · Priority · Reference price ($) · **Price basis** ·
+  Pre-tax price ($) · Lead time (weeks). Las 8 líneas «Example price» sin modelo US confirmado llevan Brand **«Not named»** y
+  en Model la ficha (p. ej. «Electric, with humidity, 6 trays (600 × 400 mm)»); Irinox queda («MultiFresh line»); las 14
+  «Assumption» (horno de pisos incluido, como en T03) van sin marca ni modelo. «Price basis» = **«pre-tax» en las 22**
+  (config ya pone J16/J17 = 'pre-tax'; falta J22, el «no declarada» de la batidora). Prioridad: **Critical / Optional**.
+- **Trampa del IVA → trampa del list price**: el precio de distribuidor US va sin sales tax, sin freight (liftgate / inside
+  delivery), sin instalación ni puesta en marcha, y la versión de voltaje/fase cambia el modelo. Cifras: paquete **$86,501**
+  pre-tax (crítico **$66,980**); el libro sale al 0 % → cash-out = $86,501; ilustración al 8.25 % ≈ **$7,136** (≈ **$5,526**
+  sobre lo crítico), no sumada al caso. Los 18.165 € / 104.666 € del ES desaparecen.
+- **Ventless (cap. 8)**: la variante de "Format Variant" del libro de equipo = **$60,480** = base $66,980 − ducto $6,500;
+  el texto lo reconcilia con T01 (formato ventless del CAPEX **$167,180** > $165,800: hornos eléctricos + Type II cuestan más).
+  Plazo crítico **9 semanas** (retarder-proofer), apertura a **20 semanas** con **2** de colchón → margen **9**; referencia US
+  «usually ships in 6 weeks» (KDPR11). Segunda mano: factura, mantenimiento y **marca NSF/ANSI (4-205.10) + placa con
+  modelo, voltaje y fase** (8-201.12); gas → instalador con licencia y gas permit (sustituye al certificado de gas).
+- **Cap. 9, títulos de sección**: «Your Permit: a Local Food Permit, Not an FDA Registration» · «When FDA Registration Comes
+  Back: the Gateway and the Three Checks» · «A Central Kitchen and Your Own Shops: One Owner, Several Sites» · «Four
+  Example States, and How to Find Yours» · «The Home Route: Cottage Food, State by State». Expediente: **30 pasos P1-P6, 8
+  marcados "Yes" en «Varies by state?»** (los 8 «Sí» del ES caen en los mismos pasos), con M1-M12 en "Timeline and Critical Path".
+- **Mayorista (cap. 9 = hoja "Selling Wholesale")**: las tres condiciones acumulativas del ES pasan a **tres checks** donde
+  **solo el primero (la línea del 50 %, FDA) decide el registro**; cold chain (41 °F, radio en millas = cifra propia) y
+  labels (3-602.11(B) / 3-602.12(C)) no cambian el permiso pero la hoja exige los tres para el verde. Vía a) = cuota % con
+  **línea de trabajo prudente del 25 %**; vía b) = $ a consumidores vs $ a empresas en una semana típica (los 500 kg del ES
+  desaparecen). Papeles: registro de cuentas + resale certificates (CPA). Las 3 tablas del cap. 9 = filas de la hoja
+  (3 casos de "Which Permit Do I Need"; 5 filas «What you can sell from home»; 3 «channel rules» de "Cottage Food Route").
+- **Central + sucursales**: no hay «unidad comercial» US. Se dice: lo vendido en tus propias tiendas llega a consumidores
+  («on a plain reading» no suma al lado mayorista), **con cautela explícita**: el test de la FDA es por establecimiento y no
+  encontramos cómo trata una cocina en otro edificio que solo vende por las tiendas del dueño → «ask FDA or a food attorney».
+  Cada tienda: plan review + inspección; permiso propio = pregunta a la agencia (3.ª pregunta de "Which Permit Do I Need").
+  Bonus 7 y cap. 17 no deben afirmar más que esto.
+- **Cottage food (cap. 9)**: 12 m² → **129 usable sq ft**; 60 kg (132 lb)/semana → **0.46 kg per usable sq ft a week**
+  frente al criterio de la casa **0.74**; techo semanal **100 kg (about 220 lb, ~14 kg/día)**, criterio propio, no ley; la
+  prueba documental = **sales records** bajo el tope en $ del estado. Etiquetas literales TX/NY/FL de research §2 (CA sin
+  frase: PDF no abierto). Remite a **bonus decision 10** para el salto a cocina con licencia.
 ### T06
 ### T07
 ### T08

@@ -50,3 +50,22 @@
   (BizBuySell, BizQuest or a local business broker, with the date read); valora por lo que gana el negocio: pide 3 años de
   tax returns y P&L, el payroll y el contrato de alquiler (sin modelos 303/390 ni Seguridad Social). J6/J8 sin Gràcia ni
   Barcelona: «Seeded with the case's own takeover (915 sq ft), an ASKING price».
+- T05: «Equipamiento» (→ "Equipment") del libro de equipo: nombres de línea IGUAL que la tabla del cap. 8 (= T03); Marca y
+  Modelo: UNOX, SMEG, Docriluc (×2), Sammic DF-40 y BE-20, Selmi → **«Not named»** + ficha en Modelo (textos en la tabla de
+  T05); Salva → marca y modelo vacíos (es «Assumption», como en T03); Irinox / «MultiFresh line» se queda. Columna
+  «¿Lleva IVA?» → **«Price basis»** con lista «pre-tax · incl. sales tax · not stated»; **J22** («no declarada», batidora)
+  → «pre-tax» como J16/J17. Prioridad Crítico/Opcional → Critical/Optional. NOTAS_LIBRO: la nota «LA COLUMNA QUE MÁS
+  DINERO MUEVE ES ¿Lleva IVA?… 21 %… 14.000 €» → la trampa US (list price sin sales tax, freight/liftgate, instalación,
+  voltaje y fase; el sales tax del equipo es coste); «Nueve líneas traen precio publicado… trece un supuesto» → **«Eight
+  lines carry an example price and fourteen an assumption»** (el horno de pisos es Assumption, T03); fuera «libro 2/5/6/7»
+  → nombres EN de fichero. **T03 + «CAPEX por Bloque»**: quitar «UNOX XB693 Bakerlux» y «SMEG ALFA420E1HDS» de los nombres
+  de partida → «Convection oven, 6 trays» / «Convection oven, 4 trays».
+- T05: «Variante del Formato» del libro de equipo (→ "Format Variant"): las 7 descripciones citan PS-xx, € publicados y el
+  RD 1021/2022. EN: nombres de T01 (Home-based bakery under cottage food · Closed-door production kitchen · Mid-size pastry
+  shop (the case) · Bakery-café · Small bake-off shop · Wholesale production kitchen for restaurants and cafés · Ventless
+  pastry shop (no Type I hood)) y descripciones sin cifras ES; la ventless: «All-electric ovens under a Type II hood, or
+  listed to UL 710B; saves the exhaust duct and rules out frying». Su total tiene que seguir dando **$60,480** (base − ducto).
+- T05: «Ruta Doméstica» (→ "Cottage Food Route") **B15 y B16**: con los formatos del ES (entero y 0.0), 0.743 y 0.4645 se ven
+  como «1» y «0.5»; formato **0.00** (el texto dice 0.74 y 0.46 kg per usable sq ft a week). B6 = 129.17 → formato entero (129).
+- T05: «Suministro a Otros Minoristas» (→ "Selling Wholesale"): el radio (verde 50) y las distancias de las cuentas son
+  **km del ES bajo un rótulo en millas**: convertir (× 0.621371 → 31 mi) o reescribir el semilla; el texto no da cifra.
