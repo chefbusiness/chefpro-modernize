@@ -177,6 +177,22 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   quien ya tiene local). Tú a tú, inglés de EE. UU., cercano, sin jerga corporativa.
 - Fuentes US: nombre del organismo y año en el cuerpo («BLS, May 2024»); URL completa solo en el anexo.
 
+## 8-bis. Libro de permisos (`permits-and-licenses-checklist.xlsx`, ya escrito): lo que el texto debe citar igual
+
+- 30 pasos en 6 fases **P1-P6** (5/5/3/5/6/6): P1 zoning, hood type (Type I/II) and duct route, landlord's written OK,
+  electrical service, 7 zones + required sinks · P2 LLC/sole proprietor + DBA, EIN + bank, state sales tax permit +
+  employer registration, stamped plans, lease with permit contingency · P3 health plan review, building permit and change
+  of use, business license and sign permit · P4 build-out, equipment order with lead time in writing, fire marshal (hood
+  suppression, Class K), electrical permit, ADA counter · P5 food establishment permit and pre-opening inspection, FDA
+  registration check (50% line), food safety plan + CFPM as person in charge, training log, written allergen notice, FLSA
+  timekeeping · P6 hiring (state minimum wage, I-9, workers' comp), minors on the early shift, POS that tags to-go/for-here,
+  labels on in-store packaged food, sales tax setup, insurance. Hitos H1-H12 → **M1-M12**.
+- "Selling Wholesale": el 25 % del ES queda como **línea de trabajo prudente propia** («our cautious working line»); la
+  línea LEGAL es el **50 %** de ventas a negocios (FDA, 21 CFR 1.226(c)/1.227). Cítalo así en la decisión 7 del bonus y en
+  el cap. 17.
+- "Cottage Food Route": los 100 kg/semana = techo de trabajo propio para una cocina doméstica, no cifra legal; los topes
+  legales en $ por estado van en las notas (research §2).
+
 ## 9. Decisiones de cada tanda (añádelas bajo tu tanda)
 
 ### T01
