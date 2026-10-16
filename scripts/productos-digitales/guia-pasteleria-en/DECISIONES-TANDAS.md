@@ -62,7 +62,7 @@ producto ES, el Kit de Tareas ni Hosply.
   PVP medio ponderado con IVA 2,46 € → su pre-tax (lo fija la tanda que lo cite, ÷ 1,0x según el IVA medio de la carta:
   anótalo en §9).
 - CAPEX: ES «227.916 € sin IVA · IVA soportado 33.911 € · desembolso 261.826 €» → EN **$227,916 before sales tax**. Sales
-  tax pagado en equipo y obra = **coste** en EE. UU. (no se recupera); la base gravada del ejemplo es **$161,481**
+  tax pagado en equipo y obra = **coste** en EE. UU. (no se recupera); la base gravada del ejemplo es **$161,480** (valor del libro: 161,480.34)
   (= 33.911 ÷ 0,21): a un tipo combinado del 8.25 % serían ≈ **$13,322** más (T03 verifica en comptroller.texas.gov que 6.25 % estatal +
   hasta 2 % local = 8.25 % máximo y lo añade a `F1-research-us.md` §16). Así se dice; no se suma al caso.
 - Tesorería: el adelanto y la devolución del IVA desaparecen en EE. UU. (las hojas pasan a «VAT/GST & Cash (UK, Canada,
@@ -263,6 +263,45 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   35% of sales (Toast)», y el pie de la tabla de la carta pide comparar precios con las bakeries de alrededor (no hay dato
   US de precios en el research).
 ### T03
+- **Sales tax del CAPEX (cap. 4)**: el caso se queda en **$227,916 before sales tax** (libro al 0 %) y esa es la caja que usan
+  el plan financiero y el resto de la guía. Ilustración, sin sumarla al caso: líneas que pueden llevar sales tax =
+  **$161,480** (valor exacto del libro 161,480.34; el «$161,481» de §3 sale de redondear 33.911 ÷ 0,21: **conviene
+  alinear §3**) → al **8.25 %** (máximo combinado de Texas: 6.25 % estatal + hasta 2 % local, verificado en
+  comptroller.texas.gov, research §16) ≈ **$13,322** → **$241,238** con impuesto. Las dos tablas del cap. 4 muestran esa
+  ilustración en las columnas de impuesto («lo que devuelve el libro si tecleas 8.25 % en "Settings"»). Qué líneas grava
+  cada estado varía (equipo y mobiliario en general sí; obra, honorarios y marketing según estado; NY eximió equipo de
+  obrador usado > 50 % para venta para llevar, TSB-A-24(19)S). "VAT-GST & Cash" = solo para quien recupera VAT/GST.
+- **Bloques de "Startup Costs by Block"** (texto y xlsx IGUAL): Build-out and building systems · Production kitchen equipment ·
+  Storefront and display · Permits, plans and fees · Security deposit · Opening packaging · Opening marketing · Working
+  capital · fila total «STARTUP COSTS TOTAL». Columna «Procedencia» → **«Source»** con 4 valores (fuera PS-*/PA-*):
+  Build-out scenario · Example price · Assumption · Food Code + assumption. «¿El precio lleva IVA?» → «Price includes sales
+  tax?» = «No» en las 31 líneas (UNOX $2,772.00 y SMEG $2,077.20 pre-tax).
+- **Partidas readaptadas** (nombres EN del cap. 4; T05 y el xlsx los usan igual): marcas sin respaldo en research §11 →
+  genérico: Docriluc → «Refrigerated bakery display case, curved glass, about 5 ft» (+ «Rear sliding doors… (accessory)») ·
+  Sammic DF-40 → «Dough sheeter, up to 16 in wide» · Sammic BE-20 → «Planetary mixer, 20 qt» · Selmi One → «Chocolate
+  tempering machine, 12 kg (26 lb)» · Salva → «Modular deck oven, 1 to 5 decks». **Irinox** se queda (research §11);
+  **UNOX XB693 Bakerlux y SMEG ALFA420E1HDS se quedan** como «example price» con «check that the model is sold in the US
+  in your voltage» (research §11 no los confirma: **T05 decide**). Fregadero doble + lavamanos de pedal → «Three-compartment
+  sink, hand sink and mop sink» (Food Code 4-301.12, 5-203.11, 5-203.13; el «no manual» NO es requisito US y no se dice).
+  TPV Verifactu → «POS terminal and software». Tasas municipales $1,800 → «City and county permit fees (building permit,
+  certificate of occupancy)»; registro autonómico $120 → «Health department plan review and food permit application»
+  (supuestos; al lado, Austin $312 plan review + $178 pre-opening, FY 2025-26).
+- **Cifras del cap. 4 sustituidas**: Pomar/La Hostelera/Gijón (200-300k, 100k, 137k, 160,900, 17.4 %) → Toast $10-50K ·
+  Zenind por modelo · RestaurantOwner.com $375,500; la validación compara la **inversión de apertura $165,800** (sin
+  working capital) con esos rangos. Obra: **$55.74 / $83.61 / $111.48 per sq ft** (el texto da bajo y alto) con aviso de
+  que son supuestos del caso (no hay cifra US comprobable por sq ft). Lo que no entra en el precio por sq ft: hood
+  $5,000-$28,000 + supresión $3,000-$12,000 y grease interceptor $2,000-$8,000 (estimaciones publicadas, [DÉBIL]).
+- **Unidades del cap. 5**: 969 sq ft; zonas 484 · 237 · 54 · 43 · 32 · 86 · 32 sq ft (mismos %); «obrador de 25 m²» → 269 sq ft;
+  50/150 m² → 538/1,615 sq ft; caudal 1,360 m³/h → **800 CFM**; altura 3.0 m → **9.8 ft**; cámara 8 m³ ≈ 283 cu ft;
+  amasadora 25 kg → 55 lb de masa; congelador −18 °C → 0 °F; cámara de la tabla de zonas ≤ **41 °F** (Food Code 3-501.16).
+  kW se quedan (34 hornos · 62 total); el servicio eléctrico se pide «in amps and volts, and whether it's three-phase»,
+  sin cifra de amperios (la da el electricista).
+- **Marco US del cap. 5**: las siete zonas son el plano del caso (no hay lista US de siete); se anclan en el plan review
+  (Food Code 8-201.11/8-201.12). Acabados: 6-201.11 (smooth, durable, easily cleanable) + 6-201.13 (coved, ≤ 1/32 in) +
+  Texas 25 TAC §228.171 (paredes y techos claros) + lavamanos 5-203.11; mostrador ADA 904.4.1. La regla española «no
+  recircular / conducto propio» se sustituye por el **tipo de campana** (IMC 507: Type I con supresión para piso/pizza, Type II
+  para convección eléctrica cerrada, ninguna para un horno ligero o UL 710B): en EE. UU. lo ventless SÍ existe.
+  «Marcha adelante» → **one-way flow**; «ficha de visita» → "Site Visit Checklist" (18 ítems, 8 **deal-breakers**).
 ### T04
 ### T05
 ### T06
