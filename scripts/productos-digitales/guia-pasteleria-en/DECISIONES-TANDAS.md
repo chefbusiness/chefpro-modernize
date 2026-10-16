@@ -410,8 +410,8 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   protection manager (CFPM) exam» · P2 Pastry Cook · «Food handler card + allergen awareness» · P3 Bakery Assistant · «Food
   handler card» · P4/P5 Counter Associate A/B · COUNTER · «Food handler card + allergens at the counter»; 6 h cada uno
   (supuesto); 5 con formación, 0 vencidas; **730 días = criterio de la casa** (la tarjeta de CA dura 3 años por ley). Las
-  áreas siguen **KITCHEN / COUNTER** como en ese libro (la regla PRODUCTION KITCHEN / FRONT COUNTER de T08 es de los libros de
-  plantilla y plan financiero): si se quiere un solo vocabulario, cambiar los dos a la vez.
+  áreas: **PRODUCTION KITCHEN / FRONT COUNTER** en todo el pack (unificado por el orquestador el 17-oct: texto T06 y libro de
+  permisos cambiados).
 - **Tabla P5 del cap. 10** = filas C37:J42 del libro de permisos: Owner ×5 y **Attorney or CPA** (timekeeping); plazos 5 · 5
   · 20 · 10 · 5 · 5; $120 · Get a quote · **$800** · **$240** · Get a quote · Get a quote; «Varies by state?» **Yes** solo en
   el permiso (los «No» del xlsx se conservan para que sigan siendo 8 «Yes» en P1-P6, T05); el pie aclara que el paso de
