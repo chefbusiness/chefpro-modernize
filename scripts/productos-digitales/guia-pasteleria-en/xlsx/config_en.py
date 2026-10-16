@@ -39,6 +39,9 @@ FACTORES_UNIDAD = {
     'sq ft/m²': SQFT_PER_M2,
     'por sq ft (÷ sq ft/m²)': 1 / SQFT_PER_M2,
     'CFM/(m³/h)': 1 / M3H_PER_CFM,
+    'ft/m': 3.280839895013123,
+    'cu ft/m³': 35.31466672148859,
+    'por cu ft': 1 / 35.31466672148859,
 }
 
 
@@ -78,7 +81,16 @@ TABLA_6_GRUPOS = (1733.88, 1427.89, 1376.91, 1249.42, 1192.42, 1192.42)
 _capex_unox, _capex_unox0 = _celdas('CAPEX por Bloque', {'H7': 3354.12, 'I7': 3354.12, 'J7': 3354.12,
                                                          'H8': 2513.41, 'I8': 2513.41, 'J8': 2513.41},
                                     lambda v: neto(v, 0.21))
-_eq_unox, _eq_unox0 = _celdas('Equipamiento', {'I16': 3354.12, 'I17': 2513.41}, lambda v: neto(v, 0.21))
+# «Variante del Formato» K:L = horquilla publicada. PENDIENTES-XLSX (T01): rangos US de Zenind 2026 en las tres filas que
+# los tienen (fila 15 caso base = small retail, 16 casera = home-based, 17 obrador a puerta cerrada = production). Las
+# filas 18-22 deberían quedar VACÍAS y aplicar_en.py no sabe vaciar una celda (ver CONFIG-NOTAS §5).
+RANGOS_US = {'K15': 50000, 'L15': 100000, 'K16': 15000, 'L16': 25000, 'K17': 75000, 'L17': 150000}
+_fmt_us = [('Variante del Formato', ref, ('set', v)) for ref, v in RANGOS_US.items()]
+_fmt_us0 = [('Variante del Formato', ref, v) for ref, v in RANGOS_US.items()]
+# Filas 18-22 sin horquilla US publicada (T01): se VACÍAN (op 'vaciar' de aplicar_en.py; la referencia del gate también)
+_fmt_us += [('Variante del Formato', 'K18:L22', ('vaciar', None))]
+_fmt_us0 += [('Variante del Formato', 'K18:L22', None)]
+_eq_unox, _eq_unox0 =_celdas('Equipamiento', {'I16': 3354.12, 'I17': 2513.41}, lambda v: neto(v, 0.21))
 _carta_pvp =[('Coste Hora y Mano de Obra', 'L%d' % r, ('set', neto(v, t))) for r, (v, t) in PVP_CARTA.items()]
 _carta_pvp0 = [('Coste Hora y Mano de Obra', 'L%d' % r, neto(v, t)) for r, (v, t) in PVP_CARTA.items()]
 _picos_pvp = [('Calendario de 6 Picos', 'H%d' % r, ('set', neto(v, t))) for r, (v, t) in PVP_PICOS.items()]
@@ -108,10 +120,10 @@ LIBROS = {
             ('Parámetros', 'B7:B9', ('mul', 1 / SQFT_PER_M2)),     # 600/900/1,200 €/m² -> $/sq ft (D8)
             ('Parámetros', 'B13:B15', ('set', 0)),                 # IVA general 21 % · pastelería 10 % · tasas 0 % (D7)
             ('Traspaso vs Obra Nueva', 'C26:C30', ('mul', SQFT_PER_M2)),   # m² de los 5 traspasos con superficie (D8)
-        ] + _capex_unox,                                           # UNOX/SMEG con IVA -> ÷ 1.21 (D7)
+        ] + _capex_unox + _fmt_us,                                 # UNOX/SMEG con IVA -> ÷ 1.21 (D7) · rangos US (T01)
         'texto': {('CAPEX por Bloque', 'F7'): EN_NO, ('CAPEX por Bloque', 'F8'): EN_NO},   # «¿Lleva IVA?» Sí -> No
         'dv': {},
-        'impuesto0': [('Parámetros', 'B13:B15')] + _r0(_capex_unox0),
+        'impuesto0': [('Parámetros', 'B13:B15')] + _r0(_capex_unox0) + _r0(_fmt_us0),
     },
     # ===================================================================================================== capacidad
     'capacidad-obrador-y-local.xlsx': {
@@ -128,6 +140,10 @@ LIBROS = {
             ('Capacidad por Equipo', 'G14', ('mul', 1 / SQFT_PER_M2)),  # 130 piezas por m² -> por sq ft (D8)
             ('Ficha de Visita a Local', 'F8', ('mul', 1 / M3H_PER_CFM)),   # caudal medido 1,400 m³/h (D8)
             ('Ficha de Visita a Local', 'F13', ('mul', SQFT_PER_M2)),      # superficie útil medida 92 m² (D8)
+            ('Parámetros', 'B22', ('mul', 3.280839895013123)),         # altura libre mínima 3 m -> ft (D8 ampliado)
+            ('Ficha de Visita a Local', 'F12', ('mul', 3.280839895013123)),  # altura medida 3,2 m -> ft
+            ('Capacidad por Equipo', 'E13', ('mul', 35.31466672148859)),      # cámara 8 m³ -> cu ft
+            ('Capacidad por Equipo', 'G13', ('mul', 1 / 35.31466672148859)),  # piezas por m³ -> por cu ft
         ],
         'dv': {},
         'impuesto0': [],

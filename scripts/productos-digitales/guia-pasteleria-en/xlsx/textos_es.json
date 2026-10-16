@@ -299,6 +299,9 @@
   "IVA de la pastelería que vas a vender": [
    "Parámetros!A14"
   ],
+  "Verificado el 10-09-2026 · Ley 37/1992 del IVA, arts. 91.Uno.1.1.º y 91.Dos.1.1.º (texto consolidado, última modificación 28-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740": [
+   "Parámetros!A14 [comment]"
+  ],
   "PA-36": [
    "Parámetros!D14"
   ],
@@ -710,6 +713,9 @@
   "La compra más cara y la que más se discute (decisión 2 del bonus 2). Ciclos de +85 °C a -40 °C. Un arcón doméstico NO vale como abatidor: el art. 5 del RD 1021/2022 exige potencia suficiente para llegar a -18 °C en el centro con un descenso ininterrumpido (PA-13).": [
    "CAPEX por Bloque!O11"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 5 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "CAPEX por Bloque!O11 [comment]"
+  ],
   "Laminadora automática de masa, hasta 40 cm — Sammic DF-40": [
    "CAPEX por Bloque!C12"
   ],
@@ -782,6 +788,9 @@
   "SUPUESTO, no precio de ficha. PS-84 dice «puede superar los 6.000 €»: es una frase, no un presupuesto. La partida que más locales tumba, y la que hay que resolver ANTES de firmar (cap. 06). El aire de la campana es categoría AE4 del RITE y no puede compartir conducto con el del despacho (PA-07b).": [
    "CAPEX por Bloque!O17"
   ],
+  "Verificado el 10-09-2026 · RD 1027/2007 (RITE), IT 1.1.4.2.5 «Aire de extracción» (texto consolidado, última modificación 02-08-2022) · https://www.boe.es/buscar/act.php?id=BOE-A-2007-15820": [
+   "CAPEX por Bloque!O17 [comment]"
+  ],
   "Amasadora de espiral, 25 kg": [
    "CAPEX por Bloque!C18"
   ],
@@ -850,6 +859,9 @@
   "SUPUESTO, no precio de ficha. El software que compres HOY ya tiene que estar adaptado: la obligación del fabricante es anterior a la tuya (PA-37). Y el TPV es el que separa el 10 %, el 4 % y el 21 % de la venta para llevar (PA-36d).": [
    "CAPEX por Bloque!O25"
   ],
+  "Verificado el 10-09-2026 · RD 1007/2023, disposición final cuarta y arts. 3.1 y 3.2 del Reglamento (texto consolidado, última modificación 03-12-2025 por el RD-ley 15/2025) · https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840": [
+   "CAPEX por Bloque!O25 [comment]"
+  ],
   "Vitrina o armario expositor de temperatura ambiente": [
    "CAPEX por Bloque!C26"
   ],
@@ -911,6 +923,9 @@
   ],
   "No es una licencia y NO habilita para abrir: es un trámite de información que se presenta al iniciar la actividad (PA-04). El importe es supuesto y en varias CCAA es gratuito.": [
    "CAPEX por Bloque!O32"
+  ],
+  "Verificado el 10-09-2026 · DECRETO 26/2026, de 25 de marzo, del Consejo de Gobierno (Comunidad de Madrid), arts. 6, 8.1, 9.1, D.T. única y D.F. segunda. BOCM núm. 73 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/03/27/BOCM-20260327-1.PDF": [
+   "CAPEX por Bloque!O32 [comment]"
   ],
   "Fianza y garantías": [
    "CAPEX por Bloque!B33",
@@ -1908,6 +1923,11 @@
   "Caudal de campana necesario": [
    "Parámetros!A21"
   ],
+  "Verificado el 10-09-2026 · RD 1027/2007 (RITE), IT 1.1.4.2.5 «Aire de extracción» (texto consolidado, última modificación 02-08-2022) · https://www.boe.es/buscar/act.php?id=BOE-A-2007-15820": [
+   "Parámetros!A21 [comment]",
+   "Ficha de Visita a Local!D6 [comment]",
+   "Ficha de Visita a Local!J7 [comment]"
+  ],
   "Gas": [
    "Parámetros!B21 [formula-lit]",
    "Parámetros!A28"
@@ -1987,6 +2007,10 @@
   "Zona de elaboración, inaccesible al público (art. 2.2.h del RD 1021/2022, PA-03b). Principio de marcha adelante: la materia prima entra por un extremo y el producto terminado sale por el otro sin cruzarse con ella.": [
    "Zonas y m2!G6"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 2.2.h), i) y j) (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Zonas y m2!G6 [comment]",
+   "Ficha de Visita a Local!J14 [comment]"
+  ],
   "Zona de venta (despacho)": [
    "Zonas y m2!B7"
   ],
@@ -2013,6 +2037,10 @@
   ],
   "Conservación a 4 °C o menos de lo relleno (art. 4.1 fila 9, PA-12).": [
    "Zonas y m2!G9"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 4.1 (tabla), 4.2 y 4.3 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Zonas y m2!G9 [comment]",
+   "Capacidad por Equipo!B13 [comment]"
   ],
   "Almacén de producto terminado": [
    "Zonas y m2!B10"
@@ -2429,6 +2457,9 @@
   ],
   "Abatidor de temperatura, 4 bandejas": [
    "Capacidad por Equipo!B12"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 5 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Capacidad por Equipo!B12 [comment]"
   ],
   "Frío negativo": [
    "Capacidad por Equipo!C12"
@@ -3042,6 +3073,9 @@
   "El calendario del RD 193/2023 para titularidad privada es el 1-ene-2029 en bienes y servicios nuevos y el 1-ene-2030 en los existentes; el art. 25.2 obliga sin umbral de superficie a garantizar la accesibilidad o a hacer ajustes razonables.": [
    "Ficha de Visita a Local!J21"
   ],
+  "Verificado el 10-09-2026 · RD 193/2023, de 21 de marzo, arts. 17.2, 17.3, 17.4 y 25.2 y disposición final sexta (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2023-7417": [
+   "Ficha de Visita a Local!J21 [comment]"
+  ],
   "Si el horno es de gas, la instalación receptora está al día": [
    "Ficha de Visita a Local!B22"
   ],
@@ -3050,6 +3084,9 @@
   ],
   "Las instalaciones receptoras alimentadas desde red se inspeccionan cada cinco años, y el coste se repercute al usuario. Hasta 70 kW instalados la inspección incluye los aparatos de gas.": [
    "Ficha de Visita a Local!J22"
+  ],
+  "Verificado el 10-09-2026 · RD 919/2006, ITC-ICG 07, apartado 4.1 (texto consolidado, última modificación 03-09-2025) · https://www.boe.es/buscar/act.php?id=BOE-A-2006-15345": [
+   "Ficha de Visita a Local!J22 [comment]"
   ],
   "El contrato y las cargas del local están claros antes de firmar": [
    "Ficha de Visita a Local!B23"
@@ -3247,6 +3284,12 @@
   "2 · Dirección, jefes y encargados": [
    "Parámetros!C6"
   ],
+  "Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!D6 [comment]",
+   "Parámetros!D7 [comment]",
+   "Parámetros!D8 [comment]",
+   "Parámetros!B11 [comment]"
+  ],
   "Turno: Madrugada (04:30-12:30). Sólo el área OBRADOR entra en el coste hora: el despacho no fabrica.": [
    "Parámetros!G6"
   ],
@@ -3432,6 +3475,35 @@
   "IVA de pastelería, bollería y confitería": [
    "Parámetros!A19"
   ],
+  "Verificado el 10-09-2026 · Ley 37/1992 del IVA, arts. 91.Uno.1.1.º y 91.Dos.1.1.º (texto consolidado, última modificación 28-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740": [
+   "Parámetros!B19 [comment]",
+   "Coste Hora y Mano de Obra!M6 [comment]",
+   "Coste Hora y Mano de Obra!M7 [comment]",
+   "Coste Hora y Mano de Obra!M8 [comment]",
+   "Coste Hora y Mano de Obra!M9 [comment]",
+   "Coste Hora y Mano de Obra!M10 [comment]",
+   "Coste Hora y Mano de Obra!M11 [comment]",
+   "Coste Hora y Mano de Obra!M12 [comment]",
+   "Coste Hora y Mano de Obra!M13 [comment]",
+   "Coste Hora y Mano de Obra!M14 [comment]",
+   "Coste Hora y Mano de Obra!M15 [comment]",
+   "Coste Hora y Mano de Obra!M16 [comment]",
+   "Coste Hora y Mano de Obra!M17 [comment]",
+   "Coste Hora y Mano de Obra!M18 [comment]",
+   "Coste Hora y Mano de Obra!M19 [comment]",
+   "Coste Hora y Mano de Obra!M20 [comment]",
+   "Coste Hora y Mano de Obra!M21 [comment]",
+   "Coste Hora y Mano de Obra!M22 [comment]",
+   "Coste Hora y Mano de Obra!M23 [comment]",
+   "Coste Hora y Mano de Obra!M28 [comment]",
+   "Coste Hora y Mano de Obra!M29 [comment]",
+   "Coste Hora y Mano de Obra!M30 [comment]",
+   "Coste Hora y Mano de Obra!M31 [comment]",
+   "Coste Hora y Mano de Obra!M32 [comment]",
+   "Coste Hora y Mano de Obra!M33 [comment]",
+   "Coste Hora y Mano de Obra!M34 [comment]",
+   "Coste Hora y Mano de Obra!M35 [comment]"
+  ],
   "sobre base": [
    "Parámetros!C19",
    "Parámetros!C20",
@@ -3446,6 +3518,13 @@
   "IVA del pan del RD 308/2019": [
    "Parámetros!A20"
   ],
+  "Verificado el 10-09-2026 · Resolución de 24 de febrero de 2025, de la Dirección General de Tributos, sobre el tipo del IVA aplicable al pan. BOE núm. 50, BOE-A-2025-3950 · https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3950": [
+   "Parámetros!B20 [comment]",
+   "Coste Hora y Mano de Obra!M24 [comment]",
+   "Coste Hora y Mano de Obra!M25 [comment]",
+   "Coste Hora y Mano de Obra!M26 [comment]",
+   "Coste Hora y Mano de Obra!M27 [comment]"
+  ],
   "PA-36b": [
    "Parámetros!D20"
   ],
@@ -3454,6 +3533,9 @@
   ],
   "IVA en zona de degustación": [
    "Parámetros!A21"
+  ],
+  "Verificado el 10-09-2026 · Ley 37/1992 del IVA, art. 91.Uno.2.2.º (texto consolidado, última modificación 28-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740": [
+   "Parámetros!B21 [comment]"
   ],
   "PA-36c": [
    "Parámetros!D21"
@@ -3489,6 +3571,39 @@
   "Techo de la fila 9 del art. 4.1": [
    "Parámetros!A28"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 4.1 (tabla), 4.2 y 4.3 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Parámetros!B28 [comment]",
+   "Decisión de Huevo y Temperatura!G6 [comment]",
+   "Decisión de Huevo y Temperatura!G7 [comment]",
+   "Decisión de Huevo y Temperatura!G8 [comment]",
+   "Decisión de Huevo y Temperatura!G9 [comment]",
+   "Decisión de Huevo y Temperatura!G10 [comment]",
+   "Decisión de Huevo y Temperatura!G11 [comment]",
+   "Decisión de Huevo y Temperatura!G12 [comment]",
+   "Decisión de Huevo y Temperatura!G13 [comment]",
+   "Decisión de Huevo y Temperatura!G14 [comment]",
+   "Decisión de Huevo y Temperatura!G15 [comment]",
+   "Decisión de Huevo y Temperatura!G16 [comment]",
+   "Decisión de Huevo y Temperatura!G17 [comment]",
+   "Decisión de Huevo y Temperatura!G18 [comment]",
+   "Decisión de Huevo y Temperatura!G19 [comment]",
+   "Decisión de Huevo y Temperatura!G20 [comment]",
+   "Decisión de Huevo y Temperatura!G21 [comment]",
+   "Decisión de Huevo y Temperatura!G22 [comment]",
+   "Decisión de Huevo y Temperatura!G23 [comment]",
+   "Decisión de Huevo y Temperatura!G24 [comment]",
+   "Decisión de Huevo y Temperatura!G25 [comment]",
+   "Decisión de Huevo y Temperatura!G26 [comment]",
+   "Decisión de Huevo y Temperatura!G27 [comment]",
+   "Decisión de Huevo y Temperatura!G28 [comment]",
+   "Decisión de Huevo y Temperatura!G29 [comment]",
+   "Decisión de Huevo y Temperatura!G30 [comment]",
+   "Decisión de Huevo y Temperatura!G31 [comment]",
+   "Decisión de Huevo y Temperatura!G32 [comment]",
+   "Decisión de Huevo y Temperatura!G33 [comment]",
+   "Decisión de Huevo y Temperatura!G34 [comment]",
+   "Decisión de Huevo y Temperatura!G35 [comment]"
+  ],
   "°C": [
    "Parámetros!C28",
    "Parámetros!C29"
@@ -3501,6 +3616,70 @@
   ],
   "Techo del art. 9.3": [
    "Parámetros!A29"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 9.3 en relación con el art. 4.1 fila 9 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Parámetros!B29 [comment]",
+   "Parámetros!B30 [comment]",
+   "Decisión de Huevo y Temperatura!H6 [comment]",
+   "Decisión de Huevo y Temperatura!K6 [comment]",
+   "Decisión de Huevo y Temperatura!H7 [comment]",
+   "Decisión de Huevo y Temperatura!K7 [comment]",
+   "Decisión de Huevo y Temperatura!H8 [comment]",
+   "Decisión de Huevo y Temperatura!K8 [comment]",
+   "Decisión de Huevo y Temperatura!H9 [comment]",
+   "Decisión de Huevo y Temperatura!K9 [comment]",
+   "Decisión de Huevo y Temperatura!H10 [comment]",
+   "Decisión de Huevo y Temperatura!K10 [comment]",
+   "Decisión de Huevo y Temperatura!H11 [comment]",
+   "Decisión de Huevo y Temperatura!K11 [comment]",
+   "Decisión de Huevo y Temperatura!H12 [comment]",
+   "Decisión de Huevo y Temperatura!K12 [comment]",
+   "Decisión de Huevo y Temperatura!H13 [comment]",
+   "Decisión de Huevo y Temperatura!K13 [comment]",
+   "Decisión de Huevo y Temperatura!H14 [comment]",
+   "Decisión de Huevo y Temperatura!K14 [comment]",
+   "Decisión de Huevo y Temperatura!H15 [comment]",
+   "Decisión de Huevo y Temperatura!K15 [comment]",
+   "Decisión de Huevo y Temperatura!H16 [comment]",
+   "Decisión de Huevo y Temperatura!K16 [comment]",
+   "Decisión de Huevo y Temperatura!H17 [comment]",
+   "Decisión de Huevo y Temperatura!K17 [comment]",
+   "Decisión de Huevo y Temperatura!H18 [comment]",
+   "Decisión de Huevo y Temperatura!K18 [comment]",
+   "Decisión de Huevo y Temperatura!H19 [comment]",
+   "Decisión de Huevo y Temperatura!K19 [comment]",
+   "Decisión de Huevo y Temperatura!H20 [comment]",
+   "Decisión de Huevo y Temperatura!K20 [comment]",
+   "Decisión de Huevo y Temperatura!H21 [comment]",
+   "Decisión de Huevo y Temperatura!K21 [comment]",
+   "Decisión de Huevo y Temperatura!H22 [comment]",
+   "Decisión de Huevo y Temperatura!K22 [comment]",
+   "Decisión de Huevo y Temperatura!H23 [comment]",
+   "Decisión de Huevo y Temperatura!K23 [comment]",
+   "Decisión de Huevo y Temperatura!H24 [comment]",
+   "Decisión de Huevo y Temperatura!K24 [comment]",
+   "Decisión de Huevo y Temperatura!H25 [comment]",
+   "Decisión de Huevo y Temperatura!K25 [comment]",
+   "Decisión de Huevo y Temperatura!H26 [comment]",
+   "Decisión de Huevo y Temperatura!K26 [comment]",
+   "Decisión de Huevo y Temperatura!H27 [comment]",
+   "Decisión de Huevo y Temperatura!K27 [comment]",
+   "Decisión de Huevo y Temperatura!H28 [comment]",
+   "Decisión de Huevo y Temperatura!K28 [comment]",
+   "Decisión de Huevo y Temperatura!H29 [comment]",
+   "Decisión de Huevo y Temperatura!K29 [comment]",
+   "Decisión de Huevo y Temperatura!H30 [comment]",
+   "Decisión de Huevo y Temperatura!K30 [comment]",
+   "Decisión de Huevo y Temperatura!H31 [comment]",
+   "Decisión de Huevo y Temperatura!K31 [comment]",
+   "Decisión de Huevo y Temperatura!H32 [comment]",
+   "Decisión de Huevo y Temperatura!K32 [comment]",
+   "Decisión de Huevo y Temperatura!H33 [comment]",
+   "Decisión de Huevo y Temperatura!K33 [comment]",
+   "Decisión de Huevo y Temperatura!H34 [comment]",
+   "Decisión de Huevo y Temperatura!K34 [comment]",
+   "Decisión de Huevo y Temperatura!H35 [comment]",
+   "Decisión de Huevo y Temperatura!K35 [comment]"
   ],
   "PA-15": [
    "Parámetros!D29",
@@ -3520,6 +3699,9 @@
   ],
   "Umbral analítico de «sin gluten»": [
    "Parámetros!A31"
+  ],
+  "Verificado el 10-09-2026 · Rgto. de Ejecución (UE) 828/2014, Anexo (A) y art. 5 · https://www.boe.es/buscar/doc.php?id=DOUE-L-2014-81720": [
+   "Parámetros!B31 [comment]"
   ],
   "mg/kg": [
    "Parámetros!C31"
@@ -5600,6 +5782,12 @@
    "Decisión de Huevo y Temperatura!D5",
    "Decisión de Huevo y Temperatura DV errorTitle D6 D7 D8 D9 D10 D11 "
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 9.1 y 9.2 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Decisión de Huevo y Temperatura!D5 [comment]",
+   "Decisión de Huevo y Temperatura!A50 [comment]",
+   "Decisión de Huevo y Temperatura!A51 [comment]",
+   "Decisión de Huevo y Temperatura!A52 [comment]"
+  ],
   "¿Producto relleno?": [
    "Decisión de Huevo y Temperatura!E5"
   ],
@@ -6605,6 +6793,9 @@
   "ALCANCE LEGAL DE ESTA HOJA: QUÉ NO RESUELVE Y POR QUÉ. La congelación (PA-13, art. 5) es del PROCESO, no de la vitrina: va en el APPCC y en el «13-registro-temperaturas-recepcion.xlsx» del Kit de Tareas, no aquí. Los 14 alérgenos (PA-21) tienen su propia matriz dedicada, el «12-control-alergenos-vitrina.xlsx»: repetirlos en esta tabla sería mantener el mismo dato en dos sitios y que se desincronicen. El RD 496/2010 de calidad (PA-24) fija denominaciones y composición, no temperaturas ni plazos: no cambia ni una celda de esta hoja. Y el RD 308/2019 del pan (PA-25) sólo aplica si tu carta incluye pan de verdad, cosa que decides en el libro 6, no aquí.": [
    "Decisión de Huevo y Temperatura!A62"
   ],
+  "PA-13: Verificado el 10-09-2026 · RD 1021/2022, art. 5 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681\nPA-21: Verificado el 10-09-2026 · RD 126/2015, arts. 4.1, 5.1, 6.2, 6.5 y 10 (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2015-2293\nPA-24: Verificado el 10-09-2026 · RD 496/2010, de 30 de abril, «Norma de calidad para los productos de confitería, pastelería, bollería y repostería», apartados 1.1 a 1.4 (texto consolidado, SIN MODIFICACIONES) · https://www.boe.es/buscar/act.php?id=BOE-A-2010-7714\nPA-25: Verificado el 10-09-2026 · RD 308/2019, arts. 2, 3, 5, 7, 8, 10 y 14.5 (texto consolidado, última modificación 27-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-2019-6994": [
+   "Decisión de Huevo y Temperatura!A62 [comment]"
+  ],
   "Elige una de las cinco vías del art. 9 del RD 1021/2022 de la lista.": [
    "Decisión de Huevo y Temperatura DV error D6 D7 D8 D9 D10 D11 "
   ],
@@ -7170,6 +7361,9 @@
   "Tipo de IVA general (%)": [
    "Equipamiento!A7"
   ],
+  "Tipo general del IVA sobre la maquinaria (21 %) — Verificado el 10-09-2026 · Ley 37/1992 del IVA, arts. 91.Uno.1.1.º y 91.Dos.1.1.º (texto consolidado, última modificación 28-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740": [
+   "Equipamiento!C7 [comment]"
+  ],
   "Tipo general del art. 90.Uno de la Ley 37/1992. La maquinaria y el mobiliario van al 21 %: no hay tipo reducido para el equipamiento de un obrador. Cámbialo aquí y se recalcula toda la columna.": [
    "Equipamiento!D7"
   ],
@@ -7477,6 +7671,9 @@
    "Equipamiento!C20",
    "Variante del Formato!B20"
   ],
+  "El abatidor no es un capricho: el art. 5 exige llegar a -18 °C en el centro con descenso ininterrumpido — Verificado el 10-09-2026 · RD 1021/2022, art. 5 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Equipamiento!C20 [comment]"
+  ],
   "Irinox": [
    "Equipamiento!D20",
    "Equipamiento!Q20"
@@ -7655,6 +7852,9 @@
    "Equipamiento!C28",
    "Variante del Formato!B28"
   ],
+  "La cámara es la que sostiene los 4 °C de lo relleno — Verificado el 10-09-2026 · RD 1021/2022, art. 4.1 (tabla), 4.2 y 4.3 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Equipamiento!C28 [comment]"
+  ],
   "Es la que sostiene los 4 °C de la fila 9 del art. 4.1 (PA-12).": [
    "Equipamiento!W28",
    "Variante del Formato!M28"
@@ -7698,6 +7898,9 @@
   "TPV con software adaptado a Verifactu": [
    "Equipamiento!C34",
    "Variante del Formato!B34"
+  ],
+  "El software que compres hoy ya tiene que estar adaptado: la obligación del fabricante es anterior a la tuya — Verificado el 10-09-2026 · RD 1007/2023, disposición final cuarta y arts. 3.1 y 3.2 del Reglamento (texto consolidado, última modificación 03-12-2025 por el RD-ley 15/2025) · https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840": [
+   "Equipamiento!C34 [comment]"
   ],
   "PA-37 + supuesto": [
    "Equipamiento!V34"
@@ -9086,6 +9289,9 @@
   "Confirmar que existe salida de humos hasta cubierta y quién la autoriza": [
    "Checklist Legal (F1-F6)!C8"
   ],
+  "Verificado el 10-09-2026 · RD 1027/2007 (RITE), IT 1.1.4.2.5 «Aire de extracción» (texto consolidado, última modificación 02-08-2022) · https://www.boe.es/buscar/act.php?id=BOE-A-2007-15820": [
+   "Checklist Legal (F1-F6)!C8 [comment]"
+  ],
   "PS-86c: hasta cubierta y 1 m por encima de la cumbrera. Ojo: PA-07 corrige el research -el DB-HS 3 del CTE NO regula la ventilación de un local comercial, sólo viviendas y garajes-, así que lo que manda es el RITE más la ordenanza municipal. La comunidad de propietarios es el riesgo real, y no es normativo: es una junta.  [Fuente: PS-86c + PA-07]": [
    "Checklist Legal (F1-F6)!K8"
   ],
@@ -9157,6 +9363,9 @@
   ],
   "Alta censal (modelo 036) y epígrafe de IAE": [
    "Checklist Legal (F1-F6)!C16"
+  ],
+  "Verificado el 10-09-2026 · RDLeg 1175/1990, tarifas del IAE, epígrafes 419.1, 419.2, 644.1, 644.2 y 644.3 (texto consolidado, última modificación 21-03-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1990-23930": [
+   "Checklist Legal (F1-F6)!C16 [comment]"
   ],
   "Gestoría": [
    "Checklist Legal (F1-F6)!D16",
@@ -9303,6 +9512,9 @@
   "Certificado de instalación de gas y puesta en servicio (sólo si hay horno de gas)": [
    "Checklist Legal (F1-F6)!C31"
   ],
+  "Verificado el 10-09-2026 · RD 919/2006, ITC-ICG 07, apartado 4.1 (texto consolidado, última modificación 03-09-2025) · https://www.boe.es/buscar/act.php?id=BOE-A-2006-15345": [
+   "Checklist Legal (F1-F6)!C31 [comment]"
+  ],
   "Instalador habilitado": [
    "Checklist Legal (F1-F6)!D31",
    "Checklist Legal (F1-F6)!D32"
@@ -9315,6 +9527,9 @@
   ],
   "Comprobar accesibilidad del local": [
    "Checklist Legal (F1-F6)!C33"
+  ],
+  "Verificado el 10-09-2026 · RD 193/2023, de 21 de marzo, arts. 17.2, 17.3, 17.4 y 25.2 y disposición final sexta (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2023-7417": [
+   "Checklist Legal (F1-F6)!C33 [comment]"
   ],
   "PA-40: RD 193/2023, arts. 17 y 25 y D.F. sexta. Verificado letra a letra el 10-09-2026; mira el calendario dos veces.  [Fuente: PA-40]": [
    "Checklist Legal (F1-F6)!K33"
@@ -9337,11 +9552,23 @@
   "Presentar la comunicación o declaración responsable al registro sanitario de tu CCAA": [
    "Checklist Legal (F1-F6)!C37"
   ],
+  "Verificado el 10-09-2026 · RD 191/2011, art. 2.2, en la redacción dada por la disposición final primera del RD 1021/2022 (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Checklist Legal (F1-F6)!C37 [comment]",
+   "Árbol de Registro Sanitario!B6 [comment]",
+   "Árbol de Registro Sanitario!B12 [comment]",
+   "Árbol de Registro Sanitario!B14 [comment]"
+  ],
   "NO es el RGSEAA: una pastelería que vende al consumidor final está EXCLUIDA del registro estatal (PA-01). Es un trámite autonómico que NO habilita para abrir. En Madrid, Decreto 26/2026, en vigor desde el 28-03-2026: se presenta a la vez que inicias la actividad, no antes, y las que ya estaban abiertas tienen hasta el 28-03-2027 (PA-04).  [Fuente: PA-01 + PA-04]": [
    "Checklist Legal (F1-F6)!K37"
   ],
   "Comprobar si tu B2B te obliga a inscribirte en el RGSEAA": [
    "Checklist Legal (F1-F6)!C38"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 3.1 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Checklist Legal (F1-F6)!C38 [comment]",
+   "Árbol de Registro Sanitario!B7 [comment]",
+   "Suministro a Otros Minoristas!B6 [comment]",
+   "Suministro a Otros Minoristas!B41 [comment]"
   ],
   "Sólo aplica si suministras a otros comercios minoristas DE DISTINTA TITULARIDAD. Si entras, las tres condiciones son acumulativas -marginal Y localizado Y restringido- y dentro de «marginal» hay dos vías ALTERNATIVAS: 25 % del volumen anual o 500 kg a la semana en total. Lo de central y sucursales va aparte: son una sola unidad comercial, pero cada una se inscribe por separado (PA-03).  [Fuente: PA-02]": [
    "Checklist Legal (F1-F6)!K38"
@@ -9349,11 +9576,18 @@
   "Redactar el plan de APPCC y designar por su nombre a la persona responsable": [
    "Checklist Legal (F1-F6)!C39"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 20 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Checklist Legal (F1-F6)!C39 [comment]"
+  ],
   "PA-10: el APPCC simplificado es legal y está escrito (art. 20 del RD 1021/2022). Las guías sectoriales son voluntarias.  [Fuente: PA-10 + supuesto]": [
    "Checklist Legal (F1-F6)!K39"
   ],
   "Formación de manipuladores y registro de formación por persona": [
    "Checklist Legal (F1-F6)!C40"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022 (ausencia verificada sobre el índice completo) + RD 109/2010 (derogación del RD 202/2000) + Rgto. (CE) 852/2004, Anexo II, Cap. XII · https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:02004R0852-20210324": [
+   "Checklist Legal (F1-F6)!C40 [comment]",
+   "Registro de Formación!A21 [comment]"
   ],
   "PA-11: el «carnet de manipulador» NO existe desde 2010. Lo que hay que tener es un REGISTRO de formación, y es responsabilidad de la empresa.  [Fuente: PA-11 + supuesto]": [
    "Checklist Legal (F1-F6)!K40"
@@ -9361,11 +9595,17 @@
   "Matriz de alérgenos de vitrina publicada antes de abrir": [
    "Checklist Legal (F1-F6)!C41"
   ],
+  "Verificado el 10-09-2026 · RD 126/2015, arts. 4.1, 5.1, 6.2, 6.5 y 10 (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2015-2293": [
+   "Checklist Legal (F1-F6)!C41 [comment]"
+  ],
   "R3: la matriz de vitrina la resuelve el 12-control-alergenos-vitrina.xlsx del kit y la guía NO la rehace. Lo que sí construye la guía es la de OBRADOR: materias primas por alérgeno y orden de elaboración, que es otra cosa (PA-22).  [Fuente: PA-21]": [
    "Checklist Legal (F1-F6)!K41"
   ],
   "Fichar el sistema de registro de jornada": [
    "Checklist Legal (F1-F6)!C42"
+  ],
+  "Verificado el 10-09-2026 · RDLeg 2/2015 (Estatuto de los Trabajadores), art. 34.9, en la redacción dada por el art. 10 del RD-ley 8/2019 (texto consolidado del ET, última modificación 04-12-2025) · https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430": [
+   "Checklist Legal (F1-F6)!C42 [comment]"
   ],
   "PA-34: hoy vale papel o una hoja de cálculo, conservados 4 años. Hay una reforma de registro horario digital EN TRAMITACIÓN que lo prohibiría: comprueba el estado antes de comprar un sistema, y no des ninguna fecha por cierta.  [Fuente: PA-34]": [
    "Checklist Legal (F1-F6)!K42"
@@ -9388,11 +9628,17 @@
   "Contratar al equipo con el convenio y el grupo correctos": [
    "Checklist Legal (F1-F6)!C46"
   ],
+  "Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Checklist Legal (F1-F6)!C46 [comment]"
+  ],
   "PA-33: el convenio es PROVINCIAL o autonómico. El de Madrid tiene 6 grupos y 15 pagas. Los de Barcelona, Valencia y Sevilla NO están verificados: busca el tuyo. Y si abres pastelería-cafetería puede caerte el de hostelería, o convivir los dos por áreas funcionales: eso no está resuelto y es de dinero.  [Fuente: PA-33]": [
    "Checklist Legal (F1-F6)!K46"
   ],
   "Comprobar que ningún grupo del convenio queda por debajo del SMI": [
    "Checklist Legal (F1-F6)!C47"
+  ],
+  "Verificado el 10-09-2026 · RD 126/2026, de 18 de febrero, arts. 1, 3.1, 4.1 y 4.2 (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815": [
+   "Checklist Legal (F1-F6)!C47 [comment]"
   ],
   "PA-32: SMI 2026 de 1.221 €/mes en 14 pagas, 17.094 €/año como referencia ANUAL en cómputo global. En Madrid el grupo más bajo del convenio ya lo supera con 17.886,30 €: manda el convenio. Y las dos cosas caducan el 31-12-2026.  [Fuente: PA-32]": [
    "Checklist Legal (F1-F6)!K47"
@@ -9400,17 +9646,26 @@
   "Contratar el TPV y verificar que cumple Verifactu": [
    "Checklist Legal (F1-F6)!C48"
   ],
+  "Verificado el 10-09-2026 · RD 1007/2023, disposición final cuarta y arts. 3.1 y 3.2 del Reglamento (texto consolidado, última modificación 03-12-2025 por el RD-ley 15/2025) · https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840": [
+   "Checklist Legal (F1-F6)!C48 [comment]"
+  ],
   "PA-37: 1-ene-2027 para sociedades y 1-jul-2027 para autónomos. NO es 2026. Pero el software que compres hoy ya debe estar adaptado.  [Fuente: PA-37]": [
    "Checklist Legal (F1-F6)!K48"
   ],
   "Revisar las obligaciones de envases y de desperdicio alimentario": [
    "Checklist Legal (F1-F6)!C49"
   ],
+  "Verificado el 10-09-2026 · RD 1055/2022, arts. 2.f) y 2.j) (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-22690": [
+   "Checklist Legal (F1-F6)!C49 [comment]"
+  ],
   "PA-30: desde el 1-ene-2027, si tienes menos de 300 m², una referencia reutilizable de bebida. Y el art. 9.3 del RD 1055/2022 obliga a ACEPTAR el recipiente del cliente si vendes a granel: no es opcional. PA-31 y D15: de la Ley 1/2025 estás exento del PLAN del art. 6.4 si no pasas de 1.300 m², pero te siguen obligando el 6.2, el 6.3 y el 6.5; sólo si eres microempresa (6.6) quedas fuera del artículo entero. Nunca escribas «tu pastelería está exenta del plan» a secas.  [Fuente: PA-30 + PA-31]": [
    "Checklist Legal (F1-F6)!K49"
   ],
   "Decidir el horario y publicarlo": [
    "Checklist Legal (F1-F6)!C50"
+  ],
+  "Verificado el 10-09-2026 · Ley 1/2004, de 21 de diciembre, de Horarios Comerciales, arts. 3.1, 4.1, 4.2, 5.1 y 5.2 (texto consolidado, última modificación 17-10-2014) · https://www.boe.es/buscar/act.php?id=BOE-A-2004-21421": [
+   "Checklist Legal (F1-F6)!C50 [comment]"
   ],
   "PA-39: si la pastelería es la actividad PRINCIPAL tiene libertad horaria por ley estatal. No hay que pedir permiso para abrir en domingo. Los horarios generales sí los fija cada CCAA.  [Fuente: PA-39]": [
    "Checklist Legal (F1-F6)!K50"
@@ -9532,6 +9787,10 @@
   "¿Tienes sucursales de tu misma titularidad?": [
    "Árbol de Registro Sanitario!A8"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 3.6 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Árbol de Registro Sanitario!B8 [comment]",
+   "Árbol de Registro Sanitario!B16 [comment]"
+  ],
   "Central con obrador y sucursales son UNA sola unidad comercial y el suministro entre ellas no es B2B. Pero cada una se inscribe en el registro autonómico de manera independiente: la ventaja viene con su deber pegado.": [
    "Árbol de Registro Sanitario!C8"
   ],
@@ -9586,6 +9845,9 @@
   ],
   "Busca el decreto de tu comunidad: el plazo y el modelo los pone ella": [
    "Árbol de Registro Sanitario!B15 [formula-lit]"
+  ],
+  "Verificado el 10-09-2026 · DECRETO 26/2026, de 25 de marzo, del Consejo de Gobierno (Comunidad de Madrid), arts. 6, 8.1, 9.1, D.T. única y D.F. segunda. BOCM núm. 73 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/03/27/BOCM-20260327-1.PDF": [
+   "Árbol de Registro Sanitario!B15 [comment]"
   ],
   "Si tienes sucursales": [
    "Árbol de Registro Sanitario!A16"
@@ -9748,6 +10010,10 @@
   "Vía a) · Umbral del volumen anual (%)": [
    "Suministro a Otros Minoristas!A20"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 3.2 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Suministro a Otros Minoristas!B20 [comment]",
+   "Suministro a Otros Minoristas!B23 [comment]"
+  ],
   "«El suministro de alimentos a otros establecimientos de comercio al por menor es inferior o igual al 25 % del volumen anual de alimentos comercializados».": [
    "Suministro a Otros Minoristas!F20"
   ],
@@ -9784,6 +10050,10 @@
   "¿Todos tus destinatarios están en tu unidad sanitaria local, zona de salud o territorio equivalente, o en una zona limítrofe?": [
    "Suministro a Otros Minoristas!A29"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 3.3 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Suministro a Otros Minoristas!B29 [comment]",
+   "Suministro a Otros Minoristas!B30 [comment]"
+  ],
   "El texto no habla de kilómetros dentro de la misma comunidad: habla de unidad sanitaria local, zona de salud o territorio equivalente. Los kilómetros aparecen sólo para el comercio ENTRE comunidades autónomas.": [
    "Suministro a Otros Minoristas!F29"
   ],
@@ -9807,6 +10077,10 @@
   ],
   "Destinatarios inscritos en el RGSEAA": [
    "Suministro a Otros Minoristas!A36"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, arts. 3.4 y 3.5 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Suministro a Otros Minoristas!B36 [comment]",
+   "Suministro a Otros Minoristas!B42 [comment]"
   ],
   "«Una actividad se considerará restringida cuando no se suministren productos alimenticios a establecimientos inscritos en el RGSEAA». Es el requisito que más fácil se rompe: basta UN cliente inscrito.": [
    "Suministro a Otros Minoristas!F36"
@@ -9874,6 +10148,9 @@
   "¿Tu comunidad autónoma ha ampliado la lista del art. 13.8 por la letra e)?": [
    "Ruta Doméstica!A9"
   ],
+  "Verificado el 10-09-2026 · DECRETO 13/2025, de 28 de enero, del Consell, por el que se regula el Registro Sanitario de Establecimientos Alimentarios Menores de la Comunitat Valenciana, arts. 5.1, 8, 9 y Anexo único. DOGV núm. 10036 · https://dogv.gva.es/datos/2025/01/30/pdf/2025_911_es.pdf": [
+   "Ruta Doméstica!B9 [comment]"
+  ],
   "La Comunitat Valenciana ya lo hizo: su Decreto 13/2025 pasa la lista de cinco letras a ocho. Lo que NO amplía es la refrigeración: la repostería sigue teniendo que ser estable a temperatura ambiente.": [
    "Ruta Doméstica!C9"
   ],
@@ -9882,6 +10159,10 @@
   ],
   "Tope absoluto de la norma (kg a la semana)": [
    "Ruta Doméstica!A13"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 13.9 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Ruta Doméstica!B13 [comment]",
+   "Ruta Doméstica!B18 [comment]"
   ],
   "«En ningún caso podrán superar los 100 kilogramos semanales». Son unos 14 kg al día: una cocina doméstica no suele llegar, y por eso este contador casi siempre está en verde. No te fíes de eso.": [
    "Ruta Doméstica!C13"
@@ -9897,6 +10178,9 @@
   ],
   "Criterio propio de proporcionalidad (kg por m2 útil y semana)": [
    "Ruta Doméstica!A15"
+  ],
+  "CRITERIO PROPIO DE LA CASA, no de la norma. El art. 13.9 exige que el volumen sea «proporcional al tamaño de las instalaciones» pero NO da ningún número, así que aquí se propone uno para poder medirlo. Es discutible y lo puedes cambiar: lo que no puedes es ignorar el requisito, porque es el que de verdad se incumple.": [
+   "Ruta Doméstica!B15 [comment]"
   ],
   "La norma no da cifra. Esta sí, y es nuestra: sirve para que puedas enseñar un cálculo, no para citarla como si fuera legal.": [
    "Ruta Doméstica!C15"
@@ -9955,6 +10239,10 @@
   "e) Otros alimentos que las autoridades competentes de las comunidades autónomas permitan en sus territorios": [
    "Ruta Doméstica!A26"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 13.4, 13.5 y 13.8 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Ruta Doméstica!A26 [comment]",
+   "Ruta Doméstica!A31 [comment]"
+  ],
   "Nada por defecto: esta letra está vacía hasta que TU comunidad la rellene. Una ya lo ha hecho.": [
    "Ruta Doméstica!C26"
   ],
@@ -10008,6 +10296,9 @@
   ],
   "Elaborado en vivienda particular": [
    "Ruta Doméstica!B36"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 13.10 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Ruta Doméstica!B36 [comment]"
   ],
   "Más la fecha de elaboración, y además todo lo que ya exige la normativa de información alimentaria.": [
    "Ruta Doméstica!C36"
@@ -10114,6 +10405,9 @@
   ],
   "Validez interna de la formación (días)": [
    "Registro de Formación!A13"
+  ],
+  "CRITERIO PROPIO DE LA CASA. La norma no fija caducidad para la formación: lo que exige es que la formación sea adecuada y demostrable. Dos años es un plazo razonable para repasarla y dejar constancia; ponlo en lo que tú decidas y cúmplelo.": [
+   "Registro de Formación!B13 [comment]"
   ],
   "No es un plazo legal: es tu propia política, y tenerla escrita es lo que la hace defendible.": [
    "Registro de Formación!H13"
@@ -10722,6 +11016,10 @@
   "Bruto mensual del grupo de convenio del refuerzo": [
    "Parámetros!A17"
   ],
+  "Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!B17 [comment]",
+   "Parámetros!B18 [comment]"
+  ],
   "€/mes": [
    "Parámetros!C17"
   ],
@@ -10786,6 +11084,15 @@
   "IVA de pastelería, bollería y confitería": [
    "Parámetros!A25"
   ],
+  "Verificado el 10-09-2026 · Ley 37/1992 del IVA, arts. 91.Uno.1.1.º y 91.Dos.1.1.º (texto consolidado, última modificación 28-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740": [
+   "Parámetros!B25 [comment]",
+   "Calendario de 6 Picos!G6 [comment]",
+   "Calendario de 6 Picos!G7 [comment]",
+   "Calendario de 6 Picos!G8 [comment]",
+   "Calendario de 6 Picos!G9 [comment]",
+   "Calendario de 6 Picos!G10 [comment]",
+   "Calendario de 6 Picos!G11 [comment]"
+  ],
   "sobre base": [
    "Parámetros!C25",
    "Parámetros!C26"
@@ -10798,6 +11105,9 @@
   ],
   "IVA del pan del RD 308/2019": [
    "Parámetros!A26"
+  ],
+  "Verificado el 10-09-2026 · Resolución de 24 de febrero de 2025, de la Dirección General de Tributos, sobre el tipo del IVA aplicable al pan. BOE núm. 50, BOE-A-2025-3950 · https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3950": [
+   "Parámetros!B26 [comment]"
   ],
   "PA-36b": [
    "Parámetros!D26"
@@ -11592,11 +11902,19 @@
   "IVA de pastelería, bollería y confitería (%)": [
    "0. Supuestos!A15"
   ],
+  "Verificado el 10-09-2026 · Ley 37/1992 del IVA, arts. 91.Uno.1.1.º y 91.Dos.1.1.º (texto consolidado, última modificación 28-02-2026) · https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740": [
+   "0. Supuestos!B15 [comment]",
+   "PyG 3 Años!F12 [comment]"
+  ],
   "El 10 % sale de la regla general de alimentos del art. 91.Uno.1.1.o de la Ley 37/1992: no porque un precepto los nombre, sino porque no están en la lista cerrada del 4 % ni excluidos del 10 %.": [
    "0. Supuestos!C15"
   ],
   "IVA del pan (%)": [
    "0. Supuestos!A16"
+  ],
+  "Verificado el 10-09-2026 · Resolución de 24 de febrero de 2025, de la Dirección General de Tributos, sobre el tipo del IVA aplicable al pan. BOE núm. 50, BOE-A-2025-3950 · https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-3950": [
+   "0. Supuestos!B16 [comment]",
+   "PyG 3 Años!F13 [comment]"
   ],
   "TODOS los productos del RD 308/2019 (pan común, pan especial y semielaborados, con o sin gluten) van al 4 %. El cruasán sigue al 10 %: el RD 308/2019 sólo regula el pan y no menciona la bollería.": [
    "0. Supuestos!C16"
@@ -11652,11 +11970,18 @@
   "Número de pagas del convenio": [
    "0. Supuestos!A26"
   ],
+  "Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "0. Supuestos!B26 [comment]"
+  ],
   "El convenio de pastelería de Madrid paga 15, no 14, y eso cambia el coste mes a mes y el reparto de la tesorería. Busca el tuyo: el convenio es provincial o autonómico.": [
    "0. Supuestos!C26"
   ],
   "SMI vigente (€/año, 14 pagas)": [
    "0. Supuestos!A27"
+  ],
+  "Verificado el 10-09-2026 · RD 126/2026, de 18 de febrero, arts. 1, 3.1, 4.1 y 4.2 (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815": [
+   "0. Supuestos!B27 [comment]",
+   "Personal!B24 [comment]"
   ],
   "1.221 €/mes × 14 pagas = 17.094 €/año — Real Decreto 126/2026, de 18 de febrero (BOE-A-2026-3815), con efectos desde el 1-ene-2026. El convenio provincial de hostelería prevalece si fija un mínimo superior.": [
    "0. Supuestos!C27"
@@ -11972,6 +12297,9 @@
   ],
   "Licencias y proyecto técnico · Comunicación o declaración responsable al registro autonómico": [
    "Inversión Inicial!A12"
+  ],
+  "Verificado el 10-09-2026 · DECRETO 26/2026, de 25 de marzo, del Consejo de Gobierno (Comunidad de Madrid), arts. 6, 8.1, 9.1, D.T. única y D.F. segunda. BOCM núm. 73 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/03/27/BOCM-20260327-1.PDF": [
+   "Inversión Inicial!B12 [comment]"
   ],
   "No es una licencia y NO habilita para abrir: es un trámite de información que se presenta al iniciar la actividad (PA-04). El importe es supuesto y en varias CCAA es gratuito.  [Fuente: PA-04 + supuesto]": [
    "Inversión Inicial!F12"
@@ -12648,6 +12976,9 @@
   "Técnicos y titulados superiores": [
    "Personal!B15"
   ],
+  "Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF\nConvenio de Comercio e Industria de Confitería, Pastelería, Bollería, Repostería, Heladería y Platos Cocinados de la Comunidad de Madrid, código 28001025011981, revisión 2026 (BOCM núm. 50, de 28 de febrero de 2026). Vigencia 1-ene-2026 a 31-dic-2026: CADUCA el 31-12-2026.": [
+   "Personal!E15 [comment]"
+  ],
   "ADMINISTRACIÓN": [
    "Personal!G15"
   ],
@@ -13193,6 +13524,9 @@
   "Umbral de la vía a) del art. 3.2 (%)": [
    "Canales y Punto Muerto!A26"
   ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 3.2 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Canales y Punto Muerto!B26 [comment]"
+  ],
   "Una actividad es marginal si el suministro a otros minoristas es menor o igual al 25 % del volumen anual O si la comercialización total no pasa de 500 kg a la semana. Son vías ALTERNATIVAS: basta cumplir una. La de los kilos se comprueba en el libro «checklist-legal-y-licencias».": [
    "Canales y Punto Muerto!J26"
   ],
@@ -13207,6 +13541,9 @@
   ],
   "Por encima del 25 %: comprueba la vía de los 500 kg antes de nada": [
    "Canales y Punto Muerto!B27 [formula-lit]"
+  ],
+  "Verificado el 10-09-2026 · RD 1021/2022, art. 3.1 (texto consolidado) · https://www.boe.es/buscar/act.php?id=BOE-A-2022-21681": [
+   "Canales y Punto Muerto!B27 [comment]"
   ],
   "El art. 3 del RD 1021/2022 sólo se activa si suministras a establecimientos minoristas de DISTINTA titularidad. Si entras, las tres condiciones son ACUMULATIVAS -marginal Y localizado Y restringido- y hay que presentar declaración responsable y llevar registro de destinatarios, cantidades y fechas. Este aviso mira sólo el porcentaje: el árbol completo está en el libro «checklist-legal-y-licencias».": [
    "Canales y Punto Muerto!A28"
@@ -13367,6 +13704,9 @@
   "Técnicos y titulados superiores": [
    "Parámetros!B8"
   ],
+  "Bruto mensual del grupo 1 a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C8 [comment]"
+  ],
   "ADMINISTRACIÓN": [
    "Parámetros!E8"
   ],
@@ -13382,6 +13722,9 @@
    "Parámetros!B9",
    "Horas y Coste!D7"
   ],
+  "Bruto mensual del grupo 2 a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C9 [comment]"
+  ],
   "OBRADOR · COMERCIO · ADMINISTRACIÓN": [
    "Parámetros!E9"
   ],
@@ -13391,6 +13734,9 @@
   "Personal especialista": [
    "Parámetros!B10",
    "Horas y Coste!D8"
+  ],
+  "Bruto mensual del grupo 3 a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C10 [comment]"
   ],
   "OBRADOR · COMERCIO": [
    "Parámetros!E10",
@@ -13406,6 +13752,9 @@
    "Horas y Coste!D10",
    "Horas y Coste!D11"
   ],
+  "Bruto mensual del grupo 4 a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C11 [comment]"
+  ],
   "oficial 2.ª de producción, oficial 1.ª de envasado, dependiente, conductor": [
    "Parámetros!F11"
   ],
@@ -13419,17 +13768,26 @@
    "Plan de Contratación!G20",
    "Plan de Contratación!G21"
   ],
+  "Bruto mensual del grupo 5 a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C12 [comment]"
+  ],
   "ayudante de producción, oficial de acabado, ayudante de comercio": [
    "Parámetros!F12"
   ],
   "Personal de ayuda en servicios auxiliares": [
    "Parámetros!B13"
   ],
+  "Bruto mensual del grupo 6 a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C13 [comment]"
+  ],
   "peón, limpiador, almacenero": [
    "Parámetros!F13"
   ],
   "Pagas del convenio": [
    "Parámetros!A15"
+  ],
+  "Las tablas de Madrid son a 15 pagas — Verificado el 10-09-2026 · Resolución de 7 de febrero de 2026 de la D.G. de Trabajo de la Comunidad de Madrid, revisión salarial 2026 del convenio código 28001025011981. BOCM núm. 50 · https://www.bocm.es/boletin/CM_Orden_BOCM/2026/02/28/BOCM-20260228-2.PDF": [
+   "Parámetros!C15 [comment]"
   ],
   "El convenio de Madrid paga 15, no 14, y eso cambia el coste todos los meses. Si tu convenio prorratea las extras, sigue siendo 15: lo que cambia es cuándo se pagan, no cuánto.": [
    "Parámetros!E15"
@@ -13442,6 +13800,9 @@
   ],
   "Referencia anual del SMI (€)": [
    "Parámetros!A17"
+  ],
+  "SMI 2026: 1.221 €/mes y referencia anual de 17.094 € — Verificado el 10-09-2026 · RD 126/2026, de 18 de febrero, arts. 1, 3.1, 4.1 y 4.2 (texto consolidado, sin modificaciones) · https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815": [
+   "Parámetros!C17 [comment]"
   ],
   "Cuantía ANUAL de referencia del art. 3.1 del RD 126/2026, en cómputo global: no es un mínimo por concepto ni el resultado de multiplicar por catorce. CADUCA el 31-12-2026.": [
    "Parámetros!E17"
@@ -13481,6 +13842,9 @@
   ],
   "Días de apertura a la semana": [
    "Parámetros!A24"
+  ],
+  "Libertad horaria de la pastelería — Verificado el 10-09-2026 · Ley 1/2004, de 21 de diciembre, de Horarios Comerciales, arts. 3.1, 4.1, 4.2, 5.1 y 5.2 (texto consolidado, última modificación 17-10-2014) · https://www.boe.es/buscar/act.php?id=BOE-A-2004-21421": [
+   "Parámetros!C24 [comment]"
   ],
   "SUPUESTO. La pastelería tiene libertad horaria por ley estatal cuando es su actividad principal, así que abrir en domingo o en festivo es una decisión tuya, no un permiso que se pida.": [
    "Parámetros!E24"

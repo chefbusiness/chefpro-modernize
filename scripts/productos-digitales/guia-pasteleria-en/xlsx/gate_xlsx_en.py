@@ -173,6 +173,8 @@ def estructura(libro, cfg, wes, wen, errores, avisos, pares):
         h = es_ws.title
         textos_residuo(en_ws.title, 'pestaña', errores, avisos)
         ce = {c.coordinate: c for row in es_ws.iter_rows() for c in row if c.value is not None}
+        vacias = {r for hh, rango, op in cfg.get('num', []) if hh == h and op[0] == 'vaciar' for r in expandir(rango)}
+        ce = {k: v for k, v in ce.items() if k not in vacias}
         cn = {c.coordinate: c for row in en_ws.iter_rows() for c in row if c.value is not None}
         if set(ce) != set(cn):
             errores.append('%s: celdas con valor distintas: solo ES %s · solo EN %s' % (
@@ -431,7 +433,10 @@ def crear_t0(ruta_es, cfg, wes, avisos):
                 if parte[h] == info.filename:
                     x = d.decode()
                     for ref, v in refs.items():
-                        x, k = re.subn(r'(<c r="%s"[^>]*>)<v>[^<]*</v>' % ref, r'\g<1><v>%r</v>' % float(v), x)
+                        if v is None:           # op 'vaciar': la referencia también queda vacía
+                            x, k = re.subn(r'<c r="%s"([^>]*?)>(?:<v>[^<]*</v>)</c>' % ref, r'<c r="%s"\1/>' % ref, x)
+                        else:
+                            x, k = re.subn(r'(<c r="%s"[^>]*>)<v>[^<]*</v>' % ref, r'\g<1><v>%r</v>' % float(v), x)
                         n += k
                     d = x.encode()
             zo.writestr(info, d)

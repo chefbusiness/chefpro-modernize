@@ -175,6 +175,11 @@ def procesar_hoja(xml, hoja_es, T, cfg, informe):
                 informe['avisos'].append('%s!%s: celda vacía con conversión' % (hoja_es, ref))
             return '<c r="%s"%s/>' % (ref, attrs)
         mi, mf, mv = RX_IS.match(body), RX_F.match(body), RX_V.match(body)
+        if ref in num and num[ref][0] == 'vaciar':
+            if mf:
+                raise SystemExit('vaciar una fórmula: %s!%s' % (hoja_es, ref))
+            hechos_num.add(ref)
+            return '<c r="%s"%s/>' % (ref, re.sub(r'\st="[^"]*"', '', attrs))
         if mi:
             s = html.unescape(mi.group(1))
             t = textos[ref] if ref in textos else T.texto(s, '%s!%s' % (hoja_es, ref))
@@ -337,6 +342,13 @@ def procesar_libro(ruta_es, ruta_en, mapas):
             for tag in ('f', 'c:f'):
                 x = re.sub(r'<%s>(.*?)</%s>' % (tag, tag), lambda mm, tag=tag: '<%s>%s</%s>' % (
                     tag, esc_text(T.formula(html.unescape(mm.group(1)), parte)), tag), x, flags=re.S)
+            nuevos[parte] = x
+
+    for parte in datos:                     # comentarios de celda (citas de fuente): se traducen como un texto más
+        if parte.startswith('xl/comments') and parte.endswith('.xml'):
+            x = datos[parte].decode('utf-8')
+            x = re.sub(r'<t( xml:space="preserve")?>(.*?)</t>', lambda mm: '<t%s>%s</t>' % (mm.group(1) or '', esc_text(
+                T.texto(html.unescape(mm.group(2)), parte))), x, flags=re.S)
             nuevos[parte] = x
 
     core = datos['docProps/core.xml'].decode('utf-8')

@@ -23,6 +23,8 @@ for f in sorted(glob.glob(os.path.join(ES, '*.xlsx'))):
                             if re.search(r'[A-Za-zÁÉÍÓÚáéíóúñÑ]', s): add(d, s, f'{ws.title}!{c.coordinate} [formula-lit]')
                     else:
                         add(d, v, f'{ws.title}!{c.coordinate}')
+                if c.comment is not None and c.comment.text:
+                    add(d, c.comment.text, f'{ws.title}!{c.coordinate} [comment]')
         for dv in ws.data_validations.dataValidation:
             for a in ('errorTitle', 'error', 'promptTitle', 'prompt'):
                 add(d, getattr(dv, a), f'{ws.title} DV {a} {str(dv.sqref)[:20]}')
