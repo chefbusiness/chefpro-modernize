@@ -41,6 +41,10 @@
 - Las decisiones compartidas (`DECISIONES-TANDAS.md`) con §9 por tanda evitaron incoherencias entre 17 agentes; aun así hubo que
   unificar a mano áreas, columnas y unidades (batidora 20 L).
 - BizBuySell bloquea fetch (403): sin datos US de traspasos, plantilla vacía antes que datos de otro país.
+- (17-oct, lanzamiento) El paquete del Payment Link debe llevar los 5 campos: nombre, **descripción ≤ 260** (John tuvo que pedirla),
+  precio con moneda, impuesto y redirección. El modo automático bloquea `gh pr merge` («Merge Without Review»): avisar a John
+  del Shift+Tab al pedir el link. El aviso «stripe-webhook 501» del gate contra un preview es esperado (el preview no tiene
+  `STRIPE_WEBHOOK_SECRET`); en LIVE responde 400 sin firma. El gate completo (918 descargas) se pasó en el VPS.
 
 Consumo ≈ 8,7 M tokens de subagentes (L, techo 10 M). CPU del Mac 45-63 °C (vigilante activo, tope 2 agentes; xlsx, render y
 gates en el VPS).
