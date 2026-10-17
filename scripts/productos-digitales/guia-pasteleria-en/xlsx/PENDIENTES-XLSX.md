@@ -168,3 +168,6 @@
 - NUM: checklist-equipamiento-y-proveedores.xlsx «Equipamiento»!D24:E24 → vaciar (op 'vaciar': horno de pisos = «Assumption»,
   sin marca ni modelo, T05). El JSON traduce «Salva» → «Not named» y el modelo → «Modular, 1 to 5 decks» solo como respaldo.
   Q24 NO se vacía (queda «Not named»): si pasa a vacío o a «Pending: get three quotes», «Contador»!B45 deja de dar 13 (cap. 11).
+- NUM: capacidad-obrador-y-local.xlsx «Capacity by Equipment»!F7 («L de masa o crema por batida» → texto «qt of dough or cream per batch») y B7 «Planetary mixer, 20 qt»: la celda numérica sigue en 20 (litros del ES); 20 L = 21.1 qt. Si se quiere exacto, ×1.05669 en E7 (el resto de la fila no cambia: G7 son piezas por unidad). Hoja «Capacity by Equipment»!F13 («m³ of usable space per rotation») y B13 «8 m³ (about 283 cu ft)»: E13 se queda en 8 m³ (CONFIG-NOTAS §3), coherente con el texto.
+- NUM: capacidad «Settings»!B22 y «Site Visit Checklist»!F12 (altura): el texto dice «9.8 ft» y la unidad es «ft»: aplicar ×3.2808399 (op opcional de CONFIG-NOTAS §3), si no, las celdas siguen en 3 / 3.2 con unidad «ft».
+- NUM: staff-schedule «Settings»!C8:C13 ×1.25 y C15/C17 ya en config; las notas C60/E15 del JSON asumen 12 pagos y $15,080; «Hiring Plan»!D18 → mes 5 (config) para que el pico «Mother's Day» salga en mayo.
