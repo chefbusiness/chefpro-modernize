@@ -177,8 +177,9 @@ LIBROS = {
         'titulo': 'Equipment and Suppliers Checklist',
         'hojas': {'Instrucciones': 'Instructions', 'Equipamiento': 'Equipment', 'Variante del Formato': 'Format Variant',
                   'Proveedores': 'Suppliers', 'Contador': 'Counter'},
-        'num': [('Equipamiento', 'C7', ('set', 0))] + _eq_unox,       # IVA general 21 % (D7) · UNOX/SMEG ÷ 1.21
-        'texto': {('Equipamiento', 'J16'): EN_SIN_IVA, ('Equipamiento', 'J17'): EN_SIN_IVA},   # «con IVA» -> pre-tax
+        'num': [('Equipamiento', 'C7', ('set', 0)), ('Equipamiento', 'D24:E24', ('vaciar', None))] + _eq_unox,   # horno de pisos: marca y modelo ES fuera (T05)       # IVA general 21 % (D7) · UNOX/SMEG ÷ 1.21
+        'texto': {('Equipamiento', 'J16'): EN_SIN_IVA, ('Equipamiento', 'J17'): EN_SIN_IVA,
+                  ('Equipamiento', 'J22'): EN_SIN_IVA},   # batidora «no declarada» -> pre-tax (NUM, textos X2)   # «con IVA» -> pre-tax
         'dv': {},
         'impuesto0': [('Equipamiento', 'C7')] + _r0(_eq_unox0),
     },

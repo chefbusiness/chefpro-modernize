@@ -163,3 +163,8 @@
   sales tax inside the cost lines»; A3 «sistema francés» → «level-payment (amortizing) loan, monthly schedule»; H116 y A23
   sin «Impuesto de Sociedades» → «the workbook's illustrative income tax». El texto cita: $936.57 · 84 meses · 6 de solo
   intereses · DSCR 3.24 mínimo.
+- NUM: checklist-equipamiento-y-proveedores.xlsx «Equipamiento»!J22 → texto 'pre-tax' (añadir a `config_en` 'texto' como
+  J16/J17, T05). La cadena ES «no declarada» la comparte con E63 (lista «Base del precio»), que en el JSON queda «not stated».
+- NUM: checklist-equipamiento-y-proveedores.xlsx «Equipamiento»!D24:E24 → vaciar (op 'vaciar': horno de pisos = «Assumption»,
+  sin marca ni modelo, T05). El JSON traduce «Salva» → «Not named» y el modelo → «Modular, 1 to 5 decks» solo como respaldo.
+  Q24 NO se vacía (queda «Not named»): si pasa a vacío o a «Pending: get three quotes», «Contador»!B45 deja de dar 13 (cap. 11).

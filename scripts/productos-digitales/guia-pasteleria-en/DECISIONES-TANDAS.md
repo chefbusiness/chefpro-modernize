@@ -767,3 +767,35 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   apertura en septiembre, único plazo legal CA 20 días hábiles. Pie BOCM → «Checked in October 2026 against the Department of
   Labor's state minimum wage table (updated July 1, 2026)». Sin marcas ⟦ADAPT⟧.
 ### P02
+- **Títulos**: «## 5. Three-Year Financial Plan» (H3: The Plan's Assumptions · The Three-Year P&L · Break-Even · Cash Flow for
+  the First Twelve Months · Financing and Debt Service) y «## 6. Risks and Scenarios» (H3: The Three Scenarios · Opening Risks
+  and How to Mitigate Them · Operating Risks · The Contingency Plan). P&L y "Scenarios" = **tablas del cap. 18 copiadas tal
+  cual** (rótulos de T10); el pie de "Scenarios" lleva el income tax ilustrativo 15 %/25 % + LLC (IRS). El sueldo del dueño
+  se explica con el self-employment tax 15.3 % (frase de T10) y sin «autónomos».
+- **Tabla "12-Month Cash Flow" (11 filas como el ES, cifras de `cifras_cambiadas.json`)**, rótulos alineados con
+  PENDIENTES-XLSX (T11): Sales collected (VAT/GST included where it applies; $0 of tax in the US) $18,304 · $18,785 · $26,052 ·
+  $23,910 · $32,971 · **$279,877** | Purchases and cost of sales $0 · -$5,114 · -$8,366 · -$5,585 · -$9,279 · -$79,706 | Fixed
+  operating costs -$6,185 × 5 · -$74,220 | Payroll (wages plus payroll taxes, workers' comp and benefits) **-$7,731 todos los
+  meses** · -$92,776 | Loan interest y principal sin cambio (-$310…-$294 · -$3,671; $0, $0, $0, -$633, -$643 · -$3,808) |
+  3 filas VAT/GST «(…UK, Canada and Australia only; $0 in the US)» a $0 | NET CASH FLOW FOR THE MONTH $4,078 · -$555 · $3,459 ·
+  $3,472 · $8,839 · **$25,696** | CUMULATIVE CASH BALANCE $66,193 · **$61,346** · $71,448 · $70,496 · **$87,811**. Texto: abre
+  con los **$62,115** de working capital, mínimo en el **mes 3**; el párrafo del IVA adelantado/devuelto pasa a «no es el
+  impuesto, es el calendario» (pago a 30 días, nómina igual, cuota que sube tras la carencia) + sales tax = coste ($13,322
+  ilustrativo).
+- **Préstamo**: $60,000 + $167,916 propios = $227,916; SBA 7(a) o convencional (por encima del Microloan de $50,000); la
+  cuota **$936.57 se paga desde el mes 7** (meses 1-6 solo intereses, $310 en la tesorería: errata ES). DSCR mínimo **3.24
+  = año 1**: el texto mantiene «mira el peor año, no el primero» y dice que aquí coinciden.
+- **Riesgos de apertura (4 viñetas como el ES)**: hood (Type I + grease duct + supresión vs Type II / UL 710B; ítems 1-2 de
+  "Site Visit Checklist", respuesta por escrito del building department) · permisos de ciudad o condado (30 pasos P1-P6 +
+  "Timeline and Critical Path"; único reloj legal CA 20 días hábiles; **FL: solicitud a FDACS 21 días antes de abrir**) ·
+  equipo ("Equipment" de equipment-and-suppliers-checklist.xlsx; retarder-proofer 9 semanas, referencia US 6; M6 único hito con
+  holgura) · obra (startup-cost-calculator.xlsx). **Cada riesgo con su hoja** (el ES mandaba los tres primeros a la hoja de
+  equipamiento: errata ES).
+- **Riesgos de explotación (4 viñetas)**: 6 campañas en "No" en "Peak Capacity vs Demand"; 43.9 % del pesimista; **mínimo que
+  cambia por estado y ciudad** (DOL 1-jul-2026; FL $14.00 hasta el 29-sep-2026 + FloridaCommerce; tabla del caso $8.60-$12.50
+  ilegal en CA/NY/FL); materia prima = **mantequilla CME $1.3650/lb (16-oct-2026) y PPI de agosto −32.5 %** (cap. 11); Matias
+  (Mallorca, 47 empleados) como ejemplo europeo; personal = calendario + BLS bakers $17.86 + HO 11 / FS #43. Párrafo añadido:
+  **sales tax según cómo vendes** (en Texas lo dispara el plato o los cubiertos, no la mesa; en la mayoría de los demás, las
+  mesas) → POS con to-go / for-here desde el día 1 (cap. 19).
+- **Sobre el autor** = el de T12 con «This plan». Sin marcas ⟦ADAPT⟧. Avisos del gate aceptados: 37 cifras de la tesorería ES
+  (con IVA, sustituidas por §3-bis) y 4 menciones de Spain (Matias, la guía española del 5,000/7,200, la bio).
