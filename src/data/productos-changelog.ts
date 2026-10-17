@@ -788,6 +788,25 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'restaurant-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-17',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-17',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 491 restaurant tasks already written, adapted to the US with notes for the UK.',
+          'US roles and areas (line cook, prep cook, server, bartender, porter, front of house, patio), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Food safety in °F under the FDA Food Code 2022: 41 °F cold holding, 0 °F freezers, 135 °F hot holding, 7-day date marking, parasite destruction for fish served raw (−4 °F for 7 days) and the 9 major allergens.',
+          'Contracted services for the US on the Quarterly & Annual sheet: pest control, hood cleaning on the NFPA 96 schedule, the hood fire-suppression system every 6 months, fire extinguishers (OSHA), refrigeration by an EPA 608 technician, backflow test, grease trap and used cooking oil.',
+          'Cash drawer count in US bills and coins (with quarter and dime rolls), starting bank, card tips kept out of sales and over/short against the POS Z report; a holiday calendar with 22 US dates, from the Super Bowl to New Year\'s Eve.',
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

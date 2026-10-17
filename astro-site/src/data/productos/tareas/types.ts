@@ -45,7 +45,9 @@ export interface KitTareasBonus {
   icon: IconName;
   label: string; // "BONUS 1"
   title: string;
-  value: string; // "€15"
+  /** "€15". Opcional desde el 17-oct-2026: la tienda EN no enseña «valores» de bonos (FTC 16 CFR 233.1,
+   *  PR #117); sin `value` el template no pinta la línea «Valor: …». Las 20 fichas ES lo siguen trayendo. */
+  value?: string;
   desc: string;
   image: string; // /lovable-uploads/ai-gallery/....jpg
 }
@@ -135,6 +137,10 @@ export interface KitTareasData {
     badge: string;
     titlePre: string; // "Kit de Tareas "
     titleGold: string; // "Recurrentes"
+    /** Opcional (17-oct-2026, tienda EN): texto blanco entre el dorado y el subtítulo en bloque, p. ej.
+     *  ": " para que el H1 se lea «Restaurant Checklists Kit Pro: Opening, Closing…» (Forma B de los
+     *  kits EN). Las 20 fichas ES no lo traen y su H1 no cambia. */
+    titlePost?: string;
     subtitleLine: string; // "Asador / Parrilla y Horno Josper"
     description: string;
     checkItems: string[];
@@ -143,6 +149,11 @@ export interface KitTareasData {
 
   // ---- Sticky bar (móvil) ----
   stickyLabel: string; // "KIT TAREAS ASADOR — €14"
+
+  /** Opcional (17-oct-2026, tienda EN): subtítulo del carrusel de apps («Imprime, Delega y Controla»).
+   *  Si se omite, el del diccionario de la plantilla (ES: «…imprimir en A4. Compatible con Excel, Google
+   *  Sheets, LibreOffice y Numbers»). La ficha que no pueda afirmar algo de eso lo sustituye aquí. */
+  compatSubtitle?: string;
 
   // ---- Content grid ----
   grid: {

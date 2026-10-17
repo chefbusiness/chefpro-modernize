@@ -140,11 +140,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas',
     url: '/kit-tareas',
     price: '€14',
-    name: { es: 'Tareas: Restaurante Casual', en: 'Tasks: Casual Restaurant' },
+    name: { es: 'Tareas: Restaurante Casual', en: 'Restaurant Checklists Kit Pro' },
     description: {
       es: 'Listas de turno, apertura, cierre, partidas en formato pro.',
-      en: 'Shift checklists, opening, closing, and station tasks in pro format.',
+      en: 'Opening, closing and cleaning checklists, kitchen stations, manager, side work and a cash drawer count: 491 tasks already written.',
     },
+    // Tienda EN (17-oct-2026): producto propio, `restaurant-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/restaurant-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-cafeteria': {
     id: 'kit-tareas-cafeteria',

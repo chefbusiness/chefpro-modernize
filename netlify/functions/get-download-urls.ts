@@ -888,6 +888,23 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'turnos-personal': '/dl/how-to-open-a-pastry-shop/staff-schedule-and-labor-cost.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-17): Restaurant Checklists Kit Pro. MISMAS claves que kit-tareas (las de TEMPLATES de
+  // src/pages/RestaurantChecklistsKitDashboard.tsx) → los 11 xlsx EN de /dl/restaurant-checklist-templates/
+  // (SPEC checklists-kit §2.1), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'restaurant-checklist-templates': {
+    'apertura-cierre': '/dl/restaurant-checklist-templates/01-opening-closing-checklists-kitchen-foh-bar.xlsx',
+    'partidas': '/dl/restaurant-checklist-templates/02-kitchen-station-checklists.xlsx',
+    'manager': '/dl/restaurant-checklist-templates/03-restaurant-manager-checklist.xlsx',
+    'perfiles': '/dl/restaurant-checklist-templates/04-daily-duties-side-work-by-role.xlsx',
+    'periodicas': '/dl/restaurant-checklist-templates/05-restaurant-cleaning-schedule.xlsx',
+    'eventos': '/dl/restaurant-checklist-templates/06-event-holiday-checklists.xlsx',
+    'personalizable': '/dl/restaurant-checklist-templates/07-blank-checklist-template.xlsx',
+    'apertura-negocio': '/dl/restaurant-checklist-templates/08-restaurant-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/restaurant-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/restaurant-checklist-templates/BONUS-01-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/restaurant-checklist-templates/BONUS-02-restaurant-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

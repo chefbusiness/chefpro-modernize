@@ -66,6 +66,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'plan-negocio-tapas-bar': { eur: 35 },
   'pro-prompts-ebook': { eur: 9 },
   'restaurant-business-plan': { usd: 39 },
+  'restaurant-checklist-templates': { usd: 19 },
   'restaurant-financial-plan-templates': { usd: 49 },
   'restaurant-inventory-templates': { usd: 19 },
   'restaurant-schedule-templates': { usd: 19 },

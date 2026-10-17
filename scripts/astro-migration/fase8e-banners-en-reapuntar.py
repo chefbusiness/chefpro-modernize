@@ -39,6 +39,8 @@ TEMAS = {
     'haccp-templates': ['haccp', 'food safety', 'allergen', 'hygiene', 'temperature', 'contamination', 'inspection'],
     'restaurant-schedule-templates': ['staff', 'schedule', 'shift', 'team', 'labor', 'labour', 'hiring', 'employee', 'brigade', 'payroll'],
     'restaurant-inventory-templates': ['inventory', 'stock', 'waste', 'purchas', 'supplier', 'ordering', 'storage'],
+    # Restaurant Checklists Kit Pro (17-oct-2026): checklists de apertura, cierre, limpieza, side work y caja.
+    'restaurant-checklist-templates': ['checklist', 'closing', 'cleaning', 'side work', 'pre-shift', 'line check', 'cash drawer', 'routine', 'daily task'],
 }
 
 
