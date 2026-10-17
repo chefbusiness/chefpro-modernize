@@ -1,0 +1,41 @@
+{
+  "producto": "kit-tareas-cafeteria",
+  "fecha": "2026-10-18",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Coffee Shop Checklists Kit Pro (cafe/SPEC D1, 18-oct-2026). El id es el del CATÁLOGO (products-catalog.ts),",
+    "que con urlByLang.en pinta la landing EN /en/digital-products/coffee-shop-checklist-templates y $19.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto kit-tareas-cafeteria --config scripts/astro-migration/fase8x-config/kit-tareas-cafeteria-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: el blog EN solo tiene UN post de café (Barista Consultant, 302 menciones de coffee/espresso/barista; el",
+    "siguiente, el del bartender, tiene 15 y ya lleva el Bar y el Restaurant Checklists). El segundo es el de Bakery",
+    "Consultant: el obrador con mostrador y vitrina, que es la hoja «Pastry Case» y el perfil «Baker» del kit.",
+    "Víctimas = SLUGS EN de la landing, por relevancia y por reparto (de los más repetidos del corpus EN): el Restaurant",
+    "Financial Plan Kit en el del barista (se queda el Food Cost Kit por el costing del título) y el HACCP Kit en el",
+    "del obrador (se quedan How to Open a Pastry Shop y el Food Cost Kit, por el baker's math del título).",
+    "Nunca el Restaurant ni el Bar Checklists Kit Pro, hermanos de línea y venta cruzada del dashboard."
+  ],
+  "nunca": [
+    "restaurant-checklist-templates",
+    "bar-checklist-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 2,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "prompt-library-barista-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-financial-plan-templates",
+      "ancla_n": 8,
+      "parrafo": "Great recipes only reach the cup when the bar runs the same way every shift. The {ENLACE} writes that routine down: espresso bar opening and closing (dial in with a test shot, purge the group heads, backflush with detergent at close), monthly maintenance of the machine and the grinder, daily duties for the shift lead, barista and baker, and a daily inventory that flags what to reorder."
+    },
+    "prompt-library-bakery-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "haccp-templates",
+      "parrafo": "A bakery that serves coffee has to run its counter like a cafe. The {ENLACE} includes a pastry case checklist (the morning bake, a refrigerated case at 41 °F or below for cream cakes and cheesecake, allergen labels, tongs or bakery tissue, FIFO rotation and the day's waste) and the baker's daily duties, alongside the espresso bar's opening and closing."
+    }
+  }
+}

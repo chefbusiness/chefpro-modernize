@@ -827,6 +827,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'coffee-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 500 coffee shop and brunch tasks already written, adapted to the US with notes for the UK.',
+          'US coffee shop roles and areas (shift lead, barista, baker, server, busser / runner; espresso bar, front of house, patio, kitchen, pastry case), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Espresso bar in barista terms: dial in with a test shot (25–30 s, 25–30 ml, about 1 fl oz), group heads purged, a daily backflush with espresso machine detergent and descaling per the manufacturer; grinder burrs by pounds ground and water hardness (GH/KH) on the Quarterly & Annual sheet.',
+          'Food safety under the FDA Food Code: open milk and the refrigerated pastry case at 41 °F or below, 7-day date marking, no bare-hand contact with ready-to-eat food, ice handled as food (scoop, never the glass) and allergen labels with the 9 major allergens (14 noted for the UK).',
+          'Contracted services for a US coffee shop on the Quarterly & Annual sheet: pest control, hood cleaning on the NFPA 96 schedule if you cook under a hood, fire extinguishers (OSHA), refrigeration by an EPA 608 technician, the espresso tech, insurance and POS / sales tax settings; the daily inventory uses US units and flags REORDER below your minimum.',
+          'Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a coffee shop calendar with 22 US dates, from King cake season to National Coffee Day, Thanksgiving pie orders and holiday catering, plus 5 rows for your own and a UK note. Mimosas at brunch only with a license, 21+ with ID.',
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

@@ -922,6 +922,24 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/bar-checklist-templates/BONUS-02-bar-events-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-18): Coffee Shop Checklists Kit Pro. MISMAS claves que kit-tareas-cafeteria (las de TEMPLATES
+  // de src/pages/CoffeeShopChecklistsKitDashboard.tsx; la 02 es `barista` como en el ES) → los 11 xlsx EN de
+  // /dl/coffee-shop-checklist-templates/ (SPEC checklists-kit/cafe §2), y el bonus común de equivalencias EN en
+  // lugar de la guía ES↔LatAm.
+  'coffee-shop-checklist-templates': {
+    'apertura-cierre': '/dl/coffee-shop-checklist-templates/01-coffee-shop-opening-closing-checklists.xlsx',
+    'barista': '/dl/coffee-shop-checklist-templates/02-cafe-kitchen-pastry-case-checklists.xlsx',
+    'manager': '/dl/coffee-shop-checklist-templates/03-coffee-shop-manager-checklist.xlsx',
+    'perfiles': '/dl/coffee-shop-checklist-templates/04-barista-checklist-duties-by-role.xlsx',
+    'periodicas': '/dl/coffee-shop-checklist-templates/05-cafe-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/coffee-shop-checklist-templates/06-coffee-shop-event-checklists.xlsx',
+    'personalizable': '/dl/coffee-shop-checklist-templates/07-blank-coffee-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/coffee-shop-checklist-templates/08-cafe-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/coffee-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/coffee-shop-checklist-templates/BONUS-01-coffee-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/coffee-shop-checklist-templates/BONUS-02-coffee-shop-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

@@ -218,6 +218,16 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (18-oct-2026): Coffee Shop Checklists Kit Pro, segundo hermano vertical del Restaurant Checklists
+    // Kit Pro (SPEC checklists-kit/cafe D1-D4). Gemelo del Kit de Tareas para Cafetería. vivo: true en la rama, que
+    // se fusiona cuando existe el Payment Link (mismo criterio que el Restaurant y el Bar Checklists Kit Pro).
+    familia: 'kit-tareas-cafeteria',
+    productos: {
+      es: { slug: 'kit-tareas-cafeteria', vivo: true },
+      en: { slug: 'coffee-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

@@ -61,6 +61,28 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Coffee Shop Checklists Kit Pro (18-oct-2026, segundo hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Cafe / Brunch», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
+  // (decía «463 tasks», «terrace» y «sign off»; la EN trae 500 tareas, 9 + 3 bonus, 12 ficheros, patio e iniciales).
+  // Imagen: el hero EN de la landing (el hero ES lleva «TOMA CAFÉ» en las bolsas).
+  {
+    name: 'Coffee Shop Checklists Kit Pro',
+    slug: '/kit-tareas-cafeteria',
+    description: '9 templates + 3 bonuses (12 files) with 500 coffee shop tasks already written: opening & closing checklists, espresso bar, kitchen and pastry case, manager, barista duties by role, inventory, Sunday brunch and a cash drawer count. Print it, delegate it, initial it.',
+    features: [
+      'Opening and closing: espresso bar, kitchen, patio',
+      'Barista tasks: dial in, purge, backflush',
+      'Pastry case control and Sunday brunch',
+      'Daily inventory with reorder alerts',
+      'Cash drawer count and over/short log',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/use-case-coffee-shop-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'cafe'],
+  },
   // Bar Checklists Kit Pro (18-oct-2026, primer hermano vertical del Restaurant Checklists Kit Pro): el más nuevo → 1;
   // el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English» («Recurring
   // Tasks: Bar / Cocktails», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía «9
@@ -639,22 +661,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
-  },
-  {
-    name: 'Recurring Tasks: Cafe / Brunch',
-    slug: '/kit-tareas-cafeteria',
-    description: '463 tasks + inventories with built-in formulas: opening/closing, barista, pastry display case, brunch, terrace. Print it, delegate it, and sign it off.',
-    features: [
-      'Daily bar inventory with alerts',
-      'Barista-specific tasks',
-      'Display case and pastry control',
-      'Sunday brunch and events',
-    ],
-    iconName: 'Coffee',
-    image: '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'cafe'],
   },
   {
     name: 'Recurring Tasks: Pizzeria',
