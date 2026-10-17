@@ -510,7 +510,8 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 CLAVES = OrderedDict([('N/A', 'N/A')])
 DV_LISTAS_ESPECIALES = OrderedDict()
 DV_NUEVAS = OrderedDict()
-VALORES_EN = OrderedDict()             # ningún número ni fecha cambia (las cifras de caja van en FORMULAS_POR_CELDA)
+VALORES_EN = OrderedDict()             # ningún número ni fecha cambia (las cifras de caja van en FORMULAS_POR_CELDA);
+                                       # un vertical: (libro, hoja ES, celda) → (valor ES, número EN) (mapas_cafe)
 
 # ==========================================================================
 # 10. Formatos (D13)

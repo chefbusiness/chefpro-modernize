@@ -4,11 +4,16 @@ heredar.py — memoria de traducción de un vertical del circuito de checklists 
 Sesión Claude Code, 18-oct-2026 (Bar Checklists Kit Pro).
 
     python3 heredar.py --kit bar
+    python3 heredar.py --kit cafe       # memoria con VARIAS fuentes: el base y el bar (mapas_cafe.MEMORIA)
 
 Lee `<v>/textos_es.json` (extraer_textos.py --kit <v>) y el kit base ya traducido (`textos_es.json` +
-`textos_en/G*.json`, revisado en su F2) y escribe en `<v>/textos_en/`:
+`textos_en/G*.json`, revisado en su F2) y escribe en `<v>/textos_en/`. Si el vertical declara `MEMORIA` (lista de
+fuentes en orden de preferencia: (nombre, carpeta, sufijos)), hereda también de otros verticales ya traducidos
+(`<carpeta>/textos_es.json` + `textos_en/heredado.json` + `G*.json`); la primera fuente que acierta gana. Sin
+`MEMORIA`, la única fuente es el base con `SUFIJO_A_BASE` (el bar sale byte a byte como antes):
 
-  · heredado.json   {id: {"en", "origen" (id del base), "via", "ajustes"}} — cadena ES IDÉNTICA a una del base
+  · heredado.json   {id: {"en", "origen" (id en la fuente), "via", "ajustes"[, "fuente"]}} — cadena ES IDÉNTICA a una
+                    de una fuente («fuente» solo si no es el base)
                     (via «exacta») o idéntica salvo el sufijo de variante (via «sufijo», mapas.SUFIJO_A_BASE: el EN
                     del base ya no lo lleva, D2). Ajustes deterministas: los nombres de fichero EN del base → los
                     del vertical y las pestañas citadas cuyo EN cambia (entre comillas dobles rectas).
@@ -35,10 +40,15 @@ from kit import mapas                                            # noqa: E402
 RX_CONTEXTO = re.compile(getattr(mapas, 'RX_CONTEXTO_PENDIENTE', r'(?!x)x'))
 
 
-def cargar_base():
-    te = json.load(open(os.path.join(AQUI, 'textos_es.json'), encoding='utf-8'))
+def cargar_fuente(carpeta):
+    """{es: (cadena de la fuente, su EN)} de un kit ya traducido: el base (carpeta '') o un vertical."""
+    d = os.path.join(AQUI, carpeta)
+    te = json.load(open(os.path.join(d, 'textos_es.json'), encoding='utf-8'))
     en = {}
-    for p in sorted(glob.glob(os.path.join(AQUI, 'textos_en', 'G[0-9].json'))):
+    if carpeta and os.path.exists(os.path.join(d, 'textos_en', 'heredado.json')):
+        en.update((k, v['en']) for k, v in json.load(open(os.path.join(d, 'textos_en', 'heredado.json'),
+                                                            encoding='utf-8')).items())
+    for p in sorted(glob.glob(os.path.join(d, 'textos_en', 'G[0-9].json'))):
         en.update(json.load(open(p, encoding='utf-8')))
     por_es = {}
     for c in te['cadenas']:
@@ -47,11 +57,35 @@ def cargar_base():
     return por_es
 
 
+def cargar_base():
+    return cargar_fuente('')
+
+
+def fuentes():
+    """[(nombre, {es: (cadena, en)}, sufijos)] en orden de preferencia (mapas.MEMORIA o, sin ella, solo el base)."""
+    memoria = getattr(mapas, 'MEMORIA', None) or [('base', '', list(getattr(mapas, 'SUFIJO_A_BASE', [])))]
+    return [(nombre, cargar_fuente(carpeta), list(suf)) for nombre, carpeta, suf in memoria]
+
+
+def buscar(es, lista):
+    """Primera fuente con la cadena ES exacta o igual salvo el sufijo de variante → (fuente, via, hit) o None."""
+    for nombre, por_es, sufijos in lista:
+        if es in por_es:
+            return nombre, 'exacta', por_es[es]
+        es2 = es
+        for a, b in sufijos:
+            es2 = es2.replace(a, b)
+        if es2 != es and es2 in por_es:
+            return nombre, 'sufijo', por_es[es2]
+    return None
+
+
 def ajustar(en, cb, cv):
-    """EN del base → EN del vertical: ficheros y pestañas citados. Devuelve (en, ajustes, problemas)."""
+    """EN de la fuente → EN del vertical: ficheros y pestañas citados. Devuelve (en, ajustes, problemas)."""
     ajustes, problemas = [], []
+    fich_b = {c['es']: c['en'] for c in cb.get('cita_ficheros', [])}
     for c in cv.get('cita_ficheros', []):
-        viejo = kit.mapas_base.FICHEROS.get(c['es'])
+        viejo = fich_b.get(c['es']) or kit.mapas_base.FICHEROS.get(c['es'])
         if viejo and viejo != c['en'] and viejo in en:
             en = en.replace(viejo, c['en'])
             ajustes.append('fichero %s → %s' % (viejo, c['en']))
@@ -79,21 +113,15 @@ def main():
     args = ap.parse_args()
     if kit.BASE:
         raise SystemExit('heredar.py es para un vertical: --kit <v>')
-    base = cargar_base()
+    lista = fuentes()
     tv = json.load(open(os.path.join(kit.DATOS, 'textos_es.json'), encoding='utf-8'))
-    sufijos = list(getattr(mapas, 'SUFIJO_A_BASE', []))
     heredado, pendientes = OrderedDict(), []
-    motivos, vias = Counter(), Counter()
+    motivos, vias, por_fuente = Counter(), Counter(), Counter()
     for c in tv['cadenas']:
         if c['grupo'] == 'GM':
             continue
-        via, hit = 'exacta', base.get(c['es'])
-        if hit is None:
-            es2 = c['es']
-            for a, b in sufijos:
-                es2 = es2.replace(a, b)
-            if es2 != c['es']:
-                via, hit = 'sufijo', base.get(es2)
+        r = buscar(c['es'], lista)
+        fuente, via, hit = r if r else (None, None, None)
         motivo, base_en, extra = 'nueva', None, None
         if hit is not None:
             cb, en_b = hit
@@ -107,8 +135,10 @@ def main():
                 motivo, extra = 'cita', '; '.join(problemas)
             else:
                 heredado[c['id']] = OrderedDict([('en', en), ('origen', cb['id']), ('via', via)]
-                                                + ([('ajustes', ajustes)] if ajustes else []))
+                                                + ([('ajustes', ajustes)] if ajustes else [])
+                                                + ([('fuente', fuente)] if fuente != 'base' else []))
                 vias[via] += 1
+                por_fuente[fuente] += 1
                 continue
         motivos[motivo] += 1
         p = OrderedDict([('id', c['id']), ('es', c['es']), ('grupo', c['grupo']), ('palabras', c['palabras']),
@@ -120,6 +150,8 @@ def main():
         p['motivo'] = motivo + (': ' + extra if extra else '')
         if base_en:
             p['base_en'] = base_en
+            if fuente != 'base':
+                p['base_fuente'] = fuente
         pendientes.append(p)
     salida = os.path.join(kit.DATOS, 'textos_en')
     os.makedirs(salida, exist_ok=True)
@@ -130,19 +162,24 @@ def main():
     meta = OrderedDict([
         ('kit', kit.NOMBRE), ('producto', mapas.PRODUCTO),
         ('n_pendientes', len(pendientes)), ('n_palabras', pal), ('motivos', dict(motivos)),
-        ('n_heredadas', len(heredado)), ('heredadas_por_via', dict(vias)),
+        ('n_heredadas', len(heredado)), ('heredadas_por_via', dict(vias))]
+        + ([('heredadas_por_fuente', dict(por_fuente))] if getattr(mapas, 'MEMORIA', None) else []) + [
         ('salida_traductor', 'textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)'),
-        ('referencias', ['bar/SPEC.md', 'SPEC.md §0-§3 y §7.2 (brief)', 'textos_en/glosario.json (glosario de la prosa '
-                         'del kit base)', 'bar/textos_en/heredado.json (cómo se dijo ya cada cosa)',
-                         'bar/mapas_bar.py: GLOSARIO, HOJAS, FICHEROS, TITULOS', '../GLOSARIO-JERGA-ES-EN.md']),
+        ('referencias', getattr(mapas, 'REFERENCIAS_TRADUCTOR', None) or [
+            'bar/SPEC.md', 'SPEC.md §0-§3 y §7.2 (brief)', 'textos_en/glosario.json (glosario de la prosa '
+            'del kit base)', 'bar/textos_en/heredado.json (cómo se dijo ya cada cosa)',
+            'bar/mapas_bar.py: GLOSARIO, HOJAS, FICHEROS, TITULOS', '../GLOSARIO-JERGA-ES-EN.md']),
         ('base_en', 'traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual '
-                    '(ver motivo)'),
+                    '(ver motivo)' + ('; «base_fuente» = el vertical del que viene, si no es el base'
+                                      if getattr(mapas, 'MEMORIA', None) else '')),
     ])
     with open(os.path.join(salida, 'pendientes.json'), 'w', encoding='utf-8') as fh:
         json.dump(OrderedDict([('meta', meta), ('cadenas', pendientes)]), fh, ensure_ascii=False, indent=1)
         fh.write('\n')
     pal_h = sum(c['palabras'] for c in tv['cadenas'] if c['id'] in heredado)
-    print('heredado.json: %d cadenas (%s) · %d palabras' % (len(heredado), dict(vias), pal_h))
+    print('heredado.json: %d cadenas (%s%s) · %d palabras' % (
+        len(heredado), dict(vias), ' · por fuente %s' % dict(por_fuente) if getattr(mapas, 'MEMORIA', None) else '',
+        pal_h))
     print('pendientes.json: %d cadenas (%s) · %d palabras' % (len(pendientes), dict(motivos), pal))
 
 

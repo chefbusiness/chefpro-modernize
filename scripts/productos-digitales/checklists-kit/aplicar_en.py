@@ -200,6 +200,8 @@ def regenerado_esperado(corto, h_es, coord, es, mes):
     k = (corto, h_es, coord)
     if k in mapas.POR_CELDA:
         return mapas.POR_CELDA[k]
+    if k in mapas.VALORES_EN:                                    # vertical: un número fijado (mínimos del inventario)
+        return mapas.VALORES_EN[k][1]
     if h_es == 'Instrucciones' and coord == 'B2':
         return mapas.titulo_interior(next(f for f in mapas.LIBROS_ES if extraer_textos.corto(f) == corto))
     if RX_VERSION_ES.match(es):
@@ -522,6 +524,13 @@ def capa_por_celda(L):
             L.poner(h, coord, v, es_texto)
             n += 1
     L.rep['por_celda'] = n
+    nv = 0
+    for (c, h, coord), (es, en) in mapas.VALORES_EN.items():   # vacío en el base y el bar
+        if c == L.corto:
+            L.poner(h, coord, en, lambda v, es=es: v == es)
+            nv += 1
+    if nv:
+        L.rep['valores_en'] = nv
 
 
 COMILLAS = {'\u2019': "'", '\u2018': "'", '\u201c': '"', '\u201d': '"'}
