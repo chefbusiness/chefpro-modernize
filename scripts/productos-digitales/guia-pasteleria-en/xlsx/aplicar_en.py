@@ -206,7 +206,7 @@ def procesar_hoja(xml, hoja_es, T, cfg, informe):
         return '<c r="%s"%s>%s</c>' % (ref, attrs, body)
 
     xml = RX_CELDA.sub(celda, xml)
-    sin_hacer = sorted(r for r in num if r not in hechos_num)
+    sin_hacer = sorted(r for r in num if r not in hechos_num and num[r][0] != 'vaciar')   # vaciar: ya vacía vale
     if sin_hacer:
         raise SystemExit('conversión no aplicada (celda vacía o inexistente) en %s: %s' % (hoja_es, sin_hacer))
     informe['num'] += len(hechos_num)
