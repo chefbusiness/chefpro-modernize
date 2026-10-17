@@ -20,7 +20,7 @@ Decisiones del traductor aprobadas: cabeceras del inventario, hazelnut, «Final 
 
 | Paso | Resultado |
 |---|---|
-| Montaje | 11 xlsx (nombres de `SPEC.md` §2), idempotencia 0 diferencias, `inject_cache` sin fallos |
+| Montaje (F2 inicial) | 11 xlsx (nombres de `SPEC.md` §2), idempotencia 0 diferencias, `inject_cache` sin fallos |
 | Gates | **VERDE 8/0**: G1 49 hojas · 235 fórmulas (15 por celda) · 34 DV · 35 CF · 328 merges · 36 protegidas · 5.636 desbloqueadas; G2 sin español, € ni no latinos; G3 Letter, pie, marca (47 + 2 sueltas del inventario) y versión; G4 1.563 glosario · 205 regenerar · 1.099 traducir · 33 citas de fichero · 12 de pestaña · 274 horas · **34 valores fijados**; G5 caja 204.91 / 4,200 / 0; G6 158 con valor + 77 vacías como el ES; G7 22 °F y 5 citas, todas en `SPEC.md` §3 |
 | Autotest | 17/17 defectos inyectados CAZADOS (16 del base + el valor fijado del inventario) |
 | censo-entregables | OK, 0 defectos (`--fail`) |
@@ -29,7 +29,27 @@ Decisiones del traductor aprobadas: cabeceras del inventario, hazelnut, «Final 
 | Copia al Mac | `scp` de los 11 xlsx a `astro-site/public/dl/coffee-shop-checklist-templates/`: sha256 11/11 iguales |
 | Volcados | `revision/dump_en.txt` y `dump_es.txt`, 4.515 líneas cada uno |
 
+## Ronda 1 de la revisión (`revision/REVISION-F2.md`: 5 MAYOR + 15 menor; tabla al final del informe)
+
+Textos: `heredado.json` 226 (222 del base y 4 del bar) + `G1.json` 620 (617 + 3 que la ronda saca de la memoria con
+`NO_HEREDAR`: c0170, c0211, c0985); 35 cadenas EN cambiadas o nuevas, más `GLOSARIO` (5 roles y zonas), `POR_CELDA`
+(9: horas, promesa de protección del 05, antelación del 06, unidad del bacon), `VALORES_EN` (bacon 1 lb), `ADAPTAR` y
+`REGLAS_US` (leche 3-501.17(B), cold brew, tphc 3-501.19(B)).
+
+| Paso | Resultado |
+|---|---|
+| Montaje | 11 xlsx, idempotencia 0 diferencias |
+| Gates | **VERDE 8/0**: G1 igual que en la F2; G2 + **términos prohibidos** (3.557 piezas EN revisadas, 0); G4 1.560 glosario · 209 regenerar · 1.098 traducir · 274 horas (5 por `POR_CELDA`) · 34 valores fijados; G7 25 °F y 6 citas |
+| Autotest | **18/18** CAZADOS (+ el término prohibido) |
+| censo · no-latinos | 0 defectos · 0 ficheros con no latinos |
+| Base y bar | dry-run = lo publicado (`origin/main` y `96432c18`): 0 diferencias en los volcados; gates iguales (VERDE 8/0); autotest 16/16 cada uno |
+| Copia al Mac | 11 xlsx + `dump_en.txt` (85 líneas cambian): sha256 iguales |
+
+Código compartido tocado en la ronda (para propagarlo a los hermanos): `mapas.py` (`TERMINOS_PROHIBIDOS` y
+`TERMINO_PROHIBIDO_EJEMPLO`, None en el base y el bar); `gates_en.py` (G2: el RX por toda pieza EN si el kit lo define,
+con su mutación de autotest; G4: una hora de celda fijada en `POR_CELDA` manda sobre `hora_us`; autotest G7: la cita
+inventada se elige entre las que el kit NO permite, porque la cafetería ya permite 3-501.19).
+
 «restaurant» solo aparece en la firma de autor (11, literal de la SPEC base §7.2); ni «café» con tilde, ni «cava», ni
-«shift manager», ni «venue» en el EN. Siguiente: UNA revisión adversarial sobre los volcados (lente de un coffee shop
-manager US + lente técnica), sobre todo el delta de `SPEC.md` §1 y §3, las 10 celdas con °C, el calendario y los
-mínimos del inventario en lb / oz / qt.
+roles o zonas de restaurante (lo vigila ahora G2). Pendiente para v2.1 (fuera de esta ronda): siropes en botellas
+(m12, opcional) y las dudas D1-D6 del informe.

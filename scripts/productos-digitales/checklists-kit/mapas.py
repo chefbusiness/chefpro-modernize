@@ -516,6 +516,11 @@ VALORES_EN = OrderedDict()             # ningún número ni fecha cambia (las ci
 # ==========================================================================
 # 10. Formatos (D13)
 # ==========================================================================
+# G2 (gates_en.py): RX de términos que ninguna celda EN puede llevar (p. ej. roles de restaurante en un vertical) y el
+# texto que inyecta el autotest. None en el base (y en el bar): el gate no se activa y su salida no cambia.
+TERMINOS_PROHIBIDOS = None
+TERMINO_PROHIBIDO_EJEMPLO = None
+
 FORMATOS_EN = OrderedDict([('#,##0.00 €', '#,##0.00'), ('€#,##0.00', '#,##0.00')])
 
 # ==========================================================================
