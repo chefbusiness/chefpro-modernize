@@ -1,12 +1,18 @@
 # Handoff — 16/17-oct-2026 (sesión Claude Code) — How to Open a Pastry Shop (EN, $69), producto 15 de la tienda EN
 
-## 0. Estado: LISTO a falta del Payment Link · PR #132 (draft) · rama `feat/bakery-guide-en`
-- **Tarea de John**: Payment Link en **USD $69** (¡moneda USD, no EUR!), nombre «How to Open a Pastry Shop», redirección tras
-  pago `https://aichef.pro/en/digital-products/how-to-open-a-pastry-shop/access?session_id={CHECKOUT_SESSION_ID}`,
-  impuesto automático como los demás EN.
-- Al recibirlo: CLI de Stripe, env `VITE_STRIPE_PAYMENT_LINK_HOW_TO_OPEN_A_PASTRY_SHOP` (builds), `sync-payment-links.py`,
-  PR fuera de draft, merge, gates LIVE (`gate-flujo-postpago --only how-to-open-a-pastry-shop`, completo, `tienda-gate`,
-  `robots-gate`), sitemap en GSC, correo EN 4-dic 14:00Z (borrador + routine).
+## 0. Estado final: LIVE (17-oct, merge `882f6796` del PR #132) · Tienda EN: 15 productos
+- Stripe `plink_1URUsY4CcdRGidmEk7sNDFEr` (`buy.stripe.com/4gMbIU0y0eAK9fh6Rf6oo1O`), producto `prod_VSPgxcvDbWWbSn`,
+  **$69 USD** (6900, `tax_behavior` exclusive como la Food Cost Guide EN), impuesto automático, redirección a `/access`
+  comprobada con la CLI (`--live`). Descripción Stripe (252 caracteres) en el producto. Env
+  `VITE_STRIPE_PAYMENT_LINK_HOW_TO_OPEN_A_PASTRY_SHOP` (builds, all) + mapa de 66 links (`dabbf447`).
+- Gates: `--only` contra el preview 0 fallos (aviso del webhook = el preview no tiene `STRIPE_WEBHOOK_SECRET`) · LIVE `--only`
+  **0 fallos / 0 avisos** (webhook armado) · completo en el VPS **66 productos / 918 entregables / 0 / 0** · `tienda-gate` (15 vivos
+  fuera de ES) · `robots-gate` (1.277 URLs públicas, ninguna bloqueada). Landing en `sitemap-0.xml`; sitemap reenviado en GSC.
+- **Correo EN 4-dic 14:00Z**: borrador `1e8b7c2f-5430-4ecb-8566-8b53f960fd3e` («Lanzamiento How to Open a Pastry Shop (EN) — 4-dic»,
+  asunto «Open your pastry shop with a plan, not a guess», prueba a John enviada) + routine `trig_01LqowZy9azA47FqMag3Ktwn`
+  (4-nov 15:07Z) → **al retomar después del 4-nov, mirar su `list_runs`**. Siguiente hueco EN: **9-dic 14:00Z**.
+- Sesión del 17-oct (Claude Code): la de la noche anterior SÍ terminó (resumen entregado a las 03:22); John apagó después.
+  Worktrees `wt-bakery` (Mac y VPS) eliminados; `main` del VPS al día.
 
 ## 1. Qué hay
 | Pieza | Estado |
