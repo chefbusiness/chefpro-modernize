@@ -1,0 +1,4515 @@
+Volcado de 11 xlsx de /root/wt-cafe/astro-site/public/dl/coffee-shop-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-coffee-shop-opening-closing-checklists.xlsx
+# docProps: title='Coffee Shop Opening & Closing Checklists: Espresso Bar, Kitchen & FOH' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Coffee Shop Opening & Closing Checklists: Espresso Bar, Kitchen & FOH
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 01-coffee-shop-opening-closing-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx.
+B28    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Kitchen Opening» · protegida=True · área='Kitchen Opening'!$A$1:$G$46 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Kitchen Opening Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PERSONAL HYGIENE
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C6     : Kitchen
+D6     : All staff
+E6     : 7:00 AM
+A7     : 2
+B7     : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics
+C7     : Kitchen
+D7     : All staff
+E7     : 7:00 AM
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : Kitchen
+D8     : All staff
+E8     : 7:00 AM
+A9     : 4
+B9     : Wash hands on arrival and between tasks; handwashing sink with soap, paper towels and hot water (100 °F+)
+C9     : Kitchen
+D9     : All staff
+E9     : 7:00 AM
+A10    : 5
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C10    : Kitchen
+D10    : Shift lead
+E10    : 7:00 AM
+A11    :   EQUIPMENT STARTUP
+A12    : 6
+B12    : Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else
+C12    : Kitchen
+D12    : Opening line cook
+E12    : 7:00 AM
+A13    : 7
+B13    : If the shop has gas: open the main valve and check there is NO gas smell. If you smell gas, don't turn anything on or touch any switches: get out and call the gas company or 911 from outside
+C13    : Kitchen
+D13    : Opening line cook
+E13    : 7:00 AM
+A14    : 8
+B14    : Turn on the oven and preheat for croissants, quiches and pastries
+C14    : Kitchen
+D14    : Opening line cook
+E14    : 7:00 AM
+A15    : 9
+B15    : Turn on the flat-top griddle and toaster for toast and brunch
+C15    : Kitchen
+D15    : Opening line cook
+E15    : 7:00 AM
+A16    : 10
+B16    : Turn on the steam table (if used): hot holding at 135 °F or above
+C16    : Kitchen
+D16    : Opening line cook
+E16    : 7:15 AM
+A17    : 11
+B17    : Check that the walk-in cooler and freezer ran all night and log the temperature (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F. If out of range, don't use the product until it's been assessed
+C17    : Kitchen
+D17    : Opening line cook
+E17    : 7:00 AM
+A18    :   BRUNCH MISE EN PLACE
+A19    : 12
+B19    : Make the pancake batter
+C19    : Kitchen
+D19    : Opening line cook
+E19    : 7:15 AM
+A20    : 13
+B20    : Slice bread for toast (sourdough, brioche, whole wheat)
+C20    : Kitchen
+D20    : Opening line cook
+E20    : 7:15 AM
+A21    : 14
+B21    : Prep eggs: whisked for scrambled, poached ready to go
+C21    : Kitchen
+D21    : Opening line cook
+E21    : 7:30 AM
+A22    : 15
+B22    : Prep toppings: avocado, tomato, salmon, bacon
+C22    : Kitchen
+D22    : Opening line cook
+E22    : 7:30 AM
+A23    : 16
+B23    : Build the base bowls: acai, granola, cut fruit
+C23    : Kitchen
+D23    : Opening line cook
+E23    : 7:30 AM
+A24    : 17
+B24    : Prep sauces: hollandaise, pesto, hummus
+C24    : Kitchen
+D24    : Opening line cook
+E24    : 7:45 AM
+A25    : 18
+B25    : Prep the day's salads and sides
+C25    : Kitchen
+D25    : Opening line cook
+E25    : 7:45 AM
+A26    :   STOCK & CHECKS
+A27    : 19
+B27    : Check stock of eggs, bread, avocado, salmon
+C27    : Kitchen
+D27    : Opening line cook
+E27    : 7:00 AM
+A28    : 20
+B28    : Check stock of fresh fruit for bowls
+C28    : Kitchen
+D28    : Opening line cook
+E28    : 7:00 AM
+A29    : 21
+B29    : Prep the rush order list
+C29    : Kitchen
+D29    : Opening line cook
+E29    : 7:15 AM
+A30    : 22
+B30    : Check expiration dates on opened products
+C30    : Kitchen
+D30    : Opening line cook
+E30    : 7:15 AM
+A31    : 23
+B31    : Make sure there's enough bacon/ham for the day
+C31    : Kitchen
+D31    : Opening line cook
+E31    : 7:15 AM
+A32    :   HYGIENE & SAFETY
+A33    : 24
+B33    : Make sure the first aid kit and fire extinguisher are accessible and not blocked
+C33    : Kitchen
+D33    : Opening line cook
+E33    : 7:00 AM
+A34    : 25
+B34    : Check soap and paper towels in the kitchen dispensers
+C34    : Kitchen
+D34    : Opening line cook
+E34    : 7:00 AM
+A35    : 26
+B35    : Sanitize work surfaces
+C35    : Kitchen
+D35    : Opening line cook
+E35    : 7:00 AM
+A42    : Tasks done:
+D42    = =COUNTIFS(B5:B40,"?*",F5:F40,"✓")   → caché 0.0
+E42    : of
+F42    = =COUNTIF(B5:B40,"?*")-COUNTIF(F5:F40,"N/A")   → caché 26.0
+A44    : Shift lead signature: _________________________    Time: _________
+A46    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F27 F28 F29 F30 F31 F33 F34 F35 F36 F37 F38 F39 F40 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G40 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Opening» · protegida=True · área='FOH Opening'!$A$1:$G$40 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — FOH & Patio
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   DINING ROOM
+A6     : 1
+B6     : Turn on lights and A/C
+C6     : FOH
+D6     : Opening server
+E6     : 7:30 AM
+A7     : 2
+B7     : Wipe and set tables: placemats/napkins, silverware
+C7     : FOH
+D7     : Opening server
+E7     : 7:30 AM
+A8     : 3
+B8     : Place menus on tables
+C8     : FOH
+D8     : Opening server
+E8     : 7:30 AM
+A9     : 4
+B9     : Check that chairs are clean and lined up
+C9     : FOH
+D9     : Opening server
+E9     : 7:30 AM
+A10    : 5
+B10    : Update the daily board (specials, brunch price)
+C10    : FOH
+D10    : Shift lead
+E10    : 7:45 AM
+A11    : 6
+B11    : Put on background music at a good volume
+C11    : FOH
+D11    : Shift lead
+E11    : 7:45 AM
+A12    : 7
+B12    : Check for warm lighting (no fluorescents)
+C12    : FOH
+D12    : Shift lead
+E12    : 7:45 AM
+A13    :   PATIO
+A14    : 8
+B14    : Set out patio tables and chairs
+C14    : Patio
+D14    : Opening server
+E14    : 7:30 AM
+A15    : 9
+B15    : Wipe down patio tables and chairs
+C15    : Patio
+D15    : Opening server
+E15    : 7:30 AM
+A16    : 10
+B16    : Open umbrellas/awnings if it's sunny
+C16    : Patio
+D16    : Opening server
+E16    : 7:30 AM
+A17    : 11
+B17    : Set out planters/decor if used
+C17    : Patio
+D17    : Opening server
+E17    : 7:30 AM
+A18    : 12
+B18    : Check that ashtrays are clean (smoking area)
+C18    : Patio
+D18    : Opening server
+E18    : 7:30 AM
+A19    :   SERVICE STATIONS
+A20    : 13
+B20    : Restock napkins, sugar, sweetener, stir sticks
+C20    : FOH
+D20    : Opening server
+E20    : 7:45 AM
+A21    : 14
+B21    : Check stock of condiments (ketchup, mustard, hot sauce)
+C21    : FOH
+D21    : Opening server
+E21    : 7:45 AM
+A22    : 15
+B22    : Restock paper straws and stirrers
+C22    : FOH
+D22    : Opening server
+E22    : 7:45 AM
+A23    : 16
+B23    : Check the POS and card terminal: charged and working
+C23    : FOH
+D23    : Shift lead
+E23    : 7:45 AM
+A24    : 17
+B24    : Set up the starting bank
+C24    : FOH
+D24    : Shift lead
+E24    : 7:45 AM
+A25    :   QUICK CLEAN
+A26    : 18
+B26    : Sweep and mop the FOH floor
+C26    : FOH
+D26    : Busser / runner
+E26    : 7:15 AM
+A27    : 19
+B27    : Clean the entrance glass
+C27    : FOH
+D27    : Busser / runner
+E27    : 7:15 AM
+A28    : 20
+B28    : Clean restrooms: soap, paper, air freshener
+C28    : Restrooms
+D28    : Busser / runner
+E28    : 7:15 AM
+A29    : 21
+B29    : Empty the trash cans
+C29    : FOH
+D29    : Busser / runner
+E29    : 7:15 AM
+A36    : Tasks done:
+D36    = =COUNTIFS(B5:B34,"?*",F5:F34,"✓")   → caché 0.0
+E36    : of
+F36    = =COUNTIF(B5:B34,"?*")-COUNTIF(F5:F34,"N/A")   → caché 21.0
+A38    : Shift lead signature: _________________________    Time: _________
+A40    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F18 F20 F21 F22 F23 F24 F26 F27 F28 F29 F30 F31 F32 F33 F34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G34 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Espresso Bar Opening» · protegida=True · área='Espresso Bar Opening'!$A$1:$G$44 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Opening Checklist — Espresso Bar / Cafe
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   ESPRESSO MACHINE
+A6     : 1
+B6     : Turn on the espresso machine (15-20 min warm-up)
+C6     : Bar
+D6     : Barista
+E6     : 6:45 AM
+A7     : 2
+B7     : Purge the group heads: run water for 5 seconds through each one
+C7     : Bar
+D7     : Barista
+E7     : 7:00 AM
+A8     : 3
+B8     : Dial in the grinder: pull a test shot (25–30 s, 25–30 ml (about 1 fl oz))
+C8     : Bar
+D8     : Barista
+E8     : 7:05 AM
+A9     : 4
+B9     : Check the machine pressure (9 bar)
+C9     : Bar
+D9     : Barista
+E9     : 7:05 AM
+A10    : 5
+B10    : Clean the portafilters and dry them well
+C10    : Bar
+D10    : Barista
+E10    : 7:05 AM
+A11    : 6
+B11    : Check the steam wand: purge and wipe it
+C11    : Bar
+D11    : Barista
+E11    : 7:05 AM
+A12    :   BAR STOCK
+A13    : 7
+B13    : Check coffee bean stock (open bag + backup)
+C13    : Bar
+D13    : Barista
+E13    : 7:00 AM
+A14    : 8
+B14    : Check milk stock: whole, skim (nonfat), oat, soy, almond
+C14    : Bar
+D14    : Barista
+E14    : 7:00 AM
+A15    : 9
+B15    : Check stock of cocoa powder and cinnamon
+C15    : Bar
+D15    : Barista
+E15    : 7:00 AM
+A16    : 10
+B16    : Check syrup stock: vanilla, caramel, hazelnut
+C16    : Bar
+D16    : Barista
+E16    : 7:00 AM
+A17    : 11
+B17    : Check stock of tea and herbal teas (varieties)
+C17    : Bar
+D17    : Barista
+E17    : 7:00 AM
+A18    : 12
+B18    : Check stock of fresh juices / orange juice
+C18    : Bar
+D18    : Barista
+E18    : 7:00 AM
+A19    : 13
+B19    : Check stock of white sugar, brown sugar, sweetener, stevia
+C19    : Bar
+D19    : Barista
+E19    : 7:10 AM
+A20    : 14
+B20    : Check stock of to-go cups, lids, cup carriers
+C20    : Bar
+D20    : Barista
+E20    : 7:10 AM
+A21    :   BAR PREP
+A22    : 15
+B22    : Fill the cold milk pitchers (whole + plant-based): milk stays at 41 °F or below and goes back in the fridge; one pitcher per milk type (dairy, soy and almond are allergens)
+C22    : Bar
+D22    : Barista
+E22    : 7:10 AM
+A23    : 16
+B23    : Fill the ice bin: ice is food, so keep the bin clean and use the ice scoop (handle out, never the cup)
+C23    : Bar
+D23    : Barista
+E23    : 7:10 AM
+A24    : 17
+B24    : Set up the toppings station: cocoa, cinnamon, syrups
+C24    : Bar
+D24    : Barista
+E24    : 7:10 AM
+A25    : 18
+B25    : Brew the day's drip / batch brew
+C25    : Bar
+D25    : Barista
+E25    : 7:15 AM
+A26    : 19
+B26    : Fill the airpots with hot water for tea
+C26    : Bar
+D26    : Barista
+E26    : 7:15 AM
+A27    : 20
+B27    : Prep the smoothie base if used
+C27    : Bar
+D27    : Barista
+E27    : 7:15 AM
+A28    :   PASTRY CASE
+A29    : 21
+B29    : Clean the pastry case glass, inside and outside
+C29    : Bar
+D29    : Barista
+E29    : 7:15 AM
+A30    : 22
+B30    : Stock the pastry case with the day's pastries
+C30    : Bar
+D30    : Baker
+E30    : 7:30 AM
+A31    : 23
+B31    : Label prices and allergens on the pastry case (the 9 major allergens; UK: 14)
+C31    : Bar
+D31    : Baker
+E31    : 7:30 AM
+A32    : 24
+B32    : Check the refrigerated pastry case temperature (41 °F or below) — log reading: ____ °F
+C32    : Bar
+D32    : Barista
+E32    : 7:15 AM
+A33    : 25
+B33    : Set out tongs/bakery tissue/gloves for serving: no bare-hand contact
+C33    : Bar
+D33    : Barista
+E33    : 7:15 AM
+A40    : Tasks done:
+D40    = =COUNTIFS(B5:B38,"?*",F5:F38,"✓")   → caché 0.0
+E40    : of
+F40    = =COUNTIF(B5:B38,"?*")-COUNTIF(F5:F38,"N/A")   → caché 25.0
+A42    : Shift lead signature: _________________________    Time: _________
+A44    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F18 F19 F20 F22 F23 F24 F25 F26 F27 F29 F30 F31 F32 F33 F34 F35 F36 F37 F38 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G38 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Kitchen Closing» · protegida=True · área='Kitchen Closing'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Kitchen Closing Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOOD STORAGE
+A6     : 1
+B6     : Date-mark all prepped food (ready-to-eat keeps 7 days at 41 °F; prep day = day 1)
+C6     : Kitchen
+D6     : Closing line cook
+E6     : 5:00 PM
+A7     : 2
+B7     : Store sauces in airtight, dated containers
+C7     : Kitchen
+D7     : Closing line cook
+E7     : 5:00 PM
+A8     : 3
+B8     : Cover and refrigerate the brunch toppings
+C8     : Kitchen
+D8     : Closing line cook
+E8     : 5:00 PM
+A9     : 4
+B9     : Store leftover bread in an airtight bag
+C9     : Kitchen
+D9     : Closing line cook
+E9     : 5:00 PM
+A10    : 5
+B10    : Freeze what won't be used tomorrow (label it)
+C10    : Kitchen
+D10    : Closing line cook
+E10    : 5:00 PM
+A11    :   CLEANING
+A12    : 6
+B12    : Clean and sanitize the flat-top griddle
+C12    : Kitchen
+D12    : Closing line cook
+E12    : 5:15 PM
+A13    : 7
+B13    : Clean the oven (inside, if due)
+C13    : Kitchen
+D13    : Closing line cook
+E13    : 5:15 PM
+A14    : 8
+B14    : Clean work surfaces and cutting boards
+C14    : Kitchen
+D14    : Closing line cook
+E14    : 5:15 PM
+A15    : 9
+B15    : Wash and dry utensils
+C15    : Kitchen
+D15    : Busser / runner
+E15    : 5:15 PM
+A16    : 10
+B16    : Drain and clean the fryer (if used): filter the oil following the fryer manufacturer's procedure, let it cool first if filtering by hand, wear heat-resistant gloves and use a stable container; used oil goes in the oil recycler's container
+C16    : Kitchen
+D16    : Closing line cook
+E16    : 5:15 PM
+A17    : 11
+B17    : Sweep and mop the kitchen floor
+C17    : Kitchen
+D17    : Busser / runner
+E17    : 5:30 PM
+A18    : 12
+B18    : Take out the trash and recycling
+C18    : Kitchen
+D18    : Busser / runner
+E18    : 5:30 PM
+A19    :   EQUIPMENT & SAFETY
+A20    : 13
+B20    : Turn off the oven, griddle and hood
+C20    : Kitchen
+D20    : Closing line cook
+E20    : 5:30 PM
+A21    : 14
+B21    : Check that the walk-ins are closed and at temperature (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F
+C21    : Kitchen
+D21    : Closing line cook
+E21    : 5:30 PM
+A22    : 15
+B22    : Shut off the gas valve (if used)
+C22    : Kitchen
+D22    : Closing line cook
+E22    : 5:30 PM
+A23    : 16
+B23    : Turn off kitchen lights
+C23    : Kitchen
+D23    : Closing line cook
+E23    : 5:30 PM
+A24    :   PREP FOR TOMORROW
+A25    : 17
+B25    : Thaw what you need for tomorrow (move to walk-in)
+C25    : Kitchen
+D25    : Closing line cook
+E25    : 5:00 PM
+A26    : 18
+B26    : Write down what's missing for tomorrow's order
+C26    : Kitchen
+D26    : Closing line cook
+E26    : 5:15 PM
+A27    : 19
+B27    : Make tomorrow's mise en place list
+C27    : Kitchen
+D27    : Closing line cook
+E27    : 5:15 PM
+A34    : Tasks done:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : of
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 19.0
+A36    : Shift lead signature: _________________________    Time: _________
+A38    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F20 F21 F22 F23 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Closing» · protegida=True · área='FOH Closing'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Checklist — FOH, Patio & Cash
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   DINING ROOM & FURNITURE
+A6     : 1
+B6     : Break down tables: collect tablecloths, silverware, glasses
+C6     : FOH
+D6     : Closing server
+E6     : 5:00 PM
+A7     : 2
+B7     : Wipe down all tables with sanitizer
+C7     : FOH
+D7     : Closing server
+E7     : 5:00 PM
+A8     : 3
+B8     : Line up chairs and tables
+C8     : FOH
+D8     : Closing server
+E8     : 5:00 PM
+A9     : 4
+B9     : Sweep the FOH floor
+C9     : FOH
+D9     : Busser / runner
+E9     : 5:15 PM
+A10    : 5
+B10    : Mop the FOH floor
+C10    : FOH
+D10    : Busser / runner
+E10    : 5:15 PM
+A11    :   PATIO
+A12    : 6
+B12    : Bring in the patio tables and chairs (or stack and chain them)
+C12    : Patio
+D12    : Closing server
+E12    : 5:00 PM
+A13    : 7
+B13    : Close the umbrellas/awnings
+C13    : Patio
+D13    : Closing server
+E13    : 5:00 PM
+A14    : 8
+B14    : Clean the patio area
+C14    : Patio
+D14    : Closing server
+E14    : 5:00 PM
+A15    : 9
+B15    : Collect and empty the ashtrays
+C15    : Patio
+D15    : Closing server
+E15    : 5:00 PM
+A16    : 10
+B16    : Bring in outdoor decor if it's raining
+C16    : Patio
+D16    : Closing server
+E16    : 5:00 PM
+A17    :   STATIONS & RESTROOMS
+A18    : 11
+B18    : Restock napkins, sugar and condiments for tomorrow
+C18    : FOH
+D18    : Closing server
+E18    : 5:15 PM
+A19    : 12
+B19    : Clean the service station
+C19    : FOH
+D19    : Closing server
+E19    : 5:15 PM
+A20    : 13
+B20    : Final restroom clean: soap, paper, floor
+C20    : Restrooms
+D20    : Busser / runner
+E20    : 5:15 PM
+A21    : 14
+B21    : Empty all trash cans
+C21    : FOH
+D21    : Busser / runner
+E21    : 5:15 PM
+A22    :   CASH & CLOSE
+A23    : 15
+B23    : Balance the day's register
+C23    : FOH
+D23    : Shift lead
+E23    : 5:30 PM
+A24    : 16
+B24    : Reconcile the team's tips: count the tip jar and card tips, then split them per house policy (tip pool)
+C24    : FOH
+D24    : Shift lead
+E24    : 5:30 PM
+A25    : 17
+B25    : Log the day's incidents
+C25    : FOH
+D25    : Shift lead
+E25    : 5:30 PM
+A26    : 18
+B26    : Turn off music, HVAC and lights
+C26    : FOH
+D26    : Shift lead
+E26    : 5:30 PM
+A27    : 19
+B27    : Set the alarm and lock up
+C27    : FOH
+D27    : Shift lead
+E27    : 5:30 PM
+A34    : Tasks done:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : of
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 19.0
+A36    : Shift lead signature: _________________________    Time: _________
+A38    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Espresso Bar Closing» · protegida=True · área='Espresso Bar Closing'!$A$1:$G$39 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Closing Checklist — Espresso Bar / Cafe
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   ESPRESSO MACHINE
+A6     : 1
+B6     : Backflush with espresso machine detergent, one group head at a time, following the manufacturer's instructions
+C6     : Bar
+D6     : Barista
+E6     : 5:00 PM
+A7     : 2
+B7     : Clean the portafilters with hot water
+C7     : Bar
+D7     : Barista
+E7     : 5:00 PM
+A8     : 3
+B8     : Purge the steam wand and wipe it with a damp cloth
+C8     : Bar
+D8     : Barista
+E8     : 5:00 PM
+A9     : 4
+B9     : Clean the drip tray
+C9     : Bar
+D9     : Barista
+E9     : 5:00 PM
+A10    : 5
+B10    : Empty the grounds from the knock box
+C10    : Bar
+D10    : Barista
+E10    : 5:00 PM
+A11    : 6
+B11    : Turn off the espresso machine
+C11    : Bar
+D11    : Barista
+E11    : 5:15 PM
+A12    :   GRINDER & EQUIPMENT
+A13    : 7
+B13    : Clean the grinder: brush out the leftover coffee
+C13    : Bar
+D13    : Barista
+E13    : 5:05 PM
+A14    : 8
+B14    : Close the grinder hopper
+C14    : Bar
+D14    : Barista
+E14    : 5:05 PM
+A15    : 9
+B15    : Clean the smoothie blender
+C15    : Bar
+D15    : Barista
+E15    : 5:05 PM
+A16    : 10
+B16    : Empty and clean the drip coffee airpots
+C16    : Bar
+D16    : Barista
+E16    : 5:05 PM
+A17    :   STOCK & PASTRY CASE
+A18    : 11
+B18    : Store leftover pastries (label with the date): anything TCS (custards, cheesecake, dairy fillings) at 41 °F or below, 7 days max counting the prep day; dry baked goods, dated that day
+C18    : Bar
+D18    : Barista
+E18    : 5:10 PM
+A19    : 12
+B19    : Cover the case, or empty it if refrigerated
+C19    : Bar
+D19    : Barista
+E19    : 5:10 PM
+A20    : 13
+B20    : Put opened milk (and cold brew, if you serve it) in the walk-in cooler at 41 °F or below, covered and dated; the date on the label rules
+C20    : Bar
+D20    : Barista
+E20    : 5:10 PM
+A21    : 14
+B21    : Log the remaining coffee bean stock
+C21    : Bar
+D21    : Barista
+E21    : 5:10 PM
+A22    : 15
+B22    : Log what to order for tomorrow (milk, coffee, etc.)
+C22    : Bar
+D22    : Barista
+E22    : 5:10 PM
+A23    :   BAR CLEANING
+A24    : 16
+B24    : Clean and sanitize the bar top
+C24    : Bar
+D24    : Barista
+E24    : 5:15 PM
+A25    : 17
+B25    : Clean the pastry case glass
+C25    : Bar
+D25    : Barista
+E25    : 5:15 PM
+A26    : 18
+B26    : Wash and dry the milk pitchers
+C26    : Bar
+D26    : Barista
+E26    : 5:15 PM
+A27    : 19
+B27    : Empty the ice bin
+C27    : Bar
+D27    : Barista
+E27    : 5:15 PM
+A28    : 20
+B28    : Sweep the bar area
+C28    : Bar
+D28    : Busser / runner
+E28    : 5:15 PM
+A35    : Tasks done:
+D35    = =COUNTIFS(B5:B33,"?*",F5:F33,"✓")   → caché 0.0
+E35    : of
+F35    = =COUNTIF(B5:B33,"?*")-COUNTIF(F5:F33,"N/A")   → caché 20.0
+A37    : Shift lead signature: _________________________    Time: _________
+A39    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F18 F19 F20 F21 F22 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G33 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-cafe-kitchen-pastry-case-checklists.xlsx
+# docProps: title='Cafe Kitchen Checklists: Hot Line, Cold Station & Pastry Case' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Cafe Kitchen Checklists: Hot Line, Cold Station & Pastry Case
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 02-cafe-kitchen-pastry-case-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.
+B28    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Hot Line» · protegida=True · área='Hot Line'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Hot Line Station — Griddle, Oven & Grill
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Turn on and preheat the flat-top griddle for toast
+C6     : Kitchen
+D6     : Hot line cook
+E6     : 7:00 AM
+A7     : 2
+B7     : Turn on the oven: preheat for croissants and quiches
+C7     : Kitchen
+D7     : Hot line cook
+E7     : 7:00 AM
+A8     : 3
+B8     : Prep mise en place: bacon, eggs, smoked salmon
+C8     : Kitchen
+D8     : Hot line cook
+E8     : 7:15 AM
+A9     : 4
+B9     : Smoked salmon and fish served raw — parasite destruction: get the supplier's freezing record (frozen at −4 °F or below for 7 days, or −31 °F or below until solid + 15 h) or freeze it yourself; log the lot and keep the record 90 days (FDA Food Code 3-402.11)
+C9     : Kitchen
+D9     : Hot line cook
+E9     : 7:15 AM
+A10    : 5
+B10    : Prep a base batch of scrambled eggs
+C10    : Kitchen
+D10    : Hot line cook
+E10    : 7:15 AM
+A11    : 6
+B11    : Prep pancakes: batter ready in a pitcher
+C11    : Kitchen
+D11    : Hot line cook
+E11    : 7:15 AM
+A12    : 7
+B12    : Slice and toast bread: sourdough, brioche, rye
+C12    : Kitchen
+D12    : Hot line cook
+E12    : 7:30 AM
+A13    : 8
+B13    : Check stock of butter and olive oil
+C13    : Kitchen
+D13    : Hot line cook
+E13    : 7:15 AM
+A14    :   DURING SERVICE
+A15    : 9
+B15    : Keep the griddle clean between tickets
+C15    : Kitchen
+D15    : Hot line cook
+E15    : —
+A16    : 10
+B16    : Check egg doneness: poached, scrambled, fried
+C16    : Kitchen
+D16    : Hot line cook
+E16    : —
+A17    : 11
+B17    : Restock toasted bread as needed
+C17    : Kitchen
+D17    : Hot line cook
+E17    : —
+A18    : 12
+B18    : Bake croissants/pastries in batches
+C18    : Kitchen
+D18    : Hot line cook
+E18    : —
+A19    : 13
+B19    : Watch ticket times on the pass
+C19    : Kitchen
+D19    : Hot line cook
+E19    : —
+A20    :   AFTER SERVICE
+A21    : 14
+B21    : Clean and sanitize the griddle
+C21    : Kitchen
+D21    : Hot line cook
+E21    : 3:00 PM
+A22    : 15
+B22    : Store leftover mise en place (label it)
+C22    : Kitchen
+D22    : Hot line cook
+E22    : 3:00 PM
+A23    : 16
+B23    : Clean the oven if it was used
+C23    : Kitchen
+D23    : Hot line cook
+E23    : 3:00 PM
+A24    : 17
+B24    : Log the day's usage for ordering
+C24    : Kitchen
+D24    : Hot line cook
+E24    : 3:00 PM
+A25    : 18
+B25    : Log the shift's waste (product, quantity and reason): without this data the month's food cost comes out wrong
+C25    : Kitchen
+D25    : Hot line cook
+E25    : 3:00 PM
+A32    : Tasks done:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : of
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 18.0
+A34    : Shift lead signature: _________________________    Time: _________
+A36    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cold Station» · protegida=True · área='Cold Station'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cold Station — Bowls, Salads & Cold Plates
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Wash the leafy greens and any produce served raw under running potable water. If you use a produce wash or chlorine, only a product approved for fruits and vegetables, at the label dose, and RINSE well
+C6     : Kitchen
+D6     : Cold station cook
+E6     : 7:15 AM
+A7     : 2
+B7     : Prep the acai bowl base
+C7     : Kitchen
+D7     : Cold station cook
+E7     : 7:15 AM
+A8     : 3
+B8     : Cut fresh fruit: banana, strawberry, mango, blueberries
+C8     : Kitchen
+D8     : Cold station cook
+E8     : 7:15 AM
+A9     : 4
+B9     : Prep house-made granola or check stock
+C9     : Kitchen
+D9     : Cold station cook
+E9     : 7:15 AM
+A10    : 5
+B10    : Prep overnight oats (if made to order)
+C10    : Kitchen
+D10    : Cold station cook
+E10    : 7:15 AM
+A11    : 6
+B11    : Mash fresh avocado for smashed avocado toast
+C11    : Kitchen
+D11    : Cold station cook
+E11    : 7:30 AM
+A12    : 7
+B12    : Prep base salads for the daily menu
+C12    : Kitchen
+D12    : Cold station cook
+E12    : 7:30 AM
+A13    :   DURING SERVICE
+A14    : 8
+B14    : Build bowls to order: base + toppings + sauce
+C14    : Kitchen
+D14    : Cold station cook
+E14    : —
+A15    : 9
+B15    : Keep toppings fresh (cover when not in use)
+C15    : Kitchen
+D15    : Cold station cook
+E15    : —
+A16    : 10
+B16    : Restock fruit and vegetable inserts as they run out
+C16    : Kitchen
+D16    : Cold station cook
+E16    : —
+A17    : 11
+B17    : Check the cold-ingredient cooler temperature (41 °F or below) — log reading: ____ °F
+C17    : Kitchen
+D17    : Cold station cook
+E17    : —
+A18    :   AFTER SERVICE
+A19    : 12
+B19    : Cover and refrigerate all inserts
+C19    : Kitchen
+D19    : Cold station cook
+E19    : 3:00 PM
+A20    : 13
+B20    : Toss cut fruit that's over 24 h old
+C20    : Kitchen
+D20    : Cold station cook
+E20    : 3:00 PM
+A21    : 14
+B21    : Clean and sanitize cutting boards and knives
+C21    : Kitchen
+D21    : Cold station cook
+E21    : 3:00 PM
+A22    : 15
+B22    : Log usage for ordering
+C22    : Kitchen
+D22    : Cold station cook
+E22    : 3:00 PM
+A23    : 16
+B23    : Log the shift's waste: cut fruit, avocado and unsold assembled bowls
+C23    : Kitchen
+D23    : Cold station cook
+E23    : 3:00 PM
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 16.0
+A32    : Shift lead signature: _________________________    Time: _________
+A34    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Pastry Case» · protegida=True · área='Pastry Case'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pastry & Pastry Case — Production & Display
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   MORNING PRODUCTION
+A6     : 1
+B6     : Bake the day's croissants, muffins and cupcakes
+C6     : Kitchen
+D6     : Baker
+E6     : 6:30 AM
+A7     : 2
+B7     : Prep the day's cakes (cheesecake, carrot cake...)
+C7     : Kitchen
+D7     : Baker
+E7     : 6:30 AM
+A8     : 3
+B8     : Glaze/decorate the pastries
+C8     : Kitchen
+D8     : Baker
+E8     : 7:00 AM
+A9     : 4
+B9     : Prep cookies and brownies
+C9     : Kitchen
+D9     : Baker
+E9     : 7:00 AM
+A10    : 5
+B10    : Prep puddings/flans if used
+C10    : Kitchen
+D10    : Baker
+E10    : 7:00 AM
+A11    :   PASTRY CASE
+A12    : 6
+B12    : Set up the pastry case: place items with tongs/gloves, no bare-hand contact
+C12    : Bar
+D12    : Baker
+E12    : 7:30 AM
+A13    : 7
+B13    : Label every item: name, price, allergens (the 9 major allergens; UK: 14)
+C13    : Bar
+D13    : Baker
+E13    : 7:30 AM
+A14    : 8
+B14    : Check the refrigerated pastry case temperature (41 °F or below) — log reading: ____ °F
+C14    : Bar
+D14    : Baker
+E14    : 7:30 AM
+A15    : 9
+B15    : Clean the pastry case glass (inside and outside)
+C15    : Bar
+D15    : Baker
+E15    : 7:30 AM
+A16    : 10
+B16    : Rotate product: yesterday's in front, new behind
+C16    : Bar
+D16    : Baker
+E16    : 7:30 AM
+A17    :   DURING SERVICE
+A18    : 11
+B18    : Restock the pastry case when visible stock runs low
+C18    : Bar
+D18    : Baker
+E18    : —
+A19    : 12
+B19    : Pull any product that doesn't look good
+C19    : Bar
+D19    : Baker
+E19    : —
+A20    : 13
+B20    : Bake a second batch if there's demand
+C20    : Kitchen
+D20    : Baker
+E20    : —
+A21    : 14
+B21    : Check stock of plates/bases for plating
+C21    : Bar
+D21    : Baker
+E21    : —
+A22    :   PASTRY CASE CLOSE
+A23    : 15
+B23    : Clear the case; store everything in the walk-in
+C23    : Bar
+D23    : Baker
+E23    : 5:00 PM
+A24    : 16
+B24    : Label leftovers with the date: anything TCS (custards, cheesecake, dairy fillings) at 41 °F or below, 7 days max counting the prep day
+C24    : Bar
+D24    : Baker
+E24    : 5:00 PM
+A25    : 17
+B25    : Clean the inside of the pastry case
+C25    : Bar
+D25    : Baker
+E25    : 5:00 PM
+A26    : 18
+B26    : Log the day's production, sales and WASTE (pieces pulled, given away or to staff): it's the number that sets tomorrow's production
+C26    : Bar
+D26    : Baker
+E26    : 5:00 PM
+A27    : 19
+B27    : Make tomorrow's production list
+C27    : Bar
+D27    : Baker
+E27    : 5:00 PM
+A34    : Tasks done:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : of
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 19.0
+A36    : Shift lead signature: _________________________    Time: _________
+A38    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F18 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-coffee-shop-manager-checklist.xlsx
+# docProps: title='Coffee Shop Manager Checklist: Daily, Weekly, Monthly & Shift Handover' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Coffee Shop Manager Checklist: Daily, Weekly, Monthly & Shift Handover
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 03-coffee-shop-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.
+B28    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Manager Daily» · protegida=True · área='Manager Daily'!$A$1:$G$40 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Manager / Shift Lead Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE OPENING
+A6     : 1
+B6     : Check email and pending messages
+C6     : Office
+D6     : Manager
+E6     : 7:00 AM
+A7     : 2
+B7     : Check the day's reservations (weekend brunch)
+C7     : Office
+D7     : Manager
+E7     : 7:00 AM
+A8     : 3
+B8     : Make sure the whole team has arrived
+C8     : General
+D8     : Manager
+E8     : 7:00 AM
+A9     : 4
+B9     : Quick pre-shift meeting: daily specials, allergens, VIPs
+C9     : General
+D9     : Manager
+E9     : 7:15 AM
+A10    : 5
+B10    : Check critical stock: coffee, milk, bread, pastries
+C10    : General
+D10    : Manager
+E10    : 7:15 AM
+A11    :   DURING SERVICE
+A12    : 6
+B12    : Watch wait times at the bar and kitchen
+C12    : General
+D12    : Manager
+E12    : —
+A13    : 7
+B13    : Manage incoming reservations / walk-ins
+C13    : FOH
+D13    : Manager
+E13    : —
+A14    : 8
+B14    : Resolve guest issues
+C14    : General
+D14    : Manager
+E14    : —
+A15    : 9
+B15    : Check drink and plate quality at the pass
+C15    : General
+D15    : Manager
+E15    : —
+A16    : 10
+B16    : Jump in on the bar/FOH during rushes
+C16    : General
+D16    : Manager
+E16    : —
+A17    : 11
+B17    : Make sure tables get wiped between guests
+C17    : FOH
+D17    : Manager
+E17    : —
+A18    :   MANAGEMENT & ADMIN
+A19    : 12
+B19    : Check social media: reply to comments and messages
+C19    : Office
+D19    : Manager
+E19    : 12:00 PM
+A20    : 13
+B20    : Take a photo of the daily dish/drink for social media
+C20    : General
+D20    : Manager
+E20    : 10:00 AM
+A21    : 14
+B21    : Place supplier orders for tomorrow
+C21    : Office
+D21    : Manager
+E21    : 2:00 PM
+A22    : 15
+B22    : Review sales so far today
+C22    : Office
+D22    : Manager
+E22    : 2:00 PM
+A23    :   AT CLOSE
+A24    : 16
+B24    : Supervise the kitchen, FOH and bar close
+C24    : General
+D24    : Manager
+E24    : 5:00 PM
+A25    : 17
+B25    : Balance the register and log incidents
+C25    : Office
+D25    : Manager
+E25    : 5:15 PM
+A26    : 18
+B26    : Prep the pre-shift meeting for tomorrow's shift
+C26    : Office
+D26    : Manager
+E26    : 5:15 PM
+A27    : 19
+B27    : Review tomorrow's staff schedule
+C27    : Office
+D27    : Manager
+E27    : 5:15 PM
+A28    : 20
+B28    : Review and approve team time-clock punches (in, out, breaks) in the POS or time-clock app
+C28    : Office
+D28    : Manager
+E28    : 5:15 PM
+A29    : 21
+B29    : Lock up the shop: alarm, lights, gas, doors
+C29    : General
+D29    : Manager
+E29    : 5:30 PM
+A36    : Tasks done:
+D36    = =COUNTIFS(B5:B34,"?*",F5:F34,"✓")   → caché 0.0
+E36    : of
+F36    = =COUNTIF(B5:B34,"?*")-COUNTIF(F5:F34,"N/A")   → caché 21.0
+A38    : Shift lead signature: _________________________    Time: _________
+A40    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G34 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Weekly» · protegida=True · área='Manager Weekly'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Manager Checklist (Monday)
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   ANALYSIS
+A6     : 1
+B6     : Review last week's sales
+C6     : Office
+D6     : Manager
+E6     : Monday
+A7     : 2
+B7     : Analyze best sellers and worst sellers
+C7     : Office
+D7     : Manager
+E7     : Monday
+A8     : 3
+B8     : Review customer feedback (Google, Yelp, TripAdvisor, social media)
+C8     : Office
+D8     : Manager
+E8     : Monday
+A9     : 4
+B9     : Assess the week's waste
+C9     : Office
+D9     : Manager
+E9     : Monday
+A10    :   ORDERS & STOCK
+A11    : 5
+B11    : Place the weekly coffee order (varieties)
+C11    : Office
+D11    : Manager
+E11    : Monday
+A12    : 6
+B12    : Place the weekly milk order (whole, plant-based)
+C12    : Office
+D12    : Manager
+E12    : Monday
+A13    : 7
+B13    : Place the pastry/baked goods order if sourced outside
+C13    : Office
+D13    : Manager
+E13    : Monday
+A14    : 8
+B14    : Place the fresh order: fruit, vegetables, dairy
+C14    : Office
+D14    : Manager
+E14    : Monday
+A15    : 9
+B15    : Check cleaning supply stock
+C15    : Storage
+D15    : Manager
+E15    : Monday
+A16    : 10
+B16    : Check packaging stock: cups, lids, bags
+C16    : Storage
+D16    : Manager
+E16    : Monday
+A17    : 11
+B17    : Check stock is sufficient for the weekend
+C17    : Storage
+D17    : Manager
+E17    : Friday
+A18    :   TEAM & TRAINING
+A19    : 12
+B19    : Review the staff schedule for the week
+C19    : Office
+D19    : Manager
+E19    : Monday
+A20    : 13
+B20    : Quick team meeting (10 min): weekly goals
+C20    : General
+D20    : Manager
+E20    : Monday
+A21    : 14
+B21    : Identify extra weekend coverage needs
+C21    : Office
+D21    : Manager
+E21    : Monday
+A22    :   MAINTENANCE & CLEANING
+A23    : 15
+B23    : Supervise the weekly deep clean
+C23    : General
+D23    : Manager
+E23    : Monday
+A24    : 16
+B24    : Check the espresso machine's condition
+C24    : Bar
+D24    : Manager
+E24    : Monday
+A25    : 17
+B25    : Check the furniture (chairs, tables, patio)
+C25    : FOH
+D25    : Manager
+E25    : Monday
+A26    : 18
+B26    : Check expiration dates in storage and the walk-ins
+C26    : Storage
+D26    : Manager
+E26    : Monday
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 18.0
+A35    : Shift lead signature: _________________________    Time: _________
+A37    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F19 F20 F21 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Monthly» · protegida=True · área='Manager Monthly'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Monthly Checklist
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   FINANCIAL
+A6     : 1
+B6     : Review the month's P&L (revenue vs expenses)
+C6     : Office
+D6     : Manager
+E6     : Day 1
+A7     : 2
+B7     : Calculate the month's food cost
+C7     : Office
+D7     : Manager
+E7     : Day 1
+A8     : 3
+B8     : Review labor cost vs. sales
+C8     : Office
+D8     : Manager
+E8     : Day 1
+A9     : 4
+B9     : Negotiate supplier prices if needed
+C9     : Office
+D9     : Manager
+E9     : Day 1
+A10    : 5
+B10    : Review delivery fees (DoorDash, Uber Eats, Grubhub)
+C10    : Office
+D10    : Manager
+E10    : Day 1
+A11    :   TEAM
+A12    : 6
+B12    : Quick team performance review
+C12    : Office
+D12    : Manager
+E12    : Day 1
+A13    : 7
+B13    : Review training needs (latte art, guest service)
+C13    : Office
+D13    : Manager
+E13    : Day 1
+A14    : 8
+B14    : Update the vacation schedule
+C14    : Office
+D14    : Manager
+E14    : Day 1
+A15    : 9
+B15    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C15    : Office
+D15    : Manager
+E15    : Day 1
+A16    :   MAINTENANCE
+A17    : 10
+B17    : Descale the espresso machine per the manufacturer's instructions
+C17    : Bar
+D17    : Tech / barista
+E17    : Monthly
+A18    : 11
+B18    : Check the grinder: burrs, dial-in
+C18    : Bar
+D18    : Tech / barista
+E18    : Monthly
+A19    : 12
+B19    : Oven maintenance: heating elements, door, gaskets
+C19    : Kitchen
+D19    : Technician
+E19    : Monthly
+A20    : 13
+B20    : Check the dish machine: filters, rinse aid, salt (only if it has a water softener)
+C20    : Kitchen
+D20    : Manager
+E20    : Monthly
+A21    : 14
+B21    : Check HVAC: filters, temperature
+C21    : General
+D21    : Technician
+E21    : Monthly
+A22    : 15
+B22    : Check first aid kit: stock, expiration dates
+C22    : General
+D22    : Manager
+E22    : Monthly
+A23    :   MARKETING & MENU
+A24    : 16
+B24    : Evaluate the menu: rotate seasonal items
+C24    : Office
+D24    : Manager
+E24    : Monthly
+A25    : 17
+B25    : Plan next month's specials
+C25    : Office
+D25    : Manager
+E25    : Monthly
+A26    : 18
+B26    : Review social media photos: quality, frequency
+C26    : Office
+D26    : Manager
+E26    : Monthly
+A27    : 19
+B27    : Review online ratings and answer pending reviews
+C27    : Office
+D27    : Manager
+E27    : Monthly
+A34    : Tasks done:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : of
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 19.0
+A36    : Shift lead signature: _________________________    Time: _________
+A38    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F24 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shift Handover» · protegida=True · área='Shift Handover'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Shift Change Checklist (Handover)
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   SERVICE STATUS
+A6     : 1
+B6     : Occupied tables and pending reservations
+C6     : General
+D6     : Outgoing shift
+E6     : —
+A7     : 2
+B7     : Tickets in progress in the kitchen
+C7     : General
+D7     : Outgoing shift
+E7     : —
+A8     : 3
+B8     : Pending drinks at the bar
+C8     : General
+D8     : Outgoing shift
+E8     : —
+A9     :   INCIDENTS
+A10    : 4
+B10    : Incidents from the outgoing shift
+C10    : General
+D10    : Outgoing shift
+E10    : —
+A11    : 5
+B11    : Guest complaints or special requests
+C11    : General
+D11    : Outgoing shift
+E11    : —
+A12    : 6
+B12    : Deliveries still to be received
+C12    : General
+D12    : Outgoing shift
+E12    : —
+A13    :   STOCK & EQUIPMENT
+A14    : 7
+B14    : Coffee bean stock status
+C14    : Bar
+D14    : Outgoing shift
+E14    : —
+A15    : 8
+B15    : Milk stock (what's left and what's missing)
+C15    : Bar
+D15    : Outgoing shift
+E15    : —
+A16    : 9
+B16    : Pastry stock in the case
+C16    : Bar
+D16    : Outgoing shift
+E16    : —
+A17    : 10
+B17    : Espresso machine status (any problems)
+C17    : Bar
+D17    : Outgoing shift
+E17    : —
+A18    : 11
+B18    : General cleanliness status
+C18    : General
+D18    : Outgoing shift
+E18    : —
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Shift lead signature: _________________________    Time: _________
+A29    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F10 F11 F12 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-barista-checklist-duties-by-role.xlsx
+# docProps: title='Barista Checklist & Daily Duties by Role (Shift Lead, Barista, Baker, Server, Busser)' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Barista Checklist & Daily Duties by Role (Shift Lead, Barista, Baker, Server, Busser)
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 04-barista-checklist-duties-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.
+B28    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Shift Lead» · protegida=True · área='Shift Lead'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Shift Lead
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Open the shop and disarm the alarm
+C6     : General
+D6     : Shift lead
+E6     : 7:00 AM
+A7     : 2
+B7     : Make sure the whole team has arrived
+C7     : General
+D7     : Shift lead
+E7     : 7:00 AM
+A8     : 3
+B8     : Pre-shift: specials, allergens, reservations
+C8     : General
+D8     : Shift lead
+E8     : 7:15 AM
+A9     : 4
+B9     : Set up the starting bank
+C9     : FOH
+D9     : Shift lead
+E9     : 7:15 AM
+A10    : 5
+B10    : Supervise the kitchen, FOH and bar opening
+C10    : General
+D10    : Shift lead
+E10    : 7:30 AM
+A11    :   SERVICE
+A12    : 6
+B12    : Manage reservations and walk-ins
+C12    : FOH
+D12    : Shift lead
+E12    : —
+A13    : 7
+B13    : Resolve guest issues
+C13    : General
+D13    : Shift lead
+E13    : —
+A14    : 8
+B14    : Watch wait times
+C14    : General
+D14    : Shift lead
+E14    : —
+A15    : 9
+B15    : Jump in where needed most (bar/FOH/kitchen)
+C15    : General
+D15    : Shift lead
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Supervise the close of every area
+C17    : General
+D17    : Shift lead
+E17    : 5:00 PM
+A18    : 11
+B18    : Balance the day's register
+C18    : Office
+D18    : Shift lead
+E18    : 5:15 PM
+A19    : 12
+B19    : Place tomorrow's orders
+C19    : Office
+D19    : Shift lead
+E19    : 5:15 PM
+A20    : 13
+B20    : Log incidents and prep tomorrow's pre-shift meeting
+C20    : Office
+D20    : Shift lead
+E20    : 5:15 PM
+A21    : 14
+B21    : Lock up the shop: alarm, lights, gas, doors
+C21    : General
+D21    : Shift lead
+E21    : 5:30 PM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift lead signature: _________________________    Time: _________
+A32    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Barista» · protegida=True · área='Barista'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Barista
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BAR OPENING
+A6     : 1
+B6     : Turn on the espresso machine and wait for it to warm up
+C6     : Bar
+D6     : Barista
+E6     : 6:45 AM
+A7     : 2
+B7     : Purge the group heads and dial in the grinder (test shot)
+C7     : Bar
+D7     : Barista
+E7     : 7:05 AM
+A8     : 3
+B8     : Check stock: coffee, milk, syrups, tea
+C8     : Bar
+D8     : Barista
+E8     : 7:00 AM
+A9     : 4
+B9     : Fill the cold milk pitchers
+C9     : Bar
+D9     : Barista
+E9     : 7:10 AM
+A10    : 5
+B10    : Set up the toppings and syrup station
+C10    : Bar
+D10    : Barista
+E10    : 7:10 AM
+A11    : 6
+B11    : Brew the drip / batch brew
+C11    : Bar
+D11    : Barista
+E11    : 7:15 AM
+A12    : 7
+B12    : Fill the ice bin
+C12    : Bar
+D12    : Barista
+E12    : 7:10 AM
+A13    :   SERVICE
+A14    : 8
+B14    : Make drinks to order (espresso, latte, cappuccino)
+C14    : Bar
+D14    : Barista
+E14    : —
+A15    : 9
+B15    : Keep quality consistent: crema, temperature, texture
+C15    : Bar
+D15    : Barista
+E15    : —
+A16    : 10
+B16    : Wipe the portafilter between shots
+C16    : Bar
+D16    : Barista
+E16    : —
+A17    : 11
+B17    : Purge the steam wand after every use
+C17    : Bar
+D17    : Barista
+E17    : —
+A18    : 12
+B18    : Restock milk and coffee as stock runs low
+C18    : Bar
+D18    : Barista
+E18    : —
+A19    : 13
+B19    : Prep smoothies, juices and cold drinks
+C19    : Bar
+D19    : Barista
+E19    : —
+A20    :   BAR CLOSING
+A21    : 14
+B21    : Backflush the machine with espresso machine detergent, following the manufacturer's instructions
+C21    : Bar
+D21    : Barista
+E21    : 5:00 PM
+A22    : 15
+B22    : Clean the grinder with a brush
+C22    : Bar
+D22    : Barista
+E22    : 5:05 PM
+A23    : 16
+B23    : Wash the milk pitchers and utensils
+C23    : Bar
+D23    : Barista
+E23    : 5:05 PM
+A24    : 17
+B24    : Log remaining coffee stock for ordering
+C24    : Bar
+D24    : Barista
+E24    : 5:10 PM
+A25    : 18
+B25    : Wipe down the bar surface
+C25    : Bar
+D25    : Barista
+E25    : 5:15 PM
+A26    : 19
+B26    : Turn off the espresso machine
+C26    : Bar
+D26    : Barista
+E26    : 5:15 PM
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 19.0
+A35    : Shift lead signature: _________________________    Time: _________
+A37    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Baker» · protegida=True · área='Baker'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Baker
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   PRODUCTION
+A6     : 1
+B6     : Bake the day's pastries (croissants, muffins, cupcakes)
+C6     : Kitchen
+D6     : Baker
+E6     : 6:30 AM
+A7     : 2
+B7     : Prep the day's cakes
+C7     : Kitchen
+D7     : Baker
+E7     : 6:30 AM
+A8     : 3
+B8     : Glaze and decorate pieces
+C8     : Kitchen
+D8     : Baker
+E8     : 7:00 AM
+A9     : 4
+B9     : Prep cookies, brownies, loaf cakes
+C9     : Kitchen
+D9     : Baker
+E9     : 7:00 AM
+A10    :   PASTRY CASE & SERVICE
+A11    : 5
+B11    : Set up the pastry case with the day's product
+C11    : Bar
+D11    : Baker
+E11    : 7:30 AM
+A12    : 6
+B12    : Label name, price and allergens on every piece (the 9 major allergens; UK: 14)
+C12    : Bar
+D12    : Baker
+E12    : 7:30 AM
+A13    : 7
+B13    : Rotate product in the pastry case (FIFO)
+C13    : Bar
+D13    : Baker
+E13    : 7:30 AM
+A14    : 8
+B14    : Restock the pastry case during service
+C14    : Bar
+D14    : Baker
+E14    : —
+A15    : 9
+B15    : Pull any product that isn't fresh
+C15    : Bar
+D15    : Baker
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Pull product from the case and store in the walk-in
+C17    : Bar
+D17    : Baker
+E17    : 5:00 PM
+A18    : 11
+B18    : Label leftovers with the date: anything TCS (custards, cheesecake, dairy fillings) at 41 °F or below, 7 days max counting the prep day
+C18    : Kitchen
+D18    : Baker
+E18    : 5:00 PM
+A19    : 12
+B19    : Clean the production area
+C19    : Kitchen
+D19    : Baker
+E19    : 5:00 PM
+A20    : 13
+B20    : Log sales vs. production (adjust quantities)
+C20    : Office
+D20    : Baker
+E20    : 5:00 PM
+A21    : 14
+B21    : Make tomorrow's production list
+C21    : Office
+D21    : Baker
+E21    : 5:00 PM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 14.0
+A30    : Shift lead signature: _________________________    Time: _________
+A32    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Server» · protegida=True · área='Server'!$A$1:$G$33 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Server
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Set the tables in your section
+C6     : FOH
+D6     : Server
+E6     : 7:30 AM
+A7     : 2
+B7     : Restock your station: napkins, sugar, silverware
+C7     : FOH
+D7     : Server
+E7     : 7:30 AM
+A8     : 3
+B8     : Set up the patio if needed
+C8     : Patio
+D8     : Server
+E8     : 7:30 AM
+A9     : 4
+B9     : Review the menu and the day's specials
+C9     : FOH
+D9     : Server
+E9     : 7:45 AM
+A10    :   SERVICE
+A11    : 5
+B11    : Greet and seat guests
+C11    : FOH
+D11    : Server
+E11    : —
+A12    : 6
+B12    : Take orders (know every dish's allergens)
+C12    : FOH
+D12    : Server
+E12    : —
+A13    : 7
+B13    : Serve drinks and food on time
+C13    : FOH
+D13    : Server
+E13    : —
+A14    : 8
+B14    : Clear the table between guests (quick and discreet)
+C14    : FOH
+D14    : Server
+E14    : —
+A15    : 9
+B15    : Offer dessert or a second drink proactively
+C15    : FOH
+D15    : Server
+E15    : —
+A16    : 10
+B16    : Take payment: cash or card terminal, no delay
+C16    : FOH
+D16    : Server
+E16    : —
+A17    : 11
+B17    : Send guests off with a friendly goodbye
+C17    : FOH
+D17    : Server
+E17    : —
+A18    :   CLOSING
+A19    : 12
+B19    : Break down the tables in your section
+C19    : FOH
+D19    : Server
+E19    : 5:00 PM
+A20    : 13
+B20    : Wipe down tables and chairs
+C20    : FOH
+D20    : Server
+E20    : 5:00 PM
+A21    : 14
+B21    : Restock the service station for tomorrow
+C21    : FOH
+D21    : Server
+E21    : 5:15 PM
+A22    : 15
+B22    : Bring in the patio
+C22    : Patio
+D22    : Server
+E22    : 5:00 PM
+A29    : Tasks done:
+D29    = =COUNTIFS(B5:B27,"?*",F5:F27,"✓")   → caché 0.0
+E29    : of
+F29    = =COUNTIF(B5:B27,"?*")-COUNTIF(F5:F27,"N/A")   → caché 15.0
+A31    : Shift lead signature: _________________________    Time: _________
+A33    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 F27 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G27 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Busser & Runner» · protegida=True · área='Busser & Runner'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Busser / Runner
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING
+A6     : 1
+B6     : Sweep and mop the FOH and restroom floors
+C6     : FOH
+D6     : Busser / runner
+E6     : 7:00 AM
+A7     : 2
+B7     : Clean the entrance glass and windows
+C7     : FOH
+D7     : Busser / runner
+E7     : 7:00 AM
+A8     : 3
+B8     : Clean restrooms: soap, paper, air freshener, floor
+C8     : Restrooms
+D8     : Busser / runner
+E8     : 7:00 AM
+A9     : 4
+B9     : Empty trash cans and put in new liners
+C9     : General
+D9     : Busser / runner
+E9     : 7:00 AM
+A10    :   SERVICE
+A11    : 5
+B11    : Bus dirty dishes from tables
+C11    : FOH
+D11    : Busser / runner
+E11    : —
+A12    : 6
+B12    : Run tickets from the kitchen to the FOH
+C12    : General
+D12    : Busser / runner
+E12    : —
+A13    : 7
+B13    : Restock silverware, napkins and glasses in the FOH
+C13    : FOH
+D13    : Busser / runner
+E13    : —
+A14    : 8
+B14    : Help at the bar: wash glasses, restock mugs
+C14    : Bar
+D14    : Busser / runner
+E14    : —
+A15    : 9
+B15    : Keep floors clean (mop as needed)
+C15    : General
+D15    : Busser / runner
+E15    : —
+A16    :   CLOSING
+A17    : 10
+B17    : Final dish area: wash all remaining dishes
+C17    : Kitchen
+D17    : Busser / runner
+E17    : 5:00 PM
+A18    : 11
+B18    : Sweep and mop all floors
+C18    : General
+D18    : Busser / runner
+E18    : 5:15 PM
+A19    : 12
+B19    : Final restroom clean
+C19    : Restrooms
+D19    : Busser / runner
+E19    : 5:15 PM
+A20    : 13
+B20    : Take out trash and recycling
+C20    : General
+D20    : Busser / runner
+E20    : 5:15 PM
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 13.0
+A29    : Shift lead signature: _________________________    Time: _________
+A31    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F15 F17 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-cafe-cleaning-checklist-inventory-maintenance.xlsx
+# docProps: title='Cafe Cleaning Checklist, Inventory & Maintenance Schedule' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$39 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Cafe Cleaning Checklist, Inventory & Maintenance Schedule
+B4     : Quarterly, annual and freezer shelf life
+B6     : ▸ The "Quarterly & Annual" sheet covers the maintenance you CONTRACT OUT and are asked for in an inspection: pest control, hood and exhaust cleaning, fire extinguishers, gas, Legionella (water program), the espresso machine's water filter and service, insurance and POS / sales tax.
+B7     : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
+B8     : ▸ At the bottom of "Weekly FIFO Check" there is an editable table of freezer shelf life by food group: one single rule for the whole freezer either throws out good product or lets old product slip through.
+B10    : How the counter works
+B12    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B13    : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B14    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B16    : Free rows
+B18    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B19    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B21    : Sheet protection
+B23    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B24    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B26    : Works with
+B28    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B29    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B30    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B31    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B32    : ▸ You are in 05-cafe-cleaning-checklist-inventory-maintenance.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.
+B34    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B36    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B37    : Contact: info@aichef.pro
+B39    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Daily Inventory» · protegida=False · área='Daily Inventory'!$A$1:$F$48 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Station Inventory — Immediate Stock
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM    Assigned to: ________________
+A4     : Product
+B4     : On hand
+C4     : Unit
+D4     : Par
+E4     : Status
+F4     : Notes / Order
+A5     :   COFFEE
+A6     : Coffee beans — house blend
+C6     : lb
+D6     : 4
+E6     = =IF(B6="","",IF(B6<D6,"⚠️ REORDER","OK"))   → caché None
+A7     : Coffee beans — single origin/specialty
+C7     : lb
+D7     : 2
+E7     = =IF(B7="","",IF(B7<D7,"⚠️ REORDER","OK"))   → caché None
+A8     : Decaf coffee beans
+C8     : lb
+D8     : 1
+E8     = =IF(B8="","",IF(B8<D8,"⚠️ REORDER","OK"))   → caché None
+A9     :   MILKS
+A10    : Whole milk
+C10    : qt
+D10    : 5
+E10    = =IF(B10="","",IF(B10<D10,"⚠️ REORDER","OK"))   → caché None
+A11    : Skim (nonfat) milk
+C11    : qt
+D11    : 3
+E11    = =IF(B11="","",IF(B11<D11,"⚠️ REORDER","OK"))   → caché None
+A12    : Oat milk
+C12    : qt
+D12    : 3
+E12    = =IF(B12="","",IF(B12<D12,"⚠️ REORDER","OK"))   → caché None
+A13    : Soy milk
+C13    : qt
+D13    : 2
+E13    = =IF(B13="","",IF(B13<D13,"⚠️ REORDER","OK"))   → caché None
+A14    : Almond milk
+C14    : qt
+D14    : 2
+E14    = =IF(B14="","",IF(B14<D14,"⚠️ REORDER","OK"))   → caché None
+A15    : Heavy whipping cream
+C15    : qt
+D15    : 1
+E15    = =IF(B15="","",IF(B15<D15,"⚠️ REORDER","OK"))   → caché None
+A16    :   DRINKS
+A17    : Cocoa powder
+C17    : lb
+D17    : 1
+E17    = =IF(B17="","",IF(B17<D17,"⚠️ REORDER","OK"))   → caché None
+A18    : Matcha powder
+C18    : oz
+D18    : 4
+E18    = =IF(B18="","",IF(B18<D18,"⚠️ REORDER","OK"))   → caché None
+A19    : Vanilla syrup
+C19    : qt
+D19    : 0.5
+E19    = =IF(B19="","",IF(B19<D19,"⚠️ REORDER","OK"))   → caché None
+A20    : Caramel syrup
+C20    : qt
+D20    : 0.5
+E20    = =IF(B20="","",IF(B20<D20,"⚠️ REORDER","OK"))   → caché None
+A21    : Tea / herbal teas (varieties)
+C21    : ea
+D21    : 20
+E21    = =IF(B21="","",IF(B21<D21,"⚠️ REORDER","OK"))   → caché None
+A22    : Fresh orange juice
+C22    : qt
+D22    : 3
+E22    = =IF(B22="","",IF(B22<D22,"⚠️ REORDER","OK"))   → caché None
+A23    :   BAKERY & PASTRIES
+A24    : Sourdough bread
+C24    : ea
+D24    : 10
+E24    = =IF(B24="","",IF(B24<D24,"⚠️ REORDER","OK"))   → caché None
+A25    : Brioche bread
+C25    : ea
+D25    : 8
+E25    = =IF(B25="","",IF(B25<D25,"⚠️ REORDER","OK"))   → caché None
+A26    : Whole wheat/rye bread
+C26    : ea
+D26    : 6
+E26    = =IF(B26="","",IF(B26<D26,"⚠️ REORDER","OK"))   → caché None
+A27    : Croissants
+C27    : ea
+D27    : 12
+E27    = =IF(B27="","",IF(B27<D27,"⚠️ REORDER","OK"))   → caché None
+A28    : Muffins / Cupcakes
+C28    : ea
+D28    : 10
+E28    = =IF(B28="","",IF(B28<D28,"⚠️ REORDER","OK"))   → caché None
+A29    : Cookies / Brownies
+C29    : ea
+D29    : 8
+E29    = =IF(B29="","",IF(B29<D29,"⚠️ REORDER","OK"))   → caché None
+A30    :   BRUNCH FRESH
+A31    : Eggs
+C31    : ea
+D31    : 30
+E31    = =IF(B31="","",IF(B31<D31,"⚠️ REORDER","OK"))   → caché None
+A32    : Avocado
+C32    : ea
+D32    : 6
+E32    = =IF(B32="","",IF(B32<D32,"⚠️ REORDER","OK"))   → caché None
+A33    : Smoked salmon
+C33    : oz
+D33    : 10
+E33    = =IF(B33="","",IF(B33<D33,"⚠️ REORDER","OK"))   → caché None
+A34    : Bacon
+C34    : oz
+D34    : 18
+E34    = =IF(B34="","",IF(B34<D34,"⚠️ REORDER","OK"))   → caché None
+A35    : Butter
+C35    : oz
+D35    : 8
+E35    = =IF(B35="","",IF(B35<D35,"⚠️ REORDER","OK"))   → caché None
+A36    : Cream cheese
+C36    : oz
+D36    : 8
+E36    = =IF(B36="","",IF(B36<D36,"⚠️ REORDER","OK"))   → caché None
+A37    : Fresh fruit (banana, strawberry, blueberries)
+C37    : lb
+D37    : 4
+E37    = =IF(B37="","",IF(B37<D37,"⚠️ REORDER","OK"))   → caché None
+A38    : Granola
+C38    : lb
+D38    : 1
+E38    = =IF(B38="","",IF(B38<D38,"⚠️ REORDER","OK"))   → caché None
+A39    :   PACKAGING (TO-GO)
+A40    : To-go cups (medium)
+C40    : ea
+D40    : 50
+E40    = =IF(B40="","",IF(B40<D40,"⚠️ REORDER","OK"))   → caché None
+A41    : To-go cups (large)
+C41    : ea
+D41    : 30
+E41    = =IF(B41="","",IF(B41<D41,"⚠️ REORDER","OK"))   → caché None
+A42    : Cup lids
+C42    : ea
+D42    : 80
+E42    = =IF(B42="","",IF(B42<D42,"⚠️ REORDER","OK"))   → caché None
+A43    : Pastry bags
+C43    : ea
+D43    : 30
+E43    = =IF(B43="","",IF(B43<D43,"⚠️ REORDER","OK"))   → caché None
+A44    : Napkins
+C44    : ea
+D44    : 100
+E44    = =IF(B44="","",IF(B44<D44,"⚠️ REORDER","OK"))   → caché None
+A46    : Manager signature: _________________________    Time: _________
+A48    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro —
+
+=== Hoja «Weekly Inventory» · protegida=False · área='Weekly Inventory'!$A$1:$F$58 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Storage Inventory — Count by Category
+A2     : Week of ___/___/______ to ___/___/______    Assigned to: ________________
+A4     : Item / Category
+B4     : On hand
+C4     : Unit
+D4     : Unit cost
+E4     : Total value
+F4     : Order needed
+A5     :   COFFEE & TEA
+A6     : House blend coffee (2 lb bags)
+C6     : lb
+E6     = =IF(B6="","",B6*D6)   → caché None
+A7     : Single origin/specialty coffee
+C7     : lb
+E7     = =IF(B7="","",B7*D7)   → caché None
+A8     : Decaf coffee
+C8     : lb
+E8     = =IF(B8="","",B8*D8)   → caché None
+A9     : Assorted tea (boxes)
+C9     : ea
+E9     = =IF(B9="","",B9*D9)   → caché None
+A10    : Matcha
+C10    : oz
+E10    = =IF(B10="","",B10*D10)   → caché None
+A11    :   DAIRY & MILKS
+A12    : Whole milk (cartons/bottles)
+C12    : qt
+E12    = =IF(B12="","",B12*D12)   → caché None
+A13    : Skim (nonfat) milk
+C13    : qt
+E13    = =IF(B13="","",B13*D13)   → caché None
+A14    : Oat milk
+C14    : qt
+E14    = =IF(B14="","",B14*D14)   → caché None
+A15    : Soy milk
+C15    : qt
+E15    = =IF(B15="","",B15*D15)   → caché None
+A16    : Almond milk
+C16    : qt
+E16    = =IF(B16="","",B16*D16)   → caché None
+A17    : Heavy whipping cream
+C17    : qt
+E17    = =IF(B17="","",B17*D17)   → caché None
+A18    : Butter
+C18    : lb
+E18    = =IF(B18="","",B18*D18)   → caché None
+A19    : Cream cheese
+C19    : lb
+E19    = =IF(B19="","",B19*D19)   → caché None
+A20    :   BAKERY / PASTRIES
+A21    : Sourdough bread (loaves)
+C21    : ea
+E21    = =IF(B21="","",B21*D21)   → caché None
+A22    : Brioche bread (pieces)
+C22    : ea
+E22    = =IF(B22="","",B22*D22)   → caché None
+A23    : Croissants (frozen or fresh)
+C23    : ea
+E23    = =IF(B23="","",B23*D23)   → caché None
+A24    : Muffin / pastry dough
+C24    : lb
+E24    = =IF(B24="","",B24*D24)   → caché None
+A25    : Flour, sugar, yeast (in-house production)
+C25    : lb
+E25    = =IF(B25="","",B25*D25)   → caché None
+A26    :   FRESH
+A27    : Eggs (dozens)
+C27    : doz
+E27    = =IF(B27="","",B27*D27)   → caché None
+A28    : Avocado
+C28    : ea
+E28    = =IF(B28="","",B28*D28)   → caché None
+A29    : Smoked salmon
+C29    : lb
+E29    = =IF(B29="","",B29*D29)   → caché None
+A30    : Bacon
+C30    : lb
+E30    = =IF(B30="","",B30*D30)   → caché None
+A31    : Assorted fresh fruit
+C31    : lb
+E31    = =IF(B31="","",B31*D31)   → caché None
+A32    : Granola
+C32    : lb
+E32    = =IF(B32="","",B32*D32)   → caché None
+A33    : Plain yogurt
+C33    : qt
+E33    = =IF(B33="","",B33*D33)   → caché None
+A34    :   DRY GOODS & SYRUPS
+A35    : Cocoa powder
+C35    : lb
+E35    = =IF(B35="","",B35*D35)   → caché None
+A36    : Syrups (vanilla, caramel, hazelnut)
+C36    : qt
+E36    = =IF(B36="","",B36*D36)   → caché None
+A37    : White sugar
+C37    : lb
+E37    = =IF(B37="","",B37*D37)   → caché None
+A38    : Brown sugar
+C38    : lb
+E38    = =IF(B38="","",B38*D38)   → caché None
+A39    : Sweetener/stevia
+C39    : ea
+E39    = =IF(B39="","",B39*D39)   → caché None
+A40    : Honey
+C40    : lb
+E40    = =IF(B40="","",B40*D40)   → caché None
+A41    :   PACKAGING & DISPOSABLES
+A42    : Medium to-go cups
+C42    : ea
+E42    = =IF(B42="","",B42*D42)   → caché None
+A43    : Large to-go cups
+C43    : ea
+E43    = =IF(B43="","",B43*D43)   → caché None
+A44    : Cup lids
+C44    : ea
+E44    = =IF(B44="","",B44*D44)   → caché None
+A45    : Paper pastry bags
+C45    : ea
+E45    = =IF(B45="","",B45*D45)   → caché None
+A46    : Napkins
+C46    : ea
+E46    = =IF(B46="","",B46*D46)   → caché None
+A47    : Paper straws
+C47    : ea
+E47    = =IF(B47="","",B47*D47)   → caché None
+A48    :   CLEANING
+A49    : Dish machine detergent
+C49    : qt
+E49    = =IF(B49="","",B49*D49)   → caché None
+A50    : Surface sanitizer
+C50    : qt
+E50    = =IF(B50="","",B50*D50)   → caché None
+A51    : Espresso backflush tablets
+C51    : ea
+E51    = =IF(B51="","",B51*D51)   → caché None
+A52    : Machine descaler
+C52    : qt
+E52    = =IF(B52="","",B52*D52)   → caché None
+A53    : Hand soap
+C53    : qt
+E53    = =IF(B53="","",B53*D53)   → caché None
+A54    : Toilet paper and paper towels
+C54    : ea
+E54    = =IF(B54="","",B54*D54)   → caché None
+D56    : TOTAL:
+E56    = =SUM(E5:E54)   → caché 0.0
+A58    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro —
+
+=== Hoja «Weekly Deep Clean» · protegida=True · área='Weekly Deep Clean'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Deep Cleaning Checklist
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN
+A6     : 1
+B6     : Clean inside the walk-in coolers and freezers
+C6     : Kitchen
+D6     : Busser / runner
+E6     : Monday
+A7     : 2
+B7     : Take apart and clean the exhaust hood
+C7     : Kitchen
+D7     : Busser / runner
+E7     : Monday
+A8     : 3
+B8     : Deep clean the oven interior
+C8     : Kitchen
+D8     : Busser / runner
+E8     : Monday
+A9     : 4
+B9     : Clean behind and under equipment
+C9     : Kitchen
+D9     : Busser / runner
+E9     : Monday
+A10    : 5
+B10    : Sanitize cutting boards (check with test strips)
+C10    : Kitchen
+D10    : Busser / runner
+E10    : Monday
+A11    : 6
+B11    : Clean storage shelves
+C11    : Storage
+D11    : Busser / runner
+E11    : Monday
+A12    :   BAR
+A13    : 7
+B13    : Deep clean the inside of the pastry case
+C13    : Bar
+D13    : Barista
+E13    : Monday
+A14    : 8
+B14    : Clean the espresso group heads with the group brush
+C14    : Bar
+D14    : Barista
+E14    : Monday
+A15    : 9
+B15    : Clean inside the grinder (no water)
+C15    : Bar
+D15    : Barista
+E15    : Monday
+A16    : 10
+B16    : Clean inside the bar fridge
+C16    : Bar
+D16    : Barista
+E16    : Monday
+A17    : 11
+B17    : Sanitize the entire bar surface
+C17    : Bar
+D17    : Busser / runner
+E17    : Monday
+A18    :   FOH & RESTROOMS
+A19    : 12
+B19    : Clean windows inside and out
+C19    : FOH
+D19    : Busser / runner
+E19    : Monday
+A20    : 13
+B20    : Deep clean chairs and benches
+C20    : FOH
+D20    : Busser / runner
+E20    : Monday
+A21    : 14
+B21    : Mop floors with a degreaser
+C21    : General
+D21    : Busser / runner
+E21    : Monday
+A22    : 15
+B22    : Deep clean restrooms: tile, mirrors, floor
+C22    : Restrooms
+D22    : Busser / runner
+E22    : Monday
+A23    : 16
+B23    : Deep clean the patio (if used)
+C23    : Patio
+D23    : Busser / runner
+E23    : Monday
+A24    : 17
+B24    : Check and restock cleaning supplies
+C24    : Storage
+D24    : Manager
+E24    : Monday
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 17.0
+A33    : Shift lead signature: _________________________    Time: _________
+A35    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Weekly FIFO Check» · protegida=True · área='Weekly FIFO Check'!$A$1:$G$45 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly FIFO Check — Expiration Control
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   WALK-IN COOLERS & FREEZERS
+A6     : 1
+B6     : Check labels and dates on all opened products
+C6     : Walk-in
+D6     : Line cook
+E6     : Monday
+A7     : 2
+B7     : Rotate: oldest product in front
+C7     : Walk-in
+D7     : Line cook
+E7     : Monday
+A8     : 3
+B8     : Toss expired or spoiled product
+C8     : Walk-in
+D8     : Line cook
+E8     : Monday
+A9     : 4
+B9     : Check the temperatures of all walk-ins (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F
+C9     : Walk-in
+D9     : Line cook
+E9     : Monday
+A10    :   BAR & PASTRY CASE
+A11    : 5
+B11    : Check expiration dates on opened milk: the manufacturer's label date and the date you wrote when you opened it rule; keep it at 41 °F or below
+C11    : Bar
+D11    : Barista
+E11    : Monday
+A12    : 6
+B12    : Check expiration dates on opened syrups
+C12    : Bar
+D12    : Barista
+E12    : Monday
+A13    : 7
+B13    : Check pastry freshness
+C13    : Bar
+D13    : Baker
+E13    : Monday
+A14    : 8
+B14    : Check juice expiration dates
+C14    : Bar
+D14    : Barista
+E14    : Monday
+A15    :   DRY STORAGE
+A16    : 9
+B16    : Check coffee bean freshness dates
+C16    : Storage
+D16    : Barista
+E16    : Monday
+A17    : 10
+B17    : Check tea and herbal tea expiration dates
+C17    : Storage
+D17    : Barista
+E17    : Monday
+A18    : 11
+B18    : Check packaging stock: cups, lids, bags
+C18    : Storage
+D18    : Manager
+E18    : Monday
+A19    : 12
+B19    : Check for pests and moisture
+C19    : Storage
+D19    : Manager
+E19    : Monday
+A20    :   FRESH
+A21    : 13
+B21    : Check fresh fruit: toss anything past its prime
+C21    : Walk-in
+D21    : Line cook
+E21    : Monday
+A22    : 14
+B22    : Check eggs: expiration date
+C22    : Walk-in
+D22    : Line cook
+E22    : Monday
+A23    : 15
+B23    : Check the bread and pastries: freeze what won't be used THE SAME DAY and label it with the date (shelf life by food group in the table at the bottom of this sheet)
+C23    : Kitchen
+D23    : Line cook
+E23    : Monday
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 15.0
+A32    : Shift lead signature: _________________________    Time: _________
+A34    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B35    : Food group
+C35    : Freezer time
+D35    : Notes
+B36    : Croissants and raw pastry doughs
+C36    : 1–2 months
+D36    : Yeast loses strength: the dough then rises poorly even though it's safe to eat
+B37    : Bread and already-baked pastries
+C37    : 1–3 months
+D37    : Loses texture before safety; thaw and refresh in the oven
+B38    : Cakes and loaf cakes without whipped cream
+C38    : 2–3 months
+D38    : Whipped cream and egg custards do NOT hold up to freezing
+B39    : Smoked salmon and oily fish
+C39    : 2–3 months
+D39    : Fat goes rancid even when frozen: it spoils first
+B40    : Bacon, ham and sliced deli meats
+C40    : 1–2 months
+D40    : Salt speeds up fat rancidity
+B41    : Cut fruit and fruit purees for bowls
+C41    : 8–12 months
+D41    : Freeze it the same day it's cut, in single-use portions
+B42    : House-made stocks, soups and sauces
+C42    : 3 months
+D42    : Label with BOTH the production date AND the freeze date: the shelf life in this table counts from the freeze date
+B43    : Coffee beans
+C43    : Don't freeze
+D43    : For daily use, don't freeze: the condensation from opening and closing the bag ruins the beans
+A45    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F14 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Monthly Maintenance» · protegida=True · área='Monthly Maintenance'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Equipment Maintenance
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   ESPRESSO MACHINE
+A6     : 1
+B6     : Descale the whole espresso machine per the manufacturer's instructions
+C6     : Bar
+D6     : Tech / barista
+E6     : Monthly
+A7     : 2
+B7     : Replace group head gaskets if worn
+C7     : Bar
+D7     : Technician
+E7     : Monthly
+A8     : 3
+B8     : Check boiler pressure
+C8     : Bar
+D8     : Technician
+E8     : Monthly
+A9     : 4
+B9     : Clean the water filter
+C9     : Bar
+D9     : Technician
+E9     : Monthly
+A10    :   GRINDER
+A11    : 5
+B11    : Deep clean the grinder burrs
+C11    : Bar
+D11    : Barista
+E11    : Monthly
+A12    : 6
+B12    : Check burr wear (replace if needed)
+C12    : Bar
+D12    : Technician
+E12    : Monthly
+A13    : 7
+B13    : Calibrate the dose
+C13    : Bar
+D13    : Barista
+E13    : Monthly
+A14    :   KITCHEN & GENERAL
+A15    : 8
+B15    : Oven check: heating elements, door, gaskets
+C15    : Kitchen
+D15    : Technician
+E15    : Monthly
+A16    : 9
+B16    : Dish machine: clean filters, check rinse aid and salt (only if it has a water softener)
+C16    : Kitchen
+D16    : Manager
+E16    : Monthly
+A17    : 10
+B17    : Check the exhaust hood and filters
+C17    : Kitchen
+D17    : Technician
+E17    : Monthly
+A18    : 11
+B18    : Check HVAC: filters, temperature
+C18    : General
+D18    : Technician
+E18    : Monthly
+A19    : 12
+B19    : Check the electrical system
+C19    : General
+D19    : Technician
+E19    : Monthly
+A20    :   SAFETY & COMPLIANCE
+A21    : 13
+B21    : Monthly visual check of the fire extinguisher: gauge in the green, pin and seal in place, clear access, signed tag
+C21    : General
+D21    : Manager
+E21    : Monthly
+A22    : 14
+B22    : Check first aid kit: stock, expiration dates
+C22    : General
+D22    : Manager
+E22    : Monthly
+A23    : 15
+B23    : Check emergency exits: clear and marked
+C23    : General
+D23    : Manager
+E23    : Monthly
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 15.0
+A32    : Shift lead signature: _________________________    Time: _________
+A34    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=True · área='Quarterly & Annual'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Report #
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   CONTRACTED — LICENSED COMPANY
+A6     : 1
+B6     : Pest control by a licensed operator: service visit and signed service report on file
+D6     : Pest control co.
+E6     : Monthly
+A7     : 2
+B7     : Hood and duct cleaning by a certified contractor if the cafe cooks under a hood (NFPA 96: semiannual if moderate volume, quarterly if high volume, annual only for low-volume operations); hood fire suppression inspected every 6 months
+D7     : Hood cleaning co.
+E7     : Semiannual
+A8     : 3
+B8     : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hydrostatic tests per the label
+D8     : Fire safety co.
+E8     : Annual
+A9     : 4
+B9     : Legionella: if you have a cooling tower or at-risk hot water, keep a water management program as your local health code requires
+D9     : Water treatment co.
+E9     : Annual
+A10    :   GAS, REFRIGERATION & WASTE
+A11    : 5
+B11    : Gas lines and appliance connections checked by a licensed pro if the cafe has gas (as often as your local code requires)
+D11    : Licensed plumber
+E11    : Annual
+A12    : 6
+B12    : Refrigeration service by an EPA 608-certified tech: walk-in, reach-ins and refrigerated pastry case — coils, gaskets and refrigerant leak check
+D12    : Refrigeration tech
+E12    : Annual
+A13    : 7
+B13    : Used cooking oil pickup by a licensed recycler if you have a fryer: file the pickup receipts
+D13    : Oil recycler
+E13    : Quarterly
+A14    :   WATER & COFFEE EQUIPMENT
+A15    : 8
+B15    : Change the water softener filter on the espresso machine and log the date of the change
+D15    : Espresso tech
+E15    : Quarterly
+A16    : 9
+B16    : Measure water hardness (GH/KH) and adjust the filter: water is nearly everything in the cup
+D16    : Barista
+E16    : Quarterly
+A17    : 10
+B17    : Full service check of the espresso machine by the espresso tech: gaskets, pressure and safety valve
+D17    : Espresso tech
+E17    : Annual
+A18    : 11
+B18    : Check grinder burr wear by pounds ground (rough guide: flat 880–1,320 lb, conical 1,760–2,650 lb) and replace if due
+D18    : Espresso tech
+E18    : Annual
+A19    : 12
+B19    : Calibrate thermometers and probes against a known standard (ice-point method, 32 °F)
+D19    : Manager
+E19    : Annual
+A20    :   ADMIN & INSURANCE
+A21    : 13
+B21    : Review insurance (general liability, property, workers' comp; liquor liability if you serve alcohol) and renewal dates
+D21    : Manager
+E21    : Annual
+A22    : 14
+B22    : POS check: software updates, sales tax rates and settings, user permissions
+D22    : Manager
+E22    : Annual
+A23    : 15
+B23    : Log the next service date for each contract and file the signed report
+D23    : Manager
+E23    : Quarterly
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 15.0
+A32    : Shift lead signature: _________________________    Time: _________
+A34    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-coffee-shop-event-checklists.xlsx
+# docProps: title="Coffee Shop Event Checklists: Sunday Brunch, Valentine's Day, Holiday Season & Patio" · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$33 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Coffee Shop Event Checklists: Sunday Brunch, Valentine's Day, Holiday Season & Patio
+B4     : How the counter works
+B6     : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B7     : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B8     : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B10    : Free rows
+B12    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B13    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B15    : Sheet protection
+B17    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B18    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B20    : Works with
+B22    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B23    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B24    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B25    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B26    : ▸ You are in 06-coffee-shop-event-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.
+B28    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B30    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B31    : Contact: info@aichef.pro
+B33    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Sunday Brunch» · protegida=True · área='Sunday Brunch'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Special Sunday Brunch — Prep & Service
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP (SATURDAY / PRE-BRUNCH)
+A6     : 1
+B6     : Confirm Sunday brunch reservations
+C6     : Office
+D6     : Manager
+E6     : Saturday
+A7     : 2
+B7     : When each reservation is confirmed, write down allergens, intolerances and the real party size, and pass it to the kitchen and the bar
+C7     : Office
+D7     : Manager
+E7     : Saturday
+A8     : 3
+B8     : Place the extra order: eggs, avocado, salmon, fruit
+C8     : Office
+D8     : Manager
+E8     : Friday
+A9     : 4
+B9     : Prep the special brunch menu
+C9     : Office
+D9     : Manager
+E9     : Saturday
+A10    : 5
+B10    : Post on social media: photo + brunch hours
+C10    : Office
+D10    : Manager
+E10    : Saturday
+A11    : 6
+B11    : Check extra stock of coffee and milk
+C11    : Storage
+D11    : Barista
+E11    : Saturday
+A12    :   SUNDAY — SPECIAL OPENING
+A13    : 7
+B13    : Set up the brunch buffet if used (juices, fruit, pastries)
+C13    : FOH
+D13    : Server
+E13    : 8:00 AM
+A14    : 8
+B14    : Special table decor (flowers, cloth napkins)
+C14    : FOH
+D14    : Server
+E14    : 8:00 AM
+A15    : 9
+B15    : Prep double the brunch mise en place
+C15    : Kitchen
+D15    : Line cook
+E15    : 7:00 AM
+A16    : 10
+B16    : Prep a batch of fresh orange juice
+C16    : Bar
+D16    : Barista
+E16    : 7:30 AM
+A17    : 11
+B17    : Prep extra smoothie base
+C17    : Bar
+D17    : Barista
+E17    : 7:30 AM
+A18    :   DURING SERVICE
+A19    : 12
+B19    : Manage the waiting line when it's packed
+C19    : FOH
+D19    : Manager
+E19    : —
+A20    : 13
+B20    : Keep the buffet restocked
+C20    : FOH
+D20    : Server
+E20    : —
+A21    : 14
+B21    : Reinforce the bar: two baristas if possible
+C21    : Bar
+D21    : Barista
+E21    : —
+A22    : 15
+B22    : Watch times: brunch shouldn't take over 15 min
+C22    : Kitchen
+D22    : Line cook
+E22    : —
+A23    : 16
+B23    : Offer mimosas/bellinis as an add-on (only with an alcohol license; 21+ with ID)
+C23    : FOH
+D23    : Server
+E23    : —
+A24    :   POST-BRUNCH CLOSE
+A25    : 17
+B25    : Break down the buffet and store labeled leftovers
+C25    : FOH
+D25    : Server
+E25    : 3:00 PM
+A26    : 18
+B26    : Extra kitchen cleaning (more volume than usual)
+C26    : Kitchen
+D26    : Busser / runner
+E26    : 3:00 PM
+A27    : 19
+B27    : Log what sold more/less to adjust next week
+C27    : Office
+D27    : Manager
+E27    : 3:00 PM
+A34    : Tasks done:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : of
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 19.0
+A36    : Shift lead signature: _________________________    Time: _________
+A38    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F13 F14 F15 F16 F17 F19 F20 F21 F22 F23 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Valentine's Day» · protegida=True · área='Valentine''s Day'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Specific Tasks — Valentine's Day (February 14)
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP (1 WEEK OUT)
+A6     : 1
+B6     : Design the special Valentine's Day breakfast/brunch
+C6     : Office
+D6     : Manager
+E6     : 7 days out
+A7     : 2
+B7     : Order special ingredients (strawberries, chocolate, champagne only if your alcohol license allows)
+C7     : Office
+D7     : Manager
+E7     : 5 days out
+A8     : 3
+B8     : Prep decor: flowers, candles, hearts
+C8     : FOH
+D8     : Server
+E8     : 2 days out
+A9     : 4
+B9     : Post the offer on social media and take reservations
+C9     : Office
+D9     : Manager
+E9     : 7 days out
+A10    : 5
+B10    : When each reservation is confirmed, collect allergens and intolerances in writing and pass them to the kitchen and the bar (the 9 major allergens, e.g. wheat (gluten), tree nuts and peanuts, milk, egg)
+C10    : Office
+D10    : Manager
+E10    : At booking
+A11    :   VALENTINE'S DAY
+A12    : 6
+B12    : Set up the special decor
+C12    : FOH
+D12    : Server
+E12    : 7:00 AM
+A13    : 7
+B13    : Prep special latte art (heart)
+C13    : Bar
+D13    : Barista
+E13    : —
+A14    : 8
+B14    : Offer heart-shaped toast or a special plate
+C14    : Kitchen
+D14    : Line cook
+E14    : —
+A15    : 9
+B15    : Special dessert: brownie with strawberries / red velvet cake
+C15    : Kitchen
+D15    : Baker
+E15    : 6:30 AM
+A16    : 10
+B16    : Welcome drink for couples: alcohol-free, or a mimosa only where your license and state allow giving alcohol away (21+ with ID)
+C16    : Bar
+D16    : Barista
+E16    : —
+A17    : 11
+B17    : Take photos for social media during service
+C17    : General
+D17    : Manager
+E17    : —
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 11.0
+A26    : Shift lead signature: _________________________    Time: _________
+A28    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Holiday Season» · protegida=True · área='Holiday Season'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Specific Tasks — Holiday Season & Winter Holidays
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   PREP (2 WEEKS OUT)
+A6     : 1
+B6     : Design the special holiday menu
+C6     : Office
+D6     : Manager
+E6     : 15 days out
+A7     : 2
+B7     : Order stock: panettone, holiday cookies, special hot chocolate mix
+C7     : Office
+D7     : Manager
+E7     : 10 days out
+A8     : 3
+B8     : Buy holiday decorations
+C8     : Office
+D8     : Manager
+E8     : 15 days out
+A9     : 4
+B9     : Plan special hours (Christmas Eve, Christmas Day, New Year's)
+C9     : Office
+D9     : Manager
+E9     : 10 days out
+A10    :   HOLIDAY SETUP
+A11    : 5
+B11    : Decorate the shop: lights, garlands, tree if used
+C11    : FOH
+D11    : Server
+E11    : Dec 1
+A12    : 6
+B12    : Give the pastry case a holiday theme
+C12    : Bar
+D12    : Baker
+E12    : Dec 1
+A13    : 7
+B13    : Update the board with the holiday menu
+C13    : FOH
+D13    : Manager
+E13    : Dec 1
+A14    :   HOLIDAY SERVICE
+A15    : 8
+B15    : Special holiday coffee: gingerbread latte, pumpkin spice
+C15    : Bar
+D15    : Barista
+E15    : —
+A16    : 9
+B16    : Special hot chocolate with holiday toppings
+C16    : Bar
+D16    : Barista
+E16    : —
+A17    : 10
+B17    : Holiday baked goods: panettone, stollen, holiday cookies
+C17    : Kitchen
+D17    : Baker
+E17    : —
+A18    : 11
+B18    : Offer a holiday cookie (e.g. gingerbread) with the coffee
+C18    : FOH
+D18    : Server
+E18    : —
+A19    : 12
+B19    : Take holiday photos for social media
+C19    : General
+D19    : Manager
+E19    : —
+A20    :   YEAR-END CLOSE
+A21    : 13
+B21    : Check stock for the week with no deliveries
+C21    : Storage
+D21    : Manager
+E21    : Dec 23
+A22    : 14
+B22    : Plan a skeleton crew for the holidays
+C22    : Office
+D22    : Manager
+E22    : Dec 20
+A23    : 15
+B23    : Take down the holiday decor the first week of January
+C23    : FOH
+D23    : Server
+E23    : Jan 7
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 15.0
+A32    : Shift lead signature: _________________________    Time: _________
+A34    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F11 F12 F13 F15 F16 F17 F18 F19 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Patio Season» · protegida=True · área='Patio Season'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Patio Season Start / End Tasks
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Assigned to: ________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   PATIO OPENING (SPRING)
+A6     : 1
+B6     : Check the outdoor dining / sidewalk cafe permit is current and renew it if it expires this season
+C6     : Office
+D6     : Manager
+E6     : 1 month out
+A7     : 2
+B7     : Take furniture out of storage / unpack it
+C7     : Patio
+D7     : Busser / runner
+E7     : Spring
+A8     : 3
+B8     : Check condition: screws, stability, paint
+C8     : Patio
+D8     : Manager
+E8     : Spring
+A9     : 4
+B9     : Deep clean all tables and chairs
+C9     : Patio
+D9     : Busser / runner
+E9     : Spring
+A10    : 5
+B10    : Set up umbrellas/awnings and check the mechanism
+C10    : Patio
+D10    : Busser / runner
+E10    : Spring
+A11    : 6
+B11    : Mark off the patio area (fences, planters)
+C11    : Patio
+D11    : Manager
+E11    : Spring
+A12    : 7
+B12    : Set out planters, plants and decor
+C12    : Patio
+D12    : Server
+E12    : Spring
+A13    :   PATIO CLOSING (FALL)
+A14    : 8
+B14    : Take in decor and plants
+C14    : Patio
+D14    : Server
+E14    : Fall
+A15    : 9
+B15    : Clean and dry all furniture
+C15    : Patio
+D15    : Busser / runner
+E15    : Fall
+A16    : 10
+B16    : Store umbrellas and awnings folded properly
+C16    : Storage
+D16    : Busser / runner
+E16    : Fall
+A17    : 11
+B17    : Store furniture in storage (protected)
+C17    : Storage
+D17    : Busser / runner
+E17    : Fall
+A18    : 12
+B18    : Furniture inventory: note breakage/replacements
+C18    : Office
+D18    : Manager
+E18    : Fall
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 12.0
+A27    : Shift lead signature: _________________________    Time: _________
+A29    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-blank-coffee-shop-checklist-template.xlsx
+# docProps: title='Blank Coffee Shop Checklist Template (Editable)' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$52 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Blank Coffee Shop Checklist Template (Editable)
+B4     : What it solves
+B6     : ▸ Three master templates already structured —by time of day, by area and by role— with the sections in place and the zone or assignee preloaded: you only type your tasks.
+B7     : ▸ Type in the GREEN cells of the "Task" column, under the matching section. The counter starts at 0 and goes up as you type: it counts what is there, not a fixed number.
+B9     : How to use this template
+B11    : ▸ Copy the structure of the pre-filled templates
+B12    : ▸ Customize: add tasks, change assignees, adjust times
+B13    : ▸ You can duplicate tabs (right-click → "Move or Copy")
+B15    : Customization tips
+B17    : ▸ Group tasks by time of day (opening, service, closing)
+B18    : ▸ Always assign an owner — tasks without an owner don't get done
+B19    : ▸ Set a realistic due-by time — specific beats generic
+B20    : ▸ Review and update the lists with your team every month
+B21    : ▸ Print on US Letter and leave room for the shift lead's signature
+B23    : How the counter works
+B25    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B26    : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B27    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B29    : Free rows
+B31    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B32    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B34    : Sheet protection
+B36    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B37    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B39    : Works with
+B41    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B42    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B43    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B44    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B45    : ▸ You are in 07-blank-coffee-shop-checklist-template.xlsx: this is where you build YOUR lists when none of the others fit. Copy the structure of the one closest to what you need.
+B47    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B49    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B50    : Contact: info@aichef.pro
+B52    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «By Time of Day» · protegida=True · área='By Time of Day'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Time of Day
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING — type your opening tasks below
+A6     : 1
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A12    :   SERVICE — type your service tasks below
+A13    : 6
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+A15    : 8
+A16    : 9
+A17    : 10
+A19    :   CLOSING — type your closing tasks below
+A20    : 11
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+A22    : 13
+A23    : 14
+A24    : 15
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Area» · protegida=True · área='By Area'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Work Area
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+C6     : Kitchen
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+C7     : Kitchen
+A8     : 3
+C8     : Kitchen
+A9     : 4
+C9     : Kitchen
+A10    : 5
+C10    : Kitchen
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+C13    : FOH
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+C14    : FOH
+A15    : 8
+C15    : FOH
+A16    : 9
+C16    : FOH
+A17    : 10
+C17    : FOH
+A19    :   BAR — type your bar tasks below
+A20    : 11
+C20    : Bar
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+C21    : Bar
+A22    : 13
+C22    : Bar
+A23    : 14
+C23    : Bar
+A24    : 15
+C24    : Bar
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=True · área='By Role'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Role
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+D6     : Head chef
+E6     : (Time)
+A7     : 2
+D7     : Head chef
+A8     : 3
+D8     : Head chef
+A9     : 4
+D9     : Head chef
+A10    : 5
+D10    : Head chef
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+D13    : FOH manager
+E13    : (Time)
+A14    : 7
+D14    : FOH manager
+A15    : 8
+D15    : FOH manager
+A16    : 9
+D16    : FOH manager
+A17    : 10
+D17    : FOH manager
+A19    :   MANAGEMENT — type your management tasks below
+A20    : 11
+D20    : GM
+E20    : (Time)
+A21    : 12
+D21    : GM
+A22    : 13
+D22    : GM
+A23    : 14
+D23    : GM
+A24    : 15
+D24    : GM
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-cafe-opening-closing-checklist.xlsx
+# docProps: title='Cafe Opening & Closing Checklist (Whole Shop)' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$47 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Cafe Opening & Closing Checklist (Whole Shop)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE SHOP: what gets opened and closed for the entire cafe, not for each area. Use it as the backbone of the day.
+B7     : ▸ The detail by area (kitchen, FOH, espresso bar) lives in 01-coffee-shop-opening-closing-checklists.xlsx: don't repeat the work, each file covers a different level.
+B9     : How to use
+B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift lead assigns tasks and each person initials theirs.
+B12    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B14    : Editable cells
+B16    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B18    : How the counter works
+B20    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B21    : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B22    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B24    : Free rows
+B26    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B27    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B29    : Sheet protection
+B31    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B32    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B34    : Works with
+B36    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B37    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B38    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B39    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B40    : ▸ You are in 08-cafe-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-coffee-shop-opening-closing-checklists.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.
+B42    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B44    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B45    : Contact: info@aichef.pro
+B47    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Cafe Opening» · protegida=True · área='Cafe Opening'!$A$1:$H$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cafe Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift lead
+E5     : 6:45 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift lead
+E6     : 6:45 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift lead
+E7     : 6:45 AM
+A8     : 4
+B8     : Raise security gate and open front door
+C8     : Entrance
+D8     : Shift lead
+E8     : 6:45 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Shift lead
+E9     : 6:45 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift lead
+E10    : 6:45 AM
+A11    : 7
+B11    : Turn on the reservation system / order tablet
+C11    : Host stand
+D11    : Shift lead
+E11    : 7:00 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift lead
+E12    : 7:00 AM
+A13    : 9
+B13    : Review today's reservations and special events
+C13    : Host stand
+D13    : Shift lead
+E13    : 7:00 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift lead
+E14    : 7:00 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift lead
+E15    : 7:00 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : FOH
+D16    : Shift lead
+E16    : 7:00 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas/heaters)
+C17    : Patio
+D17    : Shift lead
+E17    : 7:15 AM
+A18    : 14
+B18    : Check that menus are in order
+C18    : FOH
+D18    : Shift lead
+E18    : 7:15 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift lead
+E19    : 7:15 AM
+A20    : 16
+B20    : Check that the espresso machine is at temperature and purged (full routine in 01)
+C20    : Bar
+D20    : Shift lead
+E20    : 7:15 AM
+A21    : 17
+B21    : Set up the self-serve station
+C21    : Bar
+D21    : Shift lead
+E21    : 7:15 AM
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 17.0
+A29    : Manager signature: _________________________     Completion time: ________
+A30    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cafe Closing» · protegida=True · área='Cafe Closing'!$A$1:$H$27 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cafe Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift lead: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Turn off background music
+C5     : General
+D5     : Shift lead
+E5     : Close
+A6     : 2
+B6     : Make sure no guests remain in the cafe
+C6     : FOH
+D6     : Shift lead
+E6     : Close
+A7     : 3
+B7     : Clean and bring in the patio if used
+C7     : Patio
+D7     : Shift lead
+E7     : Close
+A8     : 4
+B8     : Turn off the POS / card terminal (or leave on standby)
+C8     : Register
+D8     : Shift lead
+E8     : Close
+A9     : 5
+B9     : Close security gate and doors
+C9     : Entrance
+D9     : Shift lead
+E9     : Close
+A10    : 6
+B10    : Turn off lights (leave security lighting)
+C10    : General
+D10    : Shift lead
+E10    : Close
+A11    : 7
+B11    : Turn off HVAC
+C11    : General
+D11    : Shift lead
+E11    : Close
+A12    : 8
+B12    : Bring in the outdoor signage
+C12    : Outside
+D12    : Shift lead
+E12    : Close
+A13    : 9
+B13    : Check that windows are closed
+C13    : General
+D13    : Shift lead
+E13    : Close
+A14    : 10
+B14    : Empty trash cans in common areas and restrooms
+C14    : Restrooms
+D14    : Shift lead
+E14    : Close
+A15    : 11
+B15    : Final safety check (gas, water, outlets)
+C15    : General
+D15    : Shift lead
+E15    : Close
+A16    : 12
+B16    : Set the alarm
+C16    : Entrance
+D16    : Last one out
+E16    : Close
+A17    : 13
+B17    : Lock up and verify it is locked
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A18    : 14
+B18    : Check the group heads are clean and the machine is off (backflush in 01)
+C18    : Bar
+D18    : Last one out
+E18    : Close
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 14.0
+A26    : Manager signature: _________________________     Completion time: ________
+A27    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$57 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your cafe: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B47    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B48    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B49    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B50    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and the detail by zone in 01-coffee-shop-opening-closing-checklists.xlsx.
+B52    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B54    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B55    : Contact: info@aichef.pro
+B57    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / MOD
+D5     : 7:00 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / MOD
+D6     : 7:00 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / MOD
+D7     : 7:00 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / MOD
+D8     : 7:00 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / MOD
+D9     : 7:15 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / MOD
+D10    : 7:15 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / MOD
+D11    : 7:15 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / MOD
+D12    : 7:15 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / MOD
+D13    : 7:30 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / MOD
+D14    : 7:30 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / MOD
+D15    : 7:30 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / MOD
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / MOD
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / MOD
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / MOD
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / MOD
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / MOD
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / MOD
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / MOD
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / MOD
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / MOD
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / MOD
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / MOD
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : General manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-coffee-shop-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Coffee Shop Pre-Shift Meeting Template (Huddle Notes)' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Coffee Shop Pre-Shift Meeting Template (Huddle Notes)
+B4     : How to use this template
+B6     : ▸ The shift lead or manager fills this out before the pre-shift meeting
+B7     : ▸ Share it with the team at the 5-10 minute pre-shift meeting
+B8     : ▸ Print it and post it at the pass for reference during service
+B10    : Works with
+B12    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B13    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-01-coffee-shop-pre-shift-meeting-template.xlsx: the pre-shift meeting opens the shift that is then worked with 01-coffee-shop-opening-closing-checklists.xlsx.
+B18    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=True · área='Pre-Shift Meeting'!$A$1:$C$37 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B1     : Pre-Shift Meeting
+B2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM    Shift lead: _________________________
+B4     : RESERVATIONS & OCCUPANCY
+B5     : No. of reservations:
+B6     : Expected covers:
+B7     : VIP tables / special guests:
+B8     : Parties or events:
+B9     : Estimated occupancy:
+C9     : _____ %
+B11    : SPECIALS & 86s
+B12    : Special 1:
+B13    : Special 2:
+B14    : Dessert special:
+B15    : Items OUT (86):
+B16    : Menu changes:
+B18    : ALLERGENS & SPECIAL NEEDS
+B19    : Reservations with declared allergens:
+B20    : Special diets (vegan, gluten-free...):
+B21    : Restrictions to communicate:
+B23    : SHIFT TEAM
+B24    : Kitchen staff:
+B25    : FOH staff:
+B26    : Bar staff:
+B27    : Anyone out? Coverage:
+B29    : NOTES & INCIDENTS
+B30    : Issues from the previous shift:
+B31    : Shift goals:
+B32    : Manager's message:
+B35    : Shift lead signature: _________________________
+B37    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-coffee-shop-holiday-calendar.xlsx
+# docProps: title='BONUS: Coffee Shop Holiday & Events Calendar (US)' · subject='Coffee Shop Checklists Kit Pro · v2.0' · keywords='coffee shop checklist, cafe checklist, coffee shop opening checklist, coffee shop closing checklist, barista checklist, cafe cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/coffee-shop-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Coffee Shop Holiday & Events Calendar (US)
+B4     : How to use this template
+B6     : ▸ Check the key coffee shop dates month by month
+B7     : ▸ Plan ahead: special menus, decorations, stock
+B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), bank holidays and Boxing Day, in the free rows
+B10    : Works with
+B12    : ▸ 08-cafe-opening-closing-checklist.xlsx — checklist for the WHOLE SHOP: it is the BACKBONE of the day.
+B13    : ▸ 01-coffee-shop-opening-closing-checklists.xlsx — the same day with the DETAIL by area (kitchen, FOH, espresso bar).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: cafe → areas → cash. Each file covers one level: the cafe file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-02-coffee-shop-holiday-calendar.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-cafe-opening-closing-checklist.xlsx and 01-coffee-shop-opening-closing-checklists.xlsx.
+B18    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/coffee-shop-checklist-templates · info@aichef.pro
+
+=== Hoja «Holiday Calendar» · protegida=True · área='Holiday Calendar'!$A$1:$D$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Holiday Calendar — Key Dates for Coffee Shops
+A2     : Year: ______    Add your local dates in the empty rows
+A4     : Month
+B4     : Date / Event
+C4     : Key Tasks
+D4     : Lead time
+A5     : January
+B5     : Jan 1 — New Year's Day
+C5     : Decide whether to open; if closed, post it on Google Business Profile and social media 1 week ahead
+D5     : 1 week
+A6     : January
+B6     : Jan 6 — King cake season begins
+C6     : King cake to order and in the pastry case if it fits your area, family menu
+D6     : 1 week
+A7     : February
+B7     : Feb 14 — Valentine's Day
+C7     : Breakfast/brunch menu for couples, romantic decor, extra shifts
+D7     : 2 weeks
+A8     : February–March
+B8     : Mardi Gras (varies)
+C8     : Themed menu, decorations, staff costumes
+D8     : 1 week
+A9     : March
+B9     : Mar 17 — St. Patrick's Day
+C9     : Themed drinks and baked goods (alcohol-free), decor
+D9     : 2 weeks
+A10    : March–April
+B10    : Easter Sunday (varies)
+C10    : Easter brunch, seasonal pastries (hot cross buns), expanded reservations
+D10    : 2 weeks
+A11    : March–April
+B11    : Patio opening
+C11    : Setup, permit, patio menu
+D11    : 1 month
+A12    : May–June
+B12    : Graduation season
+C12    : Closed group menu, deposit and price per person, custom cake orders
+D12    : 1 month
+A13    : May
+B13    : Teacher Appreciation Week (1st full week of May)
+C13    : Promo for teachers and schools (to-go coffee orders in airpots and pastry trays), special shifts
+D13    : 1 week
+A14    : May
+B14    : 2nd Sunday — Mother's Day
+C14    : Special brunch menu, expanded reservations, a small gift for the moms
+D14    : 2 weeks
+A15    : May
+B15    : Memorial Day (last Monday)
+C15    : Add staff, summer stock (cold drinks, cold brew if you serve it, ice), patio at full capacity
+D15    : 1 month
+A16    : June
+B16    : 3rd Sunday — Father's Day
+C16    : Family breakfast/brunch, expanded reservations, a treat for dad
+D16    : 2 weeks
+A17    : July
+B17    : Jul 4 — Independence Day
+C17    : Decide hours (open mornings only or close), patio at full capacity, extra cold drinks and ice
+D17    : 1 week
+A18    : July–August
+B18    : Summer peak season
+C18    : Extra staff, extended hours, summer menu
+D18    : Ongoing
+A19    : September
+B19    : Back to school + Sep 29 — National Coffee Day
+C19    : Fall drinks menu and a beefed-up breakfast for the back-to-routine crowd; Sep 29 is National Coffee Day: drink or promo of the day and a social media post
+D19    : 2 weeks
+A20    : October
+B20    : Oct 31 — Halloween
+C20    : Themed decorations, special drinks and pastries (no cocktails)
+D20    : 1 week
+A21    : November
+B21    : Thanksgiving (4th Thursday)
+C21    : Decide whether to open Thursday, Thanksgiving pie orders (pumpkin, pecan) and baked goods to go, Wednesday shifts
+D21    : 1 month
+A22    : November
+B22    : Patio closing
+C22    : Store furniture, take inventory, make repairs
+D22    : 1 week
+A23    : Nov–Dec
+B23    : Holiday gift card season
+C23    : Black Friday through Christmas Eve: gift card promo, display by the register, online sales
+D23    : 2 weeks
+A24    : December
+B24    : Holiday catering (office orders)
+C24    : Corporate orders (to-go coffee in airpots and pastry trays), group reservations, extra shifts
+D24    : 1 month
+A25    : December
+B25    : Dec 24–25 — Christmas
+C25    : Decide whether to open on Christmas Day (many close). Menu, decorations, special stock
+D25    : 2 weeks
+A26    : December
+B26    : Dec 31 — New Year's Eve
+C26    : Decide hours (close early or open at night); if open at night, party favors and a midnight toast, alcohol-free (or champagne only if your license allows; 21+ with ID), shifts
+D26    : 2 weeks
+A28    : (Your date)
+B28    : (Add here)
+C28    : (Key tasks)
+D28    : (Lead time)
+A29    : (Your date)
+B29    : (Add here)
+C29    : (Key tasks)
+D29    : (Lead time)
+A30    : (Your date)
+B30    : (Add here)
+C30    : (Key tasks)
+D30    : (Lead time)
+A31    : (Your date)
+B31    : (Add here)
+C31    : (Key tasks)
+D31    : (Lead time)
+A32    : (Your date)
+B32    : (Add here)
+C32    : (Key tasks)
+D32    : (Lead time)
+A34    : — Coffee Shop Checklists Kit Pro · AI Chef Pro · aichef.pro
