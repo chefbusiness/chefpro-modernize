@@ -869,6 +869,25 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-90-dias': '/dl/food-cost-menu-engineering-guide/90-day-action-plan.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-17): How to Open a Pastry Shop. MISMAS claves que guia-pasteleria-obrador (las de SECTIONS de
+  // src/pages/HowToOpenAPastryShopDashboard.tsx) → los 13 ficheros EN de /dl/how-to-open-a-pastry-shop/
+  // (SPEC guia-pasteleria-en §2), y el bonus común de equivalencias EN.
+  'how-to-open-a-pastry-shop': {
+    'guia-pdf': '/dl/how-to-open-a-pastry-shop/how-to-open-a-pastry-shop.pdf',
+    'guia-docx': '/dl/how-to-open-a-pastry-shop/how-to-open-a-pastry-shop.docx',
+    'bonus-decisiones-pdf': '/dl/how-to-open-a-pastry-shop/BONUS-12-opening-decisions.pdf',
+    'bonus-decisiones-docx': '/dl/how-to-open-a-pastry-shop/BONUS-12-opening-decisions.docx',
+    'business-plan-docx': '/dl/how-to-open-a-pastry-shop/sample-business-plan-pastry-shop.docx',
+    'capacidad-obrador': '/dl/how-to-open-a-pastry-shop/kitchen-capacity-and-site.xlsx',
+    'capex-pasteleria': '/dl/how-to-open-a-pastry-shop/startup-cost-calculator.xlsx',
+    'estacionalidad-picos': '/dl/how-to-open-a-pastry-shop/seasonal-peaks-planner.xlsx',
+    'carta-escandallo': '/dl/how-to-open-a-pastry-shop/opening-menu-and-recipe-costing.xlsx',
+    'plan-financiero': '/dl/how-to-open-a-pastry-shop/3-year-financial-plan.xlsx',
+    'checklist-legal': '/dl/how-to-open-a-pastry-shop/permits-and-licenses-checklist.xlsx',
+    'checklist-equipamiento': '/dl/how-to-open-a-pastry-shop/equipment-and-suppliers-checklist.xlsx',
+    'turnos-personal': '/dl/how-to-open-a-pastry-shop/staff-schedule-and-labor-cost.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

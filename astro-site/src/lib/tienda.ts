@@ -188,6 +188,15 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (17-oct-2026): How to Open a Pastry Shop, segunda guía de la tienda EN (SPEC guia-pasteleria-en D1).
+    // vivo: true en la rama, que se fusiona cuando existe el Payment Link.
+    familia: 'guia-pasteleria-obrador',
+    productos: {
+      es: { slug: 'guia-pasteleria-obrador', vivo: true },
+      en: { slug: 'how-to-open-a-pastry-shop', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

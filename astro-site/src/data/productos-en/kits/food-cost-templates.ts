@@ -378,6 +378,7 @@ const data: KitExcelData = {
     { href: '/en', label: 'aichef.pro' },
     { href: '/en/digital-products', label: 'Digital Products' },
     { href: '/en/digital-products/food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide' },
+    { href: '/en/digital-products/how-to-open-a-pastry-shop', label: 'How to Open a Pastry Shop' },
     { href: '/en/digital-products/restaurant-inventory-templates', label: 'Restaurant Inventory Kit Pro' },
     { href: '/en/digital-products/haccp-templates', label: 'HACCP Food Safety Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },

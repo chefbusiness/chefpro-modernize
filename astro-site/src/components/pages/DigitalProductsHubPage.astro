@@ -61,6 +61,26 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // How to Open a Pastry Shop (17-oct-2026, segunda guía EN): el más nuevo → 1; Food Cost + Menu Engineering Guide,
+  // Mobile Bar, Catering, Bar, Restaurant, Bakery, Food Truck y Coffee Shop pasan a 2-9. Es la MISMA tarjeta que ya
+  // estaba como «Coming soon in English» (más abajo, entre las guías): se sube y su copy pasa a describir la edición EN
+  // (decía «Chocolate kitchen», que es la chocolatería). Imagen: la del hero ES, sin texto.
+  {
+    name: 'How to Open a Pastry Shop',
+    slug: '/guia-pasteleria-obrador',
+    description: 'How to open a bakery with its own production kitchen in the US, for anyone who has NOT opened yet: permits by state, cottage food, startup costs, equipment, staff, peak seasons and a 3-year plan. 20 chapters, 8 Excel tools and 2 bonuses.',
+    features: [
+      '20 chapters + US regulatory appendix + 8 Excel tools',
+      'Kitchen capacity and site visit checklist',
+      'Permits by state, from cottage food to a retail food permit',
+      'Bonus: a filled-in business plan and 12 solved decisions',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
+  },
   // Food Cost + Menu Engineering Guide (15-oct-2026, primera guía EN): el más nuevo → 1; Mobile Bar, Catering, Bar,
   // Restaurant, Bakery, Food Truck y Coffee Shop pasan a 2-8. Es la MISMA tarjeta que ya estaba como «Coming soon in
   // English» (más abajo, entre los manuales): se sube y su copy pasa a describir la edición EN (impuesto por canal para
@@ -367,22 +387,6 @@ const products = [
     badge: '✨ New',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
     tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'chocolate'],
-  },
-  {
-    name: 'How to Open a Pastry Shop',
-    slug: '/guia-pasteleria-obrador',
-    description: 'Chocolate kitchen, licenses and numbers for anyone who has NOT opened yet: site viability, opening costs, licenses, menu and financial plan. 20 chapters, 8 Excel files and 2 bonuses.',
-    features: [
-      '20 chapters + regulatory appendix + 8 Excel files',
-      'Chocolate kitchen capacity and site-visit checklist',
-      'Licenses and health registration in a decision tree',
-      'Bonus: a filled-in business plan and 12 solved decisions',
-    ],
-    iconName: 'CakeSlice',
-    image: '/lovable-uploads/ai-gallery/guia-pasteleria-hero.jpg',
-    badge: '✨ New',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
-    tags: ['pdf', 'excel', 'guides', 'templates', 'management', 'pastry', 'bakery'],
   },
   {
     name: 'Executive Chef Handbook',

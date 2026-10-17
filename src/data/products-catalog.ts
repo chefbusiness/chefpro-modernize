@@ -384,11 +384,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'guia-pasteleria-obrador',
     url: '/guia-pasteleria-obrador',
     price: '€65',
-    name: { es: 'Cómo Montar una Pastelería', en: 'Guide: How to Open a Pastry Shop' },
+    name: { es: 'Cómo Montar una Pastelería', en: 'How to Open a Pastry Shop' },
     description: {
       es: 'Obrador, licencias y números: 20 capítulos, 8 Excel y 2 bonus para abrir con criterio.',
-      en: 'Production room, licences and numbers: 20 chapters, 8 Excel tools and 2 bonuses to open with a plan.',
+      en: 'Production kitchen, permits by state and startup costs: 20 chapters, 8 Excel tools and 2 bonuses to open with a plan.',
     },
+    // Tienda EN (17-oct-2026): producto propio, `how-to-open-a-pastry-shop`, $69 USD.
+    urlByLang: { en: '/en/digital-products/how-to-open-a-pastry-shop' },
+    priceByLang: { en: '$69' },
   },
   'guia-chocolateria-obrador': {
     id: 'guia-chocolateria-obrador',
