@@ -38,6 +38,8 @@ VARIANTES_ES = ('Bar / Cocktails',)
 # heredar.py: la cadena del bar que solo cambia en el sufijo de variante hereda el EN del base (que ya no lo lleva)
 SUFIJO_A_BASE = [(' — Bar / Cocktails', ' — Restaurante Casual'), (' · Bar / Cocktails', ' · Restaurante Casual')]
 # heredar.py: EN del base que en un bar no vale tal cual → pendientes (motivo «contexto»)
+# heredar.py: cadenas idénticas al base cuyo EN se corrigió en el bar (van a pendientes y su EN a G1.json)
+NO_HEREDAR = {'Abrir persianas / puerta principal': 'ronda 1 m15: + salidas de emergencia y señales de salida'}
 RX_CONTEXTO_PENDIENTE = (r'(?i)\b(?:restaurants?(?! consultant)|dining room|line cooks?|prep cooks?|head chef|'
                          r'sous chef|host stand|kitchen, FOH)\b')
 DOCPROPS_EN = OrderedDict([
@@ -119,6 +121,7 @@ _GLOSARIO_BAR = OrderedDict([
     ('1ª semana', 'Week 1'), ('2ª semana', 'Week 2'), ('3ª semana', 'Week 3'), ('4ª semana', 'Week 4'),
     ('1 semana', '1 week'), ('2 semanas', '2 weeks'), ('3 semanas', '3 weeks'), ('4 semanas', '4 weeks'),
     ('Fecha', 'Date'),
+    ('Vida útil', 'Shelf life'),           # ronda 1 M3: en el bar es la tabla de vida útil en frío (el base: congelador)
 ])
 GLOSARIO.update(_GLOSARIO_BAR)
 GLOSARIO_OPCIONAL = frozenset(_base.GLOSARIO)
@@ -139,9 +142,9 @@ CALENDARIO = OrderedDict([
     (7, ('Mar 17', "St. Patrick's Day", 'Mismas tareas + control de ID en la puerta (21+)', None)),
     (8, ('Mar–Apr', 'Spring break', 'Sustituye a Semana Santa. Mismas tareas + control de ID (21+): público joven',
          None)),
-    (9, ('Late May', 'Memorial Day weekend (last Mon of May)', 'Sustituye al 1 de mayo y sus puentes: horario de '
-         'festivo, patio a pleno rendimiento y stock para varios días seguidos', '«Puente» → long weekend')),
-    (10, ('May 5', 'Cinco de Mayo', None, 'En EE. UU. ya es una de las grandes noches de bar del año')),
+    # ronda 1 m2: Cinco de Mayo (fila 9) antes que Memorial Day (fila 10), con D y F por POR_CELDA (_CAL_DF)
+    (9, ('May 5', 'Cinco de Mayo', None, None)),
+    (10, ('Late May', 'Memorial Day weekend (last Mon of May)', None, None)),
     (11, ('Jun 20–21', 'First day of summer', None, 'Patio a pleno rendimiento')),
     (12, ('Jun–Sep', 'Summer season', None, None)),
     (13, ('Jul 4', 'Independence Day', 'Sustituye a la Asunción: servicio de festivo, refuerzo de turnos y stock '
@@ -159,7 +162,8 @@ CALENDARIO = OrderedDict([
           'entry, drink included)', None)),
     (20, ('Varies', 'Local festivals & street fairs', 'Adaptar carta y horarios a los eventos locales (street fairs, '
           'desfiles, festivales)', None)),
-    (21, ('Varies', 'Big games & sports nights', None, 'Super Bowl, March Madness, playoffs (NBA, NHL), World Series')),
+    (21, ('Feb (2nd Sun) · varies', 'Super Bowl Sunday & big games', None,
+          'Super Bowl el 2.º domingo de febrero; además March Madness, playoffs (NBA, NHL), World Series')),
     (22, ('May 13', 'World Cocktail Day', 'Sin «cóctel gratis»: regalar alcohol o rebajarlo está restringido en algunos '
           'estados; cóctel del día, taller y promo en redes («check your state\'s ABC/liquor authority»)', None)),
     (23, ('September', 'Negroni Week', None, None)),
@@ -212,6 +216,23 @@ POR_CELDA.update([
 for _fila, (_fecha, _evento, _d, _f) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'B%d' % _fila)] = _fecha
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = _evento
+# Ronda 1 de la revisión F2 (bar/revision/REVISION-F2.md): arreglos de orden y de rótulo SOLO con texto, por celda
+_CAL_DF = OrderedDict([
+    ('D9', 'Margaritas, mezcal, tequila, Mexican decorations'),
+    ('F9', 'Already one of the biggest bar nights of the year in the US'),
+    ('D10', 'Holiday hours, patio at full capacity and stock for several days in a row'),
+    ('F10', 'A long weekend moves more than a normal Saturday and is ordered with the same lead time'),
+])
+for _c, _en in _CAL_DF.items():
+    POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], _c)] = _en
+POR_CELDA[('02', 'Vinos y Bodega', 'E4')] = 'When'          # m8: la columna lleva horas, no frecuencias
+_CN = ('08', 'Cierre del Negocio')                           # m14: limpiar ANTES de la alarma y la llave
+for _fila, (_b, _c, _d) in ((16, ('Clean the beer faucets', 'Bar', 'Last one out')),
+                            (17, ('Empty and clean the garnish station', 'Bar', 'Last one out')),
+                            (18, ('Set the alarm', 'Entrance', 'Shift manager')),
+                            (19, ('Lock up and verify it is locked', 'Entrance', 'Last one out'))):
+    for _col, _v in (('B', _b), ('C', _c), ('D', _d)):
+        POR_CELDA[_CN + ('%s%d' % (_col, _fila),)] = _v
 
 # ==========================================================================
 # ADAPTAR (en español, con el dato US; las cifras salen de REGLAS_US)
@@ -221,6 +242,8 @@ _TEMP_FRIO = ('°F: cámaras y botellero a 41 °F o menos (FDA Food Code 3-501.1
               'son TCS); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe')
 _LINEAS = ('Brewers Association (Draught Beer Quality Manual): las líneas de cerveza se limpian cada 2 semanas y con '
            'ácido cada 3 meses; en esta lista, comprobar y firmar las limpiezas del periodo')
+_A_ID = ('EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la política de la casa diga; '
+         'nunca servir a quien esté visiblemente ebrio')
 _HEREDA_ADAPTAR = [('08', 'Apertura del Negocio', 'B8'), ('09', 'Cierre de Caja', 'B10'),
                    ('09', 'Registro Mensual', 'A37')] + [k for k in _A if k[:2] == ('09', 'Instrucciones')]
 ADAPTAR = OrderedDict((k, _A[k]) for k in _HEREDA_ADAPTAR)
@@ -252,9 +275,8 @@ ADAPTAR.update([
     (('02', 'Vinos y Bodega', 'B7'), '°F: tintos a temperatura ambiente o 61–64 °F (16–18 °C)'),
     (('02', 'Vinos y Bodega', 'B13'), '°F: bodega / vinoteca a 54–61 °F (12–16 °C)'),
     # 03
-    (('03', 'Diario Manager', 'B16'), 'EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la '
-     'política de la casa diga; nunca servir a quien esté visiblemente ebrio; aforo = el cartel del fire marshal '
-     '(occupancy limit). UK: Challenge 25'),
+    (('03', 'Diario Manager', 'B16'), _A_ID + '; aforo = el cartel del fire marshal (occupancy limit). UK: '
+     'Challenge 25'),
     (('03', 'Semanal Manager', 'B15'), 'Añade: y que quien sirva alcohol tenga vigente el curso de servicio responsable '
      '(TIPS, ServSafe Alcohol u otro aprobado) donde el estado lo exija'),
     (('03', 'Semanal Manager', 'B19'), _TEMP_FRIO),
@@ -280,6 +302,18 @@ ADAPTAR.update([
     (('06', 'Nochevieja', 'B16'), _A[('06', 'Navidad', 'B23')]),
     (('06', 'Nochevieja', 'B17'), 'Aforo máximo del cartel del fire marshal (occupancy limit) y control de ID en la '
      'puerta (21+)'),
+    # ronda 1 (M1, M2, M4, M5, M6)
+    (('B01', 'Briefing Diario', 'B9'), 'Sin 2x1 como ejemplo: promociones según el estado (REGLAS_US happy_hour)'),
+    (('06', 'Nochevieja', 'B6'), 'Barra libre solo en eventos privados: en una noche abierta al público está prohibida '
+     "en algunos estados (p. ej. Massachusetts): «check your state's ABC/liquor authority»"),
+    (('04', 'Barback', 'B9'), 'Sanitizante del glass washer medido con tiras; ppm de la etiqueta (FDA Food Code '
+     '4-302.14, 4-501.114)'),
+    (('01', 'Cierre Barra', 'B15'), 'Sanitizante medido con tiras; ppm de la etiqueta (FDA Food Code 4-302.14)'),
+    (('05', 'Inventario', 'D40'), 'Nunca de vuelta a una botella de licor vacía: recipiente propio, cerrado y '
+     'etiquetado (26 U.S.C. 5301(c); 27 CFR 31.201)'),
+    (('02', 'Coctelería Clásica', 'B9'), 'Infusiones en tarros etiquetados, nunca en una botella de licor'),
+    (('04', 'Bartender', 'B13'), _A_ID),
+    (('04', 'Camarero Barra', 'B7'), _A_ID),
     (('06', 'After Work', 'B6'), 'Horario de 12 h (6:00–8:00 PM); algunos estados limitan o prohíben la happy hour '
      "(p. ej. Massachusetts): «check your state's ABC/liquor authority»"),
     # BONUS-02
@@ -318,6 +352,11 @@ REGLAS_US.update([
     ('aforo', ('aforo máximo del cartel (occupancy limit)', '[local] fire code')),
     ('vino_temp', ('blancos 46-50 °F · tintos 61-64 °F · bodega 54-61 °F', '[criterio del kit] °C del ES → °F')),
     ('peso_hielo', ('30-50 kg = 65-110 lb', '[criterio del kit] conversión')),
+    ('rellenado', ('no rellenar botellas de licor; batches e infusiones en recipientes propios etiquetados',
+                   '26 U.S.C. 5301(c); 27 CFR 31.201')),
+    ('party_pump', ('con bomba de aire (party pump) el barril se acaba en el día', '[criterio del kit] fabricantes de '
+                                                                                  'equipo de draft')),
+    ('aviso_alergenos', ('aviso por escrito de alérgenos (carta, ficha, cartel)', 'FDA Food Code 2022 §3-602.12(C)')),
     ('uk_alcohol', ('UK: Challenge 25, personal licence, horario de la premises licence, Temporary Event Notice',
                     'Licensing Act 2003; Mandatory Licensing Conditions Order 2010')),
 ])

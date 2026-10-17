@@ -52,7 +52,7 @@ C6     : Bar
 D6     : All staff
 E6     : 3:30 PM
 A7     : 2
-B7     : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics; no bare-hand contact with ice, citrus or garnish: use tongs, picks, a scoop or gloves
+B7     : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics; no bare-hand contact with ice, citrus or garnish (FDA Food Code 3-301.11): use tongs, picks, a scoop or gloves
 C7     : Bar
 D7     : All staff
 E7     : 3:30 PM
@@ -259,7 +259,7 @@ D12    : Bartender
 E12    : 2:15 AM
 A14    :   Bar Cleaning
 A15    : 8
-B15    : Sanitize the bar top
+B15    : Sanitize the bar top; test the sanitizer with strips (ppm on the label)
 C15    : Cleaning
 D15    : Barback
 E15    : 2:15 AM
@@ -295,7 +295,7 @@ D21    : Barback
 E21    : 2:30 AM
 A23    :   Admin Close
 A24    : 15
-B24    : Check that the day's cash count is closed and signed: it is not repeated here, it is done on "Cash Drawer Closing" in 09-cash-drawer-opening-closing.xlsx
+B24    : Close out every open tab (no open checks before the Z report) and check that the day's cash count is closed and signed: it is not repeated here, it is done on "Cash Drawer Closing" in 09-cash-drawer-opening-closing.xlsx
 C24    : Office
 D24    : Bartender
 E24    : 2:15 AM
@@ -414,7 +414,7 @@ C8     : Cocktails
 D8     : Head bartender
 E8     : 4:30 PM
 A9     : 4
-B9     : Prep the day's infusions (if applicable: infused gin, spiced vodka)
+B9     : Prep the day's infusions (if applicable: infused gin, spiced vodka) in labeled jars, never in a liquor bottle
 C9     : Cocktails
 D9     : Head bartender
 E9     : 4:30 PM
@@ -424,7 +424,7 @@ C10    : Cocktails
 D10    : Bartender
 E10    : 4:30 PM
 A11    : 6
-B11    : Keep the cocktail menu's allergens in writing and make sure the whole team knows where to find them: orgeat has ALMOND (tree nuts), sours EGG WHITE, flips MILK; sulfites in wine and vermouth are listed as a sensitivity (not one of the 9 major allergens; in the UK they are one of the 14)
+B11    : Keep the cocktail menu's allergens in writing and make sure the whole team knows where to find them: orgeat has ALMOND (tree nuts), sours EGG WHITE, flips WHOLE EGG and often cream (MILK); sulfites in wine and vermouth are listed as a sensitivity (not one of the 9 major allergens; in the UK they are one of the 14)
 C11    : Cocktails
 D11    : Head bartender
 E11    : 4:00 PM
@@ -445,7 +445,7 @@ C16    : Cocktails
 D16    : Bartender
 E16    : Ongoing
 A17    : 10
-B17    : Refill ice every hour (sooner at peak) ALWAYS with a scoop or tongs, never a glass: a broken glass means dumping the whole ice well. Ice is food: keep the scoop out of the ice or with the handle out
+B17    : Refill ice every hour (sooner at peak) ALWAYS with a scoop or tongs, never a glass: a broken glass means dumping the whole ice well. Ice is food (FDA Food Code): keep the scoop out of the ice or with the handle out
 C17    : Cocktails
 D17    : Barback
 E17    : Ongoing
@@ -492,7 +492,7 @@ C6     : Bar
 D6     : Bartender
 E6     : 4:00 PM
 A7     : 2
-B7     : Flush the taps: pour off the first third until it runs clear
+B7     : Flush the taps: pour off the first few ounces from each faucet until the beer runs clear and cold
 C7     : Bar
 D7     : Bartender
 E7     : 4:00 PM
@@ -555,12 +555,12 @@ A4     : #
 B4     : Task
 C4     : Area
 D4     : Assigned to
-E4     : Frequency
+E4     : When
 F4     : ✓ Done
 G4     : Initials
 A5     :   Wine by the Glass
 A6     : 1
-B6     : Check open wines by the glass (whites and roses in the cooler at 46–50 °F)
+B6     : Check open wines by the glass (white and rosé wines in the cooler at 46–50 °F)
 C6     : Stockroom
 D6     : Bartender
 E6     : 4:00 PM
@@ -1136,7 +1136,7 @@ D10    : Bartender
 E10    : 4:15 PM
 A12    :   Service
 A13    : 6
-B13    : Make cocktails from the menu and special orders
+B13    : Make cocktails from the menu and special orders; card guests per house policy (21+) and never serve anyone visibly intoxicated
 C13    : Bar
 D13    : Bartender
 E13    : Ongoing
@@ -1219,7 +1219,7 @@ C8     : Bar
 D8     : Barback
 E8     : Ongoing
 A9     : 4
-B9     : Wash glassware in the glass washer
+B9     : Wash glassware in the glass washer; test the sanitizer with strips at the start of the shift (ppm on the label)
 C9     : Bar
 D9     : Barback
 E9     : Ongoing
@@ -1297,7 +1297,7 @@ C6     : Patio
 D6     : Server
 E6     : Ongoing
 A7     : 2
-B7     : Take orders with knowledge of the cocktail menu
+B7     : Take orders with knowledge of the cocktail menu; card guests per house policy (21+) and stop serving anyone visibly intoxicated
 C7     : Patio
 D7     : Server
 E7     : Ongoing
@@ -1641,7 +1641,7 @@ A33    : Verified by:
 E33    : Signature:
 A35    : APPROXIMATE SHELF LIFE OF OPEN AND HOUSE-MADE PRODUCT AT THE BAR — adjust it to your product and your supplier
 B36    : Product
-C36    : Freezer time
+C36    : Shelf life
 D36    : Notes
 B37    : Fresh-squeezed citrus juice
 C37    : 24 h refrigerated
@@ -1651,10 +1651,10 @@ C38    : 3–4 weeks refrigerated
 D38    : A splash of vodka extends the shelf life; if it clouds or smells fermented, toss it
 B39    : Syrups with fruit, herbs or nuts (orgeat, gomme)
 C39    : 1–2 weeks refrigerated
-D39    : Label with the prep date; orgeat contains ALMOND (tree nut) and must be declared on the menu
+D39    : Label with the prep date; orgeat contains ALMOND (tree nut): list it on the menu or your written allergen sheet
 B40    : Cocktail batch WITHOUT citrus (Negroni, Manhattan)
 C40    : 2–3 months
-D40    : Spirits and fortified wines only: capped bottle, refrigerated, away from light
+D40    : Spirits and fortified wines only: sealed, labeled container (never back into an empty liquor bottle), refrigerated, away from light
 B41    : Cocktail batch WITH citrus
 C41    : 2–3 days refrigerated
 D41    : The juice sets the clock: past that window the batch turns bitter even if the alcohol holds
@@ -1666,7 +1666,7 @@ C43    : 2–3 days
 D43    : Longer with argon or a preservation system; write the date on the bottle itself
 B44    : Tapped keg of beer
 C44    : Keg date (see note)
-D44    : Keg date rules (Brewers Association: 45–60 days unpasteurized, 90–120 days pasteurized, from packaging) with a balanced system and lines cleaned every 2 weeks; the old "3–5 days" rule only applies to air pumps (party pumps)
+D44    : Keg date rules (Brewers Association: 45–60 days unpasteurized, 90–120 days pasteurized, from packaging) with a balanced CO₂ system and lines cleaned every 2 weeks; on an air pump (party pump), finish the keg the same day
 B45    : Cut garnish (citrus, cucumber, herbs)
 C45    : One shift
 D45    : Cut per shift: yesterday's garnish shows in the glass and you can taste it in the drink
@@ -1715,7 +1715,7 @@ B13    : Refrigeration service by an EPA 608-certified tech: walk-in, back-bar c
 D13    : Refrigeration tech
 E13    : Annual
 A14    : 7
-B14    : Replace the water filter on the ice machine and the espresso machine, and test water hardness to set the descaling frequency
+B14    : Ice machine: clean and sanitize the bin and evaporator per the manufacturer (check for mold and slime); replace its water filter and the espresso machine's, and test water hardness to set the descaling frequency
 D14    : Technician
 E14    : Quarterly
 A15    : 8
@@ -1863,7 +1863,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   Planning
 A6     : 1
-B6     : Define the concept for the night (party, dinner + open bar, ticket price)
+B6     : Define the concept for the night (party or dinner, ticket price and what it includes); open bars and all-you-can-drink packages are banned in some states (e.g. Massachusetts): check your state's ABC/liquor authority
 C6     : Office
 D6     : Manager
 E6     : 3 weeks out
@@ -1904,7 +1904,7 @@ C15    : Bar
 D15    : Barback
 E15    : 10:00 PM
 A16    : 9
-B16    : Midnight toast for guests 21+ only (check ID), with a non-alcoholic option
+B16    : Midnight toast for guests 21+ only (check ID), with a non-alcoholic option; build it into the ticket price where your state bans free drinks
 C16    : Bar
 D16    : All staff
 E16    : 12:00 AM
@@ -2004,7 +2004,7 @@ C6     : Office
 D6     : Manager
 E6     : At booking
 A7     : 2
-B7     : Settle in writing the price per person and what it includes: number of pours, food pairing, farewell drink and whether there is a bottle to take home
+B7     : Settle in writing the price per person and what it includes: number of pours, food pairing, farewell drink and any bottle to take home (check your license: not every on-premise license allows sealed bottles to go)
 C7     : Office
 D7     : Manager
 E7     : At booking
@@ -2334,7 +2334,7 @@ C7     : General
 D7     : Shift manager
 E7     : 3:30 PM
 A8     : 4
-B8     : Raise security gate and open front door
+B8     : Raise security gate and open front door; check every emergency exit is unlocked and clear and the exit signs are lit
 C8     : Entrance
 D8     : Shift manager
 E8     : 3:30 PM
@@ -2486,23 +2486,23 @@ C15    : General
 D15    : Shift manager
 E15    : Close
 A16    : 12
-B16    : Set the alarm
-C16    : Entrance
-D16    : Shift manager
+B16    : Clean the beer faucets
+C16    : Bar
+D16    : Last one out
 E16    : Close
 A17    : 13
-B17    : Lock up and verify it is locked
-C17    : Entrance
+B17    : Empty and clean the garnish station
+C17    : Bar
 D17    : Last one out
 E17    : Close
 A18    : 14
-B18    : Clean the beer faucets
-C18    : Bar
-D18    : Last one out
+B18    : Set the alarm
+C18    : Entrance
+D18    : Shift manager
 E18    : Close
 A19    : 15
-B19    : Empty and clean the garnish station
-C19    : Bar
+B19    : Lock up and verify it is locked
+C19    : Entrance
 D19    : Last one out
 E19    : Close
 A26    : Tasks done:
@@ -3131,7 +3131,7 @@ C8     : Bar
 D8     : Manager
 E8     : Pre-open
 A9     : 4
-B9     : Active promotions (happy hour, 2-for-1, etc.)
+B9     : Active promotions (happy hour, drink of the day, food specials), only as your state allows: some ban 2-for-1s and drink discounts
 C9     : Bar
 D9     : Manager
 E9     : Pre-open
@@ -3242,17 +3242,17 @@ D8     : Adjust hours, seasonal cocktails, plus ID checks (21+): young crowd
 E8     : 1 week
 F8     : Varies by area
 A9     : 6
-B9     : Late May
-C9     : Memorial Day weekend (last Mon of May)
-D9     : Holiday hours, patio at full capacity and stock for several days in a row
+B9     : May 5
+C9     : Cinco de Mayo
+D9     : Margaritas, mezcal, tequila, Mexican decorations
 E9     : 2 weeks
-F9     : A long weekend moves more than a normal Saturday and is ordered with the same lead time
+F9     : Already one of the biggest bar nights of the year in the US
 A10    : 7
-B10    : May 5
-C10    : Cinco de Mayo
-D10    : Margaritas, mezcal, tequila, Mexican decorations
+B10    : Late May
+C10    : Memorial Day weekend (last Mon of May)
+D10    : Holiday hours, patio at full capacity and stock for several days in a row
 E10    : 2 weeks
-F10    : Already one of the biggest bar nights of the year in the US
+F10    : A long weekend moves more than a normal Saturday and is ordered with the same lead time
 A11    : 8
 B11    : Jun 20–21
 C11    : First day of summer
@@ -3300,7 +3300,7 @@ B18    : Dec 24
 C18    : Christmas Eve
 D18    : Decide the hours (many bars close early on Christmas Eve and Day), run a reduced shift and post the hours on Google Business Profile and social media
 E18    : 3 weeks
-F18    : The after-dinner drink with the family is a short, very profitable peak
+F18    : Usually a short night: staff lean and post the hours early
 A19    : 16
 B19    : Dec 31
 C19    : New Year's Eve
@@ -3314,11 +3314,11 @@ D20    : Adapt the menu and hours to local events (street fairs, parades, festiv
 E20    : 3 weeks
 F20    : ADD YOUR LOCAL DATES
 A21    : 18
-B21    : Varies
-C21    : Big games & sports nights
+B21    : Feb (2nd Sun) · varies
+C21    : Super Bowl Sunday & big games
 D21    : Extra beer stock, screens, special hours
 E21    : 1 week
-F21    : Super Bowl, March Madness, playoffs (NBA, NHL), World Series
+F21    : Super Bowl on the 2nd Sunday in Feb; also March Madness, NBA/NHL playoffs, World Series
 A22    : 19
 B22    : May 13
 C22    : World Cocktail Day

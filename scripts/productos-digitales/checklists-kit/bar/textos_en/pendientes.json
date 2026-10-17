@@ -2,15 +2,16 @@
  "meta": {
   "kit": "bar",
   "producto": "Bar Checklists Kit Pro",
-  "n_pendientes": 488,
-  "n_palabras": 4056,
+  "n_pendientes": 483,
+  "n_palabras": 4015,
   "motivos": {
-   "nueva": 481,
-   "contexto": 7
+   "nueva": 475,
+   "contexto": 7,
+   "corregida": 1
   },
-  "n_heredadas": 121,
+  "n_heredadas": 118,
   "heredadas_por_via": {
-   "exacta": 118,
+   "exacta": 115,
    "sufijo": 3
   },
   "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
@@ -681,6 +682,7 @@
    "pistas": [
     "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
    ],
+   "adaptar": "Sanitizante medido con tiras; ppm de la etiqueta (FDA Food Code 4-302.14)",
    "motivo": "nueva"
   },
   {
@@ -1007,6 +1009,7 @@
    "donde": [
     "02 · Coctelería Clásica · B9"
    ],
+   "adaptar": "Infusiones en tarros etiquetados, nunca en una botella de licor",
    "motivo": "nueva"
   },
   {
@@ -2500,6 +2503,7 @@
    "donde": [
     "04 · Bartender · B13"
    ],
+   "adaptar": "EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la política de la casa diga; nunca servir a quien esté visiblemente ebrio",
    "motivo": "nueva"
   },
   {
@@ -2679,6 +2683,7 @@
     "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
     "cristalería → glassware; lavavajillas de barra → glass washer"
    ],
+   "adaptar": "Sanitizante del glass washer medido con tiras; ppm de la etiqueta (FDA Food Code 4-302.14, 4-501.114)",
    "motivo": "nueva"
   },
   {
@@ -2834,6 +2839,7 @@
    "donde": [
     "04 · Camarero Barra · B7"
    ],
+   "adaptar": "EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la política de la casa diga; nunca servir a quien esté visiblemente ebrio",
    "motivo": "nueva"
   },
   {
@@ -3741,6 +3747,7 @@
    "donde": [
     "05 · Inventario · D40"
    ],
+   "adaptar": "Nunca de vuelta a una botella de licor vacía: recipiente propio, cerrado y etiquetado (26 U.S.C. 5301(c); 27 CFR 31.201)",
    "motivo": "nueva"
   },
   {
@@ -4239,6 +4246,7 @@
    "pistas": [
     "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
    ],
+   "adaptar": "Barra libre solo en eventos privados: en una noche abierta al público está prohibida en algunos estados (p. ej. Massachusetts): «check your state's ABC/liquor authority»",
    "motivo": "nueva"
   },
   {
@@ -4840,6 +4848,18 @@
    "base_en": "Restaurant Opening Checklist"
   },
   {
+   "id": "c0598",
+   "es": "Abrir persianas / puerta principal",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B8"
+   ],
+   "adaptar": "Persianas → security gate / shutters",
+   "motivo": "corregida: ronda 1 m15: + salidas de emergencia y señales de salida",
+   "base_en": "Raise security gate and open front door"
+  },
+  {
    "id": "c0616",
    "es": "Verificar grifos de cerveza y presión de CO₂",
    "grupo": "G2",
@@ -4899,29 +4919,6 @@
    ],
    "motivo": "contexto: restaurant",
    "base_en": "Make sure no guests remain in the restaurant"
-  },
-  {
-   "id": "c0635",
-   "es": "Limpiar grifos de cerveza",
-   "grupo": "G2",
-   "palabras": 4,
-   "donde": [
-    "08 · Cierre del Negocio · B18"
-   ],
-   "pistas": [
-    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0636",
-   "es": "Vaciar y limpiar garnish station",
-   "grupo": "G2",
-   "palabras": 5,
-   "donde": [
-    "08 · Cierre del Negocio · B19"
-   ],
-   "motivo": "nueva"
   },
   {
    "id": "c0735",
@@ -5046,6 +5043,7 @@
    "donde": [
     "B01 · Briefing Diario · B9"
    ],
+   "adaptar": "Sin 2x1 como ejemplo: promociones según el estado (REGLAS_US happy_hour)",
    "motivo": "nueva"
   },
   {
@@ -5337,52 +5335,6 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0788",
-   "es": "Horario de festivo, terraza a pleno rendimiento y stock para varios días seguidos",
-   "grupo": "G2",
-   "palabras": 13,
-   "donde": [
-    "B02 · Calendario Anual · D9"
-   ],
-   "pistas": [
-    "D15: terraza → patio"
-   ],
-   "adaptar": "Evento EN: «Memorial Day weekend (last Mon of May)». Sustituye al 1 de mayo y sus puentes: horario de festivo, patio a pleno rendimiento y stock para varios días seguidos",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0789",
-   "es": "Un puente mueve más que un sábado normal y se pide con el mismo plazo",
-   "grupo": "G2",
-   "palabras": 15,
-   "donde": [
-    "B02 · Calendario Anual · F9"
-   ],
-   "adaptar": "Evento EN: «Memorial Day weekend (last Mon of May)». «Puente» → long weekend",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0792",
-   "es": "Margaritas, mezcal, tequila, decoración mexicana",
-   "grupo": "G2",
-   "palabras": 5,
-   "donde": [
-    "B02 · Calendario Anual · D10"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0793",
-   "es": "Tendencia en crecimiento",
-   "grupo": "G2",
-   "palabras": 3,
-   "donde": [
-    "B02 · Calendario Anual · F10"
-   ],
-   "adaptar": "Evento EN: «Cinco de Mayo». En EE. UU. ya es una de las grandes noches de bar del año",
-   "motivo": "nueva"
-  },
-  {
    "id": "c0796",
    "es": "Cócteles refrescantes, terraza a tope",
    "grupo": "G2",
@@ -5631,7 +5583,7 @@
    "donde": [
     "B02 · Calendario Anual · F21"
    ],
-   "adaptar": "Evento EN: «Big games & sports nights». Super Bowl, March Madness, playoffs (NBA, NHL), World Series",
+   "adaptar": "Evento EN: «Super Bowl Sunday & big games». Super Bowl el 2.º domingo de febrero; además March Madness, playoffs (NBA, NHL), World Series",
    "motivo": "nueva"
   },
   {

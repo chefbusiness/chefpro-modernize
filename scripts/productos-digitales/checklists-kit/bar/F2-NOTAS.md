@@ -30,5 +30,20 @@ full capacity»; espresso en ml y «9 bar»; sulfitos fuera de los 9 alérgenos.
 | Volcados | `revision/dump_en.txt` y `dump_es.txt`, 3.352 líneas cada uno (para la revisión adversarial) |
 
 «restaurant» solo aparece en la firma de autor (11, literal de la SPEC base §7.2); ni «cava» ni «grapes» en el EN.
-Siguiente: UNA revisión adversarial sobre los volcados (lente de un bar manager US + lente técnica), sobre todo las
-normas que añadió el delta (`SPEC.md` §3) y las 7 celdas con °C.
+## Ronda 1 de la revisión (`revision/REVISION-F2.md`: 0 bloqueantes · 6 MAYORES · 16 menores · 6 dudas)
+
+Aplicados los 6 MAYORES y los 16 menores, solo con texto: G1.json pasa a 483 ids (+c0598; −6 que ahora fija
+`POR_CELDA`), y `mapas_bar.py` gana `Vida útil` = «Shelf life», filas 9/10 y 21 del B02, `POR_CELDA` del 02 `E4` y del
+08 16-19, 7 ADAPTAR y 3 reglas. Detalle en la tabla final de `REVISION-F2.md`. Comandos, además de los de arriba:
+`extraer_textos.py --kit bar` + `heredar.py --kit bar` (118 heredadas + 483 pendientes = 601).
+
+| Paso | Resultado |
+|---|---|
+| Montaje real | idempotencia 0 diferencias, `inject_cache` 11/11 sin fallos |
+| Gates | **VERDE 8/0** (G4: 196 regenerar · 795 traducir · 1.186 glosario; G7: 12 °F, 4 citas) |
+| Autotest · censo · no-latinos | 16/16 · 0 defectos · 0 |
+| Kit base | dry-run 0 diferencias y gates idénticos |
+| Copia al Mac | sha256 11/11 xlsx y 6/6 ficheros de datos; `dump_en.txt` regenerado (3.352 líneas) |
+
+Código compartido tocado en la ronda: solo `heredar.py` (admite `mapas.NO_HEREDAR`); ni `mapas.py` ni `aplicar_en.py`
+ni `gates_en.py`.

@@ -127,7 +127,9 @@ def main():
             cb, en_b = hit
             base_en = en_b
             en, ajustes, problemas = ajustar(en_b, cb, c)
-            if c.get('adaptar') and c.get('adaptar') != cb.get('adaptar'):
+            if c['es'] in getattr(mapas, 'NO_HEREDAR', {}):
+                motivo, extra = 'corregida', mapas.NO_HEREDAR[c['es']]
+            elif c.get('adaptar') and c.get('adaptar') != cb.get('adaptar'):
                 motivo = 'adaptar'
             elif RX_CONTEXTO.search(en):
                 motivo, extra = 'contexto', RX_CONTEXTO.search(en).group(0)
