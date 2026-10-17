@@ -1,0 +1,4227 @@
+Volcado de 11 xlsx de /root/wt-checklists/astro-site/public/dl/restaurant-checklist-templates (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-opening-closing-checklists-kitchen-foh-bar.xlsx
+# docProps: title='Opening & Closing Checklists: Kitchen, FOH & Bar' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$46 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 01 · Opening & Closing Checklists: Kitchen, FOH & Bar
+B4     : How to use these templates
+B6     : ▸ Print the sheet for your shift (opening or closing)
+B7     : ▸ The shift manager assigns tasks to the team
+B8     : ▸ Each person checks ✓ when their task is done and initials it
+B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
+B12    : How to customize
+B14    : ▸ Green cells are editable — change assignments and times
+B15    : ▸ Adjust the due-by times to your real schedule
+B17    : How the counter works
+B19    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B20    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B21    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B23    : Free rows
+B25    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B26    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B28    : Sheet protection
+B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B33    : Works with
+B35    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B36    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B37    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B38    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B39    : ▸ You are in 01-opening-closing-checklists-kitchen-foh-bar.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx.
+B41    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B43    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B44    : Contact: info@aichef.pro
+B46    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Kitchen Opening» · protegida=True · área='Kitchen Opening'!$A$1:$G$56 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Kitchen Opening Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PERSONAL HYGIENE
+A6     : 1
+B6     : Clean uniform and work shoes, fresh apron, hair tied back and covered (cap or hairnet)
+C6     : Kitchen
+D6     : All staff
+E6     : 7:00 AM
+A7     : 2
+B7     : No hand/arm jewelry except a plain band; nails short, clean, no polish or acrylics
+C7     : Kitchen
+D7     : All staff
+E7     : 7:00 AM
+A8     : 3
+B8     : Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top
+C8     : Kitchen
+D8     : All staff
+E8     : 7:00 AM
+A9     : 4
+B9     : Wash hands on arrival and between tasks; handwashing sink with soap, paper towels and hot water (100 °F+)
+C9     : Kitchen
+D9     : All staff
+E9     : 7:00 AM
+A10    : 5
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
+C10    : Kitchen
+D10    : Head chef
+E10    : 7:00 AM
+A12    :   EQUIPMENT STARTUP
+A13    : 6
+B13    : Turn on the exhaust hood and ventilate the kitchen BEFORE lighting anything else
+C13    : Kitchen
+D13    : Opening line cook
+E13    : 7:00 AM
+A14    : 7
+B14    : Open the main gas valve and check for gas; if you smell it, touch nothing, get out and call the gas company or 911
+C14    : Kitchen
+D14    : Opening line cook
+E14    : 7:00 AM
+A15    : 8
+B15    : Turn on ovens and preheat to working temperature
+C15    : Kitchen
+D15    : Opening line cook
+E15    : 7:15 AM
+A16    : 9
+B16    : Turn on flat-tops, fryers and salamander
+C16    : Kitchen
+D16    : Opening line cook
+E16    : 7:15 AM
+A17    : 10
+B17    : Turn on the dish machine and check chemical levels (chemical sanitizing: test strips, ppm on the label)
+C17    : Kitchen
+D17    : Prep cook
+E17    : 7:15 AM
+A18    : 11
+B18    : Check that the walk-ins ran all night and log the temperature (cooler 41 °F or below / freezer 0 °F or below) — log reading: ____ °F. If out of range, do not use the product until it has been assessed
+C18    : Kitchen
+D18    : Opening line cook
+E18    : 7:00 AM
+A20    :   TEMPERATURE CONTROL
+A21    : 12
+B21    : Log walk-in cooler 1 temperature (41 °F or below) — log reading: ____ °F
+C21    : Kitchen
+D21    : Opening line cook
+E21    : 7:00 AM
+A22    : 13
+B22    : Log walk-in cooler 2 temperature (41 °F or below) — log reading: ____ °F
+C22    : Kitchen
+D22    : Opening line cook
+E22    : 7:00 AM
+A23    : 14
+B23    : Log walk-in freezer temperature (0 °F or below) — log reading: ____ °F
+C23    : Kitchen
+D23    : Opening line cook
+E23    : 7:00 AM
+A24    : 15
+B24    : If you have the HACCP Food Safety Kit Pro, log the reading on its temperature sheet; if not, write it here: ____ °F
+C24    : Kitchen
+D24    : Opening line cook
+E24    : 7:15 AM
+A26    :   INVENTORY CHECK
+A27    : 16
+B27    : Check expiration dates in the walk-ins (FIFO)
+C27    : Kitchen
+D27    : Sous chef
+E27    : 8:00 AM
+A28    : 17
+B28    : Check stock of the day's items
+C28    : Kitchen
+D28    : Sous chef
+E28    : 8:00 AM
+A29    : 18
+B29    : Prep the rush order list
+C29    : Kitchen
+D29    : Sous chef
+E29    : 8:30 AM
+A30    : 19
+B30    : Receive and inspect supplier deliveries
+C30    : Kitchen
+D30    : Sous chef
+E30    : 9:00 AM
+A32    :   MISE EN PLACE
+A33    : 20
+B33    : Set up hot line station mise en place
+C33    : Kitchen
+D33    : Lead line cook
+E33    : 10:00 AM
+A34    : 21
+B34    : Set up cold station mise en place
+C34    : Kitchen
+D34    : Lead line cook
+E34    : 10:00 AM
+A35    : 22
+B35    : Prep the day's base sauces
+C35    : Kitchen
+D35    : Line cook
+E35    : 10:30 AM
+A36    : 23
+B36    : Cut vegetables and garnishes
+C36    : Kitchen
+D36    : Prep cook
+E36    : 10:30 AM
+A37    : 24
+B37    : Prep the day's desserts
+C37    : Kitchen
+D37    : Pastry / line cook
+E37    : 10:30 AM
+A38    : 25
+B38    : Set up the steam table
+C38    : Kitchen
+D38    : Line cook
+E38    : 11:30 AM
+A39    : 26
+B39    : Taste the day's dishes and adjust seasoning
+C39    : Kitchen
+D39    : Head chef
+E39    : 11:45 AM
+A41    :   PRE-SERVICE CLEANING
+A42    : 27
+B42    : Clean work surfaces
+C42    : Kitchen
+D42    : All staff
+E42    : 11:30 AM
+A43    : 28
+B43    : Check color-coded cutting boards are clean
+C43    : Kitchen
+D43    : Sous chef
+E43    : 11:30 AM
+A44    : 29
+B44    : Check clean wiping cloths are available
+C44    : Kitchen
+D44    : Prep cook
+E44    : 11:30 AM
+A45    : 30
+B45    : Stock hand sanitizer in dispensers
+C45    : Kitchen
+D45    : Prep cook
+E45    : 11:30 AM
+A52    : Tasks done:
+D52    = =COUNTIFS(B5:B50,"?*",F5:F50,"✓")   → caché 0.0
+E52    : of
+F52    = =COUNTIF(B5:B50,"?*")-COUNTIF(F5:F50,"N/A")   → caché 30.0
+A54    : Verified by:
+E54    : Signature:
+A56    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F42 F43 F44 F45 F46 F47 F48 F49 F50 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G50 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Opening» · protegida=True · área='FOH Opening'!$A$1:$G$40 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : FOH Opening Checklist — Dining Room
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOH SETUP
+A6     : 1
+B6     : Turn on lights and A/C
+C6     : FOH
+D6     : Opening server
+E6     : 11:00 AM
+A7     : 2
+B7     : Check the dining room is clean overall
+C7     : FOH
+D7     : Opening server
+E7     : 11:00 AM
+A8     : 3
+B8     : Set tables: tablecloths/placemats, silverware, glasses, napkins
+C8     : FOH
+D8     : Servers
+E8     : 11:30 AM
+A9     : 4
+B9     : Put menus on tables or at the host stand
+C9     : FOH
+D9     : Server
+E9     : 11:30 AM
+A10    : 5
+B10    : Check table flowers/decor
+C10    : FOH
+D10    : Server
+E10    : 11:30 AM
+A11    : 6
+B11    : Stock the service station: extra silverware, napkins, sauces
+C11    : FOH
+D11    : Server
+E11    : 11:30 AM
+A12    : 7
+B12    : Check the allergen chart (9 major allergens) is accessible
+C12    : FOH
+D12    : FOH manager
+E12    : 11:30 AM
+A14    :   PATIO SETUP
+A15    : 8
+B15    : Bring out the patio furniture
+C15    : Patio
+D15    : Servers
+E15    : 11:00 AM
+A16    : 9
+B16    : Wipe down patio tables and chairs
+C16    : Patio
+D16    : Server
+E16    : 11:15 AM
+A17    : 10
+B17    : Set up umbrellas/awnings if needed
+C17    : Patio
+D17    : Server
+E17    : 11:15 AM
+A18    : 11
+B18    : Check outdoor heaters if the patio operates in cold weather
+C18    : Patio
+D18    : Server
+E18    : 11:15 AM
+A19    : 12
+B19    : Set out ashtrays (only if your city or state allows smoking on the patio) and napkin holders
+C19    : Patio
+D19    : Server
+E19    : 11:15 AM
+A21    :   RESERVATIONS & PRE-SHIFT
+A22    : 13
+B22    : Review today's reservations
+C22    : FOH
+D22    : FOH manager
+E22    : 11:00 AM
+A23    : 14
+B23    : Assign tables to named reservations
+C23    : FOH
+D23    : FOH manager
+E23    : 11:15 AM
+A24    : 15
+B24    : Check special events (birthdays, large parties)
+C24    : FOH
+D24    : FOH manager
+E24    : 11:15 AM
+A25    : 16
+B25    : Pre-shift meeting with the FOH team
+C25    : FOH
+D25    : FOH manager
+E25    : 11:45 AM
+A26    : 17
+B26    : Tell the team the specials and allergens
+C26    : FOH
+D26    : FOH manager
+E26    : 11:45 AM
+A27    : 18
+B27    : Flag VIPs and special requests
+C27    : FOH
+D27    : FOH manager
+E27    : 11:45 AM
+A29    :   SYSTEMS → see 08-restaurant-opening-closing-checklist.xlsx (POS, card terminal and music) and 09-cash-drawer-opening-closing.xlsx (starting bank, cash drawer and receipt paper roll)
+A36    : Tasks done:
+D36    = =COUNTIFS(B5:B34,"?*",F5:F34,"✓")   → caché 0.0
+E36    : of
+F36    = =COUNTIF(B5:B34,"?*")-COUNTIF(F5:F34,"N/A")   → caché 18.0
+A38    : Verified by:
+E38    : Signature:
+A40    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F30 F31 F32 F33 F34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G34 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Bar Opening» · protegida=True · área='Bar Opening'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Bar Opening Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   BAR SETUP
+A6     : 1
+B6     : Clean the bar and surfaces
+C6     : Bar
+D6     : Bartender
+E6     : 11:00 AM
+A7     : 2
+B7     : Check drink stock (beer, wine, liquor)
+C7     : Bar
+D7     : Bartender
+E7     : 11:15 AM
+A8     : 3
+B8     : Restock the bar coolers
+C8     : Bar
+D8     : Bartender
+E8     : 11:15 AM
+A9     : 4
+B9     : Fill the ice bin
+C9     : Bar
+D9     : Bartender
+E9     : 11:15 AM
+A10    : 5
+B10    : Cut garnish: lemon, orange, lime, olives
+C10    : Bar
+D10    : Bartender
+E10    : 11:30 AM
+A11    : 6
+B11    : Prep fresh juices for the day
+C11    : Bar
+D11    : Bartender
+E11    : 11:30 AM
+A12    : 7
+B12    : Check soda and water stock
+C12    : Bar
+D12    : Bartender
+E12    : 11:30 AM
+A14    :   COFFEE MACHINE
+A15    : 8
+B15    : Turn on the coffee machine and let it heat up
+C15    : Bar
+D15    : Bartender
+E15    : 10:30 AM
+A16    : 9
+B16    : Purge the group head (run 2 blank shots)
+C16    : Bar
+D16    : Bartender
+E16    : 10:45 AM
+A17    : 10
+B17    : Check milk stock (whole, skim, plant-based)
+C17    : Bar
+D17    : Bartender
+E17    : 10:45 AM
+A18    : 11
+B18    : Clean the steam wand
+C18    : Bar
+D18    : Bartender
+E18    : 10:45 AM
+A19    : 12
+B19    : Check sugar, sweetener and stevia stock
+C19    : Bar
+D19    : Bartender
+E19    : 10:45 AM
+A21    :   GLASSWARE & TOOLS
+A22    : 13
+B22    : Check glassware is clean and spot-free
+C22    : Bar
+D22    : Bartender
+E22    : 11:30 AM
+A23    : 14
+B23    : Restock coasters and bar napkins
+C23    : Bar
+D23    : Bartender
+E23    : 11:30 AM
+A24    : 15
+B24    : Check shaker, jigger, strainer, muddler
+C24    : Bar
+D24    : Bartender
+E24    : 11:30 AM
+A25    : 16
+B25    : Check straws and stirrers
+C25    : Bar
+D25    : Bartender
+E25    : 11:30 AM
+A32    : Tasks done:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : of
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 16.0
+A34    : Verified by:
+E34    : Signature:
+A36    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Kitchen Closing» · protegida=True · área='Kitchen Closing'!$A$1:$G$47 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Kitchen Closing Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOOD STORAGE
+A6     : 1
+B6     : Date-mark all prepped food (ready-to-eat keeps 7 days at 41 °F; prep day = day 1)
+C6     : Kitchen
+D6     : Line cooks
+E6     : Close
+A7     : 2
+B7     : Store mise en place in airtight containers
+C7     : Kitchen
+D7     : Line cooks
+E7     : Close
+A8     : 3
+B8     : Apply FIFO in the walk-ins: new product goes in back
+C8     : Kitchen
+D8     : Line cooks
+E8     : Close
+A9     : 4
+B9     : Pull expired or spoiled product
+C9     : Kitchen
+D9     : Sous chef
+E9     : Close
+A10    : 5
+B10    : Log the day's waste (item, quantity and reason): without it, monthly food cost comes out wrong
+C10    : Kitchen
+D10    : Sous chef
+E10    : Close
+A11    : 6
+B11    : Cover all containers in the walk-ins
+C11    : Kitchen
+D11    : Line cooks
+E11    : Close
+A12    : 7
+B12    : Log final temperature of walk-ins and freezer (cooler 41 °F or below / freezer 0 °F or below) — log reading: ____ °F
+C12    : Kitchen
+D12    : Closing line cook
+E12    : Close
+A14    :   STATION CLEANING
+A15    : 8
+B15    : Clean and sanitize work surfaces; test the sanitizer with test strips (ppm on the label)
+C15    : Kitchen
+D15    : All staff
+E15    : Close
+A16    : 9
+B16    : Clean flat-top, burners and fryer
+C16    : Kitchen
+D16    : Line cook
+E16    : Close
+A17    : 10
+B17    : Clean oven and salamander
+C17    : Kitchen
+D17    : Line cook
+E17    : Close
+A18    : 11
+B18    : Empty and clean the steam table
+C18    : Kitchen
+D18    : Line cook
+E18    : Close
+A19    : 12
+B19    : Clean cutting boards and knives
+C19    : Kitchen
+D19    : All staff
+E19    : Close
+A20    : 13
+B20    : Wash and put away utensils
+C20    : Kitchen
+D20    : Prep cook
+E20    : Close
+A22    :   GENERAL CLEANING
+A23    : 14
+B23    : Sweep kitchen floors
+C23    : Cleaning
+D23    : Prep cook
+E23    : Close
+A24    : 15
+B24    : Mop kitchen floors
+C24    : Cleaning
+D24    : Prep cook
+E24    : Close
+A25    : 16
+B25    : Empty trash cans and put in fresh liners
+C25    : Cleaning
+D25    : Prep cook
+E25    : Close
+A26    : 17
+B26    : Take trash out to the dumpster
+C26    : Cleaning
+D26    : Prep cook
+E26    : Close
+A27    : 18
+B27    : Clean sinks
+C27    : Cleaning
+D27    : Prep cook
+E27    : Close
+A28    : 19
+B28    : Check grease traps
+C28    : Cleaning
+D28    : Prep cook
+E28    : Close
+A30    :   EQUIPMENT SHUTDOWN
+A31    : 20
+B31    : Turn off fryers and flat-top
+C31    : Kitchen
+D31    : Closing line cook
+E31    : Close
+A32    : 21
+B32    : Turn off ovens and salamander
+C32    : Kitchen
+D32    : Closing line cook
+E32    : Close
+A33    : 22
+B33    : Shut off gas valves
+C33    : Kitchen
+D33    : Closing line cook
+E33    : Close
+A34    : 23
+B34    : Turn off the exhaust hood
+C34    : Kitchen
+D34    : Closing line cook
+E34    : Close
+A35    : 24
+B35    : Make sure the walk-ins are closed
+C35    : Kitchen
+D35    : Closing line cook
+E35    : Close
+A36    : 25
+B36    : Turn off kitchen lights
+C36    : Kitchen
+D36    : Last one out
+E36    : Close
+A43    : Tasks done:
+D43    = =COUNTIFS(B5:B41,"?*",F5:F41,"✓")   → caché 0.0
+E43    : of
+F43    = =COUNTIF(B5:B41,"?*")-COUNTIF(F5:F41,"N/A")   → caché 25.0
+A45    : Verified by:
+E45    : Signature:
+A47    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F31 F32 F33 F34 F35 F36 F37 F38 F39 F40 F41 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G41 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Closing» · protegida=True · área='FOH Closing'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : FOH Closing Checklist — Dining Room, Patio & Cash
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   FOH BREAKDOWN
+A6     : 1
+B6     : Break down tables: collect tablecloths, silverware, glasses
+C6     : FOH
+D6     : Servers
+E6     : Close
+A7     : 2
+B7     : Clean and sanitize tables
+C7     : FOH
+D7     : Servers
+E7     : Close
+A8     : 3
+B8     : Break down the service station
+C8     : FOH
+D8     : Server
+E8     : Close
+A9     : 4
+B9     : Restock napkins, silverware and sauces for tomorrow
+C9     : FOH
+D9     : Server
+E9     : Close
+A10    : 5
+B10    : Sweep and mop the dining room floor
+C10    : FOH
+D10    : Porter
+E10    : Close
+A11    : 6
+B11    : Check restrooms: cleanliness, soap, paper
+C11    : FOH
+D11    : Porter
+E11    : Close
+A13    :   PATIO BREAKDOWN
+A14    : 7
+B14    : Bring in patio tables and chairs
+C14    : Patio
+D14    : Servers
+E14    : Close
+A15    : 8
+B15    : Take down umbrellas/awnings
+C15    : Patio
+D15    : Server
+E15    : Close
+A16    : 9
+B16    : Sweep the patio
+C16    : Patio
+D16    : Server
+E16    : Close
+A17    : 10
+B17    : Store furniture if needed
+C17    : Patio
+D17    : Server
+E17    : Close
+A19    :   CASH CLOSE-OUT → see 09-cash-drawer-opening-closing.xlsx: starting bank, count by denomination, POS Z report and over/short
+A21    :   GENERAL CLOSE → see 08-restaurant-opening-closing-checklist.xlsx: alarm, lights, HVAC, lock-up and keys
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 10.0
+A30    : Verified by:
+E30    : Signature:
+A32    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F20 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Bar Closing» · protegida=True · área='Bar Closing'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Bar Closing Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BAR CLEANING
+A6     : 1
+B6     : Clean and sanitize the bar top
+C6     : Bar
+D6     : Bartender
+E6     : Close
+A7     : 2
+B7     : Clean the coffee machine: purge, clean the group heads
+C7     : Bar
+D7     : Bartender
+E7     : Close
+A8     : 3
+B8     : Clean the steam wand
+C8     : Bar
+D8     : Bartender
+E8     : Close
+A9     : 4
+B9     : Wash and put away glassware
+C9     : Bar
+D9     : Bartender
+E9     : Close
+A10    : 5
+B10    : Wash shaker, jigger and tools
+C10    : Bar
+D10    : Bartender
+E10    : Close
+A11    : 6
+B11    : Clean the bar sink
+C11    : Bar
+D11    : Bartender
+E11    : Close
+A13    :   STOCK & STORAGE
+A14    : 7
+B14    : Store leftover garnish in containers
+C14    : Bar
+D14    : Bartender
+E14    : Close
+A15    : 8
+B15    : Check beer stock (kegs, bottles)
+C15    : Bar
+D15    : Bartender
+E15    : Close
+A16    : 9
+B16    : Close the bar coolers
+C16    : Bar
+D16    : Bartender
+E16    : Close
+A17    : 10
+B17    : Dump leftover ice and clean the bin
+C17    : Bar
+D17    : Bartender
+E17    : Close
+A18    : 11
+B18    : Log items to order for tomorrow
+C18    : Bar
+D18    : Bartender
+E18    : Close
+A19    : 12
+B19    : Turn off the coffee machine
+C19    : Bar
+D19    : Bartender
+E19    : Close
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Verified by:
+E28    : Signature:
+A30    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-kitchen-station-checklists.xlsx
+# docProps: title='Kitchen Checklists by Station (Hot Line, Cold Station, Mise en Place)' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$40 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 02 · Kitchen Checklists by Station (Hot Line, Cold Station, Mise en Place)
+B4     : How to use these templates
+B6     : ▸ Each tab is a kitchen station
+B7     : ▸ Tasks are organized into before, during and after service
+B8     : ▸ The lead line cook is responsible for completing and initialing
+B9     : ▸ Customize by adding the specific dishes on your menu
+B11    : How the counter works
+B13    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B14    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B15    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B17    : Free rows
+B19    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B20    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B22    : Sheet protection
+B24    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B25    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B27    : Works with
+B29    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B30    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B31    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B32    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B33    : ▸ You are in 02-kitchen-station-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B37    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B38    : Contact: info@aichef.pro
+B40    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Hot Line» · protegida=True · área='Hot Line'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Hot Line Station — Daily Tasks
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Turn on and preheat flat-top, burners, oven
+C6     : Kitchen
+D6     : Lead line cook
+E6     : 10:00 AM
+A7     : 2
+B7     : Prep stocks and base sauces
+C7     : Kitchen
+D7     : Lead line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Mise en place: proteins portioned and tempered
+C8     : Kitchen
+D8     : Lead line cook
+E8     : 11:00 AM
+A9     : 4
+B9     : Mise en place: hot sides ready
+C9     : Kitchen
+D9     : Line cook
+E9     : 11:00 AM
+A10    : 5
+B10    : Check frying oil stock
+C10    : Kitchen
+D10    : Line cook
+E10    : 11:00 AM
+A11    : 6
+B11    : Test fryer oil temperature
+C11    : Kitchen
+D11    : Line cook
+E11    : 11:30 AM
+A12    : 7
+B12    : Set up the pass with hot plates
+C12    : Kitchen
+D12    : Lead line cook
+E12    : 11:30 AM
+A13    : 8
+B13    : Taste all hot dishes for seasoning
+C13    : Kitchen
+D13    : Head chef
+E13    : 11:45 AM
+A15    :   DURING SERVICE
+A16    : 9
+B16    : Keep the station clean throughout service
+C16    : Kitchen
+D16    : Lead line cook
+E16    : Service
+A17    : 10
+B17    : Monitor cook times per ticket
+C17    : Kitchen
+D17    : Lead line cook
+E17    : Service
+A18    : 11
+B18    : Restock mise en place as it runs out
+C18    : Kitchen
+D18    : Line cook
+E18    : Service
+A19    : 12
+B19    : Call 86s (out-of-stock items) to FOH
+C19    : Kitchen
+D19    : Lead line cook
+E19    : Service
+A20    : 13
+B20    : Hot-holding temperature check (135 °F or above) — log reading: ____ °F
+C20    : Kitchen
+D20    : Lead line cook
+E20    : Service
+A22    :   AFTER SERVICE
+A23    : 14
+B23    : Cool leftover proteins fast (135 → 70 °F within 2 h, then to 41 °F within 4 more h, FDA Food Code 3-501.14), then label and date
+C23    : Kitchen
+D23    : Lead line cook
+E23    : Close
+A24    : 15
+B24    : Store sauces: label and date
+C24    : Kitchen
+D24    : Line cook
+E24    : Close
+A25    : 16
+B25    : Scrape the flat-top and clean it with griddle cleaner
+C25    : Kitchen
+D25    : Lead line cook
+E25    : Close
+A26    : 17
+B26    : Clean burners and range top
+C26    : Kitchen
+D26    : Line cook
+E26    : Close
+A27    : 18
+B27    : Turn off the fryer when done; filter the oil per the fryer manufacturer's procedure (built-in filters run at operating temperature; if filtering by hand, let it cool first, wear heat-resistant gloves and use a stable container); put used oil in the used cooking oil recycler's container
+C27    : Kitchen
+D27    : Line cook
+E27    : Close
+A28    : 19
+B28    : Clean the pass
+C28    : Kitchen
+D28    : Line cook
+E28    : Close
+A29    : 20
+B29    : Log the shift's waste (item, quantity and reason)
+C29    : Kitchen
+D29    : Lead line cook
+E29    : Close
+A30    : 21
+B30    : Leave the station ready for the next shift
+C30    : Kitchen
+D30    : Lead line cook
+E30    : Close
+A37    : Tasks done:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : of
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 21.0
+A39    : Verified by:
+E39    : Signature:
+A41    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cold Station» · protegida=True · área='Cold Station'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cold Station / Salads — Daily Tasks
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   BEFORE SERVICE
+A6     : 1
+B6     : Wash leafy greens and produce eaten raw under running potable water; if you use a produce wash, only one approved for produce, at the label dose, and RINSE well with potable water
+C6     : Kitchen
+D6     : Line cook
+E6     : 10:00 AM
+A7     : 2
+B7     : Prep the day's vinaigrettes and dressings
+C7     : Kitchen
+D7     : Line cook
+E7     : 10:30 AM
+A8     : 3
+B8     : Mise en place: cut vegetables and fruit
+C8     : Kitchen
+D8     : Line cook
+E8     : 10:30 AM
+A9     : 4
+B9     : Prep salad bases
+C9     : Kitchen
+D9     : Line cook
+E9     : 11:00 AM
+A10    : 5
+B10    : Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)
+C10    : Kitchen
+D10    : Lead line cook
+E10    : 11:00 AM
+A11    : 6
+B11    : Portion carpaccio, ceviche, tartare (menu carries the raw/undercooked consumer advisory, FDA 3-603.11)
+C11    : Kitchen
+D11    : Lead line cook
+E11    : 11:00 AM
+A12    : 7
+B12    : Check cold product stock in the walk-in
+C12    : Kitchen
+D12    : Lead line cook
+E12    : 11:00 AM
+A13    : 8
+B13    : Set up the cold station with organized inserts
+C13    : Kitchen
+D13    : Lead line cook
+E13    : 11:30 AM
+A15    :   DURING SERVICE
+A16    : 9
+B16    : Assemble salads and cold plates to order
+C16    : Kitchen
+D16    : Lead line cook
+E16    : Service
+A17    : 10
+B17    : Keep all cold TCS display food at 41 °F or below, incl. raw fish and shellfish, cut greens, tomato and melon
+C17    : Kitchen
+D17    : Lead line cook
+E17    : Service
+A18    : 11
+B18    : Refill vegetable inserts as they run low
+C18    : Kitchen
+D18    : Line cook
+E18    : Service
+A19    : 12
+B19    : Clean the station between services
+C19    : Kitchen
+D19    : Line cook
+E19    : Service
+A21    :   AFTER SERVICE
+A22    : 13
+B22    : Store cut vegetables: cover and date
+C22    : Kitchen
+D22    : Line cook
+E22    : Close
+A23    : 14
+B23    : Store vinaigrettes and dressings in the walk-in
+C23    : Kitchen
+D23    : Line cook
+E23    : Close
+A24    : 15
+B24    : Discard wilted greens and spoiled product
+C24    : Kitchen
+D24    : Line cook
+E24    : Close
+A25    : 16
+B25    : Clean and sanitize the cold station
+C25    : Kitchen
+D25    : Line cook
+E25    : Close
+A26    : 17
+B26    : Clean cutting boards (green = vegetables)
+C26    : Kitchen
+D26    : Line cook
+E26    : Close
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 17.0
+A35    : Verified by:
+E35    : Signature:
+A37    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Mise en Place» · protegida=True · área='Mise en Place'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : General Mise en Place Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+A5     :   PROTEINS
+A6     : 1
+B6     : Red meat: portioned, tempered
+C6     : Kitchen
+D6     : Lead line cook
+E6     : 11:00 AM
+A7     : 2
+B7     : Poultry: portioned, marinated if needed
+C7     : Kitchen
+D7     : Lead line cook
+E7     : 11:00 AM
+A8     : 3
+B8     : Fish: cleaned, portioned, kept cold
+C8     : Kitchen
+D8     : Lead line cook
+E8     : 11:00 AM
+A9     : 4
+B9     : Shellfish: cleaned, deveined if needed
+C9     : Kitchen
+D9     : Lead line cook
+E9     : 11:00 AM
+A10    : 5
+B10    : Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below + 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days
+C10    : Kitchen
+D10    : Lead line cook
+E10    : 11:00 AM
+A12    :   VEGETABLES & SIDES
+A13    : 6
+B13    : Potatoes: peeled, cut, held in water
+C13    : Kitchen
+D13    : Prep cook
+E13    : 10:30 AM
+A14    : 7
+B14    : Onion: brunoise, julienne, rings
+C14    : Kitchen
+D14    : Prep cook
+E14    : 10:30 AM
+A15    : 8
+B15    : Garlic: peeled, sliced, minced
+C15    : Kitchen
+D15    : Prep cook
+E15    : 10:30 AM
+A16    : 9
+B16    : Tomato: diced, sliced, wedges
+C16    : Kitchen
+D16    : Prep cook
+E16    : 10:30 AM
+A17    : 10
+B17    : Assorted vegetables per menu
+C17    : Kitchen
+D17    : Prep cook
+E17    : 10:30 AM
+A18    : 11
+B18    : Fresh herbs: washed, chopped
+C18    : Kitchen
+D18    : Prep cook
+E18    : 10:30 AM
+A20    :   SAUCES & BASES
+A21    : 12
+B21    : Brown / white stock: hot and ready
+C21    : Kitchen
+D21    : Line cook
+E21    : 10:00 AM
+A22    : 13
+B22    : Sauces of the day prepped
+C22    : Kitchen
+D22    : Line cook
+E22    : 11:00 AM
+A23    : 14
+B23    : Vinaigrettes and dressings
+C23    : Kitchen
+D23    : Line cook
+E23    : 11:00 AM
+A24    : 15
+B24    : Mayonnaise and emulsions
+C24    : Kitchen
+D24    : Line cook
+E24    : 11:00 AM
+A26    :   DESSERTS
+A27    : 16
+B27    : Dessert specials plated or ready to plate
+C27    : Kitchen
+D27    : Pastry cook
+E27    : 11:30 AM
+A28    : 17
+B28    : Ice cream tempered (from 0 °F to about 10 °F)
+C28    : Kitchen
+D28    : Pastry cook
+E28    : 11:30 AM
+A29    : 18
+B29    : Sweet sauces and coulis ready
+C29    : Kitchen
+D29    : Pastry cook
+E29    : 11:30 AM
+A30    : 19
+B30    : Dessert garnishes prepped
+C30    : Kitchen
+D30    : Pastry cook
+E30    : 11:30 AM
+A37    : Tasks done:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : of
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 19.0
+A39    : Verified by:
+E39    : Signature:
+A41    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-restaurant-manager-checklist.xlsx
+# docProps: title='Restaurant Manager Checklist: Daily, Weekly, Monthly & Shift Handover' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$45 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 03 · Restaurant Manager Checklist: Daily, Weekly, Monthly & Shift Handover
+B4     : How to use these templates
+B6     : ▸ Daily checklist: print one per workday
+B7     : ▸ Weekly checklist: print one per week
+B8     : ▸ Monthly checklist: print one per month
+B9     : ▸ Handover: print one for every shift change
+B11    : The week runs on DAYS 1-5, not Monday-Friday
+B13    : ▸ The blocks in "Manager Weekly" are numbered in the order of the week, not by calendar day: many restaurants close on Monday and that block would be left orphaned.
+B14    : ▸ The "Day" column comes filled with Day 1…Day 5 (the order of YOUR week, not the calendar's): type the real day of your restaurant over it, it is a green cell. The "WEEKEND" block is Saturday and Sunday, when half of the week's sales are rung up.
+B16    : How the counter works
+B18    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B19    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B20    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B22    : Free rows
+B24    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B25    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B27    : Sheet protection
+B29    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B30    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B32    : Works with
+B34    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B35    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B36    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B37    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B38    : ▸ You are in 03-restaurant-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B40    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B43    : Contact: info@aichef.pro
+B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Manager Daily» · protegida=True · área='Manager Daily'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Daily Checklist
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   FIRST HOUR (arrival)
+A6     : 1
+B6     : Check email and pending messages
+C6     : Office
+D6     : Manager
+E6     : 9:00 AM
+A7     : 2
+B7     : Review today's reservations and assign tables
+C7     : Office
+D7     : Manager
+E7     : 9:00 AM
+A8     : 3
+B8     : Check today's staffing: did anyone call out?
+C8     : Office
+D8     : Manager
+E8     : 9:00 AM
+A9     : 4
+B9     : Review incidents from the previous shift
+C9     : Office
+D9     : Manager
+E9     : 9:15 AM
+A10    : 5
+B10    : Confirm scheduled supplier deliveries
+C10    : Office
+D10    : Manager
+E10    : 9:15 AM
+A12    :   PRE-SERVICE
+A13    : 6
+B13    : Walk-through inspection: kitchen, FOH, restrooms, patio
+C13    : Office
+D13    : Manager
+E13    : 11:00 AM
+A14    : 7
+B14    : Check the restaurant is clean overall
+C14    : Office
+D14    : Manager
+E14    : 11:00 AM
+A15    : 8
+B15    : Talk to the head chef: specials, issues
+C15    : Office
+D15    : Manager
+E15    : 11:15 AM
+A16    : 9
+B16    : Check social media: new comments and reviews
+C16    : Office
+D16    : Manager
+E16    : 11:30 AM
+A17    : 10
+B17    : Pre-shift meeting with the FOH team
+C17    : Office
+D17    : Manager
+E17    : 11:45 AM
+A19    :   DURING SERVICE
+A20    : 11
+B20    : Be on the floor during peak service
+C20    : FOH
+D20    : Manager
+E20    : Service
+A21    : 12
+B21    : Greet regulars / VIPs
+C21    : FOH
+D21    : Manager
+E21    : Service
+A22    : 13
+B22    : Handle complaints or issues on the floor
+C22    : FOH
+D22    : Manager
+E22    : Service
+A23    : 14
+B23    : Monitor service times
+C23    : FOH
+D23    : Manager
+E23    : Service
+A25    :   POST-SERVICE
+A26    : 15
+B26    : Debrief the service with the head chef
+C26    : Office
+D26    : Manager
+E26    : 3:30 PM
+A27    : 16
+B27    : Review lunch sales in the POS
+C27    : Office
+D27    : Manager
+E27    : 3:30 PM
+A28    : 17
+B28    : Place supplier orders for tomorrow
+C28    : Office
+D28    : Manager
+E28    : 4:00 PM
+A29    : 18
+B29    : Reply to Google / Yelp / TripAdvisor reviews
+C29    : Office
+D29    : Manager
+E29    : 4:00 PM
+A30    : 19
+B30    : Update social media if needed
+C30    : Office
+D30    : Manager
+E30    : 4:00 PM
+A32    :   END OF DAY
+A33    : 20
+B33    : Balance the day's register
+C33    : Office
+D33    : Manager
+E33    : Close
+A34    : 21
+B34    : Log total sales
+C34    : Office
+D34    : Manager
+E34    : Close
+A35    : 22
+B35    : Review and approve team time-clock punches (in, out, breaks) in the POS or time-clock app
+C35    : Office
+D35    : Manager
+E35    : Close
+A36    : 23
+B36    : Log relevant incidents of the day
+C36    : Office
+D36    : Manager
+E36    : Close
+A37    : 24
+B37    : Prep notes for tomorrow's shift
+C37    : Office
+D37    : Manager
+E37    : Close
+A38    : 25
+B38    : Verify the restaurant is fully closed
+C38    : Office
+D38    : Manager
+E38    : Close
+A45    : Tasks done:
+D45    = =COUNTIFS(B5:B43,"?*",F5:F43,"✓")   → caché 0.0
+E45    : of
+F45    = =COUNTIF(B5:B43,"?*")-COUNTIF(F5:F43,"N/A")   → caché 25.0
+A47    : Verified by:
+E47    : Signature:
+A49    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F26 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 F43 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G43 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Weekly» · protegida=True · área='Manager Weekly'!$A$1:$G$51 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Weekly Checklist
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   DAY 1 — PLANNING
+A6     : 1
+B6     : Review last week's sales
+C6     : Office
+D6     : Manager
+E6     : Day 1
+A7     : 2
+B7     : Analyze best- and worst-selling dishes
+C7     : Office
+D7     : Manager
+E7     : Day 1
+A8     : 3
+B8     : Plan the week's menu
+C8     : Office
+D8     : Manager
+E8     : Day 1
+A9     : 4
+B9     : Review and confirm the week's shifts
+C9     : Office
+D9     : Manager
+E9     : Day 1
+A10    : 5
+B10    : Weekly meeting with the head chef
+C10    : Office
+D10    : Manager
+E10    : Day 1
+A12    :   DAY 2 — SUPPLIERS
+A13    : 6
+B13    : Compare prices from main suppliers
+C13    : Office
+D13    : Manager
+E13    : Day 2
+A14    : 7
+B14    : Place weekly orders
+C14    : Office
+D14    : Manager
+E14    : Day 2
+A15    : 8
+B15    : Negotiate terms if prices go up
+C15    : Office
+D15    : Manager
+E15    : Day 2
+A16    : 9
+B16    : Match delivery invoices and packing slips to vendor statements; chase missing credits
+C16    : Office
+D16    : Manager
+E16    : Day 2
+A18    :   DAY 3 — TEAM
+A19    : 10
+B19    : Short meeting with the FOH team
+C19    : Office
+D19    : Manager
+E19    : Day 3
+A20    : 11
+B20    : Evaluate individual performance (informal)
+C20    : Office
+D20    : Manager
+E20    : Day 3
+A21    : 12
+B21    : Handle vacation requests and shift swaps
+C21    : Office
+D21    : Manager
+E21    : Day 3
+A22    : 13
+B22    : Check uniforms and team appearance
+C22    : Office
+D22    : Manager
+E22    : Day 3
+A24    :   DAY 4 — QUALITY
+A25    : 14
+B25    : Walk-in inspection: organization, cleanliness, FIFO
+C25    : Office
+D25    : Manager
+E25    : Day 4
+A26    : 15
+B26    : Review the week's hygiene logs: in the HACCP Food Safety Kit Pro sheets if you have it; if not, in your own
+C26    : Office
+D26    : Manager
+E26    : Day 4
+A27    : 16
+B27    : Check cleaning supply stock
+C27    : Office
+D27    : Manager
+E27    : Day 4
+A28    : 17
+B28    : Taste 2-3 menu dishes (quality control)
+C28    : Office
+D28    : Manager
+E28    : Day 4
+A30    :   DAY 5 — MARKETING & ADMIN
+A31    : 18
+B31    : Plan the weekend's social media posts
+C31    : Office
+D31    : Manager
+E31    : Day 5
+A32    : 19
+B32    : Review weekend reservations
+C32    : Office
+D32    : Manager
+E32    : Day 5
+A33    : 20
+B33    : Check stock is sufficient for the weekend
+C33    : Office
+D33    : Manager
+E33    : Day 5
+A34    : 21
+B34    : Close out the admin week: invoices, payments
+C34    : Office
+D34    : Manager
+E34    : Day 5
+A36    :   WEEKEND
+A37    : 22
+B37    : Monitor wait times during the lunch and dinner rushes
+C37    : FOH
+D37    : Manager
+E37    : Saturday
+A38    : 23
+B38    : Restock between services: bar, wine storage and dinner mise en place
+C38    : General
+D38    : Shift manager
+E38    : Saturday
+A39    : 24
+B39    : Close out Sunday's reservations and confirm large parties by phone
+C39    : Office
+D39    : Manager
+E39    : Saturday
+A40    : 25
+B40    : Count critical items for Monday and place a rush order if anything is short
+C40    : Kitchen
+D40    : Sous chef
+E40    : Sunday
+A47    : Tasks done:
+D47    = =COUNTIFS(B5:B45,"?*",F5:F45,"✓")   → caché 0.0
+E47    : of
+F47    = =COUNTIF(B5:B45,"?*")-COUNTIF(F5:F45,"N/A")   → caché 25.0
+A49    : Verified by:
+E49    : Signature:
+A51    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F25 F26 F27 F28 F31 F32 F33 F34 F37 F38 F39 F40 F41 F42 F43 F44 F45 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G45 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Manager Monthly» · protegida=True · área='Manager Monthly'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Manager Monthly Checklist
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   FINANCE
+A6     : 1
+B6     : Review the month's P&L (revenue vs expenses)
+C6     : Office
+D6     : Manager
+E6     : Days 1–3
+A7     : 2
+B7     : Calculate actual vs target food cost
+C7     : Office
+D7     : Manager
+E7     : Days 1–3
+A8     : 3
+B8     : Calculate actual vs target labor cost
+C8     : Office
+D8     : Manager
+E8     : Days 1–3
+A9     : 4
+B9     : Review outstanding supplier invoices
+C9     : Office
+D9     : Manager
+E9     : Days 1–3
+A10    : 5
+B10    : Analyze average check and its trend
+C10    : Office
+D10    : Manager
+E10    : Days 1–3
+A12    :   TEAM
+A13    : 6
+B13    : Formal team performance review
+C13    : Office
+D13    : Manager
+E13    : Monthly
+A14    : 7
+B14    : Identify training needs
+C14    : Office
+D14    : Manager
+E14    : Monthly
+A15    : 8
+B15    : Review the month's schedule adherence
+C15    : Office
+D15    : Manager
+E15    : Monthly
+A16    : 9
+B16    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
+C16    : Office
+D16    : Manager
+E16    : Monthly
+A17    : 10
+B17    : Build next month's schedule
+C17    : Office
+D17    : Manager
+E17    : Monthly
+A18    : 11
+B18    : Reconcile the month's payroll runs (weekly or biweekly, per your state's pay-frequency law): tips, overtime, bonuses
+C18    : Office
+D18    : Manager
+E18    : Monthly
+A20    :   MAINTENANCE
+A21    : 12
+B21    : Review kitchen equipment (general condition)
+C21    : Office
+D21    : Manager
+E21    : Monthly
+A22    : 13
+B22    : Schedule preventive maintenance if needed
+C22    : Office
+D22    : Manager
+E22    : Monthly
+A23    : 14
+B23    : Check fire extinguishers (monthly visual inspection) and emergency exits
+C23    : Office
+D23    : Manager
+E23    : Monthly
+A24    : 15
+B24    : Check condition of furniture (tables, chairs)
+C24    : Office
+D24    : Manager
+E24    : Monthly
+A26    :   MARKETING & STRATEGY
+A27    : 16
+B27    : Analyze the month's reviews: trends and weak spots
+C27    : Office
+D27    : Manager
+E27    : Monthly
+A28    : 17
+B28    : Plan next month's promotions or events
+C28    : Office
+D28    : Manager
+E28    : Monthly
+A29    : 18
+B29    : Update the menu for seasonal changes
+C29    : Office
+D29    : Manager
+E29    : Monthly
+A30    : 19
+B30    : Check your Google Business Profile ranking
+C30    : Office
+D30    : Manager
+E30    : Monthly
+A37    : Tasks done:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : of
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 19.0
+A39    : Verified by:
+E39    : Signature:
+A41    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Shift Handover» · protegida=True · área='Shift Handover'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Shift Change Checklist (Handover)
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   INFORMATION HANDOFF
+A6     : 1
+B6     : Incidents from the outgoing shift
+C6     : General
+D6     : Outgoing manager
+E6     : Shift change
+A7     : 2
+B7     : Occupied tables and the status of each
+C7     : General
+D7     : Outgoing manager
+E7     : Shift change
+A8     : 3
+B8     : Pending reservations for the incoming shift
+C8     : General
+D8     : Outgoing manager
+E8     : Shift change
+A9     : 4
+B9     : Items 86'd (out of stock)
+C9     : General
+D9     : Outgoing manager
+E9     : Shift change
+A10    : 5
+B10    : Complaints or special guests
+C10    : General
+D10    : Outgoing manager
+E10    : Shift change
+A12    :   RESTAURANT STATUS
+A13    : 6
+B13    : Cleanliness status: kitchen, FOH, restrooms
+C13    : General
+D13    : Outgoing manager
+E13    : Shift change
+A14    : 7
+B14    : Cash status: starting bank is correct
+C14    : General
+D14    : Outgoing manager
+E14    : Shift change
+A15    : 8
+B15    : Deliveries still to be received
+C15    : General
+D15    : Outgoing manager
+E15    : Shift change
+A16    : 9
+B16    : Pending tasks not completed
+C16    : General
+D16    : Outgoing manager
+E16    : Shift change
+A18    :   INCOMING SHIFT CONFIRMATION
+A19    : 10
+B19    : Incoming shift confirms receiving the information
+C19    : General
+D19    : Incoming manager
+E19    : Shift change
+A20    : 11
+B20    : Quick verification walk-through
+C20    : General
+D20    : Incoming manager
+E20    : Shift change
+A21    : 12
+B21    : Handover sign-off: both shift managers
+C21    : General
+D21    : Both
+E21    : Shift change
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 12.0
+A30    : Verified by:
+E30    : Signature:
+A32    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-daily-duties-side-work-by-role.xlsx
+# docProps: title='Daily Duties & Side Work Checklists by Role' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$39 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 04 · Daily Duties & Side Work Checklists by Role
+B4     : How to use these templates
+B6     : ▸ Each tab is a different job role
+B7     : ▸ Hand the matching sheet to each team member
+B8     : ▸ These are their daily responsibilities — non-negotiable
+B10    : How the counter works
+B12    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B13    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B14    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B16    : Free rows
+B18    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B19    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B21    : Sheet protection
+B23    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B24    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B26    : Works with
+B28    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B29    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B30    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B31    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B32    : ▸ You are in 04-daily-duties-side-work-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B34    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B36    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B37    : Contact: info@aichef.pro
+B39    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Head Chef» · protegida=True · área='Head Chef'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Head Chef / Executive Chef
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   MORNING
+A6     : 1
+B6     : Check that the whole kitchen team has arrived
+C6     : Kitchen
+D6     : Head chef
+E6     : 8:00 AM
+A7     : 2
+B7     : Review mise en place at every station
+C7     : Kitchen
+D7     : Head chef
+E7     : 11:00 AM
+A8     : 3
+B8     : Taste every preparation for seasoning
+C8     : Kitchen
+D8     : Head chef
+E8     : 11:45 AM
+A9     : 4
+B9     : Approve the presentation of the day's dishes
+C9     : Kitchen
+D9     : Head chef
+E9     : 11:45 AM
+A10    : 5
+B10    : Tell FOH the specials and 86s
+C10    : Kitchen
+D10    : Head chef
+E10    : 11:45 AM
+A11    : 6
+B11    : Oversee receiving of deliveries
+C11    : Kitchen
+D11    : Head chef
+E11    : On delivery
+A13    :   SERVICE
+A14    : 7
+B14    : Run the pass: timing and quality
+C14    : Kitchen
+D14    : Head chef
+E14    : Service
+A15    : 8
+B15    : Check each plate's presentation before it goes out
+C15    : Kitchen
+D15    : Head chef
+E15    : Service
+A16    : 9
+B16    : Coordinate between stations
+C16    : Kitchen
+D16    : Head chef
+E16    : Service
+A17    : 10
+B17    : Handle sent-back dishes and kitchen complaints
+C17    : Kitchen
+D17    : Head chef
+E17    : Service
+A19    :   POST-SERVICE
+A20    : 11
+B20    : Review service with the sous chef: what to improve
+C20    : Kitchen
+D20    : Head chef
+E20    : 3:30 PM
+A21    : 12
+B21    : Oversee closing of all stations
+C21    : Kitchen
+D21    : Head chef
+E21    : Close
+A22    : 13
+B22    : Plan tomorrow's menu and specials
+C22    : Kitchen
+D22    : Head chef
+E22    : 4:00 PM
+A23    : 14
+B23    : Review supplier orders
+C23    : Kitchen
+D23    : Head chef
+E23    : 4:00 PM
+A24    : 15
+B24    : Update recipe cards if anything changes
+C24    : Kitchen
+D24    : Head chef
+E24    : Weekly
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 15.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Sous Chef» · protegida=True · área='Sous Chef'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Sous Chef
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   MORNING
+A6     : 1
+B6     : Organize the kitchen team on arrival
+C6     : Kitchen
+D6     : Sous chef
+E6     : 8:00 AM
+A7     : 2
+B7     : Oversee FIFO in the walk-ins
+C7     : Kitchen
+D7     : Sous chef
+E7     : 8:30 AM
+A8     : 3
+B8     : Prep the rush order list
+C8     : Kitchen
+D8     : Sous chef
+E8     : 9:00 AM
+A9     : 4
+B9     : Oversee mise en place at every station
+C9     : Kitchen
+D9     : Sous chef
+E9     : 10:00–11:30 AM
+A10    : 5
+B10    : Cover a station if short-staffed
+C10    : Kitchen
+D10    : Sous chef
+E10    : If needed
+A12    :   SERVICE
+A13    : 6
+B13    : Back up the busiest station
+C13    : Kitchen
+D13    : Sous chef
+E13    : Service
+A14    : 7
+B14    : Cover for the head chef when absent
+C14    : Kitchen
+D14    : Sous chef
+E14    : If needed
+A15    : 8
+B15    : Quality check dishes at the pass
+C15    : Kitchen
+D15    : Sous chef
+E15    : Service
+A17    :   POST-SERVICE
+A18    : 9
+B18    : Oversee kitchen cleaning and closing
+C18    : Kitchen
+D18    : Sous chef
+E18    : Close
+A19    : 10
+B19    : Quick inventory of critical items
+C19    : Kitchen
+D19    : Sous chef
+E19    : Close
+A20    : 11
+B20    : Prep tomorrow's pre-shift meeting for the team
+C20    : Kitchen
+D20    : Sous chef
+E20    : Close
+A27    : Tasks done:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : of
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 11.0
+A29    : Verified by:
+E29    : Signature:
+A31    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FOH Manager» · protegida=True · área='FOH Manager'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — FOH Manager / Maître d'
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   MORNING
+A6     : 1
+B6     : Review today's reservations
+C6     : FOH
+D6     : FOH manager
+E6     : 10:00 AM
+A7     : 2
+B7     : Assign tables and sections to servers
+C7     : FOH
+D7     : FOH manager
+E7     : 10:30 AM
+A8     : 3
+B8     : Check that the FOH and patio are fully set up
+C8     : FOH
+D8     : FOH manager
+E8     : 11:30 AM
+A9     : 4
+B9     : Pre-shift meeting: specials, allergens, VIPs
+C9     : FOH
+D9     : FOH manager
+E9     : 11:45 AM
+A10    : 5
+B10    : Check team appearance (uniform)
+C10    : FOH
+D10    : FOH manager
+E10    : 11:45 AM
+A12    :   SERVICE
+A13    : 6
+B13    : Greet and seat guests
+C13    : FOH
+D13    : FOH manager
+E13    : Service
+A14    : 7
+B14    : Monitor table turn times
+C14    : FOH
+D14    : FOH manager
+E14    : Service
+A15    : 8
+B15    : Handle complaints on the floor
+C15    : FOH
+D15    : FOH manager
+E15    : Service
+A16    : 9
+B16    : Coordinate with the kitchen: timing, specials, allergens
+C16    : FOH
+D16    : FOH manager
+E16    : Service
+A17    : 10
+B17    : Manage walk-ins and the waitlist
+C17    : FOH
+D17    : FOH manager
+E17    : Service
+A19    :   POST-SERVICE
+A20    : 11
+B20    : Review today's reviews and comments
+C20    : FOH
+D20    : FOH manager
+E20    : 3:30 PM
+A21    : 12
+B21    : Debrief the service with the FOH team
+C21    : FOH
+D21    : FOH manager
+E21    : 3:30 PM
+A22    : 13
+B22    : Review tomorrow's reservations
+C22    : FOH
+D22    : FOH manager
+E22    : Close
+A23    : 14
+B23    : Oversee FOH breakdown and closing
+C23    : FOH
+D23    : FOH manager
+E23    : Close
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 14.0
+A32    : Verified by:
+E32    : Signature:
+A34    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Server» · protegida=True · área='Server'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Server
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   PRE-SERVICE
+A6     : 1
+B6     : Set the tables in your section
+C6     : FOH
+D6     : Server
+E6     : 11:00 AM
+A7     : 2
+B7     : Check your section is clean
+C7     : FOH
+D7     : Server
+E7     : 11:15 AM
+A8     : 3
+B8     : Set up the service station
+C8     : FOH
+D8     : Server
+E8     : 11:15 AM
+A9     : 4
+B9     : Review the menu and the specials
+C9     : FOH
+D9     : Server
+E9     : 11:30 AM
+A10    : 5
+B10    : Attend the pre-shift meeting
+C10    : FOH
+D10    : Server
+E10    : 11:45 AM
+A12    :   SERVICE
+A13    : 6
+B13    : Greet the guest with a smile
+C13    : FOH
+D13    : Server
+E13    : Service
+A14    : 7
+B14    : Offer the drink menu right away
+C14    : FOH
+D14    : Server
+E14    : Service
+A15    : 8
+B15    : Take the full order (no second trip to the table)
+C15    : FOH
+D15    : Server
+E15    : Service
+A16    : 9
+B16    : Ask about allergens before taking the order
+C16    : FOH
+D16    : Server
+E16    : Service
+A17    : 10
+B17    : Serve drinks in under 3 minutes
+C17    : FOH
+D17    : Server
+E17    : Service
+A18    : 11
+B18    : Clear plates only when EVERYONE at the table has finished
+C18    : FOH
+D18    : Server
+E18    : Service
+A19    : 12
+B19    : Offer dessert and coffee at the end
+C19    : FOH
+D19    : Server
+E19    : Service
+A20    : 13
+B20    : Bring the check when asked or when guests are done; never rush
+C20    : FOH
+D20    : Server
+E20    : Service
+A22    :   POST-SERVICE
+A23    : 14
+B23    : Break down and clean the tables in your section
+C23    : FOH
+D23    : Server
+E23    : Close
+A24    : 15
+B24    : Restock the service station
+C24    : FOH
+D24    : Server
+E24    : Close
+A25    : 16
+B25    : Wipe down menus
+C25    : FOH
+D25    : Server
+E25    : Close
+A32    : Tasks done:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : of
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 16.0
+A34    : Verified by:
+E34    : Signature:
+A36    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Bartender» · protegida=True · área='Bartender'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Daily Duties — Bartender
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   PRE-SERVICE
+A6     : 1
+B6     : Open the bar: cleaning, stock, ice, garnish
+C6     : Bar
+D6     : Bartender
+E6     : 10:30 AM
+A7     : 2
+B7     : Pull test shots (calibrate the grinder)
+C7     : Bar
+D7     : Bartender
+E7     : 10:45 AM
+A8     : 3
+B8     : Check wines by the glass: open bottles still good?
+C8     : Bar
+D8     : Bartender
+E8     : 11:00 AM
+A9     : 4
+B9     : Set up cocktail mise en place if needed
+C9     : Bar
+D9     : Bartender
+E9     : 11:15 AM
+A11    :   SERVICE
+A12    : 5
+B12    : Make drinks in under 2 minutes
+C12    : Bar
+D12    : Bartender
+E12    : Service
+A13    : 6
+B13    : Keep the bar clean and organized at all times
+C13    : Bar
+D13    : Bartender
+E13    : Service
+A14    : 7
+B14    : Keep ice, sodas and beers restocked
+C14    : Bar
+D14    : Bartender
+E14    : Service
+A15    : 8
+B15    : Prioritize guests seated at the bar
+C15    : Bar
+D15    : Bartender
+E15    : Service
+A17    :   POST-SERVICE
+A18    : 9
+B18    : Clean the bar, sink and coffee machine
+C18    : Bar
+D18    : Bartender
+E18    : Close
+A19    : 10
+B19    : Store garnish and perishables
+C19    : Bar
+D19    : Bartender
+E19    : Close
+A20    : 11
+B20    : Do a quick beer and liquor inventory
+C20    : Bar
+D20    : Bartender
+E20    : Close
+A21    : 12
+B21    : Log what needs ordering for tomorrow
+C21    : Bar
+D21    : Bartender
+E21    : Close
+A28    : Tasks done:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : of
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 12.0
+A30    : Verified by:
+E30    : Signature:
+A32    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F12 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-restaurant-cleaning-schedule.xlsx
+# docProps: title='Restaurant Cleaning Schedule & Maintenance Checklists' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$45 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 05 · Restaurant Cleaning Schedule & Maintenance Checklists
+B4     : How to use these templates
+B6     : ▸ Print the weekly sheet every Monday and the monthly sheet on the 1st
+B7     : ▸ Assign each task to a person in charge with a due date
+B8     : ▸ File the signed sheets with your hygiene records: with the HACCP Food Safety Kit Pro sheets if you have it; if not, with your own
+B10    : Quarterly, annual and freezer shelf life
+B12    : ▸ The "Quarterly & Annual" sheet covers the maintenance you HIRE OUT and that an inspector asks to see: pest control, hood and duct cleaning, fire extinguishers and the hood fire suppression system, gas, refrigeration, backflow, grease trap, used oil, waste, insurance and POS / sales tax.
+B13    : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
+B14    : ▸ At the bottom of "Weekly FIFO Check" there is an editable table of freezer shelf life by food group: one single rule for the whole freezer either throws out good product or lets old product slip through.
+B16    : How the counter works
+B18    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B19    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B20    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B22    : Free rows
+B24    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B25    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B27    : Sheet protection
+B29    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B30    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B32    : Works with
+B34    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B35    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B36    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B37    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B38    : ▸ You are in 05-restaurant-cleaning-schedule.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B40    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B43    : Contact: info@aichef.pro
+B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Weekly Deep Clean» · protegida=True · área='Weekly Deep Clean'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly Deep Cleaning Checklist
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — Deep cleaning
+A6     : 1
+B6     : Clean inside the walk-in coolers and freezers
+C6     : Cleaning
+D6     : Kitchen team
+E6     : Monday
+A7     : 2
+B7     : Take apart and clean the range burners
+C7     : Cleaning
+D7     : Line cook
+E7     : Tuesday
+A8     : 3
+B8     : Clean inside the oven (self-clean or by hand)
+C8     : Cleaning
+D8     : Line cook
+E8     : Tuesday
+A9     : 4
+B9     : Remove and clean the hood filters
+C9     : Cleaning
+D9     : Prep cook
+E9     : Wednesday
+A10    : 5
+B10    : Clean the fryer: drain, degrease, rinse
+C10    : Cleaning
+D10    : Line cook
+E10    : Wednesday
+A11    : 6
+B11    : Clean inside the microwave and salamander
+C11    : Cleaning
+D11    : Prep cook
+E11    : Thursday
+A12    : 7
+B12    : Clean the ventilation grates
+C12    : Cleaning
+D12    : Prep cook
+E12    : Thursday
+A13    : 8
+B13    : Clean behind equipment (move it if possible)
+C13    : Cleaning
+D13    : Kitchen team
+E13    : Friday
+A14    : 9
+B14    : Clean dish machine filters, wash arms and tank
+C14    : Cleaning
+D14    : Prep cook
+E14    : Friday
+A16    :   FOH & BAR
+A17    : 10
+B17    : Clean windows and mirrors
+C17    : Cleaning
+D17    : Porter
+E17    : Monday
+A18    : 11
+B18    : Clean under chairs and chair legs
+C18    : Cleaning
+D18    : Server
+E18    : Tuesday
+A19    : 12
+B19    : Clean inside the bar display case
+C19    : Cleaning
+D19    : Bartender
+E19    : Wednesday
+A20    : 13
+B20    : Backflush the espresso group heads with detergent + soak portafilters, filters and shower screens
+C20    : Cleaning
+D20    : Bartender
+E20    : Wednesday
+A21    : 14
+B21    : Clean the draft beer lines
+C21    : Cleaning
+D21    : Bartender
+E21    : Friday
+A23    :   RESTROOMS & GENERAL
+A24    : 15
+B24    : Deep clean the restrooms (tile, grout)
+C24    : Cleaning
+D24    : Porter
+E24    : Thursday
+A25    : 16
+B25    : Clean the staff locker rooms
+C25    : Cleaning
+D25    : Porter
+E25    : Thursday
+A26    : 17
+B26    : Deep clean the patio (floors, planters)
+C26    : Cleaning
+D26    : Server
+E26    : Saturday
+A27    : 18
+B27    : Check and restock cleaning supplies
+C27    : Cleaning
+D27    : Shift manager
+E27    : Friday
+A34    : Tasks done:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : of
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 18.0
+A36    : Verified by:
+E36    : Signature:
+A38    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F14 F17 F18 F19 F20 F21 F24 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Weekly FIFO Check» · protegida=True · área='Weekly FIFO Check'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Weekly FIFO Check — Expiration Control
+A2     : Week of ___/___/______ to ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Day
+F4     : ✓ Done
+G4     : Initials
+A5     :   WALK-IN COOLER 1
+A6     : 1
+B6     : Check labels and dates on all pans
+C6     : Kitchen
+D6     : Sous chef
+E6     : Monday
+A7     : 2
+B7     : Reorganize: oldest product in front
+C7     : Kitchen
+D7     : Line cook
+E7     : Monday
+A8     : 3
+B8     : Remove expired or unlabeled product
+C8     : Kitchen
+D8     : Line cook
+E8     : Monday
+A9     : 4
+B9     : Check that raw and cooked are kept separate
+C9     : Kitchen
+D9     : Sous chef
+E9     : Monday
+A11    :   WALK-IN COOLER 2
+A12    : 5
+B12    : Check labels and dates
+C12    : Kitchen
+D12    : Sous chef
+E12    : Monday
+A13    : 6
+B13    : Reorganize FIFO
+C13    : Kitchen
+D13    : Line cook
+E13    : Monday
+A14    : 7
+B14    : Remove expired product
+C14    : Kitchen
+D14    : Line cook
+E14    : Monday
+A16    :   FREEZER
+A17    : 8
+B17    : Check labels and freeze dates
+C17    : Kitchen
+D17    : Sous chef
+E17    : Monday
+A18    : 9
+B18    : Check that no product is past its freezer shelf life (see the table at the bottom of this sheet)
+C18    : Kitchen
+D18    : Sous chef
+E18    : Monday
+A19    : 10
+B19    : Check for freezer burn
+C19    : Kitchen
+D19    : Sous chef
+E19    : Monday
+A20    : 11
+B20    : Reorganize by category
+C20    : Kitchen
+D20    : Line cook
+E20    : Monday
+A22    :   DRY STORAGE
+A23    : 12
+B23    : Check expiration dates on canned and dry goods
+C23    : Kitchen
+D23    : Prep cook
+E23    : Tuesday
+A24    : 13
+B24    : Reorganize by date: oldest in front
+C24    : Kitchen
+D24    : Prep cook
+E24    : Tuesday
+A25    : 14
+B25    : Check for pests (moths, ants)
+C25    : Kitchen
+D25    : Prep cook
+E25    : Tuesday
+A26    : 15
+B26    : Check containers are sealed and dry
+C26    : Kitchen
+D26    : Prep cook
+E26    : Tuesday
+A33    : Tasks done:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : of
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 15.0
+A35    : Verified by:
+E35    : Signature:
+A37    : APPROXIMATE FREEZER SHELF LIFE AT 0 °F — adjust it to your product and your supplier
+B38    : Food group
+C38    : Freezer time
+D38    : Notes
+B39    : Oily fish and shellfish
+C39    : 2–3 months
+D39    : Fat goes rancid even when frozen: it spoils first
+B40    : Lean fish
+C40    : 4–6 months
+D40    : Whole fish keeps less time than cleaned, packaged portions
+B41    : Beef and game
+C41    : 8–12 months
+D41    : Whole cuts; steaks, half that
+B42    : Pork and lamb
+C42    : 4–6 months
+D42    : Pork fat limits shelf life
+B43    : Poultry, rabbit
+C43    : 6–9 months
+D43    : Whole; cut-up pieces, 6 months
+B44    : Ground meat, burgers and prepared items
+C44    : 2–3 months
+D44    : A lot of exposed surface: the most delicate
+B45    : Bread, dough, pastry
+C45    : 1–3 months
+D45    : Loses texture before it loses safety
+B46    : Blanched veg and fruit
+C46    : 8–12 months
+D46    : Unblanched, half that
+B47    : House stocks, sauces and broths
+C47    : 3 months
+D47    : Label with BOTH the production date AND the freeze date: the shelf life in this table counts from the freeze date
+A49    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F12 F13 F14 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Monthly Maintenance» · protegida=True · área='Monthly Maintenance'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Equipment Maintenance
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN EQUIPMENT
+A6     : 1
+B6     : General oven check: elements, door, gaskets
+C6     : Kitchen
+D6     : Tech / chef
+E6     : Monthly
+A7     : 2
+B7     : Check thermostat calibration
+C7     : Kitchen
+D7     : Tech / chef
+E7     : Monthly
+A8     : 3
+B8     : Check the exhaust hood: motor, filters, duct
+C8     : Kitchen
+D8     : Contractor
+E8     : Monthly
+A9     : 4
+B9     : Check burners and pilot lights
+C9     : Kitchen
+D9     : Chef
+E9     : Monthly
+A10    : 5
+B10    : Clean the walk-in condenser coils
+C10    : Kitchen
+D10    : Technician
+E10    : Monthly
+A11    : 6
+B11    : Check the walk-in door gaskets
+C11    : Kitchen
+D11    : Chef
+E11    : Monthly
+A12    : 7
+B12    : Descale the dish machine (monthly or quarterly, depending on water hardness)
+C12    : Kitchen
+D12    : Tech / chef
+E12    : Monthly
+A14    :   FOH & BAR
+A15    : 8
+B15    : Check furniture: tables, chairs, booths
+C15    : FOH
+D15    : Manager
+E15    : Monthly
+A16    : 9
+B16    : Check lighting: burned-out bulbs, spotlights
+C16    : FOH
+D16    : Manager
+E16    : Monthly
+A17    : 10
+B17    : Check HVAC: filters, temperature
+C17    : FOH
+D17    : Technician
+E17    : Monthly
+A18    : 11
+B18    : Check the POS and card terminal
+C18    : FOH
+D18    : Manager
+E18    : Monthly
+A20    :   SAFETY
+A21    : 12
+B21    : Monthly visual extinguisher check (OSHA 1910.157(e)(2)): gauge in the green, pin and seal intact, clear access, tag signed
+C21    : General
+D21    : Manager
+E21    : Monthly
+A22    : 13
+B22    : Check emergency exits: signs, clear access
+C22    : General
+D22    : Manager
+E22    : Monthly
+A23    : 14
+B23    : Check first aid kit: stock, expiration dates
+C23    : General
+D23    : Manager
+E23    : Monthly
+A24    : 15
+B24    : Check smoke detectors
+C24    : General
+D24    : Manager
+E24    : Monthly
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 15.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Quarterly & Annual» · protegida=True · área='Quarterly & Annual'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Quarterly & Annual Maintenance — Contracted Services
+A2     : Month: ________________   Year: ______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Report #
+D4     : Assigned to
+E4     : Frequency
+F4     : ✓ Done
+G4     : Initials
+A5     :   CONTRACTED — LICENSED COMPANY
+A6     : 1
+B6     : Pest control by a licensed operator: service visit and signed service report on file
+D6     : Pest control co.
+E6     : Monthly
+A7     : 2
+B7     : Hood and duct cleaning by a certified contractor (NFPA 96: quarterly if high volume or charbroil, semiannual if moderate)
+D7     : Hood cleaning co.
+E7     : Semiannual
+A8     : 3
+B8     : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157)
+D8     : Fire safety co.
+E8     : Annual
+A9     : 4
+B9     : Hood fire suppression system inspection every 6 months (NFPA 96); extinguisher hydrostatic tests per label
+D9     : Fire safety co.
+E9     : Semiannual
+A10    : 5
+B10    : Gas lines and appliance connections checked by a licensed pro (as often as your local code requires)
+D10    : Licensed plumber
+E10    : Annual
+A11    : 6
+B11    : Refrigeration service by an EPA 608-certified tech: coils, gaskets and refrigerant leak check
+D11    : Refrigeration tech
+E11    : Annual
+A13    :   WATER, GREASE & WASTE
+A14    : 7
+B14    : Backflow preventer test by a certified tester (most water utilities require it yearly)
+D14    : Backflow tester
+E14    : Annual
+A15    : 8
+B15    : Grease trap pumped by a licensed hauler: keep the manifest (frequency per local FOG rules)
+D15    : Grease hauler
+E15    : Quarterly
+A16    : 9
+B16    : Used cooking oil pickup by a licensed recycler: file the pickup receipts
+D16    : Oil recycler
+E16    : Quarterly
+A17    : 10
+B17    : Review the waste and recycling hauler contract and local recycling rules
+D17    : Manager
+E17    : Annual
+A19    :   ADMIN & EQUIPMENT
+A20    : 11
+B20    : Review insurance (general liability, property, liquor liability, workers' comp) and renewal dates
+D20    : Manager
+E20    : Annual
+A21    : 12
+B21    : POS check: software updates, sales tax rates and settings, user permissions
+D21    : Manager
+E21    : Annual
+A22    : 13
+B22    : Descale the coffee machine and check the water softener or resins (depending on water hardness)
+D22    : Technician
+E22    : Quarterly
+A23    : 14
+B23    : Thermometers: ice-point check (32 °F) weekly and after any drop; send the reference thermometer for certified calibration yearly
+D23    : Technician
+E23    : Annual
+A24    : 15
+B24    : Log the next service date for each contract and file the signed report
+D24    : Manager
+E24    : Quarterly
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 15.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-event-holiday-checklists.xlsx
+# docProps: title='Event & Holiday Checklists' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$39 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 06 · Event & Holiday Checklists
+B4     : How to use these templates
+B6     : ▸ Use the Pre-Event tab to plan any event
+B7     : ▸ The holiday tabs are for the key dates of the year
+B8     : ▸ Customize with the traditions and menu of your restaurant
+B10    : How the counter works
+B12    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B13    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B14    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B16    : Free rows
+B18    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B19    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B21    : Sheet protection
+B23    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B24    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B26    : Works with
+B28    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B29    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B30    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B31    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B32    : ▸ You are in 06-event-holiday-checklists.xlsx: the exceptional (events, holidays, seasons). The day-to-day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B34    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B36    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B37    : Contact: info@aichef.pro
+B39    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Event» · protegida=True · área='Pre-Event'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Pre-Event Checklist (from booking to event day)
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   WHEN THE BOOKING IS CONFIRMED
+A6     : 1
+B6     : Get guests' allergens (the 9 major allergens), intolerances and special diets IN WRITING and pass them to the kitchen
+C6     : Office
+D6     : Manager
+E6     : At booking
+A7     : 2
+B7     : Confirm in writing the price per guest and what it includes (drink, coffee, cake, extras)
+C7     : Office
+D7     : Manager
+E7     : At booking
+A8     : 3
+B8     : Collect the deposit and record the amount and date
+C8     : Office
+D8     : Manager
+E8     : At booking
+A9     : 4
+B9     : Sign the cancellation policy and the deadline for the final guest count
+C9     : Office
+D9     : Manager
+E9     : At booking
+A10    : 5
+B10    : Agree on arrival and departure times and who sets up and breaks down
+C10    : Office
+D10    : Manager
+E10    : At booking
+A12    :   48 HOURS BEFORE
+A13    : 6
+B13    : Confirm the final guest count
+C13    : Office
+D13    : Manager
+E13    : 48 h out
+A14    : 7
+B14    : Confirm the menu with the client (if private)
+C14    : Office
+D14    : Manager
+E14    : 48 h out
+A15    : 8
+B15    : Check ingredient stock for the menu
+C15    : Office
+D15    : Head chef
+E15    : 48 h out
+A16    : 9
+B16    : Place extra supplier orders
+C16    : Office
+D16    : Sous chef
+E16    : 48 h out
+A17    : 10
+B17    : Confirm extra staff if needed
+C17    : Office
+D17    : Manager
+E17    : 48 h out
+A18    : 11
+B18    : Prepare special decorations if applicable
+C18    : Office
+D18    : Manager
+E18    : 48 h out
+A20    :   24 HOURS BEFORE
+A21    : 12
+B21    : Receive and check the extra orders
+C21    : Office
+D21    : Sous chef
+E21    : 24 h out
+A22    : 13
+B22    : Start any prep that can be done ahead
+C22    : Office
+D22    : Kitchen team
+E22    : 24 h out
+A23    : 14
+B23    : Confirm table assignments and FOH layout
+C23    : Office
+D23    : FOH manager
+E23    : 24 h out
+A24    : 15
+B24    : Special pre-shift meeting, whole team
+C24    : Office
+D24    : Manager
+E24    : 24 h out
+A25    : 16
+B25    : Check there are enough plates and glassware
+C25    : Office
+D25    : FOH manager
+E25    : 24 h out
+A27    :   EVENT DAY — MORNING
+A28    : 17
+B28    : Special FOH setup per floor plan
+C28    : Event
+D28    : Servers
+E28    : Morning
+A29    : 18
+B29    : Check decorations, flowers, candles if applicable
+C29    : Event
+D29    : FOH manager
+E29    : Morning
+A30    : 19
+B30    : Complete mise en place for the event
+C30    : Event
+D30    : Kitchen team
+E30    : Morning
+A31    : 20
+B31    : Sound check if there is music or a speech
+C31    : Event
+D31    : Manager
+E31    : Morning
+A32    : 21
+B32    : Final pre-shift meeting 30 min before
+C32    : Event
+D32    : Manager
+E32    : 30 min prior
+A34    :   EVENT DAY — AFTER
+A35    : 22
+B35    : Break down the FOH when finished
+C35    : Event
+D35    : Servers
+E35    : After event
+A36    : 23
+B36    : Extra deep clean
+C36    : Event
+D36    : All staff
+E36    : After event
+A37    : 24
+B37    : Debrief the event with the team
+C37    : Event
+D37    : Manager
+E37    : After event
+A38    : 25
+B38    : Send a thank-you to the client (email/message)
+C38    : Event
+D38    : Manager
+E38    : Next day
+A45    : Tasks done:
+D45    = =COUNTIFS(B5:B43,"?*",F5:F43,"✓")   → caché 0.0
+E45    : of
+F45    = =COUNTIF(B5:B43,"?*")-COUNTIF(F5:F43,"N/A")   → caché 25.0
+A47    : Verified by:
+E47    : Signature:
+A49    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F25 F28 F29 F30 F31 F32 F35 F36 F37 F38 F39 F40 F41 F42 F43 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G43 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Valentine's Day» · protegida=True · área='Valentine''s Day'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Specific Tasks — Valentine's Day (February 14)
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   1 WEEK BEFORE
+A6     : 1
+B6     : Design a special Valentine's menu
+C6     : Office
+D6     : Head chef
+E6     : 7 days out
+A7     : 2
+B7     : Post the menu on social media and web
+C7     : Office
+D7     : Manager
+E7     : 7 days out
+A8     : 3
+B8     : Open reservations with prepayment or confirmation
+C8     : Office
+D8     : Manager
+E8     : 7 days out
+A9     : 4
+B9     : Buy themed decorations (flowers, petals, candles)
+C9     : Office
+D9     : Manager
+E9     : 5 days out
+A10    : 5
+B10    : Plan extra shifts
+C10    : Office
+D10    : Manager
+E10    : 5 days out
+A12    :   VALENTINE'S DAY
+A13    : 6
+B13    : Decorate the FOH with a romantic ambiance
+C13    : Event
+D13    : Servers
+E13    : Morning
+A14    : 7
+B14    : Prepare a welcome touch for each table (rose, chocolate)
+C14    : Event
+D14    : FOH manager
+E14    : Morning
+A15    : 8
+B15    : Prepare a welcome cocktail if on the menu
+C15    : Event
+D15    : Bartender
+E15    : Pre-shift
+A16    : 9
+B16    : Special service: relaxed pace, premium attention
+C16    : Event
+D16    : All FOH staff
+E16    : Service
+A17    : 10
+B17    : Offer a dessert with special presentation
+C17    : Event
+D17    : Pastry cook
+E17    : Service
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 10.0
+A26    : Verified by:
+E26    : Signature:
+A28    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Christmas & NYE» · protegida=True · área='Christmas & NYE'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Specific Tasks — Christmas & New Year's Eve
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   2-3 WEEKS BEFORE
+A6     : 1
+B6     : Design the holiday menu / New Year's Eve menu
+C6     : Office
+D6     : Head chef
+E6     : 15 days out
+A7     : 2
+B7     : Post the menu and open bookings
+C7     : Office
+D7     : Manager
+E7     : 15 days out
+A8     : 3
+B8     : Place special orders (prime rib, seafood, seasonal desserts)
+C8     : Office
+D8     : Sous chef
+E8     : 10 days out
+A9     : 4
+B9     : Plan shifts for the whole holiday period
+C9     : Office
+D9     : Manager
+E9     : 10 days out
+A10    : 5
+B10    : Buy holiday decorations
+C10    : Office
+D10    : Manager
+E10    : 10 days out
+A12    :   CHRISTMAS WEEK
+A13    : 6
+B13    : Set up holiday decorations in the FOH and bar
+C13    : Event
+D13    : Servers
+E13    : Monday
+A14    : 7
+B14    : Check stock for the whole week (no deliveries)
+C14    : Event
+D14    : Sous chef
+E14    : Monday
+A15    : 8
+B15    : Extra prep for the busiest days
+C15    : Event
+D15    : Kitchen team
+E15    : Tue–Wed
+A16    : 9
+B16    : Special pre-shift meeting: premium service, no rushing
+C16    : Event
+D16    : Manager
+E16    : Daily
+A17    : 10
+B17    : Extra stock of champagne / sparkling wine for New Year's Eve
+C17    : Event
+D17    : Bartender
+E17    : Dec 30
+A19    :   NEW YEAR'S EVE
+A20    : 11
+B20    : Complete mise en place before 6:00 PM
+C20    : Event
+D20    : Kitchen team
+E20    : 6:00 PM
+A21    : 12
+B21    : Decorate for the night: party favors (hats, noisemakers) and countdown
+C21    : Event
+D21    : Servers
+E21    : 7:00 PM
+A22    : 13
+B22    : Prepare the champagne midnight toast
+C22    : Event
+D22    : Bartender
+E22    : 11:30 PM
+A23    : 14
+B23    : Midnight toast for guests 21+ only (check ID); offer a non-alcoholic option
+C23    : Event
+D23    : All staff
+E23    : 12:00 AM
+A30    : Tasks done:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : of
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 14.0
+A32    : Verified by:
+E32    : Signature:
+A34    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Patio Season» · protegida=True · área='Patio Season'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Patio Season Start / End Tasks
+A2     : Event / season: ___________________    Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Lead time
+F4     : ✓ Done
+G4     : Initials
+A5     :   SEASON START
+A6     : 1
+B6     : Apply for the city's outdoor dining / sidewalk cafe permit if required
+C6     : Patio
+D6     : Manager
+E6     : 1 month out
+A7     : 2
+B7     : Check tables and chairs: repair/replace
+C7     : Patio
+D7     : Manager
+E7     : 1 week out
+A8     : 3
+B8     : Check awning/umbrellas: condition and operation
+C8     : Patio
+D8     : Manager
+E8     : 1 week out
+A9     : 4
+B9     : Prepare the patio menu if different
+C9     : Patio
+D9     : Head chef
+E9     : 1 week out
+A10    : 5
+B10    : Deep clean all patio furniture
+C10    : Patio
+D10    : Servers
+E10    : Opening day
+A11    : 6
+B11    : Check outdoor lighting
+C11    : Patio
+D11    : Manager
+E11    : Opening day
+A13    :   SEASON END
+A14    : 7
+B14    : Deep clean furniture before storing
+C14    : Patio
+D14    : Servers
+E14    : Last day
+A15    : 8
+B15    : Move the furniture into storage
+C15    : Patio
+D15    : Servers
+E15    : Last day
+A16    : 9
+B16    : Store umbrellas/awnings covered
+C16    : Patio
+D16    : Servers
+E16    : Last day
+A17    : 10
+B17    : If the patio is closed in winter, store the heaters; propane tanks disconnected and kept outdoors in a locked cage, never inside
+C17    : Patio
+D17    : Technician
+E17    : Last day
+A18    : 11
+B18    : Furniture inventory: note breakage/replacements
+C18    : Patio
+D18    : Manager
+E18    : Last day
+A25    : Tasks done:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : of
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Verified by:
+E27    : Signature:
+A29    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-blank-checklist-template.xlsx
+# docProps: title='Blank Restaurant Checklist Template (Editable)' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$52 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 07 · Blank Restaurant Checklist Template (Editable)
+B4     : What it solves
+B6     : ▸ Three master templates already structured —by time of day, by area and by role— with the sections in place and the zone or assignee preloaded: you only type your tasks.
+B7     : ▸ Type in the GREEN cells of the "Task" column, under the matching section. The counter starts at 0 and goes up as you type: it counts what is there, not a fixed number.
+B9     : How to use this template
+B11    : ▸ Copy the structure of the pre-filled templates
+B12    : ▸ Customize: add tasks, change assignees, adjust times
+B13    : ▸ You can duplicate tabs (right-click → "Move or Copy")
+B15    : Customization tips
+B17    : ▸ Group tasks by time of day (opening, service, closing)
+B18    : ▸ Always assign an owner — tasks without an owner don't get done
+B19    : ▸ Set a realistic due-by time — specific beats generic
+B20    : ▸ Review and update the lists with your team every month
+B21    : ▸ Print on US Letter and leave room for the shift manager's signature
+B23    : How the counter works
+B25    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B26    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B27    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B29    : Free rows
+B31    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B32    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B34    : Sheet protection
+B36    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B37    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B39    : Works with
+B41    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B42    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B43    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B44    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B45    : ▸ You are in 07-blank-checklist-template.xlsx: this is where you build YOUR lists when none of the others fit. Copy the structure of the one closest to what you need.
+B47    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B49    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B50    : Contact: info@aichef.pro
+B52    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «By Time of Day» · protegida=True · área='By Time of Day'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Time of Day
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   OPENING — type your opening tasks below
+A6     : 1
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A12    :   SERVICE — type your service tasks below
+A13    : 6
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+A15    : 8
+A16    : 9
+A17    : 10
+A19    :   CLOSING — type your closing tasks below
+A20    : 11
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+A22    : 13
+A23    : 14
+A24    : 15
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Area» · protegida=True · área='By Area'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Work Area
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+C6     : Kitchen
+D6     : (Assigned to)
+E6     : (Time)
+A7     : 2
+C7     : Kitchen
+A8     : 3
+C8     : Kitchen
+A9     : 4
+C9     : Kitchen
+A10    : 5
+C10    : Kitchen
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+C13    : FOH
+D13    : (Assigned to)
+E13    : (Time)
+A14    : 7
+C14    : FOH
+A15    : 8
+C15    : FOH
+A16    : 9
+C16    : FOH
+A17    : 10
+C17    : FOH
+A19    :   BAR — type your bar tasks below
+A20    : 11
+C20    : Bar
+D20    : (Assigned to)
+E20    : (Time)
+A21    : 12
+C21    : Bar
+A22    : 13
+C22    : Bar
+A23    : 14
+C23    : Bar
+A24    : 15
+C24    : Bar
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «By Role» · protegida=True · área='By Role'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Blank Template — By Role
+A2     : Date: ___/___/______    Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+A5     :   KITCHEN — type your kitchen tasks below
+A6     : 1
+D6     : Head chef
+E6     : (Time)
+A7     : 2
+D7     : Head chef
+A8     : 3
+D8     : Head chef
+A9     : 4
+D9     : Head chef
+A10    : 5
+D10    : Head chef
+A12    :   FOH — type your FOH tasks below
+A13    : 6
+D13    : FOH manager
+E13    : (Time)
+A14    : 7
+D14    : FOH manager
+A15    : 8
+D15    : FOH manager
+A16    : 9
+D16    : FOH manager
+A17    : 10
+D17    : FOH manager
+A19    :   MANAGEMENT — type your management tasks below
+A20    : 11
+D20    : GM
+E20    : (Time)
+A21    : 12
+D21    : GM
+A22    : 13
+D22    : GM
+A23    : 14
+D23    : GM
+A24    : 15
+D24    : GM
+A31    : Tasks done:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : of
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verified by:
+E33    : Signature:
+A35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-restaurant-opening-closing-checklist.xlsx
+# docProps: title='Restaurant Opening & Closing Checklist (Whole Building)' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$47 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 08 · Restaurant Opening & Closing Checklist (Whole Building)
+B4     : What it solves
+B6     : ▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day.
+B7     : ▸ The detail by area (kitchen, FOH, bar) is in 01-opening-closing-checklists-kitchen-foh-bar.xlsx: don't repeat the work, each file covers a different level.
+B9     : How to use
+B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.
+B12    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
+B14    : Editable cells
+B16    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
+B18    : How the counter works
+B20    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B21    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B22    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B24    : Free rows
+B26    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B27    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B29    : Sheet protection
+B31    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B32    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B34    : Works with
+B36    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B37    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B38    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B39    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B40    : ▸ You are in 08-restaurant-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-opening-closing-checklists-kitchen-foh-bar.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.
+B42    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B44    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B45    : Contact: info@aichef.pro
+B47    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Restaurant Opening» · protegida=True · área='Restaurant Opening'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Restaurant Opening Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : Due by
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Disarm the alarm
+C5     : Entrance
+D5     : Shift manager
+E5     : 7:00 AM
+A6     : 2
+B6     : Turn on the main lights (interior and exterior)
+C6     : General
+D6     : Shift manager
+E6     : 7:00 AM
+A7     : 3
+B7     : Turn on HVAC / heat depending on the season
+C7     : General
+D7     : Shift manager
+E7     : 7:00 AM
+A8     : 4
+B8     : Raise security gate and open front door
+C8     : Entrance
+D8     : Shift manager
+E8     : 7:00 AM
+A9     : 5
+B9     : Set up outdoor signage / menu board
+C9     : Outside
+D9     : Shift manager
+E9     : 7:00 AM
+A10    : 6
+B10    : Turn on the POS / card terminal
+C10    : Register
+D10    : Shift manager
+E10    : 7:15 AM
+A11    : 7
+B11    : Turn on the reservation system / order tablet
+C11    : Host stand
+D11    : Shift manager
+E11    : 7:15 AM
+A12    : 8
+B12    : Play background music at a suitable volume
+C12    : General
+D12    : Shift manager
+E12    : 7:15 AM
+A13    : 9
+B13    : Review today's reservations and special events
+C13    : Host stand
+D13    : Shift manager
+E13    : 7:15 AM
+A14    : 10
+B14    : Check restrooms: paper, soap, cleanliness, air freshener
+C14    : Restrooms
+D14    : Shift manager
+E14    : 7:15 AM
+A15    : 11
+B15    : Check cleanliness of common areas (entrance, hallways)
+C15    : Common areas
+D15    : Shift manager
+E15    : 7:30 AM
+A16    : 12
+B16    : Check furniture condition (chairs, tables, lighting)
+C16    : FOH
+D16    : Shift manager
+E16    : 7:30 AM
+A17    : 13
+B17    : Set up the patio if applicable (tables, chairs, umbrellas/heaters)
+C17    : Patio
+D17    : Shift manager
+E17    : 7:30 AM
+A18    : 14
+B18    : Check that menus are in order
+C18    : FOH
+D18    : Shift manager
+E18    : 7:30 AM
+A19    : 15
+B19    : Turn on displays / info screens if any
+C19    : General
+D19    : Shift manager
+E19    : 7:30 AM
+A26    : Tasks done:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : of
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Manager signature: _________________________     Completion time: ________
+A28    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Restaurant Closing» · protegida=True · área='Restaurant Closing'!$A$1:$H$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Restaurant Closing Checklist
+A2     : Date: ____/____/________
+E2     : Shift manager: _________________________
+A4     : #
+B4     : Task
+C4     : Area
+D4     : Assigned to
+E4     : When
+F4     : ✓ Done
+G4     : Initials
+H4     : Notes
+A5     : 1
+B5     : Turn off background music
+C5     : General
+D5     : Shift manager
+E5     : Close
+A6     : 2
+B6     : Make sure no guests remain in the restaurant
+C6     : FOH
+D6     : Shift manager
+E6     : Close
+A7     : 3
+B7     : Clean and bring in the patio if used
+C7     : Patio
+D7     : Shift manager
+E7     : Close
+A8     : 4
+B8     : Turn off the POS / card terminal (or leave on standby)
+C8     : Register
+D8     : Shift manager
+E8     : Close
+A9     : 5
+B9     : Close security gate and doors
+C9     : Entrance
+D9     : Shift manager
+E9     : Close
+A10    : 6
+B10    : Turn off lights (leave security lighting)
+C10    : General
+D10    : Shift manager
+E10    : Close
+A11    : 7
+B11    : Turn off HVAC
+C11    : General
+D11    : Shift manager
+E11    : Close
+A12    : 8
+B12    : Bring in the outdoor signage
+C12    : Outside
+D12    : Shift manager
+E12    : Close
+A13    : 9
+B13    : Check that windows are closed
+C13    : General
+D13    : Shift manager
+E13    : Close
+A14    : 10
+B14    : Empty trash cans in common areas and restrooms
+C14    : Restrooms
+D14    : Shift manager
+E14    : Close
+A15    : 11
+B15    : Final safety check (gas, water, outlets)
+C15    : General
+D15    : Last one out
+E15    : Close
+A16    : 12
+B16    : Set the alarm
+C16    : Entrance
+D16    : Last one out
+E16    : Close
+A17    : 13
+B17    : Lock up and verify it is locked
+C17    : Entrance
+D17    : Last one out
+E17    : Close
+A24    : Tasks done:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : of
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 13.0
+A25    : Manager signature: _________________________     Completion time: ________
+A26    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:H22 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-cash-drawer-opening-closing.xlsx
+# docProps: title='Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$57 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
+B4     : What it solves
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B8     : How to use — Cash Drawer Opening
+B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
+B12    : How to use — Cash Drawer Closing
+B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
+B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B19    : Monthly Cash Log
+B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
+B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
+B24    : Editable cells
+B26    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.
+B28    : How the counter works
+B30    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
+B31    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
+B32    : ▸ The denominator counts the tasks written in the "Task" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.
+B34    : Free rows
+B36    : ▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.
+B37    : ▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.
+B39    : Sheet protection
+B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
+B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
+B44    : Works with
+B46    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B47    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B48    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B49    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B50    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and the detail by zone in 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B52    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B54    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B55    : Contact: info@aichef.pro
+B57    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Cash Drawer Opening» · protegida=True · área='Cash Drawer Opening'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Opening Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : Due by
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Verify yesterday's starting bank
+C5     : Cashier / MOD
+D5     : 7:15 AM
+A6     : 2
+B6     : Count the opening starting bank
+C6     : Cashier / MOD
+D6     : 7:15 AM
+A7     : 3
+B7     : Write the starting bank in the green cell below
+C7     : Cashier / MOD
+D7     : 7:15 AM
+A8     : 4
+B8     : Check there is enough change (coins, small bills)
+C8     : Cashier / MOD
+D8     : 7:15 AM
+A9     : 5
+B9     : Check that the POS is on and open the register shift
+C9     : Cashier / MOD
+D9     : 7:30 AM
+A10    : 6
+B10    : Print the opening X report (start-of-day report)
+C10    : Cashier / MOD
+D10    : 7:30 AM
+A11    : 7
+B11    : Check the receipt paper roll
+C11    : Cashier / MOD
+D11    : 7:30 AM
+A12    : 8
+B12    : Check the card terminal works
+C12    : Cashier / MOD
+D12    : 7:30 AM
+A13    : 9
+B13    : Check the payment gateway connection
+C13    : Cashier / MOD
+D13    : 7:45 AM
+A14    : 10
+B14    : Note issues from the previous shift
+C14    : Cashier / MOD
+D14    : 7:45 AM
+A15    : 11
+B15    : Opening manager sign-off
+C15    : Cashier / MOD
+D15    : 7:45 AM
+A22    : Tasks done:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : of
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Starting bank (opening float)
+C23    : 0
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
+A25    : Manager signature: _________________________     Time: ________
+A26    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cash Drawer Closing» · protegida=True · área='Cash Drawer Closing'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Cash Drawer Closing Checklist
+A2     : Date: ____/____/________
+D2     : Manager: _________________________
+A4     : #
+B4     : Task
+C4     : Assigned to
+D4     : When
+E4     : ✓ Done
+F4     : Initials
+G4     : Notes
+A5     : 1
+B5     : Print the closing Z report (end-of-day report)
+C5     : Cashier / MOD
+D5     : Close
+A6     : 2
+B6     : Cash count by denomination (see table below)
+C6     : Cashier / MOD
+D6     : Close
+A7     : 3
+B7     : Calculate total cash
+C7     : Cashier / MOD
+D7     : Close
+A8     : 4
+B8     : Batch out the card terminal; note card sales WITHOUT tips
+C8     : Cashier / MOD
+D8     : Close
+A9     : 5
+B9     : Note other tenders (gift cards, house accounts) + card tips paid in cash
+C9     : Cashier / MOD
+D9     : Close
+A10    : 6
+B10    : Total collected = (cash counted − starting bank) + card sales + other
+C10    : Cashier / MOD
+D10    : Close
+A11    : 7
+B11    : Compare with the POS Z report → calculate the over/short
+C11    : Cashier / MOD
+D11    : Close
+A12    : 8
+B12    : Log the day's refunds
+C12    : Cashier / MOD
+D12    : Close
+A13    : 9
+B13    : Log the day's voids
+C13    : Cashier / MOD
+D13    : Close
+A14    : 10
+B14    : Set aside tomorrow's starting bank
+C14    : Cashier / MOD
+D14    : Close
+A15    : 11
+B15    : Prepare the bank deposit / put it in the safe
+C15    : Cashier / MOD
+D15    : Close
+A16    : 12
+B16    : Closing manager sign-off
+C16    : Cashier / MOD
+D16    : Close
+A23    : Tasks done:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : of
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Cash Count by Denomination
+A25    : Denomination
+B25    : Quantity
+C25    : Subtotal
+A26    : BILLS
+A27    : $100
+B27    : 0
+C27    = =B27*100   → caché 0.0
+A28    : $50
+B28    : 0
+C28    = =B28*50   → caché 0.0
+A29    : $20
+B29    : 0
+C29    = =B29*20   → caché 0.0
+A30    : $10
+B30    : 0
+C30    = =B30*10   → caché 0.0
+A31    : $5
+B31    : 0
+C31    = =B31*5   → caché 0.0
+A32    : $2
+B32    : 0
+C32    = =B32*2   → caché 0.0
+A33    : $1
+B33    : 0
+C33    = =B33*1   → caché 0.0
+A34    : COINS
+A35    : $1 coin
+B35    : 0
+C35    = =B35*1   → caché 0.0
+A36    : 50¢
+B36    : 0
+C36    = =B36*0.5   → caché 0.0
+A37    : 25¢
+B37    : 0
+C37    = =B37*0.25   → caché 0.0
+A38    : 10¢
+B38    : 0
+C38    = =B38*0.1   → caché 0.0
+A39    : 5¢
+B39    : 0
+C39    = =B39*0.05   → caché 0.0
+A40    : 1¢
+B40    : 0
+C40    = =B40*0.01   → caché 0.0
+A41    : 25¢ roll
+B41    : 0
+C41    = =B41*10   → caché 0.0
+A42    : 10¢ roll
+B42    : 0
+C42    = =B42*5   → caché 0.0
+A43    : TOTAL CASH
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Closing Summary
+A46    : Item
+C46    : Amount
+A47    : Total cash (count)
+C47    = =C43   → caché 0.0
+A48    : Starting bank (−)
+C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
+A49    : Net cash (counted − starting bank)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Card sales, excl. tips
+C50    : 0
+A51    : Other tenders + card tips paid in cash
+C51    : 0
+A52    : TOTAL COLLECTED
+C52    = =C49+C50+C51   → caché 0.0
+A53    : POS Z report: sales + tax, excl. tips
+C53    : 0
+A54    : OVER / SHORT
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Manager signature: _________________________     Time: ________
+A57    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Monthly Cash Log» · protegida=True · área='Monthly Cash Log'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Monthly Cash Log
+A2     : Month: ________________     Year: ________
+F2     : General manager: _________________________
+A4     : Day
+B4     : Starting Bank
+C4     : Cash Counted
+D4     : Card Sales (no tips)
+E4     : Other + Tips Paid
+F4     : Total Collected
+G4     : POS Z (+ tax, no tips)
+H4     : Over/Short
+I4     : Bank Deposit
+J4     : Closed by
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALS
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
+A38    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-pre-shift-meeting-template.xlsx
+# docProps: title='BONUS: Pre-Shift Meeting Template (Line-Up Notes)' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Pre-Shift Meeting Template (Line-Up Notes)
+B4     : How to use this template
+B6     : ▸ The FOH manager or shift manager fills this out before the pre-shift meeting
+B7     : ▸ Share it with the team at the 5-10 minute pre-shift meeting
+B8     : ▸ Print it and post it at the pass for reference during service
+B10    : Works with
+B12    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B13    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-01-pre-shift-meeting-template.xlsx: the pre-shift meeting opens the shift that you then work with 01-opening-closing-checklists-kitchen-foh-bar.xlsx and 06-event-holiday-checklists.xlsx.
+B18    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Pre-Shift Meeting» · protegida=True · área='Pre-Shift Meeting'!$A$1:$C$37 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B1     : Pre-Shift Meeting
+B2     : Date: ___/___/______    Shift: ☐ Lunch  ☐ Dinner    Shift manager: _________________________
+B4     : RESERVATIONS & OCCUPANCY
+B5     : No. of reservations:
+B6     : Expected covers:
+B7     : VIP tables / special guests:
+B8     : Parties or events:
+B9     : Estimated occupancy:
+C9     : _____ %
+B11    : SPECIALS & 86s
+B12    : Special 1:
+B13    : Special 2:
+B14    : Dessert special:
+B15    : Items OUT (86):
+B16    : Menu changes:
+B18    : ALLERGENS & SPECIAL NEEDS
+B19    : Reservations with declared allergens:
+B20    : Special diets (vegan, gluten-free...):
+B21    : Restrictions to communicate:
+B23    : SHIFT TEAM
+B24    : Kitchen staff:
+B25    : FOH staff:
+B26    : Bar staff:
+B27    : Anyone out? Coverage:
+B29    : NOTES & INCIDENTS
+B30    : Issues from the previous shift:
+B31    : Shift goals:
+B32    : Manager's message:
+B35    : Shift manager signature: _________________________
+B37    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-restaurant-holiday-calendar.xlsx
+# docProps: title='BONUS: Restaurant Holiday & Events Calendar (US)' · subject='Restaurant Checklists Kit Pro · v2.0' · keywords='restaurant opening checklist, restaurant closing checklist, restaurant cleaning checklist, AI Chef Pro' · description='aichef.pro/en/digital-products/restaurant-checklist-templates' · category='AI Chef Pro · Digital products' · creator='AI Chef Pro'
+
+=== Hoja «Instructions» · protegida=False · área='Instructions'!$A$1:$B$23 · títulos=None · paneles=None · papel=1 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+B2     : BONUS: Restaurant Holiday & Events Calendar (US)
+B4     : How to use this template
+B6     : ▸ Check the key restaurant dates month by month
+B7     : ▸ Plan ahead: special menus, decorations, stock
+B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), bank holidays and Boxing Day, in the free rows
+B10    : Works with
+B12    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
+B13    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
+B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
+B15    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
+B16    : ▸ You are in BONUS-02-restaurant-holiday-calendar.xlsx: each date in this calendar is executed with the checklists in 06-event-holiday-checklists.xlsx.
+B18    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
+B20    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
+B21    : Contact: info@aichef.pro
+B23    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restaurant-checklist-templates · info@aichef.pro
+
+=== Hoja «Holiday Calendar» · protegida=True · área='Holiday Calendar'!$A$1:$D$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Page &P of &N
+A1     : Holiday Calendar — Key Dates for Restaurants
+A2     : Year: ______    Add your local dates in the empty rows
+A4     : Month
+B4     : Date / Event
+C4     : Key Tasks
+D4     : Lead time
+A5     : January
+B5     : Jan 1 — New Year's Day
+C5     : Decide whether to open; if closed, post it on Google Business Profile and social media 1 week ahead
+D5     : 1 week
+A6     : February
+B6     : Super Bowl Sunday (2nd Sunday in Feb)
+C6     : Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff
+D6     : 2 weeks
+A7     : February
+B7     : Feb 14 — Valentine's Day
+C7     : Date-night menu, romantic decorations, extra shifts
+D7     : 2 weeks
+A8     : February–March
+B8     : Mardi Gras (varies)
+C8     : Themed menu, decorations, staff costumes
+D8     : 1 week
+A9     : March
+B9     : Mar 17 — St. Patrick's Day
+C9     : Irish and beer specials, extra bar staff, ID everyone who orders alcohol
+D9     : 2 weeks
+A10    : March–April
+B10    : Easter Sunday (varies)
+C10    : Easter brunch, specials (baked ham, lamb), expanded reservations
+D10    : 2 weeks
+A11    : March–April
+B11    : Patio opening
+C11    : Setup, permit, patio menu
+D11    : 1 month
+A12    : May–June
+B12    : Graduation season
+C12    : Prix fixe group menu, deposit and per-person price, private room (graduations, baby and bridal showers, communions)
+D12    : 1 month
+A13    : May
+B13    : May 5 — Cinco de Mayo
+C13    : Margarita and taco specials, extra bar staff
+D13    : 1 week
+A14    : May
+B14    : 2nd Sunday — Mother's Day
+C14    : Special brunch menu, expanded reservations, a small gift for the moms
+D14    : 2 weeks
+A15    : May
+B15    : Memorial Day (last Monday)
+C15    : Add staff, summer stock, patio at full capacity
+D15    : 1 month
+A16    : June
+B16    : 3rd Sunday — Father's Day
+C16    : Steak and BBQ specials, expanded reservations
+D16    : 2 weeks
+A17    : July
+B17    : Jul 4 — Independence Day
+C17    : Decide hours (many close or open daytime only), patio at full capacity, BBQ specials
+D17    : 1 week
+A18    : July–August
+B18    : Summer peak season
+C18    : Extra staff, extended hours, summer menu
+D18    : Ongoing
+A19    : September
+B19    : Labor Day (1st Monday) + back to school
+C19    : Fall menu and lunch specials for the back-to-routine crowd
+D19    : 2 weeks
+A20    : October
+B20    : Oct 31 — Halloween
+C20    : Themed decorations, special menu/cocktails
+D20    : 1 week
+A21    : November
+B21    : Thanksgiving (4th Thursday)
+C21    : Decide whether to open (Thanksgiving prix fixe or takeout orders), turkey order, shifts; the Wednesday night before is one of the biggest bar nights of the year
+D21    : 1 month
+A22    : November
+B22    : Patio closing
+C22    : Store furniture, take inventory, make repairs
+D22    : 1 week
+A23    : Nov–Dec
+B23    : Holiday gift card season
+C23    : Black Friday through Christmas Eve: gift card promotion (bonus card), display at the host stand, online sales
+D23    : 2 weeks
+A24    : December
+B24    : Holiday parties (company)
+C24    : Group menu, large reservations, extra shifts
+D24    : 1 month
+A25    : December
+B25    : Dec 24–25 — Christmas
+C25    : Decide whether to open on Christmas Day (many close). Menu, decorations, special stock
+D25    : 2 weeks
+A26    : December
+B26    : Dec 31 — New Year's Eve
+C26    : Gala or prix fixe menu, party favors (hats, noisemakers), champagne toast at midnight, night shifts
+D26    : 2 weeks
+A28    : (Your date)
+B28    : (Add here)
+C28    : (Key tasks)
+D28    : (Lead time)
+A29    : (Your date)
+B29    : (Add here)
+C29    : (Key tasks)
+D29    : (Lead time)
+A30    : (Your date)
+B30    : (Add here)
+C30    : (Key tasks)
+D30    : (Lead time)
+A31    : (Your date)
+B31    : (Add here)
+C31    : (Key tasks)
+D31    : (Lead time)
+A32    : (Your date)
+B32    : (Add here)
+C32    : (Key tasks)
+D32    : (Lead time)
+A34    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro

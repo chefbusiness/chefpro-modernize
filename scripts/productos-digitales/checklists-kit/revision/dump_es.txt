@@ -1,0 +1,4227 @@
+Volcado de 11 xlsx de /root/wt-checklists/astro-site/public/dl/kit-tareas (orden de mapas.FICHEROS)
+####################################################################################################
+# 01-apertura-cierre.xlsx
+# docProps: title='Tareas de Apertura y Cierre — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$46 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas de Apertura y Cierre — Restaurante Casual
+B4     : Cómo usar estas plantillas
+B6     : ▸ Imprime la hoja correspondiente al turno (apertura o cierre)
+B7     : ▸ El responsable del turno reparte las tareas al equipo
+B8     : ▸ Cada persona marca ✓ cuando completa su tarea y firma
+B9     : ▸ Al final del turno, el encargado verifica y firma al pie
+B10    : ▸ Archiva las hojas firmadas — demuestran control operativo
+B12    : Cómo personalizar
+B14    : ▸ Las celdas verdes son editables — cambia responsables y horarios
+B15    : ▸ Ajusta las horas límite a tus horarios reales
+B17    : Cómo cuenta el contador
+B19    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B20    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B21    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B23    : Filas libres
+B25    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B26    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B28    : Protección de la hoja
+B30    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B31    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B33    : Se conecta con
+B35    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B36    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B37    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B38    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B39    : ▸ Estás en 01-apertura-cierre.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx.
+B41    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B43    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B44    : Contacto: info@aichef.pro
+B46    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Apertura Cocina» · protegida=True · área='Apertura Cocina'!$A$1:$G$56 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Apertura — Cocina
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+A5     :   HIGIENE PERSONAL
+A6     : 1
+B6     : Uniforme y calzado de trabajo limpios, delantal cambiado y pelo recogido (gorro o redecilla)
+C6     : Cocina
+D6     : Todo el equipo
+E6     : 07:00
+A7     : 2
+B7     : Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte
+C7     : Cocina
+D7     : Todo el equipo
+E7     : 07:00
+A8     : 3
+B8     : Heridas y cortes cubiertos con apósito impermeable de color visible y guante encima
+C8     : Cocina
+D8     : Todo el equipo
+E8     : 07:00
+A9     : 4
+B9     : Lavado de manos al entrar y en cada cambio de tarea; lavamanos con jabón, papel y agua caliente
+C9     : Cocina
+D9     : Todo el equipo
+E9     : 07:00
+A10    : 5
+B10    : Declarar síntomas digestivos o respiratorios: quien los tenga no manipula alimentos
+C10    : Cocina
+D10    : Jefe de Cocina
+E10    : 07:00
+A12    :   ENCENDIDO DE EQUIPOS
+A13    : 6
+B13    : Encender la campana extractora y ventilar la cocina ANTES de encender nada más
+C13    : Cocina
+D13    : Cocinero apertura
+E13    : 07:00
+A14    : 7
+B14    : Abrir la llave general de gas y comprobar que NO huele a gas; si huele, no enciendas nada, ventila y avisa al mantenedor
+C14    : Cocina
+D14    : Cocinero apertura
+E14    : 07:00
+A15    : 8
+B15    : Encender hornos y precalentar a temperatura de trabajo
+C15    : Cocina
+D15    : Cocinero apertura
+E15    : 07:15
+A16    : 9
+B16    : Encender planchas, freidoras y salamandra
+C16    : Cocina
+D16    : Cocinero apertura
+E16    : 07:15
+A17    : 10
+B17    : Encender lavavajillas y verificar nivel de producto
+C17    : Cocina
+D17    : Auxiliar cocina
+E17    : 07:15
+A18    : 11
+B18    : Comprobar que las cámaras han funcionado toda la noche y registrar temperatura (refrigeración 0-4 °C / congelación ≤ −18 °C) — anota la lectura: ____ °C. Si hay desviación, no uses el género hasta valorarlo
+C18    : Cocina
+D18    : Cocinero apertura
+E18    : 07:00
+A20    :   CONTROL DE TEMPERATURAS
+A21    : 12
+B21    : Registrar temperatura cámara 1 (refrigeración 0-4 °C) — anota la lectura: ____ °C
+C21    : Cocina
+D21    : Cocinero apertura
+E21    : 07:00
+A22    : 13
+B22    : Registrar temperatura cámara 2 (refrigeración 0-4 °C) — anota la lectura: ____ °C
+C22    : Cocina
+D22    : Cocinero apertura
+E22    : 07:00
+A23    : 14
+B23    : Registrar temperatura congelador (congelación ≤ −18 °C) — anota la lectura: ____ °C
+C23    : Cocina
+D23    : Cocinero apertura
+E23    : 07:00
+A24    : 15
+B24    : Si tienes el Pack APPCC, registra la lectura en su hoja de temperaturas; si no, anótala aquí mismo: ____ °C
+C24    : Cocina
+D24    : Cocinero apertura
+E24    : 07:15
+A26    :   REVISIÓN DE MERCANCÍA
+A27    : 16
+B27    : Revisar caducidades en cámaras (FIFO)
+C27    : Cocina
+D27    : Sous Chef
+E27    : 08:00
+A28    : 17
+B28    : Verificar stock de productos del día
+C28    : Cocina
+D28    : Sous Chef
+E28    : 08:00
+A29    : 18
+B29    : Preparar lista de pedidos urgentes
+C29    : Cocina
+D29    : Sous Chef
+E29    : 08:30
+A30    : 19
+B30    : Recibir e inspeccionar entregas de proveedores
+C30    : Cocina
+D30    : Sous Chef
+E30    : 09:00
+A32    :   MISE EN PLACE
+A33    : 20
+B33    : Preparar mise en place de partida calientes
+C33    : Cocina
+D33    : Chef partida
+E33    : 10:00
+A34    : 21
+B34    : Preparar mise en place de partida fríos
+C34    : Cocina
+D34    : Chef partida
+E34    : 10:00
+A35    : 22
+B35    : Preparar salsas base del día
+C35    : Cocina
+D35    : Cocinero
+E35    : 10:30
+A36    : 23
+B36    : Cortar vegetales y guarniciones
+C36    : Cocina
+D36    : Auxiliar cocina
+E36    : 10:30
+A37    : 24
+B37    : Preparar postres del día
+C37    : Cocina
+D37    : Pastelero/Cocinero
+E37    : 10:30
+A38    : 25
+B38    : Montar mesa caliente / baño maría
+C38    : Cocina
+D38    : Cocinero
+E38    : 11:30
+A39    : 26
+B39    : Probar platos del día y ajustar sazón
+C39    : Cocina
+D39    : Jefe de Cocina
+E39    : 11:45
+A41    :   LIMPIEZA PRE-SERVICIO
+A42    : 27
+B42    : Limpiar superficies de trabajo
+C42    : Cocina
+D42    : Todo el equipo
+E42    : 11:30
+A43    : 28
+B43    : Verificar tablas de corte limpias por color
+C43    : Cocina
+D43    : Sous Chef
+E43    : 11:30
+A44    : 29
+B44    : Verificar trapos limpios disponibles
+C44    : Cocina
+D44    : Auxiliar cocina
+E44    : 11:30
+A45    : 30
+B45    : Gel desinfectante en dispensadores
+C45    : Cocina
+D45    : Auxiliar cocina
+E45    : 11:30
+A52    : Tareas completadas:
+D52    = =COUNTIFS(B5:B50,"?*",F5:F50,"✓")   → caché 0.0
+E52    : de
+F52    = =COUNTIF(B5:B50,"?*")-COUNTIF(F5:F50,"N/A")   → caché 30.0
+A54    : Verificado por:
+E54    : Firma:
+A56    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F42 F43 F44 F45 F46 F47 F48 F49 F50 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G50 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Apertura Sala» · protegida=True · área='Apertura Sala'!$A$1:$G$40 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Apertura — Sala y Comedor
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+A5     :   MONTAJE DE SALA
+A6     : 1
+B6     : Encender luces y climatización
+C6     : Sala
+D6     : Camarero apertura
+E6     : 11:00
+A7     : 2
+B7     : Verificar limpieza general de sala
+C7     : Sala
+D7     : Camarero apertura
+E7     : 11:00
+A8     : 3
+B8     : Montar mesas: manteles/individuales, cubiertos, vasos, servilletas
+C8     : Sala
+D8     : Camareros
+E8     : 11:30
+A9     : 4
+B9     : Colocar menús/cartas en mesas o atril
+C9     : Sala
+D9     : Camarero
+E9     : 11:30
+A10    : 5
+B10    : Verificar flores/decoración de mesas
+C10    : Sala
+D10    : Camarero
+E10    : 11:30
+A11    : 6
+B11    : Preparar estación de servicio: cubiertos extra, servilletas, salsas
+C11    : Sala
+D11    : Camarero
+E11    : 11:30
+A12    : 7
+B12    : Verificar carta de alérgenos accesible
+C12    : Sala
+D12    : Jefe de Sala
+E12    : 11:30
+A14    :   MONTAJE DE TERRAZA
+A15    : 8
+B15    : Sacar mobiliario de terraza
+C15    : Terraza
+D15    : Camareros
+E15    : 11:00
+A16    : 9
+B16    : Limpiar mesas y sillas de terraza
+C16    : Terraza
+D16    : Camarero
+E16    : 11:15
+A17    : 10
+B17    : Montar sombrillas/toldos si aplica
+C17    : Terraza
+D17    : Camarero
+E17    : 11:15
+A18    : 11
+B18    : Verificar calefactores exteriores si la terraza opera en temporada fría
+C18    : Terraza
+D18    : Camarero
+E18    : 11:15
+A19    : 12
+B19    : Colocar ceniceros y servilleteros
+C19    : Terraza
+D19    : Camarero
+E19    : 11:15
+A21    :   RESERVAS Y BRIEFING
+A22    : 13
+B22    : Revisar libro de reservas del día
+C22    : Sala
+D22    : Jefe de Sala
+E22    : 11:00
+A23    : 14
+B23    : Asignar mesas a reservas con nombre
+C23    : Sala
+D23    : Jefe de Sala
+E23    : 11:15
+A24    : 15
+B24    : Verificar eventos especiales (cumpleaños, grupos)
+C24    : Sala
+D24    : Jefe de Sala
+E24    : 11:15
+A25    : 16
+B25    : Briefing pre-servicio con equipo de sala
+C25    : Sala
+D25    : Jefe de Sala
+E25    : 11:45
+A26    : 17
+B26    : Comunicar platos del día y alérgenos al equipo
+C26    : Sala
+D26    : Jefe de Sala
+E26    : 11:45
+A27    : 18
+B27    : Comunicar VIPs y peticiones especiales
+C27    : Sala
+D27    : Jefe de Sala
+E27    : 11:45
+A29    :   SISTEMAS → ver 08-apertura-cierre-negocio.xlsx (TPV, datáfono y música del local) y 09-apertura-cierre-caja.xlsx (fondo de caja, cajón y rollo de ticket)
+A36    : Tareas completadas:
+D36    = =COUNTIFS(B5:B34,"?*",F5:F34,"✓")   → caché 0.0
+E36    : de
+F36    = =COUNTIF(B5:B34,"?*")-COUNTIF(F5:F34,"N/A")   → caché 18.0
+A38    : Verificado por:
+E38    : Firma:
+A40    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F30 F31 F32 F33 F34 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G34 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Apertura Barra» · protegida=True · área='Apertura Barra'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Apertura — Barra / Bar
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PREPARACIÓN DE BARRA
+A6     : 1
+B6     : Limpiar barra y superficies
+C6     : Barra
+D6     : Barman
+E6     : 11:00
+A7     : 2
+B7     : Verificar stock de bebidas (cervezas, vinos, licores)
+C7     : Barra
+D7     : Barman
+E7     : 11:15
+A8     : 3
+B8     : Reponer neveras de barra
+C8     : Barra
+D8     : Barman
+E8     : 11:15
+A9     : 4
+B9     : Preparar cubeta de hielo
+C9     : Barra
+D9     : Barman
+E9     : 11:15
+A10    : 5
+B10    : Cortar garnish: limón, naranja, lima, aceitunas
+C10    : Barra
+D10    : Barman
+E10    : 11:30
+A11    : 6
+B11    : Preparar zumos frescos del día
+C11    : Barra
+D11    : Barman
+E11    : 11:30
+A12    : 7
+B12    : Verificar stock de refrescos y agua
+C12    : Barra
+D12    : Barman
+E12    : 11:30
+A14    :   MÁQUINA DE CAFÉ
+A15    : 8
+B15    : Encender máquina de café y dejar calentar
+C15    : Barra
+D15    : Barman
+E15    : 10:30
+A16    : 9
+B16    : Purgar grupo de café (2 cafés al vacío)
+C16    : Barra
+D16    : Barman
+E16    : 10:45
+A17    : 10
+B17    : Verificar stock de leche (entera, desnatada, vegetal)
+C17    : Barra
+D17    : Barman
+E17    : 10:45
+A18    : 11
+B18    : Limpiar vaporizador de leche
+C18    : Barra
+D18    : Barman
+E18    : 10:45
+A19    : 12
+B19    : Verificar stock de azúcar, sacarina, estevia
+C19    : Barra
+D19    : Barman
+E19    : 10:45
+A21    :   CRISTALERÍA Y UTENSILIOS
+A22    : 13
+B22    : Verificar cristalería limpia y sin marcas
+C22    : Barra
+D22    : Barman
+E22    : 11:30
+A23    : 14
+B23    : Reponer posavasos y servilletas de barra
+C23    : Barra
+D23    : Barman
+E23    : 11:30
+A24    : 15
+B24    : Verificar coctelera, jigger, colador, muddler
+C24    : Barra
+D24    : Barman
+E24    : 11:30
+A25    : 16
+B25    : Verificar pajitas y removedores
+C25    : Barra
+D25    : Barman
+E25    : 11:30
+A32    : Tareas completadas:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : de
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 16.0
+A34    : Verificado por:
+E34    : Firma:
+A36    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre Cocina» · protegida=True · área='Cierre Cocina'!$A$1:$G$47 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Cierre — Cocina
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   CONSERVACIÓN DE PRODUCTO
+A6     : 1
+B6     : Etiquetar y fechar todas las pre-elaboraciones
+C6     : Cocina
+D6     : Cocineros
+E6     : Cierre
+A7     : 2
+B7     : Guardar mise en place en recipientes herméticos
+C7     : Cocina
+D7     : Cocineros
+E7     : Cierre
+A8     : 3
+B8     : Aplicar FIFO en cámaras: producto nuevo atrás
+C8     : Cocina
+D8     : Cocineros
+E8     : Cierre
+A9     : 4
+B9     : Retirar producto caducado o deteriorado
+C9     : Cocina
+D9     : Sous Chef
+E9     : Cierre
+A10    : 5
+B10    : Anotar las mermas del día (producto, cantidad y motivo): sin este dato el food cost mensual sale mal
+C10    : Cocina
+D10    : Sous Chef
+E10    : Cierre
+A11    : 6
+B11    : Cubrir todos los recipientes en cámaras
+C11    : Cocina
+D11    : Cocineros
+E11    : Cierre
+A12    : 7
+B12    : Registrar temperatura final cámaras y congelador (refrigeración 0-4 °C / congelación ≤ −18 °C) — anota la lectura: ____ °C
+C12    : Cocina
+D12    : Cocinero cierre
+E12    : Cierre
+A14    :   LIMPIEZA DE PARTIDAS
+A15    : 8
+B15    : Limpiar y desinfectar superficies de trabajo
+C15    : Cocina
+D15    : Todo el equipo
+E15    : Cierre
+A16    : 9
+B16    : Limpiar plancha, fogones y freidora
+C16    : Cocina
+D16    : Cocinero partida
+E16    : Cierre
+A17    : 10
+B17    : Limpiar horno y salamandra
+C17    : Cocina
+D17    : Cocinero partida
+E17    : Cierre
+A18    : 11
+B18    : Vaciar y limpiar baño maría
+C18    : Cocina
+D18    : Cocinero
+E18    : Cierre
+A19    : 12
+B19    : Limpiar tablas de corte y cuchillos
+C19    : Cocina
+D19    : Todo el equipo
+E19    : Cierre
+A20    : 13
+B20    : Lavar y guardar utensilios
+C20    : Cocina
+D20    : Auxiliar cocina
+E20    : Cierre
+A22    :   LIMPIEZA GENERAL
+A23    : 14
+B23    : Barrer suelos de cocina
+C23    : Limpieza
+D23    : Auxiliar cocina
+E23    : Cierre
+A24    : 15
+B24    : Fregar suelos de cocina
+C24    : Limpieza
+D24    : Auxiliar cocina
+E24    : Cierre
+A25    : 16
+B25    : Vaciar cubos de basura y colocar bolsas nuevas
+C25    : Limpieza
+D25    : Auxiliar cocina
+E25    : Cierre
+A26    : 17
+B26    : Sacar basura a contenedores
+C26    : Limpieza
+D26    : Auxiliar cocina
+E26    : Cierre
+A27    : 18
+B27    : Limpiar fregaderos
+C27    : Limpieza
+D27    : Auxiliar cocina
+E27    : Cierre
+A28    : 19
+B28    : Verificar trampas de grasa
+C28    : Limpieza
+D28    : Auxiliar cocina
+E28    : Cierre
+A30    :   APAGADO DE EQUIPOS
+A31    : 20
+B31    : Apagar freidoras y plancha
+C31    : Cocina
+D31    : Cocinero cierre
+E31    : Cierre
+A32    : 21
+B32    : Apagar hornos y salamandra
+C32    : Cocina
+D32    : Cocinero cierre
+E32    : Cierre
+A33    : 22
+B33    : Cerrar llaves de gas
+C33    : Cocina
+D33    : Cocinero cierre
+E33    : Cierre
+A34    : 23
+B34    : Apagar campana extractora
+C34    : Cocina
+D34    : Cocinero cierre
+E34    : Cierre
+A35    : 24
+B35    : Verificar que cámaras quedan cerradas
+C35    : Cocina
+D35    : Cocinero cierre
+E35    : Cierre
+A36    : 25
+B36    : Apagar luces de cocina
+C36    : Cocina
+D36    : Último en salir
+E36    : Cierre
+A43    : Tareas completadas:
+D43    = =COUNTIFS(B5:B41,"?*",F5:F41,"✓")   → caché 0.0
+E43    : de
+F43    = =COUNTIF(B5:B41,"?*")-COUNTIF(F5:F41,"N/A")   → caché 25.0
+A45    : Verificado por:
+E45    : Firma:
+A47    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F31 F32 F33 F34 F35 F36 F37 F38 F39 F40 F41 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G41 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre Sala» · protegida=True · área='Cierre Sala'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Cierre — Sala, Terraza y Caja
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   RECOGIDA DE SALA
+A6     : 1
+B6     : Desmontar mesas: recoger manteles, cubiertos, vasos
+C6     : Sala
+D6     : Camareros
+E6     : Cierre
+A7     : 2
+B7     : Limpiar y desinfectar mesas
+C7     : Sala
+D7     : Camareros
+E7     : Cierre
+A8     : 3
+B8     : Recoger estación de servicio
+C8     : Sala
+D8     : Camarero
+E8     : Cierre
+A9     : 4
+B9     : Reponer servilletas, cubiertos y salsas para mañana
+C9     : Sala
+D9     : Camarero
+E9     : Cierre
+A10    : 5
+B10    : Barrer y fregar suelos de sala
+C10    : Sala
+D10    : Personal limpieza
+E10    : Cierre
+A11    : 6
+B11    : Verificar baños: limpieza, jabón, papel
+C11    : Sala
+D11    : Personal limpieza
+E11    : Cierre
+A13    :   RECOGIDA DE TERRAZA
+A14    : 7
+B14    : Recoger mesas y sillas de terraza
+C14    : Terraza
+D14    : Camareros
+E14    : Cierre
+A15    : 8
+B15    : Recoger sombrillas/toldos
+C15    : Terraza
+D15    : Camarero
+E15    : Cierre
+A16    : 9
+B16    : Barrer terraza
+C16    : Terraza
+D16    : Camarero
+E16    : Cierre
+A17    : 10
+B17    : Guardar mobiliario si es necesario
+C17    : Terraza
+D17    : Camarero
+E17    : Cierre
+A19    :   CIERRE DE CAJA → ver 09-apertura-cierre-caja.xlsx: fondo, recuento por denominaciones, Z del TPV y descuadre
+A21    :   CIERRE GENERAL → ver 08-apertura-cierre-negocio.xlsx: alarma, luces, climatización, cierre y llaves
+A28    : Tareas completadas:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : de
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 10.0
+A30    : Verificado por:
+E30    : Firma:
+A32    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F20 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre Barra» · protegida=True · área='Cierre Barra'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Cierre — Barra / Bar
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   LIMPIEZA DE BARRA
+A6     : 1
+B6     : Limpiar y desinfectar superficie de barra
+C6     : Barra
+D6     : Barman
+E6     : Cierre
+A7     : 2
+B7     : Limpiar máquina de café: purgar, limpiar grupo
+C7     : Barra
+D7     : Barman
+E7     : Cierre
+A8     : 3
+B8     : Limpiar vaporizador de leche
+C8     : Barra
+D8     : Barman
+E8     : Cierre
+A9     : 4
+B9     : Lavar y guardar cristalería
+C9     : Barra
+D9     : Barman
+E9     : Cierre
+A10    : 5
+B10    : Lavar coctelera, jigger y utensilios
+C10    : Barra
+D10    : Barman
+E10    : Cierre
+A11    : 6
+B11    : Limpiar fregadero de barra
+C11    : Barra
+D11    : Barman
+E11    : Cierre
+A13    :   STOCK Y CONSERVACIÓN
+A14    : 7
+B14    : Guardar garnish sobrante en recipientes
+C14    : Barra
+D14    : Barman
+E14    : Cierre
+A15    : 8
+B15    : Verificar stock de cerveza (barriles, botellas)
+C15    : Barra
+D15    : Barman
+E15    : Cierre
+A16    : 9
+B16    : Cerrar neveras de barra
+C16    : Barra
+D16    : Barman
+E16    : Cierre
+A17    : 10
+B17    : Desechar hielo sobrante y limpiar cubeta
+C17    : Barra
+D17    : Barman
+E17    : Cierre
+A18    : 11
+B18    : Anotar productos a pedir para mañana
+C18    : Barra
+D18    : Barman
+E18    : Cierre
+A19    : 12
+B19    : Apagar máquina de café
+C19    : Barra
+D19    : Barman
+E19    : Cierre
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 12.0
+A28    : Verificado por:
+E28    : Firma:
+A30    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 02-partidas-cocina.xlsx
+# docProps: title='Tareas por Partida de Cocina — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$40 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas por Partida de Cocina — Restaurante Casual
+B4     : Cómo usar estas plantillas
+B6     : ▸ Cada pestaña corresponde a una partida o estación de cocina
+B7     : ▸ Las tareas están organizadas: antes, durante y después del servicio
+B8     : ▸ El chef de partida es responsable de completar y firmar
+B9     : ▸ Personaliza añadiendo los platos específicos de tu carta
+B11    : Cómo cuenta el contador
+B13    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B14    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B15    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B17    : Filas libres
+B19    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B20    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B22    : Protección de la hoja
+B24    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B25    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B27    : Se conecta con
+B29    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B30    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B31    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B32    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B33    : ▸ Estás en 02-partidas-cocina.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B37    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B38    : Contacto: info@aichef.pro
+B40    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Calientes» · protegida=True · área='Calientes'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Partida de Calientes — Tareas Diarias
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANTES DEL SERVICIO
+A6     : 1
+B6     : Encender y precalentar plancha, fogones, horno
+C6     : Cocina
+D6     : Chef partida
+E6     : 10:00
+A7     : 2
+B7     : Preparar fondos y salsas base
+C7     : Cocina
+D7     : Chef partida
+E7     : 10:30
+A8     : 3
+B8     : Mise en place: proteínas porcionadas y temperadas
+C8     : Cocina
+D8     : Chef partida
+E8     : 11:00
+A9     : 4
+B9     : Mise en place: guarniciones calientes listas
+C9     : Cocina
+D9     : Cocinero
+E9     : 11:00
+A10    : 5
+B10    : Verificar stock de aceite para fritura
+C10    : Cocina
+D10    : Cocinero
+E10    : 11:00
+A11    : 6
+B11    : Probar temperatura de aceite de freidora
+C11    : Cocina
+D11    : Cocinero
+E11    : 11:30
+A12    : 7
+B12    : Organizar mesa de pase con platos calientes
+C12    : Cocina
+D12    : Chef partida
+E12    : 11:30
+A13    : 8
+B13    : Probar sazón de todos los platos calientes
+C13    : Cocina
+D13    : Jefe de Cocina
+E13    : 11:45
+A15    :   DURANTE EL SERVICIO
+A16    : 9
+B16    : Mantener limpieza continua de estación
+C16    : Cocina
+D16    : Chef partida
+E16    : Servicio
+A17    : 10
+B17    : Control de tiempos de cocción por comanda
+C17    : Cocina
+D17    : Chef partida
+E17    : Servicio
+A18    : 11
+B18    : Reponer mise en place según se agote
+C18    : Cocina
+D18    : Cocinero
+E18    : Servicio
+A19    : 12
+B19    : Comunicar 86s (productos agotados) a sala
+C19    : Cocina
+D19    : Chef partida
+E19    : Servicio
+A20    : 13
+B20    : Control de temperatura de mantenimiento en caliente (≥ 65 °C) — anota la lectura: ____ °C
+C20    : Cocina
+D20    : Chef partida
+E20    : Servicio
+A22    :   DESPUÉS DEL SERVICIO
+A23    : 14
+B23    : Guardar proteínas sobrantes: etiquetar y fechar
+C23    : Cocina
+D23    : Chef partida
+E23    : Cierre
+A24    : 15
+B24    : Guardar salsas: etiquetar y fechar
+C24    : Cocina
+D24    : Cocinero
+E24    : Cierre
+A25    : 16
+B25    : Limpiar plancha con rasqueta y producto específico
+C25    : Cocina
+D25    : Chef partida
+E25    : Cierre
+A26    : 17
+B26    : Limpiar fogones y quemadores
+C26    : Cocina
+D26    : Cocinero
+E26    : Cierre
+A27    : 18
+B27    : Apagar la freidora al terminar y filtrar el aceite SÓLO por debajo de 40 °C, nunca en caliente, con guantes y recipiente estable; el aceite usado, al bidón del gestor autorizado
+C27    : Cocina
+D27    : Cocinero
+E27    : Cierre
+A28    : 19
+B28    : Limpiar mesa de pase
+C28    : Cocina
+D28    : Cocinero
+E28    : Cierre
+A29    : 20
+B29    : Anotar las mermas del turno (producto, cantidad y motivo)
+C29    : Cocina
+D29    : Chef partida
+E29    : Cierre
+A30    : 21
+B30    : Dejar partida lista para el siguiente turno
+C30    : Cocina
+D30    : Chef partida
+E30    : Cierre
+A37    : Tareas completadas:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : de
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 21.0
+A39    : Verificado por:
+E39    : Firma:
+A41    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Fríos» · protegida=True · área='Fríos'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Partida de Fríos / Ensaladas — Tareas Diarias
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   ANTES DEL SERVICIO
+A6     : 1
+B6     : Lavar y desinfectar hojas verdes y vegetales de consumo crudo con lejía apta para uso alimentario según la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable abundante
+C6     : Cocina
+D6     : Cocinero
+E6     : 10:00
+A7     : 2
+B7     : Preparar vinagretas y aliños del día
+C7     : Cocina
+D7     : Cocinero
+E7     : 10:30
+A8     : 3
+B8     : Mise en place: cortar vegetales y frutas
+C8     : Cocina
+D8     : Cocinero
+E8     : 10:30
+A9     : 4
+B9     : Preparar bases de ensalada
+C9     : Cocina
+D9     : Cocinero
+E9     : 11:00
+A10    : 5
+B10    : Pescado para consumo crudo o semicrudo (tartar, ceviche, carpaccio) — prevención de ANISAKIS: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote
+C10    : Cocina
+D10    : Chef partida
+E10    : 11:00
+A11    : 6
+B11    : Porcionar carpaccios, ceviches, tartares
+C11    : Cocina
+D11    : Chef partida
+E11    : 11:00
+A12    : 7
+B12    : Verificar stock de productos fríos en cámara
+C12    : Cocina
+D12    : Chef partida
+E12    : 11:00
+A13    : 8
+B13    : Montar estación fría con inserts organizados
+C13    : Cocina
+D13    : Chef partida
+E13    : 11:30
+A15    :   DURANTE EL SERVICIO
+A16    : 9
+B16    : Montar ensaladas y platos fríos al momento
+C16    : Cocina
+D16    : Chef partida
+E16    : Servicio
+A17    : 10
+B17    : Mantener la exposición a ≤ 4 °C para crudos de pescado y marisco; < 8 °C para vegetales y ensaladas
+C17    : Cocina
+D17    : Chef partida
+E17    : Servicio
+A18    : 11
+B18    : Reponer inserts de vegetales según se agoten
+C18    : Cocina
+D18    : Cocinero
+E18    : Servicio
+A19    : 12
+B19    : Limpiar estación entre servicios
+C19    : Cocina
+D19    : Cocinero
+E19    : Servicio
+A21    :   DESPUÉS DEL SERVICIO
+A22    : 13
+B22    : Guardar vegetales cortados: tapar y fechar
+C22    : Cocina
+D22    : Cocinero
+E22    : Cierre
+A23    : 14
+B23    : Guardar vinagretas y aliños en cámara
+C23    : Cocina
+D23    : Cocinero
+E23    : Cierre
+A24    : 15
+B24    : Desechar hojas marchitas y producto deteriorado
+C24    : Cocina
+D24    : Cocinero
+E24    : Cierre
+A25    : 16
+B25    : Limpiar y desinfectar estación fría
+C25    : Cocina
+D25    : Cocinero
+E25    : Cierre
+A26    : 17
+B26    : Limpiar tablas de corte (verde = vegetales)
+C26    : Cocina
+D26    : Cocinero
+E26    : Cierre
+A33    : Tareas completadas:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : de
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 17.0
+A35    : Verificado por:
+E35    : Firma:
+A37    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Mise en Place» · protegida=True · área='Mise en Place'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Mise en Place General
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PROTEÍNAS
+A6     : 1
+B6     : Carne roja: porcionada, temperada
+C6     : Cocina
+D6     : Chef partida
+E6     : 11:00
+A7     : 2
+B7     : Aves: porcionadas, marinadas si aplica
+C7     : Cocina
+D7     : Chef partida
+E7     : 11:00
+A8     : 3
+B8     : Pescado: limpio, porcionado, en frío
+C8     : Cocina
+D8     : Chef partida
+E8     : 11:00
+A9     : 4
+B9     : Marisco: limpio, desvenado si aplica
+C9     : Cocina
+D9     : Chef partida
+E9     : 11:00
+A10    : 5
+B10    : Pescado y marisco para consumo crudo o semicrudo — prevención de ANISAKIS: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote
+C10    : Cocina
+D10    : Chef partida
+E10    : 11:00
+A12    :   VEGETALES Y GUARNICIONES
+A13    : 6
+B13    : Patatas: peladas, cortadas, en agua
+C13    : Cocina
+D13    : Auxiliar
+E13    : 10:30
+A14    : 7
+B14    : Cebolla: brunoise, juliana, aros
+C14    : Cocina
+D14    : Auxiliar
+E14    : 10:30
+A15    : 8
+B15    : Ajo: pelado, laminado, picado
+C15    : Cocina
+D15    : Auxiliar
+E15    : 10:30
+A16    : 9
+B16    : Tomate: concassé, rodajas, gajos
+C16    : Cocina
+D16    : Auxiliar
+E16    : 10:30
+A17    : 10
+B17    : Verduras variadas según carta
+C17    : Cocina
+D17    : Auxiliar
+E17    : 10:30
+A18    : 11
+B18    : Hierbas frescas: lavadas, picadas
+C18    : Cocina
+D18    : Auxiliar
+E18    : 10:30
+A20    :   SALSAS Y BASES
+A21    : 12
+B21    : Fondo oscuro / claro: caliente y listo
+C21    : Cocina
+D21    : Cocinero
+E21    : 10:00
+A22    : 13
+B22    : Salsas del día preparadas
+C22    : Cocina
+D22    : Cocinero
+E22    : 11:00
+A23    : 14
+B23    : Vinagretas y aliños
+C23    : Cocina
+D23    : Cocinero
+E23    : 11:00
+A24    : 15
+B24    : Mayonesas y emulsiones
+C24    : Cocina
+D24    : Cocinero
+E24    : 11:00
+A26    :   POSTRES
+A27    : 16
+B27    : Postres del día emplatados o listos para emplatar
+C27    : Cocina
+D27    : Pastelero
+E27    : 11:30
+A28    : 17
+B28    : Helados temperados (pasar de −18 a −12 °C)
+C28    : Cocina
+D28    : Pastelero
+E28    : 11:30
+A29    : 18
+B29    : Salsas dulces y coulis listos
+C29    : Cocina
+D29    : Pastelero
+E29    : 11:30
+A30    : 19
+B30    : Decoración de postres preparada
+C30    : Cocina
+D30    : Pastelero
+E30    : 11:30
+A37    : Tareas completadas:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : de
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 19.0
+A39    : Verificado por:
+E39    : Firma:
+A41    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 03-tareas-manager.xlsx
+# docProps: title='Tareas del Manager / Gerente — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$45 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas del Manager / Gerente — Restaurante Casual
+B4     : Cómo usar estas plantillas
+B6     : ▸ Checklist diario: imprime uno por día laborable
+B7     : ▸ Checklist semanal: imprime uno por semana
+B8     : ▸ Checklist mensual: imprime uno por mes
+B9     : ▸ Handover: imprime para cada cambio de turno
+B11    : La semana va por DÍAS 1-5, no por lunes-viernes
+B13    : ▸ Los bloques de «Semanal Manager» están numerados por orden de la semana, no por día del calendario: muchos restaurantes cierran el lunes y ese bloque se quedaba huérfano.
+B14    : ▸ La columna «Día» viene con Día 1…Día 5 (el orden de TU semana, no el del calendario): escribe encima el día real de tu local, es una celda verde. El bloque «FIN DE SEMANA» es el de sábado y domingo, que es cuando se factura la mitad de la semana.
+B16    : Cómo cuenta el contador
+B18    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B19    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B20    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B22    : Filas libres
+B24    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B25    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B27    : Protección de la hoja
+B29    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B30    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B32    : Se conecta con
+B34    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B35    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B36    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B37    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B38    : ▸ Estás en 03-tareas-manager.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B40    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B42    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B43    : Contacto: info@aichef.pro
+B45    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Diario Manager» · protegida=True · área='Diario Manager'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Diario del Manager
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PRIMERA HORA (llegada)
+A6     : 1
+B6     : Revisar email y mensajes pendientes
+C6     : Admin
+D6     : Manager
+E6     : 09:00
+A7     : 2
+B7     : Revisar reservas del día y asignar mesas
+C7     : Admin
+D7     : Manager
+E7     : 09:00
+A8     : 3
+B8     : Verificar plantilla del día: ¿alguien ha faltado?
+C8     : Admin
+D8     : Manager
+E8     : 09:00
+A9     : 4
+B9     : Revisar incidencias del turno anterior
+C9     : Admin
+D9     : Manager
+E9     : 09:15
+A10    : 5
+B10    : Comprobar entregas de proveedores programadas
+C10    : Admin
+D10    : Manager
+E10    : 09:15
+A12    :   PRE-SERVICIO
+A13    : 6
+B13    : Recorrido de inspección: cocina, sala, baños, terraza
+C13    : Admin
+D13    : Manager
+E13    : 11:00
+A14    : 7
+B14    : Verificar limpieza general del local
+C14    : Admin
+D14    : Manager
+E14    : 11:00
+A15    : 8
+B15    : Hablar con jefe de cocina: platos del día, incidencias
+C15    : Admin
+D15    : Manager
+E15    : 11:15
+A16    : 9
+B16    : Revisar redes sociales: comentarios, reseñas nuevas
+C16    : Admin
+D16    : Manager
+E16    : 11:30
+A17    : 10
+B17    : Briefing pre-servicio con equipo de sala
+C17    : Admin
+D17    : Manager
+E17    : 11:45
+A19    :   DURANTE SERVICIO
+A20    : 11
+B20    : Estar presente en sala durante picos de servicio
+C20    : Sala
+D20    : Manager
+E20    : Servicio
+A21    : 12
+B21    : Saludar a clientes habituales / VIPs
+C21    : Sala
+D21    : Manager
+E21    : Servicio
+A22    : 13
+B22    : Gestionar reclamaciones o incidencias en sala
+C22    : Sala
+D22    : Manager
+E22    : Servicio
+A23    : 14
+B23    : Supervisar tiempos de servicio
+C23    : Sala
+D23    : Manager
+E23    : Servicio
+A25    :   POST-SERVICIO
+A26    : 15
+B26    : Revisar comentarios del servicio con jefe cocina
+C26    : Admin
+D26    : Manager
+E26    : 15:30
+A27    : 16
+B27    : Revisar ventas del mediodía en TPV
+C27    : Admin
+D27    : Manager
+E27    : 15:30
+A28    : 17
+B28    : Gestionar pedidos a proveedores para mañana
+C28    : Admin
+D28    : Manager
+E28    : 16:00
+A29    : 18
+B29    : Responder reseñas de Google / TripAdvisor
+C29    : Admin
+D29    : Manager
+E29    : 16:00
+A30    : 19
+B30    : Actualizar redes sociales si aplica
+C30    : Admin
+D30    : Manager
+E30    : 16:00
+A32    :   CIERRE DEL DÍA
+A33    : 20
+B33    : Cuadrar caja del día
+C33    : Admin
+D33    : Manager
+E33    : Cierre
+A34    : 21
+B34    : Registrar ventas totales
+C34    : Admin
+D34    : Manager
+E34    : Cierre
+A35    : 22
+B35    : Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y pausas)
+C35    : Admin
+D35    : Manager
+E35    : Cierre
+A36    : 23
+B36    : Anotar incidencias relevantes del día
+C36    : Admin
+D36    : Manager
+E36    : Cierre
+A37    : 24
+B37    : Preparar notas para el turno de mañana
+C37    : Admin
+D37    : Manager
+E37    : Cierre
+A38    : 25
+B38    : Verificar cierre completo del local
+C38    : Admin
+D38    : Manager
+E38    : Cierre
+A45    : Tareas completadas:
+D45    = =COUNTIFS(B5:B43,"?*",F5:F43,"✓")   → caché 0.0
+E45    : de
+F45    = =COUNTIF(B5:B43,"?*")-COUNTIF(F5:F43,"N/A")   → caché 25.0
+A47    : Verificado por:
+E47    : Firma:
+A49    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F26 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 F43 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G43 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Semanal Manager» · protegida=True · área='Semanal Manager'!$A$1:$G$51 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Semanal del Manager
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   DÍA 1 — PLANIFICACIÓN
+A6     : 1
+B6     : Revisar ventas de la semana anterior
+C6     : Admin
+D6     : Manager
+E6     : Día 1
+A7     : 2
+B7     : Analizar platos más y menos vendidos
+C7     : Admin
+D7     : Manager
+E7     : Día 1
+A8     : 3
+B8     : Planificar carta/menú de la semana
+C8     : Admin
+D8     : Manager
+E8     : Día 1
+A9     : 4
+B9     : Revisar y confirmar turnos de la semana
+C9     : Admin
+D9     : Manager
+E9     : Día 1
+A10    : 5
+B10    : Reunión semanal con jefe de cocina
+C10    : Admin
+D10    : Manager
+E10    : Día 1
+A12    :   DÍA 2 — PROVEEDORES
+A13    : 6
+B13    : Comparar precios de proveedores principales
+C13    : Admin
+D13    : Manager
+E13    : Día 2
+A14    : 7
+B14    : Gestionar pedidos semanales
+C14    : Admin
+D14    : Manager
+E14    : Día 2
+A15    : 8
+B15    : Negociar condiciones si hay subidas de precio
+C15    : Admin
+D15    : Manager
+E15    : Día 2
+A16    : 9
+B16    : Revisar albaranes pendientes de factura
+C16    : Admin
+D16    : Manager
+E16    : Día 2
+A18    :   DÍA 3 — EQUIPO
+A19    : 10
+B19    : Reunión breve con equipo de sala
+C19    : Admin
+D19    : Manager
+E19    : Día 3
+A20    : 11
+B20    : Evaluar rendimiento individual (informal)
+C20    : Admin
+D20    : Manager
+E20    : Día 3
+A21    : 12
+B21    : Gestionar solicitudes de vacaciones/cambios
+C21    : Admin
+D21    : Manager
+E21    : Día 3
+A22    : 13
+B22    : Revisar uniformes y presentación del equipo
+C22    : Admin
+D22    : Manager
+E22    : Día 3
+A24    :   DÍA 4 — CALIDAD
+A25    : 14
+B25    : Inspección de cámaras: orden, limpieza, FIFO
+C25    : Admin
+D25    : Manager
+E25    : Día 4
+A26    : 15
+B26    : Revisar los registros de higiene de la semana: si tienes el Pack APPCC, en sus hojas; si no, en las tuyas
+C26    : Admin
+D26    : Manager
+E26    : Día 4
+A27    : 16
+B27    : Verificar stock de productos de limpieza
+C27    : Admin
+D27    : Manager
+E27    : Día 4
+A28    : 17
+B28    : Probar 2-3 platos de la carta (control calidad)
+C28    : Admin
+D28    : Manager
+E28    : Día 4
+A30    :   DÍA 5 — MARKETING Y ADMIN
+A31    : 18
+B31    : Planificar publicaciones de redes sociales del fin de semana
+C31    : Admin
+D31    : Manager
+E31    : Día 5
+A32    : 19
+B32    : Revisar reservas del fin de semana
+C32    : Admin
+D32    : Manager
+E32    : Día 5
+A33    : 20
+B33    : Verificar stock suficiente para fin de semana
+C33    : Admin
+D33    : Manager
+E33    : Día 5
+A34    : 21
+B34    : Cerrar semana administrativa: facturas, pagos
+C34    : Admin
+D34    : Manager
+E34    : Día 5
+A36    :   FIN DE SEMANA
+A37    : 22
+B37    : Control de tiempos de espera en los picos de mediodía y de noche
+C37    : Sala
+D37    : Manager
+E37    : Sábado
+A38    : 23
+B38    : Reposición entre servicios: barra, bodega y mise en place de la noche
+C38    : General
+D38    : Encargado
+E38    : Sábado
+A39    : 24
+B39    : Cerrar las reservas del domingo y confirmar por teléfono los grupos
+C39    : Admin
+D39    : Manager
+E39    : Sábado
+A40    : 25
+B40    : Recuento del producto crítico para el lunes y pedido de urgencia si falta
+C40    : Cocina
+D40    : Sous Chef
+E40    : Domingo
+A47    : Tareas completadas:
+D47    = =COUNTIFS(B5:B45,"?*",F5:F45,"✓")   → caché 0.0
+E47    : de
+F47    = =COUNTIF(B5:B45,"?*")-COUNTIF(F5:F45,"N/A")   → caché 25.0
+A49    : Verificado por:
+E49    : Firma:
+A51    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F25 F26 F27 F28 F31 F32 F33 F34 F37 F38 F39 F40 F41 F42 F43 F44 F45 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G45 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Mensual Manager» · protegida=True · área='Mensual Manager'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Mensual del Manager
+A2     : Mes: ________________   Año: ______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cadencia
+F4     : ✓ Completada
+G4     : Firma
+A5     :   FINANZAS
+A6     : 1
+B6     : Revisar P&L del mes (ingresos vs gastos)
+C6     : Admin
+D6     : Manager
+E6     : Día 1-3
+A7     : 2
+B7     : Calcular food cost real vs objetivo
+C7     : Admin
+D7     : Manager
+E7     : Día 1-3
+A8     : 3
+B8     : Calcular labor cost real vs objetivo
+C8     : Admin
+D8     : Manager
+E8     : Día 1-3
+A9     : 4
+B9     : Revisar facturas pendientes de proveedores
+C9     : Admin
+D9     : Manager
+E9     : Día 1-3
+A10    : 5
+B10    : Analizar ticket medio y evolución
+C10    : Admin
+D10    : Manager
+E10    : Día 1-3
+A12    :   EQUIPO
+A13    : 6
+B13    : Evaluación formal de rendimiento del equipo
+C13    : Admin
+D13    : Manager
+E13    : Mensual
+A14    : 7
+B14    : Detectar necesidades de formación
+C14    : Admin
+D14    : Manager
+E14    : Mensual
+A15    : 8
+B15    : Revisar cumplimiento de horarios del mes
+C15    : Admin
+D15    : Manager
+E15    : Mensual
+A16    : 9
+B16    : Archivar los registros de jornada del mes (hay que conservarlos 4 años)
+C16    : Admin
+D16    : Manager
+E16    : Mensual
+A17    : 10
+B17    : Planificar turnos del mes siguiente
+C17    : Admin
+D17    : Manager
+E17    : Mensual
+A18    : 11
+B18    : Gestionar nóminas y variables
+C18    : Admin
+D18    : Manager
+E18    : Mensual
+A20    :   MANTENIMIENTO
+A21    : 12
+B21    : Revisión de equipos de cocina (estado general)
+C21    : Admin
+D21    : Manager
+E21    : Mensual
+A22    : 13
+B22    : Programar mantenimiento preventivo si necesario
+C22    : Admin
+D22    : Manager
+E22    : Mensual
+A23    : 14
+B23    : Revisar extintores y salidas de emergencia
+C23    : Admin
+D23    : Manager
+E23    : Mensual
+A24    : 15
+B24    : Verificar estado de mobiliario (mesas, sillas)
+C24    : Admin
+D24    : Manager
+E24    : Mensual
+A26    :   MARKETING Y ESTRATEGIA
+A27    : 16
+B27    : Analizar reseñas del mes: tendencias y puntos débiles
+C27    : Admin
+D27    : Manager
+E27    : Mensual
+A28    : 17
+B28    : Planificar promociones o eventos del mes siguiente
+C28    : Admin
+D28    : Manager
+E28    : Mensual
+A29    : 18
+B29    : Actualizar carta si hay cambios estacionales
+C29    : Admin
+D29    : Manager
+E29    : Mensual
+A30    : 19
+B30    : Revisar posicionamiento en Google Maps
+C30    : Admin
+D30    : Manager
+E30    : Mensual
+A37    : Tareas completadas:
+D37    = =COUNTIFS(B5:B35,"?*",F5:F35,"✓")   → caché 0.0
+E37    : de
+F37    = =COUNTIF(B5:B35,"?*")-COUNTIF(F5:F35,"N/A")   → caché 19.0
+A39    : Verificado por:
+E39    : Firma:
+A41    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Handover Turno» · protegida=True · área='Handover Turno'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist de Cambio de Turno (Handover)
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   TRASPASO DE INFORMACIÓN
+A6     : 1
+B6     : Incidencias del turno que sale
+C6     : General
+D6     : Encargado saliente
+E6     : Cambio
+A7     : 2
+B7     : Mesas ocupadas y estado de cada una
+C7     : General
+D7     : Encargado saliente
+E7     : Cambio
+A8     : 3
+B8     : Reservas pendientes del turno entrante
+C8     : General
+D8     : Encargado saliente
+E8     : Cambio
+A9     : 4
+B9     : Productos agotados (86s)
+C9     : General
+D9     : Encargado saliente
+E9     : Cambio
+A10    : 5
+B10    : Reclamaciones o clientes especiales
+C10    : General
+D10    : Encargado saliente
+E10    : Cambio
+A12    :   ESTADO DEL LOCAL
+A13    : 6
+B13    : Estado de limpieza: cocina, sala, baños
+C13    : General
+D13    : Encargado saliente
+E13    : Cambio
+A14    : 7
+B14    : Estado de caja: fondo correcto
+C14    : General
+D14    : Encargado saliente
+E14    : Cambio
+A15    : 8
+B15    : Pedidos pendientes de recibir
+C15    : General
+D15    : Encargado saliente
+E15    : Cambio
+A16    : 9
+B16    : Tareas pendientes no completadas
+C16    : General
+D16    : Encargado saliente
+E16    : Cambio
+A18    :   CONFIRMACIÓN TURNO ENTRANTE
+A19    : 10
+B19    : Turno entrante confirma recepción de información
+C19    : General
+D19    : Encargado entrante
+E19    : Cambio
+A20    : 11
+B20    : Recorrido rápido de verificación
+C20    : General
+D20    : Encargado entrante
+E20    : Cambio
+A21    : 12
+B21    : Firma de traspaso: ambos encargados
+C21    : General
+D21    : Ambos
+E21    : Cambio
+A28    : Tareas completadas:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : de
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 12.0
+A30    : Verificado por:
+E30    : Firma:
+A32    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 04-tareas-perfiles.xlsx
+# docProps: title='Tareas por Perfil Profesional — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$39 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas por Perfil Profesional — Restaurante Casual
+B4     : Cómo usar estas plantillas
+B6     : ▸ Cada pestaña es un perfil profesional diferente
+B7     : ▸ Entrega la hoja correspondiente a cada miembro del equipo
+B8     : ▸ Son sus responsabilidades diarias — no negociables
+B10    : Cómo cuenta el contador
+B12    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B13    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B14    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B16    : Filas libres
+B18    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B19    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B21    : Protección de la hoja
+B23    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B24    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B26    : Se conecta con
+B28    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B29    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B30    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B31    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B32    : ▸ Estás en 04-tareas-perfiles.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B34    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B36    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B37    : Contacto: info@aichef.pro
+B39    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Jefe de Cocina» · protegida=True · área='Jefe de Cocina'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Jefe de Cocina / Chef Ejecutivo
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   MAÑANA
+A6     : 1
+B6     : Verificar que todo el equipo de cocina ha llegado
+C6     : Cocina
+D6     : Jefe Cocina
+E6     : 08:00
+A7     : 2
+B7     : Revisar mise en place de todas las partidas
+C7     : Cocina
+D7     : Jefe Cocina
+E7     : 11:00
+A8     : 3
+B8     : Probar sazón de todas las elaboraciones
+C8     : Cocina
+D8     : Jefe Cocina
+E8     : 11:45
+A9     : 4
+B9     : Aprobar presentación de platos del día
+C9     : Cocina
+D9     : Jefe Cocina
+E9     : 11:45
+A10    : 5
+B10    : Comunicar platos del día y 86s a sala
+C10    : Cocina
+D10    : Jefe Cocina
+E10    : 11:45
+A11    : 6
+B11    : Supervisar recepción de mercancía
+C11    : Cocina
+D11    : Jefe Cocina
+E11    : Según entrega
+A13    :   SERVICIO
+A14    : 7
+B14    : Dirigir el pase: control de tiempos y calidad
+C14    : Cocina
+D14    : Jefe Cocina
+E14    : Servicio
+A15    : 8
+B15    : Verificar presentación de cada plato antes de salir
+C15    : Cocina
+D15    : Jefe Cocina
+E15    : Servicio
+A16    : 9
+B16    : Coordinar entre partidas
+C16    : Cocina
+D16    : Jefe Cocina
+E16    : Servicio
+A17    : 10
+B17    : Gestionar devoluciones o reclamaciones de cocina
+C17    : Cocina
+D17    : Jefe Cocina
+E17    : Servicio
+A19    :   POST-SERVICIO
+A20    : 11
+B20    : Evaluar servicio con sous chef: qué mejorar
+C20    : Cocina
+D20    : Jefe Cocina
+E20    : 15:30
+A21    : 12
+B21    : Supervisar cierre de todas las partidas
+C21    : Cocina
+D21    : Jefe Cocina
+E21    : Cierre
+A22    : 13
+B22    : Planificar carta/especiales del día siguiente
+C22    : Cocina
+D22    : Jefe Cocina
+E22    : 16:00
+A23    : 14
+B23    : Revisar pedidos a proveedores
+C23    : Cocina
+D23    : Jefe Cocina
+E23    : 16:00
+A24    : 15
+B24    : Actualizar fichas técnicas si hay cambios
+C24    : Cocina
+D24    : Jefe Cocina
+E24    : Semanal
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 15.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Sous Chef» · protegida=True · área='Sous Chef'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Sous Chef
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   MAÑANA
+A6     : 1
+B6     : Organizar equipo de cocina al llegar
+C6     : Cocina
+D6     : Sous Chef
+E6     : 08:00
+A7     : 2
+B7     : Supervisar FIFO en cámaras
+C7     : Cocina
+D7     : Sous Chef
+E7     : 08:30
+A8     : 3
+B8     : Preparar lista de pedidos urgentes
+C8     : Cocina
+D8     : Sous Chef
+E8     : 09:00
+A9     : 4
+B9     : Supervisar mise en place de todas las partidas
+C9     : Cocina
+D9     : Sous Chef
+E9     : 10:00-11:30
+A10    : 5
+B10    : Cubrir partida si falta personal
+C10    : Cocina
+D10    : Sous Chef
+E10    : Si aplica
+A12    :   SERVICIO
+A13    : 6
+B13    : Apoyar en la partida más cargada
+C13    : Cocina
+D13    : Sous Chef
+E13    : Servicio
+A14    : 7
+B14    : Cubrir al jefe de cocina en su ausencia
+C14    : Cocina
+D14    : Sous Chef
+E14    : Si aplica
+A15    : 8
+B15    : Control de calidad de platos en pase
+C15    : Cocina
+D15    : Sous Chef
+E15    : Servicio
+A17    :   POST-SERVICIO
+A18    : 9
+B18    : Supervisar limpieza y cierre de cocina
+C18    : Cocina
+D18    : Sous Chef
+E18    : Cierre
+A19    : 10
+B19    : Inventario rápido de productos críticos
+C19    : Cocina
+D19    : Sous Chef
+E19    : Cierre
+A20    : 11
+B20    : Preparar briefing para equipo del día siguiente
+C20    : Cocina
+D20    : Sous Chef
+E20    : Cierre
+A27    : Tareas completadas:
+D27    = =COUNTIFS(B5:B25,"?*",F5:F25,"✓")   → caché 0.0
+E27    : de
+F27    = =COUNTIF(B5:B25,"?*")-COUNTIF(F5:F25,"N/A")   → caché 11.0
+A29    : Verificado por:
+E29    : Firma:
+A31    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Jefe de Sala» · protegida=True · área='Jefe de Sala'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Jefe de Sala / Maître
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   MAÑANA
+A6     : 1
+B6     : Revisar libro de reservas del día
+C6     : Sala
+D6     : Jefe Sala
+E6     : 10:00
+A7     : 2
+B7     : Asignar mesas y secciones a camareros
+C7     : Sala
+D7     : Jefe Sala
+E7     : 10:30
+A8     : 3
+B8     : Verificar montaje completo de sala y terraza
+C8     : Sala
+D8     : Jefe Sala
+E8     : 11:30
+A9     : 4
+B9     : Briefing pre-servicio: platos del día, alérgenos, VIPs
+C9     : Sala
+D9     : Jefe Sala
+E9     : 11:45
+A10    : 5
+B10    : Verificar presentación del equipo (uniforme)
+C10    : Sala
+D10    : Jefe Sala
+E10    : 11:45
+A12    :   SERVICIO
+A13    : 6
+B13    : Recibir y acomodar clientes
+C13    : Sala
+D13    : Jefe Sala
+E13    : Servicio
+A14    : 7
+B14    : Supervisar tiempos de mesa
+C14    : Sala
+D14    : Jefe Sala
+E14    : Servicio
+A15    : 8
+B15    : Gestionar reclamaciones en sala
+C15    : Sala
+D15    : Jefe Sala
+E15    : Servicio
+A16    : 9
+B16    : Coordinar con cocina: tiempos, especiales, alérgenos
+C16    : Sala
+D16    : Jefe Sala
+E16    : Servicio
+A17    : 10
+B17    : Gestionar walk-ins y lista de espera
+C17    : Sala
+D17    : Jefe Sala
+E17    : Servicio
+A19    :   POST-SERVICIO
+A20    : 11
+B20    : Revisar reseñas y comentarios del día
+C20    : Sala
+D20    : Jefe Sala
+E20    : 15:30
+A21    : 12
+B21    : Evaluar servicio con equipo de sala
+C21    : Sala
+D21    : Jefe Sala
+E21    : 15:30
+A22    : 13
+B22    : Revisar reservas de mañana
+C22    : Sala
+D22    : Jefe Sala
+E22    : Cierre
+A23    : 14
+B23    : Supervisar recogida y cierre de sala
+C23    : Sala
+D23    : Jefe Sala
+E23    : Cierre
+A30    : Tareas completadas:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : de
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 14.0
+A32    : Verificado por:
+E32    : Firma:
+A34    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Camarero» · protegida=True · área='Camarero'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Camarero
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PRE-SERVICIO
+A6     : 1
+B6     : Montar mesas de tu sección
+C6     : Sala
+D6     : Camarero
+E6     : 11:00
+A7     : 2
+B7     : Verificar limpieza de tu sección
+C7     : Sala
+D7     : Camarero
+E7     : 11:15
+A8     : 3
+B8     : Preparar estación de servicio
+C8     : Sala
+D8     : Camarero
+E8     : 11:15
+A9     : 4
+B9     : Repasar carta y platos del día
+C9     : Sala
+D9     : Camarero
+E9     : 11:30
+A10    : 5
+B10    : Asistir al briefing pre-servicio
+C10    : Sala
+D10    : Camarero
+E10    : 11:45
+A12    :   SERVICIO
+A13    : 6
+B13    : Dar la bienvenida al cliente con sonrisa
+C13    : Sala
+D13    : Camarero
+E13    : Servicio
+A14    : 7
+B14    : Ofrecer carta de bebidas inmediatamente
+C14    : Sala
+D14    : Camarero
+E14    : Servicio
+A15    : 8
+B15    : Tomar comanda completa (sin volver 2 veces)
+C15    : Sala
+D15    : Camarero
+E15    : Servicio
+A16    : 9
+B16    : Preguntar por alérgenos antes de tomar comanda
+C16    : Sala
+D16    : Camarero
+E16    : Servicio
+A17    : 10
+B17    : Servir bebidas en < 3 minutos
+C17    : Sala
+D17    : Camarero
+E17    : Servicio
+A18    : 11
+B18    : Retirar platos cuando TODOS los comensales terminen
+C18    : Sala
+D18    : Camarero
+E18    : Servicio
+A19    : 12
+B19    : Ofrecer postre y café al finalizar
+C19    : Sala
+D19    : Camarero
+E19    : Servicio
+A20    : 13
+B20    : Presentar cuenta cuando la pidan (nunca antes)
+C20    : Sala
+D20    : Camarero
+E20    : Servicio
+A22    :   POST-SERVICIO
+A23    : 14
+B23    : Desmontar y limpiar mesas de tu sección
+C23    : Sala
+D23    : Camarero
+E23    : Cierre
+A24    : 15
+B24    : Reponer estación de servicio
+C24    : Sala
+D24    : Camarero
+E24    : Cierre
+A25    : 16
+B25    : Limpiar menús y cartas
+C25    : Sala
+D25    : Camarero
+E25    : Cierre
+A32    : Tareas completadas:
+D32    = =COUNTIFS(B5:B30,"?*",F5:F30,"✓")   → caché 0.0
+E32    : de
+F32    = =COUNTIF(B5:B30,"?*")-COUNTIF(F5:F30,"N/A")   → caché 16.0
+A34    : Verificado por:
+E34    : Firma:
+A36    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Barman» · protegida=True · área='Barman'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Diarias — Barman / Bartender
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   PRE-SERVICIO
+A6     : 1
+B6     : Abrir barra: limpieza, stock, hielo, garnish
+C6     : Barra
+D6     : Barman
+E6     : 10:30
+A7     : 2
+B7     : Preparar cafés de prueba (calibrar molinillo)
+C7     : Barra
+D7     : Barman
+E7     : 10:45
+A8     : 3
+B8     : Revisar vinos por copa: ¿botellas abiertas OK?
+C8     : Barra
+D8     : Barman
+E8     : 11:00
+A9     : 4
+B9     : Montar mise en place de cocktails si aplica
+C9     : Barra
+D9     : Barman
+E9     : 11:15
+A11    :   SERVICIO
+A12    : 5
+B12    : Preparar bebidas en < 2 minutos
+C12    : Barra
+D12    : Barman
+E12    : Servicio
+A13    : 6
+B13    : Mantener barra limpia y organizada siempre
+C13    : Barra
+D13    : Barman
+E13    : Servicio
+A14    : 7
+B14    : Reponer hielo, refrescos y cervezas continuamente
+C14    : Barra
+D14    : Barman
+E14    : Servicio
+A15    : 8
+B15    : Atender clientes de barra con prioridad
+C15    : Barra
+D15    : Barman
+E15    : Servicio
+A17    :   POST-SERVICIO
+A18    : 9
+B18    : Limpiar barra, fregadero y máquina de café
+C18    : Barra
+D18    : Barman
+E18    : Cierre
+A19    : 10
+B19    : Guardar garnish y productos perecederos
+C19    : Barra
+D19    : Barman
+E19    : Cierre
+A20    : 11
+B20    : Hacer inventario rápido de cerveza y licores
+C20    : Barra
+D20    : Barman
+E20    : Cierre
+A21    : 12
+B21    : Anotar pedidos necesarios para mañana
+C21    : Barra
+D21    : Barman
+E21    : Cierre
+A28    : Tareas completadas:
+D28    = =COUNTIFS(B5:B26,"?*",F5:F26,"✓")   → caché 0.0
+E28    : de
+F28    = =COUNTIF(B5:B26,"?*")-COUNTIF(F5:F26,"N/A")   → caché 12.0
+A30    : Verificado por:
+E30    : Firma:
+A32    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F12 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25 F26 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 05-tareas-semanales-mensuales.xlsx
+# docProps: title='Tareas Semanales y Mensuales — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$45 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas Semanales y Mensuales — Restaurante Casual
+B4     : Cómo usar estas plantillas
+B6     : ▸ Imprime la hoja semanal cada lunes y la mensual cada día 1
+B7     : ▸ Asigna cada tarea a un responsable con fecha límite
+B8     : ▸ Archiva las hojas firmadas junto a tus registros de higiene: si tienes el Pack APPCC, con sus hojas; si no, con los tuyos
+B10    : Trimestral, anual y vida útil en congelación
+B12    : ▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, conductos de extracción, extintores y BIE, instalación de gas, legionela, seguro y facturación.
+B13    : ▸ Anota el número de parte en la columna verde y firma cuando la empresa haya venido; la última tarea de la hoja es apuntar la fecha de la próxima revisión.
+B14    : ▸ Al pie de «FIFO Semanal» tienes una tabla editable de vida útil en congelación por familia: una regla única para todo el congelador o tira producto bueno o valida producto pasado.
+B16    : Cómo cuenta el contador
+B18    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B19    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B20    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B22    : Filas libres
+B24    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B25    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B27    : Protección de la hoja
+B29    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B30    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B32    : Se conecta con
+B34    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B35    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B36    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B37    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B38    : ▸ Estás en 05-tareas-semanales-mensuales.xlsx: lo que NO es diario (semanal, mensual, trimestral y anual). El día a día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B40    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B42    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B43    : Contacto: info@aichef.pro
+B45    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Limpieza Semanal» · protegida=True · área='Limpieza Semanal'!$A$1:$G$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Limpieza Profunda Semanal
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   COCINA — Limpieza profunda
+A6     : 1
+B6     : Limpiar interior de cámaras frigoríficas
+C6     : Limpieza
+D6     : Equipo cocina
+E6     : Lunes
+A7     : 2
+B7     : Desmontar y limpiar quemadores de fogones
+C7     : Limpieza
+D7     : Cocinero
+E7     : Martes
+A8     : 3
+B8     : Limpiar horno por dentro (pirolisis o manual)
+C8     : Limpieza
+D8     : Cocinero
+E8     : Martes
+A9     : 4
+B9     : Desmontar y limpiar filtros de campana
+C9     : Limpieza
+D9     : Auxiliar
+E9     : Miércoles
+A10    : 5
+B10    : Limpiar freidora: vaciar, desengrasante, aclarar
+C10    : Limpieza
+D10    : Cocinero
+E10    : Miércoles
+A11    : 6
+B11    : Limpiar interior de microondas y salamandra
+C11    : Limpieza
+D11    : Auxiliar
+E11    : Jueves
+A12    : 7
+B12    : Limpiar rejillas de ventilación
+C12    : Limpieza
+D12    : Auxiliar
+E12    : Jueves
+A13    : 8
+B13    : Limpiar detrás de equipos (mover si es posible)
+C13    : Limpieza
+D13    : Equipo cocina
+E13    : Viernes
+A14    : 9
+B14    : Limpiar filtros, brazos de lavado y cuba del lavavajillas
+C14    : Limpieza
+D14    : Auxiliar
+E14    : Viernes
+A16    :   SALA Y BARRA
+A17    : 10
+B17    : Limpiar cristales y espejos
+C17    : Limpieza
+D17    : Personal limpieza
+E17    : Lunes
+A18    : 11
+B18    : Limpiar sillas por debajo y patas
+C18    : Limpieza
+D18    : Camarero
+E18    : Martes
+A19    : 12
+B19    : Limpiar vitrina de barra por dentro
+C19    : Limpieza
+D19    : Barman
+E19    : Miércoles
+A20    : 13
+B20    : Limpieza química del grupo con detergente (backflush) + remojo de portafiltros, filtros y duchas
+C20    : Limpieza
+D20    : Barman
+E20    : Miércoles
+A21    : 14
+B21    : Limpiar conductos de cerveza de barril
+C21    : Limpieza
+D21    : Barman
+E21    : Viernes
+A23    :   BAÑOS Y GENERAL
+A24    : 15
+B24    : Limpieza profunda de baños (azulejos, juntas)
+C24    : Limpieza
+D24    : Personal limpieza
+E24    : Jueves
+A25    : 16
+B25    : Limpiar vestuarios del personal
+C25    : Limpieza
+D25    : Personal limpieza
+E25    : Jueves
+A26    : 17
+B26    : Limpiar terraza a fondo (suelos, macetas)
+C26    : Limpieza
+D26    : Camarero
+E26    : Sábado
+A27    : 18
+B27    : Revisar y reponer productos de limpieza
+C27    : Limpieza
+D27    : Encargado
+E27    : Viernes
+A34    : Tareas completadas:
+D34    = =COUNTIFS(B5:B32,"?*",F5:F32,"✓")   → caché 0.0
+E34    : de
+F34    = =COUNTIF(B5:B32,"?*")-COUNTIF(F5:F32,"N/A")   → caché 18.0
+A36    : Verificado por:
+E36    : Firma:
+A38    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F13 F14 F17 F18 F19 F20 F21 F24 F25 F26 F27 F28 F29 F30 F31 F32 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G32 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «FIFO Semanal» · protegida=True · área='FIFO Semanal'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Revisión FIFO Semanal — Control de Caducidades
+A2     : Semana del ___/___/______ al ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Día
+F4     : ✓ Completada
+G4     : Firma
+A5     :   CÁMARA REFRIGERACIÓN 1
+A6     : 1
+B6     : Verificar etiquetado y fechas de todas las bandejas
+C6     : Cocina
+D6     : Sous Chef
+E6     : Lunes
+A7     : 2
+B7     : Reorganizar: producto más antiguo delante
+C7     : Cocina
+D7     : Cocinero
+E7     : Lunes
+A8     : 3
+B8     : Retirar producto caducado o sin etiquetar
+C8     : Cocina
+D8     : Cocinero
+E8     : Lunes
+A9     : 4
+B9     : Verificar que crudo y cocinado están separados
+C9     : Cocina
+D9     : Sous Chef
+E9     : Lunes
+A11    :   CÁMARA REFRIGERACIÓN 2
+A12    : 5
+B12    : Verificar etiquetado y fechas
+C12    : Cocina
+D12    : Sous Chef
+E12    : Lunes
+A13    : 6
+B13    : Reorganizar FIFO
+C13    : Cocina
+D13    : Cocinero
+E13    : Lunes
+A14    : 7
+B14    : Retirar producto caducado
+C14    : Cocina
+D14    : Cocinero
+E14    : Lunes
+A16    :   CONGELADOR
+A17    : 8
+B17    : Verificar etiquetado y fechas de congelación
+C17    : Cocina
+D17    : Sous Chef
+E17    : Lunes
+A18    : 9
+B18    : Comprobar que ningún producto supera su vida útil de congelación (ver la tabla al pie de esta hoja)
+C18    : Cocina
+D18    : Sous Chef
+E18    : Lunes
+A19    : 10
+B19    : Verificar ausencia de quemaduras por frío
+C19    : Cocina
+D19    : Sous Chef
+E19    : Lunes
+A20    : 11
+B20    : Reorganizar por categoría
+C20    : Cocina
+D20    : Cocinero
+E20    : Lunes
+A22    :   ALMACÉN SECO
+A23    : 12
+B23    : Verificar caducidades de conservas y secos
+C23    : Cocina
+D23    : Auxiliar
+E23    : Martes
+A24    : 13
+B24    : Reorganizar por fecha: más antiguo delante
+C24    : Cocina
+D24    : Auxiliar
+E24    : Martes
+A25    : 14
+B25    : Verificar ausencia de plagas (polillas, hormigas)
+C25    : Cocina
+D25    : Auxiliar
+E25    : Martes
+A26    : 15
+B26    : Comprobar envases cerrados y sin humedad
+C26    : Cocina
+D26    : Auxiliar
+E26    : Martes
+A33    : Tareas completadas:
+D33    = =COUNTIFS(B5:B31,"?*",F5:F31,"✓")   → caché 0.0
+E33    : de
+F33    = =COUNTIF(B5:B31,"?*")-COUNTIF(F5:F31,"N/A")   → caché 15.0
+A35    : Verificado por:
+E35    : Firma:
+A37    : VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C — ajústala a tu producto y a tu proveedor
+B38    : Familia
+C38    : Vida útil
+D38    : Notas
+B39    : Pescado azul y marisco
+C39    : 2-3 meses
+D39    : La grasa se enrancia aunque esté congelado: es el que antes se estropea
+B40    : Pescado blanco
+C40    : 4-6 meses
+D40    : Entero aguanta menos que en porciones ya limpias y envasadas
+B41    : Carne de vacuno y caza
+C41    : 8-12 meses
+D41    : Piezas enteras; en filetes, la mitad
+B42    : Carne de cerdo y cordero
+C42    : 4-6 meses
+D42    : La grasa de cerdo limita la vida útil
+B43    : Aves y conejo
+C43    : 6-9 meses
+D43    : Enteros; troceados, 6 meses
+B44    : Carne picada, hamburguesas y elaborados
+C44    : 2-3 meses
+D44    : Mucha superficie expuesta: la más delicada
+B45    : Pan, masas y bollería
+C45    : 1-3 meses
+D45    : Pierde textura antes que seguridad
+B46    : Verdura escaldada y fruta
+C46    : 8-12 meses
+D46    : Sin escaldar previamente, la mitad
+B47    : Fondos, salsas y caldos propios
+C47    : 3 meses
+D47    : Etiquetar con fecha de producción Y de congelación: la vida útil de esta tabla se cuenta desde la de congelación
+A49    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F12 F13 F14 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Mantenimiento Mensual» · protegida=True · área='Mantenimiento Mensual'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Mantenimiento Mensual de Equipos
+A2     : Mes: ________________   Año: ______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cadencia
+F4     : ✓ Completada
+G4     : Firma
+A5     :   EQUIPOS DE COCINA
+A6     : 1
+B6     : Revisión general de horno: resistencias, puerta, juntas
+C6     : Cocina
+D6     : Técnico/Chef
+E6     : Mensual
+A7     : 2
+B7     : Verificar calibración de termostatos
+C7     : Cocina
+D7     : Técnico/Chef
+E7     : Mensual
+A8     : 3
+B8     : Revisión de campana extractora: motor, filtros, conducto
+C8     : Cocina
+D8     : Empresa externa
+E8     : Mensual
+A9     : 4
+B9     : Verificar estado de quemadores y pilotos
+C9     : Cocina
+D9     : Chef
+E9     : Mensual
+A10    : 5
+B10    : Limpiar condensador de cámaras frigoríficas
+C10    : Cocina
+D10    : Técnico
+E10    : Mensual
+A11    : 6
+B11    : Verificar juntas de puertas de cámaras
+C11    : Cocina
+D11    : Chef
+E11    : Mensual
+A12    : 7
+B12    : Descalcificar el lavavajillas (frecuencia según la dureza del agua: mensual o trimestral)
+C12    : Cocina
+D12    : Técnico/Chef
+E12    : Mensual
+A14    :   SALA Y BARRA
+A15    : 8
+B15    : Verificar estado del mobiliario: mesas, sillas, bancos
+C15    : Sala
+D15    : Manager
+E15    : Mensual
+A16    : 9
+B16    : Revisar iluminación: bombillas fundidas, focos
+C16    : Sala
+D16    : Manager
+E16    : Mensual
+A17    : 10
+B17    : Revisión de climatización: filtros, temperatura
+C17    : Sala
+D17    : Técnico
+E17    : Mensual
+A18    : 11
+B18    : Verificar estado de TPV y datáfono
+C18    : Sala
+D18    : Manager
+E18    : Mensual
+A20    :   SEGURIDAD
+A21    : 12
+B21    : Verificar extintores: carga, accesibilidad, caducidad
+C21    : General
+D21    : Manager
+E21    : Mensual
+A22    : 13
+B22    : Comprobar salidas de emergencia: señalización, acceso libre
+C22    : General
+D22    : Manager
+E22    : Mensual
+A23    : 14
+B23    : Verificar botiquín: stock completo, caducidades
+C23    : General
+D23    : Manager
+E23    : Mensual
+A24    : 15
+B24    : Comprobar detectores de humo
+C24    : General
+D24    : Manager
+E24    : Mensual
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 15.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Trimestral y Anual» · protegida=True · área='Trimestral y Anual'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Mantenimiento Trimestral y Anual — Revisiones Contratadas
+A2     : Mes: ________________   Año: ______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Nº de parte
+D4     : Responsable
+E4     : Cadencia
+F4     : ✓ Completada
+G4     : Firma
+A5     :   CONTRATADO — EMPRESA AUTORIZADA
+A6     : 1
+B6     : Control de plagas (DDD): visita de la empresa autorizada, parte firmado y certificado en vigor
+D6     : Empresa DDD
+E6     : Trimestral
+A7     : 2
+B7     : Limpieza de campana y conductos de extracción por empresa homologada
+D7     : Empresa externa
+E7     : Anual
+A8     : 3
+B8     : Revisión de extintores y BIE por empresa mantenedora (etiqueta y acta de revisión)
+D8     : Mantenedor
+E8     : Anual
+A9     : 4
+B9     : Retimbrado de extintores: prueba de presión cada 5 años desde su fabricación
+D9     : Mantenedor
+E9     : Cada 5 años
+A10    : 5
+B10    : Revisión periódica de la instalación de gas por empresa habilitada
+D10    : Instalador gas
+E10    : Cada 5 años
+A11    : 6
+B11    : Revisión de los equipos de frío por frigorista (estanqueidad y gas refrigerante)
+D11    : Frigorista
+E11    : Anual
+A13    :   AGUA, RESIDUOS Y ANALÍTICAS
+A14    : 7
+B14    : Prevención de legionela si hay torre de refrigeración, spa o agua caliente de riesgo
+D14    : Empresa autorizada
+E14    : Anual
+A15    : 8
+B15    : Analítica del agua de consumo si el local tiene depósito o captación propia
+D15    : Laboratorio
+E15    : Anual
+A16    : 9
+B16    : Retirada de aceite usado por gestor autorizado: archivar los documentos de entrega
+D16    : Gestor autorizado
+E16    : Trimestral
+A17    : 10
+B17    : Revisar el contrato de residuos y el acceso al punto limpio
+D17    : Manager
+E17    : Anual
+A19    :   ADMINISTRACIÓN Y EQUIPOS
+A20    : 11
+B20    : Revisar la póliza del local (continente, contenido y responsabilidad civil) y su vencimiento
+D20    : Manager
+E20    : Anual
+A21    : 12
+B21    : Revisión del TPV y del software de facturación (requisitos antifraude / Verifactu)
+D21    : Manager
+E21    : Anual
+A22    : 13
+B22    : Descalcificar la máquina de café y revisar el descalcificador o las resinas (según la dureza del agua)
+D22    : Técnico
+E22    : Trimestral
+A23    : 14
+B23    : Calibrar los termómetros y las sondas contra un patrón conocido
+D23    : Técnico
+E23    : Anual
+A24    : 15
+B24    : Anotar la fecha de la próxima revisión de cada contrato y archivar el parte firmado
+D24    : Manager
+E24    : Trimestral
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 15.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 06-eventos-festivos.xlsx
+# docProps: title='Tareas para Eventos y Festivos — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$39 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Tareas para Eventos y Festivos — Restaurante Casual
+B4     : Cómo usar estas plantillas
+B6     : ▸ Usa la pestaña Pre-Evento para planificar cualquier evento
+B7     : ▸ Las pestañas de festivos son para fechas señaladas del año
+B8     : ▸ Personaliza con las tradiciones y menú de tu restaurante
+B10    : Cómo cuenta el contador
+B12    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B13    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B14    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B16    : Filas libres
+B18    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B19    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B21    : Protección de la hoja
+B23    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B24    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B26    : Se conecta con
+B28    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B29    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B30    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B31    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B32    : ▸ Estás en 06-eventos-festivos.xlsx: lo excepcional (eventos, festivos, temporada). El día a día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.
+B34    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B36    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B37    : Contacto: info@aichef.pro
+B39    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Pre-Evento» · protegida=True · área='Pre-Evento'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Checklist Pre-Evento (de la reserva al día del evento)
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   AL CONFIRMAR LA RESERVA
+A6     : 1
+B6     : Recoger POR ESCRITO alérgenos, intolerancias y dietas especiales de los comensales y trasladarlos a cocina
+C6     : Admin
+D6     : Manager
+E6     : Al confirmar
+A7     : 2
+B7     : Cerrar por escrito el precio por comensal y qué incluye (bebida, café, tarta, extras)
+C7     : Admin
+D7     : Manager
+E7     : Al confirmar
+A8     : 3
+B8     : Cobrar la señal o anticipo y dejar constancia del importe y la fecha
+C8     : Admin
+D8     : Manager
+E8     : Al confirmar
+A9     : 4
+B9     : Firmar la política de cancelación y el plazo para dar el número final de comensales
+C9     : Admin
+D9     : Manager
+E9     : Al confirmar
+A10    : 5
+B10    : Acordar horario de entrada y salida del espacio y quién monta y desmonta
+C10    : Admin
+D10    : Manager
+E10    : Al confirmar
+A12    :   48 HORAS ANTES
+A13    : 6
+B13    : Confirmar número definitivo de comensales
+C13    : Admin
+D13    : Manager
+E13    : 48h antes
+A14    : 7
+B14    : Confirmar menú con cliente (si es privado)
+C14    : Admin
+D14    : Manager
+E14    : 48h antes
+A15    : 8
+B15    : Verificar stock de ingredientes para el menú
+C15    : Admin
+D15    : Jefe Cocina
+E15    : 48h antes
+A16    : 9
+B16    : Hacer pedidos extra a proveedores
+C16    : Admin
+D16    : Sous Chef
+E16    : 48h antes
+A17    : 10
+B17    : Confirmar personal extra si es necesario
+C17    : Admin
+D17    : Manager
+E17    : 48h antes
+A18    : 11
+B18    : Preparar decoración especial si aplica
+C18    : Admin
+D18    : Manager
+E18    : 48h antes
+A20    :   24 HORAS ANTES
+A21    : 12
+B21    : Recibir y verificar pedidos extra
+C21    : Admin
+D21    : Sous Chef
+E21    : 24h antes
+A22    : 13
+B22    : Iniciar pre-elaboraciones que lo permitan
+C22    : Admin
+D22    : Equipo cocina
+E22    : 24h antes
+A23    : 14
+B23    : Confirmar asignación de mesas y disposición sala
+C23    : Admin
+D23    : Jefe Sala
+E23    : 24h antes
+A24    : 15
+B24    : Briefing especial con todo el equipo
+C24    : Admin
+D24    : Manager
+E24    : 24h antes
+A25    : 16
+B25    : Verificar vajilla y cristalería suficiente
+C25    : Admin
+D25    : Jefe Sala
+E25    : 24h antes
+A27    :   DÍA DEL EVENTO — MAÑANA
+A28    : 17
+B28    : Montaje especial de sala según plano
+C28    : Evento
+D28    : Camareros
+E28    : Mañana
+A29    : 18
+B29    : Verificar decoración, flores, velas si aplica
+C29    : Evento
+D29    : Jefe Sala
+E29    : Mañana
+A30    : 19
+B30    : Mise en place completa para el evento
+C30    : Evento
+D30    : Equipo cocina
+E30    : Mañana
+A31    : 20
+B31    : Test de sonido si hay música/discurso
+C31    : Evento
+D31    : Manager
+E31    : Mañana
+A32    : 21
+B32    : Briefing final 30 min antes del evento
+C32    : Evento
+D32    : Manager
+E32    : 30 min antes
+A34    :   DÍA DEL EVENTO — POST
+A35    : 22
+B35    : Desmontaje de sala al terminar
+C35    : Evento
+D35    : Camareros
+E35    : Post-evento
+A36    : 23
+B36    : Limpieza profunda extra
+C36    : Evento
+D36    : Todo el equipo
+E36    : Post-evento
+A37    : 24
+B37    : Evaluación del evento con equipo
+C37    : Evento
+D37    : Manager
+E37    : Post-evento
+A38    : 25
+B38    : Enviar agradecimiento al cliente (email/mensaje)
+C38    : Evento
+D38    : Manager
+E38    : Día siguiente
+A45    : Tareas completadas:
+D45    = =COUNTIFS(B5:B43,"?*",F5:F43,"✓")   → caché 0.0
+E45    : de
+F45    = =COUNTIF(B5:B43,"?*")-COUNTIF(F5:F43,"N/A")   → caché 25.0
+A47    : Verificado por:
+E47    : Firma:
+A49    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F25 F28 F29 F30 F31 F32 F35 F36 F37 F38 F39 F40 F41 F42 F43 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G43 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «San Valentín» · protegida=True · área='San Valentín'!$A$1:$G$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Específicas — San Valentín (14 de Febrero)
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   1 SEMANA ANTES
+A6     : 1
+B6     : Diseñar menú especial de San Valentín
+C6     : Admin
+D6     : Jefe Cocina
+E6     : 7 días antes
+A7     : 2
+B7     : Publicar menú en redes sociales y web
+C7     : Admin
+D7     : Manager
+E7     : 7 días antes
+A8     : 3
+B8     : Abrir reservas con sistema de prepago o confirmación
+C8     : Admin
+D8     : Manager
+E8     : 7 días antes
+A9     : 4
+B9     : Comprar decoración temática (flores, pétalos, velas)
+C9     : Admin
+D9     : Manager
+E9     : 5 días antes
+A10    : 5
+B10    : Planificar turnos reforzados
+C10    : Admin
+D10    : Manager
+E10    : 5 días antes
+A12    :   DÍA DE SAN VALENTÍN
+A13    : 6
+B13    : Decorar sala con ambientación romántica
+C13    : Evento
+D13    : Camareros
+E13    : Mañana
+A14    : 7
+B14    : Preparar detalle de bienvenida por mesa (rosa, bombón)
+C14    : Evento
+D14    : Jefe Sala
+E14    : Mañana
+A15    : 8
+B15    : Preparar cocktail de bienvenida si está en menú
+C15    : Evento
+D15    : Barman
+E15    : Pre-servicio
+A16    : 9
+B16    : Servicio especial: ritmo pausado, atención premium
+C16    : Evento
+D16    : Todo equipo sala
+E16    : Servicio
+A17    : 10
+B17    : Ofrecer postre con presentación especial
+C17    : Evento
+D17    : Pastelero
+E17    : Servicio
+A24    : Tareas completadas:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : de
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 10.0
+A26    : Verificado por:
+E26    : Firma:
+A28    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G22 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Navidad» · protegida=True · área='Navidad'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas Específicas — Navidad y Nochevieja
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   2-3 SEMANAS ANTES
+A6     : 1
+B6     : Diseñar menú navideño / menú de Nochevieja
+C6     : Admin
+D6     : Jefe Cocina
+E6     : 15 días antes
+A7     : 2
+B7     : Publicar menú y abrir reservas
+C7     : Admin
+D7     : Manager
+E7     : 15 días antes
+A8     : 3
+B8     : Hacer pedidos especiales (marisco, cordero, turrón)
+C8     : Admin
+D8     : Sous Chef
+E8     : 10 días antes
+A9     : 4
+B9     : Planificar turnos de todo el periodo festivo
+C9     : Admin
+D9     : Manager
+E9     : 10 días antes
+A10    : 5
+B10    : Comprar decoración navideña
+C10    : Admin
+D10    : Manager
+E10    : 10 días antes
+A12    :   SEMANA DE NAVIDAD
+A13    : 6
+B13    : Montar decoración navideña en sala y barra
+C13    : Evento
+D13    : Camareros
+E13    : Lunes
+A14    : 7
+B14    : Verificar stock para toda la semana (sin entregas)
+C14    : Evento
+D14    : Sous Chef
+E14    : Lunes
+A15    : 8
+B15    : Pre-elaboraciones extra para los días de más volumen
+C15    : Evento
+D15    : Equipo cocina
+E15    : Martes-Miérc
+A16    : 9
+B16    : Briefing especial: servicio premium, sin prisas
+C16    : Evento
+D16    : Manager
+E16    : Cada día
+A17    : 10
+B17    : Stock extra de cava/champagne para Nochevieja
+C17    : Evento
+D17    : Barman
+E17    : 30 diciembre
+A19    :   NOCHEVIEJA
+A20    : 11
+B20    : Mise en place completa antes de las 18:00
+C20    : Evento
+D20    : Equipo cocina
+E20    : 18:00
+A21    : 12
+B21    : Decorar para la noche: cotillón, uvas, elementos especiales
+C21    : Evento
+D21    : Camareros
+E21    : 19:00
+A22    : 13
+B22    : Preparar uvas y cava para las campanadas
+C22    : Evento
+D22    : Barman
+E22    : 23:30
+A23    : 14
+B23    : Servir copa de cava a todos los clientes a medianoche
+C23    : Evento
+D23    : Todo equipo
+E23    : 00:00
+A30    : Tareas completadas:
+D30    = =COUNTIFS(B5:B28,"?*",F5:F28,"✓")   → caché 0.0
+E30    : de
+F30    = =COUNTIF(B5:B28,"?*")-COUNTIF(F5:F28,"N/A")   → caché 14.0
+A32    : Verificado por:
+E32    : Firma:
+A34    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Temporada Terraza» · protegida=True · área='Temporada Terraza'!$A$1:$G$29 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Tareas de Inicio / Fin de Temporada de Terraza
+A2     : Evento / temporada: ___________________    Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Antelación
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA DE TEMPORADA
+A6     : 1
+B6     : Solicitar licencia de terraza al Ayuntamiento si aplica
+C6     : Terraza
+D6     : Manager
+E6     : 1 mes antes
+A7     : 2
+B7     : Verificar estado de mesas y sillas: reparar/sustituir
+C7     : Terraza
+D7     : Manager
+E7     : 1 semana antes
+A8     : 3
+B8     : Verificar toldo/sombrilla: estado y funcionamiento
+C8     : Terraza
+D8     : Manager
+E8     : 1 semana antes
+A9     : 4
+B9     : Preparar carta de terraza si es diferente
+C9     : Terraza
+D9     : Jefe Cocina
+E9     : 1 semana antes
+A10    : 5
+B10    : Limpiar a fondo todo el mobiliario de terraza
+C10    : Terraza
+D10    : Camareros
+E10    : Día apertura
+A11    : 6
+B11    : Verificar iluminación exterior
+C11    : Terraza
+D11    : Manager
+E11    : Día apertura
+A13    :   CIERRE DE TEMPORADA
+A14    : 7
+B14    : Limpiar a fondo mobiliario antes de guardar
+C14    : Terraza
+D14    : Camareros
+E14    : Último día
+A15    : 8
+B15    : Guardar mobiliario en almacén
+C15    : Terraza
+D15    : Camareros
+E15    : Último día
+A16    : 9
+B16    : Guardar sombrillas/toldos protegidos
+C16    : Terraza
+D16    : Camareros
+E16    : Último día
+A17    : 10
+B17    : Desmontar y guardar los calefactores exteriores si la terraza no opera en invierno
+C17    : Terraza
+D17    : Técnico
+E17    : Último día
+A18    : 11
+B18    : Inventario de mobiliario: anotar roturas/reposiciones
+C18    : Terraza
+D18    : Manager
+E18    : Último día
+A25    : Tareas completadas:
+D25    = =COUNTIFS(B5:B23,"?*",F5:F23,"✓")   → caché 0.0
+E25    : de
+F25    = =COUNTIF(B5:B23,"?*")-COUNTIF(F5:F23,"N/A")   → caché 11.0
+A27    : Verificado por:
+E27    : Firma:
+A29    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 07-plantilla-personalizable.xlsx
+# docProps: title='Plantilla Maestra Personalizable · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$52 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Plantilla Maestra Personalizable
+B4     : Qué resuelve
+B6     : ▸ Tres plantillas maestras ya estructuradas —por franja horaria, por área y por perfil— con las secciones puestas y la zona o el responsable precargados: tú sólo escribes tus tareas.
+B7     : ▸ Escribe en las celdas VERDES de la columna «Tarea», bajo la sección que corresponda. El contador arranca en 0 y sube a medida que escribes: cuenta lo que hay, no un número fijo.
+B9     : Cómo usar esta plantilla
+B11    : ▸ Copia la estructura de las plantillas pre-rellenadas
+B12    : ▸ Personaliza: añade tareas, cambia responsables, ajusta horarios
+B13    : ▸ Puedes duplicar pestañas (click derecho → 'Mover o copiar')
+B15    : Consejos de personalización
+B17    : ▸ Agrupa las tareas por franja horaria (apertura, servicio, cierre)
+B18    : ▸ Asigna siempre un responsable — las tareas sin dueño no se hacen
+B19    : ▸ Pon hora límite realista — mejor ser específico que genérico
+B20    : ▸ Revisa y actualiza las listas cada mes con tu equipo
+B21    : ▸ Imprime en A4 y deja espacio para firma del encargado
+B23    : Cómo cuenta el contador
+B25    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B26    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B27    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B29    : Filas libres
+B31    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B32    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B34    : Protección de la hoja
+B36    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B37    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B39    : Se conecta con
+B41    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B42    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B43    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B44    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B45    : ▸ Estás en 07-plantilla-personalizable.xlsx: aquí construyes TUS listas cuando ninguna de las otras encaja. Copia la estructura de la que más se parezca.
+B47    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B49    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B50    : Contacto: info@aichef.pro
+B52    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Por Franja Horaria» · protegida=True · área='Por Franja Horaria'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla en Blanco — Por Franja Horaria
+A2     : Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   APERTURA — escribe aquí abajo tus tareas de apertura
+A6     : 1
+D6     : (Responsable)
+E6     : (Hora)
+A7     : 2
+A8     : 3
+A9     : 4
+A10    : 5
+A12    :   SERVICIO — escribe aquí abajo tus tareas de servicio
+A13    : 6
+D13    : (Responsable)
+E13    : (Hora)
+A14    : 7
+A15    : 8
+A16    : 9
+A17    : 10
+A19    :   CIERRE — escribe aquí abajo tus tareas de cierre
+A20    : 11
+D20    : (Responsable)
+E20    : (Hora)
+A21    : 12
+A22    : 13
+A23    : 14
+A24    : 15
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Por Área» · protegida=True · área='Por Área'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla en Blanco — Por Área de Trabajo
+A2     : Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   COCINA — escribe aquí abajo tus tareas de cocina
+A6     : 1
+C6     : Cocina
+D6     : (Responsable)
+E6     : (Hora)
+A7     : 2
+C7     : Cocina
+A8     : 3
+C8     : Cocina
+A9     : 4
+C9     : Cocina
+A10    : 5
+C10    : Cocina
+A12    :   SALA — escribe aquí abajo tus tareas de sala
+A13    : 6
+C13    : Sala
+D13    : (Responsable)
+E13    : (Hora)
+A14    : 7
+C14    : Sala
+A15    : 8
+C15    : Sala
+A16    : 9
+C16    : Sala
+A17    : 10
+C17    : Sala
+A19    :   BARRA — escribe aquí abajo tus tareas de barra
+A20    : 11
+C20    : Barra
+D20    : (Responsable)
+E20    : (Hora)
+A21    : 12
+C21    : Barra
+A22    : 13
+C22    : Barra
+A23    : 14
+C23    : Barra
+A24    : 15
+C24    : Barra
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Por Perfil» · protegida=True · área='Por Perfil'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Plantilla en Blanco — Por Perfil Profesional
+A2     : Fecha: ___/___/______    Responsable: _________________________
+A4     : Nº
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+A5     :   COCINA — escribe aquí abajo tus tareas de cocina
+A6     : 1
+D6     : Jefe de Cocina
+E6     : (Hora)
+A7     : 2
+D7     : Jefe de Cocina
+A8     : 3
+D8     : Jefe de Cocina
+A9     : 4
+D9     : Jefe de Cocina
+A10    : 5
+D10    : Jefe de Cocina
+A12    :   SALA — escribe aquí abajo tus tareas de sala
+A13    : 6
+D13    : Jefe de Sala
+E13    : (Hora)
+A14    : 7
+D14    : Jefe de Sala
+A15    : 8
+D15    : Jefe de Sala
+A16    : 9
+D16    : Jefe de Sala
+A17    : 10
+D17    : Jefe de Sala
+A19    :   GERENCIA — escribe aquí abajo tus tareas de gerencia
+A20    : 11
+D20    : Gerente
+E20    : (Hora)
+A21    : 12
+D21    : Gerente
+A22    : 13
+D22    : Gerente
+A23    : 14
+D23    : Gerente
+A24    : 15
+D24    : Gerente
+A31    : Tareas completadas:
+D31    = =COUNTIFS(B5:B29,"?*",F5:F29,"✓")   → caché 0.0
+E31    : de
+F31    = =COUNTIF(B5:B29,"?*")-COUNTIF(F5:F29,"N/A")   → caché 0.0
+A33    : Verificado por:
+E33    : Firma:
+A35    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 08-apertura-cierre-negocio.xlsx
+# docProps: title='Apertura y Cierre del Negocio — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$47 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre del Negocio — Restaurante Casual
+B4     : Qué resuelve
+B6     : ▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.
+B7     : ▸ El detalle por área (cocina, sala, barra) va en 01-apertura-cierre.xlsx: no repitas el trabajo, cada fichero cubre un nivel distinto.
+B9     : Cómo usar
+B11    : ▸ Imprime la hoja del turno (apertura o cierre) o úsala en tablet; el responsable reparte y cada persona firma su tarea.
+B12    : ▸ Cada tarea trae Responsable y Hora Límite precargados con el criterio del kit: ajústalos a tu horario real, son celdas verdes.
+B14    : Celdas editables
+B16    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma y Notas.
+B18    : Cómo cuenta el contador
+B20    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B21    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B22    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B24    : Filas libres
+B26    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B27    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B29    : Protección de la hoja
+B31    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B32    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B34    : Se conecta con
+B36    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B37    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B38    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B39    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B40    : ▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.
+B42    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B44    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B45    : Contacto: info@aichef.pro
+B47    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Apertura del Negocio» · protegida=True · área='Apertura del Negocio'!$A$1:$H$28 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura del Negocio — Restaurante Casual
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Hora Límite
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Desactivar alarma del local
+C5     : Acceso
+D5     : Encargado
+E5     : 07:00
+A6     : 2
+B6     : Encender luces generales (interior y exterior)
+C6     : General
+D6     : Encargado
+E6     : 07:00
+A7     : 3
+B7     : Encender climatización (HVAC) / calefacción según temporada
+C7     : General
+D7     : Encargado
+E7     : 07:00
+A8     : 4
+B8     : Abrir persianas / puerta principal
+C8     : Acceso
+D8     : Encargado
+E8     : 07:00
+A9     : 5
+B9     : Montar señalización exterior / pizarra de menú
+C9     : Exterior
+D9     : Encargado
+E9     : 07:00
+A10    : 6
+B10    : Encender TPV / POS / datáfono
+C10    : Caja
+D10    : Encargado
+E10    : 07:15
+A11    : 7
+B11    : Encender sistema de reservas / tablet de pedidos
+C11    : Recepción
+D11    : Encargado
+E11    : 07:15
+A12    : 8
+B12    : Poner música ambiente al volumen adecuado
+C12    : General
+D12    : Encargado
+E12    : 07:15
+A13    : 9
+B13    : Revisar reservas del día y eventos especiales
+C13    : Recepción
+D13    : Encargado
+E13    : 07:15
+A14    : 10
+B14    : Comprobar baños: papel, jabón, limpieza, ambientador
+C14    : Baños
+D14    : Encargado
+E14    : 07:15
+A15    : 11
+B15    : Verificar limpieza de zonas comunes (entrada, pasillos)
+C15    : Zonas comunes
+D15    : Encargado
+E15    : 07:30
+A16    : 12
+B16    : Revisar estado del mobiliario (sillas, mesas, iluminación)
+C16    : Sala
+D16    : Encargado
+E16    : 07:30
+A17    : 13
+B17    : Montar terraza si aplica (mesas, sillas, sombrillas/estufas)
+C17    : Terraza
+D17    : Encargado
+E17    : 07:30
+A18    : 14
+B18    : Comprobar que las cartas/menús están en orden
+C18    : Sala
+D18    : Encargado
+E18    : 07:30
+A19    : 15
+B19    : Encender displays / pantallas informativas si las hay
+C19    : General
+D19    : Encargado
+E19    : 07:30
+A26    : Tareas completadas:
+D26    = =COUNTIFS(B5:B24,"?*",F5:F24,"✓")   → caché 0.0
+E26    : de
+F26    = =COUNTIF(B5:B24,"?*")-COUNTIF(F5:F24,"N/A")   → caché 15.0
+A27    : Firma del responsable: _________________________     Hora de finalización: ________
+A28    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
+
+=== Hoja «Cierre del Negocio» · protegida=True · área='Cierre del Negocio'!$A$1:$H$26 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre del Negocio — Restaurante Casual
+A2     : Fecha: ____/____/________
+E2     : Responsable de turno: _________________________
+A4     : #
+B4     : Tarea
+C4     : Zona
+D4     : Responsable
+E4     : Cuándo
+F4     : ✓ Completada
+G4     : Firma
+H4     : Notas
+A5     : 1
+B5     : Apagar música ambiente
+C5     : General
+D5     : Encargado
+E5     : Cierre
+A6     : 2
+B6     : Verificar que no quedan clientes en el local
+C6     : Sala
+D6     : Encargado
+E6     : Cierre
+A7     : 3
+B7     : Limpiar y recoger terraza si aplica
+C7     : Terraza
+D7     : Encargado
+E7     : Cierre
+A8     : 4
+B8     : Apagar TPV / POS / datáfono (o dejar en standby)
+C8     : Caja
+D8     : Encargado
+E8     : Cierre
+A9     : 5
+B9     : Cerrar persianas y puertas
+C9     : Acceso
+D9     : Encargado
+E9     : Cierre
+A10    : 6
+B10    : Apagar luces (dejar mínimas de seguridad)
+C10    : General
+D10    : Encargado
+E10    : Cierre
+A11    : 7
+B11    : Apagar climatización
+C11    : General
+D11    : Encargado
+E11    : Cierre
+A12    : 8
+B12    : Recoger señalización exterior
+C12    : Exterior
+D12    : Encargado
+E12    : Cierre
+A13    : 9
+B13    : Comprobar que ventanas están cerradas
+C13    : General
+D13    : Encargado
+E13    : Cierre
+A14    : 10
+B14    : Vaciar papeleras de zonas comunes y baños
+C14    : Baños
+D14    : Encargado
+E14    : Cierre
+A15    : 11
+B15    : Revisión final de seguridad (gas, agua, enchufes)
+C15    : General
+D15    : Último en salir
+E15    : Cierre
+A16    : 12
+B16    : Activar alarma
+C16    : Acceso
+D16    : Último en salir
+E16    : Cierre
+A17    : 13
+B17    : Cerrar con llave y verificar cierre
+C17    : Acceso
+D17    : Último en salir
+E17    : Cierre
+A24    : Tareas completadas:
+D24    = =COUNTIFS(B5:B22,"?*",F5:F22,"✓")   → caché 0.0
+E24    : de
+F24    = =COUNTIF(B5:B22,"?*")-COUNTIF(F5:F22,"N/A")   → caché 13.0
+A25    : Firma del responsable: _________________________     Hora de finalización: ________
+A26    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:H22 · expression  · fórmula=['$F5="✓"'] · texto=None
+####################################################################################################
+# 09-apertura-cierre-caja.xlsx
+# docProps: title='Apertura y Cierre de Caja — Restaurante Casual · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$57 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : Apertura y Cierre de Caja — Restaurante Casual
+B4     : Qué resuelve
+B6     : ▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.
+B8     : Cómo usar — Apertura de Caja
+B10    : ▸ Cuenta el fondo y escribe el importe en la celda VERDE «Fondo de caja inicial (€)». De ahí lo lee el cierre: no hay que volver a teclearlo.
+B12    : Cómo usar — Cierre de Caja
+B14    : ▸ En «Recuento de Efectivo por Denominación» rellena SOLO la columna «Cantidad» (número de billetes o monedas, entero): el subtotal y el TOTAL EFECTIVO se calculan solos.
+B15    : ▸ En el «Resumen de Cierre» sólo escribes tres cifras: Total Tarjetas, Total Otros y la Z del TPV. Lo demás es fórmula.
+B16    : ▸ El fondo se descuenta solo: TOTAL FACTURADO = (efectivo contado − fondo) + tarjetas + otros.
+B17    : ▸ DESCUADRE = TOTAL FACTURADO − Z del TPV. Si la casilla se pone ÁMBAR, la caja no cuadra: revísalo ANTES de firmar.
+B19    : Registro Mensual
+B21    : ▸ Una fila por día: escribe fondo, ventas por medio de pago, Z del TPV y depósito; el Total Facturado y el Descuadre se calculan solos y el descuadre se pone ámbar.
+B22    : ▸ El fondo de caja es un saldo, no una venta: la fila TOTALES muestra el fondo MEDIO de los días anotados, no su suma.
+B24    : Celdas editables
+B26    : ▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma, Notas, las cantidades del recuento y los importes del resumen.
+B28    : Cómo cuenta el contador
+B30    : ▸ Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas.
+B31    : ▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.
+B32    : ▸ El denominador cuenta las tareas escritas en la columna «Tarea», no un número fijo: si añades o borras tareas, el total se ajusta solo.
+B34    : Filas libres
+B36    : ▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador: escribe ahí tus tareas propias.
+B37    : ▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.
+B39    : Protección de la hoja
+B41    : ▸ Las hojas con fórmulas van protegidas SIN contraseña: las celdas de entrada (las verdes) están desbloqueadas y los cálculos no se pisan por accidente.
+B42    : ▸ Puedes insertar y borrar filas con la protección puesta. Para cambiar la estructura: Revisar → Desproteger hoja.
+B44    : Se conecta con
+B46    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B47    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B48    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B49    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B50    : ▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08-apertura-cierre-negocio.xlsx y el detalle por zona, en 01-apertura-cierre.xlsx.
+B52    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B54    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B55    : Contacto: info@aichef.pro
+B57    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Apertura de Caja» · protegida=True · área='Apertura de Caja'!$A$1:$G$26 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Apertura de Caja — Restaurante Casual
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Hora Límite
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Verificar fondo de caja del día anterior
+C5     : Responsable de caja
+D5     : 07:15
+A6     : 2
+B6     : Contar fondo de caja inicial
+C6     : Responsable de caja
+D6     : 07:15
+A7     : 3
+B7     : Anotar el fondo de caja en la celda verde de abajo
+C7     : Responsable de caja
+D7     : 07:15
+A8     : 4
+B8     : Verificar cambio suficiente (monedas, billetes pequeños)
+C8     : Responsable de caja
+D8     : 07:15
+A9     : 5
+B9     : Comprobar que el TPV está encendido y abrir turno de caja
+C9     : Responsable de caja
+D9     : 07:30
+A10    : 6
+B10    : Imprimir X de apertura (informe de inicio)
+C10    : Responsable de caja
+D10    : 07:30
+A11    : 7
+B11    : Comprobar rollo de papel de ticket
+C11    : Responsable de caja
+D11    : 07:30
+A12    : 8
+B12    : Verificar datáfono operativo
+C12    : Responsable de caja
+D12    : 07:30
+A13    : 9
+B13    : Verificar conexión de pasarela de pago
+C13    : Responsable de caja
+D13    : 07:45
+A14    : 10
+B14    : Anotar incidencias del turno anterior
+C14    : Responsable de caja
+D14    : 07:45
+A15    : 11
+B15    : Firma del responsable de apertura
+C15    : Responsable de caja
+D15    : 07:45
+A22    : Tareas completadas:
+C22    = =COUNTIFS(B5:B20,"?*",E5:E20,"✓")   → caché 0.0
+D22    : de
+E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
+B23    : Fondo de caja inicial (€)
+C23    : 0
+D23    : Se descuenta del efectivo en el Cierre de Caja
+A25    : Firma del responsable: _________________________     Hora: ________
+A26    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+CF A5:G20 · expression  · fórmula=['$E5="✓"'] · texto=None
+
+=== Hoja «Cierre de Caja» · protegida=True · área='Cierre de Caja'!$A$1:$G$57 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Cierre de Caja — Restaurante Casual
+A2     : Fecha: ____/____/________
+D2     : Responsable: _________________________
+A4     : #
+B4     : Tarea
+C4     : Responsable
+D4     : Cuándo
+E4     : ✓ Completada
+F4     : Firma
+G4     : Notas
+A5     : 1
+B5     : Imprimir Z de cierre (informe final del día)
+C5     : Responsable de caja
+D5     : Cierre
+A6     : 2
+B6     : Recuento de efectivo por denominación (ver tabla inferior)
+C6     : Responsable de caja
+D6     : Cierre
+A7     : 3
+B7     : Calcular total efectivo
+C7     : Responsable de caja
+D7     : Cierre
+A8     : 4
+B8     : Anotar total tarjetas (Visa/Mastercard)
+C8     : Responsable de caja
+D8     : Cierre
+A9     : 5
+B9     : Anotar otros medios (Bizum, vales, invitaciones)
+C9     : Responsable de caja
+D9     : Cierre
+A10    : 6
+B10    : Total facturado = efectivo contado − fondo + tarjetas + otros
+C10    : Responsable de caja
+D10    : Cierre
+A11    : 7
+B11    : Comparar con Z del TPV → calcular diferencia/descuadre
+C11    : Responsable de caja
+D11    : Cierre
+A12    : 8
+B12    : Registrar devoluciones del día
+C12    : Responsable de caja
+D12    : Cierre
+A13    : 9
+B13    : Registrar anulaciones del día
+C13    : Responsable de caja
+D13    : Cierre
+A14    : 10
+B14    : Separar fondo de caja para mañana
+C14    : Responsable de caja
+D14    : Cierre
+A15    : 11
+B15    : Preparar depósito bancario / guardar en caja fuerte
+C15    : Responsable de caja
+D15    : Cierre
+A16    : 12
+B16    : Firma del responsable de cierre
+C16    : Responsable de caja
+D16    : Cierre
+A23    : Tareas completadas:
+C23    = =COUNTIFS(B5:B21,"?*",E5:E21,"✓")   → caché 0.0
+D23    : de
+E23    = =COUNTIF(B5:B21,"?*")-COUNTIF(E5:E21,"N/A")   → caché 12.0
+A24    : 💰 Recuento de Efectivo por Denominación
+A25    : Denominación
+B25    : Cantidad
+C25    : Subtotal (€)
+A26    : BILLETES
+A27    : 500 €
+B27    : 0
+C27    = =B27*500   → caché 0.0
+A28    : 200 €
+B28    : 0
+C28    = =B28*200   → caché 0.0
+A29    : 100 €
+B29    : 0
+C29    = =B29*100   → caché 0.0
+A30    : 50 €
+B30    : 0
+C30    = =B30*50   → caché 0.0
+A31    : 20 €
+B31    : 0
+C31    = =B31*20   → caché 0.0
+A32    : 10 €
+B32    : 0
+C32    = =B32*10   → caché 0.0
+A33    : 5 €
+B33    : 0
+C33    = =B33*5   → caché 0.0
+A34    : MONEDAS
+A35    : 2 €
+B35    : 0
+C35    = =B35*2   → caché 0.0
+A36    : 1 €
+B36    : 0
+C36    = =B36*1   → caché 0.0
+A37    : 0,50 €
+B37    : 0
+C37    = =B37*0.5   → caché 0.0
+A38    : 0,20 €
+B38    : 0
+C38    = =B38*0.2   → caché 0.0
+A39    : 0,10 €
+B39    : 0
+C39    = =B39*0.1   → caché 0.0
+A40    : 0,05 €
+B40    : 0
+C40    = =B40*0.05   → caché 0.0
+A41    : 0,02 €
+B41    : 0
+C41    = =B41*0.02   → caché 0.0
+A42    : 0,01 €
+B42    : 0
+C42    = =B42*0.01   → caché 0.0
+A43    : TOTAL EFECTIVO
+C43    = =SUM(C27:C42)   → caché 0.0
+A45    : 📊 Resumen de Cierre
+A46    : Concepto
+C46    : Importe (€)
+A47    : Total Efectivo (recuento)
+C47    = =C43   → caché 0.0
+A48    : Fondo de caja inicial (−)
+C48    = =IFERROR('Apertura de Caja'!C23,0)   → caché 0.0
+A49    : Ventas en efectivo (contado − fondo)
+C49    = =IFERROR(C47-C48,0)   → caché 0.0
+A50    : Total Tarjetas (Visa/MC)
+C50    : 0
+A51    : Total Otros (Bizum, Vales)
+C51    : 0
+A52    : TOTAL FACTURADO
+C52    = =C49+C50+C51   → caché 0.0
+A53    : Z del TPV
+C53    : 0
+A54    : DESCUADRE
+C54    = =IFERROR(C52-C53,0)   → caché 0.0
+A56    : Firma del responsable: _________________________     Hora: ________
+A57    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Marca no válida · error=Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Cantidad no válida · error=Escribe el número de billetes o monedas: un número entero y positivo, sin decimales. · promptTitle=None · prompt=None
+CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
+CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
+
+=== Hoja «Registro Mensual» · protegida=True · área='Registro Mensual'!$A$1:$J$38 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Registro Mensual de Caja — Restaurante Casual
+A2     : Mes: ________________     Año: ________
+F2     : Responsable general: _________________________
+A4     : Fecha
+B4     : Fondo Apertura
+C4     : Efectivo Contado
+D4     : Ventas Tarjeta
+E4     : Ventas Otros
+F4     : Total Facturado
+G4     : Z del TPV
+H4     : Descuadre
+I4     : Depósito
+J4     : Responsable
+A5     : 1
+B5     : 0
+C5     : 0
+D5     : 0
+E5     : 0
+F5     = =IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)   → caché 0.0
+G5     : 0
+H5     = =IFERROR(F5-G5,0)   → caché 0.0
+I5     : 0
+A6     : 2
+B6     : 0
+C6     : 0
+D6     : 0
+E6     : 0
+F6     = =IF(SUM(C6:E6)=0,0,SUM(C6:E6)-B6)   → caché 0.0
+G6     : 0
+H6     = =IFERROR(F6-G6,0)   → caché 0.0
+I6     : 0
+A7     : 3
+B7     : 0
+C7     : 0
+D7     : 0
+E7     : 0
+F7     = =IF(SUM(C7:E7)=0,0,SUM(C7:E7)-B7)   → caché 0.0
+G7     : 0
+H7     = =IFERROR(F7-G7,0)   → caché 0.0
+I7     : 0
+A8     : 4
+B8     : 0
+C8     : 0
+D8     : 0
+E8     : 0
+F8     = =IF(SUM(C8:E8)=0,0,SUM(C8:E8)-B8)   → caché 0.0
+G8     : 0
+H8     = =IFERROR(F8-G8,0)   → caché 0.0
+I8     : 0
+A9     : 5
+B9     : 0
+C9     : 0
+D9     : 0
+E9     : 0
+F9     = =IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)   → caché 0.0
+G9     : 0
+H9     = =IFERROR(F9-G9,0)   → caché 0.0
+I9     : 0
+A10    : 6
+B10    : 0
+C10    : 0
+D10    : 0
+E10    : 0
+F10    = =IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)   → caché 0.0
+G10    : 0
+H10    = =IFERROR(F10-G10,0)   → caché 0.0
+I10    : 0
+A11    : 7
+B11    : 0
+C11    : 0
+D11    : 0
+E11    : 0
+F11    = =IF(SUM(C11:E11)=0,0,SUM(C11:E11)-B11)   → caché 0.0
+G11    : 0
+H11    = =IFERROR(F11-G11,0)   → caché 0.0
+I11    : 0
+A12    : 8
+B12    : 0
+C12    : 0
+D12    : 0
+E12    : 0
+F12    = =IF(SUM(C12:E12)=0,0,SUM(C12:E12)-B12)   → caché 0.0
+G12    : 0
+H12    = =IFERROR(F12-G12,0)   → caché 0.0
+I12    : 0
+A13    : 9
+B13    : 0
+C13    : 0
+D13    : 0
+E13    : 0
+F13    = =IF(SUM(C13:E13)=0,0,SUM(C13:E13)-B13)   → caché 0.0
+G13    : 0
+H13    = =IFERROR(F13-G13,0)   → caché 0.0
+I13    : 0
+A14    : 10
+B14    : 0
+C14    : 0
+D14    : 0
+E14    : 0
+F14    = =IF(SUM(C14:E14)=0,0,SUM(C14:E14)-B14)   → caché 0.0
+G14    : 0
+H14    = =IFERROR(F14-G14,0)   → caché 0.0
+I14    : 0
+A15    : 11
+B15    : 0
+C15    : 0
+D15    : 0
+E15    : 0
+F15    = =IF(SUM(C15:E15)=0,0,SUM(C15:E15)-B15)   → caché 0.0
+G15    : 0
+H15    = =IFERROR(F15-G15,0)   → caché 0.0
+I15    : 0
+A16    : 12
+B16    : 0
+C16    : 0
+D16    : 0
+E16    : 0
+F16    = =IF(SUM(C16:E16)=0,0,SUM(C16:E16)-B16)   → caché 0.0
+G16    : 0
+H16    = =IFERROR(F16-G16,0)   → caché 0.0
+I16    : 0
+A17    : 13
+B17    : 0
+C17    : 0
+D17    : 0
+E17    : 0
+F17    = =IF(SUM(C17:E17)=0,0,SUM(C17:E17)-B17)   → caché 0.0
+G17    : 0
+H17    = =IFERROR(F17-G17,0)   → caché 0.0
+I17    : 0
+A18    : 14
+B18    : 0
+C18    : 0
+D18    : 0
+E18    : 0
+F18    = =IF(SUM(C18:E18)=0,0,SUM(C18:E18)-B18)   → caché 0.0
+G18    : 0
+H18    = =IFERROR(F18-G18,0)   → caché 0.0
+I18    : 0
+A19    : 15
+B19    : 0
+C19    : 0
+D19    : 0
+E19    : 0
+F19    = =IF(SUM(C19:E19)=0,0,SUM(C19:E19)-B19)   → caché 0.0
+G19    : 0
+H19    = =IFERROR(F19-G19,0)   → caché 0.0
+I19    : 0
+A20    : 16
+B20    : 0
+C20    : 0
+D20    : 0
+E20    : 0
+F20    = =IF(SUM(C20:E20)=0,0,SUM(C20:E20)-B20)   → caché 0.0
+G20    : 0
+H20    = =IFERROR(F20-G20,0)   → caché 0.0
+I20    : 0
+A21    : 17
+B21    : 0
+C21    : 0
+D21    : 0
+E21    : 0
+F21    = =IF(SUM(C21:E21)=0,0,SUM(C21:E21)-B21)   → caché 0.0
+G21    : 0
+H21    = =IFERROR(F21-G21,0)   → caché 0.0
+I21    : 0
+A22    : 18
+B22    : 0
+C22    : 0
+D22    : 0
+E22    : 0
+F22    = =IF(SUM(C22:E22)=0,0,SUM(C22:E22)-B22)   → caché 0.0
+G22    : 0
+H22    = =IFERROR(F22-G22,0)   → caché 0.0
+I22    : 0
+A23    : 19
+B23    : 0
+C23    : 0
+D23    : 0
+E23    : 0
+F23    = =IF(SUM(C23:E23)=0,0,SUM(C23:E23)-B23)   → caché 0.0
+G23    : 0
+H23    = =IFERROR(F23-G23,0)   → caché 0.0
+I23    : 0
+A24    : 20
+B24    : 0
+C24    : 0
+D24    : 0
+E24    : 0
+F24    = =IF(SUM(C24:E24)=0,0,SUM(C24:E24)-B24)   → caché 0.0
+G24    : 0
+H24    = =IFERROR(F24-G24,0)   → caché 0.0
+I24    : 0
+A25    : 21
+B25    : 0
+C25    : 0
+D25    : 0
+E25    : 0
+F25    = =IF(SUM(C25:E25)=0,0,SUM(C25:E25)-B25)   → caché 0.0
+G25    : 0
+H25    = =IFERROR(F25-G25,0)   → caché 0.0
+I25    : 0
+A26    : 22
+B26    : 0
+C26    : 0
+D26    : 0
+E26    : 0
+F26    = =IF(SUM(C26:E26)=0,0,SUM(C26:E26)-B26)   → caché 0.0
+G26    : 0
+H26    = =IFERROR(F26-G26,0)   → caché 0.0
+I26    : 0
+A27    : 23
+B27    : 0
+C27    : 0
+D27    : 0
+E27    : 0
+F27    = =IF(SUM(C27:E27)=0,0,SUM(C27:E27)-B27)   → caché 0.0
+G27    : 0
+H27    = =IFERROR(F27-G27,0)   → caché 0.0
+I27    : 0
+A28    : 24
+B28    : 0
+C28    : 0
+D28    : 0
+E28    : 0
+F28    = =IF(SUM(C28:E28)=0,0,SUM(C28:E28)-B28)   → caché 0.0
+G28    : 0
+H28    = =IFERROR(F28-G28,0)   → caché 0.0
+I28    : 0
+A29    : 25
+B29    : 0
+C29    : 0
+D29    : 0
+E29    : 0
+F29    = =IF(SUM(C29:E29)=0,0,SUM(C29:E29)-B29)   → caché 0.0
+G29    : 0
+H29    = =IFERROR(F29-G29,0)   → caché 0.0
+I29    : 0
+A30    : 26
+B30    : 0
+C30    : 0
+D30    : 0
+E30    : 0
+F30    = =IF(SUM(C30:E30)=0,0,SUM(C30:E30)-B30)   → caché 0.0
+G30    : 0
+H30    = =IFERROR(F30-G30,0)   → caché 0.0
+I30    : 0
+A31    : 27
+B31    : 0
+C31    : 0
+D31    : 0
+E31    : 0
+F31    = =IF(SUM(C31:E31)=0,0,SUM(C31:E31)-B31)   → caché 0.0
+G31    : 0
+H31    = =IFERROR(F31-G31,0)   → caché 0.0
+I31    : 0
+A32    : 28
+B32    : 0
+C32    : 0
+D32    : 0
+E32    : 0
+F32    = =IF(SUM(C32:E32)=0,0,SUM(C32:E32)-B32)   → caché 0.0
+G32    : 0
+H32    = =IFERROR(F32-G32,0)   → caché 0.0
+I32    : 0
+A33    : 29
+B33    : 0
+C33    : 0
+D33    : 0
+E33    : 0
+F33    = =IF(SUM(C33:E33)=0,0,SUM(C33:E33)-B33)   → caché 0.0
+G33    : 0
+H33    = =IFERROR(F33-G33,0)   → caché 0.0
+I33    : 0
+A34    : 30
+B34    : 0
+C34    : 0
+D34    : 0
+E34    : 0
+F34    = =IF(SUM(C34:E34)=0,0,SUM(C34:E34)-B34)   → caché 0.0
+G34    : 0
+H34    = =IFERROR(F34-G34,0)   → caché 0.0
+I34    : 0
+A35    : 31
+B35    : 0
+C35    : 0
+D35    : 0
+E35    : 0
+F35    = =IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)   → caché 0.0
+G35    : 0
+H35    = =IFERROR(F35-G35,0)   → caché 0.0
+I35    : 0
+A36    : TOTALES
+B36    = =IFERROR(AVERAGEIF(B5:B35,">0"),0)   → caché 0.0
+C36    = =SUM(C5:C35)   → caché 0.0
+D36    = =SUM(D5:D35)   → caché 0.0
+E36    = =SUM(E5:E35)   → caché 0.0
+F36    = =SUM(F5:F35)   → caché 0.0
+G36    = =SUM(G5:G35)   → caché 0.0
+H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
+I36    = =SUM(I5:I35)   → caché 0.0
+A37    : «Efectivo Contado» es el recuento del cajón TAL CUAL, con el fondo dentro: el Total Facturado ya lo descuenta. En TOTALES, «Fondo Apertura» es el fondo MEDIO de los días anotados (un saldo no se suma) y «Descuadre» es el descuadre ACUMULADO en valor absoluto: un +50 y un −50 son 100 € de descuadre, no 0.
+A38    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
+####################################################################################################
+# BONUS-01-briefing-servicio.xlsx
+# docProps: title='BONUS: Plantilla de Briefing Pre-Servicio · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$23 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS: Plantilla de Briefing Pre-Servicio
+B4     : Cómo usar esta plantilla
+B6     : ▸ El jefe de sala o manager rellena antes del briefing
+B7     : ▸ Se comunica al equipo en la reunión de 5-10 minutos pre-servicio
+B8     : ▸ Imprime y pega en la zona de pase para referencia durante servicio
+B10    : Se conecta con
+B12    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B13    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B14    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B15    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B16    : ▸ Estás en BONUS-01-briefing-servicio.xlsx: el briefing abre el turno que luego se trabaja con 01-apertura-cierre.xlsx y 06-eventos-festivos.xlsx.
+B18    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B20    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B21    : Contacto: info@aichef.pro
+B23    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Briefing» · protegida=True · área='Briefing'!$A$1:$C$37 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B1     : Briefing Pre-Servicio
+B2     : Fecha: ___/___/______    Turno: ☐ Comida  ☐ Cena    Encargado: _________________________
+B4     : RESERVAS Y OCUPACIÓN
+B5     : Nº de reservas:
+B6     : Nº de comensales previstos:
+B7     : Mesas VIP / clientes especiales:
+B8     : Grupos o eventos:
+B9     : Ocupación estimada:
+C9     : _____ %
+B11    : PLATOS DEL DÍA Y 86s
+B12    : Plato del día 1:
+B13    : Plato del día 2:
+B14    : Postre especial:
+B15    : Productos AGOTADOS (86):
+B16    : Cambios en carta:
+B18    : ALÉRGENOS Y ESPECIALES
+B19    : Reservas con alérgenos declarados:
+B20    : Dietas especiales (vegano, celíaco...):
+B21    : Restricciones a comunicar:
+B23    : EQUIPO DEL TURNO
+B24    : Personal cocina:
+B25    : Personal sala:
+B26    : Personal barra:
+B27    : ¿Falta alguien? Cobertura:
+B29    : NOTAS E INCIDENCIAS
+B30    : Incidencias del turno anterior:
+B31    : Objetivos del turno:
+B32    : Mensaje del manager:
+B35    : Firma encargado: _________________________
+B37    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+####################################################################################################
+# BONUS-02-calendario-anual-tareas.xlsx
+# docProps: title='BONUS: Calendario Anual de Tareas Especiales · Kit de Tareas Recurrentes Pro' · subject='Kit de Tareas Recurrentes Pro · v2.0' · keywords='kit tareas, AI Chef Pro' · description='aichef.pro/kit-tareas' · category='AI Chef Pro · Productos digitales' · creator='AI Chef Pro'
+
+=== Hoja «Instrucciones» · protegida=False · área='Instrucciones'!$A$1:$B$23 · títulos=None · paneles=None · papel=9 · orientación=portrait
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+B2     : BONUS: Calendario Anual de Tareas Especiales
+B4     : Cómo usar esta plantilla
+B6     : ▸ Consulta las fechas clave de hostelería mes a mes
+B7     : ▸ Planifica con antelación: menús especiales, decoración, stock
+B8     : ▸ Añade las fechas relevantes de tu zona (fiestas locales, ferias)
+B10    : Se conecta con
+B12    : ▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.
+B13    : ▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala, barra).
+B14    : ▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.
+B15    : ▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.
+B16    : ▸ Estás en BONUS-02-calendario-anual-tareas.xlsx: cada fecha de este calendario se ejecuta con los checklists de 06-eventos-festivos.xlsx.
+B18    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro
+B20    : Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es
+B21    : Contacto: info@aichef.pro
+B23    : Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas · info@aichef.pro
+
+=== Hoja «Calendario Anual» · protegida=True · área='Calendario Anual'!$A$1:$D$34 · títulos=$4:$4 · paneles=A5 · papel=9 · orientación=landscape
+    pie: AI Chef Pro · aichef.pro · Página &P de &N
+A1     : Calendario Anual — Fechas Clave de Hostelería
+A2     : Año: ______    Añade tus fechas locales en las filas vacías
+A4     : Mes
+B4     : Fecha / Evento
+C4     : Tareas Clave
+D4     : Antelación
+A5     : Enero
+B5     : 1 Ene — Año Nuevo
+C5     : Decidir si se abre; si se cierra, comunicarlo en Google Business Profile y en redes con 1 semana
+D5     : 1 semana
+A6     : Enero
+B6     : 6 Ene — Reyes
+C6     : Roscón de Reyes, menú familiar
+D6     : 1 semana
+A7     : Febrero
+B7     : 14 Feb — San Valentín
+C7     : Menú parejas, decoración romántica, turnos extra
+D7     : 2 semanas
+A8     : Febrero
+B8     : Carnaval (variable)
+C8     : Menú temático, decoración, disfraces equipo
+D8     : 1 semana
+A9     : Marzo
+B9     : 19 Mar — Día del Padre
+C9     : Menú familiar de mediodía, reservas ampliadas, detalle para el padre
+D9     : 2 semanas
+A10    : Marzo-Abril
+B10    : Semana Santa (variable)
+C10    : Menú de vigilia, bacalao, potaje, torrijas
+D10    : 2 semanas
+A11    : Marzo-Abril
+B11    : Apertura terraza
+C11    : Montaje, licencia, carta exterior
+D11    : 1 mes
+A12    : Abril-Junio
+B12    : Comuniones y bautizos (temporada)
+C12    : Menú de grupo cerrado, señal y precio por comensal, sala privada
+D12    : 1 mes
+A13    : Mayo
+B13    : 1 Mayo — Día del Trabajo
+C13    : Servicio de festivo, turnos especiales
+D13    : 1 semana
+A14    : Mayo
+B14    : Primer domingo — Día de la Madre
+C14    : Menú especial, reservas ampliadas, detalle
+D14    : 2 semanas
+A15    : Junio
+B15    : Inicio temporada alta
+C15    : Refuerzo de plantilla, stock verano
+D15    : 1 mes
+A16    : Junio
+B16    : 24 Jun — San Juan
+C16    : Menú especial, terraza nocturna
+D16    : 1 semana
+A17    : Julio-Agosto
+B17    : Temporada alta
+C17    : Personal extra, horarios ampliados, carta verano
+D17    : Continuo
+A18    : Agosto
+B18    : 15 Ago — Asunción
+C18    : Servicio de festivo, refuerzo de turnos, terraza a pleno rendimiento
+D18    : 1 semana
+A19    : Septiembre
+B19    : Vuelta al cole / rutina
+C19    : Carta otoño, menú del día reforzado
+D19    : 2 semanas
+A20    : Octubre
+B20    : 31 Oct — Halloween
+C20    : Decoración temática, menú/cocktails especiales
+D20    : 1 semana
+A21    : Noviembre
+B21    : 1 Nov — Todos los Santos
+C21    : Comida familiar de mediodía, menú de temporada (setas, castañas)
+D21    : 1 semana
+A22    : Noviembre
+B22    : Cierre terraza
+C22    : Recoger mobiliario, inventario, reparaciones
+D22    : 1 semana
+A23    : Diciembre
+B23    : 6-8 Dic — Puente de la Constitución y la Inmaculada
+C23    : Horario de festivo, refuerzo de mediodía, stock para tres días seguidos
+D23    : 2 semanas
+A24    : Diciembre
+B24    : Cenas de empresa
+C24    : Menú de grupo, reservas grandes, turnos extra
+D24    : 1 mes
+A25    : Diciembre
+B25    : 24-25 Dic — Nochebuena/Navidad
+C25    : Menú navideño, decoración, stock especial
+D25    : 2 semanas
+A26    : Diciembre
+B26    : 31 Dic — Nochevieja
+C26    : Menú gala, cotillón, uvas, cava, turnos noche
+D26    : 2 semanas
+A28    : (Tu fecha)
+B28    : (Añade aquí)
+C28    : (Tareas específicas)
+D28    : (Antelación)
+A29    : (Tu fecha)
+B29    : (Añade aquí)
+C29    : (Tareas específicas)
+D29    : (Antelación)
+A30    : (Tu fecha)
+B30    : (Añade aquí)
+C30    : (Tareas específicas)
+D30    : (Antelación)
+A31    : (Tu fecha)
+B31    : (Añade aquí)
+C31    : (Tareas específicas)
+D31    : (Antelación)
+A32    : (Tu fecha)
+B32    : (Añade aquí)
+C32    : (Tareas específicas)
+D32    : (Antelación)
+A34    : — Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro

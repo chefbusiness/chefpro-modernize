@@ -61,6 +61,28 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Restaurant Checklists Kit Pro (17-oct-2026, primer kit EN de la línea Tareas): el más nuevo → 1; How to Open a
+  // Pastry Shop y el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Casual Restaurant», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
+  // (decía «2 bonuses (11 files)» y «sign it off»; la EN trae 3 bonus, 12 ficheros, e iniciales). Imagen: la del
+  // hero ES, sin texto.
+  {
+    name: 'Restaurant Checklists Kit Pro',
+    slug: '/kit-tareas',
+    description: '9 templates + 3 bonuses (12 files) with 491 restaurant tasks already written: opening, closing & cleaning checklists, kitchen stations, manager, side work by role, events and a cash drawer count. Print it, delegate it, initial it.',
+    features: [
+      'Opening and closing by area: kitchen, FOH, bar',
+      'Cleaning schedule + quarterly and annual services',
+      'Side work and daily duties by role',
+      'Cash drawer count and over/short log',
+      'Events and US holidays included',
+    ],
+    iconName: 'ClipboardList',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'restaurant'],
+  },
   // How to Open a Pastry Shop (17-oct-2026, segunda guía EN): el más nuevo → 1; Food Cost + Menu Engineering Guide,
   // Mobile Bar, Catering, Bar, Restaurant, Bakery, Food Truck y Coffee Shop pasan a 2-9. Es la MISMA tarjeta que ya
   // estaba como «Coming soon in English» (más abajo, entre las guías): se sube y su copy pasa a describir la edición EN
@@ -595,23 +617,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
-  },
-  {
-    name: 'Recurring Tasks: Casual Restaurant',
-    slug: '/kit-tareas',
-    description: '9 templates + 2 bonuses (11 files) with 491 tasks already written: your opening, closing & cleaning checklists, plus business, cash register with till reconciliation, stations, manager, roles and events. Print it, delegate it, and sign it off.',
-    features: [
-      'Opening and closing by area',
-      'Till reconciliation and monthly cash log',
-      'Tasks by job role',
-      'Manager\'s daily/weekly checklist',
-      'Events and holidays included',
-    ],
-    iconName: 'ClipboardList',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'restaurant'],
   },
   {
     name: 'Recurring Tasks: Cafe / Brunch',

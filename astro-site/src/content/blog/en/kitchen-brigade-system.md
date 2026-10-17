@@ -2,7 +2,7 @@
 title: "Kitchen Brigade System: Chef Hierarchy and Roles Explained"
 description: "The kitchen brigade system organizes a kitchen into ranks and stations. See the full chef hierarchy table, classical roles and how kitchens adapt it today."
 pubDate: 2026-10-05
-modDate: 2026-10-05
+modDate: 2026-10-17
 category: ai-in-gastronomy
 lang: en
 image: /blog-assets/en/2026/10/kitchen-brigade-system-featured.jpg
@@ -106,6 +106,8 @@ The classic stations do not mean you need all these people. They mean you need a
 
 If food safety is where your station design gets tested (and it is), the same logic carries over to hazard control. Our guide on [HACCP and the 7 principles for restaurants](https://aichef.pro/en/blog/haccp-food-safety-7-principles-restaurants) shows how to attach critical control points to specific stations instead of leaving them as a binder on a shelf.
 
+<p>Every station in a brigade has its own routine before, during and after service. The <a href="https://aichef.pro/en/digital-products/restaurant-checklist-templates">Restaurant Checklists Kit Pro</a> puts it on paper: checklists for the hot line, the cold station and mise en place, plus the daily duties of the head chef and the sous chef, ready to print and initial.</p>
+
 ## Classical vs. modern brigade: how kitchens really run today
 
 Most modern kitchens use a simplified brigade: the same logic of rank and station, but with fewer people and merged stations. The old system was designed for hotel dining rooms with huge teams and long menus; today's restaurants have tighter menus, higher labor costs and smaller crews.
@@ -153,7 +155,7 @@ Once the roles are set, the numbers follow. Your brigade is your biggest cost li
 
 Don't forget the people who are not on the line. Family meal is also a brigade moment: who cooks it, with what budget, using which trim. Our [staff meals prompt library](https://aichef.pro/en/blog/prompt-library-staff-meals) gives you ready-made ideas so it never becomes an afterthought.
 
-<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Food Cost Kit Pro</h3><p class="mt-2 text-muted-foreground">Excel templates that cost out recipes in minutes with real food cost.</p><a href="/en/digital-products/food-cost-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=kitchen-brigade-system" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Food Cost Kit Pro for $19</a></aside>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Digital product · one-time payment, lifetime access</p><h3 class="mt-2 text-xl font-bold text-foreground">Restaurant Checklists Kit Pro</h3><p class="mt-2 text-muted-foreground">Opening, closing and cleaning checklists, kitchen stations, manager, side work and a cash drawer count: 491 tasks already written.</p><a href="/en/digital-products/restaurant-checklist-templates?utm_source=blog&amp;utm_medium=banner&amp;utm_content=kitchen-brigade-system" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Get Restaurant Checklists Kit Pro for $19</a></aside>
 
 ## The brigade in a 5-star hotel kitchen
 

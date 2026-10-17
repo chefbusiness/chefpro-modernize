@@ -30,11 +30,12 @@ MODOS
     marcado con el atributo data-lang-es, p. ej. «¿Hablas español?»); sin caracteres no
     latinos (CJK, cirílico, hangul, árabe, hebreo, tailandés). Gate y dashboard: noindex.
 
-  --es-identico --base <preview> — las 29 landings ES de las plantillas con `lang`: las 5 de
+  --es-identico --base <preview> — las 49 landings ES de las plantillas con `lang`: las 5 de
     KitExcel (/kit-escandallos, /pack-appcc, /kit-inventario, /kit-gestion-personal,
     /kit-plan-financiero), las 10 de PlanNegocio (/plan-negocio-*, /plan-chef-privado-*,
     /plan-catering-*; desde el 4-oct-2026) y las 14 de GuiaLandingPage (/guia-*, /manual-*; desde el
-    15-oct-2026) del preview contra https://aichef.pro, normalizando los hashes
+    15-oct-2026) y las 20 de KitTareasLandingPage (/kit-tareas*; desde el 17-oct-2026) del preview contra
+    https://aichef.pro, normalizando los hashes
     de /_astro/*.js|css, el id de scope de Astro (data-astro-cid-*) y el host del preview.
     Sale 1 ante cualquier diferencia y enseña el contexto de la primera.
     --esperadas <ruta>[,<ruta>] (p. ej. /kit-escandallos en un PR que cambia ese producto):
@@ -84,7 +85,16 @@ GUIAS_ES = ['/guia-chocolateria-obrador', '/guia-churreria-chocolateria', '/guia
             '/guia-restaurante-casual', '/guia-restaurante-gastronomico', '/guia-restaurante-japones',
             '/guia-restaurante-mexicano', '/guia-restaurante-nikkei', '/guia-restaurante-peruano',
             '/manual-chef-ejecutivo', '/manual-manager-restaurante']
-LANDINGS_ES = KITEXCEL_ES + PLANES_ES + GUIAS_ES
+# KitTareasLandingPage recibe `lang` desde el 17-oct-2026 (Restaurant Checklists Kit Pro EN): sus 20 landings ES
+# (el kit base y las 19 verticales; el mega-pack NO usa la plantilla) tienen que seguir byte a byte iguales.
+# /kit-tareas cambia SOLO en el <head> (hreflang es + en + x-default, gemelo EN vivo): va en --esperadas.
+TAREAS_ES = ['/kit-tareas', '/kit-tareas-asador', '/kit-tareas-bar', '/kit-tareas-cafeteria', '/kit-tareas-catering',
+             '/kit-tareas-chef-privado', '/kit-tareas-chocolateria', '/kit-tareas-dark-kitchen',
+             '/kit-tareas-food-truck', '/kit-tareas-hamburgueseria', '/kit-tareas-heladeria', '/kit-tareas-hotel',
+             '/kit-tareas-marisqueria', '/kit-tareas-panaderia', '/kit-tareas-pasteleria', '/kit-tareas-pizzeria',
+             '/kit-tareas-restaurante-creativo', '/kit-tareas-sushi-bar', '/kit-tareas-tapas-bar',
+             '/kit-tareas-taqueria']
+LANDINGS_ES = KITEXCEL_ES + PLANES_ES + GUIAS_ES + TAREAS_ES
 
 errores: list[str] = []
 
@@ -343,7 +353,9 @@ EXENTOS = ['Español', 'Français', 'Português', 'Deutsch', 'Italiano', 'Nederl
            # Ídem, Catering Business Plan Kit (11-oct): testimonios del Plan Catering Temático traducidos.
            'Miguel Hernández',
            # Ídem, Mobile Bar Business Plan Kit (13-oct): testimonios del Plan Coctelería de Eventos traducidos.
-           'Laura Manchón', 'María Pino']
+           'Laura Manchón', 'María Pino',
+           # Ídem, Restaurant Checklists Kit Pro (17-oct): testimonios del Kit de Tareas Recurrentes traducidos.
+           'Raúl Domínguez', 'Fernando López', 'Hotel Gran Bahía']
 # La heurística de RESTOS_ES es la del inglés. En las tiendas romance/germánicas algunas de sus
 # «pistas» son ortografía o vocabulario PROPIO del idioma (it «con/del/una», pt «para» y sus
 # tildes y «Garantia», «é» en fr/it/nl y en el «Café» alemán): solo esas se descuentan, por idioma. ñ, ¿, ¡ y el resto siguen.

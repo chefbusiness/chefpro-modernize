@@ -65,6 +65,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'plan-negocio-tapas-bar': 'https://buy.stripe.com/aFadR21C4eAK8bd5Nb6oo15',
   'pro-prompts-ebook': 'https://buy.stripe.com/7sYfZafsU8cm3UX7Vj6oo00',
   'restaurant-business-plan': 'https://buy.stripe.com/5kQ5kwbcE50advx6Rf6oo1H',
+  'restaurant-checklist-templates': 'https://buy.stripe.com/aFa7sE4Og50a3UXgrP6oo1P',
   'restaurant-financial-plan-templates': 'https://buy.stripe.com/8x23cogwYdwGezBdfD6oo1E',
   'restaurant-inventory-templates': 'https://buy.stripe.com/28EfZacgIdwGbnp8Zn6oo1z',
   'restaurant-schedule-templates': 'https://buy.stripe.com/9B6dR294w0JUbnpa3r6oo1D',

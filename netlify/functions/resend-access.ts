@@ -382,6 +382,15 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my guide',
     lang: 'en',
   },
+  // Tienda EN (2026-10-17): gemelo de kit-tareas (ver verify-purchase.ts).
+  'restaurant-checklist-templates': {
+    accessPath: '/en/digital-products/restaurant-checklist-templates/access',
+    emailSubject: 'Your access to Restaurant Checklists Kit Pro',
+    emailTitle: 'Access your Restaurant Checklists Kit Pro',
+    emailBody: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

@@ -37,6 +37,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'mobile-bar-business-plan', label: 'Mobile Bar Business Plan Kit (EN, $39)' },
   { id: 'food-cost-menu-engineering-guide', label: 'Food Cost + Menu Engineering Guide (EN, $59)' },
   { id: 'how-to-open-a-pastry-shop', label: 'How to Open a Pastry Shop (EN, $69)' },
+  { id: 'restaurant-checklist-templates', label: 'Restaurant Checklists Kit Pro (EN, $19)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
   { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },
   { id: 'guia-restaurante-casual', label: 'Guía Restaurante Casual (€65)' },
