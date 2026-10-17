@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-17T22:26:51Z",
+  "generado": "2026-10-17T22:57:43Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-bar",
   "commit": "f9109c48",

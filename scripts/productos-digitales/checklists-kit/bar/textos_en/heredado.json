@@ -285,11 +285,6 @@
   "origen": "c0824",
   "via": "exacta"
  },
- "c0598": {
-  "en": "Raise security gate and open front door",
-  "origen": "c0825",
-  "via": "exacta"
- },
  "c0599": {
   "en": "Set up outdoor signage / menu board",
   "origen": "c0826",
@@ -398,16 +393,6 @@
  "c0631": {
   "en": "Final safety check (gas, water, outlets)",
   "origen": "c0854",
-  "via": "exacta"
- },
- "c0632": {
-  "en": "Set the alarm",
-  "origen": "c0855",
-  "via": "exacta"
- },
- "c0633": {
-  "en": "Lock up and verify it is locked",
-  "origen": "c0856",
   "via": "exacta"
  },
  "c0642": {

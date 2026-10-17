@@ -17,7 +17,7 @@
 | D9 | Horas | 152 horas de 24 h → `hora_us`; las de las frases (07, «18:00-20:00» del happy hour) las escribe el traductor |
 | D11 | 05 «Quarterly & Annual» | 12 filas: plagas (heredada), extintores OSHA 1910.157, campana NFPA 96 + extinción cada 6 meses (si hay cocina), gas + calefactores de patio (propano, fire code local), **servicio del draft** (ácido cada 3 meses), frío EPA 608 (cámaras, botellero, máquina de hielo), filtros (traductor), legionela (programa de agua si hay misters o torre), **música y ruido** (ordenanza y permiso), **licencia de alcohol** + permiso de patio, seguros + licencias de música (ASCAP, BMI, SESAC, GMR), POS. 03 `B10` = fichajes FLSA (la fila B16 del base) |
 | D12 | Caja | 09 igual que el base: las 53 celdas `POR_CELDA` y los 6 `ADAPTAR` se heredan tras comprobar el texto ES (`cruzar_base`) |
-| D14 | Calendario | Otra estructura (A nº · B fecha · C evento · D tareas · E antelación · F notas; filas 4-26). B y C fijados (§3); D y F con ADAPTAR donde el evento cambia: Carnaval → Mardi Gras · Semana Santa → Spring break · 1 de mayo → Memorial Day weekend · Asunción → Jul 4 · puente de diciembre → **Thanksgiving Eve** · Nochebuena → Christmas Eve; NYE sin uvas ni cava |
+| D14 | Calendario | Otra estructura (A nº · B fecha · C evento · D tareas · E antelación · F notas; filas 4-26). B y C fijados (§3); D y F con ADAPTAR donde el evento cambia: Carnaval → Mardi Gras · Semana Santa → Spring break · 1 de mayo → Cinco de Mayo (fila 9) y Memorial Day weekend (fila 10, D y F por `POR_CELDA`) · Asunción → Jul 4 · eventos deportivos → **Super Bowl** (2.º domingo de febrero) & big games · puente de diciembre → **Thanksgiving Eve** · Nochebuena → Christmas Eve; NYE sin uvas ni cava |
 | D-BAR | Alcohol | 21+ e ID; no servir a visiblemente ebrios; last call y cierre «check your state's ABC/liquor authority»; servicio responsable (TIPS / ServSafe Alcohol) donde el estado lo exija; happy hour y bebidas gratis restringidas en algunos estados (World Cocktail Day sin «cóctel gratis»); aforo = cartel del fire marshal |
 | D-BAR | Draft | 38 °F; PSI del técnico o del distribuidor (sin los «2,5-3 bar» del ES); líneas cada 2 semanas y ácido cada 3 meses (Brewers Association) |
 | D-BAR | Hielo | el hielo es alimento: pala o pinzas, nunca el vaso; sin mano desnuda en garnish ni hielo (FDA 3-301.11) |
@@ -51,15 +51,18 @@
 | Hielo · manos | el hielo es alimento; sin mano desnuda en alimentos listos | FDA Food Code 2022 («food» incluye el hielo); §3-301.11 |
 | Música · ruido · aforo | ASCAP, BMI, SESAC, GMR; ordenanza de ruido; occupancy limit | 17 U.S.C. 106(4); [local] ordenanza y fire code |
 | Vino · hielo (conversiones) | 46-50 / 61-64 / 54-61 °F; 30-50 kg = 65-110 lb | [criterio del kit] cifras del ES convertidas |
+| Rellenado (ronda 1) | nunca devolver nada a una botella de licor: batches e infusiones en recipientes propios etiquetados | 26 U.S.C. 5301(c); 27 CFR 31.201 |
+| Promociones (ronda 1) | sin 2x1 ni barra libre en noches abiertas al público (solo eventos privados); brindis gratis, en el precio | [estatal] 204 CMR 4.03(1)(a)-(d); 235 ILCS 5/6-28 |
+| Sanitizante · alérgenos (ronda 1) | tiras en glass washer y barra (ppm de la etiqueta); aviso de alérgenos por escrito | FDA Food Code 2022 §4-302.14, §4-501.114; §3-602.12(C) |
 | UK | Challenge 25, personal licence, premises licence, TEN | Licensing Act 2003; Mandatory Licensing Conditions Order 2010 |
 
 °F que el kit puede afirmar (G7, `GRADOS_F_SPEC`): −31, −4, 0, 32, 38, 41, 46, 50, 54, 61, 64, 70, 100, 135, 165.
 
 ## 4. Memoria de traducción (`../heredar.py --kit bar`)
 
-853 cadenas; GM 244 (pestañas, glosario, horas, `POR_CELDA`, marca, versión). De las 609 a traducir: **121 heredadas**
-(118 exactas + 3 por sufijo; 1.294 palabras; 7 con el nombre de fichero EN ajustado) en `textos_en/heredado.json` y
-**488 pendientes** (481 nuevas + 7 cuyo EN del base dice «restaurant»; **4.056 palabras**; 55 con ADAPTAR) en
+853 cadenas; tras la ronda 1, GM 252 (pestañas, glosario, horas, `POR_CELDA`, marca, versión). De las 601 a traducir:
+**118 heredadas** (115 exactas + 3 por sufijo; 1.282 palabras) en `textos_en/heredado.json` y **483 pendientes** (475
+nuevas + 7 cuyo EN del base dice «restaurant» + 1 corregida en el bar, `NO_HEREDAR`; 4.015 palabras) en
 `textos_en/pendientes.json`. UN traductor sonnet → `textos_en/G1.json` = {id: en} con el brief de la SPEC base §7.2,
 `../textos_en/glosario.json` y `heredado.json` como referencia de estilo.
 
@@ -75,6 +78,10 @@ protegidas · 342 tareas · 3.365 verdes · 152 horas · 7 celdas con °C. `bar-
 
 ## 6. Erratas del ES (para su próxima v2.x; la EN nace corregida)
 
-- 05 «Inventario» C44: «barril conectado 3-5 días» solo vale para bombas de aire; con CO₂ manda la fecha del barril.
+- 05 «Inventario» C44: «barril conectado 3-5 días» no vale ni con bomba de aire (con ella se acaba en el día); con
+  CO₂ manda la fecha del barril.
+- 02 «Coctelería Clásica» B11: los flips llevan HUEVO entero y a menudo nata, no solo «LÁCTEOS».
+- 08 «Cierre del Negocio» 16-19: se limpia (grifos, garnish station) DESPUÉS de activar la alarma y cerrar con llave.
+- BONUS-01 B9 «2x1» y 06 «Nochevieja» B6 «barra libre»: en la EN, según el estado (ver §3).
 - 02 «Cerveza y Grifo» B6: «2,5-3,0 bar» no es una presión general (depende del sistema y del gas).
 - 01 «Apertura Barra» B7: «se manipulan hielo, cítricos y garnish sin guante» (en EE. UU., sin mano desnuda).

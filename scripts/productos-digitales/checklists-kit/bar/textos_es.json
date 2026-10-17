@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-17T22:26:51Z",
+  "generado": "2026-10-17T22:57:43Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-bar",
   "commit": "f9109c48",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 853,
-  "n_traducir": 609,
-  "n_adaptar": 63,
-  "n_palabras_subagentes": 5350,
+  "n_traducir": 601,
+  "n_adaptar": 68,
+  "n_palabras_subagentes": 5297,
   "n_apariciones": 2373,
   "grupos": [
    {
@@ -77,7 +77,7 @@
      "04"
     ],
     "n_cadenas": 272,
-    "n_adaptar": 23,
+    "n_adaptar": 28,
     "n_palabras": 2352
    },
    {
@@ -92,15 +92,15 @@
      "B01",
      "B02"
     ],
-    "n_cadenas": 337,
+    "n_cadenas": 329,
     "n_adaptar": 40,
-    "n_palabras": 2998
+    "n_palabras": 2945
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 80 mapa-glosario, 31 mapa-hoja, 133 regenerar",
-    "n_cadenas": 244,
-    "n_palabras": 925
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 79 mapa-glosario, 31 mapa-hoja, 142 regenerar",
+    "n_cadenas": 252,
+    "n_palabras": 978
    }
   ],
   "excluidas": {
@@ -3445,6 +3445,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
+   "adaptar": "Sanitizante medido con tiras; ppm de la etiqueta (FDA Food Code 4-302.14)",
    "pistas": [
     "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
    ],
@@ -4092,6 +4093,7 @@
    "n_apariciones": 1,
    "palabras": 11,
    "con_cifra": false,
+   "adaptar": "Infusiones en tarros etiquetados, nunca en una botella de licor",
    "sha1": "787d59d15370",
    "donde": [
     {
@@ -7071,6 +7073,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
+   "adaptar": "EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la política de la casa diga; nunca servir a quien esté visiblemente ebrio",
    "sha1": "15d4469cbf71",
    "donde": [
     {
@@ -7396,6 +7399,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
+   "adaptar": "Sanitizante del glass washer medido con tiras; ppm de la etiqueta (FDA Food Code 4-302.14, 4-501.114)",
    "pistas": [
     "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
     "cristalería → glassware; lavavajillas de barra → glass washer"
@@ -7685,6 +7689,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": false,
+   "adaptar": "EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la política de la casa diga; nunca servir a quien esté visiblemente ebrio",
    "sha1": "772a9b71e90f",
    "donde": [
     {
@@ -9467,6 +9472,7 @@
    "n_apariciones": 1,
    "palabras": 14,
    "con_cifra": false,
+   "adaptar": "Nunca de vuelta a una botella de licor vacía: recipiente propio, cerrado y etiquetado (26 U.S.C. 5301(c); 27 CFR 31.201)",
    "sha1": "b189a57bde99",
    "donde": [
     {
@@ -10469,6 +10475,7 @@
    "n_apariciones": 1,
    "palabras": 11,
    "con_cifra": false,
+   "adaptar": "Barra libre solo en eventos privados: en una noche abierta al público está prohibida en algunos estados (p. ej. Massachusetts): «check your state's ABC/liquor authority»",
    "pistas": [
     "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
    ],
@@ -12633,89 +12640,6 @@
    ]
   },
   {
-   "id": "c0632",
-   "es": "Activar alarma",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 2,
-   "con_cifra": false,
-   "sha1": "dac8b9248030",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B16",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0633",
-   "es": "Cerrar con llave y verificar cierre",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "sha1": "24071e529964",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B17",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0635",
-   "es": "Limpiar grifos de cerveza",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "pistas": [
-    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
-   ],
-   "sha1": "b46afc78aec6",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B18",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0636",
-   "es": "Vaciar y limpiar garnish station",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "sha1": "79dbac8c9b8c",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B19",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0642",
    "es": "▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.",
    "grupo": "G2",
@@ -13972,6 +13896,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": true,
+   "adaptar": "Sin 2x1 como ejemplo: promociones según el estado (REGLAS_US happy_hour)",
    "sha1": "276ff64d25e7",
    "donde": [
     {
@@ -14522,92 +14447,6 @@
    ]
   },
   {
-   "id": "c0788",
-   "es": "Horario de festivo, terraza a pleno rendimiento y stock para varios días seguidos",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 13,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Memorial Day weekend (last Mon of May)». Sustituye al 1 de mayo y sus puentes: horario de festivo, patio a pleno rendimiento y stock para varios días seguidos",
-   "pistas": [
-    "D15: terraza → patio"
-   ],
-   "sha1": "b18b90be3e16",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "D9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0789",
-   "es": "Un puente mueve más que un sábado normal y se pide con el mismo plazo",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 15,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Memorial Day weekend (last Mon of May)». «Puente» → long weekend",
-   "sha1": "327f04506686",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "F9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0792",
-   "es": "Margaritas, mezcal, tequila, decoración mexicana",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "sha1": "e9f7555983c8",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "D10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0793",
-   "es": "Tendencia en crecimiento",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 3,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Cinco de Mayo». En EE. UU. ya es una de las grandes noches de bar del año",
-   "sha1": "5eae280ad681",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "F10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0796",
    "es": "Cócteles refrescantes, terraza a tope",
    "grupo": "G2",
@@ -15067,7 +14906,7 @@
    "n_apariciones": 1,
    "palabras": 3,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Big games & sports nights». Super Bowl, March Madness, playoffs (NBA, NHL), World Series",
+   "adaptar": "Evento EN: «Super Bowl Sunday & big games». Super Bowl el 2.º domingo de febrero; además March Madness, playoffs (NBA, NHL), World Series",
    "sha1": "4f4c329d83bc",
    "donde": [
     {
@@ -17701,6 +17540,10 @@
    "es": "Barra",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Bar",
    "n_ficheros": 8,
    "n_apariciones": 92,
@@ -18401,16 +18244,16 @@
      "h": "Cierre del Negocio",
      "c": "C18",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C19",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "B01",
@@ -23535,6 +23378,10 @@
    "es": "Cadencia",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Frequency",
    "n_ficheros": 2,
    "n_apariciones": 2,
@@ -23547,8 +23394,8 @@
      "h": "Vinos y Bodega",
      "c": "E4",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
@@ -25764,7 +25611,7 @@
    "es": "Vida útil",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "Freezer time",
+   "en_glosario": "Shelf life",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -27344,6 +27191,10 @@
    "es": "Acceso",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Entrance",
    "n_ficheros": 1,
    "n_apariciones": 5,
@@ -27380,16 +27231,16 @@
      "h": "Cierre del Negocio",
      "c": "C16",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C17",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -27398,6 +27249,10 @@
    "es": "Encargado",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Shift manager",
    "n_ficheros": 1,
    "n_apariciones": 30,
@@ -27642,8 +27497,8 @@
      "h": "Cierre del Negocio",
      "c": "D16",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -27970,11 +27825,55 @@
    ]
   },
   {
+   "id": "c0632",
+   "es": "Activar alarma",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Clean the beer faucets",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 2,
+   "con_cifra": false,
+   "sha1": "dac8b9248030",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B16",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0633",
+   "es": "Cerrar con llave y verificar cierre",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Empty and clean the garnish station",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "24071e529964",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B17",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0634",
    "es": "Último en salir",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Last one out",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Last one out",
    "n_ficheros": 1,
    "n_apariciones": 3,
    "palabras": 3,
@@ -27986,24 +27885,68 @@
      "h": "Cierre del Negocio",
      "c": "D17",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D18",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D19",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0635",
+   "es": "Limpiar grifos de cerveza",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Set the alarm",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "b46afc78aec6",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B18",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0636",
+   "es": "Vaciar y limpiar garnish station",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Lock up and verify it is locked",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "79dbac8c9b8c",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B19",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -29934,7 +29877,7 @@
    "es": "1 Mayo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Late May",
+   "en_por_celda": "May 5",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -29956,7 +29899,7 @@
    "es": "Día del Trabajo y puentes de primavera",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Memorial Day weekend (last Mon of May)",
+   "en_por_celda": "Cinco de Mayo",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 7,
@@ -29974,11 +29917,55 @@
    ]
   },
   {
+   "id": "c0788",
+   "es": "Horario de festivo, terraza a pleno rendimiento y stock para varios días seguidos",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Margaritas, mezcal, tequila, Mexican decorations",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 13,
+   "con_cifra": false,
+   "sha1": "b18b90be3e16",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "D9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0789",
+   "es": "Un puente mueve más que un sábado normal y se pide con el mismo plazo",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Already one of the biggest bar nights of the year in the US",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 15,
+   "con_cifra": false,
+   "sha1": "327f04506686",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "F9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0790",
    "es": "5 Mayo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May 5",
+   "en_por_celda": "Late May",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -30000,7 +29987,7 @@
    "es": "Cinco de Mayo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Cinco de Mayo",
+   "en_por_celda": "Memorial Day weekend (last Mon of May)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -30011,6 +29998,50 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "C10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0792",
+   "es": "Margaritas, mezcal, tequila, decoración mexicana",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Holiday hours, patio at full capacity and stock for several days in a row",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "e9f7555983c8",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "D10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0793",
+   "es": "Tendencia en crecimiento",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "A long weekend moves more than a normal Saturday and is ordered with the same lead time",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 3,
+   "con_cifra": false,
+   "sha1": "5eae280ad681",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "F10",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"
@@ -30564,7 +30595,7 @@
    "es": "Eventos Deportivos",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Big games & sports nights",
+   "en_por_celda": "Super Bowl Sunday & big games",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
