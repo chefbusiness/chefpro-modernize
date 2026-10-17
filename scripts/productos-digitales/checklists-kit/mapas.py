@@ -268,7 +268,7 @@ CALENDARIO = OrderedDict([
     (10, ('March–April', 'Easter Sunday (varies)', '2 weeks',
           'Sustituye a Semana Santa. Tareas: brunch de Pascua, especiales (jamón asado, cordero), reservas ampliadas')),
     (11, ('March–April', 'Patio opening', '1 month',
-          'La licencia es el «outdoor dining / sidewalk café permit» de la ciudad. Tareas: montaje, permiso, carta '
+          'La licencia es el «outdoor dining / sidewalk cafe permit» de la ciudad. Tareas: montaje, permiso, carta '
           'de patio')),
     (12, ('May–June', 'Graduation season', '1 month',
           'Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, sala privada); en EE. UU. '
@@ -462,7 +462,7 @@ ADAPTAR = OrderedDict([
     (('06', 'Navidad', 'B22'), 'Preparar el brindis con champán para la cuenta atrás de medianoche (sin uvas ni '
                                'campanadas)'),
     (('06', 'Navidad', 'B23'), 'Brindis a medianoche solo para mayores de 21 (comprobar ID) y opción sin alcohol'),
-    (('06', 'Temporada Terraza', 'B6'), 'Permiso de la ciudad: outdoor dining / sidewalk café permit'),
+    (('06', 'Temporada Terraza', 'B6'), 'Permiso de la ciudad: outdoor dining / sidewalk cafe permit'),
     # 08
     (('08', 'Apertura del Negocio', 'B8'), 'Persianas → security gate / shutters'),
     # 09

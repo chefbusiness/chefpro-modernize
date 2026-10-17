@@ -82,7 +82,8 @@ RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local)[^\]]*
 RX_CITA_ANIDADA = re.compile(r'\(\(|\)\)\)')
 LIMITE_DV = {'promptTitle': 32, 'errorTitle': 32, 'prompt': 255, 'error': 255}     # Excel
 RX_TILDE = re.compile(r'[áéíóúüñÁÉÍÓÚÜÑ]')
-LISTA_BLANCA_TILDE = {'café', 'cafés', 'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 'purée', 'purées',
+# «café» como palabra inglesa va sin tilde («sidewalk cafe permit», grafía de los permisos US): no entra.
+LISTA_BLANCA_TILDE = {'entrée', 'entrées', 'sauté', 'sautéed', 'sautéing', 'purée', 'purées',
                       'jalapeño', 'jalapeños', 'piña', 'crème', 'brûlée', 'résumé', 'naïve', 'flambé', 'frappé',
                       'rosé', 'canapé', 'canapés', 'soufflé', 'consommé', 'crêpe', 'crêpes', 'déjà', 'à'}
 FRASES_OK = ('Cinco de Mayo', 'al dente', 'pico de gallo', 'chili con carne', 'à la carte', 'a la carte',
