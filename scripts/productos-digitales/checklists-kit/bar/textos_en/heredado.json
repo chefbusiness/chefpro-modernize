@@ -1,0 +1,637 @@
+{
+ "c0005": {
+  "en": "How to use this template",
+  "origen": "c0781",
+  "via": "exacta"
+ },
+ "c0012": {
+  "en": "How the counter works",
+  "origen": "c0018",
+  "via": "exacta"
+ },
+ "c0013": {
+  "en": "▸ Mark ✓ in the \"✓ Done\" column (dropdown): that is the column that counts completed tasks.",
+  "origen": "c0019",
+  "via": "exacta"
+ },
+ "c0015": {
+  "en": "▸ The denominator counts the tasks written in the \"Task\" column, not a fixed number: if you add or delete tasks, the total adjusts by itself.",
+  "origen": "c0021",
+  "via": "exacta"
+ },
+ "c0016": {
+  "en": "Free rows",
+  "origen": "c0022",
+  "via": "exacta"
+ },
+ "c0017": {
+  "en": "▸ At the end of each table there are 5 free green rows INSIDE the range the counter covers: write your own tasks there.",
+  "origen": "c0023",
+  "via": "exacta"
+ },
+ "c0018": {
+  "en": "▸ If you need more, insert rows INSIDE the table (right-click → Insert), never below the last one: anything typed outside the range is not counted.",
+  "origen": "c0024",
+  "via": "exacta"
+ },
+ "c0019": {
+  "en": "Sheet protection",
+  "origen": "c0025",
+  "via": "exacta"
+ },
+ "c0020": {
+  "en": "▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.",
+  "origen": "c0026",
+  "via": "exacta"
+ },
+ "c0021": {
+  "en": "▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.",
+  "origen": "c0027",
+  "via": "exacta"
+ },
+ "c0022": {
+  "en": "Works with",
+  "origen": "c0028",
+  "via": "exacta"
+ },
+ "c0025": {
+  "en": "▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.",
+  "origen": "c0031",
+  "via": "exacta"
+ },
+ "c0027": {
+  "en": "▸ You are in 01-bar-opening-closing-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-venue-opening-closing-checklist.xlsx.",
+  "origen": "c0033",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-bar-opening-closing-checklists.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-venue-opening-closing-checklist.xlsx"
+  ]
+ },
+ "c0029": {
+  "en": "Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es",
+  "origen": "c0035",
+  "via": "exacta"
+ },
+ "c0030": {
+  "en": "Contact: info@aichef.pro",
+  "origen": "c0036",
+  "via": "exacta"
+ },
+ "c0034": {
+  "en": "Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________",
+  "origen": "c0040",
+  "via": "exacta"
+ },
+ "c0042": {
+  "en": "  PERSONAL HYGIENE",
+  "origen": "c0048",
+  "via": "exacta"
+ },
+ "c0047": {
+  "en": "Cover cuts and wounds with a waterproof, brightly colored bandage and a glove on top",
+  "origen": "c0053",
+  "via": "exacta"
+ },
+ "c0081": {
+  "en": "Wipe down patio tables and chairs",
+  "origen": "c0116",
+  "via": "exacta"
+ },
+ "c0083": {
+  "en": "Check outdoor lighting",
+  "origen": "c0765",
+  "via": "exacta"
+ },
+ "c0088": {
+  "en": "Invalid mark",
+  "origen": "c0097",
+  "via": "exacta"
+ },
+ "c0089": {
+  "en": "Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending.",
+  "origen": "c0098",
+  "via": "exacta"
+ },
+ "c0134": {
+  "en": "▸ You are in 02-bar-station-checklists-cocktails-beer-wine.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-venue-opening-closing-checklist.xlsx and 01-bar-opening-closing-checklists.xlsx.",
+  "origen": "c0229",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 02-kitchen-station-checklists.xlsx → 02-bar-station-checklists-cocktails-beer-wine.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-venue-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-bar-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0169": {
+  "en": "Month: ________________   Year: ______    Manager: _________________________",
+  "origen": "c0390",
+  "via": "exacta"
+ },
+ "c0196": {
+  "en": "▸ You are in 03-bar-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-venue-opening-closing-checklist.xlsx and 01-bar-opening-closing-checklists.xlsx.",
+  "origen": "c0313",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 03-restaurant-manager-checklist.xlsx → 03-bar-manager-checklist.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-venue-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-bar-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0218": {
+  "en": "Manager Weekly Checklist",
+  "origen": "c0346",
+  "via": "exacta"
+ },
+ "c0244": {
+  "en": "Manager Monthly Checklist",
+  "origen": "c0389",
+  "via": "exacta"
+ },
+ "c0273": {
+  "en": "▸ You are in 04-bartender-checklist-duties-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-venue-opening-closing-checklist.xlsx and 01-bar-opening-closing-checklists.xlsx.",
+  "origen": "c0442",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 04-daily-duties-side-work-by-role.xlsx → 04-bartender-checklist-duties-by-role.xlsx",
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-venue-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-bar-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0556": {
+  "en": "What it solves",
+  "origen": "c0778",
+  "via": "exacta"
+ },
+ "c0348": {
+  "en": "Weekly Deep Cleaning Checklist",
+  "origen": "c0535",
+  "via": "exacta"
+ },
+ "c0349": {
+  "en": "Week of ___/___/______ to ___/___/______    Manager: _________________________",
+  "origen": "c0347",
+  "via": "exacta"
+ },
+ "c0374": {
+  "en": "Monthly Equipment Maintenance",
+  "origen": "c0611",
+  "via": "exacta"
+ },
+ "c0442": {
+  "en": "Quarterly & Annual Maintenance — Contracted Services",
+  "origen": "c0633",
+  "via": "exacta"
+ },
+ "c0444": {
+  "en": "  CONTRACTED — LICENSED COMPANY",
+  "origen": "c0635",
+  "via": "exacta"
+ },
+ "c0485": {
+  "en": "Event / season: ___________________    Date: ___/___/______    Manager: _________________________",
+  "origen": "c0674",
+  "via": "exacta"
+ },
+ "c0533": {
+  "en": "  WHEN THE BOOKING IS CONFIRMED",
+  "origen": "c0676",
+  "via": "exacta"
+ },
+ "c0557": {
+  "en": "▸ Three master templates already structured —by time of day, by area and by role— with the sections in place and the zone or assignee preloaded: you only type your tasks.",
+  "origen": "c0779",
+  "via": "exacta"
+ },
+ "c0558": {
+  "en": "▸ Type in the GREEN cells of the \"Task\" column, under the matching section. The counter starts at 0 and goes up as you type: it counts what is there, not a fixed number.",
+  "origen": "c0780",
+  "via": "exacta"
+ },
+ "c0559": {
+  "en": "▸ You are in 07-blank-bar-checklist-template.xlsx: this is where you build YOUR lists when none of the others fit. Copy the structure of the one closest to what you need.",
+  "origen": "c0791",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 07-blank-checklist-template.xlsx → 07-blank-bar-checklist-template.xlsx"
+  ]
+ },
+ "c0560": {
+  "en": "Blank Template — By Time of Day",
+  "origen": "c0792",
+  "via": "exacta"
+ },
+ "c0567": {
+  "en": "Date: ___/___/______    Manager: _________________________",
+  "origen": "c0799",
+  "via": "exacta"
+ },
+ "c0583": {
+  "en": "How to use",
+  "origen": "c0812",
+  "via": "exacta"
+ },
+ "c0584": {
+  "en": "▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.",
+  "origen": "c0813",
+  "via": "exacta"
+ },
+ "c0585": {
+  "en": "▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.",
+  "origen": "c0814",
+  "via": "exacta"
+ },
+ "c0586": {
+  "en": "Editable cells",
+  "origen": "c0815",
+  "via": "exacta"
+ },
+ "c0587": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.",
+  "origen": "c0816",
+  "via": "exacta"
+ },
+ "c0588": {
+  "en": "▸ You are in 08-venue-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-bar-opening-closing-checklists.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.",
+  "origen": "c0817",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-venue-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-bar-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0590": {
+  "en": "Date: ____/____/________",
+  "origen": "c0819",
+  "via": "exacta"
+ },
+ "c0591": {
+  "en": "Shift manager: _________________________",
+  "origen": "c0820",
+  "via": "exacta"
+ },
+ "c0592": {
+  "en": "Disarm the alarm",
+  "origen": "c0821",
+  "via": "exacta"
+ },
+ "c0595": {
+  "en": "Turn on the main lights (interior and exterior)",
+  "origen": "c0823",
+  "via": "exacta"
+ },
+ "c0597": {
+  "en": "Turn on HVAC / heat depending on the season",
+  "origen": "c0824",
+  "via": "exacta"
+ },
+ "c0598": {
+  "en": "Raise security gate and open front door",
+  "origen": "c0825",
+  "via": "exacta"
+ },
+ "c0599": {
+  "en": "Set up outdoor signage / menu board",
+  "origen": "c0826",
+  "via": "exacta"
+ },
+ "c0601": {
+  "en": "Turn on the POS / card terminal",
+  "origen": "c0828",
+  "via": "exacta"
+ },
+ "c0603": {
+  "en": "Turn on the reservation system / order tablet",
+  "origen": "c0830",
+  "via": "exacta"
+ },
+ "c0605": {
+  "en": "Play background music at a suitable volume",
+  "origen": "c0832",
+  "via": "exacta"
+ },
+ "c0606": {
+  "en": "Review today's reservations and special events",
+  "origen": "c0833",
+  "via": "exacta"
+ },
+ "c0607": {
+  "en": "Check restrooms: paper, soap, cleanliness, air freshener",
+  "origen": "c0834",
+  "via": "exacta"
+ },
+ "c0609": {
+  "en": "Check cleanliness of common areas (entrance, hallways)",
+  "origen": "c0836",
+  "via": "exacta"
+ },
+ "c0611": {
+  "en": "Check furniture condition (chairs, tables, lighting)",
+  "origen": "c0838",
+  "via": "exacta"
+ },
+ "c0613": {
+  "en": "Set up the patio if applicable (tables, chairs, umbrellas/heaters)",
+  "origen": "c0839",
+  "via": "exacta"
+ },
+ "c0614": {
+  "en": "Check that menus are in order",
+  "origen": "c0840",
+  "via": "exacta"
+ },
+ "c0615": {
+  "en": "Turn on displays / info screens if any",
+  "origen": "c0841",
+  "via": "exacta"
+ },
+ "c0619": {
+  "en": "Manager signature: _________________________     Completion time: ________",
+  "origen": "c0842",
+  "via": "exacta"
+ },
+ "c0621": {
+  "en": "Turn off background music",
+  "origen": "c0844",
+  "via": "exacta"
+ },
+ "c0623": {
+  "en": "Clean and bring in the patio if used",
+  "origen": "c0846",
+  "via": "exacta"
+ },
+ "c0624": {
+  "en": "Turn off the POS / card terminal (or leave on standby)",
+  "origen": "c0847",
+  "via": "exacta"
+ },
+ "c0625": {
+  "en": "Close security gate and doors",
+  "origen": "c0848",
+  "via": "exacta"
+ },
+ "c0626": {
+  "en": "Turn off lights (leave security lighting)",
+  "origen": "c0849",
+  "via": "exacta"
+ },
+ "c0627": {
+  "en": "Turn off HVAC",
+  "origen": "c0850",
+  "via": "exacta"
+ },
+ "c0628": {
+  "en": "Bring in the outdoor signage",
+  "origen": "c0851",
+  "via": "exacta"
+ },
+ "c0629": {
+  "en": "Check that windows are closed",
+  "origen": "c0852",
+  "via": "exacta"
+ },
+ "c0630": {
+  "en": "Empty trash cans in common areas and restrooms",
+  "origen": "c0853",
+  "via": "exacta"
+ },
+ "c0631": {
+  "en": "Final safety check (gas, water, outlets)",
+  "origen": "c0854",
+  "via": "exacta"
+ },
+ "c0632": {
+  "en": "Set the alarm",
+  "origen": "c0855",
+  "via": "exacta"
+ },
+ "c0633": {
+  "en": "Lock up and verify it is locked",
+  "origen": "c0856",
+  "via": "exacta"
+ },
+ "c0642": {
+  "en": "▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.",
+  "origen": "c0862",
+  "via": "exacta"
+ },
+ "c0643": {
+  "en": "How to use — Cash Drawer Opening",
+  "origen": "c0863",
+  "via": "exacta"
+ },
+ "c0644": {
+  "en": "▸ Count the starting bank and type the amount in the GREEN cell \"Starting bank (opening float)\". The closing sheet reads it from there: no need to retype it.",
+  "origen": "c0864",
+  "via": "exacta"
+ },
+ "c0645": {
+  "en": "How to use — Cash Drawer Closing",
+  "origen": "c0865",
+  "via": "exacta"
+ },
+ "c0646": {
+  "en": "▸ In \"Cash Count by Denomination\" fill in ONLY the \"Quantity\" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a \"25¢ roll\" counts $10 and a \"10¢ roll\" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.",
+  "origen": "c0866",
+  "via": "exacta"
+ },
+ "c0647": {
+  "en": "▸ In the \"Closing Summary\" you only type three figures: \"Card sales, excl. tips\", \"Other tenders + card tips paid in cash\" and \"POS Z report: sales + tax, excl. tips\" (net sales plus sales tax, without tips or gratuities; many POS \"total\" lines include tips). Everything else is a formula.",
+  "origen": "c0867",
+  "via": "exacta"
+ },
+ "c0648": {
+  "en": "▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.",
+  "origen": "c0868",
+  "via": "exacta"
+ },
+ "c0649": {
+  "en": "▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.",
+  "origen": "c0869",
+  "via": "exacta"
+ },
+ "c0650": {
+  "en": "▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.",
+  "origen": "c0870",
+  "via": "exacta"
+ },
+ "c0651": {
+  "en": "▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.",
+  "origen": "c0871",
+  "via": "exacta"
+ },
+ "c0652": {
+  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials, Notes, the count quantities and the summary amounts.",
+  "origen": "c0872",
+  "via": "exacta"
+ },
+ "c0653": {
+  "en": "▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-venue-opening-closing-checklist.xlsx and the detail by zone in 01-bar-opening-closing-checklists.xlsx.",
+  "origen": "c0873",
+  "via": "exacta",
+  "ajustes": [
+   "fichero 08-restaurant-opening-closing-checklist.xlsx → 08-venue-opening-closing-checklist.xlsx",
+   "fichero 01-opening-closing-checklists-kitchen-foh-bar.xlsx → 01-bar-opening-closing-checklists.xlsx"
+  ]
+ },
+ "c0654": {
+  "en": "Cash Drawer Opening Checklist",
+  "origen": "c0874",
+  "via": "sufijo"
+ },
+ "c0655": {
+  "en": "Manager: _________________________",
+  "origen": "c0875",
+  "via": "exacta"
+ },
+ "c0656": {
+  "en": "Verify yesterday's starting bank",
+  "origen": "c0876",
+  "via": "exacta"
+ },
+ "c0658": {
+  "en": "Count the opening starting bank",
+  "origen": "c0878",
+  "via": "exacta"
+ },
+ "c0659": {
+  "en": "Write the starting bank in the green cell below",
+  "origen": "c0879",
+  "via": "exacta"
+ },
+ "c0660": {
+  "en": "Check there is enough change (coins, small bills)",
+  "origen": "c0880",
+  "via": "exacta"
+ },
+ "c0661": {
+  "en": "Check that the POS is on and open the register shift",
+  "origen": "c0881",
+  "via": "exacta"
+ },
+ "c0662": {
+  "en": "Print the opening X report (start-of-day report)",
+  "origen": "c0882",
+  "via": "exacta"
+ },
+ "c0663": {
+  "en": "Check the receipt paper roll",
+  "origen": "c0883",
+  "via": "exacta"
+ },
+ "c0664": {
+  "en": "Check the card terminal works",
+  "origen": "c0884",
+  "via": "exacta"
+ },
+ "c0665": {
+  "en": "Check the payment gateway connection",
+  "origen": "c0885",
+  "via": "exacta"
+ },
+ "c0666": {
+  "en": "Note issues from the previous shift",
+  "origen": "c0886",
+  "via": "exacta"
+ },
+ "c0667": {
+  "en": "Opening manager sign-off",
+  "origen": "c0887",
+  "via": "exacta"
+ },
+ "c0669": {
+  "en": "Deducted from cash on the \"Cash Drawer Closing\" sheet",
+  "origen": "c0889",
+  "via": "exacta"
+ },
+ "c0670": {
+  "en": "Manager signature: _________________________     Time: ________",
+  "origen": "c0890",
+  "via": "exacta"
+ },
+ "c0671": {
+  "en": "Cash Drawer Closing Checklist",
+  "origen": "c0891",
+  "via": "sufijo"
+ },
+ "c0672": {
+  "en": "Print the closing Z report (end-of-day report)",
+  "origen": "c0892",
+  "via": "exacta"
+ },
+ "c0673": {
+  "en": "Cash count by denomination (see table below)",
+  "origen": "c0893",
+  "via": "exacta"
+ },
+ "c0674": {
+  "en": "Calculate total cash",
+  "origen": "c0894",
+  "via": "exacta"
+ },
+ "c0677": {
+  "en": "Total collected = (cash counted − starting bank) + card sales + other",
+  "origen": "c0897",
+  "via": "exacta"
+ },
+ "c0678": {
+  "en": "Compare with the POS Z report → calculate the over/short",
+  "origen": "c0898",
+  "via": "exacta"
+ },
+ "c0679": {
+  "en": "Log the day's refunds",
+  "origen": "c0899",
+  "via": "exacta"
+ },
+ "c0680": {
+  "en": "Log the day's voids",
+  "origen": "c0900",
+  "via": "exacta"
+ },
+ "c0681": {
+  "en": "Set aside tomorrow's starting bank",
+  "origen": "c0901",
+  "via": "exacta"
+ },
+ "c0682": {
+  "en": "Prepare the bank deposit / put it in the safe",
+  "origen": "c0902",
+  "via": "exacta"
+ },
+ "c0683": {
+  "en": "Closing manager sign-off",
+  "origen": "c0903",
+  "via": "exacta"
+ },
+ "c0717": {
+  "en": "Invalid quantity",
+  "origen": "c0937",
+  "via": "exacta"
+ },
+ "c0718": {
+  "en": "Enter how many bills, coins or rolls: a whole number (0 or more), no decimals.",
+  "origen": "c0938",
+  "via": "exacta"
+ },
+ "c0719": {
+  "en": "Monthly Cash Log",
+  "origen": "c0939",
+  "via": "sufijo"
+ },
+ "c0720": {
+  "en": "Month: ________________     Year: ________",
+  "origen": "c0940",
+  "via": "exacta"
+ },
+ "c0721": {
+  "en": "General manager: _________________________",
+  "origen": "c0941",
+  "via": "exacta"
+ },
+ "c0731": {
+  "en": "\"Cash Counted\" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, \"Starting Bank\" is the AVERAGE starting bank of the days logged (a balance is not summed) and \"Over/Short\" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. \"Card Sales (no tips)\" excludes tips; \"Other + Tips Paid\" = other tenders + card tips paid in cash from the drawer. \"POS Z\" = net sales + sales tax, without tips.",
+  "origen": "c0951",
+  "via": "exacta"
+ }
+}

@@ -20,7 +20,8 @@ sys.path.insert(0, AQUI)
 
 import openpyxl                                          # noqa: E402
 
-import mapas                                             # noqa: E402
+import kit                                               # noqa: E402  (--kit base|bar: kit.py)
+from kit import mapas                                    # noqa: E402
 
 logging.disable(logging.CRITICAL)
 
@@ -70,6 +71,7 @@ def main():
     ap.add_argument('carpeta')
     ap.add_argument('salida')
     ap.add_argument('--orden', choices=('es', 'en'), default='en')
+    kit.argumento(ap)
     a = ap.parse_args()
     nombres = list(mapas.FICHEROS) if a.orden == 'es' else list(mapas.FICHEROS.values())
     out = ['Volcado de %d xlsx de %s (orden de mapas.FICHEROS)' % (len(nombres), a.carpeta)]

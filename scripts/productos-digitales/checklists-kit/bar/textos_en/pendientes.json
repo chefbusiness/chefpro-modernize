@@ -1,0 +1,5748 @@
+{
+ "meta": {
+  "kit": "bar",
+  "producto": "Bar Checklists Kit Pro",
+  "n_pendientes": 488,
+  "n_palabras": 4056,
+  "motivos": {
+   "nueva": 481,
+   "contexto": 7
+  },
+  "n_heredadas": 121,
+  "heredadas_por_via": {
+   "exacta": 118,
+   "sufijo": 3
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "bar/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "bar/textos_en/heredado.json (cómo se dijo ya cada cosa)",
+   "bar/mapas_bar.py: GLOSARIO, HOJAS, FICHEROS, TITULOS",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo)"
+ },
+ "cadenas": [
+  {
+   "id": "c0006",
+   "es": "▸ Imprime el checklist del turno correspondiente cada día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0007",
+   "es": "▸ El responsable de turno marca cada tarea al completarla",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0008",
+   "es": "▸ Al finalizar el turno, firma y entrega al siguiente responsable",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0009",
+   "es": "Personalización",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0010",
+   "es": "▸ Las celdas verdes son editables — ajusta responsables y horarios",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Instrucciones · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0011",
+   "es": "▸ Borra las tareas que no apliquen a tu negocio",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Instrucciones · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0014",
+   "es": "▸ «N/A» = no aplica en tu local: esa tarea SALE del total (no la borres, márcala N/A). «—» = no hecha: sigue contando como pendiente y baja el porcentaje, que es de lo que se trata.",
+   "grupo": "G1",
+   "palabras": 35,
+   "donde": [
+    "01 · Instrucciones · B18",
+    "02 · Instrucciones · B13",
+    "03 · Instrucciones · B18",
+    "… +7"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ \"N/A\" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). \"—\" = not done: it still counts as pending and lowers the percentage, which is the point."
+  },
+  {
+   "id": "c0023",
+   "es": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "01 · Instrucciones · B33",
+    "02 · Instrucciones · B28",
+    "03 · Instrucciones · B33",
+    "… +8"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-venue-opening-closing-checklist.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day."
+  },
+  {
+   "id": "c0024",
+   "es": "▸ 01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (barra).",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Instrucciones · B34",
+    "02 · Instrucciones · B29",
+    "03 · Instrucciones · B34",
+    "… +8"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-bar-opening-closing-checklists.xlsx"
+    }
+   ],
+   "comun": true,
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0026",
+   "es": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.",
+   "grupo": "G1",
+   "palabras": 55,
+   "donde": [
+    "01 · Instrucciones · B36",
+    "02 · Instrucciones · B31",
+    "03 · Instrucciones · B36",
+    "… +8"
+   ],
+   "comun": true,
+   "motivo": "contexto: restaurant",
+   "base_en": "▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail."
+  },
+  {
+   "id": "c0033",
+   "es": "Apertura Barra Principal",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Barra · A1"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0043",
+   "es": "Uniforme y delantal limpios, pelo recogido y calzado antideslizante (detrás de la barra el suelo se moja siempre)",
+   "grupo": "G1",
+   "palabras": 18,
+   "donde": [
+    "01 · Apertura Barra · B6"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte: se manipulan hielo, cítricos y garnish sin guante",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "01 · Apertura Barra · B7"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "FDA Food Code 2-303.11: sin joyas en manos y brazos SALVO un anillo liso (alianza); uñas cortas y limpias, sin esmalte ni postizas salvo con guantes. Y en EE. UU. nada de mano desnuda con alimentos listos para consumir (FDA Food Code 3-301.11): garnish e hielo con pinzas, palillos, pala o guantes; quita «sin guante»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0048",
+   "es": "Lavado de manos al entrar y en cada cambio de tarea; lavamanos de barra con jabón, papel y agua caliente",
+   "grupo": "G1",
+   "palabras": 20,
+   "donde": [
+    "01 · Apertura Barra · B9"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "adaptar": "Lavamanos = handwashing sink, con agua caliente (al menos 100 °F, FDA Food Code 5-202.12), jabón y papel",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0049",
+   "es": "Declarar síntomas digestivos o respiratorios: quien los tenga no manipula hielo ni alimentos",
+   "grupo": "G1",
+   "palabras": 13,
+   "donde": [
+    "01 · Apertura Barra · B10"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida infectada; quien los tenga no manipula alimentos; quien los tenga no manipula hielo, bebidas ni alimentos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0051",
+   "es": "  Mise en Place de Barra",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Barra · A12"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0052",
+   "es": "Encender iluminación de barra y ambiente",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Barra · B13"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "Encender sistema de música / ambientación sonora",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Barra · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Verificar limpieza de barra, mostrador y taburetes",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B15"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Comprobar que las cámaras y el botellero de barra han funcionado toda la noche y registrar temperatura (2-4 °C) — anota la lectura: ____ °C. Si hay desviación, no sirvas el producto hasta valorarlo",
+   "grupo": "G1",
+   "palabras": 34,
+   "donde": [
+    "01 · Apertura Barra · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "adaptar": "°F: cámaras y botellero a 41 °F o menos (FDA Food Code 3-501.16: garnish cortado, lácteos y zumos son TCS); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0058",
+   "es": "Preparar mise en place de cítricos (rodajas limón, lima, naranja)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Barra · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Preparar garnish: aceitunas, cerezas, piel de cítricos, hierbas frescas",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Barra · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "Llenar cubetas de hielo (cubos, hielo pilé, bloques grandes)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Barra · B19"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Verificar stock de hielo (mínimo para el turno: 30-50 kg)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Apertura Barra · B20"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "Peso US: 65–110 lb (30–50 kg)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Preparar speed rail con botellas más usadas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Verificar stock de zumos naturales (preparar si falta)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Preparar jarabes del día (simple, gomme, especiales)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "  Cristalería y Material",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Barra · A25"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0066",
+   "es": "Pulir cristalería: copas de vino, copas cóctel, vasos old fashioned",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Apertura Barra · B26"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0067",
+   "es": "Verificar stock de cristalería limpia (mínimo 2x capacidad)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra · B27"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0068",
+   "es": "Preparar coctelera, jigger, colador, bar spoon, muddler",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0069",
+   "es": "Verificar stock de pajitas, servilletas y posavasos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "Preparar tickets de comandas / tablet de pedidos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0071",
+   "es": "  Máquina de Café",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Barra · A32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Encender máquina de espresso (precalentar 20 min)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0074",
+   "es": "Purgar grupo (agua caliente 10 segundos por grupo)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Barra · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "Verificar molienda y calibrar (espresso 25-30 segundos, 25-30 ml)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "01 · Apertura Barra · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0076",
+   "es": "Verificar stock de leche (entera, avena, soja)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Limpiar boquilla de vapor",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Barra · B37"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0078",
+   "es": "  Apertura Terraza (si aplica)",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Barra · A39"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0079",
+   "es": "Sacar mobiliario de terraza (mesas, sillas, sombrillas)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Barra · B40"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0082",
+   "es": "Colocar ceniceros, cartas y servilleteros",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Barra · B42"
+   ],
+   "adaptar": "Ceniceros solo si tu ciudad o estado permite fumar en el patio (muchos lo prohíben): dilo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Cierre Barra Principal",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Barra · A1"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0091",
+   "es": "  Cierre de Servicio",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Barra · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0092",
+   "es": "Última ronda: avisar a clientes 30 min antes de cierre",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Barra · B6"
+   ],
+   "pistas": [
+    "última ronda → last call"
+   ],
+   "adaptar": "Last call 30 min antes del cierre; la hora de cierre y el fin de la venta de alcohol los fijan el estado y el municipio: «check your state's ABC/liquor authority»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Recoger cristalería de mesas y barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B7"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0094",
+   "es": "Vaciar y limpiar cubetas de hielo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B8"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0095",
+   "es": "Guardar mise en place de cítricos y garnish (film, cámara)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "01 · Cierre Barra · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0096",
+   "es": "Guardar jarabes y zumos en cámara (tapar, etiquetar)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Barra · B10"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0097",
+   "es": "Tapar botellas abiertas de speed rail",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "Limpiar coctelera, jigger, colador y utensilios",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0099",
+   "es": "  Limpieza de Barra",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Barra · A14"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0100",
+   "es": "Limpiar superficie de barra con desinfectante",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B15"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0102",
+   "es": "Limpiar fregadero de barra (desatascar si hace falta)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Barra · B16"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0103",
+   "es": "Limpiar grifo de cerveza (purgar, limpiar boquilla)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra · B17"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "Limpiar máquina de espresso (backflush, limpiar grupo)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Barra · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0105",
+   "es": "Limpiar molinillo de café",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "Vaciar y limpiar lavavajillas de barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B20"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0107",
+   "es": "Barrer y fregar suelo de barra (detrás de barra)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Barra · B21"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "  Cierre Administrativo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Barra · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "Comprobar que el arqueo del día ha quedado cerrado y firmado: el recuento no se repite aquí, se hace en «Cierre de Caja» del fichero 09-apertura-cierre-caja.xlsx",
+   "grupo": "G1",
+   "palabras": 30,
+   "donde": [
+    "01 · Cierre Barra · B24"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "edad legal 21; DNI → ID; comprobar la edad → check ID / card"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Cierre de Caja",
+     "en": "Cash Drawer Closing"
+    }
+   ],
+   "cita_ficheros": [
+    {
+     "es": "09-apertura-cierre-caja.xlsx",
+     "en": "09-cash-drawer-opening-closing.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "Registrar botellas abiertas (inventario rápido)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Barra · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Anotar las mermas del turno (cristalería rota, derrames, cócteles devueltos y botella caída): sin este dato el pour cost del mes sale mal",
+   "grupo": "G1",
+   "palabras": 23,
+   "donde": [
+    "01 · Cierre Barra · B26"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "cristalería → glassware; lavavajillas de barra → glass washer",
+    "mermas → waste / spill log; pour cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0113",
+   "es": "Anotar incidencias del turno (rotura, queja, falta stock)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Barra · B27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0114",
+   "es": "Apagar música, iluminación decorativa",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra · B28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Verificar que no queda nadie en el local",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Barra · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Activar alarma y cerrar con llave",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Barra · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "  Cierre Terraza",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Barra · A32"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Recoger mesas y sillas de terraza (o asegurar)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Cierre Barra · B33"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0119",
+   "es": "Recoger ceniceros, cartas y servilleteros",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Barra · B34"
+   ],
+   "adaptar": "Ceniceros solo si tu ciudad o estado permite fumar en el patio (muchos lo prohíben): dilo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0120",
+   "es": "Guardar sombrillas y cojines",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Barra · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Tareas organizadas por área de servicio.",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "▸ Cada pestaña cubre una zona específica del bar",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0132",
+   "es": "▸ Las tareas están ordenadas cronológicamente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0133",
+   "es": "▸ Personaliza con la carta de cócteles de tu bar",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0135",
+   "es": "Partida de Coctelería Clásica",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Coctelería Clásica · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0137",
+   "es": "  Pre-Servicio Coctelería",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Coctelería Clásica · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0138",
+   "es": "Verificar stock de spirits base: ginebra, vodka, ron, tequila, whisky, brandy",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Coctelería Clásica · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0140",
+   "es": "Verificar stock de vermut (rojo, blanco, dry), amargos y licores",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Coctelería Clásica · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Preparar batch de cócteles de alta rotación (Negroni, Margarita pre-mix)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Coctelería Clásica · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Preparar infusiones del día (si aplica: gin infusionado, vodka con especias)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Coctelería Clásica · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0143",
+   "es": "Preparar jarabes especiales: miel-jengibre, canela, lavanda, orgeat",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Coctelería Clásica · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0144",
+   "es": "Tener por escrito los alérgenos de la carta de cócteles y que todo el equipo sepa dónde consultarlos: el orgeat lleva ALMENDRA, los sours CLARA DE HUEVO, los flips LÁCTEOS y los vinos y vermuts SULFITOS",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "02 · Coctelería Clásica · B11"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act): frutos de cáscara (almendra del orgeat), huevo (sours) y leche (flips); los sulfitos de vinos y vermuts se declaran como sensibilidad (no están entre los 9; en UK sí, entre los 14)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0145",
+   "es": "Verificar stock de bitters: Angostura, Peychaud's y orange bitters",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Coctelería Clásica · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0146",
+   "es": "Preparar twist de cítricos frescos (piel de limón, naranja, pomelo)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Coctelería Clásica · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0147",
+   "es": "  Durante el Servicio",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Coctelería Clásica · A15",
+    "03 · Diario Manager · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0148",
+   "es": "Mantener speed rail organizado y botellas orientadas (etiqueta al frente)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Coctelería Clásica · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0150",
+   "es": "Reponer hielo cada hora (o antes si hay pico) SIEMPRE con pala o pinzas, nunca con el vaso: un vaso roto obliga a vaciar la cubeta entera",
+   "grupo": "G1",
+   "palabras": 27,
+   "donde": [
+    "02 · Coctelería Clásica · B17"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "FDA Food Code: el hielo es un alimento. Pala o pinzas, nunca el vaso; la pala se guarda fuera del hielo o con el mango hacia fuera",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0151",
+   "es": "Reponer garnish y mise en place",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Coctelería Clásica · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0152",
+   "es": "Controlar calidad de cada cóctel antes de servir (prueba visual y aroma)",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Coctelería Clásica · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "Mantener estación limpia entre cócteles (wipe, organizar)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Coctelería Clásica · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0154",
+   "es": "Partida de Cerveza y Grifo",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Cerveza y Grifo · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0155",
+   "es": "  Preparación",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Cerveza y Grifo · A5",
+    "06 · After Work · A5",
+    "06 · Maridaje Catas · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "Verificar presión de CO₂ de barriles (2,5-3,0 bar)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Cerveza y Grifo · B6"
+   ],
+   "pistas": [
+    "Formato US: punto decimal y coma de miles",
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "adaptar": "Presión de CO₂ en PSI: la que fijó tu técnico de draft o tu distribuidor para cada sistema (temperatura, altitud, tipo de gas); sin la cifra española en bar",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0157",
+   "es": "Purgar grifos: tirar primer tercio hasta que salga limpio",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Cerveza y Grifo · B7"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "Verificar temperatura de barriles en cámara (3-5 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Cerveza y Grifo · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "adaptar": "Barriles a 38 °F (Brewers Association, Draught Beer Quality Manual); coletilla «— log reading: ____ °F»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Verificar stock de barriles de reserva por marca",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Cerveza y Grifo · B9"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0160",
+   "es": "Limpiar boquillas de grifo con agua caliente",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Cerveza y Grifo · B10"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Preparar cristalería de cerveza (congelar copas si es estilo del bar)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Cerveza y Grifo · B11"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "  Control de Stock de Botella",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Cerveza y Grifo · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0163",
+   "es": "Verificar stock de cerveza en botella y lata en cámara",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Cerveza y Grifo · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Reponer cámara de barra con stock de bodega",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Cerveza y Grifo · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Verificar stock de refrescos: tónica, soda, cola, ginger ale, ginger beer",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Cerveza y Grifo · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Verificar stock de agua mineral y con gas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Cerveza y Grifo · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Partida de Vinos por Copa y Bodega",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Vinos y Bodega · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "  Vinos por Copa",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Vinos y Bodega · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Verificar vinos abiertos por copa (blancos y rosados en cámara a 8-10 °C)",
+   "grupo": "G1",
+   "palabras": 14,
+   "donde": [
+    "02 · Vinos y Bodega · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: blancos y rosados a 46–50 °F (8–10 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Verificar vinos tintos abiertos (temperatura ambiente o 16-18 °C)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Vinos y Bodega · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "°F: tintos a temperatura ambiente o 61–64 °F (16–18 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "Comprobar que ningún vino abierto tiene más de 3 días (oler, probar)",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Vinos y Bodega · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0175",
+   "es": "Abrir botellas nuevas si quedan menos de 2 copas de algún vino",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "02 · Vinos y Bodega · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0176",
+   "es": "Actualizar pizarra de vinos por copa (si cambió alguno)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Vinos y Bodega · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "  Bodega y Reservas",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Vinos y Bodega · A12"
+   ],
+   "pistas": [
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Verificar temperatura de bodega / vinoteca (12-16 °C)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Vinos y Bodega · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "adaptar": "°F: bodega / vinoteca a 54–61 °F (12–16 °C)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "Revisar stock de vinos de carta (marcar los agotados)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Vinos y Bodega · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Organizar botellas por zona/denominación",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Vinos y Bodega · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0182",
+   "es": "Revisar estado de vinos especiales / añadas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Vinos y Bodega · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Checklists para el/la responsable del bar.",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0190",
+   "es": "▸ Diario: lo que hay que revisar cada día",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "▸ Semanal: tareas organizadas por día",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "▸ Mensual: revisiones periódicas",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "El registro de jornada es obligatorio",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "▸ Desde 2019 hay que registrar cada día la entrada, la salida y las pausas de todo el equipo, y conservar esos registros cuatro años. En un bar con cierres a las 02:30 es también la única prueba de las horas que se han hecho de más.",
+   "grupo": "G1",
+   "palabras": 47,
+   "donde": [
+    "03 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0195",
+   "es": "▸ La tarea diaria está en «Diario Manager» (cerrar y validar el registro del día) y la mensual en «Mensual Manager» (archivar el mes). El kit no sustituye a tu sistema de fichaje: te recuerda cerrarlo y guardarlo.",
+   "grupo": "G1",
+   "palabras": 37,
+   "donde": [
+    "03 · Instrucciones · B13"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Diario Manager",
+     "en": "Manager Daily"
+    },
+    {
+     "es": "Mensual Manager",
+     "en": "Manager Monthly"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "Checklist Diario del Manager / Responsable",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "  Antes de Abrir",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Revisar reservas del día (grupos, eventos privados, VIPs)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Verificar asistencia del equipo y cubrir bajas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Revisar stock crítico (spirits, cerveza, hielo, cítricos)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B8"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0203",
+   "es": "Confirmar entregas de proveedores del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0204",
+   "es": "Briefing con equipo: cóctel del día, eventos, notas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Diario Manager · B10"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0205",
+   "es": "Supervisar calidad de servicio y cócteles",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0206",
+   "es": "Control de ambiente: música, iluminación, temperatura",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0207",
+   "es": "Gestionar quejas o incidencias con clientes",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0208",
+   "es": "Supervisar cumplimiento de normativa (no servir a menores, aforo)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Diario Manager · B16"
+   ],
+   "pistas": [
+    "aforo → occupancy limit (cartel del fire marshal)",
+    "edad legal 21; DNI → ID; comprobar la edad → check ID / card"
+   ],
+   "adaptar": "EE. UU.: edad legal para beber 21 en todos los estados; pedir ID a quien la política de la casa diga; nunca servir a quien esté visiblemente ebrio; aforo = el cartel del fire marshal (occupancy limit). UK: Challenge 25",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0209",
+   "es": "Evaluar tiempos de servicio (objetivo: <3 min cóctel, <1 min cerveza)",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "03 · Diario Manager · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0210",
+   "es": "  Cierre de Día",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario Manager · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0211",
+   "es": "Revisar el DESCUADRE que ha quedado en «Cierre de Caja» del fichero 09-apertura-cierre-caja.xlsx y firmarlo: el manager valida el arqueo, no lo vuelve a contar",
+   "grupo": "G1",
+   "palabras": 29,
+   "donde": [
+    "03 · Diario Manager · B20"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "edad legal 21; DNI → ID; comprobar la edad → check ID / card"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Cierre de Caja",
+     "en": "Cash Drawer Closing"
+    }
+   ],
+   "cita_ficheros": [
+    {
+     "es": "09-apertura-cierre-caja.xlsx",
+     "en": "09-cash-drawer-opening-closing.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0213",
+   "es": "Revisar inventario rápido de botellas abiertas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Revisar las mermas que ha anotado la barra al cierre (cristalería rota, derrames, cócteles devueltos y producto caducado) y trasladarlas al control del pour cost",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "03 · Diario Manager · B22"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cristalería → glassware; lavavajillas de barra → glass washer",
+    "mermas → waste / spill log; pour cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0215",
+   "es": "Planificar necesidades del día siguiente",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y pausas), incluidas las horas de cierre pasadas las 00:00",
+   "grupo": "G1",
+   "palabras": 23,
+   "donde": [
+    "03 · Diario Manager · B24"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "Verificar cierre correcto del local",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0219",
+   "es": "  Lunes — Inventario",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Inventario completo de spirits (botellas llenas + nivel de abiertas)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Semanal Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Inventario de cerveza (barriles + botellas + latas)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B7"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0222",
+   "es": "Inventario de vinos (bodega + cámara)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0223",
+   "es": "Inventario de refrescos, zumos, jarabes y mixers",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0224",
+   "es": "Hacer pedidos semanales a distribuidores",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "  Martes — Equipo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal Manager · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Revisar cuadrante de turnos de la semana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0227",
+   "es": "Reunión con equipo (feedback, formación, objetivos)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Revisar formación de personal nuevo (mentoring)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B15"
+   ],
+   "adaptar": "Añade: y que quien sirva alcohol tenga vigente el curso de servicio responsable (TIPS, ServSafe Alcohol u otro aprobado) donde el estado lo exija",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "  Miércoles — Calidad",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal Manager · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0230",
+   "es": "Auditar 3 cócteles al azar (receta, presentación, tiempo)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Semanal Manager · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0231",
+   "es": "Revisar registros de temperatura de cámaras (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "03 · Semanal Manager · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámaras y botellero a 41 °F o menos (FDA Food Code 3-501.16: garnish cortado, lácteos y zumos son TCS); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0232",
+   "es": "Comprobar FIFO en cámaras y bodega",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0233",
+   "es": "Verificar limpieza profunda de barra (detrás, debajo)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B21"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0234",
+   "es": "  Jueves — Carta y Creatividad",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Revisar ventas por cóctel (top 5 y bottom 5)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Semanal Manager · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Desarrollar o rotar cóctel de la semana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Actualizar carta si hay cambios",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0238",
+   "es": "Preparar contenido RRSS (foto de cóctel estrella)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B27"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "  Viernes — Pre Fin de Semana",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Verificar stock para fin de semana (30-50% más que entre semana)",
+   "grupo": "G1",
+   "palabras": 12,
+   "donde": [
+    "03 · Semanal Manager · B30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "Confirmar turnos reforzados de fin de semana",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B31"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Verificar stock de hielo extra",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B32"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Preparar batches de cócteles de alta rotación",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B33",
+    "06 · Nochevieja · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0245",
+   "es": "  Financiero",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Mensual Manager · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Revisar pour cost (objetivo: 18-22% spirits, 25-30% cerveza)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Mensual Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Analizar mermas del mes (objetivo: <3%)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B7"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "mermas → waste / spill log; pour cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Comparar ventas mes actual vs. anterior y mismo mes año anterior",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "03 · Mensual Manager · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0250",
+   "es": "Revisar rentabilidad por categoría (cócteles, cerveza, vino, café)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual Manager · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0252",
+   "es": "  Mantenimiento",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Mensual Manager · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0253",
+   "es": "Limpieza profunda de líneas de grifo (con producto específico)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "03 · Mensual Manager · B13"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "adaptar": "Brewers Association (Draught Beer Quality Manual): las líneas de cerveza se limpian cada 2 semanas y con ácido cada 3 meses; en esta lista, comprobar y firmar las limpiezas del periodo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Mantenimiento de máquina de espresso (descalcificar, cambiar juntas)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0257",
+   "es": "Revisar el estado de las cámaras frigoríficas: limpieza, cierre de puertas y temperatura (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 22,
+   "donde": [
+    "03 · Mensual Manager · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámaras y botellero a 41 °F o menos (FDA Food Code 3-501.16: garnish cortado, lácteos y zumos son TCS); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0258",
+   "es": "Verificar estado de cristalería (reponer piezas rotas/rayadas)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual Manager · B16"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Calibrar termómetros y sondas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B17"
+   ],
+   "adaptar": "Calibración por el método del punto de hielo (32 °F)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "  Evaluación",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "03 · Mensual Manager · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0261",
+   "es": "Evaluación informal del equipo (skills, actitud, puntualidad)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Mensual Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Visitar 2-3 bares de la competencia (tendencias, precios, servicio)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Mensual Manager · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Proponer nuevos cócteles para la carta",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0265",
+   "es": "Revisar reviews online (Google, TripAdvisor, redes)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Mensual Manager · B23"
+   ],
+   "pistas": [
+    "D16: reseñas en Google, Yelp y TripAdvisor; Google Business Profile",
+    "RRSS → social media"
+   ],
+   "adaptar": "Plataformas US: Google, Yelp y TripAdvisor",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Checklists específicos para cada perfil profesional.",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "▸ Cada pestaña = un puesto de trabajo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0272",
+   "es": "▸ Perfecto para onboarding de personal nuevo",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0274",
+   "es": "Tareas Diarias — Head Bartender",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Head Bartender · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "  Pre-Servicio",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Head Bartender · A5",
+    "04 · Bartender · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0276",
+   "es": "Verificar mise en place completa de coctelería",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Head Bartender · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0277",
+   "es": "Preparar cócteles especiales del día / de la carta secreta",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Head Bartender · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "Supervisar calibración de café (espresso test)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Head Bartender · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Briefing con equipo: cóctel del día, VIPs, eventos",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Head Bartender · B9"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Verificar que la carta de cócteles está actualizada",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Head Bartender · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0281",
+   "es": "  Servicio",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Head Bartender · A12",
+    "04 · Bartender · A12",
+    "04 · Camarero Barra · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0282",
+   "es": "Preparar cócteles premium y de alta complejidad",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Head Bartender · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0283",
+   "es": "Supervisar calidad de cócteles preparados por el equipo",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Head Bartender · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0284",
+   "es": "Atender a clientes VIP y regulares en barra",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Head Bartender · B15"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0285",
+   "es": "Recomendar cócteles según preferencias del cliente",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Head Bartender · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0286",
+   "es": "Controlar tiempos de preparación",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Head Bartender · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0287",
+   "es": "  Cierre y Desarrollo",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Head Bartender · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0288",
+   "es": "Supervisar cierre correcto de barra",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Head Bartender · B20"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0289",
+   "es": "Desarrollar nuevas recetas y técnicas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Head Bartender · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0290",
+   "es": "Formar al equipo en nuevas técnicas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Head Bartender · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0291",
+   "es": "Calcular coste de nuevos cócteles (escandallo)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Head Bartender · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0292",
+   "es": "Tareas Diarias — Bartender",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Bartender · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Preparar mise en place de su estación",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Bartender · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0294",
+   "es": "Cortar cítricos y preparar garnish",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Bartender · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Preparar jarabes del día",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Bartender · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Pulir cristalería de su zona",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Bartender · B9"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Verificar stock de su speed rail",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Bartender · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "Preparar cócteles según carta y pedidos especiales",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Bartender · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0299",
+   "es": "Servir cerveza de grifo y botella",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Bartender · B14"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0300",
+   "es": "Servir vinos por copa",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Bartender · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0301",
+   "es": "Preparar cafés e infusiones",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Bartender · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Cobrar en barra (si el sistema lo permite)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Bartender · B17"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cuenta abierta → tab; cerrar cuentas → close out tabs; cobrar → cash out"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "Mantener estación limpia y ordenada",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Bartender · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "  Cierre",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Bartender · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Limpiar estación completa",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Bartender · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Guardar mise en place en cámara",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Bartender · B22"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Lavar y guardar utensilios personales",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Bartender · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Tareas Diarias — Barback / Auxiliar de Barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barback · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "  Soporte Continuo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Barback · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Reponer hielo constantemente (antes de que pidan)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Barback · B6"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Reponer cristalería limpia en estaciones",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barback · B7"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Recoger cristalería sucia de mesas y barra",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Barback · B8"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Lavar cristalería en lavavajillas de barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barback · B9"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Reponer servilletas, pajitas y posavasos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barback · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Reponer botellas de speed rail desde bodega",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Barback · B11"
+   ],
+   "pistas": [
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Reponer refrescos en cámara de barra",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barback · B12"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Mantener suelo limpio (secar derrames inmediatamente)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barback · B13"
+   ],
+   "pistas": [
+    "mermas → waste / spill log; pour cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "  Limpieza",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Barback · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Limpiar mesas y recoger vasos de zona de clientes",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Barback · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Limpiar baños cada 2 horas (reponer jabón, papel)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Barback · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Vaciar papeleras y ceniceros de terraza",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Barback · B18"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Ceniceros solo si tu ciudad o estado permite fumar en el patio (muchos lo prohíben): dilo así",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Barrer y fregar al cierre",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barback · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0324",
+   "es": "Sacar basura y reciclar vidrio",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Barback · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Tareas Diarias — Camarero de Sala / Terraza",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero Barra · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D15: terraza → patio",
+    "en el bar: camarero de sala o terraza → cocktail server; barback y head bartender se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Atender mesas de sala y/o terraza",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Camarero Barra · B6"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0328",
+   "es": "Tomar comandas con conocimiento de la carta de cócteles",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "04 · Camarero Barra · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0329",
+   "es": "Servir bebidas desde barra a mesa",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero Barra · B8"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "Recomendar cócteles y maridajes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero Barra · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0331",
+   "es": "Cobrar en mesa (datáfono portátil)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Camarero Barra · B10"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "cuenta abierta → tab; cerrar cuentas → close out tabs; cobrar → cash out"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Recoger cristalería y mantener mesas limpias",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero Barra · B11"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0339",
+   "es": "Tareas de frecuencia semanal o mensual.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0340",
+   "es": "▸ Limpieza profunda por zona",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0341",
+   "es": "▸ Mantenimiento de equipos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "▸ Inventario y control de stock",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Instrucciones · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0343",
+   "es": "Trimestral, anual y vida útil del producto abierto",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Instrucciones · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0344",
+   "es": "▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, extintores y BIE, conductos de extracción, instalación de gas, frigorista, legionela, limitador acústico, licencia de terraza, seguro y facturación.",
+   "grupo": "G2",
+   "palabras": 38,
+   "donde": [
+    "05 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "D15: terraza → patio",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Describe la lista US de la hoja «Quarterly & Annual»: control de plagas, extintores, campana y sistema de extinción (si hay cocina), gas y calefactores de patio, servicio del sistema de draft, frío, filtros de agua, legionela, música y ruido, licencia de alcohol y permiso de patio, seguros y licencias de música, POS / sales tax. Sin DDD, BIE, limitador acústico ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "▸ Anota el número de parte en la columna verde y firma cuando la empresa haya venido; la última tarea de la hoja es apuntar la fecha de la próxima revisión de cada contrato.",
+   "grupo": "G2",
+   "palabras": 33,
+   "donde": [
+    "05 · Instrucciones · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0346",
+   "es": "▸ Al pie de «Inventario» tienes una tabla editable con la vida útil del producto abierto y elaborado de la barra: zumos, jarabes, batches, vermut abierto y barril conectado. Son cifras orientativas — ajústalas a tu producto y a tu rotación.",
+   "grupo": "G2",
+   "palabras": 39,
+   "donde": [
+    "05 · Instrucciones · B14"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Inventario",
+     "en": "Weekly Inventory"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0347",
+   "es": "▸ Estás en 05-tareas-semanales-mensuales.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.",
+   "grupo": "G2",
+   "palabras": 30,
+   "donde": [
+    "05 · Instrucciones · B38"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "05-tareas-semanales-mensuales.xlsx",
+     "en": "05-bar-cleaning-checklist-inventory-maintenance.xlsx"
+    },
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-venue-opening-closing-checklist.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-bar-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0351",
+   "es": "  Barra y Coctelería",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · A5"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0352",
+   "es": "Limpiar interior de todas las cámaras de barra",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Limpieza Semanal · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0354",
+   "es": "Limpiar grifos de cerveza con producto específico",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B7"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "Limpiar interior de lavavajillas de barra",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B8"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0356",
+   "es": "Limpiar estanterías de botellas (polvo, derrames)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B9"
+   ],
+   "pistas": [
+    "mermas → waste / spill log; pour cost se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "Limpiar speed rail y pouring spouts",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0359",
+   "es": "Limpiar espejo y cristales de barra",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B11"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0361",
+   "es": "Fregar suelo detrás de barra con desengrasante",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B12"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0363",
+   "es": "Limpiar campana extractora (si hay cocina de barra)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Limpieza Semanal · B13"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0365",
+   "es": "  Sala y Terraza",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · A15"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0366",
+   "es": "Limpiar tapicería de taburetes y sillas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0367",
+   "es": "Limpiar mesas a fondo (patas, base)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "Limpiar cristales y espejos de sala",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B18"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Limpiar mobiliario de terraza a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B19"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0370",
+   "es": "  Baños",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Limpieza Semanal · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Limpieza profunda de baños (suelos, sanitarios, espejos)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Limpieza Semanal · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0372",
+   "es": "Verificar funcionamiento de cisternas y grifos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B23"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0373",
+   "es": "Reponer dispensadores de jabón y papel",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0375",
+   "es": "  Grifo y Cerveza",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · A5"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Limpieza completa de líneas de grifo (producto profesional)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Mantenimiento Mensual · B6"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "adaptar": "Brewers Association (Draught Beer Quality Manual): las líneas de cerveza se limpian cada 2 semanas y con ácido cada 3 meses; en esta lista, comprobar y firmar las limpiezas del periodo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0377",
+   "es": "Verificar presión y reguladores de CO₂",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B7"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "Revisar juntas y acoplamientos de barriles",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B8"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0379",
+   "es": "  Café",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Mantenimiento Mensual · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Descalcificar la máquina de espresso: la frecuencia depende de la dureza de tu agua (mensual con agua dura, trimestral con agua blanda o con filtro) — ver la analítica en «Trimestral y Anual»",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "05 · Mantenimiento Mensual · B11"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Cambiar juntas de grupo si es necesario",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "Calibrar presión de la máquina (9 bar)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Mantenimiento Mensual · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0383",
+   "es": "Limpiar molinillo (vaciar, aspirar, calibrar)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "  Frío y General",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "Limpiar condensadores de cámaras",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B17"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Verificar temperaturas con sonda independiente",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Mantenimiento Mensual · B18"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Revisar juntas de puertas de cámaras",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0388",
+   "es": "Inventario de cristalería (reponer rotas/rayadas)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Mantenimiento Mensual · B20"
+   ],
+   "pistas": [
+    "cristalería → glassware; lavavajillas de barra → glass washer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Inventario Semanal y Control de Stock",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "  Spirits y Licores",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Contar botellas llenas + medir nivel de abiertas: ginebra",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Inventario · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0392",
+   "es": "Contar botellas: vodka, ron blanco, ron oscuro",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Contar botellas: tequila, mezcal, whisky/bourbon",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Contar botellas: brandy, cognac, licores (Cointreau, Campari, Aperol...)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Inventario · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Contar botellas: vermut (rojo, blanco, dry), amargos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "  Cerveza, Vino y Refrescos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0397",
+   "es": "Contar barriles: llenos + porcentaje de los conectados",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario · B13"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Contar cerveza botella/lata por marca",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Contar botellas de vino en bodega y cámara",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Inventario · B15"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0400",
+   "es": "Contar stock de tónica, soda, cola, ginger ale, ginger beer, zumos",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "05 · Inventario · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Contar stock de agua mineral y con gas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Inventario · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0402",
+   "es": "  Consumibles",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0403",
+   "es": "Contar stock de hielo (o verificar producción de máquina)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Inventario · B20"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0404",
+   "es": "Contar stock de cítricos (limones, limas, naranjas)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0405",
+   "es": "Contar stock de servilletas, pajitas, posavasos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0406",
+   "es": "Contar stock de café en grano y leches",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · Inventario · B23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0407",
+   "es": "Revisar fechas de jarabes, batches, zumos y botellas abiertas y retirar lo que supere su vida útil (ver la tabla al pie de esta hoja)",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "05 · Inventario · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "VIDA ÚTIL ORIENTATIVA DEL PRODUCTO ABIERTO Y ELABORADO EN BARRA — ajústala a tu producto y a tu proveedor",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "05 · Inventario · A35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Producto",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario · B36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0412",
+   "es": "Zumo de cítricos recién exprimido",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · B37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0413",
+   "es": "24 h en frío",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario · C37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0414",
+   "es": "Pasado el día pierde acidez y aroma: se exprime por servicio, no por semana",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "05 · Inventario · D37"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0415",
+   "es": "Jarabe simple (1:1)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario · B38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "3-4 semanas en frío",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · C38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0417",
+   "es": "Un golpe de vodka alarga la vida útil; si enturbia o huele a fermento, fuera",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · Inventario · D38"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0418",
+   "es": "Jarabes con fruta, hierbas o frutos secos (orgeat, gomme)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "05 · Inventario · B39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "1-2 semanas en frío",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · C39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0420",
+   "es": "Etiquetar con la fecha de elaboración; el orgeat lleva ALMENDRA y va declarado en la carta",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "05 · Inventario · D39"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Batch de cóctel SIN cítrico (Negroni, Manhattan)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario · B40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Sólo destilados y vinos fortificados: botella tapada, en frío y fuera de la luz",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "05 · Inventario · D40"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0424",
+   "es": "Batch de cóctel CON cítrico",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · B41"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0425",
+   "es": "2-3 días en frío",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · C41"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "Manda el zumo: pasado ese plazo el batch amarga aunque el alcohol aguante",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · Inventario · D41"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "Vermut y vinos fortificados abiertos",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · B42"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "1 mes en cámara",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario · C42"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0429",
+   "es": "Tapón hermético y frío: también los rojos, que se dejan fuera por costumbre",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · Inventario · D42"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0430",
+   "es": "Vino abierto por copa",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario · B43"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0431",
+   "es": "2-3 días",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario · C43"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0432",
+   "es": "Con argón o sistema de conservación, más; anota la fecha en la propia botella",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "05 · Inventario · D43"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Barril de cerveza conectado",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Inventario · B44"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "3-5 días",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario · C44"
+   ],
+   "adaptar": "Manda la fecha del barril (ver la nota): sin el «3-5 días»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Depende de la limpieza de líneas: pasado el plazo sabe a línea sucia, no a cerveza",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "05 · Inventario · D44"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "adaptar": "Barril conectado a CO₂: manda la fecha del barril (Brewers Association: sin pasteurizar 45-60 días, pasteurizada 90-120 días desde el envasado) con el sistema equilibrado y las líneas limpias cada 2 semanas; los «3-5 días» solo valen para bombas de aire (party pumps)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Garnish cortado (cítricos, pepino, hierbas)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · B45"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0437",
+   "es": "El servicio",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario · C45"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0438",
+   "es": "Se corta por turno: lo del día anterior se ve en la copa y se nota en el trago",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "05 · Inventario · D45"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Nata montada, claras pasteurizadas y lácteos abiertos",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · Inventario · B46"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "24-48 h en frío",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario · C46"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "Fecha de apertura en la etiqueta; en duda, fuera: son los alérgenos que más se sirven en barra",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "05 · Inventario · D46"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0456",
+   "es": "  BARRA, FRÍO Y AGUA",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Trimestral y Anual · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0461",
+   "es": "Cambiar el filtro de agua de la máquina de hielo y del espresso, y analizar la dureza del agua para fijar la frecuencia de descalcificado",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "05 · Trimestral y Anual · B14"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0465",
+   "es": "  LICENCIAS, RUIDO Y ADMINISTRACIÓN",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Trimestral y Anual · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0477",
+   "es": "Checklists para noches especiales y eventos.",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0478",
+   "es": "▸ Los bares facturan su máximo en noches de evento y temporadas festivas",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "06 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0479",
+   "es": "▸ Personaliza con los eventos de tu zona",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Instrucciones · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0480",
+   "es": "Antes de cerrar una cata o un evento privado",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Instrucciones · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0481",
+   "es": "▸ La hoja «Maridaje Catas» arranca ahora en el momento en que se confirma la reserva, no dos días antes: alérgenos e intolerancias por escrito, precio por persona y qué incluye, señal cobrada, política de cancelación y plazo para el número final de asistentes.",
+   "grupo": "G2",
+   "palabras": 43,
+   "donde": [
+    "06 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: señal / anticipo → deposit",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Maridaje Catas",
+     "en": "Pairings & Tastings"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0482",
+   "es": "▸ Los alérgenos también van en la barra del día a día: la carta de cócteles los declara en «Coctelería Clásica» (02) y los snacks de cortesía del after-work, en su propia hoja. Que un producto sea gratis o sea una bebida no exime de informar.",
+   "grupo": "G2",
+   "palabras": 46,
+   "donde": [
+    "06 · Instrucciones · B12"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan",
+    "after-work → happy hour"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Coctelería Clásica",
+     "en": "Cocktail Station"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0483",
+   "es": "▸ Estás en 06-eventos-festivos.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.",
+   "grupo": "G2",
+   "palabras": 29,
+   "donde": [
+    "06 · Instrucciones · B36"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "06-eventos-festivos.xlsx",
+     "en": "06-bar-event-checklists.xlsx"
+    },
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-venue-opening-closing-checklist.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-bar-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0484",
+   "es": "Noche de Cócteles Especiales / Tasting",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Cócteles · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0487",
+   "es": "  Preparación (48h antes)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Cócteles · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0488",
+   "es": "Diseñar menú de cócteles especiales (4-6 cócteles)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Noche Cócteles · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0490",
+   "es": "Calcular ingredientes necesarios y hacer pedidos extra",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Cócteles · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0491",
+   "es": "Preparar infusiones, cordials o jarabes especiales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Cócteles · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0493",
+   "es": "Publicar evento en RRSS con fotos de cócteles",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Noche Cócteles · B9"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0494",
+   "es": "  Día del Evento",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Cócteles · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0495",
+   "es": "Preparar batches de cócteles especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Cócteles · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0496",
+   "es": "Preparar garnish especial (deshidratados, flores comestibles, espuma)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Cócteles · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0497",
+   "es": "Imprimir menú especial / colocar en mesas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Cócteles · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0498",
+   "es": "Reforzar equipo (bartender extra, barback extra)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Noche Cócteles · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0500",
+   "es": "Stock extra de hielo (50% más que un día normal)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Noche Cócteles · B16"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0501",
+   "es": "Nochevieja / Fin de Año",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Nochevieja · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0502",
+   "es": "  Planificación",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · Nochevieja · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0503",
+   "es": "Definir concepto de la noche (fiesta, cena + barra libre, precio entrada)",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "06 · Nochevieja · B6"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0505",
+   "es": "Calcular stock necesario (3-4x un viernes normal)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Nochevieja · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0507",
+   "es": "Contratar personal extra",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Nochevieja · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0508",
+   "es": "Preparar decoración especial",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Nochevieja · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0510",
+   "es": "Preparar uvas y cava/champagne para las 12",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Nochevieja · B10"
+   ],
+   "adaptar": "Champán / espumoso para el brindis de medianoche; SIN uvas ni cava",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0512",
+   "es": "  Día de Nochevieja",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Nochevieja · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0513",
+   "es": "Stock masivo de hielo",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Nochevieja · B13"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0516",
+   "es": "Preparar botellas de champagne/cava en hielo",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Nochevieja · B15"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "Champán / espumoso (sin cava)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0517",
+   "es": "Servir cava a medianoche",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Nochevieja · B16"
+   ],
+   "adaptar": "Brindis a medianoche solo para mayores de 21 (comprobar ID) y opción sin alcohol",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0519",
+   "es": "Gestionar aforo y seguridad",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Nochevieja · B17"
+   ],
+   "pistas": [
+    "aforo → occupancy limit (cartel del fire marshal)"
+   ],
+   "adaptar": "Aforo máximo del cartel del fire marshal (occupancy limit) y control de ID en la puerta (21+)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0520",
+   "es": "Sesión After-Work / Happy Hour",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · After Work · A1"
+   ],
+   "pistas": [
+    "after-work → happy hour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0521",
+   "es": "Definir horario de happy hour (ej. 18:00-20:00)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · After Work · B6"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "adaptar": "Horario de 12 h (6:00–8:00 PM); algunos estados limitan o prohíben la happy hour (p. ej. Massachusetts): «check your state's ABC/liquor authority»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0522",
+   "es": "Fijo",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · After Work · E6",
+    "06 · After Work · E7",
+    "B02 · Calendario Anual · E24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0523",
+   "es": "Definir carta reducida de cócteles con descuento",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · After Work · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0524",
+   "es": "Publicar en RRSS y colocar pizarra en la entrada",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · After Work · B8"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0526",
+   "es": "  Servicio After-Work",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · After Work · A10"
+   ],
+   "pistas": [
+    "after-work → happy hour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0527",
+   "es": "Preparar batches de cócteles de happy hour",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · After Work · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0528",
+   "es": "Preparar snacks / tapas de cortesía (si aplica)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · After Work · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0529",
+   "es": "Tener por escrito los alérgenos de los snacks y las tapas de cortesía y que el equipo sepa dónde consultarlos: que sean gratis no exime de informar",
+   "grupo": "G2",
+   "palabras": 27,
+   "donde": [
+    "06 · After Work · B13"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0530",
+   "es": "Servicio rápido: objetivo <2 min por cóctel",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · After Work · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0531",
+   "es": "Mantener música y ambiente apropiados para after-work",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · After Work · B15"
+   ],
+   "pistas": [
+    "after-work → happy hour"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0532",
+   "es": "Maridaje / Cata Guiada",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Maridaje Catas · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0534",
+   "es": "Recoger POR ESCRITO alérgenos, intolerancias y dietas de los asistentes y trasladarlos a la barra y a quien prepare la comida del maridaje (en una cata, frutos secos y sulfitos son los dos que siempre aparecen)",
+   "grupo": "G2",
+   "palabras": 36,
+   "donde": [
+    "06 · Maridaje Catas · B6"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0536",
+   "es": "Cerrar por escrito el precio por persona y qué incluye: número de piezas, maridaje de comida, copa de despedida y si hay botella para llevar",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "06 · Maridaje Catas · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0537",
+   "es": "Cobrar la señal o el anticipo y dejar constancia del importe y la fecha",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "06 · Maridaje Catas · B8"
+   ],
+   "pistas": [
+    "Glosario: señal / anticipo → deposit",
+    "cuenta abierta → tab; cerrar cuentas → close out tabs; cobrar → cash out"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0538",
+   "es": "Firmar la política de cancelación y el plazo para dar el número final de asistentes",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "06 · Maridaje Catas · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0539",
+   "es": "Acordar la hora de entrada y de salida del espacio y quién monta y desmonta la sala",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "06 · Maridaje Catas · B10"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0540",
+   "es": "Seleccionar 4-6 piezas para cata (vinos, spirits, cócteles)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Maridaje Catas · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0541",
+   "es": "Preparar fichas de cata para clientes",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Maridaje Catas · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0543",
+   "es": "Confirmar asistentes y preparar sala",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Maridaje Catas · B15"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0545",
+   "es": "Preparar la comida del maridaje (quesos, chocolates y tapas)",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "06 · Maridaje Catas · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0546",
+   "es": "  Evento",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · Maridaje Catas · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0547",
+   "es": "Presentar cada pieza: historia, notas de cata, técnica",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Maridaje Catas · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0549",
+   "es": "Servir en copa/vaso correcto",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Maridaje Catas · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0550",
+   "es": "Gestionar ritmo de la cata (15-20 min por pieza)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "06 · Maridaje Catas · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0561",
+   "es": "  Apertura (15:00 - 18:00) — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "07 · Por Franja Horaria · A5"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0563",
+   "es": "  Servicio Tarde (18:00 - 22:00) — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Por Franja Horaria · A12"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0564",
+   "es": "  Servicio Noche (22:00 - 02:00) — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "07 · Por Franja Horaria · A19"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0565",
+   "es": "  Cierre (02:00 - 03:00) — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "07 · Por Franja Horaria · A26"
+   ],
+   "pistas": [
+    "D9: horas en reloj de 12 h («6:00 PM», «11:30 PM», medianoche = «midnight»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0566",
+   "es": "Plantilla en Blanco — Por Zona",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Por Zona · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0568",
+   "es": "  Barra Principal — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Por Zona · A5"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0569",
+   "es": "  Coctelería — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Por Zona · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0570",
+   "es": "  Bodega / Almacén — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Por Zona · A19"
+   ],
+   "pistas": [
+    "bodega → stockroom (de vinos: wine cellar)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0571",
+   "es": "  Terraza — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Por Zona · A25"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0572",
+   "es": "Plantilla en Blanco — Por Perfil",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "07 · Por Perfil · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0573",
+   "es": "  Head Bartender — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "07 · Por Perfil · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0574",
+   "es": "  Bartender — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Por Perfil · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0575",
+   "es": "  Barback — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Por Perfil · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0576",
+   "es": "  Camarero — escribe aquí abajo tus tareas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "07 · Por Perfil · A23"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "en el bar: camarero de sala o terraza → cocktail server; barback y head bartender se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0581",
+   "es": "▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.",
+   "grupo": "G2",
+   "palabras": 25,
+   "donde": [
+    "08 · Instrucciones · B6"
+   ],
+   "motivo": "contexto: RESTAURANT",
+   "base_en": "▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day."
+  },
+  {
+   "id": "c0582",
+   "es": "▸ El detalle por área (barra) va en 01-apertura-cierre.xlsx: no repitas el trabajo, cada fichero cubre un nivel distinto.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "08 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-bar-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0589",
+   "es": "Apertura del Negocio — Bar / Cocktails",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Apertura del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Bar / Cocktails» (y «· Bar»)"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Opening Checklist"
+  },
+  {
+   "id": "c0616",
+   "es": "Verificar grifos de cerveza y presión de CO₂",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Apertura del Negocio · B20"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0617",
+   "es": "Montar garnish station",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "08 · Apertura del Negocio · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0618",
+   "es": "Comprobar stock de hielo",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B22"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0620",
+   "es": "Cierre del Negocio — Bar / Cocktails",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Cierre del Negocio · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Bar / Cocktails» (y «· Bar»)"
+   ],
+   "motivo": "contexto: Restaurant",
+   "base_en": "Restaurant Closing Checklist"
+  },
+  {
+   "id": "c0622",
+   "es": "Verificar que no quedan clientes en el local",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "08 · Cierre del Negocio · B6"
+   ],
+   "motivo": "contexto: restaurant",
+   "base_en": "Make sure no guests remain in the restaurant"
+  },
+  {
+   "id": "c0635",
+   "es": "Limpiar grifos de cerveza",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Cierre del Negocio · B18"
+   ],
+   "pistas": [
+    "Draft US: grifo → tap / faucet; barril → keg; líneas → draft lines; boquilla → faucet nozzle; acoplamiento → coupler"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0636",
+   "es": "Vaciar y limpiar garnish station",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "08 · Cierre del Negocio · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0735",
+   "es": "Plantilla para la reunión diaria del equipo antes de abrir.",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0736",
+   "es": "▸ 5 minutos que mejoran la comunicación",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0737",
+   "es": "▸ Imprime y pega en barra cada día",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Instrucciones · B7"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0738",
+   "es": "▸ Estás en BONUS-01-briefing-servicio.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.",
+   "grupo": "G2",
+   "palabras": 30,
+   "donde": [
+    "B01 · Instrucciones · B31"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "BONUS-01-briefing-servicio.xlsx",
+     "en": "BONUS-01-bar-pre-shift-meeting-template.xlsx"
+    },
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-venue-opening-closing-checklist.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-bar-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0739",
+   "es": "Briefing Pre-Servicio — Bar / Cocktails",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Diario · A1"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "D2: la EN no lleva el sufijo de variante: quita «— Bar / Cocktails» (y «· Bar»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0740",
+   "es": "  Servicio del Día",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Diario · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0741",
+   "es": "Cóctel del día / cóctel especial: nombre, ingredientes, precio",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0743",
+   "es": "Reservas y eventos privados del día",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Diario · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0744",
+   "es": "Clientes VIP o regulares que se esperan",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B01 · Briefing Diario · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0745",
+   "es": "Promociones activas (happy hour, 2x1, etc.)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Diario · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0746",
+   "es": "  Alertas y Notas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Diario · A11"
+   ],
+   "pistas": [
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0747",
+   "es": "Productos agotados o en falta",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B01 · Briefing Diario · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0748",
+   "es": "Cambios en la carta o precios",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Diario · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0749",
+   "es": "Incidencias del turno anterior",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Diario · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0750",
+   "es": "Cumpleaños o celebraciones de clientes (si se sabe)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B01 · Briefing Diario · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0751",
+   "es": "  Equipo del Turno",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B01 · Briefing Diario · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0752",
+   "es": "Quién trabaja hoy y en qué puesto (barra, sala, barback)",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B01 · Briefing Diario · B18"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0753",
+   "es": "Personal nuevo / en formación (asignar mentor)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B01 · Briefing Diario · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0754",
+   "es": "Horarios especiales de hoy",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B01 · Briefing Diario · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0758",
+   "es": "Fechas clave para bares con tareas asociadas.",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Instrucciones · B4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0759",
+   "es": "▸ Cada fecha incluye qué preparar y con cuánta antelación",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Instrucciones · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0760",
+   "es": "▸ Añade las fechas locales de tu zona",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Instrucciones · B7"
+   ],
+   "adaptar": "Añade la nota UK: bank holidays y Boxing Day; para abrir más allá del horario de tu premises licence, un Temporary Event Notice",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0761",
+   "es": "▸ Estás en BONUS-02-calendario-anual-tareas.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.",
+   "grupo": "G2",
+   "palabras": 31,
+   "donde": [
+    "B02 · Instrucciones · B15"
+   ],
+   "pistas": [
+    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)"
+   ],
+   "cita_ficheros": [
+    {
+     "es": "BONUS-02-calendario-anual-tareas.xlsx",
+     "en": "BONUS-02-bar-events-calendar.xlsx"
+    },
+    {
+     "es": "08-apertura-cierre-negocio.xlsx",
+     "en": "08-venue-opening-closing-checklist.xlsx"
+    },
+    {
+     "es": "01-apertura-cierre.xlsx",
+     "en": "01-bar-opening-closing-checklists.xlsx"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0762",
+   "es": "Calendario Anual de Fechas Clave — Bar / Cocktails",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Bar / Cocktails» (y «· Bar»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0763",
+   "es": "Preparación Especial",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "B02 · Calendario Anual · D3"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0766",
+   "es": "Decidir si se abre; si se cierra, comunicarlo en Google Business Profile y en RRSS con una semana",
+   "grupo": "G2",
+   "palabras": 18,
+   "donde": [
+    "B02 · Calendario Anual · D4"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0768",
+   "es": "La madrugada del 1 es la resaca de la noche más fuerte del año",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "B02 · Calendario Anual · F4"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0771",
+   "es": "Cócteles para parejas, carta especial, decoración",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · D5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0773",
+   "es": "Reforzar servicio de mesa",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0776",
+   "es": "Cócteles temáticos, decoración, horario ampliado y control de aforo con disfraces",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · D6"
+   ],
+   "pistas": [
+    "aforo → occupancy limit (cartel del fire marshal)"
+   ],
+   "adaptar": "Evento EN: «Mardi Gras». Sustituye a Carnaval (Fat Tuesday, fecha variable): mismas tareas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0777",
+   "es": "Variable según zona; en muchas ciudades es la noche del año",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · F6"
+   ],
+   "adaptar": "Evento EN: «Mardi Gras». Fecha variable; enorme en Nueva Orleans y en la costa del Golfo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0780",
+   "es": "Stock extra de cerveza, whisky irlandés, decoración verde",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "B02 · Calendario Anual · D7"
+   ],
+   "adaptar": "Evento EN: «St. Patrick's Day». Mismas tareas + control de ID en la puerta (21+)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0781",
+   "es": "Evento muy potente para bares",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · F7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0784",
+   "es": "Ajustar horarios, cócteles de temporada",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D8"
+   ],
+   "adaptar": "Evento EN: «Spring break». Sustituye a Semana Santa. Mismas tareas + control de ID (21+): público joven",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0785",
+   "es": "Variable según zona",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · F8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0788",
+   "es": "Horario de festivo, terraza a pleno rendimiento y stock para varios días seguidos",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · D9"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Evento EN: «Memorial Day weekend (last Mon of May)». Sustituye al 1 de mayo y sus puentes: horario de festivo, patio a pleno rendimiento y stock para varios días seguidos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0789",
+   "es": "Un puente mueve más que un sábado normal y se pide con el mismo plazo",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "B02 · Calendario Anual · F9"
+   ],
+   "adaptar": "Evento EN: «Memorial Day weekend (last Mon of May)». «Puente» → long weekend",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0792",
+   "es": "Margaritas, mezcal, tequila, decoración mexicana",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0793",
+   "es": "Tendencia en crecimiento",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · F10"
+   ],
+   "adaptar": "Evento EN: «Cinco de Mayo». En EE. UU. ya es una de las grandes noches de bar del año",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0796",
+   "es": "Cócteles refrescantes, terraza a tope",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D11"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0797",
+   "es": "Abrir temporada de terraza",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F11"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Evento EN: «First day of summer». Patio a pleno rendimiento",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0800",
+   "es": "Mojitos, gin tonics, spritz, cócteles con fruta",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · D12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0802",
+   "es": "Stock extra de hielo y cítricos",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · F12"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0805",
+   "es": "Servicio de festivo, refuerzo de turnos y stock extra de hielo y cítricos",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · D13"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "Evento EN: «Independence Day». Sustituye a la Asunción: servicio de festivo, refuerzo de turnos y stock extra de hielo y cítricos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0806",
+   "es": "Muchas fiestas patronales caen esa semana: mira el calendario local",
+   "grupo": "G2",
+   "palabras": 10,
+   "donde": [
+    "B02 · Calendario Anual · F13"
+   ],
+   "adaptar": "Evento EN: «Independence Day». Mira el calendario local: fuegos artificiales, desfiles y calles cortadas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0809",
+   "es": "Cócteles temáticos, decoración, hielo seco",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D14"
+   ],
+   "pistas": [
+    "Hielo: cubeta → ice well / ice bin; pala → ice scoop; hielo pilé → crushed ice"
+   ],
+   "adaptar": "Evento EN: «Halloween». Hielo seco solo como decoración (nunca suelto dentro de la copa del cliente) y manipulado con guantes aislantes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0810",
+   "es": "Noche fuerte de facturación",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0813",
+   "es": "Vino nuevo, maridaje",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · D15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0814",
+   "es": "Para bares de vino",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0817",
+   "es": "Horario de festivo, refuerzo de mediodía y stock para tres días seguidos",
+   "grupo": "G2",
+   "palabras": 12,
+   "donde": [
+    "B02 · Calendario Anual · D16"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving Eve». Sustituye al puente de diciembre: una de las noches de más barra del año. Tareas: refuerzo de bartenders y de puerta, control de ID (21+), stock extra; decidir si se abre el día de Thanksgiving",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0818",
+   "es": "Arranca de hecho la temporada de cenas de empresa",
+   "grupo": "G2",
+   "palabras": 9,
+   "donde": [
+    "B02 · Calendario Anual · F16"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving Eve». Arranca la temporada de fiestas (holiday season)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0821",
+   "es": "Cenas de empresa, barra libre, carta especial",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · D17"
+   ],
+   "pistas": [
+    "Jerga bar US: barra → bar; barra principal → main bar; botellero → back-bar cooler; speed rail, well y back bar se quedan"
+   ],
+   "adaptar": "Evento EN: «Holiday parties (company)». «Barra libre» → open bar packages",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0822",
+   "es": "Pico máximo del año para bares",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · F17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0825",
+   "es": "Decidir el horario (muchos bares cierran la tarde y abren sólo la madrugada), turno reducido y comunicar el horario del día en Google Business Profile y en RRSS",
+   "grupo": "G2",
+   "palabras": 28,
+   "donde": [
+    "B02 · Calendario Anual · D18"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "adaptar": "Evento EN: «Christmas Eve». Decidir el horario (muchos bares cierran pronto en Nochebuena y el 25), turno reducido y comunicar el horario en Google Business Profile y redes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0827",
+   "es": "La copa de después de la cena familiar es un pico corto y muy rentable",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "B02 · Calendario Anual · F18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0829",
+   "es": "Champagne, cava, fiesta, entrada con consumición",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · D19"
+   ],
+   "adaptar": "Evento EN: «New Year's Eve». Champán / espumoso (SIN cava), fiesta, entrada con consumición (ticketed entry, drink included)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0830",
+   "es": "La noche MÁS importante",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0833",
+   "es": "Adaptar carta y horarios a fiestas patronales",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · D20"
+   ],
+   "adaptar": "Evento EN: «Local festivals & street fairs». Adaptar carta y horarios a los eventos locales (street fairs, desfiles, festivales)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0834",
+   "es": "AÑADE TUS FECHAS LOCALES",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0836",
+   "es": "Stock extra cerveza, pantallas, horarios especiales",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · D21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0837",
+   "es": "Champions, Eurocopa, Mundial",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · F21"
+   ],
+   "adaptar": "Evento EN: «Big games & sports nights». Super Bowl, March Madness, playoffs (NBA, NHL), World Series",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0839",
+   "es": "Cóctel gratis, taller, promo RRSS",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D22"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "adaptar": "Evento EN: «World Cocktail Day». Sin «cóctel gratis»: regalar alcohol o rebajarlo está restringido en algunos estados; cóctel del día, taller y promo en redes («check your state's ABC/liquor authority»)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0840",
+   "es": "Marketing y branding",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · F22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0842",
+   "es": "Carta de Negronis, donación benéfica por cóctel",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · D23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0843",
+   "es": "Evento global de coctelería",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0845",
+   "es": "Happy hour recurrente, fidelización",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · D24"
+   ],
+   "adaptar": "Evento EN: «Happy hour». Happy hour recurrente y fidelización; algunos estados la limitan o la prohíben (p. ej. Massachusetts): «check your state's ABC/liquor authority»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0846",
+   "es": "Programa de fidelización",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · F24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0848",
+   "es": "Cata guiada mensual (vinos, spirits, cócteles)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · D25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0849",
+   "es": "Diferenciación y premium",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "B02 · Calendario Anual · F25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0851",
+   "es": "Sonido, decoración, stock extra, aforo",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · D26"
+   ],
+   "pistas": [
+    "aforo → occupancy limit (cartel del fire marshal)"
+   ],
+   "adaptar": "Evento EN: «DJ & live music nights». Sonido, decoración, stock extra y aforo máximo del cartel del fire marshal (occupancy limit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0852",
+   "es": "Control de ruido vecinal",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · F26"
+   ],
+   "adaptar": "Evento EN: «DJ & live music nights». Ordenanza de ruido de tu ciudad (horas y niveles)",
+   "motivo": "nueva"
+  }
+ ]
+}
