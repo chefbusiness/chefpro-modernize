@@ -1,6 +1,18 @@
 # Handoff — 17-oct-2026 (sesión Claude Code) — Restaurant Checklists Kit Pro (EN, $19), producto 16 de la tienda EN
 
-## 0. Estado: LISTO a falta del Payment Link · PR #133 (draft) · rama `feat/restaurant-checklists-en`
+## 0. Estado final: LIVE (17-oct, merge `43793a5b` del PR #133) · Tienda EN: 16 productos
+- Stripe `plink_1URfCn4CcdRGidmEGm9hyWVC` (`buy.stripe.com/aFa7sE4Og50a3UXgrP6oo1P`), producto `prod_VSaMZ2lThOTU0o`, **$19 USD** (1900,
+  `tax_behavior` exclusive, impuesto automático), redirección a `/access` comprobada con la CLI (`--live`). Env
+  `VITE_STRIPE_PAYMENT_LINK_RESTAURANT_CHECKLISTS_KIT` (builds, all) + mapa de 67 links (`9fcc6284`). ⚠️ La descripción del producto en
+  Stripe acaba en «»» (se coló de las comillas del mensaje): la key local es de solo lectura en productos → lo quita John en el panel.
+- Gates LIVE: `--only` **0 fallos / 0 avisos** (webhook armado) · completo en el VPS **67 productos / 930 entregables / 0 / 0** · `tienda-gate`
+  verde · `robots-gate` verde. Landing en `sitemap-0.xml` y en `llms.txt`; sitemap reenviado en GSC.
+- **Correo EN 9-dic 14:00Z**: borrador `a52e0565-a6bc-4a56-be43-887b32621033` («Lanzamiento Restaurant Checklists Kit Pro (EN) — 9-dic»,
+  asunto «Your opening and closing checklists, already written», prueba a John enviada) + routine `trig_01GWsawxCZ8CbSBZ387HsMqo`
+  (9-nov 15:07Z) → **al retomar después del 9-nov, mirar su `list_runs`**. Siguiente hueco EN: **14-dic 14:00Z**.
+- Worktrees (Mac y VPS) y rama eliminados; `main` del VPS al día.
+
+## 0-bis. Estado previo al link: PR #133 (draft) · rama `feat/restaurant-checklists-en`
 - Edición EN del `kit-tareas` ES v2.0: 9 plantillas + 2 bonus xlsx + bonus común de equivalencias (`dl/en-shared/`).
   `/en/digital-products/restaurant-checklist-templates` (+ `/access`, `/library`). Carpeta `scripts/productos-digitales/checklists-kit/`.
 - Elegido con DataForSEO US (17-oct): clúster de checklists ~1.300/mes (opening 260 · cleaning 260 · kitchen 210 · checklist(s) 140 · closing 90…)

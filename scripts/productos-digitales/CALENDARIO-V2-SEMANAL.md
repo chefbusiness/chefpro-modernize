@@ -673,7 +673,12 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
   prueba a John enviada) + routine `trig_01LqowZy9azA47FqMag3Ktwn` (4-nov 15:07Z). Plantilla
   `broadcast-how-to-open-a-pastry-shop-lanzamiento-en.html`. **Siguiente hueco EN: 9-dic 14:00Z.**
 
-### ▶️ 2026-10-17 (Claude Code en el Mac + VPS) — **Restaurant Checklists Kit Pro (EN, $19)** — LISTO a falta del Payment Link
+### ▶️ 2026-10-17 (Claude Code en el Mac + VPS) — **Restaurant Checklists Kit Pro (EN, $19)** — LIVE
 - Producto 16 de la tienda EN, edición del `kit-tareas` ES v2.0 (PR #133 draft, rama `feat/restaurant-checklists-en`, `checklists-kit/`).
   Elegido por demanda US (clúster de checklists ~1.300/mes). ≈ 2,1 M tokens (S). Revisión adversarial aplicada (4 MAYOR + 15 menor).
 - Cierre y ficha de Stripe: `SESSION_HANDOFF_2026-10-17-restaurant-checklists-en.md` §1. Correo EN propuesto **9-dic 14:00Z** (borrador + routine).
+- **LIVE el 17-oct (merge `43793a5b` del #133).** Stripe `plink_1URfCn4CcdRGidmEGm9hyWVC` ($19 USD, impuesto automático, redirección
+  comprobada con la CLI `--live`) + env `VITE_STRIPE_PAYMENT_LINK_RESTAURANT_CHECKLISTS_KIT` + mapa de 67 links. Gates LIVE: `--only` 0/0 ·
+  completo (VPS) **67 productos / 930 entregables / 0** · tienda · robots. Sitemap reenviado. **Tienda EN: 16 productos.**
+- Correo EN **9-dic 14:00Z**: borrador `a52e0565-a6bc-4a56-be43-887b32621033` + routine `trig_01GWsawxCZ8CbSBZ387HsMqo` (9-nov 15:07Z).
+  Plantilla `broadcast-restaurant-checklists-lanzamiento-en.html`. **Siguiente hueco EN: 14-dic 14:00Z.**
