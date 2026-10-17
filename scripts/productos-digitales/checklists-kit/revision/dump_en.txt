@@ -11,7 +11,7 @@ B6     : ▸ Print the sheet for your shift (opening or closing)
 B7     : ▸ The shift manager assigns tasks to the team
 B8     : ▸ Each person checks ✓ when their task is done and initials it
 B9     : ▸ At shift end, the shift manager verifies and signs at the bottom
-B10    : ▸ File the signed sheets — they prove operational control
+B10    : ▸ File the signed sheets — they prove the work was done, and who did it
 B12    : How to customize
 B14    : ▸ Green cells are editable — change assignments and times
 B15    : ▸ Adjust the due-by times to your real schedule
@@ -26,11 +26,11 @@ B28    : Sheet protection
 B30    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B31    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B33    : Works with
-B35    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B35    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B36    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B37    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B38    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
-B39    : ▸ You are in 01-opening-closing-checklists-kitchen-foh-bar.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 08-restaurant-opening-closing-checklist.xlsx.
+B39    : ▸ You are in 01-opening-closing-checklists-kitchen-foh-bar.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx.
 B41    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 B43    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B44    : Contact: info@aichef.pro
@@ -39,7 +39,7 @@ B46    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restauran
 === Hoja «Kitchen Opening» · protegida=True · área='Kitchen Opening'!$A$1:$G$56 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Kitchen Opening Checklist
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -69,7 +69,7 @@ C9     : Kitchen
 D9     : All staff
 E9     : 7:00 AM
 A10    : 5
-B10    : Report vomiting, diarrhea, jaundice or sore throat with fever to the person in charge; no food handling
+B10    : Check no one has vomiting, diarrhea, jaundice, sore throat with fever or an infected cut; if so, no food handling (FDA 2-201.11)
 C10    : Kitchen
 D10    : Head chef
 E10    : 7:00 AM
@@ -95,7 +95,7 @@ C16    : Kitchen
 D16    : Opening line cook
 E16    : 7:15 AM
 A17    : 10
-B17    : Turn on the dishwasher and check chemical levels
+B17    : Turn on the dish machine and check chemical levels (chemical sanitizing: test strips, ppm on the label)
 C17    : Kitchen
 D17    : Prep cook
 E17    : 7:15 AM
@@ -216,7 +216,7 @@ CF A5:G50 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «FOH Opening» · protegida=True · área='FOH Opening'!$A$1:$G$40 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : FOH Opening Checklist — Dining Room
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -331,7 +331,7 @@ CF A5:G34 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Bar Opening» · protegida=True · área='Bar Opening'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Bar Opening Checklist
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -435,7 +435,7 @@ CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Kitchen Closing» · protegida=True · área='Kitchen Closing'!$A$1:$G$47 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Kitchen Closing Checklist
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -481,7 +481,7 @@ D12    : Closing line cook
 E12    : Close
 A14    :   STATION CLEANING
 A15    : 8
-B15    : Clean and sanitize work surfaces
+B15    : Clean and sanitize work surfaces; test the sanitizer with test strips (ppm on the label)
 C15    : Kitchen
 D15    : All staff
 E15    : Close
@@ -585,7 +585,7 @@ CF A5:G41 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «FOH Closing» · protegida=True · área='FOH Closing'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : FOH Closing Checklist — Dining Room, Patio & Cash
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -660,7 +660,7 @@ CF A5:G26 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Bar Closing» · protegida=True · área='Bar Closing'!$A$1:$G$30 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Bar Closing Checklist
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -762,11 +762,11 @@ B22    : Sheet protection
 B24    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B25    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B27    : Works with
-B29    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B29    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B30    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B31    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B32    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
-B33    : ▸ You are in 02-kitchen-station-checklists.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B33    : ▸ You are in 02-kitchen-station-checklists.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
 B35    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 B37    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B38    : Contact: info@aichef.pro
@@ -775,7 +775,7 @@ B40    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restauran
 === Hoja «Hot Line» · protegida=True · área='Hot Line'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Hot Line Station — Daily Tasks
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -852,7 +852,7 @@ D20    : Lead line cook
 E20    : Service
 A22    :   AFTER SERVICE
 A23    : 14
-B23    : Store leftover proteins: label and date
+B23    : Cool leftover proteins fast (135 → 70 °F within 2 h, then to 41 °F within 4 more h, FDA Food Code 3-501.14), then label and date
 C23    : Kitchen
 D23    : Lead line cook
 E23    : Close
@@ -872,7 +872,7 @@ C26    : Kitchen
 D26    : Line cook
 E26    : Close
 A27    : 18
-B27    : Turn off the fryer when done and filter the oil ONLY below 104 °F, never hot, with gloves and a stable container; put used oil in the used cooking oil recycler's container
+B27    : Turn off the fryer when done; filter the oil per the fryer manufacturer's procedure (built-in filters run at operating temperature; if filtering by hand, let it cool first, wear heat-resistant gloves and use a stable container); put used oil in the used cooking oil recycler's container
 C27    : Kitchen
 D27    : Line cook
 E27    : Close
@@ -904,7 +904,7 @@ CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Cold Station» · protegida=True · área='Cold Station'!$A$1:$G$37 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Cold Station / Salads — Daily Tasks
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -934,12 +934,12 @@ C9     : Kitchen
 D9     : Line cook
 E9     : 11:00 AM
 A10    : 5
-B10    : Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F for 7 days (or −31 °F until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)
+B10    : Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)
 C10    : Kitchen
 D10    : Lead line cook
 E10    : 11:00 AM
 A11    : 6
-B11    : Portion carpaccio, ceviche, tartare
+B11    : Portion carpaccio, ceviche, tartare (menu carries the raw/undercooked consumer advisory, FDA 3-603.11)
 C11    : Kitchen
 D11    : Lead line cook
 E11    : 11:00 AM
@@ -1013,7 +1013,7 @@ CF A5:G31 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Mise en Place» · protegida=True · área='Mise en Place'!$A$1:$G$41 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : General Mise en Place Checklist
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -1043,7 +1043,7 @@ C9     : Kitchen
 D9     : Lead line cook
 E9     : 11:00 AM
 A10    : 5
-B10    : Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F 7 days or −31 °F + 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days
+B10    : Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below + 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days
 C10    : Kitchen
 D10    : Lead line cook
 E10    : 11:00 AM
@@ -1155,11 +1155,11 @@ B27    : Sheet protection
 B29    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B30    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B32    : Works with
-B34    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B34    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B35    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B36    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B37    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
-B38    : ▸ You are in 03-restaurant-manager-checklist.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B38    : ▸ You are in 03-restaurant-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
 B40    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 B42    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B43    : Contact: info@aichef.pro
@@ -1168,7 +1168,7 @@ B45    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restauran
 === Hoja «Manager Daily» · protegida=True · área='Manager Daily'!$A$1:$G$49 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Manager Daily Checklist
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -1370,7 +1370,7 @@ C15    : Office
 D15    : Manager
 E15    : Day 2
 A16    : 9
-B16    : Review delivery slips still waiting for invoices
+B16    : Match delivery invoices and packing slips to vendor statements; chase missing credits
 C16    : Office
 D16    : Manager
 E16    : Day 2
@@ -1522,7 +1522,7 @@ C15    : Office
 D15    : Manager
 E15    : Monthly
 A16    : 9
-B16    : File this month's time-clock records (FLSA: time cards 2 years, payroll 3 years)
+B16    : File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)
 C16    : Office
 D16    : Manager
 E16    : Monthly
@@ -1532,7 +1532,7 @@ C17    : Office
 D17    : Manager
 E17    : Monthly
 A18    : 11
-B18    : Process payroll, including tips, overtime and bonuses
+B18    : Reconcile the month's payroll runs (weekly or biweekly, per your state's pay-frequency law): tips, overtime, bonuses
 C18    : Office
 D18    : Manager
 E18    : Monthly
@@ -1591,7 +1591,7 @@ CF A5:G35 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Shift Handover» · protegida=True · área='Shift Handover'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Shift Change Checklist (Handover)
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -1693,11 +1693,11 @@ B21    : Sheet protection
 B23    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B24    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B26    : Works with
-B28    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B28    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B29    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B30    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B31    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
-B32    : ▸ You are in 04-daily-duties-side-work-by-role.xlsx: it is one MORE layer, not a repeat — the frame of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B32    : ▸ You are in 04-daily-duties-side-work-by-role.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
 B34    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 B36    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B37    : Contact: info@aichef.pro
@@ -1706,7 +1706,7 @@ B39    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restauran
 === Hoja «Head Chef» · protegida=True · área='Head Chef'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Daily Duties — Head Chef / Executive Chef
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -1805,7 +1805,7 @@ CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Sous Chef» · protegida=True · área='Sous Chef'!$A$1:$G$31 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Daily Duties — Sous Chef
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -1884,7 +1884,7 @@ CF A5:G25 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «FOH Manager» · protegida=True · área='FOH Manager'!$A$1:$G$34 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Daily Duties — FOH Manager / Maître d'
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -1978,7 +1978,7 @@ CF A5:G28 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Server» · protegida=True · área='Server'!$A$1:$G$36 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Daily Duties — Server
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -2082,7 +2082,7 @@ CF A5:G30 · expression  · fórmula=['$F5="✓"'] · texto=None
 === Hoja «Bartender» · protegida=True · área='Bartender'!$A$1:$G$32 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Daily Duties — Bartender
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -2176,7 +2176,7 @@ B8     : ▸ File the signed sheets with your hygiene records: with the HACCP Fo
 B10    : Quarterly, annual and freezer shelf life
 B12    : ▸ The "Quarterly & Annual" sheet covers the maintenance you HIRE OUT and that an inspector asks to see: pest control, hood and duct cleaning, fire extinguishers and the hood fire suppression system, gas, refrigeration, backflow, grease trap, used oil, waste, insurance and POS / sales tax.
 B13    : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
-B14    : ▸ At the bottom of "Weekly FIFO Check" there is an editable table of freezer shelf life by product family: one single rule for the whole freezer either throws out good product or lets old product slip through.
+B14    : ▸ At the bottom of "Weekly FIFO Check" there is an editable table of freezer shelf life by food group: one single rule for the whole freezer either throws out good product or lets old product slip through.
 B16    : How the counter works
 B18    : ▸ Mark ✓ in the "✓ Done" column (dropdown): that is the column that counts completed tasks.
 B19    : ▸ "N/A" = not applicable at your restaurant: that task comes OUT of the total (don't delete it, mark it N/A). "—" = not done: it still counts as pending and lowers the percentage, which is the point.
@@ -2188,7 +2188,7 @@ B27    : Sheet protection
 B29    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B30    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B32    : Works with
-B34    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B34    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B35    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B36    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B37    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
@@ -2609,7 +2609,7 @@ B22    : Descale the coffee machine and check the water softener or resins (depe
 D22    : Technician
 E22    : Quarterly
 A23    : 14
-B23    : Calibrate thermometers and probes against a known reference: ice-point method (32 °F)
+B23    : Thermometers: ice-point check (32 °F) weekly and after any drop; send the reference thermometer for certified calibration yearly
 D23    : Technician
 E23    : Annual
 A24    : 15
@@ -2647,7 +2647,7 @@ B21    : Sheet protection
 B23    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B24    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B26    : Works with
-B28    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B28    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B29    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B30    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B31    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
@@ -3024,7 +3024,7 @@ C14    : Patio
 D14    : Servers
 E14    : Last day
 A15    : 8
-B15    : Store furniture in storage
+B15    : Move the furniture into storage
 C15    : Patio
 D15    : Servers
 E15    : Last day
@@ -3034,7 +3034,7 @@ C16    : Patio
 D16    : Servers
 E16    : Last day
 A17    : 10
-B17    : Take down and store the outdoor heaters if the patio is closed in winter
+B17    : If the patio is closed in winter, store the heaters; propane tanks disconnected and kept outdoors in a locked cage, never inside
 C17    : Patio
 D17    : Technician
 E17    : Last day
@@ -3083,7 +3083,7 @@ B34    : Sheet protection
 B36    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B37    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B39    : Works with
-B41    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B41    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B42    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B43    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B44    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
@@ -3096,7 +3096,7 @@ B52    : Version 2.0 · October 2026 · aichef.pro/en/digital-products/restauran
 === Hoja «By Time of Day» · protegida=True · área='By Time of Day'!$A$1:$G$35 · títulos=$4:$4 · paneles=A5 · papel=1 · orientación=portrait
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 A1     : Blank Template — By Time of Day
-A2     : Date: ___/___/______    Shift: ☐ AM  ☐ PM  ☐ Overnight    Shift manager: _________________________
+A2     : Date: ___/___/______    Shift: ☐ AM  ☐ Mid  ☐ PM    Shift manager: _________________________
 A4     : #
 B4     : Task
 C4     : Area
@@ -3262,7 +3262,7 @@ CF A5:G29 · expression  · fórmula=['$F5="✓"'] · texto=None
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 B2     : 08 · Restaurant Opening & Closing Checklist (Whole Building)
 B4     : What it solves
-B6     : ▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the frame of the day.
+B6     : ▸ This is the checklist for the WHOLE RESTAURANT: what gets opened and closed for the entire building, not for each area. Use it as the backbone of the day.
 B7     : ▸ The detail by area (kitchen, FOH, bar) is in 01-opening-closing-checklists-kitchen-foh-bar.xlsx: don't repeat the work, each file covers a different level.
 B9     : How to use
 B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.
@@ -3280,11 +3280,11 @@ B29    : Sheet protection
 B31    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B32    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B34    : Works with
-B36    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B36    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B37    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B38    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B39    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
-B40    : ▸ You are in 08-restaurant-opening-closing-checklist.xlsx: this IS the frame of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-opening-closing-checklists-kitchen-foh-bar.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.
+B40    : ▸ You are in 08-restaurant-opening-closing-checklist.xlsx: this IS the backbone of the day — the MILESTONE of opening and closing the building; the DETAIL of each zone is in 01-opening-closing-checklists-kitchen-foh-bar.xlsx and the MONEY in 09-cash-drawer-opening-closing.xlsx.
 B42    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 B44    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B45    : Contact: info@aichef.pro
@@ -3486,9 +3486,9 @@ B8     : How to use — Cash Drawer Opening
 B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
 B12    : How to use — Cash Drawer Closing
 B14    : ▸ In "Cash Count by Denomination" fill in ONLY the "Quantity" column (number of bills or coins, whole number): the subtotal and TOTAL CASH calculate themselves. The table has US bills and coins (the penny is no longer minted but is still legal tender; a "25¢ roll" counts $10 and a "10¢ roll" $5). In the UK, Canada or Australia, unprotect the sheet (no password) and change the label and value of each row.
-B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and the "POS Z report total". Everything else is a formula.
+B15    : ▸ In the "Closing Summary" you only type three figures: "Card sales, excl. tips", "Other tenders + card tips paid in cash" and "POS Z report: sales + tax, excl. tips" (net sales plus sales tax, without tips or gratuities; many POS "total" lines include tips). Everything else is a formula.
 B16    : ▸ The starting bank is deducted automatically: TOTAL COLLECTED = (cash counted − starting bank) + card sales + other.
-B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report. If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
+B17    : ▸ OVER / SHORT = TOTAL COLLECTED − POS Z report (sales + tax, excl. tips). If the cell turns AMBER, the drawer doesn't balance: check it BEFORE signing.
 B19    : Monthly Cash Log
 B21    : ▸ One row per day: enter starting bank, sales by payment type, POS Z report and deposit; Total Collected and Over/Short calculate themselves and the over/short turns amber.
 B22    : ▸ The starting bank is a balance, not a sale: the TOTALS row shows the AVERAGE starting bank of the days logged, not their sum.
@@ -3505,11 +3505,11 @@ B39    : Sheet protection
 B41    : ▸ Sheets with formulas are protected WITHOUT a password: the input cells (the green ones) are unlocked, so calculations never get overwritten by accident.
 B42    : ▸ You can insert and delete rows with protection on. To change the structure: Review → Unprotect Sheet.
 B44    : Works with
-B46    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B46    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B47    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B48    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B49    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
-B50    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the frame of the day is in 08-restaurant-opening-closing-checklist.xlsx and the detail by zone in 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
+B50    : ▸ You are in 09-cash-drawer-opening-closing.xlsx: this is the CASH — the day's MONEY (starting bank, count, POS Z report and over/short); the backbone of the day is in 08-restaurant-opening-closing-checklist.xlsx and the detail by zone in 01-opening-closing-checklists-kitchen-foh-bar.xlsx.
 B52    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 B54    : Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since age 17 · johnguerrero.es
 B55    : Contact: info@aichef.pro
@@ -3577,7 +3577,7 @@ D22    : of
 E22    = =COUNTIF(B5:B20,"?*")-COUNTIF(E5:E20,"N/A")   → caché 11.0
 B23    : Starting bank (opening float)
 C23    : 0
-D23    : Deducted from cash in the Cash Drawer Closing
+D23    : Deducted from cash on the "Cash Drawer Closing" sheet
 A25    : Manager signature: _________________________     Time: ________
 A26    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
@@ -3707,7 +3707,7 @@ A47    : Total cash (count)
 C47    = =C43   → caché 0.0
 A48    : Starting bank (−)
 C48    = =IFERROR('Cash Drawer Opening'!C23,0)   → caché 0.0
-A49    : Cash sales (counted − starting bank)
+A49    : Net cash (counted − starting bank)
 C49    = =IFERROR(C47-C48,0)   → caché 0.0
 A50    : Card sales, excl. tips
 C50    : 0
@@ -3715,14 +3715,14 @@ A51    : Other tenders + card tips paid in cash
 C51    : 0
 A52    : TOTAL COLLECTED
 C52    = =C49+C50+C51   → caché 0.0
-A53    : POS Z report total
+A53    : POS Z report: sales + tax, excl. tips
 C53    : 0
 A54    : OVER / SHORT
 C54    = =IFERROR(C52-C53,0)   → caché 0.0
 A56    : Manager signature: _________________________     Time: ________
 A57    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 DV E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21 · list  · f1="✓,—,N/A" · f2=None · errorTitle=Invalid mark · error=Use the dropdown: ✓, — or N/A. N/A = not applicable, comes out of the total; — = not done, counts as pending. · promptTitle=None · prompt=None
-DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter the number of bills or coins: a positive whole number, no decimals. · promptTitle=None · prompt=None
+DV B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42 · whole greaterThanOrEqual · f1=0 · f2=None · errorTitle=Invalid quantity · error=Enter how many bills, coins or rolls: a whole number (0 or more), no decimals. · promptTitle=None · prompt=None
 CF A5:G21 · expression  · fórmula=['$E5="✓"'] · texto=None
 CF C54 · cellIs notEqual · fórmula=['0'] · texto=None
 
@@ -3737,7 +3737,7 @@ C4     : Cash Counted
 D4     : Card Sales (no tips)
 E4     : Other + Tips Paid
 F4     : Total Collected
-G4     : POS Z Report
+G4     : POS Z (+ tax, no tips)
 H4     : Over/Short
 I4     : Bank Deposit
 J4     : Closed by
@@ -4029,7 +4029,7 @@ F36    = =SUM(F5:F35)   → caché 0.0
 G36    = =SUM(G5:G35)   → caché 0.0
 H36    = =SUMIF(H5:H35,">0")-SUMIF(H5:H35,"<0")   → caché 0.0
 I36    = =SUM(I5:I35)   → caché 0.0
-A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer.
+A37    : "Cash Counted" is the drawer count AS IS, with the starting bank inside: Total Collected already deducts it. In TOTALS, "Starting Bank" is the AVERAGE starting bank of the days logged (a balance is not summed) and "Over/Short" is the CUMULATIVE over/short in absolute value: a +50 and a −50 make 100 of over/short, not 0. "Card Sales (no tips)" excludes tips; "Other + Tips Paid" = other tenders + card tips paid in cash from the drawer. "POS Z" = net sales + sales tax, without tips.
 A38    : — Restaurant Checklists Kit Pro · AI Chef Pro · aichef.pro
 CF H5:H35 · cellIs notEqual · fórmula=['0'] · texto=None
 ####################################################################################################
@@ -4044,7 +4044,7 @@ B6     : ▸ The FOH manager or shift manager fills this out before the pre-shif
 B7     : ▸ Share it with the team at the 5-10 minute pre-shift meeting
 B8     : ▸ Print it and post it at the pass for reference during service
 B10    : Works with
-B12    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B12    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B13    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B15    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
@@ -4098,7 +4098,7 @@ B6     : ▸ Check the key restaurant dates month by month
 B7     : ▸ Plan ahead: special menus, decorations, stock
 B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), bank holidays and Boxing Day, in the free rows
 B10    : Works with
-B12    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the FRAME of the day.
+B12    : ▸ 08-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B13    : ▸ 01-opening-closing-checklists-kitchen-foh-bar.xlsx — the same day with DETAIL by area (kitchen, FOH, bar).
 B14    : ▸ 09-cash-drawer-opening-closing.xlsx — the CASH: starting bank, count by denomination, POS Z report and over/short.
 B15    : ▸ Order of use: restaurant → areas → cash. Each file covers one level: the restaurant file marks the MILESTONE (power up, open, close), the areas file details HOW it gets done in each zone, and the cash file tracks the MONEY. If a task shows up in two, that is on purpose: one is the milestone and the other the detail.
@@ -4121,7 +4121,7 @@ B5     : Jan 1 — New Year's Day
 C5     : Decide whether to open; if closed, post it on Google Business Profile and social media 1 week ahead
 D5     : 1 week
 A6     : February
-B6     : Super Bowl Sunday (early Feb)
+B6     : Super Bowl Sunday (2nd Sunday in Feb)
 C6     : Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff
 D6     : 2 weeks
 A7     : February
@@ -4173,7 +4173,7 @@ B18    : Summer peak season
 C18    : Extra staff, extended hours, summer menu
 D18    : Ongoing
 A19    : September
-B19    : Labor Day + back to school
+B19    : Labor Day (1st Monday) + back to school
 C19    : Fall menu and lunch specials for the back-to-routine crowd
 D19    : 2 weeks
 A20    : October

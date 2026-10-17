@@ -45,17 +45,17 @@ $PY volcar_xlsx.py /root/wt-checklists/astro-site/public/dl/kit-tareas revision/
 - **Ensayo sin traducciones**: `--dry-run --parcial --textos <carpeta vacía>`, y los gates con `--parcial --textos <la misma>`.
 - **Tiempos en el VPS**: construcción ~9 s con idempotencia e `inject_cache`; gates ~15 s; autotest ~40 s.
 
-## 3. Resultados (construcción real, 17-oct, `--mes October`)
+## 3. Resultados (construcción real tras la ronda 1, 17-oct, `--mes October`)
 
 | Gate | Estado | Detalle |
 |---|---|---|
 | **G1 paridad** | OK | 47 hojas; 157 fórmulas = ES salvo las 15 por celda (D12); 1 fórmula con hoja; 34 DV (719 celdas); 35 CF; 308 merges; 36 protegidas sin contraseña, mismos flags; 47 áreas y 35 títulos de impresión; 82 definedNames crudos (los 2 de `'Valentine''s Day'!` incluidos); 35 paneles; 276 anchos iguales; 4.286 verdes y 5.995 desbloqueadas celda a celda; 491 tareas en sus filas; 0 gráficos e imágenes |
 | **G2 restos** | OK | 3.054 valores, 68 mensajes de DV, 99 ítems, 77 docProps, 47 pies, 297 formatos: 0 español, 0 €, 0 no latinos, 0 comillas curvas, 0 horas de 24 h, 0 nombres de fichero ES. `$`/`¢` en 16 celdas: los 15 rótulos de billetes + 09 Instructions!B14 (lo pide `ADAPTAR`). 282 formatos con € reescritos |
-| **G3 formato** | OK | Letter 47/47; pie 47; marca 47; versión 11; docProps y `Instructions!B2` D5 en los 11; ajuste de texto en 1 celda (01 «FOH Closing» A21) y alto de fila suficiente en 78 celdas; ninguna fila baja de alto; 0 desbordes |
+| **G3 formato** | OK | Letter 47/47; pie 47; marca 47; versión 11; docProps y `Instructions!B2` D5 en los 11; ajuste de texto en 1 celda (01 «FOH Closing» A21) y alto de fila suficiente en 80 celdas; ninguna fila baja de alto; 0 desbordes |
 | **G4 mapas** | OK | 984 apariciones traducir, 1.680 de glosario, 1 de hoja y 212 de regenerar = su EN; 68 mensajes de DV; 172 horas = `hora_us`; 14 citas de rótulos y 37 de ficheros con su EN exacto; firma de autor literal |
 | **G5 caja** | OK | A27:A42 y C27:C42 = `DENOMINACIONES`. Caso de §5: 1 unidad de cada → 204.91. Cierre con 200 / 1,250 / 3,000 / 150 / Z 4,200 → TOTAL COLLECTED 4,200 y OVER / SHORT 0, igual en «Monthly Cash Log» F5/H5 |
 | **G6 cálculo** | OK | `<v>` en las 157 fórmulas, 0 errores; caché EN = caché ES (66 contadores) |
-| **G7 reglas** | OK | 20 °F, todos ∈ {−31, −4, 0, 10, 32, 41, 100, 104, 135} (= cifras de `mapas.py`); 7 citas normativas ∈ fuentes de `REGLAS_US`; las 13 celdas ES con °C llevan °F |
+| **G7 reglas** | OK | 21 °F, todos ∈ {−31, −4, 0, 10, 32, 41, 70, 100, 135, 165} (= cifras de `mapas.py`); 10 citas normativas ∈ las 44 de las fuentes de `REGLAS_US`; 12 de las 13 celdas ES con °C llevan °F, y la que falta (02 «Hot Line» B27, el aceite) está declarada sin cifra en `mapas.CELSIUS_SIN_F` |
 | **G8** | OK | `censo-entregables --only restaurant-checklist-templates --fail`: 0 defectos. `gate-no-latinos`: 11 ficheros, 0 caracteres |
 
 **Totales**: VERDE, 8 gates, 0 fallos · autotest 16/16 cazado · idempotencia 0 diferencias · `inject_cache` `fallos_pycel=0` en los 11 · `mapas.py` 0 errores · `gate_f1` VERDE · sha256 VPS = Mac en los 11.
@@ -70,7 +70,25 @@ $PY volcar_xlsx.py /root/wt-checklists/astro-site/public/dl/kit-tareas revision/
 3. **Defecto heredado arreglado**: una celda combinada de alto automático no la ajusta Excel. Es el caso de 09 «Monthly Cash Log» A37, que en el ES salía cortado; en el EN lleva alto explícito (36.75).
 4. **G4 y G7 amplían §8**: G4 comprueba las citas de rótulos y ficheros y la firma literal; G7 exige °F donde el ES tenía °C («____ °F» cuenta).
 
-## 5. Lo que necesita F3
+## 5. Ronda 1 de correcciones (revisión adversarial, `revision/REVISION-F2.md`)
+
+- **Revisión**: 0 bloqueantes, 4 MAYOR, 16 menor y 6 dudas.
+- **Qué se aplicó**: M1, M2, M4 y M3 en parte; 15 de los 16 menores; D1 con la regla neutra del aceite. La tabla
+  completa, con lo no aplicado y por qué, está al final de `REVISION-F2.md`.
+- **Dónde**: solo textos. 27 cadenas de `textos_en/`; en `mapas.py`, `POR_CELDA` (A49, A53, G4, 03 B16, 02 B10 ×2),
+  `CALENDARIO` (6, 19), `ADAPTAR` (01 B10, 02 B27, 03 B18, 09 B15, A37), `REGLAS_US` (+frecuencia_pago, enfriamiento,
+  recalentado, sanitizante, aviso_consumidor; fichajes con NY) y `CELSIUS_SIN_F`.
+- **`textos_es.json` regenerado** con `extraer_textos.py`: ids y censo iguales; solo cambian `adaptar` y
+  `en_por_celda`.
+- **SPEC**: §3 (+5 filas), D12 (la Z del POS) y §8 G7 (+70, +165, −104).
+- **G2** ya no admite «café» como palabra inglesa: c0757 dice «sidewalk cafe permit».
+- **No aplicado**:
+  - el recalentado a 165 °F, porque c0246 es mantenimiento en caliente, no recalentado;
+  - las tiras en c0091, porque esa fila trata de los trapos;
+  - E7 «Quarterly», porque es un valor de criterio.
+  Todo eso queda para la v2.1.
+
+## 6. Lo que necesita F3
 
 - **Ficheros**: `astro-site/public/dl/restaurant-checklist-templates/`, 11 xlsx, con los nombres y títulos de SPEC §2.1 tal cual.
 - **Datos verificables para la landing**: 9 plantillas + 2 bonus; 47 pestañas; 491 tareas ya escritas; 34 desplegables (✓ / — / N/A); contador que excluye N/A; 157 fórmulas con valor en caché; 4.286 celdas verdes editables; 36 hojas protegidas sin contraseña.

@@ -35,7 +35,7 @@
 | D9 | Horas | Las **172 horas de 24 h** son TEXTO: `mapas.hora_us` («07:00» → «7:00 AM», «10:00-11:30» → «10:00–11:30 AM», «00:00» → «12:00 AM»). La única hora dentro de una frase (06 `Navidad!B20`) la escribe el traductor. Horarios iguales (encajan con el almuerzo US) | DECIDIDA |
 | D10 | Seguridad alimentaria | °F + FDA Food Code 2022 (§3): 41 °F frío / 0 °F congelador / 135 °F caliente; **parásitos 3-402.11** (−4 °F 7 días o −31 °F + 15 h, registro 90 días; ostras: etiquetas 90 días) en `POR_CELDA`; joyas 2-303.11, enfermos 2-201.11, lavamanos 100 °F, date marking 7 días, lavado de vegetales 3-302.15, 9 alérgenos (UK 14) en `ADAPTAR`. «Pack APPCC» → **HACCP Food Safety Kit Pro** (enlace de venta cruzada). 13 celdas con °C | DECIDIDA |
 | D11 | Mantenimiento y registros | 05 «Quarterly & Annual»: las 15 filas se quedan; 12 cambian de contenido (`POR_CELDA` B/D/E): pest control (PCO), campana NFPA 96, extintores OSHA 1910.157(e)(3), sistema de extinción de campana cada 6 meses, gas según código local, frío EPA 608, backflow, separador de grasas (FOG), reciclador de aceite, residuos, seguros US, POS + sales tax. 03 `B16`: fichajes 2 años / nóminas 3 (29 CFR 516). Extintores mensuales: OSHA (e)(2) | DECIDIDA |
-| D12 | Caja US | Tabla `Cierre de Caja!A27:C42` en dólares (`mapas.DENOMINACIONES`): $100, $50, $20, $10, $5, $2, $1; $1 coin, 50¢, 25¢, 10¢, 5¢, 1¢ (sigue siendo de curso legal), «25¢ roll» ($10) y «10¢ roll» ($5), rótulos de ≤ 10 caracteres (ancho de la columna A); `$`/`¢` solo en esos rótulos (excepción declarada). **Propinas fuera de ventas**: «Card sales, excl. tips» y «Other tenders + card tips paid in cash» (si las propinas de tarjeta se pagan del cajón, el descuadre no las confunde con faltante). TPV → POS, datáfono → card terminal, Z/X del TPV → Z/X report, descuadre → OVER / SHORT, fondo → starting bank | DECIDIDA |
+| D12 | Caja US | Tabla `Cierre de Caja!A27:C42` en dólares (`mapas.DENOMINACIONES`): $100, $50, $20, $10, $5, $2, $1; $1 coin, 50¢, 25¢, 10¢, 5¢, 1¢ (sigue siendo de curso legal), «25¢ roll» ($10) y «10¢ roll» ($5), rótulos de ≤ 10 caracteres (ancho de la columna A); `$`/`¢` solo en esos rótulos (excepción declarada). **Propinas fuera de ventas**: «Card sales, excl. tips» y «Other tenders + card tips paid in cash» (si las propinas de tarjeta se pagan del cajón, el descuadre no las confunde con faltante). TPV → POS, datáfono → card terminal, Z/X del TPV → Z/X report, descuadre → OVER / SHORT, fondo → starting bank. Ronda 1: la Z que se teclea es «POS Z report: sales + tax, excl. tips» (ventas netas + sales tax, sin propinas) y «Net cash (counted − starting bank)» | DECIDIDA |
 | D13 | Moneda | Los **282 formatos con €** → `#,##0.00`; los 20 textos con € → rótulos fijados o traductor («in your currency») | DECIDIDA |
 | D14 | Festivos | BONUS-02: **22 fechas US** de `mapas.CALENDARIO` en las mismas 22 filas y orden por meses (Super Bowl, Valentine's, Mardi Gras, St. Patrick's, Easter, patio, graduaciones, Cinco de Mayo, Mother's Day 2.º domingo, Memorial Day, Father's Day, 4 de julio, verano, Labor Day, Halloween, Thanksgiving, gift cards, holiday parties, Navidad, NYE); A/B/D fijados, C con `ADAPTAR`. 06: «Valentine's Day» se queda; «Christmas & NYE» sin uvas, cava ni turrón (brindis 21+) | DECIDIDA |
 | D15 | Terraza | terraza → **patio**; licencia → outdoor dining / sidewalk café permit; temporada alta → summer peak (Memorial Day–Labor Day); ceniceros solo donde se permita fumar | DECIDIDA |
@@ -104,6 +104,10 @@ El renombrado reescribe en el mismo paso la única fórmula con hoja (1 con refe
 | Pescado crudo | anisakis −20 °C 24 h (UE) | −4 °F 7 días o −31 °F hasta sólido + 15 h; registro 90 días | FDA Food Code 2022 §3-402.11, §3-402.12 |
 | Ostras y almejas | — | etiquetas shellstock 90 días | FDA Food Code 2022 §3-203.12 |
 | Etiquetado | etiquetar y fechar | date marking 7 días a 41 °F (día 1 = preparación) | FDA Food Code 2022 §3-501.17 |
+| Enfriamiento (ronda 1) | — | 135 → 70 °F en 2 h y 70 → 41 °F en 4 h más (02 «Hot Line» B23, sobras) | FDA Food Code 2022 §3-501.14 |
+| Recalentado (ronda 1) | — | 165 °F 15 s en ≤ 2 h para mantener en caliente (en `REGLAS_US`; sin fila ES del tema → v2.1) | FDA Food Code 2022 §3-403.11(A) |
+| Sanitizante (ronda 1) | — | concentración con tiras (test kit), ppm de la etiqueta (01 «Kitchen Closing» B15, lavavajillas B17) | FDA Food Code 2022 §4-302.14; §4-501.114 |
+| Aviso al consumidor (ronda 1) | — | crudo o poco hecho: aviso en la carta (02 «Cold Station» B11) | FDA Food Code 2022 §3-603.11 |
 | Higiene personal | sin anillos | solo anillo liso; enfermos lo comunican; lavamanos 100 °F | FDA Food Code 2022 §2-303.11, §2-201.11, §5-202.12 |
 | Lavado de vegetales | lejía 70 ppm 5 min | agua potable; producto apto a dosis de etiqueta | FDA Food Code 2022 §3-302.15 |
 | Alérgenos | 14 (UE) | 9 principales; UK 14 | FALCPA + FASTER Act 2021; Food Information Regulations 2014 |
@@ -111,7 +115,8 @@ El renombrado reescribe en el mismo paso la única fórmula con hoja (1 con refe
 | Campana | limpieza anual homologada | trimestral (alto volumen) · semestral (moderado) · mensual (sólido) | NFPA 96, tabla 11.4 |
 | Extinción de campana | — | cada 6 meses | NFPA 96 §11.2; NFPA 17A |
 | Frío industrial | frigorista | técnico certificado EPA 608 | 40 CFR Part 82, Subpart F |
-| Fichajes | registro de jornada 4 años | fichajes 2 años; nóminas 3 | 29 CFR 516.5-516.6 |
+| Fichajes | registro de jornada 4 años | fichajes 2 años; nóminas 3 (mínimo federal; NY 6) | 29 CFR 516.5-516.6; NY Labor Law §195(4) |
+| Frecuencia de nómina (ronda 1) | mensual | por horas: semanal o quincenal según el estado; en la lista mensual solo se concilia | CA Labor Code §204; NY Labor Law §191; TX Labor Code §61.011 |
 | Centavo | 0,01 € | 1¢: no se acuña desde 12-nov-2025, curso legal | U.S. Mint (Coin World, 12-nov-2025) |
 | Backflow · grasas | legionela · analítica | test anual habitual · bombeo según ordenanza FOG | [local] compañía de agua; ordenanza municipal |
 | Festivos | 22 fechas ES | Memorial Day, Labor Day, Thanksgiving; Mother's / Father's Day | 5 U.S.C. 6103; 36 U.S.C. 117 y 109 |
@@ -186,7 +191,8 @@ Presupuesto: F1 ≈ 0,4 M · F2 ≤ 1,0 M · F3 ≤ 0,9 M. Si el total pasa de 3
 - **G4 Mapas**: cada aparición `mapa-glosario`, `mapa-hoja` y `regenerar` = su EN de `mapas.py`; horas = `hora_us`.
 - **G5 Caja**: `C27:C42` = `mapas.DENOMINACIONES`; caso de §5 calculado en una copia (204.91; 4,200 y 0).
 - **G6 Cálculo**: caché sin `#REF!`/`#VALUE!`/`#N/A`; contadores = los del ES.
-- **G7 Reglas**: cada °F de los textos ∈ {−31, −4, 0, 10, 32, 41, 100, 104, 135}; cada cita normativa EN ∈ §3.
+- **G7 Reglas**: cada °F de los textos ∈ {−31, −4, 0, 10, 32, 41, 70, 100, 135, 165} (ronda 1: +70 y +165; 104 fuera, el
+  filtrado del aceite va según el fabricante, sin cifra: `mapas.CELSIUS_SIN_F`); cada cita normativa EN ∈ §3.
 - **G8** `censo-entregables.py --only restaurant-checklist-templates --fail` y `gate-no-latinos.py` en 0.
 
 ## 9. F3 y lo que decide John

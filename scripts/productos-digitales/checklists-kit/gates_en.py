@@ -73,7 +73,7 @@ CLAVES = mapas.CLAVES
 CLAVES_EN = set(CLAVES.values())
 FIRMA_EN = ('Designed by John Guerrero — chef and restaurant consultant since 2010, in professional kitchens since '
             'age 17 · johnguerrero.es')                                       # SPEC §7.2, literal
-GRADOS_F_SPEC = {-31, -4, 0, 10, 32, 41, 100, 104, 135}                         # SPEC §8 G7
+GRADOS_F_SPEC = {-31, -4, 0, 10, 32, 41, 70, 100, 135, 165}             # SPEC §8 G7 (ronda 1: +70 +165 −104)
 CAJA_SPEC = {'total_1_de_cada': 204.91, 'fondo': 200, 'contado': 1250, 'tarjetas': 3000, 'otros': 150, 'z': 4200}
 
 SIGNOS_ES = set('¿¡«»€ºª')
@@ -1055,6 +1055,12 @@ def gateG7(R, carpeta, datos):
             for coord in hd['textos_celsius']:
                 n['celdas_celsius_es'] += 1
                 v = wen[mapas.HOJAS[h_es]][coord].value
+                if (ce['corto'], h_es, coord) in getattr(mapas, 'CELSIUS_SIN_F', ()):
+                    n['celsius_sin_f_declaradas'] += 1
+                    if isinstance(v, str) and ('°C' in v or grados_f(v)):
+                        R.fallo('%s %s!%s: declarada sin cifra (mapas.CELSIUS_SIN_F) y lleva temperatura: %r'
+                                % (en, mapas.HOJAS[h_es], coord, v[:80]))
+                    continue
                 if not (isinstance(v, str) and (A.RX_RELLENO.match(v) or '°F' in v)):
                     R.fallo('%s %s!%s: el ES tenía °C y el EN no lleva °F: %r (ES %r)'
                             % (en, mapas.HOJAS[h_es], coord, v, wes[h_es][coord].value[:60]))

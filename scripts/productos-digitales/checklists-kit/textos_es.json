@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-17T20:10:01Z",
+  "generado": "2026-10-17T21:00:19Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas",
-  "commit": "3b668288",
+  "commit": "4cd1e34f",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -2133,7 +2133,7 @@
    "n_apariciones": 1,
    "palabras": 11,
    "con_cifra": false,
-   "adaptar": "FDA Food Code 2-201.11: quien tenga vómitos, diarrea, ictericia o dolor de garganta con fiebre se lo dice al responsable de turno (person in charge) y no manipula alimentos",
+   "adaptar": "FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida infectada; quien los tenga no manipula alimentos",
    "sha1": "6234d97073ae",
    "donde": [
     {
@@ -6080,7 +6080,7 @@
    "n_apariciones": 1,
    "palabras": 31,
    "con_cifra": true,
-   "adaptar": "40 °C = 104 °F; el aceite usado va al contenedor del reciclador (grease / used cooking oil recycler), no a un «gestor autorizado»",
+   "adaptar": "Filtrar según el procedimiento del fabricante de la freidora (los filtros integrados trabajan a temperatura de servicio; a mano, dejar enfriar antes, guantes resistentes al calor y recipiente estable), sin cifra de temperatura; el aceite usado va al contenedor del reciclador (used cooking oil recycler), no a un «gestor autorizado»",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -8832,7 +8832,7 @@
    "n_apariciones": 1,
    "palabras": 4,
    "con_cifra": false,
-   "adaptar": "US: procesar la nómina (payroll) con propinas, horas extra y bonus",
+   "adaptar": "US: la nómina por horas no es mensual (semanal o quincenal según la ley estatal de frecuencia de pago): CONCILIAR las nóminas del mes con propinas, horas extra y bonus",
    "sha1": "9d8128930ef9",
    "donde": [
     {
@@ -16415,7 +16415,7 @@
      "en": "Closing Summary"
     }
    ],
-   "adaptar": "Las tres cifras EN: card sales WITHOUT tips, other tenders + card tips paid out in cash, y el total del POS Z report (rótulos de la hoja, entre comillas)",
+   "adaptar": "Las tres cifras EN: card sales WITHOUT tips, other tenders + card tips paid out in cash, y la Z del POS = ventas netas + sales tax, SIN propinas (rótulos de la hoja, entre comillas)",
    "pistas": [
     "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
     "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
@@ -17289,7 +17289,7 @@
      "en": "Over/Short"
     }
    ],
-   "adaptar": "Usa los rótulos EN de la fila 4 («Cash Counted», «Starting Bank», «Over/Short»); «100 € de descuadre» → «100 of over/short»; añade: «Card Sales» sin propinas y «Other + Tips Paid» = otros medios + propinas de tarjeta pagadas en efectivo del cajón",
+   "adaptar": "Usa los rótulos EN de la fila 4 («Cash Counted», «Starting Bank», «Over/Short»); «100 € de descuadre» → «100 of over/short»; añade: «Card Sales» sin propinas y «Other + Tips Paid» = otros medios + propinas de tarjeta pagadas en efectivo del cajón; «POS Z» = ventas netas + sales tax, sin propinas",
    "pistas": [
     "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
     "D13: sin símbolo de moneda («in your currency»)",
@@ -18221,7 +18221,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Super Bowl Sunday (early Feb)». Sustituye a Reyes. Tareas: pedidos anticipados para llevar (wings, party platters), pantallas en la barra, personal extra de barra y de delivery",
+   "adaptar": "Evento EN: «Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. Tareas: pedidos anticipados para llevar (wings, party platters), pantallas en la barra, personal extra de barra y de delivery",
    "sha1": "ef755fd68ee4",
    "donde": [
     {
@@ -18502,7 +18502,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Labor Day + back to school». Fin del verano. Tareas: carta de otoño y especiales de almuerzo (lunch specials) para la vuelta a la rutina",
+   "adaptar": "Evento EN: «Labor Day (1st Monday) + back to school». Fin del verano. Tareas: carta de otoño y especiales de almuerzo (lunch specials) para la vuelta a la rutina",
    "sha1": "41726bf5be75",
    "donde": [
     {
@@ -29189,7 +29189,7 @@
    "es": "Pescado para consumo crudo o semicrudo (tartar, ceviche, carpaccio) — prevención de ANISAKIS: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F for 7 days (or −31 °F until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)",
+   "en_por_celda": "Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 29,
@@ -29211,7 +29211,7 @@
    "es": "Pescado y marisco para consumo crudo o semicrudo — prevención de ANISAKIS: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F 7 days or −31 °F + 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days",
+   "en_por_celda": "Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below + 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 28,
@@ -32244,7 +32244,7 @@
    "es": "Archivar los registros de jornada del mes (hay que conservarlos 4 años)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "File this month's time-clock records (FLSA: time cards 2 years, payroll 3 years)",
+   "en_por_celda": "File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require longer, e.g. NY 6)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 12,
@@ -37190,7 +37190,7 @@
    "es": "Ventas en efectivo (contado − fondo)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Cash sales (counted − starting bank)",
+   "en_por_celda": "Net cash (counted − starting bank)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -37278,7 +37278,7 @@
    "es": "Z del TPV",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "POS Z report total",
+   "en_por_celda": "POS Z report: sales + tax, excl. tips",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 3,
@@ -37790,7 +37790,7 @@
    "es": "6 Ene — Reyes",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Super Bowl Sunday (early Feb)",
+   "en_por_celda": "Super Bowl Sunday (2nd Sunday in Feb)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -38452,7 +38452,7 @@
    "es": "Vuelta al cole / rutina",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Labor Day + back to school",
+   "en_por_celda": "Labor Day (1st Monday) + back to school",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 4,

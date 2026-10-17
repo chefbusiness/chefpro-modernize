@@ -257,7 +257,7 @@ PATRONES_SIN_CAMBIO = set()            # patrones con comparación numérica que
 HOJA_CAL = ('B02', 'Calendario Anual')
 CALENDARIO = OrderedDict([
     (5, ('January', "Jan 1 — New Year's Day", '1 week', None)),
-    (6, ('February', 'Super Bowl Sunday (early Feb)', '2 weeks',
+    (6, ('February', 'Super Bowl Sunday (2nd Sunday in Feb)', '2 weeks',
          'Sustituye a Reyes. Tareas: pedidos anticipados para llevar (wings, party platters), pantallas en la barra, '
          'personal extra de barra y de delivery')),
     (7, ('February', "Feb 14 — Valentine's Day", '2 weeks', None)),
@@ -287,7 +287,7 @@ CALENDARIO = OrderedDict([
           'cierran o abren solo de día), patio a pleno rendimiento, especiales de barbacoa')),
     (18, ('July–August', 'Summer peak season', 'Ongoing',
           'Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado, carta de verano')),
-    (19, ('September', 'Labor Day + back to school', '2 weeks',
+    (19, ('September', 'Labor Day (1st Monday) + back to school', '2 weeks',
           'Fin del verano. Tareas: carta de otoño y especiales de almuerzo (lunch specials) para la vuelta a la '
           'rutina')),
     (20, ('October', 'Oct 31 — Halloween', '1 week', None)),
@@ -325,29 +325,30 @@ POR_CELDA = OrderedDict([
     (('09', 'Cierre de Caja', 'A46'), 'Item'), (('09', 'Cierre de Caja', 'C46'), 'Amount'),
     (('09', 'Cierre de Caja', 'A47'), 'Total cash (count)'),
     (('09', 'Cierre de Caja', 'A48'), 'Starting bank (−)'),
-    (('09', 'Cierre de Caja', 'A49'), 'Cash sales (counted − starting bank)'),
+    (('09', 'Cierre de Caja', 'A49'), 'Net cash (counted − starting bank)'),
     (('09', 'Cierre de Caja', 'A50'), 'Card sales, excl. tips'),
     (('09', 'Cierre de Caja', 'A51'), 'Other tenders + card tips paid in cash'),
     (('09', 'Cierre de Caja', 'A52'), 'TOTAL COLLECTED'),
-    (('09', 'Cierre de Caja', 'A53'), 'POS Z report total'),
+    (('09', 'Cierre de Caja', 'A53'), 'POS Z report: sales + tax, excl. tips'),
     (('09', 'Cierre de Caja', 'A54'), 'OVER / SHORT'),
     # 09 · Registro Mensual: cabecera de la tabla y totales
     (('09', 'Registro Mensual', 'A4'), 'Day'), (('09', 'Registro Mensual', 'B4'), 'Starting Bank'),
     (('09', 'Registro Mensual', 'C4'), 'Cash Counted'), (('09', 'Registro Mensual', 'D4'), 'Card Sales (no tips)'),
     (('09', 'Registro Mensual', 'E4'), 'Other + Tips Paid'),
-    (('09', 'Registro Mensual', 'F4'), 'Total Collected'), (('09', 'Registro Mensual', 'G4'), 'POS Z Report'),
+    (('09', 'Registro Mensual', 'F4'), 'Total Collected'), (('09', 'Registro Mensual', 'G4'), 'POS Z (+ tax, no tips)'),
     (('09', 'Registro Mensual', 'H4'), 'Over/Short'), (('09', 'Registro Mensual', 'I4'), 'Bank Deposit'),
     (('09', 'Registro Mensual', 'J4'), 'Closed by'), (('09', 'Registro Mensual', 'A36'), 'TOTALS'),
     # 02 · pescado crudo: destrucción de parásitos (D10, FDA Food Code 3-402.11/3-402.12 y 3-203.12)
     (('02', 'Fríos', 'B10'),
-     'Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F for '
-     '7 days (or −31 °F until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)'),
+     'Raw or undercooked fish (tartare, ceviche, crudo) — parasite destruction: confirm it was frozen at −4 °F or '
+     'below for 7 days (or −31 °F or below until solid + 15 h); keep the record 90 days (FDA Food Code 3-402.11)'),
     (('02', 'Mise en Place', 'B10'),
-     'Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F 7 days or −31 °F + 15 h, FDA Food '
-     'Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days'),
+     'Raw or undercooked fish and shellfish — fish: frozen for parasites (−4 °F or below 7 days, or −31 °F or below '
+     '+ 15 h, FDA Food Code 3-402.11), record kept 90 days; raw oysters and clams: shellstock tags kept 90 days'),
     # 03 · conservación de fichajes (D11, 29 CFR 516.5-516.6)
     (('03', 'Mensual Manager', 'B16'),
-     "File this month's time-clock records (FLSA: time cards 2 years, payroll 3 years)"),
+     "File this month's time-clock records (FLSA minimum: time cards 2 years, payroll 3 years; some states require "
+     "longer, e.g. NY 6)"),
     # 05 · Trimestral y Anual: servicios contratados US (D11; NFPA 96, OSHA 1910.157, EPA 608, normas locales)
     (('05', 'Trimestral y Anual', 'B6'),
      'Pest control by a licensed operator: service visit and signed service report on file'),
@@ -406,9 +407,9 @@ ADAPTAR = OrderedDict([
                                       '(alianza); uñas cortas y limpias, sin esmalte ni postizas salvo con guantes'),
     (('01', 'Apertura Cocina', 'B9'), 'Lavamanos = handwashing sink, con agua caliente (al menos 100 °F, FDA Food '
                                       'Code 5-202.12), jabón y papel'),
-    (('01', 'Apertura Cocina', 'B10'), 'FDA Food Code 2-201.11: quien tenga vómitos, diarrea, ictericia o dolor de '
-                                       'garganta con fiebre se lo dice al responsable de turno (person in charge) y '
-                                       'no manipula alimentos'),
+    (('01', 'Apertura Cocina', 'B10'), 'FDA Food Code 2-201.11: el responsable (person in charge) comprueba que nadie '
+                                       'tiene vómitos, diarrea, ictericia, dolor de garganta con fiebre o una herida '
+                                       'infectada; quien los tenga no manipula alimentos'),
     (('01', 'Apertura Cocina', 'B14'), 'Práctica US: si huele a gas, no enciendas nada ni toques interruptores, sal '
                                        'y llama a la compañía de gas o al 911 desde fuera'),
     (('01', 'Apertura Cocina', 'B18'), _TEMP_FRIO + '; «cámaras» = walk-in cooler y walk-in freezer'),
@@ -427,8 +428,11 @@ ADAPTAR = OrderedDict([
     # 02
     (('02', 'Calientes', 'B20'), 'Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16); coletilla '
                                  '«— log reading: ____ °F»'),
-    (('02', 'Calientes', 'B27'), '40 °C = 104 °F; el aceite usado va al contenedor del reciclador (grease / used '
-                                 'cooking oil recycler), no a un «gestor autorizado»'),
+    (('02', 'Calientes', 'B27'), 'Filtrar según el procedimiento del fabricante de la freidora (los filtros integrados '
+                                 'trabajan a temperatura de servicio; a mano, dejar enfriar antes, guantes '
+                                 'resistentes al calor y recipiente estable), sin cifra de temperatura; el aceite '
+                                 'usado va al contenedor del reciclador (used cooking oil recycler), no a un «gestor '
+                                 'autorizado»'),
     (('02', 'Fríos', 'B6'), 'FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de '
                             'lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y '
                             'ACLARAR. Sin «70 ppm, 5 min» ni «lejía»'),
@@ -440,7 +444,9 @@ ADAPTAR = OrderedDict([
     (('03', 'Diario Manager', 'B35'), 'US: revisar y aprobar los fichajes del equipo (time-clock punches: entradas, '
                                       'salidas y pausas) en el POS o en la app de fichaje'),
     (('03', 'Semanal Manager', 'B26'), _HACCP_KIT),
-    (('03', 'Mensual Manager', 'B18'), 'US: procesar la nómina (payroll) con propinas, horas extra y bonus'),
+    (('03', 'Mensual Manager', 'B18'), 'US: la nómina por horas no es mensual (semanal o quincenal según la ley '
+                                       'estatal de frecuencia de pago): CONCILIAR las nóminas del mes con propinas, '
+                                       'horas extra y bonus'),
     (('03', 'Mensual Manager', 'B23'), 'OSHA 29 CFR 1910.157(e)(2): inspección visual MENSUAL de los extintores'),
     (('03', 'Mensual Manager', 'B30'), '«Google Maps» → Google Business Profile'),
     # 04
@@ -472,7 +478,8 @@ ADAPTAR = OrderedDict([
                                      'roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y '
                                      'cambia el rótulo y el valor de cada fila'),
     (('09', 'Instrucciones', 'B15'), 'Las tres cifras EN: card sales WITHOUT tips, other tenders + card tips paid out '
-                                     'in cash, y el total del POS Z report (rótulos de la hoja, entre comillas)'),
+                                     'in cash, y la Z del POS = ventas netas + sales tax, SIN propinas (rótulos de la '
+                                     'hoja, entre comillas)'),
     (('09', 'Instrucciones', 'B16'), 'Fórmula con los rótulos EN: TOTAL COLLECTED = (cash counted − starting bank) + '
                                      'card sales + other'),
     (('09', 'Instrucciones', 'B17'), 'DESCUADRE → OVER / SHORT; TOTAL FACTURADO → TOTAL COLLECTED'),
@@ -480,11 +487,15 @@ ADAPTAR = OrderedDict([
     (('09', 'Registro Mensual', 'A37'), 'Usa los rótulos EN de la fila 4 («Cash Counted», «Starting Bank», '
                                         '«Over/Short»); «100 € de descuadre» → «100 of over/short»; añade: «Card '
                                         'Sales» sin propinas y «Other + Tips Paid» = otros medios + propinas de '
-                                        'tarjeta pagadas en efectivo del cajón'),
+                                        'tarjeta pagadas en efectivo del cajón; «POS Z» = ventas netas + sales tax, '
+                                        'sin propinas'),
     # BONUS-02
     (('B02', 'Instrucciones', 'B8'), 'Añade la nota UK: Mothering Sunday (marzo), bank holidays y Boxing Day en las '
                                      'filas libres'),
 ])
+# Celdas ES con °C cuya EN NO lleva cifra en °F (decisión de la ronda 1 de F2: el filtrado del aceite sigue el
+# procedimiento del fabricante, sin temperatura). G7 no les exige °F.
+CELSIUS_SIN_F = frozenset({('02', 'Calientes', 'B27')})
 for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     if _dir:
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _dir)
@@ -525,7 +536,16 @@ REGLAS_US = OrderedDict([
                  'NFPA 96, tabla 11.4')),
     ('supresion', ('cada 6 meses', 'NFPA 96 §11.2; NFPA 17A')),
     ('refrigerante', ('técnico certificado EPA 608', '40 CFR Part 82, Subpart F')),
-    ('fichajes', ('fichajes 2 años; nóminas 3 años', '29 CFR 516.5-516.6')),
+    ('fichajes', ('fichajes 2 años; nóminas 3 años (mínimo federal; algunos estados piden más: NY 6)',
+                  '29 CFR 516.5-516.6; NY Labor Law §195(4)')),
+    ('frecuencia_pago', ('nómina por horas semanal o quincenal según el estado (no mensual)',
+                         '[estatal] CA Labor Code §204; NY Labor Law §191; TX Labor Code §61.011')),
+    ('enfriamiento', ('135 → 70 °F en 2 h; 70 → 41 °F en 4 h más', 'FDA Food Code 2022 §3-501.14')),
+    ('recalentado', ('165 °F durante 15 s en 2 h como máximo (para mantener en caliente)',
+                     'FDA Food Code 2022 §3-403.11(A)')),
+    ('sanitizante', ('concentración medida con tiras (test kit); ppm de la etiqueta', 'FDA Food Code 2022 §4-302.14; '
+                                                                                      '§4-501.114')),
+    ('aviso_consumidor', ('aviso al consumidor en la carta para crudo o poco hecho', 'FDA Food Code 2022 §3-603.11')),
     ('centavo', ('no se acuña desde el 12-nov-2025; curso legal', 'U.S. Mint, acto del 12-nov-2025 (Coin World)')),
     ('backflow', ('test anual habitual', '[local] programa de cross-connection de la compañía de agua')),
     ('grasas', ('frecuencia de la ordenanza FOG', '[local] ordenanza municipal de grasas (FOG)')),
