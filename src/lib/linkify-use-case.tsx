@@ -57,6 +57,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Food Cost + Menu Engineering Guide': '/en/digital-products/food-cost-menu-engineering-guide',
   'How to Open a Pastry Shop': '/en/digital-products/how-to-open-a-pastry-shop',
   'Restaurant Checklists Kit Pro': '/en/digital-products/restaurant-checklist-templates',
+  'Bar Checklists Kit Pro': '/en/digital-products/bar-checklist-templates',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

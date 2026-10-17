@@ -203,11 +203,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-bar',
     url: '/kit-tareas-bar',
     price: '€12',
-    name: { es: 'Tareas: Bar / Cocktails', en: 'Tasks: Bar / Cocktails' },
+    name: { es: 'Tareas: Bar / Cocktails', en: 'Bar Checklists Kit Pro' },
     description: {
       es: 'Apertura, cierre, mise y prep de garnishes.',
-      en: 'Opening, closing, mise, and garnish prep.',
+      en: 'Bar opening and closing checklists, cocktail, draft beer and wine stations, bar manager, bartender duties by role, inventory and a cash drawer count: 342 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `bar-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/bar-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-catering': {
     id: 'kit-tareas-catering',

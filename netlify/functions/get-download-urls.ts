@@ -905,6 +905,23 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/restaurant-checklist-templates/BONUS-02-restaurant-holiday-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-18): Bar Checklists Kit Pro. MISMAS claves que kit-tareas-bar (las de TEMPLATES de
+  // src/pages/BarChecklistsKitDashboard.tsx) → los 11 xlsx EN de /dl/bar-checklist-templates/
+  // (SPEC checklists-kit/bar §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'bar-checklist-templates': {
+    'apertura-cierre': '/dl/bar-checklist-templates/01-bar-opening-closing-checklists.xlsx',
+    'partidas': '/dl/bar-checklist-templates/02-bar-station-checklists-cocktails-beer-wine.xlsx',
+    'manager': '/dl/bar-checklist-templates/03-bar-manager-checklist.xlsx',
+    'perfiles': '/dl/bar-checklist-templates/04-bartender-checklist-duties-by-role.xlsx',
+    'periodicas': '/dl/bar-checklist-templates/05-bar-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/bar-checklist-templates/06-bar-event-checklists.xlsx',
+    'personalizable': '/dl/bar-checklist-templates/07-blank-bar-checklist-template.xlsx',
+    'apertura-negocio': '/dl/bar-checklist-templates/08-venue-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/bar-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/bar-checklist-templates/BONUS-01-bar-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/bar-checklist-templates/BONUS-02-bar-events-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',
