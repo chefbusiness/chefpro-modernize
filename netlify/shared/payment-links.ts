@@ -23,6 +23,7 @@ export const PAYMENT_LINKS: Record<string, string> = {
   'guia-restaurante-nikkei': 'https://buy.stripe.com/aFa4gs1C464e0ILfnL6oo10',
   'guia-restaurante-peruano': 'https://buy.stripe.com/6oUbIU2G80JU0ILa3r6oo0P',
   'haccp-templates': 'https://buy.stripe.com/4gM3cobcEboyajla3r6oo1C',
+  'how-to-open-a-pastry-shop': 'https://buy.stripe.com/4gMbIU0y0eAK9fh6Rf6oo1O',
   'kit-escandallos': 'https://buy.stripe.com/cNi3cogwY64e9fhfnL6oo01',
   'kit-gestion-personal': 'https://buy.stripe.com/00weV64Og0JUezB2AZ6oo0H',
   'kit-inventario': 'https://buy.stripe.com/3cI6oA0y01NYbnp1wV6oo0I',
