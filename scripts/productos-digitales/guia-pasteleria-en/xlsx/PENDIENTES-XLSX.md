@@ -171,3 +171,7 @@
 - NUM: capacidad-obrador-y-local.xlsx «Capacity by Equipment»!F7 («L de masa o crema por batida» → texto «qt of dough or cream per batch») y B7 «Planetary mixer, 20 qt»: la celda numérica sigue en 20 (litros del ES); 20 L = 21.1 qt. Si se quiere exacto, ×1.05669 en E7 (el resto de la fila no cambia: G7 son piezas por unidad). Hoja «Capacity by Equipment»!F13 («m³ of usable space per rotation») y B13 «8 m³ (about 283 cu ft)»: E13 se queda en 8 m³ (CONFIG-NOTAS §3), coherente con el texto.
 - NUM: capacidad «Settings»!B22 y «Site Visit Checklist»!F12 (altura): el texto dice «9.8 ft» y la unidad es «ft»: aplicar ×3.2808399 (op opcional de CONFIG-NOTAS §3), si no, las celdas siguen en 3 / 3.2 con unidad «ft».
 - NUM: staff-schedule «Settings»!C8:C13 ×1.25 y C15/C17 ya en config; las notas C60/E15 del JSON asumen 12 pagos y $15,080; «Hiring Plan»!D18 → mes 5 (config) para que el pico «Mother's Day» salga en mayo.
+- NUM: calculadora-capex-pasteleria.xlsx «CAPEX por Bloque»!K52 = 137,000 (escenario publicado ESPAÑOL de 90 m², proyecto 5,000
+  + obra 81,000 + equipo 46,000 + marketing 5,000) → sin equivalente US en el research. Los textos EN (C52, O53) lo declaran
+  «a Spanish case, 1:1 in dollars» y piden sustituirlo; K53 (17.4 %) y «Summary»!B12 lo siguen leyendo. El texto EN no cita
+  ese 17.4 %. Si se prefiere sin dato español: vaciar K52 (K53 y B12 dan «») y retocar C52/O53/«Summary»!D12.

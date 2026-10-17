@@ -94,6 +94,9 @@ _fmt_us0 += [('Variante del Formato', 'K18:L22', None)]
 # FILAS_LIBRES de split_md.py). La fila 26 (el traspaso del caso) se queda.
 _traspasos = [('Traspaso vs Obra Nueva', 'A27:E40', ('vaciar', None)), ('Traspaso vs Obra Nueva', 'H27:H40', ('vaciar', None))]
 _traspasos0 = [('Traspaso vs Obra Nueva', 'C27:E40', None)]
+# «CAPEX por Bloque»!K52 = 137.000 € del escenario publicado ESPAÑOL (La Hostelera, 90 m²): fuera; el lector pone su referencia
+_k52 = [('CAPEX por Bloque', 'K52', ('vaciar', None))]
+_k520 = [('CAPEX por Bloque', 'K52', None)]
 _eq_unox, _eq_unox0 =_celdas('Equipamiento', {'I16': 3354.12, 'I17': 2513.41}, lambda v: neto(v, 0.21))
 _carta_pvp =[('Coste Hora y Mano de Obra', 'L%d' % r, ('set', neto(v, t))) for r, (v, t) in PVP_CARTA.items()]
 _carta_pvp0 = [('Coste Hora y Mano de Obra', 'L%d' % r, neto(v, t)) for r, (v, t) in PVP_CARTA.items()]
@@ -124,10 +127,10 @@ LIBROS = {
             ('Parámetros', 'B7:B9', ('mul', 1 / SQFT_PER_M2)),     # 600/900/1,200 €/m² -> $/sq ft (D8)
             ('Parámetros', 'B13:B15', ('set', 0)),                 # IVA general 21 % · pastelería 10 % · tasas 0 % (D7)
             ('Traspaso vs Obra Nueva', 'C26:C30', ('mul', SQFT_PER_M2)),   # m² de los 5 traspasos con superficie (D8)
-        ] + _capex_unox + _fmt_us + _traspasos,                                 # UNOX/SMEG con IVA -> ÷ 1.21 (D7) · rangos US (T01)
+        ] + _capex_unox + _fmt_us + _traspasos + _k52,                                 # UNOX/SMEG con IVA -> ÷ 1.21 (D7) · rangos US (T01)
         'texto': {('CAPEX por Bloque', 'F7'): EN_NO, ('CAPEX por Bloque', 'F8'): EN_NO},   # «¿Lleva IVA?» Sí -> No
         'dv': {},
-        'impuesto0': [('Parámetros', 'B13:B15')] + _r0(_capex_unox0) + _r0(_fmt_us0) + _r0(_traspasos0),
+        'impuesto0': [('Parámetros', 'B13:B15')] + _r0(_capex_unox0) + _r0(_fmt_us0) + _r0(_traspasos0) + _r0(_k520),
     },
     # ===================================================================================================== capacidad
     'capacidad-obrador-y-local.xlsx': {
