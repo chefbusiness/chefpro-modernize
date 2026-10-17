@@ -4,7 +4,7 @@
 
 *John Guerrero · AI Chef Pro · aichef.pro*
 
-Twelve decisions you have to make before you open a pastry shop, and that almost never get settled with a single number: buy the blast chiller or wait, open with twenty items or forty, take your first First Communion cake order with no track record, start legally from home, sign your first wholesale account. Each one comes with its context, its options, the criterion you decide by, the cell in the pack that settles it and the rule that applies when there is one (the US rule, checked against official sources in October 2026, as in the guide). There isn't a single made-up figure: every number comes from a cell you can open and check.
+Twelve decisions you have to make before you open a pastry shop, and that almost never get settled with a single number: buy the blast chiller or wait, open with twenty items or forty, take your first First Communion cake order with no track record, start legally from home, sign your first wholesale account. Each one comes with its context, its options, the criterion you decide by, the cell in the pack that settles it and the rule that applies when there is one (the US rule, checked against official sources in October 2026, as in the guide). There isn't a single made-up figure: every number about the case comes from a cell you can open and check, and every outside figure names its source.
 
 **Version 1.0 · October 2026 · aichef.pro/en/digital-products/how-to-open-a-pastry-shop**
 
@@ -75,7 +75,7 @@ And if you're toying with the idea of a production kitchen alone, with no counte
 | Home-based bakery under cottage food, selling direct to customers | $14,966 | $27,389 | It isn't a storefront: it's your home, under your state's cottage food law, with its list of allowed foods and its sales cap. A registration, a permit or nothing at all, depending on the state. No build-out, no storefront and no lease deposit; the "Cottage Food Route" sheet in permits-and-licenses-checklist.xlsx is the one that rules. |
 | Closed-door production kitchen, no retail counter | $70,585 | $101,643 | No display case or retail fixtures, but the 50% line hangs over you: once more than half of your food sales by value go to businesses rather than consumers, you're no longer exempt from FDA food facility registration. The "Selling Wholesale" sheet in permits-and-licenses-checklist.xlsx walks you through it. |
 | Storefront with a counter but no kitchen of its own | $57,948 | $95,217 | You buy finished or par-baked product: almost all the production equipment goes and the display case stays whole. If you don't bake from scratch, don't say you do: “baked fresh daily” on product you only thaw and finish is a misleading-claim risk (FD&C Act §403(a)). |
-| Bakery-café with its own kitchen | $200,732 | $275,270 | Adds seating, a coffee bar, an espresso machine and customer restrooms. The moment people eat at your tables, two things change: sales tax (pastries to go are generally exempt in the four example states; what's eaten on site generally isn't) and, in New York and Florida, the agency that permits you. |
+| Bakery-café with its own kitchen | $200,732 | $275,270 | Adds seating, a coffee bar, an espresso machine and customer restrooms. The moment people eat at your tables, two things change: sales tax (pastries to go are generally exempt in the four example states; what's eaten on site generally isn't; in Texas, the trigger is your plates or utensils) and, in New York and Florida, the agency that permits you. |
 
 *The coefficients behind each format are model ASSUMPTIONS: they're for comparing formats with each other, not a budget.*
 
@@ -126,12 +126,12 @@ And what comes out of that process gets a label, with no exceptions in your hous
 |---|---|---|---|---|
 | Spiral mixer, 25 kg (55 lb) of dough | Mixing | Yes | 55% | 11,582 |
 | Planetary mixer, 20 L (about 21 qt) | Mixing | Yes | 30% | 8,533 |
-| Automatic dough sheeter, up to 16 in wide | Sheeting | Yes | 25% | 4,800 |
+| Dough sheeter, up to 16 in wide | Sheeting | Yes | 25% | 4,800 |
 | Convection oven, 6 trays | Heat | Yes | 60% | 1,920 |
 | Convection oven, 4 trays | Heat | Yes | 25% | 3,072 |
 | Retarder-proofer (roll-in) | Refrigeration | Yes | 35% | 1,543 |
 | Blast chiller, 4 trays | Freezing | Yes | 40% | 480 |
-| Walk-in cooler, 8 m³ (about 283 cu ft) | Refrigeration | Yes | 45% | 1,244 |
+| Walk-in cooler, about 283 cu ft (8 m³) | Refrigeration | Yes | 45% | 1,244 |
 | Refrigerated bakery display case | Storefront and display | Yes | 35% | 1,036 |
 | Modular deck oven | Heat | No | 20% | 3,080 |
 
@@ -627,7 +627,7 @@ What does bind you, with no wiggle room, is temperature: TCS food is held at 41 
 
 ### The Context of the Decision
 
-In a pastry shop, what doesn't sell today doesn't wait for tomorrow at full price: the refrigerated case holds 15 items, and all 15 are TCS food that needs a date mark as soon as you hold it past 24 hours, so at closing there isn't much room to think "I'll put it out again tomorrow". In year one that urgency gets worse, because you don't know the demand for each item yet: you order on gut feeling, not on history, and waste runs high while you learn what sells and how much. That learning has a double cost, in two opposite directions: you throw out product that could have sold with a small push, and at the same time you sell product you shouldn't be selling anymore, because nobody decided at what point it stops being fit to offer as is. Both come from the same cause: not having your end-of-day policy written down before you open. Without it, every counter associate improvises their own criterion, and one afternoon's criterion doesn't match the next one's.
+In a pastry shop, what doesn't sell today doesn't wait for tomorrow at full price: the refrigerated case holds 15 items, and the model treats all 15 as TCS food that needs a date mark as soon as you hold it past 24 hours, so at closing there isn't much room to think "I'll put it out again tomorrow". In year one that urgency gets worse, because you don't know the demand for each item yet: you order on gut feeling, not on history, and waste runs high while you learn what sells and how much. That learning has a double cost, in two opposite directions: you throw out product that could have sold with a small push, and at the same time you sell product you shouldn't be selling anymore, because nobody decided at what point it stops being fit to offer as is. Both come from the same cause: not having your end-of-day policy written down before you open. Without it, every counter associate improvises their own criterion, and one afternoon's criterion doesn't match the next one's.
 
 ### The Options on the Table
 
@@ -660,7 +660,7 @@ Here there is a rule, though it asks less of a small shop than people fear. Sell
 
 Donating is legal, and federal law has your back. The Bill Emerson Good Samaritan Food Donation Act protects a business that gives apparently wholesome food in good faith to a nonprofit for people in need, free or at a "good Samaritan reduced price", from liability for the food's nature, age, packaging or condition, except for gross negligence or intentional misconduct; since its amendment of January 5, 2023 it also covers some businesses that donate directly to people in need, restaurants, caterers and retail grocers among them (42 U.S.C. §1791; checked in October 2026). It doesn't override your state or local health rules. The food waste rules with teeth are state and local, and the best-known among the four example states, California's, is written for big generators: SB 1383 asks grocery stores over 10,000 sq ft, restaurants over 5,000 sq ft or with 250 or more seats, and other large operations to donate the maximum edible food they'd otherwise throw away, under written agreements and with records. A counter shop the size of the modeled case, 969 sq ft and no seating, falls in neither band. What can reach you in California is organics recycling (AB 1826, triggered since September 2020 at 2 cubic yards of solid waste, counting trash, recycling and organics together): your trim and your unsold product are organic waste, so ask your hauler.
 
-The recommendation, with what would change it: start with option B on the day-old rack, because it gets back more dollars than donating or staff meals and doesn't call for lining up a nonprofit to pick up; move to option C only when what's left over each night is more than that rack can absorb without devaluing the rest of the case; and keep option D for pieces that are still safe but no longer presentable enough for the rack. Anything past its date mark goes in the bin, not to the staff table.
+The recommendation, with what would change it: start with option B on the day-old rack, because it gets back more dollars than donating or staff meals and doesn't call for lining up a nonprofit to pick up; move to option C only when what's left over each night is more than that rack can absorb without devaluing the rest of the case; and keep option D for pieces that are still safe but no longer presentable enough for the rack. Anything past its date mark goes in the trash, not to the staff table.
 
 **What you can do with what didn't sell, and what each road brings with it**
 
