@@ -734,4 +734,36 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   del gate aceptados: pH 4,5 y DOGV (norma española sin par), −18 °C (EN: «frozen product has to arrive frozen», sin cifra
   federal), «Spain» en la bio.
 ### P01
+- **Portada e índice**: «Sample Business Plan for a Pastry Shop» · «Bonus to the “How to Open a Pastry Shop” pack · the complete
+  case, filled in with the figures from the eight Excel tools» · «Version 1.0 · October 2026 · aichef.pro/en/digital-products/
+  how-to-open-a-pastry-shop» · «## Contents» con los 6 títulos de §1 (P02 escribe los de 5 y 6 igual). H3 del plan en Title Case:
+  The Project on One Page · The Investment and How It's Financed · The Three-Year Forecast · What We're Asking For and Why ·
+  The Market the Project Is Entering · The Location and the Customer · The Seasonality of Demand · Competition and Barriers to
+  Entry · The Concept and the Value Proposition · The Opening Menu and Its Margin · The Sales Channels and Their Contribution
+  Margin · The Pricing Policy · The Space and Its Zones · Production Capacity and Its Bottleneck · The Team and Its Cost · The
+  Startup Timeline.
+- **Tabla del §1 ("Startup Investment", 6 filas como el ES)**: columna «Pre-tax amount ($)»; INVESTMENT SUBTOTAL (before
+  working capital) $165,800 · WORKING CAPITAL $62,115 · TOTAL INVESTMENT $227,916 · CAPEX $165,800 · la fila del IVA soportado →
+  **«VAT/GST fronted on the investment (UK, Canada and Australia only; $0 in the US)» = $0** · **TOTAL STARTUP CASH NEED
+  $227,916**. Texto: **tres cifras, no cuatro**; equity **$167,916** + préstamo **$60,000**; sales tax $161,480 → ≈ $13,322 al
+  8.25 % «for illustration, not added». La Hostelera (137.000 €) → Zenind / Toast / RestaurantOwner.com (como cap. 4). Préstamo:
+  por encima del Microloan ($50,000) → **SBA 7(a) o convencional**; 6.2 %, 84 cuotas, 6 de solo intereses = supuestos; sin % de fondos propios.
+  **P02 (§5 tesorería y financiación) debe usar estos mismos rótulos y cifras.**
+- **§2 sin datos españoles**: BLS CE ($539 · $574 · $497 · $3,945) + QCEW 311811 y 311813 2018→2024 (cifras de T02); renta sin
+  cifra. Campañas con nombres de T09; añadido NRF ($29.1 bn / $38 bn frente a 0.3 % / 0.4 %) y Reyes **3.7 % en 5 días** (cap.
+  15). Competidores: obrador de elaboración propia → **bakery that bakes from scratch** · punto caliente → **small bake-off shop**
+  · súper → **supermarket in-store bakery** · bar con congelado → **café that bakes off frozen trays**; barrera = “baked here every
+  morning” / “made from scratch in our kitchen” + FD&C §403(a). La nota de la tabla de meses aclara Día de las Madres + US Mother's Day.
+- **§3**: Hofmann se queda como ejemplo europeo con fuente (igual que el cap. 3); Pomar → **Matias** (ejemplo europeo
+  declarado). Tabla de canales con las **7 columnas del ES** (sin «Cost to serve» ni «Platform fee») y los rótulos de T09/T10.
+  **Dos frases del ES corregidas**: «el resto de canales arrastra un plazo» → solo wholesale (45 días; encargos y online = 0);
+  «el caso no reproduce ese reparto (95/5)» → el caso **toma de él su 5 % wholesale** (78 + 14 + 3 = 95 % directo, como la nota de
+  T09). Margen ponderado = **por pieza media** (las 3 filas suman $1.07; errata «cien piezas», como B01). Veredictos sin comillas
+  (Keep / Review price / Drop). Precio: $2.26 y $5.87 before sales tax + exención TX del mostrador (34 TAC §3.293).
+- **§4**: tablas de zonas y de plantilla = las de los caps. 5 y 13 (sq ft; «Monthly pay for the grade ($)» × 15/12: 1,784.86 ·
+  1,721.14 · 1,490.53 · 1,561.78; anual idéntico; PRODUCTION KITCHEN / FRONT COUNTER). Cuello de botella nombrado: **blast
+  chiller (480)**. Convenio de Madrid → mínimos federal/TX/CA/NY/FL + BLS + desglose del 33 % (≈ 10 % obligatorio; TX workers'
+  comp opcional); FLSA (FS #21) y menores (HO 11, FS #43) en el refuerzo; calendario = 30 pasos **P1-P6** + **M1-M12**,
+  apertura en septiembre, único plazo legal CA 20 días hábiles. Pie BOCM → «Checked in October 2026 against the Department of
+  Labor's state minimum wage table (updated July 1, 2026)». Sin marcas ⟦ADAPT⟧.
 ### P02
