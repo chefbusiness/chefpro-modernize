@@ -125,7 +125,7 @@ And what comes out of that process gets a label, with no exceptions in your hous
 | Equipment | Category | Have it? | Share of the assortment that goes through it (%) | Kitchen pieces per day it allows |
 |---|---|---|---|---|
 | Spiral mixer, 25 kg (55 lb) of dough | Mixing | Yes | 55% | 11,582 |
-| Planetary mixer, 20 qt | Mixing | Yes | 30% | 8,533 |
+| Planetary mixer, 20 L (about 21 qt) | Mixing | Yes | 30% | 8,533 |
 | Automatic dough sheeter, up to 16 in wide | Sheeting | Yes | 25% | 4,800 |
 | Convection oven, 6 trays | Heat | Yes | 60% | 1,920 |
 | Convection oven, 4 trays | Heat | Yes | 25% | 3,072 |

@@ -351,7 +351,7 @@ The decision order is this, and there are no shortcuts: first, work out the tota
 | Storefront and display | Rear sliding doors for the display case (accessory) | No | Example price | No | $120 |  |  |
 | Production kitchen equipment | Blast chiller, 4 trays — Irinox MultiFresh line | Yes | Example price | No | $10,037 | $10,037 | $10,865 |
 | Production kitchen equipment | Dough sheeter, up to 16 in wide | Yes | Example price | No | $1,215 | $1,215 | $1,315 |
-| Production kitchen equipment | Planetary mixer, 20 qt | Yes | Example price | No | $595 | $595 | $644 |
+| Production kitchen equipment | Planetary mixer, 20 L (about 21 qt) | Yes | Example price | No | $595 | $595 | $644 |
 | Production kitchen equipment | Chocolate tempering machine, 12 kg (26 lb) | No | Example price | No | $7,400 |  |  |
 | Production kitchen equipment | Modular deck oven, 1 to 5 decks | No | Assumption | No | $12,000 |  |  |
 | Production kitchen equipment | Retarder-proofer (roll-in) | Yes | Assumption | No | $8,500 | $8,500 | $9,201 |
@@ -587,7 +587,7 @@ The buying decision that comes out of this whole section is simple to state and 
 | Equipment | Category | Have it? | Pieces per cycle | Minutes per cycle | Cycles per day | Share of the assortment that goes through it (%) | Kitchen pieces per day it allows |
 |---|---|---|---|---|---|---|---|
 | Spiral mixer, 25 kg (55 lb) of dough | Mixing | Yes | 490 | 30 | 13 | 55% | 11,582 |
-| Planetary mixer, 20 qt | Mixing | Yes | 160 | 25 | 16 | 30% | 8,533 |
+| Planetary mixer, 20 L (about 21 qt) | Mixing | Yes | 160 | 25 | 16 | 30% | 8,533 |
 | Automatic dough sheeter, up to 16 in wide | Sheeting | Yes | 60 | 20 | 20 | 25% | 4,800 |
 | Convection oven, 6 trays | Heat | Yes | 72 | 25 | 16 | 60% | 1,920 |
 | Convection oven, 4 trays | Heat | Yes | 48 | 25 | 16 | 25% | 3,072 |
@@ -649,7 +649,7 @@ The working rule this section closes with is the one that saves the most money a
 | Rear sliding doors for the display case (accessory) | Not named | Accessory for the case above | Optional | $120.40 | pre-tax | $120.40 | 6 |
 | Blast chiller, 4 trays | Irinox | MultiFresh line | Critical | $10,037.00 | pre-tax | $10,037.00 | 8 |
 | Dough sheeter, up to 16 in wide | Not named | Automatic, up to 16 in (40 cm) | Critical | $1,215.00 | pre-tax | $1,215.00 | 4 |
-| Planetary mixer, 20 qt | Not named | 20 qt (20 L) bowl | Critical | $595.04 | pre-tax | $595.04 | 3 |
+| Planetary mixer, 20 L (about 21 qt) | Not named | 20 L (about 21 qt) bowl | Critical | $595.04 | pre-tax | $595.04 | 3 |
 | Chocolate tempering machine, 12 kg (26 lb) | Not named | 12-kg (26-lb) tank | Optional | $7,400.00 | pre-tax | $7,400.00 | 7 |
 | Modular deck oven, 1 to 5 decks |  |  | Optional | $12,000.00 | pre-tax | $12,000.00 | 12 |
 | Retarder-proofer (roll-in) |  |  | Critical | $8,500.00 | pre-tax | $8,500.00 | 9 |
