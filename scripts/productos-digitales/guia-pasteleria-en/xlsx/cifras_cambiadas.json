@@ -1,0 +1,6472 @@
+[
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B6",
+  "fila": "Superficie total del local",
+  "columna": "Valor",
+  "es": 90,
+  "en": 968.751937503875,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B7",
+  "fila": "Obra civil, escenario bajo",
+  "columna": "Valor",
+  "es": 600,
+  "en": 55.741824,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B8",
+  "fila": "Obra civil, escenario medio",
+  "columna": "Valor",
+  "es": 900,
+  "en": 83.61273600000001,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B9",
+  "fila": "Obra civil, escenario alto",
+  "columna": "Valor",
+  "es": 1200,
+  "en": 111.483648,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B11",
+  "fila": "Precio por m2 aplicado",
+  "columna": "Medio",
+  "es": 900.0,
+  "en": 83.61273600000001,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B13",
+  "fila": "IVA general",
+  "columna": "Medio",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B14",
+  "fila": "IVA de la pastelería que vas a vender",
+  "columna": "Medio",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G6",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L6",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 17010.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M6",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 98010.0,
+  "en": 81000.00000000001,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G7",
+  "fila": "Sí",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "H7",
+  "fila": "Sí",
+  "columna": "Mínimo",
+  "es": 3354.12,
+  "en": 2772,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "I7",
+  "fila": "Sí",
+  "columna": "Máximo",
+  "es": 3354.12,
+  "en": 2772,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "J7",
+  "fila": "Sí",
+  "columna": "Tu importe",
+  "es": 3354.12,
+  "en": 2772,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L7",
+  "fila": "Sí",
+  "columna": "IVA soportado",
+  "es": 582.12,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M7",
+  "fila": "Sí",
+  "columna": "Total con IVA",
+  "es": 3354.12,
+  "en": 2772.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G8",
+  "fila": "Sí",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "H8",
+  "fila": "Sí",
+  "columna": "Mínimo",
+  "es": 2513.41,
+  "en": 2077.198347107438,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "I8",
+  "fila": "Sí",
+  "columna": "Máximo",
+  "es": 2513.41,
+  "en": 2077.198347107438,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "J8",
+  "fila": "Sí",
+  "columna": "Tu importe",
+  "es": 2513.41,
+  "en": 2077.198347107438,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L8",
+  "fila": "Sí",
+  "columna": "IVA soportado",
+  "es": 436.211652892562,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M8",
+  "fila": "Sí",
+  "columna": "Total con IVA",
+  "es": 2513.4100000000003,
+  "en": 2077.198347107438,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G9",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L9",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 479.66099999999994,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M9",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 2763.761,
+  "en": 2284.1,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G10",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G11",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L11",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 2107.77,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M11",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 12144.77,
+  "en": 10037.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G12",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L12",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 255.14999999999998,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M12",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 1470.15,
+  "en": 1215.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G13",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L13",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 124.95839999999998,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M13",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 719.9984,
+  "en": 595.04,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G14",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G15",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G16",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L16",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1785.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M16",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 10285.0,
+  "en": 8500.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G17",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L17",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1365.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M17",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 7865.0,
+  "en": 6500.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G18",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L18",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1092.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M18",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 6292.0,
+  "en": 5200.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G19",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L19",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1008.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M19",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 5808.0,
+  "en": 4800.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G20",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L20",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 399.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M20",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 2299.0,
+  "en": 1900.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G21",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L21",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 504.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M21",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 2904.0,
+  "en": 2400.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G22",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L22",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 588.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M22",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 3388.0,
+  "en": 2800.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G23",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L23",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 294.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M23",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 1694.0,
+  "en": 1400.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G24",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L24",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1575.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M24",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 9075.0,
+  "en": 7500.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G25",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L25",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 273.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M25",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 1573.0,
+  "en": 1300.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G26",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L26",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 336.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M26",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 1936.0,
+  "en": 1600.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G27",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L27",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 672.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M27",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 3872.0,
+  "en": 3200.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G28",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L28",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 189.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M28",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 1089.0,
+  "en": 900.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G29",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L29",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1050.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M29",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 6050.0,
+  "en": 5000.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G30",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L30",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 210.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M30",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 1210.0,
+  "en": 1000.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G34",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L34",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 525.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M34",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 3025.0,
+  "en": 2500.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "G35",
+  "fila": "No",
+  "columna": "Tipo de IVA",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L35",
+  "fila": "No",
+  "columna": "IVA soportado",
+  "es": 1050.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M35",
+  "fila": "No",
+  "columna": "Total con IVA",
+  "es": 6050.0,
+  "en": 5000.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L39",
+  "fila": "Obra civil e instalaciones",
+  "columna": "IVA soportado",
+  "es": 17010.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M39",
+  "fila": "Obra civil e instalaciones",
+  "columna": "Total con IVA",
+  "es": 98010.0,
+  "en": 81000.00000000001,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L40",
+  "fila": "Equipamiento de obrador",
+  "columna": "IVA soportado",
+  "es": 11402.210052892562,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M40",
+  "fila": "Equipamiento de obrador",
+  "columna": "Total con IVA",
+  "es": 65698.44840000001,
+  "en": 54296.23834710744,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L41",
+  "fila": "Tienda y vitrina",
+  "columna": "IVA soportado",
+  "es": 2663.661,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M41",
+  "fila": "Tienda y vitrina",
+  "columna": "Total con IVA",
+  "es": 15347.761,
+  "en": 12684.1,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L42",
+  "fila": "Licencias y proyecto técnico",
+  "columna": "IVA soportado",
+  "es": 1260.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M42",
+  "fila": "Licencias y proyecto técnico",
+  "columna": "Total con IVA",
+  "es": 9180.0,
+  "en": 7920.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L44",
+  "fila": "Packaging inicial",
+  "columna": "IVA soportado",
+  "es": 525.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M44",
+  "fila": "Packaging inicial",
+  "columna": "Total con IVA",
+  "es": 3025.0,
+  "en": 2500.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L45",
+  "fila": "Marketing de apertura",
+  "columna": "IVA soportado",
+  "es": 1050.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M45",
+  "fila": "Marketing de apertura",
+  "columna": "Total con IVA",
+  "es": 6050.0,
+  "en": 5000.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "L47",
+  "fila": "CAPEX TOTAL",
+  "columna": "IVA soportado",
+  "es": 33910.87105289256,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "M47",
+  "fila": "CAPEX TOTAL",
+  "columna": "Total con IVA",
+  "es": 261826.4894,
+  "en": 227915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "K48",
+  "fila": "Del cual, IVA que hay que adelantar",
+  "columna": "Base sin IVA",
+  "es": 33910.87105289256,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "CAPEX por Bloque",
+  "celda": "K49",
+  "fila": "Desembolso total con IVA",
+  "columna": "Base sin IVA",
+  "es": 261826.4894,
+  "en": 227915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K15",
+  "fila": "PS-05",
+  "columna": "Publicado mínimo",
+  "es": 100000,
+  "en": 50000,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L15",
+  "fila": "PS-05",
+  "columna": "Publicado máximo",
+  "es": 150000,
+  "en": 100000,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M15",
+  "fila": "PS-05",
+  "columna": "Desviación sobre el punto medio",
+  "es": 0.32640270677685956,
+  "en": 1.2106711779614328,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K16",
+  "fila": "PS-01",
+  "columna": "Publicado mínimo",
+  "es": 3000,
+  "en": 15000,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L16",
+  "fila": "PS-01",
+  "columna": "Publicado máximo",
+  "es": 30000,
+  "en": 25000,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M16",
+  "fila": "PS-01",
+  "columna": "Desviación sobre el punto medio",
+  "es": -0.09294328775356875,
+  "en": -0.2516782123966941,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K17",
+  "fila": "PS-02",
+  "columna": "Publicado mínimo",
+  "es": 8000,
+  "en": 75000,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L17",
+  "fila": "PS-02",
+  "columna": "Publicado máximo",
+  "es": 20000,
+  "en": 150000,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M17",
+  "fila": "PS-02",
+  "columna": "Desviación sobre el punto medio",
+  "es": 4.041807661157025,
+  "en": -0.37257504661157015,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K18",
+  "fila": "PS-03",
+  "columna": "Publicado mínimo",
+  "es": 15000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L18",
+  "fila": "PS-03",
+  "columna": "Publicado máximo",
+  "es": 50000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M18",
+  "fila": "PS-03",
+  "columna": "Desviación sobre el punto medio",
+  "es": 0.783006887221869,
+  "en": null,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K19",
+  "fila": "PS-04",
+  "columna": "Publicado mínimo",
+  "es": 60000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L19",
+  "fila": "PS-04",
+  "columna": "Publicado máximo",
+  "es": 100000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M19",
+  "fila": "PS-04",
+  "columna": "Desviación sobre el punto medio",
+  "es": 1.5091451283057853,
+  "en": null,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K20",
+  "fila": "PS-06",
+  "columna": "Publicado mínimo",
+  "es": 60000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L20",
+  "fila": "PS-06",
+  "columna": "Publicado máximo",
+  "es": 100000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M20",
+  "fila": "PS-06",
+  "columna": "Desviación sobre el punto medio",
+  "es": 0.074962143801653,
+  "en": null,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K21",
+  "fila": "PS-07",
+  "columna": "Publicado mínimo",
+  "es": 150000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L21",
+  "fila": "PS-07",
+  "columna": "Publicado máximo",
+  "es": 250000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M21",
+  "fila": "PS-07",
+  "columna": "Desviación sobre el punto medio",
+  "es": 0.3257724492561984,
+  "en": null,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "K22",
+  "fila": "PS-08",
+  "columna": "Publicado mínimo",
+  "es": 83000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "L22",
+  "fila": "PS-08",
+  "columna": "Publicado máximo",
+  "es": 180000,
+  "en": null,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "M22",
+  "fila": "PS-08",
+  "columna": "Desviación sobre el punto medio",
+  "es": 0.3492559570122238,
+  "en": null,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "I26",
+  "fila": "Variantes con rango de inversión publicado",
+  "columna": "Inversión de apertura",
+  "es": 8.0,
+  "en": 3.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Variante del Formato",
+  "celda": "I27",
+  "fila": "Variantes que se van más de un 50 % del punto medio publicado",
+  "columna": "Inversión de apertura",
+  "es": 3.0,
+  "en": 1.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "C26",
+  "fila": "Pastelería-repostería",
+  "columna": "m2",
+  "es": 85,
+  "en": 914.9323854203263,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "F26",
+  "fila": "Pastelería-repostería",
+  "columna": "€ por m2",
+  "es": 505.88235294117646,
+  "en": 46.99800847058824,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "C27",
+  "fila": "Pastelería take away",
+  "columna": "m2",
+  "es": 69,
+  "en": 742.7098187529708,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "F27",
+  "fila": "Pastelería take away",
+  "columna": "€ por m2",
+  "es": 1159.4202898550725,
+  "en": 107.7136695652174,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "C28",
+  "fila": "Obrador sin venta al público",
+  "columna": "m2",
+  "es": 80,
+  "en": 861.1128333367777,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "F28",
+  "fila": "Obrador sin venta al público",
+  "columna": "€ por m2",
+  "es": 312.5,
+  "en": 29.032200000000003,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "C29",
+  "fila": "Panadería-pastelería",
+  "columna": "m2",
+  "es": 63,
+  "en": 678.1263562527125,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "F29",
+  "fila": "Panadería-pastelería",
+  "columna": "€ por m2",
+  "es": 285.7142857142857,
+  "en": 26.543725714285713,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "C30",
+  "fila": "Pastelería artesanal",
+  "columna": "m2",
+  "es": 63,
+  "en": 678.1263562527125,
+  "formula": false
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Traspaso vs Obra Nueva",
+  "celda": "F30",
+  "fila": "Pastelería artesanal",
+  "columna": "€ por m2",
+  "es": 301.58730158730157,
+  "en": 28.01837714285714,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C6",
+  "fila": "Obra civil e instalaciones",
+  "columna": "IVA soportado",
+  "es": 17010.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D6",
+  "fila": "Obra civil e instalaciones",
+  "columna": "Total con IVA",
+  "es": 98010.0,
+  "en": 81000.00000000001,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C7",
+  "fila": "Equipamiento de obrador",
+  "columna": "IVA soportado",
+  "es": 11402.210052892562,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D7",
+  "fila": "Equipamiento de obrador",
+  "columna": "Total con IVA",
+  "es": 65698.44840000001,
+  "en": 54296.23834710744,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C8",
+  "fila": "Tienda y vitrina",
+  "columna": "IVA soportado",
+  "es": 2663.661,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D8",
+  "fila": "Tienda y vitrina",
+  "columna": "Total con IVA",
+  "es": 15347.761,
+  "en": 12684.1,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C9",
+  "fila": "Licencias y proyecto técnico",
+  "columna": "IVA soportado",
+  "es": 1260.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D9",
+  "fila": "Licencias y proyecto técnico",
+  "columna": "Total con IVA",
+  "es": 9180.0,
+  "en": 7920.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C11",
+  "fila": "Packaging inicial",
+  "columna": "IVA soportado",
+  "es": 525.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D11",
+  "fila": "Packaging inicial",
+  "columna": "Total con IVA",
+  "es": 3025.0,
+  "en": 2500.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C12",
+  "fila": "Marketing de apertura",
+  "columna": "IVA soportado",
+  "es": 1050.0,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D12",
+  "fila": "Marketing de apertura",
+  "columna": "Total con IVA",
+  "es": 6050.0,
+  "en": 5000.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "C14",
+  "fila": "TOTAL",
+  "columna": "IVA soportado",
+  "es": 33910.87105289256,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "D14",
+  "fila": "TOTAL",
+  "columna": "Total con IVA",
+  "es": 261826.4894,
+  "en": 227915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "B18",
+  "fila": "IVA que tienes que adelantar",
+  "columna": "Base sin IVA",
+  "es": 33910.87105289256,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "B22",
+  "fila": "IVA soportado",
+  "columna": "Base sin IVA",
+  "es": 33910.87105289256,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "B23",
+  "fila": "Desembolso total con IVA",
+  "columna": "Base sin IVA",
+  "es": 261826.4894,
+  "en": 227915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "IVA y Tesorería",
+  "celda": "B26",
+  "fila": "Aportación propia necesaria",
+  "columna": "Base sin IVA",
+  "es": 201826.4894,
+  "en": 167915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Resumen",
+  "celda": "B9",
+  "fila": "IVA soportado",
+  "columna": "Medio",
+  "es": 33910.87105289256,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Resumen",
+  "celda": "B10",
+  "fila": "Desembolso total con IVA",
+  "columna": "Medio",
+  "es": 261826.4894,
+  "en": 227915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "calculadora-capex-pasteleria.xlsx",
+  "hoja": "Resumen",
+  "celda": "B16",
+  "fila": "Aportación propia necesaria",
+  "columna": "Medio",
+  "es": 201826.4894,
+  "en": 167915.61834710746,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B14",
+  "fila": "Superficie total del local",
+  "columna": "Valor",
+  "es": 90,
+  "en": 968.751937503875,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B19",
+  "fila": "Caudal de extracción por kW, equipos eléctricos",
+  "columna": "Eléctrica",
+  "es": 40,
+  "en": 23.54311114765906,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B20",
+  "fila": "Caudal de extracción por kW, equipos de gas",
+  "columna": "Eléctrica",
+  "es": 50,
+  "en": 29.428888934573827,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B21",
+  "fila": "Caudal de campana necesario",
+  "columna": "Eléctrica",
+  "es": 1360.0,
+  "en": 800.465779020408,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B22",
+  "fila": "Altura libre mínima que exiges al local",
+  "columna": "Eléctrica",
+  "es": 3,
+  "en": 9.842519685039369,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D6",
+  "fila": "Obrador",
+  "columna": "m2",
+  "es": 45,
+  "en": 484.3759687519375,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D7",
+  "fila": "Despacho",
+  "columna": "m2",
+  "es": 22,
+  "en": 236.80602916761387,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D8",
+  "fila": "Cámara y almacén",
+  "columna": "m2",
+  "es": 5,
+  "en": 53.81955208354861,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D9",
+  "fila": "Cámara y almacén",
+  "columna": "m2",
+  "es": 4,
+  "en": 43.05564166683889,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D10",
+  "fila": "Cámara y almacén",
+  "columna": "m2",
+  "es": 3,
+  "en": 32.29173125012917,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D11",
+  "fila": "Aseos y vestuario",
+  "columna": "m2",
+  "es": 8,
+  "en": 86.11128333367778,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D12",
+  "fila": "Aseos y vestuario",
+  "columna": "m2",
+  "es": 3,
+  "en": 32.29173125012917,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D14",
+  "fila": "TOTAL repartido",
+  "columna": "m2",
+  "es": 90.0,
+  "en": 968.751937503875,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D15",
+  "fila": "Superficie declarada en «Parámetros»",
+  "columna": "m2",
+  "es": 90.0,
+  "en": 968.751937503875,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D18",
+  "fila": "Metros de obrador",
+  "columna": "m2",
+  "es": 45.0,
+  "en": 484.3759687519375,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Zonas y m2",
+  "celda": "D20",
+  "fila": "Metros de zona de venta (despacho)",
+  "columna": "m2",
+  "es": 22.0,
+  "en": 236.80602916761387,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Capacidad por Equipo",
+  "celda": "E13",
+  "fila": "Sí",
+  "columna": "Capacidad por ciclo",
+  "es": 8,
+  "en": 282.51733377190874,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Capacidad por Equipo",
+  "celda": "G13",
+  "fila": "m3 útiles por rotación",
+  "columna": "Piezas por unidad",
+  "es": 70,
+  "en": 1.9821792614399998,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Capacidad por Equipo",
+  "celda": "E14",
+  "fila": "Sí",
+  "columna": "Capacidad por ciclo",
+  "es": 0.93,
+  "en": 10.010436687540041,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Capacidad por Equipo",
+  "celda": "G14",
+  "fila": "m2 de exposición por reposición",
+  "columna": "Piezas por unidad",
+  "es": 130,
+  "en": 12.077395200000002,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Ficha de Visita a Local",
+  "celda": "F8",
+  "fila": "Sí",
+  "columna": "Dato medido",
+  "es": 1400,
+  "en": 824.0088901680672,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Ficha de Visita a Local",
+  "celda": "G8",
+  "fila": "Sí",
+  "columna": "No aplica",
+  "es": 1360.0,
+  "en": 800.465779020408,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Ficha de Visita a Local",
+  "celda": "F12",
+  "fila": "Sí",
+  "columna": "Dato medido",
+  "es": 3.2,
+  "en": 10.498687664041995,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Ficha de Visita a Local",
+  "celda": "G12",
+  "fila": "Sí",
+  "columna": "No aplica",
+  "es": 3.0,
+  "en": 9.842519685039369,
+  "formula": true
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Ficha de Visita a Local",
+  "celda": "F13",
+  "fila": "Sí",
+  "columna": "Dato medido",
+  "es": 92,
+  "en": 990.2797583372944,
+  "formula": false
+ },
+ {
+  "libro": "capacidad-obrador-y-local.xlsx",
+  "hoja": "Ficha de Visita a Local",
+  "celda": "G13",
+  "fila": "Sí",
+  "columna": "No aplica",
+  "es": 90.0,
+  "en": 968.751937503875,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "D6",
+  "fila": "2 · Dirección, jefes y encargados",
+  "columna": "Bruto mensual del convenio (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "D7",
+  "fila": "3 · Personal especialista",
+  "columna": "Bruto mensual del convenio (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "D8",
+  "fila": "5 · Personal de apoyo",
+  "columna": "Bruto mensual del convenio (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B11",
+  "fila": "Pagas del convenio al año",
+  "columna": "Jornada",
+  "es": 15,
+  "en": 12,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B19",
+  "fila": "IVA de pastelería, bollería y confitería",
+  "columna": "Jornada",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B20",
+  "fila": "IVA del pan del RD 308/2019",
+  "columna": "Jornada",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B21",
+  "fila": "IVA en zona de degustación",
+  "columna": "Jornada",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B28",
+  "fila": "Techo de la fila 9 del art. 4.1",
+  "columna": "Jornada",
+  "es": 4,
+  "en": 41,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B29",
+  "fila": "Techo del art. 9.3",
+  "columna": "Jornada",
+  "es": 8,
+  "en": 41,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L6",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.4545454545454546,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M6",
+  "fila": "Bollería",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L7",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M7",
+  "fila": "Bollería",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L8",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M8",
+  "fila": "Bollería",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L9",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.7,
+  "en": 1.5454545454545452,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M9",
+  "fila": "Bollería",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L10",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M10",
+  "fila": "Bollería",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L11",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.95,
+  "en": 1.7727272727272725,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M11",
+  "fila": "Bollería",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L12",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 3.6,
+  "en": 3.2727272727272725,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M12",
+  "fila": "Pastelería individual",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L13",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 3.2,
+  "en": 2.909090909090909,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M13",
+  "fila": "Pastelería individual",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L14",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 2.1,
+  "en": 1.909090909090909,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M14",
+  "fila": "Pastelería individual",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L15",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 3.8,
+  "en": 3.454545454545454,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M15",
+  "fila": "Pastelería individual",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L16",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 2.3,
+  "en": 2.0909090909090904,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M16",
+  "fila": "Pastelería individual",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L17",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 4.5,
+  "en": 4.090909090909091,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M17",
+  "fila": "Pastelería individual",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L18",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.6,
+  "en": 3.2727272727272725,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M18",
+  "fila": "Tartas y entremets",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L19",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.4,
+  "en": 3.0909090909090904,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M19",
+  "fila": "Tartas y entremets",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L20",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.2,
+  "en": 2.909090909090909,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M20",
+  "fila": "Tartas y entremets",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L21",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.3,
+  "en": 2.9999999999999996,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M21",
+  "fila": "Tartas y entremets",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L22",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.8,
+  "en": 3.454545454545454,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M22",
+  "fila": "Tartas y entremets",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L23",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.5,
+  "en": 3.1818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M23",
+  "fila": "Tartas y entremets",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L24",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 1.2,
+  "en": 1.1538461538461537,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M24",
+  "fila": "Panes de acompañamiento",
+  "columna": "IVA",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L25",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.5384615384615385,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M25",
+  "fila": "Panes de acompañamiento",
+  "columna": "IVA",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L26",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 3.9,
+  "en": 3.75,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M26",
+  "fila": "Panes de acompañamiento",
+  "columna": "IVA",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L27",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 3.2,
+  "en": 3.076923076923077,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M27",
+  "fila": "Panes de acompañamiento",
+  "columna": "IVA",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L28",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 16.5,
+  "en": 14.999999999999998,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M28",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L29",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 2.4,
+  "en": 2.1818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M29",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L30",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.4545454545454546,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M30",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L31",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.9,
+  "en": 1.727272727272727,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M31",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L32",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M32",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L33",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.2,
+  "en": 1.0909090909090908,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M33",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L34",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 10.5,
+  "en": 9.545454545454545,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M34",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "L35",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 13.5,
+  "en": 12.272727272727272,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Coste Hora y Mano de Obra",
+  "celda": "M35",
+  "fila": "Temporada",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G8",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H8",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I8",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G10",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H10",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I10",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G12",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H12",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I12",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G13",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H13",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I13",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G14",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H14",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I14",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G15",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H15",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I15",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G16",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H16",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I16",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G17",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H17",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I17",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G18",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H18",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I18",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H19",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I19",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G21",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H21",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I21",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G23",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H23",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I23",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G28",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H28",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I28",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H29",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I29",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "G30",
+  "fila": "No",
+  "columna": "Techo del art. 4.1 fila 9 (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "H30",
+  "fila": "No",
+  "columna": "Techo del art. 9.3 (°C)",
+  "es": 8.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Decisión de Huevo y Temperatura",
+  "celda": "I30",
+  "fila": "No",
+  "columna": "Temperatura de conservación (°C)",
+  "es": 4.0,
+  "en": 41.0,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E6",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.4545454545454546,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G6",
+  "fila": "Bollería",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.19200000000000003,
+  "en": 0.17454545454545453,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H6",
+  "fila": "Bollería",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.4992000000000001,
+  "en": 0.4538181818181818,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E7",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G7",
+  "fila": "Bollería",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.14800000000000002,
+  "en": 0.13454545454545452,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H7",
+  "fila": "Bollería",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.3848000000000001,
+  "en": 0.34981818181818175,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E8",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G8",
+  "fila": "Bollería",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.1295,
+  "en": 0.11772727272727272,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H8",
+  "fila": "Bollería",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.3367,
+  "en": 0.3060909090909091,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E9",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.7,
+  "en": 1.5454545454545452,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G9",
+  "fila": "Bollería",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0765,
+  "en": 0.06954545454545454,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H9",
+  "fila": "Bollería",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.1989,
+  "en": 0.1808181818181818,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E10",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G10",
+  "fila": "Bollería",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.06475,
+  "en": 0.05886363636363636,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H10",
+  "fila": "Bollería",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.16835,
+  "en": 0.15304545454545454,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E11",
+  "fila": "Bollería",
+  "columna": "PVP con IVA (€)",
+  "es": 1.95,
+  "en": 1.7727272727272725,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G11",
+  "fila": "Bollería",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.058499999999999996,
+  "en": 0.05318181818181818,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H11",
+  "fila": "Bollería",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.15209999999999999,
+  "en": 0.13827272727272727,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E12",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 3.6,
+  "en": 3.2727272727272725,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G12",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.14400000000000002,
+  "en": 0.1309090909090909,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H12",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.37440000000000007,
+  "en": 0.3403636363636363,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E13",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 3.2,
+  "en": 2.909090909090909,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G13",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.11200000000000002,
+  "en": 0.10181818181818182,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H13",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.29120000000000007,
+  "en": 0.26472727272727276,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E14",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 2.1,
+  "en": 1.909090909090909,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G14",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.14700000000000002,
+  "en": 0.13363636363636364,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H14",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.38220000000000004,
+  "en": 0.34745454545454546,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E15",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 3.8,
+  "en": 3.454545454545454,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G15",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.11399999999999999,
+  "en": 0.10363636363636364,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H15",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.2964,
+  "en": 0.26945454545454545,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E16",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 2.3,
+  "en": 2.0909090909090904,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G16",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.06899999999999999,
+  "en": 0.06272727272727271,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H16",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.17939999999999998,
+  "en": 0.16309090909090906,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E17",
+  "fila": "Pastelería individual",
+  "columna": "PVP con IVA (€)",
+  "es": 4.5,
+  "en": 4.090909090909091,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G17",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0675,
+  "en": 0.06136363636363637,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H17",
+  "fila": "Pastelería individual",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.17550000000000002,
+  "en": 0.15954545454545457,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E18",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.6,
+  "en": 3.2727272727272725,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G18",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0432,
+  "en": 0.039272727272727265,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H18",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.11232,
+  "en": 0.10210909090909089,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E19",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.4,
+  "en": 3.0909090909090904,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G19",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.051,
+  "en": 0.04636363636363636,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H19",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.1326,
+  "en": 0.12054545454545453,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E20",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.2,
+  "en": 2.909090909090909,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G20",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0352,
+  "en": 0.032,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H20",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.09152,
+  "en": 0.08320000000000001,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E21",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.3,
+  "en": 2.9999999999999996,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G21",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.029699999999999997,
+  "en": 0.026999999999999996,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H21",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.07722,
+  "en": 0.0702,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E22",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.8,
+  "en": 3.454545454545454,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G22",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0304,
+  "en": 0.027636363636363636,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H22",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.07904,
+  "en": 0.07185454545454546,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E23",
+  "fila": "Tartas y entremets",
+  "columna": "PVP con IVA (€)",
+  "es": 3.5,
+  "en": 3.1818181818181817,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G23",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.035,
+  "en": 0.031818181818181815,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H23",
+  "fila": "Tartas y entremets",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.09100000000000001,
+  "en": 0.08272727272727272,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E24",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 1.2,
+  "en": 1.1538461538461537,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G24",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.192,
+  "en": 0.1846153846153846,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H24",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.49920000000000003,
+  "en": 0.48,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E25",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.5384615384615385,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G25",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.064,
+  "en": 0.06153846153846154,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H25",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.16640000000000002,
+  "en": 0.16,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E26",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 3.9,
+  "en": 3.75,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G26",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.1365,
+  "en": 0.13125,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H26",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.35490000000000005,
+  "en": 0.34125000000000005,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E27",
+  "fila": "Panes de acompañamiento",
+  "columna": "PVP con IVA (€)",
+  "es": 3.2,
+  "en": 3.076923076923077,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G27",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.08,
+  "en": 0.07692307692307693,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H27",
+  "fila": "Panes de acompañamiento",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.20800000000000002,
+  "en": 0.2,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E28",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 16.5,
+  "en": 14.999999999999998,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G28",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.198,
+  "en": 0.17999999999999997,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H28",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.5148,
+  "en": 0.4679999999999999,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E29",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 2.4,
+  "en": 2.1818181818181817,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G29",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.031200000000000002,
+  "en": 0.028363636363636365,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H29",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.08112000000000001,
+  "en": 0.07374545454545456,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E30",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.4545454545454546,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G30",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.016,
+  "en": 0.014545454545454545,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H30",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.041600000000000005,
+  "en": 0.03781818181818182,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E31",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.9,
+  "en": 1.727272727272727,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G31",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0152,
+  "en": 0.013818181818181818,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H31",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.03952,
+  "en": 0.03592727272727273,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E32",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.85,
+  "en": 1.6818181818181817,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G32",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.01295,
+  "en": 0.01177272727272727,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H32",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.03367,
+  "en": 0.030609090909090902,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E33",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 1.2,
+  "en": 1.0909090909090908,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G33",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.015600000000000001,
+  "en": 0.014181818181818183,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H33",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.040560000000000006,
+  "en": 0.03687272727272728,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E34",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 10.5,
+  "en": 9.545454545454545,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G34",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.0525,
+  "en": 0.04772727272727272,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H34",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.1365,
+  "en": 0.12409090909090909,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "E35",
+  "fila": "Temporada",
+  "columna": "PVP con IVA (€)",
+  "es": 13.5,
+  "en": 12.272727272727272,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G35",
+  "fila": "Temporada",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 0.09449999999999999,
+  "en": 0.0859090909090909,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H35",
+  "fila": "Temporada",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 0.24569999999999997,
+  "en": 0.22336363636363632,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "G36",
+  "fila": "TOTAL DE LA CARTA",
+  "columna": "Aporte al PVP medio con IVA (€)",
+  "es": 2.4556999999999998,
+  "en": 2.257236013986014,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "H36",
+  "fila": "TOTAL DE LA CARTA",
+  "columna": "Aporte al ticket medio (€)",
+  "es": 6.38482,
+  "en": 5.868813636363636,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "F39",
+  "fila": "PVP medio ponderado con IVA",
+  "columna": "PVP sin IVA (€)",
+  "es": 2.4556999999999998,
+  "en": 2.257236013986014,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "F41",
+  "fila": "TICKET MEDIO CON IVA",
+  "columna": "PVP sin IVA (€)",
+  "es": 6.3848199999999995,
+  "en": 5.868813636363637,
+  "formula": true
+ },
+ {
+  "libro": "carta-de-apertura-y-escandallo.xlsx",
+  "hoja": "Mix y Ticket Medio",
+  "celda": "F43",
+  "fila": "IVA medio de la carta",
+  "columna": "PVP sin IVA (€)",
+  "es": 0.08792345363279996,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "C7",
+  "fila": "Tipo de IVA general (%)",
+  "columna": "Valor",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "I16",
+  "fila": "Crítico",
+  "columna": "Precio de referencia (€)",
+  "es": 3354.12,
+  "en": 2772,
+  "formula": false
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K16",
+  "fila": "con IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "I17",
+  "fila": "Crítico",
+  "columna": "Precio de referencia (€)",
+  "es": 2513.41,
+  "en": 2077.198347107438,
+  "formula": false
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K17",
+  "fila": "con IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K18",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K19",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K20",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K21",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K22",
+  "fila": "no declarada",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K23",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K24",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K25",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K26",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K27",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K28",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K29",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K30",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K31",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K32",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K33",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K34",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K35",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K36",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "K37",
+  "fila": "sin IVA",
+  "columna": "Tipo de IVA (%)",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "I46",
+  "fila": "IVA soportado sobre el precio real (€)",
+  "columna": "Precio de referencia (€)",
+  "es": 18165.1554,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "checklist-equipamiento-y-proveedores.xlsx",
+  "hoja": "Equipamiento",
+  "celda": "I47",
+  "fila": "Desembolso real con IVA (€)",
+  "columna": "Precio de referencia (€)",
+  "es": 104665.8954,
+  "en": 86500.73999999999,
+  "formula": true
+ },
+ {
+  "libro": "checklist-legal-y-licencias.xlsx",
+  "hoja": "Ruta Doméstica",
+  "celda": "B6",
+  "fila": "Metros cuadrados ÚTILES dedicados a la elaboración",
+  "columna": "",
+  "es": 12,
+  "en": 129.16692500051667,
+  "formula": false
+ },
+ {
+  "libro": "checklist-legal-y-licencias.xlsx",
+  "hoja": "Ruta Doméstica",
+  "celda": "B15",
+  "fila": "Criterio propio de proporcionalidad (kg por m2 útil y semana)",
+  "columna": "Dentro del tope",
+  "es": 8,
+  "en": 0.74322432,
+  "formula": false
+ },
+ {
+  "libro": "checklist-legal-y-licencias.xlsx",
+  "hoja": "Ruta Doméstica",
+  "celda": "B16",
+  "fila": "Tus kilos por metro cuadrado útil y semana",
+  "columna": "Dentro del tope",
+  "es": 5.0,
+  "en": 0.4645152,
+  "formula": true
+ },
+ {
+  "libro": "checklist-legal-y-licencias.xlsx",
+  "hoja": "Cronograma y Ruta Crítica",
+  "celda": "C49",
+  "fila": "19 de marzo y primer domingo de mayo",
+  "columna": "Mes",
+  "es": 3,
+  "en": 5,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B17",
+  "fila": "Bruto mensual del grupo de convenio del refuerzo",
+  "columna": "Valor",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B18",
+  "fila": "Pagas del convenio al año",
+  "columna": "Valor",
+  "es": 15,
+  "en": 12,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B25",
+  "fila": "IVA de pastelería, bollería y confitería",
+  "columna": "Valor",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Parámetros",
+  "celda": "B26",
+  "fila": "IVA del pan del RD 308/2019",
+  "columna": "Valor",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "G6",
+  "fila": "Roscón de Reyes",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "H6",
+  "fila": "Roscón de Reyes",
+  "columna": "PVP con IVA (€)",
+  "es": 16.5,
+  "en": 14.999999999999998,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "G7",
+  "fila": "Macarons de frambuesa",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "H7",
+  "fila": "Macarons de frambuesa",
+  "columna": "PVP con IVA (€)",
+  "es": 2.1,
+  "en": 1.909090909090909,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "D8",
+  "fila": "19 de marzo y primer domingo de mayo",
+  "columna": "Mes",
+  "es": 3,
+  "en": 5,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "G8",
+  "fila": "Tarta de chocolate 70 %",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "H8",
+  "fila": "Tarta de chocolate 70 %",
+  "columna": "PVP con IVA (€)",
+  "es": 3.6,
+  "en": 3.2727272727272725,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "G9",
+  "fila": "Torrijas",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "H9",
+  "fila": "Torrijas",
+  "columna": "PVP con IVA (€)",
+  "es": 2.4,
+  "en": 2.1818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "G10",
+  "fila": "Tarta de nata y fresas",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "H10",
+  "fila": "Tarta de nata y fresas",
+  "columna": "PVP con IVA (€)",
+  "es": 3.5,
+  "en": 3.1818181818181817,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "G11",
+  "fila": "Buñuelos de viento",
+  "columna": "IVA",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "estacionalidad-y-picos.xlsx",
+  "hoja": "Calendario de 6 Picos",
+  "celda": "H11",
+  "fila": "Buñuelos de viento",
+  "columna": "PVP con IVA (€)",
+  "es": 1.6,
+  "en": 1.4545454545454546,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B8",
+  "fila": "PVP medio ponderado de la carta, CON IVA (€/pieza)",
+  "columna": "",
+  "es": 2.4557,
+  "en": 2.2572360422715043,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B9",
+  "fila": "Ticket medio CON IVA (€)",
+  "columna": "",
+  "es": 6.38482,
+  "en": 5.868813709905911,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B15",
+  "fila": "IVA de pastelería, bollería y confitería (%)",
+  "columna": "",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B16",
+  "fila": "IVA del pan (%)",
+  "columna": "",
+  "es": 0.04,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B17",
+  "fila": "IVA general (%)",
+  "columna": "",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B18",
+  "fila": "IVA medio de las compras de materia prima (%)",
+  "columna": "",
+  "es": 0.1,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B20",
+  "fila": "IVA medio ponderado de la carta (%)",
+  "columna": "",
+  "es": 0.08792344,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B26",
+  "fila": "Número de pagas del convenio",
+  "columna": "",
+  "es": 15,
+  "en": 12,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B27",
+  "fila": "SMI vigente (€/año, 14 pagas)",
+  "columna": "",
+  "es": 17094,
+  "en": 15080,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B36",
+  "fila": "Recursos propios aportados (€)",
+  "columna": "",
+  "es": 201826.48,
+  "en": 167915.61,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B54",
+  "fila": "Mes de la primera paga extra (1-12)",
+  "columna": "",
+  "es": 7,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B55",
+  "fila": "Mes de la segunda paga extra (1-12)",
+  "columna": "",
+  "es": 12,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "0. Supuestos",
+  "celda": "B56",
+  "fila": "Mes de la tercera paga extra (1-12)",
+  "columna": "",
+  "es": 3,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E6",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E7",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E8",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E9",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E10",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E14",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "E15",
+  "fila": "Sí",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "B21",
+  "fila": "IVA soportado sobre la inversión (recuperable, pero hay que ADELANTARL",
+  "columna": "Importe (€, base sin IVA)",
+  "es": 33910.8714,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Inversión Inicial",
+  "celda": "B22",
+  "fila": "NECESIDAD TOTAL DE CAJA AL ARRANQUE",
+  "columna": "Importe (€, base sin IVA)",
+  "es": 261826.47322026436,
+  "en": 227915.60182026436,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F12",
+  "fila": "Ventas de pastelería, bollería y tartas",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.1,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F13",
+  "fila": "Ventas de pan de acompañamiento",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.04,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F15",
+  "fila": "Coste de ventas (materia prima, packaging y merma)",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.1,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F21",
+  "fila": "Alquiler del local",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F22",
+  "fila": "Suministros (electricidad, gas y agua)",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F24",
+  "fila": "Gestoría y asesoría",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F25",
+  "fila": "Software, TPV y pasarela de cobro",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F26",
+  "fila": "Telefonía e internet",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F27",
+  "fila": "Limpieza y consumibles",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F28",
+  "fila": "Mantenimiento de equipos",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F29",
+  "fila": "Publicidad y redes",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "F30",
+  "fila": "Otros gastos de estructura",
+  "columna": "Tipo de IVA de la línea",
+  "es": 0.21,
+  "en": 0,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "B34",
+  "fila": "IVA soportado de los costes variables",
+  "columna": "Año 1 (arranque)",
+  "es": 9035.973353013367,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "C34",
+  "fila": "IVA soportado de los costes variables",
+  "columna": "Año 2 (crucero)",
+  "es": 10310.331925562707,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "D34",
+  "fila": "IVA soportado de los costes variables",
+  "columna": "Año 3",
+  "es": 10722.745202585214,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "B35",
+  "fila": "IVA soportado de los costes fijos",
+  "columna": "Año 1 (arranque)",
+  "es": 9235.8,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "C35",
+  "fila": "IVA soportado de los costes fijos",
+  "columna": "Año 2 (crucero)",
+  "es": 9235.8,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "PyG 3 Años",
+  "celda": "D35",
+  "fila": "IVA soportado de los costes fijos",
+  "columna": "Año 3",
+  "es": 9235.8,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Escenarios",
+  "celda": "C23",
+  "fila": "Saldo real del mes 12 de la hoja de Tesorería (sólo el realista)",
+  "columna": "Realista",
+  "es": 95212.51766301482,
+  "en": 87811.1324006835,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E6",
+  "fila": "Grupo 2",
+  "columna": "Bruto mes del grupo (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "F6",
+  "fila": "Grupo 2",
+  "columna": "Bruto mes del puesto (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "G6",
+  "fila": "Grupo 2",
+  "columna": "Seguridad Social a cargo de la empresa (€)",
+  "es": 471.2037000000001,
+  "en": 589.004625,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "H6",
+  "fila": "Grupo 2",
+  "columna": "Coste mes (€)",
+  "es": 1899.0937000000001,
+  "en": 2373.867125,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E7",
+  "fila": "Grupo 3",
+  "columna": "Bruto mes del grupo (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "F7",
+  "fila": "Grupo 3",
+  "columna": "Bruto mes del puesto (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "G7",
+  "fila": "Grupo 3",
+  "columna": "Seguridad Social a cargo de la empresa (€)",
+  "es": 454.38030000000003,
+  "en": 567.975375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "H7",
+  "fila": "Grupo 3",
+  "columna": "Coste mes (€)",
+  "es": 1831.2903000000001,
+  "en": 2289.112875,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E8",
+  "fila": "Grupo 5",
+  "columna": "Bruto mes del grupo (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "F8",
+  "fila": "Grupo 5",
+  "columna": "Bruto mes del puesto (€)",
+  "es": 596.21,
+  "en": 745.2625,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "G8",
+  "fila": "Grupo 5",
+  "columna": "Seguridad Social a cargo de la empresa (€)",
+  "es": 196.74930000000003,
+  "en": 245.93662500000002,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "H8",
+  "fila": "Grupo 5",
+  "columna": "Coste mes (€)",
+  "es": 792.9593000000001,
+  "en": 991.1991250000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E9",
+  "fila": "Grupo 4",
+  "columna": "Bruto mes del grupo (€)",
+  "es": 1249.42,
+  "en": 1561.775,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "F9",
+  "fila": "Grupo 4",
+  "columna": "Bruto mes del puesto (€)",
+  "es": 624.71,
+  "en": 780.8875,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "G9",
+  "fila": "Grupo 4",
+  "columna": "Seguridad Social a cargo de la empresa (€)",
+  "es": 206.15430000000003,
+  "en": 257.692875,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "H9",
+  "fila": "Grupo 4",
+  "columna": "Coste mes (€)",
+  "es": 830.8643000000001,
+  "en": 1038.580375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E10",
+  "fila": "Grupo 4",
+  "columna": "Bruto mes del grupo (€)",
+  "es": 1249.42,
+  "en": 1561.775,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "F10",
+  "fila": "Grupo 4",
+  "columna": "Bruto mes del puesto (€)",
+  "es": 624.71,
+  "en": 780.8875,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "G10",
+  "fila": "Grupo 4",
+  "columna": "Seguridad Social a cargo de la empresa (€)",
+  "es": 206.15430000000003,
+  "en": 257.692875,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "H10",
+  "fila": "Grupo 4",
+  "columna": "Coste mes (€)",
+  "es": 830.8643000000001,
+  "en": 1038.580375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "F11",
+  "fila": "TOTAL PLANTILLA",
+  "columna": "Bruto mes del puesto (€)",
+  "es": 4650.43,
+  "en": 5813.0375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "G11",
+  "fila": "TOTAL PLANTILLA",
+  "columna": "Seguridad Social a cargo de la empresa (€)",
+  "es": 1534.6419,
+  "en": 1918.302375,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "H11",
+  "fila": "TOTAL PLANTILLA",
+  "columna": "Coste mes (€)",
+  "es": 6185.071900000001,
+  "en": 7731.339875,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E15",
+  "fila": "Técnicos y titulados superiores",
+  "columna": "Bruto mes (€)",
+  "es": 1733.88,
+  "en": 2167.3500000000004,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E16",
+  "fila": "Dirección, jefes y encargados",
+  "columna": "Bruto mes (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E17",
+  "fila": "Personal especialista",
+  "columna": "Bruto mes (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E18",
+  "fila": "Personal cualificado",
+  "columna": "Bruto mes (€)",
+  "es": 1249.42,
+  "en": 1561.775,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E19",
+  "fila": "Personal de apoyo",
+  "columna": "Bruto mes (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "E20",
+  "fila": "Personal de ayuda en servicios auxiliares",
+  "columna": "Bruto mes (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": false
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Personal",
+  "celda": "B24",
+  "fila": "SMI anual de referencia (€)",
+  "columna": "Personal de ayuda en servicios auxiliares",
+  "es": 17094.0,
+  "en": 15080.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 1",
+  "es": 19913.62266480981,
+  "en": 18304.2500351034,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 2",
+  "es": 17696.779287743502,
+  "en": 16266.566779500132,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 3",
+  "es": 20436.57227462415,
+  "en": 18784.936074751873,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 4",
+  "es": 24593.83303674873,
+  "en": 22606.216699172073,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 5",
+  "es": 28177.552857546325,
+  "en": 25900.30862607972,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 6",
+  "es": 28342.240778481268,
+  "en": 26051.68685259807,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 7",
+  "es": 25091.746896294004,
+  "en": 23063.8903196111,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 8",
+  "es": 19425.116063375106,
+  "en": 17855.22340007226,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 9",
+  "es": 26011.89679487491,
+  "en": 23909.675845273552,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 10",
+  "es": 27662.491586375105,
+  "en": 25426.873407907366,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 11",
+  "es": 31262.60150604046,
+  "en": 28736.03082404444,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Mes 12",
+  "es": 35870.44916295946,
+  "en": 32971.48295927833,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "N10",
+  "fila": "Ventas cobradas (con el IVA repercutido dentro)",
+  "columna": "Año (€)",
+  "es": 304484.9029098729,
+  "en": 279877.1418233923,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 2",
+  "es": -6965.509202547458,
+  "en": -6332.28109322496,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 3",
+  "es": -5625.317098587014,
+  "en": -5113.924635079103,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 4",
+  "es": -6692.322936128253,
+  "en": -6083.929941934774,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 5",
+  "es": -8059.961143674544,
+  "en": -7327.237403340493,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 6",
+  "es": -9202.607081734566,
+  "en": -8366.006437940514,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 7",
+  "es": -9167.565665929114,
+  "en": -8334.150605390103,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 8",
+  "es": -8033.429154117216,
+  "en": -7303.117412833832,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 9",
+  "es": -6143.277243531507,
+  "en": -5584.797494119552,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 10",
+  "es": -8600.497410023165,
+  "en": -7818.634009111967,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 11",
+  "es": -8978.618523061252,
+  "en": -8162.380475510228,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Mes 12",
+  "es": -10207.22860630708,
+  "en": -9279.298733006435,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "N12",
+  "fila": "Compras y coste de ventas (IVA incluido)",
+  "columna": "Año (€)",
+  "es": -87676.33406564116,
+  "en": -79705.75824149196,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 1",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 2",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 3",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 4",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 5",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 6",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 7",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 8",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 9",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 10",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 11",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Mes 12",
+  "es": -6954.649999999999,
+  "en": -6185.000000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "N13",
+  "fila": "Costes fijos de explotación (IVA incluido)",
+  "columna": "Año (€)",
+  "es": -83455.79999999999,
+  "en": -74220.00000000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 1",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 2",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 3",
+  "es": -12370.1438,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 4",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 5",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 6",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 7",
+  "es": -12370.1438,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 8",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 9",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 10",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 11",
+  "es": -6185.0719,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M14",
+  "fila": "Nóminas y Seguridad Social",
+  "columna": "Mes 12",
+  "es": -12370.1438,
+  "en": -7731.339875000001,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 1",
+  "es": 1739.86230238531,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 2",
+  "es": 1405.1057681778104,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 3",
+  "es": 1671.6251537934552,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 4",
+  "es": 2013.2372443698862,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 5",
+  "es": 2298.650203393364,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 6",
+  "es": 2289.8974709499385,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 7",
+  "es": 2006.6100176882833,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 8",
+  "es": 1534.4831480824087,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 9",
+  "es": 2148.253744319111,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 10",
+  "es": 2242.7017812365466,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 11",
+  "es": 2549.587079354898,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Mes 12",
+  "es": 2927.294240788663,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "N17",
+  "fila": "IVA repercutido del mes (memoria)",
+  "columna": "Año (€)",
+  "es": 24827.308154539674,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 1",
+  "es": 1402.8781093224961,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 2",
+  "es": 1281.0424635079103,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 3",
+  "es": 1378.0429941934774,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 4",
+  "es": 1502.3737403340492,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 5",
+  "es": 1606.2506437940513,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 6",
+  "es": 1603.0650605390101,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 7",
+  "es": 1499.9617412833832,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 8",
+  "es": 1328.1297494119551,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 9",
+  "es": 1551.5134009111966,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 10",
+  "es": 1585.8880475510227,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 11",
+  "es": 1697.5798733006436,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Mes 12",
+  "es": 1835.047528864171,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "N18",
+  "fila": "IVA soportado del mes (memoria)",
+  "columna": "Año (€)",
+  "es": 18271.77335301337,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E19",
+  "fila": "IVA a compensar arrastrado (inversión incluida)",
+  "columna": "Mes 4",
+  "es": 33910.8714,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H19",
+  "fila": "IVA a compensar arrastrado (inversión incluida)",
+  "columna": "Mes 7",
+  "es": 33156.24174266731,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K19",
+  "fila": "IVA a compensar arrastrado (inversión incluida)",
+  "columna": "Mes 10",
+  "es": 31266.146268621233,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E20",
+  "fila": "Resultado de la liquidación trimestral",
+  "columna": "Mes 4",
+  "es": -33156.24174266731,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H20",
+  "fila": "Resultado de la liquidación trimestral",
+  "columna": "Mes 7",
+  "es": -31266.146268621233,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K20",
+  "fila": "Resultado de la liquidación trimestral",
+  "columna": "Mes 10",
+  "es": -29956.404250137966,
+  "en": 0.0,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 1",
+  "es": 6463.900764809811,
+  "en": 4077.910160103399,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 2",
+  "es": -2718.451814803955,
+  "en": -4292.054188724829,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 3",
+  "es": -4823.53862396286,
+  "en": -555.328435327232,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 4",
+  "es": 4451.788200620477,
+  "en": 2295.946882237299,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 5",
+  "es": 6667.869813871784,
+  "en": 4346.731347739228,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 6",
+  "es": 5689.911796746702,
+  "en": 3459.340539657559,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 7",
+  "es": -4337.184986548648,
+  "en": -123.17257769254331,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 8",
+  "es": -2684.607407655648,
+  "en": -4300.806304675111,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 9",
+  "es": 5792.3252344298635,
+  "en": 3471.9660592404634,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 10",
+  "es": 4985.699859438402,
+  "en": 2755.327106881859,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 11",
+  "es": 8207.688666065671,
+  "en": 5720.738056620672,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Mes 12",
+  "es": 5401.8543397388485,
+  "en": 8839.271934358352,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "N22",
+  "fila": "FLUJO DEL MES",
+  "columna": "Año (€)",
+  "es": 33097.25584275045,
+  "en": 25695.870580419116,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 1",
+  "es": 68579.16258507417,
+  "en": 66193.17198036777,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "C23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 2",
+  "es": 65860.71077027022,
+  "en": 61901.117791642944,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "D23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 3",
+  "es": 61037.17214630736,
+  "en": 61345.78935631571,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "E23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 4",
+  "es": 65488.96034692784,
+  "en": 63641.736238553014,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "F23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 5",
+  "es": 72156.83016079963,
+  "en": 67988.46758629224,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "G23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 6",
+  "es": 77846.74195754633,
+  "en": 71447.8081259498,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "H23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 7",
+  "es": 73509.55697099768,
+  "en": 71324.63554825725,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "I23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 8",
+  "es": 70824.94956334203,
+  "en": 67023.82924358215,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "J23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 9",
+  "es": 76617.2747977719,
+  "en": 70495.79530282262,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "K23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 10",
+  "es": 81602.9746572103,
+  "en": 73251.12240970448,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "L23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 11",
+  "es": 89810.66332327598,
+  "en": 78971.86046632515,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "M23",
+  "fila": "SALDO ACUMULADO DE CAJA",
+  "columna": "Mes 12",
+  "es": 95212.51766301482,
+  "en": 87811.1324006835,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Tesorería 12 meses",
+  "celda": "B24",
+  "fila": "Saldo mínimo del año (€)",
+  "columna": "Mes 1",
+  "es": 61037.17214630736,
+  "en": 61345.78935631571,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Financiación",
+  "celda": "B6",
+  "fila": "Recursos propios aportados",
+  "columna": "",
+  "es": 201826.48,
+  "en": 167915.61,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Financiación",
+  "celda": "B9",
+  "fila": "TOTAL ORIGEN DE FONDOS",
+  "columna": "",
+  "es": 261826.48,
+  "en": 227915.61,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Financiación",
+  "celda": "B11",
+  "fila": "Necesidad total de caja al arranque",
+  "columna": "",
+  "es": 261826.47322026436,
+  "en": 227915.60182026436,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Financiación",
+  "celda": "B12",
+  "fila": "Diferencia (origen menos usos)",
+  "columna": "",
+  "es": 0.00677973564597778,
+  "en": 0.00817973562516272,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Financiación",
+  "celda": "B13",
+  "fila": "Diferencia sobre los usos (%)",
+  "columna": "",
+  "es": 2.5894003622293204e-08,
+  "en": 3.58893185013868e-08,
+  "formula": true
+ },
+ {
+  "libro": "plan-financiero-3-anos-pasteleria.xlsx",
+  "hoja": "Financiación",
+  "celda": "B14",
+  "fila": "Préstamo que ajustaría el origen a la necesidad",
+  "columna": "",
+  "es": 59999.993220264354,
+  "en": 59999.991820264375,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C8",
+  "fila": "Técnicos y titulados superiores",
+  "columna": "Bruto mensual (€)",
+  "es": 1733.88,
+  "en": 2167.3500000000004,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C9",
+  "fila": "Dirección, jefes y encargados",
+  "columna": "Bruto mensual (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C10",
+  "fila": "Personal especialista",
+  "columna": "Bruto mensual (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C11",
+  "fila": "Personal cualificado",
+  "columna": "Bruto mensual (€)",
+  "es": 1249.42,
+  "en": 1561.775,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C12",
+  "fila": "Personal de apoyo",
+  "columna": "Bruto mensual (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C13",
+  "fila": "Personal de ayuda en servicios auxiliares",
+  "columna": "Bruto mensual (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C15",
+  "fila": "Pagas del convenio",
+  "columna": "Bruto mensual (€)",
+  "es": 15,
+  "en": 12,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Parámetros",
+  "celda": "C17",
+  "fila": "Referencia anual del SMI (€)",
+  "columna": "Bruto mensual (€)",
+  "es": 17094,
+  "en": 15080,
+  "formula": false
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "E7",
+  "fila": "Dirección, jefes y encargados",
+  "columna": "Bruto mensual del grupo (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "H7",
+  "fila": "Dirección, jefes y encargados",
+  "columna": "Bruto mensual ajustado (€)",
+  "es": 1427.89,
+  "en": 1784.8625000000002,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "E8",
+  "fila": "Personal especialista",
+  "columna": "Bruto mensual del grupo (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "H8",
+  "fila": "Personal especialista",
+  "columna": "Bruto mensual ajustado (€)",
+  "es": 1376.91,
+  "en": 1721.1375,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "E9",
+  "fila": "Personal de apoyo",
+  "columna": "Bruto mensual del grupo (€)",
+  "es": 1192.42,
+  "en": 1490.525,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "H9",
+  "fila": "Personal de apoyo",
+  "columna": "Bruto mensual ajustado (€)",
+  "es": 596.21,
+  "en": 745.2625,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "E10",
+  "fila": "Personal cualificado",
+  "columna": "Bruto mensual del grupo (€)",
+  "es": 1249.42,
+  "en": 1561.775,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "H10",
+  "fila": "Personal cualificado",
+  "columna": "Bruto mensual ajustado (€)",
+  "es": 624.71,
+  "en": 780.8875,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "E11",
+  "fila": "Personal cualificado",
+  "columna": "Bruto mensual del grupo (€)",
+  "es": 1249.42,
+  "en": 1561.775,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "H11",
+  "fila": "Personal cualificado",
+  "columna": "Bruto mensual ajustado (€)",
+  "es": 624.71,
+  "en": 780.8875,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Horas y Coste",
+  "celda": "H12",
+  "fila": "TOTAL de la plantilla",
+  "columna": "Bruto mensual ajustado (€)",
+  "es": 4650.43,
+  "en": 5813.0375,
+  "formula": true
+ },
+ {
+  "libro": "plantilla-turnos-y-coste-personal.xlsx",
+  "hoja": "Plan de Contratación",
+  "celda": "D18",
+  "fila": "19 de marzo y primer domingo de mayo",
+  "columna": "Mes",
+  "es": 3,
+  "en": 5,
+  "formula": false
+ }
+]

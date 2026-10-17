@@ -411,6 +411,16 @@ export const PRODUCTS: Record<string, ProductConfig> = {
     emailCta: 'Access my guide',
     lang: 'en',
   },
+  // Tienda EN (2026-10-17): gemelo de guia-pasteleria-obrador, producto independiente con su propio acceso
+  // (mismo patrón que food-cost-menu-engineering-guide).
+  'how-to-open-a-pastry-shop': {
+    accessPath: '/en/digital-products/how-to-open-a-pastry-shop/access',
+    emailSubject: 'Your access to How to Open a Pastry Shop',
+    emailTitle: 'Thank you for your purchase!',
+    emailBody: 'Your access to <strong>How to Open a Pastry Shop</strong> is ready. Click the button to open your dashboard and download the guide in PDF + DOCX, the 8 Excel tools, the sample business plan, the 12 opening decisions and the Equivalents Guide:',
+    emailCta: 'Access my guide',
+    lang: 'en',
+  },
   'kit-tareas-sushi-bar': {
     accessPath: '/kit-tareas-sushi-bar-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',

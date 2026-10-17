@@ -768,6 +768,26 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  // Tienda EN (2026-10-17): How to Open a Pastry Shop, edición inglesa (contenido 1.0) de la guia-pasteleria-obrador
+  // (SPEC guia-pasteleria-en). Textos en inglés: los pinta <ProductChangelog lang="en"/>.
+  'how-to-open-a-pastry-shop': {
+    version: '1.0',
+    updated: '2026-10-17',
+    entries: [
+      {
+        version: '1.0',
+        date: '2026-10-17',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the guide, set up for the US with notes for the UK, Canada and Australia: 20 chapters and a regulatory appendix updated in October 2026, in PDF and editable DOCX, to decide everything before you open a pastry shop with its own production kitchen.',
+          'Permits explained for the US: your retail food permit instead of FDA registration, when wholesale brings FDA registration back, and the cottage food route from home, with four example states (California, Texas, New York and Florida).',
+          '8 Excel tools with live formulas: kitchen capacity and site visit checklist, startup cost calculator, seasonal peaks planner, opening menu and recipe costing, 3-year financial plan, permits and licenses checklist, equipment and suppliers checklist, and staff schedule with labor cost.',
+          'Square feet, °F and US pay rules (12 pay periods; payroll taxes, workers\' comp and benefits on top of base pay); prices before sales tax, sales tax rates in editable cells at 0% by default, and every sheet set up to print on US Letter paper.',
+          'Bonuses: the Sample Business Plan for a Pastry Shop, filled in with the full case (DOCX), and 12 Opening Decisions, Solved (PDF and DOCX), plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
   'kit-plan-financiero': {
     version: '2.0',
     updated: '2026-08-29',

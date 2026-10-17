@@ -1,0 +1,52 @@
+{
+  "producto": "guia-pasteleria-obrador",
+  "fecha": "2026-10-17",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · How to Open a Pastry Shop (SPEC guia-pasteleria-en D19, 17-oct-2026). El id es el del CATÁLOGO",
+    "(products-catalog.ts), que con urlByLang.en pinta la landing EN /en/digital-products/how-to-open-a-pastry-shop y $69.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto guia-pasteleria-obrador --config scripts/astro-migration/fase8x-config/guia-pasteleria-obrador-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: las cuatro librerías de prompts EN de panadería y pastelería (Bakery Consultant Pro, Pastry Consultant Pro,",
+    "Creative Pastry, Creative Bakery). Víctimas = SLUGS EN de la landing: se sacrifican el Restaurant Financial Plan Kit,",
+    "el Inventory Kit y el eBook de prompts; nunca el Food Cost Kit Pro, el HACCP Kit ni el Bakery Business Plan Kit,",
+    "que son las ventas cruzadas del propio producto (SPEC D17)."
+  ],
+  "nunca": [
+    "food-cost-templates",
+    "haccp-templates",
+    "bakery-business-plan"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 4,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "prompt-library-bakery-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-financial-plan-templates",
+      "ancla_n": 9,
+      "parrafo": "If the bakery you're planning is your own, the startup prompts below work best with the numbers in front of you. The {ENLACE} walks through the decisions that come before opening day, from cottage food or a retail food permit to startup costs line by line, kitchen capacity and a 3-year plan, with eight Excel tools."
+    },
+    "prompt-library-pastry-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-inventory-templates",
+      "ancla_n": 4,
+      "parrafo": "Designing a pastry shop starts before the floor plan: whether the space can take a hood duct to the roof, how many square feet the production kitchen needs and what the build-out will really cost. The {ENLACE} covers those decisions with a site visit checklist and a startup cost calculator, before you sign a lease."
+    },
+    "prompt-library-creative-pastry": {
+      "accion": "SUSTITUIR",
+      "victima": "ai-prompts-for-restaurants",
+      "ancla_n": 10,
+      "parrafo": "If your next step is a shop of your own, the {ENLACE} takes you from the idea to opening day: permits by state, startup costs, the production kitchen's equipment and the six peaks of the year, with eight Excel tools."
+    },
+    "prompt-library-creative-bakery": {
+      "accion": "SUSTITUIR",
+      "victima": "ai-prompts-for-restaurants",
+      "ancla_n": 8,
+      "parrafo": "Running a production bakery is one job; opening one is another. The {ENLACE} covers the second: cottage food or a retail food permit, startup costs line by line, kitchen capacity, staff and a 3-year financial plan, with eight Excel tools."
+    }
+  }
+}

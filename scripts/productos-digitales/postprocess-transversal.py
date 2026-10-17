@@ -98,11 +98,13 @@ SCRATCH = os.environ.get(
 #: (SPEC business-plans-en-5 D83, D89-D90).
 #: food-cost-menu-engineering-guide: Food Cost + Menu Engineering Guide (EN), traducción por celda de los 8 xlsx de la
 #: guía ES (SPEC guia-food-cost-en D12: Letter, metadatos EN, «Instructions»); no lleva el vocabulario ES de la casilla.
+#: how-to-open-a-pastry-shop: How to Open a Pastry Shop (EN), traducción por celda de los 8 xlsx de la guía ES
+#: (SPEC guia-pasteleria-en §2, D7-D8, D12-D16: Letter, metadatos EN, «Instructions»).
 EXCLUIDOS = {'kit-tareas-pasteleria', 'kit-escandallos', 'food-cost-templates',
              'restaurant-inventory-templates', 'haccp-templates', 'restaurant-schedule-templates',
              'restaurant-financial-plan-templates', 'food-truck-business-plan', 'coffee-shop-business-plan',
              'restaurant-business-plan', 'bakery-business-plan', 'bar-business-plan', 'catering-business-plan',
-             'mobile-bar-business-plan', 'food-cost-menu-engineering-guide'}
+             'mobile-bar-business-plan', 'food-cost-menu-engineering-guide', 'how-to-open-a-pastry-shop'}
 
 VERSION = '1.1'
 MES = 'agosto 2026'

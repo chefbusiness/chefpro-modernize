@@ -24,6 +24,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'guia-restaurante-nikkei': { eur: 65 },
   'guia-restaurante-peruano': { eur: 65 },
   'haccp-templates': { usd: 19 },
+  'how-to-open-a-pastry-shop': { usd: 69 },
   'kit-escandallos': { eur: 12 },
   'kit-gestion-personal': { eur: 14 },
   'kit-inventario': { eur: 14 },

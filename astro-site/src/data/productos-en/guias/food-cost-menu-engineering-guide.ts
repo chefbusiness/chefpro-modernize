@@ -264,6 +264,7 @@ const data: GuiaData = {
     { label: 'Restaurant Inventory Kit Pro', href: '/en/digital-products/restaurant-inventory-templates' },
     { label: 'Restaurant Financial Plan Kit Pro', href: '/en/digital-products/restaurant-financial-plan-templates' },
     { label: 'Restaurant Business Plan Kit', href: '/en/digital-products/restaurant-business-plan' },
+    { label: 'How to Open a Pastry Shop', href: '/en/digital-products/how-to-open-a-pastry-shop' },
     { label: 'Food Cost Calculator for Restaurants', href: '/en/food-cost-calculator-restaurant' },
     { label: 'Contact', href: 'mailto:info@aichef.pro' },
   ],

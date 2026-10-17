@@ -657,3 +657,15 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Correo EN **29-nov 14:00Z**: borrador `9848e616-82b2-4530-af65-70593ecc63fd` («Lanzamiento Food Cost + Menu Engineering Guide (EN) — 29-nov»,
   prueba a John enviada) + routine `trig_01KYPEeGdcVJbsnb8qCXbFrV` (30-oct 15:07Z). Plantilla
   `broadcast-food-cost-menu-engineering-guide-lanzamiento-en.html`. **Siguiente hueco EN: 4-dic 14:00Z.**
+
+### ▶️ 2026-10-16/17 (Claude Code en el Mac + VPS) — **How to Open a Pastry Shop (EN, $69)** — LISTO a falta del Payment Link
+- Producto 15 de la tienda EN, duplicado de la Guía Pastelería ES (65 €). Elegido por demanda US (DataForSEO, 16-oct: «how to
+  open a bakery» 720 + «how to start a bakery business» 480; «how to open a restaurant» 1.760 pide antes subir la guía Casual ES a v2).
+- El 94 % del ES dependía de España: caso «La Clara» con cifras 1:1 ambientado en Texas (mínimo federal, bollería para llevar
+  exenta, rosca de Reyes/comuniones/Día de Muertos), precios pre-tax, ruta de permisos US en 30 pasos P1-P6, cottage food por
+  estado, FDA Food Code 2022, FLSA, sales tax «por cómo vendes». Todo en `scripts/productos-digitales/guia-pasteleria-en/`.
+- PR #132 (draft, rama `feat/bakery-guide-en`). ≈ 8,7 M tokens de subagentes (L, techo 10 M).
+- **Al recibir el link**: CLI de Stripe (USD 69, redirección `/en/digital-products/how-to-open-a-pastry-shop/access?session_id={CHECKOUT_SESSION_ID}`),
+  env `VITE_STRIPE_PAYMENT_LINK_HOW_TO_OPEN_A_PASTRY_SHOP` (builds), `sync-payment-links.py`, PR fuera de draft y merge,
+  gates LIVE, sitemap en GSC. Correo EN **4-dic 14:00Z** (`broadcast-how-to-open-a-pastry-shop-lanzamiento-en.html`): borrador +
+  routine (programable desde el 4-nov). Siguiente hueco EN: 9-dic.
