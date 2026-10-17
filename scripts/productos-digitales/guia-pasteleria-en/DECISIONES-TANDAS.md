@@ -494,7 +494,7 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   bn**) contra el 0.3 % / 0.4 % del caso. **Matias** (Mallorca, «chapters 13 and 14») se queda como ejemplo europeo declarado
   en el cap. 15 (ensaïmadas, turrón) y en el 16 (95 % directa / 5 % a crédito a 30-60 días = origen del 5 % wholesale).
 - **Canales del 3-year plan** (cap. 16; T10 debe usar los mismos): **Counter · Custom orders · Wholesale (local cafés and
-  restaurants) · Online and shipping · TOTAL**; columnas «Cruising-year sales ($)» · «Share of sales (%)» · «Gross margin (%)»
+  restaurants) · Online and shipping · TOTAL**; columnas «Steady-state year sales ($)» · «Share of sales (%)» · «Gross margin (%)»
   · «Cost to serve (%)» · «Contribution margin (%)» · «Contribution margin ($)» · «Days to collect».
 - **Corrección de una frase del ES** (contradecía su propia tabla): el ES dice que el mostrador «arrastra un coste de servir
   mayor», pero la tabla le da **0 %** (encargos 2 %). EN: la merma de vitrina ya está en su margen bruto menor (68 % vs 70 %,
@@ -668,6 +668,42 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   «Punto caliente» = **small bake-off shop** ($22,456 de equipo vs $66,980; $85,997 vs $165,800). Croissant: $0.82 de $1.06
   = **más de tres cuartos**; el **63.3 %** es de toda la carta (errata ES).
 ### B02
+- **Molde de B01 respetado** (5 subtítulos, títulos de tabla en *sentence case* como B01, «chapter N of the guide»). Tablas con
+  los nombres de campaña de T09 y las cifras de T09/T08/T10 sin tocar. Columnas de "Peak Capacity vs Demand" en el bonus:
+  Campaign · Campaign days · Pieces demanded per day · Capacity during the campaign · Daily deficit · **Pieces you can make
+  ahead** (col. K del xlsx = excedente diario 4 × días de adelanto; Reyes 60) · Can you handle it?
+- **Dec. 5 (rosca)**: fuera Infobae 30 M, el 57 % de Madrid y el súper a 9 €; dentro king cake season + 90,500 / 110,000
+  búsquedas (DataForSEO, oct. 2026) y «check what supermarket in-store bakeries and chains charge». El relleno de nata/trufa
+  queda como opción («if you also offer a filled rosca») sin cifra. Congelación = **3-501.14 + etiqueta con tres fechas como
+  house practice + 3-501.17**; techo de vitrina = 41 °F (3-501.16) y la rosca en «Refrigerated case» de "Egg & TCS Decision".
+  **47.4 h = horas que llevaría hornear TODA la demanda del día (menos lo adelantado) frente a las 20 h que el caso ya hace
+  en campaña**, no «para cerrar el déficit» (errata ES; el déficit solo serían 27.4 h/día). Matias = ejemplo europeo
+  declarado («chapters 13 to 15 of the guide»). Menores en el refuerzo de Reyes: remite al cap. 14.
+- **Dec. 6 (comunión)**: «20 campaign days, spread from mid-April to mid-June» (como T09, no «20 días seguidos»).
+  Capacidad: **480 piezas en un día normal de 8 h de obrador; 600 en esta campaña porque la hoja pone 10 h/día** (60 piezas
+  por hora del equipo que limita; Parámetros B9-B11 del xlsx). Señal: **30 % del caso** (nota de la fila de encargos de
+  "Channels and Break-Even") + «many US bakeries… 50% to hold the date, often non-refundable; common practice, not law» +
+  «check your state's consumer rules». Alérgenos 3-602.12(C) (9, sésamo 1-ene-2023) en la hoja de pedido + 3-602.11(B) si
+  se encaja antes + 101.91. El plazo de 24 h del art. 9.3 → **date mark si > 24 h, 7 días máx. (3-501.17)**; «legal limit ≠
+  declared shelf life»; la tarta de nata y fresas es TCS en "Egg & TCS Decision".
+- **Dec. 7 (mayorista)**: «cambia tu registro» → el permiso local **se queda** y lo que se añade es el **FDA food facility
+  registration** (solo la línea del 50 %, 1.226(c)/1.227) + en FL la pregunta a FDACS (Wholesale/Manufactured) + NY 20-C
+  ya cubre. Las tres condiciones del RD (marginal/localizada/restringida) → los **tres checks** de "Selling Wholesale" (línea
+  FDA por % o por $ en una semana típica, cadena de frío 41 °F con radio propio en millas, etiquetas); la «restringida» que
+  se rompía con un cliente inscrito → **labels: una cuenta sin etiqueta basta para fallar**; la declaración responsable →
+  **registro de cuentas + resale certificates (CPA)**, sin inventar trámite federal. Punto muerto $23,337.56 / $23,018.22
+  (+$320/mes) intacto.
+- **Columna de ventas por canal: T09 escribió «Steady-state year sales ($)» y T10 «Steady-state year sales ($)»**. B02 usa
+  **«Steady-state year sales ($)»** (inglés natural; «cruising year» es calco). **El orquestador debe unificar T09 (cap. 16)
+  y el xlsx "Channels and Break-Even"** con la que elija.
+- **Dec. 8 (pastelero o ayudante)**: convenio y SMI → mínimo federal/TX $7.25 = **$15,080/año**; el grupo más bajo del caso
+  (Support staff, Bakery Assistant) **$17,886.30 = $8.60/h**, ilegal en CA/NY/FL (cifras y redacción de FL de T08) + mediana
+  BLS bakers $17.86. Hecho US nuevo **con fuente ya en research §5.2**: FUTA (y el SUTA de cada estado, CA $7,000) se pagan
+  sobre la base de CADA empleado → dos medias jornadas pagan esa base dos veces (sostiene el «el coste de dos contratos no
+  es proporcional» del ES). Diferencia por hora de coste de empresa **$2.07** ($15.43 − $13.36). Formación del ES (PRL) →
+  **2-102.12 + 2-103.11(O) + food handler card estatal (CA 30 días/3 años; TX curso acreditado) + "Training Log"**; nuevo
+  párrafo de **menores** (HO 11, < 16 sin hornear ni antes de las 7:00) para las opciones B/C con estudiantes. Pie de tabla:
+  fuera BOCM/convenio de Madrid, dentro el pie de T08 + «Checked in October 2026 against the DOL state table (July 1, 2026)».
 ### B03
 ### P01
 ### P02
