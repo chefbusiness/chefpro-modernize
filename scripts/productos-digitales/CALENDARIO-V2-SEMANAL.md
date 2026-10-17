@@ -672,3 +672,8 @@ La landing del pack es exacta («12 kits a 12 € + hotel + chef privado = 13»)
 - Correo EN **4-dic 14:00Z**: borrador `1e8b7c2f-5430-4ecb-8566-8b53f960fd3e` («Lanzamiento How to Open a Pastry Shop (EN) — 4-dic»,
   prueba a John enviada) + routine `trig_01LqowZy9azA47FqMag3Ktwn` (4-nov 15:07Z). Plantilla
   `broadcast-how-to-open-a-pastry-shop-lanzamiento-en.html`. **Siguiente hueco EN: 9-dic 14:00Z.**
+
+### ▶️ 2026-10-17 (Claude Code en el Mac + VPS) — **Restaurant Checklists Kit Pro (EN, $19)** — LISTO a falta del Payment Link
+- Producto 16 de la tienda EN, edición del `kit-tareas` ES v2.0 (PR #133 draft, rama `feat/restaurant-checklists-en`, `checklists-kit/`).
+  Elegido por demanda US (clúster de checklists ~1.300/mes). ≈ 2,1 M tokens (S). Revisión adversarial aplicada (4 MAYOR + 15 menor).
+- Cierre y ficha de Stripe: `SESSION_HANDOFF_2026-10-17-restaurant-checklists-en.md` §1. Correo EN propuesto **9-dic 14:00Z** (borrador + routine).
