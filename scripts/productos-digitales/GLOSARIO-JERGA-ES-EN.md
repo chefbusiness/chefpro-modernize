@@ -30,7 +30,7 @@
 | gastrobar | gastrobar | **gastropub** | propuesto |
 | hotel completo | full hotel | **full-service hotel** | propuesto |
 | asador / horno Josper | Josper grill | **steakhouse** · **charcoal grill** (Josper es una marca) | propuesto |
-| tareas recurrentes (kit de tareas) | recurring tasks | **opening, closing & cleaning checklists** · **side work** | propuesto (descriptor aplicado en el hub; el nombre, pendiente de John) |
+| tareas recurrentes (kit de tareas) | recurring tasks | **opening, closing & cleaning checklists** · **side work** | firme: producto EN «Restaurant Checklists Kit Pro» (F1 17-oct, `checklists-kit/SPEC.md` D2; DataForSEO US: restaurant opening checklist 260, restaurant cleaning checklist 260, kitchen checklist 210) |
 | escandallo | escandallo / recipe scaling | **recipe costing** · **plate cost**; en bar dry hire, **cost per guest** | firme (Food Cost Kit, mobile bar §9) |
 | semáforo (indicador) | traffic light | **color-coded status** / **status flag** | por verificar (auditoría 13-oct, capa 2) |
 | materias primas (en el P&L) | raw materials | **food & beverage costs** / **COGS** | por verificar (auditoría 13-oct, capa 2) |
@@ -51,6 +51,36 @@
 | señal / fianza | — | **deposit** | firme (mobile bar §9) |
 | convenio colectivo | collective agreement | no hay equivalente general en US: **FLSA + leyes estatales** | firme (PR #126, testimonios) |
 | cuota patronal de Seguridad Social | social security contribution | **payroll taxes** (FICA, FUTA/SUTA) | firme (Staff Kit EN) |
+
+## Checklists de cocina, sala y caja (Restaurant Checklists Kit Pro, F1 17-oct-2026; detalle en `checklists-kit/F1-inventario-es.md` §4)
+
+| ES | ✗ Calco que NO se usa | ✓ US | Estado y fuente |
+|---|---|---|---|
+| partida (de cocina) · jefe/chef de partida | section · section chef | **station** · **lead line cook** (en alta cocina, *chef de partie*) | por verificar (uso común; la jerga del kit EN la fija `mapas.GLOSARIO`) |
+| cocinero · auxiliar de cocina · personal de limpieza | cook assistant · cleaning staff | **line cook** · **prep cook** · **porter** (dishwasher si friega) | por verificar |
+| encargado (de turno) | manager in charge | **shift manager** · **MOD** (manager on duty); el responsable sanitario del turno = **person in charge (PIC)**, FDA Food Code 2-101.11 | PIC firme (Food Code); resto por verificar |
+| tareas de apoyo del camarero | support tasks | **side work** (590/mes, a la baja; *side work checklist* 30) | firme (DataForSEO 17-oct) |
+| briefing de servicio | briefing | **pre-shift meeting** · **line-up** | por verificar |
+| comanda · pase | command · pass | **ticket** · **the pass** / **expo** | por verificar |
+| baño maría · plancha · cámara | bain-marie · plancha · chamber | **steam table** · **flat-top (griddle)** · **walk-in cooler / walk-in freezer** | por verificar |
+| terraza · licencia de terraza | terrace · terrace license | **patio** · **outdoor dining / sidewalk café permit** (ciudad) | por verificar |
+| etiquetar y fechar | label and date | **date marking** (7 días a 41 °F, día 1 = preparación) | firme: FDA Food Code 2022 §3-501.17 |
+| mermas | shrinkage (eso es robo/pérdida de inventario) | **waste** · **waste log** | por verificar |
+| arqueo · fondo de caja · cajón | arching · cash fund | **cash count / cashing out** · **starting bank** (UK **float**) · **cash drawer** (UK **till**) | por verificar |
+| TPV · datáfono · lectura Z | TPV · dataphone · Z reading | **POS** · **card terminal** · **Z report** (X report a mitad de turno) | por verificar |
+| cerrar el lote de tarjetas | close the lot | **batch out / settle** the card terminal | por verificar |
+| descuadre · medios de pago | mismatch · payment means | **over/short** · **tenders** | por verificar |
+| vales · invitaciones | vouchers · invitations | **gift cards** · **comps** (descuento, no medio de pago) | por verificar |
+| firma (en cada tarea del checklist) | signature | **initials** (la firma va al pie: «Verified by / Signature») | por verificar |
+| hora límite · responsable (columna) | limit hour · responsible | **due by** · **assigned to** | por verificar |
+| gestor de aceite usado · separador de grasas | authorized manager · grease separator | **used cooking oil recycler** (renderer) · **grease trap / interceptor** (ordenanza **FOG** local) | por verificar |
+| DDD (control de plagas) | DDD | **pest control** por **licensed operator (PCO)** | por verificar |
+| extintores + BIE · limpieza de campana | fire hose cabinet | **fire extinguishers** + **hood fire suppression system** (cada 6 meses, NFPA 96) · **hood cleaning** (NFPA 96) | firme: NFPA 96 / OSHA 1910.157 (SPEC §3) |
+| frigorista | refrigerist | **refrigeration tech** (certificado **EPA 608**) | firme: 40 CFR 82 Subpart F |
+| registro de jornada | workday register | **time-clock records / punches** (FLSA: 2 años; nóminas 3) | firme: 29 CFR 516.5-516.6 |
+| Nochevieja · cotillón · uvas | New Year's night · cotillion | **New Year's Eve (NYE)** · **party favors** · (no hay uvas: **champagne toast**) | por verificar |
+| menú del día | menu of the day | **lunch specials** | por verificar |
+| UK (solo notas) | — | float · till · rota · takeaway · EHO · 8 °C / 63 °C · 14 allergens · Mothering Sunday · bank holidays · Boxing Day | por verificar (UK 8/63 °C: Food Safety and Hygiene (England) Regs 2013) |
 
 ## Bar y eventos (detalle y fuentes: `business-plans-en-5/F1-research-us-delta.md` §9)
 
