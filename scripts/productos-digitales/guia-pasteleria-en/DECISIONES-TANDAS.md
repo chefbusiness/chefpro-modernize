@@ -600,7 +600,73 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   loans y microloans · NYSDEC (foam, PFAS) · CA AG (EPS) · FL Stat. §500.90 · CalRecycle (SB 1383 donors; AB 1826) ·
   42 U.S.C. §1791 (LII).
 ### T12
+- **Cap. 20, hitos = hoja "Timeline and Critical Path" del libro de permisos** (nombres literales del xlsx): M1 Site search and
+  screening · M2 Lease signing and security deposit · M3 Stamped plans and specifications · M4 Plan review and building permit ·
+  M5 Build-out and installations · M6 Order and delivery of equipment · M7 Equipment installation and start-up · M8 Pre-opening
+  inspection and food permit · M9 CFPM, food handler cards and food safety plan · M10 Hiring and payroll setup · M11 Production
+  trials and final opening menu · M12 Opening. Duraciones, dependencias y meses idénticos al ES: **11 en ruta crítica, 8.5
+  meses, apertura en septiembre**; solo M6 tiene holgura (1.0). Único plazo legal citado: CA, 20 días hábiles de plan review.
+  Llegar a Reyes: septiembre deja «a few weeks» antes de All Saints' Day and Día de los Muertos y «more than three months»
+  antes de Three Kings Day (enero = 11.2 % del año, cap. 2).
+- **Ley 1/2004 (libertad horaria) → «Your Hours and Your Sales Mix as First-Day Business Decisions»**: horarios = preguntas por
+  escrito (lease y CC&Rs del centro, zoning, noise ordinance del cap. 6), sin afirmar que no exista regla nacional. La «actividad
+  principal» del ES pasa a las líneas de «más de la mitad» que SÍ están en el research: TX bakery > 50 % (34 TAC §3.293), CA
+  80/80, FL ≤ 5 piezas con mesas, NYC > 50 % comida preparada (permiso municipal vs estatal). El caso cierra el domingo (T08):
+  el texto lo dice como supuesto a revisar. Kit de Tareas → «Your daily task checklists (outside this pack)».
+- **Anexo: estructura y fuentes**. Secciones: What's in Force and Which Edition Applies · The Dates We Already Know Will Move ·
+  The Old Rules Free Guides Still Quote · How to Check a Rule's Current Version in One Minute. Tabla de 29 filas, columnas
+  «Rule (official source) · What it says, in one line · Where to check it», cada celda con URL + «checked October 2026»; incluye
+  todo lo que T08 y T11 mandan al anexo (DOL state table, FloridaCommerce, CA Labor Commissioner, FS #21/#43, OSHA, TDI; CDTFA
+  1603, TB-ST-283/806, 34 TAC §3.293, TIP 10A01-22, SBA, NYSDEC, CA AG, §500.90, CalRecycle SB 1383/AB 1826, 42 U.S.C. §1791).
+  **Sin URL en el research → sin enlace**: eCFR (21 CFR 1.226/1.227, 101.91: «search "21 CFR 1.227"») y FloridaCommerce;
+  Shakopee e IJ marcados «earlier research». Las fuentes de mercado (BLS, NRF, CBRE, Toast, Zenind, DoorDash, WebstaurantStore,
+  USDA, DataForSEO) NO van en la tabla: el pie dice que se citan en su capítulo. Nota UK en un solo párrafo (gov.uk allergens).
+- **Las cinco «normas muertas» US** (B y P no deben contradecirlas): «potentially hazardous food» → TCS (CA aún dice «non-
+  potentially hazardous») · CFPM: ediciones antiguas «one employee with supervisory responsibility» → 2022 person in charge
+  (2-102.12) · 8 → **9** alérgenos (sésamo, 1-ene-2023) · Texas cottage sin TCS → SB 541 (1-sep-2025) · CA $75,000/$150,000 →
+  2026 **$88,878 / $177,756**.
+- **Fechas que se mueven (7 filas)**: tabla DOL (1-jul-2026) · FL 30-sep-2026 (sin confirmar) · topes CA anuales · lista CDPH
+  ≈ 16-nov-2026 · ley NY de alérgenos ≈ nov-2026 (sin confirmar) · edición del Food Code · **Easter 2027 = 28-mar** y **Mardi
+  Gras 2027 = 9-feb**. El mínimo del caso ($15,080/año) vive en "Settings" (staff-schedule, C17) y "0. Assumptions" (plan, B27).
+- **Sobre el autor**: bio de la Food Cost EN (sin Soles Repsol), «Version 1.0 · October 2026 ·
+  aichef.pro/en/digital-products/how-to-open-a-pastry-shop · info@aichef.pro»; condiciones: no es asesoría legal, fiscal,
+  sanitaria ni laboral; marco US verificado en octubre de 2026; cuatro estados = EJEMPLOS; caso = pastelería modelada en Texas;
+  antes de firmar, tramitar, poner precio o contratar: ciudad o condado, health department, CPA y abogado. B03 y P02 pueden
+  copiarla cambiando solo la URL/nombre del documento. Ratio del gate 1.37 (aviso): lo explican las 79 URL y la fecha por fila.
 ### B01
+- **Molde del bonus (B02-B03 lo repiten igual)**: cinco subtítulos por decisión, «The Context of the Decision» · «The
+  Options on the Table» · «The Criterion You Decide By» · «The Cell That Settles It» · «The Rule That Applies, When There
+  Is One»; la sección de norma abre con «Here there is a rule…» o «Here no rule decides…»; la regla del cierre: «Every
+  decision in this bonus closes the same way: with an explicit recommendation and the condition that would make you
+  change it». Portada: «Bonus to the “How to Open a Pastry Shop” pack · built on the data in the eight Excel tools» y
+  «Version 1.0 · October 2026 · aichef.pro/en/digital-products/how-to-open-a-pastry-shop». El índice («Contents») ya trae
+  las descripciones EN de las 12 (B02/B03 no tienen índice que tocar). Remisiones a la guía: «chapter N of the guide».
+  Hojas entre comillas rectas; claims (“made from scratch”, “baked fresh daily”) entre comillas tipográficas.
+- **Renta del caso (dec. 1)**: 13,3 €/m²/mes → **$1.24 per sq ft a month (about $15 a year)** (= $1,200/mes ÷ 969 sq ft),
+  contrastada con **CBRE Q2 2026 $24.79/sq ft/año** («put in your own»). Fuentes españolas de inversión fuera (La
+  Hostelera/Gijón 137.000 €, Pastelería Para Todos) → **Zenind 2026**: small retail $50,000-$100,000+ en la celda y
+  production bakery $75,000-$150,000+ en la norma (frente a los $70,585 del obrador a puerta cerrada). Tabla = 5 filas de
+  "Format Variant" con los nombres de T01.
+- **Dec. 1, obrador aparte**: no hay «unidad comercial» US. La opción B se sostiene con el test de la FDA (1.226(c)/1.227) y
+  «on a plain reading» lo vendido en tus tiendas llega a consumidores, con la cautela de T05 («ask FDA or a food
+  attorney»); papeleo = plan review + inspección por sitio, 3.ª pregunta de "Which Permit Do I Need", tres condiciones
+  (mismo dueño, 41 °F, aviso 3-602.12(C)), NY 20-C / FL FDACS Wholesale. Obrador solo → línea legal 50 % + línea prudente
+  25 %, remite a decision 7. Nuevo: el **commissary** ($250-$750/mes, WebstaurantStore) como versión ligera de la opción B.
+- **Dec. 2, abatidor**: **$10,037 pre-tax**, example price (Irinox MultiFresh, ficha europea), ≈ **$10,865** al 8.25 % (T03),
+  junto a WebstaurantStore **$5,499** (Avantco SF-10) / **$21,729** (Irinox MultiFresh Next S). Norma: **3-501.14 + 4-205.10**
+  (fuera el −18 °C del art. 5); etiqueta con fecha de elaboración y de congelación = práctica de la casa + **3-501.17**;
+  descongelado vendido como fresco → §403(a) (remite a decision 4). Tabla con nombres y categorías de T04. Las bandejas se
+  cambian en "Capacity by Equipment", no en el CAPEX (errata ES).
+- **Dec. 3, carta**: Hofmann **generalizado** («one well-known European pastry shop, the example in chapter 3 of the guide
+  (with its source)»). Norma = 3-602.12(C) (9 alérgenos, sésamo desde 1-ene-2023) + 3-501.16 y "Egg & TCS Decision" +
+  3-602.11(B); el licor es un ingrediente más y **sin umbral de alcohol** (el 1,2 % de las bebidas no tiene par US en el
+  research). El margen ponderado es **por pieza media** (las tres filas suman $1.07), no «de cien piezas» (errata ES).
+- **Dec. 4, producto de terceros**: «elaboración propia» → **“made from scratch”** (“made from scratch in our kitchen”,
+  “baked here”); norma = §403(a) + **21 CFR 101.95** («fresh» solo cuando sugiere sin procesar) + «we found no federal
+  definition». Tabla de 6 filas: col. 2 «Can you say “MADE FROM SCRATCH”?», col. 3 «Where you can use it» (en EE. UU. no
+  hay regla de lugar); central → tiendas propias: “made from scratch in our kitchen” sí, “baked here” solo donde se hornea.
+  «Punto caliente» = **small bake-off shop** ($22,456 de equipo vs $66,980; $85,997 vs $165,800). Croissant: $0.82 de $1.06
+  = **más de tres cuartos**; el **63.3 %** es de toda la carta (errata ES).
 ### B02
 ### B03
 ### P01
