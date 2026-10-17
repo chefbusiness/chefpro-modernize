@@ -705,5 +705,33 @@ estacionalidad mensual (noviembre 1.08 · diciembre 1.24), no como campaña; se 
   párrafo de **menores** (HO 11, < 16 sin hornear ni antes de las 7:00) para las opciones B/C con estudiantes. Pie de tabla:
   fuera BOCM/convenio de Madrid, dentro el pie de T08 + «Checked in October 2026 against the DOL state table (July 1, 2026)».
 ### B03
+- **Dec. 9, tabla = hoja "Timeline and Critical Path" con las 7 columnas del ES** (ID · Milestone · Duration (months) ·
+  Depends on · Ends (project month) · Slack (months) · Critical path?), nombres M1-M12 literales de T12. Madrid/Decreto
+  26/2026 fuera → plazos US del research: permiso tras plan review + pre-opening inspection (8-201.11, Parte 8-3), CA 20
+  días hábiles (§114380, único reloj legal), FL FDACS 21 días antes / 3-5 días hábiles / ≈ 2 semanas. Hecho derivado de la
+  fórmula C40 del libro: **arrancar en junio (8.5 meses) = abrir en febrero → la hoja avisa "inside a peak"** (Valentine's,
+  mes 2). Nota: la hoja lleva Easter en **abril (C50 = 4)**; en 2027 cae el 28-mar (research §7) → el texto pide cambiar el mes.
+- **Dec. 10 = cottage food de T05 sin afirmar más**: tabla de 5 filas copiada de "Cottage Food Route" (CA/TX/NY/FL/Other
+  states, igual que T05 y el xlsx); tres checks 100 kg (220 lb) · 129 sq ft · 0.74 (casa) · 0.46 · sales records; contraste
+  **Zenind 2026** casa $15,000-$25,000 / online $20,000-$40,000 / small retail $50,000-$100,000+ (fuera «Pastelería Para
+  Todos»). Salto a cocina con licencia por estado (CA food facility permit del condado · TX retail food establishment local/DSHS
+  · FL FDACS food permit · **NY: la registración queda nula al abrir negocio licenciado**). Commissary $250-$750 ($1,000-
+  $1,250 Manhattan/L.A.) = opción B.
+- **Dec. 11, tabla de 8 filas = resumen B38:B45 de "Egg & TCS Decision"** (fórmulas intactas → 15 · 15 · 13 · 15 · 13 · 15 ·
+  6 · 0). **Rótulos EN propuestos para el xlsx** (que cuadren): Items that need the REFRIGERATED case · Items that go in the
+  ROOM-TEMPERATURE case · Items that are filled and not shelf-stable at room temperature · Items whose egg route leaves them
+  needing cold · Items both of those apply to (los dos techos = 41 °F: «no conflict») · Items that need a date mark if held more
+  than 24 hours · Items with no egg in any form · **Items served with raw or undercooked egg** (= vía «63/20», consumer advisory
+  3-603.11, debe salir 0). El literal EN de la vía 63/20 del desplegable debe casar con ese COUNTIF. Interestatal = frase de T10.
+- **Dec. 12 (cuadra con T11)**: Ley 1/2025, Ley 7/1996 y RD-ley 24/2021 fuera; **no se menciona ninguna regla de 30 días**.
+  Tabla de 7 filas con el patrón Sí·Sí·Sí·Sí·No·No·Depende: cosmetic flaw (sin regla localizada; honestidad) · misprinted box
+  (3-602.11(B)) · day-old rack con cartel y tecla POS (3-501.17) · donar (42 U.S.C. §1791) · **No**: pasar lo de ayer por de hoy
+  (§403(a)) · **No**: vender/donar TCS pasado el date mark (3-501.17) · **Depende**: programa formal de donación = solo grandes
+  generadores de CA (SB 1383; el caso, 969 sq ft sin mesas, no entra). AB 1826 en prosa («ask your hauler»). Merma objetivo 5 %
+  en "Settings" (B34 del libro), food cost 17.6 % / served 20.3 %, margen $1.07; Kit de Tareas → «your daily task checklists
+  (outside this pack)».
+- **Sobre el autor** = el de T12 con «This bonus» en lugar de «This guide»; misma línea de versión. Sin marcas ⟦ADAPT⟧. Avisos
+  del gate aceptados: pH 4,5 y DOGV (norma española sin par), −18 °C (EN: «frozen product has to arrive frozen», sin cifra
+  federal), «Spain» en la bio.
 ### P01
 ### P02
