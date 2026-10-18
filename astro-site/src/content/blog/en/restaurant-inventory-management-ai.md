@@ -236,7 +236,7 @@ imageAlt: "Inventory Management"
 <h3>Do I need to purchase special hardware?</h3>
 <p>No. AI Chef Pro&#8217;s Stock Control works with standard tablets or smartphones. Optional integrations with Bluetooth scales or barcode scanners can enhance efficiency but aren&#8217;t required. The system is designed to work with equipment you already have.</p>
 <h3>Will this work for my small restaurant or food truck?</h3>
-<p>Absolutely. AI inventory management is particularly valuable for small operations where every dollar counts. Food trucks especially benefit from demand forecasting that accounts for location and weather variables. AI Chef Pro scales from single-truck operations to multi-location chains.</p>
+<p>Absolutely. AI inventory management is particularly valuable for small operations where every dollar counts. Food trucks especially benefit from demand forecasting that accounts for location and weather variables. AI Chef Pro scales from single-truck operations to multi-location chains. If you&#8217;re still planning your truck, start with our guide on <a href="https://aichef.pro/en/blog/how-to-start-a-food-truck-business">how to start a food truck business</a>.</p>
 <h3>How accurate are the AI demand forecasts?</h3>
 <p>After the 4-week learning period, AI Chef Pro&#8217;s Inventory Optimizer typically achieves 90-95% accuracy on daily demand forecasts. The system continuously refines predictions based on actual results, improving accuracy over time.</p>
 <h3>What if my suppliers change prices frequently?</h3>
