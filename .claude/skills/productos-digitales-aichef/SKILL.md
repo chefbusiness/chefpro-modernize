@@ -55,6 +55,9 @@ local hasta pedirme el Payment Link». Probado en la Churrería-Chocolatería (P
   de la rama; `scp` de vuelta y commit desde el Mac; dejar el árbol del VPS limpio.
 - **Netlify** construye el preview; gates contra él con `--base`. **Una** revisión Opus final sobre los `.md` (cazó 9 bloqueantes).
 - Lanzar `claude -p` headless en el VPS lo bloquea el modo automático: requiere una regla de permiso que decide John.
+- **Scripts Python al VPS: fichero local + stdin** (`ssh vps '/root/venv-guias/bin/python -' < script.py`, con `os.chdir` dentro).
+  Un heredoc sin comillas metido en `ssh vps '…'` lo expande el shell remoto (`$?` → `0` dentro de una regex) y el script sale
+  limpio con un resultado falso: el 18-oct un escaneo dio «0 kits» y había 4. La `/dev/null` del VPS está rota: redirigir a `/tmp`.
 
 ### 🔴 Productos nuevos: POLÍTICA DE 3 FASES + presupuesto proporcional al precio (John, 20-sep-2026)
 

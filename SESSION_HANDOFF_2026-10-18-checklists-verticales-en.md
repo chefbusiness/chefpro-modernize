@@ -1,5 +1,15 @@
 # Handoff — 18-oct-2026 (sesión Claude Code, noche delegada) — 5 kits de checklists EN + post pilar food truck
 
+## ▶️ Para retomar (sesión nueva tras /clear)
+
+- Todo LIVE y limpio: `main` = producción, sin worktrees ni ramas de esta sesión (Mac y VPS), árbol del VPS limpio.
+- Routines de correo a vigilar con `RemoteTrigger list_runs`: `trig_01WXGbQnAuFnc2A9X45imtje` (20-nov, Bar + Coffee Shop) y
+  `trig_019bxdctG1zV4XcVjbHTzCdu` (20-dic, Catering + Pizza + Burger + Ghost). Siguiente hueco EN 24-ene · ES 28-nov.
+- Siguiente sesión (toca ES por alternancia): **v2.1 de los 6 kits ES** (bar, cafetería, catering, pizzería, hamburguesería, dark
+  kitchen) con las erratas de orden y redacción de `scripts/productos-digitales/checklists-kit/<v>/SPEC.md` §5/§6 + un correo conjunto
+  (molde `broadcast-kits-tareas-v2-es.html`), o el ES pendiente del calendario (coctelería / chef privado a la 2.2).
+- OpenRouter sigue en 401: por política, fallback a subagentes sonnet/haiku sin parar.
+
 ## 0-bis. ✅ LIVE el 18-oct por la mañana (sesión Claude Code)
 
 - John creó los 6 Payment Links; comprobados con la CLI `--live` (USD 1900, one_time, exclusive, impuesto automático, redirección
