@@ -1,0 +1,3934 @@
+{
+ "meta": {
+  "kit": "burger",
+  "producto": "Burger Joint Checklists Kit Pro",
+  "n_pendientes": 318,
+  "n_palabras": 2015,
+  "motivos": {
+   "nueva": 301,
+   "adaptar": 12,
+   "contexto": 2,
+   "corregida": 3
+  },
+  "n_heredadas": 280,
+  "heredadas_por_via": {
+   "exacta": 275,
+   "sufijo": 5
+  },
+  "heredadas_por_fuente": {
+   "base": 195,
+   "pizza": 54,
+   "cafe": 28,
+   "bar": 3
+  },
+  "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
+  "referencias": [
+   "burger/SPEC.md",
+   "SPEC.md §0-§3 y §7.2 (brief)",
+   "textos_en/glosario.json (glosario de la prosa del kit base)",
+   "burger/textos_en/heredado.json (cómo se dijo ya cada cosa: base, bar, cafetería, catering y pizzería)",
+   "burger/mapas_burger.py: GLOSARIO, HOJAS, FICHEROS, TITULOS, POR_CELDA, REGLAS_US",
+   "../GLOSARIO-JERGA-ES-EN.md"
+  ],
+  "base_en": "traducción del kit base de una cadena igual o casi: referencia de estilo; NO vale tal cual (ver motivo); «base_fuente» = el vertical del que viene, si no es el base"
+ },
+ "cadenas": [
+  {
+   "id": "c0028",
+   "es": "Checklist de Apertura — Cocina / Línea de Burgers",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0041",
+   "es": "Sin anillos, reloj ni pulseras; uñas cortas, limpias y sin esmalte: la carne picada y el montaje se tocan a mano",
+   "grupo": "G1",
+   "palabras": 21,
+   "donde": [
+    "01 · Apertura Cocina · B7"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "FDA Food Code 2-303.11: sin joyas en manos y brazos SALVO un anillo liso (alianza); uñas cortas y limpias, sin esmalte ni postizas salvo con guantes",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0046",
+   "es": "  PLANCHA Y FREIDORA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0054",
+   "es": "  MISE EN PLACE BURGERS",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0055",
+   "es": "Comprobar que las cámaras han funcionado toda la noche y registrar temperatura (refrigeración 0-4 °C / congelación ≤ −18 °C) — anota la lectura: ____ °C. Si hay desviación, no uses la carne ni el género hasta valorarlo",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "01 · Apertura Cocina · B20"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe; «cámaras» = walk-in cooler y walk-in freezer",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0057",
+   "es": "Sacar carne picada/smash patties de cámara (temperar)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B21"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer",
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0058",
+   "es": "Porcionar carne si se hacen smash burgers al momento",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B22"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0059",
+   "es": "Cortar pan de burger: brioche, pretzel, clásico",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B23"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0060",
+   "es": "Preparar toppings: lechuga, tomate, cebolla, pepinillos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0061",
+   "es": "Preparar salsas caseras: burger sauce, BBQ, mostaza miel",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B25"
+   ],
+   "adaptar": "Si la salsa se cocina (BBQ): Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; la burger sauce o la mayonesa casera, con huevo pasteurizado, o aviso al consumidor en la carta si lleva huevo crudo o poco hecho (FDA Food Code 3-603.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0062",
+   "es": "Cortar queso: cheddar, gouda, blue cheese, emmental",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Cocina · B26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0063",
+   "es": "Preparar bacon: pre-cocinado o listo para plancha",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B27"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "adaptar": "Bacon precocinado: si se guarda, lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; si se mantiene en caliente, lo hecho antes que se vaya a mantener en caliente se recalienta a 165 °F en 2 h como máximo (FDA Food Code 3-403.11) y se mantiene a 135 °F o más",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0064",
+   "es": "Montar línea de montaje: pan → carne → queso → toppings → salsas",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Apertura Cocina · B28"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0065",
+   "es": "  PATATAS Y SIDES",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A29",
+    "05 · Inventario Diario · A29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0066",
+   "es": "Cortar patatas frescas o verificar stock de congeladas",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0067",
+   "es": "Preparar aros de cebolla (rebozar)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Cocina · B31"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0068",
+   "es": "Preparar coleslaw del día",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · B32"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "adaptar": "Coleslaw (col cortada, TCS): a 41 °F o menos y con date marking: 7 días como máximo contando el día de preparación (FDA Food Code 3-501.16 y 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0069",
+   "es": "Verificar stock de nachos, jalapeños, guacamole",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0070",
+   "es": "  STOCK Y DESINFECCIÓN",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Cocina · A34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0071",
+   "es": "Verificar stock de carne (piezas para el día)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Cocina · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0072",
+   "es": "Verificar stock de pan de burger",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · B36"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0075",
+   "es": "Lavarse las manos y cambiar de guantes al pasar de la carne CRUDA al pan, los toppings o las salsas; tabla, pinzas y espátula de crudo no vuelven a la línea de montaje",
+   "grupo": "G1",
+   "palabras": 33,
+   "donde": [
+    "01 · Apertura Cocina · B38"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "adaptar": "Lavarse las manos y ponerse guantes nuevos al pasar de la carne cruda a lo listo para consumir: pan, toppings y salsas (FDA Food Code 2-301.14 y 3-304.15); tabla, pinzas y espátula de crudo, aparte (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0077",
+   "es": "Desinfectar superficies de trabajo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Cocina · B39"
+   ],
+   "adaptar": "Superficies de trabajo: limpiar y luego sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "adaptar",
+   "base_en": "Sanitize work surfaces with an approved sanitizer at the label concentration: check it with a test strip",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0080",
+   "es": "Firma encargado/a: _________________________    Hora: _________",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Cocina · A48",
+    "01 · Apertura Sala · A30",
+    "01 · Cierre Cocina · A35",
+    "… +21"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)",
+    "encargado/a → shift manager (NUNCA «shift lead»)"
+   ],
+   "comun": true,
+   "motivo": "contexto: Shift lead",
+   "base_en": "Shift lead signature: _________________________    Time: _________",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0083",
+   "es": "Checklist de Apertura — Sala y Take-Away",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Sala · A1"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0089",
+   "es": "Colocar menús/cartas en mesas y barra",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Sala · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0090",
+   "es": "Actualizar pizarra: burger del día, combos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Apertura Sala · B9"
+   ],
+   "pistas": [
+    "pizarra → menu board / chalkboard"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0093",
+   "es": "Verificar TPV/datáfono",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Sala · B11"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0095",
+   "es": "  DELIVERY Y TAKE-AWAY",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Apertura Sala · A13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0097",
+   "es": "Verificar stock de cajas burger, bolsas, servilletas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Apertura Sala · B15"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0098",
+   "es": "Verificar stock de envases para patatas y sides",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Sala · B16"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0099",
+   "es": "Actualizar menú en apps si hay cambios/86s",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "01 · Apertura Sala · B17"
+   ],
+   "pistas": [
+    "«86» / «86s» es jerga US: se queda",
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0101",
+   "es": "  BAÑOS Y LIMPIEZA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Sala · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0104",
+   "es": "Limpiar baños: jabón, papel, suelo",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Apertura Sala · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0106",
+   "es": "Limpiar cristales entrada",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Apertura Sala · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0108",
+   "es": "  PRODUCTO",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "01 · Cierre Cocina · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0109",
+   "es": "Guardar carne sobrante en cámara (etiquetar fecha)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo para consumir (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0110",
+   "es": "Cubrir y refrigerar toppings",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Cocina · B7"
+   ],
+   "adaptar": "Los toppings cortados (tomate, lechuga, cebolla) son TCS: tapados, a 41 °F o menos y con date marking (7 días como máximo, FDA Food Code 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0111",
+   "es": "Guardar salsas caseras en recipientes herméticos",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B8"
+   ],
+   "adaptar": "Salsas caseras: tapadas, a 41 °F o menos y con fecha; 5 días como máximo (criterio del kit, dentro de los 7 del date marking de la FDA, 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0112",
+   "es": "Guardar pan sobrante en bolsa hermética",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Cocina · B9"
+   ],
+   "motivo": "corregida: en una hamburguesería son los buns: «leftover buns» (la cafetería dice «bread»)",
+   "base_en": "Store leftover bread in an airtight bag",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0114",
+   "es": "  PLANCHA Y EQUIPOS",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Cocina · A11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0115",
+   "es": "Limpiar plancha/grill a fondo (rasqueta + desengrasante)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0116",
+   "es": "Apagar la freidora al terminar el servicio y dejar que el aceite se enfríe; la campana sigue en marcha mientras tanto",
+   "grupo": "G1",
+   "palabras": 21,
+   "donde": [
+    "01 · Cierre Cocina · B13"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0117",
+   "es": "Filtrar o cambiar el aceite SOLO por debajo de 40 °C, nunca en caliente: al filtrarlo hirviendo salpica y es la quemadura más habitual del cierre",
+   "grupo": "G1",
+   "palabras": 26,
+   "donde": [
+    "01 · Cierre Cocina · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0118",
+   "es": "Apagar plancha, horno y campana extractora cuando la freidora y la plancha ya estén frías",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Cierre Cocina · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "adaptar": "Apagar la plancha y el horno; la campana, la última, cuando la freidora y la plancha ya se hayan enfriado",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0119",
+   "es": "Verificar cámaras cerradas y a temperatura (refrigeración 0-4 °C) — anota la lectura: ____ °C",
+   "grupo": "G1",
+   "palabras": 15,
+   "donde": [
+    "01 · Cierre Cocina · B16"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "°F: cámara 41 °F o menos, congelador 0 °F o menos (FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»; °C solo entre paréntesis si cabe",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0122",
+   "es": "Fregar utensilios: espátulas, prensas, cuchillos",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "01 · Cierre Cocina · B19"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0124",
+   "es": "Sacar basura y reciclar (cartón, aceite usado)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0126",
+   "es": "Preparar patties para mañana (si se hacen con antelación)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "01 · Cierre Cocina · B23"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "Patties formados con antelación: tapados, con fecha, a 41 °F o menos y separados de lo listo para consumir (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0128",
+   "es": "Anotar las mermas del día (producto, cantidad y motivo): patties pasados de punto o caídos, pan seco, toppings retirados y pedidos devueltos — sin este dato el food cost del mes sale mal",
+   "grupo": "G1",
+   "palabras": 32,
+   "donde": [
+    "01 · Cierre Cocina · B25"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0129",
+   "es": "Descongelar carne para mañana si es necesario",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B26"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Descongelar en la cámara a 41 °F o menos (FDA Food Code 3-501.13), nunca a temperatura ambiente",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0130",
+   "es": "Checklist de Cierre — Sala y Delivery",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · A1"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0131",
+   "es": "Desmontar y limpiar mesas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B6",
+    "04 · Camarero · B17"
+   ],
+   "adaptar": "Limpiar las mesas y luego sanitizarlas con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114); paños en su cubo de sanitizante",
+   "motivo": "adaptar",
+   "base_en": "Strip and clean tables",
+   "base_fuente": "pizza"
+  },
+  {
+   "id": "c0133",
+   "es": "Reponer condimentos para mañana (kétchup, mostaza)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "01 · Cierre Sala · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0134",
+   "es": "  DELIVERY Y CAJA",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Sala · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0136",
+   "es": "Contar packaging restante",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "01 · Cierre Sala · B11"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0139",
+   "es": "  CIERRE FINAL",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "01 · Cierre Sala · A14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0141",
+   "es": "Apagar luces, climatización, música",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0142",
+   "es": "Activar alarma y cerrar",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "01 · Cierre Sala · B17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0153",
+   "es": "Estación de Plancha / Grill — Smash & Classic Burgers",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Plancha Grill · A1"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0156",
+   "es": "Precalentar plancha a 200-230 °C",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Plancha Grill · B6"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "adaptar": "°F: 200-230 °C ≈ 400–450 °F (plancha = flat-top griddle); el °C, solo entre paréntesis tras el °F",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0158",
+   "es": "Verificar stock de patties/carne picada",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Plancha Grill · B7"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0159",
+   "es": "Preparar prensa de smash si aplica",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Plancha Grill · B8"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0160",
+   "es": "Preparar bacon en plancha o pre-cocinar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Plancha Grill · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "adaptar": "Bacon precocinado: si se guarda, lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; si se mantiene en caliente, lo hecho antes que se vaya a mantener en caliente se recalienta a 165 °F en 2 h como máximo (FDA Food Code 3-403.11) y se mantiene a 135 °F o más",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0161",
+   "es": "Verificar espátulas, prensas, termómetro",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Plancha Grill · B10"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0162",
+   "es": "Separar el utillaje de crudo: tabla, pinzas y espátula de la carne cruda marcadas y distintas de las del pan y los toppings",
+   "grupo": "G1",
+   "palabras": 23,
+   "donde": [
+    "02 · Plancha Grill · B11"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "adaptar": "Utensilios de crudo (tabla, pinzas, espátula) marcados y separados de los del pan y los toppings (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0164",
+   "es": "Smash burger: bola 80-100g → prensar en plancha caliente",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Plancha Grill · B13"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "adaptar": "Bola de 80-100 g = 3–3.5 oz",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0165",
+   "es": "Controlar el punto con termómetro de sonda: la carne PICADA necesita 70 °C en el CENTRO (75 °C si la sirves a niños, embarazadas o personas mayores) — al picarla, lo de fuera pasa a estar dentro",
+   "grupo": "G1",
+   "palabras": 36,
+   "donde": [
+    "02 · Plancha Grill · B14"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "Carne picada (ground beef): 155 °F durante 17 s en el centro, medida con termómetro de sonda (FDA Food Code 3-401.11(A)(2); equivalentes de la tabla: 145 °F 3 min · 150 °F 1 min · 158 °F al instante). Poco hecha solo si el cliente la pide y la carta lleva el aviso al consumidor (consumer advisory, FDA Food Code 3-603.11); la del menú infantil, siempre hecha (3-401.11(D)). Sin los 75 °C del ES",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0166",
+   "es": "Fundir queso: tapar con campana 30s",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Plancha Grill · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "Campana para fundir = melting dome (basting cover)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0167",
+   "es": "Tostar pan en plancha (corte hacia abajo, 20-30s)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Plancha Grill · B16"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0168",
+   "es": "Mantener plancha limpia entre tandas (rasqueta)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Plancha Grill · B17"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0169",
+   "es": "Comunicar al montaje: burger lista para montar",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Plancha Grill · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0170",
+   "es": "  DESPUÉS",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "02 · Plancha Grill · A19",
+    "02 · Línea Montaje · A16",
+    "02 · Freidora · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0171",
+   "es": "Limpiar plancha a fondo con rasqueta y desengrasante",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Plancha Grill · B20"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0172",
+   "es": "Limpiar prensa y espátulas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Plancha Grill · B21"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "adaptar": "Prensa y espátulas: lavar, aclarar y sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0173",
+   "es": "Línea de Montaje — Pan, Toppings y Salsas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Línea Montaje · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0174",
+   "es": "Montar inserts: lechuga, tomate, cebolla y pepinillos — los de consumo crudo (lechuga, tomate, cebolla) se lavan y desinfectan con lejía apta para uso alimentario a la dosis del fabricante (habitual: 70 ppm, 5 min) y se ACLARAN con agua potable abundante",
+   "grupo": "G1",
+   "palabras": 41,
+   "donde": [
+    "02 · Línea Montaje · B6"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; los inserts, en la mesa refrigerada de la make line a 41 °F o menos (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0176",
+   "es": "Preparar salsas en biberones: burger sauce, BBQ, mayo, mostaza",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Línea Montaje · B7"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0177",
+   "es": "Cortar quesos en lonchas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Línea Montaje · B8",
+    "04 · Cocinero Línea · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0178",
+   "es": "Verificar stock de pan (brioche, pretzel, sesamo)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Línea Montaje · B9"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0179",
+   "es": "Preparar extras: huevo frito, jalapeños, aros cebolla crispy",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Línea Montaje · B10"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "adaptar": "Huevo frito con la yema líquida = poco hecho: aviso al consumidor en la carta (FDA Food Code 3-603.11), o bien hecho",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0180",
+   "es": "Montar burger según comanda: base pan → salsa → patty → queso → toppings → tapa",
+   "grupo": "G1",
+   "palabras": 11,
+   "donde": [
+    "02 · Línea Montaje · B12"
+   ],
+   "pistas": [
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0181",
+   "es": "Pinchar con palillo/flag si es burger alta",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Línea Montaje · B13"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0183",
+   "es": "Empaquetar para take-away/delivery (envolver en papel, caja)",
+   "grupo": "G1",
+   "palabras": 9,
+   "donde": [
+    "02 · Línea Montaje · B15"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0185",
+   "es": "Limpiar línea completa",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Línea Montaje · B18"
+   ],
+   "adaptar": "Limpiar la make line completa y sanitizarla con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0186",
+   "es": "Anotar las mermas del turno (producto, cantidad y motivo): inserts que no se pueden guardar, lonchas de queso rotas, pan aplastado y burgers mal montadas",
+   "grupo": "G1",
+   "palabras": 25,
+   "donde": [
+    "02 · Línea Montaje · B19"
+   ],
+   "pistas": [
+    "Glosario: mermas → waste (waste log)",
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)",
+    "mermas → waste (waste log)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0187",
+   "es": "Anotar consumos",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "02 · Línea Montaje · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0188",
+   "es": "Estación de Freidora — Patatas y Sides",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Freidora · A1"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0189",
+   "es": "Verificar nivel y calidad del aceite (test polares)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "02 · Freidora · B6"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "adaptar": "Test polares → medidor de TPM (total polar materials, oil quality tester); en EE. UU. no hay límite federal: el aceite se cambia según el fabricante del medidor y de la freidora (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0191",
+   "es": "Encender freidora y precalentar (175-180 °C)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Freidora · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "adaptar": "°F: 175-180 °C ≈ 350–355 °F; el °C, solo entre paréntesis tras el °F",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0192",
+   "es": "Preparar patatas: cortar frescas o sacar congeladas",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Freidora · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0193",
+   "es": "Preparar rebozados: aros de cebolla, jalapeño poppers",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Freidora · B9"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0194",
+   "es": "Preparar nuggets/tenders de pollo si aplica",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Freidora · B10"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "adaptar": "Pollo (nuggets, tenders, crispy): hasta 165 °F en el centro, comprobado con sonda (FDA Food Code 3-401.11(A)(3)); se fríe desde congelado como diga el fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0195",
+   "es": "Freír patatas por tandas (no sobrecargar cesta)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "02 · Freidora · B12"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0196",
+   "es": "Controlar tiempo: patatas 3-4 min, aros 2-3 min",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "02 · Freidora · B13"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0197",
+   "es": "Salar y condimentar al sacar",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Freidora · B14",
+    "04 · Freidurista · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0198",
+   "es": "Emplatar en cesta/cucurucho según presentación",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "02 · Freidora · B15"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0199",
+   "es": "Mantener zona limpia de salpicaduras",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Freidora · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0200",
+   "es": "Apagar freidora y dejar enfriar",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "02 · Freidora · B18"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0201",
+   "es": "Filtrar el aceite o cambiarlo si está oscuro o huele — SOLO por debajo de 40 °C, nunca en caliente",
+   "grupo": "G1",
+   "palabras": 19,
+   "donde": [
+    "02 · Freidora · B19"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0202",
+   "es": "Limpiar exterior de freidora",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "02 · Freidora · B20"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0212",
+   "es": "Revisar reservas/eventos del día",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0214",
+   "es": "Comprobar equipo completo",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Diario Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0216",
+   "es": "Briefing: burger del día, 86s, promos, alérgenos",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Diario Manager · B8"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)",
+    "«86» / «86s» es jerga US: se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0217",
+   "es": "Verificar stock: carne, pan, queso, patatas",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B9"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0219",
+   "es": "Supervisar tiempos: burger en <12 min",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B11"
+   ],
+   "pistas": [
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "adaptar": "Tiempos = ticket times: menos de 12 min por burger",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0220",
+   "es": "Controlar calidad: punto carne, presentación",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Diario Manager · B12"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "Punto de la carne → doneness: 155 °F durante 17 s salvo que el cliente la pida poco hecha y la carta lleve el aviso al consumidor (FDA Food Code 3-401.11 y 3-603.11); la del menú infantil, siempre hecha",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0221",
+   "es": "Gestionar delivery: tiempos y packaging correcto",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B13"
+   ],
+   "pistas": [
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo",
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0225",
+   "es": "Hacer pedidos mañana (carne, pan, patatas)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B18"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0226",
+   "es": "Anotar incidencias y 86s del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Diario Manager · B19"
+   ],
+   "pistas": [
+    "«86» / «86s» es jerga US: se queda"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0228",
+   "es": "Cerrar: alarma, luces, gas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Diario Manager · B21"
+   ],
+   "adaptar": "Orden lógico del cierre: primero el gas, luego las luces y, al final, la alarma",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0229",
+   "es": "Checklist Semanal (Lunes)",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0233",
+   "es": "Revisar ventas semana (dine-in vs delivery vs take-away)",
+   "grupo": "G1",
+   "palabras": 10,
+   "donde": [
+    "03 · Semanal Manager · B6"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0235",
+   "es": "Analizar burgers más vendidas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0236",
+   "es": "Revisar feedback: Google, apps delivery",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B8"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "adaptar": "Plataformas US: Google, Yelp y TripAdvisor, más las apps de delivery",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0237",
+   "es": "Evaluar desperdicio de carne y pan",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "03 · Semanal Manager · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0239",
+   "es": "Pedido carne (blend, angus, wagyu según carta)",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "03 · Semanal Manager · B11"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0240",
+   "es": "Pedido pan burger (brioche, pretzel)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B12"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0241",
+   "es": "Pedido patatas (frescas o congeladas)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Semanal Manager · B13"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0242",
+   "es": "Pedido quesos y salsas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0243",
+   "es": "Stock packaging delivery",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal Manager · B15"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0244",
+   "es": "Stock limpieza",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal Manager · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0246",
+   "es": "Supervisar limpieza profunda",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Semanal Manager · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0247",
+   "es": "Test aceite freidora (polares)",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Semanal Manager · B19"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "adaptar": "Test polares → medidor de TPM (total polar materials, oil quality tester); en EE. UU. no hay límite federal: el aceite se cambia según el fabricante del medidor y de la freidora (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0248",
+   "es": "Verificar caducidades",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Semanal Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0249",
+   "es": "Checklist Mensual",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Mensual Manager · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0255",
+   "es": "Food cost (objetivo 28-32%)",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0256",
+   "es": "Coste laboral vs facturación",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0259",
+   "es": "Comisiones apps delivery",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Mensual Manager · B10"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0260",
+   "es": "Limpiar plancha a fondo (desmontar si es posible)",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "03 · Mensual Manager · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0262",
+   "es": "Cambiar aceite de freidora completo",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B13"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0263",
+   "es": "Lavavajillas: filtros, sal, abrillantador",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0264",
+   "es": "Campana: filtros",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "03 · Mensual Manager · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0266",
+   "es": "Extintor y botiquín: verificar",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B17"
+   ],
+   "adaptar": "OSHA 29 CFR 1910.157(e)(2): inspección visual MENSUAL de los extintores; botiquín (first aid kit) completo",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0268",
+   "es": "Evaluar carta: rotar burgers especiales",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0269",
+   "es": "Planificar promos del mes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Mensual Manager · B20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0270",
+   "es": "Fotos RRSS y apps delivery",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Mensual Manager · B21"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)",
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0271",
+   "es": "Cambio de Turno",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0275",
+   "es": "Comandas en curso",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "03 · Handover Turno · B7"
+   ],
+   "pistas": [
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0278",
+   "es": "Patties de carne restantes",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B10"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0279",
+   "es": "Pan de burger restante",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "03 · Handover Turno · B11"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0280",
+   "es": "Estado del aceite de freidora",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "03 · Handover Turno · B12"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0293",
+   "es": "Tareas Diarias — Parrillero / Grill Master",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Parrillero · A1"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
+    "parrillero / cocinero plancha → grill cook; freidurista / cocinero freidora → fry cook; cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0295",
+   "es": "Encender plancha y precalentar",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Parrillero · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0296",
+   "es": "Sacar carne de cámara y temperar",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Parrillero · B7"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0297",
+   "es": "Preparar prensa smash y espátulas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Parrillero · B8"
+   ],
+   "pistas": [
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0298",
+   "es": "Pre-cocinar bacon si aplica",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Parrillero · B9"
+   ],
+   "adaptar": "Bacon precocinado: si se guarda, lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de guardarlo tapado; si se mantiene en caliente, lo hecho antes que se vaya a mantener en caliente se recalienta a 165 °F en 2 h como máximo (FDA Food Code 3-403.11) y se mantiene a 135 °F o más",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0299",
+   "es": "Cocinar patties según comanda y punto solicitado",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "04 · Parrillero · B11"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness",
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "adaptar": "Punto de la carne → doneness: 155 °F durante 17 s salvo que el cliente la pida poco hecha y la carta lleve el aviso al consumidor (FDA Food Code 3-401.11 y 3-603.11); la del menú infantil, siempre hecha",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0300",
+   "es": "Smash: prensar bola en plancha caliente 30-45s",
+   "grupo": "G1",
+   "palabras": 8,
+   "donde": [
+    "04 · Parrillero · B12"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0301",
+   "es": "Fundir queso con campana",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Parrillero · B13"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0302",
+   "es": "Tostar pan en plancha",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Parrillero · B14"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0303",
+   "es": "Mantener plancha limpia entre tandas",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Parrillero · B15"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0304",
+   "es": "Limpiar plancha a fondo",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Parrillero · B17"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0305",
+   "es": "Guardar carne sobrante etiquetada",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Parrillero · B18"
+   ],
+   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo para consumir (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0306",
+   "es": "Preparar patties para mañana si aplica",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Parrillero · B19"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "Patties formados con antelación: tapados, con fecha, a 41 °F o menos y separados de lo listo para consumir (FDA Food Code 3-302.11)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0307",
+   "es": "Tareas Diarias — Cocinero de Línea / Montaje",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Cocinero Línea · A1"
+   ],
+   "pistas": [
+    "D8 puestos US (mapas.GLOSARIO): camarero → server; cocinero → line cook; chef de partida → lead line cook; auxiliar → prep cook; jefe de cocina → head chef; jefe de sala / maître → FOH manager; encargado → shift manager; barman → bartender; partida → station; comanda → ticket; pase → the pass",
+    "parrillero / cocinero plancha → grill cook; freidurista / cocinero freidora → fry cook; cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0308",
+   "es": "Preparar toppings en inserts",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B6"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0309",
+   "es": "Preparar salsas en biberones",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B7"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0310",
+   "es": "Montar línea ordenada",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Cocinero Línea · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0311",
+   "es": "Montar burgers según comanda",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B11"
+   ],
+   "pistas": [
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0312",
+   "es": "Reponer inserts constantemente",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Cocinero Línea · B12"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0313",
+   "es": "Empaquetar take-away y delivery",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Cocinero Línea · B13"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0314",
+   "es": "Cubrir y refrigerar inserts",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Cocinero Línea · B15"
+   ],
+   "pistas": [
+    "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
+   ],
+   "adaptar": "Inserts tapados y a 41 °F o menos (FDA Food Code 3-501.16)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0315",
+   "es": "Limpiar línea",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Cocinero Línea · B16"
+   ],
+   "adaptar": "Limpiar la make line y sanitizarla con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0316",
+   "es": "Tareas Diarias — Freidurista",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "04 · Freidurista · A1"
+   ],
+   "pistas": [
+    "parrillero / cocinero plancha → grill cook; freidurista / cocinero freidora → fry cook; cocinero de línea → line cook"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0317",
+   "es": "Encender freidora, verificar aceite",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Freidurista · B6"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0318",
+   "es": "Preparar patatas y sides",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Freidurista · B7"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0319",
+   "es": "Freír patatas por tandas",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Freidurista · B9"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0320",
+   "es": "Freír sides: aros, nuggets, jalapeños",
+   "grupo": "G1",
+   "palabras": 5,
+   "donde": [
+    "04 · Freidurista · B10"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "adaptar": "Pollo (nuggets, tenders, crispy): hasta 165 °F en el centro, comprobado con sonda (FDA Food Code 3-401.11(A)(3)); se fríe desde congelado como diga el fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0321",
+   "es": "Emplatar en cesta/cucurucho",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Freidurista · B12"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0322",
+   "es": "Apagar y limpiar freidora",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Freidurista · B14"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0323",
+   "es": "Filtrar aceite",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Freidurista · B15"
+   ],
+   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0325",
+   "es": "Abrir local, desactivar alarma",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B6"
+   ],
+   "pistas": [
+    "el local → the restaurant / the burger joint (nunca «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0326",
+   "es": "Verificar equipo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0327",
+   "es": "Briefing equipo",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B8"
+   ],
+   "pistas": [
+    "Glosario: briefing de servicio → pre-shift meeting (line-up)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0330",
+   "es": "Supervisar tiempos y calidad",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Encargado · B12"
+   ],
+   "pistas": [
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0331",
+   "es": "Gestionar delivery",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B13"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0332",
+   "es": "Supervisar cierre",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0334",
+   "es": "Pedidos mañana",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0335",
+   "es": "Cerrar local",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Encargado · B19"
+   ],
+   "pistas": [
+    "el local → the restaurant / the burger joint (nunca «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0337",
+   "es": "Montar mesas",
+   "grupo": "G1",
+   "palabras": 2,
+   "donde": [
+    "04 · Camarero · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0338",
+   "es": "Reponer condimentos: kétchup, mostaza, tabasco, sal",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B7"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0339",
+   "es": "Verificar carta y promos del día",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0341",
+   "es": "Tomar comandas (punto de carne, alérgenos)",
+   "grupo": "G1",
+   "palabras": 6,
+   "donde": [
+    "04 · Camarero · B11"
+   ],
+   "pistas": [
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness",
+    "comanda → ticket; tiempos → ticket times; pase → the pass / expo"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una hamburguesería, el pan (bun) suele llevar trigo, leche, huevo, soja y sésamo, el queso lleva leche y las salsas, huevo. El gluten en sí no es uno de los 9 (el trigo sí), la mostaza tampoco (en UK sí) y la lactosa es una intolerancia, no un alérgeno: se recogen igual; en UK, los 14; y el punto de la carne → doneness: poco hecha solo con el aviso al consumidor en la carta, nunca la del menú infantil",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0342",
+   "es": "Servir burgers y sides",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0343",
+   "es": "Sugerir combos y extras",
+   "grupo": "G1",
+   "palabras": 4,
+   "donde": [
+    "04 · Camarero · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0345",
+   "es": "Cobrar",
+   "grupo": "G1",
+   "palabras": 1,
+   "donde": [
+    "04 · Camarero · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0355",
+   "es": "▸ La hoja «Trimestral y Anual» recoge el mantenimiento que se CONTRATA y que se pide en una inspección: DDD, conductos de extracción, extintores y BIE, instalación de gas, frigorista, aceite usado por gestor autorizado, legionela, agua, seguro y facturación.",
+   "grupo": "G2",
+   "palabras": 39,
+   "donde": [
+    "05 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y su prueba hidrostática, extinción de la campana, gas, frío, aceite usado, residuos y envases, legionela, agua, seguros, POS / sales tax y calibración de termómetros. Sin DDD, BIE, Verifactu ni facturación española",
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0358",
+   "es": "▸ Al pie de «FIFO Semanal» tienes una tabla editable de vida útil en congelación por familia: una regla única para todo el congelador o tiras patatas buenas o sirves bacon rancio.",
+   "grupo": "G2",
+   "palabras": 31,
+   "donde": [
+    "05 · Instrucciones · B9"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "FIFO Semanal",
+     "en": "Weekly FIFO Check"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0360",
+   "es": "Inventario Diario — Stock de Producción Hamburguesería",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Inventario Diario · A1"
+   ],
+   "pistas": [
+    "D2: la EN no lleva el sufijo de variante: quita «— Hamburguesería»; hamburguesería → burger joint / burger shop / burger restaurant"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0368",
+   "es": "  CARNE",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0369",
+   "es": "Patties clásicos (150g)",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A6"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "Patties de 150 g = 1/3 lb («1/3 lb patties»)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0371",
+   "es": "Carne para smash (bolas 80g)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Inventario Diario · A7"
+   ],
+   "adaptar": "Bolas de 80 g = 3 oz",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0374",
+   "es": "Pollo empanado/crispy",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0375",
+   "es": "  PAN",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0376",
+   "es": "Pan brioche",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A11"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "corregida: en una hamburguesería es el pan de la burger: «Brioche buns» (la cafetería dice «bread»)",
+   "base_en": "Brioche bread",
+   "base_fuente": "cafe"
+  },
+  {
+   "id": "c0377",
+   "es": "Pan pretzel",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0378",
+   "es": "Pan clásico/sesamo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A13"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0380",
+   "es": "Cheddar lonchas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0381",
+   "es": "Gouda ahumado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0382",
+   "es": "Blue cheese",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A17"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0384",
+   "es": "Emmental",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0385",
+   "es": "  TOPPINGS Y SALSAS",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0386",
+   "es": "Lechuga",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A20"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0387",
+   "es": "Tomate",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0389",
+   "es": "Pepinillos",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A23"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0390",
+   "es": "Jalapeños",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A24"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0391",
+   "es": "Burger sauce casera",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A25"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0393",
+   "es": "Salsa BBQ",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A26"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0394",
+   "es": "Mostaza",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A27"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0395",
+   "es": "Mayonesa",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0396",
+   "es": "Patatas frescas/congeladas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0397",
+   "es": "Aros de cebolla",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A31"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0398",
+   "es": "Nuggets de pollo",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Inventario Diario · A32"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0399",
+   "es": "Coleslaw",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Inventario Diario · A33"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0401",
+   "es": "Cajas burger",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A35"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0402",
+   "es": "Envases patatas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · Inventario Diario · A36"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0408",
+   "es": "Desmontar y limpiar plancha a fondo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · Limpieza Semanal · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0409",
+   "es": "Limpiar freidora interior (desmontar cestas)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B7"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0410",
+   "es": "Limpiar interior cámaras",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · B8"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "Glosario: cámara → walk-in cooler / walk-in freezer"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0411",
+   "es": "Desmontar campana y limpiar filtros",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · Limpieza Semanal · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "adaptar": "El equipo limpia los filtros de la campana; el conducto lo limpia el contratista (hoja «Quarterly & Annual», NFPA 96)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0416",
+   "es": "Limpieza profunda baños",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Limpieza Semanal · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0417",
+   "es": "Revisión FIFO — Caducidades",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0419",
+   "es": "Verificar fecha de carne (fresca max 3 días)",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "05 · FIFO Semanal · B6"
+   ],
+   "adaptar": "Carne picada fresca: 3 días como máximo (criterio del kit) y nunca más allá de la fecha del proveedor",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0420",
+   "es": "Revisar quesos abiertos",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B7"
+   ],
+   "adaptar": "Quesos abiertos: tapados, con la fecha de apertura y sin pasar la del fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0421",
+   "es": "Revisar salsas caseras (max 5 días)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B8"
+   ],
+   "adaptar": "Salsas caseras: 5 días como máximo (criterio del kit; el date marking de la FDA permite 7 contando el de preparación, 3-501.17)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0422",
+   "es": "Rotar: antiguo delante",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0423",
+   "es": "Desechar caducado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · FIFO Semanal · B10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0426",
+   "es": "Revisar pan: fecha, frescura",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0427",
+   "es": "Revisar stock packaging",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B14"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0428",
+   "es": "Verificar aceite freidora: test polares",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B15"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "adaptar": "Test polares → medidor de TPM (total polar materials, oil quality tester); en EE. UU. no hay límite federal: el aceite se cambia según el fabricante del medidor y de la freidora (sin cifra)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0433",
+   "es": "Patties y carne picada cruda",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B28"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0434",
+   "es": "3-4 meses",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · C28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0435",
+   "es": "Congélalos ya porcionados y separados con papel: la picada tiene mucha superficie expuesta y se enrancia antes que la pieza entera",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "05 · FIFO Semanal · D28"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0436",
+   "es": "Bacon y panceta",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B29"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0438",
+   "es": "La grasa se enrancia aunque esté congelada: es lo primero que sabe a viejo",
+   "grupo": "G2",
+   "palabras": 14,
+   "donde": [
+    "05 · FIFO Semanal · D29"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0439",
+   "es": "Pollo crudo (crispy, tenders, nuggets)",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B30"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0440",
+   "es": "3-6 meses",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · C30"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0441",
+   "es": "Del congelador a la freidora, sin descongelar: si se atempera suelta agua y el rebozado se despega",
+   "grupo": "G2",
+   "palabras": 17,
+   "donde": [
+    "05 · FIFO Semanal · D30"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "adaptar": "Del congelador a la freidora, como diga el fabricante; el pollo, hasta 165 °F en el centro (FDA Food Code 3-401.11(A)(3))",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0442",
+   "es": "Pan de burger (brioche, pretzel, sésamo)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "05 · FIFO Semanal · B31"
+   ],
+   "pistas": [
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0444",
+   "es": "Congélalo el día que llega, no cuando ya se está pasando; descongela a temperatura ambiente dentro de su bolsa",
+   "grupo": "G2",
+   "palabras": 19,
+   "donde": [
+    "05 · FIFO Semanal · D31"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0445",
+   "es": "Patatas prefritas congeladas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B32"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0446",
+   "es": "6-12 meses",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · C32"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0447",
+   "es": "NUNCA se descongelan: van del congelador al aceite o quedan blandas y salpican",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "05 · FIFO Semanal · D32"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0448",
+   "es": "Aros de cebolla y rebozados",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "05 · FIFO Semanal · B33"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0449",
+   "es": "6 meses",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "05 · FIFO Semanal · C33"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0450",
+   "es": "Igual que las patatas: directos al aceite",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "05 · FIFO Semanal · D33"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0451",
+   "es": "Queso en lonchas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · FIFO Semanal · B34"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0452",
+   "es": "Se vuelve quebradizo al descongelar pero funde igual: úsalo sólo para fundir, no en frío",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "05 · FIFO Semanal · D34"
+   ],
+   "pistas": [
+    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0453",
+   "es": "Salsas caseras y fondos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B35"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0456",
+   "es": "Verdura escaldada (cebolla, pimiento)",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · FIFO Semanal · B36"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0459",
+   "es": "  EQUIPOS",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "05 · Mantenimiento Mensual · A5"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0460",
+   "es": "Revisión plancha: superficie, termostato",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B6"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0461",
+   "es": "Cambio completo aceite freidora",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "05 · Mantenimiento Mensual · B7"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0462",
+   "es": "Lavavajillas: filtros, sal",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0463",
+   "es": "Campana: motor y filtros; la limpieza de los CONDUCTOS de extracción por empresa homologada está en la hoja «Trimestral y Anual»",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "05 · Mantenimiento Mensual · B9"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
+   ],
+   "cita_rotulos": [
+    {
+     "es": "Trimestral y Anual",
+     "en": "Quarterly & Annual"
+    }
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0467",
+   "es": "Salidas emergencia despejadas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "05 · Mantenimiento Mensual · B14"
+   ],
+   "adaptar": "Salidas de emergencia despejadas; añade: señales de salida (exit signs) iluminadas",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0496",
+   "es": "Calibrar los termómetros y la sonda de la plancha contra un patrón conocido: de esa sonda depende el núcleo de la carne picada",
+   "grupo": "G2",
+   "palabras": 23,
+   "donde": [
+    "05 · Trimestral y Anual · B20"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "adaptar": "Calibración por el método del punto de hielo (32 °F); la sonda de la plancha, según su fabricante",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0505",
+   "es": "Noche de Fútbol / Super Bowl — Pico de Ventas",
+   "grupo": "G2",
+   "palabras": 8,
+   "donde": [
+    "06 · Noche Fútbol · A1"
+   ],
+   "pistas": [
+    "fútbol → (American) football: NFL Sundays, Monday Night Football, Super Bowl; noche de partido → game night"
+   ],
+   "adaptar": "Fútbol → fútbol americano (NFL): «Game Night / Super Bowl — Peak Sales»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0509",
+   "es": "Preparar 50% más carne de lo normal",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Noche Fútbol · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0510",
+   "es": "Día antes",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Noche Fútbol · E6",
+    "06 · Noche Fútbol · E8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0511",
+   "es": "Pedido extra: pan, queso, patatas",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B7"
+   ],
+   "pistas": [
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0513",
+   "es": "Stock doble de packaging delivery",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B8"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0514",
+   "es": "Reforzar equipo",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Noche Fútbol · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0515",
+   "es": "3 días antes",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Fútbol · E9",
+    "06 · Burger Week · E9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0516",
+   "es": "Publicar combo partido en RRSS",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B10"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "adaptar": "Combo para el partido (game-day combo) en redes sociales",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0518",
+   "es": "Preparar patties extra",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Fútbol · B12"
+   ],
+   "pistas": [
+    "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0520",
+   "es": "Duplicar toppings y salsas",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Noche Fútbol · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0521",
+   "es": "Aceite freidora limpio para pico",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B14"
+   ],
+   "pistas": [
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0522",
+   "es": "Cajas pre-montadas",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Noche Fútbol · B15"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0523",
+   "es": "Gestionar cola sin perder calidad",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Noche Fútbol · B16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0524",
+   "es": "Burger Week / Semana Especial de Burgers",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Burger Week · A1"
+   ],
+   "adaptar": "«Burger Week» se dice igual en EE. UU. (muchas ciudades tienen la suya): «Burger Week / Limited-Edition Burgers»",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0525",
+   "es": "Diseñar 3-5 burgers especiales (edición limitada)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Burger Week · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0526",
+   "es": "2 semanas antes",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Burger Week · E6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0527",
+   "es": "Pedir ingredientes premium (wagyu, trufa, foie)",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Burger Week · B7"
+   ],
+   "adaptar": "Wagyu, trufa y foie gras, este solo donde sea legal venderlo (en California está prohibido)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0529",
+   "es": "Crear material gráfico: carta, RRSS, apps",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Burger Week · B8"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)",
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0530",
+   "es": "Formar al equipo en las recetas nuevas",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "06 · Burger Week · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0531",
+   "es": "  DURANTE",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · Burger Week · A10"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0532",
+   "es": "Verificar stock especial cada mañana",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Burger Week · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0533",
+   "es": "Diario",
+   "grupo": "G2",
+   "palabras": 1,
+   "donde": [
+    "06 · Burger Week · E11",
+    "06 · Burger Week · E12",
+    "06 · Burger Week · E13",
+    "… +1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0534",
+   "es": "Contar ventas por burger especial",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Burger Week · B12"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0535",
+   "es": "Publicar contenido diario en RRSS",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Burger Week · B13"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0536",
+   "es": "Pedir reposición si se agota algo",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "06 · Burger Week · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0537",
+   "es": "Navidad y Fin de Año",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · A1"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0539",
+   "es": "Recoger POR ESCRITO alérgenos, intolerancias y dietas de los comensales y trasladarlos a cocina: pan (gluten y sésamo), queso (lactosa), salsas (huevo y mostaza) y rebozados están en casi toda la carta",
+   "grupo": "G2",
+   "palabras": 32,
+   "donde": [
+    "06 · Navidad · B6"
+   ],
+   "pistas": [
+    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check",
+    "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
+    "patatas → fries; aros de cebolla → onion rings; rebozar → batter / bread; sides → sides",
+    "pan de burger → buns (brioche, pretzel, sesame seed); horno para panecillos → bun toaster (or oven)"
+   ],
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos, frutos de cáscara, cacahuete, trigo, soja y sésamo); en una hamburguesería, el pan (bun) suele llevar trigo, leche, huevo, soja y sésamo, el queso lleva leche y las salsas, huevo. El gluten en sí no es uno de los 9 (el trigo sí), la mostaza tampoco (en UK sí) y la lactosa es una intolerancia, no un alérgeno: se recogen igual; en UK, los 14; por escrito",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0541",
+   "es": "Confirmar qué alternativas hay y que se pueden servir de verdad: pan sin gluten, burger vegana, sin queso — y cómo se evita el cruce en plancha y en línea",
+   "grupo": "G2",
+   "palabras": 29,
+   "donde": [
+    "06 · Navidad · B7"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
+    "cruce de alérgenos → cross-contact"
+   ],
+   "adaptar": "Cruce = cross-contact (alérgenos): plancha, espátulas, línea y el aceite compartido de la freidora (rebozados)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0542",
+   "es": "Cerrar por escrito el precio por comensal y qué incluye (burger, sides, bebida y postre)",
+   "grupo": "G2",
+   "palabras": 15,
+   "donde": [
+    "06 · Navidad · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0545",
+   "es": "Acordar la hora de entrada y de salida de la mesa y reservar carne y pan suficientes para el grupo el día anterior",
+   "grupo": "G2",
+   "palabras": 23,
+   "donde": [
+    "06 · Navidad · B11"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0546",
+   "es": "Burger navideña: ingredientes festivos",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad · B13"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0550",
+   "es": "Horarios especiales",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · B15"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0551",
+   "es": "Decorar local",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · B16"
+   ],
+   "pistas": [
+    "el local → the restaurant / the burger joint (nunca «venue»)"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0552",
+   "es": "Dic 1",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · E16"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0553",
+   "es": "Burger especial navideña disponible",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Navidad · B18"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0554",
+   "es": "Combo navideño: burger + sides + bebida",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "06 · Navidad · B19"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0555",
+   "es": "Fotos RRSS",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Navidad · B20"
+   ],
+   "pistas": [
+    "RRSS → social media"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0556",
+   "es": "Inicio / Fin Temporada Terraza",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "06 · Temporada Terraza · A1"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0557",
+   "es": "Sacar mobiliario",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Temporada Terraza · B6"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0561",
+   "es": "Verificar estado",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Temporada Terraza · B8"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0562",
+   "es": "Sombrillas y decoración",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Temporada Terraza · B9"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0563",
+   "es": "Permiso terraza vigente",
+   "grupo": "G2",
+   "palabras": 3,
+   "donde": [
+    "06 · Temporada Terraza · B10"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Permiso de la ciudad: outdoor dining / sidewalk cafe permit: comprobar que está vigente y renovarlo si caduca esta temporada",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0567",
+   "es": "Inventario roturas",
+   "grupo": "G2",
+   "palabras": 2,
+   "donde": [
+    "06 · Temporada Terraza · B14"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0626",
+   "es": "Abrir persianas / puerta principal",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B8"
+   ],
+   "adaptar": "Persianas → security gate / shutters; añade: salidas de emergencia despejadas y señales de salida (exit signs) iluminadas",
+   "motivo": "corregida: ronda 1 m15 del bar: + salidas de emergencia despejadas y señales de salida",
+   "base_en": "Raise security gate and open front door"
+  },
+  {
+   "id": "c0642",
+   "es": "Encender planchas y freidoras (precalentar 20 min)",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "08 · Apertura del Negocio · B20"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
+    "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
+    "freidora → fryer (fry station); cesta → fry basket; cucurucho → paper cone; test polares → TPM oil test"
+   ],
+   "adaptar": "Con la campana ya encendida (hoja «Kitchen Opening»): encender planchas y freidoras y precalentarlas el tiempo que diga su fabricante (20 min como referencia del kit)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0643",
+   "es": "Montar línea de toppings",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "08 · Apertura del Negocio · B21"
+   ],
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0809",
+   "es": "Roscón de Reyes, menú familiar",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C6"
+   ],
+   "adaptar": "Evento EN: «Super Bowl Sunday (2nd Sunday in Feb)». Sustituye a Reyes. Uno de los días de más pedidos para llevar y a domicilio del año en EE. UU.: pedidos grandes y anticipados (party orders), más patties y pan, cajas extra y menú corto para sacar más pedidos por hora",
+   "motivo": "adaptar",
+   "base_en": "Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff"
+  },
+  {
+   "id": "c0818",
+   "es": "Menú familiar de mediodía, reservas ampliadas y burger XL para compartir",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C9"
+   ],
+   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day + March Madness». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: burger especial del día; los partidos del torneo universitario (March Madness, de mediados de marzo a principios de abril) llenan la sala y suben el delivery: turnos extra; cerveza solo con licencia y 21+ con ID, sin ofertas de bebida tipo 2x1 (varios estados las prohíben)",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0821",
+   "es": "Menú de vigilia, bacalao, potaje, torrijas",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C10"
+   ],
+   "adaptar": "Evento EN: «Lent Fridays + Easter Sunday (varies)». Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): una opción de pescado o vegetariana (veggie burger); Pascua: decidir el horario",
+   "motivo": "adaptar",
+   "base_en": "Easter brunch, specials (baked ham, lamb), expanded reservations"
+  },
+  {
+   "id": "c0830",
+   "es": "Servicio de festivo, turnos especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C13"
+   ],
+   "adaptar": "Evento EN: «National Burger Month (May 28: National Hamburger Day)». Sustituye al 1 de mayo. Mayo es el mes de la hamburguesa en EE. UU. y el 28 es el National Hamburger Day: burger especial del mes, oferta del día 28 en redes y en las apps de delivery, más carne y pan",
+   "motivo": "adaptar",
+   "base_en": "Margarita and taco specials, extra bar staff"
+  },
+  {
+   "id": "c0832",
+   "es": "Menú especial, reservas ampliadas, detalle",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C14"
+   ],
+   "motivo": "contexto: brunch",
+   "base_en": "Special brunch menu, expanded reservations, a small gift for the moms"
+  },
+  {
+   "id": "c0837",
+   "es": "Menú especial, terraza nocturna",
+   "grupo": "G2",
+   "palabras": 4,
+   "donde": [
+    "B02 · Calendario Anual · C16"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Evento EN: «3rd Sunday — Father's Day». Sustituye a San Juan. Tareas = las del Día del Padre del ES (fila 9): menú familiar de mediodía, reservas ampliadas y burger XL para compartir",
+   "motivo": "adaptar",
+   "base_en": "Steak and BBQ specials, expanded reservations"
+  },
+  {
+   "id": "c0840",
+   "es": "Personal extra, horarios ampliados, carta verano",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C17"
+   ],
+   "adaptar": "Evento EN: «Jul 4 — Independence Day». Sustituye a la fila de temporada alta (sus tareas pasan a la fila 18). Tareas: decidir el horario (muchos cierran o abren solo de día), patio a pleno rendimiento, pedidos grandes para las fiestas (party orders)",
+   "motivo": "adaptar",
+   "base_en": "Decide hours (many close or open daytime only), patio at full capacity, BBQ specials"
+  },
+  {
+   "id": "c0844",
+   "es": "Servicio de festivo, refuerzo de turnos y de repartidores, terraza a pleno rendimiento",
+   "grupo": "G2",
+   "palabras": 13,
+   "donde": [
+    "B02 · Calendario Anual · C18"
+   ],
+   "pistas": [
+    "D15: terraza → patio"
+   ],
+   "adaptar": "Evento EN: «Summer peak season». Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado, carta de verano; más refuerzo de turnos y de delivery y patio a pleno rendimiento",
+   "motivo": "adaptar",
+   "base_en": "Holiday service, extra staff, longer hours, summer menu; more drivers and the patio at full capacity",
+   "base_fuente": "pizza"
+  },
+  {
+   "id": "c0847",
+   "es": "Carta otoño, menú del día reforzado",
+   "grupo": "G2",
+   "palabras": 6,
+   "donde": [
+    "B02 · Calendario Anual · C19"
+   ],
+   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day». Fin del verano. Tareas: carta de otoño, especiales de almuerzo (lunch specials) para la vuelta a la rutina, combos para los partidos de fútbol americano (game-day combos) y una oferta de cheeseburger el día 18",
+   "motivo": "adaptar",
+   "base_en": "Fall menu and lunch specials for the back-to-routine crowd"
+  },
+  {
+   "id": "c0850",
+   "es": "Decoración temática, menú/cocktails especiales",
+   "grupo": "G2",
+   "palabras": 5,
+   "donde": [
+    "B02 · Calendario Anual · C20"
+   ],
+   "adaptar": "Evento EN: «Oct 31 — Halloween». Decoración temática y una burger especial de Halloween (sin cócteles); noche fuerte de delivery: packaging y turnos extra",
+   "motivo": "adaptar",
+   "base_en": "Themed decorations, special menu/cocktails"
+  },
+  {
+   "id": "c0853",
+   "es": "Comida familiar de mediodía, burger de temporada y refuerzo del mediodía",
+   "grupo": "G2",
+   "palabras": 11,
+   "donde": [
+    "B02 · Calendario Anual · C21"
+   ],
+   "adaptar": "Evento EN: «Thanksgiving (4th Thursday) + Black Friday». Sustituye a Todos los Santos. Decidir si se abre el jueves (muchos cierran); el viernes (Black Friday), burger de temporada y refuerzo del mediodía para la gente que sale de compras",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0858",
+   "es": "Horario de festivo, refuerzo de mediodía y de delivery, carne y pan para tres días seguidos",
+   "grupo": "G2",
+   "palabras": 16,
+   "donde": [
+    "B02 · Calendario Anual · C23"
+   ],
+   "pistas": [
+    "take-away → takeout / carryout; apps → third-party delivery apps (DoorDash, Uber Eats, Grubhub); cajas burger → burger boxes (clamshells)"
+   ],
+   "adaptar": "Evento EN: «Holiday gift card season». Sustituye al puente de la Constitución. Del Black Friday a Nochebuena. Tareas: promoción de tarjetas regalo, expositor junto a la caja (register), venta online y en la app de pedidos",
+   "motivo": "nueva"
+  },
+  {
+   "id": "c0860",
+   "es": "Menú de grupo, reservas grandes, turnos extra",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C24"
+   ],
+   "adaptar": "Evento EN: «Holiday parties (office orders)». Sustituye a las cenas de empresa. Tareas: pedidos de empresa para las fiestas de oficina (burgers y sides para grupos, con hora de recogida o entrega), reservas de grupo, turnos extra",
+   "motivo": "adaptar",
+   "base_en": "Group menu, large reservations, extra shifts"
+  },
+  {
+   "id": "c0864",
+   "es": "Menú gala, cotillón, uvas, cava, turnos noche",
+   "grupo": "G2",
+   "palabras": 7,
+   "donde": [
+    "B02 · Calendario Anual · C26"
+   ],
+   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Horario de cierre y turnos de noche; si abres la sala hasta tarde, party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite; 21+ con ID)",
+   "motivo": "adaptar",
+   "base_en": "Gala or prix fixe menu, party favors (hats, noisemakers), champagne toast at midnight, night shifts"
+  }
+ ]
+}
