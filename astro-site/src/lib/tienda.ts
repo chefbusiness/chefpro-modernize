@@ -238,6 +238,17 @@ export const FAMILIAS: FamiliaProducto[] = [
     },
   },
   {
+    // Tienda EN (18-oct-2026): Pizza Shop Checklists Kit Pro, cuarto hermano vertical del Restaurant Checklists Kit Pro
+    // (SPEC checklists-kit/pizza D1-D4). Gemelo del Kit de Tareas para Pizzería. vivo: true en la rama, que se
+    // fusiona cuando existe el Payment Link (mismo criterio que el Restaurant, el Bar, el Coffee Shop y el Catering
+    // Checklists Kit Pro).
+    familia: 'kit-tareas-pizzeria',
+    productos: {
+      es: { slug: 'kit-tareas-pizzeria', vivo: true },
+      en: { slug: 'pizza-shop-checklist-templates', vivo: true },
+    },
+  },
+  {
     // ES con el patrón heredado: landing /pro-prompts-ebook, gate /pro-prompts-library-access y
     // dashboard /pro-prompts-library (quirk documentado en zona-app.ts). Aquí solo cuenta la
     // landing, que es lo único que usa alternatesFamilia(); los slugs de acceso no salen de aquí.

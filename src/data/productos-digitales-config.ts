@@ -1385,6 +1385,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-18): twin of kit-tareas-pizzeria, independent product.
+  'pizza-shop-checklist-templates': {
+    id: 'pizza-shop-checklist-templates',
+    name: 'Pizza Shop Checklists Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/pizza-shop-checklist-templates/access',
+    emailSubject: 'Your access to Pizza Shop Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Pizza Shop Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Pizza Shop Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/pizza-shop-checklist-templates/01-pizza-shop-opening-closing-checklists.xlsx',
+      'horno': '/dl/pizza-shop-checklist-templates/02-pizza-kitchen-station-checklists.xlsx',
+      'manager': '/dl/pizza-shop-checklist-templates/03-pizzeria-manager-checklist.xlsx',
+      'perfiles': '/dl/pizza-shop-checklist-templates/04-pizza-shop-duties-by-role.xlsx',
+      'periodicas': '/dl/pizza-shop-checklist-templates/05-pizzeria-cleaning-checklist-inventory-maintenance.xlsx',
+      'eventos': '/dl/pizza-shop-checklist-templates/06-pizza-shop-event-checklists.xlsx',
+      'personalizable': '/dl/pizza-shop-checklist-templates/07-blank-pizza-shop-checklist-template.xlsx',
+      'apertura-negocio': '/dl/pizza-shop-checklist-templates/08-pizzeria-opening-closing-checklist.xlsx',
+      'apertura-caja': '/dl/pizza-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+      'bonus-briefing': '/dl/pizza-shop-checklist-templates/BONUS-01-pizza-shop-pre-shift-meeting-template.xlsx',
+      'bonus-calendario': '/dl/pizza-shop-checklist-templates/BONUS-02-pizza-shop-holiday-calendar.xlsx',
+    },
+    lang: 'en',
+  },
 
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',

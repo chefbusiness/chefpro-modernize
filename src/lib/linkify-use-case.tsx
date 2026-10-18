@@ -60,6 +60,7 @@ const PRODUCT_ALIASES: Record<string, string> = {
   'Bar Checklists Kit Pro': '/en/digital-products/bar-checklist-templates',
   'Coffee Shop Checklists Kit Pro': '/en/digital-products/coffee-shop-checklist-templates',
   'Catering Checklists Kit Pro': '/en/digital-products/catering-checklist-templates',
+  'Pizza Shop Checklists Kit Pro': '/en/digital-products/pizza-shop-checklist-templates',
   'Gastro Pro Prompts eBook': '/en/digital-products/ai-prompts-for-restaurants',
 };
 

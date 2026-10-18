@@ -166,11 +166,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-pizzeria',
     url: '/kit-tareas-pizzeria',
     price: '€12',
-    name: { es: 'Tareas: Pizzería', en: 'Tasks: Pizzeria' },
+    name: { es: 'Tareas: Pizzería', en: 'Pizza Shop Checklists Kit Pro' },
     description: {
       es: 'Listas de prep, mise, servicio y delivery específicas.',
-      en: 'Prep, mise, service, and delivery checklists tailored to pizzerias.',
+      en: 'Pizza shop checklists for opening and closing, the pizza oven and dough, the make line, delivery and takeout, the manager, duties by role, cleaning and the cash drawer: 373 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `pizza-shop-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/pizza-shop-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-hamburgueseria': {
     id: 'kit-tareas-hamburgueseria',

@@ -1,0 +1,45 @@
+{
+  "producto": "kit-tareas-pizzeria",
+  "fecha": "2026-10-18",
+  "lang": "en",
+  "_doc": [
+    "Blog EN · Pizza Shop Checklists Kit Pro (pizza/SPEC D1, 18-oct-2026). El id es el del CATÁLOGO (products-catalog.ts),",
+    "que con urlByLang.en pinta la landing EN /en/digital-products/pizza-shop-checklist-templates y $19.",
+    "Uso: python3 scripts/astro-migration/fase8x-sustituir-banner.py --producto kit-tareas-pizzeria --config scripts/astro-migration/fase8x-config/kit-tareas-pizzeria-en.json [--aplicar]",
+    "y después python3 scripts/astro-migration/fase8b-regen-lastmod.py.",
+    "Posts: el único del blog EN que trata la pizza de verdad, Pizza Consultant Pro (218 menciones), y el más afín después:",
+    "Robotic Restaurants (15, con su sección «Pazzi»: robot de pizza, masa, horno y la falta de pizzeros). No hay posts EN de",
+    "restaurante italiano; los de delivery (ghost kitchens, robots de reparto) no nombran la pizza y el de cloud kitchens ya",
+    "lleva el Catering Checklists Kit Pro.",
+    "Víctimas = SLUGS EN de la landing, por relevancia: el Staff Scheduling Kit en el de Pizza Consultant Pro (se quedan el",
+    "Food Cost Kit por el costing del post y el Financial Plan Kit por la apertura de la pizzería) y el Inventory Kit en el",
+    "de robots (se quedan el Financial Plan Kit por el ROI y el Scheduling Kit por la mano de obra).",
+    "Nunca el Restaurant, el Bar, el Coffee Shop ni el Catering Checklists Kit Pro, hermanos de línea y venta cruzada."
+  ],
+  "nunca": [
+    "restaurant-checklist-templates",
+    "bar-checklist-templates",
+    "coffee-shop-checklist-templates",
+    "catering-checklist-templates"
+  ],
+  "prohibidos": [],
+  "esperado": {
+    "sustituir": 2,
+    "solo_enlace": 0,
+    "miswiring": 0
+  },
+  "posts": {
+    "prompt-library-pizza-consulting": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-schedule-templates",
+      "ancla_n": 10,
+      "parrafo": "Prompts design the pizza; checklists make sure every shift turns it out the same way. The {ENLACE} writes that routine down in Excel: the oven fired up and checked in °F (750–840 °F for Neapolitan), dough balls tempered before service and tomorrow's dough made at closing, the make line set up and broken down, delivery drivers and pizza boxes, and a checklist each for the pizza maker, the line cook and the shift manager."
+    },
+    "robotic-restaurants-robot-chefs-servers": {
+      "accion": "SUSTITUIR",
+      "victima": "restaurant-inventory-templates",
+      "ancla_n": 3,
+      "parrafo": "Pazzi also shows how much of a pizza shop runs on routine: dough, oven, make line, delivery. Whether or not a robot ever stretches your dough, that routine has to be written down first. The {ENLACE} does it in Excel, with 373 tasks already written for opening and closing, the pizza oven station, the make line, delivery drivers and the shift manager, so every shift runs the same way."
+    }
+  }
+}

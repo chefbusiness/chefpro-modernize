@@ -866,6 +866,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'pizza-shop-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 373 pizza shop tasks already written, adapted to the US with notes for the UK.',
+          'US pizza shop roles and areas (pizza maker, line cook, shift manager, server, delivery driver, dishwasher / prep; pizza oven station, make line, apps & pasta, front of house, patio, delivery), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'Wood-fired and deck ovens in °F (750–840 °F for Neapolitan, 570 °F for Roman-style), preheat and cool-down per the manufacturer, the hood on before the fire and the ash removed cold into a metal container with a lid; the closing order fixed so the oven is left to cool first and the alarm and lock-up come last.',
+          'Food safety under the FDA Food Code: walk-in at 41 °F or below and freezer at 0 °F or below, the make line and cold-fermented dough at 41 °F or below, opened mozzarella date-marked for 7 days, raw meat stored apart, thawing in the walk-in, house-made sauce cooled by the two-stage rule and reheated to 165 °F, slices held at 135 °F or tossed at 4 hours, a menu advisory for raw-egg desserts and the 9 major allergens (wheat is one; 14 noted for the UK).',
+          'Delivery with third-party apps (DoorDash, Uber Eats, Grubhub): insulated bags with hot food at 135 °F or above and cold items apart at 41 °F or below, a delivery target under 30 minutes and every order checked against the ticket.',
+          'A Quarterly & Annual sheet for a US pizza shop: pest control, hood, duct and chimney cleaning under NFPA 96 (inspected monthly with a solid-fuel oven), a wood-fired oven check, fire extinguishers (OSHA) and hood suppression, gas, refrigeration by an EPA 608 technician (make line included), water, used cooking oil, insurance (with hired and non-owned auto if drivers use their own cars) and POS / sales tax settings with the delivery app integrations.',
+          "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a pizza shop calendar with 22 US dates, from Super Bowl Sunday, March Madness and Lent Fridays to Halloween, Thanksgiving Eve and New Year's Eve, plus 5 rows for your own and a UK note. Beer and wine only with a license, 21+ with ID.",
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
 
   'kit-plan-financiero': {
     version: '2.0',

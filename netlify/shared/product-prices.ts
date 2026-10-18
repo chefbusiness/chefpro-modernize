@@ -57,6 +57,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'mega-pack-tareas': { eur: 89 },
   'mobile-bar-business-plan': { usd: 39 },
   'pack-appcc': { eur: 14 },
+  'pizza-shop-checklist-templates': { usd: 19 },
   'plan-catering-tematico-eventos': { eur: 45 },
   'plan-chef-privado-showcooking-eventos': { eur: 45 },
   'plan-negocio-bar-restaurante': { eur: 35 },
