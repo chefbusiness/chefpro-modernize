@@ -132,7 +132,7 @@ C25    : Kitchen
 D25    : Line cook
 E25    : 10:30 AM
 A26    : 19
-B26    : Slice cheese: cheddar, gouda, blue cheese, Swiss
+B26    : Slice cheese: American, cheddar, gouda, blue cheese, Swiss
 C26    : Kitchen
 D26    : Line cook
 E26    : 10:30 AM
@@ -308,7 +308,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   PRODUCT
 A6     : 1
-B6     : Store leftover beef in the walk-in: raw ground beef covered, date-marked, 41 °F or below, bottom shelf below ready-to-eat food (FDA 3-302.11)
+B6     : Store leftover beef in the walk-in: raw ground beef covered, date-marked, 41 °F or below, below ready-to-eat food and above any raw chicken (FDA 3-302.11)
 C6     : Kitchen
 D6     : Line cook
 E6     : 10:30 PM
@@ -339,12 +339,12 @@ C12    : Kitchen
 D12    : Line cook
 E12    : 10:30 PM
 A13    : 7
-B13    : Turn the fryer off after service and let the oil cool; the hood stays on meanwhile
+B13    : Turn the fryer off after service; the hood stays on until the fryer and griddle have cooled
 C13    : Kitchen
 D13    : Line cook
 E13    : 10:30 PM
 A14    : 8
-B14    : Filter or change the oil as the fryer manufacturer says (many have built-in hot filtering, others need to cool first); heat-resistant gloves, apron and goggles
+B14    : Filter the oil every night as the fryer manufacturer says (built-in filtration usually runs with the oil still hot, right after service; a portable filter only once it has cooled to what the manual allows) and change it when the TPM tester says; heat-resistant gloves, apron and goggles
 C14    : Kitchen
 D14    : Line cook
 E14    : 10:45 PM
@@ -542,7 +542,7 @@ C9     : Kitchen
 D9     : Grill cook
 E9     : 11:00 AM
 A10    : 5
-B10    : Check spatulas, presses, thermometer
+B10    : Check spatulas, presses and the probe thermometer: ice-point check (32 °F), recalibrate if it's off
 C10    : Kitchen
 D10    : Grill cook
 E10    : 11:00 AM
@@ -573,7 +573,7 @@ C16    : Kitchen
 D16    : Grill cook
 E16    : —
 A17    : 11
-B17    : Keep the griddle clean between batches (scraper)
+B17    : Keep the griddle clean between batches (scraper); wash, rinse and sanitize spatulas, press and tongs at least every 4 h during service, or swap in clean ones (FDA 4-602.11)
 C17    : Kitchen
 D17    : Grill cook
 E17    : —
@@ -615,7 +615,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   BEFORE SERVICE
 A6     : 1
-B6     : Set up inserts: lettuce, tomato, onion and pickles — raw-eaten produce washed under running potable water (FDA 3-302.15); if using a produce wash, only one approved for fruits and vegetables, at label dose, then RINSE. Inserts in the make-line cooler at 41 °F or below (FDA 3-501.16)
+B6     : Set up inserts: lettuce, tomato, onion and pickles — raw-eaten produce washed under running potable water (FDA 3-302.15); if using a produce wash, only one approved for fruits and vegetables, at label dose, then RINSE. Inserts in the make-line cooler at 41 °F or below (FDA 3-501.16) — log reading: ____ °F
 C6     : Kitchen
 D6     : Line cook
 E6     : 11:00 AM
@@ -755,12 +755,12 @@ D16    : Fry cook
 E16    : —
 A17    :   AFTER
 A18    : 11
-B18    : Turn off the fryer and let it cool
+B18    : Turn off the fryer at the end of service
 C18    : Kitchen
 D18    : Fry cook
 E18    : 10:30 PM
 A19    : 12
-B19    : Filter or change the oil if dark or smelly, as the fryer manufacturer says (many filter hot by design, others need to cool first); heat-resistant gloves, apron and goggles
+B19    : Filter the oil every night as the fryer manufacturer says (built-in filtration usually runs with the oil still hot, right after service; a portable filter only once it has cooled to what the manual allows) and change it when the TPM tester says; heat-resistant gloves, apron and goggles
 C19    : Kitchen
 D19    : Fry cook
 E19    : 10:30 PM
@@ -1025,12 +1025,12 @@ D10    : Manager
 E10    : Day 1
 A11    :   MAINTENANCE
 A12    : 6
-B12    : Deep-clean the griddle (take apart if possible)
+B12    : Griddle: check the surface and thermostat with a surface thermometer, and deep-clean the grease trough
 C12    : Kitchen
 D12    : Technician
 E12    : Monthly
 A13    : 7
-B13    : Full fryer oil change
+B13    : Fryer boil-out: drain, clean with fryer cleaner and refill with fresh oil, per the manufacturer (the oil itself is changed whenever the TPM tester says, not once a month)
 C13    : Kitchen
 D13    : Manager
 E13    : Monthly
@@ -1205,7 +1205,7 @@ A9     : 4
 B9     : Precook bacon if used — to store, cool cooked bacon from 135 to 70 °F in 2 h, then to 41 °F in 4 h more (FDA 3-501.14); to hot-hold, reheat to 165 °F within 2 h (FDA 3-403.11) and hold at 135 °F or above
 C9     : Kitchen
 D9     : Grill cook
-E9     : 10:45 AM
+E9     : 11:15 AM
 A10    :   SERVICE
 A11    : 5
 B11    : Cook patties to ticket and requested doneness: 155 °F for 17 s unless the guest asks for less done and the menu has the consumer advisory (FDA 3-401.11, 3-603.11); kids' menu always cooked through
@@ -1239,7 +1239,7 @@ C17    : Kitchen
 D17    : Grill cook
 E17    : 10:30 PM
 A18    : 11
-B18    : Store leftover beef labeled: raw ground beef covered, date-marked, 41 °F or below, bottom shelf below ready-to-eat food (FDA 3-302.11)
+B18    : Store leftover beef labeled: raw ground beef covered, date-marked, 41 °F or below, below ready-to-eat food and above any raw chicken (FDA 3-302.11)
 C18    : Kitchen
 D18    : Grill cook
 E18    : 10:30 PM
@@ -1370,12 +1370,12 @@ D12    : Fry cook
 E12    : —
 A13    :   CLOSING
 A14    : 7
-B14    : Turn off and clean the fryer
+B14    : Turn off the fryer; clean the outside once the oil is filtered
 C14    : Kitchen
 D14    : Fry cook
 E14    : 10:30 PM
 A15    : 8
-B15    : Filter the oil as the fryer manufacturer says (many filter hot by design, others need to cool first); heat-resistant gloves, apron and goggles
+B15    : Filter the oil as the fryer manufacturer says (built-in filtration: with the oil still hot; portable filter: once it has cooled to what the manual allows); heat-resistant gloves, apron and goggles
 C15    : Kitchen
 D15    : Fry cook
 E15    : 10:30 PM
@@ -1556,7 +1556,7 @@ CF A5:G23 · expression  · fórmula=['$F5="✓"'] · texto=None
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 B2     : 05 · Burger Restaurant Cleaning Checklist, Inventory & Maintenance Schedule
 B4     : Quarterly, annual and freezer shelf life
-B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT out and an inspector may ask to see: pest control, hood and duct cleaning (NFPA 96), extinguishers and their hydrostatic test, hood fire suppression, gas, refrigeration, used-oil pickup, waste and containers, Legionella, water, insurance, POS / sales tax and thermometer calibration.
+B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT out and an inspector may ask to see: pest control, hood and duct cleaning (NFPA 96), extinguishers and their hydrostatic test, hood fire suppression, gas, refrigeration, used-oil pickup, waste, containers and grease trap, Legionella, water, insurance, POS / sales tax and thermometer calibration.
 B7     : ▸ Write the service report number in the green column and initial it once the company has been; the last task on the sheet is to log the date of the next visit.
 B8     : ▸ The monthly tab mixes your team's own checks (hood filters, a look at the extinguisher) with the ones for a technician (griddle thermostat, hood fan motor): they don't replace the contracted services in "Quarterly & Annual", they prepare for them.
 B9     : ▸ At the bottom of "Weekly FIFO Check" there's an editable table of freezer shelf life by food family: one rule for the whole freezer and you either toss good fries or serve rancid bacon.
@@ -1602,7 +1602,7 @@ D7     : 50
 E7     = =IF(B7="","",IF(B7<D7,"⚠️ REORDER","OK"))   → caché None
 A8     : Bacon
 C8     : lb
-D8     : 4
+D8     : 5
 E8     = =IF(B8="","",IF(B8<D8,"⚠️ REORDER","OK"))   → caché None
 A9     : Breaded / crispy chicken
 C9     : ea
@@ -1622,7 +1622,7 @@ C13    : ea
 D13    : 20
 E13    = =IF(B13="","",IF(B13<D13,"⚠️ REORDER","OK"))   → caché None
 A14    :   CHEESES
-A15    : Cheddar slices
+A15    : American / cheddar slices
 C15    : ea
 D15    : 50
 E15    = =IF(B15="","",IF(B15<D15,"⚠️ REORDER","OK"))   → caché None
@@ -1632,7 +1632,7 @@ D16    : 20
 E16    = =IF(B16="","",IF(B16<D16,"⚠️ REORDER","OK"))   → caché None
 A17    : Blue cheese
 C17    : oz
-D17    : 11
+D17    : 12
 E17    = =IF(B17="","",IF(B17<D17,"⚠️ REORDER","OK"))   → caché None
 A18    : Swiss
 C18    : ea
@@ -1657,32 +1657,32 @@ D23    : 1
 E23    = =IF(B23="","",IF(B23<D23,"⚠️ REORDER","OK"))   → caché None
 A24    : Jalapenos
 C24    : oz
-D24    : 11
+D24    : 12
 E24    = =IF(B24="","",IF(B24<D24,"⚠️ REORDER","OK"))   → caché None
 A25    : House burger sauce
 C25    : qt
 D25    : 1
 E25    = =IF(B25="","",IF(B25<D25,"⚠️ REORDER","OK"))   → caché None
 A26    : BBQ sauce
-C26    : qt
-D26    : 0.5
+C26    : pt
+D26    : 1
 E26    = =IF(B26="","",IF(B26<D26,"⚠️ REORDER","OK"))   → caché None
 A27    : Mustard
-C27    : qt
-D27    : 0.5
+C27    : pt
+D27    : 1
 E27    = =IF(B27="","",IF(B27<D27,"⚠️ REORDER","OK"))   → caché None
 A28    : Mayo
-C28    : qt
-D28    : 0.5
+C28    : pt
+D28    : 1
 E28    = =IF(B28="","",IF(B28<D28,"⚠️ REORDER","OK"))   → caché None
 A29    :   FRIES & SIDES
 A30    : Fresh / frozen fries
 C30    : lb
-D30    : 22
+D30    : 20
 E30    = =IF(B30="","",IF(B30<D30,"⚠️ REORDER","OK"))   → caché None
 A31    : Onion rings
 C31    : lb
-D31    : 4
+D31    : 5
 E31    = =IF(B31="","",IF(B31<D31,"⚠️ REORDER","OK"))   → caché None
 A32    : Chicken nuggets
 C32    : ea
@@ -1724,7 +1724,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   KITCHEN
 A6     : 1
-B6     : Take apart and deep-clean the flat-top griddle
+B6     : Deep-clean the flat-top griddle: grease trough and drawer, splash guards, front and sides (griddle brick or screen + griddle cleaner), then re-season
 C6     : Kitchen
 D6     : Dishwasher / prep
 E6     : Monday
@@ -1889,7 +1889,7 @@ C6     : Kitchen
 D6     : Technician
 E6     : Monthly
 A7     : 2
-B7     : Full fryer oil change
+B7     : Fryer boil-out: drain, clean with fryer cleaner and refill with fresh oil, per the manufacturer (the oil itself is changed whenever the TPM tester says, not once a month)
 C7     : Kitchen
 D7     : Manager
 E7     : Monthly
@@ -1954,9 +1954,9 @@ B7     : Hood and duct cleaning by a certified contractor (NFPA 96): quarterly i
 D7     : Hood cleaning co.
 E7     : Quarterly
 A8     : 3
-B8     : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hood fire suppression inspected every 6 months (NFPA 96)
+B8     : Hood fire suppression inspected every 6 months (NFPA 96) and annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157)
 D8     : Fire safety co.
-E8     : Annual
+E8     : Semiannual
 A9     : 4
 B9     : Extinguisher hydrostatic test by the fire protection company: Class K (wet chemical) and CO2 units every 5 years, dry chemical as its label says (OSHA 1910.157(f); NFPA 10)
 D9     : Fire safety co.
@@ -1971,11 +1971,11 @@ D11    : Refrigeration tech
 E11    : Annual
 A12    :   WATER, WASTE & USED OIL
 A13    : 7
-B13    : Used fryer oil pickup by a licensed recycler: file the pickup receipts (with fryers running all day, it is one of the biggest waste streams in a burger joint)
+B13    : Used fryer oil: pickups by a licensed recycler as often as your volume needs; every quarter, check the receipts are on file and the outdoor container is closed and not leaking (with fryers running all day, it is one of the biggest waste streams in a burger joint)
 D13    : Oil recycler
 E13    : Quarterly
 A14    : 8
-B14    : Review the waste and recycling hauler contract and local recycling rules: takeout and delivery multiply the cardboard and packaging
+B14    : Review the waste and recycling hauler contract and local recycling rules (takeout and delivery multiply the cardboard and packaging), and keep the grease trap pumping manifests, as often as your local FOG rules require
 D14    : Manager
 E14    : Quarterly
 A15    : 9
@@ -1996,7 +1996,7 @@ B19    : POS check: software updates, sales tax rates and settings, user permiss
 D19    : Manager
 E19    : Annual
 A20    : 13
-B20    : Calibrate the thermometers and the griddle probe against a known standard (ice-point method, 32 °F): the core temp of ground beef depends on that probe
+B20    : Once a year, have the griddle thermostats and any built-in probes checked against a known standard; the probe thermometers get a daily ice-point check (32 °F) at the grill station — the core temp of ground beef depends on them
 D20    : Technician
 E20    : Annual
 A21    : 14
@@ -2220,7 +2220,7 @@ A13    : 7
 B13    : Holiday burger: festive ingredients
 C13    : Office
 D13    : Manager
-E13    : 15 days out
+E13    : 2 weeks out
 A14    : 8
 B14    : Extra stock for the days your suppliers don't deliver (especially Christmas Day and New Year's Day)
 C14    : Office
@@ -3381,7 +3381,7 @@ B2     : BONUS: Burger Joint Holiday & Busy Days Calendar (US)
 B4     : How to use this template
 B6     : ▸ Check the key restaurant dates month by month
 B7     : ▸ Plan ahead: special menus, decorations, stock
-B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), bank holidays and Boxing Day, in the free rows
+B8     : ▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), National Burger Day (last Thursday in August), bank holidays and Boxing Day, in the free rows
 B10    : Works with
 B12    : ▸ 08-burger-restaurant-opening-closing-checklist.xlsx — checklist for the WHOLE RESTAURANT: it is the BACKBONE of the day.
 B13    : ▸ 01-burger-joint-opening-closing-checklists.xlsx — the same day with DETAIL by area (kitchen, FOH).

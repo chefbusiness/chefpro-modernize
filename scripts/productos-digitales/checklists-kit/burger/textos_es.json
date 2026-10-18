@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-18T02:17:26Z",
+  "generado": "2026-10-18T02:41:02Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-hamburgueseria",
-  "commit": "ac37ad56",
+  "commit": "41b0b0c4",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 869,
-  "n_traducir": 591,
-  "n_adaptar": 93,
-  "n_palabras_subagentes": 4350,
+  "n_traducir": 590,
+  "n_adaptar": 92,
+  "n_palabras_subagentes": 4340,
   "n_apariciones": 2423,
   "grupos": [
    {
@@ -92,15 +92,15 @@
      "B01",
      "B02"
     ],
-    "n_cadenas": 316,
-    "n_adaptar": 41,
-    "n_palabras": 2405
+    "n_cadenas": 315,
+    "n_adaptar": 40,
+    "n_palabras": 2395
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 76 mapa-glosario, 36 mapa-hoja, 166 regenerar",
-    "n_cadenas": 278,
-    "n_palabras": 1129
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 75 mapa-glosario, 36 mapa-hoja, 168 regenerar",
+    "n_cadenas": 279,
+    "n_palabras": 1139
    }
   ],
   "excluidas": {
@@ -3519,7 +3519,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
-   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo para consumir (FDA Food Code 3-302.11)",
+   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos, por debajo de lo listo para consumir y por encima de cualquier pollo crudo (ronda 1 m3; FDA Food Code 3-302.11)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer"
@@ -3695,7 +3695,7 @@
    "n_apariciones": 1,
    "palabras": 26,
    "con_cifra": true,
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "adaptar": "Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -4796,7 +4796,7 @@
    "n_apariciones": 1,
    "palabras": 41,
    "con_cifra": true,
-   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; los inserts, en la mesa refrigerada de la make line a 41 °F o menos (FDA Food Code 3-501.16)",
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; los inserts, en la mesa refrigerada de la make line a 41 °F o menos (FDA Food Code 3-501.16), con la coletilla «— log reading: ____ °F» (ronda 1 m4)",
    "pistas": [
     "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
    ],
@@ -5382,7 +5382,7 @@
    "n_apariciones": 1,
    "palabras": 19,
    "con_cifra": true,
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "adaptar": "Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -7347,7 +7347,7 @@
    "n_apariciones": 1,
    "palabras": 4,
    "con_cifra": false,
-   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo para consumir (FDA Food Code 3-302.11)",
+   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos, por debajo de lo listo para consumir y por encima de cualquier pollo crudo (ronda 1 m3; FDA Food Code 3-302.11)",
    "sha1": "494a95bbf9e8",
    "donde": [
     {
@@ -7758,7 +7758,7 @@
    "n_apariciones": 1,
    "palabras": 2,
    "con_cifra": false,
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "adaptar": "Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
    "sha1": "767fe7cb6780",
    "donde": [
     {
@@ -8373,7 +8373,7 @@
      "en": "Quarterly & Annual"
     }
    ],
-   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y su prueba hidrostática, extinción de la campana, gas, frío, aceite usado, residuos y envases, legionela, agua, seguros, POS / sales tax y calibración de termómetros. Sin DDD, BIE, Verifactu ni facturación española",
+   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y su prueba hidrostática, extinción de la campana, gas, frío, aceite usado, residuos, envases y trampa de grasa, legionela, agua, seguros, POS / sales tax y calibración de termómetros. Sin DDD, BIE, Verifactu ni facturación española",
    "pistas": [
     "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
    ],
@@ -10632,7 +10632,7 @@
    "n_apariciones": 1,
    "palabras": 23,
    "con_cifra": false,
-   "adaptar": "Calibración por el método del punto de hielo (32 °F); la sonda de la plancha, según su fabricante",
+   "adaptar": "Calibración por el método del punto de hielo (32 °F); ronda 1 m5: una vez al año, los termostatos de la plancha y las sondas integradas contra un patrón; los termómetros de sonda, ice-point diario en la estación de plancha",
    "pistas": [
     "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
     "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
@@ -14879,27 +14879,6 @@
      "f": "B02",
      "h": "Instrucciones",
      "c": "B7",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0797",
-   "es": "▸ Añade las fechas relevantes de tu zona (fiestas locales, ferias)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 10,
-   "con_cifra": false,
-   "adaptar": "Añade la nota UK: Mothering Sunday (marzo), bank holidays y Boxing Day en las filas libres",
-   "sha1": "b4070c3e34a6",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Instrucciones",
-     "c": "B8",
      "t": "celda",
      "tr": "traducir"
     }
@@ -25784,6 +25763,10 @@
    "es": "L",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "qt",
    "n_ficheros": 1,
    "n_apariciones": 4,
@@ -25804,24 +25787,24 @@
      "h": "Inventario Diario",
      "c": "C26",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
      "h": "Inventario Diario",
      "c": "C27",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
      "h": "Inventario Diario",
      "c": "C28",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -26208,8 +26191,8 @@
      "h": "Trimestral y Anual",
      "c": "E8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "05",
@@ -26266,7 +26249,7 @@
    "es": "Revisión de extintores y BIE por empresa mantenedora (etiqueta y acta de revisión)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hood fire suppression inspected every 6 months (NFPA 96)",
+   "en_por_celda": "Hood fire suppression inspected every 6 months (NFPA 96) and annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 13,
@@ -26484,7 +26467,7 @@
    "es": "Retirada del aceite usado de fritura por gestor autorizado y archivo de los documentos de entrega: en una hamburguesería es el residuo que más volumen genera",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Used fryer oil pickup by a licensed recycler: file the pickup receipts (with fryers running all day, it is one of the biggest waste streams in a burger joint)",
+   "en_por_celda": "Used fryer oil: pickups by a licensed recycler as often as your volume needs; every quarter, check the receipts are on file and the outdoor container is closed and not leaking (with fryers running all day, it is one of the biggest waste streams in a burger joint)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 26,
@@ -26528,7 +26511,7 @@
    "es": "Revisar el contrato de residuos y la retirada de cartón y envases: el delivery multiplica el volumen de envase",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Review the waste and recycling hauler contract and local recycling rules: takeout and delivery multiply the cardboard and packaging",
+   "en_por_celda": "Review the waste and recycling hauler contract and local recycling rules (takeout and delivery multiply the cardboard and packaging), and keep the grease trap pumping manifests, as often as your local FOG rules require",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 19,
@@ -26966,8 +26949,8 @@
    "id": "c0547",
    "es": "15 días antes",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "15 days out",
+   "tratamiento": "regenerar",
+   "en_por_celda": "2 weeks out",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -26979,8 +26962,8 @@
      "h": "Navidad",
      "c": "E13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30048,6 +30031,28 @@
      "t": "celda",
      "tr": "regenerar",
      "det": "D5 título interior (mapas.titulo_interior)"
+    }
+   ]
+  },
+  {
+   "id": "c0797",
+   "es": "▸ Añade las fechas relevantes de tu zona (fiestas locales, ferias)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "▸ Add the dates that matter in your area (local holidays, fairs). UK note: Mothering Sunday (March), National Burger Day (last Thursday in August), bank holidays and Boxing Day, in the free rows",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 10,
+   "con_cifra": false,
+   "sha1": "b4070c3e34a6",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Instrucciones",
+     "c": "B8",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },

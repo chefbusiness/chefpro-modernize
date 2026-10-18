@@ -30,6 +30,24 @@ por `mapas_burger.py` (212 `POR_CELDA`, 28 `VALORES_EN`). Decisiones del traduct
   el ES y la pizzería) y «Denomination» del 09 (maqueta del base). Ninguna cadena se recortó.
 - `censo-entregables.py` (`PRODUCTOS_LETTER`) y `postprocess-transversal.py` (`EXCLUIDOS`): + el slug (F1).
 
+## Ronda 1 de la revisión (`revision/REVISION-F2.md`: 0 bloqueantes · 2 MAYORES · 12 menores)
+
+Aplicadas las 14 con la corrección EN del informe, más la duda D2 (aprobada); el resto de dudas, no (foie gras «where
+legal»; lo que pide filas nuevas, a la v2.1). Tabla «aplicado / no aplicado» al final del informe.
+- `G1.json`: 19 cadenas (M1 boil-out ×2, M2 queso americano ×2, m2 freidora ×6, m3 ×2, m4, m5 ×2, m6, m7 c0355, m10 ×2).
+- `POR_CELDA` (+7): 06 E13 «2 weeks out», 04 Grill Cook E9 11:15 AM, 05 E8 «Semiannual», B02 B8 (nota UK con el
+  National Burger Day; sale de `_HEREDA_ADAPTAR` y de la memoria: heredadas 274), C26:C28 «pt»; reescritas 05 B8, B13 y
+  B14 (supresión delante, aceite usado por volumen, trampa de grasa).
+- `REGLAS_US`: + `utensilios_4h` (§4-602.11(C)); `aceite` + boil-out; `dias_fuertes` + UK; `inventario` + redondeo.
+- `VALORES_EN` (D2): bacon 5 lb, blue cheese y jalapeños 12 oz, patatas 20 lb, aros 5 lb, BBQ / mostaza / mayonesa 1 pt;
+  números, el semáforo sigue; criterio en `SPEC.md` (D-BUR Inventario). Errata ES del aceite mensual en `SPEC.md` §5.
+- ADAPTAR a juego (`_ACEITE`, `_CARNE_GUARDAR`, make line, 05 B6 y B20) para el próximo traductor.
+- Landing (`astro-site/src/data/productos-en/tareas/burger-joint-checklist-templates.ts`): 4 frases a juego (picada
+  sobre el pollo, aceite cada noche + TPM + boil-out, plancha sin «taken apart», «a fryer boil-out»).
+- Resultado: VERDE 8/0, autotest 18/18, censo 0, no-latinos 0, idempotencia 0, 0 desbordes, las mismas 4 «cortadas» de
+  maqueta que los hermanos; 5 hermanos con 0 diferencias, gates VERDE y autotest 16 / 16 / 18 / 20 / 18; xlsx copiados
+  al Mac con sha256 11/11 iguales; `revision/dump_en.txt` regenerado (3.512 líneas). Sin código compartido nuevo.
+
 ## Comandos (en `scripts/productos-digitales/checklists-kit/`)
 
     python3 extraer_textos.py --kit burger && python3 burger/mapas_burger.py && python3 heredar.py --kit burger
@@ -52,7 +70,4 @@ por `mapas_burger.py` (212 `POR_CELDA`, 28 `VALORES_EN`). Decisiones del traduct
 | Copia al Mac | `scp` de los 11 xlsx a `astro-site/public/dl/burger-joint-checklist-templates/`: sha256 11/11 iguales |
 | Volcados | `revision/dump_en.txt` y `dump_es.txt`, 3.512 líneas cada uno |
 
-Siguiente: UNA revisión adversarial sobre los volcados (lente de un burger joint manager US + lente técnica): carne
-picada (155 °F / 17 s, aviso al consumidor, menú infantil, TCS crudo), freidora (aceite según el fabricante, TPM,
-pollo a 165 °F), make line y date marking, el orden de la apertura de cocina del 01 y del cierre del 08, alérgenos del
-pan, calendario US y los mínimos del inventario en lb / oz.
+Siguiente: ronda 2 solo si la pide el orquestador (máximo 2) y cierre.

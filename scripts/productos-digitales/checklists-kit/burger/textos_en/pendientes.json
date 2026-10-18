@@ -10,13 +10,13 @@
    "contexto": 3,
    "corregida": 3
   },
-  "n_heredadas": 275,
+  "n_heredadas": 274,
   "heredadas_por_via": {
-   "exacta": 270,
+   "exacta": 269,
    "sufijo": 5
   },
   "heredadas_por_fuente": {
-   "base": 192,
+   "base": 191,
    "pizza": 52,
    "cafe": 28,
    "bar": 3
@@ -486,7 +486,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer"
    ],
-   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo para consumir (FDA Food Code 3-302.11)",
+   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos, por debajo de lo listo para consumir y por encima de cualquier pollo crudo (ronda 1 m3; FDA Food Code 3-302.11)",
    "motivo": "nueva"
   },
   {
@@ -572,7 +572,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "adaptar": "Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
    "motivo": "nueva"
   },
   {
@@ -1004,7 +1004,7 @@
    "pistas": [
     "línea de montaje → make line; inserts → inserts; biberones → squeeze bottles; palillo / flag → frill pick (burger flag)"
    ],
-   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; los inserts, en la mesa refrigerada de la make line a 41 °F o menos (FDA Food Code 3-501.16)",
+   "adaptar": "FDA Food Code 3-302.15: lavar bajo agua potable corriente; si se usa un producto de lavado o cloro, solo uno apto para frutas y verduras, a la dosis de la etiqueta, y ACLARAR. Sin «70 ppm, 5 min» ni «lejía»; los inserts, en la mesa refrigerada de la make line a 41 °F o menos (FDA Food Code 3-501.16), con la coletilla «— log reading: ____ °F» (ronda 1 m4)",
    "motivo": "nueva"
   },
   {
@@ -1302,7 +1302,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "adaptar": "Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
    "motivo": "nueva"
   },
   {
@@ -1968,7 +1968,7 @@
    "donde": [
     "04 · Parrillero · B18"
    ],
-   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos y en la balda de abajo, por debajo de lo listo para consumir (FDA Food Code 3-302.11)",
+   "adaptar": "Carne picada cruda: tapada, con fecha, a 41 °F o menos, por debajo de lo listo para consumir y por encima de cualquier pollo crudo (ronda 1 m3; FDA Food Code 3-302.11)",
    "motivo": "nueva"
   },
   {
@@ -2199,7 +2199,7 @@
    "donde": [
     "04 · Freidurista · B15"
    ],
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
+   "adaptar": "Ronda 1 m2: filtrar cada noche como diga el fabricante de la freidora (el filtrado integrado, con el aceite aún caliente; el portátil, cuando se haya enfriado a lo que permita el manual) y cambiarlo cuando lo diga el medidor de TPM, con guantes resistentes al calor, delantal y gafas. Sin cifra de temperatura del kit",
    "motivo": "nueva"
   },
   {
@@ -2384,7 +2384,7 @@
    "pistas": [
     "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas"
    ],
-   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y su prueba hidrostática, extinción de la campana, gas, frío, aceite usado, residuos y envases, legionela, agua, seguros, POS / sales tax y calibración de termómetros. Sin DDD, BIE, Verifactu ni facturación española",
+   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y su prueba hidrostática, extinción de la campana, gas, frío, aceite usado, residuos, envases y trampa de grasa, legionela, agua, seguros, POS / sales tax y calibración de termómetros. Sin DDD, BIE, Verifactu ni facturación española",
    "cita_rotulos": [
     {
      "es": "Trimestral y Anual",
@@ -3237,7 +3237,7 @@
     "plancha → flat-top griddle (the grill); prensa smash → smash press (burger press); rasqueta → griddle scraper; espátula → spatula (turner)",
     "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
    ],
-   "adaptar": "Calibración por el método del punto de hielo (32 °F); la sonda de la plancha, según su fabricante",
+   "adaptar": "Calibración por el método del punto de hielo (32 °F); ronda 1 m5: una vez al año, los termostatos de la plancha y las sondas integradas contra un patrón; los termómetros de sonda, ice-point diario en la estación de plancha",
    "motivo": "nueva"
   },
   {
