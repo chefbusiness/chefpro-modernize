@@ -1412,6 +1412,33 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     },
     lang: 'en',
   },
+  // International store (EN, 2026-10-18): twin of kit-tareas-hamburgueseria, independent product.
+  'burger-joint-checklist-templates': {
+    id: 'burger-joint-checklist-templates',
+    name: 'Burger Joint Checklists Kit Pro',
+    priceLabel: '$19',
+    accessPath: '/en/digital-products/burger-joint-checklist-templates/access',
+    emailSubject: 'Your access to Burger Joint Checklists Kit Pro',
+    emailTitle: 'Thank you for your purchase!',
+    emailBodyPostPurchase: 'Your access to <strong>Burger Joint Checklists Kit Pro</strong> is ready. Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    emailCta: 'Access my templates',
+    emailTitleResend: 'Access your Burger Joint Checklists Kit Pro',
+    emailBodyResend: 'Click the button to open your dashboard and download the 9 Excel checklist templates, the 2 bonus templates and the Equivalents Guide:',
+    files: {
+      'apertura-cierre': '/dl/burger-joint-checklist-templates/01-burger-joint-opening-closing-checklists.xlsx',
+      'plancha-grill': '/dl/burger-joint-checklist-templates/02-burger-kitchen-station-checklists.xlsx',
+      'manager': '/dl/burger-joint-checklist-templates/03-burger-restaurant-manager-checklist.xlsx',
+      'perfiles': '/dl/burger-joint-checklist-templates/04-burger-shop-duties-by-role.xlsx',
+      'periodicas': '/dl/burger-joint-checklist-templates/05-burger-restaurant-cleaning-checklist-inventory-maintenance.xlsx',
+      'eventos': '/dl/burger-joint-checklist-templates/06-burger-joint-event-checklists.xlsx',
+      'personalizable': '/dl/burger-joint-checklist-templates/07-blank-burger-shop-checklist-template.xlsx',
+      'apertura-negocio': '/dl/burger-joint-checklist-templates/08-burger-restaurant-opening-closing-checklist.xlsx',
+      'apertura-caja': '/dl/burger-joint-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+      'bonus-briefing': '/dl/burger-joint-checklist-templates/BONUS-01-burger-joint-pre-shift-meeting-template.xlsx',
+      'bonus-calendario': '/dl/burger-joint-checklist-templates/BONUS-02-burger-joint-holiday-calendar.xlsx',
+    },
+    lang: 'en',
+  },
 
   'guia-dark-kitchen': {
     id: 'guia-dark-kitchen',

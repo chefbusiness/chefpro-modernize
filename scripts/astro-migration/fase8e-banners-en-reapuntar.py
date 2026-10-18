@@ -49,6 +49,8 @@ TEMAS = {
     'catering-checklist-templates': ['catering', 'caterer', 'banquet', 'beo', 'off-site', 'off-premise', 'chafing', 'wedding', 'load-in', 'event setup'],
     # Pizza Shop Checklists Kit Pro (18-oct-2026): checklists de pizzería, horno de leña, masa, make line y reparto.
     'pizza-shop-checklist-templates': ['pizza', 'pizzeria', 'pizzaiolo', 'neapolitan', 'wood-fired', 'dough ball', 'make line', 'pizza oven', 'delivery driver'],
+    # Burger Joint Checklists Kit Pro (18-oct-2026): checklists de hamburguesería, plancha, smash burgers, freidora y make line.
+    'burger-joint-checklist-templates': ['burger', 'hamburger', 'cheeseburger', 'smash burger', 'patty', 'patties', 'griddle', 'flat-top', 'fry station', 'fryer oil'],
 }
 
 

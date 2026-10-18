@@ -887,6 +887,27 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       },
     ],
   },
+  'burger-joint-checklist-templates': {
+    version: '2.0',
+    updated: '2026-10-18',
+    entries: [
+      {
+        version: '2.0',
+        date: '2026-10-18',
+        title: 'First English edition',
+        changes: [
+          'First English edition of the kit, built from content version 2.0: 9 checklist templates plus 2 bonuses with 346 burger joint tasks already written, adapted to the US with notes for the UK.',
+          'US burger joint roles and areas (grill cook, line cook, fry cook, shift manager, server, dishwasher / prep; grill station, make line, fry station, front of house, patio, delivery and takeout), due-by times on a 12-hour clock and initials on every task; the counter on each checklist leaves out the tasks marked N/A.',
+          'The flat-top griddle at about 400–450 °F and the fryer oil at 350–355 °F, smash burgers from a 3–3.5 oz ball, and the kitchen opening in a safe order: the hood on and drawing before the gas, the griddle and the fryers; the closing order fixed so the griddles are cleaned and the fryer oil filtered before the hood goes off, and the alarm and lock-up come last.',
+          "Food safety under the FDA Food Code: ground beef cooked to 155 °F for 17 seconds and checked with a probe, undercooked only on request with a consumer advisory and never for the kids' menu, chicken to 165 °F; raw ground beef held at 41 °F or below until it hits the griddle and stored below ready-to-eat food, hands washed and gloves changed between raw meat and buns or toppings, thawing in the walk-in; the make line, cut toppings and coleslaw at 41 °F or below and date-marked for up to 7 days, cooked bacon cooled by the two-stage rule or reheated to 165 °F, sanitizer checked with test strips, and the 9 major allergens (the bun usually carries wheat, milk, egg, soy and sesame; the UK's 14 noted).",
+          'Fryer oil checked with a TPM tester and filtered or changed the way the fryer maker says, with no blanket temperature; delivery with third-party apps (DoorDash, Uber Eats, Grubhub).',
+          'A Quarterly & Annual sheet for a US burger joint: pest control, hood and duct cleaning under NFPA 96 (quarterly for a high-volume or charbroil kitchen, semiannual if moderate), fire extinguishers (OSHA) with their hydrostatic test and hood suppression, gas, refrigeration by an EPA 608 technician (make line included), used fryer oil pickup by a licensed recycler, water, insurance (liquor liability if you serve alcohol), the POS with sales tax and the delivery app integrations, and thermometer calibration.',
+          "Cash drawer count in US bills and coins, starting bank and over/short against the POS Z report; a daily inventory of 28 products in lb, oz, qt and each with par levels; a burger joint calendar with 22 US dates, from Super Bowl Sunday, March Madness and National Burger Month to National Cheeseburger Day, Thanksgiving and New Year's Eve, plus 5 rows for your own and a UK note. Beer only with a license, 21+ with ID.",
+          'Every sheet set up to print on US Letter paper, plus the US · UK · Canada · Australia Equivalents Guide.',
+        ],
+      },
+    ],
+  },
 
   'kit-plan-financiero': {
     version: '2.0',

@@ -7,6 +7,7 @@ export const PRODUCT_PRICES: Record<string, { eur?: number; usd?: number }> = {
   'bakery-business-plan': { usd: 39 },
   'bar-business-plan': { usd: 39 },
   'bar-checklist-templates': { usd: 19 },
+  'burger-joint-checklist-templates': { usd: 19 },
   'catering-business-plan': { usd: 39 },
   'catering-checklist-templates': { usd: 19 },
   'coffee-shop-business-plan': { usd: 39 },

@@ -708,6 +708,14 @@ def capa_ajuste(L, wes):
                 if alto > (actual or ALTO_DEFECTO):
                     ws.row_dimensions[cel.row].height = alto
                     n['altos_subidos'] += 1
+    # vertical (hamburguesería): filas que el ES ya traía cortadas con ajuste (l_en == l_es: maqueta heredada) y que la
+    # EN sube a mano; {(libro, hoja ES, fila): alto}. Sin la constante (base y demás hermanos), no hace nada
+    for (corto, h_es, fila), alto in getattr(mapas, 'ALTOS_FILA', {}).items():
+        if corto == L.corto:
+            ws = L.wb[mapas.HOJAS[h_es]]
+            if alto > (ws.row_dimensions[fila].height or ALTO_DEFECTO):
+                ws.row_dimensions[fila].height = alto
+                n['altos_subidos'] += 1
     L.rep.update(n)
 
 

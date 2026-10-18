@@ -179,11 +179,14 @@ const RAW: Record<string, ProductCatalogRaw> = {
     id: 'kit-tareas-hamburgueseria',
     url: '/kit-tareas-hamburgueseria',
     price: '€12',
-    name: { es: 'Tareas: Hamburguesería', en: 'Tasks: Burger Joint' },
+    name: { es: 'Tareas: Hamburguesería', en: 'Burger Joint Checklists Kit Pro' },
     description: {
       es: 'Listas de prep, montaje, servicio y delivery.',
-      en: 'Prep, build, service, and delivery checklists.',
+      en: 'Burger joint checklists for opening and closing, the grill and smash burgers, the make line, the fry station, delivery and takeout, the manager, duties by role, cleaning and the cash drawer: 346 tasks already written.',
     },
+    // Tienda EN (18-oct-2026): producto propio, `burger-joint-checklist-templates`, $19 USD.
+    urlByLang: { en: '/en/digital-products/burger-joint-checklist-templates' },
+    priceByLang: { en: '$19' },
   },
   'kit-tareas-dark-kitchen': {
     id: 'kit-tareas-dark-kitchen',
