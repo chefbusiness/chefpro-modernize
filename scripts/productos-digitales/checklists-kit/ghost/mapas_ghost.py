@@ -168,7 +168,7 @@ _GLOSARIO_GHOST = OrderedDict([
     # cuándo (E): «2 weeks out», como el bar
     ('Viernes AM', 'Friday AM'), ('Viernes 17:00', 'Friday 5:00 PM'), ('Día antes', 'Day before'),
     ('2 días antes', '2 days out'), ('3 días antes', '3 days out'), ('1 sem antes', '1 week out'),
-    ('2 sem antes', '2 weeks out'), ('Día 1-7', 'Days 1–7'), ('Día 7', 'Day 7'), ('Dic', 'Dec'),
+    ('2 sem antes', '2 weeks out'), ('15 días antes', '2 weeks out'), ('Día 1-7', 'Days 1–7'), ('Día 7', 'Day 7'), ('Dic', 'Dec'),
     ('31 Dic', 'Dec 31'), ('Diario', 'Daily'),
     # tabla de congelación del 05 (el resto, del base)
     ('3-6 meses', '3–6 months'), ('1 mes', '1 month'), ('No congelar', 'Do not freeze'),
@@ -218,9 +218,9 @@ CALENDARIO = OrderedDict([
           'Sustituye al 1 de mayo (el Labor Day de EE. UU. va en septiembre, fila 19). Tareas = las del Día de la Madre '
           'del ES (fila 14): menú especial para llevar, packaging cuidado y refuerzo del pico de mediodía')),
     (14, ('May', 'Memorial Day (last Monday)', '1 month',
-          'Sustituye al Día de la Madre (pasa a la fila 13). Tareas = las de «Inicio temporada alta» del ES (fila 15): '
-          'empieza el verano, refuerzo de plantilla y stock de verano, revisar los tiempos de preparación del pico; '
-          'decidir el horario del festivo y publicarlo en cada app')),
+          'Sustituye al Día de la Madre (pasa a la fila 13). Empieza el verano (ronda 1 M3: en delivery NO es temporada '
+          'alta): decidir el horario del festivo y publicarlo en cada app, montar la carta de verano y planificar la '
+          'plantilla para las semanas más flojas del verano')),
     (15, ('May–June', 'Graduation season', '1 month',
           'Sustituye a «Inicio temporada alta» (pasa a la fila 14). Tareas = las de las comuniones del ES (fila 12): '
           'bandejas y menús de grupo para recoger o entregar (graduation parties), precio por persona y packaging '
@@ -232,9 +232,11 @@ CALENDARIO = OrderedDict([
           'Sustituye a la fila de temporada alta (sus tareas pasan a la fila 18). Tareas: decidir el horario (muchos '
           'cierran o abren solo de día) y publicarlo en cada app; pedidos grandes para las fiestas (party orders) con '
           'hora de entrega')),
-    (18, ('July–August', 'Summer peak season', 'Ongoing',
-          'Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Tareas = las de «Temporada alta» de la '
-          'fila 17 del ES: personal extra, horario ampliado y menú de verano por marca')),
+    (18, ('July–August', 'Summer slowdown (warm weather, vacations, school break)', 'Ongoing',
+          'Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Ronda 1 M3: en verano el delivery suele '
+          'BAJAR (calor, vacaciones, sin colegio; como la fila 11 y el 10-K de DoorDash): recortar producción y turnos, '
+          'mantener el horario, combos de mediodía y platos de calor (bowls, ensaladas, bebidas frías) y preparar la '
+          'carta de otoño; junto a playas, zonas turísticas o eventos de verano puede ir al revés')),
     (19, ('September', 'Labor Day (1st Monday) + football season', '2 weeks',
           'Sustituye a la vuelta al cole. Tareas = las del ES (menú de otoño por marca y promo de mediodía para '
           'oficinas, sin el calco «vuelta a la rutina»), más combos para el fútbol americano (jueves, domingo y lunes '
@@ -277,13 +279,14 @@ POR_CELDA.update([
                                      '(the green ones) are unlocked. The Daily Inventory sheet is left unprotected so '
                                      "you can add products: don't type over the Status column."),
     # 05 · Trimestral y Anual: servicios contratados US de una cocina multi-marca que cocina todo el día (NFPA 96)
-    (_T + ('B7',), 'Hood and duct cleaning by a certified contractor (NFPA 96): quarterly if high volume (cooking all '
-                   'day, wok or charbroil), semiannual if moderate'),
+    (_T + ('B7',), 'Hood and duct cleaning by a certified contractor (NFPA 96): quarterly if high volume (24-hour '
+                   'cooking, charbroiling or wok), semiannual if moderate — a multi-brand kitchen cooking from morning to '
+                   'night often goes quarterly: your hood contractor and fire marshal decide'),
     (_T + ('D7',), 'Hood cleaning co.'), (_T + ('E7',), 'Quarterly'),
-    (_T + ('B8',), 'Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA '
-                   '1910.157); hood fire suppression inspected every 6 months (NFPA 96); hydrostatic tests as the '
-                   'label says (OSHA 1910.157(f))'),
-    (_T + ('D8',), 'Fire safety co.'),
+    (_T + ('B8',), 'Hood fire suppression inspected every 6 months (NFPA 96) and annual extinguisher maintenance by a '
+                   'licensed fire protection company: new tag and record (OSHA 1910.157); hydrostatic tests as the label '
+                   'says (OSHA 1910.157(f))'),
+    (_T + ('D8',), 'Fire safety co.'), (_T + ('E8',), 'Semiannual'),
     (_T + ('B9',), 'Gas lines and appliance connections (griddle, range, oven, fryer) checked by a licensed pro, as '
                    'often as your local code requires'),
     (_T + ('D9',), 'Licensed plumber'), (_T + ('E9',), 'Annual'),
@@ -294,12 +297,16 @@ POR_CELDA.update([
     (_T + ('B12',), 'Refrigeration service by an EPA 608-certified tech: walk-in, reach-ins, prep-table coolers and the '
                     'blast chiller if you have one — coils, gaskets and refrigerant leak check'),
     (_T + ('D12',), 'Refrigeration tech'),
-    (_T + ('B13',), 'Used fryer oil pickup by a licensed recycler: file the pickup receipts'),
+    (_T + ('B13',), 'Used fryer oil: pickups by a licensed recycler as often as your volume needs; every quarter, check '
+                    'the receipts are on file and the outdoor container is closed and not leaking'),
     (_T + ('D13',), 'Oil recycler'),
-    (_T + ('B14',), 'Cardboard and plastic packaging pickup by your waste and recycling hauler: contract current and '
-                    'receipts filed (a ghost kitchen goes through far more packaging than a regular restaurant)'),
+    (_T + ('B14',), 'Review the cardboard and plastic recycling contract with your hauler (pickups usually run weekly or '
+                    'more: a ghost kitchen goes through far more packaging than a regular restaurant) and keep the grease '
+                    'trap pumping manifests, as often as your local FOG rules require'),
     (_T + ('D14',), 'Waste hauler'),
-    (_T + ('B15',), 'Calibrate thermometers and probes against a known reference (ice-point method, 32 °F)'),
+    (_T + ('B15',), 'Once a year, have the oven and griddle thermostats and any built-in probes checked against a known '
+                    'standard; the probe thermometers get an ice-point check (32 °F) at opening (Hot Station tab in 02, '
+                    'task #1) and after any drop'),
     (_T + ('A16',), '  INSURANCE, DELIVERY APPS & SALES TAX'),
     (_T + ('B17',), "Review insurance: general liability with products coverage (the food is eaten off-site), property "
                     "and workers' comp, plus renewal dates"),
@@ -337,6 +344,32 @@ _APERTURA_08 = [  # fila ES de origen, EN, zona EN, hora EN
 for _fila, (_o, _b, _c, _e) in enumerate(_APERTURA_08, 11):
     for _col, _v in (('B', _b), ('C', _c), ('E', _e)):
         POR_CELDA[_AN + ('%s%d' % (_col, _fila),)] = _v
+# 01 «Apertura Cocina» y 04 «Gestor Plataformas» (ronda 1 M4, la errata del 08 en otras dos hojas): las marcas se
+# encendían ANTES de comprobar la impresora, las cartas y los 86. Mismas filas (zona «Office», responsable el mismo en
+# todas); None = la celda conserva su EN (G1). Fila ES de origen en cada tupla (la comprueba cruzar_censo)
+_AC = ('01', 'Apertura Cocina')
+_TABLETS_01 = [  # fila, fila ES de origen, EN (None = la de su fila), hora EN
+    (31, 31, None, '10:00 AM'), (32, 32, None, '10:00 AM'),
+    (33, 36, 'Check the ticket printer works', '10:15 AM'), (34, 34, None, '10:15 AM'), (35, 35, None, '10:15 AM'),
+    (36, 37, '86 anything out of stock: pause that dish or brand in each app', '10:30 AM'),
+    (37, 33, 'Turn on all brands in DoorDash, Uber Eats and Grubhub — last, once the tablets, printer, menus and 86s are '
+             'checked', '10:30 AM'),
+]
+for _f, _o, _b, _e in _TABLETS_01:
+    if _b:
+        POR_CELDA[_AC + ('B%d' % _f,)] = _b
+    POR_CELDA[_AC + ('E%d' % _f,)] = _e
+_GP = ('04', 'Gestor Plataformas')
+_APPS_04 = [(7, 8, 'Check that menus are up to date'), (8, 10, '86 the dishes that are out of stock'), (9, 9, None),
+            (10, 7, 'Turn on all brands in DoorDash, Uber Eats and Grubhub')]
+for _f, _o, _b in _APPS_04:
+    if _b:
+        POR_CELDA[_GP + ('B%d' % _f,)] = _b
+# 08 E5 (ronda 1 m12): la alarma a la hora del 04 «Encargado Operaciones» B6 (08:45), antes que la campana del 01
+POR_CELDA[('08', 'Apertura del Negocio', 'E5')] = '8:45 AM'
+# 05 · Inventario (ronda 1 m11): los 0,5 L → 1 pt (como la hamburguesería)
+for _f in (24, 25, 27):
+    POR_CELDA[('05', 'Inventario Diario', 'C%d' % _f)] = 'pt'
 # 08 · Cierre (errata ES): desactivar las marcas y apagar las tablets iba DESPUÉS de la alarma y la llave, y las
 # persianas se cerraban antes de recoger la señalización y vaciar papeleras. Toda la secuencia, mismas 15 filas (E =
 # «Close»): pedidos y riders → marcas y tablets → empaquetado y caja → el local → alarma, puertas y llave al final
@@ -387,12 +420,13 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 # ==========================================================================
 # VALORES_EN: (libro, hoja ES, celda) → (valor ES tal cual, valor EN). Los mínimos del «Inventario Diario» van como
 # NÚMERO; los de kg, convertidos a lb y redondeados a un formato de compra de EE. UU. (cajas y bolsas de 5 / 10 lb,
-# lección D2 de la pizzería; ×1,6 como máximo); los de L (→ qt), uds (→ ea) y sets, con la misma cifra.
+# lección D2 de la pizzería; ×1,6 como máximo); los de L (→ qt), uds (→ ea) y sets, con la misma cifra, salvo los
+# 0,5 L → 1 pt (ronda 1 m11).
 # ==========================================================================
 _MINIMOS = [  # fila, ES, EN
     (6, '5', 10), (7, '3', 10), (8, '2', 5), (9, '1', 2), (11, '5', 10), (12, '3', 5), (13, '30', 30), (14, '1', 2),
     (16, '2', 5), (17, '2', 5), (18, '2', 5), (19, '8', 8), (20, '1', 2), (21, '0.5', 1),
-    (23, '1', 1), (24, '0.5', 0.5), (25, '0.5', 0.5), (26, '1', 1), (27, '0.5', 0.5), (28, '2', 2),
+    (23, '1', 1), (24, '0.5', 1), (25, '0.5', 1), (26, '1', 1), (27, '0.5', 1), (28, '2', 2),
     (30, '50', 50), (31, '50', 50), (32, '50', 50), (33, '50', 50), (35, '40', 40), (36, '40', 40), (37, '40', 40),
     (38, '40', 40), (40, '60', 60), (41, '100', 100), (42, '60', 60), (43, '20', 20),
 ]
@@ -406,6 +440,9 @@ _CAMARAS = _A[('01', 'Apertura Cocina', 'B18')]
 _TEMP_FRIO = _A[('01', 'Cierre Cocina', 'B12')]
 _LAVADO = _A[('02', 'Fríos', 'B6')]
 _DATE = _A[('01', 'Cierre Cocina', 'B6')]
+# ronda 1 m3: el máximo de la FDA, o el plazo más corto del propio kit
+_DATE_KIT = (_DATE + '; o menos donde la hoja «FIFO Semanal» del 05 fije un plazo más corto (salsas caseras 5 días, '
+             'proteínas 3, vegetales cortados 2)')
 _TIRA = 'sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)'
 _APPS = 'Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps); tablets → order tablets'
 _PRECINTO = ('Precinto de seguridad → tamper-evident seal (sticker o cinta que se rompe al abrir la bolsa): California '
@@ -419,10 +456,10 @@ _ALERGENOS_APP = ('El cliente no puede preguntar en un mostrador: los alérgenos
                   'lo exija a la comida de restaurante, pero las apps tienen el campo y algunos estados o ciudades '
                   'piden avisos propios (check local rules); en UK es obligatorio en la venta a distancia: antes de '
                   'comprar y al entregar')
-_ACEITE = ('Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado '
-           'pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y '
-           'gafas; el usado, al contenedor del reciclador (used cooking oil recycler). Sin cifra de temperatura del '
-           'kit')
+_ACEITE = ('Filtrar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para '
+           'el aceite caliente; otras piden dejarlo enfriar) y cambiarlo cuando lo diga el medidor de TPM (sin límite '
+           'federal; ronda 1 M1), con guantes resistentes al calor, delantal y gafas; el usado, al contenedor del '
+           'reciclador (used cooking oil recycler). Sin cifra de temperatura del kit')
 _ENFRIAR = ('Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de '
             'guardarlo tapado')
 _RECALENTAR = ('Lo hecho antes que se vaya a mantener en caliente se recalienta a 165 °F en 2 h como máximo (FDA Food '
@@ -430,16 +467,20 @@ _RECALENTAR = ('Lo hecho antes que se vaya a mantener en caliente se recalienta 
 _CALIENTE = 'Mantenimiento en caliente: 135 °F o más (FDA Food Code 3-501.16)'
 _HUEVO = ('con huevo pasteurizado, o aviso al consumidor en la ficha del plato si lleva huevo crudo (FDA Food Code '
           '3-603.11)')
-_PARASITOS = ('Destrucción de parásitos US (FDA Food Code 3-402.11): pescado congelado a −4 °F o menos 7 días, o a '
-              '−31 °F o menos hasta sólido + 15 h; el registro (o la declaración escrita del proveedor) se guarda 90 '
-              'días (3-402.12); aviso al consumidor en la ficha del plato de cada app (FDA Food Code 3-603.11). Sin '
-              '«≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)')
-_ARROZ = ('Arroz de sushi: si se acidifica para tenerlo fuera de frío hace falta una varianza y un plan HACCP del '
-          'departamento de salud (FDA Food Code 3-502.11); si no, a 41 °F o menos, o con time as a public health '
+_PARASITOS = ('Destrucción de parásitos US, las TRES opciones de FDA Food Code 3-402.11 (ronda 1 M2): congelado y '
+              'guardado a −4 °F o menos 7 días; o congelado a −31 °F o menos hasta sólido y guardado a −31 °F o menos '
+              '15 h; o congelado a −31 °F o menos hasta sólido y guardado a −4 °F o menos 24 h. El registro (o la '
+              'declaración escrita del proveedor) se guarda 90 días (3-402.12); aviso al consumidor en la ficha del '
+              'plato de cada app (FDA Food Code 3-603.11). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma')
+_ARROZ = ('Arroz de sushi: si se acidifica para tenerlo fuera de frío hace falta una varianza del departamento de '
+          'salud y un plan HACCP que él aprueba (FDA Food Code 3-502.11; ronda 1 m18); si no, a 41 °F o menos, o con time as a public health '
           'control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)')
 _COCCION = ('Cocinar cada proteína a su temperatura, comprobada con sonda en el centro: pollo 165 °F, carne picada '
-            '155 °F durante 17 s, pescado 145 °F durante 15 s (FDA Food Code 3-401.11); crudo separado de lo listo '
-            'para consumir y en la balda de abajo (FDA Food Code 3-302.11)')
+            '155 °F durante 17 s, pescado 145 °F durante 15 s (FDA Food Code 3-401.11); crudo debajo de lo listo '
+            'para consumir, con el pollo crudo abajo del todo, debajo de la carne y del pescado (FDA Food Code '
+            '3-302.11; ronda 1 m10)')
+_UTENSILIOS = ('añade: pinzas, espátulas, cucharas de servir y tablas de corte, lavadas, aclaradas y sanitizadas cada '
+               '4 h como mínimo en servicio, o cambiadas por unas limpias (FDA Food Code 4-602.11; ronda 1 m4)')
 _SEPARAR = ('añade: lo caliente y lo frío en bolsas o compartimentos separados, para que lo caliente siga a 135 °F o '
             'más y lo frío a 41 °F o menos hasta que lo recoja el repartidor (FDA Food Code 3-501.16)')
 _COMISIONES = ('Comisiones US: DoorDash, Uber Eats y Grubhub cobran según el plan contratado (más o menos del 15 al 30 '
@@ -448,9 +489,10 @@ _COMISIONES = ('Comisiones US: DoorDash, Uber Eats y Grubhub cobran según el pl
 _PERMISO = ('añade: cada cocina lleva su permiso sanitario (health permit); las marcas virtuales suelen ir con el de la '
             'cocina, pero algunas ciudades piden comunicarlas o registrarlas, y el nombre comercial de cada marca '
             '(DBA) se registra si tu estado lo pide: compruébalo con tu departamento de salud (check local rules)')
-_HEREDA_ADAPTAR = [('01', 'Apertura Cocina', 'B10'), ('01', 'Cierre Cocina', 'B6'), ('09', 'Cierre de Caja', 'B10'),
+_HEREDA_ADAPTAR = [('01', 'Apertura Cocina', 'B10'), ('09', 'Cierre de Caja', 'B10'),
                    ('09', 'Registro Mensual', 'A37'),
-                   ('B02', 'Instrucciones', 'B8')] + [k for k in _A if k[:2] == ('09', 'Instrucciones')]
+                   ('B02', 'Instrucciones', 'B8')] + [k for k in _A if k[:2] == ('09', 'Instrucciones')
+                                                      and k != ('09', 'Instrucciones', 'B6')]
 ADAPTAR = OrderedDict((k, _A[k]) for k in _HEREDA_ADAPTAR)
 ADAPTAR.update([
     # 01 · Apertura Cocina (el orden del ES ya es campana → gas → equipos; la campana suma su comprobación de tiro)
@@ -463,13 +505,13 @@ ADAPTAR.update([
     (('01', 'Apertura Cocina', 'B16'), _CAMARAS),
     (('01', 'Apertura Cocina', 'B19'), 'Si la salsa se cocina: ' + _ENFRIAR + '; la mayonesa casera (sriracha mayo, '
      'alioli), ' + _HUEVO),
+    (('01', 'Apertura Cocina', 'B18'), 'Añade: sobre superficies ya limpias y sanitizadas (tarea #30; ronda 1 m14)'),
     (('01', 'Apertura Cocina', 'B21'), _ENFRIAR + '; si se mantienen en caliente: ' + _RECALENTAR),
     (('01', 'Apertura Cocina', 'B28'), _PRECINTO),
-    (('01', 'Apertura Cocina', 'B33'), _APPS),
     (('01', 'Apertura Cocina', 'B35'), _ALERGENOS_APP),
-    (('01', 'Apertura Cocina', 'B37'), '86 → «86» (se dice igual): pausar en cada app el plato o la marca sin stock'),
     (('01', 'Apertura Cocina', 'B40'), 'Superficies de trabajo: limpiar y luego sanitizar con ' + _TIRA),
     # 01 · Cierre Cocina
+    (('01', 'Cierre Cocina', 'B6'), _DATE_KIT),
     (('01', 'Cierre Cocina', 'B8'), 'Tapada y a 41 °F o menos; lo cocinado, enfriado antes: ' + _ENFRIAR),
     (('01', 'Cierre Cocina', 'B9'), 'Congelador a 0 °F o menos; la tabla de vida útil, en la hoja «FIFO Semanal» del 05 '
      '(nombres EN de la hoja y del fichero)'),
@@ -483,17 +525,22 @@ ADAPTAR.update([
     (('01', 'Cierre Cocina', 'B30'), 'Descongelar en la cámara a 41 °F o menos (FDA Food Code 3-501.13), nunca a '
      'temperatura ambiente'),
     # 02 · estaciones
+    (('02', 'Estación Caliente', 'B6'), 'Añade: comprobar el termómetro de sonda en agua con hielo (32 °F) y '
+     'recalibrarlo si no marca bien (ronda 1 m5)'),
     (('02', 'Estación Caliente', 'B7'), _COCCION),
     (('02', 'Estación Caliente', 'B8'), _CALIENTE + '; lo que se guarde, ' + _ENFRIAR[0].lower() + _ENFRIAR[1:]),
+    (('02', 'Estación Caliente', 'B11'), _UTENSILIOS),
     (('02', 'Estación Caliente', 'B14'), _CALIENTE + ' hasta que el plato pasa al empaquetado'),
-    (('02', 'Estación Caliente', 'B18'), _DATE),
+    (('02', 'Estación Caliente', 'B18'), _DATE_KIT),
     (('02', 'Estación Fría', 'B6'), _LAVADO),
     (('02', 'Estación Fría', 'B7'), _ARROZ),
     (('02', 'Estación Fría', 'B8'), _PARASITOS),
     (('02', 'Estación Fría', 'B11'), 'Inserts tapados y a 41 °F o menos en la mesa fría (FDA Food Code 3-501.16)'),
-    (('02', 'Estación Fría', 'B17'), _DATE),
-    (('02', 'Estación Fría', 'B18'), 'Criterio del kit (calidad); las hojas verdes, el tomate y el melón cortados son '
-     'TCS: a 41 °F o menos y con date marking (FDA Food Code 3-501.16 y 3-501.17)'),
+    (('02', 'Estación Fría', 'B15'), _UTENSILIOS),
+    (('02', 'Estación Fría', 'B17'), _DATE_KIT),
+    (('02', 'Estación Fría', 'B18'), 'Criterio del kit (calidad), el mismo de la hoja «FIFO Semanal» del 05 (ronda 1 '
+     'm2): fruta cortada 24 h y vegetales cortados 2 días; las hojas verdes, el tomate y el melón cortados son TCS: a '
+     '41 °F o menos y con date marking (FDA Food Code 3-501.16 y 3-501.17)'),
     (('02', 'Empaquetado', 'B8'), _PRECINTO),
     (('02', 'Empaquetado', 'B11'), 'Empaquetar en el envase de la marca; ' + _SEPARAR),
     (('02', 'Empaquetado', 'B15'), _PRECINTO),
@@ -502,24 +549,28 @@ ADAPTAR.update([
     (('03', 'Diario Manager', 'B24'), _A[('03', 'Diario Manager', 'B35')]),
     (('03', 'Semanal Manager', 'B18'), _ALERGENOS),
     (('03', 'Mensual Manager', 'B8'), _COMISIONES),
-    (('03', 'Mensual Manager', 'B21'), 'El equipo limpia los filtros de la campana; el conducto lo limpia el contratista '
-     '(hoja «Quarterly & Annual», NFPA 96)'),
+    (('03', 'Mensual Manager', 'B21'), 'Ronda 1 m15: el equipo desengrasa los filtros cada semana (hoja «Weekly Deep '
+     'Clean» del 05); el técnico revisa motor, correas y filtros cada mes; el contratista limpia el conducto (hoja '
+     '«Quarterly & Annual», NFPA 96)'),
     (('03', 'Mensual Manager', 'B22'), _A[('03', 'Mensual Manager', 'B23')] + '; botiquín (first aid kit) completo'),
-    (('03', 'Handover Turno', 'B12'), 'Estado del aceite y fecha del último cambio; el cambio, como diga el fabricante '
-     'de la freidora (sin cifra de temperatura del kit)'),
+    (('03', 'Handover Turno', 'B12'), 'Estado del aceite (última lectura de TPM) y fecha del último cambio; el cambio, '
+     'cuando lo diga el medidor de TPM y según el fabricante (sin cifra de temperatura del kit)'),
     # 04 · perfiles
     (('04', 'Cocinero Multi-Marca', 'B18'), 'Tapada y a 41 °F o menos (FDA Food Code 3-501.16)'),
     (('04', 'Cocinero Multi-Marca', 'B19'), 'Limpiar la estación y luego sanitizarla con ' + _TIRA),
     (('04', 'Empaquetador', 'B15'), _PRECINTO),
-    (('04', 'Gestor Plataformas', 'B7'), _APPS),
+    (('04', 'Cocinero Multi-Marca', 'B13'), 'Tiempos = ticket times: pedidos listos en 8-12 min, como el 02 (criterio '
+     'del kit; ronda 1 m13)'),
     # 05
     (('05', 'Instrucciones', 'B6'), 'Describe la lista US de «Quarterly & Annual»: control de plagas, campana y '
      'conductos (NFPA 96), extintores y extinción de la campana, gas, legionela, frío, aceite usado, cartón y '
-     'plástico del packaging, calibración de termómetros, seguros, contratos de las apps y sales tax. Sin DDD, BIE, '
+     'plástico del packaging, separador de grasas (grease trap), calibración de termómetros, seguros, contratos de las apps y sales tax. Sin DDD, BIE, '
      'Verifactu ni facturación española'),
     (('05', 'Limpieza Semanal', 'B7'), 'El equipo desmonta y desengrasa los FILTROS de la campana (no la campana); el '
      'conducto lo limpia el contratista (hoja «Quarterly & Annual», NFPA 96)'),
-    (('05', 'Limpieza Semanal', 'B9'), 'Lavar, aclarar y sanitizar las tablas de corte con ' + _TIRA),
+    (('05', 'Limpieza Semanal', 'B9'), 'Tablas de corte: limpieza a fondo y revisión semanal (frotar, sanitizar con '
+     + _TIRA + ', y repasar o cambiar las de cortes hondos o manchas); en uso se lavan, aclaran y sanitizan cada 4 h '
+     'como mínimo (FDA Food Code 4-602.11; ronda 1 m4)'),
     (('05', 'Limpieza Semanal', 'B10'), 'Limpieza a fondo de la freidora (boil-out) como diga su fabricante'),
     (('05', 'FIFO Semanal', 'B6'), 'Proteínas frescas: 3 días como máximo (criterio del kit) y nunca más allá de la '
      'fecha del proveedor'),
@@ -527,16 +578,19 @@ ADAPTAR.update([
      'permite 7 contando el de preparación, 3-501.17)'),
     (('05', 'FIFO Semanal', 'B8'), 'Vegetales cortados: 2 días como máximo (criterio del kit, dentro de los 7 del date '
      'marking de la FDA, 3-501.17)'),
-    (('05', 'FIFO Semanal', 'B14'), 'Color, olor y humo; anotar la fecha del último cambio; el cambio, como diga el '
-     'fabricante de la freidora (sin cifra de temperatura del kit)'),
-    (('05', 'FIFO Semanal', 'D29'), 'La congelación solo cuenta como destrucción de parásitos si se hace a −4 °F o menos '
-     'durante 7 días (o a −31 °F o menos hasta sólido + 15 h), con registro (FDA Food Code 3-402.11): un congelador '
-     'normal a 0 °F no llega; sin «anisakis»'),
+    (('05', 'FIFO Semanal', 'B14'), 'Medidor de TPM o tiras (color, olor y humo solo como respaldo); anotar la fecha '
+     'del último cambio; sin límite federal: cambiarlo cuando lo diga el medidor y según el fabricante (ronda 1 M1; '
+     'sin cifra de temperatura del kit)'),
+    (('05', 'FIFO Semanal', 'D29'), 'La congelación solo cuenta como destrucción de parásitos a −4 °F o menos 7 días, o '
+     'a −31 °F hasta sólido y luego 15 h a −31 °F o 24 h a −4 °F (FDA Food Code 3-402.11), con registro o la '
+     'declaración del proveedor (3-402.12): un congelador normal a 0 °F no llega; sin «anisakis» (ronda 1 M2)'),
     (('05', 'FIFO Semanal', 'D32'), 'Congelar el mismo día en porciones planas; para servirlo caliente, recalentar a '
      '165 °F en 2 h como máximo (FDA Food Code 3-403.11). El arroz cocido templado es el clásico de la intoxicación '
      '(Bacillus cereus)'),
-    (('05', 'Mantenimiento Mensual', 'B7'), 'Cambio completo del aceite y limpieza a fondo (boil-out) ' + _ACEITE[0].lower()
-     + _ACEITE[1:] + '; archiva el recibo de la recogida'),
+    (('05', 'Mantenimiento Mensual', 'B7'), 'Ronda 1 M1: revisión de la freidora según el fabricante (termostato y '
+     'límite de seguridad, válvula de vaciado, cestas y el filtrado incorporado o la máquina de filtrar); el aceite se '
+     'cambia cuando lo diga el medidor de TPM (sin límite federal), no una vez al mes; el boil-out es semanal (hoja '
+     '«Weekly Deep Clean»). Sin cifra de temperatura del kit'),
     (('05', 'Mantenimiento Mensual', 'B8'), 'Lavavajillas: filtros y niveles de químicos (la sal descalcificadora, solo '
      'si hay descalcificador)'),
     (('05', 'Mantenimiento Mensual', 'B17'), _A[('05', 'Mantenimiento Mensual', 'B21')]),
@@ -547,11 +601,20 @@ ADAPTAR.update([
     (('06', 'Lanzamiento Marca', 'B9'), _ALERGENOS_APP + '; y, si un plato lleva pescado crudo o poco hecho (poke, '
      'sushi), el aviso al consumidor en su ficha (FDA Food Code 3-603.11)'),
     # 08 (la apertura y el cierre reordenados van por POR_CELDA)
+    (('08', 'Instrucciones', 'B11'), 'Añade al final (ronda 1 m17): en una cocina compartida (una unidad de un cloud kitchen park o una commissary), marca N/A lo que lleva el '
+     'operador del edificio (alarma, climatización, baños, zonas comunes, sala de repartidores) y quédate con las tareas '
+     'de tu unidad'),
     (('08', 'Apertura del Negocio', 'B8'), _A[('08', 'Apertura del Negocio', 'B8')] + '; añade: salidas de emergencia '
      'despejadas y señales de salida (exit signs) iluminadas'),
     (('08', 'Apertura del Negocio', 'B9'), 'Punto de recogida de riders → driver pickup (los repartidores de las apps); '
      'el cartel con el horario de cada marca'),
 ])
+# 09 «Instrucciones» B6 (ronda 1 m16): para qué sirve la caja en una cocina solo delivery
+ADAPTAR[('09', 'Instrucciones', 'B6')] = (_A[('09', 'Instrucciones', 'B6')] + '; añade al final: en una cocina solo '
+                                          'delivery los pedidos de las apps vienen pagados y los liquida cada app (se '
+                                          'cuadran contra el informe de pagos de cada app, 01 «Kitchen Closing», tarea '
+                                          '#18); este fichero es para lo que se cobra en tu mostrador: recogida en '
+                                          'persona, pedidos por teléfono o por la web propia pagados al recoger')
 for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     if _dir:
         ADAPTAR[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = 'Evento EN: «%s». %s' % (_evento, _dir)
@@ -601,11 +664,16 @@ REGLAS_US.update([
                    'FDA Food Code 2022 §3-501.16(A)(2) y §3-501.17')),
     ('plazos_kit', ('proteínas frescas 3 días; salsas caseras 5 días; vegetales cortados 2 días; fruta cortada 24 h; '
                     '8-12 min por pedido; aceptar en menos de 30 s', '[criterio del kit]')),
-    ('aceite', ('filtrado y cambio del aceite según el fabricante de la freidora', '[fabricante] manual de la freidora')),
+    ('aceite', ('filtrado según el fabricante de la freidora; cambio cuando lo diga el medidor de TPM (sin límite '
+                'federal); boil-out semanal según el fabricante', '[fabricante] manual de la freidora y del medidor')),
+    ('utensilios_4h', ('utensilios en uso con TCS: lavar, enjuagar y desinfectar cada 4 h como mínimo',
+                       'FDA Food Code 2022 §4-602.11(C)')),
+    ('estacionalidad', ('el delivery baja con el calor y en las vacaciones de verano; sube con frío y mal tiempo',
+                        'DoorDash, Form 10-K FY2025 (Seasonality)')),
     ('dias_fuertes', ('Super Bowl, March Madness, Cinco de Mayo, 4 de julio, temporada de fútbol americano, Halloween, '
                       'Thanksgiving + Black Friday, días de frío y lluvia', '[criterio del kit] calendario del '
                       'delivery US')),
-    ('inventario', ('mínimos de kg → lb (×2,2) redondeados a formato de compra; L → qt (1 qt ≈ 0,95 L)',
+    ('inventario', ('mínimos de kg → lb (×2,2) redondeados a formato de compra; L → qt (1 qt ≈ 0,95 L); 0,5 L → 1 pt',
                     '[criterio del kit] conversión')),
 ])
 # °F que el kit puede afirmar (G7): las del base + 32 (calibración) + la cocción (145, 155)
@@ -704,6 +772,16 @@ def autotest():
     for nombre, lista, filas in (('08 apertura', _APERTURA_08, range(11, 23)), ('08 cierre', _CIERRE_08, range(5, 20))):
         if sorted(o for o, *_r in lista) != list(filas):
             err.append('%s: las filas de origen no son una permutación de %d-%d' % (nombre, filas[0], filas[-1]))
+    for nombre, lista, filas in (('01 tablets', _TABLETS_01, range(31, 38)), ('04 apps', _APPS_04, range(7, 11))):
+        if sorted(t[1] for t in lista) != list(filas) or [t[0] for t in lista] != list(filas):
+            err.append('%s: las filas de origen no son una permutación de %d-%d' % (nombre, filas[0], filas[-1]))
+        for t in lista:
+            if (t[0] == t[1]) != (t[2] is None):
+                err.append('%s: la fila %d cambia de tarea sin EN fijado (o al revés)' % (nombre, t[0]))
+    h01 = [POR_CELDA[_AC + ('E%d' % f,)] for f in range(31, 38)]
+    if any(not re.match(r'^\d{1,2}:\d{2} (AM|PM)$', h) for h in h01) or h01 != sorted(h01, key=lambda h: (
+            int(h.split(':')[0]) % 12 * 60 + int(h.split(':')[1][:2]))):
+        err.append('01 tablets: horas fijadas sin formato US o fuera de orden: %r' % h01)
     horas = [POR_CELDA[_AN + ('E%d' % f,)] for f in range(11, 23)]
     minutos = [int(h.split(':')[0]) % 12 * 60 + int(h.split(':')[1][:2]) for h in horas]
     if minutos != sorted(minutos):
@@ -728,7 +806,7 @@ def cruzar_censo(p):
     for k, (es, en) in VALORES_EN.items():
         if tx.get(k) != es:
             err.append('VALORES_EN: %r no trae en el ES %r (trae %r)' % (k, es, tx.get(k)))
-    factor = {('kg', 'lb'): 2.2046, ('L', 'qt'): 1, ('uds', 'ea'): 1, ('sets', 'sets'): 1}
+    factor = {('kg', 'lb'): 2.2046, ('L', 'qt'): 1, ('L', 'pt'): 2.113, ('uds', 'ea'): 1, ('sets', 'sets'): 1}
     for f, es, en in _MINIMOS:
         c = ('05', 'Inventario Diario', 'C%d' % f)
         u_es = tx.get(c)
@@ -763,6 +841,17 @@ def cruzar_censo(p):
         err.append('08 apertura B20: el ES ya no enciende las tablets')
     if not tx.get((_CN[0], _CN[1], 'B18'), '').startswith('Desactivar las marcas'):
         err.append('08 cierre B18: el ES ya no desactiva las marcas')
+    for hoja, lista in ((_AC, _TABLETS_01), (_GP, _APPS_04)):
+        filas = [t[0] for t in lista]
+        for col in ('C', 'D'):
+            if len({tx.get((hoja[0], hoja[1], '%s%d' % (col, f))) for f in filas}) != 1:
+                err.append('%s: la columna %s cambia entre las filas reordenadas' % (hoja[1], col))
+        for t in lista:
+            if (hoja[0], hoja[1], 'B%d' % t[1]) not in tx:
+                err.append('%s: B%d sin tarea en el ES' % (hoja[1], t[1]))
+    if not tx.get((_AC[0], _AC[1], 'B33'), '').startswith('Activar todas las marcas') or \
+            not tx.get((_GP[0], _GP[1], 'B7'), '').startswith('Activar todas las marcas'):
+        err.append('01 B33 / 04 B7: el ES ya no enciende las marcas ahí')
     # 07: sala y barra del ES
     for f in range(13, 18):
         if tx.get(('07', 'Por Área', 'C%d' % f)) != 'Sala':

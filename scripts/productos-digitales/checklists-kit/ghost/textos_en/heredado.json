@@ -149,11 +149,6 @@
   "via": "exacta",
   "fuente": "burger"
  },
- "c0086": {
-  "en": "Date-mark all prepped food (ready-to-eat keeps 7 days at 41 °F; prep day = day 1)",
-  "origen": "c0153",
-  "via": "exacta"
- },
  "c0095": {
   "en": "Check walk-ins are closed and at temp (cooler 41 °F or below, freezer 0 °F or below) — log reading: ____ °F",
   "origen": "c0119",
@@ -229,12 +224,6 @@
   "origen": "c0251",
   "via": "exacta",
   "fuente": "cafe"
- },
- "c0154": {
-  "en": "Keep inserts restocked",
-  "origen": "c0312",
-  "via": "exacta",
-  "fuente": "burger"
  },
  "c0180": {
   "en": "▸ You are in 03-ghost-kitchen-manager-checklist.xlsx: it is one MORE layer, not a repeat — the backbone of the day is in 08-delivery-only-kitchen-opening-closing-checklist.xlsx and 01-ghost-kitchen-opening-closing-checklists.xlsx.",
@@ -703,11 +692,6 @@
   "origen": "c0812",
   "via": "exacta"
  },
- "c0596": {
-  "en": "▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.",
-  "origen": "c0813",
-  "via": "exacta"
- },
  "c0597": {
   "en": "▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.",
   "origen": "c0814",
@@ -765,11 +749,6 @@
  "c0630": {
   "en": "Manager signature: _________________________     Completion time: ________",
   "origen": "c0842",
-  "via": "exacta"
- },
- "c0654": {
-  "en": "▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.",
-  "origen": "c0862",
   "via": "exacta"
  },
  "c0655": {

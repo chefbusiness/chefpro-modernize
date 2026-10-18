@@ -62,3 +62,31 @@ técnica. Puntos a revisar:
 - el orden de la apertura y el cierre del 08, y el 07 sin sala ni barra;
 - calendario US;
 - mínimos del inventario en lb.
+
+## Ronda 1 de la revisión adversarial (`revision/REVISION-F2.md`: 0 bloqueantes · 4 MAYOR · 18 menor)
+
+Aplicados los 4 MAYOR y los 18 menor, en la fuente (G1, `POR_CELDA`, `ADAPTAR`, `REGLAS_US`, `VALORES_EN`, glosario). Las
+dudas, no. Tabla «aplicado / no aplicado» al final del informe.
+- **M1.** Aceite: filtrado según el fabricante, cambio cuando lo diga el medidor de TPM y boil-out semanal.
+- **M2.** Las 3 opciones de §3-402.11, con §3-402.12.
+- **M3.** El verano pasa a «Summer slowdown».
+- **M4.** En el 01 y el 04, impresora, cartas y 86 antes de las marcas (`POR_CELDA`, con la fila de origen comprobada).
+
+`heredar.py`: 199 heredadas y 360 pendientes. Salen 6 ids a GM (M4) y entran 4 a pendientes con ADAPTAR nuevo: c0086,
+c0154, c0654 y c0596. G1 = 360 ids, los mismos que `pendientes.json`.
+
+Landing (`astro-site/src/data/productos-en/tareas/ghost-kitchen-checklist-templates.ts`), 4 retoques triviales:
+- las 3 opciones de parásitos en la FAQ;
+- el aceite cambiado según el TPM en el mantenimiento mensual;
+- tablas de corte «deep-cleaned and inspected» en la limpieza semanal;
+- el comentario de research.
+
+| Paso | Resultado |
+|---|---|
+| Montaje | 11 xlsx · idempotencia 0 diferencias · 0 desbordes · 0 rellenos |
+| Gates | **VERDE 8/0**. G3: 116 ajustes · 107 altos. G4: 1.047 glosario · 301 regenerar · 781 traducir. G7: 52 °F y 45 citas, todas en `REGLAS_US` |
+| Autotest | **18/18 CAZADOS** |
+| censo-entregables · no-latinos | 0 defectos · 0 caracteres |
+| Celdas cortadas | 0 nuevas: las 4 de los hermanos + 01 B9 (con ajuste, solo se parte el nombre del fichero). 02 «Cold Station» B8 en fila automática (11 líneas); FIFO D29 subida a 61,25 por `capa_ajuste`: sin `ALTOS_FILA` nuevo |
+| Copia al Mac | sha256 11/11 |
+| Volcado | `revision/dump_en.txt`, 3.387 líneas |

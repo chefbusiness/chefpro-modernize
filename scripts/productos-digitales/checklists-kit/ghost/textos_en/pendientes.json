@@ -2,23 +2,23 @@
  "meta": {
   "kit": "ghost",
   "producto": "Ghost Kitchen Checklists Kit Pro",
-  "n_pendientes": 362,
-  "n_palabras": 2870,
+  "n_pendientes": 360,
+  "n_palabras": 2884,
   "motivos": {
    "contexto": 10,
-   "nueva": 341,
-   "adaptar": 8,
+   "nueva": 335,
+   "adaptar": 12,
    "corregida": 3
   },
-  "n_heredadas": 203,
+  "n_heredadas": 199,
   "heredadas_por_via": {
-   "exacta": 200,
+   "exacta": 196,
    "sufijo": 3
   },
   "heredadas_por_fuente": {
-   "base": 144,
+   "base": 141,
    "cafe": 22,
-   "burger": 15,
+   "burger": 14,
    "pizza": 19,
    "bar": 3
   },
@@ -208,6 +208,7 @@
    "pistas": [
     "marca → brand (virtual brand); multi-marca → multi-brand"
    ],
+   "adaptar": "Añade: sobre superficies ya limpias y sanitizadas (tarea #30; ronda 1 m14)",
    "motivo": "nueva"
   },
   {
@@ -367,21 +368,6 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0069",
-   "es": "Activar todas las marcas en Glovo, Uber Eats, Just Eat",
-   "grupo": "G1",
-   "palabras": 10,
-   "donde": [
-    "01 · Apertura Cocina · B33"
-   ],
-   "pistas": [
-    "marca → brand (virtual brand); multi-marca → multi-brand",
-    "Glovo / Just Eat → DoorDash / Grubhub (Uber Eats se queda, con espacio)"
-   ],
-   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps); tablets → order tablets",
-   "motivo": "nueva"
-  },
-  {
    "id": "c0070",
    "es": "Verificar que menús están actualizados (precios, disponibilidad)",
    "grupo": "G1",
@@ -404,36 +390,6 @@
     "marca → brand (virtual brand); multi-marca → multi-brand"
    ],
    "adaptar": "El cliente no puede preguntar en un mostrador: los alérgenos de cada plato (los 9 principales de EE. UU.; en UK, los 14), en la ficha del plato de cada app. En EE. UU. no hay una norma federal que lo exija a la comida de restaurante, pero las apps tienen el campo y algunos estados o ciudades piden avisos propios (check local rules); en UK es obligatorio en la venta a distancia: antes de comprar y al entregar",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0072",
-   "es": "Verificar impresora de tickets funcionando",
-   "grupo": "G1",
-   "palabras": 5,
-   "donde": [
-    "01 · Apertura Cocina · B36"
-   ],
-   "pistas": [
-    "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0073",
-   "es": "Pausar marcas si no hay stock de algo (86)",
-   "grupo": "G1",
-   "palabras": 9,
-   "donde": [
-    "01 · Apertura Cocina · B37"
-   ],
-   "pistas": [
-    "«86» / «86s» es jerga US: se queda",
-    "marca → brand (virtual brand); multi-marca → multi-brand",
-    "86 → 86 (jerga US: «86 an item»)",
-    "pausar una marca → pause the brand (in the app)"
-   ],
-   "adaptar": "86 → «86» (se dice igual): pausar en cada app el plato o la marca sin stock",
    "motivo": "nueva"
   },
   {
@@ -501,6 +457,18 @@
     "01 · Cierre Cocina · A1"
    ],
    "motivo": "nueva"
+  },
+  {
+   "id": "c0086",
+   "es": "Etiquetar y fechar todas las pre-elaboraciones",
+   "grupo": "G1",
+   "palabras": 7,
+   "donde": [
+    "01 · Cierre Cocina · B6"
+   ],
+   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17); o menos donde la hoja «FIFO Semanal» del 05 fije un plazo más corto (salsas caseras 5 días, proteínas 3, vegetales cortados 2)",
+   "motivo": "adaptar",
+   "base_en": "Date-mark all prepped food (ready-to-eat keeps 7 days at 41 °F; prep day = day 1)"
   },
   {
    "id": "c0088",
@@ -590,7 +558,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
    ],
-   "adaptar": "Filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas; el usado, al contenedor del reciclador (used cooking oil recycler). Sin cifra de temperatura del kit",
+   "adaptar": "Filtrar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar) y cambiarlo cuando lo diga el medidor de TPM (sin límite federal; ronda 1 M1), con guantes resistentes al calor, delantal y gafas; el usado, al contenedor del reciclador (used cooking oil recycler). Sin cifra de temperatura del kit",
    "motivo": "nueva"
   },
   {
@@ -778,6 +746,7 @@
    "pistas": [
     "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
    ],
+   "adaptar": "Añade: comprobar el termómetro de sonda en agua con hielo (32 °F) y recalibrarlo si no marca bien (ronda 1 m5)",
    "motivo": "nueva"
   },
   {
@@ -791,7 +760,7 @@
    "pistas": [
     "marca → brand (virtual brand); multi-marca → multi-brand"
    ],
-   "adaptar": "Cocinar cada proteína a su temperatura, comprobada con sonda en el centro: pollo 165 °F, carne picada 155 °F durante 17 s, pescado 145 °F durante 15 s (FDA Food Code 3-401.11); crudo separado de lo listo para consumir y en la balda de abajo (FDA Food Code 3-302.11)",
+   "adaptar": "Cocinar cada proteína a su temperatura, comprobada con sonda en el centro: pollo 165 °F, carne picada 155 °F durante 17 s, pescado 145 °F durante 15 s (FDA Food Code 3-401.11); crudo debajo de lo listo para consumir, con el pollo crudo abajo del todo, debajo de la carne y del pescado (FDA Food Code 3-302.11; ronda 1 m10)",
    "motivo": "nueva"
   },
   {
@@ -827,6 +796,7 @@
     "marca → brand (virtual brand); multi-marca → multi-brand",
     "pantalla de comandas → KDS (kitchen display); comanda / ticket → ticket"
    ],
+   "adaptar": "añade: pinzas, espátulas, cucharas de servir y tablas de corte, lavadas, aclaradas y sanitizadas cada 4 h como mínimo en servicio, o cambiadas por unas limpias (FDA Food Code 4-602.11; ronda 1 m4)",
    "motivo": "nueva"
   },
   {
@@ -904,7 +874,7 @@
    "donde": [
     "02 · Estación Caliente · B18"
    ],
-   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17)",
+   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17); o menos donde la hoja «FIFO Semanal» del 05 fije un plazo más corto (salsas caseras 5 días, proteínas 3, vegetales cortados 2)",
    "motivo": "nueva"
   },
   {
@@ -945,7 +915,7 @@
    "pistas": [
     "poke, sushi, tartare, ceviche (sin tildes en EN)"
    ],
-   "adaptar": "Arroz de sushi: si se acidifica para tenerlo fuera de frío hace falta una varianza y un plan HACCP del departamento de salud (FDA Food Code 3-502.11); si no, a 41 °F o menos, o con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "Arroz de sushi: si se acidifica para tenerlo fuera de frío hace falta una varianza del departamento de salud y un plan HACCP que él aprueba (FDA Food Code 3-502.11; ronda 1 m18); si no, a 41 °F o menos, o con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "motivo": "nueva"
   },
   {
@@ -960,7 +930,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "poke, sushi, tartare, ceviche (sin tildes en EN)"
    ],
-   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): pescado congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; el registro (o la declaración escrita del proveedor) se guarda 90 días (3-402.12); aviso al consumidor en la ficha del plato de cada app (FDA Food Code 3-603.11). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
+   "adaptar": "Destrucción de parásitos US, las TRES opciones de FDA Food Code 3-402.11 (ronda 1 M2): congelado y guardado a −4 °F o menos 7 días; o congelado a −31 °F o menos hasta sólido y guardado a −31 °F o menos 15 h; o congelado a −31 °F o menos hasta sólido y guardado a −4 °F o menos 24 h. El registro (o la declaración escrita del proveedor) se guarda 90 días (3-402.12); aviso al consumidor en la ficha del plato de cada app (FDA Food Code 3-603.11). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma",
    "motivo": "nueva"
   },
   {
@@ -1018,6 +988,19 @@
    "motivo": "nueva"
   },
   {
+   "id": "c0154",
+   "es": "Reponer inserts constantemente",
+   "grupo": "G1",
+   "palabras": 3,
+   "donde": [
+    "02 · Estación Fría · B15"
+   ],
+   "adaptar": "añade: pinzas, espátulas, cucharas de servir y tablas de corte, lavadas, aclaradas y sanitizadas cada 4 h como mínimo en servicio, o cambiadas por unas limpias (FDA Food Code 4-602.11; ronda 1 m4)",
+   "motivo": "adaptar",
+   "base_en": "Keep inserts restocked",
+   "base_fuente": "burger"
+  },
+  {
    "id": "c0155",
    "es": "Cubrir y refrigerar todos los inserts",
    "grupo": "G1",
@@ -1025,7 +1008,7 @@
    "donde": [
     "02 · Estación Fría · B17"
    ],
-   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17)",
+   "adaptar": "Date marking US: etiqueta con fecha; lo preparado y listo para comer aguanta 7 días a 41 °F, contando el día de preparación como día 1 (FDA Food Code 3-501.17); o menos donde la hoja «FIFO Semanal» del 05 fije un plazo más corto (salsas caseras 5 días, proteínas 3, vegetales cortados 2)",
    "motivo": "adaptar",
    "base_en": "Cover and refrigerate all inserts",
    "base_fuente": "cafe"
@@ -1038,7 +1021,7 @@
    "donde": [
     "02 · Estación Fría · B18"
    ],
-   "adaptar": "Criterio del kit (calidad); las hojas verdes, el tomate y el melón cortados son TCS: a 41 °F o menos y con date marking (FDA Food Code 3-501.16 y 3-501.17)",
+   "adaptar": "Criterio del kit (calidad), el mismo de la hoja «FIFO Semanal» del 05 (ronda 1 m2): fruta cortada 24 h y vegetales cortados 2 días; las hojas verdes, el tomate y el melón cortados son TCS: a 41 °F o menos y con date marking (FDA Food Code 3-501.16 y 3-501.17)",
    "motivo": "nueva"
   },
   {
@@ -1863,7 +1846,7 @@
    "pistas": [
     "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
    ],
-   "adaptar": "El equipo limpia los filtros de la campana; el conducto lo limpia el contratista (hoja «Quarterly & Annual», NFPA 96)",
+   "adaptar": "Ronda 1 m15: el equipo desengrasa los filtros cada semana (hoja «Weekly Deep Clean» del 05); el técnico revisa motor, correas y filtros cada mes; el contratista limpia el conducto (hoja «Quarterly & Annual», NFPA 96)",
    "motivo": "adaptar",
    "base_en": "Hood: filters",
    "base_fuente": "burger"
@@ -1949,7 +1932,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Estado del aceite y fecha del último cambio; el cambio, como diga el fabricante de la freidora (sin cifra de temperatura del kit)",
+   "adaptar": "Estado del aceite (última lectura de TPM) y fecha del último cambio; el cambio, cuando lo diga el medidor de TPM y según el fabricante (sin cifra de temperatura del kit)",
    "motivo": "nueva"
   },
   {
@@ -2085,6 +2068,7 @@
    "pistas": [
     "tiempos de preparación → prep times (los que se publican en la app); tiempos → ticket times"
    ],
+   "adaptar": "Tiempos = ticket times: pedidos listos en 8-12 min, como el 02 (criterio del kit; ronda 1 m13)",
    "motivo": "nueva"
   },
   {
@@ -2389,51 +2373,12 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0307",
-   "es": "Activar todas las marcas en todas las plataformas",
-   "grupo": "G1",
-   "palabras": 8,
-   "donde": [
-    "04 · Gestor Plataformas · B7"
-   ],
-   "pistas": [
-    "marca → brand (virtual brand); multi-marca → multi-brand",
-    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
-   ],
-   "adaptar": "Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps); tablets → order tablets",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0308",
-   "es": "Verificar que menús están actualizados",
-   "grupo": "G1",
-   "palabras": 5,
-   "donde": [
-    "04 · Gestor Plataformas · B8"
-   ],
-   "motivo": "nueva"
-  },
-  {
    "id": "c0309",
    "es": "Activar promos del día si aplica",
    "grupo": "G1",
    "palabras": 6,
    "donde": [
     "04 · Gestor Plataformas · B9"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0310",
-   "es": "Marcar como 86 los platos que no haya stock",
-   "grupo": "G1",
-   "palabras": 9,
-   "donde": [
-    "04 · Gestor Plataformas · B10"
-   ],
-   "pistas": [
-    "«86» / «86s» es jerga US: se queda",
-    "86 → 86 (jerga US: «86 an item»)"
    ],
    "motivo": "nueva"
   },
@@ -2672,7 +2617,7 @@
     "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)",
     "facturación → sales (o revenue); facturación de plataformas → app sales / payouts"
    ],
-   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y extinción de la campana, gas, legionela, frío, aceite usado, cartón y plástico del packaging, calibración de termómetros, seguros, contratos de las apps y sales tax. Sin DDD, BIE, Verifactu ni facturación española",
+   "adaptar": "Describe la lista US de «Quarterly & Annual»: control de plagas, campana y conductos (NFPA 96), extintores y extinción de la campana, gas, legionela, frío, aceite usado, cartón y plástico del packaging, separador de grasas (grease trap), calibración de termómetros, seguros, contratos de las apps y sales tax. Sin DDD, BIE, Verifactu ni facturación española",
    "cita_rotulos": [
     {
      "es": "Trimestral y Anual",
@@ -3097,7 +3042,7 @@
    "donde": [
     "05 · Limpieza Semanal · B9"
    ],
-   "adaptar": "Lavar, aclarar y sanitizar las tablas de corte con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114)",
+   "adaptar": "Tablas de corte: limpieza a fondo y revisión semanal (frotar, sanitizar con sanitizante aprobado a la concentración de la etiqueta, medida con tira (test strip) (FDA Food Code 4-501.114), y repasar o cambiar las de cortes hondos o manchas); en uso se lavan, aclaran y sanitizan cada 4 h como mínimo (FDA Food Code 4-602.11; ronda 1 m4)",
    "motivo": "adaptar",
    "base_en": "Cutting boards: wash, rinse and sanitize (approved sanitizer, test strip; FDA 4-501.114)",
    "base_fuente": "pizza"
@@ -3227,7 +3172,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Color, olor y humo; anotar la fecha del último cambio; el cambio, como diga el fabricante de la freidora (sin cifra de temperatura del kit)",
+   "adaptar": "Medidor de TPM o tiras (color, olor y humo solo como respaldo); anotar la fecha del último cambio; sin límite federal: cambiarlo cuando lo diga el medidor y según el fabricante (ronda 1 M1; sin cifra de temperatura del kit)",
    "motivo": "nueva"
   },
   {
@@ -3291,7 +3236,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "La congelación solo cuenta como destrucción de parásitos si se hace a −4 °F o menos durante 7 días (o a −31 °F o menos hasta sólido + 15 h), con registro (FDA Food Code 3-402.11): un congelador normal a 0 °F no llega; sin «anisakis»",
+   "adaptar": "La congelación solo cuenta como destrucción de parásitos a −4 °F o menos 7 días, o a −31 °F hasta sólido y luego 15 h a −31 °F o 24 h a −4 °F (FDA Food Code 3-402.11), con registro o la declaración del proveedor (3-402.12): un congelador normal a 0 °F no llega; sin «anisakis» (ronda 1 M2)",
    "motivo": "nueva"
   },
   {
@@ -3409,7 +3354,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "gestor de plataformas → app manager (delivery apps and tablets); gestor autorizado → licensed hauler / recycler"
    ],
-   "adaptar": "Cambio completo del aceite y limpieza a fondo (boil-out) filtrar o cambiar el aceite como diga el fabricante de la freidora (muchas llevan filtrado incorporado pensado para el aceite caliente; otras piden dejarlo enfriar), con guantes resistentes al calor, delantal y gafas; el usado, al contenedor del reciclador (used cooking oil recycler). Sin cifra de temperatura del kit; archiva el recibo de la recogida",
+   "adaptar": "Ronda 1 M1: revisión de la freidora según el fabricante (termostato y límite de seguridad, válvula de vaciado, cestas y el filtrado incorporado o la máquina de filtrar); el aceite se cambia cuando lo diga el medidor de TPM (sin límite federal), no una vez al mes; el boil-out es semanal (hoja «Weekly Deep Clean»). Sin cifra de temperatura del kit",
    "motivo": "nueva"
   },
   {
@@ -4044,6 +3989,22 @@
    "motivo": "nueva"
   },
   {
+   "id": "c0596",
+   "es": "▸ Imprime la hoja del turno (apertura o cierre) o úsala en tablet; el responsable reparte y cada persona firma su tarea.",
+   "grupo": "G2",
+   "palabras": 21,
+   "donde": [
+    "08 · Instrucciones · B11"
+   ],
+   "pistas": [
+    "Glosario: sala → front of house (FOH) / dining room",
+    "plataformas → delivery apps (third-party delivery apps: DoorDash, Uber Eats, Grubhub); tablets → order tablets"
+   ],
+   "adaptar": "Añade al final (ronda 1 m17): en una cocina compartida (una unidad de un cloud kitchen park o una commissary), marca N/A lo que lleva el operador del edificio (alarma, climatización, baños, zonas comunes, sala de repartidores) y quédate con las tareas de tu unidad",
+   "motivo": "adaptar",
+   "base_en": "▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs."
+  },
+  {
    "id": "c0601",
    "es": "Apertura del Negocio — Dark Kitchen",
    "grupo": "G2",
@@ -4098,6 +4059,23 @@
    ],
    "motivo": "contexto: Restaurant",
    "base_en": "Restaurant Closing Checklist"
+  },
+  {
+   "id": "c0654",
+   "es": "▸ El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre — y el registro mensual para ver de un vistazo qué días no cuadraron.",
+   "grupo": "G2",
+   "palabras": 29,
+   "donde": [
+    "09 · Instrucciones · B6"
+   ],
+   "pistas": [
+    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank",
+    "TPV / datáfono → POS / card terminal",
+    "cuadrar → reconcile / balance"
+   ],
+   "adaptar": "Arqueo → cash count; Z del TPV → POS Z report; descuadre → over/short; añade al final: en una cocina solo delivery los pedidos de las apps vienen pagados y los liquida cada app (se cuadran contra el informe de pagos de cada app, 01 «Kitchen Closing», tarea #18); este fichero es para lo que se cobra en tu mostrador: recogida en persona, pedidos por teléfono o por la web propia pagados al recoger",
+   "motivo": "adaptar",
+   "base_en": "▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance."
   },
   {
    "id": "c0747",
@@ -4432,7 +4410,7 @@
    "pistas": [
     "empaquetado → packing; empaquetador → packer; packaging → packaging; envases → containers (boxes, bowls, clamshells)"
    ],
-   "adaptar": "Evento EN: «Memorial Day (last Monday)». Sustituye al Día de la Madre (pasa a la fila 13). Tareas = las de «Inicio temporada alta» del ES (fila 15): empieza el verano, refuerzo de plantilla y stock de verano, revisar los tiempos de preparación del pico; decidir el horario del festivo y publicarlo en cada app",
+   "adaptar": "Evento EN: «Memorial Day (last Monday)». Sustituye al Día de la Madre (pasa a la fila 13). Empieza el verano (ronda 1 M3: en delivery NO es temporada alta): decidir el horario del festivo y publicarlo en cada app, montar la carta de verano y planificar la plantilla para las semanas más flojas del verano",
    "motivo": "nueva"
   },
   {
@@ -4488,7 +4466,7 @@
    "pistas": [
     "marca → brand (virtual brand); multi-marca → multi-brand"
    ],
-   "adaptar": "Evento EN: «Summer peak season». Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado y menú de verano por marca",
+   "adaptar": "Evento EN: «Summer slowdown (warm weather, vacations, school break)». Sustituye a la Asunción (el 15 de agosto no es festivo en EE. UU.). Ronda 1 M3: en verano el delivery suele BAJAR (calor, vacaciones, sin colegio; como la fila 11 y el 10-K de DoorDash): recortar producción y turnos, mantener el horario, combos de mediodía y platos de calor (bowls, ensaladas, bebidas frías) y preparar la carta de otoño; junto a playas, zonas turísticas o eventos de verano puede ir al revés",
    "motivo": "nueva"
   },
   {

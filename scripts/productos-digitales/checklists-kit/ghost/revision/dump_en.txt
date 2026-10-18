@@ -92,7 +92,7 @@ D16    : Opening line cook
 E16    : 9:00 AM
 A17    :   MISE EN PLACE
 A18    : 11
-B18    : Set up mise en place for all brands/concepts
+B18    : Set up mise en place for all brands/concepts, on surfaces already cleaned and sanitized (task #30)
 C18    : Kitchen
 D18    : Opening line cook
 E18    : 9:15 AM
@@ -152,34 +152,34 @@ A31    : 22
 B31    : Turn on all order tablets
 C31    : Office
 D31    : Shift manager
-E31    : 10:30 AM
+E31    : 10:00 AM
 A32    : 23
 B32    : Check the wifi / data connection on every tablet
 C32    : Office
 D32    : Shift manager
-E32    : 10:30 AM
+E32    : 10:00 AM
 A33    : 24
-B33    : Turn on all brands in DoorDash, Uber Eats and Grubhub
+B33    : Check the ticket printer works
 C33    : Office
 D33    : Shift manager
-E33    : 10:30 AM
+E33    : 10:15 AM
 A34    : 25
 B34    : Check that menus are up to date (prices, availability)
 C34    : Office
 D34    : Shift manager
-E34    : 10:30 AM
+E34    : 10:15 AM
 A35    : 26
 B35    : Check each dish's ALLERGEN info is still posted and current in every brand's app listing (the 9 major US allergens; UK: all 14): customers can't ask at a counter. No federal US rule requires it on app listings, but the apps have the field and some states and cities require notices (check local rules); in the UK it is mandatory for distance sales, before purchase and on delivery
 C35    : Office
 D35    : Shift manager
-E35    : 10:30 AM
+E35    : 10:15 AM
 A36    : 27
-B36    : Check the ticket printer works
+B36    : 86 anything out of stock: pause that dish or brand in each app
 C36    : Office
 D36    : Shift manager
 E36    : 10:30 AM
 A37    : 28
-B37    : 86 anything out of stock: pause that dish or brand in each app
+B37    : Turn on all brands in DoorDash, Uber Eats and Grubhub — last, once the tablets, printer, menus and 86s are checked
 C37    : Office
 D37    : Shift manager
 E37    : 10:30 AM
@@ -221,7 +221,7 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   PRODUCT
 A6     : 1
-B6     : Date-mark all prepped food (ready-to-eat keeps 7 days at 41 °F; prep day = day 1)
+B6     : Date-mark all prepped food: prep day = day 1, 7 days max at 41 °F (FDA 3-501.17), or less where the "Weekly FIFO Check" tab in 05 sets a shorter limit
 C6     : Kitchen
 D6     : Closing line cook
 E6     : 10:00 PM
@@ -252,7 +252,7 @@ C12    : Kitchen
 D12    : Closing line cook
 E12    : 10:15 PM
 A13    : 7
-B13    : Filter or change the fryer oil if due, per the fryer manufacturer's instructions (many have built-in filtration designed for hot oil; others need it cooled), with heat-resistant gloves, apron and goggles; used oil goes to the used cooking oil recycler's container
+B13    : Filter the fryer oil per the fryer manufacturer (many have built-in filtration designed for hot oil; others need it cooled) and change it when the TPM tester says, with heat-resistant gloves, apron and goggles; used oil goes to the used cooking oil recycler's container
 C13    : Kitchen
 D13    : Closing line cook
 E13    : 10:15 PM
@@ -393,12 +393,12 @@ F4     : ✓ Done
 G4     : Initials
 A5     :   BEFORE
 A6     : 1
-B6     : Preheat griddle, oven and burners for today's menus
+B6     : Preheat griddle, oven and burners for today's menus; ice-point check the probe thermometer (32 °F) and recalibrate it if it's off
 C6     : Kitchen
 D6     : Hot station cook
 E6     : 9:00 AM
 A7     : 2
-B7     : Prep proteins by brand: chicken, beef, fish — cook each to temp, probe in the center: chicken 165 °F, ground beef 155 °F for 17 s, fish 145 °F for 15 s (FDA 3-401.11); keep raw on the bottom shelf, away from ready-to-eat (FDA 3-302.11)
+B7     : Prep proteins by brand: chicken, beef, fish — cook each to temp, probe in the center: chicken 165 °F, ground beef 155 °F for 17 s, fish 145 °F for 15 s (FDA 3-401.11); store raw below ready-to-eat, with raw chicken on the very bottom, under beef and fish (FDA 3-302.11)
 C7     : Kitchen
 D7     : Hot station cook
 E7     : 9:15 AM
@@ -414,7 +414,7 @@ D9     : Hot station cook
 E9     : 9:30 AM
 A10    :   DURING
 A11    : 5
-B11    : Cook to each brand's tickets
+B11    : Cook to each brand's tickets; wash, rinse and sanitize tongs, spatulas and cutting boards at least every 4 h during service, or swap in clean ones (FDA 4-602.11)
 C11    : Kitchen
 D11    : Hot station cook
 E11    : —
@@ -445,7 +445,7 @@ C17    : Kitchen
 D17    : Hot station cook
 E17    : 10:00 PM
 A18    : 11
-B18    : Store prepped items labeled — date marking: ready-to-eat food keeps 7 days at 41 °F, prep day = day 1 (FDA 3-501.17)
+B18    : Store prepped items labeled — date marking: 7 days max at 41 °F, prep day = day 1 (FDA 3-501.17), or the kit's shorter limit (05 "Weekly FIFO Check")
 C18    : Kitchen
 D18    : Hot station cook
 E18    : 10:00 PM
@@ -481,12 +481,12 @@ C6     : Kitchen
 D6     : Cold station cook
 E6     : 9:15 AM
 A7     : 2
-B7     : Prep bases: sushi rice, quinoa, lettuce — sushi rice acidified to hold out of the cooler needs a variance and a HACCP plan from the health department (FDA 3-502.11(D)); otherwise keep it at 41 °F or below, or use time as a public health control: written procedure, time marked, discard at 4 h (FDA 3-501.19)
+B7     : Prep bases: sushi rice, quinoa, lettuce — sushi rice acidified to hold out of the cooler needs a variance from the health department and a HACCP plan it approves (FDA 3-502.11(D)); otherwise keep it at 41 °F or below, or use time as a public health control: written procedure, time marked, discard at 4 h (FDA 3-501.19)
 C7     : Kitchen
 D7     : Cold station cook
 E7     : 9:15 AM
 A8     : 3
-B8     : Fish served RAW, marinated or partly raw (poke, sushi, tartare, ceviche) — parasite destruction: use only fish frozen at −4 °F or below for 7 days, or at −31 °F or below until solid plus 15 h (FDA 3-402.11); keep the freezing record, or the supplier's written statement, for 90 days (FDA 3-402.12); consumer advisory on each app listing (FDA 3-603.11). A regular 0 °F freezer does not count
+B8     : Fish served RAW, marinated or partly raw (poke, sushi, tartare, ceviche) — parasite destruction (FDA 3-402.11): frozen and stored at −4 °F or below for 7 days; or frozen at −31 °F or below until solid and stored at −31 °F or below for 15 h; or frozen at −31 °F or below until solid and stored at −4 °F or below for 24 h. Keep the freezing record, or the supplier's written statement, for 90 days (FDA 3-402.12); consumer advisory on each app listing (FDA 3-603.11). A regular 0 °F freezer does not count
 C8     : Kitchen
 D8     : Cold station cook
 E8     : 9:15 AM
@@ -517,18 +517,18 @@ C14    : Kitchen
 D14    : Cold station cook
 E14    : —
 A15    : 9
-B15    : Keep inserts restocked
+B15    : Keep inserts restocked; swap serving spoons, tongs and cutting boards for clean, sanitized ones at least every 4 h (FDA 4-602.11)
 C15    : Kitchen
 D15    : Cold station cook
 E15    : —
 A16    :   AFTER
 A17    : 10
-B17    : Cover and refrigerate all inserts — date marking: ready-to-eat food keeps 7 days at 41 °F, prep day = day 1 (FDA 3-501.17)
+B17    : Cover and refrigerate all inserts — date marking: 7 days max at 41 °F, prep day = day 1 (FDA 3-501.17), or the kit's shorter limit (05 "Weekly FIFO Check")
 C17    : Kitchen
 D17    : Cold station cook
 E17    : 10:00 PM
 A18    : 11
-B18    : Discard cut fruit/vegetables older than 24 h (kit standard); cut leafy greens, tomatoes and melon are TCS: 41 °F or below and date marked (FDA 3-501.16, 3-501.17)
+B18    : Discard cut fruit older than 24 h and cut vegetables older than 2 days (kit standard, same as the "Weekly FIFO Check" tab in 05); cut leafy greens, tomatoes and melon are TCS: 41 °F or below and date marked (FDA 3-501.16, 3-501.17)
 C18    : Kitchen
 D18    : Cold station cook
 E18    : 10:00 PM
@@ -963,7 +963,7 @@ C20    : Kitchen
 D20    : Manager
 E20    : Monthly
 A21    : 14
-B21    : Hood: filters — the team cleans the filters; the contractor cleans the ductwork ("Quarterly & Annual" tab, NFPA 96)
+B21    : Hood: the team degreases the filters every week ("Weekly Deep Clean" tab in 05); the technician checks the fan, belts and filters monthly; the contractor cleans the ductwork ("Quarterly & Annual" tab, NFPA 96)
 C21    : Kitchen
 D21    : Technician
 E21    : Monthly
@@ -1020,7 +1020,7 @@ C11    : Packing
 D11    : Outgoing shift
 E11    : —
 A12    : 6
-B12    : Fryer oil condition and date of the last change (changed per the fryer manufacturer's instructions)
+B12    : Fryer oil condition (last TPM reading) and date of the last change (changed when the TPM tester says, per the fryer manufacturer)
 C12    : Kitchen
 D12    : Outgoing shift
 E12    : —
@@ -1120,7 +1120,7 @@ C12    : Kitchen
 D12    : Line cook
 E12    : —
 A13    : 7
-B13    : Watch ticket times: target under 10 min prep
+B13    : Watch ticket times: orders ready in 8-12 min
 C13    : Kitchen
 D13    : Line cook
 E13    : —
@@ -1275,12 +1275,12 @@ C6     : Office
 D6     : App manager
 E6     : 10:00 AM
 A7     : 2
-B7     : Turn on all brands in DoorDash, Uber Eats and Grubhub
+B7     : Check that menus are up to date
 C7     : Office
 D7     : App manager
 E7     : 10:30 AM
 A8     : 3
-B8     : Check that menus are up to date
+B8     : 86 the dishes that are out of stock
 C8     : Office
 D8     : App manager
 E8     : 10:30 AM
@@ -1290,7 +1290,7 @@ C9     : Office
 D9     : App manager
 E9     : 10:30 AM
 A10    : 5
-B10    : 86 the dishes that are out of stock
+B10    : Turn on all brands in DoorDash, Uber Eats and Grubhub
 C10    : Office
 D10    : App manager
 E10    : 10:30 AM
@@ -1435,7 +1435,7 @@ CF A5:G24 · expression  · fórmula=['$F5="✓"'] · texto=None
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 B2     : 05 · Cloud Kitchen Cleaning Checklist, Inventory & Maintenance Schedule
 B4     : Quarterly, annual and freezer shelf life
-B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT out and that gets asked for in an inspection: pest control, hood and ductwork cleaning (NFPA 96), extinguishers and hood fire suppression, gas, legionella, refrigeration, used cooking oil, cardboard and plastic packaging pickup, thermometer calibration, insurance, app contracts and sales tax.
+B6     : ▸ The "Quarterly & Annual" tab covers the maintenance you CONTRACT out and that gets asked for in an inspection: pest control, hood and ductwork cleaning (NFPA 96), extinguishers and hood fire suppression, gas, legionella, refrigeration, used cooking oil, cardboard and plastic packaging pickup, grease trap, thermometer calibration, insurance, app contracts and sales tax.
 B7     : ▸ Enter the service ticket number in the green column and sign off once the company has come; the "Frequency" column shows how often each check is due.
 B8     : ▸ At the bottom of "Weekly FIFO Check" there is an editable freezer shelf-life table by food family: one rule for the whole freezer means you either toss good product or keep product that is past its best.
 B10    : How the counter works
@@ -1534,20 +1534,20 @@ C23    : qt
 D23    : 1
 E23    = =IF(B23="","",IF(B23<D23,"⚠️ REORDER","OK"))   → caché None
 A24    : Teriyaki
-C24    : qt
-D24    : 0.5
+C24    : pt
+D24    : 1
 E24    = =IF(B24="","",IF(B24<D24,"⚠️ REORDER","OK"))   → caché None
 A25    : Sriracha
-C25    : qt
-D25    : 0.5
+C25    : pt
+D25    : 1
 E25    = =IF(B25="","",IF(B25<D25,"⚠️ REORDER","OK"))   → caché None
 A26    : House mayo
 C26    : qt
 D26    : 1
 E26    = =IF(B26="","",IF(B26<D26,"⚠️ REORDER","OK"))   → caché None
 A27    : BBQ sauce
-C27    : qt
-D27    : 0.5
+C27    : pt
+D27    : 1
 E27    = =IF(B27="","",IF(B27<D27,"⚠️ REORDER","OK"))   → caché None
 A28    : Olive oil
 C28    : qt
@@ -1634,7 +1634,7 @@ C8     : Kitchen
 D8     : Dishwasher / prep
 E8     : Monday
 A9     : 4
-B9     : Cutting boards: wash, rinse and sanitize (approved sanitizer at label strength, test strip; FDA 4-501.114)
+B9     : Cutting boards: deep clean and inspect — scrub, sanitize (approved sanitizer at label strength, test strip; FDA 4-501.114) and resurface or replace any with deep cuts or stains (in use they are washed, rinsed and sanitized at least every 4 h, FDA 4-602.11)
 C9     : Kitchen
 D9     : Dishwasher / prep
 E9     : Monday
@@ -1722,7 +1722,7 @@ C13    : Storage
 D13    : Line cook
 E13    : Monday
 A14    : 8
-B14    : Check the fryer oil (color, smell, smoke) and log the date of the last change; change it per the fryer manufacturer's instructions
+B14    : Check the fryer oil with a TPM tester or test strips (color, smell and smoke only as a backup) and log the date of the last change; no federal limit: change it when the tester says and per the fryer manufacturer
 C14    : Kitchen
 D14    : Manager
 E14    : Monday
@@ -1743,7 +1743,7 @@ C28    : 2–3 months
 D28    : All the surface is exposed: it goes rancid much sooner than a whole cut
 B29    : Oily fish (salmon, tuna)
 C29    : 2–3 months
-D29    : Fat goes rancid even frozen; freezing only counts as parasite destruction at −4 °F or below for 7 days (or −31 °F or below until solid plus 15 h), with a record (FDA 3-402.11): a regular 0 °F freezer does not get there
+D29    : Fat goes rancid even frozen; freezing only counts as parasite destruction at −4 °F or below for 7 days, or at −31 °F until solid and then 15 h at −31 °F or 24 h at −4 °F (FDA 3-402.11), with a record or the supplier's statement (FDA 3-402.12): a regular 0 °F freezer does not get there
 B30    : White fish and cooked shellfish
 C30    : 3–6 months
 D30    : Freeze in flat portions: they thaw faster and with less loss
@@ -1781,7 +1781,7 @@ C6     : Kitchen
 D6     : Technician
 E6     : Monthly
 A7     : 2
-B7     : Full fryer oil change and deep clean (boil-out) per the fryer manufacturer's instructions (many have built-in filtration designed for hot oil; others need it cooled), with heat-resistant gloves, apron and goggles; used oil goes to the used cooking oil recycler's container; keep the pickup receipt
+B7     : Fryer check per the manufacturer: thermostat and high-limit, drain valve, baskets and the built-in filtration or filter machine; the oil itself is changed whenever the TPM tester says (no federal limit), not once a month — the boil-out is weekly ("Weekly Deep Clean" tab)
 C7     : Kitchen
 D7     : Manager
 E7     : Monthly
@@ -1858,13 +1858,13 @@ B6     : Pest control by a licensed operator: service visit and signed service r
 D6     : Pest control co.
 E6     : Monthly
 A7     : 2
-B7     : Hood and duct cleaning by a certified contractor (NFPA 96): quarterly if high volume (cooking all day, wok or charbroil), semiannual if moderate
+B7     : Hood and duct cleaning by a certified contractor (NFPA 96): quarterly if high volume (24-hour cooking, charbroiling or wok), semiannual if moderate — a multi-brand kitchen cooking from morning to night often goes quarterly: your hood contractor and fire marshal decide
 D7     : Hood cleaning co.
 E7     : Quarterly
 A8     : 3
-B8     : Annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hood fire suppression inspected every 6 months (NFPA 96); hydrostatic tests as the label says (OSHA 1910.157(f))
+B8     : Hood fire suppression inspected every 6 months (NFPA 96) and annual extinguisher maintenance by a licensed fire protection company: new tag and record (OSHA 1910.157); hydrostatic tests as the label says (OSHA 1910.157(f))
 D8     : Fire safety co.
-E8     : Annual
+E8     : Semiannual
 A9     : 4
 B9     : Gas lines and appliance connections (griddle, range, oven, fryer) checked by a licensed pro, as often as your local code requires
 D9     : Licensed plumber
@@ -1879,15 +1879,15 @@ B12    : Refrigeration service by an EPA 608-certified tech: walk-in, reach-ins,
 D12    : Refrigeration tech
 E12    : Annual
 A13    : 7
-B13    : Used fryer oil pickup by a licensed recycler: file the pickup receipts
+B13    : Used fryer oil: pickups by a licensed recycler as often as your volume needs; every quarter, check the receipts are on file and the outdoor container is closed and not leaking
 D13    : Oil recycler
 E13    : Quarterly
 A14    : 8
-B14    : Cardboard and plastic packaging pickup by your waste and recycling hauler: contract current and receipts filed (a ghost kitchen goes through far more packaging than a regular restaurant)
+B14    : Review the cardboard and plastic recycling contract with your hauler (pickups usually run weekly or more: a ghost kitchen goes through far more packaging than a regular restaurant) and keep the grease trap pumping manifests, as often as your local FOG rules require
 D14    : Waste hauler
 E14    : Quarterly
 A15    : 9
-B15    : Calibrate thermometers and probes against a known reference (ice-point method, 32 °F)
+B15    : Once a year, have the oven and griddle thermostats and any built-in probes checked against a known standard; the probe thermometers get an ice-point check (32 °F) at opening (Hot Station tab in 02, task #1) and after any drop
 D15    : Manager
 E15    : Annual
 A16    :   INSURANCE, DELIVERY APPS & SALES TAX
@@ -2152,12 +2152,12 @@ A7     : 2
 B7     : Special holiday menu by brand
 C7     : Office
 D7     : Manager
-E7     : 15 days out
+E7     : 2 weeks out
 A8     : 3
 B8     : Holiday packaging if needed
 C8     : Office
 D8     : Manager
-E8     : 15 days out
+E8     : 2 weeks out
 A9     : 4
 B9     : Plan special hours (Dec 24, 25, 31, Jan 1)
 C9     : Office
@@ -2400,7 +2400,7 @@ B4     : What it solves
 B6     : ▸ This is the checklist for the WHOLE SITE: what gets opened and closed for the entire kitchen, not for each area. Use it as the backbone of the day.
 B7     : ▸ The detail by area (kitchen) is in 01-ghost-kitchen-opening-closing-checklists.xlsx: don't repeat the work, each file covers a different level.
 B9     : How to use
-B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs.
+B11    : ▸ Print the shift sheet (opening or closing) or use it on a tablet; the shift manager assigns tasks and each person initials theirs. In a shared kitchen facility (a unit in a cloud kitchen park or a commissary), mark N/A what the facility operator handles — alarm, HVAC, restrooms, common areas, driver lobby — and keep your own unit's tasks.
 B12    : ▸ Each task comes with Assigned to and Due by preloaded with the kit's criteria: adjust them to your real schedule, they are green cells.
 B14    : Editable cells
 B16    : ▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.
@@ -2442,7 +2442,7 @@ A5     : 1
 B5     : Disarm the alarm
 C5     : Entrance
 D5     : Shift manager
-E5     : 9:00 AM
+E5     : 8:45 AM
 A6     : 2
 B6     : Turn on the main lights (interior and exterior)
 C6     : General
@@ -2641,7 +2641,7 @@ CF A5:H24 · expression  · fórmula=['$F5="✓"'] · texto=None
     pie: AI Chef Pro · aichef.pro · Page &P of &N
 B2     : 09 · Cash Drawer Opening & Closing: Count Sheet, Z Report & Over/Short Log
 B4     : What it solves
-B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance.
+B6     : ▸ The daily cash count: starting bank, drawer count by denomination, POS Z report and over/short — plus the monthly log to see at a glance which days didn't balance. In a delivery-only kitchen the app orders are prepaid and paid out by each app (reconcile them against each app's payout report, 01 "Kitchen Closing", task #18): use this file for what is paid at your own counter — walk-in pickup, phone or own-website orders paid on pickup.
 B8     : How to use — Cash Drawer Opening
 B10    : ▸ Count the starting bank and type the amount in the GREEN cell "Starting bank (opening float)". The closing sheet reads it from there: no need to retype it.
 B12    : How to use — Cash Drawer Closing
@@ -3314,7 +3314,7 @@ C13    : Special takeout menu, careful packaging and extra staff for the midday 
 D13    : 2 weeks
 A14    : May
 B14    : Memorial Day (last Monday)
-C14    : Summer kicks off: extra staff and summer stock, review prep times for the peak; decide the holiday hours and post them in each app
+C14    : Summer kicks off: decide the holiday hours and post them in each app, set up the summer menu and plan staffing for the slower summer weeks
 D14    : 1 month
 A15    : May–June
 B15    : Graduation season
@@ -3329,8 +3329,8 @@ B17    : Jul 4 — Independence Day
 C17    : Decide the hours (many close or open daytime only) and post them in each app; big party orders with a set delivery time
 D17    : 1 week
 A18    : July–August
-B18    : Summer peak season
-C18    : Extra staff, extended hours and a summer menu by brand
+B18    : Summer slowdown (warm weather, vacations, school break)
+C18    : Delivery usually dips: trim prep and shifts, keep the hours steady, push lunch combos and hot-weather items (bowls, salads, cold drinks) and plan the fall menu; near beaches, tourist areas or summer events it can run the other way
 D18    : Ongoing
 A19    : September
 B19    : Labor Day (1st Monday) + football season
