@@ -2,18 +2,18 @@
  "meta": {
   "kit": "catering",
   "producto": "Catering Checklists Kit Pro",
-  "n_pendientes": 526,
-  "n_palabras": 5566,
+  "n_pendientes": 515,
+  "n_palabras": 5432,
   "motivos": {
-   "nueva": 519,
+   "nueva": 508,
    "contexto": 7
   },
-  "n_heredadas": 41,
+  "n_heredadas": 31,
   "heredadas_por_via": {
-   "exacta": 41
+   "exacta": 31
   },
   "heredadas_por_fuente": {
-   "base": 41
+   "base": 31
   },
   "salida_traductor": "textos_en/G1.json = {id: en} con TODOS los ids de esta lista (ni uno más)",
   "referencias": [
@@ -1172,7 +1172,7 @@
    "donde": [
     "02 · Transporte · B26"
    ],
-   "adaptar": "Sin el «máx. 2 h» español: lo frío a 41 °F o menos y lo caliente a 135 °F o más todo el trayecto; si algo viaja sin control de temperatura, va con time as a public health control (FDA Food Code 3-501.19): 4 h como máximo con la hora de salida marcada",
+   "adaptar": "Ronda 1 M1: las 4 h cuentan desde que sale de 41 / 135 °F (puede ser al emplatar) e incluyen el trayecto Y el servicio en el venue; a las 4 h se descarta; procedimiento escrito. Sin el «máx. 2 h» español: lo frío a 41 °F o menos y lo caliente a 135 °F o más todo el trayecto; si algo viaja sin control de temperatura, va con time as a public health control (FDA Food Code 3-501.19): 4 h como máximo con la hora de salida marcada",
    "motivo": "nueva"
   },
   {
@@ -2514,7 +2514,7 @@
     "sala (del evento) → the room / dining room del venue; equipo de sala → service team; plano de sala → floor plan",
     "propinas → tips / gratuities; service charge ≠ gratuity"
    ],
-   "adaptar": "Propinas (gratuities) según la política de la casa y las normas de tu estado; un service charge obligatorio NO es propina: para el IRS es salario (Rev. Rul. 2012-18)",
+   "adaptar": "Propinas (gratuities) según la política de la casa y las normas de tu estado; un service charge obligatorio NO es propina: lo que se paga de él al personal es salario para el IRS (Rev. Rul. 2012-18); managers y supervisores no pueden quedarse parte de las propinas del equipo (FLSA)",
    "motivo": "nueva"
   },
   {
@@ -3530,7 +3530,7 @@
     "sala (del evento) → the room / dining room del venue; equipo de sala → service team; plano de sala → floor plan",
     "Glosario: mermas → waste (waste log)"
    ],
-   "adaptar": "Sobrantes US: lo que se mantuvo a 41 °F o menos (o a 135 °F o más) y no salió a sala: enfriar (de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más, FDA Food Code 3-501.14), etiquetar y fechar; lo que estuvo expuesto en el buffet o bajo time as a public health control: se descarta (no vuelve a la cámara)",
+   "adaptar": "Sobrantes US: lo que se mantuvo a 41 °F o menos (o a 135 °F o más) y no salió a sala: enfriar lo caliente (de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más, FDA Food Code 3-501.14) y lo frío, directo a 41 °F o menos; etiquetar y fechar; lo que estuvo expuesto en el buffet o bajo time as a public health control: se descarta (no vuelve a la cámara)",
    "motivo": "nueva"
   },
   {
@@ -4046,7 +4046,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
+   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»); aviso al consumidor (consumer advisory) de crudo o poco hecho en el cartel de la estación o la carta (FDA Food Code 3-603.11)",
    "motivo": "nueva"
   },
   {
@@ -4062,7 +4062,7 @@
     "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
     "briefing → pre-event briefing (team huddle)"
    ],
-   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, marisco, frutos de cáscara, cacahuete, trigo, soja y sésamo); en UK, los 14",
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos (crustacean shellfish; los moluscos no), frutos de cáscara, cacahuete, trigo, soja y sésamo); en UK, los 14",
    "motivo": "nueva"
   },
   {
@@ -4274,7 +4274,7 @@
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
-   "adaptar": "Al aire libre: lo caliente a 135 °F o más y lo frío a 41 °F o menos; Time as a public health control (FDA Food Code 3-501.19): lo que va sin control de temperatura, 4 h como máximo desde que sale (marca la hora) y después se sirve o se descarta; lo frío puede llegar a 6 h si sale a 41 °F o menos y nunca pasa de 70 °F; necesita procedimiento escrito y, según tu condado, aviso al departamento de salud. Sin la regla española de «1 h con más de 30 °C»: con calor, reponer más a menudo y en menos cantidad",
+   "adaptar": "Al aire libre: lo caliente a 135 °F o más y lo frío a 41 °F o menos; Time as a public health control (FDA Food Code 3-501.19): marca la hora en que sale del control de temperatura y sirve DENTRO de las 4 h; lo que quede a las 4 h se descarta y no puede volver al caliente ni al frío para reiniciar el reloj; lo frío puede llegar a 6 h solo si sale a 41 °F o menos y vigilas que no pase de 70 °F: se descarta en cuanto pasa, y a las 6 h; necesita procedimiento escrito y, según tu condado, aviso al departamento de salud. Sin la regla española de «1 h con más de 30 °C»: con calor, reponer más a menudo y en menos cantidad",
    "motivo": "nueva"
   },
   {
@@ -4587,37 +4587,6 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0501",
-   "es": "Cargar los isotermos de los eventos que salen primero y registrar la temperatura de salida — anota la lectura: ____ °C (el detalle de la carga va en la hoja «Transporte» de 02-partidas-cocina.xlsx)",
-   "grupo": "G2",
-   "palabras": 35,
-   "donde": [
-    "08 · Apertura del Negocio · B9"
-   ],
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
-    "Roles de catering US (mapas.GLOSARIO): camarero → server; chef de evento → event chef; maître / jefe de sala → banquet captain; barman → bartender; encargado → ops manager; cocineros → cooks; partida / estación → station; runner se queda",
-    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
-    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
-    "carga y descarga en el venue → load-in / load-out; muelle → loading dock",
-    "GN → hotel pans; contenedor isotérmico / isotermo → insulated food carrier («cambro»); furgoneta isoterma → insulated / refrigerated van"
-   ],
-   "adaptar": "°F: lo caliente a 135 °F o más y lo frío a 41 °F o menos (FDA Food Code 3-501.16), al cargar, en el trayecto y al descargar; coletilla «— log reading: ____ °F»; «Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
-   "cita_rotulos": [
-    {
-     "es": "Transporte",
-     "en": "Transport & Delivery"
-    }
-   ],
-   "cita_ficheros": [
-    {
-     "es": "02-partidas-cocina.xlsx",
-     "en": "02-catering-transport-delivery-checklist.xlsx"
-    }
-   ],
-   "motivo": "nueva"
-  },
-  {
    "id": "c0505",
    "es": "Entregar a cada conductor la hoja de ruta de su vehículo: eventos, direcciones, horas de entrega y teléfono de contacto",
    "grupo": "G2",
@@ -4728,36 +4697,6 @@
    "motivo": "nueva"
   },
   {
-   "id": "c0520",
-   "es": "Verificar vehículos de transporte",
-   "grupo": "G2",
-   "palabras": 4,
-   "donde": [
-    "08 · Apertura del Negocio · B20"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0521",
-   "es": "Comprobar equipamiento portátil",
-   "grupo": "G2",
-   "palabras": 3,
-   "donde": [
-    "08 · Apertura del Negocio · B21"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0522",
-   "es": "Revisar orden de eventos del día",
-   "grupo": "G2",
-   "palabras": 6,
-   "donde": [
-    "08 · Apertura del Negocio · B22"
-   ],
-   "motivo": "nueva"
-  },
-  {
    "id": "c0524",
    "es": "Cierre del Negocio — Catering / Eventos",
    "grupo": "G2",
@@ -4770,62 +4709,6 @@
    ],
    "motivo": "contexto: Restaurant",
    "base_en": "Restaurant Closing Checklist"
-  },
-  {
-   "id": "c0526",
-   "es": "Apagar los equipos del obrador que no queden en marcha (hornos, freidora, campana) y dejar cámaras y abatidor encendidos",
-   "grupo": "G2",
-   "palabras": 19,
-   "donde": [
-    "08 · Cierre del Negocio · B5"
-   ],
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
-    "Glosario: cámara → walk-in cooler / walk-in freezer",
-    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
-    "obrador / cocina central → commissary (kitchen)"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0528",
-   "es": "Verificar que no queda personal ni visitas en el obrador antes de cerrar",
-   "grupo": "G2",
-   "palabras": 13,
-   "donde": [
-    "08 · Cierre del Negocio · B6"
-   ],
-   "pistas": [
-    "obrador / cocina central → commissary (kitchen)"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0529",
-   "es": "Recoger y guardar el material de exterior que haya vuelto (carpas, sombrillas y estufas)",
-   "grupo": "G2",
-   "palabras": 14,
-   "donde": [
-    "08 · Cierre del Negocio · B7"
-   ],
-   "pistas": [
-    "carpa → tent; finca → estate / ranch venue; toldo → canopy",
-    "estufas de exterior → patio heaters (propano)"
-   ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0534",
-   "es": "Despejar y baldear el muelle de carga: sin carros, sin palés y sin residuos",
-   "grupo": "G2",
-   "palabras": 14,
-   "donde": [
-    "08 · Cierre del Negocio · B12"
-   ],
-   "pistas": [
-    "carga y descarga en el venue → load-in / load-out; muelle → loading dock"
-   ],
-   "motivo": "nueva"
   },
   {
    "id": "c0549",
@@ -4962,7 +4845,7 @@
    "pistas": [
     "presupuesto → quote / proposal; anticipo → deposit; saldo → balance; factura → invoice; IVA → sales tax; transferencia → ACH / bank transfer"
    ],
-   "adaptar": "Qué lleva sales tax lo decide tu estado (consúltalo con tu CPA o el department of revenue): en muchos la comida, la bebida, los alquileres y el service charge obligatorio. Un service charge obligatorio NO es propina: para el IRS es salario (Rev. Rul. 2012-18); la propina (gratuity) la decide el cliente, va aparte y es del equipo. Un cliente exento (tax-exempt) necesita su certificado de exención en el expediente",
+   "adaptar": "Qué lleva sales tax lo decide tu estado (consúltalo con tu CPA o el department of revenue): en muchos la comida, la bebida, los alquileres y el service charge obligatorio. Un service charge obligatorio NO es propina: es ingreso del negocio y lo que se paga de él al personal es salario para el IRS (Rev. Rul. 2012-18); en algunos estados (NY, MA) un service charge sin aviso claro se presume del personal: la política, en el contrato; la propina (gratuity) la decide el cliente, va aparte y es del equipo. Un cliente exento (tax-exempt) necesita su certificado de exención en el expediente",
    "motivo": "nueva"
   },
   {
@@ -4992,7 +4875,7 @@
     "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
     "rótulos y estados EN del 09 (mapas.POR_CELDA y CLAVES): PENDIENTE DE COBRO → BALANCE DUE; ESTADO → STATUS; TOTAL FACTURA → INVOICE TOTAL; «Cobrado» → \"Paid\"; «Pendiente» → \"Pending\"; «VENCIDO» → \"OVERDUE\"; «Efectivo neto del evento» → \"Net cash from the event\"; fondo de la barra → cash bar starting bank"
    ],
-   "adaptar": "La tabla de efectivo trae billetes y monedas de EE. UU. ($100 … 1¢; un «25¢ roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y cambia el rótulo y el valor de cada fila",
+   "adaptar": "La tabla de efectivo trae billetes y monedas de EE. UU. ($100 … 1¢; un «25¢ roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y cambia el rótulo de cada fila y el multiplicador de su fórmula de Subtotal",
    "cita_rotulos": [
     {
      "es": "Cobrado tras el evento",
@@ -5837,7 +5720,7 @@
     "presupuesto → quote / proposal; anticipo → deposit; saldo → balance; factura → invoice; IVA → sales tax; transferencia → ACH / bank transfer",
     "pestañas del 09 (aunque no vayan entre comillas): Antes del Evento → «Before the Event»; Después del Evento → «After the Event»; Liquidación del Evento → «Event Settlement»; Registro de Eventos → «Event Billing Log»"
    ],
-   "adaptar": "Tu tipo combinado (estatal + local), p. ej. 0.0825 para el 8.25 %. «Event Settlement» lo aplica a la base gravable; aquí se aplica a toda la base, así que «Invoice total» es una estimación si parte del evento está exenta: la cifra exacta, en «Event Settlement»",
+   "adaptar": "Ronda 1 M9: empieza por «0 = no sales tax until you enter your combined rate». Tu tipo combinado (estatal + local), p. ej. 0.0825 para el 8.25 %. «Event Settlement» lo aplica a la base gravable; aquí se aplica a toda la base, así que «Invoice total» es una estimación si parte del evento está exenta: la cifra exacta, en «Event Settlement»",
    "cita_rotulos": [
     {
      "es": "Liquidación del Evento",
@@ -6297,7 +6180,7 @@
    "donde": [
     "B02 · Calendario · D5"
    ],
-   "adaptar": "Evento EN: «Early Feb — Super Bowl Sunday (2nd Sunday)». Sustituye a Reyes / roscón. Tareas: bandejas para ver el partido y catering de entrega (drop-off): wings, sliders, dips; pedidos cerrados la semana anterior",
+   "adaptar": "Evento EN: «Feb — Super Bowl Sunday (2nd Sunday)». Sustituye a Reyes / roscón. Tareas: bandejas para ver el partido y catering de entrega (drop-off): wings, sliders, dips; pedidos cerrados la semana anterior",
    "motivo": "nueva"
   },
   {
@@ -6308,39 +6191,6 @@
    "donde": [
     "B02 · Calendario · D6"
    ],
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0750",
-   "es": "Menús infantiles + adultos, decoración temática",
-   "grupo": "G2",
-   "palabras": 5,
-   "donde": [
-    "B02 · Calendario · D7"
-   ],
-   "adaptar": "Evento EN: «April — First Communion season (starts)». En EE. UU. las primeras comuniones van sobre todo de abril a mayo. Mismas tareas del ES (menú infantil + adultos, decoración temática)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0752",
-   "es": "Comidas familiares de mediodía y detalles de empresa; menús cerrados y tartas por encargo",
-   "grupo": "G2",
-   "palabras": 14,
-   "donde": [
-    "B02 · Calendario · D8"
-   ],
-   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day». Sustituye al Día del Padre. Tareas: fiestas de empresa y reuniones familiares con menú temático; el alcohol solo con tu licencia o con bartenders con licencia (21+ con ID)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0754",
-   "es": "Menús sin carne, bacalao, potajes, postres tradicionales",
-   "grupo": "G2",
-   "palabras": 7,
-   "donde": [
-    "B02 · Calendario · D9"
-   ],
-   "adaptar": "Evento EN: «Mar–Apr — Easter & Passover (dates vary)». Sustituye a Semana Santa (sin bacalao ni potaje). Tareas: brunch y comidas familiares de Pascua (jamón, cordero, postres de temporada); séder de Passover si tus clientes lo piden (kosher solo con cocina y supervisión certificadas)",
    "motivo": "nueva"
   },
   {
@@ -6361,7 +6211,7 @@
    "donde": [
     "B02 · Calendario · D11"
    ],
-   "adaptar": "Evento EN: «May — First Communions (peak) & Mother's Day (2nd Sunday)». Mismas tareas del ES (máxima demanda: 2-3 eventos a la vez); añade los brunch de Mother's Day por encargo",
+   "adaptar": "Evento EN: «May — First Communions & quinceaneras (peak) + Mother's Day (2nd Sunday)». Mismas tareas del ES (máxima demanda: 2-3 eventos a la vez); añade los brunch de Mother's Day por encargo",
    "motivo": "nueva"
   },
   {

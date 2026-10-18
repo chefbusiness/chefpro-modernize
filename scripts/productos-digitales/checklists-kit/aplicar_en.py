@@ -90,6 +90,9 @@ HOJA_INSTR_EN = mapas.HOJAS['Instrucciones']
 CLAVES = mapas.CLAVES
 CAMPO_DV = {'dv-error-titulo': 'errorTitle', 'dv-error': 'error', 'dv-prompt-titulo': 'promptTitle', 'dv-prompt': 'prompt'}
 DV_MENSAJES_EN = getattr(mapas, 'DV_MENSAJES_EN', OrderedDict())      # arreglos por aparición (si los hubiera)
+# vertical: (libro, hoja ES, sqref) → (fórmula ES, fórmula EN) de una regla de CF cambiada a propósito (desviación
+# declarada en su SPEC; catering ronda 1 M5). Vacío en el base, el bar y la cafetería.
+CF_POR_CELDA = getattr(mapas, 'CF_POR_CELDA', OrderedDict())
 RELLENO = 'PENDING-EN %s'                                             # --parcial: marca de lo que aún no está
 RX_RELLENO = re.compile(r'PENDING-EN c\d{4}')
 PT_LINEA = 1.36                                                       # alto de línea ≈ 1.36 × cuerpo (pt)
@@ -453,6 +456,17 @@ def dv_lista_en(items, donde):
     return dv_lista(out)
 
 
+def cf_formula_en(corto, h_es, sqref, f, T):
+    """Fórmula EN de una regla de CF: CF_POR_CELDA (desviación declarada) o HOJAS + CLAVES. (nueva, por_celda)."""
+    k = (corto, h_es, sqref)
+    if k in CF_POR_CELDA:
+        es, en = CF_POR_CELDA[k]
+        if f != es:
+            raise Aborta('%s %s CF %s: CF_POR_CELDA espera %r y el ES trae %r' % (corto, h_es, sqref, es, f))
+        return en, True
+    return T.formula(f), False
+
+
 def reescribir_dv_cf(L, T):
     n = OrderedDict([('dv_listas', 0), ('dv_personalizadas', 0), ('dv_ref', 0), ('dv_mensajes', 0),
                      ('dv_mensajes_fijados', 0), ('cf_reglas', 0), ('cf_text', 0)])
@@ -499,11 +513,17 @@ def reescribir_dv_cf(L, T):
         for cf in ws.conditional_formatting:
             for regla in cf.rules:
                 if regla.formula:
-                    regla.formula = [T.formula(x) for x in regla.formula]
+                    nuevas = [cf_formula_en(L.corto, h_es, str(cf.sqref), x, T) for x in regla.formula]
+                    regla.formula = [x for x, _pc in nuevas]
                     n['cf_reglas'] += 1
+                    if any(pc for _x, pc in nuevas):
+                        n['cf_por_celda'] = n.get('cf_por_celda', 0) + 1
                 if regla.text:
                     regla.text = clave_en(regla.text, 'CF %s %s' % (ws.title, cf.sqref))
                     n['cf_text'] += 1
+    if n.get('cf_por_celda', 0) != sum(1 for k in CF_POR_CELDA if k[0] == L.corto):
+        raise Aborta('%s: CF_POR_CELDA aplicadas %d de %d' % (L.corto, n.get('cf_por_celda', 0),
+                                                             sum(1 for k in CF_POR_CELDA if k[0] == L.corto)))
     sin_usar = [k for k in DV_MENSAJES_EN if k[0] == L.corto and k not in usados]
     if sin_usar:
         raise Aborta('%s: DV_MENSAJES_EN sin DV donde aplicarse: %r' % (L.corto, sin_usar))

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-18T00:20:45Z",
+  "generado": "2026-10-18T00:47:39Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-catering",
   "commit": "810e54c9",

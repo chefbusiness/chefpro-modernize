@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generado": "2026-10-18T00:20:45Z",
+  "generado": "2026-10-18T00:47:39Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-catering",
   "commit": "810e54c9",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 796,
-  "n_traducir": 567,
-  "n_adaptar": 101,
-  "n_palabras_subagentes": 5972,
+  "n_traducir": 546,
+  "n_adaptar": 96,
+  "n_palabras_subagentes": 5774,
   "n_apariciones": 1789,
   "grupos": [
    {
@@ -92,15 +92,15 @@
      "B01",
      "B02"
     ],
-    "n_cadenas": 260,
-    "n_adaptar": 45,
-    "n_palabras": 2996
+    "n_cadenas": 239,
+    "n_adaptar": 40,
+    "n_palabras": 2798
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 70 mapa-glosario, 26 mapa-hoja, 133 regenerar",
-    "n_cadenas": 229,
-    "n_palabras": 858
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 67 mapa-glosario, 26 mapa-hoja, 157 regenerar",
+    "n_cadenas": 250,
+    "n_palabras": 1056
    }
   ],
   "excluidas": {
@@ -3084,7 +3084,7 @@
    "n_apariciones": 1,
    "palabras": 9,
    "con_cifra": true,
-   "adaptar": "Sin el «máx. 2 h» español: lo frío a 41 °F o menos y lo caliente a 135 °F o más todo el trayecto; si algo viaja sin control de temperatura, va con time as a public health control (FDA Food Code 3-501.19): 4 h como máximo con la hora de salida marcada",
+   "adaptar": "Ronda 1 M1: las 4 h cuentan desde que sale de 41 / 135 °F (puede ser al emplatar) e incluyen el trayecto Y el servicio en el venue; a las 4 h se descarta; procedimiento escrito. Sin el «máx. 2 h» español: lo frío a 41 °F o menos y lo caliente a 135 °F o más todo el trayecto; si algo viaja sin control de temperatura, va con time as a public health control (FDA Food Code 3-501.19): 4 h como máximo con la hora de salida marcada",
    "sha1": "4c31157b56d5",
    "donde": [
     {
@@ -5522,7 +5522,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
-   "adaptar": "Propinas (gratuities) según la política de la casa y las normas de tu estado; un service charge obligatorio NO es propina: para el IRS es salario (Rev. Rul. 2012-18)",
+   "adaptar": "Propinas (gratuities) según la política de la casa y las normas de tu estado; un service charge obligatorio NO es propina: lo que se paga de él al personal es salario para el IRS (Rev. Rul. 2012-18); managers y supervisores no pueden quedarse parte de las propinas del equipo (FLSA)",
    "pistas": [
     "sala (del evento) → the room / dining room del venue; equipo de sala → service team; plano de sala → floor plan",
     "propinas → tips / gratuities; service charge ≠ gratuity"
@@ -7388,7 +7388,7 @@
    "n_apariciones": 1,
    "palabras": 36,
    "con_cifra": false,
-   "adaptar": "Sobrantes US: lo que se mantuvo a 41 °F o menos (o a 135 °F o más) y no salió a sala: enfriar (de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más, FDA Food Code 3-501.14), etiquetar y fechar; lo que estuvo expuesto en el buffet o bajo time as a public health control: se descarta (no vuelve a la cámara)",
+   "adaptar": "Sobrantes US: lo que se mantuvo a 41 °F o menos (o a 135 °F o más) y no salió a sala: enfriar lo caliente (de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más, FDA Food Code 3-501.14) y lo frío, directo a 41 °F o menos; etiquetar y fechar; lo que estuvo expuesto en el buffet o bajo time as a public health control: se descarta (no vuelve a la cámara)",
    "pistas": [
     "sala (del evento) → the room / dining room del venue; equipo de sala → service team; plano de sala → floor plan",
     "Glosario: mermas → waste (waste log)"
@@ -8375,7 +8375,7 @@
    "n_apariciones": 1,
    "palabras": 36,
    "con_cifra": true,
-   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
+   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»); aviso al consumidor (consumer advisory) de crudo o poco hecho en el cartel de la estación o la carta (FDA Food Code 3-603.11)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -8399,7 +8399,7 @@
    "n_apariciones": 1,
    "palabras": 21,
    "con_cifra": false,
-   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, marisco, frutos de cáscara, cacahuete, trigo, soja y sésamo); en UK, los 14",
+   "adaptar": "Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos (crustacean shellfish; los moluscos no), frutos de cáscara, cacahuete, trigo, soja y sésamo); en UK, los 14",
    "pistas": [
     "Roles de catering US (mapas.GLOSARIO): camarero → server; chef de evento → event chef; maître / jefe de sala → banquet captain; barman → bartender; encargado → ops manager; cocineros → cooks; partida / estación → station; runner se queda",
     "D10: los 9 alérgenos principales de EE. UU. (nota UK: 14)",
@@ -8803,7 +8803,7 @@
    "n_apariciones": 1,
    "palabras": 34,
    "con_cifra": true,
-   "adaptar": "Al aire libre: lo caliente a 135 °F o más y lo frío a 41 °F o menos; Time as a public health control (FDA Food Code 3-501.19): lo que va sin control de temperatura, 4 h como máximo desde que sale (marca la hora) y después se sirve o se descarta; lo frío puede llegar a 6 h si sale a 41 °F o menos y nunca pasa de 70 °F; necesita procedimiento escrito y, según tu condado, aviso al departamento de salud. Sin la regla española de «1 h con más de 30 °C»: con calor, reponer más a menudo y en menos cantidad",
+   "adaptar": "Al aire libre: lo caliente a 135 °F o más y lo frío a 41 °F o menos; Time as a public health control (FDA Food Code 3-501.19): marca la hora en que sale del control de temperatura y sirve DENTRO de las 4 h; lo que quede a las 4 h se descarta y no puede volver al caliente ni al frío para reiniciar el reloj; lo frío puede llegar a 6 h solo si sale a 41 °F o menos y vigilas que no pase de 70 °F: se descarta en cuanto pasa, y a las 6 h; necesita procedimiento escrito y, según tu condado, aviso al departamento de salud. Sin la regla española de «1 h con más de 30 °C»: con calor, reponer más a menudo y en menos cantidad",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -9227,29 +9227,6 @@
      "f": "09",
      "h": "Instrucciones",
      "c": "B28",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0470",
-   "es": "▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma y Notas.",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 17,
-   "con_cifra": false,
-   "pistas": [
-    "D8: nombres de columna = mapas.GLOSARIO (Assigned to, Due by, ✓ Done, Initials, Notes)"
-   ],
-   "sha1": "6d36cefaf4d1",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Instrucciones",
-     "c": "B16",
      "t": "celda",
      "tr": "traducir"
     }
@@ -9891,91 +9868,6 @@
    ]
   },
   {
-   "id": "c0500",
-   "es": "Abrir persianas / puerta principal",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "adaptar": "Persianas → security gate / shutters",
-   "sha1": "84184a9d7c9a",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Apertura del Negocio",
-     "c": "B8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0501",
-   "es": "Cargar los isotermos de los eventos que salen primero y registrar la temperatura de salida — anota la lectura: ____ °C (el detalle de la carga va en la hoja «Transporte» de 02-partidas-cocina.xlsx)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 35,
-   "con_cifra": true,
-   "cita_rotulos": [
-    {
-     "es": "Transporte",
-     "en": "Transport & Delivery"
-    }
-   ],
-   "cita_ficheros": [
-    {
-     "es": "02-partidas-cocina.xlsx",
-     "en": "02-catering-transport-delivery-checklist.xlsx"
-    }
-   ],
-   "adaptar": "°F: lo caliente a 135 °F o más y lo frío a 41 °F o menos (FDA Food Code 3-501.16), al cargar, en el trayecto y al descargar; coletilla «— log reading: ____ °F»; «Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN: aichef.pro/en/digital-products/haccp-templates)",
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
-    "Roles de catering US (mapas.GLOSARIO): camarero → server; chef de evento → event chef; maître / jefe de sala → banquet captain; barman → bartender; encargado → ops manager; cocineros → cooks; partida / estación → station; runner se queda",
-    "D5: cada fichero citado → su nombre EN tal cual (ver cita_ficheros)",
-    "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
-    "carga y descarga en el venue → load-in / load-out; muelle → loading dock",
-    "GN → hotel pans; contenedor isotérmico / isotermo → insulated food carrier («cambro»); furgoneta isoterma → insulated / refrigerated van"
-   ],
-   "sha1": "a2d7cc68ba32",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Apertura del Negocio",
-     "c": "B9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0503",
-   "es": "Encender TPV / POS / datáfono",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "pistas": [
-    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
-   ],
-   "sha1": "43cd53da6183",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Apertura del Negocio",
-     "c": "B10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0505",
    "es": "Entregar a cada conductor la hoja de ruta de su vehículo: eventos, direcciones, horas de entrega y teléfono de contacto",
    "grupo": "G2",
@@ -10186,66 +10078,6 @@
    ]
   },
   {
-   "id": "c0520",
-   "es": "Verificar vehículos de transporte",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "sha1": "fb03801f771c",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Apertura del Negocio",
-     "c": "B20",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0521",
-   "es": "Comprobar equipamiento portátil",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 3,
-   "con_cifra": false,
-   "sha1": "8b185fa883e5",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Apertura del Negocio",
-     "c": "B21",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0522",
-   "es": "Revisar orden de eventos del día",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "sha1": "87726ec65acd",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Apertura del Negocio",
-     "c": "B22",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0523",
    "es": "Firma del responsable: _________________________     Hora de finalización: ________",
    "grupo": "G2",
@@ -10293,245 +10125,6 @@
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "A1",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0526",
-   "es": "Apagar los equipos del obrador que no queden en marcha (hornos, freidora, campana) y dejar cámaras y abatidor encendidos",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 19,
-   "con_cifra": false,
-   "pistas": [
-    "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
-    "Glosario: cámara → walk-in cooler / walk-in freezer",
-    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood",
-    "obrador / cocina central → commissary (kitchen)"
-   ],
-   "sha1": "268db89cbd5d",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B5",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0528",
-   "es": "Verificar que no queda personal ni visitas en el obrador antes de cerrar",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 13,
-   "con_cifra": false,
-   "pistas": [
-    "obrador / cocina central → commissary (kitchen)"
-   ],
-   "sha1": "aaad35fe6b0d",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0529",
-   "es": "Recoger y guardar el material de exterior que haya vuelto (carpas, sombrillas y estufas)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 14,
-   "con_cifra": false,
-   "pistas": [
-    "carpa → tent; finca → estate / ranch venue; toldo → canopy",
-    "estufas de exterior → patio heaters (propano)"
-   ],
-   "sha1": "73e8d8605e3c",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B7",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0530",
-   "es": "Apagar TPV / POS / datáfono (o dejar en standby)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "pistas": [
-    "D12: TPV → POS; datáfono → card terminal; Z del TPV → POS Z report; X → X report; arqueo → cash count; descuadre → over/short; fondo de caja → starting bank"
-   ],
-   "sha1": "c6673c0db64a",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0531",
-   "es": "Cerrar persianas y puertas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "sha1": "24a08603fd51",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0532",
-   "es": "Apagar luces (dejar mínimas de seguridad)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "sha1": "9793a17f0cd2",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0533",
-   "es": "Apagar climatización",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 2,
-   "con_cifra": false,
-   "sha1": "c79629b63dda",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B11",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0534",
-   "es": "Despejar y baldear el muelle de carga: sin carros, sin palés y sin residuos",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 14,
-   "con_cifra": false,
-   "pistas": [
-    "carga y descarga en el venue → load-in / load-out; muelle → loading dock"
-   ],
-   "sha1": "f91d7a5ad470",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B12",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0535",
-   "es": "Comprobar que ventanas están cerradas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "sha1": "8231ec189b7d",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B13",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0536",
-   "es": "Vaciar papeleras de zonas comunes y baños",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "sha1": "a671c7fe62ad",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B14",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0537",
-   "es": "Revisión final de seguridad (gas, agua, enchufes)",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "sha1": "5144c3677375",
-   "donde": [
-    {
-     "f": "08",
-     "h": "Cierre del Negocio",
-     "c": "B15",
      "t": "celda",
      "tr": "traducir"
     }
@@ -10750,7 +10343,7 @@
    "n_apariciones": 1,
    "palabras": 50,
    "con_cifra": true,
-   "adaptar": "Qué lleva sales tax lo decide tu estado (consúltalo con tu CPA o el department of revenue): en muchos la comida, la bebida, los alquileres y el service charge obligatorio. Un service charge obligatorio NO es propina: para el IRS es salario (Rev. Rul. 2012-18); la propina (gratuity) la decide el cliente, va aparte y es del equipo. Un cliente exento (tax-exempt) necesita su certificado de exención en el expediente",
+   "adaptar": "Qué lleva sales tax lo decide tu estado (consúltalo con tu CPA o el department of revenue): en muchos la comida, la bebida, los alquileres y el service charge obligatorio. Un service charge obligatorio NO es propina: es ingreso del negocio y lo que se paga de él al personal es salario para el IRS (Rev. Rul. 2012-18); en algunos estados (NY, MA) un service charge sin aviso claro se presume del personal: la política, en el contrato; la propina (gratuity) la decide el cliente, va aparte y es del equipo. Un cliente exento (tax-exempt) necesita su certificado de exención en el expediente",
    "pistas": [
     "presupuesto → quote / proposal; anticipo → deposit; saldo → balance; factura → invoice; IVA → sales tax; transferencia → ACH / bank transfer"
    ],
@@ -10805,7 +10398,7 @@
      "en": "Paid after the event"
     }
    ],
-   "adaptar": "La tabla de efectivo trae billetes y monedas de EE. UU. ($100 … 1¢; un «25¢ roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y cambia el rótulo y el valor de cada fila",
+   "adaptar": "La tabla de efectivo trae billetes y monedas de EE. UU. ($100 … 1¢; un «25¢ roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y cambia el rótulo de cada fila y el multiplicador de su fórmula de Subtotal",
    "pistas": [
     "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
     "rótulos y estados EN del 09 (mapas.POR_CELDA y CLAVES): PENDIENTE DE COBRO → BALANCE DUE; ESTADO → STATUS; TOTAL FACTURA → INVOICE TOTAL; «Cobrado» → \"Paid\"; «Pendiente» → \"Pending\"; «VENCIDO» → \"OVERDUE\"; «Efectivo neto del evento» → \"Net cash from the event\"; fondo de la barra → cash bar starting bank"
@@ -12269,7 +11862,7 @@
      "en": "Event Settlement"
     }
    ],
-   "adaptar": "Tu tipo combinado (estatal + local), p. ej. 0.0825 para el 8.25 %. «Event Settlement» lo aplica a la base gravable; aquí se aplica a toda la base, así que «Invoice total» es una estimación si parte del evento está exenta: la cifra exacta, en «Event Settlement»",
+   "adaptar": "Ronda 1 M9: empieza por «0 = no sales tax until you enter your combined rate». Tu tipo combinado (estatal + local), p. ej. 0.0825 para el 8.25 %. «Event Settlement» lo aplica a la base gravable; aquí se aplica a toda la base, así que «Invoice total» es una estimación si parte del evento está exenta: la cifra exacta, en «Event Settlement»",
    "pistas": [
     "D6: pestañas, rótulos y valores citados → su EN de cita_rotulos, entre comillas dobles rectas",
     "presupuesto → quote / proposal; anticipo → deposit; saldo → balance; factura → invoice; IVA → sales tax; transferencia → ACH / bank transfer",
@@ -13128,7 +12721,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Early Feb — Super Bowl Sunday (2nd Sunday)». Sustituye a Reyes / roscón. Tareas: bandejas para ver el partido y catering de entrega (drop-off): wings, sliders, dips; pedidos cerrados la semana anterior",
+   "adaptar": "Evento EN: «Feb — Super Bowl Sunday (2nd Sunday)». Sustituye a Reyes / roscón. Tareas: bandejas para ver el partido y catering de entrega (drop-off): wings, sliders, dips; pedidos cerrados la semana anterior",
    "sha1": "e3febeab8a67",
    "donde": [
     {
@@ -13155,69 +12748,6 @@
      "f": "B02",
      "h": "Calendario",
      "c": "D6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0750",
-   "es": "Menús infantiles + adultos, decoración temática",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «April — First Communion season (starts)». En EE. UU. las primeras comuniones van sobre todo de abril a mayo. Mismas tareas del ES (menú infantil + adultos, decoración temática)",
-   "sha1": "ab16da0b0258",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario",
-     "c": "D7",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0752",
-   "es": "Comidas familiares de mediodía y detalles de empresa; menús cerrados y tartas por encargo",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 14,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day». Sustituye al Día del Padre. Tareas: fiestas de empresa y reuniones familiares con menú temático; el alcohol solo con tu licencia o con bartenders con licencia (21+ con ID)",
-   "sha1": "6c73fea9acdd",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario",
-     "c": "D8",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0754",
-   "es": "Menús sin carne, bacalao, potajes, postres tradicionales",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 7,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Mar–Apr — Easter & Passover (dates vary)». Sustituye a Semana Santa (sin bacalao ni potaje). Tareas: brunch y comidas familiares de Pascua (jamón, cordero, postres de temporada); séder de Passover si tus clientes lo piden (kosher solo con cocina y supervisión certificadas)",
-   "sha1": "2c8d099654af",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario",
-     "c": "D9",
      "t": "celda",
      "tr": "traducir"
     }
@@ -13252,7 +12782,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": true,
-   "adaptar": "Evento EN: «May — First Communions (peak) & Mother's Day (2nd Sunday)». Mismas tareas del ES (máxima demanda: 2-3 eventos a la vez); añade los brunch de Mother's Day por encargo",
+   "adaptar": "Evento EN: «May — First Communions & quinceaneras (peak) + Mother's Day (2nd Sunday)». Mismas tareas del ES (máxima demanda: 2-3 eventos a la vez); añade los brunch de Mother's Day por encargo",
    "sha1": "c09ff1e8cba9",
    "donde": [
     {
@@ -18377,6 +17907,10 @@
    "es": "2-3 meses",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "2–3 months",
    "n_ficheros": 2,
    "n_apariciones": 5,
@@ -18397,8 +17931,8 @@
      "h": "Calendario",
      "c": "E7",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "B02",
@@ -19354,6 +18888,10 @@
    "es": "Durante el evento",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "During the event",
    "n_ficheros": 2,
    "n_apariciones": 2,
@@ -19366,8 +18904,8 @@
      "h": "Event Manager",
      "c": "A27",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "06",
@@ -19845,8 +19383,8 @@
    "id": "c0193",
    "es": "Post-evento",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "After event",
+   "tratamiento": "regenerar",
+   "en_por_celda": "After the Event",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -19858,8 +19396,8 @@
      "h": "Event Manager",
      "c": "A38",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -21262,6 +20800,28 @@
    ]
   },
   {
+   "id": "c0470",
+   "es": "▸ Todo lo que se rellena a diario va en VERDE: Responsable, Hora Límite, ✓ Completada, Firma y Notas.",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "▸ Everything filled in daily is GREEN: Assigned to, Due by (When, at closing), ✓ Done, Initials and Notes.",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 17,
+   "con_cifra": false,
+   "sha1": "6d36cefaf4d1",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Instrucciones",
+     "c": "B16",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0486",
    "es": "— Kit de Tareas Recurrentes · Catering / Eventos · AI Chef Pro · aichef.pro",
    "grupo": "GM",
@@ -21489,8 +21049,8 @@
      "h": "Cierre del Negocio",
      "c": "C9",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
@@ -21675,88 +21235,88 @@
      "h": "Cierre del Negocio",
      "c": "D5",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D6",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D7",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D9",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D11",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D12",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D14",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "D15",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
@@ -21773,6 +21333,10 @@
    "es": "General",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "General",
    "n_ficheros": 1,
    "n_apariciones": 9,
@@ -21809,48 +21373,104 @@
      "h": "Cierre del Negocio",
      "c": "C5",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C6",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C11",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C15",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0500",
+   "es": "Abrir persianas / puerta principal",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Raise the security gate and unlock the doors",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "84184a9d7c9a",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Apertura del Negocio",
+     "c": "B8",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0501",
+   "es": "Cargar los isotermos de los eventos que salen primero y registrar la temperatura de salida — anota la lectura: ____ °C (el detalle de la carga va en la hoja «Transporte» de 02-partidas-cocina.xlsx)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check the transport vehicles: clean, fueled and the refrigeration on, pre-chilled to 41 °F or below before anything is loaded",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 35,
+   "con_cifra": true,
+   "cita_rotulos": [
+    {
+     "es": "Transporte",
+     "en": "Transport & Delivery"
+    }
+   ],
+   "cita_ficheros": [
+    {
+     "es": "02-partidas-cocina.xlsx",
+     "en": "02-catering-transport-delivery-checklist.xlsx"
+    }
+   ],
+   "sha1": "a2d7cc68ba32",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Apertura del Negocio",
+     "c": "B9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -21859,6 +21479,10 @@
    "es": "Exterior",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Outside",
    "n_ficheros": 1,
    "n_apariciones": 4,
@@ -21871,8 +21495,8 @@
      "h": "Apertura del Negocio",
      "c": "C9",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
@@ -21887,16 +21511,38 @@
      "h": "Cierre del Negocio",
      "c": "C7",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C12",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0503",
+   "es": "Encender TPV / POS / datáfono",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn on the card terminal and the invoicing software (deposits and balances paid by card)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "43cd53da6183",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Apertura del Negocio",
+     "c": "B10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -21905,6 +21551,10 @@
    "es": "Caja",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "POS",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -21925,8 +21575,8 @@
      "h": "Cierre del Negocio",
      "c": "C8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -21959,8 +21609,8 @@
      "h": "Apertura del Negocio",
      "c": "C20",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
@@ -21977,6 +21627,10 @@
    "es": "Oficina",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Office",
    "n_ficheros": 1,
    "n_apariciones": 3,
@@ -22005,8 +21659,8 @@
      "h": "Apertura del Negocio",
      "c": "C22",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -22014,8 +21668,8 @@
    "id": "c0510",
    "es": "Recepción",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Front desk",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Office",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 1,
@@ -22027,8 +21681,8 @@
      "h": "Apertura del Negocio",
      "c": "C13",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -22037,6 +21691,10 @@
    "es": "Baños",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Restrooms",
    "n_ficheros": 1,
    "n_apariciones": 2,
@@ -22057,8 +21715,8 @@
      "h": "Cierre del Negocio",
      "c": "C14",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -22113,13 +21771,79 @@
      "h": "Apertura del Negocio",
      "c": "C21",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "08",
      "h": "Cierre del Negocio",
      "c": "C19",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0520",
+   "es": "Verificar vehículos de transporte",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check the portable equipment",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "fb03801f771c",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Apertura del Negocio",
+     "c": "B20",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0521",
+   "es": "Comprobar equipamiento portátil",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Review the day's order of events",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 3,
+   "con_cifra": false,
+   "sha1": "8b185fa883e5",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Apertura del Negocio",
+     "c": "B21",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0522",
+   "es": "Revisar orden de eventos del día",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Load the insulated carriers for the events leaving first and log the departure temperature (hot 135 °F or above, cold 41 °F or below) — log reading: ____ °F (loading details go in the Transport & Delivery sheet of 02-catering-transport-delivery-checklist.xlsx)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "87726ec65acd",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Apertura del Negocio",
+     "c": "B22",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"
@@ -22161,6 +21885,28 @@
      "t": "celda",
      "tr": "mapa-glosario",
      "det": "mapas.GLOSARIO"
+    }
+   ]
+  },
+  {
+   "id": "c0526",
+   "es": "Apagar los equipos del obrador que no queden en marcha (hornos, freidora, campana) y dejar cámaras y abatidor encendidos",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Unload and clean the delivery vehicles: returned food that still qualifies goes straight to the blast chiller or walk-in to finish cooling (FDA Food Code 3-501.14); the rest is discarded",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 19,
+   "con_cifra": false,
+   "sha1": "268db89cbd5d",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B5",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -22299,11 +22045,231 @@
    ]
   },
   {
+   "id": "c0528",
+   "es": "Verificar que no queda personal ni visitas en el obrador antes de cerrar",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check in the portable equipment that came back",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 13,
+   "con_cifra": false,
+   "sha1": "aaad35fe6b0d",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B6",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0529",
+   "es": "Recoger y guardar el material de exterior que haya vuelto (carpas, sombrillas y estufas)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Collect and store the outdoor equipment that came back (tents, umbrellas and patio heaters)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 14,
+   "con_cifra": false,
+   "sha1": "73e8d8605e3c",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B7",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0530",
+   "es": "Apagar TPV / POS / datáfono (o dejar en standby)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Clear and hose down the loading dock: no carts, no pallets and no trash",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "c6673c0db64a",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B8",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0531",
+   "es": "Cerrar persianas y puertas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Empty trash cans in common areas and restrooms",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "24a08603fd51",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0532",
+   "es": "Apagar luces (dejar mínimas de seguridad)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off the commissary equipment that shouldn't run overnight (ovens, fryer, hood) and leave the walk-ins and blast chiller on",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "9793a17f0cd2",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0533",
+   "es": "Apagar climatización",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off the card terminal (or leave it on standby)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 2,
+   "con_cifra": false,
+   "sha1": "c79629b63dda",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B11",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0534",
+   "es": "Despejar y baldear el muelle de carga: sin carros, sin palés y sin residuos",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Final safety check (gas, water, outlets)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 14,
+   "con_cifra": false,
+   "sha1": "f91d7a5ad470",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B12",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0535",
+   "es": "Comprobar que ventanas están cerradas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check that windows are closed",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "8231ec189b7d",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B13",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0536",
+   "es": "Vaciar papeleras de zonas comunes y baños",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Turn off HVAC",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "a671c7fe62ad",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B14",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0537",
+   "es": "Revisión final de seguridad (gas, agua, enchufes)",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Check that no staff or visitors are left in the commissary before closing",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "5144c3677375",
+   "donde": [
+    {
+     "f": "08",
+     "h": "Cierre del Negocio",
+     "c": "B15",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0538",
    "es": "Activar alarma",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Unload and clean the delivery vehicles",
+   "en_por_celda": "Turn off lights (leave security lighting)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -22325,7 +22291,7 @@
    "es": "Cerrar con llave y verificar cierre",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Check in the portable equipment that came back",
+   "en_por_celda": "Set the alarm",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 6,
@@ -22347,7 +22313,7 @@
    "es": "Último en salir",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Last one out",
+   "en_por_celda": "Ops manager",
    "n_ficheros": 1,
    "n_apariciones": 3,
    "palabras": 3,
@@ -22385,7 +22351,7 @@
    "es": "Descargar y limpiar vehículos de transporte",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Set the alarm",
+   "en_por_celda": "Close security gate and doors",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 6,
@@ -22620,7 +22586,7 @@
    "es": "D-15",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "15 days out",
+   "en_glosario": "By 15 days out",
    "n_ficheros": 1,
    "n_apariciones": 6,
    "palabras": 2,
@@ -22792,7 +22758,7 @@
    "es": "D-7",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "7 days out",
+   "en_glosario": "By 7 days out",
    "n_ficheros": 1,
    "n_apariciones": 4,
    "palabras": 2,
@@ -22876,7 +22842,7 @@
    "es": "D-3",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
-   "en_glosario": "3 days out",
+   "en_glosario": "By 3 days out",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -23366,7 +23332,7 @@
    "es": "IVA 10 %",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Sales tax (rate in Event Billing Log C3)",
+   "en_por_celda": "Sales tax (rate set in Event Billing Log C3)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -23387,13 +23353,12 @@
    "id": "c0629",
    "es": "Fórmula.",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Formula.",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Formula: taxable subtotal × the rate in Event Billing Log C3. It stays at $0 until you enter your rate there.",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 1,
    "con_cifra": false,
-   "adaptar": "Fórmula: siempre 0 (lo exento no lleva sales tax); se queda para que la factura cuadre línea a línea | Fórmula: «Taxable subtotal» × el tipo de sales tax de la celda C3 del «Event Billing Log»",
    "sha1": "59485b267bc4",
    "donde": [
     {
@@ -23401,16 +23366,16 @@
      "h": "Liquidación del Evento",
      "c": "D15",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "09",
      "h": "Liquidación del Evento",
      "c": "D16",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -23419,7 +23384,7 @@
    "es": "IVA 21 %",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Tax on the non-taxable subtotal (0)",
+   "en_por_celda": "Non-taxable subtotal: no sales tax",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -24145,7 +24110,7 @@
    "es": "IVA medio aplicado a «Total factura»",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Sales tax rate (state + local)",
+   "en_por_celda": "Sales tax rate (state + local) — set it first",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 6,
@@ -24671,7 +24636,7 @@
    "es": "Enero — Reyes / Roscón",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Early Feb — Super Bowl Sunday (2nd Sunday)",
+   "en_por_celda": "Feb — Super Bowl Sunday (2nd Sunday)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -24755,6 +24720,10 @@
    "es": "3 semanas",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "3 weeks",
    "n_ficheros": 1,
    "n_apariciones": 3,
@@ -24775,16 +24744,16 @@
      "h": "Calendario",
      "c": "E8",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "B02",
      "h": "Calendario",
      "c": "E9",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -24861,7 +24830,7 @@
    "es": "Marzo — Comuniones (inicio)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "April — First Communion season (starts)",
+   "en_por_celda": "Mar 17 — St. Patrick's Day",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -24883,7 +24852,7 @@
    "es": "Celebración",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Celebration",
+   "en_por_celda": "Holiday",
    "n_ficheros": 1,
    "n_apariciones": 5,
    "palabras": 1,
@@ -24933,11 +24902,33 @@
    ]
   },
   {
+   "id": "c0750",
+   "es": "Menús infantiles + adultos, decoración temática",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Corporate parties and family gatherings with a themed menu; alcohol only under the license your state requires (yours or the venue's), 21+ with ID",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "ab16da0b0258",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario",
+     "c": "D7",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0751",
    "es": "19 Mar — Día del Padre",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Mar 17 — St. Patrick's Day",
+   "en_por_celda": "Mar–Apr — Easter & Passover (dates vary)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -24955,11 +24946,33 @@
    ]
   },
   {
+   "id": "c0752",
+   "es": "Comidas familiares de mediodía y detalles de empresa; menús cerrados y tartas por encargo",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Easter brunch and family dinners (ham, lamb, seasonal desserts); Passover seder if your clients ask (kosher only with a certified kitchen and supervision)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 14,
+   "con_cifra": false,
+   "sha1": "6c73fea9acdd",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario",
+     "c": "D8",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0753",
    "es": "Abril — Semana Santa",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Mar–Apr — Easter & Passover (dates vary)",
+   "en_por_celda": "April — First Communions (season starts), quinceaneras & bar/bat mitzvahs",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -24970,6 +24983,28 @@
      "f": "B02",
      "h": "Calendario",
      "c": "B9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0754",
+   "es": "Menús sin carne, bacalao, potajes, postres tradicionales",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Kids' + adult menus, themed decor",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 7,
+   "con_cifra": false,
+   "sha1": "2c8d099654af",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario",
+     "c": "D9",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"
@@ -25041,7 +25076,7 @@
    "es": "Mayo — Comuniones (pico)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May — First Communions (peak) & Mother's Day (2nd Sunday)",
+   "en_por_celda": "May — First Communions & quinceaneras (peak) + Mother's Day (2nd Sunday)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,

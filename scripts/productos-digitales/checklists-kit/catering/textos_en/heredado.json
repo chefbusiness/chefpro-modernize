@@ -74,11 +74,6 @@
   "origen": "c0815",
   "via": "exacta"
  },
- "c0470": {
-  "en": "▸ Everything filled in daily is GREEN: Assigned to, Due by, ✓ Done, Initials and Notes.",
-  "origen": "c0816",
-  "via": "exacta"
- },
  "c0471": {
   "en": "How the counter works",
   "origen": "c0018",
@@ -149,16 +144,6 @@
   "origen": "c0824",
   "via": "exacta"
  },
- "c0500": {
-  "en": "Raise security gate and open front door",
-  "origen": "c0825",
-  "via": "exacta"
- },
- "c0503": {
-  "en": "Turn on the POS / card terminal",
-  "origen": "c0828",
-  "via": "exacta"
- },
  "c0513": {
   "en": "Check cleanliness of common areas (entrance, hallways)",
   "origen": "c0836",
@@ -167,41 +152,6 @@
  "c0523": {
   "en": "Manager signature: _________________________     Completion time: ________",
   "origen": "c0842",
-  "via": "exacta"
- },
- "c0530": {
-  "en": "Turn off the POS / card terminal (or leave on standby)",
-  "origen": "c0847",
-  "via": "exacta"
- },
- "c0531": {
-  "en": "Close security gate and doors",
-  "origen": "c0848",
-  "via": "exacta"
- },
- "c0532": {
-  "en": "Turn off lights (leave security lighting)",
-  "origen": "c0849",
-  "via": "exacta"
- },
- "c0533": {
-  "en": "Turn off HVAC",
-  "origen": "c0850",
-  "via": "exacta"
- },
- "c0535": {
-  "en": "Check that windows are closed",
-  "origen": "c0852",
-  "via": "exacta"
- },
- "c0536": {
-  "en": "Empty trash cans in common areas and restrooms",
-  "origen": "c0853",
-  "via": "exacta"
- },
- "c0537": {
-  "en": "Final safety check (gas, water, outlets)",
-  "origen": "c0854",
   "via": "exacta"
  }
 }

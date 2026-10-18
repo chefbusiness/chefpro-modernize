@@ -153,7 +153,7 @@ _GLOSARIO_CATERING = OrderedDict([
     ('Pre-servicio', 'Before service'), ('Durante el servicio', 'During service'),
     ('Post-servicio', 'After service'), ('Durante el evento', 'During the event'),
     # cuándo (09) y cadencia (03)
-    ('D-15', '15 days out'), ('D-7', '7 days out'), ('D-3', '3 days out'), ('D-1', 'Day before'),
+    ('D-15', 'By 15 days out'), ('D-7', 'By 7 days out'), ('D-3', 'By 3 days out'), ('D-1', 'Day before'),
     ('D+0', 'Event day'), ('D+1', 'Day after'), ('D+7', '7 days after'), ('D+30', '30 days after'),
     ('Semestral', 'Semiannual'),
     # vida útil en congelación (01) y antelación (BONUS-02)
@@ -178,6 +178,21 @@ CLAVES.update([
     ('OK: las dos bases suman presupuesto + extras', 'OK: the two subtotals add up to quote + extras'),
     ('REVISA: las dos bases no suman presupuesto + extras', 'CHECK: the two subtotals do not add up to quote + extras'),
 ])
+
+# ==========================================================================
+# CF_POR_CELDA (ronda 1 M5, desviación DECLARADA respecto del ES; SPEC §1 D-CF): en las hojas con varias tablas, las
+# cabeceras internas llevan «✓» en la columna E y la CF de «hecho» las pintaba de verde (texto blanco ilegible). La EN
+# excluye las filas cuyo B es la cabecera «Task»; los contadores ya las restan. aplicar_en y G1 la admiten SOLO aquí.
+# (libro, hoja ES, sqref) → (fórmula ES, fórmula EN)
+# ==========================================================================
+_CF_HOJAS = [('01', 'Producción', 'A6:G51'), ('02', 'Transporte', 'A6:G38'), ('03', 'Event Manager', 'A6:G47'),
+             ('03', 'Trimestral y Anual', 'A6:G34'), ('04', 'Chef de Evento', 'A6:G27'),
+             ('04', 'Maître - Jefe Sala', 'A6:G27'), ('04', 'Camarero', 'A6:G27'), ('04', 'Barman', 'A6:G27'),
+             ('05', 'Montaje', 'A6:G41'), ('05', 'Desmontaje', 'A6:G28'), ('06', 'Bodas', 'A6:G21'),
+             ('06', 'Corporativo', 'A6:G18'), ('06', 'Cocktail Standing', 'A6:G20'),
+             ('06', 'Outdoor - Exterior', 'A6:G20'), ('B01', 'Briefing', 'A6:G34')]
+CF_POR_CELDA = OrderedDict(((c, h, sq), ('$E6="✓"', 'AND($E6="✓",$B6<>"%s")' % CLAVES['Tarea']))
+                           for c, h, sq in _CF_HOJAS)
 
 # ==========================================================================
 # 09 = LIBRO PROPIO (cobros por evento). Mismas celdas, fórmulas y protección que el ES; cambian por celda:
@@ -223,27 +238,21 @@ LIBROS_SIN_MARCA = ('01', '02', '03', '04', '05', '06', '07', 'B01', 'B02')
 HOJA_CAL = ('B02', 'Calendario')
 FILAS_CALENDARIO = range(5, 27)
 CALENDARIO = OrderedDict([
-    (5, ('Early Feb — Super Bowl Sunday (2nd Sunday)', 'Celebration',
+    (5, ('Feb — Super Bowl Sunday (2nd Sunday)', 'Celebration',
          'Sustituye a Reyes / roscón. Tareas: bandejas para ver el partido y catering de entrega (drop-off): wings, '
          'sliders, dips; pedidos cerrados la semana anterior')),
     (6, ("Feb 14 — Valentine's Day", 'Holiday', None)),
-    (7, ('April — First Communion season (starts)', 'Celebration',
-         'En EE. UU. las primeras comuniones van sobre todo de abril a mayo. Mismas tareas del ES (menú infantil + '
-         'adultos, decoración temática)')),
-    (8, ("Mar 17 — St. Patrick's Day", 'Holiday',
-         'Sustituye al Día del Padre. Tareas: fiestas de empresa y reuniones familiares con menú temático; el '
-         'alcohol solo con tu licencia o con bartenders con licencia (21+ con ID)')),
-    (9, ('Mar–Apr — Easter & Passover (dates vary)', 'Holiday',
-         'Sustituye a Semana Santa (sin bacalao ni potaje). Tareas: brunch y comidas familiares de Pascua (jamón, '
-         'cordero, postres de temporada); séder de Passover si tus clientes lo piden (kosher solo con cocina y '
-         'supervisión certificadas)')),
+    # ronda 1 M10: orden cronológico (el ES pone las Comuniones antes del 19-mar); D y E de 7-9 van por POR_CELDA
+    (7, ("Mar 17 — St. Patrick's Day", 'Holiday', None)),
+    (8, ('Mar–Apr — Easter & Passover (dates vary)', 'Holiday', None)),
+    (9, ('April — First Communions (season starts), quinceaneras & bar/bat mitzvahs', 'Celebration', None)),
     (10, ('May — Wedding season starts', 'Wedding', None)),
-    (11, ("May — First Communions (peak) & Mother's Day (2nd Sunday)", 'Celebration',
+    (11, ("May — First Communions & quinceaneras (peak) + Mother's Day (2nd Sunday)", 'Celebration',
           "Mismas tareas del ES (máxima demanda: 2-3 eventos a la vez); añade los brunch de Mother's Day por "
           'encargo')),
     (12, ('May–June — Weddings + graduation parties', 'Mixed', None)),
     (13, ('June — Corporate summer picnics & team building', 'Corporate', None)),
-    (14, ('July–August — Summer weddings & July 4 cookouts', 'Wedding',
+    (14, ('July–August — Summer weddings & July 4 cookouts', 'Mixed',
           'Mismas tareas del ES (calor, menús frescos, más personal) + barbacoas del 4 de julio (cookouts)')),
     (15, ('September — Back to business (after Labor Day)', 'Corporate', None)),
     (16, ('Sep–Oct — Fall wedding season (peak)', 'Wedding',
@@ -281,8 +290,11 @@ POR_CELDA = OrderedDict([
     (('09', H_LIQ, 'A10'), 'Accepted quote (before tax)'), (('09', H_LIQ, 'A11'), 'Extras (before tax)'),
     (('09', H_LIQ, 'A12'), 'Taxable subtotal'), (('09', H_LIQ, 'A13'), 'Non-taxable subtotal'),
     (('09', H_LIQ, 'A14'), 'Check: the two subtotals must add up to quote + extras'),
-    (('09', H_LIQ, 'A15'), 'Sales tax (rate in Event Billing Log C3)'),
-    (('09', H_LIQ, 'A16'), 'Tax on the non-taxable subtotal (0)'),
+    (('09', H_LIQ, 'A15'), 'Sales tax (rate set in Event Billing Log C3)'),
+    (('09', H_LIQ, 'D15'), 'Formula: taxable subtotal × the rate in Event Billing Log C3. It stays at $0 until you '
+                           'enter your rate there.'),
+    (('09', H_LIQ, 'A16'), 'Non-taxable subtotal: no sales tax'),
+    (('09', H_LIQ, 'D16'), 'Always $0: exempt items and tax-exempt clients carry no sales tax. Nothing to enter.'),
     (('09', H_LIQ, 'A17'), 'INVOICE TOTAL'),
     (('09', H_LIQ, 'A18'), '💰 Deposit, balance & payment'),
     (('09', H_LIQ, 'A19'), 'Deposit received (−)'), (('09', H_LIQ, 'A20'), 'Balance after deposit'),
@@ -294,7 +306,7 @@ POR_CELDA = OrderedDict([
     (('09', H_LIQ, 'A29'), 'BILLS'), (('09', H_LIQ, 'A37'), 'COINS'), (('09', H_LIQ, 'A46'), 'TOTAL CASH'),
     (('09', H_LIQ, 'A47'), 'Cash bar starting bank (−)'), (('09', H_LIQ, 'A48'), 'Net cash from the event'),
     # 09 · Registro de Eventos
-    (('09', H_REG, 'A3'), 'Sales tax rate (state + local)'),
+    (('09', H_REG, 'A3'), 'Sales tax rate (state + local) — set it first'),
     (('09', H_REG, 'A5'), 'Date'), (('09', H_REG, 'C5'), 'Guests'), (('09', H_REG, 'D5'), 'Pre-tax (quote + extras)'),
     (('09', H_REG, 'E5'), 'Invoice total'), (('09', H_REG, 'F5'), 'Deposit'), (('09', H_REG, 'G5'), 'Paid'),
     (('09', H_REG, 'H5'), 'Balance due'), (('09', H_REG, 'I5'), 'Payment method'), (('09', H_REG, 'J5'), 'Due date'),
@@ -326,15 +338,60 @@ POR_CELDA = OrderedDict([
 ])
 for _f, _es, _xes, _en, _xen in DENOMINACIONES:
     POR_CELDA[(HOJA_CAJA[0], HOJA_CAJA[1], 'A%d' % _f)] = _en
-# 08 · Cierre: en el ES se descargan los vehículos y se inventaría DESPUÉS de la alarma y la llave (errata, como el
-# m14 del bar): la EN deja la alarma y la llave al final, mismas filas y mismos contadores
+# 08 · Cierre (ronda 1 M7; errata del ES): toda la secuencia, mismas 15 filas y mismos contadores (E = «Close»):
+# primero lo que vuelve del evento (comida a enfriar o a la basura), luego el commissary, y la alarma y la llave al final
 _CN = ('08', 'Cierre del Negocio')
-for _fila, (_b, _c, _d) in ((16, ('Unload and clean the delivery vehicles', 'Logistics', 'Last one out')),
-                            (17, ('Check in the portable equipment that came back', 'Storage', 'Last one out')),
-                            (18, ('Set the alarm', 'Entrance', 'Ops manager')),
-                            (19, ('Lock up and verify it is locked', 'Entrance', 'Last one out'))):
+_CIERRE = [
+    ('Unload and clean the delivery vehicles: returned food that still qualifies goes straight to the blast chiller or '
+     'walk-in to finish cooling (FDA Food Code 3-501.14); the rest is discarded', 'Logistics', 'Ops manager'),
+    ('Check in the portable equipment that came back', 'Storage', 'Ops manager'),
+    ('Collect and store the outdoor equipment that came back (tents, umbrellas and patio heaters)', 'Outside',
+     'Ops manager'),
+    ('Clear and hose down the loading dock: no carts, no pallets and no trash', 'Outside', 'Ops manager'),
+    ('Empty trash cans in common areas and restrooms', 'Restrooms', 'Ops manager'),
+    ("Turn off the commissary equipment that shouldn't run overnight (ovens, fryer, hood) and leave the walk-ins and "
+     'blast chiller on', 'General', 'Ops manager'),
+    ('Turn off the card terminal (or leave it on standby)', 'POS', 'Ops manager'),
+    ('Final safety check (gas, water, outlets)', 'General', 'Ops manager'),
+    ('Check that windows are closed', 'General', 'Ops manager'),
+    ('Turn off HVAC', 'General', 'Ops manager'),
+    ('Check that no staff or visitors are left in the commissary before closing', 'General', 'Ops manager'),
+    ('Turn off lights (leave security lighting)', 'General', 'Ops manager'),
+    ('Set the alarm', 'Entrance', 'Ops manager'),
+    ('Close security gate and doors', 'Entrance', 'Last one out'),
+    ('Lock up and verify it is locked', 'Entrance', 'Last one out'),
+]
+for _fila, (_b, _c, _d) in enumerate(_CIERRE, 5):
     for _col, _v in (('B', _b), ('C', _c), ('D', _d)):
         POR_CELDA[_CN + ('%s%d' % (_col, _fila),)] = _v
+# 08 · Apertura (ronda 1 M6, m8, M8): revisar y preenfriar el vehículo ANTES de cargar; la carga, a las 7:30 AM tras
+# el briefing (D y E se quedan con su fila); sin «front door» ni «POS» de restaurante; el guaranteed count ya cerrado
+_AN = ('08', 'Apertura del Negocio')
+for _celda, _v in (
+        ('B8', 'Raise the security gate and unlock the doors'),
+        ('B9', 'Check the transport vehicles: clean, fueled and the refrigeration on, pre-chilled to 41 °F or below '
+               'before anything is loaded'), ('C9', 'Logistics'),
+        ('B10', 'Turn on the card terminal and the invoicing software (deposits and balances paid by card)'),
+        ('C13', 'Office'),
+        ('B20', 'Check the portable equipment'), ('C20', 'Storage'),
+        ('B21', "Review the day's order of events"), ('C21', 'Office'),
+        ('B22', 'Load the insulated carriers for the events leaving first and log the departure temperature (hot '
+                '135 °F or above, cold 41 °F or below) — log reading: ____ °F (loading details go in the Transport & '
+                'Delivery sheet of 02-catering-transport-delivery-checklist.xlsx)'), ('C22', 'Outside')):
+    POR_CELDA[_AN + (_celda,)] = _v
+POR_CELDA[('08', 'Instrucciones', 'B16')] = ('▸ Everything filled in daily is GREEN: Assigned to, Due by (When, at '
+                                             'closing), ✓ Done, Initials and Notes.')   # m12
+# 03 · Event Manager (m11): rótulos de sección como los demás del libro
+POR_CELDA[('03', 'Event Manager', 'A27')] = 'During the Event'
+POR_CELDA[('03', 'Event Manager', 'A38')] = 'After the Event'
+# BONUS-02 (M10 + M11): D y E de las filas 7-9 siguen a su evento
+for _celda, _v in (
+        ('D7', 'Corporate parties and family gatherings with a themed menu; alcohol only under the license your state '
+               "requires (yours or the venue's), 21+ with ID"), ('E7', '3 weeks'),
+        ('D8', 'Easter brunch and family dinners (ham, lamb, seasonal desserts); Passover seder if your clients ask '
+               '(kosher only with a certified kitchen and supervision)'), ('E8', '3 weeks'),
+        ('D9', "Kids' + adult menus, themed decor"), ('E9', '2–3 months')):
+    POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], _celda)] = _v
 for _fila, (_evento, _tipo, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'B%d' % _fila)] = _evento
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = _tipo
@@ -354,12 +411,14 @@ _PARASITOS = ('Destrucción de parásitos US (FDA Food Code 3-402.11): congelado
               'palabra «anisakis» como norma (dilo «parasite destruction»)')
 _DATE = ('Date marking US: etiqueta con producto y fecha; lo preparado y listo para comer, 7 días como máximo a '
          '41 °F contando el día de preparación (FDA Food Code 3-501.17); alérgenos: los 9 principales de EE. UU.')
-_ALERGENOS = ('Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, marisco, frutos de '
+_ALERGENOS = ('Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos (crustacean '
+              'shellfish; los moluscos no), frutos de '
               'cáscara, cacahuete, trigo, soja y sésamo); en UK, los 14')
-_TPHC = ('Time as a public health control (FDA Food Code 3-501.19): lo que va sin control de temperatura, 4 h como '
-         'máximo desde que sale (marca la hora) y después se sirve o se descarta; lo frío puede llegar a 6 h si sale '
-         'a 41 °F o menos y nunca pasa de 70 °F; necesita procedimiento escrito y, según tu condado, aviso al '
-         'departamento de salud')
+_TPHC = ('Time as a public health control (FDA Food Code 3-501.19): marca la hora en que sale del control de '
+         'temperatura y sirve DENTRO de las 4 h; lo que quede a las 4 h se descarta y no puede volver al caliente ni '
+         'al frío para reiniciar el reloj; lo frío puede llegar a 6 h solo si sale a 41 °F o menos y vigilas que no '
+         'pase de 70 °F: se descarta en cuanto pasa, y a las 6 h; necesita procedimiento escrito y, según tu condado, '
+         'aviso al departamento de salud')
 _BARRA = ('Barra libre = open bar: horario pactado; ID a quien parezca menor de 30 (21+); no servir a quien esté '
           'visiblemente ebrio; el alcohol, con la licencia que pida tu estado (la del catering o la del venue) y '
           'bartenders con la formación de servicio responsable que exija el estado (TIPS, ServSafe Alcohol)')
@@ -394,7 +453,9 @@ ADAPTAR = OrderedDict([
      'departamento de salud'),
     (('02', 'Transporte', 'B15'), _CARGA),
     (('02', 'Transporte', 'B25'), _CARGA),
-    (('02', 'Transporte', 'B26'), 'Sin el «máx. 2 h» español: lo frío a 41 °F o menos y lo caliente a 135 °F o más '
+    (('02', 'Transporte', 'B26'), 'Ronda 1 M1: las 4 h cuentan desde que sale de 41 / 135 °F (puede ser al emplatar) e '
+     'incluyen el trayecto Y el servicio en el venue; a las 4 h se descarta; procedimiento escrito. '
+     'Sin el «máx. 2 h» español: lo frío a 41 °F o menos y lo caliente a 135 °F o más '
      'todo el trayecto; si algo viaja sin control de temperatura, va con time as a public health control (FDA Food '
      'Code 3-501.19): 4 h como máximo con la hora de salida marcada'),
     (('02', 'Transporte', 'B35'), _CARGA),
@@ -433,7 +494,8 @@ ADAPTAR = OrderedDict([
     (('04', 'Chef de Evento', 'B17'), '°F: caliente a 135 °F o más, frío a 41 °F o menos (FDA Food Code 3-501.16)'),
     (('04', 'Maître - Jefe Sala', 'B11'), '«Office» = estación de servicio (service station / pantry), no la oficina'),
     (('04', 'Maître - Jefe Sala', 'B26'), 'Propinas (gratuities) según la política de la casa y las normas de tu '
-     'estado; un service charge obligatorio NO es propina: para el IRS es salario (Rev. Rul. 2012-18)'),
+     'estado; un service charge obligatorio NO es propina: lo que se paga de él al personal es salario para el IRS '
+     '(Rev. Rul. 2012-18); managers y supervisores no pueden quedarse parte de las propinas del equipo (FLSA)'),
     (('04', 'Camarero', 'B11'), 'Zona de fumadores solo si el venue tiene una (muchos estados prohíben fumar en '
      'interiores)'),
     (('04', 'Barman', 'B7'), 'Si el cliente aporta el alcohol (client-supplied / BYOB), solo si tu estado y el venue lo '
@@ -461,14 +523,16 @@ ADAPTAR = OrderedDict([
     (('05', 'Desmontaje', 'B15'), 'Apagar el combustible de los chafing con su tapa o apagador y dejarlo enfriar '
      'antes de recoger'),
     (('05', 'Desmontaje', 'B18'), 'Sobrantes US: lo que se mantuvo a 41 °F o menos (o a 135 °F o más) y no salió a '
-     'sala: enfriar (de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más, FDA Food Code 3-501.14), etiquetar y fechar; '
+     'sala: enfriar lo caliente (de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más, FDA Food Code 3-501.14) y lo frío, '
+     'directo a 41 °F o menos; etiquetar y fechar; '
      'lo que estuvo expuesto en el buffet o bajo time as a public health control: se descarta (no vuelve a la '
      'cámara)'),
     (('05', 'Desmontaje', 'B28'), 'Temperatura en °F: 41 °F o menos para lo que vuelva en frío'),
     # 06 · tipos de evento
     (('06', 'Bodas', 'B10'), 'Barra libre → open bar'),
     (('06', 'Bodas', 'B19'), _BARRA),
-    (('06', 'Cocktail Standing', 'B9'), _PARASITOS),
+    (('06', 'Cocktail Standing', 'B9'), _PARASITOS + '; aviso al consumidor (consumer advisory) de crudo o poco '
+     'hecho en el cartel de la estación o la carta (FDA Food Code 3-603.11)'),
     (('06', 'Cocktail Standing', 'B10'), _ALERGENOS),
     (('06', 'Cocktail Standing', 'B11'), 'Barra de cocktails solo con la licencia de alcohol que pida tu estado (o la '
      'del venue); 21+ con ID'),
@@ -478,8 +542,6 @@ ADAPTAR = OrderedDict([
     (('06', 'Outdoor - Exterior', 'B16'), 'Al aire libre: lo caliente a 135 °F o más y lo frío a 41 °F o menos; ' +
      _TPHC + '. Sin la regla española de «1 h con más de 30 °C»: con calor, reponer más a menudo y en menos cantidad'),
     # 08 · commissary
-    (('08', 'Apertura del Negocio', 'B8'), _A[('08', 'Apertura del Negocio', 'B8')]),
-    (('08', 'Apertura del Negocio', 'B9'), _CARGA),
     (('08', 'Apertura del Negocio', 'B12'), 'Órdenes de servicio → BEOs (banquet event orders)'),
     (('08', 'Apertura del Negocio', 'B17'), 'Estufas → patio heaters (propano: según el fire code local)'),
     # 09 · cobros (libro propio)
@@ -490,12 +552,14 @@ ADAPTAR = OrderedDict([
      'de vencimiento; el sales tax sale del tipo de la celda C3 del «Event Billing Log»'),
     (('09', 'Instrucciones', 'B20'), 'Qué lleva sales tax lo decide tu estado (consúltalo con tu CPA o el department '
      'of revenue): en muchos la comida, la bebida, los alquileres y el service charge obligatorio. Un service charge '
-     'obligatorio NO es propina: para el IRS es salario (Rev. Rul. 2012-18); la propina (gratuity) la decide el '
+     'obligatorio NO es propina: es ingreso del negocio y lo que se paga de él al personal es salario para el IRS '
+     '(Rev. Rul. 2012-18); en algunos estados (NY, MA) un service charge sin aviso claro se presume del personal: la '
+     'política, en el contrato; la propina (gratuity) la decide el '
      'cliente, va aparte y es del equipo. Un cliente exento (tax-exempt) necesita su certificado de exención en el '
      'expediente'),
     (('09', 'Instrucciones', 'B22'), 'La tabla de efectivo trae billetes y monedas de EE. UU. ($100 … 1¢; un «25¢ '
      'roll» cuenta $10 y un «10¢ roll» $5); en UK, Canadá o Australia, desprotege la hoja (sin contraseña) y cambia el '
-     'rótulo y el valor de cada fila'),
+     'rótulo de cada fila y el multiplicador de su fórmula de Subtotal'),
     (('09', 'Antes del Evento', 'B6'), 'Comensales confirmados → guaranteed count (final headcount), con la fecha '
      'límite de cambios por escrito'),
     (('09', 'Antes del Evento', 'B7'), 'Anticipo → deposit (retainer) del 30-50 % según tu contrato'),
@@ -513,14 +577,12 @@ ADAPTAR = OrderedDict([
      'obligatorio (pregunta a tu CPA o al department of revenue)'),
     (('09', H_LIQ, 'D13'), 'Lo exento en tu estado, o todo si el cliente es tax-exempt con su certificado; 0 si todo '
      'lleva sales tax. La propina (gratuity) no va aquí'),
-    (('09', H_LIQ, 'D15'), 'Fórmula: «Taxable subtotal» × el tipo de sales tax de la celda C3 del «Event Billing Log»'),
-    (('09', H_LIQ, 'D16'), 'Fórmula: siempre 0 (lo exento no lleva sales tax); se queda para que la factura cuadre '
-     'línea a línea'),
     (('09', H_LIQ, 'D17'), 'Las dos bases más el sales tax: lo que dice la factura'),
     (('09', H_LIQ, 'D19'), 'Lo cobrado al firmar (deposit, el 30-50 % habitual); se resta del total'),
     (('09', H_LIQ, 'A27'), 'Cuenta el efectivo en dólares y, si quieres, suma tú el «Net cash from the event» a «Paid '
      'after the event»; no se enlaza solo (la mayoría de los eventos no llevan barra con cobro en efectivo)'),
-    (('09', H_REG, 'D3'), 'Tu tipo combinado (estatal + local), p. ej. 0.0825 para el 8.25 %. «Event Settlement» lo '
+    (('09', H_REG, 'D3'), 'Ronda 1 M9: empieza por «0 = no sales tax until you enter your combined rate». '
+     'Tu tipo combinado (estatal + local), p. ej. 0.0825 para el 8.25 %. «Event Settlement» lo '
      'aplica a la base gravable; aquí se aplica a toda la base, así que «Invoice total» es una estimación si parte '
      'del evento está exenta: la cifra exacta, en «Event Settlement»'),
     # BONUS-01
@@ -540,8 +602,9 @@ CELSIUS_SIN_F = frozenset()
 # ==========================================================================
 REGLAS_US = OrderedDict(_base.REGLAS_US)
 REGLAS_US.update([
-    ('tphc', ('time as a public health control: 4 h como máximo y después servir o descartar; frío hasta 6 h si sale '
-              'a 41 °F o menos y no pasa de 70 °F; procedimiento escrito y hora marcada', 'FDA Food Code 2022 §3-501.19')),
+    ('tphc', ('time as a public health control: servir o descartar DENTRO de las 4 h (lo que quede a las 4 h se '
+              'descarta y no vuelve al control de temperatura); frío hasta 6 h si sale a 41 °F o menos, vigilando que no '
+              'pase de 70 °F (se descarta si pasa); procedimiento escrito y hora marcada', 'FDA Food Code 2022 §3-501.19')),
     ('transporte', ('frío 41 °F o menos y caliente 135 °F o más también en el transporte y el buffet',
                     'FDA Food Code 2022 §3-501.16')),
     ('chafing', ('chafing: mantener a 135 °F, no recalentar en él; no recargar ni mover el combustible encendido; '
@@ -565,8 +628,13 @@ REGLAS_US.update([
     ('hielo', ('el hielo es un alimento: pala, nunca el vaso', 'FDA Food Code 2022, «food» incluye el hielo')),
     ('rellenado', ('no rellenar botellas de licor; batches en recipientes propios etiquetados',
                    '26 U.S.C. 5301(c); 27 CFR 31.201')),
-    ('service_charge', ('el service charge obligatorio no es propina: para el IRS es salario',
-                        'IRS Rev. Rul. 2012-18')),
+    ('service_charge', ('el service charge obligatorio no es propina: es ingreso del negocio, y lo que se paga de él al '
+                        'personal es salario en nómina, no propina', 'IRS Rev. Rul. 2012-18')),
+    ('service_charge_aviso', ('en algunos estados (NY, MA) un service charge que no se anuncia claramente como «no es '
+                              'propina» se presume del personal: la política, en el contrato',
+                              '[estatal] 12 NYCRR 146-2.19; M.G.L. c. 149 §152A')),
+    ('propinas_supervisores', ('managers y supervisores no pueden quedarse ninguna parte de las propinas del equipo',
+                               'FLSA, 29 U.S.C. 203(m)(2)(B)')),
     ('sales_tax', ('qué lleva sales tax (incluido el service charge obligatorio) y el tipo estatal + local, según el '
                    'estado; tipo como parámetro (0 por defecto)', '[estatal] department of revenue')),
     ('exencion', ('cliente exento con su certificado de exención', '[estatal] department of revenue')),
@@ -574,12 +642,14 @@ REGLAS_US.update([
              '[criterio del kit] práctica de contratos con venues')),
     ('guaranteed_count', ('se factura según el contrato; lo habitual, el mayor entre guaranteed y actual count',
                           '[criterio del kit] práctica de banquetes US')),
-    ('i9', ('Form I-9 de cada empleado nuevo', 'USCIS Form I-9 (8 U.S.C. 1324a)')),
+    ('i9', ('Form I-9 de cada empleado nuevo, completado antes del 3.er día hábil', 'USCIS Form I-9 (8 U.S.C. 1324a; '
+            '8 CFR 274a.2(b)(1)(ii))')),
     ('carpas', ('las carpas grandes suelen necesitar permiso del fire marshal y lona ignífuga',
                 '[local] fire code (International Fire Code, cap. 31)')),
     ('sala', ('20-22 °C = 68-72 °F', '[criterio del kit] cifras del ES convertidas')),
     ('super_bowl', ('Super Bowl el 2.º domingo de febrero', '[criterio del kit] calendario de la NFL desde 2022')),
-    ('comuniones', ('primeras comuniones sobre todo de abril a mayo', '[criterio del kit] calendario parroquial US')),
+    ('comuniones', ('primeras comuniones sobre todo de abril a mayo; quinceañeras y bar/bat mitzvahs, todo el año',
+                    '[criterio del kit] calendario parroquial US')),
 ])
 # °F que el kit puede afirmar (G7): las del base + 68-72 °F (sala)
 GRADOS_F_SPEC = {-31, -4, 0, 32, 41, 68, 70, 72, 100, 135, 165}
@@ -702,6 +772,11 @@ def cruzar_censo(p):
         for h, hd in info['hojas_detalle'].items():
             for coord, t in hd.get('textos', {}).items():
                 tx[(info['corto'], h, coord)] = t
+    cfs = {(info['corto'], h, cf['sqref']): cf['formula'] for info in censo['libros'].values()
+           for h, hd in info['hojas_detalle'].items() for cf in hd['cf']}
+    for k, (es, en) in CF_POR_CELDA.items():
+        if cfs.get(k) != [es]:
+            err.append('CF_POR_CELDA %r: el ES trae %r, no %r' % (k, cfs.get(k), es))
     for (c, h, coord) in VALORES_EN:
         if (c, h, coord) in tx:
             err.append('VALORES_EN: %r es texto en el ES (se esperaba el número)' % ((c, h, coord),))

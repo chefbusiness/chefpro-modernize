@@ -42,3 +42,20 @@ la cafetería (`aa3229a5`): 0 cambios en heredado y en pendientes, salvo la cita
 «restaurant» solo aparece en la firma de autor (11, literal de la SPEC base §7.2). Siguiente: UNA revisión adversarial
 sobre los volcados (lente de un catering manager US + lente técnica), sobre todo el 09 (sales tax con el tipo en C3 a 0
 por defecto, service charge ≠ gratuity, estados), el calendario US, el orden del cierre del 08 y las 17 celdas con °C.
+
+## Ronda 1 de la revisión adversarial (18-oct-2026 · sesión Claude Code)
+
+`revision/REVISION-F2.md` (1 BLOQUEANTE · 11 MAYOR · 15 MENOR · 7 dudas): **todo aplicado en la fuente** (tabla al
+final del informe). `G1.json` = 515 ids (23 reescritos, 5 parciales, 11 retirados porque sus celdas pasan a
+`POR_CELDA`); heredadas 31 (las 10 del 08 que se reordenan pasan a `POR_CELDA`); `POR_CELDA` 186.
+
+| Paso | Resultado |
+|---|---|
+| Código común | `CF_POR_CELDA` (M5, desviación declarada): `aplicar_en.cf_formula_en` la aplica y aborta si el ES no trae la fórmula esperada; G1 la admite por nombre (`_cf_trans`) y el resto de la CF sigue = ES transformado |
+| Montaje | 11 xlsx, idempotencia 0 diferencias |
+| Gates | **VERDE 8/0** (G1 15 CF por celda · G5 4 casos / 22 comprobaciones · G7 63 °F y 25 citas en `REGLAS_US`) |
+| Autotest | **20/20 CAZADOS**: los 18 de antes + la CF de excepción revertida a la ES + otra CF del 09 alterada; la cita sigue con `CITA_AUTOTEST` = 3-501.18 |
+| censo-entregables · no-latinos | 0 defectos · 0 no latinos |
+| Base, bar y cafetería | dry-run = `origin/main`, `96432c18`, `ac1d63f8`: 0 diferencias en los volcados; gates VERDE 8/0; autotest 16 / 16 / 18 OK |
+| Copia al Mac | sha256 11/11 iguales |
+| Volcado | `revision/dump_en.txt` regenerado (2.695 líneas) |

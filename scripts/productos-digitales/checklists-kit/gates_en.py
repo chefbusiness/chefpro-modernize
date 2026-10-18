@@ -295,6 +295,17 @@ def _cf_firma(cf, regla, trans):
             tuple(trans(x) for x in (regla.formula or [])), regla.text, color)
 
 
+def _cf_trans(corto, h_es, cf, T):
+    """Fórmula EN esperada de una regla de CF: la de A.CF_POR_CELDA si la regla es la excepción declarada, si no ES
+    transformado (HOJAS + CLAVES). Una excepción con otra fórmula ES no se admite: sale marcada y G1 falla."""
+    def f(x):
+        try:
+            return A.cf_formula_en(corto, h_es, str(cf.sqref), x, T)[0]
+        except A.Aborta as e:
+            return '<<%s>>' % e
+    return f
+
+
 def num(v):
     return isinstance(v, (int, float)) and not isinstance(v, bool)
 
@@ -414,7 +425,11 @@ def gateG1(R, carpeta, datos):
                 if got != esp:
                     R.fallo('%s: DV %s %r ≠ esperada %r' % (lugar, dn_.sqref, got, esp))
             # CF
-            cfe = sorted((_cf_firma(cf, r, T.formula) for cf in ws_es.conditional_formatting for r in cf.rules), key=repr)
+            cfe = sorted((_cf_firma(cf, r, _cf_trans(corto, h_es, cf, T)) for cf in ws_es.conditional_formatting
+                          for r in cf.rules), key=repr)
+            if A.CF_POR_CELDA:
+                tot['cf_por_celda'] += sum(1 for cf in ws_es.conditional_formatting
+                                           if (corto, h_es, str(cf.sqref)) in A.CF_POR_CELDA)
             cfn = sorted((_cf_firma(cf, r, lambda x: x) for cf in ws_en.conditional_formatting for r in cf.rules), key=repr)
             tot['cf'] += len(cfn)
             if len(cfn) != len(hd['cf']):
@@ -1290,6 +1305,29 @@ MUTACIONES = [
 if mapas.TERMINOS_PROHIBIDOS:                                    # vertical con términos prohibidos (cafe)
     MUTACIONES.append(('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', (
         wb[mapas.HOJAS['Instrucciones']]['B6'].value or '') + ' ' + mapas.TERMINO_PROHIBIDO_EJEMPLO), 'término prohibido'))
+if A.CF_POR_CELDA:                                               # vertical con CF cambiada a propósito (catering M5)
+    _KCF, (_CF_ES, _CF_EN) = next(iter(A.CF_POR_CELDA.items()))
+
+    def _cf_excepcion_mal(wb):
+        """La excepción declarada vuelve a la fórmula ES: G1 tiene que cazarla (la excepción no es un pase libre)."""
+        ws = wb[mapas.HOJAS[_KCF[1]]]
+        cf = next(c for c in ws.conditional_formatting if str(c.sqref) == _KCF[2])
+        cf.rules[0].formula = [_CF_ES]
+
+    def _cf_ajena_mal(wb):
+        """Una CF que NO es la excepción, alterada: G1 tiene que cazarla."""
+        corto = next(f for f in mapas.LIBROS_ES if mapas.FICHEROS[f] == F09).split('-')[0]
+        for ws in wb.worksheets:
+            for cf in ws.conditional_formatting:
+                h_es = next(h for h, e in mapas.HOJAS.items() if e == ws.title and h in mapas.HOJAS_ES_POR_LIBRO[corto])
+                if (corto, h_es, str(cf.sqref)) not in A.CF_POR_CELDA and cf.rules and cf.rules[0].formula:
+                    cf.rules[0].formula = [cf.rules[0].formula[0] + '*1']
+                    return
+        raise AssertionError('el 09 no tiene ninguna CF fuera de CF_POR_CELDA')
+
+    MUTACIONES.append(('G1', mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_KCF[0] + '-'))],
+                       _cf_excepcion_mal, 'formato condicional'))
+    MUTACIONES.append(('G1', F09, _cf_ajena_mal, 'formato condicional'))
 if mapas.VALORES_EN:                                             # vertical con números fijados (cafe: inventario)
     _KV, (_ES_V, _EN_V) = next(iter(mapas.VALORES_EN.items()))
 
