@@ -406,9 +406,10 @@ _HACCP_KIT = ('«Pack APPCC» → «HACCP Food Safety Kit Pro» (nuestro kit EN:
               'haccp-templates)')
 _CARGA = ('°F: lo caliente a 135 °F o más y lo frío a 41 °F o menos (FDA Food Code 3-501.16), al cargar, en el '
           'trayecto y al descargar; coletilla «— log reading: ____ °F»; ' + _HACCP_KIT)
-_PARASITOS = ('Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o '
-              'menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la '
-              'palabra «anisakis» como norma (dilo «parasite destruction»)')
+_PARASITOS = ('Destrucción de parásitos US, las TRES opciones de FDA Food Code 3-402.11 (errata de texto del 18-oct-2026): '
+              'congelado y guardado a −4 °F o menos 7 días; o a −31 °F o menos hasta sólido y 15 h a −31 °F o menos; o a '
+              '−31 °F o menos hasta sólido y 24 h a −4 °F o menos; registro del proveedor guardado 90 días (3-402.12). '
+              'Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)')
 _DATE = ('Date marking US: etiqueta con producto y fecha; lo preparado y listo para comer, 7 días como máximo a '
          '41 °F contando el día de preparación (FDA Food Code 3-501.17); alérgenos: los 9 principales de EE. UU.')
 _ALERGENOS = ('Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, huevo, pescado, crustáceos (crustacean '
@@ -721,6 +722,11 @@ DEPENDENCIAS_EXTRA = OrderedDict([
     ('alcohol', ('Alcohol en eventos', r'[Bb]arra libre|[Cc]ava\b|[Cc]ocktail|[Bb]arman', 'D-CAT: licencia según el '
                  'estado, 21+ con ID, servicio responsable')),
 ])
+
+# aplicar_en.capa_ajuste (gancho de la ghost kitchen; errata de texto del 18-oct-2026): 01 «Instructions» B16 va sin ajuste en el ES y
+# ya salía cortada en la EN; con las TRES opciones de 3-402.11 se alarga más: se activa el ajuste (la fila es automática
+# y crece). Sin la constante, el resto del kit no cambia
+AJUSTE_FORZADO = frozenset({('01', 'Instrucciones', 'B16')})
 
 
 def _rebind(f):

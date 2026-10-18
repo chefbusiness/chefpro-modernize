@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-18T00:47:39Z",
+  "generado": "2026-10-18T03:36:12Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-catering",
-  "commit": "810e54c9",
+  "commit": "27a6284f",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -466,7 +466,7 @@
    "n_apariciones": 1,
    "palabras": 37,
    "con_cifra": true,
-   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
+   "adaptar": "Destrucción de parásitos US, las TRES opciones de FDA Food Code 3-402.11 (errata de texto del 18-oct-2026): congelado y guardado a −4 °F o menos 7 días; o a −31 °F o menos hasta sólido y 15 h a −31 °F o menos; o a −31 °F o menos hasta sólido y 24 h a −4 °F o menos; registro del proveedor guardado 90 días (3-402.12). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -1181,7 +1181,7 @@
    "n_apariciones": 1,
    "palabras": 42,
    "con_cifra": true,
-   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
+   "adaptar": "Destrucción de parásitos US, las TRES opciones de FDA Food Code 3-402.11 (errata de texto del 18-oct-2026): congelado y guardado a −4 °F o menos 7 días; o a −31 °F o menos hasta sólido y 15 h a −31 °F o menos; o a −31 °F o menos hasta sólido y 24 h a −4 °F o menos; registro del proveedor guardado 90 días (3-402.12). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],
@@ -8375,7 +8375,7 @@
    "n_apariciones": 1,
    "palabras": 36,
    "con_cifra": true,
-   "adaptar": "Destrucción de parásitos US (FDA Food Code 3-402.11): congelado a −4 °F o menos 7 días, o a −31 °F o menos hasta sólido + 15 h; registro del proveedor guardado 90 días. Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»); aviso al consumidor (consumer advisory) de crudo o poco hecho en el cartel de la estación o la carta (FDA Food Code 3-603.11)",
+   "adaptar": "Destrucción de parásitos US, las TRES opciones de FDA Food Code 3-402.11 (errata de texto del 18-oct-2026): congelado y guardado a −4 °F o menos 7 días; o a −31 °F o menos hasta sólido y 15 h a −31 °F o menos; o a −31 °F o menos hasta sólido y 24 h a −4 °F o menos; registro del proveedor guardado 90 días (3-402.12). Sin «≥24 h a −20 °C» ni la palabra «anisakis» como norma (dilo «parasite destruction»); aviso al consumidor (consumer advisory) de crudo o poco hecho en el cartel de la estación o la carta (FDA Food Code 3-603.11)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»"
    ],

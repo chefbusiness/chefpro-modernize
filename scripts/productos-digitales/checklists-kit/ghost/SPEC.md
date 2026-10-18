@@ -71,7 +71,8 @@ nuevas, 10 «contexto», 12 con otro ADAPTAR, 3 `NO_HEREDAR`; 2.884 palabras) �
 
 - **Para John:** la redacción incompleta de 3-402.11 viene del kit base (LIVE) y del catering → parche puntual en su v2.x:
   base 02 «Cold Station» B10 y «Mise en Place» B10 · cafetería 02 «Hot Line» B9 · catering 01 «Instructions» B16,
-  «Production» B34 y 06 «Cocktail Reception» B9 (sin tocar).
+  «Production» B34 y 06 «Cocktail Reception» B9. **RESUELTA en esta rama (18-oct-2026):** las 6 celdas, con las 3
+  opciones y 3-402.12; cambian 4 xlsx (base 02, cafetería 02, catering 01 y 06), versión 2.0 sin tocar.
 - 08 «Apertura del Negocio»: impresoras, timbre y tiempos antes de encender las tablets (B11-B13 vs B20); marcas
   activas a las 09:30 frente a las 10:30 del 01 y del 04. 08 «Cierre del Negocio» B18-B19: marcas y tablets DESPUÉS de
   la alarma y la llave; B9 cierra persianas antes de recoger la señalización (B12) y vaciar papeleras (B14).

@@ -227,10 +227,12 @@ POR_CELDA.update([
     # 03 · conservación de fichajes (B16 en el base; mismo texto EN)
     (('03', 'Mensual Manager', 'B15'), _base.POR_CELDA[('03', 'Mensual Manager', 'B16')]),
     # 02 · pescado ahumado o crudo: destrucción de parásitos (D10, FDA Food Code 3-402.11)
+    # (errata de texto del 18-oct-2026: las TRES opciones de 3-402.11 con la temperatura de cada tramo; registro 3-402.12)
     (('02', 'Calientes', 'B9'),
-     'Smoked salmon and fish served raw — parasite destruction: get the supplier\'s freezing record (frozen at −4 °F '
-     'or below for 7 days, or −31 °F or below until solid + 15 h) or freeze it yourself; log the lot and keep the '
-     'record 90 days (FDA Food Code 3-402.11)'),
+     'Smoked salmon and fish served raw — parasite destruction (FDA Food Code 3-402.11): get the supplier\'s freezing '
+     'record (frozen at −4 °F or below for 7 days; or at −31 °F or below until solid, then 15 h at −31 °F or below or '
+     '24 h at −4 °F or below) or freeze it yourself; log the lot and keep the record 90 days (FDA Food Code '
+     '3-402.12)'),
     # 05 · Inventario: la línea de marca va con otro formato en el ES (dos puntos y raya final) → la del kit con su
     # raya final (no es la línea D19: G3 cuenta las MARCA_EN contra las MARCA_ES del ES)
     (('05', 'Inventario Diario', 'A48'), MARCA_EN + ' —'), (('05', 'Inventario Semanal', 'A58'), MARCA_EN + ' —'),
@@ -493,6 +495,11 @@ DEPENDENCIAS_EXTRA = OrderedDict([
     ('alcohol', ('Alcohol en el brunch', r'[Mm]imosa|[Bb]ellini|[Cc]ava\b', 'D-CAFE: solo con licencia, 21+ con ID; '
                  'regalarlo, según el estado')),
 ])
+
+# aplicar_en.capa_ajuste (gancho de la ghost kitchen; errata de texto del 18-oct-2026): 02 «Hot Line» B9 va sin ajuste en el ES y
+# ya salía cortada en la EN; con las TRES opciones de 3-402.11 se alarga más: se activa el ajuste (la fila es automática
+# y crece). Sin la constante, el resto del kit no cambia
+AJUSTE_FORZADO = frozenset({('02', 'Calientes', 'B9')})
 
 
 def _rebind(f):
