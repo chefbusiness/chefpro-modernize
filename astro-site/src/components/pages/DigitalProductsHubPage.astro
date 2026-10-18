@@ -61,6 +61,28 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Pizza Shop Checklists Kit Pro (18-oct-2026, cuarto hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Pizzeria», entre los kits de tareas): se sube y su copy pasa a describir la edición EN (decía
+  // «330 tasks + inventory», «assembly line» y «sign it off»; la EN trae 373 tareas, 9 + 3 bonus, 12 ficheros, make
+  // line, horno en °F y delivery driver). Imagen: la misma (sin texto en español).
+  {
+    name: 'Pizza Shop Checklists Kit Pro',
+    slug: '/kit-tareas-pizzeria',
+    description: '9 templates + 3 bonuses (12 files) with 373 pizza shop tasks already written: opening and closing, pizza oven and dough, make line, delivery and takeout, manager, duties by role, cleaning schedule, daily inventory and cash drawer count. Print it, delegate it, check it off.',
+    features: [
+      'Opening and closing: kitchen, FOH and delivery',
+      'Wood-fired or deck oven, dough and the make line',
+      'Delivery: insulated bags, drivers and order checks',
+      'Roles: pizza maker, line cook, shift manager, server, driver',
+      'Daily inventory, cleaning schedule and cash drawer count',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'pizzeria'],
+  },
   // Catering Checklists Kit Pro (18-oct-2026, tercer hermano vertical del Restaurant Checklists Kit Pro): el más
   // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Catering / Events», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
@@ -683,22 +705,6 @@ const products = [
     badge: 'New',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['business-plan', 'private-chef', 'showcooking', 'personal-chef', 'events', 'mobile-catering'],
-  },
-  {
-    name: 'Recurring Tasks: Pizzeria',
-    slug: '/kit-tareas-pizzeria',
-    description: '330 tasks + inventory: wood-fired/stone oven, Neapolitan dough, assembly line, delivery. Print it, delegate it, and sign it off.',
-    features: [
-      'Oven and temperature control',
-      'Pizza assembly line',
-      'Delivery and packaging management',
-      'Dough: fermentation and stretching',
-    ],
-    iconName: 'Pizza',
-    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'pizzeria'],
   },
   {
     name: 'Recurring Tasks: Burger Joint',

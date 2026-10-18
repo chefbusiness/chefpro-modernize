@@ -375,6 +375,7 @@ const data: KitExcelData = {
     { href: '/en/digital-products/bar-checklist-templates', label: 'Bar Checklists Kit Pro' },
     { href: '/en/digital-products/coffee-shop-checklist-templates', label: 'Coffee Shop Checklists Kit Pro' },
     { href: '/en/digital-products/catering-checklist-templates', label: 'Catering Checklists Kit Pro' },
+    { href: '/en/digital-products/pizza-shop-checklist-templates', label: 'Pizza Shop Checklists Kit Pro' },
     { href: '/en/digital-products/restaurant-schedule-templates', label: 'Restaurant Staff Scheduling Kit Pro' },
     { href: '/en/digital-products/restaurant-financial-plan-templates', label: 'Restaurant Financial Plan Kit Pro' },
     { href: '/en/digital-products/ai-prompts-for-restaurants', label: 'Gastro Pro Prompts eBook' },

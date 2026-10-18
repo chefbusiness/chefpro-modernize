@@ -958,6 +958,24 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/catering-checklist-templates/BONUS-02-catering-events-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-18): Pizza Shop Checklists Kit Pro. MISMAS claves que kit-tareas-pizzeria (las de TEMPLATES de
+  // src/pages/PizzaShopChecklistsKitDashboard.tsx; la 02 es `horno`, como en el ES) → los 11 xlsx EN de
+  // /dl/pizza-shop-checklist-templates/ (SPEC checklists-kit/pizza §2), y el bonus común de equivalencias EN en lugar
+  // de la guía ES↔LatAm.
+  'pizza-shop-checklist-templates': {
+    'apertura-cierre': '/dl/pizza-shop-checklist-templates/01-pizza-shop-opening-closing-checklists.xlsx',
+    'horno': '/dl/pizza-shop-checklist-templates/02-pizza-kitchen-station-checklists.xlsx',
+    'manager': '/dl/pizza-shop-checklist-templates/03-pizzeria-manager-checklist.xlsx',
+    'perfiles': '/dl/pizza-shop-checklist-templates/04-pizza-shop-duties-by-role.xlsx',
+    'periodicas': '/dl/pizza-shop-checklist-templates/05-pizzeria-cleaning-checklist-inventory-maintenance.xlsx',
+    'eventos': '/dl/pizza-shop-checklist-templates/06-pizza-shop-event-checklists.xlsx',
+    'personalizable': '/dl/pizza-shop-checklist-templates/07-blank-pizza-shop-checklist-template.xlsx',
+    'apertura-negocio': '/dl/pizza-shop-checklist-templates/08-pizzeria-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/pizza-shop-checklist-templates/09-cash-drawer-opening-closing.xlsx',
+    'bonus-briefing': '/dl/pizza-shop-checklist-templates/BONUS-01-pizza-shop-pre-shift-meeting-template.xlsx',
+    'bonus-calendario': '/dl/pizza-shop-checklist-templates/BONUS-02-pizza-shop-holiday-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',
