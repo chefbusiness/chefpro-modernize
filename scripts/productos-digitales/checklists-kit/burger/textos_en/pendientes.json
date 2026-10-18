@@ -2,22 +2,22 @@
  "meta": {
   "kit": "burger",
   "producto": "Burger Joint Checklists Kit Pro",
-  "n_pendientes": 318,
-  "n_palabras": 2015,
+  "n_pendientes": 316,
+  "n_palabras": 2019,
   "motivos": {
-   "nueva": 301,
-   "adaptar": 12,
-   "contexto": 2,
+   "nueva": 300,
+   "adaptar": 10,
+   "contexto": 3,
    "corregida": 3
   },
-  "n_heredadas": 280,
+  "n_heredadas": 275,
   "heredadas_por_via": {
-   "exacta": 275,
+   "exacta": 270,
    "sufijo": 5
   },
   "heredadas_por_fuente": {
-   "base": 195,
-   "pizza": 54,
+   "base": 192,
+   "pizza": 52,
    "cafe": 28,
    "bar": 3
   },
@@ -105,7 +105,7 @@
     "Glosario: cámara → walk-in cooler / walk-in freezer",
     "carne picada → ground beef; patties → patties; blend → custom blend; punto de la carne → doneness"
    ],
-   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "motivo": "nueva"
   },
   {
@@ -1849,7 +1849,7 @@
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer"
    ],
-   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "motivo": "nueva"
   },
   {
@@ -2392,6 +2392,21 @@
     }
    ],
    "motivo": "nueva"
+  },
+  {
+   "id": "c0357",
+   "es": "▸ En la hoja mensual quedan las comprobaciones que hace tu propio equipo (filtros de campana, vista del extintor): no sustituyen a la revisión contratada, la preparan.",
+   "grupo": "G2",
+   "palabras": 26,
+   "donde": [
+    "05 · Instrucciones · B8"
+   ],
+   "pistas": [
+    "Glosario: plancha → flat-top griddle; baño maría → steam table; salamandra → salamander; campana → hood"
+   ],
+   "motivo": "contexto: oven",
+   "base_en": "▸ The monthly tab mixes your team's own checks (hood filters, a look at the extinguisher, first-aid kit) with the monthly ones for a technician or qualified person (oven, wood-fired exhaust, gas valves): they don't replace the contracted services in \"Quarterly & Annual\", they prepare for them.",
+   "base_fuente": "pizza"
   },
   {
    "id": "c0358",
@@ -3769,41 +3784,6 @@
    "base_en": "Pre-orders for takeout (wings, party platters), screens at the bar, extra bar and delivery staff"
   },
   {
-   "id": "c0818",
-   "es": "Menú familiar de mediodía, reservas ampliadas y burger XL para compartir",
-   "grupo": "G2",
-   "palabras": 11,
-   "donde": [
-    "B02 · Calendario Anual · C9"
-   ],
-   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day + March Madness». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: burger especial del día; los partidos del torneo universitario (March Madness, de mediados de marzo a principios de abril) llenan la sala y suben el delivery: turnos extra; cerveza solo con licencia y 21+ con ID, sin ofertas de bebida tipo 2x1 (varios estados las prohíben)",
-   "motivo": "nueva"
-  },
-  {
-   "id": "c0821",
-   "es": "Menú de vigilia, bacalao, potaje, torrijas",
-   "grupo": "G2",
-   "palabras": 6,
-   "donde": [
-    "B02 · Calendario Anual · C10"
-   ],
-   "adaptar": "Evento EN: «Lent Fridays + Easter Sunday (varies)». Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): una opción de pescado o vegetariana (veggie burger); Pascua: decidir el horario",
-   "motivo": "adaptar",
-   "base_en": "Easter brunch, specials (baked ham, lamb), expanded reservations"
-  },
-  {
-   "id": "c0830",
-   "es": "Servicio de festivo, turnos especiales",
-   "grupo": "G2",
-   "palabras": 5,
-   "donde": [
-    "B02 · Calendario Anual · C13"
-   ],
-   "adaptar": "Evento EN: «National Burger Month (May 28: National Hamburger Day)». Sustituye al 1 de mayo. Mayo es el mes de la hamburguesa en EE. UU. y el 28 es el National Hamburger Day: burger especial del mes, oferta del día 28 en redes y en las apps de delivery, más carne y pan",
-   "motivo": "adaptar",
-   "base_en": "Margarita and taco specials, extra bar staff"
-  },
-  {
    "id": "c0832",
    "es": "Menú especial, reservas ampliadas, detalle",
    "grupo": "G2",
@@ -3852,9 +3832,9 @@
    "pistas": [
     "D15: terraza → patio"
    ],
-   "adaptar": "Evento EN: «Summer peak season». Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado, carta de verano; más refuerzo de turnos y de delivery y patio a pleno rendimiento",
+   "adaptar": "Evento EN: «Summer peak season». Tareas = las de «Temporada alta» de la fila 17 del ES (sin el calco «servicio de festivo»): personal extra, horario ampliado, carta de verano; más refuerzo de turnos y de delivery y patio a pleno rendimiento",
    "motivo": "adaptar",
-   "base_en": "Holiday service, extra staff, longer hours, summer menu; more drivers and the patio at full capacity",
+   "base_en": "Summer hours and menu, staff vacations; extra staff and drivers where summer is busy (beach and tourist areas); patio at full capacity",
    "base_fuente": "pizza"
   },
   {
@@ -3865,7 +3845,7 @@
    "donde": [
     "B02 · Calendario Anual · C19"
    ],
-   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day». Fin del verano. Tareas: carta de otoño, especiales de almuerzo (lunch specials) para la vuelta a la rutina, combos para los partidos de fútbol americano (game-day combos) y una oferta de cheeseburger el día 18",
+   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day». Fin del verano. Tareas: carta de otoño, lunch specials de la vuelta al cole (sin el calco «vuelta a la rutina»), combos para el fútbol americano (jueves, domingo y lunes por la noche y el universitario del sábado) y una oferta de cheeseburger el día 18",
    "motivo": "adaptar",
    "base_en": "Fall menu and lunch specials for the back-to-routine crowd"
   },
@@ -3877,7 +3857,7 @@
    "donde": [
     "B02 · Calendario Anual · C20"
    ],
-   "adaptar": "Evento EN: «Oct 31 — Halloween». Decoración temática y una burger especial de Halloween (sin cócteles); noche fuerte de delivery: packaging y turnos extra",
+   "adaptar": "Evento EN: «Oct 31 — Halloween». Decoración temática y una burger especial de Halloween; noche fuerte de delivery: packaging y turnos extra",
    "motivo": "adaptar",
    "base_en": "Themed decorations, special menu/cocktails"
   },
@@ -3926,7 +3906,7 @@
    "donde": [
     "B02 · Calendario Anual · C26"
    ],
-   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Horario de cierre y turnos de noche; si abres la sala hasta tarde, party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite; 21+ con ID)",
+   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Horario de cierre y turnos de noche; si abres la sala hasta tarde, party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite, 21+ con ID; regalarlo, solo donde tu estado lo permita)",
    "motivo": "adaptar",
    "base_en": "Gala or prix fixe menu, party favors (hats, noisemakers), champagne toast at midnight, night shifts"
   }

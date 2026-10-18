@@ -77,3 +77,4 @@ palabras) y **318 pendientes** (301 nuevas, 12 con otro ADAPTAR, 2 «contexto»,
   marca con otro formato. 05 «Instrucciones» B24 promete hojas protegidas y el inventario no lo está.
 - 01 «Cierre Cocina» B14 y 02 «Freidora» B19: «filtrar SOLO por debajo de 40 °C» choca con las freidoras de filtrado
   en caliente: manda el fabricante. 01 «Cierre Cocina» B15: «apagar la plancha cuando ya esté fría».
+- 05 «Instrucciones» B2: el título ya va cortado en el ES (dos líneas en 26 pt): la EN sube la fila (`ALTOS_FILA`).

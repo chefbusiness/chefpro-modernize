@@ -183,20 +183,13 @@ CALENDARIO.update([
          'Sustituye a Reyes. Uno de los días de más pedidos para llevar y a domicilio del año en EE. UU.: pedidos '
          'grandes y anticipados (party orders), más patties y pan, cajas extra y menú corto para sacar más pedidos por '
          'hora')),
-    (9, ('March', "Mar 17 — St. Patrick's Day + March Madness", '2 weeks',
-         'Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: burger especial del día; los partidos '
-         'del torneo universitario (March Madness, de mediados de marzo a principios de abril) llenan la sala y suben '
-         'el delivery: turnos extra; cerveza solo con licencia y 21+ con ID, sin ofertas de bebida tipo 2x1 (varios '
-         'estados las prohíben)')),
-    (10, ('March–April', 'Lent Fridays + Easter Sunday (varies)', '2 weeks',
-          'Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): '
-          'una opción de pescado o vegetariana (veggie burger); Pascua: decidir el horario')),
-    (12, ('May–June', 'Graduation season', '1 month',
-          'Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, zona privada); en EE. UU. son '
-          'graduaciones y fiestas de fin de curso: pedidos grandes para llevar (party orders)')),
-    (13, ('May', 'National Burger Month (May 28: National Hamburger Day)', '2 weeks',
-          'Sustituye al 1 de mayo. Mayo es el mes de la hamburguesa en EE. UU. y el 28 es el National Hamburger Day: '
-          'burger especial del mes, oferta del día 28 en redes y en las apps de delivery, más carne y pan')),
+    # orden cronológico (lección m10 de la pizzería): la Cuaresma empieza en febrero → filas 9↔10; el mes de la
+    # hamburguesa (mayo) antes que «May–June» → filas 12↔13. Su C (las tareas) va por POR_CELDA (_CAL_C) con el EN ya
+    # traducido de su fila de origen
+    (9, ('February–April', 'Lent Fridays + Easter Sunday (varies)', '2 weeks', None)),
+    (10, ('March', "Mar 17 — St. Patrick's Day + March Madness", '2 weeks', None)),
+    (12, ('May', 'National Burger Month (May 28: National Hamburger Day)', '2 weeks', None)),
+    (13, ('May–June', 'Graduation season', '1 month', None)),
     (14, ('May', "2nd Sunday — Mother's Day", '2 weeks', None)),
     (16, ('June', "3rd Sunday — Father's Day", '2 weeks',
           'Sustituye a San Juan. Tareas = las del Día del Padre del ES (fila 9): menú familiar de mediodía, reservas '
@@ -205,14 +198,14 @@ CALENDARIO.update([
           'Sustituye a la fila de temporada alta (sus tareas pasan a la fila 18). Tareas: decidir el horario (muchos '
           'cierran o abren solo de día), patio a pleno rendimiento, pedidos grandes para las fiestas (party orders)')),
     (18, ('July–August', 'Summer peak season', 'Ongoing',
-          'Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado, carta de verano; '
-          'más refuerzo de turnos y de delivery y patio a pleno rendimiento')),
+          'Tareas = las de «Temporada alta» de la fila 17 del ES (sin el calco «servicio de festivo»): personal extra, '
+          'horario ampliado, carta de verano; más refuerzo de turnos y de delivery y patio a pleno rendimiento')),
     (19, ('September', 'Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day', '2 weeks',
-          'Fin del verano. Tareas: carta de otoño, especiales de almuerzo (lunch specials) para la vuelta a la rutina, '
-          'combos para los partidos de fútbol americano (game-day combos) y una oferta de cheeseburger el día 18')),
+          'Fin del verano. Tareas: carta de otoño, lunch specials de la vuelta al cole (sin el calco «vuelta a la '
+          'rutina»), combos para el fútbol americano (jueves, domingo y lunes por la noche y el universitario del '
+          'sábado) y una oferta de cheeseburger el día 18')),
     (20, ('October', 'Oct 31 — Halloween', '1 week',
-          'Decoración temática y una burger especial de Halloween (sin cócteles); noche fuerte de delivery: packaging '
-          'y turnos extra')),
+          'Decoración temática y una burger especial de Halloween; noche fuerte de delivery: packaging y turnos extra')),
     (21, ('November', 'Thanksgiving (4th Thursday) + Black Friday', '1 month',
           'Sustituye a Todos los Santos. Decidir si se abre el jueves (muchos cierran); el viernes (Black Friday), '
           'burger de temporada y refuerzo del mediodía para la gente que sale de compras')),
@@ -224,7 +217,8 @@ CALENDARIO.update([
           'para grupos, con hora de recogida o entrega), reservas de grupo, turnos extra')),
     (26, ('December', "Dec 31 — New Year's Eve", '2 weeks',
           'Sin uvas, cava ni cotillón español. Horario de cierre y turnos de noche; si abres la sala hasta tarde, '
-          'party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite; 21+ con ID)')),
+          'party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite, 21+ con ID; regalarlo, '
+          'solo donde tu estado lo permita)')),
 ])
 
 # ==========================================================================
@@ -323,6 +317,27 @@ _CIERRE = [
 for _fila, (_b, _c, _d) in enumerate(_CIERRE, 5):
     for _col, _v in (('B', _b), ('C', _c), ('D', _d)):
         POR_CELDA[_CN + ('%s%d' % (_col, _fila),)] = _v
+# las tareas (C) de las filas intercambiadas del calendario, con su EN (el G1 de su fila de origen)
+_CAL_C = OrderedDict([
+    (9, 'Meatless Fridays in Lent: a fish or veggie burger option; Easter Sunday: decide hours'),
+    (10, 'Burger special of the day; March Madness games fill the dining room and lift delivery: extra shifts; beer only '
+         'with a license and 21+ with ID, no 2-for-1 drink deals (several states ban them)'),
+    (12, 'Burger special of the month; May 28 deal on social media and the delivery apps; extra beef and buns'),
+    (13, 'Set group menu, deposit and price per person, private area; big carryout party orders for graduations'),
+])
+for _fila, _v in _CAL_C.items():
+    POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = _v
+# lecciones de la ronda 1 de la pizzería (pizza/revision/REVISION-F2.md) en las mismas celdas de la hamburguesería
+for _k, _v in (
+        (('01', 'Apertura Cocina', 'D10'), 'Shift manager'),                    # m13: el control de salud, el PIC
+        (('08', 'Apertura del Negocio', 'E20'), '11:00 AM'),                     # m2: plancha y freidoras con la
+        (('08', 'Apertura del Negocio', 'E21'), '11:00 AM'),                     # campana, a la hora del 01
+        (('07', 'Por Área', 'A19'), '  COUNTER / BAR — type your counter or bar tasks below'),   # m21
+        (('B01', 'Briefing', 'B26'), 'Counter staff (and bar staff, if any):'),           # m21
+        (('B01', 'Briefing', 'B6'), 'Expected covers + takeout / delivery orders:')):     # m21
+    POR_CELDA[_k] = _v
+for _f in range(20, 25):
+    POR_CELDA[('07', 'Por Área', 'C%d' % _f)] = 'Counter / bar'                   # m21: «Barra» = mostrador
 for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'A%d' % _fila)] = _mes
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'B%d' % _fila)] = _evento
@@ -359,8 +374,8 @@ _ALERGENOS = ('Alérgenos US: los 9 principales (FALCPA + FASTER Act: leche, hue
               'igual; en UK, los 14')
 _TCS_CRUDO = ('La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta '
               'la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA '
-              'Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a '
-              'las 4 h (FDA Food Code 3-501.19)')
+              'Food Code 3-501.16); si se trabaja con time as a public health control: procedimiento escrito, hora '
+              'marcada y a la basura a las 4 h (FDA Food Code 3-501.19)')
 _PICADA = ('Carne picada (ground beef): 155 °F durante 17 s en el centro, medida con termómetro de sonda (FDA Food Code '
            '3-401.11(A)(2); equivalentes de la tabla: 145 °F 3 min · 150 °F 1 min · 158 °F al instante). Poco hecha '
            'solo si el cliente la pide y la carta lleva el aviso al consumidor (consumer advisory, FDA Food Code '
@@ -508,6 +523,9 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 # aplicar_en.objetivo_ajuste / G3 (errata ES, como la pizzería): las tareas largas del ES no llevan ajuste de texto y
 # salen cortadas por la celda vecina; la EN activa el ajuste también donde el ES tampoco cabía
 AJUSTE_MAQUETA_ES = True
+# aplicar_en.capa_ajuste (errata ES): 05 «Instrucciones» B2, el título, ya va cortado en el ES (2 líneas en 26 pt de
+# alto); la EN sube la fila a 50.5, el alto de los títulos de dos líneas de los demás libros
+ALTOS_FILA = {('05', 'Instrucciones', 2): 50.5}
 # Celdas ES con °C cuya EN NO lleva cifra en °F: el filtrado del aceite (según el fabricante) y las dos filas de la
 # apertura de cocina cuyo °C se mueve con su tarea (B14 → B15, B16 → B18; lo comprueba el autotest)
 CELSIUS_SIN_F = frozenset({('01', 'Cierre Cocina', 'B14'), ('02', 'Freidora', 'B19'),
@@ -524,7 +542,7 @@ REGLAS_US.update([
                     'infantil', 'FDA Food Code 2022 §3-401.11(D) y §3-603.11')),
     ('pollo', ('aves: 165 °F al instante', 'FDA Food Code 2022 §3-401.11(A)(3)')),
     ('tcs_crudo', ('carne picada cruda a 41 °F o menos hasta la plancha', 'FDA Food Code 2022 §3-501.16(A)(2)')),
-    ('tphc', ('time as a public health control: hora marcada; servir o descartar DENTRO de las 4 h',
+    ('tphc', ('time as a public health control: procedimiento escrito; hora marcada; servir o descartar DENTRO de las 4 h',
               'FDA Food Code 2022 §3-501.19(B)')),
     ('descongelar', ('descongelar en refrigeración a 41 °F o menos', 'FDA Food Code 2022 §3-501.13')),
     ('crudo_separado', ('carne cruda separada de lo listo para consumir', 'FDA Food Code 2022 §3-302.11')),
@@ -687,6 +705,13 @@ def cruzar_censo(p):
     for col in ('C', 'D'):
         if len({tx.get((_AC[0], _AC[1], '%s%d' % (col, f))) for f in filas}) != 1:
             err.append('01 apertura de cocina: la columna %s cambia entre las filas reordenadas' % col)
+    for _f in range(20, 25):
+        if tx.get(('07', 'Por Área', 'C%d' % _f)) != 'Barra':
+            err.append('07 Por Área C%d: el ES no dice «Barra»' % _f)
+    for k in (('01', 'Apertura Cocina', 'D10'), ('B01', 'Briefing', 'B6'), ('B01', 'Briefing', 'B26'),
+              ('07', 'Por Área', 'A19')) + tuple((HOJA_CAL[0], HOJA_CAL[1], 'C%d' % f) for f in _CAL_C):
+        if k not in tx:
+            err.append('POR_CELDA %r sin texto en el ES' % (k,))
     for f in filas:
         con_c = '°C' in tx.get((_AC[0], _AC[1], 'B%d' % f), '')
         if con_c != ((_AC[0], _AC[1], 'B%d' % f) in CELSIUS_SIN_F):

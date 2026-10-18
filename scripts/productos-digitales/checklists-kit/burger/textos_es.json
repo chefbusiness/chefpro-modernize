@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generado": "2026-10-18T02:04:05Z",
+  "generado": "2026-10-18T02:17:26Z",
   "script": "scripts/productos-digitales/checklists-kit/extraer_textos.py",
   "origen": "astro-site/public/dl/kit-tareas-hamburgueseria",
-  "commit": "51c11cf2",
+  "commit": "ac37ad56",
   "libros": {
    "01": {
     "es": "01-apertura-cierre.xlsx",
@@ -62,9 +62,9 @@
    }
   },
   "n_cadenas": 869,
-  "n_traducir": 598,
-  "n_adaptar": 97,
-  "n_palabras_subagentes": 4399,
+  "n_traducir": 591,
+  "n_adaptar": 93,
+  "n_palabras_subagentes": 4350,
   "n_apariciones": 2423,
   "grupos": [
    {
@@ -92,15 +92,15 @@
      "B01",
      "B02"
     ],
-    "n_cadenas": 323,
-    "n_adaptar": 45,
-    "n_palabras": 2454
+    "n_cadenas": 316,
+    "n_adaptar": 41,
+    "n_palabras": 2405
    },
    {
     "id": "GM",
-    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 77 mapa-glosario, 36 mapa-hoja, 158 regenerar",
-    "n_cadenas": 271,
-    "n_palabras": 1080
+    "descripcion": "NO se traduce: pestañas, claves y glosario (mapas.py), horas, rótulos fijados, versión, marca, pie, docProps. 76 mapa-glosario, 36 mapa-hoja, 166 regenerar",
+    "n_cadenas": 278,
+    "n_palabras": 1129
    }
   ],
   "excluidas": {
@@ -2004,7 +2004,7 @@
    "n_apariciones": 1,
    "palabras": 8,
    "con_cifra": false,
-   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer",
@@ -7134,7 +7134,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
+   "adaptar": "La carne picada cruda es TCS: sale de la cámara en tandas pequeñas y se mantiene a 41 °F o menos hasta la plancha (cajón refrigerado bajo la plancha o reach-in), sin «temperarla» a temperatura ambiente (FDA Food Code 3-501.16); si se trabaja con time as a public health control: procedimiento escrito, hora marcada y a la basura a las 4 h (FDA Food Code 3-501.19)",
    "pistas": [
     "D10: °F primero (41 °F frío, 0 °F congelador, 135 °F caliente; FDA Food Code 3-501.16); coletilla «— log reading: ____ °F»",
     "Glosario: cámara → walk-in cooler / walk-in freezer"
@@ -12400,26 +12400,6 @@
    ]
   },
   {
-   "id": "c0600",
-   "es": "  BARRA — escribe aquí abajo tus tareas de barra",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 8,
-   "con_cifra": false,
-   "sha1": "501df709f091",
-   "donde": [
-    {
-     "f": "07",
-     "h": "Por Área",
-     "c": "A19",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0602",
    "es": "Plantilla en Blanco — Por Perfil Profesional",
    "grupo": "G2",
@@ -14405,29 +14385,6 @@
    ]
   },
   {
-   "id": "c0768",
-   "es": "Nº de comensales previstos:",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 4,
-   "con_cifra": false,
-   "pistas": [
-    "Glosario: cubiertos/comensales → covers/guests; ticket medio → average check"
-   ],
-   "sha1": "9b4aa406cc75",
-   "donde": [
-    {
-     "f": "B01",
-     "h": "Briefing",
-     "c": "B6",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0769",
    "es": "Mesas VIP / clientes especiales:",
    "grupo": "G2",
@@ -14757,26 +14714,6 @@
      "f": "B01",
      "h": "Briefing",
      "c": "B25",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0785",
-   "es": "Personal barra:",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 2,
-   "con_cifra": false,
-   "sha1": "de0f6a9aa894",
-   "donde": [
-    {
-     "f": "B01",
-     "h": "Briefing",
-     "c": "B26",
      "t": "celda",
      "tr": "traducir"
     }
@@ -15190,48 +15127,6 @@
    ]
   },
   {
-   "id": "c0818",
-   "es": "Menú familiar de mediodía, reservas ampliadas y burger XL para compartir",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 11,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Mar 17 — St. Patrick's Day + March Madness». Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: burger especial del día; los partidos del torneo universitario (March Madness, de mediados de marzo a principios de abril) llenan la sala y suben el delivery: turnos extra; cerveza solo con licencia y 21+ con ID, sin ofertas de bebida tipo 2x1 (varios estados las prohíben)",
-   "sha1": "0eb6020e2a17",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C9",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0821",
-   "es": "Menú de vigilia, bacalao, potaje, torrijas",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 6,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Lent Fridays + Easter Sunday (varies)». Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): una opción de pescado o vegetariana (veggie burger); Pascua: decidir el horario",
-   "sha1": "05cfa4e357b8",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C10",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
    "id": "c0823",
    "es": "Montaje, licencia, carta exterior",
    "grupo": "G2",
@@ -15247,53 +15142,6 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "C11",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0827",
-   "es": "Menú de grupo cerrado, señal y precio por comensal, sala o terraza privatizada",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 13,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «Graduation season». Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, zona privada); en EE. UU. son graduaciones y fiestas de fin de curso: pedidos grandes para llevar (party orders)",
-   "pistas": [
-    "Glosario: sala → front of house (FOH) / dining room",
-    "D15: terraza → patio",
-    "Glosario: señal / anticipo → deposit"
-   ],
-   "sha1": "b894c9fcdbae",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C12",
-     "t": "celda",
-     "tr": "traducir"
-    }
-   ]
-  },
-  {
-   "id": "c0830",
-   "es": "Servicio de festivo, turnos especiales",
-   "grupo": "G2",
-   "tratamiento": "traducir",
-   "n_ficheros": 1,
-   "n_apariciones": 1,
-   "palabras": 5,
-   "con_cifra": false,
-   "adaptar": "Evento EN: «National Burger Month (May 28: National Hamburger Day)». Sustituye al 1 de mayo. Mayo es el mes de la hamburguesa en EE. UU. y el 28 es el National Hamburger Day: burger especial del mes, oferta del día 28 en redes y en las apps de delivery, más carne y pan",
-   "sha1": "f2c0f3b02033",
-   "donde": [
-    {
-     "f": "B02",
-     "h": "Calendario Anual",
-     "c": "C13",
      "t": "celda",
      "tr": "traducir"
     }
@@ -15394,7 +15242,7 @@
    "n_apariciones": 1,
    "palabras": 13,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Summer peak season». Tareas = las de «Temporada alta» de la fila 17 del ES: personal extra, horario ampliado, carta de verano; más refuerzo de turnos y de delivery y patio a pleno rendimiento",
+   "adaptar": "Evento EN: «Summer peak season». Tareas = las de «Temporada alta» de la fila 17 del ES (sin el calco «servicio de festivo»): personal extra, horario ampliado, carta de verano; más refuerzo de turnos y de delivery y patio a pleno rendimiento",
    "pistas": [
     "D15: terraza → patio"
    ],
@@ -15418,7 +15266,7 @@
    "n_apariciones": 1,
    "palabras": 6,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day». Fin del verano. Tareas: carta de otoño, especiales de almuerzo (lunch specials) para la vuelta a la rutina, combos para los partidos de fútbol americano (game-day combos) y una oferta de cheeseburger el día 18",
+   "adaptar": "Evento EN: «Labor Day (1st Monday) + football season + Sep 18: National Cheeseburger Day». Fin del verano. Tareas: carta de otoño, lunch specials de la vuelta al cole (sin el calco «vuelta a la rutina»), combos para el fútbol americano (jueves, domingo y lunes por la noche y el universitario del sábado) y una oferta de cheeseburger el día 18",
    "sha1": "41726bf5be75",
    "donde": [
     {
@@ -15439,7 +15287,7 @@
    "n_apariciones": 1,
    "palabras": 5,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Oct 31 — Halloween». Decoración temática y una burger especial de Halloween (sin cócteles); noche fuerte de delivery: packaging y turnos extra",
+   "adaptar": "Evento EN: «Oct 31 — Halloween». Decoración temática y una burger especial de Halloween; noche fuerte de delivery: packaging y turnos extra",
    "sha1": "60e6ba9a8ffe",
    "donde": [
     {
@@ -15567,7 +15415,7 @@
    "n_apariciones": 1,
    "palabras": 7,
    "con_cifra": false,
-   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Horario de cierre y turnos de noche; si abres la sala hasta tarde, party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite; 21+ con ID)",
+   "adaptar": "Evento EN: «Dec 31 — New Year's Eve». Sin uvas, cava ni cotillón español. Horario de cierre y turnos de noche; si abres la sala hasta tarde, party favors y brindis a medianoche (con alcohol solo si tu licencia lo permite, 21+ con ID; regalarlo, solo donde tu estado lo permita)",
    "sha1": "2114ed7f223a",
    "donde": [
     {
@@ -19473,6 +19321,10 @@
    "es": "Cocinero",
    "grupo": "GM",
    "tratamiento": "mapa-glosario",
+   "tratamientos": [
+    "mapa-glosario",
+    "regenerar"
+   ],
    "en_glosario": "Line cook",
    "n_ficheros": 4,
    "n_apariciones": 56,
@@ -19485,8 +19337,8 @@
      "h": "Apertura Cocina",
      "c": "D10",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "01",
@@ -27657,11 +27509,33 @@
    ]
   },
   {
+   "id": "c0600",
+   "es": "  BARRA — escribe aquí abajo tus tareas de barra",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "  COUNTER / BAR — type your counter or bar tasks below",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 8,
+   "con_cifra": false,
+   "sha1": "501df709f091",
+   "donde": [
+    {
+     "f": "07",
+     "h": "Por Área",
+     "c": "A19",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0601",
    "es": "Barra",
    "grupo": "GM",
-   "tratamiento": "mapa-glosario",
-   "en_glosario": "Bar",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Counter / bar",
    "n_ficheros": 1,
    "n_apariciones": 5,
    "palabras": 1,
@@ -27673,40 +27547,40 @@
      "h": "Por Área",
      "c": "C20",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C21",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C22",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C23",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     },
     {
      "f": "07",
      "h": "Por Área",
      "c": "C24",
      "t": "celda",
-     "tr": "mapa-glosario",
-     "det": "mapas.GLOSARIO"
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
     }
    ]
   },
@@ -30072,6 +29946,50 @@
    ]
   },
   {
+   "id": "c0768",
+   "es": "Nº de comensales previstos:",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Expected covers + takeout / delivery orders:",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 4,
+   "con_cifra": false,
+   "sha1": "9b4aa406cc75",
+   "donde": [
+    {
+     "f": "B01",
+     "h": "Briefing",
+     "c": "B6",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0785",
+   "es": "Personal barra:",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Counter staff (and bar staff, if any):",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 2,
+   "con_cifra": false,
+   "sha1": "de0f6a9aa894",
+   "donde": [
+    {
+     "f": "B01",
+     "h": "Briefing",
+     "c": "B26",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0792",
    "es": "BONUS: Plantilla de Briefing Pre-Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
    "grupo": "GM",
@@ -30450,7 +30368,7 @@
    "es": "Marzo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "March",
+   "en_por_celda": "February–April",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 1,
@@ -30472,7 +30390,7 @@
    "es": "19 Mar — Día del Padre",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Mar 17 — St. Patrick's Day + March Madness",
+   "en_por_celda": "Lent Fridays + Easter Sunday (varies)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -30490,11 +30408,33 @@
    ]
   },
   {
+   "id": "c0818",
+   "es": "Menú familiar de mediodía, reservas ampliadas y burger XL para compartir",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Meatless Fridays in Lent: a fish or veggie burger option; Easter Sunday: decide hours",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 11,
+   "con_cifra": false,
+   "sha1": "0eb6020e2a17",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C9",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0819",
    "es": "Marzo-Abril",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "March–April",
+   "en_por_celda": "March",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 2,
@@ -30524,7 +30464,7 @@
    "es": "Semana Santa (variable)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Lent Fridays + Easter Sunday (varies)",
+   "en_por_celda": "Mar 17 — St. Patrick's Day + March Madness",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 3,
@@ -30535,6 +30475,28 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "B10",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0821",
+   "es": "Menú de vigilia, bacalao, potaje, torrijas",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Burger special of the day; March Madness games fill the dining room and lift delivery: extra shifts; beer only with a license and 21+ with ID, no 2-for-1 drink deals (several states ban them)",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 6,
+   "con_cifra": false,
+   "sha1": "05cfa4e357b8",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C10",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"
@@ -30614,7 +30576,7 @@
    "es": "Abril-Junio",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May–June",
+   "en_por_celda": "May",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 2,
@@ -30636,7 +30598,7 @@
    "es": "Comuniones y bautizos (temporada)",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "Graduation season",
+   "en_por_celda": "National Burger Month (May 28: National Hamburger Day)",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 4,
@@ -30654,11 +30616,33 @@
    ]
   },
   {
+   "id": "c0827",
+   "es": "Menú de grupo cerrado, señal y precio por comensal, sala o terraza privatizada",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Burger special of the month; May 28 deal on social media and the delivery apps; extra beef and buns",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 13,
+   "con_cifra": false,
+   "sha1": "b894c9fcdbae",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C12",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
    "id": "c0828",
    "es": "Mayo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "May",
+   "en_por_celda": "May–June",
    "n_ficheros": 1,
    "n_apariciones": 2,
    "palabras": 1,
@@ -30688,7 +30672,7 @@
    "es": "1 Mayo — Día del Trabajo",
    "grupo": "GM",
    "tratamiento": "regenerar",
-   "en_por_celda": "National Burger Month (May 28: National Hamburger Day)",
+   "en_por_celda": "Graduation season",
    "n_ficheros": 1,
    "n_apariciones": 1,
    "palabras": 5,
@@ -30699,6 +30683,28 @@
      "f": "B02",
      "h": "Calendario Anual",
      "c": "B13",
+     "t": "celda",
+     "tr": "regenerar",
+     "det": "rótulo fijado (mapas.POR_CELDA)"
+    }
+   ]
+  },
+  {
+   "id": "c0830",
+   "es": "Servicio de festivo, turnos especiales",
+   "grupo": "GM",
+   "tratamiento": "regenerar",
+   "en_por_celda": "Set group menu, deposit and price per person, private area; big carryout party orders for graduations",
+   "n_ficheros": 1,
+   "n_apariciones": 1,
+   "palabras": 5,
+   "con_cifra": false,
+   "sha1": "f2c0f3b02033",
+   "donde": [
+    {
+     "f": "B02",
+     "h": "Calendario Anual",
+     "c": "C13",
      "t": "celda",
      "tr": "regenerar",
      "det": "rótulo fijado (mapas.POR_CELDA)"

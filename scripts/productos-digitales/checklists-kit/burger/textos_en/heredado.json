@@ -194,7 +194,7 @@
   "via": "exacta"
  },
  "c0113": {
-  "en": "Date-mark everything: ready-to-eat food keeps 7 days at 41 °F, prep day = day 1 (FDA 3-501.17)",
+  "en": "Date-mark ready-to-eat TCS food kept over 24 h: 7 days max at 41 °F or below, prep day = day 1 (FDA 3-501.17)",
   "origen": "c0113",
   "via": "exacta",
   "fuente": "pizza"
@@ -522,12 +522,6 @@
   "origen": "c0532",
   "via": "exacta"
  },
- "c0357": {
-  "en": "▸ The monthly tab keeps the checks your own team does (hood filters, a look at the extinguisher): they don't replace the contracted inspection, they prepare for it.",
-  "origen": "c0382",
-  "via": "exacta",
-  "fuente": "pizza"
- },
  "c0359": {
   "en": "▸ You are in 05-burger-restaurant-cleaning-checklist-inventory-maintenance.xlsx: what is NOT daily (weekly, monthly, quarterly and annual). The day-to-day is in 08-burger-restaurant-opening-closing-checklist.xlsx and 01-burger-joint-opening-closing-checklists.xlsx.",
   "origen": "c0534",
@@ -599,7 +593,7 @@
   "fuente": "pizza"
  },
  "c0403": {
-  "en": "Delivery bags",
+  "en": "To-go bags (paper / plastic)",
   "origen": "c0436",
   "via": "exacta",
   "fuente": "pizza"
@@ -900,11 +894,6 @@
  "c0599": {
   "en": "  FOH — type your FOH tasks below",
   "origen": "c0801",
-  "via": "exacta"
- },
- "c0600": {
-  "en": "  BAR — type your bar tasks below",
-  "origen": "c0802",
   "via": "exacta"
  },
  "c0602": {
@@ -1329,11 +1318,6 @@
   "origen": "c0962",
   "via": "exacta"
  },
- "c0768": {
-  "en": "Expected covers:",
-  "origen": "c0963",
-  "via": "exacta"
- },
  "c0769": {
   "en": "VIP tables / special guests:",
   "origen": "c0964",
@@ -1412,11 +1396,6 @@
  "c0784": {
   "en": "FOH staff:",
   "origen": "c0979",
-  "via": "exacta"
- },
- "c0785": {
-  "en": "Bar staff:",
-  "origen": "c0980",
   "via": "exacta"
  },
  "c0786": {
@@ -1520,12 +1499,6 @@
   "en": "Setup, permit, patio menu",
   "origen": "c1018",
   "via": "exacta"
- },
- "c0827": {
-  "en": "Set group menu, deposit and price per person, private area; big carryout party orders for graduations",
-  "origen": "c0867",
-  "via": "exacta",
-  "fuente": "pizza"
  },
  "c0835": {
   "en": "Add staff, summer stock, patio at full capacity",
