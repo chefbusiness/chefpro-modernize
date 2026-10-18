@@ -12,7 +12,7 @@ Todos son hermanos verticales del **Restaurant Checklists Kit Pro** (LIVE 17-oct
 | #135 | Coffee Shop Checklists Kit Pro | `coffee-shop-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_COFFEE_SHOP_CHECKLISTS_KIT` | preview verde, revisión aplicada |
 | #137 | Catering Checklists Kit Pro | `catering-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_CATERING_CHECKLISTS_KIT` | preview verde, revisión aplicada |
 | #138 | Pizza Shop Checklists Kit Pro | `pizza-shop-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_PIZZA_SHOP_CHECKLISTS_KIT` | preview verde, revisión aplicada |
-| #139 | Burger Joint Checklists Kit Pro | `burger-joint-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_BURGER_JOINT_CHECKLISTS_KIT` | revisión en curso al escribir esto |
+| #139 | Burger Joint Checklists Kit Pro | `burger-joint-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_BURGER_JOINT_CHECKLISTS_KIT` | preview verde, revisión aplicada |
 | #136 | Post EN «How to Start a Food Truck Business» | `/en/blog/how-to-start-a-food-truck-business` | — | borrador, gates verdes, auditado |
 
 **Los PR de producto van APILADOS** (cada uno contiene a los anteriores; base `main` para tener preview).
