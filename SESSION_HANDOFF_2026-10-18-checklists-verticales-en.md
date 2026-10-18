@@ -13,7 +13,7 @@ Todos son hermanos verticales del **Restaurant Checklists Kit Pro** (LIVE 17-oct
 | #137 | Catering Checklists Kit Pro | `catering-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_CATERING_CHECKLISTS_KIT` | preview verde, revisión aplicada |
 | #138 | Pizza Shop Checklists Kit Pro | `pizza-shop-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_PIZZA_SHOP_CHECKLISTS_KIT` | preview verde, revisión aplicada |
 | #139 | Burger Joint Checklists Kit Pro | `burger-joint-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_BURGER_JOINT_CHECKLISTS_KIT` | preview verde, revisión aplicada |
-| #140 | Ghost Kitchen Checklists Kit Pro | `ghost-kitchen-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_GHOST_KITCHEN_CHECKLISTS_KIT` | revisión en curso al escribir esto |
+| #140 | Ghost Kitchen Checklists Kit Pro | `ghost-kitchen-checklist-templates` | `VITE_STRIPE_PAYMENT_LINK_GHOST_KITCHEN_CHECKLISTS_KIT` | preview verde, revisión aplicada |
 | #136 | Post EN «How to Start a Food Truck Business» | `/en/blog/how-to-start-a-food-truck-business` | — | borrador, gates verdes, auditado |
 
 **Los PR de producto van APILADOS** (cada uno contiene a los anteriores; base `main` para tener preview).
@@ -44,11 +44,20 @@ redirección) → `netlify api createEnvVars` (scope `builds`, context `all`) �
 en el VPS, GSC sitemap → correos EN en la cola de 5 días (siguiente hueco **14-dic 14:00Z**; Resend no programa a > 30 días:
 borrador + routine como el del Restaurant Checklists, `trig_01GWsawxCZ8CbSBZ387HsMqo`).
 
+## 2-bis. Arreglo transversal que va en el #140 (se publica al fusionar la pila)
+- `b39888a8`: §3-402.11 (destrucción de parásitos) con las 3 opciones y la temperatura de cada tramo + registros 3-402.12,
+  también en el **kit base LIVE** (`restaurant-checklist-templates/02-kitchen-station-checklists.xlsx`, errata de texto, sigue en 2.0),
+  en la cafetería (02) y en el catering (01 y 06). Lo cazó la revisión del ghost; hasta fusionar el #140, el base LIVE conserva la
+  redacción incompleta (dos de las tres opciones y «15 h» sin temperatura).
+- Preview del #140 (pila entera): `gate-flujo-postpago` 12/12 en los 7 kits de checklists; Restaurant 0 incidencias.
+
 ## 3. Pendientes y decisiones para John
 - 🔴 **OpenRouter: la key da 401 «User not found»** (Mac y VPS). bridge.py inoperativo → el post #136 se redactó con el
   fallback de la regla 5 (subagente + auditoría). Renovar/revisar la cuenta.
 - **Testimonios retirados SOLO en EN** por citar cadenas reales: «PizzaExpress» (#138), «Burger Factory» (#139), «CloudEats» y «GhostBurger» (#140; el de Laura Serrano se queda con solo la frase de las apps cambiada). En #139
   queda un «Sergio Ramos» (homónimo del futbolista): decide John.
+- **HACCP Food Safety Kit Pro EN (LIVE)**: su landing dice «−31 °F for 15 hours» sin la temperatura de cada tramo; revisar su xlsx y
+  alinear con 3-402.11 completo (no tocado esta noche).
 - **Erratas del ES** encontradas al duplicar (para su próxima versión, no tocadas): CF de cabeceras del catering que pinta 32
   encabezados, orden de apertura/cierre en varios 08, mínimos del inventario de cafetería guardados como texto (el semáforo
   siempre pide), tareas largas de la pizzería sin ajuste de texto. Detalle en `checklists-kit/<vertical>/SPEC.md` §6.
@@ -64,4 +73,4 @@ borrador + routine como el del Restaurant Checklists, `trig_01GWsawxCZ8CbSBZ387H
   los arreglos de la revisión del hermano (un conflicto en `gates_en.py::_cita_mal`, resuelto a mano).
 - Térmica: CPU del Mac 44-56 °C toda la noche, con DOS agentes como tope; todo el openpyxl e `inject_cache` en el VPS.
 
-Consumo de la noche ≈ 7-8 M tokens de subagentes (5 kits S + post).
+Consumo de la noche ≈ 10 M tokens de subagentes (6 kits S ≈ 1,4-1,9 M cada uno + post 0,5 M). CPU del Mac 42-56 °C.
