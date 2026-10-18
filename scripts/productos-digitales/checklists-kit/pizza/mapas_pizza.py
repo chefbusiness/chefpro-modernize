@@ -167,23 +167,16 @@ CLAVES.update([('⚠️ PEDIR', '⚠️ REORDER'), ('OK', 'OK')])
 CALENDARIO = OrderedDict(_base.CALENDARIO)
 CALENDARIO.update([
     (5, ('January', "Jan 1 — New Year's Day", '1 week', None)),
-    (6, ('February', 'Super Bowl Sunday (2nd Sunday in Feb)', '2 weeks',
-         'Sustituye a Reyes. Uno de los días de más pizza a domicilio del año en EE. UU.: pedidos anticipados y '
-         'grandes (party orders), más bolas de masa fermentando con antelación, repartidores y cajas extra, menú corto '
-         'para sacar más pedidos por hora')),
-    (9, ('March', "Mar 17 — St. Patrick's Day + March Madness", '2 weeks',
-         'Sustituye al Día del Padre (en EE. UU. va en junio, fila 16). Tareas: especiales temáticos; los partidos del '
-         'torneo universitario (March Madness, de mediados de marzo a principios de abril) suben el delivery: '
-         'repartidores extra; cerveza solo con licencia y 21+ con ID')),
-    (10, ('March–April', 'Lent Fridays + Easter Sunday (varies)', '2 weeks',
-          'Sustituye a Semana Santa: el «menú de vigilia» son los viernes de Cuaresma sin carne (meatless Fridays): '
-          'especiales de queso, verduras o marinara; Pascua: decidir el horario, pedidos familiares')),
-    (12, ('May–June', 'Graduation season', '1 month',
-          'Mismas tareas del ES (menú de grupo cerrado, depósito y precio por persona, zona privada); en EE. UU. son '
-          'graduaciones y fiestas de fin de curso: pedidos grandes para llevar (party orders)')),
-    (13, ('May', 'NBA & NHL playoffs (game nights)', '1 week',
-          'Sustituye al 1 de mayo. Tareas: noches de partido = pico de delivery: repartidores y masa extra, ofertas '
-          'para ver el partido (game-night deals), pantallas si tienes sala')),
+    (6, ('February', 'Feb 9 — National Pizza Day + Super Bowl Sunday (2nd Sunday in Feb)', '2 weeks',
+         'Sustituye a Reyes. National Pizza Day (9-feb): una oferta de un día y un post. Super Bowl, uno de los días de '
+         'más pizza a domicilio del año en EE. UU.: pedidos anticipados y grandes (party orders), más bolas de masa '
+         'fermentando con antelación, repartidores y cajas extra, menú corto para sacar más pedidos por hora')),
+    # ronda 1 m10: orden cronológico (la Cuaresma empieza en febrero; los playoffs, a mediados de abril): filas 9↔10 y
+    # 12↔13 intercambiadas; su C (las tareas) va por POR_CELDA (_CAL_C) con el EN ya traducido de su fila de origen
+    (9, ('February–April', 'Lent Fridays + Easter Sunday (varies)', '2 weeks', None)),
+    (10, ('March', "Mar 14 — Pi Day + Mar 17 — St. Patrick's Day + March Madness", '2 weeks', None)),
+    (12, ('April–June', 'NBA & NHL playoffs (game nights)', '1 week', None)),
+    (13, ('May–June', 'Graduation season', '1 month', None)),
     (14, ('May', "2nd Sunday — Mother's Day", '2 weeks', None)),
     (16, ('June', "3rd Sunday — Father's Day", '2 weeks',
           'Sustituye a San Juan. Tareas = las del Día del Padre del ES (fila 9): menú familiar, reservas ampliadas y '
@@ -198,9 +191,9 @@ CALENDARIO.update([
           'Fin del verano. Tareas: carta de otoño, especiales de almuerzo (lunch specials) para la vuelta a la rutina y '
           'ofertas para los partidos de fútbol americano (game-day deals): domingos y lunes por la noche, pico de '
           'delivery')),
-    (20, ('October', 'Oct 31 — Halloween', '1 week',
-          'Noche fuerte de delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales (sin '
-          'cócteles)')),
+    (20, ('October', 'National Pizza Month + Oct 31 — Halloween', '1 week',
+          'National Pizza Month (todo octubre): pizza de la semana o campaña de fidelización. Halloween, noche fuerte de '
+          'delivery: masa, cajas y repartidores extra; decoración temática y pizzas especiales')),
     (21, ('November', 'Thanksgiving Eve + Thanksgiving (4th Thursday)', '1 month',
           'Sustituye a Todos los Santos. La noche del miércoles anterior es de las de más delivery del año: masa, '
           'repartidores y turnos extra; decidir si se abre el jueves (muchos cierran)')),
@@ -309,6 +302,31 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'A%d' % _fila)] = _mes
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'B%d' % _fila)] = _evento
     POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'D%d' % _fila)] = _antel
+# ronda 1 m10 + M1: las tareas (C) de las filas intercambiadas, con su EN (las de 9 y 12 = el G1 de su fila de origen)
+_CAL_C = OrderedDict([
+    (9, 'Meatless Fridays in Lent: cheese, veggie or marinara specials; Easter: decide hours, family orders'),
+    (10, "Pi Day: a $3.14 deal or a pie special. St. Patrick's: themed specials. March Madness games (mid-March to "
+         'early April) lift delivery: extra drivers; beer only with a license, 21+ with ID'),
+    (12, 'Game nights = delivery peak: extra drivers and dough, game-night deals, screens if you have a dining room'),
+    (13, 'Set group menu, deposit and price per person, private area; big carryout party orders for graduations'),
+])
+for _fila, _v in _CAL_C.items():
+    POR_CELDA[(HOJA_CAL[0], HOJA_CAL[1], 'C%d' % _fila)] = _v
+# ronda 1 (REVISION-F2.md): celdas cortas de zona, puesto, hora y rótulo
+for _k, _v in (
+        (('01', 'Apertura Cocina', 'D10'), 'Shift manager'),                    # m13: el control de salud, el PIC
+        (('01', 'Cierre Cocina', 'E13'), 'Next AM'), (('04', 'Pizzero', 'E21'), 'Next AM'),   # m1: ceniza en frío
+        (('04', 'Encargado', 'E6'), '9:00 AM'),                                  # m12: como el 08
+        (('05', 'Limpieza Semanal', 'D8'), 'Pizza maker'),                       # m20
+        (('06', 'Navidad', 'E12'), '2 weeks out'),                               # m6 (como la cafetería)
+        (('06', 'Noche Fútbol', 'E14'), '2 h before kickoff'),                   # m11
+        (('07', 'Por Área', 'A19'), '  COUNTER / BAR — type your counter or bar tasks below'),   # m21
+        (('08', 'Apertura del Negocio', 'E20'), '10:00 AM'),                     # m2: campana y horno, como el 01
+        (('B01', 'Briefing', 'B26'), 'Drivers on shift (and bar staff, if any):'),        # m21
+        (('B01', 'Briefing', 'B6'), 'Expected covers + delivery / carryout orders:')):    # m21
+    POR_CELDA[_k] = _v
+for _f in range(20, 25):
+    POR_CELDA[('07', 'Por Área', 'C%d' % _f)] = 'Counter / bar'                   # m21: «Barra» = mostrador
 
 # ==========================================================================
 # VALORES_EN: (libro, hoja ES, celda) → (valor ES tal cual, valor EN). Los mínimos del «Inventario Diario» vienen
@@ -316,11 +334,13 @@ for _fila, (_mes, _evento, _antel, _dir) in CALENDARIO.items():
 # cafetería). La EN los escribe como NÚMERO; los de kg, g y ml, convertidos a lb, oz y fl oz (redondeado a una cifra
 # de pedido).
 # ==========================================================================
+# Ronda 1 (duda D2 aprobada): redondeados al formato de compra US (harina en sacos de 50 lb → 25 lb; semolina 10 lb;
+# mozzarella en bolsas de 5 lb → 10 lb; pepperoni y sal 5 lb; onzas a 4 / 8 / 12); el semáforo sigue (número)
 _MINIMOS = [  # fila, ES, EN
-    (6, '30', 30), (7, '10', 22), (8, '3', 7), (9, '100', 4), (10, '2', 4), (12, '5', 11), (13, '6', 6), (14, '1', 2),
-    (15, '0.5', 1), (16, '4', 4), (18, '5', 5), (19, '10', 10), (20, '300', 10), (21, '2', 2), (22, '100', 3),
-    (24, '2', 4), (25, '1', 2), (26, '1', 2), (27, '200', 7), (28, '0.5', 1), (30, '1', 2), (31, '0.5', 1),
-    (32, '0.5', 1), (33, '0.5', 1), (34, '200', 7), (35, '0.5', 1), (36, '3', 3), (38, '40', 40), (39, '30', 30),
+    (6, '30', 30), (7, '10', 25), (8, '3', 10), (9, '100', 4), (10, '2', 5), (12, '5', 10), (13, '6', 6), (14, '1', 2),
+    (15, '0.5', 1), (16, '4', 4), (18, '5', 5), (19, '10', 10), (20, '300', 12), (21, '2', 2), (22, '100', 4),
+    (24, '2', 5), (25, '1', 2), (26, '1', 2), (27, '200', 8), (28, '0.5', 1), (30, '1', 2), (31, '0.5', 1),
+    (32, '0.5', 1), (33, '0.5', 1), (34, '200', 8), (35, '0.5', 1), (36, '3', 3), (38, '40', 40), (39, '30', 30),
     (40, '15', 15), (41, '100', 100), (42, '30', 30),
 ]
 VALORES_EN = OrderedDict((('05', 'Inventario Diario', 'D%d' % f), (es, en)) for f, es, en in _MINIMOS)
@@ -345,7 +365,9 @@ _MOZZ_FECHA = ('Mozzarella fresca abierta: tapada, a 41 °F o menos y con date m
                'día de apertura, sin pasar el use-by (FDA Food Code 3-501.17(B))')
 _MASA_FRIO = ('Fermentación en frío (cold fermentation): las bolas, en cajas de masa (dough boxes) tapadas, a la cámara '
               'a 41 °F o menos y con la fecha (y la hora) de la masa; el plazo de uso lo marca tu receta (sin cifra)')
-_CENIZA = ('La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de '
+_CENIZA = ('Ronda 1 m1: la ceniza nunca en caliente al cierre; se retira en frío, normalmente a la mañana siguiente antes '
+           'de encender, a un contenedor METÁLICO cerrado a 3 ft o más del horno (NFPA 96). Antes: '
+           'La ceniza se retira en frío (si el horno sigue caliente al cierre, a la mañana siguiente antes de '
            'encender): a un contenedor METÁLICO con tapa, lejos de lo que arde; nunca a la basura ni a un cubo de '
            'plástico (NFPA 96, cocina con combustible sólido)')
 _ENFRIAR = ('Lo cocinado se enfría de 135 °F a 70 °F en 2 h y a 41 °F en 4 h más (FDA Food Code 3-501.14) antes de '
@@ -355,7 +377,8 @@ _RECALENTAR = ('Lo hecho antes que se vaya a mantener en caliente se recalienta 
 _HUEVO = ('con huevo pasteurizado, o aviso al consumidor en la carta si lleva huevo crudo o poco hecho (FDA Food Code '
           '3-603.11)')
 _APPS = 'Plataformas US: DoorDash, Uber Eats y Grubhub (third-party delivery apps)'
-_HORNO_F = '°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F'
+_HORNO_F = ('°F: 400-450 °C = 750–840 °F; 300 °C = 570 °F; el °C, solo entre paréntesis tras el °F; ronda 1 M2: horno de '
+            'piso de gas, de cinta o eléctrico: el objetivo de tu receta y del fabricante, sin cifra')
 _HEREDA_ADAPTAR = [('08', 'Apertura del Negocio', 'B8'), ('09', 'Cierre de Caja', 'B10'),
                    ('09', 'Registro Mensual', 'A37'),
                    ('B02', 'Instrucciones', 'B8')] + [k for k in _A if k[:2] == ('09', 'Instrucciones')]
@@ -408,7 +431,8 @@ ADAPTAR.update([
     (('04', 'Pizzero', 'B21'), _CENIZA),
     (('04', 'Encargado', 'B9'), _APPS),
     (('04', 'Camarero', 'B12'), _ALERGENOS),
-    (('04', 'Camarero', 'B13'), 'Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID'),
+    (('04', 'Camarero', 'B13'), 'Cerveza y vino solo si tu licencia lo permite, a mayores de 21 con ID; nunca a quien '
+     'esté visiblemente ebrio (ronda 1 m5)'),
     (('04', 'Camarero', 'B16'), _A[('04', 'Camarero', 'B20')]),
     (('04', 'Repartidor', 'A1'), 'Repartidor propio → in-house delivery driver (no las apps)'),
     (('04', 'Repartidor', 'B6'), 'En EE. UU. el repartidor suele usar su coche: combustible, luces y neumáticos; carnet y '
@@ -452,9 +476,9 @@ ADAPTAR.update([
     (('06', 'Temporada Terraza', 'B10'), _A[('06', 'Temporada Terraza', 'B6')] + ': comprobar que está vigente y '
      'renovarlo si caduca esta temporada'),
     # 08
-    (('08', 'Apertura del Negocio', 'B20'), 'Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del '
+    (('08', 'Apertura del Negocio', 'B20'), 'Ronda 1 m2: primero la campana, luego el horno. Horno de leña: encenderlo con tiempo para que llegue a temperatura antes del '
      'servicio, el que diga su fabricante (1 h como referencia del kit; el de leña suele necesitar más)'),
-    (('08', 'Apertura del Negocio', 'B21'), 'Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a '
+    (('08', 'Apertura del Negocio', 'B21'), 'Ronda 1 m3: con procedimiento escrito a mano. Si en esa barra expones porciones (pizza by the slice): en vitrina caliente a '
      '135 °F o más, o con time as a public health control: hora marcada y a la basura a las 4 h (FDA Food Code '
      '3-501.19)'),
 ])
@@ -482,13 +506,18 @@ REGLAS_US.update([
                     'FDA Food Code 2022 §3-501.16 y §3-501.17(B)')),
     ('descongelar', ('descongelar en refrigeración a 41 °F o menos', 'FDA Food Code 2022 §3-501.13')),
     ('crudo_separado', ('carne cruda separada de lo listo para consumir', 'FDA Food Code 2022 §3-302.11')),
-    ('tphc', ('time as a public health control: hora marcada; servir o descartar DENTRO de las 4 h',
+    ('tphc', ('time as a public health control: procedimiento escrito; hora marcada; servir o descartar DENTRO de las 4 h',
               'FDA Food Code 2022 §3-501.19(B)')),
-    ('horno_temp', ('400-450 °C = 750-840 °F (napolitana) · 300 °C = 570 °F (romana)',
+    ('horno_temp', ('400-450 °C = 750-840 °F (napolitana) · 300 °C = 570 °F (romana) · piso de gas, cinta o eléctrico: el '
+                    'objetivo de la receta y del fabricante (sin cifra)',
                     '[criterio del kit] cifras del ES convertidas')),
     ('horno_fabricante', ('precalentado, enfriado, campana y revisión del horno según el fabricante',
                           '[fabricante] manual del horno')),
-    ('ceniza', ('ceniza en contenedor metálico con tapa, lejos de combustibles', 'NFPA 96, cap. 14 (solid fuel cooking)')),
+    ('ceniza', ('ceniza en frío a un contenedor metálico cerrado, a 3 ft o más del horno; nunca a la basura',
+                'NFPA 96, cap. 14 (solid fuel cooking)')),
+    ('servicio_alcohol', ('no servir alcohol a quien esté visiblemente ebrio', '[estatal] ABC / liquor authority')),
+    ('kilometraje', ('el repartidor con coche propio cobra el reembolso de kilometraje: los costes del vehículo no pueden '
+                     'dejar el salario por debajo del mínimo', '29 CFR 531.35 (FLSA); DOL Field Operations Handbook 30c15')),
     ('delivery', ('bolsa térmica: lo caliente a 135 °F o más y lo frío a 41 °F o menos; objetivo de entrega < 30 min',
                   'FDA Food Code 2022 §3-501.16; [criterio del kit] tiempo')),
     ('propinas_repartidor', ('el negocio no puede quedarse las propinas del personal', 'FLSA, 29 U.S.C. 203(m)(2)(B)')),
@@ -501,9 +530,12 @@ REGLAS_US.update([
     ('edad_alcohol', ('21 años para comprar o consumir alcohol, en todos los estados',
                       'National Minimum Drinking Age Act of 1984 (23 U.S.C. 158)')),
     ('alcohol_gratis', ('regalar alcohol está restringido en algunos estados', '[estatal] ABC / liquor authority')),
-    ('dias_fuertes', ('Super Bowl, viernes de Cuaresma, March Madness, playoffs NBA / NHL, Halloween, víspera de '
+    ('dias_fuertes', ('National Pizza Day (9 feb), Pi Day (14 mar), National Pizza Month (octubre), Super Bowl, viernes de '
+                      'Cuaresma (desde el Miércoles de Ceniza, febrero o marzo), March Madness, playoffs NBA / NHL (desde '
+                      'mediados de abril), Halloween, víspera de '
                       'Thanksgiving y Nochevieja, días fuertes de delivery', '[criterio del kit] calendario comercial US')),
-    ('inventario', ('mínimos de kg → lb (×2,2), de g → oz (÷28,35) y de ml → fl oz (÷29,6); L → qt (1 qt ≈ 0,95 L)',
+    ('inventario', ('mínimos de kg → lb (×2,2), de g → oz (÷28,35) y de ml → fl oz (÷29,6), redondeados al formato de compra '
+                    'US (harina 25 lb = medio saco de 50 lb, mozzarella 10 lb = dos bolsas de 5 lb); L → qt (1 qt ≈ 0,95 L)',
                     '[criterio del kit] conversión')),
 ])
 # °F que el kit puede afirmar (G7): las del base + 32 (calibración) + las del horno
@@ -618,7 +650,7 @@ def cruzar_censo(p):
             err.append('VALORES_EN: unidad %s → %s sin factor en la fila %d' % (u_es, u_en, f))
         elif x == 1 and float(es) != en:
             err.append('VALORES_EN: fila %d en %s no cambia de cifra (%s → %s)' % (f, u_es, es, en))
-        elif x != 1 and not (0.5 <= en / (float(es) * x) <= 1.5):
+        elif x != 1 and not (0.5 <= en / (float(es) * x) <= 1.6):   # 1.6: redondeo a formato de compra
             err.append('VALORES_EN: fila %d, %s %s → %s %s fuera de la conversión' % (f, es, u_es, en, u_en))
     # las filas reordenadas del 08 y del 01 «Cierre Sala»: el ES tiene tarea en todas
     for fila in range(5, 5 + len(_CIERRE)):

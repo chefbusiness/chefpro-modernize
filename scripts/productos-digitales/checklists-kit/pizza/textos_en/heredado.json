@@ -757,11 +757,6 @@
   "origen": "c0801",
   "via": "exacta"
  },
- "c0642": {
-  "en": "  BAR — type your bar tasks below",
-  "origen": "c0802",
-  "via": "exacta"
- },
  "c0643": {
   "en": "Blank Template — By Role",
   "origen": "c0803",
@@ -1160,11 +1155,6 @@
   "origen": "c0962",
   "via": "exacta"
  },
- "c0808": {
-  "en": "Expected covers:",
-  "origen": "c0963",
-  "via": "exacta"
- },
  "c0809": {
   "en": "VIP tables / special guests:",
   "origen": "c0964",
@@ -1243,11 +1233,6 @@
  "c0824": {
   "en": "FOH staff:",
   "origen": "c0979",
-  "via": "exacta"
- },
- "c0825": {
-  "en": "Bar staff:",
-  "origen": "c0980",
   "via": "exacta"
  },
  "c0826": {
