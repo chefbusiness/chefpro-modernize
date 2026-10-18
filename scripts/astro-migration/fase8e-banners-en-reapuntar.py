@@ -45,6 +45,8 @@ TEMAS = {
     'bar-checklist-templates': ['bartender', 'barback', 'cocktail', 'pour cost', 'draft beer', 'beer line', 'happy hour', 'bar opening', 'bar closing', 'speed rail'],
     # Coffee Shop Checklists Kit Pro (18-oct-2026): checklists de cafetería, barra de espresso, barista, vitrina y brunch.
     'coffee-shop-checklist-templates': ['coffee shop', 'barista', 'espresso', 'latte', 'grinder', 'pastry case', 'brunch', 'cafe opening', 'cafe closing'],
+    # Catering Checklists Kit Pro (18-oct-2026): checklists de catering y eventos, BEO, montaje, transporte y banquetes.
+    'catering-checklist-templates': ['catering', 'caterer', 'banquet', 'beo', 'off-site', 'off-premise', 'chafing', 'wedding', 'load-in', 'event setup'],
 }
 
 

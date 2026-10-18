@@ -61,6 +61,28 @@ const ALL_TAGS = [
 const products = [
   // Tienda EN (25-sep-2026): los productos VIVOS en inglés van primero, el más nuevo en 1
   // (regla del hub: novedades primero). Adaptación deliberada respecto al orden del hub ES.
+  // Catering Checklists Kit Pro (18-oct-2026, tercer hermano vertical del Restaurant Checklists Kit Pro): el más
+  // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
+  // («Recurring Tasks: Catering / Events», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
+  // (decía «9 pre-filled checklists», «dining room manager» y «cold chain»; la EN trae 347 tareas, 9 + 3 bonus,
+  // 12 ficheros, banquet captain y temperaturas en °F). Imagen: la misma (sin texto en español).
+  {
+    name: 'Catering Checklists Kit Pro',
+    slug: '/kit-tareas-catering',
+    description: '9 templates + 3 bonuses (12 files) with 347 catering and event tasks already written: off-site production, transport, setup and breakdown, event manager, staff by role, weddings, corporate and cocktail receptions, and deposits and payments by event. Print it, delegate it, check it off.',
+    features: [
+      'Off-site production, packing and transport',
+      'Holding temperatures in °F, load-in and setup',
+      'Weddings, corporate, cocktail receptions, outdoor',
+      'Roles: event chef, banquet captain, server, bartender',
+      'Deposits, event settlement and overdue balances',
+    ],
+    iconName: 'Tent',
+    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
+    badge: 'New',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['excel', 'templates', 'management', 'catering', 'mobile-catering'],
+  },
   // Coffee Shop Checklists Kit Pro (18-oct-2026, segundo hermano vertical del Restaurant Checklists Kit Pro): el más
   // nuevo → 1; el resto de vivos bajan un puesto. Es la MISMA tarjeta que ya estaba como «Coming soon in English»
   // («Recurring Tasks: Cafe / Brunch», entre los kits de tareas): se sube y su copy pasa a describir la edición EN
@@ -727,22 +749,6 @@ const products = [
     tags: ['excel', 'templates', 'management', 'pastry'],
   },
 
-  {
-    name: 'Recurring Tasks: Catering / Events',
-    slug: '/kit-tareas-catering',
-    description: '9 pre-filled operational checklists for catering companies: off-site production, transport, setup, service, breakdown, and post-event. Weddings, corporate events, cocktail parties.',
-    features: [
-      'Off-site production and packaging',
-      'Transport and cold chain',
-      'Weddings, corporate events, cocktail parties, outdoor',
-      'Roles: event chef, dining room manager, server',
-    ],
-    iconName: 'Tent',
-    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
-    badge: 'New',
-    badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'templates', 'management', 'catering', 'mobile-catering'],
-  },
   {
     name: 'Recurring Tasks: Full Hotel',
     slug: '/kit-tareas-hotel',

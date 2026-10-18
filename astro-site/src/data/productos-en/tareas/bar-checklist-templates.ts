@@ -435,6 +435,7 @@ const data: KitTareasData = {
     { href: '/en/digital-products', label: 'Digital Products' },
     { href: '/en/digital-products/restaurant-checklist-templates', label: 'Restaurant Checklists Kit Pro' },
     { href: '/en/digital-products/coffee-shop-checklist-templates', label: 'Coffee Shop Checklists Kit Pro' },
+    { href: '/en/digital-products/catering-checklist-templates', label: 'Catering Checklists Kit Pro' },
     { href: '/en/digital-products/bar-business-plan', label: 'Bar Business Plan Kit' },
     { href: '/en/digital-products/mobile-bar-business-plan', label: 'Mobile Bar Business Plan Kit' },
     { href: '/en/digital-products/food-cost-templates', label: 'Food Cost Kit Pro' },

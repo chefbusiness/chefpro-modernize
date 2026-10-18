@@ -940,6 +940,24 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calendario': '/dl/coffee-shop-checklist-templates/BONUS-02-coffee-shop-holiday-calendar.xlsx',
     'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
   },
+  // Tienda EN (2026-10-18): Catering Checklists Kit Pro. MISMAS claves que kit-tareas-catering (las de TEMPLATES de
+  // src/pages/CateringChecklistsKitDashboard.tsx; la 02 es `partidas` y la 09 —cobros por evento, no arqueo— conserva
+  // `apertura-caja`, como en el ES) → los 11 xlsx EN de /dl/catering-checklist-templates/ (SPEC checklists-kit/catering
+  // §2), y el bonus común de equivalencias EN en lugar de la guía ES↔LatAm.
+  'catering-checklist-templates': {
+    'apertura-cierre': '/dl/catering-checklist-templates/01-catering-prep-production-checklist.xlsx',
+    'partidas': '/dl/catering-checklist-templates/02-catering-transport-delivery-checklist.xlsx',
+    'manager': '/dl/catering-checklist-templates/03-catering-event-manager-checklist.xlsx',
+    'perfiles': '/dl/catering-checklist-templates/04-catering-staff-checklists-by-role.xlsx',
+    'periodicas': '/dl/catering-checklist-templates/05-catering-event-setup-breakdown-checklist.xlsx',
+    'eventos': '/dl/catering-checklist-templates/06-catering-event-checklists-by-type.xlsx',
+    'personalizable': '/dl/catering-checklist-templates/07-catering-checklist-template.xlsx',
+    'apertura-negocio': '/dl/catering-checklist-templates/08-catering-commissary-opening-closing-checklist.xlsx',
+    'apertura-caja': '/dl/catering-checklist-templates/09-catering-deposits-invoicing-payments.xlsx',
+    'bonus-briefing': '/dl/catering-checklist-templates/BONUS-01-catering-pre-event-briefing-template.xlsx',
+    'bonus-calendario': '/dl/catering-checklist-templates/BONUS-02-catering-events-calendar.xlsx',
+    'equivalents-guide': '/dl/en-shared/hospitality-equivalents-us-uk-canada-australia.docx',
+  },
   'kit-tareas-sushi-bar': {
     'apertura-cierre': '/dl/kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx',
     'arroz-pescado': '/dl/kit-tareas-sushi-bar/02-preparacion-arroz-pescado.xlsx',

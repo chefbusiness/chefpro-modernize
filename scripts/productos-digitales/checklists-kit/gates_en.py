@@ -77,6 +77,12 @@ FIRMA_EN = ('Designed by John Guerrero — chef and restaurant consultant since 
             'age 17 · johnguerrero.es')                                       # SPEC §7.2, literal
 GRADOS_F_SPEC = set(getattr(mapas, 'GRADOS_F_SPEC', {-31, -4, 0, 10, 32, 41, 70, 100, 135, 165}))  # SPEC §8 G7
 CAJA_SPEC = {'total_1_de_cada': 204.91, 'fondo': 200, 'contado': 1250, 'tarjetas': 3000, 'otros': 150, 'z': 4200}
+# vertical con el 09 como libro propio (catering: cobros por evento): la tabla de billetes vive en mapas.HOJA_CAJA,
+# G5 calcula mapas.CASOS_G5 y G1 admite las fórmulas con hoja que el EN añade (mapas.FORMULAS_CON_HOJA_EXTRA)
+HOJA_CAJA = getattr(mapas, 'HOJA_CAJA', ('09', 'Cierre de Caja'))
+CASOS_G5 = getattr(mapas, 'CASOS_G5', None)
+CON_HOJA_EXTRA = getattr(mapas, 'FORMULAS_CON_HOJA_EXTRA', {})
+SIN_MARCA = frozenset(getattr(mapas, 'LIBROS_SIN_MARCA', ()))   # libros cuyo ES no trae la línea de marca D19
 
 SIGNOS_ES = set('¿¡«»€ºª')
 RX_ID_INTERNO = re.compile(r'\[(?:fuente|estimado|derivado|criterio|local)[^\]]*\]|\bSPEC\b|\((?:D|I)\d{1,2}\)|'
@@ -289,6 +295,17 @@ def _cf_firma(cf, regla, trans):
             tuple(trans(x) for x in (regla.formula or [])), regla.text, color)
 
 
+def _cf_trans(corto, h_es, cf, T):
+    """Fórmula EN esperada de una regla de CF: la de A.CF_POR_CELDA si la regla es la excepción declarada, si no ES
+    transformado (HOJAS + CLAVES). Una excepción con otra fórmula ES no se admite: sale marcada y G1 falla."""
+    def f(x):
+        try:
+            return A.cf_formula_en(corto, h_es, str(cf.sqref), x, T)[0]
+        except A.Aborta as e:
+            return '<<%s>>' % e
+    return f
+
+
 def num(v):
     return isinstance(v, (int, float)) and not isinstance(v, bool)
 
@@ -370,8 +387,9 @@ def gateG1(R, carpeta, datos):
                         if h not in wen.sheetnames:
                             R.fallo('%s!%s cita la hoja inexistente %r' % (lugar, k, h))
             tot['formulas_con_hoja'] += con_hoja
-            if con_hoja != hd['formulas_con_hoja']:
-                R.fallo('%s: %d fórmulas con referencia a hoja ≠ censo %d' % (lugar, con_hoja, hd['formulas_con_hoja']))
+            con_hoja_esp = hd['formulas_con_hoja'] + CON_HOJA_EXTRA.get((corto, h_es), 0)
+            if con_hoja != con_hoja_esp:
+                R.fallo('%s: %d fórmulas con referencia a hoja ≠ censo %d' % (lugar, con_hoja, con_hoja_esp))
             # DV
             cen_dv = {d['sqref']: d for d in hd['dv']}
             dves = sorted(ws_es.data_validations.dataValidation, key=lambda d: str(d.sqref))
@@ -407,7 +425,11 @@ def gateG1(R, carpeta, datos):
                 if got != esp:
                     R.fallo('%s: DV %s %r ≠ esperada %r' % (lugar, dn_.sqref, got, esp))
             # CF
-            cfe = sorted((_cf_firma(cf, r, T.formula) for cf in ws_es.conditional_formatting for r in cf.rules), key=repr)
+            cfe = sorted((_cf_firma(cf, r, _cf_trans(corto, h_es, cf, T)) for cf in ws_es.conditional_formatting
+                          for r in cf.rules), key=repr)
+            if A.CF_POR_CELDA:
+                tot['cf_por_celda'] += sum(1 for cf in ws_es.conditional_formatting
+                                           if (corto, h_es, str(cf.sqref)) in A.CF_POR_CELDA)
             cfn = sorted((_cf_firma(cf, r, lambda x: x) for cf in ws_en.conditional_formatting for r in cf.rules), key=repr)
             tot['cf'] += len(cfn)
             if len(cfn) != len(hd['cf']):
@@ -470,7 +492,7 @@ def gateG1(R, carpeta, datos):
                                                                                    sorted(un - ue)[:5]))
             if vn != ve:
                 R.fallo('%s: verdes distintas (solo ES %s, solo EN %s)' % (lugar, sorted(ve - vn)[:5], sorted(vn - ve)[:5]))
-            if vn - un:
+            if ws_en.protection.sheet and vn - un:              # sin protección, el bloqueo no hace nada (catering)
                 R.fallo('%s: celdas verdes bloqueadas %s' % (lugar, sorted(vn - un)[:5]))
             tot['verdes'] += len(vn)
             tot['desbloqueadas'] += len(un)
@@ -489,7 +511,8 @@ def gateG1(R, carpeta, datos):
     T0 = censo['totales']
     esperados = OrderedDict([
         ('hojas', T0['hojas']), ('formulas', T0['celdas_formula']),
-        ('formulas_por_celda', len(mapas.FORMULAS_POR_CELDA)), ('formulas_con_hoja', T0['formulas_con_hoja']),
+        ('formulas_por_celda', len(mapas.FORMULAS_POR_CELDA)),
+        ('formulas_con_hoja', T0['formulas_con_hoja'] + sum(CON_HOJA_EXTRA.values())),
         ('dv', T0['dv']), ('dv_celdas', T0['dv_celdas']), ('cf', T0['cf']), ('merges', T0['merges']),
         ('hojas_protegidas', T0['hojas_protegidas']), ('areas_impresion', T0['areas_impresion']),
         ('titulos_impresion', T0['titulos_impresion']), ('paneles', T0['paneles']),
@@ -668,7 +691,7 @@ def gateG3(R, carpeta, datos, mes):
         wes = cargar(pes)
         marcas_es = sum(1 for ws in wes.worksheets for c in ws._cells.values() if c.value == mapas.MARCA_ES)
         marcas_en = sum(1 for ws in wb.worksheets for c in ws._cells.values() if c.value == mapas.MARCA_EN)
-        if marcas_en != marcas_es or marcas_es == 0:
+        if marcas_en != marcas_es or (marcas_es == 0 and corto not in SIN_MARCA):
             R.fallo('%s: %d líneas de marca D19 ≠ %d del ES' % (en, marcas_en, marcas_es))
         n['marcas'] += marcas_en
         for h_es, hd in ce['hojas_detalle'].items():
@@ -895,13 +918,39 @@ def caso_caja(carpeta):
         shutil.rmtree(tmp)
 
 
+def casos_g5(carpeta):
+    """Vertical con el 09 propio: cada caso de mapas.CASOS_G5 en una copia → [(caso, celda, valor, esperado)], error."""
+    import datetime as _dt
+    out = []
+    tmp = tempfile.mkdtemp(prefix='checklists-g5-')
+    try:
+        src = fichero_en(carpeta, '09')
+        for i, caso in enumerate(CASOS_G5):
+            p = os.path.join(tmp, '%d-%s' % (i, os.path.basename(src)))
+            shutil.copy2(src, p)
+            wb = openpyxl.load_workbook(p)
+            for (h_es, coord), v in caso['entradas'].items():
+                wb[mapas.HOJAS[h_es]][coord].value = _dt.datetime(2020, 1, 1) if v == 'FECHA_PASADA' else v
+            wb.save(p)
+            e = recalcular(p)
+            if e:
+                return None, '%s: %s' % (caso['nombre'], e)
+            wv = openpyxl.load_workbook(p, data_only=True)
+            for (h_es, coord), esp in caso['esperado'].items():
+                out.append((caso['nombre'], '%s!%s' % (mapas.HOJAS[h_es], coord), wv[mapas.HOJAS[h_es]][coord].value,
+                            esp))
+        return out, None
+    finally:
+        shutil.rmtree(tmp)
+
+
 def gateG5(R, carpeta, datos):
     R.gate('G5 caja')
-    hc = mapas.HOJAS['Cierre de Caja']
+    hc = mapas.HOJAS[HOJA_CAJA[1]]
     ws = cargar(fichero_en(carpeta, '09'))[hc]
     total = 0
     for f, es, xes, en, xen in mapas.DENOMINACIONES:
-        k = ('09', 'Cierre de Caja', 'C%d' % f)
+        k = (HOJA_CAJA[0], HOJA_CAJA[1], 'C%d' % f)
         if ws['A%d' % f].value != en:
             R.fallo('09 %s!A%d = %r ≠ %r (DENOMINACIONES)' % (hc, f, ws['A%d' % f].value, en))
         if ws['C%d' % f].value != mapas.FORMULAS_POR_CELDA[k][1]:
@@ -910,6 +959,18 @@ def gateG5(R, carpeta, datos):
     R.dato('denominaciones', len(mapas.DENOMINACIONES))
     if abs(total - CAJA_SPEC['total_1_de_cada']) > 1e-6:
         R.fallo('mapas.DENOMINACIONES suma %.2f ≠ SPEC §5 %.2f' % (total, CAJA_SPEC['total_1_de_cada']))
+    if CASOS_G5 is not None:
+        vals, err = casos_g5(carpeta)
+        if err:
+            R.fallo('casos del 09: %s' % err)
+            return
+        R.dato('casos', len(CASOS_G5))
+        R.dato('comprobaciones', len(vals))
+        for nombre, donde, v, esp in vals:
+            ok = (num(v) and abs(v - esp) < 0.005) if not isinstance(esp, str) else v == esp
+            if not ok:
+                R.fallo('caja 09 «%s» %s = %r ≠ %r' % (nombre, donde, v, esp))
+        return
     vals, err = caso_caja(carpeta)
     if err:
         R.fallo('caso de caja: %s' % err)
@@ -1120,10 +1181,19 @@ def gateG8(R, carpeta, datos):
 # ==========================================================================
 # Autotest: cada gate tiene que cazar un defecto inyectado en una COPIA
 # ==========================================================================
-F01, F02, F03, F09 = (mapas.FICHEROS[f] for f in ('01-apertura-cierre.xlsx', '02-partidas-cocina.xlsx',
-                                                  '03-tareas-manager.xlsx', '09-apertura-cierre-caja.xlsx'))
+F01, F02, F03 = (mapas.FICHEROS[f] for f in ('01-apertura-cierre.xlsx', '02-partidas-cocina.xlsx',
+                                             '03-tareas-manager.xlsx'))
+F09 = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith('09-'))]   # catering: 09-cobros-…
 H_KO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['01'][1]]      # base: «Kitchen Opening» · bar: la 1.ª checklist del 01
-H_CC = mapas.HOJAS['Cierre de Caja']
+H_CC = mapas.HOJAS[HOJA_CAJA[1]]                           # base: «Cash Drawer Closing» · catering: «Event Settlement»
+_HH = getattr(mapas, 'HOJA_HORAS', None)                   # catering: las horas de celda están en el 08
+F_HORAS = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HH[0] + '-'))] if _HH else F01
+H_HORAS = mapas.HOJAS[_HH[1]] if _HH else H_KO
+CITA_MAL = getattr(mapas, 'CITA_AUTOTEST', '(FDA Food Code 3-501.19)')
+_HV = getattr(mapas, 'HOJA_VERDE', None)                   # catering: el 01 no protege sus verdes (el 08 sí)
+F_VERDE = mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_HV[0] + '-'))] if _HV else F01
+H_VERDE = mapas.HOJAS[_HV[1]] if _HV else H_KO
+F_CAJA0 = mapas.DENOMINACIONES[0][0]                       # base: 27 · catering: 30
 H_AREA = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['06'][2]]    # base: «Valentine's Day»
 H_DIARIO = mapas.HOJAS[mapas.HOJAS_ES_POR_LIBRO['03'][1]]  # «Manager Daily»
 RX_HORA_US = re.compile(r'^\d{1,2}:\d{2} [AP]M$')
@@ -1148,8 +1218,8 @@ def _set(ws, coord, v):
 
 def _bloquear_verde(wb):
     from openpyxl.styles import Protection
-    ws = wb[H_KO]
-    c = next(c for c in ws._cells.values() if es_verde(c))
+    ws = wb[H_VERDE]
+    c = next(c for c in ws._cells.values() if es_verde(c) and c.protection.locked is False)
     c.protection = Protection(locked=True)
 
 
@@ -1171,13 +1241,13 @@ def _celda_glosario(wb):
 
 
 def _hora_mal(wb):
-    ws = wb[H_KO]
+    ws = wb[H_HORAS]
     c = _primera(ws, '7:00 AM', RX_HORA_US.match)
     c.value = c.value.replace(':00 ', ' ').replace(':', '.')
 
 
 def _hora_24(wb):
-    ws = wb[H_KO]
+    ws = wb[H_HORAS]
     c = _primera(ws, '7:00 AM', RX_HORA_US.match)
     c.value = '07:00' if c.value == '7:00 AM' else '17:00'
 
@@ -1190,11 +1260,11 @@ def _titulo_largo(wb):
 
 
 def _caja_mal(wb):
-    wb[H_CC]['C27'].value = '=B27*50'
+    wb[H_CC]['C%d' % F_CAJA0].value = '=B%d*50' % F_CAJA0
 
 
 def _cache_mal(wb):
-    wb[H_CC]['C50'].value = 100
+    wb[H_CC][getattr(mapas, 'CELDA_CACHE_MAL', 'C50')].value = 100
 
 
 def _grados_mal(wb):
@@ -1205,24 +1275,28 @@ def _grados_mal(wb):
 
 def _cita_mal(wb):
     ws = wb[mapas.HOJAS['Instrucciones']]
+    if hasattr(mapas, 'CITA_AUTOTEST'):        # el kit fija su cita no permitida
+        ws['B6'].value = (ws['B6'].value or '') + ' ' + CITA_MAL
+        return
     ok = permitidas()[0]                       # base y bar: 3-501.19 · cafe (la cita en REGLAS_US, ronda 1 M4): la siguiente
-    cod = next(c for c in ('3-501.19', '3-501.18', '3-202.11', '3-401.11') if not set(citas_de('FDA Food Code ' + c)) <= ok)
+    cod = next(c for c in ('3-501.19', '3-501.18', '3-202.11', '3-401.11', '3-304.11', '4-204.112')
+               if not set(citas_de('FDA Food Code ' + c)) <= ok)
     ws['B6'].value = (ws['B6'].value or '') + ' (FDA Food Code %s)' % cod
 
 
 MUTACIONES = [
-    ('G1', F01, _bloquear_verde, 'desbloqueadas'),
+    ('G1', F_VERDE, _bloquear_verde, 'desbloqueadas'),
     ('G1', F01, _quitar_tarea, 'tareas'),
     ('G1', mapas.FICHEROS['06-eventos-festivos.xlsx'], _area_rota, 'área de impresión'),
     ('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Revisa cada tarea con el equipo'), 'ES'),
     ('G2', F03, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Petty cash: 150 € per week'), 'moneda'),
-    ('G2', F01, _hora_24, '24 h'),
+    ('G2', F_HORAS, _hora_24, '24 h'),
     ('G2', F02, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', 'Budget $5 per station'), '«$»'),
     ('G3', F03, lambda wb: setattr(wb[H_DIARIO].page_setup, 'paperSize', 9), 'paperSize'),
     ('G3', F01, lambda wb: setattr(wb[H_KO].oddFooter.center, 'text', 'Page &P'), 'pie'),
     ('G3', F01, _titulo_largo, 'ajuste'),
     ('G4', F01, _celda_glosario, 'mapa-glosario'),
-    ('G4', F01, _hora_mal, 'hora_us'),
+    ('G4', F_HORAS, _hora_mal, 'hora_us'),
     ('G5', F09, _caja_mal, 'caja'),
     ('G6', F09, _cache_mal, 'número'),
     ('G7', F01, _grados_mal, '°F'),
@@ -1231,6 +1305,29 @@ MUTACIONES = [
 if mapas.TERMINOS_PROHIBIDOS:                                    # vertical con términos prohibidos (cafe)
     MUTACIONES.append(('G2', F01, lambda wb: _set(wb[mapas.HOJAS['Instrucciones']], 'B6', (
         wb[mapas.HOJAS['Instrucciones']]['B6'].value or '') + ' ' + mapas.TERMINO_PROHIBIDO_EJEMPLO), 'término prohibido'))
+if A.CF_POR_CELDA:                                               # vertical con CF cambiada a propósito (catering M5)
+    _KCF, (_CF_ES, _CF_EN) = next(iter(A.CF_POR_CELDA.items()))
+
+    def _cf_excepcion_mal(wb):
+        """La excepción declarada vuelve a la fórmula ES: G1 tiene que cazarla (la excepción no es un pase libre)."""
+        ws = wb[mapas.HOJAS[_KCF[1]]]
+        cf = next(c for c in ws.conditional_formatting if str(c.sqref) == _KCF[2])
+        cf.rules[0].formula = [_CF_ES]
+
+    def _cf_ajena_mal(wb):
+        """Una CF que NO es la excepción, alterada: G1 tiene que cazarla."""
+        corto = next(f for f in mapas.LIBROS_ES if mapas.FICHEROS[f] == F09).split('-')[0]
+        for ws in wb.worksheets:
+            for cf in ws.conditional_formatting:
+                h_es = next(h for h, e in mapas.HOJAS.items() if e == ws.title and h in mapas.HOJAS_ES_POR_LIBRO[corto])
+                if (corto, h_es, str(cf.sqref)) not in A.CF_POR_CELDA and cf.rules and cf.rules[0].formula:
+                    cf.rules[0].formula = [cf.rules[0].formula[0] + '*1']
+                    return
+        raise AssertionError('el 09 no tiene ninguna CF fuera de CF_POR_CELDA')
+
+    MUTACIONES.append(('G1', mapas.FICHEROS[next(f for f in mapas.LIBROS_ES if f.startswith(_KCF[0] + '-'))],
+                       _cf_excepcion_mal, 'formato condicional'))
+    MUTACIONES.append(('G1', F09, _cf_ajena_mal, 'formato condicional'))
 if mapas.VALORES_EN:                                             # vertical con números fijados (cafe: inventario)
     _KV, (_ES_V, _EN_V) = next(iter(mapas.VALORES_EN.items()))
 

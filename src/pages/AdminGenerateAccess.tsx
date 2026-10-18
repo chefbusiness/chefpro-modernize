@@ -40,6 +40,7 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'restaurant-checklist-templates', label: 'Restaurant Checklists Kit Pro (EN, $19)' },
   { id: 'bar-checklist-templates', label: 'Bar Checklists Kit Pro (EN, $19)' },
   { id: 'coffee-shop-checklist-templates', label: 'Coffee Shop Checklists Kit Pro (EN, $19)' },
+  { id: 'catering-checklist-templates', label: 'Catering Checklists Kit Pro (EN, $19)' },
   { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
   { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },
   { id: 'guia-restaurante-casual', label: 'Guía Restaurante Casual (€65)' },
